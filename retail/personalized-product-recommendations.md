@@ -41,14 +41,14 @@ Tuotteen suosituksia on käytössä seuraavissa tilanteissa POS. Ne ovat saatavi
 
 [![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-1.  - **Tapahtuma** sivulla:
+2.  - **Tapahtuma** sivulla:
 
 -   Moottori suositus ehdottaa koko luetteloa korissa perusteella.
 -   Jos myymälä liittää Lisää asiakas tapahtumaan, suositus moottorin ja neuvoo omat ja asiakkaan Tapahtumahistorian kohteita luetteloon käyttämällä korissa.
 
 **Huomautus** suosituksia näkyy **tapahtuma** sivun vähittäismyyjän on päivitettävä työvaiheiden 365 Dynamics-näyttöasettelun. **Suosituksia** valvonta on jätettävä, **tapahtuman** sivulla. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-1.  - **Asiakkaan tiedot** sivulla:
+3.  - **Asiakkaan tiedot** sivulla:
     -   Moottori suositus ehdottaa Käyttäjätunnus ja asiakkaan haluavansa luettelon kohteiden perusteella.
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
