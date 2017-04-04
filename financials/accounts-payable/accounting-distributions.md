@@ -1,0 +1,58 @@
+---
+title: Kirjanpidolliset jaot
+description: "Tässä artikkelissa on tietoja kirjanpidollisista jaoista ja niiden käsittelyvaihtoehdoista. Kirjanpidollisia jakoja käytetään kohdistettaessa lähdeasiakirjan rahasummat tietyille kirjanpitotileille."
+author: twheeloc
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: AccountingDistribution
+audience: Application User
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 17231
+ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
+ms.search.region: Global
+ms.author: peakerbl
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: a98ce08dc115bc96cec07c2d6ced10d774785fe9
+ms.openlocfilehash: b1057caae6f47e5a17e194834fbbcb9d7d731605
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="accounting-distributions"></a>Kirjanpidolliset jaot
+
+Tässä artikkelissa on tietoja kirjanpidollisista jaoista ja niiden käsittelyvaihtoehdoista. Kirjanpidollisia jakoja käytetään kohdistettaessa lähdeasiakirjan rahasummat tietyille kirjanpitotileille. 
+
+Kirjanpidolliset jaot ovat koko ohjelman kattavia ominaisuuksia, joita käytetään ja jotka ulottuvat kuhunkin lähdeasiakirjaan, esimerkiksi ostotilaukseen, toimittajalaskuun, kuluraporttiin ja vapaatekstilaskuihin. Oletusarvona, kirjanpidon jaon oletusarvo luodaan jokaiselle asiakirjan lähderiville ja rahasummalle, ja se on käytössä ehdollisesti muokattavana. 
+
+> [!Note] 
+> Jotkin asiakirjat tukevat myös otsikon asiakirjan rahamääriä, kuten tilausten ja laskujen muita kuluja. 
+
+Yleiset kirjanpidolliset jako-ominaisuudet tarjoavat seuraavia vaihtoehtoja kirjanpidollisten jakojen käsittelyyn:
+
+-   **Jakosummat** – Tarkastele ja muokkaa yksittäisen asiakirjaotsikon tai rivin tai minkä tahansa alirivin kirjanpidollisia jakoja, kuten veroja tai maksuja.
+    -   Ylimmissä rahasummien jaoissa (ylätason jaot), päätilin ja taloushallinnon dimensiot saattavat olla muokattavia suoraan segmentoidussa kulunvalvonta ruudukossa. Tämä laajennettu hinta on tyypillinen esimerkki ylätason jaosta.
+    -   Jaot summat perustuvat asiakirjan termivaluuttaan. Tämä valuutta on tavallisesti tapahtuman valuuttana. Valuuttasummien raportointi ja kirjanpito luodaan osana alareskontran kirjanpitoa.
+    -   Jaot näyttävät kirjauspäivän ja kirjanpitotapahtuman. Yleensä kirjanpitotapahtuma määritetään **tyhjäksi** kunnes asiakirja on kirjattu kirjauskansioon. Siinä vaiheessa kirjanpitotapahtumasta tulee **alkuperäinen**. Sen jälkeen kun jaot on kirjattu, jakoja ei voida enää muokata.
+    -   **Jaa**-painikkeen voi ottaa käyttöön ylätason jakoihin. **Jaa**-painike luo uudet kirjanpidon jaot ja jako voidaan perustaa prosenttiosuuteen, summaan tai määrään.
+    -   ** Jaetaan tasan** -painiketta voidaan käyttää yhdessä **jako** -painikkeen kanssa jakamaan summa automaattisesti tasan eri jakoihin.
+    -   **Palauta** -painike voi olla käytössä ylätason jaoille, silloin kun enemmän kuin yksi jakelua on luotu. **Palauta**-painike kumoaa kaikki jaon manuaaliset muutokset poistamalla kaikki olemassa olevat jaot ja luomalla uudelleen jaot oletusarvon mukaan.
+    -   Alemman tason jakelut, kuten alennus, kulut ja arvonlisävero noudattavat aina ylätason jakoa. Voit tarkastella osoitteessa pääkohteen/alikohteen suhde **viite**&gt;**ylemmän tason tietoja**.
+    -   Päätili ja taloushallinnon dimensiot saattavat olla muokattavia myös alatasolla.
+    -   Taloushallinnon dimensiot kirjanpidollisissa jaoissa noudattavat oletusarvokuviota, jossa tiedoston voi laajentaa. Lisätietoja on aiheeseen liittyvissä artikkeleissa.
+    -   Varianssijaokoja voidaan luoda vastaavissa skenaarioita, kuten vastaava toimittajalasku ja ostotilaus. Voit tarkastella kirjanpidon jakauman vastaavat suhteet **viite**&gt;**tiedot**.
+    -   **Oikaise**-painike tulee näkyviin ja on käytössä niille asiakirjoille, jotka tukevat oikaisuja. **Oikea** Luo uusia jakoja. Ensinnäkin jakelut on luotu, joka palauttaa alkuperäisen jaot. Näitä jakoja ei voi muokata. Luodaan seuraavaksi uusi oikea kirjanpidolliset jaot. Näitä jakoja voidaan muokata, jos alkuperäisiä jakoja voidaan muokata.
+    -   ** Projektin tiedot**-painike on käytettävissä jatkeena silloin kun rivi liittyy projektiin. Projektin kirjanpidollisien jakojen avulla voit muokata tietoja, kuten rahoituksen lähde- ja riviominaisuudet.
+    -   Voit tarkastella nykyisen asiakirjan kirjanpidollinen tila- **viite**. Tilan koko asiakirjassa on ja ilmaisee, onko asiakirja on keskeneräinen tai valmis.
+-   ** Tarkastele jakoja ** – kaikki rivit ja rahamäärät kirjanpidollisten jakojen tarkastella asiakirjaa. Et voi muokata kirjanpidollisia jakoja tästä näkymästä.
+
+
+Lisätietoja on ohjeaiheessa [kirjanpidolliset jaot ja Alareskontran kirjauskansioviennit tekstimuotoisten laskujen](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+

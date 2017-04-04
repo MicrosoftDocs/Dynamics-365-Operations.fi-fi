@@ -1,0 +1,77 @@
+---
+title: Dimensioon perustuva tuotekonfigurointi
+description: "Dimensioihin perustuva tuotekonfiguraatio edustaa yksinkertaista ratkaisua useiden varianttien luomiselle yhdestä päätuotteesta ja sen tuoterakenteesta."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, ConfigHierarchy, EcoResDimensionBasedConfiguration
+audience: Application User
+ms.reviewer: YuyuScheller
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 19821
+ms.assetid: 4db9890b-306b-4be7-ba98-3be2094d561f
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: yuyus
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
+ms.openlocfilehash: 7fbf69dc217a2f61ec3aeda952ff221491e9385a
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="dimension-based-product-configuration"></a>Dimensioon perustuva tuotekonfigurointi
+
+Dimensioihin perustuva tuotekonfiguraatio edustaa yksinkertaista ratkaisua useiden varianttien luomiselle yhdestä päätuotteesta ja sen tuoterakenteesta.
+
+Dimensioihin perustuva tuotemääritys on yksi kolmesta valmiin tuotteen määritysmenetelmiä. Kaksi muuta menetelmää ovat ennalta määritettyjä variantteja ja poissulkeva konfiguraatio. Kaikki kolme menetelmää käyttävät päätuotetta lähtökohtana ja sallivat käyttäjän luoda useita tuotevariantteja yhdelle päätuotteelle.
+
+## <a name="key-concepts"></a>Avainkäsitteet
+Dimensioihin perustuva tuotekonfiguraatio perustuu seuraaviin avainkäsitteisiin:
+
+-   Päätuotteet
+-   Tuotedimension konfigurointi
+-   Konfiguraatioryhmät
+-   Tuoterakenne (BOM)
+-   Konfiguraatioreitti
+-   Konfiguraatiosäännöt
+
+### <a name="product-masters"></a>Päätuotteet
+
+Kaikkien tuotemallien konfigurointiprosessien aloituspiste on päätuote. Dimensioihin preustuvaan tuotekonfiguraation tarvitaan päätuote tässä tietyssä määritysmenetelmässä ja tuote dimensioryhmä, johon sisältyy konfiguraatio tuotedimensio.
+
+### <a name="configuration-product-dimension"></a>Tuotedimension konfigurointi
+
+Konfiguraatio tuotedimensiota käytetään päätuotteen tuotevarianttien tunnistamiseksi dimensioihin perustuvan konfiguraatiomenetelmän avulla. Käyttäjä lisää Konfiguraation dimensioarvon ja sen tulisi auttaa tunnistamaan erilliset tuotevariantit.
+
+### <a name="configuration-groups"></a>Konfiguraatioryhmät
+
+Konfiguraatioryhmät määritetään keskusrekisterissä ja niitä voidaan käyttää kaikkiin dimensioihin perustuviin tuotekonfiguraatiomalleihin. konfiguraatioryhmät liitetään yksittäisiin tuoterakenneriveihin ja ne sisältävät useita rivejä, jotka ovat toisensa poissulkevia. Tällöin yksittäiselle tuotevariantille voidaan valita vain yksi ryhmän rivi.
+
+### <a name="bill-of-materials-bom"></a>Tuoterakenne (BOM)
+
+Tuoterakenne edustaa dimensioihin perustuvan tuotekonfiguraation rakenneosia. Sen on sisällytettävä kaikki eri tuotteet, jotka ovat käytettävissä missä vain tuotevariantissa. Tuoterakenteen kukin rivi voi viitata tuoterakenneryhmään. Jos rivi ei viittaa konfiguraatioryhmään, se sisällytetään kaikkiin tuotemallin muuttujiin.
+
+### <a name="configuration-route"></a>Konfiguraatioreitti
+
+Konfiguraatioreititys määrittää konfiguraatioryhmien järjestyksen, niin kuin ne näkyvät käyttäjälle tuotteen konfigurointiprosessin aikana.
+
+### <a name="configuration-rules"></a>Konfiguraatiosäännöt
+
+Konfiguraatiosäännöt edustavat mekanismia, jolla varmistetaan että tuote joka sisältyy yhteen tuoterakenteen konfiguraatioryhmään, tukee joko muun tuotteen sisällytystä tai pois jättämistä eri konfigurointiryhmästä samassa tuoterakenteessa.
+
+## <a name="product-modeling-process"></a>Tuotemallinnusprosessi
+Luonnollinen järjestys tuotemallin dimensioihin perustuvan tuotteen rakentamiseen alkaa asianmukaisien konfiguraatioryhmien määrittämisestä. On tärkeää varmistaa, että kaikki tuotteet joita käytetään tuotemallissa, on julkaistu sille yritykselle, jota varten tuotemalli on rakennettu. Paikassa näitä rakenneosia avulla käyttäjä voi luoda Tuoterakenne ja määrittää konfiguraatioryhmien asiaa kaikki Tuoterakenteen rivit. Kun Tuoterakenne on valmis, konfiguraatioryhmä konfiguraatioreitityksessä voidaan määrittää konfiguraatioryhmien järjestyksen asianmukaisen järjestyksessä. \[selosteen tunnus = "liitteen\_282671" Tasaa = "alignnone" width = "1187"\][![mallinnusprosessi dimensioihin perustuvien tuotteiden](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) mallinnusprosessi dimensioihin perustuvien tuotteiden\[/tekstitys\] on eri konfigurointiryhmien, joka joko on tai ei saa käyttää yhdessä tiettyjä tuotteita, voit luoda Konfigurointisäännöt, joka pakottaa käyttöön tuotteen näitä suhteita. Sen jälkeen kun tuoterakenne on sidottu yhteen dimensioihin perustuvan päätuotteen kanssa tuoterakenneversion kautta ja kummatkin on sekä hyväksytty että aktivoitu, voit luoda tuotemallin konfiguraatioita ja syöttää kullekin knfiguraatiolle nimen. Konfiguraatiot voidaan määrittää ennen kuin mitään tapahtumia on luotu, tai se voidaan tehdä kun jotain konfiguraatiota tarvitaan.
+
+### <a name="suggested-use"></a>Käyttöehdotukset
+
+Dimensioihin perustuvaa määritysmenetelmää kannattaa käyttää tuotteisiin, joilla on rajallinen vaihtelevaisuus ja yhdistelmä standardin tuotedimension mitoista, väristä, tyylistä ja konfiguraatio on sopimaton tunnistamaan tietyn tuotevariantin. Esimerkki voisi olla polkupyörän rungon korkeus, pyörän koko, jarrutyypit ja eri vaihteet.
+
+

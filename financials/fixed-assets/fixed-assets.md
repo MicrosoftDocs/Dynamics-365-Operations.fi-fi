@@ -1,0 +1,36 @@
+---
+title: "Käyttöomaisuuden aloitussivu"
+description: "Käyttöomaisuuserät ovat arvokkaita nimikkeitä, kuten rakennuksia, ajoneuvoja, maa ja laitteet, omistaa henkilö tai organisaatio joka."
+author: twheeloc
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: index-page
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+audience: Application User
+ms.reviewer: twheeloc
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 21481
+ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
+ms.search.region: Global
+ms.author: twheeloc
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
+ms.openlocfilehash: cdcf247f33a35ebae4af4ff22c10083642e9f97a
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="fixed-assets-home-page"></a>Käyttöomaisuuden aloitussivu
+
+Käyttöomaisuuserät ovat arvokkaita nimikkeitä, kuten rakennuksia, ajoneuvoja, maa ja laitteet, omistaa henkilö tai organisaatio joka.
+
+Voit määrittää ja syöttää käyttöomaisuustietojen hankintatietoja ja hallita käyttöomaisuutta tekemällä käyttöomaisuuden poistoja ja määrittämällä aktivointirajan poiston määrittämistä varten. Voit laskea käyttöomaisuuserille oikaisut ja myös poistaa niitä. Jos käytät kirjanpitoa käyttöomaisuuserien yhteydessä, voit tarkastella kaiken käyttöomaisuuden nykyistä arvoa. Käyttöomaisuuserien käsittelytavan on vastattava sekä kansainvälisiä kirjanpidon säännöksiä että kunkin maan kirjanpitoon liittyvää lainsäädäntöä. Vaatimuksiin saattaa sisältyä sääntöjä, jotka koskevat käyttöomaisuuserien hankinta- ja poistotapahtumien kirjaamista, poistoja, elinkaarta, korotuksia ja alennuksia. Monet näistä standardeista ja säännöistä sisältyvät käyttöomaisuuserien toimintoihin.
+
+
+
+

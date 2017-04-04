@@ -1,0 +1,45 @@
+---
+title: "Tilaustenkäsittelyprosessin määrittäminen"
+description: "Tässä aiheessa on tietoja siitä, miten käsitellä keskusten avulla Microsoft Dynamics-365 toiminnot - vähittäiskaupan tilauksia."
+author: josaw1
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+audience: Application User
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 78973
+ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
+ms.openlocfilehash: eb62073fdfa50576d2c613594f3d85cbc0b322f6
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="set-up-order-processing-options"></a>Tilaustenkäsittelyprosessin määrittäminen
+
+Tässä aiheessa on tietoja siitä, miten käsitellä keskusten avulla Microsoft Dynamics-365 toiminnot - vähittäiskaupan tilauksia. 
+
+Vähittäiskaupan ja kaupankäynnin toimintoja varten 365 Dynamics tukee useita verkkokauppoja, Tiili ja laastin kaupat ja keskusten vähittäiskaupan kanavia. Puhelinpalvelukeskuksissa työntekijät ottavat vastaan asiakastilauksia puhelimitse ja luovat myyntitilauksia. Tässä ohjeaiheessa kuvataan, kuinka puhelinkeskus luodaan ja miten puhelinkeskuksen asetukset määritetään. Jokaisella puhelinkeskuksella voi olla omat käyttäjät, maksutavat, hintaryhmät, taloushallinnon dimensiot ja toimitustavat. Voit määrittää nämä asetukset puhelinkeskusta luotaessa. **Tärkeää:** Ennen kuin puhelukeskuksen työnkulkuja voidaan käyttää, kun nykyinen Dynamics AX:n käyttäjä luo myyntitilauksia, käyttäjän on oltava määritetty puhelukeskuksen käyttäjäksi. Voit ottaa käyttöön tai poistaa käytöstä vain puhelinpalvelukeskuksille ominaiset ryhmät tai toiminnot **Puhelukeskus**-sivulla. Seuraavat ominaisuusryhmät voidaan ottaa käyttöön:
+
+-   **Tilauksen viimeistely** – Tämä ryhmä sisältää ominaisuuksia, jotka liittyvät maksuihin ja tilausten viimeistelyyn **Myyntitilaus**-sivulla.
+-   **Ohjattu myynti** – Tämä ryhmä sisältää ominaisuuksia, jotka liittyvät lähdekoodeihin, komentosarjoihin ja luettelopyyntöihin.
+
+Kun otat nämä toiminnot käyttöön puhelukeskuksen asetuksissa, ne ovat **Myyntitilaus**-sivulla puhelukeskukseen liittyvien käyttäjien käytettävissä. Useimmat näistä ominaisuuksista vaativat lisäasetuksia ennen käyttöä. Kuvat ja käsikirjoitukset ovat käytössä osana tietyn puhelukeskuksen ohjatun myynnin asetuksia. Jos nämä ominaisuudet ovat käytössä, käsikirjoitukset ja tuotekuvat näytetään **Myyntitilaus** -sivun tietoruudussa. Näyttöön tulee tuotteelle asetettu oletuskuva. Käsikirjoituksia voidaan määrittää nimikkeelle, luettelolle, asiakkaalle, tai nimikkeelle luettelokontekstissa. Puhelukeskustilauksilla voi näkyä lisätietoja siitä, miten määrätyn tilausrivin hinta on muotoutunut. Tilaukset näyttävät esimerkiksi, mitä alennuksia on sovellettu. Otat tämän toiminnallisuuden **myynti**&gt;**asennus**&gt;**Myyntireskontran parametrit**&gt;**hinnat**&gt;**hinta tiedot**. Pääset **Hintatiedot**-sivulle **Myyntitilausrivi**-avattavasta luettelosta. Voit käyttää tilaustapahtuman seurantaa tarkistaaksesi tilaukselle tilauksen elinkaaren aikana suoritetut toiminnot tai seurataksesi tietyn käyttäjän toimintoja. Voit esimerkiksi tallentaa toiminnon aina, kun käyttäjä luo myyntitilauksen, asettaa tilauksen pitoon, ohittaa veloituksen tai päivittää tilausrivin. Voit määrittää tilaustapahtumat seuraamaan tietyn käyttäjän, käyttäjäryhmän tai kaikkien käyttäjien toimenpiteitä tiettynä aikajaksona. Voit tarkastella asiakirjassa suoritettuja toimenpiteitä avaamalla **Tilaustapahtumat** -sivun kyseisen asiakirjan sivulla olevasta Toimintoruudusta. Voit määrittää huoltotilauksen tapahtumat osoitteessa **myynnin ja markkinoinnin**&gt;**asennus**&gt;**tapahtumia**&gt;**järjestää tapahtumia**. Jos asiakkaan tilausta ei voida lähettää ajoissa, yritys voi lähettää asiakkaalle automaattisen ilmoituksen sähköpostitse, jossa kerrotaan tilauksen tila ja annetaan asiakkaalle mahdollisuus peruuttaa tilaus. Jos viive ylittää määritetyn raja-arvon, tilaus voidaan peruuttaa automaattisesti. Korkeintaan kolme sähköpostiviestiä voidaan lähettää määrättyjen aikavälien kuluttua:
+
+1.  **Ensimmäisen peruutusilmoitus** – Asiakas voi peruuttaa tilauksen.
+2.  **Toinen peruutusilmoitus** – Asiakas voi peruuttaa tilauksen.
+3.  **Lopullinen peruutusilmoitus** – Järjestelmä peruuttaa tilauksen ja asiakkaalle ilmoitetaan peruutuksesta.
+
+Voit vapauttaa yksittäiset asiakkaat ja tuotteet automaattisesta ilmoitus- ja peruutusprosessista. Marginaalihälytys laukeaa, kun lisään nimikkeen tilaukseen. Hälytys sisältää tärkeitä tietoja nimikkeestä, kuten hintamarginaalin ja nimikkeen kannattavuuden. Näiden tietojen avulla voit määrittää, onko hinnan ohitus oikea, kun lisäät nimikkeen myyntitilauksen. Voit esimerkiksi asettaa rajoja kauppojen katteelle määrittämään, että 40 prosenttia tai enemmän kustannukset ylittävä hinta on tuotteelle hyväksyttävä, mutta 20-39 prosentilla kustannukset ylittävä hinta on kyseenalainen. Tässä tapauksessa nimike, jolla on 20-39 prosentin raja, aiheuttaa varoituksen. Nimikettä, jolla on alle 20 prosenttia kustannukset ylittävä raja, ei voida myydä, ja nimikkeen hintaa ei voida muokata. Reunuksen ilmoitukset, voit määrittää **myynti**&gt;**asennus**&gt;**Myyntireskontran parametrit**&gt;**myyntihinnasta hälytykset**. Kun määrität arvonlisäveronäärityksen oletussääntöjen perusteella, voit määrittää vastaavan prioriteetin osoite-elementeille. Voit esimerkiksi määrittää, että arvonlisäveroryhmän täsmäämisellä postinumeron mukaan on suurempi prioriteetti kuin arvonlisäveroryhmän täsmäämisellä osavaltion mukaan. Kun lisäät uusia asiakkaan osoitetietueita, arvonlisäveroryhmä määritetään automaattisesti sen mukaan, kuinka asiakkaan osoite vastaa määrittämiäsi oletussääntöjä ja prioriteettivastaavuutta. Voit määrittää tämän toiminnon **Kirjanpitoparametrit**-sivulla.
+
+

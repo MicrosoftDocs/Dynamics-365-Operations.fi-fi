@@ -1,0 +1,59 @@
+---
+title: Asiakkaan maksut osasummalla
+description: "Joskus asiakkaiden maksama summa on pienempi kuin laskun summa. Tässä artikkelissa on kuvaus erilaisista toimintavaihtoehdoista tällaisessa tilanteessa. Käytettävissä olevat vaihtoehdot määräytyvät liiketoiminnan vaatimusten ja konfiguraation mukaan."
+author: twheeloc
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+audience: Application User
+ms.reviewer: twheeloc
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 13011
+ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
+ms.search.region: Global
+ms.author: kweekley
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 3b16ef53f9fb57a6663db0be1f7e0a57471db2fb
+ms.openlocfilehash: 7025072cd29aac4ceb13b5594c3e321350777cf1
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="customer-payments-for-a-partial-amount"></a>Asiakkaan maksut osasummalla
+
+Joskus asiakkaiden maksama summa on pienempi kuin laskun summa. Tässä artikkelissa on kuvaus erilaisista toimintavaihtoehdoista tällaisessa tilanteessa. Käytettävissä olevat vaihtoehdot määräytyvät liiketoiminnan vaatimusten ja konfiguraation mukaan.
+
+<a name="partial-payment-with-no-discount"></a>Osamaksu ilman alennusta
+--------------------------------
+
+Asiakkaat voivat suorittaa osamaksun, koska heillä ei ole tarpeeksi käteisvaroja maksaakseen laskun kokonaisuudessaan, tai koska jostakin laskunimikkeestä on erimielisyyttä. Tässä tilanteessa laskun voi osatäsmäyttää maksuun. Lasku jää avoimeksi ja sillä näkyy saldo.
+
+## <a name="discount-amounts"></a>Alennussummat
+Voit tarjota asiakkaillesi käteisalennuksen, jos he maksavat laskun ennen eräpäivää. Voit syöttää esimerkiksi laskun summaksi 100,00, jolle määritetään 2 prosentin käteisalennus, jos lasku maksetaan 10 päivän kuluessa. Maksuehto on 30 päivää. Jos saat maksun summalla 98,00 10 päivän kuluessa, kirjaat maksuksi 98,00. Kun lasku sitten merkitään täsmäytettäväksi, käteisalennus otetaan huomioon automaattisesti.
+
+## <a name="partial-payments-with-cash-discounts"></a>Osamaksut käteisalennuksella
+Kun asiakas suorittaa osamaksun, suunnitelmana voi olla suorittaa toinen osamaksu laskun loppuun maksamiseksi. Ottaa osamaksu käteisalennus on määritettävä ** Laske käteisalennukset osittainen maksujen ** asetuksella **Kyllä** - **Myyntireskontran parametrit** sivulla. 
+
+Voit esimerkiksi tarjota 2 prosentin käteisalennuksen, jos lasku maksetaan 10 päivän kuluessa. Laskun arvoksi on kirjattu 100,00. Jos saat maksun summalla 49,00 10 päivän kuluessa, kirjaat maksuksi 49,00 maksujen kirjauskansioon. Kun täsmäytät osamaksun **Selvitä tapahtumat** -sivulla, **1,00** näkyy **Käytettävä käteisalennussumma** -kentässä. Alennussumma kirjataan käteisalennustilille. 
+
+> [!NOTE] 
+> Jos syötät osamaksu ja jättää koko laskutussumma **Täsmäytettävä summa** -kenttään **käteisalennuksen summa ottamaan** kenttä lasketaan automaattisesti, kun tapahtumat kirjataan.
+
+## <a name="credit-notes-with-discounts"></a>Hyvityslaskut ja alennukset
+Jos asiakkaat palauttavat laskulla olevia nimikkeitä, voit antaa heille hyvityslaskun. Jos alkuperäiselle laskulle oli annettu käteisalennus, asiakkaan hyvityslaskun summa tulisi olla asiakkaan saaman käteisalennuksen nettosumma. Jos **Laske käteisalennukset hyvityslaskuille** -asetukseksi on määritetty **Kyllä** **Myyntireskontran parametrit** -sivulla, alennus lasketaan automaattisesti hyvityslaskulle. 
+
+Olet esimerkiksi voinut tarjota maksuehdon, jossa tarjotaan 2 prosentin käteisalennus, jos lasku maksetaan 10 päivän kuluessa. Olet kirjannut laskun summalla 100,00, ja asiakas on käyttänyt käteisalennuksensa. Jos asiakas palauttaa tuotteen, ja annat hänelle hyvityslaskun, voit kirjata hyvityslaskun summalla -100,00. Kun tarkastelet hyvityslaskua **Tilitä avoimet tapahtumat** -sivulla,** 98,00** näkyy **Tilitettävä summa** -kentässä ja **-2,00** näkyy **Käteisalennuksen summa** -kentässä. Alennussumma kirjataan käteisalennustilille.
+
+## <a name="overpaymentunderpayment-amounts"></a>Liika-/alisuorituksen summat
+Kun asiakas suorittaa maksun, jäljelle voi jäädä hyvin pieniä, tilitettäviä summia. Voit esimerkiksi laskuttaa asiakkaalta 1 000,00, ja asiakas maksaa 999,90. Jos jäljelle jäävä summa on pienempi kuin liika-/alisuorituksen summa, joka on määritetty **Myyntireskontran parametrit** -sivulla, erotus kirjataan automaattisesti liika-/alisuorituksien kirjanpitotilille.
+
+## <a name="full-settlement"></a>Täysi tilitys
+Asiakkaille voi suorittaa osittaisen maksun jossa jäljellä oleva summa ei voi maksaa, mutta on liian vähän maksetun summan, joka on määritetty yli **tili Ostoreskontran parametrit** sivulla. Jos haluat merkitä kuin täysin selvitetty laskun, voit käyttää **täydellinen selvitys** asetus **tilittää tapahtuman** sivun. (Voit ottaa täyden tilityksen toiminnon käyttöön konfigurointiavaimen avulla.) Esimerkiksi, lasku kirjataan summalle 1 000,00, ja asiakas suorittaa 990,00 arvoisen maksun. Asiakkaalla ei ole maksaa jäljellä olevat 10,00 on sovittu. Kun valitset laskun selvitykseen, voit myös merkitä select **täydellinen tilitys**. Lasku merkitään siten täysin maksetuksi. 10,00:n alijäämä kirjataan käteisalennuksen tilille muuna käteisalennussummana.
+
+

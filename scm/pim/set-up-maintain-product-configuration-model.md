@@ -1,0 +1,53 @@
+---
+title: "Tuotteen konfigurointimallin määrittäminen"
+description: "Tässä artikkelissa kuvataan tuotemääritysmallin määrityksen ja luonnin vaiheet."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: PCProductConfigurationModelListPage
+audience: Application User
+ms.reviewer: YuyuScheller
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 4051
+ms.assetid: 00df5537-b148-4e32-a248-3e35876ad4e1
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: yuyus
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
+ms.openlocfilehash: e7138dcc15cb8e16ad5cee83b40ba72555d89e6a
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="set-up-a-product-configuration-model"></a>Tuotteen konfigurointimallin määrittäminen
+
+Tässä artikkelissa kuvataan tuotemääritysmallin määrityksen ja luonnin vaiheet.
+
+| Tehtävä                                                        | kuvaus                                                                                                                                                                                                                                                                                                                                                                                        |
+|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Luo päätuote.                                    | Luo päätuote **Päätuote**-luettelosta. Vapauta päätuote asiaa kaikkiin yrityksiin. Päätuotteen, jota käytetään tuotemääritysmallin tai jonkin aliosan versiona **rajoitus perustuva konfiguraatio** on valittava määritysmenetelmää ja konfiguroinnin dimensio on valittava vain tuotteen dimensioryhmässä. |
+| Luo komponentteja.                                          | Luo komponentteja **Komponentit**-sivulla. Komponentit ovat tuotemääritysmallin rakenneosia, ja niitä voidaan käyttää useissa tuotemääritysmalleissa.                                                                                                                                                                                                                      |
+| Luo määritetyyppejä.                                     | Luo määritetyyppejä **Määritetyypit**-sivulla. Määritetyypit määrittelevät tietotyypit kaikille tuotemääritysmalleissa käytettäville määritteille. Jos määritteenä on **totuusarvo**, kiinteän luettelon **teksti** tai tietyllä alueella oleva **kokonaisluku**, siinä näkyvät arvot, jotka ovat käytettävissä, kun määrität tuotemääritysmalliin perustuvaa tuotevarianttia.       |
+| Luo tuotemääritysmalli.                       | Luo tuotemääritysmalli **Uusi tuotemääritysmalli** -sivulla.                                                                                                                                                                                                                                                                                                              |
+| Lisää tuotemääritysmalliin määritteitä.            | Luo määrite **Määritteet**-pikavälilehdessä **Rajoituspohjaisen tuotemääritysmallin tiedot** -sivulla. Määritteet kuvailevat tuotemääritysmallin ominaisuuksia.                                                                                                                                                                                                       |
+| Lisää tuotemääritysmalliin rajoituksia.           | Luo rajoituksia **Rajoitukset**-pikavälilehdessä **Rajoituspohjaisen tuotemääritysmallin tiedot** -sivulla. Tuotemäärityksen on täytettävä kyseiset rajoitukset. Rajoitukset ovat joko lausekerajoituksia tai taulukkorajoituksia.                                                                                                                                 |
+| Lisää tuotemääritysmalliin alikomponentteja.         | Luo alikomponentteja **Alikomponentit**-pikavälilehdessä **Rajoituspohjaisen tuotemääritysmallin tiedot** -sivulla. Alikomponentit liittyvät komponentteihin, ja ne on linkitetty nimikkeisiin, jotka edustavat alikomponenttia.                                                                                                                                                                       |
+| Lisää tuotemääritysmalliin käyttäjän vaatimuksia.     | Käyttäjän vaatimukset ovat samankaltaisia alikomponentit, mutta ne eivät viittaa mihinkään nimikkeeseen. Käyttäjän vaatimukset ovat ikään kuin haamutuoterakenteita. Kaikki tuoterakennerivit tai reitityksen työvaiheet, jotka sijoitetaan suoraan käyttäjän vaatimuksen alle, tiivistetään pääkomponenttiin.                                                                                                                       |
+| Lisää tuotemääritysmalliin tuoterakennerivejä.             | Luo tuoterakennerivejä **Tuoterakenteen rivit** -pikavälilehdessä **Rajoituspohjaisen tuotemääritysmallin tiedot** -sivulla. Tuoterakennerivejä tarvitaan tuotevarianttia luotaessa.                                                                                                                                                                                                 |
+| Lisää tuotemääritysmalliin reitityksen työvaiheita.      | Luo reitityksen työvaiheita **Reitityksen työvaihe** -pikavälilehdessä **Rajoituspohjaisen tuotemääritysmallin tiedot** -sivulla. Reitityksen työvaiheet edustavat yhtä vaihetta vaihesarjassa, jolla luodaan tuotevariantti.                                                                                                                                                    |
+| Luo tuotemääritysmallille aktiivinen versio. | Luo tuotemääritysmallille aktiivinen versio **Versiot**-sivulla. Versio on tuotemääritysmallin ja päätuotteen välinen suhde. Tuotemääritysmalli, jolla on aktiivinen versio, voidaan määrittää myyntitilauksesta, myyntitarjouksesta, ostotilauksesta tai tuotantotilauksesta.                                                               |
+| Kokeile tuotemääritysmallia.                         | Testaa tuotemääritysmalli joko **Rajoituspohjaisen tuotemääritysmallin tiedot**- tai **Tuotemääritysmallien luettelo** -sivulla. Tuotemääritysmallin testaus simuloi tilauksen käsittelyn aikana tapahtuvaa tuotemallin määritysprosessia.                                                                                                |
+| Luo tuotemääritysmallille mallipohja.                | Luo tuotemääritysmallin mallipohja **Määritysmallit**-sivulla. Määritysmalli sisältää arvot tuotemääritysmallin määritteille. Valitse määritteiden arvot **Konfiguroi rivi** -sivulta. Voit myös ladata tuotemääritysmallin mallipohjan määrittäessäsi tuotemallia.                                                   |
+| Määritä nimike.                                          | Tuotemääritysmalleja voidaan määrittää myyntitilauksesta, myyntitarjouksesta, ostotilauksesta tai tuotantotilauksesta.                                                                                                                                                                                                                                                                           |
+
+
+
+
