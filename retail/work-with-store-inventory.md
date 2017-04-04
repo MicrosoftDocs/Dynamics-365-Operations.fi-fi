@@ -33,9 +33,8 @@ Organisaation varastoa voi hallita seuraavien asiakirjatyyppien avulla.
 
 ## <a name="purchase-orders"></a>Ostotilaukset
 Ostotilaukset luodaan pääkonttorilla. Vähittäismyynti-varaston sisältyy ostotilauksen otsikkoon, jos tilauksen voi vastaanottaa myymälässä Moderni POS (MPOS) tai POS pilven avulla Microsoft Dynamics-365 työvaiheiden - Retail. Kirjoitetut määrät, jotka ovat saaneet myymälässä voi tallentaa paikallisesti muita muokattavaksi. Vaihtoehtoisesti määrät voidaan vahvistaa ja lähettää pääkonttoriin. Pääkonttorissa, määrät, jotka olivat saaneet myymälässä näkyvät Dynamics työvaiheissa, 365 **nyt tulla** ostotilauksen-kentän.
-Siirtotilaukset
----------------
 
+## <a name="transfer-orders"></a>Siirtotilaukset
 Siirtotilaus voi määrittää, että nimikkeet lähetetään tietystä myymälästä. Tällöin siirtotilaus näkyy myymälässä keräyksen MPOS tai pilven POS-pyynnön. Määrät, joita pyydetään kerätään, kun ne on vahvistettu ja lähetetty pääkonttoriin. Pääkonttorissa, määrät, jotka on poimittu myymälässä näkyvät Dynamics työvaiheissa, 365 **Lähetä nyt** kentän siirtotilauksen. Siirtotilaus voi määrittää, että nimikkeet lähetetään tiettyyn myymälään. Tällöin siirtotilaus näkyy myymälän MPOS tai pilven POS pyynnön vastaanottava. Kirjoitetut määrät, jotka ovat saaneet myymälässä voi tallentaa paikallisesti muita muokattavaksi. Vaihtoehtoisesti määrät voidaan vahvistaa ja lähettää pääkonttoriin. Pääkonttorissa, määrät, jotka olivat saaneet myymälässä näkyvät Dynamics työvaiheissa, 365 **nyt tulla** kentän siirtotilauksen.
 
 ## <a name="stock-counts"></a>Varaston inventoinnit
