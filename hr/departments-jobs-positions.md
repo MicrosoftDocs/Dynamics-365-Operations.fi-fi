@@ -56,10 +56,6 @@ Työ sisältää tehtäviä ja vastuita, joita työn suorittajalta edellytetää
 Voit luoda työtehtäviä, jotka kuvaavat kyseisessä toimessa toimivan työntekijän perustehtäviä. Samaan työtehtävään voidaan lisätä useita töitä, ja töiden toimet perivät työtehtävät. Seuraavassa taulukossa on esimerkkejä työtehtävistä.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Työ</th>

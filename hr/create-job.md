@@ -48,10 +48,10 @@ Työlajit avulla voit ryhmitellä luokkiin vastaavia töitä. Tyypit eivät ole 
 ## <a name="job-functions"></a>Työtehtävät
 Työn liitoskohtia kuvaavat toiminnalliset luokat korkean tason ja korkean tason tehtävät liittyvät. Työtehtävät eivät ole pakollisia. Voit käyttää työtehtäviä yhdessä työtyyppien, voit suodattaa kompensaatiosuunnitelmia tiettyihin töihin. Voit liittää työtehtävät ja työtyypit kompensaatiosuunnitelmiin määrittämällä oikeutussääntöjä **oikeutussääntöjä** sivulla. Sitten voit liittää kompensaatiosuunnitelmaan, jotka koskevat tietyn työn tyyppi ja työtehtävä, jonka olet määritellyt oikeutussäännön kautta yhdistelmä Tasoryhmää. (Nämä toiminnot ovat sekä kiinteiden kompensaatiosuunnitelmien muuttuvia kompensaatiosuunnitelmia.) Kuitenkin jos aiot käyttää työtehtäviä, kun määrität Kompensaationhallinnan oikeutussäännöt, olisi määritettävä työtehtäviä ennen töitä. Seuraavassa taulukossa on joitakin esimerkkejä työtehtäviä.
 
-| Työ           | Työtehtävä      |
-|---------------|-------------------|
-| Myyntipäällikkö | Puolivälin tason hallinta |
-| Kirjanpitäjä    | Asiantuntijat     |
+| Työ           | Työtehtävä         |
+|---------------|----------------------|
+| Myyntipäällikkö | Puolivälin tason hallinta    |
+| Kirjanpitäjä    | Asiantuntijat        |
 
 Voit säilyttää käyttämällä työtehtäviä **työtehtävien** sivulla. - **Työtehtävien** sivulla, kirjoita tunnus ja lyhyt kuvaus työtehtävän.
 
