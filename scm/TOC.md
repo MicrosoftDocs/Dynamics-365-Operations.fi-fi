@@ -1,0 +1,157 @@
+# [Cost management](cost-management/TOC.md)
+# [Inventory management](inventory/TOC.md)
+# Pääsuunnittelu
+## Luo kysynnän ennuste
+### [Myyntiennusteen Yhteenveto](master-planning/introduction-demand-forecasting.md)
+### [Määritä kysynnän ennuste](master-planning/demand-forecasting-setup.md)
+### [Luo ennuste tilastollinen perusaikataulu](master-planning/generate-statistical-baseline-forecast.md)
+### [Tehdä manuaalisen muuttamisen ennuste perusaikatauluun](master-planning/manual-adjustments-baseline-forecast.md)
+### [Hyväksy muutettu ennuste](master-planning/authorize-adjusted-forecast.md)
+### [Näytön tarkkuus ennuste](master-planning/monitor-forecast-accuracy.md)
+### [Harha historiallisen tapahtumatietojen poistaminen](master-planning/remove-historical-outliers-calculating-demand-forecast.md)
+### [Reduction keys](master-planning/reduction-keys.md)
+## Pääsuunnitelma
+### [Toimenpidesanomat](master-planning/action-messages.md)
+### [Kattavuusasetukset](master-planning/coverage-settings.md)
+### [Delays](master-planning/delays.md)
+### [Master plans](master-planning/master-plans.md)
+### [Pääsuunnitelmat ja multisite-toiminnot](master-planning/master-plan-multisite-functionality.md)
+#### [Suunnitelman toimipaikan kattavuutta varten, varasto pakollinen](master-planning/master-plan-site-coverage-warehouse-mandatory.md)
+#### [Suunnittele toimipaikan kattavuutta varten, varasto ei pakollinen](master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
+#### [Suunnittele toimipaikan ja varaston kattavuutta varten, varasto pakollinen](master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+#### [Suunnittele toimipaikan ja varaston kattavuutta varten, varasto ei pakollinen](master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+#### [Määritä tuoterakenneversio](master-planning/master-plan-bom-version-determined.md)
+### [Hajottaminen tuoterakenneversion](master-planning/master-plan-explosion-bom-version.md)
+### [Maintain planned orders](master-planning/maintain-planned-orders.md)
+### [Jäljitä hajotus](master-planning/trace-explosion.md)
+# Hankinta
+## [Procurement and sourcing overview](procurement/procurement-sourcing-overview.md)
+## [Työnkulku ja hankinta](procurement/procurement-sourcing-workflows.md)
+## [Purchasing policies](procurement/purchase-policies.md)
+## [Procurement catalogs](procurement/procurement-catalogs.md)
+## [Purchase requisitions](procurement/purchase-requisitions-overview.md)
+### [Purchase requisition workflow](procurement/purchase-requisitions-workflow.md) 
+## [Tarjouspyyntö (tarjouspyynnöt)](procurement/request-quotations.md)
+## Ostotilaukset
+### [Purchase order overview](procurement/purchase-order-overview.md)
+### [Create purchase orders](procurement/purchase-order-creation.md)
+### [Hyväksy ja Vahvista osto](procurement/purchase-order-approval-confirmation.md)
+## Toimittajien hallinta ja toimittajayhteistyö
+### [Määritä ja ylläpidä toimittajayhteistyötä](procurement/set-up-maintain-vendor-collaboration.md)
+### [Toimittajayhteistyön käyttäjien hallinta](procurement/manage-vendor-collaboration-users.md)
+### [Toimittajatilien määrittäminen](procurement/set-up-vendor-accounts.md)
+### [Toimittajayhteistyö ulkoisten toimittajien kanssa](procurement/vendor-collaboration-work-external-vendors.md)
+### [Toimittajayhteistyö asiakkaiden kanssa](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+### [Yhteiskäyttö Toimittajaportaali toimittajien kanssa](procurement/collaborate-vendors-vendor-portal.md)
+### [Toimittaja mobile yhteistyötila](procurement/vendor-collaboration-mobile-workspace.md)
+### [Toimittajan portaalin Käyttäjäsuojaus](procurement/configure-security-vendor-portal-users.md)
+## Hinnat ja alennukset
+### [Purchase agreements](procurement/purchase-agreements.md)
+## Tuotteen vastaanottojen ja laskutus
+### [Tuotteen vastaanotto ostotilausten perusteella](procurement/product-receipt-against-purchase-orders.md)
+### [Toimittajan laskujen yleiskatsaus](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
+### [Vendor posting profiles](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+# Tuotetietojen hallinta
+## Tuotteen tiedot
+### [Tuoterakenteen ja kaava](production-control/bill-of-material-bom.md)
+### [BOM designer functionality](production-control/bom-designer-functionality.md)
+### [Product dimension](pim/product-dimensions.md)
+### [Luvun nimikkeistö](pim/product-variant-identification-nomenclature.md)
+### [Käännös tuotteeseen liittyvät usein kysytyt kysymykset](pim/translations-product-related-information.md)
+### [Rekisteröi sarjanumero myyntiprosessin](sales-marketing/register-serial-numbers-sales-process.md)
+### [Tuotteen tilausta tallennettaessa](pim/search-products-product-variants.md)
+## Tuotteen konfiguraation luominen
+### [Tuotteen konfigurointimallin rakentaa](pim/build-product-configuration-model.md)
+### [Laskettaessa tuotteen kokoonpano mallin usein kysytyt kysymykset](pim/calculate-product-configuration-models.md)
+### [Konfigurointisäännön](pim/configuration-rules.md)
+### [Dimension-based configuration](pim/dimension-based-product-configuration.md)
+### [Lausekkeen rajoitus ja taulurajoitus](pim/expression-constraints-table-constraints-product-configuration-models.md)
+### [Tuotteen konfiguraation](pim/reuse-product-configurations.md)
+### [Mallin määritys](pim/set-up-maintain-product-configuration-model.md)
+### [Järjestelmän määrittämiä ja käyttäjän määrittämä taulurajoitus](pim/system-defined-user-defined-table-constraints.md)
+# Tuotannonhallinta
+## Tuotantoprosessi    
+### [Toimintoperusteisen alihankinta](production-control/activity-based-subcontracting.md)
+### [Batch attributes](production-control/batch-attributes.md)
+### [BOMs and formulas](production-control/bill-of-material-bom.md)
+### [BOM designer functionality](production-control/bom-designer-functionality.md)
+### [Consolidated batch orders](production-control/consolidated-batch-orders.md)
+### [Tuotanto alihankinnan työn hallinta](production-control/manage-subcontract-work-production.md)
+### [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control/mixed-mode-plan.md)
+### [Tuotantoprosessi](production-control/production-process-overview.md)
+### [Production setup requirements](production-control/production-set-up-requirements.md)
+### [Reittien ja työvaiheiden](production-control/routes-operations.md)
+## Tuotantotilaukset
+### [Create production orders](production-control/create-production-orders.md)
+### [Tilauksen oletusasetukset mitat ja tuotevariantit](production-control/default-order-settings.md)
+### [Tuotantotilausten vapauttaminen](production-control/release-production-orders.md)
+### [Muuta tuotantotilauksen tila](production-control/reverse-production-order-status.md)
+### [Raportin tuoterakenteet valmiiksi](production-control/report-boms-as-finished.md)
+### [Tuotantotilausten ilmoittaminen valmiiksi](production-control/report-production-orders-as-finished.md)
+## Lean-tuotanto 
+### [Kanban-siirron taulu tuki viivakoodi skannerit](production-control/kanban-transfer-board-support-barcode-scanner.md) 
+### [Lean-valmistuksen ajoituksen kanban-työ](production-control/lean-manufacturing-kanban-job-scheduling.md)
+### [Lean-valmistuksen yleiskatsaus](production-control/lean-manufacturing-overview.md)
+### [Lean organisaation malli](production-control/lean-manufacturing-modeling-lean-organization.md)
+## Ajoita työvaiheet sekä
+### [Varata aikaa työn nipun työt](production-control/allocate-time-jobs-job-bundle.md)
+### [Job scheduling](production-control/job-scheduling.md)
+### [Operations scheduling options](production-control/operation-scheduling-options.md)
+### [Operations scheduling](production-control/operations-scheduling.md)
+## Resurssit
+### [Operations resources](production-control/operations-resources.md)
+### [Resource capabilities](production-control/resource-capabilities.md)
+### [Time and attendance registration](production-control/time-attendance-registrations.md)
+## Tuotannonohjaus
+### [Material substitution in manufacturing](production-control/substitute-items-bom-lines.md)
+### [Materiaalin kulutuksen laskeminen](production-control/consumption.md)
+### [Production feedback](production-control/production-feedback.md)
+### [Tuotannonohjauksessa tuotannossa oletusasetukset](production-control/production-order-defaults-manufacturing-execution.md)
+### [Production posting](cost-management/production-posting.md)
+### [Registration for manufacturing execution](production-control/registration-manufacturing-execution.md)
+# Myynti ja markkinointi
+## [Marketing](sales-marketing/overview-sales-marketing.md)
+## Myyntitilaukset
+### [Order promising](sales-marketing/delivery-dates-available-promise-calculations.md)
+### [Order entry deadlines](sales-marketing/order-entry-deadlines.md)
+### [Direct deliveries](sales-marketing/direct-deliveries.md)
+### [Delivery schedules](sales-marketing/delivery-schedules.md)
+### [Myyntiprosessin sarjanumerot](sales-marketing/register-serial-numbers-sales-process.md)
+### [Saman erän varaus](sales-marketing/reserve-same-batch-sales-order.md)
+## [Sales agreements](sales-marketing/sales-agreements.md)
+## Myyntitarjoukset
+### [Price simulation](sales-marketing/price-simulation.md)
+## Palautukset
+### [Sales returns](warehousing/sales-returns.md)
+# Kuljetustenhallinta
+## [Uusi kuljetus moottori](transportation/create-new-transportation-management-engine.md)
+## [Rahtikirjan luonti](transportation/create-bill-of-lading.md)
+## [Suunnitella reittejä rahdin kuljetus](transportation/plan-freight-transportation-routes-multiple-stops.md)
+## [Suunnittele kuormia käyttämällä keskusten konsolidointia](transportation/plan-loads-hub-consolidation.md)
+## [Täsmäytä rahti](transportation/reconcile-freight-transportation-management.md)
+## [Transportation management](transportation/transportation-management-overview.md)
+## [Moottorin kuljetuksen](transportation/transportation-management-engines.md)
+# Varastonhallinta  
+## Luo perustiedot 
+### [Työn malleja ja sijainti direktiivien avulla työn hallinta](warehousing/control-warehouse-location-directives.md)
+### [Varastotyöntekijöiden hallinta](warehousing/manage-warehouse-workers.md)
+### [Määritä asettelu](warehousing/warehouse-configuration.md)
+### [Warehouse work policies](warehousing/warehouse-work-policies.md)
+### [Mittayksikkö ja varastointikäytännöt](warehousing/unit-measure-stocking-policies.md)
+## Keräys ja pakkaus
+### [Pakkausmateriaaleista ja maksut](warehousing/pack-materials-packing-material-fees.md)
+## Varastoinventointi
+### [Block inventory](inventory/inventory-blocking.md)
+### [Cycle counting](warehousing/cycle-counting.md)
+### [Inventory journal](inventory/inventory-journals.md)
+### [Inventory location](inventory/inventory-locations.md)
+### [Inventory status](inventory/inventory-statuses.md)
+### [Varaston tunnisteiden inventointi](inventory/inventory-tag-counting.md)
+## Konttiinpakkaus 
+## Täydennys
+### [Täydennys](warehousing/replenishment.md)
+## Mobiililaitteet
+### [Määrittää kenttien nimet varastointi app](warehousing/configure-app-field-names-priorities-warehouse.md)
+### [Työn fyysisen varastoinnin mobiililaitteiden määrittäminen](warehousing/configure-mobile-devices-warehouse.md)
+### [Fyysisen varastoinnin mobiililaitteiden Portal (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
+### [Varaston mobiililaitteen näyttöasetukset](warehousing/change-warehouse-mobile-device-displays.md)
