@@ -75,3 +75,4 @@
 # Muut resurssit
 ## [Dynamics 365, toimintojen sanasto](get-started/glossary.md)
 ## [Uudet ja muuttuneet ominaisuudet](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/toc.json)
+

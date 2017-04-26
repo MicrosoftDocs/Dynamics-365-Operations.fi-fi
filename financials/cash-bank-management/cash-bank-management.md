@@ -27,6 +27,9 @@ ms.lasthandoff: 04/12/2017
 
 # <a name="cash-and-bank-management-home-page"></a>Maksuliikennetietojen aloitussivu
 
+[!include[banner](../includes/banner.md)]
+
+
 Voit käyttää maksuliikenteen hallintaa yrityksen pankkitilien ja näihin pankkitileihin liittyvien rahoitusinstrumenttien ylläpitoon. 
 
 Näihin instrumentteihin sisältyvät talletuskuitit, sekit, vekselit ja velkakirjat. Voit myös täsmäyttää tiliotteet ja tulostaa pankkitietoja vakioraporttien avulla.
@@ -69,4 +72,6 @@ Näihin instrumentteihin sisältyvät talletuskuitit, sekit, vekselit ja velkaki
 -   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
 -   [Skenaario: Selvitä useita, jotka ulottuvat useita Alennuskausien lasku yhden asiakkaan maksun avulla](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+
+
 

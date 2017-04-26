@@ -55,3 +55,5 @@ Esimerkiksi tietoja voit lukea viimeisimmät lisäykset:
 ## <a name="elearning-courses"></a>eLearning-kursseille
 Lisätietoja Microsoft Dynamics-365 työvaiheiden koulutukseen, katso <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics Learning Portal</a>. (vaatii CustomerSource-tili) 
 
+
+

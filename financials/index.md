@@ -41,3 +41,5 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
 - [Public sector](public-sector\public-sector-functionality.md) 
 - [Budgeting](budgeting\budgeting-overview.md) 
 
+
+
