@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Laskujen täsmäytys ja konsernin sisäiset ostotilaukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Konsernin sisäisen kauppatapahtuman ostavan yrityksen asetukset on voitu määritettää siten, että käytössä on ostoreskontran laskujen täsmäytys. Tässä tapauksessa sekä konsernin sisäisen välisen kaupan että ostoreskontran laskujen täsmäytyksen kirjausvaatimusten on täytyttävä, ennen kuin konsernin sisäiset ostolaskut voidaan kirjata.
 
 Tämän ohjeaiheen esimerkeissä käytetään seuraavia konsernin sisäisen kaupan asetuksia:
@@ -35,8 +38,8 @@ Tämän ohjeaiheen esimerkeissä käytetään seuraavia konsernin sisäisen kaup
 -   Fabrikam Sales on tuotteet myyvä yritys.
 -   Asiakas 4020 kuuluu yritykseen Fabrikam Sales.
 -   Toimittaja 3024 kuuluu yritykseen Fabrikam Purchase.
--   Konsernin sisäisiä tietoja määritetty toimittaja 3024 kuuluu yritykseen Fabrikam Purchase. Asiakasyritys on määritetty Fabrikam Sales ja asiakastili, joka vastaa yritys Fabrikam Purchase on määritetty asiakas 4020 kuuluu yritykseen.
--   Konsernin sisäisiä tietoja määritetty asiakas 4020 kuuluu yritykseen Fabrikam Sales. Määritetty toimittajayrityksessä Fabrikam Purchase ja toimittaja 3024 kuuluu yritykseen on määritetty toimittajatili, joka vastaa oikeushenkilön Fabrikam Sales.
+-   Fabrikam Purchasessa konsernin sisäiset tiedot on määritetty toimittajalle 3024. Fabrikam Sales on määritetty asiakasyritykseksi ja asiakas 4020 on määritetty Fabrikam Purchase -yritystä vastaavaksi asiakastiliksi.
+-   Fabrikam Salesissa konsernin sisäiset tiedot on määritetty asiakkaalle 4020. Fabrikam Purchase on määritetty toimittajayritykseksi ja toimittaja 3024 on määritetty Fabrikam Sales -yritystä vastaavaksi toimittajatiliksi.
 
 Esimerkeissä käytetään seuraavia Fabrikam Purchase -yrityksen ostoreskontran laskujen täsmäytyksen asetuksia:
 -   Ota käyttöön laskujen täsmäytyksen vahvistus -vaihtoehto on valittu Ostoreskontran parametrit -sivulla.
@@ -45,7 +48,7 @@ Esimerkeissä käytetään seuraavia Fabrikam Purchase -yrityksen ostoreskontran
 
 ## <a name="example-price-matching-and-intercompany-trade"></a> Esimerkki: Hinnan täsmäytys ja konsernin sisäinen kauppa
 Konsernin sisäisen ostolaskun ja konsernin sisäisen myyntilaskun nettosummien on oltava yhtä suuret. Tämä vaatimus ohittaa kaikki sovellettavat laskun täsmäytyksen hyväksynnän tai hintatoleranssiprosenttien vaatimukset. Esimerkiksi seuraavia ohjeita noudatetaan.
-1.  Luo myyntitilaus SO888 asiakas 4020 kuuluu yritykseen Fabrikam Purchase. Konsernin sisäinen ostotilaus ICPO222 luodaan automaattisesti Toimittaja 3024 kuuluu yritykseen Fabrikam Purchase ja myyntitilaus ICSO888 luodaan automaattisesti Fabrikam Sales.
+1.  Luo Fabrikam Purchase -yrityksessä asiakkaalle 4020 myyntitilaus SO888. Toimittajalle 3024 luodaan automaattisesti konsernin sisäinen ostotilaus ICPO222 Fabrikam Purchasessa ja Fabrikam Salessa luodaan automaattisesti myyntitilaus ICSO888.
 2.  Rekisteröi nimikkeet Fabrikam Salesissa vastaanotetuiksi ja kirjaa pakkausluettelo. Tilauksen ICSO888 tilaksi tulee Toimitettu. Tilauksen ICPO222 tilaksi tulee Vastaanotettu.
 3.  Päivitä tilauksen ICSO888 lasku Fabrikam Salesissa. Yksikköhinta on 0,45, ja päivitettäviä nimikkeitä on 100.
 4.  Luo tilauksen ICPO222 lasku Fabrikam Purchasessa. Muutat nettohinnan arvon 45,00 vahingossa arvoksi 54,00. Näyttöön tuleva kuvake ilmaisee, että hinta ylittää sallitun 2 prosentin hintatoleranssin.
@@ -60,10 +63,12 @@ Tässä esimerkissä käytetään seuraavia Fabrikam Purchasen ostoreskontran la
 -   Nimikkeen B-R14 käytettävissä oleva määrä on 0 (nolla).
 
 Esimerkiksi seuraavia ohjeita noudatetaan.
-1.  Luo myyntitilaus SO999 asiakas 4020 kuuluu yritykseen Fabrikam Purchase. Tilaus sisältää yhden rivinimikkeen: 1,00 kunkin yksikön hintaan 100 paristot (nimikkeen B-R14). Toimittajalle 3024 luodaan automaattisesti konsernin sisäinen ostotilaus ICPO333 Fabrikam Purchasessa ja Fabrikam Salessa luodaan automaattisesti myyntitilaus ICSO999.
+1.  Luo Fabrikam Purchase -yrityksessä asiakkaalle 4020 myyntitilaus SO999. Tilauksessa on yksi rivinimike: 100 paristoa (nimike B-R14), jonka yksikköhinta on 1,00. Toimittajalle 3024 luodaan automaattisesti konsernin sisäinen ostotilaus ICPO333 Fabrikam Purchasessa ja Fabrikam Salessa luodaan automaattisesti myyntitilaus ICSO999.
 2.  Päivitä tilauksen ICSO999 lasku Fabrikam Salesissa. Kirjaus ei onnistu, koska nimike on loppunut varastosta eikä sitä ole vielä vastaanotettu. Niinpä taloushallinnon tietoja ei voi päivittää.
 3.  Rekisteröi nimikkeet Fabrikam Salesissa vastaanotetuiksi ja kirjaa tilauksen ICSO999 pakkausluettelo. Tilauksen ICPO333 tuotteen vastaanotto kirjataan automaattisesti Fabrikam Purchasessa. Nimikkeen B-R14 vastaanotettu määrä muuttuu Fabrikam Purchasessa arvoksi 100.
 4.  Päivitä tilauksen ICSO999 lasku Fabrikam Salesissa. Kirjaus onnistuu molemmissa yrityksissä. Nimikkeen B-R14 ostettu määrä muuttuu Fabrikam Purchasessa arvoksi 100. 
+
+
 
 
 

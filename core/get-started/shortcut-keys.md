@@ -1,6 +1,6 @@
 ---
 title: "Pikanäppäimet"
-description: "Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics-365 operaatioille."
+description: "Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Operations -ohjelmistossa."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
-Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics-365 operaatioille. 
+[!include[banner](../includes/banner.md)]
+
+
+Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Operations -ohjelmistossa. 
 
 **Huomautus:** Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
 
@@ -40,7 +43,7 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics-365 operaatio
 | Siirry valikossa seuraavaan tai edelliseen vaihtoehtoon            | Alanuoli/ylänuoli            |
 | Sulje toimintoruudun tai valikon välilehti          | Esc                              |
 | Hiiren kakkospainikkeen napsautus                            | Vaihto+F10                        |
-| Avaa pikavalikko toimintoja varten Dynamics-365 | Ctrl+F10                         |
+| Avaa Dynamics 365 for Operationsin pikavalikko. | Ctrl+F10                         |
 | Suorita oletuspainike lomakkeessa/valintaikkunassa       | Alt+Enter                        |
 | Painikkeen tai ruudun napsautus                            | Enter tai Väli                   |
 | Näytä tai päivitä määräruudun tiedot         | Alt+Ylänuoli                     |
@@ -64,7 +67,7 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics-365 operaatio
 | Avaa tietoruutu (tai siirrä kohdistus tietoruutuun, jos se on avoinna) | Ctrl+F2                                   |
 | Sulje tietoruutu (kun kohdistus on tietoruudussa)                         | Esc                                       |
 | Siirry seuraavaan/edelliseen tietoruutuun (kun kohdistus on tietoruudussa)              | Alt+Vaihto+Alanuoli / Alt+Vaihto+Ylänuoli |
-| Siirrä &lt;n&gt;th tietoruutu (kun kohdistin-tietoruutuun)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Siirry &lt;n&gt;. tietoruutuun (kun kohdistus on tietoruudussa)                | Alt+&lt;n&gt; (&lt;n&gt; = 1–9)           |
 | Laajenna tietoruutu (kun kohdistus on tietoruudun otsikossa)                             | Väli tai Enter                            |
 | Tiivistä nykyinen tietoruutu                                                    | Alt+0                                     |
 
@@ -111,8 +114,8 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics-365 operaatio
 | Siirry seuraavaan/edelliseen kenttään                     | Sarkain / Vaihto+Sarkain                              |
 | Siirry seuraavaan/edelliseen välilehteen                       | Alt+Vaihto+Oikea nuoli / Alt+Vaihto+Vasen nuoli |
 | Siirry seuraavaan/edelliseen pikavälilehteen                   | Alt+Vaihto+Alanuoli / Alt+Vaihto+Ylänuoli    |
-| Siirrä &lt;n&gt;th-pikavälilehti                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Siirrä &lt;n&gt;th-välilehti                         | ALT + VAIHTO +&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Siirry &lt;n&gt;. pikavälilehteen                     | Alt+&lt;n&gt; (&lt;n&gt; = 1–9)              |
+| Siirry &lt;n&gt;. välilehteen                         | Alt+Vaihto+&lt;n&gt; (&lt;n&gt; = 1–9)        |
 | Laajenna pikavälilehti (kun kohdistus on sen otsikossa) | Väli tai Enter                               |
 | Tiivistä nykyinen pikavälilehti                        | Alt+0                                        |
 | Vaihda ruudukkonäkymään                                 | Ctrl+Vaihto+G                                 |
@@ -152,7 +155,7 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics-365 operaatio
 | Avaa haku, yhdistelmäruutu, päivämäärävalitsin, avattava valintaikkuna           | Alt+Alanuoli                |
 | Sulje haku, yhdistelmäruutu, päivämäärävalitsin, avattava valintaikkuna          | Esc                           |
 | Siirrä kohdistus hakuun (kun haku on avoinna) | Alt+Alanuoli                |
-| Avaa ohjausobjektin parannettu esikatselu                        | Alt+Ylänuoli                  |
+| Avaa ohjausobjektin tarkennettu esikatselu                        | Alt+Ylänuoli                  |
 | Valitse nykyisen kentän teksti                           | Ctrl+A                        |
 | Siirry tekstialueeseen tai poistu siitä HTML-editorin ohjausobjektissa        | Alt+Alanuoli / Alt+Ylänuoli |
 
@@ -174,18 +177,18 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics-365 operaatio
 | Siirry koontinäyttöön                                                       | Alt+Vaihto+Home  |
 | Siirry siirtymispalkkiin                                                  | Alt+Vaihto+F1    |
 | Siirry siirtymisruutuun                                                 | Alt+F1          |
-| Suosikki/un-favorite lomakkeen (kun kohdistin lomakkeen siirtymisruudusta) | VAIHTO + F         |
+| Aseta/poista lomakkeen suosikkimerkintä (kun siirtymisruudun kohdistin on lomakkeessa) | Vaihto+F         |
 | Siirry yrityksen valitsimeen                                                  | Ctrl+Vaihto+O    |
 | Siirry siirtymishakuun                                                   | Ctrl+/ tai Alt+G |
-| Avaa Ohjeruutu                                                        | CTRL +?          |
-| Avaa jäljityksen jäsentimen                                                     | ALT + VAIHTO + T     |
+| Avaa ohjeruutu.                                                        | Ctrl+?          |
+| Avaa jäljityksen jäsennin                                                     | Alt+Vaihto+T     |
 
  
 
 ## <a name="segmented-entry-shortcuts"></a>Segmentoidun kirjauksen pikanäppäimet
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **To do this**                                                                                                          | **Press**                        |
+| **Toiminto**                                                                                                          | **Näppäinyhdistelmä**                        |
 | Avaa avattava luettelo (kun se on suljettu)                                                             | Alt+Alanuoli                   |
 | Siirrä kohdistus avattavassa luettelossa nykyisen segmentin syötekenttään (kun avattava luettelo on avoinna) | Alt+Alanuoli                   |
 | Sulje avattava luettelo                                                                                                | Alt+Ylänuoli                     |
@@ -199,5 +202,7 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics-365 operaatio
 | Siirry haun ylä-/alareunaan                                                                                    | Home / End                       |
 
  
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consumption-depreciation"></a>Kulutuspoisto
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on yleiskuvaus poiston kulutusmenetelmästä.
 
 Kun määrität käyttöomaisuuksien poistoprofiilin ja valitset **Poistoprofiilit**-sivun **Menetelmä**-kentässä **Kulutus**, poistoprofiiliin määritetyt käyttöomaisuudet perustuvat niiden käyttöön. Prosenttiosuuksia ja välejä ei tarvitse määrittää **Poistoprofiilit**-sivulla. Kun olet luonut kulutusmenetelmää käyttävän poistoprofiilin, voit määrittää menetelmän monella tavalla.
@@ -64,5 +67,7 @@ Seuraava kulutuspoiston kerroin on määritetty tammikuun 31. päivälle:
 -   Käyttöomaisuuserän arvioitu määrä on 2 000.
 
 Tammikuun 31. päivän poistoehdotus on seuraava: arvioitu määrä × prosentti × yksikköpoisto 2 000 × 0,10 × 1,5 = 300
+
+
 
 

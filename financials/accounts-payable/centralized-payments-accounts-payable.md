@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-payable"></a>Ostoreskontran keskitetyt maksut
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja maksuja ei tarvitse lisätä useisiin yrityksiin. Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten keskitettyjen maksujen kirjaus toteutetaan eri tilanteissa.
 
 Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja maksuja ei tarvitse lisätä useisiin yrityksiin. Lisäksi virtaviivaistettu maksuprosessi säästää organisaation aikaa.
@@ -66,14 +69,14 @@ Fabrikam Eastilla on avoin lasku toimittajatilillä 100, Fourth Coffee. Fabrikam
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili                           | Veloitussumma | Hyvityssumma |
 |-----------------------------------|--------------|---------------|
 | Maksaja Fabrikam East (Fabrikam) | 600,00       |               |
 | Ostoreskontra (Fabrikam)       |              | 600,00        |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili                          | Veloitussumma | Hyvityssumma |
 |----------------------------------|--------------|---------------|
@@ -99,14 +102,14 @@ Fabrikam Eastilla on avoin lasku toimittajalle 100, Fourth Coffee. Laskussa on k
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili                           | Veloitussumma | Hyvityssumma |
 |-----------------------------------|--------------|---------------|
 | Maksaja Fabrikam East (Fabrikam) | 580,00       |               |
 | Ostoreskontra (Fabrikam)       |              | 580,00        |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili                          | Veloitussumma | Hyvityssumma |
 |----------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Fabrikam Eastilla on avoin lasku toimittajalle 100, Fourth Coffee. Fabrikam syö
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili                           | Veloitussumma            | Hyvityssumma           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Fabrikam Eastilla on avoin lasku toimittajalle 100, Fourth Coffee. Fabrikam syö
 | Realisoitunut tappio (Fabrikam)          | 0,00 (EUR) / 12,90 (USD)    |                         |
 | Maksaja Fabrikam East (Fabrikam) |                         | 0,00 (EUR) / 12,90 (USD)    |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili                          | Veloitussumma            | Hyvityssumma           |
 |----------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Fabrikam Eastilla on avoin lasku toimittajalle 100, Fourth Coffee. Laskussa on k
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili                           | Veloitussumma            | Hyvityssumma           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Fabrikam Eastilla on avoin lasku toimittajalle 100, Fourth Coffee. Laskussa on k
 | Realisoitunut tappio (Fabrikam)          | 0,00 (EUR) / 12,66 (USD)    |                         |
 | Maksaja Fabrikam East (Fabrikam) |                         | 0,00 (EUR) / 12,66 (USD)    |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili                          | Veloitussumma            | Hyvityssumma           |
 |----------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Fabrikam Eastilla on avoin lasku toimittajalle 100, Fourth Coffee. Laskussa on k
 | Käteisalennus (Fabrikam East)    |                         | 11,28 (EUR) / 13,61 (USD)   |
 
 ## <a name="example-5-vendor-credit-note-with-primary-payment"></a>Esimerkki 5: Toimittajan hyvityslasku ja ensisijainen maksu
-Fabrikam muodostaa maksun, jonka summa on 75,00, toimittajalle 3004, Fourth Coffee. Maksu selvitetään Fabrikam Westin toimittajan 3004 avoimen laskun ja Fabrikam Eastin toimittajan 100 hyvityslaskun kanssa. Maksu valitaan ensisijaiseksi maksuksi **tapahtumat selvitetään** sivulla.
+Fabrikam muodostaa maksun, jonka summa on 75,00, toimittajalle 3004, Fourth Coffee. Maksu selvitetään Fabrikam Westin toimittajan 3004 avoimen laskun ja Fabrikam Eastin toimittajan 100 hyvityslaskun kanssa. Maksu valitaan ensisijaiseksi maksuksi **Selvitä tapahtumat** -sivulla.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Lasku kirjataan Fabrikam Westiin toimittajalle 3004
 
@@ -224,7 +227,7 @@ Fabrikam muodostaa maksun, jonka summa on 75,00, toimittajalle 3004, Fourth Coff
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikamin maksu selvitetään Fabrikam Westin laskun ja Fabrikam Eastin hyvityslaskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili                           | Veloitussumma | Hyvityssumma |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Fabrikam muodostaa maksun, jonka summa on 75,00, toimittajalle 3004, Fourth Coff
 | Maksaja Fabrikam West (Fabrikam) | 100,00       |               |
 | Ostoreskontra (Fabrikam)       |              | 100,00        |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili                           | Veloitussumma | Hyvityssumma |
 |-----------------------------------|--------------|---------------|
 | Maksaja Fabrikam (Fabrikam East) | 25,00        |               |
 | Ostoreskontra (Fabrikam East)  |              | 25,00         |
 
-**Fabrikam West posting**
+**Kirjaus Fabrikam Westiin**
 
 | Tili                          | Veloitussumma | Hyvityssumma |
 |----------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Fabrikam muodostaa maksun, jonka summa on 75,00, toimittajalle 3004, Fourth Coff
 | Saaja Fabrikam (Fabrikam West)  |              | 100,00        |
 
 ## <a name="example-6-vendor-credit-note-without-primary-payment"></a>Esimerkki 6: Toimittajan hyvityslasku ilman ensisijaista maksua
-Fabrikam muodostaa maksun, jonka summa on 75,00, toimittajalle 3004, Fourth Coffee. Maksu selvitetään Fabrikam Westin toimittajan 3004 avoimen laskun ja Fabrikam Eastin toimittajan 100 hyvityslaskun kanssa. Maksu ei ole valittu ensisijaiseksi maksuksi **tapahtumat selvitetään** sivulla.
+Fabrikam muodostaa maksun, jonka summa on 75,00, toimittajalle 3004, Fourth Coffee. Maksu selvitetään Fabrikam Westin toimittajan 3004 avoimen laskun ja Fabrikam Eastin toimittajan 100 hyvityslaskun kanssa. Maksu ei valita ensisijaiseksi maksuksi **Selvitä tapahtumat** -sivulla.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Lasku kirjataan Fabrikam Westiin toimittajalle 3004
 
@@ -273,21 +276,21 @@ Fabrikam muodostaa maksun, jonka summa on 75,00, toimittajalle 3004, Fourth Coff
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikamin maksu selvitetään Fabrikam Westin laskun ja Fabrikam Eastin hyvityslaskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili                           | Veloitussumma | Hyvityssumma |
 |-----------------------------------|--------------|---------------|
 | Maksaja Fabrikam West (Fabrikam) | 75,00        |               |
 | Ostoreskontra (Fabrikam)       |              | 75,00         |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili                                | Veloitussumma | Hyvityssumma |
 |----------------------------------------|--------------|---------------|
 | Maksaja Fabrikam West (Fabrikam East) | 25,00        |               |
 | Ostoreskontra (Fabrikam East)       |              | 25,00         |
 
-**Fabrikam West posting**
+**Kirjaus Fabrikam Westiin**
 
 | Tili                              | Veloitussumma | Hyvityssumma |
 |--------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Fabrikam muodostaa maksun, jonka summa on 75,00, toimittajalle 3004, Fourth Coff
 | Saaja Fabrikam (Fabrikam West)      |              | 75,00         |
 | Ostoreskontra (Fabrikam West)     | 25,00        |               |
 | Saaja Fabrikam East (Fabrikam West) |              | 25,00         |
+
+
 
 
 

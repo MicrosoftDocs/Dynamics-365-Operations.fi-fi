@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="batch-attributes"></a>Erämääritteet
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja erämääritteistä. Erämääritteet ovat varastoeriä muodostavien raaka-aineiden ja valmiiden tuotteiden ominaisuuksia. Artikkelissa selvitetään myös, kuinka erämääritteitä määritetään ja kuinka niitä voi hakea eriä varattaessa.
 
 Erämääritteet ovat varastoeriä muodostavien raaka-aineiden ja valmiiden tuotteiden ominaisuuksia. Erämääritteet voivat vaihdella monen tekijän, esimerkiksi ympäristöolosuhteiden, erän tuottamiseen käytettävien raaka-aineiden laadun tai tuloksena syntyvän lopputuotteen mukaan. Erämääritteiden määrä ja tyypit voivat vaihdella paljon eri toimialojen välillä. Seuraavassa on kaksi esimerkkiä erämääritteiden käyttämisestä:
@@ -42,12 +45,14 @@ Määritteiden määrää ja tyyppiä on helpompi hallita erämääriteryhmien a
 Erämääritteet liitetään yksittäisiin tuotteisiin, joita pidetään varastoerissä, tai tuotteisiin, jotka liittyvät tiettyihin asiakkaisiin. Ennen kuin liität erämääritteen asiakastasolla, se täytyy liittää tuotetasolla. Tuotteen erädimensioksi on määritettävä **Aktiivinen** seurantadimensioryhmässä. Jos haluat määrittää erämääritteen yksittäiselle tuotteelle, käytä kyseisen tuotteen sivua. Jos määrite koskee tietyn asiakkaan tuotetta, käytä kyseisen asiakkaan sivua. Kun lisäät tuotteeseen määritettä, määritä myös muut parametrit. Seuraavassa on muutamia esimerkkejä:
 
 -   Määritetyyppien **Kokonaisluku** ja **Nimellinen** minimi- ja maksimialueet.
--   Määrite toleranssi toiminnot **kokonaislukuun** tai **murto-osa** tyyppi. Määritteen arvo kuuluu vähimmäis- ja enimmäismäärät ylittyvät, toiminto voi olla joko varoitussanoman tai näyttöön tulee virhesanoma.
+-   Toleranssitoiminnot määritteelle, jonka tyyppi on **Kokonaisluku** tai **Nimellinen**. Jos määritteen arvo on minimi- ja maksimialueen ulkopuolella, toimenpide voi olla varoitus- tai virheilmoitus.
 -   Määritteen kohdearvo. Arvo on määritteen optimaalinen arvo, joka koskee kaikkia määritetyyppejä.
 
 Voit käyttää **Vapautetut tuotteet** -sivulla valittujen tuotteiden sivuja Tuotetietojen hallinnassa. Kun olet liittänyt erämääritteet tuotteeseen, voit lisätä määritteille arvoja **Varastoerämääritteet**-sivulla.
 
 ## <a name="reserve-batches"></a>Erien varaaminen
 Voit hakea erämääritteitä tehdessäsi erävarauksia myyntitilaukselle asiakkaan tilauksen täyttämiseksi tai keräillessäsi ja varatessasi eriä tuotantotilaukselle. Haun avulla voit etsiä varastoerää, joka sisältää tuotteen, jolla on haluamasi erämäärite. Kun olet paikantanut erän tai erät, voit varata tuotteen lähdevaraston tapahtumariville.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Taloudellinen suorituskyky Virranhallinta BI sisältö"
-description: "Tässä ohjeaiheessa kuvataan Microsoft Power BI toimintojen taloudellisen suorituskyvyn sisältö Pack Microsoft Dynamics-365. Dashboard ja raportteja, jotka sisältyvät sisältö pack kuvaa ja tietoja tietomallin ja yhteisöistä, joita käytettiin rakentaa sisältö pack."
+title: "Taloudellisen suorituskyvyn Power BI -sisältö"
+description: "Tässä aiheessa kuvataan, mistä voit ladata Microsoft Dynamics 365 for Operations -järjestelmän taloudellisen suorituskyvyn sisältöpaketin Microsoft Power BI:lle. Siinä kuvataan koontinäytön käyttö sekä sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,23 +24,26 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Taloudellinen suorituskyky Virranhallinta BI sisältö
+# <a name="financial-performance-power-bi-content"></a>Taloudellisen suorituskyvyn Power BI -sisältö
 
-Tässä ohjeaiheessa kuvataan Microsoft Power BI toimintojen taloudellisen suorituskyvyn sisältö Pack Microsoft Dynamics-365. Dashboard ja raportteja, jotka sisältyvät sisältö pack kuvaa ja tietoja tietomallin ja yhteisöistä, joita käytettiin rakentaa sisältö pack.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>Sisältö pack käyttäminen
+
+Tässä aiheessa kuvataan, mistä voit ladata Microsoft Dynamics 365 for Operations -järjestelmän taloudellisen suorituskyvyn sisältöpaketin Microsoft Power BI:lle. Siinä kuvataan koontinäytön käyttö sekä sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
+
+<a name="accessing-the-content-pack"></a>Sisältöpaketin avaaminen
 --------------------------
 
-Tuloksellisuuteen sisältöpaketti kaksi versiota ovat saatavilla. Yksi versio on saatavana Microsoft Dynamics Lifecycle Services (LCS)- ja toinen on saatavana PowerBI.com.
+Taloudellisen suorituskyvyn sisältöpaketeista on saatavilla kaksi versiota. Yksi versio on saatavana Microsoft Dynamics Lifecycle Services (LCS) -palvelusta ja toinen on saatavana osoitteesta PowerBI.com.
 
--   **Versio on ladattavissa LCS:** tuloksellisuuteen sisältöpaketti on saatavana LCS tukee Microsoft Dynamics-365-version toimintoja 1611. Löydät jaetun omaisuuden LCS-kirjaston sisältö pack. Saat lisätietoja siitä, miten sisältö pack ladata ja liittää sen Microsoft Dynamics-365, toimintojen tietojen [virtaa BI sisältöä Microsoftin ja kumppanien LCS-](power-bi-content-microsoft-partners.md).
--   **Versio on ladattavissa PowerBI.com:** tuloksellisuuteen sisältöpaketti on saatavana PowerBI.com tukee Microsoft Dynamics AX-versiota 7.0 että 7.0.1. Saat lisätietoja siitä, miten yhteyden ja ladata oman Dynamics 365 toimintoja tietojen [PowerBI.com sisällön käyttö Power BI](power-bi-home-page.md).
+-   **Versio, joka on ladattavissa LCS:stä:** taloudellisen suorituskyvyn sisältöpaketti, joka on saatavana LCS:stä tukee Microsoft Dynamics 365 for Operations -versiota 1611. Löydät sisältöpaketin LCS:n jaetun omaisuuden kirjastosta. Saat lisätietoja siitä, miten sisältöpaketti ladataan ja miten se liitetään Microsoft Dynamics 365 for Operationsin tietoihin, artikkelista [LCS:n Power BI -sisältö Microsoftilta ja kumppaneilta](power-bi-content-microsoft-partners.md).
+-   **Versio, joka on saatavissa PowerBI.com-sivustosta:** taloudellisen suorituskyvyn sisältöpaketti, joka on saatavana PowerBI.com-sivustosta tukee Microsoft Dynamics AX -versioita 7.0 ja 7.0.1. Lisätietoja Dynamics 365 for Operations -tietojen liittämisestä ja lataamisesta on artikkelissa [Power BI -sisällön hakeminen PowerBI.com-sivustosta](power-bi-home-page.md).
 
 ## <a name="main-account-setup"></a>Päätilin asetukset
-Koska organisaatiot veloista ja tuloista summien näkyvän raporteissa positiivisina summina, päätilit-Dynamics 365 työvaiheiden määritys on tärkeää. Nämä päätilit, jotka ovat positiivisia määriä, päätilityypin on asetettava **vastuu** tai **tulojen**. Käytettäessä näitä tilityyppejä kautta Microsoft Power BI-raportoinnin käänteinen oireiden ja summat positiiviseksi.
+Koska organisaatiot haluavat velkojen ja tuottosummien näkyvän raporteissa positiivisina summina, päätilien määritys Dynamics 365 for Operationsissa on tärkeää. Jotta nämä päätilit näkyisivät positiivisina summina, päätilityypiksi on asetettava **Velka** tai **Tuotto**. Käytettäessä näitä tilityyppejä Microsoft Power BI -raportointi kääntää merkit ja näyttää summat positiivisina.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-content-pack"></a>Dashboard ja raportteja, jotka sisältyvät sisältö pack
-Kun olet liittänyt sisältöpaketin Dynamics 365 for Operations -tietoihin, taloustietosi näkyvät koontinäytössä ja raporteissa. Jos et ole koskaan käyttänyt ennen BI virran, saat siitä lisätietoja [Power BI sivulla ohjattu oppiminen](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Koontinäyttö sisältää yhteenvetoruutuja tiedoista, jotka perustuvat pohjana oleviin raportteihin. Kukin ruutu sisältää kuluvan vuoden yhteenvetotietoja, jotka koskevat kaikkia organisaation yrityksiä. Seuraavassa on joitakin laatat:
+## <a name="dashboard-and-reports-that-are-included-in-the-content-pack"></a>Koontinäyttö ja raportit, jotka sisältyvät sisältöpakettiin
+Kun olet liittänyt sisältöpaketin Dynamics 365 for Operations -tietoihin, taloustietosi näkyvät koontinäytössä ja raporteissa. Jos et ole käyttänyt Power BI:tä aiemmin, lisätietoja löydät artikkelista [Power BI:n ohjattu oppiminen](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Koontinäyttö sisältää yhteenvetoruutuja tiedoista, jotka perustuvat pohjana oleviin raportteihin. Kukin ruutu sisältää kuluvan vuoden yhteenvetotietoja, jotka koskevat kaikkia organisaation yrityksiä. Tässä on esimerkkejä ruuduista:
 
 -   Maksu
 -   Kuluvan vuoden kokonaistuotto
@@ -56,13 +59,13 @@ Kun olet liittänyt sisältöpaketin Dynamics 365 for Operations -tietoihin, tal
 -   Kuluvan vuoden katetuotto
 -   Todelliset vs. budjetoidut kulut – Kaikki yritykset
 
-Kukin ruutu varmuuskopioidaan tukevat raportin. Nämä raportit sisältävät kaavioita ja taulukoita, joissa on lisätietoja. Seuraavassa taulukossa kuvataan raportit.
+Kunkin ruudun taustatukena on raportti. Nämä raportit sisältävät kaavioita ja taulukoita, joissa on lisätietoja. Seuraavassa taulukossa kuvataan raportit.
 
 | Raportti                      | Raportin sisältämät tiedot                                                                                                                                                                                                                                                                                                          |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Käteisanalyysi               | Oikeushenkilö, neljännesvuosittain rahaa, yhteensä rahaa ja rahaa tilillä rahaa **Huomautus:****rahaa neljännesvuosittain** raportti ei sisällä alkusaldot yhteensä ensimmäisen vuosineljänneksen. Siinä esitetään uusia tapahtumia, jotka on kirjattu kunkin vuosineljänneksen kokonaissumman.                                                                                |
+| Käteisanalyysi               | Käteisvarat yrityksen mukaan, käteisvarat vuosineljänneksen mukaan, kokonaiskäteisvarat ja käteisvarat tilin mukaan **Huomautus:** **Käteisvarat vuosineljänneksen mukaan** -raportin summat eivät sisällä ensimmäisen vuosineljänneksen alkusaldoja. Se näyttää uusien, kussakin neljänneksessä kirjattujen, tapahtumien kokonaissumman.                                                                                |
 | Nykyisen suhteen analyysi      | Nykyinen suhde yrityksittäin, neljännesvuosittain ja saldoittain nykyiselle omaisuudelle sekä nykyisille veloille                                                                                                                                                                                                                              |
-| Nopean suhdeluvun analyysi        | Nopea suhdeluku mukaan oikeushenkilö, neljännesvuosittain ja saldot rahaa, nopea suhdeluku tilien myyntireskontran ja nykyiset velat                                                                                                                                                                                                                      |
+| Nopean suhdeluvun analyysi        | Nopea suhde yrityksittäin, neljännesvuosittain ja saldoittain käteiselle, myyntireskontralle sekä nykyisille veloille                                                                                                                                                                                                                      |
 | Myytyjen tuotteiden kustannusanalyysi | Yrityksen myytyjen tuotteiden kustannukset (MTKUST) kuluvana ja edellisenä vuonna neljännesvuosittain, MTKUST myynneille yrityksittäin, kokonais-MTKUST ja MTKUST myyntiprosenteittain                                                                                                                                                                                   |
 | Käyttöpääoma-analyysi    | Käyttöpääoma yrityksittäin, neljännesvuosittain, nykyinen omaisuus ja velat sekä kokonaiskäyttöpääoma                                                                                                                                                                                                                   |
 | Vara- ja velka-analyysi     | Kokonaisvarallisuuden tuotto ja velka yrityksittäin, velka - vastaavat yhteensä ja kokonaiskäyttöomaisuuden tuoton neljännes päivään saakka, varat ja velat                                                                                                                                                                                     |
@@ -71,17 +74,17 @@ Kukin ruutu varmuuskopioidaan tukevat raportin. Nämä raportit sisältävät ka
 | Ansioanalyysi           | Toteutuneet ja budjetoidut ansiot ennen korkoa ja veroja (EBIT) yrityksittäin, kuluvan ja edellisen vuoden EBIT, kulujen ja tuoton suhde prosentteina sekä toteutunut ja budjetoitu kulujen ja tuoton suhde                                                                                                                                                          |
 | Tuottoanalyysi            | Kokonaistuotto, toteutunut ja budjetoitu kokonaistuotto yrityksittäin, kuluvan ja edellisen vuoden kokonaistuotto, tuottobudjetin varianssi yrityksittäin sekä kuluvan ja edellisen kauden kokonaistuotto                                                                                                                                                 |
 | Kuluanalyysi            | Kokonaiskulut, toteutuneiden ja budjetoitujen kokonaiskulujen suhde yrityksittäin, toteutuneet ja budjetoidut kokonaiskulut neljännesvuosittain, kokonaiskulut tililuokittain sekä toimintakulujen suhde                                                                                                                                                                 |
-| Laskutetun tuoton analyysi     | Myyntireskontra yhteensä, mukaan oikeushenkilön Myyntireskontra yhteensä, yhteensä myyntireskontran neljännesvuosittain, ja tilit saamiset-tilien saldojen **Huomautus:** raportit eivät sisällä tilit myyntireskontran kirjanpitotilien alkusaldot. Ne näyttävät uusia tapahtumia, jotka on kirjattu tileihin Myyntireskontran summa. |
+| Laskutetun tuoton analyysi     | Kokonaismyyntireskontra, kokonaismyyntireskontra yrityksittäin ja neljännesvuosittain sekä myyntireskontratilien saldot **Huomautus:** Raportit eivät sisällä myyntireskontran kirjanpidon alkusaldoja. Ne näyttävät niiden uusien tapahtumien kokonaissumman, jotka on kirjattu myyntireskontraan. |
 
 Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
-Joka täyttää dashboard ja taloudellisen suorituskyvyn sisältöpaketti raporttien tiedot Dynamics 365 toimintojen tiedot. Sisältö pack perustana käytettiin seuraavia kohteita: **keräämään tietoja yksiköt**
+Tiedot, joita käytetään taloudellisen suorituskyvyn sisältöpaketin koontinäytön ja raporttien täyttämiseen, ovat peräisin Dynamics 365 for Operations -järjestelmästä. Sisältöpaketin perustana on käytetty seuraavia entiteettejä: **Koostetietoentiteetit**
 
--   **GeneralLedgerActivities** – tämän entiteetin kokoaa Kirjanpidon saldot ensimmäisen luokan mukaan.
--   **BudgetActivities** – tämän entiteetin kokoaa budjettisaldot ensimmäisen luokan mukaan.
+-   **GeneralLedgerActivities** – tämä yksikkö kokoaa kirjanpidon saldot tililuokittain.
+-   **BudgetActivities** – tämä yksikkö kokoaa budjetin saldot tililuokittain.
 
-**Data entities**
+**Tietoyksiköt**
 
 -   FiscalCalendars
 -   MainAccounts
@@ -89,7 +92,7 @@ Joka täyttää dashboard ja taloudellisen suorituskyvyn sisältöpaketti raport
 -   Kirjanpidot
 -   ChartofAccounts
 
-Luo lasketut mitat tietomallin käytettiin entiteetit. Lasketut mitat käytetään laskettaessa Suorituskyvyn mittareiden (KPI: T) ja raportit, joita käytetään sisällön pack. Oletusarvon mukaan sisältöpaketti tuo edellisten kolmen vuoden sekä yhden tulevan vuoden tiedot. Voit muokata [Microsoft Excel -työkirjaa](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) sisällyttääksesi lisälaskelmia raporteille ja koontinäytölle. Tämä työkirja on sisältöpaketin luomisessa käytetty oletustietomalli. Kun olet tehnyt haluamasi muutokset, voit luoda organisaation sisältöpaketin ja koontinäytön, joka sisältää lisäämäsi tiedot.
+Näitä yksikköjä käytettiin luomaan laskettuja mittoja tietomallissa. Näitä laskennallisia mittoja käytetään sitten laskemaan sisältöpaketissa käytettävät tunnusluvut (KPI:t) ja raportit. Oletusarvon mukaan sisältöpaketti tuo edellisten kolmen vuoden sekä yhden tulevan vuoden tiedot. Voit muokata [Microsoft Excel -työkirjaa](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) sisällyttääksesi lisälaskelmia raporteille ja koontinäytölle. Tämä työkirja on sisältöpaketin luomisessa käytetty oletustietomalli. Kun olet tehnyt haluamasi muutokset, voit luoda organisaation sisältöpaketin ja koontinäytön, joka sisältää lisäämäsi tiedot.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:
@@ -98,6 +101,8 @@ Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisä
 -   [Organisaation sisältöpakettien luominen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Tietojen mallinnus Power BI:n avulla](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Power BI -ruutujen lisääminen työtiloihin](configure-power-bi-integration.md)
+
+
 
 
 

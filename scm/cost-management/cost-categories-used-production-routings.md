@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-categories-used-in-production-routing"></a>Tuotannon reitityksissä käytettävät kustannusluokat
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja kustannusluokista, joita käytetään reititystä käyttävissä valmistusympäristöissä.
 
 Kustannusluokkia käytetään valmistusympäristöissä, joissa käytetään reitityksiä. Kustannusluokat liitetään operatiivisiin resursseihin ja reitityksen työvaiheisiin tuntikustannusten määrittämistä sekä valmistetun nimikkeen laskettujen kustannusten kustannusvaikutusten ryhmittelyä varten. Kustannusluokkiin liitettyjen kustannusryhmien avulla valmistuksen kustannusvaikutukset luokitellaan operatiivisten resurssien sekä tehtävätyypin, kuten asennus- ja ajoajan, mukaan. Kustannusryhmämääritysten tarkkuus mahdollistaa valmistuksen yleiskustannusten laskennan reititystietojen perusteella. 
@@ -51,5 +54,7 @@ Kustannusluokan kustannustietue voi olla toimipaikkakohtainen tai yrityksenlaaju
 Reitityksen työvaihe perii tavallisesti operatiiviseen resurssiin tai päätyövaiheeseen liitetyt kustannusluokat. Kun luot tuotantotilauksen, tuotantoreitin reititystyövaiheet ovat valitun reittiversion mukaiset. Voit korvata tuotantoreitin työvaiheille määritetyt kustannusluokat. 
 
 Joitakin tuotantotyön tyyppejä voidaan käyttää projektin aika-arvioinneissa ja raportoinnissa. Tässä tapauksessa kustannusluokka tarvitaan tuotantoa ja projektia varten. Kun kustannusluokka on merkitty käytettäväksi projekteissa, projektista on määritettävä lisätietoja.
+
+
 
 

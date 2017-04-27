@@ -1,6 +1,6 @@
 ---
-title: "Uudet tai päivitetyt tehtävä auttaa (marraskuu-2016)"
-description: "Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jotka on julkaistu Microsoft (marraskuussa 2016 - kaikilla kielillä) Microsoft Dynamics-365 työvaiheiden APQC yhdistetyn kirjaston. Uutta aloituskirjastoa ei ole julkaistu."
+title: "Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)"
+description: "Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics 365 for Operationsin Microsoftin (marraskuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,21 +24,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-november-2016"></a>Uudet tai päivitetyt tehtävä auttaa (marraskuu-2016)
+# <a name="new-or-updated-task-guides-november-2016"></a>Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)
 
-Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jotka on julkaistu Microsoft (marraskuussa 2016 - kaikilla kielillä) Microsoft Dynamics-365 työvaiheiden APQC yhdistetyn kirjaston. Uutta aloituskirjastoa ei ole julkaistu.
+[!include[banner](../includes/banner.md)]
 
-(Marraskuussa 2016 – kaikilla kielillä) APQC yhdistetyn kirjasto sisältää tehtävän, joka on tarkoitettu käytettäväksi ohjeita Microsoft Dynamics-365 operaatioille, Microsoft Dynamics-365 toimia ympäristön päivitys Microsoft Dynamics AX: N Platform update 2-3 Dynamics AX apuviivat toukokuuta 2016 update-ja Microsoft Dynamics AX-helmikuu 2016. Saat lisätietoja näistä julkaisuista, [mikä on uusi tai muutettu](whats-new-changed.md). Lokalisoidut versiot tehtävän apuviivat ovat tähän kirjastoon. Saat lisätietoja siitä, miten ohjeen muodostaa tehtävien opas-kirjasto [alkuun Ohje](help-overview.md). **Huomautus:** tähti (**\***) Business process Mallintaja (BPM) otsikon vieressä rivi ilmaisee tehtävän, Liiketoimintaprosessi-opas luotiin Dynamics 365 työvaiheiden marraskuussa 2016 päivittäminen ja Microsoft Dynamics AX: N aiemmissa versioissa ei tueta.
+
+Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics 365 for Operationsin Microsoftin (marraskuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
+
+Yhdistetty APQC-kirjasto (marraskuu 2016 – kaikki kielet) sisältää tehtäväoppaat, jotka on tarkoitettu käytettäväksi ohjeeksi Microsoft Dynamics 365 for Operationsille, Microsoft Dynamics 365 for Operations -ympäristöpäivitykselle 3, Microsoft Dynamics AX -ympäristöpäivitykselle 2, Dynamics AX:n toukokuun 2016 päivitykselle ja Microsoft Dynamics AX:n helmikuun 2016 versiolle. Lisätietoja näistä julkaisuista on kohdassa [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md). **Huomautus:** liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (**\***) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics 365 for Operationsin marraskuun 2016 päivityksessä eikä niitä tueta Microsoft Dynamics AX:n aiemmissa versioissa.
 
 ### <a name="accounts-payable"></a>Ostoreskontra
 
 | BPM-tunnistusrivi                                                                                           | Maa/alue |
 |----------------------------------------------------------------------------------------------------|----------------|
-| AP-järjestelmän avulla hyväksymiskirjauskansion avaimen laskutustiedot                                               | Yleinen         |
-| AP järjestelmän toimittajalaskun (Enter ja kirjaa toimittajalaskun kanssa matching) avaimen laskutustiedot | Yleinen         |
+| Avaintiedot ostoreskontrajärjestelmässä hyväksymiskirjauskansiota käyttämällä                                               | Yleinen         |
+| Tärkeimmät laskutiedot ostoreskontrajärjestelmässä toimittajalaskua käyttäen (syötä ja kirjaa toimittajalasku vastaavuuden kanssa) | Yleinen         |
 | Avaintiedot ostoreskontrajärjestelmään laskukirjauskansiota käyttämällä                                              | Yleinen         |
 | Avaintiedot ostoreskontrajärjestelmään laskupoolia käyttämällä                                                 | Yleinen         |
-| Toimittajan laskujen vastaanoton kirjaaminen ja täsmäyttäminen vastaanotettu määrä                           | Yleinen         |
+| Toimittajan laskun vastaanoton kirjaaminen ja täsmäyttäminen vastaanotettuun määrään                           | Yleinen         |
 | Ostoreskontran laskujen täsmäytyksen vahvistamisen määrittäminen                                                | Yleinen         |
 | Toimittajan laskukäytäntöjen määrittäminen                                                                    | Yleinen         |
 
@@ -49,7 +52,7 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | BPM-tunnistusrivi                                                                           | Maa/alue |
 |------------------------------------------------------------------------------------|----------------|
 | Toistuvan vapaatekstilaskun mallin määrittäminen asiakkaalle                        | Yleinen         |
-| Laske korko ja luo ja Tulosta ja lähetä korkolaskuja (prosessin korko) | Yleinen         |
+| Laske korko ja luo ja tulosta ja kirjaa korkolaskuja (prosessin korko) | Yleinen         |
 | Maksukehotusjärjestyksen luominen                                                | Yleinen         |
 | Luo suoraveloitusvaltakirja asiakkaalle                                       | Yleinen         |
 | Luo tekstimuotoinen lasku                                                         | Yleinen         |
@@ -59,7 +62,7 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | Myyntitilauslaskujen luominen                                                        | Yleinen         |
 | Luo ja kirjaa toistuvat vapaatekstilaskut                                     | Yleinen         |
 | Käsittele maksukehotuksia                                                         | Yleinen         |
-| Tarkista kokoelman tiedot                                                      | Yleinen         |
+| Tarkista perimistiedot                                                      | Yleinen         |
 | Määritä ja luo myyntireskontran erääntymistiedot                          | Yleinen         |
 
 ### 
@@ -77,7 +80,7 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 
 | BPM-tunnistusrivi                    | Maa/alue |
 |-----------------------------|----------------|
-| Muokkaa budjettisuunnitelman rakenne | Yleinen         |
+| Muokkaa budjettisuunnitelman asettelua | Yleinen         |
 
 ### 
 
@@ -104,7 +107,7 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | Aseta jälkeen päin päivitetyt laskut                                              | Yleinen         |
 | Aseta toimittajalle jälkeen päin päivitetty lasku                                | Yleinen         |
 | Sovi asiakkaalta jälkeen päin päivitetty lasku                             | Yleinen         |
-| Toimittajan maksujen yhteenveto                                             | Yleinen         |
+| Toimittajan maksujen yleiskatsaus                                             | Yleinen         |
 
 ### 
 
@@ -137,45 +140,45 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 
 | BPM-tunnistusrivi                                                                                                                             | Maa/alue                    |
 |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| BAS-raportin lisäruudut ja luo, Australian Business liiketoimintaraportti (BAS)                                                    | Australia ja Uusi-Seelanti         |
+| Lisää BAS-raportin lisäruudut ja luo Australian Business Activity Statement (BAS)                                                    | Australia ja Uusi-Seelanti         |
 | Määritä Australian BAS-syykoodit                                                                                                | Australia ja Uusi-Seelanti         |
-| **\***Chinese voucher continuity check                                                                                               | Kiina                             |
-| **\***Tilikartan CN-00010 Kiinan hierarkia                                                                                  | Kiina                             |
-| **\***CN-00016 käyttäjän lokin Kiinassa toimiva sääntö                                                                              | Kiina                             |
-| **\***Golden tax integration export setup                                                                                            | Kiina                             |
-| **\***Post vouchers from other modules, like sales invoices                                                                          | Kiina                             |
-| **\***Post vouchers from the general journal                                                                                         | Kiina                             |
-| **\***Set up basic tax integration profile for China                                                                                 | Kiina                             |
-| **\***Set up Chinese vouchers                                                                                                        | Kiina                             |
+| **\***Kiinalaisten tositteiden jatkuvuustarkistus                                                                                               | Kiina                             |
+| **\***CN-00010 Kiinan tilikarttojen hierarkia                                                                                  | Kiina                             |
+| **\***CN-00016 Kiinan työsäännön mukainen käyttäjän toimintoloki                                                                              | Kiina                             |
+| **\***Golden tax -verointegraation vientiasetukset                                                                                            | Kiina                             |
+| **\***Kirjaa tositteita muista moduuleista, kuten myyntilaskuja                                                                          | Kiina                             |
+| **\***Tositteiden kirjaaminen kirjauskansiosta                                                                                         | Kiina                             |
+| **\***Verojen perusintegrointiprofiilin määrittäminen Kiinalle                                                                                 | Kiina                             |
+| **\***Kiinalaisten tositteiden määrittäminen                                                                                                        | Kiina                             |
 | Luo ja kirjaa myyntilasku julkisen sektorin asiakkaalle                                                                      | Tanska                           |
 | Luo ja kirjaa vapaatekstilasku julkisen sektorin asiakkaalle                                                                     | Tanska                           |
 | Luo ja kirjaa projektilasku julkisen sektorin asiakkaalle                                                                       | Tanska                           |
-| DK-00007 FIK 752 tilisiirtolomakkeessa slip/Kirjaa vapaatekstilasku Maksuluettelo jossa                                               | Tanska                           |
-| DK-00007 FIK 752 tilisiirtolomakkeessa slip/Kirjaa projektin laskuun maksun slip kanssa                                                 | Tanska                           |
+| DK-00007 FIK 752 -tilisiirtolomake / Vapaatekstilaskun kirjaaminen maksutositteen kanssa                                               | Tanska                           |
+| DK-00007 FIK 752 -tilisiirtolomake / Projektilaskun kirjaaminen maksutositteen kanssa                                                 | Tanska                           |
 | Tuo OIOUBL sähköisen laskutuksen konfiguraatiot                                                                                    | Tanska                           |
 | Asiakastilien määrittäminen sähköistä OIOUBL-laskutusta varten                                                                             | Tanska                           |
 | Sähköisen OIOUBL-laskutuksen määrittäminen                                                                                                   | Tanska                           |
 | Määritä maksukuitin muoto                                                                                                           | Tanska                           |
-| **\***EEU-00047 Advance payment to employee                                                                                          | Itä-Eurooppa                    |
+| **\***EEU-00047 Ennakkomaksu työntekijälle                                                                                          | Itä-Eurooppa                    |
 | Toimittajien maksujen luominen ja tuonti ISO20022-maksumuodossa                                                                      | Eurooppa                            |
 | Luo maksuja asiakkaalle, jolla on suoraveloitusvaltakirjoja                                                                          | Eurooppa                            |
-| **\***EE-00015 maksun viite sukupolven työkalu                                                                                     | Eurooppa                            |
+| **\***EE-00015 Maksuviitteen luontityökalu                                                                                     | Eurooppa                            |
 | EUR-00002 EU Intrastat -ilmoituksen luominen                                                                                       | Eurooppa                            |
-| **\***EUR-00002 määrittää osoite olemassa yhteisön sisäisen tapahtuman                                                          | Eurooppa                            |
+| **\***EUR-00002 Rahtiosoitteen määrittäminen yhteisönsisäiselle tapahtumalle                                                          | Eurooppa                            |
 | EUR-00002 Tapahtumien siirtäminen Intrastatiin                                                                                     | Eurooppa                            |
 | EUR-00011 EU:n myyntiluetteloraportin luominen                                                                                          | Eurooppa                            |
 | EUR-00011 EU-myyntiluetteloraportoinnin määrittäminen                                                                                             | Eurooppa                            |
 | EUR-00012 EU-saapumistodistuksen myöntäminen                                                                                              | Eurooppa                            |
 | EUR-00012 EU-saapumistodistuksen vastaanottaminen                                                                                            | Eurooppa                            |
-| **\***EUR-00015 Party search using VAT ID                                                                                            | Eurooppa                            |
-| **\***EUR-00015 Registration of vendor VAT ID                                                                                        | Eurooppa                            |
+| **\***EUR-00015 Osapuolen haku ALV-tunnuksen avulla                                                                                            | Eurooppa                            |
+| **\***EUR-00015 Toimittajan ALV-tunnuksen rekisteröinti                                                                                        | Eurooppa                            |
 | **\***EUR-00015 ALV-tunnuksen määrittäminen                                                                                                        | Eurooppa                            |
-| **\***HU-00001 Exchange rate laskenta                                                                                             | Eurooppa                            |
+| **\***HU-00001 Vaihtokurssin laskeminen                                                                                             | Eurooppa                            |
 | Tuo ISO20022-tilisiirron konfiguraatio                                                                                        | Eurooppa                            |
 | Tuo ISO20022-suoraveloituksen konfiguraatio                                                                                           | Eurooppa                            |
-| **\***LT-00003 siirto asiakirjan tavaroiden liikkuminen sisällä yrityksen/Luo siirto asiakirjan sisäinen varasto-siirtoa varten   | Eurooppa                            |
-| **\***LT-00003 siirto asiakirjan tavaroiden liikkuminen sisällä yrityksen/yrityksen sisällä tavaroiden liikkuvuutta siirtoasiakirjoihin määrittäminen | Eurooppa                            |
-| **\***N-00002 asiakkaan maksun Maksutunnuksen perusteella                                                                                  | Eurooppa                            |
+| **\***LT-00003 Siirtoasiakirja tavaroiden siirrolle yrityksen sisällä / Siirtoasiakirjan luominen sisäiselle varastosiirrolle   | Eurooppa                            |
+| **\***LT-00003 Siirtoasiakirja tavaroiden siirrolle yrityksen sisällä / Siirtoasiakirjojen määrittäminen tavaroiden siirrolle yrityksen sisällä | Eurooppa                            |
+| **\***NO-00002 Asiakasmaksu maksutunnuksen perusteella                                                                                  | Eurooppa                            |
 | Määritä yrityksen pankkitilit ISO20022-tilisiirtoja varten                                                                           | Eurooppa                            |
 | Määritä yrityksen pankkitilit ISO20022-suoraveloituksia varten                                                                              | Eurooppa                            |
 | Määritä asiakas ja asiakkaan pankkitilit ISO20022-suoraveloituksia varten                                                               | Eurooppa                            |
@@ -183,10 +186,10 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | Maksutavan määrittäminen ISO20022-suoraveloitusta varten                                                                                   | Eurooppa                            |
 | Määritä toimittajat ja toimittajien pankkitilit ISO20022-tilisiirtoja varten                                                                | Eurooppa                            |
 | Muodosta asiakkaan maksutapoja                                                                                                | Ranska                            |
-| Asiakkaan ja toimittajan FR-00002                                                                                                 | Ranska                            |
+| FR-00002 Asiakkaan ja toimittajan tilit                                                                                                 | Ranska                            |
 | FR-00003 NAF-koodit ja Siret-numerot                                                                                                 | Ranska                            |
 | FR-00004 Vekselin hyväksyminen ja kirjaaminen                                                                                      | Ranska                            |
-| FR-00004 Ranskan vekselien ja velkakirjojen                                                                               | Ranska                            |
+| FR-00004 Ranskalaiset vekselit ja velkakirjat                                                                               | Ranska                            |
 | FR-00004 Vekselin protestointi- ja asetuskirjauskansion kirjaaminen                                                                                  | Ranska                            |
 | FR-00004 Vekselin tarkistuksen kirjauskansion kirjaaminen                                                                                       | Ranska                            |
 | FR-00004 Maksutavan määrittäminen                                                                                                     | Ranska                            |
@@ -200,7 +203,7 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | ER Määritä muoto suorittamaan laskenta ja summaus (osa 2: laskentojen konfigurointi)                                                      | Saksa                           |
 | ER Määritä muoto suorittamaan laskenta ja summaus (osa 3: tuotoksen luonti laskentojen avulla)                                         | Saksa                           |
 | ER Määritä muoto suorittamaan laskenta ja summaus (osa 4: muodon suorittaminen)                                                                  | Saksa                           |
-| ER luo määritykset tarjoaja ja se merkitään aktiiviseksi                                                                             | Saksa                           |
+| ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi                                                                             | Saksa                           |
 | ER Microsoft WORD -muodossa luotavien raporttien määritysten suunnittelu (marraskuu 2016)                                            | Saksa                           |
 | ER Toimialuekohtaisen tietomallin suunnittelu (marraskuu 2016)                                                                                 | Saksa                           |
 | ER Tuo kokoonpano Lifecycle Services -palvelusta                                                                                    | Saksa                           |
@@ -218,21 +221,21 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | ER Vaakasuunnassa laajennettavien alueiden käyttö sarakkeiden dynaamiseen lisäykseen Excel-raportissa (osa 2: muodon suorittaminen)                               | Saksa                           |
 | Luo Saksan tarkistustiedosto                                                                                                           | Saksa                           |
 | Saksan tarkistustiedoston määritysten tuominen                                                                                               | Saksa                           |
-| **\***ALV: EUR-00018 täsmäytysraportti                                                                                            | Islanti                           |
-| IS-00006 toimittajan laskun ilmoitus tai luo toimittajatili ja liittää laskun ilmoitus                                       | Islanti                           |
-| IS-00006 toimittajan laskun ilmoitus tai Kauppalaskuilmoitus määrittäminen toimittajille                                                        | Islanti                           |
-| IS-00006 toimittajan laskun ilmoitus tai päivitä toimittajan laskun ilmoitukset ja raportti                                       | Islanti                           |
-| Ylläpidä tilikartan tilejä tai pakollinen maksuviitteet määrittäminen                                                                       | Islanti                           |
+| **\***EUR-00018 ALV-täsmäytysraportti                                                                                            | Islanti                           |
+| IS-00006 Toimittajan laskun ilmoitus / Toimittajatilin luominen ja laskun ilmoituksen liittäminen                                       | Islanti                           |
+| IS-00006 Toimittajan laskun ilmoitus / Määritä toimittajien laskuilmoitus                                                        | Islanti                           |
+| IS-00006 Toimittajan laskun ilmoitus / Päivitä toimittajan laskun ilmoitukset ja luo raportti                                       | Islanti                           |
+| Ylläpidä tilikarttaa / Määritä pakolliset maksuviitteet                                                                       | Islanti                           |
 | Käyttöomaisuuden hankinta käyttöomaisuuden käytöstäpoistositoumuksen mukaisesti                                                                              | Japani                             |
-| Käyttöomaisuuden hankinta, vaatia avustuksen osalta                                                                                 | Japani                             |
+| Käyttöomaisuuden hankinta ja valtionavustuksen haku                                                                                 | Japani                             |
 | Käyttöomaisuuden käytöstäpoistositoumuksen arvion oikaisu                                                                               | Japani                             |
-| Jaettu hyödykkeen ja liikearvon rahavirtaa tuottavaa yksikköä, kirjanpitoarvo                                                   | Japani                             |
+| Kohdista jaetun omaisuuden omistusmäärä ja liikearvo rahavirtaa tuottaviin yksiköihin                                                   | Japani                             |
 | Muuta yhden käyttöomaisuuden poistomenetelmä omaisuuden käyttöaikana                                                                   | Japani                             |
 | Muuta kirjan poistomenetelmä omaisuuden käyttöaikana                                                                        | Japani                             |
 | Nopeutetun poiston parametrien ja kirjausprofiilien määrittäminen                                                                   | Japani                             |
 | CN-00004 Käyttöomaisuuden poiston kohdistus (JP-)                                                                                   | Japani                             |
-| Poistoprofiili- ja lisäpoistot kirjausprofiilin määrittää                                                   | Japani                             |
-| Poistoprofiili- ja erityisen kirjausprofiilin määrittää                                                      | Japani                             |
+| Poistoprofiilin ja kirjausprofiilin määrittäminen lisäpoistoa varten                                                   | Japani                             |
+| Poistoprofiilin ja kirjausprofiilin määrittäminen erityispoistoa varten                                                      | Japani                             |
 | Määritä konsolidoitujen laskujen parametrit ja ostoreskontran asetukset                                                             | Japani                             |
 | Määritä päätilit käyttöomaisuuden käytöstäpoistositoumuksen kirjausta ja markkinadiskonttokorkoja varten                                            | Japani                             |
 | Luo käyttöomaisuus lisäpoistolla                                                                                    | Japani                             |
@@ -259,14 +262,14 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | Käyttöomaisuuden käytöstäpoistositoumuksen kyselyihin liittyvät tapahtumat                                                                    | Japani                             |
 | Vähennyskelpoisten kulujen kysely                                                                                                       | Japani                             |
 | JP-00005 Kirjauskansion tuonti T-tililomakkeella (Japani)                                                                                     | Japani                             |
-| JP-00011 konsolidoitu lasku - AR - Luo ja vahvista asiakkaan konsolidoitu lasku                                              | Japani                             |
-| Poistojen veroilmoituksen, lomakkeen 26 JP-00027                                                                                     | Japani                             |
+| JP-00011 Konsolidoitu lasku - MR - Luo ja vahvista konsolidoitu myyntilasku                                              | Japani                             |
+| JP-00027 Lomake 26 poistojen veroilmoitusta varten                                                                                     | Japani                             |
 | Ylläpidä käyttöomaisuuserän päätietojen tiedostoja vähennyskelpoisille kuluille                                                                       | Japani                             |
 | Ylläpidä yksittäisten käyttöomaisuuserien arvonalennusmittareita                                                                                  | Japani                             |
 | Toimittajatapahtuman maksaminen hyväksymällä asiakkaan vekseli                                                                    | Japani                             |
 | Yli- ja alipoistojen kausittainen selvitys                                                                                   | Japani                             |
 | Ehdota lisäpoistoja                                                                                                      | Japani                             |
-| Ehdottaa ja nopeutettu poisto kirjataan                                                                                        | Japani                             |
+| Ehdota ja kirjaa nopeutettu poisto                                                                                        | Japani                             |
 | Ehdota ja kirjaa eräkohtainen arvonalennusmäärä                                                                                      | Japani                             |
 | Ehdota ja kirjaa arvonalennusmäärä käyttöomaisuuskirjauskansion avulla                                                                  | Japani                             |
 | Ehdota ja kirjaa arvonalennusmäärä rahavirtaa tuottavaan yksikköön                                                                     | Japani                             |
@@ -300,12 +303,12 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | MX-00010 Sähköisen laskun pyytäminen ja tulostaminen                                                                                     | Meksiko                            |
 | MX-00010 Vapaatekstilaskun kirjaaminen                                                                                                    | Meksiko                            |
 | MX-00010 Sähköisen laskun parametrien määrittäminen                                                                                    | Meksiko                            |
-| MX-00020: Tuottaa meksikolaisen sähköisen kirjanpidon raportti (Laskentapäällikkö) versio 1.1                                                            | Meksiko                            |
+| MX-00020: Meksikon sähköisen kirjanpidon raporttiversion 1.1 tuottaminen                                                            | Meksiko                            |
 | MX-00020 Tilikartan määrittäminen yritykselle Meksikossa                                                                   | Meksiko                            |
 | MX-00020 - Meksikon pankkitilien RFC-rekisteröintitunnuksen määrittäminen                                                                 | Meksiko                            |
 | NL-00003 Semansys XBRL -integraatio                                                                                                   | Alankomaat                       |
 | NL-00010 Sähköiset veroilmoitukset (EVAT)                                                                                          | Alankomaat                       |
-| MY-00003-Hallitse asiakkaan veloituslasku ja GST hyvityslaskulla                                                                          | Singapore, Malesia ja Thaimaa |
+| MY-00003 Asiakkaan veloituslaskun ja hyvityslaskun hallinta GST-veroa varten                                                                          | Singapore, Malesia ja Thaimaa |
 | MY-00004 Toimittajan veloituslaskun ja hyvityslaskun hallinta GST-veroa varten                                                                            | Singapore, Malesia ja Thaimaa |
 | MY-00005 GST-verolaskujen tulostaminen                                                                                                      | Singapore, Malesia ja Thaimaa |
 | MY-00006 01 Määritä GST-vapautuslausekkeet                                                                                                | Singapore, Malesia ja Thaimaa |
@@ -340,7 +343,7 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | Muuta käyttöomaisuusryhmää                                        | Yleinen         |
 | Useiden käyttöomaisuuserien poistokäytäntöjen muuttaminen | Yleinen         |
 | Luo käyttöomaisuus                                      | Yleinen         |
-| Luo ja hankkia käyttöomaisuuseriä ostoreskontrasta           | Yleinen         |
+| Käyttöomaisuuserien luominen ja hankkiminen ostoreskontrasta           | Yleinen         |
 | Luo poistoehdotus                              | Yleinen         |
 | Käyttöomaisuuden poisto vapaatekstilaskua käyttäen        | Yleinen         |
 | Käyttöomaisuuden lisäyksen määrittäminen                        | Yleinen         |
@@ -362,7 +365,7 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | BPM-tunnistusrivi                                       | Maa/alue |
 |------------------------------------------------|----------------|
 | Päätä tilikausi                          | Yleinen         |
-| Luo päivyrimerkinnän mallin avulla        | Yleinen         |
+| Kirjauskansioviennin luonti mallin avulla        | Yleinen         |
 | Luo päätili                          | Yleinen         |
 | Luo tilirakenteet                      | Yleinen         |
 | Luo jaksotusmalleja                         | Yleinen         |
@@ -371,7 +374,7 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | Kirjanpidon jaksotustapahtumien luominen             | Yleinen         |
 | Määritä taloushallinnon dimensiot                    | Yleinen         |
 | Kirjaa kirjatut kirjauskansioviennit              | Yleinen         |
-| Ylläpidä taloushallinnon dimension mallit         | Yleinen         |
+| Ylläpidä taloushallinnon dimension malleja         | Yleinen         |
 | Tilikauden joukkosulkeminen                    | Yleinen         |
 | Kirjauskansiovientien käsittely                        | Yleinen         |
 | Käsittele kirjanpidon kohdistuskirjauskansio              | Yleinen         |
@@ -387,9 +390,9 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 
 | BPM-tunnistusrivi                                                                       | Maa/alue |
 |--------------------------------------------------------------------------------|----------------|
-| **\***Change the ownership of consignment inventory based on production demand | Yleinen         |
-| **\***Create a consignment replenishment order                                 | Yleinen         |
-| **\***Monitor consignment inventory using vendor collaboration                 | Yleinen         |
+| **\***Tavaralähetysvaraston omistajuuden muuttaminen tuotannon kysynnän perusteella | Yleinen         |
+| **\***Luo tavaralähetyksen täydennystilaus                                 | Yleinen         |
+| **\***Tavaralähetysvaraston valvonta toimittajayhteistyön avulla                 | Yleinen         |
 
 ### 
 
@@ -416,9 +419,9 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 
 | BPM-tunnistusrivi                                                         | Maa/alue |
 |------------------------------------------------------------------|----------------|
-| **\***Add to your performance journal and send praise to someone | Yleinen         |
-| **\***Create a goal                                              | Yleinen         |
-| **\***Create a performance review                                | Yleinen         |
+| **\***Lisää merkintä suorituskyvyn kirjauskansioon ja lähetä kehuja | Yleinen         |
+| **\***Luo tavoite                                              | Yleinen         |
+| **\***Luo suorituskykyarvio                                | Yleinen         |
 
 ### 
 
@@ -442,9 +445,9 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | Kuvan lisääminen tuotteelle                                               | Yleinen         |
 | Tuotteen luokittelu luokkahierarkioiden avulla                           | Yleinen         |
 | Viivakoodin luonti tuotteelle                                         | Yleinen         |
-| \*Luo numero nimikkeistö ennalta tuotevarianttien | Yleinen         |
-| \*Luo numero nimikkeistö on määritetty tuotevariantit | Yleinen         |
-| \*Määritä nimikkeen tilauksen oletusasetukset                            | Yleinen         |
+| \* Tuotenumeroiden nimikkeistön luominen esimääritetyille tuotevarianteille | Yleinen         |
+| \* Tuotenumeroiden nimikkeistön luominen konfiguroiduille tuotevarianteille | Yleinen         |
+| \* Määritä nimikkeen oletustilausasetukset.                            | Yleinen         |
 | Myyntitilauksen luominen määritettävälle tuotteelle                         | Yleinen         |
 | Luo myyntihinnan valintaperusteet                                   | Yleinen         |
 | Kirjoita tuotteen GTIN-koodi                                       | Yleinen         |
@@ -468,11 +471,11 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | BPM-tunnistusrivi                                                                      | Maa/alue |
 |-------------------------------------------------------------------------------|----------------|
 | Lisää julkisen sektorin toimittajan varmennetyyppi                        | Yleinen         |
-| Julkisen sektorin ostosopimukset käytön valvonta                      | Yleinen         |
+| Julkinen sektorin ostosopimusten käyttöoikeuksien hallinta                      | Yleinen         |
 | Luo laskutusluokka                                               | Yleinen         |
 | Luo laskutuskoodi                                                         | Yleinen         |
 | Luo sitoumus budjettivarojen varaamiseksi julkiselle sektorille                 | Yleinen         |
-| Laskutuskauden koodi mukautetun kentän luominen                                      | Yleinen         |
+| Laskutuskoodin mukautetun kentän luominen                                      | Yleinen         |
 | Luo rahoitustyyppi                                                            | Yleinen         |
 | Luo kertatoimittaja ja lasku                                          | Yleinen         |
 | Julkisen sektorin alustavan budjetin luominen                                 | Yleinen         |
@@ -480,10 +483,10 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | Julkisen sektorin lisäkirjanpitoviennin luominen                          | Yleinen         |
 | Luo alkuperäinen budjetti ja palauta alustavat budjettitapahtumat         | Yleinen         |
 | Julkisen sektorin kauppakumppanin koodin luominen ja määrittäminen                 | Yleinen         |
-| Kansi ja maksujen julkisen sektorin raportteja sivut allekirjoituksen luominen   | Yleinen         |
+| Maksuraporttien kansi- ja allekirjoitussivujen luominen julkiselle sektorille   | Yleinen         |
 | Useiden julkisen sektorin kertatoimittajien ja -laskujen tuonti ja luonti | Yleinen         |
 | Johdetun taloushallinnon hierarkian määrittäminen julkiselle sektorille                     | Yleinen         |
-| Rahaston julkisen alan määrittäminen                                            | Yleinen         |
+| Julkisen sektorin rahoituksen määrittäminen                                            | Yleinen         |
 | Määritä ostosopimusluokitukset julkiselle sektorille                   | Yleinen         |
 
 ### 
@@ -493,17 +496,17 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | BPM-tunnistusrivi                                                         | Maa/alue |
 |------------------------------------------------------------------|----------------|
 | Työntekijän konfiguroiminen                                               | Yleinen         |
-| **\***Configure machine learning-powered product recommendations | Yleinen         |
+| **\***Määritä automaattiset tuotesuositukset | Yleinen         |
 | ;yyntiedustajan toimintoprofiilin määrittäminen   | Yleinen         |
-| **\***Create a POS visual profile (November 2016)                | Yleinen         |
+| **\***Luo myyntipisteen visuaalinen profiili (marraskuu 2016)                | Yleinen         |
 | Luo ja liitä rekisterit                                   | Yleinen         |
 | Luo puhelinkeskuksen tilaukset                                        | Yleinen         |
 | Luo kauppasopimuksia luokan hinnoittelusäännön avulla            | Yleinen         |
 | Luo, laske ja kirjaa laskelma myymälälle              | Yleinen         |
 | Määritä liitos ja liitä alennus                      | Yleinen         |
-| Määritä ja hallitse POS-käyttöoikeusryhmät                          | Yleinen         |
-| Määritä aikataulu jatkuvuuden                                       | Yleinen         |
-| **\***Määritä vähittäismyynnin tietoliikenneyhteyksien (CDX)                 | Yleinen         |
+| Määritä ja hallitse myyntipisteiden käyttöoikeusryhmiä                          | Yleinen         |
+| Määritä jatkuvuuden aikataulu                                       | Yleinen         |
+| **\***Määritä vähittäismyynnin kanavan tietoliikenne (CDX)                 | Yleinen         |
 | Kanta-asiakaspalkkioiden oikaisut                                      | Yleinen         |
 | Valikoimien hallinta                                               | Yleinen         |
 | Arvonlisäveron määrittäminen ja ohitus                                | Yleinen         |
@@ -526,7 +529,7 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | Toteuta myyntisopimukset                   | Yleinen         |
 | Luo ja käsittele asiakkaan ostohyvityksiä      | Yleinen         |
 | Etsi sovellettavat hinnat ja alennukset    | Yleinen         |
-| Myyntitilauksen Pitojen hallinta                   | Yleinen         |
+| Myyntitilauspitojen hallinta                   | Yleinen         |
 | Luo useita myyntitarjouksia               | Yleinen         |
 | Käsittele ostohyvityksiä maksua varten                | Yleinen         |
 | Rekisteröi myyntiprovisiot                 | Yleinen         |
@@ -554,7 +557,7 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 
 ### 
 
-### <a name="supply-relationship-management"></a>Asiakassuhteiden hallinta antaa
+### <a name="supply-relationship-management"></a>Toimittajasuhteen hallinta
 
 | BPM-tunnistusrivi                                                           | Maa/alue |
 |--------------------------------------------------------------------|----------------|
@@ -575,14 +578,14 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 | BPM-tunnistusrivi                                                                    | Maa/alue |
 |-----------------------------------------------------------------------------|----------------|
 | Luo toimipaikkaprofiili                                                   | Yleinen         |
-| **\***Create a mobile device menu item for license plate consolidation      | Yleinen         |
+| **\***Luo uusi valikkokohde mobiililaitteelle rekisterikilven konsolidointia varten      | Yleinen         |
 | Täsmäytä rahti manuaalisesti                                                  | Yleinen         |
 | Rekisteröi kuljettajan sisäänkuittaus ja lähteminen tapaamiseen.                   | Yleinen         |
-| Määritä ostotilauksen tyyppi työ Viimeistellään kannettavan laitteen valikon vaihtoehtoa | Yleinen         |
+| Määritä mobiililaitteen valikkokohde Ostotilaus-tyypin työn valmistumiselle | Yleinen         |
 | Tapaamisen määrittäminen kuormalle                                            | Yleinen         |
 | Aseta kuljetuksen maksuväline                                              | Yleinen         |
 | Rahdin automaattisen täsmäytyksen määrittäminen                                     | Yleinen         |
-| **\***Set up short picking item reallocation                                | Yleinen         |
+| **\***Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten                                | Yleinen         |
 
 
 
@@ -593,6 +596,8 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 
 [Uudet tai päivitetyt tehtäväoppaat saatavilla (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
 
-[New or updated task guides available (August 2016)](new-updated-task-guides-available-august-2016.md)
+[Uudet tai päivitetyt tehtäväoppaat saatavilla (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
+
+
 
 

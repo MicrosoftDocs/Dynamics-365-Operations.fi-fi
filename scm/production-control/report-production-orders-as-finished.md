@@ -1,6 +1,6 @@
 ---
 title: Tuotantotilausten ilmoittaminen valmiiksi
-description: "Ilmoita valmiiksi-on tuotannon vaihe. Tässä vaiheessa lopputuotteen raportoidaan ja siirretään varastoon tuotantotilausta."
+description: "Valmiiksi ilmoittaminen tapahtuu tuotantovaiheessa. Tässä vaiheessa valmis tuote raportoidaan ja siirretään tuotantotilauksesta varastoon."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="report-production-orders-as-finished"></a>Tuotantotilausten ilmoittaminen valmiiksi
 
-Ilmoita valmiiksi-on tuotannon vaihe. Tässä vaiheessa lopputuotteen raportoidaan ja siirretään varastoon tuotantotilausta.
+[!include[banner](../includes/banner.md)]
+
+
+Valmiiksi ilmoittaminen tapahtuu tuotantovaiheessa. Tässä vaiheessa valmis tuote raportoidaan ja siirretään tuotantotilauksesta varastoon.
 
 Kun tuotantotilaukseen kuuluvien valmiiden tavaroiden määrä ilmoitetaan valmiiksi, ne päivitetään käytettäviksi varastossa. Osittainen määrä alunperin suunnitellusta tilausmäärästä voidaan ilmoittaa valmiiksi. Määrien valmiiksi ilmoittamisen yhteydessä on myös mahdollista ilmoittaa virhemäärät liittyvällä virhesyyllä. Kun tuotantotilauksen tilaksi päivitetään Ilmoitettu valmiiksi, tuotantotilaukselle ei raportoida enempää määriä.
 Myös seuraavat ominaisuudet liittyvät **Ilmoitettu valmiiksi** -prosessiin:
@@ -44,5 +47,7 @@ Määrä ilmoitetaan tuotossijaintiin. Sen jälkeen luodaan varastotyön, jossa 
 
 ## <a name="set-a-production-order-to-reporting-as-finished"></a>Tuotantotilauksen asettaminen Ilmoitettu valmiiksi -tilaan
 Voit asettaa tuotantotilauksen tilaksi **Ilmoitettu valmiiksi** normaalin tuotantotilauksen päivitystoiminnon avulla, reititys- ja työkorttikirjauskansioiden avulla tai **Ilmoita valmiiksi** -kirjauskansion avulla. Voit myös päivittää vaiheen **Ilmoitettu valmiiksi** -tilaan työkortinpäätteen ja työkorttilaitteen sivuilta, kun ilmoitat tuotantotilauksen viimeisen työn tiedot. Viimeiseksi, voit ottaa **Ilmoita valmiiksi** -asetuksen käyttöön prosessina varaston käsipäätelaiteratkaisulle.  
+
+
 
 

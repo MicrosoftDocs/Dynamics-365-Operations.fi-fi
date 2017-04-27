@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reimburse-customers"></a>Asiakkaiden hyvittäminen
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, miten hyvitystapahtumat luodaan asiakasryhmälle. Jos asiakkaalla on maksettavien saldo, voit hyvittää asiakkaalle saldon summan. 
 
 Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen aloittamista.
@@ -47,6 +50,8 @@ Luodessasi hyvitystapahtumia toimittajalasku luodaan maksettavan saldon määrä
     Hyvityssummat siirretään asiakkaiden toimittajanumeroille. Ne käsitellään tavallisina maksuina. Jos asiakkaalla ei ole toimittajatiliä, ohjelma luo asiakkaalle automaattisesti kertatoimittajatilin.
 3.  Tarkastellaksesi luotuja hyvitystapahtumia, käytä **Hyvitys**-sivua.
 4.  Ostoreskontrassa, luo maksu toimittajan laskuille, jotka luotiin hyvitysprosessiin maksun luomisessa.
+
+
 
 
 

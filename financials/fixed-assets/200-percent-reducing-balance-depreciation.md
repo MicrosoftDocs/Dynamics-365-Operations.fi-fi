@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>Jäännöspoisto 200 prosenttia
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on yleiskuvaus 200 prosentin jäännösarvon poistomenetelmästä.
 
 Kun käyttöomaisuuden poistoprofiili määritetään ja **Poistoprofiilit**-sivun **Menetelmä** -kentästä valitaan **Jäännösarvo 200 %**, tähän poistoprofiiliin liitetyn käyttöomaisuuden poistoprosentti on sama kullakin poistojaksolla. Prosentti lasketaan omaisuuserän käyttöajan mukaan. Jos omaisuuserän käyttöaika on esimerkiksi viisi vuotta, poistoprosentti on 40 (200 % ÷ 5). 
@@ -44,7 +47,7 @@ Valinta määrittää, mitä valintoja **Kausiväli**-kentässä on käytettävi
 
 Voit säilyttää **Poistovuosi** -kentässä oletusarvon **Kalenteri**. 
 
-**Kalenteri**-vaihtoehto päivittää joka vuosi poistokannan 1. tammikuuta. Poisto on yleensä nettokirjanpitoarvo vähennettynä romutusarvolla. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. 
+**Kalenteri**-vaihtoehto päivittää joka vuosi poistokannan 1. tammikuuta. Yleensä poisto on nettokirjanpitoarvo vähennettynä jäännösarvolla. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. 
 
 Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käytettävissä seuraavat vaihtoehdot:
 
@@ -58,7 +61,7 @@ Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käyte
 
 Jos valitset **Poisto**vuosi-kentässä **Tilivuosi**-vaihtoehdon, 200 prosentin jäännösarvo lasketaan kirjalle määritetyn kirjanpidon vuosikalenterin tilivuoden perusteella tai **Kirjanpito**-sivulla valitun kirjanpidon vuosikalenterin perusteella. Kirjanpidon vuosikalenterit määritetään **Kirjanpidon kalenterit** -sivulla. 
 
-Esimerkiksi heinäkuun 1. – 30. kesäkuuta tilikauden poiston laskeminen alkaa heinäkuun 1. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto oikaistaan jokaisella kaudella. **Kirjanpidon kalenterit** -sivun kausien asetuksissa määritetään seuraavan tilikauden pituus. 
+Esimerkiksi tilikauden 1.7 – 30.6. poistojen laskeminen alkaa 1.7. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto oikaistaan jokaisella kaudella. **Kirjanpidon kalenterit** -sivun kausien asetuksissa määritetään seuraavan tilikauden pituus. 
 
 Jos poistovuodeksi valitaan **Tilivuosi**, **Kausiväli**-kentässä ovat valittavana seuraavat vaihtoehdot:
 
@@ -83,6 +86,8 @@ Jos poistovuodeksi valitaan **Tilivuosi**, **Kausiväli**-kentässä ovat valitt
 | Vuosi 3 | 3 600 × 40 % = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
 
 > [!NOTE] 
-> Kun summa, joka lasketaan mukaan 200 prosentin jäännöspoiston degressiivistä poistomenetelmää, yleensä on pienempi kuin se summa, joka lasketaan käyttämällä tasapoiston menetelmää on jäljellä olevana tasapoistomenetelmän poistoprosentin muuntaminen.
+> Jos 200 %:n jäännösarvon poistomenetelmän avulla laskettu määrä on pienempi kuin tasapoistomenetelmän avulla laskettu määrä, jäljellä olevalle käyttöiälle on yleensä olemassa tasapoistomenetelmä.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Konsolidointitiliryhmät ja Lisäkonsolidointitilit"
-description: "Tässä aiheessa on tietoja konsolidointitiliryhmät ja Lisäkonsolidointitilit ja kerrotaan, kuinka niitä käytetään Microsoft Dynamics-365-toimintoja varten."
+title: "Konsolidointitiliryhmät ja lisäkonsolidointitilit"
+description: "Tässä aiheessa on tietoja konsolidointitiliryhmistä ja lisäkonsolidointitileistä ja kerrotaan, kuinka niitä käytetään Microsoft Dynamics 365 for Operationsissa."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,27 +24,32 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konsolidointitiliryhmät ja Lisäkonsolidointitilit
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konsolidointitiliryhmät ja lisäkonsolidointitilit
 
-Tässä aiheessa on tietoja konsolidointitiliryhmät ja Lisäkonsolidointitilit ja kerrotaan, kuinka niitä käytetään Microsoft Dynamics-365-toimintoja varten.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä aiheessa on tietoja konsolidointitiliryhmistä ja lisäkonsolidointitileistä ja kerrotaan, kuinka niitä käytetään Microsoft Dynamics 365 for Operationsissa.
 
 <a name="consolidation-account-groups"></a>Konsolidointitiliryhmät
 ----------------------------
 
-Konsolidointitiliryhmät avulla voit luoda asiakkaita, jota haluat käyttää tietojen kokoaminen. Useimmiten konsolidoinnin tiliryhmä vastaa hallituksen määrätty tilikartan tai yhdistää asiakkaiden ryhmä, joka on määritetty yrityksen Headquarters. Löydät konsolidoinnin tiliryhmät- **asennus** alue **konsolidoinnin** moduuli. Kun lisäät uuden ryhmän, kirjoita yksilöivä tunnus ryhmään ja nimi.
+Konsolidointitiliryhmien avulla voit luoda tiliryhmiä, joita haluat käyttää tietojen konsolidointiin. Useimmiten konsolidointitiliryhmä vastaa hallituksen määräämää tilikarttaa tai yhdistää tilit ryhmään, joka on määritetty yrityksen pääkonttorissa. Löydät konsolidoinnin tiliryhmät **Konsolidoinnit**-moduulin **Määritys**-alueelta. Kun lisäät uuden ryhmän, kirjoita tiliryhmän yksilöivä tunnus sekä nimi.
 
 ## <a name="additional-consolidation-accounts"></a>Lisäkonsolidointitilit
-Lisäkonsolidointitilit voi liittää aiemmin luotuun tilikarttaan tilin konsolidoinnin tiliryhmä. Voit määrittää konsolidoinnin tilin arvo ja nimi. 
+Lisäkonsolidointitilien avulla voit liittää tilin aiemmin luodusta tilikartasta konsolidoinnin tiliryhmään. Sitten voit määrittää konsolidointitilin arvon ja nimen. 
 
-Löydät Lisäkonsolidointitilit- **asennus** alue **konsolidoinnin** moduuli. Kun luot uuden tilin konsolidoinnin, on määritettävä seuraavat tiedot:
+Löydät konsolidoinnin lisätiliryhmät **Konsolidoinnit**-moduulin **Määritys**-alueelta. Kun luot uuden konsolidointitilin, sinun on määritettävä seuraavat tiedot:
 
--   **Päätilin** – kenttä on valinta, joka näyttää kaikki päätilit, jotka perustuvat tilikartan, jonka valitsit-sivulla. Kun valitset tilin, sen nimi syötetään automaattisesti **Main tilin nimi** kenttä.
--   **Konsolidointitiliryhmän** – Määritä tili, voit määrittää tämän kentän avulla. Jos kokoat yhteen kahdella eri tavalla, kaikki neljä konsolidointitiliryhmät on lisättävä samalle tilille.
--   **Konsolidointitiliä** – tilin konsolidoinnin arvo. Tämän arvon ei tarvitse olla tiliä tilikartasta. Se voi olla mikä tahansa arvo, jota tarvitset.
--   **Konsolidoinnin tilin nimi** – Kirjoita tilin nimi muodossa, jossa haluat sen näkyvän kysely- ja raporttikriteereinä.
--   **SAT-tason** – tätä kenttää käytetään ilmoittamaan tiliotteet Meksikon veroviranomaisille. 
+-   **Päätili** – kenttä on valinta, joka näyttää kaikki päätilit, jotka perustuvat tilikarttaan, jonka valitsit sivulla. Kun valitset tilin, sen nimi syötetään automaattisesti **Päätilin nimi** -kenttään.
+-   **Konsolidointitiliryhmä** – Tämän kentän avulla voit määrittää ryhmän, johon tili määritetään. Jos konsolidoit kahdella eri tavalla, sama tili pitää lisätä kaikkiin neljään konsolidointitiliryhmään.
+-   **Konsolidointitili** – Anna konsolidointitilin arvo. Tämän arvon ei tarvitse olla tilikartan tili. Se voi olla mikä tahansa arvo, jota tarvitset.
+-   **Konsolidointitilin nimi** – Kirjoita tilin nimi muodossa, jossa haluat sen näkyvän kyselyissä ja raporteissa.
+-   **SAT-taso** – tätä kenttää käytetään ilmoittamaan tiliotteet Meksikon veroviranomaisille. 
 
-Kun on valmis konsolidointitiliryhmät ja Lisäkonsolidointitilit, voit valita ryhmän kokoa online-prosessissa.
+Kun olet luonut konsolidointitiliryhmät ja lisäkonsolidointilit, voit valita ryhmän Konsolidoi verkossa -prosessissa.
+
+
 
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="time-and-attendance-registration"></a>Työajan seurannan rekisteröinti
 
+[!include[banner](../includes/banner.md)]
+
+
 Aikarekisteröinnin työntekijät voivat määrittää erityyppisiä ajan rekisteröintejä, joita ovat esimerkiksi saapuminen, poistuminen, epäsuorien toimintojen rekisteröinti sekä poissaolorekisteröinti. Tässä artikkelissa kuvataan rekisteröintejä, niiden laskemista, hyväksyntää sekä työnkulkua, jolla voidaan lisätä rakenne ja automaattinen hyväksyntä työaikaraporttien hyväksyntäprosessiin. 
 
 <a name="registrations"></a>Rekisteröitymiset
@@ -62,7 +65,7 @@ Tämän jälkeen työntekijät voivat rekisteröidä tietyntyyppisiä tietoja.
 -   Epäsuorat toiminnot eli tuottamattomat tehtävät, joihin työntekijä voi osallistua työpäivän aikana. Näitä ovat esimerkiksi kokoukset tai työtilan siivoaminen.
 -   Ylityö, jotka voidaan kirjata lisätunneiksi, liukuvaksi työajaksi tai ylityöksi.
 
-## <a name="adding-clockout-registrations"></a>Clockout merkintöjen lisääminen
+## <a name="adding-clockout-registrations"></a>Poistumismerkinnän lisääminen
 Jos työntekijä unohtaa kirjata itsensä ulos työpäivän päätteeksi, puuttuva merkintä voidaan lisätä suorittamalla erätyö. Järjestelmä vertaa työhönsaapumisaikaa ja työstäpoistumisaikaa työntekijälle määritetyn profiilin mukaisesti ja lisää puuttuvan poistumismerkinnän automaattisesti profiilin poistumisaikaa vastaavasti. Saapumis- ja poistumismerkinnät ovat erittäin tärkeitä, jotta aikarekisteröinnit voidaan laskea ja hyväksyä ennen tietojen siirtämistä palkanlaskentaan.
 
 ## <a name="calculating-registrations"></a>Rekisteröintien laskeminen
@@ -113,6 +116,8 @@ Työntekijöille, joiden työtehtävät eivät edellytä välitöntä palautetta
 -   käytetty aika.
 -   Projektimaksut
 -   Projektinimikkeet
+
+
 
 
 

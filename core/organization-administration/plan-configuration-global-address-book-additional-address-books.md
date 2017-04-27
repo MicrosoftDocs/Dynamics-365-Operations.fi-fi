@@ -1,6 +1,6 @@
 ---
-title: "Yleisen osoitekirjan määrittäminen"
-description: "Tässä artikkelissa kuvataan asioita ja päätöksiä, jotka täytyy tehdä suunnittelun aikana, ennen kuin määrittäminen ja konfiguroiminen yleisen osoitekirjan ja kaikki muut osoitteistot-operaatioille Microsoft Dynamics-365. Jotkin päätökset vaativat tuotteen muilla alueilla, esimerkiksi organisaatiohierarkiassa, tehtyjen päätösten vahvistamisen."
+title: "Yleisten osoitekirjojen määrittäminen"
+description: "Tässä artikkelissa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin Microsoft Dynamics 365 for Operationsin yleinen osoitekirja ja lisäosoitekirjat määritetään. Jotkin päätökset vaativat tuotteen muilla alueilla, esimerkiksi organisaatiohierarkiassa, tehtyjen päätösten vahvistamisen."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-global-address-books"></a>Yleisen osoitekirjan määrittäminen
+# <a name="configure-global-address-books"></a>Yleisten osoitekirjojen määrittäminen
 
-Tässä artikkelissa kuvataan asioita ja päätöksiä, jotka täytyy tehdä suunnittelun aikana, ennen kuin määrittäminen ja konfiguroiminen yleisen osoitekirjan ja kaikki muut osoitteistot-operaatioille Microsoft Dynamics-365. Jotkin päätökset vaativat tuotteen muilla alueilla, esimerkiksi organisaatiohierarkiassa, tehtyjen päätösten vahvistamisen.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin Microsoft Dynamics 365 for Operationsin yleinen osoitekirja ja lisäosoitekirjat määritetään. Jotkin päätökset vaativat tuotteen muilla alueilla, esimerkiksi organisaatiohierarkiassa, tehtyjen päätösten vahvistamisen.
 
 <a name="global-address-book"></a>Yleinen osoitekirja
 -------------------
@@ -61,6 +64,8 @@ Kun olet luonut yleisen osoitekirjan, voit luoda tarvittavia lisäosoitekirjoja,
 Voit luoda osoitekirjoja koska tahansa ja voit myös määrittää osoitekirjojen suojauksen parametrit koska tahansa. Sinun ei tarvitse määrittää osoitekirjan suojausoikeuksia, mutta jos et tee niin, organisaation kaikki työntekijät voivat tarkastella kaikkia kyseisen osoitekirjan osapuolitietueita. Voit määrittää osapuolitietueiden suojausoikeudet osoitekirjojen kautta. Suojausoikeudet perustuvat ryhmiin. Näin taataan, että vain siihen ryhmään määritetyt työntekijät, joilla on osoitekirjan käyttöoikeus, voivat tarkastella kyseisen osoitekirjan osapuolitietueita. Sinun on valittava ryhmät, joilla on kunkin osoitekirjan käyttöoikeudet. Määritä kullekin osoitekirjalle suojausoikeudet, jotka sallivat käytön tietyille ryhmille tai estävät käytön. Kun myönnät ryhmälle osoitekirjan käyttöoikeuden, kyseisen ryhmän kaikki jäsenet voivat tarkastella osoitekirjan tietueita. Jos et myönnä ryhmälle osoitekirjan käyttöoikeutta, kyseisen ryhmän jäsenet eivät voivat tarkastella osoitekirjaa tai sen sisältöä. **Päätös:**
 
 -   Mitkä ryhmät saavat kunkin luomasi uuden osoitekirjan käyttöoikeudet?
+
+
 
 
 

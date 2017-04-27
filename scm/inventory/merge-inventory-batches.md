@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="merge-inventory-batches"></a>Yhdistä varastoerät
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja kahden tai useamman varastoerän konsolidoinnista yhdistetyksi eräksi. 
 
 Kun yhdistät eriä, laskelmat voivat auttaa optimoimaan yhdistetyn erän ominaisuudet ja erämääritteet. Kun lähde-erät on valittu, yhdistetyn erän voi tarkistaa ja sitä voi vielä muuttaa ennen kirjausta. Voit myös siirtää erän yhdistämisen varastokirjauskansioon hyväksyttäväksi. Varasto voidaan varata tai kirjata suoraan varastokirjauskansiosta. Yhdistetyt erän kirjatessasi varasto oikaistaan lähde-erillä ja yhdistetyllä erällä.
@@ -48,7 +51,7 @@ Kyllä, on asioita, jotka on määritettävä ennen erän yhdistämisen työkalu
 <tbody>
 <tr class="odd">
 <td>Kirjauskansioiden nimet, Varasto</td>
-<td>Sinun on luotava oletusarvoisesti käytettävä kirjauskansionimi, jota käytetään erän yhdistämisten kirjaamiseen varastokirjauskansioissa. On myös suositeltavaa määrittää, että varaukset tehdään automaattisesti, kun erän yhdistäminen siirretään varastokirjauskansioon. Muussa tapauksessa on mahdollista, että käytettävissä olevaan varastoon voidaan tehdä muutos sen jälkeen, kun eräyhdistämisen tiedot on määritetty ja kirjauskansio kirjattu. Automaattiset varaukset kirjauskansion nimeä, valitse <strong>automaattinen</strong> - <strong><strong>varaus</strong></strong> kenttä.</td>
+<td>Sinun on luotava oletusarvoisesti käytettävä kirjauskansionimi, jota käytetään erän yhdistämisten kirjaamiseen varastokirjauskansioissa. On myös suositeltavaa määrittää, että varaukset tehdään automaattisesti, kun erän yhdistäminen siirretään varastokirjauskansioon. Muussa tapauksessa on mahdollista, että käytettävissä olevaan varastoon voidaan tehdä muutos sen jälkeen, kun eräyhdistämisen tiedot on määritetty ja kirjauskansio kirjattu. Jos haluat ottaa käyttöön automaattiset varaukset kirjauskansion nimelle, valitse <strong><strong>Varaus</strong> </strong>-kentässä <strong>Automaattinen</strong>.</td>
 </tr>
 <tr class="even">
 <td>Varasto ja varastonhallinnan parametrit</td>
@@ -134,9 +137,11 @@ Kirjaaminen toimii kahdella eri tavalla sen mukaan, käytetäänkö hyväksyntä
 -   **Siirto kirjauskansioon** – Siirtää erän yhdistämisen tiedot uuteen varastokirjauskansioon. Jos olet määrittänyt automaattisia varauksia, lähde-erän määrät varataan. Erän yhdistämistietoja ei voi muuttaa. Jos sinun on muokattava erän yhdistämistä, kirjauskansio on poistettava. Kirjauskansiota voi käyttää tehtävänä, joka toisen työntekijän on suoritettava myöhemmin. Erän määrän varaus kirjauskansioon suojataan. Tämän kohdistuksen avulla laatusuunnittelija tai varastopäällikkö voi luoda tehtäviä omille työntekijöilleen.
 -   **Kirjaa erän yhdistäminen** – Kirjaa erän yhdistämisen suoraan. Tämän toiminnon voi suorittaa fyysisen yhdistämisen jälkeen.
 
-Voit hyväksyä erän yhdistämisen varastokirjauskansion **Kaikki erän yhdistämiset** -luettelosivulta. Valitse **päiväkirja**&gt;**Post**. Kun kirjauskansio on kirjattu, et voi muuttaa yhdistetyn erän tietoja. Kun olet siirtänyt erän yhdistämisen varastokirjauskansioon, voit muuttaa tietoja vain, jos kirjauskansio on poistettu.
+Voit hyväksyä erän yhdistämisen varastokirjauskansion **Kaikki erän yhdistämiset** -luettelosivulta. Valitse **Kirjauskansio** &gt; **Kirjaa**. Kun kirjauskansio on kirjattu, et voi muuttaa yhdistetyn erän tietoja. Kun olet siirtänyt erän yhdistämisen varastokirjauskansioon, voit muuttaa tietoja vain, jos kirjauskansio on poistettu.
 
-## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Kun olen yhdistetty catchweight kohde, Miksi en näe catchweight varastokirjauskansion tiedot?
+## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Miksi en näe todellista painoa varaston kirjauskansiossa, kun olen yhdistänyt todellisen painon nimikkeen?
 Voit yhdistää todellisen painon nimikkeiden eriä samalla tavalla kuin muitakin nimikkeitä. Todellisen painon tietoja ei kuitenkaan näytetä varastokirjauskansiossa. Suosittelemme, että varmistat todelliset painotiedot ennen erän yhdistämisen siirtämistä varaston kirjauskansioon.
+
+
 
 

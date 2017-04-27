@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="quarantine-orders"></a>Karanteenitilaukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan varaston käytön estämistä karanteenitilauksilla. 
 
-Varaston käyttö voidaan estää karanteenitilauksilla. Haluat ehkä esimerkiksi syistä laadunvalvonnan kohteet karanteeniin. Varasto, joka on karanteeniin siirretään karanteenivarastoon. **Huomautus:** Jos käytät varaston lisähallintaprosesseja (Varastonhallinnassa), karanteenitilauksen käsittelyä käytetään vain palautusmyyntitilauksille.
+Varaston käyttö voidaan estää karanteenitilauksilla. Haluat ehkä esimerkiksi siirtää nimikkeitä karanteeniin laadunvalvontasyistä. Karanteeniin asetettu varasto siirretään karanteenivarastoon. **Huomautus:** Jos käytät varaston lisähallintaprosesseja (Varastonhallinnassa), karanteenitilauksen käsittelyä käytetään vain palautusmyyntitilauksille.
 
-## <a name="quarantine-onhand-inventory-items"></a>Onhand-varastonimikkeiden karanteeniin
+## <a name="quarantine-onhand-inventory-items"></a>Käytettävissä olevien varastonimikkeiden siirtäminen karanteeniin
 Kun siirrät nimikkeitä karanteeniin, voit joko luoda karanteenitilauksen manuaalisesti tai määrittää järjestelmän luomaan karanteenitilaukset automaattisesti saapuvien käsittelyn aikana. Jos haluat luoda karanteenitilauksia automaattisesti, valitse **Karanteeninhallinta**-vaihtoehto **Nimikemalliryhmät**-sivun **Varastokäytännöt**-välilehdestä. Sinun täytyy myös määrittää oletuskaranteenivarasto vastaanottavien varastojen **Karanteenivarasto**-kentässä. Karanteeniin siirretyt nimikkeet siirretään Dynamics 365 for Operations -järjestelmässä automaattisesti karanteenivarastoon, kun fyysinen käytettävissä oleva varasto kirjataan ostotilauksen tai tuotantotilauksen kautta. Siirto tapahtuu, koska karanteenitilauksen tilaksi muuttuu **Aloitettu**. Luodessasi karanteenitilauksia manuaalisesti ei ole tarpeen määrittää nykyistä nimikettä karantiinihallintaa varten liitetyssä nimikemalliryhmässä. Tässä prosessissa sinun täytyy määrittää käytettävissä oleva varasto, joka on asetettava karanteeniin, sekä käytettävä karanteenivarasto. Voit käyttää prosessin suunnittelussa apuna karanteenitilauksen tiloja.
 
 ## <a name="quarantine-order-statuses"></a>Karanteenitilausten tilat
@@ -64,6 +67,8 @@ Karanteenitilausprosessin aikana varastoa voidaan määrittää hävikiksi. Häv
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Inventory blocking](inventory-blocking.md)
+[Varastoesto](inventory-blocking.md)
+
+
 
 

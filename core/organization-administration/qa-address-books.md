@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="address-books"></a>Osoitekirjat
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="how-do-i-check-for-duplicate-records"></a>Miten tietueiden kaksoiskappaleita etsitään?
@@ -53,7 +56,7 @@ Voit koska tahansa päivittää osapuolitietueen nimet ja tietueeseen liitetyt o
 ## <a name="can-i-merge-two-or-more-party-records-into-one-record"></a>Voiko kaksi tai sitä useampi osapuolitietue yhdistää yhdeksi tietueeksi?
 Aina silloin tällöin voi olla tarpeellista yhdistää kaksi tai sitä useampi osapuolitietue yhdeksi tietueeksi. Niin on tehtävä esimerkiksi silloin jos luot vähintään yhdelle osapuolitietueelle kaksoiskappaleen joko tarkoituksella tai vahingossa. Osapuolitietueita yhdistettäessä yksi tietue valitaan säilytettäväksi. Muiden tietueiden tiedot yhdistetään sitten tähän tietueeseen. Jos esimerkiksi havaitset, että Fabrikamia koskevia tietoja on tallennettu kolmeen osapuolitietueeseen: A, B, and C. Päätät säilyttää osapuolitietueen A. Niinpä osapuolitietueissa B ja C tallennetut tiedot yhdistetään osapuolitietueeseen A. Tietyissä tilanteissa osapuolitietueita ei kuitenkaan voi yhdistää:
 
--   Samaan osapuolirooliin, kuten asiakkaaseen tai toimittajaan, samassa yrityksessä liitettyjä osapuolitietueita ei voi yhdistää. A osapuoli on liitetty asiakkaaseen oikeushenkilön 123, ja osapuolen B liittyy oikeushenkilön 123 eri asiakkaalle. Näiden osapuolten tietueita ei voi yhdistää, koska jos ne yhdistetään, yhdistetyt osapuolitietueen on liitetty useiden asiakkaiden samalle oikeushenkilölle, ja tämä ei ole sallittua. Tietueet voidaan kuitenkin yhdistää, jos osapuoli B on liitetty toimittajaan yrityksessä 123 tai eri yrityksen asiakkaaseen.
+-   Samaan osapuolirooliin, kuten asiakkaaseen tai toimittajaan, samassa yrityksessä liitettyjä osapuolitietueita ei voi yhdistää. Esimerkiksi osapuoli A on liitetty asiakkaaseen yrityksessä 123 ja osapuoli B on liitetty toiseen yrityksen 123 asiakkaaseen. Näitä osapuolitietueita ei voi yhdistää, koska jos ne yhdistettäisiin, yhdistetty osapuolitietue liitettäisiin useisiin asiakkaisiin samalla yrityksissä, mikä ei ole sallittu. Tietueet voidaan kuitenkin yhdistää, jos osapuoli B on liitetty toimittajaan yrityksessä 123 tai eri yrityksen asiakkaaseen.
 -   Saman yrityksen, ryhmän tai toimintayksikön sisäisen osapuoliorganisaation tietueita ei voi yhdistää.
 
 ## <a name="should-i-create-a-party-record-in-the-global-address-book-or-in-another-place-such-as-the-customer-or-vendor-page"></a>Pitäisikö osapuolitietue luoda yleisessä osoitekirjassa tai jossain muualla, kuten asiakas- tai toimittajasivulla?
@@ -64,5 +67,7 @@ Voit määrittää osapuolitietueet joko yleisessä osoitekirjassa tai soveltuva
 
 ## <a name="can-i-translate-address-information-for-party-records"></a>Voiko osapuolitietueiden osoitetiedot kääntää?
 Voit määrittää osoitetietojen käännökset, jotta tiedot näkyvät käyttäjän kielellä (järjestelmän kieli) Microsoft Dynamics 365 for Operations -järjestelmässä, mutta toisella kielellä asiakirjoissa, kuten myyntitilauksissa. Voit antaa maiden tai alueiden nimien, osoitekohteiden ja nimijaksojen käännökset. Jos järjestelmän kieli on esimerkiksi tanska, voit luoda myyntitilauksen ranskalaiselle asiakkaalle. Tässä tapauksessa voit tarkastella ongelmassa tanskankielistä asiakastietuetta, mutta osoitetiedot näkyvät tulostetussa myyntitilauksessa ranskaksi. Anna käännöksiä määritettäessä käännös luettelon jokaiselle nimikkeelle. Nimikkeet, joille ei annetta käännöstä, näkyvät järjestelmän kielellä. Jos järjestelmän kieli on esimerkiksi tanska, voit lähettää asiakirjan espanjalaiselle asiakkaalle. Jos et ole antanut osoitetietojen espanjankielisiä (ESP) käännöksiä, kyseiset tiedot näkyvät tanskaksi sekä ohjelmassa että tulostetussa asiakirjassa.
+
+
 
 

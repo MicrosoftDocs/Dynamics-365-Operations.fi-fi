@@ -1,5 +1,5 @@
 ---
-title: Varaston objektin arvot
+title: Varasto-objektin arvot
 description: "Tässä artikkelissa on tietoja siitä, miten varasto-objektien arvot lasketaan."
 author: YuyuScheller
 manager: AnnBe
@@ -27,14 +27,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="inventory-object-values"></a>Varaston objektin arvot
+# <a name="inventory-object-values"></a>Varasto-objektin arvot
 
 Tässä artikkelissa on tietoja siitä, miten varasto-objektien arvot lasketaan. 
 
-Uusi toiminto, jonka nimi on ** fyysinen määrä ** näet objektin tietyn varaston arvot. Kustannusobjekti edustaa sen yksikön tasoa, jolla varaston kirjanpito suoritetaan. Lisätietoja kustannusobjekteista on kohdassa [Kustannusobjektit](cost-object.md). Objektin tietyn varaston arvot näkyviin valitsemalla **fyysinen määrä** - **kustannuskohde** sivulla. Tässä on, miten objektin varaston arvo lasketaan: Inventory-objekti. Arvo = kustannuksen kohteeseen. Keskimääräinen yksikkökustannus × Inventory-objekti. Seuraavassa esimerkissä määrä ilmaisee kuinka inventory-objekti ja kustannusten objektin arvot lasketaan. Nimikkeelle A on rekisteröity kaksi tuotteen vastaanottotapahtumaa.
+Fyysinen määrä -nimisen uuden toiminnon avulla näet tietyn varasto-objektin arvot. Kustannusobjekti edustaa sen yksikön tasoa, jolla varaston kirjanpito suoritetaan. Lisätietoja kustannusobjekteista on kohdassa [Kustannusobjektit](cost-object.md). Saat tietyn varasto-objektin arvot näkyviin valitsemalla **Fyysinen määrä** **Kustannusobjekti** -sivulla. Varasto-objektin arvo lasketaan seuraavasti: Varasto-objektin.Arvo = Kustannusobjektin.Keskimääräinen yksikkökustannus × Varasto-objektin.Määrä. Seuraavassa esimerkissä näytetään, miten varasto-objektin ja kustannusobjektin arvot lasketaan. Nimikkeelle A on rekisteröity kaksi tuotteen vastaanottotapahtumaa.
 
--   Tuotteen vastaanoton 1: määrä = 100 pcs., summa = $1,000.00-sivuston = 1, fyysisen varastoinnin = 11, eränumero = B1
--   Tuotteen vastaanoton 2: määrä = 50 pcs., summa = $800.00-sivuston = 1, fyysisen varastoinnin = 11, eränumero = B2
+-   Tuotteen vastaanotto 1: määrä = 100 kpl, summa = 1 000,00 €, toimipaikka = 1, varasto =11, eränumero = B1
+-   Tuotteen vastaanotto 2: määrä = 50 kpl, summa = 800,00 €, toimipaikka = 1, varasto =11, eränumero = B2
 
 Seuraava taulukko sisältää kustannusobjektin laskennan tulokset. Voit tarkastella tuloksia **Kustannusobjekti**-sivulla.
 
@@ -130,10 +130,10 @@ Seuraava taulukko sisältää varasto-objektin laskennan tulokset. Voit tarkaste
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Cost objects](cost-object.md)
+[Kustannusobjektit](cost-object.md)
 
-[Cost entries](cost-entries.md)
+[Kustannusmerkinnät](cost-entries.md)
 
-[Mikä on uudet ja muuttuneet Microsoft Dynamics AX: ssä](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Uutta ja muuttunutta Microsoft Dynamics AX:ssä](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
 

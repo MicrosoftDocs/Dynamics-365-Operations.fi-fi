@@ -1,6 +1,6 @@
 ---
 title: Tuotedimensiot
-description: "On neljä tuotedimensiot - väri, konfiguraatio, koko ja tyyli. Tuotedimensiot yhdistetään dimensioryhmiksi ja dimensioryhmät liitetään päätuotteisiin. Tuotedimensioiden yhdistelmät määrittävät sen, kuinka tuotevariantit määritetään."
+description: "Tuotedimensioita on neljä: Väri, Konfigurointi, Koko ja Tyyli. Tuotedimensiot yhdistetään dimensioryhmiksi ja dimensioryhmät liitetään päätuotteisiin. Tuotedimensioiden yhdistelmät määrittävät sen, kuinka tuotevariantit määritetään."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,21 +29,24 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-dimensions"></a>Tuotedimensiot
 
-On neljä tuotedimensiot - väri, konfiguraatio, koko ja tyyli. Tuotedimensiot yhdistetään dimensioryhmiksi ja dimensioryhmät liitetään päätuotteisiin. Tuotedimensioiden yhdistelmät määrittävät sen, kuinka tuotevariantit määritetään.
+[!include[banner](../includes/banner.md)]
+
+
+Tuotedimensioita on neljä: Väri, Konfigurointi, Koko ja Tyyli. Tuotedimensiot yhdistetään dimensioryhmiksi ja dimensioryhmät liitetään päätuotteisiin. Tuotedimensioiden yhdistelmät määrittävät sen, kuinka tuotevariantit määritetään.
 
 Tuotedimensiot ovat ominaisuuksia, joilla voidaan määrittää tuotemallin muuttuja. Voit käyttää tuotevarianttien määrittämiseen tuotedimensioiden yhdistelmiä. Sinun on määritettävä päätuotteelle vähintään yksi tuotedimensio, jotta voit luoda tuotevariantin.
 Tuotevariantit
 ----------------
 
-Tuotemallin muuttujien kutsutaan myös nimikkeinä. Nimike on aineellinen tuote eikä tarkoita samaa kuin palvelu. On myös mahdollista määrittää päätuotteen joiden palvelutyyppi. Käyttämällä Palvelu-tyyppiä voit määrittää tuotevariantit, jotka sisältävät palveluita. Voit esimerkiksi määrittää konsultointityölle päätuotteen ja tuotevariantit kokeneempien ja nuorempien konsulttien suorittamalle työlle.
+Tuotemallin muuttujien kutsutaan myös nimikkeinä. Nimike on aineellinen tuote eikä tarkoita samaa kuin palvelu. Päätuotteen voi kuitenkin määrittää myös palvelutyypin kanssa. Käyttämällä Palvelu-tyyppiä voit määrittää tuotevariantit, jotka sisältävät palveluita. Voit esimerkiksi määrittää konsultointityölle päätuotteen ja tuotevariantit kokeneempien ja nuorempien konsulttien suorittamalle työlle.
 
 ## <a name="product-dimensions"></a>Tuotedimensiot
-Tuotteen seuraavat dimensiot ovat käytettävissä: konfiguraatio, väri, koko ja tyyli. Tuotevariantin voidaan luoda tuotteen dimensioarvojen perusteella.
+Tuotedimensioita on neljä: Konfigurointi, Väri, Koko ja Tyyli. Tuotevariantit voidaan luoda tuotedimensioarvojen perusteella.
 
-Tuotteen dimensioiden arvot, kuten koon, värin ja tyylin voi luoda **kokoa**, **väri** ja **tyyli** sivuille, jota voi käyttää seuraavista sijainneista: **tuotetietojen hallinta**&gt;**asennus**&gt;**dimensio ja muuttuja ryhmiä**&gt;**kokoja/värejä ja tyylejä**. Konfiguraatiodimension tuotedimension arvot luodaan yleensä käyttämällä joko tuotekonfiguraatiota tai dimensioihin perustuvaa konfiguraatiota. Tuotedimensioita voi luoda ja ylläpitää myös **Tuotedimensiot**-sivulla, jonka voi avata seuraavista sijainneista:
--   Valitse **tuotetietojen hallinta**&gt;**tuotteita**&gt;**päätuotteet**. - **Toimintoruudun**, valitse **tuotedimensiot**.
--   Valitse **tuotetietojen hallinta**&gt;**tuotteita**&gt;**kaikki tuotteet ja päätuotteet**. Valitse päätuote. - **Toimintoruudun**, valitse **tuotedimensiot**.
--   Valitse **tuotetietojen hallinta**&gt;**vapautetut tuotteet**. Valitse päätuote. - **Toimintoruudun**, valitse **tuote**. Valitse **Päätuote**-ryhmästä **Tuotedimensiot**.
+Tuotedimensioiden arvot, kuten Koko, Väri ja Tyyli, voidaan luoda **Koko**-, **Väri**- ja **Tyyli**-sivuilla, jotka voi avata valitsemalla **Tuotetietojen hallinta** &gt; **Asetukset** &gt; **Dimensio ja varianttiryhmät** &gt; **Koot/Värit/Tyylit**. Konfiguraatiodimension tuotedimension arvot luodaan yleensä käyttämällä joko tuotekonfiguraatiota tai dimensioihin perustuvaa konfiguraatiota. Tuotedimensioita voi luoda ja ylläpitää myös **Tuotedimensiot**-sivulla, jonka voi avata seuraavista sijainneista:
+-   Valitse **Tuotetietojen hallinta** &gt; **Tuotteet** &gt; **Päätuotteet**. Valitse **toimintoruudussa** **Tuotedimensiot**.
+-   Valitse **Tuotetietojen hallinta** &gt; **Tuotteet** &gt; **Kaikki tuotteet ja päätuotteet**. Valitse päätuote. Valitse **toimintoruudussa** **Tuotedimensiot**.
+-   Valitse **Tuotetietojen hallinta** &gt; **Vapautetut tuotteet**. Valitse päätuote. Valitse **toimintoruudusta** **Tuote**. Valitse **Päätuote**-ryhmästä **Tuotedimensiot**.
 
 Tälle nimikkeelle luotavien varianttien lukumäärää rajoittaa mahdollisten tuotedimensioiden yhdistelmien määrä.
 | **Vihje **                                                                                                                                              |
@@ -64,6 +67,8 @@ Yritys myy farmarihousuja. Farkut-nimikkeessä on käytössä Väri- ja Koko-tuo
 | Ruskea | L    |
 | Ruskea | XL   |
 | Ruskea | XXL  |
+
+
 
 
 

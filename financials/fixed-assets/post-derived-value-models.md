@@ -1,5 +1,5 @@
 ---
-title: Kirjaaminen johdettujen kirjojen kanssa
+title: Kirjaaminen johdettujen kirjojen avulla
 description: "Tässä artikkelissa kerrotaan, miten johdettuja kirjoja käytetään."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="post-with-derived-books"></a>Kirjaaminen johdettujen kirjojen kanssa
+# <a name="post-with-derived-books"></a>Kirjaaminen johdettujen kirjojen avulla
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa kerrotaan, miten johdettuja kirjoja käytetään.
 
@@ -49,11 +52,13 @@ Seuraavaksi kuvataan, miten hankintatapahtumat määritetään johdetun kirjan t
 
 Kirjat voidaan sitten liittää tiettyihin käyttöomaisuuseriin. 
 
-Kun hankintahinta kirjataan käyttöomaisuuserälle on kirja-VM 1, hankinta kirjataan vain AM 1: een, vaan myös johdettu kirjan AM 2. Käyttöomaisuuserän molempien kirjojen tilaksi Avoin.
+Kun hankintahinta kirjataan käyttöomaisuudelle, jonka kirja on AM 1, hankintahinta ei kirjaudu vain AM 1:een, vaan myös johdettuun kirjaan AM 2. Kummankin käyttöomaisuuskirjan tilaksi päivitetään yleensä Avoin.
 
 > [!NOTE]                                                                                                         
 > Jos et käytä johdettuja poistokirjoja, sinun on tehtävä käyttöomaisuuden hankintahinnan kirjaus sekä kirjaa AM 1 että kirjaa AM 2 varten.
 
-Lisätietoja on ohjeaiheessa [johdetut poistokirjat](derived-books.md)
+Lisätietoja on kohdassa [Johdetut kirjat](derived-books.md)
+
+
 
 

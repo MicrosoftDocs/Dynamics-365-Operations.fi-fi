@@ -1,6 +1,6 @@
 ---
 title: Puhelukeskuksen toiminnot
-description: "Tässä artikkelissa on yleiskatsaus puhelu center myynnin toimintoja Microsoft Dynamics-365 operaatioille."
+description: "Tämä artikkeli sisältää Microsoft Dynamics 365 for Operationsin puhelinkeskuksen myyntitoimintojen yleiskatsauksen."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: global
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="call-center-functionality"></a>Puhelukeskuksen toiminnot
 
-Tässä artikkelissa on yleiskatsaus puhelu center myynnin toimintoja Microsoft Dynamics-365 operaatioille.
+[!include[banner](includes/banner.md)]
 
-Microsoft Dynamics AX:n Vähittäismyynti ja kauppa -osio tukee myös puhelukeskuksia vähittäismyyntikanavan tyyppinä. Puhelinpalvelukeskuksessa työntekijät ottavat vastaan asiakastilauksia puhelimitse ja luovat myyntitilauksia. Puhelinkeskuksen toimintoihin sisältyy toimintoja, joiden tarkoituksena on helpottaa puhelimessa tilaamista ja asiakaspalvelua tilausprosessin aikana. Esimerkiksi puhelu center työntekijöiden tiedot voidaan syöttää suoraan myyntitilauksesta ja tarkastella yksityiskohtainen yhteenveto kulut ja maksut ennen tilauksen lähettämistä. Työntekijöillä on myös mahdollisuus hallita hinnoittelua ja käyttää eri tietoja asiakkaista, tuotteista ja hinnoista **Myyntitilaus**-sivun kautta. Puhelukeskukset voivat myös laajennetusti seurata asiakkaan historiatietoja ja tilauksen tilaa. Jokaisella puhelinkeskuksella voi olla omat käyttäjät, maksutavat, hintaryhmät, taloushallinnon dimensiot ja toimitustavat. Voit määrittää nämä asetukset puhelinkeskusta luotaessa. Voit lisäksi ottaa käyttöön tai poistaa käytöstä seuraavat, vain puhelinpalvelukeskuksille ominaiset toimintoryhmät **Puhelukeskus**-sivulla:
+
+Tämä artikkeli sisältää Microsoft Dynamics 365 for Operationsin puhelinkeskuksen myyntitoimintojen yleiskatsauksen.
+
+Microsoft Dynamics AX:n Vähittäismyynti ja kauppa -osio tukee myös puhelukeskuksia vähittäismyyntikanavan tyyppinä. Puhelinpalvelukeskuksessa työntekijät ottavat vastaan asiakastilauksia puhelimitse ja luovat myyntitilauksia. Puhelinkeskuksen toimintoihin sisältyy toimintoja, joiden tarkoituksena on helpottaa puhelimessa tilaamista ja asiakaspalvelua tilausprosessin aikana. Esimerkiksi puhelukeskuksen työntekijät voivat syöttää maksutiedot suoraan myyntitilauksesta ja tarkastella yksityiskohtaista yhteenvetoa kuluista ja maksuista ennen tilauksen lähettämistä. Työntekijöillä on myös mahdollisuus hallita hinnoittelua ja käyttää eri tietoja asiakkaista, tuotteista ja hinnoista **Myyntitilaus**-sivun kautta. Puhelukeskukset voivat myös laajennetusti seurata asiakkaan historiatietoja ja tilauksen tilaa. Jokaisella puhelinkeskuksella voi olla omat käyttäjät, maksutavat, hintaryhmät, taloushallinnon dimensiot ja toimitustavat. Voit määrittää nämä asetukset puhelinkeskusta luotaessa. Voit lisäksi ottaa käyttöön tai poistaa käytöstä seuraavat, vain puhelinpalvelukeskuksille ominaiset toimintoryhmät **Puhelukeskus**-sivulla:
 
 -   **Tilauksen viimeistely** – Tämä ryhmä sisältää ominaisuuksia, jotka liittyvät maksuihin ja tilausten viimeistelyyn **Myyntitilaus**-sivulla.
 -   **Ohjattu myynti** – Tämä ryhmä sisältää ominaisuuksia, jotka liittyvät lähdekoodeihin, komentosarjoihin ja luettelopyyntöihin.
@@ -44,6 +47,8 @@ Kun olet ottanut nämä toiminnot käyttöön puhelukeskuksen asetuksissa, ne ov
 -   Myyntiassistentit voivat lisätä jälleenmyyjän kuponkeja tilaukseen.
 -   Myyntiassistentit voivat myydä jatkuvuusohjelmia.
 -   Tilauksia voidaan asettaa pitoon manuaalisesti tai automaattisesti osoittamaan, että tarvitaan lisätutkimuksia ennen kuin tilaus voidaan käsitellä.
+
+
 
 
 

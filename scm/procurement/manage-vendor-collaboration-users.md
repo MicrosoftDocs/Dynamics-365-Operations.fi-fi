@@ -27,18 +27,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-vendor-collaboration-users"></a>Toimittajayhteistyön käyttäjien hallinta
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä aiheessa kuvataan, miten voit pyytää uusien toimittajayhteistyön käyttäjien valmistelua ja miten uusia toimittajayhteistyön yhteyshenkilöitä lisätään. 
 
-Microsoft Dynamics 365 for Operations - toimittajayhteistyöliittymästä saadaan tietoja ostotilauksista, laskuista ja lähetysvarastosta ulkoisille toimittajille. Voit luoda uusia toimittajayhteistyön yhteyshenkilöitä ja pyytää, että uusia käyttäjiä valmistellaan, jos työskentelet ulkoisena toimittajana **Toimittajan järjestelmänvalvoja (ulkoinen)** -käyttöoikeusroolissa tai vastaavilla käyttöoikeuksilla. Voit myös suorittaa nämä tehtävät, jos työskentelet hankinta-asiantuntijana Tässä aiheessa kyseinen rooli viittaa hankinta-asiantuntijaan, joka toimii yrityksessä, joka omistaa Dynamics 365 for Operations -esiintymän. Saat lisätietoja siitä, miten käyttää yhteistyössä toimittaja, jos olet ulkoinen toimittaja [toimittaja asiakkaiden kanssa](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Microsoft Dynamics 365 for Operations - toimittajayhteistyöliittymästä saadaan tietoja ostotilauksista, laskuista ja lähetysvarastosta ulkoisille toimittajille. Voit luoda uusia toimittajayhteistyön yhteyshenkilöitä ja pyytää, että uusia käyttäjiä valmistellaan, jos työskentelet ulkoisena toimittajana **Toimittajan järjestelmänvalvoja (ulkoinen)** -käyttöoikeusroolissa tai vastaavilla käyttöoikeuksilla. Voit myös suorittaa nämä tehtävät, jos työskentelet hankinta-asiantuntijana Tässä aiheessa kyseinen rooli viittaa hankinta-asiantuntijaan, joka toimii yrityksessä, joka omistaa Dynamics 365 for Operations -esiintymän. Katso lisätietoja toimittajayhteistyön käytöstä ulkoisena toimittajana kohdasta [Toimittajayhteistyö asiakkaiden kanssa](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
-Saat lisätietoja käyttämisestä Jos hankintaan, joka on ammatillinen toimittaja, yhteistyössä [toimittaja yhteistyössä ulkoisten toimittajien,](vendor-collaboration-work-external-vendors.md).
+Katso lisätietoja toimittajayhteistyön käytöstä hankinta-asiantuntijana kohdasta [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).
 
 ## <a name="add-new-vendor-collaboration-contacts"></a>Lisää uusia toimittajayhteistyön yhteyshenkilöitä
-Jos haluat antaa toimittajayhteistyön käyttöoikeudet toiselle käyttäjälle, heidät on ensin lisättävätoimittajayhteistyön yhteyshenkilöiksi. Voit myös halutessasi lisätä yhteyshenkilöitä yrityksesi työntekijöille, jotka eivät käytä toimittajayhteistyötä. He voivat olla yhteyshenkilöitä esimerkiksi toisentyyppisiä hankintatietoja varten. Uudet yhteystiedot lisätään **kaikki yhteystiedot** sivu, joka voidaan avata **toimittaja, yhteistyössä**&gt;**yhteystiedot** valikosta. Uuden yhteyshenkilön lisääminen:
+Jos haluat antaa toimittajayhteistyön käyttöoikeudet toiselle käyttäjälle, heidät on ensin lisättävätoimittajayhteistyön yhteyshenkilöiksi. Voit myös halutessasi lisätä yhteyshenkilöitä yrityksesi työntekijöille, jotka eivät käytä toimittajayhteistyötä. He voivat olla yhteyshenkilöitä esimerkiksi toisentyyppisiä hankintatietoja varten. Uudet yhteystiedot lisätään **Kaikki yhteyshenkilöt** -sivulle, jolle päästään **Toimittajayhteistyö** &gt; **Yhteyshenkilöt** -valikosta. Uuden yhteyshenkilön lisääminen:
 
 1.  Valitse **Uusi**.
 2.  Anna yhteyshenkilön tiedot.
-3.  Valitse oikeushenkilö, jota he edustavat yrityksessäsi, ja minkä oikeushenkilön kanssa he tekevät yhteistyötä yrityksessä. Voit tehdä tämän valitsemalla **oikeushenkilö oman yrityksen**/**oikeushenkilön asiakkaan yrityksen** pari.
+3.  Valitse oikeushenkilö, jota he edustavat yrityksessäsi, ja minkä oikeushenkilön kanssa he tekevät yhteistyötä yrityksessä. Voit tehdä tämän valitsemalla **Oikeushenkilö omassa yrityksessä**/**Oikeushenkilö asiakasyrityksessä** -parin.
 4.  Valitse **Luo**.
 
 Jos haluat poistaa yhteyshenkilön tiedot, voit poistaa vain itse luomasi tiedot.
@@ -46,8 +49,8 @@ Jos haluat poistaa yhteyshenkilön tiedot, voit poistaa vain itse luomasi tiedot
 ## <a name="vendor-collaboration-user-requests"></a>Toimittajayhteistyön käyttäjäpyynnöt
 Toimittajayhteistyön käyttäjäpyyntöjä voi esittää hankinta-asiantuntija tai ulkoisen toimittajan järjestelmänvalvoja.
 
--   Jos olet ulkoinen toimittaja, voit lähettää pyyntöjä **kaikki yhteystiedot** sivun sisällä **toimittaja, yhteistyössä** moduuli.
--   Jos olet hankinta-asiantuntija, lähetä pyynnöt **Tarkastele yhteyshenkilöitä** -sivulta. Voit tehdä tämän valitsemalla toimittajan tietueeseen, joka **asennus** toiminto-ruudussa, valitse-osassa **yhteystiedot**&gt;**tarkastella yhteystietoja**.
+-   Jos olet ulkoinen toimittaja, lähetä pyynnöt **Kaikki yhteyshenkilöt** -sivulta **Toimittajayhteistyö**-moduulista.
+-   Jos olet hankinta-asiantuntija, lähetä pyynnöt **Tarkastele yhteyshenkilöitä** -sivulta. Voit tehdä tämän valitsemalla toimittajatietueessa siirtymisruudun **Asetukset** osassa, valitsemalla **Yhteyshenkilöt** &gt; **Tarkastele yhteyshenkilöitä**.
 
 Voit tehdä pyynnön käyttäjän valmistelemisesta, käyttäjän poistamisesta tai käyttöoikeusroolien muokkaamisesta. Jos olet ulkoisen toimittajan järjestelmänvalvoja, sinun on rekisteröidyttävä yhteyshenkilöksi toimittajatileille, joille haluat tehdä käyttäjän pyyntöjä, ja sinulla on oltava toimittajayhteistyöliittymän käyttöoikeudet näiltä toimittajatileiltä.  
 
@@ -57,13 +60,13 @@ Kun pyyntö on lähetetty, se lisätään **Toimittajayhteistyön käyttäjäpyy
 
 Ennen kuin voit pyytää uuden käyttäjän valmistelua, kyseisen henkilön on määritettävä yhteyshenkilöksi vähintään yhdelle toimittajatilille. Uuden toimittajayhteistyön käyttäjäpyynnön luominen:
 
-1.  - **Kaikki yhteystiedot** -sivulla **tarjotaan toimittajakäyttäjän**.
-2.  Anna käyttäjän sähköpostiosoite. Käyttäjä käyttää tätä osoitetta kirjautuessaan Dynamics 365 for Operations -järjestelmään. Jos sähköpostiosoite kuuluu Microsoft Azuren vuokraajaksi rekisteröityneelle toimialueelle, sähköpostiosoitteen tulee olla aiemmin luodulla Azure Active Directory (ADD) -tilillä, jotta valmisteluprosessi onnistuu. Jos sähköpostiosoite kuuluu Microsoft Azuren vuokraajaksi rekisteröityneelle toimialueelle, ADD-tili luodaan käyttöoikeuden valmisteluprosessin aikana ja uusi käyttäjä saa kutsuviestin. Kuluttaja email osoitteet-toimialueiden kanssa kuten @hotmail.com, @gmail.com, tai @comcast.netei voi rekisteröidä Dynamics-365 toimintoja käyttäjälle.
+1.  **Kaikki yhteyshenkilöt** -sivulla valitse **Valmistele toimittajakäyttäjä**.
+2.  Anna käyttäjän sähköpostiosoite. Käyttäjä käyttää tätä osoitetta kirjautuessaan Dynamics 365 for Operations -järjestelmään. Jos sähköpostiosoite kuuluu Microsoft Azuren vuokraajaksi rekisteröityneelle toimialueelle, sähköpostiosoitteen tulee olla aiemmin luodulla Azure Active Directory (ADD) -tilillä, jotta valmisteluprosessi onnistuu. Jos sähköpostiosoite kuuluu Microsoft Azuren vuokraajaksi rekisteröityneelle toimialueelle, ADD-tili luodaan käyttöoikeuden valmisteluprosessin aikana ja uusi käyttäjä saa kutsuviestin. Kuluttaja-asiakkaiden sähköpostiosoitteita, joiden verkkotunnus on esimerkiksi @hotmail.com, @gmail.com tai @comcast.net, ei voida käyttää rekisteröidyttäessä Dynamics 365 for Operations -käyttäjäksi.
 3.  Määritä **Toimittajayhteistyön käyttö sallittu** -asetukseksi **Kyllä** kaikkille yrityksille, joihin käyttäjä tarvitsee käyttöoikeudet.
 4.  - **Määritä käyttäjärooleja** -osassa valitse **Määritä** -valintaruutu niille käyttöoikeusrooleille, jotka uusi käyttäjä tarvitsee.
 5.  Valitse **Lähetä**.
 
-Toimittajan käyttäjäpyyntö lähetettäessä **toimittaja yhteistyö käyttö sallittu** -kentän arvoksi **Kyllä**, ja valitun toimittajatilin käyttäjä pyytää työnkulku on aloitettu. Uusi käyttäjä luodaan Dynamics 365 for Operations -järjestelmässä ja suojausroolit määritetään osana työnkulkua. Lisäksi Azure B2B -palvelu aktivoituu ja käynnistää käsittelyn Azure-portaalissa ja liittää uuden tai entisen ADD-käyttäjätilin Dynamics 365 for Operations -käyttäjätiliin.
+Kun toimittajan käyttäjäpyyntö on lähetetty **Toimittajayhteistyön käyttö sallittu** -kentän arvoksi tulee **Kyllä** valitulle toimittajatilille ja käyttäjäpyynnön työnkulku aloitetaan. Uusi käyttäjä luodaan Dynamics 365 for Operations -järjestelmässä ja suojausroolit määritetään osana työnkulkua. Lisäksi Azure B2B -palvelu aktivoituu ja käynnistää käsittelyn Azure-portaalissa ja liittää uuden tai entisen ADD-käyttäjätilin Dynamics 365 for Operations -käyttäjätiliin.
 
 ### <a name="inactivate-a-user"></a>Poista käyttäjä
 
@@ -72,22 +75,24 @@ Toimittajayhteistyön käyttöoikeus voidaan poistaa käyttäjältä kahdella ta
 -   Toimittajan **Yhteyshenkilöt**-sivulla määritä **Toimittajayhteistyön käyttö sallittu** -asetukseksi **ei** yhteyshenkilölle. Tämä voidaan tehdä yksitellen yrityksessä, joka yhteyshenkilö käyttäjä on. Tätä vaihtoehtoa voivat käyttää vain hankinta-asiantuntijat.
 -   Poista koko käyttäjätili käytöstä lähettämällä **Poista toimittajakäyttäjä käytöstä** -pyyntö.
 
-Voit pyytää, että käyttäjä poistaa käytöstä seuraavasti:
+Käyttäjän käyttöoikeuksien poistamispyynnön esittäminen:
 
-1.  - **Kaikki** -sivulla **Poista käytöstä****toimittajakäyttäjän**.
+1.  **Kaikki yhteyshenkilöt** -sivulla valitse **Poista** **toimittajakäyttäjä**.
 2.  Kirjoita kommentti **Liiketoimintaperuste**-kentässä.
 3.  Valitse **Lähetä**.
 
 ### <a name="modify-security-roles"></a>Muuta käyttöoikeusrooleja
 
-**Ylläpidä toimittajan käyttäjäroolien** sivulla on sama kuin **tarjotaan toimittajakäyttäjän** sivu, paitsi että käyttöoikeusroolien luetteloa voidaan muokata.  
+**Ylläpidä toimittajakäyttäjän rooleja** -sivu on sama kuin **Valmistele toimittajakäyttäjä** -sivu sillä erotuksella, että käyttöoikeusrooliluetteloa voidaan muokata.  
 
-Voit pyytää käyttöoikeusroolit muokataan käyttäjän seuraavasti:
+Voit pyytää käyttöoikeusroolien muokkaamista käyttäjälle seuraavasti:
 
-1.  - **Kaikki yhteystiedot** -sivulla **ylläpitäminen****toimittaja käyttäjien roolien**.
+1.  **Kaikki yhteyshenkilöt** -sivulla valitse **Ylläpidä** **toimittajakäyttäjän** rooleja.
 2.  Kirjoita kommentti **Liiketoimintaperuste**-kentässä.
 3.  Valitse **Ylläpidä käyttäjärooleja** -osa, valitse käyttöoikeusroolit, jotka haluat liittää tai poistaa.
-4.  Click **Submit**.
+4.  Valitse **Lähetä**.
+
+
 
 
 

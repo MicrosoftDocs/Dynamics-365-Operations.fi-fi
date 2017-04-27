@@ -1,5 +1,5 @@
 ---
-title: "Osittainen toimittajamaksun ja lopullinen maksu selvitetään kokonaan ennen alennuksen päivämäärää"
+title: "Toimittajan osamaksun ja lopullisen maksun täydellinen tilittäminen ennen alennuspäivämäärää"
 description: "Tämä artikkeli opastaa sinua skenaariossa, jossa osittaisia maksuja suoritetaan toimittajan laskulle ja käytetään käteisalennusta."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Osittainen toimittajamaksun ja lopullinen maksu selvitetään kokonaan ennen alennuksen päivämäärää
+# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Toimittajan osamaksun ja lopullisen maksun täydellinen tilittäminen ennen alennuspäivämäärää
+
+[!include[banner](../includes/banner.md)]
+
 
 Tämä artikkeli opastaa sinua skenaariossa, jossa osittaisia maksuja suoritetaan toimittajan laskulle ja käytetään käteisalennusta.
 
-Fabrikam ostaa tavaroita 3064 toimittajalta. Toimittaja antaa Fabrikam 1 prosentin käteisalennus, jos lasku maksetaan 14 päivän kuluessa. Laskut on maksettava 30 päivän kuluessa. Lisäksi toimittaja antaa Fabrikamille käteisalennukset osamaksuista. Selvityksen parametrit sijaitsevat **Ostoreskontran parametrit** sivulla. April syöttää 25. kesäkuuta 1 000,00 arvoisen laskun toimittajalle 3064.
+Fabrikam ostaa tavaraa toimittajalta 3064. Toimittaja antaa Fabrikamille 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Laskut on maksettava 30 päivän kuluessa. Lisäksi toimittaja antaa Fabrikamille käteisalennukset osamaksuista. Tilityksen parametrit sijaitsevat **Ostoreskontran parametrit** -sivulla. April syöttää 25. kesäkuuta 1 000,00 arvoisen laskun toimittajalle 3064.
 
 ## <a name="vendor-invoice-on-june-25"></a>Toimittajan lasku 25. kesäkuuta
-Kesäkuun 25 päivänä huhtikuuta syöttää ja kirjaa lasku toimittajalle 3064 1 000,00. April voi tarkastella tapahtumia **Toimittajatapahtumat**-sivulla.
+April syöttää ja kirjaa 25. kesäkuuta laskun toimittajalle 3064, jonka arvo on 1.000,00. April voi tarkastella tapahtumia **Toimittajatapahtumat**-sivulla.
 
 | Tosite   | Päivämäärä      | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo   | Valuutta |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -63,7 +66,7 @@ April napsauttaa **Käteisalennus**-välilehteä tarkastellakseen alennussummaa.
 | 25.7.2015          | 0,00                 | 1 000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Osamaksu 1. heinäkuuta käyttäen Selvitä tapahtumat -sivua
-April voi luoda maksulle kirjauskansion avaamalla **Maksukirjauskansio**-sivun ostoreskontrasta. Hän luo uusi kirjauskansio ja toimittajan 3064 Lisää rivi. Hän avaa **tapahtumat selvitetään** sivulla, niin että hän voi merkitä laskun tilitystä varten. April merkitsee laskun ja muuttaa **Tilitettävä summa** -kentän arvoksi **-500.00**. Hän huomaa, että **Tilitettävä summa** -kentän arvo koko laskulle on **-10,00** ja että **Käytettävä käteisalennussumma** -kentän arvo on **-5,05**. April selvittää siis tämän laskun summaksi -505,05.
+April voi luoda maksulle kirjauskansion avaamalla **Maksukirjauskansio**-sivun ostoreskontrasta. Hän luo uuden maksun kirjauskansion ja lisää rivin toimittajalle 3064. Tämän jälkeen hän avaa **Selvitä tapahtumat** -sivun, jotta hän voi merkitä laskun tilitettäväksi. April merkitsee laskun ja muuttaa **Tilitettävä summa** -kentän arvoksi **-500.00**. Hän huomaa, että **Tilitettävä summa** -kentän arvo koko laskulle on **-10,00** ja että **Käytettävä käteisalennussumma** -kentän arvo on **-5,05**. April selvittää siis tämän laskun summaksi -505,05.
 
 | Merkitse     | Käytä käteisalennusta | Tosite   | Tili | Päivämäärä      | Eräpäivä  | Lasku | Summa tapahtuman valuuttana | Valuutta | Täsmäytettävä summa |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -95,7 +98,7 @@ Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa.
 | Käytetty käteisalennus          | 0,00      |
 | Käytettävä käteisalennussumma | -5,00     |
 
-April sulkee **Selvitä tapahtumat** -sivun. Kirjauskansioon luodaan maksurivi summalle 495,00, jonka jälkeen April kirjaa kirjauskansion. Huhtikuuta voit tarkastella toimittajatapahtumia **toimittajatapahtumat** sivulla. Hän näkee, että lasku on saldo on-500.00. Näkyvillä ovat myös maksu (495,00) ja käteisalennus (5,00).
+April sulkee **Selvitä tapahtumat** -sivun. Kirjauskansioon luodaan maksurivi summalle 495,00, jonka jälkeen April kirjaa kirjauskansion. April voi tarkastella toimittajan tapahtumia **Toimittajatapahtumat**-sivulla. Hän näkee, että laskun saldo on -500,00. Näkyvillä ovat myös maksu (495,00) ja käteisalennus (5,00).
 
 | Tosite    | Tapahtumatyyppi | Päivämäärä      | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo | Valuutta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -136,6 +139,8 @@ April kirjaa maksukirjauskansion ja tarkistaa toimittajan tapahtumat **Toimittaj
 | ALE-10010 | Käteisalennus    | 7.1.2015  |         | 5,00                                 |                                       | 0,00    | USD      |
 | HYV-10011  | Maksu          | 8.7.2015  |         | 495,00                               |                                       | 0,00    | USD      |
 | ALE-10011 | Käteisalennus    | 8.7.2015  |         | 5,00                                 |                                       | 0,00    | USD      |
+
+
 
 
 

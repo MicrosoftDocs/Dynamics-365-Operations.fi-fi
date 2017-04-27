@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-invoice-matching"></a>Ostoreskontran laskujen täsmäytys
 
+[!include[banner](../includes/banner.md)]
+
+
 Ostoreskontran laskujen täsmäytys on prosessi, jossa täsmäytetään toimittajan laskun, ostotilauksen ja tuotteen vastaanoton tiedot.
 
 Asiakirjoja täsmäytettäessä näissä asiakirjoissa olevia eroja kutsutaan ristiriidoiksi. Täsmäytysristiriitoja verrataan määritettyihin toleransseihin. Jos täsmäytysristiriita ylittää toleranssin prosentin tai summan, täsmäytyksen varianssin kuvakkeet näkyvät Toimittajan lasku -sivulla ja Laskuhistoria ja täsmäytystiedot -sivulla. 
@@ -48,9 +51,9 @@ Voit käyttää seuraavia ostoreskontran laskujen täsmäytystyyppejä:
 
 Kaksi- ja kolmisuuntainen täsmäytys täsmäävät aina hintatiedot yksikköhinnalla. Voit myös määrittää nämä vastaavuuskäytännöt täsmäämään hintatiedot yhteishinnalla.
 -   Nettoyksikköhinnan täsmäytys – Täsmäytä kaksi- tai kolmisuuntaisen täsmäytyksen hintatiedot vertaamalla laskun kunkin rivin nettoyksikköhintaa ostotilauksen vastaavaan nettoyksikköhintaan. Nettoyksikköhinta määritetään seuraavalla kaavalla: rivin nettosumma jaettuna rivin määrällä
--   Kokonaishintojen täsmäytys – Täsmäytä kaksi- tai kolmisuuntaisen täsmäytyksen hintatiedot vertaamalla laskun kunkin rivin nettosummaa (kokonaishintaa) ostotilauksen vastaavaan nettosummaan. Nettosumma määritetään seuraavalla kaavalla: (Yksikköhinta \*rivin määrä) + kulut - rivialennukset
+-   Kokonaishintojen täsmäytys – Täsmäytä kaksi- tai kolmisuuntaisen täsmäytyksen hintatiedot vertaamalla laskun kunkin rivin nettosummaa (kokonaishintaa) ostotilauksen vastaavaan nettosummaan. Nettosumma määritetään seuraavalla kaavalla: (yksikköhinta \* rivimäärä) + rivin kulut vähennettynä rivialennuksilla
 
-Yleensä laskun täsmäytyslaskelmat suoritetaan automaattisesti, kun muokkaat toimittajan laskuja Toimittajan lasku -sivulla. Laskujen täsmäytys voidaan suorittaa myös tarvittaessa. Laskun täsmäytyksen tarvittaessa ohjataan mukaan oikeushenkilön Päivitä automaattisesti laskun otsikkotila vahvistus-välilehdessä laskun Ostoreskontran parametrit sivun tileille. Laskun täsmäytys voidaan suorittaa myös laskun tarkastelun aikana. Voit tarkastella laskun täsmäytyksen tuloksia Toimittajan lasku -sivulla ja liittyvillä laskun täsmäytyksen sivuilla.
+Yleensä laskun täsmäytyslaskelmat suoritetaan automaattisesti, kun muokkaat toimittajan laskuja Toimittajan lasku -sivulla. Laskujen täsmäytys voidaan suorittaa myös tarvittaessa. Kysynnän laskun täsmäytys ohjataan yritykselle Päivitä laskun otsikon tila automaattisesti -asetuksella Ostoreskontran parametrit -sivun Laskun oikeellisuustarkistus -välilehdessä. Laskun täsmäytys voidaan suorittaa myös osana laskun tarkistusprosessia. Voit tarkastella laskun täsmäytyksen tuloksia Toimittajan lasku -sivulla ja liittyvillä laskun täsmäytyksen sivuilla.
 
 ## <a name="invoice-totals-matching"></a> Laskusummien täsmäytys
 Voit käyttää laskusummien täsmäytystä varmistamaan, että laskun kokonaissummat eivät poikkea odotetuista summista enempää kuin hyväksyttävän varianssin. Kuutta kokonaissumma verrataan Laskusummien täsmäytyksen tiedot -sivulla, kuten seuraavassa taulussa. Jos laskusummien täsmäytyksen sallittu toleranssi on 20 %, kokonaisalennussumman 100 %:n varianssia pidetään täsmäytysristiriitana.
@@ -165,7 +168,7 @@ Samaa rivisummaa verrataan Laskusummien täsmäytyksen tiedot -sivulla kuin kaks
 Yrityksen kolmisuuntaista vastaavuutta ohjataan Ostoreskontran parametrit -sivun Rivien vastaavuuskäytäntö -kentällä. Voit valita Salli vastaavuuskäytännön ohitus -kentässä tehdyn valinnan perusteella tietyn toimittajan, nimikkeen tai nimikkeen ja toimittajan yhdistelmän kolmisuuntaisen täsmäytyksen Vastaavuuskäytäntö-sivulla ja tietyn ostotilauksen Ostotilaus-sivulla.
 
 ## <a name="charges-matching"></a> Kulujen täsmäytys
-Voit käyttää kulujen täsmäytystä varmistamaan, että kulut eivät poikkea odotetuista summista enempää kuin hyväksyttävän varianssiprosentin. Vertaa kulujen arvoja - lasku-verrataan kunkin kulujen koodi, jota käytetään tilauksen laskun ja ostotilauksen kokonaissummat: sivulla seuraavassa taulukossa esitetyllä tavalla. Jos kulukoodin täsmäytyksen sallittu toleranssi on 25 %, käyttöoikeusmaksujen koodin 99,999,999,999,99 %:n varianssia pidetään täsmäytysristiriitana.
+Voit käyttää kulujen täsmäytystä varmistamaan, että kulut eivät poikkea odotetuista summista enempää kuin hyväksyttävän varianssiprosentin. Kutakin laskussa ja ostotilauksessa käytettävän kulukoodin kokonaissummaa verrataan Vertaa kulujen arvoja - lasku -sivulla, kuten seuraavassa taulussa. Jos kulukoodin täsmäytyksen sallittu toleranssi on 25 %, käyttöoikeusmaksujen koodin 99,999,999,999,99 %:n varianssia pidetään täsmäytysristiriitana.
 
 > [!NOTE] 
 > Varianssiprosentti 99,999,999,999,99 % tarkoittaa, että ostotilaukseen perustuva odotettu summa on nolla ja että laskun toteutunut summa on nolla. 
@@ -188,7 +191,9 @@ Toimittajan laskut perustuvat usein tuotteen vastaanottoihin, jotka ilmaisevat t
 -   Anna laskun summat, jotka eivät sisältyneet alkuperäiseen ostotilaukseen, jotta laskun tiedot täsmäävät toimittajalta vastaanotettua laskua. Voit verrata ostotilausten kuluja laskujen kuluihin. Voit tarvittaessa lisätä kulut laskuihin kuluja ja kohdistaa ne laskuriveille.
 -   Tarkista ja hyväksy laskun nettoyksikköhinnan ja ostotilauksen nettoyksikköhinnan eroavaisuudet. Voit määrittää hintatoleranssin prosenttiosuudet yrityksille, toimittajille ja nimikkeille. Jos toimittajan laskun rivihinta ei ole hyväksyttävän hintatoleranssin sisällä, voit tallentaa laskun ja hyväksyä sen myöhemmin kirjattavaksi tai voit odottaa, kunnes saat korjauksen toimittajalta.
 
-Lisätietoja on ohjeaiheessa [kolmisuuntainen vastaavia käytäntöjä](three-way-matching-policies.md).
+Lisätietoja on ohjeaiheessa [Kolmisuuntaiset vastaavuuskäytännöt](three-way-matching-policies.md).
+
+
 
 
 

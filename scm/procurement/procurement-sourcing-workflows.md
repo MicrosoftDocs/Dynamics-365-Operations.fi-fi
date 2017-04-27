@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-and-sourcing-workflows"></a>Hankinnan työnkulut
 
+[!include[banner](../includes/banner.md)]
+
+
 Jotkin organisaatiot edellyttävät, että ostoehdotukset ja ostotilaukset hyväksyy eri käyttäjä kuin joka on syöttänyt tapahtuman. Voit määrittää hyväksymisprosessin luomalla työnkulun.
 
 Työnkulku vastaa liiketoimintaprosessia. Se määrittää, miten asiakirja "kulkee" järjestelmässä, ja osoittaa, kenen on saatettava tehtävä valmiiksi tai hyväksyttävä asiakirja. Työnkulkujärjestelmän käyttö hyödyttää organisaatiotasi monin eri tavoin:
 -   **Yhdenmukaiset prosessit** — Voit määrittää hyväksyntäprosessin tietyille asiakirjoille kuten ostoehdotuksille ja kuluraporteille. Työnkulkujärjestelmän käyttö auttaa varmistamaan, että asiakirjat käsitellään ja hyväksytään johdonmukaisesti ja tehokkaasti.
 -   **Prosessin näkyvyys** — Voit seurata tietyn työnkulun esiintymän tilaa, historiaa ja suorituskykyarvoja. Tämä auttaa määrittämään, tarvitaanko työnkulkuun muutoksia tehokkuuden parantamiseksi.
--   **Keskitetty työluettelo**– käyttäjät voivat tarkastella työnkulkutehtäviä ja määrittää ne kaikki työnkulut, kun he osallistuvat hyväksynnät keskitetty työluettelo. Tämä on työtä nimikkeet-sivu.
+-   **Keskitetty työluettelo** – Käyttäjät voivat tarkastella keskitetyssä työluettelossa olevia työnkulkutehtäviä ja niille annettuja hyväksyntöjä kaikissa työnkuluissa, joissa he ovat osallisina. Tämän voi tehdä Työnimikkeet-sivulla.
 
 ## <a name="the-types-of-workflows-that-you-can-create"></a> Luotavissa olevat työnkulkutyypit
 Hankinnoissa voi käyttää seuraavia työnkulkutyyppejä.
@@ -46,7 +49,7 @@ Hankinnoissa voi käyttää seuraavia työnkulkutyyppejä.
 | Ostotilausrivin työnkulku     | Luo ostotilauksen riveille tarkistus- ja hyväksymistyönkulkuja. |
 
 ## <a name="creating-a-workflow"></a>Työnkulun luominen
-Jos haluat luoda työnkulun, siirry hankinta &gt;asennus &gt;ja työnkulut hankinta ja luo uusi työnkulku valitsemalla luotavan työnkulun tyyppi.  
+Jos haluat luoda työnkulun, valitse Hankinta &gt; Asetukset &gt; Hankinnan työnkulut ja luo uusi työnkulku valitsemalla haluamasi työnkulkutyyppi.  
 
 Voit vetää työnkulkualustassa työnkulun elementit suunnitteluun ja linkittää ne työnkulkuun. Työnkulun elementtien asetukset täytyy määrittää. Hyväksynnän ja tehtävän työnkulun elementeille voit määrittää, kenen osallistujan tulee tehdä niille toimia.
 Osallistujien tyypit
@@ -69,6 +72,8 @@ Voit määrittää hyväksyntävaiheen seuraaville osallistujaryhmille.
 
 [Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (raportti)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Ostoehdotuksen työnkulku](purchase-requisitions-workflow.md)
+
+
 
 

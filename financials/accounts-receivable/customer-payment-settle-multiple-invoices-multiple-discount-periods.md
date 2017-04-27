@@ -1,5 +1,5 @@
 ---
-title: "Avulla selvittämään useita laskuja, jotka kattavat useita Alennuskausien asiakkaan maksu"
+title: "Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla"
 description: "Tässä artikkelissa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, kuinka käteisalennukset voivat vaihdella maksuajankohdan mukaan."
 author: twheeloc
 manager: AnnBe
@@ -26,18 +26,21 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Avulla selvittämään useita laskuja, jotka kattavat useita Alennuskausien asiakkaan maksu
+# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, kuinka käteisalennukset voivat vaihdella maksuajankohdan mukaan.
 
-Fabrikam myy tavaroita asiakkaan 4032. Fabrikam tarjoaa 1 prosentin käteisalennus, jos lasku maksetaan 14 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Settement parametrit sijaitsevat **Myyntireskontran parametrit** sivulla.
+Fabrikam myy tavaroita asiakkaalle 4032. Fabrikam tarjoaa 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Tilityksen parametrit sijaitsevat **Myyntireskontran parametrit** -sivulla.
 
 ## <a name="invoices"></a>Laskut
 Asiakkaalla 4032 on kolme laskua, joiden yhteissumma on 3 000,00:
 
--   Laskun FTI-10040, saat 1 000,00-syötettiin toukokuun 15. Tämä lasku on oikeutettu 1 prosentin käteisalennus, jos se maksetaan 14 päivän kuluessa.
--   Laskun FTI-10041, saat 1 000,00-syötettiin kesäkuun 25. Tämä lasku on oikeutettu 1 prosentin käteisalennus, jos se maksetaan 14 päivän kuluessa.
--   Laskun FTI-10042, saat 1 000,00-syötettiin kesäkuun 25. Tämä lasku on oikeutettu 2 prosentin käteisalennus, jos se maksetaan viiden päivän ja 1 prosentin alennuksen, jos se maksetaan 14 päivän kuluessa.
+-   Lasku FTI-10040, summa 1 000,00, kirjattiin 15.5. Tämä lasku oikeuttaa 1 prosentin käteisalennuksen, jos se maksetaan 14 päivän kuluessa.
+-   Lasku FTI-10041, summa 1 000,00, kirjattiin 25.6. Tämä lasku oikeuttaa 1 prosentin käteisalennuksen, jos se maksetaan 14 päivän kuluessa.
+-   Lasku FTI-10042, summa 1 000,00, kirjattiin 25.6. Tämä lasku on oikeutettu 2 prosentin käteisalennukseen, jos se maksetaan viiden päivän sisällä ja 1 prosentin alennuksen, jos se maksetaan 14 päivän kuluessa.
 
 ## <a name="settle-all-invoices-on-june-29"></a>Kaikkien laskujen tilittäminen 29. kesäkuuta
 Jos Erik luo maksukirjauskansion, jotta laskut voidaan tilittää kokonaan 29. kesäkuuta, maksettava summa on 2 970,00. Alennussummat ovat yhteensä 30,00. Erik luo maksun asiakkaalle 4032 ja avaa sitten **Selvitä tapahtumat** -sivun. Erik merkitsee **Selvitä tapahtumat** -sivulla tilitettäviksi kaikki kolme laskuriviä:
@@ -76,7 +79,7 @@ Asiakas 4032 voi maksaa laskun osissa, esimerkiksi puolet kustakin laskusta. Eri
 | Valittu                 | Normaali            | FTI-10041 | 4032    | 25.6.2015 | 25.7.2015 | 10041   | 1 000,00                             |                                       | USD      | 495,00           |
 | Valitut ja korostetut | Normaali            | FTI-10042 | 4032    | 25.6.2015 | 25.7.2015 | 10042   | 1 000,00                             |                                       | USD      | 490,00           |
 
-Erik voi myös syöttää manuaalisesti maksusumma 1,485.00 ennen kuin hän avaa **tapahtumat selvitetään** sivulla. Jos Erik manuaalisesti syöttää maksusumma ja merkitsee kaikki kolme tapahtumia, mutta hän ei muuta-arvo **Täsmäytettävä summa** kenttä kunkin tapahtuman, hän saa seuraavan sanoman, kun hän sulkee sivun:
+Arnie voi myös syöttää manuaalisesti maksusumman 1 485,00 ennen kuin hän avaa **Selvitä tapahtumat** -sivun. Jos Arnie manuaalisesti syöttää maksusumman ja merkitsee siten kaikki kolme tapahtumaa, mutta hän ei muuta**Täsmäytettävä summa** -kentän arvoa kunkin tapahtuman osalta, hän saa seuraavan sanoman, kun hän sulkee sivun:
 
 > Merkittyjen tapahtumien kokonaissumma poikkeaa kirjauskansion summasta. Muutetaanko kirjauskansion summa?
 
@@ -95,6 +98,8 @@ Arnie tarkastelee tietoja **Asiakastapahtumat**-sivulla.
 | FTI-10042  | Lasku          | 25.6.2015 | 10042   | 1 000,00                             |                                       | 505,10   | USD      |
 | ARP-10040  | Maksu          | 29.6.2015 |         |                                      | 1 485,00                              | 0,00     | USD      |
 | ALE-10040 | Käteisalennus    | 29.6.2015 |         |                                      | 9,90                                  | 0,00     | USD      |
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Tuloslaskelman talousraportti
-description: "Tässä artikkelissa kuvataan tuloslaskelmien oletusraportti. Artikkelissa kuvataan myös rakenneosia, jotka liittyvät tämän raportin."
+description: "Tässä artikkelissa kuvataan tuloilmoituksen oletusraporttia. Siinä myös kuvataan rakenneosat, jotka liittyvät tähän raporttiin."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="income-statement-financial-report"></a>Tuloslaskelman talousraportti
 
-Tässä artikkelissa kuvataan tuloslaskelmien oletusraportti. Artikkelissa kuvataan myös rakenneosia, jotka liittyvät tämän raportin. 
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa kuvataan tuloilmoituksen oletusraporttia. Siinä myös kuvataan rakenneosat, jotka liittyvät tähän raporttiin. 
 
 <a name="default-income-statement-report"></a>Tuloslaskelman oletusraportti
 -------------------------------
@@ -61,10 +64,12 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Taloushallinnan raportointi](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Näytä raportit](view-financial-reports.md)
 
-[Dynamics taloudellisen raportoinnin blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamicsin talousraportointi -blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

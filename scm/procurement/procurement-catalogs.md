@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-catalogs"></a>Hankintaluettelot
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan, kuinka ostajat voivat määrittää ja ylläpitää tuotteiden hankintaluetteloita. Hankintaluettelot määrittävät nimikkeet ja palvelut, joita yrityksen työntekijät voivat tilata sisäiseen käyttöön.
 
 Hankintahenkilöstö voi luoda ja ylläpitää luetteloita nimikkeistä ja palveluista, joita voi ostaa organisaation sisäiseen käyttöön. Kun luettelot on määritetty, yrityksen työntekijät voivat luoda ostoehdotuksia luetteloissa olevien kohteiden tilaamiseksi. Luetteloilla voidaan ottaa käyttöön ostokäytäntöjä niin, että työntekijät voivat tilata vain ostavalle yritykselle sallittuja nimikkeitä ja palveluja. Kun luot tuotteiden hankintaluettelon, ota huomioon seuraavat tehtävät:
 
 -   Hankintaluokkahierarkia täytyy määrittää, ennen kuin voit luoda luettelon.
--   Määritä mitä tuotteita työntekijät voivat tilata. Voit näyttää tai piilottaa luettelon solmun tiettyjen tuotteiden tai voit näyttää tai piilottaa solmun kaikki tuotteet.
+-   Määritä mitä tuotteita työntekijät voivat tilata. Voit näyttää tai piilottaa tietyt tuotteet luettelosolmussa tai näyttää tai piilottaa kaikki solmun tuotteet.
 -   Määritä vaadittavien tuotteiden hankintaluetteloidenmäärä. Tuotteiden hankintaluettelon käyttöoikeus määritellään luettelon käytäntösäännössä, jonka konfiguroit yritykselle ja toimintayksikölle, johon työntekijä on liitetty.
 
 Monet tekijät määrittävät, mitä tuotteita työntekijät voivat tilata ja mitä hankintaluokkia he voivat käyttää ostoehdotuksia tehdessään:
@@ -52,7 +55,7 @@ Seuraavassa taulukossa kuvataan tehtävät, jotka on suoritettava ennen kuin ost
 ## <a name="setting-up-a-catalog"></a>Luettelon määrittäminen
 Kun edellytykset täyttyvät, voit määrittää luettelot. Voit luoda joko yhden luettelon koko organisaation käyttöön tai useita luetteloita organisaation eri osastojen käyttöön. Jos luot yhden luettelon koko organisaation käyttöön, luettelon käyttöoikeudet määräytyvät hankintojen käytäntösäännön mukaan.  
 
-Luettelo määrittää, mitä tuotteita on käytettävissä ostoehdotusten luonnin yhteydessä, mutta lisärajoituksia voi ottaa käyttöön luokan käyttöoikeuksia koskevien käytäntösääntöjen avulla. Koska luettelon solmut ovat hankintaluokkia, ne voidaan estää luokan käyttöoikeuksia koskevalla käytäntösäännöllä. Tässä tapauksessa luokan tuotteet eivät ole käytettävissä työntekijöiden ostoehdotusten käyttäminen. Voit määrittää sääntöjä **ostokäytäntöihin** sivulla. Seuraavassa taulukossa kuvataan tehtävät, jotka on suoritettava luettelon määrittämiseksi.
+Luettelo määrittää, mitä tuotteita on käytettävissä ostoehdotusten luonnin yhteydessä, mutta lisärajoituksia voi ottaa käyttöön luokan käyttöoikeuksia koskevien käytäntösääntöjen avulla. Koska luettelon solmut ovat hankintaluokkia, ne voidaan estää luokan käyttöoikeuksia koskevalla käytäntösäännöllä. Tässä tapauksessa luokan tuotteet eivät ole työntekijöiden käytettävissä ostoehdotuksissa. Voit määrittää luokkien käyttöoikeuksien käytäntösääntöjä **Ostokäytännöt**-sivulla. Seuraavassa taulukossa kuvataan tehtävät, jotka on suoritettava luettelon määrittämiseksi.
 
 | Tehtävä                                                   | Rooli             | Kuvaus                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,6 +73,8 @@ Päivitykset julkaistaan automaattisesti tai manuaalisesti riippuen asetuksesta,
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Määritä hankintaluokkahierarkia (tehtävän guide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Määritä hankintaluokkahierarkia (tehtävän ohjaus)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+
+
 
 

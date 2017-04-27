@@ -1,6 +1,6 @@
 ---
 title: "Määritä tuoterakenneversio"
-description: "Aikana Kysynnän hajottaminen, jos nimikkeellä oletusarvoinen tilaustyyppi tuotannon, suunnitteluohjelma etsii kelvollisen tuoterakenneversion toimipaikan perusteella."
+description: "Jos nimikkeen suunniteltuna oletustilaustyyppinä on kysynnän hajottamisen aikana Tuotanto, suunnitteluohjelma etsii kelvollisen tuoterakenneversion toimipaikan perusteella."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="determine-the-bom-version"></a>Määritä tuoterakenneversio
 
-Aikana Kysynnän hajottaminen, jos nimikkeellä oletusarvoinen tilaustyyppi tuotannon, suunnitteluohjelma etsii kelvollisen tuoterakenneversion toimipaikan perusteella. 
+[!include[banner](../includes/banner.md)]
+
+
+Jos nimikkeen suunniteltuna oletustilaustyyppinä on kysynnän hajottamisen aikana Tuotanto, suunnitteluohjelma etsii kelvollisen tuoterakenneversion toimipaikan perusteella. 
 
 Toimipaikan dimensio on aina tiedossa. Se ilmoitetaan kysyntätapahtumassa. Seuraavan prosessin avulla määritetään käytettävä tuoterakenneversio:
 
@@ -38,6 +41,8 @@ Toimipaikan dimensio on aina tiedossa. Se ilmoitetaan kysyntätapahtumassa. Seur
 -   Jos käytettävissä ei ole yleistä tuoterakenneversiota, kysynnän hajottaminen keskeytyy.
 
 Kaikkien kelvollisten toimipaikkakohtaisten tai yleisten tuoterakenneversioiden on täytettävä tarvittavat päivämäärä- ja määräehdot.
+
+
 
 
 

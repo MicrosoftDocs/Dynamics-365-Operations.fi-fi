@@ -1,6 +1,6 @@
 ---
 title: "Työn komponenttien määrittäminen"
-description: "Tässä aiheessa kuvataan käsitteellisiä elementit työ voi olla ja antaa esimerkkejä siitä, miten voit käyttää niitä osia organisaatiossa."
+description: "Tässä aiheessa kuvataan käsitteellisiä elementtejä, joita työssä voi olla ja annetaan esimerkkejä siitä, miten voit käyttää näitä elementtejä organisaatiossasi."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,36 +27,39 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="setting-up-the-components-of-a-job"></a>Työn komponenttien määrittäminen
 
-Tässä aiheessa kuvataan käsitteellisiä elementit työ voi olla ja antaa esimerkkejä siitä, miten voit käyttää niitä osia organisaatiossa. 
+[!include[banner](includes/banner.md)]
 
-Ennen kuin voit luoda töitä, joitakin tietoja on määritettävä. Voit luoda projektin, jonka nimi. Kuitenkin mukaan lukien lisätiedot, kuten Tehtävänimike, annat oletusarvot toimilla, jotka on liitetty työ. Lisäksi joitakin tietoja, jotka syötetään avulla voidaan suodattaa kompensaatiosuunnitelmia tiettyihin töihin. Jos haluat määrittää kelpoisuus, jonka avulla voit suodattaa kompensaatiosuunnitelmia tietyn työn, olisi määritettävä työtehtävät ja työtyypit ennen töitä. Ottaa nämä oletusarvot on käytettävissä, säästät aikaa, kun lisäät toimia työn. 
 
-Työtä koskevat tiedot, kuten ammatti, tyyppi ja funktio, ovat tehokkaan päivämäärä. Luoda työtä tänään, mutta älä lisää näitä tietoja myöhemmin, ja sitten luontipäivämäärä työtä katsomalla, jos nämä tiedot eivät näy. Siksi kannattaa luoda joitakin tietoja tästä ennen sitä edellyttävät. Tällä tavalla voit lisätä tietoja uusia töitä niitä luotaessa.
+Tässä aiheessa kuvataan käsitteellisiä elementtejä, joita työssä voi olla ja annetaan esimerkkejä siitä, miten voit käyttää näitä elementtejä organisaatiossasi. 
+
+Ennen kuin voit luoda uusia töitä, sinun pitää määrittää joitakin viitetietoja. Voit luoda työn, jolla on vain nimi. Kuitenkin antamalla lisätiedot, kuten tehtävänimike, annat oletusarvot toimille, jotka on määritetty työhön. Lisäksi joitakin antamiasi tietoja voidaan käyttää suodattamaan kompensaatiosuunnitelmia tiettyihin töihin. Jos haluat määrittää oikeutuksen, jota voit käyttää suodattamaan kompensaatiosuunnitelmia tiettyyn työhön, sinun on määritettävä työtehtävät ja työtyypit ennen töiden määrittämistä. Kun nämä oletusarvot on käytettävissä, säästät aikaa, kun lisäät toimia työhön. 
+
+Jotkin työtä koskevat tiedot, kuten ammattinimike, tyyppi ja toiminto, ovat päivämääräsidonnaisia. Jos luot työn tänään, mutta lisäät näitä tietoja vasta myöhemmin, ja sitten katsot työtä luontipäivämäärän suhteen, nämä tiedot eivät näy. Siksi kannattaa luoda joitakin näitä viitetietoja ennen kuin niitä vaaditaan. Tällä tavalla voit lisätä tiedot uusiin töihin niitä luotaessa.
 
 ## <a name="job-titles"></a>Ammattinimikkeet
 Ennen kuin voit luoda töitä, on määritettävä kyseisten töiden otsikot. Toimet perivät ammattinimikkeet töiltä, joihin toimet liittyvät. 
 
-Ylläpidä ammattinimikkeitä käyttäen **otsikoiden** sivu, jonka voit avata käyttämällä Etsi-toimintoa. Käyttöön ** otsikot ** kirjoittaa otsikoita, joita aiot käyttää Projektit-sivulla.
+Ylläpidä ammattinimikkeitä käyttäen **Tittelit**-sivua, jonka voit avata käyttämällä hakutoimintoa. Anna **Tittelit **-sivulla tittelit, joita aiot käyttää töihisi.
 
 ## <a name="job-types"></a>Työtyypit
-Työlajit avulla voit ryhmitellä luokkiin vastaavia töitä. Tyypit eivät ole pakollisia. Kuitenkin jos aiot käyttää työtyyppejä, kun määrität oikeutussäännöt kompensaationhallintaan, sinun tulee määrittää työtyypit ennen töiden määrittämistä. Työlajit ovat täysipäiväisiä ja osa-aikaisen tai maksettava palkka ja hourly. Voit säilyttää käyttämällä työtyyppejä **työlajit** sivulla. - **Työlajit** nimi ja lyhyt kuvaus työn tyyppi-sivulta. - **Vapauttaa tilaa** jokin seuraavista asetuksista ja määritä käyvän työn Standards Act (FLSA) vapauttaa tilan työt, joilla on tämä työlaji-kenttään:
+Työtyyppien avulla voi luokitella samankaltaisia töitä. Työtyypit eivät ole pakollisia. Kuitenkin jos aiot käyttää työtyyppejä, kun määrität oikeutussäännöt kompensaationhallintaan, sinun tulee määrittää työtyypit ennen töiden määrittämistä. Työtyypit ovat: kokopäiväinen ja osa-aikainen sekä kuukausipalkka tai tuntipalkka. Voit ylläpitää työtyyppejä **Työtyypit**-sivulla. Anna **Työtyypit**-sivulla työtyypin nimi ja lyhyt kuvaus. Valitse **Vapautustila**-kentässä jokin seuraavista asetuksista ja ilmaistaksesi Fair Labor Standards Act (FLSA) -vapautustilan tämän työtyypin töille:
 
--   **Vapauttaa** – töiden on vapautettu ylityötä FLSA kohdassa.
--   **Ei vapautusta** – työt eivät ole ylitöitä FLSA mukaisesti vapautettu.
--   **Ei koske** – FLSA kattavuus ei ole tarpeellinen.
+-   **Vapautus** – Työt on vapautettu ylitöistä FLSA-säädösten mukaisesti.
+-   **Ei vapautusta** – Töitä ei ole vapautettu ylitöistä FLSA-säädösten mukaisesti.
+-   **Ei koske** – FLSA-kattavuus ei ole käytössä.
 
 ## <a name="job-functions"></a>Työtehtävät
-Työn liitoskohtia kuvaavat toiminnalliset luokat korkean tason ja korkean tason tehtävät liittyvät. Työtehtävät eivät ole pakollisia. Voit käyttää työtehtäviä yhdessä työtyyppien, voit suodattaa kompensaatiosuunnitelmia tiettyihin töihin. Voit liittää työtehtävät ja työtyypit kompensaatiosuunnitelmiin määrittämällä oikeutussääntöjä **oikeutussääntöjä** sivulla. Sitten voit liittää kompensaatiosuunnitelmaan, jotka koskevat tietyn työn tyyppi ja työtehtävä, jonka olet määritellyt oikeutussäännön kautta yhdistelmä Tasoryhmää. (Nämä toiminnot ovat sekä kiinteiden kompensaatiosuunnitelmien muuttuvia kompensaatiosuunnitelmia.) Kuitenkin jos aiot käyttää työtehtäviä, kun määrität Kompensaationhallinnan oikeutussäännöt, olisi määritettävä työtehtäviä ennen töitä. Seuraavassa taulukossa on joitakin esimerkkejä työtehtäviä.
+Työtehtävät kuvaavat toiminnalliset luokat korkealla tasolla ja yhdistävät korkean tason velvollisuudet. Työtehtävät eivät ole pakollisia. Voit käyttää työtehtäviä yhdessä työtyyppien kanssa suodattaaksesi kompensaatiosuunnitelmia tiettyihin töihin. Voit liittää työtehtävät ja työtyypit kompensaatiosuunnitelmiin määrittämällä oikeutussäännöt **Oikeutussäännöt**-sivulla. Sitten voit liittää kompensaatiosuunnitelmaan tasojoukon, jota käytetään tietyssä oikeutussäännön kautta määritetyssä työtyypin ja -tehtävän yhdistelmässä. (Nämä ominaisuudet koskevat sekä kiinteitä kompensaatiosuunnitelmia että muuttuvia kompensaatiosuunnitelmia). Jos kuitenkin aiot käyttää työtehtäviä, kun määrität oikeutussäännöt kompensaationhallinnalle, sinun tulee määrittää työtehtävät ennen kuin määrität työt. Seuraavassa taulukossa on joitakin esimerkkejä työtehtävistä.
 
 | Työ           | Työtehtävä         |
 |---------------|----------------------|
-| Myyntipäällikkö | Puolivälin tason hallinta    |
-| Kirjanpitäjä    | Asiantuntijat        |
+| Myyntipäällikkö | Keskijohdon päällikkö    |
+| Kirjanpitäjä    | Ammattilaiset        |
 
-Voit säilyttää käyttämällä työtehtäviä **työtehtävien** sivulla. - **Työtehtävien** sivulla, kirjoita tunnus ja lyhyt kuvaus työtehtävän.
+Voit ylläpitää työtehtäviä **Työtehtävät**-sivulla. Anna **Työtehtävät**-sivulla työtehtävän tunnistekoodi ja lyhyt kuvaus.
 
 ## <a name="job-tasks"></a>Työtehtävät
-Työtehtävät kuvataan perustehtäviä, että työntekijällä, joka on sellaisessa asennossa, työn on valmis. Saman tehtävän työn voidaan lisätä useita töitä, ja paikat, joissa käytetään projektitehtävät työt. Seuraavassa taulukossa on esimerkkejä työn tehtäviä.
+Työtehtävät kuvaavat kyseisessä toimessa toimivan työntekijän perustehtäviä. Sama työtehtävä voidaan lisätä useisiin töihin, ja sellaisten töiden toimiin, jotka käyttävät näitä työtehtäviä. Seuraavassa taulukossa on joitakin esimerkkejä työtehtävistä.
 
 <table>
 <thead>
@@ -69,20 +72,22 @@ Työtehtävät kuvataan perustehtäviä, että työntekijällä, joka on sellais
 <tr class="odd">
 <td>Myyntipäällikkö</td>
 <td><ul>
-<li><strong>Perf-Tarkista</strong> – arvioi jokaisen myyjän työn suorituskykyä.</li>
-<li><strong>Abs-Tarkista</strong> – Hyväksy tai Hylkää poissaolopyynnöt tai rekisteröintien kunkin myyjän.</li>
+<li><strong>Suorituskykytarkistus</strong> – Arvioi jokaisen myyjän suorituskykyä.</li>
+<li><strong>Poissaolotarkistus</strong> – Hyväksy tai hylkää kunkin myyjän poissaolopyynnöt tai -rekisteröinnit.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Kirjanpitäjä</td>
-<td><strong>FIN-raportti</strong> – esittää viikoittain tilinpäätökset rahoitusjohtaja.</td>
+<td><strong>TAL-raportti</strong> – Esitä viikoittaiset talousraportit talousjohtajalle.</td>
 </tr>
 </tbody>
 </table>
 
-Voit säilyttää projektitehtäviä käyttämällä **projektin tehtävien** sivulla. - **Projektitehtävien** sivulla, kirjoita nimi ja projektitehtävän kuvaus. - **Huomaa** kenttään, voit halutessasi kirjoittaa lisätietoja. Muistiinpanot voi päivittää muuttamatta huomauttaa, että olet kirjoittanut tähän työlle.
+Voit ylläpitää työtehtäviä **Työtehtävät**-sivulla. Anna **Työtehtävät**-sivulla työtehtävän nimi ja lyhyt kuvaus. Voit myös lisätä lisätietoja **Huomautus**-kenttään. Muistiinpanoja voi päivittää tietylle työlle muuttamatta tähän kirjoitettuja muistiinpanoja.
 
 ## <a name="areas-of-responsibility"></a>Vastuualueet
-Käytetään osoittamaan työroolien, prosesseja ja tuotteita, jotka ovat vastuussa oleva työntekijä, joka on sellaisessa asennossa, työn vastuualueet. Esimerkiksi työn, jonka nimi on "Kirjanpitäjä", yksi vastuualue voi olla "Rahoitus tuotteen A. raportointi" Ylläpidä vastuualueita avulla **vastuualueet** sivulle, jossa voit etsiä käyttämällä Etsi-toimintoa. - **Vastuualueet** sivulla, kirjoita nimi ja kuvaus vastuualueen. - **Huomaa** kenttään, voit halutessasi kirjoittaa lisätietoja. Muistiinpanot voi päivittää muuttamatta huomauttaa, että olet kirjoittanut tähän työlle.
+Vastuualueiden avulla voi osoittaa tietyssä toimessa toimivan työntekijän vastuulla olevat työroolit, prosessit ja tuotteet. Esimerkiksi Kirjanpitäjä-toimessa vastuualue voi olla Tuotteen A talousraportointi. Ylläpidä vastuualueita **Vastuualueet**-sivulla, jonka voit etsiä käyttämällä hakutoimintoa. Anna **Vastuualueet**-sivulla vastuun nimi ja lyhyt kuvaus. Voit myös lisätä lisätietoja **Huomautus**-kenttään. Muistiinpanoja voi päivittää tietylle työlle muuttamatta tähän kirjoitettuja muistiinpanoja.
+
+
 
 

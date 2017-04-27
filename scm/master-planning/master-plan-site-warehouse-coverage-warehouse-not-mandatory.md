@@ -1,5 +1,5 @@
 ---
-title: "Pääsuunnittelun toimipaikan ja varaston kattavuutta varten, varasto ei pakollinen"
+title: "Pääsuunnittelu – toimipaikan ja varaston kattavuus, varasto ei pakollinen"
 description: "Tässä aiheessa kuvataan, miten suunnitellaan nimike, jolla on toimipaikka ja varasto kattavuusdimensiona. Varastodimensio ei ole pakollinen."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a>Pääsuunnittelun toimipaikan ja varaston kattavuutta varten, varasto ei pakollinen
+# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a>Pääsuunnittelu – toimipaikan ja varaston kattavuus, varasto ei pakollinen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä aiheessa kuvataan, miten suunnitellaan nimike, jolla on toimipaikka ja varasto kattavuusdimensiona. Varastodimensio ei ole pakollinen.
 
@@ -38,10 +41,10 @@ Tämä pääsuunnitteluskenaario sisältää seuraavat ehdot:
 -   Toimipaikan ja varaston dimensiot on määritetty kattavuuden suunnittelua varten. Myös muita dimensioita voidaan määrittää kattavuuden suunnittelua varten. Multisite-toiminnot eivät kuitenkaan vaikuta niihin.
 
 Seuraava kuva osoittaa, miten pääsuunnittelu etenee. Kuvassa viitataan seuraaviin parametreihin:
--   Varaston asetukseksi on määritetty Manuaalinen. Valitse **Inventory management &gt;asennus &gt;varastoerittelyä &gt;varastot**. Tarkista **Pääsuunnittelu**-pikavälilehden **Manuaalinen**-kenttä.
--   Nimikkeen kattavuus on määritetty nimikkeelle. Valitse **tuotetietojen hallinta &gt;tuotteita&gt; vapautetut tuotteet**. Valitsee kohteen ja sitten toimintoruudun,- **suunnitelma** -välilehdessä **nimikkeen kattavuus**.
--   Varastolle on määritetty täydennyssuhteet. Valitse **Inventory management &gt;asennus &gt;varastoerittelyä &gt;varastot**. Tarkista **Pääsuunnittelu**-pikavälilehdessä **Päävarasto**-kenttäryhmä.
--   Oletustilauksen tyypiksi on määritetty Tuotanto, Ostotilaus tai Kanban. Valitse **tuotetietojen hallinta &gt;tuotteita&gt; vapautetut tuotteet**. Valitsee kohteen ja sitten toimintoruudun,- **suunnitelma** -välilehdessä **tilauksen oletusasetukset**. Tarkista **Tilauksen oletusasetukset** -lomakkeessa **Oletusarvoinen tilaustyyppi**.
+-   Varaston asetukseksi on määritetty Manuaalinen. Valitse **Inventoinnin- ja varastonhallinta &gt; Asetukset &gt; Varastoerittely &gt; Varastot** Tarkista **Pääsuunnittelu**-pikavälilehden **Manuaalinen**-kenttä.
+-   Nimikkeen kattavuus on määritetty nimikkeelle. Valitse **Tuotetietojen hallinta &gt; Tuotteet &gt; Vapautetut tuotteet**. Valitse ensin nimike ja sitten toimintoruudun **Suunnittelu**-välilehdessä **Nimikkeen kattavuus**.
+-   Varastolle on määritetty täydennyssuhteet. Valitse **Inventoinnin- ja varastonhallinta &gt; Asetukset &gt; Varastoerittely &gt; Varastot** Tarkista **Pääsuunnittelu**-pikavälilehdessä **Päävarasto**-kenttäryhmä.
+-   Oletustilauksen tyypiksi on määritetty Tuotanto, Ostotilaus tai Kanban. Valitse **Tuotetietojen hallinta &gt; Tuotteet &gt; Vapautetut tuotteet**. Valitse ensin nimike ja sitten toimintoruudun **Suunnittelu**-välilehdessä **Tilauksen oletusasetukset**. Tarkista **Tilauksen oletusasetukset** -lomakkeessa **Oletusarvoinen tilaustyyppi**.
 
 ![Toimipaikan ja varaston kysyntä, ei varastoa](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousenotmandatory.jpg)
 
@@ -53,7 +56,7 @@ Seuraava kuva osoittaa, miten pääsuunnittelu etenee. Kuvassa viitataan seuraav
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Pääsuunnittelu ja multisite-toiminnot](master-plan-multisite-functionality.md)
 
 [Pääsuunnittelu – sivuston ja varaston kattavuus, varasto pakollinen](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
@@ -62,5 +65,7 @@ Seuraava kuva osoittaa, miten pääsuunnittelu etenee. Kuvassa viitataan seuraav
 [Pääsuunnittelu – sivuston kattavuus, varasto ei pakollinen](master-plan-site-coverage-warehouse-not-mandatory.md)
 
 [Pääsuunnittelu – tuoterakenneversion määrittäminen](master-plan-bom-version-determined.md)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: Puhelinpalvelun luettelot
-description: "Tässä artikkelissa kuvataan Microsoft Dynamics-365 toimintojen luettelot puhelun center liittyvät toiminnot."
+description: "Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Operationsin luetteloiden puhelinkeskusta koskevat toiminnot."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16231
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.region: global
@@ -28,14 +28,19 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="call-center-catalogs"></a>Puhelinpalvelun luettelot
 
-Tässä artikkelissa kuvataan Microsoft Dynamics-365 toimintojen luettelot puhelun center liittyvät toiminnot.
+[!include[banner](includes/banner.md)]
 
-Puhelinkeskuksessa voit käyttää tuote-esitteitä tunnistaaksesi tuotteet, joita haluat tarjota asiakkaille. Puhelinkeskukset käyttävät yleensä tulostettuja luetteloita. Suunnittelun ja tuotannon tulostetun luettelon käsitellään Dynamics 365 toimintojen ulkopuolelle. Voit kuitenkin luoda ja tallentaa digitaalisessa muodossa kuvaston vähittäiskaupan ja kaupankäynnin toimintoja varten 365 Dynamics käyttämällä samaa määrittäminen online vähittäiskaupan luettelot käyttävät sivut. Ennen kuin voit luoda luettelon, sinun on asetettava tuotevalikoimat ja määritettävä valikoimat puhelinkeskukselle. Lisäät sitten tuotteet luetteloon valitsemalla tuotteet näistä valikoimista. Kun tuotteet on lisätty luetteloon ja luettelo on valmis, sen tiedot on varmennettava. Tämän jälkeen sinun on lähetettävä luettelo arvioitaviksi ja hyväksyttäviksi. Kun luettelo on hyväksytty, se voidaan julkaista. Kun puhelinkeskusluettelo luodaan, voit ottaa tilannevedoksen luettelon tiedoista luettelon julkaisuhetkellä. Tilannevedostoiminto mahdollistaa tietyn luetteloversion käyttämisen, vaikka luetteloa muutetaan ja päivitetään myöhemmin. Puhelinkeskuksen luettelot voidaan määrittää myös sisältämään seuraavat valinnaiset toiminnot:
+
+Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Operationsin luetteloiden puhelinkeskusta koskevat toiminnot.
+
+Puhelinkeskuksessa voit käyttää tuote-esitteitä tunnistaaksesi tuotteet, joita haluat tarjota asiakkaille. Puhelinkeskukset käyttävät yleensä tulostettuja luetteloita. Tulostetun luettelon suunnittelu ja tuotanto käsitellään Dynamics 365 for Operationsin ulkopuolella. Voit kuitenkin luoda ja tallentaa luettelon digitaalisessa muodossa Dynamics 365 for Operationsin Vähittäismyynti ja kauppa -osiossa käyttämällä samoja sivuja, joita käytät verkkoluetteloiden määrittämiseen. Ennen kuin voit luoda luettelon, sinun on asetettava tuotevalikoimat ja määritettävä valikoimat puhelinkeskukselle. Lisäät sitten tuotteet luetteloon valitsemalla tuotteet näistä valikoimista. Kun tuotteet on lisätty luetteloon ja luettelo on valmis, sen tiedot on varmennettava. Tämän jälkeen sinun on lähetettävä luettelo arvioitaviksi ja hyväksyttäviksi. Kun luettelo on hyväksytty, se voidaan julkaista. Kun puhelinkeskusluettelo luodaan, voit ottaa tilannevedoksen luettelon tiedoista luettelon julkaisuhetkellä. Tilannevedostoiminto mahdollistaa tietyn luetteloversion käyttämisen, vaikka luetteloa muutetaan ja päivitetään myöhemmin. Puhelinkeskuksen luettelot voidaan määrittää myös sisältämään seuraavat valinnaiset toiminnot:
 
 -   **Lähdekoodit** – Lähdekoodeja käytetään asiakkailta tiettyihin luettelopostituksiin saatujen vastausten seuraamiseen.
 -   **Ilmaiset tuotteet** – Tuotteet, joita voidaan sisällyttää asiakkaan tilaukseen ilman lisämaksua. Nämä tuotteet lisätään tilaukseen automaattisesti, kun luettelon lähdekoodi kirjoitetaan tilaukseen.
 -   **Käsikirjoitukset** – Käsikirjoitukset ovat tekstejä, joita puhelinpalvelun työntekijä lukee asiakkaalle, kun myyntitilaus luodaan. Komentosarjat voivat sisältää tervehdyksiä tai ostoehdotuksia.
 -   **Sivun asettelu** – Sivun asettelussa määritetään tuotteiden asettelun sivulla painetussa luettelossa. Näitä tietoja käytetään luettelon alueanalyysiraportissa.
+
+
 
 
 

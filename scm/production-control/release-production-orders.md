@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="release-production-orders"></a>Tuotantotilausten vapauttaminen
 
+[!include[banner](../includes/banner.md)]
+
+
 Vapautettu tuotantotilaus on tilaus, joka on hyväksytty tuotantoon. Termillä "Vapautettu" kuvataan tuotantotilauksen elinkaaren tilaa, jossa tuotantotilaus voidaan suorittaa tuotannossa ja varastoprosesseissa. 
 
 <a name="characteristics-of-the-released-state"></a>Vapautettu-tilan ominaisuudet
@@ -42,7 +45,7 @@ Vapautettu tuotantotilaus on tilaus, joka on hyväksytty tuotantoon. Termillä "
 -   Fyysisesti varatuille materiaaleille luodaan varastotyö, jolla materiaalit kerätään tuotantotilausta varten.
 
 ## <a name="releasing-jobs-to-the-shop-floor"></a>Töiden vapauttaminen tuotantoon
-Kun tuotantotilaus on vapautettu, siihen liittyvät tuotantotyöt ovat näkyvissä ja valmiina rekisteröitäviksi. Toimijat voivat tehdä työn rekisteröinnit, kuten Start ja Stop on suoritettu, joko **työn kortin terminal** sivu tai **työn kortti laitteen** sivulla. Rekisteröity aika ja määrä siirretään automaattisesti rekisteröinnin sivuilta tuotantokirjauskansiot seuratakseen kulutettu aika ja määrä.
+Kun tuotantotilaus on vapautettu, siihen liittyvät tuotantotyöt ovat näkyvissä ja valmiina rekisteröitäviksi. Operaattorit voivat tehdä työrekisteröintejä, kuten Käynnistä, Pysäytä ja Valmistuminen, joko **Työkorttipääte**- tai **Työkorttilaite**-sivulla. Rekisteröity aika ja määrä siirretään automaattisesti rekisteröintisivuilta tuotantokirjauskansioihin, jotta käytettyä aikaa ja määrää voidaan seurata.
 
 ## <a name="route-cards"></a>Reitityskortit
 Reitityskortissa on yhteenveto reitityksen ja työvaiheen asetuksista sekä työvaiheen ja työn ajoitusmenetelmistä saatavista tiedoista.
@@ -54,11 +57,13 @@ Reititystyö luetteloi työvaiheen kunkin työn tarkat tiedot sekä asetus-, kä
 Työkortti luetteloi tietyn työvaiheen yksittäiset työnumerot. Kullakin sivulla näkyy yksi työ. Työt, jotka sisällytetään työkorttiin, sekä niiden arvioidut ajat saadaan reititys- ja työvaiheen asetustiedoista. Voit avata työkortissa **Tuotantokirjauskansion rivit**, **työkortti** -sivun. Operatiivisia resursseja hoitavat henkilöt voivat antaa palautetta tuotantoprosessista. Esimerkiksi kulutustiedoille ja virhemäärille on omat kenttänsä.
 
 ## <a name="warehouse-work-for-raw-material-picking"></a>Raaka-aineiden keräilyn varastotyö
-Raaka-aineiden keräilytyö luodaan vapautuksen yhteydessä. Työ luodaan vain fyysisesti varattu tuotantotilauksen ennen tilauksen julkaistiin materiaalien määrä. Voit luoda fyysisen varastoinnin työn raaka-aineiden keräilyä varten tarvitaan seuraavat asetukset:
+Raaka-aineiden keräilytyö luodaan vapautuksen yhteydessä. Työ luodaan vain sille materiaalimäärälle, joka tuotantotilaukselle oli varattu fyysisesti ennen tilauksen vapauttamista. Raaka-aineiden keräilyn varastotyö luodaan seuraavien asetusten avulla:
 
 -   Raaka-aineiden keräilyn sijaintidirektiivi, joka määrittää, mistä varastosijainnista materiaalit keräillään
 -   Raaka-aineiden aaltomalli, jossa on määritetty varastotyön suorittamisen käytännöt
 -   Tuotannon varastosijainti, joka määrittää, minne materiaalit sijoitetaan.
+
+
 
 
 

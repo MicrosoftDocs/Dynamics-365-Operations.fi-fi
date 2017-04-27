@@ -1,6 +1,6 @@
 ---
-title: "Reittien ja työvaiheiden"
-description: "Tässä aiheessa on tietoja reittejä ja toimintoja. Reitti määritetään tuottavat Tuotevariantin tuotteen tai prosessin. Siinä kuvataan tuotantoprosessin ja siihen järjestykseen, jossa nämä vaiheet on suoritettava jokaisen työvaiheen (työvaihe). Reitti määritetään myös tarvittavat toiminnot resurssien vaadittu Asetusaika- ja Ajoaika, ja miten kustannukset on laskettava kunkin vaiheen."
+title: "Reititykset ja työvaiheet"
+description: "Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista. Reititys määrittää tuotteen tai tuotevariantin tuotantoprosessin. Siinä kuvaillaan tuotantoprosessin jokainen vaihe (työvaihe) ja vaiheiden suoritusjärjestys. Reitityksessä määritetään myös jokaisen vaiheen pakolliset operatiiviset resurssit, vaadittu asetus- ja ajoaika sekä kustannusten laskemistapa."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,216 +26,221 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="routes-and-operations"></a>Reittien ja työvaiheiden
+# <a name="routes-and-operations"></a>Reititykset ja työvaiheet
 
-Tässä aiheessa on tietoja reittejä ja toimintoja. Reitti määritetään tuottavat Tuotevariantin tuotteen tai prosessin. Siinä kuvataan tuotantoprosessin ja siihen järjestykseen, jossa nämä vaiheet on suoritettava jokaisen työvaiheen (työvaihe). Reitti määritetään myös tarvittavat toiminnot resurssien vaadittu Asetusaika- ja Ajoaika, ja miten kustannukset on laskettava kunkin vaiheen.
+[!include[banner](../includes/banner.md)]
+
+
+Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista. Reititys määrittää tuotteen tai tuotevariantin tuotantoprosessin. Siinä kuvaillaan tuotantoprosessin jokainen vaihe (työvaihe) ja vaiheiden suoritusjärjestys. Reitityksessä määritetään myös jokaisen vaiheen pakolliset operatiiviset resurssit, vaadittu asetus- ja ajoaika sekä kustannusten laskemistapa.
 
 <a name="overview"></a>Yleiskuvaus
 --------
 
-Reitti kuvaa, joka vaaditaan, jotta voidaan tuottaa tuotteen tai Tuotevariantin toimintojen järjestyksen. Kunkin operaation osalta reitin määrittää toimintojen resursseihin, joita tarvitaan, aika, joka vaaditaan, jotta voidaan määrittää ja suorittaa toiminnon ja miten kustannukset lasketaan. Voit käyttää samaa reititystä tuottamaan useita tuotteita tai voit määrittää yksilöllisen reitin jokaiselle tuotteelle tai tuotteen variantti. Voi jopa olla useita reittejä samaan tuotteeseen. Tässä tapauksessa, jota käytetään reitin vaihtelee sen mukaan, sellaiset tekijät kuin se määrä, joka on tuotettu. Reitityksen työvaiheiden Microsoft Dynamics-365-määritelmä sisältää neljä eri elementtejä, jotka kuvaavat yhdessä tuotantoprosessin:
+Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaiheiden järjestyksen. Reititys määrittää myös jokaisen työvaiheen vaaditut operatiiviset resurssit, työvaiheen asetukseen ja ajoon kuluvan ajan ja kustannusten laskentatavan. Samaa reititystä voi käyttää useiden tuotteiden tuotannossa. Kullekin tuotteelle tai tuotevariantille voi kuitenkin luoda myös yksilöllisen reitityksen. Tietyllä tuotteella voi myös olla useita reitityksiä. Tällöin käytettävä reititys vaihtelee usein sen mukaan, miten paljon tuotetta valmistetaan. Microsoft Dynamics 365 for Operations -ohjelman reitityksen määritys sisältää neljä seuraavaa erillistä elementtiä, jotka yhdessä muodostavat tuotantoprosessin:
 
--   **Reitin** – määrittää reitin tuotantoprosessin rakenne. Toisin sanoen määrittää työvaiheiden järjestyksen.
--   **Toiminto** – toiminto tunnistaa reitin, nimetty vaiheessa **kokoonpanon**. Sama toiminto saattaa ilmetä useita reittejä ja voi olla eri numeroita.
--   **Työvaihesuhde** – työvaihesuhteen määrittää toiminnon, kuten Asetusaika ja Ajoaika, kustannusluokat, kulutus parametrit ja resurssivaatimukset toiminnalliset ominaisuudet. Työvaihesuhde ottaa operaation vaihtelevat sen mukaan, jota käytetään työvaiheen reitityksen tai tuotteet, jotka on tuotettu toiminnallisia ominaisuuksia.
--   **Reititysversion** – määrittää reititysversion reitin, jota käytetään tuottamaan tuotteen tai tuotteen variantin. Reititysversion käyttöön reittien tuotteet uudelleen tai muuttaa ajan myötä. Ne mahdollistavat myös eri reittejä voidaan käyttää samaa tuotetta. Tässä tapauksessa, jota käytetään reitin vaikuttavat tekijät kuten sijainti tai määrä, joka on tuotettu.
+-   **Reititys** – Reititys määrittää tuotantoprosessin rakenteen. Toisin sanoen se määrittää työvaiheiden järjestyksen.
+-   **Työvaihe** – Työvaihe tunnistaa reitissä nimetyn vaiheen, kuten **kokoonpanon**. Sama työvaihe voi esiintyä useissa reitityksissä ja sillä voi olla useita työvaihenumeroita.
+-   **Työvaihesuhde** – Työvaihesuhde määrittää työvaiheen operatiiviset ominaisuudet, kuten asetus- ja ajoajan, kustannusluokat, kulutuksen parametrit ja resurssivaatimukset. Työvaihesuhteen vuoksi työvaiheen operationaaliset ominaisuudet voivat vaihdella sen mukaan, missä reitityksessä työvaihetta käytetään tai valmistettavien tuotteiden mukaan.
+-   **Reititysversio** – Reititysversio määrittää reitityksen, jota käytetään tuotteen tai tuotevariantin tuottamisessa. Reititysversio mahdollistaa reititysten käyttämisen uudelleen tuotteissa tai reitityksen muuttamisen ajan kuluessa. Reititysversiot mahdollistavat myös eri reititysten käyttämisen saman tuotteen tuottamisessa. Tällöin käytettävä reititys riippuu eri tekijöistä, kuten sijainnista ja tuotettavasta määrästä.
 
 ## <a name="routes"></a>Reititykset
-Reitti kuvaa, jota käytetään tuottamaan tuotteen tai Tuotevariantin toimintojen järjestyksen. Jokaiselle operaatiolle määritetään työvaihenumero ja seuraaja-toimintoa. Toimintojen suoritusjärjestys muodostavat Reittiverkosto, joka voi edustaa ohjattua kaavion, jossa on vähintään yksi ensimmäinen pistettä ja yhden loppupisteen. Dynamics 365 operaatioille reitit on erottaa rakenne tyypin perusteella. Yksinkertainen reitit ja reitti on reittien kahdenlaisia verkoissa. Tuotannonohjauksen parametrit voit määrittää voidaanko käyttää yksinkertaisia reittejä tai onko voidaan käyttää monimutkaisempia reittiverkostoista.
+Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa käytettävien työvaiheiden järjestyksen. Jokaiselle työvaiheelle määritetään työvaihenumero ja seuraava työvaihe. Työvaiheiden järjestys muodostaa reittiverkoston, joka voidaan esittää suunnatussa kaaviossa, jolla on vähintään yksi aloituspiste ja yksi päätepiste. Dynamics 365 for Operations -ohjelmassa reititykset erotetaan toisistaan rakennetyypin perusteella. Reititystyypit ovat yksinkertainen reititys ja reittiverkosto. Tuotannonohjauksen parametrien avulla voi määrittää, ovatko käytössä ainoastaan yksinkertaiset reititykset vai myös monimutkaisemmat reittiverkostot.
 
-### <a name="simple-routes"></a>Yksinkertainen reitit
+### <a name="simple-routes"></a>Yksinkertaiset reititykset
 
-Yksinkertainen reitti on järjestyksessä ja vain yksi reitin aloituspiste on.  
+Yksinkertaiset reititykset ovat peräkkäisiä. Reitityksellä on vain yksi aloituspiste.  
 
-[![Yksinkertainen reitti](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Yksinkertainen reititys](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Jos otat käyttöön vain yksinkertainen reittien tuotannonohjauksen parametrit, työvaiheiden 365 Dynamics luo automaattisesti numerot (10, 20, 30 ja niin edelleen) kun haluat määrittää reitin.
+Jos tuotannonhallinnan parametreissa otetaan käyttöön vain yksinkertaiset reititykset, Dynamics 365 for Operations luo automaattisesti työvaihenumerot (10, 20, 30 jne.) reitityksen määrittämisen yhteydessä.
 
-### <a name="route-networks"></a>Reittiverkostoista
+### <a name="route-networks"></a>Reittiverkostot
 
-Jos otat käyttöön monimutkaisempia reittiverkostoista-tuotannonohjauksen parametrit, voit määrittää reittejä, joissa on useita pisteitä ja toiminnot, jotka voidaan suorittaa samanaikaisesti.  
+Jos tuotannonohjauksen parametreissa otetaan käyttöön monimutkaisempia reittiverkostoja, voit määrittää useita aloituspisteitä ja rinnakkain suoritettavia työvaiheita sisältävät reititykset.  
 
-[![Route network](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Reittiverkosto](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 **Huomautuksia:**
 
--   Jokaisella toiminnolla voi olla vain yksi seuraaja toiminta ja koko reitti pitää loppua yhdellä kertaa.
--   On useita toimintoja, joilla on sama seuraaja toiminto (esimerkiksi toimintojen 30 ja 40 edellisessä kuvassa) todellisuudessa toteutua rinnakkain ei voida taata. Käytettävyys ja kapasiteetti, resurssien asettaa rajoituksia siitä, miten työvaiheet ajoitetaan.
--   Työvaihenumero 0 (nolla) ei voi käyttää. Numero on varattu, ja määritetään, että reitityksen viimeinen työvaihe on seuraaja ei toimintaa.
+-   Jokaisella työvaiheella voi olla vain yksi seuraava työvaihe. Koko reitityksen on loputtava yhteen työvaiheeseen.
+-   Vaikka useilla työvaiheilla olisi sama seuraava työvaihe (esimerkiksi työvaiheet 30 ja 40 edellä olleessa kuvassa), niitä ei välttämättä suoriteta rinnakkain. Resurssien saatavuus ja kapasiteetti saattaa rajoittaa tapaa, joilla työvaiheet ajoitetaan.
+-   Työvaihenumerona ei voi käyttää nollaa (0). Kyseinen numero on varattu. Sitä käytetään määritettäessä tilanne, jossa reitityksen viimeisellä työvaiheella ei ole seuraavaa työvaihetta.
 
-### <a name="parallel-operations"></a>Samanaikaisia työvaiheita
+### <a name="parallel-operations"></a>Rinnakkaiset työvaiheet
 
-Joskus useiden toimintojen resursseihin, joilla on erilaiset ominaisuudet yhdistelmä tarvitaan toiminnon suorittamiseksi. Kokoonpanon operaation saattaa vaatia esimerkiksi koneen ja työkalun yksin valvoa toimintaa aina kahta konetta, yksi työntekijä. Tämä esimerkki voi mallintaa avulla samanaikaisia työvaiheita, joissa yksi toiminto on määritetty ensisijaisen työvaiheen ja muut ovat toissijaisia.  
+Joskus työvaiheen suorittaminen vaatii useita erilaisia ominaisuuksia omaavien operatiivisten resurssien yhdistelmän. Esimerkiksi kokoonpanotyövaihe saattaa vaatia koneen, työkalun ja yhden työvaihetta valvovan työntekijän joka toiselle koneelle. Tämä esimerkki voidaan mallintaa käyttämällä rinnakkaisia työvaiheita, joissa yksi työvaihe on määritetty ensisijaiseksi työvaiheeksi ja muut toissijaisiksi.  
 
-[![Reitti, jossa on ensisijaisia ja toissijaisia työvaiheita](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Reititys, jolla on ensisijainen työvaihe ja toissijaisia työvaiheita](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
-Yleensä ensisijaisen työvaiheen edustaa pullonkaula resurssien ja määrittää suorituksen aikana toissijaisissa työvaiheissa. Kuitenkin ajoituksessa rajallista kapasiteettia, joka liittyy, resurssit, jotka ajoitetaan ensisijaisen työvaiheen sekä toissijaisille työvaiheille on oltava käytettävissä ja vapaata kapasiteettia on samaan aikaan.  
+Yleensä ensisijainen työvaihe edustaa pullonkaularesurssi. Se määrittää toissijaisten työvaiheiden ajoajan. Jos kapasiteetti kuitenkin on rajallinen, sekä ensisijaiselle työvaiheelle että toissijaisille työvaiheille ajoitettujen resurssien on oltava käytettävissä ja niillä on oltava vapaata kapasiteettia samanaikaisesti.  
 
-Ensisijaisen työvaiheen sekä toissijaisille työvaiheille on oltava sama työvaihenumero (edellisessä kuvassa 30).  
+Sekä ensisijaisella työvaiheella että toissijaisilla työvaiheilla on oltava sama työvaihenumero (30 edellä olevassa kuvassa).  
 
-Edellisessä esimerkissä resurssitarve ensisijaiselle työvaiheelle (30) on kone, toissijaiset työvaiheet (30' ja 30'') resurssivaatimuksia on työkalu ja se työntekijä. Viisikymmentä prosentin kuormituksen auttaa takaamaan, että suunniteltu työntekijä yksin voi valvoa kahta konetta samaan aikaan.
+Ensisijaisen työvaiheen (30) resurssivaatimus edellisessä kuvassa on kone, kun taas toissijaisten työvaiheiden (30' ja 30'') resurssivaatimukset ovat työkalu ja työntekijä. 50 prosentin kuormitus auttaa varmistamaan, että ajoitettu työntekijä voi valvoa kahta konetta samanaikaisesti.
 
 ### <a name="approval-of-routes"></a>Reititysten hyväksyntä
 
-Reitti on hyväksyttävä ennen kuin sitä voidaan käyttää suunnitteluun tai tuotannon aikana. Hyväksynnän osoittaa reitin suunnittelu on suoritettu. Sama tuote luovutetaan tai tuotevariantti on vapautettu voi olla hyväksytty useita reittejä. Reitityksen hyväksyminen ilmenee yleensä, kun ensimmäinen asiaa reititysversio on hyväksytty. Jotkin Business skenaariot, reitti ja reititysversio hyväksyminen ovat kuitenkin erillistä toimintaa, joka saattaa liittyä eri prosessien omistajat.  
+Reititys on hyväksyttävä, ennen kuin sitä voidaan käyttää suunnittelu- ja tuotantoprosessissa. Hyväksyntä osoittaa, että reitityksen suunnittelu on valmis. Tietyllä vapautetulla tuotteella tai vapautetulla tuotevariantilla voi olla useita hyväksyttyjä reitityksiä. Yleensä reitityksen hyväksyminen tapahtuu, kun ensimmäinen olennainen reititysversio on hyväksytty. Joissakin liiketoimintaskenaarioissa reitityksen hyväksyntä ja reititysversio ovat kuitenkin erillisiä aktiviteetteja, jotka saattavat liittyä erilaisia prosessin omistajia.  
 
-Kunkin reitin voi olla hyväksytty tai hyväksymätön erikseen. Huomaa kuitenkin, että kun reitti on hyväksymätön, liittyvät reititysversiot ovat myös hyväksymättömiä. Tuotannonohjauksen parametrit voit määrittää onko reitit voi olla hyväksymätön ja onko hyväksyttyjä reitityksiä voi muuttaa.  
+Kukin reititys voidaan hyväksyä erikseen tai jättää hyväksymättä. Huomaa kuitenkin, että jos reititys on hyväksymistä odottava, myös kaikki siihen liittyvät reititysversiot ovat silloin hyväksymättömiä. Tuotannonohjauksen parametreissa määritetään, voivatko reititykset olla hyväksymättömiä ja voiko hyväksyttyjä reitityksiä muuttaa.  
 
-Jos pitää kirjaa, joka hyväksyy kunkin reitin tietueita, voit edellyttää sähköisiä allekirjoituksia reitin hyväksyttäväksi. Käyttäjien on henkilöllisyytensä avulla [sähköisen allekirjoituksen](/dynamics365/operations/organization-administration/electronic-signature-overview).
+Jos ylläpidät lokia, johon tallennetaan kunkin reitityksen hyväksyjä, voit vaatia reitityksen hyväksynnästä sähköiset allekirjoitukset. Käyttäjien on tällöin vahvistettava henkilöllisyytensä [sähköisen allekirjoituksen](/dynamics365/operations/organization-administration/electronic-signature-overview) avulla.
 
 ## <a name="operations"></a>Työvaiheet
-Toiminto on tuotantoprosessin vaiheessa. Dynamics 365 toimintoihin kunkin toiminnon on tunnus ja yksinkertainen kuvaus. Seuraavissa taulukoissa on tyypillisiä esimerkkejä machine shop-toimintoja.
+Työvaihe on tuotantoprosessin vaihe. Dynamics 365 for Operations -ohjelmassa jokaiselle työvaiheelle annetaan tunnus ja yksinkertainen kuvaus. Seuraavissa taulukoissa esitellään tyypilliset esimerkit konepajan työvaiheista.
 
 | Työvaihe  | kuvaus        |
 |------------|--------------------|
-| PipeCut    | Putkien leikkaamiseen       |
-| TIGweld    | Hitsaamalla TIG        |
+| PipeCut    | Putkien leikkaaminen       |
+| TIGweld    | TIG-hitsaus        |
 | JigAssy    | Kiinnittimen kokoonpano       |
-| Tarkastus | Laadun tarkastus |
+| Tarkastus | Laatutarkastus |
 
-Työvaiheen asetusaika ja Ajoaika, resurssivaatimukset, kustannustiedoista ja kulutuksen laskenta toiminnalliset ominaisuudet määritetään työvaihesuhteen. (Lisätietoja työvaiheiden suhteet, katso seuraava osa.)
+Työvaihesuhde määrittää työvaiheen operatiiviset ominaisuudet, kuten asetus- ja ajoajan, resurssivaatimukset, kustannustiedot ja kulutuksen laskennan. (Lisätietoja työvaihesuhteista on seuraavassa osassa.)
 
 ## <a name="operation-relations"></a>Työvaihesuhteet
-Ylläpidetään Työvaihesuhde operaation operatiivisten seuraavat ominaisuudet:
+Työvaiheen seuraavia operationaalisia ominaisuuksia ylläpidetään työvaihesuhteessa:
 
 -   Kustannusluokat
 -   Kulutuksen parametrit
 -   Käsittelyajat
--   Määrät käsitellään
+-   Käsiteltävät määrät
 -   Resurssivaatimukset
 -   Huomautukset ja ohjeet
 
-Voit määrittää useita saman työvaiheen työvaihesuhteet. Kuitenkin jokainen työvaihesuhteen liittyy vain yksi toiminto ja sisältää ominaisuuksia, jotka koskevat reitti, vapautetun tuotteen tai joukko vapautetut tuotteet, jotka liittyvät nimikeryhmä. Tämän vuoksi sama toiminto voidaan useita reittejä, joilla on erilaisia toiminnallisia ominaisuuksia. Lisäksi voit helposti ylläpitää päätiedot Jos käytät vakio-operaatiot, joita on samat toiminnalliset ominaisuudet, jota käytetään reititys- ja tuote, joka valmistetaan riippumatta. Työvaihesuhde laajuus määritellään kautta **Nimikekoodi**, **Nimikkeen suhde**, **lähettää koodin** ja **kierrättää suhde** ominaisuudet seuraavassa taulukossa esitetyllä tavalla.
+Voit määrittää useita työvaihesuhteita samalle työvaiheelle. Kukin työvaihesuhde koskee kuitenkin yhtä tiettyä työvaihetta. Se tallentaa nimikeryhmään liittyvän reitityksen, vapautetun tuotteen tai vapautettujen tuotteiden joukon ominaisuudet. Tämän vuoksi samaa työvaihetta voidaan käyttää useissa reitityksissä, joilla on erilaiset operationaaliset ominaisuudet. Lisäksi päätietojen ylläpitäminen on helpompaa, jos käytössä on vakiotyövaiheet, joilla on samat operationaaliset ominaisuudet riippumatta käytettävästä reitityksestä ja valmistettavasta tuotteesta. Työvaihesuhteen vaikutusalue määritetään **Nimikekoodi**, **Item relation**-, **Reitityskoodi**- ja **Reitityssuhde**-ominaisuuksien avulla seuraavassa taulukossa esitetyllä tavalla.
 
-| Nimikekoodi | Nimikkeen suhde         | Reitityskoodi | Reitityssuhde   | Työvaihesuhde soveltamisala                                                                                                                                                                                                                                                                              |
+| Nimikekoodi | Nimikkeen suhde         | Reitityskoodi | Reitityssuhde   | Työvaihesuhteen vaikutusalue                                                                                                                                                                                                                                                                              |
 |-----------|-----------------------|------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Taulu     | &lt;Nimikkeen tunnus&gt;       | Reititys      | &lt;Reittitunnus&gt; | Käytettäessä reitityksen työvaiheen toiminnalliset ominaisuudet jossa **Tienumero**=&lt;reitin&gt; vapautetun tuotteen jossa **Tavaraerän numero**=&lt;kohteen tunnus&gt;.                                                                                                                        |
-| Taulu     | &lt;Nimikkeen tunnus&gt;       | Kaikki        |                  | Toimintoa käytettäessä vapautetun tuotteen toiminnallisia ominaisuuksia jossa **Tavaraerän numero**=&lt;kohteen tunnus&gt;. Nämä toiminnalliset ominaisuudet koskevat toisin sanoen, kun ei ole reittiä koskevia työvaihesuhteen vapautetun tuotteen.                                     |
-| Ryhmä     | &lt;Nimikeryhmän tunnus&gt; | Reititys      | &lt;Reittitunnus&gt; | Käytettäessä reitityksen työvaiheen toiminnalliset ominaisuudet jossa **Tienumero**=&lt;reitin&gt; tuottamaan vapautetut tuotteet, jotka on liitetty nimikeryhmän &lt;tuotteen tai Ryhmätunnus&gt;, ellei ole erityinen reitin työvaihesuhteen vapautetun tuotteen.                         |
-| Ryhmä     | &lt;Nimikeryhmän tunnus&gt; | Kaikki        |                  | Toiminnon, kun sitä käytetään tuottamaan vapautetut tuotteet, jotka on liitetty nimikeryhmän toiminnallisia ominaisuuksia &lt;tuotteen tai Ryhmätunnus&gt;, ellei ole olemassa erityisiä työvaihesuhteen.                                                                                                  |
-| Kaikki       |                       | Reititys      | &lt;Reittitunnus&gt; | Käytettäessä reitityksen työvaiheen toiminnallisia ominaisuuksia jossa **reitityksen numero**=&lt;reitin&gt;. Toisin sanoen nämä toiminnalliset ominaisuudet koskevat on ei työvaihesuhteen tämän reitin, joka liittyy joko julkaistu tuote, tai se on liitetty nimikeryhmän. |
-| Kaikki       |                       | Kaikki        |                  | Toiminnon toiminnallisia ominaisuuksia. Näitä toiminnallisia ominaisuuksia käytetään, kun ei ole tarkempia työvaihesuhteen.                                                                                                                                                                |
+| Taulu     | &lt;Nimikkeen tunnus&gt;       | Reititys      | &lt;Reittitunnus&gt; | Työvaiheen operationaaliset ominaisuudet, kun niitä käytetään reitityksessä, jonka **reititysnumero**=&lt;reitityksen tunnus&gt; ja valmistetaan vapautettua tuotetta, jonka **nimikenumero**=&lt;nimikkeen tunnus&gt;.                                                                                                                        |
+| Taulu     | &lt;Nimikkeen tunnus&gt;       | Kaikki        |                  | Työvaiheen operationaaliset oletusominaisuudet, kun niitä käytetään reitityksessä, jonka **nimikenumero**=&lt;nimikkeen tunnus&gt;. Toisin sanoen näitä operationaalisia ominaisuuksia käytetään, kun vapautetulla tuotteella ei ole reitityskohtaista työvaihesuhdetta.                                     |
+| Ryhmä     | &lt;Nimikeryhmän tunnus&gt; | Reititys      | &lt;Reittitunnus&gt; | Työvaiheen operationaaliset ominaisuudet, kun sitä käytetään reitityksessä, jossa **reititysnumero**=&lt;reitityksen tunnus&gt;, kun valmistetaan vapautettuja tuotteita, jotka on liitetty nimikeryhmään &lt;nimikeryhmän tunnus&gt;, jos vapautetulla tuotteella ei ole reitityskohtaista työvaihesuhdetta.                         |
+| Ryhmä     | &lt;Nimikeryhmän tunnus&gt; | Kaikki        |                  | Työvaiheen operationaaliset oletusominaisuudet, kun sitä käytetään valmistettaessa vapautettuja tuotteita, jotka on liitetty nimikeryhmään &lt;nimikeryhmän tunnus&gt;, jos yksityiskohtaisempaa työvaihesuhdetta ei ole.                                                                                                  |
+| Kaikki       |                       | Reititys      | &lt;Reittitunnus&gt; | Työvaiheen operationaaliset oletusominaisuudet, kun sitä käytetään reitityksessä, jonka **reititysnumero**=&lt;reitityksen tunnus&gt;. Toisin sanoen näitä operationaalisia ominaisuuksia käytetään, kun tällä reitityksellä, joka on määritetty joko vapautetulle tuotteelle tai siihen liitetylle nimikeryhmälle, ei ole työvaihesuhdetta. |
+| Kaikki       |                       | Kaikki        |                  | Työvaiheen operatiiviset oletusominaisuudet. Näitä operationaalisia ominaisuuksia käytetään, kun yksityiskohtaisempaa työvaihesuhdetta ei ole määritetty.                                                                                                                                                                |
 
-Voit myös määrittää, että työvaihesuhteen liittyy sivuston. Tällä tavalla operaation toiminnallisia ominaisuuksia voi vaihdella, jossa toiminto suoritetaan sijainti (eli sivusto). Konfiguroituja tuotteita voit myös määrittää erilaisia toiminnallisia ominaisuuksia kunkin tuotteen kokoonpanon.  
+Voit määrittää myös toimipaikkakohtaisen työvaihesuhteen. Työvaiheen operationaaliset ominaisuudet voivat siis vaihdella työvaiheen suoritussijainnista (eli toimipaikasta) riippuen. Määritetyille tuotteille voidaan määrittää myös erilaisia operationaalisia ominaisuuksia kullekin tuotekonfiguraatiolle.  
 
-Työvaihesuhteet antaa sinulle joustava määrittäessäsi yhteyttä reittejä. Lisäksi voidaan määrittää oletusasetuksia auttaa vähentämään perustiedot, jotka on säilytettävä. Kuitenkin Tämä joustavuus tarkoittaa myös sitä, että sinun on oltava tietoinen haluat muokata työvaihesuhteen-yhteydessä.  
+Työvaihesuhteiden avulla reititysten määrittäminen on joustavaa. Oletusominaisuuksien määritysmahdollisuuden avulla ylläpidettävien päätietojen määrä vähenee. Joustavuus tarkoittaa kuitenkin myös sitä, että työvaihesuhteen konteksti, jota muokataan, on otettava huomioon.  
 
-**Huomautus:** koska kohden reitityksen työvaiheen työvaihesuhteet toiminnalliset ominaisuudet on tallennettu, kaikki esiintymät samassa työvaiheessa (esimerkiksi kokoonpano) on sama Asetusaika, Ajoaika, resurssivaatimukset ja niin edelleen. Siksi operaation kaksi esiintymää on ilmetä samalla, mutta on eri ajoajat, jos sinun on luotava kaksi erillistä toimintoja, kuten Assembly1 ja Assembly2.
+**Huomautus:** Koska operationaaliset ominaisuudet tallennetaan työvaihesuhteisiin reitityksen ja työvaiheen perusteella, kaikilla saman työvaiheen esiintymillä (esimerkiksi kokoonpanolla) on sama asetus- ja ajoaika, resurssivaatimukset jne. Jos siis työvaiheen kaksi esiintymää löytyvät samasta reitityksestä, mutta niillä on eri ajoajat, niille on luotava kaksi erilaista työvaihetta, kuten esimerkiksi Kokoonpano1 ja Kokoonpano2.
 
-### <a name="modifying-product-specific-routes"></a>Tuotekohtaiset reittien muokkaaminen
+### <a name="modifying-product-specific-routes"></a>Tuotekohtaisten reititysten muokkaaminen
 
-Kun avaat **reitin** sivun **julkaissut tuotteen tiedot** sivun reititysversiot, jotka on liitetty valittuun vapautetun tuotteen näytetään. Tältä osin kunkin operaation osalta Dynamics 365 toiminnoissa näkyy työvaihesuhteen-toiminnalliset ominaisuudet, joka parhaiten vastaa reititysversion. Huomaat, että työvaiheiden luettelo sisältää **Nimikekoodi** ja **lähettää koodin** työvaihesuhteen-ominaisuudet. Tämän vuoksi voit määrittää, mitkä työvaihesuhteen näkyy.  
+Kun avaat **Reititys**-sivun **Vapautetun tuotteen tiedot** -sivulla, sivulla näkyvät valittuun vapautettuun tuotteeseen liittyvät reititysversiot. Tässä kontekstissa Dynamics 365 for Operations näyttää jokaisen työvaiheen operationaaliset ominaisuudet reititysversiota parhaiten vastaavasta työvaihesuhteesta. Työvaiheluettelo sisältää työvaihesuhteen **Nimikekoodi**- ja **Reitityskoodi**-ominaisuudet. Tämän vuoksi määritetään, mikä työvaihesuhde näytetään.  
 
-- **Reitin** -sivulla voit muokata toiminnalliset ominaisuudet toiminnon suorituksen aikana kustannusluokat. Tekemäsi muutokset on tallennettu työvaihe suhteessa, joka vastaa reitityksen ja vapautetun tuotteen, joihin viitataan nykyinen reititysversio. Jos työvaihe suhteessa, joka esitetään ei ole tietyn reitin ja vapautetun tuotteen, ennen kuin muutokset on tallennettu, järjestelmä luo siitä kopion työvaihesuhteen. Tämä *on* reitin ja vapautetun tuotteen. Siksi muutokset eivät vaikuta muiden reittien tai vapautetut tuotteet. Voit tarkistaa, mitkä työvaihesuhteen muokataan useassa **reitin** -sivulla Katso **Nimikekoodi** ja **kierrättää koodi** kentät.  
+**Reititys**-sivulla voi muokata työvaiheen operationaalisia ominaisuuksia, kuten ajoaika ja kustannusluokat. Muutokset tallennetaan työvaihesuhteeseen, joka liittyy reititykseen ja vapautettuun tuotteeseen, johon nykyisessä reititysversiossa viitataan. Jos näytettävä työvaihesuhde ei liity reititykseen ja vapautettuun tuotteeseen, järjestelmä luo työvaihesuhteesta kopion ennen muutosten tallentamista. Tämä kopio *on* liittyy reititykseen ja vapautettuun tuotteeseen. Tämän vuoksi muutokset eivät vaikuta muihin reitityksiin tai vapautettuihin tuotteisiin. Voit varmistaa **Reititys**-sivulla muokattavan työvaihesuhteen **Nimikekoodi**- ja **Reitityskoodi**-kentän avulla.  
 
-Voit luoda myös manuaalisesti työvaihe, joka on tietyn reitin ja vapautetun tuotteen **kopioi suhde ja muokkaa** funktio.  
+Voit myös luoda manuaalisesti työvaiheen, joka liittyy reititykseen ja vapautettuun tuotteeseen, käyttämällä **Kopioi suhde ja muokkaa sitä** -toimintoa.  
 
-**Huomautus:** Jos voit lisätä uuden työvaiheen reititykseen **reitin** -sivun työvaihesuhteen luodaan vain nykyisen julkaistun tuotteen. Siksi reittiä käytetään myös muiden vapautettujen tuotteiden tuottamiseen, jos ei ole sovellettavissa työvaihesuhteen on olemassa näiden vapautettujen tuotteiden ja reitti ei enää voi käyttää vapautetut tuotteet.
+**Huomautus:** Jos lisäät reititykseen uuden työvaiheen **Reititys**-sivulla, työvaihesuhde luodaan vain nykyiselle vapautetulle tuotteelle. Jos siis reititystä käytetään myös muiden vapautettujen tuotteiden valmistamisessa, näille vapautetuille tuotteille ei ole käytettävissä olevaa työvaihesuhdetta eikä reititystä enää käytetä näissä vapautetuissa tuotteissa.
 
-### <a name="maintaining-operation-relations-per-route"></a>Reitityksen työvaiheiden suhteet ylläpito
+### <a name="maintaining-operation-relations-per-route"></a>Työvaihesuhteiden reitityskohtainen ylläpitäminen
 
-Kun avaat **reitittää tiedot** sivun **reitit** sivun kaikkien työvaiheiden suhteet, jotka koskevat valitun reitityksen luettelo näkyy. Siksi voit helposti tarkistaa mitä tuotteita käytetään toiminnalliset ominaisuudet. Voit muokata sekä ominaisuuksien oletusarvot ja tuotekohtaisia ominaisuusarvoja.  
+Kun avaat **Reititystiedot**-sivun **Reititykset**-luettelosivulla, näkyviin tulee kaikkien valittuun reititykseen liittyvien työvaihesuhteiden luettelo. Näin voit helposti tarkistaa eri tuotteissa käytettävät operationaaliset ominaisuudet. Voit muokata sekä oletusominaisuuksien arvoja että tuotekohtaisten ominaisuuksien arvoja.  
 
-Jos lisäät uuden työvaihesuhteen **reitittää tiedot** -sivulla **kierrättää koodi** kentän arvoksi määritetään automaattisesti **reitin**, ja **kierrättää suhde** kentän arvoksi nykyisen reitityksen reititysnumero.
+Jos lisäät uuden työvaihesuhteen **Reititystiedot**-sivulla, **Reitityskoodi**-kentän arvoksi määritetään automaattisesti **Reititys** ja **Reitityssuhde**-kentän arvoksi nykyisen reitityksen reititysnumero.
 
-### <a name="maintaining-operation-relations-per-operation"></a>Ylläpito työvaihetta kohti työvaihesuhteet
+### <a name="maintaining-operation-relations-per-operation"></a>Työvaihesuhteiden työvaihekohtainen ylläpitäminen
 
-- **Toimintojen** sivulla, voit avata **työvaiheiden suhteet** sivun. Tällä sivulla voit muokata kaikkien työvaiheiden suhteet tiettyyn toimintoon. Vaikka voit muokata, joissa on oletusarvot työvaiheiden suhteet.  
+Voit avata **Työvaiheet**-sivulla **Työvaihesuhteet**-sivun. Tällä sivulla voit muokata tietyn työvaiheen kaikkia työvaihesuhteita. Voit muokata myös työvaihesuhteita, jotka sisältävät oletusarvoja.  
 
-Jos yrityksesi käyttää standardin toimintoja ja toiminnalliset parametrit ovat samat kaikkien tuotteiden ja prosessien kautta **työvaiheiden suhteet** sivu on kätevä tapa säilyttää toimintoihin toiminnallisia ominaisuuksia.
+Jos yrityksesi käyttää vakiotyövaiheita ja toimintaparametrit ovat samat kaikilla tuotteilla ja kaikissa prosesseissa, **Työvaihesuhteet**-sivu on kätevä tapa ylläpitää näiden työvaiheiden toiminnallisia ominaisuuksia.
 
-### <a name="applying-operation-relations"></a>Käytetään työvaiheiden suhteet
+### <a name="applying-operation-relations"></a>Työvaihesuhteiden käyttäminen
 
-Joissakin tapauksissa Dynamics 365 toimintoja varten on löydettävä operaation toiminnallisia ominaisuuksia. Esimerkiksi, kun ostotilaus luodaan, jokaista toiminnallisia ominaisuuksia on kopioidaan operation relations tuotantoreitityksen. Näissä tilanteissa toiminnoissa 365 Dynamics etsii halutun toiminnon-suhteet tarkimman-yhdistelmän määritetty yhdistelmä.  
+Joissakin tapauksissa Dynamics 365 for Operations -ohjelman on löydettävä työvaiheen operationaaliset ominaisuudet. Jos esimerkiksi luodaan ostotilaus, kunkin työvaiheen operationaaliset ominaisuudet on kopioitava työvaihesuhteista tuotantoreititykseen. Näissä tilanteissa Dynamics 365 for Operations hakee liittyviä työvaihesuhteita aina yksityiskohtaisimmista yhdistelmistä vähemmän yksityiskohtaisiin yhdistelmiin.  
 
-Kun toimintoja hakujen kannalta työvaihesuhteen vapautetun tuotteen, joka vastaa nimikkeen tunnus vapautetun tuotteen työvaihesuhteen Dynamics 365 on ensisijainen työvaihesuhteen päälle, että osumia nimikeryhmän tunnus. Puolestaan työvaihesuhteen, joka vastaa nimikeryhmän tunnus on ensisijainen oletusarvon työvaihesuhteen. Haku tehdään seuraavassa järjestyksessä:
+Kun Dynamics 365 for Operations hakee vapautetulle tuotteelle soveltuvinta työvaihesuhdetta, työvaihesuhdetta, joka vastaa vapautetun tuotteen nimikkeen tunnusta, pidetään ensisijaisena verrattuna työsuhteeseen, joka vastaa nimikeryhmän tunnusta. Vastaavasti työvaihesuhdetta, joka vastaa nimikeryhmän tunnusta, pidetään ensisijaisena verrattuna oletustyövaihesuhteeseen. Haku tehdään seuraavassa järjestyksessä:
 
-1.  **Nimikkeen koodi**=**taulukko** ja **Nimikkeen suhde**=&lt;kohteen tunnus&gt;
-2.  **Nimikkeen koodi**=**ryhmään** ja **Nimikkeen suhde**=&lt;nimikkeen tunnus&gt;
-3.  **Nimikkeen koodi**=**kaikki**
-4.  **Route koodi**=**reitin** ja **kierrättää suhde**=&lt;reitin&gt;
-5.  **Route koodi**=**kaikki**
-6.  **Kokoonpanon**=&lt;Konfiguraatiotunnus&gt;
-7.  **Configuration**=
-8.  **Sivuston**=&lt;-sivuston tunnus&gt;
-9.  **Site**=
+1.  **Nimikekoodi**=**taulukko** ja **nimikesuhde**=&lt;nimikkeen tunnus&gt;
+2.  **Nimikekoodi**=**ryhmä** ja **nimikesuhde**=&lt;nimikeryhmän tunnus&gt;
+3.  **Nimikekoodi**=**kaikki**
+4.  **Reitityskoodi**=**reititys** ja **reitityssuhde**=&lt;reitityksen tunnus&gt;
+5.  **Reitityskoodi**=**Kaikki**
+6.  **Kokoonpano**=&lt;kokoonpanon tunnus&gt;
+7.  **Kokoonpano**=
+8.  **Toimipaikka**=&lt;toimipaikan tunnus&gt;
+9.  **Toimipaikka**=
 
-Siksi toimintoa tulisi käyttää vain kerran kunkin reitityksen. Jos toiminto tapahtuu samaa reittiä useasti, kaikki esiintymät, että toiminto on sama työvaihesuhteen ja et voi olla eri ominaisuudet (esimerkiksi ajoaikojen) jokaista.
+Tämän vuoksi työvaihetta tulisi käyttää vain kerran kussakin reitityksessä. Jos työvaihe esiintyy samassa reitityksessä useita kertoja, kaikilla työvaiheen esiintymillä on sama työvaihesuhde. Esiintymillä ei voi olla erilaisia ominaisuudet (esimerkiksi ajoaika).
 
 ## <a name="route-versions"></a>Reititysversiot
-Reititysversioita käytetään tuotteiden tuotannon vaihtelujen tai tuotantoprosessin tarkemmin. Ne määrittävät, mitä reititysversioita käytetään, kun yksittäinen vapautettu tuote tai tuotetaan tuotevariantti on vapautettu. Voit määrittää, mitä reititysversioita käytetään vapautetun tuotteen seuraavat rajoitukset:
+Reititysversioita käytetään tuotteiden tuotannossa esiintyvien vaihtelujen huomioonottamiseen tai tuotantoprosessin tarkempaan hallintaan. Ne määrittävät, mitä reititystä käytetään, kun tietty vapautettu tuote tai vapautettu tuotevariantti valmistetaan. Seuraavien rajoitusten avulla voit määrittää, mitä reitityksiä vapautetussa tuotteessa käytetään:
 
--   Tuotteen mitat (koon, värin, tyylin tai kokoonpano)
--   Tuotannon määrä
--   Tuotantosivuston
--   Tuotanto päivämäärä
+-   Tuotedimensiot (koko, väri, tyyli tai kokoonpano)
+-   Tuotantomäärä
+-   Tuotantopaikka
+-   Tuotantopäivämäärä
 
-Kun olet tuottavat tietyn sivuston tietyn määrän tuotteen tai tietyltä ajanjaksolta, voit määrittää oletusarvon reititysversion tiettyä reititysversiota. Huomaa kuitenkin, että vain yhtä aktiivista reittiä voidaan käyttää tietyn vapautetun tuotteen ja määritettyjen rajoitusten.  
+Kun tuotetta valmistetaan tietyssä toimipaikassa, tietty määrä tai tiettynä ajankohtana, voit määrittää oletusreititysversioksi tietyn reititysversion. Huomaa kuitenkin, että annetulle vapautetulle tuotteelle ja annettujen rajoitusten joukolle sallitaan vain yksi aktiivinen reititys.  
 
-Tuotannonohjauksen parametrit voit vaatia voimassaoloaikaa reititysversio aina määritettävä.
+Tuotannonohjauksen parametrien avulla voi määrittää, että reititysversion voimassaoloaika on aina määritettävä.
 
 ### <a name="approval-of-route-versions"></a>Reititysversioiden hyväksyminen
 
-Ennen reititysversion voidaan käyttää suunnitteluun ja valmistusprosessi, se on hyväksyttävä. Kun hyväksyt reititysversion, voit hyväksyä liittyvät reitin. Huomaa kuitenkin, että reititysversio hyväksytään vain, jos Aiheeseen liittyviä reitti on myös hyväksytty.
+Reititysversio on hyväksyttävä, ennen kuin sitä voidaan käyttää suunnittelu- ja tuotantoprosessissa. Voit hyväksyä reititysversion yhteydessä myös liittyvän reitityksen. Huomaa kuitenkin, että reititysversio voidaan hyväksyä vain, jos myös liittyvä versio on hyväksytty.
 
-### <a name="activating-the-default-route-version"></a>Oletus reititysversion aktivoiminen
+### <a name="activating-the-default-route-version"></a>Oletusreititysversion aktivoiminen
 
-Kun reititysversion aktivoiminen, voit nimetä sen, tai käyttää reitin oletusversio, jota Pääsuunnittelu suunnittelu, joita käytetään luotaessa tuotantotilauksia. Voit valita vain yhden aktiivisen reititysversion määritettyjen rajoitusten (piste, sivuston tai määrä). Jos yrität aktivoida versio on ristiriidassa version, joka on jo käytössä, näyttöön tulee virhesanoma. Jotta epäselvä aktivointi, sinun on sitten ristiriidassa versio käytöstä tai muokata reititysversio rajoituksia (yleensä piste).
+Voit määrittää reititysversion aktivoinnin yhteydessä oletusreititysversioksi, jota pääsuunnittelu käyttää tai jota käytetään tuotantotilausten luomisessa. Annetulla rajoitusten (esimerkiksi kausi, toimipaikka tai määrä) joukolla voi olla vain yksi aktiivinen reititysversio. Jos yrität aktivoida version, joka on ristiriidassa aktiivisen version kanssa, näyttöön ilmestyy virhesanoma. Voit estää epäselvän aktivoinnin poistamalla ensin ristiriitainen versio tai muokkaamalla version rajoituksia (yleensä kausi).
 
 ### <a name="electronic-signatures"></a>Sähköiset allekirjoitukset
 
-Jos pitää kirjaa, joka hyväksyy ja Aktivoi reititysversio kunkin tietueita, voit edellyttää sähköisiä allekirjoituksia näille tehtäville. Käyttäjät, joilla on hyväksyä ja aktivoida reititysversiot on henkilöllisyytensä avulla [sähköisen allekirjoituksen](/dynamics365/operations/organization-administration/electronic-signature-overview).
+Jos ylläpidät lokia, johon tallennetaan kunkin reititysversion hyväksyjä ja aktivoija, voit vaatia näistä tehtävistä sähköiset allekirjoitukset. Käyttäjien, jotka hyväksyvät ja aktivoivat reititysversioita, on vahvistettava henkilöllisyys [sähköisen allekirjoituksen](/dynamics365/operations/organization-administration/electronic-signature-overview) avulla.
 
-### <a name="product-change-that-uses-case-management"></a>Tuotteen muutoksen, joka käyttää palvelupyyntöjen hallinta
+### <a name="product-change-that-uses-case-management"></a>Tuotemuutos, joka käyttää tapaustenhallintaa
 
-Tuotteen Muuta kirjainkoko hyväksymistä ja uudet tai muutetut reitit ja reititysversiot aktivointi antaa helppo on yleiskuvaus reitityksen versio rajoituksia. Voit myös hyväksyä ja aktivoida kaikki reitit, jotka liittyvät tietyn muutoksen yhdellä kertaa ja tulokset tapauksessa tuotteen Muuta asiakirjan.
+Uusien tai muuttuneiden reititysten ja reititysversioiden hyväksymisen ja aktivoimisen tuotemallitapaus tarjoaa helpon tavan nähdä reititysversion rajoitukset kokonaisuudessaan. Voit hyväksyä ja aktivoida myös kaikki reititykset, jotka liittyvät tiettyyn yhden työvaiheen muutokseen. Tämän jälkeen voit tallentaa tulokset tuotemuutostapaukseen.
 
-## <a name="maintaining-routes"></a>Reiteillä ylläpidosta
-Business-tarpeidesi mukaan voit ehkä vähentää vaivaa, joita tarvitaan prosessin määritelmiä säilyttämiseksi.
+## <a name="maintaining-routes"></a>Reititysten ylläpitäminen
+Liiketoimintatarpeiden perusteella voit mahdollisesti vähentää työtä, joka vaaditaan prosessimääritysten ylläpitämiseen.
 
-### <a name="making-routes-independent-of-resources"></a>Reittien tekemisen resursseista erillään
+### <a name="making-routes-independent-of-resources"></a>Reittien määrittäminen resursseista riippumattomiksi
 
-Monissa järjestelmissä toimintojen resurssi tai resurssiryhmä tulee suorittaa toiminnon, joka on määritettävä reitin. Kuitenkin Dynamics 365 toimintoja varten, voit määrittää joukon vaatimuksia, jotka operations-resurssin on täytettävä sovellettavat toiminnan. Tämän vuoksi erityistoimia resurssi tai resurssiryhmä, jota käytetään ei tarvitse määritetään kunnes työvaihe ajoitetaan. Tämä toiminto on erityisen hyödyllinen, kun sinulla on useita työntekijöitä tai koneita, jotka voi suorittaa saman toiminnon.  
+Useissa järjestelmissä operatiivinen resurssi tai resurssiryhmä, joka suorittaa työvaiheen, on määritettävä reitityksessä. Dynamics 365 for Operations -ohjelmassa voit kuitenkin määrittää vaatimusjoukon, joka operatiivisten resurssien on täytettävä, jotta niitä voidaan käyttää työvaiheessa. Tämän vuoksi tiettyä operatiivista resurssia tai resurssiryhmää, jota tullaan käyttämään, ei tarvitse määrittää ennen työvaiheen ajoittamista. Tämä toiminto on erityisen hyödyllinen silloin, kun useat työntekijät tai koneet voivat suorittaa saman työvaiheen.  
 
-Esimerkiksi, voit määrittää, että toiminto vaatii toimintoja resurssin **koneen** tyyppi, joka on **Stamping** 20 tonnia ominaisuutta. Aikataulutusmoduuli sitten ratkaisee nämä vaatimukset tiettyihin toimintoihin resurssi tai resurssiryhmä, kun työvaihe ajoitetaan. Voit määrittää juuri näitä vaatimuksia, eikä sitoa tiettyä konetta toimintoa, koska on joustavaa. Lisäksi ylläpito on helpompaa, kun resursseja siirretään tai uusia resursseja on lisätty.  
+Voit määrittää esimerkiksi, että työvaihe vaatii operatiivisen resurssin, jonka tyyppi on **Kone** ja jonka **leimauskapasiteetti** on 20 tonnia. Ajoitusmoduuli ratkaisee nämä vaatimukset tietyn operatiivisen resurssin tai resurssiryhmän osalta, kun työvaihe ajoitetaan. Joustavuus paranee, koska voit määrittää nämä vaatimukset sen sijaan, että työvaihe olisi sidottava tiettyyn koneeseen. Lisäksi ylläpito on helpompaa, kun resursseja siirretään tai uusia resursseja lisätään.  
 
-Saat lisätietoja erityyppisten resurssivaatimukset ja kuinka niitä käytetään työvaiheiden resurssivaatimukset ja [resurssin ominaisuudet](resource-capabilities.md).
+Lisätietoja resurssivaatimusten eri tyypeistä ja niiden käyttämisestä on kohdissa Operatiivisten resurssien vaatimukset ja [Resurssin ominaisuudet](resource-capabilities.md).
 
-### <a name="sharing-routes-across-sites"></a>Toimipaikkojen jakaminen reitit
+### <a name="sharing-routes-across-sites"></a>Reititysten jakaminen toimipaikkojen kesken
 
-Jos samaa tuotetta useita tuotannon luona tuottavat ja tuottavat tuotteen vaiheet ovat samat kaikilla sivustot, voit suunnitella usein jaettu reitin, jota käytetään kaikissa tuotantolaitoksissa. Voit luoda jaetun reitin, älä määritä sivuston itse reitillä. On kuitenkin vielä luotava reititysversio, joka yhdistää jaetun reitin läpi kaikki tuotteen.  
+Jos valmistat samaa tuotetta useassa tuotantopaikassa ja tuotteen valmistusvaiheet ovat samat kaikissa toimipaikoissa, voit usein suunnitella jaetun reitityksen, jota käytetään kaikissa tuotantopaikoissa. Kun luot jaetun reitityksen, älä määritä toimipaikkaa reititykseen. Jaetun reitityksen ja tuotteen toisiinsa liittävä reititysversio on silti luotava jokaisessa toimipaikassa.  
 
-Sinun täytyy myös varmistaa kunkin reitityksen työvaiheen resurssivaatimuksia ei Soita erityistoimia resurssien tai resurssiryhmien, mutta ovat sen sijaan ilmaistaan tarvittavia resursseja ominaispiirteet. Aikataulutusmoduuli voi määrittää tarvittavat toimintojen resursseihin, tuotanto ajoitetaan-sivustosta. Esimerkiksi jos suorituksen aikana pieniä eroja tai jos tietyn työvaiheen asetusaika on toimipaikkakohtainen, voit määrittää nämä tiedot lisäämällä ylimääräisiä työvaihesuhteen sivuston.  
+On myös varmistettava, että reitityksen minkään työvaiheen resurssivaatimukset eivät kutsu tiettyjä operatiivisia resursseja tai resurssiryhmiä. Tämän sijaan on käytettävä vaadittujen resurssien ominaisuuksia. Ajoitusmoduuli pystyy tämän jälkeen liittämään sen toimipaikan soveltuvat operatiiviset resurssit, jonne tuotanto on ajoitettu. Jos esimerkiksi ajoajoissa on pieniä eroja tai tietyn työvaiheen asetusaika on toimipaikkakohtainen, voit määrittää tiedot lisäämällä toimipaikalle uuden työvaihesuhteen.  
 
-Saadaksesi täyden hyödyn eduista jaetun reittejä, kannattaa myös käyttää resurssikulutuksen vastaavan tuoterakenne (BOM). Kun määrität Tuoterakenteen rivin resurssin kulutuksen lippu, varasto ja sijainti, josta tulisi kuluttaa raaka-aineita käytetään monikkoa, työvaihe ajoitetaan-toimintoja resurssien. Vuoksi varastoa ja sijaintia ei tarvitse määrittää vasta, kun tuotanto ajoitetaan. Tällä tavalla voit tehdä sekä Tuoterakenteen ja reitityksen riippumaton fyysisen sijainnin missä tuote on valmistettu.
+Saat kaikki jaettujen reititysten edut käyttöön, kun otat käyttöön myös vastaavien tuoterakenteiden resurssien kulutuksen. Kun resurssien kulutuksen merkinnän tuoterakenneriville, varasto ja sijainti, josta raaka-aineet kulutetaan, johdetaan operatiivisesta resurssista, jolle työvaihe on ajoitettu. Tämän vuoksi varastoa ja sijaintia ei tarvitse määrittää ennen tuotannon todellista ajoittamista. Näin voit tehdä sekä tuoterakenteesta että reitityksestä tuotteen valmistuspaikan fyysisestä sijainnista riippumattoman.
 
-### <a name="standard-operation-relations"></a>Standard työvaihesuhteet
+### <a name="standard-operation-relations"></a>Vakiotyövaihesuhteet
 
-Jos yrityksessä käytetään standardoitua koko tuotannon työvaiheiden ja on vain vähän tai ei lainkaan vaihtelua Asetusaika-, Ajoaika, kulutuslaskentaa, Kustannuslaskenta, ja niin edelleen, voit hyötyä luomasta työvaiheiden suhteet kaikkiin toimintoihin. Tässä tapauksessa välttää työvaiheiden suhteet ovat reitiltä tai julkaissut tuotteen luomiseen.  
+Jos yrityksessä käytetään koko tuotannossa vakiotyövaiheita ja jos asetusajoissa, ajoajassa, kulutuksen laskennassa, kustannusten laskennassa jne. on vain vähän tai ei lainkaan eroja, kannattaa ehkä kaikille työvaiheille luoda oletustyövaihesuhteet. Vältä tällöin niiden työvaihesuhteiden luomista, jotka ovat liittyvät tiettyyn reititykseen tai vapautettuun tuotteeseen.  
 
-Jos myös express resurssivaatimukset taitoja ja ominaisuuksia, ja varmista, että reitit riippumaton sivusto, voit parantaa liiketoimintaprosessien jatkuvaa ylläpitoa pienenä.  
+Jos ilmaiset resurssivaatimukset osaamisalueina ja suorituskykynä ja teet reitityksistä toimipaikoista riippumattomia, liiketoimintaprosessien jatkuvan ylläpidon tarve vähenee.  
 
-Kun käytät tätä lähestymistapaa **työvaiheiden suhteet** sivusta tulee ensisijaiseen kohteeseen ylläpitoon ajoajat ja muita ominaisuuksia.
+Tällöin **Työvaihesuhteet**-sivusta tulee ensisijainen kohde, kun ylläpidät ajoaika ja muita ominaisuuksia.
 
-### <a name="resource-specific-process-times"></a>Resurssikohtaisia prosessiajat
+### <a name="resource-specific-process-times"></a>Resurssikohtaiset prosessiajat
 
-Jos et määritä toiminnon resurssivaatimuksia osana toimintoja resurssin tai resurssiryhmän, käytettävissä olevia resursseja saattaa toimia eri nopeuksilla. Tämän vuoksi aika, joka vaaditaan, jotta voidaan käsitellä toiminto saattaa vaihdella. Voit ratkaista tämän ongelman käyttämällä **kaavan** voit määrittää, miten prosessiaika lasketaan työvaihesuhteen-kenttään. Valittavissa ovat seuraavat vaihtoehdot:
+Jos et määritä operatiivista resurssia tai resurssiryhmää osaksi työvaiheen resurssivaatimuksia, käytettävissä olevat resurssit saattavat toimia eri nopeuksilla. Tämän vuoksi työvaiheen käsittelyyn kuluva aika saattaa vaihdella. Voit ratkaista tämän ongelman määrittämällä työvaihesuhteen **Kaava**-kenttään prosessiajan laskentatavan. Valittavissa ovat seuraavat vaihtoehdot:
 
--   **Vakio** – (oletus-vaihtoehto) laskennassa käytetään vain työvaihesuhteen kentät ja kertoo määritetyllä Ajoaika tilausmäärän mukaan.
--   **Kapasiteetin** – laskentaan sisältyvät **kapasiteetti** kentän toimintojen resurssilta. Aika on siis riippuvainen resurssin. Arvo, joka on määritetty operations-resurssissa on kapasiteetti per tunti. Tämä arvo saadaan kertomalla määrän ja **kerroin** arvon työvaihesuhteen.
--   **Erä** – erän kapasiteetti lasketaan käyttämällä tietoja työvaihesuhteen. Eriä ja siksi käsittelyaika sitten voidaan laskea mukaan tilauksen määrä.
--   **Resurssin erän** – tämä vaihtoehto on periaatteessa sama kuin **erän** vaihtoehto. Laskentaan sisältyvät kuitenkin **erän kapasiteetti** kentän toimintojen resurssilta. Aika on siis riippuvainen resurssin.
+-   **Vakio** – (oletusvalinta) Laskelmassa käytetään vain työvaihesuhteen kenttiä. Määritetty ajoaika kerrotaan tilausmäärällä.
+-   **Kapasiteetti** – Laskenta sisältää operatiivisen resurssin **Kapasiteetti**-kentän. Aika siis riippuu resurssista. Operatiiviselle resurssille määritetty arvo on kapasiteetti tuntia kohti. Tämä arvo kerrotaan tilausmäärällä ja työvaihesuhteen **kertoimen** arvolla.
+-   **Erä** – Erän kapasiteetti lasketaan työvaihesuhteen tietojen avulla. Erien määrä ja prosessiaika voidaan laskea tilausmäärän perusteella.
+-   **Resurssierä** – Tämä vaihtoehto on periaatteessa sama kuin **Erä**-vaihtoehto. Laskenta sisältää kuitenkin operatiivisen resurssin **Eräkapasiteetti**-kentän. Aika siis riippuu resurssista.
 
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Bills of materials and formulas](bill-of-material-bom.md)
+[Tuoterakenteet ja kaavat](bill-of-material-bom.md)
 
-[Cost categories used in production routing](../cost-management/cost-categories-used-production-routings.md)
+[Tuotannon reitityksissä käytettävät kustannusluokat](../cost-management/cost-categories-used-production-routings.md)
 
-[Resource capabilities](resource-capabilities.md)
+[Resurssin ominaisuudet](resource-capabilities.md)
 
-[Electronic signature overview](/dynamics365/operations/organization-administration/electronic-signature-overview)
+[Sähköisten allekirjoitusten yleiskuvaus](/dynamics365/operations/organization-administration/electronic-signature-overview)
+
+
 
 

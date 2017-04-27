@@ -59,5 +59,5 @@ Seuraavat rajoitukset ovat voimassa, kun luot kirjausmääritysten linkkejä:
 -   Voit liittää kirjausmäärityksen mihin tahansa tapahtumatyyppiin, mutta tapahtumatyypin on kuuluttava samaan moduuliin kuin kirjausmääritys. **Tapahtuman kirjausmääritykset** -sivulla näet tapahtumatyypin moduulin.
 
 
-Lisätietoja on ohjeaiheessa [kirjaamisen määritykset esimerkkejä](/general-ledger/example-posting-definitions.md). 
+Lisätietoja on kohdassa [Määritysesimerkkien kirjaaminen](/general-ledger/example-posting-definitions.md). 
 

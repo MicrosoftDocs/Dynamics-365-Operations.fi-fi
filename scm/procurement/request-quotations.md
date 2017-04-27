@@ -1,5 +1,5 @@
 ---
-title: "Tarjouspyyntö (tarjouspyynnöt)"
+title: "Tarjouspyynnöt"
 description: "Tämä artikkeli sisältää yleistietoja tarjouspyynnöistä. Organisaatiot luovat tarjouspyyntöjä silloin, kun niiden on ostettava nimikkeitä tai palveluita, ja halutaan saada kilpailukykyisiä tarjouksia useilta toimittajilta. Tarjouspyynnössä pyydät toimittajilta hinnat ja toimitusaikoja nimikkeiden määrille, jotka määrität. Voit myös pyytää toimittajia määrittämään, liittyykö tarjoukseen satunnaisia kuluja, esimerkiksi lähetyskustannuksia, tai tarjoaako toimittaja alennuksia suurista tilauksista tai toimittajalaskun maksamisesta aikaisin."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Tarjouspyyntö (tarjouspyynnöt)
+# <a name="request-for-quotations-rfqs"></a>Tarjouspyynnöt
+
+[!include[banner](../includes/banner.md)]
+
 
 Tämä artikkeli sisältää yleistietoja tarjouspyynnöistä. Organisaatiot luovat tarjouspyyntöjä silloin, kun niiden on ostettava nimikkeitä tai palveluita, ja halutaan saada kilpailukykyisiä tarjouksia useilta toimittajilta. Tarjouspyynnössä pyydät toimittajilta hinnat ja toimitusaikoja nimikkeiden määrille, jotka määrität. Voit myös pyytää toimittajia määrittämään, liittyykö tarjoukseen satunnaisia kuluja, esimerkiksi lähetyskustannuksia, tai tarjoaako toimittaja alennuksia suurista tilauksista tai toimittajalaskun maksamisesta aikaisin.
 
@@ -37,9 +40,9 @@ Tarjouspyyntöprosessiin sisältyvät seuraavat tehtävät:
 
 Seuraavassa kuvassa on yhteenveto tarjouspyyntöprosessista.  
 
-[![Pyydä tarjous prosessi](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
+[![Tarjouspyyntöprosessi](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
 
-Tarjouspyynnön voi luoda suunnitelluista tilauksista, ostoehdotuksesta tai manuaalisesta kirjauksesta. Luotavaa tarjouspyyntöä kutsutaan tarjouspyyntötapaukseksi, ja se on perusasiakirja, jolla tarjouspyyntö lähetetään kullekin toimittajalle. Kun valmistetaan Tarjouspyynnön tapauksessa ja lisää toimittajia, valitse **lähettää** Tarjouspyyntö ja Tarjouspyynnön tapauksessa kunkin toimittajan Tarjouspyynnön voit lähettää kirjauskansio luodaan. Voit määrittää tulostuksenhallinnan asetuksia lähetystoiminnon raportti tulostaa kunkin toimittajan arkistoon tai lähettää raportti kunkin toimittajan sähköpostiosoite. Lisäksi voit luoda kunkin toimittajan tarjouspyynnön kirjauskansiossa raportin, jonka voit lähettää toimittajalle myöhemmin tai uudelleen. Voit myös määrittää Lähetä-toiminnon luomaan vastauslomakkeen, jonka toimittaja voi täyttää.  
+Tarjouspyynnön voi luoda suunnitelluista tilauksista, ostoehdotuksesta tai manuaalisesta kirjauksesta. Luotavaa tarjouspyyntöä kutsutaan tarjouspyyntötapaukseksi, ja se on perusasiakirja, jolla tarjouspyyntö lähetetään kullekin toimittajalle. Kun olet laatinut tarjouspyyntötapauksen ja lisännyt toimittajat, valitse tarjouspyyntötapahtumassa **Lähetä**, niin tarjouspyynnön kirjauskansio luodaan kullekin toimittajalle, jolle tarjouspyyntö on lähetetty. Voit määrittää Lähetä-toiminnon tulostuksenhallinta-asetukset sen mukaan, haluatko tulostaa kustakin toimittajasta raportin arkistoon vai lähettää raportin kunkin toimittajan sähköpostiosoitteeseen. Lisäksi voit luoda kunkin toimittajan tarjouspyynnön kirjauskansiossa raportin, jonka voit lähettää toimittajalle myöhemmin tai uudelleen. Voit myös määrittää Lähetä-toiminnon luomaan vastauslomakkeen, jonka toimittaja voi täyttää.  
 
 Jos jo lähetettyä tarjouspyyntöä on muokattava, voit lähettää tarjouspyynnön toimittajille uudelleen tehtyäsi tarvittavat muutokset.  
 
@@ -49,18 +52,18 @@ Jos tietylle toimittajalle tarvitaan vastauksen toinen iteraatio, valitse **Tarj
 
 Jos olet lisännyt tarjouspyyntötapahtumaan pisteytysehtoja, tarjouspyyntövastauksessa on pisteytyspaneeli, johon voit lisätä pisteet. Yhteispistemäärä tulee näkyviin, kun vertailet vastauksia **Vertaa vastauksia** -sivulla, jolla voit myös verrata muita vastauksen sisältämiä tietoja, kuten rivihintaa, toimituspäivää ja kokonaishintaa.  
 
-Kun olet valinnut jonkin tarjouksen tai osittaiset tarjoukset, voit hyväksyä ne ja hylätä muut. Järjestelmä luo kirjauskansiot hyväksymisille ja hylkäämisille sekä vastaavat raportit. Ne tulostetaan, arkistoida, ja lähetti tulostuksenhallinnan asetukset. Kun hyväksyt tarjouksensa tai lupauksensa erityiset rivit, sopimus tai osto tilaus luodaan tai päivitetään ostoehdotuksen Tarjouspyynnön ostotyyppi mukaan. Voit luoda haluamistasi vastauksista kauppasopimuksen käytettäväksi myöhemmin huolimatta siitä, oletko hyväksynyt tai hylännyt kyseiset vastaukset.  
+Kun olet valinnut jonkin tarjouksen tai osittaiset tarjoukset, voit hyväksyä ne ja hylätä muut. Järjestelmä luo kirjauskansiot hyväksymisille ja hylkäämisille sekä vastaavat raportit. Nämä tulostetaan, arkistoidaan ja lähetetään tulostuksenhallinta-asetusten mukaisesti. Kun hyväksyt tarjouksen tai tietyt tarjouksen rivit, järjestelmä luo joko ostosopimuksen tai ostotilauksen tai päivittää ostoehdotuksen tarjouspyynnön ostotyypistä riippuen. Voit luoda haluamistasi vastauksista kauppasopimuksen käytettäväksi myöhemmin huolimatta siitä, oletko hyväksynyt tai hylännyt kyseiset vastaukset.  
 
 Tarjouspyynnön tila näkyy sen otsikosta ja riippuu tarjouspyynnön rivien tilasta. Tila ilmaisee tarjouspyynnön käsittelyn laajuuden. Jokaisella tarjouspyynnöllä on tilalle kaksi arvoa: alhaisin ja korkein. Alin tila on minkä tahansa tarjouspyynnön rivin vähiten edistynyt vaihe, ja korkein tila on minkä tahansa tarjouspyynnön rivin kaikkein edistynein vaihe. Jos esimerkiksi tarjouspyynnön vähiten edennyt vaihe koskee luotua riviä, tarjouspyynnön alin tila on **Luotu**. Jos tarjouspyynnön eniten edennyt vaihe koskee toimittajille lähetettyä riviä, tarjouspyynnön korkein tila on **Lähetetty**. Tilat päivitetään automaattisesti, kun tarjouspyynnön.  
 
 Voit tarkastella tarjouspyynnön otsikon alinta ja ylintä tilaa **Kaikki tarjouspyynnöt** -sivulla. Voit tarkastella tarjouspyynnön rivin alinta ja ylintä tilaa **Tarjouspyynnöt** -sivulla **Rivit**-välilehdessä.  
 
-Tässä on tilat käsittelyyn tarjouspyynnöt:
+Tilojen järjestys tarjouspyyntöjen käsittelylle on seuraava:
 
-1.  **Created**
-2.  **Sent**
-3.  **Received**
-4.  **Hyväksytty**/**peruutettu**/**hylätty**
+1.  **Luotu**
+2.  **Lähetetty**
+3.  **Vastaanotettu**
+4.  **Hyväksytty**/**Peruutettu**/**Hylätty**
 
 Tiloja on kuvattu tarkemmin tämän artikkelin seuraavissa osissa.
 
@@ -72,7 +75,7 @@ Ennen tarjouspyyntötapauksen luomista sinun täytyy määrittää tarjouspyynn�
 -   Toimitustiedot ja maksuehdot.
 -   Tarjouspyynnön vastaukseen sisällytettävät kentät
 
-Nämä arvot voi ohittaa tietyissä tarjouspyyntötapauksissa. Myös muutosprosessi täytyy määrittää. Tämän määrityksen yhteydessä voit ottaa käyttöön kentän lukituksen. Kun kentän lukitus on käytössä ja hankinta-asiantuntija haluaa tehdä tarjouspyyntöön muutoksia, hänen on ensin valittava **Tarjous**-välilehden **Muutos**-osasta **Luo**. Kun muutos on päivitetty Tarjouspyynnön, hankintojen professional on loppuun valitsemalla **Viimeistele**. ** ** viimeistely-toiminto luo sähköpostiviestin, joka ilmoittaa tietoja muutettu Tarjouspyyntö toimittajille. Toimittajille lähetettävän sähköposti-ilmoituksen malli valitaan **Hankintaparametrit**-sivulta. Luotava malli voi sisältää seuraavia korvattavia tunnisteita:
+Nämä arvot voi ohittaa tietyissä tarjouspyyntötapauksissa. Myös muutosprosessi täytyy määrittää. Tämän määrityksen yhteydessä voit ottaa käyttöön kentän lukituksen. Kun kentän lukitus on käytössä ja hankinta-asiantuntija haluaa tehdä tarjouspyyntöön muutoksia, hänen on ensin valittava **Tarjous**-välilehden **Muutos**-osasta **Luo**. Kun muutokset on päivitetty tarjouspyyntöön, hankinta-asiantuntijan on suoritettava prosessi loppuun valitsemalla **Viimeistele**.** **Viimeistelytoiminto luo sähköpostiviestin, joka ilmoittaa toimittajille tarjouspyynnön muutoksista. Toimittajille lähetettävän sähköposti-ilmoituksen malli valitaan **Hankintaparametrit**-sivulta. Luotava malli voi sisältää seuraavia korvattavia tunnisteita:
 
 -   %Tarjouksen palautuksen syy%
 -   %Muutoksen syy%
@@ -124,7 +127,7 @@ Seuraavassa taulukossa näkyvät tarjouspyynnön tilan muutokset, kun luot tarjo
 
 |                                    |                              |                                                 |                            |                             |
 |------------------------------------|------------------------------|-------------------------------------------------|----------------------------|-----------------------------|
-| **Action**                         | **Lowest RFQ header status** | **Highest RFQ header status**                   | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Toiminto**                         | **Alhaisin tarjouspyyntöotsikon tila ** | **Korkein tarjouspyyntöotsikon tila **                   | **Alhaisin tarjouspyyntörivin tila ** | **Korkein tarjouspyyntörivin tila ** |
 | Luo tarjouspyynnön otsikko ja rivi.    | Luotu                      | Luotu                                         | Luotu                    | Luotu                     |
 | Lähetä tietylle toimittajalle Tarjouspyyntö. | Lähetetty                         | Lähetetty                                            | Lähetetty                       | Lähetetty                        |
 | Lisää toinen toimittaja.                | Luotu                      | Lähetetty (Tarjouspyyntö on lähetetty vain yhdelle toimittajalle.) | Luotu                    | Lähetetty                        |
@@ -146,7 +149,7 @@ Jos tarjouspyyntötapahtumaan on liitetty kyselylomake, kysymysten vastaukset on
 
 Jos haluat syöttää vaihtoehtoisia rivejä ja se on kyseisessä tarjouspyyntötapahtumassa mahdollista, valitse **Ostotarjousrivit**-pikavälilehdestä **Lisää rivi**. Kirjoita sitten tuotteen tiedot, kuten nimikkeen numero tai hankintaluokka, määrä, hinta ja alennus.  
 
-Jos olet kirjoittanut vastauksen, mutta edellyttävät uuden tarjouksen toimittajalta, voit lähettää Tarjouspyynnön. Luo uusi kirjauskansio ja raportti, joiden avulla voit pyytää muutoksia toimittajan.  
+Jos olet kirjoittanut vastauksen mutta vaadit toimittajalta uutta tarjousta, voit lähettää tarjouspyynnön uudelleen. Tämä luo uuden kirjauskansion ja raportin, jolla voit pyytää muutoksia toimittajalta.  
 
 Kaikkien tarjouspyyntöjen ja niiden vastaustilojen yhteenveto on nähtävissä **Tarjouspyynnön seuranta** -sivulla.  
 
@@ -154,7 +157,7 @@ Seuraavassa taulukossa näkyy, miten tarjouspyynnön tila muuttuu, kun vastaanot
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**                                     | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Toiminto**                                     | **Alin tarjoustila ** | **Ylin tarjoustila ** | **Alhaisin tarjouspyyntöotsikon tila ** | **Korkein tarjouspyyntöotsikon tila ** | **Alhaisin tarjouspyyntörivin tila ** | **Korkein tarjouspyyntörivin tila ** |
 | Rekisteröi yhden toimittajan tarjous ja tallenna se.        | Lähetetty                  | Vastaanotettu               | Lähetetty                         | Vastaanotettu                      | Lähetetty                       | Vastaanotettu                    |
 | Rekisteröi toisen toimittajan tarjous ja tallenna se. | Vastaanotettu              | Vastaanotettu               | Vastaanotettu                     | Vastaanotettu                      | Vastaanotettu                   | Vastaanotettu                    |
 
@@ -183,9 +186,11 @@ Seuraavassa taulukossa näkyy, miten tarjouspyynnön tila muuttuu, kun hyväksyt
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**              | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Toiminto**              | **Alin tarjoustila ** | **Ylin tarjoustila ** | **Alhaisin tarjouspyyntöotsikon tila ** | **Korkein tarjouspyyntöotsikon tila ** | **Alhaisin tarjouspyyntörivin tila ** | **Korkein tarjouspyyntörivin tila ** |
 | Hyväksy yksi tarjouksista. | Vastaanotettu              | Hyväksytty               | Vastaanotettu                     | Hyväksytty                      | Vastaanotettu                   | Hyväksytty                    |
 | Hylkää muut tarjoukset.  | Hylätty              | Hyväksytty               | Hylätty                     | Hyväksytty                      | Hylätty                   | Hyväksytty                    |
+
+
 
 
 

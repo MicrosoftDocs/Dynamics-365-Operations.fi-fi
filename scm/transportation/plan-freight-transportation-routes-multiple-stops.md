@@ -1,5 +1,5 @@
 ---
-title: "Rahdin kuljetus reittien kanssa useita pysähtyy suunnitteleminen"
+title: "Useita pysähdyksiä sisältävän rahdinkuljetusreitin suunnittelu"
 description: "Tässä artikkelissa käsitellään elementtejä, joilla kuljetusreittejä suunnitellaan Microsoft Dynamics AX:ssä."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Rahdin kuljetus reittien kanssa useita pysähtyy suunnitteleminen
+# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Useita pysähdyksiä sisältävän rahdinkuljetusreitin suunnittelu
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa käsitellään elementtejä, joilla kuljetusreittejä suunnitellaan Microsoft Dynamics AX:ssä.
 
@@ -48,5 +51,7 @@ Ajoitettu reitti on esimääritetty reitti, jossa on lähetyspäivämäärien ai
 
 ## <a name="load-building-workbench"></a>Kuormituksen luonnin työtila
 Kuormituksen luonnin työtila -sivu ehdottaa kuormaa hakemalla asiakkaiden osoitteet ja toimituspäivät myyntitilauksista sekä käytettävissä olevat ajoitetut reitit. Oletusarvoisesti työtilassa annetaan reitin arvot. Voit kuitenkin valita aloituspäiväksi reitin aloituspäivää edeltävän päivämäärän. Kun kuormaa on ehdotettu, kaikkien avoimien myyntitilausten toimitusosoite ja toimituspäivä tarkistetaan. Toimitusosoitteen postinumero vastaa reittisuunnitelmassa olevan keskuksen postinumeroa ja jos toimituspäivä on ehdoissa valitulla alueella, myyntitilausta ehdotetaan kuormaan. Myös kuormamallin kapasiteetti otetaan huomioon. Kerrallaan ehdotetaan vain yhtä kuormaa. Jos sinulla on myyntitilaus, joka ei sisälly ehdotukseen, sinun on ehkä käytettävä eri kuormamallia (esimerkiksi suuremman kuorma-auton tai kontin kuormamallia) tai suunniteltava lisätoimitus.
+
+
 
 

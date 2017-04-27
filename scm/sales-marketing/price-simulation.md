@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="price-simulation"></a>Hintasimulointi
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja tarjousten hintasimuloinneista. Hintasimulointien avulla voidaan arvioida vähennysten vaikutusta tuleviin myyntihintoihin tarjousprosessin aikana, ennen kuin tietty hinta otetaan käyttöön.
 
 Tarjouksen hintasimulointi näyttää ehdotettuun uuteen hintaan perustuvan uuden kokonaissumman. Hintasimulointi voi näyttää myös aiemmin luodussa tarjouksessa luodun tietyn rivin uuden hinnan. Voit antaa hintasimuloinnin ja käyttää sitä myöhemmin. Voit vaihtoehtoisesti käyttää alkuperäistä tarjousta, jossa ei ole hintasimulointia, ja tehdä muutoksia myyntiprosessin aikana asiakkaan kanssa.  
@@ -50,7 +53,7 @@ Jotta alennukset ja hinnat varmasti lasketaan oikein, alennuksia sisältävien t
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Kauppasopimusten alennustyypit
 
-Microsoft Dynamics-365 operaatioille, Kauppasopimuksilla voi olla neljäntyyppisiä hinta-alennuksia. Nämä alennukset voidaan määrittää eri nimikkeille, asiakkaille tai hintaryhmille ja niitä voidaan rajoittaa päivämäärän mukaan. Laskuvirheiden välttämiseksi kauppasopimukset on otettava huomioon hintasimulointeja suoritettaessa. Kauppasopimusten neljä alennustyyppiä:
+Microsoft Dynamics 365 for Operations -ohjelman kauppasopimuksissa voi olla neljäntyyppisiä hinnanalennuksia. Nämä alennukset voidaan määrittää eri nimikkeille, asiakkaille tai hintaryhmille ja niitä voidaan rajoittaa päivämäärän mukaan. Laskuvirheiden välttämiseksi kauppasopimukset on otettava huomioon hintasimulointeja suoritettaessa. Kauppasopimusten neljä alennustyyppiä:
 
 -   **Myyntihinta** – Nimikkeille voidaan määrittää eri myyntihinta. Kun tarjousrivit luodaan, ohjelma hakee nimikkeelle oikean hinnan ja siirtää sen tarjousriveille. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, ei vaikuta hintasimulointiin. Tarjousrivillä käytettävä myyntihinta vastaa kauppasopimusta.
 -   **Rivialennus** – Nimikkeille määritetään erikoisalennukset tilatun määrän mukaan. Rivialennus vähennetään tavallisesti rivisummista ennen hintasimuloinnin suorittamista. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, vaikuttaa hintasimulointiin.
@@ -79,7 +82,7 @@ Tarjousrivit näkyvät seuraavassa taulukossa.
 | Myyntiarvo Yhdysvaltain dollareina         | (10 × 15,32) + (12 × 13,75)          | 318,20   |
 | Kustannusarvo Yhdysvaltain dollareina          | (10 × 9,52) + (12 × 7,48)            | 184,96   |
 | Katetuotto Yhdysvaltain dollareina | 318,20 – 184,96                      | 133,24   |
-| Kateprosentti         | (\[318.20 – 184.96\] ÷ 318.20) × 100 | 41,87%   |
+| Kateprosentti         | (\[318.20 - 184.96\] ÷ 318.20) × 100 | 41,87%   |
 
 Suoritat hintasimuloinnin ja sovellat 15 prosentin kokonaisalennusta koko tarjoukseen tai tarjouksen otsikkoon. Seuraavassa taulukossa on esitetty tarjouksen uudet kokonaissummat hintasimuloinnin suorittamisen jälkeen.
 
@@ -89,11 +92,11 @@ Suoritat hintasimuloinnin ja sovellat 15 prosentin kokonaisalennusta koko tarjou
 | Vanha myyntiarvo Yhdysvaltain dollareina                               | (10 × 15,32) + (12 × 13,75)               | 318,20   |
 | Vanha kustannusarvo Yhdysvaltain dollareina                                | (10 × 9,52) + (12 × 7,48)                 | 184,96   |
 | Vanha katetuotto Yhdysvaltain dollareina                       | 318,20 – 184,96                           | 133,24   |
-| Vanha kateprosentti                               | (\[318.20 – (10 × 9.52)\] ÷ 318.20) × 100 | 41,87%   |
+| Vanha kateprosentti                               | (\[318.20 - (10 × 9.52)\] ÷ 318.20) × 100 | 41,87%   |
 | Hintasimulointi, 15 prosentin kokonaisalennus Yhdysvaltain dollareina | (15 × 318,2) ÷ 100                        | 47,73    |
 | Uusi myyntiarvo Yhdysvaltain dollareina                               | 318,20 – 47,73                            | 270,47   |
 | Uusi katetuotto Yhdysvaltain dollareina                       | 270,47 – 184,96                           | 85,51    |
-| Uusi katetuottoprosentti                               | \[(270.47 – 184.96) ÷ 270.47\] × 100      | 31,61 %   |
+| Uusi katetuottoprosentti                               | \[(270.47 - 184.96) ÷ 270.47\] × 100      | 31,61 %   |
 
 ### <a name="price-simulation-for-single-line-items"></a>Hintasimulointi yhden rivin nimikkeille
 
@@ -113,12 +116,12 @@ Tarjousrivit näkyvät seuraavassa taulukossa.
 | BR-14:n myyntiarvo Yhdysvaltain dollareina          | 12 × 7,48                            | 89,76    |
 | BR-12:n katetuotto Yhdysvaltain dollareina | 153,20 - 95,20                       | 58,00    |
 | BR-14:n katetuotto Yhdysvaltain dollareina | 165,00 - 89,76                       | 75,24    |
-| BR-12:n kateprosentti  | \[(153.20 – 95.20) ÷ 153.20\] × 100  | 37,86    |
-| BR-14:n kateprosentti  | \[(165.00 – 89.76) ÷ 165.00\] × 100  | 45,60    |
+| BR-12:n kateprosentti  | \[(153.20 - 95.20) ÷ 153.20\] × 100  | 37,86    |
+| BR-14:n kateprosentti  | \[(165.00 - 89.76) ÷ 165.00\] × 100  | 45,60    |
 | Kokonaismyyntiarvo Yhdysvaltain dollareina             | (10 × 15,32) + (12 × 13,75)          | 318,20   |
 | Kokonaiskustannusarvo Yhdysvaltain dollareina              | (10 × 9,52) + (12 × 7,48)            | 184,96   |
 | Kokonaiskatetuotto Yhdysvaltain dollareina     | 318,20 – 184,96                      | 133,24   |
-| Kokonaiskateprosentti             | \[(318.20 – 184.96) ÷ 318.20\] × 100 | 41,87%   |
+| Kokonaiskateprosentti             | \[(318.20 - 184.96) ÷ 318.20\] × 100 | 41,87%   |
 
 Suoritat hintasimuloinnin ja sovellat 10 prosentin kokonaisalennusta BR-12-yksikköihin. Seuraavassa taulukossa on esitetty tarjouksen uudet kokonaissummat, kun hintasimulointi on suoritettu yhdelle rivinimikkeelle.
 
@@ -133,13 +136,15 @@ Suoritat hintasimuloinnin ja sovellat 10 prosentin kokonaisalennusta BR-12-yksik
 | BR-14:n myyntiarvo Yhdysvaltain dollareina                       | 12 × 7,48                               | 89,76    |
 | BR-12:n uusi katetuotto Yhdysvaltain dollareina          | 137,88 - 95,20                          | 42,68    |
 | BR-14:n katetuotto Yhdysvaltain dollareina              | 165,00 - 89,76                          | 75,24    |
-| BR-12:n uusi kateprosentti           | \[(137.88 – 95.20) ÷ 137.88\] × 100     | 30,95    |
-| BR-14:n kateprosentti               | \[(165.00 – 89.76) ÷ 165.00\] × 100     | 45,60    |
-| Uusi kokonaismyyntiarvo Yhdysvaltain dollareina                      | \[(10 × 15.32) – 15.32\] + (12 × 13.75) | 302,88   |
+| BR-12:n uusi kateprosentti           | \[(137.88 - 95.20) ÷ 137.88\] × 100     | 30,95    |
+| BR-14:n kateprosentti               | \[(165.00 - 89.76) ÷ 165.00\] × 100     | 45,60    |
+| Uusi kokonaismyyntiarvo Yhdysvaltain dollareina                      | \[(10 × 15.32) - 15.32\] + (12 × 13.75) | 302,88   |
 | Kokonaiskustannusarvo Yhdysvaltain dollareina                           | (10 × 9,52) + (12 × 7,48)               | 184,96   |
 | Uusi kokonaiskatetuotto Yhdysvaltain dollareina              | 302,88 – 184,96                         | 117,92   |
-| Uusi kokonaiskateprosentti                      | \[(302.88 – 184.96) ÷ 302.88\] × 100    | 38,93 %   |
+| Uusi kokonaiskateprosentti                      | \[(302.88 - 184.96) ÷ 302.88\] × 100    | 38,93 %   |
 
 Hintasimulointi vaikuttaa vain siihen riviin, johon sitä käytetään, vähentämällä rivin kokonaissummaa.
+
+
 
 

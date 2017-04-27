@@ -46,7 +46,7 @@ Valitse **Joukkotyöhönottoprojektit** -sivulla "SummerInterns"-projekti ja nap
 
 Valittuasi kesäharjoittelijoiksi palkattavat opiskelijat, voit syöttää opiskelijoiden tiedot niiden toimien **Toimen tiedot** kohtaan, johon olet kunkin opiskelijan valinnut. Kun olet syöttänyt kaikkien toimien tiedot, valitse toimi Joukkotyöhönottoprojektit-sivulta ja napsauta sitten **Ota palvelukseen**. Jokaiselle toimelle luodaan toimitietue ja jokaiselle työhön ottamallesi henkilölle luodaan työntekijätietue, joka liitetään asiaankuuluvaan toimeen.
 
-## <a name="masshire-project-statuses"></a>Masshire projektin tila
+## <a name="masshire-project-statuses"></a>Joukkotyöhönottoprojektien tilat
 Joukkotyöhönottoprojektin tila voi olla jokin seuraavista.
 -   Luotu
 -   Avoin

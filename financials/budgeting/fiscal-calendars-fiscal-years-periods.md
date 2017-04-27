@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Kirjanpidon kalenterit, tilikaudet ja kaudet
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa käsitellään kirjanpidon vuosikalentereita ja tilikausia sekä sitä, miten niitä käytetään yrityksissä, käyttöomaisuudessa ja budjetoinnissa.
 
 Kirjanpidon kalenterit tarjoavat kehyksen organisaation taloudelliselle toiminnalle. Jokainen kirjanpidon vuosikalenteri sisältää yhden tai useamman tilikauden ja jokainen tilikausi sisältää useita kausia. Kirjanpidon kalenterit voivat perustua kalenterivuoteen välille 1.1.-31.12 tai mille tahansa valitsemillesi päivämäärille. Valitse esimerkiksi joissakin organisaatioissa vuosikalenteri, joka alkaa 1. kesäkuuta yhtenä vuotena ja päättyy 30. kesäkuuta seuraavana vuonna. 
@@ -39,7 +42,7 @@ Voit luoda ja poistaa kirjanpidon kalentereita, tilikausia ja kausia Kirjanpidon
 
 Päätöskautta käytetään erottamaan pääkirjanpidon tapahtumat, jotka luodaan, kun tilikausi on suljettu. Kun sulkevat tapahtumat ovat yhdessä kirjanpitokaudessa, on helpompi luoda raportteja, jotka joko sisältävät tai eivät sisällä erilaisia tilinpäätöstapahtumia. Jos tilikausi on jaettu 12 kauteen, päätöskausi on yleensä kolmastoista kausi. Lopetuskausi voidaan kuitenkin luoda mistä tahansa jaksosta, jonka tila on Avoin. 
 
-Luodessasi lopetuskauden valitse kausi, jonka tila on Avoin ja jonka päivämääriä haluat käyttää. Uusi päätöskausi kopioi aloitus- ja lopetuspäivämäärät nykyisestä kaudesta. Alkuperäinen kausi on edelleen olemassa. Esimerkiksi voit valita kauden 12, joka on tilikauden viimeisen kirjanpitojakson ja jolla on päivämäärät elokuuta 1. – 31. elokuuta. Voit nimetä lopetuskausi, kuten sulkeminen. Kun olet luonut uuden päätöskauden, sinulla on nyt alkuperäinen kausi ja päätöskausi. Molemmissa on päivämäärät, jotka alkavat 1.8. ja päättyvät 31.8.
+Luodessasi lopetuskauden valitse kausi, jonka tila on Avoin ja jonka päivämääriä haluat käyttää. Uusi päätöskausi kopioi aloitus- ja lopetuspäivämäärät nykyisestä kaudesta. Alkuperäinen kausi on edelleen olemassa. Valitse esimerkiksi kausi 12, joka on tilikauden viimeisen kausi ja jonka päivämäärät ovat 1.-31.8. Voit nimetä sulkemiskauden esim. nimellä Sulje. Kun olet luonut uuden päätöskauden, sinulla on nyt alkuperäinen kausi ja päätöskausi. Molemmissa on päivämäärät, jotka alkavat 1.8. ja päättyvät 31.8.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Valitse kirjanpidon, käyttöomaisuuden ja budjettijaksojen tilikauden kalenterit
 Kirjanpidon kalentereita käytetään käyttöomaisuuden poistojen, kirjanpitotapahtumien ja budjettijaksojen kanssa. Kirjanpidon vuosikalenterin luodessasi voit käyttää sitä useita tarkoituksia varten. Voit valita kirjanpidon vuosikalenterin arvomallille tai poistokirjalle tehdäksesi riitä käyttöomaisuuskalenterin. Voit valita kirjanpidolle budjettijaksolle ja tehdä siitä budjettikalenterin. Voit valita budjettijaksolle kirjanpidon vuosikalenterin ja tehdä siitä budjettikalenterin. Voit käyttää samaa kirjanpidon vuosikalenteria näille kaikille.
@@ -58,6 +61,8 @@ Budjettijaksoja ovat ajat, jolloin budjetointia käytetään. Budjettijaksoja vo
 
 ## <a name="maintain-periods-for-your-organization"></a>Ylläpidä organisaation jaksoja
 Voit käyttää Kirjanpitokalenteri-sivua organisaatiosi käyttämän kirjanpidon kalenterin, tilikausien ja jaksojen tarkastelemiseen. Voit myös muuttaa kausien tilaa ja valita käyttäjät, jotka voivat kirjata kirjanpidon tapahtumia kausille. Esimerkiksi uuden jakson alussa voit ehkä haluta, että jokin käyttäjäryhmä lopettaa kirjanpitotapahtumien kirjaamisen edelliseen jaksoon, kun taas muut ryhmät tekevät kirjauksia vain uuteen jaksoon.
+
+
 
 
 

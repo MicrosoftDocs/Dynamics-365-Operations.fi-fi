@@ -1,6 +1,6 @@
 ---
-title: "Nuolet-lasku hyväksynnät"
-description: "Microsoft Dynamics-365 työvaiheiden kannettavien ominaisuudet antaa business käyttäjän suunnitella mobiili kokemuksia. On tietoja vaativammista skenaarioista ympäristö myös oletetaan, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä Mobile on käydä läpi joitakin tilanteita suunniteltaessa. Tämä aihe on tarkoitettu antamaan käytännön lähestymistapaa ottamalla toimittajan laskujen hyväksyntiä käyttötapaukseen kuin mobiili mobiili skenaarioita suunnitteleminen. Tämä ohjeaihe auttaa sinua suunnitella tilanteissa muut variaatiot ja voidaan soveltaa myös muita tilanteita, jotka eivät liity toimittajan laskuihin."
+title: "Mobiililaskujen hyväksynnät"
+description: "Microsoft Dynamics 365 for Operations mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiilin käyttökokemuksen. Vaativimmissa skenaarioissa ympäristö sallii myös, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä mobiiliympäristössä on käydä läpi joitakin suunnittelutilanteita. Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi. Tämä ohjeaihe auttaa sinua suunnittelemaan tilanteen muita variaatioita ja sitä voidaan soveltaa myös muihin tilanteisiin, jotka eivät liity toimittajan laskuihin."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,44 +24,47 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="mobile-invoice-approvals"></a>Nuolet-lasku hyväksynnät
+# <a name="mobile-invoice-approvals"></a>Mobiililaskujen hyväksynnät
 
-Microsoft Dynamics-365 työvaiheiden kannettavien ominaisuudet antaa business käyttäjän suunnitella mobiili kokemuksia. On tietoja vaativammista skenaarioista ympäristö myös oletetaan, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä Mobile on käydä läpi joitakin tilanteita suunniteltaessa. Tämä aihe on tarkoitettu antamaan käytännön lähestymistapaa ottamalla toimittajan laskujen hyväksyntiä käyttötapaukseen kuin mobiili mobiili skenaarioita suunnitteleminen. Tämä ohjeaihe auttaa sinua suunnitella tilanteissa muut variaatiot ja voidaan soveltaa myös muita tilanteita, jotka eivät liity toimittajan laskuihin.
+[!include[banner](../includes/banner.md)]
+
+
+Microsoft Dynamics 365 for Operations mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiilin käyttökokemuksen. Vaativimmissa skenaarioissa ympäristö sallii myös, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä mobiiliympäristössä on käydä läpi joitakin suunnittelutilanteita. Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi. Tämä ohjeaihe auttaa sinua suunnittelemaan tilanteen muita variaatioita ja sitä voidaan soveltaa myös muihin tilanteisiin, jotka eivät liity toimittajan laskuihin.
 
 <a name="prerequisites"></a>Edellytykset
 -------------
 
 | Edellytys                                                                                            | kuvaus                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobiili valmiiksi lukea käsikirja                                                                                |(/ dynamics365/toiminnot/dev-IT Pro/mobile-sovellukset / mobile-platform.md)                                                                                                  |
-| Työvaiheiden Dynamics 365                                                                             | Päivitä-ympäristö, joka on Microsoft Dynamics-365-version toimintoja 1611 ja toimia ympäristön Microsoft Dynamics 3 (marraskuu-2016)                   |
-| KB 3204341-korjaustiedoston asentaminen.                                                                              | Tehtävän tallennus voit tallentaa kahden avattavan luettelon keskusteluja tämä sisältyy Dynamics 365 toiminnon platform update (päivitys marraskuun 2016) 3 Sulje komentoja virheellisesti |
-| KB 3207800-korjaustiedoston asentaminen.                                                                              | Tämän hotfix-korjauksen avulla tämä sisältyy Dynamics 365 toiminnon platform update (päivitys marraskuun 2016) 3 mobile client voidaan tarkastella liitteitä.           |
-| KB 3208224-korjaustiedoston asentaminen.                                                                              | Hakemus koodi lisätään Microsoft Dynamics AX-sovelluksen 7.0.1 (toukokuussa 2016) mobiili toimittajan laskun hyväksyntää koskevasta hakemuksesta.                          |
-| Android tai iOS- tai Windows-laite, joka on asennettu työvaiheiden 365 Dynamics mobile app | Etsi sopiva app store-sovelluksen.                                                                                                                     |
+| Mobiilikäsikirja esitiedoiksi                                                                                |(/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform.md)                                                                                                  |
+| Dynamics 365 for Operations                                                                             | Ympäristö, johon on asennettu Microsoft Dynamics 365 for Operations -versio 1611 sekä Microsoft Dynamics for Operations ympäristöpäivitys 3 (Marraskuu 2016)                   |
+| Asenna hotfix-korjaus KB 3204341.                                                                              | Tehtävän tallennus voit virheellisesti tallentaa kaksi avattavan luettelon Sulje-komentoa. Tämä sisältyy Dynamics 365 for Operationsin ympäristöpäivitykseen 3 (marraskuun 2016 päivitys) |
+| Asenna hotfix-korjaus KB 3207800.                                                                              | Tämän päivityksen avulla liitteitä voi tarkastella mobiiliasiakkaassa. Tämä sisältyy Dynamics 365 for Operationsin ympäristöpäivitykseen 3 (marraskuun 2016 päivitys)           |
+| Asenna hotfix-korjaus KB 3208224.                                                                              | Sovelluskoodi toimittajan laskujen hyväksynnän mobiilisovellukselle. Tämä sisältyy Microsoft Dynamics AX -sovellukseen 7.0.1 (May 2016).                          |
+| Android-, iOS- tai Windows-laite, jossa on asennettuna Dynamics 365 for Operations -mobiilisovellus | Etsi sovellus omasta sovelluskaupastasi.                                                                                                                     |
 
 ## <a name="introduction"></a>Johdanto
-Mobiili toimittajalaskujen hyväksynnän vaativat kolme korjaukset, jotka "Edellytykset"-osassa. Nämä hotfix-korjaukset eivät tarjoa työtilan laskujen hyväksyntiä. Työtila on tietoja siitä, mitä mobiili-yhteydessä lukea mobile handbook, "Edellytykset"-osassa. Laskun hyväksynnät työtilan on suunniteltava. 
+Toimittajalaskujen mobiilihyväksyntä vaatii nämä kolme hotfix-korjausta, jotka on mainittu "Edellytykset"-osassa. Nämä hotfix-korjaukset eivät tarjoa työtilaa laskujen hyväksyntään. Perustiedot työtiloista mobiiliympäristössä on mobiilikäsikirjassa, joka mainitaan "Edellytykset"-osassa. Laskun hyväksynnän työtila on suunniteltava. 
 
-Jokaisen organisaation orchestrates ja määrittää sen toimittajan laskujen liiketoimintaprosessin eri tavalla. Ennen kuin suunnittelet käyttäjiesi tarpeiden mukaan toimittajan laskujen hyväksyntiä, sinun kannattaa harkita seuraavia näkökohtia liiketoimintaprosessin. Ajatuksena on käyttää näiden pisteiden laitteen käyttäjäkokemuksen parantamiseksi niin paljon kuin mahdollista.
+Jokainen organisaatio määrittää oman toimittajan laskujen liiketoimintaprosessinsa eri tavalla. Ennen kuin suunnittelet toimittajan laskujen hyväksynnän mobiilikäyttöliittymän, sinun kannattaa harkita seuraavia näkökohtia liiketoimintaprosesseista. Ajatuksena on käyttää näitä tietopisteitä mahdollisimman paljon laitteen käyttäjäkokemuksen parantamiseksi.
 
--   Laskun otsikon kentät käyttäjä haluavat nähdä mobiili kokemus ja missä järjestyksessä?
--   Laskurivien kenttiä mitä käyttäjän haluat nähdä mobiili kokemus ja missä järjestyksessä?
--   Kuinka monta laskurivien onko lasku? Käytä tätä 80-20 sääntö ja optimoida 80 prosenttia.
--   Käyttäjät haluavat tarkastella mobiililaitteen kirjanpidolliset jaot (lasku coding) aikana arvostelut? Jos vastaus tähän kysymykseen on Kyllä, harkitse seuraavia kysymyksiä:
-    -   Kuinka monta kirjanpidolliset jaot (Laajennettu hinta, arvonlisävero, kulut, jakaa ja niin edelleen) on laskuriviä varten? Käytä uudelleen 80-20 sääntö.
-    -   Laskut myös tarvitse kirjanpidollisten jakojen ja laskuotsikon? Jos näin on, nämä kirjanpidolliset jaot on käytettävissä laitteessa?
+-   Mitkä laskun otsikon kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?
+-   Mitkä laskurivien kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?
+-   Kuinka monta laskuriviä yhdessä laskussa on? Käytä tässä 80-20-sääntö ja optimoi tärkeimmät 80 prosenttia.
+-   Haluavatko käyttäjät tarkastella mobiililaitteessa kirjanpidollisia jakoja (laskujen koodausta) tarkistusten aikana? Jos vastaus tähän kysymykseen on kyllä, harkitse seuraavia kysymyksiä:
+    -   Kuinka monta kirjanpidollista jakoa (laajennettua hintaa, arvonlisäveroa, kulua, jakoa jne.) on yhdellä laskurivillä? Käytä uudelleen 80-20-sääntöä.
+    -   Onko laskuissa myös kirjanpidolliset jaot laskuotsikossa? Jos näin on, ovatko nämä kirjanpidolliset jaot on käytettävissä laitteessa?
 
 > [!NOTE]
-> Tässä ohjeaiheessa ei kerrotaan, kuinka Muokkaa kirjanpidon jakoja, koska tätä toimintoa ei tueta tällä hetkellä mobiili skenaarioita.
+> Tässä ohjeaiheessa ei kerrota, kuinka muokkaa kirjanpidon jakoja, koska tätä toimintoa ei tueta tällä hetkellä mobiiliskenaarioissa.
 
--   Käyttäjät haluavat nähdä laitteen laskulle liitteitä?
+-   Haluavatko käyttäjät nähdä laskun liitteet laitteella?
 
-Laskun hyväksyntöjen mobiili kokemus rakenne vaihtelevat mukaan vastauksia näihin kysymyksiin. Tavoitteena on optimoida liiketoimintaprosessin Mobile organisaation käyttökokemusta. -Aiheen loppuosassa tarkastelemme kahden skenaarion vaihtelut, jotka perustuvat eri Edellinen kysymyksiin annettujen vastausten muodossa. 
+Laskun hyväksyntöjen mobiilikokemuksen rakenne vaihtelee riippuen vastauksista näihin kysymyksiin. Tavoitteena on optimoida organisaation liiketoimintaprosessin mobiilikäyttökokemus. Aiheen loppuosassa tarkastelemme kahta skenaarion versiota, jotka perustuvat eri vastauksiin edellisiin kysymyksiin. 
 
-Sellaisena kuin se yleisiä ohjeita, kun työskentelet mobiili suunnittelu muista julkaista päivityksiä säilyttää muutokset.
+Yleisenä ohjeena voi sanoa, että kun työskentelet mobiilisuunnittelijan kanssa, muista julkaista muutokset, jotta päivityksiä ei menetettäisi.
 
-## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a>Contoso yksinkertaisen laskun hyväksynnän Skenaarion suunnitteleminen
+## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a>Yksinkertaisen laskun hyväksynnän skenaarion suunnitteleminen Contosolle
 <table>
 <colgroup>
 <col width="50%" />
@@ -75,7 +78,7 @@ Sellaisena kuin se yleisiä ohjeita, kun työskentelet mobiili suunnittelu muist
 </thead>
 <tbody>
 <tr class="odd">
-<td>Laskun otsikon kentät käyttäjä haluavat nähdä mobiili kokemus ja missä järjestyksessä?</td>
+<td>Mitkä laskun otsikon kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</td>
 <td><ol>
 <li>Toimittajan nimi</li>
 <li>Laskun kokonaissumma</li>
@@ -88,7 +91,7 @@ Sellaisena kuin se yleisiä ohjeita, kun työskentelet mobiili suunnittelu muist
 </ol></td>
 </tr>
 <tr class="even">
-<td>Laskurivien kenttiä mitä käyttäjän haluat nähdä mobiili kokemus ja missä järjestyksessä?</td>
+<td>Mitkä laskurivien kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</td>
 <td><ol>
 <li>Hankintaluokka</li>
 <li>Määrä</li>
@@ -98,23 +101,23 @@ Sellaisena kuin se yleisiä ohjeita, kun työskentelet mobiili suunnittelu muist
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Kuinka monta laskurivien onko lasku? Käytä tätä 80-20 sääntö ja optimoida 80 prosenttia.</td>
+<td>Kuinka monta laskuriviä yhdessä laskussa on? Käytä tässä 80-20-sääntö ja optimoi tärkeimmät 80 prosenttia.</td>
 <td>1</td>
 </tr>
 <tr class="even">
-<td>Käyttäjät haluavat tarkastella mobiililaitteen kirjanpidolliset jaot (lasku coding) aikana arvostelut?</td>
+<td>Haluavatko käyttäjät tarkastella mobiililaitteessa kirjanpidollisia jakoja (laskujen koodausta) tarkistusten aikana?</td>
 <td>Kyllä</td>
 </tr>
 <tr class="odd">
-<td>Kuinka monta kirjanpidolliset jaot (Laajennettu hinta, arvonlisävero, kulut ja niin edelleen) on laskuriviä varten? Käytä uudelleen 80-20 sääntö.</td>
-<td>Kokonaishinta: 2 ALV: kulut 0: 0</td>
+<td>Kuinka monta kirjanpidollista jakoa (laajennettua hintaa, arvonlisäveroa, kulua jne.) on yhdellä laskurivillä? Käytä uudelleen 80-20-sääntöä.</td>
+<td>Laajennettu hinta: 2 ALV: 0 Kulut: 0</td>
 </tr>
 <tr class="even">
-<td>Laskut myös tarvitse kirjanpidollisten jakojen ja laskuotsikon? Jos näin on, nämä kirjanpidolliset jaot on käytettävissä laitteessa?</td>
+<td>Onko laskuissa myös kirjanpidolliset jaot laskuotsikossa? Jos näin on, ovatko nämä kirjanpidolliset jaot on käytettävissä laitteessa?</td>
 <td>Ei käytössä</td>
 </tr>
 <tr class="odd">
-<td>Käyttäjät haluavat nähdä laitteen laskulle liitteitä?</td>
+<td>Haluavatko käyttäjät nähdä laskun liitteet laitteella?</td>
 <td>Kyllä</td>
 </tr>
 </tbody>
@@ -122,61 +125,61 @@ Sellaisena kuin se yleisiä ohjeita, kun työskentelet mobiili suunnittelu muist
 
 ### <a name="create-the-workspace"></a>Luo työtila
 
-1.  Selaimessa Avaa Dynamics 365 operaatioille ja kirjaudu sisään.
-2.  Jälkeen, kun olet kirjautunut, Liitä **& tilassa = mobiili** URL-osoitteeseen, kuten seuraavassa esimerkissä ja Päivitä sivu: https://&lt;yoururl&gt;/? cmp = usmf & mi = DefaultDashboard**& mode = mobiili**
-3.  Valitse **asetukset** (vaihde)-painiketta vasemmassa yläkulmassa oikealla sivulla ja valitse sitten **Mobile app**. Suunnittelija mobile app on osoitettava samoin kuin tehtävän tallennus näkyy.
-4.  Valitse **Lisää** Luo uusi työtila. Tässä esimerkissä nimi työtilan **Omat hyväksynnät**.
+1.  Avaa selaimessa Dynamics 365 for Operations ja kirjaudu sisään.
+2.  Kun olet kirjautunut sisään, lisää **&mode=mobile** URL-osoitteeseen (kuten seuraavassa esimerkissä) ja päivitä sivu: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
+3.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**. Mobiilisovelluksen suunnitteluohjelma pitäisi tulla näkyviin samoin kuin tehtävän tallennustoiminto.
+4.  Luo uusi työtila napsauttamalla **Lisää**. Kirjoita tässä esimerkissä työtilan nimeksi **Omat hyväksynnät**.
 5.  Anna kuvaus.
-6.  Valitse työtila. Työtilan väriä käytetään yleistä tyyliä tämän työtilan mobiili kokemus.
+6.  Valitse työtilan väri. Työtilan väriä käytetään tämän työtilan yleisenä tyylinä mobiilikokemuksessa.
 7.  Valitse työtilan kuvake.
-8.  Valitse **tehty**
-9.  Valitse **julkaista työtilan** Tallenna muutokset
+8.  Valitse **Valmis**
+9.  Tallenna muutokset valitsemalla **Julkaise työtila**
 
 ### <a name="vendor-invoices-assigned-to-me"></a>Minulle määritetyt toimittajien laskut
 
-Ensimmäinen mobiili-sivu, joka tulee suunnitella on luettelo laskuista, jotka on määritetty käyttäjälle tarkistettavaksi. Voit suunnitella tämän sivun mobiili- **VendMobileInvoiceAssignedToMeListPage** toiminnoissa Dynamics 365 sivua. Ennen kuin suoritat nämä toimet, varmista, että vähintään yksi toimittajalasku on määritetty itsellesi tarkistettavaksi, ja että laskurivillä on kaksi jaot. Tämä asennus täyttää tässä tilanteessa.
+Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka on määritetty käyttäjälle tarkistettavaksi. Voit suunnitella tämän mobiilisivun Dynamics 365 for Operationsin **VendMobileInvoiceAssignedToMeListPage** -sivulla. Ennen kuin suoritat nämä toimet, varmista, että vähintään yksi toimittajalasku on määritetty itsellesi tarkistettavaksi, ja että laskurivillä on kaksi jakoa. Tämä määritys täyttää tämän skenaarion vaatimukset.
 
-1.  Korvaa Dynamics 365 toimintojen URL-osoitteen, valikkokohteen nimi **VendMobileInvoiceAssignedToMeListPage** Avaa mobiili versio **minulle määritettyjen odottavien toimittajalaskujen** -sivu **Ostoreskontra** moduuli. Tässä sivussa näkyvät ne laskut laskut, jotka on järjestelmään liitetty sinulle määrän mukaan. Voit etsiä tiettyyn laskuun, voit käyttää suodatinta vasemmalla puolella. Kuitenkin olemme tässä esimerkissä eivät edellytä tiettyyn laskuun. Vain tarvitsee joitakin laskun sinulle, joka on menossa, jotta voit suunnitella Matkaviestin-sivulta. Käytettävissä olevat uudet sivut on suunniteltu erityisesti kehittää mobiili tilanteissa toimittajan laskun. Siksi sinun on käytettävä näitä sivuja. URL-Osoitteen tulee olla seuraava URL-osoite ja sen jälkeen, kun olet kirjoittanut, sivu, joka näkyy kuvassa on kirjoitettava: https://&lt;yourURL&gt;/? cmp = usmf & mi =**VendMobileInvoiceAssignedToMeListPage**& mode = mobiili [![minulle määritettyjen odottavien toimittajalaskujen sivu](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
-2.  Valitse **asetukset** (vaihde)-painiketta vasemmassa yläkulmassa oikealla sivulla ja valitse sitten **Mobile app**
-3.  Valitse työtilan ja **muokkaaminen**
-4.  Valitse **Lisää sivulla** ensimmäinen mobiili-sivun luomiseen.
-5.  Kirjoita nimi, kuten **oma toimittajalaskujen**, ja kuvaus, kuten **Tarkastele minulle määritettyjen toimittajalaskujen**.
-6.  Click **Done**.
-7.  Mobiili suunnittelussa- **kentät** -välilehdessä **kentät**. Sarakkeita sivulla on muistuttavat seuraavassa kuvassa. [![Sivun minulle määritettyjen odottavien toimittajalaskujen sarakkeet](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
-8.  Lisää tarvittavat sarakkeet-luettelon sivulta, joka on esitettävä käyttäjille, Valitse Matkaviestin-sivulta. Joka lisää järjestys on järjestys, jossa kentät näkyvät käyttäjälle. On ainoa tapa muuttaa kenttien järjestystä valitsemalla kaikki kentät uudelleen. Tämän skenaarion vaatimusten mukaan seuraavan kahdeksan kentät ovat pakollisia. Kuitenkin jotkut käyttäjät kannattaa harkita kahdeksan kentät mobiililaitteessa on liian paljon tietoa. Siksi olemme näkyvät vain tärkeimmät kentät mobiili luettelonäkymässä. Muut kentät näkyvät tiedot-näkymä, jossa voimme suunnitella on myöhemmin. Nyt lisäämme seuraaviin kenttiin. Napsauta plus-merkkiä (**+**)-Matkaviestin-sivulta Lisää näitä sarakkeita.
+1.  Korvaa Dynamics 365 for Operationsin URL-osoitteessa valikkokohteen nimi merkkijonolla**VendMobileInvoiceAssignedToMeListPage** avataksesi **Minulle määritetyt odottavat toimittajan laskut** -luettelosivun mobiiliversion **Ostoreskontra** -moduulissa. Tässä sivussa näkyvät ne laskut, jotka on järjestelmässä liitetty sinulle. Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tarvitset vain jonkin sinulle määritetyn laskun, jonka avulla voit suunnitella mobiilisivun. Käytettävissä olevat uudet sivut on suunniteltu erityisesti kehittämään mobiiliskenaarioita toimittajalaskuille. Siksi sinun on käytettävä näitä sivuja. URL-osoitteen pitäisi olla samantyyppinen seuraavan osoitteen kanssa, ja siihen siirryttyäsi sinun pitäisi nähdä oheisen kuvan mukainen sivu: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+2.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
+3.  Valitse työtila ja sitten **Muokkaa**
+4.  Valitse **Lisää sivu** luodaksesi ensimmäisen mobiilisivun.
+5.  Kirjoita nimi, kuten **Omat toimittajalaskut** sekä kuvaus, kuten **Minulle tarkistettavaksi määritetyt toimittajalaskut**.
+6.  Valitse **Valmis**.
+7.  Valitse mobiilisivujen suunnitteluohjelmassa **Kentät**-välilehdessä **Valitse kentät**. Luettelosivun sarakkeiden tulisi olla likipitäen kuin seuraavassa kuvassa. [![Sarakkeet Minulle määritetyt odottavat toimittajan laskut -sivulla](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+8.  Lisää tarvittavat sarakkeet luettelosivulta, joka on näytettävä käyttäjille mobiilisivulla. Kentät näytetään loppukäyttäjille lisäämisjärjestyksessä. Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen. Tämän skenaarion vaatimusten mukaan seuraavat kahdeksan kenttää ovat pakollisia. Joidenkin käyttäjien mielestä kahdeksan kenttää mobiililaitteessa saattaa kuitenkin olla liikaa. Siksi näytämme vain tärkeimmät kentät mobiilissa luettelonäkymässä. Muut kentät näkyvät tietonäkymässä, jonka suunnittelemme myöhemmin. Nyt lisäämme seuraavat kentät. Napsauta plus-merkkiä (**+**) sarakkeissa lisätäksesi ne mobiilisivulle.
     1.  Toimittajan nimi
     2.  Laskun kokonaissumma
     3.  Laskutusasiakasnumero
     4.  Laskun numero
     5.  Laskun päivämäärä
 
-    Kun kentät on lisätty, Matkaviestin-sivulta on muistuttavat seuraavassa kuvassa. [![Kun kentät lisätään sivulle](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
-9.  On myös lisättävä seuraavat sarakkeet nyt niin, että emme Salli työnkulkutoimintoja myöhemmin.
-    1.  Näytä toteuttaminen
-    2.  Näytä Delegoi tehtävä
-    3.  Näytä tehtävän peruuttaminen
-    4.  Näytä tehtävän hylkääminen
-    5.  Näytä pyyntö täydentämistehtävän.
-    6.  Näytä Lähetä tehtävä
+    Kun kentät on lisätty, mobiilisivun pitäisi muistuttaa seuraavaa kuvaa. [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+9.  On myös lisättävä seuraavat sarakkeet nyt, että voimme ottaa työnkulkutoimintoja myöhemmin käyttöön.
+    1.  Näytä Suorita-tehtävä
+    2.  Näytä Delegoi-tehtävä
+    3.  Näytä Peruuta-tehtävä
+    4.  Näytä Hylkää-tehtävä
+    5.  Näytä Pyydä suoritusta -tehtävä
+    6.  Näytä Lähetä uudelleen -tehtävä
 
-10. Valitse **tehty** Poistu muokkaustilasta.
-11. Valitse **takaisin** ja **tehty** Lopeta työtilan
-12. Valitse **julkaista työtilan** tallentamaan tekemäsi muutokset.
-13. Ota **Näyttää laskun loppusummaan odottavien toimittajan laskujen luettelo** Ostoreskontran parametrit-lomakkeessa- **laskun**. Huomaa, että ainoastaan ottamalla käyttöön tämän parametrin, laskun summa lasketaan odottavista toimittajan laskujen sivulla näytetään. Tämä on uusi ominaisuus osana ennalta vaaditut hot Fix 3208224.
+10. Valitse **Valmis** poistuaksesi muokkaustilasta.
+11. Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
+12. Tallenna muutokset valitsemalla **Julkaise työtila**.
+13. Ota käyttöön **Näytä laskun loppusumma odottavien toimittajalaskujen luettelossa** Ostoreskontran parametrit -lomakkeessa kohdassa **Lasku**. Huomaa, että ainoastaan ottamalla käyttöön tämän parametrin laskun kokonaissumma lasketaan näytettäväksi odottavien toimittajan laskujen luettelosivulla. Tämä on uusi ominaisuus, joka kuuluu vaadittuun hotfix-korjaukseen 3208224.
 
-### <a name="vendor-invoice-details"></a>Toimittajan laskutustiedot
+### <a name="vendor-invoice-details"></a>Toimittajan laskun tiedot
 
-Voit suunnitella Mobile laskun tiedot-sivu, **VendMobileInvoiceHeaderDetails** toiminnoissa Dynamics 365 sivua. Huomaa että, laskut, jotka järjestelmän on määrä tällä sivulla on vanhin lasku (lasku, joka on luotu ensin). Voit etsiä tiettyyn laskuun, voit käyttää suodatinta vasemmalla puolella. Kuitenkin olemme tässä esimerkissä eivät edellytä tiettyyn laskuun. Voimme vain vaatia laskutietoja siten, että voimme suunnitella Matkaviestin-sivulta. [![Työnkulku-sivulla](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+Voit suunnitella laskun tietojen sivun käyttämällä Dynamics 365 for Operationsin **VendMobileInvoiceHeaderDetails** -sivua. Huomaa, että riippuen järjestelmässäsi olevien laskujen määrästä tällä sivulla näytetään vanhin lasku (lasku, joka on luotu ensin). Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tässä tarvitaan vain jotkin laskutiedot, että voimme suunnitella mobiilisivun. [![Työnkulku-sivu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  Korvaa Dynamics 365 toimintojen URL-osoitteen, valikkokohteen nimi **VendMobileInvoiceHeaderDetails** -lomakkeen avaamiseen
-2.  Avaa mobiili suunnittelu- **asetukset** (vaihde)-painiketta.
-3.  Valitse **Muokkaa** käynnistääksesi muokkaustilaan työtilassa.
-4.  Valitse ** Omat toimittajalaskujen **, jonka loit aiemmin sivulla ja valitse sitten **Muokkaa**.
-5.  - **Kentät** -välilehdestä **ruudukon** sarakkeen otsikkoa.
-6.  Valitse **ominaisuudet:**&gt;**Lisää sivulla**. **Huomautus:** kun **ruudukon** otsikko ja sivun, yhteys muodostetaan automaattisesti sivun tiedot.
-7.  Kirjoita sivun otsikko, esimerkiksi **laskun tiedot**, ja kuvaus, kuten **voit tarkastella laskuotsikon ja rivin tiedot**.
-8.  Valitse **kentät**. Huomaa, että, joka lisää järjestys on järjestys, jossa kentät näkyvät käyttäjälle. On ainoa tapa muuttaa kenttien järjestystä valitsemalla kaikki kentät uudelleen.
-9.  Tämän skenaarion vaatimusten mukaan otsikosta Lisää seuraavat kentät:
+1.  Korvaa Dynamics 365 for Operationsin URL-osoitteessa valikkokohteen nimi merkkijonolla **VendMobileInvoiceHeaderDetails** avataksesi lomakkeen
+2.  Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.
+3.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
+4.  Valitse **Omat toimittajalaskut** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.
+5.  Valitse **Kentät** -välilehdessä sarakkeen otsikko **Ruudukko**.
+6.  Valitse **Ominaisuudet** &gt; **Lisää sivu**. **Huomautus:** Kun valitset **Ruudukko**-otsikon ja lisäät sivun, yhteys tietosivuun muodostetaan automaattisesti.
+7.  Kirjoita sivun otsikko, esimerkiksi **Laskun tiedot** ja kuvaus, kuten **Näytä laskun otsikko ja rivitiedot**.
+8.  Klikkaa **Valitse kentät**. Huomaa, että kentät näytetään loppukäyttäjille lisäämisjärjestyksessä. Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen.
+9.  Lisää seuraavat kentät otsikosta tämän skenaarion vaatimusten mukaan:
     1.  Toimittajan nimi
     2.  Laskun kokonaissumma
     3.  Laskutusasiakasnumero
@@ -186,41 +189,41 @@ Voit suunnitella Mobile laskun tiedot-sivu, **VendMobileInvoiceHeaderDetails** t
     7.  Eräpäivä
     8.  Laskutusvaluutta
 
-10. Lisää seuraavat kentät sivun ruudukosta rivit:
+10. Lisää seuraavat kentät sivun riviruudukosta:
     1.  Hankintaluokka
     2.  Määrä
     3.  Yksikköhinta
     4.  Rivin nettosumma
     5.  Valmisteveron määrä
 
-11. Kun kaikki edelliset kaksi vaihetta kentät on lisätty, valitse **tehty**. Sivu on muistuttavat seuraavassa kuvassa. [![Kun kentät lisätään sivulle](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
-12. Valitse **tehty** Poistu muokkaustilasta.
-13. Valitse **takaisin** ja **tehty** Lopeta työtilan
-14. Valitse **julkaista työtilan** tallentaa työsi
+11. Kun kaikki edellisten kahden vaiheen kentät on lisätty, valitse **Valmis**. Sivun tulisi olla likipitäen kuin seuraavassa kuvassa. [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+12. Valitse **Valmis** poistuaksesi muokkaustilasta.
+13. Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
+14. Tallenna muutokset valitsemalla **Julkaise työtila**.
 
 ### <a name="workflow-actions"></a>Työnkulkutehtävät
 
-Voit lisätä työnkulkutoimintoja **VendMobileInvoiceHeaderDetails** toiminnoissa Dynamics 365 sivua. Jos haluat avata tämän sivun, korvaa URL-valikkovaihtoehdon nimi kuin teit aikaisemmin. Avaa mobiili suunnittelu- **asetukset** (vaihde)-painiketta. Toimi seuraavien vaiheiden mukaisesti voit lisätä työnkulkutoimintoja tiedot-sivulla.
+Voit lisätä työnkulkutoimintoja Dynamics 365 for Operationsin **VendMobileInvoiceHeaderDetails** -sivulla. Jos haluat avata tämän sivun, korvaa valikkovaihtoehdon nimi URL-osoitteessa, kuten teit aikaisemmin. Avaa sitten mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta. Toimi seuraavien vaiheiden mukaisesti lisätäksesi työnkulkutoimintoja tietosivulle.
 
-1.  Valitse **Muokkaa** käynnistääksesi muokkaustilaan työtilassa.
-2.  Valitse **laskun tiedot**, jonka loit aiemmin sivulla ja valitse sitten **Muokkaa**.
-3.  - **Toimintojen** -välilehdessä **Lisää toiminto**.
-4.  Kirjoita otsikko, esimerkiksi **Hyväksy**, ja kuvaus, kuten **Hyväksy laskun**. Huomaa, että Tässä antamasi otsikko tulee toiminnon, joka näkyy käyttäjälle mobile app nimi.
-5.  Click **Done**.
-6.  Valitse **kentät**.
-7.  Siirry työnkulun käsittelyn kautta **VendMobileInvoiceHeaderDetails** sivulle ja suorita toiminto, jonka haluat tallentaa. Varmista, että työnkulku kommenttien syöttäminen tämän prosessin aikana niin, että kommentit-kenttään sisältyy myös mobiili kokemus.
-8.  Valitse työnkulkutoiminto suoritetaan, kun **tehty** Valitse kenttiin hoidettavaksi.
-9.  Valitse **tehty** Poistu muokkaustilasta.
-10. Valitse **takaisin** ja **tehty** Lopeta työtilan
-11. Valitse **julkaista työtilan** tallentaa työsi
-12. Toista vaiheet 3 – 11-tallentaa kaikki tarvittavat työnkulkutoimintoja. Huomaa, että vaatimus on sinulle, laskut, joita voit tehdä työnkulkutoimintoja sinulle, joka aiot suunnitella tilassa.
-13. Avaa Muistio tai Microsoft Visual Studio ja liitä seuraava koodi. Tallenna tiedosto nimellä .js-tiedosto. Tämä koodi tekee kaksi asiaa:
-    1.  Se piilottaa ylimääräinen työnkulkuun liittyvät sarakkeet, jotka on lisätty aiemmin mobiili sivulla. Voimme lisätä nämä sarakkeet siten, että sovellus on tietojen yhteydessä ja tehdä seuraavaksi.
-    2.  Perustuu työnkulun osavaiheen, joka on käytössä, se koskee näyttämään vain kyseiset toiminnot logiikan.
+1.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
+2.  Valitse **Laskun tiedot** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.
+3.  Valitse **Toiminnot**-välilehdessä **Lisää toiminto**.
+4.  Kirjoita toiminnon otsikko, esimerkiksi **Hyväksy** ja kuvaus, kuten **Hyväksy lasku**. Huomaa, että tässä antamasi otsikko näkyy loppukäyttäjille toiminnon nimenä mobiilisovelluksessa.
+5.  Valitse **Valmis**.
+6.  Klikkaa **Valitse kentät**.
+7.  Siirry työnkulkuprosessin kautta **VendMobileInvoiceHeaderDetails**-sivulle ja suorita toiminto, jonka haluat tallentaa. Varmista, että kirjoitat työnkulun kommentit tämän prosessin aikana, jotta kommenttikenttä sisältyy myös mobiilikokemukseen.
+8.  Kun työnkulkutoiminto on suoritettu, valitse **Valmis** viimeistelläksesi Valitse kentät -tehtävän.
+9.  Valitse **Valmis** poistuaksesi muokkaustilasta.
+10. Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
+11. Tallenna muutokset valitsemalla **Julkaise työtila**.
+12. Toista vaiheet 3 – 11-tallentaaksesi kaikki tarvittavat työnkulkutoiminnot. Huomaa, että mobiilisivujen suunnittelu edellyttää, että sinulle on määritetty laskuja, joiden avulla pääset työnkulkutoimintoihin.
+13. Avaa Muistio tai Microsoft Visual Studio ja liitä seuraava koodi. Tallenna tiedosto .js-tiedostona. Tämä koodi tekee kaksi asiaa:
+    1.  Se piilottaa ylimääräiset työnkulkuun liittyvät sarakkeet, jotka on lisätty aiemmin mobiililuettelosivulla. Lisäsimme nämä sarakkeet, jotta sovelluksella on nämä tiedot oikeassa asiayhteydessä, jotta se voi suorittaa seuraavan vaiheen.
+    2.  Aktiiviseen työnkulun vaiheen perusteella se käyttää logiikkaa, joka näyttää vain kyseiset toiminnot.
 
-Huomaa, että sivut ja muiden ohjausobjektien JS-koodin on oltava sama työtilasta.
+Huomaa, että sivujen ja muiden ohjausobjektien nimet on oltava JS-koodissa samat kuin työtilassa.
 
-1.  Tärkein funktio (metadataService, dataService, cacheService, $q) {palauttaa {appInit: funktio (appMetadata) {/ / piilota ohjausobjektit, joiden on oltava läsnä, mutta ei näy metadataService.configureControl (' oma--toimittajalaskujen, 'ShowAccept' {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowApprove' {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowReject', {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowDelegate', {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowRequestChange', {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowRecall' {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowComplete', {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowResubmit' { piilotettu: TOSI}); }, pageInit: funktio (pageMetadata, params) {Jos (pageMetadata.Name == "Laskutustiedot") {/ / Näytä/Piilota työnkulkutoimintoja työnkulun perusteella vaihe metadataService.configureAction ('Hyväksy' {näkyvissä: TOSI}); metadataService.configureAction ('Hyväksy' {näkyvissä: TOSI}); metadataService.configureAction (Hylkää, {näkyvissä: TOSI}); metadataService.configureAction ('Edustaja' {näkyvissä: TOSI}); metadataService.configureAction (' pyynnön-muuta ', {näkyvissä: TOSI}); metadataService.configureAction ('Peruuta' {näkyvissä: TOSI}); metadataService.configureAction (kokonais, {näkyvissä: TOSI}); metadataService.configureAction ('Lähetä' {näkyvissä: TOSI});
+1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Hide controls that need to be present, but not visible                metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Show/hide workflow actions based on workflow step                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -256,56 +259,56 @@ Huomaa, että sivut ja muiden ohjausobjektien JS-koodin on oltava sama työtilas
            };
         }
 
-2.  Ladata kooditiedoston työtilaan valitsemalla **logiikan** välilehti
-3.  Valitse **tehty** Poistu muokkaustilasta.
-4.  Valitse **takaisin** ja **tehty** Lopeta työtilan
-5.  Valitse **julkaista työtilan** tallentaa työsi
+2.  Lataa kooditiedoston työtilaan valitsemalla **Logiikka**-välilehti
+3.  Valitse **Valmis** poistuaksesi muokkaustilasta.
+4.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
+5.  Tallenna muutokset valitsemalla **Julkaise työtila**.
 
-### <a name="vendor-invoice-attachments"></a>Toimittajan laskujen liitteitä
+### <a name="vendor-invoice-attachments"></a>Toimittajalaskujen liitteet
 
-1.  Valitse **asetukset** (vaihde)-painiketta vasemmassa yläkulmassa oikealla sivulla ja valitse sitten **Mobile app**
-2.  Valitse **Muokkaa** käynnistääksesi muokkaustilaan työtilassa.
-3.  Valitse ** laskun tiedot **, jonka loit aiemmin sivulla ja valitse sitten **Muokkaa**.
-4.  Määrittää **tiedostojen hallinta** asetukseksi **Kyllä** alla olevan esimerkin mukaisesti. **Huomautus:** Jos ei ole Näytä liitteet kannettavan laitteen vaatimukset, voit jättää tämän vaihtoehdon arvoksi **ei**, joka on oletusasetus.
+1.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
+2.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
+3.  Valitse **Laskun tiedot** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.
+4.  Määritä **Tiedostojen hallinta** -asetukseksi **Kyllä** alla olevan esimerkin mukaisesti. **Huomautus:** Jos ei ole liitteitä ei ole tarpeen näyttää mobiililaitteessa, voit jättää tämän vaihtoehdon arvoksi **Ei**, joka on oletusasetus.
 5.  [![docmanagement](./media/docmanagement-216x300.png)](./media/docmanagement.png)
-6.  Valitse **tehty** Poistu muokkaustilasta.
-7.  Valitse **takaisin** ja **tehty** Lopeta työtilan
-8.  Valitse **julkaista työtilan** tallentaa työsi
+6.  Valitse **Valmis** poistuaksesi muokkaustilasta.
+7.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
+8.  Tallenna muutokset valitsemalla **Julkaise työtila**.
 
-### <a name="vendor-invoice-line-distributions"></a>Toimittajan laskun rivin jaot
+### <a name="vendor-invoice-line-distributions"></a>Toimittajan laskujen rivijaot
 
-Tämän skenaarion vaatimusten Varmista, että siellä on vain rivi-tason jaot ja, että lasku on aina vain yksi rivi. Tämä skenaario on yksinkertainen, koska käyttökokemusta kannettavan laitteen täytyy myös olla yksinkertainen niin, että käyttäjällä ei ole Poraudu alaspäin useita tasoja voit tarkastella jakoja. Toimittajalaskujen Dynamics 365 toimintoihin kuuluvat Näyttää laskun ylätunnisteeseen jaot. Tämä on mitä tarvitsemme mobiili tilanteessa. Tämän vuoksi Käytämme **VendMobileInvoiceAllDistributionTree** sivun suunnitteluun mobiili tilanteessa tässä osassa. 
+Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot ja että laskulla on aina vain yksi rivi. Koska tämä skenaario on yksinkertainen, mobiililaitteen käyttökokemuksenkin täytyy olla yksinkertainen, jotta käyttäjän ei tarvitse porautua alaspäin useita tasoja nähdäkseen jaot. Toimittajalaskuihin Dynamics 365 for Operationsissa kuuluu mahdollisuus näyttää kaikki jaot laskun otsikosta. Tämän kokemuksen tarvitsemme mobiiliskenaariossa. Tämän vuoksi käytämme **VendMobileInvoiceAllDistributionTree**-sivua suunnittellaksemme mobiiliskenaarion tämän osan. 
 
 > [!NOTE] 
-> Tietäen vaatimukset auttaa meitä päättää, mitä käyttää ja miten tarkalleen voit optimoida käyttäjän mobiili kokemus, kun Emme suunnittele skenaario tietylle sivulle. Toisessa tilanteessa Käytämme toiselle sivulle osoittamaan jaot, koska skenaarion vaatimukset eroavat.
+> Kun tiedämme vaatimukset, se auttaa päättämään, mitä tiettyä sivua käyttää ja miten tarkalleen optimoida käyttäjän mobiilikokemus, kun suunnittelemme tätä skenaariota. Toisessa tilanteessa käytämme toista sivua näyttämään jaot, koska skenaarioiden vaatimukset eroavat.
 
-1.  Korvaa URL-nimi hiiren kuin teit ennen. Sivu, joka näkyy olisi muistuttavat seuraavassa kuvassa. [![Kaikki jakelut sivu](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
-2.  Avaa mobiili suunnittelu- **asetukset** (vaihde)-painiketta.
-3.  Valitse **Muokkaa** käynnistääksesi muokkaustilaan työtilassa. **Huomautus:** näkevät kaksi uutta sivua on luotu automaattisesti. Järjestelmä luo nämä sivut, koska on otettu käyttöön tiedostojen hallinta edellisessä jaksossa. Voit ohittaa nämä uudet sivut.
-4.  Valitse **Lisää sivulla**.
-5.  Kirjoita sivun otsikko, esimerkiksi **Näytä kirjanpidon**, ja kuvaus, kuten **Näytä laskun kirjanpidon**.
-6.  Click **Done**.
-7.  - **Kentät** -välilehdessä **kentät**, jaot-sivulla Valitse seuraavat kentät ja valitse sitten **tehty**:
+1.  Korvaa valikkovaihtoehdon nimi URL-osoitteessa, kuten teit aikaisemmin. Sivun, joka näkyy, on muistutettava seuraavaa kuvaa. [![Kaikki jaot -sivu](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+2.  Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.
+3.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa. **Huomautus:** Näet, että kaksi uutta sivua on luotu automaattisesti. Järjestelmä luo nämä sivut, koska otit käyttöön tiedostojen hallinnan edellisessä osassa. Voit ohittaa nämä uudet sivut.
+4.  Valitse **Lisää sivu**.
+5.  Kirjoita sivun otsikko, esimerkiksi **Näytä kirjanpito**  ja kuvaus, kuten **Näytä laskun kirjanpito**.
+6.  Valitse **Valmis**.
+7.  Klikkaa **Kentät**-välilehdessä **Valitse kentät**, valitse seuraavat kentät Jaot-sivulta ja valitse sitten **Valmis**:
     1.  Summa
     2.  Valuutta
     3.  Kirjanpitotili
 
 > [!NOTE] 
-> Emme ole valinnut **kuvaus** sarakkeen ruudukon jaot, koska tämän skenaarion vaatimusten vahvistanut, että Laajennettu hinta vain summa, joka on jaot. Tämän vuoksi käyttäjä ei edellyttävät toisen kentän summan tyyppi, joka on jakelu. Kuitenkin seuraava skenaario-olemme **se** käyttää tätä tietoa, koska tämän skenaarion vaatimusten määrittäminen että muuntyyppisiin summan jakelut (kuten arvonlisävero).
-8.  Valitse **tehty** Poistu muokkaustilasta.
-9.  Valitse **takaisin** ja **tehty** Lopeta työtilan
-10. Valitse **julkaista työtilan** tallentaa työsi
+> Emme valinneet **Kuvaus**-saraketta jakoruudukosta, koska tämän skenaarion vaatimukset vahvistivat, että vain laajennetulle hinnalle on olemassa jako. Tämän vuoksi käyttäjä ei edellytä toista kenttää sen summan tyypin määrittämiseksi, jolle jako on. Kuitenkin seuraavassa skenaariossa me **tulemme** käyttämään tätä tietoa, koska tämän skenaarion vaatimukset määrittävät, että muuntyyppisilläkin summilla on jakoja (kuten arvonlisävero).
+8.  Valitse **Valmis** poistuaksesi muokkaustilasta.
+9.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
+10. Tallenna muutokset valitsemalla **Julkaise työtila**.
 
-**Huomautus:****Näytä kirjanpidon** mobiili sivu ei ole tällä hetkellä linkitetty mobiili-sivut, joita emme ole tähän mennessä suunniteltu. Koska käyttäjä voi siirtyä **Näytä kirjanpidon** sivun **laskun tiedot** sivun mobiililaitteessa, Emme anna Siirtyminen **laskun tiedot** sivulta **Näytä kirjanpidon** sivulla. Voimme vahvistaa tämän siirtymisen muita kautta JavaScript logic.
+**Huomautus:** **Näytä kirjanpito** -mobiilisivua ei ole tällä hetkellä linkitetty yhteenkään tähän mennessä suunniteltuun mobiilisivuun. Koska käyttäjän pitää voida siirtyä **Näytä kirjanpito** -sivulle mobiililaitteen **Laskun tiedot** -sivulta, meidän on luotava siirtyminen **Laskun tiedot** -sivulta **Näytä kirjanpito** -sivulle. Luomme tämän siirtymisen JavaScript-lisälogiikan avulla.
 
-1.  Avaa .js-tiedosto, jonka loit aiemmin ja lisää seuraava koodi rivit, jotka näkyvät korostettuina. Tämä koodi tekee kaksi asiaa:
-    1.  Sen avulla varmistetaan, että käyttäjät ei voi siirtyä suoraan työtilan ja **Näytä kirjanpidon** sivulla.
-    2.  Toteaa, että siirtyminen ohjausobjektin **laskun tiedot** sivulta **Näytä kirjanpidon** sivulla.
+1.  Avaa .js-tiedosto, jonka loit aiemmin ja lisää rivit, jotka näkyvät korostettuina seuraavassa koodissa. Tämä koodi tekee kaksi asiaa:
+    1.  Sen avulla varmistetaan, että käyttäjät eivät voi siirtyä suoraan työtilasta **Näytä kirjanpito** -sivulle.
+    2.  Se luo siirtymisen ohjausobjektin **Laskun tiedot** -sivulta **Näytä kirjanpito** -sivulle.
 
 > [!NOTE] 
-> Sivujen ja muiden ohjausobjektien JS-koodin on oltava sama työtilasta.
+> Sivujen ja muiden ohjausobjektien nimet on oltava JS-koodissa samat kuin työtilassa.
 
-1.  Tärkein funktio (metadataService, dataService, cacheService, $q) {palauttaa {appInit: funktio (appMetadata) {/ / piilota ohjausobjektit, joiden on oltava läsnä, mutta ei näy metadataService.configureControl (' oma--toimittajalaskujen, 'ShowAccept' {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowApprove' {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowReject', {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowDelegate', {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowRequestChange', {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowRecall' {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowComplete', {piilotettu: TOSI}); metadataService.configureControl (' oma--toimittajalaskujen, 'ShowResubmit' { piilotettu: TOSI}); Piilota sivut ei sovellu root siirtyminen metadataService.hideNavigation('View-accounting'); Linkkiä voit tarkastella kirjanpidon metadataService.addLink ('-laskutustiedot, "View-Kirjanpito ', '-Kirjanpito-nav-Näytönhallinta ',"Näytä kirjanpidon", true); }, pageInit: funktio (pageMetadata, params) {Jos (pageMetadata.Name == "Laskutustiedot") {/ / Näytä/Piilota työnkulkutoimintoja työnkulun perusteella vaihe metadataService.configureAction ('Hyväksy' {näkyvissä: TOSI}); metadataService.configureAction ('Hyväksy' {näkyvissä: TOSI}); metadataService.configureAction (Hylkää, {näkyvissä: TOSI}); metadataService.configureAction ('Edustaja' {näkyvissä: TOSI}); metadataService.configureAction (' pyynnön-muuta ', {näkyvissä: TOSI}); metadataService.configureAction ('Peruuta' {näkyvissä: TOSI}); metadataService.configureAction (kokonais, {näkyvissä: TOSI}); metadataService.configureAction ('Lähetä' {näkyvissä: TOSI});
+1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Hide controls that need to be present, but not visible                metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });                // Hide pages not applicable for root navigation                metadataService.hideNavigation('View-accounting');                //Link to view accounting                metadataService.addLink('Invoice-details', 'View-accounting', 'View-accounting-nav-control', 'View accounting', true);            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Show/hide workflow actions based on workflow step                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -341,24 +344,24 @@ Tämän skenaarion vaatimusten Varmista, että siellä on vain rivi-tason jaot j
            };
         }
 
-2.  Ladata kooditiedoston työtilaan valitsemalla **logiikan** välilehti, jos haluat korvata aiemman koodin
-3.  Valitse **tehty** Poistu muokkaustilasta.
-4.  Valitse **takaisin** ja **tehty** Lopeta työtilan
-5.  Valitse **julkaista työtilan** tallentaa työsi
+2.  Lataa kooditiedosto työtilaan ja korvaa edellinen koodi valitsemalla **Logiikka**-välilehti
+3.  Valitse **Valmis** poistuaksesi muokkaustilasta.
+4.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
+5.  Tallenna muutokset valitsemalla **Julkaise työtila**.
 
 ### <a name="validation"></a>Valintasäännöt
 
-Kannettavasta laitteesta Avaa sovellus ja muodostamaan yhteyttä Dynamics 365 Operations-esiintymän. Varmista, että kirjaudut yrityksen jossa toimittajalaskuja on määritetty sinulle tarkastelua varten. Olisi voitava suorittaa seuraavat toimet:
+Avaa sovellus mobiililaitteessa ja muodosta yhteys Dynamics 365 for Operations -esiintymään. Varmista, että kirjaudut yritykseen jossa toimittajalaskuja on määritetty sinulle tarkistusta varten. Sinun pitäisi voida suorittaa seuraavat toimet:
 
--   Katso **Omat hyväksynnät** työtila.
--   Perehtymistä **Omat hyväksynnät** työtilaan ja katso **oma toimittajalaskujen** sivulla.
--   Perehtymistä **oma toimittajalaskujen** sivulle ja haluat tarkastella laskuja, jotka on varattu sinulle.
--   Yksi laskut perehtymistä ja katso laskun otsikkotietojen ja rivin tiedot.
--   Tiedot-sivun linkki liitteet ja tämän linkin avulla voit tarkastella liitteitä ja siirry liitteet luetteloon.
--   Tiedot-sivulla on linkki **tarkastella kirjanpidon** sivulle ja käyttää tätä linkkiä Siirry sivulle jaot ja tarkastella jakoja.
--   Valitse tiedot-sivulla **toiminnot** valikon alaosasta, ja suorittaa työnkulkutoimintoja, joita sovelletaan työnkulun vaiheeseen.
+-   Nähdä **Omat hyväksynnät** -työtila.
+-   Porautua **Omat hyväksynnät** -työtilaan ja nähdä **Omat toimittajalaskut** -sivun.
+-   Porautua **Omat toimittajalaskut** -sivulle ja nähdä sinulle määritetyt laskut.
+-   Poraudu yhteen laskuista ja tarkastele laskun otsikon ja rivien tietoja.
+-   Tiedot-sivulla näet linkin liitteisiin ja tämän linkin avulla voit siirtyä liiteluetteloon ja tarkastella liitteitä.
+-   Tiedot-sivulla näet linkin **Näytä kirjanpito** -sivulle ja tämän linkin avulla voit siirtyä jakosivulle ja tarkastella jakoja.
+-   Valitse Tiedot-sivulla **Toiminnot**-valikko sivun alaosasta ja suorita työnkulkutoimintoja, joita sovelletaan työnkulun vaiheeseen.
 
-## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Fabrikam monimutkaisia laskun hyväksynnän Skenaarion suunnitteleminen
+## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Monimutkaisen laskun hyväksynnän skenaarion suunnitteleminen Fabrikamille
 <table>
 <colgroup>
 <col width="50%" />
@@ -372,7 +375,7 @@ Kannettavasta laitteesta Avaa sovellus ja muodostamaan yhteyttä Dynamics 365 Op
 </thead>
 <tbody>
 <tr class="odd">
-<td>Laskun otsikon kentät käyttäjä haluavat nähdä mobiili kokemus ja missä järjestyksessä?</td>
+<td>Mitkä laskun otsikon kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</td>
 <td><ol>
 <li>Toimittajan nimi</li>
 <li>Laskun summa</li>
@@ -385,7 +388,7 @@ Kannettavasta laitteesta Avaa sovellus ja muodostamaan yhteyttä Dynamics 365 Op
 </ol></td>
 </tr>
 <tr class="even">
-<td>Laskurivien kenttiä mitä käyttäjän haluat nähdä mobiili kokemus ja missä järjestyksessä?</td>
+<td>Mitkä laskurivien kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</td>
 <td><ol>
 <li>Hankintaluokka</li>
 <li>Määrä</li>
@@ -395,40 +398,42 @@ Kannettavasta laitteesta Avaa sovellus ja muodostamaan yhteyttä Dynamics 365 Op
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Kuinka monta laskurivien onko lasku? Käytä tätä 80-20 sääntö ja optimoida 80 prosenttia.</td>
+<td>Kuinka monta laskuriviä yhdessä laskussa on? Käytä tässä 80-20-sääntö ja optimoi tärkeimmät 80 prosenttia.</td>
 <td>5</td>
 </tr>
 <tr class="even">
-<td>Käyttäjät haluavat tarkastella mobiililaitteen kirjanpidolliset jaot (lasku coding) aikana arvostelut?</td>
+<td>Haluavatko käyttäjät tarkastella mobiililaitteessa kirjanpidollisia jakoja (laskujen koodausta) tarkistusten aikana?</td>
 <td>Kyllä</td>
 </tr>
 <tr class="odd">
-<td>Kuinka monta kirjanpidolliset jaot (Laajennettu hinta, arvonlisävero, kulut ja niin edelleen) on laskuriviä varten? Käytä uudelleen 80-20 sääntö.</td>
-<td>Kokonaishinta: 2 ALV: 2 kulut: 2</td>
+<td>Kuinka monta kirjanpidollista jakoa (laajennettua hintaa, arvonlisäveroa, kulua jne.) on yhdellä laskurivillä? Käytä uudelleen 80-20-sääntöä.</td>
+<td>Laajennettu hinta: 2 ALV: 2 Kulut: 2</td>
 </tr>
 <tr class="even">
-<td>Laskut myös tarvitse kirjanpidollisten jakojen ja laskuotsikon? Jos näin on, nämä kirjanpidolliset jaot on käytettävissä laitteessa?</td>
+<td>Onko laskuissa myös kirjanpidolliset jaot laskuotsikossa? Jos näin on, ovatko nämä kirjanpidolliset jaot on käytettävissä laitteessa?</td>
 <td>Ei käytössä</td>
 </tr>
 <tr class="odd">
-<td>Käyttäjät haluavat nähdä laitteen laskulle liitteitä?</td>
+<td>Haluavatko käyttäjät nähdä laskun liitteet laitteella?</td>
 <td>Kyllä</td>
 </tr>
 </tbody>
 </table>
 
-### <a name="exercise"></a>Harjoituksessa
+### <a name="exercise"></a>Harjoitus
 
-Skenaario 1 Skenaario 2 vaatimukset perustuvat seuraaviin muutoksiin voidaan tehdä. Käyttää käyttö, jotka ovat käytettävissä tämän osan opiskelua varten.
+Skenaariolle 1 voidaan tehdä seuraavat muunnelmat perustuen skenaarion 2 vaatimuksiin. Käytä tätä osiota harjoituksena, jonka voit tehdä opiskelua varten.
 
-1.  Yksi huoltolaskun rivit odotetaan 2-skenaariossa, koska seuraavat muutokset rakenteeseen auttaa parantaa käyttökokemusta kannettavan laitteen:
-    1.  Sen sijaan että tarkastelisit laskurivien tiedot (kuten skenaario 1) sivulla, käyttäjät voivat tarkastella rivejä mobiili erillisellä sivulla.
-    2.  Koska tässä tilanteessa on odotettavissa useita laskun rivejä, jos **VendMobileInvoiceAllDistributionTree** -sivua käytetään mobiili (kuten skenaario 1) jaot-sivujen suunnitteluun, se voi olla hämmentävää käyttäjä joka korreloi jaot rivit. Tämän vuoksi käyttää **VendMobileInvoiceLineDistributionTree** sivun jaot sivujen suunnitteluun.
-    3.  Parhaassa tapauksessa jakoja voidaan osoittaa laskurivi tässä tilanteessa yhteydessä. Varmista siksi, että käyttäjä voi porautua rivin, voit tarkastella sivun jaot. Sivun linkki-ominaisuuden avulla voit määrittää yksityiskohtaiset tiedot, samalla tavalla kuin skenaario 1 sivujen ylä- ja tiedot.
+1.  Koska skenaariossa 2 odotetaan enemmän laskurivejä, seuraavat muutokset rakenteeseen auttavat optimoimaan mobiililaitteen käyttökokemusta:
+    1.  Sen sijaan että tarkastelisit laskurivejä tietosivulla (kuten skenaariossa 1), käyttäjät voivat tarkastella rivejä erillisellä mobiilisivulla.
+    2.  Koska tässä tilanteessa on odotettavissa useita laskun rivejä ja jos **VendMobileInvoiceAllDistributionTree** -sivua käytetään mobiilin jakosivun suunnittelussa (kuten skenaariossa 1), se voi olla hämmentävää käyttäjälle yhdistää rivit jakoihin. Tämän vuoksi käytä **VendMobileInvoiceLineDistributionTree**-sivua jakosivun suunnitteluun.
+    3.  Parhaassa tapauksessa tässä skenaariossa jaot pitäisi näyttää laskurivin yhteydessä. Varmista siksi, että käyttäjä voi porautua riviin nähdäkseen jakosivun. Sivulinkkiominaisuuden avulla voit määrittää porautumisen samalla tavalla kuin otsikko- ja tietosivuille skenaariossa 1.
 
-2.  Useita summatyyppi on odotettavissa, jaot 2-skenaariossa (esimerkiksi arvonlisäveron ja kulut), koska se on näyttää summatyypin kuvaus. (Olemme pois näitä tietoja skenaario 1).
+2.  Koska skenaariossa 2 on odotettavissa useita summatyyppejä (arvonlisävero, kulut jne.), on hyödyllistä näyttää summatyypin kuvaus. (Nämä tiedot jätettiin pois skenaariossa 1).
 
 ## <a name="conclusion"></a>Johtopäätökset
-Mobile platform ja sovelluksen ominaisuuksia avulla voit suunnitella mobiili skenaarioita, jotka on optimoitu käyttäjän organisaation perusta. Jotka ovat tämän ohjeaiheen esimerkkien perusteella, voit yritä muita variaatioita ja luoda erilaisia kokemuksia, jotka vastaavat tiettyjä tarpeita.
+Mobiiliympäristön ja sovelluksen ominaisuuksien avulla voit suunnitella mobiiliskenaarioita, jotka on optimoitu organisaation käyttäjäkunnalle. Tässä aiheessa esitettyjen esimerkkien avulla voit kokeilla muita muunnelmia omien tarpeidesi mukaan.
+
+
 
 

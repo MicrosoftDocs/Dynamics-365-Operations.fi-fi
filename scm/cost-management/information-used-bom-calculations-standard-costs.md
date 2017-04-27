@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bom-calculations-with-standard-costs"></a>Standardikustannuksia käyttävät tuoterakennelaskelmat
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Standardikustannuksen tuoterakennelaskelmassa käytettäviin ostetun nimikkeen tietoihin sisältyvät seuraavat tiedot:
@@ -78,6 +81,8 @@ Standardikustannuksen tuoterakennelaskelmassa käytettäviin kustannuslaskelmave
 -   Kustannusten on sisällyttävä kustannuslaskelmaversioon − Kustannusten on kuuluttava sisältöön. Sisältöön voi valinnaisesti sisällyttää myyntihinnat valmistettujen nimikkeiden ehdotettujen myyntihintojen laskemista varten.
 
 Tuoterakennelaskentaa aloitettaessa voi määrittää useita tietolähteitä. Näihin kuuluvat toimipaikka, laskentapäivämäärä ja kustannuslaskelmaversio.
+
+
 
 
 

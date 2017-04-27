@@ -1,5 +1,5 @@
 ---
-title: "Määritä ja hallitse ohjelman edut"
+title: "Etuohjelman määrittäminen ja hallinta"
 description: "Henkilöstöhallinto sisältää joukon työkaluja, joiden avulla organisaation tarjoamia tai työntekijöitä varten käsittelemiä etuja, vähennyksiä ja työntekijöiden kompensaatiosuunnitelmia voi määrittää ja ylläpitää. Tässä artikkelissa on tietoja etujen määrittämisestä ja hallinnasta."
 author: rschloma
 manager: AnnBe
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="define-and-manage-a-benefits-program"></a>Määritä ja hallitse ohjelman edut
+# <a name="define-and-manage-a-benefits-program"></a>Etuohjelman määrittäminen ja hallinta
 
-Henkilöstöhallinto sisältää joukon työkaluja, joiden avulla organisaation tarjoamia tai työntekijöitä varten käsittelemiä etuja, vähennyksiä ja työntekijöiden kompensaatiosuunnitelmia voi määrittää ja ylläpitää. Tässä aiheessa on tietoja siitä, miten voit määrittää hallinta-etuudet.
+[!include[banner](includes/banner.md)]
+
+
+Henkilöstöhallinto sisältää joukon työkaluja, joiden avulla organisaation tarjoamia tai työntekijöitä varten käsittelemiä etuja, vähennyksiä ja työntekijöiden kompensaatiosuunnitelmia voi määrittää ja ylläpitää. Tässä artikkelissa on tietoja etujen määrittämisestä ja hallinnasta.
 
 <a name="benefit-setup"></a>Etujen asetukset
 -------------
 
 Työntekijät voidaan rekisteröidä etuihin sen jälkeen, kun kunkin edun elementit on luotu. Nämä elementit yhdistävät samanlaiset etusuunnitelmat ja määrittävät oletusasetukset, kuten vähennysten määrät ja kirjanpitotiedot. Useita asetuksia voidaan muokata myöhemmin, kun työntekijät rekisteröidään etuun. Organisaation etusuunnitelmassa voi olla useita rekisteröitymisasetuksia tai työntekijä voi peruuttaa suunnitelmaan rekisteröitymisen. 
 
-[![Hyötyä prosessinkulku](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
+[![Etuprosessin työnkulku](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## <a name="benefit-elements"></a>Edun elementit
 Ennen etujen luomista ja työntekijöiden rekisteröimistä niihin määritetään edun muodostavat elementit, joita ovat tyyppi, suunnitelma ja asetukset.
@@ -46,27 +49,29 @@ Ennen etujen luomista ja työntekijöiden rekisteröimistä niihin määritetä�
 
 Organisaatio voi tarjota työntekijöille jokaista etutyyppiä, kuten näöntarkistusta tai hammashuoltoa, varten yhden tai useita suunnitelmia. Organisaatio voi tarjota kutakin suunnitelmaa varten useita asetuksia. Työntekijät voivat ostaa esimerkiksi henkivakuutuksen lisävakuutusturvan, joka on vuosipalkan suuruinen tai kaksi tai kolme kertaan sen suuruinen. Jokaisesta suunnitelman ja asetusten yhdistelmästä muodostuu etu, johon työntekijät voivat rekisteröityä. 
 
-[![etu-pic](./media/benefit-pic.png)](./media/benefit-pic.png)
+[![benefit pic](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Oikeutus
-Useat tekijät määrittävät työntekijän kelpoisuuden työnantajan tarjoamiin erilaisiin etutyyppeihin. Voit määrittää kelpoisuus, joka koskee kyseisen etuuden tyypin luodessasi hyötyä Microsoft Dynamics-365 operaatioille. 
+Useat tekijät määrittävät työntekijän kelpoisuuden työnantajan tarjoamiin erilaisiin etutyyppeihin. Kun etu luodaan Microsoft Dynamics 365 for Operationsissa, etuun liittyvän kelpoisuuden tyyppi voidaan määrittää. 
 
-Voit tehdä hyötyä käytettävissä kaikille työntekijöille. Esimerkiksi jotkin yritykset tarjoavat pysäköinti osumia kaikille työntekijöille kuin luontaisetu. Kun tämä etu luodaan, määritä kelpoisuuden arvoksi **Kaikki työntekijät ovat oikeutettuja**. 
+Voit tehdä edun käytettäväksi kaikille työntekijöille. Jotkin yritykset tarjoavat esimerkiksi pysäköintilippuja luontaisetuna kaikille työntekijöille. Kun tämä etu luodaan, määritä kelpoisuuden arvoksi **Kaikki työntekijät ovat oikeutettuja**. 
 
-Tukikelpoisuutta ei liity muita etuja, kuten garnishments ja ALV-maksut. Hera luoda tällaisia etuuksia, arvoksi määritetään tukikelpoisuuden **ohittaa tukikelpoisuuden prosessi**. 
+Muissa eduissa, kuten, palkanpidätyksissä ja veroissa, kelpoisuus ei ole voimassa. Kun luot tämän tyyppisiä etuja, kelpoisuuden arvoksi määritetään **Kaikki työntekijät ovat oikeutettuja**. 
 
-Lopuksi etu tukikelpoisuutta voidaan säännön perusteella. Esimerkiksi yritys tarjoaa kahdenlaisia henkivakuutus hyötyä työntekijöille. Executive työntekijät ovat oikeutettuja yksi henkivakuutus suunnitelma kaikkien kokoaikaisten työntekijöiden ovat tukikelpoisia henkivakuutus suunnitelma. Dynamics 365 operaatioille voit luoda kaikki executive työntekijöiden edun kelpoisuus sääntö ja toinen sääntö kaikkien kokoaikaisten työntekijöiden ja näiden säännösten soveltaminen sitten asianmukaiset etu.
+Etukelpoisuus voi perustua sääntöön. Esimerkissä yritys tarjoaa työntekijöille kahta erityyppistä henkivakuutusetua. Johtotason työntekijät ovat oikeutettuja eri henkivakuutussuunnitelmaan kuin kokoaikaiset työntekijät. Microsoft Dynamics 365 for Operationsissa voidaan luoda etukelpoisuuden sääntö, jonka avulla etsitään johtotason työntekijät, ja toinen sääntö, jonka avulla etsitään kokoaikaiset työntekijät. Tämän jälkeen säännöt kohdistetaan soveltuvaan etuun.
 
 ## <a name="enrollment"></a>Rekisteröityminen
 Kun organisaation tarjoamat edut on luotu ja kelpoisuus määritetty, voit rekisteröidä työntekijät etuihin. Yhden prosessin aikana etuihin voi rekisteröidä yhden työntekijän tai useita työntekijäitä yhteen tai useaan etuun. 
 
-Joskus organisaatio lopettaa tietyn edun tarjoamisen. Tällöin sinun täytyy päivittää etu ja jotka ovat rekisteröityneet työntekijät. Edun voimassaolon avulla voit muuttaa kyseisen etuuden samaan aikaan sekä etu-että työntekijän rekisteröintejä vanhentumispäivämäärä. Voit myös valita useita työntekijöitä, joka on rekisteröity johonkin etuun, ja muuttaa niiden kattamiseen päättymispäivämäärän. 
+Joskus organisaatio lopettaa tietyn edun tarjoamisen. Tällöin etu ja siihen rekisteröidyt työntekijät on päivitettävä. Etujen joukkopäättämisen avulla voit muuttaa samalla sekä edun että työntekijän rekisteröimisten päättymispäivää. Voit myös valita useita työntekijöitä, joka on rekisteröity johonkin etuun, ja muuttaa niiden kattamiseen päättymispäivämäärän. 
 
 Etujen joukkopäättämisen avulla voi samaan tapaan laajentaa sekä edun että työntekijöiden rekisteröitymisten päättymispäivää, jos haluat edun olevan käytettävissä alkuperäistä aikaa pidempään.
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Benefit eligibility policies](benefit-eligibility-policies.md)
+[Etukelpoisuuden käytännöt](benefit-eligibility-policies.md)
+
+
 
 

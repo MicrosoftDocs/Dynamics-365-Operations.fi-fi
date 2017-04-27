@@ -1,6 +1,6 @@
 ---
-title: "Warehousing app app kenttien nimien määrittäminen"
-description: "Tässä aiheessa kuvataan, miten määrittäminen fyysisen varastoinnin app kenttien nimet ja painopisteet-operaatioille Dynamics 365."
+title: "Warehousing-sovelluksen kenttien nimien määrittäminen"
+description: "Tässä aiheessa kuvataan, miten määritetään Warehousing-sovelluksen kenttien nimet ja prioriteetit Dynamics 365 for Operationsissa."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-app-field-names-in-warehousing-app"></a>Warehousing app app kenttien nimien määrittäminen
+# <a name="configure-app-field-names-in-warehousing-app"></a>Warehousing-sovelluksen kenttien nimien määrittäminen
 
-Tässä aiheessa kuvataan, miten määrittäminen fyysisen varastoinnin app kenttien nimet ja painopisteet-operaatioille Dynamics 365. 
+[!include[banner](../includes/banner.md)]
 
-**Huomautus:** tämä aihe koskee fyysisen varastoinnin hallinnan toiminnot. Se ei koske Varastonhallinta ominaisuudet. Työvaiheiden - 365 Dynamics varastoinnista on sovellus, jonka avulla voit käyttää fyysisen varastoinnin tehtävien suorittamiseen. Voit määrittää ja määrittää kenttien nimet, joita käytetään sovelluksen, kuin sekä määrittää prioriteetti, johon kenttien nimet olisi liitetty. Tässä ohjeaiheessa kerrotaan, kuinka nämä fyysisen varastoinnin app kenttien nimet ja painopisteiden määrittäminen ja miten niitä käytetään Dynamics 365-toiminnot - varastoinnista. Lisätietoja Määritä yhteys Dynamics 365 työvaiheiden - varastointi, Katso opetusohjelma [asentaa ja määrittää työvaiheiden - varastoinnista 365 Dynamics](install-configure-warehousing-app.md).
 
-<a name="configure-warehouse-app-field-names"></a>Määritä varasto app kenttien nimet
+Tässä aiheessa kuvataan, miten määritetään Warehousing-sovelluksen kenttien nimet ja prioriteetit Dynamics 365 for Operationsissa. 
+
+**Huomautus:** Tämä ohjeaihe koskee varastonhallintamoduulin ominaisuuksia. Se ei koske inventaariohallintamoduulin ominaisuuksia. Dynamics 365 for Operations - Warehousing on sovellus, jonka avulla voit suorittaa fyysisen varastoinnin tehtäviä. Voit määrittää ja konfiguroida kenttien nimet, joita käytetään sovelluksessa, sekä määrittää prioriteetin, johon kenttien nimet tulisi liittää. Tässä aiheessa kuvataan, miten määritetään nämä varastosovelluksen kenttien nimet ja prioriteetit ja miten niitä käytetään Dynamics 365 for Operations - Warehousing -sovelluksessa. Lisätietoja yhteyden määrittämisestä Dynamics 365 for Operations - Warehousing -sovellukseen, saat oppaasta [Dynamics 365 for Operations - Warehousing -sovelluksen asennus ja määritys](install-configure-warehousing-app.md).
+
+<a name="configure-warehouse-app-field-names"></a>Warehousing-sovelluksen kenttien nimien määrittäminen
 ===================================
 
-Kun käytät Operations - Dynamics 365 varastoinnista matkaviestimessä, voit määrittää miten metatiedot näytetään laite **varasto app kenttien nimet** sivun. Valitse uusi yrityksen toiminnoissa Dynamics 365, **luoda oletusasetukset** luomaan kaikkien kenttien nimet, joita käytetään varaston matkaviestimen työnkulkuja ja osoita heille ensisijainen input mode ja syötteen tyyppi. Kun kaikkien kenttien nimet on luotu, voit valita syötteen seuraavista vaihtoehdoista.
+Kun käytät Dynamics 365 for Operations - Warehousing -sovellusta mobiililaitteessa, voit määrittää, miten metatiedot näytetään laitteessa **Warehousing-sovelluksen kenttien nimet** -sivulla. Valitse uudessa Dynamics 365 for Operations -yrityksessä **Luo oletusasetukset** luodaksesi kaikkien kenttien nimet, joita käytetään varastoinnin mobiililaitteen työnkuluissa, ja osoita siten niille ensisijainen syötetila ja syötteen tyyppi. Kun kaikkien kenttien nimet on luotu, voit valita syötteen seuraavista vaihtoehdoista.
 
 <table>
 <colgroup>
@@ -51,25 +54,25 @@ Kun käytät Operations - Dynamics 365 varastoinnista matkaviestimessä, voit m�
 <tbody>
 <tr class="odd">
 <td>Ensisijainen syöttömenetelmä</td>
-<td>Tämä vaihtoehto määrittää, onko kenttä skannauksen tai manuaalisen syötön syöttökentän näytetään valitun kentän nimen. Tämä on tarpeen erottaa kentät sen mukaan, jos viivakoodeja käytetään kentälle. <strong>Huomautus:</strong>, kenttien nimet ensisijainen syöttö-tilassa arvoksi <strong>Scanning</strong>, voit syöttää tiedot manuaalisesti jos viivakoodi on vioittunut tai lukukelvoton.</td>
+<td>Tämä vaihtoehto määrittää, näytetäänkö skannauskenttä vai manuaalinen syöttökenttä valitulle kentän nimelle. Tämä on tarpeen sen erottamiseksi, jos viivakoodeja käytetään tälle kentälle. <strong>Huomautus:</strong> Niille kenttien nimille, joiden ensisijainen syöttötila on <strong>Skannaus</strong>, voit syöttää tiedot manuaalisesti jos viivakoodi on vioittunut tai lukukelvoton.</td>
 </tr>
 <tr class="even">
 <td>Syötetyyppi</td>
-<td>Tämä vaihtoehto määrittää ilmauksen lajin pitäisi käyttää valitun kenttänimi. Käytettävissä on neljä vaihtoehtoa:
+<td>Tämä vaihtoehto määrittää, mitä syötetilaa pitäisi käyttää valitulle kentän nimelle. Käytettävissä on neljä asetusta:
 <ul>
-<li><strong>Valinta</strong> - sisältää luettelon vaihtoehtoa. Tässä vaihtoehdossa kenttien nimiä ei voi muokata.</li>
-<li><strong>Päivä</strong> - kenttien nimiä kuten päivämäärä näyttää päivämäärämuoto, jonka nimi on määritetty. Näin varastotyöntekijät Katso mitä voit kirjoittaa päivämäärä muodossa. Tässä vaihtoehdossa kenttien nimiä ei voi muokata.</li>
-<li><strong>Alfa</strong> -, jos laitteen näppäimistöä käytetään syötettäessä tietoja manuaalisesti app. Näppäimistön kokemuksia voidaan muuttaa sen mukaan, mitä laitetta käytetään.</li>
-<li><strong>Numeerinen</strong> - varten kentän nimiä, Käytä numeroita vain, voit valita tämän vaihtoehdon saat näyttöön mukautetun numeronäppäimistö syöttökentän laitteen näppäimistön sijaan.</li>
+<li><strong>Valinta</strong> - sisältää asetusluettelon, josta voi valita. Tässä vaihtoehdossa kenttien nimiä ei voi muokata.</li>
+<li><strong>Päivämäärä</strong> - kenttien nimet, jotka on määritetty päivämääriksi, näyttävät päivämäärämuodon otsikon yhteydessä. Näin varastotyöntekijät näkevät, missä muodossa kirjoittaa päivämäärä. Tässä vaihtoehdossa kenttien nimiä ei voi muokata.</li>
+<li><strong>Alpha</strong> - jos tämä valitaan, laitteen näppäimistöä käytetään syötettäessä tietoja manuaalisesti sovellukseen. Näppäimistön käyttöä voidaan muuttaa sen mukaan, mitä laitetta käytetään.</li>
+<li><strong>Numeerinen</strong> - kentän nimille, jotka käyttävät vain numeroita, voit valita tämän vaihtoehdon näyttääksesi mukautetun numeronäppäimistön syöttökentän yhteydessä laitteen näppäimistön sijaan.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Määritä varasto app-kentässä prioriteetti
+<a name="configure-warehouse-app-field-priority"></a>Warehousing-sovelluksen kenttäprioriteetin määrittäminen
 ======================================
 
-- **Varasto app-kentässä prioriteetti** -sivulla voit sijoittaa kenttien nimet prioriteetti eri ryhmiin. Näin voit päättää, mitä tietoja näytetään sivulla päätehtävä silloin, kun fyysisen varastoinnin työntekijöiden tehtävät sovelluksen avulla. Jos valitset **luoda oletusasetukset**, järjestelmä luo oletusarvoiset etusijalle. On mahdollista luoda niin monta ensisijaisesti ryhmiä tarpeen mukaan, mutta tehtävä-sivulla näytetään vain kolmelle prioriteetti. Kun Dynamics 365 työvaiheiden lähettää sovelluksen metatietoja, se määrittää kunkin kentän suhteellisen prioriteetin mukaan sen prioriteetti ryhmässä ja sovellus näyttää tehtävän sivulla metatietojen sisältämiä ensimmäisen kolmen prioriteetin ryhmät. Loput menevät metatiedot näytetään toissijainen tiedot-sivulla. Seuraavassa taulukossa on viisi prioriteettia ryhmät esimerkki.
+**Varastosovelluksen kenttäprioriteetti** -sivulla voit määrittää kenttänimet eri prioriteettiryhmiin. Näin voit päättää, mitä tietoja näytetään sivulla päätehtäväsivulla silloin, kun fyysisen varastoinnin työntekijät suorittavat tehtäviä sovelluksen avulla. Jos valitset **Luo oletusasetukset**, järjestelmä luo oletusarvoiset prioriteettiryhmät. On mahdollista luoda niin monta prioriteettiryhmiä kuin on tarpeen, mutta tehtäväsivulla näytetään vain kolme prioriteettiryhmää. Kun Dynamics 365 for Operations lähettää metatietoja sovellukseen, se määrittää kunkin kentän suhteellisen prioriteetin sen prioriteettiryhmän mukaan ja sovellus näyttää ensimmäiset kolme metatietojen sisältämää prioriteettiryhmää. Loput metatiedot näytetään toissijaisten tietojen sivulla. Seuraavassa taulukossa on esimerkit viidestä prioriteettiryhmästä.
 
 <table>
 <colgroup>
@@ -78,7 +81,7 @@ Kun käytät Operations - Dynamics 365 varastoinnista matkaviestimessä, voit m�
 </colgroup>
 <thead>
 <tr class="header">
-<th>Prioriteetti-ryhmä</th>
+<th>Prioriteettiryhmä</th>
 <th>Määritetyt kentät</th>
 </tr>
 </thead>
@@ -99,13 +102,13 @@ Kun käytät Operations - Dynamics 365 varastoinnista matkaviestimessä, voit m�
 </ul></td>
 </tr>
 <tr class="odd">
-<td> 30 prioriteetti</td>
+<td> Prioriteetti 30</td>
 <td><ul>
 <li>Nimikkeen kuvaus</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td> 40 prioriteetti</td>
+<td> Prioriteetti 40</td>
 <td><ul>
 <li>Konfiguraatio</li>
 <li>Väri</li>
@@ -123,7 +126,7 @@ Kun käytät Operations - Dynamics 365 varastoinnista matkaviestimessä, voit m�
 </tbody>
 </table>
 
-Esimerkiksi kun Varastotyöntekijä suorittaa tehtävän mobiililaitteessa, jos metatietojen, joka näytetään sovelluksen koostuu seuraavista kentistä:
+Esimerkiksi kun varastotyöntekijä suorittaa tehtävän mobiililaitteella ja jos metatiedot, jotka näytetään sovelluksessa, koostuu seuraavista kentistä:
 
 -   Nimike
 -   Määrä
@@ -131,17 +134,19 @@ Esimerkiksi kun Varastotyöntekijä suorittaa tehtävän mobiililaitteessa, jos 
 -   Nimikkeen kuvaus
 -   Koko ja sijainti
 
-Yllä olevassa taulukossa määritetty varasto app kentän prioriteetin perusteella, seuraavat 3 tietorivistä näytetään tehtävän sivulla:
+Yllä olevassa taulukossa määritettyjen varastosovelluksen kenttäprioriteettien perusteella seuraavat 3 tietoriviä näytetään tehtäväsivulla:
 
--   Rivi 1: Nimike, määrä, mittayksikön koodi
--   Rivi 2: Kuvaus
--   Rivin 3: koon
+-   Rivi 1: Nimike, Määrä, Mittayksikkö
+-   Rivi 2: Nimikkeen kuvaus
+-   Rivi 3: koko
 
-Jäljellä olevat metatiedot, esimerkiksi sijainti ei näy sivulla tehtävän, mutta tiedot-sivu tulee näkyviin. Lisätietoja ja esimerkkejä käyttöliittymän, voit viitata blogikirjoituksessa [toiminnot - varastoinnista Dynamics 365 julkaisu](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+Jäljellä olevat metatiedot, esimerkiksi sijainti, ei näy tehtäväsivulla, mutta kylläkin tietosivulla. Lisätietoja ja esimerkkejä käyttöliittymästä saat blogikirjoituksesta [ Dynamics 365 for Operations - Warehousing -sovelluksen julkaisu](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Asenna ja määritä Microsoft Dynamics-365 työvaiheiden – varastoinnista](install-configure-warehousing-app.md)
+[Asenna ja määritä Microsoft Dynamics 365 for Operations - Warehousing](install-configure-warehousing-app.md)
+
+
 
 

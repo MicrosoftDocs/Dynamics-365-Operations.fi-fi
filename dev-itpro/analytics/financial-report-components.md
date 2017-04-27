@@ -101,7 +101,7 @@ Voit tallentaa aiemmin luodun rakenneosaryhmän uudella nimellä. Voit sitten mu
 
 ### <a name="export-a-building-block-group"></a> Rakenneosaryhmän vieminen
 
-Voit viedä rakenneosan ryhmän tai tietyn raportin rakenneosia rakenneosan ryhmässä. Voit käyttää vietyä rakenneosan ryhmän varmuuskopiona. Voit myös kopioida rakenneosan ryhmiä tai Dynamics 365 vietyjä tietoja toimintojen asennuksissa. Raportin suunnittelija on viitattu fonttityylit ja dimensioyhdistelmät rakenneosa-ryhmän kanssa.
+Voit viedä rakenneosanryhmän tai rakenneosaryhmän tietyn raportin rakenneosat. Voit käyttää vietyä rakenneosaryhmää varmuuskopiona. Voit myös kopioida viedyt tiedot rakenneosaryhmien tai Dynamics 365 for Operations -asennusten välillä. Report Designer ja rakenneosaryhmä sisältävät yhdessä viitatut fonttityylit ja dimensioyhdistelmät.
 1.  Valitse Report Designerin **Yritys**-valikossa **Rakenneosaryhmät**.
 2.  Valitse **Rakenneosaryhmät**-valintaikkunassa vietävä rakenneosaryhmä. Valitse sitten **Vie**.
 3.  Valitse **Vie**-valintaikkunassa vietävät raporttien määritykset.

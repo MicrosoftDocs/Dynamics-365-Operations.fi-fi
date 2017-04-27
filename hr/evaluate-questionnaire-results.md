@@ -1,6 +1,6 @@
 ---
 title: Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen
-description: "Tässä ohjeaiheessa kerrotaan, kuinka voit tarkastella ja arvioida tuloksia kyselylomakkeita, joita käyttäjät voivat suorittaa."
+description: "Tässä aiheessa kerrotaan, miten vastaajien täyttämien kyselylomakkeiden tuloksia voidaan tarkastella ja arvioida."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen
 
-Tässä ohjeaiheessa kerrotaan, kuinka voit tarkastella ja arvioida tuloksia kyselylomakkeita, joita käyttäjät voivat suorittaa. 
+Tässä aiheessa kerrotaan, miten vastaajien täyttämien kyselylomakkeiden tuloksia voidaan tarkastella ja arvioida. 
 
 Kun vastaajat ovat täyttäneet kyselylomakkeen, voit tarkastella ja arvioida kyselylomakkeen tuloksia seuraavilla tavoilla.
 

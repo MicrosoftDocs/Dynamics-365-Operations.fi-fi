@@ -1,6 +1,6 @@
 ---
 title: "Dokumentaation tai koulutuksen luominen tehtävätallenteiden avulla"
-description: "Tässä ohjeaiheessa kerrotaan, mitä tehtävän tallennus ja tehtävä apuviivat ovat tallenteiden tehtävän luomisesta ja mukauttamisesta Microsoft tehtävä ohjaa ja sisällyttää ne ohjeet."
+description: "Tässä ohjeaiheessa kerrotaan, mitä tehtävien tallennustoiminto ja tehtäväoppaat ovat, miten tehtävätallenteita luodaan, ja miten Microsoftin tehtäväoppaita voi mukauttaa ja sisällyttää omiin ohjeisiisi."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,19 +27,22 @@ ms.lasthandoff: 03/31/2017
 ---
 
 # <a name="create-documentation-or-training-using-task-recordings"></a>Dokumentaation tai koulutuksen luominen tehtävätallenteiden avulla
-Tässä ohjeaiheessa kerrotaan, mitä tehtävän tallennus ja tehtävä apuviivat ovat tallenteiden tehtävän luomisesta ja mukauttamisesta Microsoft tehtävä ohjaa ja sisällyttää ne ohjeet.
+
+[!include[banner](../includes/banner.md)]
+
+Tässä ohjeaiheessa kerrotaan, mitä tehtävien tallennustoiminto ja tehtäväoppaat ovat, miten tehtävätallenteita luodaan, ja miten Microsoftin tehtäväoppaita voi mukauttaa ja sisällyttää omiin ohjeisiisi.
 
 <a name="learn-about-task-recorder"></a>Lisätietoja tehtävän tallennustoiminnosta
 -------------------------
 
-Tehtävän tallennus on Microsoft Dynamics-365-toiminnot-työkalu, jonka avulla voit nauhoittaa toimia, jotka tuotteen käyttöliittymän (UI) kestää. Kun käytät tehtävän tallennustoimintoa, kaikki palvelimen avulla käyttöliittymässä suoritettavat tehtävät, kuten arvojen lisääminen, asetusten muuttaminen ja tietojen poistaminen, tallennetaan. Kaikkia tallennettuja vaiheita kutsutaan *tehtävätallenteeksi*. Tehtävätallenteita voidaan käyttää esimerkiksi seuraavilla tavoilla:
+Tehtävän tallennustoiminto on Microsoft Dynamics 365 for Operations -työkalu, jolla voi tallentaa tuotteen käyttöliittymässä suoritetut toiminnot. Kun käytät tehtävän tallennustoimintoa, kaikki palvelimen avulla käyttöliittymässä suoritettavat tehtävät, kuten arvojen lisääminen, asetusten muuttaminen ja tietojen poistaminen, tallennetaan. Kaikkia tallennettuja vaiheita kutsutaan *tehtävätallenteeksi*. Tehtävätallenteita voidaan käyttää esimerkiksi seuraavilla tavoilla:
 
--   **Tehtävätallenteiden toistaminen tehtävän ohjauksina.** Tehtävän apuviivat ovat toimintojen avulla kokemusta Dynamics-365 erottamaton osa. Tehtävä opas on valvottu, Avustava, vuorovaikutteinen kokemus, liiketoiminnan prosessin vaiheet. Käyttäjää ohjataan kunkin vaiheen suorittamisessa ponnahduskehotteen (eli kuplan) avulla. Se esiintyy kaikkialla käyttöliittymässä ja osoittaa käyttöliittymäelementin, johon käyttäjän tulee reagoida. "Kuplan" sisältää myös tietoja vuorovaikutteisesti sivun osaan, kuten "Napsauta tätä" tai "Kirjoita tähän kenttään arvo." Tehtävä opas toimii käyttäjän tietojen joukkoa vastaan ja syötetyt tiedot on tallennettu käyttäjän ympäristössä.
--   **Tehtävän tallenteita voi näyttää ohjeruudun koskevia käsitteellisiä ohjeita.** Ohje-ruudun avulla voit etsiä ja tuoda näkyviin tehtävän tallenteita. Voit käyttää Ohje-ruudun napsauttamalla **?** Kuvaketta yläosan siirtymispalkista tai näppäinyhdistelmä, voit käyttää **Ctrl + Shift +?**. Voit lukea ohjeita tehtävän tallennus Ohje-ruudusta tai voit halutessasi asettaa pelata niin se opastaa Käyttöliittymän apuna tehtävän tallennus.
--   **Tehtävätallenteet voidaan tallentaa liiketoimintaprosessien mallintajaan (BPM).** Voit tallentaa tehtävätallenteen liiketoimintaprosessien mallintajan (BPM) kirjaston hierarkian riville Lifecycle Services (LCS) -palveluissa. Tallenteesta luodaan vaiheluettelo ja liiketoimintaprosessikaavio. Tehtävän tallenteita, jotka on tallennettu kirjastoon BPM nähdään Dynamics 365 toiminnoissa kuten ohjeessa.
+-   **Tehtävätallenteiden toistaminen tehtävän ohjauksina.** Tehtäväoppaat ovat keskeinen osa Dynamics 365 for Operationsin ohjeita. Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti liiketoimintaprosessin eri vaiheet. Käyttäjää ohjataan kunkin vaiheen suorittamisessa ponnahduskehotteen (eli kuplan) avulla. Se esiintyy kaikkialla käyttöliittymässä ja osoittaa käyttöliittymäelementin, johon käyttäjän tulee reagoida. "Kupla" sisältää myös tietoja siitä, miten elementtiä käytetään, kuten "Napsauta tätä" tai "Kirjoita tähän kenttään arvo". Tehtäväopas toimii käyttäjän nykyisen tietojoukon kanssa, ja syötetyt tiedot tallennetaan käyttäjän ympäristöön.
+-   **Tehtävätallenteet voidaan näyttää menettelytapavaiheina ohjeruudussa.** Voit käyttää ohjeruutua tehtävätallenteiden hakemisessa ja näyttämisessä. Voit käyttää ohjeruutua valitsemalla siirtymispalkin yläosassa olevan **?**-painikkeen tai pikanäppäimet **Ctrl+Vaihto+?**. Tehtävätallenteen vaiheet näkyvät ohjeruudussa. Voit myös toistaa tallenteen tehtävän ohjauksena, jolloin se ohjaa sinut käyttöliittymän läpi.
+-   **Tehtävätallenteet voidaan tallentaa liiketoimintaprosessien mallintajaan (BPM).** Voit tallentaa tehtävätallenteen liiketoimintaprosessien mallintajan (BPM) kirjaston hierarkian riville Lifecycle Services (LCS) -palveluissa. Tallenteesta luodaan vaiheluettelo ja liiketoimintaprosessikaavio. BPM-kirjastoon tallennetut tehtävätallenteet voidaan näyttää Dynamics 365 for Operationsissa ohjeena.
 -   **Tehtävätallenteet voidaan tallentaa Word-asiakirjoina.** Tämä mahdollistaa tulostettavien koulutusohjeiden luomisen.
 
-Voit luoda tehtävän omia nauhoituksia, toistaa Microsoftin tehtävän tallenteita tai muokata Microsoftin toimittamia tehtävän tallenteiden määritysten mukaisiksi. Saat lisätietoja tehtävän tallennus [tehtävän tallennus-Dynamics 365 työvaiheiden](task-recorder.md).
+Voit luoda omia tehtävätallenteita, toistaa Microsoftin tehtävätallenteita tai muokata Microsoftin toimittamia tehtävätallenteita omaa konfiguraatiota vastaaviksi. Lisätietoja tehtävän tallennustoiminnosta on artikkelissa [Dynamics 365 for Operations -tehtävien tallennustoiminto](task-recorder.md).
 
 ## <a name="plan-your-task-recording"></a>Tehtävätallenteen suunnitteleminen
 Pidä seuraavat tiedot mielessäsi, kun olet luomassa uutta tehtävätallennetta tai muokkaamassa Microsoftin tehtävätallennetta.
@@ -55,11 +58,11 @@ Pidä seuraavat tiedot mielessäsi, kun olet luomassa uutta tehtävätallennetta
 **Kirjoita kuvaus ja huomautukset etukäteen**
 
 -   Kunkin tehtävätallenteen alussa on kuvauskenttä, johon voi syöttää tallenteen kuvauksen. Kannattaa kirjoittaa ja tallentaa kuvaus etukäteen erilliseen asiakirjaan, jotta voit kopioida ja liittää sen tehtävätallenteeseen tallennuksen aikana. Näin voit hioa tekstiä ennen tallennusprosessia. Tallennusprosessista tulee nopeampi ja sujuvampi leikkaamisen ja liittämisen ansiosta.
--   Voit luoda huomautuksia missä tahansa tehtävätallenteen vaiheessa. Tehtävän ohjauksen toiston aikana huomautukset näkyvät kuplassa huomautuksina vaiheen tekstin ylä- tai alapuolella. Tarkasteltaessa on Ohje-ruudun teksti huomautukset näkyvät vaiheessa kirjoitetun tekstin. Huomautukset kannattaa kuvauksen tavoin kirjoittaa ja tallentaa erilliseen asiakirjaan. Kun olet tallentamassa tehtävätallennetta, voit leikata ja liittää huomautukset asiakirjan vaatimassa muodossa.
+-   Voit luoda huomautuksia missä tahansa tehtävätallenteen vaiheessa. Tehtävän ohjauksen toiston aikana huomautukset näkyvät kuplassa huomautuksina vaiheen tekstin ylä- tai alapuolella. Kun tekstiä tarkastellaan ohjeruudussa, huomautukset näkyvät vaiheessa tekstiin sidottuina. Huomautukset kannattaa kuvauksen tavoin kirjoittaa ja tallentaa erilliseen asiakirjaan. Kun olet tallentamassa tehtävätallennetta, voit leikata ja liittää huomautukset asiakirjan vaatimassa muodossa.
 
 **Tietoja huomautustyypeistä** Kaikki huomautukset ovat valinnaisia. Lisää huomautuksia vain silloin, kun ne sisältävät käyttäjälle hyödyllisiä tietoja.
 
--   **Otsikko**: otsikko Huomautus näkyy ennen vaiheen teksti, joka automaattisesti tehtävän tallennus Luo. Tehtävä opas otsikon huomautuksen tulee automaattisesti tekstin yläpuolelle. Tämän tyyppisen huomautuksen avulla voit selittää, miksi käyttäjä suorittaa vaihetta. Voit myös antaa lisätietoja kontekstista.
+-   **Otsikko**: otsikon huomautus tulee näkyviin ennen tehtävän tallennustoiminnon automaattisesti luomaa vaihetekstiä. Otsikon huomautus näytetään tehtäväoppaassa automaattisesti luodun tekstin yläpuolella. Tämän tyyppisen huomautuksen avulla voit selittää, miksi käyttäjä suorittaa vaihetta. Voit myös antaa lisätietoja kontekstista.
 
 Tämä on muokkausruutu, joka näkyy, kun lisäät huomautuksen tallenteen luomisen yhteydessä. Syötä otsikkohuomautus **Otsikko**-ruutuun. 
 
@@ -75,11 +78,11 @@ Tämä on muokkausruutu, joka näkyy, kun lisäät huomautuksen tallenteen luomi
 
 [![screen3](./media/screen3.png)](./media/screen3.png) 
 
-Tämä on mitä huomautuksia Huomautus etsii opas tehtävän "kuplan".
+Ilmoitusten huomautus näyttää tältä tehtäväoppaan kuplassa.
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Info-vaihe**: nämä huomautukset luodaan napsauttamalla hiiren kakkospainikkeella ohjausobjektiin tai mihin tahansa lomakkeen &lt;**tehtävän tallennus**&lt; ** Lisää info vaihe. ** Info vaiheet näkyvät numeroitu vaiheessa vaiheessa riippumatta sen lisätä, vaikka mitään tallennettiin käyttöliittymässä. Voit lisätä lomaketason Tiedot-vaiheen tai ohjausobjektiin liitetyn Tiedot-vaiheen. Kun Tiedot-vaihe on liitetty lomakkeeseen, tehtävän ohjauksen kupla tulee näkyviin lomakkeeseen ilman osoitinta tehtävän ohjauksen toiston aikana. Info-vaiheeseen liittyy ohjausobjektiin, kun tehtävän "kuplan" opas osoittaa ohjausobjektin toistetut tehtävän opas. Ohje-ruudun vaihe info Huomautus näkyy numeroitu vaiheessa kirjoittamasi tekstin riippumatta. Info ohjeiden avulla voit valmistella käyttäjän kuvataan vaiheita, jotka voidaan tehdä työvaiheiden 365 Dynamics ulkopuolella tai muita tallenteita (vaikka ei voi luoda hyperinks huomautukset.) viittaavat seuraaviin vaiheisiin.
+-   **Tiedot-vaihe**: Nämä huomautukset luodaan napsauttamalla ohjausobjektia tai jotain lomakkeen kohtaa hiiren kakkospainikkeella &lt; **Tehtävän tallennustoiminto** &lt; **Lisää Tiedot-vaihe. **Tiedot-vaiheet näkyvät numeroituina vaiheina paikassa, johon ne lisätään, vaikka toimintoa ei olisi tallennettu käyttöliittymässä. Voit lisätä lomaketason Tiedot-vaiheen tai ohjausobjektiin liitetyn Tiedot-vaiheen. Kun Tiedot-vaihe on liitetty lomakkeeseen, tehtävän ohjauksen kupla tulee näkyviin lomakkeeseen ilman osoitinta tehtävän ohjauksen toiston aikana. Kun Tiedot-vaihe on liitetty ohjausobjektiin, tehtävän ohjauksen kupla tulee osoittaa ohjausobjektiin tehtäväoppaan toiston aikana. Ohjeruudussa näkyy Tiedot-vaiheen huomautus numeroituna vaiheena. Huomautus sisältää syöttämäsi tekstin. Käytä Tiedot-vaiheita käyttäjän valmisteluun seuraavia vaiheita varten, Dynamics 365 for Operationsin ulkopuolella tehtäviä vaiheita varten tai muihin tallenteisiin viittaamisessa (vaikka huomautuksiin ei voikaan luoda hyperlinkkejä).
 
 **Määritä, miten pitkä tallenteesta tulee**
 
@@ -89,42 +92,44 @@ Tämä on mitä huomautuksia Huomautus etsii opas tehtävän "kuplan".
 -   Jos prosessi käsittää useita tehtäviä, jotka henkilö luultavasti tekee kerralla, voit sisällyttää ne yhteen tallenteeseen. Tällainen tallenne voi olla esimerkiksi Toiminnallisuusprofiilien määrittäminen ja liittäminen.
 -   Jos käyttäjä suorittaa jonkin tehtävän kerralla (kuten konfiguroiminen) ja heti tämän jälkeen toisen itsenäisen tehtävän, joka saatetaan toistaa, jaa tehtävät kahteen erilliseen tallenteeseen.
 
-**Päättää, missä käyttöliittymän aloittamaan tallennus** sivu, joka olet kun käynnistät tehtävän tallennuksen tallennus vaikuttaa tehtävän opas näytetään sivu. Jos haluat, että tehtävän tallennus luetteloidaan Ohje-tehtäväruudussa, kun käyttäjä valitsee Ohje sivulla kirjanpidon parametrit, sinun on käynnistettävä nauhoituksen sivulla kirjanpidon parametrit. **Tallenna tallenteet .axtr-tiedostoina** Kun olet luonut tehtävätallenteen tai muokannut sitä, näkyviin tulee useita tallenteen lataus- tai tallennusvaihtoehtoja. Voit ladata tiedoston tehtävätallenteen pakettina (.axtr) tai käsittelemättömänä tallennetiedostona (.xml) tai Word-asiakirjana tai tallentaa tiedoston LCS-kirjastoon. Tehtävätallenne kannattaa aina tallentaa tehtävätallenteen pakettitiedostona (.axtr). Se helpottaa tiedoston ylläpitoa, jos menettelyitä tai huomautuksia on muutettava myöhemmin. Jos haluat noutaa tiedoston Word-asiakirjana, tallenna se myös silloin tehtävätallenteen pakettitiedostona.
+**Päätä, missä kohtaa käyttöliittymää tallentaminen alkaa** Sivu, jolla olet tehtävätallenteen tallentamisen alkaessa, vaikuttaa siihen, millä sivulla tehtävän ohjaus näytetään. Jos haluat tehtävätallenteen olevan esimerkiksi ohjeruudussa, kun käyttäjä valitsee Kirjanpitoparametrit-sivun, sinun on aloitettava tallentaminen Kirjanpitoparametrit-sivulta. **Tallenna tallenteet .axtr-tiedostoina** Kun olet luonut tehtävätallenteen tai muokannut sitä, näkyviin tulee useita tallenteen lataus- tai tallennusvaihtoehtoja. Voit ladata tiedoston tehtävätallenteen pakettina (.axtr) tai käsittelemättömänä tallennetiedostona (.xml) tai Word-asiakirjana tai tallentaa tiedoston LCS-kirjastoon. Tehtävätallenne kannattaa aina tallentaa tehtävätallenteen pakettitiedostona (.axtr). Se helpottaa tiedoston ylläpitoa, jos menettelyitä tai huomautuksia on muutettava myöhemmin. Jos haluat noutaa tiedoston Word-asiakirjana, tallenna se myös silloin tehtävätallenteen pakettitiedostona.
 
 ## <a name="create-your-task-recording"></a>Tehtävätallenteen luominen
-Lisätietoja yksityiskohtainen hallintapaketteihin, on [tehtävän tallennus luomisesta](task-recorder.md).
+Yksityiskohtaiset vaiheet löytyvät kohdasta [Tehtävätallenteen luominen](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Microsoftin tehtävätallenteiden kopioiminen ja mukauttaminen
-Voit ladata ja muokata Microsoftin tehtävän tallenteiden käyttämään omia ohjeisiin tai koulutusmateriaalia. Lataa Microsoftin tehtävätallenteet seuraavien vaiheiden avulla:
+Voit ladata ja muokata Microsoftin tehtävätallenteita, kun haluat käyttää niitä omassa dokumentaatiossa tai koulutusmateriaaleissa. Lataa Microsoftin tehtävätallenteet seuraavien vaiheiden avulla:
 
-1.  Dynamics-365 operaatioille Avaa tehtävän tallennus. Tehtävän tallennustoiminto sijaitsee **asetusvalikossa**.
+1.  Avaa Tehtävän tehtävien tallennustoiminto Microsoft Dynamics 365 for Operationsissa Tehtävän tallennustoiminto sijaitsee **asetusvalikossa**.
 2.  Valitse tehtävän tallennustoiminnon ruudussa **Ylläpidä tallennetta.**
 3.  Valitse **Missä tallenne on** -kohdassa **Se on LCS-kirjastossa**.
 4.  Valitse **Valitse LCS-kirjasto**.
-5.  Valitse Microsoft yleinen kirjasto.
+5.  Valitse yleinen Microsoft-kirjasto.
 6.  Valitse puussa se liiketoimintaprosessin solmu, johon tehtävätallenne on liitetty.
 7.  Napsauta **OK**.
 8.  Valitse **Käynnistä**.
-9.  Tässä vaiheessa käydä läpi kaikki vaiheet muuttaminen saman tien uudelleen äänittää nauhoitus. **Huomautus**: Jos haluat vain muuttaa nauhoituksen, voit avata kirjaamiseksi **muokata tallennuksen ajastaminen huomautukset** -tilassa ja tallenna se.
+9.  Käy tässä vaiheessa tallenne läpi ja muuta vaiheita uudelleentallennuksen yhteydessä. **Huomautus**: Jos haluat muuttaa vain tallenteen tekstiä, voit avata tallenteen **Muokkaa tallenteen huomautuksia** -tilassa ja tallentaa sen uudelleen.
 10. Kun olet päässyt tallenteen toistossa loppuun, valitse näytön yläosassa olevan tehtävän tallennustoiminnon palkissa **Pysäytä**.
 11. Määritä tehtävätallenteen tallennustapa.
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>Tallennukset on tehtävä sisällä Ohje-tehtäväruudussa
-Näyttämään oman mukautetun tehtävän tallenteiden Ohje-tehtäväruudussa siten, että ne voidaan toistaa ohjauksina tehtävän tai tarkastella tekstinä tallennukset on tehtävä tallentaa BPM-kirjastoon ja päivittää oman ohjejärjestelmän parametrien osoittamaan BPM-kirjasto. Lisätietoja on ohjeaiheessa [muodostaa ohjeen.](../get-started/help-connect.md)
+## <a name="include-your-task-recordings-in-the-help-pane"></a>Tehtävätallenteiden sisällyttäminen ohjeruutuun
+Voit näyttää omat mukautetut tehtävätallenteen ohjeruudussa tehtävän ohjauksina toistettavina tai tekstinä tarkasteltavina. Tallenna tehtävätallenteet ensin omaan BPM-kirjastoon ja päivitä ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään.](../get-started/help-connect.md)
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Työvaiheiden 365 Dynamics-Ohje](..\get-started\help-overview.md)
+[Dynamics 365 for Operations -ohje](..\get-started\help-overview.md)
 
-[Yhdistää Ohje](..\get-started\help-connect.md)
+[Yhdistäminen ohjeeseen](..\get-started\help-connect.md)
 
-[Tehtävän tallennus Dynamics 365 operaatioille](task-recorder.md)
+[Tehtävän tallennus Dynamics 365 for Operationsissa](task-recorder.md)
 
-[Viimeksi lisätyt tehtävän tallennus-ominaisuudet](\core\get-started\recently-added-editing-features-in-task-recorder)
+[Viimeksi lisätyt tehtävien tallennustoiminnon ominaisuudet](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Uusi koulutus kirjastojen luomisesta Dynamics AX sisällä elinkaari-palveluja käyttämällä tehtävän tallennus (ulkoinen linkki)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+[Uusien Dynamics AX:n koulutuskirjastojen luominen Lifecycle Servicesissä tehtävien tallennustoiminnolla (ulkoinen linkki)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
-[Luominen Rich ohjeaiheiden kanssa tehtävän tallennus (ulkoinen linkki)](https://mbspartner.microsoft.com/AX/Videos/970)
+[Monipuolisten ohjeaiheiden luominen tehtävien tallennustoiminnolla (ulkoinen linkki)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
 
 

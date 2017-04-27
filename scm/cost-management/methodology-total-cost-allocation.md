@@ -32,7 +32,7 @@ Tämä artikkeli sisältää kokonaiskustannusten kohdistuksen käyttöön liitt
 
 Kokonaiskustannusten kohdistus on menetelmä, jolla lasketaan erätilauksen pääreseptinimikkeen ja reseptille määritettyjen oheistuotteiden välinen kustannus. Menetelmä on dynaaminen. Se laskee kustannukset reseptinimikkeen valmiiksi ilmoitettujen määrien ja oheistuotteiden välisenä painotettuna keskiarvona. Kokonaiskustannusten kohdistusta käytetään kunkin erätilauksen kustannusten kohdistuksen tarkistamiseen. Jos kokonaiskustannusten kohdistusta ei käytetä, reseptin laskennassa käytetään olemassa olevaa toimintoa.
 
-## <a name="using-tca-for-coproducts"></a>Käyttämällä coproducts, TCO
+## <a name="using-tca-for-coproducts"></a>Kokonaiskustannusten kohdistuksen käyttäminen oheistuotteille
 Seuraavassa on muutamia ohjeita, jotka liittyvät kokonaiskustannusten kohdistuksen käyttämiseen oheistuotteiden yhteydessä:
 
 -   Jos reseptiversion **Kokonaiskustannusten kohdistus** -liukusäädin asetetaan arvoon **Kyllä**, oheistuotteilla on oltava kustannushinta, joka on suurempi kuin nolla (0). Arvo voidaan hakea aktiivisesta kustannuslaskelmaversiosta samalle toimipaikalle tai muun kuin toimipaikkakohtaisen reseptin ensimmäiselle toimipaikalle. Ehto tarkistetaan reseptin hyväksymisen yhteydessä.
@@ -46,7 +46,7 @@ Seuraavassa on muutamia ohjeita, jotka liittyvät kokonaiskustannusten kohdistuk
 -   Kun erätilaus luodaan manuaalisesti tai suunniteltu erätilaus vahvistetaan, reseptiversion **Kokonaiskustannusten kohdistus** -liukusäätimen arvo kopioidaan erätilaukseen. Voit kuitenkin muuttaa asetusta erätilauksessa. Jos reseptiversion **Kokonaiskustannusten kohdistus** -liukusäätimen arvoksi on asetettu **Ei** ja erätilausta varten arvoksi valitaan **Kyllä**, niiden rivien, joiden kustannusten kohdistusmenetelmä on **Manuaalinen**, kustannusten kohdistusmenetelmäksi muutetaan **Kokonaiskustannusten kohdistus**. Kustannusten kohdistus **Ei mitään** ei muutu. Jos reseptiversion **Kokonaiskustannusten kohdistus** -liukusäätimen arvoksi on asetettu **Kyllä** ja erätilausta varten arvoksi valitaan **Ei**, **Tuotanto**-tyypin oheistuotteen kustannusten kohdistusmenetelmäksi muutetaan **Manuaalinen**. Kustannusten kohdistuksen arvioitu prosenttiosuus ei muutu.
 -   **Oheistuotteen kustannusten kohdistus** -sivulla näkyy laskettu kustannusten kohdistusprosentti. Voit avata sivun **Erätilaus**-sivulta. Tiedot ovat hyödyllisiä silloin, kun raportoidut tuotteet ja määrät poikkeavat erätilauksen suunnitelluista tai aloitetuista määristä. Kun kustannus on valmis, uudet prosenttikohdistukset kokonaiskustannusten kohdistuksesta näkyvät **Oheistuotteen kustannusten kohdistus** -sivulla.
 
-## <a name="calculating-the-burden-for-byproducts"></a>Laskettaessa tuotantojätettä rasitteen
+## <a name="calculating-the-burden-for-byproducts"></a>Sivutuotteiden Yk-lisän laskeminen
 **Oheistuotteet**-sivun **Sivutuotteen kustannusten kohdistus** -kenttä on luettelointikenttä, jota käytetään vain sivutuotteille. Oheistuotteiden osalta tämän kentän arvo on aina **Ei mitään**. Sivutuotteiden osalta tämä kenttä määrittää, kuinka sivutuoterivin kustannussumma lisätään tuotannon kokonaiskustannuksiin. Valittavissa ovat seuraavat vaihtoehdot:
 
 -   **Ei mitään** – Tuotannon kokonaiskustannuksiin ei lisätä summaa tämän sivutuoterivin osalta.

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manual-depreciation"></a>Manuaalinen poisto
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää manuaalisen poistomenetelmän yleiskatsauksen.
 
 Kun määrität käyttöomaisuuden poistoprofiilin ja valitset **Poistoprofiilit**-sivun **Menetelmä**-kentässä **Manuaalinen**, poistoprofiiliin määritetty käyttöomaisuuden poisto määräytyy sen prosentin mukaan, joka annetaan kalenterivuoden kullekin aikavälille. Aikavälit, joille määrität prosenttiosuuden, kirjataan **Poistoprofiilit**-sivun **Yleinen**-pikavälilehden **Kausifrekvenssi**-kentässä valitun arvon mukaisesti. Valittavana on seuraavat arvot:
@@ -63,13 +66,15 @@ Jos valitset **Kausifrekvenssi**-kentässä **Kuukausittain**, määrität 12 ma
 | Tammikuu  | (11 000 – 1 000) × 10 % = 1 000 |
 | Helmikuu | (11 000 – 1 000) × 50 % = 5 000 |
 
-Jos valitset **puolivuosittain** -*** jakson taajuus ** kentän **, olet määrittänyt kaksi manuaalisen aikataulun aikaväliä. Seuraavassa taulukossa esitellään näiden kahden aikavälin poistosummat.
+Jos valitset ****Kausifrekvenssi**-kentässä** **Puolivuosittain**, määrität kaksi manuaalisen aikataulun aikaväliä. Seuraavassa taulukossa esitellään näiden kahden aikavälin poistosummat.
 
 | Väli    | Poiston määrä            |
 |-------------|--------------------------------|
 | 30. kesäkuuta     | (11 000 – 1 000) × 10 % = 1 000 |
 | 31. joulukuuta | (11 000 – 1 000) × 50 % = 5 000 |
 
-Kaikkien aikavälien prosenttien yhteissumman ei tarvitse olla 100. Näyttöön tulee sanoma, jos arvo **Kumulatiivinen prosentti** kenttä **kiinteän käyttöomaisuuden poisto profiilin aikatauluja** sivu ei ole **100**.
+Aikavälien prosenttien yhteissumman ei tarvitse olla 100. Näyttöön avautuu kuitenkin sanoma, jos **Käyttöomaisuuserän poistoprofiilisuunnitelma** -sivun **Kumulatiivinen prosentti** -kentän arvo ei ole **100**.
+
+
 
 

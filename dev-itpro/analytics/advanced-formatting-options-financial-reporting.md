@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Muotoilun lisäasetukset taloushallinnon raporteissa
 
+[!include[banner](../includes/banner.md)]
+
+
 Luodessasi raportin taloushallinnon raportoinnissa, sen muotoiluun on käytettävissä lisätoimintoja, kuten dimensiosuodattimia, rajoituksia sarakkeille ja raportoinnin yksiköille, ei-tulostettavia rivejä IF/THEN/ELSE -lausekkeita laskutoimituksissa. 
 
 Seuraavassa taulukossa kuvataan muotoilun lisäasetustoiminnot, jotka ovat käytettävissä, kun luot raportteja.
@@ -54,7 +57,7 @@ Edistynyt solujen sijoittelu, tai *pakottaminen*, on tiettyjen arvojen sijoittam
 2.  Valitse **Asetukset** -välilehden **Laskennan prioriteetti** -kohdasta **Suorita sarakkeen laskutoimitukset ennen rivejä**.
 
 ## <a name="designing-the-report"></a>Raportin suunnitteleminen
-Kun olet suunnitellut raportin, sinun on ensin luotava kaikki erittelyrivit ja varmistettava, että arvot näkyvät odotetulla tavalla. Lisää sitten **NP** (Piilotettu) -muotoiluja piilottamaan yksityiskohdat, joihin lopulliset arvot sisältyvät. **Tärkeää:** Kun käytät **CAL**-muotoilukoodia rivin määrityksessä, et voi porautua tapahtumatietoihin. Pakottaminen, kaavoja käyttämällä seuraavaa muotoa: &lt;kohde-sarake&gt;=&lt;peräisin sarake&gt;. &lt;rivin koodi&gt; erottaa mitään muita harjoittelu riville pilkku ja välilyönti. Esimerkki: D=C.190,E=C.100
+Kun olet suunnitellut raportin, sinun on ensin luotava kaikki erittelyrivit ja varmistettava, että arvot näkyvät odotetulla tavalla. Lisää sitten **NP** (Piilotettu) -muotoiluja piilottamaan yksityiskohdat, joihin lopulliset arvot sisältyvät. **Tärkeää:** Kun käytät **CAL**-muotoilukoodia rivin määrityksessä, et voi porautua tapahtumatietoihin. Pakottamiseen kaavoissa käytetään seuraavaa muotoa: &lt;kohdesarake&gt;=&lt;alkuperäinen sarake&gt;.&lt;rivin koodi&gt; Erota kaikki muut rivin sijoittelut pilkulla ja välilyönnillä. Esimerkki: D=C.190,E=C.100
 
 ## <a name="examples-of-advanced-formatting-options"></a>Esimerkkejä muotoilun lisäasetuksista
 Seuraavissa esimerkeissä esitellään, miten rivi- ja sarakemääritys muotoillaan pakottamaan yksinkertainen kassavirtaraportti (esimerkki 1) ja tilastollinen raportti (esimerkki 2).
@@ -65,7 +68,7 @@ Seuraavassa taulukossa on esimerkki rivin määrityksestä, jossa käytetään y
 
 | Rivin koodi | Kuvaus                      | Muotoilukoodi | Liittyvät kaavat/rivit/yksiköt | Muotoilun ohitus | Normaali saldo | Tulostuksen hallinta | Sarakkeen rajoitus | Rivin muuttuja               | Linkki taloushallinnon dimensioihin |
 |----------|----------------------------------|-------------|-----------------------------|-----------------|----------------|---------------|--------------------|----------------------------|------------------------------|
-| 100      | Kassa kauden alussa (NP) |             |                             |                 |                |               |                    | Määrite tilin = \[/BB\] | + Segment2 = \[1100\]         |
+| 100      | Kassa kauden alussa (NP) |             |                             |                 |                |               |                    | Tilin määre = \[/BB\] | +Segment2 = \[1100\]         |
 | 130      | Kassa kauden alussa      | CAL         | C=C.100,F=D.100             |                 |                |               |                    |                            |                              |
 | 160      |                                  |             |                             |                 |                |               |                    |                            |                              |
 | 190      |                                  |             |                             |                 |                |               |                    |                            |                              |
@@ -95,8 +98,8 @@ Seuraavassa taulukossa on esimerkki rivin määrityksestä, jossa käytetään p
 | 100      | Henkilöstön määrä - US            | CAL         | 4                               | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
 | 115      | Henkilöstön määrä - Kansainv. | CAL         | 11                              | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
 | 130      |                           |             |                                 |                      |                |               |                    |              |                                            |
-| 190      | Myynti, USA                  |             |                                 |                      | K              |               |                    |              | + Segment2 = \[41\*\], Segment3 = \[00\]    |
-| 220      | Myynti, kv.       |             |                                 |                      | K              |               |                    |              | + Segment2 = \[41\*\], Segment3 = \[01:99\] |
+| 190      | Myynti, USA                  |             |                                 |                      | K              |               |                    |              | +Segment2 = \[41\*\], Segment3 = \[00\]    |
+| 220      | Myynti, kv.       |             |                                 |                      | K              |               |                    |              | +Segment2 = \[41\*\], Segment3 = \[01:99\] |
 | 250      |                           |             |                                 |                      |                |               |                    |              |                                            |
 | 280      |                           |             |                                 |                      |                |               |                    |              |                                            |
 | 310      | Myynti, USA                  | CAL         | D=C.190,E=C.100,F=(C.100/C.190) |                      |                |               |                    |              |                                            |
@@ -171,11 +174,11 @@ Seuraavassa taulukossa kuvataan rivimääritykselle käytettävissä olevat tulo
 -   Soluun on mahdollista määrittää lajiteltava summien sarake.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Laskentakaavan käyttäminen rivin määrityksessä
-Rivimääritys-laskukaava voi sisältää **+**, **-**, **\***, ja **/**toimijoita, ja myös **sitten/Jos/ELSE** lauseita. Lisäksi, laskutoimituksessa voi käyttää yksittäisiä soluja ja absoluuttisia summia (todellisia lukuja, jotka sisältyvät kaavaan). Kaava voi sisältää enintään 1 024 merkkiä. Laskentakaavoja ei voi käyttää riveille, jotka sisältävät **Linkki taloushallinnon dimensioon** (FD) -tyypin soluja. Voit kuitenkin käyttää laskentakaavoja peräkkäisille riveille, piilottaa kyseiset rivit tulostukselta ja laskea yhteen laskentarivien summat.
+Rivin määrityksessä käytettävä laskentakaava voi sisältää **+**, **-**, **\*** ja **/** -laskutoimituksia sekä **IF/THEN/ELSE**-lausekkeita. Lisäksi, laskutoimituksessa voi käyttää yksittäisiä soluja ja absoluuttisia summia (todellisia lukuja, jotka sisältyvät kaavaan). Kaava voi sisältää enintään 1 024 merkkiä. Laskentakaavoja ei voi käyttää riveille, jotka sisältävät **Linkki taloushallinnon dimensioon** (FD) -tyypin soluja. Voit kuitenkin käyttää laskentakaavoja peräkkäisille riveille, piilottaa kyseiset rivit tulostukselta ja laskea yhteen laskentarivien summat.
 
 ### <a name="operators-in-a-calculation-formula"></a>Laskentakaavan operaattorit
 
-Laskentakaavassa on mahdollista käyttää monimutkaisempia operaattoreita kuin rivin summakaavassa. Kuitenkin voit käyttää **\***ja **/**muita operaattoreita, jos haluat kertoa yhdessä toimijoiden (\*) ja jakaa summat (/). Jos haluat käyttää aluetta tai summaa laskentakaavassa, sinun on käytettävä ät-merkkiä (@) jokaisen rivikoodin edessä, ellet käytä saraketta rivin määrityksessä. Esimerkiksi, voit lisätä Summa-rivin 100 Summa-rivin 330, voit käyttää rivin yhteensä kaavan **100 + 330** tai laskentakaava **@100+@330**. **Huomautus:** ät-merkkiä (@) on käytettävä ennen jokaista rivin koodia, jota käytetään laskukaavassa. Muutoin luku luetaan absoluuttisena summana. Esimerkiksi kaava **@100+330** USD 330 Lisää summa-rivin 100. Ät-merkki (@) ei ole pakollinen viitattaessa laskentakaavan sarakkeeseen.
+Laskentakaavassa on mahdollista käyttää monimutkaisempia operaattoreita kuin rivin summakaavassa. Et kuitenkaan voi käyttää **\*** ja **/** -operaattoreita muiden operaattoreiden kanssa toteuttaaksesi kerto- (\*) ja jakolaskuja (/). Jos haluat käyttää aluetta tai summaa laskentakaavassa, sinun on käytettävä ät-merkkiä (@) jokaisen rivikoodin edessä, ellet käytä saraketta rivin määrityksessä. Jos esimerkiksi haluat lisätä rivin 100 summan rivin 330 summaan, voit käyttää rivin summakaavaa **100+330** tai laskentakaavaa **@100+@330**. **Huomautus:** ät-merkkiä (@) on käytettävä ennen jokaista rivin koodia, jota käytetään laskukaavassa. Muutoin luku luetaan absoluuttisena summana. Esimerkiksi kaava **@100**+330 lisää riville 100 330 dollarin summan. Ät-merkki (@) ei ole pakollinen viitattaessa laskentakaavan sarakkeeseen.
 
 ### <a name="create-a-calculation-formula"></a>Laskentakaavan luominen
 
@@ -185,15 +188,15 @@ Laskentakaavassa on mahdollista käyttää monimutkaisempia operaattoreita kuin 
 
 ### <a name="example-of-a-calculation-formula-for-specific-rows"></a>Esimerkki tiettyjä rivejä koskevasta laskukaavasta
 
-Tässä esimerkissä laskentakaava **@100+@330** 100-rivin summa lisätään 330 rivin summa tarkoittaa. Rivin Summa kaava **340 + 370** Lisää 340 riville summa Summa-rivillä 370. (Summa-rivillä 370 on summan laskenta-kaava).
+Tässä esimerkissä laskentakaava **@100+@330** tarkoittaa, että rivin 100 summa lisätään rivin 330 summaan. Rivin summakaava **340 + 370** lisää rivin 340 summan rivin 370 summaan. (Summa rivillä 370 on laskentakaavan summa).
 
 | Rivin koodi | Kuvaus                 | Muotoilukoodi | Liittyvät kaavat/rivit/yksiköt | Tulostuksen hallinta | Rivin muuttuja | Linkki taloushallinnon dimensioihin |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Kassa kauden alussa |             |                            | NP            | BB           | + Tili =\[1100:1110\]       |
+| 340      | Kassa kauden alussa |             |                            | NP            | BB           | +Tili=\[1100:1110\]       |
 | 370      | Kassa vuoden alussa   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Kassa kauden alussa | TOT         | 340+370                    |               |              |                              |
 
-Kun rivimäärityksen rivillä on muotoilukoodi **CAL** ja kirjoitat matemaattisen laskentakaavan **Liittyvät kaavat/rivit/yksiköt** -soluun, sinun on syötettävä myös liittyvän sarakkeen kirjain ja raportin rivi. Esimerkiksi **A.120** edustamaan sarakkeen A rivi 120. Voit myös käyttää ät-merkki (@) osoittamaan kaikki sarakkeet. Esimerkiksi **@120**edustamaan 120-rivin kaikkia sarakkeita. Matemaattisen laskutoimituksen, joka ei ole sarakkeen kirjaimen tai at-merkillä (@) oletetaan olevan reaaliluku. **Huomautus:** Jos käytät viittaamaan rivin otsikko rivillä koodi, piste (.) on käytettävä sarakkeen kirjaimen ja otsikko väliin erotinpalkin (esimerkiksi **A.GROSS\_MARGIN/A.SALES**). Jos käytät ät-merkki (@), erotin ei tarvita (esimerkiksi **@GROSS\_MARGIN/@SALES**).
+Kun rivimäärityksen rivillä on muotoilukoodi **CAL** ja kirjoitat matemaattisen laskentakaavan **Liittyvät kaavat/rivit/yksiköt** -soluun, sinun on syötettävä myös liittyvän sarakkeen kirjain ja raportin rivi. Anna esimerkiksi **A.120** edustamaan sarakkeen A riviä 120. Voit myös käyttää ät-merkkiä (@) osoittamaan kaikki sarakkeet. Anna esimerkiksi **@120** edustamaan rivin 120 kaikkia sarakkeita. Kaikki matemaattiset laskutoimitukset, joissa ei ole sarakkeen kirjainta tai at-merkkiä (@) oletetaan olevan reaaliluku. **Huomautus:** jos käytät rivin otsikon koodia viittaamaan riviin, sarakkeen kirjain ja otsikko on erotettava pisteellä (.) (esimerkiksi **A.GROSS\_MARGIN/A.SALES**). Jos käytät ät-merkkiä (@), erotinta ei tarvita (esimerkiksi **@GROSS\_MARGIN/@SALES**).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Esimerkki tiettyä saraketta koskevasta laskukaavasta
 
@@ -201,7 +204,7 @@ Tässä esimerkissä laskentakaavan **E=C.340** tarkoittaa, että sarakkeen C ja
 
 | Rivin koodi | Kuvaus                 | Muotoilukoodi | Liittyvät kaavat/rivit/yksiköt | Tulostuksen hallinta | Rivin muuttuja | Linkki taloushallinnon dimensioihin |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Kassa kauden alussa |             |                            | NP            | BB           | + Tili =\[1100:1110\]       |
+| 340      | Kassa kauden alussa |             |                            | NP            | BB           | +Tili=\[1100:1110\]       |
 | 370      | Kassa vuoden alussa   | CAL         | E=C.340                    | NP            |              |                              |
 | 400      | Kassa kauden alussa | TOT         | 340+370                    |               |              |                              |
 
@@ -210,7 +213,7 @@ Tässä esimerkissä laskentakaavan **E=C.340** tarkoittaa, että sarakkeen C ja
 Kun muokkaat tietyn sarakkeen tietyllä rivillä olevaa numeroa tai laskentakaavaa, etkä halua muutosten vaikuttavan muihin raportin sarakkeisiin, voit määrittää rivimäärityksen **Muotoilukoodi**-sarakkeeseen koodiksi **CAL** (Laskenta).
 
 -   Laskutoimituksen kaikille raportin (**FD**) sarakkeille voit suorittaa siten, että et lisää sarakkeen määritystä.
--   Rajoitetaan kaavassa sarakkeita kirjoittamalla sarakkeen kirjaimen, yhtäläisyysmerkki (**=**), ja sitten kaava.
+-   Voit rajoittaa kaavan tiettyihin sarakkeisiin kirjoittamalla sarakkeen kirjaimen, yhtäläisyysmerkin (**=**) ja sitten kaavan.
 -   Voit määrittää useita sarakkeita. Kun käytät ät-merkkiä (@) tietyllä sarakkeen sijoittelulla, ät-merkki (@) liittyy riviin.
 -   Voit määrittää useamman sarakekaavan yhdelle riville. Erota kaavat toisistaan pilkuilla.
 
@@ -220,46 +223,48 @@ Kun muokkaat tietyn sarakkeen tietyllä rivillä olevaa numeroa tai laskentakaav
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | @130\*.75              | Jokaisen riville 130 kuuluvan sarakkeen arvo kerrotan 0,75:llä. Tulos sijoitetaan jokaisen sarakkeen nykyiselle riville. |
 | B=@130\*.75            | Sama laskenta suoritetaan vain sarakkeessa B.                                                                      |
-| A, B,C=(@100/@130)\*.75 | A=(A.100/A.130)\*.75 B=(B.100/B.130)\*.75 C=(C.100/C.130)\*.75                                                           |
+| A,B,C=(@100/@130)\*.75 | A=(A.100/A.130)\*.75 B=(B.100/B.130)\*.75 C=(C.100/C.130)\*.75                                                           |
 
 ### <a name="ifthenelse-statements-in-a-row-definition"></a>IF/THEN/ELSE (jos/sitten/muuten)-lausekkeet rivimäärityksessä
 
-**IF/THEN/ELSE** -lausekkeita on mahdollista lisätä mihin tahansa kelvolliseen laskutoimitukseen, ja niitä voi käyttää **CAL**-muodossa. Voit määrittää **IF/THEN/ELSE** -laskentakaavoja **Liittyvät kaavat/rivit/yksiköt** sarakkeen soluun. **SITTEN/Jos/ELSE** laskennan kaavat käyttävät seuraavaa muotoa: Jos &lt;tosi/epätosi-lauseke&gt; sitten &lt;kaavan&gt; muuten &lt;kaavan&gt;**muuten &lt;kaavan&gt;** lauseeseen on valinnainen.
+**IF/THEN/ELSE** -lausekkeita on mahdollista lisätä mihin tahansa kelvolliseen laskutoimitukseen, ja niitä voi käyttää **CAL**-muodossa. Voit määrittää **IF/THEN/ELSE** -laskentakaavoja **Liittyvät kaavat/rivit/yksiköt** sarakkeen soluun. **IF/THEN/ELSE** -laskentakaavoissa käytetään seuraavaa muotoa: IF &lt;tosi/epätosi lauseke&gt; THEN &lt;kaava&gt; ELSE &lt;kaava&gt; **ELSE &lt;kaava&gt;** -osa laskelmasta on valinnainen.
 
 #### <a name="if-statements"></a>IF-lausekkeet
 
 Lauseke, joka seuraa **IF**-lauseketta voi olla mikä tahansa lauseke, joka voi olla joko tosi tai epätosi. Lauseke, joka seuraa **IF**-lauseketta voi olla yksinkertainen arvio tai monimutkainen lauseke, joka voi sisältää useita lausekkeita. Seuraavassa on muutamia esimerkkejä:
 
--   **Jos A.200&gt;0** (yksinkertainen arviointi)
--   **Jos A.200&gt;0-A.200&lt;10 000** (Monimutkainen lauseke)
--   **Jos A.200&gt;10000 tai ((A.340/B.1200)\*2 &lt;1200)** (Monimutkainen lauseke, joka sisältää useita lausekkeita)
+-   **IF A.200&gt;0** (Yksinkertainen arviointi)
+-   **IF A.200&gt;0 AND A.200&lt;10,000** (Monimutkainen lauseke)
+-   **IF A.200&gt;10000 OR ((A.340/B.1200)\*2 &lt;1200)** (Monimutkainen lauseke, joka sisältää useita lausekkeita)
 
 Termillä **Kaudet** tarkoitetaan **IF**-lausekkeessa raportilla olevien kausien määrää. Termiä käytetään yleensä laskemaan keskiarvo vuoden alusta. Esimerkiksi, kun ajat kauden 7 YTD-raportin, **B.150/Periods** tarkoittaa, että sarakkeen B rivin 150 arvo jaetaan 7:llä.
 
 #### <a name="then-and-else-formulas"></a>THEN ja ELSE -kaavat
 
-**THEN** ja **ELSE** -kaavat voivat olla mikä tahansa kelpaava laskutoimitus, yksinkertaisista arvon määrityksistä monimutkaisiin kaavoihin. Esimerkiksi lause **Jos A.200&gt;0, sitten A=B.200** tarkoittaa "Jos solun sarakkeessa A rivillä 200 on enemmän kuin 0 (nolla)-arvon laittaa nykyisen rivin sarakkeen A solu sarakkeessa B 200 rivin solu." Edeltävä **IF/THEN** -lauseke sijoittaa arvon yhteen nykyisen rivin sarakkeeseen. Voit käyttää myös ät-merkkiä (@) sekä tosi/epätosi-arvioinneissa että kaavassa edustaen kaikkia sarakkeita. Seuraavat ovat muita esimerkkejä, jotka kuvaillaan seuraavissa osissa:
+**THEN** ja **ELSE** -kaavat voivat olla mikä tahansa kelpaava laskutoimitus, yksinkertaisista arvon määrityksistä monimutkaisiin kaavoihin. Esimerkiksi, lauseke **IF A.200&gt;0 THEN A=B.200** merkitsee "Jos sarakkeen A rivin 200 arvo on enemmän kuin 0 (nolla), sarakkeen B rivin 200 arvo sijoitetaan sarakkeen A nykyisellä rivillä olevaan soluun." Edeltävä **IF/THEN** -lauseke sijoittaa arvon yhteen nykyisen rivin sarakkeeseen. Voit käyttää myös ät-merkkiä (@) sekä tosi/epätosi-arvioinneissa että kaavassa edustaen kaikkia sarakkeita. Seuraavat ovat muita esimerkkejä, jotka kuvaillaan seuraavissa osissa:
 
--   **Jos A.200 &gt;0, sitten B.200**: A.200-solun arvo on positiivinen, jos nykyisen rivin jokaisen sarakkeen arvon solun B.200 otetaan käyttöön.
--   **Jos A.200 &gt;0, sitten @200**: A.200-solun arvo on positiivinen, jos jokaisesta sarakkeesta 200-rivin arvo on otettu käyttöön vastaavan sarakkeen nykyisen rivin.
--   **Jos @200&gt;0, sitten @200**: 200-rivin nykyiseen sarakkeeseen arvo on positiivinen, jos nykyisen rivin saman sarakkeen arvon rivin 200 otetaan käyttöön.
+-   **IF A.200&gt;0 THEN B.200**: Jos solun A.200 arvo on positiivinen, solun B.200 arvo sijoitetaan kaikkiin nykyisen rivin sarakkeisiin.
+-   **IF A.200 &gt;0 THEN @200**: Jos solun A.200 arvo on positiivinen, jokainen rivillä 200 oleva arvo sijoitetaan kaikkiin nykyisen rivin vastaaviin sarakkeisiin.
+-   **IF @200 &gt;0 THEN @200**: Jos nykyisen sarakkeen rivin 200 arvo on positiivinen, rivin 200 arvo sijoitetaan saman sarakkeen nykyiseen riviin.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Laskutoimituksen rajoittaminen raportoinnin yksikköön rivin määrityksessä
 
-Voit rajoittaa laskennan ja raportoinnin puussa laativan yhdessä niin, että tuloksena oleva summa ei ole koottu ylemmän tason yksikköön, **@Unit**koodi **liittyvät kaavat/riviä/yksiköt** rivimääritys-solussa. **@Unit**Koodi näkyy sarakkeessa B reporting puun **nimi**. Kun käytät **@Unit**koodia arvot eivät ole alitehtävien kokoaminen, mutta laskennassa arvioidaan raportointi puun kaikilla tasoilla. **Huomautus:** Jotta voisit käyttää tätä toimintoa, rivimääritykseen on liitettävä raportointipuu. Laskentarivi voi viitata laskennan tai kirjanpitotietojen riviin. Laskutoimitus kirjataan rivimäärityksen **Liittyvät kaavat/rivit/yksiköt** -soluun sekä taloushallinnon tietotyypin rajoitukseen. Laskennassa täytyy käyttää ehdollista laskelman, joka alkaa **Jos @Unit**rakentamiseen. Tässä on esimerkki: Jos @Unit(myynti) sitten @100muuten 0 Tämä laskenta sisältää 100 rivin välein raportin sarakkeen summa mutta vain myynti-yksikköä. Jos järjestelmässä on useita SALES-yksiköitä, määrä näytetään kaikissa yksiköissä. Lisäksi rivi 100 voi olla taloushallinnon tietorivi, ja se voidaan määrittää piilotetuksi. Tässä tapauksessa summan näyttäminen estetään kaikissa puun yksiköissä. Voit myös rajoittaa summan yhteen raportin sarakkeeseen, kuten sarake H, käyttämällä sarakerajoitusta tulostamaan arvon ainoastaan kyseiseen raportin sarakkeeseen. Voit sisällyttää **OR**-yhdistelmiä **IF**-lausekkeisiin. Tässä on esimerkki: Jos @Unit(myynti) tai @Unit(SALESWEST) 5 sitten muuten @100voit määrittää yksikön laskentatyyppi rajoituksen jollakin seuraavista tavoista:
+Jos haluat rajoittaa laskutoimituksen yksittäiseen raportointiyksikköön siten, että tuloksena saatavaa summaa ei koota ylemmän tason yksikköön, voit käyttää **@Unit** -koodia rivimäärityksen **Liittyvät kaavat/rivit/yksiköt** -solussa. **@Unit**-koodi on mainittu raportoinnin puurakenteen sarakkeessa B, **Yksikön nimi**. **@Unit**-koodia käytettäessä arvoja ei koota, mutta laskutoimitus suoritetaan kaikilla raportointipuun tasoilla. **Huomautus:** Jotta voisit käyttää tätä toimintoa, rivimääritykseen on liitettävä raportointipuu. Laskentarivi voi viitata laskennan tai kirjanpitotietojen riviin. Laskutoimitus kirjataan rivimäärityksen **Liittyvät kaavat/rivit/yksiköt** -soluun sekä taloushallinnon tietotyypin rajoitukseen. Laskennassa on käytettävä ehdollista laskelmaa, joka alkaa **IF @Unit** -rakenteella. Esimerkki: IF @Unit(SALES) THEN @100 ELSE 0 Tähän laskutoimitukseen sisältyy raportin jokaisen sarakkeen rivin 100 arvo, mutta rajoitettuna ainoastaan SALES-yksikköön. Jos järjestelmässä on useita SALES-yksiköitä, määrä näytetään kaikissa yksiköissä. Lisäksi rivi 100 voi olla taloushallinnon tietorivi, ja se voidaan määrittää piilotetuksi. Tässä tapauksessa summan näyttäminen estetään kaikissa puun yksiköissä. Voit myös rajoittaa summan yhteen raportin sarakkeeseen, kuten sarake H, käyttämällä sarakerajoitusta tulostamaan arvon ainoastaan kyseiseen raportin sarakkeeseen. Voit sisällyttää **OR**-yhdistelmiä **IF**-lausekkeisiin. Esimerkki: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Voit määrittää yksikön laskentatyypin rajoituksessa seuraavilla tavoilla:
 
--   Kirjoita yksikön nimen kohdalle kelpaava yksikkö. Esimerkiksi **Jos @Unit(myynti)** avulla laskentaan kaikki yksikön, jonka nimi on myynti, vaikka raportoinnin puussa on useita myynnin yksiköt.
--   Kirjoita yrityksen ja yksikön nimi rajoittaaksesi laskutoimitus tietyn yrityksen tiettyihin yksikköihin. Esimerkiksi **Jos @Unit(ACME: myynti**) rajoittaa ACME yrityksen myynnin yksiköt laskenta.
--   Kirjoita koko hierarkiakoodi raportointipuusta rajoittaaksesi laskutoimituksen tiettyyn yksikköön. Esimerkiksi **Jos @Unit(yhteenveto ^ ACME ^ LÄNSIRANNIKOLLA ^ myynti)**. **Huomautus:** Täydellisen hierarkiakoodin löydät napsauttamalla hiiren oikealla painikkeella raportointipuun määritystä ja valitsemalla sitten **Kopioi raportointiyksikön tunniste (H-koodi)**.
+-   Kirjoita yksikön nimen kohdalle kelpaava yksikkö. Esimerkiksi **IF @Unit(SALES)** mahdollistaa laskutoimitukset mille tahansa yksikölle, jonka nimi on SALES siitä huolimatta, onko raportointipuussa useita SALES-yksiköitä.
+-   Kirjoita yrityksen ja yksikön nimi rajoittaaksesi laskutoimitus tietyn yrityksen tiettyihin yksikköihin. Kirjoita esimerkiksi **IF @Unit(ACME:SALES)** rajoittaaksesi laskutoimituksen ACME-yrityksen SALES-yksikköihin.
+-   Kirjoita koko hierarkiakoodi raportointipuusta rajoittaaksesi laskutoimituksen tiettyyn yksikköön. Kirjoita esimerkiksi **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**. **Huomautus:** Täydellisen hierarkiakoodin löydät napsauttamalla hiiren oikealla painikkeella raportointipuun määritystä ja valitsemalla sitten **Kopioi raportointiyksikön tunniste (H-koodi)**.
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Laskutoimituksen rajoittaminen raportointiyksikköön
 
 1.  Valitse Report Designerissa **Rivien määritykset** ja avaa muokattava rivin määritys.
 2.  Kaksoisnapsauta **Muotoilukoodi** -solua ja valitse sitten **CAL**.
-3.  Valitse **liittyvät kaavat/riviä/yksiköt** solu ja kirjoita sitten Ehdollinen laskelman, joka alkaa **Jos @Unit**rakentamiseen.
+3.  Napsauta **Liittyvät kaavat/rivit/yksiköt** -solua ja kirjoita kenttään ehdollinen laskelma, joka alkaa **IF @Unit** -rakenteella.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE (jos/sitten/muuten)-lausekkeet sarakemäärityksessä
 
-**IF/THEN/ELSE**-lausekkeiden avulla voit tehdä minkä tahansa laskutoimituksen riippuvaiseksi mistä tahansa toisesta sarakkeesta. Voit viitata **IF**-lausekkeessa muihin sarakkeisiin, mutta et raportin soluun. Kaikkien laskutoimitusten on koskettava kokonaista saraketta. Esimerkiksi lause **Jos B&gt;100 ja muut B-C\*1,25** tarkoittaa "sarakkeessa B on suurempi kuin 100, jos sijoittaa arvon sarakkeesta B **laskenta** sarakkeen. Jos B-sarakkeen summa on pienempi kuin 100, C-sarakkeen arvo kerrotaan 1,25:llä ja tulos sijoitetaan **CALC**-sarakkeeseen. " **IF**-lauseketta on aina seurattava looginen lauseke, jonka tulos on joko tosi tai epätosi. Sekä **THEN**- ja **ELSE**-lausekkeet voivat viittauksia rajoittamattomaan määrään sarakkeita, ja kyseiset kaavat voivat olla juuri niin monimutkaisia kuin haluat. **Huomautus:** Et voi sijoittaa laskutoimituksen tuloksia mihinkään muuhun sarakkeeseen. Tulosten on oltava sarakkeessa, joka sisältää kaavan.
+**IF/THEN/ELSE**-lausekkeiden avulla voit tehdä minkä tahansa laskutoimituksen riippuvaiseksi mistä tahansa toisesta sarakkeesta. Voit viitata **IF**-lausekkeessa muihin sarakkeisiin, mutta et raportin soluun. Kaikkien laskutoimitusten on koskettava kokonaista saraketta. Esimerkiksi laskelman **IF B&gt;100 THEN B ELSE C\*1,25** tarkoittaa, että "Jos B-sarakkeen summa on suurempi kuin 100, aseta B-sarakkeen arvo **CALC**-sarakkeeseen. Jos B-sarakkeen summa on pienempi kuin 100, C-sarakkeen arvo kerrotaan 1,25:llä ja tulos sijoitetaan **CALC**-sarakkeeseen. " **IF**-lauseketta on aina seurattava looginen lauseke, jonka tulos on joko tosi tai epätosi. Sekä **THEN**- ja **ELSE**-lausekkeet voivat viittauksia rajoittamattomaan määrään sarakkeita, ja kyseiset kaavat voivat olla juuri niin monimutkaisia kuin haluat. **Huomautus:** Et voi sijoittaa laskutoimituksen tuloksia mihinkään muuhun sarakkeeseen. Tulosten on oltava sarakkeessa, joka sisältää kaavan.
+
+
 
 

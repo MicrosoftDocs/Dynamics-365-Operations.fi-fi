@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-entry-certificates"></a>EU-saapumistodistukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja Euroopan unionin (EU) saapumistodistuksista.
 
 Voit suorittaa seuraavat Euroopan unionin (EU) saapumistodistuksen tehtävät:
@@ -76,7 +79,7 @@ Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen 
 </table>
 
 ## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a>EU-saapumistodistuksen luominen, rekisteröidään ja lataaminen
-Voit luoda EU-merkinnän varmenne automaattisesti vai manuaalisesti. EU: N merkintä on sertifikaatti luodaan ja tulostetaan automaattisesti kun kirjaat pakkausluettelon tai laskun asiakkaalle käyttäen **pakkausluettelon kirjauksen** sivu tai **laskun kirjaus** sivulla. Luo tai tulostaa asiakkaan laskun EU tapahtuma sertifikaatti manuaalisesti, voit **Laskukirjauskansio** sivulla. Voit myös antaa **Merkinnän varmenteen tosite** -sivulla tietoja kolmannen osapuolen myöntämästä EU-saapumistodistuksesta.
+Voit luoda EU-merkinnän varmenne automaattisesti vai manuaalisesti. EU-merkinnän sertifikaatti luodaan ja tulostetaan automaattisesti, kun kirjaat pakkausluettelon tai asiakkaan laskun käyttämällä **Pakkausluettelon kirjaus**- tai **Laskun kirjaus** -sivua. Voit luoda tai uudelleentulostaa EU-saapumistodistuksen manuaalisesti asiakaslaskulle **Laskukirjauskansio**-sivulla. Voit myös antaa **Merkinnän varmenteen tosite** -sivulla tietoja kolmannen osapuolen myöntämästä EU-saapumistodistuksesta.
 
 ### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a>EU-saapumistodistuksen luominen automaattisesti tai manuaalisesti
 
@@ -121,6 +124,8 @@ Jos sinulla ei ole niiden sivujen käyttöoikeutta, joita käytetään tämän t
 </tr>
 </tbody>
 </table>
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Kustannuslaskennan analyysi BI virran sisältö"
-description: "Tässä aiheessa kuvataan, mitä sisällytetään kustannuslaskentaan analyysin sisältöä virtaa BI. Artikkelissa kerrotaan, miten voit käyttää virtaa BI-raportteja ja tietoja tietomallin ja yhteisöistä, joita käytettiin rakentaa sisältöä."
+title: "Kustannuslaskennan analyysin Power BI -sisältö"
+description: "Tässä aiheessa kuvataan, mitä kuuluu kustannuslaskennan analyysin Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-04-04
@@ -24,90 +24,90 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="cost-accounting-analysis-power-bi-content"></a>Kustannuslaskennan analyysi BI virran sisältö
+# <a name="cost-accounting-analysis-power-bi-content"></a>Kustannuslaskennan analyysin Power BI -sisältö
 
-Tässä aiheessa kuvataan, mitä sisällytetään kustannuslaskentaan analyysin sisältöä virtaa BI. Artikkelissa kerrotaan, miten voit käyttää virtaa BI-raportteja ja tietoja tietomallin ja yhteisöistä, joita käytettiin rakentaa sisältöä.
+Tässä aiheessa kuvataan, mitä kuuluu kustannuslaskennan analyysin Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
 <a name="overview"></a>Yleiskuvaus
 --------
 
-**Kustannuslaskennan analyysi** Microsoft Power BI sisältö on tarkoitettu kustannukset ohjaimien tai kuka tahansa, joka on vastuussa organisaation kustannusseuranta suorittamista. Se sisältää tärkeitä mittareita, kuten kustannusten suuruus ja kustannushinta budjetin kustannukset, todelliset kustannukset ja joustavan budjetin kustannukset. Se käyttää tapahtumatietoja kustannuslaskennan toimintoja Microsoft Dynamics-365 ja tarjoaa koko organisaation kustannusten yhteenlaskettu tutkimuksen raportoinnin valuutassa. Esimiehet voit suodattaa tietoja objektien kustannukset suorittaa kustannusseuranta ja organisaatioyksiköille, vaikka organisaatio voi olla useita oikeussubjekteja. Koska **kustannuslaskennan analyysi** BI virran sisältöä korostaa toteutuneiden kustannusten ja suunniteltujen kustannusten eroja johtajat voivat saada ilmoituksen positiivisten ja negatiivisten suuntausten niiden toiminnallista yksikköä. Johtajat voi porautua kustannukset elementin hierarkioita tai yksittäisiä kustannuselementeistä Hanki yksityiskohtaisia tietoja miten kustannusvariansseja on tapahtunut, ja sitten toteuttaa tehokkaita toimia. **Kustannuslaskennan analyysi** virtaa BI sisällön oletetaan, että kustannukset kirjanpitäjät analysoida miten kustannukset kulkee koko organisaation kustannus-objekteja. Katso lisätietoja kustannuslaskennan [kustannuslaskennan kotisivu](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page.md). Määrittämällä Accessin käyttäjätason suojauksen kustannuslaskennan ja yhdistetään rivitason BI virran suojauksen, voit myöntää kaikki kustannukset objektin omistajat pääsy **kustannuslaskennan analyysi** virtaa BI-sisältöä. Kaikki tiedot visualisointi sitten suodatetaan perusteella-taso, joka ohjaa kustannuslaskennan. Saat lisätietoja Accessin käyttäjätason suojauksen ja tietoturvan rivitason [kustannuslaskennan sisällön suojauksen määrittäminen Power BI](setup-security-cost-accounting-content-pack.md).
+**Kustannuslaskennan analyysin** Microsoft Power BI -sisältö on tarkoitettu kustannusten controllereille tai kenelle tahansa, joka on vastuussa organisaation kustannusseurannasta. Se sisältää tärkeitä mittareita, kuten kustannukset, suuruus ja kustannushinta budjetin kustannusten, todellisten kustannusten ja joustavan budjetin kustannusten mukaan. Se käyttää tapahtumatietoja Dynamics 365 for Operationsin kustannuslaskennasta ja tarjoaa koko organisaation kustannusten kokoomanäytön yhdessä raportointivaluutassa. Esimiehet voit suodattaa tietoja kustannusobjektien mukaan suorittaakseen kustannusseurantaa organisaatioyksiköille, vaikka organisaatiolla voi olla useita yrityksiä. Koska **Kustannuslaskennan analyysin** Power BI -sisältö korostaa toteutuneiden kustannusten ja suunniteltujen kustannusten eroja, johtajat voivat saada ilmoituksen positiivisista ja negatiivisista trendeistä omissa toiminnallisissa yksiköissään. Johtajat voi porautua kustannustason hierarkioihin tai yksittäisiin kustannustasoihin hankkiakseen yksityiskohtaisia tietoja siitä, miten kustannusvariansseja on tapahtunut, ja sitten toteuttaa tehokkaita toimia. **Kustannuslaskennan analyysin** Power BI -sisältö mahdollistaa sen, että kustannusten kirjanpitäjät voivat analysoida, miten kustannukset kulkevat koko organisaation kustannusobjektien läpi. Katso lisätietoja kustannuslaskennasta ohjeaiheesta [Kustannuslaskennan aloitussivu](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page.md). Määrittämällä käyttäjätason suojauksen kustannuslaskentaan ja yhdistämällä sen rivitason suojaukseen Power BI:ssä, voit myöntää kaikille kustannusobjektien omistajille pääsyn **Kustannuslaskennan analyysin** Power BI -sisältöön. Kaikki visualisoinnin data sitten suodatetaan sen käyttöoikeustason perusteella, jota ohjataan kustannuslaskennassa. Saat lisätietoja käyttöoikeustason suojauksesta ja rivitason suojauksesta ohjeaiheesta [Kustannuslaskennan Power BI -sisällön suojauksen määrittäminen](setup-security-cost-accounting-content-pack.md).
 
-## <a name="accessing-the-power-bi-content"></a>Power BI-sisällön käyttämistä
-Löydät **kustannuslaskennan analyysi** virtaa BI sisältöä jaettujen varojen kirjaston Microsoft Dynamics Lifecycle Services (LCS). Saat lisätietoja siitä, miten ladata sisältöä ja muodostamaan yhteyttä Dynamics 365 toimintoja tietojen [virtaa BI sisältöä Microsoftin ja kumppanien LCS-](power-bi-content-microsoft-partners.md). **Huomautus:** KB4011327 ** ** on edellytys **kustannuslaskennan analyysi** virtaa BI-sisältöä.  Kun kirjaudut Lifecycle Services, voit käyttää tätä KB: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
+Löydät **Kustannuslaskennan analyysin** Power BI -sisällön Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Saat lisätietoja siitä, miten sisältö ladataan ja miten se liitetään Dynamics 365 for Operationsin tietoihin, artikkelista [LCS:n Power BI -sisältö Microsoftilta ja kumppaneilta](power-bi-content-microsoft-partners.md). **Huomautus:** KB4011327 ** ** on edellytys **Kustannuslaskennan analyysin** Power BI -sisällölle.  Kun olet kirjautunut Lifecycle Servicesiin, pääset artikkeliin tästä: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI-sisältö
-Sisältö sisältää raportin sivuja. Jokainen sivu koostuu joukko mittareita, jotka ovat visualized laatat, kaavioiden ja taulukoiden muodossa. Seuraavassa taulukossa on yleiskatsaus visualisointi **kustannuslaskennan analyysi** virtaa BI-sisältöä.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
+Sisältö sisältää joukon raporttisivuja. Jokainen sivu koostuu joukosta mittareita, jotka ovat visualisoitu kaavioiden, ruutujen ja taulukoiden muodossa. Seuraavassa taulukossa on yleiskatsaus visualisoinneista **kustannuslaskennan analyysin** Power BI -sisällössä.
 
-| Raportti-sivu                      | Kaavio                                                                                                                         | Ruutu                                          |
+| Raporttisivu                      | Kaavio                                                                                                                         | Ruutu                                          |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| Kustannusseuranta kirjanpitokauden mukaan    | Todelliset kustannukset- ja kustannukset elementin hierarkiatason mukaan budjetin kustannukset                                                                   | Vs: todelliset kustannukset budjetin kustannukset                    |
-|                                  | Budjetin varianssin kustannukset elementin hierarkiatason mukaan                                                                               | Nopeus vs todelliset kustannukset budjetin kustannukset-kurssi          |
-|                                  | Top 10 varianssi prosentteina kustannustekijä mukaan                                                                          | Todellinen suuruus vs budjetin suuruus          |
-| Kustannusseurannan perusteella vuoden alusta     | Todelliset kustannukset ja kalenterivuoden ajanjakson mukaan budjetin kustannukset                                                                           | Vs: todelliset kustannukset budjetin kustannukset                    |
-|                                  | Budjetin varianssin kalenterivuoden ajanjakson mukaan                                                                                       | Nopeus vs todelliset kustannukset budjetin kustannukset-kurssi          |
-|                                  | Top 10 varianssi prosentteina kustannustekijä mukaan                                                                          | Todellinen suuruus vs budjetin suuruus          |
-| Kustannushinta tilikauden mukaan         | Todellisen kustannushinnan mukaan toiminnan kustannukset                                                                                             | Nopeus vs todelliset kustannukset budjetin kustannukset-kurssi          |
-|                                  | Toteutunut kustannushinta, budjetin kustannusten varianssi nopeus, budjetin kustannukset prosenttiluvulla ja budjetin kustannushinta kustannukset elementin hierarkiatason mukaan | Todellinen suuruus vs budjetin suuruus          |
-|                                  | Budjetin varianssin kustannukset elementin hierarkiatason mukaan                                                                               |                                               |
-|                                  | Top 10 varianssi prosentteina kustannustekijä mukaan                                                                          |                                               |
-| Joustavan budjetin kirjanpitokauden mukaan | Todelliset kustannukset, budjetin kustannukset- ja kustannukset elementin hierarkiatason mukaan joustavan budjetin kustannukset                                             | Todellinen suuruus vs budjetin suuruus          |
-|                                  | Budjetin varianssin ja joustavan budjetin kustannukset-elementin hierarkiatason mukaan varianssi                                                  | Toteutunut kustannus vs joustavan budjetin kustannukset           |
-|                                  | Todelliset kustannukset, budjetin kustannukset ja joustavat kustannukset mukaan toiminnan kustannukset ja kustannusten elementin Hierarkiataso                                  | Todelliset kustannukset nopeus vs joustavan budjetin kustannushinta |
-| Kustannusraportti kirjanpitokauden mukaan  | Todelliset kustannukset kustannukset osa Hierarkiataso ja kustannukset dimension jäsennimi                                             |                                               |
-|                                  | Todelliset kustannukset kustannukset dimension jäsennimi ja kustannukset elementin dimension jäsennimi                                       |                                               |
+| Kustannusseuranta tilikauden mukaan    | Todelliset kustannukset ja budjetin kustannukset kustannuselementin hierarkiatason mukaan                                                                   | Todellinen kustannus vs. budjettikustannus                    |
+|                                  | Budjetin varianssi kustannuselementin hierarkiatason mukaan                                                                               | Todellinen kustannushinta vs. budjetin kustannushinta          |
+|                                  | Top 10 budjettivarianssi prosentteina kustannustekijän mukaan                                                                          | Todellinen suuruus vs budjetin suuruus          |
+| Kustannusseuranta vuoden alusta     | Todelliset kustannukset ja budjetin kustannukset kalenterivuoden ajanjakson mukaan                                                                           | Todellinen kustannus vs. budjettikustannus                    |
+|                                  | Budjetin varianssi kalenterivuoden ajanjakson mukaan                                                                                       | Todellinen kustannushinta vs. budjetin kustannushinta          |
+|                                  | Top 10 budjettivarianssi prosentteina kustannustekijän mukaan                                                                          | Todellinen suuruus vs budjetin suuruus          |
+| Kustannushinta tilikauden mukaan         | Todellinen kustannushinta kustannustoiminnan mukaan                                                                                             | Todellinen kustannushinta vs. budjetin kustannushinta          |
+|                                  | Toteutunut kustannushinta, budjetin kustannushinnan varianssi, budjetin kustannushinnan prosentti ja budjetin kustannushinta kustannuselementin hierarkiatason mukaan | Todellinen suuruus vs budjetin suuruus          |
+|                                  | Budjetin varianssi kustannuselementin hierarkiatason mukaan                                                                               |                                               |
+|                                  | Top 10 budjettivarianssi prosentteina kustannustekijän mukaan                                                                          |                                               |
+| Joustava budjetti kirjanpitokauden mukaan | Todelliset kustannukset , budjetin kustannukset ja joustava budjetin kustannus kustannuselementin hierarkiatason mukaan                                             | Todellinen suuruus vs budjetin suuruus          |
+|                                  | Budjetin varianssi ja joustavan budjetin varianssi kustannuselementin hierarkiatason mukaan                                                  | Todellinen kustannus vs. joustavan budjetin kustannus           |
+|                                  | Todelliset kustannukset , budjetin kustannukset ja joustavan budjetin kustannus kustannustoiminnan ja kustannuselementin hierarkiatason mukaan                                  | Todellinen kustannushinta vs. joustavan budjetin kustannushinta |
+| Kustannusraportti tilikauden mukaan  | Todelliset kustannukset kustannuselementin hierarkiatason mukaan ja kustannusobjektin dimension jäsenen nimen mukaan                                             |                                               |
+|                                  | Todelliset kustannukset kustannusobjektin dimension jäsenen nimen mukaan ja kustannustason dimension jäsenen nimen mukaan                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
-Täyttääksesi raportin sivuja käytetään työvaiheiden tietoja Dynamics 365 **kustannuslaskennan analyysi** virtaa BI-sisältöä. Nämä tiedot esitetään koostaa mitat, jotka lisätään yrityksen säilössä, joka on Microsoft SQL-tietokannan, joka on optimoitu analytics. Lisätietoja on ohjeaiheessa [yksikön Myymälän integrointi yleistä Power BI](power-bi-integration-entity-store.md). Avaimen koosta mittauksissa käytetään sisällön perusteella.
+Dynamics 365 for Operations -tietoja käytetään täyttämään **Kustannuslaskennan analyysi** Power BI -sisällön raporttisivut. Nämä tiedot esitetään koottuina mittauksina, jotka vaiheistetaan yksikkösäilössä, joka on analytiikkaa varten optimoitu Microsoft SQL -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md). Seuraavia tärkeitä koostettuja mittoja käytetään sisällön perustana.
 
-| Kokonaisuus                  | Avaimen koosta mittaus | Tietolähteen Dynamics 365 operaatioille | Kenttä     | kuvaus                                   |
+| Kokonaisuus                  | Tärkeät koostemitat | Dynamics 365 for Operationsin tietolähde | Kenttä     | kuvaus                                   |
 |-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
-| Kustannuslaskennan tapahtumia | SUM(Amount)               | CAMDATAAggregatedCostEntry                  | Summa    | Summa valuuttana kustannuslaskenta kirjanpitoon |
-| Tilastomerkinnät     | SUM(MAGNITUDE)            | CAMDATAAggregatedStatisctialEntry           | Suuruus |                                               |
+| Kustannuslaskennan tapahtumat | SUM(Summa)               | CAMDATAAggregatedCostEntry                  | Summa    | Summa kustannuslaskennan kirjanpitovaluuttana |
+| Tilastomerkinnät     | SUM(Suuruus)            | CAMDATAAggregatedStatisctialEntry           | Suuruus |                                               |
 
-Seuraavassa taulukossa on esitetty, miten avaimen koostaa mitat voidaan luoda useita laskettuja mittoja sisällön dataset-ryhmän.
+Seuraavassa taulukossa on esitetty, miten tärkeitä koostemittoja käytetään luomaan useita laskettuja mittoja sisällön tietojoukossa.
 
-| Mitta                                       | Miten on laskettu mitta                                                                                          |
+| Mitta                                       | Miten mitta on laskettu                                                                                          |
 |-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Toteutunut kustannus                                   | Laske ('kustannuslaskennan tapahtumia'\[mitta\], 'Tapahtuma versiot'\[ISSOURCEVERSIONBUDGET\_arvo\] = 0)            |
-| Budjetoitu kustannus                                   | Laske ('kustannuslaskennan tapahtumia'\[mitta\], 'Tapahtuma versiot'\[ISSOURCEVERSIONBUDGET\_arvo\] = 1)            |
-| Kustannusten varianssi                          | \[Budjetin kustannukset\] - \[todelliset kustannukset\]                                                                                      |
-| Talousarvion prosentuaalinen varianssi                    | IF (\[budjetin kustannukset\] = 0, blank(), \[budjetin varianssin\] / \[budjetin kustannukset\])                                                |
-| Todellinen suuruus                              | Laske ('Tilastollisen tapahtumat'\[FullMagnitude\], 'Tapahtuma versiot'\[ISSOURCEVERSIONBUDGET\_arvo\] = 0)          |
-| Budjetin suuruus                              | Laske (\[FullMagnitude\], 'Tapahtuma versiot'\[ISSOURCEVERSIONBUDGET\_arvo\] = 1)                               |
-| Tilastollinen varianssi                   | \[Talousarvion suuruus\] - \[todellinen suuruus\]                                                                            |
-| Budjetin tilastollinen varianssi prosentteina        | IF (\[talousarvion suuruus\] = 0, blank(), \[tilastollinen varianssi\] / \[talousarvion suuruus\])                          |
-| Toteutunut kustannushinta                              | IF (\[todellinen suuruus\] = 0, BLANK(), \[todelliset kustannukset\] / \[todellinen suuruus\])                                          |
-| Budjetin kustannushinta                              | IF (\[talousarvion suuruus\] = 0, BLANK(), \[budjetin kustannukset\] / \[talousarvion suuruus\])                                          |
-| Kustannusten korvaus varianssi                     | \[Budjetin kustannushinta\] - \[Toteutunut kustannushinta\]                                                                            |
-| Budjetin kustannusten varianssi prosenttiluvulla          | IF (\[budjetin kustannukset\] = 0, blank(), \[budjetin kustannusten korvaus varianssi\] / \[budjetin kustannushinta\])                                 |
-| Kiinteä budjettikustannus                             | Laske (\[budjetin kustannukset\], 'Kustannuslaskenta tapahtumat'\[COSTBEHAVIOR\] = 1)                                              |
-| Muuttuva budjetin kustannukset                          | Laske (\[budjetin kustannukset\], 'Kustannuslaskenta tapahtumat'\[COSTBEHAVIOR\] = 2)                                              |
-| Joustavan budjetin kiinteä kustannus                    | \[Kiinteä budjettikustannus\]                                                                                                  |
-| Muuttuva joustavan budjetin kustannukset                 | IF (\[talousarvion suuruus\] = 0, BLANK(), (\[muuttujan budjetin kustannukset\] / \[talousarvion suuruus\]) \*\[todellinen suuruus\])       |
-| Joustavan budjetin kustannukset                          | \[Kiinteät kustannukset joustavaan budjettiin\] + \[muuttujan joustavan budjetin kustannukset\]                                                     |
-| Joustavan budjetin varianssin                      | \[Joustavan budjetin kustannukset\] - \[todelliset kustannukset\]                                                                             |
-| Joustavan budjetin prosentuaalinen varianssi           | IF (\[joustavan budjetin kustannukset\] = 0, BLANK(), \[joustavan budjetin varianssin\] / \[joustavan budjetin kustannukset\])                     |
-| Joustavan budjetin kustannusten korvaus                     | IF (\[todellinen suuruus\] = 0, BLANK(), \[joustavan budjetin kustannukset\] / \[todellinen suuruus\])                                 |
-| Joustavan budjetin kustannusten korvaus varianssi            | \[Joustavan budjetin kustannushinta\] - \[Toteutunut kustannushinta\]                                                                   |
-| Joustavan budjetin kustannusten varianssi prosenttiluvulla | IF (\[joustavan budjetin kustannushinta\] = 0, BLANK(), \[joustavan budjetin kustannusten korvaus varianssi\] / \[joustavan budjetin kustannushinta\]) |
+| Toteutunut kustannus                                   | CALCULATE('Cost accounting entries'\[Measure\], 'Transaction versions'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 0)            |
+| Budjetoitu kustannus                                   | CALCULATE('Cost accounting entries'\[Measure\], 'Transaction versions'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 1)            |
+| Budjetin kustannusten varianssi                          | \[Budget cost\] - \[Actual cost\]                                                                                      |
+| Budjettivarianssin prosentti                    | IF(\[Budget cost\] = 0, blank(), \[Budget variance\] / \[Budget cost\])                                                |
+| Todellinen suuruus                              | CALCULATE('Statistical entries'\[FullMagnitude\], 'Transaction versions'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 0)          |
+| Budjetin suuruus                              | CALCULATE(\[FullMagnitude\], 'Transaction versions'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 1)                               |
+| Tilastollinen budjetin varianssi                   | \[Budget magnitude\] - \[Actual magnitude\]                                                                            |
+| Tilastollinen budjettivarianssin prosentti        | IF(\[Budget magnitude\] = 0, blank(), \[Statistical budget variance\] / \[Budget magnitude\])                          |
+| Toteutunut kustannushinta                              | IF(\[Actual magnitude\] = 0, BLANK(), \[Actual cost\] / \[Actual magnitude\])                                          |
+| Budjetin kustannushinta                              | IF(\[Budget magnitude\] = 0, BLANK(), \[Budget cost\] / \[Budget magnitude\])                                          |
+| Budjettikustannushinnan varianssi                     | \[Budget cost rate\] - \[Actual cost rate\]                                                                            |
+| Budjettikustannushinnan varianssin prosentti          | IF(\[Budget cost\] = 0, blank(), \[Budget cost rate variance\] / \[Budget cost rate\])                                 |
+| Kiinteä budjettikustannus                             | CALCULATE(\[Budget cost\], 'Cost accounting entries'\[COSTBEHAVIOR\] = 1)                                              |
+| Muuttuva budjetin kustannus                          | CALCULATE(\[Budget cost\], 'Cost accounting entries'\[COSTBEHAVIOR\] = 2)                                              |
+| Kiinteä joustava budjettikustannus                    | \[Fixed budget cost\]                                                                                                  |
+| Muuttuva joustava budjettikustannus                 | IF(\[Budget magnitude\] = 0, BLANK(), (\[Variable budget cost\] / \[Budget magnitude\]) \* \[Actual magnitude\])       |
+| Joustava budjettikustannus                          | \[Fixed flexible budget cost\] + \[Variable flexible budget cost\]                                                     |
+| Joustava budjetin varianssi                      | \[Flexible budget cost\] - \[Actual cost\]                                                                             |
+| Joustavan budjettivarianssin prosentti           | IF(\[Flexible budget cost\] = 0, BLANK(), \[Flexible budget variance\] / \[Flexible budget cost\])                     |
+| Joustava budjettikustannushinta                     | IF(\[Actual magnitude\] = 0, BLANK(), \[Flexible budget cost\] / \[Actual magnitude\])                                 |
+| Joustavan budjetin kustannushinnan varianssi            | \[Flexible budget cost rate\] - \[Actual cost rate\]                                                                   |
+| Joustava budjettikustannushinnan varianssin prosentti | IF(\[Flexible budget cost rate\] = 0, BLANK(), \[Flexible budget cost rate variance\] / \[Flexible budget cost rate\]) |
 
-Suodattimina käytetään seuraavat tärkeimmät mitat osittaa yhteenlaskettu mittausten saavuttaa suurempi rakeisuus ja syvemmälle analyyttinen asuun.
+Suodattimina käytetään seuraavia tärkeimpiä dimensioita osittamaan koostemitat, jotta saavutetaan suurempi rakeisuus ja saadaan syvempiä analyyttisiä näkemyksiä.
 
-| Kokonaisuus                             | Esimerkkejä määritteet                                                                                               |
+| Kokonaisuus                             | Esimerkkejä määritteistä                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Kustannuslaskennan kirjanpidot            | Kustannuslaskennan kirjanpito                                                                                               |
 | Kustannusseurantayksiköt                 | Kustannusseurannan nimi                                                                                               |
-| Kustannustason dimensiot            | Kustannusten elementtejä dimension nimi, kustannukset elementin dimension jäsennimi, kustannukset elementin dimension jäsenen kuvaus          |
-| Kustannusobjektin dimensiot             | Kustannuskohteen dimension nimi, kustannukset dimension jäsennimi, kustannukset objektin dimension jäsenen kuvaus              |
-| Tilastodimensiot             | Tilastollinen dimension nimi, tilastollinen dimension jäsennimi, tilastollinen dimension jäsenen kuvaus              |
-| Kustannuskohteen dimensiohierarkiat  | Kustannusluokkien dimension hierarkian nimi, kustannus-objekti dimension Hierarkiataso kustannukset dimension hierarkian hakemistopuu    |
-| Kustannusten elementin dimensiohierarkiat | Kustannusten elementti-dimension hierarkian nimi, kustannukset elementin dimension Hierarkiataso kustannukset elementti-dimensio hierarkiapuussa |
-| Tilastollinen dimensiohierarkiat  | Tilasto-dimension hierarkian nimi, tilastollinen dimension Hierarkiataso, tilastollinen dimension hierarkiapuussa    |
+| Kustannustason dimensiot            | Kustannustason dimension nimi, kustannustason dimension jäsenen nimi, kustannustason dimension jäsenen nimi          |
+| Kustannusobjektin dimensiot             | Kustannusobjektin dimension nimi, kustannusobjektin dimension jäsenen nimi, kustannusobjektin dimension jäsenen nimi              |
+| Tilastodimensiot             | Tilastollinen dimension nimi, Tilastollinen dimension jäsenen nimi, Tilastollinen dimension jäsenen nimi              |
+| Kustannusobjektin dimensiohierarkiat  | Kustannusobjektin dimension hierarkian nimi, Kustannusobjektin dimension hierarkiataso, Kustannusobjektin dimension hierarkiapuu    |
+| Kustannustason dimensiohierarkiat | Kustannustason dimension hierarkian nimi, Kustannustason dimension hierarkiataso, Kustannustason dimension hierarkiapuu |
+| Tilastodimension hierarkiat  | Tilastodimension hierarkian nimi, Tilastodimension hierarkiataso, Tilastodimension hierarkiapuu    |
 | Tapahtuman versiot               | Version nimi                                                                                                         |
-| Kirjanpidon kalenterit                   | Kalenterin kalenterin kuvaus                                                                                       |
+| Kirjanpidon kalenterit                   | Kalenteri, kalenterin kuvaus                                                                                       |
 | Tilikaudet                       | Kalenterivuosi                                                                                                        |
-| Tilikaudet                     | Kalenterivuoden aikana                                                                                                 |
+| Tilikaudet                     | Kalenterivuoden kausi                                                                                                 |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:
@@ -116,6 +116,6 @@ Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisä
 -   [Organisaation sisältöpakettien luominen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Tietojen mallinnus Power BI:n avulla](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Power BI -ruutujen lisääminen työtiloihin](configure-power-bi-integration.md)
--   [Power BI kustannuslaskennan sisällön suojauksen määrittäminen](setup-security-cost-accounting-content-pack.md)
+-   [Kustannuslaskennan Power BI -sisällön suojauksen määrittäminen](setup-security-cost-accounting-content-pack.md)
 
 

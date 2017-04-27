@@ -1,5 +1,5 @@
 ---
-title: "Määritä työnkulun manuaalinen päätös"
+title: "Manuaalisen päätöksen konfiguroiminen työnkulkuun"
 description: "Tässä ohjeaiheessa kerrotaan, miten manuaalisen päätöksen eri ominaisuudet määritetään."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-manual-decision-in-a-workflow"></a>Määritä työnkulun manuaalinen päätös
+# <a name="configure-a-manual-decision-in-a-workflow"></a>Manuaalisen päätöksen konfiguroiminen työnkulkuun
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä ohjeaiheessa kerrotaan, miten manuaalisen päätöksen eri ominaisuudet määritetään.
 
@@ -95,8 +98,8 @@ Voit lähettää käyttäjille ilmoituksia, kun päätös on tehty, delegoitu ta
 
 1.  Valitse vasemmasta ruudusta **Ilmoitukset**.
 2.  Valitse tapahtuman vieressä oleva valintaruutu, jos haluat lähettää siihen liittyviä ilmoituksia:
-    -   **\[Vaihtoehto 1\]** – määritetty käyttäjä on valinnut **\[vaihtoehto 1\]**.
-    -   **\[Vaihtoehto 2\]** – määritetty käyttäjä on valinnut **\[vaihtoehto 2\]**.
+    -   **\[Vaihtoehto 1\]** – Määritetty käyttäjä on valinnut **\[vaihtoehdon 1\]**.
+    -   **\[Vaihtoehto 2\]** – Määritetty käyttäjä on valinnut **\[vaihtoehdon 2\]**.
     -   **Delegoi** – Määritetty käyttäjä on delegoinut päätöksen toiselle käyttäjälle.
     -   **Eskaloi** – Määritetty käyttäjä ei ole tehnyt päätöstä määräajassa.
 
@@ -148,10 +151,10 @@ Voit lähettää käyttäjille ilmoituksia, kun päätös on tehty, delegoitu ta
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tietyt Microsoft Dynamics-365 toimintoja käyttäjille</td>
+    <td>Tietyt Microsoft Dynamics 365 for Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong> luettelo sisältää kaikki käyttäjien toimien Dynamics 365. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -213,10 +216,10 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
     </tr>
     <tr class="even">
     <td>Käyttäjä</td>
-    <td>Tiettyjä toimintoja käyttäjille Dynamics 365</td>
+    <td>Tietyt Dynamics 365 for Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong> luettelo sisältää kaikki käyttäjien toimien Dynamics 365. Valitse käyttäjät, joille päätös liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille päätös liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -234,8 +237,8 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
     <li>Valitse <strong>Jonon tyyppi</strong> -luettelosta <strong>Ehdolliset työnimikejonot</strong>.</li>
     <li>Valitse <strong>Ehdollinen jono</strong> <strong>Jonon nimi</strong> -luettelosta.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Huomautus:</strong> tätä asetusta käytetään vain joitakin työnkulkuja, kuten palvelupyyntöjen hallinta.</td>
+    </ol>
+    <strong>Huomautus</strong>: tätä vaihtoehtoa käytetään vain muutamissa työnkuluissa, kuten Palvelupyynnön hallinnassa.</td>
     </tr>
     </tbody>
     </table>
@@ -258,9 +261,9 @@ Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on eräänty
     |----------|----------------------------|
     | 1        | Määritä rooliin: Donna           |
     | 2        | Määritä rooliin: Erin            |
-    | 3        | Lopullinen-toiminto: \[vaihtoehto 1\] |
+    | 3        | Lopullinen toiminto: \[Vaihtoehto 1\] |
 
-    Tässä esimerkissä järjestelmä määrittää erääntyneen päätöksen Donnalle. Jos Donna ei tee päätöstä ajoissa, päätöksenteko määritetään Erinille. Jos Erinkään ei tee päätöstä annetussa ajassa, järjestelmä valitsee **\[vaihtoehto 1\]** päätöksen mukaisesti.
+    Tässä esimerkissä järjestelmä määrittää erääntyneen päätöksen Donnalle. Jos Donna ei tee päätöstä ajoissa, päätöksenteko määritetään Erinille. Jos Erin ei tee päätöstä ajoissa, järjestelmä valitsee **\[vaihtoehdon 1\]**.
 3.  Voit lisätä käyttäjän eskalointipolkuun valitsemalla **Lisää eskalaatio**. Valitse jokin seuraavan taulukon vaihtoehdoista ja noudata vaihtoehdon toimia ennen siirtymistä vaiheeseen 4.
     <table>
     <colgroup>
@@ -303,10 +306,10 @@ Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on eräänty
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tiettyjä toimintoja käyttäjille Dynamics 365</td>
+    <td>Tietyt Dynamics 365 for Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong> luettelo sisältää kaikki käyttäjien toimien Dynamics 365. Valitse käyttäjät, joille päätös eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille päätös eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -335,6 +338,8 @@ Noudata seuraavia ohjeita, jos päätös on tehtävä tietyn ajan kuluessa. **Hu
     -   **Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä päätös on tehtävä. Voit esimerkiksi määrittää, että päätös on tehtävä joulukuun kolmannen viikon perjantaihin mennessä.
 
 4.  Jos aikaraja ylittyy, järjestelmä tekee päätöksen automaattisesti. Valitse **Toiminto**-luettelosta vaihtoehto, jonka haluat järjestelmän valitsevan.
+
+
 
 
 

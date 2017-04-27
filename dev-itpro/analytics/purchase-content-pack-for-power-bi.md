@@ -1,6 +1,6 @@
 ---
-title: "Osto kuluttavat virtaa BI sisällön analyysi"
-description: "Tässä aiheessa kuvataan, mitä sisältyy oston analyysi sisältö pack Microsoft Power BI-aktiviteettiin. Artikkelissa kerrotaan, miten voit käyttää raportteja, jotka sisältyvät sisältö pack ja tietoja tietomallin ja yksiköt, joita käytetään rakentaa sisältö pack."
+title: "Ostojen ja kulutuksen analyysi - Power BI -sisältö"
+description: "Tässä aiheessa kuvataan, mitä kuuluu Microsoft Power BI:n ostojen ja kulutuksen analyysin sisältöpakettiin. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-12-30 09 - 40 - 51
@@ -24,23 +24,23 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="purchase-spend-analysis-power-bi-content"></a>Osto kuluttavat virtaa BI sisällön analyysi
+# <a name="purchase-spend-analysis-power-bi-content"></a>Ostojen ja kulutuksen analyysi - Power BI -sisältö
 
-Tässä aiheessa kuvataan, mitä sisältyy oston analyysi sisältö pack Microsoft Power BI-aktiviteettiin. Artikkelissa kerrotaan, miten voit käyttää raportteja, jotka sisältyvät sisältö pack ja tietoja tietomallin ja yksiköt, joita käytetään rakentaa sisältö pack.
+Tässä aiheessa kuvataan, mitä kuuluu Microsoft Power BI:n ostojen ja kulutuksen analyysin sisältöpakettiin. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
 <a name="overview"></a>Yleiskuvaus
 --------
 
-Osto varojen käytön analyysi sisällön Microsoft Power BI pack on luotu päälliköt ja johtajat, jotka ovat vastuussa budjetit ostoa varten. Se on suunniteltu auttamaan tarkkaile menoja osto. Osto tapahtumiin liittyviä tietoja Microsoft Dynamics-365 käyttää toimintoja ja tarjoaa sekä koko yrityksen osto luvut yhteenlaskettu tutkimuksen ja ostotilauksen toimittaja-ja varojen käyttörajat jakautuminen. Raporttien Korosta muutokset Purchase menoja pitkällä aikavälillä. Tämän vuoksi ne voidaan ilmoitus esimiehet, positiivinen ja negatiivinen kaupankäynnin kulujen trendeistä yksittäisten toimittajien ja tuotteiden. Näyttävät eri hankintaluokat ja toimittajaryhmien menoja osto. Luokka ja aluepäälliköille ehkä hyödyllistä auttaa tunnistamaan muutoksia kasvamisen toiminta kaavioiden avulla. Sisältö pack nyt osto-päälliköt ja johtajat, jotka ovat vastuussa budjetit analysoida osto varojen käyttörajat seuraavilla tavoilla:
+Microsoft Power BI:n ostojen ja kulutuksen analyysin sisältöpaketti luotiin ostopäälliköille ja budjeteista vastaaville esimiehille. Sen avulla voidaan pitää silmällä ostoja ja kulutusta. Se käyttää ostotapahtumiin liittyviä tietoja Microsoft Dynamics 365 for Operations -ohjelmasta ja tarjoaa kootun näkymän koko yrityksen ostoluvuista sekä toimittaja- ja tuotekohtaisen erittelyn ostoista ja kulutuksesta. Raportit korostavat ostojen ja kulutuksen muutoksia ajanjakson aikana. Tämän vuoksi niitä voidaan käyttää, kun esimiehille ilmoitetaan yksittäisten toimittajien ja tuotteiden positiivisista ja negatiivisista kulutussuuntauksista. Kaaviot esittävät eri hankintaluokkien ja toimittajaryhmien ostot ja kulutuksen. Nämä kaaviot saattavat auttaa luokka- ja aluepäälliköitä tunnistamaan kulutuskäyttäytymisessä tapahtuvia muutoksia. Sisältöpaketin avulla ostopäälliköt ja budjeteista vastuussa olevat esimiehet voivat analysoida ostoja ja kulutusta seuraavilla tavoilla:
 
--   Vuoden alusta ostamisesta (toimittajaryhmän ja yksittäisten toimittajien hankintaluokka ja yksittäisten tuotteiden ja toimittajan sijainti)
--   Muutos vuoden vuosittaisen Osto (toimittajan ryhmän ja hankintojen luokan mukaan)
+-   Ostot vuoden alusta (toimittajaryhmän ja yksittäisten toimittajien, hankintaluokan ja yksittäisten tuotteiden ja toimittajan sijainnin mukaan)
+-   Ostojen vuosittainen muutos (toimittajaryhmän ja hankintaluokan mukaan)
 
-## <a name="accessing-the-content-pack"></a>Sisältö pack käyttäminen
-Osto varojen käytön analyysi sisältö pack toteutus varoiksi Microsoft Dynamics Lifecycle Services (LCS) on julkaistu ja voi käyttää Microsoft Dynamics-365 operaatioille. Saat lisätietoja siitä, kuinka access ja avaa Power BI [virtaa BI sisältöä Microsoftin ja kumppanien LCS-](power-bi-content-microsoft-partners.md).
+## <a name="accessing-the-content-pack"></a>Sisältöpaketin avaaminen
+Ostojen ja kulutuksen analyysin sisältöpaketti julkaistaan käyttöönotettavana resurssina Microsoft Dynamics Lifecycle Services -palvelussa (LCS) ja se on käytettävissä Microsoft Dynamics 365 for Operations -ohjelmassa. Lisätietoja Power BI -raporttien käyttämisestä ja avaamisesta löydät artikkelista [Power BI -sisältö LCS:ssä Microsoftilta ja kumppaneiltasi](power-bi-content-microsoft-partners.md).
 
-## <a name="metrics-that-are-included-in-the-content-pack"></a>Mittareita, jotka sisältyvät sisältö pack
-Osto varojen käytön analyysi sisältö pack sisältää raportin, joka koostuu joukko mittareita. Nämä mittarit ovat visualized laatat, kaavioiden ja taulukoiden muodossa. Seuraavassa taulukossa on yhteenveto sisältö Pack visualisointeja.
+## <a name="metrics-that-are-included-in-the-content-pack"></a>Mittarit, jotka sisältyvät sisältöpakettiin
+Ostojen ja kulutuksen analyysin sisältöpakettiin kuuluu raportti, joka koostuu mittarijoukosta. Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina. Seuraavassa taulukossa on esitetty yhteenveto sisältöpaketissa käytettävistä visualisoinneista.
 
 <table>
 <colgroup>
@@ -50,110 +50,110 @@ Osto varojen käytön analyysi sisältö pack sisältää raportin, joka koostuu
 </colgroup>
 <thead>
 <tr class="header">
-<th>Raportti-sivu</th>
+<th>Raporttisivu</th>
 <th>Kaaviot</th>
-<th>Laatat</th>
+<th>Ruudut</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Oston toimittajan mukaan</td>
+<td>Ostot toimittajan mukaan</td>
 <td><ul>
-<li>10 suurinta toimittajaa (pinottu palkkikaavio) ostotilauksen mukaan</li>
-<li>Ostot toimittajan mukaan yhteensä ryhmän / maa / nimi (Ympyräkaavio)</li>
-<li>Ostot toimittajan mukaan ryhmä / maa / nimi (pylväskaavio)</li>
-<li>Ostot toimittajan mukaan keskimääräinen ryhmän / maa / nimi (pylväskaavio)</li>
+<li>10 parasta toimittajaa ostojen mukaan (pinottu palkkikaavio)</li>
+<li>Ostot yhteensä toimittajaryhmän/maan/nimen mukaan (ympyräkaavio)</li>
+<li>Ostot toimittajaryhmän/maan/nimen mukaan (sarakekaavio)</li>
+<li>Ostot keskimäärin toimittajaryhmän/maan/nimen mukaan (sarakekaavio)</li>
 </ul></td>
 <td><ul>
 <li>Osto yhteensä</li>
-<li>VS ostojen kasvu</li>
-<li>Yhteensä # toimittajat</li>
-<li>Aktiivisten toimittajien yhteensä #</li>
+<li>Ostojen vuosittainen kasvu</li>
+<li>Toimittajien kokonaismäärä</li>
+<li>Aktiivisten toimittajien kokonaismäärä</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Ostaa tuotteen mukaan</td>
+<td>Ostot tuotteen mukaan</td>
 <td><ul>
-<li>Osto hankintaluokittain / tuotteen nimi (pylväskaavio)</li>
-<li>Yhteensä Osto hankintaluokittain / tuotteen nimi (Ympyräkaavio)</li>
-<li>Top 10 tuotteiden osto (pinottu palkkikaavio)</li>
+<li>Ostot hankintaluokan / tuotteen nimen mukaan (sarakekaavio)</li>
+<li>Ostot yhteensä hankintaluokan / tuotteen nimen mukaan (ympyräkaavio)</li>
+<li>10 parasta tuotetta ostojen mukaan (pinottu palkkikaavio)</li>
 </ul></td>
 <td><ul>
-<li>Tuotteita yhteensä #</li>
-<li>Active tuotteet yhteensä osuus yhteensä # tuotteiden</li>
-<li>Tuotteiden osto 80 % kirjanpidollinen määrä</li>
+<li>Tuotteiden kokonaismäärä</li>
+<li>Kaikkien aktiivisten tuotteiden prosenttiosuus tuotteiden kokonaismäärästä</li>
+<li>Tuotteiden määrä, joista koostuu 80 % ostoista</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Ostaa ajan *</td>
+<td>Ostot kauden mukaan*</td>
 <td><ul>
-<li>Ostamisesta kuukausi / päivä (pylväskaavio)</li>
-<li>Kumulatiivinen vs Ostovaihtelu (vesiputoukselle kaavio)</li>
-<li>Oston summa vs kasvu (pylväskaavio)</li>
-<li>Hankintojen lause (matriisi)</li>
+<li>Ostot kuukauden/päivän mukaan (sarakekaavio)</li>
+<li>Kumulatiivisten ostojen vuosittainen varianssi (vesiputouskaavio)</li>
+<li>Ostot yhteensä, vuosittainen kasvu (sarakekaavio)</li>
+<li>Hankintaraportti (matriisi)</li>
 </ul></td>
 <td><ul>
-<li>VS ostojen kasvu</li>
-<li>VS ostojen kasvu %</li>
+<li>Ostojen vuosittainen kasvu</li>
+<li>Ostojen vuosittainen kasvuprosentti</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Osto-toimittajan sijainnin mukaan</td>
+<td>Ostot toimittajan sijainnin mukaan</td>
 <td><ul>
-<li>Kaupunki ostaa</li>
-<li>Osto vs kasvu %</li>
-<li>Maan osto</li>
+<li>Ostot kaupungin mukaan</li>
+<li>Ostojen vuosittainen kasvuprosentti</li>
+<li>Ostot maan mukaan</li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>Osto hankintaluokittain analyysin aika</td>
+<td>Ostojen ja kulutuksen analyysi ajan mukaan</td>
 <td><ul>
-<li>Kuluvan vuoden kuukausittain osto / päivä (viivakaavion)</li>
-<li>Ostaa nykyisen ja edellisen vuoden (rivi- ja kaavio)</li>
+<li>Ostojen kuluva vuosi kuukauden/päivän mukaan (viivakaavio)</li>
+<li>Ostojen kuluva ja edellinen vuosi (viiva- ja sarakekaavio)</li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Osto varojen käytön analyysi toimittajan mukaan</td>
+<td>Ostojen ja kulutuksen analyysi toimittajan mukaan</td>
 <td><ul>
-<li>Top 10 toimittajaa % osto Osto (suppilo)</li>
-<li>10 suurinta toimittajaa ja parantaa kaupankäynnin kulujen vs</li>
-<li>10 suurinta toimittajaa on heikentynyt kaupankäynnin kulujen vs</li>
+<li>10 parasta toimittajaa ostojen prosenttiosuuden mukaan (suppilokaavio)</li>
+<li>10 toimittajaa, joiden vuosittainen kulutus on noussut eniten</li>
+<li>10 toimittajaa, joiden vuosittainen kulutus on laskenut eniten</li>
 </ul></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-\*Osto hankintaluokittain tämän vuoden ja viime vuonna ja kasvu
+\* Ostot tänä ja edellisenä vuonna sekä kasvu hankintaluokan mukaan
 
-## <a name="data-model-and-entities"></a>Tietomallin ja yksiköt
-Dynamics 365-osto-raportin tietoja käytetään työvaiheiden kulutus analyysi sisältöpaketti. Nämä tiedot esitetään koostaa mitat, jotka lisätään yrityksen säilössä, joka on Microsoft SQL-tietokannan, joka on optimoitu analytics. Saat lisätietoja kohteen myymälä [Power BI Dynamics yksikön Myymälän integrointi](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blogimerkintä. Tämä sisältö pack koostaa mitat ovat yhteenlaskettu mittauksia, jotka olivat osto datakuution Microsoft Dynamics AX 2012: n ja Microsoft Dynamics-365 toimintojen 2012 R3: n osajoukko. Vaiheittainen kuution yksikön kaupan koosta mitat, sinun on tehtävä ne esikunnista. Lisätietoja menettelyn väliaikaisen yksikön kauppa koostaa mitat [virtaa BI Dynamics yksikön Myymälän integrointi](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blogikirjoituksessa. Avaimen koostaa mitat ovat käytettävissä suoraan laskun rivit-yksikön ja niitä käytetään perustana sisältö pack.
+## <a name="data-model-and-entities"></a>Tietomalli ja yksiköt
+Dynamics 365 for Operations -ohjelman tietoja käytetään ostojen ja kulutuksen analyysin sisältöpaketin raportoinnissa. Nämä tiedot esitetään koottuina mittauksina, jotka vaiheistetaan yksikkösäilössä, joka on analytiikkaa varten optimoitu Microsoft SQL -tietokanta. Lisätietoja yksikkösäilöstä on kohdassa [Power BI -integraatio yksikkösäilöön Dynamicsissa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blog post. Sisältöpaketin koostetut mittaukset ovat alijoukko Microsoft Dynamics AX 2012:n ja Microsoft Dynamics 365 for Operations 2012 R3:n ostokuutiossa saatavilla olleista koostetuista mittauksista. Jotta kuution koostetut mittaukset voi tallentaa yksikkösäilöön, niistä on tehtävä käyttöönottokelpoisia. Lue lisätietoja koostettujen mittausten tallentamisesta yksikkösäilöön blogikirjoituksesta [Power BI -integraatio yksikkösäilöön Dynamicsissa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Seuraavat tärkeät koostetut mittaukset ovat käytettävissä suoraan laskun rivien yksiköstä. Niitä käytetään sisältöpaketin perustana.
 
-| Kokonaisuus        | Avaimen koosta mittaukset | Tietolähteen Dynamics 365 operaatioille | Kenttä              | kuvaus                           |
+| Kokonaisuus        | Tärkeät koostemitat | Dynamics 365 for Operationsin tietolähde | Kenttä              | kuvaus                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
 | Laskurivit | Osto                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Summa kirjanpitovaluuttana |
 
-Seuraavassa taulukossa on esitetty tärkeimmät mitat, jotka lasketaan laskun rivit kohteesta sisältöpaketti.
+Seuraavassa taulukossa esitellään tärkeät mitat, jotka lasketaan sisältöpaketissa ja jotka saadaan laskun rivien yksiköstä.
 
 | Mitta               | Laskelma                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
-| Osto kuluvan vuoden | Osto kuluvan vuoden = summa ('laskurivit\[oston\])                                            |
-| Ostaa viime vuonna    | Osto viime vuonna = Laske (summa ('laskurivit\[oston\]), SAMEPERIODLASTYEAR (päivämäärät\[päivä\])) |
-| VS ostojen kasvu   | VS ostaa kasvu = \[ostaa kuluvan vuoden\] – \[ostaa viime vuonna\]                            |
+| Kuluvan vuoden ostot | Kuluvan vuoden ostot = SUM('Invoice lines'\[Purchase\])                                            |
+| Edellisen vuoden ostot    | Edellisen vuoden ostot = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\])) |
+| Ostojen vuosittainen kasvu   | Ostojen vuosittainen kasvu = \[Kuluvan vuoden ostot\] – \[Edellisen vuoden ostot\]                            |
 
-Sisältö Pack seuraavat tärkeimmät mitat käytetään suodattimina koostaa mitat osittaa niin, että voit saavuttaa enemmän rakeisuus ja syvemmälle analyyttinen asuun.
+Sisältöpaketin suodattimina käytetään seuraavia tärkeimpiä dimensioita osittamaan koostemitat, jotta saavutetaan suurempi rakeisuus ja saadaan syvempiä analyyttisiä näkemyksiä.
 
-| Kokonaisuus                 | Esimerkkejä määritteet                                |
+| Kokonaisuus                 | Esimerkkejä määritteistä                                |
 |------------------------|-------------------------------------------------------|
-| Toimittajat                | Toimittajaryhmiä, toimittaja maan tai alueiden toimittajan nimi |
-| Tuotteet               | Tuotenumero, tuotteen nimi, nimi ryhmät        |
-| Hankintaluokat | Hankintaluokka-hankintojen luokkien nimet      |
+| Toimittajat                | Toimittajaryhmät, toimittajan maa tai alueet, toimittajan nimi |
+| Tuotteet               | Tuotenumero, tuotteen nimi, nimikeryhmien nimi        |
+| Hankintaluokat | Hankintaluokka, hankintaluokkien nimet      |
 | Oikeushenkilöt         | Yrityksen nimi                                     |
-| Päivämäärät                  | Päivämääriä, vuosi vastakirjaus                                    |
+| Päivämäärät                  | Päivämäärät, vuosisiirtymä                                    |
 
-Sisältö pack näyttää oletusarvon mukaan tiedot kuluvan kalenterivuoden. Voit kuitenkin muuttaa raportin suodattimia osassa Pvm-suodatus. Voit myös muuttaa oman yrityksen suodatus.
+Sisältöpaketissa näkyvät oletusarvoisesti kuluvan kalenterivuoden tiedot. Voit kuitenkin muuttaa päivämääräsuodatinta raportin suodatinosassa. Voit muuttaa myös yrityssuodatinta.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:

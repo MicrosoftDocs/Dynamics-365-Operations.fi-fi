@@ -1,5 +1,5 @@
 ---
-title: Suunnitella oman tilikartan
+title: Suunnittele tilikarttasi
 description: "Tässä artikkelissa on tietoja, joiden avulla voit suunnitella organisaation tilikartan."
 author: RobinARH
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-your-chart-of-accounts"></a>Suunnitella oman tilikartan
+# <a name="plan-your-chart-of-accounts"></a>Suunnittele tilikarttasi
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa on tietoja, joiden avulla voit suunnitella organisaation tilikartan.
 
@@ -34,7 +37,7 @@ Seuraa ja ylläpidä taloushallinnon tietoja organisaatiossa määrittämällä 
 
 Tilikartta on yrityksen kirjanpitotilien rakenteinen luettelo. Luettelon avulla valmistellaan tilinpäätökset viranomaisia ja omistajia varten. Tilit on ryhmitelty tilityyppeihin ja yhdistetty suuremmiksi luokiksi. Yleisimmällä tasolla tilit on ryhmitelty tuotoiksi ja kustannuksiksi (käyttötilit) sekä varallisuudeksi ja veloiksi (tasetilit). 
 
-Tilikartta voidaan jakaa käytettäväksi minkä tahansa organisaation yrityksen välillä. Tilikartan, jota käytetään oikeussubjektin on määritetty **kirjanpidon** sivulla. 
+Tilikartta voidaan jakaa käytettäväksi minkä tahansa organisaation yrityksen välillä. Yrityksen käyttämä tilikartta määritetään **Kirjanpito**-sivulla. 
 
 Tilikartan rakennetta suunniteltaessa täytyy kiinnittää huomiota esimerkiksi seuraaviin seikkoihin:
 
@@ -48,10 +51,12 @@ Päätilit kannattaa linkittää päätililuokkiin, jolloin oletusraportteja voi
 
 **Määritä tilirakenteet** -sivun avulla voit luoda tilirakenteita. Tilirakenteet määrittävät sallitut yhdistelmät. Yhdistelmät yhdessä päätilien kanssa muodostavat tilikartan. 
 
-**Legal entity overrides** 
+**Yrityksen ohitukset** 
 
-Kaikki päätilit kelpaavat kaikki oikeushenkilöt ja osa voi olla vain asiaa osalta tietyltä ajanjaksolta. Tässä skenaariossa Yrityksen ohitukset -osan avulla määritetään yritykset, joilta päätilin käyttö keskeytetään, omistaja sekä ajanjakso, jolloin dimensio on aktiivinen. Jaetun tason ohitukset eivät voi olla rajoittavampia kuin yritystason ohitukset.
+Kaikki päätilit eivät kelpaa kaikille yrityksille, ja jotkin päätilit saattavat olla olennaisia vain tietyn ajanjakson ajan. Tässä skenaariossa Yrityksen ohitukset -osan avulla määritetään yritykset, joilta päätilin käyttö keskeytetään, omistaja sekä ajanjakso, jolloin dimensio on aktiivinen. Jaetun tason ohitukset eivät voi olla rajoittavampia kuin yritystason ohitukset.
 
-Lisätietoja on ohjeaiheessa [taloushallinnon dimensiot](financial-dimensions.md).
+Lisätietoja on kohdassa [Taloudelliset dimensiot](financial-dimensions.md).
+
+
 
 

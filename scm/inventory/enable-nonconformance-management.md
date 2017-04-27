@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="nonconformance-management"></a>Määrityksistä poikkeamisen hallinta
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan perusasetukset, jotka vaaditaan käytettäessä määrityksistä poikkeamista. Lisäasetukset on määritettävä, jos haluat käyttää laatutilauksia. 
 
 Voit ottaa määrityksistä poikkeamisen käyttöön seuraavien vaiheiden avulla:
@@ -34,7 +37,7 @@ Voit ottaa määrityksistä poikkeamisen käyttöön seuraavien vaiheiden avulla
 1.  Määritä poikkeamiin liittyvät varaston ja varastonhallinnan parametrit.
     -   Määritä **Käytä laadunhallintaa** -vaihtoehdon arvoksi **Kyllä**.
     -   Syötä työn hinta paikallisena valuuttana **Tuntihinta**-kenttään. Tuntihintaa käytetään määrityksistä poikkeavien toimintojen kustannusten laskentaan. Tuntihinta ja lasketut kustannukset ovat määrityksistä poikkeamisen viitetietoja. Ne eivät vaikuta muihin toimintoihin.
-    -   Käyttöä **Laadunhallinta** välilehti **raportin asetukset** sivulla, voit määrittää tulostettavat asiakirjan tyyppi. Voit tulostaa määrityksistä poikkeamisen raportin määrityksistä poikkeamisen tunniste tai korjausraportti. Voit määrittää useita tietueita eri tiedostotyyppien raporttiin tulostamista varten tai sisäisten ja ulkoisten huomautusten tulostamista varten. On hyödyllistä käyttää **Asiakirjatyyppi**-sivua määritettäessä yksilöivä asiakirjatyyppi määrityksistä poikkeamiselle ja korjauksille. Voit haluta syöttää esimerkiksi määrityksistä poikkeamiseen liittyviä huomautuksia määrityksistä poikkeamisen yksilöivän asiakirjatyypin avulla. Tällöin yksilöivä asiakirjatyyppi määritetään raporttiasetuksissa.
+    -   Käytä **Laadunhallinta** -välilehteä **Raportin asetukset** -sivulla, jotta voit määrittää tulostettavan asiakirjan tyypin. Voit tulostaa määrityksistä poikkeamisen raportin, määrityksistä poikkeamisen tunnisteen tai korjausraportin. Voit määrittää useita tietueita eri tiedostotyyppien raporttiin tulostamista varten tai sisäisten ja ulkoisten huomautusten tulostamista varten. On hyödyllistä käyttää **Asiakirjatyyppi**-sivua määritettäessä yksilöivä asiakirjatyyppi määrityksistä poikkeamiselle ja korjauksille. Voit haluta syöttää esimerkiksi määrityksistä poikkeamiseen liittyviä huomautuksia määrityksistä poikkeamisen yksilöivän asiakirjatyypin avulla. Tällöin yksilöivä asiakirjatyyppi määritetään raporttiasetuksissa.
     -   Syötä määrityksistä poikkeamisten ja korjausviitteiden numerosarjat.
 
 2.  Ota käyttöön käyttäjien hyväksyntä määrityksistä poikkeamisille. Liitä **Käyttäjät**-sivun **Nimi**-kentässä työntekijä jokaiselle käyttäjälle, jonka on hyväksyttävä määrityksistä poikkeaminen. Järjestelmä käyttää työntekijöitä, jotka voivat muuttaa määrityksistä poikkeamisen tilan määrityksistä poikkeamisen historiatietojen seuraamista varten. Käyttäjät eivät voi hyväksyä määrityksistä poikkeamista, jos heille ei ole liitetty työntekijätunnusta.
@@ -47,10 +50,12 @@ Voit ottaa määrityksistä poikkeamisen käyttöön seuraavien vaiheiden avulla
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Luo ja käsittele määrityksistä poikkeamisen (tehtävän guide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
+[Luo ja käsittele määrityksistä poikkeaminen (ohjattu tehtävä)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
 
-[Quality management processes](quality-management-processes.md)
+[Laadunhallintaprosessit](quality-management-processes.md)
 
-[Määritä määrityksistä poikkeamisen management (tehtävän guide) edellytykset](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+[Määritä määrityksistä poikkeamisen hallinnan edellytykset (ohjattu tehtävä)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+
+
 
 

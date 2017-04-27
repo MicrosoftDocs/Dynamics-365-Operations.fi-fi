@@ -38,13 +38,13 @@ Rivien määritysten **Rivin koodi** -solun numerot tai selitteet määrittävä
 
 Kaikille riveille on määritettävä rivin koodi. Voit yhdistää rivin määrityksessä numeerisia, aakkosnumeerisia ja määrittämättömiä (tyhjiä) rivin koodeja. Rivin koodi voi olla mikä tahansa rivin määrittävä positiivinen kokonaisluku (alle 100 000 000) tai kuvaava selite. Kuvaavan selitteen on noudatettava seuraavia sääntöjä.
 
--   Selitteen alussa on oltava kirjain (a-ö tai A-Ö). Selite voi olla mikä tahansa numeroiden ja kirjainten yhdistelmä, jossa on enintään 16 merkkiä. **Huomautus:** otsikko voi sisältää alaviivoja (\_), mutta muita erikoismerkkejä ei sallita.
+-   Selitteen alussa on oltava kirjain (a-ö tai A-Ö). Selite voi olla mikä tahansa numeroiden ja kirjainten yhdistelmä, jossa on enintään 16 merkkiä. **Huomautus:** Selite voi sisältää alaviivan (\_), mutta muut erikoismerkit eivät ole sallittuja.
 -   Selitteessä ei voi käyttää seuraavia varattuja sanoja: AND, OR, IF, THEN, ELSE, PERIODS, TO, BASEROW, UNIT, NULL, CPO ja RPO.
 
 Seuraavissa esimerkeissä käytetään kelvollisia rivin koodeja.
 
 -   320
--   TL\_NET\_tulot
+-   TL\_NET\_INCOME
 -   TL\_NET\_94
 
 ### <a name="change-a-row-code-in-a-row-definition"></a>Rivin koodin muuttaminen rivin määrityksessä
@@ -56,7 +56,7 @@ Seuraavissa esimerkeissä käytetään kelvollisia rivin koodeja.
 
 1.  Valitse Report Designerissa **Rivien määritykset** ja avaa muokattava rivin määritys.
 2.  Valitse **Muokkaa**-valikosta **Numeroi rivit uudelleen**.
-3.  Määritä **Numeroi rivit uudelleen** -valintaikkunassa aloitusrivin koodin ja rivin koodin lisäyksen uudet arvot. Voit nollata rivin numeeriset koodit tasaisin välein olevin arvoin. Report Designer numeroi uudelleen kuitenkin vain ne rivin koodit, jotka alkavat numeroilla (esimerkiksi 130 tai 246). Se ei numeroida riviä koodeja, jotka alkavat kirjaimilla (esimerkiksi,\_93- tai TP0693). **Huomautus:** Kun rivin koodeja numeroidaan uudelleen, Report Designer päivittää automaattisesti **TOT**- ja **CAL**-viitteet. Jos esimerkiksi **TOT**-rivi viittaa alueeseen, joka alkaa rivin koodilla 100, ja numeroit uudelleen rivit alkaen arvosta 90, alkavan **TOT**-viitteen arvo 100 muuttuu arvoksi 90.
+3.  Määritä **Numeroi rivit uudelleen** -valintaikkunassa aloitusrivin koodin ja rivin koodin lisäyksen uudet arvot. Voit nollata rivin numeeriset koodit tasaisin välein olevin arvoin. Report Designer numeroi uudelleen kuitenkin vain ne rivin koodit, jotka alkavat numeroilla (esimerkiksi 130 tai 246). Se ei numeroi uudelleen rivin koodeja, jotka alkavat kirjaimilla (esimerkiksi INCOME\_93 tai TP0693). **Huomautus:** Kun rivin koodeja numeroidaan uudelleen, Report Designer päivittää automaattisesti **TOT**- ja **CAL**-viitteet. Jos esimerkiksi **TOT**-rivi viittaa alueeseen, joka alkaa rivin koodilla 100, ja numeroit uudelleen rivit alkaen arvosta 90, alkavan **TOT**-viitteen arvo 100 muuttuu arvoksi 90.
 
 ## <a name="add-a-description"></a>Kuvauksen lisääminen
 Kuvauksen solu sisältää raportin rivillä taloushallinnon tietojen kuvauksen, kuten Tuotto tai Nettotuotto. **Kuvaus**-solun teksti näkyy raportissa samanlaisena kuin rivin määritykseen syötetty kuvaus. **Huomautus:** Raportin kuvaussarakkeen leveys määritetään sarakkeen määrityksessä. Jos rivin määrityksen **Kuvaus**-sarakkeen teksti on pitkä, tarkista **DESC**-sarakkeen leveys. Kun käytät **Lisää rivejä kohteesta** -valintaikkunaa, **Kuvaus**-sarakkeen arvot ovat taloushallinnon tietojen segmenttiarvoja tai dimensioarvoja. Voit lisätä rivejä, kun haluat lisätä kuvaavan tekstin, kuten osan otsikon tai osan kokonaissumman. Voit lisätä rivejä myös, kun haluat lisätä muotoilun, kuten rivin ennen kokonaissummariviä. Jos raportti sisältää raportointipuun, voit sisällyttää lisätekstin, joka määritetään raportointipuun raportointiyksiköille. Voit myös rajoittaa lisätekstin tietylle raportointiyksikölle.
@@ -91,8 +91,8 @@ Kuvauksen solu sisältää raportin rivillä taloushallinnon tietojen kuvauksen,
     | Muotoilukoodi                   | Muotoilukoodin tulkitseminen | Toiminto|
     |---|---|---|
     | (Ei mitään)                        |                                    | Tyhjentää **Muotoilukoodi**-solun.                                                                                                                                                                               |
-    | TOT                           | Yhteensä                              | Määrittää rivin, joka käyttää **Liittyvät kaavat/rivit/yksiköt** -sarakkeessa matemaattisia operaattoreita. Summat sisältävät yksinkertaisen toimijoiden **+**tai**-**.                                                      |
-    | CAL                           | Laskelma                        | Määrittää rivin, joka käyttää **Liittyvät kaavat/rivit/yksiköt** -sarakkeessa matemaattisia operaattoreita. Laskelmat sisältävät monimutkaisia toimijoiden **+**, **-**, **\***, **/**, ja **sitten/Jos/ELSE** lauseita. |
+    | TOT                           | Yhteensä                              | Määrittää rivin, joka käyttää **Liittyvät kaavat/rivit/yksiköt** -sarakkeessa matemaattisia operaattoreita. Yhteensä-koodi sisältää yksinkertaisia operaattoreita, kuten **+** ja **-**.                                                      |
+    | CAL                           | Laskelma                        | Määrittää rivin, joka käyttää **Liittyvät kaavat/rivit/yksiköt** -sarakkeessa matemaattisia operaattoreita. Laskelmat sisältävät monimutkaisia operaattoreita, kuten **+**, **-**, **\***, **/** ja **IF/THEN/ELSE** -lausekkeet. |
     | DES                           | kuvaus                        | Määrittää raportin otsikkorivin tai tyhjän rivin.                                                                                                                                                        |
     | LFT RGT CEN                   | Vasen, Oikea, Keskitys                  | Tasaa rivin kuvaustekstin raporttisivulla tekstin sarakkeen määrityksessä olevasta sijoittelusta huolimatta.                                                                                               |
     | CBR                           | Vaihda perusrivi                    | Määrittää rivin, joka määrittää sarakkeiden laskelmien perusrivin.                                                                                                                                               |
@@ -140,7 +140,7 @@ Kun rivin summakaava luodaan, rivin koodeilla määritetään nykyisen rivin mä
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Muotoilurivin liittäminen summariviin
 
-- **Muotoilukoodi** rivimääritys-sarakkeessa **DES**, **LFT**, **oikealle**, **CEN**, **---**, ja **===**koodeja muotoilua Summa riviä. Voit estää muotoilua tulostumasta silloin, kun liittyvät summarivit on piilotettu (esimerkiksi jos summarivit sisältävät nolla-arvoja tai kaudella ei ole toimintaa), liitä muotoilurivit vastaaviin summariveihin. Tämä toiminto on hyödyllinen, kun halutaan estää välisummiin liittyvien otsikoiden tai muotoilun tulostuminen silloin, kun kauteen ei liity tulostettavia tietoja. **Huomautus:** Voit estää myös yksityiskohtaisten summarivien tulostamisen tyhjentämällä niiden rivien näyttövalinnan, jotka eivät sisällä summia. Tämä vaihtoehto sijaitsee raportin määrityksen **Asetukset**-välilehdessä. Oletusarvoisesti raporteissa piilotetaan ne tapahtumatietojen tilit, joilla on nollasaldo tai joilla ei ole toimintaa kaudella. Saat nämä tapahtumatietojen tilit näkyviin valitsemalla raportin määrityksessä **Asetukset**-välilehden **Näytä rivit, joilla ei ole summia** -valintaruudun.
+Rivin määrityksen **Muotoilukoodi**-sarakkeessa muotoilukoodit**DES**-, **LFT**-, **RGT**-, **CEN**-, **---** ja **===** kohdistavat muotoilun muihin kuin summariveihin. Voit estää muotoilua tulostumasta silloin, kun liittyvät summarivit on piilotettu (esimerkiksi jos summarivit sisältävät nolla-arvoja tai kaudella ei ole toimintaa), liitä muotoilurivit vastaaviin summariveihin. Tämä toiminto on hyödyllinen, kun halutaan estää välisummiin liittyvien otsikoiden tai muotoilun tulostuminen silloin, kun kauteen ei liity tulostettavia tietoja. **Huomautus:** Voit estää myös yksityiskohtaisten summarivien tulostamisen tyhjentämällä niiden rivien näyttövalinnan, jotka eivät sisällä summia. Tämä vaihtoehto sijaitsee raportin määrityksen **Asetukset**-välilehdessä. Oletusarvoisesti raporteissa piilotetaan ne tapahtumatietojen tilit, joilla on nollasaldo tai joilla ei ole toimintaa kaudella. Saat nämä tapahtumatietojen tilit näkyviin valitsemalla raportin määrityksessä **Asetukset**-välilehden **Näytä rivit, joilla ei ole summia** -valintaruudun.
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Muotoilurivin liittäminen summariviin
 
@@ -150,7 +150,7 @@ Kun rivin summakaava luodaan, rivin koodeilla määritetään nykyisen rivin mä
 
 ### <a name="example-of-preventing-printing-of-rows"></a>Esimerkki rivien tulostamisen estämisestä
 
-Seuraavassa esimerkissä Paula haluaa estää raportin **Käteinen yhteensä** -rivin otsikon ja alleviivausten tulostamisen, koska kummallakaan käteistilillä ei ole ollut toimintaa. Vuoksi-rivin 220 (, kuin **---**osoittaa koodin muotoilun rivi on)- **liittyvät kaavat/riviä/yksiköt** solu, hän lisää **250**, eli Summa-rivin, jonka hän haluaa estää rivin koodi. [![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+Seuraavassa esimerkissä Paula haluaa estää raportin **Käteinen yhteensä** -rivin otsikon ja alleviivausten tulostamisen, koska kummallakaan käteistilillä ei ole ollut toimintaa. Tämän vuoksi Paula syöttää rivin 220 (joka on muotoilurivi, kuten muotoilukoodi **---** osoittaa) **Liittyvät kaavat/rivit/yksiköt** -soluun **250**, joka on sen summarivin koodi, jonka hän haluaa piilottaa. [![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Sarakelaskelman perusrivin valitseminen
 Suhteellisessa raportoinnissa rivin määritykseen liitetään yksi perusrivi tai useita perusrivejä **CBR** (vaihda perusrivi) -muotoilukoodin avulla. Tämän jälkeen perusriviin viitataan sarakkeen määrityksen laskelmassa. Seuraavassa on joitakin tavallisia esimerkkejä CBR-laskelmista:
@@ -173,7 +173,7 @@ Sarakkeen määrityksen **CALC**-saraketyyppi osoittaa sarakkeen, joka määritt
 3.  Syötä uuden sarakkeen **Kaava**-soluun **X/BASEROW**-kaava, jossa **X** on **FD**-sarakelaji, joka näyttää prosenttiosuuden.
 4.  Kaksoisnapsauta **Muotoilu / valuutan ohitus** -solua.
 5.  Valitse **Muotoilun ohitus** -valintaikkunan **Muotoiluluokka**-luettelosta **Prosentti** ja valitse sitten **OK**.
-6.  Valitse **Tiedosto**-valikosta **Tallenna nimellä**, kun haluat tallentaa sarakkeen määrityksen uudella nimellä. Liitä **CBR** nykyisen tiedoston nimen (esimerkiksi **nykyinen\_vuoden alusta\_CBR**). Tämä sarakkeen määritys on perusrivin sarakkeen määritys.
+6.  Valitse **Tiedosto**-valikosta **Tallenna nimellä**, kun haluat tallentaa sarakkeen määrityksen uudella nimellä. Liitä **CBR** nykyiseen tiedostonimeen (esimerkiksi **CUR\_YTD\_CBR**). Tämä sarakkeen määritys on perusrivin sarakkeen määritys.
 7.  Valitse Report Designer -ohjelmassa **Rivien määritykset** ja avaa rivin määritys, kun muokkaus tehdään perusrivin laskelman avulla.
 8.  Lisää uusi rivi sen rivin yläpuolelle, jolta perusrivin laskelma alkaa.
 9.  Kaksoisnapsauta rivin määrityksen **Muotoilukoodi**-solua ja valitse **CBR**.
@@ -181,7 +181,7 @@ Sarakkeen määrityksen **CALC**-saraketyyppi osoittaa sarakkeen, joka määritt
 
 ### <a name="example-of-base-row-calculation"></a>Esimerkki perusrivin laskelmasta
 
-Seuraavassa rivin määrityksen esimerkissä rivi 100 osoittaa, että laskelmien perusrivi on rivi 280. [![Esimerkki veron rivin laskutoimitusta.](./media/cbrrowdefinition.png)](./media/cbrrowdefinition.png) Seuraavassa sarakkeen määrityksessä laskelmat käyttävät **CBR**-muotoilukoodia. Sarakkeen C laskelmassa jaetaan raportin sarake B sarakkeen B rivin 280 arvolla. Sarakkeen B muotoilun ohitus tulostaa laskelman tuloksen prosenttiosuutena. Samaan tapaan jokainen sarakkeen E summa on sarakkeen D summa nettomyynnin prosenttiosuutena. [![Sarakkeen määritys on esimerkki.](./media/cbrcolumndefinition2.png)](./media/cbrcolumndefinition2.png) Seuraava esimerkki sisältää edellisten laskelmien perusteella luotavan raportin. [![Esimerkki raportin edellisessä esimerkissä laskelmien perusteella.](./media/cbrreport-1024x272.png)](./media/cbrreport.png)
+Seuraavassa rivin määrityksen esimerkissä rivi 100 osoittaa, että laskelmien perusrivi on rivi 280. [![Esimerkki perusrivin laskelmasta](./media/cbrrowdefinition.png)](./media/cbrrowdefinition.png) Seuraavassa sarakkeen määrityksessä laskelmat käyttävät **CBR**-muotoilukoodia. Sarakkeen C laskelmassa jaetaan raportin sarake B sarakkeen B rivin 280 arvolla. Sarakkeen B muotoilun ohitus tulostaa laskelman tuloksen prosenttiosuutena. Samaan tapaan jokainen sarakkeen E summa on sarakkeen D summa nettomyynnin prosenttiosuutena. [![Sarakkeen määrityksen esimerkki.](./media/cbrcolumndefinition2.png)](./media/cbrcolumndefinition2.png) Seuraava esimerkki sisältää edellisten laskelmien perusteella luotavan raportin. [![Esimerkkiraportti, joka perustuu edellisen esimerkin laskelmin.](./media/cbrreport-1024x272.png)](./media/cbrreport.png)
 
 ## <a name="select-a-sorting-code-for-a-row-definition"></a>Rivin määrityksen lajittelukoodin valitseminen
 Lajittelukoodit lajittelevat tilit tai arvot, toteutuneen tai budjetin varianssin raportin suurimman varianssin mukaan tai rivin kuvaukset aakkosjärjestykseen. Käytettävissä ovat seuraavat lajittelukoodit:
@@ -200,7 +200,7 @@ Lajittelukoodit lajittelevat tilit tai arvot, toteutuneen tai budjetin varianssi
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Esimerkkejä nousevista ja laskevista sarakearvoista
 
-Seuraavassa esimerkissä raportin sarakkeeseen D arvot lajitellaan nousevaan järjestykseen rivien 160 – 490. Lisäksi absoluuttinen sarake G raportin arvot lajitellaan laskevaan järjestykseen rivien 610 – 940.
+Seuraavassa esimerkissä raportin sarakkeen D arvot lajitellaan nousevassa järjestyksessä riveille 160–490. Lisäksi lajitellaan raportin sarakkeen G absoluuttiset arvot laskevassa järjestyksessä riveille 610–940.
 
 | Rivin koodi | Kuvaus                                         | Muotoilukoodi | Liittyvät kaavat/rivit/yksiköt | Normaali saldo | Sarakkeen rajoitus | Linkki taloushallinnon dimensioihin |
 |----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
@@ -517,7 +517,7 @@ Luo mukautettu muotoilun ohitus mukautetun muotoiluluokan avulla. Valittavissa o
 -   **Tyyppi** – mukautettu muoto.
 -   **Nolla-arvon ohituksen teksti** – Teksti, joka sisällytetään raporttiin, kun summa on 0 (nolla). Teksti näkyy **Malli**-alueen viimeisellä rivillä. **Huomautus:** Jos tulostus on poistettu käytöstä nolla-arvojen kohdalla tai niiltä kausilta, joilla ei ole toimintaa, tämä teksti piilotetaan.
 
-Tyyppi edustaa positiivista ja negatiivista arvoa. Yleensä syötetään samanlainen muoto, joka erottelee positiiviset ja negatiiviset arvot. Esimerkiksi, voit määrittää sekä positiivisia että negatiivisia arvoja on kaksi desimaalia, mutta negatiiviset arvot näkyvät sulkeissa kirjoittamalla **0.00;(0.00)**. Seuraavassa taulukossa ovat mukautetut muodot, joiden avulla arvojen muotoja hallitaan. Kaikki esimerkit alkavat arvosta 1234,56.
+Tyyppi edustaa positiivista ja negatiivista arvoa. Yleensä syötetään samanlainen muoto, joka erottelee positiiviset ja negatiiviset arvot. Kun haluat määrittää esimerkiksi, että positiivisilla ja negatiivisilla arvoilla on kaksi desimaalia, mutta negatiiviset arvot näkyvät suluissa, syötä **0.00;(0.00)**. Seuraavassa taulukossa ovat mukautetut muodot, joiden avulla arvojen muotoja hallitaan. Kaikki esimerkit alkavat arvosta 1234,56.
 
 | Muoto                         | Positiivinen   | Negatiivinen     | Nolla    |
 |--------------------------------|------------|--------------|---------|
@@ -525,11 +525,11 @@ Tyyppi edustaa positiivista ja negatiivista arvoa. Yleensä syötetään samanla
 | 0;0                            | 1235       | 1235         | 0       |
 | 0;(0);-                        | 1235       | 1235         | -       |
 | \#,\#\#\#;(\#,\#\#\#);“”       | 1 235      | (1 235)      | (Tyhjä) |
-| \#,\#\#0.00;(\#,\#\#0.00);zero | 1 234,56   | (1 234,56)   | nolla    |
+| \#,\#\#0.00;(\#,\#\#0.00);nolla | 1 234,56   | (1 234,56)   | nolla    |
 | 0.00%;(0.00%)                  | 123456.00% | (123456.00%) | 0.00%   |
 
 ## <a name="specify-a-normal-balance-cell"></a>Normaali saldo -solun määrittäminen
-Rivin määrityksen **Normaali saldo** -solu ohjaa rivin summien etumerkin käyttämistä. Voit vaihtaa rivin etumerkin syöttämällä kyseisen rivin **Normaali saldo** -soluun **C**. Tee näin myös silloin, kun tilin normaali saldo on kredit. Report Designerin kääntää merkki kaikille kyseisen rivin luotto saldotileille. Kun Report Designer muuntaa nämä tilit, se poistaa debet/kredit-ominaisuuden kaikilta summilta. Tämän vuoksi summaus on helppoa. Jos haluat laskea esimerkiksi nettotuoton, kulut vähennetään tuotosta. Yleensä **C**-koodi ei vaikuta summattuihin ja laskettuihin riveihin. Sarakkeen määrityksen **XCR**-tulostuksenohjaus kuitenkin vaihtaa minkä tahansa rivin etumerkin, joka sisältää **Normaali saldo** -sarakkeessa **C**-arvon. Tämä muotoilu on tärkeää erityisesti silloin, kun kaikki kielteiset varianssit halutaan näyttää negatiivisina summina. Jos summatun tai lasketun numeron etumerkki on väärä, syötä rivin **Normaali saldo** -soluun **C**, jolloin merkki vaihdetaan.
+Rivin määrityksen **Normaali saldo** -solu ohjaa rivin summien etumerkin käyttämistä. Voit vaihtaa rivin etumerkin syöttämällä kyseisen rivin **Normaali saldo** -soluun **C**. Tee näin myös silloin, kun tilin normaali saldo on kredit. Raportin suunnitteluohjelma vaihtaa rivin kaikkien kreditsaldojen tilien etumerkin. Kun Report Designer muuntaa nämä tilit, se poistaa debet/kredit-ominaisuuden kaikilta summilta. Tämän vuoksi summaus on helppoa. Jos haluat laskea esimerkiksi nettotuoton, kulut vähennetään tuotosta. Yleensä **C**-koodi ei vaikuta summattuihin ja laskettuihin riveihin. Sarakkeen määrityksen **XCR**-tulostuksenohjaus kuitenkin vaihtaa minkä tahansa rivin etumerkin, joka sisältää **Normaali saldo** -sarakkeessa **C**-arvon. Tämä muotoilu on tärkeää erityisesti silloin, kun kaikki kielteiset varianssit halutaan näyttää negatiivisina summina. Jos summatun tai lasketun numeron etumerkki on väärä, syötä rivin **Normaali saldo** -soluun **C**, jolloin merkki vaihdetaan.
 
 ## <a name="specify-a-row-modifier-cell"></a>Rivimääre-solun määrittäminen
 Rivin määrityksen **Rivimääre**-solun sisältö ohittaa kyseisen rivin tilikaudet, jaksot ja muut sarakkeen määrityksessä määritetyt tiedot. Valittua määrettä käytetään rivin jokaisella tilillä. Voit muokata kutakin riviä käyttämällä yhtä tai useaa seuraavaa määretyyppiä:
@@ -545,7 +545,7 @@ Rivin määrityksen **Rivimääre**-solun sisältö ohittaa kyseisen rivin tilik
 3.  Valitse **Rivimääre**-valintaikkunan **Tilimääre**-kenttään vaihtoehto. Lisätietoja vaihtoehdoista on Tilimääre-osassa.
 4.  Valitse **Kirjakoodimääre**-kentässä rivillä käytettävä kirjakoodi.
 5.  Lisää **Määritteet**-kohtaan kunkin rivin koodiin sisällytettävän määritteen syöttö näiden vaiheiden mukaan:
-    1.  Kaksoisnapsauta **Määrite**-solua ja valitse määritteen nimi. **Varoitus:** merkin korvaaminen (\#) on numeerinen arvo.
+    1.  Kaksoisnapsauta **Määrite**-solua ja valitse määritteen nimi. **Varoitus:** Korvaa numeromerkki (\#) numeroarvolla.
     2.  Kaksoisnapsauta **Mistä**-solua ja syötä alueen ensimmäinen arvo.
     3.  Kaksoisnapsauta **Mihin**-solua ja syötä alueen viimeinen arvo.
 
@@ -553,20 +553,20 @@ Rivin määrityksen **Rivimääre**-solun sisältö ohittaa kyseisen rivin tilik
 
 ### <a name="account-modifiers"></a>Tilimääreet
 
-Kun valitset tietyn tilin, Report Designer yleensä yhdistää tilin ja tilikaudet, jaksot ja muut sarakkeen määrityksessä määritetyt tiedot. Voit käyttää eri riveillä erilaisia tietoja, kuten eri tilikausia. Seuraavassa taulukossa näkyvät käytettävissä olevat tilimääreet. Merkin korvaaminen (\#) arvolla, joka on yhtä suuri tai pienempi kuin kausien määrä tilikauden aikana.
+Kun valitset tietyn tilin, Report Designer yleensä yhdistää tilin ja tilikaudet, jaksot ja muut sarakkeen määrityksessä määritetyt tiedot. Voit käyttää eri riveillä erilaisia tietoja, kuten eri tilikausia. Seuraavassa taulukossa näkyvät käytettävissä olevat tilimääreet. Korvaa numeromerkki (\#) arvolla, joka on sama tai pienempi kuin tilikauden jaksojen määrä.
 
 | Tilimääre | Tulostettavat tiedot                                                                           |
 |------------------|-------------------------------------------------------------------------------------------|
 | /BB              | Tilin alkusaldo.                                                     |
 | /\#              | Määritetyn kauden saldo.                                                     |
-| /-\#             | Saldo, kauden, joka on \#ennen nykyisen kauden jaksot.                  |
-| /+\#             | Saldo, kauden, joka on \#jälkeen kuluvan kauden jaksot.                   |
+| /-\#             | Kauden saldo, joka on \# kautta ennen kuluvaa kautta.                  |
+| /+\#             | Kauden saldo, joka on \# kautta kuluvan kauden jälkeen.                   |
 | /C               | Kuluvan kauden saldo.                                                       |
-| /C-\#            | Saldo, kauden, joka on \#ennen nykyisen kauden jaksot.                  |
-| /C+\#            | Saldo, kauden, joka on \#jälkeen kuluvan kauden jaksot.                   |
+| /C-\#            | Kauden saldo, joka on \# kautta ennen kuluvaa kautta.                  |
+| /C+\#            | Kauden saldo, joka on \# kautta kuluvan kauden jälkeen.                   |
 | /Y               | Kuluvan kauden saldo vuoden alusta.                                      |
-| /Y-\#            | Jakso, joka on läpi vuoden alusta loput \#ennen nykyisen kauden jaksot. |
-| /Y+\#            | Jakso, joka on läpi vuoden alusta loput \#jälkeen kuluvan kauden jaksot.  |
+| /Y-\#            | Sen kauden saldo vuoden alusta, joka on \# kautta ennen nykyistä kautta. |
+| /Y+\#            | Sen kauden saldo vuoden alusta, joka on \# kautta nykyisen kauden jälkeen.  |
 
 ### <a name="book-code-modifiers"></a>Kirjakoodimääreet
 
@@ -577,7 +577,7 @@ Voit rajoittaa rivin aiemmin luotua kirjakoodia varten. Sarakkeen määrityksess
 Joissakin kirjanpitojärjestelmissä tuetaan taloushallinnon tietojen tili- ja tapahtumamääritteitä. Nämä määritteet toimivat kuten virtuaaliset tilisegmentit. Ne voivat sisältää tiliä tai tapahtumaa koskevia lisätietoja. Lisätiedot voivat olla tilien tunnuksia, erien tunnuksia, postinumeroita tai muita määritteitä. Jos käytössä oleva kirjanpitojärjestelmä tukee määritteitä, voit käyttää tili- tai tapahtumamääritteitä rivin määrityksen rivimääreinä. Lisätietoja rivin tietojen ohituksesta on Sarakkeen määrityksen ohitus -osassa, joka löytyy tämän artikkelin alkuosasta.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Linkin määrittäminen Taloushallinnon dimensiot -soluun
-**Linkki taloushallinnon dimensioihin** -solu sisältää linkin raportin jokaiselle riville sisällytettäviin taloushallinnon tietoihin. Tämä solu sisältää dimensioarvot, mutta voit määrittää Microsoft Excel -laskentataulukon solut segmenttiarvojen tai dimensioarvojen sijaan tai lisäksi. Voit avata **Dimensiont**-valintaikkunan kaksoisnapsauttamalla **Linkki taloushallinnon dimensioihin** -solua. **Huomautus:** Report Designer ei voi valita tilit, dimensiot tai kenttiä Microsoft Dynamics ERP-järjestelmästä, joka sisältää mitään seuraavista varatuista merkeistä: &, \*, \[, \], {, tai}. Voit määrittää riville tiedot, jotka ovat jo rivin määrityksessä, lisäämällä ne **Linkki taloushallinnon dimensioihin** -soluun. Voit lisätä taloushallinnon tietoihin linkittyviä uusia rivejä **Lisää rivit kohteesta** -valintaikkunassa luomalla uusia rivejä raportin määrityksessä. Sarakkeen otsikko muuttuu sen mukaan, miten sarake on konfiguroitu, seuraavassa taulukossa esitetyllä tavalla.
+**Linkki taloushallinnon dimensioihin** -solu sisältää linkin raportin jokaiselle riville sisällytettäviin taloushallinnon tietoihin. Tämä solu sisältää dimensioarvot, mutta voit määrittää Microsoft Excel -laskentataulukon solut segmenttiarvojen tai dimensioarvojen sijaan tai lisäksi. Voit avata **Dimensiont**-valintaikkunan kaksoisnapsauttamalla **Linkki taloushallinnon dimensioihin** -solua. **Huomautus:** Report Designer ei voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }. Voit määrittää riville tiedot, jotka ovat jo rivin määrityksessä, lisäämällä ne **Linkki taloushallinnon dimensioihin** -soluun. Voit lisätä taloushallinnon tietoihin linkittyviä uusia rivejä **Lisää rivit kohteesta** -valintaikkunassa luomalla uusia rivejä raportin määrityksessä. Sarakkeen otsikko muuttuu sen mukaan, miten sarake on konfiguroitu, seuraavassa taulukossa esitetyllä tavalla.
 
 | Valitun linkin tyyppi       | Kuvaus, jollaiseksi Linkki-sarakkeen kuvaus muuttuu |
 |----------------------------------|----------------------------------------------------|
@@ -592,7 +592,7 @@ Joissakin kirjanpitojärjestelmissä tuetaan taloushallinnon tietojen tili- ja t
 2.  Kaksoisnapsauta **Linkki taloushallinnon dimensioihin** -sarakkeen solua.
 3.  Kaksoisnapsauta **Dimensiont**-valintaikkunan dimension alla olevaa solua.
 4.  Valitse dimension valintaikkunassa **Yksittäinen tai alue**.
-5.  - **Kuin** kenttään, kirjoita ensimmäinen dimensio tai valitse ![Selaa](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Selaa") voit etsiä käytettävissä olevat dimensiot. Voit syöttää dimensioalueen syöttämällä lopettavan dimension **Mihin**-kenttään.
+5.  Syötä **Mistä**-kenttään aloittava dimensio tai hae käytettävissä olevat dimensiot valitsemalla ![Selaa](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Selaa"). Voit syöttää dimensioalueen syöttämällä lopettavan dimension **Mihin**-kenttään.
 6.  Sulje dimension valintaikkuna valitsemalla **OK**. **Dimensiont**-valintaikkunassa näkyy päivitetty dimensio tai alue.
 7.  Sulje **Dimensiot**-valintaikkuna valitsemalla **OK**.
 
@@ -606,35 +606,35 @@ Oletusarvoisesti Report Designer ei tulosta rivejä, joilla ei ole vastaavaa sal
 3.  Tallenna muutokset valitsemalla **Tiedosto**-valikosta **Tallenna**.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Yleismerkkien ja alueiden käyttäminen rivin määrityksessä
-Kun kirjoitat arvon luonnollinen segmentti **mitat** -valintaikkunassa voit laittaa yleismerkki merkki (? Tai \*) missä tahansa asennossa segmentin. Report Designerin poimii kaikki määritetyt asemat arvot arvioimatta yleismerkkejä. Tässä esimerkissä rivin määritys sisältää vain luonnollisen segmentin arvoja. Luonnollisilla segmenteillä on neljä merkkiä. Syöttämällä **6???** Peräkkäin pyydät raportin suunnittelija sisältämään kaikki tilit, joilla on luonnollisen segmentin arvo, joka alkaa 6. Jos syötät **6\***, samat tulokset palautetaan, mutta tulokset ovat myös muuttuja-leveys arvoja, kuten **60** ja **600000**. Report Designer korvaa kunkin yleismerkin (?) arvoilla, jotka voivat sisältää sekä kirjaimia että erikoismerkkejä. Jos alueeksi määritetään **12?0**–**12?4**, **12?0**-arvon yleismerkki korvataan merkistön alimmalla arvolla ja **12?4**-arvon yleismerkki merkistön korkeimmalla arvolla. **Huomautus:** Vältä yleismerkkien käyttämistä alueiden aloitus- ja lopetustileissä. Jos aloitus- tai lopetustilissä käytetään yleismerkkiä, tulokset voivat olla odottamattomia.
+Jos haluat syöttää luonnollisen segmentin arvon **Dimensiot**-valintaikkunaan, voit syöttää mihin tahansa segmentin kohtaan yleismerkin (? tai \*). Raportin suunnitteluohjelma poimii määritettyjen sijaintien arvot, eikä ota yleismerkkejä huomioon. Tässä esimerkissä rivin määritys sisältää vain luonnollisen segmentin arvoja. Luonnollisilla segmenteillä on neljä merkkiä. Jos annat arvoksi **6???** Report Designer ottaa huomioon kaikki tilit, joiden luonnollisen segmentin arvo alkaa numerolla 6. Jos annat arvoksi **6\***, palautettavat tulokset ovat samat, mutta tulokset voivat sisältää myös muun pituisia arvoja, kuten **60** ja **600000** Report Designer korvaa kunkin yleismerkin (?) arvoilla, jotka voivat sisältää sekä kirjaimia että erikoismerkkejä. Jos alueeksi määritetään **12?0**–**12?4**, **12?0**-arvon yleismerkki korvataan merkistön alimmalla arvolla ja **12?4**-arvon yleismerkki merkistön korkeimmalla arvolla. **Huomautus:** Vältä yleismerkkien käyttämistä alueiden aloitus- ja lopetustileissä. Jos aloitus- tai lopetustilissä käytetään yleismerkkiä, tulokset voivat olla odottamattomia.
 
 ### <a name="single-segment-or-single-dimension-ranges"></a>Yhden segmentin tai yhden dimension alueet
 
-Voit määrittää segmentti- tai dimensioarvoille alueen. Jos alue määritetään, rivin määritystä ei tarvitse päivittää aina, kun taloushallinnon tietoihin lisätään uusi segmentti- tai dimensioarvo. Esimerkiksi alueen **+ KP =\[6100:6900\]** tulevat tilien kautta 6900 6100 arvot rivin summa. Kun alue sisältää yleismerkin (?), Report Designer ei arvioi aluetta merkkiperusteisesti. Sen sijaan määritetään alueen alku ja loppu, jonka jälkeen loppuarvot ja kaikki niiden väliset arvot sisällytetään arviointiin. **Huomautus:** Report Designer ei voi valita tilit, dimensiot tai kenttiä Microsoft Dynamics ERP-järjestelmästä, joka sisältää mitään seuraavista varatuista merkeistä: &, \*, \[, \], {, tai}. Voit lisätä et-merkin (&) vain silloin, kun rivin määritykset muodostetaan automaattisesti **Lisää rivejä dimensioista** -valintaikkunan avulla.
+Voit määrittää segmentti- tai dimensioarvoille alueen. Jos alue määritetään, rivin määritystä ei tarvitse päivittää aina, kun taloushallinnon tietoihin lisätään uusi segmentti- tai dimensioarvo. Esimerkiksi alue **+tili=\[6100:6900\]** noutaa rivin summaan arvot tileiltä 6100–6900. Kun alue sisältää yleismerkin (?), Report Designer ei arvioi aluetta merkkiperusteisesti. Sen sijaan määritetään alueen alku ja loppu, jonka jälkeen loppuarvot ja kaikki niiden väliset arvot sisällytetään arviointiin. **Huomautus:** Report Designer ei voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }. Voit lisätä et-merkin (&) vain silloin, kun rivin määritykset muodostetaan automaattisesti **Lisää rivejä dimensioista** -valintaikkunan avulla.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Useiden segmenttien tai useiden dimensioiden alueita
 
-Kun määrität alueen käyttämällä useita dimensioarvojen yhdistelmät, alueen vertailu tehdään... \financial-dimensions\dimension-by-dimension perusteella. Alueen vertailua ei voi tehdä merkkiperusteisesti tai osittaisen segmentin perusteella. Esimerkiksi alueen **+ KP =\[5000:6000\]-osasto =\[1000:2000\], kustannuspaikka =\[00\]** sisältää vain ne tilit, jotka vastaavat kunkin segmentin. Tässä tilanteessa ensimmäisen dimension on oltava väliltä 6000 – 5000 ja viimeisin ulottuvuuden on oltava 00 toisen dimension on oltava väliltä 1000 – 2000. Esimerkiksi **+ KP =\[5100 PCL\]-osasto =\[1100\], kustannuspaikka =\[01\]** ei kuulu raportissa, koska viimeisen segmentin on määritetyn alueen ulkopuolella. Jos segmentin arvossa on välejä, kirjoita arvo hakasulkeisiin (\[\]). Seuraavat arvot ovat kelvollisia nelimerkkinen segmentti: **\[234\], \[123 \], \[1 34\]**. Dimensioarvot olisi kirjoitettu hakasulkeisiin (\[\]), ja report designer Lisää nämä kiinnikkeet. Kun useita-segmentin tai usean dimension alue sisältää yleismerkin merkkejä (? Tai \*), pieniä ja suuria koko useita-segmentin tai usean dimension alueen päät määräytyvät ja sitten loppu arvojen ja kaikki niiden väliin sisällytetään. Jos alue on suuri, kuten tilit väliltä 40 000–99 999, kelvollinen aloittava ja lopettava tili on määritettävä aina, kun se on mahdollista. **Huomautus:** Report Designer ei voi valita tilit, dimensiot tai kenttiä Microsoft Dynamics ERP-järjestelmästä, joka sisältää mitään seuraavista varatuista merkeistä: &, \*, \[, \], {, tai}. Voit lisätä et-merkin (&) vain silloin, kun rivin määritykset muodostetaan automaattisesti **Lisää rivejä dimensioista** -valintaikkunan avulla.
+Kun alue syötetään useiden dimensioarvojen yhdistelmien avulla, alueen vertailu tehdään dimensioperusteisesti (..\financial-dimensions\dimension-by-dimension). Alueen vertailua ei voi tehdä merkkiperusteisesti tai osittaisen segmentin perusteella. Esimerkiksi alue **+tili=\[5000:6000\], osasto=\[1000:2000\], kustannuspaikka=\[00\]** sisältää vain kutakin segmenttiä vastaavat rivit. Tässä skenaariossa ensimmäisen dimension alueen on oltava 5000–6000, toisen dimension alueen 1000–2000 ja viimeisen dimension alueen 00. Esimerkiksi **+tili=\[5100\], osasto=\[1100\], kustannuspaikka=\[01\]** ei oteta mukaan raporttiin, koska viimeinen segmentti ei kuulu määritettyyn alueeseen. Jos segmentin arvo sisältää välilyöntejä, käytä arvossa hakasulkeita (\[ \]). Seuraavat arvot ovat sallittuja neljä merkkiä sisältävälle segmentille: **\[ 234\], \[123 \], \[1 34\]**. Dimensioarvoissa on käytettävä hakasulkeita (\[ \]). Report Designer lisää sulkeet puolestasi. Kun useita segmenttejä tai useita dimensioita sisältävä alue sisältää yleismerkkejä (? tai \*), koko useita segmenttejä tai dimensioita sisältävän alueen alin ja ylin arvo määritetään. Tämän jälkeen sisällytetään loppuarvot ja kaikki niiden väliset arvot. Jos alue on suuri, kuten tilit väliltä 40 000–99 999, kelvollinen aloittava ja lopettava tili on määritettävä aina, kun se on mahdollista. **Huomautus:** Report Designer ei voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }. Voit lisätä et-merkin (&) vain silloin, kun rivin määritykset muodostetaan automaattisesti **Lisää rivejä dimensioista** -valintaikkunan avulla.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Lisääminen tai vähentäminen muista tileistä rivin määrityksessä
 Voit lisätä tai vähentää rahamääräisiä summia tilien välillä käyttämällä plus (+)- ja miinusmerkkiä (-) **Linkki taloushallinnon dimensioihin** -solussa. Seuraavassa taulukossa näkyvät taloushallinnon tietojen linkkien lisäämisen ja vähentämisen hyväksyttävät muodot.
 
 | Toiminto                                                                               | Käytä tätä muotoa                                                                                              |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Lisää kaksi täydellistä tiliä.                                                       | + Jako =\[000\]-tili =\[1205\], osasto =\[00\]+ jako =\[100\], tilin =\[1205\], osasto =\[00\] |
-| Lisää kaksi segmenttiarvoa.                                                                 | + Tili =\[1205\]+ KP =\[1210\]                                                                           |
-| Lisää yleismerkkejä sisältäviä segmenttiarvoja.                                    | + Tili =\[120? + KP =\[11??\]                                                                             |
-| Lisää täydellisten tilien alue.                                                | + Jako =\[000:100\]-tili =\[1205\]-osasto =\[00\]                                                   |
-| Lisää segmenttiarvojen alue.                                                          | + Tili =\[1200:1205\]                                                                                       |
-| Lisää yleismerkkejä sisältävien segmenttiarvojen alue.                         | + Tili =\[120?: 130?\]                                                                                       |
-| Vähennä yksi täydellinen tili toisesta täydellisestä tilistä.              | + Jako =\[000\], tilin =\[1205\], osasto =\[00\]-osasto =\[100\], tilin =\[1205\], osasto =\[00\] |
-| Vähennä yksi segmenttiarvo toisesta segmenttiarvosta.                                  | + Tili =\[1205\]-tili =\[1210\]                                                                           |
-| Vähennä yleismerkin sisältävä segmenttiarvo toisesta segmenttiarvosta. | + Tili =\[1200\]-tili =\[11??\]                                                                           |
-| Vähennä täydellisten tilien alue.                                           | -Jako =\[000:100\], tilin =\[1200:1205\]-osasto =\[00:01\]                                           |
-| Vähennä segmenttiarvojen alue.                                                     | -Tili =\[1200:1205\]                                                                                       |
-| Vähennä yleismerkkejä sisältävien segmenttiarvojen alue.                    | -Tili =\[120?: 130?\]                                                                                       |
+| Lisää kaksi täydellistä tiliä.                                                       | +jaosto=\[000\], tili=\[1205\], osasto=\[00\]+jaosto=\[100\], tili=\[1205\], osasto=\[00\] |
+| Lisää kaksi segmenttiarvoa.                                                                 | +tili=\[1205\]+tili=\[1210\]                                                                           |
+| Lisää yleismerkkejä sisältäviä segmenttiarvoja.                                    | +tili=\[120?+tili=\[11??\]                                                                             |
+| Lisää täydellisten tilien alue.                                                | +jaosto=\[000:100\], tili=\[1205\], osasto=\[00\]                                                   |
+| Lisää segmenttiarvojen alue.                                                          | +Tili=\[1200:1205\]                                                                                       |
+| Lisää yleismerkkejä sisältävien segmenttiarvojen alue.                         | +Tili=\[120?:130?\]                                                                                       |
+| Vähennä yksi täydellinen tili toisesta täydellisestä tilistä.              | +jaosto=\[000\], tili=\[1205\], osasto=\[00\]-jaosto=\[100\], tili=\[1205\], osasto=\[00\] |
+| Vähennä yksi segmenttiarvo toisesta segmenttiarvosta.                                  | +tili=\[1205\]-tili=\[1210\]                                                                           |
+| Vähennä yleismerkin sisältävä segmenttiarvo toisesta segmenttiarvosta. | +tili=\[1200\]-tili=\[11??\]                                                                           |
+| Vähennä täydellisten tilien alue.                                           | -jaosto=\[000:100\], tili=\[1200:1205\], osasto=\[00:01\]                                           |
+| Vähennä segmenttiarvojen alue.                                                     | -Tili=\[1200:1205\]                                                                                       |
+| Vähennä yleismerkkejä sisältävien segmenttiarvojen alue.                    | -Tili=\[120?:130?\]                                                                                       |
 
-Vaikka voit muokata tilejä suoraan, voit ottaa taloushallinnon tietojen linkeissä oikean muotoilun käyttöön myös **Dimensiot**-valintaikkunan avulla. Arvoja voi sisältää yleismerkkejä merkkejä (? Or \*). Kuitenkin Report Designer ei voi valita tilit, dimensiot tai kenttiä Microsoft Dynamics ERP-järjestelmästä, joka sisältää mitään seuraavista varatuista merkeistä: &, \*, \[, \], {, tai}. **Huomautus:** Voit vähentää arvoja lisäämällä arvojen ympärille sulkeet. Jos kirjoitat esimerkiksi **450?-(4509)**, se näkyy **+ tili =\[4509\]-tili =\[450? \]**, ja olet neuvot summasta, joka alkaa 450 huomioon segmentin Segmentti tilin 4509 summa vähennetään report Designeria.
+Vaikka voit muokata tilejä suoraan, voit ottaa taloushallinnon tietojen linkeissä oikean muotoilun käyttöön myös **Dimensiot**-valintaikkunan avulla. Mitkä tahansa arvot voivat sisältää yleismerkkejä (? tai \*). Report Designer ei kuitenkaan voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }. **Huomautus:** Voit vähentää arvoja lisäämällä arvojen ympärille sulkeet. Jos annat esimerkiksi arvon **450?-(4509)**, se näkyy arvona **+tili=\[4509\]-tili=\[450?\]**. Tällöin Report Designer vähentää tilisegmentin 4509 summan minkä tahansa arvolla 450 alkavan tilisegmentin summasta.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Tilien lisääminen muihin tileihin tai niiden vähentäminen muista tileistä
 
@@ -642,7 +642,7 @@ Vaikka voit muokata tilejä suoraan, voit ottaa taloushallinnon tietojen linkeis
 2.  Kaksoisnapsauta oikealla rivillä **Linkki taloushallinnon dimensioihin** -sarakkeen solua.
 3.  Noudata seuraavia vaiheita **Dimensiot**-valintaikkunan ensimmäisellä rivillä.
     1.  Valitse ensimmäisessä kentässä kaikki dimensiot (oletusarvo) tai avaa **Hallitse dimensioyhdistelmiä** -valintaikkuna napsauttamalla. Valintaikkunassa voit luoda, muokata, kopioida tai poistaa yhdistelmän.
-    2.  Kaksoisnapsauttamalla **operaattorin +/-** solua ja valitse plus (**+**) tai miinus (**-**), joka koskee yhden tai useamman dimensioarvoja tai asettaa rivin operaattori.
+    2.  Kaksoisnapsauta **Operaattori +/-** -solua ja valitse plus (**+**)- tai miinus (**-**) -operaattori, jota käytetään rivin yhdessä tai useassa dimensioarvossa tai -yhdistelmässä.
     3.  Avaa **Dimensiot**-valintaikkuna kaksoisnapsauttamalla soveltuvan dimensioarvon sarakkeen solua. Määritä sitten, onko kyseinen dimensioarvo tarkoitettu yksittäiselle arvolle vai alueelle, dimensioarvoyhdistelmälle vai summatileille. **Dimensiot**-valintaikkunan kenttien kuvaukset löytyvät Dimension kuvaus -valintaikkuna -osasta.
     4.  Syötä segmenttiarvot **Mistä**- ja **Mihin**-sarakkeeseen.
 
@@ -655,12 +655,12 @@ Seuraavassa taulukossa esitellään **Dimensiot**-valintaikkunan kentät.
 
 | Nimike                | Kuvaus                                                                                                                                                                                                                                                                                             |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Yksittäinen tai alue | - **Kuin** kenttään, kirjoita tilin nimi tai valitse **Selaa** painiketta ![Selaa](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Selaa") Selaa tilin. Voit valita alueen syöttämällä arvon **Mihin**-kenttään tai etsimällä sen kentässä.                                             |
-| Dimensioarvoyhdistelmä | Syötä **Nimi**-kenttään dimensioarvoyhdistelmän nimi. Voit luoda, muokata, kopioida tai poistaa yhdistelmän valitsemalla **Dimensioarvoyhdistelmien hallinta**. **Kaavan** kaava kenttään täytetään **linkki taloushallinnon dimensiot** solun tämän dimension arvon, joka määrittää rivimääritykseen. |
+| Yksittäinen tai alue | Syötä **Mistä**-kenttään tilin nimi tai etsi tili valitsemalla **Selaa**-painike ![Selaa](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Selaa.") Voit valita alueen syöttämällä arvon **Mihin**-kenttään tai etsimällä sen kentässä.                                             |
+| Dimensioarvoyhdistelmä | Syötä **Nimi**-kenttään dimensioarvoyhdistelmän nimi. Voit luoda, muokata, kopioida tai poistaa yhdistelmän valitsemalla **Dimensioarvoyhdistelmien hallinta**. Rivin määrityksen tämän dimensioarvoyhdistelmän **Kaava**-kenttään täytetään **Linkki taloushallinnon dimensioihin** -solun kaava. |
 | Summatilit   | Syötä **Nimi**-kenttään summatilien dimensio tai etsi se kentässä. Raportin määrityksen summatilin **Kaava**-kenttään täytetään **Linkki taloushallinnon dimensioihin** -solun kaava.                                                                       |
 
 ## <a name="add-dimension-value-sets-in-a-row-definition"></a>Dimensioarvoyhdistelmien lisääminen rivin määritykseen
-Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelmä voi sisältää vain yhden dimension arvoja, mutta dimensioarvoyhdistelmää voidaan käyttää myös useiden rivien, sarakkeiden, raportointipuiden ja raporttien määrityksissä. Dimensioarvoyhdistelmiä voidaan yhdistää myös raportin määrityksessä. Kun taloushallinnon tietojen muuttaminen edellyttää dimensioarvoyhdistelmän muuttamista, voit päivittää dimensioarvoyhdistelmän määrityksen. Päivitys kohdistetaan kaikille dimensioarvoyhdistelmää käyttäville alueille. Jos esimerkiksi määrität usein arvoalueen, kuten esimerkiksi 5100–5600, taloushallinnon tietojen linkittämistä varten, voit liittää tämän alueen tiliyhdistelmään, jonka nimi on Myynti. Kun olet luonut dimensioarvojen joukko, voit valita, jonka kuin taloudellisia tietoja-linkkiä. Toinen esimerkki on 5600-5100 PCL arvo määritetään myynnin ja 4175 liitetään alennuksia, jos voit määrittää myynti alennusten myynnistä. Tämä toiminto on merkitty nimellä **(5100:5600)-4175**.
+Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelmä voi sisältää vain yhden dimension arvoja, mutta dimensioarvoyhdistelmää voidaan käyttää myös useiden rivien, sarakkeiden, raportointipuiden ja raporttien määrityksissä. Dimensioarvoyhdistelmiä voidaan yhdistää myös raportin määrityksessä. Kun taloushallinnon tietojen muuttaminen edellyttää dimensioarvoyhdistelmän muuttamista, voit päivittää dimensioarvoyhdistelmän määrityksen. Päivitys kohdistetaan kaikille dimensioarvoyhdistelmää käyttäville alueille. Jos esimerkiksi määrität usein arvoalueen, kuten esimerkiksi 5100–5600, taloushallinnon tietojen linkittämistä varten, voit liittää tämän alueen tiliyhdistelmään, jonka nimi on Myynti. Kun dimensioarvoyhdistelmä on luotu, voit määrittää yhdistelmän taloushallinnon tietojen linkiksi. Toisessa esimerkissä oletetaan, että arvoalue 5100–5600 on liitetty myyntiin ja 4175 on liitetty alennuksiin. Voit määrittää kokonaismyynnin vähentämällä alennukset myynnistä. Tämä toiminto osoitetaan näin: **(5100:5600)-4175**.
 
 ### <a name="create-a-set-of-dimension-values"></a>Dimensioarvoyhdistelmän luominen
 
@@ -703,6 +703,6 @@ Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelm
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Taloudellinen raportointi saat toimintoihin Microsoft Dynamics-365](financial-reporting-intro.md)
+[Taloushallinnan raportointi Microsoft Dynamics 365 for Operations -järjestelmässä](financial-reporting-intro.md)
 
 

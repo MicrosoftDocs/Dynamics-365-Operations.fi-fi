@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Kirjoita tilien ja dimensioiden yhdistelmät (komponentin segmentoidun tarkistus)
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, miten tili- ja dimensioyhdistelmiä tai kirjanpitotilejä kirjataan. Kirjauskokokemusta sanotaan usein segmentoidun kirjauksen hallinnaksi.
 
-Käyttäjien syöttää eri sivuille, esimerkiksi sivuille yleisten kirjauskansioiden tilien ja dimensioiden yhdistelmille budjetointi ja kirjausmääritykset. Voimassaolevat tili- ja dimensioyhdistelmät riippuvat tilirakenteista, jotka on määritetty kirjanpidossa ja kehittyneistä säännöistä, jotka on määritetty tilirakenteisiin. Kun käyttäjät kirjoittavat yhdessä, ne voidaan manuaalisesti arvot tai hyödyntää monipuolisia, haku-kokemus. Kun syötät kenttään, kun alat kirjoittaa ja se etsii arvon ja kuvauksen. Esimerkiksi jos kirjoitat 180 se etsii kaikki arvot, jotka kyseisen numeron yhdistelmä alkaa. Tai voit kirjoittaa rahaa ja se etsii kaikki arvot, jotka on kuvaus, joka alkaa käteisellä. Voit käyttää myös yleismerkkejä, kuten \*rahaa tai \*180 etsimiseen, jos arvoa tai kuvausta sisältävät hakuehdon. 
+Käyttäjät syöttävät tilien ja dimensioiden yhdistelmät eri sivuille, kuten kirjauskansioiden sivuille, budjetointiin ja kirjausmääritelmiin. Voimassaolevat tili- ja dimensioyhdistelmät riippuvat tilirakenteista, jotka on määritetty kirjanpidossa ja kehittyneistä säännöistä, jotka on määritetty tilirakenteisiin. Kun käyttäjät syöttävät yhdistelmän, he voivat joko syöttää arvot manuaalisesti tai hyödyntää syvää hakukokemusta. Kun syötät kenttään, voit aloittaa kirjoittamisen ja se etsii arvon ja kuvauksen. Esimerkiksi jos kirjoitat "180", se etsii kaikki arvot, jotka alkavat kyseisellä numerolla. Tai voit kirjoittaa "Maksu", ja se etsii kaikki arvot, joilla on kuvaus, joka alkaa merkkijonolla Maksu. Voit käyttää myös yleismerkkejä, kuten \*Maksu tai \*180, etsimiseen, jos arvo tai kuvaus sisältää hakuehdon. 
 
 Seuraavassa taulukossa kuvataan pikanäppäimiä, joita voidaan käyttää, kun haku on suljettu.
 
@@ -108,5 +111,7 @@ Seuraavassa taulukossa kuvataan pikanäppäimiä, joita voidaan käyttää, kun 
 </table>
 
  
+
+
 
 

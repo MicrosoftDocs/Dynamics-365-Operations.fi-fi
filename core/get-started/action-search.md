@@ -1,6 +1,6 @@
 ---
 title: Toiminnon haku
-description: "Tässä artikkelissa kuvataan Microsoft Dynamics-365 työvaiheiden toiminto hakutoiminto. Toiminto Etsi auttaa, Etsi ja suorita toimet-sivulla."
+description: "Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Operationsin toimintohakuominaisuutta. Toimintohaku auttaa sinua löytämään ja suorittamaan toimintoja sivulla."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,30 +26,33 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="action-search"></a>Toiminnon haku
 
-Tässä artikkelissa kuvataan Microsoft Dynamics-365 työvaiheiden toiminto hakutoiminto. Toiminto Etsi auttaa, Etsi ja suorita toimet-sivulla.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Operationsin toimintohakuominaisuutta. Toimintohaku auttaa sinua löytämään ja suorittamaan toimintoja sivulla.
 
 <a name="introduction"></a>Johdanto
 ------------
 
-Microsoft Dynamics-365 toimintojen sivujen altistaa ensisijaisesti komennot toimintoruutujen sekä vakio toimintoruudun, joka näkyy sivun yläreunassa ja työkalurivejä, jotka näkyvät sivun eri osissa. Aiemmissa versioissa avain vihjeitä-toiminnon avulla voit nopeasti painamalla Alt-näppäintä ja sitten sarja kirjaimia mikä tahansa toiminto-ruudussa-painiketta. 
+Microsoft Dynamics 365 for Operations näyttää ensisijaisesti komennot toimintoruuduissa – sekä vakiotoimintoruudussa, joka näkyy sivun yläreunassa, että työkalupalkeissa, jotka näkyvät sivun eri osissa. Aiemmissa versioissa Päävihjeet-toiminnon avulla pystyit nopeasti käyttämään mitä tahansa toimintoruudun painiketta painamalla Alt-näppäintä ja sitten sarjan kirjaimia. 
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) kuitenkin Dynamics 365 toimintojen nykyisen version avain vihjeitä eivät enää ole käytettävissä, mutta on korvattu toiminto Etsi-toimintoa. Tämän uuden ominaisuuden avulla voit nopeasti etsiä ja suorittaa painikkeen mistä tahansa näkyvillä olevasta toimintoruudusta.
+[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)Nykyisessä Dynamics 365 for Operationsin versiossa Päävihjeet-toimintoa ei kuitenkaan ole enää saatavilla, vaan sen on korvannut toimintohaku-ominaisuus. Tämän uuden ominaisuuden avulla voit nopeasti etsiä ja suorittaa painikkeen mistä tahansa näkyvillä olevasta toimintoruudusta.
 
 ## <a name="using-action-search"></a>Toimintohaun käyttö
 Suorita seuraavat vaiheet, kun haluat käyttää toimintohaku-ominaisuutta:
 
 1.  Valitse toimintoruudussa **toimintohaku**-kenttää. (**toimintohaku**-kentässä on suurennuslasikuvake.)
-2.  Kirjoita nimi, jonka haluat suorittaa painikkeen osaksi tai kokonaan. Voit myös etsiä käyttämällä sanoja painikkeen "polku." (Lisätietoja on tämän artikkelin seuraavassa osassa.) Yleensä painiketta näkyvät tulosluettelon yläosassa sen jälkeen, kun olet kirjoittanut merkit kahdesta neljään.
+2.  Kirjoita sen painikkeen nimi (tai osa nimestä), jonka haluat suorittaa. Voit myös etsiä käyttämällä sanoja painikkeen "polusta". (Lisätietoja on tämän artikkelin seuraavassa osassa.) Yleensä painike näkyy tulosluettelon yläosassa sen jälkeen, kun olet kirjoittanut merkit kahdesta neljään.
 3.  Etsi ja suorita painike tulosluettelossa (käyttämällä hiirtäsi tai näppäimistöä).
 
 Kun painike on suoritettu, huomio palautuu viimeiseen toimeesi sivulla niin, että voit jatkaa työskentelyä. 
 
-[![Etsi-toiminto-kentän](./media/action-search-field.png)](./media/action-search-field.png)
+[![action-search-field](./media/action-search-field.png)](./media/action-search-field.png)
 
 Voit myös aloittaa toiminnon painamalla näppäinyhdistelmää Ctrl+/ tai Alt+Q. Paina pikanäppäintä uudelleen palataksesi edelliseen toimeesi sivulla.
 
 ## <a name="understanding-the-results-list"></a>Tulosluetteloon tutustuminen
-Usein-Dynamics 365 toimintoja varten, sinun on tiedettävä sijainti sekä ymmärtävät täysin kyseistä painiketta painikkeen yhteydessä. Tämän vuoksi lisätiedot on jokaisesta nimikkeestä näkyvät tulosluettelon, voi auttaa sinua ymmärtämään täysin luettelossa näytettävät painikkeet. Erityisesti painikkeen "polku" näytetään. Tämä polku saattaa soveltuvin osin sisältää seuraavien käyttöliittymäelementtien otsikot:
+Usein Dynamics 365 for Operationsissa sinun on tiedettävä painikkeesta sekä sijainti että konteksti, jotta ymmärtäisit täysin painikkeen tarkoituksen. Tämän vuoksi lisätiedot on jokaisesta nimikkeestä tulosluettelossa, jotta voit ymmärtää täysin luettelossa näytettävät painikkeet. Erityisesti painikkeen "polku" näytetään. Tämä polku saattaa soveltuvin osin sisältää seuraavien käyttöliittymäelementtien otsikot:
 
 -   Toimintoruutu-välilehti
 -   Painikeryhmä
@@ -57,15 +60,17 @@ Usein-Dynamics 365 toimintoja varten, sinun on tiedettävä sijainti sekä ymmä
 -   Valikon erotin (jos painike on valikkopainikkeen sisällä nimetyn ryhmän sisällä)
 -   Sivulla oleva ryhmä tai välilehti (esimerkiksi pikavälilehden nimi).
 
-Kirjoitit esimerkiksi **yht****toimintohaku**-kenttään ja tarkastelet nyt tulosluetteloa. Ensimmäinen tapahtuma painike, jonka nimi on **yhteensä**, näkyy korostettuna. Painiketta polku **myynti**&gt;**View** on myös esitetty. **Myyntitilaus** vastaa polun osaa **myyntitilaus** toiminto-ruudussa-välilehti ja **Näytä** polun osaa vastaa **Näytä** kyseisen välilehden ryhmän. Vastaavasti polku **kokonaisalennus** painike (**myydä**&gt;**laskeminen**) ilmoittaa, että tämä painike sijaitsee **Laske** ryhmittelyyn **myydä** välilehti toimintoruudun. Tämän vuoksi näiden tietojen avulla voit ymmärtää täsmälleen mitä painiketta käynnistämän toiminnon etsinnän (Jos valitset kyseisen painikkeen tulosten luettelossa). 
+Kirjoitit esimerkiksi **yht****toimintohaku**-kenttään ja tarkastelet nyt tulosluetteloa. Ensimmäinen tulosluettelon painike **Summat** näkyy korostettuna. Näet myös painikkeen, jonka polku on **Sales**&gt;**Näytä**. Polun **Myyntitilaus**-osa vastaa toimintoruudun **Myyntitilaus**-välilehteä, ja polun **Näytä**-osa vastaa kyseisen välilehden **Näytä**-ryhmää. Vastaavasti painikkeen **Kokonaisalennus**-polku (**Myy** &gt; **Laske**) ilmoittaa, että tämä painike sijaitsee **Laske**-ryhmässä toimintoruudun **Myy**-välilehdessä. Tämän vuoksi näiden tietojen avulla voit ymmärtää täsmälleen mikä painike suoritetaan toimintohaun toimesta (jos valitset kyseisen painikkeen tulosten luettelossa). 
 
-[![Etsi-kenttä-ja-tiedot](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png) 
+[![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png) 
 
-Edellisessä esimerkissä toimintohakku näytti tulokset standardimuotoisesta toimintoruudusta sivun yläreunassa. Toimintohaku kuitenkin näyttää tulokset myös näkyvillä olevista työkaluriveistä, jotka sijaitsevat muissa sivun kohdissa. Esimerkiksi etsit **käytettävissä oleva varasto** painiketta, joka sijaitsee **myyntitilausrivit** pikavälilehti. Tässä tapauksessa tulosten luettelossa painiketta polku (**myyntitilausrivit**&gt;**varaston**&gt;**View**) ilmoittaa, että tämä painike sijaitsee **Näytä** otsikko- **varaston** valikkopainikkeen **myyntitilausrivit** pikavälilehti. 
+Edellisessä esimerkissä toimintohakku näytti tulokset standardimuotoisesta toimintoruudusta sivun yläreunassa. Toimintohaku kuitenkin näyttää tulokset myös näkyvillä olevista työkaluriveistä, jotka sijaitsevat muissa sivun kohdissa. Esimerkiksi etsit **Käytettävissä oleva varasto** -painiketta, joka sijaitsee **Myyntitilausrivit**-pikavälilehdessä. Tässä tapauksessa tulosten luettelossa painikkeen polku (**Myyntitilausrivit** &gt; **Varasto** &gt; **Näytä**) ilmoittaa, että tämä painike sijaitsee **Näytä**-otsikossa **Varasto**-valikkopainikkeessa **Myyntitilausrivit**-pikavälilehdessä. 
 
-[![Valitse-käytettävissä-varasto](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+[![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 ## <a name="action-search-vs-navigation-search"></a>Toimintohaku vs. siirtymishaku
-Etsi toiminto on tarkoitus suorittaa toiminnot-sivulla ja etsiä, on erillinen haku, etsiminen ja sivujen Dynamics 365 toimintojen siirtyminen mekanismi. Saat lisätietoja tämän ominaisuuden [siirtyminen haku](navigation-search.md) artiklassa.
+Toimintohaun tarkoituksena on etsiä ja suorittaa toimintoja sivulla. Dynamics 365 for Operationsissa on myös erillinen hakumekanismi sivujen etsimiseen ja niille siirtymiseen. Lisätietoja tästä ominaisuudesta löydät artikkelista. [Siirtymishaku](navigation-search.md).
+
+
 
 

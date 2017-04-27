@@ -1,6 +1,6 @@
 ---
-title: Taloudellisten raporttien tarkasteleminen ja rakenteen
-description: "Tässä artikkelissa on harjoituksissa, joissa selitetään, tarkasteleminen ja tilinpäätösten luomisesta saat toimintoihin Microsoft Dynamics-365. Taloudellinen raportointi muodostuu tarkastelu-kokemuksen kuluessa Dynamics 365 toiminnoissa ja napsauttamalla-kerran raportin suunnittelija, jonka avulla voit luoda ja muokata tilinpäätökset."
+title: Tarkastele ja suunnittele talousraportteja
+description: "Tässä artikkelissa on harjoituksia, joissa selitetään, miten tarkastellaan ja luodaan raportteja Microsoft Dynamics 365 for Operationsissa. Taloudellinen raportointi muodostuu tarkastelukokemuksesta Dynamics 365 for Operations ja yhden napsautuksen raporttisuunnitteluohjelmasta, jonka avulla voit luoda ja muokata raportteja."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="view-and-design-financial-reports"></a>Taloudellisten raporttien tarkasteleminen ja rakenteen
+# <a name="view-and-design-financial-reports"></a>Tarkastele ja suunnittele talousraportteja
 
-Tässä artikkelissa on harjoituksissa, joissa selitetään, tarkasteleminen ja tilinpäätösten luomisesta saat toimintoihin Microsoft Dynamics-365. Taloudellinen raportointi muodostuu tarkastelu-kokemuksen kuluessa Dynamics 365 toiminnoissa ja napsauttamalla-kerran raportin suunnittelija, jonka avulla voit luoda ja muokata tilinpäätökset.  
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa on harjoituksia, joissa selitetään, miten tarkastellaan ja luodaan raportteja Microsoft Dynamics 365 for Operationsissa. Taloudellinen raportointi muodostuu tarkastelukokemuksesta Dynamics 365 for Operations ja yhden napsautuksen raporttisuunnitteluohjelmasta, jonka avulla voit luoda ja muokata raportteja.  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Tehtävä 1: Luo ja tutki taloushallinnon oletusraportteja
 -----------------------------------------------------------
@@ -45,7 +48,7 @@ Tässä harjoituksessa luodaan ja tutustutaan nykyiseen oletusraporttiin. Tämä
 3.  Tallenna dimensio konfigurointi. Seuraavaksi on raportin luominen ja raportin tietojen tutkiminen.
 4.  Siirry **Tilinpäätökset** kohdassa **Kyselyitä ja raportit** kirjanpidossa.
 5.  Valitse raportille rivi nimeltään **Kirjanpidon tiedot: oletusarvo.**
-6.  Valitse **Muokkaa.** Huomaa: Sinua pyydetään lataamaan napsauta-kerran report Designeria ja kirjaudu sisään. Kirjaudu sisään käyttämällä tunnistetiedot.
+6.  Valitse **Muokkaa.** Huomautus: Järjestelmä kehottaa lataamaan kerran klikattavan raportin suunnittelijan ja kirjautumaan sisään. Kirjaudu sisään tunnistetietojesi avulla.
 7.  Muuta perusvuodeksi 2012 ja valitse **Luo**. Kun raportti luodaan raportin suunnittelijalla, kun se avautuu uudessa selaimen välilehdessä. Voit joko tutkia raporttia selaimen uudessa välilehdessä tai mennä alkuperäiseen selaimen välilehteen ja avata raportin siellä valitsemalla sen **Tilinpäätökset**-luettelosta.
 8.  Valitse yksi summista perehtyäksesi raportin tilitietoihin avatussa raportissa.
 9.  Kun olet tilitiedoissa, valitse tili, jossa on tietoja, ja **perehdy raporttiin tapahtumatasolla**. Raportin tapahtumatasolla näet ominaisuudet (määritteet), jotka sisältyvät raportin rakenteeseen. Tapahtumasta ja tilistä riippuen voit nähdä vähintään yhden määritteen.
@@ -55,7 +58,7 @@ Tässä harjoituksessa luodaan ja tutustutaan nykyiseen oletusraporttiin. Tämä
 13. Valitse **Raporttivaihtoehto**.
 14. Valitse **Lisää dimensiosuodatin** ja valitse **Liiketoimintayksikkö**.
 15. Kirjoita 001 kenttään ja valitse **OK**. Raportissa näkyy nyt vain 001 liiketoimintayksikön tiedot. Tämä on raportin mukautettu näkymä eivätkä muut voi tarkastella sitä.
-16. Sulje suodatettu raportti. Tilinpäätökset voidaan näyttää missä tahansa valuutassa, joka on lisätty Dynamics 365 operaatioille.
+16. Sulje suodatettu raportti. Tilinpäätökset voidaan näyttää minä vain valuuttana, joka on lisätty Dynamics 365 for Operationsiin.
 17. Valitse **Valuutta**, sitten valitse **EUR.** Raportti näkyy nyt euroina. Kaikki valuuttakoodit tai symbolit, jotka sisältyvät raportin rakenteeseen, näkyvät nyt sovelettuna valuuttana. Jos valuutalle ei ole määritetty valuuttatunnusta, valuuttasymbolia ei näytetä.
 18. Sulje **Kirjanpidon tiedot** -raportti.
 19. Sulje **Raportin suunnittelija**.
@@ -66,7 +69,7 @@ Tässä harjoituksessa muokataan nykyistä oletusraporttia. Päivität sekä riv
 1.  Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
 2.  Valitse raportille rivi nimeltään **Koetaseen yhteenveto: oletusarvo**
 3.  Valitse **Muokkaa**. **Koetaseen yhteenveto – oletusarvo** avautuu raportin suunnittelussa.
-4.  Valitse **Tiedosto**, sitten **Tallenna nimellä** ja anna raportille nimeksi "Saldoraportti ominaisuuksilla". Huomautus: Aina uusi raportti luodaan raportin suunnittelija tilinpäätösten luettelo päivitetään Dynamics 365 operaatioille.
+4.  Valitse **Tiedosto**, sitten **Tallenna nimellä** ja anna raportille nimeksi "Saldoraportti ominaisuuksilla". Huomautus: Aina, kun uusi raportti luodaan raportin suunnittelussa, tilinpäätösten luettelo päivittyy Dynamics 365 for Operationsissa.
 5.  Valitse rivinmääritys kuvake oletusraportista, avataksesi **Pääkirja – oletusrivin määritys**.
 6.  Tallenna rivimääritys nimellä **Saldoraportti ominaisuuksilla**
 7.  Laita kohdistin riville 50, valitse **Muokkaa**, sitten **Lisää rivejä dimensioista**. "Lisää rivejä dimensioista" sallii sinun valita valita mitkä dimensiot haluat rivimääritykseesi. Tässä tapauksessa rakennamme rivimäärityksen päätilin avulla.
@@ -96,7 +99,7 @@ Tässä harjoituksessa muokataan nykyistä oletusraporttia. Päivität sekä riv
 25. Sulje **Saldoraportti ominaisuuksilla **-raportti.
 26. Sulje **Raportin suunnittelija**.
 
-## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Harjoituksessa 3: Luo moniulotteisen raportoinnin puun käyttäminen raportin
+## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Harjoitus 3: Luo moniulotteinen raportti käyttämällä raportointipuuta
 Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet luomaan raportointipuun ja lisäämään raporttimääritykseen tuottaaksesi kustannuspaikka / jaetun tuloslaskelman. Kun päivitykset ovat valmiita, tulet luomaan kustannuspaikka / jaetun tuloslaskelman ja tutkimaan raporttia käyttämällä raportointipuuta. Aloitammme tilinpäätöksien luettelosta.
 
 1.  Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
@@ -138,7 +141,7 @@ Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet lisäämään o
 1.  Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
 2.  Valitse raportin rivi nimeltään **Tase ja tuloslaskelma rinnakkain: oletusarvo**
 3.  Valitse **Muokkaa**. **Tase ja tuloslaskelma rinnakkain: oletusarvo** aukaisee raportin suunnittelijan.
-4.  Valitse **tiedosto**&gt;**Tallenna nimellä** ja anna raportille nimi **konsolidoidun taseen ja tuloslaskelman rinnakkain**.
+4.  Valitse **Tiedosto** &gt; **Tallenna nimellä** ja anna raportille nimeksi **Konsolidoitu tase ja tuloslaskelma rinnakkain**.
 5.  Muuta perusvuodeksi 2012.
 6.  Klikkaa puutyypin avattavaa nuolta ja valitse **Organisaatiohierarkiat**.
 7.  Klikkaa puun avattavaa nuolta ja valitse **Contoso Holdings.**
@@ -151,7 +154,7 @@ Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet lisäämään o
 14. Sulje **Konsolidoitu tase ja tuloslaskelma rinnakkain**.
 15. Sulje **Raportin suunnittelija**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Harjoituksessa 5: Sidebyside osastokohtainen raportin luominen
+## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Harjoitus 5: Luo rinnakkainen osastojen raportti
 Tässä harjoituksessa luot uuden raportin. Raportti on rinnakkainen osastojen tuloslaskelmaan. Käytät aiemmin luotua rivimääritystä, mutta luo uusi raporttimääritys ja uusi sarakemääritys, joka käyttää dimensiosuodattimia. Aloitammme tilinpäätöksien luettelosta.
 
 1.  Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
@@ -179,8 +182,10 @@ Tässä harjoituksessa luot uuden raportin. Raportti on rinnakkainen osastojen t
 18. **Tallenna** muutokset ja **luo**. Kun raportti on luotu ja avautuu, voit tutkia raporttia.
 
 ## <a name="additional-resources"></a>Lisäresurssit
-[Talousraportointi](\financials\general-ledger\financial-reporting-getting-started.md)<ph id="t1">
-</ph>[taloudellisia raportteja](\financials\general-ledger\view-financial-reports.md)<ph id="t2">
-</ph>[Dynamics taloudellisen raportoinnin blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Talousraportointi](\financials\general-ledger\financial-reporting-getting-started.md)  
+[Tarkastele tilinpäätöksiä](\financials\general-ledger\view-financial-reports.md) 
+[Dynamicsin taloushallinnon raportoinnin blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

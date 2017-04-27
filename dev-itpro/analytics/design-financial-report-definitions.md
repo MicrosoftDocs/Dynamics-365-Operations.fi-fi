@@ -30,7 +30,7 @@ ms.lasthandoff: 03/29/2017
 
 Tässä artikkelissa on tietoja raportin määrityksistä. Raportin määritys on raporttiosa (tai rakenneosa), joka käyttää raportin luontiin rivin, sarakkeen ja valinnaisesti myös raportointipuun määritystä. Raportin määrityksessä on myös vaihtoehtoja ja asetuksia raportin mukauttamiseen. 
 
-Raportin määritys on raporttiosa (tai rakenneosa), joka käyttää raportin luontiin rivin, sarakkeen ja valinnaisesti myös raportointipuun määritystä. Raporttimääritys sisältää myös vaihtoehtoja ja asetuksia, joiden avulla voit mukauttaa raporttia. Kun olet määrittänyt rivi- ja sarakemääritykset, ne on yhdistettävä raportin määrityksessä. Tällöin määritetään myös muita määrityksen osia, kuten erittelytaso ja raportin päivämäärä. Voit nyt tallentaa ja luoda raportin. Talousraportointi sisältää seuraavat erittelytasot:
+Raportin määritys on raporttiosa (tai rakenneosa), joka käyttää raportin luontiin rivin, sarakkeen ja valinnaisesti myös raportointipuun määritystä. Raportin määritys sisältää myös raportin muokkaamisessa käytettäviä asetuksia. Kun olet määrittänyt rivi- ja sarakemääritykset, ne on yhdistettävä raportin määrityksessä. Tällöin määritetään myös muita määrityksen osia, kuten erittelytaso ja raportin päivämäärä. Voit nyt tallentaa ja luoda raportin. Talousraportointi sisältää seuraavat erittelytasot:
 
 -   Taloushallinto
 -   Taloudellinen ja Tili
@@ -89,6 +89,6 @@ Seuraavassa taulukossa kuvataan raportin määrityksen välilehdet sekä tietoje
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Taloudellinen raportointi saat toimintoihin Microsoft Dynamics-365](financial-reporting-intro.md)
+[Taloushallinnan raportointi Microsoft Dynamics 365 for Operations -järjestelmässä](financial-reporting-intro.md)
 
 

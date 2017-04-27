@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-expense-management"></a>Konfiguroi kulujen hallinta
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin Microsoft Dynamics AX:n matkalaskut määritetään. Matkalaskujen alueelle voit tallentaa esimerkiksi maksutapojen, matkustusehdotusten, kuluraporttien ja -käytäntöjen tiedot. 
 
 Koska monet päätökset, jotka teet kulujen hallinnan määrityksiä suunniteltaessa, perustuvat organisaatiohierarkiaan ja taloushallinnan rakenteeseen, sinun on tutustuttava kyseisten alueiden ohjeistukseen.
@@ -133,6 +136,8 @@ Voit luoda kuluraporttikäytäntöjä, joilla organisaatio voi säästää aikaa
 -   Milloin käytäntö vanhentuu?
 -   Mikä on käytäntösääntö?
 -   Mikä on käytäntösäännön tulos?
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Osittainen toimittajan maksu ennen alennuksen päivämäärää ja lopullisen maksun alennuksen päivämäärän jälkeen selvitetään"
+title: "Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää, kun lopullinen maksu suoritetaan alennuspäivämäärän jälkeen"
 description: "Tässä artikkelissa käydään läpi skenaario, jossa suoritetaan useita osittaisia maksuja, joista osa on käteisalennuskaudella ja osa käteisalennuskauden ulkopuolella."
 author: twheeloc
 manager: AnnBe
@@ -26,21 +26,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Osittainen toimittajan maksu ennen alennuksen päivämäärää ja lopullisen maksun alennuksen päivämäärän jälkeen selvitetään
+# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää, kun lopullinen maksu suoritetaan alennuspäivämäärän jälkeen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa käydään läpi skenaario, jossa suoritetaan useita osittaisia maksuja, joista osa on käteisalennuskaudella ja osa käteisalennuskauden ulkopuolella.
 
-Fabrikam ostaa tavaran toimittajan 3057. Fabrikam vastaanottaa 1 prosentin käteisalennus, jos lasku maksetaan 14 päivän kuluessa. Laskut on maksettava 30 päivän kuluessa. Lisäksi toimittaja antaa Fabrikamille käteisalennukset osamaksuista. Selvityksen parametrit sijaitsevat **Ostoreskontran parametrit** sivulla.
+Fabrikam ostaa tavaraa toimittajalta 3057. Fabrikam saa 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Laskut on maksettava 30 päivän kuluessa. Lisäksi toimittaja antaa Fabrikamille käteisalennukset osamaksuista. Tilityksen parametrit sijaitsevat **Ostoreskontran parametrit** -sivulla.
 
 ## <a name="invoice-on-june-25"></a>Lasku 25.6.
-Kesäkuun 25 päivänä huhtikuuta syöttää ja kirjaa lasku toimittajalle 3057 1 000,00. April voi tarkastella tapahtumia **Toimittajatapahtumat**-sivulla.
+April syöttää ja kirjaa 25. kesäkuuta laskun toimittajalle 3057, jonka arvo on 1.000,00. April voi tarkastella tapahtumia **Toimittajatapahtumat**-sivulla.
 
 | Tosite   | Tapahtumatyyppi | Päivämäärä      | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo   | Valuutta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
 | Lku-10020 | Lasku          | 25.6.2015 | 10020   |                                      | 1 000,00                              | -1 000,00 | USD      |
 
 ## <a name="partial-payment-on-july-2"></a>Osamaksu 2.7.
-2. heinäkuuta April haluaa tilittää 300,00 tästä laskusta. Maksu on oikeutettu alennukseen, koska saa alennuksen osamaksuista. Siksi April maksaa 297,00 ja käyttää 3,00:n alennuksen. Hän luo maksukirjauskansio ja syöttää toimittajan 3057 rivi. Hän avaa **tapahtumat selvitetään** sivulla, niin että hän voi merkitä laskun tilitystä varten.
+2. heinäkuuta April haluaa tilittää 300,00 tästä laskusta. Maksu on oikeutettu alennukseen, koska saa alennuksen osamaksuista. Siksi April maksaa 297,00 ja käyttää 3,00:n alennuksen. Hän luo maksun kirjauskansion ja lisää rivin toimittajalle 3057. Tämän jälkeen hän avaa **Selvitä tapahtumat** -sivun, jotta hän voi merkitä laskun tilitettäväksi.
 
 | Merkitse     | Käytä käteisalennusta | Tosite   | Tili | Päivämäärä      | Eräpäivä  | Lasku | Summa tapahtuman valuuttana | Valuutta | Täsmäytettävä summa |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -91,7 +94,7 @@ April kirjaa sitten maksun. Kun hän avaa **Toimittajatapahtumat**-sivun, hän n
 | HYV-10021  | Maksu          | 15.7.2015 |         | 700,00                               |                                       | 0,00    | USD      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--always"></a>Jäljellä oleva maksu 15.7. käytössä käteisalennus = aina
-Jos toimittaja sallii toteutettava alennusta, vaikka hän on maksaminen alennuspäivämäärän jälkeen huhtikuussa, hän muuttaa arvo **Käytä käteisalennusta** kentän arvoksi **aina**. **Laske käteisalennukset osittaisiin maksuihin,** asetus ohitetaan, ja alennus on toteutettu. Maksusumma on 693,00 ja alennus on jäljellä oleva 7,00.
+Jos toimittaja sallii alennuksen käyttämisen, vaikka April on maksamassa laskun alennuspäivämäärän jälkeen, hän voi muuttaa **Käytä käteisalennusta** kentän arvoksi **Aina**. **Laske käteisalennukset osamaksulle** -asetus ohitetaan ja alennus otetaan käyttöön. Maksusumma on 693,00 ja alennus on jäljellä oleva 7,00.
 
 | Merkitse     | Käytä käteisalennusta | Tosite   | Tili | Päivämäärä      | Eräpäivä  | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Valuutta | Täsmäytettävä summa |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -116,6 +119,8 @@ April kirjaa sitten maksun. Kun hän avaa **Toimittajatapahtumat**-sivun, hän n
 | ALE-10020 | Käteisalennus    | 1.7.2015  |         | 3,00                                 |                                       | 0,00    | USD      |
 | HYV-10021  | Maksu          | 15.7.2015 |         | 693,00                               |                                       | 0,00    | USD      |
 | ALE-10021 | Käteisalennus    | 15.7.2015 |         | 7:00                                 |                                       | 0,00    | USD      |
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Viimeksi lisätty muokkausominaisuudet tehtävän tallennus"
-description: "Jos käytät tehtävän tallennus Luo apuviivat tehtävän, voit muokata tiedostoja enemmän tehokkaasti käyttää tätä wikiä kuvattaviin toimintoihin."
+title: "Viimeksi lisätyt tehtävien tallennustoiminnon muokkaustoiminnot"
+description: "Jos tehtävien tallennustoimintoa käytetään tehtävien ohjausten luomiseen, tiedostoja voi muokata tehokkaammin tässä wikissä kuvattujen toimintojen avulla."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,58 +25,58 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recently-added-editing-features-in-task-recorder"></a>Viimeksi lisätty muokkausominaisuudet tehtävän tallennus
+# <a name="recently-added-editing-features-in-task-recorder"></a>Viimeksi lisätyt tehtävien tallennustoiminnon muokkaustoiminnot
 
-Jos käytät tehtävän tallennus Luo apuviivat tehtävän, voit muokata tiedostoja enemmän tehokkaasti käyttää tätä wikiä kuvattaviin toimintoihin.
+Jos tehtävien tallennustoimintoa käytetään tehtävien ohjausten luomiseen, tiedostoja voi muokata tehokkaammin tässä wikissä kuvattujen toimintojen avulla.
 
-Nämä toiminnot ovat käytettävissä **asetukset &gt;tehtävän tallennus &gt;Muokkaa tallennus** valikosta.
+Nämä toiminnot ovat käytettävissä **Asetukset &gt; Tehtävien tallennustoiminto &gt; Muokkaa tallennetta** -valikossa.
 
--   Lisää ohjeita ilman uudelleennauhoituksen koko tiedoston.
--   Siirrä osa tehtävän vaiheet ilman uudelleennauhoituksen koko tiedoston.
--   Tiivistä tallennus nimi ja kuvaus-kentät.
+-   Lisää vaiheita ilman, että koko tiedosto on tallennettava uudelleen.
+-   Siirrä alitehtävän vaiheita ilman, että koko tiedosto on tallennettava uudelleen.
+-   Tallenteen nimi- ja kuvauskenttien tiivistäminen
 
-## <a name="insert-steps-without-rerecording-the-entire-file"></a>Lisää ohjeita ilman rerecording koko tiedosto
-Voit nyt lisätä vaiheen tahansa tehtävän oppaan toistaminen tai nauhoittaminen uudelleen koko tiedoston.
+## <a name="insert-steps-without-rerecording-the-entire-file"></a>Lisää vaiheita ilman, että koko tiedosto on tallennettava uudelleen
+Voit nyt lisätä vaiheen tehtävän ohjauksen missä tahansa vaiheessa ilman tallenteen toistamista tai koko tiedoston tallentamista uudelleen.
 
-1.  Valitse vaihe, jonka jälkeen haluat lisätä uuden vaiheen. Varmista, että vaihe on korostettu.
+1.  Valitse vaihe, joka jälkeiseen kohtaan uusi vaihe lisätään. Varmista, että vaihe on korostettu.
 
-Jotta voit lisätä vaiheen tehtävän tallennus on oltava oikean sivun Avaa. Oikea sivu on uusi vaihe esiintymisen viikonpäivät. Tehtävän tallennus on mekanismi, joka määrittää, mitä aktiivinen sivua, ja poistaa käytöstä toiminnot, jos oikea sivu ei ole avoinna. 
+Tehtävien tallennustoiminto voi lisätä vaiheen vain, jos avoinna on oikea sivu. Oikea sivu on sivu, jolla uusi vaihe suoritetaan. Tehtävien tallennustoiminto määrittää aktiivisen sivun ja poistaa toiminnot käytöstä, jos avoinna ei ole oikea sivu. 
 
 [![tg1](./media/tg1.png)](./media/tg1.png) 
 
 
-Kun olet oikean sivun **Lisää vaihe** on käytettävissä.
+Kun olet oikealla sivulla, **Lisää vaihe** -kohta on käytettävissä.
 
 [![tg2](./media/tg2-231x300.png)](./media/tg2.png)
 
 2. Valitse **Lisää vaihe**.
 
-Kun valitset **Lisää vaihe**, tehtävän tallennus siirtyy tallennustilaksi. Käyttöliittymän toteutetuista nyt kirjattava ja lisätään vaiheet paikallaan.
+Kun valitset **Lisää vaihe**, tehtävien tallennustoiminnon tilaksi vaihdetaan tallennustila. Kaikki käyttöliittymätoiminnot tallennetaan ja lisätään käytönaikaisina vaiheina.
 
-3. Valitse **lopettaa**.
+3. Valitse **Pysäytä**.
 
-Voit toistaa prosessin niin monta vaihetta lisäämällä tai siirtämällä niin monta alitehtäville tarpeen mukaan (ks. jäljempänä alitehtäville).
+Voit toistaa prosessin ja lisätä haluamasi määrän vaiheita tai siirtää tarvittavan määrän alitehtäviä (seuraavassa on lisätietoja alitehtävistä).
 
-4. Kun olet valmis tehtävän opas muutokset, valitse **valmis muokkauksen**, ja valitse sitten tallentaa tai julkaista oppaan tehtävien asetukset.
+4. Kun tehtävän ohjauksen muokkaaminen on tehty, valitse **Muokkaus valmis**. Tämän jälkeen voit tallentaa tai julkaista tehtävän ohjauksen.
 
-## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Siirrä toimet alitehtävän ilman rerecording koko tiedosto
-Voit siirtää osa tehtävän vaiheet toistaminen tai nauhoittaminen uudelleen koko tiedoston. Voit myös siirtää alitehtävän vaihe tai alitehtävän viimeinen vaihe, jos haluat ryhmitellä vaiheet aiemmin tekstialueen.
+## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Siirrä alitehtävän vaiheita ilman, että koko tiedosto on tallennettava uudelleen.
+Voit siirtää alitehtävän vaiheita ilman toistoa tai koko tiedoston tallentamista uudelleen. Voit myös siirtää alitehtävän vaiheen tai lopetuksen alitehtävän vaiheen, jos haluat ryhmitellä aiemmin luotujen vaiheiden lohkon.
 
-1.  Valitse vaihe tai alitehtävän vaihe, jota haluat siirtää. Varmista, että vaihe on korostettu.
-2.  Kolme pistettä ja valitse **siirron jälkeen vaihe**.
+1.  Valitse siirrettävä vaihe tai alitehtävän vaihe. Varmista, että vaihe on korostettu.
+2.  Valitse ellipsi ja valitse sitten **Siirrä vaihe seuraavan jälkeen**.
 
 [![tg3](./media/tg3.png)](./media/tg3.png)
 
-3. Valitse vaihe tai alitehtävän vaihe, johon haluat siirtää vaihe tai alitehtävän vaiheen jälkeen. Tehtävän tallennus siirtyy vaiheeseen.
+3. Valitse siirrettävä vaihe tai alitehtävän vaihe, jonka jälkeiseen kohtaan vaihe tai alivaihe siirretään. Tehtävien tallennustoiminto siirtää vaiheen.
 
-4. Voit siirtää vaiheen lopussa alitehtävän sitä, kolme pistettä, valitse **Siirrä vaiheen jälkeen**, ja valitse sitten vaihe, jonka jälkeen haluat end alitehtävän vaihe on.
+4. Voit siirtää lopetuksen alitehtävän vaiheen, kun valitset vaiheen ja valitset sitten ellipsin. Valitse **Siirrä vaihe seuraavan jälkeen** ja valitse sitten vaihe, jonka jälkeiseen kohtaa lopetuksen alitehtävän vaihe sijoitetaan.
 
-Jos haluat ensin tehtävä opas osa tehtävän rajoissa, luoda alitehtävän vaiheen toisen vaiheen ja Siirrä siihen ensimmäisessä vaiheessa. Voit lisätä tai siirtää niin monta vaihetta tai tarvittaessa alitehtäville.
+Jos haluat, että tehtävän ohjauksen ensimmäinen vaihe kuuluu alitehtävään, luo alitehtävän vaiheet toisena vaiheena ja siirrä tähän ensimmäinen vaihe. Voit lisätä tai siirtää haluamasi määrän vaiheita tai alitehtäviä.
 
-5. Kun olet valmis tehtävän opas muutokset, valitse **valmis muokkauksen**, ja valitse sitten tallentaa tai julkaista oppaan tehtävien asetukset.
+5. Kun tehtävän ohjauksen muokkaaminen on tehty, valitse **Muokkaus valmis**. Tämän jälkeen voit tallentaa tai julkaista tehtävän ohjauksen.
 
-## <a name="collapse-recording-name-and-description"></a>Kutista tallennus nimi ja kuvaus
-Voit laajentaa ja tiivistää **tallennus nimi** ja **tallentamisen kuvaus** kentät. Kun nämä kentät on kutistettu, kaksi näytetään ruudun muokkaus tehtävän tallennus. 
+## <a name="collapse-recording-name-and-description"></a>Tallenteen nimen ja kuvauksen tiivistäminen
+Voit laajentaa ja tiivistää **Tallenteen nimi**- ja **Tallenteen kuvaus** -kentän. Kun nämä kentät on tiivistetty, tehtävien tallennustoiminnon muokkausruudussa näkyy enemmän vaiheita. 
 
 [![tg4](./media/tg4-300x252.png)](./media/tg4.png)  
 
@@ -85,6 +85,6 @@ Voit laajentaa ja tiivistää **tallennus nimi** ja **tallentamisen kuvaus** ken
 
 [Dokumentaation tai koulutuksen luominen tehtävätallenteiden avulla](/dynamics365/operations/dev-itpro/user-interface/task-recorder)
 
-[Tehtävän tallennus-pikaopas](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
+[Tehtävien tallennustoiminnon pikaopas](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Konserniyritysten välisen laskennan asetuksista"
-description: "Tässä ohjeaiheessa kerrotaan, kuinka konserniyritysten välisen laskennan määrittäminen niin, että voit käyttää Konsernin päiväkirjojen kirjanpidon kohdistuksissa ja taloushallinnon päiväkirjoissa, esimerkiksi päivittäisten kirjauskansioiden, toimittajan laskun Ostopäiväkirjat ja Maksupäiväkirjat."
+title: "Konsernin sisäisen laskennan määritys"
+description: "Tässä ohjeaiheessa kerrotaan, kuinka konserniyritysten välinen laskenta määritetään niin, että voit käyttää konsernin päiväkirjoja kirjanpidon kohdistuksissa ja taloushallinnon päiväkirjoissa, esimerkiksi päivittäisissä kirjauskansioissa, toimittajan laskun ostopäiväkirjoissa ja maksupäiväkirjoissa."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,25 +25,30 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="intercompany-accounting-setup"></a>Konserniyritysten välisen laskennan asetuksista
+# <a name="intercompany-accounting-setup"></a>Konsernin sisäisen laskennan määritys
 
-Tässä ohjeaiheessa kerrotaan, kuinka konserniyritysten välisen laskennan määrittäminen niin, että voit käyttää Konsernin päiväkirjojen kirjanpidon kohdistuksissa ja taloushallinnon päiväkirjoissa, esimerkiksi päivittäisten kirjauskansioiden, toimittajan laskun Ostopäiväkirjat ja Maksupäiväkirjat.
+[!include[banner](../includes/banner.md)]
 
-Konsernin päiväkirjojen voidaan luoda eri tilanteissa, kuten päivittäisten kirjauskansioiden, toimittajan laskujen kirjauskansioiden, kirjanpidon kohdistuksissa ja keskitettyjä maksuja varten. Mahdollistaaksesi nämä skenaariot, perusta konsernikirjanpito.
 
-## <a name="define-main-accounts"></a>Määritä päätilit
-Ensin on luotava kirjanpidon merkinnöistä konsernin ensisijaisesti käytettävät tilit maksettavien ja saatavien eräpäiville. On hyvä idea käyttää yksilöllisiä päätilejä kullekin yritykselle, helpottamaan täsmäyttämistä ja konsernin sisäisten kirjauksien eliminointia. Jos käytät kauppakumppanin tai vastaava dimensio, konsernin osapuolten tunnistamiseen, voit määrittää tämän dimension päätilille, joka on määritetty konserniyritysten välisen laskennan kiinteä dimensiona. Kun määrität päätilit, ne tulisi asettaa **Main tyyppi** kentän arvoksi **taseen** - **tärkeimmät asiakkaat** sivun.
+Tässä ohjeaiheessa kerrotaan, kuinka konserniyritysten välinen laskenta määritetään niin, että voit käyttää konsernin päiväkirjoja kirjanpidon kohdistuksissa ja taloushallinnon päiväkirjoissa, esimerkiksi päivittäisissä kirjauskansioissa, toimittajan laskun ostopäiväkirjoissa ja maksupäiväkirjoissa.
 
-## <a name="define-journal-names"></a>Määritä kirjauskansioiden nimet
-Seuraavaksi on määritettävä kirjauskansion nimi. Määrittää **tyyppi** kentän arvoksi **päivittäin** - **kirjauskansioiden nimet** sivulla. On suositeltavaa käyttää konsernin sisäiseen laskutukseen tiettyä kirjauskansion nimeä.
+Konsernin sisäiset kirjauskansioita voidaan luoda eri tilanteissa, esimerkiksi päivittäiskirjauskansiot, toimittajan laskupäiväkirjat, kirjanpidon kohdistukset sekä keskitetyt maksut. Mahdollistaaksesi nämä skenaariot, perusta konsernikirjanpito.
 
-## <a name="define-intercompany-accounting-setup"></a>Määritä konserniyritysten välisen laskennan asetuksista
-**Konserniyritysten välisen laskennan** sivun luomisessa käytettävä oikeussubjektit, jotka voidaan transact parien toistensa kanssa. Konsernin laskenta-asetukset on jaettu, joten asetukset on näkyvissä kaikki oikeushenkilöt. Luotaessa uusi yritys parin, varmista, että olet tietoinen alkuperäisen yrityksen tai kohdeyrityksen määritellään mitkä oikeushenkilö. Kun määrität konserniyritysten välisiä tapahtumia, tapahtuman määrittää mitä oikeushenkilön aloittamisen tai tapahtuma on peräisin. Esimerkiksi yritysten joukossa on määritetty USSI (kohde) ja USMF (peräisin). Jos käyttäjä on aktiivinen USSI ja siirtyy konsernin tapahtuma, jossa USMF, tapahtumaa ei kirjaa konserniyritysten välisen laskennan määritellään vain USMF koska aloittaja on. Jos joko yritys voi peräisin tapahtuma, tarvitset toisen oikeushenkilön pari vastavuoroinen asetusten luomiseen. 
+## <a name="define-main-accounts"></a>Päätilien määritys
+Ensin on luotava kirjanpidon merkinnöistä konsernin ensisijaisesti käytettävät tilit maksettavien ja saatavien eräpäiville. On hyvä idea käyttää yksilöllisiä päätilejä kullekin yritykselle, helpottamaan täsmäyttämistä ja konsernin sisäisten kirjauksien eliminointia. Käytettäessä kauppakumppania tai vastaavaa dimensiota tunnistamaan konsernin sisäisen osapuolen, voit määrittää tämän dimension konsernin sisäisen laskennan päätiliksi. Määrittäessäsi ensisijaiset tilit, sinun pitää määrittää **Päätilin tyyppi** -kenttä arvoon **Tase** **Päätilit**-sivulla.
 
-Valitse **veloittaa tililtä (maksaja)** ja **kredit-tili (vastaanottaja)** sekä ja Kohdevaraston oikeushenkilölle. Määritellä, millä **Kirjauskansionimi** käytetään, kun tapahtuma luodaan kohdeyrityksessä. Alkuperäisen yrityksen kirjauskansio on jo tiedossa, koska se on valittu käyttäjä konserniyritysten välisen tapahtuman luomisessa. 
+## <a name="define-journal-names"></a>Kirjauskansioiden nimien määritys
+Seuraavaksi on määritettävä kirjauskansion nimi. Määritä **Kirjauskansion tyyppi** -kentän arvoksi **Päivittäin** **Kirjauskansioiden nimet** -sivulla. On suositeltavaa käyttää konsernin sisäiseen laskutukseen tiettyä kirjauskansion nimeä.
 
-Valitse lopuksi mitä oikeushenkilön saavat kirjanpidollinen tukeminen summia, kuten käteisalennuksen tai realisoituneet voitot/tappiot keskitettyjä maksuja varten. 
+## <a name="define-intercompany-accounting-setup"></a>Konsernin sisäisen laskennan määritys
+**Konsernin sisäinen laskenta** -sivua käytetään luomaan yrityspareja, jotka voivat vaihtaa tapahtumia toistensa kanssa. Konsernin sisäinen laskenta -asetukset on jaettu, joten asetukset ovat näkyvissä kaikki yrityksissä. Luotaessa uutta yritysparia on varmistettava, että olet tietoinen kumpi yritys määritetään alkuperäiseksi yritykseksi ja kumpi kohdeyritykseksi. Kun määrität konserniyritysten välisiä tapahtumia, tapahtuma määrittää, mikä yritys käynnistää tapahtuman. Esimerkiksi konserniyritysten välisessä kirjanpidossa on määritys USMF (alkuperäinen) ja USSI (kohde). Jos käyttäjä on aktiivinen USSI-yrityksessä ja luo konsernitapahtuman USMF:n kanssa, tapahtumaa ei kirjata, koska konserniyritysten välisessä laskennassa USMF on määritetty käynnistäväksi yritykseksi. Jos kumpikin yritys voi käynnistää tapahtuu, sinun on luotava toinen yrityspari vastavuoroisen määrityksen toteuttamiseksi. 
 
-Vastavuoroinen suhde voit helposti voi määrittää **konserniyritysten välisen laskennan** sivua käyttämällä **Luo vastavuoroinen suhde** -painiketta sen jälkeen, kun ensimmäinen pari oikeushenkilö on luotu. Kun luodaan vastavuoroinen pari, kohdeyrityksen tiedot kopioidaan alkuperäisen yrityksen ja päinvastoin. Kohdeyrityksen määritetty kirjauskansion säilyy. Useimmissa organisaatioissa käyttää samaa nimeämiskäytäntöä kirjauskansioiden nimet, kirjauskansionnimi on sama. Jos kirjauskansionnimi on eri, Varoitus ilmestyy ilmoitus, joka voidaan valita eri päiväkirjan ja päiväkirja ei ole kenttää.
+Valitse **Debet-tili (maksaja)** ja **Kredit-tili (Saaja)** sekä alkuperäiselle että kohdeyritykselle. Määritä, mitä **Kirjauskansion nimi** -arvoa käytetään, kun tapahtuma luodaan kohdeyrityksessä. Alkuperäisen yrityksen kirjauskansio on jo tiedossa, koska sen on valinnut käyttäjä konserniyritysten välisen tapahtuman luomisessa. 
+
+Valitse lopuksi kumpi oikeushenkilö vastaanottaa kirjanpidon tukisummat, kuten käteisalennukset tai realisoituneet voitot/tappiot keskitettyjä maksuja varten. 
+
+Vastavuoroinen suhde voidaan helposti määrittää **Konsernin sisäinen laskenta** -sivulla käyttämällä **Luo vastavuoroinen suhde** -painiketta sen jälkeen, kun ensimmäinen yrityspari on luotu. Kun luodaan vastavuoroinen pari, kohdeyrityksen tiedot kopioidaan alkuperäiseen yritykseen ja päinvastoin. Kohdeyritykselle määritetty kirjauskansio säilyy. Useimmissa organisaatioissa käytetään samaa nimeämiskäytäntöä kirjauskansioiden nimissä, jolloin kirjauskansion nimet ovat samat. Jos kirjauskansion nimi on eri, kentässä näkyy varoitus, että kirjauskansiota ei ole ja voidaan valita toinen kirjauskansio.
+
+
 
 

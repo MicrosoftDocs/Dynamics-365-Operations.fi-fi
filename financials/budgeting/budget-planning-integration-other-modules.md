@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-integration-with-other-modules"></a>Budjettisuunnittelun integrointi toisten moduulien kanssa
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="periodic-processes-for-generating-budget-plans"></a>Kausittaiset prosessit budjettisuunnitelmien muodostamiseen
@@ -49,13 +52,13 @@ Kausittaisten prosessien peruselementit ovat samat kaikille prosesseille. Välil
 
 Kullekin luontiprosessille on saatavilla kolme toimintoa:
 
--   **Luodaan uusi budjetti** Luo uusi suunnitelma, jossa on määritteet, jotka on valittu ** kohde ** osa. Näiden määritteiden ei tarvitse olla yksilöiviä. Näin ollen kahdella suunnitelmalla voi olla sama nimi ja muut arvot.
+-   **Luo uusi budjettisuunnitelma** luo uuden suunnitelman, jolla on **Kohde**-osassa valitut määritteet. Näiden määritteiden ei tarvitse olla yksilöiviä. Näin ollen kahdella suunnitelmalla voi olla sama nimi ja muut arvot.
 -   **Korvaa nykyinen budjettisuunnitelman skenaario** poistaa kaikki kohdebudjettisuunnitelman tiedot valitussa budjettisuunnitelmaskenaariossa ja luo uusia rivejä, jotka käyttävät valittuja lähdetietoja.
 -   **Päivitä nykyinen budjettisuunnitelman skenaario ja liitä uudet tiedot** päivittää kohdesuunnitelman olemassa olevat, lähderivejä vastaavat rivit, ja lisäävät uudet rivit uusille tiedoille. Vastaavuus perustuu kirjanpitotiliin, päivämäärään, budjettiluokkaan ja useisiin muihin kenttiin. Kun esimerkiksi muodostat budjettisuunnitelmia ennusteen toimista, toimen numero on tärkeä kenttä. Kaikki rivit, joilla on toimen lähdenumeroa vastaava toimen numero, korvataan uusilla riveillä lähteestä.
 
 ### <a name="source"></a>Lähde
 
-Kaikkien prosessien **lähde** -välilehden avulla voit suodattaa tietoja käyttämällä **suodatin** painike. Tiettyihin kenttiin lisätään kussakin prosessissa suodatin. Esimerkiksi **Muodosta budjettisuunnitelma kirjanpidosta** -prosessissa **Kirjanpitotili-** ja **Päätili**-kategoriat ovat saatavilla ja näkyvät luontisivulla. Kaikki suodattimeen lisäämäsi kentät lisätään myös sivulle yhdessä mahdollisesti lisäämiesi kriteerien kanssa.
+Kaikkien prosessien osalta **Lähde**-välilehden avulla voit suodattaa tietoja käyttämällä **Suodatin**-painiketta. Oletuksena tietyt kentät lisätään suodattimeen kussakin prosessissa. Esimerkiksi **Muodosta budjettisuunnitelma kirjanpidosta** -prosessissa **Kirjanpitotili-** ja **Päätili**-kategoriat ovat saatavilla ja näkyvät luontisivulla. Kaikki suodattimeen lisäämäsi kentät lisätään myös sivulle yhdessä mahdollisesti lisäämiesi kriteerien kanssa.
 
 ### <a name="target"></a>Tavoite
 
@@ -63,7 +66,7 @@ Kaikkien prosessien **lähde** -välilehden avulla voit suodattaa tietoja käytt
 
 **Yhteenlaskettu summa perusteena** -kenttä sivun yläosassa määrittää myös käytettävän päivän. Tämä kenttä laskee summat yhteen ja määrittää voimaantulopäiväksi tilivuoden tai -kauden ensimmäisen päivän. 
 
-Monista **Kohde**-välilehden kentistä tulee muokattavia tai vain luku -muotoisia valitsemastasi toiminnosta riippuen. Kun siirryt uuden budjettisuunnitelman luonnista olemassa olevan suunnitelman päivittämiseen, **Budjettisuunnitelman nimi** -kenttä ei ole enää käytettävissä ja olemassa olevan suunnitelman valitsemiseen liittyvät kentät tulevat saataville. Molemmilla **Target** välilehti ja ** lähde **-välilehden **kirjanpidon** kenttä on aina ole käytettävissä, koska arvo määräytyy valitun budjettisuunnittelussa. 
+Monista **Kohde**-välilehden kentistä tulee muokattavia tai vain luku -muotoisia valitsemastasi toiminnosta riippuen. Kun siirryt uuden budjettisuunnitelman luonnista olemassa olevan suunnitelman päivittämiseen, **Budjettisuunnitelman nimi** -kenttä ei ole enää käytettävissä ja olemassa olevan suunnitelman valitsemiseen liittyvät kentät tulevat saataville. Sekä **Kohde**-välilehdessä että **Lähde**-välilehdessä **Kirjanpito**-kenttä ei ole koskaan käytettävissä, koska tämä arvo määritetään valitussa budjettisuunnitteluprosessissa. 
 
 **Budjettiluokka**-kentässä voit määrittää budjettisuunnitelman rivit joko kulutapahtumiksi tai tuottotapahtumiksi. Yleensä tuottotapahtumat ovat luottoja kirjanpitotilille ja ne tallennetaan siksi negatiivisina lukuina. Nämä tapahtumat myös yleensä näkyvät negatiivisina summina budjettisuunnitelmassa. Lisäämällä budjettiluokan kenttänä suunnitelman asettelussa voit kuitenkin mahdollistaa tuottojen näkymisen positiivisina summina.
 
@@ -73,7 +76,7 @@ Kolme kenttää tarjoaa lisätoimintoja: **Kerroin**, **Minimi**, ja **Pyöristy
 
 **Kerroin**-kentän arvo kerrotaan lähdesummalla budjettisuunnitelman summan määrittämiseksi. Voit sitten tehdä korjauksia budjettisuunnitelman rivejä luodessasi. Voit esimerkiksi kirjoittaa **1,03** kolmen prosentin lisäystä varten. Kertoimen täytyy olla positiivinen luku. 
 
-**Minimi**-kentässä voit määritellä rajasumman budjettisuunnitelman rivin luonnille. Jos lähdesumma on pienempi kuin tämä luku, budjettisuunnitelman riviä ei luoda. Arvo **0,00** avulla kaikki summat, mutta ei rajoita rivien positiivisina summina. (Arvoa ei ole rajoittaa rivien positiivisina summina. Negatiiviset summat sisällytetään aina, ja edustavat yleensä hyvitystapahtumat.)
+**Minimi**-kentässä voit määritellä rajasumman budjettisuunnitelman rivin luonnille. Jos lähdesumma on pienempi kuin tämä luku, budjettisuunnitelman riviä ei luoda. Arvo **0,00** sallii kaikki summat, mutta ei rajoita rivejä positiivisiin summiin. (Jos arvoa ei ole, rivit on rajoitettu positiivisiin summiin. Negatiiviset summat sisällytetään aina, ja ne edustavat yleensä kredit-tapahtumia.)
 
 **Pyöristyssääntö**-kentässä voit määritellä luotujen budjettisuunnitelman rivien tarkkuuden. Voit pyöristää summat valuutan lähimpään 1,00, 10,00, 100,00 jne. -arvoon.
 
@@ -86,13 +89,13 @@ Kohteessa on määritetty **Budjettiluokka**-kenttä joko arvoksi **Kulu** tai *
 
 ### <a name="generate-budget-plan-from-fixed-assets"></a>Muodosta budjettisuunnitelma käyttöomaisuudesta
 
-**Muodosta budjettisuunnitelma käyttöomaisuudesta** prosessilla ei ole vaihtoehtoa tehdä kausittainen tai päiväkohtainen kooste. On myös historiallinen suunnitelman määrittäminen ei ole vaihtoehto. Tämän kausittaisen prosessin avulla voit sisällyttää suunnitellut tapahtumat käyttöomaisuuden budjetin suunnittelussa.
+**Muodosta budjettisuunnitelma käyttöomaisuudesta** prosessilla ei ole vaihtoehtoa tehdä kausittainen tai päiväkohtainen kooste. Myöskään suunnitelman määrittäminen historialliseksi ei ole vaihtoehto. Tämän kausittaisen prosessin avulla voit sisällyttää suunnitellut tapahtumat käyttöomaisuudelle budjetin suunnittelussa.
 
 ### <a name="generate-budget-plan-from-forecast-positions"></a>Muodosta budjettisuunnitelma ennusteen toimista
 
 **Muodosta budjettisuunnitelma ennusteen toimista** -prosessi määrittää budjettisuunnitelman riville lähteen ennusteen toimen. Voit tarkastella toimea lisäämällä ennusteen toimen rivinä budjettisuunnitelman asetteluun käyttämällä **Budjettisuunnitelman rivit** -kyselyä. Jos et halua, että ennusteen toimi määritetään budjettisuunnitelman riveille, määritä **Sisällytä toimi budjettisuunnitelman riville** -vaihtoehdon asetukseksi **Ei**.
 
-Budjettisuunnitelman rivit yhdistetään kirjanpitotilin ja sijainnin mukaan. Voit jättää paikan numero, kuitenkin siten, että rivit lasketaan yhteen vain kirjanpitotilin mukaan. Määritä **Kohde**-välilehdessä **Sisällytä toimi budjettisuunnitelman riville** -vaihtoedon asetukseksi **Ei**.
+Budjettisuunnitelman rivit koostetaan kirjanpitotilin ja sijainnin mukaan. Voit kuitenkin jättää paikan numeron pois siten, että rivit koostetaan vain kirjanpitotilin mukaan. Määritä **Kohde**-välilehdessä **Sisällytä toimi budjettisuunnitelman riville** -vaihtoedon asetukseksi **Ei**.
 
 Kentässä **Budjettisuunnitelman FTE-skenaario** voit määrittää skenaarion sisältämään budjettisuunnitelman kokopäivätoimisuuksien (FTE) lukumäärän. Tämä kenttä on rajoitettu määrä-tyyppisille skenaarioille, jotka sisällytetään kohdebudjettisuunnitelmaan. Jos valitset FTE-skenaarion, sinun on myös valittava FTE-päätili. Tätä tiliä käytetään määrä-tyyppisten budjettisuunnitelmarivien luontiin 
 
@@ -140,5 +143,7 @@ Valitse rivi ja napsauta **Budjettisuunnitelmarivit**-painiketta suorittaaksesi 
 Käytä **Tarjontaennuste-** ja **Kysyntäennuste**-painikkeita näiden kyselyiden suorittamiseen. Molemmissa tapauksissa kysely etsii ennusterivejä, jotka olisivat voineet luoda budjettisuunnitelman rivit. 
 
 Muihin saatavilla oleviin raportteihin kuuluu esimerkiksi**Ennusteen toimet budjettisuunnitelman mukaan** -raportti. Tämä raportti on erityisen hyödyllinen, kun haluat määrittää, onko toimi kohdistettu budjettisuunnitelmille oikein.
+
+
 
 

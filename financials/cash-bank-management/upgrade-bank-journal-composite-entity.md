@@ -1,5 +1,5 @@
 ---
-title: "Pankin kirjauskansio composite yksikön päivitys"
+title: "Pankin kirjauskansioiden yhdistelmäyksikön päivittäminen"
 description: "Seuraavat vaiheet ovat välttämättömät, jotta voit lisätä BankTransactionType-lisäkentän BankJournalEntity-yhdistelmäyksikköön."
 author: twheeloc
 manager: AnnBe
@@ -24,20 +24,23 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="update-the-bank-journal-composite-entity"></a>Pankin kirjauskansio composite yksikön päivitys
+# <a name="update-the-bank-journal-composite-entity"></a>Pankin kirjauskansioiden yhdistelmäyksikön päivittäminen
+
+[!include[banner](../includes/banner.md)]
+
 
 Seuraavat vaiheet ovat välttämättömät, jotta voit lisätä BankTransactionType-lisäkentän BankJournalEntity-yhdistelmäyksikköön.
 
 Seuraavien vaiheiden avulla voit lisätä BankTransactionType-lisäkentän BankJournalEntity-yhdistelmäyksikköön.
 
 1.  Kääntää ja synkronoi seuraavat pankin kirjauskansion yhdistelmäyksiköt, yksiköt ja valmistelutaulut:
-    -   Kooste yksikön\\BankJournalEntity
-    -   Yksikön\\BankJournalHeaderEntity
-    -   Yksikön\\BankJournalLineEntity
-    -   Taulukko\\BankJournalHeaderStaging
-    -   Taulukko\\BankJournalLineStaging
+    -   Yhdistelmäyksikkö\\BankJournalEntity
+    -   Yksikkö\\BankJournalHeaderEntity
+    -   Yksikkö\\BankJournalLineEntity
+    -   Taulu\\BankJournalHeaderStaging
+    -   Taulu\\BankJournalLineStaging
 
-2.  Tietojen hallinta\\projektien tiedot
+2.  Tietojen hallinta\\tietoprojektit
     -   Näytä **pankkitapahtuma **-tyyppi **Lähdetiedot **-asettelussa.
         -   Lähdetietojen muoto = XML-elementti
         -   Yksikön nimi = pankin kirjauskansio
@@ -49,6 +52,8 @@ Seuraavien vaiheiden avulla voit lisätä BankTransactionType-lisäkentän BankJ
             -   Varmista, että pankkitapahtuman laji liitetään lähteestä väliaikaiseen alueeseen.
 
 3.  Tuo uusi tilinpäätös.
+
+
 
 
 

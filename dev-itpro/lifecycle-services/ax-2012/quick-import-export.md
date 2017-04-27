@@ -1,5 +1,5 @@
 ---
-title: "Käytä nopea tuonti ja vienti"
+title: "Pikatuonnin tai -viennin käyttäminen"
 description: "Pikatuonti- ja vientitoiminnon tarkoitus on vähentää tuonti- ja vientivaiheita."
 author: margoc
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Suorita testi Data Transfer Tool (beta) Dynamics AX (AX 2012: n)
+# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Test Data Transfer Tool (beta-versio) -sovelluksen ajaminen Dynamics AX:ssä (AX 2012)
+
+[!include[banner](../../includes/banner.md)]
+
 
 Pikatuonti- ja vientitoiminnon tarkoitus on vähentää tuonti- ja vientivaiheita.
 
@@ -36,5 +39,7 @@ Pikatuonti- ja vientiomaisuus on lisätty, jotta käyttäjät voivat tuoda tai v
 -   Pikatuontia tai -vientiä varten ei tarvitse luoda käsittelyryhmää, sillä järjestelmä luo sen automaattisesti tuonti- tai vientityön suorittamisen yhteydessä. Voit myös säilyttää halutessasi pikatuonnilla- tai viennillä tuotujen tietojen historiatiedot.
 
   Huomaa, että pikatuonti- ja vientitoiminto olettaa, että tunnet DIXF-käsitteet.
+
+
 
 

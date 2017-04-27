@@ -1,6 +1,6 @@
 ---
 title: Budjettisuunnittelu
-description: "Tämän kurssin tavoitteena on antaa näkymän Ohjattu Microsoft Dynamics-365 budjettisuunnittelun alueen toimintoja päivitysten toiminnot. Tämä kurssi sisältää nopean konfiguraatioesimerkin budjettisuunnittelumoduulista ja esittelee, miten budjettisuunnittelu voidaan suorittaa tämän konfiguraation avulla.  Tällä kurssilla keskitytään erityisesti seuraavista liiketoimintaprosessien tai tehtävien--organisaation hierarkian luominen budjetin suunnittelussa ja käyttäjän suojauksen konfiguroinnissa - budjettisuunnitelman skenaariot, budjettisuunnitelman sarakkeet, asetteluja ja luominen ja aktivoiminen talousarvion suunnittelun prosessi - luodaan budjettisuunnitelman asiakirjan mukaan todelliset kirjanpidon sisäänpäin - avulla voit säätää suunnitelman asiakirjan budjettitiedot kohdistukset - muokkausta budjettisuunnitelman asiakirjan tietoja Excelissä Excel - mallien määrittäminen"
+description: "Tämän kurssin tavoite on tarjota Microsoft Dynamics 365 for Operations -toimintojen päivitysten ohjattu näkymä Budjettisuunnittelu-alueella. Tämä kurssi sisältää nopean konfiguraatioesimerkin budjettisuunnittelumoduulista ja esittelee, miten budjettisuunnittelu voidaan suorittaa tämän konfiguraation avulla.  Tällä kurssilla keskitytään erityisesti seuraaviin liiketoimintaprosesseihin tai tehtäviin: -    - organisaatiohierarkian luominen budjettisuunnittelulle ja käyttäjän suojauksen määrittäminen - budjettisuunnitelmien skenaarioiden, budjettisuunnitelmien sarakkeiden, asettelujen ja Excel-mallien määrittäminen   - budjettisuunnitteluprosessien luominen ja aktivoiminen   - budjettisuunnitelman asiakirjan luominen noutamalla toteutuneet tiedot kirjanpidosta   - kohdistusten käyttäminen budjettisuunnitelman asiakirjan tietojen oikaisussa   - budjettisuunnitelman asiakirjan tietojen muokkaaminen Excelissä."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -26,80 +26,80 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning"></a>Budjettisuunnittelu
 
-Tämän kurssin tavoitteena on antaa näkymän Ohjattu Microsoft Dynamics-365 budjettisuunnittelun alueen toimintoja päivitysten toiminnot. Tämä kurssi sisältää nopean konfiguraatioesimerkin budjettisuunnittelumoduulista ja esittelee, miten budjettisuunnittelu voidaan suorittaa tämän konfiguraation avulla.  Tällä kurssilla keskitytään erityisesti seuraavista liiketoimintaprosessien tai tehtävien--organisaation hierarkian luominen budjetin suunnittelussa ja käyttäjän suojauksen konfiguroinnissa - budjettisuunnitelman skenaariot, budjettisuunnitelman sarakkeet, asetteluja ja luominen ja aktivoiminen talousarvion suunnittelun prosessi - luodaan budjettisuunnitelman asiakirjan mukaan todelliset kirjanpidon sisäänpäin - avulla voit säätää suunnitelman asiakirjan budjettitiedot kohdistukset - muokkausta budjettisuunnitelman asiakirjan tietoja Excelissä Excel - mallien määrittäminen 
+Tämän kurssin tavoite on tarjota Microsoft Dynamics 365 for Operations -toimintojen päivitysten ohjattu näkymä Budjettisuunnittelu-alueella. Tämä kurssi sisältää nopean konfiguraatioesimerkin budjettisuunnittelumoduulista ja esittelee, miten budjettisuunnittelu voidaan suorittaa tämän konfiguraation avulla.  Tällä kurssilla keskitytään erityisesti seuraaviin liiketoimintaprosesseihin tai tehtäviin: -    - organisaatiohierarkian luominen budjettisuunnittelulle ja käyttäjän suojauksen määrittäminen - budjettisuunnitelmien skenaarioiden, budjettisuunnitelmien sarakkeiden, asettelujen ja Excel-mallien määrittäminen   - budjettisuunnitteluprosessien luominen ja aktivoiminen   - budjettisuunnitelman asiakirjan luominen noutamalla toteutuneet tiedot kirjanpidosta   - kohdistusten käyttäminen budjettisuunnitelman asiakirjan tietojen oikaisussa   - budjettisuunnitelman asiakirjan tietojen muokkaaminen Excelissä. 
 
 <a name="prerequisites"></a>Edellytykset 
 ------------------
 
-Varten tämä opetusohjelma sinun on käyttää Dynamics-365 Contoso esittely tietoja ympäristön toimintojen ja valmisteltava esiintymässä järjestelmänvalvojana. Älä käytä selaimen yksityinen-tilassa - kurssin tarvittaessa ulos muiden selaimessa tililtä ja kirjaudu sisään Dynamics 365 toimintoja järjestelmänvalvojan tunnistetietoja. Kirjautumalla järjestelmään Dynamics 365 toimintoja, kun olet **on** "Pysy kirjautuneena"-valintaruutu. Se luo Excel-sovellukseen pysyvän esteen, jota se parhaillaan tarvitsee. Jos kirjaudut Dynamics-365 toimintoihin kuin IE-selaimella, sitten sinua pyydetään kirjautumaan sisällä Excel-sovellus. Kun valitset "Kirjaudu sisään" Excel-sovelluksessa, Internet Explorer -ponnahdusikkuna avautuu ja kun kirjaudut sisään, sinun **TÄYTYY** merkitä valintaruutu "Pidä minut sisäänkirjautuneena". Jos mitään ei tapahdu, kun napsautat Excel-sovelluksen "Kirjaudu sisään" -painiketta, sitten sinun kannattaa tyhjentää Internet Explorerin väimuistin evästeet.
+Tätä opasta varten sinulla on oltava Dynamics 365 for Operations -ympäristö, jossa on Contoso esittelytiedot ja sinun on oltava instanssin järjestelmänvalvoja. Älä käytä henkilökohtaista selaimen tilaa tällä kurssilla, vaan kirjaudu ulos muista selaimen tileistä jos tarvittaessa ja kirjaudu sisään Dynamics 365 for Operationsiin järjestelmänvalvojan oikeuksilla. Kun kirjaudut sisään Dynamics 365 for Operations -ohjelmaan, sinun **TÄYTYY** merkitä valintaruutuun "Pidä minut kirjautuneena". Se luo Excel-sovellukseen pysyvän esteen, jota se parhaillaan tarvitsee. Jos kirjaudut sisään Dynamics 365 for Operations -ohjelmaan käyttäen jotain muuta selainta kuin Internet Exploreria, järjestelmä kehottaa sinua sisäänkirjautumaan Excel-sovelluksen kautta. Kun valitset "Kirjaudu sisään" Excel-sovelluksessa, Internet Explorer -ponnahdusikkuna avautuu ja kun kirjaudut sisään, sinun **TÄYTYY** merkitä valintaruutu "Pidä minut sisäänkirjautuneena". Jos mitään ei tapahdu, kun napsautat Excel-sovelluksen "Kirjaudu sisään" -painiketta, sitten sinun kannattaa tyhjentää Internet Explorerin väimuistin evästeet.
 
-## <a name="scenario-overview"></a>**Scenario overview**
+## <a name="scenario-overview"></a>**Tilanteen yleiskuvaus**
 Julia toimii talouspäällikkönä Contoso Entertainment Systemsissä Saksassa (DEMF). Kun FY2016 lähestyy, hänen on määritettävä yrityksen budjetti tulevalle vuodelle. Budjetin valmistelu näyttää seuraavanlaiselta:
 
 1.  Julia käyttää edellisvuoden toteutuneita summia budjetin luomisen lähtökohtana.
 2.  Perustuen edellisen vuoden toteutuneisiin summiin, hän luo 12 kuukauden arviot seuraavalle vuodelle
 3.  Julia tarkistaa budjettitapahtumat talousjohtajan kanssa. Kun se on tehty, hän tekee tarvittavat oikaisut budjettisuunnitelmaan ja viimeistelee budjetin valmistelun.
 
-Budjetin rakenteen kokoonpano skenaario näyttää seuraavalla tavalla:
+Budjetin suunnittelun kokoonpanomalli skenaariolle näyttää seuraavalta:
 
-![Screenshot1](./media/screenshot1-300x152.png)
+![Kuvakaappaus1](./media/screenshot1-300x152.png)
 
-Julia valmistelee talousarvion käyttää seuraavassa Excel-malli:
+Julia valmistelee budjetin käyttäen seuraavaa Excel-mallia:
 
 [![](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
 <a name="exercise-1-configuration"></a>Harjoitus 1: Määritys
 =========================
 
-## <a name="task-1-create-organizational-hierarchy"></a>**Vaihe 1: Luo organisaation hierarkian**
-Koska kaikki budjetointiprosessissa tapahtuu talousosastolla, Julian on luotava helppo organisaatiohierarkia, joka koostuu vain taloushallinto-osastosta. 1.1. Siirry organisaatiohierarkiat (organisaation hallinta &gt;organisaatioissa &gt;organisaatiohierarkiat) ja napsauta Uusi-painiketta
+## <a name="task-1-create-organizational-hierarchy"></a>**Tehtävä 1: Luo organisaatiohierarkia.**
+Koska kaikki budjetointiprosessissa tapahtuu talousosastolla, Julian on luotava helppo organisaatiohierarkia, joka koostuu vain taloushallinto-osastosta. 1.1. Siirry organisaatiohierarkioihin (Organisaation hallinto &gt; Organisaatiot &gt; Organisaatiohierarkiat) ja klikkaa "Uusi"-painiketta
 
-![Screenshot3](./media/screenshot3.png) 
+![Kuvakaappaus3](./media/screenshot3.png) 
 
-1.2. Organisaation hierarkian nimi ja valitse painike Määritä tarkoitus
+1.2. Kirjoita organisaatiohierarkian nimi ja klikkaa sitten painiketta "Aseta tarkoitus"
 
-[![Screenshot4](./media/screenshot4.png)](./media/screenshot4.png) 
+[![Kuvakaappaus4](./media/screenshot4.png)](./media/screenshot4.png) 
 
-1.3. Valitse budjetin tarkoituksen, napsauttamalla Lisää-painiketta ja juuri luotu Organisaatiohierarkian määrittäminen: 
+1.3. Valitse budjettisuunnittelun tarkoitus, klikkaa "Lisää"-painiketta ja määritä juuri luotu organisaatiohierarkia: 
 
-[![Screenshot5](./media/screenshot5.png)](./media/screenshot5.png)
+[![Kuvakaappaus5](./media/screenshot5.png)](./media/screenshot5.png)
 
 1.4. Toista edellä oleva vaihe "Organisaation tarkoituksen turvatoimille". Sulje lomake kun se on tehty.
 
-[![Screenshot6](./media/screenshot6.png)](./media/screenshot6.png)
+[![Kuvakaappaus6](./media/screenshot6.png)](./media/screenshot6.png)
 
 1.5. Organisaation hierarkiat -lomakkeessa klikkaa "Näytä"-painiketta. Valitse "Muokkaa" Hierarkian suunnittelussa ja luo hierarkia klikkaamalla "Lisää"-painiketta.
 
-[![Screenshot7](./media/screenshot7.png)](./media/screenshot7.png) 
+[![Kuvakaappaus7](./media/screenshot7.png)](./media/screenshot7.png) 
 
 1.6. Valitse "Talousosasto" budjetoinnin hierarkiaan. 
 
-[![Screenshot8](./media/screenshot8.png)](./media/screenshot8.png)
+[![Kuvakaappaus8](./media/screenshot8.png)](./media/screenshot8.png)
 
 1.7. Kun olet valmis, klikkaa painiketta "Julkaise" ja "Sulje". Valitse 1/1/2015 hierarkian julkaisemisen voimaantulopäiväksi.
 
-[![Screenshot9](./media/screenshot9.png)](./media/screenshot9.png)
+[![Kuvakaappaus9](./media/screenshot9.png)](./media/screenshot9.png)
 
 ## <a name="task-2-configure-user-security"></a>Vaihe 2: Käyttäjäryhmän suojauksen määrittäminen
-Budjettisuunnittelussa käytetään erityisiä suojauskäytäntöjä määrittämään pääsy budjettisuunnitelmien tietoihin. Julian on annettava käyttöoikeus taloushallinnon budjettisuunnitelmiin itselleen. 2.1. Siirry DEMF oikeushenkilöön yhteydessä: [![Screenshot10](./media/screenshot10.png)](./media/screenshot10.png) 2.2. Siirry budjetoinnin &gt;asennus &gt;budjettisuunnittelua &gt;budjettisuunnittelun konfiguraatio. Parametrit-välilehdessä arvo on suojaus malli perustuu organisaatioiden tietoturva- [![Screenshot11](./media/screenshot11.png)](./media/screenshot11.png) 2.3. Siirry järjestelmän hallinta &gt;käyttäjät &gt;käyttäjille. Anna käyttäjien hallinnalle (Julia Funderburk) budjetin hallitsijan rooli. [![Screenshot12](./media/screenshot12.png)](./media/screenshot12.png) 2.4. Käyttäjäroolin Poimi ja valitse Määritä organisaatiot [![Screenshot13](./media/screenshot13.png)](./media/screenshot13.png)2.5. Valitse "Myönnä käyttöoikeudet yksittäisille organisaatioille". Valitse ensimmäisessä vaiheessa luotu "Organisaatiohierarkia". Poimi viivästyskululaskun solmu ja valitse avustuksen lasten painikkeella ***tärkeää!*** *– Varmista, että että olet DEMF oikeushenkilöön yhteydessä suoritettaessa tämän tehtävän suojauksen sovellettuna oikeushenkilöittäin*[![Screenshot14](./media/screenshot14.png)](./media/screenshot14.png)
+Budjettisuunnittelussa käytetään erityisiä suojauskäytäntöjä määrittämään pääsy budjettisuunnitelmien tietoihin. Julian on annettava käyttöoikeus taloushallinnon budjettisuunnitelmiin itselleen. 2.1. Siirry DEMF-yrityksen yhteyteen: [![Kuvakaappaus10](./media/screenshot10.png)](./media/screenshot10.png) 2.2. Mene: Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnittelun konfiguraatio. Parametrit-välilehdessä, aseta suojausmallin arvo organisaatioiden suojaukseen perustuen [![Kuvakaappaus11](./media/screenshot11.png)](./media/screenshot11.png) 2.3. Siirry: Järjestelmänvalvojat &gt; Käyttäjät &gt; Käyttäjät. Anna käyttäjien hallinnalle (Julia Funderburk) budjetin hallitsijan rooli. [![Kuvakaappaus12](./media/screenshot12.png)](./media/screenshot12.png) 2.4. Valitse käyttäjärooli ja klikkaa "Määritä organisaatiot" [![Kuvakaappaus13](./media/screenshot13.png)](./media/screenshot13.png)2.5. Valitse "Myönnä käyttöoikeudet yksittäisille organisaatioille". Valitse ensimmäisessä vaiheessa luotu "Organisaatiohierarkia". Valitse "Myyntitiedot"-solmu ja klikkaa "Myönnä" alatason painikkeella ***Tärkeää!*** *– Tarkista, että olet DEMF yrityksen yhteydessä, kun suoritat tätä tehtävää, sillä organisaatioiden suojaus sovelletaan yrityksittäin* [![Kuvakaappaus14](./media/screenshot14.png)](./media/screenshot14.png)
 
 ## <a name="task-3-create-scenarios"></a>Tehtävä 3: Luo skenaarioita
-3.1. Siirry budjetoinnin&gt;asennus &gt;budjettisuunnittelua &gt;budjettisuunnittelun konfiguraatio. "Skenaariot"-sivulla, pane merkille ne skenaariot, joita käytämme myöhemmin tällä kurssilla: edellisen vuoden todeutuneet ja budjetoidut. *Huomautus: Voit luoda tarvittaessa uusia tilanteita tähän harjoitukseen ja käyttää niitä näiden sijaan.* [![Screenshot15](./media/screenshot15.png)](./media/screenshot15.png)*Huomautus: Julia ei käytä muodollista hyväksymisprosessin budjetin valmistelua varten, emme ohittaa vaiheita työnkulut ja työnkulun vaiheita tällä asetukset ja käyttää olemassa olevat asetukset automaattinen – Hyväksy työnkulkua. Katso liite tämän työnkulkumääritystä varten.*
+3.1. Mene: Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnittelun konfiguraatio. "Skenaariot"-sivulla, pane merkille ne skenaariot, joita käytämme myöhemmin tällä kurssilla: edellisen vuoden todeutuneet ja budjetoidut. *Huomautus: Voit luoda tarvittaessa uusia tilanteita tähän harjoitukseen ja käyttää niitä näiden sijaan.* [![Kuvakaappaus15](./media/screenshot15.png)](./media/screenshot15.png) *Huomautus: Koska Julia ei käytä virallista hyväksymisprosessia budjetin valmisteluun, ohitamme työnkulun, vaiheiden ja työnkulun vaiheiden asetukset tällä kurssilla ja käytämme aiemmin määritettyjä asetuksia "Automaattinen – hyväksy työnkulku". Katso liitteestä tämän työnkulun konfiguraatio.*
 
 ## <a name="task-4-create-budget-plan-columns"></a>Tehtävä 4: Luo budjettisuunnitelmalle sarakkeet
-Budjettisuunnitelman sarakkeet ovat joko rahaan tai määrään perustuvia sarakkeita, joita voidaan käyttää budjettisuunnitelman asiakirjan asetteluun. Esimerkissämme meidän on luotava sarake edellisen vuoden todellisille arvoille ja 12 saraketta, jotka edustavat budjetoidun vuoden kutakin kuukautta. Sarakkeita voidaan luoda joko klikkaamalla "Lisää"-painiketta ja kirjoittamalla arvot, tai tietoyksikön avulla. Tällä kurssilla käytämme tietoyksikköä syöttämään arvot. 4.1. Budjetoinnissa&gt;asennus &gt;budjettisuunnittelua &gt;budjetin suunnittelu Avaa sarakkeita määrityssivulla. Napsauta Office-painiketta lomakkeen oikeaan yläkulmaan ja valitse sarakkeet (suodattamattoman) [![Screenshot16](./media/screenshot16.png)](./media/screenshot16.png) 4.2. Järjestelmä avaa Excel-työkirjan, jota käytetään arvojen kirjoittamiseen. Pyydettäessä, valitse Ota muokkaus käyttöön ja luota tämän sovelluksen [![Screenshot18](./media/screenshot18.png)](./media/screenshot18.png)[![Screenshot17](./media/screenshot17.png)](./media/screenshot17.png) 4.3. Tarvitsemme enemmän sarakkeiden arvojen täyttäminen. Napsauta rakenne-oikeanpuoleisessa ruudussa voit lisätä ruudukon sarakkeet: [![Screenshot19](./media/screenshot19.png)](./media/screenshot19.png) 4.4. Valitsemalla vähän kynä vieressä, jos haluat nähdä käytettävissä olevat sarakkeet voit lisätä ruudukon PlanColumns [![Screenshot20](./media/screenshot20.png)](./media/screenshot20.png) 4.5. Kaksoisnapsauta käytettävissä olevat kenttien lisääminen valitut kentät ja valitse Päivitä- [![Screenshot21](./media/screenshot21.png)](./media/screenshot21.png) 4.6. Lisää kaikki sarakkeet, jotka on luotava, Excel-taulukkoon. Lisää rivejä nopeasti Excelin automaattisnen täyttö -toiminnon avulla. Varmista, että rivit lisätään taulukon osana (Pystysuora käärö käytettäessä voidaan nähdä seuraavia ruudukon sarakkeiden otsikoita) [![Screenshot22](./media/screenshot22.png)](./media/screenshot22.png) 4.7. Palaa Dynamics 365 operaatioille ja Päivitä sivu. Julkaistu arvot näkyvät Dynamics 365 operaatioille. [![Screenshot23](./media/screenshot23.png)](./media/screenshot23.png)
+Budjettisuunnitelman sarakkeet ovat joko rahaan tai määrään perustuvia sarakkeita, joita voidaan käyttää budjettisuunnitelman asiakirjan asetteluun. Esimerkissämme meidän on luotava sarake edellisen vuoden todellisille arvoille ja 12 saraketta, jotka edustavat budjetoidun vuoden kutakin kuukautta. Sarakkeita voidaan luoda joko klikkaamalla "Lisää"-painiketta ja kirjoittamalla arvot, tai tietoyksikön avulla. Tällä kurssilla käytämme tietoyksikköä syöttämään arvot. 4.1. Avaa "Sarakkeet"-sivu kohdassa Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnittelun konfiguraatio. Napsauta lomakkeen oikeassa yläkulmassa olevaa "Office"-painiketta ja valitse "Sarakkeet" (suodattamaton) [![Kuvakaappaus16](./media/screenshot16.png)](./media/screenshot16.png) 4.2. Järjestelmä avaa Excel-työkirjan, jota käytetään arvojen kirjoittamiseen. Pyydettäessä, klikkaa "Salli muokkaus" ja "Luota tähän sovellukseen" [![Screenshot18](./media/screenshot18.png)](./media/screenshot18.png) [![Screenshot17](./media/screenshot17.png)](./media/screenshot17.png) 4.3. Tarvitsemme enemmän sarakkeita arvojen täyttämiseen. Napsauta Rakenne oikeanpuoleisessa ruudussa lisätäksesi ruudukkoon sarakkeet: [![Screenshot19](./media/screenshot19.png)](./media/screenshot19.png) 4.4. Klikkaa pientä kynän kuvaa "Suunnittele sarakkeita"-painikkeen vieressä, jotta voit tarkastella käytettävissä olevia sarakkeita, lisätäksesi niitä ruudukkoon [![Kuvakaappaus20](./media/screenshot20.png)](./media/screenshot20.png) 4.5. Kaksoisklikkaa jokaista käytettävissä olevaa kenttää lisätäksesi ne valittuihin kenttiin ja klikkaa "Päivitä" [![Kuvakaappaus21](./media/screenshot21.png)](./media/screenshot21.png) 4.6. Lisää kaikki sarakkeet, jotka on luotava, Excel-taulukkoon. Lisää rivejä nopeasti Excelin automaattisnen täyttö -toiminnon avulla. Varmista, että rivit on lisätty taulun osana (käytettäessä pystyvierityspalkkia, sarakeotsikot pitäisi näkyä ruudukon yläosassa) [![Kuvakaappaus22](./media/screenshot22.png)](./media/screenshot22.png) 4.7. Palaa Dynamics 365 for Operationsiin ja päivitä sivu. Julkaistut arvot näkyvät Dynamics 365 for Operationsissa. [![Kuvakaappaus23](./media/screenshot23.png)](./media/screenshot23.png)
 
 ## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Tehtävä 5: Luo budjettisuunnitelma asiakirjan suunnitelmat ja mallit
-Asettelu määrittää, miltä budjettisuunnitelman asiakirjan rivien ruudukko näyttää, kun käyttäjä avaa budjettisuunnitelma-asiakirjan. On myös mahdollista siirtää budjettisuunnitelman asiakirjan tekstin asettelu niin, että voidaan katsoa samoja tietoja eri suunnalta. Nyt kun hän on määrittänyt sarakkeet, joita käytetään budjettisuunnittelu asiakirjassa, Julian on luotava budjettisuunnitelma asiakirjan asettelu, joka näyttää samanlaiselta kuin Excel-taulukko, jota hän käyttää budjettitietojen luomiseen (Katso "Skenaarion yhteenveto" -osa tässä kurssissa) 5.1. Budjetoinnissa&gt;asennus &gt;budjettisuunnittelua &gt;budjetin suunnittelu Avaa asettelut määrityssivulla. Luo uusi asettelu kuukausittaiselle budjettitapahtumalle:
+Asettelu määrittää, miltä budjettisuunnitelman asiakirjan rivien ruudukko näyttää, kun käyttäjä avaa budjettisuunnitelma-asiakirjan. On myös mahdollista siirtää budjettisuunnitelman asiakirjan tekstin asettelu niin, että voidaan katsoa samoja tietoja eri suunnalta. Nyt kun hän on määrittänyt sarakkeet, joita käytetään budjettisuunnittelu asiakirjassa, Julian on luotava budjettisuunnitelma asiakirjan asettelu, joka näyttää samanlaiselta kuin Excel-taulukko, jota hän käyttää budjettitietojen luomiseen (Katso "Skenaarion yhteenveto" -osa tässä kurssissa) 5.1. Avaa "Asettelut"-sivu kohdassa Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnittelun konfiguraatio. Luo uusi asettelu kuukausittaiselle budjettitapahtumalle:
 
 -   Valitse MA+BU dimensioyhdistelmä sisällyttämään päätilit ja liiketoimintayksiköt asettelussa.
 -   Listaa kaikki budjettisuunnitelman sarakkeet, jotka luotiin edellisessä vaiheessa "Elementit"-osiossa. Tee kaikista paitsi edellisen vuoden todellisista arvoista muokattavia.
 -   Klikkaa "Kuvaukset"-painiketta valitaksesi minkä taloushallinnon dimensioiden tulisi näkyä "Kuvaukset"-ruudukossa.
 
-[![Screenshot24](./media/screenshot24.png)](./media/screenshot24.png) suunnitella talousarvion pohjalta voimme luoda vaihtoehtoinen tapa muokata budjettitietoja käytetään Excel-mallin asettelun määritykset. Koska Excel-mallin tulee vastata budjettisuunnitelman asettelun määrityksiä, et voi muokata budjettisuunnitelman asettelua sen jälkeen kun Excel-malli on luotu, joten tämä tehtävä tulisi tehdä sen jälkeen, kun kaikki asettelun osatekijät on määritetty. 5.2. 5.1 luoda asettelun. Vaihe, napsauta painiketta malli &gt;Luo. Vahvista varoitussanoma. Jos haluat nähdä mallin, valitse malli &gt;Näytä. *Huomautus: Varmista, että Valitse "Tallenna nimellä" ja valitse sijainti, johon malli tallennetaan muokata sitä. Jos käyttäjä valitsee "Avaa-valintaikkunan tallentamatta,-tiedostoon tehdyt muutokset eivät säily, kun tiedosto suljetaan.* [![Screenshot25](./media/screenshot25.png)](./media/screenshot25.png) 5.3. &lt;Valinnainen vaihe&gt; muokata Excel-malli, jotta se näyttäisi enemmän käyttäjä friendly – Lisää yhteensä kaavat, muotoilut jne otsikkokentät. Tallenna muutokset ja lataa tiedosto budjetti suunnitelma asettelua valitsemalla asettelu &gt;ladata [![Screenshot26](./media/screenshot26.png)](./media/screenshot26.png)
+[![Kuvakaappaus24](./media/screenshot24.png)](./media/screenshot24.png) Perustuen budjettisuunnitelman asettelun määritykseen, voimme luoda Excel-mallin, jota käytetään vaihtoehtoisena tapana muokata budjettitietoja. Koska Excel-mallin tulee vastata budjettisuunnitelman asettelun määrityksiä, et voi muokata budjettisuunnitelman asettelua sen jälkeen kun Excel-malli on luotu, joten tämä tehtävä tulisi tehdä sen jälkeen, kun kaikki asettelun osatekijät on määritetty. 5.2. Kohdassa 5.1. luodulle asettelulle, napsauta painiketta Malli &gt; Luo. Vahvista varoitussanoma. Napsauta Malli &gt; Näytä, jos haluat tarkastella mallia. *Huomautus: Varmista, että valitset "Tallenna nimellä" -painikkeen ja valitset sijainnin, johon malli tallennetaan muokkausta varten. Jos käyttäjä valitsee valintaikkunassa Avaa tallentamatta,tiedostoon tehdyt muutokset eivät säily, kun tiedosto suljetaan.* [![Kuvakaappaus25](./media/screenshot25.png)](./media/screenshot25.png) 5.3. &lt; Vaihtoehtoinen työvaihe &gt; Muokkaa Excel-mallia, jotta se näyttää enemmän käyttäjäystävälliseltä: Lisää summa-kaavoja, otsikkokenttiä, muotoiluja jne. Tallenna muutokset ja lataa tiedosto budjettisuunnitelman asetteluun valitsemalla Asettelu &gt; Lataa [![Kuvakaappaus26](./media/screenshot26.png)](./media/screenshot26.png)
 
 ## <a name="task-6-create-a-budget-planning-process"></a>Tehtävä 6: Luo budjettisuunnitteluprosessi
-Julian on luotava ja aktivoitava uusi budjettisuunnitteluprosessi, joka yhdistää kaikki edellä olevat asetukset, alkaakseen kirjoittamaan budjettisuunnitelmia. Budjetin suunnitteluprosessi määrittää, mitä budjetointiorganisaatioita, työnkulkuja, asetteluja ja malleja käytetään budjettisuunnitelmien luomiseen. 6.1. Siirry budjetoinnin &gt;asennus &gt;budjettisuunnittelua &gt;budjetin suunnitteluprosessin ja luo uusi tietue.
+Julian on luotava ja aktivoitava uusi budjettisuunnitteluprosessi, joka yhdistää kaikki edellä olevat asetukset, alkaakseen kirjoittamaan budjettisuunnitelmia. Budjetin suunnitteluprosessi määrittää, mitä budjetointiorganisaatioita, työnkulkuja, asetteluja ja malleja käytetään budjettisuunnitelmien luomiseen. 6.1. Siirry: Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnitteluprosessi ja luo uusi tietue.
 
 -   Budjettisuunnitteluprosessi – DEMF budjetointi FY2016
 -   Budjettijakso – FY2016
@@ -109,59 +109,59 @@ Julian on luotava ja aktivoitava uusi budjettisuunnitteluprosessi, joka yhdistä
 -   Budjettisuunnittelun työnkulku – Määritä automaattisesti – Hyväksy työnkulku talousosastoa varten
 -   Budjettisuunnitteluvaiheen säännöissä ja malleissa, kullekin työnkulun budjettisuunnitteluvaiheelle, valitse onko "Lisää rivejä" ja "Muokkaa rivejä" sallittua ja mitä asettelua tulee käyttää oletuksena
 
-*Huomautus: Voit luoda lisää asiakirja-asetteluja ja määrittää ne käytettävissä olevaan budjettisuunnittelun työnkulun vaiheeseen klikkaamalla "Muut asettelut" -painiketta.* [![Screenshot27](./media/screenshot27.png)](./media/screenshot27.png) 6.2. Valitse Toiminnot &gt;budjettisuunnittelun työnkulun aktivointi Aktivoi [![Screenshot28](./media/screenshot28.png)](./media/screenshot28.png)
+*Huomautus: Voit luoda lisää asiakirja-asetteluja ja määrittää ne käytettävissä olevaan budjettisuunnittelun työnkulun vaiheeseen klikkaamalla "Muut asettelut" -painiketta.* [![Kuvakaappaus27](./media/screenshot27.png)](./media/screenshot27.png) 6.2. Valitse Toiminnot &gt; Aktivoi aktivoidaksesi budjettisuunnittelun työnkulun [![Kuvakaappaus28](./media/screenshot28.png)](./media/screenshot28.png)
 
 <a name="exercise-2-process-simulation"></a>Harjoitus 2: Prosessin simulointi
 ==============================
 
 ## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Tehtävä 7: Luo budjettisuunnitelmalle alkuperäiset tiedot kirjanpitotilistä
-7.1. Siirry budjetoinnin &gt;Kausittainen &gt;Luo budjettisuunnitelma kirjanpidosta. Täytä kausittaisen prosessin parametrit ja klikkaa Lu-painiketta. [![Screenshot29](./media/screenshot29.png)](./media/screenshot29.png) 7.2. Siirry budjetoinnin &gt;budjetin aikoo löytää luo prosessin luomat budjettisuunnitelman. [![Screenshot30](./media/screenshot30.png)](./media/screenshot30.png) 7.3. Avaa asiakirjan tiedot klikkaamalla "Asiakirjan numero" -hyperlinkkiä. Budjettisuunnitelman näytetään kurssin aikana luotu asettelu määritelty [![Screenshot31](./media/screenshot31.png)](./media/screenshot31.png)
+7.1. Siirry: Budjetointi &gt; Kausittainen &gt; Luo budjettisuunnitelma kirjanpidosta. Täytä kausittaisen prosessin parametrit ja klikkaa Lu-painiketta. [![Kuvakaappaus29](./media/screenshot29.png)](./media/screenshot29.png) 7.2. Siirry: Budjetointi &gt; Budjettisuunnitelmat löytääksesi sen budjettisuunnitelman, joka luotiin Luo-prosessissa. [![Kuvakaappaus30](./media/screenshot30.png)](./media/screenshot30.png) 7.3. Avaa asiakirjan tiedot klikkaamalla "Asiakirjan numero" -hyperlinkkiä. Budjettisuunnitelma näkyy määritettynä asettelussa, joka luotiin kurssin aikana [![Kuvakaappaus31](./media/screenshot31.png)](./media/screenshot31.png)
 
 ## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Vaihe 8: Luo kuluvan vuoden budjetti perustuen edellisen vuoden ilmoitettaviin todellisiin arvoihin
-Kohdistusmenetelmiä voidaan käyttää budjettisuunnitelmassa kopioimaan tietoja helposti budjettisuunnitelmia varten yhdestä skeenariosta toiseen / levittäen ne eri aikakausille / liitettäen dimensioihin. Käytämme kohdistuksia luomaan kuluvan vuoden budjetin edellisen vuoden ilmoitettavista todellisista arvoista. 8.1. Poiminta kaikille riveille budjettisuunnitelman Asiakirjaruudukko ja valitse Kohdista budjetti [![Screenshot32](./media/screenshot32.png)](./media/screenshot32.png) 8.2. Valitse kohdistusmenetelmä, Kausiavain, lähde- ja kohdeosoitteen skenaarioita ja Kohdista 
+Kohdistusmenetelmiä voidaan käyttää budjettisuunnitelmassa kopioimaan tietoja helposti budjettisuunnitelmia varten yhdestä skeenariosta toiseen / levittäen ne eri aikakausille / liitettäen dimensioihin. Käytämme kohdistuksia luomaan kuluvan vuoden budjetin edellisen vuoden ilmoitettavista todellisista arvoista. 8.1. Valitse kaikki rivit budjettisuunnitelman asiakirjan ruudukossa ja klikkaa painiketta kohdistaaksesi budjetin [![Kuvakaappaus32](./media/screenshot32.png)](./media/screenshot32.png) 8.2. Valitse kohdistusmenetelmä, kausiavain sekä lähde- ja kohdeskenaariot ja klikkaa Kohdista 
 
-[![Screenshot33](./media/screenshot33.png)](./media/screenshot33.png)
+[![Kuvakaappaus3](./media/screenshot33.png)](./media/screenshot33.png)
 
-Edellisen vuoden todellisten summien kopioidaan kuluvan vuoden talousarvioon ja Kohdista niiden myynti käyrä Kausiavaimen avulla kausille. 
+Edellisen vuoden todelliset summat kopioidaan kuluvan vuoden budjettiin ja kohdistetaan ne myyntikäyrän kausiavaimen avulla eri kausille. 
 
-[![Screenshot34](./media/screenshot34.png)](./media/screenshot34.png)
+[![Kuvakaappaus34](./media/screenshot34.png)](./media/screenshot34.png)
 
 ## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Tehtävä 9: Oikaise budjettisuunnitelmaasiakirja käyttämällä Exceliä ja viimeistele asiakirja
-9.1. Napsauta painiketta laskentataulukon Excel avaa tiedoston sisältö
+9.1. Napsauta painiketta avataksesi laskentataulukon sisällön Excelissä
 
-[![Screenshot35](./media/screenshot35.png)](./media/screenshot35.png)
+[![Kuvakaappaus3](./media/screenshot35.png)](./media/screenshot35.png)
 
 9.2. Kun Excel-työkirja avautuu, muokkaa budjettisuunnitelmaasiakirjan määriä ja klikkaa "Julkaise".
 
-[![Screenshot36](./media/screenshot36.png)](./media/screenshot36.png)
+[![Kuvakaappaus36](./media/screenshot36.png)](./media/screenshot36.png)
 
-9.3. Palaa-operaatioille 365 Dynamics budjettisuunnitelman asiakirjan. Valitse työnkulun &gt;asiakirjan lähettäminen automaattisesti
+9.3. Palaa budjettisuunnitteluasiakirjaan Dynamics 365 for Operationsissa. Valitse Työnkulun &gt; Lähetä hyväksyäksesi asiakirjan automaattisesti
 
-[![Screenshot37](./media/screenshot37.png)](./media/screenshot37.png) 
+[![Kuvakaappaus37](./media/screenshot37.png)](./media/screenshot37.png) 
 
-Kun työnkulku on valmis, asiakirja budjettisuunnitelman vaihe muuttuu hyväksytty. [![Screenshot38](./media/screenshot38.png)](./media/screenshot38.png)
+Kun työnkulku on valmis, budjettisuunnitelman asiakirjavaihe muuttuu tilaan Hyväksytty. [![Kuvakaappaus38](./media/screenshot38.png)](./media/screenshot38.png)
 
 <a name="appendix"></a>Liite
 ========
 
 ### <a name="auto-approve-workflow-configuration"></a>Hyväksy automaattisesti työnkulun konfigurointi
 
-A. Budjetointi &gt;asennus &gt;budjettisuunnittelua &gt;budjetointityönkulut Luo uusi työnkulku käyttämällä mallin budjettisuunnittelun työnkulut:
+A. Budjetointi &gt; Asetukset &gt; Budjetin suunnittelu &gt; Budjetoinnin työnkulut Luo uusi työnkulku käyttäen budjetin suunnittelun työnkulun mallia:
 
-[![Screenshot39](./media/screenshot39.png)](./media/screenshot39.png)
+[![Kuvakaappaus39](./media/screenshot39.png)](./media/screenshot39.png)
 
-Tämä työnkulku sisältää vain yksi tehtävä: vaihe siirtymä budjettisuunnitelma 
+Tämä työnkulku sisältää vain yhden tehtävän: Budjettisuunnitelman vaiheen siirtymä 
 
-[![Screenshot40](./media/screenshot40.png)](./media/screenshot40.png) 
+[![Kuvakaappaus40](./media/screenshot40.png)](./media/screenshot40.png) 
 
-Tallenna ja Aktivoi työnkulku. 
+Tallenna ja aktivoi työnkulku. 
 
-B. Siirry budjetoinnin &gt;asennus &gt;budjettisuunnittelua &gt;budjettisuunnittelun konfiguraatio. Luoda vaiheita 2 – alku- ja lähetetty vaiheet-välilehti 
+B. Mene: Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnittelun konfiguraatio. Luo Vaiheet-välilehdessä kaksi vaihetta: Aloitus ja Lähetetty 
 
-[![Screenshot41](./media/screenshot41.png)](./media/screenshot41.png)
+[![Kuvakaappaus41](./media/screenshot41.png)](./media/screenshot41.png)
 
-C. Siirry budjetoinnin &gt;asennus &gt;budjettisuunnittelua &gt;budjettisuunnittelun konfiguraatio. Työnkulun vaiheet-välilehdessä Liitä työnkulku automaattisesti – Hyväksy luotiin vaiheessa vaihetta alku ja lähetetty 
+C. Mene: Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnittelun konfiguraatio. Työnkulun vaiheet -välilehdessä, liitä työnkulun automaattinen hyväksyntä, joka luotiin A-vaiheessa, vaiheisiin Alkuperäinen ja Lähetetty 
 
-[![Screenshot42](./media/screenshot42.png)](./media/screenshot42.png)  
+[![Kuvakaappaus42](./media/screenshot42.png)](./media/screenshot42.png)  
 
 

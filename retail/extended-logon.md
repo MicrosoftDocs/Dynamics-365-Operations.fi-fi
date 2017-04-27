@@ -1,5 +1,5 @@
 ---
-title: "Laajennettu sisäänkirjautuminen-toiminnon määrittäminen Cloud POS- ja MPOS"
+title: "Jatketun sisäänkirjautumisen määrittäminen pilvimyyntipisteelle ja myyntipisteelle"
 description: "Tässä wikissä käsitellään Cloud POS:n ja Retail Modern POS:n (MPOS) laajennetun kirjautumisen määrittämistä."
 author: josaw1
 manager: AnnBe
@@ -25,14 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Laajennettu sisäänkirjautuminen-toiminnon määrittäminen Cloud POS- ja MPOS
+# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Jatketun sisäänkirjautumisen määrittäminen pilvimyyntipisteelle ja myyntipisteelle
 
 Tässä wikissä käsitellään Cloud POS:n ja Retail Modern POS:n (MPOS) laajennetun kirjautumisen määrittämistä.
 
 <a name="setting-up-extended-logon"></a>Jatketun sisäänkirjautumisen määrittäminen
 =========================
 
-Löydät viivakoodin asetusten **jälleenmyynti- ja commerce**&gt;**kanava-asetukset**&gt;**POS-asetukset**&gt;**POS-profiilit**&gt;**Toimintoprofiilit**. **Toiminnot**-pikavälilehti sisältää seuraavat jatkettuun sisäänkirjautumiseen liittyvät asetukset.
+Löydät viivakoodimuotojen asetukset kohdassa **Vähittäismyynti ja kauppa** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipisteen profiilit** &gt; **Toimintoprofiilit**. **Toiminnot**-pikavälilehti sisältää seuraavat jatkettuun sisäänkirjautumiseen liittyvät asetukset.
 
 ### <a name="staff-bar-code-logon"></a>Henkilökunnan viivakoodisisäänkirjautuminen
 
@@ -53,7 +53,7 @@ Kun **Henkilökunnan korttisisäänkirjautumisessa tarvitaan salasana** -asetus 
 <a name="assigning-an-extended-logon"></a>Jatketun sisäänkirjautumisen määrittäminen
 ===========================
 
-Oletuksena vain päälliköt voivat määrittää työntekijöille jatketun sisäänkirjautumisen. Määritä laajennettu sisäänkirjautuminen, siirry **laajennetun kirjautuminen** POS. Sitten työntekijä tai hänen operaattorin tunnus kirjoittamalla hakukenttään Etsi. Valitse työntekijä ja napsauta sitten **Määritä**. Lue tai skannaa työntekijälle määritettävä jatkettu sisäänkirjautuminen seuraavalla sivulla. Jos kortin luku tai skannaus luettiin onnistuneesti, **OK **-painike tulee näkyviin. Napsauta **OK** tallentaaksesi jatkettu sisäänkirjautuminen kyseiselle työntekijälle.
+Oletuksena vain päälliköt voivat määrittää työntekijöille jatketun sisäänkirjautumisen. Määritä laajennettu sisäänkirjautuminen, siirtymällä myyntipisteessä kohtaan **Jatkettu kirjautuminen**. Etsi sitten työntekijä syöttämällä hänen operaattorintunnus hakukenttään. Valitse työntekijä ja napsauta sitten **Määritä**. Lue tai skannaa työntekijälle määritettävä jatkettu sisäänkirjautuminen seuraavalla sivulla. Jos kortin luku tai skannaus luettiin onnistuneesti, **OK **-painike tulee näkyviin. Napsauta **OK** tallentaaksesi jatkettu sisäänkirjautuminen kyseiselle työntekijälle.
 
 <a name="deleting-an-extended-logon"></a>Jatketun sisäänkirjautumisen poistaminen
 ==========================

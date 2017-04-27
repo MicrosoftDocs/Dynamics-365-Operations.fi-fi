@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-groups"></a>Kustannusryhmät
 
+[!include[banner](../includes/banner.md)]
+
+
 Kustannusryhmät muodostavat pohjan valmistetun nimikkeen laskettujen kustannusten kustannusosuuksien, kuten materiaali- ja työkustannusten osuuksien sekä yleiskustannusten osuuden, segmentoinnille ja analysoinnille. Kustannusryhmän segmentoinnilla on valmistusympäristöissä useita synonyymejä, kuten kustannuserittely, kustannusten hajottaminen ja kustannusluokittelu. 
 
 Kustannusryhmän segmentoinnilla on valmistusympäristöissä useita synonyymejä, kuten kustannuserittely, kustannusten hajottaminen ja kustannusluokittelu. Kustannusryhmien segmentoinnista on monenlaista hyötyä. Seuraavassa on muutamia esimerkkejä:
@@ -48,6 +51,8 @@ Kustannusryhmälle voi määrittää kustannusryhmän tyypin sekä käyttäytymi
 
 -   **Kustannusryhmän tyyppi** − Kullekin kustannusryhmälle täytyy määrittää kustannusryhmätyyppi, joka osoittaa, että se koskee suoraa materiaalia, suoraa valmistusta tai suoraa ulkoistusta, tai se täytyy määrittää epäsuoraksi tai määrittämättömäksi. Suoraksi materiaaliksi määritetyn kustannusryhmän voi liittää nimikkeisiin. Suoran tuotannon kustannusryhmän voi liittää kustannusluokkiin. Suoran ulkoistuksen kustannusryhmän voi määrittää palvelun tuotetyypille niin, että voit luokitella palvelun ostamiseen liittyvät kulut alihankinnaksi. Välillisten kustannusten ryhmän voi määrittää lisämaksujen tai osuuksien välillisille kustannuksille. Määrittelemättömäksi osoitetun kustannusryhmän voi määrittää nimikkeille, kustannusluokille tai välillisille kustannuksille. Kustannusryhmätyypin määrittäminen palvelee useita tarkoituksia. Se rajoittaa ensinnäkin kustannusryhmän määrittämistä ja sovellettavien kustannusryhmien luettelon tarkastelemista. Toinen sisältää lisäsegmentointia raportointia varten. Kolmanneksi sitä voidaan käyttää kirjanpitotilien määrittämiseksi variansseille.
 -   **Toiminta** − Kullekin kustannusryhmälle voi tarvittaessa määrittää toiminnan. Se määrittää, että kustannusryhmä koskee kiinteitä tai muuttuvia kustannuksia. Kustannusryhmää, jolla ei ole käyttäytymisarvoa, käsitellään muuttuvana kustannuksena. Toiminnan määritystä käytetään vain raportoinnissa. Kustannukset voidaan esittää esimerkiksi kustannuslaskentalomakkeella segmentoituina kiinteiksi ja muuttuviksi kustannuksiksi sekä **Kustannusten koonti kustannusryhmien mukaan** -sivulla. Jos määrität kullekin kustannusryhmälle tuottovaatimusprosentin, tuoterakennelaskenta tarjoaa ehdotetun myyntihinnan hinta+hinnankorotus-mallin perusteella.
+
+
 
 
 

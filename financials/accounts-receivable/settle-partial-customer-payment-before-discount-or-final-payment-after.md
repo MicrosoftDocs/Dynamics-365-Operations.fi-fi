@@ -1,5 +1,5 @@
 ---
-title: "Osittainen asiakkaan maksu ennen alennuksen päivämäärää ja lopullisen maksun alennuksen päivämäärän jälkeen selvitetään"
+title: "Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun lopullinen maksu suoritetaan alennuspäivämäärän jälkeen"
 description: "Tässä artikkelissa käsitellään maksujen laskuille tilittämisen vaikutusta asiakkaille. Skenaariossa keskitytään vaikutuksiin alareskontrassa (ei kirjanpidossa)."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Osittainen asiakkaan maksu ennen alennuksen päivämäärää ja lopullisen maksun alennuksen päivämäärän jälkeen selvitetään
+# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun lopullinen maksu suoritetaan alennuspäivämäärän jälkeen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa käsitellään maksujen laskuille tilittämisen vaikutusta asiakkaille. Skenaariossa keskitytään vaikutuksiin alareskontrassa (ei kirjanpidossa).
 
-Fabrikam myy tavaroita asiakkaan 4027. Fabrikam tarjoaa 1 prosentin käteisalennus, jos lasku maksetaan 14 päivän kuluessa. Laskut on maksettava 30 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Selvityksen parametrit sijaitsevat **Myyntireskontran parametrit** sivulla.
+Fabrikam myy tavaroita asiakkaalle 4027. Fabrikam tarjoaa 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Laskut on maksettava 30 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Tilityksen parametrit sijaitsevat **Myyntireskontran parametrit** -sivulla.
 
 ## <a name="invoice"></a>Lasku
-25. kesäkuuta-Erik syöttää ja kirjaa lasku asiakkaalle 4027 1 000,00. Erik avulla voit tarkastella tämän laskun **tapahtumien** -painiketta **asiakkaiden** sivulla.
+Erik syöttää ja kirjaa 25. kesäkuuta laskun asiakkaalle 4027, jonka arvo on 1000,00. Erik voi tarkastella tätä laskua käyttämällä **Tapahtumat**-painiketta, joka on **Asiakkaat**-sivulla.
 
 | Tosite   | Tapahtumatyyppi | Päivämäärä      | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo  | Valuutta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -46,7 +49,7 @@ Asiakas 4027 maksaa 2. heinäkuuta laskusta osamaksuerän, jonka suuruus on 297,
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
 | Valittu | Normaali            | FTI-10020 | 4027    | 25.6.2015 | 25.7.2015 | 10020   | 1 000,00                             | USD      | 297,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa. Ellet muuta **Täsmäytettävä summa** -arvoksi 297,00, näkyviin tulevat **Käteisalennussumma**-arvot vaihtelevat. Kuitenkin 3.00, katsotaan käteisalennus kun maksu on kirjattu, koska tilitys säätää automaattisesti ** Täsmäytettävä summa ** sinun arvo.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa. Ellet muuta **Täsmäytettävä summa** -arvoksi 297,00, näkyviin tulevat **Käteisalennussumma**-arvot vaihtelevat. Käteisalennuksena käytetään kuitenkin arvoa 3,00 maksun kirjaamisen yhteydessä, koska tilitys muuttaa **Täsmäytettävä summa** -arvon automaattisesti.
 
 |                              |           |
 |------------------------------|-----------|
@@ -105,6 +108,8 @@ Arnie palauttaa **Käytä käteisalennusta** -kentän arvoksi **Normaali**, sill
 | ARP-10020  |                  | 1.7.2015  |         |                                      | 297,00                                | 0,00    | USD      |
 | ALE-10020 |                  | 1.7.2015  |         |                                      | 3,00                                  | 0,00    | USD      |
 | ARP-10021  |                  | 11.7.2015 |         |                                      | 700,00                                | 0,00    | USD      |
+
+
 
 
 

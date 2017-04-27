@@ -1,5 +1,5 @@
 ---
-title: Reporter - suunnittelu ja web client Management
+title: "Management Reporter – suunnitteluohjelma ja WWW-asiakasohjelma"
 description: 
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="management-reporter----the-designer-and-web-client"></a>Reporter - suunnittelu ja web client Management
+# <a name="management-reporter----the-designer-and-web-client"></a>Management Reporter – suunnitteluohjelma ja WWW-asiakasohjelma
+
+[!include[banner](../includes/banner.md)]
+
+
+
 
 
 

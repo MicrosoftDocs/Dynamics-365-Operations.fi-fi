@@ -1,5 +1,5 @@
 ---
-title: "Rinnakkainen tehtävä työnkulun määrittäminen"
+title: "Rinnakkaisen tehtävän määrittäminen työnkulussa"
 description: "Rinnakkaisen tehtävän määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa ."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-parallel-activity-in-a-workflow"></a>Rinnakkainen tehtävä työnkulun määrittäminen
+# <a name="configure-a-parallel-activity-in-a-workflow"></a>Rinnakkaisen tehtävän määrittäminen työnkulussa
 
 Rinnakkaisen tehtävän määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa .
 
@@ -32,7 +32,7 @@ Rinnakkainen tehtävä sisältää työnkulun haarat, jotka suoritetaan samaan a
 
 ## <a name="name-a-parallel-activity"></a>Nimeä rinnakkainen tehtävä
 Kirjoita näiden ohjeiden avulla nimi rinnakkaiselle tehtävälle.
-1.  Rinnakkaiselle tehtävälle hiiren kakkospainikkeella ja valitse sitten **ominaisuudet** avaamiseen **ominaisuudet** muodossa.
+1.  Napsauta rinnakkaista tehtävää hiiren kakkospainikkeella ja valitse sitten **Ominaisuudet**, joka avaa **Ominaisuudet** -lomakkeen.
 2.  Napsauta vasemmassa ruudussa **Perusasetukset**.
 3.  Kirjoita rinnakkaisen tehtävän yksilöivä nimi **Nimi**-kenttään.
 4.  Valitse **Sulje**.

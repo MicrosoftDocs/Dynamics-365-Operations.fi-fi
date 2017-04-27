@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-workflow"></a>ostoehdotuksen työnkulku
 
+[!include[banner](../includes/banner.md)]
+
+
 Työnkulkuprosessi siirtää ostoehdotuksia tarkistusprosessissa eteenpäin alkuperäisestä Luonnos-tilasta lopulliseen Hyväksytty-tilaan. Kun hankintapyyntö lähetetään tarkastettavaksi, työnkulkuprosessi alkaa. Sen jälkeen kun hankintapyyntö on hyväksytty, ostotilaus voidaan kehittää hankintapyyntöriveille ja lähettää toimittajalle, jotta tilaus voidaan toteuttaa.
 
 Ennen kuin ostoehdotus voidaan lähettää tarkastettavaksi, työnkulku pitää määrittää. Työnkulkuprosessi voi sisältää yhden tai useamman tarkastusvaiheen missä tahansa järjestyksessä. Työnkulkuprosessi voidaan myös määrittää ohittamaan tarkastustehtävät ja hyväksymään hankintapyynnön automaattisesti. Voit määrittää työnkulun reitittämään ostoehdotuksen yhtenä asiakirjana tai reitittää yksittäiset ostopyyntörivit oikeille tarkistajille. Voit myös luoda skenaarion, jossa ostoehdotus reititetään yhtenä asiakirjana joillekuille tarkastajille ja valitut ostopyyntörivit reititetään muille tarkastajille.  
@@ -106,12 +109,14 @@ Jos haluat käyttää jotakuta työnkulussa määrittämääsi menojen tarkistaj
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Luo ostoehdotuksen kulutukseen (tehtävän guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Kulutusehdotuksen luominen (tehtävän ohjaus)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (raportti)
 
-[Procurement and sourcing workflows](procurement-sourcing-workflows.md)
+[Hankinnan työnkulut](procurement-sourcing-workflows.md)
 
-[Purchase requisition overview](purchase-requisitions-overview.md)
+[Ostoehdotusten yhteenveto](purchase-requisitions-overview.md)
+
+
 
 

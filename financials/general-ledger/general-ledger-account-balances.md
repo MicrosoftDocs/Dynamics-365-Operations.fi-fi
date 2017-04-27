@@ -1,6 +1,6 @@
 ---
 title: Kirjanpitotilin saldot
-description: "Tässä artikkelissa kerrotaan kaksi tapaa tarkastella kirjanpitotilien saldoista - Pääkirjan luettelosivun ja tilinpäätökset. Artikkelissa kerrotaan myös, miten dimensioyhdistelmän saldot päivitetään."
+description: "Tässä artikkelissa esitellään kirjanpitotilien saldojen kaksi erilaista tarkastelutapaa: Pääkirja-luettelosivu ja talousraportit. Artikkelissa kerrotaan myös, miten dimensioyhdistelmän saldot päivitetään."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-ledger-account-balances"></a>Kirjanpitotilin saldot
 
-Tässä artikkelissa kerrotaan kaksi tapaa tarkastella kirjanpitotilien saldoista - Pääkirjan luettelosivun ja tilinpäätökset. Artikkelissa kerrotaan myös, miten dimensioyhdistelmän saldot päivitetään.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa esitellään kirjanpitotilien saldojen kaksi erilaista tarkastelutapaa: Pääkirja-luettelosivu ja talousraportit. Artikkelissa kerrotaan myös, miten dimensioyhdistelmän saldot päivitetään.
 
 Käyttäjät voivat tarkastella saldoja kirjanpidossa monin eri tavoin. Yleisimpiä vaihtoehtoja ovat:
 
@@ -46,6 +49,8 @@ Kun käyttäjä muuttaa parametrejä, saldot päivitetään. Käyttäjän voivat
 
 Käyttäjät voivat mennä saldoja alaspäin tarkastelemaan tapahtumia, joista saldo muodostuu.    
 
-Lisätietoja on ohjeaiheessa [taloudellisia raportteja](view-financial-reports.md).
+Lisätietoja on kohdassa [Näytä talousraportit](view-financial-reports.md).
+
+
 
 

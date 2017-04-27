@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Vapaatekstilaskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät
 
+[!include[banner](../includes/banner.md)]
+
+
 Kirjanpidollisia jakoja käytetään määritettäessä summan käsittely, kuten esimerkiksi se, miten tuottoa, veroa tai maksua käsitellään vapaatekstilaskussa. Jokaisella määrällä, joka on huomioitava vapaatekstilaskun kirjauksen yhteydessä, on yksi tai useampi kirjanpidollinen jako.
 
 <a name="accounting-distributions"></a>Kirjanpidolliset jaot
@@ -35,7 +38,7 @@ Kirjanpidollisia jakoja käytetään määritettäessä summan käsittely, kuten
 
 Seuraavilla Vapaatekstilasku-sivun painikkeilla voit tarkastella ja mahdollisesti muokata kirjanpidollisia jakoja kullekin vapaatekstilaskun summalle.
 
--   **Jaa summat**— näkymä ja muuta yksittäisen rivin ja sen lapsen kirjanpidollisten jakojen rivit, kuten verot ja maksut. Voit tarkastella ja muuttaa alarivin kirjanpidollisia jakoja myös suoraan Arvonlisäverotapahtumat- tai Kulutapahtumat-sivulla.
+-   **Jaa summat** – Tarkastele ja muuta yksittäisen rivin ja sen alarivien, kuten verojen tai kulujen, kirjanpidollisia jakoja. Voit tarkastella ja muuttaa alarivin kirjanpidollisia jakoja myös suoraan Arvonlisäverotapahtumat- tai Kulutapahtumat-sivulla.
     -   Muuta vapaatekstilaskun otsikon summia, kuten kuluja tai valuutan pyöristyssummia.
     -   Muuta vapaatekstilaskun rivisummia.
 -   **Näytä jakaumat** – Näytä asiakirjan kaikkien rivien kirjanpidolliset jaot. Et voi muuttaa kirjanpidollisia jakoja tästä näkymästä.
@@ -132,5 +135,7 @@ verojen kirjanpidollisia jakoja ei voi luoda ennen verojen laskentaa. Jotta voit
 
 ## <a name="subledger-journals-for-free-text-invoices"></a> Vapaatekstilaskujen alareskontran kirjauskansiot
 Ennen kuin kirjaat vapaatekstilaskun, voit tarkastella laskun koko kirjanpitokirjausta, joka sisältää hyvitykset ja veloitukset, jotta voit varmistaa, että lasku kirjataan oikeille tileille. Tämä kirjanpitomerkinnän koko näkymä tunnetaan nimellä alareskontran kirjauskansio. Jos alareskontran kirjauskansiovienti on virheellinen esikatselussa, et voi muuttaa sitä ennen kuin kirjaat vapaatekstilaskun. Sen sijaan sinun on muutettava kirjanpidollisia jakoja tai kirjausprofiilia. Kirjanpidollisia jakoja käytetään määrittämään yksi kirjanpitomerkinnän puolista, debet tai kredit. Alareskontran kirjauskansion kirjanpitoviennin vastakirjaus luodaan kirjausprofiileista, kuten asiakastilistä tai verosta.
+
+
 
 

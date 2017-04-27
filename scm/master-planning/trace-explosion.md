@@ -1,5 +1,5 @@
 ---
-title: "Käytä jäljityksen hajotus"
+title: "Jäljityksen käyttö hajotuksessa"
 description: "Tässä artikkelissa kerrotaan, miten jäljitystä käytetään tilauksen hajotuksen tuloksen takana olevien syiden tutkimisessa."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-tracing-for-explosion"></a>Käytä jäljityksen hajotus
+# <a name="use-tracing-for-explosion"></a>Jäljityksen käyttö hajotuksessa
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa kerrotaan, miten jäljitystä käytetään tilauksen hajotuksen tuloksen takana olevien syiden tutkimisessa.
 
@@ -43,6 +46,8 @@ Voit tarkastella tietoja tulevasta ja valitun tilauksen toiminnoista. Jäljityst
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Master plans](master-plans.md)
+[Pääsuunnitelmat](master-plans.md)
+
+
 
 

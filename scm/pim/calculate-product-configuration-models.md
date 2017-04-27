@@ -1,6 +1,6 @@
 ---
-title: "Laskelmat tuotemääritysmallien usein kysytyt kysymykset"
-description: "Tässä artikkelissa kuvataan laskutoimitukset tuotemääritysmallien ja kerrotaan, miten voit suorittaa laskutoimituksia ja rajoitukset."
+title: "Tuotemääritysmallien laskelmat – usein kysytyt kysymykset"
+description: "Tässä artikkelissa kuvataan laskutoimitukset tuotekonfiguraatiomalleille ja laskentojen käyttäminen yhdessä rajoitteiden kanssa."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="calculations-for-product-configuration-models-faq"></a>Laskelmat tuotemääritysmallien usein kysytyt kysymykset
+# <a name="calculations-for-product-configuration-models-faq"></a>Tuotemääritysmallien laskelmat – usein kysytyt kysymykset
 
-Tässä artikkelissa kuvataan laskutoimitukset tuotemääritysmallien ja kerrotaan, miten voit suorittaa laskutoimituksia ja rajoitukset.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa kuvataan laskutoimitukset tuotekonfiguraatiomalleille ja laskentojen käyttäminen yhdessä rajoitteiden kanssa.
 
 Laskutoimituksia on mahdollista käyttää aritmeettisiin tai loogisiin toimintoihin. Ne täydentävät lausekkeiden rajoituksia tuotemääritysmalleissa. Voit määrittää laskutoimituksia **Rajoituspohjaisen tuotemääritysmallin tiedot** -sivulla ja luoda laskutoimituksille lausekkeita lauseke-editorilla. Lisätietoja on kohdassa Laskelmien luominen.
 
@@ -45,9 +48,9 @@ Kohdemäärite on määrite, joka saa laskennan tuloksen lausekkeesta.
 
 Seuraavassa lausekkeessa kohdemäärite on tablecloth-mitta:  
 
-**Lauseke:** Jos\[decimalAttribute1 &lt;decimalAttribute2, = True, False\]  
+**Lauseke:** If\[decimalAttribute1 &lt;= decimalAttribute2, True, False\]  
 
-**DecimalAttribute1** on taulukko, pituus ja **decimalAttribute2** tablecloth pituus. Tämä lauseke palauttaa kohdemääritteeseen arvon **Tosi**, jos **decimalAttribute2** on suurempi tai yhtä suuri kuin **decimalAttribute1**. Muussa tapauksessa lauseke palauttaa arvon **Epätosi**. Siten pöytäliinan mitta on hyväksyttävä, jos pöytäliinan pituus vastaa pöydän pituutta tai ylittää sen.
+**DecimalAttribute1** on taulukon pituus ja **decimalAttribute2** on pöytäliinan pituus. Tämä lauseke palauttaa kohdemääritteeseen arvon **Tosi**, jos **decimalAttribute2** on suurempi tai yhtä suuri kuin **decimalAttribute1**. Muussa tapauksessa lauseke palauttaa arvon **Epätosi**. Siten pöytäliinan mitta on hyväksyttävä, jos pöytäliinan pituus vastaa pöydän pituutta tai ylittää sen.
 
 ## <a name="what-attribute-types-can-be-set-to-target-attributes"></a>Mitä määritetyyppejä voidaan asettaa kohdemääritteiksi?
 Kaikki tuotekonfiguroinnin tukemat määritetyypit voidaan asettaa kohdemääritteiksi lukuun ottamatta tekstiä, jolla ei ole kiinteää luetteloa.
@@ -57,11 +60,11 @@ Ei, kohdemääritteen arvo ei voi rajoittaa syöttömääritteiden arvoja lasken
 
 ### <a name="example"></a>Esimerkki
 
-Seuraavan lausekkeen laskennan kohteena on virtajohto, pituus ja syötetty arvo on väri:  
+Seuraavassa lausekkeessa laskennan kohde on virtajohdon pituus ja syöttöarvo on väri:  
 
-**Lauseke:**\[Jos väri == "Vihreä", 1.5, 1.0\]  
+**Lauseke:** \[If Color == "Green", 1.5, 1.0\]  
 
-Kun määrität nimikkeen, sähköjohdon pituus määritetään **1,5** Jos **vihreä** color-määritteen arvona. Jos määrität muita värejä, pituudeksi asetetaan **1,0**. Koska laskelmat ovat kuitenkin yksisuuntaisia, laskenta ei määritä väriarvomääritettä **vihreäksi** määrittäessäsi pituudeksi **1,5**.
+Nimikettä määrittäessäsi laskenta luo **1,5**-kertaisen pituuden virtajohdon, jos määrität värimääreeksi **Green**. Jos määrität muita värejä, pituudeksi asetetaan **1,0**. Koska laskelmat ovat kuitenkin yksisuuntaisia, laskenta ei määritä väriarvomääritettä **vihreäksi** määrittäessäsi pituudeksi **1,5**.
 
 ## <a name="what-happens-if-a-calculation-has-a-target-attribute-of-the-integer-type-but-a-calculation-generates-a-decimal-number"></a>Mitä tapahtuu, jos laskelmalla on kokonaislukutyyppinen kohdemäärite, mutta laskenta tuottaa desimaaliluvun?
 Jos kohdemääritteen tietotyyppi on kokonaisluku, mutta laskenta tuottaa desimaaliluvun, palautetaan ainoastaan tuloksen kokonaislukuosa. Desimaaliosa poistetaan, eikä tulosta pyöristetä. Esimerkiksi tulos 12,70 näytetään arvona 12.
@@ -72,16 +75,16 @@ Laskelmat tehdään, kun kaikille syöttöattribuuteille on annettu arvo.
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Voit korvata arvon, joka lasketaan kohteen määritteeseen?
 Voit korvata arvon, joka lasketaan kohteen määritteelle, ellei kohteen määritteen arvo ole piilotettu tai vain luku-muotoinen.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Miten määritän kohdemääritteen piilotetuksi tai vain luku-tilassa?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Kohdemääritteen määrittäminen piilotetuksi tai vain luettavaksi?
 Aseta määrite piilotetuksi tai vain luku -tilaan noudattamalla seuraavia ohjeita.
 
-1.  Valitse **tuotetietojen hallinta**&gt;**yhteisen**&gt;**tuotekonfiguraation mallit**.
+1.  Napsauta **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Tuotekonfiguraation mallit**.
 2.  Valitse tuotemallin konfiguraatio ja napsauta toimintoruudulta **Muokkaa**-toimintoa.
 3.  Valitse kohdemääritteenä käytettävä määrite **Rajoituspohjaisen tuotemääritysmallin tiedot** -sivulla.
 4.  Valitse **Määritteet** -pikavälilehdeltä **Piilotettu** tai **Vain luku-**.
 
 ## <a name="can-a-calculation-overwrite-the-values-that-i-set"></a>Voiko laskenta korvata asettamani arvot?
-Nro Arvot, jotka määritetään, kun määrität tuotteen ovat arvoja, joita käytetään. Laskelma, joka suoritetaan, kun laskelman muuttuvat syötearvot eivät pysty korvaamaan tietylle määritteelle annettuja arvoja.
+Ei. Tuotteen konfiguroinnin yhteydessä asettamasi arvot ovat käytettävät arvot. Laskelma, joka suoritetaan, kun laskelman muuttuvat syötearvot eivät pysty korvaamaan tietylle määritteelle annettuja arvoja.
 
 ## <a name="what-happens-if-i-remove-an-input-value-in-a-calculation"></a>Mitä tapahtuu, jos poistan laskelmasta syöttöarvon?
 Jos poistat syötetyn arvon laskennassa, kohteen määritteen arvo poistetaan.
@@ -93,13 +96,15 @@ Tämä sanoma tulee näkyviin, kun laskelma sisältää virheen tai vähintään
 -   Seuraavien kahden elementin välillä on ristiriita:
     -   Määritteen käytettävissä olevat arvot, joita rajoitetaan rajoitteella
     -   Arvo, joka luodaan laskutoimituksessa
--   Laskelman palauttamat arvot ovat määritteen toimialueen ulkopuolella. Yksi esimerkki on kokonaisluku väliltä \[1..10\], joka lasketaan 0.
+-   Laskelman palauttamat arvot ovat määritteen toimialueen ulkopuolella. Esimerkki on kokonaisluku \[1..10\], joka lasketaan nollaan.
 
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Miksi näyttöön tulee virhesanoma, vaikka tuotemallini on vahvistettu onnistuneesti?
 Oikeellisuustarkistukseen ei sisällytetä laskentaa. Sinun on testattava tuotemääritysmalli laskelmien virheiden löytämiseksi. Seuraavat vaiheet kuvaavat tuotekonfiguraatiomallin testaamisen.
 
-1.  Valitse **tuotetietojen hallinta**&gt;**yhteisen**&gt;**tuotekonfiguraation mallit**.
+1.  Napsauta **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Tuotekonfiguraation mallit**.
 2.  Valitse tuotemallin konfiguraatio ja napsauta toimintoruudun **Suorita**-ryhmästä **Testi**-toimintoa.
+
+
 
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-integration"></a>Käyttöomaisuuden integrointi
 
+[!include[banner](../includes/banner.md)]
+
+
 Käyttöomaisuus voidaan integroida kirjanpitoon, varastonhallintaan, myyntireskontraan ja ostoreskontraan. Käyttöomaisuuden voi integroida myös ostotilauksiin.
 
 <a name="general-ledger"></a>Kirjanpito
@@ -82,7 +85,7 @@ Jokaisen tilausrivin integrointi aktivoidaan **Käyttöomaisuus**-välilehdessä
 ## <a name="project-management-and-accounting"></a>Projektinhallinta ja kirjanpito
 Voit liittää projektin käyttöomaisuuserään, johon projekti vaikuttaa. Voit myös liittää kunkin vaiheen, tehtävän tai aliprojektin eri käyttöomaisuuserään. Jokaiseen projektitietueeseen voidaan liittää yksi käyttöomaisuus. Voit luoda liitoksen, kun kirjoitat käyttöomaisuuden numeron **Projektit**-sivulla olevaan **Käyttöomaisuuserän numero** -kenttään. Projektityypin on oltava **Sisäinen** tai **Kustannusprojekti**. 
 
-Voit tarkastella projekteihin liittyvien käyttöomaisuuserien tietoja myös **Projektit**-sivulla. Kun haluat tarkastella käyttöomaisuustietuetta, napsauta omaisuuserän linkkiä **Käyttöomaisuus**-sivun **Asetukset**-pikavälilehdessä. Valitse **projektien**&gt;**kaikkien projektien** projektit, jotka liittyvät KO. 
+Voit tarkastella projekteihin liittyvien käyttöomaisuuserien tietoja myös **Projektit**-sivulla. Kun haluat tarkastella käyttöomaisuustietuetta, napsauta omaisuuserän linkkiä **Käyttöomaisuus**-sivun **Asetukset**-pikavälilehdessä. Valitsemalla sitten **Projektit** &gt; **Kaikki projektit** voit tarkastella käyttöomaisuuserään liittyviä projekteja. 
 
 Käyttöomaisuuserät liitetään tavallisesti projekteihin, kun projektit liittyvät työhön, ylläpitoon tai käyttöomaisuuserän parannuksiin. Kun projekti on valmis, käyttöomaisuudelle ei automaattisesti tehdä kirjanpitoarvon korotusta. Jos kirjanpitoarvon korottamista vaaditaan, sinun on luotava se manuaalisesti. 
 
@@ -90,6 +93,8 @@ Voit poistaa projektin ja käyttöomaisuuden välisen liitoksen poistamalla **Pr
 
 Voit myös määrittää käyttöomaisuuserän, jota luot tai valmistat arviointiprojektiin kuuluvana. Arviointiprojektin päätteeksi voit kirjata automaattisesti käyttöomaisuuden hankintatapahtuman.
 
-Lisätietoja on ohjeaiheessa [hankkia omaisuuseriä hankintojen kautta](acquire-assets-procurement.md)
+Lisätietoja on ohjeaiheessa [Hankkia omaisuuseriä hankintojen kautta](acquire-assets-procurement.md).
+
+
 
 

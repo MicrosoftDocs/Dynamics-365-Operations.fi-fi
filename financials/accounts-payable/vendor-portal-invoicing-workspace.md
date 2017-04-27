@@ -43,11 +43,11 @@ Toimittajayhteistyön laskutustyötila
 Ruutua napsauttamalla avautuu suodatettu näkymä **laskujen luettelo** sivulle.
 ### <a name="tabular-lists"></a>Taulukkoluettelot
 
-- **Taulukkoluettelot **kohdassa laskutuksen tila on eritelty samalla tavalla kuin yhteenvetoruuduissa: Luonnos- ja Lähetetty, ei hyväksytty -luetteloissa. Luonnos-tilassa lasku voidaan lähettää työnkulkuun tai poistaa. Viimeinen taulukkomuotoinen luettelo on laskujen etsimiseen. Voit suodattaa haun, jotta haut nopeammin kuin.
+- **Taulukkoluettelot **kohdassa laskutuksen tila on eritelty samalla tavalla kuin yhteenvetoruuduissa: Luonnos- ja Lähetetty, ei hyväksytty -luetteloissa. Luonnos-tilassa lasku voidaan lähettää työnkulkuun tai poistaa. Viimeisessä taulukkoluettelossa voit etsiä laskut. Suodattamalla saat nopeampia hakuja.
 Kaikki toimittajan laskut -luettelosivu
 -----------------------------
 
-Voit tarkastella kaikkien kirjattujen ja kirjaamattomien toimittajalaskujen **yhteistyö toimittajalaskujen** sivulla. Tämän luettelosivun avulla voit tarkastella laskujen maksun tila. Maksun tilat ovat: kirjaamattomat, maksamatta, maksettu osittain, täysin maksettu.
+Voit tarkastella kaikkia kirjattuja ja kirjaamattomia toimittajalaskuja **Toimittajayhteistyön laskut** -luettelosivulla. Voit tarkastella luettelosivulta laskujen maksun tilaa. Maksun tilat ovat: kirjaamattomat, maksamatta, maksettu osittain, täysin maksettu.
 Luo toimittajan lasku ostotilauksesta
 --------------------------------------------
 
@@ -55,6 +55,6 @@ Voit luoda uuden toimittajalaskun valitsemalla **uusi** toimenpiteen **Toimittaj
 
 
 
-Lisätietoja on ohjeaiheessa [toimittaja-portaalin avulla yhteistyö toimittajien kanssa](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+Lisätietoja on ohjeaiheessa [Yhteistyö toimittajien kanssa Toimittajaportaalissa](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Työajan seuranta vähittäismyynnissä"
-description: "Tässä aiheessa kuvataan skenaarioita, jotka tukevat työajan hallinta Microsoft Dynamics-365 työvaiheiden - tuotepaketti."
+description: "Tässä aiheessa on kuvaus vähittäismyynnin ajan ja työajan hallinnassa tuettavista skenaarioista Microsoft Dynamics 365 for Operations - Retailissa."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="retail-time-and-attendance"></a>Työajan seuranta vähittäismyynnissä
 
-Tässä aiheessa kuvataan skenaarioita, jotka tukevat työajan hallinta Microsoft Dynamics-365 työvaiheiden - tuotepaketti. 
+[!include[banner](includes/banner.md)]
 
-<a name="manage-worker-setup-and-scheduling"></a>Hallitse työntekijän asennus ja ajoitus
+
+Tässä aiheessa on kuvaus vähittäismyynnin ajan ja työajan hallinnassa tuettavista skenaarioista Microsoft Dynamics 365 for Operations - Retailissa. 
+
+<a name="manage-worker-setup-and-scheduling"></a>Työntekijän asetusten ja ajoituksen hallinta
 ----------------------------------
 
 ### <a name="initial-configuration"></a> - alkukokoonpano
@@ -45,8 +48,8 @@ Tietoja määritysten vaiheista on kohdassa<https://technet.microsoft.com/en-us/
 
 ### <a name="retail-specific-configuration"></a>Vähittäismyynnille ominaiset määritykset
 
--   Ota toimintoprofiili käyttöön aikamerkinnöissä työntekijöille, joille haluat ottaa käyttöön aikakirjaukset. Valitse **Myyntipisteen Toimintoprofiilit**&gt;**toimintojen**&gt;**POS, kun rekisteröinnit**&gt;**aikarekisteröinnit käyttöön**.
--   Määritä myyntipisteen käyttöoikeudet ottaaksesi käyttöön aikamerkintöjen tarkasteluluvat. Tämä lupa antaa käyttäjälle oikeuden tarkastella muiden saman myymälän työntekijöiden aikakirjauksia, ja lisäksi osoitekirjan kautta muiden myymälöiden, joihin käyttäjä on liitetty. Haluat ehkä myöntää tämän oikeuden päällikköroolille mutta ei kassanhoitajan roolille. Valitse **POS-käyttöoikeusryhmät**&gt;**tarkastella aikamerkinnät**.
+-   Ota toimintoprofiili käyttöön aikamerkinnöissä työntekijöille, joille haluat ottaa käyttöön aikakirjaukset. Valitse **Myyntipisteen toimintoprofiilit** &gt; **Toiminnot** &gt; **Myyntipisteen aikakirjaukset** &gt; **Ota käyttöön aikakirjaukset**.
+-   Määritä myyntipisteen käyttöoikeudet ottaaksesi käyttöön aikamerkintöjen tarkasteluluvat. Tämä lupa antaa käyttäjälle oikeuden tarkastella muiden saman myymälän työntekijöiden aikakirjauksia, ja lisäksi osoitekirjan kautta muiden myymälöiden, joihin käyttäjä on liitetty. Haluat ehkä myöntää tämän oikeuden päällikköroolille mutta ei kassanhoitajan roolille. Valitse **Myyntipisteen käyttöoikeusryhmät** &gt; **Näytä aikamerkinnät**.
 
 ## <a name="register-time"></a>Rekisteröi aika
 ### <a name="cashier-and-non-cashier-time-registrations"></a>Kassanhoitajien ja muiden kuin kassanhoitajien kirjaukset
@@ -106,9 +109,9 @@ Tietoja määritysten vaiheista on kohdassa<https://technet.microsoft.com/en-us/
 <!-- -->
 
 -   Eri aikavyöhykkeet:
-    -   Jos tarkastelet aikoja eri sijainnista (kassan lokikirjaa varten tai käyttämällä **Näytä aikamerkinnät** -toimintoa päällikköskenaariossa), ja kyseinen sijainti on eri aikavyöhykkeellä, näkemäsi aikamerkinnät muunnetaan paikalliseen aikavyöhykkeeseesi. Esimerkiksi olet esimies kaksi kaupoissa, se, Arizonan ja toinen solmittu. Kassanhoitaja Rekisteröi Saapumisrekisteröinti klo 9:00 -Arizonan. Tuolla hetkellä kello on Nevadassa 8.00. Näin ollen, jos olet Nevadan liikkeessä ja katsot aikakirjaustietueita, kirjaus on merkitty klo 8.00:ksi.
+    -   Jos tarkastelet aikoja eri sijainnista (kassan lokikirjaa varten tai käyttämällä **Näytä aikamerkinnät** -toimintoa päällikköskenaariossa), ja kyseinen sijainti on eri aikavyöhykkeellä, näkemäsi aikamerkinnät muunnetaan paikalliseen aikavyöhykkeeseesi. Ajatellaan, että olet kahden myymälän päällikkö, joista toinen sijaitsee Arizonassa ja toinen Nevadassa. Kassa kirjaa saapumisen klo 9:00 Arizonassa. Tuolla hetkellä kello on Nevadassa 8.00. Näin ollen, jos olet Nevadan liikkeessä ja katsot aikakirjaustietueita, kirjaus on merkitty klo 8.00:ksi.
 
-## <a name="view-worker-time-registrations"></a>Näytä työntekijän aikarekisteröinnit
+## <a name="view-worker-time-registrations"></a>Työntekijän aikarekisteröintien tarkasteleminen
 ### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Näytä työntekijän aikakirjaukset ja suodata myymälän tai tapahtumatyypin perusteella.
 
 Myyntipisteellä:
@@ -117,8 +120,8 @@ Myyntipisteellä:
 -   Näet kaikkien niiden työntekijöiden aikakirjaustapahtumat, jotka on määritetty samoihin myymälöihin kuin sinä.
 -   Voit käyttää tehtävätyyppiä ja myymälän suodattimia suodattamaan aikamerkintöjä.
 
-## <a name="process-and-manage-time-registrations"></a>Käsitellä ja hallita aikarekisteröinnit
-Dynamics-365 - toimintojen vähittäiskaupan käyttäjä seuraa laskea, hyväksyä ja siirtää palkanlaskennan aikarekisteröinnit työnkulun.
+## <a name="process-and-manage-time-registrations"></a>Aikarekisteröintien käsitteleminen ja hallinta
+A Dynamics 365 for Operations - Retail -käyttäjä noudattaa työnkulkua aikakirjausten laskemiseen, hyväksymiseen ja palkanlaskentaan siirtämiseen.
 
 ### <a name="primary-operations"></a>Tärkeimmät työvaiheet
 
@@ -132,5 +135,7 @@ Dynamics-365 - toimintojen vähittäiskaupan käyttäjä seuraa laskea, hyväksy
 -   Poissaolon kirjaaminen
 
 Saat lisätietoja työajan seurannan kirjausten käsittelystä kohdassa <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+
+
 
 

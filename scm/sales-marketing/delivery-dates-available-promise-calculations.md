@@ -28,23 +28,26 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-promising"></a>Luvatut tilaukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja tilaustenkäsittelyn lupauksista. Tilauksen lupausten avulla voit luvata toimituspäivämäärät asiakkaillesi luotettavasti ja antaa sinulle joustavuuden, jonka avulla voit toteuttaa lupauksesi.
 
 Luvatuissa tilauksissa lasketaan, mikä on aikaisin lähetys- ja vastaanottopäivä toimituspäivän valvontapäivän ja kuljetuspäivien perusteella. Valittavana on neljä toimituspäivän valvontamenetelmää:
 
--   **Myynnin läpimenoaika** – Myynnin läpimenoaika on myyntitilauksen luomisen ja nimikkeiden toimituksen välisenä aikana. Toimituspäivämäärän laskenta perustuu oletuskesto päivinä ja ei myöskään varastotilanteen ja kysynnän tunnettu tai suunniteltu tarjonta.
--   **ATP (käytettävissä luvattavaksi)** – ATP on kohde, joka on käytettävissä ja voi luvata asiakkaalle tiettynä päivänä. ATP-laskelmaan sisältyy varaamaton varasto, läpimenoajat, suunnitellut vastaanotot ja varasto-otot.
+-   **Myynnin läpimenoaika** – Myynnin läpimenoaika on myyntitilauksen luomisen ja nimikkeiden toimituksen välinen aika. Toimituspäivän laskenta perustuu päivien oletusmäärään eikä siinä oteta huomioon varastotilannetta, tiedettyä kysyntää eikä suunniteltua tarjontaa.
+-   **Luvattavissa oleva määrä (ATP)** – ATP on nimikkeen käytettävissä oleva määrä, joka voidaan luvata asiakkaalle tiettynä päivänä. ATP-laskelmaan sisältyy varaamaton varasto, läpimenoajat, suunnitellut vastaanotot ja varasto-otot.
 -   **ATP + toimitusmarginaali ** – Lähetyspäivämäärä vastaa ATP-päivämäärää sekä nimikkeen toimitusmarginaalia. Toimitusmarginaali on lähetettävien nimikkeiden valmisteluun kuluva aika.
 -   **Saatavuus (CTP) **– Saatavuus lasketaan hajotuksen avulla.
 
 ## <a name="atp-calculations"></a>ATP-laskelmat
-ATP-määrä lasketaan "kumulatiiviseen ATP sijoitetulla"-menetelmällä. Tätä ATP-laskentamenetelmän tärkein etu on, että se voi käsitellä tapauksia, joissa kesken vastaanottojen varasto-ottojen summa on suurempi kuin uusin vastaanotto (esimerkiksi silloin, kun käytettävä täyttäminen edellyttää aiemman vastaanoton määrän). "Kanssa sijoitetulla kumulatiiviseen ATP-laskentamenetelmän sisältää kaikki ongelmat, kunnes kumulatiivinen määrä saa ylittää kumulatiivinen määrä. Niinpä tämä ATP-laskentatapa arvioi, voidaanko osaa aiemman kauden määrästä käyttää myöhemmällä kaudella.  
+ATP-määrä lasketaan "ennakoivan kumulatiivisen ATP-määrän" avulla. Tämän ATP-laskentamenetelmän pääasiallinen etu on mahdollisuus käsitellä myös tilanteet, joissa vastaanottojen välisten varasto-ottojen summa on suurempi kuin uusin vastaanotto (esim. kun tarpeen täyttäminen edellyttää aiemman vastaanoton määrän käyttämistä). Ennakoiva kumulatiivinen ATP -laskentatapa sisällyttää kaikki varasto-otot, kunnes vastaanotettavien kumulatiivinen määrä ylittää otettavien kumulatiivisen määrän. Niinpä tämä ATP-laskentatapa arvioi, voidaanko osaa aiemman kauden määrästä käyttää myöhemmällä kaudella.  
 
 ATP-määrä on ensimmäisen kauden varaamaton varastosaldo. Tavallisesti se lasketaan jokaiselle kaudelle, jolle on ajoitettu vastaanotto. Ohjelma laskee ATP-kauden päivinä ja käyttää kuluvaa päivää ATP-määrän ensimmäisen päivämääränä. Ensimmäisellä kaudella ATP ottaa mukaan käytettävissä olevan varaston, josta vähennetään erääntyvät ja erääntyneet asiakastilaukset.  
 
 ATP-määrä lasketaan seuraavaa kaavaa käyttäen:  
 
-ATP = ATP + edellisen kauden vastaanotot – nykyisen kauden ongelmat – nykyisen kauden Net ongelma määrän jokaisen tulevan kauden vasta kun kyseinen tuleva kausi mukaan lukien kaikkien tulevien kausien vastaanottojen summa on suurempi kuin varasto-ottojen summa enintään tilikaudella ja kyseinen tuleva kausi mukaan lukien.  
+ATP = edeltävän kauden ATP + nykyisen kauden vastaanotot – nykyisen kauden varasto-otot – jokaisen tulevan kauden varasto-ottojen nettosumma siihen kauteen saakka, jonka kohdalla kaikkien tulevien kausien vastaanottojen summa kyseinen tuleva kausi mukaan lukien on suurempi kuin varasto-ottojen summa kyseinen tuleva kausi mukaan lukien.  
 
 Kun huomioitavia varasto-ottoja tai vastaanottoja ei enää ole, seuraavien päivämäärien ATP-määrä on sama kuin viimeinen laskettu ATP-määrä.  
 
@@ -66,8 +69,10 @@ Asiakas soittaa ja haluaa tilata 150 kappaletta samaa tuotetta. Kun tarkistat tu
 
 Luot myyntitilausrivin tuotteelle ja ilmoitat määräksi **150**.  
 
-Koska toimituspäivän valvontamenetelmä on ATP, aikaisin mahdollinen lähetyspäivä etsitään laskemalla ATP-tiedot. Asetusten perusteella katsotaan viivästyneen ostotilauksen ja myyntitilauksen ja nykyisen päivämäärän tuloksena ATP-määrä on 0. Huomenna, viivästyneet ostotilaus on odotettavissa, kun ATP-määrä lasketaan yli 0 (Tässä tapauksessa se lasketaan 125). Kuitenkin 10 päivää nyt, kun muita ostotilauksen 100 kappaletta on odotettavissa, ATP-määrä on yli 150.  
+Koska toimituspäivän valvontamenetelmä on ATP, aikaisin mahdollinen lähetyspäivä etsitään laskemalla ATP-tiedot. Asetusten mukaisesti viivästyneet osto- ja myyntitilaukset otetaan huomioon, jolloin kuluvan päivän ATP-määräksi saadaan 0 Seuraavana päivänä, jolloin oletetaan, että viivästynyt ostotilaus vastaanotetaan, ATP-määrä lasketaan suuremmaksi kuin 0 (tässä tapauksessa arvoksi lasketaan 125) Kuitenkin tästä päivästä 10 päivän kuluttua, jolloin odotetaan 100 kappaleen lisäostotilauksen vastaanottoa, ATP-määrä on yli 150.  
 
-Siksi lähetyspäivämäärä on 10 päivää nyt on ATP-laskennan perusteella. Voitkin siis ilmoittaa asiakkaalle, että pyydetty määrä voidaan toimittaa 10 päivän kuluttua tästä päivästä.
+Tämän vuoksi ATP-laskennan perusteella lähetyspäivä määritetään 10 päivän päähän tästä päivästä. Voitkin siis ilmoittaa asiakkaalle, että pyydetty määrä voidaan toimittaa 10 päivän kuluttua tästä päivästä.
+
+
 
 

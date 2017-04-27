@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-receipt-against-purchase-orders"></a>Tuotteen vastaanotto ostotilausten perusteella
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa käsitellään tuotteiden vastaanotetuiksi rekisteröinnin asetuksia.
 
 Tuotteen vastaanotto on prosessi, joka tallentaa tilatut vastaanotetut tuotteet, jotta ostotilauksen rivit voidaan sitten käsitellä laskutuksessa. Joissakin tapauksissa tuotteet ennakkorekisteröidään, jolloin toimittajan lisätiedot tallennetaan ennen tuotteiden vastaanottoa. Saapuvien tuotteiden tilaksi merkitään ensin **Rekisteröity**. Tuotteiden on sitten ehkä läpäistävä lisäprosesseja, kuten laadun hallintaa, ennen kuin niiden tilaksi merkitään lopuksi **Vastaanotettu**.
@@ -52,19 +55,21 @@ Voit valita useita tilauksia ja käsitellä kyseisten tilausten vastaanoton yhde
 
 Ostotilauksia voi luoda myyntitilauksessa, jossa on valittu **Suoratoimitus**-vaihtoehto. Kun suoratoimitusta käytetään, tuotteet eivät saavu koskaan varastoon vaan ne lähetetään suoraan toimittajalta asiakkaalle. Tässä tapauksessa vastaanotto kirjataan yleensä suoraan ostotilaukseen. Vastaanotto voidaan tehdä automaattisesti, esimerkiksi integroimalla sähköinen tiedonsiirto (EDI) toimittajan kanssa. Jos ostotilaus on sen sijaan konsernin sisäinen ostotilaus, Microsoft Dynamics 365 for Operations voi automatisoida konsernin sisäisen myyntitilauksen vastaanoton lähetyksen yhteydessä. Suoratoimitusta käytettäessä tuotteet lasketaan edelleen varastoksi, vaikka ne eivät fyysisesti saavu varastoon. Kun tuotteen vastaanotto sitten rekisteröidään ostotilaukseen, myyntitilaus päivitetään automaattisesti pakkausluettelolla, jolloin varaston kokonaismuutos on 0 (nolla). Suoratoimitusskenaarioissa ei pidä edellyttää ennakkorekisteröintiä. Jos käytät varastoja, joissa varastonhallinta on otettu käyttöön, voit kiertää rekisterikilven rekisteröintivaatimuksen määrittämällä virtuaalisen varaston. Tämä varasto määritetään tuotteen **Suoratoimituksen varasto** -kentässä. 
 
-Ostotilauksen tuotteen vastaanotto on käsitelty, kun Ostotilauksen tilaksi asetetaan **saatu** osoittamaan järjestystä voi käsitellä laskun. Voit tarkastella jo vastaanotettujen tuotteiden tietoja **Tuotteen vastaanoton kirjauskansiot** -sivulla.  
+Kun tuotteen vastaanotto on käsitelty ostotilauksessa, ostotilauksen tilaksi valitaan **Vastaanotettu**. Se ilmaisee, että tilauksen lasku voidaan käsitellä. Voit tarkastella jo vastaanotettujen tuotteiden tietoja **Tuotteen vastaanoton kirjauskansiot** -sivulla.  
 
 Voit käyttää tätä sivua **Vastaanotto**-toimintoryhmän **Ostotilaus**-sivulla. Kirjauskansiossa on tietoja esimerkiksi määristä, päivämääristä ja dimensioista.
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Ostotilausten yleiskatsaus](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Ostotilauksen luominen](purchase-order-creation.md)
 
 [Ostotilauksen hyväksyntä ja vahvistus](purchase-order-approval-confirmation.md)
 
 [Toimittajan laskujen yleiskatsaus](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

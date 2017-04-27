@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-the-properties-of-a-workflow"></a>Työnkulun ominaisuuksien konfiguroiminen
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä ohjeaiheessa kerrotaan, miten työnkulun eri ominaisuudet määritetään.
 
 Konfiguroidaksesi työnkulun ominaisuudet, avaa työnkulku työnkulkueditorissa. Napsauta Työnkulkueditorin alustaa ja valitse sitten **ominaisuudet** avataksesi **Ominaisuudet**-sivun. Seuraavien ohjeiden avulla voit sitten määrittää työnkulun eri ominaisuudet.
@@ -147,10 +150,10 @@ Kun asiakirja lähetetään käsiteltäväksi, järjestelmä luo työnkulkuinsta
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tiettyjä toimintoja käyttäjille Dynamics 365</td>
+    <td>Tietyt Dynamics 365 for Operations -käyttäjät</td>
     <td><ol>
     <li>Napsauta <strong>Vastaanottaja</strong>-välilehdessä <strong>Käyttäjä</strong>-kohtaa.</li>
-    <li>- <strong>Käyttäjän</strong> -välilehden <strong>käytettävissä olevat käyttäjät</strong> luettelo sisältää kaikki käyttäjien toimien Dynamics 365. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käyttäjä</strong>-välilehden <strong>Käytettävissä olevat käyttäjät</strong> -luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -165,6 +168,8 @@ Noudata seuraavia ohjeita, kun haluat määrittää työnkulkuun tehtyjen muutos
 2.  Kirjoita kommenttisi **Anna kommentteja työnkulusta** -kenttään.
 3.  Tarkista kommenttisi. Kommentteja ei voi muokata lisäämisen jälkeen.
 4.  Valitse **Lisää** lisätäksesi kommenttisi **Kommenttihistoria**-alueelle.
+
+
 
 
 

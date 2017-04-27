@@ -1,5 +1,5 @@
 ---
-title: "Laskuyrityksen käsittely käteisalennukset"
+title: "Käteisalennuksen käsittely liikamaksuille"
 description: "Tämän artikkelin skenaariossa kerrotaan, miten maksua käsitellään, kun asiakkaalle annetaan käteisalennus, mutta tämä maksaa liikaa."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Laskuyrityksen käsittely käteisalennukset
+# <a name="handling-cash-discounts-for-overpayments"></a>Käteisalennuksen käsittely liikamaksuille
+
+[!include[banner](../includes/banner.md)]
+
 
 Tämän artikkelin skenaariossa kerrotaan, miten maksua käsitellään, kun asiakkaalle annetaan käteisalennus, mutta tämä maksaa liikaa. 
 
@@ -133,6 +136,8 @@ Käteisalennuksen määrä vähennetään arvosta 10,50 arvoon 10,00. Maksua ja 
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
 | Käteisalennus (**Asiakkaan alennusten päätili** -kenttä **Käteisalennukset**-sivulla) | 10,50        |               |
 | Myyntireskontra                                                                              |              | 10,50         |
+
+
 
 
 

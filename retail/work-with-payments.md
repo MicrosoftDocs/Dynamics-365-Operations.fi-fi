@@ -1,5 +1,5 @@
 ---
-title: Maksutavat-puhelu center
+title: Puhelinkeskuksen maksutavat
 description: "Tässä ohjeaiheessa käsitellään vähittäismyynnin ja kaupan puhelinkeskuksessa käytettäviä maksutapoja."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Maksutavat-puhelu center
+# <a name="payment-methods-in-a-call-center"></a>Puhelinkeskuksen maksutavat
+
+[!include[banner](includes/banner.md)]
+
 
 Tässä ohjeaiheessa käsitellään vähittäismyynnin ja kaupan puhelinkeskuksessa käytettäviä maksutapoja.
 
@@ -43,6 +46,8 @@ Jos lähetät luottokorttimaksun **Myyntitilaus**-sivulta ja avautuva ilmoittaa,
 
 -   Sekkipidoilla taloushallinnon henkilöstä voi käsitellä tilauksia, jotka on asetettu pitoon, koska maksutapana on käytetty sekkiä ja sekkipidon rajasumma on ylitetty. Pito voidaan vapauttaa manuaalisesti, tai se vanhenee automaattisesti määritetyn kauden lopussa.
 -   Voit määrittää raja-arvot, joita ylittäessä sekkien ja luottokorttien kautta annettavat palautukset on hyväksyttävä manuaalisesti. Kynnyssumman ylittävät palautukset lisätään hyväksyntäjonoon. Kun palautus on hyväksytty, palautusmyyntitilaus voidaan laskuttaa.
+
+
 
 
 

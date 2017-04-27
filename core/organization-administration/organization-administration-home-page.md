@@ -1,6 +1,6 @@
 ---
 title: Organisaation hallinnon aloitussivu
-description: "Tämän aiheen osoittaa resursseja, joiden avulla voit käyttää Microsoft Dynamics-365 toimintojen organisaation."
+description: "Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Operations -ohjelmaa organisaatiossa."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,56 +26,61 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="organization-administration-home-page"></a>Organisaation hallinnon aloitussivu
 
-Tämän aiheen osoittaa resursseja, joiden avulla voit käyttää Microsoft Dynamics-365 toimintojen organisaation.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Operations -ohjelmaa organisaatiossa.
 
 <a name="number-sequences"></a>Numerosarjat
 ----------------
 
--   [Number sequence overview](number-sequence-overview.md)
--   [Numerosarjojen määrittäminen ohjatun toiminnon avulla](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (tehtävä-opas)
--   [Määritä numerosarjat yksittäin](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (tehtävä-opas)
+-   [Numerosarjan esittely](number-sequence-overview.md)
+-   [Numerosarjojen määrittäminen ohjatulla toiminnolla](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (tehtäväopas)
+-   [Yksittäisten numerosarjojen määrittäminen](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (tehtäväopas)
 
 ## <a name="address-books"></a>Osoitekirjat
--   [Address books](qa-address-books.md)
--   [Yleistä: Yleinen osoitekirja](overview-global-address-book.md)
--   [Yleisen osoitekirjan ja muita osoitteiston suunnitteleminen](plan-configuration-global-address-book-additional-address-books.md)
+-   [Osoitekirjat](qa-address-books.md)
+-   [Esittely: Yleinen osoitekirja](overview-global-address-book.md)
+-   [Yleisen osoitekirjan ja lisäosoitekirjojen määrityksen suunnittelu](plan-configuration-global-address-book-additional-address-books.md)
 
 ## <a name="workflow"></a>Työnkulku
--   [Overview of the workflow system](overview-workflow-system.md)
--   [Työnkulun järjestelmän arkkitehtuuri](workflow-system-architecture.md)
--   [Workflow elements](workflow-elements.md)
--   [Workflow actions](workflow-actions.md)
+-   [Työnkulkujärjestelmän yleiskatsaus](overview-workflow-system.md)
+-   [Työnkulun järjestelmäarkkitehtuuri](workflow-system-architecture.md)
+-   [Työnkulun elementit](workflow-elements.md)
+-   [Työnkulkutehtävät](workflow-actions.md)
 -   [Luo työnkulku](create-workflow.md)
--   [Configure the properties of a workflow](configure-workflow-properties.md)
+-   [Työnkulun ominaisuuksien konfiguroiminen](configure-workflow-properties.md)
 -   [Manuaalisen tehtävän konfiguroiminen](configure-manual-task-workflow.md)
 -   [Automaattisen tehtävän määrittäminen](configure-automated-task-workflow.md)
--   [Configure an approval process](configure-approval-process-workflow.md)
+-   [Hyväksyntäprosessin konfiguroiminen](configure-approval-process-workflow.md)
 -   [Hyväksyntävaiheen konfiguroiminen](configure-approval-step-workflow.md)
 -   [Manuaalisen päätöksen konfiguroiminen](configure-manual-decision-workflow.md)
 -   [Ehdollisen päätöksen konfiguroiminen](configure-conditional-decision-workflow.md)
 -   [Määritä rinnakkainen tehtävä](configure-parallel-activity-workflow.md)
 -   [Määritä rinnakkaishaara](configure-parallel-branch-workflow.md)
--   [Rivinimikkeen työnkulun elementti on määritettävä](configure-line-item-workflow.md)
+-   [Määritä rivinimikkeen työnkulun elementti](configure-line-item-workflow.md)
 
 ## <a name="case-management"></a>Palvelupyynnön hallinta
--   [Suunnittelu: Case asetukset](plan-case-management.md)
--   [Case management-esimerkkejä](cases.md)
+-   [Suunnittelu: Tapauksen määritys](plan-case-management.md)
+-   [Palvelupyynnön hallinnan esimerkkejä](cases.md)
 
 ## <a name="electronic-signatures"></a>Sähköiset allekirjoitukset
--   [Electronic signature overview](electronic-signature-overview.md)
--   [Määritä sähköisten allekirjoitusten](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (tehtävä-opas)
+-   [Sähköisten allekirjoitusten yleiskuvaus](electronic-signature-overview.md)
+-   [Sähköisten allekirjoitusten määrittäminen](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (tehtäväopas)
 
 ## <a name="organizations"></a>Organisaatiot
--   [Organizations and organizational hierarchies](organizations-organizational-hierarchies.md)
--   [Plan the organizational hierarchy](plan-organizational-hierarchy.md)
--   [Luo liiketoiminnan yksikkö](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (tehtävä-opas)
--   [Luominen, organisaatiohierarkia](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (tehtävä-opas)
--   [Luo juridisen henkilön](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (tehtävä-opas)
+-   [Organisaatiot ja organisaatiohierarkiat](organizations-organizational-hierarchies.md)
+-   [Suunnittele organisaatiohierarkia](plan-organizational-hierarchy.md)
+-   [Luo toimintayksikkö](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (tehtäväopas)
+-   [Luo organisaatiohierarkia](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (tehtäväopas)
+-   [Luo yritys](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (tehtäväopas)
 
 ## <a name="general-administration"></a>Yleinen hallinta
--   [Muuttaa logon tai nauhan](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (tehtävä-opas)
--   [About date/time data and time zones](date-time-zones.md)
--   [Record templates](record-templates.md)
+-   [Bannerin ja logon vaihtaminen](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (tehtäväopas)
+-   [Tietoja päivämäärä- ja aikatiedoista ja aikavyöhykkeistä](date-time-zones.md)
+-   [Tietuemallit](record-templates.md)
+
+
 
 
 

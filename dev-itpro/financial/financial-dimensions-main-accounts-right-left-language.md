@@ -26,16 +26,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="financial-dimensions-and-main-accounts-in-a-right-to-left-language"></a>Taloushallinnon dimensiot ja päätilit oikealta vasemmalle kirjoitettavalla kielellä
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä aiheessa esitellään käyttöönottopäätöksiä, jotka koskevat oikealta vasemmalle kirjoitettavien kielien käyttöä Microsoft Dynamics 365 for Operations -järjestelmässä määritettäessä taloushallinnon dimensioiden ja päätilin asetuksia.
 
 Taloushallinnon dimensiot ja päätilit ovat tärkeimmät käyttöönoton suunnitteluvaiheen komponentit. Kun taloushallinnon dimensiot ja päätilit on luotu järjestelmään, niitä käytetään **Määritä tilirakenteet**, **Lisäsäännön rakenteet** ja **Integrointisovellusten taloushallinnon dimension määritykset** -sivuilla. Näillä sivuilla määritettyä tilausta käytetään järjestelmässä tietojen antamiseen ja kulutuksen määrittämiseen. Joissakin järjestelmän osissa taloushallinnan dimensiot ja päätilit näkyvät eri kentissä. Muualla, kuten kirjauskansiossa, taloushallinnon dimensiot ja päätilit näkyvät kuitenkin yhtenä merkkijonona.
 
 ### <a name="best-practices-for-setting-up-financial-dimensions-and-main-accounts-in-a-right-to-left-system"></a>Parhaat käytännöt taloushallinnon dimensioiden ja päätilien määrittämiseen järjestelmässä oikealta vasemmalle kirjoitettavan kielellä
 
--   Kun valitset Tilikartta, erotin, valitse yksi kaksinkertainen erotin-asetukset: Kaksinkertainen yhdysmerkki (-), double bar (|) tai kaksinkertainen piste (.) tai alaviiva kaksinkertainen (\_\_).
+-   Kun valitset tilikartan erotinta, valitse jokin kahden erottimen yhdistelmistä: kaksi peräkkäistä yhdysmerkkiä (--), kaksi pystyviivaa (||), kaksi peräkkäistä pilkkua (..) tai kaksi peräkkäistä alaviivaa (\_\_).
 -   Kun luot taloushallinnon dimension ja päätilin arvoja, käytä ainoastaan numeroita ja oikealta vasemmalle kirjoitettavan kielen merkkejä.
 -   Älä käytä valitun tilikartan erotin kirjanpitodimension ja päätilin arvoina.
 
 Näitä toimintaohjeita noudattamalla autat takaamaan, että käyttäjän määrittämä järjestys on yhdenmukainen koko järjestelmässä.
+
+
 
 

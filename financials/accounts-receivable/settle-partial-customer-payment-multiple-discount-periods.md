@@ -1,5 +1,5 @@
 ---
-title: "Osittainen asiakkaan maksu, jolla on useita Alennuskausien selvitetään"
+title: "Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen"
 description: "Tässä artikkelissa kerrotaan, miten osittaiset asiakkaan maksut tilitetään, kun alennuskausia on useita."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Osittainen asiakkaan maksu, jolla on useita Alennuskausien selvitetään
+# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa kerrotaan, miten osittaiset asiakkaan maksut tilitetään, kun alennuskausia on useita.
 
-Fabrikam tarjoaa asiakkaalle 4031 kaksi käteisalennuskautta. Asiakas saa 2 prosentin käteisalennuksen, jos lasku maksetaan viiden päivän kuluessa, ja 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Selvityksen parametrit sijaitsevat **Myyntireskontran parametrit** sivulla.
+Fabrikam tarjoaa asiakkaalle 4031 kaksi käteisalennuskautta. Asiakas saa 2 prosentin käteisalennuksen, jos lasku maksetaan viiden päivän kuluessa, ja 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Tilityksen parametrit sijaitsevat **Myyntireskontran parametrit** -sivulla.
 
 ## <a name="invoice"></a>Lasku
-25. kesäkuuta-Erik syöttää ja kirjaa lasku asiakkaalle 4031 1 000,00. Kun hän arvioi tämän laskun käteisalennukset, Erik näkee asiakkaan 4031 saa 20,00 alennuksen, jos lasku maksetaan viimeistään 30 päivänä kesäkuuta. Jos lasku maksetaan viimeistään 9 päivänä heinäkuuta, asiakas saa 10,00 alennuksen.
+Erik syöttää ja kirjaa 25. kesäkuuta laskun asiakkaalle 4031, jonka arvo on 1.000,00. Kun hän tarkastaa tämän laskun käteisalennukset, Erik näkee, että asiakas 4031 saa 20,00 arvoisen alennuksen, jos lasku maksetaan viimeistään 30. päivänä kesäkuuta. Jos lasku maksetaan viimeistään 9. päivänä heinäkuuta, asiakas saa 10,00 arvoisen alennuksen.
 
 | Käteisalennuksen päivämäärä | Käteisalennussumma | Summa tapahtuman valuuttana |
 |--------------------|----------------------|--------------------------------|
@@ -92,6 +95,8 @@ Laskun saldo on nyt 0,00. Arnie tarkastelee tietoja **Asiakastapahtumat**-sivull
 | ALE-10030 |  Käteisalennus   | 28.6.2015 |         |                                      | 6,00                                  | 0,00    | USD      |
 | ARP-10031  |  Maksu         | 8.7.2015  |         |                                      | 693,00                                | 0,00    | USD      |
 | ALE-1031  |  Käteisalennus   | 8.7.2015  |         |                                      | 7:00                                  | 0,00    | USD      |
+
+
 
 
 

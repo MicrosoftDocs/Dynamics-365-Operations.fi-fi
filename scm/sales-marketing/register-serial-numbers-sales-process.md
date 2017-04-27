@@ -1,5 +1,5 @@
 ---
-title: "Rekisteröi myyntiprosessin sarjanumerot"
+title: "Sarjanumeroiden rekisteröiminen myyntiprosessissa"
 description: "Tässä artikkelissa kerrotaan, kuinka voit rekisteröidä sarjanumeroita pakkausluetteloihin tai laskuihin myyntiprosessin aikana. Toiminto on hyödyllinen yrityksille, jotka haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="register-serial-numbers-in-the-sales-process"></a>Rekisteröi myyntiprosessin sarjanumerot
+# <a name="register-serial-numbers-in-the-sales-process"></a>Sarjanumeroiden rekisteröiminen myyntiprosessissa
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa kerrotaan, kuinka voit rekisteröidä sarjanumeroita pakkausluetteloihin tai laskuihin myyntiprosessin aikana. Toiminto on hyödyllinen yrityksille, jotka haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille.
 
@@ -65,7 +68,7 @@ Kyllä, voit suorittaa kyselyn pakkausluettelon kirjauskansioriviltä tai laskun
 ## <a name="can-i-view-the-serialized-items-that-i-have-on-hand"></a>Voinko tarkastella sarjoitettuja kohteita, jotka minulla on?
 Ei, et voi tarkastella sarjoitettuja käytettävissäsi olevia nimikkeitä, koska sarjanumeroita ei ole rekisteröity nimikkeille ennen nimikkeiden myymistä.
 
-## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Voit rekisteröidä nimikkeiden catchweight sarjanumerot?
+## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Voinko sarjanumerot tallentaa todellisen painon nimikkeille?
 Ei, et voi rekisteröidä myyntiprosessissa sarjanumeroita todellisen painon nimikkeille. Jos tuote on lisäksi määritetty todellisen painon nimikkeeksi, et voi määrittää tuotteelle seurantadimensioryhmää, joka on asetettu käyttämään sarjanumeroita ainoastaan myyntiprosessin aikana.
 Voinko rekisteröidä sarjanumeroita vähittäismyyntipisteessä?
 ------------------------------------------------
@@ -76,6 +79,8 @@ Kyllä, vähittäismyyntipiste kehottaa käyttäjää lisäämään sarjanumeron
 Tämä toiminnallisuus on käytettävissä kaikille rooleille, jotka voivat ylläpitää myynnin pakkausluetteloita ja laskuja. Seuraavat velvollisuudet antavat työntekijöille mahdollisuuden korjata sarjanumeroita ja rekisteröidä tyhjiä merkintöjä sellaisille sarjanumeroille, joita ei voida lukea tai skannata:
 -   Ylläpidä sarjanumeroiden korjausta
 -   Ylläpidä lukukelvottomien sarjanumeroiden rekisteröintiä
+
+
 
 
 

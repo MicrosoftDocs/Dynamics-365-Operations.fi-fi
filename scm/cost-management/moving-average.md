@@ -68,14 +68,14 @@ Liukuvaa keskiarvoa käytettäessä tuotteen kustannukset määräytyvät oston 
 3.  Luo myyntitilaus, jonka määrä on 1 ja yksikköhinta 10,00.
 4.  Luo ostolasku, jonka määrä on 2 ja yksikköhinta 12,00.
 
-Yksikköhinnan 2,00 erotus kirjataan liukuvan keskiarvon hintaeron tilille ostolaskun kirjaamisen yhteydessä. Syynä tähän on se, että tuotteita ostettiin kaksi, ja ostokustannukset olivat 20,00. Toinen tuote myytiin yksikköhintaan 10,00. Ostolasku kirjattiin yksikön hintaan 12,00, joiden määrä on 2. Tuotteen yksikköhinta ei voi kirjata, 14,00.
+Yksikköhinnan 2,00 erotus kirjataan liukuvan keskiarvon hintaeron tilille ostolaskun kirjaamisen yhteydessä. Syynä tähän on se, että tuotteita ostettiin kaksi, ja ostokustannukset olivat 20,00. Toinen tuote myytiin yksikköhintaan 10,00. Ostolaskulle kirjattiin yksikköhinnaksi 12,00 ja määräksi 2. Tuotteen yksikköhinnaksi ei voi kirjata 14,00.
 
 ## <a name="moving-average-product-and-inventory-adjustment"></a>Liukuvan keskiarvon tuote ja varaston oikaisu
 Jos tuotteen liukuvan keskiarvon kustannusta täytyy oikaista, varaston oikaisuja voi tehdä kuluvasta päivästä lukien. Tuotteen liukuvan keskiarvon kustannusta ei voi korjata tekemällä varaston oikaisua takautuvasti. Kustannus eivät voi siirtyä seuraaviin tapahtumiin. Tässä esimerkissä oikaistaan tuotteen liukuvan keskiarvon kustannusta.
 1.  Valitse tuote, jonka liukuvan keskiarvon kustannusta haluat oikaista.
-    | **Note**                                                                                    |
+    | **Huomautus**                                                                                    |
     |---------------------------------------------------------------------------------------------|
-    | ** Liukuvan keskiarvon uudelleenarvostus ** sivu tarkistaa tuotteen käytettävissä oleva varasto. |
+    | **Liukuvan keskiarvon uudelleenarvostus** -sivu tarkistaa tuotteen käytettävissä olevan varaston. |
 
     Valitun tuotteen kirjattu määrä on 1, kirjattu arvo 12,00, kirjattu yksikkökustannus 12,00 ja yksikkökustannus 12,00.
 2.  Päivitä **Yksikkökustannus**-kentän arvoksi 16,00. Järjestelmä laskee muut kentät.
@@ -88,7 +88,7 @@ Jos tuotteen liukuvan keskiarvon kustannusta täytyy oikaista, varaston oikaisuj
 **Tositteen täsmäytykset** -sivulla näkyy oikaisu 4,00, joka on kirjattu Liukuvan keskiarvon kustannuksen uudelleenarvostus -tilille.
 
 ## <a name="moving-average-with-production"></a>Liukuva keskiarvo ja tuotanto
-Liukuva keskiarvo tukee valmistettuja nimikkeitä. Jos aiot käyttää tuotantoympäristössä, liukuva keskiarvo **käyttää arvioitua kustannushintaa** siirtämällä liukusäädintä ** tuotannonohjauksen parametrit ** sivu pitäisi olla valittujen. Tämä tarkoittaa sitä, että todellisen tuoterakennelaskennan kustannushinnan sijasta käytetään arvioinnin aikana laskettua kustannushintaa.
+Liukuva keskiarvo tukee valmistettuja nimikkeitä. Jos aiot käyttää liukuvaa keskiarvoa tuotantoympäristössä, valitse **Tuotannonhallinnan parametrit** -sivulla oleva **Käytä arvioitua kustannushintaa** -liukusäädin. Tämä tarkoittaa sitä, että todellisen tuoterakennelaskennan kustannushinnan sijasta käytetään arvioinnin aikana laskettua kustannushintaa.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Liukuva keskiarvo ja takautuva tapahtuma.
 Takautuville tapahtumille määritetään nykyinen liukuvan keskiarvon kustannus ja tuotteen fyysinen määrä päivittyy, mutta tämä ei vaikuta tuotteen liukuvan keskiarvon kustannukseen. Tässä liukuvaa keskiarvoa koskevassa esimerkissä kirjataan liukuvan keskiarvon tuotteeseen liittyvä takautuva tapahtuma.

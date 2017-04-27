@@ -1,6 +1,6 @@
 ---
-title: "Organisaation koulutus Power BI-sisältö"
-description: "Tässä aiheessa kuvataan Dynamics-365 Operations - organisaation koulutus Power BI-sisältöä varten. Selitetään, miten sisältö pack ja kuvataan tietomallin ja yhteisöistä, joita käytettiin rakentaa sisältö pack."
+title: "Organisaation koulutuksen Power BI -sisältö"
+description: "Tässä aiheessa kuvataan Dynamics 365 for Operationsin organisaation koulutuksen Power BI -sisältöä. Siinä kuvataan, miten avaat sisältöpaketin. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,45 +24,48 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizational-training-power-bi-content"></a>Organisaation koulutus Power BI-sisältö
+# <a name="organizational-training-power-bi-content"></a>Organisaation koulutuksen Power BI -sisältö
 
-Tässä aiheessa kuvataan Dynamics-365 Operations - organisaation koulutus Power BI-sisältöä varten. Selitetään, miten sisältö pack ja kuvataan tietomallin ja yhteisöistä, joita käytettiin rakentaa sisältö pack.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>Sisältö pack käyttäminen
+
+Tässä aiheessa kuvataan Dynamics 365 for Operationsin organisaation koulutuksen Power BI -sisältöä. Siinä kuvataan, miten avaat sisältöpaketin. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
+
+<a name="accessing-the-content-pack"></a>Sisältöpaketin avaaminen
 --------------------------
 
-Voit etsiä organisaation koulutuksen sisältö pack jaettujen varojen kirjaston Microsoft Dynamics Lifecycle Services (LCS). Saat lisätietoja siitä, miten sisältö pack ladata ja liittää sen Microsoft Dynamics-365, toimintojen tietojen [virtaa BI sisältöä Microsoftin ja kumppanien LCS-](power-bi-content-microsoft-partners.md).
+Löydät organisaation koulutuksen sisältöpaketin Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Saat lisätietoja siitä, miten sisältöpaketti ladataan ja miten se liitetään Microsoft Dynamics 365 for Operationsin tietoihin, artikkelista [LCS:n Power BI -sisältö Microsoftilta ja kumppaneilta](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Raportit, jotka sisältyvät sisältö pack
-Sen jälkeen, kun olet muodostanut yhteyden oman Dynamics 365 toimintoja tietojen sisältö pack, raportit näkyvät organisaation tiedot. Jos et ole koskaan käyttänyt Microsoft Power BI ennen, saat siitä lisätietoja [sivulla ohjattu oppiminen Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raportit, jotka sisältyvät sisältö pack on sekä kaavioita ja taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
+## <a name="reports-that-are-included-in-the-content-pack"></a>Raportit, jotka sisältyvät sisältöpakettiin
+Kun olet liittänyt sisältöpaketin Dynamics 365 for Operations -tietoihin, organisaatiosi tiedot näkyvät raporteissa. Jos et ole käyttänyt Microsoft Power BI:tä aiemmin, lisätietoja löydät artikkelista [Power BI:n ohjattu oppiminen](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporteissa, jotka sisältyvät sisältöpakettiin, on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
 
 | Raportti          | Sisältö                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
-| Kurssien analysointi | Sijainti, tila ja rekisteröintiluettelo kurssin osallistujien rekisteröinti |
+| Kurssien analysointi | Ilmoittautuminen sijainnin mukaan, kurssin osallistujat tilan mukaan sekä ilmoittautumisluettelo |
 | Kurssityypit    | Kurssityypit osaamisalueittain                                                       |
 
-Voit suodattaa kaavioita ja laatat raporteissa ja kiinnitä kaavioita ja laatat Dashboardiin. Saat lisätietoja siitä, miten suodatin ja Power BI-pin [Luo ja määritä A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
-Raportit organisaation koulutuksen sisältö Pack täyttämiseen käytetään työvaiheiden tietoja Dynamics 365. Seuraavassa taulukossa on esitetty kohteiden sisältö pack on perustunut.
+Dynamics 365 for Operations -sovelluksen tietoja käytetään organisaation koulutuksen sisältöpaketin raporttien täyttämiseen. Seuraavassa taulukossa on esitetty yksiköt, joihin sisältöpaketti on perustunut.
 
-| Kokonaisuus                    | Sisältö                                                         | Suhteisiin                                                                                                                                                                  |
+| Kokonaisuus                    | Sisältö                                                         | Suhteet muihin yksiköihin                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Koulutus\_CalendarOffset  | Kalenterin siirtymät sektorin raportit                                | Koulutus\_koulutuksen CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Koulutus\_yrityksen         | Yritykset voivat suodattaa raporttien mukaan                                   | Koulutus\_koulutuksen CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Koulutus\_kurssin          | Kurssin kuvaus, opettajan nimi, sijainti, huoneen ja tila | Koulutus\_koulutuksen CourseAgenda\_CourseAttendees koulutuksen\_CourseSkill                                                                                                                             |
-| Koulutus\_CourseAgenda    | Esityslistan ja kurssin aloitus- ja lopetusajat                          | Koulutus\_yrityksen koulutuksen\_CalendarOffset koulutus\_päivämäärä koulutus\_kurssin                                                                                                                         |
-| Koulutus\_CourseAttendees | Nimi, tila, työn ja rekisteröinnin päivämäärä                         | Koulutus\_yrityksen koulutuksen\_CalendarOffset koulutus\_koulutuksen päivämäärä\_demografia koulutus\_työsuhteen koulutus\_kurssi koulutus\_WorkerName koulutuksen\_WorkerTitle koulutus\_työn koulutus\_sijainti |
-| Koulutus\_CourseSkill     | Taito, osaamisalueen ja taso                                     | Koulutus\_kurssin                                                                                                                                                                                   |
-| Koulutus\_päivämäärä            | Päiviä, viikkoja, kuukausia ja vuosia                                   | Koulutus\_koulutuksen CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Koulutus\_demografia    | Syntymäajan, sukupuolen, etnisen alkuperän ja siviilisääty         | Koulutus\_koulutuksen CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Koulutus\_työskentely      | Alkamispäivämäärä, päättymispäivämäärä ja tapahtumapäivämäärä                        | Koulutus\_koulutuksen CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Koulutus\_työ             | Funktion tyyppi ja otsikko                                        | Koulutus\_koulutuksen CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Koulutus\_sijainti        | Paikka, otsikko ja kokopäiväisten (FTE)                  | Koulutus\_koulutuksen CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Koulutus\_WorkerName      | Etunimi, Sukunimi ja koko nimi                             | Koulutus\_CourseAttendees                                                                                                                                                                          |
-| Koulutus\_WorkerTitle     | Otsikko ja Virkaikä                                         | Koulutus\_CourseAttendees                                                                                                                                                                          |
+| Training\_CalendarOffset  | Kalenterin siirtymät raporttien osittamiseen                                | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Company         | Yritykset, joiden mukaan raportit suodatetaan                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Course          | Kurssi, kuvaus, opettajan nimi, sijainti, huone ja tila | Training\_CourseAgenda Training\_CourseAttendees Training\_CourseSkill                                                                                                                             |
+| Training\_CourseAgenda    | Esityslista, kurssi sekä aloitus- ja lopetusajat                          | Training\_Company Training\_CalendarOffset Training\_Date Training\_Course                                                                                                                         |
+| Training\_CourseAttendees | Nimi, tila, työ ja rekisteröinnin päivämäärä                         | Training\_Company Training\_CalendarOffset Training\_Date Training\_Demographics Training\_Employment Training\_Course Training\_WorkerName Training\_WorkerTitle Training\_Job Training\_Position |
+| Training\_CourseSkill     | Taito, osaamisalueen tyyppi ja taso                                     | Training\_Course                                                                                                                                                                                   |
+| Training\_Date            | Päiviä, viikkoja, kuukausia ja vuosia                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Demographics    | Syntymäaika, sukupuoli, etninen alkuperä ja siviilisääty         | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Employment      | Alkamispäivämäärä, päättymispäivämäärä ja siirtymispäivämäärä                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Job             | Tehtävä, tyyppi ja nimike                                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Position        | Toimi, nimike ja kokopäiväistä vastaavat (FTE)                  | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_WorkerName      | Etunimi , sukunimi ja koko nimi                             | Training\_CourseAttendees                                                                                                                                                                          |
+| Training\_WorkerTitle     | Nimike ja virkaikä                                         | Training\_CourseAttendees                                                                                                                                                                          |
 
-Luo lasketut mitat tietomallin käytettiin entiteetit. Nämä lasketaan toimenpiteet sitten laskemisessa käytetään Suorituskyvyn mittareiden (KPI: T) ja raportit, joita käytetään sisällön pack. Jos haluat sisällyttää laskutoimitukset raportit ja Raporttinäkymät-ikkunan, voit ladata ja LCS-Training.pbix-tiedoston muokkaaminen. Tämä tiedosto on oletusarvoisesti tietomalli, joka on luotu sisältö pack. Kun olet tehnyt muutokset, voit luoda sellaisen organisaation sisällön pack ja raporttinäkymät, jotka sisältävät tietoja, jotka olet lisännyt.
+Näitä yksikköjä käytettiin luomaan laskettuja mittoja tietomallissa. Näitä laskennallisia mittoja käytetään sitten laskemaan sisältöpaketissa käytettävät tunnusluvut (KPI:t) ja raportit. Jos haluat sisällyttää lisälaskutoimitukset raportteihin ja koontinäyttöön, voit ladata Training.pbix-tiedoston LCS:stä ja muokata sitä. Tämä tiedosto on sisältöpaketin luomisessa käytetty oletustietomalli. Kun olet tehnyt haluamasi muutokset, voit luoda organisaation sisältöpaketin ja koontinäytön, joka sisältää lisäämäsi tiedot.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:
@@ -71,6 +74,8 @@ Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisä
 -   [Organisaation sisältöpakettien luominen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Tietojen mallinnus Power BI:n avulla](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Power BI -ruutujen lisääminen työtiloihin](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-orders-for-a-project"></a>Projektin ostotilaukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan eri menetelmiä, joiden avulla voi luoda ostotilauksia projektia varten. Käytettävä menetelmä määräytyy ostotilauksen tarkoituksen, ostettujen nimikkeiden kulutusajankohdan sekä ostettujen nimikkeiden veloitusajankohdan mukaan.
 
--Microsoft Dynamics 365 operaatioille voit luoda ostotilauksia projekti useita menetelmiä. Käytettävä menetelmä määräytyy ostotilauksen tarkoituksen, ostettujen nimikkeiden kulutusajankohdan sekä ostettujen nimikkeiden veloitusajankohdan mukaan.
+Microsoft Dynamics 365 for Operations -järjestelmässä voit luoda projektin ostotilauksia monella eri tavalla. Käytettävä menetelmä määräytyy ostotilauksen tarkoituksen, ostettujen nimikkeiden kulutusajankohdan sekä ostettujen nimikkeiden veloitusajankohdan mukaan.
 
 ### <a name="methods-for-creating-a-purchase-order"></a>Menetelmät ostotilauksen luomiseksi
 
@@ -71,6 +74,8 @@ Voit luoda ostotilauksen projektinhallinnassa ja kirjanpidossa käyttämällä j
 </table>
 
 > [!NOTE] 
-> Kun toimittajalasku tai pakkausluettelo päivitetään, sinua pyydetään päivittämään nimiketarpeen pakkausluettelon.
+> Kun toimittajalasku tai pakkausluettelo päivitetään, ohjelma pyytää päivittämään nimiketarpeen pakkausluettelon.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Poistokirjan päivityksen yleiskatsaus"
-description: "Aiemmissa versioissa oli kaksi arvostus käsitteiden käyttöomaisuus - arvomallit ja poistokirjat. Microsoft Dynamics 365 for Operations -versiossa 1611 arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, josta käytetään nimitystä &quot;kirja&quot;. Tämä aihe käsittelee päivityksessä huomioitavia seikkoja."
+description: "Aiemmissa julkaisuversioissa oli kaksi käyttöomaisuuserien arviointikäsitettä: arvomallit ja poistokirjat. Microsoft Dynamics 365 for Operations -versiossa 1611 arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, josta käytetään nimitystä &quot;kirja&quot;. Tämä aihe käsittelee päivityksessä huomioitavia seikkoja."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,57 +26,62 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-book-upgrade-overview"></a>Poistokirjan päivityksen yleiskatsaus
 
-Aiemmissa versioissa oli kaksi arvostus käsitteiden käyttöomaisuus - arvomallit ja poistokirjat. Microsoft Dynamics 365 for Operations -versiossa 1611 arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, josta käytetään nimitystä "kirja". Tämä aihe käsittelee päivityksessä huomioitavia seikkoja. 
+[!include[banner](../includes/banner.md)]
 
-Päivitysprosessi siirtää aiemmin määritetyt asetukset ja kaikki olemassa olevat tapahtumat uuden kirjan rakenteeseen. Arvomallit säilyvät nykyisellään, kirjana joka tekee kirjauksia kirjanpitoon. Poistokirjat siirretään kirjaan, jonka **Kirjaa kirjanpitoon** -asetus on **Ei**. Poistokirjan kirjauskansioiden nimet siirretään kirjanpidon Kirjauskansionimi jonka Kirjaustaso määrittää **ei mitään**. Poistokirjatapahtumat siirretään käyttöomaisuustapahtumia. 
+
+Aiemmissa julkaisuversioissa oli kaksi käyttöomaisuuserien arviointikäsitettä: arvomallit ja poistokirjat. Microsoft Dynamics 365 for Operations -versiossa 1611 arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, josta käytetään nimitystä "kirja". Tämä aihe käsittelee päivityksessä huomioitavia seikkoja. 
+
+Päivitysprosessi siirtää aiemmin määritetyt asetukset ja kaikki olemassa olevat tapahtumat uuden kirjan rakenteeseen. Arvomallit säilyvät nykyisellään, kirjana joka tekee kirjauksia kirjanpitoon. Poistokirjat siirretään kirjaan, jonka **Kirjaa kirjanpitoon** -asetus on **Ei**. Poistokirjan kirjauskansioiden nimet siirretään kirjanpidon kirjauskansion nimeen, jonka kirjanpitotasoksi on määritetty **Ei mitään**. Poistokirjatapahtumat siirretään käyttöomaisuustapahtumiin. 
 
 Ennen tietojen päivityksen suorittamista sinun on hyvä ymmärtää käytettävissä olevat kaksi vaihtoehtoa poistokirjan kirjauskansion rivien päivittämiseksi tapahtumatositteisiin, ja numerosarja, jota käytetään tositesarjaan. 
 
-Vaihtoehto 1: **Järjestelmän määrittämä numerosarjan**: tämä on oletusasetus päivityksen suorituskyvyn parantamiseksi. Päivitys ei käytä numerosarjojen kehystä, mutta sen sijaan kohdistaa tositteet joukkoon perustuvan mallin pohjalta. Päivityksen jälkeen, järjestelmä luo uuden numerosarjan kanssa **seuraavan määritettynä** asianmukaisesti päivitetty tapahtumien perusteella. Oletusarvon mukaan käytettävä numerosarja on FADBUpgr\#\#\#\#\#\#\#\#\# muodossa. Voit säätää tätä lähestymistapaa käytettäessä muotoilu on muutamia parametreja:
+Vaihtoehto 1: **Järjestelmän määrittämä numerosarjan**: tämä on oletusasetus päivityksen suorituskyvyn parantamiseksi. Päivitys ei käytä numerosarjojen kehystä, mutta sen sijaan kohdistaa tositteet joukkoon perustuvan mallin pohjalta. Päivityksen jälkeen uusi numerosarjan luodaan **Seuraava numerosarja** asianmukaisesti päivitettyjen tapahtumien perusteella. Oletuksena käytettävä numerosarjan muoto on FADBUpgr\#\#\#\#\#\#\#\#\#. Voit muuttaa muotoa muutamien parametrien avulla käyttäen tätä menetelmää:
 
--   **Numerojärjestyskoodi** – voit määrittää numerosarjan koodi. Tämä numerosarja ei voi olla koska se luodaan päivityksen.
+-   **Numerosarjan koodi**: koodi numerosarjan tunnistamiseen. Tätä numerosarjan koodia ei ole olemassa, sillä koodi luodaan päivityksen jälkeen.
     -   Vakion nimi: **NumberSequenceDefaultCode**
     -   Oletusarvo: "FADBUpgr"
 -   **Etuliite**: kiinteä merkkijonon arvo, jota käytetään etuliitteenä tositenumeroissa.
     -   Vakion nimi: **NumberSequenceDefaultParameterPrefix**
     -   Oletusarvo: "FADBUpgr"
 -   **Aakkosnumeerinen pituus**: aakkosnumeerisen segmentin numerosarjan pituus.
-    -   Vakiona nimi: ** NumberSequenceDefaultParameterAlpanumericLength **
+    -   Vakion nimi: **NumberSequenceDefaultParameterAlpanumericLength**
     -   Oletusarvo: 9
 -   **Ensimmäinen numero**: numerosarjan ensimmäinen numero.
-    -   Vakiona nimi: ** NumberSequenceDefaultParameterStartNumber **
+    -   Vakion nimi: **NumberSequenceDefaultParameterStartNumber**
     -   Oletusarvo: 1
 
-Vaihtoehto 2: **aiemmin luotu käyttäjän määrittämä numerosarja** -tämän vaihtoehdon avulla voit määrittää numerosarja, jota voidaan käyttää päivitystä varten. Harkitse tämän vaihtoehdon numero järjestyksessä kokoonpano tarvittaessa. Käytettävä numerosarja on muokattava päivityksen luokka ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans, jossa on seuraavat tiedot:
+Vaihtoehto 2: **Aiemmin käyttäjän luoma numerosarja**: tämän vaihtoehdon avulla voit määrittää päivitystä varten käytettävän numerosarjan. Tämä vaihtoehto kannattaa, jos tarvitaan edistynyttä numerosarjan konfigurointia. Numerosarjan käyttöä varten on muokattava päivitysluokkaa ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans seuraavilla tiedoilla:
 
 -   **Numerosarjan koodi**: Numerosarjan koodi.
-    -   Vakiona nimi: ** NumberSequenceExistingCode **
+    -   Vakion nimi: **NumberSequenceExistingCode**
     -   Oletusarvo: Ei oletusarvoa, tämä on päivitettävä numerosarjan koodiksi.
--   **Jaettu numerosarja**: totuusarvo, jolla tunnistetaan numerosarjan vaikutusalue. Käytä jaetun numerosarjan arvoa "tosi" kaikissa yrityksissä ja arvoa "false" yrityskohtaisella alueella. Käytettäessä "false", on oltava jokaisessa yrityksessä, joka sisältää poistokirjatapahtumat numerosarja, jolla on määritetty nimi. Jokaista osiota, joka sisältää poistokirjatapahtumat ole jaettu numerosarjoja.
-    -   Vakiona nimi: ** NumberSequenceExistingIsShared **
+-   **Jaettu numerosarja**: totuusarvo, jolla tunnistetaan numerosarjan vaikutusalue. Käytä jaetun numerosarjan arvoa "tosi" kaikissa yrityksissä ja arvoa "false" yrityskohtaisella alueella. Käytettäessä "false"-arvoa samanniminen numerosarja on oltava kaikissa yrityksissä, joissa on poistokirjatapahtumia. Jaettuja numerosarjoja on jokaisessa osiossa, joka sisältää poistokirjatapahtumia.
+    -   Vakion nimi: **NumberSequenceExistingIsShared**
     -   Oletusarvo: tosi
 
-Parametrit sijaitsevat ReleaseUpdateDB70 alussa\_FixedAssetJournalDepBookRemovalDepBookJournalTrans-luokkaa. 
+Parametrit ovat ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans -luokan alussa. 
 
-*Parempi lähestymistapa tositteet kohdistuksen määrittäminen*<ph id="t1">
-</ph>*/ / arvo on true, jos haluat käyttää aiemmin numerosarjakoodi*<ph id="t2">
-</ph>*/ / arvo on false, jos aiot käyttää järjestelmän määrittämiä numerosarja (oletus)* vakio boolean NumberSequenceUseExistingCode = false;  
+*// Tositteiden kohdistuksen ensisijaisen menetelmän määrittäminen* 
+*// tosi, jos haluat käyttää aiemmin luotua numerosarjan koodia* 
+*// epätosi, jos aiot käyttää järjestelmän määrittämää numerosarjaa (oletus)* const boolean NumberSequenceUseExistingCode = false;  
 
-*Jos järjestelmän määrittämä numero sarja lähestymistapa, Määritä numerosarja parametrit. *<ph id="t3">
-</ph>*/ / Uusi nimiketunnus numerosarjaan luodaan näillä parametreilla.* Const str NumberSequenceDefaultCode = 'FADBUpgr'; Const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; CONST int NumberSequenceDefaultParameterAlpanumericLength = 9; CONST int NumberSequenceDefaultParameterStartNumber = 1;   
+*// Jos käytetään järjestelmän määrittämää numerosarjaa, määritä numerosarjan parametrit.*
+*// Näillä parametreilla luodaan uusi numerosarja.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
 
-*Jos olemassa oleva numero sarja lähestymistapa, Määritä nykyisen numerosarjakoodi. *<ph id="t4">
-</ph>*/ / Tositteen kohdistus siirtyy rivin rivin osalta olemassa olevia numerosarjoja.* Const str NumberSequenceExistingCode = ''; */ / Soveltamisala nykyisen numerosarjakoodi*<ph id="t5">
-</ph>*/ / arvo on TOSI, jos määritetty numerosarja on jaettu*<ph id="t6">
-</ph>*/ / arvo on false, jos määritetty numerosarja on yrityskohtainen*<ph id="t7">
-</ph>*/ / järjestelmän määrittämiä oletusnumerojärjestystä käytetään, jos ei löydy määritetyn alueen kanssa numerosarjakoodi.* const boolean NumberSequenceExistingIsShared = true; 
+*// Jos käytetään aiemmin luotua numerosarjaa, anna nykyinen numerosarjan koodi* 
+*// Tositteen kohdistus siirtyy riveittäin käyttämään aiemmin luotua numerosarjaa.* const str NumberSequenceExistingCode = ''; *// Määritä aiemmin luodun numerosarjan koodin vaikutusalue* 
+*// tosi, jos annettu numerosarja on jaettu* 
+*// epätosi, jos annettu numerosarja on yrityskohtainen* 
+*// Järjestelmän määrittämää oletusnumerosarjaa käytetään, jos määritetyllä alueella olevaa numerosarjaa ei löydy.* const boolean NumberSequenceExistingIsShared = true; 
 
 Muodosta uudelleen projekti, joka sisältää luokan vakioiden muuttamisen jälkeen. 
 
-Järjestelmä luo numeron sarja lähestymistapa (vaihtoehto 1) käytettäessä päivitystä käyttää joukko tapahtuva käsittely kohdistamaan tositenumeroita määriteltyjä päivityksen Komentosarjaparametrit. Se luo myös uuden numerosarjan annetuilla parametreilla kohdistuksen jälkeen. 
+Käytettäessä järjestelmän luomaa numerosarjaa (vaihtoehto 1) päivitys käyttää joukkoon perustuvaa käsittelyä kohdistaessaan tositenumerot päivityskomentosarjan parametrien mukaisesti. Se luo myös uuden numerosarjan määritetyillä parametreilla kohdistuksen jälkeen. 
 
-Käytettäessä käyttäjän määrittämää numerosarjaa (vaihtoehto 2) tietopäivitys tarkistaa, esiintyykö määritetyllä alueella vaikuttava numerosarja jokaisen osion tietokannassa ja yrityksessä, jolla on poistokirjatapahtumia. Jos sitä ole päivitys käyttää rivin rivin käsittelyn kohdistamaan tositenumeroita numero sarja puitteiden avulla numerosarjan mukaisesti. Jos numerosarja ei ole määritetyn alueen, päivitys käyttää oletusarvoisesti järjestelmän määrittämiä numero sarja lähestymistapa varata tositenumeroiden ja luo uusi numerosarja on määritetty oletusparametrit kohdistuksen jälkeen.
+Käytettäessä käyttäjän määrittämää numerosarjaa (vaihtoehto 2) tietopäivitys tarkistaa, esiintyykö määritetyllä alueella vaikuttava numerosarja jokaisen osion tietokannassa ja yrityksessä, jolla on poistokirjatapahtumia. Jos se esiintyy, päivitys kohdistaa tositenumerot riveittäin numerosarjan määrittämällä tavalla käyttäen numerosarjan kehystä. Jos numerosarjaa ei ole olemassa määritetyllä alueella, päivitys käyttää oletusarvona olevaa järjestelmän määrittämää numerosarjaa tositenumeroiden kohdistamiseen ja luo uuden numerosarjan määritetyillä oletusparametreilla kohdistuksen jälkeen.
 
 Kummassakin menetelmässä tietojen päivityskomentosarja käyttää myös numerosarjaa **Tositesarja**-kentässä uusissa kirjauskansion nimissä, jotka luotiin vanhan poistokirjan kirjauskansion nimiä varten.
+
+
 
 

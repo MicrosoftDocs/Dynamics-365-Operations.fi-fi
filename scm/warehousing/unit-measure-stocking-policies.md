@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="unit-of-measure-and-stocking-policies"></a>Mittayksikköä ja varastointikäytännöt
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, kuinka oletusyksiköitä, yksikön sarjoja ja yksikkömuunnoksia käytetään varastoprosesseissa.
 
-Yksikön sarjaryhmä määrittää varastotoimenpiteissä käytettävän yksiköiden sarjan. Ne luodaan **järjestyksessä yksikköryhmät** sivulla. Järjestys näkyy suhde eri yksiköiden. Esimerkki: Varastoit kuormalavoja, joiden sisältämät laatikot sisältävät yksittäisiä nimikkeitä. Tällöin sinun on syötettävä kolme eri yksikköä ja tasojen looginen järjestys. Yksikön sarjaryhmien avulla voit määritellä rekisterikilpien ryhmittelykäytäntöjä ja oletusyksiköitä, joita eri varastoprosesseissa on käytettävä. Tämä artikkeli koskee sekä varastonhallinnassa käytettävää edistyksellistä varastonhallintaratkaisua että inventaarionhallinnassa käytettävää perustason varastonhallintaratkaisua.
+Yksikön sarjaryhmä määrittää varastotoimenpiteissä käytettävän yksiköiden sarjan. Ne luodaan **Yksikön sarjaryhmät** -sivulla. Sarja osoittaa eri yksiköiden välisen suhteen. Esimerkki: Varastoit kuormalavoja, joiden sisältämät laatikot sisältävät yksittäisiä nimikkeitä. Tällöin sinun on syötettävä kolme eri yksikköä ja tasojen looginen järjestys. Yksikön sarjaryhmien avulla voit määritellä rekisterikilpien ryhmittelykäytäntöjä ja oletusyksiköitä, joita eri varastoprosesseissa on käytettävä. Tämä artikkeli koskee sekä varastonhallinnassa käytettävää edistyksellistä varastonhallintaratkaisua että inventaarionhallinnassa käytettävää perustason varastonhallintaratkaisua.
 
 ## <a name="unit-sequence-groups-for-released-products"></a>Yksikön sarjaryhmät vapautetuille tuotteille
-Jos haluat käyttää vapautettuja tuotteita varaston työprosesseissa, niille täytyy määrittää yksikön sarjaryhmä. Jos vahvistat tuotteen, joka on liitetty johonkin varastodimensioryhmään ja kyseisen varastodimensioryhmän **Käytä varastonhallintaprosesseja** -vaihtoehdoksi on asetettu **Kyllä**, näyttöön tulee virhesanoma, jos yksikön sarjaryhmän tunnusta ei ole määritetty tuotteelle. Jos sarja yksikköryhmä, jota käytät sisältää useita rivejä (ja näin ollen useita yksiköitä), yksikön muuntaminen yksiköiden välillä on määritettävä. Voit suorittaa tämän asennuksen käyttöön **yksikkömuunnokset** sivulla. Vapautettuun tuotteeseen liitettävän sarjaryhmän pienimmän yksikön on täsmättävä vastaavalle tuotteelle määritetyn varastoyksikön kanssa. Varastoyksikkö on yksikkö, jota käytetään käytettävissä olevan varaston peruslaskutoimituksissa. Voit myös määrittää mittayksikkömuunnokset päätuotteiden tuotevarianteille käyttämällä **Ota käyttöön mittayksiköiden muunnokset** -vaihtoehtoa.
+Jos haluat käyttää vapautettuja tuotteita varaston työprosesseissa, niille täytyy määrittää yksikön sarjaryhmä. Jos vahvistat tuotteen, joka on liitetty johonkin varastodimensioryhmään ja kyseisen varastodimensioryhmän **Käytä varastonhallintaprosesseja** -vaihtoehdoksi on asetettu **Kyllä**, näyttöön tulee virhesanoma, jos yksikön sarjaryhmän tunnusta ei ole määritetty tuotteelle. Jos käyttämässäsi yksikön numerosarjaryhmässä on useita rivejä (ja siten useita yksiköitä), yksiköiden välille on määritettävä yksikkömuunnos. Tämän asetuksen voi tehdä **Yksikkömuunnokset**-sivulla. Vapautettuun tuotteeseen liitettävän sarjaryhmän pienimmän yksikön on täsmättävä vastaavalle tuotteelle määritetyn varastoyksikön kanssa. Varastoyksikkö on yksikkö, jota käytetään käytettävissä olevan varaston peruslaskutoimituksissa. Voit myös määrittää mittayksikkömuunnokset päätuotteiden tuotevarianteille käyttämällä **Ota käyttöön mittayksiköiden muunnokset** -vaihtoehtoa.
 
 ## <a name="license-plate-grouping"></a>Rekisterikilpiryhmitys
 Voit määrittää, ryhmitelläänkö tiettyä yksikköä pienemmät tai suuremmat vastaanotot yhdeksi rekisterikilveksi vai jaetaanko ne yksikkökohtaisille rekisterikilville. Voit määrittää tämän käyttämällä **Yksikön sarjaryhmät** -sivun **Rivin erittely** -välilehden **Rekisterikilpiryhmitys**-vaihtoehtoa. Jos haluat käyttää rekisterikilpiryhmittelyä, kun työ käsitellään mobiililaitteella, sinun on valittava **Mobiililaite**-valikkovaihtoehdolle **Rekisterikilpiryhmitys**-vaihtoehto. Esimerkki: Rekisteröit mobiililaitteella nimikettä, joka on liitetty kaksi riviä sisältävään yksikön sarjaryhmään. Ensimmäinen rivi koskee kappaleita, ja **Rekisterikilpiryhmittely**-asetuksena on **Kyllä**. Toinen rivi koskee kuormalavayksikköä, ja **Rekisterikilpiryhmittely**-asetuksena on **Ei**. Tällöin järjestelmä voi ohjata jakoa ja rekisterikilpien luontia 100 kappaleen erinä automaattisesti.
@@ -45,5 +48,7 @@ Jos haluat määrittää oletusyksiköt mobiililaitteilla tapahtuvia vastaanotto
 
 ## <a name="default-order-settings"></a>Tilauksen oletusasetukset
 Vapautettuja tuotteita luodessasi sinun täytyy valita oletusyksiköt ostoille, myynneille ja varastolle eri tilausten käsittelyä varten. Voit määrittää oletusyksiköt ja määrät eri lähdeasiakirjoille **Tilauksen oletusasetukset**- ja **Toimipaikkakohtaiset tilausasetukset** -sivuilla. Voit avata nämä sivut **Vapautetut tuotteet** -sivulta.
+
+
 
 

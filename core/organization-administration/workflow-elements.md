@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-elements"></a>Työnkulun elementit
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan eri osia, jotka muodostavat työnkulun.
 
 Työnkulku koostuu elementeistä. Seuraavissa osissa kuvataan kutakin elementtityyppiä.
@@ -55,14 +58,14 @@ Työnkulku koostuu elementeistä. Seuraavissa osissa kuvataan kutakin elementtit
 -   Muutospyyntö.
 -   Tiedoston siirtäminen toisen käyttäjän hyväksyttäväksi.
 
-## <a name="lineitem-workflow-elements"></a>Työnkulun elementtien Lineitem
-Työnkulku voidaan luoda käsittelemään tiedostoja tai sen rivinimikkeitä. Oletetaan esimerkiksi, että olet luonut aikaraporttien hyväksymistyönkulun. (Olemme viittaavat tämän työnkulun *asiakirjan työnkulun*.) Voit lisätä *rivinimikkeen työnkulun* asiakirjan työnkulun elementti. Rivinimikkeen elementtiä suoritettaessa kukin asiakirjan rivinimike lähetetään käsiteltäväksi. Voit määrittää, käsitteleekö sama rivinimikkeiden työnkulku kaikki rivinimikkeet, tai määrittää rivinimikkeille omat rivinimikkeen työnkulut. Oletetaan, että työntekijä on lähettänyt aikaraportin, joka muistuttaa seuraavaa kuvaa. ![Workflow with line items](./media/workflow_lineitemworkflow.gif) Tässä skenaariossa voit luoda seuraavat rivinimikkeiden työkulut:
+## <a name="lineitem-workflow-elements"></a>Rivinimikkeen työnkulun elementit:
+Työnkulku voidaan luoda käsittelemään tiedostoja tai sen rivinimikkeitä. Oletetaan esimerkiksi, että olet luonut aikaraporttien hyväksymistyönkulun. (Siihen viitataan *asiakirjan työnkulkuna*.) Voit lisätä *rivinimikkeen työnkulun* elementin kyseiseen asiakirjan työnkulkuun. Rivinimikkeen elementtiä suoritettaessa kukin asiakirjan rivinimike lähetetään käsiteltäväksi. Voit määrittää, käsitteleekö sama rivinimikkeiden työnkulku kaikki rivinimikkeet, tai määrittää rivinimikkeille omat rivinimikkeen työnkulut. Oletetaan, että työntekijä on lähettänyt aikaraportin, joka muistuttaa seuraavaa kuvaa. ![Workflow with line items](./media/workflow_lineitemworkflow.gif) Tässä skenaariossa voit luoda seuraavat rivinimikkeiden työkulut:
 
 -   **Rivinimikkeen työnkulku 1** – Työnkulkua käytetään projektitunnuksella 1111 varustettujen rivinimikkeiden käsittelemiseen.
 -   **Rivinimikkeen työnkulku 2** – Työnkulkua käytetään projektitunnuksella 2222 varustettujen rivinimikkeiden käsittelemiseen.
 -   **Rivinimikkeen työnkulku 3** – Työnkulkua käytetään projektitunnuksella 3333 varustettujen rivinimikkeiden käsittelemiseen.
 
-## <a name="flowcontrol-elements"></a>FlowControl-elementit
+## <a name="flowcontrol-elements"></a>Työnkulun ohjauksen elementit
 Seuraavien elementtien avulla voit suunnitella työnkulkuja, joissa on vaihtoehtoisia tai samanaikaisesti suoritettavia haaroja.
 
 ### <a name="manual-decision"></a>Manuaalinen päätös
@@ -80,5 +83,7 @@ Myös *ehdollinen päätös* on piste, jossa työnkulku jakautuu kahteen haaraan
 ### <a name="subworkflow"></a>Alityönkulku
 
 *Alityönkulku* suoritetaan toisen työnkulun yhteydessä.
+
+
 
 

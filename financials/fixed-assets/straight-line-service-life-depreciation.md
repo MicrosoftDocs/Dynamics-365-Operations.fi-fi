@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="straight-line-service-life-depreciation"></a>Käyttöikään perustuva tasapoisto
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on yleiskuvaus käyttöikään perustuvasta tasapoistomenetelmästä.
 
 Jos määrität käyttöomaisuudelle poistoprofiilin ja valitset Tasapoisto - käyttöaika -asetuksen Poistoprofiilit-sivun Menetelmä-kentästä, niiden käyttöomaisuuserien poisto, joille on määritetty tämä poistoprofiili, perustuu käyttöomaisuuden jäljellä olevaan käyttöikään. Tavallisesti poiston määrä on tällöin sama kullakin poistojaksolla. 
@@ -57,7 +60,7 @@ Jos valitset esimerkiksi Vuosittain, vuoden poisto kirjataan vain kerran eli kun
 
 Jos valitset Poistovuosi-kentästä Tilivuosi-vaihtoehdon, käytetään käyttöaikaan perustuvaa tasapoistomenetelmää. Se lasketaan tilivuodesta, jonka määrittää kirjalle määritetty kirjanpidon vuosikalenteri tai Kirjanpito-sivulla valittu kirjanpidon vuosikalenteri. Kirjanpidon vuosikalenterit määritetään Kirjanpidon kalenterit -sivulla.
 
-Esimerkiksi tilikauden heinäkuun 1. – 30. kesäkuuta poiston laskeminen alkaa heinäkuun 1. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto oikaistaan automaattisesti jokaisella tilikaudella. Seuraavan tilikauden pituus perustuu Kirjanpidon kalenterit -lomakkeessa uuden tilikauden luomisen yhteydessä määritettyihin tilikausiin. 
+Esimerkiksi tilikauden 1.7–30.6. poistojen laskeminen alkaa 1.7. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto oikaistaan automaattisesti jokaisella tilikaudella. Seuraavan tilikauden pituus perustuu Kirjanpidon kalenterit -lomakkeessa uuden tilikauden luomisen yhteydessä määritettyihin tilikausiin. 
 
 Jos valitset tilivuoden, seuraavat vaihtoehdot ovat käytettävissä Kausiväli-kentässä:
 -   Vuosittain-vaihtoehto kirjaa tilikaudelle lasketun poiston kokonaismäärän yhtenä summana tilikauden viimeisenä päivänä.
@@ -98,9 +101,11 @@ Hankintaoikaisun käyttöaika on sama kuin käyttöomaisuuserän käyttöaika ja
 | Vuosi 3 | 14 000 / 5 = 2 800                        | 10 200 - 2 800 = 7 400                |
 | Vuosi 4 | 14 000 / 5 = 2 800                        | 7 400 - 2 800 = 4 600                 |
 | Vuosi 5 | 14 000 / 5 = 2 800                        | 4 600 - 2 800 = 1 800                 |
-| Vuosi 6 | Jäljellä oleva 800\*                           | 1 800 – 800 = 1 000                   |
+| Vuosi 6 | Jäljellä oleva arvo 800\*                           | 1 800 – 800 = 1 000                   |
 
-\*Koska jäljellä oleva summa on pienempi kuin poiston määrä, otetaan vain jäljellä oleva summa vähennettynä jäännösarvolla.
+\*Koska jäännösarvo on pienempi kuin poistosumma, kirjataan vain jäännösarvolla vähennetty jäljellä oleva summa.
+
+
 
 
 

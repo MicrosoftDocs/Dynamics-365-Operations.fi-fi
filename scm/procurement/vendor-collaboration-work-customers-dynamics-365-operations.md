@@ -27,14 +27,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-collaboration-with-customers"></a>Toimittajayhteistyö asiakkaiden kanssa
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä aiheessa kuvataan, miten voit käyttää ostotilauksia toimittajayhteistyön avulla Microsoft Microsoft Dynamics 365 for Operations -ympäristössä ja valvoa tavaralähetysvarastoa.
 
-Tässä aiheessa kuvataan, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa Microsoft Microsoft Dynamics 365 for Operations -ympäristössä. Se sisältää tietoja valvomisesta ja vastata ostotilaukset ja valvoa lähetyksen. On myös mahdollista käsitellä laskuja toimittajan yhteistyön avulla. Lisätietoja on ohjeaiheessa [toimittaja yhteistyö laskutusta työtilan](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+Tässä aiheessa kuvataan, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa Microsoft Microsoft Dynamics 365 for Operations -ympäristössä. Aihe sisältää tietoja ostotilausten seuraamisesta ja niihin vastaamisesta sekä tavaralähetysvaraston valvonnasta. Toimittajayhteistyötä on myös mahdollista käyttää laskujen käsittelyyn. Saat lisätietoja kohdasta [Toimittajayhteistyön laskutustyötila](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
 
 ## <a name="working-with-purchase-orders"></a>Ostotilausten käsittely
 **Ostotilauksen vahvistus** -työtilan avulla voit vastata ostotilauksiin, jotka on lähetetty sinulle tarkistusta varten. Voit myös tarkastella ostotilauksen tietoja, jotka odottavat toimenpidettä asiakkaalta, ja ostotilauksia jotka on vahvistettu mutta edelleen avoimia. **Ostotilauksen vahvistus** -työtilassa on kolme luetteloa:
 
--   **Ostotilausten tarkasteleminen** -POs, jotka on lähetetty ja jotka odottavat vastauksen tässä luettelossa. Kun olet vastannut PO häviää. Jos asiakas lähettää uuden version ostotilauksesta ennen kuin olet vastannut edelliseen, ainoastaan uusin versio näkyy luettelossa.
+-   **Tarkistettavat ostotilaukset**: luettelossa näkyvät kaikki sinulle lähetetyt ostotilaukset, jotka odottavat vastaustasi. Kun olet vastannut, ostotilaus poistuu luettelosta. Jos asiakas lähettää uuden version ostotilauksesta ennen kuin olet vastannut edelliseen, ainoastaan uusin versio näkyy luettelossa.
 -   **Odottaa asiakkaan toimintoa**: luettelossa voit selata ostotilauksia, joihin olet vastannut mutta joita asiakas ei ole vielä vahvistanut. Jos olet hyväksynyt ostotilauksen, voit valvoa sitä luettelossa, kunnes tilaksi muuttuu **vahvistettu**. Jos hylkäsit ostotilauksen tai hyväksyit sen muutosten kera, voit valvoa ostotilausta luettelossa, kunnes asiakas lähettää uuden version.
 -   **Avoimet vahvistetut ostotilaukset**: luettelo sisältää kaikki tililläsi olevat ostotilaukset, joiden tila on **vahvistettu**. Kun kaikki ostotilausta vastaavat tuotteet tai palvelut on vastaanotettu, ostotilaus poistuu luettelosta.
 
@@ -47,7 +50,7 @@ Seuraavassa luettelossa on neljä sivua, joiden avulla voit käsitellä ostotila
 
 ### <a name="responding-to-purchase-orders"></a>Ostotilauksiin vastaaminen
 
-Ostotilaukset, jotka asiakas on lähettänyt läpi, ne näkyvät **ostotilauksen vahvistus** työtilan ja **ostotilausten tarkasteleminen** sivun. Kun olet avannut Ostotilauksen, voit hyväksyä sen, hylätä tai hyväksyä sen muutoksilla. Ostotilauksen otsikossa tai yksittäisillä riveillä voi olla liitteitä. Voit liittää tietoja vastaukseesi ostotilauksen otsikkoon tai yksittäisille riveille. Voit esimerkiksi ehdottaa korvaavaa nimikettä yhdelle riville. Voit esikatsella ja tulostaa ostotilauksen PDF-muodossa **Esikatselu/tulostus** -asetuksella. Voit piilottaa tai näyttää seuraavat dimensiosarakkeet **Näytä dimensiot** -toiminnolla: toimipaikka, varasto, väri, koko, malli, konfiguraatio. Jos käytät **Hyväksy muutokset** vaihtoehto, voit hyväksyä tai hylätä yksittäisiä rivejä. Voit myös tehdä seuraavat muutokset rivit:
+Asiakkaan tarkastettaviksi lähettämät ostotilaukset näkyvät **Ostotilauksen vahvistus** -työtilassa ja **Tarkistettavat ostotilaukset** -sivulla. Kun olet avannut ostotilauksen, voit hyväksyä, hylätä tai hyväksyä ostotilauksen muutosten kera. Ostotilauksen otsikossa tai yksittäisillä riveillä voi olla liitteitä. Voit liittää tietoja vastaukseesi ostotilauksen otsikkoon tai yksittäisille riveille. Voit esimerkiksi ehdottaa korvaavaa nimikettä yhdelle riville. Voit esikatsella ja tulostaa ostotilauksen PDF-muodossa **Esikatselu/tulostus** -asetuksella. Voit piilottaa tai näyttää seuraavat dimensiosarakkeet **Näytä dimensiot** -toiminnolla: toimipaikka, varasto, väri, koko, malli, konfiguraatio. Käytettäessä **Hyväksy muutosten kera** -vaihtoehtoa, voit hyväksyä tai hylätä yksittäisiä rivejä. Voit tehdä seuraavia muutoksia riveille:
 
 -   Päivämäärien tai määrien muuttaminen. Jos haluat päivittää vahvistetun toimituspäivän kaikilla riveillä, valitse**Päivitä toimituspäivä** vaihtoehto ostotilauksen otsikossa.
 -   Rivien jakaminen eri toimituspäivämäärille tai määrille
@@ -58,7 +61,7 @@ Et voi muuttaa hinnoittelutietoja etkä maksuja, mutta voi tehdä muutosehdotuks
 ## <a name="monitoring-consignment-inventory"></a>Tavaralähetysvaraston valvonta
 Jos käytät tavaralähetysvarastoa, voit käyttää toimittajayhteistyöliittymää tietojen tarkasteluun seuraavilla sivuilla:
 
--   **Ostotilausten kuluttaa lähetyksen varaston** -lähetyksen varaston ostotilaukset luodaan, kun varaston asiakkaan omistukseen. Nämä tavaralähetyksen ostotilaukset näytetään vain **Tavaralähetysvarastoa vähentävät ostotilaukset** -sivulla. Ne eivät sisälly **Kaikki vahvistetut ostotilaukset** -sivulle.
+-   **Tavaralähetysvarastoa pienentävät ostotilaukset** - Tavaralähetysvaraston ostotilaukset luodaan, kun varaston omistajuus vaihtuu asiakkaalle. Nämä tavaralähetyksen ostotilaukset näytetään vain **Tavaralähetysvarastoa vähentävät ostotilaukset** -sivulla. Ne eivät sisälly **Kaikki vahvistetut ostotilaukset** -sivulle.
 -   **Tavaralähetysvarastosta vastaanotetut tuotteet**: sivulla luetteloidaan kaikki tapahtumat, joissa tuotteiden omistajuus siirretään varastoa käyttävälle yritykselle. Näiden tietojen avulla voit laskuttaa asiakasta.
 -   **Käytettävissä oleva tavaralähetysvarasto**: Tällä sivulla näkyy yrityksesi omistama käytettävissä oleva tavaralähetysvarasto, joka on käytettävissä asiakkaan varastossa.
 
@@ -67,5 +70,7 @@ Jos käytät tavaralähetysvarastoa, voit käyttää toimittajayhteistyöliittym
 --------
 
 [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md)
+
+
 
 

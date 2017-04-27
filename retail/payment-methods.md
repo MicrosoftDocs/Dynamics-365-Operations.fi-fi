@@ -1,6 +1,6 @@
 ---
 title: Maksutavat
-description: "Jokainen, joka hyväksyy vähittäiskauppiaan maksutyyppi on määritettävä-tuotepaketti ja Microsoft Dynamics-365 työvaiheiden kaupankäynnin järjestelmä on asetettu. Tässä artikkelissa kuvataan määritettävissä olevat maksutyypit ja niiden määrittämisessä vaadittava prosessi."
+description: "Kunkin jälleenmyyjän hyväksymä maksutapa on määritettävä Microsoft Dynamics 365 for Operations -järjestelmän Vähittäismyynti ja kauppa -asetuksissa määrityksen yhteydessä. Tässä artikkelissa kuvataan määritettävissä olevat maksutyypit ja niiden määrittämisessä vaadittava prosessi."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: MargoC
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="payment-methods"></a>Maksutavat
 
-Jokainen, joka hyväksyy vähittäiskauppiaan maksutyyppi on määritettävä-tuotepaketti ja Microsoft Dynamics-365 työvaiheiden kaupankäynnin järjestelmä on asetettu. Tässä artikkelissa kuvataan määritettävissä olevat maksutyypit ja niiden määrittämisessä vaadittava prosessi.
+[!include[banner](includes/banner.md)]
 
-Vähittäismyyjät voivat hyväksyä useantyyppisiä maksutapoja myymistään tuotteista ja palveluista. Käteinen on yleisin maksutapa, mutta vähittäismyyjät voivat myös vastaanottaa maksuja sekkeinä, maksukorteilla, lahjakorteilla ja niin edelleen. Jokainen, joka hyväksyy vähittäismyyjän maksutyyppi on määritettävä Dynamics 365 työvaiheiden - kun järjestelmä on määritetty Retail. Seuraavassa luettelossa kuvataan kutakin maksun, joka voidaan määrittää työvaiheiden - Retail 365 Dynamics:
+
+Kunkin jälleenmyyjän hyväksymä maksutapa on määritettävä Microsoft Dynamics 365 for Operations -järjestelmän Vähittäismyynti ja kauppa -asetuksissa määrityksen yhteydessä. Tässä artikkelissa kuvataan määritettävissä olevat maksutyypit ja niiden määrittämisessä vaadittava prosessi.
+
+Vähittäismyyjät voivat hyväksyä useantyyppisiä maksutapoja myymistään tuotteista ja palveluista. Käteinen on yleisin maksutapa, mutta vähittäismyyjät voivat myös vastaanottaa maksuja sekkeinä, maksukorteilla, lahjakorteilla ja niin edelleen. Kunkin jälleenmyyjän hyväksymä maksutapa on määritettävä Microsoft Dynamics 365 for Operations- Retail -järjestelmän määrityksen yhteydessä. Seuraavassa taulukossa kuvaillaan kaikki maksutavat, jotka ovat määritettävissä Microsoft Dynamics 365 for Operations - Retail -sovelluksessa:
 
 -   **Käteinen** – Valuutan fyysisessä muodossa oleva raha, kuten setelit ja kolikot. Tämä valuutta voi olla joko yrityksen valuutta tai myymälän paikallinen valuutta.
 -   **Sekki** – Siirrettävissä oleva maksuväline, jonka mukaan tiettynä valuuttana maksetaan tietty summa määritetystä pankista. Sekki on yleensä voimassa rajattoman ajan tai kuusi kuukautta sen antopäivämäärästä, ellei toisin ole määritetty. Voimassaoloaika vaihtelee sekin maksavasta pankista riippuen. Erilaisia sekkityyppejä ovat esimerkiksi määrännäissekit, avoimet sekit, haltijasekit ja sekä sekit, joita ei voida siirtää toiselle. Voit määrittää sekit maksutavaksi kullekin myymälälle erikseen. Sekit voi hyväksyä valuuttana, joka määritetään joko yritystasolla tai myymälän tasolla. Sekit on määritettävä maksutavaksi ennen kuin myymälä voi vastaanottaa maksuja sekkeinä.
@@ -39,14 +42,16 @@ Vähittäismyyjät voivat hyväksyä useantyyppisiä maksutapoja myymistään tu
 -   **Hyvityslasku** – Hyvityslaskut, jotka annetaan tai hyvitetään myyntipisteessä. Hyvityslasku voi olla joko hyvitys tai palautuslasku, joka annetaan palautetulle myynnille. Jos hyvityslaskut hyvitetään vain osittain, ohjelma myöntää uudella numerolla uuden hyvityslaskun jäljelle jäävästä saldosummasta. Uudella hyvityslaskulla on uusi numero. Hyvityslaskua voi käyttää vain kerran, ja järjestelmä pitää yllä tietuetta kaikista käytetyistä numeroista. Tietuetta voi tarkastella **Hyvityslaskutaulukko**-sivulla. Asiakas ei voi lunastaa hyvityslaskun arvoa suurempaa summaa.
 -   **Lahjakortti** – Lahjakortit, jotka myönnetään ja hyvitetään myyntipisteessä. Liikamaksu ei ole sallittu lahjakorteissa.
 -   **Asiakastili** – Maksuja, jotka voidaan veloittaa myyntiajankohtana kassakoneelta asiakastilille. Tämän maksutavan avulla voit kerätä myyntitietoja tai asiakaskohtaisia alennuksia, kun asiakas tekee maksuja toista maksutapaa käyttäen. Tätä varten on määritettävä asiakaskohtaiset tiedot.
--   **Kanta-asiakkuuspisteet** –, jotka asiakkaat – Kanta-asiakasohjelmat kertyy pisteitä. Jos Kanta-asiakasohjelmat, asiakkaat voivat ansaita pisteitä ja lunastaa ne eri tavalla. Joissain kanta-asiakasohjelmissa asiakkaat voivat esimerkiksi lunastaa kanta-asiakaspisteensä alennuksen muodossa tai jopa käyttää niitä maksamiseen.
+-   **Kanta-asiakkuuspisteet** – Pisteitä, joita asiakkaat kerryttävät osana kanta-asiakasohjelmaa. Jos luot kanta-asiakasohjelmia, asiakkaat voivat ansaita pisteitä ja saada niistä hyvityksen useilla tavoilla. Joissain kanta-asiakasohjelmissa asiakkaat voivat esimerkiksi lunastaa kanta-asiakaspisteensä alennuksen muodossa tai jopa käyttää niitä maksamiseen.
 
 Maksutavat määrität Vähittäismyynti ja kauppa -osiossa noudattamalla seuraavia vaiheita.
 
 1.  Aseta maksutavat organisaatiolle. Luo maksutavat, jotka hyväksytään koko organisaatiossa.
-2.  Organisaation laajuisten Korttityyppien ja korttien numeroiden luominen. Jos luottokortit tai pankkikortit hyväksytään, Luo yksi maksutapa-korttien ja luo sitten organisaation laajuiset korttityypit ja korttien numerot.
-3.  Määritä Tallenna maksutapa. Maksutapojen liittää kuhunkin myymälään ja määritä sitten myymäläkohtaiset asetukset kullekin maksutavalle.
-4.  Myymälöiden kortin Maksutapojen määrittäminen. Korttiasetukset valmiiksi minkä tahansa kortin maksutavat, jotka myymälä hyväksyy.
+2.  Organisaation laajuisten korttityyppien ja korttien numeroiden luominen. Jos luottokortit tai pankkikortit hyväksytään, luo ensin yksi korttimaksuvälinetyyppi ja luo sitten organisaation laajuiset korttityypit ja korttien numerot.
+3.  Myymälän maksutavan määrittäminen. Liitä maksutavat kuhunkin myymälään ja määritä sitten myymäläkohtaiset asetukset kullekin myymälän maksutavalle.
+4.  Aseta liikkeille korttimaksutavat. Suorita korttimaksujen määritys loppuun kaikille korttimaksutavoille, jotka hyväksyt liikkeessä.
+
+
 
 
 

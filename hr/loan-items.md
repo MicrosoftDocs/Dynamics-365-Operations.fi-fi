@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-items-lent-to-workers"></a>Työntekijöille lainattujen kohteiden hallinta
 
+[!include[banner](includes/banner.md)]
+
+
 Lainakohteet ovat tietueita, joiden avulla esimiehet voivat seurata yrityksen työntekijöille lainaamia fyysisiä kohteita. 
 
 Seuraavissa kohdissa on esimerkkejä kohteista, joita yritys voi lainata työntekijöille:
@@ -39,7 +42,7 @@ Jokaisella fyysisellä kohteella on oltava vastaava lainakohde. Jokaisessa laina
 
 Kun kohde lainataan, kirjataan sen lainauspäivämäärä ja suunniteltu palautuspäivämäärä. Kun kohde palautetaan, kirjataan todellinen palautuspäivämäärä.
 
-Työntekijät voivat tarkastella tietueita nimikkeistä, jotka on ollut lainattu ne Työntekijän itsepalvelun työtilan avulla. Ne voivat muokata aiemmin luotuja tietueita tai syöttää uuden lainan kohteita, jos ne olet saanut muita fyysisiä osia.  Työnkulku voidaan määrittää uuden tai aiemmin luodun lainauskohteiden hyväksyntäprosessin kautta reitin muutoksiin. 
+Työntekijät voivat heille lainattujen kohteiden tietueita Työntekijän itsepalvelu -työtilassa. He voivat myös muokata aiemmin luotuja tietueita tai kirjata uusia lainakohteita, jos he saavat uusia fyysisiä kohteita.  Työnkulku voidaan määrittää reitittämään uusien ja aiemmin luotujen lainakohteiden muutokset hyväksyntäprosessin vaiheissa. 
 
 Esimiehet voivat tarkastella suorille alaisille lainattuja kohteita. Heille voidaan myös myöntää oikeus lisätä uusia lainakohteita työntekijöiden puolesta.
 
@@ -52,6 +55,8 @@ Jos kohde vahingoittuu tai häviää, sille kirjataan fiktiivinen palautustietue
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Human resources](index.md)
+[Henkilöstöhallinto](index.md)
+
+
 
 

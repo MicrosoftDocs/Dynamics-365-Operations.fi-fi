@@ -26,8 +26,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="expense-management"></a>Matkalaskut
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 [Matkalaskujen suunnitteleminen](plan-expense-management.md) Lisätietoja saatavana myöhemmin.
+
+
 
 

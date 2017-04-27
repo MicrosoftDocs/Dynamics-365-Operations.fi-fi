@@ -29,9 +29,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-setup-requirements"></a>Tuotantoasetusten vaatimukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja asetuksista, jotka on tehtävä ennen tuotannonhallinnan aloittamista. 
 
-Laadunvalvonta on integroitu ominaisuuksia muissa moduuleissa. Siksi voit muuttaa tuotantotilauksia ja varmistaa, että ne päivitetään automaattisesti järjestelmän kaikissa muissa liittyvissä prosesseissa ja laskutoimituksissa. Seuraavat määritysprosessit käsitellään siinä järjestyksessä, missä ne on tehtävä.
+Tuotannonhallinta on integroitu muiden moduulien ominaisuuksien kanssa. Siksi voit muuttaa tuotantotilauksia ja varmistaa, että ne päivitetään automaattisesti järjestelmän kaikissa muissa liittyvissä prosesseissa ja laskutoimituksissa. Seuraavat määritysprosessit käsitellään siinä järjestyksessä, missä ne on tehtävä.
 
 ## <a name="required-baseline-setup-in-other-modules"></a>Muiden moduulien pakolliset perusasetukset
 Seuraavat tiedot on määritettävä muissa moduuleissa, ennen kuin voit käyttää tuotannonhallintaa. Nämä asetukset sisältävät seuraavat tehtävät:
@@ -52,7 +55,7 @@ Avaa ennen tuotannonhallinnan käyttöä Organisaation hallinto. Luo ja määrit
 4.  **Resurssit** – määritä tuotantoprosessin suorittamisessa ja kapasiteettisuunnittelussa käytettävät resurssit määrittämällä operatiiviset resurssit.
 
 ## <a name="required-production-parameters-setup"></a>Pakolliset tuotantoparametrien asetukset
-**Tuotannonohjauksen parametrit** – Määritä tuotannon perusparametrit määrittää, miten järjestelmä käsittelee ja käsittelee tuotantotilaukset. Määritä, miten tuotantotilaukset luodaan, arvioidaan, ajoitetaan ja kulutetaan. Voit myös valita, millaista palautetta haluat ja miten kustannuslaskenta tehdään.
+**Tuotannonhallinnan parametrit** – Määritä tuotannon perusparametrit, joiden mukaisesti järjestelmä käsittelee tuotantotilaukset. Määritä, miten tuotantotilaukset luodaan, arvioidaan, ajoitetaan ja kulutetaan. Voit myös valita, millaista palautetta haluat ja miten kustannuslaskenta tehdään.
 
 ## <a name="required-journal-name-identification"></a>Pakollinen kirjauskansion nimen tunnus
 **Tuotantokirjauskansioiden nimet** – Määritä tapahtumien kirjaamiseen käytettyjen tuotantokirjauskansioiden nimet.
@@ -76,6 +79,8 @@ Jos käytät reitityksiä, jokaiselle tuotantoreititykselle on määritettävä 
 1.  **Tuotantoryhmät** – Määritä tuotantoryhmät luomaan tuotetilausten ja kirjanpitotilien väliset suhteet. Kirjanpitotileillä tilaukset kirjataan tai ryhmitetään raportointia varten.
 2.  **Tuotantopoolit** – luo tuotantopooleja, joilla tuotantotilauksia ryhmitellään kiireellisten tuotantotilausten käsittelyä varten tai tilausryhmien poistamista ja kirjaamista varten.
 3.  **Ominaisuudet** – Määritä ominaisuudet luomaan erityismääritteet, jotka resursseille määritettyinä ohjaavat tuotantojen tilausta. Nämä määritteet on yhdistetty työaikamalliin.
+
+
 
 
 

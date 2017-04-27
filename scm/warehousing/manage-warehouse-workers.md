@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-warehouse-workers"></a>Varastotyöntekijöiden hallinta
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan, miten voit hyödyntää Microsoft Dynamics AX:ää työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
 
 Jos käytät tätä toimintoa varastonhallinnassa, kaikkiin varastotyöntekijöiden toimintoihin viitataan *työnä*. Työ, kuten käsillä olevan varaston keräily, siirtäminen ja laskeminen tallennetaan mobiililaitteiden avulla. Ennen kuin varastotyöntekijä voi suorittaa työn, hänen on oltava liitettynä työntekijään Henkilöstöhallinnossa. Jokaiseen **Työntekijä**-tiliin voi olla liitettynä useita varastotyökäyttäjiä. Nämä työn käyttäjät voivat työskennellä eri varastoissa ja heillä voi olla eritasoinen pääsy erilaisiin mobiililaitteen valikkoihin. Voit ajatella varastotyön käyttäjiä useina valitun työntekijän kirjautumisina. Kullakin työntekijällä on oletusvarasto, ja määrätyt työnkulut näkyvät kyseiselle työn käyttäjälle saatavilla olevien valikkovaihtoehtojen kautta. 
@@ -51,6 +54,8 @@ Analyysi työnimikkeiden viemästä ajasta voi auttaa edistämään parannuksia 
 
 -   **Käyttäjäkohtainen työ** – Tämä raportti näyttää työntekijöiden tuottavuuden perustuen toteutuneisiin aikoihin verrattuna odotettuihin aikoihin.
 -   **Työ tapahtumatyypin mukaan** – Voit käyttää tätä raporttia määrättyjen varastoprosessien tehottomuuden tutkimiseen. Huomaat esimerkiksi, että siirtotilausten keräily kestää pidempään tällä viikolla kuin aiempina viikkoina. Voit sitten käyttää näitä tietoja lisäselvityksiä varten.
+
+
 
 
 

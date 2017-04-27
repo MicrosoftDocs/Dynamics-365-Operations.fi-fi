@@ -1,5 +1,5 @@
 ---
-title: Tilauksen oletusasetukset mitat ja tuotevariantit
+title: Tilauksen oletusasetukset dimensioille ja tuotevarianteille
 description: "Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä. Tilauksen oletusasetuksia käytetään luotaessa ostotilauksia, myyntitilauksia, siirtotilauksia, varaston kirjauskansioita ja suunniteltujen tilausten luonnin pääsuunnittelussa. Tilauksen oletusasetukset voivat olla nimikekohtaisia, toimipaikkakohtaisia, tuotevarianttikohtaisia tai tuotedimensiokohtaisia."
 author: YuyuScheller
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="default-order-settings-for-dimensions-and-product-variants"></a>Tilauksen oletusasetukset mitat ja tuotevariantit
+# <a name="default-order-settings-for-dimensions-and-product-variants"></a>Tilauksen oletusasetukset dimensioille ja tuotevarianteille
+
+[!include[banner](../includes/banner.md)]
+
 
 Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä. Tilauksen oletusasetuksia käytetään luotaessa ostotilauksia, myyntitilauksia, siirtotilauksia, varaston kirjauskansioita ja suunniteltujen tilausten luonnin pääsuunnittelussa. Tilauksen oletusasetukset voivat olla nimikekohtaisia, toimipaikkakohtaisia, tuotevarianttikohtaisia tai tuotedimensiokohtaisia.
 
-Voit määrittää nimiketilausten oletusasetukset **Tilauksen oletusasetukset** -sivulla. Jos haluat avata tämän sivun, siirry **tuotetietojen hallinta**&gt;**tuotteiden**&gt;**vapautetut tuotteet**&gt; valitsemalla vapautetun tuotteen &gt; - **suunnitelma** tai *** hallita varaston *** toimintoruudun &gt;**tilauksen asetukset**&gt;**tilauksen oletusasetukset**.
+Voit määrittää nimiketilausten oletusasetukset **Tilauksen oletusasetukset** -sivulla. Voit avata sivun kohdassa **Tuotetietojen hallinta** &gt; **Tuotteet** &gt; **Vapautetut tuotteet** &gt; valitse vapautettu tuote &gt; **Suunnitelma**- tai ****Varastonhallinta**** -toimintoruutu &gt; **Tilausasetukset** &gt; **Tilauksen oletusasetukset**.
 
 ## <a name="default-order-settings"></a>Tilauksen oletusasetukset
 Tilauksen oletusasetuksia on kolme ostoille, myynnille ja varastolle. Tilauksen oletusasetuksia ostoille käytetään luotaessa:
@@ -70,13 +73,13 @@ Varaston oletusasetukset ovat voimassa myös luotaessa:
 -   Suunnitellut tuotantotilaukset
 
 ## <a name="full-definition-of-a-released-product"></a>Vapautetun tuotteen koko määritys
-Kun luot tapahtuman, haluat määrittää rivin koko vapautetun tuotteen määritelmään ennen Dynamics 365 työvaiheiden yrittää tunnistaa tilauksen oletusasetukset. Vapautetun tuotteen koko määritelmä tarkoittaa sitä, että nimikenumero ja kaikki aktiiviset tuotedimensiot, konfiguraatio, koko, tyyli ja väri, kuten on määritetty tapahtuman. Esimerkiksi jos luot ostotilausrivin vapautetulle tuotevariantille manuaalisesti, sinun on määritettävä kaikki vaaditut tuotedimensiot ennen toimipaikan, varaston, määrän ja läpimenoajan näkymistä oletusarvoisesti tilausrivillä. 
+Kun luot tapahtumaa, sinun pitää määrittää vapautetun tuotteen koko määritelmä rivillä ennen kuin Dynamics 365 for Operations yrittää tunnistaa tilauksen oletusasetukset. Vapautetun tuotteen koko määritelmä tarkoittaa sitä, että nimikenumero ja kaikki aktiiviset tuotedimensiot, kuten konfiguraatio, koko, tyyli ja väri on määritetty tapahtumassa. Esimerkiksi jos luot ostotilausrivin vapautetulle tuotevariantille manuaalisesti, sinun on määritettävä kaikki vaaditut tuotedimensiot ennen toimipaikan, varaston, määrän ja läpimenoajan näkymistä oletusarvoisesti tilausrivillä. 
 
-Kaikkia tilauksen oletusasetusparametreja ei käytetä luotaessa tilausta tai kirjauskansion rivejä. Määrät ja läpimenoaikojen vain näyttää oletusarvon mukaan. Esimerkiksi kun inventoinnin kirjauskansion rivi, toimipaikan ja varaston näyttää oletuksena kun rivi luodaan. Luonnollisesti ei ole määrä oletusarvo tai useita tarkastuksia ja enimmäis suoritetaan, kun rivi luodaan tai päiväkirjan kirjaamisen. 
+Kaikkia tilauksen oletusasetusparametreja ei käytetä luotaessa tilausta tai kirjauskansion rivejä. Määrät ja läpimenoaikojen näytetään vain oletusarvon mukaan. Esimerkiksi kun lasketaan kirjauskansion riviä, vain toimipaikka ja varasto näytetään oletuksena, kun rivi luodaan. Luonnollisesti määrien oletusarvojen määrityksiä tai tarkistuksia useista nimikkeitä tai minimeistä ei suoriteta, kun rivi luodaan tai kun päiväkirjaan kirjataan. 
 
-Järjestelmä yrittää aina löytää oletusarvoisen toimipisteen ja varaston kun tilauksen tai kirjauskansion rivi luodaan. Toimipaikkaa ei aina näytetä oletusarvon mukaan tilausasetuksista. Esimerkiksi myyntitilausta tai ostotilausta luotaessa tilausotsikon toimipistettä käytetään automaattisesti tilausriveillä. Luotaessa tuoterakenneriviä käytetään Tuoterakenteen otsikko sivuston. Kun sivusto on määritetty, sitä käytetään voit etsiä minkä tahansa sivuston, joka sitten voidaan käyttää oletusarvoksi varastolle toimipaikkakohtaiset Tilausasetukset. 
+Järjestelmä yrittää aina löytää oletusarvoisen toimipisteen ja varaston kun tilauksen tai kirjauskansion rivi luodaan. Toimipaikkaa ei aina näytetä oletusarvon mukaan tilausasetuksista. Esimerkiksi myyntitilausta tai ostotilausta luotaessa tilausotsikon toimipistettä käytetään automaattisesti tilausriveillä. Luotaessa tuoterakenneriviä käytetään tuoterakenteen otsikon toimipaikkaa. Kun toimipaikka on määritetty, sitä käytetään etsimään toimipaikkakohtaisia tilausasetuksia, joita sitten voidaan käyttää varaston oletusarvoina. 
 
-Oletusarvoista tilaustyyppiä osto ja varaston Toimitusaikoja voidaan ohittaa nimikkeen kattavuussäännöt mukaan **nimikkeen kattavuus** sivulla. Vaikka tuotanto ja toimitusaika siirron erojen ei salli tilauksen oletusasetukset, nimikkeen kattavuussäännöt salli sitä. Kuitenkin nimikkeen kattavuusasetuksia käytetään ainoastaan tarvesuunnittelussa luotaessa suunniteltua tuotantoa ja suunniteltuja siirtotilauksia, eikä niitä käytetä tuotanto- ja siirtotilausten luomiseen manuaalisesti. 
+Oletusarvoiset tilaustyyppi, oston ja varaston läpimenoaika voidaan ohittaa nimikkeen kattavuussääntöjen mukaan **Nimikkeen kattavuus** -sivulla. Vaikka tilauksen oletusasetukset eivät salli tuotannon ja siirron läpimenoajan eroa, nimikkeen kattavuussäännöt sallivat sen. Kuitenkin nimikkeen kattavuusasetuksia käytetään ainoastaan tarvesuunnittelussa luotaessa suunniteltua tuotantoa ja suunniteltuja siirtotilauksia, eikä niitä käytetä tuotanto- ja siirtotilausten luomiseen manuaalisesti. 
 
 ## <a name="default-order-settings-rules"></a>Tilauksen oletusasetusten säännöt
 Voit määrittää yleiset tilauksen oletusasetukset ja haluamasi määrän tilauksen oletusasetusten sääntöjä, jotka ovat käytettävissä vain tietyillä ehdoilla, kuten toimipaikka tai tietty tuotedimensio tai tuotedimensioyhdistelmä. Varastokohtaisia tilausasetuksia ei voi määrittää.
@@ -87,13 +90,13 @@ Tilauksen oletusasetusten säännöt sisältävät luokituksia. Mitä korkeampi 
 
 ### <a name="default-order-settings-for-released-products"></a>Vapautettujen tuotteiden oletustilausasetukset
 
-Voit määrittää yksittäisille vapautetuille tuotteille yleiset tilausasetukset tai toimipaikkakohtaiset tilausasetukset. Yleisten tilausasetusten luokitus on aina nolla. Jos määrität uusia myynnin, ostojen ja varaston tilausasetuksia samalla kertaa yhdessä, suosittelemme, että käytät **Tietonäkymä**-kohtaa **Tilauksen oletusasetukset ** -sivulla. Siirry Siirry tietonäkymään **asetukset** toimintoruudun &gt;**sivun asetukset**&gt;**muuttaa näkymää**&gt;**tiedot-näkymässä**.
+Voit määrittää yksittäisille vapautetuille tuotteille yleiset tilausasetukset tai toimipaikkakohtaiset tilausasetukset. Yleisten tilausasetusten luokitus on aina nolla. Jos määrität uusia myynnin, ostojen ja varaston tilausasetuksia samalla kertaa yhdessä, suosittelemme, että käytät **Tietonäkymä**-kohtaa **Tilauksen oletusasetukset ** -sivulla. Voit siirtyä tietonäkymään **Asetukset**-toimintoruudussa &gt; **Sivun asetukset** &gt; **Vaihda näyttö** &gt; **Tietonäkymä**.
 
 ### <a name="site-specific-order-settings"></a>Toimipaikkakohtaiset tilausasetukset
 
-Voit luoda sivuston toimipaikkakohtaiset tilausasetukset valitsemalla **Uusi**. - **Tiedot-näkymässä**, täyttää sivuston **sovellettavat asetukset**&gt;**sivusto** kenttä. **Ruudukkonäkymä**-kohdassa täytä toimipaikka **Toimipaikka** -sarakkeeseen. Uusi sääntö saa automaattisesti uuden luokitusarvon, joka on suurempi kuin nolla. Voit luoda niin monta toimipaikkakohtaista sääntöä kuin on tarpeen ja määrittää toimipaikkakohtaisille säännöille saman luokituksen mallintaaksesi, että ne ovat yhtä tärkeitä. 
+Voit luoda sivuston toimipaikkakohtaiset tilausasetukset valitsemalla **Uusi**. **Tietonäkymä**-kohdassa täytä toimipaikka **Asetukset käytössä** &gt; **Toimipaikka**-kentässä. **Ruudukkonäkymä**-kohdassa täytä toimipaikka **Toimipaikka** -sarakkeeseen. Uusi sääntö saa automaattisesti uuden luokitusarvon, joka on suurempi kuin nolla. Voit luoda niin monta toimipaikkakohtaista sääntöä kuin on tarpeen ja määrittää toimipaikkakohtaisille säännöille saman luokituksen mallintaaksesi, että ne ovat yhtä tärkeitä. 
 
-Jos olet **Tietonäkymä**-kohdassa et saat nimikkeelle luotujen sääntöjen yhteenvetoa. Yleisiä tietoja saat **Näytä/piilota luettelo** -painikkeella. Kun on annettu ei sivuston luomisen yhteydessä tilausrivi kaikenlaisia, Dynamics 365 työvaiheiden etsii sääntöä ei ole määritetty toimipaikka. Tämä voi auttaa selvittämään tilausrivin oletussivusto. Tätä toimipaikkaa käytetään etsittäessä toimipaikkakohtaista sääntöä, johon oletusvarasto on voitu määrittää. Tätä varastoa käytetään tilausrivillä.
+Jos olet **Tietonäkymä**-kohdassa et saat nimikkeelle luotujen sääntöjen yhteenvetoa. Yleisiä tietoja saat **Näytä/piilota luettelo** -painikkeella. Kun tilausrivi luodaan eikä sille anneta toimipaikkaa, Dynamics 365 for Operations etsii sääntöä, jossa toimipaikka ei ole määritetty. Tämä voi auttaa määrittämään tilausrivin oletustoimipaikan. Tätä toimipaikkaa käytetään etsittäessä toimipaikkakohtaista sääntöä, johon oletusvarasto on voitu määrittää. Tätä varastoa käytetään tilausrivillä.
 
 ### <a name="specific-order-settings-for-product-dimension"></a>Tuotedimension erityistilausasetukset
 
@@ -103,8 +106,8 @@ Tarkastellaan seuraavaa esimerkkituotetta:
 
 |                                                     |                                         |
 |-----------------------------------------------------|-----------------------------------------|
-| **Product name**                                    | Valosähköanturi                    |
-| **Item number**                                     | XW56                                    |
+| **Tuotteen nimi**                                    | Valosähköanturi                    |
+| **Nimiketunnus**                                     | XW56                                    |
 | **Konfiguraatio** (käytetään mallinnettaessa valotyyppiä) | C1: näkyvä punainen valo, C2: infrapunavalo |
 | **Tyyli** (käytetään mallinnettaessa teknistä versiota)  | R1, R2, R3                              |
 
@@ -140,7 +143,7 @@ Ota huomioon seuraavat tilauksen oletusasetusten säännöt.
 | 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-Järjestelmän käy läpi sääntöjoukon kahdesti määrittääkseen toimipisteen ja varaston. Kun ostotilausrivi on luotu kokoonpano C1, R2, tyyli sivusto määritetään sija 10 säännön perusteella. Sitten järjestelmä etsii sivuston 2 sääntö määrittää varaston. Sääntö 20 löytyy ja koska sen luokitus on suurempi, ostotilausrivillä on varasto 22 eikä 21. 
+Järjestelmän käy läpi sääntöjoukon kahdesti määrittääkseen toimipisteen ja varaston. Kun konfiguraation C1 versio R2 ostotilausrivi luodaan, toimipaikka määritetään luokituksen 10 säännön perusteella. Järjestelmä etsii sääntöä toimipaikalle 2 määrittääkseen varaston. Sääntö 20 löytyy ja koska sen luokitus on suurempi, ostotilausrivillä on varasto 22 eikä 21. 
 
 Yleisen periaatteen mukaisesti erityissäännöt ja tärkeämpien dimensioiden säännöt saavat korkeamman luokituksen ja yleiset säännöt saavat alemman luokituksen. 
 
@@ -148,7 +151,7 @@ Sääntö, jonka luokitus on nolla, toimii turvaverkkona. Jos muut säännöt ei
 
 Koska luokitusnumero on tärkeä, **Tilauksen oletusasetukset **-toimintoruudussa on toimintoja säännön siirtämiseksi ylös tai alas tai säännön uudelleennumeroimiseksi, niin että ne etenevät aina 10 kerrallaan. 
 
-Vapautetulla tuotteella voi olla useita luotuja sääntöjä. Saat selkeämmän käsityksen siitä, mikä sääntö on hallitseva ja miksi sitä tarvitaan, kohdasta **Ruudukkonäkymä** ** Tilauksen oletusasetukset** -sivulla. Otat ruudukkonäkymän avulla **asetukset** toimintoruudun &gt;**sivun asetukset**&gt;**muuttaa näkymää**&gt;**ruudukkonäkymässä**. Ruudukossa näytettävien sarakkeiden määrä voi olla hyvin suuri, erityisesti myynti- ja varasto-välilehdillä. Voit rajoittaa ruudukossa näkyvien sarakkeiden määrä, ryhmien sarakkeiden on piilotettu vai näkyvissä painikkeiden avulla **tilauksen oletusasetukset**&gt;**sarakkeen näyttö** valikosta.
+Vapautetulla tuotteella voi olla useita luotuja sääntöjä. Saat selkeämmän käsityksen siitä, mikä sääntö on hallitseva ja miksi sitä tarvitaan, kohdasta **Ruudukkonäkymä** ** Tilauksen oletusasetukset** -sivulla. Voit ottaa ruudukkonäkymän käyttöön kohdassa **Asetukset**-toimintoruutu &gt; **Sivun asetukset** &gt; **Vaihda näkymää** &gt; **Ruudukkonäkymä**. Ruudukossa näytettävien sarakkeiden määrä voi olla hyvin suuri, erityisesti myynti- ja varasto-välilehdillä. Näytettävien sarakkeiden enimmäismäärää ruudukossa voidaan rajoittaa piilottamalla tai näyttämällä sarakeryhmiä painikkeilla kohdassa **Tilauksen oletusasetukset** &gt; **Sarakkeen näyttö** -valikko.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Vapautetun tuotevariantin erityistilausasetukset
 
@@ -165,5 +168,7 @@ Jos tilauksen oletusasetusten sääntöjärjestelmä on liian hankala, on mahdol
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 Luokituksella ei tällöin ole todellista merkitystä, joten voit piilottaa sen. Ratkaisu aiheuttaa mahdollisesti ylläpito-ongelmia. Haluat ehkä kuitenkin käyttää näitä asetuksia, jos olet harkinnut integrointia tuotteen elinkaaren hallintajärjestelmään (PLM).
+
+
 
 

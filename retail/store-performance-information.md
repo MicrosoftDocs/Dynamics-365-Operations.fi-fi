@@ -1,6 +1,6 @@
 ---
 title: "Myymälän suorituskyvyn analysointi"
-description: "Tässä artikkelissa kerrotaan, miten voit muistissa ja reaaliaikainen analytics, tutkia ja saada palveluvalikoimaa store suorituskyvyn, Microsoft Dynamics-365, toimintojen tietojen perusteella."
+description: "Tässä artikkelissa kerrotaan, miten voit muistiin sisältyvän ja reaaliaikaisen analytiikan avulla käsitellä ja kerätä myymälän suorituskykyyn liittyviä tietoja Microsoft Dynamics 365 for Operations -tietojen perusteella."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 57811
 ms.assetid: 495a66f0-491a-4688-842d-51c33c37676f
 ms.search.region: global
@@ -27,13 +27,16 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="analyze-store-performance"></a>Myymälän suorituskyvyn analysointi
 
-Tässä artikkelissa kerrotaan, miten voit muistissa ja reaaliaikainen analytics, tutkia ja saada palveluvalikoimaa store suorituskyvyn, Microsoft Dynamics-365, toimintojen tietojen perusteella. 
+[!include[banner](includes/banner.md)]
 
-Osana Dynamics 365 työvaiheiden käyttäjät voivat tutkia myymälän toimintaa reaaliaikaisesti organisaatiohierarkian eri tasojen välillä tietyn ajanjakson aikana avaamalla out-of-box **Kanavayhteenveto** raportin mistä tahansa seuraavista sijainneista:
 
--   **Retail store management** työtilan Dynamics 365 toimintojen &gt;**jälleenmyynti- ja commerce**&gt;**kanavia**&gt;**Retail store management**&gt;**raportit**&gt;**kanava yhteenvetoraportti**
--   **Retail store rahoitus** Dynamics 365 työtilan toimintoihin &gt;**jälleenmyynti- ja commerce**&gt;**kanavia**&gt;**Retail store rahoitus**&gt;**raportteja**&gt;**kanava yhteenvetoraportti**
--   **Kyselyiden ja raporttien** Dynamics 365 toimintojen jakso &gt;**jälleenmyynti- ja commerce**&gt;**kysely- ja raporttikriteereinä**&gt;**myyntiraportit**&gt;**kanava yhteenvetoraportti**
+Tässä artikkelissa kerrotaan, miten voit muistiin sisältyvän ja reaaliaikaisen analytiikan avulla käsitellä ja kerätä myymälän suorituskykyyn liittyviä tietoja Microsoft Dynamics 365 for Operations -tietojen perusteella. 
+
+Osana Microsoft Dynamics 365 for Operationsia käyttäjät voivat tarkastella myymälän suorituskykyä reaaliaikaisesti eri organisaatiohierarkian tasoilla valitun ajanjakson aikana avaamalla valmiin **Kanavayhteenveto**-raportin mistä tahansa seuraavista sijainneista:
+
+-   **Vähittäismyymälän hallinta** -työtila Dynamics 365 for Operations &gt; **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Kanavan yhteenvetoraportti**
+-   **Vähittäismyymälän myyntitiedot** -työtila Dynamics 365 for Operations &gt; **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Vähittäismyymälän myyntitiedot** &gt; **Raportit** &gt; **Kanavan yhteenvetoraportti**
+-   **Kyselyt ja raportit** -osio Dynamics 365 for Operations &gt; **Vähittäismyynti ja kauppa** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Kanavan yhteenvetoraportti**
 
 Tämä raportti tarjoaa tilannevedoksen seuraaviin yhteenvetoihin osana myymälän suorituskykyä:
 
@@ -42,4 +45,6 @@ Tämä raportti tarjoaa tilannevedoksen seuraaviin yhteenvetoihin osana myymäl�
 -   Veron yhteenveto
 -   Hinnan ohitusten yhteenveto
 -   Alennusten yhteenveto
+
+
 

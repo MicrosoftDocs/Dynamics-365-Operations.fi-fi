@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="round-off-amount-for-depreciation-calculations"></a>Poistojen laskennan pyöristyssumma
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa käsitellään Kirja-asetussivuilta löytyvää Poiston pyöristys -kenttää.
 
-Poiston pyöristys määrät määritetään kullekin kirjalle. Poiston pyöristys summat käytetään käyttöomaisuuden poistoprofiili, joka näyttää tulevat poistot ja arvo käyttöomaisuuden ja myös poistoehdotuksia. Kirjan pienin kirjalle sallittu poisto. 
+Poiston pyöristyssummat määritetään erikseen jokaiselle kirjalle. Poiston pyöristyssummia käytetään käyttöomaisuuserän poistoprofiilissa, joka sisältää tulevat poistot ja käyttöomaisuuserän arvon, ja lisäksi myös poistoehdotuksissa. Kirjan pienin kirjalle sallittu poisto. 
 
 Viimeisen poistokauden poistosummaa ei määritetystä pyöristyksestä riippumatta pyöristetä. Viimeisen poistokauden lopussa käyttöomaisuuden arvon on oltava 0 (nolla) tai jäännösarvo, jos jäännösarvot ovat käytössä.
 
@@ -43,6 +46,8 @@ Poistoksi on laskettu ilman pyöristyksiä 2 444,44. Kuten seuraavasta taulukost
 | Pyöristys 1,00   | 2 444,00            |
 | Pyöristys 10,00  | 2 440,00            |
 | Pyöristys 100,00 | 2 400,00            |
+
+
 
 
 

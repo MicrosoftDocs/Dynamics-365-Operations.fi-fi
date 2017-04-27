@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consolidated-batch-orders"></a>Konsolidoidut erätilaukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan konsolidoitujen erätilausten käsite.
 
 Tuotettua bulkkinimikettä käsitellään ylänimikkeenä, ja pakattua nimikettä on alanimikkeenä. Bulkki- ja pakatun nimikkeen suhde esitetään bulkkinimikkeen muunnoksena. Bulkkinimikkeen muunnos määritellään bulkkinimikkeessä itsessään.  
@@ -41,6 +44,8 @@ Konsolidoitu erätilaus voi sisältää yhdistelmän mitä tahansa seuraavia til
 -   Useita bulkki- sekä pakattuja tilauksia
 -   Useita bulkkitilauksia ja yksittäinen pakattu tilaus
 -   Vain pakatut tilaukset
+
+
 
 
 

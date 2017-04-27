@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>Jäännöspoisto 125 prosenttia
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on yleiskuvaus 125 prosentin jäännösarvon poistomenetelmästä.
 
 Kun käyttöomaisuuden poistoprofiili määritetään ja **Poistoprofiilit**-sivun **Menetelmä** -kentästä valitaan **Jäännösarvo 125 %**, tähän poistoprofiiliin liitetyn käyttöomaisuuden poistoprosentti on sama kullakin poistojaksolla. Tämä prosentti lasketaan omaisuuserän käyttöajan mukaan. Jos omaisuuserän käyttöaika on esimerkiksi viisi vuotta, poistoprosentti on 25 (125 % ÷ 5).
@@ -56,7 +59,7 @@ Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käyte
 
 Jos valitset **Poistovuosi**-kentässä **Tilivuosi**-vaihtoehdon, 125 prosentin poisto lasketaan kirjalle määritetyn kirjanpidon vuosikalenterin tilivuoden perusteella tai **Kirjanpito**-sivulla valitun kirjanpidon vuosikalenterin perusteella. Kirjanpidon vuosikalenterit määritetään **Kirjanpidon kalenterit** -sivulla. 
 
-Esimerkiksi heinäkuun 1. – 30. kesäkuuta tilikauden poiston laskeminen alkaa heinäkuun 1. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto säätyy automaattisesti kutakin tilijaksoa varten ja seuraavan tilivuoden pituus määräytyy **Kirjanpidon kalenterit**-lomakkeessa määritetyistä tilijaksojen asetuksista. 
+Esimerkiksi tilikauden 1.7 – 30.6. poistojen laskeminen alkaa 1.7. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto säätyy automaattisesti kutakin tilijaksoa varten ja seuraavan tilivuoden pituus määräytyy **Kirjanpidon kalenterit**-lomakkeessa määritetyistä tilijaksojen asetuksista. 
 
 Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavissa**Kausiväli**-kentässä:
 
@@ -81,6 +84,8 @@ Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavis
 | Vuosi 3 | 5 625 × 25 % = 1 406,25                        | (6 625 – 1 406,25) = 5 218,75 | (5 625 – 1 406,25) = 4 218,75         |
 
 > [!NOTE] 
-> Yleensä, kun summa, joka lasketaan käyttämällä 125 prosentin poistomenetelmää on pienempi kuin se summa, joka lasketaan käyttämällä tasapoiston menetelmää on jäljellä olevana tasapoistomenetelmän poistoprosentin muuntaminen.
+> Jos 125 %:n jäännösarvon poistomenetelmän avulla laskettu määrä on pienempi kuin tasapoistomenetelmän avulla laskettu määrä, jäljellä olevalle käyttöiälle on yleensä olemassa tasapoistomenetelmä.
+
+
 
 

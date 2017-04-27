@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Korkoryhmän korkoprosenttien määrittäminen
 
+[!include[banner](../includes/banner.md)]
+
+
 Korkokoodit sisältävät asetukset, joilla määritetään, milloin korkoa veloitetaan ja miten se lasketaan erääntyneillä tileillä.
 
 Voit määrittää yksittäisen korkokoodin ja käyttää sitä useassa asiakaskirjausprofiilissa, laskutuskoodeissa tai tietyillä laskuriviellä. Kun korkokoodin tietoja muutetaan, kaikki koodia käyttävät toiminnot käyttävät automaattisesti muutoksia uusissa tapahtumissa. Kullekin korkokoodille voi määrittää kahdentyyppisiä tuloja:
@@ -44,17 +47,17 @@ Voit määrittää korkotasot, jotka laskevat määritetyn prosenttiosuuden.
 
 -   Korkosumman koskee kaikkia valuuttoja.
 -   Korkosumman rajojen antaminen on valinnaista.
--   **Osuus** valitaan ** **- **korkolaskennan perusteena** -kenttään **Aseta korkokoodit** sivulla.
+-   **Prosentti** valitaan **Korkokoodien määrittäminen** -sivun **Käytä korkolaskennan perusteena** -kentässä.
 
-Esimerkiksi voit määrittää korkoryhmän, sopimuksen merkityksellisiin 5 prosentin korko, joka toinen kuukausi, että laskun maksu ylittää tapahtuman eräpäivä, 2 Anna **korko lasketaan jokaisen** -kentässä ja valitse **kuukauden**.
+Jos esimerkiksi haluat määrittää korkokoodin, joka määrää 5 prosentin koron jokaista kahta kuukautta kohti, jonka laskun maksaminen ylittää tapahtuman eräpäivän, anna arvo 2 **Koronlaskentaväli**-kenttään ja valitse **Kuukausi**.
 
 ## <a name="interest-rates-based-on-amounts"></a>Summin perustuvat korkotasot
 Voit määrittää korkotasot, jotka laskevat määritetyn summan valuuttaa kohden.
 -   Korkosumma on määritettävä jokaiselle korkokoodin valuutalle.
 -   Korkosumman rajojen antaminen on valinnaista.
--   ** Summa ** on valittu **korkolaskennan perusteena** kenttä **Aseta korkokoodit** sivulla.
+-   **Summa** valitaan **Korkokoodien määrittäminen** -sivun **Käytä korkolaskennan perusteena** -kentässä.
 
-Esimerkiksi, voit määrittää korkoryhmän, sopimuksen merkityksellisiin 25,00 edun osalta 20 päivän välein, että laskun maksu ylittää tapahtuman eräpäivän syötetään 20- **korko lasketaan jokaisen** -kentässä ja valitse **päivä**.
+Jos esimerkiksi haluat määrittää korkokoodin, joka määrää 25,00 valuuttayksikön koron jokaista 20 päivää kohti, jonka laskun maksaminen ylittää tapahtuman eräpäivän, anna arvo 20 **Koronlaskentaväli**-kentässä ja valitse **Päivä**.
 
 ## <a name="interest-rates-based-on-ranges"></a>Alueisiin perustuvat korkotasot
 Voit määrittää korkotasot, jotka vaihtelevat myöhässä olevan summan, summan myöhässä olevien päivien määrän tai summan myöhässä olevien kuukausien määrän mukaan.
@@ -73,7 +76,7 @@ Määrität korkokoodin, joka arvioi koron kerran jokaista kolmea kuukautta kohd
 
 Määrität alueen tiedot seuraavasti.
 
-| **From value** | **Interest value** |
+| **Arvosta** | **Korkoarvo** |
 |----------------|--------------------|
 | 0              | 1                  |
 | 1,001          | 2                  |
@@ -94,7 +97,7 @@ Määrität korkokoodin, joka arvioi koron kerran jokaista 15 päivää kohden, 
 
 Määrität alueen tiedot seuraavasti.
 
-| **From value** | **Interest value** |
+| **Arvosta** | **Korkoarvo** |
 |----------------|--------------------|
 | 0              | 10                 |
 | 61             | päivänä                 |
@@ -115,7 +118,7 @@ Määrität korkokoodin, joka arvioi koron kerran jokaista kuukautta kohden, jon
 
 Määrität alueen tiedot seuraavasti.
 
-| **From value** | **Interest value** |
+| **Arvosta** | **Korkoarvo** |
 |----------------|--------------------|
 | 0              | 1.5                |
 | 4              | 2                  |
@@ -125,5 +128,7 @@ Määrität alueen tiedot seuraavasti.
 Korkokoodeilla on voimassaolopäivät. Jos haluat muokata korkoprosenttia, voit luoda **uuden version**, jonka voimassaolo alkaa tiettynä päivänä tulevaisuudessa.
 
 Voit tarkastella eri versioita valitsemalla **Alkupäivämäärä**-valikkovaihtoehdolla katkaisupäivämäärän. Jos haluat tarkastella kaikkia sivun korkoprosentteja, valitse **Näytä kaikki tietueet**.
+
+
 
 

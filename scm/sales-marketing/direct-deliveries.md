@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="direct-deliveries"></a>Suoratoimitukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja suoratoimituksista. Suoratoimituksissa nimikkeet lähetetään suoraan toimittajalta asiakkaallesi.
 
 Suoratoimitukset säästävät aikaa ja vähentävät varaston omistuskustannuksia, koska sinun ei tarvitse säilyttää tuotteita varastossa ennen asiakkaalle toimittamista.  
@@ -49,5 +52,7 @@ Jos yrität poistaa myyntitilausrivin, jonka toimitustyyppi on **Suoratoimitus**
 
 ## <a name="warehouse"></a>Varasto
 Kun luot suoratoimituksen, myymäsi nimikkeet eivät koskaan saavu varastoosi fyysisesti. On kuitenkin määritettävä varasto myyntitilauksen riville. Vastaavasti keräilyvaatimukset voidaan määrittää nimikkeen nimikemalliryhmässä. Koska nimikkeet eivät koskaan saavu fyysisesti varastoosi, nämä vaatimukset jätetään huomioimatta, kun tilaus on suora toimitus.
+
+
 
 

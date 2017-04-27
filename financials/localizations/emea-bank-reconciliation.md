@@ -1,6 +1,6 @@
 ---
-title: "Pankin tiliotteen ja maksun täsmäytyksen yleistä EU: N"
-description: "Tässä aiheessa on yleiskatsaus toimintoja, joiden avulla voit täsmäyttää maksutiedot pankeilta, joita käytetään eri Euroopan maissa."
+title: "Pankin tiliotteen ja maksun täsmäytyksen yleiskatsaus EU:n osalta"
+description: "Tässä aiheessa on yleiskatsaus toiminnoista, joiden avulla voit täsmäyttää maksutiedot pankeilta muodossa, joita käytetään Euroopan maissa."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,37 +25,42 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bank-statement-and-payment-reconciliation-overview-for-the-eu"></a>Pankin tiliotteen ja maksun täsmäytyksen yleistä EU: N
+# <a name="bank-statement-and-payment-reconciliation-overview-for-the-eu"></a>Pankin tiliotteen ja maksun täsmäytyksen yleiskatsaus EU:n osalta
 
-Tässä aiheessa on yleiskatsaus toimintoja, joiden avulla voit täsmäyttää maksutiedot pankeilta, joita käytetään eri Euroopan maissa.
+[!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics-365 toimintoja varten voit tuoda tapahtumia pankkien ja olemassa olevien tapahtumien vastaan nämä tapahtumat selvitetään. Euroopassa voit tehdä tämän seuraavissa tapauksissa:
 
--   Tiliotteet tuodaan.
--   Maksuja tuodaan.
--   Palauta tiedostot tuodaan.
+Tässä aiheessa on yleiskatsaus toiminnoista, joiden avulla voit täsmäyttää maksutiedot pankeilta muodossa, joita käytetään Euroopan maissa.
+
+Microsoft Dynamics 365 for Operationsissa voit tuoda tapahtumia pankeista ja täsmäyttää nämä tapahtumat olemassa olevia tapahtumia vasten. Euroopassa voit tehdä tämän seuraavissa tapauksissa:
+
+-   Tiliotteiden tuonti
+-   Maksujen tuonti.
+-   Palautustiedostojen tuonti.
 
 ## <a name="bank-statements"></a>Tiliotteet
-A *tiliotteen* tai *tilin tiliotteen* on yhteenveto Rahoitustaloustoimia, jotka ovat tapahtuneet rahoituslaitoksen yrityksen pankkitilille tiettynä ajanjaksona. Voit tuoda Dynamics 365 työvaiheiden pankin tiliotteen. On tärkeää olemassa olevien tapahtumien kanssa tuodut tapahtumat selvitetään sekä tarkistaa pankkitilien saldo avaaminen ja päättyy. Seuraavassa luettelossa on Euroopan tuetut tiedostomuodot.
+*Tiliote*** on yhteenveto kirjanpitotapahtumista, jotka ovat tapahtuneet rahoituslaitoksen pankkitilillä tiettynä ajanjaksona. Dynamics 365 for Operationsissa voit tuoda tiliotteita. On tärkeää täsmäyttää tuodut tapahtumat olemassa olevien tapahtumien kanssa sekä tarkistaa pankkitilien alku- ja loppusaldo. Seuraavassa luettelossa on Euroopan tuetut tiedostomuodot.
 
--   Kokeneet pankin täsmäytys Euroopan tiedostomuotoja. Lisätietoja on ohjeaiheessa [Advanced yhteenveto pankkitilin täsmäytyksen](../cash-bank-management/advanced-bank-reconciliation-overview.md).
--   ISO 20022 camt.053 pankin tiliotteen tiedostomuotoa
--   CODA-pankkitilin tiliotteen tiedostomuoto. Lisätietoja on ohjeaiheessa [CODA-tiliote](emea-bel-coda-bank-statement-import.md).
+-   Pankkitilin täsmäytyksen lisätoimintojen Euroopan tiedostomuodot. Lisätietoja on ohjeaiheessa [Pankkitilin täsmäytyksen lisätoimintojen yleiskatsaus](../cash-bank-management/advanced-bank-reconciliation-overview.md).
+-   ISO 20022 camt.053 – tiliotteen sanoman tiedostomuoto
+-   CODA – tiliotteen tiedostomuoto Lisätietoja on ohjeaiheessa [CODA-tiliote](emea-bel-coda-bank-statement-import.md).
 
-## <a name="customer-and-vendor-payments-import-and-return-messages"></a>Asiakkaan ja toimittajan maksujen tuominen ja palauttaa viestit
-Pankin tiliote, lisäksi pankit voivat antaa viestejä, jotka sisältävät tietoja asiakkaiden ja toimittajien maksuille, jotka voidaan tuoda Dynamics 365 operaatioille ja täsmäytetty asiakkaan ja toimittajan tapahtumien kanssa. Kun yritys haluaa vastaanottaa saapuvia maksuja asiakastapahtumien tietoja pankin, tuo muotoja voidaan käyttää. Suoraveloitus ja -tilisiirrolla käyttävät yritykset maksulaitoksen voi vastaanottaa maksuja, jotka on aikaisemmin viety tilan päivittäminen. Tuo muodot ja palautustilausten muodot välinen ero on se, että palauttaa on kohdistettu lähinnä päivittää jo luonut maksukirjauskansion rivit (ne luodaan automaattisesti, kun suora veloitus- tai hyvitystyyppi siirto tehtiin) sen sijaan, että uusia rivejä. Palautuksen tilanteissa voi myös sisältää monimutkaisia tuo joitakin muotoiluja. Seuraavassa esimerkissä näytetään, kuinka tämä jako olisi pantava täytäntöön.
+## <a name="customer-and-vendor-payments-import-and-return-messages"></a>Asiakkaan ja toimittajan maksujen tuonnin ja palautuksen viestit
+Tiliotteen lisäksi pankit voivat tarjota erityisiä viestejä, jotka sisältävät tietoja asiakkaiden ja toimittajien maksuista, jotka voidaan tuoda Dynamics 365 for Operationsiin ja täsmäyttää asiakkaan ja toimittajan tapahtumien kanssa. Kun yritys haluaa vastaanottaa pankista tietoja saapuvista asiakkaan maksujen tapahtumista, voidaan käyttää näitä tuontimuotoja. Suoraveloitusta ja tilisiirtoa käyttävät yritykset voivat vastaanottaa palautusviestejä päivittääkseen aikaisemmin vietyjen maksujen tiloja. Tuonti- ja palautusmuotojen ero on se, että palautukset on tarkoitettu lähinnä päivittämään jo luotuja maksukirjauskansion rivejä (jotka on luotu joko suoraveloituksen tai tilisiirron yhteydessä) uusien rivien luonnin sijaan. Myös joihinkin monimutkaisiin tuontimuotoihin saattaa liittyä palautussanomia. Seuraavassa esimerkissä näytetään, kuinka tämä jako olisi pantava täytäntöön.
 
-##### <a name="import-formats"></a>Tuo muodot
+##### <a name="import-formats"></a>Tuontimuodot
 
--   ISO 20022-camt.054 pankki-ilmoitus
--   [Verkot tuo muoto](emea-nor-nets-import-format.md) -Norja maksumuotojen monimutkaisia-ominaisuus
--   Tuo asiakasmaksut ESR
--   Tuo maksumuotojen Ruotsi - BankGirot Max ja BankGirot-OCR-muodot
+-   ISO 20022-camt.054 – pankin ilmoitussanoma
+-   [Nets-tuontimuoto](emea-nor-nets-import-format.md) - Norjan maksumuotojen monimutkainen ominaisuus
+-   ESR-asiakkaan maksujen tuonti
+-   Maksujen tuontimuodot, Ruotsi - BankGirot Max- ja BankGirot OCR -muodot
 
-##### <a name="return-formats"></a>Palauta muoto
+##### <a name="return-formats"></a>Palautusmuodot
 
--   ISO 20022-pain.002 maksun tila-raportti
--   (DNK) BetalingsserviceBasis-returformat – asiakkaan Betalingsservice vientimuoto Palauta muoto
--   [Tuo maksumuotojen Ruotsi](emea-swe-payment-formats-import.md) -Bankgirot Autogiro palauttaa
--   (SWE) BankGirot Palauta – Palauta toimittajamaksujen muodossa, joka vastaa Bankgirot-vientimuotoa
+-   ISO 20022-pain.002 – maksun tilaraportti
+-   (DNK) BetalingsserviceBasis-returformat – palautusmuoto Betalingsservice-vientimuodolle
+-   [Maksujen tuontimuodot, Ruotsi](emea-swe-payment-formats-import.md)  – Bankgirot Autogiro -palautukset
+-   (SWE) BankGirot -palautus – Toimittajamaksujen palautusmuoto, joka vastaa Bankgirot-vientimuotoa
+
+
 

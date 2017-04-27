@@ -1,6 +1,6 @@
 ---
 title: Ostoreskontran aloitussivu
-description: "Tässä aiheessa on yleiskatsaus ostoreskontran."
+description: "Tässä aiheessa käsitellään yleisesti ostoreskontraa."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,8 +27,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-home-page"></a>Ostoreskontran aloitussivu
 
-Tässä aiheessa on yleiskatsaus ostoreskontran.
+[!include[banner](../includes/banner.md)]
 
-Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta. Kun laskut on annettu tai vastaanotettu, voit tarkistaa ja hyväksy laskut hyväksyttyjen laskujen kirjauskansion avulla tai **toimittajalaskun** sivulla. Voit automatisoida tarkistusprosessin laskun täsmäytyksen toimittajalaskujen käytäntöjen ja työnkulun avulla, jotta tietyn ehdon täyttävät laskut hyväksytään automaattisesti ja jäljellä olevat laskut merkitään tarkistettaviksi valtuutetulle käyttäjälle.
+
+Tässä aiheessa käsitellään yleisesti ostoreskontraa. 
+
+Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta. Sen jälkeen kun laskut on annettu tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai **Toimittajan lasku** -sivulla. Voit automatisoida tarkistusprosessin laskun täsmäytyksen toimittajalaskujen käytäntöjen ja työnkulun avulla, jotta tietyn ehdon täyttävät laskut hyväksytään automaattisesti ja jäljellä olevat laskut merkitään tarkistettaviksi valtuutetulle käyttäjälle.
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="acquire-assets-through-procurement"></a>Käyttöomaisuuden hankinta
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan, kuinka tehdään käyttöomaisuuden ja ostoreskontran väliset integrointimääritykset, luodaan käyttöomaisuuserä automaattisesti ostotilauksesta tai laskusta tai kirjataan käyttöomaisuuserien hankinta- ja hankintaoikaisutapahtumat automaattisesti.
 
  Järjestelmä sisältää seuraavat menetelmät, joilla käyttöomaisuuserät ja ostoreskontra voidaan integroida. Samaa menetelmää on käytettävä kaikille käyttöomaisuuserille:
@@ -103,6 +106,8 @@ Seuraavassa luettelossa on tämän skenaarion muunnelmia:
 -   Jos vain osa määrästä vastaanotetaan, ensimmäiselle toimittajan laskulle ei muodosteta käyttöomaisuuden hankintaa käyttäjäryhmän rajoitusten vuoksi. Hankinnan kirjaaminen tilatun määrän täydentävälle toiselle toimittajan laskulle edellyttää, että hankintatapahtuma on lisätty aiemmin ensimmäiselle laskulle ja että kuulut käyttäjäryhmään, jolle hankintojen kirjaaminen on sallittua.
 
 
-Lisätietoja on ohjeaiheessa [kiinteän omaisuuden integrointi](fixed-asset-integration.md).
+Lisätietoja on ohjeaiheessa [Käyttöomaisuuden integrointi](fixed-asset-integration.md).
+
+
 
 

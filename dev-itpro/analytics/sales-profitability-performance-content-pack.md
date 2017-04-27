@@ -1,6 +1,6 @@
 ---
-title: "Myynnin ja kannattavuuden suorituskyky BI virran sisältö"
-description: "Tässä aiheessa kuvataan, mitä sisältyy työvaiheiden - myynti ja kannattavuus suorituskyvyn sisältö pack for Microsoft Power BI Dynamics-365. Siinä kerrotaan, kuinka voit käyttää sisällön Packin raportteja ja tietoja tietomallin ja yksiköt, joita käytetään rakentaa sisältö pack."
+title: "Power BI:n myynnin ja kannattavuuden suorituskykysisältö"
+description: "Tässä aiheessa kuvataan, mitä sisältyy Microsoft Power BI:n Dynamics 365 for Operations - Myynnin ja kannattavuuden suorituskyvyn sisältöpakettiin. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,84 +24,84 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Myynnin ja kannattavuuden suorituskyky BI virran sisältö
+# <a name="sales-and-profitability-performance-power-bi-content"></a>Power BI:n myynnin ja kannattavuuden suorituskykysisältö
 
-Tässä aiheessa kuvataan, mitä sisältyy työvaiheiden - myynti ja kannattavuus suorituskyvyn sisältö pack for Microsoft Power BI Dynamics-365. Siinä kerrotaan, kuinka voit käyttää sisällön Packin raportteja ja tietoja tietomallin ja yksiköt, joita käytetään rakentaa sisältö pack.
+Tässä aiheessa kuvataan, mitä sisältyy Microsoft Power BI:n Dynamics 365 for Operations - Myynnin ja kannattavuuden suorituskyvyn sisältöpakettiin. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
 <a name="overview"></a>Yleiskuvaus
 --------
 
-Tämä sisältö pack on luotu myyntipäälliköt valvoa myynnin mittareita myyntituotto ja Bruttovoitto voittomarginaalit. Myynnin tapahtumiin liittyviä tietoja Dynamics 365 käyttää toimintoja ja tarjoaa asiakkaille ja tuotteille sekä koko yrityksen myyntiluvut yhteenlaskettu tutkimuksen ja myynnin erittelyn. Korostamalla muutoksia tulojen ja voiton kasvu pitkällä aikavälillä raportit voidaan ilmoitus esimiehet, positiivisten ja negatiivisten suuntausten tietoja yksittäisten asiakkaiden ja tuotteiden. Luokka ja alueellisten johtajien hyödyllistä on kaavioita, joissa vertaillaan tuoton ja kannattavuuden eri tuoteluokkien ja asiakasryhmät toisiinsa niputettuina reskontraan Hidastelijat ja johtajat. Kattava raportti, joka esittää yksittäisen asiakkaan tulot ja voittomarginaali tarjouksia account managerit tiedot varmuuskopioidaan foundation attune myynnin ja markkinoinnin pyrkimyksiä kunkin profiilin jokaiselle asiakkaalle. Myynnin ja kannattavuuden suorituskykyä sisällön Packin avulla voit analysoida myynnin suorituskyvyn käyttämällä myyntipäälliköt
+Tämä sisältöpaketti on tarkoitettu myyntipäälliköille myynnin avainmittareiden (tuotto, bruttovoitto ja katetuotto) seurantaan. Se käyttää myynnin tapahtumiin liittyviä tietoja Dynamics 365 for Operations -sovelluksesta ja tarjoaa kootun näkymän koko yrityksen myyntiluvuista sekä asiakas- ja tuotekohtaisen erittelyn myynnin suorituksesta. Korostamalla muutoksia tuotoissa ja voiton kasvussa pitkällä aikavälillä, raportteja voi käyttää ilmoittamaan esimiehille tiettyjen asiakkaiden tai tuotteiden positiivisista ja negatiivisista suuntauksista. Luokka- ja aluepäälliköille voi olla hyödyllistä käyttää taulukoita, joissa verrataan eri tuoteluokkien ja asiakasryhmien tuottoa ja kannattavuutta toisiinsa, jonka perusteella voidaan erotella toisistaan johtajat ja hidastelijat. Kattava raportti, joka esittää yksittäisen asiakkaan tuoton verrattuna katetuottoon tarjoaa asiakaspäälliköille tietoon perustuvan pohjan, jonka perusteella he voivat kohdistaa myynti- ja markkinointitoimet kunkin asiakkaan profiiliin. Myynnin ja kannattavuuden suorituskykysisällön paketti antaa myyntipäälliköille mahdollisuuden analysoida myynnin suorituskykyä seuraavien mukaisesti:
 
--   Tuotto vuoden alusta (mukaan asiakkaan ja yksittäisten asiakkaiden, myynnin luokkaa ja yksittäisten tuotteiden ja paikkojen)
--   Liikevaihdon muutos vuoden vuosittaisen (mukaan asiakkaan alueiden ja luokat)
+-   Tuotto, vuoden alusta (asiakasryhmittäin ja yksittäisille asiakkaille, myyntiluokille ja yksittäisille tuotteille sekä alueille)
+-   Liikevaihdon muutos, vuosittainen (asiakkaan alueen ja myyntiluokan mukaan)
 
-Kannattavuutta voidaan analysoida mukaan:
+Kannattavuuden analysointia varten on saatavilla:
 
--   Bruttovoitto ja voittomarginaali (mukaan asiakkaan ja tuotteen myynnin luokat)
--   Bruttovoiton muutos vuoden-over-vuosi
--   Asiakkaan kannattavuus (mukaan käyttökate / tuotto)
+-   Käyttökate ja katetuotto (asiakasryhmittäin ja tuotemyyntiluokittain)
+-   Käyttökatteen muutos, vuosittainen
+-   Asiakkaan kannattavuus (tuoton ja käyttökatteen suhteen mukaan)
 
-## <a name="accessing-the-content-pack"></a>Sisältö pack käyttäminen
-Myynnin ja kannattavuuden suorituskyky Power BI sisältö pack toteutus varoiksi Lifecycle Services (LCS) on julkaistu ja voi käyttää Dynamics 365 operaatioille. Saat lisätietoja siitä, miten käyttää ja käynnistää Power BI-raportteihin [virtaa BI sisältöä Microsoftin ja kumppanien LCS-](power-bi-content-microsoft-partners.md).
+## <a name="accessing-the-content-pack"></a>Sisältöpaketin avaaminen
+Microsoft Power BI:n myynnin ja kannattavuuden suorituskyvyn sisältöpaketti julkaistaan käyttöönotettavana resurssina elinkaaripalveluissa (LCS) ja se on käytettävissä Dynamics 365 for Operations -sovelluksessa. Lisätietoja Power BI -raporttien käyttämisestä ja avaamisesta löydät artikkelista [Power BI -sisältö LCS:ssä Microsoftilta ja kumppaneiltasi](power-bi-content-microsoft-partners.md).
 
-## <a name="metrics-included-in-the-content-pack"></a>Mittareita Packin sisältö
-Sisältö pack sisältää raportin, joka koostuu joukko mittareita visualized laatat, kaavioiden ja taulukoiden muodossa. Seuraavassa taulukossa on yhteenveto visualisations sisältö Pack.
+## <a name="metrics-included-in-the-content-pack"></a>Sisältöpakettiin sisältyvät mittarit
+Sisältöpakettiin kuuluu raportti, joka koostuu kaavioina, ruutuina ja taulukoina esitettävästä mittarijoukosta. Seuraavassa taulukossa on esitetty yhteenveto sisältöpaketissa käytettävistä visualisoinneista.
 
 |                        |                                            |                                                         |
 |------------------------|--------------------------------------------|---------------------------------------------------------|
-| **Raportti-sivu**        | **Charts**                                 | **Laatat**                                               |
-| Asiakkaan myyntituotto    | Top 10 asiakkaat tuoton mukaan                | Kokonaistuotto                                           |
-|                        | Kokonaistuotto asiakasryhmän mukaan            | VS tulojen kasvu                                      |
-|                        | Keskimääräinen asiakkaan tulojen mukaan asiakkaan | Käyttökate                                            |
-|                        | Tuotto & Bruttovoitto asiakasryhmän mukaan   |                                                         |
-| Tuotto tuotteen mukaan     | Tuotto & Bruttovoitto myyntiluokittain   | Yhteensä \#tuotteiden                                    |
-|                        | Top 10 tuotetta tuoton mukaan                 | Aktiiviset tuotteet ja prosenttiosuus kokonaismäärästä kokonaismäärä |
-|                        | Kokonaistuotto myyntiluokittain            | 80 prosenttia tuloista kirjanpidollinen tuotteiden määrä           |
-| Tuotto jakson mukaan\*    | Myyntituotto kuukauden mukaan                           | VS tulojen kasvu                                      |
-|                        | Lopussa tulot vaihtelu vs             | VS tulojen kasvu %                                    |
-|                        | Yhteensä asiakkaiden alueittain Myynnin varianssi    |                                                         |
-| Tuotto sijainnin mukaan    | Kaupungin myyntituotto                      |                                                         |
-|                        | VS tulojen kasvu %                       |                                                         |
-|                        | Myyntituoton alueen mukaan                    |                                                         |
-| Asiakkaan kannattavuus | Käyttökate vs. tuotto asiakkaan mukaan   | Bruttovoitto, käyttökate, vs tulojen kasvu          |
-| Kannattavuusanalyysi | Myyntituotto ja Bruttovoitto kuukauden mukaan          |                                                         |
-|                        | TOP 15 asiakkaat mukaan käyttökate           |                                                         |
-|                        | Bruttovoitto vs kuukausittain                 |                                                         |
+| **Raporttisivu**        | **Kaaviot**                                 | **Ruudut**                                               |
+| Asiakaskohtainen tuotto    | 10 parasta asiakasta tuoton mukaan                | Kokonaistuotto                                           |
+|                        | Kokonaistuotto asiakasryhmän mukaan            | Vuosittainen tuoton kasvu                                      |
+|                        | Keskimääräinen asiakkaan tuotto asiakasryhmän mukaan | Käyttökate                                            |
+|                        | Tuotto & bruttovoitto asiakasryhmän mukaan   |                                                         |
+| Tuotto tuotteen mukaan     | Tuotto & bruttovoitto myyntiluokittain   | Tuotteet yhteensä, \#                                    |
+|                        | 10 parasta tuotetta tuoton mukaan                 | Aktiivisten tuotteiden kokonaismäärä ja prosenttiosuus kokonaismäärästä |
+|                        | Kokonaistuotto myyntiluokittain            | Tuotteiden määrä, joista koostuu 80 % tuotosta           |
+| Tuotto kauden mukaan\*    | Tuotto kuukauden mukaan                           | Vuosittainen tuoton kasvu                                      |
+|                        | Laskeva tuottovarianssi, vuosittainen             | Vuosittainen tuoton kasvu %                                    |
+|                        | Myynnin kokonaisvarianssi asiakkaan alueen mukaan    |                                                         |
+| Tuotto sijainnin mukaan    | Myyntituotto kaupungeittain                      |                                                         |
+|                        | Vuosittainen tuoton kasvu %                       |                                                         |
+|                        | Myyntituotto alueen mukaan                    |                                                         |
+| Asiakkaan kannattavuus | Käyttökatteen ja tuoton suhde, asiakkaittain   | Bruttovoitto, käyttökate, vuosittainen tuoton kasvu          |
+| Kannattavuusanalyysi | Kuukausittainen tuotto ja bruttovoitto          |                                                         |
+|                        | 15 parasta asiakasta käyttökatteen mukaan           |                                                         |
+|                        | Bruttovoitto kuukausittain, vuosittainen                 |                                                         |
 
-\*Tulot tämän ja viime vuonna ja kasvu myynnin luokittain.
+\* Tuotto tänä ja viime vuonna, ja kasvu myyntiluokittain.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
-Työvaiheiden tietoja Dynamics 365 käytetään raportin myynnin ja kannattavuuden suorituskyvyn sisältöpaketti täyttämiseen. Se esitetään koostaa mitat, jotka lisätään yrityksen säilössä, joka on optimoitu analytics Microsoft SQL-tietokannan. Lue lisää sen blogin [Dynamics yksikön Myymälän integrointi BI virran](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Tämä sisältö pack koostaa mitat ovat koostaa mitat, jotka olivat käytettävissä Sales-kuution Dynamics AX 2012: n ja R3 AX 2012: n osajoukko. Vaiheittainen kuution yksikön myymälän koosta mittaukset on tehtävä ne esikunnista. Lisätietoja, katso menettelyn vaihe yksikön blogin säilöön yhteenlaskettu mittaukset [Dynamics yksikön Myymälän integrointi BI virran](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Sisältö pack perustana käytetään laskun rivit-yksikön seuraavat avaimen koosta mittaukset.
+Dynamics 365 for Operations -sovelluksen tietoja käytetään Myynnin ja kannattavuuden suorituskyvyn sisältöpaketin raportin täyttämiseen. Tämä esitetään koostettuina mittauksina, jotka vaiheistetaan yksikkösäilössä, joka on analytiikkaa varten optimoitu Microsoft SQL -tietokanta. Lue lisää blogikirjoituksesta [Power BI -integraatio yksikkösäilöön Dynamicsissa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Sisältöpaketin koostetut mittaukset ovat alijoukko Dynamics AX 2012:n ja AX 2012 R3:n myyntikuutiossa saatavilla olleista koostetuista mittauksista. Jotta kuution koostetut mittaukset voi tallentaa yksikkösäilöön, niistä on tehtävä käyttöönottokelpoisia. Lue lisätietoja koostettujen mittausten tallentamisesta yksikkösäilöön blogikirjoituksesta [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Seuraavia tärkeitä koostettuja laskurivi-yksikön rivien mittoja käytetään sisältöpaketin perustana.
 
 |               |                                              |                                                 |                                              |                                          |
 |---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------|
-| **Entity**    | **Avaimen koosta mittaukset**               | **Tietolähteen Dynamics 365 operaatioille** | **Field**                                    | **Description**                          |
-| Laskurivit | Myyntituotto                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Summa kirjanpitovaluuttana            |
-|               | Myytyjen tuotteiden kustannukset                           | InventTrans                                     | SUMMA (CostAmountPosted + CostAmountAdjustment) | Kustannusten summa + oikaisu                 |
-|               | Komission summa – kirjanpitovaluutta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Komission summa kirjanpitovaluuttana |
+| **Yksikkö**    | **Tärkeät koostemitat**               | **Dynamics 365 for Operationsin tietolähde** | **Kenttä**                                    | **Kuvaus**                          |
+| Laskurivit | Myyntituotto                                      | AsiakasLaskuTapahtuma                                | SUM(LineAmountMST)                           | Summa kirjanpitovaluuttana            |
+|               | Myytyjen tuotteiden kustannukset                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | Kustannussumma + oikaisu                 |
+|               | Provisiorivin summa – kirjanpitovaluutta | AsiakasLaskuTapahtuma                                | SUM(CommissAmountMST)                        | Provisiorivin summa kirjanpitovaluuttana |
 
-Seuraavassa taulukossa on esitetty tärkeimmät yhteenlaskettu mittaukset yksikön laskun rivit, joiden avulla voit luoda useita laskettuja mittoja sisältö pack dataset-ryhmän.
+Seuraavassa taulukossa on esitetty, miten laskurivi-yksikön tärkeitä koostemittoja käytetään luomaan useita laskettuja mittoja sisältöpaketin tietojoukossa.
 
 |                   |                                                                                                  |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| **Measure**       | **Laskettuna**                                                                                |
-| Bruttovoitto      | SUMMA (tuotto – MTK – komission – arvonlisävero (sisältyy asiakkaan laskurivin summaan))          |
-| Käyttökate      | SUMMA (Bruttotuotto / (tuotot - arvonlisävero (sisältyy asiakkaan laskurivin summaan)))             |
-| Tuotto edellisenä vuonna | Tuotto = Laske viime vuonna (summa ('laskurivit\[tulojen\]), SAMEPERIODLASTYEAR (päivämäärät\[päivämäärä\]) |
+| **Mitta**       | **Lasketaan**                                                                                |
+| Bruttovoitto      | SUM(Tuotto – MTKUST – Provisio – Arvonlisävero (sisältyy asiakkaan laskurivin summaan))          |
+| Käyttökate      | SUM(Bruttovoitto / (Tuotto – Arvonlisävero (sisältyy asiakkaan laskurivin summaan)))             |
+| Tuotto edellisenä vuonna | Tuotto edellisenä vuonna = CALCULATE(SUM('Invoice lines'\[Revenue\]), SAMEPERIODLASTYEAR(Dates\[Date\]) |
 
-Seuraava avain mitat **Sales-kuution** käytetään suodattimena osittaa yhteenlaskettu mittausten saavuttaa suurempi rakeisuus ja syvemmälle analyyttisiä ohjeita.
+Suodattimina **Myyntikuutiossa** käytetään seuraavia tärkeimpiä dimensioita osittamaan koostemitat, jotta saavutetaan suurempi rakeisuus ja saadaan syvempiä analyyttisiä näkemyksiä.
 
 |                  |                                                      |
 |------------------|------------------------------------------------------|
-| **Entity**       | **Esimerkkejä määritteet**                           |
-| Asiakkaat        | Asiakasryhmät, alueiden asiakkaan osoite, teollisuuden |
-| Tuotteet         | Tuotenumero, tuotteen nimi, nimi ryhmät       |
-| Myyntiluokat | Myynnin luokkien nimet                                 |
-| Oikeushenkilöt   | Oikeushenkilön nimi                                   |
+| **Yksikkö**       | **Esimerkkejä määritteistä**                           |
+| Asiakkaat        | Asiakasryhmät, Asiakkaan alueet, Osoite, Ala |
+| Tuotteet         | Tuotenumero, tuotteen nimi, nimikeryhmien nimi       |
+| Myyntiluokat | Myyntiluokkien nimet                                 |
+| Oikeushenkilöt   | Yritysten nimet                                   |
 | Päivämäärät            | Päivämäärät                                                |
 
-Oletusarvon mukaan sisällön pack näyttää kuluvan kalenterivuoden tietoja, mutta voit avata raportin suodattimet-osa ja muuta Pvm-suodatus. Voit myös muuttaa oman yrityksen suodatus.
+Oletusarvon mukaan sisältöpaketti näyttää kuluvan kalenterivuoden tietoja, mutta raportin suodatinosan voi avata ja päivämääräsuodatinta muuttaa. Voit muuttaa myös yrityssuodatinta.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:

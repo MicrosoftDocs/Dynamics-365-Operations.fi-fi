@@ -1,5 +1,5 @@
 ---
-title: "Tuoterakenteen laskennat ryhmät"
+title: "Tuoterakenteen laskentaryhmät"
 description: "Tässä artikkelissa on tietoja tuoterakenteen laskentaryhmistä ja niiden määrittämisestä. Tuoterakenteen laskennan suorittamista varten yksittäisille nimikkeille laskentaryhmiä on määritettävä laskentaryhmiä. Vaihtoehtoisesti on määritettävä oletuslaskentaryhmä. Laskentaryhmän laskenta-asetuksia käytetään sitten Tuoterakenteen laskenta -sivun oletusarvoina tuoterakennetta laskettaessa."
 author: YuyuScheller
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bom-calculations-groups"></a>Tuoterakenteen laskennat ryhmät
+# <a name="bom-calculations-groups"></a>Tuoterakenteen laskentaryhmät
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa on tietoja tuoterakenteen laskentaryhmistä ja niiden määrittämisestä. Tuoterakenteen laskennan suorittamista varten yksittäisille nimikkeille laskentaryhmiä on määritettävä laskentaryhmiä. Vaihtoehtoisesti on määritettävä oletuslaskentaryhmä. Laskentaryhmän laskenta-asetuksia käytetään sitten Tuoterakenteen laskenta -sivun oletusarvoina tuoterakennetta laskettaessa. 
 
-**Varasto ja varastonhallinnan parametrit** -sivulla on käytettävä oletuslaskentaryhmää, kun taas **Vapautetun tuotteen tiedot** -sivulla on käytettävä tuotekohtaista laskentaryhmää. Järjestelmä etsii ensin laskennan asetukset **tuotetiedot julkaissut** sivulle. Jos se ei löydä laskentaryhmän siellä, se näyttää **varasto ja varastonhallinnan parametrit** sivun. Jos järjestelmä ei löydä laskenta-ryhmässä, käyttäjä saa virhesanoman laskennan aikana. Laskentaryhmä sisältää kustannushintamallin, myyntihintamallin ja varoitusten tarkistusluettelon käytännöt. Laskentaryhmän laskenta-asetuksia käytetään **Tuoterakenteen laskenta** -sivun oletusarvoina tuoterakennetta laskettaessa.
+**Varasto ja varastonhallinnan parametrit** -sivulla on käytettävä oletuslaskentaryhmää, kun taas **Vapautetun tuotteen tiedot** -sivulla on käytettävä tuotekohtaista laskentaryhmää. Järjestelmä etsii laskentaryhmän asetuksia ensin **Vapautetun tuotteen tiedot** -sivulta. Jos laskentaryhmä ei ole siellä, järjestelmä etsii sitä **Varasto ja varastonhallinnan parametrit** -sivulta. Jos järjestelmä ei löydä laskentaryhmää, käyttäjä saa virhesanoman laskennan aikana. Laskentaryhmä sisältää kustannushintamallin, myyntihintamallin ja varoitusten tarkistusluettelon käytännöt. Laskentaryhmän laskenta-asetuksia käytetään **Tuoterakenteen laskenta** -sivun oletusarvoina tuoterakennetta laskettaessa.
 
 ## <a name="purposes-of-bom-calculation-groups"></a>Tuoterakenteen laskentaryhmien tarkoitukset
 Syitä tuoterakenteen laskentaryhmän määrittämiseen nimikkeelle on useita:
@@ -72,7 +75,7 @@ Voit valita **Varoitukset**-pikavälilehdessä niiden varoitussanomien asetukset
 Oletusarvoiset Varasto ja varastonhallinnan parametrit -asetukset
 --------------------------------------------------------------
 
-Koska laskelmien suorittaminen edellyttää laskentaryhmiä, oletuslaskentaryhmä on määritettävä varastonhallinnan parametreissa. Näiden asetusten avulla yritykset saavat käyttöönsä kaikkia nimikkeitä koskevat vakiokustannusryhmän ja -katevaatimuksen. Jos tietyllä nimikkeellä on kuitenkin erityisiä laskentavaatimuksia, käyttäjä voi määrittää kyseiselle nimikkeelle toisen laskentaryhmän. Yleensä laskentaryhmät määritetään tuoterakenteen osan nimikkeille eikä tuoterakenteen nimikkeille. Kun varoitukset näytetään, myös laskentaryhmiä voi käyttää. Nimikkeille määritetty laskentaryhmä ohittaa varastonhallinnan parametreissa määritetyn oletusarvon. Voit määrittää parametrin oletusarvon **Cost management**&gt;**varaston kirjanpidon käytäntöjen asetukset**&gt;**parametrit**&gt;**varaston kirjanpidon**&gt;**laskentaryhmän**. Määrittämällä oletusmääritysryhmän voit määrittää myös varoitusehdot, jotka esittävät käyttäjille kysymyksiä tuoterakenteen laskentaprosessin aikana, jos valitut osat voivat aiheuttaa laskentavirheitä.
+Koska laskelmien suorittaminen edellyttää laskentaryhmiä, oletuslaskentaryhmä on määritettävä varastonhallinnan parametreissa. Näiden asetusten avulla yritykset saavat käyttöönsä kaikkia nimikkeitä koskevat vakiokustannusryhmän ja -katevaatimuksen. Jos tietyllä nimikkeellä on kuitenkin erityisiä laskentavaatimuksia, käyttäjä voi määrittää kyseiselle nimikkeelle toisen laskentaryhmän. Yleensä laskentaryhmät määritetään tuoterakenteen osan nimikkeille eikä tuoterakenteen nimikkeille. Kun varoitukset näytetään, myös laskentaryhmiä voi käyttää. Nimikkeille määritetty laskentaryhmä ohittaa varastonhallinnan parametreissa määritetyn oletusarvon. Voit määrittää oletusparametrin valitsemalla **Kustannushintojen hallinta** &gt; **Varaston kirjanpitokäytäntöjen määrittäminen** &gt; **Parametrit** &gt; **Varastokirjanpito** &gt; **Laskentaryhmä**. Määrittämällä oletusmääritysryhmän voit määrittää myös varoitusehdot, jotka esittävät käyttäjille kysymyksiä tuoterakenteen laskentaprosessin aikana, jos valitut osat voivat aiheuttaa laskentavirheitä.
 Näytä varoitussanomat Valmis-sivulla
 ------------------------------------------
 
@@ -85,5 +88,7 @@ Tuoterakenteen laskenta luo varoitussanomia. Voit tarkastella valittua nimikett�
 -   Tilanne tunnistetaan, kun tuoterakenteen rivin nimikkeen kannattavuusprosentti on haluttua prosenttiosuutta pienempi.
 
 Voit määrittää useita tuoterakenteen laskentaryhmiä sen mukaan, miten paljon varoitussanomissa on oltava vaihtelua. Yhdessä tuoterakennelaskelmaryhmässä voi esimerkiksi riittää varoitusehdoksi, että tuoterakenne on aktiivinen, osien määrä on 0 (nolla) ja osakustannus on niin ikään 0 (nolla). Kun käynnistät tuoterakenteen laskennan, voit ohittaa tuoterakenteen laskentaryhmään liittyvät soveltuvat varoitusehdot. Voit myös lisätä tai poistaa varoitusehtoja. Jos esimerkiksi nykyinen tilanne ei koske reititystietoja, voi poistaa aktiivista reittiä koskevat varoitusehdot. **Huomautus:** Työajan seurannassa on **Laskentaryhmät**-sivu, mutta sivu ei liity tuoterakenteen laskentaryhmiin. Työajan seurannassa työtekijät voidaan määrittää niihin laskentaryhmiin, jotka vastaavat samaan työnjohtajaan tai esimieheen liitettyjä työntekijäryhmityksiä Työntekijän rekisteröintien laskenta voidaan tehdä automaattisesti tai manuaalisesti työnjohtaja- tai esimieskohtaisesti.
+
+
 
 

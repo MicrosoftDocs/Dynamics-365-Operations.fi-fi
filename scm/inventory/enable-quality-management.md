@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="quality-management-overview"></a>Laadunhallinnan yleiskuvaus
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, miten Microsoft Dynamics 365 for Operations -järjestemän laadunhallinnan avulla voidaan parantaa toimitusketjun tuotteiden laatua.
 
 Laadunhallinnan avulla voit hallita määrityksestä poikkeavien tuotteiden käsittelyaikaa niiden lähtöpisteestä riippumatta. Koska vianmääritystyypit linkitetty korjausraportointiin, Microsoft Dynamics 365 for Operations voi ajoittaa ongelmien korjaustehtävät ja estää ongelmien toistuminen.
@@ -344,7 +347,7 @@ Laatuliitos on määritettävä kutakin sellaista liiketoimintaprosessin muutost
 </tr>
 <tr class="even">
 <td>Testimuuttujien tulokset</td>
-<td>Voit määrittää, muokata ja tarkastella tällä sivulla laadulliseen testiin liittyvän testimuuttujan mahdollisia testituloksia. Kunkin tuloksen tilaksi määritetään joko <strong>hyväksytty</strong> tai <strong>hylätty</strong>. Jokaiselle <strong>Testit</strong>-sivulla määritetylle laadulliselle testille on määritettävä muuttuja ja tulokset. (Laadullisten testien tyyppi on määritetty <strong>vaihtoehto</strong> - <strong>testien</strong> sivulla.) Käytössä <strong>testiryhmät</strong> sivulla voit määrittää yksittäisen laadullisen testin testi muuttuja ja oletustulos.</td>
+<td>Voit määrittää, muokata ja tarkastella tällä sivulla laadulliseen testiin liittyvän testimuuttujan mahdollisia testituloksia. Kunkin tuloksen tilaksi määritetään joko <strong>hyväksytty</strong> tai <strong>hylätty</strong>. Jokaiselle <strong>Testit</strong>-sivulla määritetylle laadulliselle testille on määritettävä muuttuja ja tulokset. (Laadullisten testien tyypiksi on määritetty <strong>Vaihtoehto</strong> <strong>Testit</strong>-sivulla.) Käytä <strong>Testiryhmät</strong>-sivua määrittääksesi yksittäisen laadullisen testin testimuuttujan ja oletustuloksen.</td>
 <td>Pikkuleipiä valmistava teollisuusyritys tarkastaa lopputuotteen testillä. Tarkastuksessa on useita muuttujia. Ensimmäinen muuttuja on maku, jonka mahdollisia tuloksia ovat hyvä ja paha. Toinen muuttuja on väri, jonka mahdollisia tuloksia ovat liian tumma, liian vaalea ja oikea. Kunkin tuloksen tilaksi määritetään <strong>hyväksytty</strong> tai <strong>hylätty</strong>. Kunkin muuttujan tarkastuksen aikana tarkastaja raportoi testin tuloksen valitsemalla yhden tuloksista.</td>
 </tr>
 </tbody>
@@ -355,8 +358,10 @@ Laatuliitos on määritettävä kutakin sellaista liiketoimintaprosessin muutost
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Quality management processes](quality-management-processes.md)
+[Laadunhallintaprosessit](quality-management-processes.md)
 
 [Määrityksistä poikkeamisen hallinnan ottaminen käyttöön](enable-nonconformance-management.md)
+
+
 
 

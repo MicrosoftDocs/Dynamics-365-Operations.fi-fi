@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="factor-depreciation"></a>Kerroinpoisto
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää kerroinpoistomenetelmän yleiskatsauksen.
 
 Kertoimet ovat käyttöomaisuuserien poistamiseen käytettäviä prosenttiosuuksia. Kun määrität käyttöomaisuuden poistoprofiilin ja valitset **Poistoprofiilit**-sivulla **Tapa**-kentästä **Kerroin**-vaihtoehdon, voit määrittää nousevan poiston, laskevan poiston tai tasapoiston:
@@ -39,14 +42,14 @@ Kertoimet ovat käyttöomaisuuserien poistamiseen käytettäviä prosenttiosuuks
 Seuraavassa on sääntöjä ja esimerkkejä, jotka osoittavat, miten eri poistotyyppien kertoimet voidaan määrittää. 
 
 > [!NOTE] 
-> Kun valitset **kerroin** - **menetelmä** -kenttään **kerroin** kenttä ja **välin** kenttä näytetään.
+> Kun valitset **Tapa**-kentästä **Kerroin**-vaihtoehdon, näkyviin tulevat **Kerroin**- ja **Väli**-kenttä.
 
 ## <a name="progressive-depreciation"></a>Nouseva poisto
 **Kerroin**-kentän arvo on suurempi kuin **50**.
 
 ### <a name="example"></a>Esimerkki
 
-Hankintahinta on 100 000, kerroin on 70, käyttöikä on 10 vuotta ja poisto alkaa tammikuun 1. Poisto ja nettokirjanpitoarvo summien näytetään vain ensimmäisen kuuden vuoden käyttöikä.
+Hankintahinta on 100 000, kerroin on 70, käyttöikä on 10 vuotta ja poisto alkaa 1.1. Poistosummat ja nettokirjanpitoarvon summat näytetään vain ensimmäisen kuuden vuoden käyttöiän osalta.
 
 | Vuosi(a) | Kausi      | Poiston määrä | Nettokirjanpitoarvo |
 |------|-------------|---------------------|-----------------------|
@@ -62,7 +65,7 @@ Hankintahinta on 100 000, kerroin on 70, käyttöikä on 10 vuotta ja poisto alk
 
 ### <a name="example"></a>Esimerkki
 
-Hankintahinta on 100 000, kerroin on 20, käyttöikä on 10 vuotta ja poisto alkaa tammikuun 1. Poisto ja nettokirjanpitoarvo summien näytetään vain ensimmäisen kuuden vuoden käyttöikä.
+Hankintahinta on 100 000, kerroin on 20, käyttöikä on 10 vuotta ja poisto alkaa 1.1. Poistosummat ja nettokirjanpitoarvon summat näytetään vain ensimmäisen kuuden vuoden käyttöiän osalta.
 
 | Vuosi(a) | Kausi      | Poiston määrä | Nettokirjanpitoarvo |
 |------|-------------|---------------------|-----------------------|
@@ -75,5 +78,7 @@ Hankintahinta on 100 000, kerroin on 20, käyttöikä on 10 vuotta ja poisto alk
 
 ## <a name="straight-line-depreciation"></a>Tasapoisto
 **Kerroin**-kentän arvo on yhtä suuri kuin **50**. Poistosumma on tällöin sama jokaisella kaudella. Muiden kenttien valintojen merkitykset tulisi ottaa huomioon. Nämä on kuvattu ohjeaiheessa [Käyttöikään perustuva tasapoisto](straight-line-service-life-depreciation.md).
+
+
 
 

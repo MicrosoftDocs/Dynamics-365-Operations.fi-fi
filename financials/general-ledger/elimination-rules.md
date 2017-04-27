@@ -1,6 +1,6 @@
 ---
 title: "Eliminointisäännöt"
-description: "Tässä aiheessa on tietoja eliminointisääntöjä ja ilmoitti eliminoinnit tietoja eri vaihtoehtoja."
+description: "Tässä artikkelissa on tietoja eliminointisäännöistä ja eliminointien eri vaihtoehdoista."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="elimination-rules"></a>Eliminointisäännöt
 
-Tässä aiheessa on tietoja eliminointisääntöjä ja ilmoitti eliminoinnit tietoja eri vaihtoehtoja.
+[!include[banner](../includes/banner.md)]
 
-Eliminointitapahtumia tarvitaan, kun emoyritys suorittaa liiketoimia vähintään yhden tytäryhtiön kanssa ja käyttää konsolidoituja raportteja. Konsolidoiduissa raporteissa voi olla vain konsolidointiorganisaation ja kyseisten organisaatioiden muiden ulkopuolisten entiteettien välisiä tapahtumia. Vuoksi oikeushenkilöt, jotka kuuluvat samaan organisaatioon kuuluvien väliset tapahtumat on poistettu tai poistettu kirjanpidosta, joten ne eivät näy raporteissa. Eliminoinnin voi tehdä useilla eri tavoilla.
+
+Tässä artikkelissa on tietoja eliminointisäännöistä ja eliminointien eri vaihtoehdoista.
+
+Eliminointitapahtumia tarvitaan, kun emoyritys suorittaa liiketoimia vähintään yhden tytäryhtiön kanssa ja käyttää konsolidoituja raportteja. Konsolidoiduissa raporteissa voi olla vain konsolidointiorganisaation ja kyseisten organisaatioiden muiden ulkopuolisten entiteettien välisiä tapahtumia. Tämän vuoksi samaan organisaatioon kuuluvien yritysten välillä tapahtuvat tapahtumat on poistettava tai eliminoitava kirjanpidosta, jotta ne eivät näy raporteissa. Eliminoinnin voi tehdä useilla eri tavoilla.
 
 -   Eliminointisääntö voidaan luoda ja käsitellä konsolidointi- tai eliminointiyrityksessä.
 -   Talousraportoinnin avulla voidaan näyttää tietyn rivin tai sarakkeen eliminoinnin tilit ja dimensiot.
@@ -129,27 +132,29 @@ Yrityksesi nimeltä yritys A myy pienoisohjelmia toiselle organisaatiosi yrityks
 Kaikki nämä tapahtumat luovat konsernin sisäisiä tapahtumia, jotka kirjataan erääntymiskohteen ja -lähteen tileihin. Näissä tapahtumissa voi olla myös summien korotuksia ja alennuksia tilanteissa, joissa konserniyritysten välisen myynnin ja myytyjen tuotteiden kustannusten summat eivät täsmää.
 
 ## <a name="set-up-elimination-rules"></a>Määritä eliminointisääntöjä
-Kun eliminointisääntöjä Dynamics 365 operaatioille, on suositeltavaa luoda taloushallinnon dimension eliminoinnin tarkoituksia varten. Useimmat asiakkaat nimi kumppani kaupankäynnin tai jotain vastaavaa. Jos et halua käyttää taloushallinnon dimensio, muista olla päätilit, jotka koskevat konserniyritysten välisiä tapahtumia. 
+Kun määritetään eliminointisääntöjä Dynamics 365 for Operationsille, on suositeltavaa luoda taloushallinnon dimensio erityisesti eliminointitarkoituksia varten. Useimmat asiakkaat nimeävät sen Kaupankäynnin kumppaniksi tai jotain vastaavaa. Jos et halua käyttää taloushallinnon dimensiota, muista varmistaa, että sinulla on päätilit, jotka koskevat vain konserniyritysten välisiä tapahtumia. 
 
-Konsolidoinnit-moduulin asetukset-alueen asetukset poistoissa löytyy. Kun kirjoitat kuvausta säännön, valitse yritys, johon eliminoinnin kirjauskansion kirjauksia. Tämän pitäisi olla yritys, joka on **Käytä taloushallinnon eliminointiprosessissa** valittu oikeushenkilö asetuksissa. 
+Konsolidoinnit-moduulin Asetukset-alueelta löytyy eliminoinnin asetukset. Kun kirjoitat säännön kuvauksen, sinun on valittava yritys, johon eliminoinnin kirjauskansio kirjaa. Tämän tulisi olla yritys, jonka asetuksissa on valittu **Käytetään taloushallinnon eliminointiprosessissa**. 
 
-Voit määrittää päivämäärän, eliminointisäännön tulee voimaan ja kun se on vanhentunut, tarvittaessa. On määritettävä **aktiivista**, **Kyllä** Jos haluat sen olevan saatavilla eliminoinnin ehdotuksen käsittelyssä. Valitse Kirjauskansionimi, laji on **eliminointi**.
+Voit määrittää päivämäärän, jolloin eliminointisääntö tulee voimaan ja (tarvittaessa) milloin se vanhentuu. On määritettävä **Aktiivinen** arvoksi **Kyllä**, jos haluat sen olevan saatavilla eliminoinnin ehdotusprosessissa. Valitse kirjauskansio, jonka tyyppi on **Eliminointi**.
 
-Kun olet määritellyt perusteet, voit määrittää sääntöjen todellinen käsittely valitsemalla **rivit**. Vaihtoehtoja on kaksi poistoissa, jolloin summan nettomuutos tai kiinteän summan määrittäminen. 
+Kun olet määritellyt perusteet, voit määrittää todelliset käsittelysäännöt valitsemalla **Rivit**. Vaihtoehtoja on kaksi eliminoinneissa: nettomuutossumman eliminointi tai kiinteän summan määrittäminen. 
 
-Valitse lähdetili. Voit käyttää tähteä (\*) yleismerkki. Esimerkiksi 1\* Valitse kaikki tilit, jotka alkavat 1 lähteenä tietojen jakamisesta. 
+Valitse lähdetili. Voit käyttää tähteä (\*) yleismerkkinä. Esimerkiksi 1\* valitsisi kaikki 1-alkuiset tilit kohdistuksen tietolähteenä. 
 
-Kun olet valinnut lähde-tilisi **tilin määrittely** määrittää tilin, jota käytetään kohdeyrityksen. Valitse **lähde** Jos haluat käyttää samaa päätilin määritelty **lähde** tilille. Jos valitset **käyttäjän määrittämät**, valitse kohdetili on määritettävä. 
+Kun olet valinnut lähdetilisi **Tilin määrittely** määrittää käytettävän tilin kohdeyrityksestä. Valitse **Lähde**, jos haluat käyttää samaa päätiliä, joka on määritelty **Lähde**-tilissä. Jos valitset **Käyttäjän määrittämä**, sinun on määritettävä kohdetili. 
 
-Dimension määrittely toimii samalla tavalla. Jos valitset **lähde**, se käyttää samankokoisia kuin lähdeyrityksen kohdeyrityksessä. Jos valitset **käyttäjän määrittämät**, täytyy määrittää dimensioita valitsemalla kohdeyrityksessä **Kohdedimensiot** valikkovaihtoehto. 
+Dimension määrittely toimii samalla tavalla. Jos valitset **Lähde**, se käyttää kohdeyrityksessä samoja dimensioita kuin lähdeyrityksessä. Jos valitset **Käyttäjän määrittämä**, sinun täytyy määrittää kohdeyrityksen dimensiot valitsemalla **Kohdedimensiot**-valikkovaihtoehtoa. 
 
-Valitse Lähdedimensiot ja taloushallinnon dimensiot ja eliminointi lähteenä käytettävät arvot.
+Valitse lähdedimensiot ja taloushallinnon dimensiot ja eliminoinnin lähteenä käytettävät arvot.
 
 ## <a name="process-elimination-transactions"></a>Käsittele eliminointitapahtumia
-On kaksi tapaa käsitellä eliminoinnin tapahtumia kokoa online aikana tai eliminoinnin kirjauskansion luomalla ja suorittamalla ehdotusprosessiin eliminointi. Tässä osassa keskitytään kirjauskansion luominen ja eliminointi prosessi käynnissä. 
+On kaksi tapaa käsitellä eliminoinnin tapahtumia kokoa: konsolidoinnin online-prosessin aikana tai luomalla eliminoinnin kirjauskansio ja suorittamalla eliminoinnin ehdotusprosessi. Tässä osassa keskitytään kirjauskansion luomiseen ja eliminointiprosessin suorittamiseen. 
 
-Valitse yritys määritellään konsolidointiyrityksestä eliminoinnin kohdeyritykseen, **eliminoinnin kirjauskansion** konsolidoinnit-moduulissa. Kun olet valinnut kirjauskansion nimeä, valitse **rivit**. Valitsemalla voit suorittaa ehdotuksen **ehdotuksia** valikosta ja valitsemalla sitten **Eliminointiehdotus**.
+Valitse eliminointiyritykseksi määritellyssä yrityksessä **Eliminoinnin kirjauskansio** Konsolidoinnit-moduulissa. Kun olet valinnut kirjauskansion nimen, valitse **Rivit**. Valitsemalla voit suorittaa ehdotuksen valitsemalla **Ehdotukset**-valikon ja sitten **Eliminointiehdotus**.
 
-Valitse yritys, joka on koottujen tietojen lähde ja valitse sääntö, jota haluat käsitellä. Kirjoita Aloita haku eliminoinnin summien alkamispäivä ja päättymispäivä eliminoinnin summien haku päivämäärän loppuun. **Kirjauspäivämäärä GL** kenttä on käytettävä kirjauskansion kirjanpitoon kirjauksen päivämäärä. Kun olet valinnut **OK**, voit tarkistaa määrät ja Kirjaa kirjauskansio.
+Valitse yritys, joka on koottujen tietojen lähde ja valitse sääntö, jota haluat käsitellä. Anna aloituspäivämäärä käynnistääksesi eliminoinnin summien haun ja päättymispäivä eliminoinnin summien haun päivämäärävälin loppuun. **Kirjanpidon kirjauspäivä** -kenttä on päivämäärä, jolloin eliminointikirjauskansio kirjataan kirjanpitoon. Kun olet valinnut **OK**, voit tarkistaa määrät ja kirjata kirjauskansion.
+
+
 
 

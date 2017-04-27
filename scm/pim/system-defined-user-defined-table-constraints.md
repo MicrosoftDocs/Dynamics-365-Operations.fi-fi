@@ -1,6 +1,6 @@
 ---
 title: "Järjestelmän ja käyttäjän määrittämät taulurajoitukset"
-description: "Tässä artikkelissa kuvataan kahdenlaisia Taulurajoituksissa tuotemääritysmallin - käyttäjän määrittämiä ja järjestelmän määrittämiä osia varten. Taulurajoitukset edustavat sallittujen määriteyhdistelmien matriiseja, joissa kukin rivi määrittää yhden mahdollisten määritearvojen joukon."
+description: "Tässä artikkelissa kuvataan käyttäjän ja järjestelmän määrittämiä taulurajoituksia tuotemääritysmallin komponenteille. Taulurajoitukset edustavat sallittujen määriteyhdistelmien matriiseja, joissa kukin rivi määrittää yhden mahdollisten määritearvojen joukon."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-defined-and-user-defined-table-constraints"></a>Järjestelmän ja käyttäjän määrittämät taulurajoitukset
 
-Tässä artikkelissa kuvataan kahdenlaisia Taulurajoituksissa tuotemääritysmallin - käyttäjän määrittämiä ja järjestelmän määrittämiä osia varten. Taulurajoitukset edustavat sallittujen määriteyhdistelmien matriiseja, joissa kukin rivi määrittää yhden mahdollisten määritearvojen joukon.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa kuvataan käyttäjän ja järjestelmän määrittämiä taulurajoituksia tuotemääritysmallin komponenteille. Taulurajoitukset edustavat sallittujen määriteyhdistelmien matriiseja, joissa kukin rivi määrittää yhden mahdollisten määritearvojen joukon.
 
 Taulurajoitukset ovat matriiseja komponenteille tuotemääritysmallissa sallittujen määritteiden yhdistelmistä. Taulun kukin rivi määrittää yhden mahdollisten määritearvojen joukon. Tuotemääritysmallissa voi määrittää kahdentyyppisiä rajoituksia:
 
@@ -57,11 +60,13 @@ Järjestelmän määrittämä taulurajoitus luo dynaamisen yhdistämismäärityk
 
 Kun luot järjestelmän määrittämän taulurajoituksen, valitse taulu, määritä halutessasi käytettävä kysely ja määritä sitten määritetyypit valitun taulun kenttiin. Kenttätyyppien on vastattava määritetyyppejä.  
 
-Ennen taulurajoitus tulevat voimaan tuotemääritysmallin, taulurajoituksen on sisällytettävä rajoituksen jonkin mallin osia. Luo uusi rajoitus, rajoitus taulukon tyyppi ja valitse sitten taulurajoituksen määritys käyttämään menettelyä on. Lopuksi kaikki taulurajoituksen kentät on yhdistettävä tuotemääritysmallin määritteisiin.
+Ennen kuin taulurajoitus voidaan ottaa käyttöön tuotemääritysmallissa, taulurajoitus on sisällytettävä mallin yhden komponentin rajoitukseen. Tätä varten luodaan uusi rajoitus, valitaan taulurajoituksen tyyppi ja valitaan sitten käytettävä taulurajoitusmääritys. Lopuksi kaikki taulurajoituksen kentät on yhdistettävä tuotemääritysmallin määritteisiin.
 
 <a name="see-also"></a>Lisätietoja
 --------
 
 [Tuotekonfiguraatiomallien avainkäsitteet](product-configuration-models.md)
+
+
 
 

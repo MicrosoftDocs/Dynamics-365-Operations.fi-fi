@@ -1,6 +1,6 @@
 ---
-title: "Yhteiskäyttö Toimittajaportaali toimittajien kanssa"
-description: "Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä Toimittajaportaalissa yhteistyötä ulkoisten toimittajien kanssa ostotilauksen vahvistusprosessin aikana. Nämä tiedot koskevat vain helmikuu 2016 &amp;toukokuuta 2016 Dynamics AX-versiot."
+title: "Yhteistyö toimittajien kanssa Toimittajaportaalissa"
+description: "Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä Toimittajaportaalissa yhteistyötä ulkoisten toimittajien kanssa ostotilauksen vahvistusprosessin aikana. Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Yhteiskäyttö Toimittajaportaali toimittajien kanssa
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Yhteistyö toimittajien kanssa Toimittajaportaalissa
 
-Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä Toimittajaportaalissa yhteistyötä ulkoisten toimittajien kanssa ostotilauksen vahvistusprosessin aikana. Nämä tiedot koskevat vain helmikuu 2016 &amp;toukokuuta 2016 Dynamics AX-versiot.
+[!include[banner](../includes/banner.md)]
 
-Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita. Toimittaja-portaalin toiminnot on korvattu jatko toimittajan yhteistyömahdollisuuksia Dynamics 365 version toiminnot 1611. Saat lisätietoja uuden toimittajan yhteistyömahdollisuuksia [toimittaja, yhteistyössä alihankkijoiden kanssa käyttämällä](vendor-collaboration-work-external-vendors.md).  
+
+Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä Toimittajaportaalissa yhteistyötä ulkoisten toimittajien kanssa ostotilauksen vahvistusprosessin aikana. Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita.
+
+Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita. Toimittajaportaalin toiminnot on korvattu laajennetulla toimittajayhteistyötoiminnallisuudella Dynamics 365 for Operations -versiossa 1611. Lisätietoja siitä uudesta toimittajayhteistyötoiminnosta on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).  
 
 Toimittajaportaali on tarkoitettu toimittajille, joilla ei ole sähköisten tietojen vaihdon (EDI) Microsoft Dynamics AX -integrointia ostotilausten tietojen vaihtoa varten. Portaalissa ostoedustajat voivat lähettää ostotilauksen toimittajalle ja vastaanottaa Vahvistettu- tai Hylätty-vastauksen suoraan Dynamics AX:ään.  
 
@@ -66,9 +69,9 @@ Alla olevassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotila
 | Lähetät ostotilauksen uuden version Toimittajaportaaliin. | Uusi versio rekisteröidään Toimittajaportaaliin, ja tilaksi vaihtuu **Ulkoisessa tarkistuksessa**. |
 | Toimittaja hyväksyy ostotilauksen uuden version.           | Tilaksi vaihtuu **Vahvistettu**.                                                                |
 
-PO versiot, jotka on lähetetty toimittajalle ja toimittajan vastaukset näkyviin valitsemalla **kirjauskansioiden**&gt;**vahvistus pyynnöt** -PO.  
+Jos haluat nähdä toimittajalle lähetetyt ostotilauksen versiot ja toimittajan vastaukset, valitse ostotilauksessa **Kirjauskansiot** &gt; **Vahvistuspyynnöt**.  
 
-Toimittajalle vastausta varten lähetetyt tilaukset, joiden tilana on **Ulkoisessa tarkistuksessa**, näytetään joko **Toimittajaportaaliin lähetetyt ostotilaukset – odottaa vastausta**- tai **Toimittajaportaaliin lähetetyt ostotilaukset – vastaus edellyttää toimia** -luettelossa. Kun muutat toimittajalle lähetettyä tilausta niin, että tilaksi palautuu **Hyväksytty**, se ei enää näy näissä luetteloissa. Onko on aiemmin tehty tilaus toimittajalta vastauksen näkyviin napsauttamalla **päiväkirjat**&gt;**pyytää vahvistusta**.  
+Toimittajalle vastausta varten lähetetyt tilaukset, joiden tilana on **Ulkoisessa tarkistuksessa**, näytetään joko **Toimittajaportaaliin lähetetyt ostotilaukset – odottaa vastausta**- tai **Toimittajaportaaliin lähetetyt ostotilaukset – vastaus edellyttää toimia** -luettelossa. Kun muutat toimittajalle lähetettyä tilausta niin, että tilaksi palautuu **Hyväksytty**, se ei enää näy näissä luetteloissa. Jos haluat tarkistaa, onko toimittajalta saatu aiemmin vastausta tilaukseen, valitse **Kirjauskansiot** &gt; **Vahvistuspyynnöt**.  
 
 Toimittajien ei tarvitse vahvistaa ostotilausta Toimittajaportaalissa. He voivat lähettää myös sähköpostiviestin tai ilmoittaa ostotilauksen hyväksymisestä muissa kanavissa. Tämän jälkeen voit vahvistaa tilauksen manuaalisesti Dynamics AX:ssä. Tällöin saat varoituksen, kun tilaus on vahvistettu, vaikka toimittajalta ei olisi saatu vastausta. Ostotilaus näkyy tämän jälkeen Toimittajaportaalissa vahvistushistoriassa avoimena vahvistettuna tilauksena, johon ei ole vastattu. Lisäksi toimittaja ei pysty enää vahvistamaan tai hylkäämään ostotilausta.  
 
@@ -97,5 +100,7 @@ Seuraavassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotilaus
 [Käyttöoikeuksien määrittäminen toimittajayhteistyön käyttäjille](configure-security-vendor-portal-users.md)
 
 [Toimittajayhteistyön laskutustyötila](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+
+
 
 

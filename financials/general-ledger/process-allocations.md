@@ -1,6 +1,6 @@
 ---
 title: "Kohdistusten käsittely"
-description: "Tässä artikkelissa on tietoja, käsitellään niitä Microsoft Dynamics-365 toiminnoissa ja miten niitä voidaan käyttää budjetin suunnittelussa vaihtoehtoja. Kohdistuksia käytetään jaettaessa summia useiden kirjanpitotiliyhdistelmien kesken. Niiden avulla varmistetaan, että kulut tai tuotto veloitetaan oikealta kohteelta kirjanpidossa."
+description: "Tässä artikkelissa on tietoja kohdistuksista, niiden käsittelyvaihtoehdoista Microsoft Dynamics 365 for Operations -ohjelmassa ja kohdistusten käyttämisestä budjettisuunnittelussa. Kohdistuksia käytetään jaettaessa summia useiden kirjanpitotiliyhdistelmien kesken. Niiden avulla varmistetaan, että kulut tai tuotto veloitetaan oikealta kohteelta kirjanpidossa."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -28,11 +28,11 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="process-allocations"></a>Kohdistusten käsittely
 
-Tässä artikkelissa on tietoja, käsitellään niitä Microsoft Dynamics-365 toiminnoissa ja miten niitä voidaan käyttää budjetin suunnittelussa vaihtoehtoja. Kohdistuksia käytetään jaettaessa summia useiden kirjanpitotiliyhdistelmien kesken. Niiden avulla varmistetaan, että kulut tai tuotto veloitetaan oikealta kohteelta kirjanpidossa.
+Tässä artikkelissa on tietoja kohdistuksista, niiden käsittelyvaihtoehdoista Microsoft Dynamics 365 for Operations -ohjelmassa ja kohdistusten käyttämisestä budjettisuunnittelussa. Kohdistuksia käytetään jaettaessa summia useiden kirjanpitotiliyhdistelmien kesken. Niiden avulla varmistetaan, että kulut tai tuotto veloitetaan oikealta kohteelta kirjanpidossa.
 
-Microsoft Dynamics-365 toiminnoissa on tukea tätä prosessia seuraavia ominaisuuksia:
+Microsoft Dynamics 365 for Operations tarjoaa seuraavat ominaisuudet tukemaan tätä prosessia:
 
--   Tapahtumasummat manuaalisesti kohdistaa kirjanpidolliset jaot Jaa-toiminnolla tai käyttämällä taloushallinnon dimension oletusmallit asiakirjaan. Lisätietoja on ohjeaiheessa [kirjanpidolliset jaot.](\accounts-payable\accounting-distributions.md)
+-   Kohdista tapahtumasummat manuaalisesti käyttämällä jako-toimintoa kirjanpidollisessa jaossa tai käyttämällä asiakirjan taloushallinnon dimension oletusarvomalleja. Lisätietoja on kohdassa [Kirjanpidolliset jaot](\accounts-payable\accounting-distributions.md)
 -   Kohdista automaattisesti tapahtumien summat perustuen yksittäisen päätilin määritettyihin kohdistusehtoihin. Jokaiselle kirjauskansiolle, joka perustuu prosenttiosuuteen ja kohteen kirjanpitotiliin aina kun kirjaus täyttää lähteenä pidetyn kirjanpitotilin kriteerit, kun luodaan kohdistus tilitapahtumiin.
 -   Kohdista automaattisesti kirjanpitosaldot tai summat, jotka perustuvat kiinteisiin kirjanpidon sääntöihin. Kirjanpidon kohdistussäännöt käsitellään sännöllisin väliajoin käyttäen kohdistuksen kirjauskansioita. 
 

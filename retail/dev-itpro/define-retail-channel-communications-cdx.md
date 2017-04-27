@@ -1,6 +1,6 @@
 ---
 title: "Vähittäismyyntikanavan viestinnän määrittäminen (Commerce Data Exchange)"
-description: "Tässä artikkelissa on Commerce Data Exchangen ja sen komponenttien yleiskatsaus. Siinä kuvataan osan, joka toistetaan kunkin osan tietojen siirto Microsoft Dynamics-365 operaatioille ja vähittäiskaupan kanavia."
+description: "Tässä artikkelissa on Commerce Data Exchangen ja sen komponenttien yleiskatsaus. Artikkelissa kerrotaan kunkin komponentin toiminta Microsoft Dynamics 365 for Operationsin ja vähittäismyyntikanavien välisessä tiedonsiirrossa."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 27021
 ms.assetid: 179b1629-ac90-4cfb-b46a-5bda56c4f451
 ms.search.region: global
@@ -27,31 +27,34 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="define-retail-channel-communications-commerce-data-exchange"></a>Vähittäismyyntikanavan viestinnän määrittäminen (Commerce Data Exchange)
 
-Tässä artikkelissa on Commerce Data Exchangen ja sen komponenttien yleiskatsaus. Siinä kuvataan osan, joka toistetaan kunkin osan tietojen siirto Microsoft Dynamics-365 operaatioille ja vähittäiskaupan kanavia.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa on Commerce Data Exchangen ja sen komponenttien yleiskatsaus. Artikkelissa kerrotaan kunkin komponentin toiminta Microsoft Dynamics 365 for Operationsin ja vähittäismyyntikanavien välisessä tiedonsiirrossa.
 
 <a name="overview"></a>Yleiskuvaus
 --------
 
-Commerce Data Exchange on järjestelmä, joka siirtää tietoja Dynamics 365 operaatioille ja vähittäiskaupan kanavia, kuten Internet-kaupat- tai Tiili ja laastin kaupat. Tietokanta, johon tallennetaan Vähittäismyyntikanavan tiedot on erillään tietokannan toimintoja Dynamics-365. Kanavan tietokanta sisältää vain vähittäismyyntitapahtumissa tarvittavat tiedot. Päätietojen määritetty Dynamics 365 operaatioille ja jakaa kanavat. Tapahtumatietojen luodaan kohdassa järjestelmän myyntiä (POS) tai online tallentaa ja sitten ladata Dynamics 365 operaatioille. Tietojen jakelu tapahtuu asynkronisesti. Tietojen kerääminen ja pakkaaminen lähteessä tapahtuu siis erillisenä prosessina kuin tietojen vastaanottaminen ja käyttäminen kohteessa. Joissakin skenaarioissa, kuten hinta- ja varastohauissa, tiedot on haettava reaaliaikaisesti. Näissä tilanteissa tukemaan Commerce Data Exchange on palvelu, joka mahdollistaa reaaliaikaisen viestinnän Dynamics 365 operaatioille ja kanavan välillä. 
+Commerce Data Exchange -järjestelmä siirtää tietoja Dynamics 365 for Operationsin ja jälleenmyyntikanavien, kuten verkkokauppojen tai perinteisten myymälöiden, välillä. Vähittäismyyntikanavan tiedot tallentava tietokanta on eri kuin Dynamics 365 for Operations -tietokanta. Kanavan tietokanta sisältää vain vähittäismyyntitapahtumissa tarvittavat tiedot. Päätiedot määritetään Dynamics 365 for Operationsissa ja jaetaan sitten kanaville. Tapahtumatiedot luodaan myyntipisteen järjestelmässä tai verkkokaupassa, jonka jälkeen ne ladataan Dynamics 365 for Operationsiin. Tietojen jakelu tapahtuu asynkronisesti. Tietojen kerääminen ja pakkaaminen lähteessä tapahtuu siis erillisenä prosessina kuin tietojen vastaanottaminen ja käyttäminen kohteessa. Joissakin skenaarioissa, kuten hinta- ja varastohauissa, tiedot on haettava reaaliaikaisesti. Commerce Data Exchange tukee näitä skenaarioita Dynamics 365 for Operationsin ja kanavan välillä tapahtuvan reaaliaikaisen viestinnän mahdollistavan palvelun avulla. 
 
-[![päivitetty-retail-grafiikka](./media/updated-retail-graphic.png)](./media/updated-retail-graphic.png)  
+[![updated-retail-graphic](./media/updated-retail-graphic.png)](./media/updated-retail-graphic.png)  
 
 ## <a name="async-service"></a>Asynkroninen palvelu
-Tietojen muutokset, jotka on lähetettävä kanavia käytetään Microsoft SQL Server-tietokannan toimintoja Dynamics-365 muutosloki. Jakelu aikataulun mukaan, Dynamics 365 työvaiheiden pakkaa tiedot ja tallentaa sen keskitettynä tallennus (Azure blob storage). Erillinen eräprosessi käyttää Commerce Data Exchange: Asynkroninen asiakaskirjasto -kohtaa, kun tämä tietopaketti lisätään kanavatietokantaan. 
+Dynamics 365 for Operations -tietokannan Microsoft SQL Server -palvelimen muutosten seurantaa käytetään kanaville lähetettävien tietojen muutosten määrittämisessä. Dynamics 365 for Operations pakkaa tiedot jakeluaikataulun perusteella ja tallentaa ne keskitettyyn tallennuspaikkaan (Azure Blob -säilö). Erillinen eräprosessi käyttää Commerce Data Exchange: Asynkroninen asiakaskirjasto -kohtaa, kun tämä tietopaketti lisätään kanavatietokantaan. 
 
-[![Async Service](./media/async-300x239.png)](./media/async.png)
+[![Asynkroninen palvelu](./media/async-300x239.png)](./media/async.png)
 
 ### <a name="retail-scheduler"></a>Retail-ajastus
 
-Ajastustöiden avulla tiedot jaetaan sijainteihin ja niistä pois. Työt muodostuvat alitöistä, jotka määrittävät jaettavat tiedot sisältävät taulut ja taulukentät. Työvaiheiden Dynamics 365 sisältää ennalta ajoituksen työt ja alityöt, jotka täyttävät useimpien organisaatioiden replikointi. Luodaan seuraavat ennalta määritetyt työtyypit:
+Ajastustöiden avulla tiedot jaetaan sijainteihin ja niistä pois. Työt muodostuvat alitöistä, jotka määrittävät jaettavat tiedot sisältävät taulut ja taulukentät. Dynamics 365 for Operations sisältää ennalta määritetyt ajoitustyöt ja -alityöt, jotka vastaavat useimpien organisaatioiden replikointivaatimuksia. Luodaan seuraavat ennalta määritetyt työtyypit:
 
--   **Lataa työt** – Download työ lähettää tietoja, joka on muuttunut Dynamics 365 työvaiheiden kanavan tietokantoihin. Tietueiden muutoksia seurataan SQL Serverin muutosten seurannan avulla.
--   **Lataa työt (P-työt)** – Lataa noutavat myyntien kauppatapahtumissa kanavan tiedot tietokannan toimintoja Dynamics-365. Noutotyöt siirtävät tiedot lisäävästi. Kun noutotyöt suoritetaan, asynkroninen asiakaskirjasto tarkistaa aiemmin sijainnista vastaanotettujen tietueiden replikointilaskurin. Tietue noudetaan vain, jos sen replikointilaskurin arvo on suurempi kuin löydetty suurin arvo. Noutotyöt eivät päivitä aiemmin noudettuja tietoja.
+-   **Lataustyöt** – Lataustyöt lähettävät muutetut tiedot Dynamics 365 for Operationsista kanavatietokantoihin. Tietueiden muutoksia seurataan SQL Serverin muutosten seurannan avulla.
+-   **Noutotyöt** – Noutotyöt hakevat myyntitapahtumat kanavasta Dynamics 365 for Operations -tietokantaan. Noutotyöt siirtävät tiedot lisäävästi. Kun noutotyöt suoritetaan, asynkroninen asiakaskirjasto tarkistaa aiemmin sijainnista vastaanotettujen tietueiden replikointilaskurin. Tietue noudetaan vain, jos sen replikointilaskurin arvo on suurempi kuin löydetty suurin arvo. Noutotyöt eivät päivitä aiemmin noudettuja tietoja.
 
-Jakelu aikataulun avulla suoritetaan tietojen siirto, joko manuaalisesti tai ajoitus työvaiheiden 365 Dynamics-eräajon avulla. Jakeluaikataulu voi sisältää vähintään yhden kanavatietoryhmän ja vähintään yhden ajastustyön.
+Jakeluaikataulua käytetään tiedonsiirron suorittamisessa manuaalisesti tai ajoittamalla erätyö Dynamics 365 for Operationsissa. Jakeluaikataulu voi sisältää vähintään yhden kanavatietoryhmän ja vähintään yhden ajastustyön.
 
-## <a name="realtime-service"></a>Realtime-palvelu
-Commerce Data Exchange: Reaaliaikainen palvelu on integroitu palvelu, joka tarjoaa reaaliaikaisen viestinnän välillä Dynamics 365 operaatioille ja vähittäiskaupan kanavia. Reaaliaikaisen palvelun avulla yksittäiset POS-tietokoneet ja Internet-kauppojen hakemaan tiettyjä toimintoja varten 365 Dynamics reaaliajassa. Vaikka useimmat tärkeimmät toiminnot voidaan suorittaa tietokannan paikallisen kanavan, suora pääsy tietoihin, joka tallennetaan Dynamics 365 työvaiheiden vaatia seuraavissa tilanteissa:
+## <a name="realtime-service"></a>Realtime Service
+Commerce Data Exchange: Real-time Service -palvelu on integroitu palvelu, joka mahdollistaa Dynamics 365 for Operationsin ja vähittäismyyntikanavien reaaliaikaisen viestinnän. Real-time Service -palvelun avulla yksittäisten myyntipisteiden tietokoneet ja verkkokaupat voivat hakea määritettyjä tietoja Dynamics 365 for Operationsista reaaliaikaisesti. Vaikka useimmat tärkeät toiminnot voidaan suorittaa paikallisissa kanavatietokannoissa, seuraavat skenaariot vaativat Dynamics 365 for Operationsiin tallennettujen tietojen suoran käytön.
 
 -   Lahjakorttien luovuttaminen ja lunastaminen.
 -   Kanta-asiakkuuspisteiden lunastaminen.
@@ -62,8 +65,10 @@ Commerce Data Exchange: Reaaliaikainen palvelu on integroitu palvelu, joka tarjo
 -   Varaston inventointien suorittaminen.
 -   Myyntitapahtumien hakeminen myymälöistä ja palautustapahtumien valmisteleminen.
 
-[![Real-time Service](./media/rts.png)](./media/rts.png) 
+[![Real-time Service -palvelu](./media/rts.png)](./media/rts.png) 
 
-Ennalta määritetyt Real-time Service-profiili luodaan.
+Luodaan ennalta määritetty Real-time Service -palvelun profiili.
+
+
 
 

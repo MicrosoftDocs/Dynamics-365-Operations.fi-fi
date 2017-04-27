@@ -1,5 +1,5 @@
 ---
-title: "Määrittää hyväksymisprosessin työnkulku"
+title: "Hyväksyntäprosessin lisääminen työnkulkuun"
 description: "Määritä hyväksyntäprosessin ominaisuudet seuraavan menettelyn avulla."
 author: sericks007
 manager: AnnBe
@@ -24,11 +24,11 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-approval-process-in-a-workflow"></a>Määrittää hyväksymisprosessin työnkulku
+# <a name="configure-an-approval-process-in-a-workflow"></a>Hyväksyntäprosessin lisääminen työnkulkuun
 
 Määritä hyväksyntäprosessin ominaisuudet seuraavan menettelyn avulla.
 
-Määrittämään sen hyväksymisprosessi työnkulkueditori hyväksynnän elementti hiiren kakkospainikkeella ja valitse sitten **ominaisuudet** avaamiseen **ominaisuudet** lomake.
+Hyväksyntäprosessi konfiguroidaan työnkulkueditorissa napsauttamalla hyväksyntäelementtiä hiiren kakkospainikkeella ja valitsemalla **Ominaisuudet**, mikä avaa **Ominaisuudet**-lomakkeen.
 Hyväksyntäprosessin nimeäminen
 -------------------------
 
@@ -40,14 +40,14 @@ Seuraavia ohjeita noudattamalla voit nimetä hyväksyntäprosessin.
 Voit määrittää järjestelmän siten, että se käsittelee automaattisesti asiakirjan, jos tietyt ehdot täyttyvät. Järjestelmä voi hyväksyä esimerkiksi kuluraportit, joiden kokonaissummat ovat alle 100 USD. Noudata seuraavia ohjeita määrittääksesi, milloin järjestelmä käsittelee asiakirjaa.
 1.  Valitse vasemmasta ruudusta **Automaattiset toiminnot**.
 2.  Merkitse **Ota käyttöön automaattiset toiminnot** -valintaruutu.
-3.  Click **Add condition**.
+3.  Valitse **Lisää ehto**.
 4.  Määritä ehto.
 5.  Voit tarvittaessa määrittää useita ehtoja.
 6.  Voit tarkistaa, onko ehdot määritetty oikein käymällä läpi seuraavat ohjeet:
     1.  Valitse **Testi**, jolloin **Testaa työnkulun ehto** -lomake tulee näyttöön.
     2.  Valitse tietue lomakkeen **Tarkista ehto** -alueelta.
     3.  Valitse **Testi**. Järjestelmä arvioi, täyttääkö tietue määrittämäsi ehdot.
-    4.  Valitse **OK** tai **peruuttaa** palaa **ominaisuudet** muodossa.
+    4.  Palaa **Ominaisuudet**-lomakkeeseen valitsemalla **OK** tai **Peruuta**.
 
 7.  Valitse **Automaattinen loppuunvientitoiminto**-luettelosta toiminto, jonka haluat järjestelmän suorittavan asiakirjalle.
 
@@ -55,11 +55,11 @@ Voit määrittää järjestelmän siten, että se käsittelee automaattisesti as
 Voit lähettää käyttäjille ilmoituksia, kun asiakirja on hyväksytty, hylätty, delegoitu tai eskaloitu, tai kun muutosta on pyydetty. Toimi seuraavasti määrittääksesi, milloin ilmoitukset lähetetään, ja kenelle ne lähetetään.
 1.  Valitse vasemmasta ruudusta **Ilmoitukset**.
 2.  Valitse tapahtuman vieressä oleva valintaruutu, jos haluat lähettää siihen liittyviä ilmoituksia:
-    -   **Edustaja** – kun asiakirja on määritetty toiselle käyttäjälle hyväksyntää varten.
-    -   **Eskaloi** – kun määritetty käyttäjä ei ole reagoinut asiakirjan annetussa ajassa.
-    -   **Hyväksy** – kun asiakirja on hyväksytty.
-    -   **Hylkää** – kun asiakirja on hylätty.
-    -   **Pyydä muutosta** – kun määritetty käyttäjä on pyytänyt muutosta lähetettyyn asiakirjaan.
+    -   **Delegoi** : asiakirja on annettu toiselle käyttäjälle hyväksyttäväksi.
+    -   **Eskaloi** : kun määritetty käyttäjä ei ole reagoinut asiakirjaan määritetyn ajanjakson aikana.
+    -   **Hyväksy** : kun asiakirja on hyväksytty.
+    -   **Hylkää** : kun asiakirja on hyläytty.
+    -   **Pyydä muutosta**: kun määritetty käyttäjä on pyytänyt muutosta lähetettyyn asiakirjaan.
 
 3.  Valitse sen tapahtuman rivi, jonka valitsit vaiheessa 2.
 4.  Valitse **Ilmoitusteksti**-välilehti.
@@ -70,8 +70,8 @@ Voit lähettää käyttäjille ilmoituksia, kun asiakirja on hyväksytty, hylät
     3.  Valitse näyttöön tulevasta luettelosta lisättävä paikkamerkki.
     4.  Valitse **Lisää**.
 
-7.  Lisää käännöksiä ilmoituksen valitsemalla **käännökset**. Käy näyttöön tulevassa lomakkeessa läpi seuraavat vaiheet:
-    1.  Click **Add**.
+7.  Ilmoitusten käännökset voit lisätä valitsemalla **Käännökset**. Käy näyttöön tulevassa lomakkeessa läpi seuraavat vaiheet:
+    1.  Valitse **Lisää**.
     2.  Valitse näyttöön tulevasta luettelosta kieli, jolla kirjoitat tekstin.
     3.  Kirjota tekstisi **Käännetty teksti** -tekstiruutuun.
     4.  Voit mukauttaa tekstiä lisäämällä paikkamerkkejä.
@@ -112,11 +112,11 @@ Voit lähettää käyttäjille ilmoituksia, kun asiakirja on hyväksytty, hylät
     </ol></td>
     </tr>
     <tr class="odd">
-    <td><strong>User</strong></td>
-    <td>Tietyt Microsoft Dynamics-365 toimintoja käyttäjille</td>
+    <td><strong>Käyttäjä</strong></td>
+    <td>Tietyt Microsoft Dynamics 365 for Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Microsoft Dynamics-365 toimintoja käyttäjille. Valitse käyttäjät, joille ilmoituksia lähetetään, ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Microsoft Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään, ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -150,10 +150,10 @@ Noudata seuraavia ohjeita, jos hyväksyntäprosessi on suoritettava tietyn ajan 
 ## <a name="specify-which-actions-are-available-to-the-user"></a>Määritä käyttäjän käytettävissä olevat toiminnot
 Kun asiakirja on määritetty käyttäjälle hyväksymistä varten, käyttäjän pitää suorittaa asiakirjan toimenpide. Käy läpi seuraavat vaiheet määrittääksesi, mitä toimintoja käyttäjät voivat tehdä lähetetylle asiakirjalle.
 1.  Napsauta vasemmassa ruudussa **Lisäasetukset**.
-2.  Valitse **Hyväksy** valintaruudun valinta, jos käyttäjä voi hyväksyä asiakirjan.
-3.  Valitse **hylätä** valintaruutu on valittuna käyttäjä voi hylätä asiakirjan.
-4.  Valitse **Pyydä muutosta** käyttäjän valintaruutu voit pyytää muutoksia asiakirjaan.
-5.  Valitse **edustaja** valintaruudun valinta, jos käyttäjä voi määrittää asiakirjan toisen käyttäjän hyväksyttäväksi.
+2.  Valitse **Hyväksy** -valintaruutu, jos haluat, että käyttäjä voi hyväksyä asiakirjan.
+3.  Valitse **Hylkää** -valintaruutu, jos haluat, että käyttäjä voi hylätä asiakirjan.
+4.  Valitse **Pyydä muutosta** -valintaruutu, jos haluat, että käyttäjä voi pyytää muutoksia asiakirjaan.
+5.  Valitse **Delegoi** -valintaruutu, jos haluat, että käyttäjä voi määrittää asiakirjan hyväksyttäväksi toiselle käyttäjälle.
 
 **Huomautus**: **Ota työluettelon toiminnot käyttöön yritysportaalissa** -valintaruutu on poistettu.
 

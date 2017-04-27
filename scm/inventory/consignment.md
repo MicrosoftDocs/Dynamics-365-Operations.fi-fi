@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consignment"></a>Tavaralähetys
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä aiheessa kerrotaan, miten käytetään saapuvan tavaralähetyksen varastoprosesseja.
 
-Tavaralähetysvarasto on varasto, joka on toimittajan omistaa mutta joka on varastoituna yrityksesi toimipaikalle. Kun haluat käyttää osan varastosta tai koko varaston, varaston omistajuus siirtyy yrityksellesi. Tässä ohjeaiheessa on tietoja siitä, miten saada fyysisesti ilman, että luot KP-tapahtumat, toimittajan omistuksessa oleva varasto käynnistäminen tuotantomenetelmällä, jos toimittajan omistaa varaston fyysisesti varattavissa. Ja raaka-aineiden omistusoikeus voidakseen käsitellä osana tuotantoa tilauksen käsittelyä kulutus. Aiheessa on myös tietoja siitä, miten toimittajat voivat seurata omistamansa varaston kulutusta toimittajayhteistyöliittymän avulla. Lisätietoja saapuvien tavaralähetysprosessien ottamisesta käyttöön ja määrittämisestä on kohdassa [Tavaralähetyksen määrittäminen](set-up-consignment.md).
+Tavaralähetysvarasto on varasto, joka on toimittajan omistaa mutta joka on varastoituna yrityksesi toimipaikalle. Kun haluat käyttää osan varastosta tai koko varaston, varaston omistajuus siirtyy yrityksellesi. Tässä ohjeaiheessa on tietoja siitä, miten vastaanottaa fyysisesti toimittajan omistuksessa olevaa varastoa luomatta KP-tapahtumia, sekä siitä, miten käynnistetään tuotantoprosessi, jossa toimittajan omistamaa varastoa voidaan fyysisesti varata. ja miten muutetaan raaka-aineiden omistajuutta, jotta kulutuksia voidaan käsitellä osana tuotantotilauksen käsittelyä. Aiheessa on myös tietoja siitä, miten toimittajat voivat seurata omistamansa varaston kulutusta toimittajayhteistyöliittymän avulla. Lisätietoja saapuvien tavaralähetysprosessien ottamisesta käyttöön ja määrittämisestä on kohdassa [Tavaralähetyksen määrittäminen](set-up-consignment.md).
 
 ## <a name="overview-of-the-consignment-process"></a>Tavaralähetysprosessin yleiskatsaus
 Tässä esimerkissä USMF-yrityksellä on tavaralähetyksiä koskeva sopimus toimittajan US-104 kanssa raaka-aineen M9211CI -osalta.
@@ -57,9 +60,9 @@ USMF suorittaa kausittaisia lisäprosesseja:
 Toimittaja US-104 voi valvoa päivityksiä käyttämällä **Käytettävissä oleva tavaralähetysvarasto** -sivua.
 
 ## <a name="consignment-replenishment-orders"></a>Tavaralähetyksen täydennystilaukset
-Tavaralähetyksen täydennystilaus -asiakirjalla voidaan pyytää ja jäljittää tuotteiden varastomääriä, jotka toimittaja aikoo toimittaa tietyllä aikavälillä luomalla tilatut varastotapahtumat. Yleensä tämä perustuu tietyn tuotteen ennakoituun ja todelliseen kysyntään. Varasto, joka vastaanotetaan tavaralähetyksen täydennystilauksen perusteella, on edelleen toimittajan omistuksessa. Ainoastaan fyysisen varastovastaanoton päivitykseen liittyvien tuotteiden omistajuus kirjataan, minkä vuoksi kirjanpitotapahtumia ei päivitetä. **Omistaja**-dimension avulla erotetaan toisistaan toimittajan omistaman varaston tiedot ja vastaanottavan yrityksen omistaman varaston tiedot. Lähetyksen täydennys tilausrivit on **Avoin tilaus** tila niin pitkä kuin koko määrä rivejä ei vastaanotettu tai peruutettu. Kun koko määrä on saanut tai peruutettu-tila muutetaan **valmiit**. Fyysinen käytettävissä oleva varasto, joka liittyy tavaralähetyksen täydennystilaukseen, voidaan kirjata rekisteröintiprosessin tai tuotteen vastaanoton päivitysprosessin avulla. Kirjaus voidaan tehdä osana nimikkeen saapumisen kirjausprosessia tai päivittämällä tilausrivit manuaalisesti. Kun käytetään tuotteen vastaanoton päivitysprosessia, kirjaus tehdään tuotteen vastaanoton kirjauskansioon, jota voidaan käyttää tavaran vastaanoton kuittaamiseen toimittajille. 
+Tavaralähetyksen täydennystilaus -asiakirjalla voidaan pyytää ja jäljittää tuotteiden varastomääriä, jotka toimittaja aikoo toimittaa tietyllä aikavälillä luomalla tilatut varastotapahtumat. Yleensä tämä perustuu tietyn tuotteen ennakoituun ja todelliseen kysyntään. Varasto, joka vastaanotetaan tavaralähetyksen täydennystilauksen perusteella, on edelleen toimittajan omistuksessa. Ainoastaan fyysisen varastovastaanoton päivitykseen liittyvien tuotteiden omistajuus kirjataan, minkä vuoksi kirjanpitotapahtumia ei päivitetä. **Omistaja**-dimension avulla erotetaan toisistaan toimittajan omistaman varaston tiedot ja vastaanottavan yrityksen omistaman varaston tiedot. Tavaralähetyksen täydennyksen tilausriveillä on **Avoin tilaus** -tila niin pitkään kuin rivien koko määrää ei ole vastaanotettu tai peruutettu. Kun koko määrä on vastaanotettu tai peruutettu, tilaksi muutetaan **Valmis**. Fyysinen käytettävissä oleva varasto, joka liittyy tavaralähetyksen täydennystilaukseen, voidaan kirjata rekisteröintiprosessin tai tuotteen vastaanoton päivitysprosessin avulla. Kirjaus voidaan tehdä osana nimikkeen saapumisen kirjausprosessia tai päivittämällä tilausrivit manuaalisesti. Kun käytetään tuotteen vastaanoton päivitysprosessia, kirjaus tehdään tuotteen vastaanoton kirjauskansioon, jota voidaan käyttää tavaran vastaanoton kuittaamiseen toimittajille. 
 
-[![erä-täydennys-tilaus](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![consignment-replenishment-order](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Varaston omistajuuden muutoksen kirjauskansio
 Varaston omistajuuden muutoksen kirjauskansiota käytetään muutettaessa lähetysvaraston omistajuus toimittajalta vastaanottavalle yritykselle. Odotettuja varastotapahtumia ei luoda kirjaan. Vain ne varastotapahtumat luodaan, jotka liittyvät kirjattuun kirjauskansioon. Kun kirjauskansio on kirjattu:
@@ -69,14 +72,16 @@ Varaston omistajuuden muutoksen kirjauskansiota käytetään muutettaessa lähet
 
 Tavaralähetyksen ostotilausten tuoterivien määrää ei voida päivittää tilauksen luonnin jälkeen. 
 
-[![omistus-muutos-varastokirjauskansio](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![inventory-ownership-change-journal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Toimittajayhteistyö tavaralähetysprosessissa
 Toimittajayhteistyöliittymässä on kolme saapuvaan tavaralähetysprosessiin liittyvää sivua:
 
--   **Ostotilausten****kuluttaa lähetyksen varaston** -näyttää yksityiskohtaiset tiedot omistajuuden muutokseen liittyvän erän prosessista ostaa.
+-   **Ostotilaukset**, **jotka käyttävät tavaralähetysvarastoa** : näyttää ostotilauksen yksityiskohtaiset tiedot, jotka liittyvät tavaralähetysprosessin aiheuttamaan omistajuuden muutokseen.
 -   **Tavaralähetysvarastosta vastaanotetut tuotteet**: näyttää tiedot nimikkeistä ja määristä, jotka on päivitetty pakkausluetteloihin omistajan muutosprosessin aikana.
 -   **Käytettävissä oleva tavaralähetysvarasto**: näyttää tiedot lähetyksen nimikkeistä, jotka on tarkoitus toimittaa ja nimikkeet, jotka ovat jo fyysisesti saatavilla asiakkaan toimipaikassa.
+
+
 
 
 

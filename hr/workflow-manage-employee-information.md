@@ -1,6 +1,6 @@
 ---
-title: "Työnkulkujen avulla voit hallita työntekijätiedot"
-description: "Tässä ohjeaiheessa kerrotaan, miten voit henkilöstöhallinnon työnkulun kyvyn hallita työntekijöiden tietoja. Voit liittää toimeen työnkulun ja hyväksynnän työnkulku, joka käynnistetään, kun työntekijät muuttavat niiden tietueen määrittäminen."
+title: "Työntekijätietojen hallinta työnkulkujen avulla"
+description: "Tässä ohjeaiheessa kerrotaan, henkilöstöhallinnon työnkulkuja käytetään työntekijätietojen hallintaan. Voit esimerkiksi liittää työnkulun toimeen ja määrittää hyväksynnän työnkulun, joka käynnistyy, kun työntekijät muuttavat tietuettaan."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,11 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-workflows-to-manage-employee-information"></a>Työnkulkujen avulla voit hallita työntekijätiedot
+# <a name="use-workflows-to-manage-employee-information"></a>Työntekijätietojen hallinta työnkulkujen avulla
 
-Tässä ohjeaiheessa kerrotaan, miten voit henkilöstöhallinnon työnkulun kyvyn hallita työntekijöiden tietoja. Voit liittää toimeen työnkulun ja hyväksynnän työnkulku, joka käynnistetään, kun työntekijät muuttavat niiden tietueen määrittäminen.
+[!include[banner](includes/banner.md)]
 
-Henkilöstöhallinnon työnkulun-ominaisuus sisältää useita työnkulkuja henkilöstöhallinnon tehtävät hallinnalle. Lisäksi lukuisat vaihtoehdot ovat käytettävissä, jotta voit muokata tietyn työnkulkuja ja kytkeä raportointihierarkian. Työnkulut ovat käytettävissä vakiotyyppisiä työntekijätiedot muutosten hallintaan. Työnkulku voi liittää toimeen. Tämän jälkeen työntekijät muuttaa niiden työntekijätietuetta, jos työnkulku on aloitettu, joka edellyttää hyväksyntää, ennen kuin uusia tietoja on tallennettu. Työnkulut ovat valmiiksi määritettyjä seuraavantyyppisiä tietoja, joiden avulla voit tehokkaasti hallita muutoksia ja säilyttää työntekijöiden tiedot tarkasti:
+
+Tässä ohjeaiheessa kerrotaan, henkilöstöhallinnon työnkulkuja käytetään työntekijätietojen hallintaan. Voit esimerkiksi liittää työnkulun toimeen ja määrittää hyväksynnän työnkulun, joka käynnistyy, kun työntekijät muuttavat tietuettaan.
+
+Henkilöstöhallinnon työnkulut sisältävät useita työnkulkuja henkilöstönhallinnon tehtävien hallintaan. Käytettävissä on myös useita vaihtoehtoja tiettyjen työkulkujen muokkaamiseen ja niiden liittämiseen raportointihierarkiaan. Työnkulut auttavat muutosten tekemisessä useisiin, vakiomuotoisiin työntekijätietoihin. Voit liittää työnkulun toimeen. Jos työntekijä muuttaa nyt työntekijätietuettaan, käynnistyy työnkulku, joka edellyttää hyväksynnän ennen, kuin uudet tiedot voidaan tallentaa. Seuraaville tietotyypeille on määritetty työnkulut etukäteen, jotta työntekijätietojen tarkkuuden säilyttäminen ja muutosten hallinta olisi mahdollisimman tehokasta:
 
 -   Tunnusnumerot
 -   Kurssit
@@ -39,33 +42,35 @@ Henkilöstöhallinnon työnkulun-ominaisuus sisältää useita työnkulkuja henk
 -   Projektikokemus
 -   Osaamisalueet
 -   Luottamustoimet
--   Henkilöstöhallinnon toiminnot
--   Kurssille ilmoittautuminen
+-   Henkilöstöhallinnon toimet
+-   Kurssin rekisteröinti
 
-Kun työntekijät palkataan, siirretty tai lopetettu, työnkulku voi sisältää tarkistusprosessia. Tällä tavalla voit tarkistaa asiakirjan tai osana työnkulku voidaan määrittää toiminnon käyttöehdot. Kun tarkistus on valmis, asiakirja tai toiminto on valmis ja viimeinen hyväksyntävaihe siirtyy työnkulun.
+Työnkulkuun voi sisältyä arviointiprosessi, kun työntekijöitä palkataan, siirretään tai irtisanotaan. Tällä tavalla asiakirjan voi tarkistaa tai toiminnon ehdot määrittää osaksi työnkulkua. Kun tarkistus on valmis, asiakirja tai toiminto on valmis ja työnkulku siirtyy lopulliseen hyväksyntävaiheeseen.
 
-## <a name="associate-a-workflow-with-a-position-hierarchy"></a>Liitä työnkulku toimihierarkia
-Voit liittää minkä tahansa hierarkian, jonka määrittää työnkulun. Esimerkiksi jos toimeen liittyvää raportointia hierarkia matriisi, voit määrittää työnkulun, joka reitittää kulut tiettyyn projektiin projektin liidin sen sijaan, että työntekijä, joka liittyy kyseisen toimen johtaja. Voit luoda uuden työnkulun tai muokata aiemmin luotu työnkulku **henkilöstöhallinnon työnkulun** -sivulla **uusi**. Valitse luettelosta voit käynnistää työnkulun suunnitteluikkunassa työnkulun. Voit luoda uuden työnkulun tai muuttaa aiemmin luodun työnkulun vaiheet suunnittelija. Kun muutat aiemmin luotu työnkulku, muutokset tallennetaan uutena versiona. Siksi voit aina palata edelliseen versioon Jos haluat.
+## <a name="associate-a-workflow-with-a-position-hierarchy"></a>Työnkulun liittäminen toimihierarkiaan
+Voit liittää työnkulun mihin tahansa määrittämääsi hierarkiaan. Jos toimeen liittyy esimerkiksi raportointihierarkian matriisi, voit määrittää työnkulun, joka reitittää kulut tietystä projektista projektin johtajalle toimeen liittyvän työntekijän esimiehen sijasta. Luo uusi työnkulku tai muokkaa aiemmin luotua työnkulkua napsauttamalla **Henkilöstöhallinnan työnkulku** -sivulla **Uusi**. Käynnistä työnkulun suunnittelija valitsemalla luettelosta työnkulku. Voit käyttää suunnittelusovellusta uuden työnkulun luontiin tai muuttaa aiemmin luodun työnkulun vaiheita. Kun muutat aiemmin luotua työnkulkua, muutokset tallennetaan uuteen versioon. Tämän ansiosta voit tarvittaessa palata aiempaan versioon.
 
-## <a name="configure-a-human-resources-workflow"></a>Henkilöstöhallinnon työnkulun määrittäminen
-Määrittää perus työnkulun, joka käynnistyy, kun työntekijät pyytää muutoksia heidän henkilökohtaiset tunnistetiedot, toimi seuraavasti.
+## <a name="configure-a-human-resources-workflow"></a>Henkilöstöhallinnon toimien määrittäminen
+Seuraa näitä vaiheita määrittääksesi perustyönkulun, joka käynnistetään, kun työntekijät haluavat muuttaa henkilötietojaan.
 
-1.  - **Henkilöstöhallinnon työnkulkuja** -sivulla **uusi**.
-2.  Valitse-luettelosta käytettävissä olevat työnkulut **tunnuslukujen**.
-3.  Valitse **suorittaa** voit käynnistää työnkulun suunnitteluikkunassa ja kirjoita käyttäjänimi ja salasana, kun sinua pyydetään.
-4.  Vedä **Hyväksy tunnusnumero** elementin designer piirtoalustaan luettelon työnkulun elementeistä.
-5.  Hyväksynnän elementti muodostaa **käynnistää** ja **loppu**.
-6.  Kaksoisnapsauta **Hyväksy elementin**, ja sitten hiiren kakkospainiketta ja valitse **ominaisuudet**.
-7.  Voit lisätä kohteen työohjeita seuraavasti:
-    1.  Valitse **tehtävän**, ja valitse sitten **hierarkian** Valitse tehtävätyyppi.
-    2.  Alla **hierarkian**, valinta **voidaan määrittää hierarkian**.
-    3.  Pysäytysehdon Lisää ja sulje sivu.
+1.  Valitse **Henkilöstöhallinnon työkulut** -sivulla **Uusi**.
+2.  Valitse käytettävien työnkulkujen luettelosta **Tunnusnumerot**.
+3.  Käynnistä työnkulun suunnittelusovellus valitsemalla **Suorita** ja kirjoita käyttäjänimesi ja salasanasi pyydettäessä.
+4.  Vedä **Hyväksy tunnusnumero** -elementti työnkulun elementtien luettelosta suunnittelusovelluksen alustalle.
+5.  Yhdistä hyväksyntäelementti **Alku**- ja **Loppu**-elementteihin.
+6.  Kaksoisnapsauta **Hyväksy elementti** -kohtaa sitten valitse **Ominaisuudet**.
+7.  Voit lisätä työkohteen ohjeita seuraavasti:
+    1.  Valitse **Tehtävä** ja sitten **Hierarkia** tehtävätyyppi-kohdasta.
+    2.  Valitse **Hierarkia**-vaihtoehdoista **Määritettävä hierarkia**.
+    3.  Lisää pysäytysehto ja sulje sivu.
 
-8.  Täytä lisäohjeita (muita varoituksia on olemassa).
-9.  Valitse **Tallenna ja sulje**. Kun valintaikkuna avautuu, ja valitse Uusi työnkulun aktivoiminen **Aktivoi**.
-10. Siirry **henkilöstöhallinnon**&gt;**toimien**&gt;**sijoittaa luokkahierarkian tyypit**.
-11. Valitse **matriisin**.
-12. Lisää **työntekijän tunnusnumero** työnkulun luetteloon.
+8.  Täytä lisäohjeet (muita varoituksia ei tule olla).
+9.  Valitse **Tallenna ja sulje**. Aktivoi uusi työnkulku valitsemalla **Aktivoi** aukeavasta valintaikkunasta.
+10. Siirry kohtaan **Henkilöstöhallinto** &gt; **Toimet** &gt; **Positiohierarkiatyypit**.
+11. Valitse **Matriisi**.
+12. Lisää **työntekijän tunnusnumero** -työnkulku luetteloon.
+
+
 
 
 

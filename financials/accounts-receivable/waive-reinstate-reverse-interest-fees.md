@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Luovu, palauta tai peruuta korot
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, miten korot ja maksut peruutetaan ja palautetaan sekä käytetään käänteistä veloitusta.
 
 Voit käyttää **Kaikki asiakkaat** -luettelosivun **Perintä** -välilehden painikkeita maksuista luopumiseen, peruuttamiseen tai palauttamiseen.
@@ -43,7 +46,7 @@ Kaikki nämä toiminnot muuttavat korkolaskua. Korkolasku on liiketoiminta-asiak
 | Palauta korkolaskut kokonaisuudessaan. –tai– Peruuta valitut korkotapahtumat, jotka ovat osa korkolaskuja. **Huomautus:** Et voi peruuttaa palkkiota. Voit kuitenkin peruuttaa koko korkolaskun, joka sisältää palkkion. | Maksut eivät enää eräänny asiakkaalta. Maksut erääntyvät kuitenkin uudelleen, jos korko lasketaan uudelleen. | Prosessi on sama kuin korkolaskuista tai valituista korkotapahtumista luopuminen. Asiakkaalle luodaan hyvityslasku tai laskun oikaisu. Tätä hyvityslaskua käytetään korkolaskun automaattiseen selvittämiseen. Voit käyttää erillistä prosessia koron uudelleenlaskemiseen ja uuden korkolaskun luontiin.                                                                                                                                                                                                                                                                                                                                                                                              |
 
 > [!NOTE] 
-> Voit myös kirjoittaa ulos luottotappioita erillisinä prosesseina. Tämä prosessi merkitsee kaikki selvityksen asiakastapahtumat vain korkolaskujen osana olevien maksujen peruuttamisen sijaan.
+> Voit myös käyttää erillistä prosessia luottotappioiden poiskirjaukseen. Tämä prosessi merkitsee kaikki selvityksen asiakastapahtumat vain korkolaskujen osana olevien maksujen peruuttamisen sijaan.
 
 ## <a name="adjust-interest-for-invoices"></a>Lakujen korkojen oikaisu
 Korkolaskujen oikaisujen lisäksi voit myös poistaa laskujen korkomaksut yhdellä seuraavista prosesseista. Molemmat prosessit suorittavat oikaisut myös liittyviin korkolaskuihin.
@@ -89,5 +92,7 @@ Voit peruuttaa korkotapahtumat käyttämällä **Tapahtuman korko** -painiketta 
 Voit tarkastella korkolaskuihin suoritettujen oikaisujen tarkkoja tietoja, kuten esimerkiksi oikaisun kirjoittanutta käyttäjää, oikaisun tyyppiä, määrää ja oikaisun kirjoituksen ajankohtaa. Saatat esimerkiksi ehkä haluta tarkastella korkolaskuun aiemmin tehtyjä muutoksia ennen uuden korkolaskun luomista. 
 
 Voit peruuttaa korkotapahtumat käyttämällä **Historia**-painiketta **Asiakas**-sivun **Perintä**-välilehdellä.
+
+
 
 

@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-actions"></a>Työnkulkutehtävät
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan toimenpiteet, jotka kukin työnkulun hyväksyntäprosessin osallistuja voi suorittaa.
 
-Työnkulkuun voi liittyä useita käyttäjäryhmiä: aloittaja, tehtävän osallistuja, päätöksentekijät ja hyväksyjät. Esimerkiksi seuraavassa kuluraportin työnkulussa Sam on aloittaja, jonon jäsenet ovat tehtävän osallistujia, John on päätöksentekijä sekä Frank, Sue sekä Ann ovat hyväksyjiä.   [![Työnkulun\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) Seuraavassa kerrotaan kullekin ryhmälle voi suorittaa työnkulkutoimintoja.
+Työnkulkuun voi liittyä useita käyttäjäryhmiä: aloittaja, tehtävän osallistuja, päätöksentekijät ja hyväksyjät. Esimerkiksi seuraavassa kuluraportin työnkulussa Sam on aloittaja, jonon jäsenet ovat tehtävän osallistujia, John on päätöksentekijä sekä Frank, Sue sekä Ann ovat hyväksyjiä.   [![Workflow\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) Seuraavissa osissa käsitellään työnkulun toimintoja, joita kukin ryhmä voi suorittaa.
 
 ## <a name="actions-that-an-originator-can-perform"></a>Toiminnot, joita aloittaja voi suorittaa
 Aloittaja käynnistää työnkulkuesiintymän lähettämällä tiedoston käsiteltäväksi. Sam voi esimerkiksi lähettää kuluraporttinsa napsauttamalla **Lähetä**-painiketta **Kuluraportti**-sivulla.
@@ -63,7 +66,7 @@ Työnimikejonon jäsen voi joskus hyväksyä tehtävän mutta päättää myöhe
 ## <a name="actions-that-a-decision-maker-can-perform"></a>Toiminnot, joita päätöksentekijä voi suorittaa
 Asiakirja määritetään yleensä päätöksentekijälle siksi, että siihen sisältyy kysymys, johon päätöksentekijän on vastattava. Kysymyksen vastaus on yleensä **Kyllä** tai **Ei** tai **Tosi** tai **Epätosi**. Jos päätöksentekijä ei valitse yhtä näistä vaihtoehdoista, hän delegoida päätöksen.
 
-### <a name="choice-1-or-choice-2"></a>\[Vaihtoehto 1\] tai \[vaihtoehto 2\]
+### <a name="choice-1-or-choice-2"></a>\[Vaihtoehto 1\] tai \[Vaihtoehto 2\]
 
 Päätöksentekijän on vastattava asiakirjaan liittyvään kysymykseen. Kysymyksen vastaus on yleensä **Kyllä** tai **Ei** tai **Tosi** tai **Epätosi**. Päätöksentekijän valitsema vastaus määrittää työnkulun haaran, jossa asiakirja käsitellään. Samin kuluraportti on esimerkiksi määritetty Johnille. Johnin on päätettävä, onko hänen soitettava Samin esimiehelle asiakirjan tietojen perusteella. John päättää, että puhelu on välttämätön, kuluraportti määritetään Arethalla, jonka on sitten soitettava Samin esimiehelle. Jos John päättää, että puhelua ei tarvita, kuluraportti määritetään Frankille hyväksyttäväksi.
 
@@ -89,5 +92,7 @@ Jos hyväksyjä delegoi tiedoston, se lähetetään hyväksyttäväksi toiselle 
 ### <a name="request-change"></a>Pyydä muutosta
 
 Jos hyväksyjä tekee muutospyynnön, tiedosto palautetaan sen lähettäneelle aloittajalle. Sam on esimerkiksi lähettänyt 12 000 dollarin arvoisen kuluraportin ja asiakirja on määritetty Suelle. Jos Sue pyytää muutosta, kuluraportti lähetetään takaisin Samille. Sam voi lähettää kuluraportin uudelleen. Hän voi tehdä siihen ensin pyydetyt muutokset tai lähettää kuluraportin alkuperäisen version uudelleen. Jos Sam lähettää kuluraportin uudelleen, se lähetetään Frankille hyväksyttäväksi, koska Frank on hyväksyntäprosessin ensimmäinen hyväksyjä.
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Alennuksia on toimittajan hyvityslaskuissa osittainen toimittajan maksu selvitetään"
+title: "Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen"
 description: "Tässä artikkelissa käydään läpi skenaario, jossa hyvityslasku selvitetään laskua vastaan."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Alennuksia on toimittajan hyvityslaskuissa osittainen toimittajan maksu selvitetään
+# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa käydään läpi skenaario, jossa hyvityslasku selvitetään laskua vastaan.
 
 Fabrikamin toimittajat antavat käteisalennuksia hyvityslaskuista. Toimittaja 3050 antaa Fabrikamille 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa.
 
 ## <a name="invoice-and-credit-memo"></a>Lasku ja hyvityslasku
-Kesäkuun 29 päivänä huhtikuuta Luo 1 000,00 3050 toimittajan lasku. 2. heinäkuuta hän luo 200,00 hyvityslaskulla. **Toimittajat**-sivulla April avaa **Selvitä tapahtumat** -sivun. Hän voi merkitä molemmat hyvityslaskut ja tilitettävän laskun **Selvitä tapahtumat** -sivulla. Hyvityslaskun alennukseksi lasketaan 2,00. Tämän vuoksi hyvityslaskun kokonaisarvoksi pienennetään 198,00.
+April luo 29. kesäkuuta 1 000,00 arvoisen laskun toimittajalle 3050. 2. heinäkuuta hän luo 200,00 arvoisen hyvityslaskun. **Toimittajat**-sivulla April avaa **Selvitä tapahtumat** -sivun. Hän voi merkitä molemmat hyvityslaskut ja tilitettävän laskun **Selvitä tapahtumat** -sivulla. Hyvityslaskun alennukseksi lasketaan 2,00. Tämän vuoksi hyvityslaskun kokonaisarvoksi pienennetään 198,00.
 
 | Merkitse                     | Käytä käteisalennusta | Tosite   | Tili | Päivämäärä      | Eräpäivä  | Lasku | Summa tapahtuman valuuttana | Valuutta | Täsmäytettävä summa |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -65,6 +68,8 @@ April voi tarkistaa toimittajan tapahtumat **Toimittajan tapahtumat** -sivulla v
 | Var-10071  |                  | 2.7.2015  | CR10071 | 200,00                               |                                       | 0,00    | USD      |
 | ALE-10071 |  Käteisalennus   | 2.7.2015  |         | 2,00                                 |                                       | 0,00    | USD      |
 | ALE-10071 |  Käteisalennus   | 2.7.2015  |         |                                      | 2,00                                  | 0,00    | USD      |
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: KO-tapahtuma-asetuksia
+title: "Käyttöomaisuuserien tapahtuma-asetukset"
 description: "Tässä artikkelissa kerrotaan käyttöomaisuustapahtumien luomisessa käytettävät menetelmät."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="fixed-asset-transaction-options"></a>KO-tapahtuma-asetuksia
+# <a name="fixed-asset-transaction-options"></a>Käyttöomaisuuserien tapahtuma-asetukset
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa kerrotaan käyttöomaisuustapahtumien luomisessa käytettävät menetelmät.
 
@@ -36,7 +39,7 @@ Voit määrittää käyttöomaisuuden integrointiin ostoreskontran, myyntireskon
 Voit määrittää käyttöomaisuustapahtumia Kirjaustosite-sivulla. Tämä sivu voidaan avata Laskukirjauskansio-sivulta. Voit avata Kirjaustosite-sivun myös Hyväksyttyjen laskujen kirjauskansio -sivulta. Valitse Vastatilityyppi-kentässä Käyttöomaisuudet. Valitse sitten Vastatili-kentässä käyttöomaisuuserän numero. Anna Käyttöomaisuudet-välilehteen Tapahtumatyyppi- ja Kirja-kenttien arvot.
 
 ## <a name="accounts-receivable"></a>Myyntireskontra
-Kenttään voidaan syöttää käyttöomaisuuden tapahtumien sivun tekstimuotoisen laskun.  Tekstimuotoinen lasku-sivu laskun rivien ruudukko Valitse rivi. Valitse Rivin erittely -pikavälilehti. Kirjoita poistotapahtuman käyttöomaisuuserän numero ja kirja. Vapaatekstilaskujen käyttöomaisuustapahtumatyyppi on aina Poistomyynti.
+Voit määrittää käyttöomaisuustapahtumia Vapaatekstilasku-sivulla.  Valitse rivinimike Vapaatekstilasku-sivun Laskurivit-ruudukossa. Valitse Rivin erittely -pikavälilehti. Kirjoita poistotapahtuman käyttöomaisuuserän numero ja kirja. Vapaatekstilaskujen käyttöomaisuustapahtumatyyppi on aina Poistomyynti.
 
 ## <a name="procurement-and-sourcing"></a>Hankinta
 Voit määrittää käyttöomaisuustapahtumia Ostotilaus-sivulla. Luo ostotilaus antamalla vaaditut tiedot ja valitse sitten OK. Valitse Ostotilaus-sivulla Rivin erittely -pikavälilehti. Anna sitten Käyttöomaisuudet-välilehdessä käyttöomaisuuden tiedot. 
@@ -65,6 +68,8 @@ Käyttöomaisuustapahtumatyyppejä voi kirjata Kirjauskansio-sivulla. Voit käyt
 
 
 
-Lisätietoja on ohjeaiheessa [kiinteän omaisuuden integrointi](fixed-asset-integration.md).
+Lisätietoja on ohjeaiheessa [Käyttöomaisuuden integrointi](fixed-asset-integration.md).
+
+
 
 

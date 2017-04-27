@@ -1,5 +1,5 @@
 ---
-title: "Järjestää käytettävyyttä Osastot, työt ja toimet"
+title: "Työresurssien järjestäminen osastojen, töiden ja toimien avulla"
 description: "Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä ohjeaiheessa kuvataan elementtien käsitteellisiä tietoja."
 author: rschloma
 manager: AnnBe
@@ -26,22 +26,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Järjestää käytettävyyttä Osastot, työt ja toimet
+# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Työresurssien järjestäminen osastojen, töiden ja toimien avulla
+
+[!include[banner](includes/banner.md)]
+
 
 Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä ohjeaiheessa kuvataan elementtien käsitteellisiä tietoja. 
 
 Seuraavassa esimerkissä on kuvattu tässä ohjeaiheessa käytettäviä käsitteitä.
 
-|**Osasto**|**Position**|**Job**|
+|**Osasto**|**Sijainti**|**Työ**|
 |---|---|---|
 |**myynti**|Myyntipäällikkö (Itä)|Myyntipäällikkö|
 |**myynti**|Myyntipäällikkö (Länsi)|Myyntipäällikkö|
 |**myynti**|Myyntipäällikkö (Keski)|Myyntipäällikkö|
-|**Accounting**|Taloushallintopäällikkö|Laskentapäällikkö|
-|**Accounting**|Kirjanpitäjä A|Kirjanpitäjä|
-|**Human resources**|Henkilöstöpäällikkö (Itä)|Henkilöstöpäällikkö|
-|**Human resources**|Henkilöstöpäällikkö (Länsi)|Henkilöstöpäällikkö|
-|**Human resources**|Henkilöstöpäällikkö (Keski)|Henkilöstöpäällikkö|
+|**Kirjanpito**|Taloushallintopäällikkö|Laskentapäällikkö|
+|**Kirjanpito**|Kirjanpitäjä A|Kirjanpitäjä|
+|**Henkilöstöhallinto**|Henkilöstöpäällikkö (Itä)|Henkilöstöpäällikkö|
+|**Henkilöstöhallinto**|Henkilöstöpäällikkö (Länsi)|Henkilöstöpäällikkö|
+|**Henkilöstöhallinto**|Henkilöstöpäällikkö (Keski)|Henkilöstöpäällikkö|
 
  
  <a name="departments"></a>Osastot
@@ -79,7 +82,7 @@ Voit luoda työtehtäviä, jotka kuvaavat kyseisessä toimessa toimivan työntek
 
 ### <a name="job-functions"></a>Työtehtävät
 
-Työtehtävät ovat työhön määritettyjä tehtäviä tai vastuita. Työtehtäviä voidaan määritelty projekteille ja määrittää ja toteuttaa oikeutussääntöjä kompensaatiosuunnitelmien varten. Seuraavassa taulukossa on lueteltu esimerkkejä työtehtäviä.
+Työtehtävät ovat työhön määritettyjä tehtäviä tai vastuita. Työtehtävät voidaan määrittää töille, ja niitä voidaan käyttää kompensaatiosuunnitelmien kelpoisuussääntöjen määrittämisessä ja käyttöönotossa. Seuraavassa taulukossa on esimerkkejä työtehtävistä.
 
 | Työ           | Työtehtävä                                                |
 |---------------|-------------------------------------------------------------|
@@ -101,7 +104,7 @@ Vastuualueiden avulla voi osoittaa tietyssä toimessa toimivan työntekijän vas
 <a name="positions"></a>Toimet
 ----------
 
-Toimet ovat organisaatiohierarkian alemman tason tärkeä osa. Toimi on työn yksittäinen esiintymä. Esimerkiksi sijainti "(Itä), Sales manager" on vain yksi, joka liittyy työ-paikkojen "Myyntipäällikkö". Osasto on olemassa ja määrittää työntekijöille.
+Toimet ovat organisaatiohierarkian alemman tason tärkeä osa. Toimi on työn yksittäinen esiintymä. Esimerkiksi toimi Myyntipäällikkö (Itä) on vain yksi Myyntipäällikkö-työhön liittyvistä toimista. Toimet sijoittuvat osastoille, ja niitä määritetään työntekijöille.
 ### <a name="position-creation-and-maintenance"></a>Toimen luominen ja ylläpito
 
 -   Voit tarkastella toimiin liittyvää järjestelmän muutoshistoriaa helppokäyttöisellä luettelosivulla.
@@ -161,6 +164,8 @@ Joissakin tietueissa voit määrittää tietueeseen tehtävät tulevat muutokset
 </table>
 
 Voit muokata edellä olevassa taulukossa mainittuja toimen tai työn tietoja ja määrittää päivämäärän, jona toimen tai työn muutokset tulevat voimaan. Esimerkki: Toimi voidaan määrittää vain yhdelle työntekijälle, mutta Sanjay Patel, joka on nimitetty kirjanpitäjä A:n toimeen, on lähdössä yrityksestä kahden viikon kuluttua. Joe Healy tulee hänen tilalleen. Vaikka Sanjay on edelleen toimessaan, voit määrittää Joe Healyn samaan toimeen siten, että määritys tulee voimaan vasta Sanjayn viimeisen työpäivän jälkeen.
+
+
 
 
 

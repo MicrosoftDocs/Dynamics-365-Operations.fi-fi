@@ -1,5 +1,5 @@
 ---
-title: POS-oheislaitteet
+title: Myyntipisteen oheislaitteet
 description: "Retail Modern point of sale (POS) ja Cloud POS voivat käyttää useita myyntipisteen (POS) oheislaitteita, liittymiä ja käyttöönottovaihtoehtoja, jotka soveltuvat jälleenmyyjien erilaisiin liiketoimintaskenaarioihin."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 215234
 ms.assetid: 1893d4b3-e1b7-4b66-be58-0102addd5b36
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="pos-hardware-peripherals"></a>POS-oheislaitteet
+# <a name="pos-hardware-peripherals"></a>Myyntipisteen oheislaitteet
+
+[!include[banner](includes/banner.md)]
+
 
 Retail Modern point of sale (POS) ja Cloud POS voivat käyttää useita myyntipisteen (POS) oheislaitteita, liittymiä ja käyttöönottovaihtoehtoja, jotka soveltuvat jälleenmyyjien erilaisiin liiketoimintaskenaarioihin. 
 
@@ -63,6 +66,8 @@ Seuraavassa luettelossa on kunkin luokan laitteen malleja, jotka Microsoft on te
 
 -   Viivakoodinlukija – Honeywell 1900, HP LS2208
 -   Magneettinauhan lukulaite – Magtek PN - 21073075
+
+
 
 
 

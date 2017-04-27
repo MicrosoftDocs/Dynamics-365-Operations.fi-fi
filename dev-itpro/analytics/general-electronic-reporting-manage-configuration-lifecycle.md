@@ -1,6 +1,6 @@
 ---
 title: "Sähköisen raportoinnin konfiguraatioiden elinkaaren hallinta"
-description: "Tässä aiheessa kuvataan, miten sähköiset raportointi (ER) kokoonpanojen toimintoja ratkaisun Microsoft Dynamics-365 elinkaaren hallintaan."
+description: "Tässä aiheessa kuvataan sähköisen raportoinnin konfiguraatioiden elinkaaren hallintaa Dynamics 365 for Operations -järjestelmässä."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Sähköisen raportoinnin konfiguraatioiden elinkaaren hallinta
 
-Tässä aiheessa kuvataan, miten sähköiset raportointi (ER) kokoonpanojen toimintoja ratkaisun Microsoft Dynamics-365 elinkaaren hallintaan.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä aiheessa kuvataan sähköisen raportoinnin konfiguraatioiden elinkaaren hallintaa Dynamics 365 for Operations -järjestelmässä.
 
 <a name="overview"></a>Yleiskuvaus
 --------
@@ -36,9 +39,9 @@ Sähköinen raportointi on moduuli, joka tukee lakisääteisiä ja maakohtaisia 
 
 -   Sähköisen asiakirjan malli suunnitteleminen:
     -   Tunnista vaaditut tietolähteet, jotka voidaan esittää asiakirjassa:
-        -   Työvaiheiden tietoja, kuten arvotaulukot ja tietojen kohteiden luokkien pohjana Dynamics-365.
-        -   Prosessi-kohtaisia ominaisuuksia, kuten suorituksen päivämäärä ja aika ja aikavyöhyke.
-        -   Käyttäjän määrittämä suorituksen aikana käyttäjän syöteparametreja.
+        -   Dynamics 365 for Operations -taustatiedot (datataulukot ja -entiteetit sekä Dynamics 365 for Operations -luokat).
+        -   Prosessikohtaiset ominaisuudet (suorituspäivämäärä ja -aika sekä aikavyöhyke).
+        -   Käyttäjän syöttöparametrit (loppukäyttäjä määrittää suorituksen aikana).
     -   Määrittele asiakirjassa tarvittavat osat ja niiden topologia, jotta voit määrittää asiakirjalle lopullisen muodon.
     -   Määritä haluamasi valituista tietolähteistä tuleva tietovirta määriteltyihin asiakirjan elementteihin (sitomalla tietolähteet asiakirjan muotokomponentteihin) ja määritä prosessinhallintalogiikka.
 -   Julkaise malli käyttöön niin, että sitä voidaan käyttää muissa Dynamics 365 for Operations -esiintymissä:
@@ -49,19 +52,19 @@ Sähköinen raportointi on moduuli, joka tukee lakisääteisiä ja maakohtaisia 
     -   Tuo malli sähköisen raportoinnin konfiguraationa LCS:stä nykyiseen Dynamics 365 for Operations -esiintymään.
     -   Suunnittele sähköisen raportoinnin konfiguraatiosta mukautettu versio, mutta säilytä viittaus perusversioon.
 -   Integroi malli tiettyyn liiketoimintaprosessiin niin, että se on käytettävissä Dynamics 365 for Operations -järjestelmässä:
-    -   Määritä Dynamics AX:n asetukset, jotta Dynamics 365 for Operations alkaa käyttää sähköisen raportoinnin konfiguraatiota, viittaamalla kyseiseen konfiguraatioon prosessiin liittyvällä parametrilla. Esimerkiksi viitata tiettyjen tilien ostoreskontran maksutapa, tuoda käsittelyyn laskujen sähköinen maksu virhesanoman ER-määrityksiä.
+    -   Määritä Dynamics AX:n asetukset, jotta Dynamics 365 for Operations alkaa käyttää sähköisen raportoinnin konfiguraatiota, viittaamalla kyseiseen konfiguraatioon prosessiin liittyvällä parametrilla. Voit esimerkiksi viitata sähköisen raportoinnin konfiguraatioon tietyssä ostoreskontran maksumenetelmässä, jos haluat luoda sähköisen maksuviestin laskujen käsittelyä varten.
 -   Käytä mallia määrätyssä liiketoimintaprosessissa:
-    -   Suorittaa tietyn liiketoimintaprosessin ER-kokoonpano. Esimerkiksi voit tuoda virhesanoman sähköisen maksun käsittelyssä laskut kun maksutapa, joka viittaa ER-kokoonpano on valittuna.
+    -   Suorita sähköisen raportoinnin konfiguraatio määrätyssä liiketoimintaprosessissa. Voit esimerkiksi viitata sähköisen raportoinnin konfiguraatioon tietyssä ostoreskontran maksumenetelmässä, jos haluat luoda sähköisen maksuviestin laskujen käsittelyä varten.
 
 ## <a name="concepts"></a>Käsitteet
-ER-kokoonpanon elinkaarta liittyvät seuraavat roolit ja aktiviteetit.
+Sähköisen raportoinnin konfiguraatioiden elinkaareen liittyvät seuraavat roolit ja tehtävät.
 
 | Rooli                                       | Tehtävät                                                      | kuvaus                                                                                                                                                                                                                  |
 |--------------------------------------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sähköisen raportoinnin toiminnallinen konsultti | Sähköisen raportoinnin komponenttien (mallien ja muotojen) luonti ja hallinta.           | Liiketoiminnan henkilö, joka suunnittelee ER toimialueen tiedot – mallit, mallien edellyttää sähköisten asiakirjojen mallit ja sitoo vastaavasti.                                                                           |
-| Sähköisen raportoinnin kehittäjä             | Tietomallien yhdistämismääritysten luonti ja hallinta.                          | Dynamics-365-toimintojen asiantuntija, joka valitsee toimintoja tietojen pakollinen Dynamics-365 tietolähteitä ja sitoo ne ER toimialueen tiedot – mallit.                                                                 |
-| Taloushallintopäällikkö                      | Sähköisen raportoinnin artefakteihin viittaavien prosessiin liittyvien asetusten määrittäminen. | Esimerkiksi **Taloushallintopäällikkö** rooli, jonka avulla asetukset ER-määritys, jota käytetään erityisesti tileihin maksettavaa maksutapa luoda sähköinen maksu virhesanoman laskujen käsittelyyn. |
-| Ostoreskontran maksuliikenneassistentti            | Sähköisen raportoinnin artefaktien käyttäminen määrätyssä liiketoimintaprosessissa.                | Esimerkiksi **tileille maksettavien maksujen virkailija** rooli, joka mahdollistaa viestien sähköinen maksu luodaan laskujen käsittely perustuu ER muotoilun, joka on määritetty tietylle maksutavalle.           |
+| Sähköisen raportoinnin toiminnallinen konsultti | Sähköisen raportoinnin komponenttien (mallien ja muotojen) luonti ja hallinta.           | Yrityksessä työskentelevä henkilö, joka suunnittelee sähköisen raportoinnin toimialuekohtaisia tietomalleja, suunnittelee sähköisissä asiakirjoissa tarvittavat mallit ja liittää ne vastaavasti.                                                                           |
+| Sähköisen raportoinnin kehittäjä             | Tietomallien yhdistämismääritysten luonti ja hallinta.                          | Dynamics 365 for Operations -asiantuntija, joka valitsee tarvittavat Dynamics 365 for Operations -tietolähteet ja sitoo ne sähköisen raportoinnin toimialuekohtaisiin tietomalleihin.                                                                 |
+| Taloushallintopäällikkö                      | Sähköisen raportoinnin artefakteihin viittaavien prosessiin liittyvien asetusten määrittäminen. | Esimerkiksi **Taloushallintopäällikkö**-rooli, joka sallii sähköisen raportoinnin konfiguraation asetusten käyttämisen tietyssä ostoreskontran maksumenetelmässä sähköisen maksuviestin luomiseksi laskujen käsittelyä varten. |
+| Ostoreskontran maksuliikenneassistentti            | Sähköisen raportoinnin artefaktien käyttäminen määrätyssä liiketoimintaprosessissa.                | Esimerkiksi **Ostoreskontran maksuliikenneassistentti** -rooli, joka sallii sähköisten maksuviestien luomisen laskujen käsittelyä varten tietylle maksutavalle määritetyn sähköisen raportoinnin muodon perusteella.           |
 
 ## <a name="er-configuration-development-lifecycle"></a>Sähköisen raportoinnin konfiguraation kehityksen elinkaari
 On suositeltavaa, että sähköisen raportoinnin konfiguraatiot suunnitellaan kehitysympäristössä erillisenä Dynamics 365 for Operations -esiintymänä seuraavista sähköiseen raportointiin liittyvistä syistä:
@@ -69,11 +72,13 @@ On suositeltavaa, että sähköisen raportoinnin konfiguraatiot suunnitellaan ke
 -   Käyttäjät, joilla on joko **Sähköisen raportoinnin kehittäjä**- tai **Sähköisen raportoinnin toiminnallinen konsultti** -rooli, voivat muokata konfiguraatioita ja suorittaa ne sitten testitarkoituksissa. Tämä skenaario saattaa aiheuttaa kutsuja luokkien tai taulujen menetelmistä, jotka voivat olla vahingollisia liiketoimintatiedoille ja erillisenä Dynamics 365 for Operations -esiintymän suorituskyvylle.
 -   Dynamics 365 for Operations -aloituskohdat ja kirjattu yrityksen sisältö eivät rajoita luokkien ja taulujen menetelmien kutsuja sähköisen raportoinnin tietolähteinä tai konfiguraatioina. Niinpä käyttäjät, joilla on joko **Sähköisen raportoinnin kehittäjä**- tai **Sähköisen raportoinnin toiminnallinen konsultti** -rooli, voivat päästä käsiksi salassa pidettäviin tietoihin.
 
-ER-kokoonpanoja, jotka on suunniteltu kehitysympäristössä voi ladata (oikea prosessi-integrointi, tulokset ja suorituskykyä oikeellisuuden) kokoonpanon arviointi ja laadunvarmistus rooliin perustuvia käyttöoikeuksia oikeellisuuden ja eriyttämisen testiympäristöön. ER kokoonpano vaihdon mahdollistavien ominaisuuksien voidaan käyttää tähän tarkoitukseen. Lopuksi hyviksi ER-kokoonpanoissa voidaan ladata LCS, josta ne voi jakaa palvelun tilaajat, tai tuotantoympäristöön sisäiseen käyttöön, kuten seuraavassa kuvassa näytetään. ![ER kokoonpanon elinkaarta](./media/ger-configuration-lifecycle.png)
+Kehitysympäristössä suunnitellut sähköisen raportoinnin konfiguraatiot voidaan ladata testiympäristöön konfiguraation arviointia (oikea prosessi-integraatio, tulosten oikeellisuus, suorituskyky) ja laadunvarmistusta (roolipohjaisten käyttöoikeuksien oikeellisuus, tehtävien eriyttäminen jne.) varten. Tähän tarkoitukseen voidaan käyttää toimintoja, jotka sallivat sähköisen raportoinnin konfiguraatioiden vaihdon. Lopuksi testatut sähköisen raportoinnin konfiguraatiot voidaan ladata joko LCS:ään, jossa ne voidaan jakaa palvelun tilaajille, tai tuotantoympäristöön sisäiseen käyttöön, kuten seuraavassa kaaviossa. ![ER-konfiguraation elinkaari](./media/ger-configuration-lifecycle.png)
 
 <a name="see-also"></a>Lisätietoja
 --------
 
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
+
+
 
 

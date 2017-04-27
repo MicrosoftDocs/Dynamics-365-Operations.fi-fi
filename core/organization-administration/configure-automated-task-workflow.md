@@ -1,5 +1,5 @@
 ---
-title: "Työnkulun automaattisen tehtävän määrittäminen"
+title: "Automaattisen tehtävän määrittäminen työnkulkuun"
 description: "Tässä ohjeaiheessa kerrotaan, miten automaattisen tehtävän ominaisuudet määritetään."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-automated-task-in-a-workflow"></a>Työnkulun automaattisen tehtävän määrittäminen
+# <a name="configure-an-automated-task-in-a-workflow"></a>Automaattisen tehtävän määrittäminen työnkulkuun
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä ohjeaiheessa kerrotaan, miten automaattisen tehtävän ominaisuudet määritetään.
 
@@ -92,16 +95,18 @@ Voit lähettää käyttäjille ilmoituksia, kun automaattinen tehtävä on suori
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tietyt Microsoft Dynamics-365 toimintoja käyttäjille</td>
+    <td>Tietyt Microsoft Dynamics 365 for Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong> luettelo sisältää kaikki käyttäjien toimien Dynamics 365. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
 8.  Toista vaiheet 3-7 kullekin tapahtumalle, jonka valitsit vaiheessa 2.
+
+
 
 
 

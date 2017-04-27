@@ -1,6 +1,6 @@
 ---
-title: Power BI-kotisivu
-description: "Tässä ohjeaiheessa luettelo resursseista, jotka auttavat BI virran käyttää Dynamics 365 operaatioille."
+title: Power BI -kotisivu
+description: "Tässä aiheessa esitellään resurssit, jotka auttavat Power BI -sovelluksen käyttämisessä Dynamics 365 for Operations -ohjelman kanssa."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,51 +24,56 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="power-bi-home-page"></a>Power BI-kotisivu
+# <a name="power-bi-home-page"></a>Power BI -kotisivu
 
-Tässä ohjeaiheessa luettelo resursseista, jotka auttavat BI virran käyttää Dynamics 365 operaatioille.
+[!include[banner](../includes/banner.md)]
 
-<a name="power-bi-content-for-dynamics-365-for-operations"></a>Työvaiheiden 365 Dynamics Power BI sisältö
+
+Tässä aiheessa esitellään resurssit, jotka auttavat Power BI -sovelluksen käyttämisessä Dynamics 365 for Operations -ohjelman kanssa.
+
+<a name="power-bi-content-for-dynamics-365-for-operations"></a>Power BI -sisältö Dynamics 365 for Operations -ohjelmaa varten
 ------------------------------------------------
 
-| **Feature area**                  | **Power BI-sisältö**                          | **Mistä löytää Power BI sisältö**                                                                                                                                                                                         | **Opi lisää**                                                                                                                                                               |
+| **Ominaisuusalue**                  | **Power BI -sisältö**                          | **Löydä Power BI -sisältö**                                                                                                                                                                                         | **Lisätietoja**                                                                                                                                                               |
 |-----------------------------------|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Taloushallinto              | Taloudellisesta tuloksesta                         | Microsoft Dynamics Lifecycle Services (LCS) (tämän version sisältö pack tukee version toiminnot 1611 Dynamics 365.) PowerBI.com (tämän sisältö pack-versio tukee Microsoft Dynamics-365 toimintojen 7.0-ja 7.0.1.) | [Taloudellinen suorituskyky Virranhallinta BI sisältö](financial-performance-power-bi-content-pack.md)                                               |
+| Taloushallinto              | Taloudellinen suorituskyky                         | Microsoft Dynamics Lifecycle Services (LCS) (tämä sisältöpaketin versio tukee Dynamics 365 for Operations -versiota 1611.) PowerBI.com (tämä sisältöpaketin versio tukee Microsoft Dynamics 365 for Operations -versioita 7.0 ja 7.0.1.) | [Taloudellisen suorituskyvyn Power BI -sisältö](financial-performance-power-bi-content-pack.md)                                               |
 |                                   | Luotonvalvonnan hallinta             | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-| Henkilöstöresurssien hallinta          | Työhönoton raportit                            | LCS                                                                                                                                                                                                                            | [Recruiting Power BI content](recruiting-analysis-power-bi-content-pack.md)                                                       |
-|                                   | Työntekijän osaamisalueet ja kehityksen raportit | LCS                                                                                                                                                                                                                            | [Työntekijän osaamista ja kehitystä Power BI-sisältö](employee-competencies-and-development-analysis-power-bi-content-pack.md) |
-|                                   | Organisaation koulutus raportit               | LCS                                                                                                                                                                                                                            | [Organisaation koulutus Power BI-sisältö](organizational-training-analysis-power-bi-content-pack.md)                             |
-|                                   | Työvoiman mittareita                             | LCS                                                                                                                                                                                                                            | [Työvoiman mittareita Power BI-sisältö](workforce-analysis-power-bi-content-pack.md)                                                 |
-|                                   | Korvauksia ja etuuksia raportit             | LCS                                                                                                                                                                                                                            | [Korvaukset ja edut Power BI-sisältö](compensation-and-benefits-analysis-power-bi-content-pack.md)                         |
-| Projektinhallinta ja kirjanpito | Työpäällikkö                              | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-| Vähittäismyynti ja kauppa               | Retail-kanavan tuloksen                    | PowerBI.com                                                                                                                                                                                                                    | [Vähittäismyynnin kanavan suorituskyky Virranhallinta BI sisältö](retail-channel-performance-dashboard-power-bi-data.md)                 |
-| Toimitusketjun hallinta           | Kustannushintojen hallinta                               | PowerBI.com                                                                                                                                                                                                                    |  [Kustannusten hallinnan sisältöä virtaa BI](cost-management-content-pack.md)                                                          |
-|                                   | Myynnin ja kannattavuuden suorituskyky           | LCS                                                                                                                                                                                                                            | [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)          |
-|                                   | Osto varojen käytön analyysi                       | LCS                                                                                                                                                                                                                            | [Purchase spend analysis Power BI content](purchase-content-pack-for-power-bi.md)                                                 |
-|                                   | Kustannuslaskenta-analyysi                      | LCS                                                                                                                                                                                                                            | [Kustannuslaskennan analyysi BI virran sisältö](cost-accounting-analysis-content-pack.md)                                         |
-|                                   | Fyysisen varastoinnin suorituskyky                         | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-|                                   | Tuotanto-suorituskyky                        | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
+| Henkilöstöresurssien hallinta          | Työhönottoraportit                            | LCS                                                                                                                                                                                                                            | [Työhönotto - Power BI -sisältö](recruiting-analysis-power-bi-content-pack.md)                                                       |
+|                                   | Työntekijöiden osaamistieto- ja kehitysraportit | LCS                                                                                                                                                                                                                            | [Työntekijöiden osaamistieto- ja kehitys - Power BI -sisältö](employee-competencies-and-development-analysis-power-bi-content-pack.md) |
+|                                   | Organisaation koulutusraportit               | LCS                                                                                                                                                                                                                            | [Organisaation koulutus - Power BI -sisältö](organizational-training-analysis-power-bi-content-pack.md)                             |
+|                                   | Työvoiman mittarit                             | LCS                                                                                                                                                                                                                            | [Työvoiman mittarit - Power BI -sisältö](workforce-analysis-power-bi-content-pack.md)                                                 |
+|                                   | Etuusraportit             | LCS                                                                                                                                                                                                                            | [Etuudet - Power BI -sisältö](compensation-and-benefits-analysis-power-bi-content-pack.md)                         |
+| Projektinhallinta ja kirjanpito | Käytäntöpäällikkö                              | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
+| Vähittäismyynti ja kauppa               | Vähittäismyyntikanavan suorituskyky                    | PowerBI.com                                                                                                                                                                                                                    | [Vähittäismyyntikanavan suorituskyvyn Power BI -sisältö](retail-channel-performance-dashboard-power-bi-data.md)                 |
+| Toimitusketjun hallinta           | Kustannushintojen hallinta                               | PowerBI.com                                                                                                                                                                                                                    |  [Kustannushintojen hallinta - Power BI -sisältö](cost-management-content-pack.md)                                                          |
+|                                   | Myynnin ja kannattavuuden suorituskyky           | LCS                                                                                                                                                                                                                            | [Power BI:n myynnin ja kannattavuuden suorituskykysisältö](sales-profitability-performance-content-pack.md)          |
+|                                   | Ostojen kulutusanalyysi                       | LCS                                                                                                                                                                                                                            | [Ostojen kulutusanalyysi - Power BI -sisältö](purchase-content-pack-for-power-bi.md)                                                 |
+|                                   | Kustannuslaskennan analyysi                      | LCS                                                                                                                                                                                                                            | [Kustannuslaskennan analyysi - Power BI -sisältö](cost-accounting-analysis-content-pack.md)                                         |
+|                                   | Varaston suorituskyky                         | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
+|                                   | Tuotannon tehokkuus                        | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
 
-## <a name="access-power-bi-content-from-lcs"></a>LCS Access BI virran sisältö
-Lisätietoja Power BI-sisällön lataaminen ja muodostaa organisaation tiedot kohdassa [virtaa BI sisältöä Microsoftin ja kumppanien LCS-](power-bi-content-microsoft-partners.md).
+## <a name="access-power-bi-content-from-lcs"></a>Power BI -sisällön käyttäminen LCS-sovelluksessa
+Lisätietoja Power BI -sisällön noutamisesta ja sen yhdistämisestä organisaation tietoihin on kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md).
 
-## <a name="access-power-bi-content-from-powerbicom"></a>Käyttö Power BI sisällön PowerBI.com
-1.  Kirjaudu [PowerBI.com](https://www.powerbi.com/).
-2.  Valitse **saada tietoja**.
-3.  - **Palvelut** -ruudusta **hakea**.
-4.  Valitse, ja valitse sitten sisältö pack **hakea**.
-5.  Kirjoita URL-osoite Dynamics-365 toimintojen ympäristöön. URL-Osoitteen on oltava muodossa **https://&lt;YourAOSTenant&gt;. cloudax.dynamics.com**. Click **Next**.
-6.  Valitse **oAuth2** kuin todennusmenetelmä, ja valitse sitten **kirjautua sisään**.
-7.  Kun sinulta kysytään, kirjoita Microsoft Office 365-tili, jolla on käyttöoikeudet toimia ympäristön että Dynamics-365.
-8.  Kun olet kirjautunut, kun tuontitoiminto käynnistyy automaattisesti. Kun tuonti on valmis, raportit, jotka sisältyvät sisältö pack näy siirtymisruudussa. Valitse raportin tuotujen tietojen tarkastelemiseen.
+## <a name="access-power-bi-content-from-powerbicom"></a>Power BI -sisällön käyttäminen PowerBI.com-sivustossa
+1.  Kirjaudu sisään osoitteessa [PowerBI.com](https://www.powerbi.com/).
+2.  Valitse **Nouda tiedot**.
+3.  Valitse **Palvelut**-ruudussa **Nouda**.
+4.  Valitse haluamasi sisältöpaketti ja valitse sitten **Nouda**.
+5.  Anna Dynamics 365 for Operations -ympäristön URL-osoite. URL-osoitteen on oltava muotoa **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Valitse **Seuraava**.
+6.  Valitse todennustavaksi **oAuth2** ja valitse **Kirjaudu sisään**.
+7.  Anna pyydettäessä Microsoft Office 365 -tili, jolla on Dynamics 365 for Operations -ympäristön käyttöoikeudet.
+8.  Tuontiprosessi alkaa automaattisesti sisäänkirjautumisen jälkeen. Kun tuonti on valmis, sisältöpaketin raportit näkyvät siirtymisruudussa. Valitse raportti, kun haluat katsella tuotuja tietoja.
 
-## <a name="learn-more-about-the-power-bi-integration"></a>Lue lisää virtaa BI-integrointi
--   [Power BI integration](power-bi-integration.md)
--   [Yleistä BI virran yksikön Myymälän integrointi](power-bi-integration-entity-store.md)
--   [Tuottaa ja levittää yksikön Store Power BI raportit](author-distribute-power-bi-reports.md)
--   [PIN Power BI raportteja, jotka on](pin-power-bi-reports.md)
--   [Microsoftin ja kumppanien LCS Power BI sisältö](power-bi-content-microsoft-partners.md)
+## <a name="learn-more-about-the-power-bi-integration"></a>Lisätietoja Power BI -integroinnista
+-   [Power BI -integrointi](power-bi-integration.md)
+-   [Power BI: ja entiteettisäilön integroinnin yleiskatsaus](power-bi-integration-entity-store.md)
+-   [Power BI -raporttien ja entiteettisäilön hallinta ja jakelu](author-distribute-power-bi-reports.md)
+-   [Power BI -raporttien kiinnittäminen työtiloihin](pin-power-bi-reports.md)
+-   [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md)
 -   [Sähköisen raportoinnin konfigurointi Dynamics 365 for Operations -tietojen lähettämiseksi Power BI -palveluun](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+
 
 
 

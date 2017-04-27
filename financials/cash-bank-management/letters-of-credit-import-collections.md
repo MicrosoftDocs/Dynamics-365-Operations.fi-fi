@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Luottokirjeet ja tuontiperittävät
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on yleisiä tietoja remburssista ja tuontiperittävistä. Molempia pankkitositteita käytetään usein valtioiden rajojen yli tapahtuvassa tavaroiden ostossa ja myynnissä.
 
 <a name="letters-of-credit"></a>Luottokirjeet
 -----------------
 
-Remburssit käytetään kansainvälisissä tapahtumissa ja auttavat takaamaan, että maksut voidaan suorittaa. Remburssia tai on sopimus, joka on myöntänyt pankki, jossa pankki sitoutuu takaamaan maksu, ostajan puolesta edellyttäen, että ostajan ja myyjän välisen sopimuksen ehdot täyttyvät. Remburssia tai kutsutaan myös remburssin (DC).
+Rembursseja käytetään kansainvälisissä liiketoimissa varmistamaan, että maksut suoritetaan. Remburssi on pankin antama sopimus, jossa pankki suostuu varmistamaan maksun ostajan puolesta, jos ostajan ja myyjän väliset ehdot täyttyvät. Remburssi tunnetaan myös luottokirjeenä.
 
 Tärkeässä remburssissa yritys on ostaja tai remburssin hakija. Vientiremburssissa yritys on myyjä tai remburssin edunsaaja. Luottokirjeen osapuolet ovat seuraavat:
 
@@ -50,5 +53,7 @@ Luottokirje voi olla **peruutettavissa** tai **peruuttamaton**. Luottokirje voi 
 Tuontiperittävä on pankin ja viejän (myyjän) välinen sopimus, jossa pankki suostuu toimittamaan lähetysasiakirjan kansainväliselle tuojalle (ostaja). Pankin odotetaan toimittavan lähetyskirja lähetettyjen tuotteiden käteismaksun vastaanoton tai maksun allekirjoitetun luonnoksen vastaanoton yhteydessä. 
 
 Tuontiperittävän avulla on mahdollista varmistaa, että myyjä saa maksun, kun ostaja saa tuotujen tavaroiden lähetysasiakirjat.
+
+
 
 

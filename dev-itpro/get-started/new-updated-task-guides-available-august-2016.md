@@ -1,6 +1,6 @@
 ---
-title: "Uusien tai päivitettyjen tehtävien apuviivat (elokuuta 2016)"
-description: "Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jotka on julkaistu Microsoft (elokuuta 2016 - kaikilla kielillä) APQC yhdistetyn kirjaston Microsoft Dynamics AX: n. Uutta aloituskirjastoa ei ole julkaistu."
+title: "Uudet tai päivitetyt tehtäväoppaat (elokuu 2016)"
+description: "Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n Microsoftin (elokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-august-2016"></a>Uusien tai päivitettyjen tehtävien apuviivat (elokuuta 2016)
+# <a name="new-or-updated-task-guides-august-2016"></a>Uudet tai päivitetyt tehtäväoppaat (elokuu 2016)
 
-Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jotka on julkaistu Microsoft (elokuuta 2016 - kaikilla kielillä) APQC yhdistetyn kirjaston Microsoft Dynamics AX: n. Uutta aloituskirjastoa ei ole julkaistu.
+[!include[banner](../includes/banner.md)]
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Tehtävän opastaa (elokuuta 2016 - kaikilla kielillä)-APQC yhtenäisen kirjaston Microsoft Dynamics AX: n
+
+Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n Microsoftin (elokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
+
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (elokuu 2016 - kaikki kielet)
 ---------------------------------------------------------------------------------------------------
 
-(Elokuuta 2016 - kaikilla kielillä) APQC yhdistetyn kirjasto sisältää tehtävän apuviivat, jotka on tarkoitettu käytettävän Microsoft Dynamics AX: N platform Update 2 (elokuu-2016), Dynamics AX Help 2016 sovellus päivittää ja vapauttaa Microsoft Dynamics AX-helmikuu 2016. Saat lisätietoja näistä julkaisuista, [mikä on uusi tai muutettu](whats-new-changed.md). Lokalisoidut versiot tehtävän apuviivat ovat tähän kirjastoon. Saat lisätietoja siitä, miten ohjeen muodostaa tehtävien opas-kirjasto [alkuun Ohje](help-overview.md).
+(Elokuuu 2016 - kaikki kielet) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n ympäristöpäivityksen 2 (elokuu 2016), Dynamics AX:n toukokuun 2016 sovelluspäivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. Lisätietoja näistä julkaisuista on kohdassa [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
 
 ### <a name="data-access"></a>Tietoyhteys
 
@@ -97,10 +100,12 @@ Tässä ohjeaiheessa on lueteltu uudet tai päivitetyt tehtävän apuviivat, jot
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Uusi tehtävä auttaa (helmikuu 2016)](new-task-guides-available-february-2016.md)
+[Uudet tehtäväoppaat (helmikuu 2016)](new-task-guides-available-february-2016.md)
 
-[Uudet tai päivitetyt tehtävä auttaa (toukokuussa 2016)](new-updated-task-guides-available-may-2016.md)
+[Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Uudet tai päivitetyt tehtävä auttaa (marraskuu-2016)](new-task-guides-november-2016.md)
+[Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)
+
+
 
 

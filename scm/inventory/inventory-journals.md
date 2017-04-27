@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-journals"></a>Varastokirjauskansiot
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan, miten varastokirjauskansioita voidaan käyttää erityyppisten varastotilannetapahtumien kirjaamisessa. 
 
 Microsoft Dynamics 365 for Operations -järjestelmän varastokirjauskansioihin kirjataan erityyppisiä fyysisiä varastotapahtumia, kuten varasto-ottoja ja -vastaanottoja, varastosiirtoja, tuoterakenteiden luonteja ja fyysisen varaston täsmäytys. Kaikki varastokirjauskansioita käytetään samalla tavalla, mutta ne on jaettu eri tyyppeihin.
@@ -72,7 +75,7 @@ Tuotannon varastoinnin kirjauskansiot toimivat kuten nimikkeen saapumisen kirjau
 
 ### <a name="counting"></a>Inventointi
 
-Voit korjata inventointikirjauskansioiden avulla nimikkeille tai nimikeryhmille rekisteröidyn käytettävissä olevan varaston ja kirjata sitten todellisen fyysisen määrän. Tällä tavoin tehdä oikaisut, joita tarvitaan erojen täsmäyttämiseen. Voit liittää inventointikäytännöt inventointiryhmiin, mikä auttaa ryhmittämään erilaisia ominaisuuksia sisältävät nimikkeet, jotta ne voidaan sisällyttää inventointikirjauskansioon. Voit esimerkiksi määrittää inventointiryhmät inventoimaan tietyn tiheyden nimikkeet tai inventoimaan nimikkeet, kun varasto laskee tietylle tasolle. Tietoja siitä, miten voit määrittää laskennan groups-Lue [Määritä varastoinventoinnin prosessit (tehtävän guide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Voit korjata inventointikirjauskansioiden avulla nimikkeille tai nimikeryhmille rekisteröidyn käytettävissä olevan varaston ja kirjata sitten todellisen fyysisen määrän. Tällä tavoin tehdä oikaisut, joita tarvitaan erojen täsmäyttämiseen. Voit liittää inventointikäytännöt inventointiryhmiin, mikä auttaa ryhmittämään erilaisia ominaisuuksia sisältävät nimikkeet, jotta ne voidaan sisällyttää inventointikirjauskansioon. Voit esimerkiksi määrittää inventointiryhmät inventoimaan tietyn tiheyden nimikkeet tai inventoimaan nimikkeet, kun varasto laskee tietylle tasolle. Lisätietoja inventointiryhmien määrittämisestä on artikkelissa [Varaston inventointiprosessien määrittäminen (tehtäväopas)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
 
 ### <a name="tag-counting"></a>Inventointi tunnisteiden perusteella
 
@@ -89,5 +92,7 @@ Vain yksi käyttäjä kerrallaan voi käsitellä kirjauskansiota. Jos useiden k�
 
 ## <a name="posting-journal-lines"></a>Kirjauskansioluettelorivit
 Voit kirjata luomiasi kirjauskansiorivejä koska tahansa siihen saakka, että nimike lisätään lisätapahtumille. Kirjauskansioon annetut tiedot pysyvät kirjauskansiossa, vaikka suljet kirjauskansion kirjaamatta rivejä.
+
+
 
 

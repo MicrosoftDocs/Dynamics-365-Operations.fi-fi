@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Valuutan uudelleenarvostus konsolidointiyrityksessä
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Kun konsolidoit tietoja yhdestä kirjanpitovaluutasta toiseen, sinun on silti ajettava valuutan uudelleenarvostus, jos vaihtokursseissa tapahtuu muutoksia niin, että tiliesi saldot on uudelleenarvostettu oikein. Kun konsolidoit tiedot ensimmäisen kerran, valitse **Valuutan muuntaminen** -välilehdeltä ensimmäiset vaihtokurssit, jotka muunnetaan konsolidointiprosessin aikana. Kun uusi vaihtokurssi on syötetty (esimerkiksi seuraavana kuukautena), sinun on uudelleenarvostettava tilisaldot. Toteutumattomat voitot tai tappiot päivitetään sitten tämän mukaisesti uuden vaihtokurssin ja päivämäärän perusteella. Seuraavassa esimerkissä on kuvattu kirjanpitomerkinnät, jotka luodaan tämän prosessin aikana.
@@ -33,7 +36,7 @@ Kun konsolidoit tietoja yhdestä kirjanpitovaluutasta toiseen, sinun on silti aj
 ## <a name="company-setup"></a>Yrityksen asetukset
 -   **Lähde/toimintaa harjoittava yritys (USMF)** – Yhdysvaltain dollareita (USD) käytetään kirjanpito- ja raportointivaluuttana.
 -   **Konsolidointiyritys (CON)** – Euroja (EUR) käytetään kirjanpito- ja raportointivaluuttana.
-    -   ** Realisoitunut voitto ** – kirjanpitotili, jolle 801500
+    -   **Toteutunut voitto** – Kirjanpitotili 801500
     -   **Toteutunut tappio** – Kirjanpitotili 801600
     -   **Toteutumaton voitto** – Kirjanpitotili 801600
     -   **Toteutumaton tappio** – Kirjanpitotili 801400
@@ -82,6 +85,8 @@ Näet tässä lisätapahtumia raportointivaluutan summille.
 | 130100         | Euro      | -500,00 | Alkuperäinen summa -500 × 1                          |
 | 801400         | Euro      | 250     | 500 – 333,33 = 166,67 166,67 + 83,33 = 250           |
 | 801600         | Euro      | -250    | -500 – (-333,33) = -166,67 -166,67 + (-83,33) = -250 |
+
+
 
 
 

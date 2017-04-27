@@ -1,5 +1,5 @@
 ---
-title: "Osittainen asiakkaan maksu ja lopullinen maksu selvitetään kokonaan ennen alennuksen päivämäärää"
+title: "Asiakkaan osamaksun ja lopullisen maksun täydellinen tilittäminen ennen alennuspäivämäärää"
 description: "Tässä artikkelissa on skenaarioita, jotka kuvaavat osittaisten maksujen kirjaamista asiakkaalle ja käteisalennusten käyttämistä käteisalennusjaksolla."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Osittainen asiakkaan maksu ja lopullinen maksu selvitetään kokonaan ennen alennuksen päivämäärää
+# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Asiakkaan osamaksun ja lopullisen maksun täydellinen tilittäminen ennen alennuspäivämäärää
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa on skenaarioita, jotka kuvaavat osittaisten maksujen kirjaamista asiakkaalle ja käteisalennusten käyttämistä käteisalennusjaksolla.
 
-Fabrikam myy tavaroita asiakkaan 4028. Fabrikam tarjoaa 1 prosentin käteisalennus, jos lasku maksetaan 14 päivän kuluessa. Laskut on maksettava 30 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Selvityksen parametrit sijaitsevat **Myyntireskontran parametrit** sivulla.
+Fabrikam myy tavaroita asiakkaalle 4028. Fabrikam tarjoaa 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Laskut on maksettava 30 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Tilityksen parametrit sijaitsevat **Myyntireskontran parametrit** -sivulla.
 
 ## <a name="customer-invoice"></a>Myyntilasku
-25. kesäkuuta-Erik syöttää ja kirjaa lasku asiakkaalle 4028 1 000,00. Arnie voi tarkastella tapahtumaa **Asiakastapahtumat**-sivulla.
+Erik syöttää ja kirjaa 25. kesäkuuta laskun asiakkaalle 4028, jonka arvo on 1.000,00. Arnie voi tarkastella tapahtumaa **Asiakastapahtumat**-sivulla.
 
 | Tosite   | Tapahtumatyyppi | Päivämäärä      | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo  | Valuutta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -63,14 +66,14 @@ Arnie napsauttaa **Käteisalennus**-välilehteä tarkastellakseen alennussummaa.
 | 25.7.2015          | 0,00                 | 1 000,00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Osamaksu Lisää asiakkaan maksuja -sivun avulla
-4028 asiakas lähettää maksun heinäkuun 1 500,00. Voit määrittää tämän maksun Erik ei napsauttamalla **rivit**. Sen sijaan, hän kirjaa maksun luomalla uuden maksukirjauskansion ja avaamalla sitten **Lisää asiakkaan maksuja** -sivun. Hän syöttää maksutiedot ja merkitsee kirjaamansa laskun. Kun Arnie kirjaa summaksi **500,00**, hän kirjoittaa myös **500,00** ruudukon **Maksettava summa** -kenttään. Koska Fabrikam voi antaa käteisalennuksen osamaksuille, hän huomaa, että maksulle käytetään myös osittaista, 5,05:n arvoista käteisalennusta. Tämä alennus lasketaan seuraavasti: 500,00 / 0,99 × 0,01 = 5,05. (Tässä laskutoimituksessa 500,00 jaetaan 0,99:llä, koska alennus on 1 prosentti. Tällöin asiakas maksaa laskusta 99 prosenttia. Tulos kerrotaan sitten alennusprosentilla eli 1 prosentilla – 0,01. Jos asiakas tekee koko alennus 10,00, summa, joka täytyy selvittää on 990.00.) Alennus näkyy ruudukon alaosassa **asiakasmaksujen** sivulla.
+Asiakas 4028 lähettää 500,00 arvoisen maksun 1. heinäkuuta. Erik ei napsauta **Rivit**-kohtaa kirjatakseen tämän maksun. Sen sijaan, hän kirjaa maksun luomalla uuden maksukirjauskansion ja avaamalla sitten **Lisää asiakkaan maksuja** -sivun. Hän syöttää maksutiedot ja merkitsee kirjaamansa laskun. Kun Arnie kirjaa summaksi **500,00**, hän kirjoittaa myös **500,00** ruudukon **Maksettava summa** -kenttään. Koska Fabrikam voi antaa käteisalennuksen osamaksuille, hän huomaa, että maksulle käytetään myös osittaista, 5,05:n arvoista käteisalennusta. Tämä alennus lasketaan seuraavasti: 500,00 / 0,99 × 0,01 = 5,05. (Tässä laskutoimituksessa 500,00 jaetaan 0,99:llä, koska alennus on 1 prosentti. Tällöin asiakas maksaa laskusta 99 prosenttia. Tulos kerrotaan sitten alennusprosentilla eli 1 prosentilla – 0,01. Jos asiakkaalle käytetään 10,00:n arvoista alennusta kokonaisuudessaan, selvitettävä summa olisi 990,00.) Alennustiedot tulevat **Lisää asiakkaan maksuja** -sivun alalaidan ruudukkoon.
 
 | Käytettävä käteisalennussumma | Käytetty käteisalennus | Maksettava summa |
 |------------------------------|---------------------|---------------|
 | 5,05                         | 0,00                | 500,00        |
 
 ## <a name="partial-payment-by-using-the-journal-lines"></a>Osamaksu kirjauskansiorivien avulla
-**Lisää asiakkaan maksuja** -sivun avaamisen sijaan Arnie voi napsauttaa kirjauskansiossa **Rivit** -kohtaa kirjatakseen maksun. Missä Erik voidaan syöttää rivi 4028 asiakkaan maksukirjauskansioon näytetään. Tämän jälkeen Arnie avaa **Selvitä tapahtumat** -sivun, jotta hän voi merkitä laskun tilitettäväksi. Arnie merkitsee laskun ja muuttaa **Tilitettävä summa** -kentän arvoksi **500,00**. Hän huomaa jälleen, että **Tilitettävä summa** -kentän arvo koko laskulle on **10,00** ja että **Käytettävä käteisalennussumma** -kentän arvo on **5,05**. Arnie selvittää siis tämän laskun summaksi 505,05.
+**Lisää asiakkaan maksuja** -sivun avaamisen sijaan Arnie voi napsauttaa kirjauskansiossa **Rivit** -kohtaa kirjatakseen maksun. Näyttöön tulee maksujen kirjauskansio, jossa Erik voi syöttää rivin asiakkaalle 4028. Tämän jälkeen Arnie avaa **Selvitä tapahtumat** -sivun, jotta hän voi merkitä laskun tilitettäväksi. Arnie merkitsee laskun ja muuttaa **Tilitettävä summa** -kentän arvoksi **500,00**. Hän huomaa jälleen, että **Tilitettävä summa** -kentän arvo koko laskulle on **10,00** ja että **Käytettävä käteisalennussumma** -kentän arvo on **5,05**. Arnie selvittää siis tämän laskun summaksi 505,05.
 
 | Merkitse     | Käytä käteisalennusta | Tosite   | Tili | Päivämäärä      | Eräpäivä  | Lasku | Summa tapahtuman valuuttana | Valuutta | Täsmäytettävä summa |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -143,6 +146,8 @@ Arnie kirjaa maksukirjauskansion ja tarkistaa asiakkaan tapahtumat **Asiakastapa
 | ALE-10010 | Käteisalennus    | 7.1.2015  |         |                                      | 5,00                                  | 0,00    | USD      |
 | ARP-10011  | Maksu          | 8.7.2015  |         |                                      | 495,00                                | 0,00    | USD      |
 | ALE-10011 | Käteisalennus    | 8.7.2015  |         |                                      | 5,00                                  | 0,00    | USD      |
+
+
 
 
 

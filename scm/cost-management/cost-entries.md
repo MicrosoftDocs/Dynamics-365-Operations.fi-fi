@@ -40,7 +40,7 @@ Kirjauskansion siirtotapahtuma kirjataan. Tapahtuma siirtää yhden nimikkeen A 
 
 ### <a name="example-2-cost-entries-are-created"></a>Esimerkki 2: Kustannustapahtumia luodaan
 
-Kirjauskansion siirtotapahtuma kirjataan. Tapahtuma siirtää nimikeyksiköiden A 1 sivuston sivuston 2. Toimipaikan varastodimension pidetään osana kustannuksen kohteeseen. Joten, tapauksessa on kaksi varastotapahtumaa ja kaksi kustannusmerkintää.
+Kirjauskansion siirtotapahtuma kirjataan. Tapahtuma siirtää yhden nimikeyksikön A toimipaikasta 1 toimipaikkaan 2. Toimipaikan varastodimensiota pidetään osana kustannusobjektia. Joten, tapauksessa on kaksi varastotapahtumaa ja kaksi kustannusmerkintää.
 
 ### <a name="example-3-one-cost-entry-is-created"></a>Esimerkki 3: Yksi kustannustapahtuma luodaan
 
@@ -59,11 +59,11 @@ Uuden **Kustannustapahtuma**-sivun avulla voit tarkastella ja hallita määrien 
 | 00002   | 20.01.2015 | Ostotilaus | 100001 | 0000101 |               |               |          | 100,00  |
 | 00003   | 31.01.2015 | Oikaisu     | 100001 | 0000101 |               |               |          | 15,00   |
 
-**Kustannustapahtumat**-sivun avulla voidaan suodattaa asiakirjan tunnuksella ja asiakirjan päivämäärällä. **Huomautus:** kustannukset ovat vain [kustannus-objektien](cost-object.md) tai vapautetut tuotteet.
+**Kustannustapahtumat**-sivun avulla voidaan suodattaa asiakirjan tunnuksella ja asiakirjan päivämäärällä. **Huomautus:** Kustannustapahtumat käytettävissä vain [kustannusobjekteja](cost-object.md) tai vapautettuja tuotteita varten.
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Cost objects](cost-object.md)
+[Kustannusobjektit](cost-object.md)
 
 

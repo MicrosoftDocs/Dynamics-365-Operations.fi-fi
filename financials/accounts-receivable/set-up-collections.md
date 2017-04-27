@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-credit-and-collections"></a>Luotonvalvonnan määrittäminen
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, miten kokoelmatoiminnot määritetään.
 
 <a name="set-up-aging-period-definitions"></a>Määritä erääntymiskausimääritykset
@@ -46,7 +49,7 @@ Jos organisaatiossasi on useita perimistyötä tekeviä henkilöitä, voit mää
 ## <a name="set-up-a-collections-case-category"></a>Perintätapausluokan määrittäminen
 Jos järjestät perimistyösi tapausten avulla, määritä tapausluokka, jonka luokkatyyppi on **Perintä**. Tätä asetusta tarvitaan vain, jos haluat käyttää tapaustoimintoa **Perintä**-sivulla.
 
-## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Määritä kirjauskansioiden nimet (selvitys writeoff ja NSF)
+## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Kirjauskansioiden nimien määrittäminen (selvitys, poisto ja NSF)
 Määritä kirjauskansioiden nimet, joita käytetään tapahtumien käsittelyyn **Perintä**-sivulla. Tämä käsittely sisältää tapahtuman tilityksen, tapahtuman poistamisen ja ei katetta -maksun käsittelyn.
 
 | Kuvaus | Kirjauskansion tyyppi     |
@@ -55,7 +58,7 @@ Määritä kirjauskansioiden nimet, joita käytetään tapahtumien käsittelyyn 
 | Poisto   | Päivittäin            |
 | KATE PUUTTUU         | Asiakkaan maksu |
 
-## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Writeoff tapahtumien syykoodin määrittäminen
+## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Poistotapahtumien syykoodin määrittäminen
 Määritä oletussyykoodi, jota käytetään, kun tapahtumia kirjataan poistona **Perintä**-sivulla. Voit vaihtaa koodin poistoprosessin aikana.
 
 ## <a name="set-up-a-folder-for-email-attachments-and-create-email-templates"></a>Sähköpostiliitteiden kansion määrittäminen ja sähköpostimallien luominen
@@ -67,7 +70,7 @@ Määritä **Perintä**-välilehdessä näkyvät myyntireskontran parametrit.
 ## <a name="optional-set-up-collections-agents"></a>Valinnainen: Perimisasiamiesten määrittäminen
 Jos organisaatiossasi on useita perimistyötä tekeviä henkilöitä, voit määrittää perimisasiamiehen. Perimisasiamies on työntekijä, joka on määritetty käyttäjäksi **Käyttäjäsuhteet**-sivulla. Voit määrittää perimisasiamiehiä varten asiakaspooleja (asiakaskyselyjä), joiden avulla perimisasiamiehet voivat järjestää töitään. Perimisasiamiehet lisätään **Myyntireskontran parametrit** -sivulla valittuun ryhmään. Jos ryhmää ei ole valittu tällä sivulla, uusi **Perintä**-niminen ryhmä luodaan automaattisesti ja perimisasiamiehet lisätään kyseiseen ryhmään.
 
-## <a name="set-up-a-writeoff-account"></a>Määritä writeoff tili
+## <a name="set-up-a-writeoff-account"></a>Poistotilin määrittäminen
 Määritä poistotili, jota käytetään kirjanpidon poistomerkinnässä, kun tapahtuma kirjataan pois. Tämä tili on tallennettu asiakkaan kirjausprofiiliin.
 
 ## <a name="set-up-nsf-information-for-bank-accounts"></a>NSF-tietojen määrittäminen pankkitilejä varten
@@ -82,11 +85,13 @@ Määritä asiakkaan yhteyshenkilöiden sähköpostiosoitteet, jos haluat lähet
 Valitse asiakkaan **Luotonvalvonta**-pikavälilehden **Korko ja maksukehotus -yhteyshenkilö** -välilehdessä perimiesasiamiehen kanssa työskentelevä asiakasorganisaation henkilö. Tätä henkilöä käytetään oletusyhteyshenkilönä **Perintä**-sivulla, ja sähköpostiviestit lähetetään hänelle. 
 
 > [!NOTE] 
-> Jos asiakkaalle ei ole määritetty yhteystiedon kokoelmat, käytetään asiakkaan ensisijainen yhteyshenkilö. Jos ensisijaista yhteyshenkilöä ei ole määritetty, sähköpostiviestit lähetetään **Yhteyshenkilöt**-sivulla ensimmäisenä olevaan sähköpostiosoitteeseen.
+> Jos asiakkaalle ei ole määritetty perinnän yhteyshenkilöä, käytetään asiakkaan ensisijaista yhteyshenkilöä. Jos ensisijaista yhteyshenkilöä ei ole määritetty, sähköpostiviestit lähetetään **Yhteyshenkilöt**-sivulla ensimmäisenä olevaan sähköpostiosoitteeseen.
 
 ## <a name="set-up-email-settings-for-salespeople"></a>Sähköpostiasetusten määrittäminen myyjiä varten
 Määritä myyjien sähköpostiosoitteet, jos haluat lähettää sähköpostiviestejä myyjille **Perintä**-sivulla. Määritä kunkin provisiomyyntiryhmän kunkin myyntiedustajan sähköpostiosoite. Myyntiedustaja, jolle on valittu **Perintä**-vaihtoehto, on oletusmyyjä, jolle sähköpostiviestit lähetetään. 
 
 Jos myyntiedustajaa ei ole määritetty, käytetään asiakkaan organisaation ensisijaista myyjää. Jos ensisijaista myyjää ei ole määritetty, sähköpostiviestit lähetetään lomakkeessa ensimmäisenä olevalle myyjälle.
+
+
 
 

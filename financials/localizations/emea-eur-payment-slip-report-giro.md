@@ -1,6 +1,6 @@
 ---
-title: Slip maksuraportti Euroopassa
-description: "Tässä aiheessa on tietoja maksun slip raportit Euroopassa."
+title: Maksuluetteloraportti Euroopassa
+description: "Tässä aiheessa on tietoja maksuluetteloraporteista Euroopassa."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,39 +24,44 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-slip-report-for-europe"></a>Slip maksuraportti Euroopassa
+# <a name="payment-slip-report-for-europe"></a>Maksuluetteloraportti Euroopassa
 
-Tässä aiheessa on tietoja maksun slip raportit Euroopassa.
+[!include[banner](../includes/banner.md)]
 
-Maksun slip raporttien toimintoja on käytettävissä oikeushenkilöt, joilla on Tanskan, Belgian, Norjan, Sveitsin tai Suomen niiden ensisijainen osoite. Yritykset liittää usein laskujen kirjausta, tilitystä maksuviite antamaan kirjallinen maksukuitit. Maksutositetta voidaan käyttää myynti- ja vapaatekstilaskujen lisäksi projekti- tai palvelulaskuissa, maksukehotteissa, korkolaskussa ja tiliotteissa.
 
-## <a name="set-up-a-creditor-id-number-denmark-only"></a>Määritä velkojan tunnus (vain Tanska)
-Anna yrityksesi luotonantajan tunnus (ID)-numeron seuraavasti. Tämä numero tarjoaa välityksellä. Sitä käytetään apuna, kun asiakkaan maksut vastaanotetaan rahoituslaitosten kautta.
+Tässä aiheessa on tietoja maksuluetteloraporteista Euroopassa.
 
-1.  Valitse **organisaation hallinta**&gt;**asennus**&gt;**organisaation**&gt;**oikeushenkilöt**.
-2.  - **Pankkitilitiedot** pikavälilehti, joka **FI-luotonantajan tunnus** 8-numeroinen yksilöllinen velkojan ID-tunnus-kenttään.
+Maksuluetteloraporttien toiminnot on käytettävissä yrityksille, joilla on ensisijainen osoite Tanskassa, Belgiassa, Norjassa, Sveitsissä tai Suomessa. Yritykset usein liittävät usein asiakkaiden laskuihin tulostetun maksutositteen, jossa on maksuviite kirjaamista ja tilitystä varten. Maksutositetta voidaan käyttää myynti- ja vapaatekstilaskujen lisäksi projekti- tai palvelulaskuissa, maksukehotteissa, korkolaskussa ja tiliotteissa.
+
+## <a name="set-up-a-creditor-id-number-denmark-only"></a>Määritä laskuttajan tunnusnumero (vain Tanska)
+Anna yrityksesi luotonantajan tunnus (ID) -numero seuraavasti. Saat tämän numeron rahoituslaitokseltasi. Sitä käytetään viitteenä, kun asiakkaan maksut vastaanotetaan rahoituslaitosten kautta.
+
+1.  Siirry kohtaan **Organisaation hallinto** &gt; **Asetukset** &gt; **Organisaatio** &gt; **Yritykset**.
+2.  Anna **Pankkitilitiedot**-pikavälilehden **FI-luotonantajan tunnus** -kentässä 8-numeroinen yksilöllinen velkojan ID-tunnus.
 3.  Tallenna muutokset sulkemalla lomake.
 
-## <a name="set-up-a-payment-slip-attachment-format-for-invoices-interest-notes-collection-letters-and-account-statements"></a>Määrittää maksun slip liitetiedoston muoto laskut, korkolaskuja, maksukehotuksia ja tiliotteet
-Maksun slip liitteet mukana seuraaviin myyntilaskujen, vapaatekstilaskujen, korkolaskuja, maksukehotuksia ja tiliotteet muoto määritetään seuraavasti.
+## <a name="set-up-a-payment-slip-attachment-format-for-invoices-interest-notes-collection-letters-and-account-statements"></a>Määritä maksutositteen muoto laskuille, korkolaskuille, maksukehotuksille ja tiliotteille
+Määritä myyntilaskujen, vapaatekstilaskujen, korkolaskujen, maksukehotusten ja tiliotteiden liitteenä lähetettävän maksutositteen muoto seuraavasti.
 
-1.  Valitse **myynti**&gt;**asennus**&gt;**lomakkeita**&gt;**asetukset**.
-2.  - **Laskun** -lehden **liittyvän maksun liite myyntilaskussa** maksun slip liitetiedoston muoto-kenttään.
-3.  - **Vapaatekstilaskun**, **korkolaskun**, **maksukehotuksen**, ja **tilin tiliotteen** välilehtiä, valitse maksu slip liitetiedoston muoto kutakin tiedostotyyppiä.
+1.  Valitse **Myyntireskontra** &gt; **Asetukset** &gt; **Lomakkeet** &gt; **Lomakeasetukset**.
+2.  Valitse**Lasku**-välilehden **Asiakkaan laskun liittyvä maksun liite** -kentässä maksutositteen liitetiedoston muoto.
+3.  Valitse **Vapaatekstilasku**-, **Korkolasku**-, **Maksukehotus**- ja **Tiliote**-välilehdissä, maksutositteen liitetiedoston muoto kullekin asiakirjatyypille.
 4.  Tallenna muutokset sulkemalla lomake.
 
-Määritä muoto, mukana projektilaskujen maksun slip liitteiden seuraavasti.
+Määritä maksutositeliitteiden muoto, joka liitetään projektilaskuihin, seuraavasti.
 
-1.  Valitse **projekti, projektinhallinta- ja**&gt;**asennus**&gt;**lomakkeita**&gt;**asetukset**.
-2.  - **Liittyvän maksun liite** maksun slip liitetiedoston muoto-kenttään.
+1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Lomakkeet** &gt; **Lomakeasetukset**.
+2.  Valitse **Liittyvän maksun liite** -kentässä maksutositeliitteen muoto.
 
-## <a name="assign-a-payment-slip-attachment-format-to-a-customer-account"></a>Määrittää asiakastilin maksu slip liitteen muodossa
-Kun määrität pakkausluettelon liite maksumuoto myyntilaskujen, vapaatekstilaskuja, korkolaskuja, maksukehotuksia, tiliotteet ja laskut, voit liittää valitun asiakkaan muotoilut.
+## <a name="assign-a-payment-slip-attachment-format-to-a-customer-account"></a>Maksukuittiliitteen muodon määrittäminen asiakastilille
+Kun olet määrittänyt maksutositeliitteen muodon myyntilaskuille, vapaatekstilaskuille, korkolaskuille, maksukehotuksille, tiliotteille ja projektilaskuille, voit määrittää valitun asiakkaan muotoilut.
 
-1.  Valitse **myynti**&gt;**yhteisen**&gt;**asiakkaiden**&gt;**kaikille asiakkaille**.
-2.  Luo uusi asiakas tai valitse olemassa oleva asiakas.
-3.  - **Laskutus- ja** pikavälilehdessä- **asiakkaan laskun**, **Vapaatekstilasku-**, **korkolaskussa**, **maksukehotukseen**, **projektin laskuun**, ja **tiliotteesta** kentät, valitse muoto maksu slip liitteet, jotka liitetään kunkin valitulle asiakkaalle lähetettäviin asiakirjoihin.
+1.  Valitse **Myyntireskontra** &gt; **Yleinen** &gt; **Asiakkaat** &gt; **Kaikki asiakkaat**.
+2.  Luo uusi asiakas tai valitse aiemmin määritetty asiakas.
+3.  Valitse **Lasku ja toimitus** -pikavälilehden **Myyntilaskussa**-, **Vapaatekstilaskussa**-, **Korkolaskussa**-, **Maksukehotuksessa**-, **Projektilaskussa**- ja **Tiliotteessa**-kentissä muoto maksutositeliitteille, jotka liitetään valitulle asiakkaalle lähetettäviin eri tyyppisiin asiakirjoihin.
 4.  Tallenna muutokset sulkemalla lomake.
+
+
 
 
 

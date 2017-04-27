@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="position-budgeting-troubleshooting"></a>Sijoita budjetoinnin vianmääritys
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on vastauksia kysymyksiin, joita sinulla saattaa olla, kun määrität toimen budjetointia. Se vastaa usein kysyttyyn kysymykseen, kuinka budjetin kustannustasoja, kompensaatioryhmiä ja kompensaatioruudukoita luodaan. 
 
 <a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Miksi ennusteen toimen sivua ei löydy henkilöstöhallinnosta?
@@ -58,6 +61,8 @@ Ennusteen toimen kustannustasorivin päivämäärien tulee olla seuraavien aluei
 -   Toimen aktivointi- ja päättymispäivämäärät.
 -   Budjetin kustannustason voimaantulo- ja vanhentumispäivämäärät.
 -   Ennusteen toimen budjettisuunnitteluprosessin kanssa liitetyn budjettijakson alku- ja loppupäivämäärät.
+
+
 
 
 

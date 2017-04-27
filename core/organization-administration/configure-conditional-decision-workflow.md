@@ -1,5 +1,5 @@
 ---
-title: "Määritä työnkulun ehdollinen päätös"
+title: "Ehdollisen päätöksen konfiguroiminen työnkulkuun"
 description: "Määritä seuraavan menettelyn avulla ehdollisten päätöksen ominaisuudet."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-conditional-decision-in-a-workflow"></a>Määritä työnkulun ehdollinen päätös
+# <a name="configure-a-conditional-decision-in-a-workflow"></a>Ehdollisen päätöksen konfiguroiminen työnkulkuun
+
+[!include[banner](../includes/banner.md)]
+
 
 Määritä seuraavan menettelyn avulla ehdollisten päätöksen ominaisuudet.
 
@@ -38,14 +41,16 @@ Kirjoita näiden ohjeiden avulla nimi ehdolliselle päätökselle.
 ## <a name="set-conditions"></a> Ehtojen asetus
 Järjestelmä päättää käytettävän haaran arvioimalla, täyttääkö lähetetty asiakirja erityisehdot.
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
-2.  Click **Add condition**.
+2.  Valitse **Lisää ehto**.
 3.  Määritä ehto.
 4.  Kirjoita kaikki muut tarvittavat ehdot.
 5.  Voit tarkistaa, onko ehdot määritetty oikein käymällä läpi seuraavat ohjeet:
     1.  Valitse **Testi**, jolloin **Testaa työnkulun ehto** -lomake tulee näyttöön.
     2.  Valitse tietue lomakkeen **Tarkista ehto** -alueelta.
     3.  Valitse **Testi**. Järjestelmä arvioi, täyttääkö tietue määrittämäsi ehdot.
-    4.  Valitse **OK** tai **peruuttaa** palaa **ominaisuudet** muodossa.
+    4.  Palaa **Ominaisuudet**-lomakkeeseen valitsemalla **OK** tai **Peruuta**.
+
+
 
 
 

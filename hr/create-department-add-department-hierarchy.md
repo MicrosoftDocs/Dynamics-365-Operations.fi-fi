@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Osaston luonti ja sen liittäminen osastohierarkiaan
 
+[!include[banner](includes/banner.md)]
+
+
 Osasto on toimintayksikkö, joka vastaa organisaation luokkaa tai liiketoiminta-aluetta. Osasto on vastuussa määrätystä organisaation alueesta, kuten myynnistä, kirjanpidosta tai henkilöstöhallinnosta. Voit käyttää osastoja toiminnallisia alueita koskevaan raportointiin. Osastot voivat olla tulosvastuullisia.
 
-Osasto voi sisältää kustannuspaikkaryhmän. Osastoille voidaan määrittää toimia. Luo osaston valitsemalla **henkilöstöhallinnon**&gt;**osastot**&gt;**osaston**. Seuraavassa taulukossa esitetään käytettävissä olevat kentät.
+Osasto voi sisältää kustannuspaikkaryhmän. Osastoille voidaan määrittää toimia. Luo osasto valitsemalla **Henkilöstöhallinto** &gt; **Osastot** &gt; **Osasto**. Seuraavassa taulukossa näkyvät valittavina olevat kentät.
 
 | Kenttä               | Kuvaus                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -46,12 +49,14 @@ Osasto voi sisältää kustannuspaikkaryhmän. Osastoille voidaan määrittää 
 
 Voit lisätä osaston osastohierarkiaan seuraavasti:
 
-1.  Valitse **inhimillisten voimavarojen**&gt;**osastot**&gt;**osastohierarkia**.
+1.  Valitse **Henkilöstöhallinto** &gt; **Osastot** &gt; **Osastohierarkia**.
 2.  Valitse **Muokkaa**, ja valitse sitten organisaatio, jonka alle osasto kuuluu.
 3.  Napsauta **Lisää**, ja valitse luettelosta **Osasto**.
 4.  Valitse näkyviin tulevasta luettelosta hierarkiaan lisättävä osasto.
-5.  Tallenna muutokset. Näyttöön tulee sanoma, että luonnosversiota hierarkia on luotu.
-6.  Kun olet valmis, valitse **Julkaise** hierarkian suunnittelussa. Voit syöttää voimassaolopäivämäärää, joka ilmaisee, milloin julkaistu hierarkiaa. Jos esimerkiksi haluat lisätä uuden osaston seuraavan vuoden alusta, aseta voimaantulopäiväksi 1.1. seuraavana kalenterivuonna. Hierarkian muutokset tulevat voimaan tuona päivänä.
+5.  Tallenna muutokset. Saat sanoman, että hierarkiasta on luotu luonnosversio.
+6.  Kun olet valmis, valitse **Julkaise** hierarkian suunnittelutoiminnossa. Voit syöttää voimassaolopäivämäärän, joka ilmaisee, milloin hierarkia tulisi julkaista. Jos esimerkiksi haluat lisätä uuden osaston seuraavan vuoden alusta, aseta voimaantulopäiväksi 1.1. seuraavana kalenterivuonna. Hierarkian muutokset tulevat voimaan tuona päivänä.
+
+
 
 
 

@@ -40,7 +40,7 @@ Taulurajoitukset kuvaavat sellaisia arvoyhdistelmiä, jotka sallitaan määritte
 
 ### <a name="example-of-a-table-constraint"></a>Esimerkki taulurajoituksesta
 
-Tämä esimerkki osoittaa, miten voit rajoittaa kaiuttimen kokoonpanon tiettyihin viimeistelyihin ja etulevyihin. Ensimmäisessä taulukossa ovat ne kaappien viimeistelyt ja etulevyt, jotka kokoonpanolle on yleisesti saatavilla. Arvot määritetään ** cab valmis ** ja **SÄLEIKÖN eteen** määrite tyyppejä.
+Tämä esimerkki osoittaa, miten voit rajoittaa kaiuttimen kokoonpanon tiettyihin viimeistelyihin ja etulevyihin. Ensimmäisessä taulukossa ovat ne kaappien viimeistelyt ja etulevyt, jotka kokoonpanolle on yleisesti saatavilla. Arvot on määritetty **Kaapin viimeistely**- ja **Etusäleikkö**-määritetyypeille.
 
 | Määritetyyppi | Arvot                      |
 |----------------|-----------------------------|
@@ -60,8 +60,8 @@ Seuraavassa taulukossa näkyvät **Väri ja viimeistely** -taulurajoituksen mä�
 
 Voit luoda järjestelmän määrittämiä ja käyttäjän määrittämiä taulukkorajoitteita. Lisätietoja on kohdassa [Järjestelmän ja käyttäjän määrittämät taulurajoitukset](system-defined-user-defined-table-constraints.md).
 
-## <a name="what-syntax-should-be-used-to-write-constraints"></a>Mitä syntaksi, jota käytetään kirjoittaa rajoituksia?
-Käytä rajoituksia kirjoittaessasi Optimization Modeling Language (OML) -syntaksia. Järjestelmä käyttää ratkaisemaan reunaehdot Ratkaisimen Microsoft Foundation rajoitus Ratkaisin.
+## <a name="what-syntax-should-be-used-to-write-constraints"></a>Mitä syntaksia pitäisi käyttää rajoitusten kirjoittamiseen?
+Käytä rajoituksia kirjoittaessasi Optimization Modeling Language (OML) -syntaksia. Järjestelmä käyttää Microsoft Solver Foundation -rajoitusratkaisinta rajoitusten selvittämiseen.
 
 ## <a name="should-i-use-table-constraints-or-expression-constraints"></a>Tulisiko minun käyttää taulurajoituksia vai lausekerajoituksia?
 Voit käyttää joko lausekerajoituksia tai taulurajoituksia sen mukaan, miten haluat luoda rajoitukset. Taulurajoitus kootaan matriisiksi, kun taas lausekerajoitus on yksittäinen lauseke. Määrittäessäsi tuotteen se ei ole merkitystä millaista rajoitetta käytetään. Seuraava esimerkki osoittaa näiden menetelmien erot.  
@@ -110,32 +110,32 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 <td>Tämä on tosi, jos ensimmäinen ehto on epätosi, toinen ehto on tosi tai molemmat.</td>
 <td>Tarkoittaa [a, b] infix:-: b</td>
 <td><ul>
-<li><strong>Operaattori:</strong> tarkoittaa [x! = 0, y &gt;= 0]</li>
-<li><strong>Infix merkintä:</strong> x! = 0-: y &gt;= 0</li>
+<li><strong>Operaattori:</strong> Implies[x! = 0, y &gt; = 0]</li>
+<li><strong>Infix-merkintä:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Ja</td>
 <td>Tämä on tosi vain, jos kaikki ehdot ovat tosia. Jos ehtojen määrä on 0 (nolla), tuloksena on <strong>Tosi</strong>.</td>
-<td>Ja [argumentit] infix: &amp;b &amp; ... &amp;z</td>
+<td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>Operaattori:</strong> ja [x = 2, y &lt;= 2]</li>
-<li><strong>Infix merkintä:</strong> x = 2 &amp;y &lt;= 2</li>
+<li><strong>Operaattori</strong>: And[x == 2, y &lt;= 2]</li>
+<li><strong>Infix-merkintä:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Tai</td>
 <td>Näin tapahtuu, jos mikä tahansa ehto on tosi. Jos ehtojen määrä on 0 (nolla), tuloksena on <strong>Epätosi</strong>.</td>
-<td>Tai [argumentit] infix: | b | ... | z</td>
+<td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>Operaattori:</strong> tai [x = 2, y &lt;= 2]</li>
-<li><strong>Infix merkintä:</strong> x = 2 | y &lt;= 2</li>
+<li><strong>Operaattori:</strong> Or[x == 2, y &lt;= 2]</li>
+<li><strong>Infix-merkintä:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Plus</td>
 <td>Tämä koostaa sen ehdot. Jos ehtojen määrä on 0 (nolla), tuloksena on <strong>0</strong>.</td>
-<td>Plus [argumentit] infix: + b +... + z</td>
+<td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
 <li><strong>Operaattori:</strong> Plus[x, y, 2] == z</li>
 <li><strong>Infix-merkintä:</strong> x + y + 2 == z</li>
@@ -159,7 +159,7 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 <tr class="odd">
 <td>Ajat</td>
 <td>Tämä vaatii tuotteen ehtoonsa. Jos ehtojen määrä on 0 (nolla), tuloksena on <strong>1</strong>.</td>
-<td>[Argumentit] kertaa infix: * b *... * z</td>
+<td>Times[args], infix: a * b * ... * z</td>
 <td><ul>
 <li><strong>Operaattori:</strong> Times[x, y, 2] == z</li>
 <li><strong>Infix-merkintä:</strong> x * y * 2 == z</li>
@@ -167,8 +167,8 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 </tr>
 <tr class="even">
 <td>Teho</td>
-<td>Tämä vaatii eksponentiaalin. Tämä koskee potenssiinkorotusta oikealta vasemmalle. (Toisin sanoen, se on oikea assosiatiivinen.) Tämän vuoksi <strong>virta [a, b, c]</strong> vastaa <strong>Power [, teho [b, c]]</strong>. <strong>Power</strong>-operaattoria voidaan käyttää vain, jos eksponentti on positiivinen vakio.</td>
-<td>Teho [argumentit], infix: ^ b ^... ^ z</td>
+<td>Tämä vaatii eksponentiaalin. Tämä koskee potenssiinkorotusta oikealta vasemmalle. (Tämä tarkoittaa, että se on oikea-assosiatiivinen.) Siksi <strong>Power[a, b, c]</strong> vastaa <strong>[a, Power[b, c]]</strong>. <strong>Power</strong>-operaattoria voidaan käyttää vain, jos eksponentti on positiivinen vakio.</td>
+<td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operaattori:</strong> Power[x, 2] == y</li>
 <li><strong>Infix-merkintä:</strong> x ^ 2 == y</li>
@@ -191,7 +191,7 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 <td>Tämä tuottaa loogisen käänteisen version ehdostansa. Ehtoja on oltava täsmälleen yksi.</td>
 <td>Not[expr], infix: !expr</td>
 <td><ul>
-<li><strong>Operaattori:</strong> ei ole [x] &amp;ei [y = 3]</li>
+<li><strong>Operaattori:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Infix-merkintä:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -203,7 +203,7 @@ Seuraavan taulukon esimerkit kuvaavat, kuinka infix-merkintä kirjoitetaan.
 | Operandien välinen merkintä    | kuvaus                                                                                   |
 |-------------------|-----------------------------------------------------------------------------------------------|
 | x + y + z         | Lisäys                                                                                      |
-| X \*y \*z       | Kertolasku                                                                                |
+| x \* y \* z       | Kertolasku                                                                                |
 | x - y             | Binäärimuotoinen vähennys tehdään samalla tavalla kuin binäärimuotoinen lisäys käänteisen toisen kanssa. |
 | x ^ y ^ z         | Potenssiinkorotus, jolla on oikea-assosiatiivisuus                                                   |
 | !x                | Totuusarvo ei                                                                                   |
@@ -212,14 +212,14 @@ Seuraavan taulukon esimerkit kuvaavat, kuinka infix-merkintä kirjoitetaan.
 | x & y & z         | Totuusarvo ja                                                                                   |
 | x == y == z       | Yhtäsuuruus                                                                                      |
 | x != y != z       | Erilliset                                                                                      |
-| X &lt;y &lt;z   | Pienempi kuin                                                                                     |
-| X &gt;y &gt;z   | Suurempi kuin                                                                                  |
-| X &lt;= y &lt;= z | Pienempi tai yhtä suuri                                                                         |
-| X &gt;= y &gt;= z | Suurempi tai yhtä suuri                                                                      |
+| x &lt; y &lt; z   | Pienempi kuin                                                                                     |
+| x &gt; y &gt; z   | Suurempi kuin                                                                                  |
+| x &lt;= y &lt;= z | Pienempi tai yhtä suuri                                                                         |
+| x &gt;= y &gt;= z | Suurempi tai yhtä suuri                                                                      |
 | (x)               | Sulkeet ohittavat oletusarvoisen tärkeysjärjestyksen.                                                      |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Miksi lausekerajoitusteni vahvistaminen ei onnistu?
-Et voi käyttää varattuja avainsanoja ratkaisimen niminä määritteille, komponenteille tai alikomponenteille tuotemääritysmallissa. On varattu avainsana, joka ei voi käyttää:
+Et voi käyttää varattuja avainsanoja ratkaisimen niminä määritteille, komponenteille tai alikomponenteille tuotemääritysmallissa. Seuraavassa luettelossa on varatut sanat, jotka eivät ole käytettävissä:
 
 -   Katto
 -   Elementti
@@ -245,8 +245,8 @@ Et voi käyttää varattuja avainsanoja ratkaisimen niminä määritteille, komp
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Luo lauseke-rajoitus (tehtävän guide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
+[Luo lausekerajoitus (ohjattu tehtävä)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
-[Lisää laskutoimitus tuotemääritysmallin (tehtävän guide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+[Lisää laskelma tuotemääritysmalliin (ohjattu tehtävä)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
 
 

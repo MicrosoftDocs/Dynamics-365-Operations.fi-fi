@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-customer-invoice"></a>Myyntilaskun luominen
 
+[!include[banner](../includes/banner.md)]
 
 
-**Myyntitilauksen myyntilasku** on myyntiin liittyvä lasku, jonka organisaatio antaa asiakkaalle. Tämän tyyppinen myyntilasku luonti perustuu myyntitilaukseen, jossa on tilausrivit ja nimiketunnukset. Nimiketunnukset määritetään ja kirjataan kirjanpitoon. Alareskontran kirjauskansioviennit eivät ole käytettävissä asiakkaan myyntitilauksen laskua. 
+
+
+**Myyntitilauksen myyntilasku** on myyntiin liittyvä lasku, jonka organisaatio antaa asiakkaalle. Tämän tyyppinen myyntilasku luonti perustuu myyntitilaukseen, jossa on tilausrivit ja nimiketunnukset. Nimiketunnukset määritetään ja kirjataan kirjanpitoon. Alareskontran kirjauskansioviennit eivät ole käytettävissä myyntitilauksen asiakaslaskulle. 
 
 **Vapaatekstilasku** ei liity myyntitilaukseen. Sen tilausriveillä on antamasi kirjanpitotilit, vapaatekstikuvaukset ja myyntisumma. Tällaiseen laskuun ei voi kirjoittaa nimiketunnusta. Arvonlisäverotiedot on kirjoitettava. Myynnin päätili ilmaistaan jokaisella laskurivillä, ja voit jakaa sen useille kirjanpitotileille valitsemalla **Jaa summat** **Vapaatekstilasku**-sivulla. Myös asiakkaan saldo kirjataan vapaatekstilaskussa käytetystä kirjausprofiilista yhteenvetotilille.
 
@@ -55,7 +58,7 @@ Voit katsoa myyntitilausten tilaa **Kaikki myyntilaukset** -luettelosivulla.
 ## <a name="consolidate-sales-orders-or-packing-slips-for-posting"></a>Konsolidoi kirjattavat myyntitilaukset tai pakkausluettelot
 Käytä tätä prosessia, kun vähintään yksi myyntitilaus on valmis laskutettavaksi ja haluat konsolidoida ne yhteen laskuun. 
 
-Voit valita **Myyntitilaus**-luettelosivulla useita laskuja ja konsolidoida ne sitten **Luo laskuja** -vaihtoehdolla. - **Lasku** sivulle, voit muuttaa **yhteenvetotilaus** asetus, kun haluat laskea tilauksen numero (jossa on useita yhden myyntitilauksen pakkausluetteloista) tai laskutusasiakkaittain (jossa on useita myyntitilauksia yksittäinen lasku-tili). Käyttö **Järjestä** painiketta, jos haluat konsolidoida yhteen laskujen perusteella myyntitilaukset **yhteenvetotilaus** asetukset.
+Voit valita **Myyntitilaus**-luettelosivulla useita laskuja ja konsolidoida ne sitten **Luo laskuja** -vaihtoehdolla. Voit muuttaa **Laskun kirjaus** -sivulla **Yhteenvetotilaus**-asetuksen muodostamaan yhteenvedon tilausnumeron mukaan (jossa yhdelle myyntitilaukselle on useita pakkausluetteloita) tai laskutustilin mukaan (jossa yhdellä laskutustilillä on useita myyntitilauksia). Konsolidoi myyntitilaukset yhdeksi laskuksi **Järjestä**-painikkeella **Yhteenvetotilaus**-asetusten perusteella.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Kirjaustoimintoa muuttavat lisäasetukset
 Seuraavat kentät muuttaa kirjausprosessin toimintaa.
@@ -123,8 +126,8 @@ Seuraavat kentät muuttaa kirjausprosessin toimintaa.
 <td>Tarkista luottoraja</td>
 <td>Valitse, mitä luottorajan tarkistuksessa analysoidaan.
 <ul>
-<li><strong>None</strong> – There is no requirement for the credit limit check.</li>
-<li><strong>Balance</strong> – The credit limit is checked against the customer balance.</li>
+<li><strong>Ei mitään</strong> – Luottorajatarkistusta ei tarvitse tehdä.</li>
+<li><strong>Saldo</strong> – Luottorajaa verrataan asiakkaan saldoon.</li>
 <li><strong>Saldo + pakkausluettelo tai tuotteen vastaanotto</strong> – luottorajaa verrataan asiakkaan saldoon ja toimituksiin.</li>
 <li><strong>Saldo+Kaikki</strong> – Luottorajaa verrataan asiakkaan saldoon, toimituksiin ja avoimiin tilauksiin.</li>
 </ul></td>
@@ -150,6 +153,8 @@ Seuraavat kentät muuttaa kirjausprosessin toimintaa.
 </tr>
 </tbody>
 </table>
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Määritä kurssien"
+title: "Määritä koulutuskursseja"
 description: "Henkilöstöhallinnon järjestelmänvalvojat ja esimiehet voivat ylläpitää tietoja työntekijöille tarjottavista kursseista kurssitoiminnoilla."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-training-courses"></a>Määritä kurssien
+# <a name="set-up-training-courses"></a>Määritä koulutuskursseja
+
+[!include[banner](includes/banner.md)]
+
 
 Henkilöstöhallinnon järjestelmänvalvojat ja esimiehet voivat ylläpitää tietoja työntekijöille tarjottavista kursseista kurssitoiminnoilla.
 
@@ -85,7 +88,7 @@ Voit suorittaa jokaiselle kurssille seuraavat tehtävät:
 -   Hotellien suosittelu kurssin osallistujille
 -   kurssikuvauksen luonti, jota voidaan mainostaa työntekijöiden itsepalvelussa
 
-  >**Huomautus** kurssin voi poistaa vain, jos sitä ei ole rekisteröity. 
+  >**Huomautus** Voit poistaa kurssin vain, jos kukaan ei ole rekisteröitynyt siihen. 
     
 ## <a name="course-statuses"></a>Kurssin tilat
 Seuraavassa taulukossa luetellaan mahdolliset kurssin tilat sekä toiminnot, jotka voidaan suorittaa, kun kurssilla on tietty tila.
@@ -132,7 +135,9 @@ Kurssin osallistujat ovat työntekijöitä, hakijoita tai yhteyshenkilöitä, jo
 <a name="workflow"></a>Työnkulku
 --------
 
-Työntekijät, jotka kurssille **työntekijän itsepalvelutilien** sivulla voi olla niiden rekisteröinti kautta hyväksynnän työnkulkua.  Työnkulku voidaan määrittää kurssi **yleisen** -pikavälilehdessä **kurssit** sivun.
+Työntekijät, jotka ilmoittautuvat kurssille **työntekijän itsepalvelun** sivulla, voivat saada ilmoittautumisen reititettyä hyväksynnän työnkulun kautta.  Työnkulku voidaan määrittää kurssille **Yleiset** -pikavälilehdessä **Kurssit**-sivulla.
+
+
 
 
 

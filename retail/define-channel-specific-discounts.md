@@ -34,14 +34,14 @@ Vähittäismyyjät määrittävät usein erilaisia alennuksia eri kanaville. Tä
 <a name="channel-specific-discounts"></a>Kanavakohtaiset alennukset
 --------------------------
 
-Jälleenmyyjät tarjoavat usein alennuksia eri kanaviin. Tämä ei ehkä tehdä osoite paikallisten markkinoiden olosuhteisiin tai käsitellä kilpailevien vähittäismyyjien.
+Vähittäismyyjät tarjoavat usein erilaisia alennuksia eri kanaville. Syynä voi olla paikallisten markkinaolosuhteiden huomioon ottaminen tai kilpailu muiden vähittäismyyjien kanssa.
 
-Jälleenmyynti- ja Microsoft Dynamics-365 työvaiheiden kaupankäynnin määrittää hintaryhmät avulla kanavaan liittyviä alennuksia. Hintaryhmät voivat määrittää yhteen seuraavista yksiköistä tai useisiin yksikköihin: kanavat. luettelot, liitokset ja kanta-asiakasohjelmat. Tässä artikkelissa käsitellään kanavia, mutta samat käsitteet koskevat myös luettelo-, liitos- ja kanta-asiakasalennuksia.
+Microsoft Dynamics 365 for Operationsin Vähittäismyynti ja kauppa määrittää kanavakohtaiset alennukset hintaryhmien avulla. Hintaryhmät voivat määrittää yhteen seuraavista yksiköistä tai useisiin yksikköihin: kanavat. luettelot, liitokset ja kanta-asiakasohjelmat. Tässä artikkelissa käsitellään kanavia, mutta samat käsitteet koskevat myös luettelo-, liitos- ja kanta-asiakasalennuksia.
 
 ## <a name="price-groups"></a>Hintaryhmät
-\[selosteen tunnus = "liitteen\_256084" Tasaa = "alignnone" width = "640"\][![hinta ryhmät](./media/price-groups-1024x608.png)](./media/price-groups.png) for Retail hinta linkkien ryhmittely\[/tekstitys\]
+\[caption id="attachment\_256084" align="alignnone" width="640"\][![Hintaryhmät](./media/price-groups-1024x608.png)](./media/price-groups.png) Vähittäismyynnin hintaryhmien linkitl\[/caption\]
 
-Edellä kaavio havainnollistaa ja kohteista, joita tapahtuman (kanava, Kuvasto, työsuhde, asiakas, kanta-asiakaskortti), joka voidaan määrittää eri alennustyypeille välistä suhdetta. Kaikki tapahtumat tapahtuvat kanava, joten kanava on varmasti olla läsnä tapahtumassa. Muut yksiköt ovat valinnaisia. Jokaisella päätietosivulla on linkki liittyvään hintaryhmäsivuun, jossa voit tarkastella hintaryhmiä ja lisätä niitä tarvittaessa. Hintaryhmän käytetään liittämään neljänlaisia kohteiden alennukset ja hintojen muutoksia kauppasopimuksia. Suosittelemme, että aiot strategiaa, kuinka nimeät hintaryhmät pitämään ne järjestyksessä. Yksi vaihtoehto olisi erottaa eri käytetään kirjain tai numero etuliite tai jälkiliite. Esimerkiksi 1-xxxxx kanavan hintaryhmät ja luettelon hintaryhmissä 2-xxxxx. Kullakin vähittäismyyntiyksiköllä, joihin voidaan liittää alennuksia, on neljä kyselysivua.
+Edellä olevassa kaaviossa on kuva tapahtumassa mahdollisesti olevien yksikköjen suhteesta (kanava, luettelo, liitos, asiakas, kanta-asiakaskortti) ja erilaisista määritettävistä alennustyypeistä. Kaikki tapahtumat tapahtuvat kanavassa, joten kanava on varmasti mukana tapahtumassa. Muut yksiköt ovat valinnaisia. Jokaisella päätietosivulla on linkki liittyvään hintaryhmäsivuun, jossa voit tarkastella hintaryhmiä ja lisätä niitä tarvittaessa. Hintaryhmän avulla neljä eri tyyppistä yksikköä liitetään alennuksiin, hinnanoikaisuihin ja kauppasopimuksiin. On suositeltavaa, että suunnittelet hintaryhmille nimeämisstrategian, jotta ne pysyvät järjestyksessä. Tyypit voi erottaa toisistaan käyttämällä etu- tai jälkiliitteenä kirjainta tai numeroa. Esimerkiksi 1-xxxxx voi viitata kanavan hintaryhmään ja 2-xxxxx luettelon hintaryhmään. Kullakin vähittäismyyntiyksiköllä, joihin voidaan liittää alennuksia, on neljä kyselysivua.
 
 -   **Vähittäismyyntikanavan hintaryhmät ** – tällä sivulla on luettelo kanavista ja alennuksista, jotka on liitetty yhteen kullekin hintaryhmälle.
 -   **Luettelon hintaryhmät ** – tällä sivulla on luettelo luetteloista ja alennuksista, jotka on liitetty yhteen kullekin hintaryhmälle.
@@ -62,6 +62,6 @@ Seuraavassa esimerkissä käsitellään tehtäviä, jotka liittyvät kanava-alen
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Price adjustments and discounts](price-adjustments-discounts.md)
+[Hinnanoikaisut ja alennukset](price-adjustments-discounts.md)
 
 

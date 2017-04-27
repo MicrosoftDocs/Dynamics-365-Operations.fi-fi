@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-agreements"></a>Myyntisopimukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja myyntisopimuksista. Myyntisopimus on sopimus, jolla asiakas vahvistaa ostavansa tuotetta tietyn määrän tai tietyn summan tietyssä ajassa saadakseen erikoishinnan ja alennuksia.
 
 Myyntisopimus vahvistaa, että asiakas ostaa tuotteita tietyn määrän tai tietystä summasta ajan mittaan tiettyjä hintoja, erikoisalennuksia ja muita erityisehtoja, kuten maksu- ja toimitusehtoja, vastaan. Myyntisopimuksen hinnat ja alennukset korvaavat muissa kauppasopimuksissa määritetyt hinnat ja alennukset.  
@@ -36,7 +39,7 @@ Myyntisopimuksen voimassaoloaika määräytyy sopimuksen **Voimaantulopäivä**-
 
 Voit luoda myyntitilauksen suoraan myyntisopimuksesta käyttämällä **Vapauta tilaus** -toimintoa. Vaihtoehtoisesti voit valita voimassa olevan myyntisopimuksen ottaessasi vastaan tilauksia (katso tämän artikkelin kohtaa Myyntisopimusten käyttäminen tilausprosessissa).  
 
-**Huomautus:** aiemmissa versioissa myyntisopimukset korjauspäivityksiksi puitemyyntitilaukset.
+**Huomautus:** aiemmissa versioissa myyntisopimuksia kutsuttiin nimellä Myynnin yleistilaukset.
 
 ## <a name="commitment-types"></a>Vahvistustyypit
 Jokainen myyntisopimuksen rivi ilmaisee sitoutumisen myydä jotain. Yleensä sitoumuksia on kahdentyyppisiä:
@@ -93,21 +96,23 @@ Jos olet luonut (vapautetun) myyntitilauksen myyntisopimuksesta, joitakin myynti
 | Kenttä                                                             | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Pyydetty lähetyspäivämäärä                                               | Jos muutat pyydetyn lähetyspäivämäärän myyntisopimuksen rivillä olevaa **Voimaantulopäivä**-arvoa aikaisemmaksi, sinun täytyy poistaa linkki myyntisopimuksen riviin, ennen kuin voit tallentaa muutetun lähetyspäivän. Jos muutat pyydetyn lähetyspäivämäärän myyntisopimuksen rivillä olevaa **Vanhentumispäivä**-arvoa myöhäisemmäksi, sinun täytyy poistaa linkki myyntisopimuksen riviin, ennen kuin voit tallentaa muutetun lähetyspäivän. |
-| CurrencyDiscount, percentDiscountUnit, pricePrice, unitNet-summa | Jos muutat näiden kenttien arvoa ja liittyvältä myyntisopimuksen riviltä on poistettu **Hinta ja alennus on kiinteä** -valintaruudun valinta, näkyviin tulee sanomaruutu, jossa kysytään, haluatko tallentaa muutoksen. Valitse **Kyllä** poistaa linkin myyntisopimusriviin ja Laske hinta. Valitse **ei** poistaa linkin myyntisopimusriviin hinta laskematta.                                                                   |
-| Nettosumma                                                        | Jos määrittämäsi summa ylittää sellaisella myyntisopimuksen rivillä määritetyn summan, jossa **Maksimi pakotetaan** -valintaruutu on valittuna, näyttöön tulee sanomaruutu, joka kysyy, haluatko tallentaa muutetun summan. Valitse **Kyllä** poistaa linkin myyntisopimusriviin ja Laske hinta. Valitse **ei** poistaa linkin myyntisopimusriviin hinta laskematta.                                                                 |
-| Määrä                                                          | Jos määrittämäsi määrä ylittää sellaisella myyntisopimuksen rivillä määritetyn määrän, jossa **Maksimi pakotetaan** -valintaruutu on valittuna, näyttöön tulee sanomaruutu, joka kysyy, haluatko tallentaa muutetun määrän. Valitse **Kyllä** poistaa linkin myyntisopimusriviin ja Laske hinta. Valitse **ei** poistaa linkin myyntisopimusriviin hinta laskematta.                                                            |
+| CurrencyDiscount, percentDiscountUnit, pricePrice, unitNet-summa | Jos muutat näiden kenttien arvoa ja liittyvältä myyntisopimuksen riviltä on poistettu **Hinta ja alennus on kiinteä** -valintaruudun valinta, näkyviin tulee sanomaruutu, jossa kysytään, haluatko tallentaa muutoksen. Valitsemalla **Kyllä** voit poistaa linkin myyntisopimuksen riviin ja laskea hinnan uudelleen. Valitsemalla **Ei** voit poistaa linkin myyntisopimuksen riviin laskematta hintaa uudelleen.                                                                   |
+| Nettosumma                                                        | Jos määrittämäsi summa ylittää sellaisella myyntisopimuksen rivillä määritetyn summan, jossa **Maksimi pakotetaan** -valintaruutu on valittuna, näyttöön tulee sanomaruutu, joka kysyy, haluatko tallentaa muutetun summan. Valitsemalla **Kyllä** voit poistaa linkin myyntisopimuksen riviin ja laskea hinnan uudelleen. Valitsemalla **Ei** voit poistaa linkin myyntisopimuksen riviin laskematta hintaa uudelleen.                                                                 |
+| Määrä                                                          | Jos määrittämäsi määrä ylittää sellaisella myyntisopimuksen rivillä määritetyn määrän, jossa **Maksimi pakotetaan** -valintaruutu on valittuna, näyttöön tulee sanomaruutu, joka kysyy, haluatko tallentaa muutetun määrän. Valitsemalla **Kyllä** voit poistaa linkin myyntisopimuksen riviin ja laskea hinnan uudelleen. Valitsemalla **Ei** voit poistaa linkin myyntisopimuksen riviin laskematta hintaa uudelleen.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Myyntisopimuksesta tilatun nimikkeen palauttaminen
-Kun asiakas palauttaa tuotteen, joka on tilattu myyntisopimuksen, Microsoft Dynamics-365 työvaiheiden löytää ja automaattisesti päivittää liittyvä myyntisopimus sitoumuksen mukaisesti määrä tai summa muutosta. Luomalla myyntisopimukseen linkitettyyn alkuperäiseen myyntitilaukseen perustuvan palautustilauksen muodostat suhteen myyntisopimuksen sitoumuksen, myyntitilausrivin ja palautustilauslaskun välille.  
+Kun asiakas palauttaa tuotteen, joka on tilattu myyntisopimuksen kautta, Microsoft Dynamics 365 for Operations voi etsiä liittyvän myyntisopimuksen sitoumuksen ja päivittää sen automaattisesti vastaamaan muuttunutta määrää tai summaa. Luomalla myyntisopimukseen linkitettyyn alkuperäiseen myyntitilaukseen perustuvan palautustilauksen muodostat suhteen myyntisopimuksen sitoumuksen, myyntitilausrivin ja palautustilauslaskun välille.  
 
 Jos et halua vähentää palautettua nimikemäärää myyntisopimuksen sitoumuksesta, **Palautustilaus**-sivun **Poista linkki** -ohjausobjektilla voit poistaa palautustilauksen ja myyntisopimuksen sitoumuksen välisen linkin. Jos haluat muodostaa linkin uudelleen myöhemmin, valitse **Luo linkki**.  
 
 **Huomautus:** Palautustilaus voidaan linkittää vain yhteen myyntisopimukseen. Jos asiakas palauttaa useita tuotteita, jotka on tilattu usean myyntisopimuksen kautta, sinun on luotava uusi palautustilaus kullekin tuotteelle ja linkki vastaavaan myyntisopimukseen.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automaattinen haku myyntisopimuksia varten
-Joissakin tilanteissa, joissa luodaan myyntitilauksia välillisesti kuten luodessasi hyvityslaskun tai konsernin sisäisiä myyntitilauksia, voit määrittää, onko Microsoft Dynamics-365 työvaiheiden etsii automaattisesti käytettävissä-myyntisopimukset.
+Joissakin tilanteissa, joissa myyntitilauksia luodaan epäsuorasti, esimerkiksi luodessasi hyvityslaskua tai konsernin sisäisiä myyntitilauksia, voit määrittää, hakeeko Microsoft Dynamics 365 for Operations automaattisesti käyttökelpoisia myyntisopimuksia.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Taloushallinnon dimensiot myyntisopimuksissa
 Voit kopioida taloushallinnon dimensiot joko asiakirjojen ylätunnisteisiin tai myyntisopimusten yksittäisille riveille. Sopimuksen otsikon tai sopimusrivin dimensioita voi muuttaa milloin tahansa. Tässä tapauksessa dimensiot kopioidaan automaattisesti vapautustilausten otsikkoon tai vapautusriville.
+
+
 
 

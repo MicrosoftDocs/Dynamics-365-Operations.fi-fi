@@ -85,6 +85,6 @@ Lisätietoja on artikkelin <a href="https://technet.microsoft.com/en-us/library/
 
 #<a name="see-also"></a>Lisätietoja
 
-[Raportti taloushallinnon] ((dynamics365\operations\financials\general-ledger\generate-taloudellinen-raportti)
+[Luo talousraportti]((dynamics365\operations\financials\general-ledger\generate-financial-report)
 
 

@@ -36,9 +36,9 @@ Kaikilla sivuilla ei ole kentän kuvauksia. Vain monimutkaisilla kentillä on ku
 Voit lisätä halutessasi uusia kenttien kuvauksia ja mukauttaa valmiita kuvauksia, jos sinulla on 365 for Operations -kehitysympäristön käyttöoikeus. Voit esimerkiksi lisätä yrityskohtaiset tiedot kentän kuvaukseen. Lisätietoja on artikkelissa [Muokkaa kenttäohjetta](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Lisätietoja on käyttöliittymän kenttien kuvauksissa.
-Voit tarkastella kentän kuvauksia asettamalla hiiren osoittimen kentän päälle. Jos kuvausta ei ole, kentän nimi tulee näkyviin, kun pidät hiiren osoitinta kentän päällä. (Huomautus: versiossa 7.0.0 kenttien kuvaukset voidaan tarkastella vain **kentän kuvauksissa** sivulla.) Seuraavassa kuvassa näkyy, tulee näkyviin, kun pidät hiiren osoitinta kentän kuvaus **Lukitse nimikkeet inventoinnin ajaksi** kenttä. 
+Voit tarkastella kentän kuvauksia asettamalla hiiren osoittimen kentän päälle. Jos kuvausta ei ole, kentän nimi tulee näkyviin, kun pidät hiiren osoitinta kentän päällä. (Huomautus: Kenttien kuvauksia voidaan tarkastella versiossa 7.0.0 vain **Kenttien kuvaukset** -sivulla) Seuraavassa kuvassa on kentän kuvaus, joka tulee näkyviin, kun pidät hiiren osoitinta **Lukitse nimikkeet inventoinnin ajaksi** -kentän päällä. 
 
-[![Esimerkki kentän kuvaus](./media/field-description.png)](./media/field-description.png)
+[![Esimerkki kentän kuvauksesta](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Tarkastele kentän ohjetta ja vie ohje Kenttien kuvaukset -sivulla
 Voit tarkastella ja viedä **Kenttien kuvaukset** -sivulla kenttien kuvauksia. Voit tarkastella kuvauksia, jotka ovat käytettävissä yhdelle sivulle kerrallaan.
@@ -73,7 +73,7 @@ Voit etsiä sivua usealla eri tavalla **Valitse sivu** -kentässä. Usein avatta
     -   Jos tarkkoja vastineita on useita, kuvauksia ei näytetä. Avaa avattava luettelo ja valitse sopiva sivu.
     -   Jos kirjoittamasi nimi on toisen sivun nimen osa, näet sivun kuvaukset. Jos kuitenkin avaat avattavan luettelon, näkyvissä on lisää nimen sisältäviä sivuja.
 
-Esimerkiksi ei kuvaukset näytetään, kun kirjoitat **inventointi** -*** kenttä sivun ***. Kun avaat luettelon näet, että kahdella sivulla on nimi **Inventointi** ja inventointi-sana on useiden sivujen nimessä. Jos valitset sivun, jonka AOT-nimi on **InventJournalCount**, kyseisen sivun kenttien kuvaukset näytetään. Jos kuitenkin avaat avattavan luettelon uudelleen, näet, että luettelo sisältää nyt kaikki sivut, joiden AOT-nimeen InventJournalCount sisältyy.
+Kuvauksia ei esimerkiksi näytetä, jos kirjoitat **Inventointi** ****Valitse sivu**** -kenttään. Kun avaat luettelon näet, että kahdella sivulla on nimi **Inventointi** ja inventointi-sana on useiden sivujen nimessä. Jos valitset sivun, jonka AOT-nimi on **InventJournalCount**, kyseisen sivun kenttien kuvaukset näytetään. Jos kuitenkin avaat avattavan luettelon uudelleen, näet, että luettelo sisältää nyt kaikki sivut, joiden AOT-nimeen InventJournalCount sisältyy.
 
 ## <a name="troubleshooting"></a>Vianmääritys
 Tässä osassa on tietoja, jotka on sellaisten ongelmien vianmäärityksessä, joita voi tulla esiin kenttien kuvauksia käytettäessä.

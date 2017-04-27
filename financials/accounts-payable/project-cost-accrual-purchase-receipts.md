@@ -1,6 +1,6 @@
 ---
-title: "Projektin Kustannuskertymä-ostovastaanottojen"
-description: "Tässä aiheessa kuvataan, kuinka jaksotettu projektikustannuksia Ostojen vastaanotot voidaan seurata Microsoft Dynamics-365 operaatioille."
+title: Projektikustannusten jaksottaminen ostojen vastaanotoissa
+description: "Tässä aiheessa kerrotaan, miten ostojen vastaanottojen jaksotetut projektikustannuksia voidaan seurata Microsoft Dynamics 365 for Operations -järjestelmässä."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,59 +24,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="project-cost-accrual-on-purchase-receipts"></a>Projektin Kustannuskertymä-ostovastaanottojen
+# <a name="project-cost-accrual-on-purchase-receipts"></a>Projektikustannusten jaksottaminen ostojen vastaanotoissa
 
-Tässä aiheessa kuvataan, kuinka jaksotettu projektikustannuksia Ostojen vastaanotot voidaan seurata Microsoft Dynamics-365 operaatioille. 
+[!include[banner](../includes/banner.md)]
 
-Projektin laskujen usein saapuvat myöhemmin kuin tavarat ja palvelut on toimitettu, joilla voisi olla merkittävä vaikutus projektin suorituskyvyn mittarit (KPI: T). Sen tärkeää voivat seurata näitä tapahtumia sekä taloudellisia ja projektin raportteja.
 
-Esimerkiksi seuraavassa tilanteessa havainnollistaa tätä. 
+Tässä aiheessa kerrotaan, miten ostojen vastaanottojen jaksotetut projektikustannuksia voidaan seurata Microsoft Dynamics 365 for Operations -järjestelmässä. 
 
-Contoso-konsultointi on aloittanut uuden cloud käyttöönottoprojektin. Ostaa tietokoneen projektille luodaan ostotilaus. Tietokone kustannusten $1500 ja asennuspalvelut kustannusten $150. Toimittaja on toimitettu ja asennettu tietokoneeseen, mutta laskua ei ole vielä saavuttanut Contoso kuultuaan. Projektipäällikkö haluaa tarkastella projektin Kustannuskertymä $1650, ennen kuin lasku on toimitettu. Tämä kustannus olisi otettava huomioon myös yhtiön kuukauden lopussa tilinpäätöksen. 
+Projektin laskut saapuvat usein tavaroiden ja palveluiden toimituksen jälkeen. Tällä saattaa olla merkittävä vaikutus projektin suorituskykyilmaisimiin. On tärkeää, että näitä tapahtumia pystytään seuraamaan sekä tilinpäätöksissä että projektiraporteissa.
 
-Jaksotettu kustannus on merkittävä taloudellinen taso ja tason projektin raportointia varten. Taloudellista päivityksen tuotteen vastaanoton voi seurata Dynamics 365 toimintoja varten, kohteen ja hankintojen luokissa. 
+Seuraava esimerkki havainnollistaa tätä. 
 
-Nimikkeille- **Ostoreskontran parametrit** -sivulla **Kirjataanko tuotteiden vastaanotot kirjanpitoon** vaihtoehto.
-[![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
+Contoso Consulting on aloittanut uuden pilvikehitysprojektin. Luodaan ostotilaus tietokoneen ostamiseksi projektia varten. Tietokone maksaa 1 500 euroa ja asennuspalvelut 150 euroa. Toimittaja on toimittanut ja asentanut tietokoneen, mutta Contoso Consulting ei ole vielä saanut laskua. Projektipäällikkö haluaa tarkastella projektikustannusten 1 650 euron jaksottamista ennen laskun toimitusta. Kustannusten tulee vastata yrityksen kuukauden lopun tilinpäätöksiä. 
 
-Hankintojen luokkien- **luokan käytäntösääntö** -sivulla **ostaminen** käytäntöjä ja valitse sitten **Jaksota ostokulut vastaanoton** kunkin Hankintaluokalle.
-[![accruals2](./media/accruals2-1024x569.png)](./media/accruals2.png) 
+Jaksotettu kustannus on tallennettava raportoinnissa sekä taloushallinnon tasolla että projektitasolla. Dynamics 365 for Operations -ohjelman tuotteen vastaanoton nimike- ja hankintaluokkien maksupäivitystä voidaan seurata. 
 
-**Ostaa laskuttamattomien menojen** ja **osto kertymä** asiakkuuksia **kirjausasetukset** käytetään, kun kirjataan tositteet, jotka liittyvät tuotteen vastaanoton.
-[![accruals3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
+Valitse nimikkeille **Ostoreskontran parametrit** -sivulla **Kirjaa tuotteen vastaanotot kirjanpitoon** -vaihtoehto.
+[![jaksotukset1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
-Käyttämällä tätä samaa skenaariota, Katsotaanpas miten tuotteen vastaanoton kirjaus vaikuttaa Kirjanpito- ja projektitietoja. 
+Valitse hankintaluokille **Luokan käytäntösääntö** -sivulla **ostokäytännöt** ja valitse sitten jokaiselle hankintaluokalle **Jaksota ostokulut vastaanoton yhteydessä** -kohta.
+[![jaksotukset2](./media/accruals2-1024x569.png)](./media/accruals2.png) 
 
-**Vaihe 1:** Luo ja vahvista uusi ostotilaus project tallentaa tietokoneen $1500 ja asennuksen Services for $150.
-[![accruals4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
+**Kirjausasetukset**-kohdassa olevia **Ostomeno, laskuttamaton**- ja **Osto, jaksotus** -tilejä käytetään, kun tuotteen vastaanottoon liittyvät tositteen kirjataan.
+[![jaksotukset3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
 
-Ostotilauksen vahvistuksen jälkeen tapahtumat sidottu kustannus luodaan projekti. 
-[![accruals5](./media/accruals5-1024x219.png)](./media/accruals5.png) 
+Käytetään samaa skenaariota ja tarkastellaan, miten tuotteen vastaanotto vaikuttaa kirjanpitoon ja projektin tietoihin. 
 
-> [!NOTE]
-> Sidottujen kustannusten tapahtumat on **tapahtuman alkuperä** -kentän arvoksi **ostotilauksen**. Luomalla ja vahvistamalla ostotilaus ei luo projektille tapahtumia. 
+**Vaihe 1:** Luodaan ja vahvistetaan projektille uusi ostotilaus 1 500 euroa maksaneen tietokoneen ja 150 euroa maksaneiden asennuspalveluiden oston tallentamista varten.
+[![jaksotukset4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
-**Vaihe 2:** tavaroiden ja palvelujen perille ja tuotteen vastaanotto rekisteröidään. 
-
-Tuotteen vastaanoton kirjaus luo ja kirjaa kirjanpidon tosite. Tosite osto menot, laskuttamattomien tilin debet- ja kredit-ostojen kertymätilin. 
-[![accruals6](./media/accruals6-1024x214.png)](./media/accruals6.png)
+Kun ostotilaus vahvistetaan, projektille luodaan sidotun kustannuksen tapahtumat. 
+[![jaksotukset5](./media/accruals5-1024x219.png)](./media/accruals5.png) 
 
 > [!NOTE]
-> Tuotteen vastaanoton kirjaus käyttää kirjausmääritysten hankintaluokat tuotteita ja ei ole projektiluokkien kirjausasetukset. Ostojen jaksotukset taloudellisista vaikutuksista ekologisia oikein, tämä asennus voidaan tasata. 
+> Sidotun kustannuksen tapahtumien **Tapahtuman alkuperä** -kentän arvoksi on määritetty **Ostotilaus**. Projektille ei luoda tapahtumia ostotilauksen luomisen ja vahvistamisen yhteydessä. 
 
-On mahdollista yhdistää hankintaluokat projektin luokkiin **hankintaluokka** sivulla.
-[![accruals7](./media/accruals7-1024x390.png)](./media/accruals7.png)
+**Vaihe 2:** Tavarat ja palvelut toimitetaan ja tuotteen vastaanotto rekisteröidään. 
 
-**Vaihe 3:** luonnos toimittajalasku luodaan. 
+Tuotteen vastaanoton kirjaamisen yhteydessä luodaan tosite ja kirjataan se kirjanpitoon. Tosite veloittaa ostomenoa, laskuttamatonta tiliä, ja hyvittää jaksotusmenetelmän tiliä. 
+[![jaksotukset6](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
-Työvaiheiden Dynamics 365,-tuotteen vastaanoton kirjaus ei vaikuta projektitiedot. Kiertää luonnos toimittajalaskun voi luoda suoraan tavaran vastaanoton kirjauksen jälkeen. Siirry **ostotilauksen** sivulla &gt;**Lasku-välilehteen**&gt;**Luo**&gt;**laskun**. Tämä luo asiakirjan odottava lasku, joka päivittää projektitietoja. 
+> [!NOTE]
+> Tuotteen vastaanoton kirjaamisessa käytetään hankintaluokkien ja tuotteiden kirjausasetuksia projektiluokkien kirjausasetusten sijaan. Nämä asetukset on kohdistettava, jotta taloudellinen vaikutus ostojen jaksotukseen on oikea. 
 
-Luonnos toimittajalaskun luominen luo odottavat projektitapahtumat. 
-[![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
+Hankintaluokat on mahdollista yhdistää projektiluokkiin **Hankintaluokka**-sivulla.
+[![jaksotukset7](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
-- **Sidotut kustannukset** -sivulla vaiheessa 1 luotu tietueet voidaan sulkea ja muuttuvat kustannukset sitoumuksen lähtöisin odottava toimittajalasku luodaan uusia tietueita. **Tapahtuman alkuperä** kenttään sidotun kustannuksen arvoksi varten **toimittajalaskun**.
-[![accruals9](./media/accruals9-1024x200.png)](./media/accruals9.png)
+**Vaihe 3:** Luo toimittajan laskuluonnos. 
 
-Toimittajalaskun pysyy odottavassa tilassa, kunnes todellinen toimittajalasku saapuu.
+Tuotteen kirjaaminen Dynamics 365 for Operations -ohjelmaan ei vaikuta projektin tietoihin. Voit välttää ongelman luomalla toimittajan luonnoslaskun myös heti oston vastaanoton kirjaamisen jälkeen. Siirry kohtaan **Ostolasku**-sivu &gt; **Lasku-välilehti** &gt; **Luo** &gt; **Lasku**. Tämä luo odottavan laskuasiakirjan, joka päivittää projektin tiedot. 
+
+Toimittajan laskuluonnoksen luominen luo odottavia projektitapahtumia. 
+[![jaksotukset8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
+
+**Sidottu kustannus** -sivulla vaiheessa 1 luodut tietueet suljetaan. Tämän jälkeen luodaan uudet tietueet, jotka vastaavat odottavista toimittajan laskuista saatavia kustannussitoumuksia. Sidotun kustannuksen **Tapahtuman alkuperä** -kentän arvoksi määritetään **Toimittajan lasku**.
+[![jaksotukset9](./media/accruals9-1024x200.png)](./media/accruals9.png)
+
+Toimittajan laskun tila on Odottaa niin kauan, kunnes todellinen toimittajan lasku saapuu.
+
+
 
 

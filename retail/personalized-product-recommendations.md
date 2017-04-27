@@ -1,6 +1,6 @@
 ---
-title: Omat suositukset tuotekuvaus
-description: "Tuotteen suosituksia voi näkyä Dynamics 365 operaatioille, siten myyntiä (POS)-laite. Suositukset kohteita asiakas mahdollisesti kiinnostuneita mukaan ostohistorian, niiden haluavansa luettelon kohteet ja kohteet, joita muut asiakkaat ostaa online- ja Tiili ja laastin kaupat. Suositukset auttavat asiakkaan kuvastojen suurten vähittäiskauppiaiden, tuotteen etsiminen. Näennäiskonepohjainen tuotteita, jotka on kohdistettu asiakkaan kiinnostuksen kohteita ja ostava käyttöä, tuote-suositukset auttavat vähittäiskauppiaita ylös-myy ja cross-myy ja voit parantaa asiakkaan pidätys. Dynamics 365 operaatioille tuote-suositukset ovat powered kognitiivisia ja Microsoftin Azure machine learning."
+title: Mukautettujen tuotesuositusten yleiskuvaus
+description: "Dynamics 365 for Operationsissa voidaan näyttää suosituksia myyntipisteen laitteessa. Suositukset ovat nimikkeitä, joista asiakas on mahdollisesti kiinnostunut ostohistorian, toiveluettelon ja muiden asiakkaiden verkosta tai kivijalkakaupasta ostamien tuotteiden perusteella. Myyjillä, joilla on laajat tuoteluettelot, suositukset auttavat asiakasta löytämään uusia tuotteita. Esittämällä tuotesuosituksia, jotka on kohdistettu asiakkaan kiinnostuksen kohteisiin, kauppiaat parantavat lisä- ja ristiinmyyntiään ja tehostavat asiakkaiden sitoutumista. Dynamics 365 for Operationsin tuotesuositukset toimivat kognitiivisten palveluiden ja Microsoft Azuren koneoppimisen avulla."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,59 +25,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="personalized-product-recommendations-overview"></a>Omat suositukset tuotekuvaus
+# <a name="personalized-product-recommendations-overview"></a>Mukautettujen tuotesuositusten yleiskuvaus
 
-Tuotteen suosituksia voi näkyä Dynamics 365 operaatioille, siten myyntiä (POS)-laite. Suositukset kohteita asiakas mahdollisesti kiinnostuneita mukaan ostohistorian, niiden haluavansa luettelon kohteet ja kohteet, joita muut asiakkaat ostaa online- ja Tiili ja laastin kaupat. Suositukset auttavat asiakkaan kuvastojen suurten vähittäiskauppiaiden, tuotteen etsiminen. Näennäiskonepohjainen tuotteita, jotka on kohdistettu asiakkaan kiinnostuksen kohteita ja ostava käyttöä, tuote-suositukset auttavat vähittäiskauppiaita ylös-myy ja cross-myy ja voit parantaa asiakkaan pidätys. Dynamics 365 operaatioille tuote-suositukset ovat powered kognitiivisia ja Microsoftin Azure machine learning.
+[!include[banner](includes/banner.md)]
+
+
+Dynamics 365 for Operationsissa voidaan näyttää suosituksia myyntipisteen laitteessa. Suositukset ovat nimikkeitä, joista asiakas on mahdollisesti kiinnostunut ostohistorian, toiveluettelon ja muiden asiakkaiden verkosta tai kivijalkakaupasta ostamien tuotteiden perusteella. Myyjillä, joilla on laajat tuoteluettelot, suositukset auttavat asiakasta löytämään uusia tuotteita. Esittämällä tuotesuosituksia, jotka on kohdistettu asiakkaan kiinnostuksen kohteisiin, kauppiaat parantavat lisä- ja ristiinmyyntiään ja tehostavat asiakkaiden sitoutumista. Dynamics 365 for Operationsin tuotesuositukset toimivat kognitiivisten palveluiden ja Microsoft Azuren koneoppimisen avulla.
 
 <a name="scenarios"></a>Skenaariot
 ---------
 
-Tuotteen suosituksia on käytössä seuraavissa tilanteissa POS. Ne ovat saatavissa Cloud POS tai Moderni POS (MPOS).
+Tuotteen suosituksia on käytössä seuraavissa myyntipisteskenaarioissa. Ne ovat saatavissa Cloud POS - ja Modern POS (MPOS) -myyntipisteissä.
 
-1.  - **Tuotetiedot** sivulla:
+1.  **Tuotteen tiedot** -sivulla:
 
--   Jos liittää myymälä vierailut **tuotetiedot** sivulle, kun paljasta aiempiin tapahtumiin eri kanavien kautta suositus moottorin ehdottaa muita kohteita, jotka ovat todennäköisesti voi ostaa yhdessä.
--   Jos myymälä liittää Lisää asiakas tapahtumaan ja käy sitten **tuotetiedot** sivun suositus moottorin neuvoo mukautetun käyttäen Asiakkaan tapahtumahistorian.
+-   Jos myymälän päällikkö käy **Tuotteen tiedot** -sivulla tarkastelleessaan aiempia tapahtumia eri kanavissa, moduuli ehdottaa muita nimikkeitä, jotka todennäköisesti voi ostaa yhdessä.
+-   Jos myymäläpäällikkö lisää asiakkaan tapahtumaan ja käy sitten **Tuotteen tiedot** -sivulla, suositusmoduuli antaa mukautettuja suosituksia käyttäen asiakkaan tapahtumahistoriaa.
 
 [![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-2.  - **Tapahtuma** sivulla:
+2.  **Tapahtuma**-sivulla:
 
--   Moottori suositus ehdottaa koko luetteloa korissa perusteella.
--   Jos myymälä liittää Lisää asiakas tapahtumaan, suositus moottorin ja neuvoo omat ja asiakkaan Tapahtumahistorian kohteita luetteloon käyttämällä korissa.
+-   Suositusmoduuli ehdottaa nimikkeitä kaikkien ostoskorissa olevien tuotteiden perusteella.
+-   Jos myymäläpäällikkö lisää asiakkaan tapahtumaan, suositusmoduuli antaa henkilökohtaisia suosituksia käyttäen asiakkaan tapahtumahistoriaa ja ostoskorissa olevien nimikkeiden tietoja.
 
-**Huomautus** suosituksia näkyy **tapahtuma** sivun vähittäismyyjän on päivitettävä työvaiheiden 365 Dynamics-näyttöasettelun. **Suosituksia** valvonta on jätettävä, **tapahtuman** sivulla. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+**Huomautus** Jotta suositukset voitaisiin näyttää **Tapahtuma**-sivulla, vähittäismyyjän pitää päivittää näytön asettelu Dynamics 365 for Operationsissa. **Suositukset**-ohjausobjekti on pudotettava **Tapahtuma**-sivulle. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3.  - **Asiakkaan tiedot** sivulla:
-    -   Moottori suositus ehdottaa Käyttäjätunnus ja asiakkaan haluavansa luettelon kohteiden perusteella.
+3.  **Asiakastiedot**-sivulla:
+    -   Suositusmoduuli ehdottaa nimikkeitä käyttäjätunnuksen ja asiakkaan toivelistassa olevien tuotteiden perusteella.
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## <a name="configure-dynamics-365-for-operations-to-enable-pos-recommendations"></a>365 Dynamics POS suosituksia käyttöön toimintojen määrittäminen
-Määritä tuotteen suosituksia, tarvitset seuraavasti.
+## <a name="configure-dynamics-365-for-operations-to-enable-pos-recommendations"></a>Määritä myyntipisteen suoritukset käyttöön Dynamics 365 for Operationsissa
+Voit määrittää tuotesuositukset seuraavasti.
 
-1.  Varmista, että olet valinnut oikean **yritys**.
-2.  Siirry **yksikön store**, valitse **Retail-myynti**, ja valitse sitten **päivittää**. ** ** Tämä demo-data (tai tietoja) käyttää toiminnallisia tietokannasta ja yksikkö myymälä siirtyy.
-3.  Valinnainen: Jos haluat Näytä suositusten tapahtuman näytössä, siirry ** näyttöasettelun **näyttöasettelun valitsemiseen, käynnistää **näytön asettelun suunnittelutoiminto**,** ** ja pudota ** suositusten valvonta ** tarvittaessa.
-4.  Siirry **vähittäismyynnin parametreja**, valitse **koneen opiskelun**, valitse ** Kyllä ** alla **Ota POS suosituksia**.
-5.  Saat suosituksia POS yleismääritysten työ suoritetaan **1110**. Kanavan määritys työ suoritetaan POS-näytön asettelun suunnittelutoiminto muutosten mukaisiksi **1070**.
+1.  Varmista, että olet valinnut oikean **yrityksen**.
+2.  Siirry kohtaan **Yksikkösäilö**, valitse **Vähittäismyynti** ja sitten **Päivitä**.** **Tämä käyttää demotietoja (tai omia tietojasi) toiminnallisesta tietokannasta ja siirtää ne yksikkösäilöön.
+3.  Valinnainen: Jos haluat näyttää suositukset Tapahtuma-näytössä, siirry kohtaan **Näytön asettelu**, valitse näyttöasettelu, käynnistä **Näytön asettelun suunnittelutoiminto** ja pudota **Suositukset-ohjausobjekti** haluamaasi paikkaan.
+4.  Siirry kohtaan **Vähittäismyynnin parametrit**, valitse **Automaattianalyysipalvelut** ja valitse **Kyllä** kohdassa **Ota käyttöön myyntipisteen suositukset**.
+5.  Saat suositukset näkyviin myyntipisteessä suorittamalla yleisen konfiguraatiotyön **1110**. Saat myyntipisteen näytön asetteluun tehdyt muutokset näkyviin suorittamalla kanavan konfigurointityön **1070**.
 
 ## <a name="how-does-it-work"></a>[]()Miten se toimii?
-Kun päivität **yksikön myymälä** yritys, seuraavat toiminnot tapahtuvat.
+Kun päivität **Yksikkösäilö**-yksikön, seuraavat toiminnot tapahtuvat.
 
--   Kognitiiviset palvelujen edellyttämään muotoon tietoja toimintojen toiminnassa tietokannan Dynamics-365-uutetaan ja lähettää kohteen myymälään.
--   Tietoja käytetään Azure Data Factory (Arkinsyöttölaite) puhdistaa tiedot käyttämällä komentosarjoja rakenteen Arkinsyöttölaite toiminnan osana. Puhdistettu tiedot tallennetaan blob-etäsäilöpalvelun.
--   Kognitiiviset services API käyttää tietoja blob-etäsäilöpalvelun suosituksen mallin junaan.
+-   Dynamics 365 for Operationsin toiminnallisesta tietokannasta poimitaan tiedot kognitiivisten palveluiden edellyttämässä muodossa ja lähetetään yksikkösäilöön.
+-   Azure Data Factory (ADF) käyttää tietoja puhdistaakseen tiedot käyttäen Hive-skriptejä osana ADF-toimintoja. Puhdistetut tiedot tallennetaan blob-säilöpalveluun.
+-   Kognitiivisten palvelujen API käyttää blob-etäsäilöpalvelun tietoja harjoittaakseen suositusmallia.
 
-Kun otat käyttöön **käyttöön suosituksia** kokoonpano-työt suoritetaan ja seuraavat toiminnot tapahtuvat.
+Kun otat käyttöön **Ota suositukset käyttöön** -asetuksen ja suoritat konfiguraatiotyöt, tapahtuu seuraavat toiminnot.
 
--   Mallin tunnistetiedot ja tunnus noudettu API-liittymästä ja toimien operatiivisten tietokannan Dynamics-365, AOS Web.config-tiedostossa ja myös vähittäiskaupan Server tallennettu.
--   Mallin tunnistetiedot ja tunnus saataville CRT niin, että puhelut tuotteen suositukset Cloud POS ja MPOS online-tilassa voi käyttää.
+-   Mallin tunnistetiedot ja tunnus noudetaan API-liittymästä ja tallennetaan Dynamics 365 for Operationsin operatiiviseen tietokantaan, AOS:n web.config-tiedostoon sekä Retail-palvelimelle.
+-   Mallin tunnistetiedot ja tunnus annetaan saataville CRT:lle niin, että tuotteen suosituspyynnöt online-tilassa olevista Cloud POS- ja MPOS -myyntipisteistä voidaan suorittaa.
 
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Tapahtuman sivulla on POS-laitteen suositusten ohjausobjektin lisääminen](add-recommendations-control-pos-screen.md)
+[Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumasivulle](add-recommendations-control-pos-screen.md)
+
+
 
 

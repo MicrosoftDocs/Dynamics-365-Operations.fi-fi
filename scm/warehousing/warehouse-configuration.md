@@ -52,13 +52,13 @@ Osana varastoasettelun käyttöönottoprosessia on määritettävä varaston vy�
 -   **Sijaintityypit** – Varastosijaintien looginen tai fyysinen ryhmittely. Voit esimerkiksi luoda sijaintityypin kaikille väliaikaisille sijainneille. **Varastonhallinnan parametrit** -sivun pakolliset asetukset määrittävät väliaikaisten sijaintityyppien ja lopullisen lähetyssijaintityypin määritysprosessin.
 -   **Sijainnit** – Sijaintitietojen alin taso. Sijaintien avulla voidaan seurata, mihin käytettävissä oleva varasto on varastoitu ja mistä se kerätään varastossa.
 
-Varastoasettelun määrittämistä varten luotuja yksiköitä käytetään kyselyissä, jotka määritetään työmalleissa siirtämään varaston työtilauksia. Niinpä sinun on otettava esimerkiksi vyöhykkeitä ja sijaintityyppejä määritettäessä huomioon, miten varaston eri alueita käytetään eri prosesseissa. Ota huomioon myös tietyn alueen fyysiset ominaisuudet. Esimerkiksi voi olla alueita, jossa voit käyttää vain tietynlaisia trukin. Tai jos yritykselläsi on tuotanto- ja valmiiden tuotteiden samalla satamarakenteessa, haluat ehkä luoda samaan varastoon Dynamics 365 toimintoihin mutta luomalla kahden vyöhykkeen ryhmät erotella kaksi operaatiota. Anna kohteiden kuvaavia nimiä, jotta se on helppo tunnistaa, kun niitä käytetään kyselyissä malli.
+Varastoasettelun määrittämistä varten luotuja yksiköitä käytetään kyselyissä, jotka määritetään työmalleissa siirtämään varaston työtilauksia. Niinpä sinun on otettava esimerkiksi vyöhykkeitä ja sijaintityyppejä määritettäessä huomioon, miten varaston eri alueita käytetään eri prosesseissa. Ota huomioon myös tietyn alueen fyysiset ominaisuudet. Joillakin alueilla voi esimerkiksi käyttää vain tietyn tyyppistä trukkia. Tai jos yrityksen tiloissa on sekä valmiita tuotteita että tuotantoa, Dynamics 365 for Operations -järjestelmään kannattaa ehkä luoda yksi varasto mutta erottaa sitten nämä toiminnot luomalla kaksi vyöhykeryhmää. Anna yksiköille kuvaileva nimi, jotta ne on helppo tunnistaa, kun käytät niitä mallikyselyissä.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Sijainnin varastointirajoitukset, sijaintiprofiilit ja kiinteät keräilysijainnit
 
 Varaston fyysinen asettelu on otettava huomioon, koska se vaikuttaa tallennuskapasiteettiin (sijainnin varastointirajoitukset ja sijaintiprofiilit) ja koska se liittyy yritykseen optimoida varastoprosessit. 
 
-Raja-arvot auttavat takaamaan, että työ ei ole luotu pyytämään, että varaston sijainti eläintiheyden sijoittaa paikkaan, jossa ei ole fyysistä kykyä suorittaa varaston. Esimerkiksi jos joitakin sijainteja varastossa mahtuu vain yksi kuormalavan sijaintia kohden, eläintiheyden rajojen sijainti voidaan ottaa käyttöön. ** Määrä ** arvo voidaan määrittää **1**, ja ** yksikön ** arvo voidaan määrittää **PL** ryhmittely tietyssä sijainnissa profiilin sisällä. 
+Sijainnin varastointirajoitukset varmistavat, että ei luoda työtä, jossa varasto pyydetään sijoittamaan sijaintiin, jonka fyysinen kapasiteetti ei ole riittävä. Jos esimerkiksi joihinkin varaston sijainteihin voi sijoittaa vain yhden kuormalavan, sijainnin varastointirajoitukset voidaan ottaa käyttöön. **Määrä**-arvoksi voidaan valita **1** ja **Yksikkö**-arvoksi voidaan valita tietyssä sijaintiprofiiliryhmittelyssä **PL**. 
 
 Jos sijainnin kapasiteettirajoitusten hallinta edellyttää lisälaskutoimituksia, voidaan käyttää sijaintiprofiiliasetuksia. Tässä tapauksessa kapasiteettiin laskennassa otetaan huomioon paino ja tilavuus. 
 
@@ -66,7 +66,7 @@ Jotta lähtevät prosessit olisivat optimaalisia, on harkittava käytetäänkö 
 
 ### <a name="location-setup-wizard"></a>Ohjattu sijaintien asennustoiminto
 
-Voit nopeasti luoda fyysisen varaston sijaintien, ** sijaintiasetuksia ** ohjatun toiminnon. Voit ylläpitää sijaintien nimimuotoilua osana tätä prosessia.
+Voit luoda varastoon nopeasti sijainteja ohjatulla **Sijaintien asennus** -toiminnolla. Voit ylläpitää sijaintien nimimuotoilua osana tätä prosessia.
 
 ## <a name="warehouse-processes"></a>Varastoprosessit
 On tärkeää, että varaston määrityksen osana otetaan käyttöön liiketoiminnan vaatimusten mukaiset varastoprosessit. Tärkeimmät määritettävät komponentit ovat aaltomallit, työmallit, työpoolit ja sijaintidirektiivit.
@@ -75,7 +75,7 @@ On tärkeää, että varaston määrityksen osana otetaan käyttöön liiketoimi
 
 Aaltomallien avulla voidaan ottaa käyttöön lähtevien varastoon vapautusprosessi. Heti kun tilausrivit vapautetaan (joko suoraan lähdeasiakirjasta, erätyöprosessien kautta tai aiemmin luotujen kuormitusten kautta), käyttöön otetaan aaltomallitoiminto. 
 
-Voit luoda kolmenlaisia wave mallit: **toimitus**, **tuotantotilauksen**, ja **Kanban**. Parametreja käytetään määrittämään, kuinka paljon järjestelmä olisi automaattisesti Siirry lähtevä työ käsittelyssä. Aaltomalli valitaan aaltomallijakson ja mallissa määritettyjen ehtojen perusteella. Jos malli on jaksossa ylimpänä, kyseisen mallin ehdot tarkistetaan ensimmäisenä. Jos ehdot täyttyvät, aaltomalli käsitellään. Muussa tapauksessa tarkistetaan seuraavan mallin ehdot jne. Tarkimmat ehdot sisältävä malli onkin syytä sijoittaa ylimmäksi aaltomallin jaksoluettelossa, jolloin se käsitellään ensimmäisenä. Voit esimerkiksi haluta käsitellä tietyn rahdinkuljettajan työt tänään ja siirtää väliaikaisesti muiden rahdinkuljettajien töiden käsittelyä. Siinä tapauksessa kyseisen rahdinkuljettajan työn valitsevan aaltomallin on oltava luettelossa korkeammalla kuin muiden mallien. Muussa tapauksessa muiden rahdinkuljettajien työt voidaan käsitellä ennen kuin kyseisen rahdinkuljettajan työt valmistuvat. 
+Voit luoda kolmenlaisia aaltomallityyppejä: **lähetys**, **tuotantotilaus** ja **kanban**. Parametreilla määritetään, miten pitkälle järjestelmä käsittelee lähtevät työt. Aaltomalli valitaan aaltomallijakson ja mallissa määritettyjen ehtojen perusteella. Jos malli on jaksossa ylimpänä, kyseisen mallin ehdot tarkistetaan ensimmäisenä. Jos ehdot täyttyvät, aaltomalli käsitellään. Muussa tapauksessa tarkistetaan seuraavan mallin ehdot jne. Tarkimmat ehdot sisältävä malli onkin syytä sijoittaa ylimmäksi aaltomallin jaksoluettelossa, jolloin se käsitellään ensimmäisenä. Voit esimerkiksi haluta käsitellä tietyn rahdinkuljettajan työt tänään ja siirtää väliaikaisesti muiden rahdinkuljettajien töiden käsittelyä. Siinä tapauksessa kyseisen rahdinkuljettajan työn valitsevan aaltomallin on oltava luettelossa korkeammalla kuin muiden mallien. Muussa tapauksessa muiden rahdinkuljettajien työt voidaan käsitellä ennen kuin kyseisen rahdinkuljettajan työt valmistuvat. 
 
 Aallon käsittelymenetelmät on määritettävä kussakin aaltomallissa. Käytettävissä olevat menetelmät vaihtelevat aaltomallin tyypin mukaan.
 
@@ -107,6 +107,6 @@ Voit helpottaa ja nopeuttaa kuhunkin sijaintidirektiiviriviin liitettyjen toimin
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Sijaintien määrittäminen WMS käytössä varastossa (tehtävän guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Sijaintien määrittäminen varastonhallintajärjestelmää käyttävässä varastossa (tehtäväopas)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
 
 

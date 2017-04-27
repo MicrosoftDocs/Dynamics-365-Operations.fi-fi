@@ -1,6 +1,6 @@
 ---
 title: "Pankkitilin täsmäytyksen lisätoimintojen yhteenveto"
-description: "Pankkitilin täsmäytyksen lisätoimintojen avulla voit tuoda sähköiset tiliotteet ja sovittaa automaattisesti Microsoft Dynamics-365 työvaiheiden pankkitapahtumien kanssa.  Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä."
+description: "Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 for Operationsissa.  Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,34 +26,39 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-bank-reconciliation-overview"></a>Pankkitilin täsmäytyksen lisätoimintojen yhteenveto
 
-Pankkitilin täsmäytyksen lisätoimintojen avulla voit tuoda sähköiset tiliotteet ja sovittaa automaattisesti Microsoft Dynamics-365 työvaiheiden pankkitapahtumien kanssa.  Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä.  
+[!include[banner](../includes/banner.md)]
 
-Useilla kappaletta, jotka on määritettävä ennen kokeneet pankin täsmäytys-toiminnon avulla. Saat lisätietoja pankin tiliotteen tuonnin määrittämisestä [määrittää pankin tiliotteen tuonnin](set-up-advanced-bank-reconciliation-import-process.md).  Täsmäytysprosessin määrittäminen vaatimukset on kuvattu alla.
+
+Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 for Operationsissa.  Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä.  
+
+Ennen kehittyneen pankin täsmäytystoiminnon käyttöä on määritettävä monta asiaa. Saat lisätietoja pankin tiliotteen tuonnin määrittämisestä ohjeaiheesta [Määritä pankin tiliotteen tuontiprosessi](set-up-advanced-bank-reconciliation-import-process.md).  Täsmäytysprosessin määrittämisen vaatimukset on kuvattu alla.
 
 ## <a name="transaction-codes"></a>Tapahtumakoodit
-Tapahtumakoodit voidaan käyttää osana pankkitilin täsmäytyksen sääntöjä.  Tapahtumakoodit auttaa vastaamaan vain saman tyyppisiä Dynamics 365 operaatioille ja tiliotteessa välillä.  On tehdäkseen tämän tyyppisen vastaavat ensin pankkitapahtumat Dynamics 365 toiminnoissa käytettävät tapahtumatyypit määritetään sitten yhdistää käyttämät pankin tiliotteen tapahtumakoodien näitä tyyppejä.  Dynamics-365 toimintojen pankkitapahtumien tapahtumatyypit määritetään **pankkitapahtuman laji** sivulla.  Tämä on myös Määritä päätili, jota käytetään kyseisen tapahtumatyyppi liittyvät kirjaukset. 
+Tapahtumakoodeja voidaan käyttää osana pankkitilin täsmäytyksen vastaavuussääntöjä.  Tapahtumakoodit auttavat yhdistämään vain saman tyyppisiä tapahtumia Dynamics 365 for Operationsin ja tiliotteen välillä.  Tämän tyyppisen vastaavuuden määrittämiseksi, määritä ensin Dynamics 365 for Operationsista lähtevien pankkitapahtumien tapahtumatyypit, sitten yhdistä nämä tyypit käyttämät pankin tiliotteen tapahtumakoodeihin.  Dynamics 365 for Operationsin pankkitapahtumien tapahtumatyypit määritetään **Pankkitapahtuman tyyppi** -sivulla.  Tässä määrität myös päätilin, jota käytetään kyseiseen tapahtumatyyppiin liittyvissä kirjauksissa. 
 
-Kun yhteyttä Dynamics 365, pankin toimintojen Tapahtumakoodit määritetään, sitten yhdistää niiden sähköisen tiliotteissa käytetään Tapahtumakoodit.  Voit tehdä tämän kartoituksen avulla **tapahtumakoodin määritys** sivulla.  Tapahtuman määritys on valmis erikseen kullekin pankkitilille.
+Kun Dynamics 365 for Operationsin pankintapahtumakoodit on määritetty, sitten yhdistät nämä tapahtumakoodit sähköisissä tiliotteissa käytettäviksi tapahtumakoodeiksi.  Voit tehdä tämän yhdistämisprosessin **Tapahtumakoodin määritys** -sivulla.  Tapahtumakoodin määritys suoritetaan erikseen kullekin pankkitilille.
 
 ## <a name="matching-rules-and-matching-rule-sets"></a>Täsmäytyssäännöt ja täsmäytyksen sääntöjoukot
-Voit määrittää ehdot toimintojen pankkitapahtumien 365 Dynamics ja pankin tiliotteen kauppatapahtumaa automaattinen täsmäytys sääntöjä.  Sääntöjä määrittäminen tapahtuu **säännöt täsmäytyksen** sivulla.  Lisätietoja on ohjeaiheessa [pankkitilin täsmäytyksen säännöt määrittää](set-up-bank-reconciliation-matching-rules.md). 
+Vastaavuussääntöjen avulla voit määrittää ehdot automaattisen täsmäytyksen Dynamics 365 for Operations -pankkitapahtumien ja tiliotetapahtumien välille.  Vastaavuussääntöjen määrittäminen tapahtuu **Täsmäytyssäännöt**-sivulla.  Lisätietoja on kohdassa [Aseta pankkitilin täsmäytyksen yhteensopivuussäännöt](set-up-bank-reconciliation-matching-rules.md). 
 
-Sääntöjoukot voidaan määrittää joukko sääntöjä, jotka suoritetaan järjestyksessä pankkitilin täsmäytyksen aikana.  Sääntöjoukot on määritetty **sääntöjoukot täsmäytyksen** sivulla.
+Vastaavuussääntöjen joukkoja käytetään määrittämään sääntöjoukot, jotka suoritetaan järjestyksessä tiliotteen täsmäytysprosessin aikana.  Vastaavuussääntöjen joukot määritetään **Täsmäytyksen sääntöjoukot** -sivulla.
 
 ## <a name="cash-and-bank-management-parameters"></a>Maksuliikennetiedot
-Parametrien määrä on erityinen advanced pankki täsmäytys prosessiin **maksuliikenteen hallinnan parametrit** sivulla.  **Näytä tiliotteen rivin summan hyvitys** muuttuu Näytä summat **tiliotteen** sivulla.  Jos tämä vaihtoehto on valittuna, pankin tiliotteen tapahtumien summien näkyvät erillisessä debet- ja kredit-sarakkeisiin.  Jos ei valittuna, pankin tiliotteen tapahtumien summien näytetään yhtenä summana-sarakkeesta haluamasi merkki. 
+**Maksuliikennetiedot**-sivulla on parametreja, jotka liittyvät erityisesti edistyneeseen pankin täsmäytysprosessiin.  Asetus **Näytä tiliotteen rivin summa debet- tai kredit-muodossa** muuttaa summien näkymää **Tiliote**-sivulla.  Jos tämä vaihtoehto on valittuna, pankin tiliotteen tapahtumasummat näytetään erillisissä debet- ja kredit-sarakkeissa.  Jos ei valittuna, pankin tiliotteen tapahtumasummat näytetään yhden summan sarakkeessa soveltuvalla etumerkillä varustettuna. 
 
-Määritä parametrit sivun tarkistusasetukset ohittaa valinnat määritetään säännöt.  Esimerkiksi voi manuaalisesti tai automaattisesti vastaavat tiedostot, Määritä parametrit sivun päivämäärien eron jälkeen.  Myös, jos voit **vahvistaa tapahtumatyyppimääritys** on valittu, kauppatapahtuman luonteet täytyy yhdistää toimintoja pankkitapahtuman Dynamics-365 ja pankin tiliotteen kauppatapahtuman, jotta tapahtumat manuaalisesti tai automaattisesti tietoriveihin. 
+Parametrisivulla määritetyt tarkistusasetukset ohittavat vastaavuussäännöissä määritetyt valinnat.  Esimerkiksi et voi manuaalisesti tai automaattisesti yhdistää tiedostoja parametrisivulla määritetyn päivämääräeron ulkopuolella.  Myös, jos **Tarkista tapahtumatyyppimääritys** -asetus on valittuna, tapahtumatyypit pitää yhdistää Dynamics 365 for Operations -pankkitapahtuman ja tiliotetapahtuman välillä, jotta tapahtumat voidaan yhdistää manuaalisesti tai automaattisesti. 
 
-Sinun on myös määritettävä tarvittavat numerosarjat **maksuliikenteen hallinnan parametrit** sivulla.  - **Number sequences** -välilehti, Määritä numerosarjakoodit lataaminen **tunnuksen, lausekkeen tunnus, Täsmäytä ja pankkitilin täsmäytyksen** viittauksia.
+Sinun on myös määritettävä tarvittavat numerosarjat **Maksuliikennetiedot**-sivulla.  Määritä **Numerosarjat**-välilehdessä numerosarjakoodit **Tunnus-, Tiliotteen tunnus-, Täsmäytystunnus- ja Pankkitilin täsmäytys** -latausviitteille.
 
 ## <a name="bank-account-reconciliation-options"></a>Pankkitilin täsmäytysasetukset
-On otettava käyttöön kehittyneen pankkitilille pankkitäsmäytyksen.  Muita vaihtoehtoja ovat käytettävissä **pankkitilin** kun kokeneet pankin täsmäytys toiminnot on otettu käyttöön sivulle. 
+Sinun pitää ensin ottaa käyttöön pankkitilin täsmäytyksen lisätoiminnot.  Lisävaihtoehtoja on käytettävissä **Pankkitili**-sivulla, kun pankkitilin täsmäytyksen lisätoiminnot on otettu käyttöön. 
 
-**Tiliotteet on sähköisen maksun vahvistus** toiminnallisuus integroituu pankkitilin täsmäytyksen toimintoja sähköinen maksu tilat.  Kun tämä asetus on käytössä, pankkitositteen luodaan automaattisesti, saat sähköisen maksun tilaksi asetetaan **lähetetty**.  Lisäksi sähköisen maksun tilaksi päivitetään **lähetetty**, **saatu** sen jälkeen, kun maksu on määritetty, täsmäytetty ja kirjattu. 
+**Käytä tiliotteita sähköisten maksujen vahvistuksena** -toiminnallisuus integroi pankkitilin täsmäytyksen toiminnon sähköisen maksun tiloihin.  Kun tämä asetus on käytössä, pankkitosite luodaan automaattisesti, ja sähköisen maksun tilaksi asetetaan **Lähetetty**.  Lisäksi sähköisen maksun tila **Lähetetty** päivitetään tilaksi **Vastaanotettu** sen jälkeen, kun maksu on määritetty, täsmäytetty ja kirjattu. 
 
-**Nimi pankin tiliotteissa** kenttä on sähköinen pankki-lauseista pankkitili käytettävä nimi.  Tätä nimeä käytetään määritettäessä mitä tapahtumia tuo pankkitilin tiliotteesta, joka voi sisältää useiden pankkitilien tietoja. 
+**Pankkitilin nimi tiliotteissa** -kenttä on nimi, jota käytetään pankkitilistä sähköisissä tiliotteissa.  Tätä nimeä käytetään määritettäessä, mitä tapahtumia tuodaan pankkitilille tiliotteesta, joka voi sisältää useiden pankkitilien tietoja. 
 
-Voit **Täsmäytä tuonnin jälkeen** automaattisesti tarkistaa pankin tiliotteen, uuden pankkitilin täsmäytys ja laskentataulukon luodaan ja suoritetaan oletusarvon mukaan vastaavat sääntöä.  Tämä toiminto automatisoi asti tapahtumia, jotka on kohdistettava manuaalisesti.  Pankkitili-asetuksen oletusarvo on tuotaessa.
+Asetus **Täsmäytä tuonnin jälkeen** tarkistaa automaattisesti pankin tiliotteen, luo uuden pankkitilin täsmäytyksen ja laskentataulukon ja suorittaa vastaavuussääntöjen oletusjoukon.  Tämä toiminto automatisoi prosessin siihen pisteeseen, jossa tapahtumat on täsmäytettävä manuaalisesti.  Pankkitilin asetus on oletusarvoisesti käytössä tuonnissa.
+
+
 
 

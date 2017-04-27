@@ -1,6 +1,6 @@
 ---
-title: "Asiakkaan tilaukset yleistä"
-description: "Tässä ohjeaiheessa on tietoja asiakkaiden tilaukset-Retail Moderni POS (MPOS). Asiakastilausten kutsutaan myös erikoistilauksia. Aihe sisältää keskustelun vastaavat parametrit ja tapahtuman virrat."
+title: Asiakastilausten yleiskatsaus
+description: "Tässä ohjeaiheessa on tietoja asiakkaiden tilauksista Retail Modern POS (MPOS) -laitteissa. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
@@ -25,75 +25,80 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="customer-orders-overview"></a>Asiakkaan tilaukset yleistä
+# <a name="customer-orders-overview"></a>Asiakastilausten yleiskatsaus
 
-Tässä ohjeaiheessa on tietoja asiakkaiden tilaukset-Retail Moderni POS (MPOS). Asiakastilausten kutsutaan myös erikoistilauksia. Aihe sisältää keskustelun vastaavat parametrit ja tapahtuman virrat.
+[!include[banner](includes/banner.md)]
 
-Omni-kanavainen retail-maailmassa monet vähittäiskauppiaat antaa asiakkaalle mahdollisuuden tilauksia tai erikoistilauksia eri tuotteiden ja fulfillment vaatimusten täyttämiseksi. Seuraavassa on joitakin tyypillisiä skenaarioita:
 
--   Asiakas haluaa tuotteet toimitetaan tiettynä päivänä tiettyyn osoitteeseen.
--   Asiakas haluaa noutaa tuotteet myymälän tai sijaintiin, joka poikkeaa myymälä tai sijainti, jossa asiakas ostaa näitä tuotteita.
--   Asiakas haluaa jonkun päiväkodista, jossa asiakas ostaa tuotteita.
+Tässä ohjeaiheessa on tietoja asiakkaiden tilauksista Retail Modern POS (MPOS) -laitteissa. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
 
-Vähittäiskauppiaiden käyttää myös asiakkaan tilausten pienentää menetetty myynti, osakkeiden katkokset voi muuten aiheuttaa, koska kauppatavaran voidaan toimittaa tai kerätä eri aika tai paikka.
+Monikanavaisessa vähittäismyyntimaailmassa monet vähittäiskauppiaat tarjoavat asiakastilausten eli erikoistilausten mahdollisuuden täyttääkseen erilaisia eri tuote- ja palveluvaatimuksia. Seuraavassa on joitakin tyypillisiä skenaarioita:
 
-## <a name="set-up-customer-orders"></a>Määritä asiakkaan tilausten
-Seuraavassa on joitakin parametreja, jotka voidaan asettaa **vähittäismyynnin parametreja** sivulla voit määrittää, miten asiakkaiden tilaukset täyttyvät:
+-   Asiakas haluaa, että tuotteet toimitetaan tiettynä päivänä tiettyyn osoitteeseen.
+-   Asiakas haluaa noutaa tuotteet myymälästä tai sijainnista, joka on eri kuin myymälä tai sijainti, josta asiakas osti nämä tuotteet.
+-   Asiakas haluaa jonkun toisen noutavan ostamansa tuotteet.
 
--   **Oletus talletusten osuus** – määrittää talletuksen summa, joka asiakkaan on maksettava ennen tilauksen vahvistamista. Oletus Talletussumma lasketaan prosentteina arvo. Oikeudet, mukaan myymälän osakkuusyrityksen ehkä summa ohittaa käyttämällä **Talletuksen ohitus**.
--   **Peruutusmaksuprosentti** – Jos varausta käytetään, kun asiakkaan tilaus on peruutettu, määritä kyseisen maksun määrä.
--   **Peruutusmaksun koodi** – Jos varausta otetaan käyttöön, kun asiakkaan tilaus on peruutettu, että kulut näkyvät kulun koodi-kohtaan Microsoft Dynamics AX: n myyntitilauksen. Tämän parametrin avulla voit määrittää, peruutusmaksun koodi.
--   **Toimitusmaksun koodin** – vähittäiskauppiaiden voidaan veloittaa ylimääräinen lisämaksu tavaraa lähetyksen asiakkaalle. Toimitusmaksua, kyseinen määrä vaikuttaa kulujen koodi alla Dynamics AX: n myyntitilauksen. Tämän parametrin avulla voit yhdistää asiakkaan tilauksen kuljetusmaksuja toimitusmaksun koodia.
--   **Hyvityksen kuljetusmaksut** – määrittää, ovatko kuljetusmaksuja, jotka asiakastilaus liittyvät ostoihin.
--   **Suurin summa ilman lupaa** – Jos kuljetusmaksut ovat ostoihin, määrittää enimmäismäärän toimitus kulut tuet palautustilaukset välillä. Jos tämä määrä ylittyy, ohitus hallinta edellyttää tuen jatkaa. Rahani kuljetusmaksut voivat ylittää summan, joka oli alun perin maksettu sopimaan seuraavissa tilanteissa:
-    -   Kulut otetaan käyttöön tasolla myyntitilauksen otsikon ja kun tuotelinjan määrä palautetaan, suurin korvaamisesta kuljetusmaksuja, joita voidaan käyttää tuotteiden ja määrää ei voida määrittää tapa, joka toimii retail kaikille asiakkaille.
-    -   Kuljetusmaksut ovat syntyneet toimitus esiintymiä. Jos asiakas palauttaa tuotteet useita kertoja ja jälleenmyyjän käytäntö määrittää, että vähittäismyyjän kustannuksista palaa kuljetusmaksut, palaa kuljetusmaksut on enemmän kuin todellinen kuljetusmaksut.
+Vähittäiskauppiaat käyttävät asiakastilauksia myös pienentääkseen menetettyä myyntiä, jota varaston tyhjeneminen voi muuten aiheuttaa, koska kauppatavara voidaan toimittaa tai kerätä eri aikaan tai eri paikasta.
 
-## <a name="transaction-flow-for-customer-orders"></a>Tapahtuman asiakastilausten virtaus
-### <a name="create-a-customer-order-in-retail-modern-pos"></a>Luo Retail POS-sovelluksen Moderni asiakkaan tilaukseen
+## <a name="set-up-customer-orders"></a>Määritä asiakastilaukset
+Seuraavassa on joitakin parametreja, jotka voidaan asettaa **Vähittäismyynnin parametrit** -sivulla määrittääksesi, miten asiakkaiden tilaukset suoritetaan:
+
+-   **Oletuskäsirahaprosentti** – määritä summa, joka asiakkaan on maksettava talletuksena ennen tilauksen vahvistamista. Oletuskäsirahaprosentti lasketaan prosenttiosuutena tilauksen arvosta. Oikeuksista riippuen myymälän johtaja saattaa pysytä ohittamaan summan käyttämällä asetusta **Talletuksen ohitus**.
+-   **Peruutusmaksuprosentti** – Jos asiakkaan tilauksen peruuttamisesta perittään maksu, määritä kyseisen maksun määrä.
+-   **Peruutusmaksun koodi** – Jos asiakkaan tilauksen peruuttamisesta perittään maksu, kyseinen maksu näkyy myyntitilauksessa koodina Microsoft Dynamics AX:ssä. Tämän parametrin avulla voit määrittää peruutusmaksun koodin.
+-   **Toimitusmaksun koodi** – Vähittäiskauppiaat voivat veloittaa ylimääräisen lisämaksun tavaran lähettämisestä asiakkaalle. Tämän toimitusmaksu näkyy koodina myyntitilauksessa Microsoft Dynamics AX:ssä. Tämän parametrin avulla voit yhdistää toimitusmaksun koodia toimitusmaksuihin asiakastilauksessa.
+-   **Palauta toimitusmaksut** – Määritä, ovatko asiakastilaukseen liittyvät toimitusmaksut palautettavia.
+-   **Enimmäissumma ilman hyväksyntää** – Jos kuljetusmaksut ovat palautettavia, määritä palautustilausten toimitusmaksujen palautusten enimmäismäärä. Jos tämä määrä ylittyy, toiminnon jatkaminen edellyttää esimiehen hyväksyntää. Sopeutuakseen seuraaviin skenaarioihin, toimitusmaksujen palautus voi ylittää alunperin maksetun summan:
+    -   Kulut otetaan käyttöön myyntitilauksen otsikon tasolla ja kun tuotelinjan jokin määrä palautetaan, suurinta tuotteille ja määrälle sallittua toimitusmaksun palautusta ei voi määrittää tavalla, joka toimii kaikille vähittäismyynnin asiakkaille.
+    -   Kuljetusmaksut syntyvät toimituksen kaikissa esiintymissä. Jos asiakas palauttaa tuotteet useita kertoja ja jälleenmyyjän käytäntö määrittää, että vähittäismyyjä vasta toimituskustannuksista, palautettavat kuljetusmaksut ovat enemmän kuin todelliset kuljetusmaksut.
+
+## <a name="transaction-flow-for-customer-orders"></a>Asiakastilausten tapahtumien työnkulku
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Luo asiakastilaus Retail Modern POS -sovelluksessa
 
 1.  Lisää asiakas tapahtumaan.
-2.  Lisää ostoskorin tuotteet.
-3.  Valitse **luo tilauksen asiakkaan**, ja valitse sitten tilauksen tyyppi. Tilauksen tyyppi voi olla joko **asiakkaan tilauksen** tai **tarjous**.
-4.  Valitse **valittu aluksen** tai **toimittaa kaikki** toimittamaan osoitteeseen tuotteet asiakkaan Määritä pyydetty lähetyspäivä ja kuljetusmaksut.
-5.  Valitse **poiminta ylöspäin valittu** tai **noudettavissa kaikki** voit valita tuotteita, jotka kerätään nykyisen myymälän tai myymälän eri tiettynä päivänä.
-6.  Kerää Pano, jos talletusta ei tarvita.
+2.  Lisää tuotteet ostoskoriin.
+3.  Valitse **Luo asiakastilaus** ja valitse sitten tilauksen tyyppi. Tilauksen tyyppi voi olla joko **Asiakastilaus** tai **Tarjous**.
+4.  Valitse **Lähetä valitut** tai **Lähetä kaikki** toimittaaksesi tuotteet asiakastilin osoitteeseen. Määritä pyydetty lähetyspäivä ja kuljetusmaksut.
+5.  Valitse **Kerää valitut** tai **Kerää kaikki** valitaksesi tuotteet, jotka kerätään nykyisestä myymälästä tai eri myymälästä tiettynä päivänä.
+6.  Veloita talletussumma, jos seitä vaaditaan.
 
 ### <a name="edit-an-existing-customer-order"></a>Olemassa olevan asiakkaan tilauksen muokkaaminen
 
-1.  Valitse kotisivun, **löydä tilauksen**.
-2.  Etsi ja valitse Muokkaa järjestystä. Valitse sivun alareunassa **Muokkaa**.
+1.  Valitse kotisivulla **Etsi tilaus**.
+2.  Etsi ja valitse muokattava tilaus. Valitse sivun alareunassa **Muokkaa**.
 
-### <a name="pick-up-an-order"></a>Nosta tilaus
+### <a name="pick-up-an-order"></a>Kerää tilaus
 
-1.  Valitse kotisivun, **löydä tilauksen**.
-2.  Valitse järjestys, päiväkodista. Valitse sivun alareunassa **keräysluettelon ja pakkausluettelon**.
-3.  Valitse **Nosta**.
+1.  Valitse kotisivulla **Etsi tilaus**.
+2.  Valitse kerättävä tilaus. Valitse sivun alareunassa **Keräys ja pakkaus**.
+3.  Valitse **Kerää**.
 
-### <a name="cancel-an-order"></a>Peruuta tilaus
+### <a name="cancel-an-order"></a>Tilauksen peruuttaminen
 
-1.  Valitse kotisivun, **löydä tilauksen**.
-2.  Valitse Peruuta tilaus. Valitse sivun alareunassa **peruuttaa**.
+1.  Valitse kotisivulla **Etsi tilaus**.
+2.  Valitse peruutettava tilaus. Valitse sivun alareunassa **Peruuta**.
 
 #### <a name="create-a-return-order"></a>Palautustilauksen luominen
 
-1.  Valitse kotisivun, **löydä tilauksen**.
-2.  Valitse tilaus, palauttaa tilauksen lasku ja valitse palauttaa tavaraa tuotelinjan.
-3.  Valitse sivun alareunassa **palautustilausten**.
+1.  Valitse kotisivulla **Etsi tilaus**.
+2.  Valitse palautettava tilaus, valitse tilauksen lasku ja sitten tuotelinja, johon kauppatavara palautetaan.
+3.  Valitse sivun alareunassa **Palautustilaus**.
 
-## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Tapahtuman asynkroninen virtauksen asiakkaan tilausten
-Asiakas myynti (POS) kohdan asiakastilausten voi luoda synkronoitu tila tai asynkronista tilaa.
+## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asiakastilausten tapahtumien asynkroninen työnkulku
+Asiakastilauksia voi luoda myyntipisteen (POS) asiakasohjelmassa joko synkronoidussa tai asynkronisessa tilassa.
 
-### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Ota käyttöön asynkroninen tilassa luodaan myyntitilaukset
+### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Ota käyttöön asiakastilausten luonti asynkronisessa tilassa
 
-1.  Valitse Dynamics AX- **jälleenmyynti- ja commerce**&gt;**kanava-asetukset**&gt;**POS-asetukset**&gt;**POS-profiili**&gt;**Toimintoprofiilit**.
-2.  - **Yleisen** -pikavälilehdessä määrittää **Luo asiakastilaus async-tilassa** asetuksella **Kyllä**.
+1.  Valitse Dynamics AX:ssä **Vähittäismyynti ja kauppa** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **POS-profiilit** &gt; **Toimintoprofiilit**.
+2.  **Yleiset**-pikavälilehdessä määritä **Luo asiakastilaus asynkronisessa tilassa** -asetuksen arvoksi **Kyllä**.
 
-Kun **Luo asiakastilaus async-tilassa** asetus **Kyllä**, asiakkaan tilaukset luodaan aina asynkroninen tilassa, vaikka Retail Transaction Service-palvelun (RTS) on käytettävissä. Jos määrität tämän asetuksen arvoksi **ei**, asiakkaan tilaukset luodaan aina synkronoitu tila-RTS avulla. Kun myyntitilaukset on luotu asynkroninen tilassa, ne ovat vedetään ja lisätään Dynamics AX: N Pull (P) töiden. Dynamics AX: ssä luodaan vastaava myyntitilauksia kun **Synkronoi tilaukset** suoritetaan joko manuaalisesti tai eräkohtainen prosessi.
+Kun **Luo asiakastilaus asynkronisessa tilassa** -asetuksen arvo on **Kyllä**, asiakastilaukset luodaan aina asynkronisessa tilassa, vaikka Retail Transaction Service (RTS) -palvelu on käytettävissä. Jos määrität tämän asetuksen arvoksi **Ei**, asiakkaan tilaukset luodaan aina synkronoidussa tilassa RTS:n avulla. Kun asiakastilaukset on luotu asynkronisessa tilassa, ne ovat vedetään ja lisätään Dynamics AX:ään Pull (P) -töitä käyttämällä. Dynamics AX: ssä luodaan vastaavat myyntitilaukset, kun **Synkronoi tilaukset** suoritetaan joko manuaalisesti tai eräprosessina.
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Hybrid asiakkaiden tilaukset](hybrid-customer-orders.md)
+[Hybridit asiakastilaukset](hybrid-customer-orders.md)
+
+
 
 

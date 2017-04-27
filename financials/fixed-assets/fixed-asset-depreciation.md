@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-depreciation"></a>Käyttöomaisuuden poisto
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää käyttöomaisuuden poiston yleiskatsauksen.
 
 Poisto on kausittainen tapahtuma, joka yleensä vähentää käyttöomaisuuserän tasearvoa ja kirjataan kuluksi tulostilille. Tämän vuoksi päätiliä käytetään yleensä taseen kausittaisen poiston hyvittämiseen. Vastatili on tilikartan tuloslaskelmaosaan kuuluva tili.
@@ -51,6 +54,8 @@ Jokaisessa kirjassa on kalenteri, jota käytetään käyttöomaisuuden poistoiss
 
 Voit luoda yhteisiä kalentereita **Kirjanpidon kalenterit** -sivulla Kirjanpito-osiossa.
 
-Lisätietoja on ohjeaiheessa [poistomenetelmistä](depreciation-methods-conventions.md).
+Lisätietoja on ohjeaiheessa [Poistomenetelmät ja -käytännöt](depreciation-methods-conventions.md).
+
+
 
 

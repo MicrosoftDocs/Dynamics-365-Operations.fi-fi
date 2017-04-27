@@ -1,6 +1,6 @@
 ---
-title: Hajottaminen tuoterakenneversion
-description: "Tässä artikkelissa kuvataan skenaario, joka liittyy hajotus tuoterakenteen ja tuoterakenteen version pääsuunnittelun."
+title: Tuoterakenneversion hajottaminen
+description: "Tässä artikkelissa kuvataan pääsuunnittelun skenaario, johon liittyy tuoterakenteen version hajotus."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="explosion-of-a-bom-version"></a>Hajottaminen tuoterakenneversion
+# <a name="explosion-of-a-bom-version"></a>Tuoterakenneversion hajottaminen
 
-Tässä artikkelissa kuvataan skenaario, joka liittyy hajotus tuoterakenteen ja tuoterakenteen version pääsuunnittelun.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa kuvataan pääsuunnittelun skenaario, johon liittyy tuoterakenteen version hajotus.
 
 Tuoterakenneversion kysynnän hajotus luo kysynnän kullekin tuoterakennerivin nimikkeelle määritetyssä toimipaikassa ja mahdollisesti tietyssä varastossa. Toimipaikkakohtaisen tuoterakenteen kullekin tuoterakenneriville voidaan määrittää tietty varasto. Lisäksi kunkin tuoterakennerivin nimikkeen dimensioasetukset määrittävät, onko varasto tarpeen. Kunkin tuoterakennerivin nimikkeen tuloksena syntyvä kysyntä muodostaa jatkossa aloituspisteen lisäkysynnän hajotukselle. Tämä pääsuunnitteluskenaario sisältää seuraavat ehdot:
 
@@ -41,8 +44,10 @@ Seuraava kuva ilmaisee, miten pääsuunnittelun kysynnän hajotus etenee. ![Kysy
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Pääsuunnittelu - miten määräytyy Tuoterakenteen versio](master-plan-bom-version-determined.md)
+[Pääsuunnittelu – tuoterakenneversion määrittäminen](master-plan-bom-version-determined.md)
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Pääsuunnittelu ja multisite-toiminnot](master-plan-multisite-functionality.md)
+
+
 
 

@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="job-scheduling"></a>Töiden ajoitus
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja töiden ajoituksessa, joka on tarkempi kuin työvaiheiden ajoitus. Töiden ajoitusta voi käyttää on valmistusympäristön hallintaan sekä yksittäisten töiden (tai työtilauksien) ajoittamiseen.
 
 Töiden ajoitusta voi käyttää on valmistusympäristön hallintaan sekä yksittäisten töiden (tai työtilauksien) ajoittamiseen. Se erittelee kunkin työvaiheen yksittäisiksi tehtäviksi tai töiksi. Nämä työt määritetään sitten ne suorittaville operatiivisille resursseille. Sen avulla on myös mahdollista synkronoida kaikki valitussa työssä viitatut työt. Voit määrittää työlle aloitus- ja päättymispäivän sekä -ajan ja suorittaa sitten ajoituksen. Määrittämäsi aika voi olla aloitus- vai päättymisaika, valitusta ajoitussuunnasta riippuen. Tämä toiminto on hyödyllinen esimerkiksi silloin, kun työ voidaan suorittaa ainoastaan yhdellä koneella kerrallaan, tai jos haluat optimoida ajettavan työn jokaiselle resurssille.
@@ -39,7 +42,7 @@ Töiden ajoitusprosessi sisältää seuraavat tehtävät:
 -   Työvaiheiden jakaminen töiksi.
 -   Ajoita työt liittyvälle työvaiheelle määritettyjen resurssien päivämäärien ja kellonaikojen mukaan.
 -   Laske kunkin työn aloitus- ja päättymisaika. Voit varmistaa, että ajoitukset eivät ole päällekkäisiä käyttämällä rajallista kapasiteettia.
--   Määrittää, mitä resursseja resurssiryhmän suorittaa työn. Tämä tehtävä edellyttää, että resurssiryhmään voi määrittää toiminnon. Töiden ajoitus valitsee resurssit tai resurssiryhmät lyhimmän läpimenoajan perusteella ja ottaa lisäksi huomioon myös resurssien edeltävät varaukset.
+-   Määritä, mille resurssiryhmän resursseille työ ajetaan. Tämä tehtävä edellyttää, että työvaiheelle on määritetty resurssiryhmä. Töiden ajoitus valitsee resurssit tai resurssiryhmät lyhimmän läpimenoajan perusteella ja ottaa lisäksi huomioon myös resurssien edeltävät varaukset.
 -   Hajota työvaiheet töiksi, kun suoritat töiden ajoituksen. Työt ajoitetaan päivien ja kellonajan perusteella tuotantoreititykseen määritetyn järjestyksen mukaisesti. Työvaiheen asetuksissa määritetään työt, jotka jaetaan ajoitusprosessin aikana. Työvaiheelle liitetty reititysryhmä ohjaa töiden luontia. Työn luonti edellyttää, että työlle on määritetty kesto. Esimerkiksi kuljetusaikatyö luodaan, jos valitulle työvaiheelle on määritetty kuljetusaika.
 
 ## <a name="scheduling-direction"></a>Ajoituksen suunta
@@ -73,5 +76,7 @@ Resurssit kohdistetaan töihin ajoitusprosessin välityksellä. Voit määrittä
 
 ## <a name="resource-efficiency"></a>Resurssin tehokkuus
 Töiden ajoitus ottaa resursseille määritetyt tehokkuusprosentit huomioon. Tehokkuusprosentit vähentävät tai lisäävät resurssille varattua aikaa. Sen seurauksena siis myös läpimenoaika lisääntyy tai vähenee. Laskutoimituksessa käytetään seuraavaa kaavaa: Ajoitusaika = Aika x 100 ÷ Tehokkuusprosentti Tässä kaavassa *Aika* sisältää sekä asetus- että ajoajan.
+
+
 
 

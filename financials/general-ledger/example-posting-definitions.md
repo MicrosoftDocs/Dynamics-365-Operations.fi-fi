@@ -1,6 +1,6 @@
 ---
 title: "Kirjausmääritykset"
-description: "Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten kirjausmääritykset käytetään osto järjestyksessä varaukset ja talousarviomäärärahat."
+description: "Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten kirjausmäärityksiä käytetään ostotilausten varauksiin ja budjettivarauksiin."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="posting-definition-examples"></a>Määritelmä kirjausesimerkkejä
+# <a name="posting-definition-examples"></a>Kirjausmääritysten esimerkkejä
 
-Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten kirjausmääritykset käytetään osto järjestyksessä varaukset ja talousarviomäärärahat.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten kirjausmäärityksiä käytetään ostotilausten varauksiin ja budjettivarauksiin.
 
 Tutustu kirjausmäärityksiin ja tapahtuman kirjausmäärityksiin ennen tämän aiheen lukemista. Tietoja on aiheessa [Kirjausmääritykset](posting-definitions.md). Seuraavat esimerkit voidaan määrittää **Kirjausmääritykset**-sivulla. Kussakin esimerkissä on nämä skenaariot:
 
@@ -39,7 +42,7 @@ Tutustu kirjausmäärityksiin ja tapahtuman kirjausmäärityksiin ennen tämän 
 
 Kun kirjausmäärityksen **Vastaavuusehdot**-ruudun tilien ja dimensioarvojen sekä tapahtuman tilien ja dimensioarvojen välillä on vastaavuus, kirjanpitomerkinnät luodaan kirjausmäärityksen **Luodut kirjaukset** -ruudun perusteella. 
 > [!NOTE]
-> Voit liittää tietyn tapahtumatyypin kirjausmääritys, **Tapahtuman kirjausmääritykset** sivulla. Kun liität kirjausmääritys tapahtumatyyppi ja valitse **kirjausmäärityksiä** - **kirjanpitoparametrien** -sivulta valitun tapahtumatyypin kaikkien tapahtumien on käytettävä kirjausmääritykset.
+> Liitä kirjausmääritykset tapahtumatyyppeihin **Tapahtuman kirjausmääritykset** -sivulla. Kun kirjausmääritys on liitetty tapahtumatyyppiin ja **Kirjanpitoparametrit**-sivulla on valittu **Käytä kirjausmäärityksiä** -vaihtoehto, kaikki valitun tapahtumatyypin tapahtumien on käytettävä kirjausmäärityksiä.
 
 ## <a name="example-purchase-order-encumbrances"></a>Esimerkki: Ostotilauksen varaukset
 Kun otat varauksen käsittelyyn käyttöön valitsemalla **Ota varausprosessi käyttöön** -vaihtoehdon **Kirjanpitoparametrit**-sivulta, varaukset on kirjattava kirjanpitoon kirjausmääritysten avulla kaikilla tileillä, joilla varaus on tehtävä. Useimmissa tapauksissa taseessa varataan kaikki kulutilit. 
@@ -69,7 +72,7 @@ Tilit ja dimensioarvot tulevat joko ostotilausriville syötetyistä kirjanpidoll
 
 | Tili + dimensiot           | Veloitus  | Hyvitys | Kommentti |
 |--------------------------------|--------|--------|---------|
-| 606400-OU\_1-OU\_3566-koulutus | 250,00 |        |         |
+| 606400-OU\_1-OU\_3566-Koulutus | 250,00 |        |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Kirjausmäärityksestä luodut kirjanpitomerkinnät
 
@@ -77,10 +80,10 @@ Varausten kirjaamiseksi luodaan kirjanpitomerkinnät.
 
 | Tili + dimensiot           | Veloitus  | Hyvitys | Kommentti |
 |--------------------------------|--------|--------|---------|
-| 300143-OU\_1-OU\_3566-koulutus | 250,00 |        |         |
-| 300144-OU\_1-OU\_3566-koulutus |        | 250,00 |         |
+| 300143-OU\_1-OU\_3566-Koulutus | 250,00 |        |         |
+| 300144-OU\_1-OU\_3566-Koulutus |        | 250,00 |         |
 
-Tässä esimerkissä kaikki Tilirakenne – Tuloslaskelma -skenaarioon kuuluvat tilit vastaavat kirjausmäärityksen ehtoja. Näin ollen, kun 606500-OU\_1-OU\_arvioidaan 3566-koulutus, luodut tapahtumat luodaan tilit, jotka on määritetty **luodut tapahtumat** kirjausmäärityksen-ruutu.
+Tässä esimerkissä kaikki Tilirakenne – Tuloslaskelma -skenaarioon kuuluvat tilit vastaavat kirjausmäärityksen ehtoja. Siten kun 606500-OU\_1-OU\_3566-Koulutus arvioidaan, kirjaukset luodaan kirjausmäärityksen **Luodut kirjaukset** -ruudussa määritellyille tileille.
 
 ## <a name="example-budget-appropriations"></a>Esimerkki: Budjettivaraukset
 Kun otat budjettivarauksen käyttöön valitsemalla **Kirjanpitoparametrit**-sivulta **Ota käyttöön budjettivaraus** -vaihtoehdon, budjettitapahtumat on kirjattava kirjanpitoon käyttämällä kirjausmäärityksiä. Jos budjetin hallinnan konfiguraatio on aktiivinen ja otettu käyttöön, kirjausmäärityksillä ja tapahtumakirjauksen määrityksillä voidaan tukea varausten, tarkistusten, siirtojen, projektien, käyttöomaisuuden ja tarjonta- sekä kysyntäennusteiden tapahtumien kirjaamista kirjanpitoon. 
@@ -110,7 +113,7 @@ Voit lisätä budjettitiliviennin tilit, dimensioarvot ja summat **Budjettitapah
 
 | Tili + dimensiot           | Veloitus | Hyvitys | Kommentti |
 |--------------------------------|-------|--------|---------|
-| 606400-OU\_1-OU\_3566-koulutus |       | 250,00 |         |
+| 606400-OU\_1-OU\_3566-Koulutus |       | 250,00 |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Kirjausmäärityksestä luodut kirjanpitomerkinnät
 
@@ -118,10 +121,12 @@ Kirjanpitotapahtumat luodaan, jotta alkuperäinen budjetti voidaan kirjata kuhun
 
 | Tili + dimensiot           | Veloitus  | Hyvitys | Kommentti |
 |--------------------------------|--------|--------|---------|
-| 300145-OU\_1-OU\_3566-koulutus |        | 250,00 |         |
-| 300146-OU\_1-OU\_3566-koulutus | 250,00 |        |         |
+| 300145-OU\_1-OU\_3566-Koulutus |        | 250,00 |         |
+| 300146-OU\_1-OU\_3566-Koulutus | 250,00 |        |         |
 
-Tässä esimerkissä kaikki Tilirakenne – Tuloslaskelma -skenaarioon kuuluvat tilit vastaavat kirjausmäärityksen ehtoja. Näin ollen, kun 606400-OU\_1-OU\_arvioidaan 3566-koulutus, luodut tapahtumat on luotu.
+Tässä esimerkissä kaikki Tilirakenne – Tuloslaskelma -skenaarioon kuuluvat tilit vastaavat kirjausmäärityksen ehtoja. Niinpä kun 606400-OU\_1-OU\_3566-Koulutus arvioidaan, kirjanpitotapahtumat luodaan.
+
+
 
 
 

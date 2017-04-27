@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchasing-policies"></a>Ostokäytännöt
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja ostokäytännöistä. Ostokäytäntö on kokoelma sääntöjä, jolla hallitaan ostoehdotusprosessia. Ostokäytännöt auttavat ostotapahtumien hallinnoijia toteuttamaan hankintastrategiaa luomalla käytäntörakenteen, joka on linjassa organisaation strategisten ostotarpeiden kanssa.
 
 Ostokäytäntö koostuu joukosta käytäntösääntöjä. Kun määrität käytäntösäännön, sinun on ensin valittava sääntötyyppi. Voit sitten luoda sääntötyypille säännön määrittämällä sen asetukset, alkamis- ja päättymispäivämäärän.  
@@ -41,13 +44,13 @@ Riippuen siitä, miten ostokäytäntösi on määritetty, organisaation käyttä
 
 ### <a name="example-1-simple-purchasing-policy-configuration"></a>Esimerkki 1: Yksinkertaisen ostokäytännön määrittäminen
 
-Organisaatioille, jotka ovat pieniä ja vähemmän monimutkainen määrittää mukaan yrityksen ostokäytännöt ja yhtiöiden organisaatiohierarkian avulla.  
+Pienemmät, vähemmän monimutkaiset organisaatiot voivat määrittää ostokäytännöt oikeushenkilöittäin ja käyttää ainoastaan Yritykset-organisaatiohierarkiaa.  
 
 Fabrikam on pieni yritys, jonka ostovaatimukset eivät juuri vaihtele organisaation sisällä. Ostosäännöt vaihtelevat vain organisaation oikeushenkilöiden välillä. Esimerkiksi Fabrikamin Kanadan ja Yhdysvaltojen työntekijät ostavat tavarat ja palvelut eri luetteloista ja eri toimittajilta. Fabrikam määrittää siis ostokäytäntönsä oikeushenkilötasolla.  
 
-Fabrikam luo kaksi ostokäytäntöä. A käytäntö koskee sen Yhdysvaltain oikeushenkilön 1111. B käytäntö koskee sen Kanadan oikeushenkilön 2222. 1111 oikeushenkilön työntekijä Luo ostoehdotuksen, kun käytännön säännöt ovat peräisin käytännön A. Esimerkiksi tuoteluetteloa, jossa työntekijä näkee määritetään luettelon Käytäntösäännön käytännön A.  
+Fabrikam luo kaksi ostokäytäntöä. Käytäntö A koskee sen Yhdysvaltain yritystä 1111. Käytäntö B koskee sen Kanadan yritystä 2222. Kun yrityksen 1111 työntekijä ostoehdotuksen, käytäntösäännöt johdetaan käytännöstä A. Esimerkiksi tuoteluettelo, jonka työntekijä näkee määritetään käytännön A luettelon käytäntösäännössä.  
 
-2222 oikeushenkilön työntekijä Luo ostoehdotuksen, kun käytännön säännöt ovat peräisin käytännön B.  
+Kun yrityksen 2222 työntekijä luo ostoehdotuksen, käytäntösäännöt perustuvat käytäntöön B.  
 
 **Huomautus:** Jos yrityksen 1111 työntekijä ostaa nimikkeen yrityksen 2222 työntekijän puolesta, käytetään yritykselle 2222 määritettyjä käytäntösääntöjä (toisin sanoen käytännön B sääntöjä).
 
@@ -117,7 +120,7 @@ Täydennyksen hallintasääntö on valinnainen sääntö, joka määrittää ken
 
 ### <a name="purchase-order-creation-and-demand-consolidation-rule"></a>Ostotilauksen luonnin ja kysynnän konsolidoinnin sääntö
 
-Osto tilauksen luonnin ja kysynnän konsolidoinnin sääntö määrittää käytännön säännöt, joita käytetään, kun hyväksytystä ostoehdotuksesta on luotu ostotilaus. Tämänkaltaisia sääntöjä luodessa voit määrittää asetuksia useilla välilehdillä:
+Ostotilauksen luonnin ja kysynnän konsolidoinnin sääntö määrittää käytäntösäännöt, joita käytetään, kun ostotilaus luodaan hyväksytystä ostoehdotuksesta. Tämänkaltaisia sääntöjä luodessa voit määrittää asetuksia useilla välilehdillä:
 
 -   **Ostotilauksen jako** -välilehdessä voit määrittää ehdot ostoehdotusrivien jakamiselle erillisiin ostotilauksiin.
 -   **Hinnan/alennuksen siirto** -välilehdessä voit määrittää, milloin hintasopimus lasketaan uudelleen ostotilausta luotaessa:
@@ -126,7 +129,7 @@ Osto tilauksen luonnin ja kysynnän konsolidoinnin sääntö määrittää käyt
 
     Voit myös sallia, että pyynnön lähettäjä saa muuttaa yksittäisten ostoehdotusrivien hinnan ja alennuksen siirtotapaa määritetystä hinnan tai alennuksen siirtosäännöstä riippumatta. Valitse **Salli manuaalinen ohitus ostoehdotuksen rivin osalta**-asetus, ottaaksesi tämän ominaisuuden käyttöön.
 -   **Nimikkeen kuvauksen siirto** -välilehdellä voit siirtää nimikkeen kuvauksen ehdotuksesta silloin, kun ehdotuksen lähde on tarjouspyyntö.
--   **Hintatoleranssi**-välilehdellä voit määrittää hintatoleranssin säännöt, joiden avulla hyväksytyt ostoehdotukset reititetään takaisin tarkastusprosessiin, kun tuotteiden hankintaluettelon nimikkeen hinta kasvaa. Aseta enimmäissumma, jonka ostoehdotuksen rivinimikkeen nettosumma voi kasvaa ostoehdotuksen hyväksynnän ja ostotilauksen luonnin välillä. Nettomäärä lasketaan käyttäen seuraavaa kaavaa: (\[määrä × (Yksikköhinta – alennus) / hintayksikkö\] + oston muut kulut) × (100 – alennusprosentin) ÷ 100 ostoehdotusrivit, jotka voit määrittää hintatoleranssin ylittävät, pidetään manuaalista käsittelyä varten. Säännöt, jotka voit määrittää **Virheiden käsittely** -välilehdellä määrittävät kuinka ostoehdotusrivit käsitellään.
+-   **Hintatoleranssi**-välilehdellä voit määrittää hintatoleranssin säännöt, joiden avulla hyväksytyt ostoehdotukset reititetään takaisin tarkastusprosessiin, kun tuotteiden hankintaluettelon nimikkeen hinta kasvaa. Aseta enimmäissumma, jonka ostoehdotuksen rivinimikkeen nettosumma voi kasvaa ostoehdotuksen hyväksynnän ja ostotilauksen luonnin välillä. Nettosumma lasketaan seuraavalla kaavalla: (\[Määrä × (Yksikköhinta - Alennus) ÷ Hintayksikkö\] + Muut ostokulut) × (100 - Alennusprosentti) ÷ 100 Ostoehdotusrivit, jotka ylittävät asettamasi hintatoleranssin asetetaan pitoon ja siirretään manuaaliseen käsittelyyn. Säännöt, jotka voit määrittää **Virheiden käsittely** -välilehdellä määrittävät kuinka ostoehdotusrivit käsitellään.
 -   **Virheiden käsittely** -välilehdellä voit määrittää ostoehdotukseen sovellettavan käsittelysäännön, jos sen vahvistaminen epäonnistuu ostotilauksen luonnin yhteydessä toimittajan virheen tai hintatoleranssivirheen vuoksi. Valitse jompikumpi seuraavista vaihtoehdoista:
     -   **Ei toimintoa** – Ostoehdotusrivit jätetään **Vapauta hyväksytyt ostoehdotukset** -sivulle. Ostoehdotusrivien tilana säilyy **Hyväksytty**. Virheet on kuitenkin korjattava ennen ostotilauksen luomista ostoehdotusriveille.
     -   **Peruuta ostoehdotusrivi** – Ostoehdotusrivit peruutetaan. Pyynnön lähettäjä voi luoda peruutetuille riveille uuden ostoehdotuksen, jos hän haluaa edelleen pyytää rivinimikkeitä.
@@ -141,6 +144,8 @@ Osto tilauksen luonnin ja kysynnän konsolidoinnin sääntö määrittää käyt
     -   **Älä salli tarpeiden yhdistämistä** – Mitään hyväksyttyjä ostoehdotusrivien tarpeita ei yhdistetä. Tämä asetus on oletusarvon mukaan valittuna ja koskee vain niitä ostoehdotusrivejä, jotka edellyttävät manuaalista ostotilauksen luontia.
     -   **Salli aina tarpeiden yhdistäminen** – Kaikki hyväksyttyjen ostoehdotusrivien tarpeet voidaan yhdistää. **Huomautus:** Jos valitset **Salli aina tarpeiden yhdistäminen** -asetuksen **Kysynnän konsolidointi** -välilehdeltä, mutta valitset **Luo ostotilaukset automaattisesti** -asetuksen **Manuaalinen ostotilausten luonti** -välilehdellä, järjestelmä asettaa kaikki ostoehdotukset manuaaliseen käsittelyyn.
     -   **Salli tarpeiden yhdistäminen näiden ehtojen täyttyessä** – Määritä ehdot, joiden perusteella hyväksyttyjen ostoehdotusrivien tarpeet voidaan yhdistää. Voit määrittää kullekin ostoehdotusrivin tyypille ehdot hankintaluokan ja toimittajan mukaan. Jos valitset **Salli tarpeiden yhdistäminen näiden ehtojen täyttyessä**, voit määrittää kullekin ostoehdotusrivin tyypille ehdon hankintaluokan ja toimittajan mukaan. Kun valitset hankintaluokan, myös kaikki tämän hankintaluokan alaluokat valitaan. Jos valitset **Kaikki**-vaihtoehdon tietylle rivityypille, kaikki tämän rivityypin ostoehdotusrivit ovat oikeutettuja kysynnän konsolidointiin.
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Tasapainoinen yksikköjen kirjanpidon kirjauskansiot"
+title: "Tasapainotetut kirjauskansiot yksiköiden väliselle kirjanpidolle"
 description: "Tässä artikkelissa esitellään, kuinka kirjauskansio täsmäytetään automaattisesti, kun täsmäyttävä taloushallinnon dimensio on valittu Kirjanpito-sivulla."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>Tasapainoinen yksikköjen kirjanpidon kirjauskansiot
+# <a name="balanced-journals-for-interunit-accounting"></a>Tasapainotetut kirjauskansiot yksiköiden väliselle kirjanpidolle
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa esitellään, kuinka kirjauskansio täsmäytetään automaattisesti, kun täsmäyttävä taloushallinnon dimensio on valittu Kirjanpito-sivulla. 
 
@@ -47,8 +50,10 @@ Tällöin seuraavat kirjanpitomerkinnät luodaan automaattisesti, jotta kirjausk
 
 |                                   |           |
 |-----------------------------------|-----------|
-| (Yksikköjen veloitus) – MSP – OU\_256 | 100,00 DR |
-| (Yksikköjen kredit) – NY – OU\_249 | 100,00 CR |
+| (Yksiköiden välinen – debet) – MSP – OU\_256 | 100,00 DR |
+| (Yksiköiden välinen – kredit) – NY – OU\_249 | 100,00 CR |
+
+
 
 
 

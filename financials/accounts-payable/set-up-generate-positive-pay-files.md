@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Positive pay -tiedostojen määrittäminen ja luominen
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan Positive pay -toiminnon määrittämistä ja Positive pay -tiedostojen luomista. 
 
 Määritä positiivinen maksu sähköisen luettelon luomiseksi pankille toimitettavista sekeistä. Kun sekki esitetään pankille, pankki vertaa sitä aiemmin lähetettyyn sekkiluetteloon. Jos sekki on sama kuin luettelossa, pankki selvittää sekin. Jos sekki ei vastaa luettelon sekkiä, pankki säilyttää sekin tarkistusta varten.
 
 ## <a name="security-for-positive-pay-files"></a>Positive pay -tiedostojen suojaus
-Positiiviset maksutiedostot voivat sisältää luottamuksellisia tietoja maksun saajista ja sekkisummista. Varmista tämän vuoksi, että käytät riittäviä suojaustoimenpiteitä tiedostojen luontihetkestä pankin vastaanottoon asti. Positive pay -tiedostot ladataan selaimen määrittämään paikkaan. Positiivinen maksu tiedostot saattavat sisältää luottamuksellisia tietoja, on tärkeää, että vain valtuutetut henkilöt pääsevät voit luoda ja tarkastella näitä tietoja Microsoft Dynamics-365 operaatioille. Käytä tarvittavien oikeuksien määrittämisessä apuna seuraavaa taulukkoa.
+Positiiviset maksutiedostot voivat sisältää luottamuksellisia tietoja maksun saajista ja sekkisummista. Varmista tämän vuoksi, että käytät riittäviä suojaustoimenpiteitä tiedostojen luontihetkestä pankin vastaanottoon asti. Positive pay -tiedostot ladataan selaimen määrittämään paikkaan. Positive pay -tiedostot saattavat sisältää henkilökohtaisia tietoja, joten on tärkeää, että vain valtuutetut käyttäjät voivat luoda ja tarkastella tietoja Microsoft Dynamics 365 for Operationsissa. Käytä tarvittavien oikeuksien määrittämisessä apuna seuraavaa taulukkoa.
 
 <table>
 <colgroup>
@@ -156,5 +159,7 @@ Kun positive pay -tiedostossa listatut sekit on maksettu, saat pankiltasi vahvis
 
 ## <a name="recall-a-positive-pay-file"></a>Peruuta Positive pay -tiedosto
 Jos haluat muuttaa Positive pay -tiedosto, voit kutsua sen takaisin. Valitse **Positive pay -tiedoston yhteenveto** -sivulla Positive pay -tiedosto, jonka tila on **Luotu**, ja valitse sitten **Peruuta**-toiminto. Jokaisen Positive pay -tiedostossa olevan sekin kenttä ilmaisee, onko Positive pay -tiedostoon sisältyvä sekki peruutettu. Tämän jälkeen voit luoda uuden Positive pay -tiedoston, joka sisältää peruutetun sekin.
+
+
 
 

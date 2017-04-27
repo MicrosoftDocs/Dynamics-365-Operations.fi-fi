@@ -1,5 +1,5 @@
 ---
-title: Tuotannonohjauksessa tuotannossa oletusasetukset
+title: Tuotantotilausten oletusarvot tuotannonohjauksessa
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="production-order-defaults-in-manufacturing-execution"></a>Tuotannonohjauksessa tuotannossa oletusasetukset
+# <a name="production-order-defaults-in-manufacturing-execution"></a>Tuotantotilausten oletusarvot tuotannonohjauksessa
+
+[!include[banner](../includes/banner.md)]
 
 
 
-Täytyy miettiä tarkkaan kaikki asetukset **oletusarvo on tuotannon** sivulla ennen työntekijöiden merkinnät tuotantotöistä. Jos yrityksesi käyttää multisite-toimintoa, haluat ehkä määrittää eri oletusarvoja tuotantotilausten jokaiselle sivustolle. Tilausten oletusasetukset tuotannonhallinnan integrointiin asetetaan seuraavilla **Tuotantotilausten oletusarvot** -sivun välilehdillä:
+
+Mieti huolella, mitä **Tuotantotilausten oletusarvot** -sivun asetuksia haluat käyttää ennen kuin työntekijät voivat aloittaa tuotantotöiden rekisteröinnin. Jos yrityksesi käyttää multisite-toimintoja, voi olla mielekästä asettaa jokaiselle sijainnille yksilölliset tuotantotilausten oletusarvot. Tilausten oletusasetukset tuotannonhallinnan integrointiin asetetaan seuraavilla **Tuotantotilausten oletusarvot** -sivun välilehdillä:
 
 -   **Yleinen** – Yleiset tilauksen oletusarvot tuotantotöille tuotannonohjauksessa.
 -   **Aloitus** – Tilauksen oletusarvot, kun tuotantotöitä tai työvaiheita aloitetaan.
@@ -68,6 +71,8 @@ Tuotantotilauksen Ilmoita valmiiksi -prosessissa materiaalikulutusta ohjaa **Ilm
 -   **Materiaaliottosääntö** – Kun tuotantotilaus ilmoitetaan valmiiksi, materiaaleja kulutetaan tuoterakenteen riveille määritetyn materiaaliottosäännön mukaisesti. Ainoastaan materiaalirivejä, joiden materiaaliottosäännöksi on määritetty **Valmis** kulutetaan.
 -   **Aina** – Materiaaleja, joiden määrät ovat verrannolliset työn valmiiksi ilmoitettuun määrään käytetään aina.
 -   **Ei koskaan** – Materiaalia ei käytetä missään tapauksessa.
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Työnkulun järjestelmän yleiskatsaus"
-description: "Tässä artikkelissa kuvataan Microsoft Dynamics-365 työvaiheiden työnkulun-järjestelmässä."
+title: "Työnkulkujärjestelmän yleiskatsaus"
+description: "Tässä artikkelissa käsitellään Microsoft Dynamics 365 for Operations -ohjelman työnkulkujärjestelmää."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,9 +24,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="workflow-system-overview"></a>Työnkulun järjestelmän yleiskatsaus
+# <a name="workflow-system-overview"></a>Työnkulkujärjestelmän yleiskatsaus
 
-Tässä artikkelissa kuvataan Microsoft Dynamics-365 työvaiheiden työnkulun-järjestelmässä.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 for Operations -ohjelman työnkulkujärjestelmää.
 
 <a name="what-is-workflow"></a>Mikä on työnkulku?
 -----------------
@@ -34,7 +37,7 @@ Tässä artikkelissa kuvataan Microsoft Dynamics-365 työvaiheiden työnkulun-j�
 Termi *työnkulku* voidaan määrittää kahdella tavalla: järjestelmänä tai liiketoimintaprosessina.
 ### <a name="workflow-is-a-system"></a>Työnkulku järjestelmänä
 
-Työnkulku on järjestelmä, joka suoritetaan Application Object Server (AOS)- ja Dynamics 365 operaatioille, jotka asennetaan. Työnkulkujärjestelmän toimintojen avulla voit luoda yksittäisiä työnkulkuja eli liiketoimintaprosesseja.
+Työnkulku on järjestelmä, joka asennetaan Dynamics 365 for Operationsin mukana ja jota suoritetaan Application Object Server (AOS) -palvelimessa. Työnkulkujärjestelmän toimintojen avulla voit luoda yksittäisiä työnkulkuja eli liiketoimintaprosesseja.
 
 ### <a name="workflow-is-a-business-process"></a>Työnkulku liiketoimintaprosessina
 
@@ -46,6 +49,7 @@ Työnkulkujärjestelmän käyttö hyödyttää organisaatiotasi monin eri tavoin
 -   **Yhdenmukaiset prosessit** — Voit määrittää, miten tietyt asiakirjat, kuten ostoehdotukset ja kuluraportit käsitellään. Työnkulkujärjestelmän käyttö auttaa varmistamaan, että asiakirjat käsitellään ja hyväksytään johdonmukaisesti ja tehokkaasti.
 -   **Prosessin näkyvyys** – Voit seurata työnkulun esiintymien tilaa, historiaa ja suorituskykyarvoja. Tämä auttaa määrittämään, tarvitaanko työnkulkuun muutoksia tehokkuuden parantamiseksi.
 -   **Keskitetty työluettelo** – Käyttäjät voivat tarkastella keskitettyä työluetteloa, joka sisältää työnkulun tehtävät ja niille annetut hyväksynnät.
+
 
 
 

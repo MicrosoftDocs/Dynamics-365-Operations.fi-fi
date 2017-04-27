@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="replenishment"></a>Täydennys
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa käsitellään täydennysstrategioita, joita voi käyttää varastonhallinnan toimintoja käyttävissä varastoissa.
 
 Tässä artikkelissa käsitellään täydennysstrategioita, joita voi käyttää varastonhallinnan toimintoja käyttävissä varastoissa. Tiedot eivät koske Inventoinnin- ja varastonhallinnassa käytettävissä olevaa varastoratkaisua. Käytettävissä on kolmen täydennysstrategiaa:
@@ -67,6 +70,8 @@ Kuorman kysynnän täydennys summaa useiden kuormien kysynnän ja luo täydennys
 | Sijaintiprofiilit       | Sijaintiprofiilit tarvitaan sijaintien luontiin.                                                                                                                                                                                       |
 | Sijaintidirektiivit     | Sijaintidirektiivejä tarvitaan ohjaamaan työ sijainteihin, joissa täydennystä tarvitaan, ja sijainteihin, jotka ovat varaston lähteenä.                                                                                     |
 | Työmallit          | **Täydennys** tyyppisiä työmalleja tarvitaan luomaan täydennystyö, jolla varasto voidaan siirtää haluttuun sijaintiin.                                                                                           |
+
+
 
 
 

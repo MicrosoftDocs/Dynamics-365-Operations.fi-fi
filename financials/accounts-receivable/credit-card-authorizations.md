@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-card-setup-authorization-and-capture"></a>Luottokorttien määritys, varmennus ja sieppaaminen
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on yhteenveto luottokortin varmennuksesta Microsoft Dynamics AX:ssä. Artikkeli sisältää tietoja maksupalvelun määrittämisestä, luottokortin lisäämisestä myyntitilaukseen ja varmennuksen mitätöinnistä.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Luottokorttien maksupalvelun määrittäminen
@@ -55,7 +58,7 @@ Voit vaatia kortin tarkistusarvon käyttöä, jota kutsutaan toisinaan myös tur
 
 ### <a name="address-verification"></a>Osoitteen tarkistus
 
-Osoitteen varmennustiedot lähetetään aina maksupalvelulle. Voit päättää, kuinka paljon tietoja tarvitaan, jotta tapahtuma voidaan hyväksyä. Muista tiedot voit määrittää, hyväksyykö se nämä tiedot palveluntarjoajalta. Nämä ovat osoitetietojen varmennuksen vaihtoehdot:
+Osoitteen varmennustiedot lähetetään aina maksupalvelulle. Voit päättää, kuinka paljon tietoja tarvitaan tapahtuman hyväksymiseksi. Muista varmistaa palveluntarjoajaltasi, voiko se hyväksyä näitä tietoja. Nämä ovat osoitetietojen varmennuksen vaihtoehdot:
 -   **Hyväksy tapahtuma aina** – Hyväksy tapahtuma riippumatta osoitteen tarkistustuloksista.
 -   **Tilin omistaja** – Vertaa kortinhaltijan nimeä tapahtumasta luottokorttiyhtiön tietoihin.
 -   **Laskutusosoite** – Vertaa kortinhaltijan nimeä ja laskutusosoitetta tapahtumasta luottokorttiyhtiön tietoihin.
@@ -68,10 +71,12 @@ Voit määrittää kullekin tukemallesi luottokorttityypille tuetun tiedon tason
 -   **Taso 3** – Siirrä kaikki tason 2 tiedot sekä tilausrivin tiedot.
 
 ## <a name="partial-payments"></a>Osamaksut
-Jos toimitat tilauksen osana, osittainen järjestys määrä on siepattu ja luvassa oli koskien kuinka koko tilaus, joka on suljettu. Jäljellä oleva summa, joka ei ole vielä toimitettu tilaus lähetetään sitten uuden luvan.
+Jos toimitat vain osan tilauksesta, osatilauksen määrä siepataan ja koko tilauksen määrälle tarkoitettu varmennus suljetaan. Toimittamattomalle tilausmäärälle luodaan sitten uusi varmennus.
 
 ## <a name="voiding-an-authorization"></a>Varmennuksen mitätöinti 
 Luottokortin varmennuksen voit mitätöidä vaihtamalla maksutavan sellaiseksi, jolla ei ole Luottokortti-tyyppiä.
+
+
 
 
 

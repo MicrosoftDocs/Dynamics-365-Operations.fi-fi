@@ -1,6 +1,6 @@
 ---
-title: Tietoja hakujen avulla.
-description: "Microsoft Dynamics-365 operaatioille monta kentissä on hakuja, jotka auttavat sinua löytämään oikean tai haluttu arvo. Useita parannuksia on lisätty hakuja, tehdä näitä ohjausobjekteja voi käyttää enemmän ja tehdä käyttäjien tuottavuutta. Tässä ohjeaiheessa tutustutaan ominaisuuksista haku ja tulee joitakin hyödyllisiä vinkkejä, kuinka optimaalisesti hakujen ulkopuolella järjestelmän."
+title: Tiedon etsiminen hakujen avulla
+description: "Monessa Microsoft Dynamics 365 for Operations -kentässä on hakuja, jotka auttavat sinua löytämään oikean tai halutun arvo. Hakuihin on lisätty useita parannuksia, jotka helpottavat näiden ohjausobjektien käyttöä ja parantavat käyttäjien tuottavuutta. Tässä ohjeaiheessa tutustutaan uusiin hakuominaisuuksiin ja annetaan joitain vinkkejä, joiden avulla käytät järjestelmän hakuja optimaalisesti."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,59 +24,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-lookups-to-find-information"></a>Tietoja hakujen avulla.
+# <a name="use-lookups-to-find-information"></a>Tiedon etsiminen hakujen avulla
 
-Microsoft Dynamics-365 operaatioille monta kentissä on hakuja, jotka auttavat sinua löytämään oikean tai haluttu arvo. Useita parannuksia on lisätty hakuja, tehdä näitä ohjausobjekteja voi käyttää enemmän ja tehdä käyttäjien tuottavuutta. Tässä ohjeaiheessa tutustutaan ominaisuuksista haku ja tulee joitakin hyödyllisiä vinkkejä, kuinka optimaalisesti hakujen ulkopuolella järjestelmän.  
+[!include[banner](../includes/banner.md)]
 
-<a name="responsive-lookups"></a>Vastaa haut
+
+Monessa Microsoft Dynamics 365 for Operations -kentässä on hakuja, jotka auttavat sinua löytämään oikean tai halutun arvo. Hakuihin on lisätty useita parannuksia, jotka helpottavat näiden ohjausobjektien käyttöä ja parantavat käyttäjien tuottavuutta. Tässä ohjeaiheessa tutustutaan uusiin hakuominaisuuksiin ja annetaan joitain vinkkejä, joiden avulla käytät järjestelmän hakuja optimaalisesti.  
+
+<a name="responsive-lookups"></a>Reagoivat haut
 ------------------
 
-Dynamics 365 toimintoja, kun haku ohjausobjektin käsitellyt aiemmissa versioissa käyttäjä on toteutettava nimenomaisen toiminnon avattavasta valikosta Avaa. Tämä on saattanut kirjoittamalla tähden (\*) napsauttamalla avattavan painikkeen ohjausobjektin Suodatinhaku-ohjausobjektin nykyisen arvon perusteella, tai käyttämällä **Alt**+**alaspäin osoittavaa nuolta** pikanäppäin. Komponenttien valinta on muutettu tehokkaimman nykyisen web-käytäntöjä seuraavilla tavoilla:
+Aiemmissa Dynamics 365 for Operations -versioissa haku-ohjausobjektin käyttäminen edellytti käyttäjiltä valikon avaamista erikseen. Tämä saattoi olla toteutettu kirjoittamalla ohjausobjektiin tähti (\*), jolla hakua suodatettiin ohjausobjektin nykyisen arvon mukaisesti, napsauttamalla valikon painiketta, tai käyttämällä **Alt**+**Alanuoli** -pikanäppäintä. Hakuobjekteja on muutettu seuraavilla tavoilla, jotta ne vastaisivat nykyisiä verkkosivukäytäntöjä:
 
--   Haku-pudotusvalikoista nyt Avaa automaattisesti jälkeen hieman keskeyttää kirjoittamisen, avattavasta-valikosta sisältö suodatetaan haku-ohjausobjektin arvo.
-    -   Huomaa, että vanha ongelma automaattinen avattavan valikon avaamisen jälkeen kirjoittamalla tähden (\*) on vähentynyt.
--   Kun haku-pudotusvalikosta on avattu, tapahtuu seuraavaa:
-    -   Kohdistin jää valintaohjausobjekti (sen sijaan, että ne avattavasta valikosta siirtämällä kohdistin) niin voit tehdä muutoksia ohjausobjektin arvo. Kuitenkin, käyttäjä voi silti käyttää **ylös** ja **nuoli alas** muuttaa rivien avattavasta valikosta ja Syötä nykyisen rivin Valitse avattavasta valikosta.
-    -   Kun muutokset on tehty haku-ohjausobjektin arvo muuttaa avattavan valikon sisällön.
+-   Haku-pudotusvalikot aukeavat nyt automaattisesti hetken kuluttua, kun kirjoittaminen on päättynyt, ja valikon sisältö suodatetaan hakuobjektin arvon mukaisesti.
+    -   Huomaa, että vanha tapa avata hakuvalikko automaattisesti tähden (\*) kirjoittamisen jälkeen on poistunut.
+-   Kun hakuvalikko on avattu, tapahtuu seuraavaa:
+    -   Kohdistin jää hakuobjektiin (sen sijaan, että se siirtyisi valikkoon), jotta voit jatkaa hakusanan kirjoittamista. Käyttäjä voi kuitenkin käyttää **Ylä**- ja **Alanuoli** -näppäimiä vaihtaakseen valikon riviä ja Enter-painiketta valitakseen valikossa valitun rivin.
+    -   Valikon sisältö mukautuu hakuobjektin muutosten mukaisesti.
 
-Otetaan esimerkiksi kutsua hakukentän **Kaupunki**. 
+Otetaan esimerkiksi hakukenttä **Kaupunki**. 
 
-Kun kohdistus on **Kaupunki** kenttä, voit aloittaa etsiä kaupungin, jonka haluat kirjoittamalla muutaman kirjaimen, kuten "col".  Kun lopetat kirjoittamisen, haku avautuu automaattisesti, suodatetaan ne kaupungit, jotka alkavat "col". 
+Kun kohdistus on **Kaupunki**-kentässä, voit aloittaa haluamasi kaupungin etsinnän kirjoittamalla muutaman kirjaimen, kuten "col".  Kun lopetat kirjoittamisen, haku avautuu automaattisesti ja se suodatetaan näyttämään kaupungit, jotka alkavat kirjaimilla "col". 
 
 [![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png) 
 
-Tässä vaiheessa kohdistin on edelleen hakukentän. Jos jatkat kirjoittamista, joten arvo on "sarakkeita", haku sisällön muuttuvat automaattisesti vastaamaan uusinta-ohjausobjektin arvon. 
+Tässä vaiheessa kohdistin on edelleen hakukentässä. Jos jatkat kirjoittamista, niin, että arvo on "colum", haun sisältö mukautuu automaattisesti vastaamaan hakuobjektin uusinta arvoa. 
 
 ![updateFilterLookupExample](./media/updatefilterlookupexample.png) 
 
-Vaikka yhä haku ohjausobjektissa on kohdistus, voit käyttää myös **ylös** tai **nuoli alas** näppäimet Korosta rivi, jonka haluat valita. Jos painat **Enter** korostettu rivi merkitään valituksi hausta ja ohjausobjektin arvo päivitetään. 
+Vaikka kohdistus on yhä hakuobjektissa, voit käyttää lisäksi **Ylä-** ja **Alanuoli**-näppäimiä korostaaksesi rivin, jonka haluat valita. Painamalla **Enter**-näppäintä korostettu rivi valitaan hausta ja ohjausobjektin arvo päivittyy. 
 
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
-## <a name="typing-in-more-than-ids"></a>Kirjoittanut yli tunnukset
-Kun kirjoitat tietoja, on luonnollista yrittää kohde, kuten asiakkaan tai toimittajan osalta nimen sijasta kohteen tunnus tunnistaa käyttäjät. Nykyisessä versiossa Dynamics 365 toimintoja, monet (mutta ei kaikkien) hakuja nyt Tilannekohtaisten tietojen syöttö on sallittu. Tämä tehokas ominaisuus käyttäjä kirjoittaa haun ohjausobjektin tunnus tai vastaava nimi. 
+## <a name="typing-in-more-than-ids"></a>Muiden kuin tunnisteiden kirjoittaminen
+Kun kirjoitat tietoja, on luonnollista yrittää tunnistaa yksikkö, kuten asiakas tai toimittaja, nimen perusteella yksikköä edustavan tunnisteen perusteella. Nykyisessä Dynamics 365 for Operations -versiossa moni (ei kuitenkaan kaikki) haku sallii nyt kontekstitietojen kirjoittamisen. Tämä ominaisuus sallii käyttäjän kirjoittaa tunnisteen tai sitä vastaavan nimen hakuobjektiin. 
 
-Oletetaan, **asiakastili** kenttä, kun luot myyntitilauksen. Tässä kentässä näkyy **Tilitunnus**, asiakas, mutta käyttäjä yleensä mieluummin Anna **tilin nimi** sijaan **tilin tunnus** tähän kenttään, kun luot myyntitilauksen, kuten "Toimialuepuuryhmän Wholesales" sijasta "US-003."
+Esimerkkinä voimme käyttää **Asiakkaan tili** -kenttää, kun luot myyntitilausta. Tässä kentässä näytetään asiakkaan **Tilitunnus**, mutta käyttäjä kirjoittaa yleensä mieluummin tähän kenttään **tilin nimen** **tilitunnuksen** sijaan luodessaan myyntitilauksia, kuten "Forest Wholesales" "US-003":n sijaan.
 
-Jos käyttäjä syöttää **Account ID** haku ohjausobjektiin avattavasta valikosta automaattisesti Avaa edellisessä osassa kuvatulla tavalla ja käyttäjä näkee haun seuraavassa kuvatulla tavalla.
+Jos käyttäjä syöttää **tilitunnuksen** hakuobjektiin, valikko aukeaa automaattisesti edellisessä osassa kuvatun mukaisesti, ja käyttäjä näkee alla olevan kuvan mukaisen haun.
 
-[![Kun syötetään asiakkaan Tilitunnus tilannekohtaiset haku](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![Kontekstihaku, kun asiakkaan tilitunnus on syötetty](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
-Käyttäjä voi kuitenkin myös nyt syöttää alku **nimi** myös. Jos tämä havaitaan, käyttäjä näkee seuraavat haku. Ilmoitus siitä, kuinka **nimi** saraketta siirretään Lookup on ensimmäinen sarake ja miten haku on lajiteltu ja suodatettu perusteella **nimi** sarakkeeseen.
+Käyttäjät voivat nyt myös aloittaa **tilin nimen** kirjoittamisen. Jos tämä havaitaan, käyttäjä näkee seuraavanlaisen haun. Huomaa, kuinka **Nimi**-sarake siirretään haun ensimmäiseen sarakkeeseen ja kuinka haku järjestetään ja suodatetaan **Nimi**-sarakkeen perusteella.
 
-[![Kun syötetään asiakkaan nimi tilannekohtaiset haku](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![Kontekstihaku, kun asiakkaan tilin nimi on syötetty](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
-## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Ruudukon sarakkeiden otsikoita käyttämällä kehittyneempiä suodattaminen ja lajitteleminen
-Haku parannusten aiheena kahdessa edellisessä osiossa huomattavasti parantaa käyttäjän mahdollisuutta siirtyä rivien perusteella "alkaa merkillä"-haku haku **ID** tai **nimi** haku-kenttään. Kuitenkin tilanteita, joissa kehittyneempiä suodatus (lajittelu) tarvitaan tai löytääkseen oikean rivin. Näissä tilanteissa käyttäjän on käytettävä suodatuksen ja lajittelun asetukset hakua sisällä ruudukon sarakkeiden otsikoita. Otetaan esimerkiksi työntekijän myyntitilausrivin joka tarvitsee etsiä oikea "kaapeli" kuin tuote. Kirjoittamalla "kaapeli" **Tavaraerän numero** komponentti, ei ole hyötyä, koska ei ole tuotenimiä, jotka alkavat "kaapeli". 
+## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Ruudukon sarakeotsikoiden käyttäminen edistyneempään suodattamiseen ja lajitteluun
+Edellisissä osiossa käsitellyt haun parannukset helpottavat käyttäjän mahdollisuuksia siirtyä haun rivien välillä "alkaa"-tyyppisen **tunnus**- tai **nimi**-kenttähaun perusteella. On kuitenkin tilanteita, joissa oikean rivin löytäminen vaatii edistyneempiä suodattimia tai lajittelua. Näissä tilanteissa käyttäjän on käytettävä haun sisäisiä ruudukon sarakeotsikoiden suodatus- ja lajitteluasetuksia. Otetaan esimerkiksi työntekijä, joka on syöttämässä myyntitilausriviä, johon on haettava oikea "kaapeli" tuotteeksi. Kirjoittamalla "kaapeli" **Nimiketunnus**-objektiin ei auta, sillä järjestelmässä ei ole "kaapeli"-alkuisia tuotenimiä. 
 
 ![emptyitemlookup](./media/emptyitemlookup.png) 
 
-Sen sijaan käyttäjä tarvitsee Tyhjennä haku-ohjausobjektin arvon ja hakukentän avattavan valikon avaaminen suodattaa pudotusvalikosta käytetään ruudukon sarakkeen otsikon, kuten kuvassa. Hiiri (tai touch) käyttäjä voi yksinkertaisesti valitsemalla (tai kosketa) suodattaminen ja lajitteleminen sarakkeen asetukset käyttämään mitä tahansa sarakeotsikkoa. Näppäimistö käyttäjän, käyttäjän yksinkertaisesti täytyy painaa **Alt**+**alas****nuolta** siirtää kohdistuksen avattavasta valikosta, minkä jälkeen käyttäjä voi oikea sarake-välilehti ja paina sitten toisen kerran **Ctrl**+**G** voit avata ruudukon sarakkeen otsikon avattavasta valikosta. 
+Sen sijaan käyttäjän on tyhjennettävä hakuobjektin arvo ja avattava haun valikko, jota hänen on suodatettava ruudukon sarakeotsikon avulla, alla olevan kuvan mukaisesti. Hiiren (tai kosketusnäytön) käyttäjä voi yksinkertaisesti napsauttaa (tai koskettaa) mitä tahansa sarakkeen otsikkoa avatakseen kyseisen sarakkeen suodatus- ja lajitteluvaihtoehdot. Näppäimistön käyttäjän on yksinkertaisesti painettava **Alt**+**Ala****nuoli**-näppäintä toisen kerran, joka siirtää kohdistuksen avattavaan valikkoon, jonka jälkeen käyttäjä siirtyä oikeaan sarakkeeseen sarkaimella ja painaa sitten **Ctrl**+**G** -pikanäppäintä avatakseen ruudukon sarakeotsikon valikon. 
 
 [![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png) 
 
-Kun suodatin on otettu käyttöön (Katso alla olevaa kuvaa), käyttäjä voi etsiä ja valitse rivin tavalliseen tapaan. 
+Kun suodatin on otettu käyttöön (ks. alla oleva kuva), käyttäjä voi paikantaa rivin tavalliseen tapaan. 
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
 
 

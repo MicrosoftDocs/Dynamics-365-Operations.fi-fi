@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-sales-list-reporting"></a>EU-myyntiluettelon raportointi
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja Euroopan unionin (EU) arvonlisäveron yhteenvetoilmoituksesta.
 
 <a name="eu-sales-list-reporting"></a>EU:n arvonlisäveron yhteenvetoilmoitus
@@ -64,11 +67,11 @@ Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen 
 <tbody>
 <tr class="odd">
 <td><strong>Määritä:</strong> Oikeushenkilö</td>
-<td>Yrityksen ensisijainen osoitteen on oltava EU-jäsenvaltiossa. - <strong>Oikeushenkilöt</strong> sivu (Valitse <strong>organisaation hallinta</strong>&gt;<strong>organisaatiot</strong>&gt;<strong>oikeussubjektien</strong>), valitse juridisen henkilön. Pikavälilehdellä <strong>Osoitteet,</strong>luo osoite, valitse maa/alue ja muut osoitteen komponentit, ja merkitse osoite merkinnällä <strong>Ensisijainen</strong>. Määritä pikavälilehden <strong>Verorekisteröinti</strong> kentässä <strong>Verorekisterinumero</strong> yrityksesi verorekisterinumero.</td>
+<td>Yrityksen ensisijainen osoitteen on oltava EU-jäsenvaltiossa. Sivulla <strong>Oikeushenkilöt</strong> (valitse <strong>Organisaation hallinto</strong> &gt; <strong>Organisaatiot</strong> &gt; <strong>Oikeushenkilö</strong>), valitse oikeushenkilö. Pikavälilehdellä <strong>Osoitteet,</strong>luo osoite, valitse maa/alue ja muut osoitteen komponentit, ja merkitse osoite merkinnällä <strong>Ensisijainen</strong>. Määritä pikavälilehden <strong>Verorekisteröinti</strong> kentässä <strong>Verorekisterinumero</strong> yrityksesi verorekisterinumero.</td>
 </tr>
 <tr class="even">
 <td><strong>Asetus:</strong> Verovapautuksen tunnisteen parametrit</td>
-<td>Y-tunnistetietoparametrit määrittää <strong>maan/alueen parametrit</strong> sivu (Valitse <strong>vero</strong>&gt;<strong>asennus</strong>&gt;<strong>arvonlisäveron</strong>&gt;<strong>maan/alueen parametrit</strong>). Luo sivulla tietue kullekin maalle/alueelle, missä sinulla on vastapuolia ja määritä seuraavat tiedot:
+<td>Määritä verovapautuksen tunnistenumeron parametrit <strong>Maan/alueen parametrit</strong> -sivulla (valitse <strong>Vero</strong> &gt; <strong>Asetukset</strong> &gt; <strong>Arvonlisävero</strong> &gt; <strong>Maan/alueen parametrit</strong>). Luo sivulla tietue kullekin maalle/alueelle, missä sinulla on vastapuolia ja määritä seuraavat tiedot:
 <ul>
 <li><strong>Maa/alue</strong> – Valitse maa/alue, johon verovapautuksen tunnistenumero liitetään.</li>
 <li><strong>Arvonlisävero</strong> – Syötä valitun maan/alueen verovapautuksen tunnistenumero (ts. verovapautuksen tunnistenumeron etuliite).</li>
@@ -77,7 +80,7 @@ Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen 
 </tr>
 <tr class="odd">
 <td><strong>Asetus: </strong>Verovapausnumerot</td>
-<td>Luoda ALV-tunnukset, että vastapuolet <strong>Verovapausnumerot</strong> sivu (Valitse <strong>vero</strong>&gt;<strong>asennus</strong>&gt;<strong>arvonlisäveron</strong>&gt;<strong>Verovapausnumerot</strong>). Luo sivulle kutakin verovapausnumeroa kohti tietue ja määritä seuraavat tiedot:
+<td>Luo verovapausnumerot vastapuolillesi <strong>Verovapausnumerot</strong> -sivulla (valitse <strong>Vero</strong> &gt; <strong>Asetukset</strong> &gt; <strong>Arvonlisävero</strong> &gt; <strong>Verovapausnumerot</strong>). Luo sivulle kutakin verovapausnumeroa kohti tietue ja määritä seuraavat tiedot:
 <ul>
 <li><strong>Maa/alue </strong>– Valitse vastapuolesi verorekisteröintimaa/alue.</li>
 <li><strong>Verovapausnumero</strong> – Syöt vastapuolesi verovapausnumero.</li>
@@ -86,11 +89,11 @@ Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen 
 </tr>
 <tr class="even">
 <td><strong>Asetus: </strong>Vastapuolen verorekisteröinti</td>
-<td>Rekisteröinti verotietoja että vastapuolten joko määrittää <strong>kaikille asiakkaille</strong> sivun (valitsemalla <strong>myynnin ja markkinoinnin</strong>&gt;<strong>asiakkaiden</strong>&gt;<strong>kaikille asiakkaille</strong>asiakastietue ja valitse sitten <strong>asetukset</strong>&gt;<strong>näkymän muuttaminen</strong>&gt;<strong>tiedot-näkymässä</strong>) tai <strong>toimittajien</strong> sivun (Valitse <strong>hankinta</strong>&gt;<strong>toimittajien</strong>&gt;<strong>toimittajien</strong>toimittajatietue ja valitse sitten <strong>asetukset</strong>&gt;<strong>näkymän muuttaminen</strong>&gt;<strong>tiedot-näkymässä</strong>). Valitse verovapausnumero pikavälilehden <strong>Lasku ja toimitus</strong> kentässä <strong>Verovapausnumero</strong>.</td>
+<td>Määritä vastapuoltesi verorekisteröintitiedot joko <strong>Kaikki asiakkaat</strong> -sivulla (valitse <strong>Myynti ja markkinointi</strong> &gt; <strong>Asiakkaat</strong> &gt; <strong>Kaikki asiakkaat</strong>, valitse asiakkaan tietue ja napsauta sitten <strong>Asetukset</strong> &gt; <strong>Vaihda näyttö</strong> &gt; <strong>Tietonäkymä</strong>), tai valitse tietue <strong>Toimittajat</strong> -sivulla (valitse <strong>Hankinta</strong> &gt; <strong>Toimittajat</strong> &gt; <strong>Toimittajat</strong>, valitse toimittajan tietue ja napsauta sitten <strong>Asetukset</strong> &gt; <strong>Vaihda näyttö</strong> &gt; <strong>Tietonäkymä</strong>). Valitse verovapausnumero pikavälilehden <strong>Lasku ja toimitus</strong> kentässä <strong>Verovapausnumero</strong>.</td>
 </tr>
 <tr class="odd">
 <td><strong>Asetus: </strong>Arvonlisävero</td>
-<td>Verokoodit määrittää sisällytettävät <strong>EU-myyntiluettelo</strong> kertomuksen <strong>arvonlisäverokoodit</strong> sivu (Valitse <strong>vero</strong>&gt;<strong>välilliset verot</strong>&gt;<strong>arvonlisäveron</strong>&gt;<strong>arvonlisäverokoodit</strong>). Tyhjennä pikavälilehdellä <strong>Raportin asetukset</strong> jokaisen raporttiin sisällytettävän arvonlisäverokoodin kohdalla <strong>Poissuljettu </strong>-valintaruutu. Kohteita arvonlisäveron parametrit määritetään <strong>nimikkeen arvonlisäveroryhmät</strong> sivu (Valitse <strong>vero</strong>&gt;<strong>välillisten verojen</strong>&gt;<strong>arvonlisäveron</strong>&gt;<strong>nimikkeen arvonlisäveroryhmät</strong>). Valitse kullekin nimikkeen arvonlisäveroryhmälle arvo <strong>Raportointityyppi</strong>-kentässä. Valitsemasi arvo määrittää ESL-summan sarakkeen, johon rivin summa sisällytetään.
+<td>Määritä verokoodit, jotka sisällytetään <strong>EU:n arvonlisäveron</strong> yhteenvetoilmoitukseen sivulla <strong>Arvonlisäverokoodit</strong> (valitse <strong>Vero</strong> &gt; <strong>Epäsuorat verot</strong> &gt; <strong>Arvonlisävero</strong> &gt; <strong>Arvonlisäverokoodit</strong>). Tyhjennä pikavälilehdellä <strong>Raportin asetukset</strong> jokaisen raporttiin sisällytettävän arvonlisäverokoodin kohdalla <strong>Poissuljettu </strong>-valintaruutu. Määritä arvonlisäverokoodit kohteille <strong>Nimikkeiden arvonlisäveroryhmät</strong> -sivulla (valitse <strong>Vero</strong> &gt; <strong>Epäsuorat verot</strong> &gt; <strong>Arvonlisävero</strong> &gt; <strong>Nimikkeiden arvonlisäveroryhmät</strong>). Valitse kullekin nimikkeen arvonlisäveroryhmälle arvo <strong>Raportointityyppi</strong>-kentässä. Valitsemasi arvo määrittää ESL-summan sarakkeen, johon rivin summa sisällytetään.
 <ul>
 <li><strong>Tyhjä</strong> – Rivisumma on sisällytetty <strong>Ei määritetty arvo</strong>-sarakkeeseen.</li>
 <li><strong>Nimike</strong> – Rivisumma on sisällytetty <strong>Nimikkeen arvo</strong> -sarakkeeseen.</li>
@@ -104,7 +107,7 @@ Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen 
 </tr>
 <tr class="odd">
 <td><strong>Asetus: </strong>Yleiset parametrit</td>
-<td>ESL raportointi parametrien määrittäminen <strong>Ulkomaankaupan parametrit</strong> sivu (Valitse <strong>vero</strong>&gt;<strong>asennus</strong>&gt;<strong>ulkomaankaupan</strong>&gt;<strong>Ulkomaankaupan parametrit</strong>). Määritä seuraavat parametrit:
+<td>Määritä ESL-raportoinnin parametrit <strong>Ulkomaankaupan parametrit</strong> -sivulla (valitse <strong>Vero</strong> &gt; <strong>Asetukset</strong> &gt; <strong>Ulkomaankauppa</strong> &gt; <strong>Ulkomaankaupan parametrit</strong>). Määritä seuraavat parametrit:
 <ul>
 <li><strong>EU-myyntiluettelo</strong>-välilehti:
 <ul>
@@ -147,7 +150,7 @@ Seuraavanlaisia tapahtumatyyppejä voidaan pitää EU:n sisäisinä myyntitapaht
 -   Projektin laskut
 -   Toimittajan laskut
 
-Tapahtumaa pidetään EU:n sisäisenä myyntitapahtumana, jos tapahtuman toimitusosoite on EU:n jäsenmaassa. Tällaisille maille/alueille tulee olla tietue **Ulkomaankaupan parametrit** -sivun **Maa/alue** -välilehdellä, ja **Maa/alue** -arvo tulee asettaa arvoksi **EU**. EU:n sisäiset myyntitapahtumat merkitään **Luettelokoodi**-kenttään. Tämän kentän avulla voit myös erotella yleiset EU:n sisäiset myyntitapahtumat kolmikantakauppatapahtumista. Voit kerätä tietoja yhteisön sisäisen kaupan tapahtumista **EU-myyntiluettelo** sivun (Valitse **vero**&gt;**ilmoitukset**&gt;**Ulkomaankauppa**&gt;**EU-myyntiluettelo**) avulla **siirtää** funktio. Tämän toiminnon avulla voit sisällyttää tapahtumat, joilla on eri raportointityypin summia (kuten nimikkeitä tai palveluita) tapahtumariveillä määritellyn nimikkeen alv-ryhmän perusteella. Voit myös käyttää muita suodattimia määritelläksesi, mitkä tapahtumat tulee sisällyttää. **Siirrä**-toiminto luo tietueen **EU-myyntiluettelo**-sivulle kutakin sisällytettyä EU:n sisäistä myyntitapahtumaa kohti, ja määrittää vastapuolen tilinumeron, maan/alueen, verovapausnumeron, laskun numeron ja päivämäärän, sekä rivien raportointityyppikohtaisen kokonaismäärän. Se myös kopioi **Luettelokoodi**-arvon tapahtumasta. Voit muuttaa tapahtuman luettelokoodin manuaalisesti **EU-myyntiluettelo**-sivulla. **Siirrä**-toiminto luo tietueita, joissa **Raportoinnin tila** -arvo on asetettu arvoksi **Sisällytetty**. Voit vahvistaa **EU-myyntiluettelo **-sivulle kerätyt tiedot käyttämällä **Vahvista**-toimintoa.
+Tapahtumaa pidetään EU:n sisäisenä myyntitapahtumana, jos tapahtuman toimitusosoite on EU:n jäsenmaassa. Tällaisille maille/alueille tulee olla tietue **Ulkomaankaupan parametrit** -sivun **Maa/alue** -välilehdellä, ja **Maa/alue** -arvo tulee asettaa arvoksi **EU**. EU:n sisäiset myyntitapahtumat merkitään **Luettelokoodi**-kenttään. Tämän kentän avulla voit myös erotella yleiset EU:n sisäiset myyntitapahtumat kolmikantakauppatapahtumista. Voit kerätä tietoja EU:n sisäisistä myyntitapahtumista **EU-myyntiluettelo**-sivulta (valitse **Vero** &gt; **Ilmoitukset** &gt; **Ulkomaankauppa** &gt; **EU-myyntiluettelo**) käyttämällä **Siirrä**-toimintoa. Tämän toiminnon avulla voit sisällyttää tapahtumat, joilla on eri raportointityypin summia (kuten nimikkeitä tai palveluita) tapahtumariveillä määritellyn nimikkeen alv-ryhmän perusteella. Voit myös käyttää muita suodattimia määritelläksesi, mitkä tapahtumat tulee sisällyttää. **Siirrä**-toiminto luo tietueen **EU-myyntiluettelo**-sivulle kutakin sisällytettyä EU:n sisäistä myyntitapahtumaa kohti, ja määrittää vastapuolen tilinumeron, maan/alueen, verovapausnumeron, laskun numeron ja päivämäärän, sekä rivien raportointityyppikohtaisen kokonaismäärän. Se myös kopioi **Luettelokoodi**-arvon tapahtumasta. Voit muuttaa tapahtuman luettelokoodin manuaalisesti **EU-myyntiluettelo**-sivulla. **Siirrä**-toiminto luo tietueita, joissa **Raportoinnin tila** -arvo on asetettu arvoksi **Sisällytetty**. Voit vahvistaa **EU-myyntiluettelo **-sivulle kerätyt tiedot käyttämällä **Vahvista**-toimintoa.
 
 ### <a name="generating-the-eu-sales-list-report"></a>EU:n arvonlisäveron yhteenvetoilmoituksen luominen
 
@@ -156,5 +159,7 @@ Voit luoda **EU:n arvonlisäveron yhteenvetoilmoituksen** käyttämällä **Rapo
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>EU:n arvonlisäveron yhteenvetoilmoituskauden sulkeminen
 
 Saatettuasi tietyn kauden raportointiprosessin päätökseen (esimerkiksi, kun veroviranomaiset ovat hyväksyneet **EU:n arvonlisäveron yhteenvetoilmoituksen**), voit merkitä raporttiin sisältyneet kauden ESL-tietueet asettamalla **Raportoinnin tila** -arvoksi **Suljettu**. Aseta tämä tila käyttämällä **Merkitse suljetuksi **-toimintoa **EU-myyntiluettelo**-sivulla. Jos palautat kauden sulkemisen, voit merkitä ESL-tietueet asettamalla **Raportoinnin tilan** arvoksi **Sisällytetty**. Nämä tietueet voidaan sitten sisällyttää uudelleen **EU:n arvonlisäveron yhteenvetoilmoituksella**. Aseta tämä tila käyttämällä **Merkitse** **sisällytetyksi **-toimintoa **EU-myyntiluettelo**-sivulla.
+
+
 
 

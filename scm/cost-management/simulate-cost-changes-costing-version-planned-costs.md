@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Kustannusmuutosten simuloiminen suunniteltujen kustannusten kustannuslaskelmaversiota käyttäen
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, miten valmistettavan nimikkeen laskettujen kustannusten muuttuvien kustannusten vaikutuksen voi simuloida käyttämällä erillistä suunniteltujen kustannusten kustannuslaskelmaversiota.
 
 Valmistettavan nimikkeen laskettujen kustannusten muuttuvien kustannusten vaikutuksen voi simuloida käyttämällä erillistä suunniteltujen kustannusten kustannuslaskelmaversiota. Tämän erillisen kustannuslaskelmaversion avulla voit lisätä kustannusten lisämuutoksia ilmentävät odottavat kustannustietueet ja laskea kustannusmuutosten vaikutuksen valmistettavien tuotteiden kustannuksiin. Koska tuoterakennelaskelmissa käytetään aktiivisten kustannusten varmistusperiaatteita, vain kustannusten lisämuutokset on lisättävä.
@@ -54,5 +57,7 @@ Seuraavissa tilanteissa havainnollistetaan, kuinka kustannusten muutosten vaikut
 -   Simuloi kustannusten muutos epäsuoraan kustannuslaskentakaavaan. Kustannusten muutokset voivat esimerkiksi olla merkki valmistuksen yleiskustannusten odotetusta suurenemisesta tai pienenemisestä. Voit määrittää muutoksen epäsuoraan kustannuslaskentakaavaan lisäämällä odottavan kustannustietueen **Kustannuslaskennan määritys** -sivun avulla simuloidussa kustannuslaskelmaversiossa sekä vahvistamalla ja tallentamalla muutoksen.
 
 Kun olet syöttänyt simuloidut kustannusmuutokset, laske niiden valmistettujen nimikkeiden kustannukset, joihin kustannuksen muutokset vaikuttavat. Käytä **Laskelma**-sivua simuloidussa kustannuslaskelmaversiossa ja määritä valitut valmistetut nimikkeet, joihin kustannusten muutokset vaikuttavat. Tuoterakennelaskelmat koskevat kaikkia valmistettuja nimikkeitä, jos valittuja nimikkeitä ei erikseen valita. Voit käyttää tuoterakennelaskelmaa myös käyttökohteen päivityksissä. Tarkastele nimikkeen kustannustietueita simuloidussa kustannusversiossa, kun haluat analysoida simuloitujen kustannusmuutosten vaikutuksen valittujen, valmistettujen nimikkeiden kustannuksiin. Käytä **Nimikkeen hinta**- ja **Lasken nimikekustannus** -sivua kustannusten tarkastelemiseen ja analysointiin.
+
+
 
 

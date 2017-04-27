@@ -1,6 +1,6 @@
 ---
-title: "Kysynnän Ennustaminen yleiskuvaus"
-description: "Kysynnän ennusteita käytetään ennustamaan riippumatonta kysyntää myyntitilauksista ja sidonnaista kysyntää missä tahansa myyntitilausten erotuskohdassa. Parannettu myyntiennusteen vähentäminen säännöissä ihanteellinen ratkaisu massa mukauttamiseen."
+title: "Kysynnän ennustepalveluiden yleiskatsaus"
+description: "Kysynnän ennusteita käytetään ennustamaan riippumatonta kysyntää myyntitilauksista ja sidonnaista kysyntää missä tahansa myyntitilausten erotuskohdassa. Tarkennetut ennustevähennyssäännöt tarjoavat ihanteellisen ratkaisun joukkomukauttamiseen."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="demand-forecasting-overview"></a>Kysynnän Ennustaminen yleiskuvaus
+# <a name="demand-forecasting-overview"></a>Kysynnän ennustepalveluiden yleiskatsaus
 
-Kysynnän ennusteita käytetään ennustamaan riippumatonta kysyntää myyntitilauksista ja sidonnaista kysyntää missä tahansa myyntitilausten erotuskohdassa. Parannettu myyntiennusteen vähentäminen säännöissä ihanteellinen ratkaisu massa mukauttamiseen.
+[!include[banner](../includes/banner.md)]
 
-Perusennusteen luonnissa historiallisten tapahtumien yhteenveto viedään Microsoft Azuren automaattianalyysipalveluun, jota isännöidään Azuressa. Koska tätä palvelua ei jaeta käyttäjien kesken, sitä voidaan mukauttaa alakohtaisten vaatimusten täyttämiseksi. Dynamics 365 toimintojen avulla voit visualisoida ennuste, ennuste säätää ja tarkastella tietoja ennusteen tarkkuus Suorituskyvyn mittareiden (KPI: T).
+
+Kysynnän ennusteita käytetään ennustamaan riippumatonta kysyntää myyntitilauksista ja sidonnaista kysyntää missä tahansa myyntitilausten erotuskohdassa. Tarkennetut ennustevähennyssäännöt tarjoavat ihanteellisen ratkaisun joukkomukauttamiseen.
+
+Perusennusteen luonnissa historiallisten tapahtumien yhteenveto viedään Microsoft Azuren automaattianalyysipalveluun, jota isännöidään Azuressa. Koska tätä palvelua ei jaeta käyttäjien kesken, sitä voidaan mukauttaa alakohtaisten vaatimusten täyttämiseksi. Voit käyttää Dynamics 365 for Operationsia ennusteen visualisointiin ja muuttamiseen sekä ennusteen tarkkuutta koskevien suorituskykyilmaisimien (KPI:t) tarkastelemiseen.
 
 ## <a name="key-features-of-demand-forecasting"></a>Kysynnän ennusteen tärkeimmät ominaisuudet
 Tässä on muutamia kysynnän ennusteiden pääominaisuuksia:
@@ -45,43 +48,45 @@ Tässä on muutamia kysynnän ennusteiden pääominaisuuksia:
 ## <a name="major-themes-in-demand-forecasting"></a>Kysynnän ennusteen pääteemat
 Kysynnän ennusteissa käytetään kolmea pääteemaa:
 
--   **Modulaarisuus** – Kysynnän ennusteet ovat modulaarisia ja helposti määritettäviä. Voit ottaa toimintoja käyttöön ja poistaa käytöstä muuttamalla konfigurointiavain on **kaupan**&gt;**ennustettu varaston**&gt;**kysynnän ennusteiden**.
--   **Uudelleenkäyttöä Microsoft pinon** – Microsoft käynnisti koneen oppimisen ympäristö-helmikuu 2015. Machine Learning, joka on nyt osa Microsoft Cortana Analytics, voit nopeasti ja helposti luoda tehdä ennakoivia analyysejä kokeista, kysynnän arvioinnin kokeisiin kuten algoritmit R tai Python ohjelmointikielet ja yksinkertaisella vedä ja pudota-käyttöliittymän avulla.
-    -   Voit ladata Dynamics 365 toimia kysynnän ennusteet kokeita, muuttaa ne oman yrityksesi tarpeita vastaavan, julkaista ne Azure WWW-palveluna ja käyttää niitä luoda myyntiennusteita. Kokeet ovat ladattavissa, jos olet hankkinut Dynamics-365 toimintojen tilauksen tuotannon suunnittelija, enterprise-tason käyttäjänä.
-    -   Voit ladata minkä tahansa saatavilla olevan kysynnän ennustekokeilun kohdasta [Cortana Analytics -galleria](https://gallery.cortanaanalytics.com/). Olisi toimia kysynnän ennusteet kokeisiin Dynamics-365 on integroitu automaattisesti työvaiheiden Dynamics 365, asiakkaat ja kumppanit on käsiteltävä ne ladataan, kokeista integrointi [Cortana Analytics valikoima](https://gallery.cortanaanalytics.com/). Siksi kokeilua [Cortana Analytics valikoima](https://gallery.cortanaanalytics.com/) eivät ole aivan yhtä helppo käyttää Dynamics 365 toimia kysynnän ennusteet kokeisiin. Kokeet koodia on muokattava siten, että ne käyttävät Dynamics 365 toimintojen sovellusohjelmointiliittymää (API).
+-   **Modulaarisuus** – Kysynnän ennusteet ovat modulaarisia ja helposti määritettäviä. Voit ottaa toiminnon käyttöön ja poistaa sen käytöstä muuttamalla konfigurointiavain kohdassa **Kauppa** &gt; **Varastoennuste** &gt; **Kysynnän ennuste**.
+-   **Microsoft-pinon uudelleenkäyttö** – Microsoft toi markkinoille automaattianalyysialustan helmikuussa 2015. Automaattianalyysipalvelu, joka on nyt osa Cortana Analytics Suite -ohjelmistoa, tarjoaa mahdollisuuden luoda nopeasti ja helposti ennustavia analyysikokeiluja kuten kysynnän arviokokeiluja, käyttämällä algoritmeja R tai Python-ohjelmointikieltä ja yksinkertaista vedä-ja-pudota käyttöliittymää.
+    -   Voit ladata Dynamics 365 for Operationsin kysynnän ennusteen kokeilut, muuttaa niitä niin, että ne vastaavat liiketoimintasi tarpeita, julkaista ne verkkopalvelussa Azuressa ja käyttää niitä kysynnän ennusteiden luomiseen. Kokeilut ovat ladattavissasi, jos olet ostanut tuotannon suunnittelijan Dynamics 365 for Operations -tilauksen yritystason käyttäjänä.
+    -   Voit ladata minkä tahansa saatavilla olevan kysynnän ennustekokeilun kohdasta [Cortana Analytics -galleria](https://gallery.cortanaanalytics.com/). Dynamics 365 for Operationsin kysynnän ennusteen kokeilut integroidaan automaattisesti Dynamics 365 for Operationsiin, mutta asiakkaiden ja kumppanien on käsiteltävä niiden kokeilujen integraatiot, jotka he lataavat [Cortana Analytics -galleriasta](https://gallery.cortanaanalytics.com/). Näin ollen [Cortana Analytics -gallerian](https://gallery.cortanaanalytics.com/) kokeilujen käyttö ei ole yhtä suoraviivaista kuin Dynamics 365 for Operationsin kysynnän ennusteen kokeilujen käyttö. Sinun on muokattava kokeilujen koodia niin, että ne käyttävät Dynamics 365 for Operationsin ohjelmointirajapintaa (API:tä).
     -   Voit luoda omat kokeilusi Microsoft Azuren automaattianalyysipalvelussa, julkaista ne Azuren palveluissa ja käyttää niitä kysynnän ennusteiden luomiseen.
     -   Jos et tarvitse korkeaa suorituskykyä tai jos sinun ei tarvitse käsitellä suurta tietojen määrää, voit käyttää automaattianalyysipalveluiden vapaata tasoa. Suosittelemme, että aloitat aina tältä tasolta, etenkin käyttöönotto- ja testausvaiheiden aikana. Jos tarvitset korkeampaa suorituskykyä ja lisätallennustilaa, voit käyttää automaattianalyysipalveluiden standarditasoa. Tämä taso vaatii Azure-tilauksen ja siihen liittyy lisäkustannuksia. Saat lisätietoja automaattianalyysipalveluiden hinnoittelusta kohdassa <http://aka.ms/machine-learning-price-info>.
--   **Ennusteen vähennys irtautus milloin tahansa** – kysynnän ennusteet Dynamicsissa 365 koontiversiot Operations-toiminto, jonka avulla voit ennustaa milloin tahansa irtautus sekä itsenäistä ja erillistä kysyntää.
+-   **Ennusteen vähennys missä tahansa erotuskohdassa** – Kysynnän ennusteet Dynamics 365 for Operationsissa perustuu tälle toiminnolle, jonka avulla voit ennustaa sekä sidonnaista että riippumatonta kysyntää missä tahansa erotuskohdassa.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Kysynnän ennusteen peruskulku
 Seuraavassa kaaviossa on kuvattu kysynnän ennusteen peruskulku. 
 
-[![kysynnän Ennustaminen johdanto-kaavio](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
+[![Kysynnän ennusteen esittelykaavio](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
-Myyntiennusteen sukupolven alkaa-Dynamics 365 operaatioille. Historiallinen tapahtumatietoihin toimia tapahtumapohjaista tietokannan Dynamics-365-kerätään ja täyttää väliaikainen taulukko. Tämä väliaikainen taulukko on myöhemmin tuli Machine Learning-palveluun. Suorittamalla minimal customization voit kytkeä eri tietolähteistä väliaikaiseen taulukkoon. Mitä voi sisältää Microsoft Excel tiedostot, pilkuin erotettujen arvojen (CSV)-tiedostoja ja tietoja Microsoft Dynamics AX 2009: n ja Microsoft Dynamics AX 2012: n. Siksi voit luoda myyntiennusteita, harkitse historiatietoja, joka leviää joukossa useita järjestelmiä. Päätietojen, kuten nimikkeiden nimien ja mittayksiköiden, on kuitenkin oltava samat kaikissa tietolähteissä.
+Kysyntäennusteen sukupolvi alkaa Dynamics 365 for Operationsissa. Dynamics 365 for Operationsin tapahtumatietokannan historialliset tiedot kootaan ja kirjoitetaan valmistelutaulukkoon. Valmistelutaulukko syötetään myöhemmin automaattianalyysipalveluun. Minimaalisilla mukautustoimilla voit kytkeä useita tietolähteitä valmistelutaulukkoon. Tietolähteet voivat sisältää Microsoft Excel-tiedostoja, pilkuin erotettujen arvojen (CSV)-tiedostoja, sekä tietoja Microsoft Dynamics AX 2009- ja Microsoft Dynamics AX 2012 -ohjelmista. Voit näin ollen luoda kysynnän ennusteita, jotka huomioivat useisiin järjestelmiin hajautettuja tietoja. Päätietojen, kuten nimikkeiden nimien ja mittayksiköiden, on kuitenkin oltava samat kaikissa tietolähteissä.
 
-Jos käytät Dynamics 365 toimia kysynnän ennusteet Machine Learning kokeita, hänen on etsittävä Sovita kesken viiden kerran sarja ennustamismenetelmistä perusaikataulun ennusteen laskemiseen. Ennustaminen-menetelmien parametrit hallitaan Dynamics 365 operaatioille. 
+Jos käytät Dynamics 365 for Operationsin automaattianalyysipalvelun kokeiluja, ne etsivät sopivinta viidestä aikasarjan ennustusmenetelmästä perusennusteen laskemiseen. Näiden ennustemenetelmien parametreja hallitaan Dynamics 365 for Operationsissa. 
 
-Ennusteet ja historiallisten tietojen muutokset, jotka tehtiin edellisen iteraatioiden-kysynnän ennusteet voidaan käyttää Dynamics 365 operaatioille. 
+Ennusteet, historialliset tiedot ja kysynnän ennusteisiin aiemmissa iteraatioissa tehdyt muutokset ovat sitten käytettävissä Dynamics 365 for Operationsissa. 
 
-Dynamics 365 toimintojen avulla voit visualisoida ja muokata perusaikataulun ennusteet. Manuaaliset muutokset on valtuutettava ennen kuin ennusteita voidaan käyttää suunnitteluun.
+Voit käyttää Dynamics 365 for Operationsia perusennusteiden visualisointiin ja muokkaukseen. Manuaaliset muutokset on valtuutettava ennen kuin ennusteita voidaan käyttää suunnitteluun.
 
 ## <a name="limitations"></a>Rajoitukset
-Kysynnän ennusteiden Dynamics 365 toiminnoissa on työkalu, joka auttaa asiakkaiden valmistus teollisuudessa luoda Ennustaminen prosesseja. Se tarjoaa ratkaisun ennusteet kysynnän perustoimintoihin ja on suunniteltu niin, että se voi helposti laajentaa. Ennusteiden tekeminen saattaa olla paras sovi kuten vähittäiskaupan, teollisuuden asiakkaiden tukku, varastointi, kuljetus tai muiden ammatillisten palvelujen kysyntä.
+Dynamics 365 for Operationsin kysynnän ennusteet on työkalu, joka auttaa teollisuuden alan asiakkaita luomaan ennusteprosesseja. Se tarjoaa kysynnän ennusteen ratkaisun perustoiminnot ja on suunniteltu helposti laajennettavaksi. Kysynnän ennusteet eivät ehkä sovellu parhaiten vähittäismyynti-, tukkukauppa-, varastointi-, kuljetus- tai muulla palvelualalla oleville asiakkaille.
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Demand forecasting setup](demand-forecasting-setup.md)
+[Kysynnän ennusteiden asetukset](demand-forecasting-setup.md)
 
-[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+[Tilastollisen perusennusteen luonti](generate-statistical-baseline-forecast.md)
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Oikaistun kysynnän ennusteen valtuuttaminen](authorize-adjusted-forecast.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Ennusteen tarkkuuden valvonta](monitor-forecast-accuracy.md)
 
-[Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+[Poista poikkeavat tiedot aiemmista tapahtumatiedoista laskettaessa ennustetarvetta](remove-historical-outliers-calculating-demand-forecast.md)
+
+
 
 

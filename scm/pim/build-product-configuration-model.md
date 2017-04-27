@@ -1,5 +1,5 @@
 ---
-title: Tuotteen konfigurointimallin rakentaa
+title: "Tuotemääritysmallin rakentaminen"
 description: "Tarve määrittää tuotteita vastaamaan erityisvaatimuksiin on muuttumassa säännöksi poikkeuksen sijaan sekä yritys- että kuluttajasuhteissa."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="build-a-product-configuration-model"></a>Tuotteen konfigurointimallin rakentaa
+# <a name="build-a-product-configuration-model"></a>Tuotemääritysmallin rakentaminen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tarve määrittää tuotteita vastaamaan erityisvaatimuksiin on muuttumassa säännöksi poikkeuksen sijaan sekä yritys- että kuluttajasuhteissa.
 
@@ -34,7 +37,7 @@ Määritä-tilaukseen-skenaariota tukevalla valmistajalla on mahdollisuus huoleh
 
 Onnistunut siirtyminen valmistus-varastoon-tilanteesta määritä-tilaukseen-tilanteeseen vaatii huolellista tuoterakenteiden analyysiä, tuoteperheiden tunnistamista ja komponenttien määrittämistä. Prosessissa olevien osien ja tuotteiden lukumäärän vähentämiseksi on erittäin tärkeää, että ymmärrät tuotteiden liittymät ja että suunnittelet uudelleen käytettävissä olevia tuotteita.  
 
-On olemassa useita tuotekonfiguraation mallinnusperiaatteita, kuten sääntöihin perustuva, dimensioihin perustuva, ja poissulkeva mallinnus. Tutkimukset osoittavat, että poissulkeva menetelmä voi vähentää mallien koodirivien lukumäärää noin 50 prosentilla verrattuna muihin mallinnusperiaatteisiin. Tällä menetelmällä voidaan siis pienentää omistuksen kokonaiskustannusta (TCO). Siirtämällä sääntö-mallista, joka perustuu X ++-koodi malliin perustuvan et enää tarvitse kehittäjän käyttöoikeuden säilyttämiseksi tuotemalleja.
+On olemassa useita tuotekonfiguraation mallinnusperiaatteita, kuten sääntöihin perustuva, dimensioihin perustuva, ja poissulkeva mallinnus. Tutkimukset osoittavat, että poissulkeva menetelmä voi vähentää mallien koodirivien lukumäärää noin 50 prosentilla verrattuna muihin mallinnusperiaatteisiin. Tällä menetelmällä voidaan siis pienentää omistuksen kokonaiskustannusta (TCO). Kun siirryt sääntöpohjaisesta, X++-koodiin perustuvasta mallista poissulkevaan malliin, et enää tarvitse suunnittelijan lisenssiä tuotemallien ylläpitoon.
 
 ## <a name="product-configuration"></a>Tuotekonfiguraatio
 Teollistumisprosessi on johtanut merkittäviin saavutuksiin korkealaatuisten ja ominaisuuksiltaan runsaiden tuotteiden valmistamisessa kohtuulliseen hintaan. Mittakaavaedut ovat tehneet useimmille teollistuneissa maissa asuville ihmisille mahdolliseksi ostaa autoja, televisioita, kodinkoneita ja muita tuotteita, joita useimmat meistä pitävät arjessamme välttämättöminä.  
@@ -64,11 +67,11 @@ Poissulkevan tuotemääritysmallin käyttö viittaa siihen, että on olemassa ra
 
 ### <a name="table-constraints"></a>Taulurajoitukset
 
-Taulurajoituksissa voi olla käyttäjän vai järjestelmän määrittämä.  
+Taulukon rajoitukset voivat olla joko käyttäjän tai järjestelmän määrittämiä.  
 
 Käyttäjän määrittämän taulurajoituksen rakentaa käyttäjä. Käyttäjä valitsee määritetyyppien yhdistelmän kuvaamaan taulukon sarakkeita ja syöttää sitten arvot valittujen määritetyyppien toimialueilta muodostamaan taulurajoituksen rivit.  
 
-Mitä Microsoft Dynamics 365 taulukon toiminnot Viitteenä käytettävä valitsemalla ja valitsemalla sitten kentät tämän taulukon sarakkeista rajoitus on määritetty järjestelmän määrittämän taulurajoituksen. Taulurajoituksen rivit ovat taulukon toiminnot Dynamics-365 rivit, jotka ovat läsnä kokoonpano aikaa.  
+Järjestelmän määrittämä taulurajoitus määritetään valitsemalla viitteenä käytettävä Microsoft Dynamics 365 for Operations -taulukko ja valitsemalla sitten tästä taulukiosta kentät, jotka muodostavat rajoituksen sarakkeet. Taulurajoituksen rivit ovat Dynamics 365 for Operations -taulukossa määrityshetkellä olevat rivit.  
 
 Taulurajoitus sisällytetään tuotemääritysmalliin viittaamalla taulurajoituksen määritykseen ja yhdistämällä mallin asiaankuuluvat määritteet taulurajoituksen sarakkeisiin.
 
@@ -103,7 +106,7 @@ Viimeisenä, tarkistus voidaan suorittaa koko tuotemääritysmallille tarkistama
 
 ### <a name="testing"></a>Testaus
 
-Testaus malli on samanlainen kuin todellinen konfigurointi-istunnon käytössä. Käyttäjä voi käydä läpi kokoonpano sivut ja varmista, että mallin rakenne tukee määrityksen. Käyttäjä voi tarkistaa, että määritearvot ovat oikeat ja että määritteiden kuvaukset ohjaavat käyttäjää valitsemaan oikeat arvot. Lopuksi, kun testausistunto on valmistunut, järjestelmä yrittää luoda tuoterakenteen ja reitityksen, joka vastaa valittuja määritysarvoja ja näyttää virhesanoman, jos jostain menee vikaan.
+Mallin testaus on samanlaista kuin todellinen konfigurointi-istunnon suoritus. Käyttäjä voi käydä läpi kokoonpanosivut ja varmistaa, että mallin rakenne tukee määritysprosessia. Käyttäjä voi tarkistaa, että määritearvot ovat oikeat ja että määritteiden kuvaukset ohjaavat käyttäjää valitsemaan oikeat arvot. Lopuksi, kun testausistunto on valmistunut, järjestelmä yrittää luoda tuoterakenteen ja reitityksen, joka vastaa valittuja määritysarvoja ja näyttää virhesanoman, jos jostain menee vikaan.
 
 ### <a name="the-configuration-page"></a>Konfiguraatio-sivu
 
@@ -129,17 +132,17 @@ Jos tuotetta tullaan myymään eri maissa/alueilla, on mahdollista luoda käänn
 Viimeinen ja tärkein vaihe viimeistelyprosessissa on luoda tuotemääritysmallin versio. Tämä versio kuvaa päätuotteen, joka voidaan valita konfiguraatiolle tilaus- tai tarjousrivillä, ja tuotemääritysmallin välillä. Versio on hyväksyttävä ja aktivoitava ennen kuin sitä voidaan käyttää määritysistunnossa.
 
 ## <a name="extending-a-product-configuration-model-through-the-api"></a>Tuotemääritysmallin laajentaminen ohjelmointirajapinnan kautta
-On luotu oma ohjelmointirajapinta (API), jotta kumppanit ja muut, joilla on kehittäjälisenssi, voivat laajentaa tuotemääritysmallin ominaisuuksia. Tärkein tavoite on vahvistaa mekanismia, jonka oletetaan, että kumppanit ja asiakkaat, joiden käytössä aiemmin Product Builderin siirtää koodin, joka on sisällytetty API Product Builder-mallit. Näin he voivat siirtää mallinsa Product Builderistä tuotemääritykseen. Uudet kumppanit ja asiakkaat voivat myös hyötyä ohjelmointirajapinnan käytöstä uusien tuotemääritysmallien laajentamisessa.
+On luotu oma ohjelmointirajapinta (API), jotta kumppanit ja muut, joilla on kehittäjälisenssi, voivat laajentaa tuotemääritysmallin ominaisuuksia. Pääasiallinen tavoite on ollut luoda mekanismi, jolla kumppanit ja asiakkaat, jotka käyttävät nykyistä Product Builderiä, siirtävät Product Builderin malleihin sisältyvän koodin ohjelmointirajapintaan. Näin he voivat siirtää mallinsa Product Builderistä tuotemääritykseen. Uudet kumppanit ja asiakkaat voivat myös hyötyä ohjelmointirajapinnan käytöstä uusien tuotemääritysmallien laajentamisessa.
 
 ### <a name="pcadaptor-class"></a>PCAdaptor-luokka
 
-Ohjelmointirajapinta on toteutettu käyttämällä **PCAdaptor**-luokkien joukkoa, joka näyttää tuotemääritysmallien tietorakenteen. Esiintymä **PCAdaptor** luokka on luotava jokaiselle mallille, laajennetaan. Konfigurointi-istunnon jälkeen järjestelmä etsii tämän luokan esiintymän ja suorittaa sen, jos sitä löydy.  
+Ohjelmointirajapinta on toteutettu käyttämällä **PCAdaptor**-luokkien joukkoa, joka näyttää tuotemääritysmallien tietorakenteen. **PCAdaptor**-luokan esiintymä on luotava jokaiselle laajennettavalle mallille. Konfigurointi-istunnon jälkeen järjestelmä etsii tämän luokan esiintymiä ja suorittaa sen, jos se löytyy.  
 
 Seuraavassa vuokaaviossa kuvataan tätä prosessia.  
 
 [![Vuokaavio](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
-Tuotteen kokoonpano-API-vuokaavio
+Tuotteen kokoonpanon API-vuokaavio
 
 ## <a name="product-configuration"></a>Tuotekonfiguraatio
 Tuotemäärityksiä voidaan suorittaa seuraavissa sijainneissa:
@@ -155,5 +158,7 @@ Konfiguraation tarkoitus on luoda erilinen tuotevariantti, joka vastaa asiakkaan
 ### <a name="multiple-sites-and-intercompany"></a>Useita toimipaikkoja ja yrityksen sisäinen
 
 Jos konfiguraatio tullaan tekemään toimipaikassa tai jopa yrityksessä, joka eroaa toimipaikasta tai yrityksestä, jossa tuotanto tulee tapahtumaan, tuoterakenne ja reititys luodaan toimittajan toimipaikkaa varten toimittavassa yrityksessä ja laitetaan sinne. Tuotevariantti julkaistaan kaikissa toimitusketjuun osallistuvissa yrityksissä.
+
+
 
 

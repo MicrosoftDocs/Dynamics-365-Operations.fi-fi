@@ -1,6 +1,6 @@
 ---
 title: Kirjanpidon ulkomaanvaluutan uudelleenarvostus
-description: "Tässä aiheessa on yleiskatsaus seuraavista kirjanpidon ulkomaanvaluutan uudelleenarvostuksen prosessin - asennuksen prosessi, prosessi ja miten uudelleenarvostus, tapahtumat täytyy palauttaa laskutoimituksen suorittaminen tarvittaessa."
+description: "Tämä aihe sisältää yhteenvedon kirjanpidon ulkomaan valuutan uudelleenarvostusprosessista seuraavasti: asetukset, prosessin suorittaminen, prosessin laskeminen ja uudelleenarvostustapahtumien palauttaminen tarvittaessa."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,14 +27,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Kirjanpidon ulkomaanvaluutan uudelleenarvostus
 
-Tässä aiheessa on yleiskatsaus seuraavista kirjanpidon ulkomaanvaluutan uudelleenarvostuksen prosessin - asennuksen prosessi, prosessi ja miten uudelleenarvostus, tapahtumat täytyy palauttaa laskutoimituksen suorittaminen tarvittaessa. 
+[!include[banner](../includes/banner.md)]
+
+
+Tämä aihe sisältää yhteenvedon kirjanpidon ulkomaan valuutan uudelleenarvostusprosessista seuraavasti: asetukset, prosessin suorittaminen, prosessin laskeminen ja uudelleenarvostustapahtumien palauttaminen tarvittaessa. 
 
 Kirjanpidon käytännöt edellyttävät kauden lopussa tehtävää kirjanpitotilien valuuttamääräisten saldojen uudelleenarvostusta käyttäen eri vaihtokurssityyppejä (nykyinen, historiallinen, keskiarvo jne.). Esimerkiksi yksi kirjanpitomenetelmä edellyttää saamisten ja velkojen uudelleenarvostusta nykyisellä vaihtokurssilla, käyttöomaisuuden uudelleenarvostusta historiallisen vaihtokurssin mukaan sekä tulostilien uudelleenarvostusta kuukauden keskiarvon mukaan. Kirjanpidon ulkomaanvaluutan uudelleenarvostusta voidaan käyttää taseen ja tasetilien uudelleenarvostukseen. 
 
 > [!NOTE]
-> Ulkomaanvaluutan uudelleenarvostus on myös käytettävissä (AR) myyntireskontran ja ostoreskontran (AP). Jos käytät näitä moduuleja, avoimet tapahtumat arvostetaan avulla näiden moduulien ulkomaanvaluutan uudelleenarvostuksen. Ostoreskontran ja myyntireskontran ulkomaanvaluutan uudelleenarvostus luo kirjanpitoon kirjauksen, joka kuvaa toteutumatonta voittoa tai tappiota, joilla varmistetaan, että alareskontrat ja kirjanpito voidaan täsmäyttää. Koska ostoreskontran ja myyntireskontran ulkomaanvaluutan uudelleenarvostus luo kirjauksia kirjanpitoon, myyntireskontran ja ostoreskontran päätilit on jätettävä kirjanpidon ulkomaanvaluutan uudelleenarvostuksen ulkopuolelle. 
+> Ulkomaanvaluutan uudelleenarvostuksen voi ajaa sekä osto- että myyntireskontrassa. Jos käytät kyseisiä moduuleja, avoimet tapahtumat pitää uudelleenarvostaa käyttäen moduulien ulkomaanvaluutan uudelleenarvostusta. Ostoreskontran ja myyntireskontran ulkomaanvaluutan uudelleenarvostus luo kirjanpitoon kirjauksen, joka kuvaa toteutumatonta voittoa tai tappiota, joilla varmistetaan, että alareskontrat ja kirjanpito voidaan täsmäyttää. Koska ostoreskontran ja myyntireskontran ulkomaanvaluutan uudelleenarvostus luo kirjauksia kirjanpitoon, myyntireskontran ja ostoreskontran päätilit on jätettävä kirjanpidon ulkomaanvaluutan uudelleenarvostuksen ulkopuolelle. 
 
-Uudelleenarvostusprosessia suoritettaessa kunkin päätilin ulkomaan valuuttana kirjattu saldo uudelleenarvostetaan. Uudelleenarvostusprosessin aikana luodut toteutumaton voitto- tai tappiotransaktiot ovat järjestelmän luomia. Kaksi tapahtumaa voi voidaan luoda yksi kirjanpitovaluutta ja toinen raportointi valuutan tarvittaessa; Kirjaa kirjanpidon tekstien Realisoitumaton voitto tai tappio ja muutoksista päätili.
+Uudelleenarvostusprosessia suoritettaessa kunkin päätilin ulkomaan valuuttana kirjattu saldo uudelleenarvostetaan. Uudelleenarvostusprosessin aikana luodut toteutumaton voitto- tai tappiotransaktiot ovat järjestelmän luomia. Kaksi tapahtumaa voidaan luoda, yksi kirjanpitovaluuttaa ja toinen raportointikurssin valuuttaa varten tarvittaessa. Jokainen kirjanpitomerkintä kirjaa toteutumattoman voiton tai tappion ja päätilin uudelleenarvostetaan.
 
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Ulkomaanvaluutan uudelleenarvostuksen suorittamisen valmisteleminen
 Seuraavat asetukset on määritettävä ennen uudelleenarvostusprosessin suorittamista.
@@ -57,29 +60,29 @@ Kun asetukset on tehty, päätilien saldot uudelleenarvostetaan **Ulkomaanvaluut
 
 **Aloituspäivämäärä** ja **päättymispäivämäärä**- arvot määrittävät päivämäärävälin, jolla valuuttasaldo lasketaan uudelleenarvostusta varten. Kun tulostilit uudelleenarvostetaan, kaikkien päivämääräalueella suoritettavien tapahtumien summa uudelleenarvostetaan. Kun tasetili uudelleenarvostetaan, aloituspäivämäärää ei oteta huomioon. Sen sijaan uudelleenarvostettava saldo määräytyy tilivuoden alusta päättymispäivämäärään. 
 
-**Kurssin päivämäärä** avulla voit määrittää päivämäärän, jonka vaihtokurssi oletus. Esimerkiksi voit uudelleenarvostaa saldojen välisen päivämäärä alue, tammikuun 1 tammikuu 31, mutta käytetään vaihtokurssia, joka on määritelty 1 päivänä helmikuuta. 
+**Kurssin päivämäärän** avulla voit määrittää päivämäärän, joka on vaihtokurssin oletusarvo. Voit esimerkiksi uudelleenarvostaa saldot 1.1.-31.1. välisenä aikana ja käyttää 1. helmikuuta määritettyä vaihtokurssia. 
 
-Valitse mitä päätilejä käytetään: kaikki, tasetili, tulostili. Vain päätilit uudelleenarvostuksen (-tilin pääsivu) merkitään niiden uudelleenarvostuksen. Jos haluat rajoittaa edelleen alueen päätilit, käytä tietueiden **sisältämään** -välilehti ja Määritä päätilit tai yksittäisiä päätilit. 
+Valitse mitä päätilejä käytetään: kaikki, tasetili, tulostili. Vain uudelleenarvostettaviksi merkityt päätilit (Päätilit-sivulla) uudelleenarvostetaan. Jos haluat edelleen rajata päätilialuetta, määritä päätilialue tai yksittäiset päätilit **Sisällytettävät tietueet** -välilehdessä. 
 
-Uudelleenarvostusprosessi voi suorittaa yhden tai useamman oikeussubjektien. Hakua näyttää vain juridiset henkilöt, joihin sinulla on käyttöoikeus. Valitse oikeushenkilöt, joille haluat suorittaa uudelleenarvostuksen prosessi. 
+Uudelleenarvostusprosessi voidaan suorittaa vähintään yhdelle oikeushenkilölle. Haussa näkyvät vain ne oikeushenkilöt, joihin sinulla on käyttöoikeus. Valitse oikeushenkilöt, joille haluat suorittaa uudelleenarvostusprosessin. 
 
-Uudelleenarvostus voidaan tehdä yhden tai useiden valuuttojen suhteen. Haku sisältää kaikki valuutat, jotka on kirjattu päivämäärävälillä päätilin (taseen tai tuloslaskelman), jos haluat uudelleenarvostaa valitut oikeushenkilöt lajin kannalta. Kirjanpitovaluutan valuuttakoodi sisältyy luetteloon, mutta mitään uudelleenarvostetaan, jos on valittu kirjanpitovaluutta. 
+Uudelleenarvostus voidaan tehdä yhden tai useiden valuuttojen suhteen. Hakuun sisällytetään kaikki valuutat, jotka on kirjattu päivämäärävälillä ja jotka koskevat päätiliä (tase- tai tulostili) ja uudelleenarvostettaviksi valittuja oikeushenkilöitä. Luetteloon sisältyy kirjanpitovaluutta, mutta mitään ei uudelleenarvosteta, jos kirjanpitovaluutta on valittuna. 
 
-Määritä **esikatselu ennen kirjausta**, **Kyllä**, jos haluat tarkastella pääkirjanpidon uudelleenarvostuksen tulos. Esikatselu yleensä kirjanpidon eroaa-AR- ja AP-ulkomaanvaluutan uudelleenarvostuksen simulointi. Myyntireskontran ja Ostoreskontran simulointi on raportti, mutta kirjanpito on esikatselu, joka voidaan kirjata tarvitsematta suorittaa uudelleenarvostuksen prosessin uudelleen. Esikatselun tulokset voidaan viedä Microsoft Exceliin säilyttämään historiatiedot, kuinka määrät on laskettu. Et voi käyttää eräkäsittelyä, jos haluat esikatsella uudelleenarvostuksen tuloksia. Esikatselussa käyttäjä voi kirjata kaikkien oikeushenkilöiden tulokset **Kirjaa** -painikkeella. Jos yhden oikeushenkilön tuloksissa on ongelma, käyttäjällä voi kirjata oikeushenkilöiden osajoukon **Valitse kirjattavat yritykset** -painikkeella. 
+Määritä **Esikatsele ennen kirjausta** arvoksi **Kyllä**, jos haluat tarkastella kirjanpidon uudelleenarvostuksen tulosta. Kirjanpidon esikatselu eroaa ostoreskontran ja myyntireskontran ulkomaanvaluutan uudelleenarvostuksen simuloinnista. Ostoreskontran ja myyntireskontran simulointi on raportti, mutta kirjanpidon esikatselu voidaan kirjata suorittamatta uudelleenarvostusprosessia uudelleen. Esikatselun tulokset voidaan viedä Microsoft Exceliin säilyttämään historiatiedot, kuinka määrät on laskettu. Et voi käyttää eräkäsittelyä, jos haluat esikatsella uudelleenarvostuksen tuloksia. Esikatselussa käyttäjä voi kirjata kaikkien oikeushenkilöiden tulokset **Kirjaa** -painikkeella. Jos yhden oikeushenkilön tuloksissa on ongelma, käyttäjällä voi kirjata oikeushenkilöiden osajoukon **Valitse kirjattavat yritykset** -painikkeella. 
 
-Ulkomaanvaluutan uudelleenarvostus-prosessi on valmis, kun tietue luodaan jäljittää jokaisen sarjan.  Erillinen tietue luodaan kullekin oikeushenkilölle ja kirjanpitotaso.
+Kun ulkomaanvaluutan uudelleenarvostusprosessi on valmis, luodaan tietue jolla jäljitetään jokaisen ajon historia.  Kullekin juridiselle henkilölle ja kirjanpitotasolle luodaan erillinen tietue.
 
 ## <a name="calculate-unrealized-gainloss"></a>Laske toteutumaton voitto/tappio
-Toteutumaton voitto/tappio-tapahtumat luodaan erillään kirjanpidon uudelleenarvostuksesta ja ostoreskontran ja myyntireskontran uudelleenarvostusprosessista. Ostoreskontran ja myyntireskontran edellinen uudelleenarviointi palautetaan kokonaan (olettaen, että tapahtumaa ei ole vielä selvitetty) ja luodaan uusi tapahtuma toteutumattomalle voitolle/tappiolle uuden vaihtokurssin mukaan. Tämä johtuu siitä, että ostoreskontran ja myyntireskontran jokainen yksittäinen tapahtuma uudelleenarvioidaan. Kirjanpidossa Edellinen uudelleenarvostus ei ole palautettu. Sen sijaan delta välisen tasapainon päätili, mukaan lukien perusteella vaihtokurssin nopeus päivämäärä uuden arvon ja edellisen summien uudelleenarvostus luodaan tapahtuma. 
+Toteutumaton voitto/tappio-tapahtumat luodaan erillään kirjanpidon uudelleenarvostuksesta ja ostoreskontran ja myyntireskontran uudelleenarvostusprosessista. Ostoreskontran ja myyntireskontran edellinen uudelleenarviointi palautetaan kokonaan (olettaen, että tapahtumaa ei ole vielä selvitetty) ja luodaan uusi tapahtuma toteutumattomalle voitolle/tappiolle uuden vaihtokurssin mukaan. Tämä johtuu siitä, että ostoreskontran ja myyntireskontran jokainen yksittäinen tapahtuma uudelleenarvioidaan. Kirjanpidon edellistä uudelleenarviointia ei palauteta. Sen sijaan luodaan tapahtuma päätilin saldon (mukaan lukien kaikki edeltävät uudelleenarvostusmäärät) ja vaihtokurssin perusteella lasketun uuden arvon väliselle erotukselle kurssin päivämääränä. 
 
-**Esimerkki** on olemassa seuraavat saldot päätilin 110110.
+**Esimerkki** Päätilille 110110 on olemassa seuraavat saldot.
 
 |            |                    |                        |                       |
 |------------|--------------------|------------------------|-----------------------|
 | **Päivämäärä**   | **Kirjanpitotili** | **Tapahtuman summa** | **Kirjanpitosumma** |
 | 20. tammikuuta | 110110 (käteinen)      | 500 EUR (debet)        | 1000 USD (debet)      |
 
-Päätilin arvostetaan tammikuun 31.  Toteutumaton voitto/tappio lasketaan seuraavasti.
+Päätili uudelleenarvostetaan 31.1.  Toteutumaton voitto/tappio lasketaan seuraavasti.
 
 |                                             |                                            |                                  |                                    |                             |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
@@ -94,7 +97,7 @@ Seuraava kirjanpitomerkintä luodaan.
 | 31. tammikuuta | 110110 (käteinen)            |           | 166.67     |
 | 31. tammikuuta | 801400 (toteutumaton tappio) | 166.67    |            |
 
-Uusi eikä tapahtumia kirjata kuukauden helmikuuta.  Päätilin arvostetaan-helmikuun 28.
+Uusi tapahtumia ei kirjata helmikuulle.  Päätili uudelleenarvostetaan 28.2.
 
 |                                             |                                            |                                  |                                    |                             |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
@@ -112,6 +115,8 @@ Seuraava kirjanpitomerkintä luodaan.
 ## <a name="reverse-foreign-currency-revaluation"></a>Ulkomaanvaluutan uudelleenarvostuksen palautus
 Jos uudelleenarvostustapahtuma pitää palauttaa, valitse **Palautustapahtuma** -painike**Ulkomaanvaluutan uudelleenarvostus**-sivulla. Uusi ulkomaanvaluutan uudelleenarvostus -historiatietue luodaan ylläpitämään historian kirjausketjua ulkomaanvaluutan uudelleenarvioinnin ajankohdasta tai palautuksesta. 
 
-Voit peruuttaa tulokset uudelleenarvostuksen päivämäärä ei toimi, mutta sinun täytyy peruuttaa myös entistä paremmin ajan tasalla varmistaakseen että oikeat saldot jokaisen uudelleenarvostettujen päätilin uudelleenarvostus. Peruutukset voi ilmetä ajan tasalla järjestyksessä, koska ei voi määrittää, mitkä päätilit arvostetaan ja kun ne arvostetaan taajuus on. Esimerkiksi organisaation pakko arvostaa uudelleen niiden cash päätilit neljännesvuosittain, mutta kaikki muut päätilit kuukausittain.
+Ulkomaanvaluutan uudelleenarvostuksen tuloksia ei tarvitse palauttaa päivämääräjärjestyksessä, mutta tarvittaessa sinun täytyy peruuttaa myös uudempi uudelleenarvostus, jotta voidaan varmistaa että kunkin uudelleenarvostetun päätilin saldot täsmäävät. Peruutukset voidaan tehdä muussa kuin päivämääräjärjestyksessä, koska ei voida määrittää, mitkä päätilit on uudelleenarvostettu ja kuinka usein tämä on tapahtunut. Organisaatio saattaa esimerkiksi määrittää käteisennakoiden päätilien uudelleenarvostuksen tapahtuvaksi neljännesvuosittain mutta kaikkien muiden päätilien uudelleenarvostuksen kerran kuukaudessa.
+
+
 
 

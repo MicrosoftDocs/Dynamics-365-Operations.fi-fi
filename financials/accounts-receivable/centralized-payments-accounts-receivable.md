@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-receivable"></a>Myyntireskontran keskitetyt maksut
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja tapahtumia ei tarvitse lisätä useisiin yrityksiin. Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten keskitettyjen maksujen kirjaus toteutetaan eri tilanteissa.
 
 Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja tapahtumia ei tarvitse lisätä useisiin yrityksiin. Organisaatio säästää myös aikaa, koska maksuehdotusten, tilitysten sekä avoimien ja suljettujen tapahtumien keskitetyt maksuprosessit ovat tehokkaita. 
 
-Keskitettyjen maksujen organisaatiossa on monta oikeussubjektien operaatioille ja kunkin toimintayksikön oikeushenkilö hallitsee omien laskujensa myyntitietojen. Juridisen, joka tunnetaan nimellä maksun yritys vastaanottaa maksuja liiketoiminnan juridiset henkilöt. Selvitysprosessin aikana sovellettavissa olevat erääntymiskohteen ja -lähteen tapahtumat muodostetaan. Voit määrittää, mikä organisaatioon kuuluva yritys vastaanottaa toteutuneet voitto- tai tappiotapahtumat ja kuinka keskitettyihin maksuihin liittyvät käteisalennustapahtumat käsitellään. 
+Maksujen keskittämiseen tarkoitetussa organisaatiossa on useita toimintaa harjoittavia yrityksiä, ja jokainen toimintaa harjoittava yritys hallitsee omien saatavien laskujen tietojaan. Maksut kaikille toimintaa harjoittaville yrityksille vastaanotetaan yhdestä yrityksestä, joka toimii maksun yrityksenä. Selvitysprosessin aikana sovellettavissa olevat erääntymiskohteen ja -lähteen tapahtumat muodostetaan. Voit määrittää, mikä organisaatioon kuuluva yritys vastaanottaa toteutuneet voitto- tai tappiotapahtumat ja kuinka keskitettyihin maksuihin liittyvät käteisalennustapahtumat käsitellään. 
 
 Seuraavissa esimerkeissä näytetään, kuinka kirjaus toteutetaan eri tilanteissa. Lähtötilanne on kaikissa esimerkeissä sama:
 
@@ -66,14 +69,14 @@ Fabrikam vastaanottaa maksun, jonka summa on 600,00, Fabrikamin asiakastilille 4
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili:                         | Veloitussumma: | Hyvityssumma: |
 |---------------------------------|--------------|---------------|
 | Myyntireskontra (Fabrikam)  | 600,00       |               |
 | Saaja Fabrikam East (Fabrikam) |              | 600,00        |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili:                             | Veloitussumma | Hyvityssumma |
 |-------------------------------------|--------------|---------------|
@@ -81,7 +84,7 @@ Fabrikam vastaanottaa maksun, jonka summa on 600,00, Fabrikamin asiakastilille 4
 | Myyntireskontra (Fabrikam East) |              | 600,00        |
 
 ## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Esimerkki 2: Asiakkaan laskun ja käteisalennuksen maksaminen toisesta yrityksestä
-Fabrikam vastaanottaa maksun, jonka summa on 580,00, Fabrikamin asiakkaalle 4000, Northwind Traders. Fabrikam on asiakkaan 4000 avoimen laskun. Laskussa on käytettävissä käteisalennus, jonka summa on 20,00. Maksu selvitetään Fabrikam Eastin avointen laskujen kanssa. Käteisalennus kirjataan laskun yritykseen, joka on Fabrikam East.
+Fabrikam vastaanottaa maksun, jonka summa on 580,00, Fabrikamin asiakkaalle 4000, Northwind Traders. Fabrikam Eastilla on avoin lasku asiakkaalle 4000. Laskussa on käytettävissä käteisalennus, jonka summa on 20,00. Maksu selvitetään Fabrikam Eastin avointen laskujen kanssa. Käteisalennus kirjataan laskun yritykseen, joka on Fabrikam East.
 
 ### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Lasku kirjataan Fabrikam Eastiin Fabrikam Westin asiakkaalle 4000
 
@@ -99,14 +102,14 @@ Fabrikam vastaanottaa maksun, jonka summa on 580,00, Fabrikamin asiakkaalle 4000
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili:                         | Veloitussumma: | Hyvityssumma: |
 |---------------------------------|--------------|---------------|
 | Myyntireskontra (Fabrikam)  | 580,00       |               |
 | Saaja Fabrikam East (Fabrikam) |              | 580,00        |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili:                             | Veloitussumma: | Hyvityssumma: |
 |-------------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Fabrikam vastaanottaa 600,00 euron (EUR) maksun Fabrikamin asiakkaalle 4000, Nor
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili:                         | Veloitussumma:            | Hyvityssumma:           |
 |---------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Fabrikam vastaanottaa 600,00 euron (EUR) maksun Fabrikamin asiakkaalle 4000, Nor
 | Saaja Fabrikam East (Fabrikam) | 0,00 (EUR) / 12,90 (USD)    |                         |
 | Realisoitunut voitto (Fabrikam)        |                         | 0,00 (EUR) / 12,90 (USD)    |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili:                             | Veloitussumma:            | Hyvityssumma:           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Fabrikam kirjaa Fabrikamin asiakkaan 4000, Northwind Traders, maksun Fabrikam Ea
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili:                         | Veloitussumma:            | Hyvityssumma:           |
 |---------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Fabrikam kirjaa Fabrikamin asiakkaan 4000, Northwind Traders, maksun Fabrikam Ea
 | Saaja Fabrikam East (Fabrikam) | 0,00 (EUR) / 13,46 (USD)    |                         |
 | Realisoitunut voitto (Fabrikam)        |                         | 0,00 (EUR) / 13,46 (USD)    |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili:                             | Veloitussumma:            | Hyvityssumma:           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Fabrikam kirjaa Fabrikamin asiakkaan 4000, Northwind Traders, maksun Fabrikam Ea
 | Myyntireskontra (Fabrikam East) |                         | 12,00 (EUR) / 14,47 (USD)   |
 
 ## <a name="example-5-customer-credit-note-with-primary-payment"></a>Esimerkki 5: Asiakkaan hyvityslasku ja ensisijainen maksu
-Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind Traders. Maksu selvitetään Fabrikam Westin asiakkaan 10000 avoimen laskun ja Fabrikam Eastin asiakkaan 4000 avoimen hyvityslaskun kanssa. Maksu valitaan ensisijaiseksi maksuksi **tapahtumat selvitetään** sivulla.
+Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind Traders. Maksu selvitetään Fabrikam Westin asiakkaan 10000 avoimen laskun ja Fabrikam Eastin asiakkaan 4000 avoimen hyvityslaskun kanssa. Maksu valitaan ensisijaiseksi maksuksi **Selvitä tapahtumat** -sivulla.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Lasku kirjataan Fabrikam Westiin asiakkaalle 10000
 
@@ -224,7 +227,7 @@ Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikamin maksu selvitetään Fabrikam Westin laskun ja Fabrikam Eastin hyvityslaskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili:                           | Veloitussumma: | Hyvityssumma: |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind 
 | Myyntireskontra (Fabrikam)    | 100,00       |               |
 | Saaja Fabrikam West (Fabrikam)   |              | 100,00        |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili:                             | Veloitussumma: | Hyvityssumma: |
 |-------------------------------------|--------------|---------------|
 | Myyntireskontra (Fabrikam East) | 25,00        |               |
 | Saaja Fabrikam (Fabrikam East)     |              | 25,00         |
 
-**Fabrikam West posting**
+**Kirjaus Fabrikam Westiin**
 
 | Tili:                             | Veloitussumma: | Hyvityssumma: |
 |-------------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind 
 | Myyntireskontra (Fabrikam West) |              | 100,00        |
 
 ## <a name="example-6-customer-credit-note-without-primary-payment"></a>Esimerkki 6: Asiakkaan hyvityslasku ilman ensisijaista maksua
-Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind Traders. Maksu selvitetään Fabrikam Westin asiakkaan 10000 avoimen laskun ja Fabrikam Eastin asiakkaan 4000 avoimen hyvityslaskun kanssa. Maksu ei ole valittu ensisijaiseksi maksuksi **tapahtumat selvitetään** sivulla.
+Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind Traders. Maksu selvitetään Fabrikam Westin asiakkaan 10000 avoimen laskun ja Fabrikam Eastin asiakkaan 4000 avoimen hyvityslaskun kanssa. Maksu ei valita ensisijaiseksi maksuksi **Selvitä tapahtumat** -sivulla.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Lasku kirjataan Fabrikam Westiin asiakkaalle 10000
 
@@ -273,21 +276,21 @@ Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikamin maksu selvitetään Fabrikam Westin laskun ja Fabrikam Eastin hyvityslaskun kanssa
 
-**Fabrikam posting**
+**Kirjaus Fabrikamiin**
 
 | Tili:                         | Veloitussumma: | Hyvityssumma: |
 |---------------------------------|--------------|---------------|
 | Myyntireskontra (Fabrikam)  | 75,00        |               |
 | Saaja Fabrikam West (Fabrikam) |              | 75,00         |
 
-**Fabrikam East posting**
+**Kirjaus Fabrikam Eastiin**
 
 | Tili:                              | Veloitussumma: | Hyvityssumma: |
 |--------------------------------------|--------------|---------------|
 | Myyntireskontra (Fabrikam East)  | 25,00        |               |
 | Saaja Fabrikam West (Fabrikam East) |              | 25,00         |
 
-**Fabrikam West posting**
+**Kirjaus Fabrikam Westiin**
 
 | Tili:                                | Veloitussumma: | Hyvityssumma: |
 |----------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind 
 | Myyntireskontra (Fabrikam West)    |              | 75,00         |
 | Maksaja Fabrikam East (Fabrikam West) | 25,00        |               |
 | Myyntireskontra (Fabrikam West)    |              | 25,00         |
+
+
 
 
 

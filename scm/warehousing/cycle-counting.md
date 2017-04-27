@@ -102,7 +102,7 @@ Voit ajoittaa toistuvan inventointityön luonnin kahdella tavalla: määrittäm�
 
 ### <a name="create-cycle-counting-work-based-on-threshold-parameters-for-items"></a>Inventointityön luonti nimikkeiden raja-arvoparametrien perusteella
 
-Inventointityö voidaan luoda, kun sijainnin nimikkeiden määrä alittaa tietyn raja-arvon. Esimerkiksi kohteita 60 paikkaan, joka on raja-arvo 40 syklin. Myyntitilaus-tapahtuman aikana 25 kohteet poimia varastopaikasta ja sijoittaa väliaikaiseen paikkaan. Uusi nimikkeiden määrä 35 on pienempi kuin raja-arvo, joten inventointityö luodaan sijainnille automaattisesti.
+Inventointityö voidaan luoda, kun sijainnin nimikkeiden määrä alittaa tietyn raja-arvon. Esimerkiksi sijainnissa, jonka inventoinnin raja-arvo on 40, on 60 nimikettä. Myyntitilaustapahtuman aikana poimitaan 25 nimikettä kyseisestä sijainnista ja sijoitetaan väliaikaiseen paikkaan. Uusi nimikkeiden määrä 35 on pienempi kuin raja-arvo, joten inventointityö luodaan sijainnille automaattisesti.
 
 ### <a name="schedule-cycle-counting-work"></a>Ajoita inventointityö
 
@@ -129,7 +129,7 @@ Seuraava esimerkki osoittaa, miten voit suorittaa pisteinventoinnin mobiililaitt
 ## <a name="resolve-cycle-counting-differences"></a>Inventointierojen selvittäminen
 Inventointiero ilmenee seuraavissa skenaarioissa, jos **On inventoinnin valvoja** -vaihtoehdon asetukseksi työn käyttäjätunnukselle on valittu **Ei**:
 
--   Inventoitu arvo ei ole **Työn käyttäjät** -lomakkeen **Prosenttiosuuden enimmäisraja**- tai **Määrän enimmäisraja** -kentissä määritettyjen poikkeamarajojen sisällä. Esimerkiksi sijainnin käytettävissä olevan varastomäärä on 50 ja työn käyttäjän poikkeaman raja on 10. Jos työn käyttäjä kirjoittaa arvon, joka ei ole 40 – 60, jolla ero esiintyy.
+-   Inventoitu arvo ei ole **Työn käyttäjät** -lomakkeen **Prosenttiosuuden enimmäisraja**- tai **Määrän enimmäisraja** -kentissä määritettyjen poikkeamarajojen sisällä. Esimerkiksi sijainnin käytettävissä oleva varastomäärä on 50 ja työn käyttäjän poikkeaman raja on 10. Jos työn käyttäjä kirjoittaa arvon, joka ei ole välillä 40–60, ero esiintyy.
 -   Inventointiarvo poikkeaa käytettävissä olevan varaston määrästä, eikä poikkeamarajoja aseteta.
 
 Voit oikaista inventointiarvojen eroja ja hyväksyä lasketun arvon **Inventointi odottaa tarkistusta** -sivulla. Voit tarkistaa nimikemäärän muunnetun määrän **Varastosaldon sijainnin mukaan** -sivulla. Inventoitu arvo hylätään, jos eroa ei voida hyväksyä.

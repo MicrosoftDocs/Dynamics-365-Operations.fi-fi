@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Kirjanpito- tai raportointivaluutan muuntaminen
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Yritys, joka on muutettava kirjanpito- tai raportointivaluuttaansa, voi tehdä tämän kahdella tavalla. Ensimmäinen vaihtoehto on luoda uusi yritys kokonaan alusta. Toinen vaihtoehto on suorittaa kirjanpito- ja raportointivaluutan muuntoprosessi. Tämä on erittäin pitkäkestoisten prosessi, jossa jokainen järjestelmässä oleva tapahtuma muuttuu. Ennen prosessin suorittamista on myös määritettävä joitakin asetuksia.
@@ -72,6 +75,8 @@ Kaikki täsmäytysraportit on suoritettava uudelleen valuuttamuunnoksen jälkeen
 -   Jos kirjanpitovaluutan muunnos aiheuttaa pyöristyseroja, niitä ei voi kirjata käyttämällä tositetta, jossa pyöristysero on muodostunut. Erot kirjataan sen sijaan käyttämällä muunnoskirjauksille syötetyillä tositteilla. Pyöristyserot tulostuvat muunnoksen jälkeen kaikkiin raportteihin, joissa tarkistus tehdään tositteittain ja päivämäärittäin. Tämä on täysin oikein, eikä siihen tarvitse kiinnittää huomiota.
 -   Jos asiakkaan ja toimittajan täsmäytysraporttien kokonaissummarivillä näkyy eri summa eikä eroa ollut ennen muunnosta, erotussumma on kirjattava. Se kirjataan asiakkaiden ja toimittajien reskontratilille. Vastatili on muunnostappion tai -voiton kirjanpitotili.
 
-Kun kaikki kirjanpidon tapahtumakirjauskansiot on poistettu, voit kirjata kirjanpitotapahtumat kirjauskansioon. Valitse **kirjanpidon**&gt;**Kausittainen**&gt;**päiväkirjat**&gt;**kirjauskansion kirjanpidon**. Voit tarvittaessa uudelleenarvostaa valuuttasummat valuuttamuunnoksen jälkeen. Voit uudelleenarvostaa valuuttasummat valitsemalla uudelleenarvostuksen **Menetelmä**-kentästä **Vakio**-vaihtoehdon.
+Kun kaikki kirjanpidon tapahtumakirjauskansiot on poistettu, voit kirjata kirjanpitotapahtumat kirjauskansioon. Valitse **Kirjanpito** &gt; **Kausittainen** &gt; **Kirjauskansiot** &gt; **Kirjauskansion kirjanpito**. Voit tarvittaessa uudelleenarvostaa valuuttasummat valuuttamuunnoksen jälkeen. Voit uudelleenarvostaa valuuttasummat valitsemalla uudelleenarvostuksen **Menetelmä**-kentästä **Vakio**-vaihtoehdon.
+
+
 
 

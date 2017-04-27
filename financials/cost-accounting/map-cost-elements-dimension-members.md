@@ -1,5 +1,5 @@
 ---
-title: "Kartan eri osa dimensiojäsenet ja dimension jäsenten yhteiset kustannukset"
+title: "Yhdistä eri kustannustason dimension jäsenet yhteiseksi joukoksi"
 description: "Yhdistämällä eri kustannustason dimension jäsenet joukoksi kustannustason dimensiojäsenet yhdistät tiedot yleiseen muotoon analyysitarkoituksiin."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Kartan eri osa dimensiojäsenet ja dimension jäsenten yhteiset kustannukset
+# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Yhdistä eri kustannustason dimension jäsenet yhteiseksi joukoksi
 
 Yhdistämällä eri kustannustason dimension jäsenet joukoksi kustannustason dimensiojäsenet yhdistät tiedot yleiseen muotoon analyysitarkoituksiin.
 
@@ -38,10 +38,10 @@ Seuraavassa esimerkissä esitetään, kuinka kustannusten vastuuhenkilö voi luo
 |-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Yhdysvaltojen tilikartasta tuodut kustannustason dimensiojäsenet | Ranskan tilikartasta tuodut kustannustason dimensiojäsenet | Yhdysvallan ja Ranskan yhdistetty kustannustason dimension jäsenten joukko |
 | 5001: Myynti                                                           | 5001: Myynti ja mainonta                                               | 5000: Myynti ja mainonta                                             |
-| 5030: Mainonta                                                     | 6390: kaluston osto\*                                                    | 7000: puhtaanapitokulut                                                 |
+| 5030: Mainonta                                                     | 6390: Varasto-ostot\*                                                    | 7000: puhtaanapitokulut                                                 |
 | 7001: puhtaanapitokulut                                               | 7001: Matkakulut                                                      | 7001: Matkakulut                                                   |
 
-\*Kaluston osto Ranskan kustannukset elementin dimension jäsenellä ei ole yhdistetty.
+\* Varaston ostotilauksen kustannus Ranskan kustannustason dimension jäsenellä ei ole määritetty.
 
 ## <a name="currency-conversion"></a>Valuuttamuunnos
 Eri tilikartat,, joita käytetään, voivat määrittää eri valuuttoja. Tässä tapauksessa muista määrittää valuuttamuunnoksen, jolloin kustannustiedot käsitellään oikeassa valuutassa,määritetyn kustannuslaskennan kirjanpidon mukaan jossa käytetään kustannustason dimensiojäsenet. Edellisessä esimerkissä, jos käytettyinä Yhdysvaltain dollarin (USD) kustannuslaskennan kirjanpitoon, sinun on luotava valuutan muuntaminen USD-euro (EUR) tapahtumien käsittelyyn yhdistetyille kustannustason dimensiojäsenet.

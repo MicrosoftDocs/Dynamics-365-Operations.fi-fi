@@ -1,6 +1,6 @@
 ---
 title: Kirjanpidon kirjauskansiotyypit
-description: "Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Kirjauskansioiden nimet-sivu avulla voit määrittää kirjauskansiot, joita voit käyttää toimintojen koko Microsoft Dynamics-365."
+description: "Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Operationsissa käytettävät kirjauskansiot Kirjauskansioiden nimet -sivun avulla."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="ledger-journal-types"></a>Kirjanpidon kirjauskansiotyypit
 
-Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Kirjauskansioiden nimet-sivu avulla voit määrittää kirjauskansiot, joita voit käyttää toimintojen koko Microsoft Dynamics-365.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Operationsissa käytettävät kirjauskansiot Kirjauskansioiden nimet -sivun avulla.
 
 | Kirjauskansion tyyppi                      | Tarkoitus                                                                                                                                                                                                                                                                                                                                                     | Syötä tapahtumakoodi tälle sivulle                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -55,11 +58,13 @@ Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talo
 | Toimittajan pankkisiirtomääräys            | Luo velkakirjan maksusuoritustiedosto, joka voidaan lähettää organisaatiosi pankkiin.                                                                                                                                                                                                                                                                      | Maksusuoritusten kirjauskansio                                             |
 | Toimittajan suoritus               | Luo toimittajan suoritustapahtumat.                                                                                                                                                                                                                                                                                                                    | Maksukirjauskansio                                                |
 | Toimittajan asettama velkakirja       | Aseta toimittajan velkakirjat maksutavaksi Kun haluat käyttää tätä kirjauskansiotyyppiä, poista valinta **Luo ja kirjaa asetettu kirjauskansio automaattisesti laskujen kirjauksen yhteydessä** sivulla **Maksutapa - Toimittajat**.                                                                                                                                          | Aseta velkakirjakirjauskansio                                   |
-| Toimittajan laskupooli kirjaaminen | Luo toimittajan laskutapahtumat, joita ei vielä ole kirjattu väliaikaiselle saapumistilille.                                                                                                                                                                                                                                                             | Toimittajan laskupooli, ei sisällä kirjaustietoja                  |
+| Toimittajalaskupooli, jätetty pois kirjaaminen | Luo toimittajan laskutapahtumat, joita ei vielä ole kirjattu väliaikaiselle saapumistilille.                                                                                                                                                                                                                                                             | Toimittajan laskupooli, ei sisällä kirjaustietoja                  |
 | Toimittajalaskupooli               | Luo toimittajalaskupoolitapahtumat.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Toimittajan laskun kirjaus          | Kirjaa kirjauskansion toimittajalaskut.                                                                                                                                                                                                                                                                                                                 | Laskukirjauskansio                                                |
 | Toimittajan tarkistama velkakirja     | Aseta uudelleen velkakirja, jonka organisaatiosi pankki on aiemmin lunastanut.                                                                                                                                                                                                                                                                      | Tarkista velkakirjakirjauskansio                                 |
 | Toimittajan selvittämä velkakirja     | Luo toimittajan selvittämien velkakirjojen tapahtumat.                                                                                                                                                                                                                                                                                                          | Selvitä velkakirjakirjauskansio                                 |
+
+
 
 
 

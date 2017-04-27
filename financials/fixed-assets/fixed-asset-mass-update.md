@@ -1,6 +1,6 @@
 ---
 title: "Käyttöomaisuuden laajamittainen päivitys"
-description: "Jos käytät kirjoja, voit muuttaa poistomenetelmiä, jotka ovat osa samaa kirjaa omaisuuserien ryhmien osalta."
+description: "Jos käytät kirjoja, voit vaihtaa samaan kirjaan kuuluvien käyttöomaisuuserien muodostamien ryhmien poistomenetelmiä."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-mass-update"></a>Käyttöomaisuuden laajamittainen päivitys
 
-Jos käytät kirjoja, voit muuttaa poistomenetelmiä, jotka ovat osa samaa kirjaa omaisuuserien ryhmien osalta.
+[!include[banner](../includes/banner.md)]
+
+
+Jos käytät kirjoja, voit vaihtaa samaan kirjaan kuuluvien käyttöomaisuuserien muodostamien ryhmien poistomenetelmiä.
 
 Esimerkiksi jos toimit Yhdysvalloissa ja sijoitit yli 40 prosenttia käyttöomaisuudesta huoltoon neljännen vuosineljänneksen aikana, sinun on käytettävä vuosineljänneksen puolivälin poistomenetelmää. Voit käyttää joukkopäivitystä kaikkien uutta poistomenetelmää edellyttävien käyttöomaisuuserien poistomenetelmän vaihtamiseen. 
 
@@ -36,6 +39,8 @@ Kun päivität käyttöomaisuuserien poistomenetelmän, kaikki kyseisten käytt�
 Voidaksesi päivittää jo poistettujen käyttöomaisuuserien poistomenetelmän, sinun on ensin poistettava olemassa olevat poistotapahtumat. Sinun on poistettava myös kaikki tapahtumat, jotka on luotu poistoprosessia varten. 
 
 Päivitettyäsi käyttöomaisuuserien poistomenetelmän, voit käsitellä kunkin käyttöomaisuuserän poiston ja lisäpoiston. Voit myös tehdä poistoihin tarvittaessa manuaalisia oikaisuja.
+
+
 
 
 

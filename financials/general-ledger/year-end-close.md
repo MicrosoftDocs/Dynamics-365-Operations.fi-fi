@@ -1,6 +1,6 @@
 ---
 title: Tilikauden lopetus
-description: "Tässä aiheessa kuvataan tarvittavat asetukset ja ohjeet kirjanpidon vuoden sulkemisprosessi on käynnissä."
+description: "Tässä aiheessa kuvataan kirjanpidon tilivuoden sulkemisprosessissa tarvittavat asetukset ja ohjeet."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,61 +27,66 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="year-end-close"></a>Tilikauden lopetus
 
-Tässä aiheessa kuvataan tarvittavat asetukset ja ohjeet kirjanpidon vuoden sulkemisprosessi on käynnissä. 
+[!include[banner](../includes/banner.md)]
 
-Tilikauden lopussa koko vuoden saldot siirretään uuden vuoden sulkemisprosessi on suoritettava. Useimmissa organisaatioissa suorittaa vuoden sulkemisprosessi useita kertoja. Ensimmäisen kerran olisi saada saldot siirretään uuteen tilivuoteen. Vuoden lopun sulkemisen jälkeen voidaan suorittaa uudelleen, kuten monta kertaa on pakko siirtää saldot uuden tilikauden, että ne voi muuttaa. 
 
-Sulje prosessi vuoden lopun aikana, siellä on kaksi mahdollista luodut tapahtumat. Avattaessa-tapahtuman aina luodaan ja käytetään luoda uuden tilikauden saldot. Tapahtuman avaaminen uuden tilikauden taseen kirjanpidon tilien saldot näkyvät ja uuden tilikauden tulos kirjanpidon tilien saldot jakamattoman kirjanpitotilin saldoja. Viimeinen tapahtuma luodaan myös tuomaan luopua sulkea tilikauden tulos-tilien saldojen.
+Tässä aiheessa kuvataan kirjanpidon tilivuoden sulkemisprosessissa tarvittavat asetukset ja ohjeet. 
 
-## <a name="prepare-to-run-the-year-end-close"></a>Valmistele vuoden lopun sulkeminen
-Ennen kuin suoritat Sulje lopetukseen, tarkista seuraavat asetukset: 
+Tilikauden lopussa sinun on suoritettava tilivuoden sulkemisprosessi siirtääksesi alkusaldot uudelle vuodelle. Useimmat organisaatiot suorittavat tilivuoden sulkemisprosessin useita kertoja. Ensimmäisellä kerralla saldot siirretään uudelle tilivuodelle. Sen jälkeen tilivuoden sulkemisen voi suorittaa uudelleen niin monta kertaa, kuin on tarve, jotta korjaustapahtumien saldot siirretään uudelle tilivuodelle. 
+
+Tilivuoden sulkemisprosessissa voidaan luoda kahdenlaisia tapahtumia. Järjestelmä luo aina avaustapahtuman, jota käytetään uuden tilivuoden alkusaldojen luomiseen. Avaustapahtumassa näytetään kirjanpidon tasetilien saldot uudelle tilivuodelle sekä voitto- ja tappiokirjanpitotilien saldot kertyneiden tuottojen kirjanpitotileille uudelle tilivuodelle. Järjestelmä voi myös luoda sulkemistapahtuman, joka kirjaa voitto- ja tappiotilien saldot nollaan suljettavalle tilivuodelle.
+
+## <a name="prepare-to-run-the-year-end-close"></a>Tilivuoden sulkemisen valmistelu
+Vahvista seuraavat asetukset ennen tilivuoden sulkemisprosessin suorittamista: 
 
 **Päätili**-sivulla:
 
--   Tarkista **Main tyyppi** on määritetty oikein kunkin päätili. Main-tilityypin käytetään määrittämään, onko päätilin saldoa otetaan käyttöön liitteenä alkusaldo tai kiinni olevaan voittovarojen avattaessa-tapahtumaan.
--   **Avata tilin** kenttää voidaan käyttää ensisijaisen tilin saldo siirretään uuden päätilin vuoden lopun sulkemisen aikana. Uusi päätili on kirjoitettu **avata tilin** kenttä. Yleensä tätä käytetään tärkeimmät tasetilien kun päätili inaktiivinen ja uusi päätili käytetään uuden tilikauden.
+-   Vahvista, että **Päätilin tyyppi** on määritetty oikein kullekin päätilille. Päätilin tyypillä määritetään, tuodaanko päätilin saldo edelleen alkusaldona, vai suljetaanko se kertyneihin tuottoihin avaustapahtumassa.
+-   Päätilin saldon voi siirtää **Avaustili**-kentän avulla uudelle päätilille tilivuoden sulkemisprosessin aikana. Uusi päätili kirjataan **Avaustili**-kenttään. Tätä käytetään yleensä taseen päätileille, kun päätili on poistettu käytöstä ja uutta päätiliä käytetään uudella tilivuodella.
 
-- **Kirjanpitoparametrien** sivulla kohdassa **tilikauden päättäminen**:
+**Kirjanpidon parametrit** -sivun **Tilivuoden sulkeminen** -kohdassa:
 
--   **DEL Sulje vuosi tapahtumien** asetusta käytetään määrittämään, onko järjestelmän luoma avaustapahtuma-edellisen vuoden lopun sulkeminen olisi poistettava, kun vuoden lopun sulkeminen suoritetaan uudelleen. Jos tämä asetus on määritetty **Kyllä**, edellisen avaustapahtuma poistetaan ja avataan uusi tapahtuma luodaan perusteella nykyiset saldot. Jos tämä asetus on määritetty **ei**, edellisen avaustapahtuma pysyy ja muita avaustapahtuma luodaan siirtää saldoja toimittaa edellisen vuoden lopun sulkemisen jälkeen kirjatut tapahtumat voi muuttaa.
--   **Luo päätöstapahtumat siirron yhteydessä** asetusta käytetään Luo päätöstapahtumat nolla tulos-tilien saldojen jotta sulkea tilikauden. Jos tämä asetus on määritetty **Kyllä**, avaustapahtuma ja viimeinen tapahtuma luodaan. Jos tämä asetus on määritetty **ei**, vain aloittava tapahtuma luodaan seuraavan tilikauden saldot siirretään. Tuloslaskelman tilien saldot säilyvät tilikauden lopussa.
--   **Aseta tilikauden tilaksi suljettu pysyvästi** vaihtoehtoa käytetään määrittää tilivuoden pysyvästi suljettu tila. Käytä tätä asetusta harkiten, sillä kaikki jaksot pysyvästi suljettu tila ei voi avata uudelleen, estää postittamisen tilikauden oikaisut. Se on parasta, voit asettaa **ei**.
--   **Tositenumero on täytettävä** asetusta käytetään määrittämään, onko tositteen numero on pakollinen, kun vuoden sulkemisprosessi on käynnissä. Se on parasta, voit helposti tunnistaa avattaessa-tapahtuman tositenumero vaativat.
+-   **Poista päätöstapahtumat** -asetuksella määritetään, poistetaanko järjestelmän luoma edellisen tilivuoden päätöksen avaustapahtuma, kun tilivuoden päätös suoritetaan uudelleen. Jos tämä asetus on **Kyllä**, aiemmat avaustapahtumat poistetaan ja uusi avaustapahtuma luodaan nykyisten saldojen perusteella. Jos tämä asetus on **Ei**, edellinen avaustapahtuma säilytettään ja järjestelmä luo uuden avaustapahtuman, jolla saldot siirretään edelleen kirjatuista korjaustapahtumista edellisen tilivuoden sulkemisen jälkeen.
+-   **Luo päätöstapahtumat siirron yhteydessä** -asetuksella luodaan sulkemistapahtumat suljettavalle tilivuodelle, jotta voitto- ja tappiotilien saldot voidaan asettaa nollaan. Jos tämä asetus on **Kyllä**, sekä avaus- että sulkemistapahtumat luodaan. Jos tämä asetus on **Ei**, vain avaustapahtuma luodaan tulevalle tilivuodelle saldojen siirtämiseksi. Voitto- ja tappiotilien saldot säilytetään tilikauden lopussa.
+-   **Muuta tilikauden tilaksi pysyvästi suljettu** -asetuksella tilivuosi asetetaan pysyvästi suljettuun tilaan. Käytä tätä asetusta harkiten, sillä jaksoja, jotka ovat pysyvästi suljetussa tilassa ei voi avata uudelleen, eikä kyseisiin tilivuosiin voi tehdä korjauksia. On suositeltavinta asettaa arvoksi **Ei**.
+-   **Tositenumero on täytettävä** -asetuksella määritetään, onko tositenumero pakollinen tilivuoden sulkemisprosessia suoritettaessa. Suositeltavinta on vaatia tositenumero, jotta avaustapahtuman tunnistaminen on mahdollisimman helppoa.
 
-- **Kirjanpidon vuosikalenterin** sivulla:
+**Kirjanpidon vuosikalenteri** -sivulla:
 
--   Seuraavan tilivuoden on oltava olemassa ennen suorittamista vuoden lopun sulkeminen. Seuraavan tilivuoden vaaditaan, jotta voidaan luoda alkaen saldoja kaudesta.
+-   Seuraava tilivuosi on luotava ennen tilivuoden sulkemisen suorittamista. Tuleva tilivuosi on pakollinen, jotta aloitusjakson alkusaldot voidaan luoda.
 
-- **Kirjanpitokalenteri** sivulla:
+**Kirjanpitokalenteri** -sivulla:
 
--   Valinnainen: Kutakin tilijaksoa sulkea tilikauden voidaan määrittää **pitoon** kirjoittamisen uusien tapahtumien estämiseksi. Oikaisevia tunnistetaan, kun edelleen pito jaksot voidaan avata kirjaa oikaisevia, vaikka koko vuoden sulkemisprosessi on jo suoritettu.
+-   Valinnainen: jokainen suljettavan tilivuoden tilikausi voidaan asettaa **pitoon**, jotta uusia tapahtumia ei voi kirjata. Kun oikaisutapahtumia tunnistetaan, pidossa olevat kaudet voidaan avata uudelleen oikaisutapahtumien kirjaamiseksi, vaikka tilivuoden sulkemisprosessi olisi jo suoritettu.
 
-## <a name="define-year-end-close-templates"></a>Määritä koko vuoden tiiviissä mallit
-Järjestelmä on määritetty, kun vuoden sulkemisprosessi voi suorittaa. - **Tilinpäätös** -sivulla voidaan määrittää mallin osalta suoritetaan, jonka tilinpäätös prosessin oikeussubjektien ryhmän. Malli kunkin vuoden lopun sulkemisen yhteydessä käytetään uudestaan, mutta sitä voi muokata organisaation muuttuessa. 
+## <a name="define-year-end-close-templates"></a>Tilivuoden sulkemismallien määrittäminen
+Kun järjestelmä on määritetty, tilivuoden sulkemisprosessin voi suorittaa. **Tilivuoden lopetus** -sivulla voidaan määrittää malli yritysryhmälle, joille tilivuoden lopetusprosessi suoritetaan. Mallia käytetään jokaisessa tilivuoden lopetuksessa, mutta se on muokattavissa organisaatiosi tarpeiden mukaan. 
 
-Ensimmäisen kerran, Määritä **nimi** mallin, ja valitse kirjanpidon vuosikalenteri. Ryhmänimi pitäisi sisällyttää oikeussubjektien ryhmän.  Esimerkiksi mallit voi määrittää perusteella muodostamiin, Pohjois-Amerikan oikeussubjektien oikeussubjektien EMEA ja APAC oikeussubjektien luotu eri ryhmistä. 
+Määritä ensimmäiseksi mallille **Ryhmän nimi** ja valitse kirjanpidon vuosikalenteri. Yritysryhmä tulisi voida tunnistaa ryhmän nimestä.  Mallit voi määrittää esimerkiksi maantieteellisen sijainnin perusteella erikseen pohjoisamerikkalaisille sekä EMEA- ja APAC-alueiden yrityksille. 
 
-Seuraavaksi oikeushenkilöt voidaan lisätä malliin. Oikeushenkilöt voidaan lisätä organisaation hierarkian valitsemalla tai valitsemalla oikeushenkilöt. Jos organisaation hierarkian vain oikeushenkilöt hierarkiassa, joka käyttää valitun kirjanpidon vuosikalenterin lisätään malliin. Jos käytät oikeussubjektien mallin lisääminen, voidaan lisätä vain oikeussubjektien kanssa sama kirjanpidon vuosikalenteri. Sama kirjanpidon vuosikalenteri ei tarvita, sillä vuoden lopun sulkeminen suoritetaan tilikauden, joka voi vaihdella kalenteri kalenteri valitsemalla. 
+Yritykset voidaan seuraavaksi lisätä malliin. Yritykset voidaan lisätä joko valitsemalla ne tai valitsemalla organisaatiohierarkia. Jos valitset organisaatiohierarkian, ainoastaan hierarkian yritykset, jotka käyttävät valittua kirjanpidon vuosikalenteria lisätään malliin. Jos lisäät yritykset malliin yritysten perusteella, ainoastaan samaa kirjanpidon vuosikalenteria käyttävät yritykset voidaan lisätä. Sama kirjanpidon vuosikalenteri on vaatimus, koska tilivuoden lopetus suoritetaan valitsemalla tilivuosi, joka voi riippua vuosikalenterista. 
 
-Kun on lisätty oikeushenkilöt, Määritä jakamattoman päätilit kullekin oikeushenkilölle. **Syntynyt viime vuoden lopussa Sulje** kenttä päivitetään aina vuoden lopussa lähellä suoritetaan oikeushenkilölle. 
+Kun yritykset on lisätty, määritä kertyneiden tuottojen päätilit kullekin yritykselle. **Edellisen tilikauden lopetuksen päivämäärä** -kenttä päivitetään joka kerta, kun yrityksen tilikausi lopetetaan. 
 
-**Taloushallinnon dimension** -välilehteä käytetään määrittämään käytetään avattaessa-tapahtuman taloushallinnon dimensiot. Huomaa, että määrität asetukset vaikuttavat vain valittuun oikeushenkilöön **oikeushenkilöt** ruudukko. Toistetaan kullekin oikeushenkilölle Ruudukon asetukset. 
+**Taloushallinnon dimensio** -välilehdellä määritetään taloushallinnon dimensiot, joita käytetään avaustapahtumassa. Huomaa, että määrittämäsi asetukset koskevat vain **Yritykset**-ruudukossa valittuja yrityksiä. Toista määritykset kaikille ruudukon yrityksille. 
 
-**Mitat taseen siirtää** käytetään määrittämään, onko taloushallinnon dimensiot kirjataan tasetileille tapahtumissa olisi säilytettävä aloittava tapahtuma. Se on paras käytäntö, Määritä tämän asetuksen arvoksi **Kyllä**. **Mitat tulos siirretään** käytetään määrittämään, mitkä tapahtumat kirjataan voitto- ja tappiotili taloushallinnon dimensiot siirretään voittovarojen päätili. Etsi ensin valittuun oikeushenkilöön asianmukaisen taloushallinnon dimensioita. Tähän sisältyisi kaikki taloushallinnon dimensiot kirjataan vuoden aikana vastaan vaikka taloushallinnon dimensio kuuluu aktiivinen tilirakenne. Määritä kunkin dimension joko seuraavaksi **sulkeminen yhden** tai **sulkea kaikki**.  Oletusarvo on **sulkea kaikki**, joka ylläpitää alkuperäinen taloushallinnon dimension arvot kirjattuja tapahtumia ja käyttää niitä varten luodaan avaamalla saldot jakamattoman voiton tilille. Alkusaldot erillisessä voittovarojen luodaan yksilöllinen taloushallinnon dimensioarvojen yhdistelmän. Jos **Sulje single** on valittu, kaikki kyseiseen taloushallinnon dimensioon kirjatut tapahtumat tiivistetään yhdeksi alkusaldo dimension arvon kenttään jälkeen jakamattoman **sulkeminen yhden**. Oletetaan esimerkiksi, että tilikauden kaikki tapahtumat on kirjattu päätilille - osaston tilille rakenteessa. Osaston Taloushallinnan dimension, mallin **Sulje single** on valittu ja 100 on annettu arvo. Jos kaikki osastot, 200, 300 ja 400 kirjattujen tapahtumien kokonaistulo on $100,000, yksi alkusaldon luodaan Retained tulot - 100. Jos valitset **sulkeminen yhden** ja taloushallinnon dimensioarvo jätetään tyhjäksi, kaikki tapahtumat kirjataan kertyneisiin voittovaroihin joilla dimensioarvo on tyhjä. 
+**Siirrä tasedimensiot** -asetuksella määritetään, säilytetäänkö tasetileille kirjatut tapahtumien taloushallinnon dimensiot avaustapahtumassa. On suositeltavinta arvoksi **Kyllä**. **Siirrä tulosdimensiot** -asetuksella määritetään, mitkä voitto- ja tappiotileille kirjattujen tapahtumien taloushallinnon dimensiot siirretään kertyneiden tuottojen päätilille. Tunnista ensin valittua yritystä koskevat taloushallinnon dimensiot. Näihin sisältyvät kaikki vuodelle kirjatut taloushallinnon dimension, vaikka kyseiset dimensiot eivät olisikaan aktiivisen tilirakenteen osia. Määritä seuraavaksi kunkin dimension tyypiksi **Sulje yksittäinen** tai **Sulje kaikki**.  Oletusarvo on **Sulje kaikki**, joka ylläpitää kirjattujen tapahtumien alkuperäiset taloushallinnon dimensiot ja käyttää niitä alkusaldojen luomiseen kertyneiden tuottojen tilille. Erilliset kertyneiden tuottojen alkusaldot luodaan jokaiselle yksilölliselle taloushallinnon dimensioarvoyhdistelmälle. Jos valittuna on **Sulje yksittäinen**, kaikki kyseisellä taloushallinnon dimensiolla kirjatut tapahtumat tiivistetään kertyneiden tuottojen alkusaldoksi **Sulje yksittäinen** -kenttään annetulle dimensioarvolle. Oletetaan esimerkiksi, että kaikki tilivuoden tapahtumat on kirjattu Päätili - Osasto -tilirakenteella. Mallin Osasto- taloushallinnon dimensiossa on valittuna **Sulje yksittäinen** ja annettu arvo on 100. Jos kaikkien osastoille 200, 300 ja 400 kirjattujen tapahtumien arvo on $100 000, Kertynyt tuotto - 100 -tilille luodaan yksi avaussaldo. Jos valitset **Sulje yksittäinen** ja jätät taloushallinnon dimensioarmon tyhjäksi, kaikki tapahtumat kirjataan kertyneihin voittoihin tyhjällä dimensioarvolla. 
 
-Sulje tilinpäätösprosessi ei noudata tilirakenteissa. Tämä johtuu siitä, että tilirakenteissa voi muuttaa koko tilikauden ja aina ei ole mahdollista tunnistaa asiaa kesken näiden muutosten vuoksi.  Avaustapahtumat luodaan, kun saldot aikaistaa taloushallinnon dimensiot on määritelty vuoden lopussa Sulje malli. Alusta saldot tapahtumat voi sisällyttää taloushallinnon dimensiot enää nykyisen tilin rakenne ja segmentin yhdistelmiä, jotka eivät enää kelpaa valitun tilin rakenne. Jos organisaatio haluaa jättää taloushallinnon dimension on pidätetty ansaitsee alkusaldo, Määritä taloushallinnon dimension on **sulkeminen yhden** ja dimensioarvo jätetään tyhjäksi.
+Tilivuoden päätösprosessi ei noudata tilirakenteita. Tämä johtuu siitä, että tilirakenteet voivat muuttua tilivuoden aikana, eikä asiaankuuluvaa tilirakennetta ei välttämättä voi tunnistaa näiden muutosten vuoksi.  Kun avaustapahtumat luodaan, saldot siirretään edelleen taloushallinnon dimensioiden kanssa tilivuoden lopetusmallin määrityksen mukaisesti. Alkusaldotapahtumat voivat sisältää taloushallinnon dimensioita, jotka eivät sisälly enää nykyiseen tilirakenne- ja segmenttiyhdistelmiin, jotka eivät ole enää kelvollisia nykyisessä tilirakenteessa. Jos organisaatiosi haluaa jättää taloushallinnon dimension pois kertyneiden voittojen alkusaldosta, aseta taloushallinnon dimension asetukseksi **Sulje yksittäinen** ja jätä dimensioarvo tyhjäksi.
 
-## <a name="run-the-year-end-close-process"></a>Suorittamalla Sulje tilinpäätösprosessi
-Koko vuoden tiiviissä mallit luodaan, kun vuoden sulkemisprosessi on aloitettu valitsemalla **suorittaa tilikauden** toimintoruudussa. Valitse kaikki tai osajoukko oikeussubjektien malli, jonka haluat suorittaa vuoden lopun sulkemisen. Kun käynnissä tilinpäätöksen sulkea tilikauden ensimmäistä kertaa, todennäköisesti valitaan kaikki oikeushenkilöt Luo alkusaldot juridiset henkilöt. Jos käytät vuoden lopun sulkeminen uudelleen, voit ajaa-prosessin vain juridiset henkilöt, joille on kirjattu oikaisevia. 
+## <a name="run-the-year-end-close-process"></a>Tilivuoden sulkemisprosessin suorittaminen
+Kun tilivuoden sulkemismallit on luotu, sulkemisprosessi aloitetaan valitsemalla toimintoruudusta **Suorita tilivuosi**. Valitse kaikki mallin yritykset tai niiden osajoukko, joille tilikauden lopetus suoritetaan. Kun suoritat tilivuoden sulkemisen tilivuodelle ensimmäisen kerran, valitset luultavasti kaikki yritykset, jotta voit luoda kaikille yrityksille alkusaldot. Jos suoritat tilivuoden sulkemisprosessin uudelleen, voit suorittaa prosessin ainoastaan yrityksille, joille on kirjattu korjaustapahtumia. 
 
-Valitse tilikausi, jonka haluat suorittaa Sulje tilinpäätösprosessi vastaan. Jos tilivuoden viimeisen kauden on olemassa enemmän kuin yksi jakso **nimi** kenttä ole käytettävissä, voit valita mitä lopetuskausi suljetaan, tapahtuma kirjataan, jos asetukset on määritetty, voit luoda tapahtumaa suljetaan. 
+Valitse tilivuosi, jolle haluat suorittaa tilivuoden sulkemisprosessin. Jos tilivuoden viimeisellä kaudella on useampi sulkemisjakso, **Jakson nimi** -kentässä voi valita, mihin sulkemisjaksoon sulkemistapahtuma kirjataan, jos sulkemistapahtuman luominen on määritetty. 
 
-Syötä tositteen tai numero, johon ei välttämättä vaadita riippuen yleensä asetusten kirjanpidon parametrit. Samaa tositenumeroa käytetään kaikkien vuoden lopussa Sulje prosessi valittu oikeushenkilöt. Tositteen numeroa ei luoda numerosarjan perusteella. On parasta, kirjoita tositteen numero, vaikka sitä ei vaadita. Tositenumero kirjoittamalla helpompaa uuden tilikauden avaaminen tapahtuma löytyy. Tositteen numeroa ei ole annettu, jos tosite on tyhjä, tapahtuman avaaminen. 
+Syötä tositenumero, joka on pakollinen riippuen kirjanpidon parametreissa määritetyistä asetuksista. Samaa tositenumeroa käytetään kaikille tilivuoden sulkemisprosessiin valituille yrityksille. Tositenumeron luomiseen ei käytetä numerosarjaa. On suositeltavinta syöttää tositenumero, vaikka se ei olisikaan pakollinen. Tositenumeron syöttäminen helpottaa avaustapahtuman löytämistä uudessa tilivuodessa. Jos tositenumeroa ei ole annettu, avaustapahtuman tosite on tyhjä. 
 
-Jos haluat vaihtaa valitun tilikauden lähelle edellisen vuoden lopussa **kumota edellisen sulkemisen**, **Kyllä**. Vuoden lopun sulkeminen peruutetaan, mutta prosessi voi suorittaa milloin tahansa. Jos Sulje, tilinpäätöksen **syntynyt viime vuoden lopussa Sulje** on saatavilla. 
+Jos haluat peruuttaa aiemman tilivuoden sulkemisen valitulle tilivuodelle, aseta **Kumoa edellinen sulkeminen** -arvoksi **Kyllä**. Tilivuoden sulkeminen peruutetaan, mutta prosessin voi suorittaa uudelleen milloin tahansa. Jos peruutat tilivuoden sulkemisen, **Edellisen tilikauden lopetuksen päivämäärä** -tieto ei ole saatavilla. 
 
-Vuoden sulkemisprosessi oletusarvo on ajo erätilassa. Se on parasta prosessi suoritetaan erätilassa käyttäjä palaa muihin toimiin. Vuoden lopussa sulkemisprosessi on valmis, **syntynyt viime vuoden lopussa Sulje** istunnon päivämäärä päivitetään.
+Tilikauden lopetusprosessi ajetaan oletusarvoisesti eräajona. On suositeltavinta suorittaa prosessi eräajona, jotta käyttäjä voi palata muihin toimiin. **Edellisen tilikauden lopetuksen päivämäärä** -kenttään päivitetään istunnon päivämäärä joka kerta, kun tilivuoden sulkemisprosessi suoritetaan.
 
-Lisätietoja on ohjeaiheessa [sulkea kauden lopussa kirjanpidon](close-general-ledger-at-period-end.md).
+Lisätietoja on ohjeaiheessa [Sulje kirjanpito kauden lopussa](close-general-ledger-at-period-end.md).
+
+
 
 

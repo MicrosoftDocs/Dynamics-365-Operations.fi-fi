@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="close-accounts-receivable"></a>Myyntireskontran sulkeminen
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Seuraava taulukko sisältää Myyntireskontra sulkeutuu -liiketoimintaprosessin osaa tukevien sivujen luettelon.
 
 > [!NOTE] 
-> Voit avata taulukon jotkin sivut, tiedot tai määritä parametriasetukset.
+> Joidenkin seuraavan taulukon sivujen avaaminen edellyttää, että annat tietoja tai määrität parametriasetuksia.
 
-**Liiketoimintaprosessin osan tehtävän**                   
+**Liiketoimintaprosessin osan tehtävä**                   
 
 Sulje jaksot kirjanpidossa
 
@@ -43,21 +46,23 @@ Sulje jaksot kirjanpidossa
 |Vahvista myyntitilaus                   | Päivitä myyntitilauksia.                                                                       |
 |Ulkomaanvaluutan uudelleenarvostus          | Luo tapahtumia, jotka päivittävät sellaisten avointen asiakastapahtumien arvon, joissa on käytössä vieras valuutta.                                                                                                                         |
 | Kirjauskansio                              | Kirjaa laskuja, maksuja ja velkakirjoja.                                             |
-| Kirjaustosite                      | -   **Payment journal** – Generate, process, and post payments.
+| Kirjaustosite                      | -   **Maksukirjauskansio**: Luo, käsittele ja kirjaa maksuja.
                                          -   **Draw bill of exchange journal** – Post bills of exchange.
                                          -   **Protest bill of exchange journal** – Post protested bills of exchange.
                                          -   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
                                          -   **Remittance journal** – Post remittances.
                                          -   **Settle bill of exchange journal** – Post settled bills of exchange                   |
-| Pakkausluettelon kirjauksen | Päivitä myyntitilausten pakkausluetteloita.                                                     | | Kirjaa tekstimuotoinen lasku | Kirjaa vapaatekstilaskuja.                                                                   | | Laskun kirjaaminen | Kirjaa myyntitilausten laskuja.                                                            | | Keräysluettelon kirjaaminen | Päivitä myyntitilausten keräysluetteloita.                                                      |
+| Pakkausluettelon kirjaus                  | Päivitä myyntitilausten pakkausluetteloita.                                                     | | Kirjaa vapaatekstilasku               | Kirjaa vapaatekstilaskuja.                                                                   | | Laskun kirjaaminen                    | Kirjaa myyntitilausten laskuja.                                                            | | Keräysluettelon kirjaaminen                  | Päivitä myyntitilausten keräysluetteloita.                                                      |
 
-**Liiketoimintaprosessin osan tehtävän**   
+**Liiketoimintaprosessin osan tehtävä**   
 
 EU-myyntiluettelon luominen ja lähettäminen
 
 | Sivun nimi                            | Käyttö                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
 |EU-myyntiluettelo                         | Euroopan unionin (EU) myynnin ilmoittaminen veroviranomaiselle arvonlisäveron ilmoittamista varten.                                                                                                                           |
+
+
 
 
 

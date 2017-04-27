@@ -49,7 +49,7 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Tallenna nimellä                           | Tallenna nykyinen rivin, sarakkeen, raportointipuun tai raportin määritys uudella nimellä.                                                                            |
 | Ominaisuudet                        | Avaa **Ominaisuudet**-valintaikkuna, jossa voit muuttaa raportin nimen ja kuvauksen.                                                                                                   |
 | Luo                          | Luo nykyinen raportti. Tämä komento on käytettävissä raportin määrityksestä.                                                                                                                 |
-| Tarkastele raporttia                       | Avaa luodun raportin uusin versio Dynamics 365 operaatioille. Tämä komento on käytettävissä raportin määrityksestä, jos luotuna on vähintään yksi raportti.                                 |
+| Tarkastele raporttia                       | Avaa luodun raportin uusin versio Dynamics 365 for Operations -ohjelmassa. Tämä komento on käytettävissä raportin määrityksestä, jos luotuna on vähintään yksi raportti.                                 |
 | Viimeisimmät raporttien määritykset         | Näytä äskettäin luotujen tai muokattujen raporttien luettelo. Tämän jälkeen voit valita raportin luettelosta.                                                                                    |
 | Viimeisimmät rivien määritykset            | Näytä äskettäin luotujen tai muokattujen rivien määritysten luettelo. Tämän jälkeen voit valita rivin määrityksen luettelosta.                                                                    |
 | Viimeisimmät sarakkeiden määritykset         | Näytä äskettäin luotujen tai muokattujen sarakkeiden määritysten luettelo. Tämän jälkeen voit valita sarakkeen määrityksen luettelosta.                                                              |
@@ -80,7 +80,7 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Lisää sarake                          | Lisää tyhjä sarake sarakkeen määritykseen. Tämä komento on käytettävissä sarakkeen määrityksestä.                                                                                                             |
 | Poista sarake                          | Poista valittu sarake sarakkeen määrityksestä. Tämä komento on käytettävissä sarakkeen määrityksestä.                                                                                                         |
 | Lisää raportointiyksiköitä dimensioista | Avaa **Lisää raportointiyksiköitä dimensioista** -valintaikkuna, jossa voi valita raportointipuun määritykseen sisällytettäviä dimensioarvoja. Tämä komento on käytettävissä raportointipuun määrityksestä. |
-| Tuo dimensioyhdistelmän hierarkia         | Avaa **Dimensioyhdistelmän hierarkia** -valintaikkuna, jossa voit tuoda dimensioyhdistelmän hierarkian taloushallinnon tiedoista. Tämä komento on käytettävissä raportointi puun määritelmä... \financial-dimensions\dimension-based järjestelmä.  |
+| Tuo dimensioyhdistelmän hierarkia         | Avaa **Dimensioyhdistelmän hierarkia** -valintaikkuna, jossa voit tuoda dimensioyhdistelmän hierarkian taloushallinnon tiedoista. Tämä komento on käytettävissä järjestelmässä raportointipuun määrityksestä ..\financial-dimensions\dimension-based.  |
 | Lisää raportointiyksikkö                  | Lisää tyhjä rivi raportointipuun määritykseen. Tämä komento on käytettävissä raportointipuun määrityksestä.                                                                                                |
 | Poista raportointiyksikkö                  | Poista valittu raportointiyksikön rivi raportointipuun määrityksestä. Tämä komento on käytettävissä raportointipuun määrityksestä.                                                                             |
 
@@ -159,7 +159,7 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 
 | Komento | kuvaus                                                  |
 |---------|--------------------------------------------------------------|
-| Ohje    | Avaa toimintojen ohjeen wiki sivun talousraportointiin Dynamics-365. |
+| Ohje    | Avaa Dynamics 365 for Operations -ohjelman ohjeen talousraportoinnin wikisivu. |
 |         |                                                              |
 
 ## <a name="report-designer-toolbar-buttons"></a>Report Designer -ohjelman työkalurivin painikkeet
@@ -171,23 +171,23 @@ Vakiotyökalurivi mahdollistaa tiedostojen ja muokkauskomentojen nopean käyttä
 
 | Painike                                                                                                                                                                                   | Kuvaus                                                                                                                                                                            |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![New button](./media/rowc130389.png)](./media/rowc130389.png)                              | Luo uusi (tyhjä) raportin, rivin, sarakkeen tai raportointipuun määritys.                                                                               |
+| [![Uusi painike](./media/rowc130389.png)](./media/rowc130389.png)                              | Luo uusi (tyhjä) raportin, rivin, sarakkeen tai raportointipuun määritys.                                                                               |
 | [![Avaa-painike](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Avaa aiemmin luotu rivin, sarakkeen, raportointipuun tai raportin määritys.                                                                                   |
 | [![Tallenna-painike](./media/savec130389.png)](./media/savec130389.png)                           | Tallenna nykyinen rivin, sarakkeen, raportointipuun tai raportin määritys.                                                                                   |
 | [![Kopioi-painike](./media/copyc130389.png)](./media/copyc130389.png)                           | Kopioi valittu teksti leikepöydälle.                                                                                                                                               |
 | [![Leikkaa-painike](./media/cutc130389.png)](./media/cutc130389.png)                              | Poista valittu teksti ja kopioi se leikepöydälle.                                                                                                                                |
 | [![Liitä-painike](./media/pastec130389.png)](./media/pastec130389.png)                        | Lisää teksti leikepöydältä.                                                                                                                                                    |
 | [![Kumoa-painike](./media/undoc130389.png)](./media/undoc130389.png)                           | Kumoa viimeisin toiminto.                                                                                                                                                                  |
-| [![Tee uudelleen-painike](./media/redoc130389.png)](./media/redoc130389.png)                           | Palauta viimeisin peruutustoiminto.                                                                                                                                                          |
+| [![Tee uudelleen -painike](./media/redoc130389.png)](./media/redoc130389.png)                           | Palauta viimeisin peruutustoiminto.                                                                                                                                                          |
 | [![Etsi-painike](./media/findc130389.png)](./media/findc130389.png)                           | Avaa **Etsi ja korvaa** -valintaikkuna, jossa voit hakea ja korvata tekstiä aktiivisesta ikkunasta.                                                                                  |
-| [![Lisää rivi-painikkeella](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Lisää tyhjä rivi rivin määritykseen tai tyhjään otsikkoriviin sarakkeen määrityksestä. Tämä painike on käytettävissä rivin tai sarakkeen määrityksestä.                    |
-| [![Aseta sarake-painike](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Lisää tyhjä sarake sarakkeen määritykseen. Tämä painike on käytettävissä sarakkeen määrityksestä.                                                                                  |
+| [![Lisää rivi -painike](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Lisää tyhjä rivi rivin määritykseen tai tyhjään otsikkoriviin sarakkeen määrityksestä. Tämä painike on käytettävissä rivin tai sarakkeen määrityksestä.                    |
+| [![Lisää sarake -painike](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Lisää tyhjä sarake sarakkeen määritykseen. Tämä painike on käytettävissä sarakkeen määrityksestä.                                                                                  |
 | [![Lukitse-painike](./media/lockc130389.png)](./media/lockc130389.png)                           | Käytä valittuna olevassa rakenneosassa salasanaa. Tämä painike on **suunnittelijan** tai **järjestelmänvalvojan** roolin omaavien käyttäjien käytettävissä.                                                 |
-| [![Linkitä rivi-painiketta](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Avaa **Rivien linkit** -valintaikkuna, jossa voi määrittää rivien ja raportointipuiden määritysten tietolinkkien lähteet. Tämä painike on käytettävissä rivin määrityksestä. |
-| [![Edistää painike](./media/promotec130389.png)](./media/promotec130389.png)                  | Ylennä raportointipuun määrityksen yksikkö. Kun valitset aliyksikön ja sen jälkeen **Ylennä**-painikkeen, aliyksikkö siirretään samalle tasolle kuin sen pääyksikkö.                |
-| [![Suurenna sisennystä-painike](./media/demotec130389.png)](./media/demotec130389.png)                     | Alenna raportointipuun määrityksen yksikkö. Kun valitset yksikön ja sen jälkeen **Alenna**-painikkeen yksiköstä tulee sitä edeltävän yksikön aliyksikkö.                               |
+| [![Rivin linkki -painike](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Avaa **Rivien linkit** -valintaikkuna, jossa voi määrittää rivien ja raportointipuiden määritysten tietolinkkien lähteet. Tämä painike on käytettävissä rivin määrityksestä. |
+| [![Ylennä-painike](./media/promotec130389.png)](./media/promotec130389.png)                  | Ylennä raportointipuun määrityksen yksikkö. Kun valitset aliyksikön ja sen jälkeen **Ylennä**-painikkeen, aliyksikkö siirretään samalle tasolle kuin sen pääyksikkö.                |
+| [![Alenna-painike](./media/demotec130389.png)](./media/demotec130389.png)                     | Alenna raportointipuun määrityksen yksikkö. Kun valitset yksikön ja sen jälkeen **Alenna**-painikkeen yksiköstä tulee sitä edeltävän yksikön aliyksikkö.                               |
 | [![Laajenna-painike](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Laajenna kaikki raportointipuun määrityksen yksiköt valitun yksikön tasolla.                                                                                                   |
-| [![Kutista-painike](./media/collapsec130389.png)](./media/collapsec130389.png)               | Tiivistä raportointipuu.                                                                                                                                                           |
+| [![Tiivistä-painike](./media/collapsec130389.png)](./media/collapsec130389.png)               | Tiivistä raportointipuu.                                                                                                                                                           |
 | [![Ohje-painike](./media/helpc130389.png)](./media/helpc130389.png)                           | Avaa Ohje.                                                                                                                                                                             |
 
 ### <a name="formatting-toolbar"></a>Muotoilutyökalurivi
@@ -196,16 +196,16 @@ Muotoilutyökalurivin avulla tyylikomennot on helppo ottaa käyttöön. Tämä t
 
 | Painike                                                                                                                                                                                                   | Kuvaus                                             |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Fontin tyyli-painiketta](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Ota valittu fonttityyli käyttöön nykyisessä tekstissä.      |
+| [![Fonttityyli-painike](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Ota valittu fonttityyli käyttöön nykyisessä tekstissä.      |
 | [![Fontti-painike](./media/fonttype.png)](./media/fonttype.png)                                                 | Määritä nykyinen teksti valitulla fontilla.              |
 | [![Fonttikoko-painike](./media/fontsize.png)](./media/fontsize.png)                                            | Määritä nykyinen teksti valitulla fonttikoolla (pisteinä). |
-| [![Lihavoitu-painike](./media/boldc130389.png)](./media/boldc130389.png)                                           | Lihavoi nykyinen teksti.                             |
-| [![Kursivoitu-painike](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Kursivoi nykyinen teksti.                           |
+| [![Lihavoi-painike](./media/boldc130389.png)](./media/boldc130389.png)                                           | Lihavoi nykyinen teksti.                             |
+| [![Kursivoi-painike](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Kursivoi nykyinen teksti.                           |
 | [![Alleviivaa-painike](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Alleviivaa nykyinen teksti.                             |
-| [![Pienennä sisennystä-painike](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Pienennä nykyisen tekstin sisennystä.                |
-| [![Suurenna sisennystä-painike](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Suurenna nykyisen tekstin sisennystä.                |
-| [![Taustan väri-painike](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Muuta nykyisen solun taustaväriä.        |
-| [![Fontin väri-painike](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Muuta nykyisen tekstin väriä.                   |
+| [![Pienennä sisennystä -painike](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Pienennä nykyisen tekstin sisennystä.                |
+| [![Suurenna sisennystä -painike](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Suurenna nykyisen tekstin sisennystä.                |
+| [![Taustaväri-painike](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Muuta nykyisen solun taustaväriä.        |
+| [![Fontin väri -painike](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Muuta nykyisen tekstin väriä.                   |
 
 ### <a name="report-designer-toolbar"></a>Report Designer -työkalurivi
 
@@ -213,12 +213,12 @@ Reporter Designer -työkaluriviltä voi käyttää nopeasti Report Designerin si
 
 | Painike                                                                                                                                                                                          | Kuvaus                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![Raportin määritys-painike](./media/reportc130389.png)](./media/reportc130389.png)                 | Näytä **Ikkuna**-valikossa näkyvä raportin määritys.                                                                                                            |
-| [![Rivin määritelmä-painike](./media/rowc130389.png)](./media/rowc130389.png)                          | Näyttää aktiivisen raportin määritykseen liitetyn rivin määrityksen.                                                                                                    |
-| [![Sarakkeen määritys-painike](./media/columnc130389.png)](./media/columnc130389.png)                 | Näyttää aktiivisen raportin määritykseen liitetyn sarakkeen määrityksen.                                                                                                 |
-| [![Reporting definition Tree -painike](./media/treec130389.png)](./media/treec130389.png)             | Näyttää aktiivisen raportin määritykseen liitetyn raportointipuun määrityksen.                                                                                         |
-| [![Raportin katseluikkuna-painike](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Käynnistä Report Viewer ja näytä luodun raportin uusin versio. Tämä painike on käytettävissä raportin määrityksestä, jos luotuna on vähintään yksi raportti. |
-| [![Luo raportti-painike](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Luo raportin aktiivisen raportin määrityksestä. Tämä painike on käytettävissä raportin määrityksestä.                                                                      |
+| [![Raportin määritys -painike](./media/reportc130389.png)](./media/reportc130389.png)                 | Näytä **Ikkuna**-valikossa näkyvä raportin määritys.                                                                                                            |
+| [![Rivin määritys -painike](./media/rowc130389.png)](./media/rowc130389.png)                          | Näyttää aktiivisen raportin määritykseen liitetyn rivin määrityksen.                                                                                                    |
+| [![Sarakkeen määritys -painike](./media/columnc130389.png)](./media/columnc130389.png)                 | Näyttää aktiivisen raportin määritykseen liitetyn sarakkeen määrityksen.                                                                                                 |
+| [![Raportointipuun määritys -painike](./media/treec130389.png)](./media/treec130389.png)             | Näyttää aktiivisen raportin määritykseen liitetyn raportointipuun määrityksen.                                                                                         |
+| [![Report Viewer -painike](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Käynnistä Report Viewer ja näytä luodun raportin uusin versio. Tämä painike on käytettävissä raportin määrityksestä, jos luotuna on vähintään yksi raportti. |
+| [![Luo raportti -painike](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Luo raportin aktiivisen raportin määrityksestä. Tämä painike on käytettävissä raportin määrityksestä.                                                                      |
 
 
 
@@ -227,6 +227,6 @@ Reporter Designer -työkaluriviltä voi käyttää nopeasti Report Designerin si
 
 [Microsoft Dynamics ERP:n talousraportointi](financial-reporting-intro.md)
 
-[Generate a financial report](\financials\general-ledger\generate-financial-report.md)
+[Luo raportti](\financials\general-ledger\generate-financial-report.md)
 
 

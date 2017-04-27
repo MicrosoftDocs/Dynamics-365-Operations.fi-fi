@@ -26,15 +26,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-workflow"></a>Luo työnkulku
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä ohjeaiheessa kerrotaan, miten voit luoda työnkulun.
 
 <a name="open-the-workflow-editor"></a>Avaa työnkulkueditori
 ------------------------
 
-Toiminnot-moduulin, joka työskentelet Microsoft Dynamics-365 määrittää työnkulun voi luoda. Valitse näiden ohjeiden avulla työnkulkutyyppi työnkulkueditorin luomiseksi ja avaamiseksi.
+Microsoft Dynamics 365 for Operations -moduuli, jolla työskentelet, määrittää työnkulun tyypit, joita voit luoda. Valitse näiden ohjeiden avulla työnkulkutyyppi työnkulkueditorin luomiseksi ja avaamiseksi.
 
 1.  Avaa moduuli, jolle haluat luoda uuden työnkulun. Esimerkiksi luoda työnkulun ostoehdotukselle valitsemalla **hankinta**.
-2.  Valitse **asetusten**&gt;**\[moduulin nimi\] työnkulkujen**.
+2.  Valitse **Asetukset** &gt; **\[moduulin nimi\] työnkulut**.
 3.  Luettelosivun, joka näkyy toimintoruudussa valitse**uusi**.
 4.  Valitse **luoda työnkulun** -sivu, ja valitse sitten työnkulun tyyppi ja valitse **luoda työnkulun**. Työnkulkueditori tulee näyttöön Seuraavan menetelmän avulla voit rakentaa työnkulun.
 
@@ -75,6 +78,8 @@ Kun olet valmis tallentamaan ja aktivoimaan työnkulun, noudata seuraavia ohjeit
 3.  Jos kaikki virheet ja varoitukset on ratkaistu, **työnkulun aktivoiminen** -sivu tulee näkyviin. Valitse jompikumpi seuraavista vaihtoehdoista:
     -   Voit aktivoida tämän työnkulun version valitsemalla **Ota uusi versio käyttöön**. Kun työnkulku on aktiivinen, käyttäjät voivat lähettää siihen asiakirjoja käsittelyä varten.
     -   Jos et halua aktivoida versiota napsauta **Älä ota uutta versiota käyttöön**. Voit ottaa työnkulun käyttöön myöhemmin.
+
+
 
 
 

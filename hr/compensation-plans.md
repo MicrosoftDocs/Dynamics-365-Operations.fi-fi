@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="compensation-plans"></a>Kompensaatiosuunnitelmat
 
+[!include[banner](includes/banner.md)]
+
+
 Kompensaatio- ja etuuspäälliköt voiva käyttää kompensaation hallintaa organisaation työntekijöiden kiinteiden ja muuttuvien kompensaatiosuunnitelmien ylläpitämisessä ja käsittelemisessä.
 
 ### <a name="introduction"></a>Johdanto
 
-Kompensaationhallinnan avulla ohjataan peruspalkan ja palkkioiden maksamista toimittaminen. Työntekijän kiinteän peruspalkan ja palkankorotusten hallitaan kiinteän kompensaatiosuunnitelmien avulla. Bonusmaksujen, suorituskykypalkkioiden, optioiden, lahjoitusten sekä muiden kannusteiden maksamista hallitaan muuttuvan kompensaation suunnitelmien avulla. 
+Kompensaationhallinnan avulla ohjataan peruspalkan ja palkkioiden maksamista. Työntekijän kiinteän peruspalkan ja bonusten korotuksia hallitaan kiinteän kompensaatiosuunnitelmien avulla. Bonusmaksujen, suorituskykypalkkioiden, optioiden, lahjoitusten sekä muiden kannusteiden maksamista hallitaan muuttuvan kompensaation suunnitelmien avulla. 
 
 Työntekijä voidaan liittää yhteen tai useaan suunnitelmaan, ja työntekijällä voidaan käyttää kumpaakin suunnitelmatyyppiä. Työntekijän on täytettävä seuraavat vaatimukset, ennen kuin hänet voi rekisteröidä kompensaatiosuunnitelmaan:
 -   Työntekijällä on oltava aktiivinen toimen määritys.
@@ -54,7 +57,7 @@ Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka v
 <td>Kiinteän kompensaation toiminnot, joilla on kaksi tarkoitusta:
 <ul>
 <li>Toiminnoilla voidaan määrittää minkälaiset tiedot on kirjattava, kun työntekijän kompensaatio muuttuu. Voit esimerkiksi edellyttää, että muutoksen syy, kuten ylennys tai alennus, kirjataan.</li>
-<li>Toiminnot voidaan varmistaa, että laskennassa käytetään, kun kiinteitä kompensaatiosuunnitelmia käsitellään.  Esimerkiksi Osakepääoma verrata työntekijöiden palkan ja työntekijän tasolla vähintään vertailukohteen ja varmistaa työntekijän hakeminen maksetaan vähintään vähimmäismäärän.</li>
+<li>Toiminnot voivat varmistaa, että laskentaa käytetään, kun kiinteitä kompensaatiosuunnitelmia käsitellään.  Esimerkiksi Oma pääoma -tyypin toiminnot vertaavat työntekijöiden palkkaa työntekijän tason vähimmäisviitepisteeseen, mikä varmistaa, että työntekijälle maksetaan ainakin minimipalkka.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -83,7 +86,7 @@ Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka v
 </tr>
 <tr class="even">
 <td>Maksutiheydet</td>
-<td>Ajanjakso, jolle on määritetty korvaus käytetään maksutiheyksiä.  Esimerkiksi maksu taajuus-auttaa sinua ymmärtämään Jos korvauksen summa määritetään vuotuinen palkka hourly vs. palkkio. Maksutiheyksiä ovat myös käyttää Määritä muuntokertoimet muunnettaessa summia korvausta kuukausittain, viikoittain, kahden viikon ja hourly maksutiheydet vuosittain Maksutiheyden.</td>
+<td>Maksutiheyksien avulla määritetään aikajakso, jolle kompensaation on määritetty.  Esimerkiksi maksutiheys auttaa sinua ymmärtämään, jos kompensaatiosumma määritetään vuotuisena palkkana vs. tuntihintana. Maksutiheyksiä myös käytetään määrittämään muuntokertoimet, joiden avulla muunnetaan kompensaatiosummia kuukausittaisista, viikoittaisista, kahden viikon jaksoista ja tuntikohtaisista maksuista vuosittaiseen maksutiheyteen.</td>
 </tr>
 <tr class="odd">
 <td>Kompensaatioalueet</td>
@@ -107,7 +110,7 @@ Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka v
 </tr>
 <tr class="even">
 <td>Kompensaatioruudukot</td>
-<td>Kompensaatioruudukot sisällä olevan kompensaatiosuunnitelman rakenne.  Kompensaatioruudukot voidaan käyttää yhden tai useamman kompensaatiosuunnitelmien mukaan.</td>
+<td>Kompensaatioruudukot sisältävät kompensaation rakenteen.  Kompensaatioruudukoita voidaan käyttää yhdelle tai useammalle kompensaatiosuunnitelmalle.</td>
 </tr>
 <tr class="odd">
 <td>Suorituskykysuunnitelmat</td>
@@ -126,9 +129,11 @@ Prosessitapahtuma laskee tietyn kauden kompensaatiotiedot kaikille työntekijöi
 <a name="compensation-events"></a>Kompensaatiotapahtumat
 -------------------
 
-Prosessitapahtuma suoritetaan, aina korvausta tapahtuma luodaan.  Kompensaatiotapahtumat sisältää kunkin työntekijän kyseisen tapahtuman sisälly kompensaatioprosessi tuloksista.  Kun laskelmat ovat oikein, voit ladata kompensaation tietueiden päivittämistä työntekijöille, jotka vaikuttavat prosessitapahtuman kompensaatiotapahtuman.
+Aina kun prosessitapahtuma suoritetaan, kompensaatiotapahtuma luodaan.  Kompensaatiotapahtumat sisältävät kunkin työntekijän kyseiseen prosessitapahtumaan sisältyvän kompensaatioprosessin tulokset.  Kun laskelmat ovat oikein, voit ladata kompensaatiotapahtuman päivittääksesi kompensaatiotietueet työntekijöille, joihin prosessitapahtuma vaikuttaa.
 
 ## <a name="recommendations"></a> Suositukset
 Voit suositella prosessitapahtuman suorittamisen jälkeen muutoksia työntekijän palkankorotus- tai palkkiosummaan prosessitapahtuman laskemien ohjeiden perusteella. Työntekijäsuositusten tekeminen edellyttää, että suositukset on otettu käyttöön, kun kompensaatiosuunnitelmat tai prosessitapahtuma määritettiin.
+
+
 
 

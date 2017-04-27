@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-credit"></a>Luottokirjeet
 
+[!include[banner](../includes/banner.md)]
+
+
 Luottokirjeet ovat pankkitositteita, joita käytetään usein valtioiden rajojen yli tapahtuvassa tavaroiden ostossa ja myynnissä. 
 
 Rembursseja käytetään kansainvälisissä liiketoimissa varmistamaan, että maksut suorittetaan. Remburssi on pankin antama sopimus, jossa pankki suostuu varmistamaan maksun ostajan puolesta, jos ostajan ja myyjän väliset ehdot täyttyvät. Huomaa, että remburssi tunnetaan myös luottokirjeenä. 
 
-Tärkeässä remburssissa yritys on ostaja tai remburssin hakija. Vientiremburssissa yritys on myyjä tai remburssin edunsaaja. Kuin remburssin ovat seuraavat osapuolet: 
+Tärkeässä remburssissa yritys on ostaja tai remburssin hakija. Vientiremburssissa yritys on myyjä tai remburssin edunsaaja. Luottokirjeen osapuolet ovat seuraavat: 
 
  - hakija (ostaja), joka aikoo maksaa tavarat 
  - saaja (myyjä), joka vastaanottaa maksun
@@ -41,5 +44,7 @@ Tärkeässä remburssissa yritys on ostaja tai remburssin hakija. Vientiremburss
 Remburssi sisältää kuvauksen tavaroista, mahdollisesti tarvittavat dokumentit, lähetyspäivän ja vanhentumispäivän, minkä jälkeen maksu peruuntuu. Viranomainen pankki kerää marginaalin remburssista. 
 
 Remburssi voi olla peruutettavissa tai peruuttamaton . Remburssi voi olla luonteeltaan siirrettävissä, ei-siirrettävissä tai pyörivä. Yleensä remburssi on peruuttamaton ja vahvistettu sopimus, jossa luvataan että maksu suoritetaan tietylle saajalle, kun täydellinen ja tarkka lähetysasiakirja on esitetty.
+
+
 
 

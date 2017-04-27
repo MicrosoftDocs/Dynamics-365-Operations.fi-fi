@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Talousraporttien raportointipuiden määritykset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja raporttipuun määrityksistä. Raportointipuun määritys on raporttiosa tai rakenneosa, joka auttaa määrittämään organisaation rakenteen ja organisaation.
 
 Talousraportointi tukee joustavaa raportointia, joten muutoksia on helppo tehdä liiketoiminnan rakenteen muuttuessa. Raportit muodostetaan erilaisista osista eli rakenneosista. Yksi näistä rakenneosista on raportointipuun määritys. Raportointipuun määritys auttaa määrittämään organisaation rakenteen ja hierarkian. Se on dimensiot ylittävä hierarkkinen rakenne, joka perustuu taloushallinnon tietojen dimensioiden suhteisiin. Sen avulla saadaan tietoja raportointiyksikkötasolla ja kaikkien puun yksiköiden yhteenvetotasolla. Raportointipuiden määritykset voidaan yhdistää sarakkeiden ja raporttien määrityksiin. Näin luodaan rakenneosaryhmä, jota voidaan käyttää useissa yrityksissä. Raportointiyksikköä käytetään organisaatiokaavion jokaisessa ruudussa. Raportointiyksikkö voi olla taloushallinnon tietojen yksittäinen osasto tai korkeamman tason yhteenvetotietojen yksikkö, joka yhdistää muiden raportointiyksiköiden tiedot. Raportointipuun sisältävään raportin määritykseen luodaan yksi raportti kutakin raportointiyksikköä ja yhteenvetotasoa kohti. Näissä raporteissa käytetään raportin määrityksessä määritettyjä rivien ja sarakkeiden määrityksiä, jos raportin määrityksessä ei määritetä käyttämään rivin määrityksen raportointipuuta. Rivien ja sarakkeiden määritykset ovat talousraporttien suunnittelun ja toimintojen tärkeitä komponentteja. Raportointipuut parantavat komponenttien tehokkuutta ja tukevat joustavaa raportointia liiketoiminnan rakenteen muuttuessa. Talousraporteissa, jotka eivät perustu raportointipuuhun, käytetään vain joitakin talousraportoinnin ominaisuuksia. Samoissa rivien ja sarakkeiden määrityksissä voi käyttää useita raportointipuiden määrityksiä. Näin organisaation tietoja voidaan katsella eri tavoin.
@@ -49,7 +52,7 @@ Raportointipuun määritys sisältää sarakkeet, joita käsitellään seuraavas
 
 | Raportointipuu-sarake | kuvaus|
 |---|---|
-| Yritys                | Raportointiyksikön yrityksen nimi. **@ANY**-Arvo, joka määritetään yleensä vain yhteenvetotehtävä-taso, mahdollistaa raportointi puu, jota käytetään kaikissa yrityksissä. Kaikkiin alemman tason haaroihin on liitetty yritys.|
+| Yritys                | Raportointiyksikön yrityksen nimi. **@ANY**-arvo, joka liitetään yleensä vain yhteenvetotasolla. Sen ansiosta raportointipuuta voidaan käyttää kaikissa yrityksessä. Kaikkiin alemman tason haaroihin on liitetty yritys.|
 | Yksikön nimi             | Koodi, joka määrittää tämän raportointiyksikön graafisessa raportointipuussa. Varmista, että muodostettava yksilöllinen koodausjärjestelmä on yhdenmukainen ja että käyttäjien on helppo ymmärtää sitä. |
 | Yksikön kuvaus      | Raportointiyksikön otsikko näkyy raportin ylä- tai alatunnisteessa, jos raportin määrityksen **Ylä- ja alatunnisteet** -välilehteen syötetään **UnitDesc**-koodi. Otsikko näkyy raportin rivin kuvauksessa, jos syötät rivin määrityksen **Kuvaus**-soluun **UnitDesc**.|
 | Dimensiot            | Raportointiyksikkö, joka esittää tiedot suoraan taloushallinnon tiedoista. Se määrittää tilin ja liittyvien segmenttien loogisen asettelun ja pituudet. Kullakin raportointiyksikön rivillä on oltava dimensio tässä sarakkeessa. Voit sijoittaa dimension myös yhteenvetotietojen yksikköriville (esimerkiksi kuluille, jotka liittyvät suoraan kyseiseen yksikköön). Jos annat dimension yhteenvetotietojen yksikköriville, pääyksiköissä käytettäviä tilejä ei saa käyttää aliyksiköissä. Muussa tapauksessa summista voi tulla päällekkäisiä.|
@@ -58,15 +61,15 @@ Raportointipuun määritys sisältää sarakkeet, joita käsitellään seuraavas
 | Ulkoinen linkki         | Tässä raportointiyksikössä käytettävä rivin linkki. Rivien linkit määritetään rivin määritykselle, jolla tunnistetaan linkitettävä raportti.|
 | Ulkoinen tiedosto         | Sen talousraportoinnin laskentataulukon tiedostopolku, josta tiedot haetaan.|
 | Sivuvaihtoehdot          | Tämä sarake määrittää, estetäänkö raportointiyksikön tiedot, kun raporttia tarkastellaan tai se tulostetaan.|
-| Koonti-%              | Pääyksikköön kohdistettavan raportointiyksikön prosenttiosuus. Tähän sarakkeeseen syötettävä prosenttiluku koskee rivin määrityksen jokaista riviä, ennen kuin rivin arvo lisätään pääraporttiin. Jos esimerkiksi aliyksikkö on jaettava tasan kahden osaston kesken, kunkin rivin summat kerrotaan 50 prosentilla, ennen kuin arvo lisätään osaston raporttiin. Yhdellä raportointiyksiköllä ei voi olla kahta pääyksikköä. Raportointiyksikön summat voidaan kohdistaa kahteen pääyksikköön luomalla toinen raportointiyksikkö, jolla on sama dimensio loppujen 50 prosentin kokoamiseen. Anna prosenttiluvut ilman desimaalipilkkua. Esimerkiksi **25** tarkoittaa 25 prosentin kohdistusta pääyksikköön. Jos desimaalipilkkua käytetään (**,25**), pääyksikölle kohdistetaan 0,25 prosenttia. Haluat käyttää prosentti eli alle 1 prosenttia, **Salli Rollup &lt;1 %** raporttimääritys-vaihtoehdon. Tämä vaihtoehto on **Raportin asetukset** -valintaikkunan **Lisäasetukset**-välilehdessä. Voit käyttää tätä valintaikkunaa raportin määrityksen **Asetukset**-välilehden **Muu**-painikkeella. |
+| Koonti-%              | Pääyksikköön kohdistettavan raportointiyksikön prosenttiosuus. Tähän sarakkeeseen syötettävä prosenttiluku koskee rivin määrityksen jokaista riviä, ennen kuin rivin arvo lisätään pääraporttiin. Jos esimerkiksi aliyksikkö on jaettava tasan kahden osaston kesken, kunkin rivin summat kerrotaan 50 prosentilla, ennen kuin arvo lisätään osaston raporttiin. Yhdellä raportointiyksiköllä ei voi olla kahta pääyksikköä. Raportointiyksikön summat voidaan kohdistaa kahteen pääyksikköön luomalla toinen raportointiyksikkö, jolla on sama dimensio loppujen 50 prosentin kokoamiseen. Anna prosenttiluvut ilman desimaalipilkkua. Esimerkiksi **25** tarkoittaa 25 prosentin kohdistusta pääyksikköön. Jos desimaalipilkkua käytetään (**,25**), pääyksikölle kohdistetaan 0,25 prosenttia. Jos haluat käyttää prosenttilukua, joka on alle yksi, käytä raportin määrityksen **Salli koonti &lt; 1 %** -asetusta. Tämä vaihtoehto on **Raportin asetukset** -valintaikkunan **Lisäasetukset**-välilehdessä. Voit käyttää tätä valintaikkunaa raportin määrityksen **Asetukset**-välilehden **Muu**-painikkeella. |
 | Yksikön suojaus         | Rajoitukset, joiden mukaan käyttäjät ja ryhmät voivat käyttää raportointiyksikön tietoja.|
 | Lisäteksti       | Raporttiin sisällytettävä teksti.|
 
 Voit luoda raportointipuun määrityksen seuraavien vaiheiden avulla.
 
 1.  Avaa Report Designer.
-2.  Valitse **tiedosto**&gt;**uusi**&gt;**Reporting Definition puun**.
-3.  Valitse **Muokkaa**&gt;**raportointi yksiköt lisätä dimensiot**.
+2.  Valitse **Tiedosto** &gt; **Uusi** &gt; **Raportointipuun määritys**.
+3.  Valitse **Muokkaa** &gt; **Lisää raportointiyksiköitä dimensioista**.
 4.  Valitse **Lisää raportointiyksiköitä dimensioista** -valintaikkunassa jokaisen raportointipuuhun sisällytettävän dimension valintaruutu. **Lisää raportointiyksiköitä dimensioista** -valintaruutu sisältää seuraavat osat.
 
     | Osa                          | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -85,7 +88,7 @@ Voit luoda raportointipuun määrityksen seuraavien vaiheiden avulla.
 
 9.  Toista vaiheet 7–8 **Segmenttihierarkia ja -alueet** -alueen jokaisessa dimensiossa.
 10. Kun raportointiyksiköiden tuontitapa uuteen raportointipuuhun on määritetty, valitse **OK**.
-11. Valitse **tiedosto**&gt;**Tallenna** raportointi puun säästämiseksi. Syötä raportointipuulle yksilöivä nimi ja kuvaus ja valitse sitten **OK**.
+11. Tallenna raportointipuu valitsemalla **Tiedosto** &gt; **Tallenna**. Syötä raportointipuulle yksilöivä nimi ja kuvaus ja valitse sitten **OK**.
 
 ### <a name="open-an-existing-reporting-tree-definition"></a>Aiemmin luodun raportointipuun määrityksen avaaminen
 
@@ -121,7 +124,7 @@ Voit järjestää raportointipuun määrityksen organisaatiorakenteen uudelleen 
 1.  Avaa Report Designer -ohjelmassa muokattava raportointipuun määritys.
 2.  Valitse raportointiyksikkö raportointipuun määrityksen graafisessa näkymässä.
 3.  Vedä yksikkö uuteen kohtaan. Voit vaihtoehtoisesti napsauttaa yksikköä hiiren kakkospainikkeella ja valita **Ylennä raportointiyksikkö** tai **Alenna raportointiyksikkö**.
-4.  Valitse **tiedosto**&gt;**Tallenna** Tallenna muutokset.
+4.  Tallenna muutokset valitsemalla **Tiedosto** &gt; **Tallenna**.
 
 ### <a name="add-text-about-a-reporting-unit"></a> Raportointiyksikköä koskevan tekstin lisääminen
 
@@ -189,7 +192,7 @@ Seuraavan kaavion raportointiyksikössä on yritystoimintojen perusteella jaettu
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Esimerkki Raportointiyksiköiden lisääminen dimensioista -valintaikkunasta
 
-Seuraavassa kuvassa on esimerkki **Lisää raportointiyksiköitä dimensioista** -valintaikkunasta. Tässä esimerkissä tulokset palauttavat liiketoimintayksiköiden, kustannuspaikkojen ja osastojen yhdistelmän. [![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png) tuloksena raportointi puun määritelmä lajitellaan liiketoimintayksikön, sitten kustannuspaikoittain, ja sitten osastoittain. Dimensio on viides raportointiyksikkö on **liiketoimintayksikön = \[001\], kustannuspaikka =\[\]-osasto = \[022\]**, ja tunnistaa raportointiyksikkö tileille, jotka liittyvät liiketoiminnan yksikkö 001 ja osasto 022. [![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+Seuraavassa kuvassa on esimerkki **Lisää raportointiyksiköitä dimensioista** -valintaikkunasta. Tässä esimerkissä tulokset palauttavat liiketoimintayksiköiden, kustannuspaikkojen ja osastojen yhdistelmän. [![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png) Tuloksena on raportointipuu, joka lajitellaan ensin liiketoimintoyksikön, sitten kustannuspaikan ja lopuksi osaston mukaan. Viidennen raportointiyksikön dimensio on **Liiketoimintayksikkö = \[001\], Kustannuspaikka = \[\], Osasto = \[022\]** ja se tunnistaa liiketoimintayksikölle 001 ja osastolle 022 kuuluvien tilien raportointiyksikön. [![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Esimerkkejä tietojen koonnista
 
@@ -205,6 +208,8 @@ Seuraavassa esimerkissä on koottujen tietojen raportointipuun määrityksessä 
 
 # <a name="see-also"></a>Lisätietoja
 
-[Financial reporting](financial-reporting-intro.md)
+[Taloushallinnan raportointi](financial-reporting-intro.md)
+
+
 
 

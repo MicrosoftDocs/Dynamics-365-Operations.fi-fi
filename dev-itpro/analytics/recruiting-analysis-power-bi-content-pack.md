@@ -1,6 +1,6 @@
 ---
-title: "Työhönotosta vastaavan sisällön virtaa BI"
-description: "Tässä aiheessa kuvataan toiminnot - Power BI työhönotosta vastaavan sisällön osalta Dynamics-365. Artikkelissa kerrotaan, miten voit käyttää raportteja, jotka sisältyvät sisältö pack ja tietomallin ja yhteisöistä, joita käytettiin rakentaa sisältö pack tietoja."
+title: "Työhönoton Power BI -sisältö"
+description: "Tässä aiheessa kuvataan Dynamics 365 for Operations - Recruiting -sovelluksen Power BI -sisältöä. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,49 +24,52 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recruiting-power-bi-content"></a>Työhönotosta vastaavan sisällön virtaa BI
+# <a name="recruiting-power-bi-content"></a>Työhönoton Power BI -sisältö
 
-Tässä aiheessa kuvataan toiminnot - Power BI työhönotosta vastaavan sisällön osalta Dynamics-365. Artikkelissa kerrotaan, miten voit käyttää raportteja, jotka sisältyvät sisältö pack ja tietomallin ja yhteisöistä, joita käytettiin rakentaa sisältö pack tietoja.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>Sisältö pack käyttäminen
+
+Tässä aiheessa kuvataan Dynamics 365 for Operations - Recruiting -sovelluksen Power BI -sisältöä. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
+
+<a name="accessing-the-content-pack"></a>Sisältöpaketin avaaminen
 --------------------------
 
-Löydät työhönoton sisältöpaketti jaettujen varojen kirjaston Microsoft Dynamics Lifecycle Services (LCS). Saat lisätietoja siitä, miten sisältö pack ladata ja liittää sen Microsoft Dynamics-365, toimintojen tietojen [virtaa BI sisältöä Microsoftin ja kumppanien LCS-](power-bi-content-microsoft-partners.md).
+Löydät työhönoton sisältöpaketin Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Saat lisätietoja siitä, miten sisältöpaketti ladataan ja miten se liitetään Microsoft Dynamics 365 for Operationsin tietoihin, artikkelista [LCS:n Power BI -sisältö Microsoftilta ja kumppaneilta](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Raportit, jotka sisältyvät sisältö pack
-Sen jälkeen, kun olet muodostanut yhteyden oman Dynamics 365 toimintoja tietojen sisältö pack, raportit näkyvät organisaation tiedot. Jos et ole koskaan käyttänyt Microsoft Power BI ennen, saat siitä lisätietoja [sivulla ohjattu oppiminen Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raportit, jotka sisältyvät sisältö pack on sekä kaavioita ja taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
+## <a name="reports-that-are-included-in-the-content-pack"></a>Raportit, jotka sisältyvät sisältöpakettiin
+Kun olet liittänyt sisältöpaketin Dynamics 365 for Operations -tietoihin, organisaatiosi tiedot näkyvät raporteissa. Jos et ole käyttänyt Microsoft Power BI:tä aiemmin, lisätietoja löydät artikkelista [Power BI:n ohjattu oppiminen](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporteissa, jotka sisältyvät sisältöpakettiin, on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
 
 | Raportti                       | Sisältö                                                                                               |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
-| Hakijan analysointi           | Hakijoiden mukaan työhön, hakijan lähteistä, sijaintiin ja hakijoiden määrä hakijoita           |
-| Hakijan tilanne             | Hakijan tyyppi, tila ja Hakijan tilanne                                                    |
-| Hakijan demografia       | Hakijan iän ja sukupuolen mukaan ja hakijoiden koulutustaso ja tila                             |
-| Työhönoton analyysi          | NET vuokraus suhde, voit palkata huono palkkauksissa ja työhönoton kustannukset prosentteina käytettyjen päivien määrä keskimäärin                    |
-| Rekrytointi-projektin analyysin | Työhönottoprojektien, aukkojen mukaan työhönottoprojektin työhönottoprojektin mukaan hakijoiden määrä |
+| Hakijan analyysi           | Hakijat työn mukaan, hakijoiden lähteet, hakijat sijainnin mukaan ja hakijoiden kokonaismäärä           |
+| Hakijan tila             | Hakijat tyypin ja tilan mukaan sekä hakijan tila                                                    |
+| Hakijan demografia       | Hakijat iän ja sukupuolen mukaan sekä hakijat koulutustason ja tilan mukaan                             |
+| Työhönoton analyysi          | Työhönoton nettosuhde, palkkaukseen kuluvat keskimääräiset päivät, epäonnistuneiden palkkausten prosenttiosuus ja työhönoton kustannukset                    |
+| Työhönottoprojektin analyysi | Työhönottoprojektien määrä, avoimet paikat työhönottoprojektin mukaan ja hakijat työhönottoprojektin mukaan |
 
-Voit suodattaa kaavioita ja laatat raporteissa ja kiinnitä kaavioita ja laatat Dashboardiin. Saat lisätietoja siitä, miten suodatin ja Power BI-pin [Luo ja määritä A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
-Työvaiheiden tietoja Dynamics 365 käytetään raporttien sisältö Pack työhönoton täyttämiseen. Seuraavassa taulukossa on esitetty kohteiden sisältö pack on perustunut.
+Dynamics 365 for Operations -ohjelman tietoja käytetään työhönoton sisältöpaketin raporttien täyttämiseen. Seuraavassa taulukossa on esitetty yksiköt, joihin sisältöpaketti on perustunut.
 
-| Kokonaisuus                          | Sisältö                                                         | Suhteisiin                                                                                                                                                                                                                 |
+| Kokonaisuus                          | Sisältö                                                         | Suhteet muihin yksiköihin                                                                                                                                                                                                                 |
 |---------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Työhönotosta vastaavan\_hakijalle           | Hakijoiden, palkattiin hakijoiden, suhde net vuokraus ja kustannukset          | Työhönotosta vastaavan\_ApplicantName rekrytointiominaisuuksien\_työhönotosta vastaavan yrityksen\_CalendarOffset Recuriting\_päivämäärä rekrytointiominaisuuksien\_GeographicLocation rekrytointiominaisuuksien\_rekrytointiominaisuuksien demografia\_työhönotosta vastaavan työn\_Media rekrytointiominaisuuksien\_RecruitmentProject                                |
-| Työhönotosta vastaavan\_ApplicantName       | Hakijan Etunimi, Sukunimi ja koko nimi                   | Työhönotosta vastaavan\_hakijalle työhönotosta vastaavan\_työhönotosta vastaavan EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Työhönotosta vastaavan\_CalendarOffset      | Kalenterin siirtymät sektorin raportit                                | Työhönotosta vastaavan\_hakijalle työhönotosta vastaavan\_työhönotosta vastaavan EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Työhönotosta vastaavan\_yrityksen             | Yritykset voivat suodattaa raporttien mukaan                                   | Työhönotosta vastaavan\_hakijalle työhönotosta vastaavan\_työhönotosta vastaavan EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Työhönotosta vastaavan\_päivämäärä                | Päiviä, viikkoja, kuukausia ja vuosia                                   | Työhönotosta vastaavan\_hakijalle työhönotosta vastaavan\_työhönotosta vastaavan EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Työhönotosta vastaavan\_demografia        | Syntymäajan, sukupuolen, etnisen alkuperän ja siviilisääty         | Työhönotosta vastaavan\_hakijalle työhönotosta vastaavan\_työhönotosta vastaavan EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Työhönotosta vastaavan\_EmployedApplicant   | Kirjoita hakijan, suorituskyky, aloituspäivämäärä ja hakijan           | Työhönotosta vastaavan\_työhönotosta vastaavan yrityksen\_työhönotosta vastaavan CalendarOffset\_työhönotosta vastaavan päivämäärän\_työhönotosta vastaavan GeographicLocation\_ApplicantName rekrytointiominaisuuksien\_työllisyyden rekrytointiominaisuuksien\_suorituskyvyn rekrytointiominaisuuksien\_työhönotosta vastaavan työn\_Media rekrytointiominaisuuksien\_RecruitmentProject          |
-| Työhönotosta vastaavan\_työskentely          | Alkamispäivämäärä, päättymispäivämäärä ja tapahtumapäivämäärä                        | Työhönotosta vastaavan\_hakijalle työhönotosta vastaavan\_työhönotosta vastaavan EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Työhönotosta vastaavan\_GeographicLocation  | Paikkakunnan, läänin, postal code ja osavaltio tai provinssi                 | Työhönotosta vastaavan\_hakijalle työhönotosta vastaavan\_työhönotosta vastaavan EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Työhönotosta vastaavan\_työ                 | Funktion tyyppi ja otsikko                                        | Työhönotosta vastaavan\_hakijalle työhönotosta vastaavan\_työhönotosta vastaavan EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Työhönotosta vastaavan\_Media               | Hakijoiden lähde                                             | Työhönotosta vastaavan\_hakijalle työhönotosta vastaavan\_työhönotosta vastaavan EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Työhönotosta vastaavan\_suorituskyvyn         | Luokitus ja arviointimallin kuvaus                            | Työhönotosta vastaavan\_hakijalle työhönotosta vastaavan\_työhönotosta vastaavan EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Työhönotosta vastaavan\_RecruitmentProject  | Hankkeen kuvaus, projektin tilan ja aukot                | Työhönotosta vastaavan\_hakijalle työhönotosta vastaavan\_työhönotosta vastaavan EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Työhönotosta vastaavan\_TerminatedApplicant | Päättynyt, hakijoiden, syy, suorituskyvyn ja työsuhteen päättymisen pvm | Työhönotosta vastaavan\_työhönotosta vastaavan yrityksen\_työhönotosta vastaavan CalendarOffset\_päivämäärä rekrytointiominaisuuksien\_työhönotosta vastaavan GeographicLocation\_työhönotosta vastaavan suorituskyvyn\_rekrytointiominaisuuksien demografia\_työllisyyden rekrytointiominaisuuksien\_Media rekrytointiominaisuuksien\_työhönotosta vastaavan RecruitmentProject\_ApplicantName |
+| Recruiting\_Applicant           | Hakijat, palkatut hakijat, palkkauksen nettosuhde ja kustannukset          | Recruiting\_ApplicantName Recruiting\_Company Recruiting\_CalendarOffset Recuriting\_Date Recruiting\_GeographicLocation Recruiting\_Demographics Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject                                |
+| Recruiting\_ApplicantName       | Hakijan etunimi, sukunimi ja koko nimi                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_CalendarOffset      | Kalenterin siirtymät raporttien osittamiseen                                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Company             | Yritykset, joiden mukaan raportit suodatetaan                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Date                | Päiviä, viikkoja, kuukausia ja vuosia                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Demographics        | Syntymäaika, sukupuoli, etninen alkuperä ja siviilisääty         | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_EmployedApplicant   | Hakija, suorituskyky, alkupäivämäärä ja hakijan tyyppi           | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_ApplicantName Recruiting\_Employment Recruiting\_Performance Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject          |
+| Recruiting\_Employment          | Alkamispäivämäärä, päättymispäivämäärä ja siirtymispäivämäärä                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_GeographicLocation  | Paikkakunta, lääni, postinumero ja osavaltio tai provinssi                 | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Job                 | Tehtävä, tyyppi ja nimike                                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Media               | Hakijoiden lähde                                             | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Performance         | Pisteytys, kuvaus arviointimalli                            | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_RecruitmentProject  | Projektin kuvaus, projektin tila ja avoimet paikat                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_TerminatedApplicant | Työntekijät, joiden työsuhde on päätetty, syy, suorituskyky ja työsuhteen päättymispäivä | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_Performance Recruiting\_Demographics Recruiting\_Employment Recruiting\_Media Recruiting\_RecruitmentProject Recruiting\_ApplicantName |
 
-Näiden yksiköiden oli käytettävä luoda laskettuja mittoja. Nämä lasketaan toimenpiteet sitten laskemisessa käytetään Suorituskyvyn mittareiden (KPI: T) ja raportit, joita käytetään sisällön pack. Jos haluat sisällyttää laskutoimitukset raportit ja Raporttinäkymät-ikkunan, voit ladata ja LCS-Recruiting.pbix-tiedoston muokkaaminen. Tämä tiedosto on oletusarvoisesti tietomalli, joka on luotu sisältö pack. Kun olet tehnyt muutokset, voit luoda sellaisen organisaation sisällön pack ja raporttinäkymät, jotka sisältävät tietoja, jotka olet lisännyt.
+Näitä yksikköjä käytettiin laskettujen mittojen luomisessa. Näitä laskennallisia mittoja käytetään sitten laskemaan sisältöpaketissa käytettävät tunnusluvut (KPI:t) ja raportit. Jos haluat sisällyttää lisälaskutoimitukset raportteihin ja koontinäyttöön, voit ladata Recruiting.pbix-tiedoston LCS:stä ja muokata sitä. Tämä tiedosto on sisältöpaketin luomisessa käytetty oletustietomalli. Kun olet tehnyt haluamasi muutokset, voit luoda organisaation sisältöpaketin ja koontinäytön, joka sisältää lisäämäsi tiedot.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:
@@ -75,6 +78,8 @@ Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisä
 -   [Organisaation sisältöpakettien luominen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Tietojen mallinnus Power BI:n avulla](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Power BI -ruutujen lisääminen työtiloihin](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

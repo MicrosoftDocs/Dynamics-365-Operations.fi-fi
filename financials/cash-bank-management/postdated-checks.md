@@ -1,6 +1,6 @@
 ---
 title: "Myöhemmäksi päivätyt sekit"
-description: "Tässä artikkelissa on tietoja Microsoft Dynamics-365 työvaiheiden myöhemmäksi päivitettyjen sekkien tuki. Myöhemmäksi päivätyt sekit ovat sekkejä, jotka on asetettu tulevan päivämäärän omaavien maksujen vastaanottamista varten. Tämän vuoksi sekkiä ei voi lunastaa ennen määritettyä päivämäärää."
+description: "Tässä artikkelissa on tietoja myöhemmäksi päivättyjen sekkien tuesta Microsoft Dynamics 365 for Operations -ohjelmassa. Myöhemmäksi päivätyt sekit ovat sekkejä, jotka on asetettu tulevan päivämäärän omaavien maksujen vastaanottamista varten. Tämän vuoksi sekkiä ei voi lunastaa ennen määritettyä päivämäärää."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="postdated-checks"></a>Myöhemmäksi päivätyt sekit
 
-Tässä artikkelissa on tietoja Microsoft Dynamics-365 työvaiheiden myöhemmäksi päivitettyjen sekkien tuki. Myöhemmäksi päivätyt sekit ovat sekkejä, jotka on asetettu tulevan päivämäärän omaavien maksujen vastaanottamista varten. Tämän vuoksi sekkiä ei voi lunastaa ennen määritettyä päivämäärää.
+[!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics-365 työvaiheiden tukee täyden hallinnan kehä sekä myyntireskontran ja ostoreskontran ja myöhemmäksi päivätyt sekit seuraavassa taulukossa esitetyllä tavalla.
+
+Tässä artikkelissa on tietoja myöhemmäksi päivättyjen sekkien tuesta Microsoft Dynamics 365 for Operations -ohjelmassa. Myöhemmäksi päivätyt sekit ovat sekkejä, jotka on asetettu tulevan päivämäärän omaavien maksujen vastaanottamista varten. Tämän vuoksi sekkiä ei voi lunastaa ennen määritettyä päivämäärää.
+
+Microsoft Dynamics 365 for Operations tukee myöhemmäksi päivättyjen sekkien koko hallintasykliä sekä myyntireskontrassa että ostoreskontrassa seuraavassa taulukossa esitetyllä tavalla.
 <table>
 <colgroup>
 <col width="50%" />
@@ -48,14 +51,14 @@ Microsoft Dynamics-365 työvaiheiden tukee täyden hallinnan kehä sekä myyntir
 </tr>
 <tr class="even">
 <td>Kirjaa ja lähetä toimittajalle jälkeen päin päivitetty lasku</td>
-<td>Rekisteröi toimittajalle kirjoittamasi myöhemmäksi päivätyn sekin tiedot. Kun maksu kirjataan, toimittajan vastuu on tunnistettu, mutta pankkitili ei ole vielä hyvityslasku. Sen sijaan käytetään selvitystiliä.</td>
+<td>Rekisteröi toimittajalle kirjoittamasi myöhemmäksi päivätyn sekin tiedot. Kun maksu kirjataan, toimittajan velka siirretään, mutta pankkitiliä ei vielä hyvitetä. Sen sijaan käytetään selvitystiliä.</td>
 </tr>
 <tr class="odd">
 <td>Rekisteröi ja kirjaa asiakkaan myöhemmäksi päivitetty sekki</td>
-<td>Rekisteröi asiakkaalta saadun myöhemmäksi päivätyn sekin tiedot. Kun maksu kirjataan, myyntireskontran asiakas on luotto, mutta pankkitili ei ole vielä veloittaa. Sen sijaan käytetään selvitystiliä.</td>
+<td>Rekisteröi asiakkaalta saadun myöhemmäksi päivätyn sekin tiedot. Kun maksu kirjataan, asiakkaan saatava on kredit, mutta pankkitiliä ei vielä veloiteta. Sen sijaan käytetään selvitystiliä.</td>
 </tr>
 <tr class="even">
-<td>Rekisteröi ja kirjaa asiakkaan tai toimittajan myöhemmäksi päivättyjen korvaavan valinta</td>
+<td>Kirjaa ja lähetä asiakkaalle tai toimittajalle myöhäisemmäksi päivätty korvaava sekki</td>
 <td>
 Jos toimittajalle lähetetty tai asiakkaalta vastaanotettu alkuperäinen sekki on kadonnut tai vahingoittunut, voit asettaa korvaavan myöhemmäksi päivätyn sekin. Kun rekisteröit sekin tiedot, määritä viittaus alkuperäiseen sekkiin ja osoita, että uusi sekki korvaa alkuperäisen sekin. Voit myös kirjata korvaavan sekin.</td>
 </tr>
@@ -69,17 +72,19 @@ Jos toimittajalle lähetetty tai asiakkaalta vastaanotettu alkuperäinen sekki o
 </tr>
 <tr class="odd">
 <td>Peruuta toimittajalle osoitettu myöhemmäksi päivätty shekki</td>
-<td>Voit peruuttaa kirjattujen myöhemmäksi päivättyjen sekkien seuraavissa tilanteissa:-pankin sekin palautetaan.
-Väärä lasku on käytössä-valintaruutu.
--Cash maksu suoritetaan tarkistusta vastaan.
+<td>Voit peruuttaa myöhemmäksi päivätyn sekin seuraavissa tilanteissa: - pankki palauttaa sekin
+- sekki on kohdistettu väärään laskuun
+- sekkiä vastaan on tehty käteismaksu.
 </td>
 </tr>
 <tr class="even">
-<td>Lopeta jälkikirjatun sekin maksu</td>
-<td>Voit lopettaa toimittajalle myönnetyn myöhemmäksi päivätyn sekkimaksun esimerkiksi seuraavista syistä: varat eivät riitä, sopimusehtojen toimittajan kanssa muuttuvat, toimittaja on toimittanut viallisia tavaroita tai tavaroita palautetaan toimittajalle. Voit pysäyttää maksu vain tarkistaa, että et ole poistettu.</td>
+<td>Myöhemmäksi päivätyn sekkimaksun lopetus</td>
+<td>Voit lopettaa toimittajalle myönnetyn myöhemmäksi päivätyn sekkimaksun esimerkiksi seuraavista syistä: varat eivät riitä, sopimusehtojen toimittajan kanssa muuttuvat, toimittaja on toimittanut viallisia tavaroita tai tavaroita palautetaan toimittajalle. Voit lopettaa maksun vain niiden sekkien osalta, joita ei ole lunastettu.</td>
 </tr>
 </tbody>
 </table>
+
+
 
 
 

@@ -54,9 +54,9 @@ Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käyte
 
 ### <a name="fiscal"></a>Veroasiakirja
 
-Jos valitset **Poistovuosi**-kentässä **Tilivuosi**-vaihtoehdon, 175 prosentin jäännösarvo lasketaan kirjalle määritetyn kirjanpidon vuosikalenterin tilivuoden perusteella tai **Kirjanpito**-sivulla valitun kirjanpidon vuosikalenterin perusteella. Kirjanpidon vuosikalenterit määritetään **Kirjanpidon kalenterit** -sivulla. Lisätietoja on ohjeaiheessa [kirjanpidon vuosikalenterit, tilivuodet ja pisteitä.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md).
+Jos valitset **Poistovuosi**-kentässä **Tilivuosi**-vaihtoehdon, 175 prosentin jäännösarvo lasketaan kirjalle määritetyn kirjanpidon vuosikalenterin tilivuoden perusteella tai **Kirjanpito**-sivulla valitun kirjanpidon vuosikalenterin perusteella. Kirjanpidon vuosikalenterit määritetään **Kirjanpidon kalenterit** -sivulla. Lisätietoja on artikkelissa [Tilikalenterit, tilikaudet ja kaudet.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md).
 
-Esimerkiksi heinäkuun 1. – 30. kesäkuuta tilikauden poiston laskeminen alkaa heinäkuun 1. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto säätyy automaattisesti kutakin tilijaksoa varten ja seuraavan tilivuoden pituus määräytyy **Kirjanpidon kalenterit**-lomakkeessa määritetyistä tilijaksojen asetuksista. 
+Esimerkiksi tilikauden 1.7 – 30.6. poistojen laskeminen alkaa 1.7. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto säätyy automaattisesti kutakin tilijaksoa varten ja seuraavan tilivuoden pituus määräytyy **Kirjanpidon kalenterit**-lomakkeessa määritetyistä tilijaksojen asetuksista. 
 
 Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavissa**Kausiväli**-kentässä:
 
@@ -81,6 +81,6 @@ Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavis
 | Vuosi 3 | 4 225 × 35 % = 1 478,75                        | 5 225 – 1 478,75 = 3 746,25 | 4 225 – 1 478,75 = 2 746,25           |
 
 > [!NOTE] 
-> Kun summa, joka lasketaan käyttämällä 175 prosentin jäännöspoiston degressiivistä poistomenetelmää, yleensä on pienempi kuin se summa, joka lasketaan käyttämällä tasapoiston menetelmää on jäljellä olevana tasapoistomenetelmän poistoprosentin muuntaminen.
+> Jos 175 %:n jäännösarvon poistomenetelmän avulla laskettu määrä on pienempi kuin tasapoistomenetelmän avulla laskettu määrä, jäljellä olevalle käyttöiälle on yleensä olemassa tasapoistomenetelmä.
 
 

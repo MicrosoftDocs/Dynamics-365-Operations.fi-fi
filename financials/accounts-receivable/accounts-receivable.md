@@ -27,9 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-receivable-home-page"></a>Myyntireskontran aloitussivu
 
-Myyntireskontran avulla voit seurata kaikkia myyntilaskuja ja saapuvia maksuja.
+[!include[banner](../includes/banner.md)]
+
+
+Myyntireskontran avulla voit seurata kaikkia myyntilaskuja ja saapuvia maksuja. 
 
 Voit luoda myyntilaskut, jotka perustuvat myyntitilauksiin tai pakkausluetteloihin. Voit myös määrittää vapaatekstilaskuja, jotka eivät liity myyntitilauksia. Voit vastaanottaa maksuja käyttämällä useita eri maksulajeja. Näihin sisältyvät vekselit, käteisvarat, sekit, luottokortit ja sähköiset maksut. Jos organisaatiossa on useita yrityksiä, voit käyttää keskitettyjä maksuja maksujen tallentamiseksi yhteen yritykseen kaikkien muiden yritysten puolesta.
+
+
 
 
 

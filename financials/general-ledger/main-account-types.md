@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="main-account-types"></a>Päätilin tyypit
 
+[!include[banner](../includes/banner.md)]
+
+
 Päätilin tyypit määrittävät sen, kuinka montaa päätiliä tilikartassa käytetään.
 
 Päätilin tyyppi on valittava luotaessa päätilejä Päätilit - tilikartat -sivulla.
@@ -35,6 +38,8 @@ Päätilin tyyppi on valittava luotaessa päätilejä Päätilit - tilikartat -s
 -   Tase, Käyttöomaisuus, Velka ja Pääoma – Näitä päätilejä käytetään tapahtumatileinä, joille kirjataan yrityksen omaisuuksien ja velkojen summat.
 -   Summa – Näitä päätilejä käytetään tilivälien lisäämiseen. Määritä Summa-päätilin tyyppi käyttämällä Tiliväli-sivua, jolla näytetään kaikkien tilivälien ryhmien saldojen summa. Avaa Tiliväli-sivu napsauttamalla Summat-painiketta Yleinen-välilehdellä, kun ole valinnut Summa-tyypin tilin.
 -   Raportointi – Näitä päätilejä käytetään tilinpäätösraportointiin ainoastaan Brasiliassa.
+
+
 
 
 

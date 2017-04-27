@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-invoicing"></a>Projektiin laskutus
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää aika- ja materiaaliprojektien sekä kiinteähintaisten projektien projektilaskutuksen yleiskatsauksen. Artikkelissa on tietoja myös laskuehdotuksista (alustavista laskuista), laskutuksen hallinnasta, ennakkolaskutuksesta, toimittajan laskutuksesta ja hyvityslaskuista.
 
 Projektityyppi määrittää, mitä laskutusmenettelyä käytetään. Vain kahta ulkoista projektityyppiä, aika- ja materiaaliprojektit sekä kiinteähintaiset projektit, voidaan laskuttaa. Aika- ja materiaaliprojektit sekä kiinteähintaiset projektit liittyvät aina projektisopimukseen.
@@ -103,7 +106,7 @@ Voit esimerkiksi määrittää seuraavan laskutusaikataulun:
 Kun välitavoitemaksut ovat valmiita laskutettaviksi, käytetään ennakkosummien laskutustapaa.
 
 ## <a name="vendor-invoicing"></a>Toimittajan laskutus
-Kun tilaat nimikkeen toimittajalta ja määrität nimikkeen projektiin, kyseisen nimikkeen ostotilausriville valittu riviominaisuus määrittää, laskutetaanko ostettu nimike asiakkaalle. Jos rivien oletusominaisuudet, ne näkyvät nimikkeelle ostotilauksen rivi (rivi tiedot &gt;projektin &gt;rivin ominaisuus). Riviominaisuutta voi muokata kahdella tavalla:
+Kun tilaat nimikkeen toimittajalta ja määrität nimikkeen projektiin, kyseisen nimikkeen ostotilausriville valittu riviominaisuus määrittää, laskutetaanko ostettu nimike asiakkaalle. Jos määrität oletusriviominaisuudet, ne näytetään nimikkeelle ostotilausrivillä (Rivin erittely &gt; Projekti &gt; Rivin ominaisuus). Riviominaisuutta voi muokata kahdella tavalla:
 
 -   Projektin asiakasta laskutetaan nimikkeestä: määritä nimikkeen riviominaisuus veloitettavalle arvolle ostotilauksessa ja laskuta sitten asiakasta oikealla projektilaskutustavalla.
 -   Projektin asiakasta ei laskuteta nimikkeestä: Älä valitse nimikkeen ostotilausrivin **Veloitettava**-riviominaisuutta. Voit sitten laskuttaa ostotilauksen eikä muita toimintoja tarvita.
@@ -118,5 +121,7 @@ Sama asiakirja voi sisältää tapahtumat, jotka on valittu hyvitettäviksi, hyv
 Jos haluat hyvittää laskutetun summan, laskutettu summa on ensin valittava hyvittämistä varten, jonka jälkeen luodaan uusi hyvityslasku. Voit luoda hyvityslaskun samalla tavoin kuin loisit myyntilaskun. 
 
 Voit luoda laskun, jossa on negatiivinen summa ja josta tulee hyvityslaskuksi luokiteltava lasku. Jos haluat luoda ja tulostaa hyvityslaskun, sinun on valittava tapahtumat, jotka kirjattiin aiemmin myyntilaskulle ja muokattava sitten tapahtumia. Laskun otsikko on Korjaava lasku, ellei yrityksen ensisijainen osoite ole Saksassa.
+
+
 
 

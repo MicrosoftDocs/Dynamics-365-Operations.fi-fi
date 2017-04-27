@@ -1,5 +1,5 @@
 ---
-title: Muuta tuotantotilauksen tila
+title: Tuotantotilauksen tilan palauttaminen
 description: "Tässä aiheessa on kuvattu tuotantotilauksen tilan palauttamista."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reverse-the-production-order-status"></a>Muuta tuotantotilauksen tila
+# <a name="reverse-the-production-order-status"></a>Tuotantotilauksen tilan palauttaminen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä aiheessa on kuvattu tuotantotilauksen tilan palauttamista. 
 
@@ -49,5 +52,7 @@ Kun tuotantotilaus palautetaan **Vapautettu**-tilasta **Ajoitettu**-tilaan, vain
 
 ## <a name="from-started-to-released"></a>Aloitettu-tilasta Vapautettu-tilaan
 Kun tuotantotilaus palautetaan **Aloitettu**-tilasta **Vapautettu**-tilaan, kaikki valmiiksi ilmoitetut nimikkeet palautetaan. Jos materiaalia on kerätty tai tuotantoon liittyy saapuvia tai lähteviä toimituksia, myös nämä asetukset palautetaan. Tuotantotilauksen tuoterakennerivien **Jäljellä oleva tila** -kentän arvo muuttuu **Päättynyt**-tilasta **Materiaalikulutus**-tilaan. Jos aika on rekisteröity tai määrät on raportoitu valmiiksi tuotantoreitityksen työvaiheille, nämä asetukset palautetaan. **Jäljellä oleva tila** -kentän arvo muuttuu tuotantoreitityksessä **Päättynyt**-tilasta **Reitityksen kulutus** -tilaan. Kaikkien käsittelyssä oleviksi kirjattujen nimikkeiden tai keskeneräisten töiden asetukset palautetaan. **Tuotantotilauksen tiedot** -sivulla olevat kentät, joissa näkyy aloitettu tai valmiiksi ilmoitettu määrä, palautetaan. Myös kyseisten tapahtumien päivämäärät palautetaan.
+
+
 
 

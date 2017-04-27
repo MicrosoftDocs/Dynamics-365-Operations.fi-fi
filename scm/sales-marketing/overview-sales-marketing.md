@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-and-marketing"></a>Myynti ja markkinointi
 
+[!include[banner](../includes/banner.md)]
+
+
 Voit käyttää myyntiä ja markkinointia myyntivirran erityyppisten tietojen hankkimiseen, tallentamiseen ja käyttämiseen. Näitä tietoja ovat alkuperäinen myyntitoimenpide, tulevaisuuden seurantatoiminto ja lisämyynnit.
 
 <a name="marketing"></a>Markkinointi
 ---------
 
-Voit etsiä markkinointikampanjoihin ja -toimintoja avulla mahdollisiin asiakkaisiin ja luoda heihin suhteita niin, että ensimmäiset yhteydenotot muuttuvat myyntisuhteiksi. Seuraava prosessikuva näyttää markkinoinnin liiketoimintaprosessin. [![Markkinoinnin liiketoimintaprosessia.](./media/marketing01.jpg)](./media/marketing01.jpg)
+Voit etsiä markkinointikampanjoihin ja -toimintoja avulla mahdollisiin asiakkaisiin ja luoda heihin suhteita niin, että ensimmäiset yhteydenotot muuttuvat myyntisuhteiksi. Seuraava prosessikuva näyttää markkinoinnin liiketoimintaprosessin. [![Markkinoinnin liiketoimintaprosessi](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Suhteet
 
@@ -39,10 +42,10 @@ Myynnissä ja markkinoinnissa ensikosketus mahdollisiin asiakkaisiin voi tapahtu
 
 ### <a name="campaigns"></a>Kampanjat
 
-Kampanjan kohteena ovat ne prospektien, liidien, mahdollisuuksien ja asiakkaiden yhteyshenkilöt, jotka on valittu osallistumaan kampanjaan. Microsoft Dynamics-365 toimintoja varten voit luoda erilaisia kampanjoita, kuten puhelinmarkkinoinnin postituksen ja email Kampanjat maksimoida asiakkaan mahdollinen. Kun kampanja etenee ja saat positiivisia vastauksia, voit aloittaa myyntiprosessin niiden vastaajien kanssa, jotka vastasivat myönteisesti kampanjaan.
+Kampanjan kohteena ovat ne prospektien, liidien, mahdollisuuksien ja asiakkaiden yhteyshenkilöt, jotka on valittu osallistumaan kampanjaan. Voit luoda Microsoft Dynamics 365 for Operationsissa monenlaisia kampanjoita, kuten puhelinmarkkinointi-, postitus- ja sähköpostikampanjoita, joilla asiakaspotentiaali voidaan maksimoida. Kun kampanja etenee ja saat positiivisia vastauksia, voit aloittaa myyntiprosessin niiden vastaajien kanssa, jotka vastasivat myönteisesti kampanjaan.
 
 ## <a name="sales"></a>Myynti
-Myyntitoimintoa käytetään tarjousten, lisämyynnin ja ristiin myynnin luomiseen uusille ja nykyisille asiakkaille, myyntitilausten luomiseen ja asiakkaiden myyntilaskujen luomiseen. Seuraava prosessikuva näyttää myynnin liiketoimintaprosessin. [![Liiketoimintaprosessin myynti](./media/sales01.jpg)](./media/sales01.jpg)
+Myyntitoimintoa käytetään tarjousten, lisämyynnin ja ristiin myynnin luomiseen uusille ja nykyisille asiakkaille, myyntitilausten luomiseen ja asiakkaiden myyntilaskujen luomiseen. Seuraava prosessikuva näyttää myynnin liiketoimintaprosessin. [![Myynnin liiketoimintaprosessi](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Myyntitarjoukset
 
@@ -50,7 +53,7 @@ Voit tarjota asiakkaille toimittamiasi hyödykkeitä tai palveluja luomalla myyn
 
 ### <a name="up-sellcross-sell"></a>Lisämyynti / liittyvien tuotteiden myynti
 
-Lisä- ja ristiinmyynti ovat tuotteiden myyntitekniikoita, kun tilaus on merkitty asiakkaalle. Lisämyynnissä nykyisen tuotteen tilalle ehdotetaan toista tuotetta. Ristiinmyynnissä tuotetta ehdotetaan nykyisen tuotteen lisäksi. Tuoteluettelot määrittäessäsi voit luoda erityisiä sääntöjä, kun tuotteen ehdotetut rajat myy tai ylös-myy tuotteen nimellä ilmaista.
+Lisä- ja ristiinmyynti ovat tuotteiden myyntitekniikoita, kun tilaus on merkitty asiakkaalle. Lisämyynnissä nykyisen tuotteen tilalle ehdotetaan toista tuotetta. Ristiinmyynnissä tuotetta ehdotetaan nykyisen tuotteen lisäksi. Kun määrität tuoteluetteloita, voit luoda erityissääntöjä ilmaisemaan, milloin tuotetta ehdotetaan ristiin- tai lisämyyntituotteeksi.
 
 ### <a name="sales-orders"></a>Myyntitilaukset
 
@@ -117,5 +120,7 @@ Vapaatekstilasku on lasku, joka ei liity myyntitilaukseen. Sen tilausriveillä o
 #### <a name="pro-forma-invoice"></a>Proformalasku
 
 Proformalasku on lasku, joka laaditaan todellisen laskusumman ennusteena ennen laskun kirjaamista. Proformalaskun voi tulostaa joko myyntilaskulle tai vapaatekstilaskulle.
+
+
 
 

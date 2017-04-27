@@ -1,6 +1,6 @@
 ---
-title: Kustannuslaskennan kotisivu
-description: "Tässä aiheessa on luettelo ohjeen aiheita ja muita resursseja, jotka ovat käytettävissä kustannuslaskennan."
+title: Kustannuslaskennan aloitussivu
+description: "Tässä aiheessa on luettelo kustannuslaskentaa koskevista ohjeaiheista ja muista resursseista."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="cost-accounting-home-page"></a>Kustannuslaskennan kotisivu
+# <a name="cost-accounting-home-page"></a>Kustannuslaskennan aloitussivu
 
-Tässä aiheessa on luettelo ohjeen aiheita ja muita resursseja, jotka ovat käytettävissä kustannuslaskennan.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä aiheessa on luettelo kustannuslaskentaa koskevista ohjeaiheista ja muista resursseista.
 
 Kustannuslaskenta-moduulin avulla voit tehdä seuraavat:
 
--   Määrittää kustannukset elementti mitat, tuo kustannukset elementin dimensiojäsenet ja yhdistää kustannukset elementti mitat.
--   Määrittää objektin mitat kustannukset ja kustannusten objektin dimensiojäsenten tuominen.
+-   Määrittää kustannuselementin dimensiot, tuoda kustannuselementin dimensiojäsenet ja yhdistää kustannuselementin dimensiot.
+-   Kustannusobjektin dimensioiden määrittäminen ja kustannusobjektin dimension jäsenten tuominen
 -   Tilastodimensioiden määrittäminen tai tuominen
 -   Tilastomittauksen lähdemallien luominen
 -   Kustannuslaskennan kirjanpidon luominen
@@ -46,29 +49,31 @@ Kustannuslaskenta-moduulin avulla voit tehdä seuraavat:
 
 ## <a name="get-started"></a>Aloittaminen
 
-Kustannuslaskennan käytännönläheiset kurssit antavat määrittäminen Microsoft Dynamics-365 työvaiheiden – kustannuslaskennan, jotta todelliset kustannukset analyysin vaiheet. Se tarjoaa myös joukko menettelyjä, jotka ovat käytettävissä siinä järjestyksessä, jossa ne näkyvät.
+Kustannuslaskennan käytännönläheiset kurssit antavat perustiedot Microsoft Dynamics 365 for Operationsin kustannuslaskennan määrittämisestä, jotta voidaan tehdä todellisten kustannusten analyysi. Se tarjoaa myös joukon menettelyjä, jotka voit suorittaa siinä järjestyksessä, jossa ne näkyvät.
 
--   [Kustannuslaskennan perusteet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (valkoinen paperi ja vaatii CustomerSource-tili)
+-   [Kustannuslaskennan perusteet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (raportti, vaatii CustomerSource-tilin)
 
-Ymmärtää, miten voit käyttää kustannuslaskennan päivittäinen työsi, on hyvä tietää näistä asioista.
+Käsitteiden ymmärtäminen helpottaa ymmärtämään, miten voit käyttää kustannuslaskentaa päivittäisessä työssäsi.
 
--   [Key terms in Cost accounting](terms-cost-accounting.md)
--   [Kustannus-elementit ja osan dimensiot](cost-elements.md)
--   [Map different cost element dimension members to a common set of cost element dimension members](map-cost-elements-dimension-members.md)
--   [Luo kustannuselementeistä](http://ax.help.dynamics.com/en/wiki/create-cost-elements/) (tehtävä-opas)
--   [Cost object dimensions](cost-objects.md)
--   [Kustannukset objektien luominen](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (tehtävä-opas)
+-   [Kustannuslaskennan keskeisiä termejä](terms-cost-accounting.md)
+-   [Kustannuselementit ja kustannuselementtien dimensiot](cost-elements.md)
+-   [Yhdistä eri kustannustason dimension jäsenet yhteiseksi joukoksi](map-cost-elements-dimension-members.md)
+-   [Luo kustannuselementtejä](http://ax.help.dynamics.com/en/wiki/create-cost-elements/) (ohjattu tehtävä)
+-   [Kustannusobjektin dimensiot](cost-objects.md)
+-   [Luo kustannusobjekteja](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (ohjattu tehtävä)
 
-## <a name="cost-control-mobile-workspace"></a>Kustannusseuranta mobile workspace
-Kustannusten hallinta mobiili työtilaan, jossa kustannukset center projektipäälliköt näkevät kustannus center suorituskyvyn, missä tahansa ja milloin tahansa.
+## <a name="cost-control-mobile-workspace"></a>Kustannusseurannan mobiilityötila
+Kustannusten hallinnan mobiilityötilan avulla kustannuspaikan päälliköt näkevät kustannuspaikan suorituskyvyn missä tahansa ja milloin tahansa.
 
--   [Cost control mobile workspace](cost-controlling-mobile-workspace.md)
+-   [Kustannusseurannan mobiilityötila](cost-controlling-mobile-workspace.md)
 
-## <a name="cost-accounting-analysis-power-bi-content"></a>Kustannuslaskennan analyysi BI virran sisältö
-Kustannuslaskennan analyysi Microsoft Power BI sisältö on tarkoitettu kustannukset ohjaimien tai kuka tahansa, joka on vastuussa organisaation kustannusseuranta suorittamista. Se sisältää tärkeitä mittareita, kuten kustannusten suuruus ja kustannushinta budjetin kustannukset, todelliset kustannukset ja joustavan budjetin kustannukset. Se käyttää tapahtumatietoja kustannuslaskennan toimintoja Microsoft Dynamics-365 ja tarjoaa koko organisaation kustannusten yhteenlaskettu tutkimuksen raportoinnin valuutassa. Esimiehet voit suodattaa tietoja objektien kustannukset suorittaa kustannusseuranta ja organisaatioyksiköille, vaikka organisaatio voi olla useita oikeussubjekteja.
+## <a name="cost-accounting-analysis-power-bi-content"></a>Kustannuslaskennan analyysin Power BI -sisältö
+Kustannuslaskennan analyysin Microsoft Power BI -sisältö on tarkoitettu kustannusten controllereille tai kenelle tahansa, joka on vastuussa organisaation kustannusseurannasta. Se sisältää tärkeitä mittareita, kuten kustannukset, suuruus ja kustannushinta budjetin kustannusten, todellisten kustannusten ja joustavan budjetin kustannusten mukaan. Se käyttää tapahtumatietoja Dynamics 365 for Operationsin kustannuslaskennasta ja tarjoaa koko organisaation kustannusten kokoomanäytön yhdessä raportointivaluutassa. Esimiehet voit suodattaa tietoja kustannusobjektien mukaan suorittaakseen kustannusseurantaa organisaatioyksiköille, vaikka organisaatiolla voi olla useita yrityksiä.
 
--   [Kustannuslaskennan analyysi BI virran sisältö](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
--   [Set up security for the Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+-   [Kustannuslaskennan analyysin Power BI -sisältö](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
+-   [Kustannuslaskennan Power BI -sisällön suojauksen määrittäminen](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+
+
 
 
 

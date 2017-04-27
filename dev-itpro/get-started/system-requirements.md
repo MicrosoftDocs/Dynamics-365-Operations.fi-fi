@@ -1,6 +1,6 @@
 ---
 title: "Järjestelmävaatimukset"
-description: "Tässä aiheessa luetellaan Microsoft Dynamics-365 toimintojen nykyisen version järjestelmävaatimukset."
+description: "Tässä aiheessa on luettelo Microsoft Dynamics 365 for Operations -ohjelman nykyisen version järjestelmävaatimuksista."
 author: sericks007
 manager: AnnBe
 ms.date: 2017-04-04
@@ -26,102 +26,102 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-requirements"></a>Järjestelmävaatimukset
 
-Tässä aiheessa luetellaan Microsoft Dynamics-365 toimintojen nykyisen version järjestelmävaatimukset.
+Tässä aiheessa on luettelo Microsoft Dynamics 365 for Operations -ohjelman nykyisen version järjestelmävaatimuksista.
 
 <a name="supported-web-browsers"></a>Tuetut selaimet
 ----------------------
 
-Microsoft Dynamics-365 WWW-sovelluksen toimintoja voidaan suorittaa seuraavia web-selaimia, jotka suoritetaan määritetyn käyttöjärjestelmissä:
+Microsoft Dynamics 365 for Operations -verkkosovellus voidaan suorittaa seuraavissa selaimissa, joita käytetään määritetyissä käyttöjärjestelmissä:
 
--   Microsoft-Edge (uusin yleisesti saatavilla olevan version) Windows-10
+-   Microsoft Edge (uusin saatavana oleva versio) Windows 10 -käyttöjärjestelmässä
 -   Internet Explorerin 11 Windows 10, Windows 8.1- tai Windows 7 -käyttöjärjestelmässä
--   Google Chrome (uusin versio yleisesti saatavilla) Windows-10, Windows 8.1, Windows 8, Windows 7 tai Google Nexus 10 Tablet-PC: n
--   Apple Safari (uusin versio yleisesti saatavilla) Mac OS X (Yosemite) 10.10, 10.11 (El Capitan) tai 10.12 (Sierra) tai Apple iPad
+-   Google Chrome (uusin saatavana oleva versio) Windows 10-, Windows 8.1-, Windows 8-, Windows 7- tai Google Nexus 10 -taulutietokoneen käyttöjärjestelmässä
+-   Apple Safari (uusin saatavana oleva versio) Mac OS X 10.10 (Yosemite)-, 10.11 (El Capitan)-, 10.12 (Sierra)- tai Apple iPadin käyttöjärjestelmässä.
 
 Ohjelmistovalmistajien sivustot sisältävät tietoja kunkin selaimen uusimmasta versiosta. **Huomautuksia:**
 
--   Jos haluat siepata kuvia, jotka on luotu tehtävän tallennus ja sisällyttää Microsoft Word-asiakirjoja, asennettu Chrome tunnisteen on oltava. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
--   ClickOnce-sovellus käynnistetään työnkulkueditori. Tue ClickOnce-sovellukset Microsoft Edge ja Internet Explorer (tuettu Microsoft Windowsin versio). 64-bittinen yhteensopiva käyttöjärjestelmä vaatii työnkulkueditori ClickOnce-sovelluksen.
--   ClickOnce-sovellus käynnistetään Report Designer taloudelliseen raportointiin. Siihen tarvitaan 64-bittinen yhteensopiva käyttöjärjestelmä. Jos käytät Chrome, jotta voit ladata raportin suunnittelun asiakasohjelma on asennettava ClickOnce-tunniste. Jos käytät Chrome incognito-tilassa, varmista, että ClickOnce-laajennus on käytössä myös incognito-tilassa.
+-   Voit tallentaa tehtävän tallennustoiminnon luomat kuvat ja sisällyttää ne Microsoft Word -asiakirjoihin, jos asennettuna on Chrome-laajennus. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
+-   Työnkulkueditori käynnistetään ClickOnce-sovelluksena. Ainoastaan Microsoft Edge ja Internet Explorer (tuetussa Microsoft Windows -versiossa) tukevat ClickOnce-sovelluksia. Työnkulkueditorin ClickOnce-sovellus vaatii 64-bittisen käyttöjärjestelmän.
+-   Taloushallinnon raportoinnin raportin suunnittelusovellus käynnistetään ClickOnce-sovelluksena. Siihen vaatii 64-bittisen käyttöjärjestelmän. Jos käytössäsi on Chrome, sinun on asennettava ClickOnce-laajennus ladataksesi raportin suunnittelun asiakasohjelman. Jos käytät Chromea incognito-tilassa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa.
 
 ### <a name="supported-web-browsers-for-retail-cloud-pos"></a>Retail Cloud POS -sovelluksen tuetut selaimet
 
-Cloud Vähittäismyyntipisteen Dynamics 365 toimintoihin voidaan suorittaa seuraavia web-selaimia, jotka suoritetaan määritetyn käyttöjärjestelmissä:
+Microsoft Dynamics 365 for Operationsin Retail Cloud POS -sovellus voidaan suorittaa seuraavissa selaimissa, joita käytetään määritetyissä käyttöjärjestelmissä:
 
--   Microsoft-Edge (uusin yleisesti saatavilla olevan version) Windows-10
+-   Microsoft Edge (uusin saatavana oleva versio) Windows 10 -käyttöjärjestelmässä
 -   Internet Explorerin 11 Windows 10, Windows 8.1- tai Windows 7 -käyttöjärjestelmässä
--   Chrome (uusin versio yleisesti saatavilla) Windows 10, Windows 7 tai Windows 8.1
+-   Chrome (uusin julkaistu versio) Windows 10, Windows 8.1 tai Windows 7 -käyttöjärjestelmässä
 
-## <a name="network-requirements"></a>Verkkovaatimukset
--   Dynamics 365 toimintoja varten on suunniteltu verkkojen viive (ms) alle 150 millisekuntia. Tämä on Microsoftin Azure data center, joka isännöi Dynamics 365 operaatioille, selaimen asiakasohjelmassa viive. On suositeltavaa testata verkon viiveestä, <http://www.azurespeed.com>.
--   Työvaiheiden 365 Dynamics kaistanleveysvaatimukset riippuu tilannetta. Yleisimmät skenaariot vaativat kaistanleveyttä yli 50 kilotavua sekunnissa (KBps). Kuitenkin tilanteissa, joissa on suuri hyötykuorma vaatimukset, esimerkiksi työtiloja tai skenaarioita, joihin liittyy laajoja customization suositellaan enemmän kaistanleveyttä.
+## <a name="network-requirements"></a>Verkon vaatimukset
+-   Dynamics 365 for Operations on suunniteltu verkkoja varten, joiden viive on alle 150 millisekuntia (ms). Tämä on viive selainasiakkaan ja Microsoftin Azure-datakeskuksen välillä, joka isännöi Dynamics 365 for Operations -sovellusta. On suositeltavaa testata verkon viive osoitteessa <http://www.azurespeed.com>.
+-   Dynamics 365 for Operationsin kaistanleveysvaatimus riippuu tilanteesta. Yleisimmät tilanteet vaativat yli 50 kilotavua sekunnissa (KBps) kaistanleveyttä. Suosittelemme kuitenkin suurempaa kaistanleveyttä tilanteissa, joissa hyötykuorman vaatimus on korkea, kuten työtiloissa, tai tilanteissa, joissa vaaditaan laajaa mukauttamista.
 
-Dynamics 365 toiminnoissa on yleensä optimoitu Internet. Edestakaiset matkat selaimen asiakasohjelmassa Azure, data center määrä on hyvin pieni, ja koko paketti on pakattu. **Varoitus:** ei laske kaistanleveyden vaatimukset asiakkaan sijainnista käyttäjien määrä kertomalla pienin kaistanleveyden vaatimukset. Samanaikainen käyttö tietyssä paikassa, on hyvin vaikea laskea. Asiakkaat, jotka ovat huolissaan kaistanleveyden vaatimukset käyttää Dynamics 365 preview-version toimintoja.
+Dynamics 365 fir Operations on yleisesti optimoitu Internet-käyttöön. Kyselyiden määrä selainasiakasohjelmasta Azure-datakeskukseen on hyvin pieni, ja koko paketti on pakattu. **Varoitus:** älä laske kaistanleveysvaatimuksia asiakkaan sijainnista kertomalla käyttäjien määrä kaistanleveyden vähimmäisvaatimuksella. Tietyn sijainnin samanaikainen käyttö on hyvin vaikea laskea. Asiakkaat, jotka ovat huolissaan kaistanleveyden vaatimuksista voivat käyttää Dynamics 365 for Operationsin ennakkoversiota.
 
-## <a name="net-framework-requirements"></a>.NET framework-vaatimukset
-Työvaiheiden 365 Dynamics edellyttää .NET Framework 4.6.2 kaikki napsauttamalla-kerran sovellukset, kuten asiakirjan reitityksen agentti. Asennus ohjeet [.NET Frameworkin asentaminen](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
+## <a name="net-framework-requirements"></a>.NET Framework -vaatimukset
+Dynamics 365 for Operations vaatii .NET Framework -version 4.6.2 kaikille kerran klikattaville sovelluksille, kuten asiakirjan reititysagentille. Asennusohjeet löydät kohdasta [.NET Frameworkin asentaminen](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
-## <a name="supported-microsoft-office-applications"></a>Tuetut Microsoft Office-sovellukset
--   Microsoft Excel- ja Word-apuohjelmien suorittamiseen on oltava asennettuna Microsoft Officen 2016 Windows tai Mac. Saat lisätietoja versiovaatimukset [Office-integroinnin vianmääritys](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting).
--   Vienti Exceliin tai Word-toimintojen avulla luodut asiakirjojen näyttämiseen tarvitaan Microsoft Office 2007 tai uudempi.
+## <a name="supported-microsoft-office-applications"></a>Tuetut Microsoft Office -sovellukset
+-   Microsoft Office 2016:n Windows- tai Mac-version on oltava asennettuna, jotta Microsoft Excel ja Word-lisäosia voi käyttää. Lisätietoja versiovaatimuksista löydät kohdasta [Office-integroinnin vianmääritys](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Microsoft Office 2007 tai sitä uudempi on oltava asennettuna, jotta voit tarkastella Vie Exceliin tai Vie Wordiin -toimintojen luomia asiakirjoja.
 
-## <a name="retail-modern-pos-requirements"></a>Retail POS nykyaikaiset vaatimukset
+## <a name="retail-modern-pos-requirements"></a>Retail Modern POS -vaatimukset
 ### <a name="supported-operating-systems"></a>Tuetut käyttöjärjestelmät
 
--   Retail POS-Sovelluksen Moderni on 32-bittinen sovellus, mutta se suoritetaan palvelimella sekä x86 että x64.
--   Retail POS-Sovelluksen Moderni tuetaan vain Windows 10 Pro, yrityksen ja yrityksen pitkän aikavälin ylläpidon haara (LTSB) versiot.
+-   Retail Modern POS on 32-bittinen sovellus, mutta sen voi suorittaa sekä x86- että x64-arkkitehtuureilla.
+-   Retail Modern POS on tuettu vain Windows 10 Pro, Enterprise ja Enterprise LTSB -versioissa.
 
 ### <a name="minimum-system-requirements"></a>Järjestelmän vähimmäisvaatimukset
 
--   Pienin tuettu tarkkuus on 1280 × 1024.
--   Tietokone, joka toimii Retail POS-Sovelluksen Moderni on vastattava seuraavia vaatimuksia:
-    -   Sillä on oltava, ainakin kaksiytiminen suoritin, joka suoritetaan aikaisintaan 2 gigahertsin (GHz).
-    -   Sillä on oltava, ainakin 3 gigatavua (gt) RAM-muistia.
-    -   Sillä on oltava Internet-yhteys.
+-   Pienin tuettu näyttötarkkuus on 1280 × 1024.
+-   Tietokoneen, jolla Retail Modern POS -sovellusta käytetään on vastattava seuraavia vaatimuksia:
+    -   Siinä on oltava vähintään kaksiytiminen suoritin, jonka nopeus on vähintään 2 gigahertsiä (GHz).
+    -   Siinä on oltava vähintään 3 gigatavua (GB) keskusmuistia.
+    -   Siinä on oltava Internet-yhteys.
 
-## <a name="retail-hardware-station-requirements"></a>Vähittäismyynnin aseman laitteistovaatimukset
+## <a name="retail-hardware-station-requirements"></a>Retail hardware station -vaatimukset
 ### <a name="supported-operating-systems"></a>Tuetut käyttöjärjestelmät
 
--   Vähittäismyynnin laitteiston station on 32-bittinen sovellus, mutta se suoritetaan palvelimella sekä x86 että x64.
--   Vähittäismyynnin laitteiston station tuetaan seuraavissa käyttöjärjestelmissä:
-    -   Windows 7 Professional-, Enterprise- ja Ultimate-versiot **Huomautus:** Windows 7 tukee vain, jos järjestelmään asennetaan manuaalisesti Internet Explorerin 11.
-    -   Windows 8.1 Update 1 Professional, Enterprise ja upotettu versiot
-    -   Windows 10 Pro-, yritys- ja yrityksen LTSB versiot
+-   Retail hardware station on 32-bittinen sovellus, mutta sen voi suorittaa sekä x86- että x64-arkkitehtuureilla.
+-   Retail hardware station on tuettu seuraavissa käyttöjärjestelmissä:
+    -   Windows 7 Professional, Enterprise ja Ultimate **Huomautus:** Windows 7 on tuettu vain, jos Internet Explorer 11 on asennettu järjestelmään manuaalisesti.
+    -   Windows 8.1 Update 1 Professional, Enterprise ja Embedded
+    -   Windows 10 Pro, Enterprise ja Enterprise LTSB
 
 ### <a name="minimum-system-requirements"></a>Järjestelmän vähimmäisvaatimukset
 
-Tietokoneen on täytettävä kaikki järjestelmän vähimmäisvaatimukset asentamisen ja käyttämisen seuraavat kohteet:
+Tietokoneen on täytettävä kaikki järjestelmän vähimmäisvaatimukset, jotta seuraavien kohteiden asennus ja käyttö on mahdollista:
 
 -   IIS (Internet Information Services)
 -   Kolmannen osapuolen laitteisto
 
-## <a name="retail-store-scale-unit-requirements"></a>Retail Store-asteikon aikayksikön vaatimukset
+## <a name="retail-store-scale-unit-requirements"></a>Vähittäismyymälän vähittäismyyntilaitteen vaatimukset
 ### <a name="supported-operating-systems"></a>Tuetut käyttöjärjestelmät
 
--   Retail Store asteikon yksikkö on 32-bittinen sovellus, mutta se suoritetaan palvelimella sekä x86 että x64.
--   Retail Store-asteikon aikayksikön tuetaan seuraavissa käyttöjärjestelmissä:
-    -   Windows 7 Professional-, Enterprise- ja Ultimate-versiot
-    -   Windows 8.1 Update 1 Professional, Enterprise ja upotettu versiot
-    -   Windows 10 Pro-, yritys- ja yrityksen LTSB versiot
+-   Vähittäismyymälän vähittäismyyntilaite on 32-bittinen sovellus, mutta sen voi suorittaa sekä x86- että x64-arkkitehtuureilla.
+-   Vähittäismyymälän vähittäismyyntilaite on tuettu seuraavissa käyttöjärjestelmissä:
+    -   Windows 7 Professional, Enterprise ja Ultimate
+    -   Windows 8.1 Update 1 Professional, Enterprise ja Embedded
+    -   Windows 10 Pro, Enterprise ja Enterprise LTSB
 
 ### <a name="minimum-system-requirements"></a>Järjestelmän vähimmäisvaatimukset
 
--   4 gt RAM-muistia
--   Per core 1,6 GHz: N huippu suorittimen nopeus (kaksi porausnäytettä on pienin).
--   On vähintään 10 Gigatavua vapaata tilaa (kanava-tietokantaan, voit vaatia paljon tilaa.)
+-   4 Gt RAM-muistia
+-   1,6 GHz korkein ytimen suoritinnopeus (vähintään kaksi ydintä)
+-   Vähintään 10 gigatavua vapaata tallennustilaa (kanavatietokanta voi vaatia paljon tallennustilaa)
 
 ### <a name="recommended-system-requirements"></a>Suositeltavat järjestelmävaatimukset
 
--   6 gt RAM-Muistia
--   2.4 GHz i7 (tai vastaava) huippu suorittimen nopeus per core (neljän porausnäytteet suositellaan.)
--   On vähintään 10 Gigatavua vapaata tilaa (kanava-tietokantaan, voit vaatia paljon tilaa.)
+-   6 Gt RAM-muistia
+-   2,4 GHz i7 (tai vastaava) ydinkohtainen suoritinnopeus (suositus on neljä ydintä)
+-   Vähintään 10 gigatavua vapaata tallennustilaa (kanavatietokanta voi vaatia paljon tallennustilaa)
 
-## <a name="requirements-for-development-on-local-vms"></a>VMs paikallista kehittämistä koskevat vaatimukset
-Lisätietoja paikallisen virtuaalikoneet (VMs)-kehittämistä koskevat vaatimukset on [VM käynnissä paikallisen](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
+## <a name="requirements-for-development-on-local-vms"></a>Vaatimukset paikalliseen kehitykseen virtuaalikoneessa
+Lisätietoja paikallisesta virtuaalikoneessa (VMs) kehittämistä koskevista vaatimuksista on kohdassa [Paikalliset virtuaalikoneet](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Saat toiminnot Dynamics 365 arviointiversio](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+[Hae Dynamics 365 for Operationsin kokeiluversio](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
 
 

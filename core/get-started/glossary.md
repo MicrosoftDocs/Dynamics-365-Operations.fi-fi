@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365, toimintojen sanasto
+title: Dynamics 365 for Operations -sanasto
 description: "Microsoft Dynamics 365 for Operations -sanastossa on määritelty Dynamics 365 for Operations -tuotteen tärkeimmät termit ja käsitteet."
 author: tonyafehr
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365, toimintojen sanasto
+# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for Operations -sanasto
+
+[!include[banner](../includes/banner.md)]
+
 
 Microsoft Dynamics 365 for Operations -sanastossa on määritelty Dynamics 365 for Operations -tuotteen tärkeimmät termit ja käsitteet. 
 
@@ -249,7 +252,7 @@ Käyttäjän hyväksyntätestauksen käyttöönotossa ja tuotantoympäristöiss�
 
 Visual Studio -työkalu, jonka avulla voit luoda, päivittää ja tarkistaa mallielementtejä.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**.. \financial-dimensions\dimension-based määritys**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\financial-dimensions\dimension-based configuration**
 
 Määritysmenetelmä, jolla luodaan tuotevariantteja valitsemalla tuotedimensioiden arvot.
 
@@ -499,7 +502,7 @@ Tuotteen osa.
 
 ###### <a name="product-dimension"></a>**tuotedimensio**
 
-Värin, koon tai konfiguraation tuotteen määritteet, joita käytetään... \financial-dimensions\dimension-based määritys.
+Väri-, koko tai konfiguraatio-tuotemääritteet, joita käytetään kohteessa ..\financial-dimensions\dimension-based configuration.
 
 ###### <a name="product-family"></a>**tuoteperhe**
 
@@ -722,5 +725,7 @@ Henkilö, joka ottaa työntekijän tai alihankkijan roolin ja jolle maksetaan pa
 ###### <a name="workspace"></a>**työtila**
 
 Sivu, joka tarjoaa yleiskatsauksen yhteen käyttäjän suorittamaan tehtävään. Tämä sivu käyttää ruutuja, luetteloita ja kaavioita, jotka näyttävät odottavat työt ja niihin liittyvät tiedot useista lähteistä. Sivu nostaa esille usein toistuvat näihin tietoihin liittyvät työt. Työtilan yhteenveto-osiossa näytettävät ruudut näytetään myös niihin liittyvässä koontinäytön osassa.
+
+
 
 

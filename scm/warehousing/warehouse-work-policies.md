@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="warehouse-work-policies"></a>Varaston työkäytännöt
 
+[!include[banner](../includes/banner.md)]
+
+
 Uusi varastotyökäytäntö otetaan käyttöön Microsoft Dynamics AX 7.0.1 -versiossa (5/2016 päivitys). Tämä työkäytäntö määrittää, onko varastotyö luotu varastoprosessia varten valmistuksessa.
 
-Tämä työkäytäntö määrittää, onko varastotyö luotu varastoprosessia varten valmistuksessa. Voit määrittää työkäytännön käyttämällä yhdistelmää **työtilaustyypit**, **varastosijainti** ja **tuote**. Esimerkiksi L0101 ilmoitetaan tuotteen valmis tuotossijainti 001. Valmis tavara kulutetaan myöhemmin toisen tuotantotilauksen tuotoksen sijainnissa 001. Tässä tapauksessa voit määrittää työn käytännön luomisen, kun tuotteen valmiiksi tuotoksen kohtaan 001 L0101 ilmoittaa valmiiden tavaroiden hyllytys työn estämiseksi. Työkäytäntö on yksittäinen yksikkö, jota voidaan kuvata seuraavien tietojen avulla:
+Tämä työkäytäntö määrittää, onko varastotyö luotu varastoprosessia varten valmistuksessa. Voit määrittää työkäytännön käyttämällä yhdistelmää **työtilaustyypit**, **varastosijainti** ja **tuote**. Esimerkiksi tuote L0101 ilmoitetaan valmiiksi tuotossijaintiin 001. Valmis tuote käytetään myöhemmin toisessa tuotantotilauksessa tuotossijainnissa 001. Tässä tapauksessa voit määrittää työkäytännön, joka estää luomasta työtä, jossa käytetään valmiita sivuun siirrettyjä tuotteita, kun raportoit tuotteen L0101 valmiiksi tuotossijaintiin 001. Työkäytäntö on yksittäinen yksikkö, jota voidaan kuvata seuraavien tietojen avulla:
 
 -   **Työkäytännön nimi **(työkäytännön yksilöivä tunnus)
 -   **Työtilaustyypit **ja** Työn luontimenetelmä**
@@ -55,7 +58,7 @@ Voit valita tuotteen, johon työkäytäntö sopii. Voi soveltaa työkäytäntö�
 ## <a name="example"></a>Esimerkki
 Seuraavassa esimerkissä on kaksi tuotantotilausta RD-001 ja PRD-00*2*. Tuotantotilaus PRD-001 sisältää **Kokoonpano**-työvaiheen, jolla tuote SC1 raportoidaan valmiiksi sijainnissa O1. Tuotantotilaus PRD-002 sisältää **maalaus**-työvaiheen ja käyttää tuotetta SC1 sijainnista O1. Tuotantotilaus PRD-002 käyttää myös raaka-ainetta RM1 sijainnissa O1. RM1 varastoidaan varastosijaintiin BULK-001, josta raaka-ainekeräilyn varastotyö kerää sen sijaintiin O1. Keräilytyö luodaan, kun tuotanto PRD 002 vapautetaan. 
 
-[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
+[![Varaston työkäytännöt](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
 
 Kun suunnittelet tämän skenaarion mukaista varastotyön konfigurointia, ota huomioon seuraava:
 
@@ -66,12 +69,12 @@ Seuraavassa on esimerkki työmenettelystä jonka voit määrittää näiden hava
 
 |                                         |                                                       |
 |-----------------------------------------|-------------------------------------------------------|
-|**Work policy name**<br>                 |**Work order types**<br>                               |
-| Hyllytetty 01' n                    |-Hyllytys valmis tuote<br>                           |
-|                                         |**Locations**<br>                                      |
-|                                         |-O1   |                                               |
-|                                         |**Products** <br>                                      |
-|                                         |-SC1                                                  |
+|**Työkäytännön nimi**<br>                 |**Työtilaustyypit**<br>                               |
+| Ei pantu pois 01     `                    |- Valmiiden tuotteiden poispano<br>                           |
+|                                         |**Sijaintipaikat**<br>                                      |
+|                                         |- O1   |                                               |
+|                                         |**Tuotteet** <br>                                      |
+|                                         |- SC1                                                  |
 
 Seuraavissa menettelyissä saadaan vaiheittaiset ohjeet varastotyökäytännön määrittämiseksi tässä skenaariossa. Esimerkkiasetuksissa kuvataan myös, miten tuotantotilaus raportoidaan valmiiksi tiettyyn sijaintiin, jossa ei ole varastorekisterinumero-ohjausta.
 
@@ -244,5 +247,7 @@ STEPS (25)
 </tr>
 </tbody>
 </table>
+
+
 
 

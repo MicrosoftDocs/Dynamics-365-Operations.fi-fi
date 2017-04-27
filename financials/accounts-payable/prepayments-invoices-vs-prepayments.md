@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Ennakkomaksulaskut ja ennakkomaksut
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvaillaan ja vertaillaan kahta menetelmää, joita organisaatiot voivat käyttää ennakkomaksuihin. Ensimmäisessä menetelmässä on luotava ennakkomaksulasku, joka on liitetty ostotilaukseen. Toisessa menetelmässä ennakkomaksukirjauskansion tositteita voi luoda luomalla kirjauskansiovientejä ja merkitsemällä ne ennakkomaksukirjauskansion tositteiksi.
 
 Yritykset saattavat suorittaa ennakkomaksuja toimittajille tavaroista tai palveluista jo ennen niiden toimittamista. Ennakkomaksuja voidaan suorittaa toimittajille kahdella tavalla. Riskien minimoimiseksi ennakkomaksuja voi seurata määrittämällä ennakkomaksun ostotilaukselle. Tällöin on luotava ennakkomaksulasku, joka on liitetty ostotilaukseen. Tätä menetelmää kutsutaan ennakkomaksun laskuttamiseksi. Yritykset, jotka eivät halua seurata ennakkomaksuja kovin tarkasti tai eivät saa toimittajalta ennakkomaksulaskuja, voivat käyttää ennakkomaksujen laskutusmenetelmän sijaan ennakkomaksukirjauskansion tositteita. Ennakkomaksukirjauskansion tositteita voi luoda luomalla kirjauskansiovientejä ja merkitsemällä ne ennakkomaksukirjauskansion tositteiksi. Tässä menetelmässä ei voi seurata, mitkä ennakkomaksut toimittajalle vastaavat mitäkin ostotilausta. Voit kuitenkin merkitä kirjatun ennakkomaksun tilitettäväksi ostotilausta vastaan.
@@ -47,9 +50,9 @@ Monissa maissa kirjanpitokäytännöt vaativat, että asiakkaan maksamia tai toi
 1.  Määritä ennakkomaksuille kirjausprofiilit.
 2.  Valitse Myyntireskontran parametrit- ja Ostoreskontran parametrit -sivulla **Kirjanpito ja arvonlisävero** -kohdasta uusi kirjausprofiili käyttämällä **Kirjausprofiili maksukirjauskansiolle ennakkomaksun kanssa** -parametria.
 3.  Luo maksukirjauskansio ja luo sitten uusi maksu.
-4.  Voit merkitä maksun ennakkomaksuksi. Jos maksu on merkitty ennakkomaksuksi, maksu kirjataan kirjanpitotilille, joka määritetään kirjausprofiili, joka määritetään vaiheet 1 ja 2. Lisäksi, jos maksu on merkitty ennakkomaksuksi, verot lasketaan. Joissakin maissa verot on maksettava ennakkomaksua kirjattaessa, vaikka laskua ei olisi luotu.
+4.  Voit merkitä maksun ennakkomaksuksi. Jos maksu on merkitty ennakkomaksuksi, maksu kirjataan kirjanpitotileille, jotka on määritetty vaiheissa 1 ja 2 määritellylle kirjausprofiilille. Lisäksi jos maksu on merkitty ennakkomaksuksi, verot lasketaan, Joissakin maissa verot on maksettava ennakkomaksua kirjattaessa, vaikka laskua ei olisi luotu.
 5.  Kirjaa ennakkomaksu.
-6.  Valinnainen: Voit selvittää vastaan osto- tai myyntitilauksen ennakkomaksu ennen kuin luot laskun. Myyntitilaus tai ostotilaus-sivu, toimintoruudussa, voit käyttää **tapahtumat selvitetään**.
+6.  Valinnainen: Ennakkomaksun voi tilittää osto- tai myyntitilausta vastaan jo ennen laskun luomista. Valitse myynti- tai ostotilaussivulla toimintoruudusta **Selvitä tapahtumat**.
 7.  Kun toimittaja on toimittanut tavarat tai palvelut, kirjaa lasku. Jos tilitit ennakkomaksun osto- tai myyntitilausta vastaan vaiheessa 6, ennakkomaksu tilitetään automaattisesti luomaasi laskua vastaan. Jos et tilittänyt ennakkomaksua osto- tai myyntitilausta vastaan, voit tilittää sen laskua vastaan manuaalisesti valitsemalla asiakkaan tai toimittajan sivulta **Selvitä tapahtumat**. Tällöin ennakkomaksusumma palautetaan väliaikaiselta osto- tai myyntireskontran kirjanpitotililtä. Lisäksi jos verot on laskettu, ne peruutetaan, koska todelliset verot sisältyvät laskuun.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Ennakkomaksun laskutusprosessin yleiskatsaus
@@ -60,6 +63,8 @@ Ennakkomaksulaskuja käytetään liiketoiminnassa yleisesti. Ennakkomaksulaskun 
 3.  Ostoreskontran koordinaattori kirjaa ennakkomaksulaskun ostotilausta vastaan ja ennakkomaksulasku maksetaan.
 4.  Kun toimittaja on toimittanut tavarat tai palvelut ja niihin liittyvät toimittajalaskut on vastaanotettu, ostoreskontran koordinaattori kohdistaa niihin ennakkomaksusumman, joka on jo maksettu laskua vastaan.
 5.  Ostoreskontran koordinaattori maksaa ja tilittää jäljelle jäävän summan.
+
+
 
 
 

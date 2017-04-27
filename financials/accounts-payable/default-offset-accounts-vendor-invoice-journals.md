@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Toimittajan laskujen ja laskujen hyväksymisten kirjauskansioiden oletusvastatilit
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Oletusvastatilejä käytetään seuraavilla toimittajan laskun kirjauskansion sivuilla:
@@ -92,6 +95,8 @@ Seuraavan taulukon avulla voit päättää, mihin oletustilit ja vastatilit mä�
 </tr>
 </tbody>
 </table>
+
+
 
 
 

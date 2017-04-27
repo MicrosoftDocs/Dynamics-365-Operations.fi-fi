@@ -1,6 +1,6 @@
 ---
 title: Taseen talousraportit
-description: "Tässä artikkelissa kuvataan taseet oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näiden kertomusten."
+description: "Tässä artikkelissa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="balance-sheet-financial-reports"></a>Taseen talousraportit
 
-Tässä artikkelissa kuvataan taseet oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näiden kertomusten. 
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin. 
 
 <a name="default-balance-sheet-reports"></a>Oletustaseraportit
 -----------------------------
@@ -72,10 +75,12 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Taloushallinnan raportointi](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Näytä raportit](view-financial-reports.md)
 
-[Dynamics taloudellisen raportoinnin blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamicsin talousraportointi -blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

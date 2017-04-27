@@ -1,5 +1,5 @@
 ---
-title: "Määritä lähetys"
+title: "Tavaralähetyksen määrittäminen"
 description: "Tässä aiheessa kerrotaan, miten määritetään saapuvan tavaralähetyksen varastotoimintoja."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-consignment"></a>Määritä lähetys
+# <a name="set-up-consignment"></a>Tavaralähetyksen määrittäminen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä aiheessa kerrotaan, miten määritetään saapuvan tavaralähetyksen varastotoimintoja. 
 
@@ -34,19 +37,21 @@ Tavaralähetysvarasto on varasto, joka on toimittajan omistaa mutta joka on vara
 ## <a name="inventory-owners"></a>Varaston omistajat
 Saapuvien lähetyksen fyysisen varaston kirjaamiseksi täytyy määrittää toimittajan omistaja. Tämä tehdään **varaston omistaja** -sivulla. Kun valitset **toimittajatili** tämä luo oletusarvot **nimi** ja **omistaja** -kenttiin. Arvo **omistaja**-kentässä näytetään toimittajalle, joten voit halutessasi muuttaa sitä, jos ulkoisten käyttäjien ei ole helppoa tunnistaa toimittajan tilin nimiä. Voit muokata **omistaja** -kenttää ainoastaan siihen asti, kun olet tallentanut **varaston omistaja** -tietueen. **Nimi**-kenttä täytetään sen osapuolen tiedoilla, joihin toimittajatili liittyy, eikä sitä voi muuttaa. 
 
-[![Varasto-omistajat](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![inventory-owners](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Seurantadimensioryhmä
 Nimikkeet, jotka on tarkoitus käyttää lähetysprosesseissa, on yhdistettävä **seurantadimensioryhmään** jossa **omistaja** dimension arvo määritetään **aktiivinen**. Omistaja-dimensiossa **Varastotilanne** ja **kirjanpitovarasto** -asetukset ovat aina valittuina. **Kattavuussuunnitelma dimension mukaan** ei ole koskaan valittuna. 
 
-[![seurantadimensioryhmä](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![tracking-dimension-group](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Varaston omistajuuden muutoksen kirjauskansio
 **Varaston omistajuuden muutos** -kirjauskansiota käytetään muuttamaan tavaralähetysvaraston omistajuus toimittajalta yritykselle, joka käyttää varastoa. Jokaiselle varastokirjauskansiolle on määritettävä nimi. Nämä nimet luodaan **Varastokirjauskansion nimet** -sivulla ja **kirjauskansiotyypiksi** on määritettävä **Omistajuuden muutos**. 
 
-[![omistus-muutos-varastokirjauskansio](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![inventory-ownership-change-journal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Toimittajayhteistyö tavaralähetysprosessissa
 Jos toimittajat käyttävät toimittajayhteistyöliittymää, he voivat valvoa sen avulla toimipaikan varaston kulutusta. Saat lisätietoja toimittajien määrittämisestä käyttämään toimittajayhteistyötä [Käyttöoikeuksien määrittäminen toimittajayhteistyöliittymän käyttäjille](../procurement/configure-security-vendor-portal-users.md).
+
+
 
 

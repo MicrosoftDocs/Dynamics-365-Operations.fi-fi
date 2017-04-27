@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Vakiokustannusten päivittäminen muissa kuin tuotantoympäristöissä
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää ohjeita vakiokustannusten päivittämiseen muussa kuin tuotantoympäristössä.
 
 Näissä ohjeissa lähdetään siitä, että standardikustannusten päivityksissä käytetään kahden version mallia. Kahden version mallissa yksi kustannuslaskelmaversio sisältää alun perin määritetyt lukitun kauden standardikustannukset ja toinen kustannuslaskelmaversio uusia valmistettuja nimikkeitä koskevat lisäpäivitykset. Lisäpäivitykset lisätään kustannustietueina toiseen kustannuslaskelmaversioon ja lopuksi myös aktivoidaan. On myös mahdollista käyttää yhden version lähestymistapaa, jossa käytössä on vakiokustannusten alun perin määritetty joukko. Kahden version lähestymistapa edellyttää, että määritetään toinen kustannuslaskelmaversio. Tämän kustannuslaskelmaversion määritysohjeet:
@@ -46,6 +49,8 @@ Voit korjata, oikaista tai päivittää uusien nimikkeiden vakiokustannuksia seu
 4.  Muuta estomerkkiä **Kustannuslaskentaversion ylläpito** -sivulla siten, että toiseen kustannuslaskelmaversioon lisätyt odottavat kustannustietueet voidaan aktivoida.
 5.  Aktivoi kaikki toiseen kustannuslaskelmaversioon lisätyt odottavat kustannustietueet **Aktivoi hinnat** -sivulla (avataan **Kustannuslaskentaversion ylläpito** -sivulta). Yksittäisten nimikkeiden odottavia kustannustietueita voi myös aktivoida napsauttamalla **Aktivoi odottava hinta** -painiketta **Nimikkeen hinta** -sivulla.
 6.  Voit estää muiden tietojen ylläpidon muuttamalla toiseen kustannuslaskentaversioon lisättyjä estomerkintöjä **Kustannuslaskentaversion määritys** -sivulla. Estomenettelyt estävät uusien odottavien kustannusten syötön ka odottavien kustannusten aktivoinnin.
+
+
 
 
 

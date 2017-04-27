@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-objects"></a>Kustannusobjektit
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja kustannusobjekteista ja siitä, miten kustannukset ja määrät kerätään. Kustannusobjekti on yksikkö, johon kustannukset ja määrät kerätään. Kustannusobjektiyksiköt voivat olla tuotteita tai tuotevariantteja, kuten tyylin ja värin variantteja.  
 
 <a name="cost-objects"></a>Kustannusobjektit
@@ -65,19 +68,21 @@ Seuraavassa taulukossa näkyy mikä on kustannuskohde ja mikä on varastokohde.
     -   Kirjattu määrä
 -   **Keskimääräinen yksikkökustannus**-kenttä on laskettu kenttä. Arvo lasketaan jakamalla **Arvo**-arvo **Määrä**-arvolla.
 
-**Huomautus:** ** fyysistä arvoa ** parametri ei ole vaikutusta edellä laskelmat.
+**Huomautus:** **Sisällytä fyysinen arvo** -parametri ei vaikuta edellisiin laskelmiin.
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Product dimension group](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[Tuotedimensioryhmä](https://technet.microsoft.com/en-us/library/aa499382.aspx)
 
-[Storage dimension group](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[Varastodimensioryhmä](https://technet.microsoft.com/en-us/library/hh209317.aspx)
 
-[Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[Seurantadimensioryhmä](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Mikä on uusi tai muutettu Microsoft Dynamics AX: ssä](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Uudet ja muuttuneet Microsoft Dynamics AX -ominaisuudet](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
-[Cost entries](cost-entries.md)
+[Kustannusmerkinnät](cost-entries.md)
+
+
 
 

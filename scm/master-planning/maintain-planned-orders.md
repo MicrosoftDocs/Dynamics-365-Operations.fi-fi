@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="maintain-planned-orders"></a>Ylläpidä suunniteltuja tilauksia
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää suunniteltujen tilausten hallintaa käsitteleviä tietoja. Artikkelissa kuvataan, miten voit päivittää suunniteltujen tilausten tilan, vahvistaa ne ja suodattaa suunniteltuja tilauksia, joilla on sama tila kuin valitulla suunnitellulla tilauksella.
 
 Voit hallita suunniteltuja tilauksia **Pääsuunnittelu**-työtilassa, **Suunniteltu tilaus** -luettelossa tai **Suunnitellut tuotantotilaukset**-, **Suunnitellut ostotilaukset**- ja **Suunniteltu siirto** -luettelossa. Voit seurata edistymistä **Tila**-kentässä. Käytettävissä ovat seuraavat arvot:
@@ -48,6 +51,8 @@ Kun suunniteltu tilaus on vahvistettu, se siirtyy kyseisen moduulin tilausosaan.
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Master plans](master-plans.md)
+[Pääsuunnitelmat](master-plans.md)
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Käytä konfigurointeja tuote"
+title: "Tuotekonfiguraatioiden käyttäminen uudelleen"
 description: "Voit määrittää, että haluat uudelleenkäyttää automaattisesti tuotteen aiemmin luotua konfiguraatiota. Kun käyttäjän määritysistunto on valmis, järjestelmä tarkistaa, onko käyttäjän valintoja vastaava konfiguraatio jo olemassa. Jos vastaava konfiguraatio löytyy, konfiguraatiotunnusta, vastaavaa tuoterakennetta ja reititystä käytetään uudelleen."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reuse-product-configurations"></a>Käytä konfigurointeja tuote
+# <a name="reuse-product-configurations"></a>Tuotekonfiguraatioiden käyttäminen uudelleen
+
+[!include[banner](../includes/banner.md)]
+
 
 Voit määrittää, että haluat uudelleenkäyttää automaattisesti tuotteen aiemmin luotua konfiguraatiota. Kun käyttäjän määritysistunto on valmis, järjestelmä tarkistaa, onko käyttäjän valintoja vastaava konfiguraatio jo olemassa. Jos vastaava konfiguraatio löytyy, konfiguraatiotunnusta, vastaavaa tuoterakennetta ja reititystä käytetään uudelleen.
 
@@ -41,5 +44,7 @@ Konfiguraatioiden uudelleenkäyttöä varten on määritettävä seuraavat kompo
 
 ## <a name="resetting-configuration-reuse"></a>Konfiguraation uudelleenkäytön nollaaminen
 Kun nollaat konfiguroinnin uudelleenkäytön, aiemmin luotuja konfiguraatioita ei enää käsitellä. Voit halutessasi nollata konfiguroinnin uudelleenkäytön, jos tuoterakennetta tai reititystä on muutettu, mutta niihin liittyviä määritteitä ei ole muutettu. Konfiguroinnin uudelleenkäyttö nollataan kohdassa **yleiset** komponentin pikavälilehdessä.
+
+
 
 

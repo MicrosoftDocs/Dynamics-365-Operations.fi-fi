@@ -1,6 +1,6 @@
 ---
-title: Toimintoperusteisen alihankinta
-description: "Tässä aiheessa kuvataan yksityiskohtaisesti alihankinnasta käyttäminen tuotantovirran lean-valmistuksen."
+title: Toimintoperusteinen alihankinta
+description: "Tässä aiheessa kuvataan yksityiskohtaisesti, miten alihankintatoimintoja voi käyttää lean-valmistuksen tuotantovirrassa."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,80 +26,85 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="activity-based-subcontracting"></a>Toimintoperusteisen alihankinta
+# <a name="activity-based-subcontracting"></a>Toimintoperusteinen alihankinta
 
-Tässä aiheessa kuvataan yksityiskohtaisesti alihankinnasta käyttäminen tuotantovirran lean-valmistuksen.
+[!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics-365 operaatioille, ovat samanarvoisena, alihankinta: tuotantotilaukset ja lean-valmistuksen. Lean-valmistuksen lähestymistapaa alihankinta työtä on mallinnettu palveluna, joka liittyy Tuotantovirran tehtävän. Kustannusryhmän tyyppi, jonka nimi on erityinen **suora ulkoistaminen** on otettu käyttöön, ja alihankinnan palvelut kuuluvat enää tuoterakenne (BOM). Lean-valmistuksen kustannuslaskennan ratkaisun täysin integroitu alihankintatöiden kustannuslaskentaan.
 
-## <a name="production-flows-that-involve-subcontractors"></a>Tuotantovirtojen, joihin liittyy alihankkijoiden
-Tuotantovirran perusperiaatteena ei muutu, kun tehtävät ovat alihankintana. Materiaali kulkee sijaintien välillä prosessin toimintojen muuntaminen materiaali tuotteita ja siirtotehtäviä siirtää materiaali tai tuotteiden paikasta toiseen. Voit mallintaa sijainnit ja toimi solut toimittajan hallitaan määrittämällä toimittajatili, varastoon tai resurssi resurssiryhmään.  
+Tässä aiheessa kuvataan yksityiskohtaisesti, miten alihankintatoimintoja voi käyttää lean-valmistuksen tuotantovirrassa.
 
-Näiden ominaisuuksien perusteella, lean-valmistuksen ei vaadi erityisiä piirteitä materiaalia ja tuotteiden tukemiseksi. Mahdollista käyttävät valmistajien kuin tuotanto- tai -palvelujen tarjoajille voidaan mallintaa skenaariot perustuvat tuotantovirran ja arkkitehtuuri.  
+Microsoft Dynamics 365 for Operationsissa on kaksi lähestymistapaa alihankintaan: tuotantotilaukset ja lean-valmistus. Lean-valmistuksen lähestymistavassa alihankintatyö on mallinnettu palveluna, joka liittyy tuotantovirran tehtävään. Kustannusryhmän tyyppi, jonka nimi on **Suora ulkoistaminen** on otettu käyttöön, ja alihankinnan palvelut eivät enää kuulu tuoterakenteeseen (BOM). Lean-valmistuksen kustannuslaskennan ratkaisuun on täysin integroitu alihankintatöiden kustannuslaskenta.
 
-Esimerkiksi supermarket, joka sijaitsee alihankkijan ulkopuolella toimii alihankkija. Kun käsittely-yksiköt tyhjennetään samalla alihankkijan, kanban-kortit palautetaan Seuraava toimitus ja kokoonpano-soluun. Supermarket on alihankkijan sitten täyttää. Siirrot ja alihankkijan avulla voidaan mallintaa eksplisiittinen siirtotehtäviä, keräilyyn ja lähetyksen prosessin tukemiseksi. Tarvittaessa nimenomainen rekisteröinti ei ole fyysinen liikenteen tukemiseksi siirto toiminta voidaan jättää pois.  
+## <a name="production-flows-that-involve-subcontractors"></a>Tuotantovirrat, joihin liittyy alihankkijoita
+Tuotantovirran perusperiaate ei muutu, kun tehtävät hoidetaan alihankintana. Materiaali virtaa edelleen sijaintien välillä prosessitoiminnot muuntavat materiaalia tuotteiksi ja siirtotehtävät siirtävät materiaaleja tai tuotteita paikasta toiseen. Voit mallintaa sijainteja ja työolut toimittajan hallitaan määrittämällä toimittajatilin varastoon tai resurssin resurssiryhmään.  
 
-Tuotantovirran yleisen kapasiteetin kuormitusta voidaan käyttää alihankkija. Tuotantovirran on mallinnettu esimerkiksi ajoitettu kanban-sääntöjen avulla. Suunnittelija käyttää kanban-ajoituksen aikataulu ja lataa taso hallituksessa sekä työsolun pyydettäessä. Suunnittelija tarkkailee myös supermarket konsolidoitu toimitusaikataulun **toimitusaikataulun** sivulla. Yhtä tai useaa tuotantovirtojen voi mallintaa useiden alihankkijoiden ja voi olla useita kanban-säännöt, joiden avulla voidaan antaa saman tuotteen eri toimintojen kautta samaan paikkaan. Suunnittelija voi Muunna kanbanit vaihtoehtoinen kanban-sääntö, joka on alun perin luotu vaihtoehtoisen prosessin sisäisen tuotannon kanban aikatauluttaa uudelleen. Itse asiassa työsolua alihankintana luonne ei ole vaikutusta tuotantovirran. Sama toimintaperiaate koskee kahden rinnakkaisen sisäinen työsolun tai solujen alihankintana.   
+Näiden ominaisuuksien perusteella, lean-valmistus ei vaadi erityisiä ominaisuuksia, jotta se tukisi materiaalin ja tuotteiden virtoja. Kaikki mahdolliset skenaariot, joihin kuuluu toimittajia tuotannon tai kuljetuksen tarjoajina, voidaan mallintaa tuotantovirran ja tehtävien arkkitehtuurin perusteella.  
 
-Kuten muut toimintaa tuotantovirran, alihankinnasta voi kuluttaa ja tarjonta varastoiduilla, varastoiduilla (keskeneräinen työ \[KET\]), ja puolivalmiiden materiaalia ja tuotteita. Prosessien ajoitus ja Alihankintana hankittavien tehtävien suorittamista varten ovat kaikissa tapauksissa samat. Lisäksi nämä käsitellä samalla tavalla kuin sisäisen työn prosesseja.
+Esimerkiksi alihankkijan työskentelee supermarketissa, joka sijaitsee alihankkijan toimipisteessä. Kun käsittely-yksiköt tyhjennetään alihankkijalla, kanban-kortit palautetaan kokoonpano-soluun seuraavassa toimituksessa. Sitten alihankkijan supermarkettia täydennetään. Siirrot ja alihankkijalle ja alihankkijalta voidaan mallintaa eksplisiittisinä siirtotehtävinä, keräily- ja lähetysprosessin tukemiseksi. Jos fyysisen kuljetuksen tukemiseksi ei tarvita eksplisiittistä rekisteröintiä, kuljetustoiminnot voidaan jättää pois.  
 
-## <a name="purchase-process-for-subcontracted-activities-services"></a>Alihankintana hankittavien tehtävien (palvelut) ostoprosessi
-Fyysinen materiaalivirtojen, joka on rekisteröity kanban-työn edistymistä, esimerkiksi perustuu alihankinnasta ostoprosessi, käynnistää tai suorittaa. Taloushallinnon virtaus, esimerkiksi kustannusten, alihankintatöiden on sekundaarinen vuo, joka seuraa fyysistä kulkua. Samaan aikaan ostoprosessi on riippumaton prosessi, joka mahdollistaa manuaalisen muuttamisen ostoasiakirjoissa jokaisessa vaiheessa. Alihankintana hankittavien tehtävien ostoprosessi on:
+Alihankkijaa voidaan käyttää tuotantovirran yleisen kapasiteetin kuormituksen tasaamiseen. Tuotantovirta on mallinnettu esimerkiksi ajoitettujen kanban-sääntöjen avulla. Suunnittelija käyttää kanban-aikataulua ajoittaakseen ja jakaakseen kuormituksen molemmille työsoluille pyydettäessä. Suunnittelija tarkkailee myös supermarketin konsolidoitua toimitusaikataulua **Toimitusaikataulu**-sivulla. Yhdessä tai useassa tuotantovirrassa voidaan mallintaa useita alihankkijoita, ja siellä voi olla useita kanban-sääntöjä, joiden avulla voidaan toimittaa samaa tuotetta samaan paikkaan eri tehtävien kautta. Suunnittelija voi muuntaa kanbanit vaihtoehtoisiksi kanban-säännöiksi, ajoittaakseen uudelleen vaihtoehtoiseen prosessiin kanbanin, joka on alun perin luotu sisäiseen tuotantoon. Itse asiassa työsolun alihankintaluonne ei vaikuta tuotantovirtaan ollenkaan. Sama toimintaperiaate koskee kahta rinnakkaista sisäistä työsolua tai kahta alihankintana suoritettavaa työsolua.   
 
-1.  Luo ostosopimus. Ostosopimuksen palvelua varten luotuihin ja Tuotantovirran tehtävän yhteydessä.
-2.  Luo ostotilaus. Oston vapautustilauksen luomista-palvelun ajoitettu kanban-töiden perusteella. Saman palvelun työt voidaan ryhmitellä ostotilauksen riveille päivän, viikon tai kuukauden mukaan. Milloin tahansa sen jälkeen, kun luodaan kanban-työt voidaan luoda ostotilausrivejä. Jopa jälkeen se voidaan luoda ostotilausrivejä. Yleensä tämä vaihtoehto valitaan, jos alihankkijalle tarjoaa muita ilmoittamatta, joka vastaanottaa alihankkijan tai kanbanit kanban-korttien perusteella. Tässä tapauksessa pienentää ostotilauksen ja laskun väliset poikkeamat.
-3.  Luo kanban-kortit, materiaali ja valmistella jalostukseen alihankkijan lähettää keräysluettelon. Tuotantovirran, yksityiskohtainen mallinnus mukaan valmisteen tapahtuu prosessin toimintojen kanban-taulun keräysluettelo ja valmiste-funktion avulla. Vaihtoehtoisesti valmisteen tapahtuu siirtotöiden kanban-taulu keräysluettelo ja alku- tai käyttämällä. Varastoiduilla materiaalin molemmissa tapauksissa voidaan tukea WMS-keräyksen ja toimitus prosessi. Tarvittaessa voidaan luoda rahtikirjan.
-4.  Luo kanban-käsittely-yksiköt ja kanban-kortit. Käsittelyn jälkeen kortit palautetaan alihankkijan. Kortit ovat yleensä toimituksen Huomautus, joka määrittää fyysinen materiaali, joka on toimitettu. Viittaus annetut palvelut ei tarvita. Kanban-taulun mukaan kanban-kortit on rekisteröity materiaalista tai asiakkaan tuotteen saapumisesta. (Tai prosessin toimintojen kanban-taulu-siirtotöiden kanban-taulun käytetään mallinnettu toiminnasta riippuen.).
-5.  Luo vastaanoton neuvoa. Neuvoa-antava vastaanottoa voidaan käyttää korvaamaan pakkausluettelon vastaanotettujen palveluiden slip-asiakirja. Tiedotteiden vastaanoton voi luoda valmiin kanban-töiden alihankinnan tehtävän perusteella valitulta ajanjaksolta. Kunkin työn vastaanoton tiedotteiden luodaan liittyvät ostotilausriville. Neuvoa-antava vastaanotto voivat tulostaa ja lähettää vahvistuksen vastaanottamisesta alihankkijan.
+Kuten muutkin tuotantovirran tehtävät, alihankintana suoritettavat tehtävät voivat kuluttaa ja täydentää varastoituja, varastoimattomia (keskeneräinen työ \[KET\]) ja puolivalmiita materiaaleja ja tuotteita. Kaikissa tapauksissa alihankintana hankittavien tehtävien ajoituksen ja suorittamisen prosessit ovat samat. Lisäksi nämä prosessoivat samoja kohteita kuin sisäisen työn prosessit.
+
+## <a name="purchase-process-for-subcontracted-activities-services"></a>Alihankintana hankittavien tehtävien ostoprosessi (palvelut)
+Alihankintana hankittavien tehtävien ostoprosessi perustuu fyysiseen materiaalivirtaan, jonka kanban-työn edistyminen rekisteröi: esimerkiksi Käynnistä tai Viimeistele. Esimerkiksi taloushallinnon työnkulku – alihankintatöiden kustannus – on sekundaarinen työnkulku, joka seuraa fyysistä virtaa. Samaan aikaan ostoprosessi on riippumaton prosessi, joka mahdollistaa ostoasiakirjojen manuaalisen muuttamisen jokaisessa vaiheessa. Tässä on alihankintana hankittavien tehtävien ostoprosessi:
+
+1.  Luo ostosopimus. Ostosopimus luodaan palvelulle ja se yhdistetään tuotantovirran tehtävään.
+2.  Luo ostotilaus. Oston vapautustilaus voidaan luoda palvelulle perustuen ajoitettuihin kanban-töihin. Saman palvelun työt voidaan ryhmitellä ostotilauksen riveille päivän, viikon tai kuukauden mukaan. Ostotilausrivit voidaan luoda milloin tahansa kanban-töiden luonnin jälkeen. Ostotilausrivit voidaan luoda jopa tämän jälkeen. Yleensä tämä vaihtoehto valitaan, jos alihankkija tarjoaa palveluita ilman lisäilmoitusta, vain alihankkijan vastaanottamien tai kanbanien tai kanban-korttien perusteella. Tässä tapauksessa ostotilauksen ja laskun väliset poikkeamat voidaan minimoida.
+3.  Luo kanban-kortit, materiaalit ja keräysluettelo lähettääksesi ne alihankkijalle, jotta alihankkija voi valmistautua käsittelyyn. Tuotantovirran yksityiskohtaisen mallinnuksen perusteella valmistelu tapahtuu prosessin toimintojen kanban-taulussa käyttämällä keräysluetteloa ja valmistelutoimintoa. Vaihtoehtoisesti valmistelu tehdään siirtotöiden kanban-taulussa käyttäen keräysluetteloa ja käynnistystä tai viimeistelyä. Varastoiduille materiaalille molempia prosesseja voi tukea varastonhallintajärjestelmän keräysprosessi ja toimitusprosessi. Tarvittaessa voidaan luoda rahtikirja.
+4.  Luo kanban-käsittely-yksiköt ja kanban-kortit. Käsittelyn jälkeen kortit palautetaan alihankkijalta. Kortit sisältävät yleensä toimitusilmoituksen, joka määrittää fyysisen materiaalin, joka on toimitettu. Viittausta annetut palveluihin ei tarvita. Materiaalin tai tuotteen saapuminen asiakkaalle rekisteröidään kanban-tauluun kanban-korteista riippuen. (Käytetään joko prosessitehtävien kanban-taulua tai siirtotöiden kanban-taulua mallinnetuista toiminnoista riippuen.).
+5.  Luo vastaanoton ohje. Vastaanoton ohjeella voidaan korvata pakkausluettelo vastaanotetuista palveluista. Vastaanoton ohjeita voi luoda alihankinnan tehtävän valmiiden kanban-töiden perusteella valitulle ajanjaksolle. Kullekin työn vastaanotolle voidaan luoda ohjeet liittyvälle ostotilausriville. Vastaanoton ohje voidaan tulostaa ja lähettää alihankkijalle vastaanoton vahvistuksena.
 6.  Luo lasku.
 
-Prosessi päättyy, kun alihankkijan laskutetaan ajan. Laskun vastine on tehty tiedotteiden vastaanoton, jotka on luotu vastaan. Koska tiedotteiden vastaanoton edustavat tarkka fyysinen vastaanottamisesta, kolmisuuntainen vastaavuus on yksinkertaistettu.
+Prosessi päättyy, kun alihankkijaa laskutetaan kuluneelta kaudelta. Laskun vastaavuus tehdään vastaanoton ohjeiden mukaan. Koska vastaanoton ohjeet edustavat materiaalin tarkkaa fyysistä vastaanottamista, kolmisuuntaista vastaavuutta on yksinkertaistettu.
 
-## <a name="configuring-activities-for-subcontracting"></a>Määritetään tehtävät alihankinta
-Seuraavissa osissa kuvataan tehtävät alihankinta määrittämisestä.
+## <a name="configuring-activities-for-subcontracting"></a>Alihankinnan tehtävien määrittäminen
+Seuraavissa osissa kuvataan alihankinnan tehtävien määrittäminen.
 
-### <a name="subcontracted-services"></a>Alihankintapalvelujen
+### <a name="subcontracted-services"></a>Alihankintapalvelut
 
-Maksu, jota käytetään toimintoperusteisen alihankinta on oltava tuote, joka on seuraavat ominaisuudet:
+Maksunimikkeen, jota käytetään toimintoperusteisessa alihankinnassa, on oltava tuote, jolla on seuraavat ominaisuudet:
 
--   **Tuotetyyppi:** huolto
--   **Varastomalliryhmä:** ei-varastoitaviksi
+-   **Tuotetyyppi:** Palvelu
+-   **Varastomalliryhmä:** Varastoimaton
 
-Tämä vaatimus pakottaa ensimmäistä käyttöä-varastomallin ensimmäinen out (FIFO). **Huomautus:** tuotteiden kustannuslaskennan vaatii palvelun vakiokustannuksen määritellään. Toimittajan kanssa ostosopimus on pakollinen. Muutoin palvelu ei voi käyttää toimintoperusteisen alihankinta.
+Tämä vaatimus pakottaa FIFO-varastomallin käytön. **Huomautus:** Tuotteiden kustannuslaskenta vaatii, että palvelun vakiokustannukset määritellään. Ostosopimus toimittajan kanssa on pakollinen. Muutoin palvelua ei voi käyttää toimintoperusteiseen alihankintaan.
 
-### <a name="subcontracted-process-activities"></a>Alihankinnan prosessin toimintojen
+### <a name="subcontracted-process-activities"></a>Alihankintana suoritettavat prosessitoiminnot
 
-Alihankintana hankittavien tehtävien määrittää prosessin toimintaa, seuraavien ohjeiden mukaisesti.
+Voit määrittää prosessitoiminnon alihankintana hankittavaksi tehtäväksi seuraavien ohjeiden mukaisesti.
 
-1.  Määritä työsolun alihankintana. Määrittää työsolun alihankintana, sinun on luotava jokin resurssi **toimittajan** kirjoittaa ja liittää työsolun (resurssiryhmä). Runtime kustannusluokan, **suora ulkoistaminen** liitetään työsolua kustannusryhmän tyyppi. Kustannusluokkien asetukset ja määrää ei tarvita.
-2.  Kun prosessin toiminta on luotu ja liittyvät alihankintatöiden soluun, palvelun tehtävälle on määritettävä ennen tuotantovirran versioon voidaan aktivoida. Olet tehnyt tämän vaiheen **tehtävän****tiedot** sivulla. Toimille, jotka liittyvät alihankintatöiden solun **-palvelun ehdot** pikavälilehdessä näkyy. Tässä pikavälilehdessä Lisää oletuspalvelua, joka koskee kaikkia tuotoksen nimikkeitä. Jos kortinlukijan osat edellyttävät erilaisia palveluja tai palvelun eri Laskentaparametrit (esimerkiksi eri Palvelusuhde), voit lisätä muita palveluita tehtävään.
+1.  Määritä alihankintana suoritettava työsolu. Jotta voisit määrittää työsolun alihankintana, sinun on luotava **Toimittaja**-tyypin resurssi ja liittää se työsoluun (resurssiryhmään). Suorituksenaikaisen **Suora ulkoistaminen** -kustannusryhmätyypin kustannusluokka pitää määrittää työsolulle. Kustannusluokkia asetuksille ja määrälle ei tarvita.
+2.  Kun prosessitehtävä on luotu ja liitetty alihankintatöiden soluun, tehtävälle on määritettävä palvelu ennen kuin tuotantovirran versio voidaan aktivoida. Suoritat tämän vaiheen **Tehtävän** **tiedot** -sivulla. Toimille, jotka liittyvät alihankintatöiden soluun, näytetään **Palvelun ehdot** -pikavälilehti. Lisää tässä pikavälilehdessä oletuspalvelu, joka koskee kaikkia tuotoksen nimikkeitä. Jos tietyt tuotosnimikkeet vaativat eri palveluja tai eri palvelun laskentaparametreja (esim. eri palvelusuhde), voit lisätä muita palveluja tehtävään.
 
-## <a name="subcontracted-transfer-activities"></a>Alihankinnan siirtotehtäviä
-Alihankintana hankittavien tehtävien, sen mukaan, mikä on määritetty siirto toiminta **rahdinkuljettaja** siirto toiminnan määrittäminen. Valittavissa ovat seuraavat vaihtoehdot:
+## <a name="subcontracted-transfer-activities"></a>Alihankintana suoritettavat siirtotoiminnot
+Siirtotehtävä määritetään samoin kuin alihankintana hankittavat tehtävät, riippuen siirtotehtävän **Rahdinkuljettaja** -asetuksesta. Valittavissa ovat seuraavat vaihtoehdot:
 
--   **Lähettäjä** – tehtävä on alihankintana, jos siirto varastosta hallitsee toimittajan (kuten varaston ominaisuuden mukaan). Kaikki palvelut valittu ostosopimuksia fyysisen varastoinnin on oltava saman Toimittajatunnus.
--   **Vastaanottajan** – tehtävä on alihankintana, jos fyysisen varaston siirto hallitsee toimittajan (kuten varaston ominaisuuden mukaan). Kaikki palvelut valittu ostosopimuksia fyysisen varastoinnin on oltava saman Toimittajatunnus.
--   **Kantoaallon** – tehtävä on alihankintana myyjälle, joka tarjoaa palvelua. Kelvollisen liikenteenharjoittajan on luotava varastonhallintaa ja on oltava määritetty toimittajatili.
+-   **Lähettäjä** – Tehtävä on alihankintana, jos siirtoa varastosta hallitsee toimittaja (varaston ominaisuuden määrityksen mukaan). Kaikissa palveluiden valituissa ostosopimuksissa pitää olla sama toimittajatunnus fyysisenä varastona.
+-   **Vastaanottaja** – Tehtävä on alihankintana, jos siirtoa varastoon hallitsee toimittaja (varaston ominaisuuden määrityksen mukaan). Kaikissa palveluiden valituissa ostosopimuksissa pitää olla sama toimittajatunnus fyysisenä varastona.
+-   **Rahdinkuljettaja** – Tehtävän suorittaa alihankintana mikä tahansa toimittaja, joka tarjoaa kyseistä palvelua. Jotta rahdinkuljettaja olisi kelvollinen, rahdinkuljettaja on luotava varastonhallintaa varten ja sillä on oltava määritetty toimittajatili.
 
-Prosessin toimintojen kuin sinun on määritettävä oletuspalvelua tehtävien siirtäminen alihankintana **palvelun ehdot** pikavälilehdessä **toimintaa****tiedot** sivulla.
+Prosessitehtäville sinun on määritettävä oletuspalvelu alihankintana suoritettaville siirtotehtäville **Palvelun ehdot** -pikavälilehdessä **Tehtävän** **tiedot** -sivulla.
 
 ## <a name="service-quantity-calculation"></a>Palvelumäärän laskenta
-Palvelun kohteen on viittaus perustuu koko ostoprosessin. Tämän nimikkeen viittauksen mitataan palvelun mittayksikkö. Palvelut mitataan yleensä services (yksiköt) määrä tai aika. Voit laskea huoltomäärä rekisteröity kanban-töiden päättymisen perusteella seuraavilla tavoilla:
+Koko ostoprosessi perustuu palvelun nimikeviitteeseen. Tämä nimikeviittaus mitataan palvelun mittayksikössä. Palvelut mitataan yleensä palveluiden määränä (yksikköinä) tai aikana. Voit laskea palvelumäärän rekisteröityjen kanban-töiden valmistumisten perusteella seuraavilla tavoilla:
 
--   **Laskentaan, joka perustuu työpaikkojen määrän** – yksi kanban-työ on sama kuin *n* riippumatta tuotteen määrä, joka toimitetaan palvelun yksiköt. Lean-valmistuksen yksi työ vastaa yksi käsittely-yksikkö. Tätä laskentamenetelmää sovelletaan kaikkiin palveluihin, joissa on kiinteä hinta per käsittely-yksikkö. Tätä menetelmää sovelletaan tämän vuoksi yleensä siirtää toimintaa. Kuitenkin sitä käyttää myös prosessin toimintaan, jotka käsittelevät koko käsittely-yksiköt.
--   **Laskentaan, joka perustuu tuotteen määrä** – palvelun määrä on suhteessa tuotteen määrä, joka on suunniteltu tai toimitetaan. Kun toimitettavaa hyödykettä määrä lasketaan, virheelliset määrät voidaan joko vai jätetäänkö ne. Tätä laskentamenetelmää sovelletaan kaikissa tapauksissa, jossa palvelun Yksikköhinta, jalostettu tuote on sovittu.
--   **Laskentaan, joka perustuu tehtäväaika** – teoreettinen tehtäväajat lasketaan käsittelyaika toiminnan perusteella yhteensä käsitelty määrä ja tuotantokapasiteetin jalostetun tuotteen välinen suhde. Tätä laskentamenetelmää koskee palveluja, jotka on maksettu tunti ja on aika jalostettua tuotetta kohti vaihtelut.
+-   **Laskenta, joka perustuu töiden määrään** – yksi kanban-työ vastaa *n* palveluyksikköä riippumatta toimitetusta tuotteen määrästä. Lean-valmistuksessa yksi työ vastaa yhtä käsittely-yksikköä. Tätä laskentamenetelmää sovelletaan kaikkiin palveluihin, joissa on kiinteä hinta per käsittely-yksikkö. Tätä menetelmää sovelletaan tämän vuoksi yleensä siirtotehtäviin. Kuitenkin sitä voidaan käyttää myös prosessitehtäviin, jotka käsittelevät kokonaisia käsittely-yksiköitä.
+-   **Laskenta, joka perustuu tuotteen määrään** – palvelun määrä on suhteessa tuotteen määrään, joka on suunniteltu/toimitettu. Kun toimitettavaa tuotteen määrää lasketaan, virheelliset määrät voidaan sisällyttää tai jättää pois. Tätä laskentamenetelmää sovelletaan kaikissa tapauksissa,, joissa palvelun yksikköhinta käsiteltyä tuotetta kohden on sovittu.
+-   **Laskenta, joka perustuu tehtäväaikaan** – teoreettiset tehtäväajat lasketaan tehtävän käsittelyajan, yhteensä käsitellyn määrän käsitellyn tuotteen tuotantokapasiteetin suhteen perusteella. Tämä laskentamenetelmää koskee palveluja, jotka on maksettu tuntiperusteisesti ja joiden aika vaihtelee jokaista käsiteltyä tuotetta kohden.
 
-## <a name="cost-accounting-of-subcontracted-services"></a>Kustannuslaskennan Alihankintapalvelujen
-Neuvoa vastaanoton tai toimittajan tuotantovirran (toisin sanoen ostotilaus, joka on luotu alihankinnasta kanban-töiden perusteella) varten luotu ostotilaus-pakkausluettelo kirjataan, kun vastaanoton arvo on yhdistelty tuotantovirran ja KET-tileille. Laskujen poikkeamia käsitellään myös tuotannon virtaukseen. Alihankkijalle annettu työ kustannusluokka on otettu käyttöön. Tämän kustannusluokan käyttöön avoimia seuranta Alihankkijalle annettu työ, joka on kohdistettu KET ja kulutetun ajan arvo.  
+## <a name="cost-accounting-of-subcontracted-services"></a>Alihankintapalvelujen kustannuslaskenta
+Kun kirjataan vastaanoton ohje tai toimittajan pakkausluettelo ostotilaukselle, joka luotiin tuotantovirtaa varten (toisin sanoen ostotilaus, joka luotiin alihankintatehtävien kanban-töiden perusteella), vastaanoton arvo lisätään kirjanpidossa tuotantovirran KET-tileille. Myös laskujen poikkeamat lisätään kirjanpidossa tuotantovirtaan. Alihankkijalle annetun työn kustannusluokka on otettu käyttöön. Tämä kustannusluokka mahdollistaa sellaisen alihankkijalle annetun työn avoimen seurannan, joka on kohdistettu KET-töihin ja joka kulutetaan yhden kauden aikana.  
 
-Lean-valmistuksen kustannuslaskennan kauden lopussa jälkikustannuslaskennan laskee tuotteet, jotka on valmistettu tuotantovirran kustannuslaskennan ajan todellinen varianssit.
+Lean-valmistuksen jälkikustannuslaskenta kustannuslaskennan kauden lopussa laskee sellaisten tuotteiden todelliset vaihtelut, jotka on valmistettu tuotantovirrasta kustannuslaskentakauden aikana.
 
-## <a name="modeling-transfers-as-subcontracted-activities"></a>Alihankintana hankittavien tehtävien muodossa siirtää mallinnus
-Ihmiset katsovat usein kuljetus tuottamattoman ja se Lisää arvoa think. Kuitenkin verrattaessa alihankinta kustannus on sisäinen tuotantokustannuksia, kuljetuksen toiminnan kustannukset on otettava huomioon. Tuotantovirran, joka ulottuu useisiin sijainteihin ja vaatii kuljetuspalveluja olisi malli kuljetus kustannukset kustannus asiakkaalle tuotteiden osana. 
+## <a name="modeling-transfers-as-subcontracted-activities"></a>Siirtojen mallintaminen alihankintatehtävinä
+Usein kuljetusta pidetään tuottamattomana ja ajatellaan, että se ei tuo lisäarvoa. Kuitenkin verrattaessa alihankinnan kustannuksia sisäisen tuotannon kustannuksiin kuljetustoiminnan lisäkustannukset on otettava huomioon. Tuotantovirran, joka ulottuu useisiin sijainteihin ja vaatii kuljetuspalveluja, olisi mallinnettava kuljetuskustannukset osana tuotteen asiakastoimituksen osana. 
 
-Toimintoperusteisen alihankinta lean-valmistuksen avulla voit integroida harjoittajien ja liikenne, siirtyä tuotantovirran sijainnit materiaalien ja tuotteiden toimittajat. Modeling siirto-toiminto, voit määrittää rahdinkuljettajan tai toimittaja. Toimintaa ja siirtotyön perustuu palvelu ja osto sopimuksen ja voit luoda ostotilauksia ja tiedotteiden vastaanoton, töiden varsinaisen siirron perusteella. Tämä toiminto on sama kuin alihankintana prosessin toimintojen toiminnallisuutta.  
+Lean-valmistuksen toimintoperusteisen alihankinnan avulla voit integroida rahdinkuljettajat ja kuljetuspalveluiden tarjoajat, jotka siirtävät materiaaleja ja tuotteita tuotantovirran sijaintien välillä. Mallintamalla siirtotehtävän voit määrittää rahdinkuljettajan tai toimittajan. Siirtotehtävä/-työ perustuu palveluun ja ostosopimukseen, ja voit luoda ostotilauksia ja vastaanoton ohjeita töiden varsinaisen siirron perusteella. Tämä toiminto on sama kuin alihankintaprosessin tehtävien toiminnallisuus.  
 
-Siksi nyt tukee tuoterakennelaskelmassa, jossa on kuljetuspalveluja, perustamista liittyvät ostotilaukset, integroitu vastaanoton rekisteröiminen ja kuljetusten integrointia toimintoja varten 365 Dynamics palvelun kustannukset kyselyjä tuotantovirran Jälkilaskelma.
+Siksi Dynamics 365 for Operations tukee nyt tuoterakennelaskentaa, joka sisällyttää kuljetuspalvelut, liittyvien ostotilausten luonnin, integroidun vastaanoton rekisteröinnin ja kuljetuspalveluiden kustannusten integroinnin tuotantovirran kustannuslaskentaan.
+
+
 
 

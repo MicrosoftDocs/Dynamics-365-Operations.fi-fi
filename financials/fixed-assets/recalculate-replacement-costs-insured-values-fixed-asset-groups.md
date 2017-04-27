@@ -1,5 +1,5 @@
 ---
-title: "Käyttöomaisuusryhmien korvaavan jälleenhankintahinnat ja vakuutusarvot arvot lasketaan uudelleen"
+title: "Käyttöomaisuusryhmien jälleenhankintahintojen ja vakuutusarvojen uudelleenlaskenta"
 description: "Tässä artikkelissa on selostettu prosessia, jolla päivitetään käyttöomaisuuden jälleenhankintahinnat ja vakuutusarvot."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Käyttöomaisuusryhmien korvaavan jälleenhankintahinnat ja vakuutusarvot arvot lasketaan uudelleen
+# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Käyttöomaisuusryhmien jälleenhankintahintojen ja vakuutusarvojen uudelleenlaskenta
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa on selostettu prosessia, jolla päivitetään käyttöomaisuuden jälleenhankintahinnat ja vakuutusarvot.
 
@@ -38,18 +41,18 @@ Jos haluat laskea käyttöomaisuusryhmien jälleenhankintahinnan ja vakuutusarvo
 
 Kun käyttöomaisuuserien jälleenhankintahinta ja vakuutusarvo lasketaan uudelleen Päivitä jälleenhankintahinnat ja vakuutusarvot -lomakkeen avulla, järjestelmä käyttää seuraavia kaavoja:
 
--   \[(Käyttöomaisuusryhmän jälleenhankintahinnan muutos / 100) + 1\]\* käyttöomaisuuserän nykyinen jälleenhankintahinta
--   \[(Ryhmän käyttöomaisuuserän vakuutusarvon muutos / 100) + 1\]\* käyttöomaisuuserän nykyinen Vakuutusarvo
+-   \[(Käyttöomaisuusryhmän jälleenhankintahinnan muutos / 100) + 1\] \* Käyttöomaisuuserän nykyinen jälleenhankintahinta
+-   \[(Käyttöomaisuusryhmän vakuutusarvon muutos / 100) + 1\] \* Käyttöomaisuuserän nykyinen vakuutusarvo
 
 > [!NOTE] 
 > Kun käytät Päivitä jälleenhankintahinnat ja vakuutusarvot -lomaketta, valittujen käyttöomaisuuserien jälleenhankintahinta ja vakuutusarvo päivitetään; vain jommankumman arvon päivittäminen ei ole mahdollista. Jos haluat jättää yhden arvon ennalleen ja päivittää toisen arvon, lisää muutosluvuksi 0 (nolla) Käyttöomaisuusryhmät-lomakkeeseen. Jos kertoimen arvoksi määritetään nolla tai tyhjä, laskenta ohitetaan päivityksessä. Kausittainen päivitys ei vaikuta käyttöomaisuuserien kirjanpitoarvoon ja nettokirjanpitoarvoon. 
 
 ## <a name="how-to-use-a-date-to-select-which-items-to-update"></a> Tietoja päivitettävien nimikkeiden valitsemisesta päivämäärän perusteella
-Oletusarvon mukaan päivityskäsittely päivittää valitut käyttöomaisuuserät, joita ei ole päivitetty kuluvana päivämääränä, mutta jotka on voitu päivittää edeltäneinä päivämäärinä. Esimerkiksi &lt;nykyinen päivämäärä tarkoittaa "ennen tätä päivää." Voit muuttaa päivämäärää päivitys korvaavan jälleenhankintahinnat ja vakuutusarvot arvoja-lomakkeessa napsauttamalla Valitse-painiketta. Määrittämääsi päivämääräkriteeriä verrataan käyttöomaisuuserän edellisen kausittaisen päivityksen päivämäärään (Käyttöomaisuudet-lomakkeen Edellinen kausittainen arvon/hinnan päivitys -kenttään). Aina kun käyttöomaisuuserän jälleenhankintahinta tai vakuutusarvo päivitetään onnistuneesti, järjestelmä päivittää kuluvan päivämäärän automaattisesti Edellinen kausittainen arvon/hinnan päivitys -kenttään. 
+Oletusarvon mukaan päivityskäsittely päivittää valitut käyttöomaisuuserät, joita ei ole päivitetty kuluvana päivämääränä, mutta jotka on voitu päivittää edeltäneinä päivämäärinä. Esimerkiksi &lt; kuluva päivämäärä merkitsee "aiemmin kuin tänään". Voit muuttaa päivämäärää Päivitä jälleenhankintahinnat ja vakuutusarvot -lomakkeessa Valitse-painikkeella. Määrittämääsi päivämääräkriteeriä verrataan käyttöomaisuuserän edellisen kausittaisen päivityksen päivämäärään (Käyttöomaisuudet-lomakkeen Edellinen kausittainen arvon/hinnan päivitys -kenttään). Aina kun käyttöomaisuuserän jälleenhankintahinta tai vakuutusarvo päivitetään onnistuneesti, järjestelmä päivittää kuluvan päivämäärän automaattisesti Edellinen kausittainen arvon/hinnan päivitys -kenttään. 
 
 Esimerkki 
 
-Voit päivittää ajoneuvoja, Toimistokalusteet ja rakennukset-ryhmien jälleenhankintahintaa eilen 5 prosenttia, ja nyt harkita omaisuuden jälleenhankintahintaa päivitettiin. Voit jättää nämä varat, kun kaikki muut käyttöomaisuuserät päivitetään tänään, kirjoittamalla päivämäärän viime Kausittainen arvon/hinnan päivitys-kenttä, joka on ennen eilisen (&lt; eilisen päivän päivämäärän), ajoneuvojen ja rakennusten toimistokalusteiden ryhmien viimeisen päivityksen vuoksi kirjoittamasi päivämäärän ehtojen ulkopuolelle.
+Ajoneuvot-, Toimistokalusteet- ja Rakennuksen-ryhmien jälleenhankintahintaa päivitettiin eilen 5 prosenttia, ja ko. käyttöomaisuuksien päivitystä voidaan pitää oikeana. Nämä käyttöomaisuuserät voi jättää pois tämänpäiväisestä päivityksestä, jossa kaikki muut käyttöomaisuuserät päivitetään. Tämä tehdään lisäämällä eilistä päivää edeltävä päivämäärä (&lt; eilisen päivämäärä) Edellinen kausittainen arvon/hinnan päivitys -kenttään, koska ajoneuvojen, toimistokalusteiden ja rakennusten edellinen päivitys tapahtui määritettyjen päivämääräkriteerien ulkopuolella.
 
 ## <a name="cumulative-effect-of-each-update"></a> Kunkin päivityksen kumulatiivinen vaikutus
 Kullakin päivityksellä on kumulatiivinen vaikutus. Siksi päivitykset kannattaa suunnitella tarkkaan. Jos esimerkiksi teet kaikkiin käyttöomaisuuseriin kolmen prosentin korotuksen tiistaina ja toimistokalusteisiin neljä prosentin korotuksen perjantaina, toimistokalusteiden kumulatiivinen kokonaiskorotus on tällöin 7,12 prosenttia.
@@ -72,6 +75,8 @@ Seuraavana päivänä esimies ilmoittaa, että tietokoneiden pienennyksen oli ta
 
 > [!NOTE]  
 > Muutoslukua -10 ei voi peruuttaa lisäämällä positiivinen muutosluku 10 (tai kertoimella 2, joka on lukujen -10 ja -8 erotus), koska summat lasketaan tällöin eri tavalla kuin käyttäjä on tarkoittanut. 
+
+
 
 
 

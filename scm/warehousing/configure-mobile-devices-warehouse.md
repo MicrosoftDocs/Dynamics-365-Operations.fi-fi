@@ -1,5 +1,5 @@
 ---
-title: "Työn fyysisen varastoinnin mobiililaitteiden määrittäminen"
+title: "Konfiguroi varastotyön mobiililaitteet"
 description: "Tässä artikkelissa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Työn fyysisen varastoinnin mobiililaitteiden määrittäminen
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfiguroi varastotyön mobiililaitteet
 
 Tässä artikkelissa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille.
 
@@ -35,7 +35,7 @@ Tässä artikkelissa kuvataan, kuinka valikkokohteet määritetään mobiililait
 -   Luo työ, joka suoritetaan toisen prosessin kautta. Esimerkiksi nimikkeen vastaanotto ostotilaukselle saattaa luoda hyllytystyön toiselle työntekijälle.
 -   Suorita toisen prosessin (nykyisen työn) edellyttämä työ, kuten hyllytystyö, joka luotiin, kun ostotilaukselle vastaanotettiin nimike.
 
-Jos haluat luoda kyselyn tai toiminnon valikkovaihtoehdon, **tilassa** kentän arvoksi **epäsuora**. Luettelo **Toimenpidekoodi** asetukset sitten vapautuu, niin, että voit valita kyselyn tai toiminnon valikkokohde, jota varten. Valikkovaihtoehdon luo fyysisen varastoinnin työn luominen, **tilaa** kentän arvoksi **toimivat**. Luettelo **toimi luomisen prosessi** ja asetukset ovat käytettävissä. Jos haluat luoda valikkovaihtoehdon nykyisen varastotyön käsittelyyn, määritä **Tila** kentän arvoksi **Työ** ja määritä **Käytä nykyistä työtä** -asetukseksi **Kyllä**. **Huomautus:** valikkovaihtoehtojen käytettävissä voi olla ylimääräisiä kenttiä, riippuen tilan, joka valitaan valikon kohta ja onko valikkoaihetta käytetään aiemmin tehdyn työn suorittamiseen. Muita valittuja tietoja on jäljempänä tässä artikkelissa olevassa kohdassa "valikon kohteen asetukset".
+Jos haluat luoda kyselyn tai toiminnon valikkovaihtoehdon, määritä asetuksen **Tila** arvoksi **Epäsuora**. Luettelo **Toimintokoodi**-asetuksista tulee saataville siten, että voit valita kyselyn tai toiminnon tyypin, jota varten valikkokohde on. Voit luoda valikkovaihtoehdon fyysisen varastoinnin työn luomiseen, määritä **Tila**-kentän arvoksi **Työ**. Näkyviin tulee luettelo **Työn luontiprosessi** -vaihtoehdoista. Jos haluat luoda valikkovaihtoehdon nykyisen varastotyön käsittelyyn, määritä **Tila** kentän arvoksi **Työ** ja määritä **Käytä nykyistä työtä** -asetukseksi **Kyllä**. **Huomautus:** Valikkokohdalle on käytettävissä lisäkenttiä sille valitsemastasi tilasta riippuen, ja jos valikkokohtaa käytetään suorittamaan olemassa oleva työ. Lisätietoja lisäkenttien valinnasta on osiossa “Lisävalikkovaihtoehdot” myöhemmin tässä aiheessa.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Toimintojen ja kyselyjen valikkovaihtoehtojen määrittäminen
 Jos valikkovaihtoehdon **Tila** kentän arvoksi määritetään **Epäsuora**, voit luoda valikkovaihtoehdon suorittamaan yleisen tehtävän tai kyselyn, joka ei luo työtä. Tällaisia tehtäviä ovat esimerkiksi rekisterikilpien uudelleentulostus tai toimipaikan nimikkeiden sijaintia koskeva kysely. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot.
@@ -190,7 +190,7 @@ Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, 
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Valikkovaihtoehdon määrittäminen käsittelemään olemassa olevat työt
-Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkovaihtoehdot käsittelemään työt, jotka on luotu aiemmin. Määritä **Tila**-kentän arvoksi **Työ** ja valitse **Käytä nykyistä työtä** -vaihtoehto. Jotkin muut asetukset sitten vapautuu käyttöön **yleisen** välilehti. Valikon vaihtoehdon käyttöä voi hallita määrittämällä yhden tai useamman työn luokissa **toimivat luokan** pikavälilehti. Työluokat määrittävät työn, jota valikkovaihtoehdolla voi käsitellä. Työluokan kautta voidaan myös myöntää käyttöoikeus tiettyihin käyttäjärooleihin tai erityyppisten työvaiheiden erilliskäsittelyyn. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot.
+Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkovaihtoehdot käsittelemään työt, jotka on luotu aiemmin. Määritä **Tila**-kentän arvoksi **Työ** ja valitse **Käytä nykyistä työtä** -vaihtoehto. Jotkin lisäasetukset sitten vapautuvat käyttöön **Yleiset**-välilehdessä. Valikkovaihtoehdon käyttöä voi hallita määrittämällä yhden tai useamman työluokan **Työluokka**-pikavälilehdessä. Työluokat määrittävät työn, jota valikkovaihtoehdolla voi käsitellä. Työluokan kautta voidaan myös myöntää käyttöoikeus tiettyihin käyttäjärooleihin tai erityyppisten työvaiheiden erilliskäsittelyyn. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot.
 
 <table>
 
@@ -210,7 +210,7 @@ Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkov
 </tr>
 <tr class="even">
 <td>Järjestelmäohjattu</td>
-<td>Työn, joka on liitetty työntekijä ja siihen järjestykseen, jossa työntekijä työskentelee, ohjaa Microsoft Dynamics-365 operaatioille. Kun valitset tämän vaihtoehdon, voit valita <strong>järjestelmää ohjataan työn</strong> toimintoruudun Avaa <strong>järjestelmän suunnattu lajittelujärjestys</strong> sivulle, jossa voit määrittää työn lajittelukriteerit. Lajitteluehtojen määrittää järjestyksen, jossa työntekijä työskentelee. Voit lisätä niin monta ehdot kuin on tarpeen.</td>
+<td>Microsoft Dynamics 365 for Operations ohjaa työn tyyppiä, joka on määritetty työntekijälle ja siinä järjestyksessä, jossa työntekijä suorittaa työn. Kun valitset tämän vaihtoehdon, voit valita toimintoruudussa <strong>Järjestelmäohjattu työ</strong> avataksesi <strong>Järjestelmäohjattu lajittelujärjestys</strong> -sivun, jossa voit määrittää työn lajittelukriteerit. Lajitteluehto hallitsee järjestystä, jossa työntekijä suorittaa työn. Voit luoda tarvitsemasi määrän kriteereitä.</td>
 </tr>
 <tr class="odd">
 <td>Käyttäjäohjattu</td>
@@ -230,7 +230,7 @@ Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkov
 </tr>
 <tr class="even">
 <td>Tarkistettu ja käyttäjäohjattu</td>
-<td>Työntekijä valitsee suoritettavan työn, kun työ liittyy suurempaan yksikköön, kuten kuormaan tai lähetykseen. Työntekijä on järjestys, jossa nimikkeet on poimittu. Jos valitset tämän vaihtoehdon, seuraavat vaihtoehdot ovat käytettävissä:
+<td>Työntekijä valitsee suoritettavan työn, kun työ liittyy suurempaan yksikköön, kuten kuormaan tai lähetykseen. Työntekijä määrittää nimikkeiden keräilyjärjestyksen. Jos valitset tämän vaihtoehdon, seuraavat vaihtoehdot ovat käytettävissä:
 <ul>
 <li><strong>Tarkistettu ja käyttäjäohjattu kenttä</strong> – Valitse kenttä, jonka työntekijä skannaa työn ryhmittelemiseksi.</li>
 <li><strong>Tarkistettu ja käyttäjäohjattu etiketti</strong> – Kirjoita teksti, joka ilmoittaa työntekijälle tiedot siitä, mitä tulisi skannata, kun järjestelmä ryhmittelee keräilytyön.</li>
@@ -271,7 +271,7 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tr>
 <tr class="even">
 <td>Ankkurointi</td>
-<td>Valitse tämä vaihtoehto, jotta työntekijät voivat määrittää ehdotetun vaihe- tai lataamissijainnin korvaavan sijainnin. Kaikki jäljellä oleva hyllytystyö ohjataan uuteen sijaintiin. Tämä vaihtoehto on hyödyllinen esimerkiksi silloin, kun työntekijän on pantava nimikkeitä tilaukselle 1 laiturin 1 väliaikaisessa sijainnissa, mutta tämä ei ole mahdollista, koska edellinen kuorma ei ole poistunut sijainnista. Odottamatta laituri 1 väliaikainen sijainti vapautumista, työntekijä voi päättää käyttää laituri 2 väliaikaiseen sijaintiin. Tässä tapauksessa työntekijä korvaa väliaikaisen ehdotetusta sijainnista. Työtilauksen jäljellä olevien nimikkeiden laittosijainniksi päivittyy laiturin 2 väliaikainen sijainti. Jos valitset tämän vaihtoehdon, määritä <strong>Ankkuroi</strong>-kenttä.</td>
+<td>Valitse tämä vaihtoehto, jotta työntekijät voivat määrittää ehdotetun vaihe- tai lataamissijainnin korvaavan sijainnin. Kaikki jäljellä oleva hyllytystyö ohjataan uuteen sijaintiin. Tämä vaihtoehto on hyödyllinen esimerkiksi silloin, kun työntekijän on pantava nimikkeitä tilaukselle 1 laiturin 1 väliaikaisessa sijainnissa, mutta tämä ei ole mahdollista, koska edellinen kuorma ei ole poistunut sijainnista. Sen sijaan, että odottaisi väliaikaisen Dock 1 -sijainnin vapautumista, työntekijä voi päättää käyttää väliaikaista Dock 2 -sijaintia. Tässä tapauksessa työntekijä korvaa ehdotetun väliaikaisen sijainnin. Työtilauksen jäljellä olevien nimikkeiden laittosijainniksi päivittyy laiturin 2 väliaikainen sijainti. Jos valitset tämän vaihtoehdon, määritä <strong>Ankkuroi</strong>-kenttä.</td>
 </tr>
 <tr class="odd">
 <td>Ankkuroi</td>
@@ -380,7 +380,7 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tr>
 <tr class="odd">
 <td>Työmallin koodi</td>
-<td>Valitse työmalli, joka synnyttää prosessin työn. Esimerkiksi jos saat ostotilauksen nimikkeen, hyllytys työ luodaan perustuvaa työtä. Jos et valitse työn mallin, Microsoft Dynamics-365 työvaiheiden määrittelee mallin, kyselyn ehtojen perusteella. Katso lisätietoja työmalleista artikkelista <a href="control-warehouse-location-directives.md">Varastotyön hallinta työmalleilla ja sijaintidirektiiveillä</a>.</td>
+<td>Valitse työmalli, joka synnyttää prosessin työn. Esimerkiksi jos vastaanotat nimikkeen ostotilaukselle, hyllytystyö luodaan työmallin perusteella. Jos et valitse työmallia, Microsoft Dynamics 365 for Operations määrittää mallin kyselyn ehtojen perusteella. Katso lisätietoja työmalleista artikkelista <a href="control-warehouse-location-directives.md">Varastotyön hallinta työmalleilla ja sijaintidirektiiveillä</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -409,8 +409,8 @@ Seuraavassa taulukossa on kuvattu eri työtyypit, joiden kanssa työn vahvistuks
 
 [Varaston mobiililaitteen näyttöasetukset](change-warehouse-mobile-device-displays.md)
 
-[Määritä kannettavan laitteen valikon vaihtoehtoa tyypin työmäärän valmistumisesta ostotilauksen (tehtävän guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
+[Määritä mobiililaitteen valikkokohde työn valmistumista varten Ostotilaus-tyypissä (ohjattu tehtävä)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
-[Määritä kannettavan laitteen valikkovaihtoehdon rekisteröidä vastaanotetut nimikkeet (tehtävän guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Määritä mobiililaitteen valikkokohde vastaanotettujen nimikkeiden rekisteröinnille (ohjattu tehtävä)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
 
 

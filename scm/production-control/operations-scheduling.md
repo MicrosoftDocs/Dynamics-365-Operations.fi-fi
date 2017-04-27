@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling"></a>Työvaiheiden ajoitus
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä aihe sisältää yleisiä tietoja työvaiheiden ajoittamisesta. Työvaiheiden ajoitusta voidaan käyttää, kun tuotantoprosessin kestosta halutaan yleisarvio.
 
 Voit ajoittaa tuotannon työvaiheiden tasolla ja työn tasolla. Päinvastoin kuin töiden ajoituksessa, työvaiheiden ajoituksessa ei hajoteta reitityksen tuotannon työvaiheita töiksi. Jos haluat sisällyttää ajoitukseen yksityiskohtaisia tietoja, esimerkiksi tietoja nykyisestä kapasiteetista, voit suoritta työn ajoituksen työvaiheiden ajoituksen jälkeen. Voit myös suorittaa ainoastaan töiden ajoituksen. Töiden ajoitusta käytetään yleensä yksittäisten töiden ajoituksessa tuotannossa, ja normaalisti se tapahtuu välittömästi tai lyhyellä aikakehyksellä..
@@ -76,5 +79,7 @@ Jos käsittelet rajallista materiaalia, ajoitukseen vaikuttaa myös tuotantoon t
 --------
 
 [Työvaiheen ajoitusvaihtoehdot](operation-scheduling-options.md)
+
+
 
 

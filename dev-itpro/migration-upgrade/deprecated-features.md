@@ -118,7 +118,7 @@ eGiro perustuu YK:n kansainväliseen EDIFACT CREMUL (Multiple Credit Advice Mess
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Poiston syy       | Tätä maksumuotoa ei enää käytetä.                                                     |
-| Onko toinen ominaisuus korvannut? | Nro ISO 20022 tiliotteen tuonnin muodot tulevissa korvaa muoto. |
+| Onko toinen ominaisuus korvannut? | Nro Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                                                       |
 
 ### <a name="external-inventory-for-poland"></a>Puolan ulkoinen varasto
@@ -138,7 +138,7 @@ Työkalua käytetään tiedonkeruun määritykseen kirjanpitoa ja veroraportteja
 |                              |                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------|
 | Poiston syy       | Rajoitettu käyttö                                                                            |
-| Onko toinen ominaisuus korvannut? | Nro Korvataan raportoinnin määritysten tulevaisuudessa vapauttaa sähköinen työkalu. |
+| Onko toinen ominaisuus korvannut? | Nro Työkalu korvataan sähköiset raportoinnin konfiguraatioilla tulevissa julkaisuversioissa. |
 | Vaikutuksen alaiset moduulit             | kirjanpito                                                                           |
 
 ### <a name="import-of-customer-payment-transactions-for-finland"></a>Suomen asiakasmaksutapahtumien tuominen
@@ -148,7 +148,7 @@ Voit valita Suomen maksujen tuontimuodon asiakasmaksutapahtumien tuomiselle pank
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Poiston syy       | Tätä maksumuotoa ei enää käytetä.                                                     |
-| Onko toinen ominaisuus korvannut? | Nro ISO 20022 tiliotteen tuonnin muodot tulevissa korvaa muoto. |
+| Onko toinen ominaisuus korvannut? | Nro Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                                                       |
 
 ### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Suomen maksutapahtumien tuominen kirjanpidon kirjauskansioon
@@ -158,7 +158,7 @@ Suomen erityismuotoa käytetään kirjanpidon tapahtumien tuomiseksi kirjanpitoo
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Poiston syy       | Tätä maksumuotoa ei enää käytetä.                                                     |
-| Onko toinen ominaisuus korvannut? | Nro ISO 20022 tiliotteen tuonnin muodot tulevissa korvaa muoto. |
+| Onko toinen ominaisuus korvannut? | Nro Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                                                       |
 
 ### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Belgian Isabel-synkronoitu integrointi (CIS)
@@ -168,7 +168,7 @@ Isabel on Euroopan sähköisen maksuliikenteen ja tiedonsiirron yleinen standard
 |                              |                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Poiston syy       | Integrointi Isabel-asiakasohjelmaan on lopetettu.                                                                |
-| Onko toinen ominaisuus korvannut? | Nro Belgian ISO20022 luoton siirto maksumuoto korvataan maksumuodoissa, ei enää käytetä. |
+| Onko toinen ominaisuus korvannut? | Nro Maksumuodot, joita ei voi enää käyttää, korvataan ISO20022-tilisiirron maksumuodolla Belgiassa. |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                                                                                     |
 
 ### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a>Espanjan tilikartan ja kirjanpitosääntöjen muutokset
@@ -218,7 +218,7 @@ Pankin maksun tuonnissa käytetään Telehansa- ja TeleTeenus-muotoja.
 |                              |                                                                                            |
 |------------------------------|--------------------------------------------------------------------------------------------|
 | Poiston syy       | Maksumuotoja ei enää käytetä.                                                    |
-| Onko toinen ominaisuus korvannut? | Nro Korvataan ISO 20022 tiliotteen tuonnin muodot tulevissa muodot. |
+| Onko toinen ominaisuus korvannut? | Nro Muodot korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                                                        |
 
 ### <a name="performance-management-goal-workflow"></a>Suorituskyvyn hallintatavoite -työnkulku
@@ -228,7 +228,7 @@ Suorituskyvyn hallinta sisältää tavoitteiden hallinnan ja integroinnin suorit
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Poiston syy       | Suorituskyvyn hallinta on suunniteltu uudelleen ja tavoitesivujen lukumäärää vähennettiin prosessin yksinkertaistamiseksi.                 |
-| Onko toinen ominaisuus korvannut? | Nro Tavoitteet ovat näkyvissä esimiehet Manager Self Service-portaalin kautta ja voidaan muuttaa ja tarkastella hallinnan. |
+| Onko toinen ominaisuus korvannut? | Nro Tavoitteet näkyvät esimiehille esimiehen itsepalveluportaalin kautta, ja esimies voi muuttaa ja tarkastella niitä. |
 | Vaikutuksen alaiset moduulit             | Henkilöstöresurssien hallinta                                                                                                 |
 
 ### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Ruotsin Postgirot- ja Postgirot Utland -maksumuodot
@@ -241,19 +241,19 @@ Ruotsin Postgirot- ja Postgirot Utland -maksumuodot.
 | Onko toinen ominaisuus korvannut? | Kyllä, Ruotsin ISO20022-tilisiirron maksumuoto |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                        |
 
-### <a name="radio-frequency-identifier"></a>Radiotaajuinen tunniste
+### <a name="radio-frequency-identifier"></a>Radiotaajuinen etätunnistus
 
-Radiotaajuinen etätunnistus (RFID) on tekniikka, joka käyttää tunnistetiedot ja ei-linja-of-sivusto vaatimus lukija tunnuksen tietojen tallentamiseen sähköisiä tunnisteita tietojen keruuta.
+Radiotaajuinen etätunnistus (RFID) on tiedonkeräysmenetelmä, jossa käytetään tunnistetietojen tallentamiseen sähköisiä tunnisteita, ja tunnistetiedot luetaan ilman näköyhteyttä.
 
 |                              |                                               |
 |------------------------------|-----------------------------------------------|
-| Poiston syy       | Ja pieni asiakas käyttö rajoitettu ominaisuus-set. |
+| Poiston syy       | Vähäinen käyttö ja rajoitetut toiminnot. |
 | Onko toinen ominaisuus korvannut? | Nro                                            |
 | Vaikutuksen alaiset moduulit             | Inventoinnin- ja varastonhallinta                          |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Latvian valtion määrittämän laskujen numeroinnin raportti
 
-Latvian lainsäädäntö sisältää myyntilaskujen numerointia koskevia erityissääntöjä. Toiminnot voidaan määrittää luvut myyntilaskuihin, käyttäjän tai käyttäjäryhmän mukaan. Voit luoda raportin tai XML-tiedostona. Voit myös tulostaa raportin käytetyistä laskunumeroista.
+Latvian lainsäädäntö sisältää myyntilaskujen numerointia koskevia erityissääntöjä. Toiminnon avulla voidaan määrittää erityiset numerot myyntilaskuille käyttäjän tai käyttäjäryhmän mukaan. Tämän jälkeen voit luoda raportin tai XML-tiedoston. Voit myös tulostaa raportin käytetyistä laskunumeroista.
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -312,7 +312,7 @@ Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista,
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- ja AxBC-integraatiot
 
-Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten järjestelmien kanssa palveluina näyttäytyvänä liiketoimintalogiikkana. Dynamics AX sisältää asiakirjoihin ja .NET Business Connectoriin (AxBC) perustuvia palveluja. Asiakirja luodaan XML-muotoisena. XML sisältää otsikkotiedot, joka lisäämällä luodaan *sanoma*, joka siirretään Dynamics AX:ään ja siitä pois. Asiakirjoja ovat esimerkiksi myynti- ja ostotilaukset. Käytännössä kuitenkin lähes mikä tahansa yksikkö, kuten asiakas, voidaan ilmaista asiakirjana. Palvelut, jotka perustuvat asiakirjojen käyttö **Axd &lt;*tiedoston*&gt;** luokat.
+Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten järjestelmien kanssa palveluina näyttäytyvänä liiketoimintalogiikkana. Dynamics AX sisältää asiakirjoihin ja .NET Business Connectoriin (AxBC) perustuvia palveluja. Asiakirja luodaan XML-muotoisena. XML sisältää otsikkotiedot, joka lisäämällä luodaan *sanoma*, joka siirretään Dynamics AX:ään ja siitä pois. Asiakirjoja ovat esimerkiksi myynti- ja ostotilaukset. Käytännössä kuitenkin lähes mikä tahansa yksikkö, kuten asiakas, voidaan ilmaista asiakirjana. Asiakirjoihin perustuvat palvelut käyttävät **Axd &lt;*asiakirja*&gt; -luokkia.
 
 |                              |                                                                                                                                                                                                          |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -347,7 +347,7 @@ Liittovaltion veroraportti ICMS-verolle
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Poiston syy       | Tämä raportti ei ole enää käytettävissä joissain Brasilian osavaltioissa.                                                     |
-| Onko toinen ominaisuus korvannut? | Nro Käyttäjät voivat käyttää yleisiä sähköisen raportoinnin työkalu lause määrittää tarvittaessa erityisiä tilanteissa. |
+| Onko toinen ominaisuus korvannut? | Nro Käyttäjät voivat käyttää yleistä sähköistä raportointityökalua raportin määrittämiseen, jos se on pakollinen erityistilanteissa. |
 | Vaikutuksen alaiset moduulit             | Verokirjat                                                                                                          |
 
 ### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brasilian NF-e:n SCAN-varatila
@@ -631,7 +631,7 @@ Henkilöstöhallinnon palkanlaskentatiedot
 |                              |                                                                                                                                                                                                                                                                                                                              |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Poiston syy       | Palkanlaskennan ja Henkilöstöhallinnan perussivut ovat korvanneet tämän ominaisuuden.                                                                                                                                                                                                                                              |
-| Onko toinen ominaisuus korvannut? | **Edut**, **Ansiot** ja muut liittyvät Yhdysvaltojen palkanlaskenta -kohdassa olleet sivut on määritetty uudelleen ja sisältyvät nyt henkilöstöhallinnon perusmäärityksiin. Tämä auttaa tukemaan ulkoista palkanlaskennan käsittelyä. Tämän toiminnon avulla on käytettävissä **henkilöstöhallinnon 1**&gt;**palkanlaskennan** määritysavain. |
+| Onko toinen ominaisuus korvannut? | **Edut**, **Ansiot** ja muut liittyvät Yhdysvaltojen palkanlaskenta -kohdassa olleet sivut on määritetty uudelleen ja sisältyvät nyt henkilöstöhallinnon perusmäärityksiin. Tämä auttaa tukemaan ulkoista palkanlaskennan käsittelyä. Toimintoa käytetään valitsemalla **Henkilöstöhallinta 1** &gt; **Palkanlaskenta**-määritysavain. |
 | Vaikutuksen alaiset moduulit             | Henkilöstöhallinto, palkanlaskenta                                                                                                                                                                                                                                                                                                     |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Varastonhallinnan kirjauskansioiden yksityinen esto
@@ -698,12 +698,12 @@ Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liike
 | Onko toinen ominaisuus korvannut? | Ei                                                                                                                                       |
 | Vaikutuksen alaiset moduulit             | Henkilön työhönotto, Palvelupyynnön hallinta, Tarjouspyynnöt, Toimittajan rekisteröinti                                                                  |
 
-### <a name="ssas-demand-forecasting-strategy"></a>Strategian ennusteiden SSAS-kysyntä
+### <a name="ssas-demand-forecasting-strategy"></a>SSAS – kysynnän ennustestrategia
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
-| Poiston syy       | Toiminnon rakenne ei voi tukea uuden cloud-arkkitehtuurissa. |
-| Onko toinen ominaisuus korvannut? | Azure Machine Learning kysynnän ennusteet strategia                           |
+| Poiston syy       | Uusi pilviarkkitehtuuri ei voi tukea toiminnon rakennetta. |
+| Onko toinen ominaisuus korvannut? | Azure Machine Learningin kysynnän ennusteen strategia                           |
 | Vaikutuksen alaiset moduulit             | Suunnittelu                                                                     |
 
 ### <a name="travel-requisitions"></a>Matkahankinnat

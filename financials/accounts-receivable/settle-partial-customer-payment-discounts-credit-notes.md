@@ -1,5 +1,5 @@
 ---
-title: "Osittainen asiakkaan maksu on alennuksia hyvityslaskuissa selvittää"
+title: "Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen"
 description: "Tässä artikkelissa käydään läpi skenaario, jossa käteisalennus tehdään hyvityslaskussa, kun myös alkuperäisellä laskulla on käteisalennus."
 author: twheeloc
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Osittainen asiakkaan maksu on alennuksia hyvityslaskuissa selvittää
+# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa käydään läpi skenaario, jossa käteisalennus tehdään hyvityslaskussa, kun myös alkuperäisellä laskulla on käteisalennus. 
 
-Fabrikam myöntää asiakkaille käteisalennuksia osamaksuista ja hyvityslaskuista. Käteisalennus voidaan tehdä hyvityslaskulla, kun hyvityslasku tehdään laskusta, josta asiakas on saanut käteisalennuksen. Sen sijaan, että antaisit hyvityksen koko summasta, voit hyvittää asiakkaan saldoa summalla, joka ei sisällä asiakkaan saamaa käteisalennuksen osuutta. Selvityksen parametrit sijaitsevat **Myyntireskontran parametrit** sivulla.
+Fabrikam myöntää asiakkaille käteisalennuksia osamaksuista ja hyvityslaskuista. Käteisalennus voidaan tehdä hyvityslaskulla, kun hyvityslasku tehdään laskusta, josta asiakas on saanut käteisalennuksen. Sen sijaan, että antaisit hyvityksen koko summasta, voit hyvittää asiakkaan saldoa summalla, joka ei sisällä asiakkaan saamaa käteisalennuksen osuutta. Tilityksen parametrit sijaitsevat **Myyntireskontran parametrit** -sivulla.
 
 ## <a name="invoice-and-credit-note"></a>Lasku ja hyvityslasku
 Asiakkaalla 4035 on lasku, jonka arvo on 1 000,00, ja hyvityslasku, jonka arvo on 100,00. Kumpaankin saa 1 prosentin alennuksen, jos se maksetaan 14 päivän kuluessa. Arnie voi tarkastella tietoja **Asiakastapahtumat**-sivulla.
@@ -59,5 +62,7 @@ Alennustiedot näkyvät **Selvitä tapahtumat** -sivun alaosassa.
 | Käytettävä käteisalennussumma | -1,00     |
 
 Tilitys on 100,00, ja siihen sisältyy maksusuoritus 99,00 ja alennus 1,00.
+
+
 
 

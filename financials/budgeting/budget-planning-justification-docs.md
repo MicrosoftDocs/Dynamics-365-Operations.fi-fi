@@ -1,6 +1,6 @@
 ---
-title: Talousarvion suunnittelu tositteilla.
-description: "Tositteilla annettava niille talousarvion selittää, miksi tietty budjetti on tarpeen pyytää itsenäisiin."
+title: Budjettisuunnitelman perusteluasiakirjat
+description: "Perusteluasiakirjat tarjoavat budjettia pyytäville henkilöille kertomuksen siitä, miksi tietty budjetti on tarpeellinen."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,47 +24,52 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="budget-planning-justification-documents"></a>Talousarvion suunnittelu tositteilla.
+# <a name="budget-planning-justification-documents"></a>Budjettisuunnitelman perusteluasiakirjat
 
-Tositteilla annettava niille talousarvion selittää, miksi tietty budjetti on tarpeen pyytää itsenäisiin. 
+[!include[banner](../includes/banner.md)]
 
-Budjettisuunnitelman malli luodaan Microsoft Wordin budjetin hallinnan ja nykyisen suunnitteluprosessin talousarvioon. Budjetin omistajat voivat sitten avata mallin ja tiedot täytetään automaattisesti Word perustuu niiden talousarvion pyyntö. Sitten he voivat lisätä muita tekstin tai tietojen tallentaminen ja niiden Omat perustelut asiakirjan liittäminen niiden budjettisuunnitelman ennen.
 
-##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Määritä Microsoft Dynamics Office-apuohjelman Microsoft Word
+Perusteluasiakirjat tarjoavat budjettia pyytäville henkilöille kertomuksen siitä, miksi tietty budjetti on tarpeellinen. 
 
-1.  Avaa uuden Microsoft Word-asiakirjan.
-2.  Valitse **Lisää** nauhan, ja **myymälän**.
-3.  Etsi Dynamics Microsoft Office-apuohjelma ja valitse **Lisää**.
-4.  Oikeanpuoleisessa ruudussa, valitse Wordissa **Lisää tietoja**.
+Budjettisuunnitelman mallin luo budjettipäällikkö Microsoft Wordissa ja malli määritetään nykyiseen budjetin suunnitteluprosessiin. Budjetin omistajat voivat sitten avata mallin ja tiedot täytetään automaattisesti Wordissa perustuen heidän budjettipyyntöönsä. Sitten he voivat lisätä lisätekstiä tai tietoja ennen tallentamista ja liittää mukautetun perusteluasiakirjan budjettisuunnitelmaan.
+
+##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Microsoft Dynamics Office -apuohjelman määritys Microsoft Wordissa
+
+1.  Avaa uusi Microsoft Word -tiedosto
+2.  Valitse valintanauhassa **Lisää** ja **Kauppa**.
+3.  Etsi Dynamics Microsoft Office -apuohjelma ja valitse **Lisää**.
+4.  Oikeanpuoleisessa ruudussa, valitse Wordissa **Lisää palvelimen tiedot**.
 5.  Kirjoita tai liitä palvelimen URL-osoite ja valitse **OK**.
 
-##### <a name="define-the-justification-template-in-microsoft-word"></a>Määritä tasaus-malli Microsoft Wordissa
+##### <a name="define-the-justification-template-in-microsoft-word"></a>Määritä perustelumalli Microsoft Wordissa
 
-1.  Valitse **rakenne** -Microsoft Dynamics Officen apuohjelma, kun olet kirjautunut.
-2.  Ylätunnisteen tiedot, käytä **Lisää kentät** painike.
-3.  BudgetPlanJustification kohteen tietolähde ja valitse **seuraavan**. **Huomautus:** mitään perustetta asiakirja vaaditaan tämän entiteetin. Voidaan käyttää muiden yksiköiden voimavaroja mutta lataaminen Microsoft Dynamics-365 työvaiheiden epäonnistuu, jos tälle entiteetille ei ole mukana.
-4.  Lisää Word-asiakirjan BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter ja DocumentNumber nimet ja arvot. **Huomautus:** voit käyttää mukautetun osoitetarran sijaan, vakio-otsikoita, jos tarvitaan.
-5.  Valitse **tehty** otsikko-osan suorittamiseen.
-6.  Napsauttamalla rivin tason yksityiskohtaisen suunnitelman budjettisummien **Lisää taulukko**.
-7.  Uudelleen, valitse kohteen tietolähteen BudgetPlanJustification ja **seuraavan**.
-8.  Lisää kentät, EffectiveDate, ScenarioName, AccountDisplayValue ja AccountingCurrencyExpenseAmount. **Huomautus:** kommentit ovat käytettävissä kuluessa budjettisuunnitelman yksittäisiä rivejä lisätään, jos ne voidaan lisätä tähän taulukkoon.
-9.  Lisää käyttäjä antaa lisäohjeita ja suorittaa tarvittavat muotoilun tai tyylin luomista asiakirjaan.
+1.  Valitse **Rakenne** Microsoft Dynamics Office -apuohjelmassa, kun olet kirjautunut.
+2.  Käytä **Lisää kenttiä** -painiketta otsikkotietoihin.
+3.  Valitse kohteen BudgetPlanJustification yksikkötietolähde ja valitse **Seuraava**. **Huomautus:** Tämä yksikkö on pakollinen kaikissa perusteluasiakirjoissa. Voidaan käyttää muita yksiköitä, mutta lataaminen Microsoft Dynamics 365 for Operationsiin epäonnistuu, jos tämä entiteetti ei ole mukana.
+4.  Lisää Word-asiakirjaan seuraavat otsikot ja arvot: BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter ja DocumentNumber. **Huomautus:** voit tarvittaessa käyttää omia mukautettuja otsikoita vakio-otsikoiden sijaan.
+5.  Valitse **Valmis** viimeistelläksesi otsikko-osan.
+6.  Voit lisätä budjettisuunnitelman summat rivitasolle klikkaamalla **Lisää taulu**.
+7.  Valitse jälleen kohteen BudgetPlanJustification yksikkötietolähde ja valitse **Seuraava**.
+8.  Lisää kentät kohteille EffectiveDate, ScenarioName, AccountDisplayValue ja AccountingCurrencyExpenseAmount. **Huomautus:** Jos kommentit ovat lisättävissä budjettisuunnitelman yksittäisissä riveissä, ne voidaan lisätä tähän taulukkoon.
+9.  Lisää mahdolliset muut lisäohjeet loppukäyttäjälle ja suorita tarvittavat muotoilut ja tyylimuutokset asiakirjaan.
 10. Tallenna tiedosto paikalliseen tietokoneeseen, ja sulje tiedosto ennen jatkamista.
 
-##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>Suunnitteluprosessin budjetti perustelut mallin määrittäminen
+##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>Määritä budjettisuunnitteluprosessi käyttämään perustelumallia
 
-1.  Siirry Microsoft Dynamics-365 operaatioille, **budjetoinnin**&gt;**asennus**&gt;**budjettisuunnittelua**&gt;**perustelut mallit**.
-2.  Valitse **uusi** ja juuri luotu Microsoft Word-asiakirja selaamalla.
-3.  Kirjoita mallinimi ja kuvaus. Click **OK**.
-4.  Siirry **budjetoinnin**&gt;**asennus**&gt;**budjetin****suunnittelu**&gt;**suunnitteluprosessin budjetti**.
-5.  Prosessi, jossa Perustelumalli tulee käyttää ja valitse **Muokkaa**.
-6.  - **Perustelut asiakirjamalli** -kentässä, valitse sopiva malli ja Tallenna.
+1.  Siirry Microsoft Dynamics 365 for Operationsissa kohtaan **Budjetointi** &gt; **Asetukset** &gt; **Budjettisuunnittelu** &gt; **Perusteluasiakirjan mallit**.
+2.  Valitse **Uusi** ja selaa juuri luotuun Microsoft Word -asiakirjaan.
+3.  Syötä mallin näyttönimi ja kuvaus. Valitse **OK**.
+4.  Mene: **Budjetointi** &gt; **Asetukset** &gt; **Budjettisuunnittelu****** &gt; **Budjettisuunnitteluprosessi**.
+5.  Valitse prosessi, jossa perustelumallia tulee käyttää ja valitse **Muokkaa**.
+6.  Valitse **Perusteluasiakirjan malli** -kentässä sopiva malli ja tallenna.
 
-##### <a name="edit-and-save-personalized-justification-documents"></a>Muokata ja tallentaa mukautettuja tositteilla.
+##### <a name="edit-and-save-personalized-justification-documents"></a>Muokkaa ja tallenna mukautetut perusteluasiakirjat
 
-1.  Dynamics 365 toimintoihin Luo uusi tai avaa budjettisuunnitelman.
-2.  - **Perustelut** avattavasta valikosta **Luo uusi peruste**.
-3.  Kun olet täyttänyt tiedot, valitse mukautetut asiakirjan lataaminen **perustelut** avattavasta valikosta.
+1.  luo Dynamics 365 for Operationsissa uusi budjettisuunnitelma tai avaa olemassa oleva budjettisuunnitelma.
+2.  Valitse avattavasta **Perustelut** -valikosta **Luo uusi perustelu**.
+3.  Kun olet täyttänyt tiedot, valitse mukautetun asiakirjan lataaminen avattavasta **Perustelut**-valikosta.
+
+
 
 
 

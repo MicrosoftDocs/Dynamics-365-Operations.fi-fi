@@ -33,7 +33,7 @@ Ostotilauksen luonnin yhteydessä koko tilausta koskevat yleiset tiedot määrit
 
 Voit luoda ostotilauksia myös kopioimalla rivit toisesta ostotilausasiakirjasta tai myyntitilauksesta. Voit tässä tapauksessa muuntaa varaston merkin päinvastaiseksi samoin kuin voit muuntaa laskun merkin käänteiseksi osoituksena hyvityksestä.  
 
-Vaikka ostotilauksia voi luoda manuaalisesti, ne luodaan yleensä muista prosesseista. Tilaukset voidaan luoda automaattisesti muiden asiakirjojen, kuten ehdotusten, perusteella. Ne voidaan myös luoda prosessin kautta suunniteltuja myyntipiste pääsuunnittelun osana. Jos käytät ostosopimuksia, POs luomia **vapautustilauksen** toiminto. Ostotilauksen luontiin myös muita kehittyneitä menetelmiä. Tilaukset voidaan esimerkiksi luoda, kun käytät suoratoimitusta tai konsernin sisäisiä tilausketjuja.
+Vaikka ostotilauksia voi luoda manuaalisesti, ne luodaan yleensä muista prosesseista. Tilaukset voidaan luoda automaattisesti muiden asiakirjojen, kuten ehdotusten, perusteella. Ne voidaan luoda myös pääsuunnitteluprosessin osana suunniteltuja ostotilauksia hyödyntämällä. Jos käytät ostosopimuksia, ostotilaukset voidaan luoda **Vapauta tilaus** -toiminnolla. Ostotilauksen luontiin myös muita kehittyneitä menetelmiä. Tilaukset voidaan esimerkiksi luoda, kun käytät suoratoimitusta tai konsernin sisäisiä tilausketjuja.
 
 ## <a name="creating-a-purchase-order-header"></a>Ostotilauksen otsikon luonti
 Kun luot uuden ostotilauksen, voit antaa avautuvaan valintaikkunaan yleisimmät ostotilauksen otsikon tiedot. Kun suljet valintaikkunan valitsemalla **OK**, tilaus luodaan ja voit sitten määrittää lisätietoja otsikkoon.  
@@ -84,7 +84,7 @@ Joudut ehkä viivyttämään ostotilauksen valmistumista. Joudut esimerkiksi ehk
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Ostotilausten yleiskatsaus](purchase-order-overview.md)
 
 [Ostotilauksen hyväksyntä ja vahvistus](purchase-order-approval-confirmation.md)
 

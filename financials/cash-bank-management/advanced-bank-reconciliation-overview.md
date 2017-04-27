@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-bank-reconciliation-overview"></a>Pankkitilin täsmäytyksen lisätoimintojen yhteenveto
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan pankkitilin täsmäytysprosessin lisätoimintojen työnkulku. Pankkitilin täsmäytyksen lisätoimintojen avulla voit tuoda tiliotteet, jotka voidaan täsmäyttää automaattisesti pankkitapahtumista.
 
 Pankkitilin täsmäytyksen lisätoimintojen avulla tuodaan tiliotteita. Tuotu tiliote voidaan tämän jälkeen täsmäyttää automaattisesti pankkitapahtumista. Pankkitilin täsmäytyksen lisätoimintojen työnkulun vaiheet ovat seuraavat.
@@ -38,13 +41,15 @@ Pankkitilin täsmäytyksen lisätoimintojen avulla tuodaan tiliotteita. Tuotu ti
     -   Toimintoja voidaan käyttää missä tahansa muodossa.
 
 2.  Määritä numerosarja pankin täsmäytyksen lisätoimintoja varten. Määritä myös pankin täsmäytyssäännöt.
-    -   Vastaavia poistosäännön on joukko ehtoja, joiden avulla haluat suodattaa tiliotteen rivit ja Microsoft Dynamics-365 pankin toimintojen tapahtumarivit täsmäytysprosessin aikana. Mukaan liiketoimintakäytäntöjä voit määrittää useita vastaavia sääntöjä aiot automatisoida ja optimoida täsmäytys-prosessi.
+    -   Täsmäytyssääntö on ehtojoukko, jonka avulla tiliotteen ja Microsoft Dynamics 365 for Operationsin pankkitapahtuman rivejä suodatetaan täsmäytysprosessin aikana. Liiketoimintakäytäntöjesi mukaan voit määrittää useita vastaavia sääntöjä automatisoidaksesi ja optimoidaksesi täsmäytysprosessin.
 
-3.  Täsmäyttää tiliotteita Dynamics 365 ja pankkitapahtumien toimintoja.
+3.  Täsmäytä tiliotteet Microsoft Dynamics 365 for Operationsin pankkitapahtumien kanssa.
     -   Suorita täsmäytyksen kirjauskansioille automaattinen täsmäytys ja luonti.
-    -   Pankin tiliotteiden tarkastelu ja Dynamics 365 toimintojen pankkitapahtumien rinnakkain.
-    -   Kirjataan automaattisesti Dynamics 365 pankkitapahtumien toimintoja, jos ne näkyvät pankin tiliotteessa, mutta eivät näy Dynamics 365 operaatioille.
+    -   Tarkastele rinnakkain tiliotteita ja Dynamics 365 for Operationsin pankkitapahtumia.
+    -   Kirjaa Dynamics 365 for Operationsin pankkitapahtumat automaattisesti, jos ne näkyvät tiliotteella, mutta eivät Dynamics 365 for Operationsissa.
     -   Luo täsmäytystiliote.
+
+
 
 
 

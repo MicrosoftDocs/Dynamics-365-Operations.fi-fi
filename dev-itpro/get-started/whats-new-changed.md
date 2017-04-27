@@ -41,23 +41,23 @@ Voit päivittää uuteen versioon [Uusinta Dynamics 365 for Operations -päivity
 <thead>
 <tr class="header">
 <th><strong>Vapauttaminen</strong></th>
-<th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Build number</strong></strong></th>
-<th><strong><strong>Availability</strong></strong></th>
+<th><strong><strong>Versio</strong></strong></th>
+<th><strong><strong>Koontikäännös</strong></strong></th>
+<th><strong><strong>Käytettävyys</strong></strong></th>
 <th><strong><strong>Lisätietoja</strong></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations -ympäristö</td>
-<td>Platform update 4</td>
+<td>Ympäristöpäivitys 4</td>
 <td>7.0.4425.16160</td>
-<td>Helmikuu 2017</td>
+<td>Helmikuun 2017.</td>
 <td><ol>
-<li>Siirry <a href="https://roadmap.dynamics.com/">Dynamics 365 tiekartta</a>.</li>
-<li>Valitse <strong>uutta</strong> välilehti.</li>
-<li>- <strong>Sovelluksia</strong> -osassa <strong>Dynamics 365 työvaiheiden</strong>.</li>
-<li>- <strong>Aloilla</strong>, osa <strong>Cloud Platform</strong>.</li>
+<li>Siirry <a href="https://roadmap.dynamics.com/">Dynamics 365:n tiekarttaan</a>.</li>
+<li>Valitse <strong>Uutta</strong>-välilehti.</li>
+<li>Valitse <strong>Sovellukset</strong>-osassa <strong>Dynamics 365 for Operations</strong>.</li>
+<li>Valitse <strong>Alueet</strong>-osassa <strong>Pilviympäristö</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">

@@ -1,6 +1,6 @@
 ---
 title: Tuoterakenteet ja kaavat
-description: "Tässä artikkelissa on tietoja tietoja tuoterakenteiden tuoterakenteeseen ja kaavat, jotka ovat keskeinen osa Tuoteluettelo ja tuotevariantit määritelmään. Tuoterakenteiden ja kaavojen määrittää tarvittavat materiaalit tai tietyn tuotteen ainesosat. Kaavoissa on myös oheis- ja sivutuotteita, jotka vastaanotetaan tietyn tuotannon yhteydessä."
+description: "Tässä artikkelissa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää. Tuoterakenteet ja kaavat määrittävät tietyn tuotteen tarvittavat materiaalit tai ainesosat. Kaavoissa on myös oheis- ja sivutuotteita, jotka vastaanotetaan tietyn tuotannon yhteydessä."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bills-of-materials-and-formulas"></a>Tuoterakenteet ja kaavat
 
-Tässä artikkelissa on tietoja tietoja tuoterakenteiden tuoterakenteeseen ja kaavat, jotka ovat keskeinen osa Tuoteluettelo ja tuotevariantit määritelmään. Tuoterakenteiden ja kaavojen määrittää tarvittavat materiaalit tai tietyn tuotteen ainesosat. Kaavoissa on myös oheis- ja sivutuotteita, jotka vastaanotetaan tietyn tuotannon yhteydessä. 
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää. Tuoterakenteet ja kaavat määrittävät tietyn tuotteen tarvittavat materiaalit tai ainesosat. Kaavoissa on myös oheis- ja sivutuotteita, jotka vastaanotetaan tietyn tuotannon yhteydessä. 
 
 <a name="bills-of-materials"></a>Tuoterakenteet
 ------------------
@@ -38,7 +41,7 @@ Tuoterakenne (BOM) määrittää komponentit, joita tarvitaan, jotta tuote voida
 
 Kun se on yhdistetty reititys tai tuotantovirtaan, joka kuvaa työvaiheita ja resursseja, joita tarvitaan rajentamaan tuote, tuoterakenne muodostaa perustan tuotteen kustannusarvion laskennassa.  
 
-Tuoterakenne on yksittäisen kohteen, joka on kuvattu seuraavassa:
+Tuoterakenne on yksittäinen yksikkö, joka on kuvattu seuraavanlaisesti:
 
 -   BOM-tunnus
 -   Tuoterakenteen nimi
@@ -49,7 +52,7 @@ Yksittäinen Tuoterakenne kuvaa yhtä tasoa, jolla on yksilöllinen tunnus. Osil
 
 ### <a name="formulas-co-products-and-by-products"></a>Kaavat, oheis- ja sivutuotteet
 
-Kaava on tuoterakenteen alatyyppi, jota käytetään yleensä prosessivalmistuksessa. Kaava kuvaa oheistuotteita ja sivutuotteita komponenttien ja ainesosien lisäksi. Todellinen versio oheis-ja sivutuotteiden kaavan määritys vaatii reseptin versiota. Kaavassa määritellään yleensä yhden tietyn valmiin tuotteen (kaava tai kohteen suunnittelu), jossa on määritetyt reseptiversion.
+Kaava on tuoterakenteen alatyyppi, jota käytetään yleensä prosessivalmistuksessa. Kaava kuvaa oheistuotteita ja sivutuotteita komponenttien ja ainesosien lisäksi. Todellisessa versiossa kaavan oheis-ja sivutuotteiden määritys vaatii reseptin versiota. Kaava määritellään yleensä yhdelle tietylle valmiille tuotteelle (kaava tai suunnittelunimike), joka on määritetty reseptiversiossa.
 
 ### <a name="boms-in-the-product-lifecycle"></a>Tuoterakenteet tuotteen elinkaaressa
 
@@ -61,7 +64,7 @@ Tuotteen elinaikana monentyyppisiä tuoterakenteita voidaan luoda monista syist�
 -   **Tuotannon tuoterakenne** – tämä on se todellinen tuoterakenne, jota käytetään tietyssä tuotannossa. Tuotannon tuoterakenteen on otettava huomioon todelliset resurssit, joita käytetään tuotteen valmistuksessa. Luotaessa tuotantotilausta, erätilausta tai kanbania, tuoterakenteiden eri tasot, joita harhakuvat esittävät, tiivistyvät yhdelle tasolle ja ne jaetaan työvaiheisiin tilauksen ajalta.
 -   **Hinnan tuoterakenne** - tätä tuoterakennetta käytetään laskemaan tuotteen arvioidut kustannukset. Esimerkiksi voit käyttää kustannuksen tuoterakennetta, kun standardikustannusta käytetään tai tietyn tuotteen suunnitellut arvioidut kustannukset lasketaan. Kustannuslaskennan tuoterakenteet voivat viitata materiaalien ja resurssien tiettyihin yhdistelmiin, jota on tarkoitus käyttää. Joten, voit käyttää kustannuksen tuoterakennetta luodaksesi kustannuslaskelmaversion tietylle kaudelle ja auttaaksesi välttämään eri aikoijen variansseja.
 
-Tuoterakenteen tyypit, joita käytetään tosiasiallisesti toteutus riippuu toteutuksesta ja myös yrityksen toimintamalleissa ja vaatimuksista. Yksinkertaisissa toteutuksissa, suunnittelun tuoterakenne, tuotannon tuoterakenne ja kulujen tuoterakenne voidaan mallintaa yhtenä tuoterakenteena. Ympäristöissä, joissa on usein teknisiä muutoksia ja useita vaihtoehtoisia reittejä, suurempi joukko tuoterakennetyyppejä todennäköisesti tarvitaan.
+Tuoterakenteen tyypit, joita käytetään toteuttamisessa, määräytyvät toteutuksen mukaan, sekä myös yritysskenaarioiden ja vaatimuksien mukaan. Yksinkertaisissa toteutuksissa, suunnittelun tuoterakenne, tuotannon tuoterakenne ja kulujen tuoterakenne voidaan mallintaa yhtenä tuoterakenteena. Ympäristöissä, joissa on usein teknisiä muutoksia ja useita vaihtoehtoisia reittejä, suurempi joukko tuoterakennetyyppejä todennäköisesti tarvitaan.
 
 ### <a name="approval-of-boms-and-formulas"></a>Kaavojen ja tuoterakenteiden hyväksyminen
 
@@ -78,7 +81,7 @@ Ennen kuin tuoterakenneversiota voidaan käyttää suunnittelu- ja tuotantoprose
 
 ### <a name="activation-of-the-default-bom-or-formula-version"></a>Oletusarvo tuoterakenteen tai kaavaversion aktivointi
 
-Määrittääksesi tietyn tuoterakenteen tai kaavan oletusarvo tuoterakenneversioksi tai kaavaversioksi, jota käytetään pääsuunnittelussa tai tuotantotilausten luomisessa, sinun on aktivoitava versio. Kun versio on käytössä, tietyn rajoitukset (piste, sivuston tai määrä) versio yksilöllisyyden tarkistetaan. Näyttöön tulee virhesanoma jos yrität aktivoida versio on ristiriidassa version on jo aktiivista. Sitten sinun tulee joko poistaa ristiriitainen versio tai muokata version rajoituksia (yleensä kauden) estääksesi epäselvän aktivoinnin.
+Määrittääksesi tietyn tuoterakenteen tai kaavan oletusarvo tuoterakenneversioksi tai kaavaversioksi, jota käytetään pääsuunnittelussa tai tuotantotilausten luomisessa, sinun on aktivoitava versio. Kun versio on käytössä, version yksilöllisyys vahvistetaan tietyille rajoituksille (esimerkiksi kausi, toimipaikka tai määrä). Näyttöön tulee virhesanoma jos yrität aktivoida version, joka on ristiriidassa aktiivisen version kanssa. Sitten sinun tulee joko poistaa ristiriitainen versio tai muokata version rajoituksia (yleensä kauden) estääksesi epäselvän aktivoinnin.
 
 ### <a name="product-change-with-case-management"></a>Tuotemuutoksen tapaushallinta
 
@@ -114,5 +117,7 @@ Valitse** tarvekohdistettu toimitus** -rivityyppi, kun haluat luoda osatuotannon
 Valitse **Toimittaja**-rivityyppi, jos tuotantoprosessi käyttää alihankkijaa ja haluat luoda alihankkijalle osatuotannon tai ostotilauksen automaattisesti.  
 
 **Huomautus alihankintatoimenpiteistä tuoterakenteessa:** alihankkijan suorittama huolto tai työ on luotava huoltonimikkeenä, jota seurataan varaston seurannassa. Sinun on liitettävä huoltonimike yläkansioon tuoterakennerivinä. Reititykseen on sisällyttävä työvaihe, joka on liitetty alihankkijan operatiivisiin resursseihin.
+
+
 
 

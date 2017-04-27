@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-order-cost-estimation"></a>Tuotantotilauksen kustannusarvio
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää tietoja tuotannon kustannusarviosta. Tuotannon kustannusarvio sisältää arvioidut materiaalin ja kapasiteetin kulutuksesta aiheutuneet kustannukset, jotka syntyvät kun nimikettä tuotetaan suunniteltu tuotantotilausmäärä. 
 
 Tuotantokustannukset on arvioitava tuotantotilauksen luomisen jälkeen. Tarkoitus on arvioida tuotantoprosessin nimikkeen ja reitityksen kulutus, koska nämä arviot muodostavat perustan seuraaville ajoitus- ja tuotantoprosesseille.
@@ -59,6 +62,8 @@ Kustannusarvio sisältää myös seuraavat tiedot:
 -   aikaisempien tuotantojen kustannustietojen vertailu
 -   budjetti- ja ennustetiedot
 -   tietyn kustannustason ylläpitämiseen tarvittavien tuotantokokojen arviointi.
+
+
 
 
 

@@ -45,7 +45,7 @@ Rivin määritys on raporttiosa tai rakenneosa, joka määrittää talousraporti
 Rivin määritys voi sisältää enintään 20 000 taloushallinnon dimension riviä. Rivit voivat sisältää seuraavia tietoja:
 
 -   Kuvaava teksti, joka lisää raporttiin merkityksiä luomalla osan otsikoita, rivejä ja välilyöntejä, kuten **Käteinen** tai **Kokonaistuotto**.
--   Taloudelliset tiedot, jotka voivat sisältää linkkejä dimensioarvoja työvaiheiden Microsoft Dynamics-365 **Huomautus:** voit määrittää rivimääritys hakemaan tietoja taloushallinnon dimensiot-järjestelmään aina, kun raportti luodaan.
+-   Linkkejä taloushallinnon tietoihin, jotka voivat sisältää Microsoft Dynamics 365 for Operations -ohjelman dimensioarvoja **Huomautus:** Voit määrittää rivin määrityksen, kun haluat noutaa tietoja taloushallinnon dimensioiden järjestelmästä aina raportin luomisen yhteydessä.
 -   Linkitettyihin taloushallinnon tietoihin perustuvien rivien yhteissummat ja kaavat.
 
 Yleensä jokainen rivin määrityksen rivi sisältää jonkin seuraavaksi esitellyistä tietotyypeistä.
@@ -64,7 +64,7 @@ Dimensio on tietojen ja arvojen liitos. Voit ryhmitellä tietoja ja arvoja Repor
 
 | Vaihtoehto                | Kuvaus                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dimensio             | Malli, joka määrittää rivin määritykseen lisättävän dimension. Tässä kuviossa on yksi merkki (&) tai numeromerkki (\#) kutakin sijaintia dimensiot. Yleensä et-merkkejä käytetään päätilin dimensioissa ja numeromerkkejä muissa dimensioissa. |
+| Dimensio             | Malli, joka määrittää rivin määritykseen lisättävän dimension. Tämä malli sisältää yhden et-merkin (&) tai numeromerkin (\#) jokaista dimension sijaintia kohti. Yleensä et-merkkejä käytetään päätilin dimensioissa ja numeromerkkejä muissa dimensioissa. |
 | Dimensiovälin alku | Tämän dimension ensimmäinen arvo, joka lisätään rivin määritykseen.                                                                                                                                                                                                                 |
 | Dimensiovälin loppu   | Tämän dimension viimeinen arvo, joka lisätään rivin määritykseen.                                                                                                                                                                                                                  |
 
@@ -73,9 +73,9 @@ Seuraavien vaiheiden avulla voit lisätä dimensioita rivin määritykseen.
 1.  Valitse Report Designerissa **Rivien määritykset** ja avaa sitten muokattava rivin määritys.
 2.  Valitse **Muokkaa** -valikosta **Lisää rivejä dimensioista**.
 3.  Valitse **Lisää rivejä dimensioista **-valintaikkunan **Dimensiot**-rivillä rivin määritykseen siirrettävä dimension solu. Valitse sitten **Kaikki &&&**.
-4.  Voit rajoittaa rivin määrityksen tiettyyn dimensioarvojen väliin antamalla **Dimensiovälin alku **-soluun dimension aloitusarvon ja **Dimensiovälin loppu** -soluun dimension lopetusarvon. Jos haluat sisällyttää kaikki valitun dimension arvot, jätä nämä solut tyhjäksi. **Huomautus:** yleismerkkejä (\* tai?) dimension alueita ei ehkä Palauta kaikki tulokset, jotka haluat, sen mukaan, miten ERP-tietokannan lajittelee tiedot.
+4.  Voit rajoittaa rivin määrityksen tiettyyn dimensioarvojen väliin antamalla **Dimensiovälin alku **-soluun dimension aloitusarvon ja **Dimensiovälin loppu** -soluun dimension lopetusarvon. Jos haluat sisällyttää kaikki valitun dimension arvot, jätä nämä solut tyhjäksi. **Huomautus:** Dimensioalueilla käytettävät yleismerkit (\* tai ?) eivät välttämättä palauta kaikkia haluttuja tuloksia sen mukaan, miten ERP-tietokanta kokoaa tiedot.
 5.  Määritä **Aloittavan rivin koodi** -kenttään ensimmäisen rivin määritykseen lisättävän dimensioarvon rivikoodi.
-6.  Määritä **Lisää kutakin riviä arvolla** -kenttään kahden peräkkäisen rivikoodin väli. Jos ensimmäisen rivin koodi on 100 ja lisäyksen arvon 30, ensimmäinen uusia rivejä on 100, 130, 160, 190 ja 220 koodit. Käytä increment-arvo, joka antaa tarpeeksi tilaa syöttää muoto ja kaavan uusille riveille.
+6.  Määritä **Lisää kutakin riviä arvolla** -kenttään kahden peräkkäisen rivikoodin väli. Jos esimerkiksi ensimmäisen rivin koodi on 100 ja lisäysarvo on 30, ensimmäisten uusien rivien koodit ovat 100, 130, 160, 190 ja 220. Käytä lisäysarvoa, joka määrittää riittävästi tilaa uuden muotoilu- ja kaavarivien lisäämistä varten.
 7.  Napsauta **OK**. Kullekin valitulle dimensioarvolle lisätään yksi rivi rivin määritykseen.
 
 ## <a name="adjust-rounding-in-a-row-definition"></a> Pyöristyksen oikaisu rivin määrityksessä
@@ -146,7 +146,7 @@ Rivin määrityksessä määritetty muotoilu korvaa sarakkeen ja raportin määr
 
 1.  Avaa Report Designer -ohjelmassa muokattava rivin määritys.
 2.  Valitse muokattavat solut. Voit valita useita soluja pitämällä Ctrl-näppäintä alhaalla valinnan aikana.
-3.  Ota muoto käyttöön valitsemalla muodon työkalurivipainike. Esimerkiksi jos haluat sisentää rivin, valitse rivi ja valitse sitten **Suurenna sisennystä**![Suurenna sisennystä](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Suurenna sisennystä") työkalurivin.
+3.  Ota muoto käyttöön valitsemalla muodon työkalurivipainike. Jos haluat esimerkiksi sisentää rivin, valitse ensin rivi ja sitten työkalurivin **Kasvata sisennystä** ![Kasvata sisennystä](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Kasvata sisennystä").
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Sarakkeiden oikaisu raporttien suunnittelun yhteydessä
 
@@ -173,6 +173,6 @@ Rivin määrityksen käsiteltävien sarakkeiden tarkasteleminen helpottuu oikais
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Taloudellinen raportointi saat toimintoihin Microsoft Dynamics-365](financial-reporting-intro.md)
+[Taloushallinnan raportointi Microsoft Dynamics 365 for Operations -järjestelmässä](financial-reporting-intro.md)
 
 

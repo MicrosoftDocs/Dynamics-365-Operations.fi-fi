@@ -26,12 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-ledger"></a>Kirjanpito 
 
+[!include[banner](../includes/banner.md)]
+
+
 Kirjanpidon avulla voit määrittää ja hallinnoida yrityksen kirjanpitotietueita. Kirjanpito on debet- ja kredit-tapahtumien luettelo. Nämä merkinnät on luokiteltu tilikartan tilien avulla. 
 
 Voit kohdistaa tai jakaa rahasummia yhdelle tai usealle tilille tai tilin ja dimension yhdistelmälle kohdistussääntöjen mukaan. Kohdistuksia on kahta tyyppiä: kiinteitä ja muuttuvia. Voit myös selvittää kirjanpitotilien väliset tapahtumat ja uudelleenarvostaa valuuttasummat. Tilikauden lopulla sinun on luotava sulkemistapahtumat ja valmisteltava tilit seuraavaa tilikautta varten. Konsolidointitoimintojen avulla voit yhdistää useiden tytäryhtiöiden taloudelliset tulokset yhteen konsolidointiorganisaatioon. Tytäryhtiöt voivat olla samassa Microsoft Dynamics  365 for Operations -tietokannassa tai erillisissä tietokannoissa.
 
 # <a name="sales-tax"></a>Arvonlisävero
 Jokainen yritys kerää ja maksaa veroja eri veroviranomaisille. Säännöt ja prosentit vaihtelevat maan tai alueen, osavaltion, kunnan tai kaupungin mukaan. Lisäksi säännöt on päivitettävä säännöllisesti, kun veroviranomaisten vaatimukset muuttuvat. Arvonlisäverokoodi sisältää perustiedot veroviranomaisille kerättävistä ja maksettavista veroista. Kun määrität arvonlisäverokoodit, määrität summat tai prosentit, jotka on kerättävä. Voit myös määrittää, eri menetelmät joilla ne summat tai prosentit kohdistetaan tapahtumasummiin. Tämän osan ohjeaiheissa käsitellään veronviranomaisten edellyttämien menetelmien ja veroprosenttien mukaisten arvonlisäverokoodien määrittämistä.
+
+
 
 
 

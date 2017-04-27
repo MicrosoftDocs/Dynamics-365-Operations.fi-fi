@@ -1,6 +1,6 @@
 ---
-title: Kirjauskansiorivit- ja Excel-asiakirjojen julkaiseminen
-description: "Tässä ohjeaiheessa kerrotaan, kuinka voit kirjoittaa ja julkaista Microsoft Excelin yleisten kirjauskansioiden rivit. Se sisältää tietoja eri malleja, joita voit käyttää tapahtumia, jotka olet kirjoittanut tyypin mukaan."
+title: "Kirjauskansiorivien ja asiakirjojen julkaiseminen Excelistä"
+description: "Tässä ohjeaiheessa kerrotaan, kuinka voit syöttää ja julkaista yleisten kirjauskansioiden rivejä Microsoft Excelistä. Se sisältää tietoja eri malleista, joita voit käyttää riippuen syöttämistäsi tapahtumista."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -25,28 +25,28 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="publish-journal-lines-and-documents-from-excel"></a>Kirjauskansiorivit- ja Excel-asiakirjojen julkaiseminen
+# <a name="publish-journal-lines-and-documents-from-excel"></a>Kirjauskansiorivien ja asiakirjojen julkaiseminen Excelistä
 
-Tässä ohjeaiheessa kerrotaan, kuinka voit kirjoittaa ja julkaista Microsoft Excelin yleisten kirjauskansioiden rivit. Se sisältää tietoja eri malleja, joita voit käyttää tapahtumia, jotka olet kirjoittanut tyypin mukaan.
+Tässä ohjeaiheessa kerrotaan, kuinka voit syöttää ja julkaista yleisten kirjauskansioiden rivejä Microsoft Excelistä. Se sisältää tietoja eri malleista, joita voit käyttää riippuen syöttämistäsi tapahtumista.
 
-Käyttäjät voivat kirjoittaa ja julkaista Microsoft Excel taloushallinnon kirjauskansioiden rivit. Sen jälkeen, kun käyttäjä luo kirjauskansio, **avata Excelissä rivit** -painike näyttää käytettävissä olevat mallit. Mallit on suunniteltu tukemaan tiettyjä skenaarioita, tuetaan kirjauskansion tilityyppi ei kuitenkaan ole kaikki yhdistelmät. Seuraavassa taulukossa esitetään käytettävissä olevat mallit ja tilityyppeihin, joita ne palvelevat.
+Käyttäjät voivat syöttää ja julkaista taloushallinnon kirjauskansioiden rivejä Microsoft Excelistä. Sen jälkeen, kun käyttäjä on luonut kirjauskansion, **Avaa rivit Excelissä** -painike näyttää käytettävissä olevat mallit. Mallit on suunniteltu tukemaan tiettyjä skenaarioita, mutta kirjauskansio ei tue kaikkia tilityyppien yhdistelmiä. Seuraavassa taulukossa esitetään käytettävissä olevat mallit ja niiden tukemat tilityypit.
 |                          |                                                                                                                         |                                                                                         |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Template**             | **Tuetut tyypit**                                                                                             | **Mallin käyttäminen**                                                          |
-| Kirjanpidon kirjauskansiorivit     | Tili: Kirjanpito, asiakas, toimittaja, pankin vastatili: Kirjanpito, asiakkaan, toimittajan, pankkitilin konsernin tuetaan.       | Kirjauskansio                                                                         |
-| Laskurekisteri         | Tili: Toimittajan vastatili: yritysten Kirjanpito ei ole tuettu.                                                    | AP Laskurekisteri                                                                     |
-| Laskukirjauskansio          | Tilit: Toimittajan vastatili: tuetaan yritysten kirjanpitoon.                                                      | Ostoreskontran laskukirjauskansio                                                                      |
+| **Malli**             | **Tuetut tilityypit**                                                                                             | **Mallin käyttäminen**                                                          |
+| Kirjanpidon kirjauskansiorivit     | Tuetaan seuraavia – tili: Kirjanpito, Asiakas, toimittaja, pankki – vastatili: Kirjanpito, asiakas, toimittaja, konsernin pankkitili.       | Kirjauskansio                                                                         |
+| Laskurekisteri         | Ei tueta – tili: toimittaja – vastatili: konsernin kirjanpito.                                                    | Ostoreskontran laskurekisteri                                                                     |
+| Laskukirjauskansio          | Tuetaan – tili: toimittaja – vastatili: konsernin kirjanpito.                                                      | Ostoreskontran laskukirjauskansio                                                                      |
 | Toimittajan lasku           |                                                                                                                         | Toimittajan lasku                                                                          |
-| Myyntilaskukirjauskansio | Asiakas: Asiakkaan vastatili: tuetaan yritysten kirjanpitoon.                                                     | Kirjauskansio                                                                         |
-| Vapaatekstilasku        |                                                                                                                         | - **Vapaatekstilaskun** -sivulla **avaa Excelin** (Microsoft Office-kuvake). |
-| Käyttöomaisuuden kirjauskansio     | Käyttöomaisuuden Kirjanpito, pankki, asiakas tai toimittaja. Yritysten ei ole tuettu.                                               | Käyttöomaisuuserän kirjauskansio                                                                     |
-| Toimittajan maksukirjauskansio   | Tili: Toimittajan vastatili: Kirjanpito, pankki-konsernin tuetaan.                                                 | Toimittajan maksukirjauskansio                                                                  |
-| Asiakkaan maksukirjauskansio | Asiakas: Asiakkaan vastatili: Kirjanpito, pankki-konsernin tuetaan.                                               | Asiakkaan maksukirjauskansio                                                                |
-| Projektin kulukirjauskansio  | Tili: Projektin kirjanpidon, asiakkaan, toimittajan vastatili: projektin, pääkirjanpidon, asiakkaan, toimittajan konsernin sisäinen tuetaan. | Yleisen päiväkirjan Kulu (kohdassa projektinhallinta ja laskentatoimi)                       |
+| Myyntilaskukirjauskansio | Tuetaan – tili: asiakas – vastatili: konsernin kirjanpito.                                                     | Kirjauskansio                                                                         |
+| Vapaatekstilasku        |                                                                                                                         | Valitse **Vapaatekstilasku**-sivulla **Avaa Excelissä** (Microsoft Office -kuvake). |
+| Käyttöomaisuuden kirjauskansio     | Varat kirjanpitoon, pankkiin, asiakkaalle tai toimittajalle. Konsernitapahtumia ei tueta.                                               | Käyttöomaisuuserän kirjauskansio                                                                     |
+| Toimittajan maksukirjauskansio   | Tuetaan – tili: toimittaja – vastatili: kirjanpito, konsernin pankkitili.                                                 | Toimittajan maksukirjauskansio                                                                  |
+| Asiakkaan maksukirjauskansio | Tuetaan – tili: asiakas – vastatili: kirjanpito, konsernin pankkitili.                                               | Asiakkaan maksukirjauskansio                                                                |
+| Projektin kulukirjauskansio  | Tuetaan seuraavia – tili: projekti, Kirjanpito, Asiakas, toimittaja, pankki – vastatili: projekti, Kirjanpito, asiakas, toimittajakonserni. | Yleisen päiväkirjan kulu (kohdassa Projektinhallinta ja kirjanpito)                       |
 
-Kun rivit julkaistaan, ne vahvistetaan varmistaaksesi, että ne noudattavat sääntöjä, jotka on määritetty taloushallinnon kirjauskansioihin. Rivit julkaistaan, kun käyttäjät voivat muokata tai tositteet kirjataan Microsoft Dynamics-365 operaatioille. 
+Kun rivit julkaistaan, ne vahvistetaan, jotta varmistetaan, että ne noudattavat sääntöjä, jotka on määritetty taloushallinnon kirjauskansioihin. Kun rivit on julkaistu, käyttäjät voivat muokata tai kirjata tositteita Microsoft Dynamics 365 for Operationsista. 
 
-Jos haluat lisätä mallin taloushallinnon dimensiot, lisää muutoksia tarvitaan. Lisätietoja on ohjeaiheessa [dimensioitten lisääminen Microsoft Excel-malli](\dev-itpro\financial-dimensions\add-dimensions-excel-templates). Mitat lisätään kohteeseen, kun ovat käytettävissä Excelin suunnittelussa ja lisätään malliin.
+Jos haluat lisätä malliin taloushallinnon dimensiot, lisää muutoksia tarvitaan. Lisätietoja on ohjeaiheessa [Dimensioitten lisääminen Microsoft Excel -malliin](\dev-itpro\financial-dimensions\add-dimensions-excel-templates). Kun dimensiot on lisätty yksikköön, ne ovat käytettävissä Excelin suunnittelussa ja voidaan lisätä malliin.
 
 
 

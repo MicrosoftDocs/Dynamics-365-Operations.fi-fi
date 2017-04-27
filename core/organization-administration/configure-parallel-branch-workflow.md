@@ -1,5 +1,5 @@
 ---
-title: "Rinnakkainen haara työnkulun määrittäminen"
+title: "Määritä rinnakkainen haara työnkulussa"
 description: "Rinnakkaisen haaran määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa ."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-parallel-branch-in-a-workflow"></a>Rinnakkainen haara työnkulun määrittäminen
+# <a name="configure-a-parallel-branch-in-a-workflow"></a>Määritä rinnakkainen haara työnkulussa
+
+[!include[banner](../includes/banner.md)]
+
 
 Rinnakkaisen haaran määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa .
 
@@ -32,7 +35,7 @@ Rinnakkainen haara on käytännössä työnkulku, joka suoritetaan ylätason ty�
 
 ## <a name="name-a-branch"></a>Nimeä haara
 Kirjoita näiden ohjeiden avulla nimi rinnakkaiselle haaralle.
-1.  Rinnakkaishaara hiiren kakkospainikkeella ja valitse sitten **ominaisuudet**. **Ominaisuudet:** -lomake tulee näkyviin.
+1.  Napsauta rinnakkaista haaraa hiiren kakkospainikkeella ja valitse **Ominaisuudet**. **Ominaisuudet**-lomake tulee näkyviin.
 2.  Napsauta vasemmassa ruudussa **Perusasetukset**.
 3.  Kirjoita rinnakkaisen haaran yksilöivä nimi **Nimi**-kenttään.
 4.  Valitse **Sulje**.
@@ -40,7 +43,7 @@ Kirjoita näiden ohjeiden avulla nimi rinnakkaiselle haaralle.
 ## <a name="design-and-configure-the-elements-of-a-branch"></a>Suunnittele ja konfiguroi haaran elementit
 Voit suunnitella ja konfiguroida rinnakkaisen haaran elementtejä seuraavasti.
 1.  Kaksoisnapsauta rinnakkaisia haaraa.
-2.  Vedä työnkulkuelementit alustalle ja määritä elementit samoin kuin luotaessa muita työnkulkuja. Lisätietoja on kohdassa Create työnkulun.
+2.  Vedä työnkulkuelementit alustalle ja määritä elementit samoin kuin luotaessa muita työnkulkuja. Lisätietoja on kohdassa Luo työnkulku.
 
 
 
@@ -48,5 +51,7 @@ Voit suunnitella ja konfiguroida rinnakkaisen haaran elementtejä seuraavasti.
 --------
 
 [Luo työnkulku](create-workflow.md)
+
+
 
 

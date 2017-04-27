@@ -1,5 +1,5 @@
 ---
-title: "Pankkitilin täsmäytyksen tuo MT940: n osalta – Advanced Yhdistelmätietotyypin kohteen päivittäminen"
+title: "Laajennettu pankkitäsmäytys MT940 tuonti - yhdistelmätietoyksikkö päivitys"
 description: "Järjestysnumero täytyy lisätä tiliotteen tuonnin yksikköön tukemaan MT940-muotoa."
 author: twheeloc
 manager: AnnBe
@@ -24,21 +24,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Pankkitilin täsmäytyksen tuo MT940: n osalta – Advanced Yhdistelmätietotyypin kohteen päivittäminen
+# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Laajennettu pankkitäsmäytys MT940 tuonti - yhdistelmätietoyksikkö päivitys
+
+[!include[banner](../includes/banner.md)]
+
 
 Järjestysnumero täytyy lisätä tiliotteen tuonnin yksikköön tukemaan MT940-muotoa. 
 
 Seuraavien vaiheiden avulla voit lisätä tiliotteen tuonnin entiteetin tukemaan MT940 muotoa.
 
 1.  Käännä ja synkronoi seuraavasti:
-    -   Kooste yksikön\\BankStatementImportEntity
-    -   Yksikön\\BankStatementBalanceEntity
-    -   Yksikön\\BankStatementDocumentEntity
-    -   Yksikön\\BankStatementEntity
-    -   Yksikön\\BankStatementLineEntity
-    -   Taulukoiden\\BankStatementStaging
+    -   Composite Entity\\BankStatementImportEntity
+    -   Entity\\BankStatementBalanceEntity
+    -   Entity\\BankStatementDocumentEntity
+    -   Entity\\BankStatementEntity
+    -   Entity\\BankStatementLineEntity
+    -   Tables\\BankStatementStaging
 
-2.  Tietojen hallinta\\projektien tietoja.
+2.  Tietojen hallinta\\tietoprojektit
     1.  Lataa MT940 tuontiprojektit
         1.  Vaihda XSLT.
             -   Valitse **Näytä yhdistämismääritykset**.
@@ -58,6 +61,8 @@ Seuraavien vaiheiden avulla voit lisätä tiliotteen tuonnin entiteetin tukemaan
                 -   Varmista, että **SequenceNumber** liitetään lähteestä väliaikaiseen alueeseen.
 
 3.  Tuo uusi tilinpäätös.
+
+
 
 
 

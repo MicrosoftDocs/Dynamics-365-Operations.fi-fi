@@ -1,6 +1,6 @@
 ---
-title: "Myyntitilausten mobiili työtilaa varten Microsoft Dynamics-365 toiminnot app"
-description: "Myyntitilausten mobiili-työtilan kanssa saat uusimmat myyntitilauksissa että missä tahansa ja milloin tahansa."
+title: "Myyntitilausten mobiili työtila Microsoft Dynamics 365 for Operations -sovellusta varten"
+description: "Myyntitilausten mobiilin työtilan avulla pysyt ajan tasalla myyntitilauksistasi missä ja milloin tahansa."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,93 +25,93 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Myyntitilausten mobiili työtilaa varten Microsoft Dynamics-365 toiminnot app
+# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Myyntitilausten mobiili työtila Microsoft Dynamics 365 for Operations -sovellusta varten
 
-Myyntitilausten mobiili-työtilan kanssa saat uusimmat myyntitilauksissa että missä tahansa ja milloin tahansa. 
+Myyntitilausten mobiilin työtilan avulla pysyt ajan tasalla myyntitilauksistasi missä ja milloin tahansa. 
 
 <a name="prerequisites"></a>Edellytykset
 -------------
 
 | Edellytys                                                         | kuvaus                                                                                                                                                                   |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lue Microsoft Dynamics-365 toimintojen mobiilien | [Toimintojen mobiilien Dynamics 365](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
-| Työvaiheiden Dynamics 365                                          | Muista, että käytät ympäristössä, jossa on Microsoft Dynamics-365-version toimintoja 1611 ja päivittää toimia ympäristön Microsoft Dynamics 3 (marraskuu-2016). |
-| Hotfix-korjauksen kt 3215650                                                    | Asentaa korjaustiedoston käyttöön työtilat, jotka toimitetaan Microsoft Dynamics-365 operaatioille.                                                                       |
-| Kannettava laite, joka on asennettu toiminnot app for Dynamics-365 | Lataa mobile app myymälä toiminnot app for Dynamics-365.                                                                                                      |
+| Lue Microsoft Dynamics 365 for Operations -mobiiliympäristöstä | [Dynamics 365 for Operations -mobiiliympäristö](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
+| Dynamics 365 for Operations                                          | Varmista, että käytössäsi on ympäristö, johon on asennettu Microsoft Dynamics 365 for Operations -versio 1611 sekä Microsoft Dynamics for Operations ympäristöpäivitys 3 (Marraskuu 2016). |
+| Hotfix-korjaus KB 3215650                                                    | Asenna korjaustiedosto ottaaksesi käyttöön työtilat, jotka toimitetaan Microsoft Dynamics 365 for Operationsissa.                                                                       |
+| Mobiililaite, johon on asennettu Dynamics 365 for Operations -sovellus | Lataa mobiilisovelluskaupasta Microsoft Dynamics 365 for Operations -sovellus.                                                                                                      |
 
 ## <a name="overview"></a>Yleiskuvaus
-Tämän työtilan mobiili käyttää Dynamics-365-sovelluksen toimintoja ja avulla voit tarkastella yksityiskohtaisia tietoja kunkin myyntitilauksen, kuten tila, asiakkaan yhteystiedot ja tilauksen saajan yhteystiedot. Mobile workspace sisältää myyntitilaukset instant tutkimuksen. Voit tarkastella myyntitilauksia asiakkaan mukaan Näytä kaikki myyntitilaukset tai tarkastella tietoja tietyn myyntitilauksen. Mobile workspace tarjoaa kaksi näkymää haluat analysoida yksityiskohtaisesti myyntitilaukset.
+Mobiili työtila yhdistää Dynamics 365 for Operations -sovellukseen, ja sen avulla voit tarkastella yksityiskohtaisia tietoja kustakin myyntitilauksesta, kuten tilauksen tilan, asiakkaan yhteystiedot ja tilauksen vastaanottajan yhteystiedot. Mobiilissa työtilassa on pikanäyttö myyntitilauksista. Voit tarkastella myyntitilauksia asiakaskohtaisesti, näyttää kaikki myyntitilaukset tai tarkastella yksittäisen myyntitilauksen tietoja. Mobiili työtila tarjoaa kaksi näkymää, joilla voit analysoida myyntitilausten yksityiskohtia.
 
 ### <a name="view-all-sales-orders"></a>Näytä kaikki myyntitilaukset
 
-Tämä näkymä näyttää kaikki myyntitilaukset.
+Tämä näkymä sisältää kaikki myyntitilaukset.
 
--   Käyttää seuraavien suodattimien valitsemiseen, jotka haluat tarkastella myyntitilauksia.
-    -   Hae myyntitilauksen perusteella
-    -   Etsi asiakkaan mukaan
-    -   Hae asiakkaan nimen perusteella
-    -   Etsi tilan mukaan
-    -   Vapauta tilaa etsiä
-    -   Etsiä luonnin päivämäärä ja aika
+-   Valitse tarkasteltavat myyntitilaukset seuraavien suodattimien avulla.
+    -   Etsi myyntitilauksen perusteella
+    -   Etsi asiakastilin perusteella
+    -   Etsi asiakkaan nimen perusteella
+    -   Etsi tilan perusteella
+    -   Etsi vapautustilan perusteella
+    -   Etsi luontipäivämäärän ja -ajan perusteella
 
 <!-- -->
 
--   Kun olet valinnut myyntitilauksia, voit tarkastella tiettyjen tilausten lisätietoja. Voit tarkastella erityisesti:
-    -   Asiakkaan nimen ja osoitteen tiedot
-    -   Toinen myyntitilaus päivämääriä, kuten pyydetty lähetyspäivä ja vahvistettu lähetyspäivä
-    -   Tilauksen saajan yhteystiedot
+-   Kun olet valinnut myyntitilaukset, voit tarkastella tiettyjen tilausten lisätietoja. Tarkasteltavana on erityisesti:
+    -   Asiakkaan nimi ja osoitetiedot
+    -   Myyntitilauksen eri päivät, kuten pyydetty lähetyspäivämäärä ja vahvistettu lähetyspäivämäärä.
+    -   Tilauksen vastaanottajan yhteystiedot
     -   Asiakkaan yhteystiedot
     -   Tilausrivit
-    -   Lähetykset, jotka osoittavat, miten ja milloin myyntitilaus toimitetaan
+    -   Lähetykset, joista näet miten ja milloin myyntitilaus on toimitettu
 
-### <a name="view-orders-for-a-customer-"></a>Voit tarkastella tilauksia, asiakkaan ** **
+### <a name="view-orders-for-a-customer-"></a>Tarkastele asiakkaan tilauksia** **
 
-Näkymä Luetteloi myyntitilaukset asiakkaittain.
+Tässä näkymässä on asiakaskohtainen luettelo myyntitilauksista.
 
--   Jokin seuraavien suodattimien avulla voit tarkastella asiakkaan.
-    -   Hae nimen perusteella
-    -   Etsi tilin mukaan
+-   Voit tarkastella asiakkaan myyntitilauksia seuraavien suodattimien avulla.
+    -   Etsi nimen perusteella
+    -   Etsi tilin perusteella
 
 <!-- -->
 
--   Kun olet valinnut asiakas, voit tarkastella:
+-   Kun olet valinnut asiakkaan, tarkasteltavana on:
     -   Asiakkaan nimi ja ryhmä
     -   Asiakkaan yhteystiedot
-    -   Asiakkaan myyntitilausten ja ostotilausten tietoja:
-        -   Asiakkaan nimen ja osoitteen tiedot
+    -   Asiakkaan myyntitilaukset ja tilausten tiedot:
+        -   Asiakkaan nimi ja osoitetiedot
         -   Myyntitilauksen eri päivämäärät
-        -   Tilauksen saajan yhteystiedot
+        -   Tilauksen vastaanottajan yhteystiedot
         -   Asiakkaan yhteystiedot
         -   Tilausrivit
-        -   Lähetykset, jotka osoittavat, miten ja milloin Myynti tilaukset on toimitettu
+        -   Lähetykset, joista näet miten ja milloin myyntitilaukset on toimitettu
 
 ## <a name="get-started"></a>Aloittaminen
-Matkaviestimen käytön myyntitilausten mobile workspace seuraavasti.
+Aloita myyntitilausten mobiilin työtilan käyttö mobiililaitteellasi seuraamalla näitä ohjeita.
 
-1.  Mobile app-myymälä, lataa ja asenna toiminnot app for Microsoft Dynamics-365.
-2.  Käynnistä sovellus laitteen.
-3.  Anna URL-osoitteesi Dynamics 365.
-4.  Kirjoita Kirjaudu yritys. Esimerkiksi **USMF**.
-5.  Ensimmäinen kerta, kun kirjaudut sisään, sinua pyydetään käyttäjänimeä ja salasanaa Microsoft Dynamics-365, tilin toimintoja varten. Anna tunnistetietosi. Kun kirjaudut sisään, näet yrityksen käytettävissä olevat työtilat.
+1.  Lataa mobiilisovelluskaupasta Microsoft Dynamics 365 for Operations -sovellus.
+2.  Käynnistä sovellus laitteessa.
+3.  Anna Dynamics 365 -URL-osoitteesi.
+4.  annan yritys, johon kirjaudutaan. Kirjoita esimerkiksi **USMF**.
+5.  Ensimmäinen kerta, kun kirjaudut sisään, sinulta pyydetään Microsoft Dynamics 365 for Operations -tilisi käyttäjänimeä ja salasanaa. Kirjota tunnistetiedot. Kun olet kirjautunut sisään, näet yrityksen käytettävissä olevat työtilat.
 
-Voit tarkastella mobiili sovellusten työtilat, haluttu työtilat on ensin julkaistava toiminnot app for Dynamics-365.
+Jotta voit tarkastella mobiilisovelluksessa työtiloja, halutut työtilat on ensin julkaistava Dynamics 365 for Operationsiin.
 
-1.  Käynnistä Dynamics 365 operaatioille.
-2.  Siirry **järjestelmän hallinta**&gt;**asennus**&gt;**järjestelmäparametrit**.
-3.  Valitse **hallinta mobile app**.
-4.  Valitse työtila julkaista mobile platform.
-5.  Valitse **julkaista työtilan**.
-6.  Päivitä laitteesi on julkaistu työtilat.
+1.  Käynnistä Dynamics 365 for Operations.
+2.  Valitse **Järjestelmän hallinta** &gt; **Asetukset** &gt; **järjestelmän parametrit**.
+3.  Valitse **Hallitse mobiilisovellusta**.
+4.  Valitse työtila julkaistaksesi mobiiliympäristöön.
+5.  Valitse **Julkaise työtila**.
+6.  Päivitä laitteesi nähdäksesi julkaistut työtilat.
 
-## <a name="view-information-about-sales-orders-for-a-customer"></a>Voit tarkastelutietoja asiakkaan myyntitilaukset
-1.  Matkaviestimessä, valitse **myyntitilaukset** työtila.
-2.  Valitse **tarkastella asiakkaan tilauksia**.
-3.  Käytä ** tilin ** tai ** asiakkaan nimi ** tiedot Etsi haluttu asiakas.
+## <a name="view-information-about-sales-orders-for-a-customer"></a>Näytä tietoja asiakkaan myyntitilauksista
+1.  Valitse mobiililaitteessasi **Myyntitilaukset** -työtila.
+2.  Valitse **Tarkastele asiakkaan tilauksia**.
+3.  Etsi haluamasi asiakas **Tili **tai **Asiakkaan nimi ** -tietojen avulla.
 4.  Valitse asiakas.
-5.  Valitse **yhteystiedot** tai **myyntitilausten**.
-6.  Jos **myyntitilausten** on valittu, asiakkaan myyntitilausten luettelo tulee näkyviin.
-7.  Valitse **myynti**.
-8.  Tässä kentässä voit tarkastella tietoja myyntitilausrivien, toimitukset, asiakkaan yhteystiedot ja tilauksen saajan yhteystiedot.
+5.  Valitse **Yhteystiedot** tai **Myyntitilaukset**.
+6.  Jos valittuna on **Myyntitilaukset**, näyttöön tulee luettelo asiakkaan myyntitilauksista.
+7.  Valitse **Myyntitilaus**.
+8.  Tässä kentässä voit tarkastella tietoja myyntitilausriveistä, toimituksista, asiakkaan yhteystiedoista ja tilauksen vastaanottajan yhteystiedoista.
 
 
 

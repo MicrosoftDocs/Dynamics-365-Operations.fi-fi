@@ -1,5 +1,5 @@
 ---
-title: "Ohjausobjektin fyysisen varastoinnin työ työ malleja ja sijainti direktiivien avulla"
+title: "Varastotyön valvonta työmallien ja sijaintidirektiivien avulla"
 description: "Tässä artikkelissa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä varaston kohdassa työ suoritetaan."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Ohjausobjektin fyysisen varastoinnin työ työ malleja ja sijainti direktiivien avulla
+# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Varastotyön valvonta työmallien ja sijaintidirektiivien avulla
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä varaston kohdassa työ suoritetaan.
 
@@ -40,7 +43,7 @@ Työotsikon määrityksen asetuksia voidaan käyttää määrittämään, milloi
 
 Työrivit edustavat fyysisiä tehtäviä, jotka vaaditaan työn käsittelemiseen. Esimerkiksi lähtevässä varastoprosessissa saattaa olla työrivi varastossa olevien nimikkeiden keräilyyn ja toinen rivi näiden nimikkeiden sijoittamiseen vaiheiden alueelle. Tämän jälkeen voi olla lisärivi nimikkeiden keräilyyn vaiheiden alueelta ja toinen rivi näiden nimikkeiden poispanoon kuorma-autoon osana lastausprosessia. Voit määrittää *direktiivikoodin *työmallirivillä. Direktiivikoodi linkitetään sijaintidirektiiviin ja se auttaa siten varmistamaan, että varastotyö käsitellään varaston oikeassa sijainnissa. 
 
-Voit määrittää kyselyn ohjaamaan, milloin määrättyä työmallia käytetään. Voit esimerkiksi määrittää rajoituksen siten, että määrättyä mallia voidaan käyttää työhön vain määrätyssä varastossa. Vaihtoehtoisesti sinulla voi olla useita malleja, joita käytetään työn luomiseen lähtevän myyntitilauksen käsittelyyn riippuen myynnin alkuperästä. Järjestelmä käyttää **järjestysnumero** kenttä, jos haluat määrittää järjestyksen, jossa arvioidaan työn käytettävissä olevat mallit. Siksi, jos sinulla on erityinen kysely tietyn mallin, anna sen alhainen järjestysnumero. Tämä kysely arvioidaan sitten ennen muita, yleisempiä kyselyitä. 
+Voit määrittää kyselyn ohjaamaan, milloin määrättyä työmallia käytetään. Voit esimerkiksi määrittää rajoituksen siten, että määrättyä mallia voidaan käyttää työhön vain määrätyssä varastossa. Vaihtoehtoisesti sinulla voi olla useita malleja, joita käytetään työn luomiseen lähtevän myyntitilauksen käsittelyyn riippuen myynnin alkuperästä. Järjestelmä käyttää **järjestysnumero**-kenttää määrittämään käytettävissä olevien työmallien arviointijärjestyksen. Siksi, jos sinulla on erityinen kysely tietylle työmallille, anna sille alhainen järjestysnumero. Tämä kysely arvioidaan sitten ennen muita, yleisempiä kyselyitä. 
 
 Voit lopettaa tai keskeyttää työprosessin työrivin **Pysäytä työ** -asetuksen avulla. Siinä tapauksessa työn suorittavaa työntekijää ei pyydetä suorittamaan seuraavaa työrivin vaihetta. Siirtyäkseen seuraavaan vaiheeseen, työntekijän on valittava työ uudelleen. Voit myös erotella tehtävät työkappaleen sisällä käyttämällä eri *työluokan tunnusta *työmallin riveillä.
 
@@ -53,12 +56,14 @@ Mitä tulee työmalleihin, voit määrittää kyselyn tunnistamaan, milloin mä�
 
 Sijaintidirektiivin rivit asettavat lisärajoituksia sijainnin löytämissääntöjen käytölle. Voit määritellä vähimmäis- ja enimmäismäärät, joihin direktiiviä tulisi soveltaa ja voit määrittää, että direktiivi koskee määrättyä varastoyksikköä. Esimerkiksi jos mittayksikkö on kuormalava, kuormalavojen nimikkeet voidaan asettaa tiettyyn paikkaan. Voit myös määrittää, voidaanko määrä jakaa eri sijainteihin. Samoin kuin sijaintidirektiivin otsikolla, kullakin sijaintidirektiivin rivillä on järjestysnumero, joka määrittää näiden rivien arviointijärjestyksen. 
 
-Sijaintidirektiiveillä on yksi yksityiskohtien taso lisää: *sijaintidirektiivin toiminnot*. Voit määrittää useita sijaintidirektiivin toimintoja kullekin riville. Jälleen kerran määrittääkseen järjestyksen, jossa arvioidaan toimia käytetään järjestysnumero. Tällä tasolla voit määrittää kyselyn, Määritä, miten löytää paras sijainti varastossa. Voit myös käyttää esimääritettyjä **Strategia**-asetuksia parhaan sijainnin löytämiseen.
+Sijaintidirektiiveillä on yksi yksityiskohtien taso lisää: *sijaintidirektiivin toiminnot*. Voit määrittää useita sijaintidirektiivin toimintoja kullekin riville. Jälleen kerran järjestysnumeroa käytetään määrittämään järjestys, jossa arvioidaan toimia. Tällä tasolla voit määrittää kyselyn määrittääksesi, miten löydetään paras sijainti varastossa. Voit myös käyttää esimääritettyjä **Strategia**-asetuksia parhaan sijainnin löytämiseen.
 
 ### <a name="example-of-the-use-of-location-directives"></a>Esimerkki sijaintidirektiivien käytöstä.
 
 Tätä esimerkkiä varten tarkastelemme ostotilausprosessia, jossa sijaintidirektiivin on löydettävä varastosta vapaata kapasiteettia varastonimikkeille, jotka on juuri rekisteröity vastaanottolaiturilla. Ensin haluamme yrittää löytää varastosta vapaata kapasiteettia konsolidoimalla nykyiseen käsillä olevaan varastoon. Jos konsolidointi ei ole mahdollista, haluamme löytää tyhjän sijainnin. 
 
 Tätä skenaariota varten meidän on määritettävä kaksi sijaintidirektiivitoimintoa. Sarjan ensimmäisen toiminnon on käytettävä **Konsolidointi**-strategiaa, ja toisen tulisi käyttää **Tyhjä sijainti ilman saapuvia töitä** -strategiaa. Ellemme määritä kolmatta toimintoa käsittelemään ylivuotoskenaariota, on mahdollista saada kaksi lopputulosta, kun varastossa ei ole enää kapasiteettia: työ voidaan luoda, vaikka sijainteja ei ole määritetty, tai työn luontiprosessi saattaa epäonnistua. Tulos määrittyy sivun **Sijaintidirektiivivirheet** määrityksistä, joissa voit päättää, valitaanko **Pysäytä työ sijaintidirektiivivirheeseen** -asetus kullekin työtilaustyypille.
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-resources"></a>Operations-resurssit
 
+[!include[banner](../includes/banner.md)]
+
+
 Operatiiviset resurssit suorittaa projektin tai tuotantoprosessin aktiviteetit. Ne voivat olla erityyppisiä, ja niillä voi olla eri ominaisuuksia. 
 
 <a name="operations-resources"></a>Operations-resurssit
@@ -36,7 +39,7 @@ Operatiiviset resurssit suorittaa projektin tai tuotantoprosessin aktiviteetit. 
 Operatiiviset resurssit ovat koneita, työkaluja, työntekijöitä, toimitiloja, fyysisiä alueita tai toimittajia, jotka suorittavat projektiin tai tuotantoprosessiin liittyvät tehtävät. Ne voivat olla erityyppisiä, ja niillä voi olla eri ominaisuuksia.
 
 -   **Toimittaja** – Ulkoinen resurssi, joka suorittaa projektitehtäviä tai tuotannon työvaiheita. Tällainen on esimerkiksi alihankkija. Linkittämällä toimittajaresursseja toimittajan tiliin voit luoda alihankkijoille ostoja tuoterakenteen tai tuotantorivien perusteella.
--   **Henkilöstö** – Projekti- tai tuotantotyöntekijä, joka suorittaa tehtävän joko yksin tai työkalun tai koneen käyttäjänä. Jos käytät Henkilöstöhallinto-toiminnon, voit linkittää henkilöstöhallinnon työntekijä. Ajoitusmoduuli voi tämän jälkeen kohdistaa resurssit työntekijälle määriteltyjen osaamisalueiden perusteella.
+-   **Henkilöstö** – Projekti- tai tuotantotyöntekijä, joka suorittaa tehtävän joko yksin tai työkalun tai koneen käyttäjänä. Jos käytät Henkilöstö-toimintoja, voit linkittää henkilöstöresurssit työntekijään. Ajoitusmoduuli voi tämän jälkeen kohdistaa resurssit työntekijälle määriteltyjen osaamisalueiden perusteella.
 -   **Kone** – Kone tai muu tuotantolaite, joita tarvitaan tuotannossa.
 -   **Työkalu** – Väline tai laite, jota käytetään yleensä yhdessä toisen resurssin kanssa jonkin tehtävän suorittamiseen projektissa tai tuotannossa.
 -   **Toimipaikka** – Tietyn kokoinen fyysinen sijainti, jota tehtävän suorittamiseen tarvitaan. Tällainen on esimerkiksi kokoonpanoalue.
@@ -80,5 +83,7 @@ Kun resurssiryhmää käytetään lean-työsoluna, työsolun kapasiteetti määr
 
 ## <a name="costing-resources"></a>Kustannuslaskentaresurssit
 Kun määrität tehtävän, kuten reitityksen työvaiheen tai projektituntiennusteen, voit määrittää vaatimuksen tietystä operatiivisesta resurssista tai resurssiryhmästä. Voit kuitenkin määrittää vaatimuksen myös tietyntyyppisestä operatiivisesta resurssista tai operatiivisesta resurssista, jolla on tietty pätevyys tai osaamisalue. Tästä syystä todellinen resurssimääritys tehdään vasta, kun tehtävä on ajoitettu ja kapasiteetti varattu. Näin voit reititystyövaiheessa määrittää, että arvioinnin ja tuoterakennelaskelman on perustuttava tiettyyn operatiiviseen resurssiin. Operatiivista resurssia kutsutaan kustannuslaskentaresurssiksi. Voit myös siirtää kustannusluokkia ja työvaiheaikoja kustannuslaskentaresurssista tehtävään. Kun työvaihe ajoitetaan, arviointi ja tuoterakenteen laskenta tehdään käyttämällä operatiivista resurssia, joka on todellisuudessa ajoitettu.
+
+
 
 

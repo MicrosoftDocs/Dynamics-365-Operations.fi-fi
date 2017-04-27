@@ -1,5 +1,5 @@
 ---
-title: "Käännökset tuotteisiin liittyvät usein kysytyt kysymykset"
+title: "Tuotteeseen liittyvien käännösten usein kysytyt kysymykset"
 description: "Tässä ohjeaiheessa kuvataan, kuinka tuotteiden, tuotteen dimensioarvojen ja tuotemääritteiden käännöksiä hallitaan."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-related-translations-faq"></a>Käännökset tuotteisiin liittyvät usein kysytyt kysymykset
+# <a name="product-related-translations-faq"></a>Tuotteeseen liittyvien käännösten usein kysytyt kysymykset
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä ohjeaiheessa kuvataan, kuinka tuotteiden, tuotteen dimensioarvojen ja tuotemääritteiden käännöksiä hallitaan. 
 
@@ -43,27 +46,27 @@ Voit kääntää tuotteeseen liittyvät tiedot mille tahansa kielelle, joka on k
 ## <a name="where-can-i-view-the-translated-information"></a>Missä näen käännetty tietoja?
 Voit tarkastella minkä tahansa ulkoisen lähdeasiakirjan, kuten laskun, tuotteisiin liittyvien tietojen käännöksiä, jos asiakirja käyttää kieltä, jonka käännökset ovat käytettävissä.
 
-## <a name="how-do-i-create-translations-for-productrelated-information"></a>Miten productrelated saat käännökset luodaan?
+## <a name="how-do-i-create-translations-for-productrelated-information"></a>Tuotteeseen liittyvien tietojen käännösten luominen
 Luo tuotteelle käännöksiä noudattamalla seuraavia ohjeita:
-1.  Valitse **tuotetietojen hallinta**&gt;**yhteisen**&gt;**vapautetut tuotteet**.
-2.  Tuote, ja toiminto-ruudussa- **kielet** ryhmän, valitse **käännökset**.
-3.  **Tekstin käännös** -sivulta **kieli** , valitse kieli. Voit lisätä enemmän kieliä, laajentamalla **kielen** kentän, ja valitse **OK**.
+1.  Valitse **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Vapautetut tuotteet**.
+2.  Valitse tuote ja sitten Toimintoruutu, **Kielet** -ryhmässä valitse **Kielet**.
+3.  **Tekstin käännös** -sivulta **kieli** , valitse kieli. Voit lisätä lisää kieliä laajentamalla **Language** -kentän ja napsauttamalla sitten **OK**.
 4.  **Käännetty teksti** -ryhmässä kirjoita käännökset **Kuvaus** ja **Tuotteen nimi** -kenttiin.
 
 Luo tuotemääritteille käännöksiä noudattamalla seuraavia ohjeita:
-1.  Valitse **tuotetietojen hallinta**&gt;**yhteisen**&gt;**vapautetut tuotteet**.
+1.  Valitse **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Vapautetut tuotteet**.
 2.  Valitse **asetukset**, valitse **määritteet**, ja valitse sitten **määritteet**.
 3.  Valitse **määritteet** -sivulta **Käännä**.
-4.  **Tekstin käännös** -sivulta **kieli** , valitse kieli. Voit lisätä enemmän kieliä, laajentamalla **kielen** kentän, ja valitse **OK**.
+4.  **Tekstin käännös** -sivulta **kieli** , valitse kieli. Voit lisätä lisää kieliä laajentamalla **Language** -kentän ja napsauttamalla sitten **OK**.
 5.  **Käännetty teksti** -ryhmässä kirjoita käännökset **Kuvaus** ja **Tuotteen nimi** ja and **Ohjeteksti** -kenttiin.
 
 Luo tuotedimensioiden arvoille käännöksiä noudattamalla seuraavia ohjeita:
-1.  Valitse **tuotetietojen hallinta**&gt;**yhteisen**&gt;**vapautetut tuotteet**.
+1.  Valitse **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Vapautetut tuotteet**.
 2.  Valitse tuote ja valitse sitten **Tuotedimensiot** .
 3.  Valitse jokin tuotemallin dimensioiden linkeistä: ** Konfiguroinnit** **Koot **, **Värit** tai **Tyyli**.
 4.  Valitse dimensioarvo ja sitten **Käännä**.
-5.  **Tekstin käännös** -sivulta **kieli** , valitse kieli. Voit lisätä enemmän kieliä, laajentamalla **kielen** kentän, ja valitse **OK**.
-6.  - **Käännetty teksti** ryhmän, kirjoita käännöksiä **nimi** ja **kuvaus** kentät.
+5.  **Tekstin käännös** -sivulta **kieli** , valitse kieli. Voit lisätä lisää kieliä laajentamalla **Language** -kentän ja napsauttamalla sitten **OK**.
+6.  **Käännetty teksti** -ryhmässä kirjoita käännökset **Nimi** ja **Kuvaus** -kenttiin.
 
 ## <a name="can-the-names-of-product-variants-be-translated"></a>Voidaan tuotevarianttien nimet kääntää?
 Tuotevariantit perustuvat vapautettujen tuotteiden dimensioihin. Tuotevarianttien nimet perustuvat tuotedimensioarvoiden yhdistelmään. Kun tuotevarianttiin liittyvät dimensioarvot käännetään, tuotevariantin nimi näkyy käännetyssä versiossa.  
@@ -76,23 +79,23 @@ Tuote on t-paita, jota on saatavilla kolmessa eri koossa ja värissä ja variant
 -   Kokodimension arvot: pieni, keskisuuri, suuri
 -   Dimensioarvojen värin: punainen, vihreä, musta
 
-Tuotevariantti, joka perustuu dimension nimi arvot pieni ja punainen on **\#3:Small:Red**.  
+Dimensioarvoihin ja Pieni ja Punainen perustuvan tuotevariantin nimi on **\#3:Pieni:Punainen**.  
 
-Asiakas haluaa ostaa pienikokoisia, punaisia T-paitoja, ja T-paidan nimi on merkittävä laskuun ranskan kielellä. Dimensioarvot, pieni ja punainen, kääntää ranskaksi ja Tuotevariantin nimi on **\#3: Petit: Rouge**.
+Asiakas haluaa ostaa pienikokoisia, punaisia T-paitoja, ja T-paidan nimi on merkittävä laskuun ranskan kielellä. Käännät dimensioarvot pieni ja punainen ranskaksi ja tuotevariantin nimi on **\#3:Petit:Rouge**.
 <table>
 <colgroup>
 <col width="100%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Tip</strong></th>
+<th><strong>Vihje</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Määritä asiakkaan ensisijainen kieli seuraavien ohjeiden avulla:
 <ol>  
-<li>Valitse <strong>myynti- ja</strong>&gt;<strong>yhteisen</strong>&gt;<strong>asiakkaiden</strong>&gt;<strong>kaikki</strong> <strong>asiakkaiden</strong>.</li>
+<li>Valitse <strong>Myynti ja markkinointi</strong> &gt; <strong>Yleinen</strong> &gt; <strong>Asiakkaat</strong> &gt; <strong>Kaikki</strong>  <strong>asiakkaat</strong>.</li>
 <li>Avaa <strong>Asiakkaat</strong>-lomake kaksoisnapsauttamalla asiakasta. Valitse <strong>Yleinen</strong>-välilehdestä <strong>Kieli</strong> -kentän <strong>kieli</strong>.</li>
 </ol></td>
 </tr>
@@ -105,23 +108,25 @@ Jos käännökset eivät ole käytettävissä asiakkaan ensisijaisella kielellä
 ## <a name="can-i-manage-translations-for-a-series-of-dimension-values-at-the-same-time"></a>Voinko hallita dimensioarvojen sarjojen tapahtumia samalla kertaa?
 Dimensioarvot ovat tuotekohtaisia ja voit hallita jokaisen tuotteen dimensioarvojen käännöksiä. Jos luot dimensioarvoryhmän ja arvoryhmässä olevien arvojen käännökset arvojen ryhmässä, on käännökset helpompi hallita.   
 
-**Example**  
+**Esimerkki**  
 
 Yrityksesi valmistaa eri tyylisiä t-paitoja ja kaikki ovat saatavilla S-, M- ja L-koossa. Koot kootaan yhteen dimensioarvoryhmään. Kun uusi T-paidan malli lisätään, voit liittää sen dimension arvoryhmään, jota käytetään ko'oille niin, että koot ovat käytettävissä tuotteelle. Voit lisätä tai muuttaa tapahtumien kokoja milloin tahansa arvon dimensioryhmässä.  
 
 Dimensioarvo, joka on liitetty tuotteeseen dimensiovariantin ryhmän välityksellä on ylläpidettävä tuotevariantin ryhmästä.   
 Luo dimension arvoryhmä noudattamalla seuraavia ohjeita:
-1.  Valitse **tuotetietojen hallinta**&gt;**asennus**&gt;**muuttujaryhmät**.
+1.  Valitse **tuotetietojen hallinta** &gt; **asetukset** &gt; **muuttujaryhmät**.
 2.  Valitse **koon** **ryhmät**, **väriryhmät**, tai **tyyliryhmät**.
-3.  Valitse **uusi**, ja kirjoita sitten ryhmän nimi **kokoa****ryhmä**, **väriryhmää**, tai **tyyliryhmää** kenttä. Valitse **Koot**, **Värit** tai **Tyylit** jos haluat luoda rivit ryhmille.
-4.  - **Kokoa****ryhmä** rivit, **väri****ryhmä****rivit**, tai **tyylin rivit** -sivulla **uusi**, ja luo sitten koot, värit ja tyylit ryhmille.
+3.  Valitse **Uusi**, ja kirjoita sitten ryhmän nimi **Koko****ryhmä**, **Väriryhmä**, tai **Tyyliryhmä **-kentässä. Valitse **Koot**, **Värit** tai **Tyylit** jos haluat luoda rivit ryhmille.
+4.  **Koon** **ryhmän** rivit, **värin** **ryhmän** **rivit**, tai **tyyliryhmän rivit** -sivulla valitse **uusi**, ja luo koot, värit ja tyylit ryhmille.
 
 Hallinnoi dimension arvoryhmän arvojen käännöksiä noudattamalla seuraavia ohjeita:
 1.  Noudata edellisten kohtien toimintaohjeita arvodimensioryhmän luomiseen ja avaa **Kokoryhmän rivit**, **Väriryhmän rivit** tai **Tyyliryhmän rivit** -sivu.
-2.  Valitse **Tekstin käännös**. - **Tekstin käännös**, sivu **käännetty teksti** ryhmälle, kirjoita käännöksiä **nimi** ja **kuvaus** kentät.
+2.  Valitse **Tekstin käännös**. **Tekstin käännös** -sivun **Käännetty teksti** -ryhmässä kirjoita käännökset **Nimi** ja **Kuvaus** -kenttiin.
 
-## <a name="when-can-translations-of-productrelated-information-be-managed"></a>Kun tietojen productrelated käännökset voidaan hallita?
+## <a name="when-can-translations-of-productrelated-information-be-managed"></a>Milloin voidaan tuotteisiin liittyvien tietojen käännöksiä hallinnoida?
 Tuotteisiin liittyvien tietojen käännöksiä voidaan hallinnoida milloin tahansa. Kun tapahtumat päivitetään dimension arvolla, joka on liitetty tuotteeseen, tuotteen tiedot päivitetään, riippumatta siitä, onko tuotteella tapahtumia.
+
+
 
 
 

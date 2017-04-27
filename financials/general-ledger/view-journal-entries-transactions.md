@@ -46,12 +46,12 @@ Talousraporttien lisäksi voit käyttää seuraavia kirjanpitoraportteja tarkast
 
 -   **Dimension laskelma** – Tässä raportissa näkyy tapahtumat tilin ja päivän mukaan ja on myös mahdollista näyttää ne ajan ja dimension mukaan.
 -   **Kirjanpidon tapahtumaluettelo** – Tämä raportti näyttää tapahtumat tapahtumissa, kirjanpidossa ja tilivaluutan raportoinnin.
--   **Tulostaa kirjauskansion** – tämä raportti näyttää kirjatun kirjauskansion tulos. Voit suorittaa raportin numeron päiväkirjan erän tai päiväkirjan tyyppiä tai lisätä kenttiä.
+-   **Tulosta kirjauskansio** – Tämä raportti esittää kirjatun kirjauskansion tuloksen. Voit suorittaa raportin kirjauskansion eränumeron tai tyypin mukaan, tai lisätä lisäkenttiä.
 -   **Kirjatut tapahtumat kirjauskansioittain** -Tässä raportissa näkyvät tapahtumat, jotka on kirjattu kirjauskansioon, tositteen mukaan.
 -   **Tapahtumaluettelo päivämäärittäin** – Tämä raportti näyttää kaikki tapahtumat päivämäärittäin, kirjauskansion numeron, tositteen ja kirjanpitotilin kanssa. Se näyttää lisäksi tapahtumat tapahtuman, kirjanpidon ja raportoinnin valuuttana.
 -   **Tapahtumalähde** – Tämä tapahtumaraportti näyttää tilin kirjanpidon, tapahtuman ja raportoinnin tilivaluutan. Siinä näkyy myös kirjauskansion jokainen rivi, jota on käytetty osoitteeksi.
 
 
-Lisätietoja on ohjeaiheessa [kirjanpitotilien saldoista](general-ledger-account-balances.md), [kirjanpidon lähde explorer](\financials\accounts-payable\accounting-source-explorer) ja [talousraportointi](financial-reporting-getting-started.md)
+Lisätietoja on kohdissa [Kirjanpitotilin saldot](general-ledger-account-balances.md), [Kirjanpitolähteen hallinta](\financials\accounts-payable\accounting-source-explorer) ja [Talousraportointi](financial-reporting-getting-started.md)
 
 

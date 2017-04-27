@@ -1,5 +1,5 @@
 ---
-title: Mallien luominen
+title: Tietuemallien luominen
 description: "Tässä artikkelissa esitellään tietuemallien käsite ja tietuemallien käyttäminen tietoja jakavien tietueiden luomisessa."
 author: pvillads
 manager: AnnBe
@@ -24,10 +24,15 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="create-record-templates"></a>Mallien luominen
+# <a name="create-record-templates"></a>Tietuemallien luominen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa esitellään tietuemallien käsite ja tietuemallien käyttäminen tietoja jakavien tietueiden luomisessa.
 
-Mallien avulla voit luoda tietueita enemmän nopeasti in Microsoft Dynamics 365 operaatioille. Voit luoda tietueen malleja joidenkin toimintojen Microsoft Dynamics-365-tietuetyypit. Esimerkiksi *** Kuvittele auton vuokraus yritys, joka sijaitsee San Franciscon vuokraus tiedot kirjoitetaan. Koska suurin osa asiakkaista asuu todennäköisesti San Franciscon alueella, olisi mukavaa, jos voisit täyttää automaattisesti arvot kentille **Osavaltio**, **Maa** ja **Kaupunki** vuokrauslomakkeessa. **Huomautus:** voit käyttää malleja vain Dynamics 365 alueet, toiminnot, joihin sinulla on pääsy. Kaikkien mallien otsikot ovat kuitenkin näkyvissä, kun luot uuden tietueen. Ne näkyvät myös muille käyttäjille, jos luot kaikkien käyttäjien käytettävissä olevia malleja. Varmista, että huomioit tämän nimetessäsi malleja. Älä esimerkiksi käytä nimiä, jotka sisältävät sanan "komissio", jos yrityksen joidenkin työntekijöiden palkka perustuu komissioihin ja tämä on luottamuksellista tietoa. Jos lomakkeella, johon sinulla on käyttöoikeus, on yksi tai useampia malleja ja yrität luoda uuden tietueen lomakkeella, näkyville avautuu **Valitse malli kohteelle** -sivu. Kun valitset mallin luettelosta, järjestelmä luo uuden tietueen, joka sisältää valitsemaasi malliin perustuvat oletustiedot. Jos et halua käyttää malleja, kun luot uusia tietueita, valitse **Älä kysy uudelleen** -valintaruudun **Valitse malli kohteelle** sivulla. Mallin valinnan valintaikkunan uudelleen näkyviin napsauttamalla hiiren kakkospainikkeella mitä tahansa tietue, valitse **tallentaa tiedot**, ja sitten **Näytä mallivalinta**.
+Tietuemallien avulla voit luoda tietueita nopeammin Microsoft Dynamics 365 for Operations -ohjelmassa. Voit luoda tietuemalleja vain joillekin Microsoft Dynamics 365 for Operations -ohjelman tietuetyypeille. Esimerkki: **** Kuvittele, että syötät autonvuokrausta koskevia tietoja autonvuokrausyritykselle, joka sijaitsee San Franciscossa. Koska suurin osa asiakkaista asuu todennäköisesti San Franciscon alueella, olisi mukavaa, jos voisit täyttää automaattisesti arvot kentille **Osavaltio**, **Maa** ja **Kaupunki** vuokrauslomakkeessa. **Huomautus:** Voit ottaa käyttöön malleja vain niillä Dynamics 365 for Operations -ohjelman alueilla, joihin sinulla on käyttöoikeus. Kaikkien mallien otsikot ovat kuitenkin näkyvissä, kun luot uuden tietueen. Ne näkyvät myös muille käyttäjille, jos luot kaikkien käyttäjien käytettävissä olevia malleja. Varmista, että huomioit tämän nimetessäsi malleja. Älä esimerkiksi käytä nimiä, jotka sisältävät sanan "komissio", jos yrityksen joidenkin työntekijöiden palkka perustuu komissioihin ja tämä on luottamuksellista tietoa. Jos lomakkeella, johon sinulla on käyttöoikeus, on yksi tai useampia malleja ja yrität luoda uuden tietueen lomakkeella, näkyville avautuu **Valitse malli kohteelle** -sivu. Kun valitset mallin luettelosta, järjestelmä luo uuden tietueen, joka sisältää valitsemaasi malliin perustuvat oletustiedot. Jos et halua käyttää malleja uusien tietueiden luomiseen, valitse **Valitse malli kohteelle** -sivulla **Älä kysy uudelleen** -valintaruutu. Voit tuoda mallinvalintaikkunan uudelleen näkyviin napsauttamalla mitä tahansa tietuetta hiiren kakkospainikkeella, kun valitset **Tietueen tiedot** ja tämän jälkeen **Näytä mallivalinta**.
+
+
 
 

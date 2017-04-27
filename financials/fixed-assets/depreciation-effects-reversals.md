@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-effects-with-reversals"></a>Poistojen vaikutukset ja peruutukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan käyttöomaisuustapahtuman peruuttamisen mahdolliset vaikutukset. 
 
 Voit palauttaa käyttöomaisuustapahtumia sekä kyseiseen käyttöomaisuuserään liittyviä tapahtumia. Voit myös peruuttaa palautetun tapahtuman. 
@@ -90,6 +93,8 @@ Poisto raportoidaan 16,95 yksikköä liian pieneksi (983,62 - 966,67).
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Käyttöomaisuuden poisto](fixed-asset-depreciation.md)
+
+
 
 

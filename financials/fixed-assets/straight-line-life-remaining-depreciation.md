@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="straight-line-life-remaining-depreciation"></a>Jäljellä olevan käyttöajan tasapoisto
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on yleiskuvaus jäljellä olevaan käyttöaikaan perustuvasta tasapoistomenetelmästä.
 
 Jos määrität käyttöomaisuudelle poistoprofiilin ja valitset **Tasapoisto - jäljellä oleva käyttöaika** -asetuksen **Poistoprofiilit**-sivun **Menetelmä** -kenttään, niiden käyttöomaisuuserien poisto, joille on määritetty tämä poistoprofiili, perustuu käyttöomaisuuden jäljelläoleviin käyttövuosiin. Tavallisesti poiston määrä on tällöin sama kullakin poistojaksolla. Jos haluat määrittää jäljellä olevaan käyttöaikaan perustuvan tasapoiston, valitse **Poistoprofiilit**-sivulla myös **Poistovuosi**- ja **Kausiväli**-kenttien asetukset. **Kausiväli**-kentän käytettävissä olevat vaihtoehdot vaihtelevat **Poistovuosi**-kentässä valitun arvon mukaan.
@@ -36,7 +39,7 @@ Voit valita **Poistoprofiilit**-sivulla **Poistovuosi**-kenttään joko **Kalent
 
 ### <a name="calendar"></a>Kalenteri
 
-Jos valitset **kalenterin** - ***poistovuoden*** -kentässä vuoden tammikuun 1. – 31. joulukuuta oletetaan, vaikka olet määrittänyt kirjanpidon vuosikalenterin eri tavalla. **Kalenteri**-vaihtoehto päivittää joka vuosi poistokannan 1. tammikuuta. Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käytettävissä seuraavat vaihtoehdot:
+Valitessasi ***Poistovuosi***-kentän arvoksi **Kalenterivuosi**, järjestelmä olettaa kauden olevan 1. tammikuuta – 31. joulukuuta, vaikka kirjanpidon vuosikalenteri olisikin määritetty toisin. **Kalenteri**-vaihtoehto päivittää joka vuosi poistokannan 1. tammikuuta. Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käytettävissä seuraavat vaihtoehdot:
 
 -   **Vuosittain** kirjaa summan 31. joulukuuta.
 -   **Kuukausittain** kirjaa kuukausikohtaisen poiston kunkin kuun lopussa.
@@ -48,7 +51,7 @@ Jos valitset esimerkiksi **Vuosittain**, vuoden poisto kirjataan vain kerran eli
 
 ### <a name="fiscal"></a>Veroasiakirja
 
-Jos valitset **Poistovuosi**-kentästä **Tilivuosi**-vaihtoehdon, käytetään käyttöaikaan perustuvaa tasapoistomenetelmää. Poisto lasketaan jäljellä olevien tilikausien mukaan. Esimerkiksi tilikauden 1 heinäkuun-2015, – 30. kesäkuuta 2016 poiston laskeminen alkaa heinäkuun 1. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto oikaistaan jokaisella tilikaudella. **Kirjanpidon kalenterit** -sivun kausien asetuksissa määritetään seuraavan tilikauden pituus. Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavissa**Kausiväli**-kentässä:
+Jos valitset **Poistovuosi**-kentästä **Tilivuosi**-vaihtoehdon, käytetään käyttöaikaan perustuvaa tasapoistomenetelmää. Poisto lasketaan jäljellä olevien tilikausien mukaan. Esimerkiksi tilikauden 1.7.2015 – 30.6.2016 poistojen laskeminen alkaa 1.7. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto oikaistaan jokaisella tilikaudella. **Kirjanpidon kalenterit** -sivun kausien asetuksissa määritetään seuraavan tilikauden pituus. Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavissa**Kausiväli**-kentässä:
 
 -   **Vuosittain** kirjaa tilivuodelle lasketun poiston kokonaismäärän yhtenä summana tilivuoden viimeisenä päivänä.
 -   **Tilikausi** laskee tilikaudelle lasketun poiston kokonaismäärän. Tämä määrä jaetaan kirjauskausille, jotka on määritetty kirjan **Kirjanpidon kalenterit** -sivulla valitussa kirjanpitokalenterissa.
@@ -73,6 +76,8 @@ Poiston määrä on sama vuosittain: (hankintahinta-jäännösarvo) / käyttövu
 | Vuosi 3 | (7 000 – 1 000) ÷ 3 = 2 000                   | 5 000                                 |
 | Vuosi 4 | (5 000 – 1 000) ÷ 2 = 2 000                   | 3 000                                 |
 | Vuosi 5 | (3 000 – 1 000) ÷ 1 = 2 000                   | 1 000                                 |
+
+
 
 
 

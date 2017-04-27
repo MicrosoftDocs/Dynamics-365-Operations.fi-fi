@@ -1,6 +1,6 @@
 ---
-title: Hybrid asiakkaiden tilaukset
-description: "Hybrid asiakastilaus on yksittäisen tilauksen, joka sisältää tuotteita, jotka voidaan suorittaa kauppa pois asiakkaan sekä tuotteita, jotka kyytiin tai myöhemmin toimitettu."
+title: Hybridit asiakastilaukset
+description: "Hybridi asiakastilaus on yksittäinen tilaus, joka sisältää tuotteita, jotka asiakas voi kuljettaa ulos myymälästä, sekä tuotteita, jotka kerätään tai toimitetaan myöhemmin."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,20 +25,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="hybrid-customer-orders"></a>Hybrid asiakkaiden tilaukset
+# <a name="hybrid-customer-orders"></a>Hybridit asiakastilaukset
 
-Hybrid asiakastilaus on yksittäisen tilauksen, joka sisältää tuotteita, jotka voidaan suorittaa kauppa pois asiakkaan sekä tuotteita, jotka kyytiin tai myöhemmin toimitettu.
+[!include[banner](includes/banner.md)]
 
-Microsoft Dynamics-365 - toimintojen vähittäismyynnin, voit valita kaikki tuotteet joko toteuttaa tai suorittaa valitut tuotteet asiakkaan tilauksen. Tuotteen rivit, jotka on merkitty kuin suorittaa automaattisesti laskutetaan tilauksen luonnin jälkeen, samoin Tämä vastaa tilausta, joka on poimittu ylöspäin sen jälkeen, kun tilaus luodaan. Erääntynyt summa hybridi-tilaukset määritetään lisäämällä talletusten arvoa poiminta ja aluksen tuotteen rivit, joiden rivien suoritettava koko summa. Hybrid tilauksia järjestelmä vaihtaa asiakkaan tilauksen tila ja Itsepalvelutukku tila välillä seuraavasti:
 
--   Jos ostoskorin kaikki tuotteet ovat **suorittaa toimituksen**, kuin Itsepalvelutukku-tapahtuma käsitellään järjestyksessä.
--   Jos ostoskorin tai kaikki rivit on määritetty joko **poiminta** tai **aluksen toimituksen**, tilaus käsitellään asiakkaan tilauksen tapahtumana.
+Hybridi asiakastilaus on yksittäinen tilaus, joka sisältää tuotteita, jotka asiakas voi kuljettaa ulos myymälästä, sekä tuotteita, jotka kerätään tai toimitetaan myöhemmin.
 
-Jos valitun myyntikorin rivin ja **kerää valitut**, **valitaan aluksen**, tai **suorittaa valitun** on valittuna, vain tietyn ostoskorin rivi on määritetty kyseisen toimitustavan. Tässä tapauksessa toiminnan tilaajalle jatkuu tavalliseen tapaan. Kuitenkin jos **kerää valitut**, **valittu aluksen**, tai **suorittaa valitun** ilman myyntikorin rivin valittuna, uusi sivu avautuu, jossa luetellaan kaikki ostoskorin rivit on valittu. Näytössä, voit valita useita rivejä kerralla toimitustavan asettamiseen. Kun kyseistä menetelmää käytetään rivin valitseminen, ohitetaan edelliseen toimitustapa, joka on määritetty rivin.
+Microsoft Dynamics 365 for Operations - Retail -sovelluksessa voit valita kaikki tai vain valitut tuotteet asiakkaan kuljetettaviksi. Tuotteen rivit, jotka on merkitty asiakkaan kuljetettaviksi, automaattisesti laskutetaan tilauksen luonnin jälkeen. Samoin tämä toimii tilauksessa, joka on kerätään sen jälkeen, kun tilaus on luotu. Erääntynyt summa hybriditilauksissa määritetään lisäämällä talletusprosentti poiminnan ja toimituksen tuotteiden riveillä, asiakkaan kuljettamien tuotteiden rivien kokonaissumman kanssa. Hybriditilauksille järjestelmän tila muuttuu asiakkaan tilauksen tilan ja itsepalvelutukkutilan välillä seuraavasti:
+
+-   Jos ostoskorin kaikki tuotteet ovat **asiakkaan kuljettamia**, tilausta käsitellään kuin itsepalvelutukkutapahtumaa.
+-   Jos ostoskorin mille tahansa riville on määritetty joko **Kerää** tai **Lähetä toimitus**, tilaus käsitellään asiakastilaustapahtumana.
+
+Jos valitun myyntikorin rivi on valittu ja on myös **Kerää valitut**, **Toimita valitut** tai **Asiakas kuljettaa valitut** valittuna, vain tämä tietty ostoskorin rivi on määritetty kyseiselle toimitustavalle. Tässä tapauksessa prosessi jatkuu tavalliseen tapaan. Kuitenkin jos **Kerää valitut**, **Toimita valitut** tai **Asiakas kuljettaa valitut** on valittu, mutta myyntikorin riviä ei, uusi sivu avautuu, jossa luetellaan kaikki ostoskorin rivit. Tällä näytöllä voit valita useita rivejä kerralla toimitustavan asettamiseen. Kun kyseistä menetelmää käytetään rivin valitsemiseen, ohitetaan edelliset toimitustavat, jotka on määritetty riville.
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Asiakkaan tilaukset yleistä](customer-orders-overview.md)
+[Asiakastilausten yleiskatsaus](customer-orders-overview.md)
+
+
 
 

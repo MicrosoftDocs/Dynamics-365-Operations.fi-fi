@@ -1,6 +1,6 @@
 ---
-title: "Yksittäisen tositteen ja valuutan uudelleenarvostuksen päivittäminen Microsoft Dynamics-365-version toimintoja 1611"
-description: "Jotkin organisaatiot Anna kirjauskansiot, joiden sisältämä yksi tosite, jossa on useampi kuin yksi asiakas tai toimittaja ja ne myös suorittaa myyntireskontran tai tilien ostoreskontran ulkomaanvaluutan uudelleenarvostuksen prosessi. Tässä ohjeaiheessa kuvataan vaiheet, jotka näiden organisaatioiden tulee kun ne päivitetään Microsoft Dynamics-365 version toiminnot 1611."
+title: "Yksittäisen tositteen ja valuutan uudelleenarvostuksen päivitys Microsoft Dynamics 365 for Operations -versiolle 1611"
+description: "Jotkin organisaatiot kirjaavat kirjauskansioita, jotka sisältävät yhden tositteen, jolla on useampi asiakas tai toimittaja, ja käyttävät myös myynti- tai ostoreskontran ulkomaanvaluutan uudelleenarvostusprosessia. Tässä ohjeaiheessa kuvataan vaiheet, joita näiden organisaatioiden tulee seurata päivittäessään Microsoft Dynamics 365 for Operations -versioon 1611."
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-28 16 - 04 - 17
@@ -24,15 +24,15 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Yksittäisen tositteen ja valuutan uudelleenarvostuksen päivittäminen Microsoft Dynamics-365-version toimintoja 1611
+# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Yksittäisen tositteen ja valuutan uudelleenarvostuksen päivitys Microsoft Dynamics 365 for Operations -versiolle 1611
 
-Jotkin organisaatiot Anna kirjauskansiot, joiden sisältämä yksi tosite, jossa on useampi kuin yksi asiakas tai toimittaja ja ne myös suorittaa myyntireskontran tai tilien ostoreskontran ulkomaanvaluutan uudelleenarvostuksen prosessi. Tässä ohjeaiheessa kuvataan vaiheet, jotka näiden organisaatioiden tulee kun ne päivitetään Microsoft Dynamics-365 version toiminnot 1611.
+Jotkin organisaatiot kirjaavat kirjauskansioita, jotka sisältävät yhden tositteen, jolla on useampi asiakas tai toimittaja, ja käyttävät myös myynti- tai ostoreskontran ulkomaanvaluutan uudelleenarvostusprosessia. Tässä ohjeaiheessa kuvataan vaiheet, joita näiden organisaatioiden tulee seurata päivittäessään Microsoft Dynamics 365 for Operations -versioon 1611.
 
-Toimi seuraavasti, kun päivität Microsoft Dynamics-365-version toimintoja 1611.
+Toimi seuraavasti, kun asennat päivityksen Microsoft Dynamics 365 for Operations -versioon 1611.
 
-1.  Ennen kuin päivität Dynamics 365 operaatioille, Suorita ulkomaanvaluutan uudelleenarvostuksen prosessien Myyntireskontra ja Ostoreskontra. Määrittää **menetelmä** kentän arvoksi **laskun päivämäärä**. Uudelleenarvostustapahtuma luodaan, joka kumoaa edellisen ulkomaanvaluutan uudelleenarvostuksen. Siksi avoimet tapahtumat arvostetaan niiden alkuperäinen kirjanpitovaluutta.
-2.  Päivitä työvaiheiden versio 1611 Dynamics 365.
-3.  Myyntireskontran ja tilien ostoreskontran ulkomaanvaluutan uudelleenarvostuksen prosessit suorittaa uudelleen. Tällä hetkellä on määritetty **menetelmä** kentän arvoksi **Vakio**. Luodaan uusi Uudelleenarvostustapahtuma, joka perustuu nykyisten vaihtokurssien. Tämän tapahtuman tallentaa Realisoitumaton voitto/tappio ja yhteenveto oikean kirjanpitotilin.
+1.  Ennen kuin päivität Dynamics 365 for Operationsin, suorita ulkomaanvaluutan uudelleenarvostusprosessi myynti- ja ostoreskontralle. Määritä **Tapa**-kentän arvoksi **Laskupäivämäärä**. Järjestelmä luo uudelleenarvostustapahtuman, joka kumoaa edellisen ulkomaanvaluutan uudelleenarvostuksen. Siksi avoimet tapahtumat arvostetaan niiden alkuperäisessä kirjanpitovaluutassa.
+2.  Päivitä Dynamics 365 for Operations -versioon 1611.
+3.  Aja ulkomaanvaluutan uudelleenarvostus uudelleen osto- ja myyntireskontrassa. Aseta tällä kertaa **Tapa**-kentän arvoksi **Vakio**. Järjestelmä luo uuden uudelleenarvostustapahtuman, joka perustuu nykyisiin vaihtokursseihin. Tähän tapahtumaan tallennetaan toteutumaton voitto/tappio ja oikea reskontrakirjanpitotili.
 
 
 

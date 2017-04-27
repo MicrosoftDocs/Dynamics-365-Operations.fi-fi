@@ -1,5 +1,5 @@
 ---
-title: Automaattinen tilitys- ja priorisointi
+title: Automaattinen tilitys ja priorisointi
 description: "Tässä artikkelissa kuvataan, kuinka tapahtumat selvitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa."
 author: twheeloc
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="automatic-settlement-and-prioritization"></a>Automaattinen tilitys- ja priorisointi
+# <a name="automatic-settlement-and-prioritization"></a>Automaattinen tilitys ja priorisointi
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa kuvataan, kuinka tapahtumat selvitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa.
 
-Sinulla on kaksi vaihtoehtoa, kun täsmäytät maksuja laskujen ja muiden tapahtumien kanssa. Voit valita manuaalisesti selvittää tapahtumat, tai Microsoft Dynamics-365 toiminnoissa voit valita tapahtumat automaattisesti Automaattinen tilitys-toiminnon avulla. Voit myös mukauttaa automaattisten tilitysten käsittelyä **Priorisoi selvitys** -vaihtoehdon avulla. Nämä asetukset ovat osa selvityksen, joka on määritetty parametrit **Myyntireskontran parametrit** sivulla. Tapahtumien automaattinen täsmäytystapa voi poiketa automaattiseen täsmäytykseen käyttämästäsi menetelmästä riippuen. Käytettävissä ovat seuraavat menetelmät:
+Sinulla on kaksi vaihtoehtoa, kun täsmäytät maksuja laskujen ja muiden tapahtumien kanssa. Voit valita täsmäytettävät tapahtumat manuaalisesti, tai Microsoft Dynamics 365 for Operations voi valita tapahtumat automaattisesti automaattisen tilityksen toimintoa käyttämällä. Voit myös mukauttaa automaattisten tilitysten käsittelyä **Priorisoi selvitys** -vaihtoehdon avulla. Nämä asetukset ovat osa tilityksen parametreja, joka on määritetty **Myyntireskontran parametrit** -sivulla. Tapahtumien automaattinen täsmäytystapa voi poiketa automaattiseen täsmäytykseen käyttämästäsi menetelmästä riippuen. Käytettävissä ovat seuraavat menetelmät:
 
 -   Käyttäjän määrittämä tilitysprioriteetti
 -   Oletusarvoinen automaattinen tilitys
@@ -45,9 +48,9 @@ Myöhemmin tässä artikkelissa kuvatut tilitysesimerkit perustuvat seuraaviin t
 | Lasku 1     | 15. elokuuta   | 100,00 | 2 % 14, netto 30        | 29. elokuuta          |                                                                                                                                                                                               |
 | Lasku 2     | 1. syyskuuta | 250,00 | 2 % 14, netto 30        | 15. syyskuuta       |                                                                                                                                                                                               |
 | Lasku 3     | 15. lokakuuta  | 500,00 | 2 % 14/netto 30        | 29. lokakuuta         |                                                                                                                                                                                               |
-| Korkolasku | 15. lokakuuta  | 7:00   |                     |                    | Tähän korkolaskuun lasku on 1 ja 2 laskun. Summa lasketaan 2 prosentin korkoa summista, jotka ovat vähintään 30 päivää myöhässä. Esimerkki: 0,02 × (100,00 + 250,00) = 7,00. |
+| Korkolasku | 15. lokakuuta  | 7:00   |                     |                    | Tämä korkolasku on laskulle 1 ja laskulle 2. Summa lasketaan 2 prosentin korkona summista, jotka ovat vähintään 30 päivää myöhässä. Esimerkki: 0,02 × (100,00 + 250,00) = 7,00. |
 
-## <a name="userdefined-settlement-priority"></a>Kirjoittamistasi selvityksen prioriteetti
+## <a name="userdefined-settlement-priority"></a>Käyttäjän määrittämä tilitysprioriteetti
 Jos valitset **Käytä automaattisten selvitysten priorisointia** -asetukseksi **Kyllä** **Myyntireskontran parametrit** -sivulla, **Tilitysprioriteetti**-sivulla määritettyä tilitysprioriteettia käytetään, kun tapahtumia valitaan automaattiseen tilitykseen. Tässä esimerkissä määritetään seuraava tilitysjärjestys:
 
 1.  Tapahtumatyyppi
@@ -77,6 +80,8 @@ Jos käyttäjäkohtaista tilitysprioriteettia ei ole, tapahtumat valitaan tility
 | Lasku 2     | 1.9.2015   | 10 002   | 250,00                         | 250,00           | 0,00    | USD      |
 | Lasku 3     | 15.10.2015 |         | 500,00                         | 350,00           | 150,00  | USD      |
 | Korkolasku | 15.10.2015 |         | 7:00                           | 0,00             | 0,00    | USD      |
+
+
 
 
 

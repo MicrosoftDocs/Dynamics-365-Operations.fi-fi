@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-accounts-payable"></a>Ostoreskontran määrittäminen
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan sivut, joiden avulla määritetään perus- ja valinnaiset toiminnot Microsoft Dynamics AX:n ostoreskontrassa. Artikkelissa kerrotaan myös ennen ostoreskontran määrittämisen aloittamista suoritettavat asetusvaiheet.
 
 <a name="prerequisites-for-accounts-payable-setup"></a>Ostoreskontra-määrityksen edellytykset
@@ -40,7 +43,7 @@ Ennen ostoreskontran määrittämäistä, seuraavat asetukset on määritettäv�
     -   Jos aiot suorittaa valuuttakurssioikaisuja, määritä valuuttakoodit Valuutat-sivulla, vaihtokurssin tyypit Vaihtokurssin tyypit -sivulla ja valuutan vaihtokurssit Valuutan vaihtokurssit -sivulla.
 -   Määritä Maksuliikenteen hallinta -kohdassa pankkitilit, joita käytetään maksutapojen yhteydessä.
 
-## <a name="setup-pages-for-accounts-payable"></a>Ostoreskontran asetukset-sivut
+## <a name="setup-pages-for-accounts-payable"></a>Ostoreskontra-asetusten sivut
 
 Voit määrittää seuraavilla sivuilla ostoreskontran perustoiminnot kullekin yritykselle. Sivut mainitaan suositeltavassa määritysjärjestyksessä. Voit helpottaa määritysprosessia luomalla ensimmäisistä tietueista malleja. Mallissa arvot yleensä annetaan useisiin sellaisiin kenttiin, joiden ominaisuuksia organisaatio haluaa käyttää tietyn toimittajatyypin yhteydessä.
 1.  Määritä Maksuehdot-sivulla maksuehdot, jotka haluat määrittää myyntitilauksiin, ostotilauksiin, asiakkaisiin ja toimittajiin ja joiden mukaan laskujen eräpäivät määräytyvät.
@@ -51,15 +54,15 @@ Voit määrittää seuraavilla sivuilla ostoreskontran perustoiminnot kullekin y
 6.  Määritä Lomakeasetukset-sivulla niiden erilaisten toimittajiin liittyvien asiakirjojen muoto, joilla organisaatio seuraa toimittajien vastaanottoja ja antaa syyt toimittajille maksettaville suorituksille.
 7.  Luo ja ylläpidä Toimittajat-sivulla toimittajatilejä sekä veroviranomaisia, joille organisaatio ilmoittaa arvonlisäveron.
 
-## <a name="optional-setup-pages-for-accounts-payable"></a>Ostoreskontran valinnaiset asetukset-sivuja
+## <a name="optional-setup-pages-for-accounts-payable"></a>Ostoreskontran valinnaiset asetussivut
 Perustoimintojen lisäksi ostoreskontrassa voi määrittää muita toimintoja.
 
 Lisäasetusten sivut on järjestetty toiminnon mukaan.
 
-**Policies**
+**Käytännöt**
 -   Määritä Toimittajan laskukäytäntö -sivulla toimittajan laskukäytännöt.
 
-**Invoice matching**
+**Laskun täsmäytys**
 
 -   Määritä Laskusummien toleranssit -sivulla laskusummien toleranssit.
 -   Määriä Täsmäytyskäytäntö-sivulla kaksi- ja kolmisuuntaiset vastaavuuskäytännöt.
@@ -68,39 +71,39 @@ Lisäasetusten sivut on järjestetty toiminnon mukaan.
 -   Määritä Toimittajan hintatoleranssiryhmät -sivulla toimittajan hintojen toleranssiryhmät.
 -   Määritä Kulutoleranssit-sivulla kulujen toleranssit.
 
-**Workflow**
+**Työnkulku**
 
 -   Määritä Ostoreskontran työnkulut -sivulla kirjauskansioiden hyväksyntä- ja ostoehdotustyönkulkujen määritykset.
 
-**Reasons**
+**Syyt**
 
 -   Määritä syykoodit Toimittajan syyt -sivulla.
 
-**Charges**
+**Kulut**
 
 -   Määritä Kulujen koodi -sivulla ostotilauksessa käytettyjen kulujen koodit.
--   Toimittajan kulujen ryhmä-sivulla Luo ja Ylläpidä kulujen ryhmiä toimittajia varten.
+-   Luo ja ylläpidä Toimittajan kulujen ryhmä -sivulla toimittajien kulujen ryhmiä.
 -   Luo ja ylläpidä Nimikkeen kuluryhmät -sivulla nimikkeiden kuluryhmiä.
 -   Määritä Automaattiset kulut -sivulla tilauksiin automaattisesti määritettävät kulut.
 
-**Supplementary items**
+**Lisänimikkeet**
 
 -   Luo ja ylläpidä Täydennysnimikeryhmät - Toimittaja -sivulla toimittajien täydennysnimikeryhmiä.
 -   Luo ja ylläpidä Täydennysnimikeryhmät - Varasto -sivulla nimikkeiden täydennysnimikeryhmiä.
 
-**Distribution**
+**Toimitukset**
 
 -   Luo ja ylläpidä Toimitusehdot-sivullaehtoja, joiden mukaisesti nimike siirretään myyjältä ostajalle.
 -   Luo ja ylläpidä Toimitustavat-sivulla kuljetustavat, joilla tilaus toimitetaan myyjältä ostajalle.
 -   Luo ja ylläpidä Kohdekoodit-sivulla toimituskohteiden tunnuksia ja kuvauksia.
 
-**Forms**
+**Lomakkeet**
 
 -   Luo Lomakehuomautukset-sivulla eri sivulla näkyvä vakioteksti.
 -   Määritä Lomakkeen lajitteluparametrit -sivulla ehdotusten, vastaanottoluetteloiden, pakkausluetteloiden ja laskujen lajittelujärjestys.
 -   Määritä Tulostuksenhallinnan asetukset -sivulla alkuperäisten ja kopioitujen sivujen tulostuksenhallinnan tiedot.
 
-**Payments**
+**Maksut**
 
 -   Määritä käteisalennusten saantiehdot ja niitä Käteisalennukset-sivulla. Käteisalennuskoodit liitetään toimittajiin ja niitä käytetään ostotilauksissa.
 -   Määritä Maksusuunnitelmat-sivulla maksusuunnitelmat, joilla hallitaan toimittajille maksettavia maksuerämaksuja.
@@ -108,17 +111,17 @@ Lisäasetusten sivut on järjestetty toiminnon mukaan.
 -   Luo ja ylläpidä Toimitusmaksu-sivulla toimittajiin liittyviä toimitusmaksuja.
 -   Luo ja ylläpidä Maksuohje-sivulla maksuohjeita.
 
-**Statistics**
+**Tilastotiedot**
 
 -   Määritä Erääntymiskausien määritykset -sivulla käyttäjän määrittämiä välejä toimittajatilien erääntymisjakauman analysointia varten.
 -   Luo Toimiala-sivulla toimittajille määritettäviä toimialakoodeja.
 
-**Valmistevero (1099)**
+**Vero 1099**
 
--   - **1099-kenttien** sivun, tarkistaa ja päivittää vähimmäismäärät, ilmoitetaan, sisäinen Revenue Service (IRS), Veroviraston uusimpien vaatimusten perusteella.
+-   Vahvista ja päivitä **1099-kentät** -sivulla vähimmäissummat, jotka on ilmoitettava Yhdysvaltain veroviranomaiselle (IRS) uusimpien IRS-vaatimusten perusteella.
 
-## <a name="optional-setup-for-other-modules"></a>**Muissa moduuleissa valinnaiset asetukset**
-**Organization administration**
+## <a name="optional-setup-for-other-modules"></a>**Muiden moduulien valinnaiset asetukset**
+**Organisaation hallinto**
 
 -   Määritä Numerosarjat-sivulla laskunumeroiden numerosarjaryhmät.
 -   Määritä osoitetiedot seuraavilla sivuilla:
@@ -126,7 +129,7 @@ Lisäasetusten sivut on järjestetty toiminnon mukaan.
     -   NAF-koodit
     -   Tuo postinumerot
 
-**General ledger**
+**Kirjanpito**
 
 -   Määritä taloushallinnon dimensiot Taloushallinnon dimensiot -sivulla.
 -   Määritä verotiedot seuraavilla sivulla:
@@ -139,9 +142,10 @@ Lisäasetusten sivut on järjestetty toiminnon mukaan.
     -   Alv-viranomaiset
     -   Arvonlisäveron tilityskaudet
 
-**Cash and bank management**
+**Maksuliikenteen hallinta**
 
 -   Määritä Maksun tarkoituskoodit -sivulla keskuspankin maksun tarkoituskoodit.
+
 
 
 

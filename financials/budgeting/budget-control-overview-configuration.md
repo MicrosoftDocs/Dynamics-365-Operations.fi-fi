@@ -1,6 +1,6 @@
 ---
-title: Budjetin hallinnan yleiskatsaus
-description: "Tässä artikkelissa esitellään budjetinhallinnan ja tietoja, joiden avulla voit määrittää budjetinhallinnan toimintoja varten Microsoft Dynamics-365, niin, että voit hallita taloudellisia resursseja."
+title: Yleiskatsaus budjetin seurantaan
+description: "Tässä artikkelissa esitellään budjetin hallinta. Artikkeli sisältää tietoja, joiden avulla budjetin hallinta voidaan määrittää Microsoft Dynamics 365 for Operationsissa niin, että taloushallinnon resurssien hallinta onnistuu."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,16 +24,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="budget-control-overview"></a>Budjetin hallinnan yleiskatsaus
+# <a name="budget-control-overview"></a>Yleiskatsaus budjetin seurantaan
 
-Tässä artikkelissa esitellään budjetinhallinnan ja tietoja, joiden avulla voit määrittää budjetinhallinnan toimintoja varten Microsoft Dynamics-365, niin, että voit hallita taloudellisia resursseja.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa esitellään budjetin hallinta. Artikkeli sisältää tietoja, joiden avulla budjetin hallinta voidaan määrittää Microsoft Dynamics 365 for Operationsissa niin, että taloushallinnon resurssien hallinta onnistuu.
 
 <a name="overview"></a>Yleiskuvaus
 --------
 
-Budjetinhallinnan toimintoja varten Microsoft Dynamics-365-tukee organisaation kautta tilikartan, työnkulut, käyttäjäryhmät, asiakirjojen ja päiväkirjojen, käytettävissä olevat varat, budjettijaksoja ja raja-arvot voidaan määrittää laskenta taloudellisten resurssien hallintaa. Kun ohjausobjektit on määritetty, organisaatio voi suunnitella, mitata, hallita ja ennustaa taloudellisia resursseja tilikauden aikana. 
+Microsoft Dynamics 365 for Operationsin budjetin hallinta tukee organisaation taloudellisten resurssien hallintaa tilikarttojen, työnkulkujen, työryhmien, lähdeasiakirjojen ja -kirjauskansioiden sekä käytettävissä olevien varojen määritettävissä olevan laskelman, budjettijaksojen ja raja-arvojen avulla. Kun ohjausobjektit on määritetty, organisaatio voi suunnitella, mitata, hallita ja ennustaa taloudellisia resursseja tilikauden aikana. 
 
-Kun budjetit hyväksytty Dynamics 365 operaatioille, voit käyttää budjettisuunnitelmat Luo budjettirekisterimerkinnät tallentavan organisaation menoja talousarvioon. Vaihtoehtoisesti voit luoda tai tuoda budjettirekisterimerkinnät kolmannen osapuolen ohjelmasta sen sijaan, että budjetin suunnittelutoimintoja. 
+Kun budjetit on hyväksytty Dynamics 365 for Operationsissa, voit luoda budjettirekisterimerkinnät budjettisuunnitelmien avulla ja tallentaa organisaation kulubudjetin. Vaihtoehtoisesti budjettirekisterimerkinnät voidaan luoda tai tuoda kolmannen osapuolen ohjelman avulla ilman budjettisuunnittelutoiminnon käyttämistä. 
 
 Kulut voidaan tallentaa päätilien ja taloushallinnon dimensioiden avulla. Koko kulubudjetin hallinta voidaan määrittää vastaamaan organisaation menetelmiä ja vaatimuksia taloushallinnon dimensioiden ja päätilien yhdistelmien ryhmittelyn avulla. 
 
@@ -41,22 +44,22 @@ Seuraavassa kaaviossa esitellään budjetin hallinnan sijainti tavallisen budjet
 
 [![BudgetingCycle](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
 
-Voit määrittää budjetinhallinnan mukaan monet tekijät:
+Voit määrittää budjetin hallinnan useiden eri tekijöiden perusteella:
 
 -   **Taloushallinnon dimensiot** – Mitä taloushallinnan dimensioita budjetin ja toteutuneiden arvojen raportoinnissa? Mitä taloushallinnan dimensioita budjetin hallinnassa on käytettävä? Vaativatko tietyt dimensioyhdistelmät tai päätilit erityishuomiota? Onko budjetin ja toteutuneiden arvojen seuraaminen kustannuspaikan ja ohjelman perusteella pakollista? Vaativatko matkakulut erityishuomiota?
 -   **Aika** – Millaista ajanjaksoa (tilikausi, tilikausi tähän päivään saakka jne.) käytettävissä olevien budjettivarojen arvioinnissa käytetään?
--   **Lähdeasiakirjoista** – mitkä lähdeasiakirjat on arvioitava budjetin hallinnassa? Arvioitava asiakirjat tai asiakirjan riviä kohden?
+-   **Lähdeasiakirjat** – Mitkä lähdeasiakirjat on arvioitava budjetin hallinnassa? Onko asiakirjat arvioitava rivikohtaisesti vai asiakirjakohtaisesti?
 -   **Käytettävissä olevien varojen laskelma** – Otetaanko asiakirjat, kuten ostoehdotukset (alustavat varaukset) ja ostotilaukset (varaukset) huomioon käytettävissä olevien varojen laskelmassa? Otetaanko luonnostilaiset asiakirjat huomioon laskelmassa?
 -   **Ohita käyttöoikeus** – Kuka voi ylittää käytettävissä olevan budjetin?
 
-Budjetin hallinta on täysin integroitu Dynamics 365 operaatioille. Tämän vuoksi sekä suunniteltujen että toteutuneiden ostojen budjetin arviointi on mahdollista. Budjettikyselyt ja -raportit ovat käytettävissä. Tämän vuoksi käyttäjät voivat arvioida budjettia koko budjettijakson aikana ja tehdä tarvittaessa oikaisuja budjetin versioiden ja siirtojen muodossa. Budjettipäällikkö voi myös viedä budjetin ja toteutuneet arvot Microsoft Exceliin, jossa voidaan suorittaa paremmat analyysit ja ennusteet.
+Budjetin hallinta on integroitu täysin Dynamics 365 for Operationsin kanssa. Tämän vuoksi sekä suunniteltujen että toteutuneiden ostojen budjetin arviointi on mahdollista. Budjettikyselyt ja -raportit ovat käytettävissä. Tämän vuoksi käyttäjät voivat arvioida budjettia koko budjettijakson aikana ja tehdä tarvittaessa oikaisuja budjetin versioiden ja siirtojen muodossa. Budjettipäällikkö voi myös viedä budjetin ja toteutuneet arvot Microsoft Exceliin, jossa voidaan suorittaa paremmat analyysit ja ennusteet.
 
 ## <a name="configuring-budget-control"></a>Budjetin hallinnan konfiguroiminen
 ### <a name="budget-cycle-time-span"></a>Budjettijakson aikaväli
 
 Kun perusbudjetointi on konfiguroitu, voit määrittää budjetoinnin ja budjetin hallinnan ajan tai aloitus- ja lopetuskauden **Budjettijakson aikaväli** -sivulla. Budjettijaksot vastaavat usein kirjanpidon vuosikalentereita, mutta ne voivat ulottua myös tilikausille.
 
-Seuraavaksi kokoonpanossa on päätetty eri välilehdissä **budjetin hallinnan konfiguraatio** sivulla.
+Konfiguraation seuraavat vaiheet suoritetaan **Budjetin hallinnan konfiguraatio** -sivun eri välilehdissä.
 
 ### <a name="define-parameters"></a>Määritä parametrit
 
@@ -77,7 +80,7 @@ Seuraavaksi määritetään käyttäjäryhmät **Budjetin ylitysoikeudet** -väl
 **Käytettävissä olevat budjettivarat** -välilehdessä voit määrittää seuraavaksi kaavan, jota käytetään käytettävissä olevien budjettivarojen laskennassa. Laskelma voi sisältää luonnoksia tai kirjaamattomia asiakirjoja riippuen siitä, miten konservatiivisesti organisaatiossa hallitaan taloushallinnon resursseja tai millaiset säädökset tai toimialan vaatimukset ovat. 
 
 > [!NOTE] 
-> Jos laskenta on muokannut budjettijakson aikana, muutokset eivät vaikuta kaikki asiakirjat, jotka aiemmin siirretty budjetin hallinta tarkistukset ja, jotka kirjattiin tai valmis.
+> Jos tätä laskelmaa muokataan budjettijakson aikana, muutokset eivät vaikuta budjetin hallinnan tarkistuksissa hyväksyttyihin tai aiemmin kirjattuihin tai valmistuneisiin asiakirjoihin.
 
 ### <a name="documents-and-journals"></a>Tiedostot ja kirjauskansiot
 
@@ -96,7 +99,7 @@ Seuraavaksi liitetään budjetin hallintaan sisällytettävät budjettimallit bu
 Seuraavaksi luodaan tietyt säännöt **Määritä budjetin hallintasäännöt** -välilehdessä budjetin hallinnan käytössä olevien taloushallinnan dimensioiden perusteella. Jos kohdistus tehdään esimerkiksi osaston menon tai menovälin perusteella, menot voidaan määrittää ja arvioida tämän välilehden asetusten avulla. Voit määrittää kullekin budjetin hallintasäännölle eri raja-arvot. 
 
 > [!Important]
-> Budjetin hallinta otetaan käyttöön kaikki päätilin **tulos**, **kulut**, **tuotto, taseen, velan pääoman** tai **hyödykkeen** tyyppi. Jos tämä välilehti sisältää säännön, jonka ehdot ovat tyhjät, budjetin hallinta otetaan käyttöön **kaikille **taloushallinnon dimension yhdistelmille, jotka sisältävät tämän tyyppisen päätilin. Tämän vuoksi on tärkeää luoda budjetin hallinnan säännöt, joissa määritetään taloushallinnon dimensioiden yhdistelmien arvovälit vain silloin, kun budjetin hallinnan käyttäminen on tärkeää.  
+> Budjetin hallinta voidaan ottaa käyttöön mille tahansa **Voitto ja tappio**-, **Meno**-, **Tuotto-, Tase-, Velat-, Oma pääoma-**tai **Käyttöomaisuus**-tyypin päätilille. Jos tämä välilehti sisältää säännön, jonka ehdot ovat tyhjät, budjetin hallinta otetaan käyttöön **kaikille **taloushallinnon dimension yhdistelmille, jotka sisältävät tämän tyyppisen päätilin. Tämän vuoksi on tärkeää luoda budjetin hallinnan säännöt, joissa määritetään taloushallinnon dimensioiden yhdistelmien arvovälit vain silloin, kun budjetin hallinnan käyttäminen on tärkeää.  
 
 ### <a name="select-main-accounts"></a>Valitse päätilit
 
@@ -114,15 +117,17 @@ Jos budjetin hallinnan varoitussanomat tulee piilottaa joiltakin käyttäjäryhm
 
 Kun budjetin hallinta on määritetty, voit ottaa hallinnan käyttöön ja aktivoida sen **Ota budjetin hallinta käyttöön** -välilehdessä. Luonnosversio tulee tämän jälkeen voimaan.
 > [!Important]
-> Kun budjetin hallinta on otettu käyttöön ja aktiivinen, kun tapahtumat on kirjattu, se olisi ei voi poistaa käytöstä vuoden puoliväliin mennessä. Kun budjetin hallinta poistetaan käytöstä, tehtäviä ei tallenneta budjetin hallintaa varten eikä budjettitarkastuksia enää suoriteta. Tämän vuoksi aiemmin kirjatut asiakirjat eivät ehkä vastaa budjetin hallintaan liittyvien kyselyjen ja raporttien vapautussanomia tai -saldoja. Näitä ovat budjetin hallinnan tilastot missä tahansa tuotantovirrassa tai asiakirjojen ja kirjauskansioiden oikaisu. 
+> Kun budjetin hallinta on otettu käyttöön ja aktiivinen ja tapahtumia on kirjattu, hallintaa ei voi poistaa käytöstä kesken vuoden. Kun budjetin hallinta poistetaan käytöstä, tehtäviä ei tallenneta budjetin hallintaa varten eikä budjettitarkastuksia enää suoriteta. Tämän vuoksi aiemmin kirjatut asiakirjat eivät ehkä vastaa budjetin hallintaan liittyvien kyselyjen ja raporttien vapautussanomia tai -saldoja. Näitä ovat budjetin hallinnan tilastot missä tahansa tuotantovirrassa tai asiakirjojen ja kirjauskansioiden oikaisu. 
 
 Huomaa myös, että ennen budjetin hallinnan käyttöönottoa kirjattuja tapahtumia, kuten budjettirekisterimerkintöjä, ei oteta huomioon budjetin hallinnassa. Tämän vuoksi on suositeltavaa ottaa budjetin hallinta käyttöön vain uuden budjettijakson alkaessa. Varmista, että budjettirekisterimerkinnät, jotka sisältävät budjetin hallinnan budjetin alkusaldoja, saavat päivitetyt budjettisaldot vasta sen jälkeen, kun budjetin hallinta on otettu käyttöön. Kaikki avoimen asiakirjan (esimerkiksi ostotilaus) käytettävissä olevat budjettivarat tarkistetaan. Se saa budjetin hallinnan budjettivarauksen, kun käyttäjä käynnistää asiakirjassa manuaalisesti budjetin hallinnan tarkistuksen.
 
 ## <a name="using-budget-control"></a>Budjetin hallinnan käyttäminen
 Kun budjetin hallinta on otettu käyttöön, käyttäjät vastaanottavat niiden asiakirjojen ja kirjauskansioiden budjetin hallinnan varoituksia ja virhesanomia, joille on konfiguroitu budjetin hallinta. Muista, että voit määrittää budjetin hallinnan niin, että vaikka käyttäjille lähetetään varoitus budjetin varojen ylittämisestä, he voivat silti jatkaa tapahtumien vahvistamista tai kirjaamista. Käyttäjät voivat tarkastella epäonnistuneiden budjettitarkistusten tietoja **Budjetin hallinnan virheet ja varoitukset** -sivulla.   
 
-Tällä sivulla käyttäjät voivat siirtyä **budjetin hallinnan tilastot kausittain** käytettävyyden tarkasteleminen ja varausten ohjausobjekti valittu dimensioyhdistelmä. Käyttäjät voivat porautua myös **Budjetin hallinnan tilastot **-sivulle ja tarkastella budjetin käytettävyyttä kaikkien budjetin hallinnassa käytettävien taloushallinnon dimensioiden yhdistelmien osalta. 
+Tältä sivulta käyttäjät voivat porautua **Budjetin hallinnan tilasto kausittain** -sivulle ja tarkastella budjetin käytettävyystietoja ja varauksia tietyn budjetin ohjausdimensioyhdistelmän osalta. Käyttäjät voivat porautua myös **Budjetin hallinnan tilastot **-sivulle ja tarkastella budjetin käytettävyyttä kaikkien budjetin hallinnassa käytettävien taloushallinnon dimensioiden yhdistelmien osalta. 
 
 Jos budjetin hallinta on otettu käyttöön ostotilauksille, budjettipäällikkö voi tarkastella **Kirjanpitobudjetit ja ennusteet** -työtilan avulla kaikkien niiden vahvistamattomien ostotilausten jonoa, joilla on budjetin tarkistuksen varoituksia ja virheitä. Jos budjettipäällikölle on konfiguroitu budjetin ylitysoikeudet, hän voi vahvistaa ostotilaukset suoraan työtilassa.    
+
+
 
 

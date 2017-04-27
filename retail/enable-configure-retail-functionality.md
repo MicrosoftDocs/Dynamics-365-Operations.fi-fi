@@ -1,6 +1,6 @@
 ---
 title: "Alusta Retail-ympäristössä alkutiedot"
-description: "Tässä artikkelissa on tietoja, jotka on luotu Microsoft Dynamics-365 työvaiheiden - Retail alustusprosessin osana."
+description: "Tässä artikkeli kuvaa tietoja, jotka on luotu osana Microsoft Dynamics 365 for Operations - Retail -sovelluksen alustusprosessia."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 49621
 ms.assetid: 4dc762eb-190e-4485-8f55-b0cafc81bc37
 ms.search.region: global
@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="initialize-seed-data-in-a-new-retail-environment"></a>Alusta Retail-ympäristössä alkutiedot
 
-Tässä artikkelissa on tietoja, jotka on luotu Microsoft Dynamics-365 työvaiheiden - Retail alustusprosessin osana.
+[!include[banner](includes/banner.md)]
+
+
+Tässä artikkeli kuvaa tietoja, jotka on luotu osana Microsoft Dynamics 365 for Operations - Retail -sovelluksen alustusprosessia.
 
 Kun Retail-sovellus on otettu käyttöön Microsoft Dynamics Lifecycle Servicesin (LCS) kautta, sinun on alustettava vähittäismyyntikonfiguraatio luodaksesi peruskonfiguraation tiedot. **Tärkeää:** Ennen kuin alustat vähittäismyyntikonfiguraation, varmista, että olet määrittänyt kielen ja postiosoitteen kullekin yritykselle, jolle määrität vähittäismyyntiliikkeitä. Tämä vaihe on suoritettava kullekin yritykselle, jota käytät vähittäismyyntiin. Alusta vähittäismyyntikonfiguraatio noudattamalla seuraavia vaiheita:
 
-1.  Käynnistä Dynamics-365-asiakkaan toiminnot.
-2.  Valitse **jälleenmyynti- ja commerce**&gt;**Headquarters-asetus**&gt;**parametrien**&gt;**vähittäismyynnin parametreja**.
+1.  Käynnistä Dynamics 365 for Operations -asiakasohjelma
+2.  Valitse **Vähittäismyynti ja kauppa** &gt; **Pääkonttorin asetukset** &gt; **Parametrit** &gt; **Vähittäismyyntiparametrit**.
 3.  Napsauta **Alusta**.
 
 Alustaminen luo seuraavat oletusmääritystiedot:
@@ -50,13 +53,15 @@ Alustaminen luo seuraavat oletusmääritystiedot:
 -   Yksikön tarkistusmallit
 -   Komentojonotyö Commerce Data Exchange -palvelun historiatietojen tyhjentämiseen
 
-Lisäksi kirjaaminen eli liittyvät maksun kortin tuotannonalan (PCI) otetaan käyttöön toimia tietokannan Dynamics-365. **Huomautus:** Retail-ajastus voidaan määrittää erikseen. Tämä vaihtoehto mahdollistaa Retail-ajastuksen määrityksen sen oletusasetuksille. Kun alustus on valmis, sinun määritettävä vähittäismyynnin lisätiedot. Seuraavassa on muutamia esimerkkejä:
+Lisäksi maksukorttiyrityksiin (PCI) liittyvät lokiinkirjaukset ovat käytössä Dynamics 365 for Operationsin tietokannassa. **Huomautus:** Retail-ajastus voidaan määrittää erikseen. Tämä vaihtoehto mahdollistaa Retail-ajastuksen määrityksen sen oletusasetuksille. Kun alustus on valmis, sinun määritettävä vähittäismyynnin lisätiedot. Seuraavassa on muutamia esimerkkejä:
 
 -   Vähittäismyynnin parametrit
 -   Retail-ajastuksen parametrit
 -   Vähittäismyyntikanavat
 -   Kassakoneet ja laitteet
 -   Valikoimat
+
+
 
 
 

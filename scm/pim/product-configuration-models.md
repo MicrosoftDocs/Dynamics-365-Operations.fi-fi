@@ -1,6 +1,6 @@
 ---
-title: Tuotteen kokoonpano mallien esittely
-description: "Tässä artikkelissa kuvataan termejä ja käsitteitä, jotka liittyvät tuotekonfiguraation mallit. Tuotekonfiguraation mallit mahdollistavat rakenteen, jota voidaan käyttää useita yhden tuotteen tuotevariantit määritetään yleisen tuotteen."
+title: Tuotekonfiguraatiomallien yleiskatsaus
+description: "Tässä artikkelissa esitellään tuotekonfiguraatiomallieihin liittyvät ehdot ja käsitteet. Tuotekonfiguraatiomallien avulla voidaan luoda yleisiä tuoterakenteita, joita käytetään määritettäessä yhdestä tuotteesta useita tuotevariantteja."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-configuration-models-overview"></a>Tuotteen kokoonpano mallien esittely
+# <a name="product-configuration-models-overview"></a>Tuotekonfiguraatiomallien yleiskatsaus
 
-Tässä artikkelissa kuvataan termejä ja käsitteitä, jotka liittyvät tuotekonfiguraation mallit. Tuotekonfiguraation mallit mahdollistavat rakenteen, jota voidaan käyttää useita yhden tuotteen tuotevariantit määritetään yleisen tuotteen.
+Tässä artikkelissa esitellään tuotekonfiguraatiomallieihin liittyvät ehdot ja käsitteet. Tuotekonfiguraatiomallien avulla voidaan luoda yleisiä tuoterakenteita, joita käytetään määritettäessä yhdestä tuotteesta useita tuotevariantteja.
 
 Tuotekonfiguraatiomallit luodaan vastaamaan yleistä tuoterakennetta. Kun tuotekonfiguraatiomalli on määritetty, voit määrittää erillisen tuotevariantin, jolla on yksilöllinen tuoterakenne ja yksilöllinen reititys. Tuotekonfiguraatiomalleja käytetään sekä määrittävinä rajoituksina että pakottavina laskelmina. Niiden avulla käsitellään eri tuotevarianttien välisiä suhteita ja rajoituksia. Voit määrittää nimikkeitä myyntitilauksissa, myyntitarjouksissa, ostotilauksissa ja tuotantotilauksissa. Seuraavassa taulukossa kuvataan taulurajoituksiin perustuvia ehtoja ja käsitteitä.
 <table>
@@ -69,16 +69,16 @@ Voit määrittää ehdon myös määritteille. Jos ehto täyttyy, pakolliselle m
 <li><strong>Teksti</strong>, jolla voi tarvittaessa olla kiinteä luettelo</li>
 <li><strong>Totuusarvo</strong></li>
 </ul>
-Jos määritetyyppinä on <strong>Totuusarvo</strong>, <strong>Kokonaisluku</strong> ja alue tai <strong>Teksti</strong> ja kiinteä luettelo, arvojoukko on käytettävissä, kun tuotekonfiguraatiomalli määritetään. <strong>Huomautus:</strong> tuotteen kokoonpano Ratkaisin tunnistaa vain seuraavien määritetyyppien: <strong>Boolean</strong>, <strong>teksti</strong> kiinteä luettelo, ja <strong>kokonaisluku</strong>, alue. Tämän vuoksi vain näitä määritetyyppejä voidaan käyttää lausekkeen rajoituksissa ja ehdoissa.</td>
+Jos määritetyyppinä on <strong>Totuusarvo</strong>, <strong>Kokonaisluku</strong> ja alue tai <strong>Teksti</strong> ja kiinteä luettelo, arvojoukko on käytettävissä, kun tuotekonfiguraatiomalli määritetään. <strong>Huomautus:</strong> Tuotekonfiguraation selvitin tunnistaa vain seuraavat määritetyypit: <strong>Totuusarvo</strong>, <strong>Teksti</strong> ja kiinteäluettelo sekä <strong>Kokonaisluku</strong> ja alue. Tämän vuoksi vain näitä määritetyyppejä voidaan käyttää lausekkeen rajoituksissa ja ehdoissa.</td>
 </tr>
 <tr class="even">
 <td>Rajoitukset</td>
 <td>Rajoitukset kuvaavat tuotemallikonfiguraation rajoituksia. Rajoituksilla taataan vain kelvollisten arvojen valinta tuotetta määritettäessä. Rajoitteet voivat olla joko lausekerajoituksia tai taulukkorajoituksia:
 <ul>
 <li>Lausekerajoituksia voidaan käyttää vain komponentille johon ne on sidottu. Komponentin lausekerajoitukset voivat viitata komponentin alikomponenttien määritteisiin. Tuotekonfiguraation selvittimellä ratkaistaan rajoitukset ja rajoitukset on laadittava selvittimen syntaksin mukaisesti. Lisätietoja on lauseke- ja taulurajoituksia käsittelevässä wikilinkissä.</li>
-<li>Taulurajoituksissa on määritettävä, ennen kuin niitä voi käyttää tuotemääritysmallin komponentti. Taulurajoituksissa voi olla joko käyttäjän vai järjestelmän määrittämä. Käyttäjän määrittämä taulurajoitus on matriisi, jonka avulla voidaan kuvata joukko yhdistelmiä määritearvoille, jotka määritetyypit ovat määrittäneet. Jos valmistetaan esimerkiksi kaiuttimia, käyttäjän määrittämän taulurajoituksen matriisi voi sisältää kaiuttimen viimeistelyn ja säleikön sarakkeet.</li>
+<li>Taulun rajoituksia ei voi käyttää tuotekonfiguraatiomallin osassa, ennen kuin ne on määritetty. Taulun rajoitukset voivat olla joko käyttäjän tai järjestelmän määrittämiä. Käyttäjän määrittämä taulurajoitus on matriisi, jonka avulla voidaan kuvata joukko yhdistelmiä määritearvoille, jotka määritetyypit ovat määrittäneet. Jos valmistetaan esimerkiksi kaiuttimia, käyttäjän määrittämän taulurajoituksen matriisi voi sisältää kaiuttimen viimeistelyn ja säleikön sarakkeet.</li>
 </ul>
-<strong>Esimerkki</strong> Kaiuttimissa on valittavana neljä viimeistelyä: musta, tammi, palisanteri ja valkoinen. Kaiuttimet voi olla kolme edessä säleiköt: musta, valkoinen tai metalli. Musta viimeistely on saatavilla kaikki säleiköt, mutta muut lopettaa rajoittuvat tiettyyn säleiköt. Seuraavassa on taulussa esimerkki tiedoista, jotka näkyvät <strong>Muokkaa taulurajoitusta</strong> -sivun <strong>Sallitut yhdistelmät</strong> -välilehdessä.
+<strong>Esimerkki</strong> Kaiuttimissa on valittavana neljä viimeistelyä: musta, tammi, palisanteri ja valkoinen. Kaiuttimilla on kolme etusäleikkövaihtoehtoa: musta, metalli tai valkoinen. Musta viimeistely on valittavana kaikkiin säleikköihin, mutta kahta muuta voi käyttää vain tietyissä säleiköissä. Seuraavassa on taulussa esimerkki tiedoista, jotka näkyvät <strong>Muokkaa taulurajoitusta</strong> -sivun <strong>Sallitut yhdistelmät</strong> -välilehdessä.
 <table>
 <thead>
 <tr class="header">
@@ -117,11 +117,11 @@ Jos määritetyyppinä on <strong>Totuusarvo</strong>, <strong>Kokonaisluku</str
 </tr>
 </tbody>
 </table>
-Järjestelmän määrittämän taulurajoituksen edustaa yhdistämisen, jonka määritetyyppi ja Dynamics-365 toimintojen taulukon kenttään. Järjestelmän määrittämän taulurajoituksen linkittää dynaamisesti määritteen tyyppi kentässä. Linkin avulla taulukon toiminnot Dynamics-365-kentän tiedot näyttävän Tuotemääritysmallin määritteen.</td>
+Järjestelmän määrittämä taulurajoitus vastaa Dynamics 365 for Operations -taulun määritetyypin ja kentän yhdistämismääritystä. Järjestelmän määrittämä taulurajoitus linkittää dynaamisesti määritetyypin kenttään. Linkin avulla tuotekonfiguraatiomallin määrite vastaa Dynamics 365 for Operations -taulun kentän tietoja.</td>
 </tr>
 <tr class="odd">
 <td>Laskelmat</td>
-<td>Laskelmat edustavat lisä, rajoitteet. Laskutoimituksen avulla voit suorittaa aritmeettisia operaatioita-määritteitä <strong>desimaali</strong> ja <strong>kokonaisluku</strong> tyypit tai loogisia operaatioita, joihin liittyy määritteet <strong>teksti</strong> kiinteä luettelo ja <strong>Boolean</strong> tyypit. Laskelmalla on kohdemäärite, johon laskelmalausekkeen tulos sijoitetaan. Laskelmalauseke muodostetaan lauseke-editorilla.</td>
+<td>Laskelmat täydentävät rajoituksia. Laskemilla voi tehdä laskutoimituksia <strong>Desimaali</strong>- ja <strong>Kokonaisluku</strong>-määritetyypeissä tai loogisia toimintoja määritteissä, joiden tyyppi on <strong>Teksti</strong> ja kiinteä luettelo sekä <strong>Totuusarvo</strong>. Laskelmalla on kohdemäärite, johon laskelmalausekkeen tulos sijoitetaan. Laskelmalauseke muodostetaan lauseke-editorilla.</td>
 </tr>
 <tr class="even">
 <td>Alikomponentit</td>

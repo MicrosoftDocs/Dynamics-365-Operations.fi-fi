@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-locations"></a>Varastosijainnit
 
+[!include[banner](../includes/banner.md)]
+
+
 Varastopaikkoja käytetään perusvarastoinnin (WMS I) kanssa määrittämään, mihin nimikkeet varastoidaan ja mistä nimikkeet poimitaan WMS I -varastossa.
 
 Tämä ohjeaihe koskee inventaarionhallintamoduulin ominaisuuksia. Se ei koske varastonhallintamoduulin ominaisuuksia.
@@ -64,6 +67,8 @@ Sijainteja voidaan kopioida varastosta toiseen ja luoda ohjatun toiminnon avulla
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Luo uusi fyysisen varastoinnin asettelu (tehtävän guide)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+[Luo uusi varastoasettelu (tehtäväopas)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+
+
 
 

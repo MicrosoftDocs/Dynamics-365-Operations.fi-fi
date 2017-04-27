@@ -1,6 +1,6 @@
 ---
 title: Lomakkeen suunnitteleminen
-description: "Tässä ohjeaiheessa käsitellään kyselylomakkeen luomisesta. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen."
+description: "Tässä aiheessa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="design-a-questionnaire"></a>Lomakkeen suunnitteleminen
 
-Tässä ohjeaiheessa käsitellään kyselylomakkeen luomisesta. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen. 
+Tässä aiheessa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen. 
 
 Huolellisesti suunnittelu kyselylomake voi parantaa keräämiesi tietojen laatua. Huolellisen suunnittelun avulla voit valita kyselylomakkeeseen kulloinkin sopivat vaihtoehdot. Seuraavat seikat auttavat tehokkaan kyselylomakkeen suunnittelemisessa:
 
@@ -87,12 +87,12 @@ Kyselylomakeparametrit ovat valinnaisia. Organisaation vaatimuksista riippuen ne
 
 Kyselylomakeparametrit määrittävät anonyymin tilan, numerosarjan koodit ja kyselylomakkeen viitetyypit. Kun organisaatio jakelee kyselylomakkeen, anonyymisti vastaamisen vaihtoehtoon tulee kiinnittää huomiota. 
 
-Numerosarjan koodeja käytetään kysymysten ja vastausten järjestämisessä. Perusteella nämä numerosarjakoodit, arvot määritetään automaattisesti kohteita. 
+Numerosarjan koodeja käytetään kysymysten ja vastausten järjestämisessä. Arvot liitetään automaattisesti nimikkeisiin näiden numerosarjan koodien perusteella. 
 
 Kaikki parametrit tulee määritettävä, ennen kuin tietoja aletaan luoda. Voit muokata kyselylomakeparametrien asetuksia milloin tahansa.
 
 ## <a name="questionnaire-components"></a>Kyselylomakkeen osat
-Kyselylomakkeiden sisältää kolme keskeistä osaa: vastaus ryhmiä, jotka sisältävät vastauksia Monivalinta kysymyksiä, kysymyksiä ja itse kyselylomakkeen. Voit myös ryhmitellä kysymykset kyselylomakkeen tulosryhmien. Tulosryhmien avulla voit luokitella kysymykset ja tehdä kyselylomakkeesta lisäanalyysin. 
+Kyselylomake muodostuu kolmesta pääelementistä: vastausryhmistä, jotka sisältävät monivalintakysymysten vastaukset, kysymyksistä ja itse kyselylomakkeesta. Voit halutessasi ryhmitellä kyselylomakkeen kysymykset tulosryhmiin. Tulosryhmien avulla voit luokitella kysymykset ja tehdä kyselylomakkeesta lisäanalyysin. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -235,6 +235,6 @@ Vaihtoehtoisesti kyselylomakkeen voi määrittää niin, että jos vastaaja vali
 
 [Kyselylomakkeiden jakelu ja täyttäminen](distribute-questionnaires.md)
 
-[Tarkasteleminen ja kyselylomakkeiden tulosten arvioiminen](evaluate-questionnaire-results.md)
+[Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
 
 

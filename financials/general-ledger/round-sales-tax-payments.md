@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-payments-and-rounding-rules"></a>Arvonlisäveromaksut ja pyöristyssäännöt
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, miten ALV-viranomaisten pyöristyssäännön määrittäminen toimii, ja miten arvonlisäverosaldo pyöristetään arvonlisäverotyön arvonlisäveron selvityksen ja kirjauksen aikana.
 
-Arvonlisäverot täytyy ilmoittaa ja maksaa säännöllisesti. Tämä voidaan tehdä käynnissä selvitettyjen ja kirjaa arvonlisäveroprosessin ALV-sivulla. ALV-tilit täsmäytetään kauden ALV- ja ALV-saldo kirjataan ALV-maksutilille. Arvonlisäveron maksutilille kirjattu alv-saldo voidaan pyöristää veroviranomaisten ohjeiden mukaan määrittämällä Arvonlisävero-sivulla pyöristyssääntö. 
+Arvonlisäverot täytyy ilmoittaa ja maksaa säännöllisesti. Tämä voidaan tehdä suorittamalla arvonlisäveron tilitys- ja kirjausprosessi Arvonlisävero-sivulla. Kauden arvonlisävero tilitetään arvonlisäverotilejä vastaan, ja alv-saldo kirjataan arvonlisäveron maksutilille. Arvonlisäveron maksutilille kirjattu alv-saldo voidaan pyöristää veroviranomaisten ohjeiden mukaan määrittämällä Arvonlisävero-sivulla pyöristyssääntö. 
 
 Pyöristysero kirjataan arvonlisäveron pyöristystilille, joka valitaan kirjanpidossa Automaattisten tapahtumien tilit -kentästä.
 
@@ -42,10 +45,10 @@ Kauden arvonlisävero näyttää hyvityssaldoksi -98 765,43. Yritys on perinyt a
 
 Yritys haluaa käyttää pyöristysmenetelmää, joka pyöristää saldon lähimpään 1,00 euroon. Alv-kirjanpidosta vastaava käyttäjä tekee seuraavat toimet:
 
-1.  Napsauta ALV &gt;välilliset verot &gt;arvonlisäveron &gt;ALV-viranomaiset
+1.  Valitse Vero &gt; Välilliset verot &gt; Arvonlisävero &gt; Alv-viranomaiset.
 2.  Valitse Yleinen-pikavälilehdessä Pyöristystapa-kentästä Normaali.
 3.  Syötä Pyöristys-kenttään arvoksi 1,00.
-4.  Kun arvonlisävero täytyy maksaa, avaa Tilitä ja kirjaa arvonlisävero -sivu. (Valitse ALV &gt;ilmoitus &gt;arvonlisäveron &gt;selvittää ja kirjata ALV.)
+4.  Kun arvonlisävero täytyy maksaa, avaa Tilitä ja kirjaa arvonlisävero -sivu. (Valitse Vero &gt; Ilmoitukset &gt; Arvonlisävero &gt; Tilitä ja kirjaa arvonlisävero.)
 5.  Arvonlisäveron maksutilillä oleva alv-velka (98 765,43) pyöristetään arvoon 98 765.
 
 Seuraavassa taulukossa on esitetty, miten summa 98 765,43 summa pyöristetään käyttämällä kutakin Alv-viranomaiset-sivulla Pyöristystapa-kentästä valittavissa olevaa pyöristysmenetelmää.
@@ -61,6 +64,8 @@ Seuraavassa taulukossa on esitetty, miten summa 98 765,43 summa pyöristetään 
 > [!NOTE]                                                                                  
 > Jos valitset Oma etu, pyöristys tehdään aina yrityksen eduksi. 
 
-Lisätietoja on ohjeaiheessa [arvonlisäveron yleistä](indirect-taxes-overview.md). 
+Lisätietoja on kohdassa [Arvonlisäveron yleiskuvaus](indirect-taxes-overview.md). 
+
+
 
 

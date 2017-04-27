@@ -86,5 +86,5 @@ Ratkaisu on **Talousraportointi**-vaihtoehto. Organisaatiohierarkiat, jotka sis�
 **Vie yrityksen saldot** -vaihtoehdon avulla voidaan suorittaa vienti yhdestä esiintymästä. Tämän jälkeen tiedot voidaan konsolidoida käyttämällä toisen esiintymän **Konsolidoi tuonnin kanssa** -vaihtoehtoa.
 
 
-Lisätietoja on ohjeaiheessa [konsolidointiyrityksessä valuutan revalution](\finanicials\general-ledger\currency-revaluation-consolidation-company).
+Lisätietoja on ohjeaiheessa [Valuutan uudelleenarvostus konsolidointiyrityksessä](\finanicials\general-ledger\currency-revaluation-consolidation-company).
 

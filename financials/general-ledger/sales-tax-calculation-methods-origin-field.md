@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Arvonlisäveron laskentatavat Alkuperä-kentässä
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa käsitellään arvonlisäveron koodisivun Peruste-kentän vaihtoehtoja sekä sitä, miten arvonlisävero lasketaan valitun vaihtoehdon perusteella arvonlisäverokoodille.
 
 Kun luot arvonlisäverokoodeja Arvonlisäverokoodit-sivulla, sinun täytyy valita laskentatapa, jota käytetään Alkuperä-kentässä olevaan veron perustesummaan.
@@ -124,5 +127,7 @@ Asiakirjan/kirjauskansion asetukseksi on määritetty Summat sisältävät arvon
 [Arvonlisäveroprosenttien määrittäminen Alv-rajan peruste- ja Laskentatapa-kenttien perusteella](marginal-base-field.md)
 
 [Alv-koodien koko summa- ja väli-laskentavaihtoehdot](whole-amount-interval-options-sales-tax-codes.md)
+
+
 
 

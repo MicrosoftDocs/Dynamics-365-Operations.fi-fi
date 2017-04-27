@@ -1,5 +1,5 @@
 ---
-title: Toimittajan laskujen yhteenveto
+title: Toimittajan laskujen yleiskatsaus
 description: "Tässä artikkelissa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin."
 author: twheeloc
 manager: AnnBe
@@ -25,20 +25,23 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vendor-invoices-overview"></a>Toimittajan laskujen yhteenveto
+# <a name="vendor-invoices-overview"></a>Toimittajan laskujen yleiskatsaus
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin. 
 
 <a name="vendor-invoices"></a>Toimittajan laskut
 ---------------
 
-Ostotilauksesta peräisin oleva toimittajan lasku on lasku, joka luodaan, kun tuotteet tai palvelut on vastaanotettu toimittajalle tehdyn ostotilauksen mukaisesti. Toimittajalasku on otsikko, ja vähintään yhden rivin nimikkeitä tai palveluita. Toimittajalasku on valmis jakson Ostotilaus-tuotteen vastaanoton toimittajan laskuun. 
+Ostotilauksesta peräisin oleva toimittajan lasku on lasku, joka luodaan, kun tuotteet tai palvelut on vastaanotettu toimittajalle tehdyn ostotilauksen mukaisesti. Toimittajan lasku sisältää otsikon ja yhden tai useamman rivin nimikkeille tai palveluille. Toimittajan lasku päättää ketjun, joka kulkee ostotilauksesta tuotteen vastaanoton kautta toimittajan laskuun. 
 
 Vaikka toimittajan laskuista liittyy ostotilauksiin, toimittajan laskussa voi olla rivejä, jotka eivät vastaa ostotilauksen rivejä. Voit myös luoda toimittajan laskuja, joita ei ole liitetty mihinkään ostotilaukseen. Nämä toimittajan laskut voivat koskea juoksevia palveluja, kuten sähkölasku, eikä niistä tarvitse olla viittausta ostotilaukseen, kun lisäät ne. 
 
 Toimittajan laskun voi kirjata monella tavalla:
 
--   Toimittajan laskurekisterin voit nopeasti kirjoittaa laskuja, jotka eivät viittaa ostotilaukseen, siten, että kulun voi jaksottaa. Toimittajalaskujen hyväksynnän kirjauskansio käyttämällä näitä laskuja ja kirjaa ne jaksotuksen Käännä toimittajasaldo.
+-   Voit kirjata toimittajan laskurekisterissä nopeasti laskut, joista ei ole viittausta ostotilaukseen, jotta voit jaksottaa kulun. Toimittajalaskujen hyväksynnän kirjauskansiossa voit puolestaan valita kyseiset laskut ja kirjata ne toimittajan saldoon palauttamaan jaksotus.
 -   Voit kirjata toimittajan laskukirjauskansiossa laskut, joissa ei ole viittausta ostotilaukseen, yhdellä vaiheella.
 -   Toimittajalaskupooli yhdessä toimittajan laskurekisterin kanssa käytettynä mahdollistaa laskujen nopean kirjaaminen kulun jaksottamiseksi. Voit kirjata laskun kulutilille avaamalla liittyvät ostotilaukset myöhemmin.
 -   Voit luoda **Avoimet toimittajan laskut**- ja **Odottavat toimittajan laskut** -sivuilla toimittajan laskut vahvistetuista ostotilauksista.
@@ -57,7 +60,7 @@ Kun avaat toimittajan laskun liittyvästä ostotilauksesta, laskurivit luodaan o
 Jos yritys käyttää laskujen täsmäytystä, voit tarkastella määrän täsmäytyksen tuloksia **Tuotteen vastaanoton määrän vastaavuus** -sarakkeessa. Voit tarkastella määrän täsmäytyksen tuloksia myös käyttämällä **Tarkista**-välilehden **Täsmäytyksen tiedot** -valikkokomentoa.
 
 ## <a name="adding-a-line-that-wasnt-on-the-purchase-order"></a>Ostotilauksesta puuttuvan rivin lisääminen
-Voit lisätä uuden rivin, jota ei ole toimittajalasku ostotilauksesta. Kohteen numero tai hankintojen luokka on valittava. Voit sitten lisätä riville määrät, hinnat ja summat. Rivi sisällytetään vain laskusummien täsmäytyskäytäntöihin.
+Voit lisätä toimittajan laskuun sellaisen uuden rivin, jota ei ole ostotilauksessa. Valitse nimiketunnus tai hankintaluokka. Voit sitten lisätä riville määrät, hinnat ja summat. Rivi sisällytetään vain laskusummien täsmäytyskäytäntöihin.
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Toimittajan laskun lähettäminen tarkistettavaksi
 Organisaatiosi saattaa hallita toimittajan laskujen tarkistusprosessia työnkulkujen avulla. Työnkulun tarkistusta voidaan edellyttää laskun ylätunnisteeseen, laskuriviin tai molempiin. Työnkulun ohjausobjekteja käytetään otsikkoon tai riviin sen perusteella, missä kohdistus on, kun napsautat ohjausobjektia. **Kirjaa**-painikkeen sijaan näkyvissä on **Lähetä**-painike, jolla voit lähettää toimittajan laskun tarkistusprosessiin.
@@ -74,6 +77,8 @@ Tässä vaihtoehdossa oletetaan, että vähintään yksi tuotteen vastaanotto on
 ## <a name="working-with-multiple-invoices"></a>Useita laskujen käsittely
 
 Voit käsitellä useita laskuja samaan aikaan ja kirjata ne kaikki samaan aikaan. Jos sinun on luotava useita laskuja, käytä **Odottavat toimittajan laskut** -sivua. Jos sinun on kirjattava ja tulostettava useita toimittaja laskuja, käytä laskujen hyväksymiskirjauskansion sivua. Jos käytät laskun hyväksynnän kirjauskansiota, ostotilaukselle on oltava kirjattuna ainakin yksi tuotteen vastaanotto ja että ostotilauksen laskun on oltava kirjattuna laskurekisteriin. Laskun kirjanpitotiedot ovat peräisin rekisteriin kirjatusta laskusta.
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Myynti- ja marginaalisuoritusten valvonta
-description: "Voit valvoa myynti ja reunuksen suorituskykyä reaaliajassa käyttämällä Microsoft Dynamics-365 operaatioille."
+description: "Voit valvoa myynnin ja katetuoton kehittymistä reaaliajassa käyttämällä Microsoft Dynamics 365 for Operationsia."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 85123
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>Myynti- ja marginaalisuoritusten valvonta
 
-Voit valvoa myynti ja reunuksen suorituskykyä reaaliajassa käyttämällä Microsoft Dynamics-365 operaatioille.
+[!include[banner](includes/banner.md)]
 
-Osana Dynamics 365 toimintojen avulla voit valvoa myynti- ja reunuksen toimintaa reaaliaikaisesti eritasoisia organisaatiohierarkian seuraavien dimensioiden kautta:
+
+Voit valvoa myynnin ja katetuoton kehittymistä reaaliajassa käyttämällä Microsoft Dynamics 365 for Operationsia.
+
+Microsoft Dynamics 365 for Operationsissa käyttäjät voivat valvoa myynnin ja katetuoton kehittymistä reaaliaikaisesti organisaatiohierarkian eri tasoilla seuraavissa dimensioissa:
 
 -   Tuotteet
 -   Luokat
@@ -42,8 +45,10 @@ Osana Dynamics 365 toimintojen avulla voit valvoa myynti- ja reunuksen toimintaa
 
 Kahden hierarkkista ruudukkorakennetta hyödyntävän yksilöllisen raportin avulla käyttäjät voivat lisäksi valvoa myynnin ja katetuoton kehittymistä porautumalla päätason luokan solmusta luokan yksittäisiin lehtisolmuihin vähittäismyynnin oletusarvoisessa tuoteluokkahierarkiassa. Käyttäjät voivat myös porautua päätason toimintayksiköstä yksittäiseen kanavaan organisaatiohierarkiassa, joka on määritetty oletusorganisaatiohierarkiaksi vähittäismyynnin raportointihierarkiaa varten. Raportit voi avata seuraavista sijainneista:
 
--   **Retail store management** työtilan Dynamics 365 toimintojen &gt;**jälleenmyynti- ja commerce**&gt;**kanavia**&gt;**Retail store management**&gt;**raportit**
--   **Management luokka- ja** työtilan Dynamics 365 toimintojen &gt;**jälleenmyynti- ja commerce**&gt;**tuotteet ja luokat**&gt;**Retail store management**&gt;**raportit**
--   **Hinnoittelu- ja alennustiedot hallinta** työtilan Dynamics 365 toimintojen &gt;**jälleenmyynti- ja commerce**&gt;**hinnoittelu ja alennukset**&gt;**Retail store management**&gt;**raportit**
--   **Kyselyiden ja raporttien** Dynamics 365 toimintojen jakso &gt;**jälleenmyynti- ja commerce**&gt;**kysely- ja raporttikriteereinä**&gt;**myyntiraportit**
+-   **Vähittäismyymälän hallinta** -työtila Dynamics 365 for Operations &gt; **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit**
+-   **Luokka- ja tuotehallinta** -työtila Dynamics 365 for Operations &gt; **Vähittäismyynti ja kauppa** &gt; **Tuote ja luokat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit**
+-   **Hinnoittelun ja alennusten hallinta** -työtila Dynamics 365 for Operations &gt; **Vähittäismyynti ja kauppa** &gt; **Hinnoittelu ja alennukset** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit**
+-   **Kyselyt ja raportit** -osio Dynamics 365 for Operations &gt; **Vähittäismyynti ja kauppa** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit**
+
+
 

@@ -1,6 +1,6 @@
 ---
 title: "Pääsuunnitelmat"
-description: "Eri pääsuunnitelmat avulla voidaan tukea yrityksen päivittäistä työvaiheisiin, simuloida eri suunnittelun strategioista, joita haluat valvoa ja toteuttaa yrityksen käytäntöjen, kuten käytännön tietoja sisäistä suorituskykyä tai asiakkaan Tyytyväisyys."
+description: "Voit käyttää useita pääsuunnitelmia. Pääsuunnitelmilla voidaan tukea yrityksen päivittäistä toimintaa, simuloida eri suunnittelustrategioita, joita halutaan seurata, sekä ottaa käyttöön esimerkiksi yrityksen sisäistä suorituskykyä tai asiakastyytyväisyyttä koskevia käytäntöjä."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="master-plans"></a>Pääsuunnitelmat
 
-Eri pääsuunnitelmat avulla voidaan tukea yrityksen päivittäistä työvaiheisiin, simuloida eri suunnittelun strategioista, joita haluat valvoa ja toteuttaa yrityksen käytäntöjen, kuten käytännön tietoja sisäistä suorituskykyä tai asiakkaan Tyytyväisyys. 
+[!include[banner](../includes/banner.md)]
+
+
+Voit käyttää useita pääsuunnitelmia. Pääsuunnitelmilla voidaan tukea yrityksen päivittäistä toimintaa, simuloida eri suunnittelustrategioita, joita halutaan seurata, sekä ottaa käyttöön esimerkiksi yrityksen sisäistä suorituskykyä tai asiakastyytyväisyyttä koskevia käytäntöjä. 
 
 Voit määrittää pääsuunnitelmia **Pääsuunnitelmat**-sivulla.
 
@@ -50,8 +53,10 @@ Alkuperäinen dynaaminen suunnitelma voidaan myös asettaa päivittymään uuden
 
 [Kattavuusasetukset](coverage-settings.md)
 
-[Taktisen ja toiminnassa suunnittelun pääajoituksen erottaminen](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
+[Pääajoituksen taktisen ja operatiivisen suunnittelun erottaminen](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
-[Master suunnittelu: Käytä staattista ja dynaamista Pääsuunnitelmaa tai yksi suunnitelma?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+[Pääsuunnittelu: käytetäänkö staattista ja dynaamista pääsuunnittelua vai yhtä suunnitelmaa?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+
+
 
 

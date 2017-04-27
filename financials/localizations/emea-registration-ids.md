@@ -1,6 +1,6 @@
 ---
 title: "Rekisteröintitunnukset"
-description: "Tässä ohjeaiheessa on tietoja määrittämisestä ja käyttämisestä rekisteröinti tunnukset."
+description: "Tässä ohjeaiheessa on tietoja rekisteröintitunnuksien määrittämisestä ja käyttämisestä."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,78 +27,83 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="registration-ids"></a>Rekisteröintitunnukset
 
-Tässä ohjeaiheessa on tietoja määrittämisestä ja käyttämisestä rekisteröinti tunnukset.
+[!include[banner](../includes/banner.md)]
 
-Monet maat ja alueet ovat erilaiset säännökset ja vaatimukset rekisterinumerot tai tunnukset. Tässä aiheessa tarvittavat asetukset ja tuetut Rekisteröintityypit käsittelyn yhteenveto osapuolten eri Euroopan maissa ja alueilla. Kaikkia maita/alueita on niiden tukemalla erilaisia maakohtaisia toimintoja rekisterinumerot tarjoaman eri valtion virastojen liittyviä vaatimuksia. Esimerkkejä rekisterinumerot ovat verovelvollisen tunnistenumero (TIN), henkilötunnus (SSN) ja Euroopan ALV-tunnus (EU: N ALV-tunnus). Tämä toiminto tarjoaa yhtenäisen kehyksen kaikissa maissa, kaikilla alueilla ottaen huomioon Maakohtaiset vaatimukset joissakin Euroopan maissa. Seuraavissa osissa on tietoja, joita käytetään ja käsitellään rekisteröinti tunnukset yleistä kulkua.
 
-## <a name="registration-type-creation"></a>Rekisteröinnin tyyppi luominen
-Ennen kuin voit syöttää Tunnuksella, rekisterinumerot, jotka kumpikin osapuoli on erilaisia tyyppejä rekisteröinti on määritettävä. Siirry **organisaation hallinta**&gt;**yleisen osoitekirjan**&gt;**Rekisteröintityypit**&gt;**Rekisteröintityypit** sivun voi luoda ja hallita tyyppien rekisteröinti toimittajille, asiakkaille, työntekijöille ja oikeussubjektien eri maissa ja alueilla.
+Tässä ohjeaiheessa on tietoja rekisteröintitunnuksien määrittämisestä ja käyttämisestä.
+
+Monilla mailla ja alueilla on eri säädökset ja vaatimukset rekisteröintinumeroiden tai -tunnusten tallentamiseen. Tässä aiheessa on yleiskatsaus tuettujen rekisteröintityyppien tarvittavista asetuksista ja käsittelystä, kun osapuolet ovat eri Euroopan maissa/alueilla. Kaikilla mailla/alueilla on omat vaatimukset tuesta erilaisille maakohtaisille toiminnoille, jotka liittyvät eri valtion virastojen antamiin rekisterinumeroihin. Esimerkkejä rekisterinumeroista ovat verovelvollisen tunnistenumero (TIN), henkilötunnus (SSN) ja Euroopan ALV-tunnus (EU VAT ID). Tämä toiminto tarjoaa yhtenäisen kehyksen kaikille maille kaikilla alueilla ottaen huomioon maakohtaiset vaatimukset joissakin Euroopan maissa. Seuraavissa osissa kuvataan rekisteröintitunnusten määrittämisessä ja käsittelyssä käytettävää yleistä tiedonkulkua.
+
+## <a name="registration-type-creation"></a>Rekisteröintityypin luominen
+Ennen rekisteröintitunnuksen määrittämistä on määritettävä tyypit erilaisille osapuoleen liittyville rekisteröintinumeroille. Siirry **Organisaation hallinta** &gt; **Yleinen osoitekirja** &gt; **Rekisteröintityypit** &gt; **Rekisteröintityypit** -sivun luodaksesi ja hallitaksesi rekisteröintityyppejä toimittajille, asiakkaille, työntekijöille ja yrityksille eri maissa/alueilla.
 
 |Kenttä                 |kuvaus      |
 |------------------------------|----------------------------|                                                                           
 | Nimi                | Rekisteröintityypin nimi. |                                                                           
 | kuvaus         | Rekisteröintityypin kuvaus. |
 | Maa/alue      | Maan/alueen yksilöivä tunnus.|
-| Veroviranomainen       | Veroviranomainen, joka liittyy rekisteröinnin tyyppi.|
-| Rajoitettu:       | Rajoitus, joka koskee ALV-rekisteröinnin tyyppi laji: ei mitään, henkilö, organisaatio.|
-| Muoto              | Rekisteröintityypin vahvistus muoto.|
-| Voidaan päivittää      | Määritetään Rekisteröintityypin rekisterinumero voi päivittää sen jälkeen, kun se on kirjoitettu.|
-| Yksilöivä              | Määritetään Rekisteröintityypin rekisterinumero on yksilöllinen. |
-| Ensisijainen maalle | Osapuoli on liitetty yksi tai useita osoitteita erityisesti maan ja rekisteröinti tunnus kelpaa kaikki osoitteet, jos ensisijainen maan on nimettävä yksi osoite. Ensisijainen voi rekisteröidä vain yhden tunnuksen. Määritetään rekisteröintinumero voi syöttää vain ensisijaisen osoitteen maa. |
+| Veroviranomainen       | Veroviranomainen, joka liittyy rekisteröinnin tyyppiin.|
+| Rajoitettu:       | Rajoitus, joka koskee verorekisteröinnin tyyppejä Ei mitään, Henkilö ja Organisaatio.|
+| Muoto              | Rekisteröintityypin vahvistusmuoto.|
+| Voidaan päivittää      | Määrittää, voiko rekisteröintityypin rekisteröintinumeron päivittää syöttämisen jälkeen.|
+| Yksilöivä              | Määrittää, onko rekisteröintityypin rekisterinumero on yksilöllinen. |
+| Ensisijainen maalle | Jos osapuoleen on liitetty yksi tai useita osoitteita tietyssä maassa ja rekisteröintitunnus kelpaa kaikkiin näihin osoitteisiin, tälle maalle on nimettävä yksi osoite ensisijaiseksi. Voit rekisteröidä vain yhden tunnuksen ensisijaiseksi. Määrittää, voiko rekisteröintinumeron syöttää vain ensisijaiselle maan osoitteelle. |
 
-## <a name="assign-a-registration-type-to-a-registration-category"></a>Määritä rekisteröinti luokkaan rekisteröinti
-Rekisteröinti luokka on hyväksytty avulla erityisesti maan vero-, tulli- ja muita tarkoituksia varten maa rekisteröinti tunnus. Tämän luokan määrittää kelpoisuussääntöjä erityisesti rekisteröinti tunnus (mukaan lukien tarkistusnumeroa jne.) ja osallisuuden Tunnuksella erilaisia raportteja. Sivulla **organisaation hallinta**&gt;**yleisen osoitekirjan**&gt;**Rekisteröintityypit**&gt;**rekisteröinti luokkiin** määrittäminen tietyn maan Rekisteröintityypin tuettu rekisteröinti luokkaan.
+## <a name="assign-a-registration-type-to-a-registration-category"></a>Määritä rekisteröintityyppi rekisteröintiluokkaan
+Rekisteröintiluokka on maan/alueen rekisteröintitunnus, joka on hyväksytty tietyssä maassa vero-, tulli- ja muita tarkoituksia varten. Tämä luokka määrittää kelpoisuussääntöjä tietylle rekisteröintitunnukselle (mukaan lukien tarkistusnumerot jne.) ja rekisteritunnuksen sisällyttämisen erilaisiin raportteihin. Sivulla **Organisaation hallinta** &gt; **Yleinen osoitekirja** &gt; **Rekisteröintityypit** &gt; **Rekisteröintiluokat** voit määrittää tietyn maan rekisteröintityypin tuettuun rekisteröintiluokkaan.
 
 | Kenttä            | kuvaus|
 |-----------------------|----------------|
-| Rekisteröintityyppi     | Erityisesti rekisteröinnin Kirjoita maa tai alue.|
-| Rajoitettu:         | Verorekisteröintityyppiä koskee, millaisia rajoituksia: ei mitään, henkilö, organisaatio.|
-| Rekisteröintiluokka | Yksilöllisten rekisteröintien tunnus käyttämällä maassa hyväksytty. Täydellinen luettelo luokkien on tuettu-AX7.1 alla. |
+| Rekisteröintityyppi     | Rekisteröintityyppi tietyssä maassa/alueessa.|
+| Rajoitettu:         | Rajoitus, joka koskee verorekisteröinnin tyyppejä Ei mitään, Henkilö ja Organisaatio.|
+| Rekisteröintiluokka | Yksilöllinen rekisteröintitunnus, joka on hyväksytty käyttöön kyseisessä maassa. Alla on täydellinen luettelo AX7.1-luokista. |
 
-## <a name="enter-registration-ids-for-global-address-book-records"></a>Kirjoita yleisen osoitekirjan tietueiden rekisteröinti tunnukset
-Microsoft Dynamics-365 työvaiheiden yleisen osoitteiston (yleiseen OSOITEKIRJAAN) sisältää konsolidoidun asiakkaiden, toimittajien, yhteystiedot, liikesuhteet ja oikeussubjektien osoitetietoja. Lisätietoja saat [yleisen osoitekirjan yleistä](/dynamics365/operations/organization-administration/overview-global-address-book). Osapuolitietueet, jotka on tallennettu yleisessä osoitekirjassa voi sisältää osoitteen yksi tai useita tietueita. Näitä osoitteita käytetään eri tarkoituksiin, esimerkiksi laskutukseen tai toimitukseen. Voit määrittää asiakkaat, toimittajat, työntekijät ja oikeussubjektien osoitetietoja rekisteröinti tunnukset. Tallentaa (oikeushenkilö, toimittaja, asiakas, työntekijä) osapuoli, jolle haluat syöttää tunnus ja valitse sitten Etsi **rekisteröinti tunnukset** liittyvien osapuolten, oikeushenkilö, toimittaja, asiakas, työntekijä Avaa lomakkeen **osoitteiden hallinta** sivulla. - **ALV-rekisteröinnin** -välilehdessä **Lisää**, ja kirjoita seuraavat tiedot tietoja rekisteröinti on.
+## <a name="enter-registration-ids-for-global-address-book-records"></a>Kirjoita yleisen osoitekirjan tietueiden rekisteröintitunnukset
+Microsoft Dynamics 365 for Operationsin yleinen osoitekirja sisältää konsolidoidut osoitetiedot asiakkaille, toimittajille, yhteyshenkilöille, liikesuhteille ja yrityksille. Lisätietoja saat ohjeaiheesta [Yleisen osoitekirjan yleiskatsaus](/dynamics365/operations/organization-administration/overview-global-address-book). Osapuolen tietueet, jotka on tallennettu yleiseen osoitekirjaan, voivat sisältää yhden tai useampia osoitetietueita. Näitä osoitteita käytetään eri tarkoituksiin, esimerkiksi laskutukseen tai toimitukseen. Voit määrittää rekisteröintitunnukset asiakkaiden, toimittajien, työntekijöiden ja oikeussubjektien osoitetiedoille. Etsi osapuolen (oikeushenkilö, toimittaja, asiakas, työntekijä) tietue, jolle haluat syöttää rekisteritunnuksen ja valitse sitten **Rekisteröintitunnukset** oikeushenkilöön, toimittajaan, asiakkaaseen tai työntekijään liittyvässä lomakkeessa avataksesi **Osoitteiden hallinta** -sivun. Valitse **Verorekisteröinti**-välilehdessä **Lisää** ja kirjoita seuraavat tiedot rekisteröintitunnuksesta.
 
 |Kenttä                |kuvaus                                                |
 |---------------------|-----------------------------------------------------------|
-| Rekisteröintityyppi   | Rekisteröintityypin valitun maan/alueen.     |
-| Rekisteröintinumero | Osapuoli on rekisteröinti.                                |
-| kuvaus         | Kuvaus rekisterinumero.               |
-| Osa             | Lisätietoja rekisterinumero. |
-| Myöntäjätaho      | Viranomainen, jolle on annettu rekisteröintinumero.        |
-| Luontipäivämäärä         | Rekisterinumero annettu päivämäärä.              |
-| Voimassa           | Rekisterinumero voimaantulopäivä.           |
-| Vanhentuminen          | Rekisterinumero vanhentumispäivämäärä.          |
+| Rekisteröintityyppi   | Rekisteröintityyppi valitussa maassa/alueessa.     |
+| Rekisteröintinumero | Osapuolen rekisteröintitunnus.                                |
+| kuvaus         | Rekisteröintinumeron kuvaus.               |
+| Osa             | Lisätietoja rekisteröintinumerosta. |
+| Myöntäjätaho      | Rekisteröintinumeron myöntävä veroviranomainen.        |
+| Luontipäivämäärä         | Rekisteröintinumeron luontipäivä.              |
+| Voimassa           | Rekisteröintinumeron voimaantulopäivä.           |
+| Vanhentuminen          | Rekisteröintinumeron vanhentumispäivä.          |
 
 > [!NOTE]
-> Y-tunnuksen oikeushenkilö, toimittaja, asiakas voi valita rekisteröintiä vero ALV-tunnukseen liittyvää ja osapuolen menettelyyn.
+> Yrityksen, toimittajan tai asiakkaan verovapautusnumero voidaan valita ALV-tunnukseen liittyvistä rekisteröintitunnuksista ja määrittää osapuolelle.
 
-## <a name="search-for-records-by-registration-id"></a>Hae tietueita-Tunnuksella
-Rekisteröinti-tunnuksen perusteella osapuolten tietueiden etsiminen on käytettävissä osapuoli, oikeushenkilö, toimittaja, asiakas ja työntekijä liittyvissä lomakkeissa. Valitse **Tunnuksella haku** avaamiseen **Tunnuksella hakuehdot** sivun. Määritä hakuehdot ja valitse **Etsi**. Järjestelmä näyttää valitut tietueet yleisen osoitekirjan ja osapuolitietueen liittyvät tyypit.
+## <a name="search-for-records-by-registration-id"></a>Hae tietueita rekisteröintitunnuksella
+Etsi osapuolen tietueita perustuen osapuolen, yrityksen, toimittajan, asiakkaan tai työntekijän lomakkeiden rekisteröintitunnukseen. Valitse **Rekisteröintitunnuksen haku** avataksesi **Rekisteröintitunnuksen hakuehdot** -sivun. Määritä hakuehdot ja valitse **Etsi**. Järjestelmä näyttää valitut tietueet yleisestä osoitekirjasta sekä osapuolitietueiden liittyvät tyypit.
 
-## <a name="supported-registration-categories"></a>Tuetut rekisteröinti luokkiin
-Seuraavassa taulukossa on lueteltu Dynamics 365 toimintojen tuetut rekisteröinti tiedostotyypeistä. Jos osaat käyttää Microsoft Dynamics AX 2012-kenttien tunnusten rekisteröintiä, tässä taulukossa yhdistää nämä kentät myös toimintojen rekisteröinti luokkiin Dynamics-365.
+## <a name="supported-registration-categories"></a>Tuetut rekisteröintiluokat
+Seuraavassa taulukossa on lueteltu Dynamics 365 for Operationsissa tuetut rekisteröintityypit. Jos osaat käyttää Microsoft Dynamics AX 2012 -kenttiä rekisteröintitunnuksille, tässä taulukossa myös yhdistetään nämä kentät myös Dynamics 365 for Operationsin rekisteröintiluokkiin.
 
-| Toimintojen rekisteröinti luokkaan Dynamics 365         |Maa/alue  | Dynamics AX 2012: n termi/kenttä|
+| Dynamics 365 for Operations -rekisteröintiluokka         |Maa/alue  | Dynamics AX 2012:n termi/kenttä|
 |---------------------------------------------------------------|---------------------|---------------------------------|
-| ALV-tunnus                                                        | Kaikki maat, Euroopan unionin (EU)|  ALV-numero (lainsäädännölliset Verotunnus AX2012 R3-tyyppi)|
-| Yrityksen tunnus (COID)                                          | Belgia, tsekki Viro Unkari Latvia Liettuan Puolan Sveitsi | Yrityksen numero (EnterpriseNumber)-rekisteröintinumero (RegNum\_W) rekisterinumero (RegNum\_W) rekisterinumero (RegNum\_W) rekisterinumero (RegNum\_W) yrityksen koodi (EnterpriseCode)-rekisteröintinumero (RegNum\_W) UID (lainsäädännölliset UID AX2012 R3-tyyppi) |
-| Sivuliikkeen tunnus                                                     | Belgia            | Sivuliikkeen numeron (BranchNumber)|
-| Spisová-značka (rekisterinumero, myöntävä toimisto-osa) | Tšekin tasavalta     | Lisäkuva numero (CommercialRegisterInsetNumber) pidettäville osoitteessa kaupalliset rekisteröidä kaupparekisteriin (CommercialRegisterSection) (CommercialRegister)-osassa|
+| ALV-tunnus                                                        | Kaikki Euroopan unionin (EU) maat|  Verovapautusnumero (Lainopillinen tyyppi TAX ID kohteessa AX2012 R3)|
+| Yrityksen tunnus (COID)                                          | Belgia Tsekki Viro Unkari Latvia Liettua Puola Sveitsi | Enterprise number (EnterpriseNumber) Registration number (RegNum\_W) Registration number (RegNum\_W) Registration number (RegNum\_W) Registration number (RegNum\_W) Enterprise code (EnterpriseCode) Registration number (RegNum\_W) UID (Legislative type UID in AX2012 R3) |
+| Sivuliikkeen tunnus                                                     | Belgia            | Sivuliikkeen numero (BranchNumber)|
+| Spisová-značka (rekisterinumero, myöntävä toimisto, osasto) | Tšekin tasavalta     | Lisänumero (CommercialRegisterInsetNumber) Pidetään kaupparekisterissä (CommercialRegister) Kaupparekisterin alue (CommercialRegisterSection)|
 | Tullin asiakastunnus                                           | Suomi | Tullin asiakasnumero (CustomsCustomerNumber\_FI)|
-| INN                                                           | Venäjän federaatio| INN (lainsäädännölliset INN AX2012 R3-tyyppi)|
-| RRC                                                           | Venäjän federaatio| RRC (lainsäädännölliset RRC AX2012 R3-tyyppi)|
-| OKDP                                                          | Venäjän federaatio| OKDP (tyyppi lainsäädännölliset AX2012 R3-OKDP)|
-| OKPO                                                          | Venäjän federaatio| OKPO (tyyppi lainsäädännölliset AX2012 R3-OKPO)|
-| RCOAD                                                         | Venäjän federaatio| RCOAD (tyyppi lainsäädännölliset AX2012 R3-RCOAD)|
-| OGRN                                                          | Venäjän federaatio| OGRN (tyyppi lainsäädännölliset AX2012 R3-OGRN) |
-| SNILS                                                         | Venäjän federaatio| SNILS (tyyppi lainsäädännölliset AX2012 R3-SNILS)|
-| CIFTS                                                         | Venäjän federaatio| CIFTS (tyyppi lainsäädännölliset AX2012 R3-CIFTS)|
+| INN                                                           | Venäjän federaatio| INN (Lainopillinen tyyppi INN kohteessa AX2012 R3)|
+| RRC                                                           | Venäjän federaatio| RRC (Lainopillinen tyyppi RRC kohteessa AX2012 R3)|
+| OKDP                                                          | Venäjän federaatio| OKDP (Lainopillinen tyyppi OKDP kohteessa AX2012 R3)|
+| OKPO                                                          | Venäjän federaatio| OKPO (Lainopillinen tyyppi OKPO kohteessa AX2012 R3)|
+| RCOAD                                                         | Venäjän federaatio| RCOAD (Lainopillinen tyyppi RCOAD kohteessa AX2012 R3)|
+| OGRN                                                          | Venäjän federaatio| OGRN (Lainopillinen tyyppi OGRN kohteessa AX2012 R3) |
+| SNILS                                                         | Venäjän federaatio| SNILS (Lainopillinen tyyppi SNILS kohteessa AX2012 R3)|
+| CIFTS                                                         | Venäjän federaatio| CIFTS (Lainopillinen tyyppi CIFTS kohteessa AX2012 R3)|
 
-Lisätietoja käsittelyssä tarvittavat edellytykset, mukaan lukien rekisteröinti tunnukset on tehtävä seuraavat tallenteet ALV-tunnuksen Lifecycle Services (LCS):
+Lisätietoja rekisteröintitunnusten käsittelystä mukaan lukien vaaditut edellytykset löydät seuraavista Lifecycle Services (LCS) -palvelusta ALV-tunnuksen tehtävätallenteista:
 
 -   Aseta ALV-tunnus
 -   Toimittajan ALV-tunnuksen rekisteröinti
 -    Osaouolen haku ALV-tunnuksen avulla
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Numerosarjan esittely
-description: "Luo päätietojen tietueiden ja tapahtuman tiedot, jotka vaativat tunnukset luettavissa, yksilöllisiä tunnuksia käytetään numerosarjat-sovelluksessa Microsoft Dynamics-365 operaatioille. Tunnisteen vaativaa päätiedon tietuetta tai tapahtumatietuetta kutsutaan nimellä <em>viite</em>."
+description: "Microsoft Dynamics 365 for Operationsin numerosarjoja käytetään luettavien, yksilöllisten tunnisteiden luomiseen päätietojen tietueille ja tapahtumatietueille, jotka edellyttävät tunnisteita. Tunnisteen vaativaa päätiedon tietuetta tai tapahtumatietuetta kutsutaan nimellä <em>viite</em>."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="number-sequence-overview"></a>Numerosarjan esittely
 
-Luo päätietojen tietueiden ja tapahtuman tiedot, jotka vaativat tunnukset luettavissa, yksilöllisiä tunnuksia käytetään numerosarjat-sovelluksessa Microsoft Dynamics-365 operaatioille. Tunnisteen vaativaa päätiedon tietuetta tai tapahtumatietuetta kutsutaan nimellä <em>viite</em>.
+[!include[banner](../includes/banner.md)]
 
-Ennen kuin voit luoda uusia tietueita viittauksia työvaiheiden Microsoft Dynamics-365, Määritä numerosarja ja viitteeseen liitettävä. Suosittelemme, että määrität numerosarjat **Organisaation hallinto** -sivujen avulla. Jos moduulikohtaiset asetukset ovat pakollisia, voit käyttää moduulin parametrisivua määrittämään moduulin numerosarjan viitteitä. Voit määrittää esimerkiksi kohdissa **Myyntireskontra** ja **Ostoreskontra** numerosarjaryhmiä, joilla kohdistetaan tietyt numerosarjat tietyille asiakkaille tai toimittajille. Kun määrität numerosarjan, sinun on määritettävä alue, joka määrittää, mitkä organisaatio käyttää numerosarjaa. Vaikutusalue voi olla **Jaettu**, **Yritys**, **Oikeushenkilö** tai **Toimintayksikkö**. Vieläkin tarkempia numerosarjoja saadaan yhdistämällä vaikutusalueet **Oikeushenkilö** ja **Yritys** sekä **Kirjanpidon vuosikalenterin kausi**. Numerosarjan muodot koostuvat segmenteistä. Numerosarjat, joiden vaikutusalue on muu kuin **Jaettu **, voivat sisältää osia, jotka vastaavat vaikutusaluetta. Esimerkiksi numerosarja, jonka vaikutusalue on **Oikeushenkilö**, voi sisältää yrityssegmentin. Liittämällä vaikutusaluesegmentin numerosarjan muodossa voit tunnistaa tietyn tietueen vaikutusalueen katsomalla sen numero. Segmenttien, jotka vastaavat vaikutusalueita, numerosarjamuodot voivat sisältää **Vakio** ja **Aakkosnumeerinen**-segmentit. **Vakio** -segmentti sisältää numeroita, kirjaimia tai symboleja, jotka eivät muutu. **Aakkosnumeerinen**-segmentti sisältää joukon kirjaimia tai numeroita, jotka lisääntyvät aina, kun numeroa käytetään. Käyttää ristikkomerkkiä (\#) kasvavat numerot ja et-merkki (&) edustamaan kirjaimia kasvavat. Esimerkiksi format \#\#\#\#\#\_Luo sarja 00001 2017\_2017, 00002\_2017 ja niin edelleen.
+
+Microsoft Dynamics 365 for Operationsin numerosarjoja käytetään luettavien, yksilöllisten tunnisteiden luomiseen päätietojen tietueille ja tapahtumatietueille, jotka edellyttävät tunnisteita. Tunnisteen vaativaa päätiedon tietuetta tai tapahtumatietuetta kutsutaan nimellä <em>viite</em>.
+
+Ennen kuin voit luoda Microsoft Dynamics 365 for Operationsin viitteelle uusia tietueita, määritä numerosarja ja liitä se viitteeseen. Suosittelemme, että määrität numerosarjat **Organisaation hallinto** -sivujen avulla. Jos moduulikohtaiset asetukset ovat pakollisia, voit käyttää moduulin parametrisivua määrittämään moduulin numerosarjan viitteitä. Voit määrittää esimerkiksi kohdissa **Myyntireskontra** ja **Ostoreskontra** numerosarjaryhmiä, joilla kohdistetaan tietyt numerosarjat tietyille asiakkaille tai toimittajille. Kun määrität numerosarjan, sinun on määritettävä alue, joka määrittää, mitkä organisaatio käyttää numerosarjaa. Vaikutusalue voi olla **Jaettu**, **Yritys**, **Oikeushenkilö** tai **Toimintayksikkö**. Vieläkin tarkempia numerosarjoja saadaan yhdistämällä vaikutusalueet **Oikeushenkilö** ja **Yritys** sekä **Kirjanpidon vuosikalenterin kausi**. Numerosarjan muodot koostuvat segmenteistä. Numerosarjat, joiden vaikutusalue on muu kuin **Jaettu **, voivat sisältää osia, jotka vastaavat vaikutusaluetta. Esimerkiksi numerosarja, jonka vaikutusalue on **Oikeushenkilö**, voi sisältää yrityssegmentin. Liittämällä vaikutusaluesegmentin numerosarjan muodossa voit tunnistaa tietyn tietueen vaikutusalueen katsomalla sen numero. Segmenttien, jotka vastaavat vaikutusalueita, numerosarjamuodot voivat sisältää **Vakio** ja **Aakkosnumeerinen**-segmentit. **Vakio** -segmentti sisältää numeroita, kirjaimia tai symboleja, jotka eivät muutu. **Aakkosnumeerinen**-segmentti sisältää joukon kirjaimia tai numeroita, jotka lisääntyvät aina, kun numeroa käytetään. Käyttää ristikkomerkkiä (\#) edustamaan kasvavia numeroita ja et-merkkiä (&) edustamaan kasvavia kirjaimia. Esimerkiksi muodon \#\#\#\#\#\_2017 avulla luodaan sarja 00001\_2017, 00002\_2017 jne.
 Numerosarjaesimerkit
 ------------------------
 
@@ -73,6 +76,8 @@ Numerosarjat voivat olla jatkuvia tai ei-jatkuvia. Jatkuva numerosarja ei ohita 
 ### <a name="automatic-cleanup-of-number-sequences"></a>Automaattinen numerosarjojen puhdistus
 
 Järjestelmä ei voi kierrättää numeroita automaattisesti jatkuvia numerosarjoja varten sähkökatkoksen, sovellusvirheen tai muun odottamattoman vian takia. Voit suorittaa vapautusprosessi manuaalisesti tai automaattisesti palauttaaksesi menetetyt numerot. Mieti palvelimen käyttö puhdistusprosessin suunnittelussa. On suositeltavaa suorittaa vapautus erätyönä hiljaisena aikana.
+
+
 
 
 

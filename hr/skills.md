@@ -39,18 +39,18 @@ Seurattavia osaamisalueita ovat esimerkiksi seuraavat:
 Ennen kuin voit määrittää osaamisalueen henkilölle tai työlle, luoda osaamisaluekartoitushaun tai luoda osaamisprofiilin, osaamisalueiden tiedot on lisättävä **Osaamisalueet**-sivulle. Voit valita jokaiselle osaamisalueelle osaamisaluetyypin ja arviointimallin.
 
 ## <a name="rating-models"></a>Arviointimallit
-Arviointimallien avulla voit arvioida henkilön osaamisalueen todellisen tason, tason joka hänen tulee saavuttaa tai tason, joka tarvitaan työssä. Voit kirjoittaa arviointimallille enintään 10 tasoa.  Arviointimallin jokaiselle tasolle on määritetty kerroin.  Kertoimen arvo voidaan normalisoida taitoja, jotka käyttävät eri arviointimallit tulokset.  Kertoimen on oltava luku väliltä 0-9 ja kunkin tason on oltava yksilöllinen tekijä.  Tasoja, joilla on korkeammat kertoimen arvot, painotetaan enemmän arviointimallissa.
+Arviointimallien avulla voit arvioida henkilön osaamisalueen todellisen tason, tason joka hänen tulee saavuttaa tai tason, joka tarvitaan työssä. Voit kirjoittaa arviointimallille enintään 10 tasoa.  Kullekin arviointimallin tasolle määritetään kerroin.  Kertoimen arvoa käytetään eri luokitusmalleja käyttävien osaamisalueiden normalisointiin.  Kertoimen on oltava numero väliltä 0-9, ja kullakin tasolla on oltava yksilöllinen kerroin.  Tasoja, joilla on korkeammat kertoimen arvot, painotetaan enemmän arviointimallissa.
 
 ## <a name="specify-job-skills"></a>Määritä työn osaamisalueet
-Kun syötät tietoja työn, voit määrittää osaamisalueista, jotka henkilön on oltava työn vaatiman työn suorittamiseen.  Lisäksi voit määrittää haluttu taso jokaiselle osaamisalueelle osaamisalueen tärkeystaso. Eri töissä voidaan edellyttää saman osaamisalueen eri tärkeystasoja.
+Kun syötät tietoja työstä, voit määrittää osaamisalueita joita henkilöllä tulisi olla, ennen kuin hän voi toimia kyseisessä työssä.  Voi lisäksi määrittää kullekin osaamisalueelle toivotun tason sekä osaamisalueen tärkeystason. Eri töissä voidaan edellyttää saman osaamisalueen eri tärkeystasoja.
 
 ## <a name="enter-skills-for-workers-applicants-or-contacts"></a>Kirjoita työntekijöiden, hakijoiden tai yhteyshenkilöiden osaamisalueet.
 Määritä tavoite- tai todelliset osaamisalueet työntekijöille, hakijoille tai yhteyshenkilöille. Tavoitetaito on taito, jonka henkilö aikoo saavuttavansa. Todellisella osaamisalueella tarkoitetaan osaamista, jonka henkilöllä tällä hetkellä on.
 
 ## <a name="skill-mapping-and-skill-mapping-profiles"></a> Osaamisaluekartoitukset ja kartoitusprofiilit
-Voit luoda osaamisaluekartoitushaun työntekijä, hakija tai yhteyshenkilö, joka on pätevä suorittamaan tehtävän tietyn lajin etsimiseen. Osaamisaluekartoituksen hakuja ulkoasun eri taidot, koulutus, todistukset, luottamus- ja kohdata ja tuottaa tuloksia, jotka vastaavat ehdot.  Voi esimerkiksi olla hyödyllistä tietää, mitä organisaation työntekijöiden ansainnut niiden CPA.
+Voit luoda osaamisaluekartoitushaun ja etsiä työntekijän, hakijan tai yhteyshenkilön, jolla on tietyntyyppiseen tehtävään tarvittava pätevyys. Osaamisaluekartoitushaku etsii osaamisalueita, koulutusta, todistuksia, luottamustehtäviä ja projektikokemusta ja palauttaa annettuja ehtoja vastaavat tulokset.  Voi esimerkiksi olla hyödyllistä tietää organisaation työntekijöiden koulutustaso.
 
-Osaamisaluekartoitus-profiilit mahdollistavat nykyisten työntekijöiden tai ehdokkaiden kanssa pätevyydet vastaavat yrityksen tarpeita.  Voit esimerkiksi luoda avoin toimi organisaation profiilin Osaamisaluekartoitus. Luomalla profiilin tietylle työlle ja kopioimalla työn osaamisalueet, koulutuksen ja todistukset profiiliin voit nopeasti hakea työntekijöitä, hakijoita ja yhteyshenkilöitä, jotka vastaavat yhtä tai useampaa profiilissa määritettyä ehtoa, ja tarkastella sellaisten hakijoiden luetteloa, joiden osaamisalueet lähimmin vastaavat työn vaatimuksia.
+Osaamisaluekartoitusprofiilien avulla voit etsiä nykyisiä työntekijöitä tai hakijoita, joiden pätevyys vastaa suoraan liiketoiminnan tarpeita.  Voit esimerkiksi luoda osaamisaluekartoitusprofiileja organisaatiossa avoimena olevia toimia varten. Luomalla profiilin tietylle työlle ja kopioimalla työn osaamisalueet, koulutuksen ja todistukset profiiliin voit nopeasti hakea työntekijöitä, hakijoita ja yhteyshenkilöitä, jotka vastaavat yhtä tai useampaa profiilissa määritettyä ehtoa, ja tarkastella sellaisten hakijoiden luetteloa, joiden osaamisalueet lähimmin vastaavat työn vaatimuksia.
 
 <table>
 <thead>
@@ -79,6 +79,6 @@ Luomalla osaamisprofiilianalyysin voit tarkastella luetteloa työntekijän, haki
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Human resources](index.md)
+[Henkilöstöhallinto](index.md)
 
 

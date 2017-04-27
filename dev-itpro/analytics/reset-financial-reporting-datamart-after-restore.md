@@ -1,6 +1,6 @@
 ---
-title: "Palauta tiedot taloudellisen raportoinnin mart jälkeen tietokannan palauttaminen"
-description: "Tässä aiheessa kuvataan, miten Microsoft Dynamics-365 toimintoja tietokannan palautuksen jälkeen Palauta taloudellisen raportoinnin tietojen mart."
+title: "Talousraportoinnin tietovaraston palauttaminen tietokannan palauttamisen jälkeen"
+description: "Tässä aiheessa kerrotaan, miten talousraportoinnin tietovaraston palautetaan Microsoft Dynamics 365 for Operations -tietokannan palauttamisen jälkeen."
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-08 16 - 20 - 13
@@ -24,86 +24,86 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>Palauta tiedot taloudellisen raportoinnin mart jälkeen tietokannan palauttaminen
+# <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>Talousraportoinnin tietovaraston palauttaminen tietokannan palauttamisen jälkeen
 
-Tässä aiheessa kuvataan, miten Microsoft Dynamics-365 toimintoja tietokannan palautuksen jälkeen Palauta taloudellisen raportoinnin tietojen mart. 
+Tässä aiheessa kerrotaan, miten talousraportoinnin tietovaraston palautetaan Microsoft Dynamics 365 for Operations -tietokannan palauttamisen jälkeen. 
 
-On useita skenaarioita, joissa kannattaa käyttää Dynamics 365 toimintoja tietokannan palauttaminen varmuuskopiosta tai kopioida tietokannasta toiseen ympäristöön. Kun tämä tapahtuu, sinun on myös tarpeelliset toimenpiteet sen varmistamiseksi, taloudellisen raportoinnin tietojen mart oikein käyttää palautettua Dynamics 365 tietokannan toiminnot toimi. Jos sinulla on kysyttävää palauttaminen taloudellisen raportoinnin tietojen mart syystä ulkopuolella Dynamics-365 toimintoja tietokannan palauttaminen, katso [palauttaminen Management Reporter tietojen mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) lisätietoja. Huomaa, että tämän prosessin vaiheissa tuetaan toiminnolle Dynamics 365 päivänä 2016 release (App build 7.0.1265.23014 ja taloudellisen raportoinnin build 7.0.10000.4) ja uudempia versioita. Jos työvaiheiden 365 Dynamics aiemman version, ota yhteyttä tukiryhmäämme.
+Dynamics 365 for Operations -tietokanta voidaan joutua palauttamaan useissa eri tilanteissa, kuten esimerkiksi tietokannan varmuuskopioinnin tai toisesta ympäristöstä kopioinnin yhteydessä. Tällöin on noudatettava tiettyjä vaiheita, joiden avulla varmistetaan, että talousraportoinnin tietovarasto käyttää palautettua Dynamics 365 for Operations -tietokantaa oikein. Lisätietoja talousraportoinnin tietovaraston palauttamisesta, kun palauttamisen syy ei ole Dynamics 365 for Operations -tietokannan palauttaminen, on kohdassa [Management Reporter -tietovaraston palauttaminen](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/). Ota huomioon, että tämän prosessin vaiheita tuetaan Dynamics 365 for Operations -ohjelman toukokuu 2016 -versiossa (sovelluksen versio 7.0.1265.23014 ja talousraportoinnin versio 7.0.10000.4) ja uudemmissa versioissa. Jos käytössä on vanhempi Dynamics 365 for Operations -versio, ota yhteys tukiryhmään.
 
-## <a name="export-report-definitions"></a>Viedä raporttimääritykset
-Vie ensin raportti malleja sijaitsee raportin rakennenäkymässä seuraavasti:
+## <a name="export-report-definitions"></a>Raporttimääritysten vieminen
+Vie aluksi Report Designerin raporttirakenteet seuraavasti:
 
-1.  Siirry raportin, Suunnittelija **yrityksen**&gt;**rakenneosan ryhmiä**.
-2.  Rakenneosan viedä, ja valitse ryhmä **Vie**. **Huomautus:** Dynamics 365 operaatioille, tuetaan vain yksi rakenneosa ryhmä, **oletus**.
-3.  Valitse raporttimääritykset vieminen:
+1.  Siirry Report Designerissa kohtaan **Yritys** &gt; **Rakenneosaryhmät**.
+2.  Valitse vietävä rakenneosaryhmä ja valitse sitten **Vie**. **Huomautus:** Dynamics 365 for Operations tukee vain yhtä **oletusarvoista** rakenneosaryhmää.
+3.  Valitse vietävät raporttimääritykset seuraavasti:
     -   Voit viedä kaikki raporttien määritykset ja liittyvät rakenneosat valitsemalla **Valitse kaikki**.
-    -   Voit viedä tiettyjä raportti-, rivi-, sarake-, puu- ja dimensioyhdistelmiä valitsemalla kyseisen välilehden ja valitsemalla sitten vietävät kohteet. Voit valita useita välilehden kohteita pitämällä Ctrl-näppäintä alhaalla. Raporttien vieminen valittaessa valitaan liittyvät rivit, sarakkeet, puut ja Dimensioyhdistelmät.
+    -   Voit viedä tiettyjä raportti-, rivi-, sarake-, puu- ja dimensioyhdistelmiä valitsemalla kyseisen välilehden ja valitsemalla sitten vietävät kohteet. Voit valita useita välilehden kohteita pitämällä Ctrl-näppäintä alhaalla. Kun valitset vietävät raportit, liittyvät rivi-, sarake-, puu- ja dimensioyhdistelmät valitaan myös.
 
 4.  Valitse **Vie**.
-5.  Kirjoita tiedostonimi ja valitse turvalliseen paikkaan, johon haluat tallentaa viedyn raporttimäärityksiä.
-6.  Click **Save**.
+5.  Anna tiedostonimi ja valitse turvallinen paikka, jonne viedyt raporttimääritykset tallennetaan.
+6.  Valitse **Tallenna**.
 
-Tiedoston voi kopioida tai ladata turvalliseen paikkaan, jolloin tuodaan myöhemmin eri ympäristössä. Tietoja Microsoftin Azure-tallennustilan tiliin löytyvät [siirtää tietoja AzCopy Command-Line-apuohjelman kanssa](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Huomautus:** Microsoft ei tarjoa varastointi tili Dynamics-365 osana toimintojen sopimuksen. Osta tallennustilaa tiliä tai käyttää erillistä Azure tilauksesta varastointi. **Tärkeää:** olla tietoinen D-aseman Azure virtuaalisten laitteiden toimintaa. Älä säilytä viety rakenneosan ryhmiä tähän pysyvästi. Saat lisätietoja väliaikainen asemien [väliaikainen asema-Windows Azure virtuaalikoneet ymmärtäminen](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+Tiedosto voidaan kopioida tai ladata turvalliseen paikkaan. Tämän jälkeen se voidaan tuoda toiseen ympäristöön haluttuna ajankohtana. Lisätietoja Microsoft Azure -tallennustilistä on kohdassa [Tietojen siirtäminen AzCopy-komentorivin apuohjelman avulla](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Huomautus:** Microsoft ei tarjoa tallennustiliä Dynamics 365 for Operations -sopimuksen osana. Osta tallennustili tai käytä erillisen Azure-tilauksen tallennustiliä. **Tärkeää:** Ota huomioon Azuren virtuaalikoneiden D-aseman toiminta. Älä säilytä vietyjä rakenneosaryhmiä täällä pysyvästi. Lisätietoja väliaikaisista asemista on kohdassa [Tietoja Windows Azuren virtuaalikoneiden väliaikaisesta asemasta](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
-## <a name="stop-services"></a>Pysäytä palvelut
-Etätyöpöydän avulla voit yhdistää kaikki ympäristön tietokoneet ja lopettaa avulla services.msc seuraavat Windows-palvelut:
+## <a name="stop-services"></a>Palveluiden pysäyttäminen
+Muodosta yhteys kaikkiin ympäristön tietokoneisiin etätyöpöydän avulla. Pysäytä seuraavat Windows-palvelut services.msc:n avulla:
 
--   World wide web-julkaisupalvelu (kaikissa tietokoneissa AOS)
--   Toimintojen erän hallinta-palvelun (ja yksityisen AOS-tietokoneiden vain) Microsoft Dynamics-365
--   Reporter 2012 prosessi hallintapalvelu (tietokoneissa BI vain)
+-   WWW-julkaisupalvelu (kaikissa AOS-tietokoneissa)
+-   Microsoft Dynamics 365 for Operations -ohjelman erähallintapalvelu (vain muissa kuin yksityisissä AOS-tietokoneissa)
+-   Management Reporter 2012 Process Service (vain BI-tietokoneissa)
 
-Nämä palvelut on avoimia yhteyksiä tietokannan toimintoja Dynamics-365.
+Näillä palveluilla on avoimet yhteydet Dynamics 365 for Operations -tietokantaan.
 
 ## <a name="reset"></a>Palauta
-#### <a name="locate-the-latest-dataupgradezip-package"></a>Etsi uusimmat DataUpgrade.zip-paketti
+#### <a name="locate-the-latest-dataupgradezip-package"></a>Uusimman DataUpgrade.zip-paketin etsiminen
 
-Etsi ajo-ohjeet löytyvät käyttäen uusimman DataUpgrade.zip paketti [lataa komentosarjan DataUpgrade.zip](..\migration-upgrade\upgrade-data-to-latest-update.md). Ohjeita kerrotaan, kuinka Etsi tiedot päivitetty paketti ympäristön oikea versio.
+Etsi uusin DataUpgrade.zip-paketti kohdan [DataUpgrade.zip-komentosarjan lataaminen](..\migration-upgrade\upgrade-data-to-latest-update.md) ohjeilla. Ohjeissa kerrotaan, miten löydät tietojen päivityksen paketin oikean version ympäristöäsi varten.
 
-#### <a name="execute-scripts-against-dynamics-365-for-operations-database"></a>Suorittaa toimintoja tietokannan komentosarjoja vastaan Dynamics 365
+#### <a name="execute-scripts-against-dynamics-365-for-operations-database"></a>Komentosarjojen suorittaminen Dynamics 365 for Operations -tietokannassa
 
-Suorita seuraavat komentosarjat Dynamics-365 (ei vastaan taloudellisia raportointitietokannan) tietokannan toimintoja vastaan.
+Suorita seuraavat komentosarjat Dynamics 365 for Operations -tietokannassa (ei talousraportoinnin tietokannassa).
 
--   DataUpgrade.zip\\AosService\\komentosarjojen\\ConfigureAxReportingIntegration.sql
--   DataUpgrade.zip\\AosService\\komentosarjojen\\GrantAzViewChangeTracking.sql
+-   DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql
+-   DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql
 
-Nämä komentosarjat että käyttäjiä, rooleja ja muutosten jäljityksen asetukset ovat oikeat.
+Nämä komentosarjat varmistavat, että käyttäjien, roolien ja muutosten seurannan asetukset on määritetty oikein.
 
-#### <a name="execute-powershell-command-to-reset-database"></a>Suorita PowerShell-komennolla tietokannan palauttaminen
+#### <a name="execute-powershell-command-to-reset-database"></a>PowerShell-komennon suorittaminen tietokannan palauttamista varten
 
-Suorita seuraava komento suoraan tietokoneen AOS-Dynamics 365 operaatioille ja talousraportointi integroinnin palauttaminen:
+Suorita seuraava komento suoraan AOS-tietokoneessa, kun haluat palauttaa Dynamics 365 for Operations -ohjelman ja talousraportoinnin välisen integroinnin asetukset:
 
 1.  Avaa Windows PowerShell järjestelmänvalvojana.
-2.  Suoritus: F:
-3.  Suoritus: cd F:\\MRApplicationService\\MRInstallDirectory
-4.  Suoritus: Import-Module. \\Server\\MRDeploy\\MRDeploy.psd1
-5.  Suoritus: Palauta-DatamartIntegration-muu syy - ReasonDetail "&lt;omiin nollaaminen syy&gt;"
-    -   Sinua pyydetään vahvistamaan "Y" kirjoittamaan.
+2.  Suorita: F:
+3.  Suorita: cd F:\\MRApplicationService\\MRInstallDirectory
+4.  Suorita: Import-Module .\\Server\\MRDeploy\\MRDeploy.psd1
+5.  Suorita: Reset-DatamartIntegration -Reason OTHER -ReasonDetail “&lt;my reason for resetting&gt;”
+    -   Vahvista syöttämällä kirjain Y.
 
 Parametrien selitys:
 
--   Kelvolliset arvot - syy ovat: ylläpito, BADDATA, muut.
--   -ReasonDetail parametri on vapaamuotoinen.
--   Syy ja reasonDetail tallennetaan kaukomittaus/ympäristön seurannassa.
+-   -Reason-parametrin sallitut arvot ovat SERVICING, BADDATA, OTHER.
+-   -ReasonDetail-parametri on vapaatekstikenttä.
+-   Sekä reason että reasonDetail tallennetaan telemetria-/ympäristövalvonnassa.
 
-## <a name="start-services"></a>Käynnistä palvelut
-Käytä services.msc uudelleen palvelut, jotka aiemmin keskeytetty:
+## <a name="start-services"></a>Palveluiden käynnistäminen
+Käynnistä aiemmin pysäyttämäsi palvelut uudelleen services.msc:n avulla:
 
--   World wide web-julkaisupalvelu (kaikissa tietokoneissa AOS)
--   Toimintojen erän hallinta-palvelun (ja yksityisen AOS-tietokoneiden vain) Microsoft Dynamics-365
--   Reporter 2012 prosessi hallintapalvelu (tietokoneissa BI vain)
+-   WWW-julkaisupalvelu (kaikissa AOS-tietokoneissa)
+-   Microsoft Dynamics 365 for Operations -ohjelman erähallintapalvelu (vain muissa kuin yksityisissä AOS-tietokoneissa)
+-   Management Reporter 2012 Process Service (vain BI-tietokoneissa)
 
-## <a name="import-report-definitions"></a>Tuo raporttimääritykset
-Raportti-mallien tuominen Report Designer, että viennin aikana luodun tiedoston käyttäminen:
+## <a name="import-report-definitions"></a>Raporttimääritysten tuominen
+Tuo raporttimallit Report Designerista viennin aikana luotua tiedostoa seuraavasti:
 
-1.  Siirry raportin, Suunnittelija **yrityksen**&gt;**rakenneosan ryhmiä**.
-2.  Rakenneosan viedä, ja valitse ryhmä **Vie**. **Huomautus:** Dynamics 365 operaatioille, tuetaan vain yksi rakenneosa ryhmä, **oletus**.
-3.  Valitse **oletus** lohko ja valitse **tuo**.
-4.  Viety raporttimääritykset sisältävä tiedosto ja valitse **auki**.
+1.  Siirry Report Designerissa kohtaan **Yritys** &gt; **Rakenneosaryhmät**.
+2.  Valitse vietävä rakenneosaryhmä ja valitse sitten **Vie**. **Huomautus:** Dynamics 365 for Operations tukee vain yhtä **oletusarvoista** rakenneosaryhmää.
+3.  Valitse **oletusrakenneosa** ja valitse sitten **Tuo**.
+4.  Valitse viedyt raporttimääritykset sisältävä tiedosto ja valitse sitten **Avaa**.
 5.  Valitse Tuo-valintaikkunassa tuotavat raporttien määritykset.
     -   Voit tuoda kaikki raporttien määritykset ja niitä tukevat rakenneosat valitsemalla **Valitse kaikki**.
     -   Voit tuoda tiettyjä raportti-, rivi-, sarake-, puu- tai dimensioyhdistelmiä valitsemalla tuotavat raportti-, rivi-, sarake-, puu- tai dimensioyhdistelmät.
 
-6.  Click **Import**.
+6.  Valitse **Tuo**.
 
 
 

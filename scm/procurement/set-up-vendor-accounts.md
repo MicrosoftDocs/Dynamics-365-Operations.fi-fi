@@ -1,5 +1,5 @@
 ---
-title: "Toimittajatilien määrittäminen"
+title: Toimittajatilien asettaminen
 description: "Tässä aiheessa kuvataan tiedot, jotka on määritettävä uutta toimittajatiliä luotaessa."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-vendor-accounts"></a>Toimittajatilien määrittäminen
+# <a name="set-up-vendor-accounts"></a>Toimittajatilien asettaminen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä aiheessa kuvataan tiedot, jotka on määritettävä uutta toimittajatiliä luotaessa.
 
@@ -40,7 +43,7 @@ Luodessasi toimittajatilin, syötetään toimittajan tiedot. Näitä tietoja kä
 -   Määritä arvonlisävero, toimitus, lasku ja toimittajan maksutiedot. Oletusarvon mukaan nämä asetukset kopioidaan uusiin toimittajalle luomiisi asiakirjoihin.
 -   Määritä oletusarvoiset taloushallinnon dimensiot, joita käytetään kirjaamaan tapahtumia kirjanpitotileihin automaattisesti toimittajan kanssa.
 
-Toimittajatilien luomisprosessia voi nopeuttaa luomalla malleja. Voit luoda mallin, **toimittaja** -sivulta toiminto-ruudussa **asetukset**&gt;**tallentaa tietoja**. Valitse sitten **Yrityksen tilien malli**. Yrityksen tilien mallit jaetaan muille käyttäjille.  
+Toimittajatilien luomisprosessia voi nopeuttaa luomalla malleja. Mallit luodaan **Toimittaja**-sivulta napsauttamalla toimintoruudussa **Asetukset** &gt; **Tietueen tiedot**. Valitse sitten **Yrityksen tilien malli**. Yrityksen tilien mallit jaetaan muille käyttäjille.  
 
 Voit myös luoda käyttäjän mallin omaan käyttöösi. Et voi poistaa toimittajaa, joka liittyy muihin tietueisiin, kuten tuotteisiin tai yhteyshenkilöihin.
 
@@ -56,7 +59,7 @@ Jokaiselle toimittajalle voidaan määrittää useita osoitteita, joita käytet�
 ## <a name="vendor-contacts"></a>Toimittajan yhteyshenkilöt
 Voit tallentaa toimittajalle yhteyshenkilöitä. Yhteyshenkilöitä voidaan sitten käyttää asiakirjoissa, kuten ostotilauksissa tai tarjouspyynnöissä.  
 
-Lisää yhteystiedot valitsemalla toimittajan, **kaikkien toimittajien** sivulla oleva **toimittaja** -lehden **määrittäminen** ryhmän, valitse **yhteystiedot**&gt;**Lisää kontakteja**.  
+Toimittajan yhteyshenkilöitä voit lisätä **Kaikki toimittajat** -sivulla, napsauttamalla **Toimittaja**-välilehden **Asetukset**-ryhmässä **Yhteyshenkilöt** &gt; **Lisää yhteyshenkilöitä**.  
 
 Voit luoda uuden toimittajan alusta alkaen. Vaihtoehtoisesti, voit kopioida tiedot toisesta henkilöstä, joka on jo rekisteröity Microsoft Dynamics 365 for Operations -järjestelmään ja muokata tietoja tarpeen mukaisesti.  
 
@@ -64,7 +67,7 @@ Voit luoda uuden toimittajan alusta alkaen. Vaihtoehtoisesti, voit kopioida tied
 
 Et voi poistaa yhteyshenkilötietuetta, jos yhteyshenkilöön viitataan asiakirjassa. Sen sijaan voit poistaa yhteyshenkilön aktivoinnin.  
 
-Voit lisätä toimittajan yhteystietojen Omat yhteystiedot Microsoft Office 365: ssä. Kuitenkin on ensin määritettävä Dynamics 365 operaatioille ja Office 365: ssä synkronointi sekä synkronointi Microsoft Exchange Server ja Ohjattu Microsoft Outlookin asennus.
+Voit lisätä toimittajan yhteyshenkilöitä omiin Microsoft Office 365 -yhteystietoihisi. Sinun on kuitenkin ensin määritettävä Dynamics 365 for Operationsin ja Office 365:n välinen synkronointi sekä Microsoft Exchange Serverin synkronoinnissa että ohjattu Microsoft Outlook -asennustoiminnossa.
 
 ## <a name="vendors-in-different-legal-entities"></a>Toimittajat eri yrityksissä
 Jos toimittaja on rekisteröity vain yhteen yritykseen organisaatiossasi ja toisen yrityksen on rekisteröitävä sama toimittaja, voit käyttää **Lisää toimittaja toiseen yritykseen** -sivun avulla, jossa voit määrittää toimittajalle liikesuhteen toisen yrityksen kanssa. Sinun on valittava toimittajalle toimittajaryhmä, valuutta ja pidon tila valitussa yrityksessä.  
@@ -101,5 +104,7 @@ Jos suoritat maksuja toimittajan pankkitilille, voit syöttää toimittajan pank
 Voit määrittää oletustilit, jotka näkyvät automaattisesti toimittajan laskujen kirjauskansioissa määritetyn toimittajan osalta. Tämä toiminnallisuus voi olla hyödyllinen, jos yleensä maksat samantyyppisistä nimikkeistä tai palveluista samoille toimittajille ajan kuluessa. Kun määrität oletustilin, voit nopeasti ja tehokkaasti määrittää kirjauskansiomerkinnät laskukirjauskansioon. Määritettäviä oletustilejä ei käytetä ostotilauksille tai toimittajalaskuille, jotka on kirjataan **Toimittajalasku**-sivulla.  
 
 Oletustilit valitaan **Oletustilin määritys** -sivulla, jonka voit avata toimittajatietueen **Lasku**-välilehdeltä. Tässä valitut tilit näkyvät suodatetussa toimittajatilien luettelossa, kun kirjaat kirjauskansioviennin. Yhden tileistä voi määrittää oletustiliksi.
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: Luo ennuste tilastollinen perusaikataulu
+title: Luo tilastollinen perusennuste
 description: "Tässä artikkelissa annetaan tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista."
 author: YuyuScheller
 manager: AnnBe
@@ -26,32 +26,35 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="generate-a-statistical-baseline-forecast"></a>Luo ennuste tilastollinen perusaikataulu
+# <a name="generate-a-statistical-baseline-forecast"></a>Luo tilastollinen perusennuste
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa annetaan tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista. 
 
 Kun luot perusennusteen, määritä ensin laskennassa käytettävät parametrit ja suodattimet. Voit esimerkiksi luoda perusennusteen, joka arvioi kysyntää tietyn yrityksen edellisen vuoden tapahtumatietojen perusteella tulevalle kuukaudelle ja valitulle nimikeryhmälle. 
 
-Luo kysynnän ennuste, siirry **Master planning &gt;Ennustaminen &gt;kysynnän ennusteiden &gt;Luo tilastollinen perusaikataulun ennuste**. 
+Luo kysynnän ennuste kohdassa **Pääsuunnittelu &gt; Ennuste &gt; Kysynnän ennuste &gt; Luo tilastollinen perusennuste**. 
 
 Ennustejakso voidaan valita ennustetta luotaessa. Käytettävissä olevat arvot ovat: Päivä, Viikko ja Kuukausi. 
 
 Aikajaksojen lukumäärä, joille ennuste luodaan, määritetään** Ennustehorisontti**-kentässä. 
 
-Kun ennustestrategiaksi on määritetty **Kopioi historiallisen kysynnän päälle**, historiallisen horisontin päättymispäivä jätetään huomiotta. Järjestelmä kopioi uudelleenkäytettävät määritetty määrä **horisontti ennuste** ennustettuun kysyntään, asettaa päivämäärä alkaen-kenttään **päivästä** kentän alla **historiallinen horisontti**. Kopioimalla historiallisen kysynnän määrätystä päivämäärästä eteenpäin, tuotannon suunnittelijat voivat tehdä suunnitelman seuraavalle neljännesvuodelle kahdella tavalla:
+Kun ennustestrategiaksi on määritetty **Kopioi historiallisen kysynnän päälle**, historiallisen horisontin päättymispäivä jätetään huomiotta. Järjestelmä kopioi **Ennustehorisontti**-kentässä määritettyjen aikajaksojen lukumäärän kysynnän ennusteeseen, alkaen **Päivämäärästä**-kentässä **Historiallinen horisontti** -kohdassa määritetystä päivämäärästä. Kopioimalla historiallisen kysynnän määrätystä päivämäärästä eteenpäin, tuotannon suunnittelijat voivat tehdä suunnitelman seuraavalle neljännesvuodelle kahdella tavalla:
 
 -   Kopioimalla kysynnän samasta neljännesvuodesta viime vuonna.
 -   Kopioimalla kysynnän edellisestä neljännesvuodesta.
 
 Tuotantosuunnitelmiin aiheutuvien sekaannusten välttämiseksi on mahdollista lukita määrätty ennustejaksojen määrä. Tämä luku määritetään **Lukitusaikaraja**-kentässä. Sivulla **Oikaistu kysynnän ennuste **, lukittujen aikajaksojen kentät on poistettu käytöstä. Näin annetaan visuaalinen osoitus, että näitä arvoja ei tule muuttaa. 
 
-Perusmuotoisen kysynnän ennusteen alkamispäivämäärän ei tarvitse olla nykyinen päivä tai tuleva päivä. Määritä uusi alkupäivämäärä **Perusennusteen alkamispäivä - alkaen** -kentässä. Esimerkiksi kesäkuussa käyttäjät voivat luoda ennusteen seuraavalle vuodelle. Koska ennusteen aikajaksot historiallisen kysynnän päättymispäivän ja perusennusteen alkamispäivän välillä puuttuvat, ennusteet eivät ehkä ole oikeita. Jos käytössäsi on Microsoft Dynamics-365 toimia kysynnän ennusteet palvelu on neljä tapaa, jolla voit täyttää puuttuvat aukot. Voit valita menetelmä, jota PUUTTUVA asettamalla\_arvo\_KORVAAMISEN parametrien **kysynnän ennusteet parametrit** sivulla. 
+Perusmuotoisen kysynnän ennusteen alkamispäivämäärän ei tarvitse olla nykyinen päivä tai tuleva päivä. Määritä uusi alkupäivämäärä **Perusennusteen alkamispäivä - alkaen** -kentässä. Esimerkiksi kesäkuussa käyttäjät voivat luoda ennusteen seuraavalle vuodelle. Koska ennusteen aikajaksot historiallisen kysynnän päättymispäivän ja perusennusteen alkamispäivän välillä puuttuvat, ennusteet eivät ehkä ole oikeita. Jos käytät Microsoft Dynamics 365 for Operationsin kysynnän ennustepalvelua, voit täyttää puuttuvat kohdat neljällä tavalla. Voit valita haluamasi menetelmän määrittämällä MISSING\_VALUE\_SUBSTITUTION (Puuttuvan arvon korvaus) -parametrin **Kysynnän ennusteen parametrit** -sivulla. 
 
-**Ennusteen aloituspäivä perusaikataulun** - **päivästä** kentälle on määritettävä alkuun ennusteen bucket, esimerkiksi Yhdysvalloissa, jos Ennustaminen-bucket on viikon sunnuntai. Järjestelmä säätää automaattisesti **ennusteen aloituspäivä perusaikataulun** - **päivästä** vastaa ennusteen bucket alku-kenttään. 
+**Perusennusteen alkamispäivä**  -  **Päivämäärästä** -kenttä on määritettävä ennusteaikajakson alkuun, esimerkiksi Yhdysvalloissa sunnuntaille, jos ennusteaikajakso on viikko. Järjestelmä muokkaa automaattisesti **Perusennusteen alkamispäivä**  -  **Päivämäärästä** -kentän vastaamaan ennusteaikajakson alkua. 
 
-**Ennusteen aloituspäivä perusaikataulun** - **päivästä** voidaan määrittää kentän päivämäärä on jo mennyt. On toisin sanoen mahdollista luoda kysynnän ennuste menneisyydelle. Tämä on hyödyllistä, koska sen avulla käyttäjät voivat optimoida ennustepalvelun parametrit siten, että tilastollinen menneisyydelle luotu ennuste vastaa todellista historiallista kysyntää. Käyttäjät voivat sitten jatkaa näiden parametriasetusten käyttöä luodakseen tilastollisen perusennusteen tulevaisuudelle. 
+**Perusennusteen alkamispäivä**  -  **Päivämäärästä** -kenttään voidaan määrittää mennyt päivämäärä. On toisin sanoen mahdollista luoda kysynnän ennuste menneisyydelle. Tämä on hyödyllistä, koska sen avulla käyttäjät voivat optimoida ennustepalvelun parametrit siten, että tilastollinen menneisyydelle luotu ennuste vastaa todellista historiallista kysyntää. Käyttäjät voivat sitten jatkaa näiden parametriasetusten käyttöä luodakseen tilastollisen perusennusteen tulevaisuudelle. 
 
-Aiemmissa kysynnän ennusteen iteraatioissa tehtyjä manuaalisia oikaisuja voidaan käyttää automaattisesti uudessa perusennusteessa, jos **Siirrä manuaaliset oikaisut kysynnän ennusteeseen** -valintaruutu on valittuna. Jos tämä valintaruutu on tyhjä, manuaalisia oikaisuja ei lisätä perusennusteeseen, mutta niitä ei poisteta. Ennusteeseen tehdyt manuaaliset oikaisut voidaan poistaa vain ennusteen tuontihetkellä tyhjentämällä **Tallenna kysynnän perusennusteeseen tehdyt manuaaliset oikaisut** -valintaruutu. Manuaaliset oikaisut tallennetaan varmennushetkellä. Siksi, jos käyttäjä tekee ennusteen manuaalisia muutoksia, mutta ei hyväksy ennuste takaisin Dynamics 365 operaatioille, muutokset menetetään. Saat lisätietoja manuaalisiin lisäyksiin ja miten ne toimivat, [sallimisesta oikaistu ennustetta](authorize-adjusted-forecast.md). 
+Aiemmissa kysynnän ennusteen iteraatioissa tehtyjä manuaalisia oikaisuja voidaan käyttää automaattisesti uudessa perusennusteessa, jos **Siirrä manuaaliset oikaisut kysynnän ennusteeseen** -valintaruutu on valittuna. Jos tämä valintaruutu on tyhjä, manuaalisia oikaisuja ei lisätä perusennusteeseen, mutta niitä ei poisteta. Ennusteeseen tehdyt manuaaliset oikaisut voidaan poistaa vain ennusteen tuontihetkellä tyhjentämällä **Tallenna kysynnän perusennusteeseen tehdyt manuaaliset oikaisut** -valintaruutu. Manuaaliset oikaisut tallennetaan varmennushetkellä. Näin ollen, jos käyttäjä tekee manuaalisia oikaisuja ennusteeseen, mutta ei varmenna ennustetta takaisin Dynamics 365 for Operationsiin, muutokset häviävät. Lisätietoja manuaalisista oikaisuista ja miten ne toimivat on kohdassa [Oikaistun ennusteen varmennus](authorize-adjusted-forecast.md). 
 
 Kysynnän ennusteen luonnilla voi olla nimi ja kommentteja, jotka auttavat käyttäjiä tunnistamaan luodun ennusteen. Nämä arvot näkyvät ennusteen luontihistoriassa **Tilastollisen perusennusteen luontihistoria** -sivulla. 
 
@@ -59,15 +62,17 @@ Konsernin sisäinen suunnitteluryhmä, nimikkeen kohdistustunnukset ja muut suod
 
 **Vihje**Joskus käyttäjät saattavat saada virheitä luodessaan kysynnän ennusteita, tai kysynnän ennuste suoritetaan loppuun ilman istuntolokia. Tämän voivat aiheuttaa aiemmin ennusteen luonnissa käytetyt kyselyn ylijäämätiedot. Voit ratkaista tämän ongelman valitsemalla **Valitse** avataksesi **Kysely**-sivun, napsauta **Nollaa**, ja luo sitten perusennuste. 
 
-Ennuste ei luoda suuri joukko kohteita, mutta, esimerkiksi yhden nimikkeen tai Nimikkeenkohdistustunnus yksi kerrallaan ja sitten saada paremman suorituskyvyn, voit valita **käyttää pyynnön vastauksen tilaa** -valintaruudun **Pääsuunnittelu - Setup - kysynnän ennusteet suunnittelun** - **kysynnän ennusteet parametrit - Azure Machine Learning** välilehti.
+Jos ennustetta ei luoda isolle nimikejoukolle vaan esimerkiksi yhdelle nimikkeelle tai yhdelle nimikkeen kohdistustunnukselle kerrallaan, voit saavuttaaksesi paremman suorituskyvyn valita **Käytä pyyntö-vastaus-tilaa** -valintaruudun **Pääsuunnittelu - Asetukset - Kysynnän ennusteet**  -  **Kysynnän ennusteiden parametrit - Azuren automaattianalyysipalvelut** -välilehti.
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Demand forecasting setup](demand-forecasting-setup.md)
+[Kysynnän ennusteiden asetukset](demand-forecasting-setup.md)
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Oikaistun kysynnän ennusteen valtuuttaminen](authorize-adjusted-forecast.md)
+
+
 
 

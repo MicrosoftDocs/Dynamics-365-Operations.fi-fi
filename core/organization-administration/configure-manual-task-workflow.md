@@ -1,5 +1,5 @@
 ---
-title: "Määritä työnkulun manuaalinen tehtävä"
+title: "Manuaalisen tehtävän konfiguroiminen työnkulkuun"
 description: "Tässä ohjeaiheessa kerrotaan, miten manuaalisen tehtävän ominaisuudet määritetään."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-manual-task-in-a-workflow"></a>Määritä työnkulun manuaalinen tehtävä
+# <a name="configure-a-manual-task-in-a-workflow"></a>Manuaalisen tehtävän konfiguroiminen työnkulkuun
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä ohjeaiheessa kerrotaan, miten manuaalisen tehtävän ominaisuudet määritetään.
 
@@ -124,10 +127,10 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
     </tr>
     <tr class="even">
     <td>Käyttäjä</td>
-    <td>Tietyt Microsoft Dynamics-365 toimintoja käyttäjille</td>
+    <td>Tietyt Microsoft Dynamics 365 for Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong> luettelo sisältää kaikki käyttäjien toimien Dynamics 365. Valitse käyttäjät, joille tehtävä liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille tehtävä liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -145,8 +148,8 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
     <li>Valitse <strong>Jonon tyyppi</strong> -luettelosta <strong>Ehdolliset työnimikejonot</strong>.</li>
     <li>Valitse <strong>Ehdollinen jono</strong> <strong>Jonon nimi</strong> -luettelosta.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Huomautus:</strong> tätä asetusta käytetään vain joitakin työnkulkuja, kuten palvelupyyntöjen hallinta.</td>
+    </ol>
+    <strong>Huomautus</strong>: tätä vaihtoehtoa käytetään vain muutamissa työnkuluissa, kuten Palvelupyynnön hallinnassa.</td>
     </tr>
     </tbody>
     </table>
@@ -214,10 +217,10 @@ Jos käyttäjä ei suorita manuaalista tehtävää aikarajan puitteissa, tehtäv
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tiettyjä toimintoja käyttäjille Dynamics 365</td>
+    <td>Tietyt Dynamics 365 for Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong> luettelo sisältää kaikki käyttäjien toimien Dynamics 365. Valitse käyttäjät, joille tehtävä eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille tehtävä eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -234,7 +237,7 @@ Jos käyttäjä ei suorita manuaalista tehtävää aikarajan puitteissa, tehtäv
 6.  Jos eskalointipolun käyttäjät eivät suorita tehtävää ajoissa, järjestelmä suorittaa tehtävän toimenpiteen automaattisesti. Voit määrittää järjestelmän suorittaman toimenpiteen valitsemalla **Toimenpide**-rivin ja sitten valitsemalla **Lopetustoiminto**-välilehdellä toimenpiteen.
 
 ## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Määritä, milloin järjestelmä suorittaa tehtävän toimenpiteen automaattisesti
-Voit määrittää järjestelmän tekemään jonkin tietyn toiminnon automaattisesti manuaaliselle tehtävälle, kun määritetyt ehdot täyttyvät. Tehtävä voi esimerkiksi edellyttää, että kuluraporttiosaston jäsen tarkastaa kuitit, jotka lähetetään kuluraportin liitteenä. Yrityksen käytäntöjen mukaan tämä tehtävä on suoritettava Jos kuluraportin kokonaissumma on yli USD 100. Tässä tilanteessa voit määrittää järjestelmän automaattisesti Merkitse tehtävä kuin **valmiina** Jos kokonaissumma on pienempi kuin 100. Noudata seuraavia ohjeita määrittääksesi, milloin järjestelmä suorittaa manuaalisen tehtävän toimenpiteen.
+Voit määrittää järjestelmän tekemään jonkin tietyn toiminnon automaattisesti manuaaliselle tehtävälle, kun määritetyt ehdot täyttyvät. Tehtävä voi esimerkiksi edellyttää, että kuluraporttiosaston jäsen tarkastaa kuitit, jotka lähetetään kuluraportin liitteenä. Yrityksen käytäntöjen mukaan tämä tehtävä on suoritettava, jos kuluraportin kokonaissumma on yli 100 USD. Tässä skenaariossa voit määrittää järjestelmän automaattisesti merkitsemään tehtävän tilaan **Valmis**, kun kokonaissumma on pienempi kuin 100. Noudata seuraavia ohjeita määrittääksesi, milloin järjestelmä suorittaa manuaalisen tehtävän toimenpiteen.
 
 1.  Valitse vasemmasta ruudusta **Automaattiset toiminnot**.
 2.  Merkitse **Ota käyttöön automaattiset toiminnot** -valintaruutu.
@@ -308,10 +311,10 @@ Voit lähettää käyttäjille ilmoituksia, kun manuaalinen tehtävä on suorite
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tiettyjä toimintoja käyttäjille Dynamics 365</td>
+    <td>Tietyt Dynamics 365 for Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong> luettelo sisältää kaikki käyttäjien toimien Dynamics 365. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -325,8 +328,8 @@ Noudata seuraavia ohjeita, jos manuaalinen tehtävä on suoritettava tietyn ajan
 1.  Napsauta vasemmassa ruudussa **Lisäasetukset**.
 2.  Merkitse **Aseta aikaraja työnkulun elementille** -valintaruutu.
 3.  Valitse **Kesto**-kenttään, aika, johon mennessä tehtävä on suoritettava. Valitse jompikumpi seuraavista vaihtoehdoista:
-    -   **Tunnin** – Kirjoita tuntimäärä, jonka tehtävä on suoritettava. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
-    -   **Päivän** – Määritä, kuinka monta päivää, että tehtävä on suoritettava. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
+    -   **Tunnit** – Määritä tuntien määrä, jonka aikana tehtävän tulee olla valmis. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
+    -   **Päivät** – Määritä päivien määrä, jonka aikana tehtävän tulee olla valmis. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
     -   **Viikot** – Määritä viikkojen määrä, jonka aikana tehtävän tulee olla valmis.
     -   **Kuukaudet** – Valitse päivä ja viikko, johon mennessä tehtävä on suoritettava. Voit esimerkiksi määrittää, että tehtävä on oltava valmis kuukauden kolmannen viikon perjantaihin mennessä.
     -   **Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä tehtävän tulee olla valmis. Voit esimerkiksi määrittää, että tehtävän on oltava valmis joulukuun kolmannen viikon perjantaihin mennessä.
@@ -343,6 +346,8 @@ Kun manuaalinen tehtävä on määritetty käyttäjälle, käyttäjän pitää s
 5.  Valitse **Delegoi**-valintaruutu, jos haluat, että käyttäjä voi määrittää tehtävän toiselle käyttäjälle.
 6.  Valitse **Määritä uudelleen**-valintaruutu, jos haluat, että käyttäjä voi määrittää tehtävän uudelleen toiselle käyttäjälle työnimikejonossa.
 7.  Valitse **Vapauta**-valintaruutu, jos haluat, että käyttäjä voi vapauttaa tehtävän työnimikejonoon. Toinen käyttäjä voi sitten suorittaa tehtävän.
+
+
 
 
 

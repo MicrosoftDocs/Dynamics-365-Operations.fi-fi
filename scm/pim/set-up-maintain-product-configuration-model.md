@@ -1,5 +1,5 @@
 ---
-title: "Tuotteen konfigurointimallin määrittäminen"
+title: "Määritä tuotemääritysmalli"
 description: "Tässä artikkelissa kuvataan tuotemääritysmallin määrityksen ja luonnin vaiheet."
 author: YuyuScheller
 manager: AnnBe
@@ -27,13 +27,16 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-a-product-configuration-model"></a>Tuotteen konfigurointimallin määrittäminen
+# <a name="set-up-a-product-configuration-model"></a>Määritä tuotemääritysmalli
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa kuvataan tuotemääritysmallin määrityksen ja luonnin vaiheet.
 
 | Tehtävä                                                        | kuvaus                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Luo päätuote.                                    | Luo päätuote **Päätuote**-luettelosta. Vapauta päätuote asiaa kaikkiin yrityksiin. Päätuotteen, jota käytetään tuotemääritysmallin tai jonkin aliosan versiona **rajoitus perustuva konfiguraatio** on valittava määritysmenetelmää ja konfiguroinnin dimensio on valittava vain tuotteen dimensioryhmässä. |
+| Luo päätuote.                                    | Luo päätuote **Päätuote**-luettelosta. Vapauta päätuote kaikille yrityksille, joihin se liittyy. Jos päätuotetta käytetään tuotemääritysmallin versiona tai alikomponenttina, määritystekniikaksi on valittava **Rajoituspohjainen määritys** ja konfiguraatiodimensio täytyy valita vain tuotedimensioryhmälle. |
 | Luo komponentteja.                                          | Luo komponentteja **Komponentit**-sivulla. Komponentit ovat tuotemääritysmallin rakenneosia, ja niitä voidaan käyttää useissa tuotemääritysmalleissa.                                                                                                                                                                                                                      |
 | Luo määritetyyppejä.                                     | Luo määritetyyppejä **Määritetyypit**-sivulla. Määritetyypit määrittelevät tietotyypit kaikille tuotemääritysmalleissa käytettäville määritteille. Jos määritteenä on **totuusarvo**, kiinteän luettelon **teksti** tai tietyllä alueella oleva **kokonaisluku**, siinä näkyvät arvot, jotka ovat käytettävissä, kun määrität tuotemääritysmalliin perustuvaa tuotevarianttia.       |
 | Luo tuotemääritysmalli.                       | Luo tuotemääritysmalli **Uusi tuotemääritysmalli** -sivulla.                                                                                                                                                                                                                                                                                                              |
@@ -47,6 +50,8 @@ Tässä artikkelissa kuvataan tuotemääritysmallin määrityksen ja luonnin vai
 | Kokeile tuotemääritysmallia.                         | Testaa tuotemääritysmalli joko **Rajoituspohjaisen tuotemääritysmallin tiedot**- tai **Tuotemääritysmallien luettelo** -sivulla. Tuotemääritysmallin testaus simuloi tilauksen käsittelyn aikana tapahtuvaa tuotemallin määritysprosessia.                                                                                                |
 | Luo tuotemääritysmallille mallipohja.                | Luo tuotemääritysmallin mallipohja **Määritysmallit**-sivulla. Määritysmalli sisältää arvot tuotemääritysmallin määritteille. Valitse määritteiden arvot **Konfiguroi rivi** -sivulta. Voit myös ladata tuotemääritysmallin mallipohjan määrittäessäsi tuotemallia.                                                   |
 | Määritä nimike.                                          | Tuotemääritysmalleja voidaan määrittää myyntitilauksesta, myyntitarjouksesta, ostotilauksesta tai tuotantotilauksesta.                                                                                                                                                                                                                                                                           |
+
+
 
 
 

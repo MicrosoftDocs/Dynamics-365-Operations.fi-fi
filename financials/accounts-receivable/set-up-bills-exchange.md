@@ -1,6 +1,6 @@
 ---
 title: "Tuoterakenteen määrittäminen"
-description: "Tässä aiheessa kuvataan ohjeita vekseleiden määrittämisestä."
+description: "Tässä aiheessa kuvataan vaiheet, joilla määritetään vekselit."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,55 +26,60 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-bills-of-exchange"></a>Tuoterakenteen määrittäminen
 
-Tässä aiheessa kuvataan ohjeita vekseleiden määrittämisestä.
+[!include[banner](../includes/banner.md)]
 
-Vekseli on Paperimuotoinen tai sähköinen kuninkaasta, joka määrittää, että toisen osapuolen, yleensä pankin, on maksettava ilmoitettua summaa yrityksen asiakkaalle. Kun vekseliä käytetään myyntitilauslaskujen tai vapaatekstilaskujen maksuna, asiakastiliä hyvitetään. Vekseli toimii hyvityksen vakuutena, kunnes asiakas maksaa vekselin pankkiin. Yleensä sinun lasku selvitetään vekselin kanssa eräpäivänä. Kun saat pankista ilmoituksen, että vekseli on maksettu, voit sulkea vekselin. Voit piirtää vekselin kautta pankin seuraavina ajankohtina:
 
--   Eräpäivänä. Tätä lähestymistapaa käytetään nimitystä perittäväksi.
--   Ennen eräpäivää, alennuksen päivämäärää, joka on määritetty maksuehdot, jotka on määritetty asiakkaan käyttöön yleensä. Kun tapahtuma kirjataan, alennuksen summa kirjataan kulutilille. Jäljellä oleva summa jäädään velkaa, kunnes pankki saa maksun asiakkaalta. Tätä lähestymistapaa käytetään nimitystä alennusmaksusuoritus.
+Tässä aiheessa kuvataan vaiheet, joilla määritetään vekselit.
+
+Vekseli on paperimuotoinen tai sähköinen asiakkaan määräys, jossa ilmoitetaan, että toisen osapuolen, yleensä pankin, on maksettava ilmoitettu summa yritykselle. Kun vekseliä käytetään myyntitilauslaskujen tai vapaatekstilaskujen maksuna, asiakastiliä hyvitetään. Vekseli toimii hyvityksen vakuutena, kunnes asiakas maksaa vekselin pankkiin. Tavallisesti lasku selvitetään vekselin kanssa eräpäivänä. Kun saat pankista ilmoituksen, että vekseli on maksettu, voit sulkea vekselin. Vekselin voi asettaa pankin kautta seuraavina ajankohtina:
+
+-   Eräpäivänä. Tästä lähestymistavasta käytetään nimitystä perittäväksi palautettu vekseli.
+-   Ennen eräpäivää, tavallisesti asiakkaalle määritettyjen maksuehtojen määrittämänä alennuksen päivämääränä. Kun tapahtuma kirjataan, alennuksen summa kirjataan kulutilille. Jäljellä oleva summa jäädään velkaa, kunnes pankki saa maksun asiakkaalta. Tästä lähestymistavasta käytetään nimitystä alennusmaksusuoritus.
 
 ## <a name="set-up-posting-profiles-for-bills-of-exchange"></a>Vekselien kirjausprofiilien määrittäminen
-Käytä **asiakkaan kirjausprofiileille** sivulla voit määrittää kirjausprofiilit, joita voit käyttää vekselien, protestoitujen vekselien, perittäviksi ja alennusmaksusuoritus. - **Reskontratili** -kentässä, valitse reskontratili, johon vekselin summat kirjataan. Tätä tiliä veloitetaan tai hyvitetään vekselitapahtuman tyypin mukaan:
--   Vekseli tätä tiliä veloitetaan vekselin kirjaamisen yhteydessä ja hyvitetään alennusmaksusuorituksen tai perittäväksi kirjaamisen yhteydessä.
+**Asiakkaan kirjausprofiili** -sivun avulla voit määrittää vekselien, protestoitujen vekselien, perittäviksi palautettujen vekselien ja alennusmaksusuoritusten kanssa käytettävät kirjausprofiilit. Valitse **Reskontratili**-kentässä reskontratili, johon vekselin summat kirjataan. Tätä tiliä veloitetaan tai hyvitetään vekselitapahtuman tyypin mukaan:
+-   Kun kyseessä on vekseli, tätä tili veloitetaan vekselin kirjaamisen yhteydessä ja hyvitetään alennusmaksusuorituksen tai perittäväksi palautetun vekselin kirjaamisen yhteydessä.
 -   Kun kyseessä on protestoitu vekseli, tätä tiliä veloitetaan protestoidun vekselin kirjaamisen yhteydessä.
 -   Kun kyseessä on perittäväksi palautettu vekseli, tätä tiliä veloitetaan perittäväksi palautetun vekselin kirjaamisen yhteydessä.
 -   Kun kyseessä on alennusmaksusuoritus, tätä tiliä veloitetaan alennusmaksusuorituksen kirjaamisen yhteydessä.
 
-- **Selvitystili** -kentässä, valitse käteistili, johon vekselin summat kirjataan. Tätä tiliä veloitetaan vekselin selvittämisen yhteydessä. - **Arvonlisäveron ennakkomaksut** yhteenveto kirjataan, kun vekseleitä käytetään ennakkomaksuissa arvonlisäverosummat tili-kenttään. - **Alennustili** alennusmaksusuoritus johon alennussumma kirjataan tili-kenttään. Tätä tiliä hyvitetään alennusmaksusuorituksen kirjaamisen yhteydessä.
+Valitse **Selvitystili**-kentässä käteistili, johon vekselin summat kirjataan. Tätä tiliä veloitetaan vekselin selvittämisen yhteydessä. Valitse **Arvonlisäveron ennakkomaksut** -kentässä reskontratili, johon arvonlisäveron summat kirjataan, kun vekseleitä käytetään ennakkomaksuissa. Valitse **Alennustili**-kentästä tili, johon alennusmaksusuorituksen alennussumma kirjataan. Tätä tiliä hyvitetään alennusmaksusuorituksen kirjaamisen yhteydessä.
 
-## <a name="set-up-accounts-receivable-parameters-for-bills-of-exchange"></a>Vekselien myyntireskontran parametrien määrittäminen
-- **Myyntireskontran parametrit** sivun oletusarvo varten syötetään vekselien kirjausprofiilien **Kirjanpito- ja** välilehti. Numerosarjat on määritetty **Number sequences** välilehti.
+## <a name="set-up-accounts-receivable-parameters-for-bills-of-exchange"></a>Vekseleiden myyntireskontran parametrien määrittäminen
+Vekseleiden oletuskirjausprofiilit syötetään **Myyntireskontran parametrit** -sivun **Kirjanpito ja arvonlisävero** -välilehdessä. Numerosarjat määritetään **Numerosarjat**-välilehdessä.
 Vekselikirjauskansioiden nimien määrittäminen
 ------------------------------------------
 
-- **Nimet** vähintään viisi kirjauskansioiden nimeä vekselien Luo-sivulla. Kirjauskansioiden tyypit ovat tässä:
--   **Asiakkaan asettama vekseli** – Luo vekselin asettamisen kirjauskansion Kirjauskansionimi.
--   **Asiakkaan protestoitu vekseli** – Luo vekselin protestoinnin kirjauskansion Kirjauskansionimi.
--   **Asiakkaan tarkistaman vekselin** – Luo Kirjauskansionimen tarkastettujen vekselien kirjauskansioon.
--   **Asiakkaan pankkisiirtomääräys** – Luo Maksusuoritusten kirjauskansio-Kirjauskansionimi.
--   **Asiakkaan selvittämän vekselin** – Luo vekselin selvityskirjauskansion Kirjauskansionimi.
+Luo vekseleitä varten vähintään viisi kirjauskansioiden nimeä **Kirjauskansioiden nimet** -sivulla. Kirjauskansiotyypit ovat:
+-   **Asiakkaan asettama vekseli** – Luo asetetulle vekselikirjauskansiolle nimen.
+-   **Asiakkaan protestoitu vekseli** – Luo protestoidulle vekselikirjauskansiolle nimen.
+-   **Asiakkaan tarkistettu vekseli** – Luo tarkistetulle vekselikirjauskansiolle nimen.
+-   **Asiakkaan pankkisiirtomääräys** – Luo Maksusuoritusten kirjauskansiolle nimen.
+-   **Asiakkaan selvittämä vekseli** – Luo selvitetylle vekselikirjauskansiolle nimen.
 
-Vekselikirjauskansio kullekin kirjauskansion tosite sivulla, kirjoita tiedot vekseli **vekselin** välilehti. Kun vekselin kirjauskansioiden rivit on kirjattu, voit tarkastella niitä **vekselin kirjauskansioiden kyselyn** sivun ja **Vekselitilasto** sivulla.
+Kirjoita vekselin tiedot kirjaustositesivun jokaiseen vekselikirjauskansioon **Vekseli**-välilehdellä. Kun vekselin kirjauskansioiden rivit on kirjattu, voit tarkastella niitä **Vekselin kirjauskansiokysely** -sivulla ja **Vekselitilasto**-sivulla.
 Vekselien maksutapojen määrittäminen
 -----------------------------------------------
 
-- **Maksutavat** sivun, Määritä vähintään yksi maksutapa vekselien. Jos asioit usean pankin kanssa, Määritä maksutapa, joka vastaa, jotka kukin pankki edellyttää vekselin Maksusuorituksen muoto.
+Määritä vekseleille **Maksutavat**-sivulla vähintään yksi maksutapa. Jos asioit usean pankin kanssa, määritä maksutapa pankkikohtaisesti sen mukaan, mitä vekselin maksusuorituksen muotoa kukin pankki edellyttää.
 Vekselien toimitusmaksujen määrittäminen
 -----------------------------------------
 
-Toimitusmaksu liittyy prosessiin, jolla peritään maksuja asiakkailta. Jokaiseen toimitusmaksuun liittyviä useita toimitusmaksun asetukset voi saada. Miten lasketaan toimitusmaksut asetusrivejä voit rivit. Voit esimerkiksi luoda asetusrivit maksulle, maksumäärittelyille, valuutoille ja ajanjaksoille. Voit myös luoda asetusrivit prosenttiosuus tai summa, joka perustuu päivän välein. Voit esimerkiksi määrittää korko-osuus, joka perustuu aika maksu on erääntynyt. Jos pankki veloittaa maksuja eri erilaisia **kokoelman** tai **alennus**, maksu myöhästyy erillisen maksurivi määrittää.
+Toimitusmaksu liittyy prosessiin, jolla peritään maksuja asiakkailta. Jokaiseen toimitusmaksun voi liittyä useita toimitusmaksujen asetusrivejä. Voit käyttää asetusrivejä ohjaamaan toimitusmaksujen oletussummien laskemista. Voit esimerkiksi luoda asetusrivit maksulle, maksumäärittelyille, valuutoille ja ajanjaksoille. Voit luoda asetusrivit myös prosenttiosuudelle tai päiväväleille perustuvalle summalle. Voit esimerkiksi määrittää korko-osuuden, joka perustuu maksun erääntyneenä olon aikaan. Jos pankki veloittaa erilaisia maksuja eri maksusuoritustyypeistä, kuten **Perintä** tai **Alennus**, määritä erillinen toimitusmaksurivi jokaiselle maksusuoritustyypille.
 Suoritusmaksujen määrittäminen pankkisiirtomääräystiedostoja varten
 ------------------------------------------------
 
-- **Pankki** -sivulla voit määrittää suoritusmaksuja, jotka pankki veloittaa jokaisesta muodostetusta, joka luodaan kulut. Suoritusmaksut kirjataan, kun maksusuoritus on vahvistettu ja realisoituneet palkkiosummat ovat tiedossa. Suoritusmaksut eroavat toimitusmaksut, jotka kerätä asiakkailta ja liitetään kirjauskansiorivit.
+Voit määrittää **Pankkitilit**-sivulla suoritusmaksuja, jotka pankki veloittaa jokaisesta muodostetusta maksusuoritustiedostosta. Suoritusmaksut kirjataan, kun maksusuoritus on vahvistettu ja realisoituneet palkkiosummat ovat tiedossa. Suoritusmaksut eivät ole samoja kuin toimitusmaksut, jotka peritään asiakkailta ja liitetään kirjauskansion riveihin.
 Vekselien asettelujen määrittäminen
 ---------------------------------------------
 
-- **Pankkitilit** -sivulla **määrittäminen**, ja määritä asiakirja-asettelu, jota tarvitaan, jotta jokaiselle pankkitilille, että olet luonut tulostettavan vekselien asiakirjoja varten.
+Napsauta **Pankkitilit**-sivulla **Määritä** ja määritä jokaisessa sellaisessa pankkitilissä tarvittava asiakirja-asettelu, jota varten on tarkoitus luoda tulostettuja vekseliasiakirjoja.
 Asiakkaiden vekselimääritysten tekeminen
 --------------------------------------
 
-- **Asiakkaiden** -jokaiselle asiakkaalle, joka on sopinut vekselin avulla voit määrittää oletusarvoinen maksutapa vekselien sivulla **maksun oletukset** välilehti.
+Voit määrittää **Asiakkaat**-sivun **Oletusmaksut**-välilehdessä vekselien oletusmaksutavan jokaiselle asiakkaalle, joka on sopinut vekselillä maksamisesta.
+
+
 
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-overview"></a>Ostoehdotusten yleiskatsaus
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan ostoehdotusten työnkulkua ja eri tiloja.
 
 Voit luoda ostoehdotuksia organisaatiosi käyttämille tuotteille riippuen siitä, kuinka organisaatiosi on asetettu. Ostoehdotus on sisäinen asiakirja, joka valtuuttaa hankintaosaston ostamaan nimikkeitä tai palveluita.  
@@ -48,7 +51,7 @@ Voit määrittää ostoehdotuksen työnkulkuprosessin voi kierrättämään osto
 
 Seuraava kaavio kuvaa ostoehdotukselle ja sen riveille määritettäviä tiloja kun ne kulkevat työnkulkuprosessin läpi.  
 
-[![Ostoehdotuksen otsikkoon ja ostotilausrivien tilojen](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Ostoehdotuksen otsikon ja rivien tilat](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Ostoehdotuksen otsikon ja rivien tilojen suhde
 
@@ -77,7 +80,7 @@ Ostoehdotuksen yleinen tila määritetään ostoehdotusrivien tilan mukaan. Siis
 <td>Jos työnkulku on määritetty reitittämään ostoehdotusrivit yksittäisille tarkastajille, kunkin rivin tila voi olla <strong>Tarkistuksessa</strong> tai <strong>Hylätty</strong>. Hankintaehdotuksen yleinen tila päivitetään, kun kaikki rivit ovat käyneet läpi koko tarkastusprosessin, eikä ostoehdotuksella ole jäljellä tarkastustyövaiheita.
 <ul>
 <li><strong>Tarkistuksessa</strong> – Ostoehdotusrivit on lähetetty tarkistettavaksi. Kun ostoehdotusrivin työnkulkuprosessi on valmis, rivi pysyy <strong>Tarkistuksessa</strong>-tilassa kunnes kaikki muut ostoehdotusrivit on tarkistettu.</li>
-<li><strong>Hylätty</strong> – ostoehdotusrivin on hylätty. Ostoehdotusrivien hylätään, voidaan muokata ja uudelleen.</li>
+<li><strong>Hylätty</strong> – Ostoehdotusrivin on hylätty. Hylättyjä ostoehdotuksen rivejä voidaan muokata ja lähettää uudelleen.</li>
 </ul>
 Jos lähetät hylätyn ostoehdotusrivin uudelleen, tarkistusprosessi käynnistyy uudelleen kaikille ostoehdotuksen riveille, jotka ovat yhä tarkistuksessa. <strong>Huomautus:</strong> Voit peruuttaa jo lähetetyn ostoehdotuksen. Kun peruutat ostoehdotuksen, kaikki sen ostoehdotusrivit peruutetaan samalla. Peruutetut ostoehdotusrivit on mahdollista poistaa.</td>
 </tr>
@@ -133,7 +136,7 @@ Jos lähetät hylätyn ostoehdotusrivin uudelleen, tarkistusprosessi käynnistyy
 Voit jakaa kustannukset tuotteesta, joka kuuluu ostoehdotukseen, useille kirjanpitotileille. Jos organisaatiossa käytetään dimensioita, kuten kustannuspaikkoja ja osastoja, voit jakaa tuotekustannukset dimensioista taloushallinnon tileille.
 
 ## <a name="requisition-purposes"></a>Ehdotuksen tarkoitukset
-Ostoehdotuksen tarkoitukset tekevät ehdotuksien vaatimusten toteuttamisesta joustavampaa. Ehdotuksen luodessasi voit liittää yksi kahdesta tarkoituksesta siihen: kulutus tai täydennys. Ehdotuksen tarkoitus ja asennus organisaation ostoehdotusten kysynnän voi täyttää ostotilaus, siirtotilaus, tuotantotilaus tai kanban.  
+Ostoehdotuksen tarkoitukset tekevät ehdotuksien vaatimusten toteuttamisesta joustavampaa. Ehdotuksen luodessasi voit liittää yksi kahdesta tarkoituksesta siihen: kulutus tai täydennys. Riippuen ehdotuksen tarkoituksesta ja siitä, miten organisaatio on määritetty, ehdotuksen tarve voidaan täyttää ostotilauksella, siirtotilauksella, tuotantotilauksella tai kanbanilla.  
 
 Hankintakäytännöissä voit hallita ostoehdotusten tarkoituksia, jotka ovat käytettävissä, kun ehdotus luodaan organisaatioosi.
 
@@ -152,7 +155,7 @@ Käyttääksesi ostoehdotuksia, joiden tarkoitus on täydennys, pääajoitus on 
 ## <a name="purchase-requisitions-and-requests-for-quotation"></a>Ostoehdotukset ja tarjouspyynnöt
 Joissain tapauksissa on aloitettava tarjouspyyntöprosessi, jonka kautta tunnistat toimittajan ja ostoehdotuksessa pyydettyjen tuotteiden hinnan. Tarjouspyynnön voi luoda ostoehdotuksen ollessa tarkistettavana. Kun hyväksyt tarjouksen, tiedot toimittajasta, hinnasta ja niin edelleen siirretään ehdotukseen.  
 
-Voit laittaa ostoehdotuksen pitoon valitsemalla **pitoon** -valintaruudun **ostoehdotuksen tiedot** sivulla. Ostoehdotuksen käsittelyä voidaan jatkaa vasta, kun voit poistaa pidon poistamalla valintaruudun valinta.  
+Voit laittaa ostoehdotuksen pitoon valitsemalla **Pidossa**-valintaruudun **Ostoehdotuksen tiedot** -sivulla. Ostoehdotuksen käsittely voi jatkua vasta, kun poistat eston poistamalla tämän valintaruudun.  
 
 **Huomautus:** eProcurement-järjestelmässä ostoehdotuksesi tarjouspyyntö voi antaa toimittajien lisätä vaihtoehtoisia rivejä. Tässä tapauksessa hyväksytyt vaihtoehdot näkyvät ostoehdotuksessa.
 
@@ -178,7 +181,7 @@ Voidaksesi luoda ostotilauksen ostoehdotusriveille, joille ei ole valittavissa k
 
 Kysynnän konsolidoinnin prosessi alkaa kohdasta, jossa ostoehdotus hyväksytään työnkulussa, jos budjetin hallinta on määritetty organisaatiolle ja budjettivaraukset sekä alustavat varaukset on tallennettu. Seuraavassa kaaviossa on kuvattu prosessin kulku kysynnän konsolidoinnille.  
 
-[![Prosessivuo kysynnän konsolidointia varten](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Kysynnän konsolidointiprosessin kulku](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Noudata seuraavia vaiheita, jos haluat konsolidoida ostoehdotusrivit.
 
@@ -192,8 +195,10 @@ Noudata seuraavia vaiheita, jos haluat konsolidoida ostoehdotusrivit.
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Luo ostoehdotuksen kulutukseen (tehtävän guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Kulutusehdotuksen luominen (tehtävän ohjaus)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Ostoehdotuksen työnkulku](purchase-requisitions-workflow.md)
+
+
 
 

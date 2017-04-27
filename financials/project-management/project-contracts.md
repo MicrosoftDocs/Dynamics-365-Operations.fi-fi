@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-contracts"></a>Projektisopimukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa käsitellään erityyppisille projekteille ja rahoituslähteille luotavia projektisopimuksia, sopimusten hallintaa ja projektin asiakkaiden laskuttamista Microsoft Dynamics 365 for Operations -ohjelmassa. Aihe sisältää myös esimerkkejä.
 
 Projektisopimukselle luotavan projektin tyyppi määrittää, miten projektin asiakkaita laskutetaan. Vaikka voit muuttaa projektisopimusta ja siihen liittyvää projektia, et voi vaihtaa projektityyppiä. 
@@ -80,7 +83,7 @@ Seuraavassa taulussa on skenaarioita rahoituksen kohdistuksen hallinnasta, kun r
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Scenario</strong></td>
+<td><strong>Skenaario</strong></td>
 <td><strong>Rahoituslähde </strong></td>
 <td><strong>Kohdistusprosentti </strong></td>
 <td><strong>Kohdistusprioriteetti </strong></td>
@@ -192,7 +195,7 @@ Seuraavassa taulussa tätä skenaariota käsitellään tarkemmin.
 <tbody>
 <tr class="odd">
 <td><strong>Kohdistus </strong></td>
-<td><strong>Details</strong></td>
+<td><strong>Erittely</strong></td>
 </tr>
 <tr class="even">
 <td>Rahoitussäännöt</td>
@@ -220,17 +223,17 @@ Seuraavassa taulussa tätä skenaariota käsitellään tarkemmin.
 </tr>
 <tr class="odd">
 <td>Tapahtuma 2</td>
-<td><strong>Tapahtuman summa:</strong> 5,000.00<strong>Funding:</strong> maksetaanko kolme säännöillä. <strong>1 sääntö</strong><ph id="t1">
-</ph><ul>
+<td><strong>Tapahtuman summa:</strong> 5 000.00<strong>Rahoitus:</strong> Tapahtuma maksetaan kolmen säännön mukaisesti.<strong>Sääntö 1</strong>
+<ul>
 <li>Rahoituslähde 2: 450,00</li>
 <li>Rahoituslähde 3: 450,00</li>
-</ul><bpt id="t2">
-< strong ></bpt> Sääntö 2</strong><ph id="t3">
-</ph><ul>
+</ul>
+<strong>Sääntö 2</strong>
+<ul>
 <li>Rahoituslähde 3: 250,00 (= 750,00 – 50,00 – 450,00)</li>
-</ul><bpt id="t4">
-< strong ></bpt> Sääntö 3</strong><ph id="t5">
-</ph><ul>
+</ul>
+<strong>Sääntö 3</strong>
+<ul>
 <li>Rahoituslähde 1: 3 850,00 (= 5 000,00 – 450,00 – 450,00 – 250,00)</li>
 </ul></td>
 </tr>
@@ -339,5 +342,7 @@ Projektisopimusta määritettäessä sovit laskuttavasi asiakasta joka kuukausi 
 -   Luot myyntilaskun projektin aikana kunkin kalenterikuukauden lopussa.
 
 Konsultit kirjaavat projektiin ensimmäisen kuukauden aikana yhteensä 800 tuntia. Projektin veloitettujen toimistotarvikkeiden kustannus on 2 000. Niinpä kuukauden lopussa luodaan arvo, jonka arvo on 122 000 (800 tuntia x 150/tunti + 2 000 toimistotarvikkeisiin).
+
+
 
 

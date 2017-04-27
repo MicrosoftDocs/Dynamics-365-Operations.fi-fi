@@ -1,6 +1,6 @@
 ---
 title: "Pääkirjan talousraportit"
-description: "Tässä artikkelissa kuvataan Saldoraportit oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näiden kertomusten ja miten voit muokata raportteja liiketoiminnan tarpeiden mukaan."
+description: "Tässä artikkelissa kuvataan pääkirjojen oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin sekä niiden muokkaaminen liiketoimintasi tarpeiden mukaan."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="trial-balance-financial-reports"></a>Pääkirjan talousraportit
 
-Tässä artikkelissa kuvataan Saldoraportit oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näiden kertomusten ja miten voit muokata raportteja liiketoiminnan tarpeiden mukaan. 
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa kuvataan pääkirjojen oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin sekä niiden muokkaaminen liiketoimintasi tarpeiden mukaan. 
 
 <a name="default-trial-balance-reports"></a>Pääkirjan oletusraportit
 -----------------------------
@@ -51,7 +54,7 @@ Pääkirjan talousraporteissa käytetään seuraavia rakenneosia.
 
 ### <a name="row-definition"></a>Rivimääritys
 
-Rivimäärityksen, Pääkirja – oletusarvon yhdellä rivillä, joka vetää kaikki päätilit. Tämän vuoksi kuka tahansa voi luoda raportin ilman muutosten tekemistä. Voit siirtyä raporttia tarkastellessasi yhdelle riville, kun haluat nähdä kunkin tilin tiedot. Voit muokata rivimääritystä niin, että se sisältää enemmän tietoja. Pääkirjan muokkaaminen - oletusrivimääritys, joka sisältää kaikkien tilien rivit. Noudata seuraavia ohjeita.
+Rivimääritys, Pääkirja – Oletusarvo, sisältää yhden rivin, joka hakee kaikki päätilit. Tämän vuoksi kuka tahansa voi luoda raportin ilman muutosten tekemistä. Voit siirtyä raporttia tarkastellessasi yhdelle riville, kun haluat nähdä kunkin tilin tiedot. Voit muokata rivimääritystä niin, että se sisältää enemmän tietoja. Pääkirjan muokkaaminen - oletusrivimääritys, joka sisältää kaikkien tilien rivit. Noudata seuraavia ohjeita.
 
 1.  Valitse **Muokkaa** ja valitse sitten **Lisää rivejä dimensioista**. **Lisää rivejä dimensioista** -komennon avulla voit valita rivimääritykseen haluamasi dimensiot. Tässä rivimäärityksessä käytetään **päätiliä**.
 2.  Varmista, että **päätili** sisältää kaikki et-merkit (&) ja valitse sitten **OK**.
@@ -100,10 +103,12 @@ Jokaisessa pääkirjan raportissa käytetään eri sarakemääritystä. Nämä s
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Taloushallinnan raportointi](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Näytä raportit](view-financial-reports.md)
 
-[Dynamics taloudellisen raportoinnin blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamicsin talousraportointi -blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

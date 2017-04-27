@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-engines"></a>Kuljetuksenhallinnan moduulit
 
+[!include[banner](../includes/banner.md)]
+
+
 Kuljetuksenhallinnan moduulit määrittävät logiikan, jota käytetään kuljetushintojen luomiseen ja käsittelemiseen Kuljetuksenhallinnassa. 
 
 Kuljetuksen hallintamoduuli laskee tehtäviä, kuten rahdinkuljettajan kuljetushinnan. Moduulijärjestelmän ansiosta voit muuttaa laskentastrategioita suorituksen aikana Microsoft Dynamics 365 for Operations -järjestelmän tietojen perusteella. Kuljetuksen hallintamoduuli muistuttaa laajennusta, joka liittyy tietyn rahdinkuljettajan sopimukseen.
@@ -58,9 +61,9 @@ Kuljetuksen hallintamoduuli edellyttää, että määrität alustustiedot tietyn
 Useimmissa tapauksissa voit konfiguroida alustustiedot valitsemalla **Parametrit **-painikkeen kuljetuksen hallintamoduulin asetuslomakkeissa. **Esimerkki kilometrien laskentaan viittaavan hinnan laskennan määrityksestä** Seuraavassa esimerkissä kuvataan asetus, joka vaaditaan hinnan laskennalle, joka perustuu .NET-moduulin tyyppiin Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine ja viittaa kilometrien laskentaan.
 | Parametri             | Kuvaus                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | .NET-tyyppi, joka tulkitsee hintaan perustuvat määritystiedot tietylle skeemalle. Parametriarvo syntaksi koostuu kaksi segmenttien rajaamaa pystysuoran palkin ()|). Ensimmäinen osa sisältää kokoonpanonimen, joka määrittää määrittäjän tyypin. Toinen segmentti määrittää määrittäjän tyypin täydellisen nimen. Tämä sisältää tyypin nimitilan. |
+| *RateBaseAssigner*    | .NET-tyyppi, joka tulkitsee hintaan perustuvat määritystiedot tietylle skeemalle. Parametriarvon syntaksi koostuu kahdesta pystyviivalla erotetusta segmentistä (|). Ensimmäinen osa sisältää kokoonpanonimen, joka määrittää määrittäjän tyypin. Toinen segmentti määrittää määrittäjän tyypin täydellisen nimen. Tämä sisältää tyypin nimitilan. |
 | *MileageEngineCode*   | Kilometrien laskennan koodi, joka tunnistaa kilometrien laskentatietueen Microsoft Dynamics 365 for Operations -tietokannassa.                                                                                                                                                                                                                                                             |
-| *ApportionmentEngine* | Yleisen laskennan koodi, joka tunnistaa jako-osuuden laskennan Microsoft Dynamics 365 for Operations -tietokannassa.                                                                                                                                                                                                                                                              |
+| *Jako-osuuden laskenta* | Yleisen laskennan koodi, joka tunnistaa jako-osuuden laskennan Microsoft Dynamics 365 for Operations -tietokannassa.                                                                                                                                                                                                                                                              |
 
  
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Metatietojen käyttö kuljetuksen hallintalaskuihin
@@ -87,7 +90,7 @@ Kuljetuksenhallintamoduulin metatiedot määritetään eri tavalla eri tyyppisil
 | **Siirtoajan laskenta** ja **Kilometrien laskenta** | Hakee metatietoja suoraan kilometrikorvausmoduulin konfigurointiasetuslomakkeesta.                                                                                                                                                                                                                                                                                                                                                                                  |
 
   **Esimerkki hinnan laskennan metatiedoista** Kuljetuksen hallintamoduuli vaatii alkuperäisen osoitteen, kohdeosavaltion ja maan/alueen sekä lähetyksen alku- ja päätepisteen tunnistamisen. Käyttämällä näitä vaatimuksia metatiedot näyttävät tiedot seuraavan taulukon mukaisesti. Taulukko sisältää myös tietoja vaadittavien syöttötietojen tyypistä.
--   Määrittää nämä tiedot **kuljetus hallinta**&gt;**asennus** - **arvioi perustyyppi** sivulla.
+-   Voit määrittää nämä tiedot valitsemalla **Hintaperusteen tyyppi** -sivulta **Kuljetuksen hallinta** &gt; **Asetukset**.
 
 | Järjestys | Nimi                          | Kentän tyyppi | Tietotyyppi | Hakutyyppi    | Pakollinen |
 |----------|-------------------------------|------------|-----------|----------------|-----------|
@@ -96,6 +99,8 @@ Kuljetuksenhallintamoduulin metatiedot määritetään eri tavalla eri tyyppisil
 | 3        | Kohteen alkupostinumero | Määritys | merkkijono    | Postinumero    | Valittu  |
 | 4        | Kohteen loppupostinumero   | Määritys | merkkijono    | Postinumero    | Valittu  |
 | 5        | Kohdemaa           | Määritys | merkkijono    | Maa/alue |           |
+
+
 
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-financial-reports"></a>Näytä raportit
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics AX:ssä. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
 
 <a name="financial-reporting-overview"></a>Taloushallinnon raportoinnin yleiskatsaus
@@ -48,7 +51,7 @@ Voit muuttaa raportin päivämäärää, lisätä ominaisuus- ja dimensiosuodatt
 
 -   Muuttaaksesi raportin perustekautta ja perustevuotta, valitse perustekausi ja perustevuosi ja klikkaa sitten **OK**.
 -   Käyttääksesi raportissa ominaisuus suodattimia, valitse **lisää ominaisuus suodatin**. Valitse määrite, näppäile määritteen arvo ja klikkaa sitten **OK**. Esimerkiksi jos valitset **tililuokka**-määritteen, syötä **myynti** määritteen arvona. Poistaaksesi määritte-suodattimen, klikkaa **poista**.
--   Voit käyttää dimensio-suodatukset raporttiin valitsemalla **lisätä dimension suodattimen**. Valitse dimensio ja kirjoittaa Dimensiotunnus tai valitse dimensio-luettelosta. Poistaaksesi dimensiosuodattimen, klikkaa **poista**.
+-   Käyttääksesi raportissa dimensioiden suodattimia, valitse **Lisää dimension suodatin**. Valitse dimensio ja kirjoittaa joko dimensiotunnus tai valitse dimensio luettelosta. Poistaaksesi dimensiosuodattimen, klikkaa **poista**.
 -   Muuttaaksesi skenaariota **todellinen vs. budjetti** -raportissa, valitse uusi skenaario ja valitse sitten **OK**. Jos valittu skenaario on eri vuodelle, varmista päivittää perustevuosi. Esimerkiksi jos nykyinen skenaario on FY2015 ja valitset uuden skenaarion FY2016, sinun on muutettava perustevuosi vuodeksi **2016**.
 
 Kun klikkaat **OK**, kaikki valitsemasi vaihtoehdot käytetään raporttiin. Jos päätät, että et halua käyttää valittuja asetuksia, klikkaa **peruuta**.
@@ -66,7 +69,7 @@ Talousraportti voidaan näyttää minä vain valuuttana milloin tahansa. Näytt�
 Talousraportti voi sisältää erittelyrivejä ja yhteenveto-rivejä. Erittelyrivit ovat rivejä, joilla on päätilit tai dimensiot. Yhteenvetorivit ovat kuvaus-, summa- ja laskentarivejä. Näyttääksesi vain yhteenvetorivit raportissa, klikkaa **näytä** ja valitse sitten **vain yhteenvetorivit**. Raportti on tiivistetty ja näyttää vain yhteenvetorivit. Nähdäksesi yhteenvetorivit sekä erittelyrivit, klikkaa **näytä** ja valitse sitten **vain yhteenvetorivit** uudelleen.
 
 ## <a name="open-a-financial-report-from-a-previous-month"></a>Avaa edellisen kuukauden taloudellinen raportti
-Voit tarkastella edellisten kuukauksien tai kuluvan kuukauden raportteja ilman raportin uudelleen tekemistä. Avaa raportti edellisen kuukauden, napsauta **näyttää**, ja sitten **Edellinen raportit**. Näkyviin tulee luettelo, joka on luotu raportti edeltävän kuukauden aikana. Laajenna kuukausi lukeaksesi raportin, valitse päivämäärä ja valitse sitten **OK**. Edellisen kuukauden raportti tulee näkyviin. Voit palauttaa kuluvan kuukauden raportin valitsemalla **peruuta**.
+Voit tarkastella edellisten kuukauksien tai kuluvan kuukauden raportteja ilman raportin uudelleen tekemistä. Voit avata raportin edelliselle kuukaudelle valitsemalla **Näytä** ja valitsemalla sitten **Edelliset raportit**. Näkyviin tulee luettelo edellisistä kuukausista, joille raportti on luotu. Laajenna kuukausi lukeaksesi raportin, valitse päivämäärä ja valitse sitten **OK**. Edellisen kuukauden raportti tulee näkyviin. Voit palauttaa kuluvan kuukauden raportin valitsemalla **peruuta**.
 
 ## <a name="print-a-financial-report"></a>Tulosra talousraportti
 Tulostaaksesi talousraportin toimintoruudussa, valitse **tulosta** ja noudata sitten yhtä tai useampaa seuraavista askeista määrittääksesi tulostusasetukset:
@@ -85,5 +88,7 @@ Lähettääksesi talousraportin. toimintoruudussa, klikkaa **lähetä**. Raportt
 --------
 
 [Microsoft Dynamics AX:n talousraportointi](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+
+
 
 

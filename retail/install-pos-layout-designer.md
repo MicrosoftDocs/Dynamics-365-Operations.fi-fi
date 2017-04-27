@@ -32,19 +32,19 @@ Voit käyttää yhden napsautuksen suunnittelutoimintoa Cloud POS:n ja Retail Mo
 
 MPOS tai Cloud POS  -käyttöliittymän graafinen rakenne määräytyy kassan asettelun mukaan. Rakenne määrää eri objektien sijainnin. Esimerkiksi kokonaisarvon asettelun, nimikeruudukon asettelun, asiakkaan asettelun, maksun asettelua ja eri valikkopainikkeiden asettelua. Asettelut sisältävät myös myynnin liittymän ulkoasun, joka näkyy työntekijöille .
 
-## <a name="install-the-oneclick-designer"></a>Asenna oneclick suunnittelu
-1.  Microsoft Dynamics 365 operaatioille, käyttää valikon vasemmassa yläkulmassa voit siirtyä **Retail****ja**&gt;**kanava-asetukset**&gt;**POS-asetukset**&gt;**POS**&gt;**näytön asettelun**.
+## <a name="install-the-oneclick-designer"></a>Asenna yhden napsautuksen suunnittelutoiminto
+1.  Microsoft Dynamics 365 for Operations -järjestelmän vasemman yläkulman valikon avulla voit siirtyä **Vähittäismyynti** **ja kauppa** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipiste** &gt; **Näytön asettelut**.
 2.  Valitse asettelu, jonka sovellustyyppi on **Modern POS Windowsille** tai **Vähittäismyynnin pilvimyyntipiste**, ja valitse sitten **asettelun suunnittelutoiminto**.
 3.  Napsauta Internet Explorer -ikkunan alaosassa näkyvällä ilmoitusrivillä **Avaa** aloittaaksesi yhden napsautuksen suunnittelutoiminnon asennuksen. (Ilmoitusrivi saattaa näkyä eri kohdassa muissa selaimissa.)
 4.  **Sovellus suoritetaan - suojauksen varoitus** viesti tulee näkyviin, valitse **suorita ** joka asentaa vähittäismyynnin suunnittelutyökalun isännän. Edistymisen ilmaisin näyttää asennusprosessin edistymisen tilanteen.
 5.  Kun asennus on päättynyt, syötä Microsoft Dynamics 365 for Operations -käyttäjänimesi ja salasanasi **Kirjaudu sisään** -sivulla ja valitse sitten **Kirjaudu sisään** aloittaaksesi suunnittelutoiminnon.
-6.  Kun tunnistetietosi on tarkistettu ja suunnittelutoiminta alkaa, voit aloittaa oman asettelun suunnittelun tai aiemmin luodun asettelun muokkaamisen. [![Yhdellä napsautuksella suunnittelussa asetteluun](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
+6.  Kun tunnistetietosi on tarkistettu ja suunnittelutoiminta alkaa, voit aloittaa oman asettelun suunnittelun tai aiemmin luodun asettelun muokkaamisen. [![Asettelu yhdenklikkauksen suunnitteluohjelmassa](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
 ## <a name="troubleshoot-the-installation-of-the-layout-designer"></a>Asettelun suunnittelutoiminto asennuksen vianmääritys
 -   Kun valitset **Suunnittelutoiminto**, lataa (tai suorita) asennusohjelma kehote ei näy tai nykyiset suojausasetukset ei salli Lataa tiedosto. **Ratkaisut:**
-    -    Internet Explorerissa tarkista, että ponnahdussanoman esto on poistettu käytöstä tälle sivustolle. Valitse **asetusten**&gt;**asetukset**&gt;**tietosuoja**&gt;**löytää ponnahdusikkunoiden**, ja muuttaa asetusta, jos muutoksia tarvitaan.
-    -   Lisää Internet Explorerissa Dynamics 365 for Operations -osoite luotettuihin sivustoihin. Valitse **asetusten**&gt;**asetukset**&gt;**Security**&gt;**Luotetut sivustot**&gt;**sivustot**&gt;**Lisää**.
--   Ohjelma ei käynnisty ja ohjeiden mukaisesti voit ottaa yhteyttä toimittajaan. **Ratkaisu:** Lisää Internet Explorerissa Dynamics 365 for Operations -osoite luotettuihin sivustoihin. Valitse **asetus**&gt;**asetukset**&gt;**Security**&gt;**Luotetut sivustot**&gt;**sivustot**&gt;**Lisää**.
+    -    Internet Explorerissa tarkista, että ponnahdussanoman esto on poistettu käytöstä tälle sivustolle. Valitse **Asetukset** &gt; **Vaihtoehdot** &gt; **Tietosuoja** &gt; **Etsi ponnahdussanoman esto** ja muuta asetusta, jos se on pakollinen.
+    -   Lisää Internet Explorerissa Dynamics 365 for Operations -osoite luotettuihin sivustoihin. Valitse **Asetukset** &gt; **vaihtoehdot** &gt; **suojaus** &gt; **Luotettavat sivustot** &gt; **sivustot** &gt; **Lisää**.
+-   Ohjelma ei käynnisty ja ohjeiden mukaisesti voit ottaa yhteyttä toimittajaan. **Ratkaisu:** Lisää Internet Explorerissa Dynamics 365 for Operations -osoite luotettuihin sivustoihin. Valitse **asetukset** &gt; **vaihtoehdot** &gt; **suojaus** &gt; **Luotetut sivustot** &gt; **sivustot** &gt; **Lisää**.
 
 **Tunnettu ongelma:** suunnittelu ei toimi oikein Google Chrome- eikä Firefox-selaimessa. Ratkaisemme parhaillaan tätä ongelma.
 

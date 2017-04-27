@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Keskitettyjen maksujen tilityksen kuvaus
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Tällöin samaa tapahtumaa ei tarvitse syöttää erikseen useassa yrityksessä. Aikaa myös säästyy, kun keskitettyjen maksujen maksuehdotusprosessi, selvitysprosessi, avointen tapahtumien muokkaus ja suljettujen tapahtumien muokkaus yksinkertaistuvat. 
 
 Kun asiakkaan tai toimittajan maksu määritetään yhdessä yrityksessä ja maksu selvitetään toisessa yrityksessä kirjatulla laskulla, kummallekin yritykselle luodaan automaattisesti soveltuva tilitys sekä erääntymiskohteen ja erääntymislähteen tapahtumat. Tilitystietue luodaan tapahtuman laskun ja maksun kullekin yhdistelmälle. Kullekin tilitystapahtumalle määritetään uusi tositenumero, joka perustuu maksutositteen numerosarjaan. Tämä numerosarja määritetään asiakkaille **Myyntireskontran parametrit** -sivulla ja toimittajille **Ostoreskontran parametrit** -sivulla. 
@@ -108,6 +111,8 @@ Toimittajamaksujen maksuyrityksen erääntymiskohteen ja erääntymislähteen ta
 
 ## <a name="withholding-tax"></a>Ennakonpidätys
 Laskuun liittyvää toimittajatiliä käytetään määrittämään, pitääkö ennakonpidätys laskea. Jos ennakonpidätys lasketaan, se lasketaan laskuun liitetystä yrityksestä. Jos yritykset käyttävät eri valuuttoja, käytetään laskuun liitetyn yrityksen vaihtokurssia.
+
+
 
 
 

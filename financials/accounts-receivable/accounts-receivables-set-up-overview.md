@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Myyntireskontran sekä luotonvalvonnan määrittäminen
 
+[!include[banner](../includes/banner.md)]
+
+
 Määritä myyntireskontra ja luotonvalvonta, kun haluat seurata laskuja ja asiakkailta saapuvia maksuja.
 
 Voit määrittää muun muassa asiakasryhmiä, asiakkaita, kirjausprofiileja, eri maksutapoja, korkolaskuja, maksukehotuksia, provisioita, asiakkaisiin liittyviä parametreja, kuluja, toimituksia ja kohteita, vekseleitä sekä muita myyntireskontran ja luotonvalvonnan tietoja.
 Seuraavassa taulukossa on luettelo sivuista, jotka tukevat myyntireskontran ja luotonvalvonnan määrittämistä ja ylläpitoa. Taulukon kohteet on järjestetty ensin tehtävän ja sitten sivun nimen mukaan.
 
-| ![Huomautus](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Huomaa")**Huomautus**          |
+| ![Huomautus](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Huomautus")**Huomautus**          |
 |--------------------------------------------------------------------------------------------------|
 | Joillekin sivulle siirtyminen edellyttää tietoja tai parametriasetuksia. |
 
@@ -98,14 +101,16 @@ Seuraavassa taulukossa on luettelo sivuista, jotka tukevat myyntireskontran ja l
 |                                                      | Asiakkaan yhteystiedot ja sähköpostiasetukset | Määritä asiakkaiden yhteyshenkilöt ja heidän sähköpostiosoitteensa. Nämä osoitteet näkyvät Perintä-sivulla ja niiden avulla luodaan asiakkaille lähetettävät sähköpostit. Määritä myös jokaiselle Perintä-sivulla ensimmäisenä näkyvälle asiakkaalle oletusarvoinen Korko ja maksukehotus -yhteyshenkilö. |
 |                                                      | Asiakaspoolit                       | Määritä asiakkaan pooleja, jotka ovat kyselyitä, jotka määrittävät asiakastilien joukkoa, joka näytetään ja jota hallitaan kokoelmia tai erääntymisprosesseja varten.                                                                                                                           |
 |                                                      | Asiakkaan kirjausprofiili             | Voit määrittää profiilit, jotka ohjaavat asiakastapahtumien kirjausta kirjanpitoon.                                                                                                                                                                                      |
-|                                                      | Asiakkaan syykoodit                | Määrittää asiakkaan syistä koodeja.                                                                                                                                                                                                                                                    |
-|                                                      | Poista asiakkaan syykoodit      | Määritä asiakkaan poisto syistä koodit, joita käytetään poistotapahtumia.                                                                                                                                                                                             |
+|                                                      | Asiakkaan syykoodit                | Määritä asiakkaan syykoodit.                                                                                                                                                                                                                                                    |
+|                                                      | Asiakkaan poiskirjauksen syykoodit      | Määritä poistotapahtumissa käytettävät asiakkaan poiston syykoodit.                                                                                                                                                                                             |
 |                                                      | Lomakeasetukset                           | Voit määrittää lomakehuomautusten parametrit tarjouksia, vahvistuksia, keräysluetteloita, pakkausluetteloita, myyntilaskuja, vapaatekstilaskuja ja korkolaskuja varten.                                                                                                                               |
 |                                                      | Kiinnostuksen kohteet                             | Voit määrittää ja hallita korkokoodeja.                                                                                                                                                                                                                                                 |
-|                                                      | NSF-tiedot.                     | Määritä sen pankkitilin NSF-tiedot, jota käytetään, kun maksu merkitään NSF-tapahtumaksi Perintä-sivulla.                                                                                                                                              |
+|                                                      | NSF-tiedot                     | Määritä sen pankkitilin NSF-tiedot, jota käytetään, kun maksu merkitään NSF-tapahtumaksi Perintä-sivulla.                                                                                                                                              |
 |                                                      | Myyjän tiedot              | Määritä myyjien sähköpostiosoitteet. Nämä osoitteet näkyvät Perintä-sivulla ja voit lähettää niiden avulla sivulta sähköpostia myyjälle.                                                                                                                |
 
  
-Lisätietoja on ohjeaiheessa [myyntireskontran Luotonvalvonnan](collections-credit-accounts-receivable.md).
+Lisätietoja on kohdassa [Luotto ja perintä myyntireskontrassa](collections-credit-accounts-receivable.md).
+
+
 
 

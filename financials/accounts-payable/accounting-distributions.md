@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-distributions"></a>Kirjanpidolliset jaot
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja kirjanpidollisista jaoista ja niiden käsittelyvaihtoehdoista. Kirjanpidollisia jakoja käytetään kohdistettaessa lähdeasiakirjan rahasummat tietyille kirjanpitotileille. 
 
 Kirjanpidolliset jaot ovat koko ohjelman kattavia ominaisuuksia, joita käytetään ja jotka ulottuvat kuhunkin lähdeasiakirjaan, esimerkiksi ostotilaukseen, toimittajalaskuun, kuluraporttiin ja vapaatekstilaskuihin. Oletusarvona, kirjanpidon jaon oletusarvo luodaan jokaiselle asiakirjan lähderiville ja rahasummalle, ja se on käytössä ehdollisesti muokattavana. 
 
 > [!Note] 
-> Jotkin asiakirjat tukevat myös otsikon asiakirjan rahamääriä, kuten tilausten ja laskujen muita kuluja. 
+> Jotkut asiakirjat tukevat myös asiakirjan otsikon rahasummia, kuten tilaus- ja laskukuluja. 
 
 Yleiset kirjanpidolliset jako-ominaisuudet tarjoavat seuraavia vaihtoehtoja kirjanpidollisten jakojen käsittelyyn:
 
@@ -44,15 +47,17 @@ Yleiset kirjanpidolliset jako-ominaisuudet tarjoavat seuraavia vaihtoehtoja kirj
     -   **Jaa**-painikkeen voi ottaa käyttöön ylätason jakoihin. **Jaa**-painike luo uudet kirjanpidon jaot ja jako voidaan perustaa prosenttiosuuteen, summaan tai määrään.
     -   ** Jaetaan tasan** -painiketta voidaan käyttää yhdessä **jako** -painikkeen kanssa jakamaan summa automaattisesti tasan eri jakoihin.
     -   **Palauta** -painike voi olla käytössä ylätason jaoille, silloin kun enemmän kuin yksi jakelua on luotu. **Palauta**-painike kumoaa kaikki jaon manuaaliset muutokset poistamalla kaikki olemassa olevat jaot ja luomalla uudelleen jaot oletusarvon mukaan.
-    -   Alemman tason jakelut, kuten alennus, kulut ja arvonlisävero noudattavat aina ylätason jakoa. Voit tarkastella osoitteessa pääkohteen/alikohteen suhde **viite**&gt;**ylemmän tason tietoja**.
+    -   Alemman tason jakelut, kuten alennus, kulut ja arvonlisävero noudattavat aina ylätason jakoa. Voit tarkastella päätason ja alitasojen suhdetta kohdassa **Viite** &gt; > **Ylätason tiedot**.
     -   Päätili ja taloushallinnon dimensiot saattavat olla muokattavia myös alatasolla.
     -   Taloushallinnon dimensiot kirjanpidollisissa jaoissa noudattavat oletusarvokuviota, jossa tiedoston voi laajentaa. Lisätietoja on aiheeseen liittyvissä artikkeleissa.
-    -   Varianssijaokoja voidaan luoda vastaavissa skenaarioita, kuten vastaava toimittajalasku ja ostotilaus. Voit tarkastella kirjanpidon jakauman vastaavat suhteet **viite**&gt;**tiedot**.
-    -   **Oikaise**-painike tulee näkyviin ja on käytössä niille asiakirjoille, jotka tukevat oikaisuja. **Oikea** Luo uusia jakoja. Ensinnäkin jakelut on luotu, joka palauttaa alkuperäisen jaot. Näitä jakoja ei voi muokata. Luodaan seuraavaksi uusi oikea kirjanpidolliset jaot. Näitä jakoja voidaan muokata, jos alkuperäisiä jakoja voidaan muokata.
+    -   Varianssijaokoja voidaan luoda vastaavissa skenaarioita, kuten vastaava toimittajalasku ja ostotilaus. Voit tarkastella kirjanpidollisten jakojen täsmäytyksen suhteita kohdassa **Viite** > &gt; **Asiakirjan tiedot**.
+    -   **Oikaise**-painike tulee näkyviin ja on käytössä niille asiakirjoille, jotka tukevat oikaisuja. **Korjaa** luo uusia jakoja. Ensin luodaan jakaumat, jotka peruuttavat alkuperäiset jaot. Näitä jakoja ei voi muokata. Luodaan seuraavaksi uudet oikeat kirjanpidolliset jaot. Näitä jakoja voidaan muokata, jos alkuperäisiä jakoja voidaan muokata.
     -   ** Projektin tiedot**-painike on käytettävissä jatkeena silloin kun rivi liittyy projektiin. Projektin kirjanpidollisien jakojen avulla voit muokata tietoja, kuten rahoituksen lähde- ja riviominaisuudet.
-    -   Voit tarkastella nykyisen asiakirjan kirjanpidollinen tila- **viite**. Tilan koko asiakirjassa on ja ilmaisee, onko asiakirja on keskeneräinen tai valmis.
--   ** Tarkastele jakoja ** – kaikki rivit ja rahamäärät kirjanpidollisten jakojen tarkastella asiakirjaa. Et voi muokata kirjanpidollisia jakoja tästä näkymästä.
+    -   Voit tarkastella nykyisen asiakirjan kirjanpidollista tilaa kohdassa **Viite**. Tila on koko asiakirjalle ja ilmaisee, onko asiakirja on keskeneräinen tai valmis.
+-   **Tarkastele jakoja** – Näytä asiakirjan kirjanpidolliset jaot kaikille riveille ja rahasummille. Et voi muokata kirjanpidollisia jakoja tästä näkymästä.
 
 
-Lisätietoja on ohjeaiheessa [kirjanpidolliset jaot ja Alareskontran kirjauskansioviennit tekstimuotoisten laskujen](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+Lisätietoja: [Vapaatekstilaskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
+
+
 

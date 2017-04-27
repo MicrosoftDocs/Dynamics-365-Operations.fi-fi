@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling-options"></a>Työvaiheen ajoitusvaihtoehdot
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä aiheessa kuvataan työvaiheiden ajoittamisen asetuksia. Työvaiheiden ajoitusta voidaan käyttää, kun tuotantoprosessin kestosta halutaan yleisarvio.
 
 Työvaiheiden ajoitus laskee tuotantotilauksen seuraavat tiedot:
@@ -128,6 +131,8 @@ Voit tallentaa nykyiset arvot oletusarvoiksi. Käytettävissä ovat seuraavat ka
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Operations scheduling](operations-scheduling.md)
+[Työvaiheiden ajoitus](operations-scheduling.md)
+
+
 
 

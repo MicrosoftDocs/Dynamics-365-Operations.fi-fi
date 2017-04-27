@@ -1,5 +1,5 @@
 ---
-title: "Hyväksy ja Vahvista osto"
+title: "Ostotilausten hyväksyminen ja vahvistaminen"
 description: "Tässä artikkelissa käsitellään ostotilauksen tilat, jotka se läpäisee luonnin jälkeen, ja muutoksenhallinnan käyttöönoton vaikutuksen ostotilauksiin."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="approve-and-confirm-purchase-orders"></a>Hyväksy ja Vahvista osto
+# <a name="approve-and-confirm-purchase-orders"></a>Ostotilausten hyväksyminen ja vahvistaminen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa käsitellään ostotilauksen tilat, jotka se läpäisee luonnin jälkeen, ja muutoksenhallinnan käyttöönoton vaikutuksen ostotilauksiin.
 
@@ -73,12 +76,14 @@ Kun tilaus on vahvistettu, et voi enää poistaa sitä. Voit kuitenkin peruuttaa
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Ostotilausten yleiskatsaus](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Ostotilauksen luominen](purchase-order-creation.md)
 
 [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
 
 [Toimittajan laskujen yleiskatsaus](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

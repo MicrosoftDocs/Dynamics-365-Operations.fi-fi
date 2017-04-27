@@ -1,5 +1,5 @@
 ---
-title: "Pääsuunnittelun toimipaikan kattavuutta varten, varasto ei pakollinen"
+title: "Pääsuunnittelu – toimipaikan kattavuus, varasto ei pakollinen"
 description: "Tässä aiheessa kuvataan, miten suunnitellaan nimike, jolle on suunniteltu toimipaikan dimensio kattavuutta varten."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Pääsuunnittelun toimipaikan kattavuutta varten, varasto ei pakollinen
+# <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Pääsuunnittelu – toimipaikan kattavuus, varasto ei pakollinen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä aiheessa kuvataan, miten suunnitellaan nimike, jolle on suunniteltu toimipaikan dimensio kattavuutta varten.
 
@@ -39,9 +42,9 @@ Tämä pääsuunnitteluskenaario sisältää seuraavat ehdot:
 -   Varaston dimensiota ei ole määritetty kattavuuden suunnittelua varten. Tämän vuoksi tarjonta ja kysyntä yhdistetään toimipaikkakohtaisesti ja ehkä myös muiden sellaisten dimensioiden mukaan, joille on tehty kattavuussuunnitelma.
 
 Seuraava kuva osoittaa, miten pääsuunnittelu etenee. Kuvassa viitataan seuraaviin parametreihin:
--   Nimikkeen kattavuus on määritetty nimikkeelle. Valitse **tuotetietojen hallinta &gt;tuotteita&gt; vapautetut tuotteet**. Valitse nimike ja valitse sitten **suunnitelma &gt;nimikkeen kattavuus**.
--   Varastolle on määritetty täydennyssuhteet. Valitse **Inventory management &gt;asennus &gt;varastoerittelyä &gt;varastot**. Valitse **Pääsuunnittelu**-välilehdessä **Päävarasto**-kenttäryhmä.
--   Oletustilauksen tyypiksi on määritetty Tuotanto, Ostotilaus tai Kanban. Valitse **tuotetietojen hallinta &gt;tuotteita&gt; vapautetut tuotteet**. Valitse nimike ja valitse sitten **suunnitelma &gt;tilauksen oletusasetukset**. Tarkista **Tilauksen oletusasetukset** -lomakkeesta **Oletusarvoinen tilaustyyppi** -kenttä.
+-   Nimikkeen kattavuus on määritetty nimikkeelle. Valitse **Tuotetietojen hallinta &gt; Tuotteet &gt; Vapautetut tuotteet**. Valitse nimike ja valitse sitten **Suunnitelma &gt; Nimikkeen kattavuus**.
+-   Varastolle on määritetty täydennyssuhteet. Valitse **Inventoinnin- ja varastonhallinta &gt; Asetukset &gt; Varastoerittely &gt; Varastot** Valitse **Pääsuunnittelu**-välilehdessä **Päävarasto**-kenttäryhmä.
+-   Oletustilauksen tyypiksi on määritetty Tuotanto, Ostotilaus tai Kanban. Valitse **Tuotetietojen hallinta &gt; Tuotteet &gt; Vapautetut tuotteet**. Valitse nimike ja valitse sitten **Suunnitelma &gt; Tilauksen oletusasetukset**. Tarkista **Tilauksen oletusasetukset** -lomakkeesta **Oletusarvoinen tilaustyyppi** -kenttä.
 
 ![Toimipaikan kattavuuden kysyntä, varasto ei pakollinen    ](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
 
@@ -50,7 +53,7 @@ Seuraava kuva osoittaa, miten pääsuunnittelu etenee. Kuvassa viitataan seuraav
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Pääsuunnittelu ja multisite-toiminnot](master-plan-multisite-functionality.md)
 
 [Pääsuunnittelu – sivuston kattavuus, varasto pakollinen](master-plan-site-coverage-warehouse-mandatory.md)
 
@@ -58,6 +61,8 @@ Seuraava kuva osoittaa, miten pääsuunnittelu etenee. Kuvassa viitataan seuraav
 
 [Pääsuunnittelu – sivuston ja varaston kattavuus, varasto pakollinen](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Pääsuunnittelu - miten määräytyy Tuoterakenteen versio](master-plan-bom-version-determined.md)
+[Pääsuunnittelu – tuoterakenneversion määrittäminen](master-plan-bom-version-determined.md)
+
+
 
 

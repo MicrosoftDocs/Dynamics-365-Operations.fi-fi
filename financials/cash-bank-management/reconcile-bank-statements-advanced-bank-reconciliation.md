@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
 
+[!include[banner](../includes/banner.md)]
+
+
 Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 for Operations -järjestelmässä. Tässä aiheessa käsitellään täsmäytysprosessia.  
 
 <a name="import-an-electronic-bank-statement"></a>Tuo sähköinen tiliote
@@ -74,7 +77,7 @@ Tiliotteen tapahtumia voi täsmäyttää kolmella tavalla:
 -   Täsmäytä tapahtumat vastatiliotetapahtumien kanssa.
 -   Merkitse tapahtumat **uusiksi**, jolloin ne kirjataan myöhemmin pankkitapahtumiksi Dynamics 365 for Operations -järjestelmässä.
 
-Vastaavat tapahtumat manuaalisesti, valitse tapahtumat- **pankin tiliotteen kauppatapahtumaa** ruudukon, valitse vastaavat tapahtumat **toimien pankin** ruudukko ja valitse sitten **vastaa**. Valitut tapahtumat siirretään täsmäyttämättömien tapahtumien yläruudukoista täsmäytettyjen tapahtumien alaruudukoihin. Lisäksi täsmäytetyt ja täsmäyttämättömät kokonaissummat päivitetään. Voit käyttää Voi olla yksi yhteen-, monta yhteen- ja monta moneen -tapahtumatäsmäytyksiä. Täsmäytysten on noudatettava sääntöjä sallituista päivämääräeroista ja tapahtumatyyppien yhdistämismäärityksistä. Nämä säännöt määritetään **Maksuliikennetiedot** -sivulla.
+Voit täsmäyttää tapahtumat manuaalisesti valitsemalla ensin tapahtumat **Tiliotteen tapahtumat** -ruudukossa, valitsemalla siten tapahtumat **Operations-pankkitapahtumat**-ruudukossa. Valitse lopuksi **Täsmäytä**. Valitut tapahtumat siirretään täsmäyttämättömien tapahtumien yläruudukoista täsmäytettyjen tapahtumien alaruudukoihin. Lisäksi täsmäytetyt ja täsmäyttämättömät kokonaissummat päivitetään. Voit käyttää Voi olla yksi yhteen-, monta yhteen- ja monta moneen -tapahtumatäsmäytyksiä. Täsmäytysten on noudatettava sääntöjä sallituista päivämääräeroista ja tapahtumatyyppien yhdistämismäärityksistä. Nämä säännöt määritetään **Maksuliikennetiedot** -sivulla.
 
 Täsmäytyksessä voi esiintyä pyöristyseroja. Voit täsmäyttää yhden tiliotteen tapahtuman ja yhden Dynamics 365 for Operations -pankkitapahtuman, jolla on pyöristyseroja, jos pyöristyserot ovat pankkitilin **Sallittu pyöristysero** -kentässä määritetyn toleranssisumman rajoissa. Summa näkyy **Oikaisusumma**-kentässä vastaavassa Dynamics 365 for Operations -pankkitapahtumassa. Kun pankkitilin täsmäytys on merkitty täsmäytetyksi, korjaukset kirjataan automaattisesti käyttämällä päätiliä, joka on määritetty liitetyssä pankkitapahtumatyypissä. Korjauksia ei tueta **Tarkistus** ja **Talletus** -asiakirjatyypeissä. 
 
@@ -90,5 +93,7 @@ Kun kaikki tiliotteen rivit on käsitelty, merkitse pankkitilin täsmäytyksen l
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Kirjaa uudet täsmäytykseen liitetyt tapahtumat
 Täsmäytyksen laskentataulukossa **uusiksi** merkityt tiliotteen tapahtumat kirjataan **Tiliote**-sivulla. Voit tarkastella tiliotteen tietoja valitsemalla **Tiliote**-sivulla tiliotteen tunnuksen. Voit tarkastella uusien tapahtumien ja niihin liitettyjen kirjanpidon merkintöjen tietoja valitsemalla **Kirjanpito**-sivulla **Näytä jakaumat**- ja **Tarkastele kirjanpitoa** -vaihtoehdot. Kirjaa **uusiksi** merkityt tiliotteen rivit kirjanpitoon valitsemalla **Kirjaa**. Huomaa, että tiliote voidaan kirjata vain kerran.
+
+
 
 

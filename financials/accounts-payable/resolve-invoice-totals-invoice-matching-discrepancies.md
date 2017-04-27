@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="resolve-discrepancies-during-invoice-totals-matching"></a>Laskusummien täsmäytyksen ristiriitojen täsmäytys
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Yksi laskujen täsmäytyksen tarkistamisen tyyppi on laskusummien täsmäytys. Määritä järjestelmä suorittamaan laskusummien täsmäytys **Ostoreskontran parametrit** sivun **Laskun oikeellisuustarkistus** -välilehdellä asettamalla **Täsmäytä laskusummat** -vaihtoehdon arvoksi **Kyllä**. 
@@ -39,6 +42,8 @@ Kun olet löytänyt ristiriidan, sinun on ehkä otettava yhteys toimittajaan, jo
 -   Hyväksy hintojen ero ja kirjaa täsmäytysristiriitoja sisältävä lasku. Järjestelmäsi saattaa olla määritetty edellyttämään hyväksynnän ennen laskun kirjaamista, jos sillä on täsmäytysristiriitoja. Tässä tapauksessa sinun on hyväksyttävä täsmäytysristiriita ja valinnaisesti syöttää hyväksyntää koskeva kommentti. Voit sitten valita laskun kirjaamisen.
 -   Muuta laskun summa odotetun summan mukaiseksi ja kirjaa lasku.
 -   Pyydä toimittajalta täysi hyvitys ja uusi korjattu lasku.
+
+
 
 
 

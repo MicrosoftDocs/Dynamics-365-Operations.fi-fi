@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Yksi tosite useille asiakkaan tai toimittajan tietueille
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä aihe sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille. Tämä toiminto poistetaan Microsoft Dynamics 365 for Operations tulevissa versioissa, minkä vuoksi emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn. 
 
 Tavallisimpia esimerekkejä yhden tositteen käytöstä useita asiakkaita tai toimittajia varten ovat asiakkaiden välisten saldojen siirto ja balansin nettoutus asiakkaiden ja toimittajien välillä samassa organisaatiossa. 
@@ -91,7 +94,7 @@ Jos käyttäjä on tyytymätön käteisalennuksen jakamiseen kulujakaumiin alkup
 
 |             |                  |              |                 |           |            |                 |                    |
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Tosite** | **Tilityyppi** | **Tili**  | **Kuvaus** | **Veloitus** | **Hyvitys** | **Offset type** | **Offset account** |
+| **Tosite** | **Tilityyppi** | **Tili**  | **Kuvaus** | **Veloitus** | **Hyvitys** | **Vastatilin tyyppi** | **Vastatili** |
 | GNJL001     | Toimittaja           | 1001         | INV1            |           | 100,00     | Kirjanpito          | &lt;tyhjä&gt;      |
 | GNJL001     | Kirjanpito           | 606300-001-- | INV1            |   50,00   |            | Kirjanpito          | &lt;tyhjä&gt;      |
 | GNJL001     | Kirjanpito           | 606300-002-- | INV1            |   50,00   |            | Kirjanpito          | &lt;tyhjä&gt;      |
@@ -248,5 +251,7 @@ Ei-toivottujen ongelmien välttämiseksi tämän tapahtuman tulevissa kirjauksis
 | 002         | Toimittaja           | 1001        |                 |  75,00    |            | Kirjanpito          | 999999---          |
 
  
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Uuden valmistetun nimikkeen standardikustannusten päivittäminen
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää ohjeita uuden valmistetun tuotteen standardikustannusten päivittämiseen. 
 
 Näissä ohjeissa lähdetään siitä, että standardikustannusten päivityksissä käytetään kahden version mallia. Kahden version mallissa yksi kustannuslaskelmaversio sisältää alun perin määritetyt lukitun kauden standardikustannukset ja toinen kustannuslaskelmaversio uusia valmistettuja nimikkeitä koskevat lisäpäivitykset. Lisäpäivitykset lisätään kustannustietueina toiseen kustannuslaskelmaversioon ja lopuksi ne myös aktivoidaan. Kahden version lähestymistapa edellyttää, että määritetään toinen kustannuslaskelmaversio. Tämän kustannuslaskelmaversion määritysohjeet:
@@ -47,6 +50,8 @@ Jos haluat lisätä uusia valmistettavia nimikkeitä lukitun kauden eri kohtiin,
 5.  Muuta estomerkkiä **Kustannuslaskentaversion määritys** -sivulla siten, että toiseen kustannuslaskelmaversioon lisätyt odottavat kustannustietueet voidaan aktivoida.
 6.  Ota käyttöön kaikki toiseen kustannuslaskelmaversioon lisätyt odottavat kustannustietueet **Aktivoi hinnat** -sivulla (avataan **Kustannuslaskentaversion ylläpito** -sivulta). Yksittäisten nimikkeiden odottavia kustannustietueita voi myös ottaa käyttöön napsauttamalla **Aktivoi**-painiketta **Nimikkeen hinta** -sivulla.
 7.  Voit estää muiden tietojen ylläpidon muuttamalla toiseen kustannuslaskentaversioon lisättyjä estomerkintöjä **Kustannuslaskentaversion määritys** -sivulla. Estomenettelyt estävät uusien odottavien kustannusten syötön ja odottavien kustannusten aktivoinnin.
+
+
 
 
 

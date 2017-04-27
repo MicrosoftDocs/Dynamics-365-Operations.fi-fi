@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-overview"></a>Arvonlisäveron yleiskuvaus
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää arvonlisäverojärjestelmän yleiskatsauksen. Artikkelissa esitellään arvonlisäveroasetusten elementit ja se, miten ne toimivat yhdessä.
 
 <a name="overview"></a>Yleiskuvaus
 --------
 
-Arvonlisävero-kehys tukee monenlaisia välillisten verojen, kuten arvonlisäveron, arvonlisävero (ALV), tavaroiden ja palvelujen tax (GST), yksikkökohtaisena maksut ja ennakonpidätys. Nämä verot lasketaan ja dokumentoitu osto- ja myynti-tapahtumien aikana. Ajoittain ne täytyy raportoida ja makseta veroviranomaisille. 
+Arvonlisäveroympäristö tukee monenlaisia välillisiä veroja, kuten arvonlisäveroja (ALV), GST-veroa, yksikköperusteisia maksuja ja ennakonpidätystä. Nämä verot lasketaan ja dokumentoidaan osto- ja myyntitapahtumien aikana. Ne on myös ilmoitettava ja maksettava veroviranomaisille säännöllisesti. 
 
 Yksiköt, joista veroasetukset kostuvat, ja niiden väliset suhteet näkyvät seuraavassa kaaviossa.
 
 [![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
-Jokainen, joka on otettava huomioon yrityksen arvonlisäveron arvonlisäverokoodi on määritettävä. Arvonlisäverokoodi sisältää veroprosentin ja arvonlisäveron laskusäännöt. 
+Jokaiselle yrityksen kirjaamalle arvonlisäverolle on määritettävä arvolisäverokoodi. Arvonlisäverokoodi sisältää veroprosentin ja arvonlisäveron laskusäännöt. 
 
 Jokainen arvonlisäverokoodi on linkitettävä arvolisäveron tilityskauteen. Arvonlisäveron tilityskausi määrittää, kuinka usein arvolisävero on ilmoitettava ja maksettava arvonlisäveroviranomaisille. Jokainen arvonlisäveron tilityskausi on määritettävä arvolisäveroviranomaiseen. Arvonlisäveroviranomainen ilmaisee yksikön, jolle arvonlisävero ilmoitetaan ja maksetaan. Se määrittää myös arvonlisäveroilmoituksen asettelun. Arvonlisäveroviranomaiset voivat liittyä toimittajatileihin. 
 
@@ -69,26 +72,28 @@ Jokaiselle tapahtumalle (kuten myynti- ja ostoasiakirjan riveille ja kirjauskans
 Voit hakea lasketun arvonlisäveron jokaisessa tapahtumassa avaamalla **Arvonlisäverotapahtuma**-sivun. Voit etsiä arvolisäveron joko asiakirjan riville tai koko asiakirjalle. Voit oikaista tiettyjen asiakirjojen (kuten toimittajan laskun ja kirjauskansioiden) lasketun arvonlisäveron, jos alkuperäisessä asiakirjassa on poikkeavia summia.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Arvonlisäveron tilitys ja ilmoittaminen
-Arvonlisävero on ilmoitettava ja maksettava veroviranomaisille säännöllisin väliajoin (esimerkiksi kuukausittain tai neljännesvuosittain). Microsoft Dynamics-365 toiminnoissa on toimintoja, joiden avulla voit maksaa veroa välin ja Vastatilin ALV-laskelmatilille kirjanpidon kirjausryhmät on määritetty saldoa. Voit käyttää tätä toimintoa **selvittää ja kirjata arvonlisäveron** sivulla. Arvonlisäveron tilityskauden arvonlisävero tulisi selvittää, on määritettävä. 
+Arvonlisävero on ilmoitettava ja maksettava veroviranomaisille säännöllisin väliajoin (esimerkiksi kuukausittain tai neljännesvuosittain). Microsoft Dynamics 365 for Operationsissa on toimintoja, joilla voit tilittää kauden verotilit ja vastakirjat saldot verotilitystilille kirjanpidon kirjausryhmien määritysten mukaisesti. Voit käyttää tätä toimintoa **Tilitä ja kirjaa arvonlisävero** -sivulla. Arvonlisäveron tilityskausi, jonka ajalta arvonlisäverot on tilitettävä, on määritettävä. 
 
 Kun arvonlisävero on maksettu, arvolisäveron tilitystilin saldo on täsmäytettävä pankkitiliin. Jos arvonlisäveron tilityskaudessa määritetty arvonlisäveroviranomainen liittyy toimittajatiliin, arvolisäveron saldo kirjataan avoimena toimittajan laskuja, joka voidaan sisällyttää säännölliseen maksuehdotukseen.
 
 ## <a name="conditional-sales-tax"></a>Suoritusperusteinen vero
-Suoritusperusteinen vero on arvonlisävero, joka maksetaan suhteessa todellisten summa, joka maksetaan lasku. Vastaavasti normaalin ALV lasketaan laskutuksen yhteydessä. Suoritusperusteinen vero on maksettava arvonlisäveroviranomaisen, kun maksu kirjataan, ei silloin, kun lasku kirjataan. Kun lasku on kirjattu, tapahtuma on kuvattava arvonlisäverokirjan raporttiin. Tapahtuma on kuitenkin jätetään arvonlisäveron maksuraportti. 
+Suoritusperusteinen vero ilmaisee, että arvonlisävero on maksettava suhteessa laskulla maksettuun summaan. Vastaavasti normaali ALV lasketaan laskutuksen yhteydessä. Suoritusperusteinen vero on maksettava veroviranomaiselle maksun kirjaamisen yhteydessä, ei laskua kirjattaessa. Kun lasku on kirjattu, tapahtuma on raportoitava arvonlisäverokirjan raporttiin. Tapahtuma on kuitenkin jätettävä pois arvonlisäveron maksuraportista. 
 
-Jos valitset Suoritusperusteinen vero-valintaruutu parametrit-lomakkeessa Kirjanpito, ei arvonlisäveroa voidaan vähentää ennen kuin lasku on maksettu. Tämä on lakisääteinen joissakin maissa/alueilla.
+Jos valitset Suoritusperusteinen vero -valintaruudun Kirjanpidon parametrit -lomakkeessa, arvonlisäveroa ei voida vähentää ennen kuin lasku on maksettu. Tämä on juridinen edellytys muutamissa maissa/alueilla.
 
 > [!NOTE]
-> Kun valitset Suoritusperusteinen vero-valintaruutu, arvonlisäverokoodien ja arvonlisäveroryhmien määrittäminen ja myös Luo kirjanpidon kirjausryhmät-toiminnot. |
+> Kun valitset Suoritusperusteinen vero -valintaruudun, toiminnon käyttäminen edellyttää arvonlisäverokoodien ja -ryhmien määrittämistä ja kirjanpidon kirjausryhmien luomista. |
 
 ###  <a name="example"></a>Esimerkki
 
-Arvonlisäverot tilitetään kuukausittain. 15. kesäkuuta-Luo myyntilasku 10 000 + ALV.
--   Arvonlisävero on 25 prosenttia eli 2 500.
--   Laskun maksu on maksettava 30 päivänä heinäkuuta.
+Arvonlisäverot tilitetään kuukausittain. Kesäkuun 15. päivä luodaan asiakaslasku 10 000 + ALV.
+-   Arvonlisävero on 25 prosenttia eli 2 500 euroa.
+-   Lasku on maksettava 30.7.
 
-Voit yleensä on tilitettävä ja maksettava 2 500 veroviranomaiselle kirjaamisen yhteydessä kesäkuussa, vaikka et ole saanut maksun asiakkaalta. 
+Yleensä ALV 2 500 olisi tilitettävä ja maksettava veroviranomaiselle laskun kirjaamisen yhteydessä kesäkuussa, vaikka et ole saanut maksua asiakkaalta. 
 
-Kuitenkin Jos käytät suoritusperusteisen arvonlisäveron, selvitetään veroviranomaiselle kun saat maksun asiakkaalta heinäkuun 30.
+Jos kuitenkin käytät suoritusperusteista arvonlisäveroa, täsmäytät veron veroviranomaiselle, kun saat maksun asiakkaalta 30.7.
+
+
 
 

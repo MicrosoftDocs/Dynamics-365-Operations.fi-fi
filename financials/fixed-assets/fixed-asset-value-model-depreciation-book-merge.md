@@ -1,6 +1,6 @@
 ---
 title: "Käyttöomaisuuserän arvomallin ja poistokirjan yhdistäminen"
-description: "Aiemmissa versioissa oli kaksi arvostus käsitteiden käyttöomaisuus - arvomallit ja poistokirjat. Toimintojen 1611-version Microsoft Dynamics-365 arvomallin toiminnoilla ja poisto kirja toiminnot on yhdistetty yksi käsite, joka tunnetaan nimellä kirja."
+description: "Aiemmissa julkaisuversioissa oli kaksi käyttöomaisuuserien arviointikäsitettä: arvomallit ja poistokirjat. Microsoft Dynamics 365 for Operations -versiossa 1611 arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, josta käytetään nimitystä &quot;kirja&quot;."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Käyttöomaisuuserän arvomallin ja poistokirjan yhdistäminen
 
-Aiemmissa versioissa oli kaksi arvostus käsitteiden käyttöomaisuus - arvomallit ja poistokirjat. Toimintojen 1611-version Microsoft Dynamics-365 arvomallin toiminnoilla ja poisto kirja toiminnot on yhdistetty yksi käsite, joka tunnetaan nimellä kirja.
+[!include[banner](../includes/banner.md)]
 
-Uusi kirja-toiminto perustuu aiempaan arvomalli-toimintoon, mutta sisältää myös kaikki aiemmin pelkästään poistokirjoihin sisältyvät toiminnot. [![Kirja nimellä yhdistämisestä toiminnallisuuteen arvo arvomallin ja poistokirjan kirjan](./media/fixed-assets.png)](./media/fixed-assets.png) yhdistämisen, koska voit nyt käyttää yhtenäisiä sivuja, kyselyt ja raportit kaikille Käyttöomaisuus-prosesseille. Tämän aiheen taulukoissa kuvataan aiempia arvomallien ja poistokirjojen toimintoja verrattuina uusien kirjojen toimintoihin.
+
+Aiemmissa julkaisuversioissa oli kaksi käyttöomaisuuserien arviointikäsitettä: arvomallit ja poistokirjat. Microsoft Dynamics 365 for Operations -versiossa 1611 arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, josta käytetään nimitystä "kirja".
+
+Uusi kirja-toiminto perustuu aiempaan arvomalli-toimintoon, mutta sisältää myös kaikki aiemmin pelkästään poistokirjoihin sisältyvät toiminnot. [![Kirja arvomallin yhdistämisenä ja poistokirjan toiminnot](./media/fixed-assets.png)](./media/fixed-assets.png) Yhdistämisen ansiosta voi nyt käyttää samaa sivu-, kysely- ja raporttisarjaa kaikille käyttöomaisuusprosesseille. Tämän aiheen taulukoissa kuvataan aiempia arvomallien ja poistokirjojen toimintoja verrattuina uusien kirjojen toimintoihin.
 
 ## <a name="setup"></a>Luo perustiedot
 Kirjat suorittavat oletusarvoisesti kirjauksia sekä kirjanpitoon (GL) että käyttöomaisuuserän alareskontraan. Kirjoissa on uusi **Kirjaa kirjanpitoon** -asetus, joka mahdollistaa Kirjataan kirjanpitoon- ja Kirjaa vain käyttöomaisuuserän alareskontraan -toimintojen poistamisen käytöstä. Tämä toiminto muistuttaa aiempaa poistokirjojen kirjaustapaa. Kirjauskansioiden nimien asetuksissa on uusi kirjanpitotaso "Ei mitään". Tämä kirjanpitotaso lisättiin erityisesti käyttöomaisuustapahtumia varten. Kirjoissa, jotka eivät kirjaa tapahtumia kirjanpitoon, on käytettävä kirjaamiseen kirjauskansionimeä, joka on määritetty kirjanpitotasolle **Ei mitään**.
@@ -66,5 +69,7 @@ Kyselyt ja raportit tukevat kaikkia kirjoja. Raportit, jotka eivät sisälly seu
 
 ## <a name="upgrade"></a>Päivitä
 Päivitysprosessi siirtää aiemmin määritetyt asetukset ja kaikki olemassa olevat tapahtumat uuden kirjan rakenteeseen. Arvomallit säilyvät nykyisellään, kirjana joka tekee kirjauksia kirjanpitoon. Poistokirjat sen sijaan siirretään kirjaan, jonka **Kirjaa kirjanpitoon** -asetus on **Ei**. Poistokirjan kirjauskansioiden nimet siirretään kirjanpidon kirjauskansion nimeen, jonka kirjanpitotasoksi on määritetty **Ei mitään**.
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-violations-and-cases"></a>Valvo käytäntövirheitä ja tapauksia
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, miten valvontatapaukset luodaan valvontakäytäntöjen sääntöjen rikkomuksista. Artikkeli sisältää tietoja myös valvontakäytäntöjen erilaisista tavoista käyttää asiakirjavalinnan päivämääräväliä.
 
 <a name="how-audit-cases-are-generated"></a>Kuinka tarkasteltuja tapauksia luodaan
@@ -39,10 +42,10 @@ Vavontakäytännöt suoritetaan erätilassa. Valvontakäytäntöä suoritettaess
 
 Kunkin käytäntösääntö käsittelee useita asiakirjoja. Käytäntösääntö valitsee asiakirjoja, jotka ovat asiakirjan valintapäivämäärän alueella ja jotka vastaavat määritettyjä ehtoja. Esimerkiksi yksi käytäntösääntö saattaa valita kuluraportit, joissa on ateriat, jotka ylittävät 50,00. Toinen käytäntösääntö saattaa valita toimittajalaskut, jotka suoritetaan tietylle toimittajalle. Kullekin valitulle asiakirjalle, joka on valittu joukossa, muodostuu rikkominen. Rikkominen on tietue, että tietty asiakirja, kuten lasku 12345, ei seuraa käytäntösääntöä. 
 
-Useita valvontarikkomus tietueita on ryhmitelty ja ne liittyvät valvontatapauksiin. Oletusarvona. kunkin valvontakäytännön tapaukset ryhmitellään valvontakäytäntösäännön perusteella. Halutessasi voit valita muita ryhmittelyehtoja käyttämällä **Tapauksien ryhmittelyehdot** -sivua. Esimerkiksi kuluraportin otsikot voit ryhmitellä projektin tunnus ja toimittajan laskut mukaan toimittajatili. Tässä tapauksessa kaikki kuluraportin otsikon rikkomukset, joilla on sama projektin tunnuksen ryhmitellään samaan asiaan ja kaikki toimittajan laskut, joilla on sama toimittajatili ryhmitellään samaan asiaan. 
+Useita valvontarikkomus tietueita on ryhmitelty ja ne liittyvät valvontatapauksiin. Oletusarvona. kunkin valvontakäytännön tapaukset ryhmitellään valvontakäytäntösäännön perusteella. Halutessasi voit valita muita ryhmittelyehtoja käyttämällä **Tapauksien ryhmittelyehdot** -sivua. Voit ryhmitellä esimerkiksi kulujen otsikot projektitunnuksen mukaan ja toimittajalaskut toimittajatilin mukaan. Tällöin kaikki kuluraportin otsikoiden rikkomiset, joilla on sama projektitunnus, ryhmitellään samaan tapaukseen ja kaikki toimittajalaskut, joilla on sama toimittajatili, ryhmitellään samaan tapaukseen. 
 
 > [!NOTE]
-> Tarkistuskäytännön sääntöjä, jotka perustuvat, **monista** Kyselylaji, rikkomukset eivät ole ryhmitelty käytännön sääntöä tai ehtoihin, jotka määritetään **asia ryhmittely** sivulla. Sen sijaan ryhmittelyperusteena ovat kriteerit, jotka sisältyvät tarkistuskäytännön sääntöön. Esimerkiksi, jos käytäntösääntö laskee kuluraporttien kaksoiskappaleiden kulut samalle summalle, myyjän tunnukselle ja päivämäärälle, kaikki kulut, joilla on samat arvot niissä kentissä, ovat yksi tapaus. Kulut, joilla on erilaiset arvot, ovat erillisessä laatikossa.
+> Valvontakäytännön säännöt, jotka perustuvat **Duplikaatti**-kyselytyyppiin, rikkeitä ei ole ryhmitelty käytäntösäännöittäin tai ehtojen mukaan, jotka on määritetty **Tapausten ryhmittelyehto** -sivulla. Sen sijaan ryhmittelyperusteena ovat kriteerit, jotka sisältyvät tarkistuskäytännön sääntöön. Esimerkiksi, jos käytäntösääntö laskee kuluraporttien kaksoiskappaleiden kulut samalle summalle, myyjän tunnukselle ja päivämäärälle, kaikki kulut, joilla on samat arvot niissä kentissä, ovat yksi tapaus. Kulut, joilla on erilaiset arvot, ovat erillisessä laatikossa.
 
 Sen jälkeen kun valvontatapaukset on luotu, kun ne käsitellään käyttämällä tyypillisiä prosesseja tapaushallinnan avulla.
 
@@ -56,6 +59,8 @@ Tässä on muita tapoja, joilla tarkistuskäytäntö käyttää asiakirjan valin
 -   Käytäntösäännöt, jotka perustuvat **Luettelohaku**-kyselylajiin, käytäntö käsittelee valvottuja asiakirjoja, jotka ovat voimassa asiakirjan valitun ajanjakson viimeisenä päivänä.
 
 
-Lisätietoja on ohjeaiheessa [valvoa käytäntösääntöjä](audit-policy-rules.md)
+Lisätietoja on kohdassa [Tilintarkastuskäytännön säännöt](audit-policy-rules.md)
+
+
 
 

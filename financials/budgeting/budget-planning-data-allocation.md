@@ -1,6 +1,6 @@
 ---
 title: Budjettisuunnittelun tietojen kohdistus
-description: "Tässä artikkelissa kuvataan käytettävissä olevat Microsoft Dynamics-365 toiminnoissa ja miten niitä voidaan käyttää eri kohdistusmenetelmät."
+description: "Tässä artikkelissa on tietoja Microsoft Dynamics 365 for Operationsin käytettävissä olevista kohdistustavoista ja niiden käyttämisestä."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,15 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-data-allocation"></a>Budjettisuunnittelun tietojen kohdistus
 
-Tässä artikkelissa kuvataan käytettävissä olevat Microsoft Dynamics-365 toiminnoissa ja miten niitä voidaan käyttää eri kohdistusmenetelmät.  
+[!include[banner](../includes/banner.md)]
+
+
+Tässä artikkelissa on tietoja Microsoft Dynamics 365 for Operationsin käytettävissä olevista kohdistustavoista ja niiden käyttämisestä.  
 
 Voit jakaa tiedot budjettisuunnitelmaan useilla eri tavoilla arvioitujen summien kuvaamista varten.
 
 ## <a name="allocation-methods"></a>Kohdistusmenetelmät
 Kolme kohdistusmenetelmää (Kohdista kausille, Kohdista dimensioille ja Käytä kirjanpidon kohdistussääntöjä) voivat luoda budjettisuunnitelman rivejä, jotka perustuvat saman budjettisuunnitelman riveihin. Kolme muuta menetelmään (Yhdistä, Jaa ja Kopioi budjettisuunnitelmasta) voivat luoda budjettisuunnitelman rivejä muissa budjettisuunnitelmissa. Jokaiselle kuudelle kohdistusmenetelmälle voi määrittää kohdeskenaarion. Kohdeskenaario voi olla sama kuin lähdeskenaario, mutta se voi olla myös erilainen. Lisäksi voit määrittää, lisätäänkö uudet rivit budjettisuunnitelmaan vai korvataanko budjettisuunnitelman nykyiset rivit.
 
-[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)<ph id="t1">
-</ph>**Kohdista kausille** – kohdistustunnuksen-luokkaa käytetään kohdistamaan Budjettisuunnitelman rivejä suunnitelman lähdeskenaario kohdeskenaarion kausille. Lähdesumma liitetään kohdeskenaarion useisiin riveihin kaudenkohdistusluokassa määritetyn prosenttiosuuden ja päivämäärän perusteella.         
+[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+**Kohdista kausille** – Kaudenkohdistusluokkaa voi käyttää kohdistettaessa lähdebudjettiskenaarion budjettisuunnitelman rivit kohdeskenaarion kausiin. Lähdesumma liitetään kohdeskenaarion useisiin riveihin kaudenkohdistusluokassa määritetyn prosenttiosuuden ja päivämäärän perusteella.         
 
 [![AllocateToDimensions](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Kohdista dimensioille** – Budjettisuunnitelman rivit kohdistetaan lähdebudjettisuunnittelun skenaariosta kohdeskenaarion yhteen tai useaan riviin valitussa budjetin kohdistusehdossa määritettyjen prosenttiosuuksien ja taloushallinnon dimensioiden perusteella.           
@@ -58,7 +61,7 @@ Voit suorittaa kohdistuksia budjettisuunnitelman sivulla, kun valitset kohdistet
 
 [![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
-Valitse kohdistusmenetelmä. Tämän jälkeen määritetään jäljellä olevat kentät valitun menetelmän mukaan. Nämä kentät sisältävät budjettisuunnitelman tietojen lähteen ja kohteen sekä vaihtoehdon, joka mahdollistaa lähteen kertomisen määritetyllä kertoimella kohdesummien luomisen yhteydessä. Tämä yksinkertaistaa joukko-oikaisua. Voit määrittää myös **Liitä suunnitelmaan** -vaihtoehdon. Korvaa aiemmin luodut budjettisuunnitelman rivit valitsemalla **Ei** tai säilytä aiemmin luodut budjettisuunnitelman rivit ja lisää uusia rivejä kohdistetuille summille valitsemalla **Kyllä**.
+Valitse seuraavaksi kohdistusmenetelmä. Tämän jälkeen määritetään jäljellä olevat kentät valitun menetelmän mukaan. Nämä kentät sisältävät budjettisuunnitelman tietojen lähteen ja kohteen sekä vaihtoehdon, joka mahdollistaa lähteen kertomisen määritetyllä kertoimella kohdesummien luomisen yhteydessä. Tämä yksinkertaistaa joukko-oikaisua. Voit määrittää myös **Liitä suunnitelmaan** -vaihtoehdon. Korvaa aiemmin luodut budjettisuunnitelman rivit valitsemalla **Ei** tai säilytä aiemmin luodut budjettisuunnitelman rivit ja lisää uusia rivejä kohdistetuille summille valitsemalla **Kyllä**.
 
 ## <a name="automating-allocations-during-a-workflow"></a>Kohdistusten automatisointi työnkulun aikana
 Kohdistukset voidaan suorittaa erään tehokkaan toiminnon avulla automaattisesti budjettisuunnittelun työnkulun osana. Budjettisuunnitelman siirtyessä työnkulussa, automaattiset tehtävät voivat käynnistää kohdistuksen tietyssä budjettisuunnittelun vaiheessa. 
@@ -70,5 +73,7 @@ Seuraavaksi luodaan vaiheen kohdistus **Budjettisuunnittelun konfigurointi** -si
 Lopuksi lisätään budjettisuunnittelun vaiheen kohdistuksen haluttuun työnkulun vaiheeseen automaattinen tehtävä. Seuraavassa esimerkissä työnkulkuun on lisätty kaksi budjettisuunnittelun vaiheen kohdistusta (näkyvät punaisina).
 
 [![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+
+
 
 

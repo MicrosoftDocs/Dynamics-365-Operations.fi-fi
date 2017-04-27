@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-versions"></a>Kustannuslaskentaversiot
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja kustannuslaskennan versioista, niiden ylläpitämisestä ja niihin sisällytettävien tietojen tyypeistä. Kustannuslaskelmaversion on ensisijaisesti tarkoitus sisältää nimikkeitä, kustannusluokkia ja välillisten kustannusten laskentakaavoja koskevia kustannustietueita.
 
 Kustannuslaskelmaversiolla voi olla useampia kuin yksi käyttötarkoituksia sen mukaan, mitä tietoja kustannuslaskelmaversio sisältää. Kustannuslaskelmaversion on ensisijaisesti tarkoitus sisältää nimikkeitä, kustannusluokkia ja välillisten kustannusten laskentakaavoja koskevia kustannustietueita. Kustannuslaskelmaversiossa voi olla standardikustannustietueiden joukko tai suunniteltujen kustannustietueiden joukko, joka perustuu kustannuslaskelmaversioon määritettyyn kustannuslaskelmatyyppiin.
@@ -63,5 +66,7 @@ Tärkein syy ostohintatietojen käyttöönotolle on komponenttinimikkeiden ostoh
 Ostohintasisältö otetaan käyttöön määrittämällä ensin nimikkeen ostohinnan kustannushintamallin sisältävä tuoterakenteen laskentaryhmä ja määrittämällä sitten tämä laskentaryhmä ostettuihin nimikkeisiin. Voit sitten käyttää tuoterakenteen laskentaryhmän kustannushintaryhmää, kun suoritat tuoterakennelaskelmia, joissa lasketaan suunniteltujen kustannusten avulla valmistettujen nimikkeiden myyntihinta. 
 
 Nimikkeiden ostohintatietueiden käytetään myös viitetietoina. Kun nimikkeen ostohintatietueen tila vaihdetaan tilasta **Odottaa** tilaan **Aktiivinen**, voit päivittää nimikkeen perusostohinnan. Perusostohinta ei ole kuitenkaan ole toimipaikkakohtainen, ja se voidaan ohittaa manuaalisesti. Nimikkeen perusostohintaa käytetään ostotilausten oletusostohintana.
+
+
 
 

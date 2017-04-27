@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-overview"></a>Kuljetustenhallinnan yleiskatsaus
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä aihe sisältää yleiskuvauksen Microsoft Dynamics 365 for Operations -ohjelman kuljetustenhallintatoiminnoista.
 
 Kuljetustenhallinnan avulla voit hallita yrityksen kuljetuksia sekä määrittää toimittajan ja reititysratkaisut lähteville ja saapuville tilauksille. Voit esimerkiksi tunnistaa nopeimman reitin tai edullisimman hinnan lähetykselle. Seuraavassa taulukossa kuvataan Microsoft Dynamics 365 for Operations -ohjelman kuljetustenhallinnan tärkeimmät käyttöskenaariot.
@@ -67,19 +70,21 @@ Kuljetustenhallinnan avulla voit hallita yrityksen kuljetuksia sekä määrittä
 ## <a name="planning-transportation-in-dynamics-365-for-operations"></a>Kuljetusten suunnittelu Dynamics 365 for Operations -ohjelmassa
 Kuljetustenhallinnassa kuljetusten suunnittelu voidaan tehdä joko tilausten tai niistä luotujen lähetysten perusteella. Lähetykset tapahtuvat aina jossakin vaiheessa, mutta niitä ei tarvita kuljetusten suunnittelussa. Siirtotilaukset kuuluvat lähtevien tilausten skenaarioon, ja ne voidaan suunnitella yhdessä myyntitilausten kanssa. 
 
-![Lataa piirustus](./media/Load-drawing1-1024x477.jpg)
+![Kuormapiirustus](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Saapuva kuljetus
-Kun tilaat nimikkeitä toimittajalle ja nimikkeet toimitetaan varastollesi, haluat ehkä järjestää kuljetuksen kohteet. Dynamics 365 toimintojen avulla voit suunnitella, kuljetuksen ja vastaanoton saapuvan kuorman. Seuraavat kuvat esittävät liiketoimintaprosessin kulkua saapuvan kuorman kuljetuksen suunnittelulle. 
+Kun tilaat nimikkeitä toimittajalta, ja nimikkeet on toimitettava varastoosi, haluat ehkä järjestää nimikkeiden kuljetuksen itse. Dynamics 365 for Operations -ohjelmassa voit suunnitella saapuvan kuorman kuljetuksen ja vastaanoton. Seuraavat kuvat esittävät liiketoimintaprosessin kulkua saapuvan kuorman kuljetuksen suunnittelulle. 
 
 ![Saapuvien kuormakuljetusten liiketoimintaprosessin työnkulku](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Lähtevä kuljetus
 Voit suunnitella ja käsitellä lähtevän kuorman tiettyjen nimikkeiden toimittamiseksi yrityksen varastosta asiakkaalle. Dynamics 365 for Operations -ohjelmassa voit suunnitella lähtevän kuorman lähetyksen ja kuljetuksen. Seuraavassa kuvassa on esitetty liiketoiminnan prosessin kulku lähtevien kuormien suunnittelemiseksi ja käsittelemiseksi lähetystä varten. 
 
-![Suunnittelu ja lähtevien käsittelyn Lataa](./media/Planningandprocessingoutboundloads.jpg)
+![Lähtevien kuormien suunnittelu ja käsittely](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Kuormituksen luonti
 Dynamics 365 for Operations sisältää Tilavuuteen perustuva kuormituksen luontistrategia -nimisen kuorman luontistrategian. Sen avulla voit käyttää kuormamallissa määritettyjä suurimpia korkeus- ja painoarvoja tai korvata asetukset syöttämällä uudet arvot. Jos haluat käyttää tätä strategiaa, valitse se **Kuormituksen luontistrategia** -kentässä **Asetukset**-pikavälilehdessä **Kuormituksen luonnin työtila** -sivulla. Voit lisätä myös oman kuormituksen rakennuksen strategioita luomalla uuden luokan sovellusobjektipuussa (AOT).
+
+
 
 

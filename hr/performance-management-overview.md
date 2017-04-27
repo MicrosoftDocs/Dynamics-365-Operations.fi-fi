@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="performance-management-overview"></a>Suoritustason hallinnan yleiskuvaus
 
+[!include[banner](includes/banner.md)]
+
+
 Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa. Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille.  
 
 Prosessin hallinta sisältää seuraavan kaavion osoittamat kolme sivua:
@@ -34,7 +37,7 @@ Prosessin hallinta sisältää seuraavan kaavion osoittamat kolme sivua:
 -   Tavoitteet
 -   Kehityskeskustelu
 
-Seuraavassa kaaviossa on kuvattu, miten suoritustason hallinnan ensisijaiset osat liittyvät toisiinsa. [![Suorituskykyä prosessin yhteenveto](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+Seuraavassa kaaviossa on kuvattu, miten suoritustason hallinnan ensisijaiset osat liittyvät toisiinsa. [![Suoritustasoprosessin yleiskuvaus](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Suoritustason kirjauskansio
 Ennen työntekijän suorittamaa tarkastusta kerätään usein tietoja tehtävistä ja tapahtumista, jotka ovat vaikuttaneet onnistumiseen tarkastelukauden aikana. Nämä tehtävät ja tapahtumat voidaan dokumentoida suoritustason kirjauskansioon. Lisäksi voidaan luoda tulevia tehtäviä, jotka on suoritettava tavoitteen saavuttamiseksi tai kehityssuunnitelman vaatimusten tai suoritustasoon sitoutumisen täyttämiseksi. Suoritustason kirjauskansiot eivät ole pakollisia tavoitteiden ja suoritustasoarviointien luomisessa. 
@@ -132,7 +135,7 @@ Työntekijän arvioinnin työnkulun avulla voit hallita arvioinnin hyväksyntä�
 Työntekijän arvioinnin työnkulku koostuu kahdesta seuraavasta elementistä:
 
 1.  Hyväksy arviointi. Lisää tämä elementti, kun haluat hallita tilan muuttamista **Keskeneräinen**-tilasta **Valmis arvioitavaksi** -tilaan. Muuta määritystä käyttääksesi johtajahierarkiaa, jossa työntekijärivin esimiehen taso = 1.
-2.  Lopullinen arviointi. Lisää tämä elementti-tilaksi ohjaamaan **valmis tarkistettavaksi**, **lopullinen tarkistus**. Muuttaminen käyttämään johto hierarkiaa varauksen jossa Employee.line Linjaesimiehen taso = 1, jos haluat hyväksyä lopullisen tarkistuksen hallinta. Muuta määritykseksi Työnkulun käyttäjä, jos haluat, että työntekijä hyväksyy arvioinnin. Jos haluat, että sekä esimies että työntekijä hyväksyvät arvioinnin, lisää työnkulkuun kaksi vaihetta ja tee jokaiselle vaiheelle tarvittava määritys siinä järjestyksessä, jossa hyväksynnät tulee tehdä.
+2.  Lopullinen arviointi. Lisää tämä elementti, kun haluat hallita tilan muuttamista **Valmis arvioitavaksi**-tilasta **Lopullinen arviointi** -tilaan. Muuta määritystä käyttääksesi johtajahierarkiaa, jossa työntekijärivin esimiehen taso = 1, kun haluat esimiehen hyväksyvän lopullisen arvioinnin. Muuta määritykseksi Työnkulun käyttäjä, jos haluat, että työntekijä hyväksyy arvioinnin. Jos haluat, että sekä esimies että työntekijä hyväksyvät arvioinnin, lisää työnkulkuun kaksi vaihetta ja tee jokaiselle vaiheelle tarvittava määritys siinä järjestyksessä, jossa hyväksynnät tulee tehdä.
 
 ## <a name="setup"></a>Luo perustiedot
 Voit määrittää suoritustasoprosessin suorittamisessa vaadittavat tiedot seuraavien kolmen sivun avulla: **Mittaukset**-sivu, **Suoritustason kirjauskansion lähdetyypit** -sivu ja **Arviointityypit**-sivu.
@@ -148,5 +151,7 @@ Suoritustason kirjauskansion lähdetyypit kuvaavat suoritustason kirjauskansioid
 ### <a name="review-types"></a>Arviointityypit
 
 Suoritustason arviointityyppien avulla voit hallita arvioinnin toimintaa. Voit ottaa käyttöön arvioinnin työnkulun tai poistaa sen käytöstä. Jos arvioinnissa ei käytetä työnkulkua, voit määrittää arvioinnin luomisen yhteydessä käytettävän oletustilan. Voit myös määrittää, vaaditaanko arvioinnissa työntekijän, esimiehen vai molempien kuittaus.
+
+
 
 

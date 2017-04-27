@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-order-overview"></a>Ostotilausten yleiskatsaus
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on yleisiä tietoja ostotilauksista ja linkkejä muita ostotilauksen eri vaiheita käsitteleviin artikkeleihin.
 
 Ostotilaus on asiakirja, joka ilmaisee toimittajan kanssa tehdyn sopimuksen hyödykkeiden tai palvelujen ostamisesta. Asiakirjan avulla voi myös seurata tilausten mukaisia tuotteen vastaanottoja ja myöhemmin toimittajan tilauksen mukaan laskuttamien laskujen kirjanpitoa.  
 
-**Ostotilaukset**-sivulla on yleiskatsaus käytettävissä olevista tilauksista. Voit myös muokata sivulla kyseisiä tilauksia. Kun avaat ostotilauksen, voit valita **Otsikko**-näkymän, jossa on vain kerran kuhunkin ostotilaukseen määritettäviä tietoja, kuten toimittajan tiedot. Vaihtoehtoisesti voit valita **Rivit** -näkymän, jossa voi muokata tilausrivejä. Yleensä voit siirtyä näkymästä toiseen kun muokkaat POs. Kuluja ei näy suoraan **ostotilausten** sivulla mutta, käytetään valikoiden otsikkoon ja riveille.  
+**Ostotilaukset**-sivulla on yleiskatsaus käytettävissä olevista tilauksista. Voit myös muokata sivulla kyseisiä tilauksia. Kun avaat ostotilauksen, voit valita **Otsikko**-näkymän, jossa on vain kerran kuhunkin ostotilaukseen määritettäviä tietoja, kuten toimittajan tiedot. Vaihtoehtoisesti voit valita **Rivit** -näkymän, jossa voi muokata tilausrivejä. Yleensä ostotilausta muokatessa vaihdellaan näiden näkymien välillä. Muutosluetteloa ei ole suoraan **Ostotilaukset**-sivulla, vaan niitä käytetään tilausotsikon ja -rivien valikoista.  
 
 Ostotilauksia, tuotteen vastaanottoja ja toimittajan laskuja koskevia tietoja voi tarkastella useissa raporteissa. Nämä raportit sijaitsevat **Hankinta**- ja **Ostoreskontra**-moduuleissa.  
 
-Voit tarkastella luetteloita ostotilausten eri vaiheissa **Ostotilauksen valmistelu**- ja **Ostotilauksen vastaanotto ja seuranta** -työtiloissa. Niissä on myös yhteenveto tehtävistä toimista. **Ostotilauksen valmistelu** -työtila keskittyy ostotilauksen luontiin ja tarkasteluun, tilauksen käsittelyyn hyväksynnän läpi ja toimittajan vahvistukseen. **Vastaanotto ja seuranta** työtilan tarkoituksena on tavaroiden tai palveluiden vastaan POs vastaanoton käsittely. Se sisältää luetteloita, jotka antavat tietoja vastaanotoista, jotka ovat myöhässä tai, josta pian tulee asianmukaisesti toimittaja vastaa toimituksesta. Näissä työtiloissa ei tehdä liittyviä vastaanottotoimintoja, jotka tehdään varastossa. Kyseiset tehtävät tehdään käyttämällä **Inventoinnin- ja varastonhallinta**- ja **Varastonhallinta**-moduulien sivuilla. Toimittajan laskut käsitellään **Toimittajan laskun syöttö** -työtilassa ja maksut tehdään **Toimittajan maksut** -työtilassa.  
+Voit tarkastella luetteloita ostotilausten eri vaiheissa **Ostotilauksen valmistelu**- ja **Ostotilauksen vastaanotto ja seuranta** -työtiloissa. Niissä on myös yhteenveto tehtävistä toimista. **Ostotilauksen valmistelu** -työtila keskittyy ostotilauksen luontiin ja tarkasteluun, tilauksen käsittelyyn hyväksynnän läpi ja toimittajan vahvistukseen. **Ostotilauksen vastaanotto ja seuranta** -työtila keskittyy ostotilausten mukaisten hyödykkeiden tai palvelujen vastaanottoon. Siinä on luetteloita, joissa on tietoja myöhästyneistä vastaanotoista tai vastaanotoista, jotka toimittaja on pian toimittamassa. Näissä työtiloissa ei tehdä liittyviä vastaanottotoimintoja, jotka tehdään varastossa. Kyseiset tehtävät tehdään käyttämällä **Inventoinnin- ja varastonhallinta**- ja **Varastonhallinta**-moduulien sivuilla. Toimittajan laskut käsitellään **Toimittajan laskun syöttö** -työtilassa ja maksut tehdään **Toimittajan maksut** -työtilassa.  
 
 Seuraavissa artikkeleissa on yhteenveto ostotilauksen vaiheista:
 
@@ -45,7 +48,7 @@ Seuraavissa artikkeleissa on yhteenveto ostotilauksen vaiheista:
 -   [Toimittajan laskujen yleiskatsaus](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## <a name="types-of-purchase-orders"></a>Ostotilaustyypit
-On kolmenlaisia POs. Tyyppi on määritettävä luotaessa PO. Voit määrittää uusien tilausten oletustilaustyypin **Hankintaparametrit**-sivulla.
+Ostotilaustyyppejä on kolme. Tyyppi on määritettävä ostotilauksen luomisen yhteydessä. Voit määrittää uusien tilausten oletustilaustyypin **Hankintaparametrit**-sivulla.
 
 | Ostotilaustyyppi        | Kuvaus                                                                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,12 +83,14 @@ Voit arvioida **Asiakirjan tila** -kentän avulla nopeasti tilauksen edistymisen
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Purchase order creation](purchase-order-creation.md)
+[Ostotilausten luominen](purchase-order-creation.md)
 
 [Ostotilauksen hyväksyntä ja vahvistus](purchase-order-approval-confirmation.md)
 
 [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
 
 [Toimittajan laskujen yleiskatsaus](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Myyntipistesovellus ja käyttäjän kieli- ja alueasetukset"
-description: "Tässä ohjeaiheessa kuvataan muuttaa Retail Moderni POS (MPOS) ja Cloud POS kieliasetukset."
+description: "Tässä ohjeaiheessa kuvataan, miten kieliasetukset muutetaan Retail Modern -myyntipisteessä (MPOS) ja pilvimyyntipisteessä."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 78891
 ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
 ms.search.region: global
@@ -28,15 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="pos-application-and-user-language-settings"></a>Myyntipistesovellus ja käyttäjän kieli- ja alueasetukset
 
-Tässä ohjeaiheessa kuvataan muuttaa Retail Moderni POS (MPOS) ja Cloud POS kieliasetukset.
+[!include[banner](includes/banner.md)]
+
+
+Tässä ohjeaiheessa kuvataan, miten kieliasetukset muutetaan Retail Modern -myyntipisteessä (MPOS) ja pilvimyyntipisteessä.
 
 <a name="overview"></a>Yleiskuvaus
 ========
 
-Vähittäismyynnin Moderni POS (MPOS) ja Cloud POS tukevat ympäristöjä, joissa kieli ja käännökset voi vaihdella myymälä- ja käyttäjäkäytäntöjä. Esimerkiksi myymälän löytynyt alue, jossa englanti on yleisin asiakkaitaan varten, mutta joidenkin työntekijöiden mieluummin käyttää sovelluksen kanssa Ranskan käännökset.
+Retail Modern -myyntipiste (MPOS) ja pilvimyyntipiste tukevat ympäristöjä, joissa kielisetukset ja käännökset voivat vaihdella myymälän ja käyttäjäasetusten mukaan. Esimerkiksi myymälä saattaa sijaita alueella, jossa englannin kieli on asiakkaiden yleisimmin käyttämä, mutta jotkut työntekijät käyttävät mieluummin sovellusta ranskankielisillä käännöksillä.
 
 ## <a name="data-language"></a>Tietojen kieli
-Riippumatta käyttäjän asetukset MPOS ja Cloud POS käyttää aina myymälän kieliasetusten määrittämiseen käytettävä tietojen käännökset. Näin varmistetaan, että kaikki käyttäjät ja asiakkaat on yhtenäinen kokemus.  Tietoja ovat esimerkiksi:
+Käyttäjän asetuksista riippumatta, Retail Modern -myyntipiste ja pilvimyyntipiste käyttävät aina myymälän kieliasetuksia tietojen käännöksen määrittämiseen. Näin voidaan varmistaa, että kaikilla käyttäjillä ja asiakkailla on yhtenevä kokemus.  Esimerkkejä tiedoista ovat:
 
 -   Tuotteet
 -   Määritteet ja arvot
@@ -45,25 +48,27 @@ Riippumatta käyttäjän asetukset MPOS ja Cloud POS käyttää aina myymälän 
 -   Maksutapojen nimet
 -   Riveillä näytettävät sanomat
 
-Tärkeimmät POS-kirjautumisnäyttö myös käyttää myymälän kieli, koska käyttäjä ei ole tiedossa, ennen kuin kirjaudut. Jos käännöstä ei ole käytettävissä myymälän kielen, Myyntipiste takaisin yrityksen kieli.
+Myymälän kieltä käytetään myös myyntipisteen pääkirjautumissivulla, koska käyttäjää ei tunneta ennen kirjautumista. Jos myymälän kielellä olevaa käännöstä ei ole saatavilla, myyntipiste palaa yrityksen kieleen.
 
 ### <a name="configuring-the-stores-language-setting"></a>Myymälän kieliasetusten määrittäminen
 
-Myymälän kieleksi on määritetty **kaikki liikkeistä** - **Retail Store** kohdassa sivulla ** yleinen &gt;Aluekohtaiset asetukset &gt;kieli. ** Avulla pudota alas valita kielen kullekin myymälälle.
+Myymälän kieliasetukset määritetään **Kaikki vähittäismyymälät**-kohdassa “**Vähittäismyymälä”**-sivulla kohdassa Yleinen &gt; Alueasetukset &gt; Kieli. Valitse kunkin myymälän kieli avattavasta luettelosta.
 
 ## <a name="user-interface-language"></a>Käyttöliittymän kieli
-POS-käyttäjän kieliasetus määrittää käytetyn sovelluksen käyttöliittymän käännöksiä. Tämä sisältää kaikki otsikot, valikot ja luettelot, joita ei pidetä tietojen. Ainoa poikkeus on teksti, joka näytetään POS painikeruudukot. Painikeruudukkoja eivät tue käännökset, joten ne näkyy aina teksti-painikkeella määritellyllä tavalla. Tukemiseksi käännetty painikkeita täytyy kopioida ja ylläpitää erillistä painikeruudukot ja määritellä tarvittaessa käyttäjät.
+Myyntipisteen käyttäjän kieliasetukset määrittävät sovelluksen käyttöliittymässä käytettävät käännökset. Tähän sisältyvät kaikki otsikot, valikot ja luettelot, joita ei pidetä tietoina. Yksi poikkeus tähän on teksti, joka näytetään myyntipisteen painikeruudukoissa. Ne eivät tue käännöksiä, joten ne näyttävät aina tekstin siten, kuin se on määritetty painikkeessa. Jos haluat, että ne tukevat käännettyjä painikkeita, sinun on kopioitava erilliset painikeruudukot ja ylläpidettävä niitä, ja määritettävä ne soveltuville käyttäjille.
 
 ### <a name="configuring-the-users-language-setting"></a>Käyttäjän kieliasetusten määrittäminen
 
-POS-käyttäjän kieleksi on määritetty **kaikille työntekijöille** - **työntekijän** sivulla kohdassa **Retail &gt;kielen**.  Sitä ei ole määritetty ensisijainen profiili-välilehti.  Tätä asetusta ei käytetä Myyntipisteen mukaan. Jos käyttäjän kieltä ei määritetä tai jos se on määritetty kielelle, jolla ei ole saatavilla käännöksiä, myyntipiste palaa myymälän kieleen.  
+Myyntipisteen kieliasetukset määritetään kohdassa **Kaikki työntekijät** **Työntekijä**-sivulla kohdassa **Vähittäismyynti &gt; Kieli**.  Sitä ei määritetä Profiili-päävälilehdellä.  Tämä kenttä ei ole myyntipisteen käytössä. Jos käyttäjän kieltä ei määritetä tai jos se on määritetty kielelle, jolla ei ole saatavilla käännöksiä, myyntipiste palaa myymälän kieleen.  
 
 |             |                            |                                                                   |
 |-------------|----------------------------|-------------------------------------------------------------------|
-| ** **       | **Käyttöliittymäkielen** ** **      | **Tietojen kieli (tuotteet, kuittimuodot, rivinäyttö, jne.)** |
+| ** **       | **Käyttöliittymän kieli**      | **Tietojen kieli (tuotteet, kuittimuodot, rivinäyttö, jne.)** |
 | **Yritys** | Oletusarvo                    | Oletusarvo                                                           |
 | **Myymälä**   | Ohittaa yrityksen          | Ohittaa yrityksen                                                 |
-| **User**    | Ohittaa myymälän tai yrityksen | En koskaan                                                             |
+| **Käyttäjä**    | Ohittaa myymälän tai yrityksen | En koskaan                                                             |
+
+
 
 
 

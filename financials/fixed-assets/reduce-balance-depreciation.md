@@ -1,9 +1,9 @@
 ---
-title: "Vähentää poisto"
+title: "Jäännöspoiston vähentäminen"
 description: "Tässä artikkelissa on yleiskuvaus poiston jäännösarvopoistomenetelmästä."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reduce-balance-depreciation"></a>Vähentää poisto
+# <a name="reduce-balance-depreciation"></a>Jäännöspoiston vähentäminen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa on yleiskuvaus poiston jäännösarvopoistomenetelmästä.
 
@@ -57,7 +60,7 @@ Jos valitset esimerkiksi Vuosittain, vuoden poisto kirjataan vain kerran eli kun
 
 ### <a name="fiscal"></a>Tilivuosi
 
-Jos valitset Poistovuosi-kentästä Tilivuosi-vaihtoehdon, käytetään tasapoistomenetelmää. Se lasketaan Kirjanpito-sivulla valitulle tilikalenterille Kirjanpidon kalenterit -sivulla määritetyn tilivuoden perustella. Esimerkiksi tilikauden heinäkuun 1. – 30. kesäkuuta poiston laskeminen alkaa heinäkuun 1. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto oikaistaan jokaisella tilikaudella. Seuraavan tilivuoden pituus perustuu Kirjanpidon kalenterit -sivulla uuden tilivuoden luomisen yhteydessä määritettyihin tilikausiin.
+Jos valitset Poistovuosi-kentästä Tilivuosi-vaihtoehdon, käytetään tasapoistomenetelmää. Se lasketaan Kirjanpito-sivulla valitulle tilikalenterille Kirjanpidon kalenterit -sivulla määritetyn tilivuoden perustella. Esimerkiksi tilikauden 1.7–30.6. poistojen laskeminen alkaa 1.7. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto oikaistaan jokaisella tilikaudella. Seuraavan tilivuoden pituus perustuu Kirjanpidon kalenterit -sivulla uuden tilivuoden luomisen yhteydessä määritettyihin tilikausiin.
 
 
 Jos valitset tilivuoden, seuraavat vaihtoehdot ovat käytettävissä Kausiväli-kentässä:
@@ -73,12 +76,14 @@ Jäännösarvopoisto-menetelmää käytettäessä lasketaan 30 prosenttia edelli
 
 | Kausi | Vuotuisen poistomäärän laskeminen: | Nettokirjanpitoarvo vuoden lopussa: |
 |--------|-------------------------------------------|---------------------------------------|
-| Vuosi 1 | (11,000 - 1,000) \* 30% = 3,000           | (11 000 - 1 000) - 3 000 = 7 000      |
-| Vuosi 2 | (7,000 - 1,000) \* 30% = 1,800            | (7 000 -1 800) = 5 200                |
-| Vuosi 3 | (5,200 - 1,000) \* 30% = 1,260            | (5 200 - 1 260) = 3 940               |
+| Vuosi 1 | (11 000 - 1 000) \* 30 % = 3 000           | (11 000 - 1 000) - 3 000 = 7 000      |
+| Vuosi 2 | (7 000 - 1 000) \* 30 % = 1 800            | (7 000 -1 800) = 5 200                |
+| Vuosi 3 | (5 200 - 1 000) \* 30 % = 1 260            | (5 200 - 1 260) = 3 940               |
 
  
 -
+
+
 
 
 

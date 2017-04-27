@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="invoice-issue-deadline"></a>Laskun kirjoittamisen takaraja
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, kuinka voit määrittää parametrit, joiden avulla lasketaan eräpäivät lähetettäville myynti- ja toimittajalaskuille Euroopan Unionissa (EU).
 
 Euroopan unionin (EU) direktiivi 45/2010 ja muut direktiivit edellyttävät, että EU:n sisäiset lähetykset (intra-EU lähetykset) on laskutettava joko toimituksen jälkeisen kuun viidentenätoista päivänä tai sitä aikasemmin. Samanaikaisesti, jokaisella EU-maalla voi olla erilaisia laskutuksen takarajoja kotimaan toimituksille. Laskun eräpäivä-toiminnolla voit asettaa päivämäärävälin maiden / kuntien mukaan. Tällöin kaikissa toimituksissa tiettyyn maahan / alueelle tai sieltä pois, laskun eräpäivän päivämäärä lasketaan käyttämällä sääntöjä, jotka ovat määritettyjä tietylle päivämäärävälille. Lisäksi, saat kaikki pakkausluettelot, joissa on tietty laskun eräpäivä, voit suodattaa laskun eräpäivän mukaan kausittaisen myyntilaskutuksen aikan ja hallita myyntilaskun päivämäärää laskun kirjauksen yhteydessä. Voit määrittää päivämääräväli koodin ja sitten asettaa laskusäännön laskun kirjoituspäivälle määrittämällä päivämääräväli koodin maa- / aluetyyppiin. Laskentasääntöä käytetään määräpäivän laskemiseksi julkaistaville laskuille seuraavissa tapahtumissa:
@@ -42,7 +45,7 @@ Seuraavassa taulukossa on esitetty ne edellytykset, joiden on oltava kohdallaan,
 | Luokka            | Edellytys                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Maa/alue      | Yrityksen ensisijainen osoitteen on oltava EU-jäsenvaltiossa.                                                                                                                                                                                                                                                                                                                    |
-| Liittyvät asetustehtävät | **Päivämäärävälit**-sivulla määritetään päivämääräväli, jota käytetään laskemaan laskun eräpäivä. (Valitse **kirjanpidon**&gt;**Pääkirjanpidon asetukset**&gt;**päivä välein**.) - **Ulkomaankaupan parametrit** -sivulla Määritä Ulkomaankauppa ominaisuudet eri maita/alueita. (Valitse **vero**&gt;**asennus**&gt;**ulkomaankaupan**&gt;**Ulkomaankaupan parametrit**.) |
+| Liittyvät asetustehtävät | **Päivämäärävälit**-sivulla määritetään päivämääräväli, jota käytetään laskemaan laskun eräpäivä. (Valitse **Kirjanpito** &gt; **Kirjanpidon asetukset** &gt; **Päivämäärävälit**.) Määritä **Ulkomaankaupan parametrit** -sivulla ulkomaankaupan ominaisuudet eri maille/alueille. (Valitse **Verot** &gt; **Asetukset** &gt; ** Ulkomaankauppa** &gt; ** Ulkomaankaupan parametrit**.) |
 
 ## <a name="invoice-issue-due-date-calculation-rule"></a>Laskuvirhe päivämäärän laskentasäännön takia
 Käytä **Määritä laskusääntö laskun kirjoituspäivälle**-sivua määrittämään laskun kirjoituspäivän eräpäivän laskusäännön asettamalla päivämäärävälikoodin maa- / aluetyyppiin.
@@ -51,7 +54,7 @@ Käytä **Määritä laskusääntö laskun kirjoituspäivälle**-sivua määritt
 Voit asettaa päivämäärän hallintaparametrit varmistamaan, että asiakkaiden laskut ja asiakastapahtumien hyvityslaskut luodaan määritellyn ajanjakson kuluttua siitä, kun toimitus on tapahtunut. Löydät nämä parametrit **laskun päivämäärän tarkistus** -alueelta **myyntireskontran parametrit** -sivulla.
 
 ## <a name="example"></a>Esimerkki
-Microsoft Dynamics-365 toimintoihin lasketaan laskun ongelman määrittäminen eräpäivien sisäisessä ja EU: N toimitukset kuukauden jälkeen tarjonta on toimitettu 15 päivän, päivämäärävälin koodi- ja säännön luominen, jossa on seuraavat asetukset.
+Aseta Microsoft Dynamics 365 for Operations laskemaan laskun kirjoittamisen eräpäivät EU:n sisäisiin toimituksiin, toimitusta seuraavan kuun 15. päivänä, luomalla päivämäärävälin koodi ja laskemissääntö seuraavilla asetuksilla:
 
 ### <a name="date-interval-code"></a>Päivämäärävälin koodi
 
@@ -75,8 +78,8 @@ Microsoft Dynamics-365 toimintoihin lasketaan laskun ongelman määrittäminen e
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Kun olet lopettanut laskujen kirjoittamisen eräpäiväparametrien määrittämisen, voit luoda ja kirjata seuraavat tapahtumat, jolloin laskujen kirjoittamisen eräpäivät lasketaan ja päivitetään automaattisesti.
 
--   **Myyntitilaukset** – Kun luot myyntitilauksen ja kirjaat pakkausluettelon, laskun luonnin eräpäivä lasketaan ja päivitetään pakkausluettelossa. Eräpäivä lasketaan, joka liittyy maan tai alueen, joka on määritetty myyntitilauksen toimitusosoite päivämäärävälin perusteella. Kun kirjaat pakkausluettelon, voit tarkistaa laskun ongelma eräpäivä **Laskutus ongelma eräpäivä** kenttä **pakkausluettelon kirjauskansio** sivun. (Valitse **myynti- ja**&gt;**myynti**&gt;**tilauksen toimitus**&gt;**pakkausluettelon**.) Voit tarkastella kaikkien pakkausluetteloiden, jota ei ole laskutettu ja lasku niiden ongelma eräpäivät, edelleen **pakkausluetteloiden, joita ei ole laskutettu** sivulla. (Valitse **myynnin ja markkinoinnin**&gt;**myynti**&gt;**tilauksen toimitus**&gt;**pakkausluetteloita, joita ei ole laskutettu**.)
--   **Ostotilaukset** – Kun luot ostotilauksen ja kirjaat tuotteen vastaanoton, laskun luonnin eräpäivä lasketaan ja päivitetään tuotteen vastaanotossa. Määräpäivä lasketaan toimittajan ensisijaiseen osoitteeseen määritettyyn maahan/alueeseen liitetyn päivämäärävälin perusteella. Sen jälkeen kun olet kirjannut tuotteen vastaanoton, voit varmistaa laskun eräpäivän **laskun eräpäivä** -kentässä **tuotteen vastaanoton kirjauskansio**-sivulla. (Valitse **hankinta**&gt;**ostotilausten**&gt;**tuotteiden vastaanotosta**&gt;**tuotteen vastaanoton**.) Voit tarkastella kaikkien tuotteen vastaanottojen, jota ei ole laskutettu ja lasku niiden ongelma eräpäivät, edelleen **tuotteiden vastaanotot, joita ei ole laskutettu** sivulla. (Valitse **hankinta**&gt;**ostotilausten**&gt;**tuotteiden vastaanotosta**&gt;**tuotteen vastaanotot, joita ei ole laskutettu**.)
+-   **Myyntitilaukset** – Kun luot myyntitilauksen ja kirjaat pakkausluettelon, laskun luonnin eräpäivä lasketaan ja päivitetään pakkausluettelossa. Määräpäivä lasketaan myyntitilauksen toimitusosoitteeseen määritettyyn maahan/alueeseen liitetyn päivämäärävälin perusteella. Sen jälkeen kun olet kirjannut pakkausluettelon, voit varmistaa laskun eräpäivän **Laskun kirjoittamisen eräpäivä** -kentässä **Pakkausluettelo-kirjauskansio**-sivulla. (Valitse **Myynti ja markkinointi** &gt; **Myyntitilaus** &gt; **Tilauksen toimitus** &gt; **Pakkausluettelo**.) Voit tarkastella kaikkia laskuttamattomia pakkausluetteloita ja niiden laskuille määritettyjä eräpäiviä **Laskuttamattomat pakkausluettelot** -sivulla. (Valitse **Myynti ja markkinointi** &gt; **Myyntitilaus** &gt; **Tilauksen toimitus** &gt; **Laskuttamattomat pakkausluettelot**.)
+-   **Ostotilaukset** – Kun luot ostotilauksen ja kirjaat tuotteen vastaanoton, laskun luonnin eräpäivä lasketaan ja päivitetään tuotteen vastaanotossa. Määräpäivä lasketaan toimittajan ensisijaiseen osoitteeseen määritettyyn maahan/alueeseen liitetyn päivämäärävälin perusteella. Sen jälkeen kun olet kirjannut tuotteen vastaanoton, voit varmistaa laskun eräpäivän **laskun eräpäivä** -kentässä **tuotteen vastaanoton kirjauskansio**-sivulla. (Valitse **Hankinta** &gt; **Ostotilaukset** &gt; **Vastaanotetaan tuotteita** &gt; **Tuotteen vastaanotto**.) Voit tarkastella kaikkia laskuttamattomia vastaanottokuitteja ja niiden laskuille määritettyjä eräpäiviä **Laskuttamattomat tuotevastaanotot** -sivulla. (Valitse **Hankinta** &gt; **Ostotilaukset** &gt; **Vastaanotetaan tuotteita** &gt; **Laskuttamattomat tuotevastaanotot**.)
 
 ## <a name="technical-information-for-system-administrators"></a>Teknisiä tietoja järjestelmänvalvojille
 Jos sinulla ei ole pääsyä niiden sivujen käyttöön, joita käytetään tässä artikkelissa kuvattujen tehtävien suorittamiseen, ota yhteys järjestelmänvalvojaan ja anna tiedot, jotka näkyvät seuraavassa taulukossa.
@@ -95,7 +98,7 @@ Jos sinulla ei ole pääsyä niiden sivujen käyttöön, joita käytetään täs
 <tbody>
 <tr class="odd">
 <td>Configuration Keys</td>
-<td>Valitse <strong>järjestelmän hallinta</strong>&gt;<strong>asennus</strong>&gt;<strong>Licensing</strong>&gt;<strong>käyttöoikeuden konfiguraatio</strong>. Klikkaa <strong>kirjanpito</strong>-määritysavainta.</td>
+<td>Klikkaa <strong>Järjestelmän hallinta</strong> &gt; <strong>Asetukset</strong> &gt; <strong>Käyttöoikeudet</strong> &gt; <strong>Käyttöoikeuden konfiguraatio</strong>. Klikkaa <strong>kirjanpito</strong>-määritysavainta.</td>
 </tr>
 <tr class="even">
 <td>Käyttöoikeusroolit ja velvollisuudet</td>
@@ -116,6 +119,8 @@ Jos sinulla ei ole pääsyä niiden sivujen käyttöön, joita käytetään täs
 </tr>
 </tbody>
 </table>
+
+
 
 
 

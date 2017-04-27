@@ -1,6 +1,6 @@
 ---
 title: Excelin budjettisuunnittelumallit
-description: "Tässä aiheessa kuvataan, miten Luo Microsoft Excel-malleja, joita voidaan käyttää budjettisuunnitelmat."
+description: "Tässä aiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,100 +26,105 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-templates-for-excel"></a>Excelin budjettisuunnittelumallit
 
-Tässä aiheessa kuvataan, miten Luo Microsoft Excel-malleja, joita voidaan käyttää budjettisuunnitelmat.
+[!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvattaan, miten luoda Excel-malleja, jota käytetään standardin esittely tietojoukon ja Admin kirjautuminen budjettisuunnitelmat. Saat lisätietoja budjettisuunnittelua [budjetin yhteenveto.](budget-planning-overview-configuration.md) Voit myös seurata [101 budjettisuunnittelu](budget-plan.md) opetusohjelma saat perustiedot-moduulin määrityksen ja käytön periaatteet.
 
-## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Luo budjettisuunnitelman asiakirjan asettelua käyttämällä laskentataulukon
-Budjetin suunnitelma-asiakirjoja voi tarkastella ja muokata yhden tai useita asetteluja käyttämällä. Kussakin asettelussa voi olla liitetty budjettisuunnitelman asiakirjamalli voidaan tarkastella ja muokata budjettisuunnitelman tiedot Excel-laskentataulukkoon. Tässä ohjeaiheessa budjettisuunnitelman asiakirjamalli luodaan käyttämällä valmista layout-määritystä. Avaa **budjetin toimenpidesuunnitelmien luettelo** (**budjetoinnin**&gt;**budjettisuunnitelmat**). Valitse **uusi** voit luoda uuden budjettisuunnitelman asiakirjan. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+Tässä aiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa.
 
-Käytössä **Lisää** rivi-vaihtoehto, jos haluat lisätä rivejä. Valitse **rakenteita** voit tarkastella budjettisuunnitelman asiakirjan asettelun määritykset. 
+Tässä ohjeaiheessa kuvataan, miten luodaan Excel-malleja, joita käytetään budjettisuunnitelmissa käyttämällä vakionäytetietoja ja Järjestelmänvalvoja-käyttäjätunnusta. Saat lisätietoja budjettisuunnittelusta artikkelista [Budjetin suunnittelun yhteenveto.](budget-planning-overview-configuration.md) Voit myös seurata [Budjettisuunnittelun perusteet](budget-plan.md) -opetusohjelma oppiaksesi perustiedot moduulin määrityksestä sekä käytön periaatteet.
+
+## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Luo laskentataulukko budjettisuunnitelman asiakirja-asettelun avulla
+Budjettisuunnitelma-asiakirjoja voi tarkastella ja muokata käyttämällä yhtä tai useampaa asettelua. Kussakin asettelussa voi olla liitetty budjettisuunnitelman asiakirjamalli, jotta budjettisuunnitelman tietoja voidaan tarkastella ja muokata Excel-laskentataulukossa. Tässä ohjeaiheessa luodaan budjettisuunnitelman asiakirjamalli käyttämällä valmista asettelumääritystä. Avaa **Budjettisuunnitelmien luettelo** (**Budjetointi**&gt; **Budjettisuunnitelmat**). Luo uusi budjettisuunnitelma-asiakirja valitsemalla **Uusi**. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+
+Käytä **Lisää rivi** -vaihtoehtoa, jos haluat lisätä rivejä. Voit tarkastella budjettisuunnitelman asiakirjan asettelun määrityksiä valitsemalla **Asettelut**. 
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Voit tarkistaa asettelun määritykset ja muuta sitä tarvittaessa. Siirry **malli**&gt;**Luo** Luo asettelu Excel-tiedostoon. Kun malli luodaan, siirry **malli**&gt;**View** avaaminen ja tarkasteleminen budjettisuunnitelman asiakirjamalli. Voit tallentaa Excel-tiedosto kansioon paikalliseen asemaan. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
+Voit tarkistaa asettelun määritykset ja muuttaa niitä tarvittaessa. Siirry kohtaan **Malli** &gt; **Luo** luodaksesi Excel-tiedoston tälle asettelulle. Kun malli on luotu, siirry kohtaan **Malli** &gt; **Näytä** avataksesi ja tarkistaaksesi budjettisuunnitelman asiakirjamallin. Voit tallentaa Excel-tiedoston paikalliseen asemaan. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
 
 > [!NOTE] 
-> Budjettisuunnitelman asiakirjan asettelua ei voi muokata, kun Excel-malli on liitetty siihen. Muokkaa asettelua, poistaa liitetyn mallin Excel-tiedoston ja luo se uudelleen. Tarvitaan pitämään kenttien asettelun ja taulukon synkronoituna. 
+> Budjettisuunnitelman asiakirjan asettelua ei voi muokata, kun Excel-malli on liitetty siihen. Voit muokata asettelua, poistamalla liitetyn Excel-mallitiedoston ja luomalla se uudelleen. Tämä tarvitaan pitämään asettelun kentät ja laskentataulukko synkronoituna. 
 
-Excel-malli sisältää kaikki osat budjettisuunnitelman asiakirja-asettelu, jossa **käytettävissä taulukon** -sarakkeen arvo on True. Excel-malli päällekkäiset osat eivät ole sallittuja. Esimerkiksi jos asettelu sisältää pyynnön Q1, Q2 pyyntö, pyynnön Q3 ja pyynnön Q4 sarakkeet ja pyynnön yhteensä-saraketta, joka edustaa 4 neljännesvuosittain kaikkien sarakkeiden summan, neljännesvuosittain sarakkeita tai yhteensä-sarakkeessa on käytettävissä Excel-mallia voidaan käyttää. Excel-tiedosto ei voi päivittää päällekkäisiä sarakkeet päivityksen aikana, koska taulukon tiedoista voi tulla vanhentuneita tai virheellisiä.
+Excel-malli sisältää budjettisuunnitelman asiakirja-asettelun kaikki osat, joiden **Käytettävissä työkirjassa** -sarakkeen arvo on Tosi. Excel-mallissa ei sallita päällekkäisiä osia. Esimerkiksi jos asettelu sisältää sarakkeet Request Q1, Request Q2, Request Q3 ja Request Q4 sekä summasarakkeen, joka edustaa kaikkien neljän neljännesvuosittaisen sarakkeen summaa, vain neljännesvuosittaisia sarakkeita tai summasaraketta voidaan käyttää Excel-mallissa. Excel-tiedosto ei voi päivittää päällekkäisiä sarakkeita päivityksen aikana, koska taulukon tiedoista voi tulla vanhentuneita tai virheellisiä.
 
 [![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> Voit välttää mahdollisia ongelmia tarkastelemisen ja muokkaamisen budjettisuunnitelman tiedot Excelissä, sama käyttäjä olisi on kirjauduttava sekä Dynamics 365 toiminnoissa ja Dynamics Microsoft Office-apuohjelma Data Connector.
+> Voit välttää mahdollisia ongelmia budjettisuunnitelman tietojen tarkastelemisessa ja muokkaamisessa Excelissä, jos sama käyttäjä on kirjautunut sekä Dynamics 365 for Operationsiin että Microsoft Dynamics Office -apuohjelman Data Connectoriin.
 
-## <a name="add-a-header-to-budget-plan-document-template"></a>Otsikon lisääminen budjettisuunnitelman Asiakirjamalli
-Jos haluat lisätä otsikkotietoja, ylin rivi Excel-tiedoston ja Lisää tyhjiä rivejä. Valitse **rakenne** - **Data Connector** ylä-kenttien lisääminen Excel-tiedosto.
+## <a name="add-a-header-to-budget-plan-document-template"></a>Otsikon lisääminen budjettisuunnitelman asiakirjamalliin
+Jos haluat lisätä otsikkotietoja, valitse ylin rivi Excel-tiedostossa ja lisää tyhjiä rivejä. Lisää otsikkokentät Excel-tiedostoon valitsemalla **Rakenne** **Data Connector** -sovelluksessa.
 
 [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
 
-- **Rakenne** -välilehden ** ** valitsemalla **Lisää** kentät ja valitse sitten **BudgetPlanHeader** yksikön tietolähteenä.
+Valitse **Rakenne**-välilehdessä,** ****Lisää kenttiä** ja sitten **BudgetPlanHeader** yksikön tietolähteeksi.
 
 [![bpt6](./media/bpt6-1024x615.png)](./media/bpt6.png)
 
-Valitse kohdistimen Excel-tiedoston haluamaasi paikkaan. Valitse **Lisää otsikko** kentän otsikon lisääminen valittuun sijaintiin. Valitse **Lisää arvo** voit lisätä arvo-kentässä valittuun paikkaan. Valitse **tehty** ja sulje suunnitteluohjelma.
+Siirrä kohdistin Excel-tiedostossa haluamaasi paikkaan. Valitse **Lisää otsikko** lisätäksesi kentän otsikon valittuun sijaintiin. Valitse **Lisää arvo** lisätäksesi arvokentän valittuun paikkaan. Valitse **Valmis** sulkeaksesi suunnitteluohjelman.
 
 ## <a name="bpt7mediabpt7pngmediabpt7png"></a>[![bpt7](./media/bpt7.png)](./media/bpt7.png)
 
-<a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Lisää budjettisuunnitelman asiakirjan malli-taulukon laskettu sarake
+<a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Lasketun sarakkeen lisääminen budjettisuunnitelman asiakirjamallin taulukkoon
 --------------------------------------------------------------
 
-Seuraava, lasketut sarakkeet lisätään Muodostetuilla asiakirjamalli. A **yhteensä pyynnön** sarake, jossa on esitetty pyyntö Q1: pyyntö Q4 sarakkeet ja **säätö** sarakkeen, joka laskee **yhteensä pyynnön** käyttämällä ennalta määritettyä saraketta.
+Seuraavaksi, lasketut sarakkeet lisätään muodostettuun budjettisuunnitelman asiakirjamalliin. **Total Request** -sarake, joka summaa sarakkeet Request Q1 – Request Q4 ja **Oikaisu**-sarakkeen, joka laskee **Total request** -sarakkeen esimääritetyn kertoimen avulla.
 
-Valitse **rakenne** - **Data connector** voit lisätä taulukon sarakkeita. Valitse **Muokkaa** vieressä **BudgetPlanWorksheet** tietolähde, johon haluat lisätä sarakkeet.
+Lisää sarakkeet taulukkoon valitsemalla **Rakenne** **Data Connector** -sovelluksessa. Valitse **Muokkaa** **BudgetPlanWorksheet**-tietolähteen vieressä aloittaaksesi sarakkeiden lisäämisen.
 
 [![bpt8](./media/bpt8-1024x301.png)](./media/bpt8.png) 
 
-Valittua kenttäryhmää näyttää mallissa käytettävissä olevat sarakkeet. Valitse **kaavan** haluat lisätä uuden sarakkeen. Uuden sarakkeen nimi ja valitse sitten Liitä huomioon kaava **kaavan** kenttä. Valitse **päivitys** Jos haluat lisätä sarakkeen.
+Valittu kenttäryhmää näyttää mallissa käytettävissä olevat sarakkeet. Valitse **Kaava**, kun haluat lisätä uuden sarakkeen. Nimeä uusi sarake ja liitä sitten kaava **Kaava**-kenttään. Valitse **Päivitä**, jos haluat lisätä sarakkeen.
 
 [![bpt12](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Määritä kaava, kaavan luominen laskentataulukkoon ja kopioi se **rakenne** ikkuna. Dynamics-365 sidotun taulukon toiminnot yleensä nimetään "AXTable1". Esimerkiksi yhteenvedon pyytää Q1: pyytää Q4 sarakkeita laskentataulukkoon, kaava = AxTable1\[pyytää Q1\]+ AxTable1\[pyytää Q2\]+ AxTable1\[pyytää Q3\]+ AxTable1\[pyytää Q4\].
+> Luo kaava laskentataulukossa ja kopioi se **Rakenne**-ikkunaan määrittääksesi kaavan. Dynamics 365 for Operationsin sidottu taulukko nimetään yleensä "AXTable1". Jos esimerkiksi haluat summata laskentataulukossa sarakkeet Request Q1 – Request Q4, kaava on: AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
 
-Toistamalla näitä vaiheita voit lisätä **muutos** sarakkeeseen. Käytä kaavaa = AxTable1\[yhteensä pyynnön\]\*$I$ 1 sarakkeen. Tämä kestää I1-solun arvo ja kerro arvot **yhteensä pyynnön** sarakkeen laskennassa oikaisuihin.
+Toista nämä vaiheet lisätäksesi **Oikaisu**-sarakkeen. Käytä tälle sarakkeelle kaavaa = AxTable1\[Total request\]\*$I$1. Tämä ottaa solun I1 arvon ja kertoo **Total request** -sarakkeen laskeakseen oikaisusummat.
 
-Tallenna ja sulje Excel-tiedosto. Dynamics 365 Operations, ja palaa **rakenteita**, valitse **malli &gt;Lataa** Lataa tallennettu Excel-malli, jota käytetään budjetin suunnitelman. 
+Tallenna ja sulje Excel-tiedosto. Palaa Dynamics 365 for Operationsiin ja valitse kohdassa **Asettelu** **Malli &gt; Lataa** ladataksesi tallennetun Excel-mallin, jota käytetään budjetin suunnitelmassa. 
 
 [![bpt10](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 
-Sulje **rakenteita** liukusäädintä. - **Budjettisuunnitelman** asiakirjassa, valitse **laskentataulukon** voit tarkastella ja muokata sitä Excelissä. Huomaa, että tämä talousarvio suunnitelman luomiseen käytetyn muutettu Excel-malli ja päivittää laskettujen sarakkeiden kaavat, jotka määritettiin edellä kuvattujen toimien avulla. 
+Sulje **Asettelut**-liukusäädin. Valitse **Budjettisuunnitelma**-asiakirjassa **Työkirja**, jolloin voit tarkastella ja muokata asiakirjaa Excelissä. Huomaa, että tämän budjettisuunnitelman työkirjan luomiseen käytettiin oikaistua Excel-mallia, ja lasketut sarakkeet päivitetään käyttäen kaavoja, jotka määritettiin edellisissä vaiheissa. 
 
 [![bpt11](./media/bpt111-1024x431.png)](./media/bpt111.png)
 
-## <a name="tips--tricks-for-creating-budget-plan-templates"></a>Tips & tricks budjettisuunnitelman mallien luominen
-### <a name="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template"></a>Voit lisätä ja käyttää muita tietolähteitä budjettisuunnitelman malli?
+## <a name="tips--tricks-for-creating-budget-plan-templates"></a>Vinkkejä budjettisuunnitelman mallien luomiseen
+### <a name="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template"></a>Voinko lisätä ja käyttää muita tietolähteitä budjettisuunnitelman malliin?
 
-Kyllä, voit käyttää **rakenne** valikon muita kohteita samaan tai muita taulukoita Excel-malli. Esimerkiksi, voit lisätä **BudgetPlanProposedProject** voit luoda ja ylläpitää ehdotettujen projektien luettelo samaan aikaan kun talousarvion parissa suunnitteleminen Excelissä tietolähdettä. Huomaa, että myös suuria tietolähteitä saattaa heikentää suorituskykyä Excel-työkirjan. 
+Kyllä, voit käyttää **Rakenne**-valikkoa lisätäksesi lisäyksikköjä samaan tai muihin taulukoihin Excel-mallissa. Esimerkiksi, voit lisätä **BudgetPlanProposedProject**-tietolähteen luodaksesi ja ylläpitääksesi ehdotettujen projektien luetteloa samaan aikaan kun työstät budjettisuunnitelman tietoja Excelissä. Huomaa, että suuren datamäärän tietolähteiden lisääminen saattaa heikentää Excel-työkirjan suorituskykyä. 
 
-Voit käyttää **suodatin** -vaihtoehdon **Data Connector** voit lisätä haluamasi suodattimia muissa tietolähteissä.
+Voit käyttää **Suodatin** -vaihtoehtoa kohdassa **Data Connector** lisätäksesi haluamasi suodattimet muihin tietolähteisiin.
 
-### <a name="can-i-hide-the-design-option-in-the-data-connector-for-other-users"></a>Voit piilottaa toiminnon rakenne-Data connector for muille käyttäjille?
+### <a name="can-i-hide-the-design-option-in-the-data-connector-for-other-users"></a>Voinko piilottaa Rakenne-toiminnon Data Connectorissa muilta käyttäjiltä?
 
-Kyllä, Avaa **Data Connector** asetuksia, joilla piilotetaan **rakenne** vaihtoehto muilta käyttäjiltä.
+Kyllä, avaa **Data Connector** -asetukset piilottaaksesi **Rakenne**-vaihtoehdon muilta käyttäjiltä.
 
 [![bpt13](./media/bpt13-1024x565.png)](./media/bpt13.png)
 
-Laajenna **tiedot yhdistinasetukset** ja poista **käyttöön rakenne** valintaruutu. Tämä piilottaa **rakenne** asetus **Data connector**.
+Laajenna **Data connector -asetukset** ja tyhjennä **Ota rakenne käyttöön** -valintaruutu. Tämä piilottaa **Rakenne**-asetuksen **Data connector** -kohdasta.
 
 [![bpt14](./media/bpt14-1024x592.png)](./media/bpt14.png)
 
-### <a name="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data"></a>Käyttäjien estämään sulkemasta vahingossa Data connector tietojen käsittelemisessä
+### <a name="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data"></a>Voinko estää käyttäjiä vahingossa sulkemasta Data Connectorin, kun he työstävät tietoja?
 
-Suosittelemme, että haluat estää käyttäjiä sulkemista mallin lukituksen. Voit poistaa lukituksen valitsemalla **Data connector**, oikeassa yläkulmassa näkyy nuoli. 
+Suosittelemme, että haluat estää käyttäjiä sulkemasta mallin lukitsemalla mallin. Voit määrittää lukituksen valitsemalla **Data connector** oikeassa yläkulmassa, jolloin näkyviin tulee nuoli. 
 
 [![bpt15](./media/bpt15-1024x285.png)](./media/bpt15.png) 
 
-Lisää valikon nuolta. Valitse **Lock**.
+Klikkaamalla nuolta näet lisävalikon. Valitse **Lukitse**.
 
 ### <a name="bpt16mediabpt16-1024x614pngmediabpt16png"></a>[![bpt16](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
-### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Muita Excelin ominaisuuksia, kuten solun muotoilu, värit, ehdollinen muotoilu ja kaavioiden avulla omien budjettisuunnitelmamallit kanssa
+### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>voinko käyttää muita Excelin ominaisuuksia, kuten solun muotoilua, värejä, ehdollista muotoilua ja kaavioita omissa budjettisuunnitelmamalleissani?
 
-Kyllä, useimpia ominaisuuksia standardi Excel toimii budjettisuunnitelmamallit. On suositeltavaa käyttää vain luku- ja muokattavat sarakkeet erottaa värikoodaus käyttäjille. Ehdollisen muotoilun avulla voit korostaa talousarvion ongelmallisia alueita. Sarakkeiden summat voidaan esittää helposti taulukon yläpuolella tavallinen Excel-kaavojen avulla.
+Kyllä, useimmat Excelin perusominaisuudet toimivat budjettisuunnitelmamalleissa. On suositeltavaa käyttää värikoodausta käyttäjille, jotta he erottavat Vain luku- ja muokattavat sarakkeet. Ehdollista muotoilua voi käyttää korostamaan budjetin ongelmallisia alueita. Sarakkeiden summat voidaan esittää helposti tavallisten Excel-kaavojen (taulukon yläpuolella) avulla.
 
-Voit myös luoda ja käyttää pivot-taulukoita ja kaavioita ylimääräisiä ryhmittelyjä ja budjetin tiedot visualisointeja. - **Tiedot** -lehden **yhteydet** ryhmän, valitse **Päivitä kaikki**, ja valitse sitten **ominaisuudet**. Valitse **käyttö** välilehti. Valitse **päivittää**, valitse **Päivitä tiedot, kun tiedosto avataan** valintaruutu. 
+Voit myös luoda ja käyttää pivot-taulukoita ja kaavioita budjetin tietojen ylimääräisiin ryhmittelyihin ja visualisointeihin. Valitse **Tiedot**-välilehden **Yhteydet**-ryhmässä **Päivitä kaikki** ja sitten **Yhteyden ominaisuudet**. Valitse **Käyttö**-välilehti. valitse kohdassa **Päivitä** **Päivitä tiedot, kun tiedosto avataan** -valintaruutu. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
+
+
 
 

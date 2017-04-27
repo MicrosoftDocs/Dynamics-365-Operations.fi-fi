@@ -1,6 +1,6 @@
 ---
 title: Kyselylomakkeet
-description: "Tässä aiheessa on yleistietoja kyselylomakkeet ja linkkejä lisätietoja. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia."
+description: "Tässä aiheessa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="questionnaires"></a>Kyselylomakkeet
 
-Tässä aiheessa on yleistietoja kyselylomakkeet ja linkkejä lisätietoja. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia. 
+[!include[banner](includes/banner.md)]
 
-Voit mukauttaa vastaamaan erityisiä vaatimuksia käyttämällä eri ominaisuuksia, jotka ovat käytettävissä Microsoft Dynamics-365 työvaiheiden kyselylomakkeen. Kyselylomakkeen avulla voit esimerkiksi
+
+Tässä aiheessa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia. 
+
+Microsoft Dynamics 365 for Operations -ohjelman erilaisten toimintojen avulla voit mukauttaa lomakkeen tarpeitasi vastaavaksi. Kyselylomakkeen avulla voit esimerkiksi
 
 -   testata työntekijöiden ja hakijoiden ammatillista pätevyyttä
 -   arvioida, ovatko kurssin osallistujat oppineet kurssimateriaalin
@@ -42,9 +45,9 @@ Seuraavassa taulukossa on linkkejä kyselylomakkeen ydintehtävien lisätietoihi
 
 | Aihe| kuvaus|
 |------|------------|
-| [Design a questionnaire](design-questionnaires.md)  | Tämä artikkeli sisältää tietoja kyselylomakkeen suunnittelemisesta. Suunnitteluprosessi sisältää edellytysten, vastausten ja kysymysten määrittämisen sekä niiden yhdistämisen kyselylomakkeessa. |
-| [Distribute and complete a questionnaire](distribute-questionnaires.md)  | Tässä artikkelissa on tietoja kyselylomakkeen jakamisesta vastaajille ja kyselylomakkeiden täyttämisestä.                                                                       |
-| [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md) | Tässä artikkelissa on tietoja siitä, miten täytettyjen kyselylomakkeiden tuloksia tarkastellaan ja miten ne arvioidaan.                                                                                        |
+| [Lomakkeen suunnitteleminen](design-questionnaires.md)  | Tämä artikkeli sisältää tietoja kyselylomakkeen suunnittelemisesta. Suunnitteluprosessi sisältää edellytysten, vastausten ja kysymysten määrittämisen sekä niiden yhdistämisen kyselylomakkeessa. |
+| [Kyselylomakkeen jakaminen ja täyttäminen](distribute-questionnaires.md)  | Tässä artikkelissa on tietoja kyselylomakkeen jakamisesta vastaajille ja kyselylomakkeiden täyttämisestä.                                                                       |
+| [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md) | Tässä artikkelissa on tietoja siitä, miten täytettyjen kyselylomakkeiden tuloksia tarkastellaan ja miten ne arvioidaan.                                                                                        |
 
 
 
@@ -55,6 +58,8 @@ Seuraavassa taulukossa on linkkejä kyselylomakkeen ydintehtävien lisätietoihi
 
 [Kyselylomakkeiden jakelu ja täyttäminen](distribute-questionnaires.md)
 
-[Tarkasteleminen ja kyselylomakkeiden tulosten arvioiminen](evaluate-questionnaire-results.md)
+[Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
+
+
 
 

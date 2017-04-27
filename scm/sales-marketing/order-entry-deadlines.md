@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-entry-deadlines"></a>Tilaustenkäsittelyn määräajat
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja tilaustenkäsittelyn määräajoista. Tilaustenkäsittelyn määräaika on aika, joka määrittää, käsitelläänkö asiakastilausta siten kuin se olisi vastaanotettu samana päivänä tai seuraavana päivänä.
 
 Useissa yrityksissä myyntitilaus on vastaanotettava ennen tiettyä kellonaikaa, jotta se voidaan käsitellä kyseisenä päivänä saapuneena. Kaikki tilaukset, jotka vastaanotetaan tämän kellonajan jälkeen, käsitellään kuin ne olisivat saapuneet seuraavana arkipäivänä. Tätä tilausten katkaisupäivämäärää kutsutaan tilaustenkäsittelyn määräajaksi.  
 
-Tilaustenkäsittelyn määräaikoja käytetään syötteenä tilauksia koskevissa lupauksissa. Siten ne auttavat tilausten toimituksia koskevien asiakkaiden odotusten hallinnassa. Asiakkaat esimerkiksi näkevät, että jos he tekevät tilauksen ennen tiettyä kellonaikaa, sitoudut toimittamaan tuotteet samana päivänä. Ne unohda tätä määräaikaa, jos he odottavat vain business seuraavana päivänä toimitus. Voit määrittää tilaustenkäsittelyn määräajat ominaisuuksia varastoinnin ja lähetyksen rahdinkuljettajan aikataulujen mukaan.  
+Tilaustenkäsittelyn määräaikoja käytetään syötteenä tilauksia koskevissa lupauksissa. Siten ne auttavat tilausten toimituksia koskevien asiakkaiden odotusten hallinnassa. Asiakkaat esimerkiksi näkevät, että jos he tekevät tilauksen ennen tiettyä kellonaikaa, sitoudut toimittamaan tuotteet samana päivänä. Jos tilaus tehdään tämän jälkeen, toimitusta voi odottaa vasta seuraavana arkipäivänä. Voit määrittää tilaustenkäsittelyn määräajat varasto-ominaisuuksien ja lähetyksen rahdinkuljettajan aikataulujen mukaisesti.  
 
 Kaikkien viikonpäivien tilaustenkäsittelyn määräajat määritetään **Tilaustenkäsittelyn määräajat** -sivulla. Kaikki tilaukset, jotka vastaanotetaan tämän kellonajan jälkeen, käsitellään kuin ne olisivat saapuneet seuraavana arkipäivänä. Määräaikojen oletusarvo on 23:59 eli minuuttia ennen keskiyötä kunakin päivänä. Määräaikoja voi muuttaa niin, että ne vastaavat todellisia toimituksen tai vastaanoton määräaikoja.  
 
@@ -43,7 +46,7 @@ Jos yrityksesi koostuu useasta toimipaikasta, voit määrittää tilaustenkäsit
 **Ota käyttöön tilaustenkäsittelyn määräaikayhdistelmät** -sivulla voit määrittää sallittuja toimipisteiden ja tilauskäsittelyn määräaikaryhmien yhdistelmiä.
 
 ## <a name="example-order-entry-deadline"></a>Esimerkki: Tilaustenkäsittelyn määräaikaryhmä
-Tilaustenkäsittelyn määräaika on tiistaisin klo 16:00. Yrität määrittää tiettynä tiistaina klo 17:00 kuluvan päivän toimituspäiväksi. (Huomaa, että tämä esimerkki ei ole toimitusaika on). Jos **toimituspäivämäärän** -valintaruutu on valittuna, näyttöön tulee varoitus, joka ilmoittaa, että päivämäärä ei ole kelvollinen. Varoitus näkyy **Käytettävissä olevat lähetys- ja vastaanottopäivämäärät** -sivulla, jolla voit valita vaihtoehtoiset päivämäärät.
+Tilaustenkäsittelyn määräaika on tiistaisin klo 16:00. Yrität määrittää tiettynä tiistaina klo 17:00 kuluvan päivän toimituspäiväksi. (Huomaa, että tässä esimerkissä ei ole läpimenoaikaa.) Jos **Toimituspäivän tarkistus** -valintaruutu valitaan, näyttöön tulee varoitus, jossa ilmoitetaan, että päivämäärä ei ole kelvollinen. Varoitus näkyy **Käytettävissä olevat lähetys- ja vastaanottopäivämäärät** -sivulla, jolla voit valita vaihtoehtoiset päivämäärät.
 
 ## <a name="example-different-order-entry-deadlines-per-site"></a>Esimerkki: Erilaiset tilaustenkäsittelyn määräajat eri toimipisteissä
 Yritys koostuu kahdesta toimipisteestä. Toimipisteet sijaitsevat eri aikavyöhykkeillä seuraavassa taulukossa esitetyllä tavalla.
@@ -55,7 +58,7 @@ Yritys koostuu kahdesta toimipisteestä. Toimipisteet sijaitsevat eri aikavyöhy
 
 Toimipisteet A ja B ovat määrittäneet seuraavat tilaustenkäsittelyn määräajat:
 
-| Viikonpäivä             | A: tilata tilaustenkäsittelyn määräajat (PST) | B: tilata tilaustenkäsittelyn määräajat (EST) |
+| Viikonpäivä             | A: Tilaustenkäsittelyn määräajat (PST) | B: Tilauskäsittelyn määräajat (EST) |
 |-----------------------------|--------------------------------|--------------------------------|
 | Maanantai                      | 13:00                          | 14:00                          |
 | Tiistai                     | 13:00                          | 14:00                          |
@@ -67,7 +70,7 @@ Olet tilausten käsittelijä Utahissa, jonka aikavyöhyke on MST (Kalliovuorten 
 
 Seuraavassa taulukossa on toimipisteiden A ja B tilaustenkäsittelyn määräajat muunnettuina MST-aikavyöhykkeen ajaksi.
 
-| Sivuston a PST         | Vastaus: MST-sivusto        | Sivuston B: EST           | Sivuston B: MST        |
+| Toimipiste A: PST         | Toimipiste A: MST        | Toimipiste B: EST           | Toimipiste B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00               | 14:00              | 14:00                 | 12:00              |
 
@@ -95,7 +98,7 @@ Olet tilausten käsittelijä Utahissa, jonka aikavyöhyke on MST. Tämä tarkoit
 
 Seuraavassa taulukossa on toimipisteiden A ja B tilaustenkäsittelyn määräajat muunnettuina MST-aikavyöhykkeen ajaksi.
 
-| Sivuston a PST         | Vastaus: MST-sivusto        | Sivuston B: EST           | Sivuston B: MST        |
+| Toimipiste A: PST         | Toimipiste A: MST        | Toimipiste B: EST           | Toimipiste B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00               | 14:00              | 13:00                 | 11:00              |
 
@@ -104,6 +107,8 @@ Seuraavassa taulukossa on toimipisteiden A ja B tilaustenkäsittelyn määräaja
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Delivery schedules](delivery-schedules.md)
+[Toimitusaikataulut](delivery-schedules.md)
+
+
 
 

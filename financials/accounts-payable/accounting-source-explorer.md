@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-source-explorer"></a>Kirjanpitolähteen hallinta
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja kirjanpitolähteen hallinnasta, jota voidaan käyttää kirjanpidon kirjauksien lähdetietojen yksityiskohtaisessa analyysissä.
 
-"Accounting source explorer" on uusi sivu, joka näyttää lähdetiedot. Voit käyttää kirjanpidon lähde explorer joko erillisenä työkaluna tai analysoida tietoja kirjanpidon kirjaukset takana. Kirjanpidon lähde explorer avulla voit saada eniten yksityiskohtaiset lähdetiedot tasapainon jäljen tasapainossa tai tapahtuman tosite. Sitten voit käyttää Export to MS Excel -toimintoa, jotta voit tutkia tietoja lisää Microsoft Excelissä (esimerkiksi pivot-taulukossa tai pivot-taulukkoraportissa).
+"Accounting source explorer" on uusi sivu, joka näyttää lähdetiedot. Voit käyttää kirjanpidon lähdehallintaa joko erillisenä työkaluna tai analysoida kirjanpidon kirjauksien tietoja. Kirjanpidon lähdehallinnan avulla voit esimerkiksi saada kaikkein yksityiskohtaisimmat lähdetiedot kirjausketjun saldolle tai tositetapahtumalle. Sitten voit käyttää Export to MS Excel -toimintoa, jotta voit tutkia tietoja lisää Microsoft Excelissä (esimerkiksi pivot-taulukossa tai pivot-taulukkoraportissa).
 
 Accounting source explorer näyttää aina saman kokonaissumman jokaiselle kirjanpitotilille kuin yleisessä kirjanpidossa näkyy (esimerkiksi pääkirjassa). Kuten pääkirjassa, voit näyttää segmenttejä eri sarakkeissa. Valitse vain haluamasi taloushallinnon dimensiojoukko. 
 
 Parametrien avulla voit määrittää päivämäärävälin analyysia varten. Tämä toiminto muistuttaa myös pääkirjan toimintoja.
 
-Kaikille asiakirjoille, jotka käyttävät lähde tiedoston kehys, kirjanpidon lähde explorer näyttää lisätiedot perustuvat jaot ja, jos mahdollista, projektin kirjanpidolliset jaot. Nämä tiedot sisältävät rahallisen Summalajin, projektin, tehtävän, luokkaa ja rivin ominaisuus. Seuraavassa on esimerkkejä analyysistä, jonka voit tehdä:
+Kaikille asiakirjoille, jotka käyttävät lähdetiedoston kehystä, kirjanpidon lähdehallinta näyttää lisätiedot, jotka perustuvat kirjanpidollisiin jakoihin ja, jos mahdollista, projektin kirjanpidollisiin jakoihin. Nämä tiedot sisältävät rahasumman tyypin, projektin, tehtävän, luokan ja rivin ominaisuuden. Seuraavassa on esimerkkejä analyysistä, jonka voit tehdä:
 
 -   Ostotilauksien ja toimittajalaskujen väliset varianssit, koska rahasumma tyyppi, esimerkiksi kulujen varianssia, edustaa kutakin varianssia
 -   Laskutettavat ja ei-laskutettavat tunnit ja kulut projektissa, liiketoimintayksikössä ja päätilissä
@@ -46,5 +49,7 @@ Niille lähdeasiakirjoille, jotka käyttävät lähdeasiakirjojen viitteen käyt
 -   Toimittajan, tuotemallin ja osaston mukaiset alennukset
 
 Nämä tiedostot voit löytää myös todellisesta asiakirjan lähteestä "Accounting source explorerista".
+
+
 
 

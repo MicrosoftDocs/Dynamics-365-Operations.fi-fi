@@ -1,6 +1,6 @@
 ---
-title: BI &amp;raportointi kotisivu
-description: "Tässä aiheessa luetellaan BI &amp;resursseja, jotka ovat käytettävissä Microsoft Dynamics-365 työvaiheiden raportointi."
+title: Yritystietojen ja raportoinnin aloitussivu
+description: "Tämä aihe sisältää luettelon Microsoft Dynamics 365 for Operations -järjestelmän yritystieto- ja raportointiresursseista."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,26 +24,29 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bi-amp-reporting-home-page"></a>BI &amp;raportointi kotisivu
+# <a name="bi-amp-reporting-home-page"></a>Yritystietojen ja raportoinnin aloitussivu
 
-Tässä aiheessa luetellaan BI &amp;resursseja, jotka ovat käytettävissä Microsoft Dynamics-365 työvaiheiden raportointi.
+[!include[banner](../includes/banner.md)]
+
+
+Tämä aihe sisältää luettelon Microsoft Dynamics 365 for Operations -järjestelmän yritystieto- ja raportointiresursseista. 
 
 <a name="working-with-aggregate-data"></a>Koontitietojen käyttäminen
 ---------------------------
 
--   [Analytics](analytics.md)
+-   [Analytiikka](analytics.md)
 -   [Muistissa olevat reaaliaikaiset koostemallit korvaavat SSAS-kuutiot](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Mallinnus ja tietojen käyttäminen](model-aggregate-data.md)
--   [Siirrä päivitetty Dynamics AX 2012: n R3 myynnin kuution yksikön myymälä](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
+-   [Koontitietojen mallinnus ja käyttäminen](model-aggregate-data.md)
+-   [Siirrä päivitetty Dynamics AX 2012 R3 -myyntikuutio yksikkösäilöön](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-## <a name="self-service-reporting"></a>Self service raportointi
--   [Power BI integration](power-bi-integration.md)
+## <a name="self-service-reporting"></a>Itsepalvelun raportointi
+-   [Power BI -integrointi](power-bi-integration.md)
 -   [Power BI -integroinnin konfiguroiminen työtiloille](configure-power-bi-integration.md)
 -   [Power BI -raportin luominen Microsoft Dynamics 365 for Operations -tietojen avulla](create-powerbi-report-data.md)
--   [Power BI-raportti ja koontinäytön luominen](create-powerbi-report-dashboard.md)
--   [Vähittäismyynnin kanavan suorituskyky Virranhallinta BI sisältö](retail-channel-performance-dashboard-power-bi-data.md)
--   [Taloudellinen suorituskyky Virranhallinta BI sisältö](financial-performance-power-bi-content-pack.md)
--   [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
+-   [Power BI -raportin ja koontinäytön luominen](create-powerbi-report-dashboard.md)
+-   [Vähittäismyyntikanavan suorituskyvyn Power BI -sisältö](retail-channel-performance-dashboard-power-bi-data.md)
+-   [Taloudellisen suorituskyvyn Power BI -sisältö](financial-performance-power-bi-content-pack.md)
+-   [Power BI:n myynnin ja kannattavuuden suorituskykysisältö](sales-profitability-performance-content-pack.md)
 -   [Sähköisen raportoinnin konfigurointi Dynamics 365 for Operations -tietojen lähettämiseksi Power BI -palveluun](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Upotettujen analyyttisten kokemusten muodostaminen Microsoft Dynamics 365 for Operations -järjestelmän asiakasohjelmassa
@@ -95,6 +98,8 @@ Tässä aiheessa luetellaan BI &amp;resursseja, jotka ovat käytettävissä Micr
 -   [ER Tiedostojenhallinnan tiedostojen käyttö muodon tulostuksissa (osa 5: Muodon muokkaaminen ja suorittaminen)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/)(tehtäväopas)
 -   [ER Sähköisten maksuasiakirjojen luominen muotokokoonpanon avulla](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/)(tehtäväopas)
 -   [ER Muodon päivittäminen toteuttamalla uusi muodon perusversio](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/)(tehtäväopas)
+
+
 
 
 

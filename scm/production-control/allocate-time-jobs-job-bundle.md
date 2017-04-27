@@ -1,5 +1,5 @@
 ---
-title: "Varata aikaa työn nipun työt"
+title: "Ajan kohdistaminen työnipun töihin"
 description: "Voit niputtaa töitä tuotannonohjauksessa. Tämän jälkeen voit käynnistää samanaikaisesti useita töitä luettelosivulta."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Varata aikaa työn nipun työt
+# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Ajan kohdistaminen työnipun töihin
+
+[!include[banner](../includes/banner.md)]
+
 
 Voit niputtaa töitä tuotannonohjauksessa. Tämän jälkeen voit käynnistää samanaikaisesti useita töitä luettelosivulta.
 
@@ -107,5 +110,7 @@ Kyseessä on kolme työtä, joiden suorittajan tuntipalkka on 12,00 Yhdysvaltain
 | Työ 3 | (3,33 ÷ 5) × 12,00 USD                 | 8,00 USD                | 5 tuntia        | 40,00 USD         |
 
 Korjattu tuntikohtainen kustannus ja työn aika kirjataan tuotantokirjauskansioon. **Huomautus:** Valitsemalla **Kustannusluokka**-asetuksen **Tuotantotilauksen oletusarvot** -sivun **Yleinen**-välilehdellä, kunkin työn toteutunut aika siirretään tuotantokirjauskansioon, jossa kustannukset kohdistetaan kyseisen työn kustannusluokkaan.
+
+
 
 

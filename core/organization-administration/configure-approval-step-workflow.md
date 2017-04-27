@@ -1,5 +1,5 @@
 ---
-title: "Konfiguroida hyväksyntävaiheen työnkulku"
+title: "Hyväksyntävaiheen lisääminen työnkulkuun"
 description: "Tässä ohjeaiheessa kerrotaan, miten hyväksyntävaiheen ominaisuudet määritetään."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-approval-step-in-a-workflow"></a>Konfiguroida hyväksyntävaiheen työnkulku
+# <a name="configure-an-approval-step-in-a-workflow"></a>Hyväksyntävaiheen lisääminen työnkulkuun
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä ohjeaiheessa kerrotaan, miten hyväksyntävaiheen ominaisuudet määritetään.
 
@@ -124,10 +127,10 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille hyväksy
     </tr>
     <tr class="even">
     <td>Käyttäjä</td>
-    <td>Tietyt Microsoft Dynamics-365 toimintoja käyttäjille</td>
+    <td>Tietyt Microsoft Dynamics 365 for Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong> luettelo sisältää kaikki käyttäjien toimien Dynamics 365. Valitse käyttäjät, joille vaihe liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille vaihe liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -229,10 +232,10 @@ Jos käyttäjä reagoi asiakirjaan aikarajan puitteissa, asiakirja on erääntyn
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tiettyjä toimintoja käyttäjille Dynamics 365</td>
+    <td>Tietyt Dynamics 365 for Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong> luettelo sisältää kaikki käyttäjien toimien Dynamics 365. Valitse käyttäjät, joille asiakirja eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille asiakirja eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -247,6 +250,8 @@ Jos käyttäjä reagoi asiakirjaan aikarajan puitteissa, asiakirja on erääntyn
 
 5.  Toista vaiheet 3 ja 4 jokaiselle käyttäjälle, joka lisätään eskalointipolkuun. Käyttäjien järjestystä voi muuttaa.
 6.  Jos eskalointipolun käyttäjät eivät vastaa asiakirjaan ajoissa, järjestelmä suorittaa asiakirjan toimenpiteen automaattisesti. Voit määrittää järjestelmän suorittaman toimenpiteen valitsemalla **Toimenpide**-rivin ja sitten valitsemalla **Lopetustoiminto**-välilehdellä toimenpiteen.
+
+
 
 
 

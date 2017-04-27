@@ -1,6 +1,6 @@
 ---
 title: "Määritteiden luonti ja hallinta"
-description: "Tässä artikkelissa kuvataan Microsoft Dynamics-365 työvaiheiden määritteitä. Määritteiden avulla voit kuvailla tuotetta ja sen ominaisuuksia käyttäjän määrittelemien kenttien avulla."
+description: "Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Operationsin määritteet. Määritteiden avulla voit kuvailla tuotetta ja sen ominaisuuksia käyttäjän määrittelemien kenttien avulla."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-and-manage-attributes"></a>Määritteiden luonti ja hallinta
 
-Tässä artikkelissa kuvataan Microsoft Dynamics-365 työvaiheiden määritteitä. Määritteiden avulla voit kuvailla tuotetta ja sen ominaisuuksia käyttäjän määrittelemien kenttien avulla.
+Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Operationsin määritteet. Määritteiden avulla voit kuvailla tuotetta ja sen ominaisuuksia käyttäjän määrittelemien kenttien avulla.
 
 Määritteiden avulla voit kuvailla tuotetta ja sen ominaisuuksia käyttäjän määrittelemien kenttien avulla. Voit esimerkiksi määrittää tuotteen muistin koon ja kovalevyn kapasiteetin ja ilmaista, onko tuote Energy Star -merkinnän mukainen. Määritteitä voidaan liittää erilaisiin vähittäismyynnin yksiköihin, kuten tuotekategorioihin ja vähittäismyyntikanaviin, ja niille voidaan asettaa oletusarvoja. Tuotteet perivät määritteensä ja oletusarvonsa näiltä määritteiltä, kun ne liitetään tuotekategorioihin tai vähittäismyyntikanaviin. Oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, vähittäismyyntikanavan tasolla, tai vähittäismyyntiluettelossa.
 
@@ -130,49 +130,49 @@ Projektiokuvaputken takuu
 
 **12**
 
-\#putkien projektio
+\# projektiokuvaputkea
 
 **1**–**5**
 
 **3**
 
 ## <a name="attribute-type"></a>Määritetyyppi
-  [![määritteet-kiinteä kopio](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) määritteet perustuvat määritetyypit. Määritetyypit osoittavat, minkälaista tietoa voi lisätä tiettyyn määritteeseen. Tällä hetkellä Microsoft Dynamics-365 työvaiheiden tukee seuraavien määritetyyppien:
+  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Määritteet perustuvat määritetyyppeihin. Määritetyypit osoittavat, minkälaista tietoa voi lisätä tiettyyn määritteeseen. Microsoft Dynamics 365 for Operations tukee tällä hetkellä seuraavia määritetyyppejä:
 
 -   **Valuutta** – Tämä määritetyyppi tukee valuutta-arvoja. Se voidaan sitoa (eli se voi tukea arvoaluetta), tai se voidaan jättää avoimeksi.
 -   **DateTime** – Tämä määritetyyppi tukee päivämäärä- ja aika-arvoja. Se voidaan sitoa (eli se voi tukea arvoaluetta), tai se voidaan jättää avoimeksi.
 -   **Desimaali** – Tämä määritetyyppi tukee numeerisia arvoja, jotka sisältävät desimaaleja. Se tukee myös mittayksikköjä. Se voidaan sitoa (eli se voi tukea arvoaluetta), tai se voidaan jättää avoimeksi.
 -   **Kokonaisluku** – Tämä määritetyyppi tukee numeerisia arvoja. Se tukee myös mittayksikköjä. Se voidaan sitoa (eli se voi tukea arvoaluetta), tai se voidaan jättää avoimeksi.
 -   **Teksti** – Tämä määritetyyppi tukee tekstiarvoja. Se tukee myös etukäteen määritettyä mahdollisten arvojen joukkoa (luettelointi).
--   **Boolean** – tämän määritteen tyyppi tukee binary arvoja (**tosi**/**väärien**).
+-   **Totuusarvo** – Tämä määritetyyppi tukee binaarisia arvoja (**tosi**/**epätosi**).
 -   **Viite**.
 
 ## <a name="attribute"></a>Ominaisuus
-  [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) nimi, nimi, kuvaus ja ohjeteksti, yhden tai useamman seuraavan tyyppiset tiedot voidaan siepata objektille:
+  [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) Nimen, kutsumanimen, kuvauksen ja ohjetekstin lisäksi yksi tai useampi seuraavista tietotyypeistä voidaan poimia määritteestä:
 
 -   Oletusarvo
 -   Määritteen metatiedot, kuten metatiedot, jotka ilmaisevat, voidaanko määritettä etsiä, tarkentaa tai lajitella.
 
 ## <a name="attribute-group"></a>Määriteryhmä
-  [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) kun määritteet on määritetty, ne voidaan ryhmitellä erämääritteen ryhmät. Määriteryhmät sisältävät yksittäisistä määritteistä koottuja ryhmiä, ja ne voidaan liittää vähittäismyyntiluokkiin tai -kanaviin.
+  [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) Kun määritteet on määritelty, ne voidaan ryhmitellä määriteryhmiksi. Määriteryhmät sisältävät yksittäisistä määritteistä koottuja ryhmiä, ja ne voidaan liittää vähittäismyyntiluokkiin tai -kanaviin.
 
 ## <a name="assigning-attribute-groups-to-retail-categories"></a>Määriteryhmien liittäminen vähittäismyyntiluokkiin
-  [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) yhden tai useamman erämääritteen ryhmät voidaan liittää-luokan vähittäismyynnin tuotehierarkia luokkasolmuja. Kun tuotteet on luokiteltu, ne perivät määriteryhmiin sisältyvät määritteet.
+  [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) Yksi tai useampi määriteluokka voidaan liittää vähittäismyynnin tuoteluokkahierarkian luokkasolmuihin. Kun tuotteet on luokiteltu, ne perivät määriteryhmiin sisältyvät määritteet.
 
 ## <a name="assigning-attribute-groups-to-retail-stores"></a>Määriteryhmien liittäminen vähittäismyymälöihin
-  [![createandmanageattribute 13-1024 x 576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) yhden tai useamman erämääritteen ryhmät voidaan kytkeä yhden tai useamman kaupat Vähittäismyyntihierarkia vähittäismyymälöiden. Kun tuotteet on lisätty tiettyihin vähittäismyymälöihin, ne perivät määriteryhmään sisältyvät määritteet.
+  [![createandmanageattribute-13-1024x576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) Yksi tai useampi määriteryhmä voidaan liittää yhteen tai useampaan vähittäismyymälähierarkian vähittäismyymälään. Kun tuotteet on lisätty tiettyihin vähittäismyymälöihin, ne perivät määriteryhmään sisältyvät määritteet.
 
 ## <a name="overriding-attribute-values"></a>Määritearvojen ohittaminen
 ### <a name="at-the-product-level"></a>Tuoteosastolla
 
-  [![createandmanageattribute 14-1024 x 576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) ‑määritteiden oletusarvot voidaan ohittaa tuote-tasolla (eli yksittäisiin tuotteisiin).
+  [![createandmanageattribute-14-1024x576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) Määritteiden oletusarvot voidaan ohittaa tuotetasolla (ts. yksittäisten tuotteiden kohdalla).
 
 ### <a name="in-a-retail-catalog"></a>Vähittäismyynnin luettelossa
 
-  [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) -määritteiden oletusarvot voidaan ohittaa yksittäisten tuotteiden tietyt luettelot, jotka on tarkoitettu tietyn vähittäiskaupan kanavia.
+  [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) Määritteiden oletusarvot voidaan ohittaa tietyissä luetteloissa olevien, määrätyille vähittäismyyntikanaville kohdistettujen yksittäisten tuotteiden osalta.
 
 ### <a name="at-the-retail-channel-level"></a>Vähittäismyyntikanavan tasolla
 
-  [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) -määritteiden oletusarvot voidaan ohittaa yksittäisten tuotteiden tietyt luettelot, jotka on tarkoitettu tietyn vähittäiskaupan kanavia.
+  [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Määritteiden oletusarvot voidaan ohittaa tietyissä luetteloissa olevien, määrätyille vähittäismyyntikanaville kohdistettujen yksittäisten tuotteiden osalta.
 
 

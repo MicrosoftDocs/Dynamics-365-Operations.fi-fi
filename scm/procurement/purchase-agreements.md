@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-agreements"></a>Ostosopimukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja ostosopimuksista. Ostosopimus on sopimus, joka velvoittaa organisaation ostamaan tietyn määrän tai tietyllä summalla, käyttämällä useita ostotilauksia jonkin ajanjakson aikana. Vastineeksi tästä sitoumuksesta, ostaja saa erityiset hinnat ja alennukset. 
 
 Ostosopimukset voivat koskea tiettyä määrää tuotetta, tietyn tuotteen valuuttasummaa tai tiettyjen tuotteiden valuuttasummaa hankintaluokassa. Ostosopimuksen hinnat ja alennukset ohittavat muut hinnat ja alennukset, jotka on määritelty missään kauppasopimuksissa, jotka ovat jo olemassa.  
@@ -70,7 +73,7 @@ Sitoumuksen täytäntöönpanoon tarvittavat jäljellä oleva summa tai määrä
 Voit käyttää täytäntöönpanon laskentaan vaikuttavia ostotilausrivejä ja laskurivejä valitsemalla **Liittyvät tiedot** -toiminnon ostosopimuksen riveillä tai otsikossa.
 
 ## <a name="confirmations-and-version-history-for-purchase-agreements"></a>Ostosopimusten vahvistukset ja versiohistorian
-Kun vahvistat ostosopimuksen, sen uusin versio tallennetaan historiataulukkoon. Jos muutat ostosopimusta, voit vahvistaa sen uudestaan tallentaaksesi toisen ostosopimuksen version historiaan. Jos et Vahvista ostosopimus, voit käyttää sitä luoda POs. Kuitenkin, ostosopimuksen historia-tietoa ei ole tallennettu. Voit esikatsella tai tulostaa kaikki sopimuksen versiot. Sitten voit jakaa korjaukset toimittajasi kanssa saadaksesi hyväksynnän.
+Kun vahvistat ostosopimuksen, sen uusin versio tallennetaan historiataulukkoon. Jos muutat ostosopimusta, voit vahvistaa sen uudestaan tallentaaksesi toisen ostosopimuksen version historiaan. Jos et vahvista ostosopimusta, voit yhä luoda ostotilauksia sen pohjalta. Mutta ostosopimusten historiatietoja ei säilytetä. Voit esikatsella tai tulostaa kaikki sopimuksen versiot. Sitten voit jakaa korjaukset toimittajasi kanssa saadaksesi hyväksynnän.
 
 ## <a name="applying-purchase-agreements-in-the-ordering-process"></a>Ostosopimukset lisääminen tilausprosessiin
 Kun luot ostotilauksen, voit käyttää siinä ostosopimusta. Sopimusehtojen tiedot, kuten maksuehdot, toimitusajat ja toimitusosoite, kopioidaan sitten ostotilauksen otsikkoon. Jos ostotilauksessa on vähintään yksi sopimuksen kattaman tuotteen tai luokan rivi, kyseisillä riveillä käytetään ostosopimuksen hintoja ja alennuksia. Tilausrivin summa tai määrä vaikuttaa ostosopimuksen sitoumuksen täytäntöönpanoon. Sama ostotilaus voi sisältää sekä rivejä, jotka eivät liity ostosopimukseen, että rivejä, jotka ovat sitoutuneet ostosopimukseen.  
@@ -91,8 +94,10 @@ Voit kopioida taloudelliset dimensiot asiakirjojen ylätunnisteisiin tai ostosop
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Luo ostosopimus (tehtävän guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
+[Uuden ostosopimuksen luominen (tehtävän ohjaus)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 
-[Oston vapautustilauksen luominen ostosopimuksesta (tehtävän guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+[Vapautustilauksen luominen ostosopimuksesta (tehtävän ohjaus)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+
+
 
 

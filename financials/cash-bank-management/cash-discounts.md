@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cash-discounts"></a>Käteisalennukset
 
+[!include[banner](../includes/banner.md)]
+
+
 Käteisalennukset määritetään ja jaetaan osto- ja myyntireskontrassa.  Käytettävissä oleva käteisalennus voidaan määrittää myyntilaskulla tai toimittajan laskulla. Se käytetään, jos lasku maksetaan käteisalennuksen päivänä. 
 
 <a name="cash-discounts"></a>Käteisalennukset
@@ -61,8 +64,8 @@ Yrityksen kirjanpitovaluutta on euro ja Yhdysvaltain dollarille on määritetty 
 -   1. helmikuuta = 110.
 -   1. maaliskuuta = 80
 
-1000 USD 20 D 2 %: n käteisalennuksen ehdot lasku kirjataan helmikuun 15. Laskun summa valuuttana kirjanpito on 1100 EUR. 980 USD maksun lasku selvitetään maaliskuun 1. Käteisalennuksen summa on 20 USD. Maksun summa kirjanpitovaluuttana on 784 euroa. Käteisalennuksen summa valuuttana kirjanpidon lasketaan käyttäen vaihtokurssia päivästä maaliskuuta 1:20 \*80 / 100 = 16 EUR.
-| **Note**                                                                                                                                                                                                                             |
+1 000 dollarin lasku kirjataan 15.2. käteisalennusehdolla 20D2%. Laskun summa kirjanpitovaluutassa on 1 100 EUR 980 dollarin maksu täsmäytetään laskun kanssa 1.3. Käteisalennussumma on 20 dollaria. Maksun summa kirjanpitovaluuttana on 784 euroa. Käteisalennuksen summa kirjanpitovaluuttana lasketaan käyttämällä maaliskuun 1. päivän vaihtokurssia : 20 \* 80 / 100 = 16 euroa.
+| **Huomautus**                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Jos Myyntireskontran parametrit- tai Ostoreskontran parametrit -sivulla valitaan Laske käteisalennukset osamaksuille -vaihtoehto, käytetään osamaksun maksupäivänä voimassaolevaa vaihtokurssia. |
 
@@ -70,5 +73,7 @@ Yrityksen kirjanpitovaluutta on euro ja Yhdysvaltain dollarille on määritetty 
 =
 
  
+
+
 
 

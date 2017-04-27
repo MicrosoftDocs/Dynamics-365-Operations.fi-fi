@@ -1,9 +1,9 @@
 ---
-title: "Käyttöomaisuuden määrittäminen"
+title: "Määritä käyttöomaisuuserät"
 description: "Tämä aihe sisältää käyttöomaisuusmoduulin asetusten yleiskatsauksen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-fixed-assets"></a>Käyttöomaisuuden määrittäminen
+# <a name="set-up-fixed-assets"></a>Määritä käyttöomaisuuserät
+
+[!include[banner](../includes/banner.md)]
+
 
 Tämä aihe sisältää käyttöomaisuusmoduulin asetusten yleiskatsauksen.
 
@@ -43,9 +46,9 @@ Käyttöomaisuus liitetään ryhmään luomisen yhteydessä. Käyttöomaisuusryh
 Poistoprofiilit pitää määrittää ensimmäiseksi. Poistoprofiilissa määritetään, miten käyttöomaisuuserän arvo poistetaan ajan kuluessa. Määritä poistomenetelmä, poistovuosi (kalenterivuosi tai tilikausi) ja poistotiheys.
 
 ## <a name="books"></a>Kirjat
-Kun olet määrittänyt poistoprofiilit, sinun on luotava käyttöomaisuuden edellyttämät kirjat. Jokaisessa kirjassa jäljitetään käyttöomaisuuserän itsenäinen taloudellinen elinkaari. Kirjat voidaan määrittää kirjaamaan liittyvät tapahtumat kirjanpitoon. Tämä kokoonpano on oletusasetus, koska sitä käytetään yleensä yrityksen taloudelliseen raportointiin. Kirjat, joita ei kirjata kirjanpitoon kirjataan vain kiinteän käyttöomaisuuden alareskontran ja käytetään yleensä veroraportointia varten.
+Kun olet määrittänyt poistoprofiilit, sinun on luotava käyttöomaisuuden edellyttämät kirjat. Jokaisessa kirjassa jäljitetään käyttöomaisuuserän itsenäinen taloudellinen elinkaari. Kirjat voidaan määrittää kirjaamaan liittyvät tapahtumat kirjanpitoon. Tämä määritys on oletusasetus, koska sitä käytetään yleensä yrityksen taloushallinnon raportoinnissa. Kirjat, joita ei kirjata kirjanpitoon, kirjataan vain käyttöomaisuuserän alareskontraan ja käytetään yleensä veroilmoitusta varten.
 
-Ensisijainen poistoprofiili liitetään jokaiseen kirjaan. Kirjoilla on myös vaihtoehtoinen poistoprofiili tai lisäpoistoprofiili, jos tämä profiilityyppi on käytettävissä. Jotta käyttöomaisuuskirja sisällytetään automaattisesti poiston suoritukseen, on otettava käyttöön Laske poisto -vaihtoehto. Jos tämä vaihtoehto ei ole valittuna, jos omaisuuden, poistoehdotuksen ohittaa hyödyke.
+Ensisijainen poistoprofiili liitetään jokaiseen kirjaan. Kirjoilla on myös vaihtoehtoinen poistoprofiili tai lisäpoistoprofiili, jos tämä profiilityyppi on käytettävissä. Jotta käyttöomaisuuskirja sisällytetään automaattisesti poiston suoritukseen, on otettava käyttöön Laske poisto -vaihtoehto. Jos tämä vaihtoehto ei ole valittuna jollekin käyttöomaisuuserälle, poistoehdotus ohittaa käyttöomaisuuden.
 
 Voit määrittää myös johdettuja kirjoja. Määritetyt johdetut tapahtumat kirjataan ensisijaisen tapahtuman täydellisenä kopiona johdettuihin kirjoihin. Tämän vuoksi johdetut tapahtumat yleensä määritetään hankinnoille ja luovutuksille eikä poistotapahtumille.
 
@@ -62,14 +65,16 @@ Voit määrittää myös tietyn käyttöomaisuusryhmän ja kirjan yhdistelmän e
 ## <a name="fixed-asset-parameters"></a>Käyttöomaisuuserien parametrit
 Viimeinen vaihe on käyttöomaisuusparametrien päivittäminen.
 
-Aktivointiraja-kentässä määritetään poistetut käyttöomaisuuserät. Jos tilausrivejä on valittu käyttöomaisuuserä, mutta se ei vastaa määritetyn kapitalisointikynnyksen, käyttöomaisuus luodaan tai päivitetään edelleen, mutta Laske poisto-vaihtoehdon arvoksi määritetään ei. Tämän vuoksi omaisuus ei voi automaattisesti poistaa osana poistoehdotuksissa.
+Aktivointiraja-kentässä määritetään poistetut käyttöomaisuuserät. Jos tilausrivejä on valittu käyttöomaisuuseräksi, mutta se ei vastaa määritettyä aktivointirajaa, käyttöomaisuuserä luodaan tai päivitetään, mutta Laske poisto -asetukseksi on määritetty Ei. Siksi käyttöomaisuutta ei poisteta automaattisesti poistoehdotusten osana.
 
 Tärkeä vaihtoehto on Luo poisto-oikaisusummat automaattisesti käytöstä poistamisten kanssa. Jos määrität tämän asetuksen arvoksi Kyllä, toiminto oikaisee käyttöomaisuuserän poiston automaattisesti käyttöomaisuuden poiston aikaisten poistoasetusten perusteella. Myös käteisalennukset voidaan vähentää hankintasummasta käyttöomaisuuserien hankinnan yhteydessä toimittajan laskun avulla.
 
-Ostotilaukset-pikavälilehdessä voidaan määrittää, miten käyttöomaisuuserät luodaan ostoprosessin osana. Ensimmäinen vaihtoehto on Salli käyttöomaisuuden hankinta ostosta. Jos määrität tämän asetuksen arvoksi Kyllähankinta kirjataan käyttöomaisuuserälle laskun kirjaamisen yhteydessä. Jos määrität tämän asetuksen arvoksi ei, voit sijoittaa Käyttöomaisuuden laskun ja ostotilauksen (Ostotilaus), mutta hankintaa ei voi kirjata. Se tehdään erillisessä vaiheessa käyttöomaisuuden kirjauskansiosta. Luo käyttöomaisuus tuotteen vastaanotto- ja lasku-kirjausvalinnan aikana voit luoda uuden käyttöomaisuuserän "lennossa" kirjauksen aikana siten, että se ei tarvitse määrittää käyttöomaisuuserän ennen tapahtuman. Viimeinen vaihtoehto Tarkista käyttöomaisuuden luonti rivimäärityksen aikana -asetus on käytettävissä vain ostoehdotuksissa.
+Ostotilaukset-pikavälilehdessä voidaan määrittää, miten käyttöomaisuuserät luodaan ostoprosessin osana. Ensimmäinen vaihtoehto on Salli käyttöomaisuuden hankinta ostosta. Jos määrität tämän asetuksen arvoksi Kyllähankinta kirjataan käyttöomaisuuserälle laskun kirjaamisen yhteydessä. Jos määrität tämän asetuksen arvoksi ei, käyttöomaisuus voidaan silti asettaa ostotilaukseen ja laskuun, mutta hankintaa ei kirjata. Se tehdään erillisessä vaiheessa käyttöomaisuuden kirjauskansiosta. Luo käyttöomaisuus tuotteen vastaanoton tai laskun kirjaamisen aikana -vaihtoehto mahdollistaa uuden käyttöomaisuuserän luomisen kirjaamisen aikana. Sitä ei tarvitse määrittää käyttöomaisuutena ennen tapahtumaa. Viimeinen vaihtoehto Tarkista käyttöomaisuuden luonti rivimäärityksen aikana -asetus on käytettävissä vain ostoehdotuksissa.
 
 Syykoodit voidaan konfiguroida niin, että ne ovat pakollisia käyttöomaisuuden muutoksissa tai tietyissä käyttöomaisuustapahtumissa.
 
 Lopuksi Numerosarjat-välilehdessä määritetään käyttöomaisuuden numerosarjat. Jos käyttöomaisuusryhmän numerosarja on määritetty, se voi ohittaa käyttöomaisuuden numerosarjan.
+
+
 
 

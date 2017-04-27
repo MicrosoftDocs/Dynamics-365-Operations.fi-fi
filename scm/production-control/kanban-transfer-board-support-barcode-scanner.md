@@ -1,5 +1,5 @@
 ---
-title: Kanban-siirron taulu tuki viivakoodi skannerit
+title: Kanban-siirron taulun tuki viivakoodinlukijoille
 description: "Kanban-siirron taulu tukee skannerin toimia aina pienoisohjelman viivakoodiskannerista kanban-työn valitsemiseen, käynnistämiseen, päättämiseen ja tyhjentämiseen."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban-siirron taulu tuki viivakoodi skannerit
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban-siirron taulun tuki viivakoodinlukijoille
+
+[!include[banner](../includes/banner.md)]
+
 
 Kanban-siirron taulu tukee skannerin toimia aina pienoisohjelman viivakoodiskannerista kanban-työn valitsemiseen, käynnistämiseen, päättämiseen ja tyhjentämiseen.
 
@@ -46,13 +49,13 @@ Kanban-siirron taulu tukee skannerin toimia aina pienoisohjelman viivakoodiskann
 <a name="registration-mode-select"></a>Rekisteröintitilan valinta
 ------------------------
 
-Jos käytät viivakoodi lukija työ kanban-kortin muutokset esitystapaa. Tässä tilassa sovelletaan seuraavia ehtoja:
+Kun käytät viivakoodinlukijaa työn valintaan, kanban-taulun näyttötila muuttuu. Tässä tilassa seuraavien ehtojen on täytyttävä:
 
 -   Vain skannattu kanban-työ tulee näkyviin.
 -   Valitun tehtävän tiedot näkyvät **Tiedot**-pikavälilehdessä.
 -   **Sanomat**-pikavälilehdessä näkyvät vain valitun työn sanomat.
 -   Voit muuttaa työn tilaa toimintoruudun toiminnoilla. Kanban-siirron taulussa näkyy edelleen vain yksi työ.
--   Voit päivittää luettelon tietoja töiden manuaalisesti valitsemalla **päivittää** (VAIHTO + F5) toimintoruudussa. Kun olet päivittänyt tiedot, työn suodattimen kaikki tulokset näytetään uudelleen.
+-   Voit päivittää tiedot työluetteloon manuaalisesti valitsemalla **Päivitä** (Vaihto+F5) toimintoruudussa. Kun olet päivittänyt tiedot, työn suodattimen kaikki tulokset näytetään uudelleen.
 
 ## <a name="job-status-and-possible-actions"></a>Työn tila ja mahdolliset toiminnot
 Valitun työn tila sekä tapahtumien kanbanien tarvekohdistettujen töiden tila määrittävät, voidaanko työtä käsitellä lisää. Seuraavassa taulukossa on tietoja näistä tiloista ja tehtävistä:
@@ -185,6 +188,8 @@ Valitun työn tila sekä tapahtumien kanbanien tarvekohdistettujen töiden tila 
 </tr>
 </tbody>
 </table>
+
+
 
 
 

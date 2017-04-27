@@ -1,6 +1,6 @@
 ---
-title: "Uuden tehtävän apuviivat (helmikuu 2016)"
-description: "Tämä wiki luettelo tehtävän apuviivat, jotka on julkaistu Microsoft BPM kirjastoihin helmikuu 2016 alkaen.  Kirjastot, jotka on julkaistu (helmikuu 2016) ovat APQC yhdistetyn kirjaston Microsoft Dynamics-365 ja toimintoja (helmikuu 2016) aloittaminen."
+title: "Uudet tehtäväoppaat (helmikuu 2016)"
+description: "Tässä wikissä on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM -kirjastoissa helmikuuhun 2016 mennessä.  Julkaistut kirjastot sisältävät (helmikuu 2016) Microsoft Dynamics 365 for Operationsin yhdistetyn APQC-kirjaston sekä (helmikuu 2016) aloitusoppaan."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>Uuden tehtävän apuviivat (helmikuu 2016)
+# <a name="new-task-guides-february-2016"></a>Uudet tehtäväoppaat (helmikuu 2016)
 
-Tämä wiki luettelo tehtävän apuviivat, jotka on julkaistu Microsoft BPM kirjastoihin helmikuu 2016 alkaen.  Kirjastot, jotka on julkaistu (helmikuu 2016) ovat APQC yhdistetyn kirjaston Microsoft Dynamics-365 ja toimintoja (helmikuu 2016) aloittaminen.
+Tässä wikissä on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM -kirjastoissa helmikuuhun 2016 mennessä.  Julkaistut kirjastot sisältävät (helmikuu 2016) Microsoft Dynamics 365 for Operationsin yhdistetyn APQC-kirjaston sekä (helmikuu 2016) aloitusoppaan.
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Tehtävä apuviivat (helmikuu 2016) Microsoft Dynamics-365 työvaiheiden APQC yhdistetyn kirjaston
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Microsoft Dynamics 365 for Operationsin yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016)
 ---------------------------------------------------------------------------------
 
-(Helmikuu 2016) Yhtenäistetty APQC kirjasto sisältää tehtävän, joka on tarkoitettu käytettäväksi apua Dynamics 365, toimintojen 7.0.0 vapauttaa apuviivat. Jos sinun on tehtävä nämä oppaat lokalisoidut versiot, ne ovat käytettävissä (toukokuussa 2016) Microsoft Dynamics-365 työvaiheiden APQC yhdistetyn kirjaston. Saat lisätietoja siitä, miten ohjeen muodostaa tehtävien opas-kirjasto [alkuun Ohje](help-overview.md).
+(Helmikuu 2016) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, jotka on tarkoitettu Dynamics 365 for Operations 7.0.0 -version ohjeeksi. Jos tarvitset näiden tehtäväoppaiden lokalisoituja versioita, ne ovat saatavilla (toukokuu 2016) Microsoft Dynamics 365 for Operationsin yhdistetyssä APQC-kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
 
 ### <a name="accounts-payable"></a>Ostoreskontra
 
@@ -531,7 +531,7 @@ Tämä wiki luettelo tehtävän apuviivat, jotka on julkaistu Microsoft BPM kirj
 | Lisää laskelma tuotemääritysmalliin    | Yleinen             |
 | Tuotemääritysmallin hyväksyntä                 | Yleinen             |
 | Julkaistun päätuotteen perusmääritysten päättäminen | Yleinen             |
-| Luominen... \financial-dimensions\dimension-based päätuote               | Yleinen             |
+| Luo dimensiopohjainen päätuote (..\financial-dimensions\dimension-based)               | Yleinen             |
 | Tuotteiden luokitteluhierarkian luominen          | Yleinen             |
 | Luo tuotemääritysmalli                  | Yleinen             |
 | Luo päätuote                               | Yleinen             |
@@ -544,7 +544,7 @@ Tämä wiki luettelo tehtävän apuviivat, jotka on julkaistu Microsoft BPM kirj
 | Ylläpidä tuotemääritysmallin tuoterakenne        | Yleinen             |
 | Ylläpidä tuotemallin reititystä                    | Yleinen             |
 | Hallitse julkaistuja tuotteita                              | Yleinen             |
-| Versiossa... \financial-dimensions\dimension-based päätuote              | Yleinen             |
+| Julkaise dimensiopohjainen päätuote (..\financial-dimensions\dimension-based)              | Yleinen             |
 | Tietojen siirtäminen tuotemalleja varten                      | Yleinen             |
 
  
@@ -718,10 +718,10 @@ Tämä wiki luettelo tehtävän apuviivat, jotka on julkaistu Microsoft BPM kirj
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Uudet tai päivitetyt tehtävä auttaa (toukokuussa 2016)](new-updated-task-guides-available-may-2016.md)
+[Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Uudet tai päivitetyt tehtävä auttaa (elokuuta 2016)](new-updated-task-guides-available-august-2016.md)
+[Uudet tai päivitetyt tehtäväoppaat saatavilla (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
 
-[Uudet tai päivitetyt tehtävä auttaa (marraskuu-2016)](new-task-guides-november-2016.md)
+[Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)
 
 

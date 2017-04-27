@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-methods-and-conventions"></a>Poistomenetelmät ja -käytännöt
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää yleiskuvauksen Microsoft Dynamics AX:n tukemista poistomenetelmistä.
 
 Voit valita useita poistomenetelmiä. Menetelmien tarkoituksena on kohdistaa käyttöomaisuuserän poistokelpoinen arvo tilikausille. Käyttöomaisuuserän poistokelpoinen arvo on hankintahinta vähennettynä mahdollisella jäännösarvolla. 
@@ -66,26 +69,27 @@ Voit valita seuraavista poistomenetelmistä.
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Käyttöomaisuuden poisto](fixed-asset-depreciation.md)
 
-[Straight line service life depreciation](Straight-line-service-life-depreciation.md)
+[Käyttöikään perustuva tasapoisto](Straight-line-service-life-depreciation.md)
 
-[Reducing balance depreciation](reduce-balance-depreciation.md)
+[Jäännöspoisto](reduce-balance-depreciation.md)
 
-[Manual depreciation](manual-depreciation.md)
+[Manuaalinen poisto](manual-depreciation.md)
 
-[Factor depreciation](factor-depreciation.md)
+[Kerroinpoisto](factor-depreciation.md)
 
-[Consumption depreciation](consumption-depreciation.md)
+[Kulutuspoisto](consumption-depreciation.md)
 
-[Straight line life remaining depreciation](straight-line-life-remaining-depreciation.md)
+[Jäljellä olevan käyttöajan tasapoisto](straight-line-life-remaining-depreciation.md)
 
-[125 prosentin jäännöspoisto](125-percent-reducing-balance-depreciation.md)
+[Jäännöspoisto 125 prosenttia](125-percent-reducing-balance-depreciation.md)
 
-[150 prosentin jäännöspoisto](150-percent-reducing-balance-depreciation.md)
+[Jäännöspoisto 150 prosenttia](150-percent-reducing-balance-depreciation.md)
 
-[175 prosentin jäännöspoisto](175-percent-reducing-balance-depreciation.md)
+[Jäännöspoisto 175 prosenttia](175-percent-reducing-balance-depreciation.md)
 
-[200 prosentin jäännöspoisto](200-percent-reducing-balance-depreciation.md)
+[Jäännöspoisto 200 prosenttia](200-percent-reducing-balance-depreciation.md)
+
 
 

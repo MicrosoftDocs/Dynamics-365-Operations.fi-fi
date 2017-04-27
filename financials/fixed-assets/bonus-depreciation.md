@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bonus-depreciation"></a>Bonuspoisto
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää bonuspoiston toimintojen yleiskatsauksen.
 
 Bonuspoisto mahdollistaa ylimääräiset poistosummat sinä vuonna, jolloin käyttöomaisuus otetaan käyttöön ja siitä tehdään poisto ensimmäistä kertaa. Bonuspoisto on suoritettava ennen muiden poistojen laskemista. Näin kannattaa käyttää bonuspoistoa kirjoissa, joissa Kirjaa kirjanpitoon -toiminto on poistettu käytöstä. Voit käyttää **Poista kirjanpitoon kirjaamattomat tapahtumat** ja poistaa aiempia tapahtumia kirjoista, joita ei kirjata kirjanpitoon. Bonuspoisto voidaan sisällyttää myöhemmin käyttöomaisuuserän elinkaareen poistamalla aiemmin kirjattuja poistotapahtumia. 
@@ -61,5 +64,7 @@ Kun bonuspoisto lasketaan ehdotusprosessia käyttäen, luodaan kaikille poistoki
 Bonuspoistotietueita voidaan luoda rajaton määrä. Kun tietueet on määritetty käyttöomaisuusryhmän kirjaan, niitä käytetään käyttöomaisuuserän poistokirjassa. 
 
 Bonuspoisto ilmoitetaan joko prosenttina tai kiinteänä summana. Kun kirjataan poistoehdotuksia, bonuspoistotapahtumat kirjataan kirjaan poistotapahtumista erillisinä tapahtumina.
+
+
 
 

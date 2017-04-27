@@ -49,18 +49,18 @@ Voit ryhmitellä raporttimäärityksiä luodaksesi useita raportteja samanaikais
 ### <a name="create-a-report-group"></a>Raporttiryhmän luonti
 
 1.  Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
-2.  - **Tiedosto** -valikosta Valitse **uusi**&gt;**ryhmän raporttimäärityksen** raporttiryhmän Avaa viewer-ikkunassa. Voit myös valita **raporttiryhmä** painiketta ![raporttiryhmä](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "raporttiryhmä") työkalurivin.
+2.  Avaa uusi raporttiryhmä katseluohjelman ikkunassa valitsemalla **Tiedosto**-valikossa **Uusi** &gt; **Raporttiryhmän määritys**. Voit vaihtoehtoisesti napsauttaa työkalurivillä **Raporttiryhmä**-painiketta ![Raporttiryhmä](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Raporttiryhmä").
 3.  Valitse **Raporttiryhmä**-välilehti. Ohittaaksesi yksittäisiä raportin määrityksiä koskevat tiedot tätä raporttia luotaessa, valitse **Ohita yritys-, tiedot- ja päivä-määritykset yksittäisten raporttimääritysten** valintaruuduissa. Yrityksen nimi, tietojen taso, alustava asetus ja päivämäärätiedot täytetään automaattisesti, mutta voit tehdä päivityksiä.
 4.  Jos haluat luoda useita raportointivaluutan näyttäviä raportteja, valitse **Sisällytä kaikki raportointivaluutat** -valintaruutu. Voit sitten käyttää useita näkymiä valitsemalla **Valuutta**-painikkeen verkkokatseluohjelmassa, kun katsot raporttia.
 5.  Valitse raporttiryhmään sisällytettävät raportit valitsemalla **Ryhmän raportit** -kentässä **Lisää**. Jos haluat valita useita raportteja **Lisää**-valintaikkunassa, pidä Ctrl-näppäintä painettuna valitessasi raportteja. Kun olet valinnut raportit, valitse **OK**.
-6.  Valitse **tiedosto**&gt;**Tallenna** Tallenna uusi raporttiryhmä.
+6.  Tallenna uusi raporttiryhmä valitsemalla **Tiedosto** &gt; **Tallenna**.
 
 ### <a name="modify-a-report-group"></a>Raporttiryhmän muokkaaminen
 
 1.  Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
 2.  Kaksoisnapsauta muokattavaa raporttiryhmää.
 3.  Tee tarvittavat muutokset **Raporttiryhmä**-välilehdessä.
-4.  - **Tiedosto** -valikosta Valitse **Tallenna** voit tallentaa muokatun raporttiryhmän myös valitsemalla **tallentaa** painiketta ![tallentaa](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "tallentaa") työkalurivin.
+4.  Tallenna muokattu raporttiryhmä valitsemalla **Tiedosto**-valikossa **Tallenna**. Vaihtoehtoisesti voi napsauttaa työkalurivillä **Tallenna**-painiketta ![Tallenna](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Tallenna").
 
 **Huomautus:** Jos olet ajoittanut raporttien luonnin tapahtumaan tietyin väliajoin, voit ohittaa nämä asetukset ja luoda raportin heti.
 
@@ -68,7 +68,7 @@ Voit ryhmitellä raporttimäärityksiä luodaksesi useita raportteja samanaikais
 
 1.  Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
 2.  Avaa luotava raporttiryhmä.
-3.  Valitse **Luo raportti** painiketta ![Luo raportti](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Luo raportti") voit luoda raportteja.
+3.  Luo raportteja napsauttamalla **Luo raportti** -painiketta ![Luo raportti](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Luo raportti").
 
 ### <a name="delete-a-report-group"></a>Raporttiryhmän poistaminen
 
@@ -104,8 +104,8 @@ Seuraavassa taulukossa käsitellään **Raporttiryhmä**-välilehden ohjausobjek
 <td>Määritä raporttien yksityiskohtien taso.
 <ul>
 <li><strong>Taloushallinto</strong>− Korkean tason yhteenvetoraportti. Et voi porautua tileihin ja dimensioihin lukuun ottamatta niitä tilejä ja dimensioita, jotka on lisätty raportointipuun kautta.</li>
-<li><strong>Taloushallinnon &amp;huomioon</strong> − A raportti, joka sisältää ylemmän tason yhteenvedosta ja tilin tiedot.</li>
-<li><strong>Rahoitus, tili, &amp;tapahtuma</strong> − A raportti, joka sisältää ylemmän tason yhteenvedosta ja tapahtumatiedot.</li>
+<li><strong>Rahoitus &amp; Tili</strong>− Raportti, joka sisältää korkean tason yhteenveto- ja tilitietoja.</li>
+<li><strong>Rahoitus, Tili &amp; Tapahtuma</strong>− Raportti, joka sisältää korkean tason yhteenveto- ja tapahtumatietoja.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -154,6 +154,6 @@ Vain oletusarvoiset perusjaksoasetukset tallennetaan raportin määrityksiin.</t
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Taloudellinen raportointi saat toimintoihin Microsoft Dynamics-365](financial-reporting-intro.md)
+[Taloushallinnan raportointi Microsoft Dynamics 365 for Operations -järjestelmässä](financial-reporting-intro.md)
 
 

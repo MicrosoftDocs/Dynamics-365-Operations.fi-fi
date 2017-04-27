@@ -1,6 +1,6 @@
 ---
-title: "Kustannuslaskennan analyysi BI virran sisällön suojauksen määrittäminen"
-description: "Tässä ohjeaiheessa kerrotaan, miten access-suojauksen kustannuslaskennan rivitason Microsoft Power BI-suojaus voi levitä. Tämä toiminto auttaa takaamaan, että käyttäjät näkevät vain virtaa BI-tiedot, jotka heille on myönnetty pääsy."
+title: "Kustannuslaskennan Power BI -sisällön suojauksen määrittäminen"
+description: "Tässä ohjeaiheessa kerrotaan, miten Kustannuslaskennan käyttöoikeustason tietoturva täytetään Microsoft Power BI:n rivitason tietoturvaan. Tämä toiminto takaa, että käyttäjät näkevät vain Power BI -tietoja, joihin heillä on käyttöoikeus."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,38 +24,43 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Kustannuslaskennan analyysi BI virran sisällön suojauksen määrittäminen
+# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Kustannuslaskennan Power BI -sisällön suojauksen määrittäminen
 
-Tässä ohjeaiheessa kerrotaan, miten access-suojauksen kustannuslaskennan rivitason Microsoft Power BI-suojaus voi levitä. Tämä toiminto auttaa takaamaan, että käyttäjät näkevät vain virtaa BI-tiedot, jotka heille on myönnetty pääsy.
+[!include[banner](../includes/banner.md)]
+
+
+Tässä ohjeaiheessa kerrotaan, miten Kustannuslaskennan käyttöoikeustason tietoturva täytetään Microsoft Power BI:n rivitason tietoturvaan. Tämä toiminto takaa, että käyttäjät näkevät vain Power BI -tietoja, joihin heillä on käyttöoikeus.
 
 <a name="overview"></a>Yleiskuvaus
 --------
 
-**Kustannuslaskennan analyysi** Microsoft Power BI sisältö käyttää virtaa BI rivitason security voit rajoittaa käyttäjän oikeudet. Suojaus perustuu käyttöoikeustason organisaation hierarkian, joka on määritetty Kustannuslaskenta-parametrit. Lisätietoja **kustannuslaskennan analyysi** sisältöä, katso BI virran [kustannuslaskennan analyysin sisältöä virtaa BI](cost-accounting-analysis-content-pack.md).
+Microsoft Power BI:n **Kustannuslaskennan analyysi** -sisältö rajoittaa käyttäjien käyttöoikeuksia Power BI:n rivitason tietoturvan avulla. Suojaus perustuu käyttöoikeustason organisaatiohierarkiaan, joka on määritetty Kustannuslaskennan parametreissa. Lisätietoja Power BI:n **kustannuslaskennan analyysi** -sisällöstä löydät kohdasta [Power BI:n kustannuslaskennan analyysi -sisältö](cost-accounting-analysis-content-pack.md).
 
 ## <a name="setup"></a>Luo perustiedot
-Käyttöoikeustason vakuuden BI virran välittämiseen BI virran sisällön omistajan on tehtävä nämä toimet. **Huomautus:** käyttäjä, joka julkaisee **kustannuslaskennan analyysi** BI virran sisältö muuttuu automaattisesti omistajalle. Vain omistaja voi määrittää BI virran suojauksen. Lisäksi, kunnes omistaja Lisää muut käyttäjät PowerBI.com, kukaan paitsi omistaja voi nähdä tietoja **kustannuslaskennan analyysi** virtaa BI-sisältöä.
+Power BI -sisällön omistajan on tehtävä seuraavat toimet täyttääkseen käyttöoikeustason tietoturva Power BI:hin. **Huomautus:** käyttäjä, joka julkaisee Power BI:n **kustannuslaskennan analyysi** -sisällön on automaattisesti omistaja. Vain omistaja voi Power BI:n tietoturvan. Lisäksi, kunnes omistaja lisää käyttäjiä PowerBI.com-sivustossa, vain omistaja voi nähdä Power BI:n **kustannuslaskennan analyysi** -sisällön tiedot.
 
-1.  Julkaise määritystiedoston BI virran.
-2.  Kirjaudu PowerBI.com.
-3.  Dataset-Etsi **kustannuslaskennan analyysi** virtaa BI-sisältöä.
+1.  Julkaise määritystiedoston Power BI:hin.
+2.  Kirjaudu PowerBI.com -sivustoon.
+3.  Paikanna **Kustannuslaskennan analyysin** Power BI -sisällön tietojoukko.
 4.  Avaa Suojaus-välilehti. 
 
-    [![Suojaus-sivun avaaminen](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)
+    [![Suojaus-välilehden avaaminen](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)
 
-5.  **Kustannusten objektin ohjauskoneen** rooli on jo luotu. Lisätä muita jäseniä, jotka ovat osa kustannuslaskennan käyttöoikeustason organisaation hierarkian. 
+5.  **Kustannusobjektin vastuuhenkilö** -rooli on jo luotu. Lisätä muut kustannuslaskennan käyttöoikeustason organisaatiohierarkian jäsenet. 
 
     [![Jäsenten lisääminen](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)
 
-Käyttäjille, jotka lisätään **kustannusten objektin ohjauskoneen** roolin näkevät vain ne tiedot, he voivat tarkastella kustannuslaskennan käyttöoikeustason organisaatiohierarkian määritelmän mukaan. **Huomautus:** rivitason suojaus koskee laatat ja Microsoft Dynamics-365 toiminnot, jotka on upotettu Power BI-raportteihin.
+Käyttäjät, joille lisätään **Kustannusobjektin vastuuhenkilö** -rooli näkevät vain ne tiedot, joihin heillä on käyttöoikeus sen mukaan, miten kustannuslaskennan käyttöoikeustason organisaatiohierarkia on määritetty. **Huomautus:** rivitason suojaus koskee ruutuja ja raportteja, jotka on upotettu Microsoft Dynamics 365 for Operationsiin Power BI:stä.
 
 ## <a name="updating-security"></a>Suojauksen päivittäminen
-Jos päivitykset tehdään Accessin käyttäjätason suojauksen kustannuslaskennan ja haluat Power BI näitä päivityksiä, sinun on päivitettävä yksikön säilöön **kustannuslaskennan analyysi** virtaa BI-sisältöä. Kun työvaiheiden 365 Dynamics yksikön myymälän päivitys on valmis, Päivitä palvelutiedot, PowerBI.com. Katso lisätietoja yksikön myymälän päivityksen tekemisestä [päivitys yksikön myymälä](power-bi-integration-entity-store.md#update-entity-store). Omistaja **kustannuslaskennan analyysi** virtaa BI sisältöä myös Tee yksikön säilöä päivitystä, jos uusille käyttäjille myönnetään käyttöoikeudet organisaation hierarkian. Lisäksi omistajan täytyy lisätä uusia käyttäjiä **kustannusten objektin ohjauskoneen** roolin PowerBI.com, joten niitä käytetään kyseisen rivin suojauksen.
+Jos kustannuslaskennan käyttöoikeustason suojaukseen tehdään päivityksiä ja haluat, että Power BI käyttää näitä päivityksiä, sinun on päivitettävä **kustannuslaskennan analyysin** Power BI -sisällön yksikkösäilö. Kun Dynamics 365 for Operationsin yksikkösäilön päivitys on valmis, päivitä PowerBI.com-sivuston tiedot. Lisätietoja yksikkösäilön päivittämisestä on kohdassa [Yksikkösäilön päivittäminen](power-bi-integration-entity-store.md#update-entity-store). **Kkustannuslaskennan analyysin** Power BI -sisällön omistajan on suoritettava yksikkösäilön päivitys myös, jos uusille käyttäjille annetaan käyttöoikeus organisaatiohierarkiaan. Omistajan on lisäksi lisättävä uusille käyttäjille **Kustannusobjektini vastuuhenkilö** -rooli PowerBI.com-sivustossa, jotta rivitason tietoturva koskee heitä.
 
 ## <a name="disabling-security"></a>Suojauksen poistaminen käytöstä
-Oletetaan, että organisaatiosi haluaa rajoittaa tietojen käyttö. Jos jostain syystä on poistettu käytöstä suojausparametreja, kun suoritat kustannuslaskennan, omistaja on lisättävä käyttäjiä **Kustannuslaskija** virtaa BI-roolin sijaan. Jos muutat suojaus käytössä-tila käytöstä poistettua, kannattaa poistaa käyttäjiä **kustannusten objektin ohjauskoneen** rooli. Ja päinvastoin, jos otat suojauksen uudelleen. Käyttäjät voivat kuulua molempia rooleja. Yhteinen käyttö on unionin molempia rooleja. On kyse **kustannuslaskennan analyysi** virtaa BI sisällön käyttäjät, joilla on yhteinen käyttö on rajoittamaton tietojen käytön. Jos haluaa käyttää käyttöoikeuksia on rajoitettu, käyttäjille on määritettävä ainoastaan **kustannusten objektin ohjauskoneen** rooli. Rivitason nämä tietoturvapäivitykset tulevat voimaan heti. Haavoittuvuuden käyttäjät olisi päivittää selaimillaan.
+Oletetaan, että organisaatiosi haluaa rajoittaa tietojen käyttöä. Jos jostain syystä suojausparametrit on poistettu käytöstä, kun suoritat kustannuslaskennan, omistajan on lisättävä käyttäjille Power BI:ssä **Kustannuslaskija** -rooli. Jos muutat suojauksen Käytössä-tilasta käytöstä poistetuksi, käyttäjien poistaminen **Kustannusobjektin vastuuhenkilö** -roolista voi olla tarpeen. Ja päinvastoin, jos otat suojauksen uudelleen käyttöön. Käyttäjät voivat kuulua molempiin rooleihin. Yhteinen käyttö on molempien roolien liitto. Kun kyseessä on **kustannuslaskennan analyysin** Power BI -sisältö, käyttäjillä, joilla on yhteinen käyttöoikeus, on rajoittamaton käyttöoikeus tietoihin. Jos tavoitteesi on rajoittaa käyttöoikeuksia, käyttäjät on määritettävä ainoastaan **Kustannusobjektin vastuuhenkilö** -rooliin. Nämä rivitason suojauspäivitykset tulevat voimaan heti. Käyttäjien, joita muutokset koskevat, tulisi päivittää selaimen sisältö.
 
 ## <a name="additional-resources"></a>Lisäresurssit
-Katso lisätietoja BI virran rivi suojauksen [virtaa BI-mallissa suojausvyöhykkeet](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+Katso lisätietoja Power BI:n rivitason suojauksesta kohdasta [Mallin tietoturvan hallinta Power BI:ssä](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
 
 

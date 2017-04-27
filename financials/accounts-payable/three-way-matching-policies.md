@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="three-way-matching-policies"></a>Kolmisuuntaiset vastaavuuskäytännöt
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on esimerkkejä kolmisuuntaisesta vastaavuudesta.
 
 <a name="example-three-way-matching-for-items"></a>Esimerkki: Kolmisuuntainen vastaavuus nimikkeille
@@ -62,7 +65,7 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 1.  Sammy, Fabrikamin vastaanotto-osaston työntekijä vastaanottaa Contoson konetoimituksen kokonaismäärän. Hän syöttää määräksi 5 tuotteen vastaanotossa. Koska ostotilaus on vastaanotettu kokonaisuudessaan, sen tilaksi muuttuu Vastaanotettu.
 2.  Fabrikamin ostoreskontravastaava April kirjaa ja vahvistaa Contoson lähettämän laskun. Hän vahvistaa seuraavat tiedot:
     -   Nimikkeille, joiden vaatimuksena on kolmisuuntainen vastaavuus, laskurivin määrä vastaa vastaanotettua määrää. Vastaanotettu määrä näkyy laskuun kohdistetussa tuotteen vastaanotossa.
-    -   Kohteita, jotka edellyttävät vastaavaa kaksisuuntainen tai kolmisuuntainen hintojen laskun rivillä kuuluvat poikkeamat, jotka on määritetty Microsoft Dynamics-365 Operations.This sisältää seuraavanlaisia hinta vastaavat:
+    -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Microsoft Dynamics 365 for Operationsissa asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
         -   Nettoyksikköhinnan täsmäytys – Laskurivin nettoyksikköhinta vastaa ostotilausrivin nettoyksikköhintaa toleranssiprosentin rajoissa. Tässä esimerkissä nettoyksikköhinnan hintatoleranssi on +8 %.
         -   Kokonaishinnan täsmäytys – Laskurivin nettohinta vastaa ostotilausrivin nettohintaa toleranssiprosentin, -summan tai molempien rajoissa. Tässä esimerkissä nettohinnan hintatoleranssi on +15 %.
 
@@ -75,7 +78,7 @@ Contoson lähettämä paperilasku sisältää seuraavat tiedot.
 | Vero                         |          |            | 0,00       |
 | Yhteensä                       |          |            | 44 500,00  |
 
-Microsoft Dynamics-365 operaatioille laskurivi sisältää seuraavat tiedot.
+Laskurivi Microsoft Dynamics 365 for Operationsissa sisältää seuraavat tiedot.
 
 | Nimiketunnus                 | Määrä | Yksikköhinta | Rivin nettosumma | Täsmäytyskäytäntö    | Tuotteen vastaanoton määrän vastaavuus | Hintavastaavuus | Kokonaishintojen täsmäytys |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -111,7 +114,7 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 1.  Nimikkeet saapuvat. Sammy, työntekijä Fabrikamin Malesian konttorin vastaanotossa keskeytetään työssään eikä kirjaa tuotteen vastaanottoa välittömästi.
 2.  Fabrikamin ostoreskontravastaava April kirjaa ja vahvistaa Contoson lähettämän laskun. Hän vahvistaa seuraavat tiedot:
     -   Nimikkeille, joiden vaatimuksena on kolmisuuntainen vastaavuus, laskurivin määrä vastaa vastaanotettua määrää. Vastaanotettu määrä näkyy laskuun kohdistetussa tuotteen vastaanotossa.
-    -   Kohteita, jotka edellyttävät vastaavaa kaksisuuntainen tai kolmisuuntainen hintojen laskun rivillä kuuluvat poikkeamat, jotka on määritetty Microsoft Dynamics-365 operaatioille. Tämä on hinta vastaavat seuraavia:
+    -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Microsoft Dynamics 365 for Operationsissa asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
         -   Nettoyksikköhinnan täsmäytys – Laskurivin nettoyksikköhinta vastaa ostotilausrivin nettoyksikköhintaa toleranssiprosentin rajoissa. Tässä esimerkissä nettoyksikköhinnan hintatoleranssi on +2 %.
         -   Kokonaishinnan täsmäytys – Laskurivin nettohinta vastaa ostotilausrivin nettohintaa toleranssiprosentin, -summan tai molempien rajoissa. Tässä esimerkissä nettohinnan hintatoleranssi on +10 %.
 
@@ -124,7 +127,7 @@ Contoson lähettämä paperilasku sisältää seuraavat tiedot.
 | USB-muistitikku             | 200      | 10,05      | 2 010,00   |
 | Kokonaislasku         |          |            | 7 092,00   |
 
-Microsoft Dynamics-365 operaatioille laskurivi sisältää seuraavat tiedot.
+Laskurivi Microsoft Dynamics 365 for Operationsissa sisältää seuraavat tiedot.
 
 | Nimiketunnus           | Määrä | Yksikköhinta | Rivin nettosumma | Täsmäytyskäytäntö    | Tuotteen vastaanoton määrän vastaavuus | Hintavastaavuus | Kokonaishintojen täsmäytys |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -140,6 +143,8 @@ Huomaa seuraavat nimikkeet:
 Jos laskuille, joilla on laskun täsmäytysristiriitoja vaaditaan hyväksyntä, laskun täsmäytystietojen sivulta on otettava käyttöön Hyväksy kirjaus, jos on täsmäytysristiriitoja -asetus ennen kuin laskun, jolla on hinnan- ja määräntäsmäytysristiriitoja voi kirjata. Jos hyväksyntää ei tarvita, laskun käsittelyä voi jatkaa jos muita kirjausvirheitä ei ole.
 
 
-Lisätietoja on ohjeaiheessa [tilit ostoreskontran laskujen täsmäytyksen](accounts-payable-invoice-matching.md).
+Lisätietoja on kohdassa [Ostoreskontran laskujen täsmäytys](accounts-payable-invoice-matching.md).
+
+
 
 

@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="benefit-eligibility-policies"></a>Etukelpoisuuden käytännöt
 
-Tässä ohjeaiheessa on tietoja etu tukikelpoisuuden käytäntöjä, joiden avulla määritetään, joka on tiettyjä etuja.
+[!include[banner](includes/banner.md)]
+
+
+Tässä aiheessa on tietoja etukelpoisuuden käytännöistä, joiden avulla määritetään tiettyyn etuun oikeutetut henkilöt.
 
 Luodessasi etuja, voit päättää mitkä edut ovat saatavilla kullekin työntekijälle. Seuraavassa taulukossa on esimerkkejä eduista, joita voisit antaa käytettäväksi tietyille työntekijöille.
 
@@ -38,7 +41,7 @@ Luodessasi etuja, voit päättää mitkä edut ovat saatavilla kullekin työntek
 | Matkapuhelin     | Myyntihekilökunta, johtokunta         |
 | Pysäköintiliput   | Johto                      |
 
-Kelpoisuus käytäntöjen luomiseen käytetään seuraavat osat:
+Seuraavia osia käytetään luomaan oikeutussääntöjä:
 
 -   Käytäntösäännön tyypit
 -   Etukelpoisuuden käytännöt
@@ -51,5 +54,7 @@ Sinä määrität säännön laajuuden käytännön sisällä. Esimerkiksi, jos 
 --------
 
 [Etuohjelman määrittäminen ja hallinta](manage-benefit-program.md)
+
+
 
 

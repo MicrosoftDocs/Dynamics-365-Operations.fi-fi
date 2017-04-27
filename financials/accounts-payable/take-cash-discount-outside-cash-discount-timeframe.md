@@ -1,5 +1,5 @@
 ---
-title: "Käteisalennus käteisalennus kauden ulkopuolella toteutettava"
+title: "Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella"
 description: "Tässä artikkelissa on kaksi skenaariota, jotka osoittavat, miten käteisalennus voidaan käyttää, vaikka maksu suoritettaisiin käteisalennuskauden ulkopuolella."
 author: twheeloc
 manager: AnnBe
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Käteisalennus käteisalennus kauden ulkopuolella toteutettava
+# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa on kaksi skenaariota, jotka osoittavat, miten käteisalennus voidaan käyttää, vaikka maksu suoritettaisiin käteisalennuskauden ulkopuolella.
 
-Kesäkuun 28 päivänä huhtikuuta Luo 2,000.00 3052 toimittajan lasku. Lasku on 1 prosentin käteisalennus, jos lasku maksetaan 14 päivän kuluessa.
+April luo 28. kesäkuuta 2 000,00 arvoisen laskun toimittajalle 3052. Laskulla on 1 prosentin käteisalennus, jos se maksetaan 14 päivän kuluessa.
 
 ## <a name="use-cash-discount-option--always"></a>Käytä käteisalennusta -asetus = Aina
 April luo maksun 1. heinäkuuta, joka on alennuspäivämäärän jälkeen. April avaa **Selvitä tapahtumat** -sivun tarkastellakseen tapahtumia, jotka voidaan selvittää. 
 
-April merkitsee laskun maksulle. Käteisalennusta ei käytetä, koska maksu suoritetaan alennusjakson jälkeen. Kuitenkin toimittaja on hyväksynyt huhtikuussa silti ottaa käteisalennus. Siksi huhtikuussa muuttaa arvon **Käytä käteisalennusta** kentän arvoksi **aina**.
+April merkitsee laskun maksulle. Käteisalennusta ei käytetä, koska maksu suoritetaan alennusjakson jälkeen. Toimittaja on kuitenkin sallinut, että April käyttää käteisalennusta siitä huolimatta. April muuttaa siksi **Käytä käteisalennusta** -kentän arvoksi **Aina**.
 
 | Merkitse     | Käytä käteisalennusta | Tosite   | Tili | Käteisalennuksen päivämäärä | Eräpäivä  | Lasku | Summa tapahtuman valuuttana | Valuutta | Täsmäytettävä summa |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
@@ -85,6 +88,8 @@ Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa. **Käy
 | Käytä käteisalennusta            | Normaali    |
 | Käytetty käteisalennus          | 0,00      |
 | Käytettävä käteisalennussumma | -5,05     |
+
+
 
 
 

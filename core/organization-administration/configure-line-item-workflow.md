@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-line-item-workflow"></a>Määritä rivinimikkeen työnkulku
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä aiheessa kerrotaan rivinimiketyönkulkuelementin määrittämisestä.
 
 Rivinimiketyönkulkuelementti konfiguroidaan työnkulkueditorissa napsauttamalla elementtiä hiiren kakkospainikkeella ja valitsemalla **Ominaisuudet**, joka avaa **Ominaisuudet**-sivun. Seuraavien ohjeiden avulla voit sitten määrittää rivinimiketyönkulkuelementin eri ominaisuudet.
 
-## <a name="name-the-lineitem-workflow-element"></a>Lineitem työnkulkuelementin nimi
+## <a name="name-the-lineitem-workflow-element"></a>Rivinimiketyönkulkuelementin nimeäminen
 Kirjoita näiden ohjeiden avulla nimi rivinimiketyönkulkuelementille.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
@@ -50,6 +53,8 @@ Voit määrittää seuraavasti, käytetäänkö samaa työnkulkua kaikkien nimik
     6.  Voit tarkistaa, onko antamasi ehtojoukko määritetty oikein, valitsemalla **Testi**. Valitse tietue **Testaa työnkulun ehto** -sivun **Tarkista ehto** -alueella ja valitse sitten **Testi**. Järjestelmä arvioi, täyttääkö tietue määrittämäsi ehdot. Palaa **Ominaisuudet**-sivulle valitsemalla **OK** tai **Peruuta**.
 
     Valitse **työnkulku** - välilehdessä työnkulku käsittelemään nimikkeet, jotka täyttävät määrittämäsi ehtojoukon.
+
+
 
 
 

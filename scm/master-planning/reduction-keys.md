@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reduction-keys"></a>Vähennysavaimet
 
+[!include[banner](../includes/banner.md)]
+
+
 Tämä artikkeli sisältää esimerkkejä, jotka kuvaavat vähennysavaimen määrittämistä. Artikkelissa kuvataan erilaisia vähennysavaimen asetuksia ja kunkin asetuksen tuloksia. Vähennysavaimen avulla voit määrittää, kuinka ennustevaatimuksia voidaan vähentää.
 
 <a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>Esimerkki 1: Ennusteen vähennysperiaatteena Prosentti – vähennysavain
@@ -58,7 +61,7 @@ Jos suoritat ennusteajoituksen 1. tammikuuta, kysynnän ennustetarpeita kuluteta
 | Huhtikuu                | 750                       |
 | Touko–joulukuu | 1 000                     |
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Esimerkki 2: Tapahtumat-vähennysavain Vähennysperiaate ennuste
+## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Esimerkki 2: Ennusteen vähennysperiaatteena Tapahtumat – vähennysavain
 Tämä esimerkki osoittaa, miten vähennysavaimen määrittelemillä jaksoilla toteutuvat tilaukset pienentävät kysynnän ennustetarpeita.
 
 -   Valitse **Pääsuunnitelmat**-sivulla **Vähennysperiaate** -kentästä **Tapahtuma - vähennysavain**.
@@ -82,7 +85,7 @@ Jos käytät samaa 1 000 kappaleen kysyntäennustetta kuukaudessa, pääsuunnite
 | Huhtikuu                | 881                       |
 | Touko–joulukuu | 1 000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Esimerkki 3: Tapahtumat-dynaaminen kausi Vähennysperiaate ennuste
+## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Esimerkki 3: Ennusteen vähennysperiaatteena Tapahtumat – dynaaminen kausi
 Useimmiten järjestelmät on määritetty siten, että tapahtumat vähentävät kysynnän ennustetta määritetyillä ennustekausilla: viikkoina, kuukausina ja niin edelleen. Nämä kaudet vähennysavaimeen. Kahden kysynnän ennusterivin välinen aika voi kuitenkin myös *vihjata* tiettyyn kauteen.
 
 1.  Luo kysynnän ennuste seuraaville päivämäärille ja määrille.
@@ -129,6 +132,8 @@ Seuraavassa on yhteenveto **Tapahtumat - dynaaminen kausi** -vähennyksestä:
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Master plans](master-plans.md)
+[Pääsuunnitelmat](master-plans.md)
+
+
 
 

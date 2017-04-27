@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reverse-a-vendor-payment"></a>Toimittajamaksun peruuttaminen
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kuvataan, mitä eroa on maksun palauttamisella, poistamisella, mitätöimisellä ja hylkäämisellä. Lisäksi artikkelissa esitellään kaksi tapaa peruuttaa toimittajan sekki. 
 
-Toisinaan toimittajamaksun kirjaamisen jälkeen maksu on peruutettava. Peruutus eroaa maksun poistamisesta, mitätöinnistä tai hylkäämisestä. Maksun voi poistaa vain, jos sen tila on **Luotu**. Tämä tila tarkoittaa, että maksu on luotu, mutta sitä ei ole vielä luotu. Aina tämä rajoitus koskee riippumatta maksutapa. Kirjaamattomien sekkien voit mitätöidä, kun ne on luotu, mutta ennen kuin ne on kirjattu. Jos luotu maksu on tehty sähköisen rahasto-siirto (EFT) maksun voit hylätä ennen kuin se kirjataan. Hylkää maksu, voit muuttaa **maksutila** arvo. Maksu, joka on mitätöity tai hylännyt ne voidaan luoda uudelleen sen jälkeen **maksutila** arvo muuttuu takaisin **ei mitään**. 
+Toisinaan toimittajamaksun kirjaamisen jälkeen maksu on peruutettava. Peruutus eroaa maksun poistamisesta, mitätöinnistä tai hylkäämisestä. Maksun voi poistaa vain, jos sen tila on **Luotu**. Tämä tila ilmaisee, että maksu on luotu, mutta järjestelmä ei ole vielä suorittanut sitä. Tämä rajoitus pätee aina maksutavasta riippumatta. Voit mitätöidä kirjaamattomat sekit sen jälkeen, kun ne on luotu, mutta ennen niiden kirjaamista. Jos luotu maksu suoritetaan sähköisenä rahansiirtona, voit hylätä maksun ennen sen kirjaamista. Jos haluat hylätä maksun, muuta **Maksutila**-arvoa. Maksu, joka on mitätöity tai hylätty, voidaan luoda uudelleen, kun **Maksutila**-arvoksi on palautunut **Ei mitään**. 
 
-Kun maksu kirjataan, palautuksissa käytetään. Maksut, jotka tehdään sähköisesti ei voi peruuttaa sen jälkeen, kun ne on kirjattu. Sen sijaan on luotava uusi tapahtuma koskien kuinka saat takaisin toimittajan tilille velan maksu. Kirjatut sekit voi peruuttaa kahdella tavalla. Toisessa tavassa peruutukset kirjataan heti, kun napsautat **Maksun mitätöinti** -painiketta **Sekki**-sivulla. Kun käytät toista tapaa ja napsautat **Maksun mitätöinti** -painiketta **Sekki**-sivulla, peruutus lähetetään sekkipalautusten kirjauskansioon Maksuliikenteen hallinta -kohtaan, jossa tarkistaja voi kirjata tai hylätä peruutuksen. 
+Maksun kirjaamisen jälkeen käytetään peruutuksia. Sähköisesti suoritettuja maksuja ei voi peruuttaa enää kirjaamisen jälkeen. Sen sijaan maksun summalle on luotava uusi tapahtuma, jotta velka voidaan siirtää takaisin toimittajan tilille. Kirjatut sekit voi peruuttaa kahdella tavalla. Toisessa tavassa peruutukset kirjataan heti, kun napsautat **Maksun mitätöinti** -painiketta **Sekki**-sivulla. Kun käytät toista tapaa ja napsautat **Maksun mitätöinti** -painiketta **Sekki**-sivulla, peruutus lähetetään sekkipalautusten kirjauskansioon Maksuliikenteen hallinta -kohtaan, jossa tarkistaja voi kirjata tai hylätä peruutuksen. 
 
 Voit tarkistaa organisaatiossasi käytössä olevan tavan **Maksuliikennetiedot**-sivulta. Jos **Käytä tarkistusprosessia maksujen palautuksissa** -asetuksena on **Kyllä**, peruutukset lähetetään sekkipalautusten kirjauskansioon tarkistettaviksi. Seuraavassa taulukossa kuvataan, kuinka sekin peruutusmenetelmät eroavat.
 
@@ -57,7 +60,7 @@ Jos olet peruutusten tarkistuksia tekevä käyttäjä, voit hyväksyä ja kirjat
 -   Jos haluat hylätä peruutuksen, poista sekkipalautusten kirjauskansio.
 
 > [!NOTE]
-> Jos poistat kirjauskansion, peruutus poistetaan järjestelmästä mutta alkuperäinen sekki säilyy **Tarkista** sivulla. Tämän jälkeen sekin tilana ei enää ole **Odottaa peruutusta**.
+> Jos poistat kirjauskansion, peruutus poistetaan järjestelmästä mutta alkuperäinen sekki säilyy **Sekki**-sivulla. Tämän jälkeen sekin tilana ei enää ole **Odottaa peruutusta**.
 
 ## <a name="results-of-posting-a-reversal"></a>Peruutuksen kirjauksen tulokset
 Kun kirjaat sekin peruutuksen, tapahtuu seuraavaa:
@@ -78,6 +81,8 @@ Jos peruutettu sekki myönnettiin asiakaspalautukselle, tapahtuu myös seuraavaa
 
 -   Maksun peruutuksen tapahtuma kirjataan asiakastiliä vastaan, ja alkuperäisen maksun sekä alkuperäisen tiedoston välinen tilitys peruutetaan (luodaan negatiivinen maksu).
 -   Maksun peruutus koskee alkuperäistä maksua. Alkuperäisen asiakkaan suorituksen **Viimeinen tilitystosite** -kenttä **Asiakastapahtumat**-sivulla päivitetään vastaamaan peruutetun tapahtuman tositenumeroa.
+
+
 
 
 

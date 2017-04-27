@@ -1,6 +1,6 @@
 ---
 title: "Hyvitykset ja perinnät myyntireskontrassa"
-description: "Saatavien perinnän kirjanpitotietoja hallitaan yhden keskitetyn näkymän toimintojen kokoelmat sivun käyttäen Microsoft Dynamics-365. Luotonvalvonnan johtajat voivat käyttää uutta keskitettyä näkymää perinnän hallitsemiseen. Perimisasiamiehet voivat aloittaa perintäprosessin asiakasluetteloista, jotka muodostetaan ennalta määritettyjen ehtojen mukaan, tai Asiakkaat-sivulta."
+description: "Myyntireskontran perintätietoja hallitaan yhdessä keskitetyssä näkymässä käyttämällä Microsoft Dynamics 365 for Operationsin Perintä-sivua. Luotonvalvonnan johtajat voivat käyttää uutta keskitettyä näkymää perinnän hallitsemiseen. Perimisasiamiehet voivat aloittaa perintäprosessin asiakasluetteloista, jotka muodostetaan ennalta määritettyjen ehtojen mukaan, tai Asiakkaat-sivulta."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Hyvitykset ja perinnät myyntireskontrassa
 
-Saatavien perinnän kirjanpitotietoja hallitaan yhden keskitetyn näkymän toimintojen kokoelmat sivun käyttäen Microsoft Dynamics-365. Luotonvalvonnan johtajat voivat käyttää uutta keskitettyä näkymää perinnän hallitsemiseen. Perimisasiamiehet voivat aloittaa perintäprosessin asiakasluetteloista, jotka muodostetaan ennalta määritettyjen ehtojen mukaan, tai Asiakkaat-sivulta.
+[!include[banner](../includes/banner.md)]
+
+
+Myyntireskontran perintätietoja hallitaan yhdessä keskitetyssä näkymässä käyttämällä Microsoft Dynamics 365 for Operationsin Perintä-sivua. Luotonvalvonnan johtajat voivat käyttää uutta keskitettyä näkymää perinnän hallitsemiseen. Perimisasiamiehet voivat aloittaa perintäprosessin asiakasluetteloista, jotka muodostetaan ennalta määritettyjen ehtojen mukaan, tai Asiakkaat-sivulta.
 
 Ennen kuin aloitat perinnän määrittämisen tai sen kanssa työskentelyn, on hyvä ymmärtää seuraavat käsitteet:
 -   Asiakkaan erääntymistilannevedokset sisältävät erääntyneet saldotiedot tietyltä aikajaksolta
@@ -55,9 +58,9 @@ Erääntymistilannevedoksen erittelytietue luodaan jokaiselle erääntymiskauden
 Asiakaspoolit ovat kyselyitä, jotka määrittävät asiakastietueiden joukkoa, joka näytetään ja jota hallitaan kokoelmia tai erääntymisprosesseja varten. Voit suodattaa Erääntyneet saldot-, Perintätoimet- ja Perintätapaukset-luettelosivujen tietoja asiakaspoolien avulla. Voit suodattaa myös erääntymistilannevedoksen luontiin sisältyneet asiakastilit asiakaspoolien avulla.
 
 ## <a name="collections-agents"></a>Perimisasiamiehet
-Oletusarvon mukaan Microsoft Dynamics-365 toimintoja käyttäjille voit tarkastella kaikki asiakkaan tiedot kokoelmien sivuilla. Voit käyttää perimisasiamiestietueita määrittämään asiakaspoolit, jotka ovat saatavilla tietojen suodattamiseen perinnän luettelosivuilla ja Perintä-sivulle. 
+Microsoft Dynamics 365 for Operationsin käyttäjät voivat tarkastella oletusarvoisesti kaikkia asiakastietoja perinnän luettelosivuilla. Voit käyttää perimisasiamiestietueita määrittämään asiakaspoolit, jotka ovat saatavilla tietojen suodattamiseen perinnän luettelosivuilla ja Perintä-sivulle. 
 
-Perimisasiamies on henkilö, joka työskentelee asiakkaiden kanssa varmistaakseen, että maksut peritään ajoissa. Microsoft Dynamics-365 operaatioille Perimisasiamiehet ovat työntekijät, jotka on määritetty käyttäjän asetukset-sivun käyttäjät.
+Perimisasiamies on henkilö, joka työskentelee asiakkaiden kanssa varmistaakseen, että maksut peritään ajoissa. Microsoft Dynamics 365 for Operationsissa perimisasiamiehet ovat työtekijöitä, jotka on määritetty käyttäjille Käyttäjän määritys -sivulla.
 
 ## <a name="collections-list-pages"></a> Perinnän luettelosivut 
 Seuraavat luettelosivut ovat hyödyllisiä perintätietojen järjestämisessä.
@@ -67,7 +70,7 @@ Seuraavat luettelosivut ovat hyödyllisiä perintätietojen järjestämisessä.
 
 > [!NOTE]
 > Erääntymistilannevedos on luotava ennen kuin voit tarkastella kyseisten luettelosivujen tietoja. Tiedot näytetään vain asiakkaille, joille on luotu erääntymistilannevedos. Luettelosivulla näytettäviä tietueita voi lisäksi suodattaa seuraavasti:
-<li>Oletusarvon mukaan Microsoft Dynamics-365 Operations käyttäjä pääsee kaikille asiakkaille, joilla tilanne on tilannevedos.</li>
+<li>Oletusarvoisesti Microsoft Dynamics 365 for Operations -käyttäjällä on käyttöoikeus kaikkiin asiakkaisiin, joilla on erääntymistilannevedos.</li>
 <li>Jos järjestelmässä on asiakaspooleja, käyttäjä on määritettävä perimisasiamieheksi voidakseen käyttää pooleja perinnän luettelosivun tietojen suodattamiseen. Tiedot rajoitetaan asiakkaisiin, jotka kuuluvat valittuun asiakaspooliin.</li>
 <li>Jos käyttäjä on määritetty perimisasiamieheksi, ainoastaan kyseiselle perimisasiamiehelle valitut poolit ovat saatavilla luettelosivulla. Jos Anna edustajan tarkastella kaikkia asiakaspooleja -asetus on valittuna perimisasiamiehen Perimisasiamies-sivulla, kyseinen edustaja voi käyttää kaikkia pooleja.</li>
 
@@ -75,7 +78,7 @@ Seuraavat luettelosivut ovat hyödyllisiä perintätietojen järjestämisessä.
 ## <a name="collections-page"></a> Perintä-sivu
 Perintä-sivulla voit tarkastella ja hallita asiakkaan perintätietoja, tehtäviä ja tapauksia sekä suorittaa niille toimenpiteitä. 
 
-Yläruudussa näkyvät valitun asiakkaan palvelupyynnöt. Asiakkaan tapahtumat näkyvät keskimmäisessä ruudussa. Alemmassa ruudussa näkyvät asiakasta koskevat tehtävät. Voit luoda perintätapauksia seurataksesi yhden tai useamman tapahtuman ja tehtävän perintätietoja. Ylä- ja alaruutujen tietoja voidaan suodattaa tapauskohtaisesti. 
+Ylemmässä ruudussa näytetään valitun asiakkaan tapaukset. Keskiruutu näyttää asiakkaan tapahtumat. Alemmassa ruudussa näkyvät asiakasta koskevat tehtävät. Voit luoda perintätapauksia seurataksesi yhden tai useamman tapahtuman ja tehtävän perintätietoja. Ylä- ja alaruutujen tietoja voidaan suodattaa tapauskohtaisesti. 
 
 Valitun asiakkaan erääntyneet saldot ja luottorajatiedot näkyvät tietoruuduissa. Nämä tiedot on tallennettu erääntymistilannevedokseen. Voit päivittää erääntymistilannevedoksen tiedot nykyisillä tiedoilla tarvittaessa. 
 
@@ -86,7 +89,7 @@ Voit peruuttaa, palauttaa tai kääntää kokonaisia korkolaskuja tai niiden osa
 
 Nämä muutokset vaikuttavat vain korkolaskuihin sekä niihin sisältyviin korkoihin ja kuluihin. Poista kaikki maksut, jotka asiakas on velkaa kohdan "Luo poistotapahtumia yhdellä askeleella" vaiheiden avulla.
 
-## <a name="create-writeoff-transactions"></a>Luo writeoff tapahtumat
+## <a name="create-writeoff-transactions"></a>Luo poistotapahtumat
 Voit kirjata epävarmat saatavat pois napsauttamalla Kirjaa pois -painiketta Perintä-lomakkeessa tai Erääntyneet saldot-, Asiakkaat- ja Avoimet asiakkaan laskut -luettelosivuilla. 
 
 Kun kirjaat pois asiakkaan tapahtumia, kaikki asiakkaan tapahtumat merkitään automaattisesti selvitettäväksi. Poiskirjattava summa riippuu merkittyjen tapahtumien nettosummasta. Poiskirjaustapahtuma luodaan yleisessä kirjauskansiossa ja se voi sisältää enintään kolmen tyyppisiä kirjauskansion rivejä.
@@ -100,6 +103,8 @@ Ei katetta -maksujen (NFS) käsittely
 --------------------------------------------
 
 Voit käsitellä NSF-maksuja napsauttamalla Perintä-sivulla NSF-maksu -kohtaa. Maksu peruutetaan, kun napsautat tätä painiketta. Jos NSF-maksu koskee asiakkaan kuluja, veloitustapahtuma luodaan maksujen kirjauskansioon. Maksusumma perustuu automaattisten veloitusten asetuksiin. Automaattiset veloitukset, joita sovelletaan NSF-maksuihin määritetään kuluryhmässä, joka on valittu Pankkitilit-sivulla pankkitilille, jota asia koskee.
+
+
 
 
 

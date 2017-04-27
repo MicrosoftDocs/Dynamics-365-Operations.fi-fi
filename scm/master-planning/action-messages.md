@@ -1,5 +1,5 @@
 ---
-title: dokumentoimattomia
+title: dokumentoimaton
 description: "Toimintosanoma on järjestelmän luoma ehdotus olemassa olevan suunnitellun tai vahvistetun tilauksen muuttamisesta."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="undocumented"></a>dokumentoimattomia
+# <a name="undocumented"></a>dokumentoimaton
 
 Toimintosanoma on järjestelmän luoma ehdotus olemassa olevan suunnitellun tai vahvistetun tilauksen muuttamisesta.
 

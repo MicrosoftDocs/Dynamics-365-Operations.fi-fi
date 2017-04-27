@@ -1,6 +1,6 @@
 ---
-title: "Näytön tarkkuus ennuste"
-description: "Tässä artikkelissa kuvataan Microsoft Dynamics-365 työvaiheiden laskee ja kerrotaan, kuinka voit tarkastella tarkkuus arvot ennusteen tarkkuus tyypit."
+title: Ennusteen tarkkuuden valvonta
+description: "Tässä artikkelissa kuvataan ennusteen tarkkuuden tyyppejä, joita Microsoft Dynamics 365 for Operations laskee ja kertoo, miten voit tarkastella näitä tarkkuusarvoja."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,23 +25,28 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="monitor-forecast-accuracy"></a>Näytön tarkkuus ennuste
+# <a name="monitor-forecast-accuracy"></a>Ennusteen tarkkuuden valvonta
 
-Tässä artikkelissa kuvataan Microsoft Dynamics-365 työvaiheiden laskee ja kerrotaan, kuinka voit tarkastella tarkkuus arvot ennusteen tarkkuus tyypit.
+[!include[banner](../includes/banner.md)]
 
-Työvaiheiden 365 Dynamics laskee ennusteen tarkkuus seuraavanlaisia:
+
+Tässä artikkelissa kuvataan ennusteen tarkkuuden tyyppejä, joita Microsoft Dynamics 365 for Operations laskee ja kertoo, miten voit tarkastella näitä tarkkuusarvoja.
+
+Dynamics 365 for Operations laskee seuraavia ennusteen tarkkuuden tyyppejä:
 
 -   Historiallinen ennusteen tarkkuus vertaamalla historiallista ennustetta, jota pääsuunnittelu käyttää historiallisen kysynnän kanssa. Jos haluat tarkastella historiallisen tarkkuuden arvoja (sekä absoluuttisia että prosentuaalisia arvoja), valitse **Näytä tarkkuus****Kysynnän ennusteen tiedot** -sivulla.
 -   Ennustemallin arvioitua tarkkuutta käytetään ennusteiden luonnissa. Voit tarkastella tarkkuusprosenttia kohdassa **Mallin tiedot - MAPE** **Kysynnän ennusteen tiedot** -sivulla. 
 
-**Huomautus:** Jos toimia kysynnän ennusteet Microsoftin Azure Machine Learning-palvelu käyttää Dynamics 365, sisäisen mallin tarkkuutta laskenta perustuu testi tietojoukon. Tietojoukon testin kokoa, aseta **TESTATA\_MÄÄRITTÄÄ\_kokoa\_PROSENTTIA** -parametrin **kysynnän ennusteet parametrit** sivun. Jos esimerkiksi määrität arvoksi **20**, historiallisten tietojen viimeistä 20 prosenttia käytetään sisäisen mallin tarkkuuden laskemiseen.
+**Huomautus:** Jos käytät Dynamics 365 for Operationsin kysynnän ennustamisen Microsoft Azuren automaattianalyysipalvelua, sisäisen mallin tarkkuuden laskenta perustuu testitietojen joukkoon. Voit määrittää testitietojoukon koon määrittämällä **TEST\_SET\_SIZE\_PERCENT** (Testijoukon koon prosenttiosuus) -parametrin **Kysynnän ennusteen parametrit** -sivulla. Jos esimerkiksi määrität arvoksi **20**, historiallisten tietojen viimeistä 20 prosenttia käytetään sisäisen mallin tarkkuuden laskemiseen.
 
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Oikaistun kysynnän ennusteen valtuuttaminen](authorize-adjusted-forecast.md)
 
-[Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+[Poista poikkeavat tiedot aiemmista tapahtumatiedoista laskettaessa ennustetarvetta](remove-historical-outliers-calculating-demand-forecast.md)
+
+
 
 

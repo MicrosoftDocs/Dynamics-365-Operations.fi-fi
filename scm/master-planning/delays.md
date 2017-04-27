@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="delays"></a>Viiveet
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja pääsuunnittelun viivästyspäivistä. Viivästyspäivä on realistinen eräpäivä, jonka tapahtuma saa, jos pääsuunnittelun laskema aikaisin toimituspäivä on myöhempi kuin pyydetty päivämäärä.
 
 Pääsuunnittelu voi laskea tapahtumalle aikaisimman täyttymispäivämäärän läpimenoaikojen, materiaalin saatavuuden ja suunnittelun erilaisten parametrien perusteella. 
@@ -41,11 +44,13 @@ Voit määrittää kattavuusryhmän viivästysten laskentatavat. Voit liittää 
 
 **Pääsuunnittelun parametrit** -sivulla voit määrittää viivästymisten laskennan aloitusajan. Jos tilaus täyttyy tämän jälkeen, tilauksen viivästyspäivään lisätään yksi päivä. 
 
-**Huomautus:** aiemmissa versioissa laskettu viiveet ovat olleet tiedossa kuin *viivästyssanomat*, Viivästetty päivämäärä oli nimeltään *toimitussuunnitelman päivämäärä*, ja viivästynyt tapahtuma oli *tapahtuma, joka oli tuleva sarja*.
+**Huomautus:** Aiemmissa versioissa laskettuja viiveitä kutsuttiin *viivästyssanomiksi*, viivästyspäivää *lasketuksi viivästyspäiväksi* ja viivästynyttä tapahtumaa *tulevaisuuteen määritetyksi tapahtumaksi*.
 
 <a name="see-also"></a>Lisätietoja
 --------
 
 [Kattavuusasetukset](coverage-settings.md)
+
+
 
 

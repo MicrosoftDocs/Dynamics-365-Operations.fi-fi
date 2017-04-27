@@ -28,28 +28,31 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-a-recruiting-process"></a>Työhönottoprosessin hallinta
 
-Tässä aiheessa kuvataan käsite, rekrytoijille avulla voit seurata ohjeita työhönoton prosessi, mainostaa avoimia toimia ja rekrytoidaan hakijoiden pyrittävä etsimään hakijalle ja hakemuksen tietoja interviewing hakijoiden ja valitsemalla yksi tai useampi ehdokkaita täyttämään avoimia työpaikkoja yrityksessäsi.
+[!include[banner](includes/banner.md)]
+
+
+Tässä artikkelissa esitellään konsepti, jonka avulla työhönottajat voivat seurata työhönottoprosessin vaiheita, mukaan lukien avoimia toimien ilmoittaminen ja hakijoiden työhönotto, hakijoiden ja hakemusten tietojen seuranta, hakijoiden haastattelu ja yhden tai useamman ehdokkaan valinta organisaatiossasi avoinna oleviin toimiin.
 
 <a name="overview"></a>Yleiskuvaus
 --------
 
-Työhönottoprojektien avulla voit järjestää yrityksen avoimiin toimiin tarvittavat työhönoton vaiheet. Hakija on henkilö, joka koskee työllisyyden yrityksen.  Hakemus on sellaisen yrityksen palveluksessa etua hakijan ja voi liittää työhönottoprojektin nimenomaisesti tiettyjä avattaessa etua.  Yksittäisen hakijan voi olla useita sovelluksia samalle oikeushenkilölle tai eri yritysten organisaatiossa.
+Työhönottoprojektien avulla voit järjestää yrityksen avoimiin toimiin tarvittavat työhönoton vaiheet. Hakija on henkilö, joka hakee töihin yritykseesi.  Hakemus on hakijan osoitus mielenkiinnosta yritykseesi, ja voi olla sidottu työhönottoprojektiin, osoittaen mielenkiinnon tiettyyn toimeen.  Yksittäisellä hakijalla voi olla useita avoimia hakemuksia samaan yritykseen tai useampaan organisaatiosi yhtiöön.
 
 <a name="recruitment-projects"></a>Työhönottoprojektit
 --------------------
 
-Työhönottoprojektien avulla rekrytoijille, voit seurata edistymistä täyttää avoimia toimia vastaan.  Työhönottoprojektin tunnistaa osasto ja työn, jotka ovat avoimia toimia. Työhönottoprojektit seuraavat lisäksi seuraavia tietoja avoimista toimista:
+Työhönottoprojektien avulla työhönottajat voivat seurata yhden tai useamman avoimen toimen täyttämisen etenemistä.  Työhönottoprojektissa tunnistetaan osasto ja työ, jossa on avoinna yksi tai useampi toimi. Työhönottoprojektit seuraavat lisäksi seuraavia tietoja avoimista toimista:
 -   Avoimien toimien määrä
 -   Työhön ottava esimies ja vaihtoehtoinen yhteyshenkilö toimelle
 -   Päivämäärä, jolloin ehdotus hyväksyttiin
 -   Hakemuksen viimeinen jättöpäivä
 -   Arvioitu alkamispäivämäärä
 
-Työhönottoprojekti sisältää **työpaikkailmoituksen**, jota käytetään **työntekijän itsepalveluosiossa** avoimen työpaikan ilmoituksena. Näyttääksesi avoimen toimen työntekijöille, työhönottoprojektilla on oltava **työpaikkailmoitus**, sen **Näytä työntekijän itsepalvelussa** -kentän valinta on oltava Kyllä, **hakemuksen viimeisen jättöpäivän** tulee olla tulevaisuudessa, ja työhönottoprojektin **tilana** on oltava Aloitettu. Seuraavassa taulukossa on lueteltu mahdollinen rekrytointi projektin tilat ja niiden kuvaukset.
+Työhönottoprojekti sisältää **työpaikkailmoituksen**, jota käytetään **työntekijän itsepalveluosiossa** avoimen työpaikan ilmoituksena. Näyttääksesi avoimen toimen työntekijöille, työhönottoprojektilla on oltava **työpaikkailmoitus**, sen **Näytä työntekijän itsepalvelussa** -kentän valinta on oltava Kyllä, **hakemuksen viimeisen jättöpäivän** tulee olla tulevaisuudessa, ja työhönottoprojektin **tilana** on oltava Aloitettu. Seuraavassa taulukossa luetellaan mahdolliset työhönottoprojektin tilat ja niiden kuvaukset.
 
-| **Status**    | **Indicates that…**                                                                  |
+| **Tila**    | **Merkitsee, että...**                                                                  |
 |-----------|------------------------------------------------------------------------------------------|
-| Ajastettu | Työhönoton pyrkimyksiä valmistetaan.  Työhönotosta vastaavan ei ole vielä alkanut tämän projektin. |
+| Ajastettu | Työhönottotoimia valmistellaan.  Projektin työhönotto ei ole vielä alkanut. |
 | Aloitettu   | Hakemuksia otetaan nyt vastaan projektin avoimille toimille.                    |
 | Valmis  | Kaikki projektin toimet on täytetty.                                          |
 | Peruutettu  | Projektin työhönotto on peruutettu.                                           |
@@ -59,7 +62,7 @@ Työhönottajat voivat myös tallentaa ulkoisissa työpaikkailmoituskanavissa k�
 <a name="applicants"></a>Hakijat
 ----------
 
-Hakija on henkilö, joka koskee yrityksen projektille.  Hakijat jaetaan kaikkien oikeussubjektien välillä organisaatiossa, joka antaa suuren joukon etsiä kyvykkyys. Voit syöttää ja ylläpitää hakijoiden henkilökohtaisia tietoja, osaamisalueita ja erityisjärjestelyjä. Kun hakijatietue on luotu, hakijalle luodaan henkilötietue yleiseen osoitekirjaan. Voit käyttää **Hakija**-sivua päivittääksesi seuraavat tiedot hakijoista yleiseen osoitekirjaan:
+Hakija on henkilö, joka hakee töihin yritykseesi.  Hakijat jaetaan kaikkien organisaatiosi yritysten kesken, joten käytettävissä oleva osaajajoukko on suuri. Voit syöttää ja ylläpitää hakijoiden henkilökohtaisia tietoja, osaamisalueita ja erityisjärjestelyjä. Kun hakijatietue on luotu, hakijalle luodaan henkilötietue yleiseen osoitekirjaan. Voit käyttää **Hakija**-sivua päivittääksesi seuraavat tiedot hakijoista yleiseen osoitekirjaan:
 -   Osoitetiedot
 -   Yhteystiedot
 -   Tunnistetiedot
@@ -67,7 +70,7 @@ Hakija on henkilö, joka koskee yrityksen projektille.  Hakijat jaetaan kaikkien
 -   Henkilökohtaiset tiedot
 
 ## <a name="applications"></a>Hakemukset
-Vastaanotettujen työhakemusten tietoja voi taltioida **Hakemus**-sivulle. Sovellus on hakijan etua avaamisen organisaation työ.  Jos haluat luoda sovelluksen, hakijan tulee olla hakija tai henkilö järjestelmään.
+Vastaanotettujen työhakemusten tietoja voi taltioida **Hakemus**-sivulle. Hakemus on hakijan osoitus mielenkiinnosta organisaatiossasi avoinna olevaa työtä kohtaan.  Luodakseen hakemuksen, hakija on rekisteröitävä hakijaksi tai henkilöksi järjestelmääsi.
 Internetin välityksellä toimitetut sähköiset työhakemukset ovat joko ilmoituksiin perustuvia hakemuksia, jotka on lähetetty vastauksena työpaikkailmoitukseen, tai avoimia hakemuksia. Ilmoituksiin perustuvat hakemukset liitetään automaattisesti työhönottoprojektiin, josta ilmoitus on luotu. Avoimet hakemukset liitetään työhönottoprojektiin, joka on määritetty **Henkilöstöhallintoparametrit**-sivun **Työhönotto**-alueella.
 ### <a name="application-status"></a>Hakemuksen tila
 
@@ -84,7 +87,7 @@ Hakemuksen tila ilmaisee, missä vaiheessa työhönottoprosessia hakemus on. Seu
 
 ### <a name="correspondence-actions"></a>Vastaustoimenpiteet
 
-**Hakemuksen** vastaustoimenpide määrittää asiakirjan tai sähköpostiviestin mallin, jota käytetään viestinnässä hakemuksen lähettäneen henkilön kanssa. Voit liittää **hakemuksen kirjanmerkit** kanssa, jotta voit käyttää arvoja sovelluksesta vastaustoimenpidettä hakijan haastattelu ja rekrytointi-projektin sivut viestintää hakijoiden kanssa.  **Sähköpostimallit** voi luoda nopeasti lähettää sähköpostia hakijoita, joilla on sovelluksen käyttäen tiettyjä tila ja kirjeenvaihto toiminto vastaustoimenpidettä. Esimerkiksi kaikkien sovellusten kanssa voi lähettää vahvistuksen sähköpostitse **tila** on vastaanotettu ja **vastaavuus-toiminto** on vastaanotettu.  Sähköpostin lähettämisen jälkeen voit halutessasi päivittää automaattisesti sovellusten tilan.
+**Hakemuksen** vastaustoimenpide määrittää asiakirjan tai sähköpostiviestin mallin, jota käytetään viestinnässä hakemuksen lähettäneen henkilön kanssa. Voit liittää **hakemuksen kirjanmerkkejä** vastaustoimenpiteisiin käyttääksesi Hakemus-, Hakija-, Haastattelu- ja Työhönottoprojekti-sivujen arvoja viestinnässä hakijoiden kanssa.  Vastaustoimenpiteille voi luoda **sähköpostimalleja**, joiden avulla hakijoille, joiden hakemuksella on tietyn tilan ja vastaustoimenpiteen yhdistelmä, voi lähettää nopeasti sähköpostiviestejä. Voit esimerkiksi lähettää vahvistussähköpostin kaikille hakemuksille, joiden **tila** on Vastaanotettu ja **vastaustoimenpide** on Vastaanotettu.  Viestien lähettämisen jälkeen voit päivittää hakemusten tilan automaattisesti.
 
 ## <a name="application-routing"></a>Hakemusten reititys
 
@@ -92,7 +95,7 @@ Jos useiden työntekijöiden täytyy tarkistaa hakemus, voit hallita tätä pros
 
 ## <a name="interviews"></a>Haastattelut
 
-**Hakijoiden haastattelut** on ajoitettu **sovelluksia** sivulla.  Käytä **lähettää kokouksen tietoja** painike lähettää hakijalle ja Haastattelijan kalenteritiedosto, joka haastattelun tietoja.
+**Työhönottohaastattelut** voi ajoittaa **Hakemukset**-sivulta.  Käytä **Lähetä tapaamistiedot** -painiketta lähettääksesi haastatteluaikataulun kalenteritiedostona hakijalle ja haastattelijalle.
 
 ## <a name="skill-mapping"></a>Osaamisaluekartoitus
 
@@ -100,7 +103,9 @@ Jos useiden työntekijöiden täytyy tarkistaa hakemus, voit hallita tätä pros
 
 ## <a name="hiring-applicants"></a>Hakijoiden ottaminen palvelukseen
 
-Käytä **Hakemukset**-sivua ottaaksesi hakija palvelukseen. Kun hakija palkataan, hakemustietueen tilaksi merkitään **Palkattu** ja hakijan yleisessä osoitekirjassa olevat tiedot liitetään uuteen työntekijätietueeseen. Yleiseen osoitekirjan tietoihin tehdyt muutokset uuden työntekijätietueen kautta näkyvät myös hakijatietueessa. Tämä vähentää tietojen syöttäminen Jos uusi työntekijä soveltaa joskus johonkin muuhun työtehtävään yrityksen sisällä.  Valitsemalla aiemmin luodun työntekijän palkkaa uusi paikalleen, **vaihtaa paikkaa** - **hakemuksen tila** pudota alas initiate siirtoprosessi.
+Käytä **Hakemukset**-sivua ottaaksesi hakija palvelukseen. Kun hakija palkataan, hakemustietueen tilaksi merkitään **Palkattu** ja hakijan yleisessä osoitekirjassa olevat tiedot liitetään uuteen työntekijätietueeseen. Yleiseen osoitekirjan tietoihin tehdyt muutokset uuden työntekijätietueen kautta näkyvät myös hakijatietueessa. Tämä voi vähentää tietokirjausten määrää, jos uusi työntekijäsi hakee koskaan yrityksen sisällä uutta työtä.  Vanhan työntekijän palkkaamisen uuteen toimeen voit tehdä napsauttamalla **Hakemuksen tila** -valikosta **Muuta toimea**, joka aloittaa siirtoprosessin.
+
+
 
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="common-sources-of-production-variances"></a>Tuotannon varianssien yleiset lähteet
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa selitetään tyypillisiä tuotannon varianssin tyyppien lähteitä. 
 
 Seuraavassa on joitakin tyypillisiä **eräkoon**varianssin lähteitä:
@@ -57,6 +60,8 @@ Seuraavassa on joitakin tyypillisiä **Tuotannon korvaus**varianssin lähteitä:
 -   Tuotannon reititykseen lisätään toiminto, joka raportoidaan kulutetuksi manuaalisesti.
 -   Valitaan eri tuoterakenneversio tuotantotilausta luotaessa, jolloin tuoterakenneversio eroaa vakiokustannuslaskennassa käytettävästä tuoterakenneversiosta.
 -   Valitaan eri reititysversio tuotantotilausta luotaessa, jolloin reititysversio eroaa vakiokustannuslaskennassa käytettävästä reititysversiosta.
+
+
 
 
 
