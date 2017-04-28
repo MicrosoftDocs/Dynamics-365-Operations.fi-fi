@@ -1,6 +1,6 @@
 ---
-title: Toimitusketjun hallinnan aloitussivu
-description: "Tämä sivu osoittaa resursseja, jotka auttavat sinua Käytä toiminnot - tarjonta toimitusketjun hallinnan Microsoft Dynamics-365 entistä tehokkaammin."
+title: Toimitusketjun hallinnan kotisivu
+description: "Tällä sivulla on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Operationsin toimitusketjun hallintaa tehokkaasti."
 author: yuyus
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,35 +25,35 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="supply-chain-management-home-page"></a>Toimitusketjun hallinnan aloitussivu
+# <a name="supply-chain-management-home-page"></a>Toimitusketjun hallinnan kotisivu
 
 [!include[banner](includes/banner.md)]
 
-Tämä sivu osoittaa resursseja, jotka auttavat sinua Käytä toiminnot - tarjonta toimitusketjun hallinnan Microsoft Dynamics-365 entistä tehokkaammin. 
+Tällä sivulla on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Operationsin toimitusketjun hallintaa tehokkaasti. 
 
-## <a name="whats-new-and-in-development"></a>Mikä on uutta ja kehitteillä
-Siirry <a href="https://roadmap.dynamics.com/">Dynamics 365 tiekartta</a> ja mitä uusia ominaisuuksia on julkaissut uudet ominaisuudet ovat kehitteillä. 
+## <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
+Sivustossa <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
 
-## <a name="core-concepts-and-tasks"></a>Core käsitteet ja tehtävien
-*  Valitse vasemmanpuoleisessa ruudussa ominaisuus-alueessa voit saada siitä lisätietoja. 
-*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Saapuvan fyysisen varastoinnin hallinnan lähetysilmoitukset käsitellä</a> (video) 
+## <a name="core-concepts-and-tasks"></a>Keskeiset käsitteet ja tehtävät
+*  Saat lisätietoja valitsemalla ominaisuusalueen vasemmassa ruudussa. 
+*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Saapuvien ASN-ilmoitusten käsittely varastonhallinnassa</a> (video) 
 
 
 ## <a name="blogs"></a>Blogit
-Ei monissa aiheissa tuotanto-ja toimitusketjun hallintaan <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX: N tuotantoerän R & D-tiimin blogi</a> ja <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">hallintaan Dynamics AX R & D Team Blog-</a>. Useimmat on kirjoitettu aiempaa Dynamics 365 for Operations -versiota varten, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa. 
+<a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX:n tuotannon tutkimus- ja kehitysryhmän blogissa</a> ja <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogissa </a>on useita valmistusta ja toimitusketjun hallintaa käsitteleviä aiheita. Useimmat kirjoitukset koskevat Dynamics 365 for Operationsin aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa. 
 
-Esimerkiksi tietoja voit lukea viimeisimmät lisäykset: 
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Julkaisu Dynamics 365 työvaiheiden – varastoinnista</a>
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Parempi pakkaus toimintoja (toiminnot 1611 Dynamics 365)</a>
-* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Cross docking-tuotantotilaukset, siirtotilaukset</a>
+Voit lukea esimerkiksi äskettäin kirjoitettuja kirjoituksia seuraavista aiheista: 
+* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Dynamics 365 for Operations – varastointiratkaisujen julkaiseminen</a>
+* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Parannettu pakkaustoiminto (Dynamics 365 for Operations 1611)</a>
+* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Cross docking tuotantotilauksista siirtotilauksiin</a>
 
-## <a name="white-papers"></a>Tekniset raportit
-* <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Toiminnoissa - kustannuslaskennan käytön aloittaminen Microsoft Dynamics-365</a> Tiedote sisältää Microsoft Dynamics-365 – työvaiheiden määrittäminen Kustannuslaskenta, jotta todelliset kustannukset analyysin vaiheet. Se tarjoaa myös joukko menettelyjä, jotka ovat käytettävissä siinä järjestyksessä, jossa ne näkyvät.
-* <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Dynamics 365 työvaiheiden - Lean-valmistuksen: lupaus ja Kanban-töiden ajoituksessa voidaan</a> julkaisussa käsitellään kanban-töiden ajoitus ja esittelee myyntitilauksen toimituspäivämäärän promise (CTP)-menetelmää voidaan käyttää, ottaen käsite. Se kerrotaan myös, miten CTP voidaan yhdistää tapahtuma-kanbanit mallin kokoaminen tilauksen tai tilauksen mukaan koottava skenaarioita.
-* <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">- Työvaiheiden Tuoterakenteen laskennan avulla Kustannuslaskenta taulukko Microsoft Dynamics-365</a> teknisessä raportissa on kuvaus, joka sisältää materiaalin ja valmistuksen kustannuslaskentalomakkeen määrittäminen ja asetusten vaikutus tuoterakennelaskelman tulokset. Voit tehdä harjoitukset lisäyksen osalta opiskelua varten ja käyttää knowledge, voit saatu Tuoterakenteen laskenta analyysin tehdä tämän tiedoston lukemisessa.
+## <a name="white-papers"></a>Tulostettavat ohjeet
+* <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Operations – kustannuslaskennan aloittaminen</a> on tulostettava ohje, jossa on perusohjeet Microsoft Dynamics 365 for Operations – kustannuslaskentatoiminnon määrittämiseen toteutuneiden kustannusten analysointia varten. Siinä on myös menettelysarja, joka suoritetaan esilletulojärjestyksessä.
+* <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Dynamics 365 for Operations – Lean-valmistus: saatavuus ja kanban-työn aikataulutus</a> on tulostettava ohje, jossa käsitellään kanban-työn aikataulutusta ja esitellään periaate, jossa toimituspäivää hallitaan käyttämällä hyväksymisen saatavuutta (CTP) myyntitilauksia otettaessa. Siinä selitetään myös, miten saatavuus (CTP) voidaan yhdistää tapahtuman kanbaneihin mallintamaan tilausta varten koottavia tai rakennettavia skenaarioita.
+* <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Operations – tuoterakenteen laskenta kustannuslaskentalomakkeen avulla</a> on tulostettava ohje, jossa selvitetään, miten materiaalin ja valmistuksen sisältävät kustannuslaskentalomakkeet määritetään ja miten määritys vaikuttaa tuorerakennelaskennan tuloksiin. Voit tehdä liitteen harjoitustehtävät ja analysoida tuoterakennelaskennan niiden tietojen avulla, jotka olet saanut tekemällä harjoituksen ja lukemalla tämän asiakirjan.
 
-## <a name="elearning-courses"></a>eLearning-kursseille
-Lisätietoja Microsoft Dynamics-365 työvaiheiden koulutukseen, katso <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics Learning Portal</a>. (vaatii CustomerSource-tili) 
+## <a name="elearning-courses"></a>eLearning-kursit
+Lisätietoja Microsoft Dynamics 365 for Operations -koulutuksesta on <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamicsin oppimisportaalissa</a>. (tarvitaan CustomerSource-tili) 
 
 
 

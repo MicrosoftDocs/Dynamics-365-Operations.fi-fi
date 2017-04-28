@@ -1,21 +1,21 @@
-# Luo varasto-asettelu
-# Indbound prosessi
-# Lähtevä prosessi
-# Varaston seuranta
-## [Inventory journals](inventory-journals.md)
-## [Inventory locations](inventory-locations.md)
-## [Inventory statuses](inventory-statuses.md)
-## [Varaa varastomäärä](reserve-inventory-quantities.md)
-## [Myyntitilauksen saman erän varaus](../sales-marketing/reserve-same-batch-sales-order.md)
+# Varastoasettelun luominen
+# Saapuvien käsittely
+# Lähtevien käsittely
+# Varaston seurannan määrittäminen
+## [Varastokirjauskansiot](inventory-journals.md)
+## [Varastosijainnit](inventory-locations.md)
+## [Varaston tilat](inventory-statuses.md)
+## [Varastomäärän varaaminen](reserve-inventory-quantities.md)
+## [Saman erän varaaminen myyntitilausta varten](../sales-marketing/reserve-same-batch-sales-order.md)
 # Tavaralähetysvarasto
-## [Consignment](consignment.md)
-## [Määritä lähetys](set-up-consignment.md)
+## [Tavaralähetys](consignment.md)
+## [Tavaralähetyksen määrittäminen](set-up-consignment.md)
 # Laadunhallinta
-## [Enable quality management](enable-quality-management.md)
-## [Inventory blocking](inventory-blocking.md)
+## [Laadunhallinnan ottaminen käyttöön](enable-quality-management.md)
+## [Varastoesto](inventory-blocking.md)
 ## [Määrityksistä poikkeamisen hallinta](enable-nonconformance-management.md)
-## [Quarantine order](quarantine-orders.md)
-## [Laatu hallintaprosessi](quality-management-processes.md)
-# Jäljitä nimikkeen ja erän
+## [Karanteenitilaus](quarantine-orders.md)
+## [Laadunhallintaprosessi](quality-management-processes.md)
+# Nimikkeen ja erän jäljittäminen
 ## [Varastoerän yhdistäminen](merge-inventory-batches.md)
-## [Nimikkeen jäljitys- ja raaka-aineiden](trace-items-raw-materials-inventory-production-sales.md)
+## [Nimikkeen ja raaka-aineen jäljittäminen](trace-items-raw-materials-inventory-production-sales.md)

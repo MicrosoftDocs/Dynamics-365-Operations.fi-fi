@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 toimintojen esittely
-description: "Työvaiheiden Microsoft Dynamics-365 on Microsoftin business sovellus yrityksille. Tämän sivun avulla voit oppia ja aloittaa tuotteen."
+title: Dynamics 365 for Operationsin esittely
+description: "Microsoft Dynamics 365 for Operations on Microsoftin yrityksille tarkoitettu yrityssovellus. Tällä sivulla on lisätietoja tuotteesta ja käytön aloittamisesta."
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -23,13 +23,13 @@ ms.lasthandoff: 04/12/2017
 
 
 ---
-# <a name="introduction-to-dynamics-365-for-operations"></a>Dynamics 365 toimintojen esittely
+# <a name="introduction-to-dynamics-365-for-operations"></a>Dynamics 365 for Operationsin esittely
 
 [!include[banner](includes/banner.md)]
 
-Työvaiheiden Microsoft Dynamics-365 on Microsoftin business sovellus yrityksille. Sen avulla käyttäjät voivat tehdä nopeasti päätökset entistä älykkäämmät kautta älykäs käyttöliittymä, joka tarjoaa reaaliaikaisen näkemyksiä ja tietoja. Sen avulla yritykset muunnos- ja innnovate toimittamalla hyviksi liiketoimintalogiikan, joka mahdollistaa niiden liiketoimintaprosessien uudelleensuunnittelu nopeammin. Se antaa yrityksille joustavuutta kasvaa omaan tahtiinsa ja kauppaa lähes missä tahansa, milloin tahansa, joten ne laajentaa niiden toimintojen yleisesti yrityksen ja liiketoiminnan tarpeiden. 
+Microsoft Dynamics 365 for Operations on Microsoftin yrityksille tarkoitettu yrityssovellus. Sovelluksen avulla käyttäjät voivat tehdä nopeasti älykkäitä päätöksiä, sillä he saavat älykkäästä käyttöliittymästä reaaliaikaisia analyyseja ja tietoja. Sovelluksen liiketoimintalogiikka auttaa yrityksiä muuttumaan ja toimimaan innovatiivisesti. Myös liiketoimintaprosessien uudelleensuunnittelu nopeutuu. Yritykset voivat kasvaa joustavasti omaan tahtiinsa ja harjoittaa liiketoimintaa käytännössä ajasta ja paikasta riippumatta. Niinpä yritykset voivatkin skaalata toimintojaan maailmanlaajuisesti liiketoiminnan tarpeiden mukaan. 
 
-Käyttäjän opas auttaa tietoja Dynamics 365 työvaiheiden yrityksessä työskenteleviä.    
+Tämä käyttöopas näyttää, miten yrityksesi voi hyötyä Dynamics 365 for Operationsin käytöstä.    
 
 <table>
 <colgroup>
@@ -38,52 +38,52 @@ Käyttäjän opas auttaa tietoja Dynamics 365 työvaiheiden yrityksessä työske
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="get-started/onboarding-home.md">Organisaation tapoja opettelevasta organisaation</a></p>
+<td><p><a href="get-started/onboarding-home.md">Organisaation perehdyttäminen</a></p>
 <p>Myyntitiedot</p>
-<ul><li><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></li>
-<li><a href="financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></li>
-<li><a href="financials/budgeting/budgeting-overview.md">Budgeting</a></li>
-<li><a href="financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></li>
-<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></li>
-<li><a href="financials/fixed-assets/fixed-assets.md">Fixed assets</a></li>
-<li><a href="financials/general-ledger/general-ledger.md">General ledger</a></li>
-<li><a href="financials/project-management/overview-project-management-accounting.md">Project management</a></li>
-<li><a href="financials/public-sector/public-sector-functionality.md">Public sector</a></li></ul>
-<p><a href="dev-itpro/lcs-solutions/country-region.md">Maakohtaiset ominaisuudet</a></p>
+<ul><li><a href="financials/accounts-payable/accounts-payable.md">Ostoreskontra</a></li>
+<li><a href="financials/accounts-receivable/accounts-receivable.md">Myyntireskontra</a></li>
+<li><a href="financials/budgeting/budgeting-overview.md">Budjetointi</a></li>
+<li><a href="financials/cash-bank-management/cash-bank-management.md">Maksuliikenteen hallinta</a></li>
+<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Kustannuslaskenta</a></li>
+<li><a href="financials/fixed-assets/fixed-assets.md">Käyttöomaisuuserät</a></li>
+<li><a href="financials/general-ledger/general-ledger.md">Kirjanpito</a></li>
+<li><a href="financials/project-management/overview-project-management-accounting.md">Projektinhallinta</a></li>
+<li><a href="financials/public-sector/public-sector-functionality.md">Julkinen sektori</a></li></ul>
+<p><a href="dev-itpro/lcs-solutions/country-region.md">Alueelliset ominaisuudet</a></p>
 <p>Henkilöstöhallinto</p>
    <ul>
-  <li><a href="human-resources/departments-jobs-positions.md">HR-strategian</a></li>
-  <li><a href="human-resources/manage-recruiting-process.md">Rekrytoinnissa, palkata ja motivoi</a></li>
+  <li><a href="human-resources/departments-jobs-positions.md">Henkilöstöstrategia</a></li>
+  <li><a href="human-resources/manage-recruiting-process.md">Rekrytointi, työhönotto ja motivointi</a></li>
   <li><a href="human-resources/performance-management-overview.md">Työntekijän koulutus</a></li>
-  <li><a href="human-resources/manage-benefit-program.md">Benefits</a></li>
-  <li><a href="human-resources/questionnaires.md">Questionnaire</a></li>
-  <li><a href="human-resources/localizations/noam-usa-payroll.md">USA: N ominaisuuksia</a></li>
+  <li><a href="human-resources/manage-benefit-program.md">Edut</a></li>
+  <li><a href="human-resources/questionnaires.md">Kyselylomake</a></li>
+  <li><a href="human-resources/localizations/noam-usa-payroll.md">Yhdysvaltalaiset ominaisuudet</a></li>
 </ul></td>
   <td>
   <p>Vähittäismyynti</p>
   <ul>
-<li><a href="retail/call-center-functionality.md">Call center</a></li>
-  <li><a href="retail/define-maintain-retail-channels.md">Channel setup and management</a></li>
-  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS ja pilvi POS</a></li>
-  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Vähittäismyynnin kehittäjä ja hallinta</a></li></ul>
+<li><a href="retail/call-center-functionality.md">Puhelinkeskus</a></li>
+  <li><a href="retail/define-maintain-retail-channels.md">Kanavan määrittäminen ja hallinta</a></li>
+  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS ja pilvimyyntipiste</a></li>
+  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Vähittäismyynnin kehittäjä ja järjestelmänvalvoja </a></li></ul>
   <p>Toimitusketjun hallinta</p>
 <ul>
-<li><a href="supply-chain/cost-management/costing-sheets.md">Cost management</a></li>
-  <li><a href="supply-chain/inventory/inventory-locations.md">Inventory management</a></li>
-  <li><a href="supply-chain/master-planning/master-plans.md">Master planning</a></li>
-  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></li>
-  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Product information management</a></li>
-  <li><a href="supply-chain/production-control/create-production-orders">Production control</a></li>
-  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></li>
-  <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportation management</a></li>
-  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
-  <p>Kehittäjä & admin toiminnot</p>
-  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</a></li>
-  <li><a href="dev-itpro/data-entities/data-entities.md">Data entities</a></li>
+<li><a href="supply-chain/cost-management/costing-sheets.md">Kustannushintojen hallinta</a></li>
+  <li><a href="supply-chain/inventory/inventory-locations.md">Inventoinnin- ja varastonhallinta</a></li>
+  <li><a href="supply-chain/master-planning/master-plans.md">Pääsuunnittelu</a></li>
+  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Hankinta</a></li>
+  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Tuotetietojen hallinta</a></li>
+  <li><a href="supply-chain/production-control/create-production-orders">Tuotannonhallinta</a></li>
+  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Myynti ja markkinointi</a></li>
+  <li><a href="supply-chain/transportation/transportation-management-overview.md">Kuljetustenhallinta</a></li>
+  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Varastonhallinta</a></li></ul>
+  <p>Kehittäjän ja järjestelmänvalvojan toiminnot</p>
+  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytiikka</a></li>
+  <li><a href="dev-itpro/data-entities/data-entities.md">Tietoyksiköt</a></li>
   <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobiilisovellukset</a></li>
-  <li><a href="dev-itpro/office-integration/office-integration.md">Office integration</a></li>
-  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</a></li>
-  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Developer tools</a></li></ul></td>
+  <li><a href="dev-itpro/office-integration/office-integration.md">Office-integraatio</a></li>
+  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Hallinto</a></li>
+  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Kehittäjätyökalut</a></li></ul></td>
 </tr>
 </tbody>
 </table>

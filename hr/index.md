@@ -25,77 +25,77 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="welcome-to-human-resources"></a>Tervetuloa henkilöstöhallinnon
+# <a name="welcome-to-human-resources"></a>Tervetuloa henkilöstöhallintoon
 
 [!include[banner](includes/banner.md)]
 
 Henkilöstöhallinto yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Se muodostaa myös kehyksen, jonka avulla henkilöstöhallinnon henkilöstö voi hallita valvottavia alueita. Näitä alueita ovat työntekijän työhönotto ja sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta.
 
-Voit suorittaa seuraavat tehtävät henkilöstöhallinnon avulla:
+Voit suorittaa henkilöstöhallinnossa seuraavat tehtävät:
 
-> + Hallitse organisaatiorakenteita.
-> + Ylläpidä kattavia työtekijätietoja palkkauksesta työsuhteen päättymiseen.
-> + Määritä ja hallitse etusuunnitelmia, rekisteröi käyttäjiä, määritä huollettavia koskeva kattavuus ja määritä edunsaajat.
-> + Määritä ja valvo poissaolokäytäntöjä.
-> + Toteuta ja seuraa profiiliin perustuvaa aikahallintaa ja luo maksutiedot vietäviksi palkkajärjestelmään.
-> + Hallitse työntekijöiden osaamistietoja.
-> + Arvioi suorituskykyä ja toteuta työntekijän tavoitteita.
-> + Määritä, toimita ja analysoi harjoituskursseja, jotka sisältävät työjärjestykset, istunnot ja etenemissuunnitelmat.
-> + Rekrytoi työntekijöitä ja seuraa hakijoita.
+> + Organisaatiorakenteiden hallinta
+> + Kattavien työntekijätietojen ylläpito työhönottamisesta työsuhteen päättymiseen
+> + Etupakettien määrittäminen ja hallinta, työntekijöiden rekisteröinti, huollettavia koskevan kattavuuden määrittäminen ja edunsaajien määrittäminen
+> + Poissaolokäytäntöjen luominen ja seuranta
+> + Profiilin perustuvan ajanhallinnan toteuttaminen ja hallinta sekä palkkahallintoon vietävien maksutietojen luonti
+> + Työntekijöiden osaamistietojen hallinta.
+> + Suorituksen arviointi ja työntekijän tavoitteiden toteuttaminen.
+> + Työjärjestykset, istunnot ja edistymissuunnitelmat sisältävien koulutuskurssien määrittäminen, järjestäminen ja analysointi
+> + Työntekijöiden rekrytointi ja hakijoiden seuranta
 
-<a name="develop-a-human-resources-strategy"></a>Henkilöstöhallinnon toimintamallin kehittäminen
+<a name="develop-a-human-resources-strategy"></a>Henkilöstöhallinnon strategian kehittäminen
 ---------------------------------------------------------
 
-Työskentelyn Henkilöstöhallinto-rakennetta organisaatiosi päättää käyttää elementtejä, kuten osastojen, työt ja toimet. Nämä ovat foundational osia, jotka määrittää henkilöstöhallinnossa. Yksittäiset työntekijät on määritetty töihin liitettyihin toimiin.
+Henkilöstöhallintoa käytettäessä voi päättää organisaation rakenteen elementtien, kuten osastojen, töiden ja toimien, avulla. Nämä ovat henkilöstöhallinnossa määritettäviä peruselementtejä. Yksittäiset työntekijät määritetään töihin liitettyihin toimiin.
 
--   [Järjestää käytettävyyttä Osastot, työt ja toimet](departments-jobs-positions.md)
--   [Määritä yrityskohtaisia henkilöstöhallinnon parametreja](set-up-company-specific-hr-parameters.md)
--   [Määritä henkilöstöhallinnon parametreja eri yrityksissä](set-up-hr-parameters-across-legal-entities.md) 
+-   [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](departments-jobs-positions.md)
+-   [Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen](set-up-company-specific-hr-parameters.md)
+-   [Yritysten välisten henkilöstöhallinnon parametrien määrittäminen](set-up-hr-parameters-across-legal-entities.md) 
 
-## <a name="recruit-hire-and-motivate-employees"></a>Työntekijöiden rekrytointi, palkkaus ja motivointi
+## <a name="recruit-hire-and-motivate-employees"></a>Työntekijöiden rekrytointi, työhönotto ja motivointi
 
-Työhönottoprojekteilla hallitaan sisältöä, jota käytetään avoimien toimien mainontaan, ja niillä voidaan hallita avoimien työpaikkojen hakemuksia. Voit seurata niiden avulla tietyn työhönottoprojektin työpaikkailmoituksiin saatuja vastauksiaja tai tiettyjä hakijoita ja päivittää avoimien työpaikkojen tilatietoja. Voit myös palkata yksittäisiä hakijoita tai hallita joukkotyöhönottoprojekteja, jotka helpottavat useiden työntekijöiden palkkaamista esimerkiksi sesonkiluonteisissa tilanteissa.
+Työhönottoprojekteilla hallitaan avoimien toimien mainonnassa käytettävää sisältöä, ja ne voivat helpottaa avoimin työpaikkoihin lähettyjen hakemusten hallintaa. Voit seurata niiden avulla tietyn työhönottoprojektin työpaikkailmoituksiin saatuja vastauksiaja tai tiettyjä hakijoita sekä päivittää avoimien työpaikkojen tilatietoja. Voit myös palkata yksittäisiä hakijoita tai hallita joukkotyöhönottoprojekteja, jotka helpottavat useiden työntekijöiden palkkaamista esimerkiksi sesonkiluonteisissa tilanteissa.
 
--   [Manage a recruiting process](manage-recruiting-process.md)
--   [Mass hire projects](mass-hire-projects.md) 
+-   [Työhönottoprosessin hallinta](manage-recruiting-process.md)
+-   [Joukkotyöhönottoprojektit](mass-hire-projects.md) 
 
-Henkilöstön palkkauksen jälkeen voit määrittää suunnitelmat kompensaation tehokkaaseen ja tasapuoliseen hallintaan sekä hallita nimikkeitä, kuten tietokoneita ja puhelimia, joita organisaatio lainaa työntekijöille. Voit luoda kiinteitä ja muuttuvia kompensaatiosuunnitelmia sekä määrittää säännöt, joilla käytetään kompensaatiosuunnitelmaa, joka täyttää kyseisen suunnitelman ehdot.
+Henkilöstön palkkauksen jälkeen voit määrittää suunnitelmat kompensaation tehokkaaseen ja tasapuoliseen hallintaan sekä hallita nimikkeitä, kuten tietokoneita ja puhelimia, joita organisaatio lainaa työntekijöille. Voit luoda kiinteitä ja muuttuvia kompensaatiosuunnitelmia sekä määrittää säännöt, joilla käytetään kyseisen suunnitelman ehdot täyttävää kompensaatiosuunnitelmaa.
 
 -   [Kompensaatiosuunnitelmat](compensation-plans.md)
 -   [Kiinteiden kompensaatiosuunnitelmien luominen](create-fixed-compensation-plans.md)
--   [Luo muuttuvia kompensaatiosuunnitelmia](create-variable-compensation-plans.md)
+-   [Muuttuvien kompensaatiosuunnitelmien luominen](create-variable-compensation-plans.md)
 
 ## <a name="develop-and-train-employees"></a>Työntekijöiden kehittäminen ja kouluttaminen
 
-Helpottamaan työntekijöiden saavuttaa niiden kehityskeskustelussa aikana liiketoimintaa toimittamalla tarvitsee voit määrittää tavoitteet, Luo suorituskyky ja seurata työntekijöiden taitojen kehittäminen auttaa palautetta, voit myös määrittää opettajat, Kurssityypit, kursseja, Kurssikuvaukset, esityslistat, etenemissuunnitelmille ja istunnoille ennen kurssin opettaja tai joku Kurssille rekisteröinti. Opettajien on oltava jo olemassa työntekijöinä, hakijoina tai yhteyshenkilöinä.
+Voit auttaa työntekijöitä saavuttamaan uratavoitteensa samalla, kun toteutat kriittisiä liiketoiminnan tarpeita määrittämällä tavoitteita, luomalla suoritustasoarviointeja ja seuraamalla palautetta. Ohjaajien, kurssityyppien, kurssien, kurssikuvausten, työjärjestysten, edistymissuunnitelmien ja istuntojen määrittäminen ennen kurssin ohjaajan määrittämistä tai työntekijän ilmoittamista kurssille auttaa työntekijöitä kehittämään tarvittavia taitoja. Ohjaajat voivat olla jo järjestelmässä työntekijöinä, hakijoina tai yhteyshenkilöinä.
 
--   [Suorituskyvyn hallinta](performance-management-overview.md)
--   [Työvoiman taitoja ja tarpeisiin](skills.md)
--   [Administer training through courses](courses.md)
+-   [Suorituksen hallinta](performance-management-overview.md)
+-   [Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen](skills.md)
+-   [Koulutuksen hallinta kurssien avulla](courses.md)
 
-## <a name="create-and-maintain-benefits"></a>Luo etuja ja ylläpidä niitä
+## <a name="create-and-maintain-benefits"></a>Etujen luonti ja ylläpito
 
-Sen lisäksi että henkilöstö saavat kompensaationa palkkaa ja bonuksia, voit kehittää etuohjelmia, kuten sairausvakuutus- ja eläkepaketteja. Voit myös hallita etuja, vaikkapa laina-ohjelmia, jossa yritys lainaa nimikkeitä, kuten tietokoneita ja puhelimia, työntekijöilleen.
+Henkilöstön kompensaatio voi koostua palkan ja bonusten lisäksi myös muodostetusta etupaketista, johon voi sisältyä sairausvakuutus- ja eläkepaketteja. Voit myös hallita etuja, kuten laina-ohjelmia, jossa yritys lainaa työntekijöilleen nimikkeitä, kuten tietokoneita ja puhelimia.
 
--   [Etu-ohjelman hallinta](manage-benefit-program.md)
--   [Benefit eligibility policies](benefit-eligibility-policies.md)
--   [Manage items lent to workers](loan-items.md)
+-   [Etuohjelman hallinta](manage-benefit-program.md)
+-   [Etukelpoisuuden käytännöt](benefit-eligibility-policies.md)
+-   [Työntekijöille lainattujen nimikkeiden hallinta](loan-items.md)
 
-## <a name="maintain-workplace-safety-and-compliance"></a>Ylläpidä työturvallisuutta ja vaatimustenmukaisuutta
+## <a name="maintain-workplace-safety-and-compliance"></a>Työturvallisuuden ja vaatimustenmukaisuuden ylläpito
 
-Microsoft Dynamics AX voi auttaa ylläpitämään turvallista ja sovellettavan lainsäädännön mukaista työympäristöä. Tällaista lainsäädäntöä on esimerkiksi Yhdysvaltain Americans with Disabilities Act sekä maahanmuutto- ja kansalaisuuslait. Voit esimerkiksi hallita tiettyjen töiden fyysisiä vaatimuksia sekä seurata apuvälinepyyntöjä, jotka auttavat organisaatiota optimoimaan työvoiman taitojen käytön.
+Microsoft Dynamics AX voi auttaa ylläpitämään turvallista ja sovellettavan lainsäädännön mukaista työympäristöä. Esimerkiksi yhdysvaltalainen Americans with Disabilities Act sekä maahanmuutto- ja kansalaisuuslait ovat tällaisia lakeja. Voit vaikkapa hallita tiettyjen töiden fyysisiä vaatimuksia ja seurata apuvälinepyyntöjä, jotka auttavat organisaatiota optimoimaan työvoiman taitojen käytön.
 
--   [Lomakkeen I-9 työllisyyteen todentaminen](localizations/noam-usa-form-i-9-verification.md)
--   [Noudattaa Americans with Disabilities Act-säädöksiä](localizations/noam-usa-comply-ada.md)
+-   [I-9-lomakkeen työsuhdetarkistukset](localizations/noam-usa-form-i-9-verification.md)
+-   [Americans with Disabilities Act -vammaislainsäädännön noudattaminen](localizations/noam-usa-comply-ada.md)
 
-## <a name="gather-information-using-questionnaires"></a>Kerää tietoja kyselylomakkeilla
+## <a name="gather-information-using-questionnaires"></a>Tietojen kerääminen kyselylomakkeilla
 
-Voit suunnitella ja hallita kyselylomakkeita, joilla voit kerätä tietoja eri tarkoituksia varten. Voit suunnitella ja luoda kyselylomakkeita kyselylomakeominaisuudella. Kun kyselylomake on valmis, voit käyttää laajaa jakelua tai jakaa sen tietyille vastaajille. Kun vastaajat ovat vastanneet lomakkeen kysymyksiin, voit tarkastella ja analysoida tuloksia.
+Voit suunnitella ja hallita kyselylomakkeita, joilla voit kerätä tietoja eri tarkoituksia varten. Voit suunnitella ja luoda kyselylomakkeita kyselylomaketoiminnolla. Kun kyselylomake on valmis, voit käyttää laajaa jakelua tai jakaa sen tietyille vastaajille. Kun vastaajat ovat vastanneet lomakkeen kysymyksiin, voit tarkastella ja analysoida tuloksia.
 
--   [Questionnaires](questionnaires.md)
--   [Design a questionnaire](design-questionnaires.md)
--   [Distribute and complete a questionnaire](distribute-questionnaires.md)
--   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
+-   [Kyselylomakkeet](questionnaires.md)
+-   [Kyselylomakkeen suunnitteleminen](design-questionnaires.md)
+-   [Kyselylomakkeen jakaminen ja täyttäminen](distribute-questionnaires.md)
+-   [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
 
 
 

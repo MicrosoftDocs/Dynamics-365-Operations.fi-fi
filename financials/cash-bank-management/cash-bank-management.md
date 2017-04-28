@@ -1,6 +1,6 @@
 ---
-title: Maksuliikennetietojen aloitussivu
-description: "Voit käyttää maksuliikenteen hallintaa yrityksen pankkitilien ja näihin pankkitileihin liittyvien rahoitusinstrumenttien ylläpitoon."
+title: Maksuliikenteen kotisivu
+description: "Voit käyttää maksuliikenteen hallintaa yrityksen pankkitilien ja kyseisiin pankkitileihin liittyvien rahoitusinstrumenttien ylläpitoon."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,53 +25,53 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="cash-and-bank-management-home-page"></a>Maksuliikennetietojen aloitussivu
+# <a name="cash-and-bank-management-home-page"></a>Maksuliikenteen kotisivu
 
 [!include[banner](../includes/banner.md)]
 
 
-Voit käyttää maksuliikenteen hallintaa yrityksen pankkitilien ja näihin pankkitileihin liittyvien rahoitusinstrumenttien ylläpitoon. 
+Voit käyttää maksuliikenteen hallintaa yrityksen pankkitilien ja kyseisiin pankkitileihin liittyvien rahoitusinstrumenttien ylläpitoon. 
 
-Näihin instrumentteihin sisältyvät talletuskuitit, sekit, vekselit ja velkakirjat. Voit myös täsmäyttää tiliotteet ja tulostaa pankkitietoja vakioraporttien avulla.
+Näitä instrumentteja ovat esimerkiksi talletuskuitit, sekit, vekselit ja velkakirjat. Voit myös täsmäyttää tiliotteet ja tulostaa pankkitietoja vakioraporttien avulla.
 
--   [Cash discounts](cash-discounts.md)
--   [Settlement overview](settlement-overview.md)
--   [Configure settlement](configure-settlement.md)
--   [Foreign currency revaluation for Accounts payable and Accounts receivable](foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
--   [Luottokirjeet](letters-of-credit.md)
--   [Luottokirjeet ja tuontiperittävät](letters-of-credit-import-collections.md)
+-   [Käteisalennukset](cash-discounts.md)
+-   [Tilityksen yleiskatsaus](settlement-overview.md)
+-   [Tilityksen konfiguroiminen](configure-settlement.md)
+-   [Ulkomaanvaluutan uudelleenarvostus osto- ja myyntireskontrassa](foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
+-   [Remburssi](letters-of-credit.md)
+-   [Remburssit ja tuontiperintä](letters-of-credit-import-collections.md)
 -   [Takausasiakirja](letters-of-guarantee.md)
--   [Pankkitilin täsmäytyksen lisätoimintojen yhteenveto](advanced-bank-reconciliation-overview.md)
--   [Configure advanced bank reconciliation](configure-advanced-bank-reconciliation.md)
--   [Määritä pankkitilin täsmäytyksen viennin lisätoiminnot](set-up-advanced-bank-reconciliation-import-process.md)
--   [Täsmäytä tiliotteet pankkitilin täsmäytyksen lisätoiminnoilla](reconcile-bank-statements-advanced-bank-reconciliation.md)
--   [Aseta pankkitilin täsmäytyksen yhteensopivuussäännöt](set-up-bank-reconciliation-matching-rules.md)
+-   [Pankkitilin täsmäytyksen lisätoimintojen yleiskatsaus](advanced-bank-reconciliation-overview.md)
+-   [Pankkitilin täsmäytyksen lisätoimintojen konfugurointi](configure-advanced-bank-reconciliation.md)
+-   [Pankkitilin täsmäytyksen viennin lisätoimintojen määrittäminen](set-up-advanced-bank-reconciliation-import-process.md)
+-   [Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla](reconcile-bank-statements-advanced-bank-reconciliation.md)
+-   [Pankkitilin täsmäytyksen täsmäytyssääntöjen määrittäminen](set-up-bank-reconciliation-matching-rules.md)
 -   [Keskitettyjen maksujen määrittäminen](set-up-centralized-payments.md)
 
 ## <a name="accounts-payable-payments-and-settlements"></a>Ostoreskontran maksut ja tilitykset
--   [Centralized payments for Accounts payable](../accounts-payable/centralized-payments-accounts-payable.md)
--   [Luo toimittajien laskut käyttämällä maksuehdotus](../accounts-payable/create-vendor-payments-payment-proposal.md)
--   [Reverse a vendor payment](../accounts-payable/reverse-vendor-payment.md)
--   [Vendor payments for a partial amount](../accounts-payable/vendor-payments-partial-amount.md)
--   [Ennakkomaksulaskuja ja ennakkomaksujen yleiskuvaus](../accounts-payable/prepayments-invoices-vs-prepayments.md)
--   [Scenario: Settle a partial vendor payment and settle the final payment in full before the discount date](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
--   [Scenario: Settle a partial vendor payment before the discount date with a final payment after the discount date](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
--   [Scenario: Settle a partial vendor payment that has discounts on vendor credit notes](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
--   [Scenario: Settle a partial vendor payment that has multiple discount periods](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
--   [Scenario: Take a discount that is more than the calculated discount for a vendor payment](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
--   [Scenario: Take a cash discount outside the cash discount period](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
+-   [Ostoreskontran keskitetyt maksut](../accounts-payable/centralized-payments-accounts-payable.md)
+-   [Toimittajan laskujen luonti maksuehdotuksen avulla](../accounts-payable/create-vendor-payments-payment-proposal.md)
+-   [Käänteinen toimittajamaksu](../accounts-payable/reverse-vendor-payment.md)
+-   [Toimittajan maksut osasummalle](../accounts-payable/vendor-payments-partial-amount.md)
+-   [Ennakkomaksulaskut ja ennakkomaksujen yleiskatsaus](../accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [Skenaario: Toimittajan osamaksun tilittäminen ja viimeisen maksun tilittäminen kokonaan ennen alennuspäivämäärää](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
+-   [Skenaario: Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [Skenaario: Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+-   [Skenaario: Useita alennuskausia sisältävän toimittajan osamaksun tilittäminen](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
+-   [Skenaario: Alennuksen käyttäminen, kun summa on suurempi kuin toimittajan maksulle laskettu alennus](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
+-   [Skenaario: Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 
 ## <a name="accounts-receivable-payments-and-settlements"></a>Myyntireskontran maksut ja tilitykset
--   [Centralized payments for Accounts receivable](../accounts-receivable/centralized-payments-accounts-receivable.md)
--   [Customer payments for a partial amount](../accounts-receivable/customer-payments-partial-amount.md)
--   [Reimburse customers](../accounts-receivable/reimburse-customers.md)
--   [Scenario: Automatic settlement and prioritization](../accounts-receivable/automatic-settlement-prioritization.md)
--   [Skenaario: Käsittely maksetun summan käteisalennus](../cash-bank-management/cash-discount-handling-overpayments.md)
--   [Scenario: Settle a partial customer payment and settle the final payment in full before the discount date](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
--   [Scenario: Settle a partial customer payment before the discount date with a final payment after the discount date](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
--   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
--   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
--   [Skenaario: Selvitä useita, jotka ulottuvat useita Alennuskausien lasku yhden asiakkaan maksun avulla](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+-   [Myyntireskontran keskitetyt maksut](../accounts-receivable/centralized-payments-accounts-receivable.md)
+-   [Asiakasmaksut osasummalle](../accounts-receivable/customer-payments-partial-amount.md)
+-   [Asiakkaiden hyvittäminen](../accounts-receivable/reimburse-customers.md)
+-   [Skenaario: Automaattinen tilitys ja priorisointi](../accounts-receivable/automatic-settlement-prioritization.md)
+-   [Skenaario: Liian suurten maksujen käteisalennuksen käsittely](../cash-bank-management/cash-discount-handling-overpayments.md)
+-   [Skenaario: Asiakkaan osamaksun tilittäminen ja viimeisen maksun tilittäminen kokonaan ennen alennuspäivämäärää](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [Skenaario: Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+-   [Skenaario: Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
+-   [Skenaario: Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
+-   [Skenaario: Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
 
 

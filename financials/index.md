@@ -1,6 +1,6 @@
 ---
-title: Taloushallinnon aloitussivu
-description: "Tässä aiheessa on luettelo taloushallinnon toimintoja koskevista ohjeaiheista ja muista resursseista Microsoft Dynamics 365 for Operations -järjestelmässä."
+title: Taloushallinnon kotisivu
+description: "Tässä aiheessa on luettelo Microsoft Dynamics 365 for Operationsin taloushallinnon toimintoja koskevista ohjeaiheista ja muista resursseista."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,22 +24,22 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="financial-management-home-page"></a>Taloushallinnon aloitussivu
+# <a name="financial-management-home-page"></a>Taloushallinnon kotisivu
 
 [!include[banner](includes/banner.md)]
 
-Tässä aiheessa on luettelo taloushallinnon toimintoja koskevista ohjeaiheista ja muista resursseista Microsoft Dynamics 365 for Operations -järjestelmässä. 
+Tässä aiheessa on luettelo Microsoft Dynamics 365 for Operationsin taloushallinnon toimintoja koskevista ohjeaiheista ja muista resursseista. 
 
 Saat lisätietoja valitsemalla ominaisuusalueen.
-- [Accounts payable](accounts-payable\accounts-payable.md) 
-- [Accounts receivable](accounts-receivable\accounts-receivable.md) 
-- [Cash and bank management](cash-bank-management\cash-bank-management.md)
-- [Cost accounting](cost-accounting\cost-accounting-home-page.md)
-- [Fixed assets](fixed-assets\fixed-assets.md)
-- [General ledger](general-ledger\general-ledger.md) 
-- [Project management](project-management\overview-project-management-accounting.md)
-- [Public sector](public-sector\public-sector-functionality.md) 
-- [Budgeting](budgeting\budgeting-overview.md) 
+- [Ostoreskontra](accounts-payable\accounts-payable.md) 
+- [Myyntireskontra](accounts-receivable\accounts-receivable.md) 
+- [Maksuliikenteen hallinta](cash-bank-management\cash-bank-management.md)
+- [Kustannuslaskenta](cost-accounting\cost-accounting-home-page.md)
+- [Käyttöomaisuuserät](fixed-assets\fixed-assets.md)
+- [Kirjanpito](general-ledger\general-ledger.md) 
+- [Projektinhallinta](project-management\overview-project-management-accounting.md)
+- [Julkinen sektori](public-sector\public-sector-functionality.md) 
+- [Budjetointi](budgeting\budgeting-overview.md) 
 
 
 

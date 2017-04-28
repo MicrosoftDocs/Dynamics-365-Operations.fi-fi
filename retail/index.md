@@ -1,6 +1,6 @@
 ---
-title: Retail-kotisivu
-description: "Työvaiheiden – Retail 365 Dynamics kotisivu"
+title: "Vähittäismyynnin kotisivu"
+description: "Dynamics 365 for Operations – Retail"
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,71 +25,71 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="retail-home-page"></a>Retail-kotisivu
+# <a name="retail-home-page"></a>Vähittäismyynnin kotisivu
 
 [!include[banner](includes/banner.md)]
 
-Työvaiheiden – 365 Dynamics Retail toimittaa täydellinen ostoksia kokemusta, saumaton ja käytännöllisellä omni-kanava, joka on Nykyaikainen, mobiili ja Yleinen ratkaisu. Päästä päähän ominaisuudet, myynti (POS)-ohjelmistoratkaisuja store operations, markkinointi, sähköisen kaupankäynnin, puhelu center, markkinointi ja asiakastuki, Moderni kohta ketju, Taloushallinto ja enemmän, voidaan ottaa käyttöön siten, että eniten hyötyä yrityksellesi.
+Dynamics 365 for Operations – Retail mahdollistaa kokonaisvaltaisen ostoskokemuksen, sillä se on saumattomasti vaihtuva monikanavainen moderni, mobiili ja yleinen ratkaisu. Kattavat toiminnot voidaan ottaa käyttöön yrityksen kannalta järkevimmillä tavalla. Näitä toimintoja ovat niin modernit myyntipisteen ohjelmistoratkaisut, myymälätoiminnot, myynninedistäminen, sähköinen kaupankäynti, puhelinkeskus, markkinointi ja asiakkaista huolehtiminen kuin toimitusketju ja myyntitiedotkin.
 
-Tämän sivun osoittaa resursseja, joiden avulla voit käyttää Microsoft Dynamics-365 toiminnot - vähittäismyynnin entistä tehokkaammin. Valitse vasemmasta ruudusta ominaisuus-alueessa voit saada siitä lisätietoja. 
+Tällä sivulla on linkkejä resursseihin, jotka auttavat käyttämään tehokkaasti Dynamics 365 for Operations – Retailia. Saat lisätietoja valitsemalla ominaisuusalueen vasemmassa ruudussa. 
 
-## <a name="set-up-retail-channels"></a>Määritä vähittäismyynnin kanavat
-Kuin Retail-kokemus päättää, miten Tiili ja laastin tallennuspaikan määrittäminen (eli *vähittäismyymälän* -toimintoja varten 365 Dynamics) ja verkkokaupan toiminnot. 
+## <a name="set-up-retail-channels"></a>Vähittäismyyntikanavien määrittäminen
+Kun määrität vähittäismyyntikokemusta, päätät, miten perinteisen myymälän (Dynamics 365 for Operationsissa sitä kutsutaan *vähittäismyymäläksi*) ja verkkokaupan toiminnot ja toimintojen asetukset määritetään. 
 
-Jokaisen myymälän retail voi olla oma maksutapoja, hintaryhmät, POS ratkaisuja, tulotileille, tilien ja henkilöstö. Kun olet luonut oman vähittäismyymälän, määritellä tuotteet, jotka haluat suorittaa kauppa. Voit myös liittää työntekijät, kassapäätteet ja asiakkaat myymälään. Lopuksi lisäät uuden myymälän organisaatiohierarkiaan.
+Kullakin vähittäismyymälällä voi olla omat maksutavat, hintaryhmät, myyntipisteratkaisut, tulotilit, kulutilit ja henkilöstö. Kun olet luonut vähittäismyymälän, määrität myymälälle tuotteet. Määrität myös työntekijät, kassapäätteet ja asiakkaat myymälään. Lopuksi lisäät uuden myymälän organisaatiohierarkiaan.
 
-Kun luot oman verkkokaupan, osia, kuten valikoimat, määritteet, maksutavat ja toimitus menetelmiä on määritettävä. Voit myös määrittää hinnat, kampanjat, alennukset ja toimitus ehdot, jotka koskevat Internet-kauppa.
+Kun luot oman verkkokaupan, sinun on määritettävä osat, kuten valikoimat, määritteet, maksutavat ja toimitustavat. Voit määrittää myös verkkokauppaa koskevat hinnat, kampanjat, alennukset ja toimitusehdot.
 
--   [Määritä vähittäismyynnin kanavat](define-maintain-retail-channels.md)
--   [Online store overview](online-stores.md)
+-   [Vähittäismyyntikanavien määrittäminen](define-maintain-retail-channels.md)
+-   [Verkkokaupan yleiskatsaus](online-stores.md)
 
-## <a name="set-up-a-call-center"></a>Aseta puhelinkeskus
-Voit määrittää puhelun keskuksen vähittäismyyntikanavan lajina. Puhelinpalvelukeskuksessa työntekijät ottavat vastaan asiakastilauksia puhelimitse ja luovat myyntitilauksia. Työntekijäsi tilausten ja käsitellä koko tilaus-toimitusprosessi asiakaspalvelun avulla voit määrittää myyntitilaus sisältää, miten hinnoittelua valvotaan ja mitä tietoja asiakkaista, tuotteista ja hinnoittelusta voidaan käyttää. Kunkin keskuksen voit myös määrittää käyttäjät, maksutavat, hintaryhmät, taloushallinnon dimensiot ja toimitustavat.
+## <a name="set-up-a-call-center"></a>Puhelinkeskuksen määrittäminen
+Voit määrittää puhelinkeskuksen yhdeksi vähittäismyyntikanavatyypiksi. Työntekijät ottavat puhelinkeskuksessa vastaan asiakkaiden tilauksia puhelimitse ja luovat myyntitilauksia. Voit auttaa työntekijöitäsi ottamaan vastaan tilauksia ja käsittelemään asiakaspalvelua tilauksen täyttämisprosessin aikana määrittämällä mitä myyntitilaus sisältää, miten hinnoittelua hallitaan ja mitkä asiakasta, tuotteita ja hinnoittelua koskevat tiedot ovat käytettävissä. Voit määrittää kullekin puhelinkeskukselle myös käyttäjät, maksutavat, hintaryhmät, taloushallinnon dimensiot ja toimitustavat.
 
--   [Call center functionality](call-center-functionality.md)
--   [Create call center catalogs](create-call-center-catalogs.md)
+-   [Puhelukeskuksen toiminnot](call-center-functionality.md)
+-   [Puhelinkeskuksen luetteloiden luominen](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>Määritä POS ja MPOS ratkaisujen
-Vähittäismyynnin Moderni POS (MPOS) on myyntipisteen app, tietokoneet, puhelimet ja tabletit. Myyntihenkilöstö myyntitapahtumat, asiakkaiden tilausten käsittely ja suorittaa päivittäisiä toimintoja ja varastonhallinnan mobiililaitteilla missä tahansa-myymälän sekä PC-pohjaiset rekistereihin. Cloud POS on selain-pohjainen POS. 
+## <a name="define-your-pos-and-mpos-solutions"></a>Myyntipiste- ja MPOS-ratkaisujen määrittäminen
+Retail Modern POS (MPOS) on tietokoneisiin, tabletteihin ja puhelimiin tarkoitettu myyntipistesovellus. Myyntihenkilöstö voi käsitellä myyntitapahtumia ja asiakastilauksia sekä suorittaa päivittäistoimintoja ja varastonhallintaa mobiililaitteilla missä tahansa myymässä ja tietokonepohjaisissa kassapäätteissä. Pilvimyyntipiste on selaimella käytettävä myyntipiste. 
 
-On useita osia, voit määrittää suhteet myymälä, kassakoneet tai säilössä kanavat määrittää ja retail-oheislaitteet, rekisterit tai kanavat avulla voit käsitellä tapahtumia. POS-laitteistoprofiilin ja asetukset retail-oheislaitteet, jota käytetään rekisterin, myymälä, joka on yhdistetty rekisteriin ja visuaalisia ominaisuuksia käyttäjä, joka kirjautuu, joka rekisteröi ilmentymän erityispiirteet myös määrittää.
+Myymälän, kassakoneen tai myymälässä käytettävien kanavien sekä sellaisten vähittäismyynnin oheislaitteiden kanssa, joilla tapahtumat käsitellään, välinen suhde määritetään eri osien avulla. Voit myös määrittää tietyn myyntipisteen esiintymän sekä laitteistoprofiilin tai kassakoneessa käytettävien vähittäismyynnin oheislaitteiden asetukset, myymälän, johon kassakone on yhdistetty, ja ulkoasun, jonka kassakoneeseen kirjautuva käyttäjä näkee.
 
--   [Määritä ja Ylläpidä kanavan asiakkaiden, rekisterit ja laitteiston asemilla](define-maintain-channel-clients-registers-hw-stations.md)
--   [MPOS asentaminen ja määrittäminen](retail-modern-pos-device-activation.md)
--   [POS-toimintoprofiili offline-tilassa.](pos-offline-functionality.md)
+-   [Kanavan asiakasohjelmien, kassakoneiden ja laiteasemien määrittäminen ja ylläpitäminen](define-maintain-channel-clients-registers-hw-stations.md)
+-   [MPOS-ratkaisun määrittäminen ja asentaminen](retail-modern-pos-device-activation.md)
+-   [Myyntipisteen offline-toiminto](pos-offline-functionality.md)
 
-## <a name="set-up-a-customer-loyalty-program"></a>Määrittää asiakkaan kanta-asiakasohjelma
-Voit määrittää kanta-ohjelma niin, että asiakkaiden ansaita pisteitä perustuen tiettyihin kriteereihin pisteet voidaan laskea eri tavoin. Kanta-asiakasohjelma voi olla yksinkertaisia tai monimutkaisia ja koskevat mahdolliset vähittäismyyntikanava-että oikeushenkilöitä.
--   [Määrittää asiakkaan kanta-asiakasohjelma](set-up-customer-loyalty-program.md)
+## <a name="set-up-a-customer-loyalty-program"></a>Kanta-asiakasohjelman määrittäminen
+Voit määrittää kanta-asiakasohjelman siten, että asiakkaat ansaitsevat pisteitä tiettyjen ehtojen mukaan. Nämä pisteet voidaan laskea eri tavoin. Kanta-asiakasohjelma voi olla yksinkertainen tai monimutkainen, ja sitä voidaan käyttää kaikissa yrityksissä kaikissa vähittäismyyntikanavissa.
+-   [Kanta-asiakasohjelman määrittäminen](set-up-customer-loyalty-program.md)
 
-## <a name="set-up-discounts-and-price-adjustments"></a>Määritä alennukset ja hintojen muutoksia
-Voit tehdä hinnanoikaisun tuotteita ja alennuksia, jotka otetaan käyttöön rivinimikkeen tai tapahtuman myyntipisteessä puhelu center myyntitilauksen tai online-tilauksen voit myös määrittää. 
--   [Price adjustments and discounts](price-adjustments-discounts.md)
--   [Define channel-specific discounts](define-channel-specific-discounts.md)
--   [Määrittää optimaalinen yhdistelmä päällekkäisiä alennuksia](optimal-combination-overlapping-discounts.md)
+## <a name="set-up-discounts-and-price-adjustments"></a>Alennusten hinnanoikaisujen määrittäminen
+Voit tehdä tuotteiden hinnanoikaisuja ja myös määrittää alennuksia, joita käytetään nimikkeeseen tai tapahtumaan myyntipisteessä, puhelinkeskuksen myyntitilauksessa tai verkkotilauksessa. 
+-   [Hinnanoikaisut ja alennukset](price-adjustments-discounts.md)
+-   [Kanavakohtaisten alennusten määrittäminen](define-channel-specific-discounts.md)
+-   [Optimaalisen päällekkäisten alennusten yhdistelmän määrittäminen](optimal-combination-overlapping-discounts.md)
 
-## <a name="set-up-retail-products"></a>Aseta vähittäismyyntituotteet
-Ennen kuin voit tarjota tuotteita myyntiin-retail-kanavat, tarvitset voit luoda ja määrittää työvaiheiden 365 Dynamics-tuotteita. Voit luoda tuotteet, määritellä tuotteen ominaisuudet ja määritteet ja liittää tuotteet vähittäismyynnin luokkahierarkioihin. Saataville retail-kanavat tuotteet ja lisää ne aktiivisen valikoiman, vapauta sitten tuotteet oikeushenkilöille, jossa ne ovat käytettävissä.
--   [Set up retail products](set-up-retail-products.md)
+## <a name="set-up-retail-products"></a>Vähittäismyyntituotteiden määrittäminen
+Sinun on luotava ja määritettävä tuotteet Dynamics 365 for Operationsissa, ennen kuin tuotteita voi tarjota myytäväksi vähittäismyyntikanavissa. Voit luoda tuotteita, määrittää tuotteiden ominaisuuksia ja määritteitä sekä määrittää tuotteet vähittäismyyntiluokkahierarkioihin. Jotta tuotteet olisivat käytettävissä vähittäismyyntikanavissa ja jotta ne voitaisiin lisätä aktiiviseen valikoimaan, tuotteet on vapautettava yrityksiin, jossa ne ovat saatavilla.
+-   [Vähittäismyyntituotteiden määrittäminen](set-up-retail-products.md)
 
-## <a name="monitor-and-analyze-performance"></a>Seurata ja analysoida suorituskyky
-Käytät työvaiheiden tietoja Dynamics-365, voit analysoida store suorituskyvyn, asiakkaan ja tuotteen kannattavuuden, myynnin kehitys ja enemmän.
--   [Assess customer and product profitability](assess-customer-product-profitability.md)
--   [Analyze store performance](store-performance-information.md)
+## <a name="monitor-and-analyze-performance"></a>Suorituksen seuranta ja analysointi
+Voit analysoida Dynamics 365 for Operationsin tietojen avulla esimerkiksi myymälän suoritusta, asiakkaiden ja tuotteiden kannattavuutta sekä myyntitrendejä.
+-   [Asiakkaiden ja tuotteiden kannattavuuden arviointi](assess-customer-product-profitability.md)
+-   [Myymälän suorituksen analysointi](store-performance-information.md)
 
-## <a name="customize-and-administer-retail-environments"></a>Mukauttaa ja hallita Vähittäismyynti Ympäristöt
-Jos sinua on pyydetty ympäristön mukauttaminen tai jotka luovat järjestelmän ylläpitoa ja käyttöönottoa, tutustu kehittäjä ja järjestelmän järjestelmänvalvojan sisältöä tietyn vähittäiskaupan sekä enemmän yleistä sisältöä Microsoft Dynamics-365 työvaiheiden osalta. 
--   [Dynamics 365 - toimintojen vähittäismyynnin IT-asiantuntijoille ja sovelluskehittäjille](dev-itpro/dev-retail-home-page.md)
--   [Microsoft Dynamicsin 365 toimintojen kehittäjille ja IT-ammattilaisille](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+## <a name="customize-and-administer-retail-environments"></a>Vähittäismyyntiympäristöjen mukauttaminen ja hallinta
+Jos sinua on pyydetty mukauttamaan ympäristöä tai jos järjestelmän käyttöönotto ja ylläpito on vastuullasi, tutustu vähittäismyyntiä koskevaan kehittäjien ja järjestelmänvalvojan sisältöön sekä Microsoft Dynamics 365 for Operationsin yleiseen sisältöön. 
+-   [Dynamics 365 for Operations – Retail IT-ammattilaisille ja kehittäjille](dev-itpro/dev-retail-home-page.md)
+-   [Microsoft Dynamics 365 for Operations kehittäjille ja IT-ammattilaisille](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
 
 ## <a name="additional-resources"></a>Lisäresurssit
-### <a name="whats-new-and-in-development"></a>Mikä on uutta ja kehitteillä
-Siirry <a href="https://roadmap.dynamics.com/">Dynamics 365 tiekartta</a> ja mitä uusia ominaisuuksia on julkaissut uudet ominaisuudet ovat kehitteillä. 
+### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
+Sivustossa <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
 
 ### <a name="blogs"></a>Blogit
-Löydät mielipiteitä, uutisia ja muita tietoja Microsoft Dynamics-365 työvaiheiden - jälleenmyynti- ja muita ratkaisuja <a href="https://community.dynamics.com/b/msftdynamicsblog">blogi Microsoft Dynamics-365</a>.
+<a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365 -blogissa</a> on Microsoft Dynamics 365 for Operations – Retail- ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
-Ei monet aiheet Retail <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX: N tuotteen tiimin blogi</a>. Joitakin näistä asemista laadittuja Dynamics 365 työvaiheissa, aiemman version mutta silti käyttää samoja käsitteitä ja menettelyt ovat samanlaisia kuin nykyisessä versiossa.
+<a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX -tuoteryhmän blogissa</a> on useita vähittäismyyntiä käsitteleviä aiheita. Monet kirjoitukset koskevat Dynamics 365 for Operationsin aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa.
 
-<a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics-toimintojen kumppani yhteisön blogi</a> sisältää Microsoft Dynamics kumppaneilleen koottuja tietoja, mikä on uutta ja analyyseihin sekä suuntausten selvittämiseen MBS-toiminnoissa.
+<a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations -kumppaniyhteisön blogista</a> Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operationsin uutuuksista ja suosituista aiheista.
 
