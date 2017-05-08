@@ -76,7 +76,7 @@
 ## [Toistuvien laskujen määrittäminen ja käsittely](accounts-receivable/set-up-process-recurring-invoices.md)
 ## [Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit](accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md)
 ## [Asiakkaan kirjausprofiilit](accounts-receivable/customer-posting-profiles.md)
-## [[SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](accounts-receivable/sepa-direct-debit-overview.md)
+## [SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](accounts-receivable/sepa-direct-debit-overview.md)
 ## [Luottokorttien määritys, varmennus ja tietojen tarkistus](accounts-receivable/credit-card-authorizations.md)
 ## [Tekstimuotoisen laskun korjaus](accounts-receivable/correct-free-text-invoice.md)
 ## [Korkoryhmän korkoprosenttien määrittäminen](accounts-receivable/set-up-interest-rates-interest-code.md)
@@ -170,6 +170,7 @@
 ## [Kustannustason dimensiot](cost-accounting/cost-elements.md)
 ## [Kustannusobjektin dimensiot](cost-accounting/cost-objects.md)
 ## [Kustannustasodimension jäsenten yhdistäminen yhteiseen dimension jäsenten joukkoon](cost-accounting/map-cost-elements-dimension-members.md)
+## [Yleiskustannuslaskenta](cost-accounting/overhead-calculation.md)
 ## [Kustannusseurannan mobiilityötila](cost-accounting/cost-controlling-mobile-workspace.md)
 ## [Kustannuslaskenta-analyysin Power BI -sisältö](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
 ## [Kustannuslaskenta-analyysin Power BI -sisällön suojauksen määrittäminen](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
@@ -206,4 +207,18 @@
 ## [Projektitarjoukset](project-management/project-quotations.md)
 ## [Projektin resursointi](project-management/project-resourcing.md)
 ## [Työrakenteet](project-management/work-breakdown-structures.md)
+## [Projektin aikamerkintöjen mobiilityötila](project-management/project-time-entry-mobile-workspace.md)
 # [Lokalisoinnit](localizations/TOC.md)
+
+# [Henkilöstöhallinto](/dynamics365/operations/human-resources/index)
+
+# [Vähittäismyynti](/dynamics365/operations/retail/index)
+
+# [Toimitusketjun hallinta](/dynamics365/operations/supply-chain/index)
+
+# [Kehittäjä ja järjestelmänvalvoja](/dynamics365/operations/dev-itpro/index)
+
+# Muut resurssit
+## [Dynamics 365 for Operations -sanasto](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
+## [Uudet ja muuttuneet ominaisuudet](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)
+

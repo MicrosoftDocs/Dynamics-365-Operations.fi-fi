@@ -1,6 +1,6 @@
 ---
 title: Yritystietojen ja raportoinnin aloitussivu
-description: "Tämä aihe sisältää luettelon Microsoft Dynamics 365 for Operations -järjestelmän yritystieto- ja raportointiresursseista."
+description: "Tässä aiheessa on luettelo Microsoft Dynamics 365 for Operationsin yritystietoja ja raportointia koskevista resursseista."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: fad93826b0798e2028f75457d5bbdbd1f9639a5b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 7163951249cbea6d528440aef9bf38bcf4c4f7e5
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -29,75 +30,75 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tämä aihe sisältää luettelon Microsoft Dynamics 365 for Operations -järjestelmän yritystieto- ja raportointiresursseista. 
+Tässä aiheessa on luettelo Microsoft Dynamics 365 for Operationsin yritystietoja ja raportointia koskevista resursseista. 
 
 <a name="working-with-aggregate-data"></a>Koontitietojen käyttäminen
 ---------------------------
 
 -   [Analytiikka](analytics.md)
 -   [Muistissa olevat reaaliaikaiset koostemallit korvaavat SSAS-kuutiot](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Koontitietojen mallinnus ja käyttäminen](model-aggregate-data.md)
--   [Siirrä päivitetty Dynamics AX 2012 R3 -myyntikuutio yksikkösäilöön](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
+-   [Koontitietojen mallinnus ja käyttö](model-aggregate-data.md)
+-   [Päivitetyn Dynamics AX 2012 R3 -myyntikuution siirtäminen yksikkösäilöön](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-## <a name="self-service-reporting"></a>Itsepalvelun raportointi
+## <a name="self-service-reporting"></a>Raportointi itsepalveluna
 -   [Power BI -integrointi](power-bi-integration.md)
--   [Power BI -integroinnin konfiguroiminen työtiloille](configure-power-bi-integration.md)
+-   [Työtilojen Power BI -integroinnin konfigurointi](configure-power-bi-integration.md)
 -   [Power BI -raportin luominen Microsoft Dynamics 365 for Operations -tietojen avulla](create-powerbi-report-data.md)
 -   [Power BI -raportin ja koontinäytön luominen](create-powerbi-report-dashboard.md)
 -   [Vähittäismyyntikanavan suorituskyvyn Power BI -sisältö](retail-channel-performance-dashboard-power-bi-data.md)
 -   [Taloudellisen suorituskyvyn Power BI -sisältö](financial-performance-power-bi-content-pack.md)
--   [Power BI:n myynnin ja kannattavuuden suorituskykysisältö](sales-profitability-performance-content-pack.md)
--   [Sähköisen raportoinnin konfigurointi Dynamics 365 for Operations -tietojen lähettämiseksi Power BI -palveluun](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Myynnin ja kannattavuuden suorituskyvyn Power BI -sisältö](sales-profitability-performance-content-pack.md)
+-   [Dynamics 365 for Operations -tietojen lähettäminen Power BI:hin sähköisen raportoinnin konfiguroinnin avulla](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Upotettujen analyyttisten kokemusten muodostaminen Microsoft Dynamics 365 for Operations -järjestelmän asiakasohjelmassa
--   [Upotetut liiketoimintatiedot](analytics.md#embedded-business-intelligence)
--   [KPI-mallinnus ja mukauttaminen](analytics.md#kpi-modeling-and-customization)
+## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Upotettujen analyysikokemusten muodostaminen Microsoft Dynamics 365 for Operations -asiakasohjelmassa
+-   [Upotetut yritystiedot](analytics.md#embedded-business-intelligence)
+-   [KPI-mallinnus ja -mukautus](analytics.md#kpi-modeling-and-customization)
 -   [Yritystietojen lisääminen työtiloihin](add-bi-workspaces.md)
 -   [Tilannekohtaisten yritystietojen lisääminen lomakkeisiin](add-contextual-bi-forms.md)
 
-## <a name="document-reporting-and-printing"></a>Asiakirjan raportointi ja tulostaminen
--   [Asiakirjan raportointipalveluiden yleiskatsaus](document-reporting-services.md)
--   [Tulostaminen Microsoft Dynamics 365 for Operations -järjestelmän sovelluksista](print-documents.md)
--   [Asiakirjojen reititysagentin asentaminen verkkotulostinlaitteen ottamiseksi käyttöön](install-document-routing-agent.md)
--   [Asiakirjareititys-agentin suorittaminen Windows-palveluna](run-document-routing-agent-as-windows-service.md)
+## <a name="document-reporting-and-printing"></a>Asiakirjan raportointi ja tulostus
+-   [Asiakirjojen raportointipalveluiden yleiskatsaus](document-reporting-services.md)
+-   [Tulostaminen Dynamics 365 for Operations -sovelluksissa](print-documents.md)
+-   [Verkkotulostimien käyttöönotto asentamalla asiakirjareitityksen agentti](install-document-routing-agent.md)
+-   [Asiakirjareitityksen agentin suorittaminen Windows-palveluna](run-document-routing-agent-as-windows-service.md)
 -   [Seuraavan sukupolven raportointiratkaisujen luominen](create-nextgen-reporting-solutions.md)
--   [Uusien raportin suunnittelumallien asentaminen](install-modern-report-design-templates.md)
--   [Vinkit pitkäkestoisten raporttien aikakatkaisun estämistä varten](prevent-long-running-reports-timing-out.md)
+-   [Modernien raporttirakennemallien asentaminen](install-modern-report-design-templates.md)
+-   [Vihjeitä pitkäkestoisten raporttien aikakatkaisun estämiseen](prevent-long-running-reports-timing-out.md)
 
 ## <a name="electronic-reporting"></a>Sähköinen raportointi
 -   [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 -   [Sähköisen raportoinnin konfiguraatioiden elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
--   [Sähköisen raportoinnin toimintojen luettelon laajentaminen](general-electronic-reporting-formulas-list-extension.md)
--   [Kaavojen suunnittelutoiminto sähköisessä raportoinnissa](general-electronic-reporting-formula-designer.md)
+-   [Sähköisen raportoinnin toimintoluettelon laajentaminen](general-electronic-reporting-formulas-list-extension.md)
+-   [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
 -   [Sähköisen raportoinnin kohteet](electronic-reporting-destinations.md)
--   [Lataa sähköiset raportoinnin määritykset Lifecycle Services -palvelusta](download-electronic-reporting-configuration-lcs.md)
--   [Sähköisen raportoinnin konfigurointi Dynamics 365 for Operations -tietojen lähettämiseksi Power BI -palveluun](general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (Tehtäväopas)
+-   [Sähköiset raportoinnin määritysten lataaminen Lifecycle Servicesista](download-electronic-reporting-configuration-lcs.md)
+-   [Dynamics 365 for Operations -tietojen lähettäminen Power BI:hin sähköisen raportoinnin konfiguroinnin avulla](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [ER Konfiguraation lähteen luominen ja merkitseminen aktiiviseksi](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (tehtäväopas)
 -   [ER Toimialueen erityistietomallin suunnitteleminen](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (tehtäväopas)
--   [ER Mallin yhdistämismäärityksen ja tietolähteen määrittäminen](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/)(tehtäväopas)
+-   [ER Mallin yhdistämisen määrittäminen ja tietolähteen valitseminen](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (tehtäväopas)
 -   [ER Tietomallin yhdistäminen valittuun tietolähteeseen](http://ax.help.dynamics.com/en/wiki/er-map-data-model-to-selected-data-sources/) (tehtäväopas)
--   [ER Toimialueen erityismuodon suunnitteleminen](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-format/) (tehtäväopas)
--   [ER Kokoonpannon lataaminen Lifecycle Services -palveluun](http://ax.help.dynamics.com/en/wiki/upload-a-configuration-into-lifecycle-services/)(tehtäväopas)
--   [ER Kokoonpanon tuominen Lifecycle Services -palvelusta](http://ax.help.dynamics.com/en/wiki/import-a-configuration-from-lifecycle-services/) (tehtäväopas)
--   [ER Kokoonpanon suunnittelu raporttien luomiseksi OPENXML-muodossa](http://ax.help.dynamics.com/en/wiki/design-a-configuration-for-generating-reports-in-openxml-format/) (tehtäväopas)
--   [ER Kohteiden konfigurointi](http://ax.help.dynamics.com/en/wiki/configure-destinations/) (tehtäväopas)
--   [ER Taloushallinnon dimensioiden käyttö tietolähteenä (osa 1: tietomallin suunnittelu)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-1-design-data-model/)(tehtäväopas)
--   [ER Taloushallinnon dimensioiden käyttö tietolähteenä (osa 2: Mallin määritys)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-2-model-mapping/)(tehtäväopas)
--   [ER Taloushallinnon dimensioiden käyttö tietolähteenä (osa 3: raportin suunnittelu)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-3-design-the-report/)(tehtäväopas)
--   [ER Taloushallinnon dimensioiden käyttö tietolähteenä (osa 4: raportin suorittaminen)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-4-run-the-report/)(tehtäväopas)
--   [ER Määritä muoto suorittamaan laskenta ja summaus (osa 1: muodon luominen)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-1-create-format/)(tehtäväopas)
--   [ER Muodon määrittäminen suorittamaan laskenta ja summaus (osa 2: laskentojen konfigurointi)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-2-configure-computations/)(tehtäväopas)
--   [ER Muodon määrittäminen suorittamaan laskenta ja summaus (osa 3: tuotoksen luonti laskentojen avulla)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-3-use-computations-to-make-the-output/)(tehtäväopas)
--   [ER Muodon määrittäminen suorittamaan laskenta ja summaus (osa 4: muodon luominen)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-4-run-format/)(tehtäväopas)
--   [ER Vaakasuunnassa laajennettavien alueiden käyttö sarakkeiden dynaamiseen lisäykseen Excel-raportissa (osa 1: muodon suunnittelu)](http://ax.help.dynamics.com/en/wiki/er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1-design-format/)(tehtäväopas)
--   [ER Vaakasuunnassa laajennettavien alueiden käyttö sarakkeiden dynaamiseen lisäykseen Excel-raportissa (osa 2: muodon suunnittelu)](http://ax.help.dynamics.com/en/wiki/er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-2-run-format/)(tehtäväopas)
--   [ER Tiedostojenhallinnan tiedostojen käyttö muodon tulostuksissa (osa 1: tietomallin valmistelu)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-1-prepare-data-model/)(tehtäväopas)
--   [ER Tiedostojenhallinnan tiedostojen käyttö muodon tulostuksissa (osa 2: tietomallin laajentaminen)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-2-extend-data-model/)(tehtäväopas)
--   [ER Tiedostojenhallinnan tiedostojen käyttö muodon tulostuksissa (osa 3: muodon luominen)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-3-create-format/)(tehtäväopas)
--   [ER Tiedostojenhallinnan tiedostojen käyttö muodon tulostuksissa (osa 4: muodon suorittaminen)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-4-run-format/)(tehtäväopas)
--   [ER Tiedostojenhallinnan tiedostojen käyttö muodon tulostuksissa (osa 5: Muodon muokkaaminen ja suorittaminen)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/)(tehtäväopas)
--   [ER Sähköisten maksuasiakirjojen luominen muotokokoonpanon avulla](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/)(tehtäväopas)
--   [ER Muodon päivittäminen toteuttamalla uusi muodon perusversio](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/)(tehtäväopas)
+-   [ER Toimialuekohtaisen muodon suunnitteleminen](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-format/) (tehtäväopas)
+-   [ER Konfiguraation lataaminen Lifecycle Servicesiin](http://ax.help.dynamics.com/en/wiki/upload-a-configuration-into-lifecycle-services/) (tehtäväopas)
+-   [ER Konfiguraation tuominen Lifecycle Servicesista](http://ax.help.dynamics.com/en/wiki/import-a-configuration-from-lifecycle-services/) (tehtäväopas)
+-   [ER OPENXML-muotoisten raporttien luontikonfiguraation suunnitteleminen](http://ax.help.dynamics.com/en/wiki/design-a-configuration-for-generating-reports-in-openxml-format/) (tehtäväopas)
+-   [ER Kohteiden määrittäminen](http://ax.help.dynamics.com/en/wiki/configure-destinations/) (tehtäväopas)
+-   [ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 1: tietomallin suunnittelu)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-1-design-data-model/) (tehtäväopas)
+-   [ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 2: mallin määritys)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-2-model-mapping/) (tehtäväopas)
+-   [ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 3: raportin suunnittelu)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-3-design-the-report/) (tehtäväopas)
+-   [ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 4: raportin suorittaminen)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-4-run-the-report/) (tehtäväopas)
+-   [ER Laskenta- ja summausmuodon määrittäminen (osa 1: muodon luominen)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-1-create-format/) (tehtäväopas)
+-   [ER Laskenta- ja summausmuodon määrittäminen (osa 2: laskutoimitusten määrittäminen)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-2-configure-computations/) (tehtäväopas)
+-   [ER Laskenta- ja summausmuodon määrittäminen (osa 3: tulos laskutoimitusten avulla)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-3-use-computations-to-make-the-output/) (tehtäväopas)
+-   [ER Laskenta- ja summausmuodon määrittäminen (osa 4: muodon suorittaminen)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-4-run-format/) (tehtäväopas)
+-   [ER Vaakasuunnassa laajennettavien alueiden käyttö sarakkeiden dynaamiseen lisäykseen Excel-raportissa (Osa 1: muodon suunnittelu)](http://ax.help.dynamics.com/en/wiki/er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1-design-format/) (tehtäväopas)
+-   [ER Vaakasuunnassa laajennettavien alueiden käyttö sarakkeiden dynaamiseen lisäykseen Excel-raportissa (Osa 2: muodon suorittaminen)](http://ax.help.dynamics.com/en/wiki/er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-2-run-format/) (tehtäväopas)
+-   [ER Tiedostonhallinnan tiedostojen käyttö muodon tuotoksissa (Osa 1: tietomallin valmistelu)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-1-prepare-data-model/) (tehtäväopas)
+-   [ER Tiedostonhallinnan tiedostojen käyttö muodon tuotoksissa (Osa 2: tietomallin laajentaminen)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-2-extend-data-model/) (tehtäväopas)
+-   [ER Tiedostonhallinnan tiedostojen käyttö muodon tuotoksissa (Osa 3: muodon luominen)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-3-create-format/) (tehtäväopas)
+-   [ER Tiedostonhallinnan tiedostojen käyttö muodon tuotoksissa (Osa 4: muodon suorittaminen)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-4-run-format/) (tehtäväopas)
+-   [ER Tiedostonhallinnan tiedostojen käyttö muodon tuotoksissa (Osa 5: muodon muokkaaminen ja suorittaminen)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/) (tehtäväopas)
+-   [ER Sähköisten maksuasiakirjojen luominen muotokonfiguraation avulla](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/) (tehtäväopas)
+-   [ER Muodon päivittäminen ottamalla käyttöön kyseisen muodon uusi perusversio](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/) (tehtäväopas)
 
 
 

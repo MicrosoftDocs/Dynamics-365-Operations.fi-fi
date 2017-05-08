@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: 0d00f33ce8059acd877d1c177e3def0b5f0b73b1
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a8385e7103b74be33fd79c1143e481ad8edca31c
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -34,11 +35,9 @@ Dynamics 365 for Operations – Retail mahdollistaa kokonaisvaltaisen ostoskokem
 Tällä sivulla on linkkejä resursseihin, jotka auttavat käyttämään tehokkaasti Dynamics 365 for Operations – Retailia. Saat lisätietoja valitsemalla ominaisuusalueen vasemmassa ruudussa. 
 
 ## <a name="set-up-retail-channels"></a>Vähittäismyyntikanavien määrittäminen
-Kun määrität vähittäismyyntikokemusta, päätät, miten perinteisen myymälän (Dynamics 365 for Operationsissa sitä kutsutaan *vähittäismyymäläksi*) ja verkkokaupan toiminnot ja toimintojen asetukset määritetään. 
+Kun määrität vähittäismyyntikokemusta, päätät, miten myymälät (perinteinen myymälä, verkkokauppa ja puhelinkeskus) määritetään. 
 
-Kullakin vähittäismyymälällä voi olla omat maksutavat, hintaryhmät, myyntipisteratkaisut, tulotilit, kulutilit ja henkilöstö. Kun olet luonut vähittäismyymälän, määrität myymälälle tuotteet. Määrität myös työntekijät, kassapäätteet ja asiakkaat myymälään. Lopuksi lisäät uuden myymälän organisaatiohierarkiaan.
-
-Kun luot oman verkkokaupan, sinun on määritettävä osat, kuten valikoimat, määritteet, maksutavat ja toimitustavat. Voit määrittää myös verkkokauppaa koskevat hinnat, kampanjat, alennukset ja toimitusehdot.
+Kullakin vähittäismyymälällä voi olla omat maksutavat, toimitusmenetelmät, hintaryhmät, tulo-ja kulutilit, kassakoneet ja henkilöstö. Vähittäismyymälän luonnin jälkeen myymälälle luodaan tuotevalikoima. Voit määrittää myös myymäläkohtaiset hinnat ja alennukset, joita käytetään myymälässä oleviin tuotteisiin.
 
 -   [Vähittäismyyntikanavien määrittäminen](define-maintain-retail-channels.md)
 -   [Verkkokaupan yleiskatsaus](online-stores.md)
@@ -49,10 +48,10 @@ Voit määrittää puhelinkeskuksen yhdeksi vähittäismyyntikanavatyypiksi. Ty�
 -   [Puhelukeskuksen toiminnot](call-center-functionality.md)
 -   [Puhelinkeskuksen luetteloiden luominen](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>Myyntipiste- ja MPOS-ratkaisujen määrittäminen
-Retail Modern POS (MPOS) on tietokoneisiin, tabletteihin ja puhelimiin tarkoitettu myyntipistesovellus. Myyntihenkilöstö voi käsitellä myyntitapahtumia ja asiakastilauksia sekä suorittaa päivittäistoimintoja ja varastonhallintaa mobiililaitteilla missä tahansa myymässä ja tietokonepohjaisissa kassapäätteissä. Pilvimyyntipiste on selaimella käytettävä myyntipiste. 
+## <a name="define-your-pos-solutions"></a>Myyntipisteratkaisujen määrittäminen
+Retail Modern POS (MPOS) on tietokoneisiin, tabletteihin ja puhelimiin tarkoitettu myyntipistesovellus. Myyntihenkilöstö voi käsitellä myyntitapahtumia ja asiakastilauksia, tehdä asiakashallintatehtäviä sekä suorittaa päivittäistoimintoja ja varastonhallintaa mobiililaitteilla missä tahansa myymässä ja tietokonepohjaisissa kassapäätteissä. Pilvimyyntipiste on selainpohjainen versio, jota voidaan käyttää millä tahansa vakioselaimella. 
 
-Myymälän, kassakoneen tai myymälässä käytettävien kanavien sekä sellaisten vähittäismyynnin oheislaitteiden kanssa, joilla tapahtumat käsitellään, välinen suhde määritetään eri osien avulla. Voit myös määrittää tietyn myyntipisteen esiintymän sekä laitteistoprofiilin tai kassakoneessa käytettävien vähittäismyynnin oheislaitteiden asetukset, myymälän, johon kassakone on yhdistetty, ja ulkoasun, jonka kassakoneeseen kirjautuva käyttäjä näkee.
+Myymälän, kassakoneen tai sellaisten myymälässä käytettävien vähittäismyynnin oheislaitteiden, joilla tapahtumat käsitellään, välinen suhde määritetään eri osien avulla. Voit myös määrittää tietyn myyntipisteen esiintymän sekä laitteistoprofiilin tai kassakoneessa käytettävien vähittäismyynnin oheislaitteiden asetukset, myymälän, johon kassakone on yhdistetty, ulkoasun, jonka kassakoneeseen kirjautuva käyttäjä näkee, ja kassakoneessa käyttöönotettavat toiminnot. Voit myös määrittää, voiko kassakonetta käyttää, kun yhteys on katkennut, tai kun se on offline-tilassa.
 
 -   [Kanavan asiakasohjelmien, kassakoneiden ja laiteasemien määrittäminen ja ylläpitäminen](define-maintain-channel-clients-registers-hw-stations.md)
 -   [MPOS-ratkaisun määrittäminen ja asentaminen](retail-modern-pos-device-activation.md)
@@ -92,4 +91,6 @@ Sivustossa <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> on l
 <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX -tuoteryhmän blogissa</a> on useita vähittäismyyntiä käsitteleviä aiheita. Monet kirjoitukset koskevat Dynamics 365 for Operationsin aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa.
 
 <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations -kumppaniyhteisön blogista</a> Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operationsin uutuuksista ja suosituista aiheista.
+
+
 

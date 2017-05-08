@@ -22,10 +22,14 @@
 ## [Painotetun keskiarvon päivämäärä](weighted-average-date.md)
 ## [Painotettu keskiarvo sekä fyysinen arvo ja merkintä](weighted-average-physical-value-marking.md)
 # Valmistuksen kustannuslaskenta
+## [Valmistetun nimikkeen vakiokustannusten kuolettaminen](amortize-constant-costs-manufactured-item.md)
+## [Jälkikustannuslaskenta](backflush-costing.md)
+## [Tuoterakennelaskelmat](bom-calculations.md)
 ## [Tuoterakenteen laskentaryhmä](bom-calculation-groups.md)
 ## [Tuotannon varianssien yhteiset lähteet](common-sources-of-production-variances.md)
 ## [Tuotannon reitityksessä käytetty kustannusluokka](cost-categories-used-production-routings.md)
 ## [Tuotannonhallinnan ja projektinhallinnan kirjanpidossa käytettävä kustannusluokka](cost-categories-used-production-control-project-management-accounting.md)
+## [Valmistetun nimikkeen kulujen näyttäminen](charges-manufactured-item.md)
 ## [Tuotantotilauksen kustannusanalyysi](production-order-cost-analysis.md)
 ## [Tuotantotilauksen kustannusarvio](production-order-cost-estimation.md)
 ## [Tuotannon kirjaus](production-posting.md)
@@ -39,5 +43,6 @@
 ## [Standardikustannuksen päivittäminen valmistusympäristössä](update-standard-costs-manufacturing-environment.md)
 ## [Uuden valmistetun nimikkeen standardikustannuksen päivittäminen](update-standard-costs-new-manufactured-item.md)
 ## [Standardikustannuksen päivittäminen muussa kuin valmistusympäristössä](update-standard-costs-non-manufacturing-environment.md)
+
 
 

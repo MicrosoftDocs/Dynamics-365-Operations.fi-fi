@@ -17,29 +17,40 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: b77b61089c359127a7404437c29ef63a01416779
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4a3ecb4cb643d63333666f8d5d49760caacc4e58
+ms.openlocfilehash: e14d0836ee16db4fba9ef49df9a49564aa4c0402
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/27/2017
 
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Lokalisointi- ja säädösominaisuudet
 
-Microsoft Dynamics 365 for Operationsissa on toiminto, joka mahdollistaa joitakin maa- ja aluekohtaisia säädöksiä ja prosesseja. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. Tässä aiheessa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista toiminnoista. 
+[!include[banner](../includes/banner.md)]
 
-## <a name="developer-and-isv-information"></a>Kehittäjä- ja ISV-tiedot
-Seuraavissa resursseissa on tietoja, jotka auttavat maa- ja aluekohtaisia mukautuksia luovia kehittäjiä ja ISV-toimittajia.
+
+Microsoft Dynamics 365 for Operationsissa on toiminto, joka on käytössä [tuotteen saatavuusoppaassa](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
+
+Tässä aiheessa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista toiminnoista. 
+
+## <a name="developing-localized-solutions"></a>Lokalisoitujen ratkaisujen kehittäminen
+Seuraavissa resursseissa on ohjeita ja tietoja, jotka auttavat maa- ja aluekohtaisia mukautuksia luovia kehittäjiä ja ISV-toimittajia. Kyse voi olla myös sellaista maata varten luodusta ratkaisusta, jota Microsoft ei tue.
 -   [Erilliset lokalisointimallit](separate-localization-models.md)
 -   [Maa- tai aluekontekstin ottaminen käyttöön](apply-country-context.md)
 -   [Säännösvarmenteet](regulatory-certifications.md)
 -   [Lokalisointiominaisuuksien luokittelu](classify-localization-features.md)
 -   [Maakoodit – ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="localization-updates"></a>Lokalisointipäivitykset
+## <a name="localization-updates-and-communication"></a>Lokalisointipäivitykset ja viestintä
 Seuraavissa resursseissa on tietoja lokalisoinnin suunnitelluista ja uusista ominaisuuksista. 
--   [Lokalisointiportaali](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC)
+
+### <a name="localization-updates"></a>Lokalisointipäivitykset
+-   [Lokalisointiportaali](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (päivitetään joka viikko)
+-   [LCS-ongelmahaku](../lifecycle-services/issue-search-lcs.md) (päivitetään joka päivä)
+
+### <a name="communication-and-alerts"></a>Viestintä ja hälytykset
 -   [Säädösten seuranta ja päivitysviestintä](regulatory-watch-communication.md)
 -   [Maa- ja aluekohtaisten sääntöhälytysten ilmoittaminen Microsoftille ja sääntöominaisuuksien tilan seuranta](submit-localization-alerts.md)
 
@@ -50,11 +61,19 @@ Sähköisellä raportointityökalulla (ER-työkalulla) voi määrittää sähkö
 -   [Sähköisen raportoinnin konfiguraation luominen](../analytics/electronic-reporting-configuration.md)
 -   [Sähköisen raportoinnin toimintoluettelon laajentaminen](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [Sähköisen raportoinnin kohteet](../analytics/electronic-reporting-destinations.md)
--   [Sähköiset raportoinnin määritysten lataaminen Lifecycle Servicesista](../analytics/download-electronic-reporting-configuration-lcs.md)
--   [Sähköisen raportoinnin ja Power BI:n määrittäminen](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Servicesista](../analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Sähköisen raportoinnin määrittäminen hakemaan tiedot Power BI:hin](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+## <a name="task-guides"></a>Tehtäväoppaat
+Tehtäväoppaita pääsee käyttämään tuotteen ohjeruudusta, ja niissä esitellään keskeiset liiketoimintaprosessit. Voit lukea liiketoimintaprosessin vaiheet avaamalla tehtäväoppaan tai voit toistaa tehtäväoppaan liiketoimintaprosessin esittelynä ja antaa tietoja.
+
+Pääset tehtäväoppaisiin siirtymällä Microsoft Dynamics 365 for Operationsin sivulle ja valitsemalla Ohjeen. Sivua käyttävien tehtäväoppaiden luettelo on ohjeruudussa. Voit myös hakea tehtäväoppaita nimen perusteella ohjeruudussa.
+
+Lisätietoja on aiheessa [Tehtäväoppaat](/dynamics365/operations/dev-itpro/get-started/help-overview#task-guides).
+
 
 ## <a name="countryregion-specific-help-topics"></a>Maa- ja aluekohtaiset ohjeaiheet
-Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista
+Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 
 ### <a name="australia"></a>Australia
 
@@ -62,17 +81,17 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista
 -   [Liiketoimintaraportti](/dynamics365/operations/financials/localizations/apac-aus-business-activity-statement)
 -   [Arvoltaan vähäisen käyttöomaisuuden poisto](/dynamics365/operations/financials/localizations/apac-aus-low-value-pool-depreciation)
 
-
 ### <a name="austria"></a>Itävalta
 
+-   [Puolen vuoden poisto](/dynamics365/operations/financials/localizations/emea-aut-half-year-depreciation)
 -   [Pakkausmateriaalimaksut](/dynamics365/operations/financials/localizations/emea-aut-packing-material-fee-calculation)
 -   [ALV-ilmoitus](/dynamics365/operations/financials/localizations/emea-aut-vat-statement-details)
 
 ### <a name="belgium"></a>Belgia
 
 -   [CODA-tiliote](/dynamics365/operations/financials/localizations/emea-bel-coda-bank-statement-import)
+-   [Intervat-veroilmoitus](/dynamics365/operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [PRODCOM-raporttimääritykset](/dynamics365/operations/financials/localizations/emea-bel-prodcom-report)
-
 
 ### <a name="brazil"></a>Brasilia
 
@@ -93,7 +112,6 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista
 -   [Veromaksut](/dynamics365/operations/financials/localizations/latam-bra-tax-payments)
 -   [Verot](/dynamics365/operations/financials/localizations/latam-bra-calculate-taxes)
 
-
 ### <a name="china"></a>Kiina
 -   [Tuoterakennevertailu](/dynamics365/operations/financials/localizations/apac-chn-bom-comparison)
 -   [Kiinalaiset tositteet](/dynamics365/operations/financials/localizations/apac-chn-vouchers)
@@ -105,12 +123,14 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista
 -   [Varaston päätilien kirjaus toimipaikoittain](/dynamics365/operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site)
 -   [Kirjanpitotilien debet- ja kredit-summien näyttäminen](/dynamics365/operations/financials/localizations/apac-chn-negative-debits-credits)
 
-
 ### <a name="the-czech-republic"></a>Tšekin tasavalta
+
+-   [Hyvityslaskun käteisalennus](/dynamics365/operations/financials/localizations/emea-cze-credit-note-cash-discount)
 -   [Poiston pyöristys](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
--       [Tšekin tasavallan käyttöomaisuuden luovutus puolivuotispoisto](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
-    -   [Poistojen keskeytykset](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
-    -   [Tšekin tasavallan käyttöomaisuuden poistomenetelmät](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+-   [Tšekin tasavallan käyttöomaisuuden luovutuksen puolivuotispoisto](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
+-   [Poistojen keskeytykset](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
+-   [Tšekin tasavallan käyttöomaisuuden poistomenetelmät](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+
 -   [Käyttöomaisuuserän esihankinnan kirjaus](/dynamics365/operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [Tšekin tasavallan ALV-ilmoitus](/dynamics365/operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Kausikirjauskansioiden jaetut kaudet](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
@@ -127,6 +147,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista
 -   [Myyntitilausten laskutunnusten muokkaaminen](/dynamics365/operations/financials/localizations/emea-edit-invoice-id-sales-orders)
 -   [EU-saapumistodistukset](/dynamics365/operations/financials/localizations/emea-entry-certificates)
 -   [EU-myyntiluettelon raportointi](/dynamics365/operations/financials/localizations/emea-eu-sales-list)
+-   [Vaihtokurssioikaisut](/dynamics365/operations/financials/localizations/emea-exchange-rate-adjustments)
 -   [Maksutapojen tiedostomuodot](/dynamics365/operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 -   [Viron ja Liettuan käyttöomaisuuden luovutus](/dynamics365/operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 -   [Intrastat](/dynamics365/operations/financials/localizations/emea-intrastat)
@@ -143,11 +164,9 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista
 -   [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](/dynamics365/operations/financials/localizations/emea-set-up-signers-for-printing-forms)
 -   [Kausikirjauskansioiden jaetut kaudet](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
 -   [Raporttien ja asiakirjojen summien esitysmuodon päivittäminen](/dynamics365/operations/financials/localizations/emea-amount-printing-forms)
-
+-   [ALV-vaihtokurssit](/dynamics365/operations/financials/localizations/emea-vat-exchange-rate)
 -   [ALV-raportointi Euroopassa](/dynamics365/operations/financials/localizations/emea-vat-reporting)
-
 -   [Tapahtumien näyttäminen tilitettäessä](/dynamics365/operations/financials/localizations/emea-transactions-settlement-form)
-
 
 ### <a name="france"></a>Ranska
 -   [Lasku- ja tosinumerot aikajärjestyksessä](/dynamics365/operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
@@ -164,15 +183,16 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista
    -   [Titres de recette](/dynamics365/operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
    -   [Toimittajan laskujen maksun pidot](/dynamics365/operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
 
-
 ### <a name="germany"></a>Saksa
 -   [Lisähankintojen poisto](/dynamics365/operations/financials/localizations/emea-deu-additional-acquisition-depreciation)
 -   [Saksalainen tarkistustiedosto (GDPdU/GoBD)](/dynamics365/operations/financials/localizations/emea-deu-gdpdu-audit-data-export)
 -   [Saksalainen kirjauskansioluettelon raportti](/dynamics365/operations/financials/localizations/emea-deu-journal-list-report)
--   [Erillisen etiketin tulostaminen myynnistä peräisin oleville hyvityslaskuille (tehtäväopas)](/dynamics365/operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
+-   [Erillisen etiketin tulostaminen myynnistä peräisin oleville hyvityslaskuille](/dynamics365/operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
 
 ### <a name="hungary"></a>Unkari
 
+-   [Käyttöomaisuuden poistomenetelmät](/dynamics365/operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods)    
+-   [Käyttöomaisuuden siirto varastoon](/dynamics365/operations/financials/localizations/emea-hun-fixed-asset-to-inventory)
 -   [Kustannukseltaan vähäinen käyttöomaisuus](/dynamics365/operations/financials/localizations/emea-hun-low-cost-fixed-assets)
 
 ### <a name="italy"></a>Italia
@@ -184,6 +204,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista
 -   [Pakkausluettelon päivämäärän tarkastus italialaisissa laskuissa](/dynamics365/operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [Italialaiset arvonlisäverokirjat](/dynamics365/operations/financials/localizations/emea-ita-fiscal-books)
 -   [Julkishallinnon kirjoittamien laskujen jaettu maksu](/dynamics365/operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
+-   [Ennakonpidätys](/dynamics365/operations/financials/localizations/emea-ita-withholding tax)
 
 ### <a name="japan"></a>Japani
 
@@ -240,6 +261,9 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista
 -   [Myyntilaskun kaksoiskappaleiden numerointi](/dynamics365/operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering)
 -   [Käyttöomaisuuden poisto](/dynamics365/operations/financials/localizations/emea-pol-fixed-assets-depreciation)
 -   [Käyttöomaisuuden luovutus](/dynamics365/operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension)
+-   [Palautettavissa oleva pakkaus](/dynamics365/operations/financials/localizations/emea-pol-returnable-packages)
+-   [Arvonlisäveroraportit](/dynamics365/operations/financials/localizations/emea-pol-sales-tax-reports)
+-   [Standard Audit File (SAF) -tiedosto](/dynamics365/operations/financials/localizations/emea-pol-standard-audit-file-saf)
 -   [Liikevaihto ja saldoilmoitus](/dynamics365/operations/financials/localizations/emea-pol-turnover-balances-statement)
 
 ### <a name="saudi-arabia"></a>Saudi-Arabia
@@ -252,15 +276,16 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista
 
 ### <a name="spain"></a>Espanja
 
-
--   [Espanjalaiset vekselivaihtoehdot](/dynamics365/operations/financials/localizations/emea-esp-spanish-bill-of-exchange-options)
+-   [Espanjalaiset vekselivaihtoehdot](/dynamics365/operations/financials/localizations/emea-esp-bill-of-exchange-options)
 -   [Käteisalennus otettu käyttöön laskussa -parametri](/dynamics365/operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
--   [Laskutustilin kirjanpitotietojen käyttö](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
+-   [Suoritusperusteinen vero](/dynamics365/operations/financials/localizations/emea-esp-conditional-sales-tax)
 -   [Käyttöomaisuuden uudelleenarvostusryhmät](/dynamics365/operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
+-   [Yhteisön sisäinen alv](/dynamics365/operations/financials/localizations/emea-esp-intra-community-vat)
 -   [Kerta-asiakkaat](/dynamics365/operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
 -   [Espanjalaiset velkakirjojen asetukset](/dynamics365/operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Osto- ja myyntisyklit](/dynamics365/operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Erikoisviennit ja avaavat taseet](/dynamics365/operations/financials/localizations/emea-esp-opening-sheets-spain)
+-   [Laskutustilin kirjanpitotietojen käyttö](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
 
 ### <a name="sweden"></a>Ruotsi
 
@@ -286,4 +311,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista
 -   [Vuoden lopun 1099-raportit](/dynamics365/operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Palkanlaskenta](/dynamics365/operations/human-resources/localizations/noam-usa-payroll)
 -   [Julkinen sektori](/dynamics365/operations/financials/public-sector/public-sector-functionality)
+
+
+
 

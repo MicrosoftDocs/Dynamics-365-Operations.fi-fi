@@ -60,3 +60,15 @@
 #### [Palkanlaskennan tietojen päivitykset – usein kysytyt kysymykset](localizations/noam-usa-payroll-data-updates.md)
 #### [Palkanlaskennan veroraporttien luominen](localizations/noam-usa-generate-payroll-reports.md)
 
+# [Myyntitiedot](/dynamics365/operations/financials/index)
+
+# [Vähittäismyynti](/dynamics365/operations/retail/index)
+
+# [Toimitusketjun hallinta](/dynamics365/operations/supply-chain/index)
+
+# [Kehittäjä ja järjestelmänvalvoja](/dynamics365/operations/dev-itpro/index)
+
+# Muut resurssit
+## [Dynamics 365 for Operations -sanasto](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/human-resources/toc.json)
+## [Uudet ja muuttuneet ominaisuudet](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/human-resources/toc.json)
+

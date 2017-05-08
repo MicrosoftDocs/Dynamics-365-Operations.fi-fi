@@ -42,6 +42,7 @@
 ## [Myyntitilausten laskutunnusten muokkaaminen](emea-edit-invoice-id-sales-orders.md)
 ## [EU-saapumistodistukset](emea-entry-certificates.md)
 ## [EU-myyntiluettelon raportointi](emea-eu-sales-list.md)
+## [Vaihtokurssioikaisut](emea-exchange-rate-adjustments.md)
 ## [Maksutapojen tiedostomuodot](emea-select-file-formats-for-the-method-of-payments.md)
 ## [Viron ja Liettuan käyttöomaisuuden luovutus](emea-credit-note-reverse-fixed-asset-sale.md)
 ## [Intrastat](emea-intrastat.md)
@@ -56,18 +57,19 @@
 ## [SEPA (Single Euro Payments Area) -tilisiirron yleiskatsaus](../accounts-payable/sepa-credit-transfer.md)
 ## [SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](emea-set-up-signers-for-printing-forms.md)
-## [Kausikirjauskansioiden jaetut kaudet](emea-create-post-periodic-journals.md)
-## [Raporttien ja asiakirjojen summien esitysmuodon päivittäminen](emea-amount-printing-forms.md)
-## [ALV-raportointi](emea-vat-reporting.md)
+## [ALV-vaihtokurssit](emea-vat-exchange-rate.md)
 ## [Tilitettävien tapahtumien näyttäminen](emea-transactions-settlement-form.md)
 ## Itävalta
+### [Puolen vuoden poisto](emea-aut-half-year-depreciation.md)
 ### [Pakkausmateriaalimaksut](emea-aut-packing-material-fee-calculation.md)
 ### [ALV-ilmoitus](emea-aut-vat-statement-details.md)
 ## Belgia
 ### [CODA-tiliote](emea-bel-coda-bank-statement-import.md)
+### [Intervat-veroilmoitus](emea-bel-intervat-tax-declaration.md)
 ### [PRODCOM-raporttimääritykset](emea-bel-prodcom-report.md)
 
 ## Tšekin tasavalta
+### [Hyvityslaskun käteisalennus](emea-cze-credit-note-cash-discount.md)
 ### [Poiston pyöristys](emea-cze-depreciation-rounding.md)
 ### [Poistojen keskeytys](emea-cze-depreciation-suspension-holidays.md)
 ### [Käyttöomaisuuden poisto](emea-cze-fixed-assets-depreciation.md)
@@ -94,7 +96,9 @@
 ### [Kirjauskansioluettelon raportti](emea-deu-journal-list-report.md)
 ### [Erillisen etiketin tulostaminen myynnistä peräisin oleville hyvityslaskuille](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Unkari
+### [Käyttöomaisuuden poistomenetelmät](emea-hun-fixed-assets-depreciation-methods.md)    
 ### [Kustannukseltaan vähäinen käyttöomaisuus](emea-hun-low-cost-fixed-assets.md)
+### [Käyttöomaisuuden siirto varastoon](emea-hun-fixed-asset-to-inventory.md)
 ## Italia
 ### [ALV-ilmoituksen tiedot](emea-ita-vat-statements-details.md)
 ### [Mustan listan raportti](emea-ita-black-list-report.md)
@@ -103,6 +107,7 @@
 ### [Pakkausluettelon päivämäärän tarkastus laskuissa](emea-ita-packing-slip-date-verification-on-invoice.md)
 ### [Arvonlisäverokirjat](emea-ita-fiscal-books.md)
 ### [Julkishallinnon kirjoittamien laskujen jaettu maksu](emea-ita-split-payment-invoices-issued-public-administration.md)
+### [Ennakonpidätys](emea-ita-withholding tax.md)
 ## Latvia
 ### [Käyttöomaisuuden kirjanpito](emea-lva-fixed-assets-accounting.md)
 ### [Käyttöomaisuuden sijaintimuutosten seuranta](emea-lva-fixed-assets-location-fields-change.md)
@@ -119,12 +124,17 @@
 ### [Myyntilaskun kaksoiskappaleiden numerointi](emea-pol-sales-invoice-duplicates-numbering.md)
 ### [Käyttöomaisuuden poisto](emea-pol-fixed-assets-depreciation.md)
 ### [Käyttöomaisuuden luovutustoimintojen laajennus](emea-pol-fixed-asset-disposal-functionality-extension.md)
+### [Palautettavissa oleva pakkaus](emea-pol-returnable-packages.md)
+### [Arvonlisäveroraportit](emea-pol-sales-tax-reports.md)
+### [Standard Audit File (SAF) -tiedosto](emea-pol-standard-audit-file-saf.md)
 ### [Liikevaihdon saldoilmoitus](emea-pol-turnover-balances-statement.md)
 ## Espanja
-### [Vekseliasetukset](emea-esp-bill-of-exchange-options.md)
 ### [Käteisalennusten käyttö laskussa](emea-esp-cash-discount-applied-invoice.md)
+### [Vekseliasetukset](emea-esp-bill-of-exchange-options.md)
+### [Suoritusperusteinen vero](emea-esp-conditional-sales-tax.md)
 ### [Kirjanpitotietojen laskutili](emea-esp-fiscal-data-invoice-account.md)
 ### [Käyttöomaisuusryhmän uudelleenarvostus](emea-esp-fixed-asset-group-revaluation.md)
+### [Yhteisön sisäinen alv](emea-esp-intra-community-vat.md)
 ### [Kerta-asiakkaat](emea-esp-no-one-time-customer-for-project-contracts.md)
 ### [Velkakirjojen asetukset](emea-esp-promissory-note-options.md)
 ### [Osto- ja myyntisyklit](emea-esp-sales-purchase-cycle.md)
@@ -163,3 +173,4 @@
 
 # Pohjois-Amerikka
 ## [Yhdysvaltojen vuoden lopun 1099-raportointi](noam-usa-year-end-1099-reporting.md)
+

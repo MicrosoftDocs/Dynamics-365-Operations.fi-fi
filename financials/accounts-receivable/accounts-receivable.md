@@ -1,6 +1,6 @@
 ---
 title: Myyntireskontran aloitussivu
-description: Myyntireskontran avulla voit seurata kaikkia myyntilaskuja ja saapuvia maksuja.
+description: Myyntireskontran avulla voit seurata myyntilaskuja ja saapuvia maksuja.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
-ms.openlocfilehash: 03d08f2cf75a8307bc465464917d86efc69be46f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 1afa291099362c31a7a2c972cc45b19bfc3897bf
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -30,9 +31,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Myyntireskontran avulla voit seurata kaikkia myyntilaskuja ja saapuvia maksuja. 
+Myyntireskontran avulla voit seurata myyntilaskuja ja saapuvia maksuja. 
 
-Voit luoda myyntilaskut, jotka perustuvat myyntitilauksiin tai pakkausluetteloihin. Voit myös määrittää vapaatekstilaskuja, jotka eivät liity myyntitilauksia. Voit vastaanottaa maksuja käyttämällä useita eri maksulajeja. Näihin sisältyvät vekselit, käteisvarat, sekit, luottokortit ja sähköiset maksut. Jos organisaatiossa on useita yrityksiä, voit käyttää keskitettyjä maksuja maksujen tallentamiseksi yhteen yritykseen kaikkien muiden yritysten puolesta.
+Voit luoda myyntitilauksiin tai pakkausluetteloihin perustuvia myyntilaskuja. Voit myös määrittää vapaatekstilaskuja, jotka eivät liity myyntitilauksiin. Voit vastaanottaa maksuja käyttämällä useita eri maksutyyppejä. Niitä ovat vekselit, käteisvarat, sekit, luottokortit ja sähköiset maksut. Jos organisaatiossa on useita yrityksiä, voit käyttää keskitettyjä maksuja, jolloin maksut kirjataan yhteen yritykseen muiden yritysten puolesta.
 
 
 

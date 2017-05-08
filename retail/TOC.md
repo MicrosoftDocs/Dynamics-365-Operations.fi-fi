@@ -68,3 +68,16 @@
 ## [Commerce-perustietojen yleiskatsaus](commerce-essentials.md)
 ## [Organisaatiot ja organisaatiohierarkiat (Commerce-perustiedot)](organizational-hierarchies-commerce-essentials.md)
 # [IT-ammattilaisten ja kehittäjien sisältö](dev-itpro/TOC.md)
+
+# [Myyntitiedot](/dynamics365/operations/financials/index)
+
+# [Henkilöstöhallinto](/dynamics365/operations/human-resources/index)
+
+# [Toimitusketjun hallinta](/dynamics365/operations/supply-chain/index)
+
+# [Kehittäjä ja järjestelmänvalvoja](/dynamics365/operations/dev-itpro/index)
+
+# Muut resurssit
+## [Dynamics 365 for Operations -sanasto](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
+## [Uudet ja muuttuneet ominaisuudet](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+

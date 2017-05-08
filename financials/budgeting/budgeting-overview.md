@@ -1,6 +1,6 @@
 ---
 title: Budjetoinnin aloitussivu
-description: "Tässä aiheessa käsitellään yleisesti Microsoft Dynamics 365 for Operations -ohjelman budjetointitoimintojen osia, budjetointityökaluja ja raportointitoimintoja."
+description: "Tässä aiheessa on yleiskatsaus Microsoft Dynamics 365 for Operationsin budjetointitoimintojen osista, budjetointityökaluista ja raportointitoiminnoista."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: f7b4efc06b8e64c05da026850b41cb5b68c33ec3
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: aacce0449c9490c4ab66cacb9945ed64fa40de34
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -29,35 +30,35 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä aiheessa käsitellään yleisesti Microsoft Dynamics 365 for Operations -ohjelman budjetointitoimintojen osia, budjetointityökaluja ja raportointitoimintoja. 
+Tässä aiheessa on yleiskatsaus Microsoft Dynamics 365 for Operationsin budjetointitoimintojen osista, budjetointityökaluista ja raportointitoiminnoista. 
 
-<a name="components-of-budgeting-functionality"></a>Budjetoinnin toimintojen komponentit
+<a name="components-of-budgeting-functionality"></a>Budjetointitoimintojen osat
 -------------------------------------
 
-Yrityksen resurssien suunnittelujakso koostuu yleensä suunnittelusta, budjetoinnista ja tehtävien ennustamisesta.
-[![Budjetoinnin toimintojen komponentit](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg) Sekä pitkän aikavälin strategisen suunnittelun että vuosittaisen budjetin suunnittelun prosesseja tuetaan budjettisuunnitelman avulla. Budjettisuunnitelman asiakirjat on integroitu tiiviisti Microsoft Exceliin. Käyttäjät voivat konfiguroida rajoittamattomia raha- ja määräsuunnitelmia ja myös määrittää budjetoinnin organisaatiohierarkian tukemaan ylhäältä alaspäin ja alhaalta ylöspäin määrättyjä budjetointi-menetelmiä. Kun budjetti on vahvistettu ja hyväksytty Microsoft Dynamics 365 for Operations -budjettisuunnitelmassa, budjettisuunnitelma muunnetaan budjettitapahtumaksi. Budjettitapahtumien merkinnät tarjoavat välineet budjetin ylläpitoon, ja summien jäljitettämiseen budjettikoodien kautta. Budjettimerkintöjen avulla voit muuttaa alkuperäisiä budjetteja, suorittaa siirtoja ja siirtää eteenpäin edellisen vuoden budjettisummia. Vakiintuneen budjetin kanssa, yritys voi ottaa käyttöön budjetinhallinnan. Yrityksen kulttuurista ja kypsyystasosta määräytyy kontrollin taso. Organisaatiot, joiden kypsyys on alhaisella tasolla, voivat jättää budjetin "sellaiseksi kuin se on" ja olla herkemmin reagoivia kuin proaktiivisia, jos budjetti ei vastaa odotuksia. Jotkut organisaatiot voivat ottaa käyttöön budjetin hallinta -käytäntöjä, jotka estävät käyttäjiä ostamasta, jos budjettivaroja ei ole käytettävissä. Lopuksi: erittäin kypsät organisaatiot voivat perustaa organisaatiokulttuurin, jossa työntekijät ovat tietoisia organisaation tavoitteista ja toimivat näiden tavoitteiden mukaan esimerkiksi seuraavanlaisten käytäntöjen avulla: "Harkitse verkkotapaamista matkustamisen sijaan." Dynamics 365 for Operations sisältää budjetinhallinnan kehyksen, jonka avulla yhtiön johto voi valita joko kovan hallinnan (joka estää budjetin yli menevät kirjaukset) tai pehmeän hallinnan (jossa käyttäjiä varoitetaan, että he ovat ylittämässä budjetin, mutta voivat päättää, miten toimivat) Lopuksi: voit käyttää juoksevia ennusteita. Juokseva ennuste on budjetin ja todellisen tilanteen vakiovertailu. Siinä myös määritetään, miten hyvin yritys toimii budjettiin verrattuna. Vaiheittaista ennustetta käytetään myös tunnistamaan trendejä. Microsoft Dynamics 365 for Operations -järjestelmässä juoksevia ennusteita tuetaan budjettisuunnitelma-asiakirjalla alkuperäisenä suunnittelutehtävinä. Juoksevat ennusteet voidaan tehdä rinnakkain budjetin seuraavan jakson suunnittelussa.
+Yrityksen resurssien suunnittelujakso koostuu yleensä suunnittelu-, budjetointi- ja ennustetehtävistä.
+[![Budjetointitoimintojen osat](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg) Budjettisuunnitelman asiakirja tukee sekä pitkäkestoista strategista suunnittelua että vuosibudjetin suunnittelua. Budjettisuunnitelman asiakirjat on integroitu tiiviisti Microsoft Exceliin. Käyttäjien tekemien rahallisten ja määrällisten skenaarioiden määrää ei rajoiteta. He voivat myös määrittää budjetoinnin organisaatiohierarkian tukemaan sekä ylhäältä alaspäin ja alhaalta ylöspäin suuntautuvia budjetointimenetelmiä. Kun budjetti on muodostettu ja hyväksytty Microsoft Dynamics 365 for Operationsissa, voit muuntaa budjettisuunnitelman budjettirekisteritapahtumaksi. Budjettirekisteritapahtumat antavat työkalut budjetin ylläpitämiseen ja summien jäljittämiseen budjettikoodien avulla. Budjettirekisteritapahtumien avulla voit korjata alkuperäisiä budjetteja, suorittaa siirtoja ja tehdä budjettisummien siirtokirjauksia edelliseltä vuodelta. Yritys voi ottaa muodostettuun budjettiin perustuvan budjetin hallinnan käyttöön. Hallinnan taso määräytyy organisaatiokulttuurin ja organisaation kypsyystason mukaan. Alhaisen kypsyystason organisaatiot voivat antaa budjetin olla koskemattomana, ja ne ehkä enemminkin reagoivat kuin toimivat ennakoivasti, jos budjetti ei vastaa odotuksia. Toiset organisaatiot voivat ottaa käyttöön budjetin hallintakäytännöt, jotka estävät käyttäjien ostot, jos budjettirahoitusta ei ole. Erittäin korkean kypsyystason organisaatioissa voi olla käytössä organisaatiokulttuuri, jossa työntekijöille kerrotaan organisaation tavoitteista ja miten kyseisiä tavoitteita voidaan toteuttaa erilaisten käytäntöjen avulla. Tällainen käytäntö voi olla esimerkiksi verkkotapaamisten järjestäminen matkustamisen sijaan aina, kun se on mahdollista. Dynamics 365 for Operations sisältää budjetin hallintakehikon. Sen avulla yritysjohto voi valita joko tiukan hallinnan (joka estää budjetin ylittävät kirjaukset) tai pehmeän hallinnan (jossa käyttäjiä varoitetaan budjettirahoituksen ylittymisestä, mutta käyttäjät voivat itse päättää, mitä he tekevät). Käytössä on myös juoksevat ennusteet. Juoksevassa ennusteessa todellisia kuluja verrataan säännöllisesti budjettiin, ja sen perusteella määritetään, miten yritys toimii budjettiin verrattuna. Juoksevan ennusteen perusteella voidaan tunnistaa myös trendejä. Microsoft Dynamics 365 for Operations tukee juoksevia ennusteita budjettisuunnitelman asiakirjan alkuperäisinä suunnittelutehtävinä. Juoksevat ennusteet voidaan tehdä rinnakkain tulevan budjettijakson suunnittelun kanssa.
 
--   [Perusbudjetointi: Yleiskatsaus ja määritykset](basic-budgeting-overview-configuration.md)
--   [Budjetin hallinta: Yleiskuvaus ja konfiguraatio](budget-control-overview-configuration.md)
--   [Budjettisuunnittelu: Yleiskuvaus ja konfiguraatio](budget-planning-overview-configuration.md)
--   [Toimien ennusteet](position-forecasting.md)
--   [Budjettisuunnitelman perusteluasiakirjat](budget-planning-justification-docs.md)
+-   [Perusbudjetointi: yleiskatsaus ja konfiguraatio](basic-budgeting-overview-configuration.md)
+-   [Budjetin hallinta: yleiskatsaus ja konfiguraatio](budget-control-overview-configuration.md)
+-   [Budjettisuunnittelu: yleiskatsaus ja konfiguraatio](budget-planning-overview-configuration.md)
+-   [Toimien ennustus](position-forecasting.md)
+-   [Budjettisuunnittelun perusteluasiakirjat](budget-planning-justification-docs.md)
 -   [Microsoft Excelin budjettisuunnittelumallit](budget-planning-excel-templates.md)
 
-## <a name="budgeting-tools-in-dynamics-365-for-operations"></a>Budgeting tools in Dynamics 365 -järjestelmän budjetointityökalut
+## <a name="budgeting-tools-in-dynamics-365-for-operations"></a>Dynamics 365 for Operationsin budjetointityökalut
 [![Budjetointityökalut](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
-Muut suunnittelu- ja budjetointiominaisuudet ovat käytettävissä kaikkialla Dynamics 365 for Operations -järjestelmässä ja ne on integroitu kirjanpitobudjetteihin.
+Dynamics 365 for Operationsin eri osissa on lisää suunnittelu- ja budjetointitoimintoja, ja nämä toiminnot on integroitu kirjanpitobudjetteihin.
 
--   **Työvoiman budjetit** – työvoiman budjetointi sisältää yksityiskohtaisen budjettikustannuskomponentin virkoja varten, kompensaation ryhmiä varten, ja niin edelleen.
--   **Käyttöomaisuuden budjetit** – käyttöomaisuuden tietojen perusteella voidaan laskea suunnitellut poistot voidaan ja kirjata muut käyttöomaisuuteen liittyvät suunnitellut tapahtumat.
--   **Projektibudjetit** – projektimoduulissa voi luoda yksityiskohtaisia projektiennusteita. Projektiennusteet sisältävät tietoja suunnitelluista tunneista, kuluista, maksuista ja nimikkeistä.
+-   **Työvoimabudjetit** – työvoiman budjetointi sisältää yksityiskohtaisen budjettikustannuksen suunnittelukomponentin esimerkiksi toimia ja kompensaatioryhmiä varten.
+-   **Käyttöomaisuusbudjetit** – voit laskea käyttöomaisuustietojen perusteella suunnitellut poistot ja kirjata muut käyttöomaisuuteen liittyvät suunnitellut tapahtumat.
+-   **Projektibudjetit** – Voit luoda projektimoduulissa yksityiskohtaisia projektiennusteita. Projektiennusteet sisältävät tietoja suunnitelluista tunneista, kuluista, maksuista ja nimikkeistä.
 -   **Kysynnän ennuste** – voit arvioida tulevan varastokysynnän ja luoda kysynnän ennusteita historiallisten tapahtumatietojen perusteella.
 
-Lisätietoja suunnittelutietojen tuomisesta muista moduuleista budjettisuunnitelmiin on kohdassa [Budjettisuunnittelun integrointi toisten moduulien kanssa](budget-planning-integration-other-modules.md).
+Lisätietoja suunnittelutietojen tuomisesta muista moduuleista budjettisuunnitelmiin on aiheessa [Budjettisuunnittelun integrointi muiden moduulien kanssa](budget-planning-integration-other-modules.md).
 
 ## <a name="user-interface-and-reporting-capabilities"></a>Käyttöliittymä ja raportointiominaisuudet
-Microsoft Dynamics 365 for Operations -järjestelmässä käyttäjät voivat luoda budjettisuunnitelmia joko suoraan Dynamics 365 for Operations -järjestelmän asiakasohjelmassa (käyttämällä budjettisuunnitelma asiakirjan sivua) tai Excelin kautta. Excel tarjoaa useita lisäominaisuuksia. Voit esimerkiksi käyttää ulkopuolisia tietoja budjettisuunnitelman lähteenä, suorittaa mukautettuja laskutoimituksia ja käyttää Microsoftin PivotTable-taulukkoa ja kaavioita. Useimmat muuttujat budjettisuunnitteluprosessissa voidaan määrittää. Voit esimerkiksi määrittää sen kuka tekee budjetoinnin, mitä budjetoidaan ja miltä prosessi näyttää. Vaikka voitkin käyttää Exceliä budjetin suunnitteluun, Dynamics 365 for Operations -järjestelmää pidetään ainoana tietolähteenä. Tämä estää budjetin hallintaan liittyviä ongelmia. Kausittaisia prosesseja voidaan käyttää tuomaan alkuperäistä budjetointitietoa budjettisuunnitelmaan. Dynamics 365 for Operations tarjoaa useita vakiokyselysivuja, joiden avulla voit tarkastella ja analysoida tietoja budjetoinnin raportointia varten. Budjettisuunnitelman tietoja voidaan käyttää Management Reporterin kautta. Erillisiä budjettisuunnitelmaskenaarioita voidaan näyttää Management Reporter -raportin sarakkeissa.
+Käyttäjät voivat luoda Dynamics 365 for Operationsissa budjettisuunnitelmia joko suoraan Dynamics 365 for Operations -asiakasohjelmassa (käyttämällä määritettävää budjettisuunnitelman asiakirjan sivua) tai Excelin kautta. Excelissä on käytössä useita lisäominaisuuksia. Voit esimerkiksi käyttää ulkoisia tietoja budjettisuunnitelman lähteenä, suorittaa mukautettuja laskutoimituksia sekä käyttää Microsoft Pivot-taulukkoa ja kaavioita. Useimmat budjettisuunnitteluprosessin muuttajat voidaan määrittää. Voit esimerkiksi määrittää, kuka tekee budjetoinnin, mitä budjetoidaan ja miltä prosessi näyttää. Vaikka voit käyttää Exceliä budjetin suunnitteluun, Dynamics 365 for Operations pidetään ainoana tietolähteenä. Tämä estää budjetin hallintaan liittyvien ongelmien syntymisen. Budjetoinnin alkuperäiset tiedot voidaan tuoda kausittaisilla prosesseilla budjettisuunnitelmaan. Dynamics 365 for Operations sisältää useita vakiokyselysivuja, joiden avulla voit tarkastella ja analysoida budjetointitietoja raportointia varten. Budjettisuunnitelman tietoja voidaan käyttää Management Reporterin kautta, ja erilliset budjettisuunnitelmaskenaariot voidaan näyttää Management Reporter -raportin sarakkeina.
 
 
 
