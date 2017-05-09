@@ -1,0 +1,48 @@
+# Power BI Content Pack
+## [Kustannushallinnan sisältöpaketti](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+# Ennalta määritetty kustannus
+## [Kustannuslaskentalomake](costing-sheets.md)
+## [Kustannuslaskelmaversio](costing-versions.md)
+## [Kustannuksen muutoksen simulointi käyttämällä suunnitellun kustannuksen kustannuslaskentaversiota](simulate-cost-changes-costing-version-planned-costs.md)
+# Varaston kustannuslaskenta
+## [Käytettävissä olevan varaston kustannusarvon oikaiseminen](adjust-hand-inventory-cost-values.md)
+## [Kustannusobjekti](cost-object.md)
+## [Kustannusmerkintä](cost-entries.md)
+## [Kustannusryhmä](cost-groups.md)
+## [FIFO sekä fyysinen arvo ja merkintä](fifo-physical-value-marking.md)
+## [Sisällytä fyysinen arvo](include-physical-value.md)
+## [Varaston objektin arvo](physical-quantity.md)
+## [Varaston sulkeminen](inventory-close.md)
+## [LIFO-päivämäärä sekä fyysinen arvo ja merkintä](lifo-date-physical-value-marking.md)
+## [LIFO sekä fyysinen arvo ja merkintä](lifo-physical-value-marking.md)
+## [Liukuva keskiarvo](moving-average.md)
+## [Fyysinen ja kirjanpidollinen päivitys](physical-financial-updates.md)
+## [Juokseva keskimääräinen kustannushinta](running-average-cost-price.md)
+## [Varastodimensiokohtaisen juoksevan keskimääräisen kustannuksen seuranta](track-running-average-cost-per-inventory-dimension.md)
+## [Painotetun keskiarvon päivämäärä](weighted-average-date.md)
+## [Painotettu keskiarvo sekä fyysinen arvo ja merkintä](weighted-average-physical-value-marking.md)
+# Valmistuksen kustannuslaskenta
+## [Valmistetun nimikkeen vakiokustannusten kuolettaminen](amortize-constant-costs-manufactured-item.md)
+## [Jälkikustannuslaskenta](backflush-costing.md)
+## [Tuoterakennelaskelmat](bom-calculations.md)
+## [Tuoterakenteen laskentaryhmä](bom-calculation-groups.md)
+## [Tuotannon varianssien yhteiset lähteet](common-sources-of-production-variances.md)
+## [Tuotannon reitityksessä käytetty kustannusluokka](cost-categories-used-production-routings.md)
+## [Tuotannonhallinnan ja projektinhallinnan kirjanpidossa käytettävä kustannusluokka](cost-categories-used-production-control-project-management-accounting.md)
+## [Valmistetun nimikkeen kulujen näyttäminen](charges-manufactured-item.md)
+## [Tuotantotilauksen kustannusanalyysi](production-order-cost-analysis.md)
+## [Tuotantotilauksen kustannusarvio](production-order-cost-estimation.md)
+## [Tuotannon kirjaus](production-posting.md)
+## [Tuotettavan tai hankittavan tuotteen määrittäminen](manufactured-items-treated-as-purchased-items.md)
+## [Kokonaiskustannusten kohdistustapa](methodology-total-cost-allocation.md)
+# Standardikustannus
+## [Standardikustannusta käyttävät tuoterakennelaskelmat](information-used-bom-calculations-standard-costs.md)
+## [Standardikustannuspäivityksen hallinta](manage-standard-cost-updates.md)
+## [Standardikustannuksen muuntamisen edellytys](prerequisites-standard-cost-conversion.md)
+## [Standardikustannuksen muuntamisen yleiskuvaus](standard-cost-conversion-overview.md)
+## [Standardikustannuksen päivittäminen valmistusympäristössä](update-standard-costs-manufacturing-environment.md)
+## [Uuden valmistetun nimikkeen standardikustannuksen päivittäminen](update-standard-costs-new-manufactured-item.md)
+## [Standardikustannuksen päivittäminen muussa kuin valmistusympäristössä](update-standard-costs-non-manufacturing-environment.md)
+
+
+

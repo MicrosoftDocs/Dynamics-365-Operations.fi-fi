@@ -1,0 +1,58 @@
+---
+title: "Ylläpidä suunniteltuja tilauksia"
+description: "Tämä artikkeli sisältää suunniteltujen tilausten hallintaa käsitteleviä tietoja. Artikkelissa kuvataan, miten voit päivittää suunniteltujen tilausten tilan, vahvistaa ne ja suodattaa suunniteltuja tilauksia, joilla on sama tila kuin valitulla suunnitellulla tilauksella."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: ReqTransPo
+audience: Application User
+ms.reviewer: YuyuScheller
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 19151
+ms.assetid: 54123f4c-b4ca-4ce4-9358-b067aa04c968
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: roxanad
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
+ms.openlocfilehash: c01a192e637bfe74a60370290db72c439faf40d0
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="maintain-planned-orders"></a>Ylläpidä suunniteltuja tilauksia
+
+[!include[banner](../includes/banner.md)]
+
+
+Tämä artikkeli sisältää suunniteltujen tilausten hallintaa käsitteleviä tietoja. Artikkelissa kuvataan, miten voit päivittää suunniteltujen tilausten tilan, vahvistaa ne ja suodattaa suunniteltuja tilauksia, joilla on sama tila kuin valitulla suunnitellulla tilauksella.
+
+Voit hallita suunniteltuja tilauksia **Pääsuunnittelu**-työtilassa, **Suunniteltu tilaus** -luettelossa tai **Suunnitellut tuotantotilaukset**-, **Suunnitellut ostotilaukset**- ja **Suunniteltu siirto** -luettelossa. Voit seurata edistymistä **Tila**-kentässä. Käytettävissä ovat seuraavat arvot:
+
+-   Kun pääsuunnittelu luo suunniteltuja tilauksia, suunniteltujen tilausten tilana on **Käsittelemätön**.
+-   Jos et halua vahvistaa suunniteltua tilausta, voit asettaa sen tilaksi **Valmis**.
+-   Jos haluat vahvistaa suunnitellun tilauksen, voit asettaa sen tilaksi **Hyväksytty**. Tämä tila ilmaisee, että hyväksyt suunnitellun tilauksen vahvistamisen mutta tilausta ei ole vielä vahvistettu.
+
+**Huomautus:** Hyväksytty suunniteltu tilaus siirtyy nykyisessä tilassaan seuraavaan pääsuunnittelun laskentaan. Voit vahvistaa suunnitellut tilaukset valitsemalla **Vahvista**. Voit vahvistaa seuraavat suunnitellut tilaukset:
+
+-   Valittuna oleva suunniteltu tilaus.
+-   Useita suunniteltuja tilauksia.
+-   Suunnitellut tilaukset, jotka on luotu **Hajotus**-sivulla hajottamalla. Napsauta **Suunnitellut tilaukset**, valitse suunniteltu tilaus ja napsauta sitten **Vahvista**.
+
+Kun suunniteltu tilaus on vahvistettu, se siirtyy kyseisen moduulin tilausosaan. **Huomautus:** Napsauttamalla hiiren kakkospainikkeella suunniteltua tilausta, jolla on tietty tila, voit suodattaa näkyviin muut suunnitellut tilaukset, joilla on sama tila. Tämä toiminto on hyödyllinen, jos esimerkiksi haluat suodattaa vahvistettavaksi kaikki suunnitellut tilaukset, joiden tila on **hyväksytty**.
+
+<a name="see-also"></a>Lisätietoja
+--------
+
+[Pääsuunnitelmat](master-plans.md)
+
+
+
+
