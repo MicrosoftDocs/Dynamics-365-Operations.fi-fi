@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8aa0a58b03ee18e42ca7770ea3e22311c1ddba67
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 9aba61178d050f4881c96b7a7fa62937b98b2beb
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -37,8 +38,8 @@ Luvatuissa tilauksissa lasketaan, mikä on aikaisin lähetys- ja vastaanottopäi
 
 -   **Myynnin läpimenoaika** – Myynnin läpimenoaika on myyntitilauksen luomisen ja nimikkeiden toimituksen välinen aika. Toimituspäivän laskenta perustuu päivien oletusmäärään eikä siinä oteta huomioon varastotilannetta, tiedettyä kysyntää eikä suunniteltua tarjontaa.
 -   **Luvattavissa oleva määrä (ATP)** – ATP on nimikkeen käytettävissä oleva määrä, joka voidaan luvata asiakkaalle tiettynä päivänä. ATP-laskelmaan sisältyy varaamaton varasto, läpimenoajat, suunnitellut vastaanotot ja varasto-otot.
--   **ATP + toimitusmarginaali ** – Lähetyspäivämäärä vastaa ATP-päivämäärää sekä nimikkeen toimitusmarginaalia. Toimitusmarginaali on lähetettävien nimikkeiden valmisteluun kuluva aika.
--   **Saatavuus (CTP) **– Saatavuus lasketaan hajotuksen avulla.
+-   **ATP + toimitusmarginaali** – Lähetyspäivämäärä vastaa ATP-päivämäärää sekä nimikkeen toimitusmarginaalia. Toimitusmarginaali on lähetettävien nimikkeiden valmisteluun kuluva aika.
+-   **Saatavuus (CTP)**– Saatavuus lasketaan hajotuksen avulla.
 
 ## <a name="atp-calculations"></a>ATP-laskelmat
 ATP-määrä lasketaan "ennakoivan kumulatiivisen ATP-määrän" avulla. Tämän ATP-laskentamenetelmän pääasiallinen etu on mahdollisuus käsitellä myös tilanteet, joissa vastaanottojen välisten varasto-ottojen summa on suurempi kuin uusin vastaanotto (esim. kun tarpeen täyttäminen edellyttää aiemman vastaanoton määrän käyttämistä). Ennakoiva kumulatiivinen ATP -laskentatapa sisällyttää kaikki varasto-otot, kunnes vastaanotettavien kumulatiivinen määrä ylittää otettavien kumulatiivisen määrän. Niinpä tämä ATP-laskentatapa arvioi, voidaanko osaa aiemman kauden määrästä käyttää myöhemmällä kaudella.  

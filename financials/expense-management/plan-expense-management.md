@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: af7e7288f741b3c519227e2778c4c4311c3a2012
-ms.openlocfilehash: 88cdf531b6da615034f9982d3503b9add0100479
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 447ba56a279a29392b00119730c3594fa4ea80f6
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -42,7 +43,7 @@ Kulujen hallinta on integroitu tiukasti organisaation taloushallintoon. Monet ku
 
 ### <a name="per-diems"></a>Päivärahat
 
-Organisaation myöntämät työntekijöiden päivärahat on määritettävä. Koska päivärahoja käytetään yleensä kulujen, kuten aterioiden, majoituksen ja muiden satunnaisten menojen korvaamiseen, voit luoda sääntöjä organisaation tarjoamille päivärahoille. Päivärahan suuruus voi perustua vuodenaikaan, matkan kohteeseen tai molempiin. Kun määritä päivärahasäännön, voit määrittää, mikä prosenttiosuus päivärahasta pidätetään, jos työntekijällä on käytettävissään ilmaisia aterioita tai palveluita. Voit myös määrittää päivärahatasot, joilla määritetään vähimmäis- ja enimmäismäärä tunteja, joilla tietyn suuruista päivärahaa voidaan käyttää työntekijän matkalla. **Päätökset: **
+Organisaation myöntämät työntekijöiden päivärahat on määritettävä. Koska päivärahoja käytetään yleensä kulujen, kuten aterioiden, majoituksen ja muiden satunnaisten menojen korvaamiseen, voit luoda sääntöjä organisaation tarjoamille päivärahoille. Päivärahan suuruus voi perustua vuodenaikaan, matkan kohteeseen tai molempiin. Kun määritä päivärahasäännön, voit määrittää, mikä prosenttiosuus päivärahasta pidätetään, jos työntekijällä on käytettävissään ilmaisia aterioita tai palveluita. Voit myös määrittää päivärahatasot, joilla määritetään vähimmäis- ja enimmäismäärä tunteja, joilla tietyn suuruista päivärahaa voidaan käyttää työntekijän matkalla. **Päätökset:**
 
 -   Oletusarvoinen päivärahasäännöt ensimmäiselle ja viimeiselle päivälle:
     -   Mikä määrä tunteja työntekijän on vähintään ilmoitettava saadakseen päivärahan?
@@ -127,7 +128,7 @@ Kuluihin liittyvissä veroissa on määritettävä, mitä sisällytetään tai o
 Huomaa, että jos olet päättänyt käyttää kirjanpidon suunnittelun aikana Yhdysvaltain arvonlisäverosääntöjä, mikä tehdään valitsemalla **Käytä arvonlisäverotuksen sääntöjä** -kentän arvoksi Kyllä, et voi ottaa käyttöön veronpalautuksia kuluissa.
 
 ## <a name="policies"></a>Käytännöt
-Voit luoda kuluraporttikäytäntöjä, joilla organisaatio voi säästää aikaa ja rahaa, kun työntekijät aiheuttavat kuluja yrityksen nimissä. Käytännöt varmistavat, että työntekijät noudattavat budjettia, antavat kaikki tarvittavat tiedot ja kuluttavat rahaa vain tarvittaessa. Seuraavat päätökset on tehtävä jokaisen kuluraporttikäytännön ja jokaisen luomasi kuluraportin hyväksyntäkäytännön kohdalla. **Päätökset: **
+Voit luoda kuluraporttikäytäntöjä, joilla organisaatio voi säästää aikaa ja rahaa, kun työntekijät aiheuttavat kuluja yrityksen nimissä. Käytännöt varmistavat, että työntekijät noudattavat budjettia, antavat kaikki tarvittavat tiedot ja kuluttavat rahaa vain tarvittaessa. Seuraavat päätökset on tehtävä jokaisen kuluraporttikäytännön ja jokaisen luomasi kuluraportin hyväksyntäkäytännön kohdalla. **Päätökset:**
 
 -   Mikä on käytännön nimi?
 -   Mitä on kulukäytännön tarkoitus?

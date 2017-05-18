@@ -1,16 +1,16 @@
 ---
 title: "Talousraporttien suunnittelutoiminnon rivimääritykset"
 description: "Rivin määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin rivin sisällön. Rivin määritys voidaan yhdistää sarakemääritykseen, raportointipuun määrityksiin ja raportin määrityksiin. Näin luodaan rakenneosaryhmä, jota voidaan käyttää useissa yrityksissä."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 42 - 39
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: a2f92effd1cfdc1d5da2c5ec895c0487a6fc82a4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aa9fcc4d0c122d2355362b75ca210af4c2ef4338
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="row-definitions-in-financial-report-designer"></a>Talousraporttien suunnittelutoiminnon rivimääritykset
+
+[!include[banner](../includes/banner.md)]
+
 
 Rivin määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin rivin sisällön. Rivin määritys voidaan yhdistää sarakemääritykseen, raportointipuun määrityksiin ja raportin määrityksiin. Näin luodaan rakenneosaryhmä, jota voidaan käyttää useissa yrityksissä.
 
@@ -72,8 +76,8 @@ Seuraavien vaiheiden avulla voit lisätä dimensioita rivin määritykseen.
 
 1.  Valitse Report Designerissa **Rivien määritykset** ja avaa sitten muokattava rivin määritys.
 2.  Valitse **Muokkaa** -valikosta **Lisää rivejä dimensioista**.
-3.  Valitse **Lisää rivejä dimensioista **-valintaikkunan **Dimensiot**-rivillä rivin määritykseen siirrettävä dimension solu. Valitse sitten **Kaikki &&&**.
-4.  Voit rajoittaa rivin määrityksen tiettyyn dimensioarvojen väliin antamalla **Dimensiovälin alku **-soluun dimension aloitusarvon ja **Dimensiovälin loppu** -soluun dimension lopetusarvon. Jos haluat sisällyttää kaikki valitun dimension arvot, jätä nämä solut tyhjäksi. **Huomautus:** Dimensioalueilla käytettävät yleismerkit (\* tai ?) eivät välttämättä palauta kaikkia haluttuja tuloksia sen mukaan, miten ERP-tietokanta kokoaa tiedot.
+3.  Valitse **Lisää rivejä dimensioista**-valintaikkunan **Dimensiot**-rivillä rivin määritykseen siirrettävä dimension solu. Valitse sitten **Kaikki &&&**.
+4.  Voit rajoittaa rivin määrityksen tiettyyn dimensioarvojen väliin antamalla **Dimensiovälin alku**-soluun dimension aloitusarvon ja **Dimensiovälin loppu** -soluun dimension lopetusarvon. Jos haluat sisällyttää kaikki valitun dimension arvot, jätä nämä solut tyhjäksi. **Huomautus:** Dimensioalueilla käytettävät yleismerkit (\* tai ?) eivät välttämättä palauta kaikkia haluttuja tuloksia sen mukaan, miten ERP-tietokanta kokoaa tiedot.
 5.  Määritä **Aloittavan rivin koodi** -kenttään ensimmäisen rivin määritykseen lisättävän dimensioarvon rivikoodi.
 6.  Määritä **Lisää kutakin riviä arvolla** -kenttään kahden peräkkäisen rivikoodin väli. Jos esimerkiksi ensimmäisen rivin koodi on 100 ja lisäysarvo on 30, ensimmäisten uusien rivien koodit ovat 100, 130, 160, 190 ja 220. Käytä lisäysarvoa, joka määrittää riittävästi tilaa uuden muotoilu- ja kaavarivien lisäämistä varten.
 7.  Napsauta **OK**. Kullekin valitulle dimensioarvolle lisätään yksi rivi rivin määritykseen.
@@ -97,9 +101,9 @@ Voit oikaista taseen pyöristyksen seuraavasti.
     -   **Kaikkien velkojen ja pääoman rivi** – Taseen kaikki velat ja pääoman sisältävän rivin koodi.
     -   **Oikaisusumman raja** – Positiivinen kokonaisluku, joka määrittää automaattisten oikaisujen rajan. Tätä summaa verrataan toteutuneen pyöristyseron absoluuttiseen arvoon.
 
-    **Huomautus: **Nämä rivin koodit on linkitettävä taloushallinnon tietoihin. Toisin sanoen rivillä on oltava dimensioarvo **Linkki taloushallinnon dimensioon** -solussa. **Älä** tee viittausta kuvauksen riviin (**DESC**), laskettuun riviin (**CALC**) tai kokonaissumman riviin (**TOT**).
+    **Huomautus:**Nämä rivin koodit on linkitettävä taloushallinnon tietoihin. Toisin sanoen rivillä on oltava dimensioarvo **Linkki taloushallinnon dimensioon** -solussa. **Älä** tee viittausta kuvauksen riviin (**DESC**), laskettuun riviin (**CALC**) tai kokonaissumman riviin (**TOT**).
 
-Taseen summat täsmäytetään nyt tasaisesti, kun pyöristys on päällä. **Huomautus: **Oikaisun raja otetaan käyttöön raportin määritykselle määritetyn **Pyöristystarkkuus**-vaihtoehdon perusteella. Jos esimerkiksi pyöristät raportin tuhansiksi ja annat **Oikaisusumman raja** -kentässä arvoksi **2**, näyttöön avautuu varoitussanoma, kun **Pyöristyksen oikaisurivi** -kentän arvo nousee tai laskee enemmän kuin 2 000.
+Taseen summat täsmäytetään nyt tasaisesti, kun pyöristys on päällä. **Huomautus:**Oikaisun raja otetaan käyttöön raportin määritykselle määritetyn **Pyöristystarkkuus**-vaihtoehdon perusteella. Jos esimerkiksi pyöristät raportin tuhansiksi ja annat **Oikaisusumman raja** -kentässä arvoksi **2**, näyttöön avautuu varoitussanoma, kun **Pyöristyksen oikaisurivi** -kentän arvo nousee tai laskee enemmän kuin 2 000.
 
 ## <a name="format-row-and-column-text"></a>Rivin ja sarakkeen tekstin muotoileminen
 Voit mukauttaa raporttien ulkoasua muuttamalla fontteja ja muotoilemalla tekstiä. Seuraavassa osassa kerrotaan, miten raporttien rivien ja sarakkeiden ulkoasua muotoillaan.
@@ -173,6 +177,8 @@ Rivin määrityksen käsiteltävien sarakkeiden tarkasteleminen helpottuu oikais
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Taloushallinnan raportointi Microsoft Dynamics 365 for Operations -järjestelmässä](financial-reporting-intro.md)
+[Taloushallinnan raportointi](financial-reporting-intro.md)
+
+
 
 

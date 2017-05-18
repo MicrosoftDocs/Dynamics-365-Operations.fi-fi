@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 9da48c7861f48ec2a154ac12616149d1208346cf
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 31c3354590935b40ecadd3a2fb380f4f103eb2b7
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -57,7 +58,7 @@ Asiakas 4031 suorittaa 28. kesäkuuta 294,00 arvoisen osamaksun. Koska 28. kesä
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
 | Valittu | Normaali            | FTI-10030 | 4031    | 25.6.2015 | 25.7.2015 | 10030   | 1 000,00                       | USD      | 294,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa. Ellet muuta **Täsmäytettävä summa** -arvoksi **294,00**, **Käteisalennussumma** -kentän arvot vaihtelevat. Käteisalennuksena käytetään kuitenkin arvoa 6,00 maksun kirjaamisen yhteydessä, koska tilitys muuttaa **Täsmäytettävä summa** -arvon automaattisesti.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa. Ellet muuta **Täsmäytettävä summa** -arvoksi **294,00**, **Käteisalennussumma** -kentän arvot vaihtelevat. Käteisalennuksena käytetään kuitenkin arvoa 6,00 maksun kirjaamisen yhteydessä, koska tilitys muuttaa **Täsmäytettävä summa** -arvon automaattisesti.
 
 |                              |           |
 |------------------------------|-----------|
@@ -76,7 +77,7 @@ Asiakas maksaa laskun loppusumman 8. heinäkuuta. Koska maksu suoritetaan toisel
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
 | Valittu | Normaali            | FTI-10030 | 4031    | 25.6.2015 | 25.7.2015 | 10030   | 700,00                               |                                       | USD      | 693,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 
 |                              |           |
 |------------------------------|-----------|

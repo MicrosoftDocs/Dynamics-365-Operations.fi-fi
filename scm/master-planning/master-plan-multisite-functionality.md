@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 19eeee753c15cf2670948ce2c615a112813c16ad
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2112d6dd45c76af3cea75a4e06b06f9577c572ad
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="master-planning-and-multisite-functionality"></a>Pääsuunnittelu ja multisite-toiminnot
+
+[!include[banner](../includes/banner.md)]
+
 
 Pääsuunnittelussa otetaan huomioon toimipaikan ja varaston dimensioiden asetukset. 
 
@@ -37,7 +41,7 @@ Kun dimensio on pakollinen, kaikkiin varastotapahtumiin on syötettävä dimensi
 
 Kun varastoa ei määritetä pakolliseksi, se ei välttämättä ole tunnettu alkuperäisessä kysynnässä. Suunnitteluohjelman on määritettävä käytettävä varasto nimikkeelle ja yksittäisille varastoille määritettyjen asetusten sekä tilausrivin tietojen perusteella.
 
-Seuraavat wikiartikkelit kuvaavat suunnitteluohjelman toimintaa määritettäessä erilaisia asetuksia käytettävän varaston määrityksessä.
+Seuraavat aiheet kuvaavat suunnitteluohjelman toimintaa määritettäessä erilaisia asetuksia käytettävän varaston määrityksessä.
 
 [Pääsuunnittelu – sivuston ja varaston kattavuus, varasto pakollinen](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
@@ -48,5 +52,7 @@ Seuraavat wikiartikkelit kuvaavat suunnitteluohjelman toimintaa määritettäess
 [Pääsuunnittelu – sivuston kattavuus, varasto ei pakollinen](master-plan-site-coverage-warehouse-not-mandatory.md)
 
 [Pääsuunnittelu – tuoterakenneversion määrittäminen](master-plan-bom-version-determined.md)
+
+
 
 

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: c29c95fc6abd13e668c44d3ccf437bb0e879e46b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 11755e4ab4b3c1f55da80e57ff96e0b13c84c697
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -118,7 +119,7 @@ Voit määrittää työntekijän osaamisalueet joko Henkilöstöhallinto-osassa 
 2.  Valitse **Työntekijät**-luettelosta sen työntekijän tietue, jonka osaamisalueet määritit aiemmassa vaiheessa, ja avaa tietue.
 3.  Valitse toimintoruudussa **Projekti**-välilehden **Asetukset**-ryhmästä **Määritä projektit**.
 4.  Napsauta **Resurssin oikeellisuustarkistuksen projektimääritykset** -sivulla **Projektit**-välilehteä.
-5.  Suodata ** Lisää projekti valittuihin projekteihin** -kohdassa näkyviin XYZ-päivitysvaihe 2 -projekti
+5.  Suodata **Lisää projekti valittuihin projekteihin** -kohdassa näkyviin XYZ-päivitysvaihe 2 -projekti
 6.  Valitse **Jäljellä olevat projektit** -ruudusta haluamasi projekti ja lisää se **Valitut projektit** -ruutuun napsauttamalla nuolta.
 7.  Sulje sivu.
 
@@ -130,7 +131,7 @@ Projektipäällikkö voi projektin resursointitoiminnolla luoda projektissa tarv
 
 [![Esimerkki roolista](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
 
-**Skenaario: **Contoso palkattiin suorittamaan aika- ja materiaaliprojekti, jolla on hyväksytty projektin perustamisasiakirja. Nuorempi projektipäällikkö on yhä laatimassa projektin laajuutta. Resurssipäällikkö on parhaillaan määrittämässä resursseja, jotka varataan uuteen projektiin. Yksi rooleista, joita projektin sponsori on toivonut projektin tärkeyden vuoksi, on vastaava projektipäällikkö. Resurssipäällikön on hankittava uusi resurssi, ja hän määrittää roolin järjestelmään siltä varalta, että nuorempi projektipäällikkö tarvitsee resurssitiedot projektin suunnittelua varten. 
+**Skenaario:**Contoso palkattiin suorittamaan aika- ja materiaaliprojekti, jolla on hyväksytty projektin perustamisasiakirja. Nuorempi projektipäällikkö on yhä laatimassa projektin laajuutta. Resurssipäällikkö on parhaillaan määrittämässä resursseja, jotka varataan uuteen projektiin. Yksi rooleista, joita projektin sponsori on toivonut projektin tärkeyden vuoksi, on vastaava projektipäällikkö. Resurssipäällikön on hankittava uusi resurssi, ja hän määrittää roolin järjestelmään siltä varalta, että nuorempi projektipäällikkö tarvitsee resurssitiedot projektin suunnittelua varten. 
 
 Seuraavissa vaiheissa on esitetty, miten resurssipäällikkö voi määrittää vastaavan projektipäällikön roolin ja liittää siihen resurssin ominaisuudet. Myöhemmin roolin avulla voidaan hakea käytettävissä olevia resursseja, jotka vastaavat tarvittavia resurssin osaamisalueita.
 

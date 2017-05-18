@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 8e09c6b042d557e3b2d608fb5e278169fc3c1d88
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4a5e6164f8aea2d4a6a063966c10f33a5e1f0cdd
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="distribute-and-complete-a-questionnaire"></a>Kyselylomakkeen jakaminen ja täyttäminen
+
+[!include[banner](includes/banner.md)]
+
 
 Tässä artikkelissa kerrotaan, miten suunnittelemasi kyselylomakkeet jaetaan niin, että ne ovat oikean henkilön tai henkilöryhmän täytettävissä. 
 
@@ -45,7 +49,7 @@ Voit määrittää kyselylomakeryhmät ja lisätä vastaajat, joille kyselylomak
 
 Voit luoda kyselylomakeryhmiä seuraavilta sivuilta:
 
--   **Kyselylomakeryhmät **– Vain kyselylomakeryhmään kuuluvat henkilöt voivat täyttää valitun kyselylomakkeen. Jos kohdeyleisöksi on määritetty esimerkiksi alihankkijat, voit luoda juuri heille määritetyn kyselylomakeryhmän.
+-   **Kyselylomakeryhmät**– Vain kyselylomakeryhmään kuuluvat henkilöt voivat täyttää valitun kyselylomakkeen. Jos kohdeyleisöksi on määritetty esimerkiksi alihankkijat, voit luoda juuri heille määritetyn kyselylomakeryhmän.
 -   **Kyselylomakeryhmän jäsenet** – Voit lisätä kyselylomakeryhmiin henkilöitä.
 
 Liitä kyselylomakeryhmä kyselylomakkeeseen valitsemalla **Kyselylomakkeet**-sivulla **Käyttöoikeudet**. Kun kyselylomake on tallennettu aktiiviseksi, kyselylomakeryhmän jäsenet voivat täyttää kyselylomakkeen. Tämä toiminto on hyödyllinen, jos haluat testata kyselylomakkeen valitulla ryhmällä henkilöitä, ennen kuin se lähetetään suuremmalle ryhmälle, tai jos haluat kohdistaa kyselylomakkeen tietylle yleisölle.
@@ -53,7 +57,8 @@ Liitä kyselylomakeryhmä kyselylomakkeeseen valitsemalla **Kyselylomakkeet**-si
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Kyselylomakkeen suunnitellut vastausistunnot
 Suunnitellut vastausistunnot ovat vastaajille suunniteltuja ja valittuja kyselylomakkeita. 
 
-**Huomautus:** Kyselylomake on määritettävä ennen suunniteltujen vastausistuntojen määrittämistä. 
+> **Huomautus**
+>  Kyselylomake on määritettävä ennen suunniteltujen vastausistuntojen määrittämistä. 
 
 Luo suunniteltu vastausistunto yksittäiselle työntekijälle **Suunniteltu vastausistunto** -sivulla Sivulla oleva luettelo sisältää kaikki suunnitellut kyselylomakkeet. 
 
@@ -99,7 +104,8 @@ Ota kyselylomake käyttöön liittyvien suunniteltujen vastausistuntojen käytt�
 ## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Käytettävissä olevista kyselylomakkeista ilmoittaminen vastaajille
 Kun jaat kyselylomakkeen, sinun on ilmoitettava vastaajille, että kyselylomakkeet ovat heidän saatavillaan. 
 
-**Huomautus:** Vastaajien on oltava Microsoft Dynamics 365 for Operations -käyttäjiä, jotta kyselylomakkeen täyttäminen on mahdollista.
+> **Huomautus**
+>  Vastaajien on oltava Microsoft Dynamics 365 for Operations -käyttäjiä, jotta kyselylomakkeen täyttäminen on mahdollista.
 
 ### <a name="notifying-respondents-about-a-planned-answer-session"></a>Suunnitellusta vastausistunnosta ilmoittaminen vastaajille
 
@@ -109,12 +115,14 @@ Jos käytössä on suunniteltu vastausistunto, henkilölle on ilmoitettava suora
 
 **Kyselylomakkeiden aikataulut** -sivulla voidaan luoda ja lähettää sähköpostiviesti kaikille kyselylomakkeen vastaajille. Syötä sähköpostiviestin teksti **Työntekijän itsepalvelun sähköpostiosoite** -välilehdessä. Kun ajoitus on aloitettu, luo ja lähetä sähköposti vastaajille valitsemalla **Toiminnot** &gt; **Lähetä sähköposti**. Vastaajat voivat sitten kirjautua sivustoon ja täyttää kyselylomakkeen. 
 
-**Huomautus:** IT-järjestelmänvalvojan on syötettävä sähköpostiasetukset **Sähköpostiparametrit**-sivulla, ennen kuin tämä toiminto otetaan käyttöön.
+> **Huomautus**
+>  IT-järjestelmänvalvojan on syötettävä sähköpostiasetukset **Sähköpostiparametrit**-sivulla, ennen kuin tämä toiminto otetaan käyttöön.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Ajoitetun kyselyn päättäminen
 Voit lopettaa aikataulutetun kyselylomakkeen, kun kaikki vastaajat ovat tehneet vastausistuntonsa loppuun. Kun ajoitettu kyselylomake lopetetaan, asetuksia ei enää voi kopioida uuteen aikatauluun. 
 
-**Huomautus:** Jos yksi tai useampi vastaaja ei ole täyttänyt vastauslomaketta, mutta haluat siitä huolimatta lopettaa aikataulutuksen, poista vastaaja tai vastaajat **Suunniteltu vastausistunto** -sivun luettelosta. Sen jälkeen voit lopettaa aikataulun.
+> **Huomautus**
+>  Jos yksi tai useampi vastaaja ei ole täyttänyt vastauslomaketta, mutta haluat siitä huolimatta lopettaa aikataulutuksen, poista vastaaja tai vastaajat **Suunniteltu vastausistunto** -sivun luettelosta. Sen jälkeen voit lopettaa aikataulun.
 
 ## <a name="completing-questionnaires"></a>Kyselylomakkeiden täyttäminen
 Kun kyselylomake on suunniteltu ja jaettu, valitut vastaajat voivat täyttää sen. Voit täyttää kyselylomakkeita kahdesta käytettävissäsi olevasta sijainnista:
@@ -132,5 +140,7 @@ Kyselylomakkeet voidaan määrittää tietyille käyttäjille tai käyttäjäryh
 [Kyselylomakkeiden käyttäminen](questionnaires.md)
 
 [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
+
+
 
 

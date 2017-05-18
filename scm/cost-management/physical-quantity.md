@@ -3,7 +3,7 @@ title: Varasto-objektin arvot
 description: "Tässä artikkelissa on tietoja siitä, miten varasto-objektien arvot lasketaan."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 09 - 05
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,19 +19,31 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 7a0a2af2094e3e5be757d3dd82255769677b96ea
-ms.openlocfilehash: 8898d5d91ffb4f73ea68f1251e1a99440e81bcd4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d177903e3c79226e90a1f2eb3d55e3c670446a44
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="inventory-object-values"></a>Varasto-objektin arvot
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja siitä, miten varasto-objektien arvot lasketaan. 
 
-Fyysinen määrä -nimisen uuden toiminnon avulla näet tietyn varasto-objektin arvot. Kustannusobjekti edustaa sen yksikön tasoa, jolla varaston kirjanpito suoritetaan. Lisätietoja kustannusobjekteista on kohdassa [Kustannusobjektit](cost-object.md). Saat tietyn varasto-objektin arvot näkyviin valitsemalla **Fyysinen määrä** **Kustannusobjekti** -sivulla. Varasto-objektin arvo lasketaan seuraavasti: Varasto-objektin.Arvo = Kustannusobjektin.Keskimääräinen yksikkökustannus × Varasto-objektin.Määrä. Seuraavassa esimerkissä näytetään, miten varasto-objektin ja kustannusobjektin arvot lasketaan. Nimikkeelle A on rekisteröity kaksi tuotteen vastaanottotapahtumaa.
+**Fyysinen määrä**-nimisen uuden toiminnon avulla näet tietyn varasto-objektin arvot. 
+
+Kustannusobjekti edustaa sen yksikön tasoa, jolla varaston kirjanpito suoritetaan. Lisätietoja kustannusobjekteista on kohdassa [Kustannusobjektit](cost-object.md). 
+
+Saat tietyn varasto-objektin arvot näkyviin valitsemalla **Fyysinen määrä** **Kustannusobjekti** -sivulla. Varasto-objektin arvo lasketaan seuraavasti: 
+
+Varasto-objekti.Arvo = Kustannusobjekti.Keskimääräinen yksikkökustannus × Varasto-objekti.Määrä 
+
+Seuraavassa esimerkissä näytetään, miten varasto-objektin ja kustannusobjektin arvot lasketaan. Nimikkeelle A on rekisteröity kaksi tuotteen vastaanottotapahtumaa.
 
 -   Tuotteen vastaanotto 1: määrä = 100 kpl, summa = 1 000,00 €, toimipaikka = 1, varasto =11, eränumero = B1
 -   Tuotteen vastaanotto 2: määrä = 50 kpl, summa = 800,00 €, toimipaikka = 1, varasto =11, eränumero = B2
@@ -135,5 +147,7 @@ Seuraava taulukko sisältää varasto-objektin laskennan tulokset. Voit tarkaste
 [Kustannusmerkinnät](cost-entries.md)
 
 [Uutta ja muuttunutta Microsoft Dynamics AX:ssä](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+
+
 
 

@@ -3,7 +3,7 @@ title: "Kustannushinnan käyttökeskiarvo"
 description: "Varaston sulkemisprosessi selvittää varasto-ottotapahtumat vastaanottotapahtumiksi nimikkeen nimikemalliryhmässä valitun varastonarvostusmenetelmän perusteella. Ennen kuin varasto suljetaan, järjestelmä laskee kustannushinnan käyttökeskiarvon, jota käytetään yleensä varasto-ottotapahtumien kirjaamisessa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-07 15 - 11 - 47
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,19 +18,25 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 685dfaa877699db3c36cc1ea77d956461f8e68ec
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 53690038068d7a2cae43585fd2eb896d662ee3e4
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="running-average-cost-price"></a>Kustannushinnan käyttökeskiarvo
 
+[!include[banner](../includes/banner.md)]
+
+
 Varaston sulkemisprosessi selvittää varasto-ottotapahtumat vastaanottotapahtumiksi nimikkeen nimikemalliryhmässä valitun varastonarvostusmenetelmän perusteella. Ennen kuin varasto suljetaan, järjestelmä laskee kustannushinnan käyttökeskiarvon, jota käytetään yleensä varasto-ottotapahtumien kirjaamisessa.
 
-Järjestelmä arvioi nimikkeen kustannushinnan käyttökeskiarvon käyttämällä seuraavaa kaavaa: arvioitu hinta = (fyysinen summa + rahoitussumma) / (fyysinen määrä + rahoitusmäärä)
+Järjestelmä arvioi nimikkeen juoksevan keskimääräisen kustannushinnan seuraavan kaavan avulla: 
+
+Arvioitu hinta = (fyysinen summa + rahoituksellinen summa) / (fyysinen määrä + rahoituksellinen määrä)
 
 ## <a name="using-the-running-average-cost-price"></a>Kustannushinnan käyttökeskiarvon käyttäminen
 Seuraava taulukko osoittaa, milloin järjestelmä kirjaa varastotapahtumia käyttämällä kustannushinnan käyttökeskiarvoa ja milloin käytetään kustannushintaa, joka on määritetty nimikkeen päätietueessa.
@@ -41,7 +47,9 @@ Seuraava taulukko osoittaa, milloin järjestelmä kirjaa varastotapahtumia käyt
 | Osoittaja\* tai nimittäjä\*\* on negatiivinen tai molemmat ovat negatiivisia. | Nro                                                       | Kyllä                                                               |
 | Nimittäjä\*\* on 0 (nolla).                        | Nro                                                       | Kyllä                                                               |
 
-\* Osoittaja = (fyysinen summa + rahoitussumma) \*\* nimittäjä = (fyysinen määrä + rahoitusmäärä) **Huomautus**: Jos nimikkeelle ei ole valittu **Sisällytä fyysinen arvo** -vaihtoehtoa, järjestelmä käyttää nollaa (0) sekä fyysiselle summalle että fyysiselle määrälle. Tietoja tästä vaihtoehdosta on ohjeaiheessa [Sisällytä fyysinen arvo](include-physical-value.md).
+\*Osoittaja = (fyysinen summa + rahoituksellinen summa) \*\* nimittäjä = (fyysinen määrä + rahoituksellinen määrä) 
+
+**Huomautus:** Jos nimikkeelle ei ole valittu **Sisällytä fyysinen arvo** -vaihtoehtoa, järjestelmä käyttää nollaa (0) sekä fyysiselle summalle että fyysiselle määrälle. Tietoja tästä vaihtoehdosta on ohjeaiheessa [Sisällytä fyysinen arvo](include-physical-value.md).
 
 ## <a name="avoiding-pricing-amplification"></a>Hinnoittelun paisumisen välttäminen
 Harvoissa tapauksissa järjestelmä hinnoittelee useita varasto-ottoja, ennen kuin käytössä on tarpeeksi vastaanottoja, joihin hinnan voi perustaa. Tässä skenaariossa kustannushinnan käyttökeskiarvon arviot saattavat paisua liikaa. Seuraavalla tavalla voit kuitenkin välttää hintojen paisumisen tai pienentää sen vaikutuksia. **Skenaario** Seuraavat tapahtumat ilmenevät nimikkeelle, jolle olet valinnut **Sisällytä fyysinen arvo** -vaihtoehdon:
@@ -50,7 +58,11 @@ Harvoissa tapauksissa järjestelmä hinnoittelee useita varasto-ottoja, ennen ku
 2.  Otat varastosta rahoituksellisesti määrän 200.
 3.  Vastaanotat määrän 101 fyysisesti hinnalla 202,00 dollaria
 
-Kun tutkit nimikkeen arvioitua kustannushinnan käyttökeskiarvoa, odotat kustannushinnan olevan 1,51 Yhdysvaltain dollaria. Seuraavan kaavan mukaan kustannushinnan käyttökeskiarvo onkin 102,00 Yhdysvaltain dollaria: arvioitu hinta = \[202 + (-100)\] ÷ \[101 + (-100)\] = 102 / 1 = 102 hinnoittelun vahvistus. Tämä johtuu siitä, että kun vaiheessa 2 varastosta otetaan rahoituksellisesti 200 nimikettä, järjestelmän on pakko hinnoitella 100 nimikettä, ennen kuin sen käytössä on yhtään vastaavia vastaanottoja. Tämä johtaa negatiiviseen varastoon. Järjestelmä arvioi yksikköhinnaksi 1,00 Yhdysvaltain dollari, kuten on odotettua, mutta kun vastaavat sata vastaanottoa saapuvat, niiden yksikköhinta onkin 2,00 Yhdysvaltain dollaria. **Huomautus:** Vaikka varasto-otot johtavat negatiiviseen varastoon, varasto on positiivinen, kun varasto-oton hinta lasketaan. Siksi käytetään kustannushinnan käyttökeskiarvoa nimikkeen päätietueen kustannushinnan sijaan. Tällöin järjestelmän varaston arvon vastakirjaus on 100,00 Yhdysvaltain dollaria. Vaikka vastakirjaus muodostuu yli sadasta kappaleesta ja kunkin yksikön vastakirjaus on 1,00 Yhdysvaltain dollari, varastossa on vain yksi kappale. Tästä syystä 100 Yhdysvaltain dollarin vastakirjaus kohdistetaan tähän yhteen kappaleeseen. Tämä taas johtaa arvioidun kustannushinnan liioiteltuun kasvuun. **Huomautus:** Huomaa, että jos skenaarion vaiheet 2 ja 3 tapahtuvat eri järjestyksessä, 200 nimikettä otetaan varastosta 1,51 Yhdysvaltain dollarin yksikköhintaan ja varastoon jää yksi kappale, jonka yksikköhinta on 1,51 Yhdysvaltain dollaria. Koska hinnoittelu voi paisua negatiivisen varaston yhteydessä, sitä on vaikea välttää seuraavissa tapauksissa:
+Kun tutkit nimikkeen arvioitua kustannushinnan käyttökeskiarvoa, odotat kustannushinnan olevan 1,51 Yhdysvaltain dollaria. Seuraavan kaavan mukaan kustannushinnan käyttökeskiarvo onkin 102,00 Yhdysvaltain dollaria: arvioitu hinta = \[202 + (-100)\] ÷ \[101 + (-100)\] = 102 / 1 = 102 hinnoittelun vahvistus. Tämä johtuu siitä, että kun vaiheessa 2 varastosta otetaan rahoituksellisesti 200 nimikettä, järjestelmän on pakko hinnoitella 100 nimikettä, ennen kuin sen käytössä on yhtään vastaavia vastaanottoja. Tämä johtaa negatiiviseen varastoon. Järjestelmä arvioi yksikköhinnaksi 1,00 Yhdysvaltain dollari, kuten on odotettua, mutta kun vastaavat sata vastaanottoa saapuvat, niiden yksikköhinta onkin 2,00 Yhdysvaltain dollaria. 
+
+**Huomautus:** Vaikka varasto-otot johtavat negatiiviseen varastoon, varasto on positiivinen, kun varasto-oton hinta lasketaan. Siksi käytetään kustannushinnan käyttökeskiarvoa nimikkeen päätietueen kustannushinnan sijaan. Tällöin järjestelmän varaston arvon vastakirjaus on 100,00 Yhdysvaltain dollaria. Vaikka vastakirjaus muodostuu yli sadasta kappaleesta ja kunkin yksikön vastakirjaus on 1,00 Yhdysvaltain dollari, varastossa on vain yksi kappale. Tästä syystä 100 Yhdysvaltain dollarin vastakirjaus kohdistetaan tähän yhteen kappaleeseen. Tämä taas johtaa arvioidun kustannushinnan liioiteltuun kasvuun. 
+
+**Huomautus:** Huomaa, että jos skenaarion vaiheet 2 ja 3 tapahtuvat eri järjestyksessä, 200 nimikettä otetaan varastosta 1,51 Yhdysvaltain dollarin yksikköhintaan ja varastoon jää yksi kappale, jonka yksikköhinta on 1,51 Yhdysvaltain dollaria. Koska hinnoittelu voi paisua negatiivisen varaston yhteydessä, sitä on vaikea välttää seuraavissa tapauksissa:
 
 -   Varasto-ottohinnat on arvioitava varaston arvon ja määrän perusteella.
 -   Varaston arvoa ja määrää on muokattava varasto-ottojen ja vastaanottojen perusteella.
@@ -63,5 +75,7 @@ Jos liiketoimintamalli sallii seuraavat käytännöt, voit niiden avulla vältt�
 -   Jos *et* valitse nimikkeelle **Sisällytä fyysinen arvo** -vaihtoehtoa, poista **Rahoituksellinen negatiivinen varasto** -valintaruudun valinta **Nimikemalliryhmät**-sivulla.
 
 Huomaa lisäksi, että fyysisten tapahtumien määrä sekä fyysisten ja rahoituksellisten hintojen välinen ero rajoittavat fyysisen varaston enimmäisvastakirjausta. Jos kaikki fyysiset tapahtumat päivitetään lopulta taloudellisesti, fyysinen arvo ei voi nousta liian suureksi. Huomaa, että paisumisilmiö pienenee huomattavasti, kun jaksotettu vastakirjaus jaetaan usean varastossa olevan kappaleen välille yhden kappaleen sijaan.
+
+
 
 

@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: af7e7288f741b3c519227e2778c4c4311c3a2012
-ms.openlocfilehash: 8af663b47117759ed3b2e2ed8eee85ae4df100d1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f80d5d49cae3107390a605e9605d8af65bf2342d
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="use-the-excel-add-in"></a>Excel-lisäosan käyttö
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä ohjeaiheessa kerrotaan, kuinka avaat yksikkötietoja Microsoft Excelissä ja tarkastelet, päivität ja muokkaat tietoja Microsoft Dynamicsin Excel-lisäosalla. Voit aloittaa yksikkötietojen avaamisen joko Excelistä tai Microsoft Dynamics 365 for Operationsista.
 
@@ -44,7 +48,8 @@ Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että ty�
 2.  Etsi Office-kaupasta avainsanalla "Dynamics" ja valitse **Lisää** **Microsoft Dynamicsin Office-lisäosa** (Excel-lisäosa).
 3.  Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan** voidaksesi käyttää sitä. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
 4.  Avaa **Asetukset**-ruutu napsauttamalla **Lisää palvelimen tiedot** -painiketta.
-5.  Kopioi kohteena olevan Dynamics 365 for Operations -ilmentymän URL-osoite, liitä se **Palvelimen URL-osoite** -kenttään ja poista kaikki teksti isäntänimen jälkeen (poista esimerkiksi  **/?cmp=usmf&mi=CustTableListPage**). URL-Osoitteen tulisi sisältää vain isäntänimi (esimerkiksi **https://xxx.dynamics.com**).
+5.  Kopioi kohteena olevan Dynamics 365 for Operations -ilmentymän URL-osoite, liitä se **Palvelimen URL-osoite** -kenttään ja poista kaikki teksti isäntänimen jälkeen. URL-osoitteessa tulisi olla vain isäntänimi.
+Jos URL-osoite on esimerkiksi https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage, poista kaikki paitsi **https://xxx.dynamics.com**.
 6.  Vahvista muutokset napsauttamalla **OK** ja sitten **Kyllä**. Excel-lisäosa käynnistyy uudelleen ja lataa metatiedot. **Rakenne**-painike on nyt käytettävissä. Jos Excel-lisäosassa on **Lataa sovelmat** -painike, et ehkä ole kirjautunut oikeana käyttäjänä. Lisätietoja on tämän ohjeaiheen "Vianmääritys"-osan kohdassa "Lataa sovelmat -painike on näkyvissä".
 7.  Valitse **Rakenne**. Excel-lisäosa hakee yksikön metatiedot.
 8.  Valitse **Lisää taulukko**. Näkyviin tulee luettelo yksiköistä. Yksiköt näytetään muodossa "Nimi – Otsikko".
@@ -59,14 +64,17 @@ Kun Excel-lisäosa lukee yksikön tiedot työkirjaan, voit päivittää tiedot m
 ## <a name="edit-entity-data-in-excel"></a>Muokkaa yksikön tietoja Excelissä
 Voit muuttaa yksikön tietoja tarpeidesi mukaisesti ja julkaista muutokset takaisin valitsemalla Excel-lisäosassa **Julkaise**. Jos haluat muokata tietuetta, valitse työkirjassa solu ja muuta sitten solun arvoa. Jos haluat lisätä uuden tietueen, seuraa jotakin näistä vaiheista:
 
--   Napsauta työkirjaa ja valitse sitten **Uusi** Excel-lisäosassa.
--   Valitse työkirjan viimeinen rivi ja paina sarkainpainiketta, kunnes kohdistin siirtyy pois rivin viimeisestä sarakkeesta ja luo uuden rivin.
--   Napsauta työkirjan alapuolella olevaa riviä ja aloita tietojen syöttäminen soluun. Kun siirrät kohdistuksen pois solusta, työkirja laajentuu uudelle riville.
+-   Napsauta tietolähdetauluun ja valitse sitten **Uusi** Excel-lisäosassa.
+-   Valitse tietolähdetaulun viimeinen rivi ja paina sarkainpainiketta, kunnes kohdistin siirtyy pois rivin viimeisestä sarakkeesta ja luo uuden rivin.
+-   Napsauta tietolähdetaulun alapuolella olevaa riviä ja aloita tietojen syöttäminen soluun. Kun siirrät kohdistuksen pois solusta, taulu laajentuu uudelle riville.
+-   Napsauta otsikkotietueiden kenttäsidoksia varten jotakin kentistä ja sitten **Uusi** Excel-apuohjelmassa.
 
+Huomaa, että uusi tietue luodaan vain, jos kaikki avain- ja pakolliset kentät on sidottu työkirjassa tai jos oletusarvot on täytetty suodatusehdon avulla.
 Jos haluat poistaa tietueen, seuraa jotakin näistä vaiheista:
 
 -   Napsauta hiiren kakkospainikkeella poistettavan rivin numeroa työkirjan rivin vieressä ja valitse sitten **Poista**.
 -   Napsauta hiiren kakkospainikkeella poistettavaa riviä ja valitse sitten **Poista** &gt; **Taulukon rivit**.
+Jos tietolähteitä on lisätty liittyvinä, otsikko julkaistaan ennen rivejä. Jos muiden tietolähteiden välillä on riippuvaisuuksia, joudut ehkä vaihtamaan oletusjulkaisujärjestystä. Julkaisujärjestystä voit muuttaa Excel-apuohjelmassa napsauttamalla **Asetukset**-painiketta (rattaan kuva). Valitse sitten **Data Connector** -pikavälilehdessä **Määritä julkaisujärjestys**.
 
 ## <a name="add-or-remove-columns"></a>Lisää tai poista sarakkeita
 Voit säätää työkirjaan automaattisesti lisättäviä sarakkeita suunnittelijasovelluksessa.
@@ -79,14 +87,17 @@ Voit säätää työkirjaan automaattisesti lisättäviä sarakkeita suunnitteli
     -   Voit poistaa kentän **Valitut kentät** -luettelosta napsauttamalla kenttää ja valitsemalla sitten **Poista**. Vaihtoehtoisesti voit kaksoisnapsauttaa kenttää.
     -   Jos haluat muuttaa kenttien järjestystä, napsauta kenttää **Valitut kentät** -luettelosta ja sitten **Ylös** tai **Alas**.
 
-5.  Ota käyttöön tietolähteeseen tehdyt muutokset valitsemalla **Päivitä**. Valitse sitten **Valmis** sulkeaksesi suunnitteluohjelman. Jos olet lisännyt kentän (sarakkeen), valitse **Päivitä**, niin ohjelma hakee päivitetyn tietojoukon.
+5. Ota käyttöön tietolähteeseen tehdyt muutokset valitsemalla **Päivitä**. Valitse sitten **Valmis** sulkeaksesi suunnitteluohjelman. 
+6. Jos olet lisännyt kentän (sarakkeen), valitse **Päivitä**, niin ohjelma hakee päivitetyn tietojoukon.
 
-## <a name="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting"></a>[Vianmääritys](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Vianmääritys
+## <a name="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting"></a>[](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Vianmääritys
 Tietyt ongelmat ovat ratkaistavissa muutaman helpon vaiheen kautta.
 
 -   **Lataa sovelmat -painike on näkyvissä.** Jos Excel-lisäosassa on **Lataa sovelmat** -painike kirjautumisen jälkeen, et ehkä ole kirjautunut oikeana käyttäjänä. Ratkaise ongelma varmistamalla, että Excel-lisäosan oikeassa yläkulmassa on oikea käyttäjänimi. Jos näkyvillä on väärä käyttäjänimi, napsauta sitä, kirjaudu ulos ja kirjaudu takaisin sisään.
 -   **Näyttöön tulee virhesanoma "Kielletty".** Jos näyttöön tulee virhesanoma "Kielletty", kun Excel-lisäosa lataa metatietoja, Excel-lisäosaan kirjautuneella tilillä ei ole käyttöoikeutta kohteena olevaan palveluun, ilmentymään tai tietokantaan. Ratkaise ongelma varmistamalla, että Excel-lisäosan oikeassa yläkulmassa on oikea käyttäjänimi. Jos näkyvillä on väärä käyttäjänimi, napsauta sitä, kirjaudu ulos ja kirjaudu takaisin sisään.
 -   **Excelin päällä näkyy tyhjä verkkosivu.** Jos kirjautumisen aikana avautuu tyhjä verkkosivu, tili vaatii AD FS:n käytön, mutta käytössä oleva Excel-versio ei ole tarpeeksi uusi, että kirjautumisikkunan voisi ladata. Ratkaise ongelma päivittämällä käytössä oleva Excel-versio. Jos olet yritys, jolla on käytössä hidas päivityskanava, voit päivittää Excel-version käyttämällä [Office Deployment Tool -työkalua](https://technet.microsoft.com/library/jj219422.aspx) [vaihtaaksesi hitaan päivityskanavan nykyiseen päivityskanavaan](https://technet.microsoft.com/library/mt455210.aspx).
+
+
 
 
 

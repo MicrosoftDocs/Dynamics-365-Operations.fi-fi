@@ -1,9 +1,9 @@
 ---
 title: "Taloushallinnan raportointi Dynamics 365 for Operations -järjestelmässä"
 description: "Microsoft Dynamics 365 for Operations -järjestelmän talousraportoinnilla rahoitus- ja liiketoiminta-asiantuntijat voivat luoda ja ylläpitää raportteja sekä ottaa niitä käyttöön ja tarkastella niitä. Koska perinteisen raportoinnin rajoitukset eivät päde, voit suunnitella tehokkaasti erilaisia raportteja."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 31 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 519b3d3fb53b20d0014c97bcb1b9b21802a376d6
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fee79dad870bfbf8852198c7e825cfaa95a8d10b
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="financial-reporting-for-dynamics-365-for-operations"></a>Taloushallinnan raportointi Dynamics 365 for Operations -järjestelmässä
+
+[!include[banner](../includes/banner.md)]
+
 
 Microsoft Dynamics 365 for Operations -järjestelmän talousraportoinnilla rahoitus- ja liiketoiminta-asiantuntijat voivat luoda ja ylläpitää raportteja sekä ottaa niitä käyttöön ja tarkastella niitä. Koska perinteisen raportoinnin rajoitukset eivät päde, voit suunnitella tehokkaasti erilaisia raportteja.
 
@@ -36,15 +40,14 @@ Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talou
 | Komponentti        | Toiminnot                                                                                                                                                                                                                                                                           | Lisätiedot                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Report Designer  | Luo raportin rakenneosia, joita yhdistämällä voidaan määrittää ja luoda raportti. Ohjattu raportin luominen ohjaa kokemattomampia käyttäjiä suunnitteluprosessissa. Kokeneet käyttäjät voivat luoda tarvittaessa uusia raportin rakenneosia tai muokata aiemmin luotuja rakenneosia. |                                                                                                 |
-| WWW-katseluohjelma       | Tarkastele talousraportteja selaimessa. Verkkokatseluohjelmaa varten ei tarvitse asentaa talousraportoinnin palvelinosia.                                                                                                                                                        | [WWW-katseluohjelma](financial-reporter-designer-web-client.md)            |
-| Raportin aikataulut | Ajoita yksi raportti tai raporttiryhmä siten, että se luodaan säännöllisesti.                                                                                                                                                                                          | [Luo raportti](/dynamics365/operations/financials/general-ledger/generate-financial-report) |
+| Raportin aikataulut | Ajoita yksi raportti tai raporttiryhmä siten, että se luodaan säännöllisesti.                                                                                                                                                                                          | [Raportin luominen](generate-financial-report.md) |
 
 ## <a name="features"></a>Ominaisuudet
 <table>
 <thead>
 <tr class="header">
 <th>Ominaisuus</th>
-<th>Kuvaus</th>
+<th>kuvaus</th>
 </tr>
 </thead>
 <tbody>
@@ -78,13 +81,15 @@ Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talou
 <li>Lisää dimensiosuodattimia rajoittamaan raportin sisältö tiettyyn dimensioon tai dimensioyhdistelmään.</li>
 <li>Lisää määritesuodattimia rajoittamaan raportin sisältö tiettyyn määritteeseen tai määriteyhdistelmään.</li>
 </ul>
-Lisätietoja on artikkelin <a href="https://technet.microsoft.com/en-us/library/dn469079.aspx">Työpöydän katseluohjelmaliittymä</a> kohdassa Vuorovaikutteiset osat ja siirtymistoiminnot.</td>
+</td>
 </tr>
 </tbody>
 </table>
 
 #<a name="see-also"></a>Lisätietoja
+[Raportin luominen](generate-financial-report.md)
 
-[Luo talousraportti]((dynamics365\operations\financials\general-ledger\generate-financial-report)
+
+
 
 

@@ -18,10 +18,11 @@ ms.search.industry: Product information
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: a9c991a5afaebd10b8812dfc1d67120ed4ebdfd2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 809b853634aa4a44b8aa3aebea317f6bc47da697
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -41,7 +42,7 @@ Voit luoda käännökset seuraaville tuotteeseen liittyville tiedoille:
 -   Tuotemääritearvojen kuvaukset, kutsumanimet ja ohjeteksti.
 -   Tuotedimensioarvojen nimet ja kuvaukset.
 
-Voit kääntää tuotteeseen liittyvät tiedot mille tahansa kielelle, joka on käytettävissä ** Tekstin käännös** -sivulla. Lisätietoja on seuraavassa osassa **"Tuotekohtaisten tietojen käännösten luominen"**.
+Voit kääntää tuotteeseen liittyvät tiedot mille tahansa kielelle, joka on käytettävissä **Tekstin käännös** -sivulla. Lisätietoja on seuraavassa osassa **"Tuotekohtaisten tietojen käännösten luominen"**.
 
 ## <a name="where-can-i-view-the-translated-information"></a>Missä näen käännetty tietoja?
 Voit tarkastella minkä tahansa ulkoisen lähdeasiakirjan, kuten laskun, tuotteisiin liittyvien tietojen käännöksiä, jos asiakirja käyttää kieltä, jonka käännökset ovat käytettävissä.
@@ -63,7 +64,7 @@ Luo tuotemääritteille käännöksiä noudattamalla seuraavia ohjeita:
 Luo tuotedimensioiden arvoille käännöksiä noudattamalla seuraavia ohjeita:
 1.  Valitse **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Vapautetut tuotteet**.
 2.  Valitse tuote ja valitse sitten **Tuotedimensiot** .
-3.  Valitse jokin tuotemallin dimensioiden linkeistä: ** Konfiguroinnit** **Koot **, **Värit** tai **Tyyli**.
+3.  Valitse jokin tuotemallin dimensioiden linkeistä: **Konfiguroinnit** **Koot**, **Värit** tai **Tyyli**.
 4.  Valitse dimensioarvo ja sitten **Käännä**.
 5.  **Tekstin käännös** -sivulta **kieli** , valitse kieli. Voit lisätä lisää kieliä laajentamalla **Language** -kentän ja napsauttamalla sitten **OK**.
 6.  **Käännetty teksti** -ryhmässä kirjoita käännökset **Nimi** ja **Kuvaus** -kenttiin.
@@ -116,7 +117,7 @@ Dimensioarvo, joka on liitetty tuotteeseen dimensiovariantin ryhmän välityksel
 Luo dimension arvoryhmä noudattamalla seuraavia ohjeita:
 1.  Valitse **tuotetietojen hallinta** &gt; **asetukset** &gt; **muuttujaryhmät**.
 2.  Valitse **koon** **ryhmät**, **väriryhmät**, tai **tyyliryhmät**.
-3.  Valitse **Uusi**, ja kirjoita sitten ryhmän nimi **Koko****ryhmä**, **Väriryhmä**, tai **Tyyliryhmä **-kentässä. Valitse **Koot**, **Värit** tai **Tyylit** jos haluat luoda rivit ryhmille.
+3.  Valitse **Uusi**, ja kirjoita sitten ryhmän nimi **Koko****ryhmä**, **Väriryhmä**, tai **Tyyliryhmä**-kentässä. Valitse **Koot**, **Värit** tai **Tyylit** jos haluat luoda rivit ryhmille.
 4.  **Koon** **ryhmän** rivit, **värin** **ryhmän** **rivit**, tai **tyyliryhmän rivit** -sivulla valitse **uusi**, ja luo koot, värit ja tyylit ryhmille.
 
 Hallinnoi dimension arvoryhmän arvojen käännöksiä noudattamalla seuraavia ohjeita:

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 1bc458d58834be1e2e9b602619f76424b3bb449b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 62dcc8a9b17ad044ac63080a94593a5f6ae2f182
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ Työntekijöihin liittyvät kulut usein muodostavat suuren osa organisaation kul
 
 Toimien ennustaminen käyttää kolmea pääkomponenttia oikeiden toimien kuluja koskevien budjettisummien tarjoamiseen. Nämä summat voidaan sitten tuoda budjettisuunnitelmaan budjettilaskelmia varten. 
 
-Pääkomponentti on ** ennusteen toimi**, joka edustaa kaikkia yksittäiseen toimeen liittyviin kuluihin koskevia tietoja. Voit luoda useita versioita ennusteen toimesta määrittämällä kullekin versiolle eri budjettiskenaarion. Useiden versioiden käyttäminen mahdollistaa iteroivan lähestymistavan budjetointiin sekä entä–jos-skenaarioiden vertailun. Kullakin ennusteen toimella on vastaava toimi Henkilöstöhallinnossa.
+Pääkomponentti on **ennusteen toimi**, joka edustaa kaikkia yksittäiseen toimeen liittyviin kuluihin koskevia tietoja. Voit luoda useita versioita ennusteen toimesta määrittämällä kullekin versiolle eri budjettiskenaarion. Useiden versioiden käyttäminen mahdollistaa iteroivan lähestymistavan budjetointiin sekä entä–jos-skenaarioiden vertailun. Kullakin ennusteen toimella on vastaava toimi Henkilöstöhallinnossa.
 
 **budjetin kustannustaso** on asetusten komponentti, joka edustaa määrättyä toimeen liittyvää kustannusta, kuten peruspalkka, työnantajan maksama sairausvakuutus, matkapuhelinedut, ja niin edelleen. Budjetin kustannustaso sisältää päätilin, jota käytetään kustannuksiin ja laskentavaihtoehtoihin. Kukin budjetin kustannustaso voidaan määrittää useille ennusteen toimille. 
 
@@ -98,7 +99,7 @@ Kompensaatioryhmässä valittua ansion kustannustasoa käytetään, kun luot ans
 
 Tarkinta budjettisuunnittelua varten voit luoda ennusteen toimia käyttämällä Microsoft Dynamics 365 for Operationsissa aiemmin luotujen toimien tietoja riippumatta siitä, ovatko toimet kyseisellä hetkellä täytettyjä vai ei. 
 
-**Lisää aiemmin luotuja toimia** -toiminto näyttää kaikki organisaation toimet. Asettamalla ** Alkaen**-päivämäärän voit muuttaa toimien luetteloa niin, että se sisältää toimet, jotka olivat olemassa tiettynä menneisyyden päivänä tai yleisemmin, tulevaisuudessa (esimerkiksi seuraavan budjettijakson alussa). Valitse budjettisuunnitteluprosessi ja budjettisuunnitelman skenaario, valitse toimet luettelosta ja valitse sitten **OK** luodaksesi ennusteen toimet valituille toimille. Huomaa, että voit luoda vain yhden ennusteen toimen kullekin aiemmin luodulle toimelle budjettisuunnitteluprosessissa ja -skenaariossa. Voit kuitenkin luoda lisäversioita määrittämällä eri budjettiskenaarioita. 
+**Lisää aiemmin luotuja toimia** -toiminto näyttää kaikki organisaation toimet. Asettamalla **Alkaen**-päivämäärän voit muuttaa toimien luetteloa niin, että se sisältää toimet, jotka olivat olemassa tiettynä menneisyyden päivänä tai yleisemmin, tulevaisuudessa (esimerkiksi seuraavan budjettijakson alussa). Valitse budjettisuunnitteluprosessi ja budjettisuunnitelman skenaario, valitse toimet luettelosta ja valitse sitten **OK** luodaksesi ennusteen toimet valituille toimille. Huomaa, että voit luoda vain yhden ennusteen toimen kullekin aiemmin luodulle toimelle budjettisuunnitteluprosessissa ja -skenaariossa. Voit kuitenkin luoda lisäversioita määrittämällä eri budjettiskenaarioita. 
 
 Jos budjetin kustannustasot on määritetty toimelle Henkilöstöhallinnossa, kyseiset budjetin kustannustasot on myös määritetty ennusteen toimelle ja ne käyttävät oletussummia. Ennusteen toimen **Määritetty työntekijä** -kentän asetus on sen työntekijän nimi, joka on määritetty toimelle, jos työntekijä on määritetty. Tämä on yksinkertainen tekstikenttä. Suoraa linkkiä ei luoda. 
 
@@ -163,7 +164,7 @@ Jos valitset **Muodosta palkankorotukset** toisen kerran, prosessi suoritetaan u
 
 Ennusteen toimien päivitykset voivat tulla myös muilta alueilta, kuten budjetin kustannustasojen ja kompensaatioryhmien asetussivuilta. Voit myös muokata ennusteen toimia joukkopäivitysprosessin avulla. 
 
-Kaksi vaihtoehtoa on käytettävissä** Budjetin kustannustaso** -asetussivulla: **Lisää toimiin** ja **Päivitä toimia**. **Lisää toimiin** -asetus lisää budjetin kustannustason valittuihin ennusteen toimiin. Jos kustannustaso on jo määritetty ennusteen toimelle, tämä ennusteen toimi ohitetaan. **Päivitä toimet** -asetus koskee valittujen ennusteen toimien nykyisiä arvoja (päätili, prosentti, vuosittainen summa jne.) 
+Kaksi vaihtoehtoa on käytettävissä**Budjetin kustannustaso** -asetussivulla: **Lisää toimiin** ja **Päivitä toimia**. **Lisää toimiin** -asetus lisää budjetin kustannustason valittuihin ennusteen toimiin. Jos kustannustaso on jo määritetty ennusteen toimelle, tämä ennusteen toimi ohitetaan. **Päivitä toimet** -asetus koskee valittujen ennusteen toimien nykyisiä arvoja (päätili, prosentti, vuosittainen summa jne.) 
 
 Kullakin prosessilla on samanlainen sivu, josta voit valita ennusteen toimia. **Lisää toimiin** -sivulla näytetään kaikki valittavissa olevat ennusteen toimet, kun taas **Päivitä toimet** -sivulla näytetään vain ne ennusteen toimet, joille on jo määritetty budjetin kustannustaso. (Näin ollen **Päivitä toimet** -sivulla voit selvittää, mihin ennusteen toimiin on jo liitetty kustannustaso.) Siirrät ennusteen toimet ylemmästä ruudukosta alempaan ruudukkoon sisällyttääksesi ne päivitykseen. 
 

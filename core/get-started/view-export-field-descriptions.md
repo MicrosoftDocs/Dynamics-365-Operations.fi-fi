@@ -3,7 +3,7 @@ title: Kenttien kuvausten tarkasteleminen ja vieminen
 description: "Tässä artikkelissa käsitellään kenttien kuvauksien näyttämistä ja kuvauksien tuomista Kenttien kuvaus -sivun avulla."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: d4fc9cdee0e2160e363f9defcf6bdbc57ed4db74
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3029cb441d124e6e5aa427f7fcd95540700254c6
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Kenttien kuvausten tarkasteleminen ja vieminen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa käsitellään kenttien kuvauksien näyttämistä ja kuvauksien tuomista Kenttien kuvaus -sivun avulla.
 
@@ -80,11 +84,11 @@ Tässä osassa on tietoja, jotka on sellaisten ongelmien vianmäärityksessä, j
 
 ### <a name="i-cant-find-a-field-description"></a>Kentän kuvausta ei löydy.
 
-Monimutkaisempia kenttiä varten lisätään parhaillaan kuvauksia. Jos tarvitset tiettyä kenttää koskevaa apua, ilmoita siitä meille lisäämällä kommentti tähän Wiki-artikkeliin.
+Monimutkaisempia kenttiä varten lisätään parhaillaan kuvauksia. Jos tarvitset tiettyä kenttää koskevaa apua, ilmoita siitä meille lisäämällä kommentti tähän aiheeseen.
 
 ### <a name="the-field-description-isnt-helpful"></a>Kuvauksen kentästä ei ole apua
 
-Ilmoita meille lisäämällä kommentti tähän Wiki-artikkeliin. Jos mahdollista, kerro, mitä lisätietoja tarvitset.
+Ilmoita meille lisäämällä kommentti tähän aiheeseen. Jos mahdollista, kerro, mitä lisätietoja tarvitset.
 
 ### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>En löydä kenttää Kenttien kuvaukset -sivulla
 
@@ -97,6 +101,9 @@ Lisätietoja erilaisista sivujen etsimistavoista on aiemmin tässä artikkelissa
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Mukauta kenttää -ohje](https:/docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/customize-field-help.md)
+[Mukauta kenttää -ohje](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+
+
+
 
 

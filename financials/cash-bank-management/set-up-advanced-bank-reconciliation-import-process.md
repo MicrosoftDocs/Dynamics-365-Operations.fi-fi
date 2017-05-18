@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eab840b2974f4e9e8cf542c146482ba8e4239079
-ms.openlocfilehash: acf7bacf6e95725024ff0a542a059349593d01a0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 51f45ce0953f31e0573833ba41d9e0b5ac43bfbb
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -64,13 +65,13 @@ Määritä ensin ISO20022-tiliotteiden tiliotemuodon käsittelyryhmä käyttäm�
 1.  Valitse **Työtilat** &gt; **Tietojen hallinta**.
 2.  Valitse **Tuo**.
 3.  Anna muodolle nimi, kuten **ISO20022**.
-4.  Valitse **Lähdetietojen muoto **-kenttään **XML-elementti**.
+4.  Valitse **Lähdetietojen muoto**-kenttään **XML-elementti**.
 5.  Valitse **Yksikön nimi** -kenttään **Tiliotteet**.
 6.  Voit ladata tuontitiedostot valitsemalla **Lataa palvelimeen** ja siirtymällä sitten aiemmin tallentamaasi **SampleBankCompositeEntity.xml**-tiedostoon.
 7.  Kun Tiliotteet-yksikkö on ladattu ja yhdistämismääritykset ovat valmiit, valitse yksikölle **Näytä yhdistämismääritykset** -toiminto.
 8.  Tiliotteet-yksikkö on neljästä eri yksiköstä koostuva yhdistelmäyksikkö. Valitse luettelossa ensin **BankStatementDocumentEntity** ja sitten **Näytä yhdistämismääritykset** -toiminto.
 9.  Valitse **Muunnokset**-välilehdessä **Uusi**.
-10. Valitse järjestysnumerolle 1 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi** ISO20022XML-to-Reconciliation.xslt**-tiedosto. **Huomautus:** Dynamics 365 for Operationsin muunnostiedostot ovat vakiomuotoisia. Koska pankit poikkeavat usein tästä muodosta, sinun on päivitettävä tiliotemuotoon yhdistämismääritettävä muunnostiedosto. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. Valitse järjestysnumerolle 1 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **ISO20022XML-to-Reconciliation.xslt**-tiedosto. **Huomautus:** Dynamics 365 for Operationsin muunnostiedostot ovat vakiomuotoisia. Koska pankit poikkeavat usein tästä muodosta, sinun on päivitettävä tiliotemuotoon yhdistämismääritettävä muunnostiedosto. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. Valitse **Uusi**.
 12. Valitse järjestysnumerolle 2 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **BankReconciliation-to-Composite.xslt**-tiedosto.
 13. Valitse **Käytä muunnoksia**.
@@ -88,8 +89,8 @@ Viimeinen vaihe on pankkitilin täsmäytyksen lisätoimintojen ottaminen käytt�
 
 1.  Siirry kohtaan **Maksuliikenteen hallinta** &gt; **Pankkitilit**.
 2.  Valitse pankkitili ja avaa se, jolloin tiedot tulevat näkyviin.
-3.  Valitse **Täsmäytys**-välilehdessä **Pankkitilin täsmäytyksen lisätoiminnot **-asetukseksi **Kyllä**.
-4.  Määritä **Tiliotteen muotoilu **-kenttä aiemmin luomallesi muotoilulle, kuten **ISO20022**.
+3.  Valitse **Täsmäytys**-välilehdessä **Pankkitilin täsmäytyksen lisätoiminnot**-asetukseksi **Kyllä**.
+4.  Määritä **Tiliotteen muotoilu**-kenttä aiemmin luomallesi muotoilulle, kuten **ISO20022**.
 
 ## <a name="set-up-the-import-of-mt940-bank-statements"></a>Määritä MT940-tiliotteiden tuonti
 Määritä ensin MT940-tiliotteiden tiliotemuodon käsittelyryhmä käyttämällä tietoyksikkökehystä.

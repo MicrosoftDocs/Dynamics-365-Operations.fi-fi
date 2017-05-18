@@ -18,10 +18,11 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: b3e8174d07c9b9fd4210486c369c640fe07c49eb
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: abe9212372fb7429d68c1fb6b32ec1d15c20a6d7
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ Sähköisessä raportointimoduulissa on seuraavat toiminnot:
 ## <a name="concepts"></a>Käsitteet
 ### <a name="components"></a>Komponentit
 
-Sähköinen raportointi tukee kahdenlaisia osia: **tietomalleja **ja **muotoa**.
+Sähköinen raportointi tukee kahdenlaisia osia: **tietomalleja**ja **muotoa**.
 
 #### <a name="data-model-components"></a>Tietomalliosat
 
@@ -104,7 +105,7 @@ Versioita, joiden tila on joko **VALMIS** tai **JAETTU**, voidaan käyttää mui
 
 #### <a name="component-date-effectivity"></a>Komponentin päivämäärän voimassaolo
 
-Sähköisen raportointiosan versioilla on voimassaolopäivämäärät. Sähköiselle raportointiosalle voidaan määrittää** Voimaantulopäivä **määrittämään päivä, josta lähtien tämä osa on voimassa raportointiprosesseissa. Dynamics 365 for Operationsin istunnon päivämäärää käytetään määrittämään, onko komponentti suoritettavissa. Jos tiettynä päivänä on voimassa useampia kuin yksi versio, viimeisintä versiota käytetään raportointiprosessissa.
+Sähköisen raportointiosan versioilla on voimassaolopäivämäärät. Sähköiselle raportointiosalle voidaan määrittää**Voimaantulopäivä**määrittämään päivä, josta lähtien tämä osa on voimassa raportointiprosesseissa. Dynamics 365 for Operationsin istunnon päivämäärää käytetään määrittämään, onko komponentti suoritettavissa. Jos tiettynä päivänä on voimassa useampia kuin yksi versio, viimeisintä versiota käytetään raportointiprosessissa.
 
 #### <a name="component-access"></a>Komponenttien käyttöoikeudet
 
@@ -112,7 +113,7 @@ Sähköisten raportointiosien käyttöoikeus määräytyy maan/alueen ISO-koodia
 
 #### <a name="configuration"></a>Määritys
 
-Sähköiset raportointimääritykset ovat tietyn sähköisen raportointiosan paketointi, joka voi olla joko **Tietomalli **tai **Muoto**. Määritykset voivat sisältää eri versioita tietystä sähköisen raportointiosasta. Jokainen konfiguraatio merkitään tietyn konfiguraation tekijän omistamaksi. Määritysten osan **LUONNOS**-versiota voidaan muokata, jos kyseisten määritysten omistaja on valittu Dynamics 365 for Operationsin sähköisten raportointiasetusten aktiiviseksi lähteeksi. Kussakin mallimäärityksessä on **Tietomalli**-osa. Uusien muotomääritysten alkuperä (josta määritykset johdetaan) voi olla tietty tietomallin määritys. Luotu määritysmuoto tulee määrityspuuhun alkuperäisten tietomallin määritysten alikohde. Luodussa muotomäärityksessä on **Muoto**-osa. Alkuperäisten mallimääritysten **Tietomalli**-osa lisätään automaattisesti alimuodon määritykseen **Muoto**-osaan oletustietolähteenä. Sähköiset raportointimääritykset jaetaan Dynamics 365 for Operations -yrityksille.
+Sähköiset raportointimääritykset ovat tietyn sähköisen raportointiosan paketointi, joka voi olla joko **Tietomalli**tai **Muoto**. Määritykset voivat sisältää eri versioita tietystä sähköisen raportointiosasta. Jokainen konfiguraatio merkitään tietyn konfiguraation tekijän omistamaksi. Määritysten osan **LUONNOS**-versiota voidaan muokata, jos kyseisten määritysten omistaja on valittu Dynamics 365 for Operationsin sähköisten raportointiasetusten aktiiviseksi lähteeksi. Kussakin mallimäärityksessä on **Tietomalli**-osa. Uusien muotomääritysten alkuperä (josta määritykset johdetaan) voi olla tietty tietomallin määritys. Luotu määritysmuoto tulee määrityspuuhun alkuperäisten tietomallin määritysten alikohde. Luodussa muotomäärityksessä on **Muoto**-osa. Alkuperäisten mallimääritysten **Tietomalli**-osa lisätään automaattisesti alimuodon määritykseen **Muoto**-osaan oletustietolähteenä. Sähköiset raportointimääritykset jaetaan Dynamics 365 for Operations -yrityksille.
 
 #### <a name="provider"></a>Tarjoaja
 
@@ -120,7 +121,7 @@ Sähköinen raportointipalvelu on osapuolen tunniste, jota ilmaistaan sähköist
 
 #### <a name="repository"></a>Säilö
 
-Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säilöön. Tällä hetkellä tuetaan seuraavia sähköisen raportointisäilöjen tyyppejä: **Operations-resurssi **ja **LCS-projekti**. **Operations-resurssien** säilö tarjoaa mahdollisuuden käyttää määritysluetteloa, jonka Microsoft julkaisee Dynamics 365 for Operations -ratkaisun osana sähköisenä raportointipalveluna. Nämä määritykset voidaan tuoda nykyiseen Dynamics 365 for Operationsin esiintymään ja niitä voidaan käyttää sähköisessä raportoinnissa. Niitä voidaan käyttää myös muissa lisälokalisoinneissa ja -mukautuksissa. **LCS-projektin **säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin säilön rekisteröintivaiheessa. Sähköinen raportointi mahdollistaa jaettujen määritysten latausta nykyisestä Dynamics 365 for Operationsin esiintymästä tiettyyn **LCS-projektin **säilöön. Voit myös tuoda määrityksiä tietystä **LCS-projektin** säilöstä nykyiseen Dynamics 365 for Operationsin esiintymään. Vaaditut **LCS-projektin **säilöt voidaan rekisteröidä erikseen kullekin nykyisen Dynamics 365 for Operationsin esiintymän määrityspalvelulle. Kukin säilö voidaan osoittaa tiettyyn määrityspalveluun.
+Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säilöön. Tällä hetkellä tuetaan seuraavia sähköisen raportointisäilöjen tyyppejä: **Operations-resurssi**ja **LCS-projekti**. **Operations-resurssien** säilö tarjoaa mahdollisuuden käyttää määritysluetteloa, jonka Microsoft julkaisee Dynamics 365 for Operations -ratkaisun osana sähköisenä raportointipalveluna. Nämä määritykset voidaan tuoda nykyiseen Dynamics 365 for Operationsin esiintymään ja niitä voidaan käyttää sähköisessä raportoinnissa. Niitä voidaan käyttää myös muissa lisälokalisoinneissa ja -mukautuksissa. **LCS-projektin**säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin säilön rekisteröintivaiheessa. Sähköinen raportointi mahdollistaa jaettujen määritysten latausta nykyisestä Dynamics 365 for Operationsin esiintymästä tiettyyn **LCS-projektin**säilöön. Voit myös tuoda määrityksiä tietystä **LCS-projektin** säilöstä nykyiseen Dynamics 365 for Operationsin esiintymään. Vaaditut **LCS-projektin**säilöt voidaan rekisteröidä erikseen kullekin nykyisen Dynamics 365 for Operationsin esiintymän määrityspalvelulle. Kukin säilö voidaan osoittaa tiettyyn määrityspalveluun.
 
 ## <a name="supported-scenarios"></a>Tuetut skenaariot
 ### <a name="building-a-data-model"></a>Tietomallin rakentaminen
@@ -169,11 +170,11 @@ Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin muodon käyt
 ## <a name="handling-er-components"></a>Sähköisten raportointien osien käsittely
 ### <a name="publishing-an-er-component-in-lcs-to-offer-it-externally-localization"></a>Sähköisten raportointiosan tarjoaminen ulkoiseen käyttöön (lokalisointi) julkaisemalla se LCS:ssä
 
-Luodun osan (malli tai muoto) omistaja voi julkaista osan valmiin version LCS:ssä sähköisen raportoinnin avulla. Edellytetään nykyisen sähköisen raportoinnin määrityspalvelun **LCS-projektityypin **säilöä. Kun valmiin osaversion tila vaihdetaan tilasta **VALMIS** tilaksi **JAETTU**, tämä versio julkaistaan LCS:ssä. Kun osa on julkaistu LCS:ssä, kyseisen osan omistajasta tulee osan tuen palvelutarjoaja. Jos esimerkiksi tämä muoto-osa on suunniteltu luomaan lakisääteisiä sähköisiä asiakirjoja (esimerkiksi lokalisointiskenaarion mukaisesti), oletetaan, että muoto pidetään lakimuutosten mukaisena ja että palvelu julkaisee osasta uusia versioita aina, kun on uusia lakisääteisiä vaatimuksia tulee. Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin määrityksen lataaminen Lifecycle Servicesiin **-tehtäväopas (osa **7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)** -liiketoimintaprosessia).
+Luodun osan (malli tai muoto) omistaja voi julkaista osan valmiin version LCS:ssä sähköisen raportoinnin avulla. Edellytetään nykyisen sähköisen raportoinnin määrityspalvelun **LCS-projektityypin**säilöä. Kun valmiin osaversion tila vaihdetaan tilasta **VALMIS** tilaksi **JAETTU**, tämä versio julkaistaan LCS:ssä. Kun osa on julkaistu LCS:ssä, kyseisen osan omistajasta tulee osan tuen palvelutarjoaja. Jos esimerkiksi tämä muoto-osa on suunniteltu luomaan lakisääteisiä sähköisiä asiakirjoja (esimerkiksi lokalisointiskenaarion mukaisesti), oletetaan, että muoto pidetään lakimuutosten mukaisena ja että palvelu julkaisee osasta uusia versioita aina, kun on uusia lakisääteisiä vaatimuksia tulee. Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin määrityksen lataaminen Lifecycle Servicesiin**-tehtäväopas (osa **7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)** -liiketoimintaprosessia).
 
 ### <a name="importing-an-er-component-from-lcs-to-use-it-internally"></a>Sähköisen raportointiosan tuonti LCS:stä sisäistä käyttöä varten
 
-Voit tuoda sähköisessä raportoinnissa sähköisiä raportointiosia LCS:stä nykyiseen Dynamics 365 for Operations -esiintymään. Tämä edellyttää **LCS-projektityypin **säilöä. Kun sähköinen raportointiosa on tuotu LCS:stä nykyiseen Dynamics 365 for Operations -esiintymään, tämän Dynamics 365 for Operations -esiintymän omistajasta tulee tuodun osan omistajan (laatijan) tarjoaman palvelun kuluttaja. Jos esimerkiksi tämä muoto-osa on suunniteltu luomaan Dynamics 365 for Operationsissa määritettyjä sähköisiä asiakirjoja tietyssä maa-/aluekohtaisessa muodossa (lokalisointiskenaario), oletetaan, että palvelun kuluttaja pystyy hankkimaan kaikki tähän muotoon tehdyt päivitykset, jotta se pysyy lakisääteisten vaatimusten mukaisena. Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin määrityksen tuonti Lifecycle Servicesistä** -tehtäväopas (osa **7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)** -liiketoimintaprosessia).
+Voit tuoda sähköisessä raportoinnissa sähköisiä raportointiosia LCS:stä nykyiseen Dynamics 365 for Operations -esiintymään. Tämä edellyttää **LCS-projektityypin**säilöä. Kun sähköinen raportointiosa on tuotu LCS:stä nykyiseen Dynamics 365 for Operations -esiintymään, tämän Dynamics 365 for Operations -esiintymän omistajasta tulee tuodun osan omistajan (laatijan) tarjoaman palvelun kuluttaja. Jos esimerkiksi tämä muoto-osa on suunniteltu luomaan Dynamics 365 for Operationsissa määritettyjä sähköisiä asiakirjoja tietyssä maa-/aluekohtaisessa muodossa (lokalisointiskenaario), oletetaan, että palvelun kuluttaja pystyy hankkimaan kaikki tähän muotoon tehdyt päivitykset, jotta se pysyy lakisääteisten vaatimusten mukaisena. Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin määrityksen tuonti Lifecycle Servicesistä** -tehtäväopas (osa **7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)** -liiketoimintaprosessia).
 
 ### <a name="building-a-format-selecting-another-format-as-a-base-customization"></a>Muodon rakentaminen toisen muodon pohjalta (mukauttaminen)
 

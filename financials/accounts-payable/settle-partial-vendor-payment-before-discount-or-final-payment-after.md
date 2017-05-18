@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 33851ff7c9ee2c50544589ade0191798a13706e7
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c7ab943d368c82e7d6c586ec5105210a928e2d31
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -49,7 +50,7 @@ April syöttää ja kirjaa 25. kesäkuuta laskun toimittajalle 3057, jonka arvo 
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
 | Valittu | Normaali            | Lku-10020 | 3057    | 25.6.2015 | 25.7.2015 | 10020   | -1 000,00                      | USD      | -297,00          |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 
 |                              |           |
 |------------------------------|-----------|

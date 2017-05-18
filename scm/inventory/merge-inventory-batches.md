@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 5abf8cf272924669cec6987a96f6565fffa54642
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 49ed9255e58053b747bc66af8a0f8e0400eee1b0
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -116,7 +117,7 @@ Erien B1 ja B4 arvoja ja määriä ei sisällytetä painotetun keskiarvon lasken
 
 | Arvo | Määrä (paino)                              | Suhteellinen paino | Suhteellinen paino x arvo                                               |
 |-------|------------------------------------------------|-----------------|-----------------------------------------------------------------------|
-| päivänä    | päivänä                                             | 0,230769231     | 3,461538462                                                           |
+| 15    | 15                                             | 0,230769231     | 3,461538462                                                           |
 | 20    | 20                                             | 0,307692308     | 6,153846154                                                           |
 | 25    | 30                                             | 0,461538462     | 11,53846154                                                           |
 |       | **Yhteensä:** 65, joka on painojen summa |                 | **Yhteensä:** 21,5384615, pyöristetty 21:een (lähin korotus) |

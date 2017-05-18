@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8b13d734c22203618183b8855f99da8e51114f76
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5c21260315a08ecb31ae180d2d905a8606de2e88
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -61,13 +62,13 @@ Uusi kustannuslaskelmaversio on kohdistettu muuntotietueeseen **muunnoksen** kus
 Kohdistetun kustannuslaskelmaversion kustannustietoja voi ylläpitää vain **Standardikustannusmuunnot**-sivulla. Et voi käyttää kohdistetun kustannuslaskelmaversion kustannusten syöttöön tai laskentaan muunnon aikana **Kustannuslaskentaversion määritys** -sivua tai **Kustannuslaskentaversion ylläpito** -sivua. Näitä sivuja voi kuitenkin käyttää kohdistetun kustannuslaskelmaversion ylläpitoon muunnon suorituksen jälkeen.
 
 ## <a name="3-identify-the-items-to-convert-to-standard-cost"></a>3. Määritä standardikustannuksiin muunnettavat nimikkeet
-Määritä yksittäiset standardikustannuksiksi muunnettavat nimikkeet** Standardikustannusmuunnot**-sivun avulla. Voit lisätä useita nimikkeitä **Lisää nimikkeitä standardikustannusmuuntoon** -sivun avulla. Tavallisesti kaikki valmistetut nimikkeet sisällytetään yhteen muuntotietueeseen, jolloin kustannukset lasketaan oikein.
+Määritä yksittäiset standardikustannuksiksi muunnettavat nimikkeet**Standardikustannusmuunnot**-sivun avulla. Voit lisätä useita nimikkeitä **Lisää nimikkeitä standardikustannusmuuntoon** -sivun avulla. Tavallisesti kaikki valmistetut nimikkeet sisällytetään yhteen muuntotietueeseen, jolloin kustannukset lasketaan oikein.
 
 ## <a name="4-enter-or-calculate-the-pending-standard-cost-for-each-item-that-is-being-converted"></a>4. Syötä tai laske jokaiselle muunnettavalle nimikkeelle odottavat standardikustannukset
 Syötä ostettujen nimikkeiden ja siirtonimikkeiden kohdistetun kustannuslaskentaversion odottavat standardikustannukset **Nimikkeen hinta** -sivun avulla. Kustannustietueet ovat toimipaikkakohtaisia. Jokaiselle toimipaikalle on syötettävä nimikkeen odottavat kustannukset. Laske valmistettujen nimikkeiden odottavat standardikustannukset **Nimikkeen hinta** -sivun avulla. Jokaisen valmistavan toimipaikan valmistetun nimikkeen odottavat kustannukset on laskettava, ellei toimipaikka edusta siirtotoimipaikkaa. Tällöin odottavat kustannukset on syötettävä manuaalisesti. Joillakin nimikkeillä voi olla värin, koon tai konfiguraation tuotedimensio. **Standardikustannusmuunnot**-sivun **Käytä kustannushintaa variantin mukaan** -valintaruutu näyttää standardikustannukset jokaiselle tuotedimension yhdistelmälle. Kun tämän valintaruudun valinta poistetaan, sinun on syötettävä vain nimikkeen odottavat kustannukset.
 
 ## <a name="5-check-and-resolve-any-issues-for-the-items-that-are-being-converted"></a>5. Tarkista ja ratkaise kaikki muunnettavien nimikkeiden ongelmat
-Voit määrittää muunnettaviin nimikkeisiin liittyvät tunnistusongelmat** Standardikustannusmuunnon tarkistukset** -raportin avulla. Jos nimikkeeseen ei liity ongelmia, sen tilaksi muutetaan muunnostietueessa **Tarkistettu**. Jos nimikkeeseen liittyy ongelmia, ne on ratkaistava. Tämän jälkeen raportti suoritetaan uudelleen, kunnes tilaksi muutetaan **Tarkistettu**. Jos et voi ratkaista nimikkeen ongelmia ajoissa, voit poistaa nimikkeen muuntotietueesta ja muuntaa nimikkeen myöhemmin.
+Voit määrittää muunnettaviin nimikkeisiin liittyvät tunnistusongelmat**Standardikustannusmuunnon tarkistukset** -raportin avulla. Jos nimikkeeseen ei liity ongelmia, sen tilaksi muutetaan muunnostietueessa **Tarkistettu**. Jos nimikkeeseen liittyy ongelmia, ne on ratkaistava. Tämän jälkeen raportti suoritetaan uudelleen, kunnes tilaksi muutetaan **Tarkistettu**. Jos et voi ratkaista nimikkeen ongelmia ajoissa, voit poistaa nimikkeen muuntotietueesta ja muuntaa nimikkeen myöhemmin.
 
 ## <a name="6-change-the-status-of-the-conversion-record-to-ready"></a>6. Muuta muuntotietueen tilaksi Valmis
 Kun muuntotietueen tilaksi muutetaan **Valmis**, lopullinen tarkistus suoritetaan ennen standardikustannusmuunnon suoritusta. Tilaksi muutetaan **Valmis** vain, kun seuraavat ehdot täyttyvät:

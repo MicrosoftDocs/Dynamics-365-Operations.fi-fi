@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 1fcdf262ee1e7e1fbbdd0a5fed46fb1867f8d8fd
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a9794dd5bf62630ec815aaf42a032f61dbedc5dd
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -43,13 +44,13 @@ Seuraavassa on esimerkkejä tavoista, joilla voit käyttää varaston tiloja:
 
 Varaston tila on yksi varastodimensioryhmän dimensioista. Varaston tiloja voidaan luokitella käytettävissä oleviin ja ei-käytettävissä oleviin ja voit käyttää **Varaston esto** -parametria estämään nimikkeet, joilla on ei-käytettävissä oleva varaston tila. Toimituskiellossa olevien nimikkeiden katsotaan olevan osa fyysistä varastoa, eikä niitä vodai käyttää tuotantotilauksessa, myyntitilauksessa, siirtotilauksessa tai lähtevässä tapahtumassa. 
 
-Voit käyttää saapuville töille varastonimikkeitä, joiden varastotila on joko käytettävissä tai ei käytettävissä. Voit luoda esimerkiksi käytettävissä oleville tilan, jonka nimi on **Valmis**, ei-käytettävissä oleville tilan, jonka nimi on **Vioittuneet** ja toimituskiellossa oleville tilan, jonka nimi on **Suljettu**. Luodessasi ostotilauksen vastaanotetuille tai palautetuille nimikkeille, jos mitkään nimikkeet ovat vahingoittuneita tai rikkoutuneita, voit muuttaa niiden varaston tilan **Vioittuneet **-ostotilauksen rivillä. Sen jälkeen, kun nimikkeet on otettu vastaan, tilaksi määritetään automaattisesti **Suljettu**. Jos skannaat vioittuneet nimikkeet käyttämällä mobiililaitetta, Microsoft Dynamics 365 for Operations voi käyttää sijainnin direktiivejä ja työn malleja näyttääkseen tietoja sopivasta sijainnista tai ne sijainnit, jossa voit laittaa pois nuo nimikkeet. Palautetuille nimikkeille luodaan jakelutyyppi **Varaus** **Varastotapahtumat** -lomakkeessa. 
+Voit käyttää saapuville töille varastonimikkeitä, joiden varastotila on joko käytettävissä tai ei käytettävissä. Voit luoda esimerkiksi käytettävissä oleville tilan, jonka nimi on **Valmis**, ei-käytettävissä oleville tilan, jonka nimi on **Vioittuneet** ja toimituskiellossa oleville tilan, jonka nimi on **Suljettu**. Luodessasi ostotilauksen vastaanotetuille tai palautetuille nimikkeille, jos mitkään nimikkeet ovat vahingoittuneita tai rikkoutuneita, voit muuttaa niiden varaston tilan **Vioittuneet**-ostotilauksen rivillä. Sen jälkeen, kun nimikkeet on otettu vastaan, tilaksi määritetään automaattisesti **Suljettu**. Jos skannaat vioittuneet nimikkeet käyttämällä mobiililaitetta, Microsoft Dynamics 365 for Operations voi käyttää sijainnin direktiivejä ja työn malleja näyttääkseen tietoja sopivasta sijainnista tai ne sijainnit, jossa voit laittaa pois nuo nimikkeet. Palautetuille nimikkeille luodaan jakelutyyppi **Varaus** **Varastotapahtumat** -lomakkeessa. 
 
 Ulosmeneville töille käytetään nimikkeitä, joilla on saatavilla oleva varaston tila. Jos on nimikkeitä, joiden tila on **Rikkoutunut** ja pääsuunnittelu suoritetaan näillä nimikkeillä, niitä pidetään puuttuvina ja varasto täydennetään automaattisesti. 
 
 Kun olet määrittänyt varaston tilat, voit määrittää varaston oletustilan toimipaikalle, nimikkeelle ja varastolle. Voit myös määrittää oletustilan myyntiin, siirtoon ja ostotilauksiin. Myyntitilausten ja lähtevien siirtotilausten oletustilassa **Varastonesto**-asetus ei voi olla asennossa **Kyllä**. Varaston tila, joka periytyy toimipaikan, varaston, nimikkeen, ostotilauksen, siirtotilauksen tai myyntitilauksen oletusarvoasetuksista, voidaan muuttaa käyttämällä mobiililaitetta tai ostotilauksessa, myyntitilauksessa tai siirtotilausrivillä. 
 
-Suunnitellaksesi kattavuusryhmän nimikkeille, joiden varastotila on käytettävissä oleva, valitse **Kattavuussuunnitelma dimension mukaan** -vaihtoehto varastodimensiolle **Varastodimensioryhmät** -sivulla. Avatessasi **Nimikkeen kattavuus **-ohjatun toiminnon, nimikkeet, joilla on käytettävissä oleva tila, näkyvät **Tila**-sivulla. Luo näille nimikkeille kattavuusasetukset valitsemalla saatavilla oleville varastotiloille varastotilatunnus. Kattavuusasetusten perusteella voit laskea nimikevaatimukset sekä käytettävissä olevien nimikkeiden tarjonnan ja kysynnän ennusteen pääsuunnittelun aikana. Et voi luoda nimikkeen kattavuusasetusta, jolla on toimituskiellossa oleva varastotila. Vaihtoehtoisesti, voit käyttää **Nimikekattavuus** -sivua nimikkeen kattavuusparametrien luomiseen tai muokkaamiseen.
+Suunnitellaksesi kattavuusryhmän nimikkeille, joiden varastotila on käytettävissä oleva, valitse **Kattavuussuunnitelma dimension mukaan** -vaihtoehto varastodimensiolle **Varastodimensioryhmät** -sivulla. Avatessasi **Nimikkeen kattavuus**-ohjatun toiminnon, nimikkeet, joilla on käytettävissä oleva tila, näkyvät **Tila**-sivulla. Luo näille nimikkeille kattavuusasetukset valitsemalla saatavilla oleville varastotiloille varastotilatunnus. Kattavuusasetusten perusteella voit laskea nimikevaatimukset sekä käytettävissä olevien nimikkeiden tarjonnan ja kysynnän ennusteen pääsuunnittelun aikana. Et voi luoda nimikkeen kattavuusasetusta, jolla on toimituskiellossa oleva varastotila. Vaihtoehtoisesti, voit käyttää **Nimikekattavuus** -sivua nimikkeen kattavuusparametrien luomiseen tai muokkaamiseen.
 
 
 

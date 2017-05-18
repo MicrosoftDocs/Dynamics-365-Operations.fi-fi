@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: f3234bf607ef9ce1643226894716b975a2c2a7b9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a12c5b0ab85ac336592941f1fb62aa62ddc5d40d
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -49,7 +50,7 @@ Asiakas 4027 maksaa 2. heinäkuuta laskusta osamaksuerän, jonka suuruus on 297,
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
 | Valittu | Normaali            | FTI-10020 | 4027    | 25.6.2015 | 25.7.2015 | 10020   | 1 000,00                             | USD      | 297,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa. Ellet muuta **Täsmäytettävä summa** -arvoksi 297,00, näkyviin tulevat **Käteisalennussumma**-arvot vaihtelevat. Käteisalennuksena käytetään kuitenkin arvoa 3,00 maksun kirjaamisen yhteydessä, koska tilitys muuttaa **Täsmäytettävä summa** -arvon automaattisesti.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa. Ellet muuta **Täsmäytettävä summa** -arvoksi 297,00, näkyviin tulevat **Käteisalennussumma**-arvot vaihtelevat. Käteisalennuksena käytetään kuitenkin arvoa 3,00 maksun kirjaamisen yhteydessä, koska tilitys muuttaa **Täsmäytettävä summa** -arvon automaattisesti.
 
 |                              |           |
 |------------------------------|-----------|
@@ -74,7 +75,7 @@ Asiakas 4027 maksaa loppulaskun 11. heinäkuuta, joka on alennusjakson jälkeen.
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
 | Valittu | Normaali            | FTI-10020 | 4027    | 25.6.2015 | 25.7.2015 | 10020   | 700,00                               | USD      | 700,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 
 |                              |           |
 |------------------------------|-----------|
@@ -90,7 +91,7 @@ Jos Arnie muuttaa **Käytä käteisalennusta** -kentän arvoksi **Aina**, **Lask
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
 | Valittu | Aina            | FTI-10020 | 4027    | 25.6.2015 | 25.7.2015 | 10020   | 700,00                               |                                       | USD      | 693,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 
 |                              |           |
 |------------------------------|-----------|

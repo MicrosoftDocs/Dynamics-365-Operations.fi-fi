@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 04e0c066511c1fedf33784944441326201fc2df8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4caef8eb4d11ad5d2ba1ce0e23d869c0b26b5466
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -99,7 +100,7 @@ Seuraavaksi liitetään budjetin hallintaan sisällytettävät budjettimallit bu
 Seuraavaksi luodaan tietyt säännöt **Määritä budjetin hallintasäännöt** -välilehdessä budjetin hallinnan käytössä olevien taloushallinnan dimensioiden perusteella. Jos kohdistus tehdään esimerkiksi osaston menon tai menovälin perusteella, menot voidaan määrittää ja arvioida tämän välilehden asetusten avulla. Voit määrittää kullekin budjetin hallintasäännölle eri raja-arvot. 
 
 > [!Important]
-> Budjetin hallinta voidaan ottaa käyttöön mille tahansa **Voitto ja tappio**-, **Meno**-, **Tuotto-, Tase-, Velat-, Oma pääoma-**tai **Käyttöomaisuus**-tyypin päätilille. Jos tämä välilehti sisältää säännön, jonka ehdot ovat tyhjät, budjetin hallinta otetaan käyttöön **kaikille **taloushallinnon dimension yhdistelmille, jotka sisältävät tämän tyyppisen päätilin. Tämän vuoksi on tärkeää luoda budjetin hallinnan säännöt, joissa määritetään taloushallinnon dimensioiden yhdistelmien arvovälit vain silloin, kun budjetin hallinnan käyttäminen on tärkeää.  
+> Budjetin hallinta voidaan ottaa käyttöön mille tahansa **Voitto ja tappio**-, **Meno**-, **Tuotto-, Tase-, Velat-, Oma pääoma-**tai **Käyttöomaisuus**-tyypin päätilille. Jos tämä välilehti sisältää säännön, jonka ehdot ovat tyhjät, budjetin hallinta otetaan käyttöön **kaikille**taloushallinnon dimension yhdistelmille, jotka sisältävät tämän tyyppisen päätilin. Tämän vuoksi on tärkeää luoda budjetin hallinnan säännöt, joissa määritetään taloushallinnon dimensioiden yhdistelmien arvovälit vain silloin, kun budjetin hallinnan käyttäminen on tärkeää.  
 
 ### <a name="select-main-accounts"></a>Valitse päätilit
 
@@ -124,7 +125,7 @@ Huomaa myös, että ennen budjetin hallinnan käyttöönottoa kirjattuja tapahtu
 ## <a name="using-budget-control"></a>Budjetin hallinnan käyttäminen
 Kun budjetin hallinta on otettu käyttöön, käyttäjät vastaanottavat niiden asiakirjojen ja kirjauskansioiden budjetin hallinnan varoituksia ja virhesanomia, joille on konfiguroitu budjetin hallinta. Muista, että voit määrittää budjetin hallinnan niin, että vaikka käyttäjille lähetetään varoitus budjetin varojen ylittämisestä, he voivat silti jatkaa tapahtumien vahvistamista tai kirjaamista. Käyttäjät voivat tarkastella epäonnistuneiden budjettitarkistusten tietoja **Budjetin hallinnan virheet ja varoitukset** -sivulla.   
 
-Tältä sivulta käyttäjät voivat porautua **Budjetin hallinnan tilasto kausittain** -sivulle ja tarkastella budjetin käytettävyystietoja ja varauksia tietyn budjetin ohjausdimensioyhdistelmän osalta. Käyttäjät voivat porautua myös **Budjetin hallinnan tilastot **-sivulle ja tarkastella budjetin käytettävyyttä kaikkien budjetin hallinnassa käytettävien taloushallinnon dimensioiden yhdistelmien osalta. 
+Tältä sivulta käyttäjät voivat porautua **Budjetin hallinnan tilasto kausittain** -sivulle ja tarkastella budjetin käytettävyystietoja ja varauksia tietyn budjetin ohjausdimensioyhdistelmän osalta. Käyttäjät voivat porautua myös **Budjetin hallinnan tilastot**-sivulle ja tarkastella budjetin käytettävyyttä kaikkien budjetin hallinnassa käytettävien taloushallinnon dimensioiden yhdistelmien osalta. 
 
 Jos budjetin hallinta on otettu käyttöön ostotilauksille, budjettipäällikkö voi tarkastella **Kirjanpitobudjetit ja ennusteet** -työtilan avulla kaikkien niiden vahvistamattomien ostotilausten jonoa, joilla on budjetin tarkistuksen varoituksia ja virheitä. Jos budjettipäällikölle on konfiguroitu budjetin ylitysoikeudet, hän voi vahvistaa ostotilaukset suoraan työtilassa.    
 

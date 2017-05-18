@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 4dd1eae27ae33837fbab16f764083168578d0a29
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69535f07cadda4f17bb5d846132ffe614495553e
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -44,8 +45,8 @@ Voit luoda myyntitilauksen suoraan myyntisopimuksesta käyttämällä **Vapauta 
 ## <a name="commitment-types"></a>Vahvistustyypit
 Jokainen myyntisopimuksen rivi ilmaisee sitoutumisen myydä jotain. Yleensä sitoumuksia on kahdentyyppisiä:
 
--   **Arvositoumus **– Asiakas suostuu ostamaan tuotteita tietystä summasta.
--   **Määräsitoumus **– Asiakas suostuu ostamaan tietyn määrän tuotteita.
+-   **Arvositoumus**– Asiakas suostuu ostamaan tuotteita tietystä summasta.
+-   **Määräsitoumus**– Asiakas suostuu ostamaan tietyn määrän tuotteita.
 
 Sopimus voi myös sitoa asiakkaan ostamaan tuoteluokan tiettyä tuotetta tai tuotteita. Kun nämä kaksi tekijää (arvo vs. määrä ja tietyt tuotteet vs. tuoteluokat) yhdistetään, saadaan neljäntyyppisiä sitoumuksia:
 

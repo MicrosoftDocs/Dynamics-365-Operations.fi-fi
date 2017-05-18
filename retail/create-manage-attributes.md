@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16461
 ms.assetid: 2b85491c-f830-4e79-a2cb-681b7ced6988
 ms.search.region: global
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 26c628e10aaa5f47bc87d7510ca8f41ab3630204
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a5c45bb0b9ed10c989a3222a751df3f454b14a0b
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="create-and-manage-attributes"></a>Määritteiden luonti ja hallinta
+
+[!include[banner](includes/banner.md)]
+
 
 Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Operationsin määritteet. Määritteiden avulla voit kuvailla tuotetta ja sen ominaisuuksia käyttäjän määrittelemien kenttien avulla.
 
@@ -34,110 +38,28 @@ Määritteiden avulla voit kuvailla tuotetta ja sen ominaisuuksia käyttäjän m
 
 #### <a name="examples"></a>Esimerkkejä
 
-Luokka
+| Luokka   | Ominaisuus                | Sallitut arvot          | Oletusarvo |
+|------------|--------------------------|-----------------------------|---------------|
+| TV & Video | Brandi                    | Mikä tahansa voimassa oleva Tuotemerkki-arvo       | Ei mitään          |
+| TV         | Näytön koko              | 20–80 tuumaa                     | Ei mitään          |
+| TV         | Vertikaaliresoluutio      | 480i, 720p, 1080i, tai 1080p | 1080p         |
+| TV         | Näytön päivitystaajuus      | 60 Hz, 120 Hz, tai 240 Hz       | 60 Hz          |
+| TV         | HDMI-tuloja              | 0–10                        | 3             |
+| TV         | DVI-tuloja               | 0–10                        | 1             |
+| TV         | Komposiittituloja         | 0–10                        | 2             |
+| TV         | Komponenttituloja         | 0–10                        | 1             |
+| LCD-näyttö        | 3D-valmius                 | Kyllä tai Ei                   | Kyllä           |
+| LCD-näyttö        | 3D käytössä               | Kyllä tai Ei                   | Nro            |
+| Plasma     | Toimintalämpötila vähintään      | 0–43 astetta              | 32            |
+| Plasma     | Toimintalämpötila korkeintaan        | 0–43 astetta              | 100           |
+| Projektio | Projektiokuvaputken takuu | 6, 12, tai 18 kuukautta         | 12            |
+| Projektio | #  projektiokuvaputkea    | 1–5                         | 3             |
 
-Ominaisuus
-
-Sallitut arvot
-
-Oletusarvo
-
-TV & Video
-
-Brandi
-
-Mikä tahansa voimassa oleva **Tuotemerkki**-arvo
-
-Ei mitään
-
-TV
-
-Näytön koko
-
-**20"**–**80"**
-
-Ei mitään
-
-Vertikaaliresoluutio
-
-**480i**, **720p**, **1080i**, tai **1080p**
-
-**1080p**
-
-Näytön päivitystaajuus
-
-**60 Hz**, **120 Hz**, tai **240 Hz**
-
-**60 Hz**
-
-HDMI-tuloja
-
-**0**–**10**
-
-**3**
-
-DVI-tuloja
-
-**0**–**10**
-
-**1**
-
-Komposiittituloja
-
-**0**–**10**
-
-**2**
-
-Komponenttituloja
-
-**0**–**10**
-
-**1**
-
-LCD-näyttö
-
-3D-valmius
-
-**Kyllä** tai **Ei**
-
-**Kyllä**
-
-3D käytössä
-
-**Kyllä** tai **Ei**
-
-**Ei**
-
-Plasma
-
-Toimintalämpötila vähintään
-
-**0**–**43** astetta
-
-**0**
-
-Toimintalämpötila korkeintaan
-
-**0**–**43** astetta
-
-**43**
-
-Projektio
-
-Projektiokuvaputken takuu
-
-**6**, **12**, tai **18** kuukautta
-
-**12**
-
-\# projektiokuvaputkea
-
-**1**–**5**
-
-**3**
 
 ## <a name="attribute-type"></a>Määritetyyppi
-  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Määritteet perustuvat määritetyyppeihin. Määritetyypit osoittavat, minkälaista tietoa voi lisätä tiettyyn määritteeseen. Microsoft Dynamics 365 for Operations tukee tällä hetkellä seuraavia määritetyyppejä:
+  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
+  
+Määritteet perustuvat määritetyyppeihin. Määritetyypit osoittavat, minkälaista tietoa voi lisätä tiettyyn määritteeseen. Microsoft Dynamics 365 for Operations tukee tällä hetkellä seuraavia määritetyyppejä:
 
 -   **Valuutta** – Tämä määritetyyppi tukee valuutta-arvoja. Se voidaan sitoa (eli se voi tukea arvoaluetta), tai se voidaan jättää avoimeksi.
 -   **DateTime** – Tämä määritetyyppi tukee päivämäärä- ja aika-arvoja. Se voidaan sitoa (eli se voi tukea arvoaluetta), tai se voidaan jättää avoimeksi.
@@ -174,5 +96,7 @@ Projektiokuvaputken takuu
 ### <a name="at-the-retail-channel-level"></a>Vähittäismyyntikanavan tasolla
 
   [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Määritteiden oletusarvot voidaan ohittaa tietyissä luetteloissa olevien, määrätyille vähittäismyyntikanaville kohdistettujen yksittäisten tuotteiden osalta.
+
+
 
 

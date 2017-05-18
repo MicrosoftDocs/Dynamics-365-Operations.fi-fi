@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9397e84f03ee5b340fa2aa0a64e582fc0078526e
-ms.openlocfilehash: be156afa73de731e54985485b617bcbae883db3a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 917771596a0c56561bf302ae990d95a987f442e0
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Useat tekijät, kuten työntekijän suorituskyky, työntekijän kompensaatiotaso
 ## <a name="variable-compensation-components"></a>Muuttuvan kompensaation komponentit
 ### <a name="create-compensation-types"></a>Luo kompensaatiotyypit
 
-**Muuttuvat kompensaatiotyypit **ovat pakollinen osa. Muuttuvien kompensaatiotyyppien avulla voidaan kuvata sellaisia muuttuvia kompensaatioita, joita organisaatiosi antaa. Niiden avulla voit määrittää, lasketaanko korvaus tai käteisenä vai ei-rahallisessa muodossa, esimerkiksi osakepääomana.
+**Muuttuvat kompensaatiotyypit**ovat pakollinen osa. Muuttuvien kompensaatiotyyppien avulla voidaan kuvata sellaisia muuttuvia kompensaatioita, joita organisaatiosi antaa. Niiden avulla voit määrittää, lasketaanko korvaus tai käteisenä vai ei-rahallisessa muodossa, esimerkiksi osakepääomana.
 
 ### <a name="describe-vesting-rules"></a>Kuvaile hyvityssäännöt
 
@@ -59,11 +60,11 @@ Muuttuvan palkkion summa voi perustua, joko prosenttiosuuteen työntekijän tava
 
 **Suorituskykykertoimen** avulla voit määrittää työntekijän palkkion työntekijän osaston suorituskyvyn perusteella. Suorituskyvyn mittarit voidaan määrittää kullekin osastolle **Osastot**-sivulla kohdassa **Liittyvät lomakkeet** &gt; **Kompensaatio** &gt; **Suorituskyky**. Kyseisen osaston työntekijöiden saama palkkio riippuu **Tavoitteesta saavutettu prosentti** -kentän arvosta, joka kertoo osaston suorituskyvystä:
 
--   Jos osaston suorituskyky on 100 prosenttia, osaston työntekijöiden palkkio lasketaan prosenttiarvolla, joka on määritetty** Maksu tasolla 100 %**-kentässä.
+-   Jos osaston suorituskyky on 100 prosenttia, osaston työntekijöiden palkkio lasketaan prosenttiarvolla, joka on määritetty**Maksu tasolla 100 %**-kentässä.
 -   Jos osaston suorituskyky on yli 100 prosenttia, järjestelmä lisää prosenttiosuuden, joka on määritetty **1 % objektiivin yli** -kentässä siihen prosenttiin, joka on määritetty **Maksu tasolla 100 %** -kentässä, kunnes arvo, joka on asetettu **Suurin sallittu maksu**-kentässä, saavutetaan.
 -   Jos osaston suorituskyky on alle 100 prosenttia, järjestelmä vähentää prosenttiosuuden, joka on määritetty **1 % tavoitteen alle** -kenttään prosentista, joka on määritetty **maksu tasolla 100 %** kentässä, kunnes arvo, joka on asetettu **Pienin sallittu maksu**- kenttään, saavutetaan.
 
-Voit määrittää** toleranssitasot** rajaprosenteille, niin että näkyviin tulee varoitussanoma, jos suorituskykykerroin määrittää prosentin raja-arvo prosentin ulkopuolelle. 
+Voit määrittää**toleranssitasot** rajaprosenteille, niin että näkyviin tulee varoitussanoma, jos suorituskykykerroin määrittää prosentin raja-arvo prosentin ulkopuolelle. 
 
 Oletusarvon mukaan järjestelmä etsii osaston, joka on määritetty työntekijän toimelle. Kuitenkin joidenkin työntekijöiden palkkio saattaa määräytyä useiden yksiköiden suorituskyvyn mukaan. Tällöin eri osastot ja palkkion prosentti, joka kohdistetaan kunkin osaston suorituskykyyn, voidaan määrittää työntekijän muuttuvan kompensaation voimaan astuessa. Lisätietoja on kohdassa "Muuttuvan kompensaation voimaanastuminen", joka on seuraavana. 
 

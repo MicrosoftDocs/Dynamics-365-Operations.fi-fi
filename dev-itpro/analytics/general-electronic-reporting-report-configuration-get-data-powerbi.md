@@ -1,9 +1,9 @@
 ---
-title: "Sähköisen raportoinnin määrittäminen Dynamics 365 for Operations -tietojen lähettämiseksi Power BI -palveluun"
+title: "Määritä sähköinen raportti tietojen käyttämiseksi Power BI:ssä"
 description: "Tässä aiheessa kerrotaan, miten omaa sähköisen raportoinnin ER-konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta Dynamics 365 for Operations -esiintymästä Power BI-palveluihin. Tässä aiheessa käytetään esimerkkinä Intrastat-tapahtumia siirrettävinä liiketoimintatietoina. Power BI -karttavisualisointi käyttää tätä Intrastat-tapahtumatietoa näkymän esittämiseen yrityksen tuonti-/vientitoimintojen analyysia varten Power BI-raportissa."
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-31 13 - 22 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: ed0192c44b6d7e88120c64e539ebb0ac3b379831
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4bbc77eb1edfe0c109434ce4d26228ed031f48bc
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="set-up-electronic-reporting-to-provide-power-bi-with-data-from-dynamics-365-for-operations"></a>Sähköisen raportoinnin määrittäminen Dynamics 365 for Operations -tietojen lähettämiseksi Power BI -palveluun
+# <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Määritä sähköinen raportti tietojen käyttämiseksi Power BI:ssä
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä aiheessa kerrotaan, miten omaa sähköisen raportoinnin ER-konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta Dynamics 365 for Operations -esiintymästä Power BI-palveluihin. Tässä aiheessa käytetään esimerkkinä Intrastat-tapahtumia siirrettävinä liiketoimintatietoina. Power BI -karttavisualisointi käyttää tätä Intrastat-tapahtumatietoa näkymän esittämiseen yrityksen tuonti-/vientitoimintojen analyysia varten Power BI-raportissa.
 
@@ -61,7 +65,7 @@ Tämän aiheen esimerkin suorittaminen edellyttää seuraavia käyttöoikeuksia:
 3.  **Sähköinen raportointi** -työtilassa aktivoi pakollinen palveluntarjoaja valitsemalla **Aktivoi**. Lisätietoja saat **ER Valitse palveluntarjoaja** -tehtäväoppaasta.
 
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>ER-tietomallin käyttö tietolähteenä
-ER-tietomallin täytyy olla liiketoimintatietolähteenä, jota käytetään Power BI -raporteissa. Tämä tietomalli ladataan ER-konfiguraatiot-tietovarastosta. Lisätietoja on kohdassa [Lataa sähköiset raportoinnin määritykset Lifecycle Services -palvelusta](download-electronic-reporting-configuration-lcs.md) tai **ER Tuo kokoonpano Lifecycle Services -palvelusta** -tehtäväoppaasta. Valitse **Intrastat **tietomalliksi joka ladataan valitusta ER-konfiguraatiot-tietovarastosta. (Tässä esimerkissä käytetään mallin 1 versiota.) Tämän jälkeen voit käyttää **Intrastatin** ER-mallin kokoonpanoa **Konfiguroinnit**-sivulla. [![Konfiguroinnit-sivu](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+ER-tietomallin täytyy olla liiketoimintatietolähteenä, jota käytetään Power BI -raporteissa. Tämä tietomalli ladataan ER-konfiguraatiot-tietovarastosta. Lisätietoja on kohdassa [Lataa sähköiset raportoinnin määritykset Lifecycle Services -palvelusta](download-electronic-reporting-configuration-lcs.md) tai **ER Tuo kokoonpano Lifecycle Services -palvelusta** -tehtäväoppaasta. Valitse **Intrastat** tietomalliksi joka ladataan valitusta ER-konfiguraatiot-tietovarastosta. (Tässä esimerkissä käytetään mallin 1 versiota.) Tämän jälkeen voit käyttää **Intrastatin** ER-mallin kokoonpanoa **Konfiguroinnit**-sivulla. [![Konfiguroinnit-sivu](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Suunnittele ER-muotokonfiguraatio
 Sinun on luotava uusi ER-muotokonfiguraatio, joka käyttää **Intrastat**-tietomallia liiketoimintatietolähteenä. Tämän muotokonfiguraation on luotava tulosteet sähköisinä asiakirjoina OpenXML (Excel-tiedosto) -muodossa. Lisätietoja on **Sähköisen raportoinnin OPENXML-muotoisten raporttimääritysten luonti** -tehtäväoppaassa. Nimeä uusi konfiguraatio **Import / export activities** (Tuonti-/vientitoiminnot) kuvassa esitetyllä tavalla. Käytä Excel-tiedostoa [ER data - import and export details](https://go.microsoft.com/fwlink/?linkid=845208) mallina suunniteltaessa ER-muotoa. (Lisätietoja muotomallin tuomisesta on tehtäväoppaassa.) [![Tuonti-/vientitoimintojen määritys](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png) Muuttaaksesi **tuonti-/vientitoimintojen** muotokokoonpanoja, toimi seuraavasti.
@@ -119,5 +123,7 @@ Määritä Dynamics 365 for Operationsin ja Power BI:n integrointi. Lisätietoja
 [Sähköisen raportoinnin kohteet](electronic-reporting-destinations.md)
 
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
+
+
 
 

@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: bea9565f488c01e5e6aede8cabe73ac13b75dacb
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 50e5197e32689370b63ce833c563faa5b6fe6b01
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -62,7 +63,7 @@ Jos sekä maksu ja lasku on kirjattu, käteisalennusta voi edelleen käyttää, 
 | Valitut ja korostetut | Normaali            | Var-10030 | 3052    | 28.6.2015          | 12.7.2015 | 10030   | -2 000,00                      | USD      | -1 980,00        |
 | Valittu                 | Normaali            | HYV-10030 | 3052    | 15.7.2015          | 15.7.2015 |         | 500,00                         | USD      | 500,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa. Käytettävä alennussumma on 20,00, koska laskulle tilitettävä summa on oletussumma, eli 1 980,00.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa. Käytettävä alennussumma on 20,00, koska laskulle tilitettävä summa on oletussumma, eli 1 980,00.
 
 |                              |           |
 |------------------------------|-----------|
@@ -79,7 +80,7 @@ April päivittää laskun **Tilitettävä summa** -kentän arvoksi **-500,00**. 
 | Valitut ja korostetut | Normaali            | Var-10030 | 3052    | 28.6.2015 | 12.7.2015 | 10030   | 2 000,00                       | USD      | -500,00          |
 | Valittu                 | Normaali            | HYV-10030 | 3052    | 15.7.2015 | 15.7.2015 |         | 500,00                         | USD      | 500,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat ** -sivun alaosassa. **Käytettävä käteisalennussumma** -kentän arvo on **5,05**, koska laskun tilitettäväksi summaksi muutettiin maksun summa, 500,00.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa. **Käytettävä käteisalennussumma** -kentän arvo on **5,05**, koska laskun tilitettäväksi summaksi muutettiin maksun summa, 500,00.
 
 |                              |           |
 |------------------------------|-----------|

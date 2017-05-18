@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: bcf59ea8862280675c9fb711d2aab1e8dff18806
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0285103ef30ebf8322f2bf60941b07c7496e9c70
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen
+
+[!include[banner](includes/banner.md)]
+
 
 Tässä aiheessa kerrotaan, miten vastaajien täyttämien kyselylomakkeiden tuloksia voidaan tarkastella ja arvioida. 
 
@@ -56,7 +60,8 @@ Kun vastaajat ovat täyttäneet kyselylomakkeen, voit tarkastella valmiiden vast
 -   **Vastausraportti** – Tämä raportti sisältää vastaajan kyselylomakkeen kuhunkin kysymykseen valitsemat vastaukset.
 -   **Väärät vastaukset** – Tämä raportti sisältää vastaajan valitsemiin vääriin vastauksiin liittyvät tiedot.
 
-**Huomautus:** **Tulosraportti** on käytettävissä vain, jos kyselylomakkeessa on käytetty tulosryhmiä ja jos **Kyselylomakkeet**-sivun **tulossivu** on valittu. **Vastausraportti** ja **väärien vastausten raportti** ovat käytettävissä vain, jos **Kyselylomakkeet**-sivun **vastausraportti** on valittu.
+> **Huomautus**
+>  **Tulosraportti** on käytettävissä vain, jos kyselylomakkeessa on käytetty tulosryhmiä ja jos **Kyselylomakkeet**-sivun **tulossivu** on valittu. **Vastausraportti** ja **väärien vastausten raportti** ovat käytettävissä vain, jos **Kyselylomakkeet**-sivun **vastausraportti** on valittu.
 
 ## <a name="questionnaire-statistics"></a>Kyselylomakkeen tilastotiedot
 Voit käyttää kyselylomakkeen tilastotietoja, kun haluat analysoida täytettyjen kyselylomakkeiden tulokset määrittämiesi laskelmien perusteella. Voit määrittää laskelmat seuraavien tehtävien avulla.
@@ -79,5 +84,7 @@ Määrittämäsi asetukset tallennetaan ja niitä voidaan käyttää tulosten ka
 [Kyselylomakkeiden käyttäminen](questionnaires.md)
 
 [Kyselylomakkeiden jakelu ja täyttäminen](distribute-questionnaires.md)
+
+
 
 

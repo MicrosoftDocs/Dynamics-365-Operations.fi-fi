@@ -1,9 +1,9 @@
 ---
 title: "Työnkulkujärjestelmän yleiskatsaus"
-description: "Tässä artikkelissa käsitellään Microsoft Dynamics 365 for Operations -ohjelman työnkulkujärjestelmää."
+description: "Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -ohjelman työnkulkujärjestelmää."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 08c36f02f88fef7508730b6c01a1c99a0f77fb0c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5432e67ffa41e6a38b19c9fe5bb12c5acb2c345c
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa käsitellään Microsoft Dynamics 365 for Operations -ohjelman työnkulkujärjestelmää.
+Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -ohjelman työnkulkujärjestelmää.
 
 <a name="what-is-workflow"></a>Mikä on työnkulku?
 -----------------
@@ -41,9 +42,13 @@ Työnkulku on järjestelmä, joka asennetaan Dynamics 365 for Operationsin mukan
 
 ### <a name="workflow-is-a-business-process"></a>Työnkulku liiketoimintaprosessina
 
-Työnkulku vastaa liiketoimintaprosessia. Se määrittää, kuinka asiakirja kulkee tai siirtyy järjestelmässä kuvaamalla kenen on suoritettava tehtävä loppuun, tehtävä päätös tai hyväksyttävä asiakirja. Seuraavassa kuvassa on esimerkkityönkulku kuluraporteille. ![Työnkulku, jonka elementtejä on delegoitu käyttäjille](./media/workflow_user.gif) Työnkulun ymmärtämisen kannalta voi olettaa, että Sam on kirjannut kuluraportin 7 000 Yhdysvaltain dollarille (USD). Ivanin on tarkistettava Samin hänelle lähettämät kuitit. Sen jälkeen Frankin ja Suen on hyväksyttävä kuluraportti. Oletetaan, että Sam lähettää kuluraportin, jonka summa on 11 000 Yhdysvaltain dollaria (USD). Tässä tapauksessa Ivanin on tarkistettava kuitit ja Frankin, Suen ja Annin hyväksyttävä kuluraportti.
- Työnkulkujärjestelmän edut
--------------------------------------
+Työnkulku vastaa liiketoimintaprosessia. Se määrittää, kuinka asiakirja kulkee tai siirtyy järjestelmässä kuvaamalla kenen on suoritettava tehtävä loppuun, tehtävä päätös tai hyväksyttävä asiakirja. Seuraavassa kuvassa on esimerkkityönkulku kuluraporteille. 
+
+![Työnkulku, jonka elementtejä on delegoitu käyttäjille](./media/workflow_user.gif) 
+
+Tässä työnkulkuesimerkissä Sam lähettää kuluraportin, jonka summa on 7 000 USD. Ivanin on tarkistettava Samin hänelle lähettämät kuitit. Sen jälkeen Frankin ja Suen on hyväksyttävä kuluraportti. Oletetaan, että Sam lähettää kuluraportin, jonka summa on 11 000 Yhdysvaltain dollaria (USD). Tässä tapauksessa Ivanin on tarkistettava kuitit ja Frankin, Suen ja Annin hyväksyttävä kuluraportti.
+
+## <a name="benefits-of-using-the-workflow-system"></a> Työnkulkujärjestelmän edut
 
 Työnkulkujärjestelmän käyttö hyödyttää organisaatiotasi monin eri tavoin:
 -   **Yhdenmukaiset prosessit** — Voit määrittää, miten tietyt asiakirjat, kuten ostoehdotukset ja kuluraportit käsitellään. Työnkulkujärjestelmän käyttö auttaa varmistamaan, että asiakirjat käsitellään ja hyväksytään johdonmukaisesti ja tehokkaasti.
@@ -51,6 +56,20 @@ Työnkulkujärjestelmän käyttö hyödyttää organisaatiotasi monin eri tavoin
 -   **Keskitetty työluettelo** – Käyttäjät voivat tarkastella keskitettyä työluetteloa, joka sisältää työnkulun tehtävät ja niille annetut hyväksynnät.
 
 
+## <a name="workflow-content"></a>Työnkulun sisältö
 
-
++ [Työnkulun arkkitehtuuri](workflow-system-architecture.md)
++ [Työnkulun elementit](workflow-elements.md)
++ [Työnkulkutehtävät](workflow-actions.md)
++ [Työnkulun luominen](create-workflow.md)
++ [Työnkulkuominaisuuksien asetusten määrittäminen](configure-workflow-properties.md)
++ [Manuaalisen tehtävän konfiguroiminen työnkulkuun](configure-manual-task-workflow.md)
++ [Automaattisen tehtävän määrittäminen työnkulkuun](configure-automated-task-workflow.md)
++ [Hyväksyntäprosessin lisääminen työnkulkuun](configure-approval-process-workflow.md)
++ [Hyväksyntävaiheen lisääminen työnkulkuun](configure-approval-step-workflow.md)
++ [Manuaalisen päätöksen konfiguroiminen työnkulkuun](configure-manual-decision-workflow.md)
++ [Ehdollisen päätöksen konfiguroiminen työnkulkuun](configure-conditional-decision-workflow.md)
++ [Rinnakkaisen tehtävän määrittäminen työnkulussa](configure-parallel-activity-workflow.md)
++ [Määritä rinnakkainen haara työnkulussa](configure-parallel-branch-workflow.md)
++ [Rivinimikkeen työnkulun määrittäminen](configure-line-item-workflow.md)
 

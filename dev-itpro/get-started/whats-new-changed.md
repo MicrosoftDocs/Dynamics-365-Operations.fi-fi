@@ -3,33 +3,37 @@ title: Uudet ja muuttuneet ominaisuudet
 description: "Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Microsoft Dynamics 365 for Operations -ympäristöversioiden uusista ominaisuuksista."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.search.scope: Core
+ms.search.scope: Operations, Core
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0d954043c461975a70f9e0ab867f30cadd9800b5
-ms.openlocfilehash: 2896a11f79d5cbb00137a439e0a2c8caaee705a0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c9f1e32986238739fc7eee519fd1d17a6ce6731e
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="whats-new-or-changed"></a>Uudet ja muuttuneet ominaisuudet
 
+[!include[banner](../includes/banner.md)]
+
+
 Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Microsoft Dynamics 365 for Operations -ympäristöversioiden uusista ominaisuuksista.
 
-Voit päivittää uuteen versioon [Uusinta Dynamics 365 for Operations -päivitystä koskeva päivitysprosessi](/migration-upgrade/upgrade-latest-update.md) -ohjeiden mukaisesti.
+Voit päivittää uuteen versioon [Uusinta Dynamics 365 for Operations -päivitystä koskeva päivitysprosessi](../migration-upgrade/upgrade-latest-update.md) -ohjeiden mukaisesti.
 <table>
 <colgroup>
 <col width="20%" />
@@ -50,15 +54,24 @@ Voit päivittää uuteen versioon [Uusinta Dynamics 365 for Operations -päivity
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations -ympäristö</td>
+<td>Ympäristöpäivitys 6</td>
+<td> 7.0.4509.16180</td>
+<td>2017. huhtikuuta</td>
+<td><a href="whats-new-platform-update-6.md">Dynamics 365 for Operations -version ympäristöpäivityksen 6 uudet ja muuttuneet ominaisuudet (Huhtikuu 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Operations -ympäristö</td>
+<td>Ympäristöpäivitys 5</td>
+<td> 7.0.4475.16165</td>
+<td>Maaliskuun 2017.</td>
+<td><a href="whats-new-platform-update-5.md">Dynamics 365 for Operations -version ympäristöpäivityksen 5 uudet ja muuttuneet ominaisuudet (Maaliskuu 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Operations -ympäristö</td>
 <td>Ympäristöpäivitys 4</td>
-<td>7.0.4425.16160</td>
+<td> 7.0.4425.16161</td>
 <td>Helmikuun 2017.</td>
-<td><ol>
-<li>Siirry <a href="https://roadmap.dynamics.com/">Dynamics 365:n tiekarttaan</a>.</li>
-<li>Valitse <strong>Uutta</strong>-välilehti.</li>
-<li>Valitse <strong>Sovellukset</strong>-osassa <strong>Dynamics 365 for Operations</strong>.</li>
-<li>Valitse <strong>Alueet</strong>-osassa <strong>Pilviympäristö</strong>.</li>
-</ol></td>
+<td><a href="whats-new-platform-update-4.md">Dynamics 365 for Operations -version ympäristöpäivityksen 4 uudet ja muuttuneet ominaisuudet (Helmikuu 2017)</a></td>
 </tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Operations</td>
@@ -111,6 +124,8 @@ Voit päivittää uuteen versioon [Uusinta Dynamics 365 for Operations -päivity
 </tr>
 </tbody>
 </table>
+
+
 
 
 

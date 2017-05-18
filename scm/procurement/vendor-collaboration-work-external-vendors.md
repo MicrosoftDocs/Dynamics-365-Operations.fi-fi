@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: d585ae0716a4bd9c3531e8639cd7c6b3cab780ac
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c8947f9335b3a2de83ab00bad1043ee14d35f2c8
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -57,8 +58,8 @@ Järjestelmänvalvojan määrittää toimittajayhteistyön yleiset asetukset Dyn
 
 Ennen kuin käyttäjätilit voidaan luoda ulkoiselle toimittajalle, on määritettävä toimittajatili, jota he voivat käyttää toimittajayhteistyössä. Voit tehdä tämän määrittämällä **Yhteistyön aktivointi** kentän arvoksi aktiivinen **Yleistä**-välilehdessä **Toimittajat**-sivulla. Voit valita kahdesta vaihtoehdosta:
 
--   **Aktiivinen (ostotilaus vahvistetaan automaattisesti) **- Ostotilaukset vahvistetaan automaattisesti, kun toimittaja hyväksyy sen ilman muutoksia.
--   **Aktiivinen (ostotilausta ei vahvisteta automaattisesti) **– Ostotilaukset on vahvistettava manuaalisesti organisaatiossasi, kun toimittaja on hyväksynyt ne.
+-   **Aktiivinen (ostotilaus vahvistetaan automaattisesti)**- Ostotilaukset vahvistetaan automaattisesti, kun toimittaja hyväksyy sen ilman muutoksia.
+-   **Aktiivinen (ostotilausta ei vahvisteta automaattisesti)**– Ostotilaukset on vahvistettava manuaalisesti organisaatiossasi, kun toimittaja on hyväksynyt ne.
 
 ### <a name="decide-whether-you-want-the-vendor-to-see-price-information"></a>Päätä, näkeekö toimittaja hintatietoja.
 
@@ -142,7 +143,7 @@ Alla olevassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotila
 | Toimittaja lähettää **Hyväksytään muutosten kera** -vastauksen.                  | Tilana on edelleen **Ulkoisessa tarkistuksessa**.                                                                                                                  |
 | Teet joitakin toimittajan pyytämiä muutoksia.                  | Tilaksi muuttuu **Hyväksytty**.                                                                                                                        |
 | Lähetät ostotilauksen uuden version toimittajalle.                        | Uusi versio rekisteröidään toimittajayhteistyöliittymään, ja tilaksi vaihtuu **Ulkoisessa tarkistuksessa**.                                      |
-| Toimittaja hyväksyy ostotilauksen uuden version.                            | Tilana on edelleen **Ulkoisessa tarkistuksessa **, jos toimittajatiliä ei ole määritetty asettamaan ostotilausta **Vahvistettu**-tilaan, kun hän hyväksyy sen. |
+| Toimittaja hyväksyy ostotilauksen uuden version.                            | Tilana on edelleen **Ulkoisessa tarkistuksessa**, jos toimittajatiliä ei ole määritetty asettamaan ostotilausta **Vahvistettu**-tilaan, kun hän hyväksyy sen. |
 
 Toimittajien ei tarvitse vahvistaa ostotilausta toimittajayhteistyöliittymässä. He voivat lähettää myös sähköpostiviestin tai ilmoittaa ostotilauksen hyväksymisestä muissa kanavissa. Tämän jälkeen voit vahvistaa tilauksen manuaalisesti Dynamics 365 for Operationsissa. Tällöin saat varoituksen, että tilaus on vahvistettu, vaikka toimittajalta ei olisi saatu vastausta. Ostotilaus näkyy tämän jälkeen vahvistushistoriassa avoimena vahvistettuna tilauksena, johon ei ole vastattu. Toimittaja ei pysty enää vahvistamaan tai hylkäämään ostotilausta.  
 

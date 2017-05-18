@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: yuyus
 ms.dyn365.intro: Feb-16
 ms.dyn365.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 15af90d007d77a490db7cb540ef96b4104dbba7e
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35c3d59abe8c2cb4d2db9fa1cf581f022dbc8c39
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="product-configuration-models-overview"></a>Tuotekonfiguraatiomallien yleiskatsaus
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa esitellään tuotekonfiguraatiomallieihin liittyvät ehdot ja käsitteet. Tuotekonfiguraatiomallien avulla voidaan luoda yleisiä tuoterakenteita, joita käytetään määritettäessä yhdestä tuotteesta useita tuotevariantteja.
 
@@ -75,7 +79,7 @@ Jos määritetyyppinä on <strong>Totuusarvo</strong>, <strong>Kokonaisluku</str
 <td>Rajoitukset</td>
 <td>Rajoitukset kuvaavat tuotemallikonfiguraation rajoituksia. Rajoituksilla taataan vain kelvollisten arvojen valinta tuotetta määritettäessä. Rajoitteet voivat olla joko lausekerajoituksia tai taulukkorajoituksia:
 <ul>
-<li>Lausekerajoituksia voidaan käyttää vain komponentille johon ne on sidottu. Komponentin lausekerajoitukset voivat viitata komponentin alikomponenttien määritteisiin. Tuotekonfiguraation selvittimellä ratkaistaan rajoitukset ja rajoitukset on laadittava selvittimen syntaksin mukaisesti. Lisätietoja on lauseke- ja taulurajoituksia käsittelevässä wikilinkissä.</li>
+<li>Lausekerajoituksia voidaan käyttää vain komponentille johon ne on sidottu. Komponentin lausekerajoitukset voivat viitata komponentin alikomponenttien määritteisiin. Tuotekonfiguraation selvittimellä ratkaistaan rajoitukset ja rajoitukset on laadittava selvittimen syntaksin mukaisesti. Lisätietoja on lauseke- ja taulurajoituksia käsittelevässä aiheessa.</li>
 <li>Taulun rajoituksia ei voi käyttää tuotekonfiguraatiomallin osassa, ennen kuin ne on määritetty. Taulun rajoitukset voivat olla joko käyttäjän tai järjestelmän määrittämiä. Käyttäjän määrittämä taulurajoitus on matriisi, jonka avulla voidaan kuvata joukko yhdistelmiä määritearvoille, jotka määritetyypit ovat määrittäneet. Jos valmistetaan esimerkiksi kaiuttimia, käyttäjän määrittämän taulurajoituksen matriisi voi sisältää kaiuttimen viimeistelyn ja säleikön sarakkeet.</li>
 </ul>
 <strong>Esimerkki</strong> Kaiuttimissa on valittavana neljä viimeistelyä: musta, tammi, palisanteri ja valkoinen. Kaiuttimilla on kolme etusäleikkövaihtoehtoa: musta, metalli tai valkoinen. Musta viimeistely on valittavana kaikkiin säleikköihin, mutta kahta muuta voi käyttää vain tietyissä säleiköissä. Seuraavassa on taulussa esimerkki tiedoista, jotka näkyvät <strong>Muokkaa taulurajoitusta</strong> -sivun <strong>Sallitut yhdistelmät</strong> -välilehdessä.
@@ -147,6 +151,8 @@ Voit tarkastella <strong>Vapautetun tuotteen tiedot</strong> -sivun <strong>Ylei
 </tr>
 </tbody>
 </table>
+
+
 
 
 

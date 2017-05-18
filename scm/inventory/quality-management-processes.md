@@ -3,7 +3,7 @@ title: Laadunhallintaprosessit
 description: "Tämä artikkeli sisältää tietoja määrityksistä poikkeavien tuotteiden laadunhallintaprosessista. Aiheessa kuvataan laadunhallintatoiminnot, miten määrityksistä poikkeaminen määritetään ja ylläpidetään sekä miten korjauksia käsitellään."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 53 - 17
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 2deec6d262e87daf4704ce21ce64546f9c9d638b
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3523a89768bc3aee2aab250ee134128fcc3eeeef
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="quality-management-processes"></a>Laadunhallintaprosessit
+
+[!include[banner](../includes/banner.md)]
+
 
 Tämä artikkeli sisältää tietoja määrityksistä poikkeavien tuotteiden laadunhallintaprosessista. Aiheessa kuvataan laadunhallintatoiminnot, miten määrityksistä poikkeaminen määritetään ja ylläpidetään sekä miten korjauksia käsitellään.
 
@@ -52,7 +56,9 @@ Tuotetestausta kutsutaan usein laadunvalvonnaksi, ja siinä käytetään laatuti
 -   Kirjaa laatutilauksen testitulokset, vahvista testitulosten ja hyväksyttävän laadun tason vastaavuus sekä tulosta testitulokset sisältävä analyysivarmenne.
 
 ## <a name="nonconformance"></a>Poikkeama
-Määrityksistä poikkeaminen kuvaa nimikettä, jossa on laatuvirhe.** **Voit luoda määrityksistä poikkeamisprosessissa määrityksistä poikkeamisen tilauksen, joka kuvaa määrityksistä poikkeavaa materiaalia. Tilauksessa kuvataan ongelman lähde ja ongelman tyyppi. Lisäksi tilaus sisältää selitykset. Voit määrittää ongelmatyyppien luokat, mikä helpottaa määrityksistä poikkeavan materiaalin analysointia. Voit myös tulostaa määrityksistä poikkeamisen tunnisteen ja määrityksistä poikkeamisraportin ohjaamaan määrityksistä poikkeavan materiaalin käsittelyä. Tunniste ja raportti voivat esimerkiksi ilmaista tilan **Käyttökelvoton** tai **Rajoitettu käyttö**. Seuraavassa taulussa on kuusi oletusarvoista määrityksistä poikkeamisen tyyppiä ja selitetään, mitkä tiedot on kirjattava kullekin tyypille.
+Määrityksistä poikkeaminen kuvaa nimikettä, jossa on laatuvirhe. Voit luoda määrityksistä poikkeamisprosessissa määrityksistä poikkeamisen tilauksen, joka kuvaa määrityksistä poikkeavaa materiaalia. Tilauksessa kuvataan ongelman lähde ja ongelman tyyppi. Lisäksi tilaus sisältää selitykset. Voit määrittää ongelmatyyppien luokat, mikä helpottaa määrityksistä poikkeavan materiaalin analysointia. Voit myös tulostaa määrityksistä poikkeamisen tunnisteen ja määrityksistä poikkeamisraportin ohjaamaan määrityksistä poikkeavan materiaalin käsittelyä. Tunniste ja raportti voivat esimerkiksi ilmaista tilan **Käyttökelvoton** tai **Rajoitettu käyttö**. 
+
+Seuraavassa taulussa on kuusi oletusarvoista määrityksistä poikkeamisen tyyppiä ja selitetään, mitkä tiedot on kirjattava kullekin tyypille.
 
 | Määrityksistä poikkeamisen tyyppi:   | Lähteen tiedot                                                                                                                                                                                                                          |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -72,10 +78,16 @@ Voit lisätä määrityksistä poikkeamiseen kommentteja liittämällä asiakirj
 Määrityksistä poikkeamisraportti sisältää määrityksistä poikkeamisen numeron, nimikkeen ja ongelmatyypin. Raportin asetuskäytännön mukaan raportissa voi olla myös määrityksistä poikkeamiseen liittyviä huomautuksia. Määrityksistä poikkeamisen tunnisteessa on vastaavia tietoja sekä karanteenivyöhyke ja määrityksistä poikkeamisille määritetty tyyppi (kuten **Rajoitettu käyttö** tai **Käyttökelvoton**), joka opastaa viallisen materiaalin käsittelyssä.
 
 ## <a name="approved-nonconformance"></a>Hyväksytty määrityksistä poikkeaminen
-Voit vaihtoehtoisesti määrittää yhden tai useita liittyviä toimintoja hyväksyttyä määrityksistä poikkeamista varten. Liittyvässä työvaiheessa on suoritettavan työn kuvaus sekä luettelo määritetyistä laatutoiminnoista ja työn syyn kuvaus. Toiminnon määrittämisen jälkeen voit vaihtoehtoisesti määrittää muita maksuja, nimikkeitä ja aikaraportin työtunteja, jotka ovat edellytyksenä työn suorittamiselle. Näkyvissä on liittyvän toiminnon lasketut kustannukset ja määrityksistä poikkeamisten lasketut kokonaiskustannukset. Lasketut kustannukset ja pohjana olevat tiedot (nimikkeistä, työtunneista ja muista maksuista) edustavat viitetietoja, ja niitä käytetään vain laadunhallintatoiminnossa. Voit vaihtoehtoisesti luoda laatutilauksen määrityksistä poikkeamisesta suorittamalla ensin kyselyn laatutilauksista ja luomalla sitten uuden laatutilauksen. Laatutilaus voi esimerkiksi ilmaista tarpeen testata tai uudelleentestata viallista materiaalia. Äskettäin luodussa laatutilauksessa on linkki alkuperäiseen määrityksistä poikkeamiseen. Voit vaihtoehtoisesti linkittää yhden määrityksistä poikkeamisen toiseen ja luoda uuden määrityksistä poikkeamisen aiemmin luodusta. Linkki voi esimerkiksi ilmaista laatuongelmien välistä suhdetta.
+Voit vaihtoehtoisesti määrittää yhden tai useita liittyviä toimintoja hyväksyttyä määrityksistä poikkeamista varten. Liittyvässä työvaiheessa on suoritettavan työn kuvaus sekä luettelo määritetyistä laatutoiminnoista ja työn syyn kuvaus. Toiminnon määrittämisen jälkeen voit vaihtoehtoisesti määrittää muita maksuja, nimikkeitä ja aikaraportin työtunteja, jotka ovat edellytyksenä työn suorittamiselle. Näkyvissä on liittyvän toiminnon lasketut kustannukset ja määrityksistä poikkeamisten lasketut kokonaiskustannukset. Lasketut kustannukset ja pohjana olevat tiedot (nimikkeistä, työtunneista ja muista maksuista) edustavat viitetietoja, ja niitä käytetään vain laadunhallintatoiminnossa. 
+
+Voit vaihtoehtoisesti luoda laatutilauksen määrityksistä poikkeamisesta suorittamalla ensin kyselyn laatutilauksista ja luomalla sitten uuden laatutilauksen. Laatutilaus voi esimerkiksi ilmaista tarpeen testata tai uudelleentestata viallista materiaalia. Äskettäin luodussa laatutilauksessa on linkki alkuperäiseen määrityksistä poikkeamiseen. 
+
+Voit vaihtoehtoisesti linkittää yhden määrityksistä poikkeamisen toiseen ja luoda uuden määrityksistä poikkeamisen aiemmin luodusta. Linkki voi esimerkiksi ilmaista laatuongelmien välistä suhdetta.
 
 ## <a name="correction-handling"></a>Korjausten käsittely
-Voit luoda **Korjaukset**-sivulla luettelon korjattavista määrityksistä poikkeamisista. Jokainen korjausnimike liitetään diagnostiikkatyypin, jolla ongelma havaittiin. **Korjaukset**-sivulla on myös tiedot siitä, kenen on suoritettava korjaustoiminto ja milloin se on suoritettava. Voit lisätä ongelman kuvauksen ja suoritettavan korjaustoiminnon liittämällä korjaukseen asiakirjan. Kun määrityksistä poikkeaminen on käsitelty tai korjattu, voit sulkea korjausnimikkeen valitsemalla **Valmis**. Voit myös ilmaista, että kyse oli lyhytaikaisesta ratkaisusta. Korjauksille kannattaa määrittää yksilöllinen asiakirjatyyppi **Asiakirjatyyppi**-sivulla. Voit sitten määrittää **Raportin asetukset** -sivulla, tulostetaanko tämän asiakirjatyypin kommentit korjausraporttiin. Tulostetussa korjausraportissa on tietoja määrityksistä poikkeamisesta ja liittyvistä määrityksistä poikkeamisen huomautuksista. Raportissa on myös korjaustietoja, kuten diagnostiikkatyyppi, ja liittyvät korjaushuomaukset.
+Voit luoda **Korjaukset**-sivulla luettelon korjattavista määrityksistä poikkeamisista. Jokainen korjausnimike liitetään diagnostiikkatyypin, jolla ongelma havaittiin. **Korjaukset**-sivulla on myös tiedot siitä, kenen on suoritettava korjaustoiminto ja milloin se on suoritettava. Voit lisätä ongelman kuvauksen ja suoritettavan korjaustoiminnon liittämällä korjaukseen asiakirjan. Kun määrityksistä poikkeaminen on käsitelty tai korjattu, voit sulkea korjausnimikkeen valitsemalla **Valmis**. Voit myös ilmaista, että kyse oli lyhytaikaisesta ratkaisusta. 
+
+Korjauksille kannattaa määrittää yksilöllinen asiakirjatyyppi **Asiakirjatyyppi**-sivulla. Voit sitten määrittää **Raportin asetukset** -sivulla, tulostetaanko tämän asiakirjatyypin kommentit korjausraporttiin. Tulostetussa korjausraportissa on tietoja määrityksistä poikkeamisesta ja liittyvistä määrityksistä poikkeamisen huomautuksista. Raportissa on myös korjaustietoja, kuten diagnostiikkatyyppi, ja liittyvät korjaushuomaukset.
 
 <a name="see-also"></a>Lisätietoja
 --------
@@ -91,5 +103,7 @@ Voit luoda **Korjaukset**-sivulla luettelon korjattavista määrityksistä poikk
 [Määritä laatutilaukset (tehtävän ohjaus)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
 
 [Tarkista tavaroiden laatu (tehtäväopas)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
+
 
 

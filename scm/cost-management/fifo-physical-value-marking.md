@@ -3,7 +3,7 @@ title: "FIFO-merkintä ja fyysinen arvo"
 description: "FIFO (First In, First Out) on varastomalli, jossa ensimmäiset vastaanotot otetaan varastosta ensin. Rahoituksellisesti päivitetyt varasto-otot täsmäytetään ensimmäisiä rahoituksellisesti päivitettyjä varastovastaanottoja vasten varastotapahtuman rahoituspäivämäärän perusteella."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 18 - 57 - 00
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8e3d189fc4dbc5c747a3473d3a221c739c323050
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b0be852bde33e8dfc82ceb42dd98be10537f318d
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO-merkintä ja fyysinen arvo
+
+[!include[banner](../includes/banner.md)]
+
 
 FIFO (First In, First Out) on varastomalli, jossa ensimmäiset vastaanotot otetaan varastosta ensin. Rahoituksellisesti päivitetyt varasto-otot täsmäytetään ensimmäisiä rahoituksellisesti päivitettyjä varastovastaanottoja vasten varastotapahtuman rahoituspäivämäärän perusteella. 
 
@@ -50,7 +54,9 @@ Tässä esimerkissä nimikemalliryhmää ei ole merkitty sisällyttämään fyys
 -   5b. Rahoituksellinen varasto-otto, jossa määrä on 1 ja kappaleen kustannushinta 20,00 Yhdysvaltain dollaria (USD) (rahoituksellisesti päivitettyjen tapahtumien keskiarvo).
 -   6. Varaston sulkeminen on suoritettu. FIFO-menetelmään perustuen ensimmäinen rahoituksellisesti päivitetty varasto-otto täsmäytetään ensimmäisen rahoituksellisesti päivitetyn vastaanoton kanssa. Varasto-ottotapahtumalle tehdään –10,00 Yhdysvaltain dollarin (USD) oikaisu.
 
-Uusi keskimääräinen kustannushinta vastaa rahoituksellisesti päivitettyjen tapahtumien keskiarvoa. Seuraavissa kuvissa havainnollistamme FIFO-varastointimallia tässä tapahtumasarjassa, kun**Sisällytä fyysinen arvo** -asetus ei ole käytössä. ![FIFO-päivämäärä ilman Sisällytä fyysinen arvo -asetusta](./media/fifowithoutincludephysicalvalue.gif) **Kaavion selitys**
+Uusi keskimääräinen kustannushinta vastaa rahoituksellisesti päivitettyjen tapahtumien keskiarvoa. Seuraavissa kuvissa havainnollistamme FIFO-varastointimallia tässä tapahtumasarjassa, kun**Sisällytä fyysinen arvo** -asetus ei ole käytössä. ![FIFO - fyysistä arvoa ei sisällytetä](./media/fifowithoutincludephysicalvalue.gif) 
+
+**Kaavion selite**
 
 -   Pystysuorat nuolet kuvaavat varastotapahtumia.
 -   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
@@ -78,7 +84,9 @@ Jos **Sisällytä fyysinen arvo** -valintaruutu on valittuna nimikkeen **nimikem
 -   6a. Varaston fyysinen varastostaotto määrälle 1 yksikkökustannushintaan 21,25 USD.
 -   7. Varaston sulkeminen on suoritettu. FIFO-menetelmän perusteella ensimmäinen rahoituksellinen varasto-ottotapahtuma oikaistaan tai täsmäytetään ensimmäisen päivitetyn vastaanoton kanssa huolimatta siitä, onko se rahoituksellinen vai fyysinen.
 
-Tapahtuma 5b täsmäytetään vastaanottotapahtuman 1b kanssa. Tälle varasto-ottotapahtumalle tehdään –11,25 Yhdysvaltain dollarin (USD) oikaisu. Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistamme FIFO-varastointimallia tässä tapahtumasarjassa, kun**Sisällytä fyysinen arvo** -asetus on käytössä. ![FIFO-päivämäärä Sisällytä fyysinen arvo -asetuksella](./media/fifowithincludephysicalvalue.gif) **Kaavion selitys**
+Tapahtuma 5b täsmäytetään vastaanottotapahtuman 1b kanssa. Tälle varasto-ottotapahtumalle tehdään –11,25 Yhdysvaltain dollarin (USD) oikaisu. Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistamme FIFO-varastointimallia tässä tapahtumasarjassa, kun**Sisällytä fyysinen arvo** -asetus on käytössä. ![FIFO - fyysinen arvo sisällytetään](./media/fifowithincludephysicalvalue.gif) 
+
+**Kaavion selite**
 
 -   Pystysuorat nuolet kuvaavat varastotapahtumia.
 -   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
@@ -106,7 +114,9 @@ Merkintä on prosessi, jonka avulla voit linkittää (eli merkitä) varaston ott
 -   6a. Varaston fyysinen varastostaotto määrälle 1 yksikkökustannushintaan 21,25 USD.
 -   7. Varaston sulkeminen on suoritettu. Koska taloudellisesti päivitetty FIFO-tapahtuma on merkitty vastaanottoon, nämä tapahtumat täsmäytetään toisiaan vasten, eikä oikaisua tehdä.
 
-Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistetaan FIFO-varastomallin käyttämisen vaikutus tähän tapahtumien sarjaan kun merkintä varasto-ottojen ja vastaanottojen välillä on käytössä. ![FIFO ja merkintä](./media/fifowithmarking.gif) **Kaavion selitys**
+Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistetaan FIFO-varastomallin käyttämisen vaikutus tähän tapahtumien sarjaan kun merkintä varasto-ottojen ja vastaanottojen välillä on käytössä. ![FIFO merkinnän kanssa](./media/fifowithmarking.gif) 
+
+**Kaavion selite**
 
 -   Pystysuorat nuolet kuvaavat varastotapahtumia.
 -   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
@@ -118,6 +128,8 @@ Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja 
 -   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
 -   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
 -   Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
+
+
 
 
 

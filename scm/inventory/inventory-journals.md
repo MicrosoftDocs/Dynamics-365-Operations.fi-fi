@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: c64ba9e081ab4224556af86ec855ebf508853454
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e50d12b62e03ae3c3c6a37b5f0be879ad8d802d7
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -67,7 +68,7 @@ Kun ilmoitat tuoterakenteen valmiiksi, voit luoda tuoterakennekirjauskansion. Tu
 
 ### <a name="item-arrival"></a>Nimikkeen saapuminen
 
-Voit käyttää nimikkeen saapumisen kirjauskansiota nimikkeiden vastaanoton rekisteröintiin (esimerkiksi ostotilauksista). Nimikkeen saapumisen kirjauskansio voidaan luoda osana saapumisen hallintaa **Saapumisten yhteenveto** -sivulla. Voit myös luoda kirjauskansioviennin manuaalisesti **Nimikkeen saapuminen **-sivulla. Jos otat nimikkeen saapumisen kirjauskansion nimessä käyttöön keräyssijaintien tarkistuksen, Dynamics 365 for Operations etsii sijainnin vastaanotettaville nimikkeille ja, jos tilaa on, muodostaa saapuville nimikkeille sijaintikohteet.
+Voit käyttää nimikkeen saapumisen kirjauskansiota nimikkeiden vastaanoton rekisteröintiin (esimerkiksi ostotilauksista). Nimikkeen saapumisen kirjauskansio voidaan luoda osana saapumisen hallintaa **Saapumisten yhteenveto** -sivulla. Voit myös luoda kirjauskansioviennin manuaalisesti **Nimikkeen saapuminen**-sivulla. Jos otat nimikkeen saapumisen kirjauskansion nimessä käyttöön keräyssijaintien tarkistuksen, Dynamics 365 for Operations etsii sijainnin vastaanotettaville nimikkeille ja, jos tilaa on, muodostaa saapuville nimikkeille sijaintikohteet.
 
 ### <a name="production-input"></a>Tuotannon varastointi
 

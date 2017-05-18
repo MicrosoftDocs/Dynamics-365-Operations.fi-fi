@@ -253,7 +253,7 @@ Käyttäjän hyväksyntätestauksen ja tuotantoympäristöjen käyttöönotossa 
 
 Visual Studio -työkalu, jolla voi luoda, päivittää ja tarkistaa mallielementtejä.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\financial-dimensions\dimension-based product configuration**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**Dimensioihin perustuva konfiguraatio**
 
 Määritysmenetelmä, jolla luodaan tuotevariantteja valitsemalla tuotedimensioiden arvot.
 
@@ -503,7 +503,7 @@ Tuotteen osa.
 
 ###### <a name="product-dimension"></a>**tuotedimensio**
 
-Väriin, kokoon tai konfiguraatioon liittyvät tuotemääritteet, joita käytetään kohteessa ..\financial-dimensions\dimension-based product configuration.
+Väriin, kokoon tai konfiguraatioon liittyvät tuotemääritteet, joita käytetään dimensioihin perustuvassa konfiguraatiossa.
 
 ###### <a name="product-family"></a>**tuoteperhe**
 

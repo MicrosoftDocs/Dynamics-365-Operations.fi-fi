@@ -3,7 +3,7 @@ title: "Varaston määritys"
 description: "Tässä artikkelissa kerrotaan, miten varasto määritetään. Artikkeli sisältää tietoja varastoasettelun ja -prosessien ottamisesta käyttöön."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 52 - 43
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,19 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 437f2348603db432df6d7589e4043d8145c52a1e
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e312f953d6a29d26b98794ed213d6ec70f6aa4b7
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="warehouse-configuration"></a>Varaston määritys
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa kerrotaan, miten varasto määritetään. Artikkeli sisältää tietoja varastoasettelun ja -prosessien ottamisesta käyttöön.
 
-**Huomautus:** Tässä artikkelissa käsitellään** Varastonhallinta** -moduulin toimintoja (varaston lisätoiminnot). Se ei koske **Inventoinnin- ja varastonhallinta** -moduulin varasto-ominaisuuksia.
+**Huomautus:** Tässä artikkelissa käsitellään**Varastonhallinta** -moduulin toimintoja (varaston lisätoiminnot). Se ei koske **Inventoinnin- ja varastonhallinta** -moduulin varasto-ominaisuuksia.
 
 ## <a name="warehouse-layout"></a>Varastoasettelu
 Microsoft Dynamics 365 for Operations -järjestelmän varastonhallintajärjestelmä mahdollistaa varastoasettelun määrittämisen joustavasti muuttuvien tarpeiden mukaan siten, että varastoa voidaan käyttää mahdollisimman tehokkaasti.
@@ -66,7 +70,7 @@ Jotta lähtevät prosessit olisivat optimaalisia, on harkittava käytetäänkö 
 
 ### <a name="location-setup-wizard"></a>Ohjattu sijaintien asennustoiminto
 
-Voit luoda varastoon nopeasti sijainteja ohjatulla **Sijaintien asennus** -toiminnolla. Voit ylläpitää sijaintien nimimuotoilua osana tätä prosessia.
+Voit luoda varastoon nopeasti sijainteja ohjatulla **Sijaintien asennus**-toiminnolla. Voit ylläpitää sijaintien nimimuotoilua osana tätä prosessia.
 
 ## <a name="warehouse-processes"></a>Varastoprosessit
 On tärkeää, että varaston määrityksen osana otetaan käyttöön liiketoiminnan vaatimusten mukaiset varastoprosessit. Tärkeimmät määritettävät komponentit ovat aaltomallit, työmallit, työpoolit ja sijaintidirektiivit.
@@ -75,7 +79,12 @@ On tärkeää, että varaston määrityksen osana otetaan käyttöön liiketoimi
 
 Aaltomallien avulla voidaan ottaa käyttöön lähtevien varastoon vapautusprosessi. Heti kun tilausrivit vapautetaan (joko suoraan lähdeasiakirjasta, erätyöprosessien kautta tai aiemmin luotujen kuormitusten kautta), käyttöön otetaan aaltomallitoiminto. 
 
-Voit luoda kolmenlaisia aaltomallityyppejä: **lähetys**, **tuotantotilaus** ja **kanban**. Parametreilla määritetään, miten pitkälle järjestelmä käsittelee lähtevät työt. Aaltomalli valitaan aaltomallijakson ja mallissa määritettyjen ehtojen perusteella. Jos malli on jaksossa ylimpänä, kyseisen mallin ehdot tarkistetaan ensimmäisenä. Jos ehdot täyttyvät, aaltomalli käsitellään. Muussa tapauksessa tarkistetaan seuraavan mallin ehdot jne. Tarkimmat ehdot sisältävä malli onkin syytä sijoittaa ylimmäksi aaltomallin jaksoluettelossa, jolloin se käsitellään ensimmäisenä. Voit esimerkiksi haluta käsitellä tietyn rahdinkuljettajan työt tänään ja siirtää väliaikaisesti muiden rahdinkuljettajien töiden käsittelyä. Siinä tapauksessa kyseisen rahdinkuljettajan työn valitsevan aaltomallin on oltava luettelossa korkeammalla kuin muiden mallien. Muussa tapauksessa muiden rahdinkuljettajien työt voidaan käsitellä ennen kuin kyseisen rahdinkuljettajan työt valmistuvat. 
+Voit luoda kolmentyyppisiä aaltomalleja: 
+-   **Lähetys**
+-   **Tuotantotilaus**
+-   **Kanban** 
+
+Parametreilla määritetään, miten pitkälle järjestelmä käsittelee lähtevät työt. Aaltomalli valitaan aaltomallijakson ja mallissa määritettyjen ehtojen perusteella. Jos malli on jaksossa ylimpänä, kyseisen mallin ehdot tarkistetaan ensimmäisenä. Jos ehdot täyttyvät, aaltomalli käsitellään. Muussa tapauksessa tarkistetaan seuraavan mallin ehdot jne. Tarkimmat ehdot sisältävä malli onkin syytä sijoittaa ylimmäksi aaltomallin jaksoluettelossa, jolloin se käsitellään ensimmäisenä. Voit esimerkiksi haluta käsitellä tietyn rahdinkuljettajan työt tänään ja siirtää väliaikaisesti muiden rahdinkuljettajien töiden käsittelyä. Siinä tapauksessa kyseisen rahdinkuljettajan työn valitsevan aaltomallin on oltava luettelossa korkeammalla kuin muiden mallien. Muussa tapauksessa muiden rahdinkuljettajien työt voidaan käsitellä ennen kuin kyseisen rahdinkuljettajan työt valmistuvat. 
 
 Aallon käsittelymenetelmät on määritettävä kussakin aaltomallissa. Käytettävissä olevat menetelmät vaihtelevat aaltomallin tyypin mukaan.
 
@@ -107,6 +116,8 @@ Voit helpottaa ja nopeuttaa kuhunkin sijaintidirektiiviriviin liitettyjen toimin
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Sijaintien määrittäminen varastonhallintajärjestelmää käyttävässä varastossa (tehtäväopas)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Sijaintien määrittäminen varastonhallintajärjestelmää käyttävässä varastossa (tehtäväopas)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+
+
 
 

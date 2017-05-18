@@ -3,7 +3,7 @@ title: Tuotannon palaute
 description: "Tässä artikkelissa on tietoja tuotannon palautteesta, joka antaa työntekijöille palautetta tuotantotöistä. Artikkelissa on tietoja tavoista, joilla tuotannon palautetta voi päivittää."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 19 - 15
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,18 +19,24 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c1192695351fe1eab4beb471e5b8d4eb7a384c70
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 24bad154201c06bb8602f9ae630f4719cde96fc1
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="production-feedback"></a>Tuotannon palaute
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja tuotannon palautteesta, joka antaa työntekijöille palautetta tuotantotöistä. Artikkelissa on tietoja tavoista, joilla tuotannon palautetta voi päivittää.
 
 Tuotannon palaute antaa työntekijöille palautetta tuotantotöistä. Siinä näkyvät tuotantotilausten aika- ja materiaalikulutus, työvaiheiden määrät ja tila sekä virheet, joiden vuoksi työ tai työvaihe epäonnistuu. Tuotantopalautteen voi päivittää tuotantotilaukseen liittyviin kirjauskansioihin. **Tuotannon työkortti**- ja **Tuotannon reittikortti** -kirjauskansioihin kirjataan työ- ja työvaihekohtainen aika sekä määrät. Viimeistä työtä tai työvaihetta raportoitaessa lopputuotteen määrät voidaan ilmoittaa valmiiksi. Tuotantopalautetta voi päivittää myös **Työkorttipääte**- ja **Työnkorttilaite**-sivuilla. Näillä sivuilla tuotantopalaute voidaan päivittää työnohjauksessa, ja ne kuuluvat **Tuotannonhallinta**-moduulissa oleviin valmistuksen suoritustoimintoihin. **Työkorttipääte**-sivulla on määritettävä käyttöliittymä, jossa näkyy valitun työalueen vapautettujen töiden luettelo tärkeysjärjestyksessä. Siinä myös lisäasetuksia, kuten töiden niputus ja ryhmätyö. **Työkorttilaite**-sivulla on kosketuskäyttöön optimoitu käyttöliittymä. Molempien sivujen tuotantopalaute päivitetään tuotannon kirjauskansioista.
+
+
 
 

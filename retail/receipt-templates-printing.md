@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: fabaacbc7187b38a1745c2139a9eb7760f2be987
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a0a105ade7e47d7c554d62ee112ed03437bb7521
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -54,7 +55,7 @@ Lomakkeen asettelun suunnittelutoiminnon avulla voit luoda lomakkeen asettelun g
 5.  Kun asennus on päättynyt, syötä Dynamics 365 for Operations -käyttäjänimesi ja salasanasi ja valitse sitten **Kirjaudu sisään** aloittaaksesi suunnittelutoiminnon.
 6.  Kun tunnistetietosi on tarkistettu ja suunnittelutoiminta alkaa, voit aloittaa kuitin asettelun suunnittelun tai aiemmin luodun asettelun muokkaamisen.
 7.  Jos haluat luoda lomakkeen elementit, valitse **Ylätunniste-**, **Rivit-**, tai **Alatunniste**-osio ja vedä sitten elementti tästä osiosta työtilaan. Useimmat elementit sisältävät muuttujia, jotka täytetään automaattisesti tietokannan tiedoilla. Muut osat, kuten **Teksti**, mahdollistavat mukautetun tekstin kirjoittamisen kuitille. **Huomautus:** Osan oikeassa alakulmassa olevaa lukua muuttamalla voit määrittää, montako riviä kukin osa kattaa. Jos haluat helpottaa osan muokkaamista, lisää sen korkeutta vetämällä alaosassa olevaa koon muuttamiseen tarkoitettua palkkia. Työtilan osan korkeus ei vaikuta todellisen kuitin rivien lukumäärään.
-8.  Kun olet vetänyt elementin työtilaan, määritä osan ominaisuudet sivun alaosassa olevassa **Objektin tiedot **-ruudussa. Kirjoita yksi tai useampia seuraavista asetuksista:
+8.  Kun olet vetänyt elementin työtilaan, määritä osan ominaisuudet sivun alaosassa olevassa **Objektin tiedot**-ruudussa. Kirjoita yksi tai useampia seuraavista asetuksista:
     -   **Tasaa** – määritä kentän tasaukseksi **Vasen** tai **Oikea**.
     -   **Täyttömerkki** – Määritä tyhjän tilan merkki. Oletusarvon mukaan tyhjä tila on käytössä, mutta voit syöttää minkä tahansa merkin.
     -   **Etuliite** – Kirjoita arvo, joka näkyy valitun kentän alussa. Tämä asetus koskee vain asettelun **Rivit**-osaa.

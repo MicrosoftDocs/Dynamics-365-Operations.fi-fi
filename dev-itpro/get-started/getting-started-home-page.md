@@ -3,7 +3,7 @@ title: "Mistä aloittaa"
 description: "Aloita tästä ja päästäksesi nopeasti alkuun ja oppiaksesi Microsoft Dynamics 365 for Operationsin käyttöliittymän."
 eauthor: sericks007
 manager: AnnBe
-ms.date: 2015-12-11 15 - 19 - 40
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ o# ms.search.industry:
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 8f75131c6be6ce0f23cce456405d5e211912f19a
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69995d2f8a463e82e7a26b673737889b4ea17402
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="where-to-start"></a>Mistä aloittaa
+
+[!include[banner](../includes/banner.md)]
+
 
 Aloita tästä ja päästäksesi nopeasti alkuun ja oppiaksesi Microsoft Dynamics 365 for Operationsin käyttöliittymän.
 
@@ -36,7 +40,7 @@ Seuraavista resursseista saat yleiskuvan, miten pääset kumppanisi kanssa pereh
 - [Microsoft FastTrack for Dynamics 365 -yleiskatsaus](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
 - [Tilauksen rekisteröinti](../dev-tools/sign-up-preview-subscription.md) 
 - [Lifecycle Services (LCS) Microsoft Dynamics 365 for Operations -asiakkaille](../lifecycle-services/lcs-works-lcs.md) 
-- [Miten Microsoft Dynamics 365 for Operationsin ostaneet asiakkaat voivat pilvipalvelujen tarjoajan kautta saada Dynamics 365 for Operations 2012:n paikallisen version](../deployment/csp-download-customersource.md)
+- [Miten Microsoft Dynamics 365 for Operationsin ostaneet asiakkaat voivat pilvipalvelujen tarjoajan kautta saada Dynamics AX 2012:n paikallisen version](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>Käyttöliittymä
 Seuraavissa resursseissa on tietoja Dynamics 365 for Operationsin käyttäjäkokemuksesta. 
@@ -71,12 +75,12 @@ Tehtävän tallennustoiminto on Dynamics 365 for Operations -työkalu, jolla voi
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Uusien Dynamics 365 for Operationsin koulutuskirjastojen luominen Lifecycle Servicesissä tehtävien tallennustoiminnolla (ulkoinen linkki)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Uudet tehtäväoppaat (helmikuu 2016)](new-task-guides-available-february-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)
+
+
 
 

@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 849cffa64eaf777f9f4c9243dab41b00fa59ad79
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 33bba0e037a8ccc09b3d47268ca2b350d1d25b5f
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -60,7 +61,7 @@ April valitsee **Kirjaa**-kohdan. Hän tarkistaa valmiin tilityksen. April huoma
 | Valitut ja korostetut | Normaali            | Var-10070 | 3050    | 29.6.2015 | 29.7.2015 | 10070    | -1 000,00                      | USD      | -200,00          |
 | Valittu                 | Normaali            | KR-10070  | 3050    | 2.7.2015  | 29.7.2015 | KR-10070 | 200,00                         | USD      | 198,00           |
 
-April voi tarkistaa toimittajan tapahtumat **Toimittajan tapahtumat** -sivulla valitsemalla toimittajan **Kaikki toimittajat **-sivulla ja valitsemalla sitten toimintopaneelissa **Tapahtumat**. Tällä sivulla April näkee, että laskun saldo on -800,00. Näkyvillä ovat myös hyvityslasku (198,00) ja alennus (2,00).
+April voi tarkistaa toimittajan tapahtumat **Toimittajan tapahtumat** -sivulla valitsemalla toimittajan **Kaikki toimittajat**-sivulla ja valitsemalla sitten toimintopaneelissa **Tapahtumat**. Tällä sivulla April näkee, että laskun saldo on -800,00. Näkyvillä ovat myös hyvityslasku (198,00) ja alennus (2,00).
 
 | Tosite    | Tapahtumatyyppi | Päivämäärä      | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo | Valuutta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

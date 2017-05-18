@@ -3,7 +3,7 @@ title: "Ostojen ja kulutuksen analyysi - Power BI -sisältö"
 description: "Tässä aiheessa kuvataan, mitä kuuluu Microsoft Power BI:n ostojen ja kulutuksen analyysin sisältöpakettiin. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-12-30 09 - 40 - 51
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 8cb928cbf1316e63a8c7de833587168cd36a455c
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d392b88942f4b7d7365b000df1cd69809060b910
+ms.openlocfilehash: e39b1677038037cd91cfad8d104d0130bc20fb9b
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="purchase-spend-analysis-power-bi-content"></a>Ostojen ja kulutuksen analyysi - Power BI -sisältö
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä aiheessa kuvataan, mitä kuuluu Microsoft Power BI:n ostojen ja kulutuksen analyysin sisältöpakettiin. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
@@ -38,6 +42,7 @@ Microsoft Power BI:n ostojen ja kulutuksen analyysin sisältöpaketti luotiin os
 
 ## <a name="accessing-the-content-pack"></a>Sisältöpaketin avaaminen
 Ostojen ja kulutuksen analyysin sisältöpaketti julkaistaan käyttöönotettavana resurssina Microsoft Dynamics Lifecycle Services -palvelussa (LCS) ja se on käytettävissä Microsoft Dynamics 365 for Operations -ohjelmassa. Lisätietoja Power BI -raporttien käyttämisestä ja avaamisesta löydät artikkelista [Power BI -sisältö LCS:ssä Microsoftilta ja kumppaneiltasi](power-bi-content-microsoft-partners.md).
+Huomautus: KB 4011327 on edellytys tämän Power BI -sisällön käytölle. Kun olet kirjautunut Lifecycle Servicesiin, pääset artikkeliin tästä: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="metrics-that-are-included-in-the-content-pack"></a>Mittarit, jotka sisältyvät sisältöpakettiin
 Ostojen ja kulutuksen analyysin sisältöpakettiin kuuluu raportti, joka koostuu mittarijoukosta. Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina. Seuraavassa taulukossa on esitetty yhteenveto sisältöpaketissa käytettävistä visualisoinneista.
@@ -129,7 +134,7 @@ Ostojen ja kulutuksen analyysin sisältöpakettiin kuuluu raportti, joka koostuu
 \* Ostot tänä ja edellisenä vuonna sekä kasvu hankintaluokan mukaan
 
 ## <a name="data-model-and-entities"></a>Tietomalli ja yksiköt
-Dynamics 365 for Operations -ohjelman tietoja käytetään ostojen ja kulutuksen analyysin sisältöpaketin raportoinnissa. Nämä tiedot esitetään koottuina mittauksina, jotka vaiheistetaan yksikkösäilössä, joka on analytiikkaa varten optimoitu Microsoft SQL -tietokanta. Lisätietoja yksikkösäilöstä on kohdassa [Power BI -integraatio yksikkösäilöön Dynamicsissa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blog post. Sisältöpaketin koostetut mittaukset ovat alijoukko Microsoft Dynamics AX 2012:n ja Microsoft Dynamics 365 for Operations 2012 R3:n ostokuutiossa saatavilla olleista koostetuista mittauksista. Jotta kuution koostetut mittaukset voi tallentaa yksikkösäilöön, niistä on tehtävä käyttöönottokelpoisia. Lue lisätietoja koostettujen mittausten tallentamisesta yksikkösäilöön blogikirjoituksesta [Power BI -integraatio yksikkösäilöön Dynamicsissa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Seuraavat tärkeät koostetut mittaukset ovat käytettävissä suoraan laskun rivien yksiköstä. Niitä käytetään sisältöpaketin perustana.
+Dynamics 365 for Operations -ohjelman tietoja käytetään ostojen ja kulutuksen analyysin sisältöpaketin raportoinnissa. Nämä tiedot esitetään koottuina mittauksina, jotka vaiheistetaan yksikkösäilössä, joka on analytiikkaa varten optimoitu Microsoft SQL -tietokanta. Lisätietoja yksikkösäilöstä on kohdassa [Power BI -integraatio yksikkösäilöön Dynamicsissa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blog post. Sisältöpaketin koostetut mittaukset ovat alijoukko Microsoft Dynamics AX 2012:n ja AX 2012 R3:n ostokuutiossa saatavilla olleista koostetuista mittauksista. Jotta kuution koostetut mittaukset voi tallentaa yksikkösäilöön, niistä on tehtävä käyttöönottokelpoisia. Lue lisätietoja koostettujen mittausten tallentamisesta yksikkösäilöön blogikirjoituksesta [Power BI -integraatio yksikkösäilöön Dynamicsissa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Seuraavat tärkeät koostetut mittaukset ovat käytettävissä suoraan laskun rivien yksiköstä. Niitä käytetään sisältöpaketin perustana.
 
 | Kokonaisuus        | Tärkeät koostemitat | Dynamics 365 for Operationsin tietolähde | Kenttä              | kuvaus                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
@@ -162,6 +167,8 @@ Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisä
 -   [Organisaation sisältöpakettien luominen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Tietojen mallinnus Power BI:n avulla](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Power BI -ruutujen lisääminen työtiloihin](configure-power-bi-integration.md)
+
+
 
 
 

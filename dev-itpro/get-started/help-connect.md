@@ -3,7 +3,7 @@ title: "Yhdistäminen ohjejärjestelmään"
 description: "Tämä aihe sisältää Microsoft Dynamics 365 for Operations -ohjejärjestelmän komponenttien kuvauksen, niiden yhdistämistapojen yleiskatsauksen ja mukautetun ohjeen yhteenvedon."
 author: margoc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 5ac5e30cff2239f601778001368fa7aaba478f5c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f9af4de5f15125569d8f3e78f36e6a2b9c2a089b
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="connect-the-help-system"></a>Yhdistäminen ohjejärjestelmään
+
+[!include[banner](../includes/banner.md)]
+
 
 Tämä aihe kuvaa Microsoft Dynamics 365 for Operations -ohjejärjestelmän komponentit. Se tarjoaa näiden komponenttien yhdistämistapojen yleiskatsauksen ja mukautetun ohjeen luomisen yhteenvedon. 
 
@@ -39,19 +43,23 @@ Seuraavassa kuvassa on osa Microsoft Dynamics 365 for Operations -ohjejärjestel
 ## <a name="connecting-the-help-system"></a>Yhteyden muodostaminen ohjejärjestelmään
 Järjestelmänvalvojat voivat muodostaa **Järjestelmäparametrit**-lomakkeella yhteyden käyttöönotettaviin ohjejärjestelmän osiin. [![Järjestelmäparametrit-lomake ja ohjeen asetukset](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Toimi seuraavasti **Järjestelmän parametrit** -sivulla:
 
-1.  **Tärkeää:** Kun avaat **Ohje**-välilehden ensimmäisen kerran, sinun on muodostettava yhteys Lifecycle Services -palveluun. Valitse lomakkeen keskellä oleva linkki, odota yhteyden muodostumista, sulje valintaikkuna ja siirry **Järjestelmän parametrit** -sivulle valitsemalla **OK**.[![Yhdistä LCS:ään](./media/connect-to-lcs-crop-1024x365.png "Yhdistä LCS:ään")](./media/connect-to-lcs-crop.png)
-2.  Valitse Lifecycle Services -projekti, johon yhteys muodostetaan.
-3.  Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.
-4.  Määritä BPM-kirjastojen näyttöjärjestys. Tämä asetus määrittää, missä järjestyksessä kirjastojen tehtävätallenteet näkyvät **Ohje**-sivulla.
+> [!IMPORTANT]
+> Kun avaat **Ohje**-välilehden ensimmäisen kerran, sinun on muodostettava yhteys Lifecycle Services -palveluun. Valitse lomakkeen keskellä oleva linkki, odota yhteyden muodostumista, sulje valintaikkuna ja nouda **Järjestelmäparametrit**-sivu valitsemalla **OK**. [![Yhdistä LCS:ään](./media/connect-to-lcs-crop-1024x365.png "Connect to LCS")](./media/connect-to-lcs-crop.png)
+
+1.  Valitse Lifecycle Services -projekti, johon yhteys muodostetaan.
+2.  Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.
+3.  Määritä BPM-kirjastojen näyttöjärjestys. Tämä asetus määrittää, missä järjestyksessä kirjastojen tehtävätallenteet näkyvät **Ohje**-sivulla.
 
 Kun olet suorittanut nämä vaiheet, voit avata **Ohje**-ruudun ja valita **Tehtävän ohjaukset** -välilehden. Näet nyt tehtävän ohjaukset, jotka liittyvät valittuna olevaan Dynamics 365 for Operations -sivuun. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
 
 ### <a name="showing-translated-task-guides"></a>Käännettyjen tehtäväoppaiden näyttäminen
 
-Käännetyt tehtäväoppaat toimitettiin toukokuun 2016 yhdistetyssä APQC-kirjastossa ja käytön aloituskirjastossa. Jos haluat avata lokalisoidun tehtäväopasohjeen Microsoft Dynamics 365 for Operations, varmista, että olet muodostanut yhteyden toukokuun kirjastoon. Kullekin käyttäjälle avautuvan tehtäväoppaan kieli määräytyy kieliasetuksissa, jotka on valittu kohdassa **Asetukset** &gt; **Asetukset**. **Huomautus:** Vaikka useita tehtäväoppaita on käännetty, tehtäväoppaiden nimet eivät näy tällä hetkellä Dynamics 365 for Operations -asiakasohjelmassa. Lisäksi vain helmikuussa 2016 julkaistujen tehtäväoppaiden käännökset ovat saatavana toukokuun kirjastossa. Lisää käännöksiä julkaistaan päivitetyssä kirjastossa.
+Käännetyt tehtäväoppaat toimitettiin toukokuun 2016 yhdistetyssä APQC-kirjastossa ja käytön aloituskirjastossa. Jos haluat avata lokalisoidun tehtäväopasohjeen Microsoft Dynamics 365 for Operations, varmista, että olet muodostanut yhteyden toukokuun kirjastoon. Kullekin käyttäjälle avautuvan tehtäväoppaan kieli määräytyy kieliasetuksissa, jotka on valittu kohdassa **Asetukset** &gt; **Asetukset**. 
 
--   Jos tehtäväopas on käännetty, tehtäväopas avautuu valitsemallasi kielellä.
--   Jos tehtäväopasta ei ole vielä käännetty, vain osa tekstistä (ohjausobjektien teksti) näkyy valitun kielisenä.
+> [!NOTE]
+> Vaikka useita tehtäväoppaita on käännetty, tehtäväoppaiden nimet eivät näy tällä hetkellä Dynamics 365 for Operations -asiakasohjelmassa. Lisäksi vain helmikuussa 2016 julkaistujen tehtäväoppaiden käännökset ovat saatavana toukokuun kirjastossa. Lisää käännöksiä julkaistaan päivitetyssä kirjastossa.
+> -   Jos tehtäväopas on käännetty, tehtäväopas avautuu valitsemallasi kielellä.
+> -   Jos tehtäväopasta ei ole vielä käännetty, vain osa tekstistä (ohjausobjektien teksti) näkyy valitun kielisenä.
 
 ## <a name="creating-custom-help"></a>Mukautetun ohjeen luominen
 Voit oman mukautetun ohjeen Dynamics 365 for Operations -toteutuksella luomalla sille tehtävätallenteita ja tallentamalla se LCS:n liiketoimintaprosessien kirjastoon. Kumppanit voivat puolestaan siirtää kirjasto yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Voit myös kopioida yhdistetyn yleisen APQC-kirjaston sekä avata oman kopion, avata tehtävätallenteet sieltä, muokata niitä ja tallentaa sitten muutetut tallenteet. Lisätietoja on artikkelissa [Ohjeistuksena tai koulutuksena käytettävien tehtävätallenteiden luominen](../user-interface/task-recorder.md).
@@ -65,6 +73,7 @@ Voit oman mukautetun ohjeen Dynamics 365 for Operations -toteutuksella luomalla 
 
 [Dokumentaation tai koulutuksen luominen tehtävätallenteiden avulla](../user-interface/task-recorder-training-docs.md)
 
-[Uusien Dynamics 365 for Operationsin koulutuskirjastojen luominen Lifecycle Servicesissä tehtävien tallennustoiminnolla (ulkoinen linkki)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+
+
 
 

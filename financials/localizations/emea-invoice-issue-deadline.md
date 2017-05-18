@@ -17,10 +17,11 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 6bb98cc72c2ec0c1551412dd39d5bea3ce10e2cd
-ms.openlocfilehash: 6121be0dd02659e4e8466b0c1381678be64fefc2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f1e572ae423a05337117bcd5ea3ac3e12bd0d42b
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -45,7 +46,7 @@ Seuraavassa taulukossa on esitetty ne edellytykset, joiden on oltava kohdallaan,
 | Luokka            | Edellytys                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Maa/alue      | Yrityksen ensisijainen osoitteen on oltava EU-jäsenvaltiossa.                                                                                                                                                                                                                                                                                                                    |
-| Liittyvät asetustehtävät | **Päivämäärävälit**-sivulla määritetään päivämääräväli, jota käytetään laskemaan laskun eräpäivä. (Valitse **Kirjanpito** &gt; **Kirjanpidon asetukset** &gt; **Päivämäärävälit**.) Määritä **Ulkomaankaupan parametrit** -sivulla ulkomaankaupan ominaisuudet eri maille/alueille. (Valitse **Verot** &gt; **Asetukset** &gt; ** Ulkomaankauppa** &gt; ** Ulkomaankaupan parametrit**.) |
+| Liittyvät asetustehtävät | **Päivämäärävälit**-sivulla määritetään päivämääräväli, jota käytetään laskemaan laskun eräpäivä. (Valitse **Kirjanpito** &gt; **Kirjanpidon asetukset** &gt; **Päivämäärävälit**.) Määritä **Ulkomaankaupan parametrit** -sivulla ulkomaankaupan ominaisuudet eri maille/alueille. (Valitse **Verot** &gt; **Asetukset** &gt; **Ulkomaankauppa** &gt; **Ulkomaankaupan parametrit**.) |
 
 ## <a name="invoice-issue-due-date-calculation-rule"></a>Laskuvirhe päivämäärän laskentasäännön takia
 Käytä **Määritä laskusääntö laskun kirjoituspäivälle**-sivua määrittämään laskun kirjoituspäivän eräpäivän laskusäännön asettamalla päivämäärävälikoodin maa- / aluetyyppiin.

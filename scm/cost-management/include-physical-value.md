@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 961f768ac4b0044e138aeaec41c7f915b92c33df
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d3efa701e13a6b1593576082499decc439cf0d29
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -46,7 +47,7 @@ Valintaruudulla on hieman erilaisia vaikutuksia käytettävän varastomallin muk
 -   Jos et valitse **Sisällytä fyysinen arvo** -valintaruutua käyttäessäsi näitä varastomalleja, varaston sulkeminen selvittää vain kirjanpidollisesti päivitetyt tapahtumat.
 -   Kun käytät painotettua keskiarvoa tai painotetun keskiarvon päivämäärän varastomallia, varaston sulkeminen selvittää vain rahoituksellisesti päivitetyt tapahtumat riippumatta siitä, onko **Sisällytä fyysinen arvo** -valintaruutu valittu.
 
-**Esimerkki 1** Olet valinnut** Sisällytä fyysinen arvo** -valintaruudun ja saat seuraavat ostotilaukset:
+**Esimerkki 1** Olet valinnut**Sisällytä fyysinen arvo** -valintaruudun ja saat seuraavat ostotilaukset:
 
 -   Ostotilaus, jonka määrä on 2 ja kustannushinta 10,00 USD, on pakkausluettelopäivitetty
 -   Ostotilaus, jonka määrä on 3 ja kustannushinta 12,00 USD, on laskupäivitetty

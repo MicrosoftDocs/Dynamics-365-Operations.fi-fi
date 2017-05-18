@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 9dca5dec846670da25926826f59d7bce0fa0dcea
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e2f3a352ca70472de838271fdedfede575cb839d
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Lataa sähköiset raportoinnin määritykset Lifecycle Services -palvelusta
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä aiheessa neuvotaan, miten Microsoft Dynamics 365 for Operations -järjestelmän sähköisen raportoinnin (ER) konfiguraatiot ladataan Microsoft Dynamics Lifecycle Services -palvelusta (LCS).
 
@@ -43,9 +47,10 @@ Tässä oppaassa kuvataan uusimpien sähköisten raportoinnin (ER) konfiguraatio
     1.  Lisää uusi säilö napsauttamalla **Lisää**-linkkiä.
     2.  Valitse säilön tyypiksi **LCS**.
     3.  Valitse **Luo säilö**.
-    4.  Kirjoita säilön nimi ja kuvaus.
-    5.  Valitse **OK**, niin vahvistat uuden säilön luonnin.
-    6.  Valitse ruudukossa uusi **LCS**-tyypin säilö.
+    4. Noudata luvananto-ohjeita tarvittaessa.
+    5.  Kirjoita säilön nimi ja kuvaus.
+    6.  Valitse **OK**, niin vahvistat uuden säilön luonnin.
+    7.  Valitse ruudukossa uusi **LCS**-tyypin säilö.
 
 6.  Valitsemalla **Avaa** voit tarkastella valitun säilön ER-konfiguraatioita. [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  Valitse vasemman ruudun konfiguraatioiden puurakenteessa tarvitsemasi ER-konfiguraatio.
@@ -58,5 +63,7 @@ Tässä oppaassa kuvataan uusimpien sähköisten raportoinnin (ER) konfiguraatio
 --------
 
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
+
+
 
 

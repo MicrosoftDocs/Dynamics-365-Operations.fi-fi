@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: d38d05fe445bf0326d408038dff84ccf8c0ff64c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b6b0edfbbcebed323be63d5bc892dba1170b9c67
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -110,7 +111,7 @@ Kun asiakirjatyypin sijainniksi on määritetty **Arkistointihakemisto**, voit t
 
 ### <a name="file-destination"></a>Tiedostokohde
 
-Jos valitset **Käytössä**-asetukseksi **Kyllä **, avaamis- tai tallennusikkuna avautuu, kun määritys on valmis.
+Jos valitset **Käytössä**-asetukseksi **Kyllä**, avaamis- tai tallennusikkuna avautuu, kun määritys on valmis.
 
 ### <a name="screen-destination"></a>Näyttökohde
 

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3b16ef53f9fb57a6663db0be1f7e0a57471db2fb
-ms.openlocfilehash: 7025072cd29aac4ceb13b5594c3e321350777cf1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 11fa0f0afa7ab400c87d6e7558292385ae80c8b2
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Voit esimerkiksi tarjota 2 prosentin käteisalennuksen, jos lasku maksetaan 10 p
 ## <a name="credit-notes-with-discounts"></a>Hyvityslaskut ja alennukset
 Jos asiakkaat palauttavat laskulla olevia nimikkeitä, voit antaa heille hyvityslaskun. Jos alkuperäiselle laskulle oli annettu käteisalennus, asiakkaan hyvityslaskun summa tulisi olla asiakkaan saaman käteisalennuksen nettosumma. Jos **Laske käteisalennukset hyvityslaskuille** -asetukseksi on määritetty **Kyllä** **Myyntireskontran parametrit** -sivulla, alennus lasketaan automaattisesti hyvityslaskulle. 
 
-Olet esimerkiksi voinut tarjota maksuehdon, jossa tarjotaan 2 prosentin käteisalennus, jos lasku maksetaan 10 päivän kuluessa. Olet kirjannut laskun summalla 100,00, ja asiakas on käyttänyt käteisalennuksensa. Jos asiakas palauttaa tuotteen, ja annat hänelle hyvityslaskun, voit kirjata hyvityslaskun summalla -100,00. Kun tarkastelet hyvityslaskua **Tilitä avoimet tapahtumat** -sivulla,** 98,00** näkyy **Tilitettävä summa** -kentässä ja **-2,00** näkyy **Käteisalennuksen summa** -kentässä. Alennussumma kirjataan käteisalennustilille.
+Olet esimerkiksi voinut tarjota maksuehdon, jossa tarjotaan 2 prosentin käteisalennus, jos lasku maksetaan 10 päivän kuluessa. Olet kirjannut laskun summalla 100,00, ja asiakas on käyttänyt käteisalennuksensa. Jos asiakas palauttaa tuotteen, ja annat hänelle hyvityslaskun, voit kirjata hyvityslaskun summalla -100,00. Kun tarkastelet hyvityslaskua **Tilitä avoimet tapahtumat** -sivulla,**98,00** näkyy **Tilitettävä summa** -kentässä ja **-2,00** näkyy **Käteisalennuksen summa** -kentässä. Alennussumma kirjataan käteisalennustilille.
 
 ## <a name="overpaymentunderpayment-amounts"></a>Liika-/alisuorituksen summat
 Kun asiakas suorittaa maksun, jäljelle voi jäädä hyvin pieniä, tilitettäviä summia. Voit esimerkiksi laskuttaa asiakkaalta 1 000,00, ja asiakas maksaa 999,90. Jos jäljelle jäävä summa on pienempi kuin liika-/alisuorituksen summa, joka on määritetty **Myyntireskontran parametrit** -sivulla, erotus kirjataan automaattisesti liika-/alisuorituksien kirjanpitotilille.
