@@ -3,7 +3,7 @@ title: "Painotettu keskiarvo, fyysinen arvo ja merkintä"
 description: 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-17 15 - 15 - 52
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,20 +19,31 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 1afd7855fd05d0bacb60a7a45bba68e7041a4f4b
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e4d753a4c267058f29443de3ff73aebc2a7d24f2
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Painotettu keskiarvo, fyysinen arvo ja merkintä
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Kun suoritat varaston sulkemisen, kaikki vastaanotot täsmäytetään suhteessa virtuaalivarastostaottoon, joka sisältää vastaanotetun kokonaismäärän ja -arvon. Tällä virtuaalivarastostaotolla on vastaava virtuaalivastaanotto, josta varastostaotot täsmäytetään. Näin kaikille varastostaotoille tulee sama keskimääräinen kustannus. Virtuaalivarastostaoton ja -vastaanoton voi nähdä virtuaalisiirtona, jota kutsutaan painotetun keskiarvon varastonsulkemissiirroksi.
-Jos vastaanottoja on vain yksi, kaikki varastostaotot voi täsmäyttää siitä, eikä virtuaalisiirtoa luoda. Painotettua keskiarvoa käytettäessä varastotapahtumat merkitään siten, että tietty nimikkeen vastaanotto täsmäytetään suhteessa tiettyyn varastostaottoon painotetun keskiarvon säännön käyttämisen sijaan. Käytettäessä painotetun keskiarvon varastomallia on suositeltavaa käyttää kuukausittaista varaston sulkemista. Varaston painotetun keskiarvon kustannuslaskentamenetelmä lasketaan seuraavalla kaavalla:
+
+Jos vastaanottoja on vain yksi, kaikki varastostaotot voi täsmäyttää siitä, eikä virtuaalisiirtoa luoda. 
+
+Painotettua keskiarvoa käytettäessä varastotapahtumat merkitään siten, että tietty nimikkeen vastaanotto täsmäytetään suhteessa tiettyyn varastostaottoon painotetun keskiarvon säännön käyttämisen sijaan. 
+
+Käytettäessä painotetun keskiarvon varastomallia on suositeltavaa käyttää kuukausittaista varaston sulkemista. 
+
+Varaston painotetun keskiarvon kustannuslaskentamenetelmä lasketaan seuraavalla kaavalla:
 -   Painotettu keskiarvo = (Q1\*P1 + Q2\*P2 + Qn\*Pn) / (Q1 + Q2 + Qn)
 
 Varasto-otoista lähtevät varastotapahtumat Sisältää myyntitilaukset, varastokirjauskansiot ja tuotantotilaukset, jotka tapahtuvat arvioituun kustannushintaan kirjauspäivämääränä. Tätä arvioitua kustannushintaa kutsutaan myös keskiarvoksi. Varaston sulkemisen yhteydessä järjestelmä analysoi edellisen ja nykyisen kauden varastotapahtumat ja määrittää, kumpaa seuraavista sulkemisperiaatteista käytetään.
@@ -58,7 +69,11 @@ Seuraavien kohtien skenaariossa on kirjattu vastaanotto ja varastostaotto, jotka
 -   2b. Rahoituksellinen varasto-otto päivitetty määrälle 2 yksikköhintaan 10,00 USD
 -   3. Varaston sulkeminen suoritetaan suoran täsmäytyksen menetelmällä. Tällöin rahoituksellinen varastovastaanotto täsmäytetään rahoituksellisen varasto-oton kanssa.
 
-Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja suoran täsmäytysperiaatteen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehtoa ei käytetä. ![Painotettu keskiarvo - suora maksu - fyysistä arvoa ei sisällytetä](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) Kaavion selite
+Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja suoran täsmäytysperiaatteen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehtoa ei käytetä. 
+
+![Painotettu keskiarvo - suora maksu - fyysistä arvoa ei sisällytetä](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+
+**Kaavion selite**
 -   Pystysuorat nuolet kuvaavat varastotapahtumia.
 -   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
 -   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
@@ -71,7 +86,11 @@ Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja suoran täsmäytysp
 -   Varaston sulkemisen suorittamat täsmäytykset on merkitty punaisilla pistenuolilla, jotka osoittavat vinosti vastaanotosta varasto-ottoon.
 
 ## <a name="weighted-average-summarized-settlement-without-the-include-physical-value-option"></a>Painotetun keskiarvon yhteenvetotäsmäytys ilman Sisällytä fyysinen arvo -valintaa
-Painotettu käyttää täsmäytysperiaatteena sitä, että kaikki tietyllä sulkemisjaksolla tapahtuvat vastaanotot lasketaan yhteen Painotetun keskiarvon varaston sulkeminen -nimiseksi tapahtumaksi. Kaikki jakson vastaanotot täsmäytetään luodun uuden varastosiirtotapahtuman varastostaottoa vastaan. Kaikki jakson varastostaotot täsmäytetään uuden varastosiirtotapahtuman vastaanottoa vastaan. Jos käytettävissä oleva varasto on varaston sulkemisen jälkeen positiivinen, käytettävistä olevasta varastosta ja varaston arvosta tehdään yhteenveto uuteen varastosiirtotapahtumaan (vastaanotto). Jos käytettävissä oleva varasto on varaston sulkemisen jälkeen negatiivinen, käytettävissä oleva varasto ja varaston arvo ovat sellaisten yksittäisten varastostaottojen summa, joita ei ole täysin selvitetty. Oheisessa esimerkkitilanteessa on kirjattu useita rahoituksellisesti päivitettyjä vastaanottoja ja yksi varasto-otto. Varaston sulkemisen yhteydessä järjestelmä luo ja kirjaa yhteenlasketun varastosiirtotapahtuman sekä täsmäyttää kaikki jakson vastaanotot yhteenlasketun varastosiirron varastostaottotapahtumaa vastaan. Kaikki jaksolle kirjatut varastostaotot täsmäytetään yhteenlasketun varastosiirron vastaanottotapahtumaa vastaan. Painotetuksi keskiarvoksi on laskettu 15,00 USD. Varastostaotto on alun perin kirjattu arvioituun kustannushintaan 14,67 USD. Varastostaottotapahtumalle luodaan ja kirjataan siten 0,33 USD:n negatiivinen oikaisu. Varaston sulkemispäivämääränä käytettävissä olevassa varastossa on 3 kappaletta, ja niiden arvo on 45,00 Yhdysvaltain dollaria (USD). Seuraavat tapahtumat on havainnollistettu oheisessa kuvassa:
+Painotettu käyttää täsmäytysperiaatteena sitä, että kaikki tietyllä sulkemisjaksolla tapahtuvat vastaanotot lasketaan yhteen Painotetun keskiarvon varaston sulkeminen -nimiseksi tapahtumaksi. Kaikki jakson vastaanotot täsmäytetään luodun uuden varastosiirtotapahtuman varastostaottoa vastaan. Kaikki jakson varastostaotot täsmäytetään uuden varastosiirtotapahtuman vastaanottoa vastaan. Jos käytettävissä oleva varasto on varaston sulkemisen jälkeen positiivinen, käytettävistä olevasta varastosta ja varaston arvosta tehdään yhteenveto uuteen varastosiirtotapahtumaan (vastaanotto). Jos käytettävissä oleva varasto on varaston sulkemisen jälkeen negatiivinen, käytettävissä oleva varasto ja varaston arvo ovat sellaisten yksittäisten varastostaottojen summa, joita ei ole täysin selvitetty. Oheisessa esimerkkitilanteessa on kirjattu useita rahoituksellisesti päivitettyjä vastaanottoja ja yksi varasto-otto. 
+
+Varaston sulkemisen yhteydessä järjestelmä luo ja kirjaa yhteenlasketun varastosiirtotapahtuman sekä täsmäyttää kaikki jakson vastaanotot yhteenlasketun varastosiirron varastostaottotapahtumaa vastaan. Kaikki jaksolle kirjatut varastostaotot täsmäytetään yhteenlasketun varastosiirron vastaanottotapahtumaa vastaan. Painotetuksi keskiarvoksi on laskettu 15,00 USD. Varastostaotto on alun perin kirjattu arvioituun kustannushintaan 14,67 USD. Varastostaottotapahtumalle luodaan ja kirjataan siten 0,33 USD:n negatiivinen oikaisu. Varaston sulkemispäivämääränä käytettävissä olevassa varastossa on 3 kappaletta, ja niiden arvo on 45,00 Yhdysvaltain dollaria (USD). 
+
+Seuraavat tapahtumat on havainnollistettu oheisessa kuvassa:
 -   1a. Varaston fyysinen vastaanotto päivitetty määrälle 2 yksikkökustannuksen ollessa 11,00 USD.
 -   1b. Varaston taloudellinen vastaanotto päivitetty määrälle 2 yksikkökustannuksen ollessa 14,00 USD.
 -   2a. Varaston fyysinen vastaanotto päivitetty määrälle 1 yksikkökustannuksen ollessa 12,00 USD.
@@ -84,7 +103,11 @@ Painotettu käyttää täsmäytysperiaatteena sitä, että kaikki tietyllä sulk
 -   6a. "Painotetun keskiarvon varaston sulkemistapahtuman" rahoituksellinen varasto-otto muodostetaan, jotta saadaan varaston kaikkien rahoituksellisten vastaanottojen täsmäytysten yhteenveto.
 -   6b. "Painotetun keskiarvon varastosulkemistapahtuman” rahoituksellinen varastovastaanotto muodostetaan kohteen 5a vastakirjaukseksi.
 
-Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäytyksen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehtoa ei käytetä. ![Painotettu keskiarvo - maksun yhteenveto - fyysistä arvoa ei sisällytetä](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) Kaavion selite
+Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäytyksen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehtoa ei käytetä. 
+
+![Painotettu keskiarvo - maksun yhteenveto - fyysistä arvoa ei sisällytetä](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+
+**Kaavion selite**
 -   Pystysuorat nuolet kuvaavat varastotapahtumia.
 -   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
 -   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
@@ -99,7 +122,9 @@ Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäyt
 -   Vihreä nuoli tarkoittaa vastakirjauksena toimivaa järjestelmän muodostamaa vastaanottotapahtumaa, johon alun perin kirjatut varasto-ottotapahtumat täsmäytetään
 
 ## <a name="weighted-average-direct-settlement-with-the-include-physical-value-option"></a>Painotetun keskiarvon suora täsmäytys ja Sisällytä fyysinen arvo -valinta
-Parametri toimii painotetun keskiarvon varastomallin yhteydessä eri tavoin kuin tuotteen aiemmissa versioissa. Valitse Sisällytä fyysinen arvo -valintaruutu nimikkeelle Nimikemalliryhmä-lomakkeesta. Järjestelmä käyttää tämän jälkeen fyysisesti päivitettyjä vastaanottoja arvioidun kustannushinnan tai käyttökeskiarvon laskemiseen. Varastostaotot kirjataan tämän arvioidun kustannushinnan perusteella kauden aikana. Varaston sulkemisen aikana vain rahoituksellisesti päivitetyt vastaanotot otetaan huomioon painotetun keskiarvon laskennassa. On suositeltavaa, että varasto suljetaan painotetun keskiarvon varastomallia käytettäessä joka kuukausi. Tässä painotetun keskiarvon suoran täsmäytyksen esimerkissä nimikemalliryhmä on merkitty sisältämään fyysinen arvo. Alapuolella olevassa graafisessa esityksessä on kuvattu seuraavat tapahtumat:
+Parametri toimii painotetun keskiarvon varastomallin yhteydessä eri tavoin kuin tuotteen aiemmissa versioissa. Valitse Sisällytä fyysinen arvo -valintaruutu nimikkeelle Nimikemalliryhmä-lomakkeesta. Järjestelmä käyttää tämän jälkeen fyysisesti päivitettyjä vastaanottoja arvioidun kustannushinnan tai käyttökeskiarvon laskemiseen. Varastostaotot kirjataan tämän arvioidun kustannushinnan perusteella kauden aikana. Varaston sulkemisen aikana vain rahoituksellisesti päivitetyt vastaanotot otetaan huomioon painotetun keskiarvon laskennassa. On suositeltavaa, että varasto suljetaan painotetun keskiarvon varastomallia käytettäessä joka kuukausi. Tässä painotetun keskiarvon suoran täsmäytyksen esimerkissä nimikemalliryhmä on merkitty sisältämään fyysinen arvo. 
+
+Alapuolella olevassa graafisessa esityksessä on kuvattu seuraavat tapahtumat:
 -   1a. Varaston fyysinen vastaanotto päivitetty määrälle 1 yksikkökustannuksen ollessa 11,00 USD.
 -   1b. Varaston taloudellinen vastaanotto päivitetty määrälle 1 yksikkökustannuksen ollessa 10,00 USD.
 -   2a. Varaston fyysinen vastaanotto päivitetty määrälle 1 yksikkökustannuksen ollessa 15,00 USD.
@@ -107,7 +132,11 @@ Parametri toimii painotetun keskiarvon varastomallin yhteydessä eri tavoin kuin
 -   3b. Rahoituksellinen varasto-ottopäivitys, jossa määrä on 1 ja kappalehinta 12,50 Yhdysvaltain dollaria (USD) (keskimääräinen kustannus, koska fyysisen vastaanoton arvo otetaan huomioon).
 -   4. Varaston sulkeminen on suoritettu. Varaston sulkemisen aikana järjestelmä ohittaa kaikki varastotapahtumat, jotka on päivitetty vain fyysisesti. Suoran täsmäytyksen periaatetta noudatetaan sen sijaan, koska rahoituksellisia vastaanottoja on vain yksi. Siihen varastotapahtumaan kirjataan 2,50 Yhdysvaltain dollarin (USD) oikaisu, joka on otettu rahoituksellisesti varaston sulkemispäivämääränä. Varaston sulkemisen jälkeen käytettävissä olevan varaston määrä on 1 ja keskimääräinen kustannushinta 15,00 Yhdysvaltain dollaria.
 
-Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja suoran täsmäytysperiaatteen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehto on käytössä. ![Painotettu keskiarvo - suora maksu - fyysinen arvo sisällytetään](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) Kaavion selite
+Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja suoran täsmäytysperiaatteen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehto on käytössä. 
+
+![Painotettu keskiarvo - suora maksu - fyysinen arvo sisällytetään](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+
+**Kaavion selite**
 -   Pystysuorat nuolet kuvaavat varastotapahtumia.
 -   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
 -   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
@@ -120,7 +149,9 @@ Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja suoran täsmäytysp
 -   Varaston sulkemisen suorittamat täsmäytykset on merkitty punaisilla pistenuolilla, jotka osoittavat vinosti vastaanotosta varasto-ottoon.
 
 ## <a name="weighted-average-summarized-settlement-with-the-include-physical-value-option"></a>Painotetun keskiarvon yhteenvetotäsmäytys ja Sisällytä fyysinen arvo -valinta
-Sisällytä fyysinen arvo -parametri toimii painotetun keskiarvon yhteydessä eri tavoin kuin aiemmissa versioissa. Valitse Sisällytä fyysinen arvo -valintaruutu nimikkeelle Nimikemalliryhmä-sivulta. Järjestelmä käyttää tämän jälkeen fyysisesti päivitettyjä vastaanottoja arvioidun kustannushinnan tai käyttökeskiarvon laskemiseen. Varasto-otot kirjataan kauden aikana tätä arvioitua kustannushintaa noudattaen. Varaston sulkemisen aikana vain rahoituksellisesti päivitetyt vastaanotot otetaan huomioon painotetun keskiarvon laskennassa. On suositeltavaa, että varasto suljetaan painotetun keskiarvon varastomallia käytettäessä joka kuukausi. Tässä painotetun keskiarvon yhteenvetotäsmäytyksen esimerkissä varastomalli on merkitty sisältämään fyysinen arvo. Seuraavat tapahtumat on havainnollistettu oheisessa kuvassa:
+Sisällytä fyysinen arvo -parametri toimii painotetun keskiarvon yhteydessä eri tavoin kuin aiemmissa versioissa. Valitse Sisällytä fyysinen arvo -valintaruutu nimikkeelle Nimikemalliryhmä-sivulta. Järjestelmä käyttää tämän jälkeen fyysisesti päivitettyjä vastaanottoja arvioidun kustannushinnan tai käyttökeskiarvon laskemiseen. Varasto-otot kirjataan kauden aikana tätä arvioitua kustannushintaa noudattaen. Varaston sulkemisen aikana vain rahoituksellisesti päivitetyt vastaanotot otetaan huomioon painotetun keskiarvon laskennassa. On suositeltavaa, että varasto suljetaan painotetun keskiarvon varastomallia käytettäessä joka kuukausi. Tässä painotetun keskiarvon yhteenvetotäsmäytyksen esimerkissä varastomalli on merkitty sisältämään fyysinen arvo. 
+
+Seuraavat tapahtumat on havainnollistettu oheisessa kuvassa:
 -   1a. Varaston fyysinen vastaanotto päivitetty määrälle 2 yksikkökustannuksen ollessa 11,00 USD.
 -   1b. Varaston taloudellinen vastaanotto päivitetty määrälle 2 yksikkökustannuksen ollessa 14,00 USD.
 -   2. Varaston fyysinen vastaanotto päivitetty määrälle 1 yksikkökustannuksen ollessa 10,00 USD.
@@ -134,7 +165,11 @@ Sisällytä fyysinen arvo -parametri toimii painotetun keskiarvon yhteydessä er
 -   7a. "Painotetun keskiarvon varaston sulkemistapahtuman" rahoituksellinen varasto-otto muodostetaan, jotta saadaan varaston kaikkien rahoituksellisten vastaanottojen täsmäytysten yhteenveto.
 -   7b. "Painotetun keskiarvon varastosulkemistapahtuman” rahoituksellinen varastovastaanotto muodostetaan kohteen 5a vastakirjaukseksi.
 
-Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäytyksen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehtoa ei käytetä. ![Painotettu keskiarvo - maksun yhteenveto - fyysinen arvo sisällytetään](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) Kaavion selite
+Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäytyksen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehtoa ei käytetä. 
+
+![Painotettu keskiarvo - maksun yhteenveto - fyysinen arvo sisällytetään](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+
+**Kaavion selite**
 -   Pystysuorat nuolet kuvaavat varastotapahtumia.
 -   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
 -   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
@@ -149,7 +184,21 @@ Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäyt
 -   Vihreä nuoli tarkoittaa vastakirjauksena toimivaa järjestelmän muodostamaa vastaanottotapahtumaa, johon alun perin kirjatut varasto-ottotapahtumat täsmäytetään
 
 ## <a name="weighted-average-with-marking"></a>Painotettu keskiarvo ja merkintä
-Merkintä on prosessi, jonka avulla voit linkittää (eli merkitä) varaston ottotapahtuman vastaanottotapahtumaan. Merkintä voi tapahtua joko ennen tapahtuman kirjaamista tai sen jälkeen. Merkinnän avulla voit varmistaa tarkan varastokustannuksen, kun tapahtuma kirjataan tai kun varaston sulkeminen suoritetaan. Oletetaan esimerkiksi, että yrityksesi asiakaspalveluosasto on hyväksynyt kiireellisen tilauksen tärkeältä asiakkaalta. Koska tilaus on kiireellinen, tästä nimikkeestä on maksettava tavallista enemmän, jotta asiakkaan pyynnön voisi toteuttaa. Sinun on varmistettava, että tämän varastonimikkeen kustannus otetaan huomioon myyntitilauslaskun katteessa (tai myydyn tuotteen kustannuksissa). Kun ostotilaus kirjataan, varasto vastaanotetaan hintaan 120,00 USD. Esimerkiksi tämä myyntitilausasiakirja on merkitty ostotilaukseen ennen pakkausluettelon tai laskun kirjausta. Tämän jälkeen myytyjen tuotteiden kustannukset ovat 120,00 USD nimikkeen nykyisen keskimääräinen käyttökustannuksen sijaan. Jos myyntitilauksen pakkausluettelo tai lasku kirjataan ennen merkintää, myydyn tavaran kustannus kirjataan käyttäen käyttökeskiarvon mukaista kustannushintaa. Ennen varaston sulkemista nämä kaksi tapahtumaa voidaan vielä merkitä toisiinsa. Varastostaottotapahtuma merkitään varastostaottotapahtumaan. Tämän jälkeen nimikkeen nimikemalliryhmälle valittu arvostusmenetelmä ohitetaan, ja järjestelmä täsmäyttää nämä tapahtumat keskenään. Voit merkitä varastostaottotapahtuman vastaanottoon kirjauksen jälkeen. Voit tehdä tämän myyntitilausrivillä Myyntitilauksen tiedot -sivulla. Voit tarkastella avoimia vastaanottotapahtumia Merkintä-sivulla. Voit merkitä varastostaottotapahtuman vastaanottoon tapahtuman kirjauksen jälkeen. Voit täsmäyttää tai merkitä varastostaottotapahtuman varastoidun nimikkeen avoimeen vastaanottotapahtumaan kirjatusta varaston oikaisukirjauskansiosta. Alapuolella olevassa graafisessa esityksessä on kuvattu seuraavat tapahtumat:
+Merkintä on prosessi, jonka avulla voit linkittää (eli merkitä) varaston ottotapahtuman vastaanottotapahtumaan. Merkintä voi tapahtua joko ennen tapahtuman kirjaamista tai sen jälkeen. Merkinnän avulla voit varmistaa tarkan varastokustannuksen, kun tapahtuma kirjataan tai kun varaston sulkeminen suoritetaan. 
+
+Oletetaan esimerkiksi, että yrityksesi asiakaspalveluosasto on hyväksynyt kiireellisen tilauksen tärkeältä asiakkaalta. Koska tilaus on kiireellinen, tästä nimikkeestä on maksettava tavallista enemmän, jotta asiakkaan pyynnön voisi toteuttaa. Sinun on varmistettava, että tämän varastonimikkeen kustannus otetaan huomioon myyntitilauslaskun katteessa (tai myydyn tuotteen kustannuksissa). 
+
+Kun ostotilaus kirjataan, varasto vastaanotetaan hintaan 120,00 USD. Esimerkiksi tämä myyntitilausasiakirja on merkitty ostotilaukseen ennen pakkausluettelon tai laskun kirjausta. Tämän jälkeen myytyjen tuotteiden kustannukset ovat 120,00 USD nimikkeen nykyisen keskimääräinen käyttökustannuksen sijaan. Jos myyntitilauksen pakkausluettelo tai lasku kirjataan ennen merkintää, myydyn tavaran kustannus kirjataan käyttäen käyttökeskiarvon mukaista kustannushintaa. 
+
+Ennen varaston sulkemista nämä kaksi tapahtumaa voidaan vielä merkitä toisiinsa. 
+
+Varastostaottotapahtuma merkitään varastostaottotapahtumaan. Tämän jälkeen nimikkeen nimikemalliryhmälle valittu arvostusmenetelmä ohitetaan, ja järjestelmä täsmäyttää nämä tapahtumat keskenään. 
+
+Voit merkitä varastostaottotapahtuman vastaanottoon kirjauksen jälkeen. Voit tehdä tämän myyntitilausrivillä Myyntitilauksen tiedot -sivulla. Voit tarkastella avoimia vastaanottotapahtumia Merkintä-sivulla. 
+
+Voit merkitä varastostaottotapahtuman vastaanottoon tapahtuman kirjauksen jälkeen. Voit täsmäyttää tai merkitä varastostaottotapahtuman varastoidun nimikkeen avoimeen vastaanottotapahtumaan kirjatusta varaston oikaisukirjauskansiosta. 
+
+Alapuolella olevassa graafisessa esityksessä on kuvattu seuraavat tapahtumat:
 -   1a. Varaston fyysinen vastaanotto määrälle 1 yksikkökustannuksen ollessa 10,00 USD.
 -   1b. Varaston taloudellinen vastaanotto määrälle 1 yksikkökustannuksen ollessa 10,00 USD.
 -   2a. Varaston fyysinen vastaanotto määrälle 1 yksikkökustannuksen ollessa 20,00 USD.
@@ -162,7 +211,13 @@ Merkintä on prosessi, jonka avulla voit linkittää (eli merkitä) varaston ott
 -   6a. Varaston fyysinen varastostaotto määrälle 1 yksikkökustannushintaan 21,25 USD.
 -   7 Varasto suljetaan. Koska rahoituksellisesti päivitetty tapahtuma on merkitty aiempaan vastaanottoon, nämä tapahtumat täsmäytetään keskenään, eikä oikaisuja tehdä.
 
-Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kaaviossa havainnollistetaan painotetun keskiarvon varastomallin ja merkinnän käyttämisen vaikutus tähän tapahtumien sarjaan. ![Painotettu keskiarvo merkinnän kanssa](./media/weightedaveragewithmarking.gif) Kaavion selite
+Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. 
+
+Seuraavassa kaaviossa havainnollistetaan painotetun keskiarvon varastomallin ja merkinnän käyttämisen vaikutus tähän tapahtumien sarjaan. 
+
+![Painotettu keskiarvo merkinnän kanssa](./media/weightedaveragewithmarking.gif) 
+
+**Kaavion selite**
 -   Pystysuorat nuolet kuvaavat varastotapahtumia.
 -   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
 -   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
@@ -173,6 +228,8 @@ Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja 
 -   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
 -   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä Inventory Close.
 -   Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla pisteviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
+
+
 
 
 

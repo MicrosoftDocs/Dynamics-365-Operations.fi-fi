@@ -1,9 +1,9 @@
 ---
 title: "Talousraportoinnin tietovaraston palauttaminen tietokannan palauttamisen jälkeen"
 description: "Tässä aiheessa kerrotaan, miten talousraportoinnin tietovaraston palautetaan Microsoft Dynamics 365 for Operations -tietokannan palauttamisen jälkeen."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-08 16 - 20 - 13
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3967cbb869fbb23d5d7716f619e4c22b4a273921
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d4ce390c62cbfb1f693410b004aa296c0ed75eb2
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>Talousraportoinnin tietovaraston palauttaminen tietokannan palauttamisen jälkeen
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä aiheessa kerrotaan, miten talousraportoinnin tietovaraston palautetaan Microsoft Dynamics 365 for Operations -tietokannan palauttamisen jälkeen. 
 
@@ -43,7 +47,11 @@ Vie aluksi Report Designerin raporttirakenteet seuraavasti:
 5.  Anna tiedostonimi ja valitse turvallinen paikka, jonne viedyt raporttimääritykset tallennetaan.
 6.  Valitse **Tallenna**.
 
-Tiedosto voidaan kopioida tai ladata turvalliseen paikkaan. Tämän jälkeen se voidaan tuoda toiseen ympäristöön haluttuna ajankohtana. Lisätietoja Microsoft Azure -tallennustilistä on kohdassa [Tietojen siirtäminen AzCopy-komentorivin apuohjelman avulla](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Huomautus:** Microsoft ei tarjoa tallennustiliä Dynamics 365 for Operations -sopimuksen osana. Osta tallennustili tai käytä erillisen Azure-tilauksen tallennustiliä. **Tärkeää:** Ota huomioon Azuren virtuaalikoneiden D-aseman toiminta. Älä säilytä vietyjä rakenneosaryhmiä täällä pysyvästi. Lisätietoja väliaikaisista asemista on kohdassa [Tietoja Windows Azuren virtuaalikoneiden väliaikaisesta asemasta](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+Tiedosto voidaan kopioida tai ladata turvalliseen paikkaan. Tämän jälkeen se voidaan tuoda toiseen ympäristöön haluttuna ajankohtana. Lisätietoja Microsoft Azure -tallennustilistä on kohdassa [Tietojen siirtäminen AzCopy-komentorivin apuohjelman avulla](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). 
+> [!NOTE]
+> Microsoft ei tarjoa tallennustiliä Dynamics 365 for Operations -sopimuksen osana. Osta tallennustili tai käytä erillisen Azure-tilauksen tallennustiliä. 
+> [!WARNING]
+> Ota huomioon Azuren virtuaalikoneiden D-aseman toiminta. Älä säilytä vietyjä rakenneosaryhmiä täällä pysyvästi. Lisätietoja väliaikaisista asemista on kohdassa [Tietoja Windows Azuren virtuaalikoneiden väliaikaisesta asemasta](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ## <a name="stop-services"></a>Palveluiden pysäyttäminen
 Muodosta yhteys kaikkiin ympäristön tietokoneisiin etätyöpöydän avulla. Pysäytä seuraavat Windows-palvelut services.msc:n avulla:
@@ -96,7 +104,9 @@ Käynnistä aiemmin pysäyttämäsi palvelut uudelleen services.msc:n avulla:
 Tuo raporttimallit Report Designerista viennin aikana luotua tiedostoa seuraavasti:
 
 1.  Siirry Report Designerissa kohtaan **Yritys** &gt; **Rakenneosaryhmät**.
-2.  Valitse vietävä rakenneosaryhmä ja valitse sitten **Vie**. **Huomautus:** Dynamics 365 for Operations tukee vain yhtä **oletusarvoista** rakenneosaryhmää.
+2.  Valitse vietävä rakenneosaryhmä ja valitse sitten **Vie**. 
+    > [!NOTE]
+    > Dynamics 365 for Operations tukee vain yhtä **oletusarvoista** rakenneosaryhmää.
 3.  Valitse **oletusrakenneosa** ja valitse sitten **Tuo**.
 4.  Valitse viedyt raporttimääritykset sisältävä tiedosto ja valitse sitten **Avaa**.
 5.  Valitse Tuo-valintaikkunassa tuotavat raporttien määritykset.
@@ -104,6 +114,8 @@ Tuo raporttimallit Report Designerista viennin aikana luotua tiedostoa seuraavas
     -   Voit tuoda tiettyjä raportti-, rivi-, sarake-, puu- tai dimensioyhdistelmiä valitsemalla tuotavat raportti-, rivi-, sarake-, puu- tai dimensioyhdistelmät.
 
 6.  Valitse **Tuo**.
+
+
 
 
 

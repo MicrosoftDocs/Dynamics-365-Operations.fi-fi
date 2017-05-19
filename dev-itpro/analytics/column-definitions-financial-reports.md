@@ -1,16 +1,16 @@
 ---
 title: "Talousraporttien sarakemääritykset"
 description: "Tässä artikkelissa on tietoja sarakemäärityksistä. Sarakkeen määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin sarakkeen sisällön. Kuten rivimäärityksiäkin, sarakkeiden perusmäärityksiä voi käyttää useilla raporteilla."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-08-09 21 - 27 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: af336db81f659d80248aa4ab1fbba96ed1ff48c2
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Talousraporttien sarakemääritykset
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa on tietoja sarakemäärityksistä. Sarakkeen määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin sarakkeen sisällön. Kuten rivimäärityksiäkin, sarakkeiden perusmäärityksiä voi käyttää useilla raporteilla.
 
@@ -150,7 +154,7 @@ Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä ot
 
 1.  Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
 2.  Valitse otsikkorivin solu.
-3.  Valitse **Muokkaa**-valikossa **Lisää rivi**. Uusi rivi on lisätty vaiheessa 2 valitun rivin yläpuolelle. **Huomautus: **Jos raportissa on neljä tai useampi ylätunniste, tunnisteet ovat päällekkäisiä, kun raportti viedään Excel-työkirjaan. Voit tarkastella kaikkia raportin otsikoita lisäämällä raportin määritykseen ylämarginaalin.
+3.  Valitse **Muokkaa**-valikossa **Lisää rivi**. Uusi rivi on lisätty vaiheessa 2 valitun rivin yläpuolelle. **Huomautus:**Jos raportissa on neljä tai useampi ylätunniste, tunnisteet ovat päällekkäisiä, kun raportti viedään Excel-työkirjaan. Voit tarkastella kaikkia raportin otsikoita lisäämällä raportin määritykseen ylämarginaalin.
 
 ### <a name="delete-a-column-header-row"></a>Sarakeotsikon rivin poistaminen
 
@@ -318,11 +322,11 @@ Sarakkeen määrityksen muotoilusarakkeen tietorivien valituissa sarakkeissa kä
 2.  Kaksoisnapsauta **Tulostuksen hallinta** -solua.
 3.  Valitse **Tulostuksen hallinta** -valintaikkunassa koodi **Valitse tulostuksen hallinnan asetukset** -luettelosta. Voit valita useita koodeja pitämällä Ctrl-näppäintä alhaalla koodien valinnan aikana.
 4.  Valitse vaihtoehto **Ehdollisen tulostuksen asetukset** -kentässä. Oletusarvoisesti valittuna on **(ei mitään)**. Voit valita vain yhden ehdollisen tulostuskoodin kerrallaan.
-5.  Napsauta **OK**.
+5.  Valitse **OK**.
 
-**Vihje:** Voit myös syöttää tulostuskoodeja suoraan **Tulostuksen hallinta** -soluun. Erota tulostuksen useat hallintakoodit pilkuilla.
+> [!TIP]
+> Voit myös syöttää tulostuskoodeja suoraan **Tulostuksen hallinta** -soluun. Erota tulostuksen useat hallintakoodit pilkuilla.
 
-### 
 
 ## <a name="column-types"></a>Sarakelajit
 Raportin kunkin sarakkeen tietojen lajin määrittää sarakkeen määrityksen **Sarakelaji**-rivin arvo. Jokaisessa sarakkeen määrityksessä on oltava vähintään yksi kuvaussarake (**DESC**) ja yksi summasarake (**FD**, **WKS** tai **CALC**). **Huomautus:** Sarakelajin koodeja ei käytetä kaikissa kirjanpitojärjestelmissä. Jos valitset lajin, joka ei kelpaa organisaation kirjanpitojärjestelmässä, sarake näkyy raportissa tyhjänä.
@@ -507,7 +511,8 @@ Usean valuutan raportti voi näyttää summat kansallisessa (paikallisessa) valu
 -   **Valuutan näyttö** – määrittää, minkä tyypin (luonnollisessa, toiminnallisessa tai raportoinnin) valuutassa tapahtumat näytetään. Tätä toimintoa kutsutaan joskus valuuttamuunnokseksi. Valuutan muunnon avulla kirjanpidon summat voidaan raportoida muussa kuin yrityksen perusvaluutassa tai valuutassa, jossa tapahtuma syötettiin.
 -   **Valuuttasuodatin** – Määritä valuuttasuodatin. Vain valitussa valuutassa syötetyt tapahtumat näytetään raportissa.
 
-**Huomautus:** Voit luoda raportteja, joissa käytetään useita valuuttoja, kun valitset **Raportti**-välilehden **Sisällytä kaikki raportointivaluutat** -valintaruudun. Seuraavien vaiheiden avulla voit määrittää yrityksen perusvaluutan.
+> [!NOTE]
+> Voit luoda raportteja, joissa käytetään useita valuuttoja, kun valitset **Raportti**-välilehden **Sisällytä kaikki raportointivaluutat** -valintaruudun. Seuraavien vaiheiden avulla voit määrittää yrityksen perusvaluutan.
 
 1.  Valitse Report Designerin **Yritys**-valikossa **Yritykset**.
 2.  Valitse **Yritykset**-valintaikkunassa yritys. Valitse sitten **Näytä**.
@@ -519,7 +524,8 @@ Usean valuutan raportti voi näyttää summat kansallisessa (paikallisessa) valu
 2.  Kaksoisnapsauta soveltuvan **FD**-sarakkeen **Valuutan näyttö** -solua ja valitse valuutan tietojen näyttöasetukseksi **kansallinen/alkuperäinen valuutta**, **perusvaluutta yrityksen tiedoista** tai raportointivaluutta.
 3.  Kaksoisnapsauta soveltuvan **FD**-sarakkeen **Valuutan suodatin** -solua ja valitse luettelosta soveltuva valuuttakoodi. Vain tässä valuutassa syötetyt tapahtumat näytetään raportissa.
 
-**Huomautus:** Edellä kuvatut vaihtoehdot voivat olla erilaisia käytössä olevasta ERP-järjestelmästä johtuen. Lisätietoja on [Microsoft ERP -järjestelmän dokumentaatiossa](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
+> [!NOTE]
+> Edellä kuvatut vaihtoehdot voivat olla erilaisia käytössä olevasta ERP-järjestelmästä johtuen. Lisätietoja on [Microsoft ERP -järjestelmän dokumentaatiossa](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Valuutan näytön ja valuuttasuodattimen solujen esimerkkejä
 
@@ -584,5 +590,7 @@ Voit jakaa sarakkeen summan määritetyllä jaksojen määrällä. Esimerkiksi *
 [Talousraporttien rivimääritykset](row-definitions-financial-reporting.md)
 
 [Muotoilun lisäasetukset taloushallinnon raporteissa](advanced-formatting-options-financial-reporting.md)
+
+
 
 

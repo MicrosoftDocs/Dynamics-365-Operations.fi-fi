@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: d70b4ae0a6b177508021ee72481333cf6f265069
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 20ad50ab5c2dddf4fe07ebb5bb940954c0408f8d
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -127,7 +128,7 @@ Seuraavassa taulukossa näkyvät tarjouspyynnön tilan muutokset, kun luot tarjo
 
 |                                    |                              |                                                 |                            |                             |
 |------------------------------------|------------------------------|-------------------------------------------------|----------------------------|-----------------------------|
-| **Toiminto**                         | **Alhaisin tarjouspyyntöotsikon tila ** | **Korkein tarjouspyyntöotsikon tila **                   | **Alhaisin tarjouspyyntörivin tila ** | **Korkein tarjouspyyntörivin tila ** |
+| **Toiminto**                         | **Alhaisin tarjouspyyntöotsikon tila** | **Korkein tarjouspyyntöotsikon tila**                   | **Alhaisin tarjouspyyntörivin tila** | **Korkein tarjouspyyntörivin tila** |
 | Luo tarjouspyynnön otsikko ja rivi.    | Luotu                      | Luotu                                         | Luotu                    | Luotu                     |
 | Lähetä tietylle toimittajalle Tarjouspyyntö. | Lähetetty                         | Lähetetty                                            | Lähetetty                       | Lähetetty                        |
 | Lisää toinen toimittaja.                | Luotu                      | Lähetetty (Tarjouspyyntö on lähetetty vain yhdelle toimittajalle.) | Luotu                    | Lähetetty                        |
@@ -157,7 +158,7 @@ Seuraavassa taulukossa näkyy, miten tarjouspyynnön tila muuttuu, kun vastaanot
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Toiminto**                                     | **Alin tarjoustila ** | **Ylin tarjoustila ** | **Alhaisin tarjouspyyntöotsikon tila ** | **Korkein tarjouspyyntöotsikon tila ** | **Alhaisin tarjouspyyntörivin tila ** | **Korkein tarjouspyyntörivin tila ** |
+| **Toiminto**                                     | **Alin tarjoustila** | **Ylin tarjoustila** | **Alhaisin tarjouspyyntöotsikon tila** | **Korkein tarjouspyyntöotsikon tila** | **Alhaisin tarjouspyyntörivin tila** | **Korkein tarjouspyyntörivin tila** |
 | Rekisteröi yhden toimittajan tarjous ja tallenna se.        | Lähetetty                  | Vastaanotettu               | Lähetetty                         | Vastaanotettu                      | Lähetetty                       | Vastaanotettu                    |
 | Rekisteröi toisen toimittajan tarjous ja tallenna se. | Vastaanotettu              | Vastaanotettu               | Vastaanotettu                     | Vastaanotettu                      | Vastaanotettu                   | Vastaanotettu                    |
 
@@ -186,7 +187,7 @@ Seuraavassa taulukossa näkyy, miten tarjouspyynnön tila muuttuu, kun hyväksyt
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Toiminto**              | **Alin tarjoustila ** | **Ylin tarjoustila ** | **Alhaisin tarjouspyyntöotsikon tila ** | **Korkein tarjouspyyntöotsikon tila ** | **Alhaisin tarjouspyyntörivin tila ** | **Korkein tarjouspyyntörivin tila ** |
+| **Toiminto**              | **Alin tarjoustila** | **Ylin tarjoustila** | **Alhaisin tarjouspyyntöotsikon tila** | **Korkein tarjouspyyntöotsikon tila** | **Alhaisin tarjouspyyntörivin tila** | **Korkein tarjouspyyntörivin tila** |
 | Hyväksy yksi tarjouksista. | Vastaanotettu              | Hyväksytty               | Vastaanotettu                     | Hyväksytty                      | Vastaanotettu                   | Hyväksytty                    |
 | Hylkää muut tarjoukset.  | Hylätty              | Hyväksytty               | Hylätty                     | Hyväksytty                      | Hylätty                   | Hyväksytty                    |
 

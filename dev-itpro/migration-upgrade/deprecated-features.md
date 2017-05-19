@@ -3,7 +3,7 @@ title: Vanhentuneet ominaisuudet
 description: "Tässä aiheessa kuvataan ominaisuuksia, jotka on poistettu tai suunniteltu poistettaviksi Dynamics 365 for Operations -järjestelmästä. Siinä luetellaan myös ominaisuuksia, jotka on poistettu Dynamics AX 7.0 -julkaisuversioista."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,16 +15,20 @@ ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: e9ba7239b9ff8b9b97c9dabc06fb2c68760d19d4
-ms.lasthandoff: 03/31/2017
+ms.dyn365.ops.version: Platform update 6
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8fbfc8c91c836eb9922f2bf1165ec887d8a0bc8e
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="deprecated-features"></a>Vanhentuneet ominaisuudet
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä aiheessa kuvataan ominaisuuksia, jotka on poistettu tai suunniteltu poistettaviksi Dynamics 365 for Operations -järjestelmästä. Siinä luetellaan myös ominaisuuksia, jotka on poistettu Dynamics AX 7.0 -julkaisuversioista.
 
@@ -474,6 +478,16 @@ Tieto-osiot erottavat Microsoft Dynamics AX:n tietokannan tiedot loogisesti.
 | Onko toinen ominaisuus korvannut? | Uusi verkkoasiakasohjelma perustuu työpöytälomakkeen metatietoihin ja ohjelmointimalliin, jota on muokattu luomaan monipuolinen verkkoympäristö. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                    |
 
+### <a name="direct-database-connection"></a>Suora tietokantayhteys
+
+Dynamics AX 2012 R3 -versiossa Retail Modern POS -sovellus voi muodostaa suoran yhteyden kanavatietokantaan samalla tavalla, kuin Enterprise POS. Tämä oli lisänä Retail Modern POS -sovelluksen normaalille tietoliikenneyhteydelle, joka kulki vähittäismyynnin palvelimen välityksellä.  
+
+|                              |                                                                                         |
+|------------------------------|-----------------------------------------------------------------------------------------|
+| Poiston syy       | Suora tietokantayhteys edellytti matalamman suojauksen, ja sitä käytettiin pääasiassa korkeamman suorituskyvyn saavuttamiseen. Dynamics 365 for Operationsissa tehtyjen suorituskyky- ja tietoturvaparannusten vuoksi tämä toiminnallisuus aiheuttaa enemmän ongelmia, kuin mitä se ratkaisee. |
+| Onko toinen ominaisuus korvannut? | Nro Vain vakiomuotoinen vähittäismyynnin palvelinyhteys on enää tuettu.    |
+| Vaikutuksen alaiset moduulit             | Kanavatietokanta/Retail Modern POS                                    |
+
 ### <a name="dutch-swift-mt940"></a>Alankomaiden SWIFT MT940
 
 |                              |                                                                                                                                                                                                                                       |
@@ -661,8 +675,18 @@ Tällä toiminnolla voi vaihtaa yhden kolmesta vakiotuotedimension nimestä (kok
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
 | Poiston syy       | Dynamics AX:n nykyinen versio ei tue suorituksen aikaisia otsikkomuutoksia. |
-| Onko toinen ominaisuus korvannut? | Ei                                                                            |
+| Onko toinen ominaisuus korvannut? | Nro                                                                            |
 | Vaikutuksen alaiset moduulit             | Tuotetietojen hallinta                                                |
+
+### <a name="retail-server-connectivity-using-http"></a>Vähittäismyynnin palvelinyhteys HTTP-protokollalla
+
+Dynamics AX 2012 R3 -versiossa vähittäismyynnin palvelinyhteyttä oli mahdollista käyttää (suojaamattomalla) HTTP-yhteydellä. Tämä oli lisänä vakioyhteyteen HTTPS-protokollalla.
+
+|                              |                                                                               |
+|------------------------------|-------------------------------------------------------------------------------|
+| Poiston syy       | Uusien suojausvaatimusten vuoksi tietoliikenneyhteys on sallittua ainoastaan TLS 1.2 -suojausta (tai uudempaa) käyttäen. Omatoiminen asennusohjelma määrittää yhteystavan tietokoneelle automaattisesti. |
+| Onko toinen ominaisuus korvannut? | Nro Vain vakiomuotoinen HTTPS-yhteys on enää tuettu.                                                                           |
+| Vaikutuksen alaiset moduulit             | Vähittäismyynnin palvelin                                                |
 
 ### <a name="role-center-pages"></a>Roolikeskus-sivut
 
@@ -784,6 +808,8 @@ Henkilöstöhallinnon palkanlaskentatiedot
 | Poiston syy       | Toinen ominaisuus on korvannut tämän toiminnon.                                    |
 | Onko toinen ominaisuus korvannut? | Management Reporter (Dynamics AX:n nykyisessä versiossa sen nimi on **Talousraportointi**) |
 | Vaikutuksen alaiset moduulit             | Kirjanpito                                                                              |
+
+
 
 
 

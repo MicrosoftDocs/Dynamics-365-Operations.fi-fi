@@ -3,7 +3,7 @@ title: Inventointi
 description: "Tässä artikkelissa kuvataan, miten inventointia voi käyttää Varastonhallinnassa käytettävissä olevassa varastoratkaisussa. Artikkeli ei koske Inventoinnin- ja varastonhallinnassa käytettävissä olevaa varastoratkaisua."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-18 11 - 46 - 20
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: ffc1523d53732616d77511f39b72efc8f97744eb
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 387d114936567fc471cdcafcb2e93c1704db7ead
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cycle-counting"></a>Inventointi
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa kuvataan, miten inventointia voi käyttää Varastonhallinnassa käytettävissä olevassa varastoratkaisussa. Artikkeli ei koske Inventoinnin- ja varastonhallinnassa käytettävissä olevaa varastoratkaisua.
 
@@ -39,7 +43,6 @@ Seuraavassa kuvassa on esitetty inventointiprosessi. ![Inventointiprosessin kulk
 
 ## <a name="cycle-counting-prerequisites"></a>Inventoinnin edellytykset
 Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen inventointia.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -82,7 +85,7 @@ Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen 
 <li>Inventoinnin ryhmittely</li>
 <li>Pistoinventointi</li>
 </ul>
-Lisätietoa löytyy kohdasta <a href="configure-mobile-devices-warehouse">Konfiguroi varastotyön mobiililaitteet</a>.</li>
+</li>
 <li>Määritä valikot kannettavalle laitteelle.</li>
 <li>Luo työn käyttäjätili ja määritä mobiililaitteen valikko työn käyttäjätunnukselle.</li>
 </ul></td>
@@ -133,6 +136,9 @@ Inventointiero ilmenee seuraavissa skenaarioissa, jos **On inventoinnin valvoja*
 -   Inventointiarvo poikkeaa käytettävissä olevan varaston määrästä, eikä poikkeamarajoja aseteta.
 
 Voit oikaista inventointiarvojen eroja ja hyväksyä lasketun arvon **Inventointi odottaa tarkistusta** -sivulla. Voit tarkistaa nimikemäärän muunnetun määrän **Varastosaldon sijainnin mukaan** -sivulla. Inventoitu arvo hylätään, jos eroa ei voida hyväksyä.
+
+# <a name="see-also"></a>Lisätietoja
+[Konfiguroi varastotyön mobiililaitteet](configure-mobile-devices-warehouse.md)
 
 
 

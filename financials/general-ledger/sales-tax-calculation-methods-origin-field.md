@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: 0a716310a3b813e08d46ac609e8ac6ce9a2db3e6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5f3d0e2016a3ffe5500ecae9508d44a115c56880
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Verottaja on säätänyt tätä kohdetta koskevia erikoismaksuja. Erikoismaksusu
 -   ALV = 25 %, Prosenttia bruttosummasta -laskentatapa
 
 Jos nettosumma on 10,00, niin MAKSU 1 on 1,00 (10,00 x 10 %) ja MAKSU 2 = 2,00 (10,00 x 20 %). Summat ovat seuraavat: Bruttosumma: Nettosumma + MAKSU 1 -summa + MAKSU 2 -summa (10,00 + 1,00 + 2,00) = 13,00 ALV = 13,00 x 25 % = 3,25 MAKSUT ja ALV yhteensä: 1,00 + 2,00 + 3,25 = 6,25 Kokonaissumma: 10,00 + 6,25 = 16,25
-| **Huomautus **                                                                                                                                                                                                                 |
+| **Huomautus**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tapahtumassa voi käyttää vain yhtä verokoodia, jossa Alkuperä = Prosenttia bruttosummasta. Jos tapahtumalle määritetään useita tällaisia verokoodeja, näyttöön tulee virhesanoma, jonka mukaan arvonlisäveroa ei voi laskea. |
 
@@ -68,7 +69,7 @@ Käytetään seuraavia arvonlisäverokoodeja:
 -   ALV = 25 %, Prosenttia bruttosummasta -laskentatapa
 
 Nettosumma: 10,00 MAKSU 1: 10,00 x 10 % = 1,00 MAKSU 2: 1,00 x 20 % = 0,20 Bruttosumma: 10,00 + 1,00 + 0,20 = 11,20 ALV: 11,20 x 25 % = 2,80 MAKSUT ja ALV yhteensä: 1,00 + 0,20 + 2,80 = 4,00 Kokonaissumma: 10,00 + 4,00 = 14,00
-| **Huomautus **                                                                                                                                                                                                                    |
+| **Huomautus**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Verolaskutoimituksissa ei voi käyttää monen tason veroja. Veroa ei voi laskea sellaisen veron perusteella, joka on jo laskettu toisen veron perusteella. Tapahtumalle voi laskea useita verokoodeihin perustuvia yhden tason veroja. |
 
@@ -77,7 +78,7 @@ Kun Alkuperä-kentästä valitaan Summa per yksikkö, arvonlisävero lasketaan k
 ### <a name="example"></a>Esimerkki
 
 Arvonlisäverokoodiksi on määritetty: 1,20 USD / yksikkö = laatikko Myyntilaskurivillä nimikettä myydään 25 laatikkoa Arvonlisäveroksi lasketaan 25 x 1,20 = 30,00
-| **Huomautus **                                                                                                                                                                                                 |
+| **Huomautus**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Jos tapahtumalla on eri yksikkö kuin arvonlisäverokoodissa määritetty, se muunnetaan automaattisesti Yksikkömuunnokset-sivulla määritettyjen yksikkömuunnosten perusteella. |
 

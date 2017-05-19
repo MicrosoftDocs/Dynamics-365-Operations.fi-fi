@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c0c918b94fe96d123bb6c25c42fe168a026cd8a9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 36b307870f2427cc43a189e92cbd8c30f6ddb0c1
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,14 +40,14 @@ Luo kysynnän ennuste kohdassa **Pääsuunnittelu &gt; Ennuste &gt; Kysynnän en
 
 Ennustejakso voidaan valita ennustetta luotaessa. Käytettävissä olevat arvot ovat: Päivä, Viikko ja Kuukausi. 
 
-Aikajaksojen lukumäärä, joille ennuste luodaan, määritetään** Ennustehorisontti**-kentässä. 
+Aikajaksojen lukumäärä, joille ennuste luodaan, määritetään**Ennustehorisontti**-kentässä. 
 
 Kun ennustestrategiaksi on määritetty **Kopioi historiallisen kysynnän päälle**, historiallisen horisontin päättymispäivä jätetään huomiotta. Järjestelmä kopioi **Ennustehorisontti**-kentässä määritettyjen aikajaksojen lukumäärän kysynnän ennusteeseen, alkaen **Päivämäärästä**-kentässä **Historiallinen horisontti** -kohdassa määritetystä päivämäärästä. Kopioimalla historiallisen kysynnän määrätystä päivämäärästä eteenpäin, tuotannon suunnittelijat voivat tehdä suunnitelman seuraavalle neljännesvuodelle kahdella tavalla:
 
 -   Kopioimalla kysynnän samasta neljännesvuodesta viime vuonna.
 -   Kopioimalla kysynnän edellisestä neljännesvuodesta.
 
-Tuotantosuunnitelmiin aiheutuvien sekaannusten välttämiseksi on mahdollista lukita määrätty ennustejaksojen määrä. Tämä luku määritetään **Lukitusaikaraja**-kentässä. Sivulla **Oikaistu kysynnän ennuste **, lukittujen aikajaksojen kentät on poistettu käytöstä. Näin annetaan visuaalinen osoitus, että näitä arvoja ei tule muuttaa. 
+Tuotantosuunnitelmiin aiheutuvien sekaannusten välttämiseksi on mahdollista lukita määrätty ennustejaksojen määrä. Tämä luku määritetään **Lukitusaikaraja**-kentässä. Sivulla **Oikaistu kysynnän ennuste**, lukittujen aikajaksojen kentät on poistettu käytöstä. Näin annetaan visuaalinen osoitus, että näitä arvoja ei tule muuttaa. 
 
 Perusmuotoisen kysynnän ennusteen alkamispäivämäärän ei tarvitse olla nykyinen päivä tai tuleva päivä. Määritä uusi alkupäivämäärä **Perusennusteen alkamispäivä - alkaen** -kentässä. Esimerkiksi kesäkuussa käyttäjät voivat luoda ennusteen seuraavalle vuodelle. Koska ennusteen aikajaksot historiallisen kysynnän päättymispäivän ja perusennusteen alkamispäivän välillä puuttuvat, ennusteet eivät ehkä ole oikeita. Jos käytät Microsoft Dynamics 365 for Operationsin kysynnän ennustepalvelua, voit täyttää puuttuvat kohdat neljällä tavalla. Voit valita haluamasi menetelmän määrittämällä MISSING\_VALUE\_SUBSTITUTION (Puuttuvan arvon korvaus) -parametrin **Kysynnän ennusteen parametrit** -sivulla. 
 

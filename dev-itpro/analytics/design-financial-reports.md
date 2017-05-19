@@ -1,7 +1,7 @@
 ---
 title: Tarkastele ja suunnittele talousraportteja
-description: "Tässä artikkelissa on harjoituksia, joissa selitetään, miten tarkastellaan ja luodaan raportteja Microsoft Dynamics 365 for Operationsissa. Taloudellinen raportointi muodostuu tarkastelukokemuksesta Dynamics 365 for Operations ja yhden napsautuksen raporttisuunnitteluohjelmasta, jonka avulla voit luoda ja muokata raportteja."
-author: twheeloc
+description: "Tässä artikkelissa on harjoituksia, joissa selitetään, miten tarkastellaan ja luodaan raportteja Microsoft Dynamics 365 for Operationsissa."
+author: jcart1106
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3319fa0a919ca5e2737319f5cdc4190cf32d59b6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
+ms.openlocfilehash: 635e9e90c63330b3d8b0cc46f16a36fa44ef915d
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -96,7 +97,7 @@ Tässä harjoituksessa muokataan nykyistä oletusraporttia. Päivität sekä riv
 22. **Saldoraportti ominaisuuksilla** -raportin määrityksessä, valitse "Saldoraportti ominaisuuksilla" sekä rivimääritykselle, että sarakemääritykselle.
 23. Muuta perusvuodeksi **2012.**
 24. **Tallenna** raporttimääritys ja **luo**. Kun raportti on valmis ja avautuu, voit tutkia raporttia samoin kuin ensimmäisessä harjoituksessa. Perehdy eri tileihin tarkastellaksesi, kuinka muut määritteet ovat näkyvillä.
-25. Sulje **Saldoraportti ominaisuuksilla **-raportti.
+25. Sulje **Saldoraportti ominaisuuksilla**-raportti.
 26. Sulje **Raportin suunnittelija**.
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Harjoitus 3: Luo moniulotteinen raportti käyttämällä raportointipuuta
@@ -165,7 +166,7 @@ Tässä harjoituksessa luot uuden raportin. Raportti on rinnakkainen osastojen t
 6.  Valitse kaksoisnapsauttamalla **Dimensiosuodatus**-kenttä.
 7.  **Dimensio**-ikkunassa, kaksoisnapsauta **Osasto**-saraketta.
 8.  Valintaikkunan yksittäisellä osalla tai alueosalla, valitse **ellipsi** **Mistä**-kenttään nähdäksesi osastoluettelon.
-9.  Valitse osasto **022**, **Myynti ja Markkinointi** ja sitten klikkaa** OK**.
+9.  Valitse osasto **022**, **Myynti ja Markkinointi** ja sitten klikkaa **OK**.
 10. Toista vaiheet 5-8 osastoille 23-25.
 11. **Otsikko 2** -rivissä, jokaiselle FD-sarakkeelle, kirjoita seuraavat osaston kuvaukset:
     -   Sarake B – Myynti ja markkinointi
@@ -182,8 +183,8 @@ Tässä harjoituksessa luot uuden raportin. Raportti on rinnakkainen osastojen t
 18. **Tallenna** muutokset ja **luo**. Kun raportti on luotu ja avautuu, voit tutkia raporttia.
 
 ## <a name="additional-resources"></a>Lisäresurssit
-[Talousraportointi](\financials\general-ledger\financial-reporting-getting-started.md)  
-[Tarkastele tilinpäätöksiä](\financials\general-ledger\view-financial-reports.md) 
+[Talousraportointi](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started)  
+[Tarkastele tilinpäätöksiä](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
 [Dynamicsin taloushallinnon raportoinnin blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

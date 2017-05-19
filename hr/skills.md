@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 720a1f272948eb310dc3cd02588aeec40b556d20
-ms.openlocfilehash: 31dda85ff2e4a4e5380401b031b2dd74acff394b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4fd6e61e88ca3ca3fa63308dead1258c0263e5aa
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a>Työvoiman osaamisalueiden kohdistaminen liiketoimintatarpeisiin
+
+[!include[banner](includes/banner.md)]
+
 
 Voit seurata työntekijöillä, hakijoilla tai yhteyshenkilöillä olevia osaamisalueita tai mitä osaamisalueita heillä pitäisi olla voidakseen suoriutua rooleistaan tehokkaasti. Voit myös määrittää tietyn työn edellyttämät osaamisalueet.
 
@@ -52,24 +56,12 @@ Voit luoda osaamisaluekartoitushaun ja etsiä työntekijän, hakijan tai yhteysh
 
 Osaamisaluekartoitusprofiilien avulla voit etsiä nykyisiä työntekijöitä tai hakijoita, joiden pätevyys vastaa suoraan liiketoiminnan tarpeita.  Voit esimerkiksi luoda osaamisaluekartoitusprofiileja organisaatiossa avoimena olevia toimia varten. Luomalla profiilin tietylle työlle ja kopioimalla työn osaamisalueet, koulutuksen ja todistukset profiiliin voit nopeasti hakea työntekijöitä, hakijoita ja yhteyshenkilöitä, jotka vastaavat yhtä tai useampaa profiilissa määritettyä ehtoa, ja tarkastella sellaisten hakijoiden luetteloa, joiden osaamisalueet lähimmin vastaavat työn vaatimuksia.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Huomautus </strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vain osaamisaluekartoitushakuihin valitut työntekijät, hakijat ja yhteyshenkilöt voidaan näyttää osaamisaluekartoituksen tulosluettelossa tai sisällyttää osaamisalueprofiilin. Jos haluat sisällyttää työntekijän, hakijan tai yhteyshenkilön osaamisaluekartoitushakuihin, määritä <strong>Sisällytä osaamisaluekartoitukseen</strong> -asetukseksi Kyllä seuraavilla sivuilla:
-<ul>
-<li>Työntekijä</li>
-<li>Työntekijä</li>
-<li>Hakija</li>
-<li>Yhteyshenkilöt</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+>**Huomautus** Vain osaamisaluekartoitushakuihin valitut työntekijät, hakijat ja yhteyshenkilöt voidaan näyttää osaamisaluekartoituksen tulosluettelossa tai sisällyttää osaamisalueprofiilin. Jos haluat sisällyttää työntekijän, hakijan tai yhteyshenkilön osaamisaluekartoitushakuihin, määritä **Sisällytä osaamisaluekartoitukseen** -asetukseksi Kyllä seuraavilla sivuilla:
+
+> + Työntekijä
+> + Työntekijä
+> + Hakija
+> + Yhteyshenkilöt
 
 ## <a name="skill-gap-analysis-and-skill-profile-analysis"></a>Osaamiseroanalyysi ja osaamisprofiilianalyysi
 Luomalla osaamisprofiilianalyysin voit tarkastella luetteloa työntekijän, hakijan tai yhteyshenkilön osaamisalueista tiettynä päivänä. Voit luoda osaamisalueaukkoanalyysi, jotta voit verrata henkilön taitoja työhön vaadittaviin taitoihin  
@@ -80,5 +72,7 @@ Luomalla osaamisprofiilianalyysin voit tarkastella luetteloa työntekijän, haki
 --------
 
 [Henkilöstöhallinto](index.md)
+
+
 
 

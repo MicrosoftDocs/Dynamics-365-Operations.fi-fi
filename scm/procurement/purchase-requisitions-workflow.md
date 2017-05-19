@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 7c5986dbce88a1cb704dddfc2afbcf2ac8c4b0dd
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2a39054e5736c1162634cf9b1dd3f7e0c0c4ec16
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -104,7 +105,7 @@ Sinun ei tarvitse määrittää menojen tarkistajan määrityksiä. Voit sen sij
 
 Voit määrittää menojen tarkistajat **Ostoehdotuksen kulujen tarkistajat** -sivulla. Luo menojen tarkistajan määritys ja kirjoita kunkin organisaatioon kuuluvan yrityksen arvot. Projektiin liitetyille ehdotuksille voit määrittää roolin, joka vastaa ehdotusten tarkistamisesta: Projektipäällikkö, Projektin budjettipäällikkö tai Projektin myyntipäällikkö. Menot reititetään käyttäjälle, joka on liitetty kyseiseen rooliin. Voit myös reitittää menon taloushallinnon dimension omistajalle valitsemalla sopivan taloushallinnon dimension vaihtoehdon **Organisaation distribuutiot** -välilehdestä.  
 
-Jos haluat käyttää jotakuta työnkulussa määrittämääsi menojen tarkistajaa, määritä **Osallistujan tyyppi** -asetukseksi **Kulujen osallistujat** kyseisen työnkulun elementin ** Toimeksianto**-ominaisuuksissa.
+Jos haluat käyttää jotakuta työnkulussa määrittämääsi menojen tarkistajaa, määritä **Osallistujan tyyppi** -asetukseksi **Kulujen osallistujat** kyseisen työnkulun elementin **Toimeksianto**-ominaisuuksissa.
 
 <a name="see-also"></a>Lisätietoja
 --------

@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 24caafcd01875f04cf3ae5299aadcf9b38ac0e15
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 38725d4d873a3b39eb3916c3f616826f8a266b60
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -45,7 +46,7 @@ Ennen kuin teet manuaalisia oikaisuja, on tärkeää, että ymmärrät muutamia 
 ## <a name="forecast-aggregation-and-deaggregation"></a>Ennusteen koostaminen ja koosteen purkaminen
 Sivun alaotsikko näyttää ennusteen koostamisen tason. 
 
-Jos esimerkiksi sivun alaotsikko on **Yritys/Toimipaikka/Kohdistustunnus/Nimikkeen numero/Väri/Koko/Konfiguraatio/Tyyli**, ennusteen koostetta ei ole ja ennuste näytetään nimikkeen ja sen dimensioiden tasolla. Voit muuttaa koostetta** Muuta ennustedimensioita** -sivulla, jonka voit avata sovellusvalikosta. 
+Jos esimerkiksi sivun alaotsikko on **Yritys/Toimipaikka/Kohdistustunnus/Nimikkeen numero/Väri/Koko/Konfiguraatio/Tyyli**, ennusteen koostetta ei ole ja ennuste näytetään nimikkeen ja sen dimensioiden tasolla. Voit muuttaa koostetta**Muuta ennustedimensioita** -sivulla, jonka voit avata sovellusvalikosta. 
 
 Muokkaa ennustetta napsauttamalla mitä tahansa käytettävissä olevaa solua ja kirjoita oikaistu ennusteen arvo. Muokattu solu muuttuu heti lihavoiduksi osoittamaan, että sen näyttämä ennuste ei ole kysynnän ennusteen palvelun luoma ennuste, vaan sitä on muokattu manuaalisesti. 
 
@@ -58,9 +59,9 @@ Kun ennustetun määrän oikaisu tehdään koostetasolla, järjestelmä käyttä
 Voit myös tehdä manuaalisia oikaisuja **Kysynnän ennusteen rivit** -sivulla muokkaamalla joko **Kokonaismäärä**-arvoa tai **Määrä**-soluja koosteen purkuruudukossa.
 
 ## <a name="viewing-details-of-the-forecast"></a>Ennusteen tietojen tarkasteleminen
-Voit avata** Kysynnän ennusteen tiedot** -sivun nähdäksesi ennustetta koskevia lisätietoja. 
+Voit avata**Kysynnän ennusteen tiedot** -sivun nähdäksesi ennustetta koskevia lisätietoja. 
 
-** Kysynnän ennusteen tiedot** -sivulla näet seuraavat tiedot graafisessa ja taulukkomuodossa.
+**Kysynnän ennusteen tiedot** -sivulla näet seuraavat tiedot graafisessa ja taulukkomuodossa.
 
 -   Historiallinen kysyntä, johon ennusteet perustuvat.
 -   Nykyinen ennuste, jota pääsuunnittelu käyttää.

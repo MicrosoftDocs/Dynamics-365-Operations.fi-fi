@@ -3,7 +3,7 @@ title: "Yleistä Ohjeesta"
 description: "Tämä artikkeli sisältää Microsoft Dynamics 365 for Operations -ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen."
 author: margoc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 240060606c8a2955c3f0a0d47fb25b0cde64c187
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
+ms.openlocfilehash: f08434b4c818460009644e77da1b37ba86cc1d54
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/27/2017
 
 
 ---
 
 # <a name="help-overview"></a>Yleistä Ohjeesta
+
+[!include[banner](../includes/banner.md)]
+
 
 Tämä artikkeli sisältää Microsoft Dynamics 365 for Operations -ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen. 
 
@@ -37,18 +41,18 @@ Microsoft 365 for Operations -järjestelmässä on uudistettu ohjejärjestelmä,
 Voit käyttää sekä artikkeleita että tehtäväopastuksia Dynamics 365 for Operations-ohjeruudusta, joka näkyy seuraavassa näyttökuvassa. [![Ohje-ruutu](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) Tässä artikkelissa käsitellään ohjejärjestelmää ja kerrotaan, miten voit luoda organisaatiolle oman mukautetun ohjeistuksen ja koulutusresursseja.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Ohje osoitteessa docs.microsoft.com
-docs.microsoft.com-sivusto ([docs.microsoft.com/dynamics365/operations](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) on Dynamics 365 for Operations -tuoteohjeistuksen ensisijainen lähde. Sivustossa on seuraavat ominaisuudet:
+docs.microsoft.com-sivusto ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations) on Dynamics 365 for Operations -tuoteohjeistuksen ensisijainen lähde. Sivustossa on seuraavat ominaisuudet:
 
--   **Uusin sisältö **– sivusto on nopea ja joustava tapa luoda, toimittaa ja päivittää tuoteohjeistusta. Niinpä saatkin aina käyttöösi uusimmat tekniset tiedot.
--    **Asiantuntijoiden kirjoittama sisältö **– sivusto sisältää monipuolisesti tuoteohjeistusta, jota yhteisön jäsenet (sekä Microsoftin sisällä että ulkopuolella) voidaan täydentää.
--   **Eri tyyppisen sisällön käyttö** – saat sivustossa nopeasti käyttöösi erilaista Dynamics 365 for Operations -järjestelmää koskevaa sisältöä, kuten Microsoft Office Mix -esityksiä, tehtäväoppaita, videoita ja wikiartikkeleita.
--    **Liiketoimintaprosesseja tukeva sisältö **– sivustossa on liiketoimintaprosesseihin keskittyvää sisältöä, joka hyödyntää Microsoft Dynamics Lifecycle Services (LCS) -palvelujen liiketoimintaprosessin mallintajaa.
+-   **Uusin sisältö**– sivusto on nopea ja joustava tapa luoda, toimittaa ja päivittää tuoteohjeistusta. Niinpä saatkin aina käyttöösi uusimmat tekniset tiedot.
+-   **Asiantuntijoiden kirjoittama sisältö**– sivusto sisältää monipuolisesti tuoteohjeistusta, jota yhteisön jäsenet (sekä Microsoftin sisällä että ulkopuolella) voidaan täydentää.
+-   **Eri tyyppisen sisällön käyttö** – saat sivustossa nopeasti käyttöösi erilaista Dynamics 365 for Operations -järjestelmää koskevaa sisältöä, kuten Microsoft Office Mix -esityksiä, tehtäväoppaita, videoita ja ohjeaiheita.
+-   **Liiketoimintaprosesseja tukeva sisältö**– sivustossa on liiketoimintaprosesseihin keskittyvää sisältöä, joka hyödyntää Microsoft Dynamics Lifecycle Services (LCS) -palvelujen liiketoimintaprosessin mallintajaa.
 
 Olemme siirtäneet kaiken sisällön aiemmasta ohjewikistä docs-osoitteeseen. Olemme innostuneita uudesta sivustosta ja toivomme, että sinäkin innostut siitä.
 
 ### <a name="when-can-we-use-it"></a>Milloin sitä voi käyttää?
 
-Pääset lukemaan sivustoa heti, sillä sisältö on täysin julkista ja siinä voi tehdä hakuja ilman kirjautumista. Voit etsiä sisältöä suosikkihakupalvelusi kautta. Sivuston artikkeleita voi kommentoida kirjautumalla GitHub-tilille.
+Pääset lukemaan sivustoa heti, sillä sisältö on täysin julkista ja siinä voi tehdä hakuja ilman kirjautumista. Voit etsiä sisältöä suosikkihakupalvelusi kautta. Sivuston artikkeleita voi kommentoida kirjautumalla sisään.
 
 
 ## <a name="task-guides"></a>tehtäväopastukseen
@@ -68,7 +72,7 @@ Lisätietoja tehtävän tallennustoiminnosta on artikkelissa [Dynamics 365 for O
 Voit luoda omia tehtävätallenteita tai ladata ja mukauttaa Microsoftin toimittamia tehtävätallenteita. Voitkin luoda organisaatiolle mukautetun ohjeen, joka vastaa juuri kyseistä Dynamics 365 for Operations -käyttöönottoa. Jos haluat näyttää tehtävätallenteen Dynamics 365 for Operations -ohje-ruudussa ja toistaa sen tehtävän ohjauksena, tallenne on tallennettava LCS:n BPM-kirjastoon. Kumppanit voivat puolestaan siirtää kirjaston yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Täydelliset ohjeet ovat artikkelissa [Ohjeistuksen tai koulutuksen luonti tehtävätallenteiden avulla](../user-interface/task-recorder.md).
 
 ## <a name="in-product-help"></a>Tuotteen sisäinen ohje
-Voit käyttää Dynamics 365 for Operations -ohjesisältöä joko napsauttamalla **Ohje** (**?**) -kuvaketta tai näppäinyhdistelmällä Ctrl+Vaihto+?. Kumpikin menetelmä avaa Ohje-ruudun. Voit käyttää Ohje-ruudusta kaikkia artikkeleita tai tehtävän ohjauksia. [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+Voit käyttää Dynamics 365 for Operations -ohjesisältöä joko napsauttamalla **Ohje** (**?**) -kuvaketta tai näppäinyhdistelmällä Ctrl+Vaihto+?. Kumpikin menetelmä avaa Ohje-ruudun. Voit käyttää Ohje-ruudusta kaikkia artikkeleita tai tehtävän ohjauksia. [![Help pane](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
 
 ### <a name="accessing-articles-from-the-help-pane"></a>Artikkeleiden käyttö Ohje-ruudusta
 
@@ -83,7 +87,7 @@ Ennen kuin tehtävän opastuksia voi käyttää Ohje-ruudusta, järjestelmänval
 
 [![Järjestelmäparametrit-lomake ja ohjeen asetukset](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Toimi seuraavasti **Järjestelmän parametrit** -sivulla:
 
-1.  **Tärkeää: **Kun avaat Ohje-välilehden ensimmäisen kerran, sinun on muodostettava yhteys Lifecycle Services -palveluun. Valitse lomakkeen keskellä oleva linkki, odota yhteyden muodostumista, sulje valintaikkuna ja nouda Parametrit-lomake valitsemalla OK. [![Yhdistä LCS:ään](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
+1.  **Tärkeää:**Kun avaat Ohje-välilehden ensimmäisen kerran, sinun on muodostettava yhteys Lifecycle Services -palveluun. Valitse lomakkeen keskellä oleva linkki, odota yhteyden muodostumista, sulje valintaikkuna ja nouda Parametrit-lomake valitsemalla OK. [![Yhdistä LCS:ään](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
 2.  Valitse Lifecycle Services -projekti, johon yhteys muodostetaan.
 3.  Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.
 4.  Määritä BPM-kirjastojen näyttöjärjestys. Tämä asetus määrittää, missä järjestyksessä kirjastojen tehtävätallenteet näkyvät Ohje-sivulla.
@@ -101,13 +105,13 @@ Seuraavassa taulussa on luettelo sivustoista, joissa on Microsoft Dynamics 365 f
 
 | Sivusto                                                                     | kuvaus                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Docs.microsoft.com](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) | Kaiken Dynamics 365 for Operations -tuoteohjeistuksen ylläpito tai linkitys.                                                                                                                                                               |
+| [Docs.microsoft.com](/dynamics365/#pivot=solutions&panel=solutions_operations) | Kaiken Dynamics 365 for Operations -tuoteohjeistuksen ylläpito tai linkitys.                                                                                                                                                               |
 | [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Pilvipalveluihin perustuva yhteinen työtila, jota asiakkaat ja heidän kumppaninsa voivat käyttää Dynamics 365 for Operations -projektien hallintaan ennen myyntiä, täytäntöönpanon aikana ja sen työvaiheissa. Sivustossa on apua käyttöönoton kaikissa vaiheissa. |
 | [CustomerSource](http://www.customersource.com/)\*                       | Ylläpitää kattavia koulutusresursseja ja on Dynamics 365 for Operations -järjestelmän ensisijainen tukisivusto. Sivuston tiettyjen resurssien käyttö voi edellyttää kirjautumista.                                                                      |
 | [Tuen blogi](http://aka.ms/AXSupportBlog)                              | Sisältää Dynamics 365 for Operations -tukiryhmän julkaisemia vinkkejä.                                                                                                                                                  |
 | [MSDN](http://aka.ms/AXMSDN)                                             | Ylläpitää aiempien versioiden kehittäjille kirjoitettua sisältöä.                                                                                                                                                                       |
 | [TechNet](http://aka.ms/TechNet)                                         | Ylläpitää aiempien versioiden sisältöä, joka on kirjoitettu IT-asiantuntijoille ja sovelluksen käyttäjille.                                                                                                                                           |
-| [Dynamics-yhteisö](http://community.dynamics.com/en/)                  | Ylläpitää blogeja, keskustelupalstoja ja videoita.                                                                                                                                                                                                           |
+| [Dynamics-yhteisö](http://community.dynamics.com/)                  | Ylläpitää blogeja, keskustelupalstoja ja videoita.                                                                                                                                                                                                           |
 | [Microsoft.com/Dynamics/](http://www.microsoft.com/dynamics/)                 | Sisältää arviointi- ja myyntitietoja.                                                                                                                                                                                                 |
 
 
@@ -125,6 +129,8 @@ Seuraavassa taulussa on luettelo sivustoista, joissa on Microsoft Dynamics 365 f
 [*Uudet tai päivitetyt tehtävän ohjaukset (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
 [Uudet tai päivitetyt tehtävän ohjaukset (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
 [Uudet tehtävän ohjaukset (helmikuu 2016)](new-task-guides-available-february-2016.md)
+
+
 
 
 

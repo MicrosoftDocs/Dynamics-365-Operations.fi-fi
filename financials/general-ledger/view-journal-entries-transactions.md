@@ -3,7 +3,7 @@ title: "Näytä tapahtumat ja kirjauskansiomerkinnät"
 description: "Tässä artikkelissa esitellään kirjauskansiovientien ja -tapahtumien eri tarkastelutavat."
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: a6848ea9c05536ac18a038b1864c9ccb9408964c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 021a74811212f65977407b8454086b0e7b703a2f
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-journal-entries-and-transactions"></a>Näytä tapahtumat ja kirjauskansiomerkinnät
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa esitellään kirjauskansiovientien ja -tapahtumien eri tarkastelutavat. 
 
@@ -52,6 +56,11 @@ Talousraporttien lisäksi voit käyttää seuraavia kirjanpitoraportteja tarkast
 -   **Tapahtumalähde** – Tämä tapahtumaraportti näyttää tilin kirjanpidon, tapahtuman ja raportoinnin tilivaluutan. Siinä näkyy myös kirjauskansion jokainen rivi, jota on käytetty osoitteeksi.
 
 
-Lisätietoja on kohdissa [Kirjanpitotilin saldot](general-ledger-account-balances.md), [Kirjanpitolähteen hallinta](\financials\accounts-payable\accounting-source-explorer) ja [Talousraportointi](financial-reporting-getting-started.md)
+##<a name="see-also"></a>Lisätietoja
+- [Kirjanpitotilin saldot](general-ledger-account-balances.md) 
+- [Kirjanpitolähteen hallinta](..\accounts-payable\accounting-source-explorer.md)
+- [Taloushallinnan raportointi](financial-reporting-getting-started.md)
+
+
 
 

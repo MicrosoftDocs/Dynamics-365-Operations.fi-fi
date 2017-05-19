@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 44d51807cd6bb64ae2c4bef58d8a445417ffa3a9
-ms.openlocfilehash: 815282422a6d7b8eef7d0628cf10b715449e1d1d
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 474453e7f33526bc7bebc60ef68f560d489a1841
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +56,7 @@ Kun luot yhdelle yritykselle maksun, joka selvittää muiden yritysten laskut, k
 Kun luot yhdelle yritykselle maksun, joka selvittää muiden yritysten laskut, kummallakin yrityksellä tulee olla sama maksutapa. Voit varmistaa, että maksut luodaan oikein, määrittämällä jokaiselle laskun yritykselle maksutavan, joka vastaa maksun yrityksen maksutapoja. Siirry laskun ensimmäiseen yritykseen ja luo sitten uusi maksutapa **Maksutavat**-sivulla tai muokkaa aiemmin luotua maksutapaa. Laskun yrityksen maksutavan valintojen ei tarvitse vastata maksun yrityksen maksutavan asetuksia.
 
 ## <a name="set-up-default-descriptions"></a>Oletuskuvausten määrittäminen
-Voit määrittää yritystenvälisten selvitystositteiden oletuskuvaukset. Tämä oletuskuvaus sisällytetään erääntymiskohteen ja erääntymislähteen tapahtumiin yritystenvälisen selvitysprosessin aikana. **Oletuskuvaukset**-sivulla voit luoda uudet kuvaukset sekä **konserniasiakkaan tilitykselle **että **konsernitoimittajan tilitykselle** valitsemalla kielen ja syöttämällä sitten tekstin.
+Voit määrittää yritystenvälisten selvitystositteiden oletuskuvaukset. Tämä oletuskuvaus sisällytetään erääntymiskohteen ja erääntymislähteen tapahtumiin yritystenvälisen selvitysprosessin aikana. **Oletuskuvaukset**-sivulla voit luoda uudet kuvaukset sekä **konserniasiakkaan tilitykselle**että **konsernitoimittajan tilitykselle** valitsemalla kielen ja syöttämällä sitten tekstin.
 
 
 

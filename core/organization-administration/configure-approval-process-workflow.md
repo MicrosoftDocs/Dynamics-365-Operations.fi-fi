@@ -3,7 +3,7 @@ title: "Hyväksyntäprosessin lisääminen työnkulkuun"
 description: "Määritä hyväksyntäprosessin ominaisuudet seuraavan menettelyn avulla."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 579e393ef64bc5ad72d129ac08ac215c524d5c55
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 99decd86602e7537af6393c6d28c262f20ca1f00
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Hyväksyntäprosessin lisääminen työnkulkuun
+
+[!include[banner](../includes/banner.md)]
+
 
 Määritä hyväksyntäprosessin ominaisuudet seuraavan menettelyn avulla.
 
@@ -132,7 +136,7 @@ Voit halutessasi määrittää lopullisen hyväksyjän skenaarioissa, joissa hyv
 
 ## <a name="set-a-time-limit"></a>Aikarajan määrittäminen
 Noudata seuraavia ohjeita, jos hyväksyntäprosessi on suoritettava tietyn ajan kuluessa.
-| **Huomautus **                                                                                                                                                |
+| **Huomautus**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tässä vaiheessa valitsemasi asetukset korvaavat asetukset, jotka olet valinnut kunkin hyväksyntävaiheen **Määritys**- ja **Eskalointi**-kohdissa. |
 
@@ -161,7 +165,9 @@ Kun asiakirja on määritetty käyttäjälle hyväksymistä varten, käyttäjän
 Hyväksyntäprosessi koostuu hyväksymisvaiheista. Lisää hyväksyntäprosessiin vaiheita ja määritä vaiheet tekemällä seuraava menettely.
 1.  Kaksoisnapsauta hyväksyntäprosessia työnkulun editorissa. Työnkulun editori näyttää hyväksyntäprosessin vaiheet.
 2.  Hyväksyntävaihe lisätään vetämällä vaihe **Työnkulun elementit** -alueelta alustalle.
-3.  Lisätietoja hyväksyntävaiheen konfiguroimisesta on kohdassa [Hyväksyntävaiheen konfiguroiminen](http://axhelp.dynamics.com/en/wiki/configure-an-approval-step/).
+3.  Lisätietoja hyväksyntävaiheen konfiguroimisesta on kohdassa [Hyväksyntävaiheen konfiguroiminen](configure-approval-step-workflow.md).
+
+
 
 
 

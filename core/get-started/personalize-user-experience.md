@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 8965c193839002776b3c61036b23b54625c974a4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 734bf8a5cd71d218942e1a57fbb6af8fef4dc998
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,10 +40,10 @@ Kaikki ja kaiken tyyppiset käyttäjän Dynamics 365 for Operationsissa tekemät
 ## <a name="systemwide-options-for-the-current-user"></a>Nykyisen käyttäjän järjestelmänlaajuiset vaihtoehdot
 Näet Siirtymispalkissa rattaan kuvan, jota kutsutaan **Asetukset**-valikkopainikkeeksi. Tämän **Asetukset**-valikon avaaminen tuo näyttöön eri vaihtoehtoja. Valinta **Asetukset** avaa käyttäjälle **Asetukset**-sivun. Tällä sivulla on neljä vaihtoehtovälilehteä: **Visuaalinen**, **Valinnat**, **Tili**, ja **Työnkulku**.
 
--   **Visuaalinen: **Käytä tätä valitaksesi väriteeman ja sivusi elementtien oletuskoon.
--   **Valinnat: **Tässä voit valita oletusasetukset, jotka näkyvät aina, kun avaat Dynamics 365 for Operationsin. Tähän sisältyvät yritys, aloitussivu ja oletusnäkymä/-muokkaustila (joka määrittää, onko sivu lukittu katselua varten vai avautuuko se muokkausta varten aina kun avaat sen). Löydät myös kieli-, aikavyöhyke-, päivämäärä-, aika- ja numeromuotojen vaihtoehdot. Viimeisenä sivulla on erilaisia sekalaisia valintoja, jotka vaihtelevat versioiden välillä.
--   **Tili: **Anna tässä käyttäjätunnuksesi ja muut tiliin liittyvät vaihtoehdot.
--   **Työnkulku: **Tässä voit valita työnkulkuun liittyviä vaihtoehtoja.
+-   **Visuaalinen:**Käytä tätä valitaksesi väriteeman ja sivusi elementtien oletuskoon.
+-   **Valinnat:**Tässä voit valita oletusasetukset, jotka näkyvät aina, kun avaat Dynamics 365 for Operationsin. Tähän sisältyvät yritys, aloitussivu ja oletusnäkymä/-muokkaustila (joka määrittää, onko sivu lukittu katselua varten vai avautuuko se muokkausta varten aina kun avaat sen). Löydät myös kieli-, aikavyöhyke-, päivämäärä-, aika- ja numeromuotojen vaihtoehdot. Viimeisenä sivulla on erilaisia sekalaisia valintoja, jotka vaihtelevat versioiden välillä.
+-   **Tili:**Anna tässä käyttäjätunnuksesi ja muut tiliin liittyvät vaihtoehdot.
+-   **Työnkulku:**Tässä voit valita työnkulkuun liittyviä vaihtoehtoja.
 
 ## <a name="implicit-personalizations"></a>Implisiittiset mukautukset
 Implisiittiset mukautukset ovat niitä mukautuksia, jotka suoritat yksinkertaisesti olemalla vuorovaikutuksessa tiettyjen tarkistusten kanssa, jotka muistavat nykyisen näkyvän tilansa. 
@@ -106,7 +107,7 @@ Joissain työtiloissa on lukumääräruutuja (ruutuja, joissa on numeroita), jot
 Koontinäyttö on usein ensimmäinen sivu, jonka näet kun avaat Dynamics 365 for Operationsin. Voit mukauttaa koontinäytön nimeämällä uudelleen työtilasi siirtymisruudut, näyttämällä vain haluamasi ruudut, nimeämällä ruudut uudelleen, tai järjestämällä ruudut haluamaasi järjestykseen. Mukauta koontinäkymä valitsemalla mikä tahansa ruutu ja avaa kontekstivalikko napsauttamalla hiiren oikealla painikkeella. Valitse kontekstivalikossa **Mukauta**. Jos valittu ruutu on se, jonka haluaisit piilottaa, nimetä uudelleen tai ohittaa, voit tehdä muutoksen suoraan esiin tulleessa Ominaisuudet-ikkunassa. Jos haluat järjestää ruudut, valitse **Mukauta tämä lomake** Ominaisuudet-ikkunassa avataksesi Mukauttaminen-työkalurivin. Voit sitten järjestää ruudut Siirrä-työkalun avulla.
 
 ## <a name="administration-of-personalization"></a>Mukauttamisen hallinta
-Sivu voidaan mukauttaa ja jakaa muiden käyttäjien kanssa yksinkertaisesti suorittamalla mukautetun sivun vienti ja pyytämällä muita käyttäjiä siirtymään mukautetulle sivulle ja tuomaan luomasi mukautustiedosto. Jos käyttäjällä on järjestelmänvalvojan oikeudet, hän voi myös hallita muiden käyttäjien mukautuksia **Mukautusasetukset**-sivulla. B-sivulle siirtyminen Löydät **Mukauttaminen**-sivulta kaksi välilehteä, joista toisen otsikko on **Järjestelmä** ja toisen** Käyttäjät**. 
+Sivu voidaan mukauttaa ja jakaa muiden käyttäjien kanssa yksinkertaisesti suorittamalla mukautetun sivun vienti ja pyytämällä muita käyttäjiä siirtymään mukautetulle sivulle ja tuomaan luomasi mukautustiedosto. Jos käyttäjällä on järjestelmänvalvojan oikeudet, hän voi myös hallita muiden käyttäjien mukautuksia **Mukautusasetukset**-sivulla. B-sivulle siirtyminen Löydät **Mukauttaminen**-sivulta kaksi välilehteä, joista toisen otsikko on **Järjestelmä** ja toisen**Käyttäjät**. 
 
 **Järjestelmä:** Täällä voit tilapäisesti poistaa käytöstä tai "sammuttaa" kaiken mukauttamisen järjestelmässä. Tämä ei poista mukautuksia vaan palauttaa kaikki lomakkeet niiden oletustilaan. Voit myöhemmin ottaa mukautukset uudelleen käyttöön siten, että kaikki mukautukset ovat taas käytössä jokaisessa käyttäjän lomakkeessa. Voit myös poistaa kaikkien käyttäjien kaikki mukautukset. Huomioi, että kun poistat kaikki mukautukset, ei ole mitään tapaa ottaa ne uudelleen käyttöön järjestelmän kautta. Varmista, että olet vienyt ne mukautukset, jotka haluat mahdollisesti tuoda ennen tämän vaiheen suorittamista. 
 

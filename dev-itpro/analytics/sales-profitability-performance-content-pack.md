@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 3e6b48768bb8e69d46f1555d9300f3b878b01ff1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35d34f9a356f8a041f2abf0aa8d6c3a6d9ca4a46
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Power BI:n myynnin ja kannattavuuden suorituskykysisältö
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä aiheessa kuvataan, mitä sisältyy Microsoft Power BI:n Dynamics 365 for Operations - Myynnin ja kannattavuuden suorituskyvyn sisältöpakettiin. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
@@ -44,6 +48,7 @@ Kannattavuuden analysointia varten on saatavilla:
 
 ## <a name="accessing-the-content-pack"></a>Sisältöpaketin avaaminen
 Microsoft Power BI:n myynnin ja kannattavuuden suorituskyvyn sisältöpaketti julkaistaan käyttöönotettavana resurssina elinkaaripalveluissa (LCS) ja se on käytettävissä Dynamics 365 for Operations -sovelluksessa. Lisätietoja Power BI -raporttien käyttämisestä ja avaamisesta löydät artikkelista [Power BI -sisältö LCS:ssä Microsoftilta ja kumppaneiltasi](power-bi-content-microsoft-partners.md).
+**Huomautus:** KB 4011327 on edellytys tämän Power BI -sisällön käytölle. Kun olet kirjautunut Lifecycle Servicesiin, pääset artikkeliin tästä: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
 
 ## <a name="metrics-included-in-the-content-pack"></a>Sisältöpakettiin sisältyvät mittarit
 Sisältöpakettiin kuuluu raportti, joka koostuu kaavioina, ruutuina ja taulukoina esitettävästä mittarijoukosta. Seuraavassa taulukossa on esitetty yhteenveto sisältöpaketissa käytettävistä visualisoinneista.
@@ -110,6 +115,8 @@ Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisä
 -   [Organisaation sisältöpakettien luominen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Tietojen mallinnus Power BI:n avulla](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Power BI -ruutujen lisääminen työtiloihin](configure-power-bi-integration.md)
+
+
 
 
 

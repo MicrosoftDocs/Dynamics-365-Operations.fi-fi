@@ -3,7 +3,7 @@ title: "Kokonaiskustannusten kohdistusmenetelmä"
 description: "Tämä artikkeli sisältää kokonaiskustannusten kohdistuksen käyttöön liittyviä ohjeita. Kokonaiskustannusten kohdistus on menetelmä, jolla lasketaan erätilauksen pääreseptinimikkeen ja reseptille määritettyjen oheistuotteiden välinen kustannus."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c26dcc5a8caa461bce90f931bb5c584f1816526b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a5c5788a3145dd6cabeed097d25a03a243577b8f
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="total-cost-allocation-method"></a>Kokonaiskustannusten kohdistusmenetelmä
+
+[!include[banner](../includes/banner.md)]
+
 
 Tämä artikkeli sisältää kokonaiskustannusten kohdistuksen käyttöön liittyviä ohjeita. Kokonaiskustannusten kohdistus on menetelmä, jolla lasketaan erätilauksen pääreseptinimikkeen ja reseptille määritettyjen oheistuotteiden välinen kustannus.
 
@@ -36,6 +40,11 @@ Kokonaiskustannusten kohdistus on menetelmä, jolla lasketaan erätilauksen pä�
 Seuraavassa on muutamia ohjeita, jotka liittyvät kokonaiskustannusten kohdistuksen käyttämiseen oheistuotteiden yhteydessä:
 
 -   Jos reseptiversion **Kokonaiskustannusten kohdistus** -liukusäädin asetetaan arvoon **Kyllä**, oheistuotteilla on oltava kustannushinta, joka on suurempi kuin nolla (0). Arvo voidaan hakea aktiivisesta kustannuslaskelmaversiosta samalle toimipaikalle tai muun kuin toimipaikkakohtaisen reseptin ensimmäiselle toimipaikalle. Ehto tarkistetaan reseptin hyväksymisen yhteydessä.
+
+    -   Oheistuotteille ei tarvitse syöttää kustannusten kohdistusprosentteja käsin. Järjestelmä luo sen sijaan kustannusten kohdistusprosentin automaattisesti oheistuotteiden aktiivisten kustannushintojen keskiarvosta. 
+    -   Vakiokustannusta ei tarvitse täyttää ei-vakiokustannuksellisille nimikkeille, jotka ovat oheistuotteita. Järjestelmässä on kaksi erilaista kustannuslaskentaversiota: vakiokustannus ja suunniteltu kustannus 
+    -   Jos nimikettä ei arvosteta vakiokustannuksen arvostustavalla, suosittelemme, että käytät suunnitellun kustannusversion aktiivista kustannushintaa. Tätä hintaa käytetään kustannusten arvioinnissa, esimerkiksi tuoterakennelaskelmissa, tuotantokustannusarvioissa ja varahinnoissa varaston arvostusprosessin aikana. 
+
 -   Jos reseptiversion **Kokonaiskustannusten kohdistus** -liukusäädin asetetaan arvoon **Kyllä** ja seuraavat ehdot toteutuvat, kustannusten kohdistusmenetelmä on **Kokonaiskustannusten kohdistus** ja kustannusten kohdistuksen prosentti pysyy ennallaan:
     -   Olet lisännyt oheistuotteita.
     -   Olet käyttänyt oheistuotteille eri kustannusten kohdistusmenetelmää.
@@ -53,6 +62,8 @@ Seuraavassa on muutamia ohjeita, jotka liittyvät kokonaiskustannusten kohdistuk
 -   **Prosentti** – Kustannussumma lasketaan prosenttiosuutena tuotannossa käytettävien raaka-aineiden kokonaiskustannuksista. Tähän kenttään lisätään prosentti, jota käytetään laskennassa.
 -   **Per sarja** – Kustannussumma lasketaan summana per tuotantotilauksen vakioeräkoko. Summa on riippumaton tuotannon raportoidusta määrästä. Tähän kenttään lisätään summa, jota käytetään laskennassa.
 -   **Per määrä** – Kustannussumma lasketaan summana per tuotannon reseptinimikkeen raportoitu määrä. Tähän kenttään lisätään summa, jota käytetään laskennassa.
+
+
 
 
 

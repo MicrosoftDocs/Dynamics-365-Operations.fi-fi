@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f77fe37933854d66c35a4a14e6dfb6db398eb034
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 53700246fb072c4d9afb2e475ae27892700a078a
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -58,7 +59,7 @@ Resurssiryhmä on operatiivisten resurssien joukko, joka edustaa rakeisuutta, jo
 Tuotantoyksikkö on hallinnollinen yksikkö, joka on kokoelma resurssiryhmiä. Tuotantoyksikkö voi sisältää useita resurssiryhmiä, mutta resurssiryhmän voidaan määrittää vain yhteen tuotantoyksikköön. Tuotantoyksikkö kuvastaa tuotantoresurssien fyysistä kaavaa, eikä sillä ole vaikutusta tapahtumiin tai niiden käsittelyyn. Sinun on liitettävä tuotantoyksikkö toimipisteeseen. Voit myös määrittää tuotantoyksikölle keräysvaraston ja säilytysvaraston. Tuotantoyksikön avulla voit konsolidoida ja suodattaa tuotantoon liittyviä tietoja. Työnohjauksen johtaja voi esimerkiksi tarkastella tietyn tuotantoyksikön jäljellä olevan kuormituksen ja käytettävissä olevan kapasiteetin yhteenvetoa. Voit vaihtaa resurssiryhmään kohdistettua tuotantoyksikköä. Voit myös poistaa tuotantoyksikön. Tuotantoyksikköön tehtävät muutokset vaikuttavat kuitenkin vain uusiin tilauksiin, jotka luodaan pääajoituksen suorittamisen jälkeen. Jos haluat ottaa tuotantoyksikön muutokset käyttöön aiemmin luoduissa tilauksissa, muutokset on tehtävä manuaalisesti.
 
 ## <a name="resource-scheduling"></a>Resurssien ajoitus
-Operatiiviset resurssit lisätään tehtäviin, kun projektia tai tuotantoa ajoitetaan. Käytettävissä on kaksi ajoitusmenetelmää: työvaiheiden ajoittaminen ja töiden ajoittaminen. Työvaiheiden ajoituksessa kukin projektitehtävän työvaihe ajoitetaan resurssiryhmälle, jonka sisältämät operatiiviset resurssit vastaavat työvaiheelle määritettyjä resurssivaatimuksia. Jos työvaiheeseen tarvitaan jokin tietty operatiivinen resurssi, ajoitus varaa kapasiteettia vain ryhmän tietylle operatiiviselle resurssille. Töiden ajoitus on tarkempi kuin työvaiheiden ajoitus. Se erittelee kunkin työvaiheen yksittäisiksi tehtäviksi tai töiksi. Nämä työt määritetään sitten ne suorittaville operatiivisille resursseille. Ajoitus varaa kapasiteettia resurssiryhmistä tuotannon reititys- tai projektitehtäville määritettyjen työvaiheaikojen perusteella. Jos käytettävissä on vain rajallisesti kapasiteettia, ajoitus on riippuvainen tehtävän suorittamiseen tarvittavien operatiivisten resurssien saatavuudesta. Työvaiheiden ajoituksessa resurssiryhmään kapasiteetti on ryhmään kuuluvien operatiivisten resurssien käytettävissä olevan kapasiteetin summa. Operatiivisille resursseille jo aiemmin tehdyt kapasiteettivaraukset katsotaan kapasiteetiksi, joka ei ole käytettävissä. Jos tuotannolle ei ole riittävästi käytettävissä olevaa kapasiteettia, tuotantotilaukset saattavat viivästyä tai jopa pysähtyä. **Resurssit **-sivulla voit määrittää useita ominaisuuksia, jotka määrittävät, miten kapasiteettivaraukset tehdään:
+Operatiiviset resurssit lisätään tehtäviin, kun projektia tai tuotantoa ajoitetaan. Käytettävissä on kaksi ajoitusmenetelmää: työvaiheiden ajoittaminen ja töiden ajoittaminen. Työvaiheiden ajoituksessa kukin projektitehtävän työvaihe ajoitetaan resurssiryhmälle, jonka sisältämät operatiiviset resurssit vastaavat työvaiheelle määritettyjä resurssivaatimuksia. Jos työvaiheeseen tarvitaan jokin tietty operatiivinen resurssi, ajoitus varaa kapasiteettia vain ryhmän tietylle operatiiviselle resurssille. Töiden ajoitus on tarkempi kuin työvaiheiden ajoitus. Se erittelee kunkin työvaiheen yksittäisiksi tehtäviksi tai töiksi. Nämä työt määritetään sitten ne suorittaville operatiivisille resursseille. Ajoitus varaa kapasiteettia resurssiryhmistä tuotannon reititys- tai projektitehtäville määritettyjen työvaiheaikojen perusteella. Jos käytettävissä on vain rajallisesti kapasiteettia, ajoitus on riippuvainen tehtävän suorittamiseen tarvittavien operatiivisten resurssien saatavuudesta. Työvaiheiden ajoituksessa resurssiryhmään kapasiteetti on ryhmään kuuluvien operatiivisten resurssien käytettävissä olevan kapasiteetin summa. Operatiivisille resursseille jo aiemmin tehdyt kapasiteettivaraukset katsotaan kapasiteetiksi, joka ei ole käytettävissä. Jos tuotannolle ei ole riittävästi käytettävissä olevaa kapasiteettia, tuotantotilaukset saattavat viivästyä tai jopa pysähtyä. **Resurssit**-sivulla voit määrittää useita ominaisuuksia, jotka määrittävät, miten kapasiteettivaraukset tehdään:
 
 -   **Kapasiteetti** – Määritä operatiivisten resurssien kapasiteetti tunteina kapasiteetin mittayksikön perusteella.
 -   **Erän kapasiteetti** – Määritä, kuinka monta kappaletta operatiivinen resurssi pystyy enintään käsittelemään suorituksen aikana.

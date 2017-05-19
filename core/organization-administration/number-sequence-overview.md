@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: a812c93a13fd36f44e659c9976099af62793098f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ce03d3b55ecdc05f70a36762f7de49b3018b6451
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,14 +32,14 @@ ms.lasthandoff: 03/31/2017
 
 Microsoft Dynamics 365 for Operationsin numerosarjoja käytetään luettavien, yksilöllisten tunnisteiden luomiseen päätietojen tietueille ja tapahtumatietueille, jotka edellyttävät tunnisteita. Tunnisteen vaativaa päätiedon tietuetta tai tapahtumatietuetta kutsutaan nimellä <em>viite</em>.
 
-Ennen kuin voit luoda Microsoft Dynamics 365 for Operationsin viitteelle uusia tietueita, määritä numerosarja ja liitä se viitteeseen. Suosittelemme, että määrität numerosarjat **Organisaation hallinto** -sivujen avulla. Jos moduulikohtaiset asetukset ovat pakollisia, voit käyttää moduulin parametrisivua määrittämään moduulin numerosarjan viitteitä. Voit määrittää esimerkiksi kohdissa **Myyntireskontra** ja **Ostoreskontra** numerosarjaryhmiä, joilla kohdistetaan tietyt numerosarjat tietyille asiakkaille tai toimittajille. Kun määrität numerosarjan, sinun on määritettävä alue, joka määrittää, mitkä organisaatio käyttää numerosarjaa. Vaikutusalue voi olla **Jaettu**, **Yritys**, **Oikeushenkilö** tai **Toimintayksikkö**. Vieläkin tarkempia numerosarjoja saadaan yhdistämällä vaikutusalueet **Oikeushenkilö** ja **Yritys** sekä **Kirjanpidon vuosikalenterin kausi**. Numerosarjan muodot koostuvat segmenteistä. Numerosarjat, joiden vaikutusalue on muu kuin **Jaettu **, voivat sisältää osia, jotka vastaavat vaikutusaluetta. Esimerkiksi numerosarja, jonka vaikutusalue on **Oikeushenkilö**, voi sisältää yrityssegmentin. Liittämällä vaikutusaluesegmentin numerosarjan muodossa voit tunnistaa tietyn tietueen vaikutusalueen katsomalla sen numero. Segmenttien, jotka vastaavat vaikutusalueita, numerosarjamuodot voivat sisältää **Vakio** ja **Aakkosnumeerinen**-segmentit. **Vakio** -segmentti sisältää numeroita, kirjaimia tai symboleja, jotka eivät muutu. **Aakkosnumeerinen**-segmentti sisältää joukon kirjaimia tai numeroita, jotka lisääntyvät aina, kun numeroa käytetään. Käyttää ristikkomerkkiä (\#) edustamaan kasvavia numeroita ja et-merkkiä (&) edustamaan kasvavia kirjaimia. Esimerkiksi muodon \#\#\#\#\#\_2017 avulla luodaan sarja 00001\_2017, 00002\_2017 jne.
+Ennen kuin voit luoda Microsoft Dynamics 365 for Operationsin viitteelle uusia tietueita, määritä numerosarja ja liitä se viitteeseen. Suosittelemme, että määrität numerosarjat **Organisaation hallinto** -sivujen avulla. Jos moduulikohtaiset asetukset ovat pakollisia, voit käyttää moduulin parametrisivua määrittämään moduulin numerosarjan viitteitä. Voit määrittää esimerkiksi kohdissa **Myyntireskontra** ja **Ostoreskontra** numerosarjaryhmiä, joilla kohdistetaan tietyt numerosarjat tietyille asiakkaille tai toimittajille. Kun määrität numerosarjan, sinun on määritettävä alue, joka määrittää, mitkä organisaatio käyttää numerosarjaa. Vaikutusalue voi olla **Jaettu**, **Yritys**, **Oikeushenkilö** tai **Toimintayksikkö**. Vieläkin tarkempia numerosarjoja saadaan yhdistämällä vaikutusalueet **Oikeushenkilö** ja **Yritys** sekä **Kirjanpidon vuosikalenterin kausi**. Numerosarjan muodot koostuvat segmenteistä. Numerosarjat, joiden vaikutusalue on muu kuin **Jaettu**, voivat sisältää osia, jotka vastaavat vaikutusaluetta. Esimerkiksi numerosarja, jonka vaikutusalue on **Oikeushenkilö**, voi sisältää yrityssegmentin. Liittämällä vaikutusaluesegmentin numerosarjan muodossa voit tunnistaa tietyn tietueen vaikutusalueen katsomalla sen numero. Segmenttien, jotka vastaavat vaikutusalueita, numerosarjamuodot voivat sisältää **Vakio** ja **Aakkosnumeerinen**-segmentit. **Vakio** -segmentti sisältää numeroita, kirjaimia tai symboleja, jotka eivät muutu. **Aakkosnumeerinen**-segmentti sisältää joukon kirjaimia tai numeroita, jotka lisääntyvät aina, kun numeroa käytetään. Käyttää ristikkomerkkiä (\#) edustamaan kasvavia numeroita ja et-merkkiä (&) edustamaan kasvavia kirjaimia. Esimerkiksi muodon \#\#\#\#\#\_2017 avulla luodaan sarja 00001\_2017, 00002\_2017 jne.
 Numerosarjaesimerkit
 ------------------------
 
 Seuraavissa esimerkeissä näytetään, kuinka segmenttejä käytetään numerosarjamuotojen luomiseen. Erityisesti esimerkit osoittavat alueen segmenttien vaikutuksen.
 ### <a name="expense-report-numbers"></a>Kuluraportin numerot
 
-Seuraavassa esimerkissä kuluraportin numerot määritetään yritykselle, jonka nimi on **CS**. **Alue: **Matkalaskut **Viite: **Kuluraportin numero **Vaikutusalue: **Oikeushenkilö **Oikeushenkilö: **CS
+Seuraavassa esimerkissä kuluraportin numerot määritetään yritykselle, jonka nimi on **CS**. **Alue:**Matkalaskut **Viite:**Kuluraportin numero **Vaikutusalue:**Oikeushenkilö **Oikeushenkilö:**CS
 | Segmentit  | Segmenttityyppi | Arvo     |
 |-----------|--------------|-----------|
 | Segmentti 1 | Oikeushenkilö | CS        |
@@ -49,7 +50,7 @@ Seuraavassa esimerkissä kuluraportin numerot määritetään yritykselle, jonka
 
 ### <a name="sales-order-numbers"></a>Myyntitilausnumerot
 
-Seuraavassa esimerkissä myyntitilausnumerot määritetään yritystunnukselle **CEU**. **Alue: **Myynti **Viite: **Myyntitilaus **Vaikutusalue: **Yritys **Yritys: **CEU
+Seuraavassa esimerkissä myyntitilausnumerot määritetään yritystunnukselle **CEU**. **Alue:**Myynti **Viite:**Myyntitilaus **Vaikutusalue:**Yritys **Yritys:**CEU
 | Segmentit  | Segmenttityyppi | Arvo    |
 |-----------|--------------|----------|
 | Segmentti 1 | Vakio     | MT-      |
@@ -59,7 +60,7 @@ Seuraavassa esimerkissä myyntitilausnumerot määritetään yritystunnukselle *
 
 ### <a name="purchase-requisition-numbers"></a>Ostoehdotuksen numerot
 
-Seuraavassa esimerkissä ostoehdotusnumerot ovat organisaation laajuisia. **Alue: **Osto **Viite: **Ostoehdotus **Vaikutusalue: **Jaettu
+Seuraavassa esimerkissä ostoehdotusnumerot ovat organisaation laajuisia. **Alue:**Osto **Viite:**Ostoehdotus **Vaikutusalue:**Jaettu
 | Segmentit  | Segmenttityyppi | Arvo    |
 |-----------|--------------|----------|
 | Segmentti 1 | Vakio     | Tarv.      |

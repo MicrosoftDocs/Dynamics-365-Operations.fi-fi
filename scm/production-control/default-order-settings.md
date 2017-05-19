@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 60abaa69debd891b2fe2dd98184c0dab50b0bf9f
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 26ad7fb0e9371b8e1d45d61f2348241c6aca16b9
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -90,7 +91,7 @@ Tilauksen oletusasetusten säännöt sisältävät luokituksia. Mitä korkeampi 
 
 ### <a name="default-order-settings-for-released-products"></a>Vapautettujen tuotteiden oletustilausasetukset
 
-Voit määrittää yksittäisille vapautetuille tuotteille yleiset tilausasetukset tai toimipaikkakohtaiset tilausasetukset. Yleisten tilausasetusten luokitus on aina nolla. Jos määrität uusia myynnin, ostojen ja varaston tilausasetuksia samalla kertaa yhdessä, suosittelemme, että käytät **Tietonäkymä**-kohtaa **Tilauksen oletusasetukset ** -sivulla. Voit siirtyä tietonäkymään **Asetukset**-toimintoruudussa &gt; **Sivun asetukset** &gt; **Vaihda näyttö** &gt; **Tietonäkymä**.
+Voit määrittää yksittäisille vapautetuille tuotteille yleiset tilausasetukset tai toimipaikkakohtaiset tilausasetukset. Yleisten tilausasetusten luokitus on aina nolla. Jos määrität uusia myynnin, ostojen ja varaston tilausasetuksia samalla kertaa yhdessä, suosittelemme, että käytät **Tietonäkymä**-kohtaa **Tilauksen oletusasetukset** -sivulla. Voit siirtyä tietonäkymään **Asetukset**-toimintoruudussa &gt; **Sivun asetukset** &gt; **Vaihda näyttö** &gt; **Tietonäkymä**.
 
 ### <a name="site-specific-order-settings"></a>Toimipaikkakohtaiset tilausasetukset
 
@@ -149,9 +150,9 @@ Yleisen periaatteen mukaisesti erityissäännöt ja tärkeämpien dimensioiden s
 
 Sääntö, jonka luokitus on nolla, toimii turvaverkkona. Jos muut säännöt eivät päde, käytetään nollasäännön mukaisia tilauksen oletusasetukset. 
 
-Koska luokitusnumero on tärkeä, **Tilauksen oletusasetukset **-toimintoruudussa on toimintoja säännön siirtämiseksi ylös tai alas tai säännön uudelleennumeroimiseksi, niin että ne etenevät aina 10 kerrallaan. 
+Koska luokitusnumero on tärkeä, **Tilauksen oletusasetukset**-toimintoruudussa on toimintoja säännön siirtämiseksi ylös tai alas tai säännön uudelleennumeroimiseksi, niin että ne etenevät aina 10 kerrallaan. 
 
-Vapautetulla tuotteella voi olla useita luotuja sääntöjä. Saat selkeämmän käsityksen siitä, mikä sääntö on hallitseva ja miksi sitä tarvitaan, kohdasta **Ruudukkonäkymä** ** Tilauksen oletusasetukset** -sivulla. Voit ottaa ruudukkonäkymän käyttöön kohdassa **Asetukset**-toimintoruutu &gt; **Sivun asetukset** &gt; **Vaihda näkymää** &gt; **Ruudukkonäkymä**. Ruudukossa näytettävien sarakkeiden määrä voi olla hyvin suuri, erityisesti myynti- ja varasto-välilehdillä. Näytettävien sarakkeiden enimmäismäärää ruudukossa voidaan rajoittaa piilottamalla tai näyttämällä sarakeryhmiä painikkeilla kohdassa **Tilauksen oletusasetukset** &gt; **Sarakkeen näyttö** -valikko.
+Vapautetulla tuotteella voi olla useita luotuja sääntöjä. Saat selkeämmän käsityksen siitä, mikä sääntö on hallitseva ja miksi sitä tarvitaan, kohdasta **Ruudukkonäkymä** **Tilauksen oletusasetukset** -sivulla. Voit ottaa ruudukkonäkymän käyttöön kohdassa **Asetukset**-toimintoruutu &gt; **Sivun asetukset** &gt; **Vaihda näkymää** &gt; **Ruudukkonäkymä**. Ruudukossa näytettävien sarakkeiden määrä voi olla hyvin suuri, erityisesti myynti- ja varasto-välilehdillä. Näytettävien sarakkeiden enimmäismäärää ruudukossa voidaan rajoittaa piilottamalla tai näyttämällä sarakeryhmiä painikkeilla kohdassa **Tilauksen oletusasetukset** &gt; **Sarakkeen näyttö** -valikko.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Vapautetun tuotevariantin erityistilausasetukset
 

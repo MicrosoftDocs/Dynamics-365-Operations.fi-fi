@@ -3,7 +3,7 @@ title: "Kanban-työn aikataulutus lean-valmistukselle"
 description: "Tässä artikkelissa on tietoja kanban-työn aikataulutuksen visuaalisesta hallintatavasta ja kanban-töiden erilaisista ajoitustavoista."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 02 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,22 +18,28 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 062cbbc8a4fd3b4dc738f24ee0606a3741736377
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 019974b96985748c82641b73e40a3131d5b27232
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanban-työn aikataulutus lean-valmistukselle
 
+[!include[banner](../includes/banner.md)]
+
+
 Tässä artikkelissa on tietoja kanban-työn aikataulutuksen visuaalisesta hallintatavasta ja kanban-töiden erilaisista ajoitustavoista.  
 
 **Kanban-työn aikataulutus** -sivu tarjoaa visuaalisen hallintatavan Lean-valmistuksen työsolujen aikataulutukseen. Se näyttää yleiskatsauksen kaikista kanban-töistä ja tarjoaa useita suodatusominaisuuksia. Tältä sivulta voit siirtyä kaikille muille kanban-konfiguraatioon ja toteutukseen liittyville sivuille.
 
 ## <a name="automatic-scheduling-of-kanban-jobs"></a>Kanban-töiden automaattinen ajoitus
-Ajoitus voidaan käynnistää automaattisesti, jos määrität **Automaattisen suunnittelun määrä** -parametrin kanban-säännölle. Jos määrität **Automaattisen suunnittelun määrä** -asetukseksi **1**, jokainen kanban-työ suunnitellaan heti, kun se on luotu. Tämän tuloksena on sarja ensimmäinen sisään, ensimmäinen ulos -toimintoja. Jos määrität **Automaattisen suunnittelun määrä** -arvoksi yli 1, kanban-työt ryhmitellään suunnittelua. Tämä konsepti mahdollistaa kanban-kokojen pienentämisen varsinaisia taloudellisia eräkokoja pienemmiksi. Esimerkiksi tietyn nimikkeen (tai nimikeperheen) taloudellinen eräkoko on 30. Sen sijaan, että loisit kanbaneita, jotka käyttävät tuotteiden määrää 30, voit määrittää kanban-säännön niin, että sillä on tuotemäärä 10 ja **Automaattisen suunnittelun määrä **-arvo **3**. Vaikka automaattinen suunnittelu ajoittaa kanban-töitä työsolulle vain, kun on kolme suunnittelematonta työtä, suunnittelijalla ja työntekijäportaan esimiehellä on täysi näkyvyys siihen, että kaksi suunnittelematonta työtä odottaa toteutusta. Suunnittelija tai työntekijöiden esimies voi sitten ottaa nämä kaksi työtä tuotantoon suunnittelemalla ne manuaalisesti tai luomalla lisäkanbaneita.
+Ajoitus voidaan käynnistää automaattisesti, jos määrität **Automaattisen suunnittelun määrä** -parametrin kanban-säännölle. Jos määrität **Automaattisen suunnittelun määrä** -asetukseksi **1**, jokainen kanban-työ suunnitellaan heti, kun se on luotu. Tämän tuloksena on sarja ensimmäinen sisään, ensimmäinen ulos -toimintoja. Jos määrität **Automaattisen suunnittelun määrä** -arvoksi yli 1, kanban-työt ryhmitellään suunnittelua. 
+
+Tämä konsepti mahdollistaa kanban-kokojen pienentämisen varsinaisia taloudellisia eräkokoja pienemmiksi. Esimerkiksi tietyn nimikkeen (tai nimikeperheen) taloudellinen eräkoko on 30. Sen sijaan, että loisit kanbaneita, jotka käyttävät tuotteiden määrää 30, voit määrittää kanban-säännön niin, että sillä on tuotemäärä 10 ja **Automaattisen suunnittelun määrä** -arvo **3**. Vaikka automaattinen suunnittelu ajoittaa kanban-töitä työsolulle vain, kun on kolme suunnittelematonta työtä, suunnittelijalla ja työntekijäportaan esimiehellä on täysi näkyvyys siihen, että kaksi suunnittelematonta työtä odottaa toteutusta. Suunnittelija tai työntekijöiden esimies voi sitten ottaa nämä kaksi työtä tuotantoon suunnittelemalla ne manuaalisesti tai luomalla lisäkanbaneita.
 
 ## <a name="manual-scheduling"></a>Manuaalinen ajoitus
 Manuaalista ajoitusta varten Microsoft Dynamics AX 2012:een luotiin kanban-aikataulu. Manuaalinen ajoitus voidaan yhdistää automaattiseen ajoitukseen. Kanban-aikataulun avulla voit suunnitella töitä ja perua niiden suunnitelmat, siirtää niitä sarjassa tai siirtää niitä kaudelta toiselle. Töiden, jotka perustuvat kanban-sääntöön, jossa **Automaattinen suunnittelu** -arvo on yli **0,** suunnittelu voidaan perua manuaalisesti. Nämä työt suunnitellaan kuitenkin uudelleen seuraavan automaattisen suunnittelutapahtuman yhteydessä (toisin sanoen, kun luodaan uusi kanban). Seuraavat vaihtoehdot ovat saatavilla manuaalisessa ajoituksessa:
@@ -66,5 +72,7 @@ Saatavilla olevan päivä- tai viikkokapasiteetin määrittää työsolulle mä�
 
 <a name="see-also"></a>Lisätietoja
 --------
+
+
 
 

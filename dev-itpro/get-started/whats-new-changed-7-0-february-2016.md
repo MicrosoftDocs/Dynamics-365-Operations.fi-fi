@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 2928b86a9dbf001451933f9d17287400cafaf089
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 36d4aec3936ef99b880f3affc75df1b952cb3133
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0:n uudet ja muuttuneet ominaisuudet (helmikuu 2016)
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa käsitellään Microsoft Dynamics AX 7.0:n uusia tai muuttuneita ominaisuuksia. Tässä versiossa on sekä ympäristö- että sovellusominaisuuksia, ja se julkaistiin helmikuussa 2016.
 
@@ -170,7 +174,7 @@ Tämä toiminto toimii erillään tuotettuun nimikkeeseen määritetyistä kusta
 <td>Jaetun palvelun kirjanpitäjä voi kirjata kirjauskansioita eri yrityksiin lomakkeesta poistumatta tai yrityskontekstia vaihtamatta.</td>
 </tr> 
 <tr class="odd">
-<td>Käytä uutta **Kirjanpitolähteen hallinta **-sivua.</td>
+<td>Käytä uutta **Kirjanpitolähteen hallinta**-sivua.</td>
 <td>Saatavilla Dynamics AX 2012 R3 CU10:sta alkaen.</td>
 <td>Uusi **Kirjanpitolähteen hallinta** -sivu ja toiminnot, joilla voi siirtyä sivulta **Pääkirja**-luettelosivulle ja **Tositetapahtumat**-sivulle.</td>
 <td>Mahdollistaa erittäin tarkan näkymän pääkirjan lähteen tai kirjauskansion kirjanpitomerkinnän tietoihin tai ad hoc -analyysin.</td>
@@ -331,8 +335,8 @@ Tämä toiminto toimii erillään tuotettuun nimikkeeseen määritetyistä kusta
 <tr class="even">
 <td>Pääset käyttämään menettelyyn liittyviä ohjeita (tehtäväohjeita) ja käsitteellisiä ohjeaiheita valitsemalla **Ohje**.</td>
 <td>AX 2012:n ohjejärjestelmä vie paikallisella verkkopalvelimella oleviin HTML-ohjeaiheisiin. Asiakkaat ja kumppanit voivat luoda oman ohjeensa.</td>
-<td>Nykyisen Dynamics AX:n version ohjejärjestelmä näyttää tehtäväoppaat, joka on tallennettu Microsoft Dynamics Lifecycle Servicesin (LCS) BPM:ään. Ohjejärjestelmä näyttää myös Microsoftin wikisivuston aiheet. Lisätietoja on ohjeaiheissa [Dynamics AX:n ohje – aloittaminen](help-overview.md) ja [Uudet tehtäväoppaat saatavilla (helmikuu 2016)](new-task-guides-available-february-2016.md).</td>
-<td>Tehtäväoppaissa käsitellään vuorovaikutteisesti tehtävän tai liiketoimintaprosessin eri vaiheet. Voit ladata ja mukauttaa Microsoft toimittamia tehtäväohjeita. Wiki on nopea ja jousta tapa luoda, toimittaa ja päivittää tuotteiden ohjeita. Niinpä saatkin aina käyttöösi uusimmat tekniset tiedot.</td>
+<td>Nykyisen Dynamics AX:n version ohjejärjestelmä näyttää tehtäväoppaat, joka on tallennettu Microsoft Dynamics Lifecycle Servicesin (LCS) BPM:ään. Ohjejärjestelmä näyttää myös Microsoftin ohjesivuston aiheet. Lisätietoja on ohjeaiheissa [Dynamics AX:n ohje – aloittaminen](help-overview.md) ja [Uudet tehtäväoppaat saatavilla (helmikuu 2016)](new-task-guides-available-february-2016.md).</td>
+<td>Tehtäväoppaissa käsitellään vuorovaikutteisesti tehtävän tai liiketoimintaprosessin eri vaiheet. Voit ladata ja mukauttaa Microsoft toimittamia tehtäväohjeita. Aihe on nopea ja jousta tapa luoda, toimittaa ja päivittää tuotteiden ohjeita. Niinpä saatkin aina käyttöösi uusimmat tekniset tiedot.</td>
 </tr>
 </tbody>
 </table>
@@ -555,7 +559,7 @@ Uusia ominaisuuksia ei ole lisätty.
 |------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Mitä voit tehdä?**                                                                                                                                 | **Dynamics AX 2012**                                                                                                             | **Dynamics AX 7.0**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | **Miksi tämä on tärkeää?**                                                                                                                                                                                                                                            |
 | Voit suorittaa tuotantotilausten materiaalin saatavuustarkistuksen erillisellä sivulla, joka avataan **Tuotannon hallinta** -työtilasta. | Ei käytettävissä                                                                                                                    | Tuotannon esimies voit tarkistaa, ovatko ajoitettujen tuotantotilausten materiaalit saatavilla käytettävissä pyydettynä päivänä. Tuotannon esimies näkee työtilassa, kuinka monta tuotantotilausta on ajoitetussa tilassa odottamassa vapautusta. Materiaalin saatavuustiedot päivitetään dynaamisen pääsuunnitelman perusteella, jos käytettävissä oleva varasto täyttää toteutuneiden tai suunniteltujen tilausten materiaalivaatimukset. Esimies voi vapauttaa tilauksen materiaalin saatavuustietojen perusteella **Materiaalin saatavuus** -sivulla.                                                                                                                                                                                                                                                                                                                        | Tämä ominaisuus auttaa tuotannon esimiehiä tekemään oikeita, materiaalien tilaukseen kohdistamista koskevia päätöksiä, kun tuotantotilaukset vapautetaan tuotantoon.                                                                                                       |
-| Voit käynnistää tuotantotyöt ja raportoida niiden edistymisen uudella **Työkorttilaite**-sivulla.                                                              | **Työn rekisteröinti **-lomake on tarkoitettu ensisijaisesti suuriin näyttöihin ja käyttöliittymää käytetään yleensä hiirellä. | Vaikka uusi **Työkorttilaite**-sivu on suunniteltu yksinkertaiseksi, se on suunniteltu myös kosketuskäyttöön. Sivu sopii hyvin mobiililaitteisiin, kuten tabletteihin ja puhelimiin. Työnohjauksen työntekijät eivät saa turhaa tietoa ja käyttö on intuitiivista. Työntekijä voi suorittaa perinteisiä tehtäviä, kuten käynnistää, lopettaa ja raportoida työn edistymisestä. Varsinaisen työn tai uloskirjautumisen lisäksi työntekijä voi tarkastella liitteitä, siirtyä lounastauolle tai suorittaa muita tehtäviä. Töitä asetetaan työntekijän jonoon suunnitellussa järjestyksessä, mutta työntekijä voi myös poimia työn. Sivu on tarkoitettu ensisijaisesti erillisiin valmistustoimintoihin, joissa materiaaleja valmistellaan tuotantoon. Jos kyse on oheis- ja sivutuotteiden raportointiin liittyvistä skenaarioista ja materiaalien noutamisesta seurantadimensioiden mukaan, käytä **Työn rekisteröinti** -sivua. | Kosketuskäyttöön tarkoitetun, kaikenlaisilla laitteilla, kuten näyttöpäätteillä tai mobiililaitteilla, käytettävän vaihtoehtoisen käyttöliittymän käyttöönotto pienentää perinteisten työnohjauksen rekisteröintien käyttöönottokustannuksia. |
+| Voit käynnistää tuotantotyöt ja raportoida niiden edistymisen uudella **Työkorttilaite**-sivulla.                                                              | **Työn rekisteröinti**-lomake on tarkoitettu ensisijaisesti suuriin näyttöihin ja käyttöliittymää käytetään yleensä hiirellä. | Vaikka uusi **Työkorttilaite**-sivu on suunniteltu yksinkertaiseksi, se on suunniteltu myös kosketuskäyttöön. Sivu sopii hyvin mobiililaitteisiin, kuten tabletteihin ja puhelimiin. Työnohjauksen työntekijät eivät saa turhaa tietoa ja käyttö on intuitiivista. Työntekijä voi suorittaa perinteisiä tehtäviä, kuten käynnistää, lopettaa ja raportoida työn edistymisestä. Varsinaisen työn tai uloskirjautumisen lisäksi työntekijä voi tarkastella liitteitä, siirtyä lounastauolle tai suorittaa muita tehtäviä. Töitä asetetaan työntekijän jonoon suunnitellussa järjestyksessä, mutta työntekijä voi myös poimia työn. Sivu on tarkoitettu ensisijaisesti erillisiin valmistustoimintoihin, joissa materiaaleja valmistellaan tuotantoon. Jos kyse on oheis- ja sivutuotteiden raportointiin liittyvistä skenaarioista ja materiaalien noutamisesta seurantadimensioiden mukaan, käytä **Työn rekisteröinti** -sivua. | Kosketuskäyttöön tarkoitetun, kaikenlaisilla laitteilla, kuten näyttöpäätteillä tai mobiililaitteilla, käytettävän vaihtoehtoisen käyttöliittymän käyttöönotto pienentää perinteisten työnohjauksen rekisteröintien käyttöönottokustannuksia. |
 
 ## <a name="master-planning-and-forecasting"></a>Pääsuunnittelu ja ennusteet
 |                                                                                                                            |                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                         |
@@ -1076,5 +1080,7 @@ Uusia ominaisuuksia ei ole lisätty.
 [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md)
 
 [Uudet tehtäväoppaat saatavilla (helmikuu 2016)](new-task-guides-available-february-2016.md)
+
+
 
 

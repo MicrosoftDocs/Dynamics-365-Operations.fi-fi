@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 0719a49bee069dc49be084a3fbc4ba5eb4883d03
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2f0ddf0e4cff0d799a7baf6bdc9d5c2da0622f4d
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -98,7 +99,7 @@ Kun asetat toimittajan pitoon, voit myös määrittää pidolle syyn ja päiväm
 Jos usealla toimittajalla on sama laskutusosoite tai jos toimittajaa laskutetaan kolmannen osapuolen kautta, voit määrittää toimittajatietueelle erillisen laskutustilin. Laskutustili on tili, jota hyvitetään laskun summalla, kun toimittajalasku luodaan ostotilauksesta. Jos laskutustiliä ei luoda toimittajan tietueelle, laskutustilinä käytetään toimittajatiliä.
 
 ## <a name="vendor-bank-accounts"></a>Toimittajan pankkitilit
-Jos suoritat maksuja toimittajan pankkitilille, voit syöttää toimittajan pankki- ja pankkitilitiedot **Toimittajan pankkitilit **-sivulla. Voit myös kirjoittaa valitun pankkitilin oikeellisuustarkistus- ja maksutiedot. Voit esimerkiksi lisätä esilaskuja toimittajan pankkitileille. Näitä esilaskuja voi käyttää tilitietojen, kuten reititysnumeroiden ja tilinumeroiden, oikeellisuuden tarkastamiseen. Toimittajalle on määritettävä oletusmaksutili. Varsinaista maksua suoritettaessa tämän tilin voi muuttaa joksikin toiseksi toimittajan tiliksi.
+Jos suoritat maksuja toimittajan pankkitilille, voit syöttää toimittajan pankki- ja pankkitilitiedot **Toimittajan pankkitilit**-sivulla. Voit myös kirjoittaa valitun pankkitilin oikeellisuustarkistus- ja maksutiedot. Voit esimerkiksi lisätä esilaskuja toimittajan pankkitileille. Näitä esilaskuja voi käyttää tilitietojen, kuten reititysnumeroiden ja tilinumeroiden, oikeellisuuden tarkastamiseen. Toimittajalle on määritettävä oletusmaksutili. Varsinaista maksua suoritettaessa tämän tilin voi muuttaa joksikin toiseksi toimittajan tiliksi.
 
 ## <a name="ledger-accounts"></a>Kirjanpitotilit
 Voit määrittää oletustilit, jotka näkyvät automaattisesti toimittajan laskujen kirjauskansioissa määritetyn toimittajan osalta. Tämä toiminnallisuus voi olla hyödyllinen, jos yleensä maksat samantyyppisistä nimikkeistä tai palveluista samoille toimittajille ajan kuluessa. Kun määrität oletustilin, voit nopeasti ja tehokkaasti määrittää kirjauskansiomerkinnät laskukirjauskansioon. Määritettäviä oletustilejä ei käytetä ostotilauksille tai toimittajalaskuille, jotka on kirjataan **Toimittajalasku**-sivulla.  

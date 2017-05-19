@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 318c88f88277a8300b1fcda5056a9a92c9a81eae
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7edf456b09c6f77550f1dd023e712c7ef379fd1a
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -36,7 +37,7 @@ Tässä artikkelissa on tietoja tuoterakenteiden valmiiksi raportoimisesta.
 **Ilmoita valmiiksi**- ja **Ilmoita valmiiksi -kirjausten enimmäismäärä** -sivuilta voi ilmoittaa tuoterakenteet valmiiksi. Käsitteellisesti tuoterakenteen valmiiksi ilmoittamisen prosessi on sama kuin tuotantotilauksen valmiiksi ilmoittamisen prosessi. Tätä prosessia voi käyttää esimerkiksi yksinkertaisissa kokoonpano- ja varusteluprosesseissa, joissa tuotantotilausten edistyneitä ominaisuuksia ei tarvita. Voit ilmoittaa **Ilmoita valmiiksi** -sivulla useita tuoterakenteita valmiiksi yhtenä eränä. Voit ilmoittaa **Ilmoita valmiiksi -kirjausten enimmäismäärä** -sivulla kerralla valmiiksi vain yhden tuoterakenteen. **Ilmoita valmiiksi** -sivun voi valita Inventoinnin- ja varastonhallinta -valikosta. Molemmat sivut voi valita **Vapautetut tuotteet** -sivun valikosta.
 
 ## <a name="report-as-finished-page"></a>Ilmoita valmiiksi -sivu
-Jos avaat **Ilmoita valmiiksi **-sivun vapautetusta tuotteesta, sivu ehdottaa, että valmiiksi ilmoitetaan vakiovaraston oletusmäärä. Aktiivinen tuoterakenneversio näytetään oletusarvoisesti, mutta voit vaihtaa toiseen tuoterakenneversioon, jos valittavana on muita hyväksyttyjä versioita. Voit myös poistaa sivulla tietueita ja luoda vapautetuille tuotteille uusia, valmiiksi ilmoitettavia tietueita. Jos haluat käyttää kyselyä tuotteen valitsemiseen, valitse valikossa **Valitse**. Voit vahvistaa valittujen tuotteiden raportoinnin manuaalisesti valmiiksi valitsemalla **OK**. Vaihtoehtoisesti voit myös määrittää prosessin suoritettavaksi eränä. Kun valmiiksi ilmoittamisprosessi on vahvistettu, järjestelmä luo tuoterakennekirjauskansion, jossa varastoon kirjaaminen käsitellään. Kirjauskansiossa on yksi rivinimike valmiille tuotteelle ja yksi rivinimike kullekin tuoterakenneriville. Voit määrittää, tehdään kirjaus kirjauskansioon automaattisesti vai jätetäänkö se avoimeksi oikaisuja varten.
+Jos avaat **Ilmoita valmiiksi**-sivun vapautetusta tuotteesta, sivu ehdottaa, että valmiiksi ilmoitetaan vakiovaraston oletusmäärä. Aktiivinen tuoterakenneversio näytetään oletusarvoisesti, mutta voit vaihtaa toiseen tuoterakenneversioon, jos valittavana on muita hyväksyttyjä versioita. Voit myös poistaa sivulla tietueita ja luoda vapautetuille tuotteille uusia, valmiiksi ilmoitettavia tietueita. Jos haluat käyttää kyselyä tuotteen valitsemiseen, valitse valikossa **Valitse**. Voit vahvistaa valittujen tuotteiden raportoinnin manuaalisesti valmiiksi valitsemalla **OK**. Vaihtoehtoisesti voit myös määrittää prosessin suoritettavaksi eränä. Kun valmiiksi ilmoittamisprosessi on vahvistettu, järjestelmä luo tuoterakennekirjauskansion, jossa varastoon kirjaaminen käsitellään. Kirjauskansiossa on yksi rivinimike valmiille tuotteelle ja yksi rivinimike kullekin tuoterakenneriville. Voit määrittää, tehdään kirjaus kirjauskansioon automaattisesti vai jätetäänkö se avoimeksi oikaisuja varten.
 
 ## <a name="max-report-as-finished-page"></a>Maks. ilmoita valmiiksi -sivu
 **Ilmoita valmiiksi -kirjausten enimmäismäärä** -sivulla kukin tuoterakennerivi ilmaisee tuotteen valmiiksi ilmoitettavan kappalemäärän. Tämä laskelma perustuu kunkin materiaalirivin fyysiseen käytettävissä olevaan varastoon. Seuraavassa esimerkissä yksi nimiketunnus FG kuluttaa kaksi kappaletta raaka-ainetta RM10 ja yhden kappaleen raaka-ainetta RM20. Koska käytettävissä olevassa varastossa on vain 10 kappaletta raaka-ainetta RM10, nimikettä FG voidaan ilmoittaa valmiiksi enintään viisi kappaletta. Tämä arvo näkyy **Ilmoita valmiiksi -kirjausten enimmäismäärä** -kentässä.

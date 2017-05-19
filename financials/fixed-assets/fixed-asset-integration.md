@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 9184e98c8afeef496aa709154d3bea26005fe611
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 06559cba9e0a19e2530e8cf8559d8b7b272bbf16
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Kun varastonimikkeestä tulee käyttöomaisuushankinta varastokirjauskansion, os
 
 Jos käytätä nimikeryhmien käyttöomaisuuserissä tiettyjä vastaanotto- ja varasto-ottotilejä, samaa varastonimikettä voi käyttää sekä sisäisissä ostoissa että jälleenmyyntivarastossa. 
 
-Sisäiseen käyttöön tarkoitetun käyttöomaisuuden tilityypiksi määritetään** Käyttöomaisuuden vastaanotto**. Tätä tilityyppiä käytetään seuraamaan käyttöomaisuuden vastaanottamista. Kun kirjaat toimittajalaskun, käytä käyttöomaisuuserän vastaanottotiliä, jos jokin seuraavista ehdoista toteutuu:
+Sisäiseen käyttöön tarkoitetun käyttöomaisuuden tilityypiksi määritetään**Käyttöomaisuuden vastaanotto**. Tätä tilityyppiä käytetään seuraamaan käyttöomaisuuden vastaanottamista. Kun kirjaat toimittajalaskun, käytä käyttöomaisuuserän vastaanottotiliä, jos jokin seuraavista ehdoista toteutuu:
 
 -   Laskurivi sisältää olemassa olevan käyttöomaisuuden sisäisiin tarkoituksiin.
 -   **Uusi käyttöomaisuus?** -valintaruutu valitaan kirjatulle tuotteen vastaanottoriville.

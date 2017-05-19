@@ -3,7 +3,7 @@ title: Tuotantotilauksen kustannusanalyysi
 description: "Tässä artikkelissa tietoja kustannusanalyysista, jonka voi tehdä valmiille ja nykyisille tuotantotilauksille. Voit analysoida arvioidut kustannukset ja toteutuneet kustannukset käyttämällä Hinnan laskenta -sivua tai Ennakko- ja jälkilaskelmat -raporttia. Voit tarkastella komponenttinimikkeen, reititystyövaiheen ja epäsuoran kustannuksen tietoja arvioiduista ja todellisista kustannuksista (sekä määristä)."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-11 13 - 25 - 42
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f931432f6dc919d448ed690a1deae3d64bebe455
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: acb8e49ed86d3e22ba8e343280f77c0644f057c6
+ms.contentlocale: fi-fi
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="production-order-cost-analysis"></a>Tuotantotilauksen kustannusanalyysi
+
+[!include[banner](../includes/banner.md)]
+
 
 Tässä artikkelissa tietoja kustannusanalyysista, jonka voi tehdä valmiille ja nykyisille tuotantotilauksille. Voit analysoida arvioidut kustannukset ja toteutuneet kustannukset käyttämällä Hinnan laskenta -sivua tai Ennakko- ja jälkilaskelmat -raporttia. Voit tarkastella komponenttinimikkeen, reititystyövaiheen ja epäsuoran kustannuksen tietoja arvioiduista ja todellisista kustannuksista (sekä määristä).
 
@@ -40,21 +44,27 @@ Variansseissa näkyy tuotantonimikkeen ilmoitettujen tuotantotehtävien ja vakio
 -   Tuotantohintavarianssi
 -   Tuotannon korvausvarianssi
 
-Seuraavassa kaaviossa esitellään neljä varianssia, joissa näkyy tuotantotilauksen toteutuneiden kustannusten ja laskettujen kustannusten ero nimikkeen kustannustietueessa, kun tuotantotilaus on päätetty. ![Varianssit, jotka selittävät erot valmiissa tuotantotilauksessa](./media/control.jpg) Voit analysoida tuotannon variansseja käyttämällä **Varianssi**-sivua tai **Tuotannon varianssi** -raporttia. Näyttöasetusten avulla voit tarkastella eriteltyjä varianssitietoja nimikkeen ja operatiivisen resurssin tai kustannusryhmän mukaan. Varastoparametrien kustannuserittelymenettely määrittää, seurataanko variansseja kustannusryhmän mukaan. Voit myös tarkastella varianssien yhteenvetoja **Yksittäinen**-, **Monitasoinen**- ja **Yhteensä** -näyttöasetusten avulla. Varianssin eritellyt tiedot auttavat ymmärtämään kunkin varianssin alkuperän. Jos haluat ennakoida varianssit ennen tuotantotilauksen päättämistä, analysoi **Ennakko- ja jälkilaskelmat** -raportin eritellyt tiedot.
+Seuraavassa kaaviossa esitellään neljä varianssia, joissa näkyy tuotantotilauksen toteutuneiden kustannusten ja laskettujen kustannusten ero nimikkeen kustannustietueessa, kun tuotantotilaus on päätetty. 
+
+![Valmiin tuotantotilauksen erot selittävä varianssi](./media/control.jpg) 
+
+Voit analysoida tuotannon variansseja **Varianssit**-sivulla tai **Tuotannon varianssi** -raportissa. Näyttöasetusten avulla voit tarkastella eriteltyjä varianssitietoja nimikkeen ja operatiivisen resurssin tai kustannusryhmän mukaan. Varastoparametrien kustannuserittelymenettely määrittää, seurataanko variansseja kustannusryhmän mukaan. Voit myös tarkastella varianssien yhteenvetoja **Yksittäinen**-, **Monitasoinen**- ja **Yhteensä** -näyttöasetusten avulla. Varianssin eritellyt tiedot auttavat ymmärtämään kunkin varianssin alkuperän. Jos haluat ennakoida varianssit ennen tuotantotilauksen päättämistä, analysoi **Ennakko- ja jälkilaskelmat** -raportin eritellyt tiedot.
 
 ## <a name="cost-analysis-for-current-production-orders"></a>Nykyisten tuotantotilausten kustannusanalyysi
-Erillisissä raporteissa on tietoja kustakin tapahtumatyypistä. Näiden raporttien avulla voit analysoida ilmoitettujen tuotantotehtävien kustannuksia. Raporteissa on tietoja vain nykyisistä tuotantotilauksista, joiden tila on **Alkanut** tai ** Ilmoitettu valmiiksi**.
+Erillisissä raporteissa on tietoja kustakin tapahtumatyypistä. Näiden raporttien avulla voit analysoida ilmoitettujen tuotantotehtävien kustannuksia. Raporteissa on tietoja vain nykyisistä tuotantotilauksista, joiden tila on **Alkanut** tai **Ilmoitettu valmiiksi**.
 
--   **Keskeneräiset materiaalit **− Raportissa luetellaan keräysluettelotapahtumat, jotka on ilmoitettu nykyisiä tuotantotilauksia vasten määritetystä tapahtumapäivämäärästä alkaen. Raportissa ilmoitetaan komponentin otettu määrä sekä kunkin tapahtuman kustannussumma. Käytä yhden komponenttinimikkeen valintaehtoja. Voit esimerkiksi tulostaa tietoja komponentin otetusta määrästä sovellettavia tuotantotilauksia vasten. Otettua määrää ei päivitetä päänimikkeen valmiiksi ilmoitetuiksi määriksi. Tällöin prosessin raaka-aineiden todellinen määrä voidaan arvioida liian suureksi.
--   **Keskeneräinen työ **− Raportissa luetellaan reititystapahtumat (eli työt), jotka on ilmoitettu nykyisiä tuotantotilauksia vasten määritetystä tapahtumapäivämäärästä alkaen. Raportti sisältää jokaiselle tapahtumalle raportoidut tunnit, summan ja määrän (hyväksytyn ja virheellisen). Se sisältää myös tunnistustiedot, kuten työvaihenumeron, työvaihetunnuksen ja operatiivisen resurssin. Raportti näyttää myös kaikkien tuotantotilauksen ja valmiiksi ilmoitetun määrän tapahtumien kokonaisajan ja -summan.
--   **Keskeneräiset epäsuorat kustannukset **− Raportissa ilmoitetaan epäsuorat kustannukset, jotka on hankittu tuotantotilauksia vasten. Tiedot perustuvat reitityksen työvaiheiden ja komponenttien ilmoitettuun kulutukseen määritetystä tapahtumapäivämäärästä lähtien. Raportti ilmaisee epäsuoran kustannuksen tyypin (lisämaksu vai hinta), epäsuoran kustannuksen laskentalomakkeen koodin ja kunkin tapahtuman kustannussumman. Raportti ei sisällä tietoja epäsuoran kustannuksen luoneesta reitityskortti- tai keräysluettelotapahtumasta.
--   **Keskeneräisen tuotannon kustannuslaskenta **− Raportissa ilmoitetaan materiaalinkulutus, reitityksen työvaiheet ja epäsuorat kustannukset yhteensä nykyisiä tuotantotilauksia vasten määritetystä tapahtumapäivämäärästä alkaen.
--   **Keskeneräiset valmiit nimikkeet **− Raportissa ilmoitetaan nykyiset tuotantotilaukset sekä valmiiksi ilmoitetut tapahtumat määritetystä tapahtumapäivämäärästä alkaen.
+-   **Keskeneräiset materiaalit**− Raportissa luetellaan keräysluettelotapahtumat, jotka on ilmoitettu nykyisiä tuotantotilauksia vasten määritetystä tapahtumapäivämäärästä alkaen. Raportissa ilmoitetaan komponentin otettu määrä sekä kunkin tapahtuman kustannussumma. Käytä yhden komponenttinimikkeen valintaehtoja. Voit esimerkiksi tulostaa tietoja komponentin otetusta määrästä sovellettavia tuotantotilauksia vasten. Otettua määrää ei päivitetä päänimikkeen valmiiksi ilmoitetuiksi määriksi. Tällöin prosessin raaka-aineiden todellinen määrä voidaan arvioida liian suureksi.
+-   **Keskeneräinen työ**− Raportissa luetellaan reititystapahtumat (eli työt), jotka on ilmoitettu nykyisiä tuotantotilauksia vasten määritetystä tapahtumapäivämäärästä alkaen. Raportti sisältää jokaiselle tapahtumalle raportoidut tunnit, summan ja määrän (hyväksytyn ja virheellisen). Se sisältää myös tunnistustiedot, kuten työvaihenumeron, työvaihetunnuksen ja operatiivisen resurssin. Raportti näyttää myös kaikkien tuotantotilauksen ja valmiiksi ilmoitetun määrän tapahtumien kokonaisajan ja -summan.
+-   **Keskeneräiset epäsuorat kustannukset**− Raportissa ilmoitetaan epäsuorat kustannukset, jotka on hankittu tuotantotilauksia vasten. Tiedot perustuvat reitityksen työvaiheiden ja komponenttien ilmoitettuun kulutukseen määritetystä tapahtumapäivämäärästä lähtien. Raportti ilmaisee epäsuoran kustannuksen tyypin (lisämaksu vai hinta), epäsuoran kustannuksen laskentalomakkeen koodin ja kunkin tapahtuman kustannussumman. Raportti ei sisällä tietoja epäsuoran kustannuksen luoneesta reitityskortti- tai keräysluettelotapahtumasta.
+-   **Keskeneräisen tuotannon kustannuslaskenta**− Raportissa ilmoitetaan materiaalinkulutus, reitityksen työvaiheet ja epäsuorat kustannukset yhteensä nykyisiä tuotantotilauksia vasten määritetystä tapahtumapäivämäärästä alkaen.
+-   **Keskeneräiset valmiit nimikkeet**− Raportissa ilmoitetaan nykyiset tuotantotilaukset sekä valmiiksi ilmoitetut tapahtumat määritetystä tapahtumapäivämäärästä alkaen.
 
 
 <a name="see-also"></a>Lisätietoja
 --------
 
 [Tuotannon varianssien yleiset lähteet](common-sources-of-production-variances.md)
+
+
 
 
