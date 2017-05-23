@@ -1,23 +1,23 @@
-- name: "Dynamics 365"
+- name: Dynamics 365
   tocHref: /dynamics365/
   topicHref: /dynamics365
   items:
-  - name: "Operations"
+  - name: Operations
     tocHref: /dynamics365/operations/
     topicHref: /dynamics365/operations/index
     items:
-    - name: "Kehittäjä ja järjestelmänvalvoja"
+    - name: Kehittäjä ja järjestelmänvalvoja
       tocHref: /dynamics365/operations/dev-itpro/
       topicHref: /dynamics365/operations/dev-itpro/index
-    - name: "Myyntitiedot"
+    - name: Myyntitiedot
       tocHref: /dynamics365/operations/financials/
       topicHref: /dynamics365/operations/financials/index
-    - name: "Henkilöstöhallinto"
+    - name: Henkilöstöhallinto
       tocHref: /dynamics365/operations/human-resources/
       topicHref: /dynamics365/operations/human-resources/index
-    - name: "Vähittäismyynti"
+    - name: Vähittäismyynti
       tocHref: /dynamics365/operations/retail/
       topicHref: /dynamics365/operations/retail/index
-    - name: "Toimitusketju"
+    - name: Toimitusketju 
       tocHref: /dynamics365/operations/supply-chain/
       topicHref: /dynamics365/operations/supply-chain/index
