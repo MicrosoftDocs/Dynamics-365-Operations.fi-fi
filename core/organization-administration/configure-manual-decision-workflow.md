@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: ac4f520d17c721e249737b4ae95c10685f914497
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ac86ffa794b5fd92ca9aba24537fbc05057fe824
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -195,13 +195,11 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
     <td>Tietyssä organisaatiohierarkiassa olevat käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>hierarkian</strong>, valitse <strong>Hierarkian valinta</strong> -välilehdellä <strong>Hierarkian tyyppi</strong> -luettelosta hierarkian tyyppi, jolle päätös määritetään.</li>
-    <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille päätöksen voi määrittää. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste:
-    <ol>
+    <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille päätöksen voi määrittää. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste: <ol>
     <li>Määritä aloituspiste valitsemalla henkilö <strong>Alku</strong>-luettelosta.</li>
     <li>Määritä lopetuspiste valitsemalla <strong>Lisää pysäytysehto</strong>. Määritä sitten ehto, joka ilmaisee, missä kohtaa hierarkiaa järjestelmä lopettaa nimien noutamisen.</li>
     </ol></li>
-    <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille päätös määritetään:
-    <ul>
+    <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille päätös määritetään: <ul>
     <li><strong>Määritä kaikille noudetuille työntekijöille</strong> – Päätös määritetään joukon kaikille käyttäjille.</li>
     <li><strong>Määritä vain viimeksi noudetulle käyttäjälle</strong> – Päätös määritetään vain joukon viimeiselle työntekijälle.</li>
     <li><strong>Jätä pois käyttäjät, joilla on seuraava ehto</strong> – Päätöstä ei liitetä niille joukon käyttäjille, jotka täyttävät määritetyn ehdon. Määritä ehto valitsemalla <strong>Lisää ehto</strong>.</li>
@@ -228,18 +226,16 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
     <td>Työnimikejono</td>
     <td><ol>
     <li>Valittuasi <strong>jonon</strong>, napsauta <strong>Jonoperustainen</strong>-välilehteä.</li>
-    <li>Voit määrittää päätöksen tiettyyn jonoon seuraavasti:
-    <ol>
+    <li>Voit määrittää päätöksen tiettyyn jonoon seuraavasti: <ol>
     <li>Valitse <strong>Jonon tyyppi</strong> -luettelosta <strong>Työnimikejonot</strong>.</li>
     <li>Valitse jono <strong>Jonon nimi</strong> -luettelosta.</li>
     </ol></li>
-    <li>Noudata seuraavia ohjeita, jos haluat, että tietty ehto päättää, mihin jonoon päätös määritetään:
-    <ol>
+    <li>Noudata seuraavia ohjeita, jos haluat, että tietty ehto päättää, mihin jonoon päätös määritetään: <ol>
     <li>Valitse <strong>Jonon tyyppi</strong> -luettelosta <strong>Ehdolliset työnimikejonot</strong>.</li>
     <li>Valitse <strong>Ehdollinen jono</strong> <strong>Jonon nimi</strong> -luettelosta.</li>
     </ol></li>
     </ol>
-    <strong>Huomautus</strong>: tätä vaihtoehtoa käytetään vain muutamissa työnkuluissa, kuten Palvelupyynnön hallinnassa.</td>
+    <strong>Huomautus:</strong> tätä vaihtoehtoa käytetään vain muutamissa työnkuluissa, kuten Palvelupyynnön hallinnassa.</td>
     </tr>
     </tbody>
     </table>
@@ -285,13 +281,11 @@ Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on eräänty
     <td>Tietyssä organisaatiohierarkiassa olevat käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>hierarkian</strong>, valitse <strong>Hierarkian valinta</strong> -välilehdellä <strong>Hierarkian tyyppi</strong> -luettelosta hierarkian tyyppi, jolle päätös eskaloidaan.</li>
-    <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille päätöksen voi eskaloida. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste:
-    <ol>
+    <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille päätöksen voi eskaloida. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste: <ol>
     <li>Määritä aloituspiste valitsemalla henkilö <strong>Alku</strong>-luettelosta.</li>
     <li>Määritä lopetuspiste valitsemalla <strong>Lisää pysäytysehto</strong>. Määritä sitten ehto, joka ilmaisee, missä kohtaa hierarkiaa järjestelmä lopettaa nimien noutamisen.</li>
     </ol></li>
-    <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille päätös eskaloidaan:
-    <ul>
+    <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille päätös eskaloidaan: <ul>
     <li><strong>Määritä kaikille noudetuille työntekijöille</strong> – Päätös eskaloidaan joukon kaikille käyttäjille.</li>
     <li><strong>Määritä vain viimeksi noudetulle käyttäjälle</strong> – Päätös eskaloidaan vain joukon viimeiselle työntekijälle.</li>
     <li><strong>Jätä pois käyttäjät, joilla on seuraava ehto</strong> – Päätöstä ei eskaloida niille joukon käyttäjille, jotka täyttävät määritetyn ehdon. Määritä ehto valitsemalla <strong>Lisää ehto</strong>.</li>

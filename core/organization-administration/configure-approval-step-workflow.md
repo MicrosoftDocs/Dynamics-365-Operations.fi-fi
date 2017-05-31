@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 052cec3010c0d5ecbb9ed341fb23d0ec64682467
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 1924562f866ecdbb6fa6d3d0a9dc7627387f2d6a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -106,13 +106,11 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille hyväksy
     <td>Tietyssä organisaatiohierarkiassa olevat käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>hierarkian</strong>, valitse <strong>Hierarkian valinta</strong> -välilehdellä <strong>Hierarkian tyyppi</strong> -luettelosta hierarkian tyyppi, jolle vaihe määritetään.</li>
-    <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille vaiheen voi määrittää. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste:
-    <ol>
+    <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille vaiheen voi määrittää. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste: <ol>
     <li>Määritä aloituspiste valitsemalla henkilö <strong>Alku</strong>-luettelosta.</li>
     <li>Määritä lopetuspiste valitsemalla <strong>Lisää pysäytysehto</strong>. Määritä sitten ehto, joka ilmaisee, missä kohtaa hierarkiaa järjestelmä lopettaa nimien noutamisen.</li>
     </ol></li>
-    <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille vaihe määritetään:
-    <ul>
+    <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille vaihe määritetään: <ul>
     <li><strong>Määritä kaikille noudetuille työntekijöille</strong> – Vaihe määritetään joukon kaikille käyttäjille.</li>
     <li><strong>Määritä vain viimeksi noudetulle käyttäjälle</strong> – Vaihe määritetään vain joukon viimeiselle työntekijälle.</li>
     <li><strong>Jätä pois käyttäjät, joilla on seuraava ehto</strong> – Vaihetta ei liitetä niille joukon käyttäjille, jotka täyttävät määritetyn ehdon. Määritä ehto valitsemalla <strong>Lisää ehto</strong>.</li>
@@ -211,13 +209,11 @@ Jos käyttäjä reagoi asiakirjaan aikarajan puitteissa, asiakirja on erääntyn
     <td>Tietyssä organisaatiohierarkiassa olevat käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>hierarkian</strong>, valitse <strong>Hierarkian valinta</strong> -välilehdellä <strong>Hierarkian tyyppi</strong> -luettelosta hierarkian tyyppi, jolle asiakirja eskaloidaan.</li>
-    <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille asiakirjan voi eskaloida. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste:
-    <ol>
+    <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille asiakirjan voi eskaloida. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste: <ol>
     <li>Määritä aloituspiste valitsemalla henkilö <strong>Alku</strong>-luettelosta.</li>
     <li>Määritä lopetuspiste valitsemalla <strong>Lisää pysäytysehto</strong>. Määritä sitten ehto, joka ilmaisee, missä kohtaa hierarkiaa järjestelmä lopettaa nimien noutamisen.</li>
     </ol></li>
-    <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille asiakirja eskaloidaan:
-    <ul>
+    <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille asiakirja eskaloidaan: <ul>
     <li><strong>Määritä kaikille noudetuille työntekijöille</strong> – Asiakirja eskaloidaan joukon kaikille käyttäjille.</li>
     <li><strong>Määritä vain viimeksi noudetulle käyttäjälle</strong> – Asiakirja eskaloidaan vain joukon viimeiselle työntekijälle.</li>
     <li><strong>Jätä pois käyttäjät, joilla on seuraava ehto</strong> – Asiakirjaa ei eskaloida niille joukon käyttäjille, jotka täyttävät määritetyn ehdon. Määritä ehto valitsemalla <strong>Lisää ehto</strong>.</li>

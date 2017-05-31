@@ -1,40 +1,38 @@
 ---
-title: "Tuotenumeron nimikkeistö"
-description: "Tässä aiheessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään korvaamaan kiinteän muodon [päätuotteen numero - konfiguraatio - koko - väri - malli] kohdennetulla muodolla, joka sisältää päätuotteen numeron, aktiiviset tuotedimensiot ja haluamasi tekstierottimet. Voit myös luoda nimikkeistön konfiguraatioiden tunnistamiseksi, jotka on luotu poissulkevan tuotekonfiguraattorin avulla. Nämä nimikkeistöt voivat sisältää valitsemiasi määritteitä."
-author: YuyuScheller
+title: "Tuotevariantin numeroiden ja nimien nimikkeistö"
+description: "Tässä aiheessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään korvaamaan kiinteän muodon [päätuotteen numero - konfiguraatio - koko - väri - malli]. Uusi nimikkeistö sisältää kohdennetun muodon, joka sisältää päätuotteen numeron, aktiiviset tuotedimensiot ja haluamasi tekstierottimet. Myös tuotenimille voi luoda nimikkeistön. Voit myös luoda nimikkeistön konfiguraatioiden tunnistamiseksi, jotka on luotu poissulkevan tuotekonfiguraattorin avulla. Nämä nimikkeistöt voivat sisältää valitsemiasi määritteitä."
+author: roxanadiaconu
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelDetails
 audience: Application User
+ms.reviewer: annbe
 ms.search.scope: Operations, Core
 ms.custom: 220104
-ms.assetid: 31c9efb4-b5f6-4af3-b884-8f1e128469bd
+ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: roxanad
+ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: deda2b7986333e0d865aa87e6b34b6acdc8f6a6d
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 0e19b18a2900a0b42dc9a1a984b9c884ca0c17cc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
-# <a name="product-number-nomenclature"></a>Tuotenumeron nimikkeistö
+# <a name="nomenclature-of-product-variant-numbers-and-names"></a>Tuotevariantin numeroiden ja nimien nimikkeistö
 
-[!include[banner](../includes/banner.md)]
+Tässä aiheessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään korvaamaan kiinteän muodon [päätuotteen numero - konfiguraatio - koko - väri - malli]. Uusi nimikkeistö sisältää kohdennetun muodon, joka sisältää päätuotteen numeron, aktiiviset tuotedimensiot ja haluamasi tekstierottimet. Myös tuotenimille voi luoda nimikkeistön. Voit myös luoda nimikkeistön konfiguraatioiden tunnistamiseksi, jotka on luotu poissulkevan tuotekonfiguraattorin avulla. Nämä nimikkeistöt voivat sisältää valitsemiasi määritteitä.
 
-
-Tässä aiheessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään korvaamaan kiinteän muodon [päätuotteen numero - konfiguraatio - koko - väri - malli] kohdennetulla muodolla, joka sisältää päätuotteen numeron, aktiiviset tuotedimensiot ja haluamasi tekstierottimet. Voit myös luoda nimikkeistön konfiguraatioiden tunnistamiseksi, jotka on luotu poissulkevan tuotekonfiguraattorin avulla. Nämä nimikkeistöt voivat sisältää valitsemiasi määritteitä.
-
-Uuden tuotevariantin numeroiden nimikkeistön ansiosta voit sisällyttää segmenttejä tuotevariantin numeroihin. Nämä segmentit voivat sisältää päätuotenumeron, tuotedimensiot, numerosarjat, tekstivakioita ja määritteitä. Kun luot myyntitilauksen tai ostotilauksen, löydät nopeasti tietyt tuotevariantit tämän toiminnon avulla.
+Tuotevariantin numeroiden ja nimien uusien nimikkeistöjen avulla voi sisällyttää segmenttejä tuotevarianttien tunnuksiin. Nämä segmentit voivat sisältää päätuotenumeron ja nimen, tuotedimensioiden tunnukset ja nimet, numerosarjat, tekstivakioita ja määritteitä. Kun luot myyntitilauksen tai ostotilauksen, löydät nopeasti tietyt tuotevariantit tämän toiminnon avulla. Sekä tuotevariantin numeroille että nimille voi luoda nimikkeistöjä **Tuotenimikkeistö**-sivulla. Avaa tämä sivu valitsemalla **Tuotetietojen hallinta** &gt; **Asetukset**.
 
 ## <a name="nomenclature-of-predefined-product-variants"></a>Ennalta määritettyjen tuotevarianttien nimikkeistö
 Tuotevariantit luodaan päätuotteelle jollain kolmesta määritysmenetelmästä:
@@ -43,69 +41,70 @@ Tuotevariantit luodaan päätuotteelle jollain kolmesta määritysmenetelmästä
 -   Rajoitukseen perustuva
 -   Dimensioon perustuva
 
-Jokaisella tuotevariantilla on numero, ja tuotevariantin numeroiden nimikkeistön ansiosta voit valita segmentit, jotka sisällytetään tuotevariantin numeroihin . Voit valita seuraavat segmentit **Tuotenimikkeistö**-sivulla.
+Jokaisella tuotevariantilla on numero ja nimi, ja tuotevariantin numeroiden nimikkeistöjen avulla voi valita segmentit, jotka sisällytetään tuotevariantin numeroihin tai nimiin. **Tuotenimikkeistö**-sivulla voi seuraavat segmentit:
 
 -   Päätuotteen numero
+-   Päätuotteen nimi
 -   Numerosarjan arvo
 -   Tekstivakio
 -   Tuotedimensiot
-    -   Konfiguraatio
-    -   Väri
-    -   Koko
-    -   Tyyli
+    -   Konfiguraation tunnus tai nimi
+    -   Värin tunnus tai nimi
+    -   Koon tunnus tai nimi
+    -   Tyylin tunnus tai nimi
 
-Kun olet määrittänyt tuotevariantin numeroiden nimikkeistön, se voidaan yhdistää tuotedimensioryhmään. Näin ollen kaikille päätuotteille, jotka viittaavat tähän tuotedimensioryhmään, määritetään tuotevariantin numero nimikkeistön mukaan. On myös mahdollista määrittää tuotevariantin numeroiden nimikkeistö suoraan päätuotteelle, jolloin päätuotteeseen kuuluville tuotevarianteille määritetään tuotevariantin numero nimikkeistön mukaan.
+Kun olet määrittänyt tuotevariantin numeron nimikkeistön, voit yhdistää sen tuotedimensioryhmään. Tämän jälkeen kaikki tähän tuotedimensioryhmään viittaavat päätuotteet määritetään tuotevariantin numeroille nimikkeistön mukaan. Tuotevariantin nimien nimikkeistöjä ei kuitenkaan voi yhdistää tuotedimensioryhmiin. Voit myös yhdistää tuotevariantin tunnuksen nimikkeistön suoraan päätuotteeseen. Tässä tapauksessa päätuotteeseen kuuluvat tuotevariantit yhdistetään tuotevariantin numeroihin ja nimiin nimikkeistöjen mukaan.
 
 ### <a name="example"></a>Esimerkki
 
-T-paitaa (TS1234) valmistetaan 3 eri kokoa (S, M, L) ja 4 eri väriä (punainen, vihreä, sininen, keltainen) sekä 2 mallia (Polo, V), jolloin mahdollisia tuotevariantteja on 24. Tuotevariantin numeron nimikkeistöön luodaan seuraavat segmentit:
+T-paitaa (TS1234) valmistetaan kolme eri kokoa (S, M, L), neljä eri väriä (punainen, vihreä, sininen, keltainen) ja kaksi mallia (poolo, V). Mahdollisia tuotevariantteja on siis 24 (= 3 × 4 × 2). Voit luoda tuotevariantin numeron nimikkeistön, jolla on seuraavat segmentit:
 
 1.  Päätuotteen numero
-2.  Tekstivakio: '-'
+2.  Tekstivakio: -
 3.  Väri
-4.  Tekstivakio: '-'
+4.  Tekstivakio: -
 5.  Koko
-6.  Tekstivakio: '-'
+6.  Tekstivakio: -
 7.  Tyyli
 
-Tuotevariantin numero ominaisuuksille punainen, S, poolo on: TS1234-punainen-S-poolo.
+Tässä tapauksessa tuotevariantin numero ominaisuuksille punainen, S, poolo, T-paita TS1234-punainen-S-poolo.
 
 ## <a name="nomenclature-of-constraintbased-configurations"></a>Poissulkeva konfiguraationimikkeistö
-Poissulkeva konfiguraationimikkeistö voi muodostaa konfiguraation tuotedimension. Voit valita seuraavat segmentit **Tuotenimikkeistö**-sivulla.
+Poissulkeville konfiguraatioille voi luoda konfiguraation tuotedimension kohdistetun nimikkeistön. **Tuotenimikkeistö**-sivulla voi seuraavat segmentit:
 
 -   Numerosarjan arvo
 -   Tekstivakio
--   Määritteen arvo 
+-   Määritteen arvo
 
-Jokaisella tuotemääritysmallin komponentilla voi olla oma konfiguraationimikkeistö. Vain komponenttiin kuuluvia määritteitä saa käyttää. Määritteet alikomponenteista tai käyttäjävaatimuksista eivät ole käytettävissä.
+Jokaisella tuotemääritysmallin komponentilla voi olla oma konfiguraationimikkeistö. Vain komponenttiin kuuluvia määritteitä saa käyttää. Alikomponenttien tai käyttäjävaatimuksien määritteitä ei voi käyttää.
 
 ### <a name="example"></a>Esimerkki
 
-Tuotemääritysmallin juurikomponentissa on kaksi määritettä.
+Tuotemääritysmallin juurikomponentissa on seuraavat kaksi määritettä:
 
 -   Materiaali (muovi, puu, teräs)
 -   Pituus (10... 100)
 
-Konfiguraationimikkeistö määritetään seuraavien komponenttien avulla:
+Voit luoda konfiguraation nimikkeistön, jolla on seuraavat segmentit:
 
 1.  Määritteen arvo: materiaali
-2.  Tekstivakio: 'AAA'
+2.  Tekstivakio: AAA
 3.  Määritteen arvo: pituus
 
-Puumateriaalin konfiguraatiotunnus, jonka pituus on 78, saa seuraavan konfiguraatiotunnuksen: WoodAAA78.
+Tässä tapauksessa puumateriaalin konfiguraatiotunnus, jonka pituus on, on WoodAAA78.
 
 ## <a name="nomenclature-of-dimensionbased-configurations"></a>Dimensioihin perustuva konfiguraationimikkeistö
-Dimensioihin perustuva konfiguraationimikkeistö voi muodostaa konfiguraation tuotedimension. Voit valita seuraavat segmentit **Tuotenimikkeistö**-sivulla.
+Dimensioihin perustuville konfiguraatioille voi luoda konfiguraation tuotedimension kohdistetun nimikkeistön. **Tuotenimikkeistö**-sivulla voi seuraavat segmentit:
 
 -   Numerosarjan arvo
 -   Tekstivakio
 -   Konfiguraatioryhmän nimike
 
-Konfiguraationimikkeistö voidaan määrittää tuoterakenteelle (BOM).
+Konfiguraationimikkeistö voidaan määrittää tuoterakenteelle.
 
 ### <a name="example"></a>Esimerkki
 
-Tuoterakenteessa on 4 tuoterakenneriviä, jotka on jaettu 2 konfiguraatioryhmään.
+Tuoterakenne sisältää neljä tuoterakenteen riviä, jotka on jaettu kahteen konfiguraatioryhmään:
 
 -   Tuoterakennerivi: M0007, vakiokaiutinkaappi
     -   Konfiguraatioryhmä: kaiutinkaappi
@@ -116,89 +115,87 @@ Tuoterakenteessa on 4 tuoterakenneriviä, jotka on jaettu 2 konfiguraatioryhmä�
 -   Tuoterakennerivi: M0022, kaiuttimen teräsverkko
     -   Konfiguraatioryhmä: teräsverkkko
 
-Konfiguraationimikkeistö määritetään seuraavien komponenttien avulla:
+Voit luoda konfiguraation nimikkeistön, jolla on seuraavat segmentit:
 
 1.  Konfiguraatioryhmä: kaiutinkaappi
-2.  Tekstivakio: '&'
+2.  Tekstivakio: &
 3.  Konfiguraatioryhmä: teräsverkkko
 
-Etukankaalla varustetun vakiokaiutinkotelon konfiguraatiotunnus on: M0007 ja M0021.
+Tässä tapauksessa etukankaalla varustetun vakiokaiutinkotelon konfiguraatiotunnus on M0007&M0021.
 
-## <a name="nomenclature-of-a-combination-of-product-variants-and-configurations"></a>Tuotevarianttien ja konfiguraatioiden yhdistelmän nimikkeistö
-Jos käytät poissulkevaa konfiguraatiota tai dimensioihin perustuvaa konfiguraatiomenetelmää päätuotteen tuotevarianttien suunnitteluun, tuotevarianteille voidaan antaa tuotevarianttinumerot, jotka sisältävät konfigurointidimension nimikkeistön. Jos haluat konfiguroida variantit, noudata seuraavia vaiheita:
+## <a name="nomenclature-for-a-combination-of-product-variants-and-configurations"></a>Tuotevarianttien ja konfiguraatioiden yhdistelmän nimikkeistö
+Jos käytät poissulkevaa tai dimensioihin perustuvaa määritysmenetelmää päätuotteen tuotevarianttien määritykseen, tuotevarianttien numerot voivat sisältää konfigurointidimension nimikkeistön. Jos haluat konfiguroida variantit, noudata seuraavia vaiheita.
 
-1.  Määrittää tuotevariantin numeron nimikkeistö, joka sisältää konfigurointidimension **Tuotenimikkeistö**-sivulla.
-2.  Määritä tämä nimikkeistö tuotedimensioryhmälle konfigurointidimension kanssa.
-3.  Määritä konfiguraationimikkeistö komponenteille tai tuoterakenteille, jota käytetään tuotevarianttien määrittämistä varten.
+1.  Määritä **Tuotenimikkeistö**-sivulla tuotevariantin numeron nimikkeistö, joka sisältää konfigurointidimension.
+2.  Määritä nimikkeistö tuotedimensioryhmälle, jolla on konfigurointidimensio.
+3.  Määritä konfiguraationimikkeistö komponenteille tai tuoterakenteille, jota käytetään tuotevarianttien konfiguroimisessa.
+
+Myös tuotevariantin nimille voi luoda nimikkeistön. Tuotevariantin nimet voidaan konfiguroida niin, että ne sisältävät konfiguraation tunnuksen tai nimen.
 
 ### <a name="example-for-constraint-based-configurations"></a>Esimerkki poissulkevasta konfiguraatiosta
 
-Tässä esimerkissä voit käyttää tuotevarianttinumeronimikkeistöä, jossa on seuraavat segmentit:
+Tässä esimerkissä voit käyttää tuotevariantin numeron nimikkeistöä, jossa on seuraavat segmentit:
 
 1.  Päätuotteen numero
 2.  Tekstivakio \_
 3.  Konfiguraatio
 
-Konfiguraationimikkeistö voi koostua seuraavista segmenteistä:
+Konfiguraationimikkeistö sisältää seuraavat segmentit:
 
 1.  Määritteen arvo: materiaali
-2.  Tekstivakio: 'AAA'
+2.  Tekstivakio: AAA
 3.  Määritteen arvo: pituus
 
-Voit kirjoittaa seuraavat segmenttien arvot:
+Syötä segmenteille seuraavat arvot:
 
--   Päätuotteen numero = M0099
--   Materiaali = muovi
--   Pituus = 12
+-   Päätuotteen numero = **M0099**
+-   Materiaali = **muovi**
+-   Pituus = **12**
 
-Tuotevariantin numeroksi tulee: M0099\_PlasticAAA12.
+Tässä tapauksessa tuotevariantin numero on M0099\_PlasticAAA12.
 
 ### <a name="example-for-dimension-based-configurations"></a>Esimerkki dimensioihin perustuvasta konfiguraatiosta
 
-Tässä esimerkissä voit käyttää tuotevarianttinumeronimikkeistöä, jossa on seuraavat segmentit:
+Tässä esimerkissä voit käyttää tuotevariantin numeron nimikkeistöä, jossa on seuraavat segmentit:
 
 1.  Päätuotteen numero
-2.  Tekstivakio '//'
+2.  Tekstivakio //
 3.  Konfiguraatio
 
-Konfiguraationimikkeistö voi koostua seuraavista segmenteistä:
+Konfiguraationimikkeistö sisältää seuraavat segmentit:
 
 1.  Konfiguraatioryhmä: kaiutinkaappi
-2.  Tekstivakio: '&'
+2.  Tekstivakio: &
 3.  Konfiguraatioryhmä: teräsverkkko
 
-Voit kirjoittaa seuraavat segmenttien arvot:
+Syötä segmenteille seuraavat arvot:
 
--   Päätuotteen numero = D0123
--   Kaiutinkaappi = M0008
--   Etusäleikkö = M0022
+-   Päätuotteen numero = **D0123**
+-   Kaiutinkaappi = **M0008**
+-   Etusäleikkö = **M0022**
 
-Tuotevariantin numeroksi tulee: D0123//M0008&M0022.
+Tässä tapauksessa tuotevariantin numero on D0123//M0008&M0022.
 
 ## <a name="numbering-conflicts"></a>Numerointiristiriidat
-On mahdollista määrittää tuotevariantin numeronimikkeistö, joka ei tuota yksilöiviä tuotevariantin numeroita. Esimerkiksi näin voi tapahtua, jos yksi aktiivinen tuotedimensio ei sisälly päätuotteen nimikkeistöön, joka käyttää esimääritettyä variantin määritysmenetelmää . Ristiriitoja käsitellään eri tavoin erilaisilla määritysmenetelmillä.
+Joissakin tapauksissa tuotevariantin numeron määritetty nimikkeistö ei tuota yksilöiviä tuotevariantin numeroita. Esimerkiksi tuotevariantin numerot eivät ole yksilöiviä, jos yksi aktiivinen tuotedimensio ei sisälly päätuotteen nimikkeistöön, joka käyttää esimääritettyä variantin määritysmenetelmää. Ristiriitatilanteiden käsittelytapa vaihtelee määritysmenetelmän mukaan.
 
 ### <a name="predefined-variants"></a>Ennalta määritetyt variantit
 
-Jos yrität luoda manuaalisesti tai automaattisesti tuotevariantteja, joista yksi tai useita päättyy samaan tuotevarianttinumeroon, tapahtuu virhe. Voit välttää tämän käyttämällä kaikkia aktiivisia tuotedimensioita tuotedimensioryhmässä tai liittää numerosarjan sen varmistamiseksi, että tuotevarianttinumerot ovat yksilöiviä.
+Jos yrität luoda manuaalisesti tai automaattisesti tuotevariantteja, joista vähintään yksi päättyy samaan tuotevariantin numeroon, tapahtuu virhe. Voit välttää tämän käyttämällä tuotedimensioryhmässä kaikkia aktiivisia tuotedimensioita. Vaihtoehtoisesti voit ottaa mukaan numerosarjat, joiden avulla varmistetaan, että tuotevariantin numerot ovat yksilöiviä.
 
 ### <a name="constraint-based-configurations"></a>Poissulkevat konfiguraatiot
 
-Nimikkeistön mukaan järjestelmä yrittää määrittää ei-yksilöivän tuotevarianttinumeron konfiguraatioon. Tällöin järjestelmä käyttää sen sijaan konfigurointidimension numerosarjaa tuotevarianttinumerona. Jos näin tapahtuu, näyttöön tulee varoitus. Tämän voi välttää sisällyttämällä tarpeeksi määritteitä nimikkeistöön, mikä varmistaa yksilöllisyyden ja varmistamalla, että **Käytä uudelleen** -asetus on käytössä komponentille.
+Nimikkeistön mukaan järjestelmä yrittää määrittää ei-yksilöivän tuotevariantin numeron konfiguraatioon. Tällöin järjestelmä käyttää sen sijaan konfigurointidimension numerosarjaa tuotevariantin numerona, ja näyttöön tulee varoitus. Voit välttää tämän, kun nimikkeistössä on riittävästi määritteitä. Tällöin yksilöivien tuotevariantin numeroiden varmistaminen on helpompaa. Varmista myös, että komponentin **Käytä uudelleen** -vaihtoehto on käytössä.
 
 ### <a name="dimension-based-configurations"></a>Dimensioihin perustuvat konfiguraatiot
 
-Konfigurointiprosessi käsittää vaiheen, jossa järjestelmä ehdottaa konfiguraatioarvoa nimikkeistön mukaan. Et voi muuttaa konfigurointiarvoa manuaalisesti tässä vaiheessa. Kun konfiguraatio tallennetaan, järjestelmä tarkistaa, onko konfiguraation arvo yksilöllinen. Jos näin ei ole, näyttöön tulee virhesanoma. Yksilöllinen konfiguraatioarvo on määritettävä, jotta konfiguraatio tallennetaan.
-
-
+Konfigurointiprosessin yhden vaiheen aikana järjestelmä ehdottaa konfiguraatioarvoa nimikkeistön mukaan. Et voi muuttaa konfigurointiarvoa manuaalisesti tässä vaiheessa. Kun konfiguraatio tallennetaan, järjestelmä tarkistaa, onko konfiguraation arvo yksilöllinen. Jos syötetty arvo ei ole yksilöivä, näyttöön tulee virhesanoma. Voit tallentaa konfiguraation syöttämällä yksilöivän konfiguraatioarvon.
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Tuotenumeroiden nimikkeistön luominen esimääritetyille tuotevarianteille (tehtävän ohjaus)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
+[Tuotenumeroiden nimikkeistön luominen esimääritetyille tuotevarianteille](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
 
-[Tuotenumeroiden nimikkeistön luominen konfiguroiduille tuotevarianteille (tehtävän ohjaus)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
-
-
+[Tuotenumeroiden nimikkeistön luominen konfiguroiduille tuotevarianteille](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
 
 

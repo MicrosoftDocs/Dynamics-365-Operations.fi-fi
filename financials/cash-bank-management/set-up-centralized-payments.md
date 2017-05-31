@@ -3,10 +3,10 @@ title: "Keskitettyjen maksujen määrittäminen"
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerInterCompany
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 474453e7f33526bc7bebc60ef68f560d489a1841
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 60cc59911cf2d10d73206885eb97b346ec3e3e87
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -41,7 +41,7 @@ Näiden ohjeiden avulla voit valmistella yhden yrityksen maksujen käsittelyn or
 -   Määritä konsernin sisäinen laskenta.
 
 ## <a name="set-up-an-organizational-hierarchy-for-centralized-payments"></a>Keskitettyjen maksujen organisaatiohierarkian määrittäminen
-Määritä keskitettyjen maksujen organisaatiohierarkia. Samaa organisaatiohierarkiaa käytetään sekä toimittajien että asiakkaiden keskitetyissä maksuissa. **Huomautus:** Hierarkian rakenteella ei ole merkitystä keskitettyjen maksujen käsittelyssä. Mikä tahansa hierarkian yritys voi käsitellä maksuja hierarkian toisten yritysten puolesta. Voit luoda uuden organisaatiorakenteen **Organisaatiohierarkiat**-sivulla.
+Määritä keskitettyjen maksujen organisaatiohierarkia. Samaa organisaatiohierarkiaa käytetään sekä toimittajien että asiakkaiden keskitetyissä maksuissa. **Huomautus:** Hierarkian rakenteella ei ole merkitystä keskitettyjen maksujen käsittelyssä. Mikä tahansa hierarkian yritys voi käsitellä maksuja hierarkian toisten yritysten puolesta. Voit luoda uuden organisaatiorakenteen **Organisaatiohierarkiat**-sivulla. Valitse **Tarkoitus**-kenttään **Keskitetyt maksut**. 
 
 ## <a name="set-up-an-intercompany-account-for-centralized-payments"></a>Keskitettyjen maksujen konsernitilin määrittäminen
 Kun nykyisen yrityksen maksutapahtumat selvitetään muiden yritysten laskuja vastaan, jokaiselle yritykselle luodaan asianmukaiset erääntymiskohteen ja -lähteen tapahtumat. Määritä yritys, johon sovellettavissa olevat käteisalennukset ja realisoituneet voitto- tai tappiosummat kirjataan. Ennen kuin aloitat, päätä, mitä yritystä toimittajan ja asiakkaan maksujen käsittelyssä käytetään. Jos yksi yritys käsittelee toimittajan maksut ja toinen asiakkaan maksut, sinun on siirryttävä yritysten välillä. Valitse **Konsernin sisäinen laskenta** -sivulla sen yrityksen konsernin sisäisen suhteen tietue, jonka puolesta käsittelet maksut. **Keskitetyt maksut** -välilehdessä voit määrittää, kirjataanko käteisalennukset maksutapahtuman (tai muun toimittajatilin saldoa pienentävän tapahtuman) yritykseen vai laskutapahtuman (tai muun toimittajatilin saldoa suurentavan tapahtuman) yritykseen. Tämä valinta toimii yhdessä **Käteisalennuksen hallinta**- ja **Ostoreskontran parametrit** -sivun **Käteisalennuksen hallinta** -kentän kanssa. Liikamaksuissa ja pyöristyseroissa käytetään maksutapahtuman yrityksen asetuksia. Liian pienissä maksuissa sekä pyöristyseroissa käytetään laskun yrityksen asetuksia.

@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
@@ -18,17 +18,15 @@ ms.author: sericks
 ms.dyn365.ops.intro: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e1a9e0eeb45f011ccb2aa091e68aff92782e1ae7
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5962fa36b061382e7f0ad55c08c81ac2cebc047d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
 # <a name="dynamics-365-for-operations-mobile-app-home-page"></a>Dynamics 365 for Operations -mobiilisovelluksen kotisivu
-
-[!include[banner](../includes/banner.md)]
 
 [!include[banner](../includes/banner.md)]
 
@@ -61,7 +59,7 @@ Mobiilisovelluksen käyttö koostuu neljästä, yksinkertaisesta osasta: koontin
 ## <a name="implementation-process"></a>Käyttöönottoprosessi
 Seuraavassa kuvassa esitellään Dynamics 365 for Operations -mobiilisovelluksen käyttöönoton prosessi organisaatiossa. 
 
-[![](./media/mobile-implementation-process_4.png)](./media/mobile-implementation-process_4.png) 
+![Mobiilisovellusten käyttöönottoprosessi](./media/mobile-implementation-process_4.png)
 
 Seuraava taulukko sisältää linkkejä resursseihin, jotka voivat auttaa Microsoft Dynamics 365 for Operations -mobiilisovelluksen käyttöönotossa organisaatiossasi. Ensimmäisen sarakkeen numerot vastaavat edellisessä kuvassa esitettyjä vaiheita.
 
@@ -85,7 +83,7 @@ Seuraava taulukko sisältää linkkejä resursseihin, jotka voivat auttaa Micros
 <td>1</td>
 <td>Järjestelmänvalvoja</td>
 <td>Suorita Dynamics 365 for Operationsin käyttöönotto organisaatiossa.</td>
-<td>Jos organisaatiosi ei ole vielä ottanut Dynamics 365 for Operations -sovellusta käyttöön, tutustu <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations -kokeiluympäristön käyttöönotto</a>-ohjeeseen.</td>
+<td>Jos organisaatiosi ei ole vielä ottanut Dynamics 365 for Operations -sovellusta käyttöön, tutustu <a href="../deployment/deploy-demo-environment.md">Microsoft Dynamics 365 for Operations -kokeiluympäristön käyttöönotto</a>-ohjeeseen.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -93,32 +91,27 @@ Seuraava taulukko sisältää linkkejä resursseihin, jotka voivat auttaa Micros
 <td>Lataa ja asenna paketit, jotka mahdollistavat Microsoftin tarjoamien mobiilityötilojen käytön.</td>
 <td>Katso &quot;Edellytykset&quot; -osa sen mobiilityötilan ohjeesta, jota organisaatiosi haluaa käyttää:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Kustannusseurannan mobiilityötilat</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Käytettävissä olevan varaston mobiilityötila</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Myyntitilausten mobiilityötilat</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Toimittajayhteistyön mobiilityötila</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Projektin aikakirjausten mobiilityötila</a></li>
+<li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Kustannusseurannan mobiilityötilat</a></li>
+<li><a href="/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Käytettävissä olevan varaston mobiilityötila</a></li>
+<li><a href="/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Myyntitilausten mobiilityötilat</a></li>
+<li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Toimittajayhteistyön mobiilityötila</a></li>
+<li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Projektin aikamerkintöjen mobiilityötila</a></li>
+<li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Kulujenhallinnan mobiilityötila</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>Järjestelmänvalvoja</td>
 <td>Julkaise Microsoftin tarjoamat mobiilityötilat.</td>
-<td>Katso &quot;Edellytykset&quot; -osa sen mobiilityötilan ohjeesta, jota organisaatiosi haluaa käyttää:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Kustannusseurannan mobiilityötilat</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Käytettävissä olevan varaston mobiilityötila</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Myyntitilausten mobiilityötilat</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Toimittajayhteistyön mobiilityötila</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Projektin aikakirjausten mobiilityötila</a></li>
-</ul></td>
+<td><a href="publish-mobile-workspace.md">Julkaise mobiilityötila</a>
+</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Kehittäjä tai riippumaton ohjelmistotoimittaja (ISV)</td>
 <td>Luo mukautettuja mobiilityötiloja Dynamics 365 for Operationsin mobiilikehyksen avulla.</td>
 <td><ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform">Dynamics 365 for Operations -mobiilikehys</a></li>
+<li><a href="mobile-platform.md">Dynamics 365 for Operations -mobiilikehys</a></li>
 <li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Dynamics 365 for Operationsin työtilojen X++ -sovellusohjelmaliittymät</a></li>
 </ul></td>
 </tr>
@@ -126,19 +119,19 @@ Seuraava taulukko sisältää linkkejä resursseihin, jotka voivat auttaa Micros
 <td>5</td>
 <td>riippumaton ohjelmistotoimittaja</td>
 <td>Luo käyttöön otettava paketti, joka sisältää mukautettuja mobiilityötiloja ja lataa paketti Microsoft Dynamicsin elinkaaripalveluihin (LCS).</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Käyttöön otettavan paketin luominen</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">Käyttöön otettavan paketin luominen</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>Järjestelmänvalvoja</td>
 <td>Avaa ohjelmistotoimittajan tarjoamat mukautetut työtilat sisältävä paketti.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Asenna käyttöön otettava paketti Microsoft Dynamics 365 for Operations -järjestelmään</a></td>
+<td><a href="../deployment/apply-deployable-package-system.md">Asenna käyttöön otettava paketti Microsoft Dynamics 365 for Operations -järjestelmään</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>Järjestelmänvalvoja</td>
 <td>Julkaise ohjelmistotoimittajan tarjoamat, mukautetut mobiilityötilat.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Julkaise mobiilityötila</a></td>
+<td><a href="publish-mobile-workspace.md">Julkaise mobiilityötila</a></td>
 </tr>
 <tr class="even">
 <td>8</td>
@@ -153,24 +146,12 @@ Seuraava taulukko sisältää linkkejä resursseihin, jotka voivat auttaa Micros
 <td>9</td>
 <td>Käyttäjä</td>
 <td>Kirjaudu sisään ja käytä Dynamics 365 for Operations -mobiilisovellusta. Sovellus sisältää julkaistut mobiilityötilat.</td>
-<td>Microsoftin toimittaa seuraavat mobiilityötilat:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Kustannusseurannan mobiilityötilat</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Käytettävissä olevan varaston mobiilityötila</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Myyntitilausten mobiilityötilat</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Toimittajayhteistyön mobiilityötila</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Projektin aikakirjausten mobiilityötila</a></li>
-</ul></td>
+<td>Voit tarkastella Microsoftin mobiilityötilaluetteloa kohdassa <a href="mobile-workspaces-released.md">Dynamics 365 for Operations -mobiilisovellukselle julkaistut uudet mobiilityötilat</a>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="see-also"></a>Lisätietoja
---------
-
-[Dynamics 365 for Operations -mobiilisovellukselle julkaistut mobiilityötilat](mobile-workspaces-released.md)
 
 
 

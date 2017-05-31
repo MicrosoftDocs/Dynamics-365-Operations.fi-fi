@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
@@ -18,10 +18,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
-ms.openlocfilehash: 908b9c0c8bfacf32e9fa8ce9affd6aa78eae234f
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 04521c20ddeca1154b134b23c1db69f45c554ed3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/26/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -45,7 +45,7 @@ Voit määrittää kanta-asiakasohjelman käyttämällä seuraavia vaihtoehtoja:
 -   Oikaise kanta-asiakaskortit manuaalisesti tai siirrä kanta-asiakaspalkkioiden saldo kortilta toiselle asiakkaan palkitsemiseksi.
 
 ## <a name="setting-up-loyalty-programs"></a>Kanta-asiakasohjelmien määrittäminen
-Kun otat kanta-asiakkuusominaisuuden käyttöön Dynamics 365 for Operations - Retailissa, sinun on määritettävä useita komponentteja. Seuraavassa kaaviossa on kuvattu kanta-asiakkuuskomponentit ja kuinka ne liittyvät toisiinsa. ![Loyalty setup process flow](./media/loyaltyprocess.gif)
+Kun otat kanta-asiakkuusominaisuuden käyttöön Dynamics 365 for Operations - Retailissa, sinun on määritettävä useita komponentteja. Seuraavassa kaaviossa on kuvattu kanta-asiakkuuskomponentit ja kuinka ne liittyvät toisiinsa. ![Kanta-asiakkuuden määrittämisprosessin kulku](./media/loyaltyprocess.gif)
 
 ## <a name="loyalty-components"></a>Kanta-asiakkuuskomponentit
 Seuraavassa taulukossa on kuvattu jokainen komponentti ja sen käyttöpaikka kanta-asiakkuuden määrityksessä.

@@ -60,7 +60,7 @@
 #### [Palkanlaskennan tietojen päivitykset – usein kysytyt kysymykset](localizations/noam-usa-payroll-data-updates.md)
 #### [Palkanlaskennan veroraporttien luominen](localizations/noam-usa-generate-payroll-reports.md)
 
-# [Myyntitiedot](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/operations/financials/index)
 
 # [Vähittäismyynti](/dynamics365/operations/retail/index)
 

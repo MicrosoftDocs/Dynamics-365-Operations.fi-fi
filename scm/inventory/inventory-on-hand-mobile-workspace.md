@@ -3,10 +3,10 @@ title: "Käytettävissä olevan varaston mobiilityötila"
 description: "Tässä aiheessa on tietoja käytettävissä olevan varaston mobiilityötilasta, joka on saatavilla Microsoft Dynamics 365 for Operationsin mobiilisovelluksessa. Käytettävissä olevan varaston mobiilityötila auttaa syventämään näkemyksiä varatusta ja käytettävissä olevasta varastosta mobiilisti milloin tahansa ja missä tahansa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e703ae80800b993ebca1c7bee455af1be41c7d5f
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7387df37e047d5ab7a90b696a6ffa249094499c4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,15 +37,21 @@ Tässä aiheessa on tietoja käytettävissä olevan varaston mobiilityötilasta,
 <a name="overview-of-the-inventory-on-hand-mobile-workspace"></a>Yhteenveto käytettävissä olevan varaston mobiilityötilasta
 --------------------------------------------------
 
-Yleensä yrityksillä on useita varaston toimituksia ja vastaanottoja joka päivä. Näiden siirrot muuttavat jatkuvasti käytettävissä olevan varaston tilaa. **Käytettävissä olevan varaston** mobiilityötilassa näet koko yrityksen käytettävissä olevan varaston tilan, jolloin voit hyödyntää uusimpia varastotietoja haluamassasi mobiililaitteessa. Riippumatta siitä, työskenteletkö fyysisessä varastossa, ostossa, myynnissä, tuotannossa, yrityksen johdossa tai muussa roolissa, voit käyttää käytettävissä olevan varaston tietoja milloin tahansa ja missä tahansa. Mobiilityötila sisältää välittömän näkymän käytettävissä olevan varaston tilasta kaikissa tiloissa. Sen avulla voit tarkastella käytettävää varastoa eri tiloissa, nykyisiä materiaalivarauksia ja varaamatonta, käytettävissä olevaa varastoa. Voit myös syöttää nimikenumeron suorittaaksesi kyselyjä käytettävissä olevaan varastoon ja suorittaa suodatetun haun varastotuotteille ja varianteille. Erityisesti mobiilityötilassa on nämä ominaisuudet:
+Yleensä yrityksillä on useita varaston toimituksia ja vastaanottoja joka päivä. Näiden siirrot muuttavat jatkuvasti käytettävissä olevan varaston tilaa. **Käytettävissä olevan varaston** mobiilityötilassa näet koko yrityksen käytettävissä olevan varaston tilan, jolloin voit hyödyntää uusimpia varastotietoja haluamassasi mobiililaitteessa. Riippumatta siitä, työskenteletkö fyysisessä varastossa, ostossa, myynnissä, tuotannossa, yrityksen johdossa tai muussa roolissa, voit käyttää käytettävissä olevan varaston tietoja milloin tahansa ja missä tahansa. 
+
+Mobiilityötila sisältää välittömän näkymän käytettävissä olevan varaston tilasta kaikissa tiloissa. Sen avulla voit tarkastella käytettävää varastoa eri tiloissa, nykyisiä materiaalivarauksia ja varaamatonta, käytettävissä olevaa varastoa. Voit myös syöttää nimikenumeron suorittaaksesi kyselyjä käytettävissä olevaan varastoon ja suorittaa suodatetun haun varastotuotteille ja varianteille. 
+
+Erityisesti mobiilityötilassa on nämä ominaisuudet:
 
 -   Voit etsiä tuotenumerolla tai tuotteen nimellä löytääksesi tuotteita ja tarkastellaksesi niiden käytettävissä olevan varaston tilaa.
+
 -   Voit tarkastella valittujen tuotteiden osalta seuraavia tietoja:
     -   Käytettävissä oleva varasto toimipaikan mukaan
     -   Käytettävissä oleva varasto fyysisten varastojen mukaan
     -   Käytettävissä oleva varasto sijaintien mukaan
     -   Käytettävissä oleva varasto erän mukaan (eräohjatuille tuotteille)
     -   Käytettävissä oleva varasto varastotilan mukaan
+    
 -   Tuotteen varastosaldo näkyy seuraavilla tavoilla:
     -   Fyysisen varaston mukaan (tämä näkymä edustaa kokonaismäärää).
     -   Fyysisen varaston varattujen mukaan (tämä näkymä edustaa varattua määrää).
@@ -71,7 +77,7 @@ Varmista ennen **käytettävissä olevan varaston** mobiilityötilan käyttöä,
 <tr class="odd">
 <td>Käytössä on oltava Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu ympäristöpäivitys 3.</td>
 <td>Järjestelmänvalvoja</td>
-<td>Jos organisaatiosi ei ole vielä ottanut Dynamics 365 for Operations -sovellusta käyttöön, järjestelmänvalvojasi tulisi tutustua <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Microsoft Dynamics 365 for Operations -kokeiluympäristön käyttöönotto</a>-ohjeeseen.</td>
+<td>Jos organisaatiosi ei ole vielä ottanut Dynamics 365 for Operations -sovellusta käyttöön, järjestelmänvalvojasi tulisi tutustua <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations -kokeiluympäristön käyttöönotto</a>-ohjeeseen.</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 on oltava asennettu.</td>
@@ -79,9 +85,9 @@ Varmista ennen **käytettävissä olevan varaston** mobiilityötilan käyttöä,
 <td>KB 4013633 (X++-päivitys tai metatietojen korjaus) sisältää neljä mobiilia työtilaa toimitusketjun hallintaan. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4013633 -päivityksen:
 <ol>
 <li>Lataa KB 4013633 Microsoft Dynamicsin elinkaaripalveluista (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Asenna metatietojen korjaustiedosto</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Luo käyttöön otettava paketti</a>, joka sisältää <strong>SCMMobile</strong>-mallin ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Asenna käyttöön otettava paketti</a> omaan Dynamics 365 for Operations -järjestelmääsi.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>SCMMobile</strong>-mallin ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Asenna käyttöön otettava paketti</a> omaan Dynamics 365 for Operations -järjestelmääsi.</li>
 </ol></td>
 </tr>
 <tr class="odd">
@@ -114,7 +120,7 @@ Lataa ja asenna Microsoft Dynamics 365 for Operations -mobiilisovellus sovellusk
 
 ## <a name="view-the-onhand-inventory-for-a-product-by-using-the-inventory-onhand-mobile-workspace"></a>Tarkastele tuotteen käytettävissä olevaa määrää käytettävissä olevan varaston mobiilityötilan avulla
 1.  Valitse mobiililaitteessasi **Käytettävissä oleva varasto** -työtila.
-2.  Valitse **Tarkistaa käytettävissä oleva varasto nimikkeelle**. Näet luettelon tuotteista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoa sovelluskehittäjille löytyy kohdasta [Dynamics 365 for Operationsin mobiiliympäristö](http://ax.help.dynamics.com/en/wiki/mobile-development-handbook/).
+2.  Valitse **Tarkistaa käytettävissä oleva varasto nimikkeelle**. Näet luettelon tuotteista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoa sovelluskehittäjille löytyy kohdasta [Dynamics 365 for Operationsin mobiiliympäristö](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
 3.  Jos nimike ei ole luettelossa, valitse **Hae lisää** tehdäksesi online-haun Dynamics 365 for Operationsissa. Etsi tuotteen numeron mukaan tai vaihda hakuun tuotteen nimen mukaan.
 4.  Valitse tuote. Jos nimikkeellä on kuva, kuva näkyy.
 5.  Valitse jokin seuraavista vaihtoehdoista tarkastellaksesi käytettävissä olevan varaston tilaa:

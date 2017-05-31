@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 3df3144b08c54441699d9c0b48fe507857877586
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5208dc64d86345de4e53c5e293fbc861351a63ef
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -59,6 +59,7 @@ Kun yrityksen 2222 työntekijä luo ostoehdotuksen, käytäntösäännöt perust
 
 Edellisessä esimerkissä kaikki ostosäännöt oli määritetty yhdelle organisaatiohierarkialle, Yritykset. Monitasoinen organisaatio voi kuitenkin määrittää käytäntöjä useille organisaatiohierarkioille.  
 
+
 Contoso on suuri yritys, joka edellyttää monitasoisia ostosääntöjä hallitsemaan ehdotusprosessia. Contoso on määrittänyt säännöt kahdelle erilliselle organisaatiohierarkialle: Osasto ja Yleinen ostojenhallinta.  
 
 Käytäntö 123 on määritetty Osasto-organisaatiohierarkialle Ison-Britannian myynti – Myyntiosastolle. Käytännössä 123 ostoehdotuksen hallintasäännössä määritetään, että vähimmäistilausmäärillä on käytettävä rajoituksia. Tässä säännössä **Pakota vähimmäistilausmäärän rajoitukset** -asetus on valittuna.  
@@ -93,6 +94,9 @@ Luokan käytäntösääntö määrittää, miten käyttäjä voi valita toimitta
 ### <a name="re-approval-rule-for-purchase-orders"></a>Ostotilausten uudelleenhyväksymissääntö
 
 Uudelleenhyväksymissääntö on valinnainen sääntö, joka määrittää ehdot muutetun ostotilauksen uudelleenhyväksynnälle. Valitut kentät arvioidaan ostotilauksen työnkulussa, kun "Edellyttää ostotilauksen uudelleenhyväksymistä" -ehto on määritetty työnkululle.
+
+> [!NOTE]
+> Kirjanpidollinen jako nollataan aina, kun muutetaan hyväksyttyä ostotilausta, jossa on käytössä muutostenhallinta. Ota huomioon, että jos haluat välttää ostotilauksen uudelleenhyväksynnän tiettyjen kenttien muuttamisen yhteydessä, Muutettu kirjanpidollinen jako -kenttää ei tule valita uudelleenhyväksyttäväksi kentäksi. 
 
 ### <a name="purchase-requisition-rfq-rule"></a>Ostoehdotuksen tarjouspyyntösääntö
 

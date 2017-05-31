@@ -67,6 +67,7 @@
 ### [CODA-tiliote](emea-bel-coda-bank-statement-import.md)
 ### [Intervat-veroilmoitus](emea-bel-intervat-tax-declaration.md)
 ### [PRODCOM-raporttimääritykset](emea-bel-prodcom-report.md)
+### [Täsmäytysraportit](emea-bel-reconciliation-reports.md)
 
 ## Tšekin tasavalta
 ### [Hyvityslaskun käteisalennus](emea-cze-credit-note-cash-discount.md)
@@ -74,6 +75,7 @@
 ### [Poistojen keskeytys](emea-cze-depreciation-suspension-holidays.md)
 ### [Käyttöomaisuuden poisto](emea-cze-fixed-assets-depreciation.md)
 ### [Puolen vuoden poisto](emea-cze-half-depreciation-fixed-asset-disposal.md)
+### [Arvonlisäveroilmoitus ](emea-cze-intra-community-vat-transactions.md)
 ### [ALV-ilmoitus](emea-cze-vat-statement-details.md)
 ## Viro
 ### [ALV-ilmoitus](emea-est-vat-statement-details.md)

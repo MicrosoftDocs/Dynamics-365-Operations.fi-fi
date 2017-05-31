@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: c9f1e32986238739fc7eee519fd1d17a6ce6731e
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 55a3252aa2d84ac5af68a1a6eebeaa909d95b33b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -34,6 +34,9 @@ ms.lasthandoff: 04/25/2017
 Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Microsoft Dynamics 365 for Operations -ympäristöversioiden uusista ominaisuuksista.
 
 Voit päivittää uuteen versioon [Uusinta Dynamics 365 for Operations -päivitystä koskeva päivitysprosessi](../migration-upgrade/upgrade-latest-update.md) -ohjeiden mukaisesti.
+
+Lisätietoja uusista mobiilityötiloista ja Power BI -sisällöstä on kohdassa [Dynamics 365 for Operations -mobiilisovellukselle julkaistut uudet mobiilityötilat](../mobile-apps/mobile-workspaces-released.md) ja [Dynamics 365 for Operations -ohjelmalle julkaistu Power BI -sisältö](../analytics/power-bi-content-released.md)
+
 <table>
 <colgroup>
 <col width="20%" />
@@ -44,8 +47,8 @@ Voit päivittää uuteen versioon [Uusinta Dynamics 365 for Operations -päivity
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Vapauttaminen</strong></th>
-<th><strong><strong>Versio</strong></strong></th>
+<th><strong>Julkaisu</strong></th>
+<th><strong><strong>versio</strong></strong></th>
 <th><strong><strong>Koontikäännös</strong></strong></th>
 <th><strong><strong>Käytettävyys</strong></strong></th>
 <th><strong><strong>Lisätietoja</strong></strong></th>
@@ -53,6 +56,12 @@ Voit päivittää uuteen versioon [Uusinta Dynamics 365 for Operations -päivity
 </thead>
 <tbody>
 <tr class="odd">
+<td>Microsoft Dynamics 365 for Operations -ympäristö</td>
+<td>Ympäristöpäivitys 7</td>
+<td> 7.0.4542.16189</td>
+<td>Toukokuun 2017.</td>
+<td><a href="whats-new-platform-update-7.md">Dynamics 365 for Operations -version ympäristöpäivityksen 7 uudet ja muuttuneet ominaisuudet (toukokuu 2017)</a></td>
+</tr><tr class="odd">
 <td>Microsoft Dynamics 365 for Operations -ympäristö</td>
 <td>Ympäristöpäivitys 6</td>
 <td> 7.0.4509.16180</td>
