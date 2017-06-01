@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.search.scope: Core
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: de2f71a21c5aac953349559c84283d0f76082d42
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -42,7 +42,9 @@ Microsoft Dynamics 365 for Operations -verkkosovellus voidaan suorittaa seuraavi
 -   Google Chrome (uusin saatavana oleva versio) Windows 10-, Windows 8.1-, Windows 8-, Windows 7- tai Google Nexus 10 -taulutietokoneen käyttöjärjestelmässä
 -   Apple Safari (uusin saatavana oleva versio) Mac OS X 10.10 (Yosemite)-, 10.11 (El Capitan)-, 10.12 (Sierra)- tai Apple iPadin käyttöjärjestelmässä.
 
-Ohjelmistovalmistajien sivustot sisältävät tietoja kunkin selaimen uusimmasta versiosta. **Huomautuksia:**
+Ohjelmistovalmistajien sivustot sisältävät tietoja kunkin selaimen uusimmasta versiosta. 
+
+**Huomautuksia:**
 
 -   Voit tallentaa tehtävän tallennustoiminnon luomat kuvat ja sisällyttää ne Microsoft Word -asiakirjoihin, jos asennettuna on Chrome-laajennus. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   Työnkulkueditori käynnistetään ClickOnce-sovelluksena. Ainoastaan Microsoft Edge ja Internet Explorer (tuetussa Microsoft Windows -versiossa) tukevat ClickOnce-sovelluksia. Työnkulkueditorin ClickOnce-sovellus vaatii 64-bittisen käyttöjärjestelmän.
@@ -59,10 +61,12 @@ Microsoft Dynamics 365 for Operationsin Retail Cloud POS -sovellus voidaan suori
 -   Chrome (uusin julkaistu versio) Windows 10, Windows 8.1 tai Windows 7 -käyttöjärjestelmässä
 
 ## <a name="network-requirements"></a>Verkon vaatimukset
--   Dynamics 365 for Operations on suunniteltu verkkoja varten, joiden viive on alle 150 millisekuntia (ms). Tämä on viive selainasiakkaan ja Microsoftin Azure-datakeskuksen välillä, joka isännöi Dynamics 365 for Operations -sovellusta. On suositeltavaa testata verkon viive osoitteessa <http://www.azurespeed.com>.
+-   Dynamics 365 for Operations on suunniteltu verkkoja varten, joiden viive on 250-300 millisekuntia (ms) tai vähemmän. Tämä on viive selainasiakkaan ja Microsoftin Azure-datakeskuksen välillä, joka isännöi Dynamics 365 for Operations -sovellusta. On suositeltavaa testata verkon viive osoitteessa <http://www.azurespeed.com>.
 -   Dynamics 365 for Operationsin kaistanleveysvaatimus riippuu tilanteesta. Yleisimmät tilanteet vaativat yli 50 kilotavua sekunnissa (KBps) kaistanleveyttä. Suosittelemme kuitenkin suurempaa kaistanleveyttä tilanteissa, joissa hyötykuorman vaatimus on korkea, kuten työtiloissa, tai tilanteissa, joissa vaaditaan laajaa mukauttamista.
 
-Dynamics 365 fir Operations on yleisesti optimoitu Internet-käyttöön. Kyselyiden määrä selainasiakasohjelmasta Azure-datakeskukseen on hyvin pieni, ja koko paketti on pakattu. **Varoitus:** älä laske kaistanleveysvaatimuksia asiakkaan sijainnista kertomalla käyttäjien määrä kaistanleveyden vähimmäisvaatimuksella. Tietyn sijainnin samanaikainen käyttö on hyvin vaikea laskea. Asiakkaat, jotka ovat huolissaan kaistanleveyden vaatimuksista voivat käyttää Dynamics 365 for Operationsin ennakkoversiota.
+Dynamics 365 fir Operations on yleisesti optimoitu Internet-käyttöön. Kyselyiden määrä selainasiakasohjelmasta Azure-datakeskukseen on hyvin pieni, ja koko paketti on pakattu. 
+
+**Varoitus:** älä laske kaistanleveysvaatimuksia asiakkaan sijainnista kertomalla käyttäjien määrä kaistanleveyden vähimmäisvaatimuksella. Tietyn sijainnin samanaikainen käyttö on hyvin vaikea laskea. Asiakkaat, jotka ovat huolissaan kaistanleveyden vaatimuksista voivat käyttää Dynamics 365 for Operationsin ennakkoversiota.
 
 ## <a name="net-framework-requirements"></a>.NET Framework -vaatimukset
 Dynamics 365 for Operations vaatii .NET Framework -version 4.6.2 kaikille kerran klikattaville sovelluksille, kuten asiakirjan reititysagentille. Asennusohjeet löydät kohdasta [.NET Frameworkin asentaminen](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).

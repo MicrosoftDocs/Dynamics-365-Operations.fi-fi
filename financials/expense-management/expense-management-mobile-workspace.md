@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: end user, IT Pro
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: annbe
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bc47c5b170fd7dd8f6288682aad6eae1d2dc09a
-ms.openlocfilehash: 9d3b7a4d5184c3c4958f4298f1d3dd4de0cd06d6
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 4e3202de8e5288bbd52e8c28922374de147cc99f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/26/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -29,8 +29,6 @@ ms.lasthandoff: 04/26/2017
 # <a name="expense-management-mobile-workspace"></a>Kulujenhallinnan mobiilityötila
 
 [!include[banner](../includes/banner.md)]
-
-"[!include[banner](../includes/banner.md)]"
 
 
 Tässä aiheessa on tietoja Kulujenhallinnan mobiilityötilasta, joka on saatavilla Microsoft Dynamics 365 for Operationsin mobiilisovelluksessa. Työtilan avulla käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Mobiilityötilassa käyttäjät voivat myös luoda kulurivejä nopeasti käyttämällä liitettyä kuittia.
@@ -66,7 +64,7 @@ Varmista ennen **kulujenhallinnan** mobiilityötilan käyttöönottoa, että jä
 <tr class="odd">
 <td>Käytössä on oltava Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu ympäristöpäivitys 3.</td>
 <td>Järjestelmänvalvoja</td>
-<td>Jos organisaatiosi ei ole vielä ottanut Dynamics 365 for Operations -sovellusta käyttöön, järjestelmänvalvojasi tulisi tutustua <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Microsoft Dynamics 365 for Operations -kokeiluympäristön käyttöönotto</a>-ohjeeseen.</td>
+<td>Jos organisaatiosi ei ole vielä ottanut Dynamics 365 for Operations -sovellusta käyttöön, järjestelmänvalvojasi tulisi tutustua <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations -kokeiluympäristön käyttöönotto</a>-ohjeeseen.</td>
 </tr>
 <tr class="even">
 <td>KB 4019015 on oltava asennettu.</td>
@@ -74,9 +72,9 @@ Varmista ennen **kulujenhallinnan** mobiilityötilan käyttöönottoa, että jä
 <td>KB 4019015 (X++-päivitys tai metatietojen korjaus) sisältää neljä mobiilia työtilaa toimitusketjun hallintaan. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4019015 -päivityksen:
 <ol>
 <li>Lataa KB 4019015 Microsoft Dynamicsin elinkaaripalveluista (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Asenna metatietojen korjaustiedosto</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Luo käyttöön otettava paketti</a>, joka sisältää <strong>ApplicationSuite</strong>- ja <strong>ExpenseMobile</strong>-mallit ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Asenna käyttöön otettava paketti</a> omaan Dynamics 365 for Operations -järjestelmääsi.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>ApplicationSuite</strong>- ja <strong>ExpenseMobile</strong>-mallit ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Asenna käyttöön otettava paketti</a> omaan Dynamics 365 for Operations -järjestelmääsi.</li>
 </ol></td>
 </tr>
 <tr class="odd">
@@ -97,14 +95,15 @@ Lataa ja asenna Microsoft Dynamics 365 for Operations -mobiilisovellus sovellusk
 
 -   Android - [Dynamics 365 for Operations Google Play Storessa](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
 -   iPhone - [Dynamics 365 for Operations iTunes App Storessa](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
--   Windows-puhelimet (Universaali Windows-ympäristö \[UWP\]): Tulossa pian!
 
 ## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Kirjaudu sisään Dynamics 365 for Operations -mobiilisovellukseen
 1.  Käynnistä sovellus mobiililaitteessa.
 2.  Syötä Dynamics 365 for Operationsin URL-osoite.
 3.  annan yritys, johon kirjaudutaan. Kirjoita esimerkiksi **USMF**.
 4.  Ensimmäisellä kerralla, kun kirjaudut sisään, sinulta pyydetään Dynamics 365 for Operations -tilisi käyttäjänimeä ja salasanaa. Kirjota tunnistetiedot.
-5.  Kun olet kirjautunut sisään, näet yrityksen käytettävissä olevat työtilat. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, voit päivittää mobiilien työtilojen luettelon vetämällä alaspäin. [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+5.  Kun olet kirjautunut sisään, näet yrityksen käytettävissä olevat työtilat. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, voit päivittää mobiilien työtilojen luettelon vetämällä alaspäin. 
+
+[![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a>Kuittien sieppaaminen kulujenhallinnan mobiilityötilassa
 1.  Valitse mobiililaitteessasi **Kulujenhallinnan** työtila.
@@ -114,7 +113,7 @@ Lataa ja asenna Microsoft Dynamics 365 for Operations -mobiilisovellus sovellusk
     1.  Sinut siirretään mobiililaitteesi kameraan, jotta voit ottaa kuitista kuvan. Kun olet ottanut kuvan, hyväksy se napauttamalla **OK**.
     2.  Valinnainen: Anna kuvalle nimi ja syötä muistiinpanoja.
 
-     tai Jos valitsit **Valitse kuva**, toimi seuraavasti:
+     **Tai:** Jos valitsit **Valitse kuva**, toimi seuraavasti:
     1.  Valitse kuva luettelosta.
     2.  Valinnainen: Anna kuvalle nimi ja syötä muistiinpanoja.
 
@@ -123,11 +122,11 @@ Lataa ja asenna Microsoft Dynamics 365 for Operations -mobiilisovellus sovellusk
 ## <a name="quick-expense-entry-by-using-the-expense-management-mobile-workspace"></a>Kulujen pikasyöttö kulujenhallinnan mobiilityötilassa
 1.  Valitse mobiililaitteessasi **Kulujenhallinnan** työtila.
 2.  Valitse **Kulun pikasyöttö**.
-3.  Valitse kulun luokka. Näet luettelon kululuokista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoa sovelluskehittäjille löytyy kohdasta [Dynamics 365 for Operationsin mobiiliympäristö](http://ax.help.dynamics.com/en/wiki/mobile-development-handbook/). Jos luokka ei ole luettelossa, valitse **Haku** tehdäksesi online-haun Dynamics 365 for Operationsissa. Etsi kululuokan tai -tyypin perusteella.
+3.  Valitse kulun luokka. Näet luettelon kululuokista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoa sovelluskehittäjille löytyy kohdasta [Dynamics 365 for Operationsin mobiiliympäristö](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform). Jos luokka ei ole luettelossa, valitse **Haku** tehdäksesi online-haun Dynamics 365 for Operationsissa. Etsi kululuokan tai -tyypin perusteella.
 4.  Anna kulun tapahtumapäivämäärä.
 5.  Valinnainen: anna kulun myyjä.
 6.  Syötä kulun summa.
-7.  Valitse kulun valuutta. Näet luettelon valuuttakoodeista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 400 valuuttaa, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoa sovelluskehittäjille löytyy kohdasta [Dynamics 365 for Operationsin mobiiliympäristö](http://ax.help.dynamics.com/en/wiki/mobile-development-handbook/). Jos valuutta ei ole luettelossa, valitse **Haku** tehdäksesi online-haun Dynamics 365 for Operationsissa. Etsi valuutan tai nimen mukaan.
+7.  Valitse kulun valuutta. Näet luettelon valuuttakoodeista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 400 valuuttaa, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoa sovelluskehittäjille löytyy kohdasta [Dynamics 365 for Operationsin mobiiliympäristö](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform). Jos valuutta ei ole luettelossa, valitse **Haku** tehdäksesi online-haun Dynamics 365 for Operationsissa. Etsi valuutan tai nimen mukaan.
 8.  Valitse **Ota kuva** tai **Valitse kuva**.
 9.  Jos valitsit **Ota kuva**, sinut siirretään mobiililaitteesi kameraan, jotta voit ottaa kuitista kuvan. Kun olet ottanut kuvan, hyväksy se napauttamalla **OK**.  tai Jos valitsit **Valitse kuva**, valitse kuva luettelosta.
 10. Valitse **Valmis**.

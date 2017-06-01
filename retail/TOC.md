@@ -69,7 +69,7 @@
 ## [Organisaatiot ja organisaatiohierarkiat (Commerce-perustiedot)](organizational-hierarchies-commerce-essentials.md)
 # [IT-ammattilaisten ja kehittäjien sisältö](dev-itpro/TOC.md)
 
-# [Myyntitiedot](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/operations/financials/index)
 
 # [Henkilöstöhallinto](/dynamics365/operations/human-resources/index)
 

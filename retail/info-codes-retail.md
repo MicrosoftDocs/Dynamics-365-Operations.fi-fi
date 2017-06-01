@@ -1,15 +1,15 @@
 ---
 title: Tietokoodit
 description: "Tässä artikkelissa on yleistietoja tietokoodeista ja tietokoodiryhmistä sekä niiden käyttämisestä."
-author: RobinARH
+author: mumani
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
@@ -19,10 +19,10 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
-ms.openlocfilehash: aaf02ce5bf3af94dea12344c9bfc5c8e9be7abb9
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5790f54a531336b30ee140ebf8b9c782d8b347f7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/26/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -47,13 +47,12 @@ Dynamics 365 for Operations - Retail -sovelluksessa voit luoda tietokoodien ryhm
 -   Linkitä tietokoodit muihin tietokoodeihin tai tietokoodiryhmiin, jotta voit kerätä tietoja tuotteesta tai tapahtumasta määrittämättä erillistä tietokoodia tai linkitettyä tietokoodia jokaiselle skenaariolle.
 
 ## <a name="info-code-examples"></a>Tietokoodiesimerkkejä
-**Esimerkki 1: Tietokoodien uudelleenkäyttö** Voit linkittää tietokoodit siten, että kun yksi tietokoodi käynnistyy, toinen koodi käynnistyy heti sen jälkeen. Kun esimerkiksi myyt tiettyjä tuotteita, kehota kassanhoitaja kysymään asiakkailta, haluavatko he ostaa paristoja ja tuotetakuun. Muiden tuotteiden kohdalla voit kehottaa kassanhoitajaa kysymään asiakkaalta, haluaako tämä ostaa paristoja, ja pyytämään asiakkaan postinumeron. Jos näissä tilanteissa luodaan linkitettyjä tietokoodeja, sinun on määritettävä tietokoodin jokainen muutos siten, että kassanhoitajaa kehotetaan pyytämään oikeat tiedot. Jos käytät tietokoodiryhmiä, yleiset tietokoodit, kuten paristojen pyytäminen, voidaan määrittää kerran ja sitten käyttää uudelleen useissa tietokoodiryhmissä. Voit käyttää myös priorisointia tietokoodiryhmissä määrittämään järjestyksen, jossa kehotteita näytetään. **Esimerkki 2: Tietokoodien linkittäminen tietokoodiryhmiin** Kun myyt tiettyjä tuotteita, kuten mobiililaitteita, haluat aina kerätä tietyt tiedot, kuten puhelinnumeron, mobiililaitteen tunnuksen (MEID) ja sarjanumeron. Kuitenkin haluat myös kerätä eri tietoja taulutietokonesovellukseen kuin matkapuhelimeen. Voit määrittää tietokoodiryhmän, joka sisältää kehotteen puhelinnumeron, tunnuksen ja sarjanumeron kysymisestä ja linkittää sitten tietokoodiryhmän yksittäiseen tietokoodiin. Kun tuotetta koskeva infokoodi toteutuu, tietokoodiryhmä voidaan määrittää käynnistymään seuraavaksi, jotta voit kerätä yleisiä tietoja tarvitsematta määrittää useita linkitettyjä infokoodisarjoja kullekin laitteelle.
+**Esimerkki 1: Tietokoodien uudelleenkäyttö** Voit linkittää tietokoodit siten, että kun yksi tietokoodi käynnistyy, toinen koodi käynnistyy heti sen jälkeen. Kun esimerkiksi myyt tiettyjä tuotteita, kehota kassanhoitaja kysymään asiakkailta, haluavatko he ostaa paristoja ja tuotetakuun. Muiden tuotteiden kohdalla voit kehottaa kassanhoitajaa kysymään asiakkaalta, haluaako tämä ostaa paristoja, ja pyytämään asiakkaan postinumeron. Jos näissä tilanteissa luodaan linkitettyjä tietokoodeja, sinun on määritettävä tietokoodin jokainen muutos siten, että kassanhoitajaa kehotetaan pyytämään oikeat tiedot. Jos käytät tietokoodiryhmiä, yleiset tietokoodit, kuten paristojen pyytäminen, voidaan määrittää kerran ja sitten käyttää uudelleen useissa tietokoodiryhmissä. Voit käyttää myös priorisointia tietokoodiryhmissä määrittämään järjestyksen, jossa kehotteita näytetään.
+
+
+**Esimerkki 2: Tietokoodien linkittäminen tietokoodiryhmiin** Kun myyt tiettyjä tuotteita, kuten mobiililaitteita, haluat aina kerätä tietyt tiedot, kuten puhelinnumeron, mobiililaitteen tunnuksen (MEID) ja sarjanumeron. Kuitenkin haluat myös kerätä eri tietoja taulutietokonesovellukseen kuin matkapuhelimeen. Voit määrittää tietokoodiryhmän, joka sisältää kehotteen puhelinnumeron, tunnuksen ja sarjanumeron kysymisestä ja linkittää sitten tietokoodiryhmän yksittäiseen tietokoodiin. Kun tuotetta koskeva infokoodi toteutuu, tietokoodiryhmä voidaan määrittää käynnistymään seuraavaksi, jotta voit kerätä yleisiä tietoja tarvitsematta määrittää useita linkitettyjä infokoodisarjoja kullekin laitteelle.
 
  
--
-
-
-
 
 
 

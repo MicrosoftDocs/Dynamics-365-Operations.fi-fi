@@ -3,10 +3,10 @@ title: "Myyntitilausten mobiilityötila"
 description: "Tässä aiheessa on tietoja Myyntitilausten mobiilityötilasta, joka on saatavilla Microsoft Dynamics 365 for Operationsin mobiilisovelluksessa. Tämän työtilan avulla pysyt ajan tasalla myyntitilauksista milloin ja missä tahansa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 119b80e5d8067ffbf75d8b067f4803558c2c94b0
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 11898146a13756a6bb22a769e37e8773484e0d04
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,7 +37,9 @@ Tässä aiheessa on tietoja Myyntitilausten mobiilityötilasta, joka on saatavil
 <a name="overview-of-the-sales-orders-mobile-workspace"></a>Yhteenveto Myyntitilausten mobiilityötilasta
 ---------------------------------------------
 
-**Myyntitilaukset** -mobiilityötila käyttää Microsoft Dynamics 365 for Operationsia ja antaa mahdollisuuden tarkastella myyntitilausten tarkkoja tietoja. Näihin tietoihin kuuluvat tilauksen tila, asiakkaan yhteystiedot ja tilauksen vastaanottajan yhteystiedot. **Myyntitilausten** mobiilityötilassa on pikanäyttö myyntitilauksista. Voit tarkastella myyntitilauksia asiakaskohtaisesti, näyttää kaikki myyntitilaukset tai tarkastella yksittäisen myyntitilauksen tietoja. Mobiili työtila tarjoaa kaksi näkymää, joilla voit analysoida myyntitilausten yksityiskohtia.
+**Myyntitilaukset** -mobiilityötila käyttää Microsoft Dynamics 365 for Operationsia ja antaa mahdollisuuden tarkastella myyntitilausten tarkkoja tietoja. Näihin tietoihin kuuluvat tilauksen tila, asiakkaan yhteystiedot ja tilauksen vastaanottajan yhteystiedot. **Myyntitilausten** mobiilityötilassa on pikanäyttö myyntitilauksista. Voit tarkastella myyntitilauksia asiakaskohtaisesti, näyttää kaikki myyntitilaukset tai tarkastella yksittäisen myyntitilauksen tietoja. 
+
+Mobiili työtila tarjoaa kaksi näkymää, joilla voit analysoida myyntitilausten yksityiskohtia.
 
 ### <a name="view-all-sales-orders"></a>Näytä kaikki myyntitilaukset
 
@@ -50,6 +52,7 @@ Tämä näkymä sisältää kaikki myyntitilaukset.
     -   Etsi tilan perusteella
     -   Etsi vapautustilan perusteella
     -   Etsi luontipäivämäärän ja -ajan perusteella
+    
 -   Kun olet valinnut myyntitilaukset, voit tarkastella tiettyjen tilausten lisätietoja. Voit tarkastella seuraavia tietoja:
     -   Asiakkaan nimi ja osoitetiedot
     -   Myyntitilauksen päivämäärät, kuten pyydetty lähetyspäivämäärä ja vahvistettu lähetyspäivämäärä
@@ -65,6 +68,7 @@ Tässä näkymässä on asiakaskohtainen luettelo myyntitilauksista.
 -   Voit tarkastella asiakkaan myyntitilauksia seuraavien suodattimien avulla:
     -   Etsi nimen perusteella
     -   Etsi tilin perusteella
+
 -   Kun olet valinnut asiakkaan, tarkasteltavana ovat seuraavat tiedot:
     -   Asiakkaan nimi ja ryhmä
     -   Asiakkaan yhteystiedot
@@ -96,7 +100,7 @@ Varmista ennen **myyntitilausten** mobiilityötilan käyttöä, että järjestel
 <tr class="odd">
 <td>Käytössä on oltava Dynamics 365 for Operations -versio 1611, johon on asennettu ympäristöpäivitys 3.</td>
 <td>Järjestelmänvalvoja</td>
-<td>Jos organisaatiosi ei ole vielä ottanut Dynamics 365 for Operations -sovellusta käyttöön, järjestelmänvalvojasi tulisi tutustua <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Microsoft Dynamics 365 for Operations -kokeiluympäristön käyttöönotto</a>-ohjeeseen.</td>
+<td>Jos organisaatiosi ei ole vielä ottanut Dynamics 365 for Operations -sovellusta käyttöön, järjestelmänvalvojasi tulisi tutustua <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment/">Microsoft Dynamics 365 for Operations -kokeiluympäristön käyttöönotto</a>-ohjeeseen.</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 on oltava asennettu.</td>
@@ -104,9 +108,9 @@ Varmista ennen **myyntitilausten** mobiilityötilan käyttöä, että järjestel
 <td>KB 4013633 (X++-päivitys tai metatietojen korjaus) sisältää neljä mobiilia työtilaa toimitusketjun hallintaan. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4013633 -päivityksen:
 <ol>
 <li>Lataa KB 4013633 Microsoft Dynamicsin elinkaaripalveluista (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Asenna metatietojen korjaustiedosto</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Luo käyttöön otettava paketti</a>, joka sisältää <strong>SCMMobile</strong>-mallin ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Asenna käyttöön otettava paketti</a> omaan Dynamics 365 for Operations -järjestelmääsi.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>SCMMobile</strong>-mallin ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Asenna käyttöön otettava paketti</a> omaan Dynamics 365 for Operations -järjestelmääsi.</li>
 </ol></td>
 </tr>
 <tr class="odd">

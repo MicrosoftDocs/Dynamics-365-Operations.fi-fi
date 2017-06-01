@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -350,8 +350,7 @@ Raportin kunkin sarakkeen tietojen lajin määrittää sarakkeen määrityksen *
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Näytä taloushallinnon tiedot tai Excel-laskentataulukon tiedot, kun käytössä on rivin määrityksen <strong>Linkki taloushallinnon dimensioihin</strong>- tai <strong>Linkki laskentataulukkoon</strong> -sarake. Kun valitset <strong>FD</strong>-sarakelajin, seuraavilla riveille määritetään automaattisesti oletusasetukset.
-    <ul>
+    <td>Näytä taloushallinnon tiedot tai Excel-laskentataulukon tiedot, kun käytössä on rivin määrityksen <strong>Linkki taloushallinnon dimensioihin</strong>- tai <strong>Linkki laskentataulukkoon</strong> -sarake. Kun valitset <strong>FD</strong>-sarakelajin, seuraavilla riveille määritetään automaattisesti oletusasetukset. <ul>
     <li><strong>Kirjakoodi/määriteluokka:</strong> ACTUAL</li>
     <li><strong>Kirjakoodi/määriteluokka:</strong> ACTUAL</li>
     <li><strong>Tilikausi:</strong> BASE</li>
@@ -359,7 +358,7 @@ Raportin kunkin sarakkeen tietojen lajin määrittää sarakkeen määrityksen *
     <li><strong>Katetut jaksot:</strong> PERIODIC</li>
     <li><strong>Sarakkeen leveys:</strong> 14</li>
     </ul>
-    Näitä oletusasetuksia voi muuttaa.</td>
+Näitä oletusasetuksia voi muuttaa.</td>
     </tr>
     <tr class="even">
     <td>CALC</td>
@@ -387,12 +386,11 @@ Raportin kunkin sarakkeen tietojen lajin määrittää sarakkeen määrityksen *
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Näyttää Excel-laskentataulukosta noudetut tiedot. Kun valitset <strong>WKS</strong>-sarakelajin, seuraavilla riveille määritetään automaattisesti oletusasetukset.
-    <ul>
+    <td>Näyttää Excel-laskentataulukosta noudetut tiedot. Kun valitset <strong>WKS</strong>-sarakelajin, seuraavilla riveille määritetään automaattisesti oletusasetukset. <ul>
     <li><strong>Tilikausi:</strong> PERIODIC</li>
     <li><strong>Jakso:</strong> BASE</li>
     </ul>
-    Näitä oletusasetuksia voi muuttaa.</td>
+Näitä oletusasetuksia voi muuttaa.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>

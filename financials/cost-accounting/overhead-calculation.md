@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bb02e0756d675726f6c3b9f456b980a7ed695463
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -53,7 +53,8 @@ Yleiskustannusten laskenta suorittaa kustannuslaskennan käytännöt oikeassa j�
 -   Tilikausi 
 -   Tilikausi  
 
-Yleiskustannusten laskenta ajetaan versiosta riippumattomana. Voit siis laskea budjetin version ennen todellista versiota. Yleiskustannusten laskenta koostuu neljästä vaiheesta, jotka esitellään seuraavassa kuvassa. Kussakin vaiheessa luodaan kirjauskansion otsikko, jolla on kirjauskansiovientejä. Tämä kirjauskansion otsikko säilyttää kunkin laskentavaiheen syöttötiedot. Käytännöt ja säännöt ajetaan kullekin kirjauskansion riville, ja tuloksena luodaan kustannustapahtumia. Tämän ansiosta kaikki laskutoimitukset ovat täysin jäljitettävissä. [![Yleiskustannuslaskenta](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+Yleiskustannusten laskenta ajetaan versiosta riippumattomana. Voit siis laskea budjetin version ennen todellista versiota. Yleiskustannusten laskenta koostuu neljästä vaiheesta, jotka esitellään seuraavassa kuvassa. Kussakin vaiheessa luodaan kirjauskansion otsikko, jolla on kirjauskansiovientejä. Tämä kirjauskansion otsikko säilyttää kunkin laskentavaiheen syöttötiedot. Käytännöt ja säännöt ajetaan kullekin kirjauskansion riville, ja tuloksena luodaan kustannustapahtumia. Tämän ansiosta kaikki laskutoimitukset ovat täysin jäljitettävissä. 
+[![Yleiskustannuslaskenta](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Laske ja kohdista sähkön yleiskustannukset
 Tietyt kustannukset, kuten sähkö, rekisteröidään kirjanpidossa kokonaissummaksi. Tarkka johdon näkymä ei täten ole saatavilla kustannuslaskennassa. Jotta kustannuslaskenta tarjoaisi oikean johdon näkymän kaikista organisaation yksiköistä ja tasoista, kustannusten on virrattava organisaation yksiköiden läpi. Tämän virran on perustuttava joko tarkkaan tietoon kulutuksesta tai perusteltuun arvioon. Sähkökustannukset voi kirjata kirjanpitoon seuraavassa taulukossa kuvatulla tavalla.
@@ -622,7 +623,7 @@ Lisätietoja yleiskustannustason käytännöistä löydät kohdista Yleiskustann
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Vaihe 4: Käsittele kustannusten kohdistuksen laskenta
 
-Kohdistuksella kustannusobjektin saldo liitetään toisiin kustannusobjekteihin käyttämällä kohdistusperustetta. Microsoft Dynamics 365 for Operations tukee vastavuoroista kohdistusmenetelmää. Vastavuoroisessa kohdistusmenetelmässä tunnistetaan oheiskustannusobjektien käyttämät, keskinäiset palvelut täysin. Järjestelmä määrittää oikean kohdistusjärjestyksen automaattisesti. Kustannusobjektin saldo kohdistetaan yhdellä kohdistusperusteella. Kustannusobjektien dimensiot ja niiden vastaavat jäsenet ylittävät kohdistukset ovat tuettuja. Kustannusseurantayksikkö hallitsee kohdistusjärjestystä. [![](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+Kohdistuksella kustannusobjektin saldo liitetään toisiin kustannusobjekteihin käyttämällä kohdistusperustetta. Microsoft Dynamics 365 for Operations tukee vastavuoroista kohdistusmenetelmää. Vastavuoroisessa kohdistusmenetelmässä tunnistetaan oheiskustannusobjektien käyttämät, keskinäiset palvelut täysin. Järjestelmä määrittää oikean kohdistusjärjestyksen automaattisesti. Kustannusobjektin saldo kohdistetaan yhdellä kohdistusperusteella. Kustannusobjektien dimensiot ja niiden vastaavat jäsenet ylittävät kohdistukset ovat tuettuja. Kustannusseurantayksikkö hallitsee kohdistusjärjestystä. [![Vastavuoroinen menetelmä](./media/reciprocal-method.png)]
 
 #### <a name="define-the-cost-allocation"></a>Määritä kustannuksen kohdistus
 

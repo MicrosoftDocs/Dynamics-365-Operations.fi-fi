@@ -4,6 +4,7 @@
 ## Kysynnän ennusteen luominen
 ### [Kysynnän ennusteen yleiskatsaus](master-planning/introduction-demand-forecasting.md)
 ### [Kysynnän ennusteen määrittäminen](master-planning/demand-forecasting-setup.md)
+### [Kysynnän ennusteiden historiatietojen tuonti](master-planning/import-historical-data.md)
 ### [Tilastollisen perusennusteen luominen](master-planning/generate-statistical-baseline-forecast.md)
 ### [Perusennusteen manuaalinen oikaisu](master-planning/manual-adjustments-baseline-forecast.md)
 ### [Oikaistun ennusteen valtuuttaminen](master-planning/authorize-adjusted-forecast.md)
@@ -187,7 +188,7 @@
 ### [Varaston mobiililaiteportaali (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Varaston mobiililaitteen näyttöasetukset](warehousing/change-warehouse-mobile-device-displays.md)
 
-# [Myyntitiedot](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/operations/financials/index)
 
 # [Henkilöstöhallinto](/dynamics365/operations/human-resources/index)
 
