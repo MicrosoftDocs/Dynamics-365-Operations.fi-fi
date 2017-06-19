@@ -1,5 +1,5 @@
 # Power BI Content Pack
-## [Kustannushallinnan sisältöpaketti](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Kustannushallinnan sisältöpaketti](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Ennalta määritetty kustannus
 ## [Kustannuslaskentalomake](costing-sheets.md)
 ## [Kustannuslaskelmaversio](costing-versions.md)

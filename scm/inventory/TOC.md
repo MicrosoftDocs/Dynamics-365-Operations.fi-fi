@@ -21,4 +21,5 @@
 # Nimikkeen ja erän jäljittäminen
 ## [Varastoerän yhdistäminen](merge-inventory-batches.md)
 ## [Nimikkeen ja raaka-aineen jäljittäminen](trace-items-raw-materials-inventory-production-sales.md)
+## [Sarjanumeron rekisteröinti myyntiprosessissa](../sales-marketing/register-serial-numbers-sales-process.md)
 

@@ -1,4 +1,4 @@
-# [Lokalisoinnin yleiskatsaus](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
+# [Lokalisoinnin yleiskatsaus](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
 # Aasia ja Tyynenmeren alue
 ## Australia
 ### [Pankkitiedostomuodot](apac-aus-method-of-payment-pay-vendors-banks.md)
@@ -54,6 +54,7 @@
 ## [Käyttöomaisuuserän esihankinnan kirjaus](emea-pre-acquisition-acquisition-fixed-asset.md)
 ## [Postinumerot](emea-import-create-postal-codes-manually.md)
 ## [Rekisteröintitunnukset](emea-registration-ids.md)
+## [Käänteinen verovelvollisuus](emea-reverse-charge.md)
 ## [SEPA (Single Euro Payments Area) -tilisiirron yleiskatsaus](../accounts-payable/sepa-credit-transfer.md)
 ## [SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](emea-set-up-signers-for-printing-forms.md)
@@ -98,7 +99,7 @@
 ### [Kirjauskansioluettelon raportti](emea-deu-journal-list-report.md)
 ### [Erillisen etiketin tulostaminen myynnistä peräisin oleville hyvityslaskuille](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Unkari
-### [Käyttöomaisuuden poistomenetelmät](emea-hun-fixed-assets-depreciation-methods.md)    
+### [Käyttöomaisuuden poistomenetelmät](emea-hun-fixed-assets-depreciation-methods.md)   
 ### [Kustannukseltaan vähäinen käyttöomaisuus](emea-hun-low-cost-fixed-assets.md)
 ### [Käyttöomaisuuden siirto varastoon](emea-hun-fixed-asset-to-inventory.md)
 ## Italia
@@ -136,8 +137,9 @@
 ### [Suoritusperusteinen vero](emea-esp-conditional-sales-tax.md)
 ### [Kirjanpitotietojen laskutili](emea-esp-fiscal-data-invoice-account.md)
 ### [Käyttöomaisuusryhmän uudelleenarvostus](emea-esp-fixed-asset-group-revaluation.md)
-### [Yhteisön sisäinen alv](emea-esp-intra-community-vat.md)
+### [Yhteisön sisäinen ALV](emea-esp-intra-community-vat.md)
 ### [Kerta-asiakkaat](emea-esp-no-one-time-customer-for-project-contracts.md)
+### [Espanjan asettelun mukainen sekkien tulostus](emea-esp-print-checks-with-spanish-layout.md)
 ### [Velkakirjojen asetukset](emea-esp-promissory-note-options.md)
 ### [Osto- ja myyntisyklit](emea-esp-sales-purchase-cycle.md)
 ### [Erikoisviennit ja avaavat taseet](emea-esp-opening-sheets-spain.md)
@@ -153,7 +155,9 @@
 ### [Verokirjat](latam-bra-fiscal-books.md)
 #### [ICMS-veroasiakirjat](latam-bra-icms-tax-fiscal-documents.md)
 #### [Veroasiakirjojen tuonti](latam-bra-import-fiscal-documents.md)
-#### [NF-eXML-tiedostot ja DANFE-tiedostot](latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+#### [Yritystapahtumien vienti ja tuonti kirjanpidon konsolidoinnista](latam-bra-general-ledger-consolidation-transactions.md)
+#### [NF-eXML- ja DANFE-tiedostojen tuonti ja tarkistus](latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+#### [Sähköisten maksusuoritusten käsittely](latam-bra-process-electronic-payment-remittances.md)
 #### [Veroasiakirjat](latam-bra-fiscal-documents-fiscal-document-framework.md)
 #### [Veroasiakirjan tekstin paikkamerkit](latam-bra-fiscal-document-text-placeholders.md)
 #### [Ostoa täydentävät veroasiakirjat](latam-bra-purchase-complementary-fiscal-documents.md)
@@ -163,6 +167,8 @@
 ### [Sähköisen maksun palautuksen aikana luodut kirjauskansiot](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
 ### [NF-e-prosessi](latam-bra-nf-e-process.md)
 ### [Yritysten parametrit](latam-bra-legal-entity-parameters.md)
+### [CIAP-käyttöomaisuuden hankkiminen](latam-bra-ciap-fixed-asset.md)
+### [CIAP-käyttöomaisuuden poistaminen](latam-bra-ciap-fixed-asset.md)
 ### [Verot](latam-bra-calculate-taxes.md)
 #### [Veromääritteet](latam-bra-tax-attributes.md)
 #### [Veromaksut](latam-bra-tax-payments.md)
