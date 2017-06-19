@@ -1,34 +1,34 @@
 # [Johdanto](index.md)
 
-# [Dynamics 365 for Operationsin käytön perehdytys](get-started/onboarding-home.md)
-## Dynamics 365 for Operationsin esittely
+# [Finance and Operations -palvelun käytön perehdytys](get-started/onboarding-home.md)
+## Finance and Operations -palvelun esittely
 ### [Microsoft FastTrack for Dynamics 365:n käytön aloittaminen](get-started/fasttrack-dynamics-365-overview.md)
-### [Sovelluksen tilaaminen](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/operations/toc.json)
-### [Paikallisen Dynamics AX 2012 -version hankkiminen](/dynamics365/operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/operations/toc.json)
-## [Esittely-ympäristön käyttöönotto](/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/operations/toc.json)
+### [Sovelluksen tilaaminen](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Paikallisen Dynamics AX 2012 -version hankkiminen](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+## [Esittely-ympäristön käyttöönotto](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Käyttöliittymään tutustuminen
 ### [Toimintohaku](get-started/action-search.md)
 ### [Suodatuksen ja kyselysyntaksin lisäasetukset](get-started/advanced-filtering-query-options.md)
-### [Dynamics 365 for Operations -asiakasohjelman usein kysytyt kysymykset](get-started/client-faq.md)
+### [Finance and Operations -asiakasohjelman usein kysytyt kysymykset](get-started/client-faq.md)
 ### [Työtilojen määrittäminen ja suodattaminen](get-started/configure-filter-workspaces.md)
 ### [Rinnakkaisten sivujen näyttäminen Avaa uudessa ikkunassa -kuvakkeen avulla](get-started/display-pages-side-by-side.md)
 ### [Siirtymishaku](get-started/navigation-search.md)
 ### [Käyttäjäkokemuksen mukauttaminen](get-started/personalize-user-experience.md)
 ### [Pikanäppäimet](get-started/shortcut-keys.md)
 ### [Sivujen näkymisen hallinta](get-started/window-management.md)
-### [Lifecycle Servicesin ymmärtäminen](/dynamics365/operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/operations/toc.json)
+### [Lifecycle Servicesin ymmärtäminen](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Ohjeet ja tuki
-### [Ohjeen yleiskatsaus](/dynamics365/operations/dev-itpro/get-started/help-overview?toc=/dynamics365/operations/toc.json)
-### [Yhdistämisen ohje](/dynamics365/operations/dev-itpro/get-started/help-connect?toc=/dynamics365/operations/toc.json)
+### [Ohjeen yleiskatsaus](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Yhdistämisen ohje](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Kenttäkuvausten näyttäminen ja vienti](get-started/view-export-field-descriptions.md)
 
 ### Tehtäväoppaat ja tehtävien tallennustoiminto
-#### [Tehtävien tallennustoiminto](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
-#### [Asiakirjojen tai koulutuksen luominen](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
+#### [Tehtävien tallennustoiminto](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Asiakirjojen tai koulutuksen luominen](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## [Maa- ja aluekohtainen ohjesisältö](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/toc.json)
+## [Maa- ja aluekohtainen ohjesisältö](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 # [Organisaation asetusten määrittäminen](organization-administration/organization-administration-home-page.md)
 ## [Organisaatiot ja organisaatiohierarkiat](organization-administration/organizations-organizational-hierarchies.md)
@@ -63,17 +63,17 @@
 ## [Konfiguroi sanoman käsittelyn erätyö](organization-administration/workflow-batch-job-critical.md)
 ## [Työnkulkutyyppien raportti](organization-administration/workflow-types-report.md)
 
-# [Financials](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/unified-operations/financials/index)
 
-# [Henkilöstöhallinto](/dynamics365/operations/human-resources/index)
+# [Henkilöstöhallinto](/dynamics365/unified-operations/talent/index)
 
-# [Vähittäismyynti](/dynamics365/operations/retail/index)
+# [Vähittäismyynti](/dynamics365/unified-operations/retail/index)
 
-# [Toimitusketjun hallinta](/dynamics365/operations/supply-chain/index)
+# [Toimitusketjun hallinta](/dynamics365/unified-operations/supply-chain/index)
 
-# [Kehittäjä ja järjestelmänvalvoja](/dynamics365/operations/dev-itpro/index)
+# [Kehittäjä ja järjestelmänvalvoja](/dynamics365/unified-operations/dev-itpro/index)
 
 # Muut resurssit
-## [Dynamics 365 for Operations -sanasto](get-started/glossary.md)
-## [Uudet ja muuttuneet ominaisuudet](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/toc.json)
+## [Finance and Operations -sanasto](get-started/glossary.md)
+## [Uudet ja muuttuneet ominaisuudet](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 

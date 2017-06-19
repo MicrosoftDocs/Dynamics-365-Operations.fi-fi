@@ -15,8 +15,9 @@
 ## [Vähittäismyynnin laiteaseman määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md)
 ## [Vähittäismyynnin työajan seuranta](retail-time-attendance.md)
 # Modern Point of Sale (MPOS) ja pilvimyyntipiste
-## Laitteiston oheislaitteet
+## Laitteisto ja oheislaitteet
 ### [Vähittäismyynnin oheislaitteiden yleiskatsaus](retail-peripherals-overview.md)
+### [Vähittäismyynnin oheislaitesimulaattori](retail-peripheral-simulator.md)
 ### [Microsoftin testaamat myyntipisteen oheislaitteet](microsoft-tested-pos-hardware-peripherals.md)
 ### [Kanavan asiakasohjelmien, kassakoneiden ja laiteasemien määrittäminen ja ylläpitäminen](define-maintain-channel-clients-registers-hw-stations.md)
 ## Näytön asettelu
@@ -42,6 +43,7 @@
 ## Kuitit
 ### [Kuittimallien määrittäminen](receipt-templates-printing.md) 
 ### [Sähköpostikuittien lähettäminen MPOS:sta](email-receipts.md)
+## [Myyntipisteen tehtävien tallennustoiminto ja ohje](task-recorder-retail-pos.md)
 # Seuranta ja analyysi
 ## [Myynnin ja marginaalien seuranta](monitor-sales-margin-performance.md)
 ## [Myyntitrendien ja -mallien analysointi](analyze-sales-trends-patterns.md)
@@ -53,6 +55,7 @@
 ## [Hinnanoikaisut ja alennukset](price-adjustments-discounts.md)
 ## [Optimaalisen päällekkäisten alennusten yhdistelmän määrittäminen](optimal-combination-overlapping-discounts.md)
 ## [Kanavakohtaisten alennusten määrittäminen](define-channel-specific-discounts.md)
+## [Vähittäismyynnin kuponkien luonti](retail-coupons.md)
 # Tuotteet ja myynninedistäminen
 ## [Vähittäismyyntihierarkiat](retail-hierarchies.md)
 ## [Määritteiden luonti ja hallinta](create-manage-attributes.md)
@@ -60,6 +63,7 @@
 ## [Viivakoodien määrittäminen](set-up-bar-codes.md)
 ## [Viivakoodin muotojen määrittäminen](set-up-bar-code-masks.md)
 ## [Valikoimien määrittäminen](set-up-assortments.md)
+## [Valikoiman ulkopuolisten tuotteiden myyminen ja palauttaminen](sell-return-outside-assortments.md)
 # Kanta-asiakkuus
 ## [Kanta-asiakasohjelman määrittäminen](set-up-customer-loyalty-program.md)
 # Varasto
@@ -69,15 +73,15 @@
 ## [Organisaatiot ja organisaatiohierarkiat (Commerce-perustiedot)](organizational-hierarchies-commerce-essentials.md)
 # [IT-ammattilaisten ja kehittäjien sisältö](dev-itpro/TOC.md)
 
-# [Financials](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/unified-operations/financials/index)
 
-# [Henkilöstöhallinto](/dynamics365/operations/human-resources/index)
+# [Henkilöstöhallinto](/dynamics365/unified-operations/talent/index)
 
-# [Toimitusketjun hallinta](/dynamics365/operations/supply-chain/index)
+# [Toimitusketjun hallinta](/dynamics365/unified-operations/supply-chain/index)
 
-# [Kehittäjä ja järjestelmänvalvoja](/dynamics365/operations/dev-itpro/index)
+# [Kehittäjä ja järjestelmänvalvoja](/dynamics365/unified-operations/dev-itpro/index)
 
 # Muut resurssit
-## [Dynamics 365 for Operations -sanasto](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
-## [Uudet ja muuttuneet ominaisuudet](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+## [Dynamics 365 for Retail -sanasto](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
+## [Uudet ja muuttuneet ominaisuudet](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
 

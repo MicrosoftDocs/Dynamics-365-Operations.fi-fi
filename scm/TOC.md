@@ -43,6 +43,8 @@
 ### [Toimittajatilien määrittäminen](procurement/set-up-vendor-accounts.md)
 ### [Toimittajayhteistyö ulkoisten toimittajien kanssa](procurement/vendor-collaboration-work-external-vendors.md)
 ### [Toimittajayhteistyö asiakkaiden kanssa](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+### [Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla](procurement/use-external-catalogs-for-punchout.md)
+### [Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen](procurement/set-up-external-catalog-for-punchout.md)
 ### [Yhteistyö toimittajien kanssa toimittajaportaalissa](procurement/collaborate-vendors-vendor-portal.md)
 ### [Toimittajayhteistyön mobiilityötila](procurement/vendor-collaboration-mobile-workspace.md)
 ### [Toimittajaportaalin käyttäjien suojaus](procurement/configure-security-vendor-portal-users.md)
@@ -50,27 +52,47 @@
 ### [Ostosopimukset](procurement/purchase-agreements.md)
 ## Tuotteiden vastaanotot ja laskutus
 ### [Tuotteen vastaanotto ostotilausten perusteella](procurement/product-receipt-against-purchase-orders.md)
-### [Toimittajan laskujen yleiskatsaus](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
-### [Toimittajan kirjausprofiilit](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+### [Toimittajan laskujen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Toimittajan kirjausprofiilit](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Tuotetietojen hallinta
-## Tuotteen tiedot
-### [Tuoterakenne ja kaava](production-control/bill-of-material-bom.md)
-### [Tuoterakenteen suunnittelutoiminto](production-control/bom-designer-functionality.md)
-### [Tuotedimensio](pim/product-dimensions.md)
-### [Dimensioiden ja tuotevarianttien oletustilausasetukset](production-control/default-order-settings.md)
-### [Tuotenumeron nimikkeistö](pim/product-variant-identification-nomenclature.md)
-### [Tuotteeseen liittyvien käännösten usein kysytyt kysymykset](pim/translations-product-related-information.md)
-### [Sarjanumeron rekisteröinti myyntiprosessissa](sales-marketing/register-serial-numbers-sales-process.md)
-### [Tuotehaku tilaustenkäsittelyn aikana](pim/search-products-product-variants.md)
-## Tuotemäärityksen luominen
-### [Tuotemääritysmallin luominen](pim/build-product-configuration-model.md)
-### [Tuotemääritysmallin laskennan usein kysytyt kysymykset](pim/calculate-product-configuration-models.md)
+## [Tuotetietojen yleiskatsaus](pim/product-information.md)
+## Tuoteluokkien ylläpito
+## Tuotetietojen ylläpito
+### Tuotemääritysten ylläpito
+#### [Tuotenumeron nimikkeistö](pim/product-variant-identification-nomenclature.md)
+#### Tuotemallit
+#### [Tuotedimensio](pim/product-dimensions.md)
+#### Tuotemääritteet
+#### Tuotteen kuvat ja liitteet
+#### Tuotetunnukset
+#### [Tuotetietojen käännösten usein kysytyt kysymykset](pim/translations-product-related-information.md)
+### Tuotteiden vapauttaminen yrityksille
+### Tuotteiden haku
+#### [Tuotehaku tilaustenkäsittelyn aikana](pim/search-products-product-variants.md)
+### Tuotteiden valmistelu suunnittelua varten
+#### [Dimensioiden ja tuotevarianttien oletustilausasetukset](production-control/default-order-settings.md)
+#### Ennustemallit ja nimikkeiden kohdistustunnukset
+### Tuotteiden valmistelu tuotantoa varten
+#### Tuoterakenne ja kaava
+##### [Tuoterakenteet ja kaavat](production-control/bill-of-material-bom.md)
+##### [Tuoterakenteen suunnitteluohjelman käyttäminen](production-control/bom-designer-functionality.md)
+##### [Kaavan suunnitteluohjelman käyttäminen](production-control/formula-designer.md)
+#### Reititykset
+#### Lean-valmistus
+### Tuotteiden valmistelu tuotevarastoa ja logistiikkaa varten
+### Tuotekustannusten arviointi
+#### [Tuoterakennelaskelmat](cost-management/bom-calculations.md)
+## Tuotekonfiguraation mallien ylläpito
+### [Tuotekonfiguraatiomallin luominen](pim/build-product-configuration-model.md)
+### [Tuotekonfiguraatiomallin laskennan usein kysytyt kysymykset](pim/calculate-product-configuration-models.md)
 ### [Konfiguraatiosääntö](pim/configuration-rules.md)
 ### [Dimensioihin perustuva konfiguraatio](pim/dimension-based-product-configuration.md)
 ### [Lauseke- ja taulurajoitukset](pim/expression-constraints-table-constraints-product-configuration-models.md)
 ### [Tuotekonfiguraation käyttäminen uudelleen](pim/reuse-product-configurations.md)
 ### [Konfiguraatiomallin määrittäminen](pim/set-up-maintain-product-configuration-model.md)
 ### [Järjestelmän määrittämä ja käyttäjän määrittämä taulurajoitus](pim/system-defined-user-defined-table-constraints.md)
+## Tuotetietotietojen tuonti
+## Tuotetietotietojen vienti
 # Tuotannonhallinta
 ## [Tuotantoprosessin yleiskatsaus](production-control/production-process-overview.md)
 ## [Monijärjestelmätilan suunnittelu: erillisen hankinnan, prosessihankinnan ja lean-hankinnan yhdistäminen](production-control/mixed-mode-plan.md)
@@ -96,6 +118,8 @@
 #### [Tuotantotilauksen tilan palauttaminen](production-control/reverse-production-order-status.md)
 #### [Tuotantotilausten ilmoittaminen valmistuneiksi](production-control/report-production-orders-as-finished.md)
 #### [Tuoterakenteiden ilmoittaminen valmistuneiksi](production-control/report-boms-as-finished.md)
+#### [Cross docking tuotantotilauksista lähtevien laituriin](production-control/cross-docking-opportunities.md)
+#### [Materiaalikulutuksen rekisteröinti mobiililaitteella](production-control/register-material-consumption-hand-held-device.md)
 #### [Materiaalien korvaaminen tuotannossa](production-control/substitute-items-bom-lines.md)
 #### [Tuotannonohjauksen rekisteröinti](production-control/registration-manufacturing-execution.md)
 #### [Tuotannon palaute](production-control/production-feedback.md)
@@ -111,6 +135,7 @@
 #### [Lean-organisaation mallinnus](production-control/lean-manufacturing-modeling-lean-organization.md)
 #### [Operatiiviset resurssit](production-control/operations-resources.md)
 ### Kanban-töiden ajoitus
+#### [Lean-valmistuksen visuaalinen ajoitus](production-control/visual-scheduling-lean-manufacturing.md)
 #### [Lean-valmistuksen kanban-työn ajoitus](production-control/lean-manufacturing-kanban-job-scheduling.md)
 #### [Töiden ajoitus](production-control/job-scheduling.md)
 ### Kanban-töiden käyttö
@@ -128,6 +153,7 @@
 #### [Työvaiheiden ajoitus](production-control/operations-scheduling.md)
 #### [Työvaiheen ajoitusvaihtoehdot](production-control/operation-scheduling-options.md)
 #### [Töiden ajoitus](production-control/job-scheduling.md)
+#### [Töiden ajoittamisen Gantt-kaavio](production-control/visual-scheduling-production.md)
 ### Tuotantotöiden käyttäminen
 #### [Konsolidoidut erätilaukset](production-control/consolidated-batch-orders.md)
 #### [Materiaalien korvaaminen tuotannossa](production-control/substitute-items-bom-lines.md)
@@ -162,18 +188,26 @@
 ## [Kuljetustenhallinta](transportation/transportation-management-overview.md)
 ## [Kuljetuksen laskenta](transportation/transportation-management-engines.md)
 # Varastonhallinta
-## Perustietojen luominen 
+## Edistyksellinen varastonhallinta
+### [Siirtyminen AX 2012:sta Finance and Operationsiin](warehousing/upgrade-migration-warehouse-management-processes.md)
+## Asennus 
 ### [Työn ohjaaminen työmallien ja sijaintidirektiivien avulla](warehousing/control-warehouse-location-directives.md)
 ### [Varastotyöntekijöiden hallinta](warehousing/manage-warehouse-workers.md)
 ### [Asettelun määritys](warehousing/warehouse-configuration.md)
 ### [Varaston työkäytännöt](warehousing/warehouse-work-policies.md)
 ### [Mittayksikkö ja varastointikäytännöt](warehousing/unit-measure-stocking-policies.md)
-### [Varaston Power BI -sisältö](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
+### [Varaston Power BI -sisältö](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+### [Erän ja rekisterikilven tiedot](warehousing/batch-and-license-plate-confirmation.md)
+### [Työhön liitetyn varaston siirto](warehousing/move-inventory-associated-work.md)
+### [Järjestelmän ryhmittely avoimessa työluettelossa](warehousing/system-group-on-open-work-list.md)
+### [Tuotteen vahvistus klusterikeräilyä varten](warehousing/cluster-picking-item-confirmation.md)
 ## Keräys ja pakkaus
 ### [Pakkausmateriaalit ja maksut](warehousing/pack-materials-packing-material-fees.md)
+### [Kappaleen keräilyvahvistus](warehousing/piece-picking-confirmation.md)
 ## Varastoinventointi
 ### [Varastoesto](inventory/inventory-blocking.md)
 ### [Inventointi](warehousing/cycle-counting.md)
+### [Sijainnin osittainen inventointi](warehousing/partial-location-cycle-counting.md)
 ### [Varastokirjauskansio](inventory/inventory-journals.md)
 ### [Varastosijainti](inventory/inventory-locations.md)
 ### [Varaston tila](inventory/inventory-statuses.md)
@@ -181,6 +215,7 @@
 ## Konttiinpakkaus 
 ## Täydennys
 ### [Täydennys](warehousing/replenishment.md)
+### [Täydennys ja otto-kanbanit](warehousing/material-replenishment-withdrawal-kanban.md)
 ## Mobiililaitteet
 ### [Varastointisovelluksen asentaminen ja määrittäminen ](warehousing/install-configure-warehousing-app.md)
 ### [Kenttien nimien määrittäminen varastointisovelluksessa](warehousing/configure-app-field-names-priorities-warehouse.md)
@@ -188,15 +223,15 @@
 ### [Varaston mobiililaiteportaali (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Varaston mobiililaitteen näyttöasetukset](warehousing/change-warehouse-mobile-device-displays.md)
 
-# [Financials](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/unified-operations/financials/index)
 
-# [Henkilöstöhallinto](/dynamics365/operations/human-resources/index)
+# [Henkilöstöhallinto](/dynamics365/unified-operations/talent/index)
 
-# [Vähittäismyynti](/dynamics365/operations/retail/index)
+# [Vähittäismyynti](/dynamics365/unified-operations/retail/index)
 
-# [Kehittäjä ja järjestelmänvalvoja](/dynamics365/operations/dev-itpro/index)
+# [Kehittäjä ja järjestelmänvalvoja](/dynamics365/unified-operations/dev-itpro/index)
 
 # Muut resurssit
-## [Dynamics 365 for Operations -sanasto](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
-## [Uudet ja muuttuneet ominaisuudet](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Finance and Operations -sanasto](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [Uudet ja muuttuneet ominaisuudet](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
