@@ -3,7 +3,7 @@ title: "Kustannusryhmät"
 description: "Kustannusryhmät muodostavat pohjan valmistetun nimikkeen laskettujen kustannusten kustannusosuuksien, kuten materiaali- ja työkustannusten osuuksien sekä yleiskustannusten osuuden, segmentoinnille ja analysoinnille. Kustannusryhmän segmentoinnilla on valmistusympäristöissä useita synonyymejä, kuten kustannuserittely, kustannusten hajottaminen ja kustannusluokittelu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

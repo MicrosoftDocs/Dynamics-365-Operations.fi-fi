@@ -3,7 +3,7 @@ title: "Laskujen täsmäytys ja konsernin sisäiset ostotilaukset"
 description: "Konsernin sisäisen kauppatapahtuman ostavan yrityksen asetukset on voitu määritettää siten, että käytössä on ostoreskontran laskujen täsmäytys. Tässä tapauksessa sekä konsernin sisäisen välisen kaupan että ostoreskontran laskujen täsmäytyksen kirjausvaatimusten on täytyttävä, ennen kuin konsernin sisäiset ostolaskut voidaan kirjata."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

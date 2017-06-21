@@ -3,7 +3,7 @@ title: Maksa, kun maksettu -toimittajasopimukset
 description: "Tässä artikkelissa esitellään toimittajasopimusten Maksa, kun maksettu -ehdot. Maksa, kun maksettu -ehdon avulla voit pidättää toimittajan maksun osittain tai kokonaan siihen asti, kunnes projektin asiakas maksaa sinulle. Tässä artikkelissa on myös esimerkki todellisesta projektista, jossa käytetään Maksa, kun maksettu -ehtoa."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

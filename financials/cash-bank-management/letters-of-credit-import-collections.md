@@ -3,7 +3,7 @@ title: "Luottokirjeet ja tuontiperittävät"
 description: "Tässä artikkelissa on yleisiä tietoja remburssista ja tuontiperittävistä. Molempia pankkitositteita käytetään usein valtioiden rajojen yli tapahtuvassa tavaroiden ostossa ja myynnissä."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

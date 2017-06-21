@@ -3,7 +3,7 @@ title: "Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen"
 description: "Tässä artikkelissa kerrotaan, miten osittaiset asiakkaan maksut tilitetään, kun alennuskausia on useita."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

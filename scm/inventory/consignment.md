@@ -3,7 +3,7 @@ title: "Tavaralähetys"
 description: "Tässä aiheessa kerrotaan, miten käytetään saapuvan tavaralähetyksen varastoprosesseja."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

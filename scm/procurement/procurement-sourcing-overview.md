@@ -3,7 +3,7 @@ title: Yleiskatsaus hankintaan
 description: "Tässä artikkelissa on yleiskuvaus Hankinta-moduulissa käytettävissä olevista toiminnoista."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

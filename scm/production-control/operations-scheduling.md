@@ -3,7 +3,7 @@ title: "Työvaiheiden ajoitus"
 description: "Tämä aihe sisältää yleisiä tietoja työvaiheiden ajoittamisesta. Työvaiheiden ajoitusta voidaan käyttää, kun tuotantoprosessin kestosta halutaan yleisarvio."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

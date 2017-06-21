@@ -3,7 +3,7 @@ title: "Työajan seurannan rekisteröinti"
 description: "Aikarekisteröinnin työntekijät voivat määrittää erityyppisiä ajan rekisteröintejä, joita ovat esimerkiksi saapuminen, poistuminen, epäsuorien toimintojen rekisteröinti sekä poissaolorekisteröinti. Tässä artikkelissa kuvataan rekisteröintejä, niiden laskemista, hyväksyntää sekä työnkulkua, jolla voidaan lisätä rakenne ja automaattinen hyväksyntä työaikaraporttien hyväksyntäprosessiin."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

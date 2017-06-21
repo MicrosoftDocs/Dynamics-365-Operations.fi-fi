@@ -3,7 +3,7 @@ title: "Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaks
 description: "Tässä artikkelissa käydään läpi skenaario, jossa hyvityslasku selvitetään laskua vastaan."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

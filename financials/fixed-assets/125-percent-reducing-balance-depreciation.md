@@ -3,7 +3,7 @@ title: "Jäännöspoisto 125 prosenttia"
 description: "Tässä artikkelissa on yleiskuvaus 125 prosentin jäännösarvon poistomenetelmästä."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

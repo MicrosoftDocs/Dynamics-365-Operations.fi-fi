@@ -3,7 +3,7 @@ title: Luovu, palauta tai peruuta korot
 description: "Tässä artikkelissa kerrotaan, miten korot ja maksut peruutetaan ja palautetaan sekä käytetään käänteistä veloitusta."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

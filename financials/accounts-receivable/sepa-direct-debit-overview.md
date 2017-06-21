@@ -3,7 +3,7 @@ title: SEPA-suoraveloitusyhteenveto
 description: "Yhtenäinen euromaksualue (SEPA) on Euroopan komission määrittämä, ja se määrää, että kaikki sähköiset maksut ovat kotimaisia, riippumatta henkilön, yrityksen tai organisaation ja pankin maasta tai alueesta. Kansallisten ja kansainvälisten maksujen välillä ei ole eroja. SEPA koostuu 28 Euroopan unionin (EU) jäsenvaltiosta sekä Islannista, Liechtensteinista, Norjasta, Sveitsistä, Monacosta ja San Marinosta. SEPA auttaa muodostamaan yksittäisen markkinan maksutapahtumille Euroopan talousalueella (ETA). SEPA:n odotetaan lopulta vähentävän sitä maksumuotojen määrää, joiden kanssa pankkien, liikeyritysten ja yksityishenkilöiden on toimittava."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

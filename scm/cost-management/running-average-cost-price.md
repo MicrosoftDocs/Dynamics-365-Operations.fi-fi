@@ -3,7 +3,7 @@ title: "Kustannushinnan käyttökeskiarvo"
 description: "Varaston sulkemisprosessi selvittää varasto-ottotapahtumat vastaanottotapahtumiksi nimikkeen nimikemalliryhmässä valitun varastonarvostusmenetelmän perusteella. Ennen kuin varasto suljetaan, järjestelmä laskee kustannushinnan käyttökeskiarvon, jota käytetään yleensä varasto-ottotapahtumien kirjaamisessa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

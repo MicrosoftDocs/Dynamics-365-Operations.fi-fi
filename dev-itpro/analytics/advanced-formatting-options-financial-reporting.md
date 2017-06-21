@@ -3,7 +3,7 @@ title: "Muotoilun lisäasetukset taloushallinnon raporteissa"
 description: "Luodessasi raportin taloushallinnon raportoinnissa, sen muotoiluun on käytettävissä lisätoimintoja, kuten dimensiosuodattimia, rajoituksia sarakkeille ja raportoinnin yksiköille, ei-tulostettavia rivejä IF/THEN/ELSE -lausekkeita laskutoimituksissa."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

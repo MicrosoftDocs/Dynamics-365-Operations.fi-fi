@@ -3,7 +3,7 @@ title: "Käteisalennukset"
 description: "Käteisalennukset määritetään ja jaetaan osto- ja myyntireskontrassa.  Käytettävissä oleva käteisalennus voidaan määrittää myyntilaskulla tai toimittajan laskulla. Se käytetään, jos lasku maksetaan käteisalennuksen päivänä."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

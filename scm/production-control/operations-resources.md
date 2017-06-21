@@ -3,7 +3,7 @@ title: Operations-resurssit
 description: "Operatiiviset resurssit suorittaa projektin tai tuotantoprosessin aktiviteetit. Ne voivat olla erityyppisiä, ja niillä voi olla eri ominaisuuksia."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

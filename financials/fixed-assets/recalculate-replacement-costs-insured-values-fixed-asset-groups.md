@@ -3,7 +3,7 @@ title: "Käyttöomaisuusryhmien jälleenhankintahintojen ja vakuutusarvojen uude
 description: "Tässä artikkelissa on selostettu prosessia, jolla päivitetään käyttöomaisuuden jälleenhankintahinnat ja vakuutusarvot."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

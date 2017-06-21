@@ -3,7 +3,7 @@ title: "Ostoreskontran laskujen täsmäytys"
 description: "Ostoreskontran laskujen täsmäytys on prosessi, jossa täsmäytetään toimittajan laskun, ostotilauksen ja tuotteen vastaanoton tiedot."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

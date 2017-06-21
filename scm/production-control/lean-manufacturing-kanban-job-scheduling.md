@@ -3,7 +3,7 @@ title: "Kanban-työn aikataulutus lean-valmistukselle"
 description: "Tässä artikkelissa on tietoja kanban-työn aikataulutuksen visuaalisesta hallintatavasta ja kanban-töiden erilaisista ajoitustavoista."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Sijoita budjetoinnin vianmääritys"
 description: "Tässä artikkelissa on vastauksia kysymyksiin, joita sinulla saattaa olla, kun määrität toimen budjetointia. Se vastaa usein kysyttyyn kysymykseen, kuinka budjetin kustannustasoja, kompensaatioryhmiä ja kompensaatioruudukoita luodaan."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

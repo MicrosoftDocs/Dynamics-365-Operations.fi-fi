@@ -3,7 +3,7 @@ title: Tuotannon palaute
 description: "Tässä artikkelissa on tietoja tuotannon palautteesta, joka antaa työntekijöille palautetta tuotantotöistä. Artikkelissa on tietoja tavoista, joilla tuotannon palautetta voi päivittää."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

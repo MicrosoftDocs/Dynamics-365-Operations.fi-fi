@@ -3,7 +3,7 @@ title: "Tilaustenkäsittelyn määräajat"
 description: "Tässä artikkelissa on tietoja tilaustenkäsittelyn määräajoista. Tilaustenkäsittelyn määräaika on aika, joka määrittää, käsitelläänkö asiakastilausta siten kuin se olisi vastaanotettu samana päivänä tai seuraavana päivänä."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

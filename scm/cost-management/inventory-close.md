@@ -3,7 +3,7 @@ title: Varaston sulkeminen
 description: "Voit myös valita, että kirjanpitoon päivitetään ottotapahtumien vastaanottotapahtumiin täsmäytysprosessissa tehdyt muutokset."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

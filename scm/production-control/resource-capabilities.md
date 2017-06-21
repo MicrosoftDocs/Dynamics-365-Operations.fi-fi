@@ -3,7 +3,7 @@ title: Resurssin ominaisuudet
 description: "Tässä artikkelissa on tietoja resurssin ominaisuuksista. Toiminto on operatiivisen resurssin kyky suorittaa tietty aktiviteetti. Artikkelissa kerrotaan miten ominaisuuksia ja siihen liittyviä käsitteitä, kuten pätevyystasoa ja prioriteettia, käytetään valittaessa sopivia resursseja tehtävään."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

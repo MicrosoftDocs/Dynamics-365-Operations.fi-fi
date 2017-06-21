@@ -3,7 +3,7 @@ title: Kirjanpitotilin saldot
 description: "Tässä artikkelissa esitellään kirjanpitotilien saldojen kaksi erilaista tarkastelutapaa: Pääkirja-luettelosivu ja talousraportit. Artikkelissa kerrotaan myös, miten dimensioyhdistelmän saldot päivitetään."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

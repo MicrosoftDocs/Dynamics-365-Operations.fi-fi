@@ -3,7 +3,7 @@ title: "Tarjouspyynnöt"
 description: "Tämä artikkeli sisältää yleistietoja tarjouspyynnöistä. Organisaatiot luovat tarjouspyyntöjä silloin, kun niiden on ostettava nimikkeitä tai palveluita, ja halutaan saada kilpailukykyisiä tarjouksia useilta toimittajilta. Tarjouspyynnössä pyydät toimittajilta hinnat ja toimitusaikoja nimikkeiden määrille, jotka määrität. Voit myös pyytää toimittajia määrittämään, liittyykö tarjoukseen satunnaisia kuluja, esimerkiksi lähetyskustannuksia, tai tarjoaako toimittaja alennuksia suurista tilauksista tai toimittajalaskun maksamisesta aikaisin."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

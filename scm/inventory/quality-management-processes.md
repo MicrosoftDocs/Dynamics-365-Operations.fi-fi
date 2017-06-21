@@ -3,7 +3,7 @@ title: Laadunhallintaprosessit
 description: "Tämä artikkeli sisältää tietoja määrityksistä poikkeavien tuotteiden laadunhallintaprosessista. Aiheessa kuvataan laadunhallintatoiminnot, miten määrityksistä poikkeaminen määritetään ja ylläpidetään sekä miten korjauksia käsitellään."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

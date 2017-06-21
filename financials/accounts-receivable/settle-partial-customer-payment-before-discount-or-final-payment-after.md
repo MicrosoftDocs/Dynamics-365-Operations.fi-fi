@@ -3,7 +3,7 @@ title: "Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun lo
 description: "Tässä artikkelissa käsitellään maksujen laskuille tilittämisen vaikutusta asiakkaille. Skenaariossa keskitytään vaikutuksiin alareskontrassa (ei kirjanpidossa)."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

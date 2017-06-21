@@ -3,7 +3,7 @@ title: "Tuotannonhallinnassa ja projektinhallinnan kirjanpidossa käytettävät 
 description: "Joitakin tuotantotyön tyyppejä voidaan käyttää projektin aika-arvioinneissa ja raportoinnissa. Tässä artikkelissa on tietoja kustannusluokista, jotka on määritettävä tämäntyyppiselle tuotantotyölle tuotanto- ja projektitarkoituksiin."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

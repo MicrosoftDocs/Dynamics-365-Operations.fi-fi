@@ -3,7 +3,7 @@ title: "Tuotannon varianssien yleiset lähteet"
 description: "Tässä artikkelissa selitetään tyypillisiä tuotannon varianssin tyyppien lähteitä."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

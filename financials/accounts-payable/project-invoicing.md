@@ -3,7 +3,7 @@ title: Projektiin laskutus
 description: "Tämä artikkeli sisältää aika- ja materiaaliprojektien sekä kiinteähintaisten projektien projektilaskutuksen yleiskatsauksen. Artikkelissa on tietoja myös laskuehdotuksista (alustavista laskuista), laskutuksen hallinnasta, ennakkolaskutuksesta, toimittajan laskutuksesta ja hyvityslaskuista."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)"
 description: "Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n Microsoftin (toukokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

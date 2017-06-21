@@ -3,7 +3,7 @@ title: "Määritä työtiloja ja suodata niitä"
 description: "Tämä artikkeli sisältää työtilojen määrittämisen ja suodattamisen yleiskuvauksen."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

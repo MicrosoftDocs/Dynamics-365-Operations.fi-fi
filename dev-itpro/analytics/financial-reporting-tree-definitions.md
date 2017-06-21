@@ -3,7 +3,7 @@ title: "Talousraporttien raportointipuiden määritykset"
 description: "Tässä artikkelissa on tietoja raporttipuun määrityksistä. Raportointipuun määritys on raporttiosa tai rakenneosa, joka auttaa määrittämään organisaation rakenteen ja organisaation."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

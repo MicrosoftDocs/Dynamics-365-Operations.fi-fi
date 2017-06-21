@@ -3,7 +3,7 @@ title: "ostoehdotuksen työnkulku"
 description: "Työnkulkuprosessi siirtää ostoehdotuksia tarkistusprosessissa eteenpäin alkuperäisestä Luonnos-tilasta lopulliseen Hyväksytty-tilaan. Kun hankintapyyntö lähetetään tarkastettavaksi, työnkulkuprosessi alkaa. Sen jälkeen kun hankintapyyntö on hyväksytty, ostotilaus voidaan kehittää hankintapyyntöriveille ja lähettää toimittajalle, jotta tilaus voidaan toteuttaa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

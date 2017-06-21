@@ -3,7 +3,7 @@ title: Rakennesuunnittelun toiminnot
 description: "Tässä artikkelissa kuvataan, miten tuoterakennesuunnittelijan sivua käytetään tuoterakenteiden puurakenteiden suunnittelussa ja käsittelyssä. Valitsemalla Asetukset voit valita erilaisia konfiguraatioita ja määrittää, mitkä tiedot puurakenteen riveillä näkyvät."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

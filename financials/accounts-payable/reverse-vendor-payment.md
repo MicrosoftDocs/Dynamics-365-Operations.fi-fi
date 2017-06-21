@@ -3,7 +3,7 @@ title: Toimittajamaksun peruuttaminen
 description: "Tässä artikkelissa kuvataan, mitä eroa on maksun palauttamisella, poistamisella, mitätöimisellä ja hylkäämisellä. Lisäksi artikkelissa esitellään kaksi tapaa peruuttaa toimittajan sekki."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Kustannusmuutosten simuloiminen suunniteltujen kustannusten kustannuslas
 description: "Tässä artikkelissa kerrotaan, miten valmistettavan nimikkeen laskettujen kustannusten muuttuvien kustannusten vaikutuksen voi simuloida käyttämällä erillistä suunniteltujen kustannusten kustannuslaskelmaversiota."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

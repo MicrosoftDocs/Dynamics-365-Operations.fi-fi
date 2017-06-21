@@ -3,7 +3,7 @@ title: Konsolidoinnin ja eliminoinnin yhteenveto
 description: "Tässä artikkelissa on yleisiä tietoja konsolidointi- ja eliminointiprosessista. Artikkeli sisältää myös vastauksia usein kysyttyihin kysymyksiin."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
