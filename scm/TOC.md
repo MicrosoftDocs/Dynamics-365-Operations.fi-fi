@@ -1,237 +1,1648 @@
-# [Kustannushintojen hallinta](cost-management/TOC.md)
-# [Inventoinnin- ja varastonhallinta](inventory/TOC.md)
-# Pääsuunnittelu
-## Kysynnän ennusteen luominen
-### [Kysynnän ennusteen yleiskatsaus](master-planning/introduction-demand-forecasting.md)
-### [Kysynnän ennusteen määrittäminen](master-planning/demand-forecasting-setup.md)
-### [Kysynnän ennusteiden historiatietojen tuonti](master-planning/import-historical-data.md)
-### [Tilastollisen perusennusteen luominen](master-planning/generate-statistical-baseline-forecast.md)
-### [Perusennusteen manuaalinen oikaisu](master-planning/manual-adjustments-baseline-forecast.md)
-### [Oikaistun ennusteen valtuuttaminen](master-planning/authorize-adjusted-forecast.md)
-### [Ennusteen tarkkuuden seuranta](master-planning/monitor-forecast-accuracy.md)
-### [Poikkeavien arvojen poistaminen historiallisista tapahtumatiedoista](master-planning/remove-historical-outliers-calculating-demand-forecast.md)
-### [Vähennysavaimet](master-planning/reduction-keys.md)
-## Pääsuunnitelma
-### [Toimenpidesanomat](master-planning/action-messages.md)
-### [Kattavuusasetukset](master-planning/coverage-settings.md)
-### [Viiveet](master-planning/delays.md)
-### [Pääsuunnitelmat](master-planning/master-plans.md)
-### [Pääsuunnitelmat ja multisite-toiminnot](master-planning/master-plan-multisite-functionality.md)
-#### [Toimipaikan kattavuuden suunnittelu, varasto pakollinen](master-planning/master-plan-site-coverage-warehouse-mandatory.md)
-#### [Toimipaikan kattavuuden suunnittelu, varasto ei ole pakollinen](master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
-#### [Toimipaikan ja varaston kattavuuden suunnittelu, varasto pakollinen](master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-#### [Toimipaikan ja varaston kattavuuden suunnittelu, varasto ei ole pakollinen](master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-#### [Tuoterakenneversion määrittäminen](master-planning/master-plan-bom-version-determined.md)
-### [Hajotettu tuoterakenneversio](master-planning/master-plan-explosion-bom-version.md)
-### [Suunniteltujen tilausten ylläpito](master-planning/maintain-planned-orders.md)
-### [Hajotuksen jäljitys](master-planning/trace-explosion.md)
-# Hankinta
-## [Hankinnan yleiskatsaus](procurement/procurement-sourcing-overview.md)
-## [Hankinnan työnkulku](procurement/procurement-sourcing-workflows.md)
-## [Ostokäytännöt](procurement/purchase-policies.md)
-## [Tuotteiden hankintaluettelot](procurement/procurement-catalogs.md)
-## [Ostoehdotukset](procurement/purchase-requisitions-overview.md)
-### [Ostoehdotuksen työnkulku](procurement/purchase-requisitions-workflow.md) 
-## [Tarjouspyynnöt](procurement/request-quotations.md)
-## Ostotilaukset
-### [Ostotilausten yleiskatsaus](procurement/purchase-order-overview.md)
-### [Ostotilausten luominen](procurement/purchase-order-creation.md)
-### [Ostotilausten hyväksyminen ja vahvistaminen](procurement/purchase-order-approval-confirmation.md)
-## Toimittajien hallinta ja yhteistyö
-### [Toimittajayhteistyön määrittäminen ja hallinta](procurement/set-up-maintain-vendor-collaboration.md)
-### [Toimittajayhteistyön käyttäjien hallinta](procurement/manage-vendor-collaboration-users.md)
-### [Toimittajatilien määrittäminen](procurement/set-up-vendor-accounts.md)
-### [Toimittajayhteistyö ulkoisten toimittajien kanssa](procurement/vendor-collaboration-work-external-vendors.md)
-### [Toimittajayhteistyö asiakkaiden kanssa](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
-### [Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla](procurement/use-external-catalogs-for-punchout.md)
-### [Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen](procurement/set-up-external-catalog-for-punchout.md)
-### [Yhteistyö toimittajien kanssa toimittajaportaalissa](procurement/collaborate-vendors-vendor-portal.md)
-### [Toimittajayhteistyön mobiilityötila](procurement/vendor-collaboration-mobile-workspace.md)
-### [Toimittajaportaalin käyttäjien suojaus](procurement/configure-security-vendor-portal-users.md)
-## Hinnat ja alennukset
-### [Ostosopimukset](procurement/purchase-agreements.md)
-## Tuotteiden vastaanotot ja laskutus
-### [Tuotteen vastaanotto ostotilausten perusteella](procurement/product-receipt-against-purchase-orders.md)
-### [Toimittajan laskujen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-### [Toimittajan kirjausprofiilit](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-# Tuotetietojen hallinta
-## [Tuotetietojen yleiskatsaus](pim/product-information.md)
-## Tuoteluokkien ylläpito
-## Tuotetietojen ylläpito
-### Tuotemääritysten ylläpito
-#### [Tuotenumeron nimikkeistö](pim/product-variant-identification-nomenclature.md)
-#### Tuotemallit
-#### [Tuotedimensio](pim/product-dimensions.md)
-#### Tuotemääritteet
-#### Tuotteen kuvat ja liitteet
-#### Tuotetunnukset
-#### [Tuotetietojen käännösten usein kysytyt kysymykset](pim/translations-product-related-information.md)
-### Tuotteiden vapauttaminen yrityksille
-### Tuotteiden haku
-#### [Tuotehaku tilaustenkäsittelyn aikana](pim/search-products-product-variants.md)
-### Tuotteiden valmistelu suunnittelua varten
-#### [Dimensioiden ja tuotevarianttien oletustilausasetukset](production-control/default-order-settings.md)
-#### Ennustemallit ja nimikkeiden kohdistustunnukset
-### Tuotteiden valmistelu tuotantoa varten
-#### Tuoterakenne ja kaava
-##### [Tuoterakenteet ja kaavat](production-control/bill-of-material-bom.md)
-##### [Tuoterakenteen suunnitteluohjelman käyttäminen](production-control/bom-designer-functionality.md)
-##### [Kaavan suunnitteluohjelman käyttäminen](production-control/formula-designer.md)
-#### Reititykset
-#### Lean-valmistus
-### Tuotteiden valmistelu tuotevarastoa ja logistiikkaa varten
-### Tuotekustannusten arviointi
-#### [Tuoterakennelaskelmat](cost-management/bom-calculations.md)
-## Tuotekonfiguraation mallien ylläpito
-### [Tuotekonfiguraatiomallin luominen](pim/build-product-configuration-model.md)
-### [Tuotekonfiguraatiomallin laskennan usein kysytyt kysymykset](pim/calculate-product-configuration-models.md)
-### [Konfiguraatiosääntö](pim/configuration-rules.md)
-### [Dimensioihin perustuva konfiguraatio](pim/dimension-based-product-configuration.md)
-### [Lauseke- ja taulurajoitukset](pim/expression-constraints-table-constraints-product-configuration-models.md)
-### [Tuotekonfiguraation käyttäminen uudelleen](pim/reuse-product-configurations.md)
-### [Konfiguraatiomallin määrittäminen](pim/set-up-maintain-product-configuration-model.md)
-### [Järjestelmän määrittämä ja käyttäjän määrittämä taulurajoitus](pim/system-defined-user-defined-table-constraints.md)
-## Tuotetietotietojen tuonti
-## Tuotetietotietojen vienti
-# Tuotannonhallinta
-## [Tuotantoprosessin yleiskatsaus](production-control/production-process-overview.md)
-## [Monijärjestelmätilan suunnittelu: erillisen hankinnan, prosessihankinnan ja lean-hankinnan yhdistäminen](production-control/mixed-mode-plan.md)
-## [Tuotannon alihankintatyön hallinta](production-control/manage-subcontract-work-production.md)
-## Erillinen tuotanto
-### Tuotannon päätietojen ylläpito
-#### [Tuotantoasetusten vaatimukset](production-control/production-set-up-requirements.md)
-#### [Tuoterakenteet ja kaavat](production-control/bill-of-material-bom.md)
-#### [Tuoterakenteen suunnittelutoiminto](production-control/bom-designer-functionality.md)
-#### [Tuoterakennelaskelmat](cost-management/bom-calculations.md)
-#### [Operatiiviset resurssit](production-control/operations-resources.md)
-#### [Resurssin ominaisuudet](production-control/resource-capabilities.md)
-#### [Reitit ja työvaiheet](production-control/routes-operations.md)
-#### [Tuotantotilausten oletusarvot tuotannonohjauksessa](production-control/production-order-defaults-manufacturing-execution.md)
-#### [Varaston työkäytännöt](warehousing/warehouse-work-policies.md)
-### Tuotannon työvaiheiden ajoitus
-#### [Työvaiheiden ajoitus](production-control/operations-scheduling.md)
-#### [Töiden ajoitus](production-control/job-scheduling.md)
-#### [Työvaiheen ajoitusvaihtoehdot](production-control/operation-scheduling-options.md)
-### Tuotantotöiden käyttäminen
-#### [Tuotantotilausten luominen](production-control/create-production-orders.md)
-#### [Tuotantotilausten vapauttaminen](production-control/release-production-orders.md)
-#### [Tuotantotilauksen tilan palauttaminen](production-control/reverse-production-order-status.md)
-#### [Tuotantotilausten ilmoittaminen valmistuneiksi](production-control/report-production-orders-as-finished.md)
-#### [Tuoterakenteiden ilmoittaminen valmistuneiksi](production-control/report-boms-as-finished.md)
-#### [Cross docking tuotantotilauksista lähtevien laituriin](production-control/cross-docking-opportunities.md)
-#### [Materiaalikulutuksen rekisteröinti mobiililaitteella](production-control/register-material-consumption-hand-held-device.md)
-#### [Materiaalien korvaaminen tuotannossa](production-control/substitute-items-bom-lines.md)
-#### [Tuotannonohjauksen rekisteröinti](production-control/registration-manufacturing-execution.md)
-#### [Tuotannon palaute](production-control/production-feedback.md)
-#### [Työajan seurannan rekisteröinti](production-control/time-attendance-registrations.md)
-### Tuotannon myyntitietojen hallinta
-#### [Ajan kohdistaminen työnipun töihin](production-control/allocate-time-jobs-job-bundle.md)
-#### [Materiaalin kulutuksen laskenta](production-control/consumption.md)
-#### [Tuotannon kirjaus](cost-management/production-posting.md)
-## Lean-valmistus 
-### [Lean-valmistuksen yleiskatsaus](production-control/lean-manufacturing-overview.md)
-### [Tehtäväperustainen alihankinta](production-control/activity-based-subcontracting.md)
-### Tuotannon päätietojen ylläpito
-#### [Lean-organisaation mallinnus](production-control/lean-manufacturing-modeling-lean-organization.md)
-#### [Operatiiviset resurssit](production-control/operations-resources.md)
-### Kanban-töiden ajoitus
-#### [Lean-valmistuksen visuaalinen ajoitus](production-control/visual-scheduling-lean-manufacturing.md)
-#### [Lean-valmistuksen kanban-työn ajoitus](production-control/lean-manufacturing-kanban-job-scheduling.md)
-#### [Töiden ajoitus](production-control/job-scheduling.md)
-### Kanban-töiden käyttö
-#### [Viivakoodinlukijoiden kanban-siirtotaulun tuki](production-control/kanban-transfer-board-support-barcode-scanner.md)
-#### [Tuotannon palaute](production-control/production-feedback.md)
-## Prosessivalmistus
-### Tuotannon päätietojen ylläpito
-#### [Tuoterakenteet ja kaavat](production-control/bill-of-material-bom.md)
-#### [Operatiiviset resurssit](production-control/operations-resources.md)
-#### [Resurssin ominaisuudet](production-control/resource-capabilities.md)
-#### [Erämääritteet](production-control/batch-attributes.md)
-#### [Tuotantotilausten oletusarvot tuotannonohjauksessa](production-control/production-order-defaults-manufacturing-execution.md)
-#### [Tuotantoasetusten vaatimukset](production-control/production-set-up-requirements.md)
-### Tuotannon työvaiheiden ajoitus
-#### [Työvaiheiden ajoitus](production-control/operations-scheduling.md)
-#### [Työvaiheen ajoitusvaihtoehdot](production-control/operation-scheduling-options.md)
-#### [Töiden ajoitus](production-control/job-scheduling.md)
-#### [Töiden ajoittamisen Gantt-kaavio](production-control/visual-scheduling-production.md)
-### Tuotantotöiden käyttäminen
-#### [Konsolidoidut erätilaukset](production-control/consolidated-batch-orders.md)
-#### [Materiaalien korvaaminen tuotannossa](production-control/substitute-items-bom-lines.md)
-#### [Tuotannonohjauksen rekisteröinti](production-control/registration-manufacturing-execution.md)
-#### [Tuotannon palaute](production-control/production-feedback.md)
-#### [Työajan seurannan rekisteröinti](production-control/time-attendance-registrations.md) 
-### Tuotannon myyntitietojen hallinta
-#### [Ajan kohdistaminen työnipun töihin](production-control/allocate-time-jobs-job-bundle.md)
-#### [Materiaalin kulutuksen laskenta](production-control/consumption.md)
-#### [Tuotannon kirjaus](cost-management/production-posting.md)
-# Myynti ja markkinointi
-## [Markkinointi](sales-marketing/overview-sales-marketing.md)
-## Myyntitilaukset
-### [Luvatut tilaukset](sales-marketing/delivery-dates-available-promise-calculations.md)
-### [Toimitusvaihtoehdot](sales-marketing/delivery-alternatives.md)
-### [Tilaustenkäsittelyn määräajat](sales-marketing/order-entry-deadlines.md)
-### [Suoratoimitukset](sales-marketing/direct-deliveries.md)
-### [Toimitusaikataulut](sales-marketing/delivery-schedules.md)
-### [Myyntiprosessin sarjanumerot](sales-marketing/register-serial-numbers-sales-process.md)
-### [Varaus samasta erästä](sales-marketing/reserve-same-batch-sales-order.md)
-## [Myyntisopimukset](sales-marketing/sales-agreements.md)
-## Myyntitarjoukset
-### [Hintasimulointi](sales-marketing/price-simulation.md)
-## Palautukset
-### [Myyntipalautukset](warehousing/sales-returns.md)
-# Kuljetustenhallinta
-## [Uusi kuljetuksen laskenta](transportation/create-new-transportation-management-engine.md)
-## [Rahtikirjan luominen](transportation/create-bill-of-lading.md)
-## [Rahdin kuljetusreittien suunnittelu](transportation/plan-freight-transportation-routes-multiple-stops.md)
-## [Kuormien suunnittelu keskusten konsolidoinnin avulla](transportation/plan-loads-hub-consolidation.md)
-## [Rahdin täsmäytys](transportation/reconcile-freight-transportation-management.md)
-## [Kuljetustenhallinta](transportation/transportation-management-overview.md)
-## [Kuljetuksen laskenta](transportation/transportation-management-engines.md)
-# Varastonhallinta
-## Edistyksellinen varastonhallinta
-### [Siirtyminen AX 2012:sta Finance and Operationsiin](warehousing/upgrade-migration-warehouse-management-processes.md)
-## Asennus 
-### [Työn ohjaaminen työmallien ja sijaintidirektiivien avulla](warehousing/control-warehouse-location-directives.md)
-### [Varastotyöntekijöiden hallinta](warehousing/manage-warehouse-workers.md)
-### [Asettelun määritys](warehousing/warehouse-configuration.md)
-### [Varaston työkäytännöt](warehousing/warehouse-work-policies.md)
-### [Mittayksikkö ja varastointikäytännöt](warehousing/unit-measure-stocking-policies.md)
-### [Varaston Power BI -sisältö](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
-### [Erän ja rekisterikilven tiedot](warehousing/batch-and-license-plate-confirmation.md)
-### [Työhön liitetyn varaston siirto](warehousing/move-inventory-associated-work.md)
-### [Järjestelmän ryhmittely avoimessa työluettelossa](warehousing/system-group-on-open-work-list.md)
-### [Tuotteen vahvistus klusterikeräilyä varten](warehousing/cluster-picking-item-confirmation.md)
-## Keräys ja pakkaus
-### [Pakkausmateriaalit ja maksut](warehousing/pack-materials-packing-material-fees.md)
-### [Kappaleen keräilyvahvistus](warehousing/piece-picking-confirmation.md)
-## Varastoinventointi
-### [Varastoesto](inventory/inventory-blocking.md)
-### [Inventointi](warehousing/cycle-counting.md)
-### [Sijainnin osittainen inventointi](warehousing/partial-location-cycle-counting.md)
-### [Varastokirjauskansio](inventory/inventory-journals.md)
-### [Varastosijainti](inventory/inventory-locations.md)
-### [Varaston tila](inventory/inventory-statuses.md)
-### [Varaston tunnisteiden inventointi](inventory/inventory-tag-counting.md)
-## Konttiinpakkaus 
-## Täydennys
-### [Täydennys](warehousing/replenishment.md)
-### [Täydennys ja otto-kanbanit](warehousing/material-replenishment-withdrawal-kanban.md)
-## Mobiililaitteet
-### [Varastointisovelluksen asentaminen ja määrittäminen ](warehousing/install-configure-warehousing-app.md)
-### [Kenttien nimien määrittäminen varastointisovelluksessa](warehousing/configure-app-field-names-priorities-warehouse.md)
-### [Varastotyön mobiililaitteiden määrittäminen](warehousing/configure-mobile-devices-warehouse.md)
-### [Varaston mobiililaiteportaali (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
-### [Varaston mobiililaitteen näyttöasetukset](warehousing/change-warehouse-mobile-device-displays.md)
+# [Myyntitiedot ja toiminnot yrityksen edition 365 Dynamics](/dynamics365/unified-operations/fin-and-ops/index?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Financials](/dynamics365/unified-operations/financials/index)
+## [Käytön aloittaminen](/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Microsoft Dynamics 365 FastTrack](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Sovelluksen tilaaminen](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Paikallisen Dynamics AX 2012 -version hankkiminen](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Esittely-ympäristön käyttöönotto](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Uudet ja muuttuneet ominaisuudet](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vanhentuneet ominaisuudet](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [AX 2012: n toiminnot eivät ole käytössä](/dynamics365/unified-operations//dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ominaisuudet toteuttamatta paikalliseen käytöt](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Henkilöstöhallinto](/dynamics365/unified-operations/talent/index)
+### Käyttöliittymään tutustuminen
+#### [Toimintohaku](/dynamics365/unified-operations/fin-and-ops/get-started/action-search?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Suodatuksen ja kyselysyntaksin lisäasetukset](/dynamics365/unified-operations/fin-and-ops/get-started/advanced-filtering-query-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Myyntitiedot ja toiminnot yrityksen edition asiakkaan FAQ 365 Dynamics](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Työtilojen määrittäminen ja suodattaminen](/dynamics365/unified-operations/fin-and-ops/get-started/configure-filter-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rinnakkaisten sivujen näyttäminen Avaa uudessa ikkunassa -kuvakkeen avulla](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Siirtymishaku](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttäjäkokemuksen mukauttaminen](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Pikanäppäimet](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sivujen näkymisen hallinta](/dynamics365/unified-operations/fin-and-ops/get-started/window-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lifecycle Servicesin ymmärtäminen](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Vähittäismyynti](/dynamics365/unified-operations/retail/index)
+### Ohjeet ja tuki
+#### [Ohjeen yleiskatsaus](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Yhdistämisen ohje](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kenttäkuvausten näyttäminen ja vienti](/dynamics365/unified-operations/fin-and-ops/get-started/view-export-field-descriptions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tehtäväoppaat ja tehtävien tallennustoiminto
+##### [Tehtävien tallennustoiminto](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Asiakirjojen tai koulutuksen luominen](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Maa- ja aluekohtainen ohjesisältö](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sanasto](/dynamics365/unified-operations/fin-and-ops/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Kehittäjä ja järjestelmänvalvoja](/dynamics365/unified-operations/dev-itpro/index)
+## Yhteensopivuus
+### [Tarkistuskäytäntösäännöt](/dynamics365/unified-operations/financials/general-ledger/audit-policy-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Tarkistuskäytäntörikkomukset ja -tapaukset](/dynamics365/unified-operations/financials/general-ledger/audit-policy-violations-cases?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# Muut resurssit
-## [Finance and Operations -sanasto](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-## [Uudet ja muuttuneet ominaisuudet](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## Kustannushintojen hallinta
+### Power BI Content Pack
+#### [Kustannushallinnan sisältöpaketti](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Ennalta määritetty kustannus
+#### [Kustannuslaskentalomake](/dynamics365/unified-operations/supply-chain/costing-sheets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannuslaskelmaversio](/dynamics365/unified-operations/supply-chain/costing-versions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannuksen muutoksen simulointi käyttämällä suunnitellun kustannuksen kustannuslaskentaversiota](/dynamics365/unified-operations/supply-chain/simulate-cost-changes-costing-version-planned-costs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Varaston kustannuslaskenta
+#### [Käytettävissä olevan varaston kustannusarvon oikaiseminen](/dynamics365/unified-operations/supply-chain/inventory/adjust-hand-inventory-cost-values?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannusobjekti](/dynamics365/unified-operations/supply-chain/inventory/cost-object?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannusmerkintä](/dynamics365/unified-operations/supply-chain/inventory/cost-entries?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannusryhmä](/dynamics365/unified-operations/supply-chain/inventory/cost-groups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [FIFO sekä fyysinen arvo ja merkintä](/dynamics365/unified-operations/supply-chain/inventory/fifo-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sisällytä fyysinen arvo](/dynamics365/unified-operations/supply-chain/inventory/include-physical-value?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Varaston objektin arvo](/dynamics365/unified-operations/supply-chain/inventory/physical-quantity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Varaston sulkeminen](/dynamics365/unified-operations/supply-chain/inventory/inventory-close?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [LIFO-päivämäärä sekä fyysinen arvo ja merkintä](/dynamics365/unified-operations/supply-chain/inventory/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [LIFO sekä fyysinen arvo ja merkintä](/dynamics365/unified-operations/supply-chain/inventory/lifo-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Liukuva keskiarvo](/dynamics365/unified-operations/supply-chain/inventory/moving-average?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fyysinen ja kirjanpidollinen päivitys](/dynamics365/unified-operations/supply-chain/inventory/physical-financial-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Juokseva keskimääräinen kustannushinta](/dynamics365/unified-operations/supply-chain/inventory/running-average-cost-price?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Varastodimensiokohtaisen juoksevan keskimääräisen kustannuksen seuranta](/dynamics365/unified-operations/supply-chain/inventory/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Painotetun keskiarvon päivämäärä](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-date?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Painotettu keskiarvo sekä fyysinen arvo ja merkintä](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Valmistuksen kustannuslaskenta
+#### [Valmistetun nimikkeen vakiokustannusten kuolettaminen](/dynamics365/unified-operations/supply-chain/amortize-constant-costs-manufactured-item?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Jälkikustannuslaskenta](/dynamics365/unified-operations/supply-chain/backflush-costing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuoterakennelaskelmat](/dynamics365/unified-operations/supply-chain/bom-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuoterakenteen laskentaryhmä](/dynamics365/unified-operations/supply-chain/bom-calculation-groups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuotannon varianssien yhteiset lähteet](/dynamics365/unified-operations/supply-chain/common-sources-of-production-variances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuotannon reitityksessä käytetty kustannusluokka](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-routings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuotannonhallinnan ja projektinhallinnan kirjanpidossa käytettävä kustannusluokka](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-control-project-management-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Valmistetun nimikkeen kulujen näyttäminen](/dynamics365/unified-operations/supply-chain/charges-manufactured-item?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuotantotilauksen kustannusanalyysi](/dynamics365/unified-operations/supply-chain/production-order-cost-analysis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuotantotilauksen kustannusarvio](/dynamics365/unified-operations/supply-chain/production-order-cost-estimation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuotannon kirjaus](/dynamics365/unified-operations/supply-chain/production-posting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuotettavan tai hankittavan tuotteen määrittäminen](/dynamics365/unified-operations/supply-chain/manufactured-items-treated-as-purchased-items?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kokonaiskustannusten kohdistustapa](/dynamics365/unified-operations/supply-chain/methodology-total-cost-allocation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Standardikustannus
+#### [Standardikustannusta käyttävät tuoterakennelaskelmat](/dynamics365/unified-operations/supply-chain/information-used-bom-calculations-standard-costs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Standardikustannuspäivityksen hallinta](/dynamics365/unified-operations/supply-chain/manage-standard-cost-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Standardikustannuksen muuntamisen edellytys](/dynamics365/unified-operations/supply-chain/prerequisites-standard-cost-conversion?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Standardikustannuksen muuntamisen yleiskuvaus](/dynamics365/unified-operations/supply-chain/standard-cost-conversion-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Standardikustannuksen päivittäminen valmistusympäristössä](/dynamics365/unified-operations/supply-chain/update-standard-costs-manufacturing-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Uuden valmistetun nimikkeen standardikustannuksen päivittäminen](/dynamics365/unified-operations/supply-chain/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Standardikustannuksen päivittäminen muussa kuin valmistusympäristössä](/dynamics365/unified-operations/supply-chain/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
+## [Taloushallinto](/dynamics365/unified-operations/financials/TOC)
+
+### [Kirjanpito](/dynamics365/unified-operations/financials/general-ledger/general-ledger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tilit
+##### [Jaksotuksien yleiskatsaus](/dynamics365/unified-operations/financials/general-ledger/accruals-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Eliminointisäännot](/dynamics365/unified-operations/financials/general-ledger/elimination-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilien ja dimensioiden yhdistelmille](/dynamics365/unified-operations/financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Yksiköiden välisen kirjanpidon tasapainotetut kirjauskansiot](/dynamics365/unified-operations/financials/general-ledger/example-balanced-journals-interunit-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjausmääritykset](/dynamics365/unified-operations/financials/general-ledger/posting-definitions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kirjausmääritysesimerkkejä ](/dynamics365/unified-operations/financials/general-ledger/example-posting-definitions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjanpitotilin saldot](/dynamics365/unified-operations/financials/general-ledger/general-ledger-account-balances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Päätilin tyypit](/dynamics365/unified-operations/financials/general-ledger/main-account-types?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilikartan suunnittelu](/dynamics365/unified-operations/financials/general-ledger/plan-chart-of-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjanpitolähteen hallinta](/dynamics365/unified-operations/financials/accounts-payable/accounting-source-explorer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjanpidolliset jaot](/dynamics365/unified-operations/financials/accounts-payable/accounting-distributions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kohdistusten käsittely](/dynamics365/unified-operations/financials/general-ledger/process-allocations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Taloushallinnon dimensiot](/dynamics365/unified-operations/financials/general-ledger/financial-dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjanpito- tai raportointivaluutan muuntaminen](/dynamics365/unified-operations/financials/general-ledger/convert-accounting-reporting-currencies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konsolidointitiliryhmät ja tilit](/dynamics365/unified-operations/financials/budgeting/consolidation-account-groups-consolidation-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konsolidoinnin ja eliminoinnin yleiskatsaus](/dynamics365/unified-operations/financials/budgeting/consolidation-elimination-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjanpidon kalenterit ja tilikaudet](/dynamics365/unified-operations/financials/budgeting/fiscal-calendars-fiscal-years-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kirjauskansiot ja kirjanpidot
+##### [Yleisen kirjauskansion käsittely](/dynamics365/unified-operations/financials/general-ledger/general-journal-processing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konsernin sisäisen kirjanpidon määritys](/dynamics365/unified-operations/financials/general-ledger/intercompany-accounting-setup?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjanpidon kohdistussäännöt](/dynamics365/unified-operations/financials/general-ledger/ledger-allocation-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjanpidon kirjauskansiotyypit](/dynamics365/unified-operations/financials/general-ledger/ledger-journal-types?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjauskansion rivien ja asiakirjojen julkaiseminen Excelistä](/dynamics365/unified-operations/financials/general-ledger/open-lines-excel-journals-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjauskansiovientien ja tapahtumien näyttäminen](/dynamics365/unified-operations/financials/general-ledger/view-journal-entries-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Valuutan uudelleenarvostus konsolidointiyrityksessä](/dynamics365/unified-operations/financials/general-ledger/currency-revaluation-consolidation-company?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjanpidon ulkomaanvaluutan uudelleenarvostus](/dynamics365/unified-operations/financials/general-ledger/foreign-currency-revaluation-general-ledger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Valuutanvaihtokurssien tuonti](/dynamics365/unified-operations/financials/general-ledger/import-currency-exchange-rates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kauden lopetus
+##### [Kirjanpidon sulkeminen kauden lopussa](/dynamics365/unified-operations/financials/general-ledger/close-general-ledger-at-period-end?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilikauden sulkemisen työtila](/dynamics365/unified-operations/financials/general-ledger/financial-period-close-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilikauden lopetus](/dynamics365/unified-operations/financials/general-ledger/year-end-close?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Arvonlisävero
+##### [Arvonlisäveron yleiskatsaus](/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Marginaaliverokantaan ja laskentamenetelmiin perustuva arvonlisäveroprosentti](/dynamics365/unified-operations/financials/general-ledger/marginal-base-field?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arvonlisäveromaksut ja pyöristyssäännöt](/dynamics365/unified-operations/financials/general-ledger/round-sales-tax-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arvonlisäveron laskentatavat Alkuperä-kentässä](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arvolisäverokoodien koko summa- ja väli-laskentavaihtoehdot](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Ostoreskontran](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Toimittajan laskujen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ostoreskontran määrittäminen](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kolmisuuntaiset vastaavuuskäytännöt](/dynamics365/unified-operations/financials/accounts-payable/three-way-matching-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ostoreskontran laskujen täsmäytys](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable-invoice-matching?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Toimittajan laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit](/dynamics365/unified-operations/financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Laskujen täsmäytys ja konsernin sisäiset ostotilaukset](/dynamics365/unified-operations/financials/accounts-payable/invoice-matching-intercompany-purchase-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Positive pay -yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/positive-pay-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Positive pay -tiedostojen määrittäminen ja luominen](/dynamics365/unified-operations/financials/accounts-payable/set-up-generate-positive-pay-files?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Toimittajan laskujen ja laskujen hyväksynnän kirjauskansioiden oletusvastatilit](/dynamics365/unified-operations/financials/accounts-payable/default-offset-accounts-vendor-invoice-journals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ristiriitojen selvittäminen laskusummien täsmäytyksen aikana](/dynamics365/unified-operations/financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Toimittajan kirjausprofiilit](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ulkomaanvaluutan uudelleenarvostus osto- ja myyntireskontrassa](/dynamics365/unified-operations/financials/cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mobiililaskujen hyväksynnät](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Toimittajayhteistyön laskutustyötila](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Toimittajan laskuautomaatio](/dynamics365/unified-operations/financials/vendor-invoice-automation?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### Maksut ja tilitykset
+##### [Ostoreskontran keskitetyt maksut](/dynamics365/unified-operations/financials/accounts-payable/centralized-payments-accounts-payable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilityksen konfiguroiminen](/dynamics365/unified-operations/financials/cash-bank-management/configure-settlement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajan maksujen työtila](/dynamics365/unified-operations/financials/vendor-payments-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajamaksujen luominen maksuehdotuksen avulla](/dynamics365/unified-operations/financials/accounts-payable/create-vendor-payments-payment-proposal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käänteinen toimittajamaksu](/dynamics365/unified-operations/financials/accounts-payable/reverse-vendor-payment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajan sekkien sähköinen raportointi](/dynamics365/unified-operations/financials/electronic-reporting-sample-vendor-checks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ennakkomaksulaskut ja ennakkomaksujen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/prepayments-invoices-vs-prepayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Useita alennuskausia sisältävän toimittajan osamaksun tilittäminen](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-multiple-discount-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajan osamaksun tai viimeisen maksun tilittäminen ennen alennusta](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Yksi tosite useille asiakas- tai toimittajatietueille](/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella](/dynamics365/unified-operations/financials/accounts-payable/take-cash-discount-outside-cash-discount-timeframe?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Alennuksen käyttäminen, kun alennuksen summa on suurempi kuin toimittajan maksulle laskettu alennus](/dynamics365/unified-operations/financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajan maksut osasummalle](/dynamics365/unified-operations/financials/accounts-payable/vendor-payments-partial-amount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Myyntireskontra](/dynamics365/unified-operations/financials/accounts-receivable/accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hyvitykset ja perinnät myyntireskontrassa](/dynamics365/unified-operations/financials/accounts-receivable/collections-credit-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Myyntireskontran ja luotonvalvonnan määrittäminen](/dynamics365/unified-operations/financials/accounts-receivable/accounts-receivables-set-up-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Luotonvalvonnan määrittäminen](/dynamics365/unified-operations/financials/accounts-receivable/set-up-collections?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Toistuvien laskujen määrittäminen ja käsittely](/dynamics365/unified-operations/financials/accounts-receivable/set-up-process-recurring-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit](/dynamics365/unified-operations/financials/accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Asiakkaan kirjausprofiilit](/dynamics365/unified-operations/financials/accounts-receivable/customer-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Luottokorttien määritys, varmennus ja tietojen tarkistus](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tekstimuotoisen laskun korjaus](/dynamics365/unified-operations/financials/accounts-receivable/correct-free-text-invoice?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Korkoryhmän korkoprosenttien määrittäminen](/dynamics365/unified-operations/financials/accounts-receivable/set-up-interest-rates-interest-code?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Korkokulujen peruuttaminen, palauttaminen tai käänteinen veloitus](/dynamics365/unified-operations/financials/accounts-receivable/waive-reinstate-reverse-interest-fees?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Myyntilaskun luominen](/dynamics365/unified-operations/financials/accounts-receivable/configure-customer-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vekseleiden määrittäminen](/dynamics365/unified-operations/financials/accounts-receivable/set-up-bills-exchange?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Myyntireskontran sulkeminen](/dynamics365/unified-operations/financials/accounts-receivable/close-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Maksut ja tilitykset
+##### [Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla](/dynamics365/unified-operations/financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Myyntireskontran keskitetyt maksut](/dynamics365/unified-operations/financials/accounts-receivable/centralized-payments-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Asiakkaan osamaksun tai viimeisen maksun tilittäminen ennen alennusta](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+##### [Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-discounts-credit-notes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-multiple-discount-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Asiakkaiden hyvittäminen](/dynamics365/unified-operations/financials/accounts-receivable/reimburse-customers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Asiakasmaksut osasummalle](/dynamics365/unified-operations/financials/accounts-receivable/customer-payments-partial-amount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Maksuliikenteen hallinta](/dynamics365/unified-operations/financials/cash-bank-management/cash-bank-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kassavirtaennusteet](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Maksuliikenteen työtila](/dynamics365/unified-operations/financials/cash-bank-management/bank-management-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käteisalennukset](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tilityksen yleiskatsaus](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Keskitettyjen maksujen tilityksen yleiskatsaus](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Remburssi](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-credit?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Remburssit ja tuontiperintä](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-credit-import-collections?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Takausasiakirja](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-guarantee?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Myöhemmäksi päivätyt sekit](/dynamics365/unified-operations/financials/cash-bank-management/postdated-checks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ennakkomaksulaskujen ja ennakkomaksujen vertailu](/dynamics365/unified-operations/financials/accounts-payable/prepayments-invoices-vs-prepayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Liian suurten maksujen käteisalennusten käsittely](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Keskitettyjen maksujen määrittäminen](/dynamics365/unified-operations/financials/cash-bank-management/set-up-centralized-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Automaattinen tilitys ja priorisointi](/dynamics365/unified-operations/financials/accounts-receivable/automatic-settlement-prioritization?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Pankkitilin täsmäytyksen lisätoiminnot
+##### [Pankkitilin täsmäytyksen lisätoimintojen yleiskatsaus](/dynamics365/unified-operations/financials/cash-bank-management/configure-advanced-bank-reconciliation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Pankkitilin täsmäytyksen viennin lisätoimintojen määrittäminen](/dynamics365/unified-operations/financials/cash-bank-management/set-up-advanced-bank-reconciliation-import-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Pankkitilin täsmäytyksen täsmäytyssääntöjen määrittäminen](/dynamics365/unified-operations/financials/cash-bank-management/set-up-bank-reconciliation-matching-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla](/dynamics365/unified-operations/financials/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [MT940-tuonnin pankkitilin täsmäytyksen lisätoiminnot – yhdistelmätietoyksikön päivitys](/dynamics365/unified-operations/financials/cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Pankkitilin täsmäytyksen lisätoimintojen yleiskatsaus](/dynamics365/unified-operations/financials/cash-bank-management/advanced-bank-reconciliation-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tiliotetiedoston tuonnin vianmääritys](/dynamics365/unified-operations/financials/cash-bank-management/import-bank-statement-file-failed-incorrect-results?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Pankin kirjauskansioin yhdistelmäyksikön päivittäminen](/dynamics365/unified-operations/financials/cash-bank-management/upgrade-bank-journal-composite-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Käyttöomaisuuden](/dynamics365/unified-operations/financials/fixed-assets/fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttöomaisuuden työtila](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Poistokirjojen päivityksen yleiskatsaus](/dynamics365/unified-operations/financials/fixed-assets/depreciation-book-upgrade-considerations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Johdetut kirjat](/dynamics365/unified-operations/financials/fixed-assets/derived-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttöomaisuuserän arvomallin ja poistokirjan yhdistäminen](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-value-model-depreciation-book-merge?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kirjaaminen johdetuilla kirjoilla](/dynamics365/unified-operations/financials/fixed-assets/post-derived-value-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttöomaisuustapahtumien kirjaaminen kirjanpitotasoihin](/dynamics365/unified-operations/financials/fixed-assets/post-fixed-asset-transactions-posting-layers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttöomaisuuserien tapahtuma-asetukset](/dynamics365/unified-operations/financials/fixed-assets/enter-fixed-asset-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttöomaisuusryhmien jälleenhankintahintojen ja vakuutusarvojen uudelleenlaskenta](/dynamics365/unified-operations/financials/fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttöomaisuuserän luovutuskirjaustilit](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-disposal-posting-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttöomaisuuden laajamittainen päivitys](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-mass-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttöomaisuuserien hankinta](/dynamics365/unified-operations/financials/fixed-assets/acquire-assets-procurement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Määritys ja integraatio
+##### [Käyttöomaisuuserien määrittäminen](/dynamics365/unified-operations/financials/fixed-assets/set-up-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöomaisuuden integrointi](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Poistomenetelmät
+##### [125 prosentin jäännöspoisto](/dynamics365/unified-operations/financials/fixed-assets/125-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [150 prosentin jäännöspoisto](/dynamics365/unified-operations/financials/fixed-assets/150-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [175 prosentin jäännöspoisto](/dynamics365/unified-operations/financials/fixed-assets/175-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [200 prosentin jäännöspoisto](/dynamics365/unified-operations/financials/fixed-assets/200-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bonuspoisto](/dynamics365/unified-operations/financials/fixed-assets/bonus-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kulutuspoisto](/dynamics365/unified-operations/financials/fixed-assets/consumption-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Poistojen vaikutukset ja peruutukset](/dynamics365/unified-operations/financials/fixed-assets/depreciation-effects-reversals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Poistomenetelmät ja -käytännöt](/dynamics365/unified-operations/financials/fixed-assets/depreciation-methods-conventions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kerroinpoisto](/dynamics365/unified-operations/financials/fixed-assets/factor-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöomaisuuserän hankintakirjaustilit](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-acquisition-posting-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöomaisuuden poisto](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Manuaalinen poisto](/dynamics365/unified-operations/financials/fixed-assets/manual-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Jäännöspoisto](/dynamics365/unified-operations/financials/fixed-assets/reduce-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Poistojen laskennan pyöristyssumma](/dynamics365/unified-operations/financials/fixed-assets/round-off-amount-depreciation-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Jäljellä olevan käyttöajan tasapoisto](/dynamics365/unified-operations/financials/fixed-assets/straight-line-life-remaining-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöikään perustuva tasapoisto](/dynamics365/unified-operations/financials/fixed-assets/straight-line-service-life-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Budjetointi](/dynamics365/unified-operations/financials/budgeting/budgeting-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budjetin suunnittelun yleiskatsaus ](/dynamics365/unified-operations/financials/budgeting/budget-planning-overview-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budjetin hallinnan yleiskatsaus ](/dynamics365/unified-operations/financials/budgeting/budget-control-overview-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budjetoinnin yleiskatsaus ](/dynamics365/unified-operations/financials/budgeting/basic-budgeting-overview-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Toimien ennustus](/dynamics365/unified-operations/financials/budgeting/position-forecasting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budjettisuunnittelun perusteluasiakirjat](/dynamics365/unified-operations/financials/budgeting/budget-planning-justification-docs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budjetin luonti tapahtumatileistä ja summatileistä](/dynamics365/unified-operations/financials/budgeting/create-budget-transaction-accounts-total-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Excelin budjettisuunnittelumallit](/dynamics365/unified-operations/financials/budgeting/budget-planning-excel-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Toimen budjetoinnin vianmääritys](/dynamics365/unified-operations/financials/budgeting/position-budgeting-set-up-issues?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budjettisuunnittelu](/dynamics365/unified-operations/financials/budgeting/budget-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budjettisuunnittelun tietojen kohdistus](/dynamics365/unified-operations/financials/budgeting/budget-planning-data-allocation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budjettisuunnittelun integrointi toisten moduulien kanssa](/dynamics365/unified-operations/financials/budgeting/budget-planning-integration-other-modules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Raportointi](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Taseraportit](/dynamics365/unified-operations/financials/general-ledger/balance-sheet-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Raportin luominen](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Tuloslaskelman raportti](/dynamics365/unified-operations/financials/general-ledger/income-statement-financial-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Pääkirjan raportit](/dynamics365/unified-operations/financials/general-ledger/trial-balance-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Raporttien näyttäminen](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Raportin suunnittelutoiminto](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### [Kustannuslaskenta](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ehdot](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kokeile kursseja (/ dynamics365 tai yhdistetyn-toimintojen ja myyntitiedot/valkoinen paperin)](/dynamics365/unified-operations/financials/https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
+#### [Kustannustason dimensiot](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannusobjektin dimensiot](/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannustasodimension jäsenten yhdistäminen yhteiseen dimension jäsenten joukkoon](/dynamics365/unified-operations/financials/cost-accounting/map-cost-elements-dimension-members?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tilastodimension jäsenet ja tilastomittauksen lähdemallit](/dynamics365/unified-operations/financials/cost-accounting/statistical-measure-provider-template?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimensiohierarkia](/dynamics365/unified-operations/financials/cost-accounting/dimension-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kohdistusperuste](/dynamics365/unified-operations/financials/cost-accounting/allocation-bases?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Yleiskustannuslaskenta](/dynamics365/unified-operations/financials/cost-accounting/overhead-calculation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannusten koontikäytäntö ja yleiskustannuslaskenta](/dynamics365/unified-operations/financials/cost-accounting/cost-rollup?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannusten huoltokohteen ohjaimen käyttöoikeudet](/dynamics365/unified-operations/financials/cost-accounting/access-rights-cost-object-controller?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannusseurannan työtila](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannusseurannan mobiilityötila](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannuslaskenta-analyysin Power BI -sisältö](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Kustannuslaskenta-analyysin Power BI -sisällön suojauksen määrittäminen](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### [Julkinen sektori](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Julkisen sektorin toimintojen suunnittelu](/dynamics365/unified-operations/financials/public-sector/plan-public-sector-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Julkisen sektorin ostoreskontra](/dynamics365/unified-operations/financials/public-sector/accounts-payable-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin ostotilauskoodit](/dynamics365/unified-operations/financials/public-sector/purchase-order-codes-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin kirjausmääritykset](/dynamics365/unified-operations/financials/public-sector/posting-definitions-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin kertatoimittajien suunnittelu](/dynamics365/unified-operations/financials/public-sector/plan-one-time-vendors-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin kertatoimittajat](/dynamics365/unified-operations/financials/public-sector/one-time-vendors-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Julkisen sektorin myyntireskontra](/dynamics365/unified-operations/financials/public-sector/accounts-receivable-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin laskutusluokat ja laskutuskoodit](/dynamics365/unified-operations/financials/public-sector/billing-classifications-billing-codes-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin tilitysprioriteetti](/dynamics365/unified-operations/financials/public-sector/settlement-priority-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin tekstimuotoiset laskut](/dynamics365/unified-operations/financials/public-sector/free-text-invoices-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin hyvitykset](/dynamics365/unified-operations/financials/public-sector/reimbursements-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Julkisen sektorin budjetointi](/dynamics365/unified-operations/financials/public-sector/budgeting-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin budjettianalyysi](/dynamics365/unified-operations/financials/public-sector/budget-analysis-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin alustavat budjetit ja jako-osuudet](/dynamics365/unified-operations/financials/public-sector/preliminary-budgets-apportionments-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Julkisen sektorin käyttöomaisuuserät](/dynamics365/unified-operations/financials/public-sector/fixed-asset-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Julkisen sektorin kirjanpito](/dynamics365/unified-operations/financials/public-sector/general-ledger-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin kehittyneet kirjanpidon merkinnät](/dynamics365/unified-operations/financials/public-sector/advanced-ledger-entries-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin tilinpäätöksen käsittely](/dynamics365/unified-operations/financials/public-sector/year-end-processing-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkisen sektorin johdetut taloushallinnon hierarkiat](/dynamics365/unified-operations/financials/public-sector/derived-financial-hierarchies-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Julkisen sektorin hankinnat](/dynamics365/unified-operations/financials/public-sector/procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Julkisen sektorin käyttöoikeusroolit](/dynamics365/unified-operations/financials/public-sector/security-roles-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Julkisen sektorin varat](/dynamics365/unified-operations/financials/public-sector/funds-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Talousraportointi](/dynamics365/unified-operations/dev-itpro/analytics/financial-reporting-intro?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Raportin luominen](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Talousraportin komponentit](/dynamics365/unified-operations/dev-itpro/analytics/financial-report-components?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Raportin suunnittelutoiminto](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Käyttäjäasetukset](/dynamics365/unified-operations/dev-itpro/analytics/user-preferences-financial-report-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Laajennettu asetukset](/dynamics365/unified-operations/dev-itpro/analytics/advanced-formatting-options-financial-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Voit järjestää raportin osat](/dynamics365/unified-operations/dev-itpro/analytics/organize-components-report-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Raporttimääritysten](/dynamics365/unified-operations/dev-itpro/analytics/design-financial-report-definitions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Rivimääritykset](/dynamics365/unified-operations/dev-itpro/analytics/row-definitions-financial-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Sarakkeiden määritykset](/dynamics365/unified-operations/dev-itpro/analytics/column-definitions-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Rivin määritelmän solut muokkaaminen](/dynamics365/unified-operations/dev-itpro/analytics/modify-row-definition-cells-financial-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Palauttaa taloudellisia tietoja raportoinnin mart jälkeen tietokannan palauttaminen](/dynamics365/unified-operations/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Lokalisoinnin yleiskatsaus](/dynamics365/unified-operations/financials/localizations//dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/localizations/toc.json)
+### Aasia ja Tyynenmeren alue
+#### Australia
+##### [Pankkitiedostomuodot](/dynamics365/unified-operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Liiketoimintaraportti](/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arvoltaan vähäisen käyttöomaisuuden poisto](/dynamics365/unified-operations/financials/localizations/apac-aus-low-value-pool-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Kiina
+##### [Tuoterakennevertailu](/dynamics365/unified-operations/financials/localizations/apac-chn-bom-comparison?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kiinalaiset tositteet](/dynamics365/unified-operations/financials/localizations/apac-chn-vouchers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Verointegroinnin määritys](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Myyntilaskujen ALV – usein kysytyt kysymykset](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöomaisuuden poistomenetelmät](/dynamics365/unified-operations/financials/localizations/apac-chn-depreciation-methods-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kiinalaisen Golden Tax -tietoyksikön tuonti](/dynamics365/unified-operations/financials/localizations/apac-chn-import-golden-tax-data-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kuukausittainen keskiarvo -kustannusmalli](/dynamics365/unified-operations/financials/localizations/apac-chn-monthly-average-cost-model?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varaston päätilien kirjaus toimipaikoittain](/dynamics365/unified-operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Negatiivisen debetin tai kreditin määrittäminen ](/dynamics365/unified-operations/financials/localizations/apac-chn-negative-debits-credits?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Japani
+##### [Toimittajien kattamat pankkimaksut](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konsolidoidut laskut](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Käyttöomaisuuserät
+###### [Kohdistussäännöt](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Poiston usein kysytyt kysymykset](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Tasan jaettu poistomenetelmä](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Arvonalennuksen kirjanpito](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Arvonalennuksen kirjanpito rahavirtaa tuottavassa yksikössä](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Käyttöomaisuuden käytöstäpoistositoumuksen määrittäminen](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Vähennysvientien määrittäminen](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajalle maksaminen hyväksymällä vekseli](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Progressiivisen ennakonpidätyksen laskenta](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Malesia
+##### [Arvonlisävero (Goods and Services Tax, GST)](/dynamics365/unified-operations/financials/localizations/apac-mys-gst?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Singapore
+##### [GST-05-raportin luominen](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Thaimaa
+##### [Varastokorttiraportit](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toteutumaton ALV](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ennakonpidätys](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Eurooppa
+#### [Ennakonvaraajat](/dynamics365/unified-operations/financials/localizations/emea-advance-holders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Myyntitilausten laskutunnusten muokkaaminen](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [EU-saapumistodistukset](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [EU-myyntiluettelon raportointi](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vaihtokurssioikaisut](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Maksutapojen tiedostomuodot](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Viron ja Liettuan käyttöomaisuuden luovutus](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Laskun ja pakkausluettelon numerointi Latviassa ja Liettuassa](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Laskun kirjoittamisen määräajat](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [OIOUBL-standardit](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Maksuluetteloraportti](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käteiskassa](/dynamics365/unified-operations/financials/localizations/emea-petty-cash?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttöomaisuuserän esihankinnan kirjaus](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Postinumerot](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rekisteröintitunnukset](/dynamics365/unified-operations/financials/localizations/emea-registration-ids?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [SEPA (Single Euro Payments Area) -tilisiirron yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [SEPA ((Single Euro Payments Area) -suoraveloituksen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [ALV-vaihtokurssit](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tapahtumien näyttäminen tilitettäessä](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Itävalta
+##### [Puolen vuoden poisto](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Pakkausmateriaalimaksut](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [ALV-ilmoitus](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Belgia
+##### [CODA-tiliote](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Intervat-veroilmoitus](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [PRODCOM-raporttimääritykset](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Täsmäytysraportit](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Tšekin tasavalta
+##### [Hyvityslaskun käteisalennus](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Poiston pyöristys](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Poistojen keskeytys](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöomaisuuden poisto](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Puolen vuoden poisto](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arvonlisäveroilmoitus ](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [ALV-ilmoitus](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Viro
+##### [ALV-ilmoitus](/dynamics365/unified-operations/financials/localizations/emea-est-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Ranska
+##### Julkinen sektori
+###### [Julkisen sektorin kirjanpito](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Sitoumukset](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Mandats de paiement](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Toimittajan laskujen maksun pidot](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Laskut ja tositteet aikajärjestyksessä](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Verotusetuun perustuva poisto](/dynamics365/unified-operations/financials/localizations/emea-fra-derogatory-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [NAF-koodit ja siret-numerot](/dynamics365/unified-operations/financials/localizations/emea-fra-naf-codes-siret-numbers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Erääntyneiden asiakasmaksujen rangaistukset](/dynamics365/unified-operations/financials/localizations/emea-fra-apply-penalty-customer-payment-past-due?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kokonaissumman palautustekstin tulostaminen myyntilaskuun](/dynamics365/unified-operations/financials/localizations/emea-fra-print-lump-sum-recovery-text?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [RB/SL-poisto](/dynamics365/unified-operations/financials/localizations/emea-fra-rbsl-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Saksa
+##### [Lisähankintojen poisto](/dynamics365/unified-operations/financials/localizations/emea-deu-additional-acquisition-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tarkistustiedosto ](/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjauskansioluettelon raportti](/dynamics365/unified-operations/financials/localizations/emea-deu-journal-list-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Erillisen etiketin tulostaminen myynnistä peräisin oleville hyvityslaskuille](/dynamics365/unified-operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Unkari
+##### [Käyttöomaisuuden poistomenetelmät](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kustannukseltaan vähäinen käyttöomaisuus](/dynamics365/unified-operations/financials/localizations/emea-hun-low-cost-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöomaisuuden siirto varastoon](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-asset-to-inventory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Italia
+##### [ALV-ilmoituksen tiedot](/dynamics365/unified-operations/financials/localizations/emea-ita-vat-statements-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mustan listan raportti](/dynamics365/unified-operations/financials/localizations/emea-ita-black-list-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ennakonpidätyspäivämäärä](/dynamics365/unified-operations/financials/localizations/emea-ita-competence-date?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöomaisuuden poisto](/dynamics365/unified-operations/financials/localizations/emea-ita-depreciation-of-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Pakkausluettelon päivämäärän tarkastus laskuissa](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arvonlisäverokirjat](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Julkishallinnon kirjoittamien laskujen jaettu maksu](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ennakonpidätys](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Latvia
+##### [Käyttöomaisuuden kirjanpito](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöomaisuuden sijaintimuutosten seuranta](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luonnonvarojen verotusraportti](/dynamics365/unified-operations/financials/localizations/emea-lva-tax-natural-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [ALV-ilmoituksen tiedot](/dynamics365/unified-operations/financials/localizations/emea-lva-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Liettua
+##### [Käyttöomaisuuden korjauserittely](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [ALV-ilmoituksen tiedot](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Norja
+##### [Nets-tuontimuoto](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Puola
+##### [Rivialennusten laskenta yksikköhinnasta](/dynamics365/unified-operations/financials/localizations/emea-pol-line-discount-calculation-from-unit-price?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Korjaushuomautukset](/dynamics365/unified-operations/financials/localizations/emea-pol-correction-notes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Myyntilaskun kaksoiskappaleiden numerointi](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöomaisuuden poisto](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-assets-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöomaisuuden luovutustoimintojen laajennus](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Palautettavissa oleva pakkaus](/dynamics365/unified-operations/financials/localizations/emea-pol-returnable-packages?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arvonlisäveroraportit](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-tax-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Normaali kirjaustiedosto (/ dynamics365/yhdistetyn-toimintojen ja myyntitiedot/localizations/SAF)](/dynamics365/unified-operations/financials/localizations/emea-pol-standard-audit-file-saf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Liikevaihdon saldoilmoitus](/dynamics365/unified-operations/financials/localizations/emea-pol-turnover-balances-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Espanja
+##### [Käteisalennusten käyttö laskussa](/dynamics365/unified-operations/financials/localizations/emea-esp-cash-discount-applied-invoice?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vekseliasetukset](/dynamics365/unified-operations/financials/localizations/emea-esp-bill-of-exchange-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Suoritusperusteinen vero](/dynamics365/unified-operations/financials/localizations/emea-esp-conditional-sales-tax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjanpitotietojen laskutili](/dynamics365/unified-operations/financials/localizations/emea-esp-fiscal-data-invoice-account?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käyttöomaisuusryhmän uudelleenarvostus](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Yhteisön sisäinen alv](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kerta-asiakkaat](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Espanjan asettelun mukainen sekkien tulostus](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Velkakirjojen asetukset](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Osto- ja myyntisyklit](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Erikoisviennit ja avaavat taseet](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Ruotsi
+##### [Tuontimaksumuodot](/dynamics365/unified-operations/financials/localizations/emea-swe-payment-formats-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Sveitsi
+##### [Asiakasmaksujen tuonti ESR-maksumääräyksessä](/dynamics365/unified-operations/financials/localizations/emea-che-esr-customer-payments-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Iso-Britannia
+##### [Rakennustuotannon malli](/dynamics365/unified-operations/financials/localizations/emea-gbr-cis-construction-industry-scheme?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Latinalainen Amerikka
+#### Brasilia
+##### [Verokirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [ICMS-veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-icms-tax-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Veroasiakirjojen tuonti](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Yritystapahtumien vienti ja tuonti kirjanpidon konsolidoinnista](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [NF-eXML-tiedostot ja DANFE-tiedostot](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Sähköisten maksusuoritusten käsittely](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Veroasiakirjan tekstin paikkamerkit](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Ostoa täydentävät veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Viitattavat veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Myyntiä täydentävät veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Palvelun sähköinen veroasiakirja](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sähköisen maksun palautuksen aikana luodut kirjauskansiot](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [NF-e-prosessi](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Yritysten parametrit](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [CIAP-käyttöomaisuuden hankkiminen](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [CIAP-käyttöomaisuuden poistaminen](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arvonlisäverot](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Veromääritteet](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Veromaksut](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Meksiko
+##### [Inflaatio-oikaisuilmoituksen raportti](/dynamics365/unified-operations/financials/localizations/latam-mex-adjustment-inflation-declaration-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [DIOT-ilmoitus](/dynamics365/unified-operations/financials/localizations/latam-mex-diot-declaration-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sähköiset laskut](/dynamics365/unified-operations/financials/localizations/latam-mex-CFDI-electronic-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sähköiset kirjanpitoilmoitukset](/dynamics365/unified-operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [ISR-ilmoituksen raportti](/dynamics365/unified-operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Pohjois-Amerikka
+#### [Yhdysvaltojen vuoden lopun 1099-raportointi](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## Henkilöstöhallinto
+
+### Työhönotto
+#### [Työhönottoprosessin hallinta](/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Joukkotyöhönottoprojektit](/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Palkanlaskennan, USA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Palkanlaskennan asetukset
+##### [Työntekijöiden palkanlaskennan määritykset](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-worker-position-payroll-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työsyklien ja työaikojen määrittäminen](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-cycle-work-period-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Edun jaksotussuunnitelmien määrittäminen ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-accrual-plan-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Etujen määrittäminen](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-set-up-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tiheydet ja jaksot
+#### [Maksujakso- ja maksukausitehtävät](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Palkanlaskennan laskentatiheyden tehtävät](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-calculation-frequencies-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Työaikataulu- ja lomatehtävät](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-schedule-leave-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Koodit ja verot
+##### [Ansiokoodin ja ansiokoodin ryhmätehtävät](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-earning-code-group-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Verotietotehtävät](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-tax-information-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Palkanpidätykset, verot ja palkkalisä
+##### [Palkanpidätysten ja verojen määrittäminen](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työntekijöiden rekisteröinti palkanpidätykseen ja verotukseen](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lisäansioiden määrittäminen ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-premium-earning-setup-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Palkanpidätykset, verot ja hallinnolliset maksut – usein kysytyt kysymykset](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Palkanlaskennan käsittelytehtävät
+##### [Ansioiden muodostaminen](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-earnings-generation-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työtekijämaksujen suorittaminen](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-issue-worker-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Palkanlaskennan kirjaaminen ja toimittajan laskujen luominen](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-post-payroll-generate-vendor-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Maksuilmoitukset ja maksujen luominen – usein kysytyt kysymykset](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-statements-payment-generation-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Maksuprosessin viimeistely
+##### [Nykyisten palkanlaskennan maksujen käsittely](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-existing-payroll-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Nykyisten ansioiden käsittely](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-existing-earnings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Maksuilmoitusten käsittely](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-statements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Huolto ja raportointi
+##### [Palkanlaskennan tietojen päivitykset – usein kysytyt kysymykset](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-data-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Palkanlaskennan veroraporttien luominen](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-generate-payroll-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Liiketoimintatiedot](/dynamics365/unified-operations/dev-itpro/analytics/information-access-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Käyttää virtaa BI sisältö](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Tehokkaan BI sisällön-vapautettu](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Edut](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käteinen yleiskuvaus](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+#### [Talousjohtajan yleiskuvaus](/dynamics365/unified-operations/dev-itpro/analytics/CFO-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kompensaation](/dynamics365/unified-operations/dev-itpro/analytics/compensation-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kompensaation ja edut](/dynamics365/unified-operations/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannuslaskennan analyysi](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kustannuslaskennan analyysi suojaus](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kustannushintojen hallinta](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hyvitys ja kokoelmien hallinta](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
+#### [Työntekijän osaamisalueet ja kehitystä](/dynamics365/unified-operations/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Työntekijän kehitystä](/dynamics365/unified-operations/dev-itpro/analytics/employee-development-PBI?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### [Taloudellisen suorituskyvyn](/dynamics365/unified-operations/dev-itpro/analytics/financial-performance-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttöomaisuuden hallinta](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
+#### [Oppiminen](/dynamics365/unified-operations/dev-itpro/analytics/learning-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Organisaation koulutus](/dynamics365/unified-operations/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käytännössä hallinta](/dynamics365/unified-operations/dev-itpro/analytics/practice-manager-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuotannon suorituskykyä.](/dynamics365/unified-operations/dev-itpro/analytics/production-performance-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oston analyysi käyttää](/dynamics365/unified-operations/dev-itpro/analytics/purchase-content-pack-for-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Recruiting](/dynamics365/unified-operations/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vähittäismyynnin kanavan tuloksen](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Myynti- ja kannattavuuden suorituskykyä.](/dynamics365/unified-operations/dev-itpro/analytics/sales-profitability-performance-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Toimittajamaksujen](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
+#### [Varaston suorituskykyä.](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Työvoiman mittareita.](/dynamics365/unified-operations/dev-itpro/analytics/workforce-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Asiakirjan raportointi ja tulostus
+#### [Asiakirjan raportointipalveluiden yleiskatsaus](/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tulostaminen](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ota laitteet tulostin](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Suorittaa asiakirjan reitityksen asiamiehen Windows-palvelu](/dynamics365/unified-operations/dev-itpro/analytics/run-document-routing-agent-as-windows-service?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Pitkäkestoisten raporttien estää aikakatkaisua](/dynamics365/unified-operations/dev-itpro/analytics/prevent-long-running-reports-timing-out?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Luettelo SQL Server Reporting Services-raportit](/dynamics365/unified-operations/dev-itpro/analytics/SSRS-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Luovat raportointi](/dynamics365/unified-operations/dev-itpro/analytics/create-nextgen-reporting-solutions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Raportin suunnittelumallit asentaminen](/dynamics365/unified-operations/dev-itpro/analytics/install-modern-report-design-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Laajenna raportin valikkovaihtoehdot](/dynamics365/unified-operations/dev-itpro/analytics/extend-report-menu-items?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mukautetun rakenteen yrityksen asiakirjat](/dynamics365/unified-operations/dev-itpro/analytics/custom-designs-business-docs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Sähköinen raportointi
+#### [Yhteenveto](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfiguraation elinkaari hallinta](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfiguraation luominen](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Määritä sähköisen raportoinnin yhteydessä](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-er-configure-parameters?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lataa konfiguraatiot](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuo sähköinen raportoinnin konfiguraatiot](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-import-ger-configurations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lisää toiminto](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Reseptin suunnittelu](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-formula-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Upottaa kuvien ja muotojen asiakirjat, jotka on luotu sähköisen raportoinnin avulla](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-embed-images-shapes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Muokkaa sähköisen raportointimuoto tekemällä Microsoft Excel-malli](/dynamics365/unified-operations/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kohteet](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-destinations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sähköisen raportoinnin ja Power BI:n määrittäminen](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sähköisten tiedostojen ja ja päivittää sovellustiedot sähköisen raportoinnin avulla](/dynamics365/unified-operations/dev-itpro/analytics/generate-electronic-documents-update-application-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Analyyttisia työkaluja ja havainnollisuutta
+#### [Analytics yhteenlaskettu mittausten ja mallinnusmuuttujien KPI:](/dynamics365/unified-operations/dev-itpro/analytics/analytics?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mallinnus-ja koosta](/dynamics365/unified-operations/dev-itpro/analytics/model-aggregate-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lisää tilannekohtaisia BI lomakkeet](/dynamics365/unified-operations/dev-itpro/analytics/add-contextual-bi-forms?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Koosta mittaukset-raportti](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-measurements-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tietoja yritysten raportti](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Suorituskyvyn mittari (KPI)-raportti](/dynamics365/unified-operations/dev-itpro/analytics/key-performance-indicators-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Power BI -integrointi](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Virtaa BI upotettu integrointi](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-embedded-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sisällytetyt virtaa BI-työtilan](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lisää, jotka on käynnistynyt BI](/dynamics365/unified-operations/dev-itpro/analytics/add-bi-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Power BI -raporttien kiinnittäminen työtiloihin](/dynamics365/unified-operations/dev-itpro/analytics/pin-power-bi-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tehokkaan BI yksikön Myymälän integrointi](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Power BI -raporttien ja entiteettisäilön hallinta ja jakelu](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+## Inventoinnin- ja varastonhallinta
+### Varastoasettelun luominen
+### Saapuvien käsittely
+#### [Saapumisten yhteenveto](/dynamics365/unified-operations/supply-chain/inventory/arrival-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Lähtevien käsittely
+### Varaston seurannan määrittäminen
+#### [Varastokirjauskansiot](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Varastosijainnit](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Varaston tilat](/dynamics365/unified-operations/supply-chain/inventory/inventory-statuses?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Varastomäärän varaaminen](/dynamics365/unified-operations/supply-chain/inventory/reserve-inventory-quantities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Saman erän varaaminen myyntitilausta varten](/dynamics365/unified-operations/supply-chain/sales-marketing/reserve-same-batch-sales-order?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Tavaralähetysvarasto
+#### [Tavaralähetys](/dynamics365/unified-operations/supply-chain/inventory/consignment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tavaralähetyksen määrittäminen](/dynamics365/unified-operations/supply-chain/inventory/set-up-consignment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Laadunhallinta
+#### [Käytettävissä olevan varaston mobiilityötila](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Laadunhallinnan ottaminen käyttöön](/dynamics365/unified-operations/supply-chain/inventory/enable-quality-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Varastoesto](/dynamics365/unified-operations/supply-chain/inventory/inventory-blocking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Määrityksistä poikkeamisen hallinta](/dynamics365/unified-operations/supply-chain/inventory/enable-nonconformance-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Karanteenitilaus](/dynamics365/unified-operations/supply-chain/inventory/quarantine-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Laadunhallintaprosessi](/dynamics365/unified-operations/supply-chain/inventory/quality-management-processes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Nimikkeen ja erän jäljittäminen
+#### [Varastoerän yhdistäminen](/dynamics365/unified-operations/supply-chain/inventory/merge-inventory-batches?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Nimikkeen ja raaka-aineen jäljittäminen](/dynamics365/unified-operations/supply-chain/inventory/trace-items-raw-materials-inventory-production-sales?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Sarjanumeron rekisteröinti myyntiprosessissa](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process)
+
+## Logistiikka
+### Kuljetustenhallinta
+#### [Uusi kuljetuksen laskenta](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rahtikirjan luominen](/dynamics365/unified-operations/supply-chain/transportation/create-bill-of-lading?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rahdin kuljetusreittien suunnittelu](/dynamics365/unified-operations/supply-chain/transportation/plan-freight-transportation-routes-multiple-stops?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kuormien suunnittelu keskusten konsolidoinnin avulla](/dynamics365/unified-operations/supply-chain/transportation/plan-loads-hub-consolidation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rahdin täsmäytys](/dynamics365/unified-operations/supply-chain/transportation/reconcile-freight-transportation-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kuljetustenhallinta](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kuljetuksen laskenta](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-engines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Varastonhallinta
+#### Perustietojen luominen 
+##### [Työn ohjaaminen työmallien ja sijaintidirektiivien avulla](/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varastotyöntekijöiden hallinta](/dynamics365/unified-operations/supply-chain/warehousing/manage-warehouse-workers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Asettelun määritys](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varaston työkäytännöt](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-work-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mittayksikkö ja varastointikäytännöt](/dynamics365/unified-operations/supply-chain/warehousing/unit-measure-stocking-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varaston Power BI -sisältö](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+##### [Erän ja rekisterikilven tiedot](/dynamics365/unified-operations/supply-chain/warehousing/batch-and-license-plate-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotteen vahvistus klusterikeräilyä varten](/dynamics365/unified-operations/supply-chain/warehousing/cluster-picking-item-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Eri lisenssiä levy vastaanottaminen](/dynamics365/unified-operations/supply-chain/warehousing/mixed-license-plate-receiving?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varaston liittyvät työt varaston siirtotapahtuma](/dynamics365/unified-operations/supply-chain/warehousing/move-inventory-associated-work?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Järjestelmän ryhmittely avoimessa työluettelossa](/dynamics365/unified-operations/supply-chain/warehousing/system-group-on-open-work-list?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Keräys ja pakkaus
+##### [Valitse vanhin erän kannettavan laitteen](/dynamics365/unified-operations/supply-chain/warehousing/pick-oldest-batch?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kappaleen keräilyvahvistus](/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Pakkausmateriaalit ja maksut](/dynamics365/unified-operations/supply-chain/warehousing/pack-materials-packing-material-fees?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Varastoinventointi
+##### [Varastoesto](/dynamics365/unified-operations/supply-chain/inventory/inventory-blocking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Inventointi](/dynamics365/unified-operations/supply-chain/warehousing/cycle-counting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sijainnin osittainen inventointi](/dynamics365/unified-operations/supply-chain/warehousing/partial-location-cycle-counting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varastokirjauskansio](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varastosijainti](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varaston tila](/dynamics365/unified-operations/supply-chain/inventory/inventory-statuses?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varaston tunnisteiden inventointi](/dynamics365/unified-operations/supply-chain/inventory/inventory-tag-counting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Konttiinpakkaus 
+#### Täydennys
+##### [Täydennys](/dynamics365/unified-operations/supply-chain/warehousing/replenishment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Täydennys ja otto-kanbanit](/dynamics365/unified-operations/supply-chain/warehousing/material-replenishment-withdrawal-kanban?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Mobiililaitteet
+##### [Varastointisovelluksen asentaminen ja määrittäminen ](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kenttien nimien määrittäminen varastointisovelluksessa](/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varastotyön mobiililaitteiden määrittäminen](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varaston mobiililaiteportaali (WMDP)](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-mobile-devices-portal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varaston mobiililaitteen näyttöasetukset](/dynamics365/unified-operations/supply-chain/warehousing/change-warehouse-mobile-device-displays?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+## Pääsuunnittelu
+### Kysynnän ennusteen luominen
+#### [Kysynnän ennusteen yleiskatsaus](/dynamics365/unified-operations/supply-chain/master-planning/introduction-demand-forecasting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kysynnän ennusteen määrittäminen](/dynamics365/unified-operations/supply-chain/master-planning/demand-forecasting-setup?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kysynnän ennusteiden historiatietojen tuonti](/dynamics365/unified-operations/supply-chain/master-planning/import-historical-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tilastollisen perusennusteen luominen](/dynamics365/unified-operations/supply-chain/master-planning/generate-statistical-baseline-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Perusennusteen manuaalinen oikaisu](/dynamics365/unified-operations/supply-chain/master-planning/manual-adjustments-baseline-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Oikaistun ennusteen valtuuttaminen](/dynamics365/unified-operations/supply-chain/master-planning/authorize-adjusted-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ennusteen tarkkuuden seuranta](/dynamics365/unified-operations/supply-chain/master-planning/monitor-forecast-accuracy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Poikkeavien arvojen poistaminen historiallisista tapahtumatiedoista](/dynamics365/unified-operations/supply-chain/master-planning/remove-historical-outliers-calculating-demand-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vähennysavaimet](/dynamics365/unified-operations/supply-chain/master-planning/reduction-keys?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Pääsuunnitelma
+#### [Toimenpidesanomat](/dynamics365/unified-operations/supply-chain/master-planning/action-messages?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kattavuusasetukset](/dynamics365/unified-operations/supply-chain/master-planning/coverage-settings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Viiveet](/dynamics365/unified-operations/supply-chain/master-planning/delays?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Pääsuunnitelmat](/dynamics365/unified-operations/supply-chain/master-planning/master-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Pääsuunnitelmat ja multisite-toiminnot](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-multisite-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimipaikan kattavuuden suunnittelu, varasto pakollinen](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimipaikan kattavuuden suunnittelu, varasto ei ole pakollinen](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimipaikan ja varaston kattavuuden suunnittelu, varasto pakollinen](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimipaikan ja varaston kattavuuden suunnittelu, varasto ei ole pakollinen](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuoterakenneversion määrittäminen](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-bom-version-determined?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hajotettu tuoterakenneversio](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-explosion-bom-version?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Suunniteltujen tilausten ylläpito](/dynamics365/unified-operations/supply-chain/master-planning/maintain-planned-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hajotuksen jäljitys](/dynamics365/unified-operations/supply-chain/master-planning/trace-explosion?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Tilaustenhallinta
+### Hankinta
+#### [Hankinnan yleiskatsaus](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hankinnan työnkulku](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-workflows?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ostokäytännöt](/dynamics365/unified-operations/supply-chain/procurement/purchase-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuotteiden hankintaluettelot](/dynamics365/unified-operations/supply-chain/procurement/procurement-catalogs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ostoehdotukset](/dynamics365/unified-operations/supply-chain/procurement/purchase-requisitions-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ostoehdotuksen työnkulku](/dynamics365/unified-operations/supply-chain/procurement/purchase-requisitions-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### [Tarjouspyynnöt](/dynamics365/unified-operations/supply-chain/procurement/request-quotations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Ostotilaukset
+##### [Ostotilausten yleiskatsaus](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ostotilausten luominen](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-creation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ostotilausten hyväksyminen ja vahvistaminen](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-approval-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Hinnat ja alennukset
+##### [Ostosopimukset](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tuotteiden vastaanotot ja laskutus
+##### [Tuotteen vastaanotto ostotilausten perusteella](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajan laskujen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajan kirjausprofiilit](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Toimittajien hallinta ja yhteistyö
+##### [Toimittajayhteistyön määrittäminen ja hallinta](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajayhteistyön käyttäjien hallinta](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajatilien määrittäminen](/dynamics365/unified-operations/supply-chain/procurement/set-up-vendor-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajayhteistyö ulkoisten toimittajien kanssa](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajayhteistyö asiakkaiden kanssa](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen](/dynamics365/unified-operations/supply-chain/procurement/set-up-external-catalog-for-punchout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla](/dynamics365/unified-operations/supply-chain/procurement/use-external-catalogs-for-punchout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Yhteistyö toimittajien kanssa toimittajaportaalissa](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajayhteistyön mobiilityötila](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimittajaportaalin käyttäjien suojaus](/dynamics365/unified-operations/supply-chain/procurement/configure-security-vendor-portal-users?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Myynti ja markkinointi
+#### [Markkinointi](/dynamics365/unified-operations/supply-chain/sales-marketing/overview-sales-marketing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Myyntitilaukset
+##### [Luvatut tilaukset](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimitusvaihtoehdot](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-alternatives?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tilauskäsittelyn määräajat](/dynamics365/unified-operations/supply-chain/sales-marketing/order-entry-deadlines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Suoratoimitukset](/dynamics365/unified-operations/supply-chain/sales-marketing/direct-deliveries?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimitusaikataulut](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-schedules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Myyntiprosessin sarjanumerot](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varaus samasta erästä](/dynamics365/unified-operations/supply-chain/sales-marketing/reserve-same-batch-sales-order?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Myyntitilausten mobiilityötila](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Myyntisopimukset](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-agreements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Myyntitarjoukset
+##### [Hintasimulointi](/dynamics365/unified-operations/supply-chain/sales-marketing/price-simulation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Palautukset
+##### [Myyntipalautukset](/dynamics365/unified-operations/supply-chain/warehousing/sales-returns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [Organisaation hallinta](/dynamics365/unified-operations/fin-and-ops/organization-administration/organization-administration-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Organisaatiot ja organisaatiohierarkiat](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Organisaatiohierarkian asetusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-organizational-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Osoitekirjat](/dynamics365/unified-operations/fin-and-ops/organization-administration/qa-address-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Yleinen osoitekirja](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Yleisten osoitekirjojen asetusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Numerosarjan yleiskatsaus](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Sähköisten allekirjoitusten yleiskatsaus](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Palvelupyynnön hallinnan yleiskatsaus](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tapausten käyttöoikeuksien, prosessien ja luokkien määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-case-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Tietuemallien luominen](/dynamics365/unified-operations/fin-and-ops/organization-administration/record-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Sähköpostiviestin määrittäminen ja lähettäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Päivämäärä- ja aikatiedot sekä aikavyöhykkeet](/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Työnkulkujen suunnittelu
+#### [Työnkulkujärjestelmän yleiskatsaus](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-workflow-system?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arkkitehtuuri](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-system-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toiminnot](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-actions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elementit](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-elements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Työnkulun luominen](/dynamics365/unified-operations/fin-and-ops/organization-administration/create-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hyväksyntäprosessin asetusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-approval-process-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hyväksyntävaiheen asetusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-approval-step-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Automaattisen tehtävän asetusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-automated-task-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ehdollisen päätöksen asetusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-conditional-decision-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rivinimikkeen työnkulun määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-line-item-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Manuaalisen päätöksen asetusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-manual-decision-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Manuaalisen tehtävän asetusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-manual-task-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rinnakkaisen tehtävän asetusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-parallel-activity-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rinnakkaishaaran asetusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-parallel-branch-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Työnkulkuominaisuuksien asetusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-workflow-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfiguroi sanoman käsittelyn erätyö](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-batch-job-critical?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Työnkulkutyyppien raportti](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-types-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Tuotanto
+### [Tuotantoprosessin yleiskatsaus](/dynamics365/unified-operations/supply-chain/production-control/production-process-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Monijärjestelmätilan suunnittelu: erillisen hankinnan, prosessihankinnan ja lean-hankinnan yhdistäminen](/dynamics365/unified-operations/supply-chain/production-control/mixed-mode-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Tuotannon alihankintatyön hallinta](/dynamics365/unified-operations/supply-chain/production-control/manage-subcontract-work-production?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Erillinen tuotanto
+#### Tuotannon päätietojen ylläpito
+##### [Tuotantoasetusten vaatimukset](/dynamics365/unified-operations/supply-chain/production-control/production-set-up-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuoterakenteet ja kaavat](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuoterakenteen suunnittelutoiminto](/dynamics365/unified-operations/supply-chain/production-control/bom-designer-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuoterakennelaskelmat](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työnohjauksen tuotantoparametreista](/dynamics365/unified-operations/supply-chain/production-control/production-parameters-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operatiiviset resurssit](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Resurssin ominaisuudet](/dynamics365/unified-operations/supply-chain/production-control/resource-capabilities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Reitit ja työvaiheet](/dynamics365/unified-operations/supply-chain/production-control/routes-operations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Varaston työkäytännöt](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-work-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tuotannon työvaiheiden ajoitus
+##### [Työvaiheiden ajoitus](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Töiden ajoitus](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Töiden ajoittamisen Gantt-kaavio](/dynamics365/unified-operations/supply-chain/production-control/visual-scheduling-production?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työvaiheen ajoitusvaihtoehdot](/dynamics365/unified-operations/supply-chain/production-control/operation-scheduling-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tuotantotöiden käyttäminen
+##### [Tuotantotilausten luominen](/dynamics365/unified-operations/supply-chain/production-control/create-production-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotantotilausten vapauttaminen](/dynamics365/unified-operations/supply-chain/production-control/release-production-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotantotilauksen tilan palauttaminen](/dynamics365/unified-operations/supply-chain/production-control/reverse-production-order-status?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotantotilausten ilmoittaminen valmistuneiksi](/dynamics365/unified-operations/supply-chain/production-control/report-production-orders-as-finished?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuoterakenteiden ilmoittaminen valmistuneiksi](/dynamics365/unified-operations/supply-chain/production-control/report-boms-as-finished?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Materiaalien korvaaminen tuotannossa](/dynamics365/unified-operations/supply-chain/production-control/substitute-items-bom-lines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotannonohjauksen rekisteröinti](/dynamics365/unified-operations/supply-chain/production-control/registration-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotannon palaute](/dynamics365/unified-operations/supply-chain/production-control/production-feedback?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työajan seurannan rekisteröinti](/dynamics365/unified-operations/supply-chain/production-control/time-attendance-registrations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tuotannon myyntitietojen hallinta
+##### [Ajan kohdistaminen työnipun töihin](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Materiaalin kulutuksen laskenta](/dynamics365/unified-operations/supply-chain/production-control/consumption?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotannon kirjaus](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Raaka-aineiden hallinta
+##### [Cross docking tuotantotilauksista lähtevien laituriin](/dynamics365/unified-operations/supply-chain/production-control/cross-docking-opportunities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Materiaalikulutuksen rekisteröinti mobiililaitteella](/dynamics365/unified-operations/supply-chain/production-control/register-material-consumption-hand-held-device?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Lean-valmistus 
+#### [Lean-valmistuksen yleiskatsaus](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tehtäväperustainen alihankinta](/dynamics365/unified-operations/supply-chain/production-control/activity-based-subcontracting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tuotannon päätietojen ylläpito
+##### [Lean-organisaation mallinnus](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operatiiviset resurssit](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kanban-töiden ajoitus
+##### [Lean-valmistuksen visuaalinen ajoitus](/dynamics365/unified-operations/supply-chain/production-control/visual-scheduling-lean-manufacturing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lean-valmistuksen kanban-työn ajoitus](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-kanban-job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Töiden ajoitus](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kanban-töiden käyttö
+##### [Viivakoodinlukijoiden kanban-siirtotaulun tuki](/dynamics365/unified-operations/supply-chain/production-control/kanban-transfer-board-support-barcode-scanner?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotannon palaute](/dynamics365/unified-operations/supply-chain/production-control/production-feedback?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Prosessivalmistus
+#### Tuotannon päätietojen ylläpito
+##### [Tuoterakenteet ja kaavat](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operatiiviset resurssit](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Resurssin ominaisuudet](/dynamics365/unified-operations/supply-chain/production-control/resource-capabilities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Erämääritteet](/dynamics365/unified-operations/supply-chain/production-control/batch-attributes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työnohjauksen tuotantoparametreista](/dynamics365/unified-operations/supply-chain/production-control/production-parameters-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotantoasetusten vaatimukset](/dynamics365/unified-operations/supply-chain/production-control/production-set-up-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tuotannon työvaiheiden ajoitus
+##### [Työvaiheiden ajoitus](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työvaiheen ajoitusvaihtoehdot](/dynamics365/unified-operations/supply-chain/production-control/operation-scheduling-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Töiden ajoitus](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tuotantotöiden käyttäminen
+##### [Konsolidoidut erätilaukset](/dynamics365/unified-operations/supply-chain/production-control/consolidated-batch-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Materiaalien korvaaminen tuotannossa](/dynamics365/unified-operations/supply-chain/production-control/substitute-items-bom-lines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotannonohjauksen rekisteröinti](/dynamics365/unified-operations/supply-chain/production-control/registration-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotannon palaute](/dynamics365/unified-operations/supply-chain/production-control/production-feedback?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työajan seurannan rekisteröinti](/dynamics365/unified-operations/supply-chain/production-control/time-attendance-registrations?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### Tuotannon myyntitietojen hallinta
+##### [Ajan kohdistaminen työnipun töihin](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Materiaalin kulutuksen laskenta](/dynamics365/unified-operations/supply-chain/production-control/consumption?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuotannon kirjaus](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Tuotetietojen hallinta
+### [Tuotetietojen yleiskatsaus](/dynamics365/unified-operations/supply-chain/pim/product-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Tuoteluokkien ylläpito
+### Tuotetietojen ylläpito
+#### Tuotemääritysten ylläpito
+##### [Tuotenumeron nimikkeistö](/dynamics365/unified-operations/supply-chain/pim/product-variant-identification-nomenclature?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Tuotemallit
+##### [Tuotedimensio](/dynamics365/unified-operations/supply-chain/pim/product-dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Tuotemääritteet
+##### Tuotteen kuvat ja liitteet
+##### Tuotetunnukset
+##### [Tuotetietojen käännösten usein kysytyt kysymykset](/dynamics365/unified-operations/supply-chain/pim/translations-product-related-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tuotteiden vapauttaminen yrityksille
+#### Tuotteiden haku
+##### [Tuotehaku tilaustenkäsittelyn aikana](/dynamics365/unified-operations/supply-chain/pim/search-products-product-variants?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tuotteiden valmistelu suunnittelua varten
+##### [Dimensioiden ja tuotevarianttien oletustilausasetukset](/dynamics365/unified-operations/supply-chain/production-control/default-order-settings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Ennustemallit ja nimikkeiden kohdistustunnukset
+#### Tuotteiden valmistelu tuotantoa varten
+##### Tuoterakenne ja kaava
+###### [Tuoterakenteet ja kaavat](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Tuoterakenteen suunnitteluohjelman käyttäminen](/dynamics365/unified-operations/supply-chain/production-control/bom-designer-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kaavan suunnitteluohjelman käyttäminen](/dynamics365/unified-operations/supply-chain/production-control/formula-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Reititykset
+##### Lean-valmistus
+#### Tuotteiden valmistelu tuotevarastoa ja logistiikkaa varten
+#### Tuotekustannusten arviointi
+##### [Tuoterakennelaskelmat](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Tuotekonfiguraation mallien ylläpito
+#### [Tuotekonfiguraatiomallin luominen](/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuotekonfiguraatiomallin laskennan usein kysytyt kysymykset](/dynamics365/unified-operations/supply-chain/pim/calculate-product-configuration-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfiguraatiosääntö](/dynamics365/unified-operations/supply-chain/pim/configuration-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimensioihin perustuva konfiguraatio](/dynamics365/unified-operations/supply-chain/pim/dimension-based-product-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lauseke- ja taulurajoitukset](/dynamics365/unified-operations/supply-chain/pim/expression-constraints-table-constraints-product-configuration-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tuotekonfiguraation käyttäminen uudelleen](/dynamics365/unified-operations/supply-chain/pim/reuse-product-configurations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfiguraatiomallin määrittäminen](/dynamics365/unified-operations/supply-chain/pim/set-up-maintain-product-configuration-model?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Järjestelmän määrittämä ja käyttäjän määrittämä taulurajoitus](/dynamics365/unified-operations/supply-chain/pim/system-defined-user-defined-table-constraints?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Tuotetietotietojen tuonti
+### Tuotetietotietojen vienti
+
+## [Projektinhallinta ja kirjanpito](/dynamics365/unified-operations/financials/project-management/overview-project-management-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Konsernin sisäinen laskutus](/dynamics365/unified-operations/financials/project-management/intercompany-invoicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projektin kustannuslaskennan jaksotuksen ostojen vastaanotot](/dynamics365/unified-operations/financials/accounts-payable/project-cost-accrual-purchase-receipts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projektiin laskutus](/dynamics365/unified-operations/financials/accounts-payable/project-invoicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projektisopimukset](/dynamics365/unified-operations/financials/project-management/project-contracts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projektiennusteet ja -budjetit](/dynamics365/unified-operations/financials/project-management/project-forecasts-budgets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projektin ostotilaukset](/dynamics365/unified-operations/financials/project-management/project-purchase-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projektitarjoukset](/dynamics365/unified-operations/financials/project-management/project-quotations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projektin resursointi](/dynamics365/unified-operations/financials/project-management/project-resourcing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Työrakenteet](/dynamics365/unified-operations/financials/project-management/work-breakdown-structures?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projektin aikamerkintöjen mobiilityötila](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Kehityksen ja yhdistetyn työvaiheet-ympäristössä käyttämällä hallinta](/dynamics365/unified-operations/dev-itpro/index)
+
+### [Kehityksen ja hallinnan yleiskuvaus](/dynamics365/unified-operations/dev-itpro/get-started/getting-started-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Järjestelmävaatimukset](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Esittely yleiskatsaus](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Ohjejärjestelmä
+##### [Yleistä Ohjeesta](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Yhdistä ohjejärjestelmä](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Uudet ja muuttuneet ominaisuudet](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työvaiheiden ympäristö päivityksen 7 (toukokuun 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työvaiheiden Ympäristöpäivitys 6 (huhtikuun 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työvaiheiden ympäristö päivityksen 5 (maaliskuun 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työvaiheiden ympäristö päivityksen 4 (helmikuun 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työvaiheiden version 1611 (marraskuun 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työvaiheiden ympäristö päivityksen 3 (marraskuun 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dynamics AX: N Ympäristöpäivitys 2 (elokuun 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+##### [Dynamics AX-sovelluksen versio 7.0.1 (toukokuun 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dynamics AX: N Ympäristöpäivitys 1 (voi 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dynamics AX: N 7.0 (helmikuun 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Päivitettyjen tehtävien apuviivat
+###### [Tehtävän apuviivat marraskuun 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Elokuussa 2016 tehtävän apuviivat](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Toukokuuta 2016 tehtävän apuviivat](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Helmikuuta 2016 tehtävän apuviivat](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+### [Kehittää ja mukauttaa Visual Studiossa.](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Application server ja pinon arkkitehtuuri](/dynamics365/unified-operations/dev-itpro/dev-tools/application-stack-server-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hae ennakkoversio](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sovelluksen tilaaminen](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttää Dynamics 365 myyntitiedot ja työvaiheiden yrityksen edition instansseja](/dynamics365/unified-operations/dev-itpro/dev-tools/dev-tools/access-instances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kehityksen järjestelmävaatimukset](/dynamics365/unified-operations/dev-itpro/dev-tools/development-system-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Laivaston hallintasovellus malli
+##### [Fleet Management sample application](/dynamics365/unified-operations/dev-itpro/dev-tools/fleet-management-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Laivaston malli sovelluksen yleiskuvaus](/dynamics365/unified-operations/dev-itpro/dev-tools/introduction-fleet-management-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Visual Studio-työkalut
+##### [Kehityksen yleistä](/dynamics365/unified-operations/dev-itpro/dev-tools/development-tools-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kehityksen Työkalut opas](/dynamics365/unified-operations/dev-itpro/dev-tools/introduction-visual-studio?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sovelluksen hallinta](/dynamics365/unified-operations/dev-itpro/dev-tools/application-explorer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luoda ja korjata virheet projekti](/dynamics365/unified-operations/dev-itpro/dev-tools/build-debug-project?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toimien luominen](/dynamics365/unified-operations/dev-itpro/dev-tools/build-operations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Koodieditorissa](/dynamics365/unified-operations/dev-itpro/dev-tools/code-editor?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luo arvomalli ja tietojen mallielementtejä](/dynamics365/unified-operations/dev-itpro/dev-tools/create-data-model-elements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luo uusi käyttäjä kehityksen tietokoneessa](/dynamics365/unified-operations/dev-itpro/dev-tools/enable-development-machine?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Raportin mukauttaminen](/dynamics365/unified-operations/dev-itpro/dev-tools/customization-analysis-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kehitystyökalut](/dynamics365/unified-operations/dev-itpro/dev-tools/development-tools?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elementin suunnittelijat](/dynamics365/unified-operations/dev-itpro/dev-tools/element-designers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elementin käytön.](/dynamics365/unified-operations/dev-itpro/dev-tools/element-usage?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Viedä ja tuoda malli](/dynamics365/unified-operations/dev-itpro/dev-tools/models-export-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Metatietojen haku Visual Studiossa.](/dynamics365/unified-operations/dev-itpro/dev-tools/metadata-search-visual-studio?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mallit](/dynamics365/unified-operations/dev-itpro/dev-tools/models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Myyntitiedot ja toiminnot yrityksen edition 365 Dynamics projektit](/dynamics365/unified-operations/dev-itpro/dev-tools/projects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työkalut lisäykset Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-tools-add-ins?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mallin mukauttaminen käytöstä ja toimintojen lakkauttaminen](/dynamics365/unified-operations/dev-itpro/dev-tools/lock-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Päivitä Visual Studion Kehitystyökalut](/dynamics365/unified-operations/dev-itpro/dev-tools/update-development-tools?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### X ++ ohjelmointikielellä
+##### [X ++-ja virheenkorjaus](/dynamics365/unified-operations/dev-itpro/dev-tools/new-x-debugger-features?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Debug X ++ tuotannon tietokannassa kopion vastaan.](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-x-issue-against-copy-of-production?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-koodin virheenkorjaus](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-xpp?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luokkien EventHandlerResult pyynnön tai vastauksen tilanteissa](/dynamics365/unified-operations/dev-itpro/dev-tools/event-handler-result-class?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kirjoita C numeron ja X ++ liiketoimintalogiikan lähdekoodi](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ohjelmointi tuki](/dynamics365/unified-operations/dev-itpro/dev-tools/programming-language-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Millä LINQ toimittajaa](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Parhaat käytännöt luominen](/dynamics365/unified-operations/dev-itpro/dev-tools/author-best-practice-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sovelluksen ominaisuuksien hallinta](/dynamics365/unified-operations/dev-itpro/dev-ref/application-explorer-aot-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### X++-kielen opastus
+###### [X++ language reference](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-language-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++ muuttujat ja tietotyypit](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-variables-data-types?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Lausekkeita X ++ silmukoita ja poikkeusten käsittely](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-statements-loops?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-operaattorit](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-operators?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-laskujärjestyssääntöjen](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-operator-precedence?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-luokat ja menetelmät](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-classes-methods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++ kokojen ja manipulointi](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-data-query?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-makrot](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-macros?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-määritteen luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-attribute-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++- ja C ### vertailu](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-kielen syntaksia](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-syntax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Toiminnot kääntämisen aikana
+##### [X ++-kääntämisen aikana toiminnot](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-compile-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Runtime-toiminnot
+##### [X ++-yrityksen Runtime-toiminnot](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-business-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-kontin Runtime-toiminnot](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-container-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-muunnoksen Runtime-toiminnot](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-conversion-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-päivämäärä Runtime-toiminnot](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-date-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-matemaattinen Runtime-toiminnot](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-math-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-heijastus Runtime-toiminnot](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-reflection-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-Runtime-toiminnot](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-istunnon Runtime-toiminnot](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-session-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++ suorituksen aikana merkkijonofunktioita](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-string-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Järjestelmätauluihin
+##### [System tables](/dynamics365/unified-operations/dev-itpro/dev-ref/system-tables?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Järjestelmäluokkien
+##### [API, luokan tai taulun viite](/dynamics365/unified-operations/dev-itpro/dev-ref/api-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luokkien](/dynamics365/unified-operations/dev-itpro/dev-ref/a-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luokkien B](/dynamics365/unified-operations/dev-itpro/dev-ref/b-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [C luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/c-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [D-luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/d-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [E-luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/e-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormBuildAnimateControl FieldBinding](/dynamics365/unified-operations/dev-itpro/dev-ref/fieldbinding-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormBuildFastTabSummarySeparator FormBuildButtonControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildbuttoncontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormBuildRealControl FormBuildFilterPaneControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildfilterpanecontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormButtonSeparatorControl FormBuildReferenceControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildreferencecontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormControlEventArgs FormChangeTracker](/dynamics365/unified-operations/dev-itpro/dev-ref/formchangetracker-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormFastTabHeaderControl FormDataObject](/dynamics365/unified-operations/dev-itpro/dev-ref/formdataobject-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormGridControl FormFastTabSummarySeparator](/dynamics365/unified-operations/dev-itpro/dev-ref/formfasttabsummaryseparator-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormIntControl FormGroupControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formgroupcontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormNotifyEventArgs FormListBoxControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formlistboxcontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormRealControl FormObject](/dynamics365/unified-operations/dev-itpro/dev-ref/formobject-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormStringControl FormReferenceControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formreferencecontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F luokat: Voit FormWindowControl FormTabControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formtabcontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [G luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/g-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [H luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/h-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [I-luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/i-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [J luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/j-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [K luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/k-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luokat L](/dynamics365/unified-operations/dev-itpro/dev-ref/l-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luokkien M](/dynamics365/unified-operations/dev-itpro/dev-ref/m-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [N luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/n-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [O luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/o-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [P-luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/p-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Q luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/q-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tutkimus luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/r-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [S luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/s-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luokkien T](/dynamics365/unified-operations/dev-itpro/dev-ref/t-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [U luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/u-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [V luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/v-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [W luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X-luokat](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Laajennusten ja overlayering mukauttaminen
+##### Laajennettavuus
+##### [Voit mukauttaa mallin elementtejä käyttämällä laajennusten](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Customize with extensions and overlayering](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luokan tunnisteet.](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Laajenna RunBase luokkaa](/dynamics365/unified-operations/dev-itpro/extensibility/extend-runbase-class?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Laajentaa numeroiden sarja](/dynamics365/unified-operations/dev-itpro/extensibility/extend-number-sequence-scope?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Tietokannan synkronointi
+#### Siirtyminen ympäristöissä paketit
+##### Voit luoda ja käyttää esikunnista kokonaisuutena.
+##### [Toimituksen jatkuva](/dynamics365/unified-operations/dev-itpro/continuous-delivery-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+#### Suorituskyvyn kotisivu.
+##### [Suorittaa jäljityksen avulla Jäljityksen jäsennin](/dynamics365/unified-operations/dev-itpro/perf-test/trace-trace-tutorial?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [PerfSDK ja Visual Studion ryhmän palveluita usean käyttäjän testaaminen](/dynamics365/unified-operations/dev-itpro/perf-test/perfsdk-tutorial?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ilmenneet ja analysoida suorituskykyongelmien käyttämällä Jäljityksen jäsennin](/dynamics365/unified-operations/dev-itpro/perf-test/trace-parser?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Suorituskyvyn ajastimen](/dynamics365/unified-operations/dev-itpro/perf-test/performance-timer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Testata Visual Studion tuki
+##### [Testing ja oikeellisuustarkistukset](/dynamics365/unified-operations/dev-itpro/perf-test/testing-validation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Visual Studio-testiprojektien](/dynamics365/unified-operations/dev-itpro/perf-test/testing-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Jatkuvan muodostamisen ja testin automaation käyttöönotto](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Päivämäärät
+##### [Effectivity päivämäärä](/dynamics365/unified-operations/dev-itpro/dev-tools/date-effectivity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Käyttöoikeudet
+##### [Lisensointi Ohjelmistotoimittaja](/dynamics365/unified-operations/dev-itpro/dev-tools/isv-licensing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Käyttäjän liittymän kehitys](/dynamics365/unified-operations/dev-itpro/user-interface/user-interface-development-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Esittelyt
+##### [Vuokra kulutyyppi muodostaminen](/dynamics365/unified-operations/dev-itpro/user-interface/build-rental-charge-type-form?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Asiakkaan muodostaminen](/dynamics365/unified-operations/dev-itpro/user-interface/build-customer-form?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Siirtymisruudun luominen](/dynamics365/unified-operations/dev-itpro/user-interface/build-navigation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työtilan luominen](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Lomakkeet
+##### [Myyntitiedot ja toiminnot yrityksen edition Dynamics 365 siirtyminen](/dynamics365/unified-operations/dev-itpro/user-interface/page-navigation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Myyntitiedot ja toiminnot yrityksen edition 365 Dynamics asettelu](/dynamics365/unified-operations/dev-itpro/user-interface/page-layout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Merkki fontti.](/dynamics365/unified-operations/dev-itpro/user-interface/symbol-font?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Testin lomakkeiden mukautetun selvittämiseen.](/dynamics365/unified-operations/dev-itpro/user-interface/testing-forms-custom-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Perusteellinen linkkejä ja](/dynamics365/unified-operations/dev-itpro/user-interface/create-deep-links?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ohjaa lomakkeiden, tuotteista ja helppokäyttötoiminnot](/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Voit mukauttaa Ohje-kentässä](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Ohjausobjektit
+##### [Toiminnon ohjausobjektit.](/dynamics365/unified-operations/dev-itpro/user-interface/action-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Anna komponentit ja painikeruudukon sarakkeiden kokoa](/dynamics365/unified-operations/dev-itpro/user-interface/sizing-input-controls-grid-columns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ohjaa puun valintaruutu tuki](/dynamics365/unified-operations/dev-itpro/user-interface/check-box-tree-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Suodattimet](/dynamics365/unified-operations/dev-itpro/user-interface/filtering?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Isännän PowerApps hallinta](/dynamics365/unified-operations/dev-itpro/user-interface/powerapps-host-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Ikkunoiden hallinta
+##### [Siirrä yhteydessä valikon koodi](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-context-menus?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kaksoisnapsauta hiiren siirtäminen](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-double-click?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hakuja tilannekohtaisia syöttämisen](/dynamics365/unified-operations/dev-itpro/user-interface/contextual-data-entry-lookups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [HierarchyViewer hallinta](/dynamics365/unified-operations/dev-itpro/user-interface/hierarchy-viewer-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ohjaa haku](/dynamics365/unified-operations/dev-itpro/user-interface/lookups-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ohjaa tiedoston lataamista](/dynamics365/unified-operations/dev-itpro/user-interface/file-upload-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Järjestelmän määrittämä painikkeet.](/dynamics365/unified-operations/dev-itpro/user-interface/system-defined-buttons?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kuvat](/dynamics365/unified-operations/dev-itpro/user-interface/images-form-grid?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tiedot ja ruudukon taulun komponenttien fontin ja taustan värit](/dynamics365/unified-operations/dev-itpro/user-interface/specify-color-font-background-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [RIGHT-to-left tukea ja kaksisuuntaista kieliteksti](/dynamics365/unified-operations/dev-itpro/user-interface/bidirectional-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luo työtilan ruudut-kuvake](/dynamics365/unified-operations/dev-itpro/user-interface/create-icons-workspace-tiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ohjaa Extensible - julkinen JavaScript API: T](/dynamics365/unified-operations/dev-itpro/user-interface/public-javascript-apis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tarkistusluettelon hallinta](/dynamics365/unified-operations/dev-itpro/user-interface/control-checklist?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Sanomat
+##### [Liukusäädintä ja MessageBox](/dynamics365/unified-operations/dev-itpro/user-interface/slider-messagebox?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sanoman kuormituspaikan ja tietoja API sanomapalkki](/dynamics365/unified-operations/dev-itpro/user-interface/messaging-api-center-bar-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sanoman kuormituspaikan ja tietoja FAQ sanomapalkki](/dynamics365/unified-operations/dev-itpro/user-interface/messaging-user?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Ensisijainen lomake mallin ohjeita
+##### [Valitse lomakkeen rakenteessa](/dynamics365/unified-operations/dev-itpro/user-interface/select-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lomakkeen tyylejä ja selvittämiseen](/dynamics365/unified-operations/dev-itpro/user-interface/form-styles-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Lomakkeen selvittämiseen.
+##### [Lomakkeen yleisiä ohjeita.](/dynamics365/unified-operations/dev-itpro/user-interface/general-form-guidelines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja pääajoituksen lomakkeen malli](/dynamics365/unified-operations/dev-itpro/user-interface/details-master-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja tapahtuman lomakkeen malli](/dynamics365/unified-operations/dev-itpro/user-interface/details-transaction-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lomakkeen osa osan luettelosta lomakkeen malli](/dynamics365/unified-operations/dev-itpro/user-interface/section-list-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mallin sivun lomakkeen luettelosta.](/dynamics365/unified-operations/dev-itpro/user-interface/list-page-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja lomakkeen mallin yksinkertainen](/dynamics365/unified-operations/dev-itpro/user-interface/simple-details-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lomakkeen mallin yksinkertainen luettelo ja tiedot](/dynamics365/unified-operations/dev-itpro/user-interface/simple-list-details-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Yksinkertaisen luettelon lomakkeen malli](/dynamics365/unified-operations/dev-itpro/user-interface/simple-list-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sisällysluettelo sisältö lomakkeen malli](/dynamics365/unified-operations/dev-itpro/user-interface/table-of-contents-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tehtävän kahden lomakkeen malli](/dynamics365/unified-operations/dev-itpro/user-interface/task-double-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tehtävän samaan lomakkeeseen malli](/dynamics365/unified-operations/dev-itpro/user-interface/task-single-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ohjatun toiminnon lomake malli](/dynamics365/unified-operations/dev-itpro/user-interface/wizard-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työtilan lomakkeen malli](/dynamics365/unified-operations/dev-itpro/user-interface/workspace-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Toissijainen lomakkeen selvittämiseen.
+##### [Lomakkeen mallin valinnan Lisäasetukset](/dynamics365/unified-operations/dev-itpro/user-interface/advanced-selection-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lomakkeen mallin valintaikkuna](/dynamics365/unified-operations/dev-itpro/user-interface/dialog-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Poistaa mallin valintaikkunan lomake](/dynamics365/unified-operations/dev-itpro/user-interface/drop-dialog-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lomakkeen haku-malli](/dynamics365/unified-operations/dev-itpro/user-interface/lookup-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoruutu lomakkeen malli](/dynamics365/unified-operations/dev-itpro/user-interface/factbox-form-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Alituoterakenteen selvittämiseen.
+##### [Mukautettu suodatin ryhmä subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/custom-filter-group-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dimension tapahtuman komponentin subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-entry-control-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lausekkeen Builderin subpattern dimensio](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kentät ja kenttäryhmät subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/fields-field-groups-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Suodattimet ja työkalurivin subpatterns](/dynamics365/unified-operations/dev-itpro/user-interface/filters-toolbar-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Anna teksti subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/fill-text-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vaaka kentät ja painikkeet ryhmän subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/horizontal-fields-buttons-group-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kuva esikatselu subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/image-preview-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ruudussa subpattern luettelosta.](/dynamics365/unified-operations/dev-itpro/user-interface/list-panel-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sisäkkäisten subpattern yksinkertainen luettelo ja tiedot](/dynamics365/unified-operations/dev-itpro/user-interface/nested-simple-list-details-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Osa kaavion lomakkeen malli](/dynamics365/unified-operations/dev-itpro/user-interface/section-chart-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Osa virtaa BI subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-powerbi-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Osan linkeissä subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-related-links-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Osa päällekkäin kaavion subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-stacked-chart-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Osa välilehtien luettelon subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-tabbed-list-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Osa ruudut subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/section-tiles-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Taulukon kenttiä subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/tabular-fields-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työkalurivin ja subpattern kentät](/dynamics365/unified-operations/dev-itpro/user-interface/toolbar-fields-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työkalurivin ja luettelon subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/toolbar-list-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Työtilan sivun suodatin ryhmän subpattern](/dynamics365/unified-operations/dev-itpro/user-interface/workspace-filter-group-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Laajennettavuus hallinta
+##### [Muodosta extensible hallinta](/dynamics365/unified-operations/dev-itpro/user-interface/build-extensible-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ohjaa extensible pikanäppäimet](/dynamics365/unified-operations/dev-itpro/user-interface/keyboard-shortcuts-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Extensible ohjausobjektien API-Ohje](/dynamics365/unified-operations/dev-itpro/user-interface/extensible-control-programming-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Control extensibility](/dynamics365/unified-operations/dev-itpro/user-interface/control-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luo lokalisoitavan etiketit](/dynamics365/unified-operations/dev-itpro/user-interface/create-localizable-labels-client?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ohjeet Extensible komponentin asettelu](/dynamics365/unified-operations/dev-itpro/user-interface/extensible-controls-layout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Määrittää tekstin, joka tehtävän tallennus Luo tarkistus](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-control-text?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Työtilan luominen
+##### [Operatiiviset työtiloja luominen](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ruudun sekä luettelon välimuistiin työtiloja varten](/dynamics365/unified-operations/dev-itpro/user-interface/tile-list-caching-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tehtävän tallennustoiminto
+##### [Tehtävän tallennus Dynamics 365 myyntitiedot ja toiminnot yrityksen edition](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tehtävän tallennus nopeasti viite](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Elinkaari palveluita ratkaisut vapauttaminen
+#### [Kehitä ja vapauttaminen](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source)
+#### [Vaihe ja julkaiseminen](/dynamics365/unified-operations/dev-itpro/lcs-solutions/marketing-content-lcs-solutions)
+#### [Lisää menetelmät](/dynamics365/unified-operations/dev-itpro/lcs-solutions/methodologies-lcs-solutions)
+#### [Yrityksen prosessin Mallintaja kirjastot määrittäminen](/dynamics365/unified-operations/dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions)
+#### [Siirrä koodi](/dynamics365/unified-operations/dev-itpro/lcs-solutions/code-migration-lcs-solutions)
+#### [Sovellus tarkistaa.](/dynamics365/unified-operations/dev-itpro/lcs-solutions/app-validation-lcs-solutions)
+#### [Käsittele ja kuluttaa pakkausten tiedot](/dynamics365/unified-operations/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions)
+#### [Varmuuskopioi tietokanta ratkaisu](/dynamics365/unified-operations/dev-itpro/lcs-solutions/database-backup-lcs-solutions)
+
+#### [Lokalisoinnit](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region)
+##### [Lokalisointiominaisuuksien luokittelu](/dynamics365/unified-operations/dev-itpro/lcs-solutions/classify-localization-features)
+##### [Maan/alueen yhteydessä.](/dynamics365/unified-operations/dev-itpro/lcs-solutions/apply-country-context)
+##### [Säännösvarmenteet](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-certifications)
+##### [Säännösten päivitykset.](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-watch-communication)
+##### [Erilliset lokalisointimallit](/dynamics365/unified-operations/dev-itpro/lcs-solutions/separate-localization-models)
+##### [Säännösten hälytyksen lähettäminen.](/dynamics365/unified-operations/dev-itpro/lcs-solutions/submit-localization-alerts)
+
+
+### [Tietoyksiköt](/dynamics365/unified-operations/dev-itpro/data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tietoja yritysten oletusarvo
+##### [Yritysten raportti](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: veroista ja Ostoreskontra](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: Myyntireskontra](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: pankin](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-bank?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: alkusaldot](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-beginning-balances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: budjetin suunnittelu](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budget-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: budjetointi](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budgeting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: Kustannuslaskenta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-costing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: kuluraportin hallinta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-expense-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: Käyttöomaisuus](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: Kirjanpito](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-general-ledger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: Yleinen osoitekirja](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-global-address-book?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: henkilöstöhallinnon](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-human-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: Varastonhallinta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-inventory-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: pääsuunnittelusta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-master-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: hankinta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-procurement-sourcing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: tuotetietojen hallinta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-product-information-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: laadunvalvonta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-production-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: Projektikirjanpito](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-project-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: Julkinen sektori](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: vähittäismyynnin](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-retail?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: myynnin ja markkinoinnin suorittaminen](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: myynnin ja markkinoinnin ennen myynti](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing-pre-sales?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: järjestelmän hallinta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-system-administration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietoja yritysten: työnkulku](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Yritysten siirtäminen
+##### [Tietoja projektien määritys](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Mallit tietojen määrittäminen](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopioi konfigurointi tiedot yritysten välillä](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tuodaan käyttämällä kirjauskansion tositteet parhaat käytännöt](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Tietoja yritysten luominen
+##### [Tietoja yritysten ja pakettien framework.](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Luominen ja kuluttaminen](/dynamics365/unified-operations/dev-itpro/data-entities/build-consuming-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käytöspiirteen ominaisuudet](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Laske sarakkeiden ja virtuaaliyrityksen kenttien](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Yrityksen toiminnan](/dynamics365/unified-operations/dev-itpro/data-entities/cross-company-behavior?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Maa-/ aluekoodit ja -määritysavaimet](/dynamics365/unified-operations/dev-itpro/data-entities/countryregion-codes-configuration-keys?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mallien periytyminen](/dynamics365/unified-operations/dev-itpro/data-entities/support-super-type-sub-type?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ohjattu säännöt](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-wizard-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Metatietojen ominaisuudet](/dynamics365/unified-operations/dev-itpro/data-entities/metadata-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vahvistusten, oletusarvot ja kentät, joita ei ole yhdistetty](/dynamics365/unified-operations/dev-itpro/data-entities/validations-defaults-unmapped-fields?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [Käyttämällä yritysten tiedot ja tietojen hallinta](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietojen siirtäminen yksikkö kehittäminen](/dynamics365/unified-operations/dev-itpro/data-entities/develop-entity-for-data-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kehitä yritysten yhdistelmän tietoja.](/dynamics365/unified-operations/dev-itpro/data-entities/develop-composite-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [OData](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Toistuva integraatiot](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [Suojaus- ja yksiköt](/dynamics365/unified-operations/dev-itpro/data-entities/security-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Huollon todennus vianmääritys](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Päätepisteiden](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Mobiilisovellukset
+#### [Kotisivun mobiilisovelluksen](/dynamics365/unified-operations/dev-itpro/mobile-apps/Mobile-app-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kannettavan työtiloja viimeksi vapautetaan.](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Julkaise mobiilityötila](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kannettavan ympäristössä](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [X ++ sovellusohjelmaliittymien nuolet työtilan](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspace-xpp-apis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Office-integraatio
+#### [Office-integraatio](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Office-integroinnin opas](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käytä Excel-lisäosa](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avaa Luo Excel-ominaisuuksia](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lisää avoimia rivejä Excel-valikon mallit](/dynamics365/unified-operations/dev-itpro/user-interface/add-templates-open-lines-excel-menu?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avaa Microsoft Office valikon mukauttaminen](/dynamics365/unified-operations/dev-itpro/office-integration/customize-open-office-menu?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sähköpostiviestin määrittäminen ja lähettäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vianmääritys](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Myyntitiedot kehitys
+#### [Dimensiot](/dynamics365/unified-operations/dev-itpro/financial/dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lisää dimensioita Excel-malli](/dynamics365/unified-operations/dev-itpro/financial/dimensions-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimension tapahtuman komponenttien valintaikkunan tuki](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-dialog-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimension tapahtuman komponentin siirtäminen](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimension tapahtuman komponentin kertymä](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-uptake?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lausekkeen Builderin subpattern dimensio](/dynamics365/unified-operations/dev-itpro/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Taloushallinnon dimension integroinnin sovellusten määritys](/dynamics365/unified-operations/dev-itpro/financial/financial-dimension-configuration-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Aktivoi taloushallinnon dimensiot](/dynamics365/unified-operations/dev-itpro/financial/activate-financial-dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Taloushallinnan dimensiot ja ensisijainen tilit right-to-left kielellä](/dynamics365/unified-operations/dev-itpro/financial/financial-dimensions-main-accounts-right-left-language?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Luo kulutettavia taloushallinnon dimension on oltava varmuuskopioiminen taulukko](/dynamics365/unified-operations/dev-itpro/financial/dimensionable-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Siirron segmentoidun tapahtuman hallinta](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-conversion?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Segmentoidun tapahtuma komponenttien valintaikkunan tuki](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-dialog-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Metatietojen segmentoidun tapahtuman hallinta](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-metadata-specification?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Segmentoidun tapahtuma komponentin siirron Ohje](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-migration-guidance?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Segmentoidun tapahtuma parm menetelmät](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-parm-method-specification?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Voit hakea Microsoft Excel-mallien taloushallinnon dimensioiden arvoja lisääminen](/dynamics365/unified-operations/dev-itpro/financial/add-dimensions-excel-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Luo toimittajien vaihtokurssi](/dynamics365/unified-operations/dev-itpro/financial/create-exchange-rate-providers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Anna toimitusketjun kehitys
+#### [Gantt-kehityksen opas](/dynamics365/unified-operations/dev-itpro/user-interface/gantt-development-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Uuden kuljetuksenhallintamoduulin luominen](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Retail-kehityksen kirjastossa](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Käyttöönotto
+#### [Ota käyttöön Microsoft Dynamics-365 myyntitiedot ja toiminnot yrityksen edition esittely ympäristössä](/dynamics365/unified-operations/dev-itpro/deploy-demo-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Onboarding Azure resurssin hallinta](/dynamics365/unified-operations/dev-itpro/arm-onboarding?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Azure ExpressRoute 365 Dynamics myyntitiedot ja toiminnot yrityksen edition](/dynamics365/unified-operations/dev-itpro/expressroute?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Tullikoodi ottaminen käyttöön
+##### [Käyttöön otettavan paketin luominen](/dynamics365/unified-operations/dev-itpro/create-apply-deployable-package?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Käytä esikunnista pakettia](/dynamics365/unified-operations/dev-itpro/apply-deployable-package-system?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Pakkauksen esikunnista asentaminen](/dynamics365/unified-operations/dev-itpro/install-deployable-package?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [Dynamics AX 2012: n ja pilvipalveluun palveluntarjoaja lataaminen](/dynamics365/unified-operations/dev-itpro/csp-download-customersource?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Päivitys ja siirto](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Myyntitiedot ja toimintojen 365 Dynamics AX 2012: n päivittäminen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [-Analysoi päivityksen analysoiminen-työkalun avulla päivityksen suunnitteleminen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Koodin päivityksen palvelu avulla voit päivittää koodia arvioida – analysoiminen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Analysoi - ympäristössä, jossa se on eristetty ottaminen käyttöön](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Päivitys - kehitysympäristössä tietojen päivityksen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Päivitys - AX 2012: n tietojen päivityksen tehtävät](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Päivitys - tietojen päivityksen eristetty ympäristössä](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [-Vahvista siirtymispäivämäärää testaaminen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sovellus tarkistaa vahvistusprosessin.](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [-Vahvista toiminta testaaminen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [-Vahvista go suoraa valmisteleminen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+##### Muutokset vaikuttavat, AX 2012: n päivitys
+###### [Yhden tositteen ja valuutan uudelleenarvostuksen päivittäminen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Resurssin projektin ajoituksen tietomallissa](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-model-changes-resource-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Työnkulun alijärjestelmä muutokset](/dynamics365/unified-operations/dev-itpro/migration-upgrade/workflow-subsystem?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Miksi on siirretty kuutioiden yhteenlaskettu mallit](/dynamics365/unified-operations/dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Siirrä myynnin kuutio päivitetty myymälän yksikkö](/dynamics365/unified-operations/dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Koodin siirto- ja
+##### [Siirrä koodi valmisteleminen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Määritä Visual Studio Team Services osaamisaluekartoituksen koodi siirron aikana](/dynamics365/unified-operations/dev-itpro/migration-upgrade/configure-vso-solution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mallien jakaminen](/dynamics365/unified-operations/dev-itpro/dev-tools/model-split?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Edustajien käyttävät arvomallit välisistä riippuvuuksista](/dynamics365/unified-operations/dev-itpro/migration-upgrade/delegates-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Päivitä viimeisimpien päivittäminen
+##### [Siirrä viimeisimmän valmisteleminen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Reititysversiot ja päivityskäytännön](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Päivitä viimeisin Ympäristöpäivitys](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dynamics-ympäristössä elokuun 2016 luovutusta päivittäminen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Päivitä eristetty ympäristössä](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-sandbox-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Päivitä kehitys-tai ympäristöissä esittely](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Päivitä Kehitystyökalut](/dynamics365/unified-operations/dev-itpro/dev-tools/update-development-tools?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Korjausten ja ylläpito
+##### [Lataa korjausten elinkaari palvelut](/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Asenna korjaustiedosto metatietojen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Taloushallinnon raportointiin binaarimuotoiseksi korjaustiedosto asentaminen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-financial-reporting-binary-hotfix?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Korjaustiedosto raportointipalveluiden yhden ympäristössä](/dynamics365/unified-operations/dev-itpro/migration-upgrade/patch-reporting-service-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Deprecations
+##### [Vanhentuneet API: T](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-apis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vanhentuneet ominaisuudet](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+
+### Järjestelmän hallinta
+#### [Päivitykset FAQ kuukauden alusta](/dynamics365/unified-operations/dev-itpro/faq-platform-monthly-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Voit lisätä linkkejä organisaation ehdot ja tietosuojatiedot](/dynamics365/unified-operations/dev-itpro/legal-terms-privacy-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käyttöoikeuskoodien ja avaimet raportin määritys](/dynamics365/unified-operations/dev-itpro/license-codes-configuration-keys-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Yrityksen tietojen jakamista](/dynamics365/unified-operations/dev-itpro/cross-company-data-sharing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Huollon tilan.](/dynamics365/unified-operations/dev-itpro/maintenance-mode?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Suojaus
+##### [Roolipohjainen suojaus](/dynamics365/unified-operations/dev-itpro/role-based-security?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Suojausarkkitehtuuri](/dynamics365/unified-operations/dev-itpro/security-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Eräkäsittely
+##### [Erätyön käsittelyn yleiskuvaus](/dynamics365/unified-operations/dev-itpro/batch-processing-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Erän palvelimen yhteenveto](/dynamics365/unified-operations/dev-itpro/batch-server-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Käyttöikäpalvelut
+#### [Palvelut elinkaaren yleiskatsaus](/dynamics365/unified-operations/dev-itpro/lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Asiakkaiden LCS](/dynamics365/unified-operations/dev-itpro/lcs-works-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [LCS kumppaneille](/dynamics365/unified-operations/dev-itpro/getting-started-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mitä uutta](/dynamics365/unified-operations/dev-itpro/whats-new-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tunnettuja](/dynamics365/unified-operations/dev-itpro/known-issues?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dynamics elinkaari Services-käyttöopas](/dynamics365/unified-operations/dev-itpro/lcs-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Suojauksen määrittäminen](/dynamics365/unified-operations/dev-itpro/configure-lcs-security?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ongelman haku](/dynamics365/unified-operations/dev-itpro/issue-search-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kokoonpanon hallinta](/dynamics365/unified-operations/dev-itpro/configuration-manager-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Määritä kokoonpanon hallinta](/dynamics365/unified-operations/dev-itpro/set-up-configuration-manager-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Koodin päivityksen palvelun määrittäminen](/dynamics365/unified-operations/dev-itpro/configure-execute-code-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Luo menetelmät](/dynamics365/unified-operations/dev-itpro/create-methodology?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Prosessin liiketoiminnan mallintajassa](/dynamics365/unified-operations/dev-itpro/business-process-modeler-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Yrityksen prosessin kirjastot liiketoiminnan prosessin mallintajassa](/dynamics365/unified-operations/dev-itpro/business-process-libraries-business-process-modeler?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Liiketoimintaprosessien Mallintaja vuokaavioiden sekä](/dynamics365/unified-operations/dev-itpro/flowcharts-business-process-modeler?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lataa mukautetun liiketoimintaprosesseja.](/dynamics365/unified-operations/dev-itpro/upload-business-processes-bpm-task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Seuranta- ja vianmääritys](/dynamics365/unified-operations/dev-itpro/monitoring-diagnostics?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Dynamics AX 2012: n elinkaari ominaisuudet
+##### Käyttöönotto
+###### [Pilvipalveluun ylläpitämään ympäristöissä.](/dynamics365/unified-operations/dev-itpro/ax-2012/cloud-hosted-environments-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Konfiguraation kopioiminen](/dynamics365/unified-operations/dev-itpro/copy-configuration-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Dynamics AX 2012 R3 käyttöönoton suunnitelman Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/plan-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Dynamics AX 2012 R3: n Azure ottaminen käyttöön](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-2012-r3-azure-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Dynamics AX 2012 R3 esittely-ympäristö ottaminen käyttöön](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Ota käyttöön Azure kehitysympäristössä](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-development-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Saatavuutta ympäristössä, jossa Azure käyttöön ottaminen käyttöön](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-high-availability-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Ota käyttöön Azure testiympäristössä](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-test-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Dynamics AX 2012 R3, Azure käyttöönoton hallinta](/dynamics365/unified-operations/dev-itpro/ax-2012/manage-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Yritysportaalin palvelimet liittyä kyselyjä yhden palvelinfarmi](/dynamics365/unified-operations/dev-itpro/ax-2012/join-enterprise-portal-servers-single-server-farm?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Dynamics AX-yritysportaali tietueen käyttötavat](/dynamics365/unified-operations/dev-itpro/ax-2012/record-entry-points-enterprise-portal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Vähittäismyynnin sähköisen kaupankäynnin keskihajonta tai testiympäristössä, Azure ottaminen käyttöön](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-ecommerce-devtest-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Vähittäismyynnin peruspaketti esittely ympäristössä, jossa Azure käyttöön ottaminen käyttöön](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-demo-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Vähittäismyynnin peruspaketti keskihajonta tai testiympäristössä, Azure ottaminen käyttöön](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-devtest-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Vähittäismyynnin liikkuvuuden keskihajonta tai testiympäristössä, Azure ottaminen käyttöön](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-mobility-devtest-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Dynamics AX 2012 R3, Azure käyttöönoton vianmääritys](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Dynamics AX 2012 R3 päivitykset](/dynamics365/unified-operations/dev-itpro/ax-2012/update-2012-r3-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tietojen tuominen ja vieminen framework-käyttöopas](/dynamics365/unified-operations/dev-itpro/ax-2012/user-guide-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Asentaminen](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [AX 2012 R3: n asentaminen](/dynamics365/unified-operations/dev-itpro/ax-2012/install-ax-2012-r3?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Dynamics AX 2012 R2: n CU7 version SQL Server-2014 asentaminen](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Tietojen siirtäminen](/dynamics365/unified-operations/dev-itpro/ax-2012/migrate-data-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Määritä SSIS version.](/dynamics365/unified-operations/dev-itpro/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopioi ja verrata kohteen tiedot yritysten välillä](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-compare-entity-data-between-companies-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopioi tiedot Dynamics AX: N yritysten välillä](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-companies-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopioi tiedot Dynamics AX-esiintymästä toiseen](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-instances-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Mukautetun kohteen kohteen luominen](/dynamics365/unified-operations/dev-itpro/ax-2012/create-custom-target-entity-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Tietojen tuominen ja vieminen framework yritysten](/dynamics365/unified-operations/dev-itpro/ax-2012/entities-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Tietojen tuominen CSV tietolähde](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-csv-data-source-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [ODBC-tietolähde tietojen tuominen](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-odbc-data-source-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Tiedostojen esittely](/dynamics365/unified-operations/dev-itpro/ax-2012/demo-files-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Pikalinkkien tuominen-vieminen](/dynamics365/unified-operations/dev-itpro/ax-2012/quick-import-export?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Taulut 
+###### [Luo taulut](/dynamics365/unified-operations/dev-itpro/ax-2012/create-tables?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Taulun ominaisuudet.](/dynamics365/unified-operations/dev-itpro/ax-2012/table-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Dynamics AX 2012: n LCS Työkalut
+###### [Projektit](/dynamics365/unified-operations/dev-itpro/ax-2012/projects-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Menetelmät](/dynamics365/unified-operations/dev-itpro/ax-2012/methodologies-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Analyysi mukauttaminen](/dynamics365/unified-operations/dev-itpro/ax-2012/customization-analysis-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Perusrakenteen estimator](/dynamics365/unified-operations/dev-itpro/ax-2012/infrastructure-estimator-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Käyttöoikeus koon estimator](/dynamics365/unified-operations/dev-itpro/ax-2012/license-sizing-estimator-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Ehdotus (/ dynamics365/yhdistetyn-toimintojen/keskihajonta-itpro ja Lähettää) pyytää vastauksia](/dynamics365/unified-operations/dev-itpro/ax-2012/rfp-responses-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Järjestelmän vianmääritys](/dynamics365/unified-operations/dev-itpro/ax-2012/system-diagnostics-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Asenna ja suorita järjestelmän vianmääritys](/dynamics365/unified-operations/dev-itpro/ax-2012/install-run-system-diagnostics-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Päivitä analyysi](/dynamics365/unified-operations/dev-itpro/ax-2012/upgrade-analysis-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Käyttö kuvaaja](/dynamics365/unified-operations/dev-itpro/ax-2012/usage-profiler-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Dynamics AX 2012: n työkalujen ladattavaan
+###### [Koodin päivitys työkalu käyttöopas (vanhentunut)](/dynamics365/unified-operations/dev-itpro/ax-2012/code-upgrade-tool-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Elinkaari palvelut ladattavaan Työkalut](/dynamics365/unified-operations/dev-itpro/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Testi tietojen siirto-työkalua (beta)](/dynamics365/unified-operations/dev-itpro/ax-2012/test-data-transfer-tool-beta-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Asentaminen](/dynamics365/unified-operations/dev-itpro/ax-2012/install-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Suorita](/dynamics365/unified-operations/dev-itpro/ax-2012/run-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Tuo esittelytiedot, AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kehityksen työkalu suojaus](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-security-development-tool-user-interface?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Asentaminen](/dynamics365/unified-operations/dev-itpro/ax-2012/install-security-development-tool?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Käyttöopas](/dynamics365/unified-operations/dev-itpro/ax-2012/security-development-tool-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Määritä tai Muokkaa tapahtuman kohdan käyttöoikeuksia](/dynamics365/unified-operations/dev-itpro/ax-2012/define-edit-entry-point-permissions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Suorituskyvyn Vertailukohta ohjelmiston kehityksen työkalujen](/dynamics365/unified-operations/dev-itpro/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Suojauksen päivityksen tukisovellusta](/dynamics365/unified-operations/dev-itpro/ax-2012/security-upgrade-advisor-tool-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Tietoja Intelligent Management Frameworkia (IDMF)](/dynamics365/unified-operations/dev-itpro/ax-2012/microsoft-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Yhteenveto](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Asennusoppaassa](/dynamics365/unified-operations/dev-itpro/ax-2012/installation-guide-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Määritys](/dynamics365/unified-operations/dev-itpro/ax-2012/configuration-functionality-idmf-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Analyysi](/dynamics365/unified-operations/dev-itpro/ax-2012/analysis-functionality-idmf-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Tyhjennä ja arkistoon](/dynamics365/unified-operations/dev-itpro/ax-2012/work-with-purge-objects-archive-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Arkiston kohteiden luominen](/dynamics365/unified-operations/dev-itpro/ax-2012/create-archive-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Tyhjennä kohteiden luominen](/dynamics365/unified-operations/dev-itpro/ax-2012/create-purge-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Ajoittaa ja Tyhjennä analyysi](/dynamics365/unified-operations/dev-itpro/ax-2012/schedule-purge-analysis-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Poista tai Arkistoi työt](/dynamics365/unified-operations/dev-itpro/ax-2012/view-status-purge-archive-jobs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Ylläpidä](/dynamics365/unified-operations/dev-itpro/ax-2012/maintain-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Vianmääritys](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Tietokannan hallinta
+#### [Kopioi tietokannan Azure SQL-tietokannan SQL Server-ympäristössä](/dynamics365/unified-operations/dev-itpro/copy-database-from-azure-sql-to-sql-server?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kopioi tietokannan SQL Server Azure SQL-tietokannan tuotantoympäristöön](/dynamics365/unified-operations/dev-itpro/copy-database-from-sql-server-to-azure-sql?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Palauttaa tietokannan, tuotanto ympäristössä](/dynamics365/unified-operations/dev-itpro/request-point-in-time-restore?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vie myöhemmin palauttaa tietokannan kopio](/dynamics365/unified-operations/dev-itpro/copy-operations-database?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Tuki
+#### [Voit hankkia tukea Dynamics 365 myyntitiedot ja toimintoja, yrityksen edition ja palveluiden elinkaari](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)
+#### [Kirjaa ensisijainen tukea koskevaan](/dynamics365/unified-operations/dev-itpro/lifecycle-services/premier-support)
+#### [Dynamics huollon selvitetään ryhmälle pyytäminen](/dynamics365/unified-operations/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team)
+#### [Myyntitiedot ja toiminnot yrityksen edition Dynamics 365 tuotetukeen määrittäminen](/dynamics365/unified-operations/dev-itpro/lifecycle-services/support-experience) 
+#### [Huolto-ikkunan FAQ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/planned-maintenance-window-faq) 
+#### [Työvaiheiden pilvipalveluun ja ylläpito](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-operations-servicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Myyntitiedot työvaiheiden tukea ominaisuuksista hallinta](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+<!-- Retail section -->
+# [365 Dynamics for Retail](/dynamics365/unified-operations/retail/index?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Maksut
+### [Maksutavat](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Puhelinkeskus
+### [Puhelinkeskuksen yleiskatsaus](/dynamics365/unified-operations/retail/call-center-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Puhelinkeskuksen luettelot](/dynamics365/unified-operations/retail/call-center-catalogs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Puhelinkeskuksen luettelon luominen](/dynamics365/unified-operations/retail/create-call-center-catalogs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Petoshälytysten määrittäminen](/dynamics365/unified-operations/retail/set-up-fraud-alerts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Tilaustenkäsittelyasetusten määrittäminen](/dynamics365/unified-operations/retail/set-up-order-processing-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Puhelinkeskuksen jatkuvuusohjelman määrittäminen](/dynamics365/unified-operations/retail/set-up-continuity-program?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Tilausten pidot](/dynamics365/unified-operations/retail/work-with-order-holds?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Maksuvalinnat](/dynamics365/unified-operations/retail/work-with-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Kanavan määrittäminen ja hallinta
+### [Alkutietojen alustaminen vähittäismyyntiympäristössä](/dynamics365/unified-operations/retail/enable-configure-retail-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vähittäismyyntikanavien määrittäminen](/dynamics365/unified-operations/retail/define-maintain-retail-channels?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Verkkokaupan yleiskatsaus](/dynamics365/unified-operations/retail/online-stores?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vähittäismyynnin laiteaseman määrittäminen ja asentaminen](/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vähittäismyynnin työajan seuranta](/dynamics365/unified-operations/retail/retail-time-attendance?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Modern Point of Sale (MPOS) ja pilvimyyntipiste
+### Laitteiston oheislaitteet
+#### [Vähittäismyynnin oheislaitteiden yleiskatsaus](/dynamics365/unified-operations/retail/retail-peripherals-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Microsoftin testaamat myyntipisteen oheislaitteet](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kanavan asiakasohjelmien, kassakoneiden ja laiteasemien määrittäminen ja ylläpitäminen](/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Näytön asettelu
+#### [Myyntipisteen näytön asettelujen määrittäminen](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Retail POS:n asettelun suunnittelutoiminnon asentaminen](/dynamics365/unified-operations/retail/install-pos-layout-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Myyntipistesovellus ja käyttäjän kielialueasetukset](/dynamics365/unified-operations/retail/pos-application-user-language-settings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [MPOS-kuvien määrittäminen](/dynamics365/unified-operations/retail/set-up-manage-images-retail-mpos?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Tietokoodien yleiskatsaus](/dynamics365/unified-operations/retail/info-codes-retail?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+### Tuotesuositukset
+#### [Mukautettujen tuotesuositusten yleiskatsaus](/dynamics365/unified-operations/retail/personalized-product-recommendations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Suositusten ohjausobjektin lisääminen myyntipistelaitteeseen](/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Myyntipisteen offline-toiminto](/dynamics365/unified-operations/retail/pos-offline-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vuoron- ja kassanhallinta](/dynamics365/unified-operations/retail/shift-drawer-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Asiakastilaukset
+#### [Asiakastilausten yleiskatsaus](/dynamics365/unified-operations/retail/customer-orders-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Asiakkaiden yhdistelmätilaukset](/dynamics365/unified-operations/retail/hybrid-customer-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Myyjät
+#### [Provisioiden seuranta myyntipisteessä myyntiryhmien avulla](/dynamics365/unified-operations/retail/pos-sales-groups-track-commissions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Laitteen aktivointi
+#### [MPOS-ratkaisun määrittäminen ja asentaminen](/dynamics365/unified-operations/retail/retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Laajennetun pilvimyyntipisteen ja MPOS-kirjautumisen määrittäminen](/dynamics365/unified-operations/retail/extended-logon?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vähittäismyynnin tilien ja laitteiden hallinta pääkonttorista](/dynamics365/unified-operations/retail/set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Kuitit
+#### [Kuittimallien määrittäminen](/dynamics365/unified-operations/retail/receipt-templates-printing?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### [Sähköpostikuittien lähettäminen MPOS:sta](/dynamics365/unified-operations/retail/email-receipts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Myyntipisteen tehtävien tallennustoiminto ja ohje](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/retail/toc.json)
+## Seuranta ja analyysi
+### [Myynnin ja marginaalien seuranta](/dynamics365/unified-operations/retail/monitor-sales-margin-performance?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Myyntitrendien ja -mallien analysointi](/dynamics365/unified-operations/retail/analyze-sales-trends-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Myynnin suorituksen tuotekohtainen arviointi](/dynamics365/unified-operations/retail/sales-performance-products?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Asiakkaiden ja tuotteiden kannattavuuden arviointi](/dynamics365/unified-operations/retail/assess-customer-product-profitability?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Myymälän suorituksen analysointi](/dynamics365/unified-operations/retail/store-performance-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [RFM-analyysin määrittäminen](/dynamics365/unified-operations/retail/set-up-rfm-analysis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Alennukset ja hinnanoikaisut
+### [Hinnanoikaisut ja alennukset](/dynamics365/unified-operations/retail/price-adjustments-discounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Optimaalisen päällekkäisten alennusten yhdistelmän määrittäminen](/dynamics365/unified-operations/retail/optimal-combination-overlapping-discounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Kanavakohtaisten alennusten määrittäminen](/dynamics365/unified-operations/retail/define-channel-specific-discounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vähittäismyynnin kuponkien luonti](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/retail/toc.json)
+## Tuotteet ja myynninedistäminen
+### [Vähittäismyyntihierarkiat](/dynamics365/unified-operations/retail/retail-hierarchies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Määritteiden luonti ja hallinta](/dynamics365/unified-operations/retail/create-manage-attributes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vähittäismyyntituotteiden määrittäminen](/dynamics365/unified-operations/retail/set-up-retail-products?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Viivakoodien määrittäminen](/dynamics365/unified-operations/retail/set-up-bar-codes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Viivakoodin muotojen määrittäminen](/dynamics365/unified-operations/retail/set-up-bar-code-masks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Valikoimien määrittäminen](/dynamics365/unified-operations/retail/set-up-assortments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Valikoiman ulkopuolisten tuotteiden myyminen ja palauttaminen](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
+## Kanta-asiakkuus
+### [Kanta-asiakasohjelman määrittäminen](/dynamics365/unified-operations/retail/set-up-customer-loyalty-program?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Varasto
+### [Myymälän varaston hallinta](/dynamics365/unified-operations/retail/work-with-store-inventory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## Commerce-perustiedot
+### [Commerce-perustietojen yleiskatsaus](/dynamics365/unified-operations/retail/commerce-essentials?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Peruspaketti Commerce organisaation hierarkiat ja organisaatioita](/dynamics365/unified-operations/retail/organizational-hierarchies-commerce-essentials?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Retail-kehityksen ja hallinta](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Arkkitehtuuri
+#### [Microsoft Dynamics 365 myyntitiedot ja toiminnot yrityksen edition - Retail komponentit](/dynamics365/unified-operations/retail/retail-components?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Retail-palvelimen arkkitehtuuri](/dynamics365/unified-operations/retail/dev-itpro/retail-server-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vähittäismyynnin kanavan tietoliikenteen](/dynamics365/unified-operations/retail/dev-itpro/define-retail-channel-communications-cdx?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [MPOS arkkitehtuuri](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vähittäismyynnin sivustoon julkaistaan arkkitehtuuri](/dynamics365/unified-operations/retail/dev-itpro/retail-online-store-publishing-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vähittäismyyntikanavan suorituskyvyn Power BI -sisältö](/dynamics365/unified-operations/retail/dev-itpro//dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
+
+### Korjausten ja käyttöönotto
+#### [Vähittäismyynnin myymälän asteikon aikayksikön määritys ja asennus](/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Retail store järjestelmän ennen aloittamista](/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Retail POS nykyiset määritys ja asennus](/dynamics365/unified-operations/retail//retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vähittäismyynnin tilien ja laitteiden hallinta pääkonttorista](/dynamics365/unified-operations/retail//set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Retail POS laitteen aktivointi](/dynamics365/unified-operations/retail/dev-itpro/retail-device-activation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Retail POS pilvipalveluun Secure](/dynamics365/unified-operations/retail/dev-itpro/secure-retail-cloud-pos?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vähittäismyynnin laitteiston määritykset ja asentaminen](/dynamics365/unified-operations/retail//retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Retail-komponentin tapahtumat diagnostiikka ja vianmääritys](/dynamics365/unified-operations/retail/dev-itpro/retail-component-events-diagnostics-troubleshooting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Käytä esikunnista pakettia](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Päivittäminen ja N-1 tuki
+#### [Yhteenvedon päivitys- ja N-1 tuki](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Asenna N-1 osat](/dynamics365/unified-operations/retail/dev-itpro/n-1-installation-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Laajennettavuus
+#### Myyntipiste
+##### [Retail POS-näytön asettelun](/dynamics365/unified-operations/retail//pos-screen-layouts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [POS-asettelun suunnittelutoiminto asentaminen](/dynamics365/unified-operations/retail//install-pos-layout-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Offline-tilassa MPOS määrittäminen](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-offline?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [MPOS ja pilvipalveluun POS käynnistää laajennettavuus](/dynamics365/unified-operations/retail/dev-itpro/modern-pos-trigger-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Luo Retail kokemus sovelluksen](/dynamics365/unified-operations/retail/dev-itpro/create-retail-experience-app?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Aseman Yleistä laitteistosta ja laajennettavuus](/dynamics365/unified-operations/retail/dev-itpro/hardware-station-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Vähittäismyynnin palvelin
+##### [Laajenna vähittäismyynnin palvelimen OData ohjaimeen](/dynamics365/unified-operations/retail/dev-itpro/extend-retail-server-odata-controller?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Internet-API ja OData ohjainta.](/dynamics365/unified-operations/retail/dev-itpro/odata-controllers-api?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vähittäismyynnin palvelimen asiakas- ja asiakkaiden API: T](/dynamics365/unified-operations/retail/dev-itpro/retail-server-customer-consumer-api?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Laajenna metatietojen](/dynamics365/unified-operations/retail/dev-itpro/extend-metadata?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Laajenna commerce runtime tukee Myyntipisteen offline-tilassa](/dynamics365/unified-operations/retail/dev-itpro/call-crt-service-offline?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Commercen suorituspalvelu
+##### [Commerce runtime yleiskuvaus](/dynamics365/unified-operations/retail/dev-itpro/commerce-runtime-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Commerce runtime ja vähittäismyynnin palvelimen laajennettavuus](/dynamics365/unified-operations/retail/dev-itpro/commerce-runtime-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kanavan tietokannan asiakkaan ensisijainen tietojen lisääminen](/dynamics365/unified-operations/retail/dev-itpro/add-customer-preference-channel?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lisää myyntitilaukseen ominaisuudet](/dynamics365/unified-operations/retail/dev-itpro/add-properties-sales-order?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Commerce runtime laajennettavuutta ja käynnistimen](/dynamics365/unified-operations/retail/dev-itpro/commerce-runtime-extensibility-trigger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Järjestelmä Esimerkki: tapahtuman esto.](/dynamics365/unified-operations/retail/dev-itpro/trigger-example-blocking-transaction?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Järjestelmä Esimerkki: käytännön palauttaminen](/dynamics365/unified-operations/retail/dev-itpro/trigger-example-return-policy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Sähköisen kaupankäynnin
+##### [Verkkokaupan määrittäminen](/dynamics365/unified-operations/retail/dev-itpro/configure-online-store?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Määritä Käyttöoikeustarkistuspalvelu](/dynamics365/unified-operations/retail/dev-itpro/configure-authentication-providers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [sähköisen kaupankäynnin ympäristössä](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [sähköisen kaupankäynnin SDK-ympäristössä](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Maksuyhdistin
+##### [Maksun Connectoria ja maksun laite (tiedotteen)](/dynamics365/unified-operations/retail/dev-itpro/http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+##### [Maksun Connectoria ottaminen käyttöön](/dynamics365/unified-operations/retail/dev-itpro/deploy-payment-connector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Windows-asennusohjelma, maksun Connectoria luominen](/dynamics365/unified-operations/retail/dev-itpro/create-windows-installer-payment-connector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Retail SDK
+#### [Vähittäismyynnin SDK yleiskuvaus](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vähittäismyynnin SDK integroida jatkuva koontiversion järjestelmän](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vähittäismyynnin SDK laajennettavuus mallit](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vähittäismyynnin SDK pakkausmateriaalin](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vähittäismyynnin SDK mallit](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Commercen suorituspalvelu
+#### [Kanta-tunniste](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+# [Dynamics 365 kyvykkyys varten.](/dynamics365/unified-operations/talent/index)
+
+## Henkilöstöhallinnon strategian kehittäminen
+### [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Työosien määrittäminen](/dynamics365/unified-operations/talent/create-job?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Osaston luominen ja sen liittäminen osastohierarkiaan](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Yritysten välisten henkilöstöhallinnon parametrien määrittäminen](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Henkilöstötoimenpiteiden usein kysytyt kysymykset](/dynamics365/unified-operations/talent/personnel-actions-faq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Työntekijätietojen hallinta työkulun avulla](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Työntekijät
+### [Kompensaatiosuunnitelmat](/dynamics365/unified-operations/talent/compensation-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Kiinteiden kompensaatiosuunnitelmien luominen](/dynamics365/unified-operations/talent/create-fixed-compensation-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Muuttuvien kompensaatiosuunnitelmien luominen](/dynamics365/unified-operations/talent/create-variable-compensation-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Prosessin kompensaation](/dynamics365/unified-operations/talent/process-compensation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Työntekijöiden kehittäminen ja kouluttaminen
+### [Suorituksen hallinnan yleiskatsaus](/dynamics365/unified-operations/talent/performance-management-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen](/dynamics365/unified-operations/talent/skills?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Koulutuskurssien määrittäminen](/dynamics365/unified-operations/talent/courses?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Etujen luonti ja ylläpito
+### [Etuohjelman hallinta](/dynamics365/unified-operations/talent/manage-benefit-program?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Etukelpoisuuden käytännöt](/dynamics365/unified-operations/talent/benefit-eligibility-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Työntekijöille lainattujen nimikkeiden hallinta](/dynamics365/unified-operations/talent/loan-items?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Tietojen kerääminen kyselylomakkeilla
+### [Kyselylomakkeet](/dynamics365/unified-operations/talent/questionnaires?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Kyselylomakkeen suunnitteleminen](/dynamics365/unified-operations/talent/design-questionnaires?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Kyselylomakkeen jakaminen ja täyttäminen](/dynamics365/unified-operations/talent/distribute-questionnaires?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Kyselylomakkeen tulosten arvioiminen](/dynamics365/unified-operations/talent/evaluate-questionnaire-results?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Työtehtävät turvallisuuden ja yhteensopivuuden (Yhdysvallat)
+### [I-9-lomakkeen työsuhdetarkistukset](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [ADA-lain noudattaminen](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/supply-chain/toc.json)
