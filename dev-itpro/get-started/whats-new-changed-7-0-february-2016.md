@@ -3,7 +3,7 @@ title: Dynamics AX 7.0:n uudet ja muuttuneet ominaisuudet (helmikuu 2016)
 description: "Tässä artikkelissa käsitellään Microsoft Dynamics AX 7.0:n uusia tai muuttuneita ominaisuuksia. Tässä versiossa on sekä ympäristö- että sovellusominaisuuksia, ja se julkaistiin helmikuussa 2016."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

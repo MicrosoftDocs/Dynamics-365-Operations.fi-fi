@@ -3,7 +3,7 @@ title: Tuotantotilauksen kustannusanalyysi
 description: "Tässä artikkelissa tietoja kustannusanalyysista, jonka voi tehdä valmiille ja nykyisille tuotantotilauksille. Voit analysoida arvioidut kustannukset ja toteutuneet kustannukset käyttämällä Hinnan laskenta -sivua tai Ennakko- ja jälkilaskelmat -raporttia. Voit tarkastella komponenttinimikkeen, reititystyövaiheen ja epäsuoran kustannuksen tietoja arvioiduista ja todellisista kustannuksista (sekä määristä)."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

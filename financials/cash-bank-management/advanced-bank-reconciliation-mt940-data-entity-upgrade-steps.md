@@ -3,7 +3,7 @@ title: "Laajennettu pankkitäsmäytys MT940 tuonti - yhdistelmätietoyksikkö p�
 description: "Järjestysnumero täytyy lisätä tiliotteen tuonnin yksikköön tukemaan MT940-muotoa."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

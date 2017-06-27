@@ -3,7 +3,7 @@ title: "Toimittajan osamaksun ja lopullisen maksun täydellinen tilittäminen en
 description: "Tämä artikkeli opastaa sinua skenaariossa, jossa osittaisia maksuja suoritetaan toimittajan laskulle ja käytetään käteisalennusta."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Käyttöomaisuuden integrointi"
 description: "Käyttöomaisuus voidaan integroida kirjanpitoon, varastonhallintaan, myyntireskontraan ja ostoreskontraan. Käyttöomaisuuden voi integroida myös ostotilauksiin."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

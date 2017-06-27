@@ -3,7 +3,7 @@ title: Suunnittele tilikarttasi
 description: "Tässä artikkelissa on tietoja, joiden avulla voit suunnitella organisaation tilikartan."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

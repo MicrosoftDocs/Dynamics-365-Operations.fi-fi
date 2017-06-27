@@ -3,7 +3,7 @@ title: "Tuotemääritysmallien laskelmat – usein kysytyt kysymykset"
 description: "Tässä artikkelissa kuvataan laskutoimitukset tuotekonfiguraatiomalleille ja laskentojen käyttäminen yhdessä rajoitteiden kanssa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

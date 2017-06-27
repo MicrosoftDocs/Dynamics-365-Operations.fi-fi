@@ -3,7 +3,7 @@ title: Kirjanpidon kalenterit, tilikaudet ja kaudet
 description: "Tässä artikkelissa käsitellään kirjanpidon vuosikalentereita ja tilikausia sekä sitä, miten niitä käytetään yrityksissä, käyttöomaisuudessa ja budjetoinnissa."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

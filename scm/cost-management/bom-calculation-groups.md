@@ -3,7 +3,7 @@ title: "Tuoterakenteen laskentaryhmät"
 description: "Tässä artikkelissa on tietoja tuoterakenteen laskentaryhmistä ja niiden määrittämisestä. Tuoterakenteen laskennan suorittamista varten yksittäisille nimikkeille laskentaryhmiä on määritettävä laskentaryhmiä. Vaihtoehtoisesti on määritettävä oletuslaskentaryhmä. Laskentaryhmän laskenta-asetuksia käytetään sitten Tuoterakenteen laskenta -sivun oletusarvoina tuoterakennetta laskettaessa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Myyntireskontran sekä luotonvalvonnan määrittäminen"
 description: "Määritä myyntireskontra ja luotonvalvonta, kun haluat seurata laskuja ja asiakkailta saapuvia maksuja."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

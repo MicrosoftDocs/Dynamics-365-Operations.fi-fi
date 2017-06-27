@@ -3,7 +3,7 @@ title: "Käyttöomaisuuden hankinta"
 description: "Tässä artikkelissa kuvataan, kuinka tehdään käyttöomaisuuden ja ostoreskontran väliset integrointimääritykset, luodaan käyttöomaisuuserä automaattisesti ostotilauksesta tai laskusta tai kirjataan käyttöomaisuuserien hankinta- ja hankintaoikaisutapahtumat automaattisesti."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

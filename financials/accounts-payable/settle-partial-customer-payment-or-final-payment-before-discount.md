@@ -3,7 +3,7 @@ title: "Asiakkaan osamaksun ja lopullisen maksun täydellinen tilittäminen enne
 description: "Tässä artikkelissa on skenaarioita, jotka kuvaavat osittaisten maksujen kirjaamista asiakkaalle ja käteisalennusten käyttämistä käteisalennusjaksolla."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

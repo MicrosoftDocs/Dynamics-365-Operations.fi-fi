@@ -3,7 +3,7 @@ title: Toimittajamaksujen luominen maksuehdotuksen avulla
 description: "Tässä aiheessa on yleiskatsaus maksuehdotusvaihtoehdoista. Artikkeli sisältää myös esimerkkejä maksuehdotusten toiminnasta. Maksuehdotuksia käytetään usein toimittajan maksujen luomiseen, koska kyselyn avulla on nopeaa valita toimittajan laskuja maksuun esimerkiksi eräpäivän ja käteisalennuksen mukaan."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

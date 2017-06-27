@@ -3,7 +3,7 @@ title: Kustannuslaskentaversiot
 description: "Tässä artikkelissa on tietoja kustannuslaskennan versioista, niiden ylläpitämisestä ja niihin sisällytettävien tietojen tyypeistä. Kustannuslaskelmaversion on ensisijaisesti tarkoitus sisältää nimikkeitä, kustannusluokkia ja välillisten kustannusten laskentakaavoja koskevia kustannustietueita."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

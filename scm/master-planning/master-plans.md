@@ -3,7 +3,7 @@ title: "Pääsuunnitelmat"
 description: "Voit käyttää useita pääsuunnitelmia. Pääsuunnitelmilla voidaan tukea yrityksen päivittäistä toimintaa, simuloida eri suunnittelustrategioita, joita halutaan seurata, sekä ottaa käyttöön esimerkiksi yrityksen sisäistä suorituskykyä tai asiakastyytyväisyyttä koskevia käytäntöjä."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

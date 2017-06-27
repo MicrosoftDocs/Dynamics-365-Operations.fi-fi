@@ -3,7 +3,7 @@ title: "Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella"
 description: "Tässä artikkelissa on kaksi skenaariota, jotka osoittavat, miten käteisalennus voidaan käyttää, vaikka maksu suoritettaisiin käteisalennuskauden ulkopuolella."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

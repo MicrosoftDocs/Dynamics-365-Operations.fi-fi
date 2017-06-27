@@ -1,9 +1,9 @@
 ---
 title: Tuotantotilausten vapauttaminen
-description: "Vapautettu tuotantotilaus on tilaus, joka on hyväksytty tuotantoon. Termillä &quot;Vapautettu&quot; kuvataan tuotantotilauksen elinkaaren tilaa, jossa tuotantotilaus voidaan suorittaa tuotannossa ja varastoprosesseissa."
+description: "Vapautettu tuotantotilaus on tilaus, joka on hyväksytty tuotantoon. Termillä \"Vapautettu\" kuvataan tuotantotilauksen elinkaaren tilaa, jossa tuotantotilaus voidaan suorittaa tuotannossa ja varastoprosesseissa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää, kun 
 description: "Tässä artikkelissa käydään läpi skenaario, jossa suoritetaan useita osittaisia maksuja, joista osa on käteisalennuskaudella ja osa käteisalennuskauden ulkopuolella."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

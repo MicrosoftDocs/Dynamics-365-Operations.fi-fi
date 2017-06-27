@@ -3,7 +3,7 @@ title: "Näytä tapahtumat ja kirjauskansiomerkinnät"
 description: "Tässä artikkelissa esitellään kirjauskansiovientien ja -tapahtumien eri tarkastelutavat."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

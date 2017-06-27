@@ -3,7 +3,7 @@ title: "Konsernin sisäisen laskennan määritys"
 description: "Tässä ohjeaiheessa kerrotaan, kuinka konserniyritysten välinen laskenta määritetään niin, että voit käyttää konsernin päiväkirjoja kirjanpidon kohdistuksissa ja taloushallinnon päiväkirjoissa, esimerkiksi päivittäisissä kirjauskansioissa, toimittajan laskun ostopäiväkirjoissa ja maksupäiväkirjoissa."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

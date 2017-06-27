@@ -3,7 +3,7 @@ title: "Käyttöomaisuuden aloitussivu"
 description: "Käyttöomaisuuserät ovat henkilön tai organisaation omistamia arvokkaita nimikkeitä, kuten rakennuksia, ajoneuvoja, maata ja varusteita."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

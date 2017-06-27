@@ -3,7 +3,7 @@ title: Varastosijainnit
 description: "Varastopaikkoja käytetään perusvarastoinnin (WMS I) kanssa määrittämään, mihin nimikkeet varastoidaan ja mistä nimikkeet poimitaan WMS I -varastossa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

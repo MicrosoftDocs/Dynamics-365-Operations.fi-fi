@@ -3,7 +3,7 @@ title: "Ostokäytännöt"
 description: "Tässä artikkelissa on tietoja ostokäytännöistä. Ostokäytäntö on kokoelma sääntöjä, jolla hallitaan ostoehdotusprosessia. Ostokäytännöt auttavat ostotapahtumien hallinnoijia toteuttamaan hankintastrategiaa luomalla käytäntörakenteen, joka on linjassa organisaation strategisten ostotarpeiden kanssa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

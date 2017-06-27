@@ -3,7 +3,7 @@ title: "Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä a
 description: "Tässä artikkelissa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, kuinka käteisalennukset voivat vaihdella maksuajankohdan mukaan."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

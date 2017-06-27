@@ -3,7 +3,7 @@ title: Keskitettyjen maksujen tilityksen kuvaus
 description: "Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Tällöin samaa tapahtumaa ei tarvitse syöttää erikseen useassa yrityksessä. Aikaa myös säästyy, kun keskitettyjen maksujen maksuehdotusprosessi, selvitysprosessi, avointen tapahtumien muokkaus ja suljettujen tapahtumien muokkaus yksinkertaistuvat."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Käyttöomaisuuden laajamittainen päivitys"
 description: "Jos käytät kirjoja, voit vaihtaa samaan kirjaan kuuluvien käyttöomaisuuserien muodostamien ryhmien poistomenetelmiä."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
