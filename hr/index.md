@@ -1,12 +1,12 @@
 ---
-title: "Henkilöstöhallinto"
-description: "Henkilöstöhallinto yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Se muodostaa myös kehyksen, jonka avulla henkilöstöhallinnon henkilöstö voi hallita valvottavia alueita. Näitä alueita ovat työntekijän työhönotto ja sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta."
+title: Microsoft Dynamics 365 for Talent
+description: "Talent yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Näitä prosesseja ovat työntekijän sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
@@ -16,23 +16,25 @@ ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 213d1dc69ac0f6dc10138e185625a142e107f073
+ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
+ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
 
-# <a name="welcome-to-human-resources"></a>Tervetuloa henkilöstöhallintoon
+# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Tervetuloa Microsoft Dynamics 365 for Talent -ohjelmaan
 
 [!include[banner](includes/banner.md)]
 
-Henkilöstöhallinto yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Se muodostaa myös kehyksen, jonka avulla henkilöstöhallinnon henkilöstö voi hallita valvottavia alueita. Näitä alueita ovat työntekijän työhönotto ja sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta.
+Microsoft Dynamics 365 for Talent yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Näitä prosesseja ovat työntekijän sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta. Se muodostaa myös kehyksen, jonka avulla henkilöstöhallinnon henkilöstö voi hallita valvottavia alueita.
 
-Voit suorittaa henkilöstöhallinnossa seuraavat tehtävät:
+Dynamics 365 for Talent liittyy läheisesti Dynamics 365 for Finance and Operations, Enterprise Editionin henkilöstöhallintoon. Samat toiminnot voivat esiintyä molemmissa tuotteissa. Tämän vuoksi aiheissa, jotka liittyvät ensisijaisesti henkilöstöhallintoon, tuotenimi on Dynamics 365 for Finance and Operations, Enterprise Edition, ja aiheissa, jotka liittyvät ensisijaisesti Talent-sovellukseen, tuotenimi on Dynamics 365 for Talent. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
+
+Voit suorittaa Talent-sovelluksessa seuraavat tehtävät:
 
 > + Organisaatiorakenteiden hallinta
 > + Kattavien työntekijätietojen ylläpito työhönottamisesta työsuhteen päättymiseen
@@ -42,25 +44,19 @@ Voit suorittaa henkilöstöhallinnossa seuraavat tehtävät:
 > + Työntekijöiden osaamistietojen hallinta.
 > + Suorituksen arviointi ja työntekijän tavoitteiden toteuttaminen.
 > + Työjärjestykset, istunnot ja edistymissuunnitelmat sisältävien koulutuskurssien määrittäminen, järjestäminen ja analysointi
-> + Työntekijöiden rekrytointi ja hakijoiden seuranta
 
-<a name="develop-a-human-resources-strategy"></a>Henkilöstöhallinnon strategian kehittäminen
+<a name="develop-a-strategy-for-managing-your-human-resources"></a>Strategian kehittäminen henkilöstöhallinnon kehittämistä varten
 ---------------------------------------------------------
 
-Henkilöstöhallintoa käytettäessä voi päättää organisaation rakenteen elementtien, kuten osastojen, töiden ja toimien, avulla. Nämä ovat henkilöstöhallinnossa määritettäviä peruselementtejä. Yksittäiset työntekijät määritetään töihin liitettyihin toimiin.
+Talent-sovellusta käytettäessä voi päättää organisaation rakenteen elementtien, kuten osastojen, töiden ja toimien, avulla. Nämä ovat määritettäviä peruselementtejä. Yksittäiset työntekijät määritetään töihin liitettyihin toimiin.
 
 -   [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](departments-jobs-positions.md)
 -   [Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen](set-up-company-specific-hr-parameters.md)
 -   [Yritysten välisten henkilöstöhallinnon parametrien määrittäminen](set-up-hr-parameters-across-legal-entities.md) 
 
-## <a name="recruit-hire-and-motivate-employees"></a>Työntekijöiden rekrytointi, työhönotto ja motivointi
+## <a name="retain-and-motivate-employees"></a>Työntekijöiden sitouttaminen ja motivointi
 
-Työhönottoprojekteilla hallitaan avoimien toimien mainonnassa käytettävää sisältöä, ja ne voivat helpottaa avoimin työpaikkoihin lähettyjen hakemusten hallintaa. Voit seurata niiden avulla tietyn työhönottoprojektin työpaikkailmoituksiin saatuja vastauksiaja tai tiettyjä hakijoita sekä päivittää avoimien työpaikkojen tilatietoja. Voit myös palkata yksittäisiä hakijoita tai hallita joukkotyöhönottoprojekteja, jotka helpottavat useiden työntekijöiden palkkaamista esimerkiksi sesonkiluonteisissa tilanteissa.
-
--   [Työhönottoprosessin hallinta](manage-recruiting-process.md)
--   [Joukkotyöhönottoprojektit](mass-hire-projects.md) 
-
-Henkilöstön palkkauksen jälkeen voit määrittää suunnitelmat kompensaation tehokkaaseen ja tasapuoliseen hallintaan sekä hallita nimikkeitä, kuten tietokoneita ja puhelimia, joita organisaatio lainaa työntekijöille. Voit luoda kiinteitä ja muuttuvia kompensaatiosuunnitelmia sekä määrittää säännöt, joilla käytetään kyseisen suunnitelman ehdot täyttävää kompensaatiosuunnitelmaa.
+Voit määrittää suunnitelmat kompensaation tehokasta ja tasapuolista hallintaa varten sekä hallita nimikkeitä, kuten tietokoneita ja puhelimia, joita organisaatio lainaa työntekijöille. Voit luoda kiinteitä ja muuttuvia kompensaatiosuunnitelmia sekä määrittää säännöt, joilla käytetään kyseisen suunnitelman ehdot täyttävää kompensaatiosuunnitelmaa.
 
 -   [Kompensaatiosuunnitelmat](compensation-plans.md)
 -   [Kiinteiden kompensaatiosuunnitelmien luominen](create-fixed-compensation-plans.md)
@@ -84,10 +80,10 @@ Henkilöstön kompensaatio voi koostua palkan ja bonusten lisäksi myös muodost
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Työturvallisuuden ja vaatimustenmukaisuuden ylläpito
 
-Microsoft Dynamics AX voi auttaa ylläpitämään turvallista ja sovellettavan lainsäädännön mukaista työympäristöä. Esimerkiksi yhdysvaltalainen Americans with Disabilities Act sekä maahanmuutto- ja kansalaisuuslait ovat tällaisia lakeja. Voit vaikkapa hallita tiettyjen töiden fyysisiä vaatimuksia ja seurata apuvälinepyyntöjä, jotka auttavat organisaatiota optimoimaan työvoiman taitojen käytön.
+Talent voi auttaa ylläpitämään turvallista ja sovellettavan lainsäädännön mukaista työympäristöä. Esimerkiksi yhdysvaltalainen Americans with Disabilities Act sekä maahanmuutto- ja kansalaisuuslait ovat tällaisia lakeja. Voit vaikkapa hallita tiettyjen töiden fyysisiä vaatimuksia ja seurata apuvälinepyyntöjä, jotka auttavat organisaatiota optimoimaan työvoiman taitojen käytön.
 
--   [I-9-lomakkeen työsuhdetarkistukset](localizations/noam-usa-form-i-9-verification.md)
--   [Americans with Disabilities Act -vammaislainsäädännön noudattaminen](localizations/noam-usa-comply-ada.md)
+-   [I-9-lomakkeen työsuhdetarkistukset](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
+-   [Americans with Disabilities Act -vammaislainsäädännön noudattaminen](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada)
 
 ## <a name="gather-information-using-questionnaires"></a>Tietojen kerääminen kyselylomakkeilla
 
@@ -97,7 +93,4 @@ Voit suunnitella ja hallita kyselylomakkeita, joilla voit kerätä tietoja eri t
 -   [Kyselylomakkeen suunnitteleminen](design-questionnaires.md)
 -   [Kyselylomakkeen jakaminen ja täyttäminen](distribute-questionnaires.md)
 -   [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
-
-
-
 

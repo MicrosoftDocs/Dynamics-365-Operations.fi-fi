@@ -1,15 +1,15 @@
 ---
 title: Yritystietojen ja raportoinnin aloitussivu
-description: "Tässä aiheessa on luettelo Microsoft Dynamics 365 for Operationsin yritystietoja ja raportointia koskevista resursseista."
+description: "Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations -ohjelman yritystietojen ja raportoinnin resursseista."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3e97fda52acf6b61bf47eb30d53ce6597b4929d3
+ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
+ms.openlocfilehash: 448517531112636d553dc895b17c5644c9c1f0bc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä aiheessa on luettelo Microsoft Dynamics 365 for Operationsin yritystietoja ja raportointia koskevista resursseista. 
+Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations -ohjelman yritystietojen ja raportoinnin resursseista. 
 
 <a name="working-with-aggregate-data"></a>Koontitietojen käyttäminen
 ---------------------------
@@ -43,14 +43,14 @@ Tässä aiheessa on luettelo Microsoft Dynamics 365 for Operationsin yritystieto
 ## <a name="self-service-reporting"></a>Raportointi itsepalveluna
 -   [Power BI -integrointi](power-bi-integration.md)
 -   [Työtilojen Power BI -integroinnin konfigurointi](configure-power-bi-integration.md)
--   [Power BI -raportin luominen Microsoft Dynamics 365 for Operations -tietojen avulla](create-powerbi-report-data.md)
+-   [Power BI -raportin luominen Microsoft Dynamics 365 for Finance and Operations -tietojen avulla](create-powerbi-report-data.md)
 -   [Power BI -raportin ja koontinäytön luominen](create-powerbi-report-dashboard.md)
 -   [Vähittäismyyntikanavan suorituskyvyn Power BI -sisältö](retail-channel-performance-dashboard-power-bi-data.md)
 -   [Taloudellisen suorituskyvyn Power BI -sisältö](financial-performance-power-bi-content-pack.md)
 -   [Myynnin ja kannattavuuden suorituskyvyn Power BI -sisältö](sales-profitability-performance-content-pack.md)
--   [Dynamics 365 for Operations -tietojen lähettäminen Power BI:hin sähköisen raportoinnin konfiguroinnin avulla](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Finance and Operations -tietojen lähettäminen Power BI:hin sähköisen raportoinnin konfiguroinnin avulla](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Upotettujen analyysikokemusten muodostaminen Microsoft Dynamics 365 for Operations -asiakasohjelmassa
+## <a name="building-embedded-analytical-experiences-in-the-finance-and-operations-client"></a>Upotettujen analyysikokemusten muodostaminen Finance and Operations -asiakasohjelmassa
 -   [Upotetut yritystiedot](analytics.md#embedded-business-intelligence)
 -   [KPI-mallinnus ja -mukautus](analytics.md#kpi-modeling-and-customization)
 -   [Yritystietojen lisääminen työtiloihin](add-bi-workspaces.md)
@@ -58,7 +58,7 @@ Tässä aiheessa on luettelo Microsoft Dynamics 365 for Operationsin yritystieto
 
 ## <a name="document-reporting-and-printing"></a>Asiakirjan raportointi ja tulostus
 -   [Asiakirjojen raportointipalveluiden yleiskatsaus](document-reporting-services.md)
--   [Tulostaminen Dynamics 365 for Operations -sovelluksissa](print-documents.md)
+-   [Tulostaminen Finance and Operations -sovelluksissa](print-documents.md)
 -   [Verkkotulostimien käyttöönotto asentamalla asiakirjareitityksen agentti](install-document-routing-agent.md)
 -   [Asiakirjareitityksen agentin suorittaminen Windows-palveluna](run-document-routing-agent-as-windows-service.md)
 -   [Seuraavan sukupolven raportointiratkaisujen luominen](create-nextgen-reporting-solutions.md)
@@ -72,7 +72,7 @@ Tässä aiheessa on luettelo Microsoft Dynamics 365 for Operationsin yritystieto
 -   [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
 -   [Sähköisen raportoinnin kohteet](electronic-reporting-destinations.md)
 -   [Sähköiset raportoinnin määritysten lataaminen Lifecycle Servicesista](download-electronic-reporting-configuration-lcs.md)
--   [Dynamics 365 for Operations -tietojen lähettäminen Power BI:hin sähköisen raportoinnin konfiguroinnin avulla](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Finance and Operations -tietojen lähettäminen Power BI:hin sähköisen raportoinnin konfiguroinnin avulla](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [ER Konfiguraation lähteen luominen ja merkitseminen aktiiviseksi](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (tehtäväopas)
 -   [ER Toimialueen erityistietomallin suunnitteleminen](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (tehtäväopas)
 -   [ER Mallin yhdistämisen määrittäminen ja tietolähteen valitseminen](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (tehtäväopas)
