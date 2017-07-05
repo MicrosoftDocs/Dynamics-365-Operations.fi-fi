@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
-ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
@@ -32,18 +32,19 @@ ms.lasthandoff: 06/21/2017
 
 Microsoft Dynamics 365 for Talent yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Näitä prosesseja ovat työntekijän sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta. Se muodostaa myös kehyksen, jonka avulla henkilöstöhallinnon henkilöstö voi hallita valvottavia alueita.
 
-Dynamics 365 for Talent liittyy läheisesti Dynamics 365 for Finance and Operations, Enterprise Editionin henkilöstöhallintoon. Samat toiminnot voivat esiintyä molemmissa tuotteissa. Tämän vuoksi aiheissa, jotka liittyvät ensisijaisesti henkilöstöhallintoon, tuotenimi on Dynamics 365 for Finance and Operations, Enterprise Edition, ja aiheissa, jotka liittyvät ensisijaisesti Talent-sovellukseen, tuotenimi on Dynamics 365 for Talent. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
-
 Voit suorittaa Talent-sovelluksessa seuraavat tehtävät:
 
-> + Organisaatiorakenteiden hallinta
-> + Kattavien työntekijätietojen ylläpito työhönottamisesta työsuhteen päättymiseen
-> + Etupakettien määrittäminen ja hallinta, työntekijöiden rekisteröinti, huollettavia koskevan kattavuuden määrittäminen ja edunsaajien määrittäminen
-> + Poissaolokäytäntöjen luominen ja seuranta
-> + Profiilin perustuvan ajanhallinnan toteuttaminen ja hallinta sekä palkkahallintoon vietävien maksutietojen luonti
-> + Työntekijöiden osaamistietojen hallinta.
-> + Suorituksen arviointi ja työntekijän tavoitteiden toteuttaminen.
-> + Työjärjestykset, istunnot ja edistymissuunnitelmat sisältävien koulutuskurssien määrittäminen, järjestäminen ja analysointi
++ Organisaatiorakenteiden hallinta
++ Kattavien työntekijätietojen ylläpito työhönottamisesta työsuhteen päättymiseen
++ Etupakettien määrittäminen ja hallinta, työntekijöiden rekisteröinti, huollettavia koskevan kattavuuden määrittäminen ja edunsaajien määrittäminen
++ Poissaolokäytäntöjen luominen ja seuranta
++ Profiilin perustuvan ajanhallinnan toteuttaminen ja hallinta sekä palkkahallintoon vietävien maksutietojen luonti
++ Työntekijöiden osaamistietojen hallinta.
++ Suorituksen arviointi ja työntekijän tavoitteiden toteuttaminen.
++ Työjärjestykset, istunnot ja edistymissuunnitelmat sisältävien koulutuskurssien määrittäminen, järjestäminen ja analysointi
+
+> [!NOTE] 
+> Dynamics 365 for Talent liittyy läheisesti Dynamics 365 for Finance and Operations, Enterprise Editionin henkilöstöhallintoon. Samat toiminnot voivat esiintyä molemmissa tuotteissa. Tämän vuoksi aiheissa, jotka liittyvät ensisijaisesti henkilöstöhallintoon, tuotenimi on Dynamics 365 for Finance and Operations, Enterprise Edition, ja aiheissa, jotka liittyvät ensisijaisesti Talent-sovellukseen, tuotenimi on Dynamics 365 for Talent. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Strategian kehittäminen henkilöstöhallinnon kehittämistä varten
 ---------------------------------------------------------
