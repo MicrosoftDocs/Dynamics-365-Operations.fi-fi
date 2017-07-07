@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -31,6 +31,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="weighted-average-date"></a>Painotetun keskiarvon päivämäärä
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Painotetun keskiarvon päivämäärä on varastomalli, joka perustuu painotetun keskiarvon periaatteeseen. Painotetun keskiarvon periaatteessa varasto-otot arvotetaan varastoon vastaanotettujen nimikkeiden keskiarvon mukaan kunakin päivänä varaston sulkemiskauden aikana. Kun suoritat varaston sulkemisen käyttämällä painotetun keskiarvon päivämäärää, kaikki päivittäiset vastaanotot täsmäytetään virtuaaliseen varasto-ottoon. Virtuaalinen varasto-otto sisältää kyseisenä päivänä vastaanotetun kokonaismäärän ja -arvon. Tähän virtuaalivarasto-ottoon liittyy vastaava virtuaalivastaanotto, josta varasto-otot selvitetään. Näin kaikille varastostaotoille tulee sama keskimääräinen kustannus. Virtuaalivarastostaoton ja -vastaanoton voi nähdä virtuaalisiirtona, jota kutsutaan *painotetun keskiarvon varastonsulkemissiirroksi*. 
