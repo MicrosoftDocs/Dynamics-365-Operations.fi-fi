@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
@@ -30,6 +30,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-päivämäärä, fyysinen arvo ja merkintä
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 LIFO-päivämäärä on varastomalli, joka perustuu LIFO-periaatteeseen. Varasto-otot täsmäytetään viimeisiä varastovastaanottoja vasten varastotapahtuman päivämäärän perusteella. Jos LIFO-päivämäärä on määritetty eikä ennen ottoa ei ole vastaanottoa, otto täsmäytetään oton päivämäärän jälkeen tapahtuneiden vastaanottojen mukaan. Jos samana päivänä on useita ottoja, ne täsmäytetään järjestyksessä viimeinen otto, viimeinen vastaanotto. 
