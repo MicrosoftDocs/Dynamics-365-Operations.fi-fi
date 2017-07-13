@@ -1,16 +1,16 @@
 ---
 title: "Käytettävissä olevan varaston mobiilityötila"
-description: "Tässä aiheessa on tietoja käytettävissä olevan varaston mobiilityötilasta, joka on saatavilla Microsoft Dynamics 365 for Operationsin mobiilisovelluksessa. Käytettävissä olevan varaston mobiilityötila auttaa syventämään näkemyksiä varatusta ja käytettävissä olevasta varastosta mobiilisti milloin tahansa ja missä tahansa."
-author: YuyuScheller
+description: "Tässä ohjeaiheessa on tietoja käytettävissä olevan varaston mobiilityötilasta. Käytettävissä olevan varaston mobiilityötila auttaa syventämään näkemyksiä varatusta ja käytettävissä olevasta varastosta mobiilisti milloin tahansa ja missä tahansa."
+author: Mirzaab
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267094
 ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
 ms.search.region: global
@@ -19,24 +19,25 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7387df37e047d5ab7a90b696a6ffa249094499c4
+ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
+ms.openlocfilehash: d14f3510df45169e3b77ee9c4f3d0d9d389e6036
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="inventory-on-hand-mobile-workspace"></a>Käytettävissä olevan varaston mobiilityötila
+# Käytettävissä olevan varaston mobiilityötila
+<a id="inventory-on-hand-mobile-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Tässä ohjeaiheessa on tietoja **käytettävissä olevan varaston** mobiilityötilasta. Tämä työtila auttaa syventämään näkemyksiä varatusta ja käytettävissä olevasta varastosta milloin tahansa ja missä tahansa.
 
-Tässä aiheessa on tietoja käytettävissä olevan varaston mobiilityötilasta, joka on saatavilla Microsoft Dynamics 365 for Operationsin mobiilisovelluksessa. Käytettävissä olevan varaston mobiilityötila auttaa syventämään näkemyksiä varatusta ja käytettävissä olevasta varastosta mobiilisti milloin tahansa ja missä tahansa.
+Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
 
-<a name="overview-of-the-inventory-on-hand-mobile-workspace"></a>Yhteenveto käytettävissä olevan varaston mobiilityötilasta
---------------------------------------------------
-
+## Yleiskuvaus
+<a id="overview" class="xliff"></a>
 Yleensä yrityksillä on useita varaston toimituksia ja vastaanottoja joka päivä. Näiden siirrot muuttavat jatkuvasti käytettävissä olevan varaston tilaa. **Käytettävissä olevan varaston** mobiilityötilassa näet koko yrityksen käytettävissä olevan varaston tilan, jolloin voit hyödyntää uusimpia varastotietoja haluamassasi mobiililaitteessa. Riippumatta siitä, työskenteletkö fyysisessä varastossa, ostossa, myynnissä, tuotannossa, yrityksen johdossa tai muussa roolissa, voit käyttää käytettävissä olevan varaston tietoja milloin tahansa ja missä tahansa. 
 
 Mobiilityötila sisältää välittömän näkymän käytettävissä olevan varaston tilasta kaikissa tiloissa. Sen avulla voit tarkastella käytettävää varastoa eri tiloissa, nykyisiä materiaalivarauksia ja varaamatonta, käytettävissä olevaa varastoa. Voit myös syöttää nimikenumeron suorittaaksesi kyselyjä käytettävissä olevaan varastoon ja suorittaa suodatetun haun varastotuotteille ja varianteille. 
@@ -44,8 +45,8 @@ Mobiilityötila sisältää välittömän näkymän käytettävissä olevan vara
 Erityisesti mobiilityötilassa on nämä ominaisuudet:
 
 -   Voit etsiä tuotenumerolla tai tuotteen nimellä löytääksesi tuotteita ja tarkastellaksesi niiden käytettävissä olevan varaston tilaa.
-
 -   Voit tarkastella valittujen tuotteiden osalta seuraavia tietoja:
+
     -   Käytettävissä oleva varasto toimipaikan mukaan
     -   Käytettävissä oleva varasto fyysisten varastojen mukaan
     -   Käytettävissä oleva varasto sijaintien mukaan
@@ -53,19 +54,24 @@ Erityisesti mobiilityötilassa on nämä ominaisuudet:
     -   Käytettävissä oleva varasto varastotilan mukaan
     
 -   Tuotteen varastosaldo näkyy seuraavilla tavoilla:
+
     -   Fyysisen varaston mukaan (tämä näkymä edustaa kokonaismäärää).
     -   Fyysisen varaston varattujen mukaan (tämä näkymä edustaa varattua määrää).
     -   Käytettävissä olevan fyysisen varaston mukaan (tämä näkymä edustaa varaamatonta käytettävissä olevaa määrää).
 
-## <a name="prerequisites"></a>Edellytykset
-Varmista ennen **käytettävissä olevan varaston** mobiilityötilan käyttöä, että järjestelmänvalvoja on toteuttanut seuraavat vaatimukset.
+## Edellytykset
+<a id="prerequisites" class="xliff"></a>
+Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
+
+### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **käytettävissä olevan varaston** mobiilityötilassa. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations -versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Edellytys</th>
@@ -75,55 +81,55 @@ Varmista ennen **käytettävissä olevan varaston** mobiilityötilan käyttöä,
 </thead>
 <tbody>
 <tr class="odd">
-<td>Käytössä on oltava Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu ympäristöpäivitys 3.</td>
+<td>Ota KB 4013633 käyttöön.</td>
 <td>Järjestelmänvalvoja</td>
-<td>Jos organisaatiosi ei ole vielä ottanut Dynamics 365 for Operations -sovellusta käyttöön, järjestelmänvalvojasi tulisi tutustua <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Operations -kokeiluympäristön käyttöönotto</a>-ohjeeseen.</td>
+
+<td>KB 4013633 on X++-päivitys tai metatietojen hotfix-korjaus, joka sisältää <strong>käytettävissä olevan varaston</strong> mobiilityötilan. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4013633 -päivityksen.
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Lataa metatietojen hotfix-korjaus Microsoft Dynamics Lifecycle Servicesistä (LCS)</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>SCMMobile</strong>-mallin ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Ota käyttöönotettava paketti käyttöön</a>.</li>
+
+</ol></td>
 </tr>
 <tr class="even">
-<td>KB 4013633 on oltava asennettu.</td>
+<td>Julkaise <strong>käytettävissä olevan varaston</strong> mobiilityötila.</td>
 <td>Järjestelmänvalvoja</td>
-<td>KB 4013633 (X++-päivitys tai metatietojen korjaus) sisältää neljä mobiilia työtilaa toimitusketjun hallintaan. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4013633 -päivityksen:
-<ol>
-<li>Lataa KB 4013633 Microsoft Dynamicsin elinkaaripalveluista (LCS).</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>SCMMobile</strong>-mallin ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Asenna käyttöön otettava paketti</a> omaan Dynamics 365 for Operations -järjestelmääsi.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><strong>Käytettävissä olevan varaston</strong> mobiilityötila on myös julkaistava Dynamics 365 for Operations -mobiilisovellukseen.</td>
-<td>Järjestelmänvalvoja</td>
-<td><ol>
-<li>Käynnistä Dynamics 365 for Operations selaimessa.</li>
-<li>Valitse <strong>Järjestelmäparametrit</strong> -sivulta <strong>Mobiilityötilojen hallinta</strong>.</li>
-<li>Valitse <strong>käytettävissä olevan varaston</strong> työtila.</li>
-<li>Valitse <strong>Julkaise mobiilityötila</strong>.</li>
-</ol></td>
+<td>Lisätietoja on ohjeaiheessa <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobiilityötilan julkaiseminen</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Lataa ja asenna Dynamics 365 for Operations -mobiilisovellus
-Lataa ja asenna Microsoft Dynamics 365 for Operations -mobiilisovellus sovelluskaupastasi.
+## Mobiilisovelluksen lataaminen ja asentaminen
+<a id="download-and-install-the-mobile-app" class="xliff"></a>
 
--   Android - [Dynamics 365 for Operations Google Play Storessa](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone - [Dynamics 365 for Operations iTunes App Storessa](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
-## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Kirjaudu sisään Dynamics 365 for Operations -mobiilisovellukseen
+-   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
+
+## Kirjautuminen mobiilisovellukseen
+<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+
 1.  Käynnistä sovellus mobiililaitteessa.
-2.  Syötä Dynamics 365 for Operationsin URL-osoite.
-3.  annan yritys, johon kirjaudutaan. Kirjoita esimerkiksi **USMF**.
-4.  Ensimmäisellä kerralla, kun kirjaudut sisään, sinulta pyydetään Dynamics 365 for Operations -tilisi käyttäjänimeä ja salasanaa. Kirjota tunnistetiedot.
-5.  Kun olet kirjautunut sisään, näet yrityksen käytettävissä olevat työtilat. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, voit päivittää mobiilien työtilojen luettelon vetämällä alaspäin. 
+2.  Anna Dynamics 365 -URL-osoitteesi.
+3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
+4.  Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
 
     [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## <a name="view-the-onhand-inventory-for-a-product-by-using-the-inventory-onhand-mobile-workspace"></a>Tarkastele tuotteen käytettävissä olevaa määrää käytettävissä olevan varaston mobiilityötilan avulla
+## Tarkastele tuotteen käytettävissä olevaa varastoa käytettävissä olevan varaston mobiilityötilan avulla
+<a id="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace" class="xliff"></a>
+
 1.  Valitse mobiililaitteessasi **Käytettävissä oleva varasto** -työtila.
-2.  Valitse **Tarkistaa käytettävissä oleva varasto nimikkeelle**. Näet luettelon tuotteista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoa sovelluskehittäjille löytyy kohdasta [Dynamics 365 for Operationsin mobiiliympäristö](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
-3.  Jos nimike ei ole luettelossa, valitse **Hae lisää** tehdäksesi online-haun Dynamics 365 for Operationsissa. Etsi tuotteen numeron mukaan tai vaihda hakuun tuotteen nimen mukaan.
+
+2.  Valitse **Tarkistaa käytettävissä oleva varasto nimikkeelle**. Näet luettelon tuotteista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+3.  Jos nimike ei ole luettelossa, valitse **Hae lisää**. Etsi tuotteen numeron mukaan tai vaihda hakuun tuotteen nimen mukaan.
+
 4.  Valitse tuote. Jos nimikkeellä on kuva, kuva näkyy.
 5.  Valitse jokin seuraavista vaihtoehdoista tarkastellaksesi käytettävissä olevan varaston tilaa:
+
     -   Näytä käytettävissä oleva varasto toimipaikan mukaan
     -   Näytä käytettävissä oleva varaston fyysisen varaston mukaan
     -   Näytä käytettävissä oleva varasto sijaintien mukaan
@@ -134,9 +140,4 @@ Lataa ja asenna Microsoft Dynamics 365 for Operations -mobiilisovellus sovellusk
     -   Fyysisen varaston mukaan (tämä näkymä edustaa kokonaismäärää).
     -   Fyysisen varaston varattujen mukaan (tämä näkymä edustaa varattua määrää).
     -   Käytettävissä olevan fyysisen varaston mukaan (tämä näkymä edustaa varaamatonta käytettävissä olevaa määrää).
-
-
-
-
-
 

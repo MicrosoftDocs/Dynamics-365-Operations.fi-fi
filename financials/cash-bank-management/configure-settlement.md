@@ -3,7 +3,7 @@ title: Tilin konfiguroiminen
 description: "Tapahtumien tilityksen ajankohdan ja tavan määrittäminen voi olla monimutkaista, joten on tärkeää, että parametrit ymmärretään ja määritetään oikein. Näin ne vastaavat liiketoimintatarpeita. Tässä artikkelissa esitellään parametrit, joita käytetään ostoreskontran ja myyntireskontran tilityksessä."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
@@ -19,22 +19,23 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d3015004371aa041a7ee545df9a4c7f0e48ca31
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-settlement"></a>Tilin konfiguroiminen
+# Tilin konfiguroiminen
+<a id="configure-settlement" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tapahtumien tilityksen ajankohdan ja tavan määrittäminen voi olla monimutkaista, joten on tärkeää, että parametrit ymmärretään ja määritetään oikein. Näin ne vastaavat liiketoimintatarpeita. Tässä artikkelissa esitellään parametrit, joita käytetään ostoreskontran ja myyntireskontran tilityksessä. 
 
-Seuraavat parametrit vaikuttavat siihen, kuinka tilityksiä käsitellään Microsoft Dynamics 365 for Operationsissa. Tilitys on prosessi, jossa selvitetään lasku maksua tai hyvityslaskua vastaan. Nämä parametrit sijaitsevat **Tilityksen** alueella **Myyntireskontran parametrit** ja **Ostoreskontran parametrit** -sivuilla.
+Seuraavat parametrit vaikuttavat siihen, kuinka tilityksiä käsitellään Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa. Tilitys on prosessi, jossa selvitetään lasku maksua tai hyvityslaskua vastaan. Nämä parametrit sijaitsevat **Tilityksen** alueella **Myyntireskontran parametrit** ja **Ostoreskontran parametrit** -sivuilla.
 
 -   **Automaattinen tilitys** – Aseta asentoon **Kyllä** jos tapahtuma tulisi selvittää automaattisesti muita avoimia tapahtumia vastaan kirjauksen yhteydessä. Jos asetukseksi on määritetty asentoon **Ei**, käyttäjät voivat selvittää tapahtumat manuaalisesti maksujen syöttämisen yhteydessä tai myöhemmin käyttäen **Tapahtumat selvitetään**-sivulla.
 -   **Käteisalennuksen hallinta** – Määritä kuinka [käteisalennusta käsitellään, kun laskua on maksettu liikaa](cash-discount-handling-overpayments.md). Ylimaksulle käteisalennus voidaan vähentää, sitä voidaan käsitellä erotuksena tai se voi jäädä asiakkaan tai toimittajan tilille.
@@ -55,7 +56,7 @@ Seuraavat parametrit vaikuttavat siihen, kuinka tilityksiä käsitellään Micro
 -   **Alennus vastatilit (vain ostoreskontran)** – Määritä oletusarvoinen käteisalennuksen kirjanpitotili, jota tulee käyttää kirjanpidon käteisalennusten kohteille.
     -   **Päätilin käytetään toimittaja-alennuksille** – Käteisalennus kirjataan päätiliin, joka on määritetty **Käteisalennuksen asetukset** -sivulla.
     -   **Laskurivien tilit** – Käteisalennus kirjataan kirjanpitotileille alkuperäiseen laskuun.
--   **Merkitse rivit vapaatekstilaskuihin ja korkolaskuille (vain AR)** – Asetukseksi **Kyllä**käyttääksesi **Merkitse laskurivit** -painike **Asiakasmaksujen syöttäminen** -sivulla, **Kirjauskansion tosite-**, ja **Tilitä tapahtumat** -sivuilla. Tämän painikkeen avulla käyttäjät voivat merkitä yksittäisiä rivejä tilitystä varten.
+-   **Merkitse rivit vapaatekstilaskuihin ja korkolaskuille (vain AR)** – Asetukseksi **Kyllä** käyttääksesi **Merkitse laskurivit** -painike **Asiakasmaksujen syöttäminen** -sivulla, **Kirjauskansion tosite-**, ja **Tilitä tapahtumat** -sivuilla. Tämän painikkeen avulla käyttäjät voivat merkitä yksittäisiä rivejä tilitystä varten.
 -   **Priorisoi tilitystä (vain AR)** – Asetukseksi **Kyllä** käyttääksesi **Merkitse prioriteetin mukaan** -painiketta **Syötä asiakasmaksut** ja **Tilitä tapahtumat** -sivuilla. Tämän painikkeen avulla käyttäjät voivat liittää esimääritetyn selvitysjärjestyksen tapahtumiin.  Kun tilitysjärjestys on otettu käyttöön tapahtumassa, järjestystä ja maksun kohdistusta voidaan muokata ennen kirjausta.
 -   **Käytä automaattisten selvitysten priorisointia** – Määritä tämän asetuksen arvoksi **Kyllä**, käyttääksesi määritettyä priorisointijärjestystä, kun tapahtumia selvitetään automaattisesti. Tämä kenttä on käytettävissä vain, jos **Priorisoi selvitys**- ja **Automaattinen tilitys** -asetukset on määritetty arvoon **Kyllä**.
 

@@ -1,9 +1,9 @@
 ---
 title: Vanhentuneet ominaisuudet
-description: "Tässä aiheessa kuvataan ominaisuuksia, jotka on poistettu tai suunniteltu poistettaviksi Dynamics 365 for Operations -järjestelmästä. Siinä luetellaan myös ominaisuuksia, jotka on poistettu Dynamics AX 7.0 -julkaisuversioista."
+description: "Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan."
 author: sericks007
 manager: AnnBe
-ms.date: 04/18/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,25 +17,64 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 46a6f054f1cc5162e19d962964eb6eeb780087a6
+ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
+ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
 
-# <a name="deprecated-features"></a>Vanhentuneet ominaisuudet
+# Vanhentuneet ominaisuudet
+<a id="deprecated-features" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan.
 
-Tässä aiheessa kuvataan ominaisuuksia, jotka on poistettu tai suunniteltu poistettaviksi Dynamics 365 for Operations -järjestelmästä. Siinä luetellaan myös ominaisuuksia, jotka on poistettu Dynamics AX 7.0 -julkaisuversioista.
+## Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivityksessä poistetut ominaisuudet
+<a id="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a>
 
-<a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Ominaisuudet, jotka on poistettu Dynamics 365 for Operations -versiosta 1611 ympäristöpäivityksessä 3
+### Varaston mobiililaiteportaali
+<a id="warehouse-mobile-devices-portal" class="xliff"></a>
+
+Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon. Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition ei enää tue tätä komponenttia. Alkuperäinen, käyttäjäkokemusta parantava sovellus, on korvannut WMDP-toiminnot. 
+
+|                                  |                                                 |
+|----------------------------------|-------------------------------------------------|
+| **Poiston syy**       | Sama toiminto.                        |
+| **Onko toinen ominaisuus korvannut?** | Kyllä. Finance and Operations – varastointi on korvannut tämän ominaisuuden. Lisätietoja asennuksesta ja ennakkoedellytyksistä on ohjeaiheessa [Microsoft Dynamics 365 for Finance and Operationsin varastointisovelluksen asentaminen ja määrittäminen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Vaikutuksen alaiset moduulit**             | Varaston hallinta, kuljetusten hallinta |
+
+### Pankkitilin täsmäytyksen lisätoimintojen manuaalisen täsmäytyksen täsmäytyssääntö
+<a id="advanced-bank-reconciliation-matching-rule-for-manual-matching" class="xliff"></a>
+
+Täsmäytyssäännöllä valittiin ja merkittiin pankkitosite, kun asiakirjat täsmäytettiin manuaalisesti täsmäytyslaskentataulukossa.
+
+|                                  |                                                                                        |
+|----------------------------------|----------------------------------------------------------------------------------------|
+| **Poiston syy**       | Rajoitettu käyttö.                                                                         |
+| **Onko toinen ominaisuus korvannut?** | Nro Täsmäytettäviä asiakirjoja etsitään sarakkeen suodatusominaisuuksilla. |
+| **Vaikutuksen alaiset moduulit**             | Maksuliikenteen hallinta                                                               |
+
+### Windows 8 -tablettisovellus
+<a id="windows-8-tablet-app" class="xliff"></a>
+
+Windows 8 -tablettisovelluksessa oli kulujen vienti- ja hyväksymistoiminnot.
+
+|                                  |                                                                                          |
+|----------------------------------|------------------------------------------------------------------------------------------|
+| **Poiston syy**       | Finance and Operationsia voi käyttää tableteissa. Tablettisovellusta ei enää tarvita. |
+| **Onko toinen ominaisuus korvannut?** | Nro                                                                                      |
+| **Vaikutuksen alaiset moduulit**             | Matkalaskut                                                                       |
+
+
+Ominaisuudet, jotka on poistettu Dynamics 365 for Operations -versiosta 1611 ympäristöpäivityksessä 3
+<a id="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3" class="xliff"></a>
 ---------------------------------------------------------------------------------------------
 
-### <a name="aeb-payment-formats-for-spain"></a>Espanjan AEB-maksumuodot
+### Espanjan AEB-maksumuodot
+<a id="aeb-payment-formats-for-spain" class="xliff"></a>
 
 Consejo Superior Bancario -maksumuotoja käytetään maksusuoritustiedostojen lähettämiseen pankkiin asiakkaan maksuja ja toimittajamaksuja varten. Muotojen sisällön määrittää Asociación Española de Banca. Siihen sisältyy Cuaderno 19, 32, 58, 34.
 
@@ -45,7 +84,8 @@ Consejo Superior Bancario -maksumuotoja käytetään maksusuoritustiedostojen l�
 | Onko toinen ominaisuus korvannut? | Kyllä, Espanjan ISO20022-tilisiirto ja suoraveloituksen maksumuoto |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra, ostoreskontra                                    |
 
-### <a name="bank-payments-transfer-for-lithuania"></a>Liettuan pankkiohjelmamaksujen siirto
+### Liettuan pankkiohjelmamaksujen siirto
+<a id="bank-payments-transfer-for-lithuania" class="xliff"></a>
 
 Pankkiohjelmamaksujen siirto luodaan ja tulostetaan Liettuan maksunsiirron (LT) vientimuodon avulla. Liettuan markkina-alue aloitti LITASin, yhdistetyn sähköisen pankkijärjestelmän, käytön vuonna 2005.
 
@@ -55,7 +95,8 @@ Pankkiohjelmamaksujen siirto luodaan ja tulostetaan Liettuan maksunsiirron (LT) 
 | Onko toinen ominaisuus korvannut? | Kyllä, Liettuan ISO20022-tilisiirron maksumuoto |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                           |
 
-### <a name="bbs-direkte-remittering-payment-formats-for-norway"></a>Norjan BBS Direkte Remittering -maksumuodot
+### Norjan BBS Direkte Remittering -maksumuodot
+<a id="bbs-direkte-remittering-payment-formats-for-norway" class="xliff"></a>
 
 BBS Direkte Remittering -maksumuotoja ovat asiakkaan maksun perittävän vienti (suoraveloitus) ja palautussanoman tuonti.
 
@@ -65,7 +106,8 @@ BBS Direkte Remittering -maksumuotoja ovat asiakkaan maksun perittävän vienti 
 | Onko toinen ominaisuus korvannut? | Norjan AvtaleGiro- asiakkaan maksumuotoa voidaan käyttää suoraveloituksen sanomien luomiseen. Palautussanoman tuominen toteutetaan tulevissa versioissa. |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra, ostoreskontra                                                                                                                          |
 
-### <a name="chart-of-accounts-tool-for-spain"></a>Espanjan tilikartta-työkalu
+### Espanjan tilikartta-työkalu
+<a id="chart-of-accounts-tool-for-spain" class="xliff"></a>
 
 Tätä työkalua käytetään, kun Espanjan tilikartta edellyttää suuria muutoksia. Käyttäjä voi tuoda uuden tilikartan Microsoft Excel- tai tekstimuodossa ja tuoda myös raportteja.
 
@@ -75,7 +117,8 @@ Tätä työkalua käytetään, kun Espanjan tilikartta edellyttää suuria muuto
 | Onko toinen ominaisuus korvannut? | Nro             |
 | Vaikutuksen alaiset moduulit             | Kirjanpito |
 
-### <a name="dom80-payment-format-for-belgium"></a>Belgian Dom80-maksumuoto
+### Belgian Dom80-maksumuoto
+<a id="dom80-payment-format-for-belgium" class="xliff"></a>
 
 Vanha Belgian maksukehotuksen maksumuoto (suoraveloitus).
 
@@ -85,7 +128,8 @@ Vanha Belgian maksukehotuksen maksumuoto (suoraveloitus).
 | Onko toinen ominaisuus korvannut? | Kyllä Belgian SO 20022 -suoraveloituksen maksumuoto |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                    |
 
-### <a name="dtaezag-payment-formats-for-switzerland"></a>Sveitsin DTA/EZAG-maksumuodot
+### Sveitsin DTA/EZAG-maksumuodot
+<a id="dtaezag-payment-formats-for-switzerland" class="xliff"></a>
 
 DTA/EZAG-muodot integroidaan ESR-järjestelmään, koska niissä voidaan käsitellä viitenumeroa. Koska viitenumerot eivät ole pakollisia, näitä muotoja voidaan käyttää kaikkien toimittajamaksujen käsittelyssä. Muotoja käytetään yrityksissä, joissa on pankkitili muussa kuin "Postfinance"-sijainnissa.
 
@@ -95,7 +139,8 @@ DTA/EZAG-muodot integroidaan ESR-järjestelmään, koska niissä voidaan käsite
 | Onko toinen ominaisuus korvannut? | Kyllä, Sveitsin ISO20022-tilisiirron maksumuoto |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                             |
 
-### <a name="edifact-dirdeb-payment-format-for-austria"></a>Itävallan ISOEDIFACT-DIRDEB-suoraveloituksen maksumuoto
+### Itävallan ISOEDIFACT-DIRDEB-suoraveloituksen maksumuoto
+<a id="edifact-dirdeb-payment-format-for-austria" class="xliff"></a>
 
 Maksukehotuksen EDIFACT-DIRDEB-maksumuoto (suoraveloitus).
 
@@ -105,7 +150,8 @@ Maksukehotuksen EDIFACT-DIRDEB-maksumuoto (suoraveloitus).
 | Onko toinen ominaisuus korvannut? | Kyllä, Itävallan ISO 20022 -suoraveloituksen maksumuoto |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                    |
 
-### <a name="edivat-for-belgium"></a>Belgian EDIVAT
+### Belgian EDIVAT
+<a id="edivat-for-belgium" class="xliff"></a>
 
 EDIVAT on Belgian vanhentunut standardi sähköiselle ilmoitukselle suojatun sähköpostin kautta. Microsoft Dynamics AX 2012 säilyttää vain luku -ratkaisun historiallisten tietojen käyttämiseksi.
 
@@ -115,7 +161,8 @@ EDIVAT on Belgian vanhentunut standardi sähköiselle ilmoitukselle suojatun sä
 | Onko toinen ominaisuus korvannut? | Nro                                   |
 | Vaikutuksen alaiset moduulit             | Kirjanpito                       |
 
-### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a>Norjan eGiro EDIFACT CREMUL- maksun tuontimuoto
+### Norjan eGiro EDIFACT CREMUL- maksun tuontimuoto
+<a id="egiro-edifact-cremul-payment-import-format-for-norway" class="xliff"></a>
 
 eGiro perustuu YK:n kansainväliseen EDIFACT CREMUL (Multiple Credit Advice Message) -standardiin, jota käytetään asiakasmaksujen automaattisessa kirjauksessa. eGiro on Microsoft Dynamics AX:ssä toteutettu asiakkaan maksun tuontimuoto.
 
@@ -125,7 +172,8 @@ eGiro perustuu YK:n kansainväliseen EDIFACT CREMUL (Multiple Credit Advice Mess
 | Onko toinen ominaisuus korvannut? | Nro Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                                                       |
 
-### <a name="external-inventory-for-poland"></a>Puolan ulkoinen varasto
+### Puolan ulkoinen varasto
+<a id="external-inventory-for-poland" class="xliff"></a>
 
 Tavaroiden tunnistetiedot, jotka saadaan toimittajan myynnistä ilman ostoa. Ulkoisessa varastossa käsitellyt tavarat eivät vaikuta vakiovarastoon ja ne voidaan myydä ja ostaa automaattisesti. Tämä prosessi luo todelliset varastosiirrot.
 
@@ -135,7 +183,8 @@ Tavaroiden tunnistetiedot, jotka saadaan toimittajan myynnistä ilman ostoa. Ulk
 | Onko toinen ominaisuus korvannut? | Kyllä, saapuvan tavaralähetyksen perustoiminnot |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra, varastonhallinta          |
 
-### <a name="financial-reports-generator-for-eastern-europe"></a>Itä-Euroopan raportin muodostustoiminto
+### Itä-Euroopan raportin muodostustoiminto
+<a id="financial-reports-generator-for-eastern-europe" class="xliff"></a>
 
 Työkalua käytetään tiedonkeruun määritykseen kirjanpitoa ja veroraportteja varten sekä tietojen viemiseksi XLS- ja DOC- raporttimalleihin.
 
@@ -145,7 +194,8 @@ Työkalua käytetään tiedonkeruun määritykseen kirjanpitoa ja veroraportteja
 | Onko toinen ominaisuus korvannut? | Nro Työkalu korvataan sähköiset raportoinnin konfiguraatioilla tulevissa julkaisuversioissa. |
 | Vaikutuksen alaiset moduulit             | kirjanpito                                                                           |
 
-### <a name="import-of-customer-payment-transactions-for-finland"></a>Suomen asiakasmaksutapahtumien tuominen
+### Suomen asiakasmaksutapahtumien tuominen
+<a id="import-of-customer-payment-transactions-for-finland" class="xliff"></a>
 
 Voit valita Suomen maksujen tuontimuodon asiakasmaksutapahtumien tuomiselle pankin antamasta ulkoisesta tiedostosta.
 
@@ -155,7 +205,8 @@ Voit valita Suomen maksujen tuontimuodon asiakasmaksutapahtumien tuomiselle pank
 | Onko toinen ominaisuus korvannut? | Nro Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                                                       |
 
-### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Suomen maksutapahtumien tuominen kirjanpidon kirjauskansioon
+### Suomen maksutapahtumien tuominen kirjanpidon kirjauskansioon
+<a id="import-of-payment-transactions-into-a-general-ledger-journal-for-finland" class="xliff"></a>
 
 Suomen erityismuotoa käytetään kirjanpidon tapahtumien tuomiseksi kirjanpitoon.
 
@@ -165,7 +216,8 @@ Suomen erityismuotoa käytetään kirjanpidon tapahtumien tuomiseksi kirjanpitoo
 | Onko toinen ominaisuus korvannut? | Nro Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                                                       |
 
-### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Belgian Isabel-synkronoitu integrointi (CIS)
+### Belgian Isabel-synkronoitu integrointi (CIS)
+<a id="integration-with-isabel-synchronized-cis-for-belgium" class="xliff"></a>
 
 Isabel on Euroopan sähköisen maksuliikenteen ja tiedonsiirron yleinen standardi Belgiassa.
 
@@ -175,7 +227,8 @@ Isabel on Euroopan sähköisen maksuliikenteen ja tiedonsiirron yleinen standard
 | Onko toinen ominaisuus korvannut? | Nro Maksumuodot, joita ei voi enää käyttää, korvataan ISO20022-tilisiirron maksumuodolla Belgiassa. |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                                                                                     |
 
-### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a>Espanjan tilikartan ja kirjanpitosääntöjen muutokset
+### Espanjan tilikartan ja kirjanpitosääntöjen muutokset
+<a id="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain" class="xliff"></a>
 
 Tätä toimintoa käytetään Espanjan tilikartan ja kirjanpitosääntöjen muutoksiin. Se yhdistää tilejä ja auttaa vanhan tilikartan muuttamisessa uudeksi tilikartaksi ja vertaa edellistä tilikautta uuteen tilikauteen, vaikka ne on kirjattu eri tilinumeroille.
 
@@ -185,7 +238,8 @@ Tätä toimintoa käytetään Espanjan tilikartan ja kirjanpitosääntöjen muut
 | Onko toinen ominaisuus korvannut? | Nro             |
 | Vaikutuksen alaiset moduulit             | Kirjanpito |
 
-### <a name="pagamento-fornittori-vendor-payment-format"></a>Toimittajan Pagamento Fornittori -maksumuoto
+### Toimittajan Pagamento Fornittori -maksumuoto
+<a id="pagamento-fornittori-vendor-payment-format" class="xliff"></a>
 
 Vanha Italian tilisiirron maksumuoto.
 
@@ -195,7 +249,8 @@ Vanha Italian tilisiirron maksumuoto.
 | Onko toinen ominaisuus korvannut? | Kyllä, Italian ISO20022-tilisiirron maksumuoto |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                       |
 
-### <a name="payment-export-formats-for-estonia"></a>Viron maksun vientimuodot
+### Viron maksun vientimuodot
+<a id="payment-export-formats-for-estonia" class="xliff"></a>
 
 Pankin maksun viennissä käytetään Telehansa- ja Teleservice-muotoja.
 
@@ -205,7 +260,8 @@ Pankin maksun viennissä käytetään Telehansa- ja Teleservice-muotoja.
 | Onko toinen ominaisuus korvannut? | Kyllä, Viron ISO20022-tilisiirron maksumuoto |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                         |
 
-### <a name="payment-file-archive-for-norway"></a>Norjan maksutiedostoarkisto
+### Norjan maksutiedostoarkisto
+<a id="payment-file-archive-for-norway" class="xliff"></a>
 
 Kun maksutiedostot on luotu, tiedostoarkistoon arkistoidaan kaikki luodut tiedostot, vaikka tiedostot on aiemmin kirjoitettu tai luettu.
 
@@ -215,7 +271,8 @@ Kun maksutiedostot on luotu, tiedostoarkistoon arkistoidaan kaikki luodut tiedos
 | Onko toinen ominaisuus korvannut? | Kyllä, sähköisen raportoinnin arkistoidut työt                            |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra, myyntireskontra, organisaation hallinto |
 
-### <a name="payment-import-formats-for-estonia"></a>Viron maksun tuontimuodot
+### Viron maksun tuontimuodot
+<a id="payment-import-formats-for-estonia" class="xliff"></a>
 
 Pankin maksun tuonnissa käytetään Telehansa- ja TeleTeenus-muotoja.
 
@@ -225,7 +282,8 @@ Pankin maksun tuonnissa käytetään Telehansa- ja TeleTeenus-muotoja.
 | Onko toinen ominaisuus korvannut? | Nro Muodot korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                                                        |
 
-### <a name="performance-management-goal-workflow"></a>Suorituskyvyn hallintatavoite -työnkulku
+### Suorituskyvyn hallintatavoite -työnkulku
+<a id="performance-management-goal-workflow" class="xliff"></a>
 
 Suorituskyvyn hallinta sisältää tavoitteiden hallinnan ja integroinnin suorituskykyarvioiden kanssa.
 
@@ -235,7 +293,8 @@ Suorituskyvyn hallinta sisältää tavoitteiden hallinnan ja integroinnin suorit
 | Onko toinen ominaisuus korvannut? | Nro Tavoitteet näkyvät esimiehille esimiehen itsepalveluportaalin kautta, ja esimies voi muuttaa ja tarkastella niitä. |
 | Vaikutuksen alaiset moduulit             | Henkilöstöresurssien hallinta                                                                                                 |
 
-### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Ruotsin Postgirot- ja Postgirot Utland -maksumuodot
+### Ruotsin Postgirot- ja Postgirot Utland -maksumuodot
+<a id="postgirot-and-postgirot-utland-payment-formats-for-sweden" class="xliff"></a>
 
 Ruotsin Postgirot- ja Postgirot Utland -maksumuodot.
 
@@ -245,7 +304,8 @@ Ruotsin Postgirot- ja Postgirot Utland -maksumuodot.
 | Onko toinen ominaisuus korvannut? | Kyllä, Ruotsin ISO20022-tilisiirron maksumuoto |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                        |
 
-### <a name="radio-frequency-identifier"></a>Radiotaajuinen etätunnistus
+### Radiotaajuinen etätunnistus
+<a id="radio-frequency-identifier" class="xliff"></a>
 
 Radiotaajuinen etätunnistus (RFID) on tiedonkeräysmenetelmä, jossa käytetään tunnistetietojen tallentamiseen sähköisiä tunnisteita, ja tunnistetiedot luetaan ilman näköyhteyttä.
 
@@ -255,7 +315,8 @@ Radiotaajuinen etätunnistus (RFID) on tiedonkeräysmenetelmä, jossa käytetä�
 | Onko toinen ominaisuus korvannut? | Nro                                            |
 | Vaikutuksen alaiset moduulit             | Inventoinnin- ja varastonhallinta                          |
 
-### <a name="report-about-state-invoices-numbering-for-latvia"></a>Latvian valtion määrittämän laskujen numeroinnin raportti
+### Latvian valtion määrittämän laskujen numeroinnin raportti
+<a id="report-about-state-invoices-numbering-for-latvia" class="xliff"></a>
 
 Latvian lainsäädäntö sisältää myyntilaskujen numerointia koskevia erityissääntöjä. Toiminnon avulla voidaan määrittää erityiset numerot myyntilaskuille käyttäjän tai käyttäjäryhmän mukaan. Tämän jälkeen voit luoda raportin tai XML-tiedoston. Voit myös tulostaa raportin käytetyistä laskunumeroista.
 
@@ -265,7 +326,8 @@ Latvian lainsäädäntö sisältää myyntilaskujen numerointia koskevia erityis
 | Onko toinen ominaisuus korvannut? | Nro                                                                                                                       |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                                                                                      |
 
-### <a name="set-up-the-names-of-the-manager-and-general-accountant-of-a-company-for-lithuania"></a>Liettuaa koskevat johtajan ja kirjanpitäjän nimien asetukset
+### Liettuaa koskevat johtajan ja kirjanpitäjän nimien asetukset
+<a id="set-up-the-names-of-the-manager-and-general-accountant-of-a-company-for-lithuania" class="xliff"></a>
 
 Yrityksen johtajan ja kirjanpitäjän nimet voidaan määrittää yrityksen tietoihin ja käyttää paikallisten raporttien tulostuksessa.
 
@@ -275,7 +337,8 @@ Yrityksen johtajan ja kirjanpitäjän nimet voidaan määrittää yrityksen tiet
 | Onko toinen ominaisuus korvannut? | Kyllä, viranomaisten asetuksia käytetään samaan tarkoitukseen.   |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra, myyntireskontra, maksuliikenteen hallinta |
 
-### <a name="telepay-payment-formats-for-norway"></a>Norjan Telepay-maksumuodot
+### Norjan Telepay-maksumuodot
+<a id="telepay-payment-formats-for-norway" class="xliff"></a>
 
 Telepay-maksumuodot sisältävät toimittajan maksun viennin (tilisiirrolla) ja asiakkaan maksukehotuksen (suoraveloitus).
 
@@ -285,7 +348,8 @@ Telepay-maksumuodot sisältävät toimittajan maksun viennin (tilisiirrolla) ja 
 | Onko toinen ominaisuus korvannut? | Kyllä, Norjan ISO20022-tilisiirron maksumuoto ja asiakkaan maksun AvtaleGiro-muoto |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra, ostoreskontra                                                          |
 
-### <a name="vendor-payment-export-formats-for-finland"></a>Suomen toimittajan maksun vientimuodot
+### Suomen toimittajan maksun vientimuodot
+<a id="vendor-payment-export-formats-for-finland" class="xliff"></a>
 
 Kaksi eri muotoa maksujen vientiä varten käytettävissä Suomessa. LM02 (FI) käytetään kotimaan maksuille ja LUM2 (FI) ulkomaanmaksuille.
 
@@ -295,18 +359,21 @@ Kaksi eri muotoa maksujen vientiä varten käytettävissä Suomessa. LM02 (FI) k
 | Onko toinen ominaisuus korvannut? | Kyllä, Suomen ISO20022-tilisiirron maksumuoto |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                         |
 
-### <a name="workflow-for-creating-goals"></a>Tavoitteiden luomisen työnkulku
+### Tavoitteiden luomisen työnkulku
+<a id="workflow-for-creating-goals" class="xliff"></a>
 
 Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista, joita oli käytettävissä suorituskyvyn hallintaprosessin koordinoinnin apuna.
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Poiston syy       | Suorituskyvyn hallinta on suunniteltu kokonaan uudelleen Microsoft Dynamics 365 for Operations -järjestelmässä.                                                                                                                                                                                                                                        |
+| Poiston syy       | Suorituskyvyn hallinta on suunniteltu kokonaan uudelleen Microsoft Dynamics 365 for Finance and Operationsissa.                                                                                                                                                                                                                                        |
 | Onko toinen ominaisuus korvannut? | Uudelleen suunnitellulla suorituskyvyn hallintatoiminnolla voidaan seurata tarkemmin tavoitteiden sisältöä ja mittauksia, joiden avulla voidaan seurata etenemistä, sekä tukidokumentaation liittämistä. Tavoitteet voidaan tallentaa malleina ja käyttää uudelleen. Tämän toiminnon avulla voit määrittää lisätavoitteita työntekijöille entistä nopeammin. |
 | Vaikutuksen alaiset moduulit             | Henkilöstöresurssien hallinta                                                                                                                                                                                                                                                                                                               |
 
-## <a name="features-deprecated-in-dynamics-ax-70-releases"></a>Dynamics AX:n 7.0 -julkaisuversioista poistetut ominaisuudet
-### <a name="ability-to-cancel-changes-to-a-vendor-invoice"></a>Mahdollisuus peruuttaa toimittajan laskun muutokset
+## Dynamics AX:n 7.0 -julkaisuversioista poistetut ominaisuudet
+<a id="features-deprecated-in-dynamics-ax-70-releases" class="xliff"></a>
+### Mahdollisuus peruuttaa toimittajan laskun muutokset
+<a id="ability-to-cancel-changes-to-a-vendor-invoice" class="xliff"></a>
 
 |                              |                         |
 |------------------------------|-------------------------|
@@ -314,7 +381,8 @@ Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista,
 | Onko toinen ominaisuus korvannut? | Ei                      |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra        |
 
-### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- ja AxBC-integraatiot
+### AIF-, AxD- ja AxBC-integraatiot
+<a id="aif-axd-and-axbc-integrations" class="xliff"></a>
 
 Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten järjestelmien kanssa palveluina näyttäytyvänä liiketoimintalogiikkana. Dynamics AX sisältää asiakirjoihin ja .NET Business Connectoriin (AxBC) perustuvia palveluja. Asiakirja luodaan XML-muotoisena. XML sisältää otsikkotiedot, joka lisäämällä luodaan *sanoma*, joka siirretään Dynamics AX:ään ja siitä pois. Asiakirjoja ovat esimerkiksi myynti- ja ostotilaukset. Käytännössä kuitenkin lähes mikä tahansa yksikkö, kuten asiakas, voidaan ilmaista asiakirjana. Asiakirjoihin perustuvat palvelut käyttävät **Axd &lt;*asiakirja*&gt; -luokkia.
 
@@ -324,7 +392,8 @@ Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten j
 | Onko toinen ominaisuus korvannut? | Dynamics AX:n nykyisessä versiossa tämä ominaisuus on korvattu tietojen tuonti- ja vientiympäristöllä, joka tukee toistuvaa joukkotuontia ja -vientiä. AxBC:ssä on suositeltavaa käyttää varsinaisia tauluja. |
 | Vaikutuksen alaiset moduulit             | AxDs, AxBCs ja AIF                                                                                                                                                                                     |
 
-### <a name="boms-without-bom-versions"></a>Tuoterakenteet ilman tuoterakenneversioita
+### Tuoterakenteet ilman tuoterakenneversioita
+<a id="boms-without-bom-versions" class="xliff"></a>
 
 Kun **Tuoterakenneversiot**-määritysavain poistettiin käytöstä, tuoterakenneversiot piilotettiin kaikissa lomakkeissa ja järjestelmä pakotti 1:1-suhteen vapautettujen tuotteiden ja tuoterakenteiden välille. **Tuoterakenneversiot**-määritysavainta ei voi poistaa Dynamics AX:n nykyisessä versiossa.
 
@@ -334,7 +403,8 @@ Kun **Tuoterakenneversiot**-määritysavain poistettiin käytöstä, tuoterakenn
 | Onko toinen ominaisuus korvannut? | Ei                                                                                      |
 | Vaikutuksen alaiset moduulit             | Tuotetietojen hallinta, inventoinnin- ja varastonhallinta                                    |
 
-### <a name="brazilian-bordero"></a>Brasilian Bordero
+### Brasilian Bordero
+<a id="brazilian-bordero" class="xliff"></a>
 
 Erityismaksutapa Brasilian yrityksille
 
@@ -344,7 +414,8 @@ Erityismaksutapa Brasilian yrityksille
 | Onko toinen ominaisuus korvannut? | Nro                                                                                                    |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                                                                      |
 
-### <a name="brazilian-sintegra-statement"></a>Brasilian Sintegra-raportti
+### Brasilian Sintegra-raportti
+<a id="brazilian-sintegra-statement" class="xliff"></a>
 
 Liittovaltion veroraportti ICMS-verolle
 
@@ -354,7 +425,8 @@ Liittovaltion veroraportti ICMS-verolle
 | Onko toinen ominaisuus korvannut? | Nro Käyttäjät voivat käyttää yleistä sähköistä raportointityökalua raportin määrittämiseen, jos se on pakollinen erityistilanteissa. |
 | Vaikutuksen alaiset moduulit             | Verokirjat                                                                                                          |
 
-### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brasilian NF-e:n SCAN-varatila
+### Brasilian NF-e:n SCAN-varatila
+<a id="brazilian-scan-contingency-mode-for-nf-e" class="xliff"></a>
 
 (SCAN) varaympäristöä käytetään Nota Fiscal eletrônica (NF e) -tilan luontiin, vientiin ja tuontiin, kun Secretaria da Fazenda (SEFAZ) -ympäristö ei ole käytettävissä.
 
@@ -364,7 +436,8 @@ Liittovaltion veroraportti ICMS-verolle
 | Onko toinen ominaisuus korvannut? | Nro                                                                          |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra                                                         |
 
-### <a name="business-analyzer"></a>Business Analyzer
+### Business Analyzer
+<a id="business-analyzer" class="xliff"></a>
 
 Käyttäjät voivat tarkastella tällä mobiilisovelluksella tärkeitä liiketoiminnan mittareita.
 
@@ -374,7 +447,8 @@ Käyttäjät voivat tarkastella tällä mobiilisovelluksella tärkeitä liiketoi
 | Onko toinen ominaisuus korvannut? | Microsoft PowerBI:n taloudellisen suorituskyvyn seurannan sisältöpaketti sisältää tärkeät taloudelliset mittarit, jotka sisältyivät aiemmin Business Analyzeriin. |
 | Vaikutuksen alaiset moduulit             | Kirjanpito                                                                                                                                                |
 
-### <a name="business-statistics"></a>Liiketoimintatilastot
+### Liiketoimintatilastot
+<a id="business-statistics" class="xliff"></a>
 
 Niiden liiketoiminnan tilastotietokyselyiden asetukset, jotka voivat auttaa organisaation suorituskyvyn analysoinnissa
 
@@ -384,7 +458,8 @@ Niiden liiketoiminnan tilastotietokyselyiden asetukset, jotka voivat auttaa orga
 | Onko toinen ominaisuus korvannut? | Uudet BI-ratkaisut Dynamics AX:n nykyisessä versiossa                                      |
 | Vaikutuksen alaiset moduulit             | Hankinta, ostoreskontra, myynti ja markkinointi, myyntireskontra         |
 
-### <a name="change-document-date-function-in-invoice-approval-journal"></a>Hyväksyttyjen laskujen kirjauskansion tiedoston päivämäärän muutostoiminto
+### Hyväksyttyjen laskujen kirjauskansion tiedoston päivämäärän muutostoiminto
+<a id="change-document-date-function-in-invoice-approval-journal" class="xliff"></a>
 
 |                              |                                                                         |
 |------------------------------|-------------------------------------------------------------------------|
@@ -392,7 +467,8 @@ Niiden liiketoiminnan tilastotietokyselyiden asetukset, jotka voivat auttaa orga
 | Onko toinen ominaisuus korvannut? | Kyllä. Kirjatun toimittajatapahtuman tiedoston päivämäärää voidaan muuttaa. |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                                        |
 
-### <a name="clieop03-payment-format-for-the-netherlands"></a>Alankomaiden ClieOp03-maksumuoto
+### Alankomaiden ClieOp03-maksumuoto
+<a id="clieop03-payment-format-for-the-netherlands" class="xliff"></a>
 
 |                              |                                                                                                            |
 |------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -400,7 +476,8 @@ Niiden liiketoiminnan tilastotietokyselyiden asetukset, jotka voivat auttaa orga
 | Onko toinen ominaisuus korvannut? | SEPA-maksujen vienti                                                                                       |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                        |
 
-### <a name="compliance-center"></a>Compliance Center
+### Compliance Center
+<a id="compliance-center" class="xliff"></a>
 
 Compliance Center oli Sarbanes-Oxley-lakiin liittyvien vaatimustenmukaisuusaloitteiden asiakirjavaatimusten hallintaan tarkoitettu yritysportaalisivusto.
 
@@ -410,7 +487,8 @@ Compliance Center oli Sarbanes-Oxley-lakiin liittyvien vaatimustenmukaisuusaloit
 | Onko toinen ominaisuus korvannut? | Ei                                                                                                                     |
 | Vaikutuksen alaiset moduulit             | Yhteensopivuus ja sisäinen valvonta                                                                                       |
 
-### <a name="connector-for-microsoft-dynamics"></a>Microsoft Dynamicsin yhdistin
+### Microsoft Dynamicsin yhdistin
+<a id="connector-for-microsoft-dynamics" class="xliff"></a>
 
 Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Microsoft Dynamics ERP -sovelluksiin.
 
@@ -420,7 +498,8 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Mic
 | Onko toinen ominaisuus korvannut? | Dynamics Integrator                                      |
 | Vaikutuksen alaiset moduulit             | Microsoft Dynamicsin yhdistin                         |
 
-### <a name="container-unit-and-multi-dimension-on-hand"></a>Säilöyksikkö ja monidimensioinen varasto
+### Säilöyksikkö ja monidimensioinen varasto
+<a id="container-unit-and-multi-dimension-on-hand" class="xliff"></a>
 
 |                              |                                                                                                                                                                 |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -428,7 +507,8 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Mic
 | Onko toinen ominaisuus korvannut? | Kyllä. AX2012:n jälkeen tämä toiminto on korvattu konsolidoidulla erätilaustoiminnoilla. Tämä ominaisuusjoukko sisältää konsolidoidun varastonäkymän. |
 | Vaikutuksen alaiset moduulit             | Tuotetietojen hallinta, tuotannonhallinta, varastonhallinta, myynti ja markkinointi                                                                   |
 
-### <a name="cue-group-metadata"></a>Pinoryhmän metatiedot
+### Pinoryhmän metatiedot
+<a id="cue-group-metadata" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -436,7 +516,8 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Mic
 | Onko toinen ominaisuus korvannut? | Ei                                                                                                                                                                                                                            |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                                                           |
 
-### <a name="cue-metadata"></a>Pinon metatiedot
+### Pinon metatiedot
+<a id="cue-metadata" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -444,7 +525,8 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Mic
 | Onko toinen ominaisuus korvannut? | Käyttöönotetut ruudun metatiedot mahdollistavat joustavamman mallinnuksen. Voit esimerkiksi mallintaa nykyiset määrät, siirtymisen ja suorituskykyilmaisimet (KPI:t). Määräruudun metatiedot korvaavat suoraan pinon metatiedot. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                                                                     |
 
-### <a name="danish-check-format"></a>Tanskalainen sekkilomake
+### Tanskalainen sekkilomake
+<a id="danish-check-format" class="xliff"></a>
 
 |                              |                                                                                                                         |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -452,7 +534,8 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Mic
 | Onko toinen ominaisuus korvannut? | Ei                                                                                                                      |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                     |
 
-### <a name="data-partitions"></a>Tieto-osiot
+### Tieto-osiot
+<a id="data-partitions" class="xliff"></a>
 
 Tieto-osiot erottavat Microsoft Dynamics AX:n tietokannan tiedot loogisesti.
 
@@ -462,7 +545,8 @@ Tieto-osiot erottavat Microsoft Dynamics AX:n tietokannan tiedot loogisesti.
 | Onko toinen ominaisuus korvannut? | Tieto-osiot korvataan tulevissa versioissa tukemalla useita tietokantoja tai Dynamics AX:n esiintymiä.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-### <a name="delimitation"></a>Rajoitus
+### Rajoitus
+<a id="delimitation" class="xliff"></a>
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
@@ -470,7 +554,8 @@ Tieto-osiot erottavat Microsoft Dynamics AX:n tietokannan tiedot loogisesti.
 | Onko toinen ominaisuus korvannut? | Ei                                     |
 | Vaikutuksen alaiset moduulit             | Työajan seuranta                    |
 
-### <a name="desktop-client"></a>Työpöytäasiakasohjelma
+### Työpöytäasiakasohjelma
+<a id="desktop-client" class="xliff"></a>
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -478,17 +563,19 @@ Tieto-osiot erottavat Microsoft Dynamics AX:n tietokannan tiedot loogisesti.
 | Onko toinen ominaisuus korvannut? | Uusi verkkoasiakasohjelma perustuu työpöytälomakkeen metatietoihin ja ohjelmointimalliin, jota on muokattu luomaan monipuolinen verkkoympäristö. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                    |
 
-### <a name="direct-database-connection"></a>Suora tietokantayhteys
+### Suora tietokantayhteys
+<a id="direct-database-connection" class="xliff"></a>
 
 Dynamics AX 2012 R3 -versiossa Retail Modern POS -sovellus voi muodostaa suoran yhteyden kanavatietokantaan samalla tavalla, kuin Enterprise POS. Tämä oli lisänä Retail Modern POS -sovelluksen normaalille tietoliikenneyhteydelle, joka kulki vähittäismyynnin palvelimen välityksellä.  
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Poiston syy       | Suora tietokantayhteys edellytti matalamman suojauksen, ja sitä käytettiin pääasiassa korkeamman suorituskyvyn saavuttamiseen. Dynamics 365 for Operationsissa tehtyjen suorituskyky- ja tietoturvaparannusten vuoksi tämä toiminnallisuus aiheuttaa enemmän ongelmia, kuin mitä se ratkaisee. |
+| Poiston syy       | Suora tietokantayhteys edellytti matalamman suojauksen, ja sitä käytettiin pääasiassa korkeamman suorituskyvyn saavuttamiseen. Finance and Operationsissa tehtyjen suorituskyky- ja tietoturvaparannusten vuoksi tämä toiminnallisuus aiheuttaa enemmän ongelmia kuin mitä se ratkaisee. |
 | Onko toinen ominaisuus korvannut? | Nro Vain vakiomuotoinen vähittäismyynnin palvelinyhteys on enää tuettu.    |
 | Vaikutuksen alaiset moduulit             | Kanavatietokanta/Retail Modern POS                                    |
 
-### <a name="dutch-swift-mt940"></a>Alankomaiden SWIFT MT940
+### Alankomaiden SWIFT MT940
+<a id="dutch-swift-mt940" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -496,7 +583,8 @@ Dynamics AX 2012 R3 -versiossa Retail Modern POS -sovellus voi muodostaa suoran 
 | Onko toinen ominaisuus korvannut? | Kyllä. Pankkitilin täsmäytyksen lisätoiminnot on korvannut tämän toiminnon. Lisäksi camt.053 ISO20022 -tiliotteen tuonnin käyttöönottoa suunnitellaan kirjauskansioon seuraavassa Dynamics AX -päivityksessä. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                                                                   |
 
-### <a name="ebilanz-xbrl-for-germany"></a>eBilanz (XBRL Saksassa)
+### eBilanz (XBRL Saksassa)
+<a id="ebilanz-xbrl-for-germany" class="xliff"></a>
 
 Tämä toiminto mahdollisti XBRL (eXtensible Business Reporting Language) -tulostuksen, joka on tarkoitettu erityisesti Saksan eBilanz-luokitusta varten.
 
@@ -506,7 +594,8 @@ Tämä toiminto mahdollisti XBRL (eXtensible Business Reporting Language) -tulos
 | Onko toinen ominaisuus korvannut? | Toimintoa ei korvata toisella ominaisuudella, mutta Saksan markkinoilla on saatavana useista erikoistuneita XBRL-paketteja, joissa on monipuolisia XBRL-toimintoja. |
 | Vaikutuksen alaiset moduulit             | Management Reporter                                                                                                                                                    |
 
-### <a name="enterprise-portal-client"></a>Yritysportaalin asiakasohjelma
+### Yritysportaalin asiakasohjelma
+<a id="enterprise-portal-client" class="xliff"></a>
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -514,7 +603,8 @@ Tämä toiminto mahdollisti XBRL (eXtensible Business Reporting Language) -tulos
 | Onko toinen ominaisuus korvannut? | Uusi verkkoasiakasohjelma perustuu työpöytälomakkeen metatietoihin ja ohjelmointimalliin, jota on muokattu luomaan monipuolinen verkkoympäristö. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                    |
 
-### <a name="environmental-sustainability"></a>Ekologinen kestävyys
+### Ekologinen kestävyys
+<a id="environmental-sustainability" class="xliff"></a>
 
 |                              |                                                    |
 |------------------------------|----------------------------------------------------|
@@ -522,7 +612,8 @@ Tämä toiminto mahdollisti XBRL (eXtensible Business Reporting Language) -tulos
 | Onko toinen ominaisuus korvannut? | Ei                                                 |
 | Vaikutuksen alaiset moduulit             | Yhteensopivuus ja sisäisen tarkistus, ostoreskontra |
 
-### <a name="form-activex-and-managed-host-controls"></a>Lomakkeen ActiveX:n ja hallitun ylläpidon ohjausobjektit
+### Lomakkeen ActiveX:n ja hallitun ylläpidon ohjausobjektit
+<a id="form-activex-and-managed-host-controls" class="xliff"></a>
 
 |                              |                                                                                                                                                                                               |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -530,7 +621,8 @@ Tämä toiminto mahdollisti XBRL (eXtensible Business Reporting Language) -tulos
 | Onko toinen ominaisuus korvannut? | Laajennettava ohjausobjektiympäristö tukee uusien HTML-, CSS- ja JavaScript-pohjaisten ohjausobjektien luomista ja on ensimmäisen luokan ohjausobjekti Microsoft Visual Studio Tooling -ympäristössä. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                           |
 
-### <a name="generate-prenotes-by-using-a-batch"></a>Esilaskujen muodostus erätoiminnolla
+### Esilaskujen muodostus erätoiminnolla
+<a id="generate-prenotes-by-using-a-batch" class="xliff"></a>
 
 Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edelleen luoda esilaskun.
 
@@ -540,7 +632,8 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 | Onko toinen ominaisuus korvannut? | Esilaskuja voidaan luoda edelleen ja käyttäjä päättää sijainnin, johon tiedosto tallennetaan.   |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra, myyntireskontra, maksuliikenteen hallinta                                        |
 
-### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a>Saksan DTAUS-maksun vienti ja tiliotteen tuonti (kokonaissummat ja tapahtumat)
+### Saksan DTAUS-maksun vienti ja tiliotteen tuonti (kokonaissummat ja tapahtumat)
+<a id="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -548,7 +641,8 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 | Onko toinen ominaisuus korvannut? | Kyllä. SEPA-maksun vienti ja pankkitilin täsmäytyksen lisätoiminnot tiliotteiden tuomiseen on korvannut tämän toiminnon. Lisäksi camt.053 ISO20022 -tiliotteen tuonnin käyttöönottoa suunnitellaan kirjauskansioon seuraavassa Dynamics AX -päivityksessä. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                                                                                                                            |
 
-### <a name="german-dtazv-payment-format"></a>Saksan DTAZV-maksumuoto
+### Saksan DTAZV-maksumuoto
+<a id="german-dtazv-payment-format" class="xliff"></a>
 
 |                              |                                                                                                    |
 |------------------------------|----------------------------------------------------------------------------------------------------|
@@ -556,7 +650,8 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 | Onko toinen ominaisuus korvannut? | SEPA-maksujen vienti                                                                               |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                |
 
-### <a name="german-mt940-import"></a>Saksassa tuominen MT940-muodossa
+### Saksassa tuominen MT940-muodossa
+<a id="german-mt940-import" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -564,7 +659,8 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 | Onko toinen ominaisuus korvannut? | Kyllä. Pankkitilin täsmäytyksen lisätoiminnot on korvannut tämän toiminnon. Lisäksi camt.053 ISO20022 -tiliotteen tuonnin käyttöönottoa suunnitellaan kirjauskansioon seuraavassa Dynamics AX -päivityksessä. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                                                                   |
 
-### <a name="german-xml-eu-sales-list"></a>Saksan XML-muotoinen EU-myyntiluettelo
+### Saksan XML-muotoinen EU-myyntiluettelo
+<a id="german-xml-eu-sales-list" class="xliff"></a>
 
 |                              |                                                                                                                                                                                    |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -572,7 +668,8 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 | Onko toinen ominaisuus korvannut? | Ei                                                                                                                                                                                 |
 | Vaikutuksen alaiset moduulit             | Vero                                                                                                                                                                                |
 
-### <a name="gl-ssrs-reports"></a>Kirjanpidon SSRS-raportit
+### Kirjanpidon SSRS-raportit
+<a id="gl-ssrs-reports" class="xliff"></a>
 
 Seuraavia valikkovaihtoehtoja sisältävät raportit on poistettu: **Pääkirjan yhteenveto**, **Yksityiskohtainen pääkirja**, **Tilikartta**, **Kirjausketju**, **Saldot** ja **Saldoluettelo**.
 
@@ -582,7 +679,8 @@ Seuraavia valikkovaihtoehtoja sisältävät raportit on poistettu: **Pääkirjan
 | Onko toinen ominaisuus korvannut? | Management Reporter (Dynamics AX:n nykyisessä versiossa sen nimi on **Talousraportointi**)                                                  |
 | Vaikutuksen alaiset moduulit             | Kirjanpito                                                                                                                               |
 
-### <a name="infopart-and-formpart-metadata"></a>InfoPart- ja FormPart-metatiedot
+### InfoPart- ja FormPart-metatiedot
+<a id="infopart-and-formpart-metadata" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -590,7 +688,8 @@ Seuraavia valikkovaihtoehtoja sisältävät raportit on poistettu: **Pääkirjan
 | Onko toinen ominaisuus korvannut? | InfoPart-metatiedot oli yksinkertaistettu lomakemääritelmä, ja se on muunnettu lomakkeeksi päivitystyökaluilla. Lomakkeeseen viittaavat FormPart-metatiedot on korvattu suoralla viittauksella, joka luodaan päivitystyökaluilla. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                                                            |
 
-### <a name="main-account-list-page"></a>Päätilin luettelosivu
+### Päätilin luettelosivu
+<a id="main-account-list-page" class="xliff"></a>
 
 Luettelo yrityksen tileistä ja niihin liittyvät saldotiedot
 
@@ -600,7 +699,8 @@ Luettelo yrityksen tileistä ja niihin liittyvät saldotiedot
 | Onko toinen ominaisuus korvannut? | **Päätilit** sisältää saman tililuettelon kuin **Päätili**-luettelosivu. **Päätilit**-ruudukkonäkymä näyttää myös pienemmän ruudukkomaisen näkymän. |
 | Vaikutuksen alaiset moduulit             | Kirjanpito                                                                                                                                                                     |
 
-### <a name="malaysia-and-singapore-bank-cash-flow-report"></a>Malesian ja Singaporen pankin kassavirtaraportti
+### Malesian ja Singaporen pankin kassavirtaraportti
+<a id="malaysia-and-singapore-bank-cash-flow-report" class="xliff"></a>
 
 Toiminnolla voitiin tulostaa kassavirtaraportti, joka sisältää valittujen pankkitilien saapuvien ja lähtevien kassavirtojen tapahtumat sekä tiedot määritetyltä päivämääräväliltä.
 
@@ -610,7 +710,8 @@ Toiminnolla voitiin tulostaa kassavirtaraportti, joka sisältää valittujen pan
 | Onko toinen ominaisuus korvannut? | Pankkitapahtuman kysely                                            |
 | Vaikutuksen alaiset moduulit             | Maksuliikenteen hallinta                                                |
 
-### <a name="mexican-cfd-electronic-invoice"></a>Meksikon sähköinen CFD-lasku
+### Meksikon sähköinen CFD-lasku
+<a id="mexican-cfd-electronic-invoice" class="xliff"></a>
 
 Tällä ominaisuudella voitiin luoda Meksikossa sähköisiä laskuja käyttämällä CFD (Comprobante Fiscal Digital) -menetelmää, jossa yritys allekirjoittaa laskun pyytämällä liittyvän valtuutuksen viranomaiselta. Tämä ominaisuus tarjoaa myös kuukausiraportin, joka koostui kaikista kyseisen kuukauden aikana tehdyistä sähköisistä laskuista.
 
@@ -620,7 +721,8 @@ Tällä ominaisuudella voitiin luoda Meksikossa sähköisiä laskuja käyttämä
 | Onko toinen ominaisuus korvannut? | Ei                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Vaikutuksen alaiset moduulit             | Myyntireskontra, projekti                                                                                                                                                                                                                                                                                                                                                                              |
 
-### <a name="mexico-realized-and-unrealized-vat"></a>Meksikon toteutunut ja toteutumaton ALV
+### Meksikon toteutunut ja toteutumaton ALV
+<a id="mexico-realized-and-unrealized-vat" class="xliff"></a>
 
 Microsoft Dynamics AX 2012:lla hallittiin toteutumatonta arvonlisäveroa (ALV:tä) käyttämällä vain Meksikoa koskevaa toteutumattoman veron toimintoa.
 
@@ -630,7 +732,8 @@ Microsoft Dynamics AX 2012:lla hallittiin toteutumatonta arvonlisäveroa (ALV:t�
 | Onko toinen ominaisuus korvannut? | Kyllä. Tämä toiminto on korvattu ydintoimintojen tavallisessa suoritusperusteisella arvonlisäverotoiminnolla. |
 | Vaikutuksen alaiset moduulit             | Vero                                                                                                                 |
 
-### <a name="microsoft-outlook-integration"></a>Microsoft Outlook -integrointi
+### Microsoft Outlook -integrointi
+<a id="microsoft-outlook-integration" class="xliff"></a>
 
 |                              |                                                                                |
 |------------------------------|--------------------------------------------------------------------------------|
@@ -638,7 +741,8 @@ Microsoft Dynamics AX 2012:lla hallittiin toteutumatonta arvonlisäveroa (ALV:t�
 | Onko toinen ominaisuus korvannut? | Kyllä                                                                            |
 | Vaikutuksen alaiset moduulit             | Myynti ja markkinointi                                                            |
 
-### <a name="payroll-information-in-human-resources"></a>Henkilöstöhallinnon palkanlaskentatiedot
+### Henkilöstöhallinnon palkanlaskentatiedot
+<a id="payroll-information-in-human-resources" class="xliff"></a>
 
 Henkilöstöhallinnon palkanlaskentatiedot
 
@@ -648,7 +752,8 @@ Henkilöstöhallinnon palkanlaskentatiedot
 | Onko toinen ominaisuus korvannut? | **Edut**, **Ansiot** ja muut liittyvät Yhdysvaltojen palkanlaskenta -kohdassa olleet sivut on määritetty uudelleen ja sisältyvät nyt henkilöstöhallinnon perusmäärityksiin. Tämä auttaa tukemaan ulkoista palkanlaskennan käsittelyä. Toimintoa käytetään valitsemalla **Henkilöstöhallinta 1** &gt; **Palkanlaskenta**-määritysavain. |
 | Vaikutuksen alaiset moduulit             | Henkilöstöhallinto, palkanlaskenta                                                                                                                                                                                                                                                                                                     |
 
-### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Varastonhallinnan kirjauskansioiden yksityinen esto
+### Varastonhallinnan kirjauskansioiden yksityinen esto
+<a id="private-blocking-of-inventory-and-warehouse-management-journals" class="xliff"></a>
 
 Varastokirjauskansiot eivät enää tue kirjauskansion merkitsemistä yksityiseksi valitulle käyttäjälle. Vain käyttäjäryhmien käyttämää kirjauskansioiden yksityistä estoa ja estoa muokkauksen aikana tuetaan.
 
@@ -658,7 +763,8 @@ Varastokirjauskansiot eivät enää tue kirjauskansion merkitsemistä yksityisek
 | Onko toinen ominaisuus korvannut? | Ei                                     |
 | Vaikutuksen alaiset moduulit             | Varastonhallinta                   |
 
-### <a name="product-builder"></a>Tuotekonfiguraattori
+### Tuotekonfiguraattori
+<a id="product-builder" class="xliff"></a>
 
 Tuotekonfiguraattoria käytettiin määrittämään dynaamisesti nimikkeitä myyntitilauksesta, ostotilauksesta, tuotantotilauksesta, myyntitarjouksesta, projektitarjouksesta tai nimiketarpeesta. Käyttäjä voi valita asiakkaan vaatimusten mukaisia arvoja mallinnusmuuttujia sisältävän tuotemallin perusteella ja saada näin yksilöllisen tuotevariantin, jolla on tuoterakenne ja reitti.
 
@@ -668,7 +774,8 @@ Tuotekonfiguraattoria käytettiin määrittämään dynaamisesti nimikkeitä myy
 | Onko toinen ominaisuus korvannut? | Tuotekonfiguraatio                                                                                                                                                                                   |
 | Vaikutuksen alaiset moduulit             | Tuotetietojen hallinta, myynti ja markkinointi                                                                                                                                                     |
 
-### <a name="rename-product-dimension"></a>Nimeä tuotedimensio uudelleen
+### Nimeä tuotedimensio uudelleen
+<a id="rename-product-dimension" class="xliff"></a>
 
 Tällä toiminnolla voi vaihtaa yhden kolmesta vakiotuotedimension nimestä (koko, väri tai tyyli) liiketoiminnan vaatimuksiin paremmin sopivaan nimeen. Uudelleennimeäminen koski kaikkia otsikoita, joissa tuotedimension nimeä käytettiin.
 
@@ -678,7 +785,8 @@ Tällä toiminnolla voi vaihtaa yhden kolmesta vakiotuotedimension nimestä (kok
 | Onko toinen ominaisuus korvannut? | Nro                                                                            |
 | Vaikutuksen alaiset moduulit             | Tuotetietojen hallinta                                                |
 
-### <a name="retail-server-connectivity-using-http"></a>Vähittäismyynnin palvelinyhteys HTTP-protokollalla
+### Vähittäismyynnin palvelinyhteys HTTP-protokollalla
+<a id="retail-server-connectivity-using-http" class="xliff"></a>
 
 Dynamics AX 2012 R3 -versiossa vähittäismyynnin palvelinyhteyttä oli mahdollista käyttää (suojaamattomalla) HTTP-yhteydellä. Tämä oli lisänä vakioyhteyteen HTTPS-protokollalla.
 
@@ -688,7 +796,8 @@ Dynamics AX 2012 R3 -versiossa vähittäismyynnin palvelinyhteyttä oli mahdolli
 | Onko toinen ominaisuus korvannut? | Nro Vain vakiomuotoinen HTTPS-yhteys on enää tuettu.                                                                           |
 | Vaikutuksen alaiset moduulit             | Vähittäismyynnin palvelin                                                |
 
-### <a name="role-center-pages"></a>Roolikeskus-sivut
+### Roolikeskus-sivut
+<a id="role-center-pages" class="xliff"></a>
 
 |                              |                                                                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -696,7 +805,8 @@ Dynamics AX 2012 R3 -versiossa vähittäismyynnin palvelinyhteyttä oli mahdolli
 | Onko toinen ominaisuus korvannut? | Uusi Työtila-lomakemalli käyttäjille prosessikeskeisen rakenteen, jonka kautta on helppo käyttää kyseisen prosessin usein käytettyjä tehtäviä.                       |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                      |
 
-### <a name="sales-tax-jurisdictions"></a>Arvonlisäveroviranomaiset
+### Arvonlisäveroviranomaiset
+<a id="sales-tax-jurisdictions" class="xliff"></a>
 
 |                              |                                              |
 |------------------------------|----------------------------------------------|
@@ -704,7 +814,8 @@ Dynamics AX 2012 R3 -versiossa vähittäismyynnin palvelinyhteyttä oli mahdolli
 | Onko toinen ominaisuus korvannut? | Ei                                           |
 | Vaikutuksen alaiset moduulit             | Yhdysvaltojen arvonlisävero                                 |
 
-### <a name="shipping-carrier-interface"></a>Rahdinkuljettajan liittymä
+### Rahdinkuljettajan liittymä
+<a id="shipping-carrier-interface" class="xliff"></a>
 
 |                              |                                                                                                                                                 |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -712,7 +823,8 @@ Dynamics AX 2012 R3 -versiossa vähittäismyynnin palvelinyhteyttä oli mahdolli
 | Onko toinen ominaisuus korvannut? | Kyllä. Kuljetustenhallinta korvaa tämän toiminnon osittain, mutta perusvarastonhallinta (WMS I) ei ole vielä korvannut. |
 | Vaikutuksen alaiset moduulit             | Myynti ja markkinointi, inventoinnin- ja varastonhallinta                                                                                                       |
 
-### <a name="sites-services"></a>Sites Services -palvelut
+### Sites Services -palvelut
+<a id="sites-services" class="xliff"></a>
 
 Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liiketoimintaprosesseja Internetiin.
 
@@ -722,7 +834,8 @@ Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liike
 | Onko toinen ominaisuus korvannut? | Ei                                                                                                                                       |
 | Vaikutuksen alaiset moduulit             | Henkilön työhönotto, Palvelupyynnön hallinta, Tarjouspyynnöt, Toimittajan rekisteröinti                                                                  |
 
-### <a name="ssas-demand-forecasting-strategy"></a>SSAS – kysynnän ennustestrategia
+### SSAS – kysynnän ennustestrategia
+<a id="ssas-demand-forecasting-strategy" class="xliff"></a>
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
@@ -730,7 +843,8 @@ Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liike
 | Onko toinen ominaisuus korvannut? | Azure Machine Learningin kysynnän ennusteen strategia                           |
 | Vaikutuksen alaiset moduulit             | Suunnittelu                                                                     |
 
-### <a name="travel-requisitions"></a>Matkahankinnat
+### Matkahankinnat
+<a id="travel-requisitions" class="xliff"></a>
 
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
@@ -738,7 +852,8 @@ Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liike
 | Onko toinen ominaisuus korvannut? | Ei                                                              |
 | Vaikutuksen alaiset moduulit             | Matkalaskut                                              |
 
-### <a name="vendor-invoice-pool-excluding-posting-details"></a>Toimittajan laskupooli, ei sisällä kirjaustietoja
+### Toimittajan laskupooli, ei sisällä kirjaustietoja
+<a id="vendor-invoice-pool-excluding-posting-details" class="xliff"></a>
 
 |                              |                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -746,7 +861,8 @@ Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liike
 | Onko toinen ominaisuus korvannut? | Laskun kirjauskansion työnkulkutoiminnot                                                           |
 | Vaikutuksen alaiset moduulit             | Ostoreskontra                                                                                        |
 
-### <a name="virtual-company-accounts"></a>Virtuaaliyritykset
+### Virtuaaliyritykset
+<a id="virtual-company-accounts" class="xliff"></a>
 
 Dynamics AX ei enää tue virtuaaliyritystoimintoa. Virtuaaliyritystoiminnon avulla käyttäjät pystyivät määrittämään tauluja yritysjoukon jaettavaksi. Toiminnon kuvaus on artikkelissa [Yrityksen tilit ja virtuaaliyrityksen tilit](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). Toiminto ryhmittää virtuaaliyrityksille määritetyiksi tauluiksi. Virtuaaliyritykset ovat olemassa olevien "oikeiden" yritysten ryhmiä. Kyselyjä luomalla kaikki virtuaaliyrityksen yritykset voivat käyttää liitettyjen taulukokoelmien taulujen tietoja.
 
@@ -775,7 +891,8 @@ Dynamics AX ei enää tue virtuaaliyritystoimintoa. Virtuaaliyritystoiminnon avu
 </tbody>
 </table>
 
-### <a name="warehouse-management-ii"></a>Varastonhallinta II
+### Varastonhallinta II
+<a id="warehouse-management-ii" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                                                                                             |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -783,7 +900,8 @@ Dynamics AX ei enää tue virtuaaliyritystoimintoa. Virtuaaliyritystoiminnon avu
 | Onko toinen ominaisuus korvannut? | AX 2012 R3:ssa, Microsoft Dynamics AX 2012 R3 CU8:ssa ja Microsoft Dynamics AX 2012 R3 CU9:ssa julkaistu **varastonhallintamoduuli** korvaa Varastonhallinta II:n ominaisuudet. Uudessa moduulissa on kehittyneemmät ominaisuudet ja joustavammat varaston hallintaprosessit kuin Varastonhallinta II:ssa. |
 | Vaikutuksen alaiset moduulit             | Varaston hallinta, myynti ja markkinointi, hankinta                                                                                                                                                                                                                                         |
 
-### <a name="worker-reminders-in-human-resources"></a>Henkilöstöhallinnon työntekijän muistutukset
+### Henkilöstöhallinnon työntekijän muistutukset
+<a id="worker-reminders-in-human-resources" class="xliff"></a>
 
 Henkilöstöhallinnon palkanlaskentatiedot
 
@@ -793,7 +911,8 @@ Henkilöstöhallinnon palkanlaskentatiedot
 | Onko toinen ominaisuus korvannut? | Ei              |
 | Vaikutuksen alaiset moduulit             | Henkilöstö |
 
-### <a name="workplanner"></a>Työn suunnittelu
+### Työn suunnittelu
+<a id="workplanner" class="xliff"></a>
 
 |                              |                                                                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -801,16 +920,13 @@ Henkilöstöhallinnon palkanlaskentatiedot
 | Onko toinen ominaisuus korvannut? | Ei, mutta **Profiilirelaatio**-sivu, joka avautuu **Profiiliryhmät**-sivulta, tukee samoja liiketoimintaskenaarioita mitä vanhentuneella **Työn suunnittelu**-sivulla käytettiin. |
 | Vaikutuksen alaiset moduulit             | Työajan seuranta                                                                                                                                                  |
 
-### <a name="x-financial-statements"></a>X++-raportit
+### X++-raportit
+<a id="x-financial-statements" class="xliff"></a>
 
 |                              |                                                                                             |
 |------------------------------|---------------------------------------------------------------------------------------------|
 | Poiston syy       | Toinen ominaisuus on korvannut tämän toiminnon.                                    |
 | Onko toinen ominaisuus korvannut? | Management Reporter (Dynamics AX:n nykyisessä versiossa sen nimi on **Talousraportointi**) |
 | Vaikutuksen alaiset moduulit             | Kirjanpito                                                                              |
-
-
-
-
 
 

@@ -1,83 +1,94 @@
 ---
 title: Taloushallinnon dimensiot
-description: "Tässä artikkelissa kerrotaan erityyppisistä taloushallinnon dimensioista ja niiden määrittämisestä."
-author: RobinARH
+description: "Tässä ohjeaiheessa kerrotaan erityyppisistä taloushallinnon dimensioista ja niiden määrittämisestä."
+author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ems.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
-ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 25871
-ms.assetid: af54621c-c8be-4b72-b6df-dcf886c40ce4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 01f189b8de3f0cc707dcc54f4cde75aed95b8e3f
+ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
+ms.openlocfilehash: e82d53b3f6b4c8d3e2363f26576331e1d03434d9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="financial-dimensions"></a>Taloushallinnon dimensiot
+# Taloushallinnon dimensiot
+<a id="financial-dimensions" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Tässä ohjeaiheessa käsitellään erityyppisiä taloushallinnon dimensioita ja niiden määrittämistä.
 
-Tässä artikkelissa kerrotaan erityyppisistä taloushallinnon dimensioista ja niiden määrittämisestä.
+Luo **Taloushallinnon dimensiot** -sivun avulla tilikartan tilisegmentteinä käytettäviä taloushallinnon dimensioita. Taloushallinnon dimensioita on kahdenlaisia: mukautettuja ja yksikön tukemia dimensioita. Mukautetut dimensiot jaetaan yritysten välillä, ja käyttäjät vastaavat arvojen antamisesta ja ylläpidosta. Yksikön tukemien dimensioiden arvot määritellään muualla järjestelmässä, esimerkiksi Asiakkaat- tai Myymälät-yksiköissä. Jotkin yksikön tukemat dimensiot jaetaan yritysten välillä, kun taas toiset yksikön tukemat dimensiot ovat yrityskohtaisia. 
 
-Luo Taloushallinnon dimensiot -sivun avulla tilikartan tilisegmentteinä käytettäviä taloushallinnon dimensioita. Taloushallinnon dimensioita on kahdenlaisia: mukautettuja ja yksikön tukemia dimensioita. Mukautetut dimensiot jaetaan yritysten välillä ja arvot syöttää ja ylläpitää käyttäjä. Yksikön tukemien dimensioiden arvot määritellään toisaalla järjestelmässä, esimerkiksi Asiakkaat- tai Myymälät-osassa. Jotkin yksikön tukemat dimensiot jaetaan yritysten välillä, ja jotkin yksikön tukemat dimensiot ovat yrityskohtaisia. 
+Kun taloushallinnon dimensiot on luotu, voit liittää jokaiselle taloushallinnon dimensiolle lisää ominaisuuksia **Taloushallinnon dimension arvot** -sivulla. 
 
-Kun taloushallinnon dimensiot on luotu, voit liittää jokaiselle taloushallinnon dimensiolle lisää ominaisuuksia Taloushallinnon dimension arvot -sivun avulla. 
+Voit käyttää taloushallinnon dimensiota yritysten esittämiseen. Yrityksiä ei tarvitse luoda Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa. Taloushallinnon dimensioita ei kuitenkaan ole suunniteltu käsittelemään yritysten operatiivisia tai liiketoiminnan tarpeita. Finance and Operationsin yksiköiden välisen kirjanpidon toiminnallisuus on suunniteltu käsittelemään vain jokaisen tapahtuman luomat kirjanpitomerkinnät. 
 
-Voit käyttää taloushallinnon dimensioita edustamaan yrityksiä ilman, että luot yrityksiä Microsoft Dynamics 365 for Operationsissa. Taloushallinnon dimensioita ei ole kuitenkaan suunniteltu vastaamaan yritysten toiminnallisiin tai liiketaloudellisiin tarpeisiin. Microsoft Dynamics 365 for Operationsin yksiköiden välisen kirjanpidon toiminnallisuus on suunniteltu käsittelemään vain jokaisen tapahtuman luomat kirjanpitomerkinnät. 
+Ennen kuin määrität taloushallinnon dimensiot yrityksiksi, arvioi liiketoimintaprosessisi seuraavilla alueilla ja selvitä, voiko tätä asetusta käyttää organisaatiossasi:
 
-Ennen kuin määrität taloushallinnon dimensiot yrityksiksi, arvioi liiketoimintaprosessisi seuraavilla alueilla selvittääksesi, jos tätä asetusta voi käyttää organisaatiossasi:
+- Varasto
+- Myynnit ja ostot taloushallinnon dimensioiden ja yritysten välillä
+- Arvonlisäveron laskenta ja ilmoittaminen
+- Toiminnan raportointi
 
--   Varasto
--   Myynnit ja ostot taloushallinnon dimensioiden ja yritysten välillä
--   Arvonlisäveron laskenta ja ilmoittaminen
--   Toiminnan raportointi
+Seuraavassa on joitakin rajoituksia:
 
-Seuraavassa on esimerkkejä rajoituksista:
+- Voit käyttää arvonlisäverotoimintoa ainoastaan yritysten kanssa, et taloushallinnon dimensioiden.
+- Jotkin raportit eivät sisällä taloushallinnon dimensioita. Tämän vuoksi raportteja on ehkä muokattava taloushallinnon dimension mukaista raportointia varten.
 
--   Voit käyttää arvonlisäverotoimintoa ainoastaan yritysten kanssa, et taloushallinnon dimensioiden.
--   Taloushallinnon dimensiot eivät sisälly tiettyihin raportteihin, eli niiden raportointi ei aina ole mahdollista, ellei raportteja muokata.
+## Mukautetut dimensiot
+<a id="custom-dimensions" class="xliff"></a>
 
-**Mukautetut dimensiot** 
+Voit luoda käyttäjän määrittämän taloushallinnon dimension valitsemalla luoda **Käytä arvoja kohteesta** -kentässä **&lt; Mukautettu dimensio &gt;**. Voit määrittää myös tilipeitteen rajoittamaan dimensioarvoille annettavaa summaa ja tietojen tyyppiä. Voit antaa jokaisessa dimensioarvossa samana pysyviä arvoja, kuten kirjaimia tai yhdysviivan (-). Voit myös antaa numeromerkkejä (\#) ja et-merkkejä (&) kirjaimien ja numerojen paikkamerkkeinä, jotka muuttuvat aina, kun dimensioarvo luodaan. Käytä numeromerkkiä (\#) numeron paikkamerkkinä ja et-merkkiä (&) kirjaimen paikkamerkkinä. Muotoilupeitteen kenttä on käytettävissä vain, kun valitset **&lt; Mukautettu dimensio &gt;** **Käytä arvoja** -kentässä.
 
-Käyttäjän määrittämän taloushallinnon dimension voit luoda napsauttamalla Käytä arvoja kohteesta -kentässä &lt; Mukautettu dimensio &gt;. Voit määrittää myös tilipeitteen rajoittamaan dimensioarvoille annettavaa summaa ja tietojen tyyppiä. Voit syöttää merkkejä, jotka pysyvät samana jokaisessa dimensioarvossa, kuten kirjaimia tai yhdysviivan. Voit myös antaa numeromerkkejä (\#) ja et-merkkejä (&) kirjaimien ja numerojen paikkamerkkeinä, jotka muuttuvat aina, kun dimensioarvo luodaan. Käytä numeromerkkiä (\#) numeron paikkamerkkinä ja et-merkkiä (&) kirjaimen paikkamerkkinä. 
+**Esimerkki**
 
-**Esimerkki** 
+Jos haluat rajoittaa dimensioarvon kirjaimiin CC ja kolmeen numeroon, anna muotoilupeitteeksi **CC-\#\#\#**.
 
-Jos haluat rajoittaa dimensioarvon kirjaimiin CC ja kolmeen numeroon, syötä muotoilupeitteeksi CC-\#\#\#. Tämä kenttä on käytettävissä vain, kun valitset &lt; Mukautettu dimensio &gt; Käytä arvoja -kentässä. 
+## Yksikön tukemat dimensiot
+<a id="entity-backed-dimensions" class="xliff"></a>
 
-**Yksikön tukemat dimensiot** 
+Voit luoda yksikön tukeman taloushallinnon dimension valitsemalla **Käytä arvojaa** -kenttään järjestelmän määrittämä yksikkö, johon taloushallinnon dimensio perustuu. Taloushallinnon dimensioarvot luodaan sitten tästä yksiköstä. Voit esimerkiksi luoda projektien dimensioarvot valitsemalla **Projektit**. Jokaiselle projektin nimelle luodaan sitten dimensioarvo. Yksikön arvot näkyvät **Taloushallinnon dimension arvot** -sivulla. Jos nämä arvot ovat yrityskohtaisia, myös yritys näkyy sivulla.
 
-Yksikön tukeman taloushallinnon dimension voit luoda valitsemalla Käytä arvoja kohteesta -kenttään järjestelmän määrittämä yksikkö, johon taloushallinnon dimensio tukeutuu. Taloushallinnon dimensioarvot luodaan tästä valinnasta. Voit luoda esimerkiksi projektien dimensioarvot valitsemalla Projektit. Jokaiselle projektin nimelle luodaan dimensioarvo. Dimensioarvot-sivulla näytetään yksikön arvot ja, jos ne ovat yrityskohtaisia, arvon yritys. 
+## Dimensioiden aktivointi
+<a id="activating-dimensions" class="xliff"></a>
 
-**Dimensioiden aktivointi** 
+Kun aktivoit taloushallinnon dimension, taulu päivitetään sisältämään taloushallinnon dimension nimen. Poistetut dimensiot poistetaan. Voit antaa dimensioarvot ennen taloushallinnon dimension aktivointia. Taloushallinnon dimensiota ei voi kuitenkaan kuluttaa missään, ennen kuin se on aktivoitu. Et voi esimerkiksi lisätä taloushallinnon dimensiota tilirakenteeseen ennen dimension aktivointia. Kun valitset **Aktivoi**, kaikki dimensiot päivitetään ja niiden tilan näytetään muuttuneen. 
 
-Taloushallinnon dimension aktivointi päivittää taulun taloushallinnon dimension nimellä ja poistaa poistetut dimensiot. Voit antaa dimensioarvot ennen aktivoit taloushallinnon dimension aktivointia, mutta taloushallinnon dimensiota ei voi kuluttaa missään, ennen kuin se on aktivoitu. Et esimerkiksi voi lisätä taloushallinnon dimensiota tilirakenteeseen ennen dimension aktivointia. Aktivointipainiketta napsauttamalla päivität tilamuutokset kaikille dimensioille. 
+## Käännökset
+<a id="translations" class="xliff"></a>
 
-**Käännökset** 
+Voit kirjoittaa valitun taloushallinnon dimension **Tekstin käännös** -sivulla erikielistä tekstiä. Voit kirjoittaa päätilille erikielistä tekstiä **Päätilin käännös** -sivulla. 
 
-Tekstin käännös -sivulle voi syöttää valitussa taloushallinnon dimensiossa näytettävät kielet. Päätilin käännös -sivulla voi syöttää päätilissä näytettävät kielet. 
+## Yrityksen ohitukset
+<a id="legal-entity-overrides" class="xliff"></a>
 
-**Yrityksen ohitukset** 
+Kaikkia dimensioita ei voi käyttää kaikissa yrityksissä. Lisäksi jotkin dimensiot voivat liittyä vain tiettyyn jaksoon. Näissä tapauksissa voit määrittää **Yrityksen ohitukset** -osassa yritykset, joissa dimension käyttö pitäisi keskeyttää, omistaja sekä ajanjakso, jolloin dimensio on aktiivinen.
 
-Kaikki dimensiot eivät kelpaa kaikille yrityksille, ja jotkin dimensiot saattavat olla olennaisia vain tietyn ajanjakson ajan. Tässä skenaariossa Yrityksen ohitukset -osan avulla määritetään yritykset, joilta dimension käyttö keskeytetään, omistaja sekä ajanjakso, jolloin dimensio on aktiivinen.
+## Taloushallinnon dimensioiden poistaminen
+<a id="deleting-financial-dimensions" class="xliff"></a>
 
+Tietojen viitteiden eheyden varmistamiseksi taloushallinnon dimensiot voi vain harvoin poistaa. Jos yrität poistaa taloushallinnon dimension, seuraavat ehdot arvioidaan:
 
+- Onko taloushallinnon dimensiota käytetty missään kirjatussa tai kirjaamattomassa tapahtumassa tai jossain dimensioarvoyhdistelmässä?
+- Onko taloushallinnon dimensiota käytettä missään aktiivisessa tilirakenteessa, lisäasetuksia käyttävässä sääntörakenteessa tai taloushallinnon dimensiojoukossa?
+- Onko taloushallinnon dimensio osa oletusarvoista taloushallinnon dimension integrointimuotoa?
+- Onko taloushallinnon dimensio määritetty oletusdimensioksi?
 
-
-
+Jos jokin ehdoista täyttyy, et voi poistaa taloushallinnon dimensiota.
 

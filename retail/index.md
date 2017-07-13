@@ -80,7 +80,7 @@ Retail-sovelluksen avulla myymäläpäälliköt voivat luoda ja julkaista vuoroj
 
 Myymäläapulaiset näkevät vuorot ja määritetyt aikataulut sekä vuorojen ohjeet. He näkevät myös vuoroihin määritettyjen työtovereiden tiedot. He voivat myös lähettää poissaolopyyntöjä, vuoronvaihtoa koskevia pyyntöjä ja vuoron tarjouksia.
 
-## <a name="customize-and-administer-retail-environments"></a>Vähittäismyyntiympäristöjen mukauttaminen ja hallinta
+## <a name="customize-and-administer-retail-environments"></a>Retail-ympäristöjen mukauttaminen ja hallinta
 Jos sinua on pyydetty mukauttamaan ympäristöä tai jos järjestelmän käyttöönotto ja ylläpito on vastuullasi, tutustu Retail-sovellusta koskevaan kehittäjien ja järjestelmänvalvojan sisältöön sekä yleiseen sisältöön.
 
 - [Dynamics 365 for Retail IT-ammattilaisille ja kehittäjille](dev-itpro/dev-retail-home-page.md)

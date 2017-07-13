@@ -1,15 +1,15 @@
 ---
 title: "Kompensaatioiden ja etujen Power BI -sisältö"
-description: "Tässä aiheessa kuvataan Dynamics 365 for Operationsin kompensaatioiden ja etujen Power BI sisältöä. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
+description: "Tässä aiheessa kuvataan Finance and Operationsin kompensaatioiden ja etujen Power BI sisältöä. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 263914
 ms.assetid: 18634bb5-3341-42f2-9cc9-7b04708b506b
 ms.search.region: Global
@@ -17,28 +17,31 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6f8375d31cb3b6a68314eba8341d94dce2edaac2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 70e35a33e06fe7c89dd64d17703f19a71d4a157e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="compensation-and-benefits-power-bi-content"></a>Kompensaatioiden ja etujen Power BI -sisältö
+# Kompensaatioiden ja etujen Power BI -sisältö
+<a id="compensation-and-benefits-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä aiheessa kuvataan Dynamics 365 for Operationsin kompensaatioiden ja etujen Power BI sisältöä. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
+Tässä aiheessa kuvataan Finance and Operationsin kompensaatioiden ja etujen Power BI sisältöä. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
-<a name="accessing-the-content-pack"></a>Sisältöpaketin avaaminen
+Sisältöpaketin avaaminen
+<a id="accessing-the-content-pack" class="xliff"></a>
 --------------------------
 
-Löydät kompensaatioiden ja etujen sisältöpaketin Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Saat lisätietoja siitä, miten sisältöpaketti ladataan ja miten se liitetään Microsoft Dynamics 365 for Operationsin tietoihin, artikkelista [LCS:n Power BI -sisältö Microsoftilta ja kumppaneilta](power-bi-content-microsoft-partners.md).
+Löydät kompensaatioiden ja etujen sisältöpaketin Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Saat lisätietoja siitä, miten sisältöpaketti ladataan ja miten se liitetään Microsoft Dynamics 365 for Finance and Operationsin tietoihin, artikkelista [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Raportit, jotka sisältyvät sisältöpakettiin
-Kun olet liittänyt sisältöpaketin Dynamics 365 for Operations -tietoihin, organisaatiosi tiedot näkyvät raporteissa. Jos et ole käyttänyt Microsoft Power BI:tä aiemmin, lisätietoja löydät artikkelista [Power BI:n ohjattu oppiminen](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporteissa, jotka sisältyvät sisältöpakettiin, on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
+## Raportit, jotka sisältyvät sisältöpakettiin
+<a id="reports-that-are-included-in-the-content-pack" class="xliff"></a>
+Kun olet liittänyt sisältöpaketin Dynamics 365 for Finance and Operations -tietoihin, organisaatiosi tiedot näkyvät raporteissa. Jos et ole käyttänyt Microsoft Power BI:tä aiemmin, lisätietoja löydät artikkelista [Power BI:n ohjattu oppiminen](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporteissa, jotka sisältyvät sisältöpakettiin, on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
 
 | Raportti                     | Sisältö                                                                                                                              |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -47,8 +50,9 @@ Kun olet liittänyt sisältöpaketin Dynamics 365 for Operations -tietoihin, org
 
 Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
-Dynamics 365 for Operations -sovelluksen tietoja käytetään kompensaatioiden ja etujen sisältöpaketin raporttien täyttämiseen. Seuraavassa taulukossa on esitetty yksiköt, joihin sisältöpaketti on perustunut.
+## Tietomallin ja yksiköiden tiedot
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+Finance and Operationsin tietoja käytetään kompensaatioiden ja etujen sisältöpaketin raporttien täyttämiseen. Seuraavassa taulukossa on esitetty yksiköt, joihin sisältöpaketti on perustunut.
 
 | Kokonaisuus                            | Sisältö                                                                                                   | Suhteet muihin yksiköihin                                                                                                                                                                                                                                                                                                |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,7 +81,8 @@ Dynamics 365 for Operations -sovelluksen tietoja käytetään kompensaatioiden j
 
 Näitä yksikköjä käytettiin luomaan laskettuja mittoja tietomallissa. Näitä laskennallisia mittoja käytetään sitten laskemaan sisältöpaketissa käytettävät tunnusluvut (KPI:t) ja raportit. Jos haluat sisällyttää lisälaskutoimitukset raportteihin ja koontinäyttöön, voit ladata CompensationandBenefits.pbix-tiedoston LCS:stä ja muokata sitä. Tämä tiedosto on sisältöpaketin luomisessa käytetty oletustietomalli. Kun olet tehnyt haluamasi muutokset, voit luoda organisaation sisältöpaketin ja koontinäytön, joka sisältää lisäämäsi tiedot.
 
-## <a name="additional-resources"></a>Lisäresurssit
+## Lisäresurssit
+<a id="additional-resources" class="xliff"></a>
 Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:
 
 -   [Tietoyksiköt](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)

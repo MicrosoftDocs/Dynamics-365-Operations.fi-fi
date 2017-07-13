@@ -3,15 +3,15 @@ title: "Kolmisuuntaiset vastaavuuskäytännöt"
 description: "Tässä artikkelissa on esimerkkejä kolmisuuntaisesta vastaavuudesta."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
@@ -19,22 +19,24 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b9f66a9a907cf01046c78677a3f1d55f112fa8c7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8ae07088fec05ad416ce1891dd0d0ecd489364ca
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="three-way-matching-policies"></a>Kolmisuuntaiset vastaavuuskäytännöt
+# Kolmisuuntaiset vastaavuuskäytännöt
+<a id="three-way-matching-policies" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa on esimerkkejä kolmisuuntaisesta vastaavuudesta.
 
-<a name="example-three-way-matching-for-items"></a>Esimerkki: Kolmisuuntainen vastaavuus nimikkeille
+Esimerkki: Kolmisuuntainen vastaavuus nimikkeille
+<a id="example-three-way-matching-for-items" class="xliff"></a>
 -------------------------------------
 
 **Yhteenveto:** Ken on vastuuhenkilö Fabrikam-nimisen yrityksen pääkonttorissa. Hän päättää, että kaikki toimittajan laskut, jotka perustuvat ostotilauksiin on yhdistettävä ostotilausriveihin (kaksisuuntainen vastaavuus). Käyttöomaisuuserinä käytettävien nimikkeiden ostolaskujen tulisi vastata sekä ostotilausrivejä että tuotteen vastaanottorivejä (kolmisuuntainen vastaavuus).
@@ -47,7 +49,8 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 -   Paula ja April ovat laskentapäälliköitä Fabrikamin Yhdysvaltain haaran ostoreskontraosastolla. He voivat valvoa yrityksen käytäntöjä ja varmistaa, että laskut maksetaan vasta, kun ne on täsmäytetty ostotilaukseen sekä sen ollessa aiheellista, tuotteiden ja palveluiden vastaanottoon.
 -   Tony on Fabrikamin Yhdysvaltain haaran tuotantopäällikkö. Hän ja muu tuotantohenkilöstö voi varmistaa, että nimikkeet vastaanotetaan siten, miten ne on tilattu toimittajilta ja että ne ovat seurattavissa niin, että henkilökunnalla on työnsä suorittamiseen vaadittavat resurssit.
 
-### <a name="prerequisites"></a>Edellytykset
+### Edellytykset
+<a id="prerequisites" class="xliff"></a>
 
 -   Ken asettaa vastaavuuskäytännön yritystasolla kolmisuuntaiseksi.
 -   Ken asettaa yritystason otsikon tilan automaattisen vastaavuuspäivityksen asetuksen tilaksi Kyllä.
@@ -61,12 +64,13 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 
 -   Arnie, Contoson myyntireskontrakäsittelijä tarkistaa viikon toimitukset. Hän lähetystapahtumat, jotka laskutetaan Fabrikamilta CNC Milicron-koneiden toimituksesta. Hän lisää lähetys- ja käsittelykulut laskulle. Fabrikam ottaa toimituskulut osaksi käyttöomaisuuden kustannusta.
 
-### <a name="scenario"></a>Skenaario
+### Skenaario
+<a id="scenario" class="xliff"></a>
 
 1.  Sammy, Fabrikamin vastaanotto-osaston työntekijä vastaanottaa Contoson konetoimituksen kokonaismäärän. Hän syöttää määräksi 5 tuotteen vastaanotossa. Koska ostotilaus on vastaanotettu kokonaisuudessaan, sen tilaksi muuttuu Vastaanotettu.
 2.  Fabrikamin ostoreskontravastaava April kirjaa ja vahvistaa Contoson lähettämän laskun. Hän vahvistaa seuraavat tiedot:
     -   Nimikkeille, joiden vaatimuksena on kolmisuuntainen vastaavuus, laskurivin määrä vastaa vastaanotettua määrää. Vastaanotettu määrä näkyy laskuun kohdistetussa tuotteen vastaanotossa.
-    -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Microsoft Dynamics 365 for Operationsissa asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
+    -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Microsoft Dynamics 365 for Finance and Operations Enterprise editionissa asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
         -   Nettoyksikköhinnan täsmäytys – Laskurivin nettoyksikköhinta vastaa ostotilausrivin nettoyksikköhintaa toleranssiprosentin rajoissa. Tässä esimerkissä nettoyksikköhinnan hintatoleranssi on +8 %.
         -   Kokonaishinnan täsmäytys – Laskurivin nettohinta vastaa ostotilausrivin nettohintaa toleranssiprosentin, -summan tai molempien rajoissa. Tässä esimerkissä nettohinnan hintatoleranssi on +15 %.
 
@@ -79,7 +83,7 @@ Contoson lähettämä paperilasku sisältää seuraavat tiedot.
 | Vero                         |          |            | 0,00       |
 | Yhteensä                       |          |            | 44 500,00  |
 
-Laskurivi Microsoft Dynamics 365 for Operationsissa sisältää seuraavat tiedot.
+Finance and Operationsin laskurivi sisältää seuraavat tiedot.
 
 | Nimiketunnus                 | Määrä | Yksikköhinta | Rivin nettosumma | Täsmäytyskäytäntö    | Tuotteen vastaanoton määrän vastaavuus | Hintavastaavuus | Kokonaishintojen täsmäytys |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -87,7 +91,8 @@ Laskurivi Microsoft Dynamics 365 for Operationsissa sisältää seuraavat tiedot
 
 Koska rivi läpäisee laskun täsmäytysprosessin, lasku on mahdollista kirjata.
 
-## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a> Esimerkki: Kolmisuuntainen vastaavuus nimike- ja toimittajayhdistelmille
+##  Esimerkki: Kolmisuuntainen vastaavuus nimike- ja toimittajayhdistelmille
+<a id="example-three-way-matching-for-item-and-vendor-combinations" class="xliff"></a>
 Yhteenveto: Ken on vastuuhenkilö Fabrikam-nimisen yrityksen pääkonttorissa. Hän päättää, että kaikki laskut, jotka perustuvat ostotilauksiin on yhdistettävä ostotilausriveihin (kaksisuuntainen vastaavuus). Cassie on Fabrikamin Malesian-konttorin kirjanpitäjä. Hän määrittää, että valitut, tietyiltä malesialaisilta toimittajilta tilattavat nimikkeet on täsmäytettävä sekä ostotilauksen riveihin ja tuotteen vastaanottoriveihin (kolmisuuntainen vastaavuus). Hän voi myös ohittaa vastaavuuskäytännön korkeamman tason vastaavuudella haluamilleen ostotilauksille. 
 
 Volyymi ja summat ovat pieniä, ja tiettyjen malesialaistoimittajien lähetyksissä on ollut ongelmia. Tämän vuoksi Cassie määrittää tiettyjen, Malesiasta hankittavien nimike- ja toimittajayhdistelmien hallinnan tasoksi kolmisuuntaisen vastaavuuden. 
@@ -96,7 +101,8 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 -   Ken on Fabrikam-nimisen yrityksen vastuuhenkilö. Hän voi auttaa organisaationsa henkilöstöä tunnistamaan ja oikaisemaan toimittajien nimikkeiden, eli tavaroiden ja palveluiden tilauksiin, vastaanottoihin ja maksuihin liittyviä ongelmia.
 -   Cassie on Fabrikamin Malesian-konttorin kirjanpitäjä. Hän voi valvoa yrityksen käytäntöjä ja varmistaa, että laskut maksetaan vasta, kun ne on täsmäytetty ostotilauksen riveihin sekä tuotteiden vastaanottoihin, jotka vastaavat tuotteita ja palveluita. Hän voi myös nostaa hallinnan tason kolmisuuntaiseksi vastaavuudeksi haluamilleen nimikkeille hallitakseen toiminnan kustannuksia.
 
-### <a name="prerequisites"></a>Edellytykset
+### Edellytykset
+<a id="prerequisites" class="xliff"></a>
 
 -   Ken asettaa vastaavuuskäytännön yritystasolla kaksisuuntaiseksi.
 -   Ken asettaa yrityksen Täsmäytä kokonaishinnat -kentän arvoksi Prosenttiosuus ja syöttää 10 % toleranssiprosentiksi.
@@ -110,12 +116,13 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
     | MM01 – Langaton hiiri | 2        | 40,00      | 80,00      | Kaksisuuntainen vastaavuus                | Kolmisuuntainen vastaavuus                           |
     | USB-muistitikku             | 200      | 10,00      | 2 000,00   | Kaksisuuntainen vastaavuus                | Kaksisuuntainen vastaavuus                             |
 
-### <a name="scenario"></a>Skenaario
+### Skenaario
+<a id="scenario" class="xliff"></a>
 
 1.  Nimikkeet saapuvat. Sammy, työntekijä Fabrikamin Malesian konttorin vastaanotossa keskeytetään työssään eikä kirjaa tuotteen vastaanottoa välittömästi.
 2.  Fabrikamin ostoreskontravastaava April kirjaa ja vahvistaa Contoson lähettämän laskun. Hän vahvistaa seuraavat tiedot:
     -   Nimikkeille, joiden vaatimuksena on kolmisuuntainen vastaavuus, laskurivin määrä vastaa vastaanotettua määrää. Vastaanotettu määrä näkyy laskuun kohdistetussa tuotteen vastaanotossa.
-    -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Microsoft Dynamics 365 for Operationsissa asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
+    -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Finance and Operationsissa asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
         -   Nettoyksikköhinnan täsmäytys – Laskurivin nettoyksikköhinta vastaa ostotilausrivin nettoyksikköhintaa toleranssiprosentin rajoissa. Tässä esimerkissä nettoyksikköhinnan hintatoleranssi on +2 %.
         -   Kokonaishinnan täsmäytys – Laskurivin nettohinta vastaa ostotilausrivin nettohintaa toleranssiprosentin, -summan tai molempien rajoissa. Tässä esimerkissä nettohinnan hintatoleranssi on +10 %.
 
@@ -128,7 +135,7 @@ Contoson lähettämä paperilasku sisältää seuraavat tiedot.
 | USB-muistitikku             | 200      | 10,05      | 2 010,00   |
 | Kokonaislasku         |          |            | 7 092,00   |
 
-Laskurivi Microsoft Dynamics 365 for Operationsissa sisältää seuraavat tiedot.
+Finance and Operationsin laskurivi sisältää seuraavat tiedot.
 
 | Nimiketunnus           | Määrä | Yksikköhinta | Rivin nettosumma | Täsmäytyskäytäntö    | Tuotteen vastaanoton määrän vastaavuus | Hintavastaavuus | Kokonaishintojen täsmäytys |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|

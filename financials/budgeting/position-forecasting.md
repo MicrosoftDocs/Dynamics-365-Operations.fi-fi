@@ -1,16 +1,16 @@
 ---
-title: Toimien ennusteet
-description: 
+title: Toimien ennustus
+description: "Työntekijöihin liittyvät kulut usein muodostavat suuren osa organisaation kuluista. Toimien ennusteiden avulla voit luoda suunnitelmia näille kustannuksille ja sisällyttää ne budjettisuunnitteluun."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 64413
 ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 ms.search.region: Global
@@ -18,24 +18,25 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 03645693c5101c48ef9d35bdbe14debef1e69fc8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2dffb2634701210852b4b146a762434cf6df07e3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="position-forecasting"></a>Toimien ennusteet
+# Toimien ennustus
+<a id="position-forecasting" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 
-
 Työntekijöihin liittyvät kulut usein muodostavat suuren osa organisaation kuluista. Toimien ennusteiden avulla voit luoda suunnitelmia näille kustannuksille ja sisällyttää ne budjettisuunnitteluun.
 
-## <a name="position-forecasting-in-budget-planning"></a>Toimien ennusteet budjettisuunnittelussa
+## Toimien ennusteet budjettisuunnittelussa
+<a id="position-forecasting-in-budget-planning" class="xliff"></a>
 
 [![Grafiikka – yläosa](./media/graphic-top.png)](./media/graphic-top.png) 
 
@@ -47,7 +48,8 @@ Pääkomponentti on **ennusteen toimi**, joka edustaa kaikkia yksittäiseen toim
 
 **kompensaatioryhmä** on valinnainen asetuskomponentti, jota käytetään budjetin kustannustasojoukon ja palkkalaskelmien soveltamiseen toimilla, joilla on samanlaiset maksuominaisuudet. Kompensaatioryhmä voi sisältää palkkojen kompensaatioruudukon. Kun ryhmä määritetään ennusteen toimelle, ruudukon taso ja vaihe voivat määrittää ennusteen toimen ansiot. Kustannuselementtijoukko lisätään automaattisesti.
 
-### <a name="position-forecasting-processes"></a>Toimien ennustamisprosessit
+### Toimien ennustamisprosessit
+<a id="position-forecasting-processes" class="xliff"></a>
 
 [![graphic1b](./media/graphic1b.png)](./media/graphic1b.png) 
 
@@ -55,10 +57,12 @@ Tyypillisessä toimien ennustamisprosessissa luot ensin asetuskomponentit (budje
 
 Voit luoda lisää ennusteen toimiversioita budjettisuunnitelmien muokkauksen yhteydessä. Nämä uudet versiot tarjoavat pohjan päivityksille.
 
-## <a name="position-forecasting-setup"></a>Toimien ennusteiden asetukset
+## Toimien ennusteiden asetukset
+<a id="position-forecasting-setup" class="xliff"></a>
 [![graphic2](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
-### <a name="budget-cost-elements"></a>Budjetin kustannustasot
+### Budjetin kustannustasot
+<a id="budget-cost-elements" class="xliff"></a>
 
 Budjetin kustannustasoja käytetään kustannustietojen määrittämiseen ennusteen toimelle. Nämä tiedot sisältävät kustannustyypin, kustannuksen laskentatavan ja tiedon, onko kustannus määritetty useille päiville, kun ennusteen toimi sisällytetään budjettisuunnitelmaan. 
 
@@ -78,7 +82,8 @@ Seuraavaksi Jodi lisää kustannuslaskentarivin, määrittää päivämäärät 
 
 Lopuksi Jaana lisää kaikki ansion kustannustasot, joita käytetään peruspalkan laskentaperusteena. Hänen budjetin kustannustasonsa on nyt valmis käytettäväksi.
 
-### <a name="compensation-groups"></a>Kompensaatioryhmät
+### Kompensaatioryhmät
+<a id="compensation-groups" class="xliff"></a>
 
 Kompensaatioryhmiä voidaan käyttää ryhmittämään ennusteen toimia, joilla on samanlaiset kompensaatiomääritteet. Niitä voidaan myös käyttää määrittelemään ennusteen toimen ansiot ja vuosittaiset korotukset ja määrittämään yhteisten budjetin kustannustasojen joukko. 
 
@@ -92,12 +97,14 @@ Kompensaatioryhmän kenttiä **Palkankorotusaikataulu** ja **Palkankorotuspäiv�
 
 Kompensaatioryhmässä valittua ansion kustannustasoa käytetään, kun luot ansioita ryhmän ennusteen toimille, mukaan lukien heidän peruspalkkansa ja mahdolliset vaihekorotukset. Kenttä **Kiinteä kompensaatiosuunnitelma** linkittää kompensaatioryhmän kiinteään kompensaatiosuunnitelmaan Henkilöstöhallinnossa. Tämä linkki voi kohdistaa työntekijän kiinteät kompensaatiotiedot ennusteen toimeen ja ne voivat siten tehdä budjettisuunnittelusta tarkempaa. Muista, että kompensaatioryhmän kompensaatioruudukon rakenteen (tasot ja vaiheet) tulee vastata kiinteän kompensaatiosuunnitelman rakennetta. Muuten järjestelmä ei pysty linkittämään kompensaatioryhmää ja kiinteää kompensaatiosuunnitelmaa oikein.
 
-## <a name="creating-forecast-positions"></a>Ennusteen toimien luonti
+## Ennusteen toimien luonti
+<a id="creating-forecast-positions" class="xliff"></a>
 [![graphic3](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
-### <a name="creating-forecast-positions-for-existing-positions"></a>Ennusteen toimien luominen aiemmin luoduille toimille
+### Ennusteen toimien luominen aiemmin luoduille toimille
+<a id="creating-forecast-positions-for-existing-positions" class="xliff"></a>
 
-Tarkinta budjettisuunnittelua varten voit luoda ennusteen toimia käyttämällä Microsoft Dynamics 365 for Operationsissa aiemmin luotujen toimien tietoja riippumatta siitä, ovatko toimet kyseisellä hetkellä täytettyjä vai ei. 
+Voit luoda tarkinta budjettisuunnittelua varten ennusteen toimia käyttämällä Microsoft Dynamics 365 Finance and Operations, Enterprise Editionissa aiemmin luotujen toimien tietoja riippumatta siitä, ovatko toimet kyseisellä hetkellä täytettyjä vai eivät. 
 
 **Lisää aiemmin luotuja toimia** -toiminto näyttää kaikki organisaation toimet. Asettamalla **Alkaen**-päivämäärän voit muuttaa toimien luetteloa niin, että se sisältää toimet, jotka olivat olemassa tiettynä menneisyyden päivänä tai yleisemmin, tulevaisuudessa (esimerkiksi seuraavan budjettijakson alussa). Valitse budjettisuunnitteluprosessi ja budjettisuunnitelman skenaario, valitse toimet luettelosta ja valitse sitten **OK** luodaksesi ennusteen toimet valituille toimille. Huomaa, että voit luoda vain yhden ennusteen toimen kullekin aiemmin luodulle toimelle budjettisuunnitteluprosessissa ja -skenaariossa. Voit kuitenkin luoda lisäversioita määrittämällä eri budjettiskenaarioita. 
 
@@ -113,7 +120,8 @@ Kohdan **Määritä kompensaatioryhmä** asetus ohittaa **Budjetin kustannustaso
 
 Toinen vaihtoehto on määrittää arvoksi vuosipäivä. Määritettyä työntekijää koskeva valittu päivä (muutettu aloituspäivä, työntekijän aloituspäivä, työsuhteen alkupäivä tai ikälisäpäivä) määritetään sitten ennusteen toimen vuosipäiväksi ja sitä käytetään tiedoksi ja palkankorotuksia muodostettaessa.
 
-### <a name="creating-new-forecast-positions"></a>Uusien ennusteen toimien luonti
+### Uusien ennusteen toimien luonti
+<a id="creating-new-forecast-positions" class="xliff"></a>
 
 Voit luoda uusia ennusteen toimia kahdella tavalla: kopioimalla aiemmin luotu ennusteen toimi tai luomalla täysin uusi ennusteen toimi. 
 
@@ -121,20 +129,24 @@ Kun ennusteen toimi valitaan, valitse **Kopioi valittu ennusteen toimi** luodaks
 
 Voit myös luoda täysin uuden ennusteen toimen. Valitse aiemmin luotu työ sekä budjettisuunnitelmaprosessi ja budjettisuunnitelman skenaario. Voit sitten lisätä muita haluamiasi tietoja. Tässäkin tapauksessa uusi toimi luodaan myös Henkilöstöhallinnossa samanaikaisesti.
 
-## <a name="working-with-forecast-positions"></a>Ennusteen toimien käyttäminen
+## Ennusteen toimien käyttäminen
+<a id="working-with-forecast-positions" class="xliff"></a>
 [![graphic5](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
-### <a name="multiple-versions-of-a-forecast-position"></a>Ennusteen toimen useat versiot
+### Ennusteen toimen useat versiot
+<a id="multiple-versions-of-a-forecast-position" class="xliff"></a>
 
 Voit muokata ennusteen toimia joko tehdäksesi tiedossa olevat muutokset budjettijaksoon tai mallintaaksesi ehdotetut muutokset. Yleinen käytäntö on luoda ennusteen toimien perusjoukko, luoda kopiot näistä ennusteen toimista ja käyttää sitten kopioita mallintamaan eri muutosjoukkoja. Kopiot määritetään eri budjettisuunnitelman skenaariolle, mutta ainakin siihen asti, kun muutokset on tehty, ne ovat muuten identtiset sen ennusteen toimen kanssa, josta ne kopioitiin. Alkuperäisillä ja kopioilla on sama toimi Henkilöstöhallinnossa. 
 
 **Kopioi skenaarioon** -toiminto tarjoaa tämän toiminnallisuuden. Huomaa, että kullakin Henkilöstöhallinnon toimella voi olla vain yksi ennusteen toimi kussakin budjettisuunnitelman skenaariossa.
 
-### <a name="modifying-forecast-positions"></a>Ennusteen toimien muokkaaminen
+### Ennusteen toimien muokkaaminen
+<a id="modifying-forecast-positions" class="xliff"></a>
 
 Ennusteen toimiin tehdyt muutokset rajoittuvat näihin ennusteen toimiin. Muutokset eivät vaikuta Henkilöstöhallinnon toimitietueisiin. Useimmat muutokset myös rajoittuvat muokattavana olevaan ennusteen toimeen. Toisin sanoen, muutokset koskevat nimenomaan sitä budjettisuunnitteluprosessia ja budjettisuunnitteluskenaariota, joihin toimet määritetään. Poikkeuksena tähän ovat muutokset kenttiin, jotka jaetaan tätä toimea koskien kaikissa prosesseissa ja skenaarioissa. Näihin kenttiin kuuluvat **Yleinen**-välilehden ja **Taloushallinnon dimensiot** -välilehden kentät. Kun näitä kenttiä muutetaan, uudet arvot koskevat kyseistä toimea kaikissa budjettisuunnitelman skenaarioissa. Voit näin ollen päivittää kaikkia versioita nopeasti näiden kenttien kautta.
 
-#### <a name="budget-cost-elements"></a>Budjetin kustannustasot
+#### Budjetin kustannustasot
+<a id="budget-cost-elements" class="xliff"></a>
 
 Budjetin kustannustasot tarjoavat tärkeimmät tiedot budjettisuunnitelmaa varten: budjetin summan ja päätilin. Budjetin summa on summa, joka lähetetään budjettisuunnitelmaan, kun ennusteen toimi sisällytetään suunnitelmaan. Budjettisumma on laskennan tulos ja sitä ei voi muuttaa suoraan. Tämä summa on joko vuosittainen summa tai laskennallinen prosenttiosuus vuosittaisen summan peruselementeistä, jotka on kuvattu budjetin kustannustason asetuksissa. Tämä summa huomioidaan tason päivämääräalueen sisältämien päivien lukumäärän perusteella (alkupäivästä päättymispäivään) sekä ennusteen toimen **Kokopäivätyötä vastaava** (FTE) arvo. 
 
@@ -146,13 +158,15 @@ Budjetin kustannuselementin rivit on laskettava uudelleen, kun FTE-arvoa muuteta
 
 Organisaatio harkitsee kahta vaihtoehtoa kirjanpitäjän toimen kustannusten alentamiseen. Yksi vaihtoehto on päättää toimi, kun vuotta on kulunut jonkin aikaa. Toinen vaihtoehto on muuttaa toimi osa-aikaiseksi koko vuoden ajaksi. Pekka on luonut ennusteen toimen nykyiselle kirjanpitäjän toimelle perusskenaariossa. Hän kopioi tämän perusmuotoisen ennusteen toimen skenaario A:han, määrittää päättymispäiväksi 31.5. ja suorittaa uudelleenlaskennan. Pekka kopioi sitten tämän perusmuotoisen ennusteen toimen skenaario B:hen, muuttaa FTE-arvoksi **0,50** ja suorittaa uudelleenlaskennan. Pekalla on nyt kolme versiota, joista kullakin on siihen vaihtoehtoon liittyvä kokonaiskustannus.
 
-#### <a name="assigning-a-compensation-group"></a>Kompensaatioryhmän määrittäminen
+#### Kompensaatioryhmän määrittäminen
+<a id="assigning-a-compensation-group" class="xliff"></a>
 
 Kun määrität ennusteen toimelle kompensaatioryhmän ensimmäistä kertaa, siihen lisätään oletusmuotoiset budjetin kustannustasot. Jos kustannustasot on jo määritetty ennusteen toimelle, nämä kustannustasot säilyvät. Jos kompensaatioryhmä on jo määritetty ja sitä muutetaan, aiemmin luodut budjetin kustannustasot poistetaan ja korvataan kompensaatioryhmästä tulevalla joukolla. 
 
 Kun valitset kompensaatiotason ja vaiheen, lisätään tulobudjetin kustannustaso (joka on määritetty kompensaatioryhmässä). Vuosittainen summa lasketaan käyttämällä valitun tason ja vaiheen palkkaa ja vuosittaista tuntien määrää kompensaatioryhmässä (tai vuosipalkan ollessa kyseessä, tason ja vaiheen täyttä määrää). Tässäkin tilanteessa summassa huomioidaan budjetin kustannustason päivämääräalue ja ennusteen toimen FTE-arvo.
 
-#### <a name="generating-increases"></a>Palkankorotusten muodostaminen
+#### Palkankorotusten muodostaminen
+<a id="generating-increases" class="xliff"></a>
 
 Vuosittaiset palkankorotukset (yksi kalenterivuodessa) voidaan luoda automaattisesti ennusteen toimille, joille on määritetty vaiheperusteinen kompensaatioryhmä. Valitse **Muodosta palkankorotukset** lisätäksesi tulobudjetin kustannustaso toiseksi korkeimmassa vaiheessa. Uuden tulobudjetin kustannustason aloituspäivä on ennusteen toimella näytettävä ajoitetun korotuksen päivämäärä. Tämä päivämäärä voidaan määrittää kompensaatioryhmässä kahdella eri tavalla: Jos kompensaatioryhmän palkankorotusaikataulun arvoksi on määritetty **Yleinen päivämäärä**, palkankorotuksen päivämäärä määritellään kompensaatioryhmässä. Jos palkankorotuksen aikataulun arvoksi on määritetty **Vuosipäivän päivämäärä**, käytetään ennusteen toimen vuosipäivän päivämäärä -kenttää ja vuosi tulee budjettijaksosta. Jos budjettijaksossa on useita kalenterivuosia, lisätään useita palkankorotuksia. 
 
@@ -160,11 +174,12 @@ Nykyisen tulobudjetin kustannustason päättymispäivämääräksi päivitetää
 
 Jos valitset **Muodosta palkankorotukset** toisen kerran, prosessi suoritetaan uudelleen, mutta uusia tietueita ei lisätä. Järjestelmä muodostaa vain yhden palkankorotuksen kalenterivuotta kohden.
 
-#### <a name="changes-from-other-pages"></a>Muutokset muilta sivuilta
+#### Muutokset muilta sivuilta
+<a id="changes-from-other-pages" class="xliff"></a>
 
 Ennusteen toimien päivitykset voivat tulla myös muilta alueilta, kuten budjetin kustannustasojen ja kompensaatioryhmien asetussivuilta. Voit myös muokata ennusteen toimia joukkopäivitysprosessin avulla. 
 
-Kaksi vaihtoehtoa on käytettävissä**Budjetin kustannustaso** -asetussivulla: **Lisää toimiin** ja **Päivitä toimia**. **Lisää toimiin** -asetus lisää budjetin kustannustason valittuihin ennusteen toimiin. Jos kustannustaso on jo määritetty ennusteen toimelle, tämä ennusteen toimi ohitetaan. **Päivitä toimet** -asetus koskee valittujen ennusteen toimien nykyisiä arvoja (päätili, prosentti, vuosittainen summa jne.) 
+Kaksi vaihtoehtoa on käytettävissä **Budjetin kustannustaso** -asetussivulla: **Lisää toimiin** ja **Päivitä toimia**. **Lisää toimiin** -asetus lisää budjetin kustannustason valittuihin ennusteen toimiin. Jos kustannustaso on jo määritetty ennusteen toimelle, tämä ennusteen toimi ohitetaan. **Päivitä toimet** -asetus koskee valittujen ennusteen toimien nykyisiä arvoja (päätili, prosentti, vuosittainen summa jne.) 
 
 Kullakin prosessilla on samanlainen sivu, josta voit valita ennusteen toimia. **Lisää toimiin** -sivulla näytetään kaikki valittavissa olevat ennusteen toimet, kun taas **Päivitä toimet** -sivulla näytetään vain ne ennusteen toimet, joille on jo määritetty budjetin kustannustaso. (Näin ollen **Päivitä toimet** -sivulla voit selvittää, mihin ennusteen toimiin on jo liitetty kustannustaso.) Siirrät ennusteen toimet ylemmästä ruudukosta alempaan ruudukkoon sisällyttääksesi ne päivitykseen. 
 
@@ -176,13 +191,15 @@ Voit lisätä useamman kuin yhden ennusteen toimen tai muuttaa niitä samanaikai
 
 Uudelleenlaskentaprosessia käytetään automaattisesti muutetulle ennusteen toimelle.
 
-## <a name="bringing-forecast-positions-into-budget-plans"></a>Ennusteen toimien tuominen budjettisuunnitelmiin.
+## Ennusteen toimien tuominen budjettisuunnitelmiin.
+<a id="bringing-forecast-positions-into-budget-plans" class="xliff"></a>
 
 [![graphic6](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 Ennusteen toimien luomisen ja muokkaamisen tarkoitus on lisätä ne budjettisuunnitelmiin niin, että budjettisuunnitelmat sisältävät tarkimmat budjetin summat. Ennusteen toimia voi lisätä budjettisuunnitelmiin kahdella tavalla. Voit käyttää joko budjettisuunnitelmalla olevaa luontiprosessia tai valintaprosessia.
 
-### <a name="generating-a-budget-plan-from-forecast-positions"></a>Budjettisuunnitelman muodostaminen ennusteen toimista
+### Budjettisuunnitelman muodostaminen ennusteen toimista
+<a id="generating-a-budget-plan-from-forecast-positions" class="xliff"></a>
 
 **Muodosta budjettisuunnitelma ennusteen toimista** -toiminto luo tai päivittää budjettisuunnitelmat siten, että niillä on ennusteen toimista tulevat budjetin summat ja FTE-määrät. Ennusteen toimista tulevista budjettisummista tulee budjettisuunnitelman rivien summat ja ne koostetaan taloushallinnon dimensioiden arvojen ja voimaantulopäivien perusteella. Luontiprosessissa lähteen ennusteen toimet määritetään budjettisuunnitelman riville. Voit tarkastella toimea joko lisäämällä ennusteen toimen rivinä budjettisuunnitelman asetteluun tai käyttämällä **Budjettisuunnitelman rivit** -kyselyä. Ohita tämä määritys määrittämällä **Sisällytä toimi budjettisuunnitelman riville** -asetukseksi **Ei**. 
 
@@ -196,7 +213,8 @@ Samoin kuin muissakin luontiprosesseissa, saatavilla on kolme vaihtoehtoa:
 -   **Korvaa nykyinen budjettisuunnitelman skenaario**– Poista kaikki kohdebudjettisuunnitelman tiedot valitussa budjettisuunnitelmaskenaariossa ja luo uusia rivejä, joilla on valitun ennusteen toimen tiedot.
 -   **Päivitä nykyinen budjettisuunnitelman skenaario ja liitä uudet tiedot** – Päivitä kohdesuunnitelman aiemmin luodut, lähderivejä vastaavat rivit, ja lisää myös uusia rivejä uusille tiedoille. Vastaavuus perustuu kirjanpitotiliin, päivämäärään, budjettiluokkaan ja muihin arvoihin, kuten ennusteen toimeen. Kaikki rivit, joilla on toimen lähdenumeroa vastaava toimen numero, korvataan uusilla riveillä lähteestä.
 
-### <a name="selecting-forecast-positions"></a>Ennusteen toimien valitseminen
+### Ennusteen toimien valitseminen
+<a id="selecting-forecast-positions" class="xliff"></a>
 
 Voit myös lisätä ennusteen toimien budjettisummia suoraan budjettisuunnitelmaan. Valitse **Lisää toimiin** -toiminto budjettisuunnitelman rivien yläpuolella valitaksesi sisällytettävät ennusteen toimet. 
 
@@ -204,7 +222,8 @@ Budjettisuunnitelman skenaariot, jotka voit valita lähteeksi, rajoittuvat suunn
 
 Tämä valintaprosessi toimii samoin kuin **Päivitä nykyinen budjettisuunnitelman skenaario ja liitä uudet tiedot** -asetus luontiprosessissa. Kaikki aiemmin luodut budjettisuunnitelman rivit, joissa ennusteen toimia ollaan lisäämässä, poistetaan ja ne korvataan uusilla riveillä, jotka perustuvat ennusteen toimen nykyiseen tilaan.
 
-#### <a name="date-options"></a>Päivämääräasetukset
+#### Päivämääräasetukset
+<a id="date-options" class="xliff"></a>
 
 Sekä luontiprosessissa että valintaprosessissa budjetin kustannustason alkamispäivä määrittää vastaavan budjettisuunnitelman rivin voimaantulopäivän. Budjetin kustannustason asetussivun **Kohdistusmenetelmä**-kentässä määritetään kohdistusmenetelmä.
 
@@ -214,7 +233,8 @@ Sekä luontiprosessissa että valintaprosessissa budjetin kustannustason alkamis
 -   **Viikoittain** – Logiikka muistuttaa **Kuukausittain-** ja **Neljännesvuosittain**-menetelmiä. Budjetin summa jaetaan tasan päivämääräalueeseen sisältyville viikoille. Näin luodaan tyypillinen viikoittainen summa, joka kohdistetaan kunkin viikon ensimmäiselle päivälle. Jos ensimmäinen kausi on osittainen viikko, kyseisen viikon summa muodostetaan niiden päivien lukumäärän perusteella, jolloin kulu on aktiivinen kyseisen viikon aikana, ja tulos kohdistetaan alkupäivälle. Viimeisen viikon summa on budjetin yhteissumman ja kaikkien muiden viikkojen summan erotus. Näin ollen, pyöristyksellä saattaa olla vaikutusta viimeisen viikon summaan.
 -   **Kahden viikon välein** – Tämä menetelmä on sama kuin **Viikoittain**, mutta laskelmat suoritetaan kahden viikon ajanjaksoille.
 
-#### <a name="changing-budget-plan-lines-that-have-forecast-positions"></a>Ennusteen toimia sisältävien budjettisuunnitelman rivien muuttaminen
+#### Ennusteen toimia sisältävien budjettisuunnitelman rivien muuttaminen
+<a id="changing-budget-plan-lines-that-have-forecast-positions" class="xliff"></a>
 
 Budjettisuunnitelman rivit näyttävät budjettisummien lähteen (ennusteen toimen numero), mutta niitä ei ole linkitetty. Näin ollen ennusteen toimeen tehdyt muutokset eivät näy budjettisuunnitelman rivillä, ja budjettisuunnitelman rivin muutokset näkyvät ennusteen toimessa. Jos muutat ennusteen toimea ja haluat, että päivitykset sisällytetään budjettisuunnitelmaan, sinun on tuotava ennusteen toimi uudelleen suunnitelmaan. Muista kuitenkin, että tämä prosessi poistaa kaikki rivit, joihin ennusteen toimi on määritetty. Näin ollen kaikki näille riveille tekemäsi muutokset poistetaan. 
 

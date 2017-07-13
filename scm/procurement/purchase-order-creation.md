@@ -3,14 +3,14 @@ title: Ostotilausten luominen
 description: "Tässä artikkelissa käsitellään ostotilauksen manuaalisen luonnin prosesseja ja vaihtoehtoja."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
@@ -18,17 +18,20 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c6c6b40d8934d1059c54678df8d4fc6530db1b24
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: fbf5337ac41ceae6e911c056db5226c8ed1cefb0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="create-purchase-orders"></a>Ostotilausten luominen
+# Ostotilausten luominen
+<a id="create-purchase-orders" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Tässä artikkelissa käsitellään ostotilauksen manuaalisen luonnin prosesseja ja vaihtoehtoja.
@@ -39,7 +42,8 @@ Voit luoda ostotilauksia myös kopioimalla rivit toisesta ostotilausasiakirjasta
 
 Vaikka ostotilauksia voi luoda manuaalisesti, ne luodaan yleensä muista prosesseista. Tilaukset voidaan luoda automaattisesti muiden asiakirjojen, kuten ehdotusten, perusteella. Ne voidaan luoda myös pääsuunnitteluprosessin osana suunniteltuja ostotilauksia hyödyntämällä. Jos käytät ostosopimuksia, ostotilaukset voidaan luoda **Vapauta tilaus** -toiminnolla. Ostotilauksen luontiin myös muita kehittyneitä menetelmiä. Tilaukset voidaan esimerkiksi luoda, kun käytät suoratoimitusta tai konsernin sisäisiä tilausketjuja.
 
-## <a name="creating-a-purchase-order-header"></a>Ostotilauksen otsikon luonti
+## Ostotilauksen otsikon luonti
+<a id="creating-a-purchase-order-header" class="xliff"></a>
 Kun luot uuden ostotilauksen, voit antaa avautuvaan valintaikkunaan yleisimmät ostotilauksen otsikon tiedot. Kun suljet valintaikkunan valitsemalla **OK**, tilaus luodaan ja voit sitten määrittää lisätietoja otsikkoon.  
 
 Ensimmäinen ostotilausta luotaessa harkittava tieto on tilauksen tyyppi. Eniten käytetty **Ostotilaus**-tyyppi. Jos kuitenkin tarvitaan hyvityslaskua, voit käyttää **Palautettu tilaus** -tyyppiä.  
@@ -52,7 +56,8 @@ Jos tilaukseen on liitetty ostosopimus, voit määrittää nämä tiedot **Ostos
 
 Ostotilauksen otsikossa on myös tietoja kuluista, jotka koskevat koko tilausta eikä yksittäisiä rivejä. Kulut voidaan lisätä automaattisesti tilaukseen, jos automaattiset kulut on määritetty toimittajalle tai toimittajan kuluryhmälle. Voit lisätä kuluja myös manuaalisesti tilauksen otsikkoon valitsemalla toimintoruudussa **Kulujen ylläpito**.
 
-## <a name="adding-purchase-order-lines"></a>Ostotilausrivien lisääminen
+## Ostotilausrivien lisääminen
+<a id="adding-purchase-order-lines" class="xliff"></a>
 Ostotilaukset voivat koskea fyysisiä tuotteita tai palveluja. Varastomalliryhmän asetus määrittää, käytetäänkö tiettyä nimiketunnusta tuotteessa tai palvelussa. Yleensä nimiketunnus määrittää ostetun tuotteen. Jos tilaus on kuitenkin suoraan kulutettaville tuotteille tai palveluille, voit määrittää nimikkeen myös hankintaluokan avulla.  
 
 Ostotilausriveille on paljon kenttiä, monissa kentissä on oletusarvo tai tilauksen otsikosta peritty arvo. Lisää kenttiä määritetään, kun valitset tuotteen tai palvelun. Useimmin manuaalisesti määritettäviä kenttiä ovat nimiketunnus-, määrä- ja pyydetty toimituspäiväkenttä. Myös yksikköhintaa ja alennuksia koskevat tiedot ovat erittäin tärkeitä, mutta näiden kenttien arvot tulevat usein kauppasopimuksista tai ostosopimuksista.  
@@ -69,8 +74,9 @@ Haluat ehkä joskus jakaa tilatun määrän, jotta sen eri osat toimitetaan eri 
 
 Kulut voidaan lisätä automaattisesti ostotilausriveille, jos automaattiset kulut on määritetty toimittajalle tai toimittajan kuluryhmälle ja nimike tai nimikkeen kuluryhmälle. Kulut lisätään kuitenkin enemmän yleensä kulut lisätään manuaalisesti että tilausrivin tasolla. Voit lisätä kulun avaamalla **Kulujen ylläpito** -sivun **Kulujen ylläpito** -toiminnon **Myyntitiedot**-valikossa **Rivit**-näkymässä. Kulujen lisäämisen etuna suoraan tilausrivitasolla on kulujen kohdistaminen varastokustannuksena. Voit määrittää koodit tilin tuotekustannukseen **Nimike**-debet-vaihtoehdolla. Tällaiset kulut on kohdistettava ostotilauksen otsikosta riveille ennen tilauksen vahvistamista. Haluat ehkä esimerkiksi kohdistaa kulut kullekin riville määrän perusteella. Kululuokan vaikuttaa myös siihen, miten kulut lasketaan. Kiinteät kulut esimerkiksi määrittävät kiinteän summan ja prosenttikulut lasketaan tilausrivin nettosumman prosenttiosuutena. Ostotilaukset voidaan määrittää kuormalle, ja kuorma voi sisältää arvion kuljetuskustannusten odotetuista kuluista. Voit kohdistaa tämän kulun kuormasta takaisin ostotilausriveille.
 
-## <a name="purchase-order-actions"></a>Ostotilaustehtävät
-Kun olet lisännyt otsikon ja rivit ostotilaukseen, lisävaiheet on täydennettävä, ennen kuin tilaus voidaan vahvistaa. Koska valittavia vaihtoehtoja on niin monia, [Toiminnon haku](/dynamics365/operations/get-started/action-search) voi auttaa löytämään sopivan valikkovaihtoehdon.  
+## Ostotilaustehtävät
+<a id="purchase-order-actions" class="xliff"></a>
+Kun olet lisännyt otsikon ja rivit ostotilaukseen, lisävaiheet on täydennettävä, ennen kuin tilaus voidaan vahvistaa. Koska valittavia vaihtoehtoja on niin monia, [Toiminnon haku](/dynamics365/unified-operations/fin-and-ops/get-started/action-search) voi auttaa löytämään sopivan valikkovaihtoehdon.  
 
 Voit määrittää tilauksen tuotteet niin, että niillä lisänimikkeitä. Lisänimikkeet ovat tuotteita, jotka on ostettava tai jotka voidaan ostaa yhdessä muiden tuotteiden kanssa. Lisätuotteita voidaan lisätä maksutta liittyvinä tuotteina tai voit päättää, lisätäänkö ne tilaukseen vai ei. Voit tarkistaa lisätuotteet, kun kukin tilausrivi on lisätty. Todennäköisesti on kuitenkin kätevämpää tarkastella kaikkien tilausrivien lisänimikkeitä tai lisätä niitä **Lisänimikkeet**-sivulla, jonka voit avata toimintoruudusta.  
 
@@ -85,7 +91,8 @@ Ostotilauksen voidaan määrittää edellyttämään, että budjettirahoitus koh
 
 Joudut ehkä viivyttämään ostotilauksen valmistumista. Joudut esimerkiksi ehkä pyytämään lisätietoja tuotteista tai palveluista tai sinun on ehkä hankittava kulutuslupa. Tilauksen pidättämiseen on useita tapoja. Voit esimerkiksi odottaa tilauksen vahvistusta. Vaihtoehtoisesti, jos käytössä on muutoksenhallinnan työnkulku, tilausta ei lähetetä hyväksyttäväksi. Jos tietyn toimittajan kaikki tilauksen on estettävä, voit merkitä toimittajan **pitoon** päätoimittajassa käsiteltäväksi. Myös tietyt tilanteet voivat estää tilauksen käsittelyn. Käsittely voidaan esimerkiksi estää, jos luottorajat on ylitetty tai tarvittava budjettirahoitus ei ole käytettävissä.
 
-<a name="see-also"></a>Lisätietoja
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
 [Ostotilausten yleiskatsaus](purchase-order-overview.md)
@@ -94,7 +101,7 @@ Joudut ehkä viivyttämään ostotilauksen valmistumista. Joudut esimerkiksi ehk
 
 [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
 
-[Toimittajan laskujen yleiskatsaus](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Toimittajan laskujen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

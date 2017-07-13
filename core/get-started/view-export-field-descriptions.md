@@ -3,14 +3,14 @@ title: Kenttien kuvausten tarkasteleminen ja vieminen
 description: "Tässä artikkelissa käsitellään kenttien kuvauksien näyttämistä ja kuvauksien tuomista Kenttien kuvaus -sivun avulla."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
@@ -18,36 +18,40 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cd84c03baa4f7a9d38e380c37ed2020ee3387954
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="view-and-export-field-descriptions"></a>Kenttien kuvausten tarkasteleminen ja vieminen
+# Kenttien kuvausten tarkasteleminen ja vieminen
+<a id="view-and-export-field-descriptions" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa käsitellään kenttien kuvauksien näyttämistä ja kuvauksien tuomista Kenttien kuvaus -sivun avulla.
 
-Microsoft Dynamics 365 for Operations -järjestelmässä on kuvaukset joillekin monimutkaisille kentille. Nämä kuvaukset tulevat näkyviin, kun pidät hiiren osoitinta kentän päällä. Voit myös tarkastella ja viedä kuvauksia **Kentän kuvaukset** -sivulla. 
+Microsoft Dynamics 365 for Finance and Operations -järjestelmässä on kuvaukset joillekin monimutkaisille kentille. Nämä kuvaukset tulevat näkyviin, kun pidät hiiren osoitinta kentän päällä. Voit myös tarkastella ja viedä kuvauksia **Kentän kuvaukset** -sivulla. 
 
 Kaikilla sivuilla ei ole kentän kuvauksia. Vain monimutkaisilla kentillä on kuvaukset; kuvauksia ei ole kentillä, joiden käyttö on selkeää. Tämän vuoksi joillakin sivuilla ei ole lainkaan kenttäkuvauksia, joillakin sivuilla on muutamia kuvauksia ja joillakin monimutkaisilla sivuilla, kuten monilla parametrisivulla, on useita kuvauksia. 
 
-Voit lisätä halutessasi uusia kenttien kuvauksia ja mukauttaa valmiita kuvauksia, jos sinulla on 365 for Operations -kehitysympäristön käyttöoikeus. Voit esimerkiksi lisätä yrityskohtaiset tiedot kentän kuvaukseen. Lisätietoja on artikkelissa [Muokkaa kenttäohjetta](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
+Voit lisätä halutessasi uusia kenttien kuvauksia ja mukauttaa valmiita kuvauksia, jos sinulla on Finance and Operations -kehitysympäristön käyttöoikeus. Voit esimerkiksi lisätä yrityskohtaiset tiedot kentän kuvaukseen. Lisätietoja on artikkelissa [Muokkaa kenttäohjetta](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help).
 
-## <a name="see-field-descriptions-in-the-user-interface"></a>Lisätietoja on käyttöliittymän kenttien kuvauksissa.
-Voit tarkastella kentän kuvauksia asettamalla hiiren osoittimen kentän päälle. Jos kuvausta ei ole, kentän nimi tulee näkyviin, kun pidät hiiren osoitinta kentän päällä. (Huomautus: Kenttien kuvauksia voidaan tarkastella versiossa 7.0.0 vain **Kenttien kuvaukset** -sivulla) Seuraavassa kuvassa on kentän kuvaus, joka tulee näkyviin, kun pidät hiiren osoitinta **Lukitse nimikkeet inventoinnin ajaksi** -kentän päällä. 
+## Lisätietoja on käyttöliittymän kenttien kuvauksissa.
+<a id="see-field-descriptions-in-the-user-interface" class="xliff"></a>
+Voit tarkastella kentän kuvauksia asettamalla hiiren osoittimen kentän päälle. Jos kuvausta ei ole, kentän nimi tulee näkyviin, kun pidät hiiren osoitinta kentän päällä. (Huomautus: Kenttien kuvauksia voidaan tarkastella Dynamics AX 7.0:ssa (helmikuu 2016) vain **Kenttien kuvaukset** -sivulla) Seuraavassa kuvassa on kentän kuvaus, joka tulee näkyviin, kun pidät hiiren osoitinta **Lukitse nimikkeet inventoinnin ajaksi** -kentän päällä. 
 
 [![Esimerkki kentän kuvauksesta](./media/field-description.png)](./media/field-description.png)
 
-## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Tarkastele kentän ohjetta ja vie ohje Kenttien kuvaukset -sivulla
+## Tarkastele kentän ohjetta ja vie ohje Kenttien kuvaukset -sivulla
+<a id="use-the-field-descriptions-page-to-view-and-export-field-help" class="xliff"></a>
 Voit tarkastella ja viedä **Kenttien kuvaukset** -sivulla kenttien kuvauksia. Voit tarkastella kuvauksia, jotka ovat käytettävissä yhdelle sivulle kerrallaan.
 
-### <a name="view-the-descriptions-for-a-page"></a>Näytä sivun kuvaukset
+### Näytä sivun kuvaukset
+<a id="view-the-descriptions-for-a-page" class="xliff"></a>
 
 Tarkastele sivun kuvauksia seuraavasti.
 
@@ -59,14 +63,16 @@ Lisätietoja sivuluettelon suodattimesta on myöhemmin tässä artikkelissa kohd
 
 Jos valitset **Sisällytä kenttiä ilman kuvaus** -asetukseksi **Kyllä**, kaikki sivun kentät näytetään, vaikka niillä ei olisi kuvausta.
 
-### <a name="export-the-descriptions-for-a-page"></a>Tuo sivun kuvaukset
+### Tuo sivun kuvaukset
+<a id="export-the-descriptions-for-a-page" class="xliff"></a>
 
 Voit viedä sivun kuvauksia toimimalla seuraavasti.
 
 1.  Valitse sivu **Valitse sivu** -kentässä.
 2.  Napsauta **Avaa Microsoft Officessa** -painiketta oikeassa yläkulmassa ja valitse sitten **FieldDescriptionTmp**.
 
-### <a name="searching-for-a-page"></a>Hakemassa sivua
+### Hakemassa sivua
+<a id="searching-for-a-page" class="xliff"></a>
 
 Voit etsiä sivua usealla eri tavalla **Valitse sivu** -kentässä. Usein avattava luettelo on avattava napsauttamalla **Valitse sivu** -kentässä nuolta ja tehtävä sitten valinta suodatetusta sivuluettelosta.
 
@@ -79,29 +85,35 @@ Voit etsiä sivua usealla eri tavalla **Valitse sivu** -kentässä. Usein avatta
 
 Kuvauksia ei esimerkiksi näytetä, jos kirjoitat **Inventointi** ****Valitse sivu**** -kenttään. Kun avaat luettelon näet, että kahdella sivulla on nimi **Inventointi** ja inventointi-sana on useiden sivujen nimessä. Jos valitset sivun, jonka AOT-nimi on **InventJournalCount**, kyseisen sivun kenttien kuvaukset näytetään. Jos kuitenkin avaat avattavan luettelon uudelleen, näet, että luettelo sisältää nyt kaikki sivut, joiden AOT-nimeen InventJournalCount sisältyy.
 
-## <a name="troubleshooting"></a>Vianmääritys
+## Vianmääritys
+<a id="troubleshooting" class="xliff"></a>
 Tässä osassa on tietoja, jotka on sellaisten ongelmien vianmäärityksessä, joita voi tulla esiin kenttien kuvauksia käytettäessä.
 
-### <a name="i-cant-find-a-field-description"></a>Kentän kuvausta ei löydy.
+### Kentän kuvausta ei löydy.
+<a id="i-cant-find-a-field-description" class="xliff"></a>
 
 Monimutkaisempia kenttiä varten lisätään parhaillaan kuvauksia. Jos tarvitset tiettyä kenttää koskevaa apua, ilmoita siitä meille lisäämällä kommentti tähän aiheeseen.
 
-### <a name="the-field-description-isnt-helpful"></a>Kuvauksen kentästä ei ole apua
+### Kuvauksen kentästä ei ole apua
+<a id="the-field-description-isnt-helpful" class="xliff"></a>
 
 Ilmoita meille lisäämällä kommentti tähän aiheeseen. Jos mahdollista, kerro, mitä lisätietoja tarvitset.
 
-### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>En löydä kenttää Kenttien kuvaukset -sivulla
+### En löydä kenttää Kenttien kuvaukset -sivulla
+<a id="i-cant-find-a-field-on-the-field-descriptions-page" class="xliff"></a>
 
 Voit näyttää kaikki kentät sivulla, kun määrität **Sisällytä kentät, joihin ei liity kuvausta** -asetuksen arvoksi **Kyllä**. Varmista, että olet valinnut oikean sivun valitsemalla **Valitse sivu** -kenttä. Jos kirjoittamasi nimi on toisen kentän nimeä, olet ehkä valinnut sivun, jonka nimi on pidempi.
 
-### <a name="i-cant-find-a-page-on-the-field-descriptions-page"></a>En löydä sivua Kenttien kuvaukset -sivulla
+### En löydä sivua Kenttien kuvaukset -sivulla
+<a id="i-cant-find-a-page-on-the-field-descriptions-page" class="xliff"></a>
 
 Lisätietoja erilaisista sivujen etsimistavoista on aiemmin tässä artikkelissa kohdassa Sivujen etsiminen. Jos kirjoitit sivun tarkan nimen, kentän kuvauksia ei ehkä näytetä, jos usealla sivulla on sama nimi. Avaa suodatettu luettelo käytettävissä olevista sivuista napsauttamalla **Valitse sivu** -kentän nuolta.
 
-<a name="see-also"></a>Lisätietoja
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
-[Mukauta kenttää -ohje](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+[Mukauta kenttää -ohje](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
 
 
 

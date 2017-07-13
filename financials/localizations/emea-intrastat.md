@@ -3,7 +3,7 @@ title: Intrastat
 description: "Tämä artikkeli sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa. Artikkeli sisältää raportointiprosessin yleiskatsauksen ja kertoo pakolliset asetukset ja edellytykset."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,22 +11,23 @@ ms.technology:
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 28581
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5dea47c92c3891ce86b470119ea3bad8252c08d1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6d1141d597e95b0d5cabf77c0248697d256b102a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="intrastat"></a>Intrastat
+# Intrastat
+<a id="intrastat" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,18 +36,22 @@ Tämä artikkeli sisältää tietoja Intrastat-raportoinnista, jota käytetään
 
 Intrastat on järjestelmä, jolla kerätään tietoja ja muodostetaan tilastoja Euroopan unionin (EU) jäsenvaltioiden ja alueiden välisestä kaupasta. Intrastat-raportointi on pakollista aina, kun tuote ylittää EU-maan tai -alueen rajan. Monissa maissa ja monilla alueilla Intrastat-raportointi koskee myös palveluja. Intrastat-raporteissa voidaan kerätä pakollisia ja valinnaisia elementtejä. Seuraavat elementit ovat pakollisia: tietojen ilmoittamisesta vastuussa olevan osapuolen arvonlisäveronumero (ALV-numero), viitekausi, suunta (saapuva vai lähtevä), 8-numeroinen tavarankoodi, kumppanin jäsenvaltio (lähettäjäjäsenvaltio saapuvissa ja määräjäsenvaltio lähetyksissä), tavaroiden arvo, tavaroiden määrä (nettopaino ja lisäyksikkö) ja tapahtuman luonne. Maat ja alueet voivat myös kerätä erilaisten ehtojen mukaisesti valinnaisia elementtejä. Valinnaisia elementtejä ovat esimerkiksi alkuperämaa tai -alue, toimitusehdot, kuljetustapa, yksityiskohtaisempi tavaran koodi kuin CN8, alkuperäalue lähetyksissä ja määräalue saapuvissa, tilastomenettely, tilastoarvo, tavaroiden kuvaus sekä kuormauksen tai kuorman purkamisen satama tai lentoasema.
 
-## <a name="overview-of-the-intrastat-reporting-process"></a>Intrastat-raportointiprosessin yhteenveto
+## Intrastat-raportointiprosessin yhteenveto
+<a id="overview-of-the-intrastat-reporting-process" class="xliff"></a>
 Seuraavissa osissa kuvataan Intrastat-raportoinnissa käytettävää yleistä tiedonkulkua.
 
-### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Anna toisen EU-maan tai -alueen rajan ylittävä tapahtuma
+### 1. Anna toisen EU-maan tai -alueen rajan ylittävä tapahtuma
+<a id="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion" class="xliff"></a>
 
-Myyntilasku, vapaatekstilasku, ostolasku, projektilaskun, asiakkaan pakkausluettelo, toimittajan tuotteen vastaanotto tai siirtotilaus siirretään Intrastat-kirjauskansioon vain, jos määrämaan tai -alueen tyyppi (lähtevissä) tai lähettäjätyyppi (saapuvissa) on **EU**. Tämän toiminto laajennettiin Microsoft Dynamics 365 for Operations -versioon 1611, ja sen avulla voit määrittää rahtiosoitteita EU:n sisäisille tapahtumille. Jos rahtiosoite on eri kuin toimittajan osoite (tai asiakkaan osoite palautustilauksen osalta), Intrastat-raportointi toimii näillä tiedoilla. Kun luot myyntitilauksen, vapaatekstilaskun, ostotilauksen, toimittajan laskun, projektilaskun tai siirtotilauksen, joissakin ulkomaankauppaan liittyvissä kentissä on oletusarvot asiakirjan otsikossa tai rivillä. Tapahtuman oletuskoodi otetaan vastaavasta kentästä **Ulkomaankaupan parametrit**-sivulla. Tavaran oletuskoodi, alkuperämaa tai -alue sekä alkuperäosavaltio tai -provinssi otetaan nimikkeestä. Voit muuttaa oletusarvoja ja lisätä muut ulkomaankauppaan liittyvät tiedot: tilastomenettelyn, kuljetustavan ja sataman.
+Myyntilasku, vapaatekstilasku, ostolasku, projektilaskun, asiakkaan pakkausluettelo, toimittajan tuotteen vastaanotto tai siirtotilaus siirretään Intrastat-kirjauskansioon vain, jos määrämaan tai -alueen tyyppi (lähtevissä) tai lähettäjätyyppi (saapuvissa) on **EU**. Tämän toiminto laajennettiin Microsoft Dynamics 365 for Operationsiin (1611), ja sen avulla voit määrittää rahtiosoitteita EU:n sisäisille tapahtumille. Jos rahtiosoite on eri kuin toimittajan osoite (tai asiakkaan osoite palautustilauksen osalta), Intrastat-raportointi toimii näillä tiedoilla. Kun luot myyntitilauksen, vapaatekstilaskun, ostotilauksen, toimittajan laskun, projektilaskun tai siirtotilauksen, joissakin ulkomaankauppaan liittyvissä kentissä on oletusarvot asiakirjan otsikossa tai rivillä. Tapahtuman oletuskoodi otetaan vastaavasta kentästä **Ulkomaankaupan parametrit**-sivulla. Tavaran oletuskoodi, alkuperämaa tai -alue sekä alkuperäosavaltio tai -provinssi otetaan nimikkeestä. Voit muuttaa oletusarvoja ja lisätä muut ulkomaankauppaan liittyvät tiedot: tilastomenettelyn, kuljetustavan ja sataman.
 
-### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Voit luoda tietoja EU-maiden -ja alueiden välisestä kaupasta Intrastat-kirjauskansion avulla.
+### 2. Voit luoda tietoja EU-maiden -ja alueiden välisestä kaupasta Intrastat-kirjauskansion avulla.
+<a id="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions" class="xliff"></a>
 
 Tilastoja varten tiedot EU-maiden ja -alueiden välisestä kaupasta luodaan kuukausittain. Voit siirtää tapahtumat vapaatekstilaskusta, myyntilaskusta, asiakkaan pakkausluettelosta, toimittajan laskusta, toimittajan pakkausluettelosta, projektilaskusta tai siirtotilauksesta **Ulkomaankaupan parametrit** -sivulla määritettyjen ehtojen mukaisesti. Voit antaa tapahtumat myös manuaalisesti. Voit päivittää manuaalisesti siirretyt tapahtumat Intrastat-kirjauskansiossa, jos päivitys on tarpeellinen. Voit tiivistää Intrastat-kirjauskansion tapahtumat **Intrastatin tiivistys** -sivulla määritettyjen erityisehtojen mukaisesti. Joissakin maissa ja joillakin alueilla voi käyttää pienen tapahtuman rajaa. Voit sitten raportoida kyseisen rajan alle jäävät tapahtumat erityisellä tavaran koodilla. Voit päivittää tavaran koodin vastaavilla Intrastat-kirjauskansion riveillä **Ulkomaankaupan parametrit** -sivun **Vähimmäisraja**-asetuksen mukaisesti. Voit myös tiivistää kyseiset tapahtumat **Intrastatin tiivistys** -asetuksen mukaisesti. Voit tarkistaa Intrastat-kirjauskansion tapahtumien valmiusasteen **Ulkomaankaupan parametrit** -sivun **Tarkista asetukset** -asetuksen perusteella. Vastaavien kenttien tietojen valmiusaste voidaan tarkistaa: maa tai alue, osavaltio tai provinssi, paino, tavaran koodi, tapahtumakoodi, lisäyksikkö, satama, alkuperä, toimitusehdot, kuljetustapa ja ALV-tunnus. Tapahtumat, jotka eivät ole valmiita, saavat merkinnän ei kelpaa.
 
-### <a name="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions"></a>3. Voit raportoida tietoja EU-maiden -ja alueiden välisestä kaupasta Intrastat-kirjauskansion avulla.
+### 3. Voit raportoida tietoja EU-maiden -ja alueiden välisestä kaupasta Intrastat-kirjauskansion avulla.
+<a id="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions" class="xliff"></a>
 
 Tilastoja varten tiedot EU-maiden ja -alueiden välisestä kaupasta raportoidaan kuukausittain. Voit tulostaa Intrastat-raportin **Ulkomaankaupan parametrit** -sivun **Raporttimuodon yhdistäminen** -asetusten mukaisesti. Voit myös luoda sähköisen tiedoston **Ulkomaankaupan parametrit** -sivun **Tiedostomuodon yhdistäminen** -asetusten mukaisesti. Lisätietoja Intrastat-raportoinnista, kuten edellytyksistä, on Intrastat-raportoinnin tehtävätallenteissa:
 
@@ -54,7 +59,8 @@ Tilastoja varten tiedot EU-maiden ja -alueiden välisestä kaupasta raportoidaan
 -   Siirrä tapahtumat Intrastatiin
 -   Rahtiosoitteen määrittäminen yhteisönsisäiselle tapahtumalle.
 
-## <a name="prerequisites"></a>Edellytykset
+## Edellytykset
+<a id="prerequisites" class="xliff"></a>
 Seuraavassa taulussa luetellaan Intrastat-raportoinnin edellytykset.
 
 <table>
@@ -111,10 +117,12 @@ Seuraavassa taulussa luetellaan Intrastat-raportoinnin edellytykset.
 </tbody>
 </table>
 
-## <a name="setup"></a>Luo perustiedot
+## Luo perustiedot
+<a id="setup" class="xliff"></a>
 Seuraavissa osissa käsitellään pakollisia Intrastat-raportoinnin asetuksia.
 
-### <a name="set-up-all-required-intrastat-related-lists"></a>Kaikkien Intrastatiin liittyvien luetteloiden määrittäminen
+### Kaikkien Intrastatiin liittyvien luetteloiden määrittäminen
+<a id="set-up-all-required-intrastat-related-lists" class="xliff"></a>
 
 <table>
 <colgroup>
@@ -171,11 +179,13 @@ Seuraavissa osissa käsitellään pakollisia Intrastat-raportoinnin asetuksia.
 </tbody>
 </table>
 
-### <a name="set-up-rules-for-compressing-intrastat-transactions"></a>Intrastat-tapahtumien tiivistämissääntöjen määrittäminen
+### Intrastat-tapahtumien tiivistämissääntöjen määrittäminen
+<a id="set-up-rules-for-compressing-intrastat-transactions" class="xliff"></a>
 
 Voit valita **Intrastatin tiivistys** -sivulla tiivistyksessä käytettävät kentät. Kaikki tapahtumat, joilla Intrastat-kirjauskansiossa valittujen kenttien kaltainen arvoyhdistelmä, tiivistetään yhdeksi tapahtumaksi, kun suoritat tiivistystoiminnon Intrastat-kirjauskansiossa.
 
-### <a name="set-up-foreign-trade-parameters"></a>Määritä ulkomaankaupan parametrit
+### Määritä ulkomaankaupan parametrit
+<a id="set-up-foreign-trade-parameters" class="xliff"></a>
 
 Määritä seuraavan taulun parametrit **Ulkomaankaupan parametrit** -sivulla.
 

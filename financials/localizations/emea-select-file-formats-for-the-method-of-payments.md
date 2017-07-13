@@ -3,7 +3,7 @@ title: Maksutapojen tiedostomuodot
 description: "Tässä ohjeaiheessa kerrotaan kaksi tapaa hankkia tiedostomuotoja, joita voit käyttää maksutavoissa."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,22 +11,23 @@ ms.technology:
 ms.search.form: CustPaymMode, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262514
 ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9b3cf1d469998389895c137fa842b73adb0eeddc
+ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
+ms.openlocfilehash: cbe4b57d0ad9119b0e5f6c9725a85c3afe8388ab
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/09/2017
 
 
 ---
 
-# <a name="file-formats-for-methods-of-payment"></a>Maksutapojen tiedostomuodot
+# Maksutapojen tiedostomuodot
+<a id="file-formats-for-methods-of-payment" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,11 +41,13 @@ On kaksi tapaa, joiden avulla voit saada tiedostomuodot maksutapoihin: sähköis
 -   Palautus
 -   Maksusuoritus
 
-### <a name="method-1-electronic-reporting-file-formats"></a>Tapa 1: Sähköisen raportoinnin (ER) tiedostomuodot
+### Tapa 1: Sähköisen raportoinnin (ER) tiedostomuodot
+<a id="method-1-electronic-reporting-file-formats" class="xliff"></a>
 
-Tiedostomuodoille, jotka perustuvat ER-konfiguraatioihin, sinun on tuotava konfiguraatiot Lifecycle Services (LCS) -palvelusta. Lisätietoja on ohjeaiheessa [Lataa sähköisen raportoinnin konfiguraatiot Lifecycle Servicesistä](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Kun olet tuonut raportointikonfiguraatiot näille tiedostomuodoille, tuodut muodot ovat saatavilla **Maksutavat** -sivulla. Tiedostomuotojen tuonnin ja valitsemisen prosessi on Euroopassa samanlainen kuin Japanissa. <!---For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).-->
+Tiedostomuodoille, jotka perustuvat ER-konfiguraatioihin, sinun on tuotava konfiguraatiot Lifecycle Services (LCS) -palvelusta. Lisätietoja on ohjeaiheessa [Lataa sähköisen raportoinnin konfiguraatiot Lifecycle Servicesistä](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Kun olet tuonut raportointikonfiguraatiot näille tiedostomuodoille, tuodut muodot ovat saatavilla **Maksutavat** -sivulla. Tiedostomuotojen tuonnin ja valitsemisen prosessi on Euroopassa samanlainen kuin Japanissa. <!---For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).-->
 
-### <a name="method-2-x-file-formats"></a>Tapa 2: X++ -tiedostomuodot
+### Tapa 2: X++ -tiedostomuodot
+<a id="method-2-x-file-formats" class="xliff"></a>
 
 Valitaksesi tiedostomuodot, jotka perustuvat X++ -koodia, tee seuraavat toimet.
 

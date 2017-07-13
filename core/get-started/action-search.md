@@ -1,15 +1,16 @@
 ---
 title: Toiminnon haku
-description: "Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Operationsin toimintohakuominaisuutta. Toimintohaku auttaa sinua löytämään ja suorittamaan toimintoja sivulla."
+description: "Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Finance and Operationsin toimintohakuominaisuutta. Toimintohaku auttaa sinua löytämään ja suorittamaan toimintoja sivulla."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62303
 ms.assetid: 62c70de0-fdde-4417-8e08-0583fb095a40
 ms.search.region: Global
@@ -17,29 +18,32 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ef5709889dcabd4c9ed760f57d210956f38c37e9
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cd024f2bc06fca9c21ea41fbed44efbc519cee94
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="action-search"></a>Toiminnon haku
+# Toiminnon haku
+<a id="action-search" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Operationsin toimintohakuominaisuutta. Toimintohaku auttaa sinua löytämään ja suorittamaan toimintoja sivulla.
+Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Finance and Operationsin toimintohakuominaisuutta. Toimintohaku auttaa sinua löytämään ja suorittamaan toimintoja sivulla.
 
-<a name="introduction"></a>Johdanto
+Johdanto
+<a id="introduction" class="xliff"></a>
 ------------
 
-Microsoft Dynamics 365 for Operations näyttää ensisijaisesti komennot toimintoruuduissa – sekä vakiotoimintoruudussa, joka näkyy sivun yläreunassa, että työkalupalkeissa, jotka näkyvät sivun eri osissa. Aiemmissa versioissa Päävihjeet-toiminnon avulla pystyit nopeasti käyttämään mitä tahansa toimintoruudun painiketta painamalla Alt-näppäintä ja sitten sarjan kirjaimia. 
+Microsoft Dynamics 365 for Finance and Operations näyttää ensisijaisesti komennot toimintoruuduissa – sekä vakiotoimintoruudussa, joka näkyy sivun yläreunassa, että työkalupalkeissa, jotka näkyvät sivun eri osissa. Aiemmissa versioissa Päävihjeet-toiminnon avulla pystyit nopeasti käyttämään mitä tahansa toimintoruudun painiketta painamalla Alt-näppäintä ja sitten sarjan kirjaimia. 
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)Nykyisessä Dynamics 365 for Operationsin versiossa Päävihjeet-toimintoa ei kuitenkaan ole enää saatavilla, vaan sen on korvannut toimintohaku-ominaisuus. Tämän uuden ominaisuuden avulla voit nopeasti etsiä ja suorittaa painikkeen mistä tahansa näkyvillä olevasta toimintoruudusta.
+[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) Nykyisessä Finance and Operationsin versiossa Päävihjeet-toimintoa ei kuitenkaan ole enää saatavilla, vaan sen on korvannut toimintohakuominaisuus. Tämän uuden ominaisuuden avulla voit nopeasti etsiä ja suorittaa painikkeen mistä tahansa näkyvillä olevasta toimintoruudusta.
 
-## <a name="using-action-search"></a>Toimintohaun käyttö
+## Toimintohaun käyttö
+<a id="using-action-search" class="xliff"></a>
 Suorita seuraavat vaiheet, kun haluat käyttää toimintohaku-ominaisuutta:
 
 1.  Valitse toimintoruudussa **toimintohaku**-kenttää. (**toimintohaku**-kentässä on suurennuslasikuvake.)
@@ -52,8 +56,9 @@ Kun painike on suoritettu, huomio palautuu viimeiseen toimeesi sivulla niin, ett
 
 Voit myös aloittaa toiminnon painamalla näppäinyhdistelmää Ctrl+/ tai Alt+Q. Paina pikanäppäintä uudelleen palataksesi edelliseen toimeesi sivulla.
 
-## <a name="understanding-the-results-list"></a>Tulosluetteloon tutustuminen
-Usein Dynamics 365 for Operationsissa sinun on tiedettävä painikkeesta sekä sijainti että konteksti, jotta ymmärtäisit täysin painikkeen tarkoituksen. Tämän vuoksi lisätiedot on jokaisesta nimikkeestä tulosluettelossa, jotta voit ymmärtää täysin luettelossa näytettävät painikkeet. Erityisesti painikkeen "polku" näytetään. Tämä polku saattaa soveltuvin osin sisältää seuraavien käyttöliittymäelementtien otsikot:
+## Tulosluetteloon tutustuminen
+<a id="understanding-the-results-list" class="xliff"></a>
+Usein Finance and Operationsissa sinun on tiedettävä painikkeesta sekä sijainti että konteksti, jotta ymmärtäisit täysin painikkeen tarkoituksen. Tämän vuoksi lisätiedot on jokaisesta nimikkeestä tulosluettelossa, jotta voit ymmärtää täysin luettelossa näytettävät painikkeet. Erityisesti painikkeen "polku" näytetään. Tämä polku saattaa soveltuvin osin sisältää seuraavien käyttöliittymäelementtien otsikot:
 
 -   Toimintoruutu-välilehti
 -   Painikeryhmä
@@ -69,8 +74,9 @@ Edellisessä esimerkissä toimintohakku näytti tulokset standardimuotoisesta to
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
-## <a name="action-search-vs-navigation-search"></a>Toimintohaku vs. siirtymishaku
-Toimintohaun tarkoituksena on etsiä ja suorittaa toimintoja sivulla. Dynamics 365 for Operationsissa on myös erillinen hakumekanismi sivujen etsimiseen ja niille siirtymiseen. Lisätietoja tästä ominaisuudesta löydät artikkelista. [Siirtymishaku](navigation-search.md).
+## Toimintohaku vs. siirtymishaku
+<a id="action-search-vs-navigation-search" class="xliff"></a>
+Toimintohaun tarkoituksena on etsiä ja suorittaa toimintoja sivulla. Finance and Operationsissa on myös erillinen hakumekanismi sivujen etsimiseen ja niille siirtymiseen. Lisätietoja tästä ominaisuudesta löydät artikkelista. [Siirtymishaku](navigation-search.md).
 
 
 

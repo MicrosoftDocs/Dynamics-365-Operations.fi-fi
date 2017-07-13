@@ -1,45 +1,49 @@
 ---
 title: "Näytä raportit"
-description: "Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics AX:ssä. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja."
-author: RobinARH
+description: "Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 for Finance and Operations Enterprise editionissa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja."
+author: kweekley
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
 ms.search.region: Global
-ms.author: aolson
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8b02dbc0181c08611674cdf571075c20d78cebdc
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 102031174417a33b12c32f6b8185556b8c4701e5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="view-financial-reports"></a>Näytä raportit
+# Näytä raportit
+<a id="view-financial-reports" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics AX:ssä. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
+Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 for Finance and Operations Enterprise editionissa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
 
-<a name="financial-reporting-overview"></a>Taloushallinnon raportoinnin yleiskatsaus
+Taloushallinnon raportoinnin yleiskatsaus
+<a id="financial-reporting-overview" class="xliff"></a>
 ----------------------------
 
-## <a name="open-a-financial-report"></a>Avaa taloudellinen raportti
+## Avaa taloudellinen raportti
+<a id="open-a-financial-report" class="xliff"></a>
 Voit avata raportin valitsemalla raportin nimen. Kun raportti avataan ensimmäistä kertaa, se luodaan automaattisesti edelliselle kuukaudelle. Jos esimerkiksi avaat raportin ensimmäisen kerran elokuussa 2015, raportti luotiin päivämäärälle 31.7.2015. Kun raportti on avattu, voit aloittaa siihen perehtymisen porautumalla tiettyyn tietoon ja muuttamalla raporttiasetuksia.
 
-## <a name="drill-down-on-a-financial-report"></a>Raportin tietoihin perehtyminen
+## Raportin tietoihin perehtyminen
+<a id="drill-down-on-a-financial-report" class="xliff"></a>
 Taloudelliset raportit voivat sisältää useita yksityiskohtaisia tasoja. Taloushallinnon taso on ensimmäinen taso jonka näet, kun avaat taloushallinnon raportin. Siirtyäksesi kirjanpitotasoon, valitse tiedot joihin haluat perehtyä. Esimerkiksi, tarkastellaksesi tilin myyntitietoja, valitse myyntitiedot, joita haluat tutkia. Kirjanpitotasolta, voit mennä alaspäin tarkastelemaan tapahtumia, joista tilin saldo muodostuu. Voit tarkastella tapahtumia kahdella tavalla: raportin tapahtumat ja tositetapahtumat.
 
 -   **Raportin tapahtumat** – tapahtumat näkyvät muotoillussa näkymässä, joka kuuluu taloushallinnon raporttiin. Tarkastellaksesi tapahtumia muotoillussa näkymässä, valitse tieto johon haluat perehtyä ja valitse sitten **Perehdy raportin tapahtumatasolle**.
@@ -47,7 +51,8 @@ Taloudelliset raportit voivat sisältää useita yksityiskohtaisia tasoja. Talou
 
 Jos tiedot ovat budjettitietoja, voit avata budjettitilimerkinnöt. Sulkeaksesi raportin tasoja ja palataksesi sinne mistä aloitit, voit painaa Esc-näppäintä tai klikata **Sulje**-painiketta (**X**) oikeassa yläkulmassa.
 
-## <a name="change-report-options"></a>Muuta raporttiasetuksia
+## Muuta raporttiasetuksia
+<a id="change-report-options" class="xliff"></a>
 Voit muuttaa raportin päivämäärää, lisätä ominaisuus- ja dimensiosuodattimia tai vaihtaa budjettisuunnitelmaa **todellinen vs. budjetti** -raportissa. Valitse toimintoruudussa **Raportin asetukset** ja noudata sitten jotakin seuraavista askelista:
 
 -   Muuttaaksesi raportin perustekautta ja perustevuotta, valitse perustekausi ja perustevuosi ja klikkaa sitten **OK**.
@@ -57,22 +62,28 @@ Voit muuttaa raportin päivämäärää, lisätä ominaisuus- ja dimensiosuodatt
 
 Kun klikkaat **OK**, kaikki valitsemasi vaihtoehdot käytetään raporttiin. Jos päätät, että et halua käyttää valittuja asetuksia, klikkaa **peruuta**.
 
-## <a name="update-a-financial-report"></a>Päivitä talousraportti
+## Päivitä talousraportti
+<a id="update-a-financial-report" class="xliff"></a>
 Voit päivittää (päivitys) talousraportin siten, että siinä näkyy kaikkein viimeisimmät tiedot sille vuodelle ja kaudelle, jolle raportti luotiin. Jos esimerkiksi päivität talousraportin, joka on luotu lokakuulle 2015, raportti sisältää kaikki uudet lokakuulle 2015 kirjatut tapahtumat. Päivitä raportti valitsemalla toimintoruudussa **Päivitä**. Päivitetty raportti on saatavissa vain sen päivittäneelle henkilölle. Raportti on julkaistava, jotta muut käyttäjät näkevät samat tiedot.
 
-## <a name="publish-a-financial-report"></a>Julkaise talousraportti
+## Julkaise talousraportti
+<a id="publish-a-financial-report" class="xliff"></a>
 Kun olet päivittänyt talousraportin, voit julkaista sen. Organisaation muut käyttäjät voivat sitten tarkastella sitä. Julkaistaksesi raportin toimintoruudussa, klikkaa **julkaise**.
 
-## <a name="display-a-financial-report-in-a-different-currency"></a>Näytä talousraportti eri valuuttana
-Talousraportti voidaan näyttää minä vain valuuttana milloin tahansa. Näyttääksesi raportin toisena valuuttana, toimintoruudussa, klikkaa **valuutta** ja valitse sitten valuutta. Raportti käännetään kyseiseksi valuutaksi ja tulokset näytetään. kaikki valuuttakoodit tai merkit, jotka sisällytetään raportin rakenteen osaksi, päivitetään vastaamaan uutta valuuttaa. Listalla näkyvät valuutat ovat raportoinnin valuuttoja, jotka on määritetty Microsoft Dynamics AX:ssä.
+## Näytä talousraportti eri valuuttana
+<a id="display-a-financial-report-in-a-different-currency" class="xliff"></a>
+Talousraportti voidaan näyttää minä vain valuuttana milloin tahansa. Näyttääksesi raportin toisena valuuttana, toimintoruudussa, klikkaa **valuutta** ja valitse sitten valuutta. Raportti käännetään kyseiseksi valuutaksi ja tulokset näytetään. kaikki valuuttakoodit tai merkit, jotka sisällytetään raportin rakenteen osaksi, päivitetään vastaamaan uutta valuuttaa. Listalla näkyvät valuutat ovat raportoinnin valuuttoja, jotka on määritetty Finance and Operationsissa.
 
-## <a name="display-a-summarized-view-of-the-financial-report"></a>Näytä talousraportti yhteenvetona
+## Näytä talousraportti yhteenvetona
+<a id="display-a-summarized-view-of-the-financial-report" class="xliff"></a>
 Talousraportti voi sisältää erittelyrivejä ja yhteenveto-rivejä. Erittelyrivit ovat rivejä, joilla on päätilit tai dimensiot. Yhteenvetorivit ovat kuvaus-, summa- ja laskentarivejä. Näyttääksesi vain yhteenvetorivit raportissa, klikkaa **näytä** ja valitse sitten **vain yhteenvetorivit**. Raportti on tiivistetty ja näyttää vain yhteenvetorivit. Nähdäksesi yhteenvetorivit sekä erittelyrivit, klikkaa **näytä** ja valitse sitten **vain yhteenvetorivit** uudelleen.
 
-## <a name="open-a-financial-report-from-a-previous-month"></a>Avaa edellisen kuukauden taloudellinen raportti
+## Avaa edellisen kuukauden taloudellinen raportti
+<a id="open-a-financial-report-from-a-previous-month" class="xliff"></a>
 Voit tarkastella edellisten kuukauksien tai kuluvan kuukauden raportteja ilman raportin uudelleen tekemistä. Voit avata raportin edelliselle kuukaudelle valitsemalla **Näytä** ja valitsemalla sitten **Edelliset raportit**. Näkyviin tulee luettelo edellisistä kuukausista, joille raportti on luotu. Laajenna kuukausi lukeaksesi raportin, valitse päivämäärä ja valitse sitten **OK**. Edellisen kuukauden raportti tulee näkyviin. Voit palauttaa kuluvan kuukauden raportin valitsemalla **peruuta**.
 
-## <a name="print-a-financial-report"></a>Tulosra talousraportti
+## Tulosra talousraportti
+<a id="print-a-financial-report" class="xliff"></a>
 Tulostaaksesi talousraportin toimintoruudussa, valitse **tulosta** ja noudata sitten yhtä tai useampaa seuraavista askeista määrittääksesi tulostusasetukset:
 
 -   Sisällyttääksesi yksityiskohtaisia tasoja tulostettavaan raporttiin, säädä liukusäätimellä **kyllä** tai **ei**. Jos raportissa käytetään raportointipuuta, voit valita kaikki raportointiyksiköt tai vain nykyisen raportointiyksikön.
@@ -82,13 +93,16 @@ Tulostaaksesi talousraportin toimintoruudussa, valitse **tulosta** ja noudata si
 
 Sen jälkeen, kun olet määritätänyt tulostusasetukset, valitse **tulosta** tulostaaksesi raportin. Jos päätät, että et halua tulostaa raporttia, klikkaa **peruuta** sen sijaan. Tulostettavan raportin esikatselu tulee näkyviin. Voit valita tulostimen, johon raportti lähetetään ja voit myös määrittää tulostusasetuksia.
 
-## <a name="export-a-financial-report"></a>Lähetä talousraportti
+## Lähetä talousraportti
+<a id="export-a-financial-report" class="xliff"></a>
 Lähettääksesi talousraportin. toimintoruudussa, klikkaa **lähetä**. Raportti lähetetään Microsoft Exceliin ja selaimesi kysyy, haluatko avata tai tallentaa vientitiedostoon. Vientiasetuksia, jotka on määritetty raportin suunnittelussa, käytetään vietävään raporttiin.    
 
-<a name="see-also"></a>Lisätietoja
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
-[Microsoft Dynamics AX:n talousraportointi](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+[Microsoft Dynamics AX:n talousraportointi](/dynamics365/unified-operations/dev-itpro/analytics/financial-reporting-intro)
+
 
 
 

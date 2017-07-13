@@ -1,16 +1,16 @@
 ---
 title: "Monijärjestelmäsuunnittelu: erillisen, prosessi- ja Lean-hankinnan yhdistäminen"
-description: "Tässä artikkelissa on tietoja monijärjestelmäsuunnittelusta. Monijärjestelmäsuunnittelussa toimitusketjun voi mallintaa materiaalivirran perusteella. Microsoft Dynamics 365 for Operations varmistaa, että materiaalivirta seuraa malleja valitusta toimituskäytännöstä huolimatta (kanbanit, tuotantotilaukset, erätilaukset tai siirtotilaukset)."
+description: "Tässä artikkelissa on tietoja monijärjestelmäsuunnittelusta. Monijärjestelmäsuunnittelussa toimitusketjun voi mallintaa materiaalivirran perusteella. Microsoft Dynamics 365 for Finance and Operations varmistaa, että materiaalivirta seuraa malleja valitusta toimituskäytännöstä riippumatta (kanbanit, tuotantotilaukset, erätilaukset tai siirtotilaukset)."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
@@ -19,20 +19,21 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 686d61f476fbdf95348cacfd93b1e18d51e79732
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 9dbbe540c919d27bafcc10614f308e5b6ba313f1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Monijärjestelmäsuunnittelu: erillisen, prosessi- ja Lean-hankinnan yhdistäminen
+# Monijärjestelmäsuunnittelu: erillisen, prosessi- ja Lean-hankinnan yhdistäminen
+<a id="mixed-mode-planning---combine-discrete-process-and-lean-sourcing" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on tietoja monijärjestelmäsuunnittelusta. Monijärjestelmäsuunnittelussa toimitusketjun voi mallintaa materiaalivirran perusteella. Microsoft Dynamics 365 for Operations varmistaa, että materiaalivirta seuraa malleja valitusta toimituskäytännöstä huolimatta (kanbanit, tuotantotilaukset, erätilaukset tai siirtotilaukset). 
+Tässä artikkelissa on tietoja monijärjestelmäsuunnittelusta. Monijärjestelmäsuunnittelussa toimitusketjun voi mallintaa materiaalivirran perusteella. Microsoft Dynamics 365 for Finance and Operations varmistaa, että materiaalivirta seuraa malleja valitusta toimituskäytännöstä riippumatta (kanbanit, tuotantotilaukset, erätilaukset tai siirtotilaukset). 
 
 Voit valita tuotteen tarjoamiselle yleisen strategian tuoterakenteesta riippumatta.  
 
@@ -40,18 +41,19 @@ Sinulla voi esimerkiksi olla kokoonpanossa kanban-ohjaus, jossa materiaalit hank
 
 Toimituskäytäntöjen pääajoituksessa käytettävä rakeisuus riippuu kattavuusdimensioina käyttöön otetuista varastodimensioista. Kun haluat ottaa käyttöön pääajoituksen ohjaamaan erityyppisten sijaintien täydennystä ja toimituksia (esimerkiksi erottamalla tuotannon eri tuotantoyksiköihin tai erottamalla erityyppisten materiaalien ja valmiiden tuotteiden varastot), suosittelemme, että otat käyttöön Toimipaikka ja varasto -asetuksen kattavuusdimensioina. Vaihtoehtoisesti, Varasto voidaan jättää pois kattavuusdimensioista. Siinä tapauksessa, käyttäessäsi varastonhallinnan lisätoimintoja, kaikkia varaston sisäisiä siirtoja ohjaa varastossa tehtävä työ, kun taas kaikkia varastojen välisiä siirtoja ohjaavat otto-kanbanit.
 
-## <a name="supply-policies"></a>Toimituskäytännöt
-Microsoft Dynamics 365 for Operationsin monijärjestelmäsuunnittelu ohjaa sitä, miten tuote toimitetaan ja toimituksen perusteella, miten johdetut tarpeet (nimikkeiden kulutus tuoterakenteesta \[BOM\]) luodaan. Järjestelmä hankkii automaattisesti tarpeita vastaavat materiaalit tilaustyypin perusteella.  
+## Toimituskäytännöt
+<a id="supply-policies" class="xliff"></a>
+Finance and Operationsin monijärjestelmäsuunnittelu ohjaa sitä, miten tuote toimitetaan, ja miten toimituksen perusteella johdetut tarpeet (nimikkeiden kulutus tuoterakenteesta \[BOM\]) luodaan. Järjestelmä hankkii automaattisesti tarpeita vastaavat materiaalit tilaustyypin perusteella.  
 
-Toimituskäytäntöjä voidaan määrittää tuotetasolla tai millä tahansa tarpeisiisi soveltuvalla rakeisuudella. Voit määrittää toimituskäytäntöjesi rakeisuuden**Tilauksen oletusasetukset** -sivulla.  
+Toimituskäytäntöjä voidaan määrittää tuotetasolla tai millä tahansa tarpeisiisi soveltuvalla rakeisuudella. Voit määrittää toimituskäytäntöjesi rakeisuuden **Tilauksen oletusasetukset** -sivulla.  
 
 Toimituskäytäntöjä voidaan ohjata tuote-, nimikedimensio- (konfiguraatio, väri ja koko), toimipaikka- ja varastokohtaisesti. Tämä määritys asetetaan **Nimikkeen kattavuus** -sivulla.  
 
 Oletusmuotoinen tilaustyyppi ohjaa, mitä tilausten pääsuunnittelu luo.  
 
-Toimitusketjun mallinnustavasta riippumatta, Dynamics 365 for Operations tukee toimituskäytäntöyhdistelmiäsi. Sinulla voi olla kanbaneista lähtöisin olevia tuotantotilauksia. Vaihtoehtoisesti sinulla voi olla erätilaus, joka vaatii siirroilla tai kanbaneilla toimitetun tuotteen.  
+Toimitusketjun mallinnustavasta riippumatta Finance and Operations tukee toimituskäytäntöyhdistelmiäsi. Sinulla voi olla kanbaneista lähtöisin olevia tuotantotilauksia. Vaihtoehtoisesti sinulla voi olla erätilaus, joka vaatii siirroilla tai kanbaneilla toimitetun tuotteen.  
 
-Dynamics 365 for Operations varmistaa, että materiaalivirta seuraa mallia.  
+Finance and Operations varmistaa, että materiaalivirta seuraa mallia.  
 
 Materiaalit keräilevä varasto määritetään dynaamisesti suorituksen aikana, kun toimituskäytäntö on määritetty.  
 
@@ -59,14 +61,16 @@ Yleensä kanbaneita ei luoda tuleville päiville, koska kanbaneilla on lyhyt eli
 
 Sama logiikka sisältyy kaikkiin muihin toimitusketjukäytäntöjen tyyppeihin. Näin ollen, pitkän aikavälin materiaalisuunnittelu perustuu samaan logiikkaan, jonka odotat olevan käytössä varsinaisissa tilauksissa, kun tuotanto ja toimitus on hyväksytty.
 
-## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>Materiaalien kohdistamisen poikkituotannon käytäntö – Resurssien kulutus tuoterakenteissa
+## Materiaalien kohdistamisen poikkituotannon käytäntö – Resurssien kulutus tuoterakenteissa
+<a id="materials-allocation-crosssupply-policy--resource-consumption-on-boms" class="xliff"></a>
 Resurssien kulutus on tärkeä toiminto. Resurssien kulutuksen avulla materiaalit keräävä varasto voidaan valita dynaamisesti toimituskäytännön (tilaustyyppi) perusteella. Se myös helpottaa perustietojen ylläpitämistä.  
 
 Resurssien kulutus edellyttää, että varasto, josta materiaalit kerätään, määritetään tuotteen toimitustavan perusteella. Toisin sanoen, järjestelmä löytää suorituksen aikana resurssit, joita tulee käyttää valmistuksessa. Järjestelmä valitsee sitten keräävän varaston näihin resursseihin perustuen.  
 
-Toimituskäytännöstä riippumattomien töiden ollessa kyseessä sinun ei tarvitse muuttaa tuoterakenteen tietoja, jos toimitus muuttuu. Yksittäisten muutosten tapauksessa Dynamics 365 for Operations varmistaa, että materiaalit hankitaan oikeasta varastosta.
+Toimituskäytännöstä riippumattomien töiden ollessa kyseessä sinun ei tarvitse muuttaa tuoterakenteen tietoja, jos toimitus muuttuu. Yksittäisten muutosten kohdalla Finance and Operations varmistaa, että materiaalit hankitaan oikeasta varastosta.
 
-## <a name="process-manufacturing--the-production-type"></a>Prosessituotanto – tuotantotyyppi
+## Prosessituotanto – tuotantotyyppi
+<a id="process-manufacturing--the-production-type" class="xliff"></a>
 Hyödyntääksesi täyden joustavuuden monijärjestelmätilassa suosittelemme, että käytät tuotantotyyppisiä tuoterakenteita kaikille tuotteille. Voit sitten käyttää tuotantotilauksia, kanbaneita, siirtotilauksia tai ostotilauksia tuotteen toimitukseen. Prosessituotannon ollessa kyseessä, sinun on käytettävä tuotantotyyppejä **Resepti**, **Oheistuote**, **Sivutuote**, tai **Suunnittelunimike**. Kanbaneita ja tuotantotilauksia ei voida käyttää näille tuotantotyypeille.
 
 

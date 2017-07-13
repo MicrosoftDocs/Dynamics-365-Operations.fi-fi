@@ -9,25 +9,27 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0d1e2b9a51c2d7a7c30c2458b7babf8ac5c08118
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 957626a283b750645adefa5176480e68cc27e4f1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="import-historical-data-for-demand-forecasts"></a>Kysynnän ennusteiden historiallisten tietojen tuominen
+# Kysynnän ennusteiden historiallisten tietojen tuominen
+<a id="import-historical-data-for-demand-forecasts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
-Ennusteiden tarkkuuden varmistamiseksi historiallisia kysyntätietoja tulee olla niin paljon kuin niitä saadaan nimikettä tai nimikkeen kohdistustunnusta kohti. Jos historiallisia kysyntätietoja ei ole vielä tuotu, tuo ne Microsoft Dynamics 365 for Operations -ohjelman **Historiallinen ulkoinen kysyntä** (ReqDemPlanHistoricalExternalDemandEntity) -tietoyksikön avulla.
+Ennusteiden tarkkuuden varmistamiseksi historiallisia kysyntätietoja tulee olla niin paljon kuin niitä saadaan nimikettä tai nimikkeen kohdistustunnusta kohti. Jos historiallisia kysyntätietoja ei ole vielä tuotu, tuo ne Microsoft Dynamics 365 for Finance and Operationsin tietoyksikön **Historiallinen ulkoinen kysyntä** (ReqDemPlanHistoricalExternalDemandEntity) avulla.
 
 **Tietojen hallinta** -työtila sisältää yksikön kaikkien kenttien yleiskatsauksen.
 
@@ -38,7 +40,8 @@ Ennusteiden tarkkuuden varmistamiseksi historiallisia kysyntätietoja tulee olla
 
 Voit käyttää tietoyksikköä, kun käytössä on historialliset kysyntätiedot sisältävä Microsoft Excel -tiedosto tai CSV-tiedosto (pilkulla erotettujen arvojen tiedosto). Seuraavassa esimerkissä näytetään, miten tiedot tuodaan CSV-tiedostosta.
 
-## <a name="example"></a>Esimerkki
+## Esimerkki
+<a id="example" class="xliff"></a>
 
 Voit käyttää esimerkkinä seuraavaa tiedostoa. Lataa [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). Tämä tiedosto sisältää nimikkeen D0001 historialliset kysyntätiedot. Se sisältää vain seuraavat pakolliset kentät: sivusto, määrä ja kysynnän päivämäärä.
 
@@ -54,7 +57,8 @@ Voit käyttää esimerkkinä seuraavaa tiedostoa. Lataa [HistoricalDemandData](h
 
 Kun historialliset kysyntätiedot on tuotu, voit luoda kysynnän ennusteen.
 
-## <a name="see-also"></a>Lisätietoja
+## Lisätietoja
+<a id="see-also" class="xliff"></a>
 
 [Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)
 

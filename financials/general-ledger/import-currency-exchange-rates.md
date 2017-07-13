@@ -3,14 +3,14 @@ title: Tuo valuutanvaihtokurssit
 description: "Jos oikeudellinen yksikkö on saanut laskuja ulkomaan valuutassa, on tarpeen muuntaa ulkomaan valuutta paikalliseksi valuutaksi. Tämä tarkoittaa sitä, että tarvitaan ajan tasalla olevat eri valuuttojen vaihtokurssit. Tässä aiheessa on yleiskatsaus tarvittavista asetuksista ja käsittelystä ulkomaiden valuuttakurssien viitekurssien tuomisesta, jotka on julkaistu internetissä vaihtokurssien tarjoajien toimesta, kuten Euroopan keskuspankin ja Venäjän keskuspankin."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 69a622f54581504989504a06f90d443a98ad2f63
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2d0654d6dbed3b4fe56b8918194132787f66af80
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="import-currency-exchange-rates"></a>Tuo valuutanvaihtokurssit
+# Tuo valuutanvaihtokurssit
+<a id="import-currency-exchange-rates" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +36,9 @@ Jos oikeudellinen yksikkö on saanut laskuja ulkomaan valuutassa, on tarpeen muu
 
 Seuraavissa osissa kuvataan ulkomaiden valuuttakurssien tuomisen määrittämisessä ja käsittelyssä käytettävää tiedonkulkua.
 
-## <a name="configure-an-exchange-rate-provider"></a>Konfiguroi vaihtokurssipalvelu
-Ennen kuin tuot vaihtokurssit, tiedot, joita tarvitaan tarjoajille, jotka tarjoavat vaihtokurssit, on määritettävä. Valitse vaihtokurssin toimittajat **Konfiguroi vaihtokurssipalvelut** -sivulla. Jotkin vaihtokurssin palveluntarjoajat sisältyvät Microsoft Dynamics 365 for Operationsin esittelytietoihin. Seuraavassa taulukossa kuvaillaan tämän sivun ohjausobjektit.
+## Konfiguroi vaihtokurssipalvelu
+<a id="configure-an-exchange-rate-provider" class="xliff"></a>
+Ennen kuin tuot vaihtokurssit, tiedot, joita tarvitaan tarjoajille, jotka tarjoavat vaihtokurssit, on määritettävä. Valitse vaihtokurssin toimittajat **Konfiguroi vaihtokurssipalvelut** -sivulla. Jotkin vaihtokurssipalvelut sisältyvät Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin esittelytietoihin. Seuraavassa taulukossa kuvaillaan tämän sivun ohjausobjektit.
 
 |           |                                                                                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,7 +47,8 @@ Ennen kuin tuot vaihtokurssit, tiedot, joita tarvitaan tarjoajille, jotka tarjoa
 | **Avain**   | Palvelun tarvitsemien konfigurointitietojen yksilöivä tunnus. Nämä tiedot lisätään automaattisesti jokaiseen vaihtokurssipalveluun, jonka lisäät **Lisää**-painiketta napsauttamalla. |
 | **Arvo** | Jokaisen avaimen tiedot. Nämä tiedot lisätään jokaiseen vaihtokurssipalveluun, jonka lisäät **Lisää**-painiketta napsauttamalla.                                                                                         |
 
-## <a name="import-currency-exchange-rates"></a>Tuo valuutanvaihtokurssit
+## Tuo valuutanvaihtokurssit
+<a id="import-currency-exchange-rates" class="xliff"></a>
 Voit tuoda valuuttakurssit vaihtokurssin tarjoajien lähteestä ja määrittää ne **Valuutan vaihtokurssit** -sivulla. Käytä **Tuo valuutanvaihtokurssit** -sivua tuodaksesi vaihtokurssit. Seuraavassa taulukossa on kuvattu kentät, joita tarvitaan tuontiprosessin onnistuneeseen suorittamiseen.
 
 |                                        |                                                                                                                                                                                                                                                                                                                                                                             |

@@ -3,14 +3,14 @@ title: Ostotilausten yleiskatsaus
 description: "Tässä artikkelissa on yleisiä tietoja ostotilauksista ja linkkejä muita ostotilauksen eri vaiheita käsitteleviin artikkeleihin."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
@@ -18,17 +18,20 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 88fa3fb97621e0f4a226a45b36809e824c807420
+ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
+ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/09/2017
 
 
 ---
 
-# <a name="purchase-order-overview"></a>Ostotilausten yleiskatsaus
+# Ostotilausten yleiskatsaus
+<a id="purchase-order-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Tässä artikkelissa on yleisiä tietoja ostotilauksista ja linkkejä muita ostotilauksen eri vaiheita käsitteleviin artikkeleihin.
@@ -46,9 +49,10 @@ Seuraavissa artikkeleissa on yhteenveto ostotilauksen vaiheista:
 -   [Ostotilauksen luonti](purchase-order-creation.md)
 -   [Ostotilauksen hyväksyntä ja vahvistus](purchase-order-approval-confirmation.md)
 -   [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
--   [Toimittajan laskujen yleiskatsaus](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+-   [Toimittajan laskujen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
-## <a name="types-of-purchase-orders"></a>Ostotilaustyypit
+## Ostotilaustyypit
+<a id="types-of-purchase-orders" class="xliff"></a>
 Ostotilaustyyppejä on kolme. Tyyppi on määritettävä ostotilauksen luomisen yhteydessä. Voit määrittää uusien tilausten oletustilaustyypin **Hankintaparametrit**-sivulla.
 
 | Ostotilaustyyppi        | Kuvaus                                                                                                                                                                                                                                                                           |
@@ -57,7 +61,8 @@ Ostotilaustyyppejä on kolme. Tyyppi on määritettävä ostotilauksen luomisen 
 | Ostotilaus | Käytä tätä tyyppi ostotilauksen luontiin, kun tilaukset vahvistetaan toimittajalle ja kun tilauksia käsitellään vastaanotossa ja laskutuksessa ennen toimittajalle maksamista. Tämä on yleisin ostotilaustyyppi.                                                                          |
 | Palautettu tilaus | Käytä tyyppiä, kun palautat tavaroita toimittajalle. Tämä tilaustyyppi edellyttää, että määrität toimittajan antaman palautusnumeron. Palautusnumero määritetään ostotilauksen **Yleiset**-välilehdessä. Tilausrivien määrien on oltava negatiivisia. |
 
-## <a name="purchase-order-statuses"></a>Ostotilauksen tilat
+## Ostotilauksen tilat
+<a id="purchase-order-statuses" class="xliff"></a>
 Ostotilauksessa on useita tilauksen etenemistä ilmaisevia tilakenttiä. Nämä kentät näkyvät tilauksen **Otsikko**-kentässä ja muutamat näkyvät myös kaikkien tilausten ruudukkoyhteenvedossa. **Tila**-kenttä näyttää tilausmäärien tilan. Käytettävissä ovat seuraavat arvot:
 
 -   **Avoin tilaus** – tilaukset on luotu ja määrät on tilattu.
@@ -81,7 +86,8 @@ Voit arvioida **Asiakirjan tila** -kentän avulla nopeasti tilauksen edistymisen
 -   **Vahvistettu** – Tämä tila määritetään sen jälkeen, kun tilaus on vahvistettu. Yleensä tämä on viimeinen tilaukselle määritetty hyväksymistila.
 
 
-<a name="see-also"></a>Lisätietoja
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
 [Ostotilausten luominen](purchase-order-creation.md)
@@ -90,7 +96,7 @@ Voit arvioida **Asiakirjan tila** -kentän avulla nopeasti tilauksen edistymisen
 
 [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
 
-[Toimittajan laskujen yleiskatsaus](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Toimittajan laskujen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

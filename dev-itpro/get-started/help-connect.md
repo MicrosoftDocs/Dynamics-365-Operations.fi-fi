@@ -1,9 +1,9 @@
 ---
 title: "Yhdistäminen ohjejärjestelmään"
-description: "Tämä aihe sisältää Microsoft Dynamics 365 for Operations -ohjejärjestelmän komponenttien kuvauksen, niiden yhdistämistapojen yleiskatsauksen ja mukautetun ohjeen yhteenvedon."
+description: "Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operations -ohjejärjestelmän komponenttien kuvauksen, niiden yhdistämistapojen yleiskatsauksen ja mukautetun ohjeen yhteenvedon."
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,28 +19,35 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 86c7cb3961ba5170c32979e77aaa5f506ffac8a1
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 425e87f8b667b53fcc950730dc4ece6330503d66
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="connect-the-help-system"></a>Yhdistäminen ohjejärjestelmään
+# Yhdistäminen ohjejärjestelmään
+<a id="connect-the-help-system" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tämä aihe kuvaa Microsoft Dynamics 365 for Operations -ohjejärjestelmän komponentit. Se tarjoaa näiden komponenttien yhdistämistapojen yleiskatsauksen ja mukautetun ohjeen luomisen yhteenvedon. 
+Tämä ohjeaihe kuvaa Finance and Operationsin ohjejärjestelmän komponentit. Se tarjoaa näiden komponenttien yhdistämistapojen yleiskatsauksen ja mukautetun ohjeen luomisen yhteenvedon. 
 
-<a name="help-architecture"></a>Ohjearkkitehtuuri
------------------
+## Ohjearkkitehtuuri
+<a id="help-architecture" class="xliff"></a>
+Seuraavassa kuvassa on osa Finance and Operationsin ohjejärjestelmästä. Tuotteen ohjejärjestelmä käyttää Dynamics 365 for Finance and Operations -sivuston (https://docs.microsoft.com) artikkeleja sekä Lifecycle Servicesin (LCS) liiketoimintaprosessin mallintajaan tallennettuja tehtäväoppaita. 
+> [!NOTE]
+> Jos kaaviossa on ominaisuuden vieressä tähtimerkki (\*), ominaisuutta suunnitellaan mutta se ei ole vielä käytössä. [![Ohjearkkitehtuuri](./media/help-architecture.png)](./media/help-architecture.png)
 
-Seuraavassa kuvassa on osa Microsoft Dynamics 365 for Operations -ohjejärjestelmästä. Tuotteen ohjejärjestelmä käyttää Dynamics 365 for Operations -sivuston (https://docs.microsoft.com) artikkeleja sekä Microsoft Dynamics Lifecycle Servicesin (LCS) liiketoimintaprosessin mallintajaan tallennettuja tehtävän ohjauksia. 
-**Huomautus:** Jos ominaisuuden vieressä on kaaviossa tähti (\*), ominaisuutta suunnitellaan mutta se ei ole vielä käytössä. [![Ohjearkkitehtuuri](./media/help-architecture.png)](./media/help-architecture.png)
 
-## <a name="connecting-the-help-system"></a>Yhteyden muodostaminen ohjejärjestelmään
+## Yhteyden muodostaminen ohjejärjestelmään
+<a id="connecting-the-help-system" class="xliff"></a>
+> [!NOTE]
+> **Tehtäväoppaat**-välilehti ei ole tällä hetkellä käytettävissä Microsoft Dynamics 365 for Talentissa ja Microsoft Dynamics 365 for Retailissa. Tämän toiminnon käyttöönottamista myöhemmissä versiossa ollaan toteuttamassa. Perustoimintoja koskevat Talentin aloituskokemuksen tehtäväoppaat ovat edelleen käytettävissä. Retailin ja Talentin menettelyohje on saatavana myös docs.microsoft.com-sivustossa ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)).
+ 
+
 Järjestelmänvalvojat voivat muodostaa **Järjestelmäparametrit**-lomakkeella yhteyden käyttöönotettaviin ohjejärjestelmän osiin. [![Järjestelmäparametrit-lomake ja ohjeen asetukset](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Toimi seuraavasti **Järjestelmän parametrit** -sivulla:
 
 > [!IMPORTANT]
@@ -48,23 +55,32 @@ Järjestelmänvalvojat voivat muodostaa **Järjestelmäparametrit**-lomakkeella 
 
 1.  Valitse Lifecycle Services -projekti, johon yhteys muodostetaan.
 2.  Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.
+    - Valitse Finance and Operationsissa Microsoft-sisältöä varten helmikuun 2017 QPC Unified Library for Microsoft Dynamics 365 for Finance and Operations. 
+    - Retail-kirjasto julkaistaan heinäkuussa. 
+    - Talent-kirjastoa ei tarvitse valita, sillä järjestelmä muodostaa yhteyden oikeaan kirjastoon puolestasi. 
+
 3.  Määritä BPM-kirjastojen näyttöjärjestys. Tämä asetus määrittää, missä järjestyksessä kirjastojen tehtävätallenteet näkyvät **Ohje**-sivulla.
 
-Kun olet suorittanut nämä vaiheet, voit avata **Ohje**-ruudun ja valita **Tehtävän ohjaukset** -välilehden. Näet nyt tehtävän ohjaukset, jotka liittyvät valittuna olevaan Dynamics 365 for Operations -sivuun. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
+Kun olet suorittanut nämä vaiheet, voit avata **Ohje**-ruudun ja valita **Tehtävän ohjaukset** -välilehden. Näet nyt sitä sivua koskevat tehtäväoppaat, jolla nyt olet Finance and Operationsissa. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
 
-### <a name="showing-translated-task-guides"></a>Käännettyjen tehtäväoppaiden näyttäminen
+### Käännettyjen tehtäväoppaiden näyttäminen
+<a id="showing-translated-task-guides" class="xliff"></a>
 
-Käännetyt tehtäväoppaat toimitettiin toukokuun 2016 yhdistetyssä APQC-kirjastossa ja käytön aloituskirjastossa. Jos haluat avata lokalisoidun tehtäväopasohjeen Microsoft Dynamics 365 for Operations, varmista, että olet muodostanut yhteyden toukokuun kirjastoon. Kullekin käyttäjälle avautuvan tehtäväoppaan kieli määräytyy kieliasetuksissa, jotka on valittu kohdassa **Asetukset** &gt; **Asetukset**. 
+Käännetyt tehtäväoppaat toimitettiin toukokuun 2016 yhdistetyssä APQC-kirjastossa ja käytön aloituskirjastossa. Jos haluat avata lokalisoidun tehtäväoppaan ohjeen Finance and Operationsissa, varmista, että olet muodostanut yhteyden toukokuun kirjastoon. Kullekin käyttäjälle avautuvan tehtäväoppaan kieli määräytyy kieliasetuksissa, jotka on valittu kohdassa **Asetukset** &gt; **Asetukset**. 
 
 > [!NOTE]
-> Vaikka useita tehtäväoppaita on käännetty, tehtäväoppaiden nimet eivät näy tällä hetkellä Dynamics 365 for Operations -asiakasohjelmassa. Lisäksi vain helmikuussa 2016 julkaistujen tehtäväoppaiden käännökset ovat saatavana toukokuun kirjastossa. Lisää käännöksiä julkaistaan päivitetyssä kirjastossa.
+> Vaikka useita tehtäväoppaita on käännetty, tehtäväoppaiden nimet eivät näy tällä hetkellä Finance and Operationsin asiakasohjelmassa. Lisäksi vain helmikuussa 2016 julkaistujen tehtäväoppaiden käännökset ovat saatavana toukokuun kirjastossa. Lisää käännöksiä julkaistaan päivitetyssä kirjastossa.
 > -   Jos tehtäväopas on käännetty, tehtäväopas avautuu valitsemallasi kielellä.
 > -   Jos tehtäväopasta ei ole vielä käännetty, vain osa tekstistä (ohjausobjektien teksti) näkyy valitun kielisenä.
 
-## <a name="creating-custom-help"></a>Mukautetun ohjeen luominen
-Voit oman mukautetun ohjeen Dynamics 365 for Operations -toteutuksella luomalla sille tehtävätallenteita ja tallentamalla se LCS:n liiketoimintaprosessien kirjastoon. Kumppanit voivat puolestaan siirtää kirjasto yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Voit myös kopioida yhdistetyn yleisen APQC-kirjaston sekä avata oman kopion, avata tehtävätallenteet sieltä, muokata niitä ja tallentaa sitten muutetut tallenteet. Lisätietoja on artikkelissa [Ohjeistuksena tai koulutuksena käytettävien tehtävätallenteiden luominen](../user-interface/task-recorder.md).
+## Mukautetun ohjeen luominen
+<a id="creating-custom-help" class="xliff"></a>
+Voit luoda oman mukautetun Finance and Operations- ja Retail -ohjeen luomalla sille tehtävätallenteita ja tallentamalla ne LCS:n liiketoimintaprosessien kirjastoon. Mukautettuja tehtäväoppaita ei voi luoda Talentissa. 
 
-<a name="see-also"></a>Lisätietoja
+Kumppanit voivat puolestaan siirtää kirjasto yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Voit myös kopioida yhdistetyn yleisen APQC-kirjaston sekä avata oman kopion, avata tehtävätallenteet sieltä, muokata niitä ja tallentaa sitten muutetut tallenteet. Lisätietoja on artikkelissa [Ohjeistuksena tai koulutuksena käytettävien tehtävätallenteiden luominen](../user-interface/task-recorder.md).
+
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
 [Yleistä Ohjeesta](help-overview.md)

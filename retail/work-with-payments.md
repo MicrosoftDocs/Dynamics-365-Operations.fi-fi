@@ -1,39 +1,41 @@
 ---
 title: Puhelinkeskuksen maksutavat
-description: "Tässä ohjeaiheessa käsitellään vähittäismyynnin ja kaupan puhelinkeskuksessa käytettäviä maksutapoja."
+description: "Tässä ohjeaiheessa käsitellään Dynamics 365 for Retailin puhelinkeskuksessa käytettäviä maksutapoja."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 930264f9c22cbde102b59237e432df7d7e4836c8
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 07cb1bcb3870b96e34f7f6725fe5b7da32628fde
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Puhelinkeskuksen maksutavat
+# Puhelinkeskuksen maksutavat
+<a id="payment-methods-in-a-call-center" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Tässä ohjeaiheessa käsitellään vähittäismyynnin ja kaupan puhelinkeskuksessa käytettäviä maksutapoja.
+Tässä ohjeaiheessa käsitellään Dynamics 365 for Retailin puhelinkeskuksessa käytettäviä maksutapoja.
 
-Puhelinkeskuksissa voidaan käyttää myös muissa Microsoft Dynamics AX:n vähittäismyynti- ja kauppakanavissa käytettyjä maksutapoja, kuten käteinen, sekki, luottokortit ja lahjakortit. Kun olet määrittänyt puhelinkeskuksen maksutavan, se näkyy vaihtoehtona puhelinkeskuksen käyttäjille **Myyntitilaus**-sivun **Maksut**-osassa. Voit lisäksi määrittää kuponkeja tarjotaksesi asiakkaille alennuksia, kun he tekevät tilauksen yrityksen puhelinkeskukseen. Kupongit voivat määrittää kiinteän määräalennuksen tai prosenttimäärän nimikehinnasta tai tilauksen kokonaissummasta. Esimerkiksi summaperusteinen kuponki voi antaa asiakkaille 75,00:n alennuksen, kun asiakas käyttää 750,00 tai enemmän. Voit luoda erilaisia kuponkeja, määrittää pää-ja alikuponkeja sekä kopioida tai mitätöidä kupongin. Luo kuponkeja seuraavan taulukon vaihtoehdoilla.
+Puhelinkeskuksissa voidaan käyttää myös muissa kanavissa käytettyjä maksutapoja, kuten käteinen, sekki, luottokortit ja lahjakortit. Kun olet määrittänyt puhelinkeskuksen maksutavan, se näkyy vaihtoehtona puhelinkeskuksen käyttäjille **Myyntitilaus**-sivun **Maksut**-osassa. Voit lisäksi määrittää kuponkeja tarjotaksesi asiakkaille alennuksia, kun he tekevät tilauksen yrityksen puhelinkeskukseen. Kupongit voivat määrittää kiinteän määräalennuksen tai prosenttimäärän nimikehinnasta tai tilauksen kokonaissummasta. Esimerkiksi summaperusteinen kuponki voi antaa asiakkaille 75,00:n alennuksen, kun asiakas käyttää 750,00 tai enemmän. Voit luoda erilaisia kuponkeja, määrittää pää-ja alikuponkeja sekä kopioida tai mitätöidä kupongin. Luo kuponkeja seuraavan taulukon vaihtoehdoilla.
 
 |                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

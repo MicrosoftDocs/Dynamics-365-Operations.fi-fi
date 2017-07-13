@@ -1,16 +1,16 @@
 ---
 title: "Varaston työkäytännöt"
-description: "Uusi varastotyökäytäntö otetaan käyttöön Microsoft Dynamics AX 7.0.1 -versiossa (5/2016 päivitys). Tämä työkäytäntö määrittää, onko varastotyö luotu varastoprosessia varten valmistuksessa."
+description: "Varaston työkäytännöt määrittävät, onko varastotyö luotu varastoprosessia varten valmistuksessa työtilaustyypin, varaston sijainnin ja tuotteen perusteella."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSWorkPolicy
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196561
 ms.assetid: cbf48ec6-1836-48d5-ad66-a9b534af1786
 ms.search.region: Global
@@ -19,29 +19,31 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6c9cdf361e4d4543e6aca962e9ec712428bc76e6
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 7612003bc20f91f173629893750478b034cff27b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="warehouse-work-policies"></a>Varaston työkäytännöt
+# Varaston työkäytännöt
+<a id="warehouse-work-policies" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Uusi varastotyökäytäntö otetaan käyttöön Microsoft Dynamics AX 7.0.1 -versiossa (5/2016 päivitys). Tämä työkäytäntö määrittää, onko varastotyö luotu varastoprosessia varten valmistuksessa.
+Varaston työkäytännöt Microsoft Dynamics 365 for Finance and Operations Enterprise editionissa määrittävät, onko varastotyö luotu varastoprosessia varten valmistuksessa työtilaustyypin, varaston sijainnin ja tuotteen perusteella.
 
 Tämä työkäytäntö määrittää, onko varastotyö luotu varastoprosessia varten valmistuksessa. Voit määrittää työkäytännön käyttämällä yhdistelmää **työtilaustyypit**, **varastosijainti** ja **tuote**. Esimerkiksi tuote L0101 ilmoitetaan valmiiksi tuotossijaintiin 001. Valmis tuote käytetään myöhemmin toisessa tuotantotilauksessa tuotossijainnissa 001. Tässä tapauksessa voit määrittää työkäytännön, joka estää luomasta työtä, jossa käytetään valmiita sivuun siirrettyjä tuotteita, kun raportoit tuotteen L0101 valmiiksi tuotossijaintiin 001. Työkäytäntö on yksittäinen yksikkö, jota voidaan kuvata seuraavien tietojen avulla:
 
 -   **Työkäytännön nimi**(työkäytännön yksilöivä tunnus)
--   **Työtilaustyypit**ja**Työn luontimenetelmä**
+-   **Työtilaustyypit** ja **Työn luontimenetelmä**
 -   **Varastosijainnit**
 -   **Tuotteet**
 
-## <a name="work-order-types"></a>Työtilaustyypit
+## Työtilaustyypit
+<a id="work-order-types" class="xliff"></a>
 Voit valita seuraavista työtilaustyypeistä:
 
 -   Valmiiden tuotteiden poispano
@@ -50,13 +52,16 @@ Voit valita seuraavista työtilaustyypeistä:
 
 **Työn luontimenetelmä** -kentän arvo on **Ei koskaan**. Tämä arvo ilmaisee, että työkäytäntö estää työn varastotyön luomisen valitulle työtilaustyypille.
 
-## <a name="inventory-locations"></a>Varastosijainnit
+## Varastosijainnit
+<a id="inventory-locations" class="xliff"></a>
 Voit valita sijainnin, johon työkäytäntö sopii. Jos sijaintia ei ole liitetty työkäytäntöön, työkäytäntö ei koske mitään prosessia. **Sijainnit**-sivulla voidaan valita tai peruuttaa työkäytännön valinta määrätyssä sijainnissa.
 
-## <a name="products"></a>Tuotteet
+## Tuotteet
+<a id="products" class="xliff"></a>
 Voit valita tuotteen, johon työkäytäntö sopii. Voi soveltaa työkäytäntöä joko kaikkiin tai valittuihin tuotteisiin.
 
-## <a name="example"></a>Esimerkki
+## Esimerkki
+<a id="example" class="xliff"></a>
 Seuraavassa esimerkissä on kaksi tuotantotilausta RD-001 ja PRD-00*2*. Tuotantotilaus PRD-001 sisältää **Kokoonpano**-työvaiheen, jolla tuote SC1 raportoidaan valmiiksi sijainnissa O1. Tuotantotilaus PRD-002 sisältää **maalaus**-työvaiheen ja käyttää tuotetta SC1 sijainnista O1. Tuotantotilaus PRD-002 käyttää myös raaka-ainetta RM1 sijainnissa O1. RM1 varastoidaan varastosijaintiin BULK-001, josta raaka-ainekeräilyn varastotyö kerää sen sijaintiin O1. Keräilytyö luodaan, kun tuotanto PRD 002 vapautetaan. 
 
 [![Varaston työkäytännöt](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
@@ -79,7 +84,8 @@ Seuraavassa on esimerkki työmenettelystä jonka voit määrittää näiden hava
 
 Seuraavissa menettelyissä saadaan vaiheittaiset ohjeet varastotyökäytännön määrittämiseksi tässä skenaariossa. Esimerkkiasetuksissa kuvataan myös, miten tuotantotilaus raportoidaan valmiiksi tiettyyn sijaintiin, jossa ei ole varastorekisterinumero-ohjausta.
 
-## <a name="set-up-a-warehouse-work-policy"></a>Määritä varaston työkäytäntö
+## Määritä varaston työkäytäntö
+<a id="set-up-a-warehouse-work-policy" class="xliff"></a>
 Varastointiprosessit eivät aina sisällä varastotyötä. Voit määrittää työn käytännön, joka estää raaka-aineen keräilytyön ja valmiiden tuotteiden poispanotöiden luonnin tietyille tuotejoukoille tietyissä sijainneissa. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. 
 
 STEPS (21)
@@ -108,7 +114,8 @@ STEPS (21)
 | 20. | Syötä tai valitse Nimiketunnus-kentän arvoksi L0101.                         |
 | 21. | Valitse Tallenna.                                                                |
 
-## <a name="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled"></a>Raportoi tuotantotilaus valmistuneeksi sijaintiin, jossa ei ole varastorekisterinumero-ohjausta
+## Raportoi tuotantotilaus valmistuneeksi sijaintiin, jossa ei ole varastorekisterinumero-ohjausta
+<a id="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled" class="xliff"></a>
 Tässä menettelyssä näytetään esimerkki valmiiksi ilmoittamisesta sijaintiin, jota ei ohjata rekisterikilvellä. Tehtävä edellyttää käytettävää työkäytäntöä. Työkäytännön määrittäminen on esitelty edellisessä menettelyssä. 
 
 STEPS (25)

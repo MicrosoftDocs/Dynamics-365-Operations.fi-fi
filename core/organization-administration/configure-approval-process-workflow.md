@@ -3,13 +3,13 @@ title: "Hyväksyntäprosessin lisääminen työnkulkuun"
 description: "Määritä hyväksyntäprosessin ominaisuudet seuraavan menettelyn avulla."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 195643
 ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 159fe64b7a37ffdcbcd6c122116c2e110300122b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c2765cf4ed8e0f5e00491bfe74835102bddff611
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-an-approval-process-in-a-workflow"></a>Hyväksyntäprosessin lisääminen työnkulkuun
+# Hyväksyntäprosessin lisääminen työnkulkuun
+<a id="configure-an-approval-process-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,7 +41,8 @@ Seuraavia ohjeita noudattamalla voit nimetä hyväksyntäprosessin.
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
 2.  Kirjoita hyväksyntäprosessin yksilöivä nimi **Nimi**-kenttään.
 
-## <a name="specify-when-the-system-automatically-acts-on-the-document"></a>Määritä, milloin järjestelmä käsittelee asiakirjaa automaattisesti
+## Määritä, milloin järjestelmä käsittelee asiakirjaa automaattisesti
+<a id="specify-when-the-system-automatically-acts-on-the-document" class="xliff"></a>
 Voit määrittää järjestelmän siten, että se käsittelee automaattisesti asiakirjan, jos tietyt ehdot täyttyvät. Järjestelmä voi hyväksyä esimerkiksi kuluraportit, joiden kokonaissummat ovat alle 100 USD. Noudata seuraavia ohjeita määrittääksesi, milloin järjestelmä käsittelee asiakirjaa.
 1.  Valitse vasemmasta ruudusta **Automaattiset toiminnot**.
 2.  Merkitse **Ota käyttöön automaattiset toiminnot** -valintaruutu.
@@ -55,7 +57,8 @@ Voit määrittää järjestelmän siten, että se käsittelee automaattisesti as
 
 7.  Valitse **Automaattinen loppuunvientitoiminto**-luettelosta toiminto, jonka haluat järjestelmän suorittavan asiakirjalle.
 
-## <a name="specify-when-notifications-are-sent"></a>Määritä, milloin ilmoitukset lähetetään
+## Määritä, milloin ilmoitukset lähetetään
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Voit lähettää käyttäjille ilmoituksia, kun asiakirja on hyväksytty, hylätty, delegoitu tai eskaloitu, tai kun muutosta on pyydetty. Toimi seuraavasti määrittääksesi, milloin ilmoitukset lähetetään, ja kenelle ne lähetetään.
 1.  Valitse vasemmasta ruudusta **Ilmoitukset**.
 2.  Valitse tapahtuman vieressä oleva valintaruutu, jos haluat lähettää siihen liittyviä ilmoituksia:
@@ -117,10 +120,10 @@ Voit lähettää käyttäjille ilmoituksia, kun asiakirja on hyväksytty, hylät
     </tr>
     <tr class="odd">
     <td><strong>Käyttäjä</strong></td>
-    <td>Tietyt Microsoft Dynamics 365 for Operations -käyttäjät</td>
+    <td>Tietyt Microsoft Dynamics 365 for Finance and Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Microsoft Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään, ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Microsoft Dynamics 365 for Finance and Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään, ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -128,13 +131,15 @@ Voit lähettää käyttäjille ilmoituksia, kun asiakirja on hyväksytty, hylät
 
 10. Toista vaiheet 3-9 kullekin tapahtumalle, jonka valitsit vaiheessa 2.
 
-## <a name="specify-a-final-approver"></a> Lopullisen hyväksyjän määrittäminen
+##  Lopullisen hyväksyjän määrittäminen
+<a id="specify-a-final-approver" class="xliff"></a>
 Voit halutessasi määrittää lopullisen hyväksyjän skenaarioissa, joissa hyväksyjä on henkilö, joka lähetti asiakirjan hyväksyttäväksi. Määritä lopullinen hyväksyjä käymällä läpi seuraavat vaiheet.
 1.  Napsauta vasemmassa ruudussa **Lisäasetukset**.
 2.  Valitse **Käytä lopullista hyväksyjää** -valintaruutu.
 3.  Valitse luettelosta käyttäjä, joka on lopullinen hyväksyjä.
 
-## <a name="set-a-time-limit"></a>Aikarajan määrittäminen
+## Aikarajan määrittäminen
+<a id="set-a-time-limit" class="xliff"></a>
 Noudata seuraavia ohjeita, jos hyväksyntäprosessi on suoritettava tietyn ajan kuluessa.
 | **Huomautus**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -151,7 +156,8 @@ Noudata seuraavia ohjeita, jos hyväksyntäprosessi on suoritettava tietyn ajan 
 
 4.  Jos aikaraja ylittyy, järjestelmä käsittelee asiakirjan automaattisesti. Valitse **Toiminto**-luettelosta toiminto, jonka haluat järjestelmän suorittavan.
 
-## <a name="specify-which-actions-are-available-to-the-user"></a>Määritä käyttäjän käytettävissä olevat toiminnot
+## Määritä käyttäjän käytettävissä olevat toiminnot
+<a id="specify-which-actions-are-available-to-the-user" class="xliff"></a>
 Kun asiakirja on määritetty käyttäjälle hyväksymistä varten, käyttäjän pitää suorittaa asiakirjan toimenpide. Käy läpi seuraavat vaiheet määrittääksesi, mitä toimintoja käyttäjät voivat tehdä lähetetylle asiakirjalle.
 1.  Napsauta vasemmassa ruudussa **Lisäasetukset**.
 2.  Valitse **Hyväksy** -valintaruutu, jos haluat, että käyttäjä voi hyväksyä asiakirjan.
@@ -161,7 +167,8 @@ Kun asiakirja on määritetty käyttäjälle hyväksymistä varten, käyttäjän
 
 **Huomautus**: **Ota työluettelon toiminnot käyttöön yritysportaalissa** -valintaruutu on poistettu.
 
-## <a name="configure-the-approval-steps"></a> Hyväksyntävaiheiden konfiguroiminen
+##  Hyväksyntävaiheiden konfiguroiminen
+<a id="configure-the-approval-steps" class="xliff"></a>
 Hyväksyntäprosessi koostuu hyväksymisvaiheista. Lisää hyväksyntäprosessiin vaiheita ja määritä vaiheet tekemällä seuraava menettely.
 1.  Kaksoisnapsauta hyväksyntäprosessia työnkulun editorissa. Työnkulun editori näyttää hyväksyntäprosessin vaiheet.
 2.  Hyväksyntävaihe lisätään vetämällä vaihe **Työnkulun elementit** -alueelta alustalle.

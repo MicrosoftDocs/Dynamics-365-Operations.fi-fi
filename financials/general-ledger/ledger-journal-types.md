@@ -1,16 +1,16 @@
 ---
 title: Kirjanpidon kirjauskansiotyypit
-description: "Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Operationsissa käytettävät kirjauskansiot Kirjauskansioiden nimet -sivun avulla."
+description: "Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa käytettävät kirjauskansiot Kirjauskansioiden nimet -sivulla."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 ms.search.region: Global
@@ -18,20 +18,21 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 842eee6446b1f942add37b14d3ad161bec96d22c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 624f38a7348ede3cc9e6fb7ce0b78a61b1452b61
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="ledger-journal-types"></a>Kirjanpidon kirjauskansiotyypit
+# Kirjanpidon kirjauskansiotyypit
+<a id="ledger-journal-types" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Operationsissa käytettävät kirjauskansiot Kirjauskansioiden nimet -sivun avulla.
+Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa käytettävät kirjauskansiot Kirjauskansioiden nimet -sivulla.
 
 | Kirjauskansion tyyppi                      | Tarkoitus                                                                                                                                                                                                                                                                                                                                                     | Syötä tapahtumakoodi tälle sivulle                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|

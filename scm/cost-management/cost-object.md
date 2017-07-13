@@ -3,7 +3,7 @@ title: Kustannusobjektit
 description: "Tässä artikkelissa on tietoja kustannusobjekteista ja siitä, miten kustannukset ja määrät kerätään. Kustannusobjekti on yksikkö, johon kustannukset ja määrät kerätään. Kustannusobjektiyksiköt voivat olla tuotteita tai tuotevariantteja, kuten tyylin ja värin variantteja."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventCostOnhandItem
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
@@ -20,22 +20,24 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c818bfac6645b71bcc8b2249534aa80907786651
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 823d3edd106925339607d01fbf5f1921b85ff244
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="cost-objects"></a>Kustannusobjektit
+# Kustannusobjektit
+<a id="cost-objects" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa on tietoja kustannusobjekteista ja siitä, miten kustannukset ja määrät kerätään. Kustannusobjekti on yksikkö, johon kustannukset ja määrät kerätään. Kustannusobjektiyksiköt voivat olla tuotteita tai tuotevariantteja, kuten tyylin ja värin variantteja.  
 
-<a name="cost-objects"></a>Kustannusobjektit
+Kustannusobjektit
+<a id="cost-objects" class="xliff"></a>
 ------------
 
 **Kustannuskohde**-sivulla eritellään kaikki kustannuskohteet, jotka on rekisteröity tuotteeseen. Kustannuskohteet määritetään seuraavista lähteistä saaduilla tiedoilla:
@@ -58,7 +60,8 @@ Seuraavassa taulukossa näkyy mikä on kustannuskohde ja mikä on varastokohde.
 | Kustannuskohde      | x           | x    |           |           |
 | Varastokohde | x           | x    |  x        | x         |
 
-## <a name="accumulation-of-costs-and-quantities"></a>Kustannusten ja määrien kasvu
+## Kustannusten ja määrien kasvu
+<a id="accumulation-of-costs-and-quantities" class="xliff"></a>
 -   Arvo **Arvo**-kentässä on seuraavien arvojen summa:
     -   Fyysinen kustannus
     -   Rahoituksellinen kustannus
@@ -71,7 +74,8 @@ Seuraavassa taulukossa näkyy mikä on kustannuskohde ja mikä on varastokohde.
 
 **Huomautus:** **Sisällytä fyysinen arvo** -parametri ei vaikuta edellisiin laskelmiin.
 
-<a name="see-also"></a>Lisätietoja
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
 [Tuotedimensioryhmä](https://technet.microsoft.com/en-us/library/aa499382.aspx)
@@ -80,7 +84,7 @@ Seuraavassa taulukossa näkyy mikä on kustannuskohde ja mikä on varastokohde.
 
 [Seurantadimensioryhmä](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Uudet ja muuttuneet Microsoft Dynamics AX -ominaisuudet](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Uudet ja muuttuneet ominaisuudet](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed)
 
 [Kustannusmerkinnät](cost-entries.md)
 

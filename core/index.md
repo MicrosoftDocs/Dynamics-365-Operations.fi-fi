@@ -114,7 +114,7 @@ Tämä ohje näyttää, miten yrityksesi voi hyötyä Dynamics 365 for Finance a
 <p><a href="../retail/call-center-functionality">Puhelinkeskus</p>
 <p><a href="../retail/define-maintain-retail-channels">Kanavan määrittäminen ja hallinta</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS ja pilvimyyntipiste</p>
-<p><a href="../retail/dev-itpro/dev-retail-home-page">Vähittäismyynnin kehittäjä ja järjestelmänvalvoja</p>
+<p><a href="../retail/dev-itpro/dev-retail-home-page">Retailin kehittäminen ja hallinta</p>
 
 </td>
 </tr>

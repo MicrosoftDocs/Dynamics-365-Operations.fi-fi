@@ -1,67 +1,80 @@
 ---
-title: "Dynamics 365 for Operations -mobiilisovellukselle julkaistut mobiilityötilat"
-description: "Tämä aihe sisältää luettelon hiljattain Microsoft Dynamics 365 for Operations -mobiilisovellukselle julkaistuista mobiilityötiloista."
+title: "Äskettäin vapautetut mobiilityötilat"
+description: "Tässä ohjeaiheessa on luettelo äskettäin vapautetuista mobiilityötiloista."
 author: sericks007
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
-ms.custom: 271724
-ms.assetid: 4b639ee1-5ee3-4389-8fbb-3c65150ba8b2
+ms.search.scope: Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: sericks
-ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7d9b5870d8b1c64e3d444900253b06bbb76b6feb
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: e5633d1db9593e2e0cb8bb4703de76766ab706b0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="mobile-workspaces-recently-released-for-the-dynamics-365-for-operations-mobile-app"></a>Dynamics 365 for Operations -mobiilisovellukselle julkaistut mobiilityötilat
+# Äskettäin vapautetut mobiilityötilat
+<a id="mobile-workspaces-recently-released" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 
-Tämä aihe sisältää luettelon hiljattain Microsoft Dynamics 365 for Operations -mobiilisovellukselle julkaistuista mobiilityötiloista.
+Tämä ohjeaihe sisältää luettelon äskettäin Microsoft Dynamics 365 for Unified Operations -mobiilisovellukselle julkaistuista mobiilityötiloista.
 
-<a name="mobile-workspaces-that-were-released-in-april-2017"></a>Huhtikuussa 2017 julkaistut mobiilityötilat
---------------------------------------------------
+> [!NOTE]
+> Mobiilisovelluksen nimi oli aiemmin *Microsoft Dynamics 365 for Finance and Operations*.
+
+
+## Kesäkuussa 2017 julkaistut uudet mobiilityötilat
+<a id="new-mobile-workspaces-released-in-june-2017" class="xliff"></a>
+
+| Mobiilityötila     | kuvaus   | Lisätietoja   |
+|----------------------|---------------|--------------|
+|Yrityksen hakemisto| Käyttäjät saavat tarkastella tässä työtilassa organisaation muita työntekijöitä ja ottaa heihin yhteyttä.| [Yrityksen hakemiston mobiilityötila](company-directory-mobile-workspace.md)|    
+|Oma ryhmä| Käyttäjät saavat tarkastella suoria alaisiaan ja laajennettua henkilökuntaa sekä lähettää kehuja raportointiketjuun kuuluville henkilöille.| [Oman ryhmän mobiilityötila](manager-self-service-mobile-workspace.md)|     
+|Laskun hyväksynnät| Antaa luettelon laskuista, jotka on määritetty sinulle toimittajan laskun otsikon työnkulussa.|[Laskun hyväksyntöjen mobiilityötila](invoice-approval-mobile-workspace.md)    |    
+
+## Heinäkuussa 2017 julkaistut uudet mobiilityötilat
+<a id="new-mobile-workspaces-released-in-april-2017" class="xliff"></a>
 
 | Mobiilityötila   | kuvaus                                                                                                                                                                                                      | Lisätietoja                                                                                                      |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Matkalaskut | Työtilan avulla käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Mobiilityötilassa käyttäjät voivat myös luoda kulurivejä nopeasti käyttämällä liitettyä kuittia. | [Kulujenhallinnan mobiilityötila](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace) |
+| Matkalaskut | Käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Mobiilityötilassa käyttäjät voivat myös luoda kulurivejä nopeasti käyttämällä liitettyä kuittia. | [Kulujenhallinnan mobiilityötila](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace) |
+| Ostotilauksen hyväksyntä | Käyttäjät voivat tarkastella ostotilauksia ja vastata niihin toiminnoilla, kuten hyväksymällä tai hylkäämällä. | [Ostotilauksen hyväksymisen mobiilityötila](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace) |
 
-## <a name="mobile-workspaces-that-were-released-in-march-2017"></a>Maaliskuussa 2017 julkaistut mobiilityötilat
+## Maaliskuussa 2017 julkaistut uudet mobiilityötilat
+<a id="new-mobile-workspaces-released-in-march-2017" class="xliff"></a>
+
 | Mobiilityötila   | kuvaus                                                                                   | Lisätietoja                                                                                                                                                                              |
 |--------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Projektin aikakirjaus | Työtilan avulla käyttäjät voivat syöttää ja tallentaa projektin aikakirjauksia mobiililaittella. | [Projektin aikakirjausten mobiilityötila](/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace) |
+| Projektin aikamerkintä | Käyttäjät voivat antaa ja tallentaa projektin aikakirjauksia mobiililaitteella. | [Projektin aikamerkintöjen mobiilityötila](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace) |
 
-## <a name="mobile-workspaces-that-were-released-in-january-2017"></a>Tammikuussa 2017 julkaistut mobiilityötilat
+## Tammikuussa 2017 julkaistut uudet mobiilityötilat
+<a id="new-mobile-workspaces-released-in-january-2017" class="xliff"></a>
+
 | Mobiilityötila     | kuvaus                                                                                                                                                                         | Lisätietoja                                                                                                                                                        |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kustannusten hallinta     | Kustannuspaikan päälliköt näkevät kustannuspaikan suorituskyvyn missä tahansa ja milloin tahansa.                                                                                               | [Kustannusseurannan mobiilityötila](/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
-| Käytettävissä oleva varasto    | Syvempi näkemys varatusta ja käytettävissä olevasta varastosta milloin ja missä tahansa.                                                                                                    | [Käytettävissä olevan varaston mobiilityötila](/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace)       |
-| Myyntitilaukset         | Pysy ajan tasalla myyntitilauksista milloin ja missä tahansa.                                                                                                                          | [Myyntitilausten mobiilityötila](/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace)                 |
-| Toimittajayhteistyö | Toimittajasi pysyvät ajan tasalla heille hyväksyttäväksi lähetetyistä ostotilauksista sekä voivat tarkastella uusien ja päivitettyjen ostotilausten ja yhteyshenkilöiden tietoja. | [Toimittajayhteistyön mobiilityötila](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
+| Kustannusten hallinta     | Kustannuspaikan esimiehet näkevät kustannuspaikan suorituskyvyn missä ja milloin tahansa.                                                                                               | [Kustannusseurannan mobiilityötila](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
+| Käytettävissä oleva varasto    | Käyttäjät saavat tarkan kuvan varatusta ja käytettävissä olevasta varastosta milloin ja missä tahansa.                                                                                                    | [Käytettävissä olevan varaston mobiilityötila](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)       |
+| Myyntitilaukset         | Käyttäjät pysyvät ajan tasalla myyntitilauksien kohdalla milloin ja missä tahansa.                                                                                                                          | [Myyntitilausten mobiilityötila](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace)                 |
+| Toimittajayhteistyö | Toimittajat pysyvät ajan tasalla ostotilauksia, jotka on lähetetty heille hyväksyttäväksi. He voivat myös tarkastella uusia ja päivitettyjä ostotilauksia ja yhteyshenkilöitä koskevia tietoja. | [Toimittajayhteistyön mobiilityötila](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
 
-## <a name="mobile-workspace-functionality-that-was-released-in-december-2016"></a>Joulukuussa 2016 julkaistu mobiilityötilojen toiminnallisuus
+## Joulukuussa 2016 julkaistu uusi mobiilityötilojen toiminto
+<a id="new-mobile-workspace-functionality-released-in-december-2016" class="xliff"></a>
+
 | Mobiilityötila        | kuvaus                                                                    | Lisätietoja                                                                                                            |
 |-------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Toimittajan laskun hyväksyntä | Opi suunnittelemaan ja luomaan mobiilityötila toimittajan laskujen hyväksyntään. | [Mobiililaskujen hyväksynnät](/dynamics365/operations/financials/accounts-payable/mobile-invoice-approvals) |
-
-
-
-
-
+| Toimittajan laskun hyväksyntä | Opi suunnittelemaan ja luomaan mobiilityötila toimittajan laskujen hyväksyntään. | [Mobiililaskujen hyväksynnät](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals) |
 
 

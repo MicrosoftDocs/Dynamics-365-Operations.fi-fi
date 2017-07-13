@@ -1,39 +1,37 @@
 ---
 title: "Työrakenteet"
-description: 
+description: "Työrakenne (WBS) on kuvaus projektissa tehtävästä työstä. Se on tehtävähierarkia, joka edustaa projektin tiimin käsitystä työn kokoonpanosta ja kunkin osan tai tehtävän koosta, kustannuksista ja kestosta."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjWorkBreakdownStructure
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23861
 ms.assetid: 241a0464-0056-4a69-b468-0afbe2d5f3ae
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a700f61bcc6e6d9c699987999be25649862b0d8
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 6d4391f1a6fa517b447387562fd3216201451316
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="work-breakdown-structures"></a>Työrakenteet
+# Työrakenteet
+<a id="work-breakdown-structures" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
-
-
-
-Työrakenne on kuvaus projektissa tehtävästä työstä. Se on tehtävähierarkia, joka edustaa projektin tiimin käsitystä työn kokoonpanosta ja kunkin osan tai tehtävän koosta, kustannuksista ja kestosta. Työrakenteella on kolme päätavoitetta.
+Työrakenne (WBS) on kuvaus projektissa tehtävästä työstä. Se on tehtävähierarkia, joka edustaa projektin tiimin käsitystä työn kokoonpanosta ja kunkin osan tai tehtävän koosta, kustannuksista ja kestosta. Työrakenteella on kolme päätavoitetta.
 
 -   Tehtävien työn erittelyn tai kokoonpanon kuvailu.
 -   Projektiin liittyvän työn ajoittaminen.
@@ -43,12 +41,14 @@ Työrakenteen tarkkuus riippuu arvioiden ja arvioissa käytettävien seurantasoj
 
 Sen sijaan esimerkiksi media-, mainos-, ohjelmisto- ja IT-infrastruktuurialan projektit ovat usein ainutlaatuisia. Tuottavuus riippuu tehtävän suorittavan henkilön kokemuksesta ja osaamisesta. Tämän vuoksi näillä toimialoilla käytetään työrakennetta projektin kokoarvion saamisessa, ei projektin edistymisen yksityiskohtaisessa seuraamisessa. 
 
-Työrakenteen muodostaminen on intensiivinen prosessi, joka kestää yleensä pitkään ja vaatii useiden henkilöiden yhteistyötä ja tietoja. Tässä ohjeaiheessa kerrotaan, miten Microsoft Dynamics 365 for Operationsissa olevia työrakenteen parannuksia voidaan käyttää arvioissa ja seuraamisessa vaatimusten täyttämiseksi.
+Työrakenteen muodostaminen on intensiivinen prosessi, joka kestää yleensä pitkään ja vaatii useiden henkilöiden yhteistyötä ja tietoja. Tässä ohjeaiheessa kerrotaan, miten Microsoft Dynamics 365 for Finance and Operationsissa olevia työrakenteen parannuksia voidaan käyttää arvioissa ja seuraamisessa vaatimusten täyttämiseksi.
 
-## <a name="prerequisites-for-creating-a-wbs"></a>Työrakenteen luomisen edellytykset
+## Työrakenteen luomisen edellytykset
+<a id="prerequisites-for-creating-a-wbs" class="xliff"></a>
 Voit luoda työrakenteen, jos sinulla on työaikataulun ja työn kustannusarvion luontioikeus.
 
-### <a name="prerequisites-for-creating-a-work-schedule"></a>Työaikataulun luomisen edellytykset
+### Työaikataulun luomisen edellytykset
+<a id="prerequisites-for-creating-a-work-schedule" class="xliff"></a>
 
 Voit käyttää työrakennetoimintojen kaikkia ajoitusominaisuuksia, kun teet seuraavat asetukset:
 
@@ -63,14 +63,16 @@ Voit käyttää työrakennetoimintojen kaikkia ajoitusominaisuuksia, kun teet se
 
 Voit määrittää kalenterin työpäivät ja -tunnit tai luoda uuden kalenterin valitsemalla **Organisaation hallinto** &gt; **Yleinen** &gt; **Kalenterit**.
 
-### <a name="prerequisites-for-estimating-the-cost-of-work"></a>Työn kustannusarvion edellytykset
+### Työn kustannusarvion edellytykset
+<a id="prerequisites-for-estimating-the-cost-of-work" class="xliff"></a>
 
 Voit käyttää työrakenteen kaikkia kustannusarvioissa käytettäviä toimintoja työntekijöiden, nimikkeiden sekä työ-, kulu- ja maksuluokkien kustannusten ja myyntihintojen määrittämisen jälkeen.
 
 -   Voit määrittää työ-, kulu- ja maksuluokan kustannukset ja myyntihinnat valitsemalla **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Hinnat**.
 -   Voit määrittää nimikkeiden kustannukset ja myyntihinnat Tuotetietojen hallinta -kohdan **Vapautetut tuotteet** -luettelosivun kunkin nimikkeen **Kauppasopimukset**-sivulla.
 
-## <a name="creating-a-wbs"></a>Työrakenteen luominen
+## Työrakenteen luominen
+<a id="creating-a-wbs" class="xliff"></a>
 Työrakenteen luominen sisältää seuraavat kolme tehtävää:
 
 1.  **Työn hajottaminen** – Luo työn erittely hallittaviin joukkoihin tai tehtäviin.
@@ -79,7 +81,8 @@ Työrakenteen luominen sisältää seuraavat kolme tehtävää:
 
 Seuraavissa osissa käsitellään sitä, miten työrakennetoiminnot voivat auttaa näiden tehtävien suorittamisessa.
 
-### <a name="work-decomposition"></a>Työn hajottaminen
+### Työn hajottaminen
+<a id="work-decomposition" class="xliff"></a>
 
 Työn erittelyn tai hajottamisen luominen on yleensä työrakenteen luomisprosessin ensimmäinen vaihe. Työrakennetoiminto tukee seuraavia työrakenteen tai hajottamisen perusrakenteita. 
 
@@ -104,12 +107,13 @@ Tällä hetkellä työrakenteen numerointia ei voi mukauttaa.
 
 **Siirrä ylös ja Siirrä alas** Kun valitset **Siirrä ylös**- tai **Siirrä alas** -kohdan, muutat tehtävän sijaintia päähierarkiassa. Tehtävän sijainti ei vaikuta tehtävän työhön, kustannuksiin, päivämääriin tai kestoon. Tehtävän työrakennenumero lasketaan kuitenkin automaattisesti uudelleen tehtävän uuden sijainnin mukaiseksi.
 
-### <a name="schedule-estimation"></a>Aikatauluarvio
+### Aikatauluarvio
+<a id="schedule-estimation" class="xliff"></a>
 
-Aikatauluarvio on yleensä työrakenteen luomisen toinen vaihe. Parhaan käytännön mukaisesti kannattaa tehdä aikatauluarvio ennen tehtävien luomista. Microsoft Dynamics 365 for Operationsin **Työrakenne**-sivu sisältää kaksi osaa. Yläruutu on tarkoitettu aikatauluarviolle. Alempi ruutu sisältää **Arvioidut kustannukset ja tuotto** -välilehden, jota käytetään kustannusarviossa. 
+Aikatauluarvio on yleensä työrakenteen luomisen toinen vaihe. Parhaan käytännön mukaisesti kannattaa tehdä aikatauluarvio ennen tehtävien luomista. Finance and Operationsin **Työrakenne**-sivu sisältää kaksi osaa. Yläruutu on tarkoitettu aikatauluarviolle. Alempi ruutu sisältää **Arvioidut kustannukset ja tuotto** -välilehden, jota käytetään kustannusarviossa. 
 **Tehtävän riippuvuudet** Voit luoda työrakenteen tehtävien välille edeltäjäsuhteita. Kun liität edeltäjätehtävän tehtävään, kyseinen tehtävä voi alkaa vasta, kun kaikki sen edeltäjätehtävät on suoritettu. Tehtävän suunniteltu alkamispäivämäärä määritetään automaattisesti kaikkien sen edeltäjätehtävien viimeiseksi päivämääräksi. 
 
-**Tehtävien ajoitus Microsoft Dynamics 365 for Operationsissa** Seuraavat tekijät määrittävät lehtisolmutehtävien ajoituksen:
+**Tehtävien ajoitus Microsoft Dynamics 365 for Finance and Operationsissa** Seuraavat tekijät määrittävät lehtisolmutehtävien ajoituksen:
 
 -   Edeltäjät
 -   Työmäärä
@@ -126,7 +130,7 @@ Projektin ajoituksen alkamispäivämäärä asetetaan automaattisesti sellaisen 
 
 Henkilöiden määrä × kesto × projektikalenterin vakiotyöpäivien tuntimäärä. 
 
-Joskus näistä säännöistä halutaan ehkä poiketa. Voit poistaa automaattisen ajoituksen käytöstä, kun haluat, ettei Microsoft Dynamics 365 for Operations määritä tai korjaa lehtisolmutehtävien ominaisuuksia automaattisesti. Kun syötät tehtävälle tiedot, jotka rikkovat jotakin ajoitussääntöä, tehtävän kohdalla näytetään aikatauluvirhekuvake. Jos et halua aikatauluvirheiden olevan näkyvissä, valitse **Aikatauluvirheet näytetään** -kohta, jolloin toiminto poistetaan käytöstä. 
+Joskus näistä säännöistä halutaan ehkä poiketa. Voit poistaa automaattisen ajoituksen käytöstä, kun haluat, ettei Finance and Operations määritä tai korjaa lehtisolmutehtävien ominaisuuksia automaattisesti. Kun syötät tehtävälle tiedot, jotka rikkovat jotakin ajoitussääntöä, tehtävän kohdalla näytetään aikatauluvirhekuvake. Jos et halua aikatauluvirheiden olevan näkyvissä, valitse **Aikatauluvirheet näytetään** -kohta, jolloin toiminto poistetaan käytöstä. 
 
 > [!NOTE] 
 > Yhteenveto- tai säilötehtävän arvoja lasketaan jatkossakin osatehtävien arvojen summana siitä huolimatta, onko automaattisen ajoituksen aputoiminto käytössä vai ei. 
@@ -135,7 +139,7 @@ Joskus näistä säännöistä halutaan ehkä poiketa. Voit poistaa automaattise
 
 **Aikatauluvirheiden korjaaminen tehtävän mukaan** Kun kaksoisnapsautat tietyn tehtävän aikatauluvirhekuvaketta, valintaikkunassa näkyvät kaikki kyseisen tehtävän aikatauluvirheet. Voit päättää, mitkä tehtävän aikatauluvirheet korjataan. 
 
-**Kaikkien aikatauluvirheiden korjaaminen** Jos haluat Microsoft Dynamics 365 for Operationsin korjaavan kaikki työrakenteen aikatauluvirheet, valitse toimintoruudussa **Korjaa kaikki aikatauluristiriidat**. 
+**Kaikkien aikatauluvirheiden korjaaminen** Jos haluat Finance and Operationsin korjaavan kaikki työrakenteen aikatauluvirheet, valitse toimintoruudussa **Korjaa kaikki aikatauluristiriidat**. 
 
 > [!NOTE] 
 > Tämä toiminto voi aiheuttaa merkittäviä muutoksia työrakenteeseen. Virheet korjataan seuraavassa järjestyksessä:
@@ -144,7 +148,8 @@ Joskus näistä säännöistä halutaan ehkä poiketa. Voit poistaa automaattise
 2.  Kunkin tehtävän alkamispäivämäärää muokataan niin, että tehtävä alkaa sen edeltäjätehtävien suorituksen jälkeen.
 3.  Kunkin tehtävän alkamispäivämäärää muokataan niin, että edeltäjätehtävien alkamispäivämäärien välit poistuvat.
 
-### <a name="cost-estimation"></a>Kustannusarvio
+### Kustannusarvio
+<a id="cost-estimation" class="xliff"></a>
 
 Kuten aiemmin tässä asiakirjassa mainittiin, kunkin lehtisolmutehtävän kustannusarvio syötetään **Työrakenne**-sivun alemman ruudun **Arvioidut kustannukset ja tuotto** -välilehdessä. 
 
@@ -167,16 +172,19 @@ Kun kunkin tehtävän työn, materiaalin ja kulujen kustannuksia arvioidaan, pro
 
 Kunkin työ- tai kuluarviorivin kustannus ja myyntihinta perustuu kohdan **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Hinnoittelu** hinnoittelutauluissa kullekin luokalle määritettyihin asetuksiin. Nimikkeiden kustannukset ja myyntihinnat lisätään oletusarvoisesti nimikkeestä tai kauppasopimuksista Tuotetietojen hallinta -kohdan **Vapautetut tuotteet** -luettelosivulla.
 
-## <a name="tracking-progress-on-the-wbs"></a>Työrakenteen edistymisen seuraaminen
+## Työrakenteen edistymisen seuraaminen
+<a id="tracking-progress-on-the-wbs" class="xliff"></a>
 Joillakin toimialoilla projektin edistymistä seurataan hyvin yksityiskohtaisella työrakenteen tasolla, kun taas joillakin toimialoilla edistymistä seurataan työrakenteen korkeammalla tasolla. Tässä osassa kerrotaan, miten työrakenteen seurantaa voidaan käyttää projektin vaatimusten mukaisesti. 
 
-Microsoft Dynamics 365 for Operations sisältää kolme projektin työrakenteen näkymää: suunnittelunäkymä, työnseurantanäkymä ja kustannusseurantanäkymä.
+Finance and Operations sisältää kolme projektin työrakenteen näkymää: suunnittelunäkymä, työnseurantanäkymä ja kustannusseurantanäkymä.
 
-### <a name="planning-view"></a>Suunnittelunäkymä
+### Suunnittelunäkymä
+<a id="planning-view" class="xliff"></a>
 
 Suunnittelunäkymä sisältää aikataulun ja kustannusten tietojen suunnitellun arvion tai perusarvion. Vaikka projektin työrakenteen version ja perusversion seurantaa varten ei ole toimintoja, tämän näkymän arvoja käytetään perusversion esittämisessä. Tämän ohjeaiheen Aikatauluarvio- ja Kustannusarvio-osassa kerrotaan tietoja tästä näkymästä ja sen käyttämisestä työrakenteen luomisessa.
 
-### <a name="effort-tracking-view"></a>Työnseurantanäkymä
+### Työnseurantanäkymä
+<a id="effort-tracking-view" class="xliff"></a>
 
 Työnseurantanäkymä sisältää työrakenteen tehtävien edistymisen seuraamisen. Se vertaa tehtävän kumulatiivisia toteutuneita työtunteja suunniteltuihin työtunteihin. Seuraavat kaavat määrittävät työnseurantanäkymän arvot.
 
@@ -209,7 +217,8 @@ Molempien tapojen käyttäminen aiheuttaa tehtävän arvion valmistumiseen, kust
 
 Määritä työrakenteen seurannan ja ylläpidon taso valitsemalla työnseurantanäkymän **Laajenna tasolle** -kohta. Työrakenne laajennetaan avaamisen yhteydessä automaattisesti kyseiselle tasolle työnseurantanäkymässä.
 
-### <a name="cost-tracking-view"></a>Kustannusseurantanäkymä
+### Kustannusseurantanäkymä
+<a id="cost-tracking-view" class="xliff"></a>
 
 Kustannusseurantanäkymä sisältää tehtävän kustannusten kulutuksen seurannan. Tässä näkymässä tehtävän tähän mennessä toteutuneita kustannuksia verrataan tehtävän suunniteltuihin kustannuksiin. Seuraavat kaavat määrittävät kustannusseurantanäkymän arvot.
 
@@ -238,7 +247,8 @@ Kustannusseurantanäkymä sisältää tehtävän kustannuspoikkeaman projektion.
 
 Määritä työrakenteen seurannan ja ylläpidon taso valitsemalla kustannusseurantanäkymän **Laajenna tasolle** -kohta. Työrakenne laajennetaan avaamisen yhteydessä kyseiselle tasolle kustannusseurantanäkymässä.
 
-### <a name="earned-value-management"></a>Ansaitun arvon hallinta
+### Ansaitun arvon hallinta
+<a id="earned-value-management" class="xliff"></a>
 
 Voit käyttää ansaitun arvon menetelmää projektin edistymisen seurannassa. Voit tarkastella ansaitun arvon mittareita projektipäällikön roolikeskuksessa. Ansaitun arvon kaavion osa näyttää suunnitellun arvon ja toteutuneiden kustannusten aikajaksotetut arvot. Kuluvan päivän ansaittu arvo näytetään pisteenä. Ansaitun arvon aikajaksotetut tiedot eivät ole tällä hetkellä käytettävissä. 
 
@@ -246,13 +256,13 @@ Ansaitun arvon aikajaksotus näytetään viikoittain tai kuukausittain. Tässä 
 
 **Suunniteltu arvo** Ansaitun arvon menetelmän teoriassa kerrotaan, että suunnitellun arvon kuvio esittää projektin tiimin projektille suunnitteleman ansaitun arvon hintaa. 
 
-Microsoft Dynamics 365 for Operations käyttää 0:100-ansaintasääntöä suunnitellun arvon esittämisessä. Tämän säännön mukaan tehtävän arvo kirjataan tehtävään sen päättymispäivämääränä. Arvoja ei kirjata, ennen kuin tehtävä on täysin valmis. 
+Finance and Operations käyttää 0:100-ansaintasääntöä suunnitellun arvon esittämisessä. Tämän säännön mukaan tehtävän arvo kirjataan tehtävään sen päättymispäivämääränä. Arvoja ei kirjata, ennen kuin tehtävä on täysin valmis. 
 
 Projektinhallinta ja kirjanpito -kohdassa syötetään lehtisolmujen päättymispäivämäärä ja niiden suunnitellut kustannukset. Kun suunnitellun arvon kaavio näytetään viikon mukaan, kaikkien lehtisolmutehtävien suunnitellut arvot lasketaan yhteen viikon ajalta projektin keston aikana. 
 
 **Ansaittu arvo** Ansaitun arvon menetelmän teoriassa kerrotaan, että ansaitun arvon kuvio esittää projektin tiimin projektille todellisuudessa ansaitseman arvon hintaa. 
 
-Microsoft Dynamics 365 for Operations käyttää 0:100-ansaintasääntöä ansaitun arvon esittämisessä. Tämän säännön mukaan tehtävän arvo kirjataan tehtävään sen päättymispäivämääränä. Arvoja ei kirjata, ennen kuin tehtävä on täysin valmis. 
+Finance and Operations käyttää 0:100-ansaintasääntöä ansaitun arvon esittämisessä. Tämän säännön mukaan tehtävän arvo kirjataan tehtävään sen päättymispäivämääränä. Arvoja ei kirjata, ennen kuin tehtävä on täysin valmis. 
 
 Kun ansaittu arvo lasketaan, kunkin tehtävän edistymisprosentti otetaan huomioon. Kun käytössä on 0:100-ansaintasääntö, vain määritetyn kauden valmiit tehtävät otetaan huomioon ansaitun arvon laskennassa kyseisen kauden lopussa. Projektin ansaittu arvo lasketaan kaikkien kaavion luomisen yhteydessä valmiina olleiden tehtävien perusteella. 
 
@@ -263,7 +273,8 @@ Kun ansaittu arvo lasketaan, kunkin tehtävän edistymisprosentti otetaan huomio
 
 Projektiin kirjattuja tapahtumia käytetään toteutuneiden kustannusten rivin kuvaamisessa. Kustannusten yhteenveto esitetään päivän mukaan. Tietoja käytetään tämän jälkeen ansaitun arvon kaavion toteutuneiden kustannusten esittämisessä viikon tai kuukauden mukaan.
 
-### <a name="how-to-use-the-concepts-of-planned-value-earned-value-and-actual-cost"></a>Suunniteltu arvo-, ansaittu arvo- ja toteutuneet kustannukset -käsitteen käyttäminen
+### Suunniteltu arvo-, ansaittu arvo- ja toteutuneet kustannukset -käsitteen käyttäminen
+<a id="how-to-use-the-concepts-of-planned-value-earned-value-and-actual-cost" class="xliff"></a>
 
 **Aikatauluvarianssi** Suunnittelun aikana luodaan aikajanan työn ennuste. Tämän vuoksi suunniteltu arvo on hinta, jonka projektin suunnittelijat arvelivat projektin valmistumiseen kuluvan. Sen jälkeen kun projekti on käynnissä, työ on tehty valmiiksi ja projekti saa ansaittua arvoa. Voit tarkastella projektin työn edistymistä vertaamalla suunniteltua arvoa ansaittuun arvoon. Vertailun tulosta kutsutaan aikatauluvarianssiksi. 
 
@@ -277,22 +288,26 @@ Jos kauden toteutuneiden käytettyjen kustannusten määrä on suurempi kuin ans
 
 Jos kauden toteutuneiden käytettyjen kustannusten määrä on pienempi kuin ansaittu arvo, projektissa ansaittu enemmän rahaa kuin käytetty. Projekti siis alittaa budjetin.
 
-## <a name="wbs-templates"></a>WBS-mallit
+## WBS-mallit
+<a id="wbs-templates" class="xliff"></a>
 Voit luoda projekteille vakiomalleja työrakennemallien avulla. Jos yrityksen tarjoamat projektit sisältävät paljon toistettavaa työtä, työrakennemalli kannattaa luoda. 
 
 Voit luoda aiemmin luodun projektin työrakenteesta työrakennemallin. Näin voit käyttää uudelleen aiemman projektin suunnittelun yhteydessä kerätyt tiedot ja parhaat käytännöt vastaavissa tulevaisuuden projekteissa. Joskus koko työrakennetta ei kuitenkaan kannata tallentaa mallina. Voit luoda malleja myös projektin työrakenteen osista.
 
-### <a name="saving-a-projects-wbs-as-a-template"></a>Projektin työrakenteen tallentaminen mallina
+### Projektin työrakenteen tallentaminen mallina
+<a id="saving-a-projects-wbs-as-a-template" class="xliff"></a>
 
 Kun olet luonut mallin, voit tuoda sen uuden projektin työrakenteeseen juurisolmun tai minkä tahansa projektin työrakenteen tehtävän alle.
 
-### <a name="importing-a-wbs-template-into-a-projects-wbs"></a>Työrakennemallin tuominen projektin työrakenteeseen
+### Työrakennemallin tuominen projektin työrakenteeseen
+<a id="importing-a-wbs-template-into-a-projects-wbs" class="xliff"></a>
 
 Kun tuot tehtäviä, mallin tehtävät järjestetään sen tehtävän alkamispäivämäärän mukaan, jonka alle tehtävät tuodaan. Tuonnin aikana tuotavien tehtävien alkamispäivämäärät lasketaan mallitehtävien edeltäjäsuhteiden avulla. Tuotavien tehtävien päättymispäivämäärät lasketaan kohdeprojektin vakiotyökalenterin avulla niin, että nykyisen projektin työkalenterin määritetyt työpäivät ja vakiotyötunnit säilytetään. 
 
 Arviorivien kustannussummat ja myyntihinnat kohdistetaan, jotta voidaan varmistaa, että projekti- tai projektisopimuskohtaisten hintojen päivämäärät ovat kelvolliset.
 
-### <a name="differences-between-a-projects-wbs-and-a-wbs-template"></a>Projektin työrakenteen ja työrakennemallin väliset erot
+### Projektin työrakenteen ja työrakennemallin väliset erot
+<a id="differences-between-a-projects-wbs-and-a-wbs-template" class="xliff"></a>
 
 -   Työrakennemallien tehtävillä ei ole alkamis- ja päättymispäivämääriä.
 

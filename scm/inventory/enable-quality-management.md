@@ -1,16 +1,16 @@
 ---
 title: Laadunhallinnan yleiskuvaus
-description: "Tässä artikkelissa kerrotaan, miten Microsoft Dynamics 365 for Operations -järjestemän laadunhallinnan avulla voidaan parantaa toimitusketjun tuotteiden laatua."
+description: "Tässä artikkelissa kerrotaan, miten Microsoft Dynamics 365 for Finance and Operationsin laadunhallinnan avulla voidaan parantaa toimitusketjun tuotteiden laatua."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
@@ -19,28 +19,30 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bb3f36bb425adffa7e055eba4e8732866cb67c49
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 255035bf13155190e59088a7f64f798c7462b885
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="quality-management-overview"></a>Laadunhallinnan yleiskuvaus
+# Laadunhallinnan yleiskuvaus
+<a id="quality-management-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kerrotaan, miten Microsoft Dynamics 365 for Operations -järjestemän laadunhallinnan avulla voidaan parantaa toimitusketjun tuotteiden laatua.
+Tässä artikkelissa kerrotaan, miten Microsoft Dynamics 365 for Finance and Operationsin laadunhallinnan avulla voidaan parantaa toimitusketjun tuotteiden laatua.
 
-Laadunhallinnan avulla voit hallita määrityksestä poikkeavien tuotteiden käsittelyaikaa niiden lähtöpisteestä riippumatta. Koska vianmääritystyypit linkitetty korjausraportointiin, Microsoft Dynamics 365 for Operations voi ajoittaa ongelmien korjaustehtävät ja estää ongelmien toistuminen.
+Laadunhallinnan avulla voit hallita määrityksestä poikkeavien tuotteiden käsittelyaikaa niiden lähtöpisteestä riippumatta. Koska vianmääritystyypit linkitetty korjausraportointiin, Microsoft Dynamics 365 for Finance and Operations voi ajoittaa ongelmien korjaustehtävät ja estää ongelmien toistuminen.
 
 Määrityksistä poikkeamisen hallintatoiminnon lisäksi laadunhallinta sisältää toiminnon ongelmien seuraamiseen ongelmantyypin perusteella (myös sisäiset ongelmat) sekä lyhyt- tai pitkäaikaisen ratkaisun tunnistamiseen. Suorituskykyilmaisimia (KPI) koskevat tilastot antavat tietoja aiemmista määrityksistä poikkeamiseen liittyvistä ongelmista ja niiden korjaamiseen käytetyistä ratkaisuista. Voit tarkistaa historiallisten tietojen avulla, kuinka tehokkaita aiemmat laatutoimet ovat olleet, ja määrittää, mitkä toimet soveltuvat jatkossa käytettäviksi.
 
-Kun määrität laatuliitoksen, Microsoft Dynamics 365 for Operations voi luoda liiketoiminnan eri prosesseille, tapahtumille ja ehdoille laatutilauksia. Laatuliitos voi koskea tiettyä nimikettä, tiettyä nimikeryhmää tai kaikkia nimikkeitä.
+Kun määrität laatuliitoksen, Finance and Operations voi luoda liiketoiminnan eri prosesseille, tapahtumille ja ehdoille laatutilauksia. Laatuliitos voi koskea tiettyä nimikettä, tiettyä nimikeryhmää tai kaikkia nimikkeitä.
 
-## <a name="examples-of-the-use-of-quality-management"></a>Esimerkkejä laadunhallinnan käytöstä
+## Esimerkkejä laadunhallinnan käytöstä
+<a id="examples-of-the-use-of-quality-management" class="xliff"></a>
 Laadunhallinta on joustavaa ja se voidaan toteuttaa eri tavoin vastaamaan toimitusketjun työvaiheiden tiettyjen tasojen vaatimuksia. Seuraavassa esimerkissä käsitellään näiden ominaisuuksien mahdollisia käyttötapoja:
 
 -   Laadunvalvontaprosessin käynnistäminen automaattisesti ennaltamääritettyjen ehtojen perusteella (kun tietyn toimittajan ostotilaus rekisteröidään varastossa).
@@ -50,7 +52,8 @@ Laadunhallinta on joustavaa ja se voidaan toteuttaa eri tavoin vastaamaan toimit
 -   Hyväksyttävän laadun tason määrittäminen laadun mittaustoleranssien hallintaa varten.
 -   Tarkastustyövaiheiden edellyttämien resurssien, kuten testausalueen tai testin mittavälineiden, määrittäminen.
 
-## <a name="working-with-quality-associations"></a>Laatuliitosten käsitteleminen
+## Laatuliitosten käsitteleminen
+<a id="working-with-quality-associations" class="xliff"></a>
 Laatuliitosta käyttävä liiketoimintoprosessi voidaan liittää eri lähdeasiakirjoihin, kuten ostotilauksiin, myyntitilauksiin tai tuotantotilauksiin. 
 
 Jokaisessa laatuliitostietueessa määritetään joukko testejä, hyväksyttävän laadun taso ja otantasuunnitelma, jota käytetään muodostettavissa laatutilauksissa. Laatuliitostietue on määritettävä liiketoimintaprosessin jokaiselle muunnokselle. Voit esimerkiksi määrittää laatuliitoksen, joka muodostaa laatutilauksen, kun ostotilauksen tuotteen vastaanotto päivitetään. Toimeenpanosuunnitelma määritysten mukaisesti käynnistävä prosessi voidaan estää, jos laatutilaus on avoinna. Myös seuraavat prosessit, kuten ostotilauksen laskutus, voidaan estää. 
@@ -295,7 +298,8 @@ Seuraavassa taulussa on lisätietoja laatutilausten muodostamisesta tietyntyyppi
 </tbody>
 </table>
 
-## <a name="quality-management-pages"></a>Laadunhallinnan sivut
+## Laadunhallinnan sivut
+<a id="quality-management-pages" class="xliff"></a>
 <table>
 <colgroup>
 <col width="33%" />
@@ -356,7 +360,8 @@ Laatuliitos on määritettävä kutakin sellaista liiketoimintaprosessin muutost
 
 
 
-<a name="see-also"></a>Lisätietoja
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
 [Laadunhallintaprosessit](quality-management-processes.md)

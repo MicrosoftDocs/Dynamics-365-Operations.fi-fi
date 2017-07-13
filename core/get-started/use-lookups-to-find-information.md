@@ -1,15 +1,15 @@
 ---
 title: Tiedon etsiminen hakujen avulla
-description: "Monessa Microsoft Dynamics 365 for Operations -kentässä on hakuja, jotka auttavat sinua löytämään oikean tai halutun arvo. Hakuihin on lisätty useita parannuksia, jotka helpottavat näiden ohjausobjektien käyttöä ja parantavat käyttäjien tuottavuutta. Tässä ohjeaiheessa tutustutaan uusiin hakuominaisuuksiin ja annetaan joitain vinkkejä, joiden avulla käytät järjestelmän hakuja optimaalisesti."
+description: "Monessa Microsoft Dynamics 365 for Finance and Operations -kentässä on hakuja, jotka auttavat sinua löytämään oikean tai halutun arvo. Hakuihin on lisätty useita parannuksia, jotka helpottavat näiden ohjausobjektien käyttöä ja parantavat käyttäjien tuottavuutta. Tässä ohjeaiheessa tutustutaan uusiin hakuominaisuuksiin ja annetaan joitain vinkkejä, joiden avulla käytät järjestelmän hakuja optimaalisesti."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269934
 ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
 ms.search.region: Global
@@ -17,25 +17,27 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 652fbdb7a96c516ca1fc17357683d94b85cd93f3
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a5d0a9edd2cb5747fc799c6fdca45dd9ba5720f7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="use-lookups-to-find-information"></a>Tiedon etsiminen hakujen avulla
+# Tiedon etsiminen hakujen avulla
+<a id="use-lookups-to-find-information" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Monessa Microsoft Dynamics 365 for Operations -kentässä on hakuja, jotka auttavat sinua löytämään oikean tai halutun arvo. Hakuihin on lisätty useita parannuksia, jotka helpottavat näiden ohjausobjektien käyttöä ja parantavat käyttäjien tuottavuutta. Tässä ohjeaiheessa tutustutaan uusiin hakuominaisuuksiin ja annetaan joitain vinkkejä, joiden avulla käytät järjestelmän hakuja optimaalisesti.  
+Monessa Microsoft Dynamics 365 for Finance and Operations -kentässä on hakuja, jotka auttavat sinua löytämään oikean tai halutun arvo. Hakuihin on lisätty useita parannuksia, jotka helpottavat näiden ohjausobjektien käyttöä ja parantavat käyttäjien tuottavuutta. Tässä ohjeaiheessa tutustutaan uusiin hakuominaisuuksiin ja annetaan joitain vinkkejä, joiden avulla käytät järjestelmän hakuja optimaalisesti.  
 
-<a name="responsive-lookups"></a>Reagoivat haut
+Reagoivat haut
+<a id="responsive-lookups" class="xliff"></a>
 ------------------
 
-Aiemmissa Dynamics 365 for Operations -versioissa haku-ohjausobjektin käyttäminen edellytti käyttäjiltä valikon avaamista erikseen. Tämä saattoi olla toteutettu kirjoittamalla ohjausobjektiin tähti (\*), jolla hakua suodatettiin ohjausobjektin nykyisen arvon mukaisesti, napsauttamalla valikon painiketta, tai käyttämällä **Alt**+**Alanuoli** -pikanäppäintä. Hakuobjekteja on muutettu seuraavilla tavoilla, jotta ne vastaisivat nykyisiä verkkosivukäytäntöjä:
+Aiemmissa Finance and Operations -versioissa haku-ohjausobjektin käyttäminen edellytti käyttäjiltä valikon avaamista erikseen. Tämä saattoi olla toteutettu kirjoittamalla ohjausobjektiin tähti (\*), jolla hakua suodatettiin ohjausobjektin nykyisen arvon mukaisesti, napsauttamalla valikon painiketta, tai käyttämällä **Alt**+**Alanuoli** -pikanäppäintä. Hakuobjekteja on muutettu seuraavilla tavoilla, jotta ne vastaisivat nykyisiä verkkosivukäytäntöjä:
 
 -   Haku-pudotusvalikot aukeavat nyt automaattisesti hetken kuluttua, kun kirjoittaminen on päättynyt, ja valikon sisältö suodatetaan hakuobjektin arvon mukaisesti.
     -   Huomaa, että vanha tapa avata hakuvalikko automaattisesti tähden (\*) kirjoittamisen jälkeen on poistunut.
@@ -57,8 +59,9 @@ Vaikka kohdistus on yhä hakuobjektissa, voit käyttää lisäksi **Ylä-** ja *
 
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
-## <a name="typing-in-more-than-ids"></a>Muiden kuin tunnisteiden kirjoittaminen
-Kun kirjoitat tietoja, on luonnollista yrittää tunnistaa yksikkö, kuten asiakas tai toimittaja, nimen perusteella yksikköä edustavan tunnisteen perusteella. Nykyisessä Dynamics 365 for Operations -versiossa moni (ei kuitenkaan kaikki) haku sallii nyt kontekstitietojen kirjoittamisen. Tämä ominaisuus sallii käyttäjän kirjoittaa tunnisteen tai sitä vastaavan nimen hakuobjektiin. 
+## Muiden kuin tunnisteiden kirjoittaminen
+<a id="typing-in-more-than-ids" class="xliff"></a>
+Kun kirjoitat tietoja, on luonnollista yrittää tunnistaa yksikkö, kuten asiakas tai toimittaja, nimen perusteella yksikköä edustavan tunnisteen perusteella. Nykyisessä Finance and Operations -versiossa moni (ei kuitenkaan kaikki) haku sallii nyt kontekstitietojen kirjoittamisen. Tämä ominaisuus sallii käyttäjän kirjoittaa tunnisteen tai sitä vastaavan nimen hakuobjektiin. 
 
 Esimerkkinä voimme käyttää **Asiakkaan tili** -kenttää, kun luot myyntitilausta. Tässä kentässä näytetään asiakkaan **Tilitunnus**, mutta käyttäjä kirjoittaa yleensä mieluummin tähän kenttään **tilin nimen** **tilitunnuksen** sijaan luodessaan myyntitilauksia, kuten "Forest Wholesales" "US-003":n sijaan.
 
@@ -70,7 +73,8 @@ Käyttäjät voivat nyt myös aloittaa **tilin nimen** kirjoittamisen. Jos täm�
 
 [![Kontekstihaku, kun asiakkaan tilin nimi on syötetty](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
-## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Ruudukon sarakeotsikoiden käyttäminen edistyneempään suodattamiseen ja lajitteluun
+## Ruudukon sarakeotsikoiden käyttäminen edistyneempään suodattamiseen ja lajitteluun
+<a id="using-grid-column-headers-for-more-advanced-filtering-and-sorting" class="xliff"></a>
 Edellisissä osiossa käsitellyt haun parannukset helpottavat käyttäjän mahdollisuuksia siirtyä haun rivien välillä "alkaa"-tyyppisen **tunnus**- tai **nimi**-kenttähaun perusteella. On kuitenkin tilanteita, joissa oikean rivin löytäminen vaatii edistyneempiä suodattimia tai lajittelua. Näissä tilanteissa käyttäjän on käytettävä haun sisäisiä ruudukon sarakeotsikoiden suodatus- ja lajitteluasetuksia. Otetaan esimerkiksi työntekijä, joka on syöttämässä myyntitilausriviä, johon on haettava oikea "kaapeli" tuotteeksi. Kirjoittamalla "kaapeli" **Nimiketunnus**-objektiin ei auta, sillä järjestelmässä ei ole "kaapeli"-alkuisia tuotenimiä. 
 
 ![emptyitemlookup](./media/emptyitemlookup.png) 

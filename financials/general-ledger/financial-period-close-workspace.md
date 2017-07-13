@@ -3,7 +3,7 @@ title: "Tilikauden sulkemisen työtila"
 description: "Tässä artikkelissa on tilikauden sulkemisen työtilan ja liittyvän konfiguraation yleiskatsaus."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 788b0af30eb750cad8f958ecc4c33cf989b2a417
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="financial-period-close-workspace"></a>Tilikauden sulkemisen työtila
+# Tilikauden sulkemisen työtila
+<a id="financial-period-close-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,11 +41,13 @@ Tilikauden sulkemisen työtila
 
 Valitse ensin sulkemisaikataulu työtilan yläosassa. Kaikki työtilassa näkyvät tiedot suodatetaan valitun sulkemisaikataulun mukaan.
 
-### <a name="summary-tiles"></a>Yhteenvetoruudut
+### Yhteenvetoruudut
+<a id="summary-tiles" class="xliff"></a>
 
 **Yhteenveto**-ruudut sisältävät prosessin yleiskuvauksen. Mittareiden avulla voit seurata sulkemisprosessia. Näkyvillä ovat erääntyneet tehtävät, kuluvan päivän jäljellä olevat tehtävät, kuluvana päivänä erääntyvät, mutta riippuvuuksien vuoksi estetyt tehtävät sekä kaikki prosessin jäljellä olevat tehtävät. Nämä tiedot koskevat kaikkia valittuun sulkemisaikatauluun liittyviä yrityksiä.
 
-### <a name="tasks-and-status-section"></a>Tehtävät ja tila -osa
+### Tehtävät ja tila -osa
+<a id="tasks-and-status-section" class="xliff"></a>
 
 **Tehtävät ja tila** -osassa yleisen sulkemisaikataulun tila eritellään useilla eri tavoilla: tila yrityksen mukaan, tila alueen mukaan ja tila vastuuhenkilön mukaan. Voit tarkastella näiden tehtävien tilaa sulkemisaikataulussa, vain kuluvana päivänä erääntyvissä tehtävissä tai erääntyneissä tehtävissä, muuttamalla korttiluettelon yläosassa olevaa suodatinta. Voit myös valita yrityssuodattimen, kun haluat tarkastella tietyn yrityksen tilaa. Kukin tilavälilehti sisältää erittelyn sekä valmistuneiden prosenttiosuuden että jäljellä olevien tehtävien määrän mukaan. Suodata yksityiskohtainen tehtäväluettelo valitun kortin mukaan valitsemalla kortti tai **Näytä tiedot** -toiminto. 
 
@@ -61,13 +64,16 @@ Voit liittää tehtäviin tiedostoja, huomautuksia, kuvia ja URL-osoitteita **Li
 
 **Tehtävä valmis** -vaihtoehto on valittava manuaalisesti tehtävän valmistuttua. **Valmistumispäivämäärä**-kenttään päivitetään automaattisesti kuluva päivämäärä ja kellonaika. Riippuvuuden mittarit päivitetään myös tarpeen mukaan.
 
-## <a name="all-financial-period-close-tasks-list-page"></a>Kaikkien tilikauden sulkemisen tehtävien luettelosivu
+## Kaikkien tilikauden sulkemisen tehtävien luettelosivu
+<a id="all-financial-period-close-tasks-list-page" class="xliff"></a>
 Voit tarkastella kuluvan ja edellisen kauden suljettuja tehtäviä **Kaikki tilikauden sulkemisen tehtävät** -luettelosivulla. Luettelosivua kannattaa käyttää erityisesti sulkemisprosessin historiallisessa analyysissä, koska luettelosivu sisältää ajoitetun eräpäivän, toteutuneen valmistumispäivän ja tehtävän suorittaneen henkilön tietoja. Voit viedä luettelosivun tiedot helposti Microsoft Exceliin raportointia ja tarkistusta varten.
 
-## <a name="financial-period-close-configuration-page"></a>Tilikauden sulkemisalueen konfigurointi -sivu
-Ennen kuin **tilikauden sulkemisen** työtilaa voi käyttää, prosessi on konfiguroitava Microsoft Dynamics 365 for Operationsissa **Tilikauden sulkemisalueen konfigurointi** -sivulla. (Valitse **Kirjanpito** &gt; **Kauden sulkeminen** &gt; **Tilikauden sulkemisalueen konfigurointi**.)
+## Tilikauden sulkemisalueen konfigurointi -sivu
+<a id="financial-period-close-configuration-page" class="xliff"></a>
+Ennen kuin **tilikauden sulkemisen** työtilaa voi käyttää, prosessi on määritettävä Microsoft Dynamics 365 for Finance and Operationsissa **Tilikauden sulkemisalueen konfigurointi** -sivulla. (Valitse **Kirjanpito** &gt; **Kauden sulkeminen** &gt; **Tilikauden sulkemisalueen konfigurointi**.)
 
-### <a name="resources"></a>Resurssit
+### Resurssit
+<a id="resources" class="xliff"></a>
 
 Määritä **Resurssit**-välilehdessä sulkemisprosesseissa mukana olevat henkilöt. Sulkemistehtävästä vastuussa oleva työntekijä on määritettävä tässä ensin. Myös työtilan työntekijän näkymä on määritettävä. Valittavissa ovat seuraavat vaihtoehdot:
 
@@ -76,21 +82,24 @@ Määritä **Resurssit**-välilehdessä sulkemisprosesseissa mukana olevat henki
 
 Käyttäjät, joilla on vain heille määritettyjen tehtävien katseluoikeus, eivät voi lisätä tehtäviä tehtäväluetteloon, muokata tehtäviä tai poistaa tehtäviä tehtäväluettelosta.
 
-### <a name="task-areas"></a>Tehtäväalueet
+### Tehtäväalueet
+<a id="task-areas" class="xliff"></a>
 
 Tehtäväalueiden avulla voi ryhmitellä sulkemistehtäviä omistusoikeuden loogisiin alueisiin organisaatiossa. Tehtäväalueina voidaan käyttää esimerkiksi ostoreskontraa, myyntireskontraa tai kirjanpitoa.
 
-### <a name="calendars"></a>Kalenterit
+### Kalenterit
+<a id="calendars" class="xliff"></a>
 
 Luo ja muokkaa tilikauden sulkemiskalentereita Kalenterit-välilehdessä.  Siellä määritetään sulkemisprosessien työpäivät, ja sitä käytetään myös sulkemistehtävien ajoituksessa.  Luo uusi kalenteri ja määritä tehtävän ajoituksessa käytettävät työpäivät.  Kalenteri kannattaa luoda pitkälle aikavälille, kuten vuodeksi tai useiksi vuosiksi, koska sitä ei voi muokata luomisen jälkeen.  Kun kalenteri on luotu, kalenterin tietyt päivät, kuten lomat, päivitetään Muokkaa-painikkeen avulla.  Sulkemistehtävät ajoitetaan päiville, joiden Ohjausarvo-kohdan arvoksi on määritetty Avoin.  Jos sulkemistehtäviä ei ajoiteta tietylle päivälle, kyseisen päivän Ohjausarvo-kohdan arvoksi on määritettävä Suljettu.
 
-### <a name="templates"></a>Mallit
+### Mallit
+<a id="templates" class="xliff"></a>
 
 Tilikauden sulkemismallin avulla voi määrittää kaikki sulkemisprosessin osana olevat tehtävät. Sulkemistehtävä on toistuva työ, joka määritetään henkilölle ja joka tehdään valmiiksi sulkemisprosessin osana. Jokaiselle sulkemistehtävälle on määritettävä suhteellinen eräpäivä mallissa. Suhteellinen eräpäivä tarkoittaa niiden päivien määrää, joka kunkin kauden erääntyvällä tehtävällä on jäljellä määritetyn kauden päättymispäivämäärään tai niiden päivien määrää, joka kyseisestä päättymispäivämäärästä on kulunut. Jokaiselle tehtävälle määritetään myös erääntymisaika. Erääntymisaika määritetään kunkin käyttäjän käyttämän aikavyöhykkeen kontekstissa. 
 
 Voit määrittää tehtävän mallissa yhdelle yritykselle tai useille yrityksille, joissa tehtävä on käytössä. Jos tehtävän suorittava henkilö on eri kussakin yrityksessä, samalle työlle kannattaa ehkä luoda useita tehtäviä. Luo kullekin yritykselle yksi tehtävä. 
 
-**Tehtävälinkki**-valikko liitetään tehtävän työhön. Sitä voidaan käyttää suoraan työtilan tehtävälinkin liittyvältä sivulta. Esimerkiksi ostoreskontran valuutan uudelleenarvostusprosessin suorittamisessa käytettävä sulkemistehtävä voidaan linkittää Microsoft Dynamics 365 for Operationsin liittyvään **Ulkomaanvaluutan uudelleenarvostus** -sivulle. Myös ulkoisen URL-osoitteen voi linkittää. 
+**Tehtävälinkki**-valikko liitetään tehtävän työhön. Sitä voidaan käyttää suoraan työtilan tehtävälinkin liittyvältä sivulta. Esimerkiksi ostoreskontran valuutan uudelleenarvostusprosessin suorittamisessa käytettävä sulkemistehtävä voidaan linkittää Microsoft Dynamics 365 for Finance and Operations, Enterprise Editioniin liittyvään **Ulkomaanvaluutan uudelleenarvostus** -sivulle. Myös ulkoisen URL-osoitteen voi linkittää. 
 
 > [!Vihje] Jos haluat linkittää tilikauden sulkemistehtävään tietyn Management Reporter -raportin, voit käyttää raportin URL-osoitetta. Voit käyttää raportin URL-osoitetta, kun avaat raportin Report Designer -ohjelmassa ja avaat raportin selaimeen valitsemalla **Tiedosto** &gt; **Näytä raportti**. Tämän jälkeen voit kopioida URL-osoitteen selaimen osoiteriviltä ja liittää sen **tehtävälinkin** **URL**-kenttään. 
 
@@ -98,7 +107,8 @@ Voit määrittää mallissa tehtävän riippuvuudet. Jos tehtävä on määritet
 
 Voit luoda useita tilikauden sulkemismalleja. Eri mallien avulla voi seurata sulkemisprosesseja erilaisissa kausityypeissä, kuten kuukauden loppu tai vuoden loppu, tai yrityksiä, jotka käyttävät erilaisia sulkemisprosesseja. Kun yksi malli on luotu, voit kopioida sen uuteen malliin ja tehdä tarvittavat muutokset. Kuhunkin sulkemisaikatauluun voi liittää vain yhden mallin.
 
-### <a name="closing-schedules"></a>Sulkemisaikataulut
+### Sulkemisaikataulut
+<a id="closing-schedules" class="xliff"></a>
 
 Sulkemisaikataulua käytetään liitettäessä tilikauden sulkemismalli määritettyyn suljettavaan tilikauteen. Tämän jälkeen mallin tehtävät luodaan automaattisesti määritetylle kaudelle ja työtilaan lisätään uusi sulkemisaikataulu. Kun uusi sulkemisaikataulu luodaan, sulkemistehtävien toteutuneet eräpäivät määritetään **Kauden päättymispäivä** -kentän avulla tilikauden sulkemismalliin liitetyn suhteellisen eräpäivän perusteella. 
 

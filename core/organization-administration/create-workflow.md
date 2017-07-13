@@ -3,13 +3,13 @@ title: "Luo työnkulku"
 description: "Tässä ohjeaiheessa kerrotaan, miten voit luoda työnkulun."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Core
+ms.search.scope: Core, UnifiedOperations
 ms.custom: 195583
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
@@ -17,45 +17,51 @@ ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bf8f87fffa655b0e8566147af31c8fff02e045ad
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 138cf8d60f5a6e1ec1e46837a516e981c8ff4c19
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="create-a-workflow"></a>Luo työnkulku
+# Luo työnkulku
+<a id="create-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä ohjeaiheessa kerrotaan, miten voit luoda työnkulun.
 
-<a name="open-the-workflow-editor"></a>Avaa työnkulkueditori
+Avaa työnkulkueditori
+<a id="open-the-workflow-editor" class="xliff"></a>
 ------------------------
 
-Microsoft Dynamics 365 for Operations -moduuli, jolla työskentelet, määrittää työnkulun tyypit, joita voit luoda. Valitse näiden ohjeiden avulla työnkulkutyyppi työnkulkueditorin luomiseksi ja avaamiseksi.
+Käyttämäsi Microsoft Dynamics 365 for Finance and Operationsin moduuli määrittää, mitä työnkulun tyyppejä voi luoda. Valitse näiden ohjeiden avulla työnkulkutyyppi työnkulkueditorin luomiseksi ja avaamiseksi.
 
 1.  Avaa moduuli, jolle haluat luoda uuden työnkulun. Esimerkiksi luoda työnkulun ostoehdotukselle valitsemalla **hankinta**.
 2.  Valitse **Asetukset** &gt; **\[moduulin nimi\] työnkulut**.
-3.  Luettelosivun, joka näkyy toimintoruudussa valitse**uusi**.
+3.  Luettelosivun, joka näkyy toimintoruudussa valitse **uusi**.
 4.  Valitse **luoda työnkulun** -sivu, ja valitse sitten työnkulun tyyppi ja valitse **luoda työnkulun**. Työnkulkueditori tulee näyttöön Seuraavan menetelmän avulla voit rakentaa työnkulun.
 
-## <a name="drag-workflow-elements-onto-the-canvas"></a>Vedä työnkulun elementit alustalle.
+## Vedä työnkulun elementit alustalle.
+<a id="drag-workflow-elements-onto-the-canvas" class="xliff"></a>
 **Työnkulun elementit** -alue sisältää osia, jotka voidaan lisätä työnkulkuun. Lisää työnkulun elementit, vedä ne alustalle.
 
-## <a name="connect-the-elements"></a>Yhdistä elementit
+## Yhdistä elementit
+<a id="connect-the-elements" class="xliff"></a>
 Voit yhdistää yhden työnkulkuelementin toiseen pitämällä osoitinta elementin päällä, kunnes yhteyspisteet avautuvat näkyville. Napsauta yhteyspistettä ja vedä se toiseen elementtiin. Varmista, että liität kaikki osat.
 
-## <a name="configure-the-properties-of-the-workflow"></a>Työnkulun ominaisuuksien konfiguroiminen
+## Työnkulun ominaisuuksien konfiguroiminen
+<a id="configure-the-properties-of-the-workflow" class="xliff"></a>
 Seuraavien ohjeiden avulla voit määrittää työnkulkuprosessin ominaisuudet.
 
 1.  Valitse alusta varmistaaksesi, että työnkulun elementtiä ei ole valittuna.
-2.  Napsauta **Ominaisuudet**avataksesi**Ominaisuudet**-lomakkeen työnkululle.
+2.  Napsauta **Ominaisuudet** avataksesi **Ominaisuudet**-lomakkeen työnkululle.
 3.  Noudata ohjeiden ohjeaiheessa [Työnkulun ominaisuuksien konfiguroiminen](configure-workflow-properties.md).
 
-## <a name="configure-the-elements-of-the-workflow"></a>Työnkulun elementtien konfiguroiminen
+## Työnkulun elementtien konfiguroiminen
+<a id="configure-the-elements-of-the-workflow" class="xliff"></a>
 Määritä jokainen elementti, jonka vedit alustaan. Lisätietoja kunkin työnkulkuelementin muokkaamisesta on seuraavissa ohjeaiheissa.
 
 -   [Manuaalisen tehtävän konfiguroiminen](configure-manual-task-workflow.md)
@@ -68,10 +74,12 @@ Määritä jokainen elementti, jonka vedit alustaan. Lisätietoja kunkin työnku
 -   [Määritä rinnakkaishaara](configure-parallel-branch-workflow.md)
 -   [Määritä rivinimikkeen työnkulku](configure-line-item-workflow.md)
 
-## <a name="resolve-any-errors-or-warnings"></a>Korjaa mahdolliset virheet ja varoitukset
+## Korjaa mahdolliset virheet ja varoitukset
+<a id="resolve-any-errors-or-warnings" class="xliff"></a>
 Työnkulkueditorin alaosassa oleva **Virheet ja varoitukset** -ruutu näyttää työnkululle luodut sanomat. Jos haluat paikallistaa elementin, jossa on tapahtunut virhe tai varoitus, kaksoisnapsauta virhe- tai varoitussanomaa. Kaikki virheet ja varoitukset on ratkaistava, ennen kuin työnkulun voi aktivoida.
 
-## <a name="save-and-activate-the-workflow"></a>Työnkulun tallennus ja aktivoiminen
+## Työnkulun tallennus ja aktivoiminen
+<a id="save-and-activate-the-workflow" class="xliff"></a>
 Kun olet valmis tallentamaan ja aktivoimaan työnkulun, noudata seuraavia ohjeita.
 
 1.  Valitse **Tallenna ja sulje** sulkeaksesi työnkulkueditori ja avaa **Tallenna työnkulku** -sivu.

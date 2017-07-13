@@ -3,13 +3,14 @@ title: "Toimittajayhteistyön laskutustyötila"
 description: "Tässä aiheessa kerrotaan, miten toimittajien laskuja voidaan tarkastella ja lähettää laskuja toimittajayhteistyön laskutustyötilasta."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ms.search.region: Global
@@ -17,37 +18,40 @@ ms.author: abruer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7c8fe2fea08dbad625cd373ca316135ac4e29e13
+ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
+ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/14/2017
 
 
 ---
 
-# <a name="vendor-collaboration-invoicing-workspace"></a>Toimittajayhteistyön laskutustyötila
+# Toimittajayhteistyön laskutustyötila
+<a id="vendor-collaboration-invoicing-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä aiheessa kerrotaan, miten toimittajien laskuja voidaan tarkastella ja lähettää laskuja toimittajayhteistyön laskutustyötilasta.
 
-**Toimittajayhteistyön laskutus**-työtilan avulla voit tarkastella toimittajan laskun tietoja ja lähettää laskuja Microsoft Dynamics 365 for Operations -järjestelmään ominaisuuksia työnkulkutoimintojen avulla.
+**Toimittajayhteistyön laskutus**-työtilan avulla voit tarkastella toimittajan laskun tietoja ja lähettää laskuja Microsoft Dynamics 365 for Finance and Operations Enterprise edition -järjestelmään ominaisuuksia työnkulkutoimintojen avulla.
 Toimittajayhteistyön laskutustyötila
 ----------------------------------------
 
-### <a name="summary-tiles"></a>Yhteenvetoruudut
+### Yhteenvetoruudut
+<a id="summary-tiles" class="xliff"></a>
 
 **Yhteenveto**-ruuduissa näkyy yhteenveto valitun toimittajan laskuista. Voit tarkastella laskuja tilan mukaan.
 -   Luonnoslaskuja ei ole lähetetty työnkulkuun.
--   Lähetetty, ei hyväksytty -tilassa olevat laskut ovat laskuja, jotka on lähetetty toimittajalle, mutta niitä ei ole kirjattu Dynamics 365 for Operations -järjestelmään.
--   Hyväksytty, ei maksettu -tilassa olevat laskut ovat laskuja, jotka on kirjattu Dynamics 365 for Operations -järjestelmään mutta niitä ei ole maksettu kokonaan.
--   Maksetut laskut on maksettu kokonaan Dynamics 365 for Operations -järjestelmässä.
+-   Lähetetty, ei hyväksytty -tilassa olevat laskut ovat laskuja, jotka on lähetetty toimittajalle, mutta niitä ei ole kirjattu Dynamics 365 for Finance and Operations -järjestelmään.
+-   Hyväksytty, ei maksettu -tilassa olevat laskut ovat laskuja, jotka on kirjattu Finance and Operations -järjestelmään mutta niitä ei ole maksettu kokonaan.
+-   Maksetut laskut on maksettu kokonaan Finance and Operations -järjestelmässä.
 
 Ruutua napsauttamalla avautuu suodatettu näkymä **laskujen luettelo** sivulle.
-### <a name="tabular-lists"></a>Taulukkoluettelot
+### Taulukkoluettelot
+<a id="tabular-lists" class="xliff"></a>
 
-- **Taulukkoluettelot**kohdassa laskutuksen tila on eritelty samalla tavalla kuin yhteenvetoruuduissa: Luonnos- ja Lähetetty, ei hyväksytty -luetteloissa. Luonnos-tilassa lasku voidaan lähettää työnkulkuun tai poistaa. Viimeisessä taulukkoluettelossa voit etsiä laskut. Suodattamalla saat nopeampia hakuja.
+**Taulukkoluettelot** kohdassa laskutuksen tila on eritelty samalla tavalla kuin yhteenvetoruuduissa: Luonnos- ja Lähetetty, ei hyväksytty -luetteloissa. Luonnos-tilassa lasku voidaan lähettää työnkulkuun tai poistaa. Viimeisessä taulukkoluettelossa voit etsiä laskut. Suodattamalla saat nopeampia hakuja.
 Kaikki toimittajan laskut -luettelosivu
 -----------------------------
 
@@ -59,7 +63,7 @@ Voit luoda uuden toimittajalaskun valitsemalla **uusi** toimenpiteen **Toimittaj
 
 
 
-Lisätietoja on ohjeaiheessa [Yhteistyö toimittajien kanssa Toimittajaportaalissa](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+Lisätietoja on ohjeaiheessa [Yhteistyö toimittajien kanssa Toimittajaportaalissa](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
 
 
 

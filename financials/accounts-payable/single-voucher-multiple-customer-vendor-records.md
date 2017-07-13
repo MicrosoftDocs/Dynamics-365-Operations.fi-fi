@@ -1,15 +1,15 @@
 ---
 title: Yksi tosite useille asiakkaan tai toimittajan tietueille
-description: "Tämä aihe sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille. Tämä toiminto poistetaan Microsoft Dynamics 365 for Operations tulevissa versioissa, minkä vuoksi emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn."
+description: "Tämä aihe sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille. Tämä toiminto poistetaan Microsoft Dynamics 365 for Finance and Operations Enterprise editionin tulevissa versioissa, minkä vuoksi emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
@@ -17,20 +17,21 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b1038ea950141f0e7d4678cac9edd3b0bd5beb6f
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 31040ff14b99a9b351268feb88698ac706befb55
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Yksi tosite useille asiakkaan tai toimittajan tietueille
+# Yksi tosite useille asiakkaan tai toimittajan tietueille
+<a id="single-voucher-with-multiple-customer-or-vendor-records" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tämä aihe sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille. Tämä toiminto poistetaan Microsoft Dynamics 365 for Operations tulevissa versioissa, minkä vuoksi emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn. 
+Tämä aihe sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille. Tämä toiminto poistetaan Microsoft Dynamics 365 for Finance and Operations Enterprise editionin tulevissa versioissa, minkä vuoksi emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn. 
 
 Tavallisimpia esimerekkejä yhden tositteen käytöstä useita asiakkaita tai toimittajia varten ovat asiakkaiden välisten saldojen siirto ja balansin nettoutus asiakkaiden ja toimittajien välillä samassa organisaatiossa. 
 
@@ -45,10 +46,12 @@ Tässä aiheessa kerrotaan, miten tilitystä käsitellään kirjattaessa yksi to
 -   Käteisalennuksen laskeminen
 -   Uudelleenarvostuksen laskeminen
 
-## <a name="how-does-settlement-impact-single-voucher-usage"></a>Miten tilitys vaikuttaa yhden tositteen käyttöön
+## Miten tilitys vaikuttaa yhden tositteen käyttöön
+<a id="how-does-settlement-impact-single-voucher-usage" class="xliff"></a>
 Kun kirjaat tositteen, jossa on useita asiakas- tai toimittajatietueita, kun yksi kirjanpidon tosite luodaan, joka sisältää useita ostoreskontran tai myyntireskontran saldoja. Tilitysprosessin aikana alkuperäisiä kirjanpidon kirjauksia käytetään käteisalennuksen, toteutumattomien voittojen ja tappioiden, toteutuneiden voittojen ja tappioidensekä alkuperäisen tiedoston yhteenvetotilin kirjanpitomerkintöjen luomista varten. Esimerkiksi jos käteisalennus tehdään tilitettäessä toimittajamaksua laskulle, käteisalennuksen kirjanpidon täytyy kirjata ostoreskontran kirjanpitotilille alkuperäisestä laskusta. Jos alkuperäinen lasku kirjattiin tositteeseen, joka sisältää useita toimittajatietueita, tehdään alkuperäisen kirjanpidon yhteenveto. Koska tässä tapauksessa ei voida siirtyä jokaisen toimittajatapahtuman yksityiskohtaiseen kirjanpidon kirjaukseen yhdessä tositteessa, ei voida määrittää, kuinka käyttäjä tarkoitetti käteisalennuksen laskettavaksi.
 
-### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting"></a>Usean toimittajan yhteinen tosite ja vaikutus käteisalennuksen kirjanpitoon
+### Usean toimittajan yhteinen tosite ja vaikutus käteisalennuksen kirjanpitoon
+<a id="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting" class="xliff"></a>
 
 Seuraavassa esimerkissä useita toimittajalaskuja kirjataan kirjanpidossa yhdelle tositteelle **Kirjauskansio**-sivulla. Nämä laskut jakautuvat useille tilin dimensioille.
 
@@ -112,7 +115,8 @@ Kun INV2 on maksettu, tehdään seuraava merkintä. Huomaa, että käteisalennuk
 | 14000056    | 520200-003-- | Toimittajan käteisalennus |           | 3,00       |
 | 14000056    | 200110-001-  | Toimittajan saldo       | 3,00      |            |
 
-### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting"></a>Usean toimittajan yhteinen tosite ja vaikutus toteutuneeseen voiton/tappion kirjanpitoon
+### Usean toimittajan yhteinen tosite ja vaikutus toteutuneeseen voiton/tappion kirjanpitoon
+<a id="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting" class="xliff"></a>
 
 |             |                  |             |                 |           |            |                  |              |
 |-------------|------------------|-------------|-----------------|-----------|------------|------------------|--------------|
@@ -161,8 +165,9 @@ Kun INV2 on maksettu, tehdään seuraava merkintä. Huomaa, että vaihtokurssita
 | 14000056    | 801300-002- | Vaihtokurssitappio | 0,00                                     | 2,00                                    |
 | 14000056    | 200110-001- | Toimittajan saldo     |                                          | -2,00                                   |
 
-## <a name="one-voucher-for-balance-transfers-and-netting-scenarios"></a>Yksi tosite saldon siirroille ja nettoutusskenaarioille
-Kaksi yleisesti käytettyjä skenaarioita, jotka käyttävät yhtä tositetta, joka sisältää useita asiakas- tai toimittajasaldosiirtoja yhdeltä asiakkaalta/toimittajalta toiselle asiakkaalle/toimittajalle, ja saman organisaation asiakkaan ja toimittajan nettouttaminen. Seuraavissa kahdessa esimerkissä kuvataan suositeltua tapaa syöttämällä nämä skenaariot Dynamics 365 for Operations -järjestelmään vaihtoehtona niiden kirjoittamiselle yhteen tositteeseen. 
+## Yksi tosite saldon siirroille ja nettoutusskenaarioille
+<a id="one-voucher-for-balance-transfers-and-netting-scenarios" class="xliff"></a>
+Kaksi yleisesti käytettyjä skenaarioita, jotka käyttävät yhtä tositetta, joka sisältää useita asiakas- tai toimittajasaldosiirtoja yhdeltä asiakkaalta/toimittajalta toiselle asiakkaalle/toimittajalle, ja saman organisaation asiakkaan ja toimittajan nettouttaminen. Seuraavissa kahdessa esimerkissä kuvataan suositeltua tapaa syöttämällä nämä skenaariot Finance and Operations -järjestelmään vaihtoehtona niiden kirjoittamiselle yhteen tositteeseen. 
 
 *Saldon siirto* on yksi tosite jossa on useita asiakkaita, joka kirjoitetaan saldon siirtoa varten asiakkaalta asiakkaalle (sama toimittajille). Tämä skenaario voi ilmetä, kun vastuu laskun maksamisesta siirtyy toiselle osapuolelle, kuten tytäryhtiön siirtämä vastuu emoyhtiölle. 
 
@@ -176,7 +181,7 @@ Esimerkin vuoksi oletetaan, että seuraava myynti on tehty asiakkaan ACMEsta. Se
 | 401100-002-023-    | Myyntituotto          |           | 100        |
 | 130100-002-        | Asiakkaan saldo | 100       |            |
 
-Seuraavaksi käyttäjä siirtää ACME:sta maksamattoman saldon vakuutusyhtiölle yhdessä myyntireskontran maksukirjauskansion tositteessa. Dynamics 365 for Operations -järjestelmässä vakuutusyhtiö määritetään Vakuutus-asiakkaaksi.
+Seuraavaksi käyttäjä siirtää ACME:sta maksamattoman saldon vakuutusyhtiölle yhdessä myyntireskontran maksukirjauskansion tositteessa. Finance and Operations -järjestelmässä vakuutusyhtiö määritetään Vakuutus-asiakkaaksi.
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
@@ -233,7 +238,8 @@ Käteisalennukseen liittyvän tositteen taloushallinnon dimensioita käytetään
 
 ### 
 
-## <a name="one-voucher-with-a-netting-for-multiple-customers-and-vendors"></a>Yksi tosite ja nettoutus useille asiakkaille ja toimittajielle
+## Yksi tosite ja nettoutus useille asiakkaille ja toimittajielle
+<a id="one-voucher-with-a-netting-for-multiple-customers-and-vendors" class="xliff"></a>
 Nettoutus voi olla hyödyllinen, kun organisaatio ostaa tai myy samalle yritykselle. Sen sijaan, että toimittajan laskuja maksetaan ja odotetaan myyntilaskujen maksua, toimittajan laskut ja myyntilaskut nettoutetaan. Nettoutustapahtuma täsmäytetään avoimia saldoja vastaan. 
 
 Oletetaan esimerkiksi, että toimittaja 1001 ja asiakas US-008 ovat sama yksikkö, joten organisaatiosi haluaa nettouttaa osto- ja myyntisaldot ennen maksua / jäljellä olevan saldon vastaanottoa. Oletetaan, että asiakastietue on velkaa 75,00 EUR ja toimittajatietue on velkaa 100,00 EUR, mikä tarkoittaa sitä, että haluat nettouttaa saldot ja maksaa toimittajalle vain 25,00 EUR. Lisäksi oletetaan että kirjanpitovaluutta on USD. Tässä tapauksessa nettoutustapahtuma kirjataan yhtenä tositteena tilin ostoreskontran maksukirjauskansioon.

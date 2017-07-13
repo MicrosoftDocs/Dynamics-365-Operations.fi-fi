@@ -3,13 +3,13 @@ title: "Hyväksyntävaiheen lisääminen työnkulkuun"
 description: "Tässä ohjeaiheessa kerrotaan, miten hyväksyntävaiheen ominaisuudet määritetään."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192161
 ms.assetid: 8b478e3d-d6b4-403b-aae0-f639a71ca36c
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1924562f866ecdbb6fa6d3d0a9dc7627387f2d6a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 61b3107516c7af8d1c0f4c427bdffa9be0fbc18d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-an-approval-step-in-a-workflow"></a>Hyväksyntävaiheen lisääminen työnkulkuun
+# Hyväksyntävaiheen lisääminen työnkulkuun
+<a id="configure-an-approval-step-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ Tässä ohjeaiheessa kerrotaan, miten hyväksyntävaiheen ominaisuudet määrite
 
 Hyväksyntävaihe konfiguroidaan työnkulkueditorissa napsauttamalla hyväksyntävaihetta hiiren kakkospainikkeella ja valitsemalla **Ominaisuudet**, joka avaa **Ominaisuudet**-sivun. Sitten voit määrittää seuraavien ohjeiden avulla hyväksyntävaiheen ominaisuudet.
 
-## <a name="name-the-step"></a>Vaiheen nimeäminen
+## Vaiheen nimeäminen
+<a id="name-the-step" class="xliff"></a>
 Kirjoita näiden ohjeiden avulla nimi hyväksyntävaiheelle.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
 2.  Kirjoita **Nimi**-kenttään hyväksyntävaiheen yksilöivä nimi.
 
-## <a name="enter-a-subject-line-and-instructions"></a>Aiherivin ja ohjeiden määrittäminen
+## Aiherivin ja ohjeiden määrittäminen
+<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
 Sinun on luotava aiherivi ja ohjeet käyttäjille, jotka on määritetty hyväksyntävaiheeseen. Esimerkiksi jos olet konfiguroimassa ostoehdotusten hyväksyntävaiheen, vaiheelle määritetty käyttäjä näkee aiherivin ja ohjeet **Ostoehdotukset**-sivulla. Aiherivi näytetään sivulla olevalla viestirivillä. Käyttäjä voi sitten avata ohjeet napsauttamalla viestirivin kuvaketta. Seuraavia ohjeita noudattamalla voit määrittää aiherivin ja ohjeet.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
@@ -74,7 +77,8 @@ Sinun on luotava aiherivi ja ohjeet käyttäjille, jotka on määritetty hyväks
     5.  Voit mukauttaa tekstiä lisäämällä paikkamerkkejä vaiheen 6 mukaisesti.
     6.  Valitse **Sulje**.
 
-## <a name="assign-the-approval-step"></a>Hyväksyntävaiheen liittäminen
+## Hyväksyntävaiheen liittäminen
+<a id="assign-the-approval-step" class="xliff"></a>
 Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille hyväksyntävaihe määritetään.
 
 1.  Valitse vasemmasta ruudusta **Määritys**.
@@ -126,10 +130,10 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille hyväksy
     </tr>
     <tr class="even">
     <td>Käyttäjä</td>
-    <td>Tietyt Microsoft Dynamics 365 for Operations -käyttäjät</td>
+    <td>Tietyt Microsoft Dynamics 365 for Finance and Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille vaihe liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät. Valitse käyttäjät, joille vaihe liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -153,17 +157,20 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille hyväksy
         -   Jos molemmat Sue ja Jo hyväksyvät asiakirjan, se lähetetään Annille hyväksyttäväksi.
     -   **Kaikki hyväksyjät** – Kaikkien hyväksyjien on hyväksyttävä asiakirja. Muutoin työnkulku keskeytyy. Esimerkiksi Sam on lähettänyt 15 000 dollarin kuluraportin. Kuluraportti on liitetty Suelle, Joelle ja Billille. Jos Sue ja Joe hyväksyvät asiakirjan, mutta Bill hylkää sen, asiakirja hylätään ja se lähetetään takaisin Samille. Jos Sue, Jo ja Bill hyväksyvät asiakirjan, se lähetetään Annille hyväksyttäväksi.
 
-## <a name="specify-when-the-approval-step-is-required"></a>Määritä, milloin hyväksyntävaihetta tarvitaan
+## Määritä, milloin hyväksyntävaihetta tarvitaan
+<a id="specify-when-the-approval-step-is-required" class="xliff"></a>
 Voit määrittää, milloin hyväksyntävaihetta tarvitaan Hyväksyntävaihe voi olla edellytys aina, tai se voi olla pakollinen vain, jos tietyt ehdot täyttyvät.
 
-### <a name="the-approval-step-is-always-required"></a>Hyväksyntävaihe on aina pakollinen
+### Hyväksyntävaihe on aina pakollinen
+<a id="the-approval-step-is-always-required" class="xliff"></a>
 
 Noudata seuraavia ohjeita, jos haluat hyväksyntävaiheen olevan aina pakollinen.
 
 1.  Valitse vasemmasta ruudusta **Ehto**.
 2.  Valitse **Suorita aina tämä vaihe**.
 
-### <a name="the-approval-step-is-required-in-specific-conditions"></a>Hyväksyntävaihe on pakollinen vain tietyissä tilanteissa
+### Hyväksyntävaihe on pakollinen vain tietyissä tilanteissa
+<a id="the-approval-step-is-required-in-specific-conditions" class="xliff"></a>
 
 Määrittämäsi hyväksyntävaiheet saattavat olla pakollisia vain, kun tietyt ehdot täyttyvät. Jos esimerkiksi määrität hyväksyntävaihetta ostoehdotuksen työnkululle, haluat ehkä, että hyväksyntävaihe suoritetaan vain, jos ostoehdotuksen kokonaissumma on suurempi kuin 10 000 dollaria. Noudata seuraavia ohjeita, jos haluat määrittää tilanteet, joissa hyväksyntävaihe on pakollinen.
 
@@ -177,7 +184,8 @@ Määrittämäsi hyväksyntävaiheet saattavat olla pakollisia vain, kun tietyt 
     3.  Valitse **Testi**. Järjestelmä arvioi, täyttääkö tietue määrittämäsi ehdot.
     4.  Palaa **Ominaisuudet**-sivulle valitsemalla **OK** tai **Peruuta**.
 
-## <a name="specify-what-happens-when-the-document-is-overdue"></a>Erääntyneen asiakirjan toimenpiteiden määrittäminen
+## Erääntyneen asiakirjan toimenpiteiden määrittäminen
+<a id="specify-what-happens-when-the-document-is-overdue" class="xliff"></a>
 Jos käyttäjä reagoi asiakirjaan aikarajan puitteissa, asiakirja on erääntynyt. Erääntyneen asiakirjan voi eskaloida tai määrittää automaattisesti toisen käyttäjän hyväksyttäväksi. Seuraa näitä ohjeita, jos haluat eskaloida erääntyneet asiakirjat.
 
 1.  Valitse vasemmasta ruudusta **Eskalointi**.
@@ -229,10 +237,10 @@ Jos käyttäjä reagoi asiakirjaan aikarajan puitteissa, asiakirja on erääntyn
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tietyt Dynamics 365 for Operations -käyttäjät</td>
+    <td>Tietyt Finance and Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille asiakirja eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät. Valitse käyttäjät, joille asiakirja eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>

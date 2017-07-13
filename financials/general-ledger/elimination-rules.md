@@ -3,7 +3,7 @@ title: "Eliminointisäännöt"
 description: "Tässä artikkelissa on tietoja eliminointisäännöistä ja eliminointien eri vaihtoehdoista."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ab1d8fb5bfc9413652d222e701c44b3b91a4c842
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 76af350f37109260a757ccc0b93908637d0579dc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="elimination-rules"></a>Eliminointisäännöt
+# Eliminointisäännöt
+<a id="elimination-rules" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -122,7 +123,8 @@ Seuraavassa taulukossa on esitetty tapahtumatyypit, jotka on ehkä eliminoitava.
 </tbody>
 </table>
 
-## <a name="example"></a>Esimerkki
+## Esimerkki
+<a id="example" class="xliff"></a>
 Yrityksesi nimeltä yritys A myy pienoisohjelmia toiselle organisaatiosi yritykselle nimeltä yritys B. Seuraava esimerkki kuvaa, kuinka kahden yrityksen väliset tapahtumat on ehkä eliminoitava:
 
 -   Yritys A myy 10,00 euroa maksavan pienoisohjelman yritykselle B hintaan 10,00 euroa.
@@ -132,8 +134,9 @@ Yrityksesi nimeltä yritys A myy pienoisohjelmia toiselle organisaatiosi yrityks
 
 Kaikki nämä tapahtumat luovat konsernin sisäisiä tapahtumia, jotka kirjataan erääntymiskohteen ja -lähteen tileihin. Näissä tapahtumissa voi olla myös summien korotuksia ja alennuksia tilanteissa, joissa konserniyritysten välisen myynnin ja myytyjen tuotteiden kustannusten summat eivät täsmää.
 
-## <a name="set-up-elimination-rules"></a>Määritä eliminointisääntöjä
-Kun määritetään eliminointisääntöjä Dynamics 365 for Operationsille, on suositeltavaa luoda taloushallinnon dimensio erityisesti eliminointitarkoituksia varten. Useimmat asiakkaat nimeävät sen Kaupankäynnin kumppaniksi tai jotain vastaavaa. Jos et halua käyttää taloushallinnon dimensiota, muista varmistaa, että sinulla on päätilit, jotka koskevat vain konserniyritysten välisiä tapahtumia. 
+## Määritä eliminointisääntöjä
+<a id="set-up-elimination-rules" class="xliff"></a>
+Kun Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin eliminointisääntöjä määritetään, eliminointia varten kannattaa luoda oma taloushallinnon dimensio. Useimmat asiakkaat nimeävät sen Kaupankäynnin kumppaniksi tai jotain vastaavaa. Jos et halua käyttää taloushallinnon dimensiota, muista varmistaa, että sinulla on päätilit, jotka koskevat vain konserniyritysten välisiä tapahtumia. 
 
 Konsolidoinnit-moduulin Asetukset-alueelta löytyy eliminoinnin asetukset. Kun kirjoitat säännön kuvauksen, sinun on valittava yritys, johon eliminoinnin kirjauskansio kirjaa. Tämän tulisi olla yritys, jonka asetuksissa on valittu **Käytetään taloushallinnon eliminointiprosessissa**. 
 
@@ -149,7 +152,8 @@ Dimension määrittely toimii samalla tavalla. Jos valitset **Lähde**, se käyt
 
 Valitse lähdedimensiot ja taloushallinnon dimensiot ja eliminoinnin lähteenä käytettävät arvot.
 
-## <a name="process-elimination-transactions"></a>Käsittele eliminointitapahtumia
+## Käsittele eliminointitapahtumia
+<a id="process-elimination-transactions" class="xliff"></a>
 On kaksi tapaa käsitellä eliminoinnin tapahtumia kokoa: konsolidoinnin online-prosessin aikana tai luomalla eliminoinnin kirjauskansio ja suorittamalla eliminoinnin ehdotusprosessi. Tässä osassa keskitytään kirjauskansion luomiseen ja eliminointiprosessin suorittamiseen. 
 
 Valitse eliminointiyritykseksi määritellyssä yrityksessä **Eliminoinnin kirjauskansio** Konsolidoinnit-moduulissa. Kun olet valinnut kirjauskansion nimen, valitse **Rivit**. Valitsemalla voit suorittaa ehdotuksen valitsemalla **Ehdotukset**-valikon ja sitten **Eliminointiehdotus**.

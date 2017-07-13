@@ -10,8 +10,8 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
@@ -20,22 +20,24 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c040a50d9962d7a900fbef285ea1f1baea124033
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="overhead-calculation"></a>Yleiskustannuslaskenta
+# Yleiskustannuslaskenta
+<a id="overhead-calculation" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä aiheessa kuvataan tyypillinen yleiskustannusten laskenta- ja kohdistusprosessi.
 
-<a name="term-definition"></a>Sanaston määritelmä
+Sanaston määritelmä
+<a id="term-definition" class="xliff"></a>
 ---------------
 
 Yleiskustannukset ovat yrityksen toiminnasta syntyviä kustannuksia, joita ei voi suoraan liittää mihinkään tiettyyn liiketoiminnan tehtävään, tuotteeseen tai palveluun. Yleiskustannukset ovat tärkeä tuki voittoa tuottavien tehtävien luonnissa. Seuraavassa on joitakin esimerkkejä yleiskustannuksista:
@@ -44,7 +46,8 @@ Yleiskustannukset ovat yrityksen toiminnasta syntyviä kustannuksia, joita ei vo
 -   Sähkö
 -   Hallinnon palkat
 
-## <a name="overhead-calculation-overview"></a>Yleiskustannuslaskennan yleiskuva
+## Yleiskustannuslaskennan yleiskuva
+<a id="overhead-calculation-overview" class="xliff"></a>
 Yleiskustannusten laskenta suorittaa kustannuslaskennan käytännöt oikeassa järjestyksessä. Yleiskustannusten laskennan voi suorittaa useita kertoja samalle tilikaudelle, jos kustannuslaskennan käytännöt ovat muuttuneet tai erityisiä virheitä on havaittu. Kukin laskenta-ajo tallennetaan ja kullekin annetaan yksilöllinen versiotunnus, jonka avulla eri laskenta-ajoja voi verrata toisiinsa. Yleiskustannusten laskenta luo kustannustapahtumia, joille annetaan kirjauspäivä. Kirjauspäivä vastaa laskennassa käytettyä tilikauden päättymispäivämäärää. Yksilöivä versiotunnus sisältää seuraavat tiedot:
 
 -   Versiotyyppi
@@ -56,7 +59,8 @@ Yleiskustannusten laskenta suorittaa kustannuslaskennan käytännöt oikeassa j�
 Yleiskustannusten laskenta ajetaan versiosta riippumattomana. Voit siis laskea budjetin version ennen todellista versiota. Yleiskustannusten laskenta koostuu neljästä vaiheesta, jotka esitellään seuraavassa kuvassa. Kussakin vaiheessa luodaan kirjauskansion otsikko, jolla on kirjauskansiovientejä. Tämä kirjauskansion otsikko säilyttää kunkin laskentavaiheen syöttötiedot. Käytännöt ja säännöt ajetaan kullekin kirjauskansion riville, ja tuloksena luodaan kustannustapahtumia. Tämän ansiosta kaikki laskutoimitukset ovat täysin jäljitettävissä. 
 [![Yleiskustannuslaskenta](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
-## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Laske ja kohdista sähkön yleiskustannukset
+## Laske ja kohdista sähkön yleiskustannukset
+<a id="calculate-and-allocate-the-electricity-overhead-cost" class="xliff"></a>
 Tietyt kustannukset, kuten sähkö, rekisteröidään kirjanpidossa kokonaissummaksi. Tarkka johdon näkymä ei täten ole saatavilla kustannuslaskennassa. Jotta kustannuslaskenta tarjoaisi oikean johdon näkymän kaikista organisaation yksiköistä ja tasoista, kustannusten on virrattava organisaation yksiköiden läpi. Tämän virran on perustuttava joko tarkkaan tietoon kulutuksesta tai perusteltuun arvioon. Sähkökustannukset voi kirjata kirjanpitoon seuraavassa taulukossa kuvatulla tavalla.
 
 <table>
@@ -80,11 +84,13 @@ Tietyt kustannukset, kuten sähkö, rekisteröidään kirjanpidossa kokonaissumm
 </tbody>
 </table>
 
-### <a name="step-1-process-the-cost-behavior-calculation"></a>Vaihe 1: Käsittele kustannustoiminnan laskenta
+### Vaihe 1: Käsittele kustannustoiminnan laskenta
+<a id="step-1-process-the-cost-behavior-calculation" class="xliff"></a>
 
 Kun kustannustapahtumat tuodaan lähdetiedoista, niille asetetaan kustannuslaskennassa oletusarvoisesti **Luokittelematon** -kustannustoimintaluokka. Voit luokitella kustannustapahtumia uudelleen **kiinteäksi kustannukseksi** tai **muuttuvaksi kustannukseksi** kustannustoiminnan käytäntösäännöillä.
 
-#### <a name="define-the-cost-behavior-rule"></a>Määritä kustannustoiminnan sääntö
+#### Määritä kustannustoiminnan sääntö
+<a id="define-the-cost-behavior-rule" class="xliff"></a>
 
 Joissain tapauksissa osa kustannuksesta on kiinteä ja loppuosa perustuu kulutukseen. Sähkölaskut sopivat usein tähän määritelmään. Maksat ensin määrätyn, kiinteän maksun, jonka lisäksi maksat kulutuksesta kilowattitunteina (kWh). Jos kiinteä maksu on esimerkiksi 1 000,00, kustannustoiminnan sääntö määritetään seuraavasti:
 
@@ -92,7 +98,8 @@ Joissain tapauksissa osa kustannuksesta on kiinteä ja loppuosa perustuu kulutuk
     -   0 &lt;= 1 000,00 = Kiinteä
     -   1000,01 &lt; N = Muuttuva
 
-##### <a name="journal"></a>Kirjauskansio
+##### Kirjauskansio
+<a id="journal" class="xliff"></a>
 
 <table>
 <thead>
@@ -115,7 +122,8 @@ Joissain tapauksissa osa kustannuksesta on kiinteä ja loppuosa perustuu kulutuk
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Kirjauskansioviennit (Kustannusobjektin saldon kirjauskansioviennit)
+##### Kirjauskansioviennit (Kustannusobjektin saldon kirjauskansioviennit)
+<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -140,7 +148,8 @@ Joissain tapauksissa osa kustannuksesta on kiinteä ja loppuosa perustuu kulutuk
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Kustannusmerkinnät
+##### Kustannusmerkinnät
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -194,11 +203,13 @@ Joissain tapauksissa osa kustannuksesta on kiinteä ja loppuosa perustuu kulutuk
 
 Lisätietoja kustannustoiminnasta on kohdassa Kustannustoimintakäytännöt. (Huomaa, että ohjeaihe ei ole vielä valmis; se on saatavilla pian.)
 
-### <a name="step-2-process-the-cost-distribution-calculation"></a>Vaihe 2: Käsittele kustannusten jaon laskenta
+### Vaihe 2: Käsittele kustannusten jaon laskenta
+<a id="step-2-process-the-cost-distribution-calculation" class="xliff"></a>
 
 Kustannusten jakoa käytetään kustannusten jakamiseen yhdestä kustannusobjektista toiseen (tai useampaan kustannusobjektiin) määrittämällä asiaankuuluvan kohdistusperusteen. Kustannusten jako ja kustannusten kohdistus eroavat toisistaan sillä, että kustannusten jako tapahtuu aina alkuperäisen kustannuksen ensisijaisen kustannuselementin tasolla.
 
-#### <a name="define-the-cost-distribution-rule"></a>Määritä kustannusten jaon sääntö
+#### Määritä kustannusten jaon sääntö
+<a id="define-the-cost-distribution-rule" class="xliff"></a>
 
 Tietyt kustannukset, kuten sähkö, rekisteröidään kirjanpidossa kokonaissummaksi. Kustannuslaskenta ei tarjoa tästä tarpeeksi tarkkoja tietoja. Muuttuva kustannus tulisi jakaa yksittäisille kustannusobjekteille reiluin perustein. Loogisin kohdistusperuste on sähkönkulutus (kWh). Luodaan tilastollinen dimensionjäsen nimeltä Sähkö, johon kirjataan sähkönkulutus. Oletusarvon mukaan kaikki tilastolliset dimensiojäsenet ovat käytettävissä kohdistusperusteina.
 
@@ -304,7 +315,8 @@ Kiinteä kustannus tulisi jakaa tasaisesti yksittäisille kustannusobjekteille, 
 </tbody>
 </table>
 
-##### <a name="journal"></a>Kirjauskansio
+##### Kirjauskansio
+<a id="journal" class="xliff"></a>
 
 <table>
 <thead>
@@ -327,7 +339,8 @@ Kiinteä kustannus tulisi jakaa tasaisesti yksittäisille kustannusobjekteille, 
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Kirjauskansioviennit (Kustannusobjektin saldon kirjauskansioviennit)
+##### Kirjauskansioviennit (Kustannusobjektin saldon kirjauskansioviennit)
+<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -361,7 +374,8 @@ Kiinteä kustannus tulisi jakaa tasaisesti yksittäisille kustannusobjekteille, 
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Kustannusmerkinnät
+##### Kustannusmerkinnät
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -433,11 +447,13 @@ Kiinteä kustannus tulisi jakaa tasaisesti yksittäisille kustannusobjekteille, 
 
 Lisätietoja kustannusten jaosta ja kohdistusperusteita löydät kohdasta Kustannusten jakokäytännöt ja kohdistusperusteet. (Huomaa, että ohjeaihe ei ole vielä valmis; se on saatavilla pian.)
 
-### <a name="step-3-process-the-overhead-rate-calculation"></a>Vaihe 3: Käsittele yleiskustannustason laskenta
+### Vaihe 3: Käsittele yleiskustannustason laskenta
+<a id="step-3-process-the-overhead-rate-calculation" class="xliff"></a>
 
 Yleiskustannustasolla veloitetaan yksi tai useampi määrätty kustannusobjekti. Veloitus perustuu ennalta määrättyyn kustannustasoon sekä määritetyn kohdistusperusteen suuruuteen. 
 
-#### <a name="define-the-overhead-rate"></a>Määritä yleiskustannustaso.
+#### Määritä yleiskustannustaso.
+<a id="define-the-overhead-rate" class="xliff"></a>
 
 Kustannusobjekti CC001 HR vaikuttaa joukkoon sisäisiä projekteja. Kulutetun suuruuden mittaamiseen luodaan tilastollinen dimensiojäsen nimeltä Henkilöstöhallinnon projektit.
 
@@ -518,7 +534,8 @@ Seuraavassa taulukossa on esitetty tulos, kun Henkilöstöhallinnon projekteja k
 </tbody>
 </table>
 
-##### <a name="journal"></a>Kirjauskansio
+##### Kirjauskansio
+<a id="journal" class="xliff"></a>
 
 <table>
 <thead>
@@ -541,7 +558,8 @@ Seuraavassa taulukossa on esitetty tulos, kun Henkilöstöhallinnon projekteja k
 </tbody>
 </table>
 
-##### <a name="journal-entries-journal-entries-for-overhead-rate-calculation"></a>Kirjauskansioviennit (Yleiskustannustason laskennan kirjauskansioviennit)
+##### Kirjauskansioviennit (Yleiskustannustason laskennan kirjauskansioviennit)
+<a id="journal-entries-journal-entries-for-overhead-rate-calculation" class="xliff"></a>
 
 <table>
 <thead>
@@ -567,7 +585,8 @@ Seuraavassa taulukossa on esitetty tulos, kun Henkilöstöhallinnon projekteja k
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Kustannusmerkinnät
+##### Kustannusmerkinnät
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -604,7 +623,7 @@ Seuraavassa taulukossa on esitetty tulos, kun Henkilöstöhallinnon projekteja k
 <td>10 001</td>
 <td>Sähkö</td>
 <td>Muuttuva kulu</td>
-<td>–10,00</td>
+<td>-10,00</td>
 <td>31.1.2017</td>
 </tr>
 <tr>
@@ -621,11 +640,13 @@ Seuraavassa taulukossa on esitetty tulos, kun Henkilöstöhallinnon projekteja k
 
 Lisätietoja yleiskustannustason käytännöistä löydät kohdista Yleiskustannusten käytännöt ja Kohdistusperusteet. (Huomaa, että ohjeaihe ei ole vielä valmis; se on saatavilla pian.)
 
-### <a name="step-4-process-the-cost-allocation-calculation"></a>Vaihe 4: Käsittele kustannusten kohdistuksen laskenta
+### Vaihe 4: Käsittele kustannusten kohdistuksen laskenta
+<a id="step-4-process-the-cost-allocation-calculation" class="xliff"></a>
 
-Kohdistuksella kustannusobjektin saldo liitetään toisiin kustannusobjekteihin käyttämällä kohdistusperustetta. Microsoft Dynamics 365 for Operations tukee vastavuoroista kohdistusmenetelmää. Vastavuoroisessa kohdistusmenetelmässä tunnistetaan oheiskustannusobjektien käyttämät, keskinäiset palvelut täysin. Järjestelmä määrittää oikean kohdistusjärjestyksen automaattisesti. Kustannusobjektin saldo kohdistetaan yhdellä kohdistusperusteella. Kustannusobjektien dimensiot ja niiden vastaavat jäsenet ylittävät kohdistukset ovat tuettuja. Kustannusseurantayksikkö hallitsee kohdistusjärjestystä. [![Vastavuoroinen menetelmä](./media/reciprocal-method.png)]
+Kohdistuksella kustannusobjektin saldo liitetään toisiin kustannusobjekteihin käyttämällä kohdistusperustetta. Finance and Operations tukee vastavuoroista kohdistusmenetelmää. Vastavuoroisessa kohdistusmenetelmässä tunnistetaan oheiskustannusobjektien käyttämät, keskinäiset palvelut täysin. Järjestelmä määrittää oikean kohdistusjärjestyksen automaattisesti. Kustannusobjektin saldo kohdistetaan yhdellä kohdistusperusteella. Kustannusobjektien dimensiot ja niiden vastaavat jäsenet ylittävät kohdistukset ovat tuettuja. Kustannusseurantayksikkö hallitsee kohdistusjärjestystä. [![Vastavuoroinen menetelmä](./media/reciprocal-method.png)]
 
-#### <a name="define-the-cost-allocation"></a>Määritä kustannuksen kohdistus
+#### Määritä kustannuksen kohdistus
+<a id="define-the-cost-allocation" class="xliff"></a>
 
 Tämä on yksinkertainen esimerkki, jossa kerrotaan, miten voit jäljittää kustannuksen virran. Kustannusobjekti CC001 HR liittyy useaan kustannusobjektiin. Kulutetun suuruuden mittaamiseen luodaan tilastollinen dimensiojäsen nimeltä Henkilöstöhallinnon palvelut.
 
@@ -719,12 +740,12 @@ Kustannusobjekti CC004 Pakkaus liittyy useaan kustannusobjektiin. Kulutetun suur
 <tr>
 <td>Tuote 2</td>
 <td>Tuote 2</td>
-<td>15</td>
+<td>päivänä</td>
 </tr>
 </tbody>
 </table>
 
-**Huomautus:** Dynamics 365 for Operations -järjestelmässä tilastomittaukset, kuten tuotteen kuluttamat tuotantotunnit, voidaan johtaa lähdetiedoista. Lisätietoja tilastomittausten lähteistä on kohdassa Tilastomittauksen lähdemallit. (Huomaa, että ohjeaihe ei ole vielä valmis; se on saatavilla pian.) Seuraavassa taulukossa näytetään tulos, kun HR-palveluita käytetään kohdistusperusteena kokonaiskustannukselle (kiinteä ja muuttuva kustannus).
+**Huomautus:** Finance and Operationsissa tilastomittaukset, kuten tuotteen kuluttamat tuotantotunnit, voidaan johtaa lähdetiedoista. Lisätietoja tilastomittausten lähteistä on kohdassa Tilastomittauksen lähdemallit. (Huomaa, että ohjeaihe ei ole vielä valmis; se on saatavilla pian.) Seuraavassa taulukossa näytetään tulos, kun HR-palveluita käytetään kohdistusperusteena kokonaiskustannukselle (kiinteä ja muuttuva kustannus).
 
 <table>
 <thead>
@@ -932,7 +953,8 @@ Seuraavassa taulukossa näytetään tulos, kun Pakkauspalveluita käytetään ko
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Kirjauskansioviennit (kustannusobjektin saldon kirjauskansioviennit)
+##### Kirjauskansioviennit (kustannusobjektin saldon kirjauskansioviennit)
+<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -955,7 +977,8 @@ Seuraavassa taulukossa näytetään tulos, kun Pakkauspalveluita käytetään ko
 </tbody>
 </table>
 
-##### <a name="journal-lines"></a>Kirjauskansion rivit
+##### Kirjauskansion rivit
+<a id="journal-lines" class="xliff"></a>
 
 <table>
 <thead>
@@ -1079,7 +1102,8 @@ Seuraavassa taulukossa näytetään tulos, kun Pakkauspalveluita käytetään ko
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Kustannusmerkinnät
+##### Kustannusmerkinnät
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -1329,7 +1353,8 @@ Seuraavassa taulukossa näytetään tulos, kun Pakkauspalveluita käytetään ko
 </tbody>
 </table>
 
-## <a name="conclusion"></a>Johtopäätökset
+## Johtopäätökset
+<a id="conclusion" class="xliff"></a>
 Kirjanpidossa kirjataan tyhjään kustannuspaikkatunnukseen sähkökustannus arvolla 10 000,00. Tämän ansiosta kustannuslaskijat tietävät, että kustannus on kohdistettava. Kustannukset virtaavat kirjanpidossa organisaation yksiköiden ja tasojen läpi käytössä olevien käytäntöjen ja sääntöjen mukaisesti. Kukin kustannus on liitetty kustannusperusteeseen, joka sisältää parhaan arvion kustannusten kohdistuksesta.
 
 <table>

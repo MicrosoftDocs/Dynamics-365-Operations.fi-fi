@@ -1,15 +1,15 @@
 ---
-title: Numerosarjan esittely
-description: "Microsoft Dynamics 365 for Operationsin numerosarjoja käytetään luettavien, yksilöllisten tunnisteiden luomiseen päätietojen tietueille ja tapahtumatietueille, jotka edellyttävät tunnisteita. Tunnisteen vaativaa päätiedon tietuetta tai tapahtumatietuetta kutsutaan nimellä <em>viite</em>."
+title: Numerosarjan yleiskatsaus
+description: "Microsoft Dynamics 365 for Finance and Operationsin numerosarjoja käytetään luettavien, yksilöllisten tunnisteiden luomiseen päätietojen tietueille ja tapahtumatietueille, jotka edellyttävät tunnisteita. Tunnisteen vaativaa päätiedon tietuetta tai tapahtumatietuetta kutsutaan nimellä <em>viite</em>."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15461
 ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ms.search.region: Global
@@ -17,29 +17,31 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a2dcbbbd0b67c171d5a26bbf2053d159f7367cc5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: d260f460bf0da072eb46909d8c28d18041ecaa78
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="number-sequence-overview"></a>Numerosarjan esittely
+# Numerosarjan yleiskatsaus
+<a id="number-sequence-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operationsin numerosarjoja käytetään luettavien, yksilöllisten tunnisteiden luomiseen päätietojen tietueille ja tapahtumatietueille, jotka edellyttävät tunnisteita. Tunnisteen vaativaa päätiedon tietuetta tai tapahtumatietuetta kutsutaan nimellä <em>viite</em>.
+Microsoft Dynamics 365 for Finance and Operationsin numerosarjoja käytetään luettavien, yksilöllisten tunnisteiden luomiseen päätietojen tietueille ja tapahtumatietueille, jotka edellyttävät tunnisteita. Tunnisteen vaativaa päätiedon tietuetta tai tapahtumatietuetta kutsutaan nimellä <em>viite</em>.
 
-Ennen kuin voit luoda Microsoft Dynamics 365 for Operationsin viitteelle uusia tietueita, määritä numerosarja ja liitä se viitteeseen. Suosittelemme, että määrität numerosarjat **Organisaation hallinto** -sivujen avulla. Jos moduulikohtaiset asetukset ovat pakollisia, voit käyttää moduulin parametrisivua määrittämään moduulin numerosarjan viitteitä. Voit määrittää esimerkiksi kohdissa **Myyntireskontra** ja **Ostoreskontra** numerosarjaryhmiä, joilla kohdistetaan tietyt numerosarjat tietyille asiakkaille tai toimittajille. Kun määrität numerosarjan, sinun on määritettävä alue, joka määrittää, mitkä organisaatio käyttää numerosarjaa. Vaikutusalue voi olla **Jaettu**, **Yritys**, **Oikeushenkilö** tai **Toimintayksikkö**. Vieläkin tarkempia numerosarjoja saadaan yhdistämällä vaikutusalueet **Oikeushenkilö** ja **Yritys** sekä **Kirjanpidon vuosikalenterin kausi**. Numerosarjan muodot koostuvat segmenteistä. Numerosarjat, joiden vaikutusalue on muu kuin **Jaettu**, voivat sisältää osia, jotka vastaavat vaikutusaluetta. Esimerkiksi numerosarja, jonka vaikutusalue on **Oikeushenkilö**, voi sisältää yrityssegmentin. Liittämällä vaikutusaluesegmentin numerosarjan muodossa voit tunnistaa tietyn tietueen vaikutusalueen katsomalla sen numero. Segmenttien, jotka vastaavat vaikutusalueita, numerosarjamuodot voivat sisältää **Vakio** ja **Aakkosnumeerinen**-segmentit. **Vakio** -segmentti sisältää numeroita, kirjaimia tai symboleja, jotka eivät muutu. **Aakkosnumeerinen**-segmentti sisältää joukon kirjaimia tai numeroita, jotka lisääntyvät aina, kun numeroa käytetään. Käyttää ristikkomerkkiä (\#) edustamaan kasvavia numeroita ja et-merkkiä (&) edustamaan kasvavia kirjaimia. Esimerkiksi muodon \#\#\#\#\#\_2017 avulla luodaan sarja 00001\_2017, 00002\_2017 jne.
+Ennen kuin voit luoda Microsoft Dynamics 365 for Finance and Operationsin viitteelle uusia tietueita, määritä numerosarja ja liitä se viitteeseen. Suosittelemme, että määrität numerosarjat **Organisaation hallinto** -sivujen avulla. Jos moduulikohtaiset asetukset ovat pakollisia, voit käyttää moduulin parametrisivua määrittämään moduulin numerosarjan viitteitä. Voit määrittää esimerkiksi kohdissa **Myyntireskontra** ja **Ostoreskontra** numerosarjaryhmiä, joilla kohdistetaan tietyt numerosarjat tietyille asiakkaille tai toimittajille. Kun määrität numerosarjan, sinun on määritettävä alue, joka määrittää, mitkä organisaatio käyttää numerosarjaa. Vaikutusalue voi olla **Jaettu**, **Yritys**, **Oikeushenkilö** tai **Toimintayksikkö**. Vieläkin tarkempia numerosarjoja saadaan yhdistämällä vaikutusalueet **Oikeushenkilö** ja **Yritys** sekä **Kirjanpidon vuosikalenterin kausi**. Numerosarjan muodot koostuvat segmenteistä. Numerosarjat, joiden vaikutusalue on muu kuin **Jaettu**, voivat sisältää osia, jotka vastaavat vaikutusaluetta. Esimerkiksi numerosarja, jonka vaikutusalue on **Oikeushenkilö**, voi sisältää yrityssegmentin. Liittämällä vaikutusaluesegmentin numerosarjan muodossa voit tunnistaa tietyn tietueen vaikutusalueen katsomalla sen numero. Segmenttien, jotka vastaavat vaikutusalueita, numerosarjamuodot voivat sisältää **Vakio** ja **Aakkosnumeerinen**-segmentit. **Vakio** -segmentti sisältää numeroita, kirjaimia tai symboleja, jotka eivät muutu. **Aakkosnumeerinen**-segmentti sisältää joukon kirjaimia tai numeroita, jotka lisääntyvät aina, kun numeroa käytetään. Käyttää ristikkomerkkiä (\#) edustamaan kasvavia numeroita ja et-merkkiä (&) edustamaan kasvavia kirjaimia. Esimerkiksi muodon \#\#\#\#\#\_2017 avulla luodaan sarja 00001\_2017, 00002\_2017 jne.
 Numerosarjaesimerkit
 ------------------------
 
 Seuraavissa esimerkeissä näytetään, kuinka segmenttejä käytetään numerosarjamuotojen luomiseen. Erityisesti esimerkit osoittavat alueen segmenttien vaikutuksen.
-### <a name="expense-report-numbers"></a>Kuluraportin numerot
+### Kuluraportin numerot
+<a id="expense-report-numbers" class="xliff"></a>
 
-Seuraavassa esimerkissä kuluraportin numerot määritetään yritykselle, jonka nimi on **CS**. **Alue:**Matkalaskut **Viite:**Kuluraportin numero **Vaikutusalue:**Oikeushenkilö **Oikeushenkilö:**CS
+Seuraavassa esimerkissä kuluraportin numerot määritetään yritykselle, jonka nimi on **CS**. **Alue:** Matkalaskut **Viite:** Kuluraportin numero **Vaikutusalue:** Oikeushenkilö **Oikeushenkilö:** CS
 | Segmentit  | Segmenttityyppi | Arvo     |
 |-----------|--------------|-----------|
 | Segmentti 1 | Oikeushenkilö | CS        |
@@ -48,9 +50,10 @@ Seuraavassa esimerkissä kuluraportin numerot määritetään yritykselle, jonka
 
 **Esimerkki numeromuotoilusta**: CS-KULU-0039 Määrität vastaavat numerosarjamuodot muille yrityksille. Jos vaihdat vain esimerkiksi **RW**-yrityksen yritys-segmentin arvon, muotoiltu numero on RW-KULU-0039. Voit myös vaihtaa koko numerosarjamuodon muihin yrityksiin. Nyt voit esimerkiksi ohittaa yrityksen vaikutusalueen segmentin ja luoda muotoillun numeron, kuten Exp-0001.
 
-### <a name="sales-order-numbers"></a>Myyntitilausnumerot
+### Myyntitilausnumerot
+<a id="sales-order-numbers" class="xliff"></a>
 
-Seuraavassa esimerkissä myyntitilausnumerot määritetään yritystunnukselle **CEU**. **Alue:**Myynti **Viite:**Myyntitilaus **Vaikutusalue:**Yritys **Yritys:**CEU
+Seuraavassa esimerkissä myyntitilausnumerot määritetään yritystunnukselle **CEU**. **Alue:** Myynti **Viite:** Myyntitilaus **Vaikutusalue:** Yritys **Yritys:** CEU
 | Segmentit  | Segmenttityyppi | Arvo    |
 |-----------|--------------|----------|
 | Segmentti 1 | Vakio     | MT-      |
@@ -58,9 +61,10 @@ Seuraavassa esimerkissä myyntitilausnumerot määritetään yritystunnukselle *
 
 **Esimerkki numeromuotoilusta**: SO-0029 Vaikka vaikutusalueen segmenttiä ei ole sisällytetty muotoon, numerointi käynnistyy uudelleen kunkin yrityksen tunnuksen kohdalla. Jos käytät samaa muotoa kaikille yrityksen tunnuksille, samoja numeroita käytetään kussakin yrityksessä. Esimerkiksi myyntitilausta SO-0029 käytetään jokaisessa yrityksessä. Voit myös vaihtaa koko numerosarjamuodon muuhun yritystunnukseen.
 
-### <a name="purchase-requisition-numbers"></a>Ostoehdotuksen numerot
+### Ostoehdotuksen numerot
+<a id="purchase-requisition-numbers" class="xliff"></a>
 
-Seuraavassa esimerkissä ostoehdotusnumerot ovat organisaation laajuisia. **Alue:**Osto **Viite:**Ostoehdotus **Vaikutusalue:**Jaettu
+Seuraavassa esimerkissä ostoehdotusnumerot ovat organisaation laajuisia. **Alue:** Osto **Viite:** Ostoehdotus **Vaikutusalue:** Jaettu
 | Segmentit  | Segmenttityyppi | Arvo    |
 |-----------|--------------|----------|
 | Segmentti 1 | Vakio     | Tarv.      |
@@ -70,11 +74,13 @@ Seuraavassa esimerkissä ostoehdotusnumerot ovat organisaation laajuisia. **Alue
 -----------------------------------------------
 
 Mieti seuraavia tietoja siitä, miten numerosarjat määritys voi vaikuttaa järjestelmän suorituskykyyn, ennen kuin määrität numerosarjoja.
-### <a name="continuous-and-non-continuous-number-sequences"></a>Jatkuvat ja ei-jatkuvat numerosarjat
+### Jatkuvat ja ei-jatkuvat numerosarjat
+<a id="continuous-and-non-continuous-number-sequences" class="xliff"></a>
 
 Numerosarjat voivat olla jatkuvia tai ei-jatkuvia. Jatkuva numerosarja ei ohita yhtäkään numeroa, mutta numeroita ei voi käyttää peräkkäin. Ei-jatkuvien numerosarjojen numerot käytetään sarjassa, mutta numerosarja voi ohittaa numeroita. Jos esimerkiksi käyttäjä peruuttaa tapahtuman, numero luodaan mutta sitä ei käytetä. Jatkuvassa numerosarjassa sitä numeroa kierrätetään myöhemmin. Numerosarjassa, joka ei ole jatkuva numerosarja, numeroa ei käytetä. Ulkoiset asiakirjat, kuten ostotilaukset, myyntitilaukset ja laskut, vaativat tavallisesti jatkuvat numerosarjat. Kuitenkin jatkuvat numerosarjat saattavat heikentää järjestelmän vasteaikaa, koska järjestelmän on pyydettävä numeroa tietokannasta aina, kun uusi asiakirja tai tietue luodaan. Jos käytössä ei ole jatkuvaa numerosarja, **Esijako** voidaan ottaa käyttöön **Numerosarja**-sivun **Suorituskyky**-pikavälilehdessä. Kun määrität ennalta kohdistettavan numeroiden määrän, järjestelmä valitsee numerot ja tallentaa ne muistiin. Uudet numerot pyydetään tietokannasta vasta sitten, kun esijaettu määrä on käytetty. Elleivät säännökset vaadi jatkuvien numerosarjojen käyttöä, suosittelemme, että käytät ei-jatkuvia numerosarjoja paremman suorituskyvyn vuoksi.
 
-### <a name="automatic-cleanup-of-number-sequences"></a>Automaattinen numerosarjojen puhdistus
+### Automaattinen numerosarjojen puhdistus
+<a id="automatic-cleanup-of-number-sequences" class="xliff"></a>
 
 Järjestelmä ei voi kierrättää numeroita automaattisesti jatkuvia numerosarjoja varten sähkökatkoksen, sovellusvirheen tai muun odottamattoman vian takia. Voit suorittaa vapautusprosessi manuaalisesti tai automaattisesti palauttaaksesi menetetyt numerot. Mieti palvelimen käyttö puhdistusprosessin suunnittelussa. On suositeltavaa suorittaa vapautus erätyönä hiljaisena aikana.
 
