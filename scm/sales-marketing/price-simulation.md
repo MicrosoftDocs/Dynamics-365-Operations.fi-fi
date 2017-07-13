@@ -3,7 +3,7 @@ title: Hintasimulointi
 description: "Tässä artikkelissa on tietoja tarjousten hintasimuloinneista. Hintasimulointien avulla voidaan arvioida vähennysten vaikutusta tuleviin myyntihintoihin tarjousprosessin aikana, ennen kuin tietty hinta otetaan käyttöön."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 293f09ca8758c0b1a66614eb9c75ca266b044fe7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c5381ab48e394702c2423de7a5b5cb9166993388
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="price-simulation"></a>Hintasimulointi
+# Hintasimulointi
+<a id="price-simulation" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,26 +50,31 @@ Voit määrittää hälytyksen, kun luot tarjouksen. Hälytyksiä voi käyttää
 -   Pysyt niiden avulla selvillä, missä tilassa tarjoukset ovat organisaatiossa.
 -   Ne voivat aiheuttaa tietyn tarjouksen tarkistuksen tai ilmoittaa, milloin alennusrajat ylitetään.
 
-## <a name="price-simulation-and-discounts"></a>Hintasimulointi ja alennukset
+## Hintasimulointi ja alennukset
+<a id="price-simulation-and-discounts" class="xliff"></a>
 Jotta alennukset ja hinnat varmasti lasketaan oikein, alennuksia sisältävien tarjousten hintasimuloinnit on tehtävä erityisen huolellisesti. Koska kaikkia hintasimulointeja käsitellään aktiivisen tarjousrivin tai koko tarjouksen erityisalennuksina, alennusten eroja on seurattava.
 
-### <a name="types-of-discounts-in-trade-agreements"></a>Kauppasopimusten alennustyypit
+### Kauppasopimusten alennustyypit
+<a id="types-of-discounts-in-trade-agreements" class="xliff"></a>
 
-Microsoft Dynamics 365 for Operations -ohjelman kauppasopimuksissa voi olla neljäntyyppisiä hinnanalennuksia. Nämä alennukset voidaan määrittää eri nimikkeille, asiakkaille tai hintaryhmille ja niitä voidaan rajoittaa päivämäärän mukaan. Laskuvirheiden välttämiseksi kauppasopimukset on otettava huomioon hintasimulointeja suoritettaessa. Kauppasopimusten neljä alennustyyppiä:
+Microsoft Dynamics 365 for Finance and Operationsin kauppasopimuksissa voi olla neljäntyyppisiä hinnanalennuksia. Nämä alennukset voidaan määrittää eri nimikkeille, asiakkaille tai hintaryhmille ja niitä voidaan rajoittaa päivämäärän mukaan. Laskuvirheiden välttämiseksi kauppasopimukset on otettava huomioon hintasimulointeja suoritettaessa. Kauppasopimusten neljä alennustyyppiä:
 
 -   **Myyntihinta** – Nimikkeille voidaan määrittää eri myyntihinta. Kun tarjousrivit luodaan, ohjelma hakee nimikkeelle oikean hinnan ja siirtää sen tarjousriveille. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, ei vaikuta hintasimulointiin. Tarjousrivillä käytettävä myyntihinta vastaa kauppasopimusta.
 -   **Rivialennus** – Nimikkeille määritetään erikoisalennukset tilatun määrän mukaan. Rivialennus vähennetään tavallisesti rivisummista ennen hintasimuloinnin suorittamista. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, vaikuttaa hintasimulointiin.
 -   **Monirivialennus** – Jos yhdistetyt määrät ylittävät määrittämäsi rajan, tilattujen nimikkeiden ennalta määritetyt yhdistelmät aiheuttavat alennuksen koko tilaukseen. Rivialennus vähennetään tavallisesti rivisummista ennen hintasimuloinnin suorittamista. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, vaikuttaa hintasimulointiin.
 -   **Kokonaisalennus** – Jos yhdistetyt summat ylittävät määrittämäsi rajan, ennalta määrityt tilattujen nimikkeet aiheuttavat alennuksen koko tilaukseen. Tarjousrivit muodostavat kokonaisalennuksen. Koska kokonaisalennusta käytetään tarjouksen kokonaissumman alennuksena, se pienentää tarjouksen kokonaissummaa. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, vaikuttaa hintasimulointiin.
 
-### <a name="quotation-lines-and-trade-agreements"></a>Tarjousrivit ja kauppasopimukset
+### Tarjousrivit ja kauppasopimukset
+<a id="quotation-lines-and-trade-agreements" class="xliff"></a>
 
 Kun luot tarjousriviä tai muokkaat sitä, rivialennukset lasketaan automaattisesti. Nimikkeen myyntihinta etsitään kauppasopimuksen perusteella.
 
-## <a name="price-simulation-examples"></a>Esimerkkejä hintasimuloinnista
+## Esimerkkejä hintasimuloinnista
+<a id="price-simulation-examples" class="xliff"></a>
 Seuraavissa esimerkeissä käytetään hintasimulointia tarjouksen otsikoihin ja yhden rivin nimikkeisiin.
 
-### <a name="price-simulation-for-quotation-headers"></a>Tarjouksen otsikoiden hintasimulointi
+### Tarjouksen otsikoiden hintasimulointi
+<a id="price-simulation-for-quotation-headers" class="xliff"></a>
 
 Luot tarjouksen, jossa on seuraavat rivit:
 
@@ -99,7 +105,8 @@ Suoritat hintasimuloinnin ja sovellat 15 prosentin kokonaisalennusta koko tarjou
 | Uusi katetuotto Yhdysvaltain dollareina                       | 270,47 – 184,96                           | 85,51    |
 | Uusi katetuottoprosentti                               | \[(270.47 - 184.96) ÷ 270.47\] × 100      | 31,61 %   |
 
-### <a name="price-simulation-for-single-line-items"></a>Hintasimulointi yhden rivin nimikkeille
+### Hintasimulointi yhden rivin nimikkeille
+<a id="price-simulation-for-single-line-items" class="xliff"></a>
 
 Luot tarjouksen, jossa on seuraavat rivit:
 

@@ -1,16 +1,16 @@
 ---
-title: "Toimittajayhteistyön mobiilityötila Microsoft Dynamics 365 for Operations -sovellusta varten"
-description: "Toimittajasi voivat käyttää toimittajayhteistyön mobiilityötilaa pysyäkseen ajan tasalla heille hyväksyttäväksi lähetetyistä ostotilauksista sekä tarkastellakseen uusien ja päivitettyjen ostotilausten ja yhteyshenkilöiden tietoja."
-author: YuyuScheller
+title: "Toimittajayhteistyön mobiilityötila"
+description: "Tässä ohjeaiheessa on tietoja toimittajayhteistyön mobiilityötilasta. Työtilan avulla toimittajat pysyvät ajan tasalla ostotilauksia, jotka on lähetetty heille hyväksyttäväksi. He voivat myös tarkastella uusia ja päivitettyjä ostotilauksia ja yhteyshenkilöitä koskevia tietoja."
+author: mkirknel
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
@@ -18,130 +18,155 @@ ms.author: mkirknel
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e19fee87dae6e5d425f36dac0db4ea89534a8510
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 20e4c77bc47bffc3474559e3b9933b87e947e178
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="vendor-collaboration-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Toimittajayhteistyön mobiilityötila Microsoft Dynamics 365 for Operations -sovellusta varten
+# Toimittajayhteistyön mobiilityötila
+<a id="vendor-collaboration-mobile-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Tässä ohjeaiheessa on tietoja **toimittajayhteistyön** mobiilityötilasta. Työtilan avulla toimittajat pysyvät ajan tasalla ostotilauksia, jotka on lähetetty heille hyväksyttäväksi. He voivat myös tarkastella uusia ja päivitettyjä ostotilauksia ja yhteyshenkilöitä koskevia tietoja.
 
-Toimittajasi voivat käyttää toimittajayhteistyön mobiilityötilaa pysyäkseen ajan tasalla heille hyväksyttäväksi lähetetyistä ostotilauksista sekä tarkastellakseen uusien ja päivitettyjen ostotilausten ja yhteyshenkilöiden tietoja.
+Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
 
-<a name="prerequisites"></a>Edellytykset
--------------
+## Yleiskuvaus
+<a id="overview" class="xliff"></a> 
+**Toimittajayhteistyön** mobiilityötila pitää toimittajat ajan tasalla uusista ostotilauksista, jotta he voivat nähdä ja vastata ostotilauksiin Microsoft Dynamics 365 for Finance and Operationsin Enterprise edition -www-asiakasohjelmassa. 
+
+>[!NOTE]
+> Huomautus: mobiilityötilaa tulee käyttää täydennyksenä toimittajayhteistyön web-liittymään, ei sen sijasta. 
+
+**Toimittajayhteistyön mobiilityötilassa** toimittajasi voivat tarkastella heille hyväksyttäväksi lähetettyjä uusia ostotilauksia. Se näyttää ostotilauksen tiedot, kuten tuotteet, määrät ja pyydetyt toimituspäivät. Hintatiedot ovat saatavilla myös kunkin toimittajan määrityksistä riippuen. 
+
+Käyttäjä, joka kirjautuu toimittajana, näkee, mihin ostotilauksiin on saatu vastaus ja mitkä ostotilaukset odottavat vielä asiakkaan toimia. Esimerkiksi ostotilaus voi odottaa asiakkaan toimintoa, koska toimittaja ehdottaa toista toimituspäivää, jota asiakas ei ole vielä hyväksynyt. Toimittaja näkee myös luettelon ostotilauksista, jotka on vahvistettu mutta joita ei ole vielä toimitettu. 
+
+Toimittajan pitää vastata ostotilauksiin toimittajayhteistyön web-liittymässä web-asiakasohjelmassa. Toimittaja saa siinä myös lisätietoja tilauksesta, kuten liiteasiakirjat, rivikohtaiset toimitusosoitteet ja toimittajaan liittyvät maksut. 
+
+Toimittajat, joilla on erityinen käyttöoikeusrooli, voivat tarkastella, mitkä yhteyshenkilöt on rekisteröity toimittajan tiliin. Samalla käyttöoikeusroolilla toimittaja voit tarkastella minkä tahansa lähetetyn käyttäjäpyynnön tilaa. 
+
+WWW-asiakasohjelman toimittajayhteistyön web-liittymää käytetään uusien yhteyshenkilöiden luomiseen ja uusien käyttäjäpyyntöjen lähettämiseen. 
+
+**Toimittajayhteistyön** mobiilityötilan avulla toimittaja voi suorittaa nämä tehtävät:
+
+-   Tarkastele uusia toimittajalle lähetettyjä ostotilauksia.
+-   Tarkastele ostotilauksia, joihin toimittaja on vastannut ja jotka odottavat asiakkaan toimintoa.
+-   Tarkastele ostotilauksia, jotka on vahvistettu mutta vain osittain vastaanotettu.
+-   Näytä toimittajatiliin rekisteröidyt yhteyshenkilön tiedot. (Tehtävä edellyttää lisätietoja käyttöoikeusroolille.)
+-   Tarkastele käyttäjän lähettämän pyynnön tietoja ja seurata pyynnön tilaa. (Tehtävä edellyttää lisätietoja käyttöoikeusroolille.)
+
+## Edellytykset
+<a id="prerequisites" class="xliff"></a>
+Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
+
+### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **Toimittajayhteistyö** mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611, johon on asennettu vähintään ympäristöpäivitys 3
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsin versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Edellytys</th>
+<th>Rooli</th>
 <th>kuvaus</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Lue Microsoft Dynamics 365 for Operations -mobiiliympäristöstä</td>
-<td><a href="https://ax.help.dynamics.com/en/wiki/mobile-development-handbook/">Dynamics 365 for Operations -mobiiliympäristö</a></td>
+<td>KB 3216943 on otettava käyttöön, jos käytät ympäristön päivitystä 3.</td>
+<td>Järjestelmänvalvoja</td>
+<td>KB 3216943 on binaaripäivitys, joka on pakollinen, jos käytät ympäristön päivitystä 3. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen tämän KB-päivityksen.
+<ol>
+<li>Lataa KB 3216943 Microsoft Dynamicsin elinkaaripalveluista (LCS).</li>
+<li>Asenna binaaripäivitys, joka toimitetaan käyttöönottopakettina. Tietoja käyttöönottopaketista on kohdassa <a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Käyttöönottopaketin käyttö</a>.</li>
+</ol></td>
 </tr>
 <tr class="even">
-<td>Dynamics 365 for Operations</td>
-<td>Varmista, että käytössäsi on ympäristö, johon on asennettu Microsoft Dynamics 365 for Operations -versio 1611 sekä Microsoft Dynamics for Operations ympäristöpäivitys 3 (Marraskuu 2016).</td>
+<td>KB 4013633 on oltava asennettu.</td>
+<td>Järjestelmänvalvoja</td>
+<td>KB 4013633 on X++-päivitys tai metatietojen hotfix-korjaus, joka sisältää <strong>käytettävissä olevan varaston</strong> mobiilityötilan. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4013633 -päivityksen.
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Lataa metatietojen hotfix-korjaus LCS:stä</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</li><li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>SCMMobile</strong>-mallin ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Ota käyttöönotettava paketti käyttöön</a>.</li>
+</ol></td>
 </tr>
 <tr class="odd">
-<td><span style="color: #000000">Mobiililaite, johon on asennettu Dynamics 365 for Operations -sovellus</span></td>
-<td><span style="color: #000000">Lataa mobiilisovelluskaupasta Microsoft Dynamics 365 for Operations -sovellus.</span></td>
+<td><strong>Toimittajayhteistyö</strong>-mobiilityötila on julkaistava.</td><td>Järjestelmänvalvoja</td>
+<td>Lisätietoja on ohjeaiheessa <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobiilityötilan julkaiseminen</a>.</td>
 </tr>
 <tr class="even">
-<td>Hotfix-korjaus KB 4013633</td>
-<td>Asenna korjaustiedosto ottaaksesi käyttöön työtilat, jotka toimitetaan Dynamics 365 for Operationsissa.</td>
-</tr>
-<tr class="odd">
-<td><span style="color: #ff0000"><span style="color: #000000">Hotfix-korjaus KB 3216943</span> </span></td>
-<td>Asenna hotfix-korjaus, jos haluat ottaa toimittajayhteistyön mobiilityötilan käyttöön.</td>
-</tr>
-<tr class="even">
-<td>Toimittajakäyttäjällä on oltava käyttöoikeus toimittajayhteistyön web-liittymään Dynamics 365 for Operationsissa sekä määritettävä toimittajayhteistyön käyttäjä.</td>
+<td>Toimittajakäyttäjällä on oltava käyttöoikeus toimittajayhteistyön web-liittymään WWW-asiakasohjelmassa sekä määritettävä toimittajayhteistyön käyttäjä.</td><td>Hankintahenkilöstö ja järjestelmänvalvoja</td>
 <td>Noudata seuraavien ohjeaiheiden vaiheita määrittääksesi toimittajayhteistyön web-liittymän käyttöä varten.
 <ul>
 <li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-external-vendors/">Toimittajayhteistyön käyttäminen ulkoisten toimittajien kanssa</a></li>
 <li><a href="https://ax.help.dynamics.com/en/wiki/manage-vendor-collaboration-users/">Toimittajayhteistyön käyttäjien hallinta</a></li>
 <li><a href="https://ax.help.dynamics.com/en/wiki/set-up-and-maintain-vendor-collaboration/">Toimittajayhteistyön määrittäminen ja hallinta</a></li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Toimittajayhteistyön käyttäminen Dynamics 365 for Operations -asiakkaiden kanssa</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Toimittajayhteistyön käyttäminen Dynamics 365 for Finance and Operations -asiakkaiden kanssa</a></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="overview"></a>Yleiskuvaus
-Toimittajayhteistyön mobiilityötila pitää toimittajat ajan tasalla uusista ostotilauksista, jotta he voivat nähdä ja vastata ostotilauksiin Dynamics 365 for Operationsissa. 
+## Mobiilisovelluksen lataaminen ja asentaminen
+<a id="download-and-install-the-mobile-app" class="xliff"></a>
 
-**Huomautus:** mobiilityötilaa tulee käyttää täydennyksenä toimittajayhteistyön web-liittymään, ei sen sijasta. 
+Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
-Toimittajayhteistyön mobiilityötilassa toimittajasi voivat tarkastella uusia, hyväksyttäväksi lähetettyjä ostotilauksia. Se näyttää ostotilauksen tiedot, kuten tuotteet, määrän ja pyydetyt toimituspäivät. Hintatiedot ovat saatavilla kunkin toimittajan määrityksistä riippuen. 
+-   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
 
-Kun käyttäjä kirjautuu toimittajana, hän näkee, mihin ostotilauksiin on saatu vastaus ja mitkä ostotilaukset odottavat vielä asiakkaan toimia. Toimittaja voi ehdottaa toista toimituspäivää, jota asiakas ei ole vielä hyväksynyt, joten ostotilaus odottaa asiakkaan toimia. Toimittaja näkee myös luettelon ostotilauksista, jotka on vahvistettu, mutta joita ei ole vielä toimitettu. 
+## Kirjautuminen mobiilisovellukseen
+<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+1.  Käynnistä sovellus mobiililaitteessa.
+2.  Anna oman Microsoft Dynamics 365:n URL-osoite.
+4.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
+5.  Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
 
-Toimittaja voi vastata ostotilauksiin toimittajayhteistyön web-liittymässä, joka on saatavilla Dynamics 365 for Operationsin web-asiakasohjelmassa. Tässä toimittaja saa myös lisätietoja tilauksesta, kuten liiteasiakirjat, rivikohtaiset toimitusosoitteet ja toimittajaan liittyvät maksut. 
+    [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-Jos toimittajalla on erityinen käyttöoikeusrooli, tämä voi tarkastella, mitkä yhteyshenkilöt on rekisteröity toimittajan tiliin. Samalla käyttöoikeusroolilla toimittaja voit tarkastella minkä tahansa lähetetyn käyttäjäpyynnön tilaa. 
+## Toimittajayhteistyön mobiilityötilan käyttäminen
+<a id="use-the-vendor-collaboration-mobile-workspace" class="xliff"></a>
+Kun valitset **Toimittajayhteistyö**-työtilan, näet seuraavat vaihtoehdot.
 
-Uudet yhteyshenkilöt ja uudet käyttäjäpyynnöt on luotava Dynamics 365 for Operationsin web-asiakasohjelman toimittajayhteistyöliittymässä. 
+![Toimittajayhteistyön mobiilityötila](./media/vendor-collaboration-mobile-app.png)
 
-Mobiilityötilassa toimittajasi voi:
+**Toimittajayhteistyö**-työtila sisältää seuraavat sivut.
 
--   Tarkastella uusia toimittajalle lähetettyjä ostotilauksia.
--   Tarkastella ostotilauksia, joihin toimittaja on vastannut ja jotka odottavat asiakkaan toimintoa.
--   Tarkastella ostotilauksia, jotka ovat vahvistetussa tilassa, mutta niitä ei ole täysin vastaanotettu.
--   Tarkastella toimittajatiliin liitettyjen yhteyshenkilöiden tietoja (vaatii ylimääräisen käyttöoikeusroolin).
--   Tarkastella käyttäjän lähettämän pyynnön tietoja ja tilaa (vaatii ylimääräisen käyttöoikeusroolin).
+### Yhteyshenkilöt
+<a id="contacts" class="xliff"></a>
+**Yhteystiedot** -sivulla näet kaikki yhteyshenkilöt, jotka on määritetty toimittajan tilille. Siinä näkyy yhteyshenkilön nimi, ensisijainen sähköpostiosoite ja käyttäjän tunnus, jos yhteyshenkilöllä on sähköpostitunnus. Sivu näyttää myös, onko yhteyshenkilön käyttäjätili aktiivinen. Kun valitset henkilön, näet yhteystiedot, kuten yritykset, joiden yhteyshenkilö hän on. Näet myös yhteystiedot, kuten puhelinnumero tai vaihtoehtoisen sähköpostiosoitteen.
 
-## <a name="get-started"></a>Aloittaminen
-Voit aloittaa käytön mobiililaitteessa seuraavasti:
+### Käyttäjäpyynnöt
+<a id="user-requests" class="xliff"></a>
+**Käyttäjäpyynnöt**-sivulla näet toimittajayhteistyön web-liittymän kautta lähettämäsi käyttäjäpyynnöt ja niiden tilan. Voit myös seurata pyyntöjen tilaa. Kun valitset käyttäjäpyynnön, näet pyynnön sisällön, voit lisätä tai poistaa käyttäjän käytöstä, muuttaa suojausasetuksia ja nähdä, mitä käyttöoikeusrooleja käyttäjälle on pyydetty.
 
-1.  Lataa mobiilisovelluskaupasta Microsoft Dynamics 365 for Operations -sovellus.
-2.  Käynnistä sovellus laitteessa.
-3.  Anna Dynamics 365 -URL-osoitteesi.
-4.  annan yritys, johon kirjaudutaan. Kirjoita esimerkiksi **USMF**.
-5.  Ensimmäinen kerta, kun kirjaudut sisään, sinulta pyydetään Microsoft Dynamics 365 for Operations -tilisi käyttäjänimeä ja salasanaa.
+### Tarkastuskelpoiset ostotilaukset
+<a id="purchase-orders-ready-for-review" class="xliff"></a>
+**Tarkastuskelpoiset ostotilaukset** -sivulla näet kaikki ostotilaukset, jotka asiakas on lähettänyt ja joihin ei ole vielä vastattu. Voit tarkastella tiettyjä tilauksen tietoja, kuten mitä tuotteita pyyntöön kuuluu ja milloin tuotteet tulee toimittaa. Hintatiedot ovat saatavilla myös kunkin toimittajan määrityksistä riippuen.
 
-Kun olet kirjautunut sovellukseen, työtiloja ei näy. Jotta voit tarkastella mobiilisovelluksessa työtiloja, halutut työtilat on ensin julkaistava Dynamics 365 for Operationsiin. Tarvitset järjestelmänvalvojan oikeuden työtilan julkaisemiseen.
+Näet myös, onko ostotilauksella huomautuksia tai liitetiedostoja. Avataksesi huomautuksia ja liitteitä sinun on käytettävä toimittajayhteistyön web-liittymän WWW-asiakasohjelmaa. Valitse **Ostotilausrivi** nähdäksesi kaikki rivit ja niillä olevat tiedot. Huomaa, että kullakin rivillä on ilmaisin, joka näyttää, onko rivillä huomautuksia tai liitetiedostoja, tai onko rivin toimitusosoite eri, kuin mitä otsikossa näytetään.
 
-1.  Käynnistä Dynamics 365 for Operations.
-2.  Valitse **Järjestelmän hallinta** &gt; **Asetukset** &gt; **järjestelmän parametrit**.
-3.  Valitse **Hallitse mobiilisovellusta**.
-4.  Valitse **Toimittajayhteistyö**-työtila julkaistaksesi mobiiliympäristöön.
-5.  Valitse **Julkaise työtila**.
-6.  Päivitä laitteesi nähdäksesi julkaistut työtilat.
-7.  Valitse **Toimittajayhteistyö**-työtila. Seuraava sivu aukeaa.
+Ostotilaukseen voi vastata vain toimittajayhteistyön web-liittymän WWW-asiakasohjelmassa.
 
-    [![vendor-collaboration-mobile-app](./media/vendor-collaboration-mobile-app.png)](./media/vendor-collaboration-mobile-app.png)
-
-## <a name="contacts"></a>Yhteyshenkilöt
-**Yhteystiedot** -sivulla näet kaikki yhteyshenkilöt, jotka on määritetty toimittajan tilille. Se näyttää yhteyshenkilön nimen ja ensisijaisen sähköpostiosoitteen sekä käyttäjän aliaksen, jos sellainen on. Se näyttää myös, onko yhteyshenkilön käyttäjätili aktiivinen. Kun valitset yhteyshenkilön, näet sen tiedot, kuten minkä yritysten yhteyshenkilö on kyseessä sekä yhteystietoja, kuten puhelinnumeron tai toisen sähköpostiosoitteen.
-
-## <a name="user-requests"></a>Käyttäjäpyynnöt
-**Käyttäjäpyynnöt**-sivulla näet toimittajayhteistyön web-liittymän kautta lähettämäsi käyttäjäpyynnöt ja niiden tilan. Kun valitset käyttäjäpyynnön, näet pyynnön sisällön, voit lisätä tai poistaa käyttäjän käytöstä, muuttaa suojausasetuksia ja nähdä, mitä käyttöoikeusrooleja käyttäjälle on pyydetty.
-
-## <a name="purchase-orders-ready-for-review"></a>Tarkastuskelpoiset ostotilaukset
-**Tarkastuskelpoiset ostotilaukset** -sivulla näet kaikki ostotilaukset, jotka on lähetetty asiakkaalle ja joihin ei ole vastattu. Voit tarkastella tiettyjä tilauksen tietoja, kuten mitä tuotteita pyyntöön kuuluu ja milloin tilaus tulee toimittaa. Hintatiedot ovat käytettävissä vain, jos ne on määritetty toimittajalle. Näet, onko ostotilauksella huomautuksia tai liitetiedostoja. Jos haluat avata liitetiedostot, sinun on käytettävä web-asiakasohjelman toimittajayhteistyö-osaa. Valitse **Ostotilausrivi** nähdäksesi kaikki rivit, joilla on lisätietoja. Huomaa, että kullakin rivillä on ilmaisin, joka näyttää, onko rivillä huomautuksia tai liitetiedostoja, tai onko rivin toimitusosoite eri, kuin mitä otsikossa näytetään. Ostotilaukseen voi vastata vain toimittajayhteistyön web-asiakasohjelmassa
-
-## <a name="awaiting-customer-action"></a>Odottaa asiakkaan toimintoa
+### Odottaa asiakkaan toimintoa
+<a id="awaiting-customer-action" class="xliff"></a>
 **Odottaa asiakkaan toimintoa** -sivulta löydät ostotilaukset, johon sinä tai joku muu yrityksesi työntekijä, jolla on käyttöoikeus toimittajayhteistyö-liittymään, on vastannut. Ostotilaukset näkyvät tässä luettelossa vain, jos asiakkaan on tehtävä jokin seuraavista toimista ostotilaukselle.
 
--   Jos ostotilaus on hylätty, asiakkaan on joko päivitettävä lähetettyä tilausta ja lähetettävä se uudelleen, tai peruutettava tilaus ja lähetettävä se uudelleen. Kun ostotilaus lähetetään uudelleen, se katoaa **Odottaa asiakkaan toimintoa** -sivulta.
--   Jos ostotilaus on hyväksytty muutosten kera, asiakkaan on päivitettävä alkuperäinen tilaus ja lähetettävä se uudelleen tarkistettavaksi, tai päivittää siihen pyydetyt muutokset ja vahvistettava se heti. Molemmissa tapauksissa ostotilaus katoaa **Odottaa asiakkaan toimintoa** -sivulta.
--   Jos ostotilaus on hyväksytty ja se näkyy **Odottaa asiakkaan toimintoa** -sivulla, ostotilausta ei ole vahvistettu automaattisesti, kun se on hyväksytty. Se odottaa ostoedustajaa muuttamaan tilauksen vahvistetuksi. Yleensä ostotilausta käsitellään sopimuksena asiakkaan ja toimittajan välillä heti, kun toimittaja hyväksyy tilauksen. Ostotilauksen siirtäminen vahvistettuun tilaan on siis muodollisuus.
+-   Jos ostotilaus on hylätty, asiakkaan on joko päivitettävä alkuperäistä tilausta tai peruutettava se ja lähetettävä se uudelleen. Kun ostotilaus lähetetään uudelleen, sitä ei enää näy **Odottaa asiakkaan toimintoa** -sivulta.
+-   Jos ostotilaus on hyväksytty muutosten kera, asiakkaan on joko päivitettävä alkuperäinen tilaus ja lähetettävä se uudelleen tarkistettavaksi tai päivitettävä siihen pyydetyt muutokset ja vahvistettava se heti. Molemmissa tapauksissa ostotilausta ei enää nähdä **Odottaa asiakkaan toimintoa** -sivulla.
+-   Jos ostotilaus on hyväksytty mutta se näkyy **Odottaa asiakkaan toimintoa** -sivulla, ostotilausta ei ole vahvistettu automaattisesti, kun se on hyväksytty. Se odottaa ostoedustajaa muuttamaan tilauksen tilaksi **Vahvistettu**. Yleensä ostotilausta pidetään sopimuksena asiakkaan ja toimittajan välillä heti, kun toimittaja hyväksyy tilauksen. Siksi päivityksen **Vahvistettu** -tila on yleensä vain muodollisuus.
 
-Vastauksen lisätiedot tulevat näkyviin valitsemalla ostotilauksen. Näet rivin lisätiedot ja kunkin rivin vastauksen. Rivin tila näyttää, mikä seuraavista vastauksista on annettu.
+Vastauksen lisätiedot tulevat näkyviin, kun valitset ostotilauksen. Näet rivin lisätiedot ja kunkin rivin vastauksen. Rivin tila näyttää, mikä seuraavista vastauksista on annettu.
 
 -   Hyv.
 -   Hylätty
@@ -149,12 +174,15 @@ Vastauksen lisätiedot tulevat näkyviin valitsemalla ostotilauksen. Näet rivin
 -   Korvattu/Korvaava
 -   Jaa aikatauluksi/Aikataulurivi
 
-Huomaa, että ilmaisin on **Toimitus**= Kyllä/ei, jota käytetään osoittamaan, että rivejä ei toimiteta. Tämä voi johtua siitä, että rivi on hylätty tai korvattu siten, että alkuperäisiä rivejä ei odoteta toimittavan, tai rivi on jaettu useampaan aikatauluriviin, eikä alkuperäistä riviä odoteta toimitettavaksi pyydetyllä tavalla ja pyydetyssä järjestyksessä. Kaikki tilausriville tehdyt muutokset näytetään, pois lukien ladatut huomautukset ja liitetiedostot, jotka näet toimittajayhteistyön web-liittymässä.
+Huomaa, että **Toimitus**-kentän arvo **Kyllä** tai **Ei** osoittaa, toimitetaanko rivit. Riviä ei mahdollisesti voi toimittaa seuraavista syistä:
 
-## <a name="open-confirmed-orders"></a>Avoimet vahvistetut tilaukset
-Kun asiakas on vahvistanut ostotilauksen, eli ostotilaus on siirretty vahvistettuun tilaan, se näkyy avoimissa vahvistetuissa tilauksissa. Se pysyy luettelossa, kunnes se on rekisteröity asiakkaan vastaanottamaksi.
+- Rivi hylättiin.
+- Korvaus tehtiin, eikä alkuperäisen rivin toimitusta odoteta vastaanotetun tilauksen pyynnön mukaisena.
+- Rivi on jaettu useisiin aikatauluriveihin, eikä alkuperäisen rivin toimitusta odoteta vastaanotetun tilauksen pyynnön mukaisena.
 
+Kaikki tilausriville tehdyt muutokset näytetään. Ladattuja huomautuksia ja liitteitä ei kuitenkaan näytetä. Tarkastellaksesi huomautuksia ja liitteitä sinun on käytettävä toimittajayhteistyön web-liittymän WWW-asiakasohjelmaa.
 
-
-
+### Avoimet vahvistetut tilaukset
+<a id="open-confirmed-orders" class="xliff"></a>
+Kun asiakas on vahvistanut ostotilauksen, (ts. ostotilaus on siirretty **Vahvistettu** -tilaan), se näkyy avoimissa vahvistetuissa tilauksissa. Se pysyy luettelossa, kunnes se on rekisteröity asiakkaan vastaanottamaksi.
 

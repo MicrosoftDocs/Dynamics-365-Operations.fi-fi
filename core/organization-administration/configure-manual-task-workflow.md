@@ -3,13 +3,13 @@ title: "Manuaalisen tehtävän konfiguroiminen työnkulkuun"
 description: "Tässä ohjeaiheessa kerrotaan, miten manuaalisen tehtävän ominaisuudet määritetään."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5d2a69066a1245d5b86d27d01db4b67d4a490488
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 242abaae1aa17578ba8eab4b2664794ff2c2caec
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-a-manual-task-in-a-workflow"></a>Manuaalisen tehtävän konfiguroiminen työnkulkuun
+# Manuaalisen tehtävän konfiguroiminen työnkulkuun
+<a id="configure-a-manual-task-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ Tässä ohjeaiheessa kerrotaan, miten manuaalisen tehtävän ominaisuudet määr
 
 Manuaalinen tehtävä konfiguroidaan työnkulkueditorissa napsauttamalla tehtävää hiiren kakkospainikkeella ja valitsemalla **Ominaisuudet**, joka avaa **Ominaisuudet**-sivun. Sitten voit määrittää seuraavien ohjeiden avulla manuaalisen tehtävän ominaisuudet.
 
-## <a name="name-the-task"></a>Tehtävän nimeäminen
+## Tehtävän nimeäminen
+<a id="name-the-task" class="xliff"></a>
 Kirjoita näiden ohjeiden avulla nimi manuaaliselle tehtävälle.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
 2.  Kirjoita tehtävän yksilöivä nimi **Nimi**-kenttään.
 
-## <a name="enter-a-subject-line-and-instructions"></a>Aiherivin ja ohjeiden määrittäminen
+## Aiherivin ja ohjeiden määrittäminen
+<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
 Sinun on luotava aiherivi ja ohjeet käyttäjille, jotka on määritetty tähän tehtävään. Esimerkiksi jos olet konfiguroimassa ostoehdotukselle tehtävää, sille määritetty käyttäjä näkee aiherivin ja ohjeet **Ostoehdotukset**-sivulla. Aiherivi näytetään sivulla olevalla viestirivillä. Käyttäjä voi sitten avata ohjeet napsauttamalla viestirivin kuvaketta. Seuraavia ohjeita noudattamalla voit määrittää aiherivin ja ohjeet.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
@@ -74,7 +77,8 @@ Sinun on luotava aiherivi ja ohjeet käyttäjille, jotka on määritetty tähän
     5.  Voit mukauttaa tekstiä lisäämällä paikkamerkkejä vaiheen 6 mukaisesti.
     6.  Valitse **Sulje**.
 
-## <a name="assign-the-task"></a>Tehtävän määrittäminen
+## Tehtävän määrittäminen
+<a id="assign-the-task" class="xliff"></a>
 Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaalinen tehtävä määritetään.
 
 1.  Valitse vasemmasta ruudusta **Määritys**.
@@ -126,10 +130,10 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
     </tr>
     <tr class="even">
     <td>Käyttäjä</td>
-    <td>Tietyt Microsoft Dynamics 365 for Operations -käyttäjät</td>
+    <td>Tietyt Microsoft Dynamics 365 for Finance and Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille tehtävä liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät. Valitse käyttäjät, joille tehtävä liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -160,7 +164,8 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
 
     Jos käyttäjä ei suorita tehtävää aikarajan puitteissa, tehtävä on erääntynyt. Erääntyneet tehtävät voidaan eskaloida, sivun **Eskalointi**-alueessa valitsemiesi asetusten mukaan.
 
-## <a name="specify-what-happens-when-the-task-is-overdue"></a>Erääntyneen tehtävän toimenpiteiden määrittäminen
+## Erääntyneen tehtävän toimenpiteiden määrittäminen
+<a id="specify-what-happens-when-the-task-is-overdue" class="xliff"></a>
 Jos käyttäjä ei suorita manuaalista tehtävää aikarajan puitteissa, tehtävä on erääntynyt. Erääntyneen tehtävän voi eskaloida tai määrittää automaattisesti toisen käyttäjän hyväksyttäväksi. Seuraa näitä ohjeita, jos haluat eskaloida erääntyneet tehtävät.
 
 1.  Valitse vasemmasta ruudusta **Eskalointi**.
@@ -212,10 +217,10 @@ Jos käyttäjä ei suorita manuaalista tehtävää aikarajan puitteissa, tehtäv
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tietyt Dynamics 365 for Operations -käyttäjät</td>
+    <td>Tietyt Finance and Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille tehtävä eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät. Valitse käyttäjät, joille tehtävä eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -231,7 +236,8 @@ Jos käyttäjä ei suorita manuaalista tehtävää aikarajan puitteissa, tehtäv
 5.  Toista vaiheet 3 ja 4 jokaiselle käyttäjälle, joka lisätään eskalointipolkuun. Käyttäjien järjestystä voi muuttaa.
 6.  Jos eskalointipolun käyttäjät eivät suorita tehtävää ajoissa, järjestelmä suorittaa tehtävän toimenpiteen automaattisesti. Voit määrittää järjestelmän suorittaman toimenpiteen valitsemalla **Toimenpide**-rivin ja sitten valitsemalla **Lopetustoiminto**-välilehdellä toimenpiteen.
 
-## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Määritä, milloin järjestelmä suorittaa tehtävän toimenpiteen automaattisesti
+## Määritä, milloin järjestelmä suorittaa tehtävän toimenpiteen automaattisesti
+<a id="specify-when-the-system-automatically-acts-on-the-task" class="xliff"></a>
 Voit määrittää järjestelmän tekemään jonkin tietyn toiminnon automaattisesti manuaaliselle tehtävälle, kun määritetyt ehdot täyttyvät. Tehtävä voi esimerkiksi edellyttää, että kuluraporttiosaston jäsen tarkastaa kuitit, jotka lähetetään kuluraportin liitteenä. Yrityksen käytäntöjen mukaan tämä tehtävä on suoritettava, jos kuluraportin kokonaissumma on yli 100 USD. Tässä skenaariossa voit määrittää järjestelmän automaattisesti merkitsemään tehtävän tilaan **Valmis**, kun kokonaissumma on pienempi kuin 100. Noudata seuraavia ohjeita määrittääksesi, milloin järjestelmä suorittaa manuaalisen tehtävän toimenpiteen.
 
 1.  Valitse vasemmasta ruudusta **Automaattiset toiminnot**.
@@ -247,7 +253,8 @@ Voit määrittää järjestelmän tekemään jonkin tietyn toiminnon automaattis
 
 7.  Valitse **Automaattinen loppuunvientitoiminto**-luettelosta toiminto, jonka haluat järjestelmän suorittavan.
 
-## <a name="specify-when-notifications-are-sent"></a>Määritä, milloin ilmoitukset lähetetään
+## Määritä, milloin ilmoitukset lähetetään
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Voit lähettää käyttäjille ilmoituksia, kun manuaalinen tehtävä on suoritettu, delegoitu, eskaloitu tai hylätty, tai kun muutosta on pyydetty. Toimi seuraavasti määrittääksesi, milloin ilmoitukset lähetetään, ja kenelle ne lähetetään.
 
 1.  Valitse vasemmasta ruudusta **Ilmoitukset**.
@@ -306,10 +313,10 @@ Voit lähettää käyttäjille ilmoituksia, kun manuaalinen tehtävä on suorite
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tietyt Dynamics 365 for Operations -käyttäjät</td>
+    <td>Tietyt Finance and Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -317,7 +324,8 @@ Voit lähettää käyttäjille ilmoituksia, kun manuaalinen tehtävä on suorite
 
 8.  Toista vaiheet 3-7 kullekin tapahtumalle, jonka valitsit vaiheessa 2.
 
-## <a name="set-a-time-limit"></a>Aikarajan määrittäminen
+## Aikarajan määrittäminen
+<a id="set-a-time-limit" class="xliff"></a>
 Noudata seuraavia ohjeita, jos manuaalinen tehtävä on suoritettava tietyn ajan kuluessa. **Huomautus:** näiden ohjeiden mukaan valitsemasi asetukset korvaavat asetukset, jotka olet valinnut kunkin hyväksyntävaiheen **Liitos**- ja **Eskalointi**-alueissa.
 
 1.  Napsauta vasemmassa ruudussa **Lisäasetukset**.
@@ -331,7 +339,8 @@ Noudata seuraavia ohjeita, jos manuaalinen tehtävä on suoritettava tietyn ajan
 
 4.  Jos aikaraja ylittyy, järjestelmä suorittaa automaattisesti tehtävälle toiminnon. Valitse **Toiminto**-luettelosta toiminto, jonka haluat järjestelmän suorittavan.
 
-## <a name="specify-which-actions-are-available-to-the-user"></a>Määritä käyttäjän käytettävissä olevat toiminnot
+## Määritä käyttäjän käytettävissä olevat toiminnot
+<a id="specify-which-actions-are-available-to-the-user" class="xliff"></a>
 Kun manuaalinen tehtävä on määritetty käyttäjälle, käyttäjän pitää suorittaa tehtävälle toiminto. Noudata seuraavia ohjeita määrittääksesi, mitä toimintoja käyttäjät voivat tehdä tehtävälle. **Huomautus:** käytettävissä olevat toiminnot vaihtelevat sen mukaan, miten tehtävä on suunniteltu.
 
 1.  Napsauta vasemmassa ruudussa **Lisäasetukset**.

@@ -3,14 +3,14 @@ title: Budjetin suunnittelun yleiskuvaus
 description: "Tämä artikkeli esittelee budjettisuunnittelun ja sisältää tietoja, joiden avulla voit määrittää budjettisuunnittelun ja budjettisuunnitteluprosessit."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
@@ -18,29 +18,32 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5212c8401f26f30cf593c52eb88291463b9b8810
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="budget-planning-overview"></a>Budjetin suunnittelun yleiskuvaus
+# Budjetin suunnittelun yleiskuvaus
+<a id="budget-planning-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tämä artikkeli esittelee budjettisuunnittelun ja sisältää tietoja, joiden avulla voit määrittää budjettisuunnittelun ja budjettisuunnitteluprosessit.
 
-<a name="overview-of-budget-planning"></a>Yleiskatsaus budjettisuunnitteluun
+Yleiskatsaus budjettisuunnitteluun
+<a id="overview-of-budget-planning" class="xliff"></a>
 ---------------------------
 
 Budjetin suunnittelu suoritetaan valmisteltaessa budjetteja, jotka toteutetaan organisaatiossa. Organisaatio voi määrittää budjetin suunnittelun ja määrittää sitten budjetin suunnitteluprosessit, jotka vastaavat organisaation käytäntöjä, toimenpiteitä ja budjetin valmistuksen vaatimuksia. 
 
-Kun Microsoft Dynamics 365 for Operationsin käyttämät käsitteet ja terminologia ovat tuttuja, organisaation budjettisuunnittelu on helpompi toteuttaa.
+Kun Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin käyttämät käsitteet ja terminologia ovat tuttuja, organisaation budjettisuunnittelu on helpompi toteuttaa.
 
-### <a name="key-terms"></a>Tärkeimmät termit
+### Tärkeimmät termit
+<a id="key-terms" class="xliff"></a>
 
 -   **Budjettisuunnitteluprosessit** – Budjettisuunnitteluprosessit määrittävät, miten budjettisuunnitelmat voidaan päivittää, reitittää, tarkastella ja hyväksyä budjetoinnin organisaatiohierarkiassa. Budjettisuunnitteluprosessi on linkitetty budjettijaksoon ja organisaatioon yrityksen kautta.
 -   **Budjettisuunnitelmat** – Budjettisuunnitelmat sisältävät budjetin tiedot budjettijakson ajalta. Budjettisuunnitelmia voi olla useita eri tarkoituksia varten. Budjettijaksoja voidaan käyttää esimerkiksi luotaessa budjettisummia eri organisaatioyksiköille. Ne myös auttavat vertailujen tekemisessä ja tarjoavat tietoja päätöksiä tehtäessä.
@@ -50,7 +53,8 @@ Kun Microsoft Dynamics 365 for Operationsin käyttämät käsitteet ja terminolo
 
 [![Budjettisuunnittelun käsitteistö](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
-### <a name="common-tasks"></a>Yleiset tehtävät
+### Yleiset tehtävät
+<a id="common-tasks" class="xliff"></a>
 
 Voit käyttää budjettisuunnittelua seuraaviin tehtäviin:
 
@@ -59,12 +63,14 @@ Voit käyttää budjettisuunnittelua seuraaviin tehtäviin:
 -   Reititä automaattisesti budjettisuunnitelmia yhteen työlistojen, perusteluasiakirjojen ja muiden liitteiden kanssa, tarkastuksia ja hyväksymisiä varten.
 -   Konsolidoi useita budjettisuunnitelmia alemmalta tasolta organisaatiossa yhdeksi budjetin pääsuunnitelmaksi organisaation ylemmällä tasolla. Voit myös kehittää yksittäisen budjettisuunnitelman organisaation korkeammalla tasolla ja jakaa budjetin organisaation alemmille tasoille.
 
-Budjettisuunnittelu integroituu muiden Microsoft Dynamics 365 for Operations -moduulien kanssa. Tämän vuoksi voit tuoda aiempien budjettien tietoja, toteutuneita menoja, käyttöomaisuuden ja henkilöstöresurssit. Koska budjettisuunnittelu on integroitu myös Microsoft Excelin ja Microsoft Wordin kanssa, voit käsitellä budjettisuunnittelun tietoja näillä ohjelmilla. Budjettipäällikkö voi viedä osaston budjettipyynnön Excelin laskentataulukkoon budjettiskenaariosta. Tiedot voidaan analysoida, päivittää ja taulukoida laskentataulukolle, ja julkaista sitten takaisin budjettisuunnitelman riveille.
+Budjettisuunnittelu integroituu muiden Microsoft Dynamics 365 for Finance and Operations -moduulien kanssa. Tämän vuoksi voit tuoda aiempien budjettien tietoja, toteutuneita menoja, käyttöomaisuuden ja henkilöstöresurssit. Koska budjettisuunnittelu on integroitu myös Microsoft Excelin ja Microsoft Wordin kanssa, voit käsitellä budjettisuunnittelun tietoja näillä ohjelmilla. Budjettipäällikkö voi viedä osaston budjettipyynnön Excelin laskentataulukkoon budjettiskenaariosta. Tiedot voidaan analysoida, päivittää ja taulukoida laskentataulukolle, ja julkaista sitten takaisin budjettisuunnitelman riveille.
 
-## <a name="configuring-budget-planning"></a>Määritä budjettisuunnittelu
+## Määritä budjettisuunnittelu
+<a id="configuring-budget-planning" class="xliff"></a>
 **Budjettisuunnittelun konfigurointi** -sivu sisältää useimmat budjettisuunnittelussa tarvittavat asetukset. Seuraavissa osissa kuvataan joitakin tärkeimpiä budjettisuunnittelun määrittämisessä huomioitavia tekijöitä. Konfiguroinnin valmistuttua määritetään budjettisuunnitteluprosessit.
 
-### <a name="create-a-budget-planning-schema"></a>Budjettisuunnittelun kaavan luominen
+### Budjettisuunnittelun kaavan luominen
+<a id="create-a-budget-planning-schema" class="xliff"></a>
 
 Kaavan luominen on valinnainen, mutta suositeltava vaihe. Se näyttää organisaation budjetin laatimismenettelyn. Voit käyttää mallin luomisessa mitä tahansa menetelmää. Seuraavassa kuvassa esitetään yleinen esimerkki, jossa budjettisuunnittelun työnkulut luodaan organisaation eri tasoille. Jokaisessa työnkulussa määritetään vaiheet, ja jokaiselle vaiheelle liitetään tietyt skenaariot budjettitietojen tallentamista varten. Tiedot siirretään yhdestä vaiheesta toiseen tehtävien avulla. Esimerkiksi summat voidaan kohdistaa tai yhdistää erilaisille tileille, erilaisiin hyväksyntöihin tai muihin tarkistuksiin. Tässä esimerkissä kursiivi teksti osoittaa skenaarion, jota ei voi muokata vaiheen aikana. Se voi osoittaa myös aiemmat tiedot tai aiemmassa vaiheessa hyväksytyt tiedot, joita ei muuttaa. 
 
@@ -74,27 +80,30 @@ Seuraavassa esimerkissä yrityksen pääkonttori arvioi alkuperäisen budjetin p
 
 [![Budjettisuunnittelumallin esimerkki](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
-###  <a name="organization-hierarchy-for-budget-planning"></a>Budjettisuunnittelun organisaatiohierarkia
+###  Budjettisuunnittelun organisaatiohierarkia
+<a id="organization-hierarchy-for-budget-planning" class="xliff"></a>
 
 Voit määrittää organisaatiohierarkian kunkin budjettisuunnitteluprosessin budjettisuunnittelun hierarkiaksi **Organisaatiohierarkia**-sivulla. Budjettisuunnittelun hierarkian ei tarvitse vastata muihin tarkoituksiin käytettävää vakio-organisaatiohierarkiaa. Koska tätä hierarkiaa käytetään tietojen yhdistämisessä ja jakelussa, sen rakenne kannattaa muokata erilaiseksi. Esimerkkimallissa myyntiorganisaatiot ovat budjetin ja talousosastot sisältävän pääkonttorin tason alla. Rakenne on luultavasti erilainen kuin myyntiosaston toimintojen hallinnassa käytettävä rakenne. Kuhunkin budjettisuunnitteluprosessiin voidaan määrittää vain yksi organisaatiohierarkia. 
 
-Lisätietoja on kohdassa [Organisaatiot ja organisaatiohierarkiat](/dynamics365/operations/organization-administration/organizations-organizational-hierarchies).
+Lisätietoja on kohdassa [Organisaatiot ja organisaatiohierarkiat](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
 
-### <a name="user-security"></a>Käyttäjän suojaus
+### Käyttäjän suojaus
+<a id="user-security" class="xliff"></a>
 
 Budjettisuunnittelun käyttäjäoikeuksien määrittämistä varten on kaksi eri suojausmallia. Voit määrittää suojausmallin määrittämällä budjettisuunnittelun parametrin **Budjettisuunnittelun konfigurointi** -sivulla.
 
-### <a name="budget-planning-workflows-stages"></a>Budjettisuunnittelun työnkulkujen vaiheet
+### Budjettisuunnittelun työnkulkujen vaiheet
+<a id="budget-planning-workflows-stages" class="xliff"></a>
 
 Budjettisuunnittelun työnkulkuja ja budjetoinnin työnkulkuja käytetään yhdessä budjettisuunnitelmien luomisen hallinnassa.
 
-Budjettisuunnittelun työnkulku koostuu järjestetystä joukosta vaiheita, joiden läpi budjettisuunnitelma kulkee. Jokainen budjettisuunnittelun työnkulku on liitetty budjetoinnin työnkulkuun. Budjetoinnin työnkulut ovat eräs Microsoft Dynamics 365 for Operationsissa käytettävä työnkulkutyyppi. Budjetoinnin työnkulku reitittää budjettisuunnitelmat yhdessä laskentataulukoiden, perusteiden ja liitteiden kanssa organisaation arvioitaviksi ja hyväksyttäviksi. 
+Budjettisuunnittelun työnkulku koostuu järjestetystä joukosta vaiheita, joiden läpi budjettisuunnitelma kulkee. Jokainen budjettisuunnittelun työnkulku on liitetty budjetoinnin työnkulkuun. Budjetoinnin työnkulut ovat eräs Finance and Operationsissa käytettävä työnkulkutyyppi. Budjetoinnin työnkulku reitittää budjettisuunnitelmat yhdessä laskentataulukoiden, perusteiden ja liitteiden kanssa organisaation arvioitaviksi ja hyväksyttäviksi. 
 
 Budjettisuunnittelun työnkulku luodaan **Budjettisuunnittelun konfigurointi** -sivun **Työnkulun vaiheet** -osassa. Tämän jälkeen valitaan vaiheet ja käytettävä budjetoinnin työnkulku. Lisäasetukset määritetään myös tässä vaiheessa. 
 
 Budjettisuunnittelun työnkulku kannattaa luoda jokaiselle budjetointihierarkian tasolle. Tämän jälkeen liitetään budjettisuunnittelun työnkulun vaiheita vastaavia elementtejä sisältävä budjetoinnin työnkulku. Aiemmin tässä artikkelissa esitetyssä esimerkkimallissa luodaan yksi budjettisuunnittelun työnkulku myyntiosastoille ja toinen pääkonttorille. Budjetoinnin työnkulku siirtää budjettisuunnitelmat vaiheiden läpi. 
 
-Budjettisuunnittelun budjetoinnin työnkulku luodaan **Budjetoinnin työnkulut** -sivulla. Prosessi muistuttaa muiden työnkulkujen luomista Microsoft Dynamics 365 for Operationsissa. Seuraavassa kuvassa on pääkonttorin työnkulun esimerkki. 
+Budjettisuunnittelun budjetoinnin työnkulku luodaan **Budjetoinnin työnkulut** -sivulla. Prosessi muistuttaa muiden työnkulkujen luomista Finance and Operationsissa. Seuraavassa kuvassa on pääkonttorin työnkulun esimerkki. 
 
 [![Budjettisuunnittelun budjetoinnin työnkulku](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
@@ -102,7 +111,8 @@ Työnkulku sisältää elementtejä myyntiosastoihin kohdistusta ja lähetysten 
 
 Budjetoinnin työnkulku liitetään kuhunkin budjettisuunnittelun työnkulkuun **Budjettisuunnittelun konfigurointi** -sivun **Työnkulun vaiheet** -osassa.
 
-### <a name="parameters-scenarios-and-stages"></a>Parametrit, skenaariot ja vaiheet
+### Parametrit, skenaariot ja vaiheet
+<a id="parameters-scenarios-and-stages" class="xliff"></a>
 
 **Budjettisuunnittelun konfigurointi** -sivun alkuasetuksissa voidaan luoda joitakin rakenneosia myöhempiä konfigurointivaiheita varten.
 
@@ -110,7 +120,8 @@ Budjetoinnin työnkulku liitetään kuhunkin budjettisuunnittelun työnkulkuun *
 -   **Skenaariot** – Skenaariot sisältävät budjettisuunnitelmissa tarvittavien tietojen luokat. Määrität budjettiskenaariot tilanteissa tukemaan raha- ja muita mittayksikköluokkia, kuten määrää. Skenaariot edustavat budjettisuunnitelmassa budjettisuunnittelun tietojen yhtä versiota. Esimerkkejä budjettiskenaarioista ovat edellisen vuoden myynti ja allekirjoitetut sopimukset. Myyntipuheluiden lukumäärä ja kokoaikavastaavuusmäärät (FTE) ovat esimerkkejä skenaarioista, joissa käytetään määriä.
 -   **Vaiheet** – Vaiheet määrittävät budjettisuunnitelman vaiheet budjettisuunnitelman luonnista sen lopulliseen hyväksyntään asti. Budjettisuunnittelun vaiheiden esimerkkejä ovat pääkonttorin koonti, talousjohtajan tarkistus ja viimeistelyvaihe.
 
-### <a name="allocation-schedules"></a>Kohdistusaikataulut
+### Kohdistusaikataulut
+<a id="allocation-schedules" class="xliff"></a>
 
 Budjettisuunnittelussa voidaan kohdistaa budjettisuunnitelmarivien summat tai määrät yhdestä skenaariosta toiseen tai jopa saman skenaarion sisällä. Samaan skenaarioon voidaan kohdistaa, jos muutokset halutaan kohdistaa kyseisen skenaarion talousdimensioihin tai summien päivämääriin. Kohdistus voidaan tehdä budjettisuunnitelman sisällä tai yhdestä budjettisuunnitelmasta toiseen. 
 
@@ -123,7 +134,8 @@ Kohdistusaikataulut kohdistavat budjettisuunnitelmarivit automaattisesti työnku
 -   **Käytä kirjanpidon kohdistussääntöjä** – Budjettisuunnitelman rivit jaetaan lähdebudjettiskenaariosta kohdebudjettiskenaarioon valitun kirjanpidon kohdistussäännön perusteella.
 -   **Kopioi budjettisuunnitelmasta** – Voit valita kohdistuksen lähteeksi toisen budjettisuunnitelman.
 
-### <a name="stage-allocations"></a>Vaiheen kohdistukset
+### Vaiheen kohdistukset
+<a id="stage-allocations" class="xliff"></a>
 
 Vaiheen kohdistuksia käytetään budjettisuunnitelmien automaattiseen kohdistukseen työnkulun käsittelyn aikana. Kun vaiheen kohdistuksia käytetään, kohdeskenaarion budjettisuunnitelman rivit voidaan luoda ja niitä voidaan muokata ilman budjettisuunnitelman valmistelijan tai tarkistajan toimia.
 
@@ -137,11 +149,13 @@ Esimerkkimallissa yhdistely tehdään myyntiosaston lähetettyjen vaiheen budjet
 
 [![Koostaminen](./media/aggregation-109x300.png)](./media/aggregation.png)
 
-### <a name="priorities"></a>Prioriteetit
+### Prioriteetit
+<a id="priorities" class="xliff"></a>
 
 Voit halutessasi käyttää budjettisuunnitelman prioriteetteja määrittämiesi budjettisuunnitelmien luokkien ja tavoitteiden määrittämisessä. Prioriteettien avulla voit myös järjestää, luokitella ja arvioida useita budjettisuunnitelmia. Voit esimerkiksi luoda budjettisuunnitelman prioriteetin terveydelle ja turvallisuudelle ja arvioida budjettisuunnitelmat, jotka on määritetty tähän prioriteettiin. Voit määrittää numeron luokittamaan budjettisuunnitelmat kaikkien budjettisuunnitelmien kesken.
 
-### <a name="columns-and-layouts"></a>Sarakkeet ja asettelut
+### Sarakkeet ja asettelut
+<a id="columns-and-layouts" class="xliff"></a>
 
 Budjetin arvot näkyvät budjettisuunnitelman riveillä ja sarakkeilla. Määritä ensin sarakkeet. Tämän jälkeen voit luoda asettelun, jossa määritetään sarakkeiden esitysmuoto. 
 
@@ -157,7 +171,8 @@ Esimerkkimallissa voidaan luoda sarakkeet edellisen vuoden myynnille, sopimuksil
 
 Voit myös määrittää, ovatko asetteluelementit (sarakkeet) muokattavissa ja asettelulle luotujen laskentataulukkomallien käytettävissä. Esimerkkimallin arviointivaiheessa käytetyssä asettelussa Ennuste-sarakkeet ovat muokattavissa, kun taas Edellisen vuoden myynti- ja Sopimukset-sarakkeet vain luku -tilassa.
 
-### <a name="templates"></a>Mallit
+### Mallit
+<a id="templates" class="xliff"></a>
 
 Voit luoda, tarkastella ja ladata Excel-malleja **Budjettisuunnittelun konfigurointi** -sivun **Asettelut**-osassa. Nämä mallit ovat työkirjoja, jotka on linkitetty budjettisuunnitelmaan lisäanalyysiä, kaavioita ja tiedonsyöttöominaisuuksia varten. 
 
@@ -166,11 +181,13 @@ Voit luoda tai ladata kullekin asettelulle mallin tai tarkastella sitä. Kun mal
 > [!NOTE] 
 > Malli on tallennettava sijaintiin, josta käyttäjä voi käyttää sitä. Malli ladataan asetteluun sen jälkeen, kun muokkaus on tehty. Näin mallia käytetään budjettisuunnitelmissa, jotka käyttävät kyseistä asettelua.
 
-### <a name="descriptions"></a>Kuvaukset
+### Kuvaukset
+<a id="descriptions" class="xliff"></a>
 
 Kuvauksia, jotka voidaan liittää **Asettelut**-osaan, käytetään tähän asetteluun sisältyvän taloushallinnon dimension nimen näyttämisessä. Organisaatiossa voidaan esimerkiksi haluta näyttää päätilin nimi päätilin numeron vieressä budjettisuunnitelmassa, mutta haluat ohittaa muiden taloushallinnon dimensioiden nimet, jotta näytöstä ei tule liian sekavaa.
 
-## <a name="setting-up-budget-planning-processes"></a>Budjettisuunnitteluprosessien määrittäminen
+## Budjettisuunnitteluprosessien määrittäminen
+<a id="setting-up-budget-planning-processes" class="xliff"></a>
 
 Kun budjettisuunnittelun konfiguroiminen on tehty, voit määrittää budjettisuunnitteluprosessit **Budjettisuunnitteluprosessi**-sivulla. Budjettisuunnitteluprosessit ovat sääntöjoukkoja, jotka määrittävät, miten budjettisuunnitelmat voidaan päivittää, reitittää, tarkastella ja hyväksyä budjetoinnin organisaatiohierarkiassa. 
 

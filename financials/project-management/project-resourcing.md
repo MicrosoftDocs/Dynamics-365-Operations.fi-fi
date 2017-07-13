@@ -3,14 +3,14 @@ title: Projektin resursointi
 description: "Tässä aiheessa on tietoja projektien resursoinnista."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 82022
 ms.assetid: bd2fb375-84c6-428a-8e54-f0f719045898
 ms.search.region: Global
@@ -18,22 +18,23 @@ ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5c00c63e3c55e818934c36b818c90025002092d4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a7275e9ad8d655d0d2ee5ba90a792775dec0cf05
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="project-resourcing"></a>Projektin resursointi
+# Projektin resursointi
+<a id="project-resourcing" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä aiheessa on tietoja projektien resursoinnista.
 
-Yksi projekti- ja resurssipäälliköiden haasteista projektin suunnitteluvaiheessa on resurssien kohdistaminen. Tällöin on määritettävä ja varattava oikea resurssi projektityöhön. Microsoft Dynamics 365 for Operations -järjestelmässä voi projektien resursointitoiminnoilla määrittää roolit, joita käsitellään väliaikaisina resursseina, joita voidaan varata tiettyyn sitoumukseen tai sitoumuksen osaksi. Tämäntyyppisen resursoinnin avulla projekti- ja resurssipäälliköt voivat suorittaa seuraavia tehtäviä:
+Yksi projekti- ja resurssipäälliköiden haasteista projektin suunnitteluvaiheessa on resurssien kohdistaminen. Tällöin on määritettävä ja varattava oikea resurssi projektityöhön. Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa voi määrittää projektien resursointitoiminnoilla roolit, joita käsitellään väliaikaisina resursseina ja jotka voidaan sitten varata tiettyyn sitoumukseen tai sitoumuksen osaksi. Tämäntyyppisen resursoinnin avulla projekti- ja resurssipäälliköt voivat suorittaa seuraavia tehtäviä:
 
 -   Määrittää roolin, jolla on resurssien kohdistamista helpottavat tarvittavat osaamisalueet.
 -   Määrittää roolien avulla varattuihin resursseihin perustuvan alustavan sitoumusaikataulun.
@@ -46,12 +47,14 @@ Yksi projekti- ja resurssipäälliköiden haasteista projektin suunnitteluvaihee
 
 Projektisuunnittelun edetessä suunnitellut resurssit voidaan korvata henkilöstöllisillä resursseilla. Projektipäällikkö voi myös palata päivittämään resursointivaraukset missä tahansa projektin vaiheessa.
 
-## <a name="set-up-project-resources"></a>Projektiresurssien määrittäminen
+## Projektiresurssien määrittäminen
+<a id="set-up-project-resources" class="xliff"></a>
 Sinun täytyy määrittää kalenteri ja liittää se työntekijään. Kalenterin avulla aikataulutetaan projekti ja siihen varattujen resurssien työaika. Kalenteria määrittäessään projektipäälliköt voivat suorittaa resurssien tasaamisen resurssien optimoinnin yhteydessä. Kalenterin aikataulun perusteella resursseille voidaan asettaa rajoituksia. Voit määrittää kalenterin **Kalenterit**-sivulla. 
 
 Kun määrität työntekijän projektiin resurssiksi, voit valita sen yrityksen työntekijöitä, jonka resursseja olet määrittämässä, tai organisaation muun yrityksen työntekijöitä. Ne ovat konsernin sisäisiä resursseja. Seuraavissa ohjeissa selitetään, miten työntekijä määritetään yrityksen projektiin resurssiksi ja miten konsernin sisäinen projektin resurssi määritetään.
 
-### <a name="set-up-a-worker-as-a-project-resource"></a>Työntekijän määrittäminen projektiresurssiksi
+### Työntekijän määrittäminen projektiresurssiksi
+<a id="set-up-a-worker-as-a-project-resource" class="xliff"></a>
 
 1.  Valitse **Työntekijät**-sivun **Työntekijät**-luettelosta työntekijä, jonka haluat lisätä projektiin resurssiksi, ja avaa haluamasi työntekijätietue.
 2.  Valitse toimintoruudussa **Projekti** &gt; **Asetukset** &gt; **Projektiasetukset**.
@@ -59,16 +62,17 @@ Kun määrität työntekijän projektiin resurssiksi, voit valita sen yrityksen 
 
 Voit myös määrittää resurssille oletusprojektit eräänlaisena esimäärityksenä. Esimäärityksiä voidaan käyttää, kun resurssi- tai projektipäällikkö tietää jo etukäteen, missä projekteissa resurssi työskentelee. Esimääritykset voivat perustua myös projektin sponsorin tai asiakkaan pyyntöön. Jos haluat esimäärittää projektin, valitse **Määritä projektit** -sivulta **Projektit**-välilehdestä **Jäljellä olevat projektit** -luettelosta haluamasi projekti.
 
-### <a name="set-up-an-intercompany-resource"></a>Konsernin sisäisen resurssin määrittäminen
+### Konsernin sisäisen resurssin määrittäminen
+<a id="set-up-an-intercompany-resource" class="xliff"></a>
 
 Kun määrität työntekijää konsernin sisäiseksi resurssiksi, määritä tiedot yrityksestä, joka antaa resurssin lainaksi ja yrityksestä, joka ottaa resurssin lainaksi. 
 
 **Yritys, joka antaa resurssin lainaksi:**
 
-1.  Varmista Dynamics 365 for Operations -järjestelmässä, että yritys, joka antaa resurssin lainaksi, on valittu. Tee sitten alla olevan Työntekijän määrittäminen projektiresurssiksi -kohdan mukaiset toimenpiteet.
+1.  Varmista Finance and Operationsissa, että resurssin lainaava yritys on valittu. Tee sitten toimenpiteet, jotka on mainittu edellä olevassa kohdassa Työntekijän määrittäminen projektiresurssiksi.
 2.  Siirry kohtaan **Kirjanpito**&gt; **Kirjausasetukset **&gt; **Konsernikirjanpito**. Valitse **Uusi**.
 3.  **Yrityksen tunnus **-kenttään yritys, jolta resurssi lainataan. Anna tarvittavat tiedot muihin kenttiin ja valitse sitten **Tallenna**.
-4.  Siirry kohtaan **Projektinhallinta ja kirjanpito **&gt; **Asetukset **&gt; **Hinnat ** &gt; **Siirtohinta**.** **
+4.  Siirry kohtaan **Projektinhallinta ja kirjanpito **&gt; **Asetukset **&gt; **Hinnat **&gt; **Siirtohinta**.** **
 5.  Valitse **Siirtohinta**-näytössä **Uusi**. Valitse sitten **Lainaava yritys **-kenttään soveltuva yritys.
 6.  Jos haluat lainata lainaavalle yritykselle resurssin, jonka loit tämän osan alussa, valitse **Resurssi**-kentässä luomasi resurssin nimi. Jos haluat, että kaikki yrityksen resurssit ovat lainaavan yrityksen käytettävissä, jätä **Resurssi*-kenttä tyhjäksi.
 7.  Siirry kohtaan **Projektinhallinta ja kirjanpito **&gt; **Asetukset **&gt; **Projektinhallinnan ja kirjanpidon parametrit**. Määritä **Konsernin sisäinen **-välilehden **Ota käyttöön konsernin sisäinen resurssien ajoitus ja aikaraportit **-kentän arvoksi **Kyllä**.
@@ -78,14 +82,16 @@ Kun määrität työntekijää konsernin sisäiseksi resurssiksi, määritä tie
 1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektiresurssit** &gt; **Resurssiluettelo**.
 2.  Syötä hakusuodattimeen edellisessä toimenpiteessä sille yritykselle luomasi resurssin nimi, jolta resurssi lainataan. Varmista, että nimi löytyy sen yrityksen resurssiluettelosta, jolle resurssi lainataan.
 
-## <a name="manage-resource-competencies"></a>Resurssin osaamisalueiden hallinta
+## Resurssin osaamisalueiden hallinta
+<a id="manage-resource-competencies" class="xliff"></a>
 Resurssin osaamistietojen määritys on olennainen osa resurssien hallintaa. Osaamisalueita voi käyttää perustasona määriteltäessä resursseja, joilla on oikeanlaiset taidot, koulutus, todistukset ja projektikokemus. Nämä tiedot on määritettävä joka resurssille ja päivitettävä säännöllisesti. Näin voit maksimoida osaamisen, kun tiettyjä resurssien osaamisalueita yhdistellään projektin resurssimäärityksen yhteydessä. [![Esimerkkejä osaamisalueista, todistuksista, koulutuksesta ja projektikokemuksesta](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
 
 Seuraavissa ohjeissa selitetään, miten voi määrittää joitakin resurssin osaamisalueista. 
 
 Voit määrittää työntekijän osaamisalueet joko Henkilöstöhallinto-osassa **Työntekijät**-luettelossa tai Projektinhallinta ja kirjanpito -osassa **Resurssit**-sivulla. Seuraavissa vaiheissa käytetään Henkilöstöhallinto-osan **Työntekijät**-luetteloa.
 
-### <a name="set-up-competencies-certificates"></a>Osaamisalueiden määrittäminen: todistukset
+### Osaamisalueiden määrittäminen: todistukset
+<a id="set-up-competencies-certificates" class="xliff"></a>
 
 1.  Valitse **Työntekijät**-luettelosivulta sen työntekijän rivi, johon haluat lisätä todistustiedot.
 2.  Napsauta toimintoruudun **Työntekijä**-välilehdessä **Osaamistiedot**-ryhmässä **Todistukset**.
@@ -94,7 +100,8 @@ Voit määrittää työntekijän osaamisalueet joko Henkilöstöhallinto-osassa 
 5.  Valitse **Alkamispäivä** -kentästä **10/1/2015**.
 6.  Valitse **Tallenna** ja sulje sitten sivu.
 
-### <a name="set-up-competencies-skills"></a>Osaamisalueiden määrittäminen: osaamisalueet
+### Osaamisalueiden määrittäminen: osaamisalueet
+<a id="set-up-competencies-skills" class="xliff"></a>
 
 1.  Varmista **Työntekijät**-luettelosivulla, että aiemmassa vaiheessa valitsemasi työntekijä on yhä valittuna. Valitse sitten toimintoruudun **Työntekijä**-välilehdessä **Osaamistiedot**-ryhmässä **Osaamisalueet**.
 2.  Valitse **Uusi**.
@@ -104,7 +111,8 @@ Voit määrittää työntekijän osaamisalueet joko Henkilöstöhallinto-osassa 
 6.  Kirjoita **Kokemus vuosina** -kenttään arvoksi **10**.
 7.  Valitse **Tallenna** ja sulje sitten sivu.
 
-## <a name="create-a-new-project"></a>Luo uusi projekti
+## Luo uusi projekti
+<a id="create-a-new-project" class="xliff"></a>
 1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Työtilat** &gt; **Projektinhallinta**.
 2.  Valitse **Uusi projekti** ja syötä sitten seuraavat arvot:
     -   **Projektityyppi** - Aika ja materiaali
@@ -113,7 +121,8 @@ Voit määrittää työntekijän osaamisalueet joko Henkilöstöhallinto-osassa 
     -   **Projektisopimuksen tunnus** - 00000002
 3.  Valitse **Luo projekti**.
 
-### <a name="assign-a-resource-to-a-project"></a>Resurssin määrittäminen projektiin
+### Resurssin määrittäminen projektiin
+<a id="assign-a-resource-to-a-project" class="xliff"></a>
 
 1.  Valitse **Henkilöstöhallinto** &gt; **Työntekijät** &gt; **Työntekijät**.
 2.  Valitse **Työntekijät**-luettelosta sen työntekijän tietue, jonka osaamisalueet määritit aiemmassa vaiheessa, ja avaa tietue.
@@ -123,15 +132,16 @@ Voit määrittää työntekijän osaamisalueet joko Henkilöstöhallinto-osassa 
 6.  Valitse **Jäljellä olevat projektit** -ruudusta haluamasi projekti ja lisää se **Valitut projektit** -ruutuun napsauttamalla nuolta.
 7.  Sulje sivu.
 
-Tarvittaessa voit myös määrittää resurssille luokkia. Luokkatyyppi on joko Kustannus tai Tuotto. Tämä määräytyy organisaation mukaan. Jos resurssille ei ole määritetty luokkia, Dynamics 365 for Operations etsii oletusluokan kustannusten ja tuoton tuntihinnoista.
+Tarvittaessa voit myös määrittää resurssille luokkia. Luokkatyyppi on joko Kustannus tai Tuotto. Tämä määräytyy organisaation mukaan. Jos resurssille ei ole määritetty luokkia, Finance and Operations etsii oletusluokan kustannusten ja tuoton tuntihinnoista.
 
-### <a name="set-up-project-resource-and-role-characteristics"></a>Projektin resurssin ja rooliominaisuuksien määrittäminen
+### Projektin resurssin ja rooliominaisuuksien määrittäminen
+<a id="set-up-project-resource-and-role-characteristics" class="xliff"></a>
 
 Projektipäällikkö voi projektin resursointitoiminnolla luoda projektissa tarvittavia rooleja. Rooleja voidaan käyttää, kun vahvistetut resurssit eivät ole vielä tiedossa resurssien varaamisen aikana. Rooleja voidaan väliaikaisesti varata suunnitelluiksi resursseiksi, jotta voit jatkaa projektin suunnitteluvaiheita. 
 
 [![Esimerkki roolista](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
 
-**Skenaario:**Contoso palkattiin suorittamaan aika- ja materiaaliprojekti, jolla on hyväksytty projektin perustamisasiakirja. Nuorempi projektipäällikkö on yhä laatimassa projektin laajuutta. Resurssipäällikkö on parhaillaan määrittämässä resursseja, jotka varataan uuteen projektiin. Yksi rooleista, joita projektin sponsori on toivonut projektin tärkeyden vuoksi, on vastaava projektipäällikkö. Resurssipäällikön on hankittava uusi resurssi, ja hän määrittää roolin järjestelmään siltä varalta, että nuorempi projektipäällikkö tarvitsee resurssitiedot projektin suunnittelua varten. 
+**Skenaario:** Contoso palkattiin suorittamaan aika- ja materiaaliprojekti, jolla on hyväksytty projektin perustamisasiakirja. Nuorempi projektipäällikkö on yhä laatimassa projektin laajuutta. Resurssipäällikkö on parhaillaan määrittämässä resursseja, jotka varataan uuteen projektiin. Yksi rooleista, joita projektin sponsori on toivonut projektin tärkeyden vuoksi, on vastaava projektipäällikkö. Resurssipäällikön on hankittava uusi resurssi, ja hän määrittää roolin järjestelmään siltä varalta, että nuorempi projektipäällikkö tarvitsee resurssitiedot projektin suunnittelua varten. 
 
 Seuraavissa vaiheissa on esitetty, miten resurssipäällikkö voi määrittää vastaavan projektipäällikön roolin ja liittää siihen resurssin ominaisuudet. Myöhemmin roolin avulla voidaan hakea käytettävissä olevia resursseja, jotka vastaavat tarvittavia resurssin osaamisalueita.
 
@@ -147,7 +157,8 @@ Seuraavissa vaiheissa on esitetty, miten resurssipäällikkö voi määrittää 
 8.  Syötä **Käytettävissä olevat ominaisuudet** -kenttään haettava todistustyyppi.
 9.  Valitse **OK** ja sulje sivu.
 
-### <a name="assign-a-project-resource-to-a-project"></a>Projektiresurssin määrittäminen projektiin
+### Projektiresurssin määrittäminen projektiin
+<a id="assign-a-project-resource-to-a-project" class="xliff"></a>
 
 1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Yleiset** &gt; **Projektit** &gt; **Kaikki projektit** ja avaa **XYZ-päivitysvaihe 2** -projekti.
 2.  Valitse **Projektiryhmän ja ajoitus** -välilehdestä **Lisää**.
@@ -162,7 +173,8 @@ Seuraavissa vaiheissa on esitetty, miten resurssipäällikkö voi määrittää 
 8.  Valitse **Kiinteä varaus** &gt; **Koko kapasiteetti**.
 9.  Sulje sivu.
 
-### <a name="assign-a-resource-to-a-default-role"></a>Resurssin määrittäminen oletusrooliin
+### Resurssin määrittäminen oletusrooliin
+<a id="assign-a-resource-to-a-default-role" class="xliff"></a>
 
 Voit auttaa projekti- tai resurssipäälliköitä porautumalla alemmas resursseihin, jotka voidaan varata projektiin. Voit liittää oletusroolin aiemmin luotuun tai vasta hankittuun resurssiin. Esimerkiksi kun Daniel palkattiin, hänellä oli yritysanalyytikon rooliin tarvittava kokemus ja osaamisalueet. Resurssipäällikkö määritti tämän roolin Danielin oletusrooliksi. Resurssipäällikkö lisäsi Danielin toisin sanoen niiden yritysanalyytikkojen pooliin, jotka ovat käytettävissä projekteissa. 
 
@@ -180,7 +192,8 @@ Resurssin varaamisen yhteydessä projektipäälliköt voivat suodattaa roolin re
 5.  Valitse **Tallenna** ja sulje sitten sivu.
 6.  Lisää **Osaamistiedot**-välilehdessä **ProjectMgmt**-osaamisalue ja **PMP**-todistus.
 
-## <a name="set-up-role-based-pricing"></a>Roolipohjaisen hinnoittelun määrittäminen
+## Roolipohjaisen hinnoittelun määrittäminen
+<a id="set-up-role-based-pricing" class="xliff"></a>
 Rooleille voidaan määrittää kaikki kustannukset sekä myynti- ja siirtohinnat.
 
 1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Hinnat** &gt; **Myyntihinta (tunti)**.
@@ -189,8 +202,9 @@ Rooleille voidaan määrittää kaikki kustannukset sekä myynti- ja siirtohinna
 4.  Valitse **Rooli**-sarakkeesta haluamasi rooli.
 5.  Syötä **Hinnoittelu**-sarakkeeseen hinta valitulle resurssiroolille.
 
-## <a name="form-a-project-team"></a>Projektiryhmän muodostaminen
-Projektipäällikön täytyy liittää projektin yhteydessä aiemmin määritetyt roolit projektiin, jotta hän voi käyttää niitä. Projektille voidaan määrittää useita rooleja, ja Dynamics 365 for Operations nimikoi ne automaattisesti varaamisen aikana selvyyden vuoksi. Jos projektipäällikkö tarvitsee esimerkiksi kolme ohjelmistosuunnittelijaa, luodaan automaattisesti kolme ohjelmistosuunnittelijan roolia, joiden nimikkeinä on ohjelmistosuunnittelija 1, ohjelmistosuunnittelija 2 ja ohjelmistosuunnittelija 3. Jos roolille on määritetty ominaisuudet jo aiemmin, niitä käytetään suodattimina resurssia haettaessa. Hakua voi tarkentaa lisäämällä muitakin ominaisuuksia tarpeen mukaan. 
+## Projektiryhmän muodostaminen
+<a id="form-a-project-team" class="xliff"></a>
+Projektipäällikön täytyy liittää projektin yhteydessä aiemmin määritetyt roolit projektiin, jotta hän voi käyttää niitä. Projektille voidaan määrittää useita rooleja, ja Finance and Operations nimeää ne selvyyden vuoksi automaattisesti varaamisen yhteydessä. Jos projektipäällikkö tarvitsee esimerkiksi kolme ohjelmistosuunnittelijaa, luodaan automaattisesti kolme ohjelmistosuunnittelijan roolia, joiden nimikkeinä on ohjelmistosuunnittelija 1, ohjelmistosuunnittelija 2 ja ohjelmistosuunnittelija 3. Jos roolille on määritetty ominaisuudet jo aiemmin, niitä käytetään suodattimina resurssia haettaessa. Hakua voi tarkentaa lisäämällä muitakin ominaisuuksia tarpeen mukaan. 
 
 Myös näyttöasetukset voidaan mukauttaa, jotta resurssien käytettävyys saadaan paremmin näkyviin. Näyttöperusteeksi voi valita käytettävyyden tunnin, päivän, viikon, kuukauden, vuosineljänneksen tai vuoden perusteella. Myös resurssien käytettävissä ja jäljellä olevan kapasiteetin voi suodattaa näkyviin. Tämä vaihtoehto on hyödyllinen ajanhallinnassa, kun arvioit tehtäviin käytettävissä olevaa aikaa tai resurssien käytettävyyttä. 
 
@@ -205,7 +219,8 @@ Projektipäällikkö voi varata resurssin projektiin eri tavoilla, esimerkiksi v
 
 Seuraavissa vaiheissa on selostettu, miten projektiryhmä luodaan.
 
-### <a name="create-a-project-team"></a>Projektiryhmän luominen
+### Projektiryhmän luominen
+<a id="create-a-project-team" class="xliff"></a>
 
 1.  Valitse **Kaikki projektit** -luettelosivulta haluamasi projekti ja valitse sitten **Muokkaa**.
 2.  Syötä **Projektiryhmän ja ajoitus** -välilehdessä **Ajoita päättymispäivä** -kenttään aikataulun alkamispäivä plus yksi kuukausi. Jos aikataulun alkamispäivä on esimerkiksi 24. kesäkuuta 2017 (24/06/2017), syötä **24/07/2017**.
@@ -220,10 +235,12 @@ Seuraavissa vaiheissa on selostettu, miten projektiryhmä luodaan.
 11. Valitse **Luo**.
 12. Valitse **Projektit**-sivulla **Toteuta resurssi**.
 
-## <a name="resource-capacity-synchronization"></a>Resurssin kapasiteetin synkronointi
+## Resurssin kapasiteetin synkronointi
+<a id="resource-capacity-synchronization" class="xliff"></a>
 Resurssin synkronointiprosessi auttaa varmistamaan, että kalenterin ja peruskalenterin tiedot siirtyvät projektiresurssien ajoitukseen. Jos kalenteria muutetaan, prosessit tekevät projektiresurssien ajoitukseen tarvittavat päivitykset. Prosessit auttavat myös parantamaan suorituskykyä, koska kalenterin resurssitiedot synkronoidaan etukäteen, jotta resurssin ajoitustietoihin tehtävät päivitykset voidaan tehdä nopeammin. Prosessit kannattaa ajoittaa eräajona, ei yksitellen. Muussa tapauksessa riskinä on, että edelliseen synkronointiin sisällytettävät päivämäärät unohtuvat. Jos sisällytettäviä päivämääriä ei käytetä, päivämäärien synkronointiin voi jäädä aukkoja.
 
-### <a name="calendar-synchronizationmediaprojectresourcing04-1024x471jpg"></a>![Kalenterin synkronointi](./media/projectresourcing04-1024x471.jpg)
+### ![Kalenterin synkronointi](./media/projectresourcing04-1024x471.jpg)
+<a id="calendar-synchronizationmediaprojectresourcing04-1024x471jpg" class="xliff"></a>
 
 **Synkronoi resurssin kapasiteetin koonnit**
 
@@ -240,14 +257,16 @@ Ne kannattaa tehdä eräajona. Vaihtoehdot ovat käytettävissä kapasiteettivar
 
 [![Synkronointiprosessi](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)
 
-## <a name="set-up-roles-on-wbs-templates"></a>Roolien määrittäminen työrakennemalleille
+## Roolien määrittäminen työrakennemalleille
+<a id="set-up-roles-on-wbs-templates" class="xliff"></a>
 Projektipäälliköt voivat määrittää työrakennemalleja ja käyttää niitä luodessaan uusille projekteille työrakennetta. Projektipäälliköt voivat lisätä rooleja malleja luodessaan. Voit määrittää roolin työrakennemalliin seuraavasti.** **
 
 1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Projektit** &gt; **Työrakennemallit**.
 2.  Valitse valitun työrakennemallin **Tiedot**-kohta.
 3.  Valitse luettelosta haluamasi tehtävä ja valitse sitten **Rooli**-kentästä tehtävään määritettävä rooli.
 
-### <a name="work-with-a-wbs"></a>Työrakenteen käsitteleminen
+### Työrakenteen käsitteleminen
+<a id="work-with-a-wbs" class="xliff"></a>
 
 Voit luoda uuden työrakenteen tai kopioida sen aiemmin luodusta työrakennemallista. Projektipäällikkö voi hallita resursseja helposti määrittämällä työrakenteessa roolit uusille tehtäville. Roolit voidaan korvata, kun resurssi on hankittu tai kun vahvistettu resurssi tehtävään on määritetty. Näin projektipäälliköt voivat suorittaa joustavasti seuraavat tehtävät:
 
@@ -277,7 +296,7 @@ Työrakenteeseen on liitetty lisäasetuksia, jotka helpottavat resursointitoimin
 </tr>
 <tr class="even">
 <td>Luo ryhmä automaattisesti</td>
-<td>Lisää suunnitellut resurssit automaattisesti käyttämällä tehtävään liitettyjä rooleja. Dynamics 365 for Operations ehdottaa suunniteltuja resursseja automaattisesti käyttämällä rooleihin perustuvaa useiden ehtojen analyysia. Kun tehtäville on määritetty roolit ja työaika (tunnit) työrakenteessa ja rakenne on julkaistu, valitse <strong>Luo ryhmä automaattisesti</strong>. Tarvittava suunniteltujen resurssien määrä lisätään työrakenteeseen ja <strong>Projektiryhmä ja ajoitus</strong> -välilehteen.</td>
+<td>Lisää suunnitellut resurssit automaattisesti käyttämällä tehtävään liitettyjä rooleja. Finance and Operations ehdottaa suunniteltuja resursseja automaattisesti käyttämällä rooleihin perustuvaa useiden ehtojen analyysia. Kun tehtäville on määritetty roolit ja työaika (tunnit) työrakenteessa ja rakenne on julkaistu, valitse <strong>Luo ryhmä automaattisesti</strong>. Tarvittava suunniteltujen resurssien määrä lisätään työrakenteeseen ja <strong>Projektiryhmä ja ajoitus</strong> -välilehteen.</td>
 </tr>
 <tr class="odd">
 <td>Resurssi (avattava luettelo)</td>
@@ -319,7 +338,8 @@ Työrakenteeseen on liitetty lisäasetuksia, jotka helpottavat resursointitoimin
 > Näyttöön ei tule varoitusta siitä, että määritetyn resurssin arvo on nyt 2, koska resurssien määrä on edelleen 1.
 18. Tarkista **Työrakenne**-sivulta työrakenteen resurssimääritys ja valitse sitten **Tallenna**.
 
-## <a name="resource-fulfillment-for-planned-resources"></a>Resurssin toteuttaminen suunnitelluille resursseille
+## Resurssin toteuttaminen suunnitelluille resursseille
+<a id="resource-fulfillment-for-planned-resources" class="xliff"></a>
 Projektipäällikkö voi suunnitella projektille tarvittavat resurssiroolit. Resurssipäällikkö näkee suunnitellut resurssit pyyntöinä **Resurssin toteuttaminen** -sivulla ja voi määrittää varsinaiset resurssit.
 
 1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektit** &gt; **Kaikki projektit**.
@@ -336,7 +356,8 @@ Projektipäällikkö voi suunnitella projektille tarvittavat resurssiroolit. Res
 12. Tarkista, että **Ohjelmistokehittäjä 1** -rivi on poistettu **XYZ-päivitysvaihe 2** -projektista.
 13. Tarkista **Projektiryhmä ja ajoitus** -välilehdessä, että vaiheessa 11 valitsemasi työntekijä on lisätty **XYZ-päivitysvaihe 2** -projektiin **ohjelmistokehittäjäksi**.
 
-## <a name="requests-for-project-resources"></a>Projektiresurssien pyynnöt
+## Projektiresurssien pyynnöt
+<a id="requests-for-project-resources" class="xliff"></a>
 Projektiresurssin ajoitustoiminto tukee vain resurssipäälliköitä, jotka jakavat henkilöllisiä resursseja sitoumuksiin tai projekteihin. Tämä toiminto otetaan käyttöön suorittamalla seuraavat tehtävät valmiiksi tai varmistamalla, että ne on suoritettu.
 
 -   Määritä numerosarjat.
@@ -351,7 +372,8 @@ Kun olet varmistanut, että tehtävät on tehty, tai suorittanut ne, voit suorit
 -   Pyydä henkilöllistä resurssia työrakenteesta.
 -   Varaa projektin resurssit ilman henkilöllisen resurssin pyyntöä.
 
-## <a name="monitor-project-teams"></a>Projektiryhmien seuranta
+## Projektiryhmien seuranta
+<a id="monitor-project-teams" class="xliff"></a>
 1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektit** &gt; **Kaikki projektit**.
 2.  Napsauta projektiluettelossa **XYZ-päivitysvaihe 2** -projektin **Projektitunnus**-linkkiä.
 3.  Tarkista **Projektiryhmä ja ajoitus** -pikavälilehdessä, että luettelossa näkyvät projektiresurssit ovat oikein.

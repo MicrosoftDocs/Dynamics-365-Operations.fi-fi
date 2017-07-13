@@ -3,14 +3,14 @@ title: "Varaston määritys"
 description: "Tässä artikkelissa kerrotaan, miten varasto määritetään. Artikkeli sisältää tietoja varastoasettelun ja -prosessien ottamisesta käyttöön."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11554
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
@@ -18,25 +18,27 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 08c086767303f6f52e085f8f56b5d09f1e46878f
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 17608d373fbedd20efe0b525ec141989a50a40a2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="warehouse-configuration"></a>Varaston määritys
+# Varaston määritys
+<a id="warehouse-configuration" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa kerrotaan, miten varasto määritetään. Artikkeli sisältää tietoja varastoasettelun ja -prosessien ottamisesta käyttöön.
 
-**Huomautus:** Tässä artikkelissa käsitellään**Varastonhallinta** -moduulin toimintoja (varaston lisätoiminnot). Se ei koske **Inventoinnin- ja varastonhallinta** -moduulin varasto-ominaisuuksia.
+**Huomautus:** Tässä artikkelissa käsitellään **Varastonhallinta** -moduulin toimintoja (varaston lisätoiminnot). Se ei koske **Inventoinnin- ja varastonhallinta** -moduulin varasto-ominaisuuksia.
 
-## <a name="warehouse-layout"></a>Varastoasettelu
-Microsoft Dynamics 365 for Operations -järjestelmän varastonhallintajärjestelmä mahdollistaa varastoasettelun määrittämisen joustavasti muuttuvien tarpeiden mukaan siten, että varastoa voidaan käyttää mahdollisimman tehokkaasti.
+## Varastoasettelu
+<a id="warehouse-layout" class="xliff"></a>
+Microsoft Dynamics 365 for Finance and Operations Enterprise edition -järjestelmän varastonhallintajärjestelmä mahdollistaa varastoasettelun määrittämisen joustavasti muuttuvien tarpeiden mukaan siten, että varastoa voidaan käyttää mahdollisimman tehokkaasti.
 
 -   Voit määrittää suuren ja pienen prioriteetin varastoalueita tavaroiden optimaalisen sijoitusta varten.
 -   Voit jakaa varaston vyöhykkeisiin erilaisten varastotarpeiden mukaan, joita ovat esimerkiksi lämpötilavaatimukset tai nimikkeiden erilaiset läpimenoajat.
@@ -44,9 +46,10 @@ Microsoft Dynamics 365 for Operations -järjestelmän varastonhallintajärjestel
 -   Voit ryhmittää sijainnit fyysisen kapasiteetin rajoitusasetuksilla.
 -   Voit määrittää kyselymäärityssäännöillä, miten nimikkeet varastoidaan ja kerätään.
 
-Microsoft Dynamics 365 for Operations -järjestelmän varastonhallinnan käyttöä varten on luotava varasto ja otettava käyttöön varastonhallinnan lisä- tai erikoistoiminnot. Valitse **Varastot**-sivulla **Käytä varastonhallintaprosesseja**.
+Finance and Operationsin varastonhallinnan käyttöä varten on luotava varasto ja otettava käyttöön varastonhallinnan lisä- tai erikoistoiminnot. Valitse **Varastot**-sivulla **Käytä varastonhallintaprosesseja**.
 
-### <a name="zone-groups-zones-location-types-and-locations"></a>Vyöhykeryhmät, vyöhykkeet, sijaintityypit ja sijainnit
+### Vyöhykeryhmät, vyöhykkeet, sijaintityypit ja sijainnit
+<a id="zone-groups-zones-location-types-and-locations" class="xliff"></a>
 
 Osana varastoasettelun käyttöönottoprosessia on määritettävä varaston vyöhykeryhmät ja vyöhykkeet, sijaintiprofiilit, sijaintityypit ja sijainnit.
 
@@ -56,9 +59,10 @@ Osana varastoasettelun käyttöönottoprosessia on määritettävä varaston vy�
 -   **Sijaintityypit** – Varastosijaintien looginen tai fyysinen ryhmittely. Voit esimerkiksi luoda sijaintityypin kaikille väliaikaisille sijainneille. **Varastonhallinnan parametrit** -sivun pakolliset asetukset määrittävät väliaikaisten sijaintityyppien ja lopullisen lähetyssijaintityypin määritysprosessin.
 -   **Sijainnit** – Sijaintitietojen alin taso. Sijaintien avulla voidaan seurata, mihin käytettävissä oleva varasto on varastoitu ja mistä se kerätään varastossa.
 
-Varastoasettelun määrittämistä varten luotuja yksiköitä käytetään kyselyissä, jotka määritetään työmalleissa siirtämään varaston työtilauksia. Niinpä sinun on otettava esimerkiksi vyöhykkeitä ja sijaintityyppejä määritettäessä huomioon, miten varaston eri alueita käytetään eri prosesseissa. Ota huomioon myös tietyn alueen fyysiset ominaisuudet. Joillakin alueilla voi esimerkiksi käyttää vain tietyn tyyppistä trukkia. Tai jos yrityksen tiloissa on sekä valmiita tuotteita että tuotantoa, Dynamics 365 for Operations -järjestelmään kannattaa ehkä luoda yksi varasto mutta erottaa sitten nämä toiminnot luomalla kaksi vyöhykeryhmää. Anna yksiköille kuvaileva nimi, jotta ne on helppo tunnistaa, kun käytät niitä mallikyselyissä.
+Varastoasettelun määrittämistä varten luotuja yksiköitä käytetään kyselyissä, jotka määritetään työmalleissa siirtämään varaston työtilauksia. Niinpä sinun on otettava esimerkiksi vyöhykkeitä ja sijaintityyppejä määritettäessä huomioon, miten varaston eri alueita käytetään eri prosesseissa. Ota huomioon myös tietyn alueen fyysiset ominaisuudet. Joillakin alueilla voi esimerkiksi käyttää vain tietyn tyyppistä trukkia. Tai jos yrityksen tiloissa on sekä valmiita tuotteita että tuotantoa, Finance and Operations -järjestelmään kannattaa ehkä luoda yksi varasto mutta erottaa sitten nämä toiminnot luomalla kaksi vyöhykeryhmää. Anna yksiköille kuvaileva nimi, jotta ne on helppo tunnistaa, kun käytät niitä mallikyselyissä.
 
-### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Sijainnin varastointirajoitukset, sijaintiprofiilit ja kiinteät keräilysijainnit
+### Sijainnin varastointirajoitukset, sijaintiprofiilit ja kiinteät keräilysijainnit
+<a id="location-stocking-limits-location-profiles-and-fixed-picking-locations" class="xliff"></a>
 
 Varaston fyysinen asettelu on otettava huomioon, koska se vaikuttaa tallennuskapasiteettiin (sijainnin varastointirajoitukset ja sijaintiprofiilit) ja koska se liittyy yritykseen optimoida varastoprosessit. 
 
@@ -68,14 +72,17 @@ Jos sijainnin kapasiteettirajoitusten hallinta edellyttää lisälaskutoimituksi
 
 Jotta lähtevät prosessit olisivat optimaalisia, on harkittava käytetäänkö kiinteitä keräilysijainteja ja/tai pakkaussijainteja. Vähimmäis- tai enimmäistäydennystä käytetään usein irtotavara-alueelta keräilysijaintiin tapahtuvassa täydennysprosesseissa, ja samassa varastossa voidaan ottaa käyttöön useita kiinteitä keräilysijainteja tuotevarianteille. Harkitse, miten joustavuus paranee ottamalla käyttöön erillisiä kysynnän täydennyksen ylityssijainteja, joita käytetään vain aallon tai kuormituksen täydennyskäsittelyssä.
 
-### <a name="location-setup-wizard"></a>Ohjattu sijaintien asennustoiminto
+### Ohjattu sijaintien asennustoiminto
+<a id="location-setup-wizard" class="xliff"></a>
 
 Voit luoda varastoon nopeasti sijainteja ohjatulla **Sijaintien asennus**-toiminnolla. Voit ylläpitää sijaintien nimimuotoilua osana tätä prosessia.
 
-## <a name="warehouse-processes"></a>Varastoprosessit
+## Varastoprosessit
+<a id="warehouse-processes" class="xliff"></a>
 On tärkeää, että varaston määrityksen osana otetaan käyttöön liiketoiminnan vaatimusten mukaiset varastoprosessit. Tärkeimmät määritettävät komponentit ovat aaltomallit, työmallit, työpoolit ja sijaintidirektiivit.
 
-### <a name="wave-templates"></a>Aaltomallit
+### Aaltomallit
+<a id="wave-templates" class="xliff"></a>
 
 Aaltomallien avulla voidaan ottaa käyttöön lähtevien varastoon vapautusprosessi. Heti kun tilausrivit vapautetaan (joko suoraan lähdeasiakirjasta, erätyöprosessien kautta tai aiemmin luotujen kuormitusten kautta), käyttöön otetaan aaltomallitoiminto. 
 
@@ -88,13 +95,15 @@ Parametreilla määritetään, miten pitkälle järjestelmä käsittelee lähtev
 
 Aallon käsittelymenetelmät on määritettävä kussakin aaltomallissa. Käytettävissä olevat menetelmät vaihtelevat aaltomallin tyypin mukaan.
 
-### <a name="work-templates"></a>Työmallit
+### Työmallit
+<a id="work-templates" class="xliff"></a>
 
 Työmallin määritykset ovat tärkeitä varastonhallinnan työprosessien määrityksessä. Ne määrittävät suoritettavat työt ja miten työ suoritetaan. Malleissa voi olla myös sijaintidirektiiviin linkitetty direktiivikoodi, joka määrittää, missä työ suoritetaan. Työmallit sisältävät kyselyn, joka määrittää työn ehdot. Kussakin mallissa on oltava vähintään yksi keräystyövaihe ja yksi määritystoiminto, joiden perusteella suoritetaan perustyövaihe, jossa käytettävissä oleva varasto siirretään sijainnista toiseen. 
 
 Jos useiden työntekijöiden on voitava käsitellä joidenkin varastotoimintojen töitä, kannattaa harkita *väliaikaisen* varaston käyttöä ja työn suorittamisen erottelua eri työluokkiin.
 
-### <a name="work-pools"></a>Työpoolit
+### Työpoolit
+<a id="work-pools" class="xliff"></a>
 
 Työt voidaan ryhmitellä työpoolien avulla. Voit esimerkiksi luoda työpoolin luokitellaksesi työn, joka tapahtuu tietyssä varastosijainnissa. Voit määrittää laskentaa lukuun ottamatta kaikkien työtyyppien kohdalla työpoolin työmalliin. Voit määrittää inventoinnissa työpoolin seuraavilla sivuilla:
 
@@ -107,13 +116,15 @@ Kun työn mallien avulla luodaan työ, työpooli liitetään automaattisesti ty�
 
 Työpoolin tunnuksilla voidaan myös rajoittaa tietylle varastotyöntekijälle ohjattavia työtyyppejä, jos toiminto on määritetty soveltuvassa mobiililaitteen valikkovaihtoehdossa.
 
-### <a name="location-directives"></a>Sijaintidirektiivit
+### Sijaintidirektiivit
+<a id="location-directives" class="xliff"></a>
 
 Nimen mukaisesti sijaintidirektiiveillä ohjataan työtapahtumia sopiviin varastosijainteihin. Niillä siis toisin sanoen määritetään, missä keräys ja määritys tapahtuu. 
 
 Voit helpottaa ja nopeuttaa kuhunkin sijaintidirektiiviriviin liitettyjen toimintojen määrittämistä käyttämällä jotakin valmista strategiaa. Voit esimerkiksi hakea **Tyhjä sijainti ilman saapuvia töitä** -strategialla vapaita sijainteja varastosta. **FEFO - erän varaus** -strategialla voi puolestaan käyttää lähtevien myyntikeräykseen.
 
-<a name="see-also"></a>Lisätietoja
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
 [Sijaintien määrittäminen varastonhallintajärjestelmää käyttävässä varastossa (tehtäväopas)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)

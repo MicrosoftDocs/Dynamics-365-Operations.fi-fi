@@ -1,16 +1,16 @@
 ---
 title: "Mukauta käyttäjäkokemusta"
-description: "Tässä artikkelissa kerrotaan, kuinka voit mukauttaa Microsoft Dynamics 365 for Operationsia."
+description: "Tässä artikkelissa kerrotaan, kuinka voit mukauttaa Microsoft Dynamics 365 for Finance and Operationsia."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysUserSetup
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
@@ -18,44 +18,48 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 689efef6ffa10bbee30cd734f3f09ba20957834d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="personalize-the-user-experience"></a>Mukauta käyttäjäkokemusta
+# Käyttäjäkokemuksen mukauttaminen
+<a id="personalize-the-user-experience" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kerrotaan, kuinka voit mukauttaa Microsoft Dynamics 365 for Operationsia.
+Tässä artikkelissa kerrotaan, kuinka voit mukauttaa Microsoft Dynamics 365 for Finance and Operationsia.
 
-Microsoft Dynamics 365 for Operationsissa on monenlaisia mukauttamismahdollisuuksia. Jotkut mukautukset ovat valintoja, jotka teet asetussivulla vaihtoehtojen luettelossa. Jotkut mukautukset ovat implisiittisiä, esimerkiksi Dynamics 365 for Operations seuraa ruudukoiden sarakeleveyksiä, jos muutat niitä, sekä pikavälilehtien laajennus- ja tiivistystiloja. Muut mukautukset ovat eksplisiittisiä. Eksplisiittistä mukauttamista varten siirryt vuorovaikutteiseen mukautustilaan ja muutat sivun ulkonäköä hallitsemalla suoraan tapaa, jolla eri elementit näkyvät tai toimivat sivulla. 
+Microsoft Dynamics 365 for Finance and Operationsissa on monenlaisia mukauttamismahdollisuuksia. Jotkut mukautukset ovat valintoja, jotka teet asetussivulla vaihtoehtojen luettelossa. Jotkin mukautukset ovat implisiittisiä, esimerkiksi Finance and Operations seuraa ruudukoiden sarakeleveyksiä, jos muutat niitä, sekä pikavälilehtien laajennus- ja tiivistystiloja. Muut mukautukset ovat eksplisiittisiä. Eksplisiittistä mukauttamista varten siirryt vuorovaikutteiseen mukautustilaan ja muutat sivun ulkonäköä hallitsemalla suoraan tapaa, jolla eri elementit näkyvät tai toimivat sivulla. 
 
-Kaikki ja kaiken tyyppiset käyttäjän Dynamics 365 for Operationsissa tekemät mukautukset koskevat vain kyseistä käyttäjää siitä yrityksestä riippumatta, jonka kanssa käyttäjä on vuorovaikutuksessa. Käyttäjän sivulle tekemät muutokset eivät vaikuta järjestelmän muihin käyttäjiin.
+Kaikki ja kaiken tyyppiset käyttäjän Finance and Operationsissa tekemät mukautukset koskevat vain kyseistä käyttäjää riippumatta siitä yrityksestä, jonka kanssa käyttäjä on vuorovaikutuksessa. Käyttäjän sivulle tekemät muutokset eivät vaikuta järjestelmän muihin käyttäjiin.
 
-## <a name="systemwide-options-for-the-current-user"></a>Nykyisen käyttäjän järjestelmänlaajuiset vaihtoehdot
+## Nykyisen käyttäjän järjestelmänlaajuiset vaihtoehdot
+<a id="systemwide-options-for-the-current-user" class="xliff"></a>
 Näet Siirtymispalkissa rattaan kuvan, jota kutsutaan **Asetukset**-valikkopainikkeeksi. Tämän **Asetukset**-valikon avaaminen tuo näyttöön eri vaihtoehtoja. Valinta **Asetukset** avaa käyttäjälle **Asetukset**-sivun. Tällä sivulla on neljä vaihtoehtovälilehteä: **Visuaalinen**, **Valinnat**, **Tili**, ja **Työnkulku**.
 
--   **Visuaalinen:**Käytä tätä valitaksesi väriteeman ja sivusi elementtien oletuskoon.
--   **Valinnat:**Tässä voit valita oletusasetukset, jotka näkyvät aina, kun avaat Dynamics 365 for Operationsin. Tähän sisältyvät yritys, aloitussivu ja oletusnäkymä/-muokkaustila (joka määrittää, onko sivu lukittu katselua varten vai avautuuko se muokkausta varten aina kun avaat sen). Löydät myös kieli-, aikavyöhyke-, päivämäärä-, aika- ja numeromuotojen vaihtoehdot. Viimeisenä sivulla on erilaisia sekalaisia valintoja, jotka vaihtelevat versioiden välillä.
--   **Tili:**Anna tässä käyttäjätunnuksesi ja muut tiliin liittyvät vaihtoehdot.
--   **Työnkulku:**Tässä voit valita työnkulkuun liittyviä vaihtoehtoja.
+-   **Visuaalinen:** Käytä tätä valitaksesi väriteeman ja sivusi elementtien oletuskoon.
+-   **Valinnat:** Voit valita täällä oletusasetukset, jotka näkyvät aina, kun avaat Finance and Operationsin. Näitä asetuksia ovat yritys, aloitussivu ja oletusnäkymä tai -muokkaustila (joka määrittää, onko sivu lukittu katselua varten vai avautuuko se muokkausta varten aina, kun avaat sen). Löydät myös kieli-, aikavyöhyke-, päivämäärä-, aika- ja numeromuotojen vaihtoehdot. Viimeisenä sivulla on erilaisia sekalaisia valintoja, jotka vaihtelevat versioiden välillä.
+-   **Tili:** Anna tässä käyttäjätunnuksesi ja muut tiliin liittyvät vaihtoehdot.
+-   **Työnkulku:** Tässä voit valita työnkulkuun liittyviä vaihtoehtoja.
 
-## <a name="implicit-personalizations"></a>Implisiittiset mukautukset
+## Implisiittiset mukautukset
+<a id="implicit-personalizations" class="xliff"></a>
 Implisiittiset mukautukset ovat niitä mukautuksia, jotka suoritat yksinkertaisesti olemalla vuorovaikutuksessa tiettyjen tarkistusten kanssa, jotka muistavat nykyisen näkyvän tilansa. 
 
-**Ruudukon sarakkeet:** Voit muokata luettelon sarakkeen leveyttä valitsemalla koon muuttamiseen tarkoitetun palkin sarakkeen otsikon vasemmalla tai oikealla puolella ja vetämällä sitä vasemmalle tai oikealle haluttuun leveyteen. Dynamics 365 for Operations tallentaa haluamasi leveyden ja näyttää kyseisen sarakkeen tässä leveydessä aina, kun avaat kyseisen luettelon sisältämän sivun. 
+**Ruudukon sarakkeet:** Voit muokata luettelon sarakkeen leveyttä valitsemalla koon muuttamiseen tarkoitetun palkin sarakkeen otsikon vasemmalla tai oikealla puolella ja vetämällä sitä vasemmalle tai oikealle haluttuun leveyteen. Finance and Operations tallentaa haluamasi leveyden ja näyttää kyseisen sarakkeen tämänlevyisenä aina, kun avaat kyseisen luettelon sisältämän sivun. 
 
-**Pikavälilehdet:** Joillain sivuilla on laajennettavia osioita nimeltä pikavälilehdet. Dynamics 365 for Operations tallentaa tiedon, mitkä pikavälilehdet olet laajentanut ja mitkä pikavälilehdet olet tiivistänyt. Aina palatessasi sivulle samat pikavälilehdet laajennetaan tai tiivistetään edellisen käyttökertasi perusteella. Tässä artikkelissa kerromme, miten voit muuttaa pikavälilehtien osioiden järjestystä. Joissain tapauksissa pikavälilehden tiivistäminen parantaa suorituskykyä, koska Dynamics 365 for Operationsin ei tarvitse noutaa tietoja kyseistä pikavälilehteä varten ennen kuin se laajennetaan. 
+**Pikavälilehdet:** Joillain sivuilla on laajennettavia osioita nimeltä pikavälilehdet. Finance and Operations tallentaa tiedon, mitkä pikavälilehdet olet laajentanut ja mitkä pikavälilehdet olet tiivistänyt. Aina palatessasi sivulle samat pikavälilehdet laajennetaan tai tiivistetään edellisen käyttökertasi perusteella. Tässä artikkelissa kerromme, miten voit muuttaa pikavälilehtien osioiden järjestystä. Joissain tapauksissa pikavälilehden tiivistäminen parantaa suorituskykyä, koska Finance and Operationsin ei tarvitse noutaa tietoja kyseistä pikavälilehteä varten ennen kuin se laajennetaan. 
 
-**Tietoruudut:** Joillain sivuilla on osioita nimeltä Tietoruutu. Tämä ruutu sisältää kyseisen sivun aihepiiriin liittyvää tietoa vain-luku-muodossa. Kutakin Tietoruutu-osion osa kutsutaan Tietoruuduksi. Voit laajentaa tai tiivistää Tietoruudun, ja Dynamics 365 for Operations tallentaa valintasi. Joissain tapauksissa Tietoruudun tiivistäminen parantaa suorituskykyä, koska Dynamics 365 for Operationsin ei tarvitse noutaa tietoja kyseistä Tietoruutua varten ennen kuin se laajennetaan.
+**Tietoruudut:** Joillain sivuilla on osioita nimeltä Tietoruutu. Tämä ruutu sisältää kyseisen sivun aihepiiriin liittyvää tietoa vain-luku-muodossa. Kutakin Tietoruutu-osion osa kutsutaan Tietoruuduksi. Voit laajentaa tai tiivistää Tietoruudun, ja Finance and Operations tallentaa valintasi. Joissain tapauksissa tietoruudun tiivistäminen parantaa suorituskykyä, koska Finance and Operationsin ei tarvitse noutaa tietoja kyseistä tietoruutua varten ennen kuin se laajennetaan.
 
-## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Eksplisiittinen mukauttaminen Mukauttaminen-työkalurivin avulla
-Jokaisella henkilöllä ja yrityksellä on eri perspektiivi siihen, mitkä tiedot ovat heille tärkeimpiä, tai mitkä tiedot eivät ole tarpeen heidän tavassaan harjoittaa liiketoimintaa. Mahdollisuus muokata tapaa, jolla tiedot järjestetään, miten niiden kanssa ollaan vuorovaikutuksessa tai jopa miten ne piilotetaan, on avain siihen, miten Dynamics 365 for Operationsista tehdään henkilökohtainen ja tuottava kokemus. 
+## Eksplisiittinen mukauttaminen Mukauttaminen-työkalurivin avulla
+<a id="explicit-personalizations-using-the-personalization-toolbar" class="xliff"></a>
+Jokaisella henkilöllä ja yrityksellä on eri perspektiivi siihen, mitkä tiedot ovat heille tärkeimpiä, tai mitkä tiedot eivät ole tarpeen heidän tavassaan harjoittaa liiketoimintaa. Mahdollisuus muokata tapaa, jolla tiedot järjestetään, miten niiden kanssa ollaan vuorovaikutuksessa tai jopa miten ne piilotetaan, on avain siihen, miten Finance and Operationsista tehdään henkilökohtainen ja tuottava kokemus. 
 
 Eksplisiittinen mukauttaminen on mukauttamista, jonka suoritat nimenomaisena tarkoituksenasi muuttaa elementin tai sivun ulkonäköä valitsemalla mukauttamisvalikko. Perustasollaan eksplisiittistä mukauttamista on, kun napsautat elementtiä hiiren oikealla painikkeella ja valitset **Mukauta**. (Huomaa, että kaikkia sivusi elementtejä ei voida mukauttaa.). Kun valitset tämän mukauttamistavan, näet elementin ominaisuusikkunan. 
 
@@ -67,11 +71,11 @@ Kun haluat siirtää tai piilottaa elementtejä tai tehdä useita muutoksia, voi
 
 [![Mukauttamisen työkalurivi](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Mukauttaminen-työkalurivi sisältää useita mukauttamistoimintoja. Napsauta **Valitse**-työkalua, kun haluat valita ja muuttaa useiden elementtien ominaisuuksia yksi kerrallaan. Napsauta ensin Valitse-työkalua ja valitse sitten elementti, jonka ominaisuuksia haluat muokata. Kun valitset elementin, sen ominaisuusikkuna avautuu ja voit muokata elementin kaikkia ominaisuuksia. Voit toistaa prosessin muille lomakkeesi elementeille, jotka ovat mukautettavissa. Joissain tapauksissa voit valita elementin ja huomaat, että joitain ominaisuuksia ei voida muokata. Tämä tarkoittaa, että elementin nykyisen käyttötavan perusteella Dynamics 365 for Operations ei voi antaa sinun muuttaa kyseistä ominaisuutta. Et esimerkiksi voi piilottaa kenttää, jota tarvitaan. 
+Mukauttaminen-työkalurivi sisältää useita mukauttamistoimintoja. Napsauta **Valitse**-työkalua, kun haluat valita ja muuttaa useiden elementtien ominaisuuksia yksi kerrallaan. Napsauta ensin Valitse-työkalua ja valitse sitten elementti, jonka ominaisuuksia haluat muokata. Kun valitset elementin, sen ominaisuusikkuna avautuu ja voit muokata elementin kaikkia ominaisuuksia. Voit toistaa prosessin muille lomakkeesi elementeille, jotka ovat mukautettavissa. Joissain tapauksissa voit valita elementin ja huomaat, että joitain ominaisuuksia ei voida muokata. Tämä tarkoittaa, että elementin nykyisen käyttötavan perusteella Finance and Operations ei anna muuttaa kyseistä ominaisuutta. Et esimerkiksi voi piilottaa kenttää, jota tarvitaan. 
 
-Valitse **Siirrä**-työkalu, kun haluat valita ja siirtää elementin toiseen sijaintiin nykyisen elementtiryhmän sisällä. (Et voi siirtää elementtiä sen pääryhmän ulkopuolelle). Napsauta ensin Siirrä-työkalua ja valitse sitten elementti, jonka haluat siirtää. Kun napsautat elementtiä, jonka haluat siirtää, Dynamics 365 for Operations skannaa lomakkeen selvittääkseen, minne tämä elementti voidaan siirtää ja luo sitten sarjan "pudotusvyöhykkeitä", jotka näytetään värillisenä, lihavoituna rivinä sen alueen vieressä, mihin elementti voidaan pudottaa vetäessäsi sitä nykyisen ryhmän sisällä. 
+Valitse **Siirrä**-työkalu, kun haluat valita ja siirtää elementin toiseen sijaintiin nykyisen elementtiryhmän sisällä. (Et voi siirtää elementtiä sen pääryhmän ulkopuolelle). Napsauta ensin Siirrä-työkalua ja valitse sitten elementti, jonka haluat siirtää. Kun napsautat siirrettävää elementtiä, Finance and Operations skannaa lomakkeen selvittääkseen, minne tämä elementti voidaan siirtää, ja luo sitten sarjan pudotusvyöhykkeitä, jotka näytetään värillisenä, lihavoituna rivinä sen alueen vieressä, mihin elementti voidaan pudottaa vetäessäsi sitä nykyisen ryhmän sisällä. 
 
-Valitse **Piilota**-työkalu, kun haluat valita ja piilottaa elementin. Piilota elementti valitsemalla Piilota-työkalu ja napsauttamalla sitten elementtiä, jonka haluat piilottaa. Kun valitset Piilota-työkalun, kaikki sillä hetkellä piilotetut elementit tulevat näkyviin varjostettuun säilöön niin, että voit valita elementin, jonka piilotuksen haluat perua. Napsauta Valitse-työkalua katsoaksesi, miltä sivu tulee näyttämään, kun valitut elementit on piilotettu. Valitse **Yhteenveto**-työkalu, kun haluat näyttää numeerisen tai merkkijonokentän pikavälilehden yhteenvetoalueella. Yhteenvetotyökalu koskee vain kenttiä, jotka sisältyvät pikavälilehtiosioon. Kun valitset yhteenvetotyökalun, Dynamics 365 for Operations näyttää kaikki kentät, jotka on valittu yhteenvetokentiksi sisällyttämällä ne varjostettuun säilöön. Voit lisätä ja poistaa kenttiä interaktiivisesti pikavälilehden yhteenvedosta napsauttamalla kenttää. 
+Valitse **Piilota**-työkalu, kun haluat valita ja piilottaa elementin. Piilota elementti valitsemalla Piilota-työkalu ja napsauttamalla sitten elementtiä, jonka haluat piilottaa. Kun valitset Piilota-työkalun, kaikki sillä hetkellä piilotetut elementit tulevat näkyviin varjostettuun säilöön niin, että voit valita elementin, jonka piilotuksen haluat perua. Napsauta Valitse-työkalua katsoaksesi, miltä sivu tulee näyttämään, kun valitut elementit on piilotettu. Valitse **Yhteenveto**-työkalu, kun haluat näyttää numeerisen tai merkkijonokentän pikavälilehden yhteenvetoalueella. Yhteenvetotyökalu koskee vain kenttiä, jotka sisältyvät pikavälilehtiosioon. Kun valitset yhteenvetotyökalun, Finance and Operations näyttää kaikki kentät, jotka on valittu yhteenvetokentiksi sisällyttämällä ne varjostettuun säilöön. Voit lisätä ja poistaa kenttiä interaktiivisesti pikavälilehden yhteenvedosta napsauttamalla kenttää. 
 
 Valitse **Ohita** -työkalu poistaaksesi elementin sivun Näppäimistö-välilehden sarjasta. Kun valitset Ohita-työkalun, kaikki sillä hetkellä ohitetut elementit näytetään varjostetussa säilössä niin, että voit valita ne uudelleen ja tehdä niistä osan välilehden sarjaa valitsemalla ohitetun elementin. 
 
@@ -89,7 +93,8 @@ Valitse **Sulje**-painike sulkeaksesi työkalurivin ja palauttaaksesi sivun sen 
 
 Mukauttaminen-työkaluriviä käytettäessä tallentaminen on implisiittistä. Mukautuksesi tulevat voimaan heti, kun olet tehnyt ne, eikä **Tallenna**-painiketta tarvitse napsauttaa. Joissain tapauksissa näet riippulukon kuvan elementin vieressä, kun valitset työkalun. Tämä tarkoittaa, että sivun oikein toimiminen edellyttää, että valittuun työkaluun liittyviä ominaisuuksia ei muuteta. Kun Mukauttaminen-työkalu avataan, sivusta tulee ei-vuorovaikutteinen. Et voi syöttää tietoja etkä laajentaa tai tiivistää osioita.
 
-## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Eksplisiittinen mukauttaminen: Ruudun tai luettelon lisääminen työtilaan
+## Eksplisiittinen mukauttaminen: Ruudun tai luettelon lisääminen työtilaan
+<a id="explicit-personalization-adding-a-tile-or-list-to-a-workspace" class="xliff"></a>
 Joillain luetteloja sisältävillä sivuilla on käytettävissä mukauttamisen lisätoiminto sen Toimintoruudussa Mukauttaminen-ryhmän Asetukset-välilehdessä. Valitse **Lisää työtilaan** avataksesi avattavan luettelon, jonka avulla voit näyttää työtilassa nykyisen luettelosi tiedot (suodatettuina ja lajiteltuina tai oletusmuotoisina) luettelon tai yhteenvetoruudun muodossa (jota voidaan käyttää näyttämään luettelossa olevien nimikkeiden lukumäärä). 
 
 [![Lisää työtilaan](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
@@ -100,20 +105,24 @@ Lisää ruutu työtilaan suodattamalla luettelo niin, että se näyttää tiedot
 
 Kun luettelosi tai ruutusi on lisätty työtilaan, voit avata kyseisen työtilan ja järjestää luettelon tai ruudun uudelleen sen ryhmän sisällä, johon se on sijoitettu.
 
-## <a name="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard"></a>Eksplisiittinen mukauttaminen: Yhteenvedon lisääminen työtilasta koontinäyttöön
+## Eksplisiittinen mukauttaminen: Yhteenvedon lisääminen työtilasta koontinäyttöön
+<a id="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard" class="xliff"></a>
 Joissain työtiloissa on lukumääräruutuja (ruutuja, joissa on numeroita), jotka haluaisit nähdä myös koontinäytössäsi. Napsauta työtilassa lukumääräruutua hiiren oikealla painikkeella ja valitse **Mukauta**. Valitse **Kiinnitä koontinäyttöön**. Kun seuraavan kerran siirryt valittuun koontinäyttöön (ja päivität sen), näet, kyseisen lukumäärän kyseessä olevan työtilan siirtymisruudun alapuolella koontinäytössä.
 
-## <a name="explicit-personalization-personalizing-your-dashboard"></a>Eksplisiittinen mukauttaminen: Koontinäyttösi mukauttaminen
-Koontinäyttö on usein ensimmäinen sivu, jonka näet kun avaat Dynamics 365 for Operationsin. Voit mukauttaa koontinäytön nimeämällä uudelleen työtilasi siirtymisruudut, näyttämällä vain haluamasi ruudut, nimeämällä ruudut uudelleen, tai järjestämällä ruudut haluamaasi järjestykseen. Mukauta koontinäkymä valitsemalla mikä tahansa ruutu ja avaa kontekstivalikko napsauttamalla hiiren oikealla painikkeella. Valitse kontekstivalikossa **Mukauta**. Jos valittu ruutu on se, jonka haluaisit piilottaa, nimetä uudelleen tai ohittaa, voit tehdä muutoksen suoraan esiin tulleessa Ominaisuudet-ikkunassa. Jos haluat järjestää ruudut, valitse **Mukauta tämä lomake** Ominaisuudet-ikkunassa avataksesi Mukauttaminen-työkalurivin. Voit sitten järjestää ruudut Siirrä-työkalun avulla.
+## Eksplisiittinen mukauttaminen: Koontinäyttösi mukauttaminen
+<a id="explicit-personalization-personalizing-your-dashboard" class="xliff"></a>
+Koontinäyttö on usein ensimmäinen sivu, jonka näet, kun avaat Finance and Operationsin. Voit mukauttaa koontinäytön nimeämällä uudelleen työtilasi siirtymisruudut, näyttämällä vain haluamasi ruudut, nimeämällä ruudut uudelleen, tai järjestämällä ruudut haluamaasi järjestykseen. Mukauta koontinäkymä valitsemalla mikä tahansa ruutu ja avaa kontekstivalikko napsauttamalla hiiren oikealla painikkeella. Valitse kontekstivalikossa **Mukauta**. Jos valittu ruutu on se, jonka haluaisit piilottaa, nimetä uudelleen tai ohittaa, voit tehdä muutoksen suoraan esiin tulleessa Ominaisuudet-ikkunassa. Jos haluat järjestää ruudut, valitse **Mukauta tämä lomake** Ominaisuudet-ikkunassa avataksesi Mukauttaminen-työkalurivin. Voit sitten järjestää ruudut Siirrä-työkalun avulla.
 
-## <a name="administration-of-personalization"></a>Mukauttamisen hallinta
-Sivu voidaan mukauttaa ja jakaa muiden käyttäjien kanssa yksinkertaisesti suorittamalla mukautetun sivun vienti ja pyytämällä muita käyttäjiä siirtymään mukautetulle sivulle ja tuomaan luomasi mukautustiedosto. Jos käyttäjällä on järjestelmänvalvojan oikeudet, hän voi myös hallita muiden käyttäjien mukautuksia **Mukautusasetukset**-sivulla. B-sivulle siirtyminen Löydät **Mukauttaminen**-sivulta kaksi välilehteä, joista toisen otsikko on **Järjestelmä** ja toisen**Käyttäjät**. 
+## Mukauttamisen hallinta
+<a id="administration-of-personalization" class="xliff"></a>
+Kun olet mukauttanut sivun, voit jakaa mukautuksesi muiden käyttäjien kanssa. Se onnistuu viemällä mukautettuja sivuja. Tämän jälkeen voit pyytää käyttäjiä siirtymään mukautetulle sivulle ja tuomaan luomasi mukautustiedoston.
 
-**Järjestelmä:** Täällä voit tilapäisesti poistaa käytöstä tai "sammuttaa" kaiken mukauttamisen järjestelmässä. Tämä ei poista mukautuksia vaan palauttaa kaikki lomakkeet niiden oletustilaan. Voit myöhemmin ottaa mukautukset uudelleen käyttöön siten, että kaikki mukautukset ovat taas käytössä jokaisessa käyttäjän lomakkeessa. Voit myös poistaa kaikkien käyttäjien kaikki mukautukset. Huomioi, että kun poistat kaikki mukautukset, ei ole mitään tapaa ottaa ne uudelleen käyttöön järjestelmän kautta. Varmista, että olet vienyt ne mukautukset, jotka haluat mahdollisesti tuoda ennen tämän vaiheen suorittamista. 
+Jos käyttäjällä on järjestelmänvalvojan oikeudet, hän voi myös hallita muiden käyttäjien mukautuksia **Mukautukset**-sivulla. Tällä sivulla on neljä välilehteä: **Järjestelmä**, **Käyttäjät**, **Tuonti** ja **Tyhjennä**.
 
-**Käyttäjät:** Tässä voit päättää kunkin käyttäjän kohdalla, voivatko he suorittaa implisiittistä vai eksplisiittistä mukautusta. Voit myös päättää kunkin käyttäjän kohdalla, voivatko he suorittaa implisiittistä vai eksplisiittistä mukautusta tietyllä lomakkeella. Viimeisenä, voit tuoda, viedä tai poistaa mukautukset kullekin käyttäjälle. 
-
-**Huomautus:** Ensimmäisessä versiossaan mukautuksen hallinta sallii vain käyttäjäkohtaisen hallinnan.
+- **Järjestelmä** – Voit poistaa tässä välilehdessä kaikki järjestelmän mukautukset tilapäisesti tai kokonaan käytöstä. Mukautuksia ei kuitenkaan poisteta. Sen sijaan kaikki sivut palautetaan oletustilaan. Jos otat mukautukset myöhemmin uudelleen käyttöön, kaikkia mukautuksia käytetään uudelleen kunkin käyttäjän sivulla. Voit myös poistaa kaikkien käyttäjien kaikki mukautukset. Huomioi, että kun poistat kaikki mukautukset, ei ole mitään tapaa ottaa ne uudelleen käyttöön järjestelmän kautta. Varmista sen vuoksi ennen tämän vaiheen suorittamista, että olet vienyt kaikki ne mukautukset, jotka ehkä haluat tuoda myöhemmin.
+- **Käyttäjät** – Voit määrittää tässä välilehdessä, voiko kukin käyttäjä tehdä implisiittisen vai eksplisiittisen mukautuksen. Voit myös määrittää, voiko kukin käyttäjä suorittaa implisiittisen vai eksplisiittisen mukautuksen tietyllä sivulla. Voit myös tuoda, viedä tai poistaa mukautuksia kullekin käyttäjälle.
+- **Tuonti** – Voit yhden tai usean käyttäjän mukautuksen. Voit käyttää välilehteä, kun olet luonut sivun tai työtilan mukautuksen, ja tuoda sitten mukautuksen mukautustiedostona. Voit tuoda mukautustiedoston ja käyttää sitä yhdelle tai usealle käyttäjälle valitsemalla kaikkien käyttäjien luettelosta yksittäiset käyttäjät. Vaihtoehtoisesti voit suodattaa tietyn rooli ja valita käyttäjät kyseisessä roolissa. Kun olet valinnut mukautusta käyttävät käyttäjät, valitse ensin **Tuo** ja sitten mukautustiedostosi. Mukautuksen oikeellisuus tarkistetaan ja sitä käytetään kaikille käyttäjille, kun he seuraavan kerran avaavat valitun sivun.
+- **Tyhjennä** – Voit tyhjentää yhden tai usean käyttäjän sivun tai työtilan mukautukset. Valitse ensin sivu tai työtila, josta mukautukset tyhjennetään. Valitse seuraavaksi yksittäiset käyttäjät kaikkien käyttäjien luettelosta. Vaihtoehtoisesti voit suodattaa tietyn rooli ja valita käyttäjät kyseisestä roolista. Kun olet valinnut sekä sivun tai työtilan ja käyttäjät, valitse **Tyhjennä**. Kaikki mukautukset, joita valitut käyttäjät ovat käyttäneet valitulla sivulla tai valitussa työtilassa, poistetaan. Tätä toimintoa ei voi kumota. Jos sivulla tai työtilassa on kuitenkin tallennettuja mukautuksia, nämä mukautukset voidaan tuoda uudelleen.
 
 
 

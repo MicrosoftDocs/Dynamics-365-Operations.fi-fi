@@ -3,14 +3,14 @@ title: "Tuotemääritysmallin rakentaminen"
 description: "Tarve määrittää tuotteita vastaamaan erityisvaatimuksiin on muuttumassa säännöksi poikkeuksen sijaan sekä yritys- että kuluttajasuhteissa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 901d5dd18f0da6f05c185c24b3f11fe32fdc400b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 5bc19e95266e8f1bec8744da688387dca559373f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="build-a-product-configuration-model"></a>Tuotemääritysmallin rakentaminen
+# Tuotemääritysmallin rakentaminen
+<a id="build-a-product-configuration-model" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,7 +41,8 @@ Onnistunut siirtyminen valmistus-varastoon-tilanteesta määritä-tilaukseen-til
 
 On olemassa useita tuotekonfiguraation mallinnusperiaatteita, kuten sääntöihin perustuva, dimensioihin perustuva, ja poissulkeva mallinnus. Tutkimukset osoittavat, että poissulkeva menetelmä voi vähentää mallien koodirivien lukumäärää noin 50 prosentilla verrattuna muihin mallinnusperiaatteisiin. Tällä menetelmällä voidaan siis pienentää omistuksen kokonaiskustannusta (TCO). Kun siirryt sääntöpohjaisesta, X++-koodiin perustuvasta mallista poissulkevaan malliin, et enää tarvitse suunnittelijan lisenssiä tuotemallien ylläpitoon.
 
-## <a name="product-configuration"></a>Tuotekonfiguraatio
+## Tuotekonfiguraatio
+<a id="product-configuration" class="xliff"></a>
 Teollistumisprosessi on johtanut merkittäviin saavutuksiin korkealaatuisten ja ominaisuuksiltaan runsaiden tuotteiden valmistamisessa kohtuulliseen hintaan. Mittakaavaedut ovat tehneet useimmille teollistuneissa maissa asuville ihmisille mahdolliseksi ostaa autoja, televisioita, kodinkoneita ja muita tuotteita, joita useimmat meistä pitävät arjessamme välttämättöminä.  
 
 Koska monista tuotteista on tullut hyödykkeitä, on syntynyt tarve erilaistaa niitä. Valmistajien välitön vastaus tähän haasteeseen on ollut luoda variantteja kustakin tuotteesta niin, että asiakkailla on enemmän vaihtoehtoja. Tämä strategia on johtanut ennusteiden laatimisen vaikeutumiseen, kasvaneisiin varastointikustannuksiin sekä myymättömien, vanhentuneiden tuotteiden kasvaneeseen määrään.  
@@ -51,52 +53,63 @@ Avain menestykseen on analysoida huolellisesti tuotevalikoima ja etsiä malleja 
 
 Uusi Tuotemääritys-ominaisuusjoukko sisältää käyttöliittymän (UI), joka tarjoaa visuaalisen yleiskatsauksen tuotemääritysmallin rakenteesta sekä määrittelevän rajoitussyntaksin, jota ei tarvitse kääntää. Siksi yritykset, jotka haluavat tukea määrityskäytäntöä, pääsevät helpommin aloittamaan. Kuten seuraavissa kohdissa kerrotaan, tuotteen suunnittelija ei enää tarvitse kehittäjän tukea tuotemääritysmallin rakentamiseen, testaukseen, tai sen myyntiorganisaatiolle julkaisemiseen.
 
-## <a name="building-a-product-configuration-model"></a>Tuotemääritysmallin rakentaminen
+## Tuotemääritysmallin rakentaminen
+<a id="building-a-product-configuration-model" class="xliff"></a>
 Käyttäjällä on valittavanaan useita lähestymistapoja tuotemääritysmallin rakentamiseen. Yksi vaihtoehto on seurata määritettyä järjestystä luomalla ensin viitetiedot kuten päätuotteet, erilliset tuotteet ja toiminnalliset resurssit, ja sisällyttää ne sitten komponentteina, tuoterakenteen (BOM) riveinä, reititystoimintoina ja muina tuotemääritysmallin elementteinä. Vaihtoehtoisesti voit valita iteroivamman tavan luomalla ensin mallin ja lisäämällä sitten viitetiedot tarpeen mukaan.
 
-### <a name="components"></a>Komponentit
+### Komponentit
+<a id="components" class="xliff"></a>
 
 Tuotemääritysmalli koostuu yhdestä tai useammasta toisiinsa alikomponenttisuhteiden kautta sidotusta komponentista. Komponentit määritetään yksi kerrallaan, ja niitä voidaan sitten käyttää useita kertoja yhdessä tai useammassa tuotemääritysmallissa. Komponentit ovat tuotemääritysmallin tärkeimmät rakennusosat, ja melkein kaikki mallia koskevat tiedot liittyvät niihin.
 
-### <a name="attributes"></a>Määritteet
+### Määritteet
+<a id="attributes" class="xliff"></a>
 
 Kullakin komponentilla on yksi tai useampia määritteitä, joiden mukaan sen ominaisuudet tunnistetaan. Käyttäjät valitsevat nämä määritteet määritysprosessin aikana. Määritteet ohjaavat sekä komponenttien välisiä että komponenttien sisäisiä suhteita niiden rajoitteisiin tai laskelmiin sisällyttämisen kautta. Tuoterakenteen riveillä käyttöön otettujen ehtojen kautta määritteitä voidaan käyttää määrittämään fyysiset osat, joista konfiguroitu tuote tulee koostumaan. Määrite voi lisäksi ohjata tuoterakenteen rivin ominaisuutta yhdistämismekanismin kautta. Samanlainen toiminne on olemassa reititykselle koskien sekä sisällyttämistä että ominaisuuksien määrittämistä.
 
-### <a name="expression-constraints"></a>Lausekerajoitukset
+### Lausekerajoitukset
+<a id="expression-constraints" class="xliff"></a>
 
 Poissulkevan tuotemääritysmallin käyttö viittaa siihen, että on olemassa rajoituksia, kun käyttäjä valitsee arvoja eri määritteille. Näitä rajoitteita voidaan toteuttaa lausekerajoituksina käyttämällä Optimization Modeling Language (OML) -kieltä. Vaihtoehtoisesti rajoitteet voidaan toteuttaa taulurajoituksen muodossa.
 
-### <a name="table-constraints"></a>Taulurajoitukset
+### Taulurajoitukset
+<a id="table-constraints" class="xliff"></a>
 
 Taulukon rajoitukset voivat olla joko käyttäjän tai järjestelmän määrittämiä.  
 
 Käyttäjän määrittämän taulurajoituksen rakentaa käyttäjä. Käyttäjä valitsee määritetyyppien yhdistelmän kuvaamaan taulukon sarakkeita ja syöttää sitten arvot valittujen määritetyyppien toimialueilta muodostamaan taulurajoituksen rivit.  
 
-Järjestelmän määrittämä taulurajoitus määritetään valitsemalla viitteenä käytettävä Microsoft Dynamics 365 for Operations -taulukko ja valitsemalla sitten tästä taulukiosta kentät, jotka muodostavat rajoituksen sarakkeet. Taulurajoituksen rivit ovat Dynamics 365 for Operations -taulukossa määrityshetkellä olevat rivit.  
+Järjestelmän määrittämä taulurajoitus määritetään valitsemalla viitteenä käytettävä Microsoft Dynamics 365 for Finance and Operations -taulukko ja valitsemalla sitten tästä taulukiosta kentät, jotka muodostavat rajoituksen sarakkeet. Taulurajoituksen rivit ovat Finance and Operations -taulukossa määrityshetkellä olevat rivit.  
 
 Taulurajoitus sisällytetään tuotemääritysmalliin viittaamalla taulurajoituksen määritykseen ja yhdistämällä mallin asiaankuuluvat määritteet taulurajoituksen sarakkeisiin.
 
-### <a name="calculations"></a>Laskelmat
+### Laskelmat
+<a id="calculations" class="xliff"></a>
 
 Laskelmat edustavat mekanismia, jolla suoritetaan laskutoimenpiteitä määritysmallissa. Laskelma voi esimerkiksi määrittää tietyn raaka-aineen pituuden tai kiillotustoiminnon käsittelyajan. Laskelmat ovat käskymuotoisia ja niillä asetetaan kohdemääritteen arvo sen jälkeen, kun kaikki laskentalausekkeeseen sisältyvät määritearvot ovat tulleet saataville.
 
-### <a name="subcomponents"></a>Alikomponentit
+### Alikomponentit
+<a id="subcomponents" class="xliff"></a>
 
 Alikomponentit kuvaavat tuotemääritysrakenteen solmuja. Jokaiselle alikomponentin suhteelle on määritettävä viite päätuotteeseen, jolla on poissulkevalle konfiguraatiolle asetettu variantin määritysmenetelmä.
 
-### <a name="user-requirements"></a>Käyttäjän vaatimukset
+### Käyttäjän vaatimukset
+<a id="user-requirements" class="xliff"></a>
 
 Käyttäjän vaatimuksella on kaikki alikomponentin rakenneosat. Ainoana erona on, että käyttäjän vaatimusta ei ole sidottu päätuotteeseen. Tämän eron käytännön vaikutus on, että kaikki tuoterakenteen rivit tai reititykset, jotka on määritetty käyttäjän vaatimuksen kontekstissa, tiivistetään pääkomponentin tuoterakenteen tai reitityksen rakenteeseen. Tämä toiminta muistuttaa haamutuoterakenteen toimintaa.
 
-### <a name="bom-lines"></a>Tuoterakenteen rivit
+### Tuoterakenteen rivit
+<a id="bom-lines" class="xliff"></a>
 
 Tuoterakenteen rivit on sisällytetty kunkin komponentin valmistuksen tuoterakenteen tunnistamiseen. Tuoterakennerivin on viitattava nimikkeeseen ja kaikki nimikkeen ominaisuudet voidaan asettaa kiinteäksi arvoksi tai yhdistää määritteeseen.
 
-### <a name="route-operations"></a>Reitityksen työvaihe
+### Reitityksen työvaihe
+<a id="route-operations" class="xliff"></a>
 
 Reititys on sisällytetty valmistusreitin tunnistamista varten. Reitityksen on viitattava määritettyyn toimintoon, ja kaikki toiminnon ominaisuudet voidaan asettaa kiinteäksi arvoksi. Kaikki ominaisuudet lukuun ottamatta resurssivaatimuksia voidaan yhdistää määritteeseen arvon sijaan.
 
-## <a name="validating-and-testing-a-product-configuration-model"></a>Tuotemääritysmallin tarkistaminen ja testaaminen
+## Tuotemääritysmallin tarkistaminen ja testaaminen
+<a id="validating-and-testing-a-product-configuration-model" class="xliff"></a>
 Tuotemääritysmallin tarkistaminen voidaan suorittaa useilla mallin tasoilla ja se voi siten kattaa erilaisia alueita. Alhaisin taso on yksittäistä lausekerajoitusta koskeva. Tässä tapauksessa tarkistuksen suorittaa yleensä tuotteen suunnittelija varmistaakseen, että lausekkeen syntaksi on oikea.  
 
 Tuoterakennerivin tai reitityksen ehto voidaan myös tarkistaa erikseen.  
@@ -105,37 +118,46 @@ Tarkistus voidaan lisäksi suorittaa käyttäjän määrittämälle taulurajoitu
 
 Viimeisenä, tarkistus voidaan suorittaa koko tuotemääritysmallille tarkistamaan, että koko syntaksi on oikein ja että kaikkia nimeämis- ja mallinnuskäytäntöjä on noudatettu.
 
-### <a name="testing"></a>Testaus
+### Testaus
+<a id="testing" class="xliff"></a>
 
 Mallin testaus on samanlaista kuin todellinen konfigurointi-istunnon suoritus. Käyttäjä voi käydä läpi kokoonpanosivut ja varmistaa, että mallin rakenne tukee määritysprosessia. Käyttäjä voi tarkistaa, että määritearvot ovat oikeat ja että määritteiden kuvaukset ohjaavat käyttäjää valitsemaan oikeat arvot. Lopuksi, kun testausistunto on valmistunut, järjestelmä yrittää luoda tuoterakenteen ja reitityksen, joka vastaa valittuja määritysarvoja ja näyttää virhesanoman, jos jostain menee vikaan.
 
-### <a name="the-configuration-page"></a>Konfiguraatio-sivu
+### Konfiguraatio-sivu
+<a id="the-configuration-page" class="xliff"></a>
 
 Voit liikkua komponenttien välillä valitsemalla **Seuraava**, tai napsauttamalla komponenttia tuotemääritysmallin puussa huomion kohdistamiseksi siihen.
 
-## <a name="finalizing-a-model-for-configuration"></a>Mallin viimeistely konfiguraatiota varten
+## Mallin viimeistely konfiguraatiota varten
+<a id="finalizing-a-model-for-configuration" class="xliff"></a>
 Kun tuotemääritysmalli on valmis käytettäväksi määritä-tilaukseen-skenaariossa, on luotava versio. On kuitenkin olemassa useita vaihtoehtoja, joilla mallinnuskokemusta voidaan parantaa.
 
-### <a name="user-interface"></a>Käyttöliittymä
+### Käyttöliittymä
+<a id="user-interface" class="xliff"></a>
 
 Konfiguraatiokäyttöliittymää voidaan muokata lisäämällä määriteryhmiä yhteen tai useampaan alikomponenttiin. Tällainen ryhmittely voi korostaa tiettyjen määritteiden välisiä suhteita ja auttaa konfiguraation käyttäjää tunnistamaan tuotteen alueen, joka on kyseisellä hetkellä tarkasteltavana.
 
-### <a name="templates"></a>Mallit
+### Mallit
+<a id="templates" class="xliff"></a>
 
 On mahdollista luoda yksi tai useampi määritysmalli nopeuttamaan määritysprosessia. Vaihtoehtoisesti voidaan luoda malleja, jotka edistävät tiettyjä määritteiden yhdistelmiä esimerkiksi silloin, kun myyntikampanja keskittyy määrättyjen tuoteominaisuuksien joukkoon.
 
-### <a name="translations"></a>Käännökset
+### Käännökset
+<a id="translations" class="xliff"></a>
 
 Jos tuotetta tullaan myymään eri maissa/alueilla, on mahdollista luoda käännökset kaikelle tekstille, joka näkyy konfiguraation käyttöliittymässä. Tämä teksti sisältää nimi- ja kuvauskenttien lisäksi myös määritetekstien arvot.
 
-### <a name="versions"></a>Versiot
+### Versiot
+<a id="versions" class="xliff"></a>
 
 Viimeinen ja tärkein vaihe viimeistelyprosessissa on luoda tuotemääritysmallin versio. Tämä versio kuvaa päätuotteen, joka voidaan valita konfiguraatiolle tilaus- tai tarjousrivillä, ja tuotemääritysmallin välillä. Versio on hyväksyttävä ja aktivoitava ennen kuin sitä voidaan käyttää määritysistunnossa.
 
-## <a name="extending-a-product-configuration-model-through-the-api"></a>Tuotemääritysmallin laajentaminen ohjelmointirajapinnan kautta
+## Tuotemääritysmallin laajentaminen ohjelmointirajapinnan kautta
+<a id="extending-a-product-configuration-model-through-the-api" class="xliff"></a>
 On luotu oma ohjelmointirajapinta (API), jotta kumppanit ja muut, joilla on kehittäjälisenssi, voivat laajentaa tuotemääritysmallin ominaisuuksia. Pääasiallinen tavoite on ollut luoda mekanismi, jolla kumppanit ja asiakkaat, jotka käyttävät nykyistä Product Builderiä, siirtävät Product Builderin malleihin sisältyvän koodin ohjelmointirajapintaan. Näin he voivat siirtää mallinsa Product Builderistä tuotemääritykseen. Uudet kumppanit ja asiakkaat voivat myös hyötyä ohjelmointirajapinnan käytöstä uusien tuotemääritysmallien laajentamisessa.
 
-### <a name="pcadaptor-class"></a>PCAdaptor-luokka
+### PCAdaptor-luokka
+<a id="pcadaptor-class" class="xliff"></a>
 
 Ohjelmointirajapinta on toteutettu käyttämällä **PCAdaptor**-luokkien joukkoa, joka näyttää tuotemääritysmallien tietorakenteen. **PCAdaptor**-luokan esiintymä on luotava jokaiselle laajennettavalle mallille. Konfigurointi-istunnon jälkeen järjestelmä etsii tämän luokan esiintymiä ja suorittaa sen, jos se löytyy.  
 
@@ -145,7 +167,8 @@ Seuraavassa vuokaaviossa kuvataan tätä prosessia.
 
 Tuotteen kokoonpanon API-vuokaavio
 
-## <a name="product-configuration"></a>Tuotekonfiguraatio
+## Tuotekonfiguraatio
+<a id="product-configuration" class="xliff"></a>
 Tuotemäärityksiä voidaan suorittaa seuraavissa sijainneissa:
 
 -   Myyntitilausrivi
@@ -156,7 +179,8 @@ Tuotemäärityksiä voidaan suorittaa seuraavissa sijainneissa:
 
 Konfiguraation tarkoitus on luoda erilinen tuotevariantti, joka vastaa asiakkaan vaatimuksia. Kullekin uudelle konfiguraatiolle luodaan yksilöivä konfiguraatiotunnus. Tämä tunnus mahdollistaa seurannan koko varastoinnin ajan.
 
-### <a name="multiple-sites-and-intercompany"></a>Useita toimipaikkoja ja yrityksen sisäinen
+### Useita toimipaikkoja ja yrityksen sisäinen
+<a id="multiple-sites-and-intercompany" class="xliff"></a>
 
 Jos konfiguraatio tullaan tekemään toimipaikassa tai jopa yrityksessä, joka eroaa toimipaikasta tai yrityksestä, jossa tuotanto tulee tapahtumaan, tuoterakenne ja reititys luodaan toimittajan toimipaikkaa varten toimittavassa yrityksessä ja laitetaan sinne. Tuotevariantti julkaistaan kaikissa toimitusketjuun osallistuvissa yrityksissä.
 

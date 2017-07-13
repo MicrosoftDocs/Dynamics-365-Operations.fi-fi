@@ -1,9 +1,9 @@
 ---
 title: "Excel-lisäosan käyttö"
-description: "Tässä ohjeaiheessa kerrotaan, kuinka avaat yksikkötietoja Microsoft Excelissä ja tarkastelet, päivität ja muokkaat tietoja Microsoft Dynamicsin Excel-lisäosalla. Voit aloittaa yksikkötietojen avaamisen joko Excelistä tai Microsoft Dynamics 365 for Operationsista."
+description: "Tässä ohjeaiheessa kerrotaan, kuinka avaat yksikkötietoja Microsoft Excelissä ja tarkastelet, päivität ja muokkaat tietoja Microsoft Dynamicsin Excel-lisäosalla."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,38 +17,41 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c391fb70d837db9c0f167b392291fc1c5cc2bb53
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: f55e1e89d0e48819962c169a56f0f27dc0d792b4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="use-the-excel-add-in"></a>Excel-lisäosan käyttö
+# Excel-lisäosan käyttö
+<a id="use-the-excel-add-in" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä ohjeaiheessa kerrotaan, kuinka avaat yksikkötietoja Microsoft Excelissä ja tarkastelet, päivität ja muokkaat tietoja Microsoft Dynamicsin Excel-lisäosalla. Voit aloittaa yksikkötietojen avaamisen joko Excelistä tai Microsoft Dynamics 365 for Operationsista.
+Tässä ohjeaiheessa kerrotaan, kuinka avaat yksikkötietoja Microsoft Excelissä ja tarkastelet, päivität ja muokkaat tietoja Microsoft Dynamicsin Excel-lisäosalla. Voit aloittaa yksikkötietojen avaamisen joko Excelistä tai Microsoft Dynamics 365 for Finance and Operations Enterprise editionissa.
 
 Kun avaat yksikkötietoja Microsoft Excelissä, voit tarkastella ja muokata nopeasti tietoja Microsoft Dynamicsin Excel-lisäosalla. Tämä apuohjelma edellyttää, että käytössä on Microsoft Excel 2016. **Huomautus:** jos Microsoft Azure Active Directory (Azure AD) -vuokralaisesi on määritetty käyttämään Active Directoryn liittoutumispalveluita (AD FS), varmista, että toukokuun 2016 päivitys on asennettu, jotta Excel-lisäosa pystyy kirjaamaan sinut sisään.
 
-## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-operations"></a>Yksikkötietojen avaaminen Excelissä Dynamics 365 for Operationsista käsin
-1.  Napsauta Microsoft Dynamics 365 for Operations -sivulta **Avaa Microsoft Officessa**. Jos sivun juuritietolähde (taulukko) on sama kuin minkä tahansa yksikön juuritietolähde, sivulle muodostetaan oletusasetuksena **Avaa Excelissä**. **Avaa Excelissä** -vaihtoehto löytyy usein käytetyillä sivuilla, kuten **Kaikki toimittajat** ja **Kaikki asiakkaat**.
+## Yksikkötietojen avaaminen Excelissä Dynamics 365 for Finance and Operationsista käsin
+<a id="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations" class="xliff"></a>
+1.  Napsauta Microsoft Dynamics 365 for Finance and Operations -sivulta **Avaa Microsoft Officessa**. Jos sivun juuritietolähde (taulukko) on sama kuin minkä tahansa yksikön juuritietolähde, sivulle muodostetaan oletusasetuksena **Avaa Excelissä**. **Avaa Excelissä** -vaihtoehto löytyy usein käytetyillä sivuilla, kuten **Kaikki toimittajat** ja **Kaikki asiakkaat**.
 2.  Valitse **Avaa Excelissä** -vaihtoehto ja avaa luotu työkirja. Tämä työkirja sisältää yksikön sidostiedot, osoitin ympäristöön ja osoitin Excel-lisäosaan.
 3.  Valitse Excelin **Ota muokkaus käyttöön** -painike, jotta voit ajaa Excel-lisäosan. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
 4.  Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan**.
-5.  Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** samoilla tunnuksilla, joilla kirjaudut Dynamics 365 for Operationsiin. Excel-lisäosa käyttää aiempaa sisäänkirjautumista Internet Explorerista ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. Varmista tämän vuoksi Excel-lisäosan oikeassa yläkulmassa näkyvä käyttäjänimi.
+5.  Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** samoilla tunnuksilla, joilla kirjaudut Dynamics 365 for Finance and Operationsiin. Excel-lisäosa käyttää aiempaa sisäänkirjautumista Internet Explorerista ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. Varmista tämän vuoksi Excel-lisäosan oikeassa yläkulmassa näkyvä käyttäjänimi.
 
 Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että työkirjassa ei ole tietoja ennen kuin Excel-lisäosa on lukenut tiedot.
 
-## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Avaa yksikön tiedot Excelissä käynnistämisen yhteydessä
+## Avaa yksikön tiedot Excelissä käynnistämisen yhteydessä
+<a id="open-entity-data-in-excel-when-you-start-from-excel" class="xliff"></a>
 1.  Avaa Office-kauppa napsauttamalla **Kauppa**-painiketta Excelin **Lisää**-välilehden **Lisäosat**-ryhmässä.
 2.  Etsi Office-kaupasta avainsanalla "Dynamics" ja valitse **Lisää** **Microsoft Dynamicsin Office-lisäosa** (Excel-lisäosa).
 3.  Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan** voidaksesi käyttää sitä. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
 4.  Avaa **Asetukset**-ruutu napsauttamalla **Lisää palvelimen tiedot** -painiketta.
-5.  Kopioi kohteena olevan Dynamics 365 for Operations -ilmentymän URL-osoite, liitä se **Palvelimen URL-osoite** -kenttään ja poista kaikki teksti isäntänimen jälkeen. URL-osoitteessa tulisi olla vain isäntänimi.
+5.  Kopioi kohteena olevan Dynamics 365 for Finance and Operations -ilmentymän URL-osoite, liitä se **Palvelimen URL-osoite** -kenttään ja poista kaikki teksti isäntänimen jälkeen. URL-osoitteessa tulisi olla vain isäntänimi.
 Jos URL-osoite on esimerkiksi https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage, poista kaikki paitsi **https://xxx.dynamics.com**.
 6.  Vahvista muutokset napsauttamalla **OK** ja sitten **Kyllä**. Excel-lisäosa käynnistyy uudelleen ja lataa metatiedot. **Rakenne**-painike on nyt käytettävissä. Jos Excel-lisäosassa on **Lataa sovelmat** -painike, et ehkä ole kirjautunut oikeana käyttäjänä. Lisätietoja on tämän ohjeaiheen "Vianmääritys"-osan kohdassa "Lataa sovelmat -painike on näkyvissä".
 7.  Valitse **Rakenne**. Excel-lisäosa hakee yksikön metatiedot.
@@ -58,10 +61,12 @@ Jos URL-osoite on esimerkiksi https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTabl
 11. Kun olet lisännyt haluamasi kentät **Valitut kentät** -luetteloon, varmista, että kohdistin on oikeassa kohdassa taulukkoa (esimerkiksi solu A1) ja valitse sitten **Valmis**. Valitse sitten **Valmis** sulkeaksesi suunnitteluohjelman.
 12. Valitse **Päivitä** hakeaksesi tietojoukon.
 
-## <a name="view-and-update-entity-data-in-excel"></a>Näytä ja päivitä yksikön tiedot Excelissä
+## Näytä ja päivitä yksikön tiedot Excelissä
+<a id="view-and-update-entity-data-in-excel" class="xliff"></a>
 Kun Excel-lisäosa lukee yksikön tiedot työkirjaan, voit päivittää tiedot milloin tahansa valitsemalla Excel-lisäosassa **Päivitä**.
 
-## <a name="edit-entity-data-in-excel"></a>Muokkaa yksikön tietoja Excelissä
+## Muokkaa yksikön tietoja Excelissä
+<a id="edit-entity-data-in-excel" class="xliff"></a>
 Voit muuttaa yksikön tietoja tarpeidesi mukaisesti ja julkaista muutokset takaisin valitsemalla Excel-lisäosassa **Julkaise**. Jos haluat muokata tietuetta, valitse työkirjassa solu ja muuta sitten solun arvoa. Jos haluat lisätä uuden tietueen, seuraa jotakin näistä vaiheista:
 
 -   Napsauta tietolähdetauluun ja valitse sitten **Uusi** Excel-lisäosassa.
@@ -76,7 +81,8 @@ Jos haluat poistaa tietueen, seuraa jotakin näistä vaiheista:
 -   Napsauta hiiren kakkospainikkeella poistettavaa riviä ja valitse sitten **Poista** &gt; **Taulukon rivit**.
 Jos tietolähteitä on lisätty liittyvinä, otsikko julkaistaan ennen rivejä. Jos muiden tietolähteiden välillä on riippuvaisuuksia, joudut ehkä vaihtamaan oletusjulkaisujärjestystä. Julkaisujärjestystä voit muuttaa Excel-apuohjelmassa napsauttamalla **Asetukset**-painiketta (rattaan kuva). Valitse sitten **Data Connector** -pikavälilehdessä **Määritä julkaisujärjestys**.
 
-## <a name="add-or-remove-columns"></a>Lisää tai poista sarakkeita
+## Lisää tai poista sarakkeita
+<a id="add-or-remove-columns" class="xliff"></a>
 Voit säätää työkirjaan automaattisesti lisättäviä sarakkeita suunnittelijasovelluksessa.
 
 1.  Käynnistää Excel-lisäosan tietolähteen suunnitteluohjelma napsauttamalla **Asetukset** -painiketta (rattaan kuva) ja valitsemalla sitten **Ota rakenne käyttöön** -valintaruutu.
@@ -90,7 +96,8 @@ Voit säätää työkirjaan automaattisesti lisättäviä sarakkeita suunnitteli
 5. Ota käyttöön tietolähteeseen tehdyt muutokset valitsemalla **Päivitä**. Valitse sitten **Valmis** sulkeaksesi suunnitteluohjelman. 
 6. Jos olet lisännyt kentän (sarakkeen), valitse **Päivitä**, niin ohjelma hakee päivitetyn tietojoukon.
 
-## <a name="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting"></a>[](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Vianmääritys
+## [](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Vianmääritys
+<a id="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting" class="xliff"></a>
 Tietyt ongelmat ovat ratkaistavissa muutaman helpon vaiheen kautta.
 
 -   **Lataa sovelmat -painike on näkyvissä.** Jos Excel-lisäosassa on **Lataa sovelmat** -painike kirjautumisen jälkeen, et ehkä ole kirjautunut oikeana käyttäjänä. Ratkaise ongelma varmistamalla, että Excel-lisäosan oikeassa yläkulmassa on oikea käyttäjänimi. Jos näkyvillä on väärä käyttäjänimi, napsauta sitä, kirjaudu ulos ja kirjaudu takaisin sisään.

@@ -1,40 +1,42 @@
 ---
-title: "Taloushallinnan raportointi Dynamics 365 for Operations -järjestelmässä"
-description: "Microsoft Dynamics 365 for Operations -järjestelmän talousraportoinnilla rahoitus- ja liiketoiminta-asiantuntijat voivat luoda ja ylläpitää raportteja sekä ottaa niitä käyttöön ja tarkastella niitä. Koska perinteisen raportoinnin rajoitukset eivät päde, voit suunnitella tehokkaasti erilaisia raportteja."
+title: Finance and Operationsin talousraportointi
+description: "Finance and Operationsin talousraportoinnin avulla rahoitus- ja liiketoiminta-asiantuntijat voivat luoda ja ylläpitää raportteja sekä ottaa niitä käyttöön ja tarkastella niitä. Koska perinteisen raportoinnin rajoitukset eivät päde, voit suunnitella tehokkaasti erilaisia raportteja."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.search.scope: Management Reporter
+ms.search.scope: Management Reporter, UnifiedOperations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 997c34856d2445b02038d208f91522fe7a9a487c
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: 4e0c984b95cd395e7ab23394b886782e55fac90f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="financial-reporting-for-dynamics-365-for-operations"></a>Taloushallinnan raportointi Dynamics 365 for Operations -järjestelmässä
+# Finance and Operationsin talousraportointi
+<a id="financial-reporting-for-finance-and-operations" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operations -järjestelmän talousraportoinnilla rahoitus- ja liiketoiminta-asiantuntijat voivat luoda ja ylläpitää raportteja sekä ottaa niitä käyttöön ja tarkastella niitä. Koska perinteisen raportoinnin rajoitukset eivät päde, voit suunnitella tehokkaasti erilaisia raportteja.
+Finance and Operationsin talousraportoinnin avulla rahoitus- ja liiketoiminta-asiantuntijat voivat luoda ja ylläpitää raportteja sekä ottaa niitä käyttöön ja tarkastella niitä. Koska perinteisen raportoinnin rajoitukset eivät päde, voit suunnitella tehokkaasti erilaisia raportteja.
 
 Dimensiotuki sisältyy talousraportointiin. Niinpä tilisegmentit tai -dimensiot ovat heti käytettävissä. Lisätyökaluja tai -määrityksiä ei tarvita.
 
-## <a name="financial-reporting-components"></a>Talousraportoinnin osat
+## Talousraportoinnin osat
+<a id="financial-reporting-components" class="xliff"></a>
 Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talousraportoinnin osien avulla.
 
 | Komponentti        | Toiminnot                                                                                                                                                                                                                                                                           | Lisätiedot                                                                          |
@@ -42,7 +44,8 @@ Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talou
 | Report Designer  | Luo raportin rakenneosia, joita yhdistämällä voidaan määrittää ja luoda raportti. Ohjattu raportin luominen ohjaa kokemattomampia käyttäjiä suunnitteluprosessissa. Kokeneet käyttäjät voivat luoda tarvittaessa uusia raportin rakenneosia tai muokata aiemmin luotuja rakenneosia. |                                                                                                 |
 | Raportin aikataulut | Ajoita yksi raportti tai raporttiryhmä siten, että se luodaan säännöllisesti.                                                                                                                                                                                          | [Raportin luominen](generate-financial-report.md) |
 
-## <a name="features"></a>Ominaisuudet
+## Ominaisuudet
+<a id="features" class="xliff"></a>
 <table>
 <thead>
 <tr class="header">
@@ -86,7 +89,8 @@ Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talou
 </tbody>
 </table>
 
-#<a name="see-also"></a>Lisätietoja
+#Lisätietoja
+<a id="see-also" class="xliff"></a>
 [Raportin luominen](generate-financial-report.md)
 
 

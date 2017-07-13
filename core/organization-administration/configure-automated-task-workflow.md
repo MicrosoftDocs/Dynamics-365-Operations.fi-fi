@@ -3,13 +3,13 @@ title: "Automaattisen tehtävän määrittäminen työnkulkuun"
 description: "Tässä ohjeaiheessa kerrotaan, miten automaattisen tehtävän ominaisuudet määritetään."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192061
 ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 358065dd127703191ba441d0603307a3b7e5df60
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 66f1b8e03cc0da5d21fea9b3c795d8f4097c8cfc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-an-automated-task-in-a-workflow"></a>Automaattisen tehtävän määrittäminen työnkulkuun
+# Automaattisen tehtävän määrittäminen työnkulkuun
+<a id="configure-an-automated-task-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ Tässä ohjeaiheessa kerrotaan, miten automaattisen tehtävän ominaisuudet mä�
 
 Automaattinen tehtävä konfiguroidaan työnkulkueditorissa napsauttamalla tehtävää hiiren kakkospainikkeella ja valitsemalla **Ominaisuudet**, joka avaa **Ominaisuudet**-sivun. Sitten voit määrittää seuraavien ohjeiden avulla automaattisen tehtävän ominaisuudet.
 
-## <a name="name-the-task"></a>Tehtävän nimeäminen
+## Tehtävän nimeäminen
+<a id="name-the-task" class="xliff"></a>
 Kirjoita näiden ohjeiden avulla nimi automaattiselle tehtävälle.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
 2.  Kirjoita tehtävän yksilöivä nimi **Nimi**-kenttään.
 
-## <a name="specify-when-notifications-are-sent"></a>Määritä, milloin ilmoitukset lähetetään
+## Määritä, milloin ilmoitukset lähetetään
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Voit lähettää käyttäjille ilmoituksia, kun automaattinen tehtävä on suoritettu tai peruutettu. Toimi seuraavasti määrittääksesi, milloin ilmoitukset lähetetään, ja kenelle ne lähetetään.
 
 1.  Valitse vasemmasta ruudusta **Ilmoitukset**.
@@ -96,10 +99,10 @@ Voit lähettää käyttäjille ilmoituksia, kun automaattinen tehtävä on suori
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tietyt Microsoft Dynamics 365 for Operations -käyttäjät</td>
+    <td>Tietyt Microsoft Dynamics 365 for Finance and Operations -käyttäjät</td>
     <td><ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>

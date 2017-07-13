@@ -1,6 +1,6 @@
 ---
 title: "Budjettisuunnittelun päivitys"
-description: "Microsoft Dynamics AX 2012:n ja Microsoft Dynamics 365 for Operationsin budjettisuunnittelutoiminnoissa on merkittäviä eroja. Tiettyjä ominaisuuksia ei ole päivitetty, jonka vuoksi ne on määritettävä uudelleen. Tässä aiheessa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis."
+description: "Microsoft Dynamics AX 2012:n ja Microsoft Dynamics 365 for Finance and Operationsin budjettisuunnittelutoiminnoissa on merkittäviä eroja. Tiettyjä ominaisuuksia ei ole päivitetty, jonka vuoksi ne on määritettävä uudelleen. Tässä aiheessa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/10/2017
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
@@ -18,25 +18,27 @@ ms.author: ryansand
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fafa323c3949c09707c81ec41edae25ad2677eeb
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 83e93df3284760c46cb95b931f32cc9990ef2db1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="upgrade-budget-planning"></a>Budjettisuunnittelun päivitys
+# Budjettisuunnittelun päivitys
+<a id="upgrade-budget-planning" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics AX 2012:n ja Microsoft Dynamics 365 for Operationsin budjettisuunnittelutoiminnoissa on merkittäviä eroja. Tiettyjä ominaisuuksia ei ole päivitetty, jonka vuoksi ne on määritettävä uudelleen. Tässä aiheessa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis.  
+Microsoft Dynamics AX 2012:n ja Microsoft Dynamics 365 for Finance and Operationsin budjettisuunnittelutoiminnoissa on merkittäviä eroja. Tiettyjä ominaisuuksia ei ole päivitetty, jonka vuoksi ne on määritettävä uudelleen. Tässä aiheessa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis.  
 
-Microsoft Dynamics 365 for Operationsin budjettisuunnittelu sisältää useita parannuksia, jotka eivät olleet saatavilla Microsoft Dynamics AX 2012:ssa. Tässä ohjeaiheessa kerrotaan muutokset, jotka päivittävän asiakkaan on tehtävä. Siinä osoitetaan myös uudet ominaisuuksia, jotka tulisi ottaa huomioon päivitysprosessin aikana. Koska muutokset ovat kattavia, olemassa olevia budjettisuunnitelmia ei voi avata ennen kuin tässä ohjeaiheessa kuvatut muutokset on tehty. Raporttien tulisi toimia, eivätkä ne vaadi lisämuutoksia.
+Microsoft Dynamics 365 for Finance and Operationsin budjettisuunnittelu sisältää useita parannuksia, jotka eivät olleet saatavilla Microsoft Dynamics AX 2012:ssa. Tässä ohjeaiheessa kerrotaan muutokset, jotka päivittävän asiakkaan on tehtävä. Siinä osoitetaan myös uudet ominaisuuksia, jotka tulisi ottaa huomioon päivitysprosessin aikana. Koska muutokset ovat kattavia, olemassa olevia budjettisuunnitelmia ei voi avata ennen kuin tässä ohjeaiheessa kuvatut muutokset on tehty. Raporttien tulisi toimia, eivätkä ne vaadi lisämuutoksia.
 
-## <a name="overview-of-changes"></a>Muutosten yleiskatsaus
-Dynamics 365 for Operationsin budjetointiin on tehty merkittävä muutoksia. Nämä muutokset helpottavat budjettisuunnittelun määrittämistä ja uudelleen käyttöä, vähentäen ajan kuluessa tarvittavaa ylläpitoa ja määrittämistä. Seuraavat AX 2012:n alueet on poistettu Dynamics 365 for Operationsissa:
+## Muutosten yleiskatsaus
+<a id="overview-of-changes" class="xliff"></a>
+Dynamics 365 for  Finance and Operationsin budjetointiin on tehty merkittävä muutoksia. Nämä muutokset helpottavat budjettisuunnittelun määrittämistä ja uudelleen käyttöä, vähentäen ajan kuluessa tarvittavaa ylläpitoa ja määrittämistä. Seuraavat AX 2012:n alueet on poistettu Dynamics 365 for Finance and Operationsissa:
 
 -   Budjettisuunnitelman mallit (budjettisuunnittelun konfigurointi)
 -   Budjettisuunnitelman kansiot (budjettisuunnittelun konfigurointi)
@@ -47,35 +49,41 @@ Dynamics 365 for Operationsin budjetointiin on tehty merkittävä muutoksia. Nä
 
 Tiettyihin uusiin konsepteihin ei ole mahdollista päivittää suoraan aiemmista toiminnoista. Sinun on siis tehtävä uudelleenmäärityksiä uusia konsepteja varten. Seuraavissa osissa kuvataan konseptit, jotka ovat korvanneet edellä esitetyn luettelon kohteet.
 
-### <a name="columns"></a>Sarakkeet
+### Sarakkeet
+<a id="columns" class="xliff"></a>
 
 Sarakkeet ovat uusi konsepti, jotka korvaavat osia Excel-mallista sekä matriisin kentistä. Sarakkeet voivat edustaa kautta, kuukautta, vuosineljännestä, vuotta tai kaikkea. Aikaviite on dynaaminen. Se osoittaa suhteelliseen kauteen tai vuoteen budjettiprosessin viitteenä. Esimerkiksi **Edellinen vuosi Tammikuu** -sarake viittaa vuoden -1 tilikauteen 1. Sarakkeet koskevat tiettyä budjettiskenaariota, kuten todellinen tai budjettipyyntö.
 
-### <a name="layouts"></a>Asettelut
+### Asettelut
+<a id="layouts" class="xliff"></a>
 
-Asettelut ovat uusi konsepti, joka korvaa Excel-mallin. Asettelut sisältävät sarakkeita, jotka määrittävät mitkä budjetti- tai todelliset tiedot ja kaudet tulisi näyttää. Asettelut ovat yhteisiä niin asiakasohjelmassa kuin Excel-apuohjelmassa. Tietojen syöttämisen tai katselun käyttökokemus on Dynamics 365 for Operations -asiakasohjelmassa siis parempi kuin AX 2012:ssa. Tietojen syöttö Dynamics 365 for Operations -asiakasohjelmassa ei ole enää rajoitettu yhden skenaarion syöttämiseen ja tarkasteluun tapahtumanäkymässä. Voit sen sijaan käyttää vertailunäkymää, josta voit tarkastella ja muokata helposti useiden kausien ja tilien summia samanaikaisesti. Asettelut voi myös määrittää niin, että voit syöttää ja tarkastella valuuttoja, kommentteja tai muita vaihtoehtoisia tietoja. Asettelujen avulla voit myös määrittää, mitkä kirjanpitodimensiot ja dimensiokuvaukset näytetään. Asettelut sisältävät myös skenaariorajoituksia, joilla voi määrittää mitkä mallin sarakkeet ovat muokattavissa ja mitkä niistä ovat käytettävissä Excelissä. Kun asettelu on määritetty, sille luodaan malli. Tämä malli sijastaan luo vastaavan Excel-mallin. Voit sitten muokata Excel-mallia ja lisätä siihen kaavoja ja muotoilua, ja ladata sen takaisin. Asettelut määritetään sitten kullekin vaihesäännölle **Budjettisuunnitteluprosessi**-sivulla. Asettelut siis korvaavat mallit, jotka määritettiin ja joita käytettiin samalla tavalla.
+Asettelut ovat uusi konsepti, joka korvaa Excel-mallin. Asettelut sisältävät sarakkeita, jotka määrittävät mitkä budjetti- tai todelliset tiedot ja kaudet tulisi näyttää. Asettelut ovat yhteisiä niin asiakasohjelmassa kuin Excel-apuohjelmassa. Tietojen syöttämisen tai katselun käyttökokemus on Dynamics 365 for  Finance and Operations -asiakasohjelmassa siis parempi kuin AX 2012:ssa. Tietojen syöttö Dynamics 365 for Finance and Operations -asiakasohjelmassa ei ole enää rajoitettu yhden skenaarion syöttämiseen ja tarkasteluun tapahtumanäkymässä. Voit sen sijaan käyttää vertailunäkymää, josta voit tarkastella ja muokata helposti useiden kausien ja tilien summia samanaikaisesti. Asettelut voi myös määrittää niin, että voit syöttää ja tarkastella valuuttoja, kommentteja tai muita vaihtoehtoisia tietoja. Asettelujen avulla voit myös määrittää, mitkä kirjanpitodimensiot ja dimensiokuvaukset näytetään. Asettelut sisältävät myös skenaariorajoituksia, joilla voi määrittää mitkä mallin sarakkeet ovat muokattavissa ja mitkä niistä ovat käytettävissä Excelissä. Kun asettelu on määritetty, sille luodaan malli. Tämä malli sijastaan luo vastaavan Excel-mallin. Voit sitten muokata Excel-mallia ja lisätä siihen kaavoja ja muotoilua, ja ladata sen takaisin. Asettelut määritetään sitten kullekin vaihesäännölle **Budjettisuunnitteluprosessi**-sivulla. Asettelut siis korvaavat mallit, jotka määritettiin ja joita käytettiin samalla tavalla.
 
-### <a name="budget-planning-processes"></a>Budjettisuunnitteluprosessit
+### Budjettisuunnitteluprosessit
+<a id="budget-planning-processes" class="xliff"></a>
 
-Budjettisuunnitteluprosessit ovat pääsääntöisesti samat kuin AX 2012:ssa. Merkittävin muutos on, että mallit on korvattu asetteluilla. Jos sinulla on valmiita prosesseja AX 2012:ssa, ne siirretään käsiteltävään tilaan, jotta niihin voidaan tehdä muutoksia. Määritä asettelut, jotka tarvitset kullekin vaihesäännölle, jotta voit päättää, mitkä skenaariot ja aikajaksot näytetään, kun suunnitelma avataan asiakasohjelmassa. Asettelut määrittävät myös, mikä Excel-malli avataan Dynamics 365 for Operationsin ulkopuolella, jotta voit tarkastella budjettia. **Oletustilirakenne** on uusi, pakollinen kenttä budjettisuunnitteluprosessissa. Määritä kullekin budjettisuunnitteluprosessille ensisijainen tilirakenne, jota budjetoinnissa tulee käyttää.
+Budjettisuunnitteluprosessit ovat pääsääntöisesti samat kuin AX 2012:ssa. Merkittävin muutos on, että mallit on korvattu asetteluilla. Jos sinulla on valmiita prosesseja AX 2012:ssa, ne siirretään käsiteltävään tilaan, jotta niihin voidaan tehdä muutoksia. Määritä asettelut, jotka tarvitset kullekin vaihesäännölle, jotta voit päättää, mitkä skenaariot ja aikajaksot näytetään, kun suunnitelma avataan asiakasohjelmassa. Asettelut määrittävät myös, mikä Excel-malli avataan Dynamics 365 for Finance and Operationsin ulkopuolella, jotta voit tarkastella budjettia. **Oletustilirakenne** on uusi, pakollinen kenttä budjettisuunnitteluprosessissa. Määritä kullekin budjettisuunnitteluprosessille ensisijainen tilirakenne, jota budjetoinnissa tulee käyttää.
 
-### <a name="attachments"></a>Liitteet
+### Liitteet
+<a id="attachments" class="xliff"></a>
 
-Perusteluasiakirjat tallennettiin liitekansioon AX 2012:ssa. Aiempia perusteluasiakirjoja ei päivitetä. Perusteluasiakirjat tallennetaan nyt tietokantaan. Jos nämä tiedot tulee tallentaa päivitettyyn versioon, voit ladata lopulliset perusteluasiakirjat kunkin suunnitelman liitteeksi käyttämällä toimintoruudun **Perustelu**-painiketta. AX 2012 loi Excel-työkirjat kullekin budjettisuunnitelmalle mallin perusteella. Kaikki suunnitelmat avaavat Dynamics 365 for Operationsissa kopion asettelusta. Excel-tiedostoon ei kuitenkaan tallenneta muutoksia. Kaikki kaavat tai tukitiedot, joita käytettiin suunnitelmakohtaisesti on lisättävä kommenteissa, perusteluasiakirjassa tai jossain toisessa täydentävässä prosessissa.
+Perusteluasiakirjat tallennettiin liitekansioon AX 2012:ssa. Aiempia perusteluasiakirjoja ei päivitetä. Perusteluasiakirjat tallennetaan nyt tietokantaan. Jos nämä tiedot tulee tallentaa päivitettyyn versioon, voit ladata lopulliset perusteluasiakirjat kunkin suunnitelman liitteeksi käyttämällä toimintoruudun **Perustelu**-painiketta. AX 2012 loi Excel-työkirjat kullekin budjettisuunnitelmalle mallin perusteella. Kaikki suunnitelmat avaavat Dynamics 365 for Finance and Operationsissa kopion asettelusta. Excel-tiedostoon ei kuitenkaan tallenneta muutoksia. Kaikki kaavat tai tukitiedot, joita käytettiin suunnitelmakohtaisesti on lisättävä kommenteissa, perusteluasiakirjassa tai jossain toisessa täydentävässä prosessissa.
 
-## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>AX 2012:sta päivitetyn ympäristön määrittäminen
+## AX 2012:sta päivitetyn ympäristön määrittäminen
+<a id="configuring-an-upgraded-environment-from-ax-2012" class="xliff"></a>
 Seuraavassa esimerkissä käytetään AX 2012 -esittelytiedoista päivitettyä budjettiprosessia, jonka avulla opit, miten päivitetty järjestelmä määritetään. Päivitysprosessin auttamiseksi sarakkeille on luotu oletusmääritykset. Voit päivittää tai poistaa nämä oletustiedot, jos ne eivät vastaa määritysvaatimuksiasi. **Huomautus:** järjestelmä ei aseta arvoja uusille, pakollisille kentille. Jos et pysty siirtymään pois esimerkiksi **Budjettisuunnittelun konfigurointi** -sivulta, voit sulkea selaimen ja avata sen uudelleen toiselle sivulle, jotta voit syöttää tiedot oikeassa järjestyksessä. Joitakin pakollisia kenttiä ei ole vielä määritetty. Voit siis kohdata ongelmia, kunnes kaikki on määritetty ja kaikki pakolliset kentät on asetettu. Tässä ohjeaiheessa selitetään, miten nämä kentät määritetään vaatimusten mukaisesti. Seuraavassa on joitakin näistä pakollisista kentistä:
 
 -   **Budjettisuunnitteluprosessi**-sivu: **Oletustilirakenne**-kenttä
 -   **Budjettisuunnitteluprosessi**-sivu: **Asettelu**-kenttä **Budjettisuunnittelun vaiheen säännöt ja asettelut** -pikavälilehdessä
 
-### <a name="define-columns-and-layouts"></a>Määritä sarakkeet ja asettelut
+### Määritä sarakkeet ja asettelut
+<a id="define-columns-and-layouts" class="xliff"></a>
 
 1.  Valitse **Budjettisuunnittelun konfiguraatio** -sivulla **Sarakkeet**-välilehti. Päivityksessä luodaan uusia sarakkeita automaattisesti budjettisuunnitelmasi rivien perusteella. Sarakkeet käyttävät nyt dynaamisia päivämääriä, jossa kellonaika ja vuosi ovat siirtymiä budjettisuunnitteluprosessissa määritetystä tilikaudesta. **Huomautus:** suorituskykysyistä päivitys olettaa, että kaikki budjettijaksot ovat kalenterivuosia tilikausien sijaan. Jos käytät tilikausia, sinun on muokattava sarakkeita käsin, jotta ne vastaavat oikeita tilikausia. AX 2012 sisälsi esimerkiksi seuraavat elementit:
     -   Budjettisuunnitelman skenaariot: Todellinen, Perusarvo, Budjettipyyntö, Budjetti hyväksytty
     -   Budjettisuunnitelman rivit kaikille vuoden 2017 skenaarioille ja Todelliset sekä vuodelle 2016 että vuodelle 2017
 
-    Dynamics 365 for Operationsissa luodaan seuraavat sarakkeet:
+    Dynamics 365 for Finance and Operationsissa luodaan seuraavat sarakkeet:
     | Sarakkeen nimi    | Budjettisuunnitelman skenaario | Sarakkeen ajanjakso | Vuoden siirtymä |
     |----------------|----------------------|--------------------|-------------|
     | Tam Skenaario 1 | Todelliset              | 1                  | 0           |
@@ -92,7 +100,8 @@ Seuraavassa esimerkissä käytetään AX 2012 -esittelytiedoista päivitettyä b
 4.  Valitse **Asetteluelementit**-pikavälilehdessä **Lisää** ja anna kullekin riville metatiedot, kuten valuutta, kommentti tai budjettiluokka, joka määrittää tuotto- tai kulurivit. Lisää seuraavaksi aikajakson sarakkeet ja nykyiseen budjettijaksoon- ja vaiheeseen kuuluvat skenaariot. Voit tehdä muutokset käsin asiakasohjelmassa tai Excel-apuohjelmassa, joka osoittaa budjettisuunnitelman asetteluelementtien tietoyksikköön.
 5.  Valitse kutakin asetteluelementtiä varten, onko sarake muokattavissa ja että näytetäänkö sarake myös asettelun Excel-työkirjassa. **Huomautus:** jos käytössäsi on historiallinen suunnitelma, harkitse käyttäväsi 12 kuukausittaista saraketta näyttävää asettelua kaikille kyseisen prosessin budjettisuunnitelman skenaarioille.
 
-### <a name="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage"></a>Päivitä budjettisuunnittelun prosessit käyttämään asiaankuuluvaa asettelua kussakin budjettivaiheessa
+### Päivitä budjettisuunnittelun prosessit käyttämään asiaankuuluvaa asettelua kussakin budjettivaiheessa
+<a id="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage" class="xliff"></a>
 
 1.  Valitse konfiguroitava prosessi **Budjettisuunnittelun prosessi** -sivulla.
 2.  Napsauta Toimintoruudussa **Muokkaa**.
@@ -100,24 +109,30 @@ Seuraavassa esimerkissä käytetään AX 2012 -esittelytiedoista päivitettyä b
 4.  Valitse **Budjettisuunnittelun vaiheen säännöt ja asettelut** -pikavälilehden **Asettelu**-kentässä asettelu, joka on aiemmin määritetty ja sopiva tähän vaiheeseen.
 5.  Jatka valitsemalla sama tai eri asettelu budjettisuunnittelun eri vaiheille ja tallenna sitten muutokset.
 
-## <a name="additional-features-to-consider-in-your-budgeting-process"></a>Lisäominaisuuksia käytettäväksi budjetointiprosessissasi
-### <a name="budget-planning-workspace"></a>Budjettisuunnittelun työtila
+## Lisäominaisuuksia käytettäväksi budjetointiprosessissasi
+<a id="additional-features-to-consider-in-your-budgeting-process" class="xliff"></a>
+### Budjettisuunnittelun työtila
+<a id="budget-planning-workspace" class="xliff"></a>
 
 Työtila on tarkoitettu sekä budjetin omistajalle että sen suunnitteluun osallistuville. Se sisältää linkit kaikkiin huomiotasi vaativiin budjettiasiakirjoihin. Se sisältää myös budjettiprosessin raportit ja suorituskykymittarit (KPI:t). Budjetin järjestelmänvalvoja voi määrittää nykyisen budjetin suunnitteluprosessin kaikille käyttäjille **Budjetoinnin parametrit** -sivulla. **Työtilan asetukset** -välilehden **Budjettisuunnittelu**-pikavälilehti sisältää kentän, jossa voit valita budjettisuunnittelun prosessin.
 
-### <a name="alternate-layouts"></a>Vaihtoehtoiset asettelut
+### Vaihtoehtoiset asettelut
+<a id="alternate-layouts" class="xliff"></a>
 
 Vaihtoehtoiset asettelut ovat uusi ominaisuus, jonka avulla voit tarkastella suunnitelmia eri asetteluissa. Vaihtoehtoina voi tarjota yhden tai useamman asettelun. Voit sitten tarkastella budjettisuunnitelmaa joko kuukausi- tai vuosineljännesasettelussa. Voit määritellä vaihtoehtoiset asettelut **Budjettisuunnittelun prosessi** -sivun **Budjettisuunnittelun vaiheen säännöt ja asettelut** -pikavälilehdessä.
 
-### <a name="budget-milestones"></a>Budjetin välitavoitteet
+### Budjetin välitavoitteet
+<a id="budget-milestones" class="xliff"></a>
 
 Budjettiprosessin osana on tärkeää, että ymmärrät tärkeät päivämäärät ja määräajat. Voit nyt määrittää päivämäärät niin, että niillä on kuvaus. Budjetoinnin käyttäjät näkevät nämä kuvaukset avatessaan budjetteja muokattavaksi tai kun he tarkastelevat mitään heille määrättyä.
 
-### <a name="copy-from-budget-plan-allocation"></a>Kopiointi budjettisuunnitelman kohdistuksesta
+### Kopiointi budjettisuunnitelman kohdistuksesta
+<a id="copy-from-budget-plan-allocation" class="xliff"></a>
 
 Uusi kohdistusmenetelmä mahdollistaa ylätason suunnitelman jakamisen alatasolle ilman hierarkian välitason käyttöä. Tämä menetelmä on erityisen hyödyllinen asiakkaille, jotka ovat aiemmin luoneet kirjanpitodimension ainoastaan budjetin jakamista ja hyväksyntää varten.
 
-### <a name="generating-budget-plans-from-new-budget-sources"></a>Budjettisuunnitelmien kehittäminen uusista budjetin lähteistä
+### Budjettisuunnitelmien kehittäminen uusista budjetin lähteistä
+<a id="generating-budget-plans-from-new-budget-sources" class="xliff"></a>
 
 Kausittaisiin prosesseihin on lisätty seuraavat vaihtoehdot. Näiden vaihtoehtojen avulla voit luoda budjettisuunnitelman käyttämällä lähtökohtana toisen moduulin tietoja:
 
@@ -126,27 +141,33 @@ Kausittaisiin prosesseihin on lisätty seuraavat vaihtoehdot. Näiden vaihtoehto
 -   Muodosta budjettisuunnitelma projektiennusteista
 -   Muodosta budjettisuunnitelma budjettirekisteristä
 
-### <a name="more-complete-tracking-of-amounts"></a>Lisätietoja summien seurannasta
+### Lisätietoja summien seurannasta
+<a id="more-complete-tracking-of-amounts" class="xliff"></a>
 
-AX 2012 -järjestelmässä budjettisuunnittelu sisälsi yhden, jokaiselle arvolle tallennetun summan. Tätä tietomallia on laajennettu Dynamics 365 for Operationsissa. Kullakin arvolla on nyt erilliset kirjanpitovaluutan, tapahtumavaluutan ja raportointivaluutan summat. Näihin sarakkeisiin täytetään olemassa olevia tietoja päivityksen aikana.
+AX 2012 -järjestelmässä budjettisuunnittelu sisälsi yhden, jokaiselle arvolle tallennetun summan. Tätä tietomallia on laajennettu Dynamics 365 for Finance and Operationsissa. Kullakin arvolla on nyt erilliset kirjanpitovaluutan, tapahtumavaluutan ja raportointivaluutan summat. Näihin sarakkeisiin täytetään olemassa olevia tietoja päivityksen aikana.
 
-### <a name="do-not-convert-currency-in-aggregation"></a>Älä muunna valuuttaa koosteessa
+### Älä muunna valuuttaa koosteessa
+<a id="do-not-convert-currency-in-aggregation" class="xliff"></a>
 
 Summat muunnetaan yleensä automaattisesti tapahtumavaluutasta organisaation kirjanpitovaluuttaan, kun alatason suunnitelma yhdistetään ylätasoon. Kun **Älä muunna valuuttaa koosteessa** -asetus on **Ei**, kootut summat pidetään alkuperäisessä valuutassa. Tämä toiminto sallii siis tarkemmat korjaukset, joihin vaikuttavat vaihtokurssin muutokset.
 
-### <a name="looking-back-from-a-budget-plan-to-other-modules-that-contributed-to-the-budget"></a>Näkymä budjettisuunnitelmasta taaksepäin muihin moduuleihin, jotka osallistuivat budjettiin
+### Näkymä budjettisuunnitelmasta taaksepäin muihin moduuleihin, jotka osallistuivat budjettiin
+<a id="looking-back-from-a-budget-plan-to-other-modules-that-contributed-to-the-budget" class="xliff"></a>
 
 Budjettisuunnitelmat voidaan muodostaa kysyntä- tai tarjontaennusteista, projektista tai muista alueista. Budjettisuunnitelmat dimensioyhdistelmän mukaan -kysely sisältää useita vaihtoehtoja, joiden avulla voit tunnistaa budjettisuunnitelman lähteenä olleen tiedon.
 
-### <a name="overwrite-or-append-to-plan-for-allocation-schedules"></a>Korvaa tai liitä suunnitelma kohdistusaikatauluun
+### Korvaa tai liitä suunnitelma kohdistusaikatauluun
+<a id="overwrite-or-append-to-plan-for-allocation-schedules" class="xliff"></a>
 
 Jos jaettaville summille on useita lähteitä, voit määrittää summat lisättäviksi. Tällöin summat eivät korvaa nykyisiä summia. Sen sijaan ne liitetään aiempiin summiin.
 
-### <a name="default-financial-dimension-set-for-budget-planning-configuration"></a>Budjettisuunnittelun konfiguraation taloushallinnon oletusdimensioyhdistelmä
+### Budjettisuunnittelun konfiguraation taloushallinnon oletusdimensioyhdistelmä
+<a id="default-financial-dimension-set-for-budget-planning-configuration" class="xliff"></a>
 
 **Budjettisuunnittelun konfiguraatio** -sivulla on nyt kenttä, jossa voit määrittää taloushallinnon oletusdimensioyhdistelmän. Kenttä on valinnainen, mutta sitä saatetaan tarvita tietyissä kyselyissä. Sitä voi tarvita myös raporttien ryhmittelyyn tai suodattamiseen dimensioyhdistelmän mukaan.
 
-### <a name="data-entities"></a>Tietoyksiköt
+### Tietoyksiköt
+<a id="data-entities" class="xliff"></a>
 
 Järjestelmään on lisätty useita tietoyksiköitä, jotka mahdollistavat budjettisuunnittelun nopean toteutuksen. Yksiköiden avulla voit myös tehdä muutoksia Excelin kautta. Näin sinun ei tarvitse luoda kohteita yksi kerrallaan asiakasohjelmassa. Seuraavassa on luettelo uusista tietoyksiköistä:
 

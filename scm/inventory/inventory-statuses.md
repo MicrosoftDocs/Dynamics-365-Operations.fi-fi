@@ -3,14 +3,14 @@ title: Varaston tilat
 description: "Tässä artikkelissa kuvataan, miten varaston tiloja voidaan käyttää varaston luokittelussa ja seuraamisessa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1565b7738260270a986b515dfd21931296ce83bd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b3ec66c805d028c20f3d3f95e7af9d78252828c7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="inventory-statuses"></a>Varaston tilat
+# Varaston tilat
+<a id="inventory-statuses" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,7 +45,7 @@ Seuraavassa on esimerkkejä tavoista, joilla voit käyttää varaston tiloja:
 
 Varaston tila on yksi varastodimensioryhmän dimensioista. Varaston tiloja voidaan luokitella käytettävissä oleviin ja ei-käytettävissä oleviin ja voit käyttää **Varaston esto** -parametria estämään nimikkeet, joilla on ei-käytettävissä oleva varaston tila. Toimituskiellossa olevien nimikkeiden katsotaan olevan osa fyysistä varastoa, eikä niitä vodai käyttää tuotantotilauksessa, myyntitilauksessa, siirtotilauksessa tai lähtevässä tapahtumassa. 
 
-Voit käyttää saapuville töille varastonimikkeitä, joiden varastotila on joko käytettävissä tai ei käytettävissä. Voit luoda esimerkiksi käytettävissä oleville tilan, jonka nimi on **Valmis**, ei-käytettävissä oleville tilan, jonka nimi on **Vioittuneet** ja toimituskiellossa oleville tilan, jonka nimi on **Suljettu**. Luodessasi ostotilauksen vastaanotetuille tai palautetuille nimikkeille, jos mitkään nimikkeet ovat vahingoittuneita tai rikkoutuneita, voit muuttaa niiden varaston tilan **Vioittuneet**-ostotilauksen rivillä. Sen jälkeen, kun nimikkeet on otettu vastaan, tilaksi määritetään automaattisesti **Suljettu**. Jos skannaat vioittuneet nimikkeet käyttämällä mobiililaitetta, Microsoft Dynamics 365 for Operations voi käyttää sijainnin direktiivejä ja työn malleja näyttääkseen tietoja sopivasta sijainnista tai ne sijainnit, jossa voit laittaa pois nuo nimikkeet. Palautetuille nimikkeille luodaan jakelutyyppi **Varaus** **Varastotapahtumat** -lomakkeessa. 
+Voit käyttää saapuville töille varastonimikkeitä, joiden varastotila on joko käytettävissä tai ei käytettävissä. Voit luoda esimerkiksi käytettävissä oleville tilan, jonka nimi on **Valmis**, ei-käytettävissä oleville tilan, jonka nimi on **Vioittuneet** ja toimituskiellossa oleville tilan, jonka nimi on **Suljettu**. Luodessasi ostotilauksen vastaanotetuille tai palautetuille nimikkeille, jos mitkään nimikkeet ovat vahingoittuneita tai rikkoutuneita, voit muuttaa niiden varaston tilan **Vioittuneet**-ostotilauksen rivillä. Sen jälkeen, kun nimikkeet on otettu vastaan, tilaksi määritetään automaattisesti **Suljettu**. Jos skannaat vioittuneet nimikkeet mobiililaitteella, Microsoft Dynamics 365 for Finance and Operations voi käyttää sijainnin direktiivejä ja työn malleja näyttämään tietoja sopivasta sijainnista tai ne sijainnit, jossa voit poispanna kyseiset nimikkeet. Palautetuille nimikkeille luodaan jakelutyyppi **Varaus** **Varastotapahtumat** -lomakkeessa. 
 
 Ulosmeneville töille käytetään nimikkeitä, joilla on saatavilla oleva varaston tila. Jos on nimikkeitä, joiden tila on **Rikkoutunut** ja pääsuunnittelu suoritetaan näillä nimikkeillä, niitä pidetään puuttuvina ja varasto täydennetään automaattisesti. 
 

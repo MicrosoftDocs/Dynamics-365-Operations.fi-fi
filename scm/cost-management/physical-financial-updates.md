@@ -3,14 +3,14 @@ title: "Fyysiset ja kirjanpidolliset päivitykset"
 description: "Tämä ohjeaihe sisältää varastomääriä lisäävien tai vähentävien tapahtumatyyppien yhteenvedon."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTrans, InventTransVoucher
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 75023
 ms.assetid: 128340e1-c573-48e6-b835-6c350d8dd0fb
 ms.search.region: Global
@@ -19,24 +19,26 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 72984b951b88bef565377a7470194437ad0137ce
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a0eeb5a57f9b82150150752c64e89c2c91856889
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="physical-and-financial-updates"></a>Fyysiset ja kirjanpidolliset päivitykset
+# Fyysiset ja kirjanpidolliset päivitykset
+<a id="physical-and-financial-updates" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tämä ohjeaihe sisältää varastomääriä lisäävien tai vähentävien tapahtumatyyppien yhteenvedon. 
 
-Varastotapahtumia voi päivittää sekä fyysisesti että kirjanpidollisesti Microsoft Dynamics 365 for Operationsissa. Tietynlaisen fyysiset ja kirjanpidolliset tapahtumat lisäävät varastomääriä, ja toisenlaiset laskevat varastomääriä.
+Varastotapahtumia voi päivittää sekä fyysisesti että kirjanpidollisesti Microsoft Dynamics 365 for Finance and Operationsissa. Tietynlaisen fyysiset ja kirjanpidolliset tapahtumat lisäävät varastomääriä, ja toisenlaiset laskevat varastomääriä.
 
-## <a name="physical-increases"></a>Fyysisiä lisäyksiä
+## Fyysisiä lisäyksiä
+<a id="physical-increases" class="xliff"></a>
 Kun fyysinen tapahtuma kirjataan, tapahtumatietueen tila on **Vastaanotettu**. Seuraavat tapahtumat ovat fyysisiä lisäyksiä:
 
 -   ostotilauksen vastaanotto
@@ -44,7 +46,8 @@ Kun fyysinen tapahtuma kirjataan, tapahtumatietueen tila on **Vastaanotettu**. S
 -   Tuotantotilauksen ilmoittaminen valmiiksi
 -   tuotantotilauksen keräysluettelon sivutuote.
 
-## <a name="financial-increases"></a>Taloudelliset lisäykset
+## Taloudelliset lisäykset
+<a id="financial-increases" class="xliff"></a>
 Kun maksuvastaanottotapahtuma kirjataan, määrää lisäävän tapahtumatietueen tila on **Ostettu**. Seuraavat tapahtumat ovat kirjanpidollisia lisäyksiä:
 
 -   Toimittajan lasku
@@ -52,13 +55,16 @@ Kun maksuvastaanottotapahtuma kirjataan, määrää lisäävän tapahtumatietuee
 -   tuotantotilauksen kustannuslaskenta
 -   Positiivisen summan varastokirjauskansiot, kuten siirto, tulos, inventointi, tuoterakenne ja siirto
 
-## <a name="transactions-that-increase-quantity"></a>Tapahtumat, jotka lisäävät määrää.
-Määrää lisäävät tapahtumat kirjataan juoksevalla keskimääräisellä kustannushinnalla. Dynamics 365 for Operations laskee juoksevan keskimääräisen kustannushinnan, joka perustuu kirjanpidollisesti seurattavien varastodimensioiden tapahtumien kustannuksiin. Lisätietoja juoksevasta keskimääräisestä kustannushinnasta: [Juokseva keskimääräinen kustannushinta](running-average-cost-price.md).
+## Tapahtumat, jotka lisäävät määrää.
+<a id="transactions-that-increase-quantity" class="xliff"></a>
+Määrää lisäävät tapahtumat kirjataan juoksevalla keskimääräisellä kustannushinnalla. Finance and Operations laskee juoksevan keskimääräisen kustannushinnan, joka perustuu kirjanpidollisesti seurattavien varastodimensioiden tapahtumien kustannuksiin. Lisätietoja juoksevasta keskimääräisestä kustannushinnasta: [Juokseva keskimääräinen kustannushinta](running-average-cost-price.md).
 
-## <a name="transactions-that-decrease-quantity"></a>Tapahtumat, jotka vähentävät määrää.
-Dynamics 365 for Operations käyttää varastoon liittyvästä varastomallista riippumatta laskettua juoksevaa keskimääräistä kustannushintaa, kun määrää vähentävä tapahtuma kirjataan. Määrää vähentävää tapahtumaa ei saa olla merkitty aiemmin toiseen tapahtumaan ennen kirjaamista. Jos fyysinen käytettävissä oleva varasto muuttuu negatiiviseksi, Dynamics 365 for Operations käyttää varaston kustannusta, joka määritetään nimikkeelle **Nimike**-lomakkeessa. **Huomautus:**Jos multisite-toiminnot on otettu käyttöön, tätä kustannusta käytetään toimipaikan varastokustannuksena, joka on määritetty sivustolle **Tilauksen oletusasetukset** -lomakkeessa.
+## Tapahtumat, jotka vähentävät määrää.
+<a id="transactions-that-decrease-quantity" class="xliff"></a>
+Finance and Operations käyttää laskettua juoksevaa kustannushintaa, kun määrää vähentävä tapahtuma kirjataan, riippumatta siitä mikä varastomalli on liitetty kyseiseen varastoon. Määrää vähentävää tapahtumaa ei saa olla merkitty aiemmin toiseen tapahtumaan ennen kirjaamista. Jos fyysinen käytettävissä oleva varasto muuttuu negatiiviseksi, Dynamics 365 for Finance and Operations käyttää nimikkeelle **Nimike**-lomakkeessa määritettyä varastokustannusta. **Huomautus:** Jos multisite-toiminnot on otettu käyttöön, tätä kustannusta käytetään toimipaikan varastokustannuksena, joka on määritetty sivustolle **Tilauksen oletusasetukset** -lomakkeessa.
 
-## <a name="physical-issues-vs-financial-issues"></a>Kirjanpidolliset varasto-otot verrattuina fyysiseen ottoon
+## Kirjanpidolliset varasto-otot verrattuina fyysiseen ottoon
+<a id="physical-issues-vs-financial-issues" class="xliff"></a>
 Kun fyysinen varasto-ottotapahtuma kirjataan, tapahtumatietueentila on **Toimitettu**. Seuraavat tapahtumat ovat fyysisiä varasto-ottoja:
 
 -   tuotantotilauksen keräysluettelon kirjauskansio

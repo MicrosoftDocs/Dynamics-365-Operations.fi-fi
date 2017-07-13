@@ -1,15 +1,15 @@
 ---
 title: "Pikanäppäimet"
-description: "Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Operations -ohjelmistossa."
+description: "Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Finance and Operations -ohjelmistossa."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
@@ -17,24 +17,26 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7d146f3dfe1d71e8d3031a851f47fac35d0f1a58
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8daf9d0c5b83e3bca66c0229a328737adeeb2951
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="keyboard-shortcuts"></a>Pikanäppäimet
+# Pikanäppäimet
+<a id="keyboard-shortcuts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Operations -ohjelmistossa. 
+Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Finance and Operations -ohjelmistossa. 
 
 **Huomautus:** Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
 
-## <a name="action-shortcuts"></a>Toimintojen pikanäppäimet
+## Toimintojen pikanäppäimet
+<a id="action-shortcuts" class="xliff"></a>
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Toiminto**                                    | **Paina**                        |
@@ -44,14 +46,15 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Opera
 | Siirry valikossa seuraavaan tai edelliseen vaihtoehtoon            | Alanuoli/ylänuoli            |
 | Sulje toimintoruudun tai valikon välilehti          | Esc                              |
 | Hiiren kakkospainikkeen napsautus                            | Vaihto+F10                        |
-| Avaa Dynamics 365 for Operationsin pikavalikko. | Ctrl+F10                         |
+| Avaa Finance and Operations -pikavalikko | Ctrl+F10                         |
 | Suorita oletuspainike lomakkeessa/valintaikkunassa       | Alt+Enter                        |
 | Painikkeen tai ruudun napsautus                            | Enter tai Väli                   |
 | Näytä tai päivitä määräruudun tiedot         | Alt+Ylänuoli                     |
 
  
 
-## <a name="date-picker-shortcuts"></a>Päivämäärävalitsimen pikanäppäimet
+## Päivämäärävalitsimen pikanäppäimet
+<a id="date-picker-shortcuts" class="xliff"></a>
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Toiminto**                        | **Paina**                                 |
@@ -62,7 +65,8 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Opera
 
  
 
-## <a name="factbox-shortcuts"></a>Tietoruudun pikanäppäimet
+## Tietoruudun pikanäppäimet
+<a id="factbox-shortcuts" class="xliff"></a>
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | Avaa tietoruutu (tai siirrä kohdistus tietoruutuun, jos se on avoinna) | Ctrl+F2                                   |
@@ -74,7 +78,8 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Opera
 
  
 
-## <a name="filtering-shortcuts"></a>Suodatuksen pikanäppäimet
+## Suodatuksen pikanäppäimet
+<a id="filtering-shortcuts" class="xliff"></a>
 |                                                                                                                     |               |
 |---------------------------------------------------------------------------------------------------------------------|---------------|
 | **Toiminto**                                                                                                      | **Paina**     |
@@ -86,7 +91,8 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Opera
 
  
 
-## <a name="form-shortcuts"></a>Lomakkeen pikanäppäimet
+## Lomakkeen pikanäppäimet
+<a id="form-shortcuts" class="xliff"></a>
 |                                                                                                                                 |                   |
 |---------------------------------------------------------------------------------------------------------------------------------|-------------------|
 | **Toiminto**                                                                                                                  | **Paina**         |
@@ -108,7 +114,8 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Opera
 
  
 
-## <a name="form-navigation-shortcuts"></a>Lomakkeen siirtymispikanäppäimet
+## Lomakkeen siirtymispikanäppäimet
+<a id="form-navigation-shortcuts" class="xliff"></a>
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Toiminto**                                      | **Paina**                                    |
@@ -129,7 +136,8 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Opera
 
  
 
-## <a name="grid-shortcuts"></a>Ruudukon pikanäppäimet
+## Ruudukon pikanäppäimet
+<a id="grid-shortcuts" class="xliff"></a>
 |                                                                                                               |                                 |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Toiminto**                                                                                                | **Paina**                       |
@@ -147,7 +155,8 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Opera
 
  
 
-## <a name="input-control-shortcuts"></a>Syötteiden ohjausobjektien pikanäppäimet
+## Syötteiden ohjausobjektien pikanäppäimet
+<a id="input-control-shortcuts" class="xliff"></a>
 |                                                            |                               |
 |------------------------------------------------------------|-------------------------------|
 | **Toiminto**                                             | **Paina**                     |
@@ -162,7 +171,8 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Opera
 
  
 
-## <a name="messaging-shortcuts"></a>Viestinnän pikanäppäimet
+## Viestinnän pikanäppäimet
+<a id="messaging-shortcuts" class="xliff"></a>
 |                          |               |
 |--------------------------|---------------|
 | **Toiminto**           | **Paina**     |
@@ -171,7 +181,8 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Opera
 
  
 
-## <a name="navigation-shortcuts"></a>Siirtymisen pikanäppäimet
+## Siirtymisen pikanäppäimet
+<a id="navigation-shortcuts" class="xliff"></a>
 |                                                                           |                 |
 |---------------------------------------------------------------------------|-----------------|
 | **Toiminto**                                                            | **Paina**       |
@@ -186,7 +197,8 @@ Seuraavat pikanäppäimet ovat käytössä koko Microsoft Dynamics 365 for Opera
 
  
 
-## <a name="segmented-entry-shortcuts"></a>Segmentoidun kirjauksen pikanäppäimet
+## Segmentoidun kirjauksen pikanäppäimet
+<a id="segmented-entry-shortcuts" class="xliff"></a>
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Toiminto**                                                                                                          | **Näppäinyhdistelmä**                        |

@@ -3,13 +3,13 @@ title: "Työnkulun ominaisuuksien konfiguroiminen"
 description: "Tässä ohjeaiheessa kerrotaan, miten työnkulun eri ominaisuudet määritetään."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 263ebaf1cf509589a745f1a9ec3384f97e854519
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 713204bc1e9c757bda48d556ea5b0f66ed79a5c9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-the-properties-of-a-workflow"></a>Työnkulun ominaisuuksien konfiguroiminen
+# Työnkulun ominaisuuksien konfiguroiminen
+<a id="configure-the-properties-of-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,25 +35,29 @@ Tässä ohjeaiheessa kerrotaan, miten työnkulun eri ominaisuudet määritetää
 
 Konfiguroidaksesi työnkulun ominaisuudet, avaa työnkulku työnkulkueditorissa. Napsauta Työnkulkueditorin alustaa ja valitse sitten **ominaisuudet** avataksesi **Ominaisuudet**-sivun. Seuraavien ohjeiden avulla voit sitten määrittää työnkulun eri ominaisuudet.
 
-## <a name="name-the-workflow"></a>Työnkulun nimeäminen
+## Työnkulun nimeäminen
+<a id="name-the-workflow" class="xliff"></a>
 Kirjoita näiden ohjeiden avulla nimi työnkululle.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
 2.  Kirjoita **Nimi**-kenttään työnkulun yksilöivä nimi. Oletetaan esimerkiksi, että olet luomassa ostoehdotustyönkulut jokaiselle maalle/alueelle, jossa toimit. Ostoehdotustyönkulut voi nimetä esimerkiksi seuraavasti: **Tanskan ostoehdotukset** tai **Espanjan ostoehdotukset**.
 
-## <a name="specify-the-workflow-owner"></a>Työnkulun omistajan määrittäminen
+## Työnkulun omistajan määrittäminen
+<a id="specify-the-workflow-owner" class="xliff"></a>
 Työnkulun omistaja on vastuussa työnkulun hallinnasta ja ylläpidosta. Määritä työnkulun omistaja seuraavia ohjeita noudattamalla.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
 2.  Valitse **Omistaja**-luettelosta tämän työnkulun hallinnasta vastaava henkilö.
 
-## <a name="select-an-email-template"></a>Valitse sähköpostimalli.
+## Valitse sähköpostimalli.
+<a id="select-an-email-template" class="xliff"></a>
 Valitse näiden ohjeiden avulla sähköpostimalli, jota käytetään työnkulkua koskevien ilmoitusviestin luomiseen.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
 2.  Valitse malli **Työnkulkuilmoitusten sähköpostimallit** -luettelosta.
 
-## <a name="enter-instructions-for-users"></a>Käyttäjien ohjeiden määrittäminen
+## Käyttäjien ohjeiden määrittäminen
+<a id="enter-instructions-for-users" class="xliff"></a>
 Voit antaa ohjeita käyttäjille, jotka lähettävät asiakirjoja käsiteltäviksi ja hyväksyttäviksi. Näistä käyttäjistä käytetään myös nimitystä *aloittaja*. Oletetaan, että olet luomassa ostoehdotuksen työnkulkua, jolle kirjoitat ohjeita. Ohjeet ovat sitten niiden henkilöiden tarkasteltavissa, jotka luovat ostoehdotuksia **Ostoehdotukset**-sivulla. Aloittaja voi avata ohjeet näyttöön napsauttamalla työnkulun sanomapalkissa olevaa kuvaketta. Määritä käyttäjien ohjeet seuraavasti.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
@@ -71,7 +76,8 @@ Voit antaa ohjeita käyttäjille, jotka lähettävät asiakirjoja käsiteltävik
     5.  Voit mukauttaa tekstiä lisäämällä paikkamerkkejä. Ohjeet paikkamerkkien asettamisesta ovat vaiheessa 3.
     6.  Valitse **Sulje**.
 
-## <a name="specify-when-this-workflow-is-used"></a>Määritä, milloin tätä työnkulkua käytetään
+## Määritä, milloin tätä työnkulkua käytetään
+<a id="specify-when-this-workflow-is-used" class="xliff"></a>
 Voit luoda useita samaan tyyppiin perustuvia työnkulkuja. Voit esimerkiksi luoda ostoehdotustyönkulun kullekin maalle/alueelle, jossa toimit, kuten Tanskan ostoehdotukset ja Espanjan ostoehdotukset. Jos käytössä on useita samaan tyyppiin perustuvia työnkulkuja, määritä, milloin kutakin työnkulkua käytetään. Edellisessä esimerkissä määritetään seuraavat ehdot:
 
 -   Tanskan ostoehdotukset -työnkulkua käytetään, kun maa/alue on DK.
@@ -90,7 +96,8 @@ Määritä seuraavien ohjeiden avulla, milloin konfiguroitavaa työnkulkua tulee
     3.  Valitse **Testi**. Järjestelmä arvioi, täyttääkö tietue määrittämäsi ehdot. Jos esimerkiksi olet luomassa Espanjan ostoehdotusten työnkulkua, sivun **Tarkista ehto** -alueella näytetään luettelo ostoehdotuksista. Kun valitset **Testi**, järjestelmä arvioi valitun ostoehdotuksen ja määrittää, onko maa/alue ES.
     4.  Palaa **Ominaisuudet**-sivulle valitsemalla **OK** tai **Peruuta**.
 
-## <a name="specify-when-notifications-are-sent"></a>Määritä, milloin ilmoitukset lähetetään
+## Määritä, milloin ilmoitukset lähetetään
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Kun asiakirja lähetetään käsiteltäväksi, järjestelmä luo työnkulkuinstanssin. Voit lähettää käyttäjille ilmoituksen, kun (tähän työnkulkuun perustuva) työnkulkuinstanssi aloitetaan tai päätetään tai kun työnkulku on valmis tai se pysäytetään virheen vuoksi. Seuraavia ohjeita noudattamalla voit määrittää, milloin ilmoitukset lähetetään.
 
 1.  Valitse vasemmasta ruudusta **Ilmoitukset**.
@@ -151,10 +158,10 @@ Kun asiakirja lähetetään käsiteltäväksi, järjestelmä luo työnkulkuinsta
     </tr>
     <tr class="odd">
     <td>Käyttäjä</td>
-    <td>Tietyt Dynamics 365 for Operations -käyttäjät</td>
+    <td>Tietyt Finance and Operations -käyttäjät</td>
     <td><ol>
     <li>Napsauta <strong>Vastaanottaja</strong>-välilehdessä <strong>Käyttäjä</strong>-kohtaa.</li>
-    <li><strong>Käyttäjä</strong>-välilehden <strong>Käytettävissä olevat käyttäjät</strong> -luettelo sisältää kaikki Dynamics 365 for Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käyttäjä</strong>-välilehden <strong>Käytettävissä olevat käyttäjät</strong> -luettelo sisältää kaikki Dynamics 365 for Finance and Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -162,7 +169,8 @@ Kun asiakirja lähetetään käsiteltäväksi, järjestelmä luo työnkulkuinsta
 
 8.  Toista vaiheet 3-7 kullekin tapahtumalle, jonka valitsit vaiheessa 2.
 
-## <a name="enter-comments-about-the-changes-that-you-made-to-the-workflow"></a>Kirjoita kommentit työnkulkuun tekemistäsi muutoksista
+## Kirjoita kommentit työnkulkuun tekemistäsi muutoksista
+<a id="enter-comments-about-the-changes-that-you-made-to-the-workflow" class="xliff"></a>
 Noudata seuraavia ohjeita, kun haluat määrittää työnkulkuun tehtyjen muutosten kommentteja.
 
 1.  Valitse vasemmasta ruudusta **Huomautukset**.

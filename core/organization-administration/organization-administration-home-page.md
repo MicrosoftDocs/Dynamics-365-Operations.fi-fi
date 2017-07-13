@@ -1,15 +1,15 @@
 ---
 title: Organisaation hallinnon aloitussivu
-description: "Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Operations -ohjelmaa organisaatiossa."
+description: "Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Finance and Operationsia organisaatiossa."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20421
 ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 ms.search.region: Global
@@ -17,34 +17,38 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 70fe2361e6c6a2ba07f9be2b30169dd071301300
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 889a9ce79d4599a60a4503d7876276a1452a5465
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="organization-administration-home-page"></a>Organisaation hallinnon aloitussivu
+# Organisaation hallinnon aloitussivu
+<a id="organization-administration-home-page" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Operations -ohjelmaa organisaatiossa.
+Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Finance and Operationsia organisaatiossa.
 
-<a name="number-sequences"></a>Numerosarjat
+Numerosarjat
+<a id="number-sequences" class="xliff"></a>
 ----------------
 
--   [Numerosarjan esittely](number-sequence-overview.md)
+-   [Numerosarjan yleiskatsaus](number-sequence-overview.md)
 -   [Numerosarjojen määrittäminen ohjatulla toiminnolla](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (tehtäväopas)
 -   [Yksittäisten numerosarjojen määrittäminen](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (tehtäväopas)
 
-## <a name="address-books"></a>Osoitekirjat
+## Osoitekirjat
+<a id="address-books" class="xliff"></a>
 -   [Osoitekirjat](qa-address-books.md)
 -   [Esittely: Yleinen osoitekirja](overview-global-address-book.md)
 -   [Yleisen osoitekirjan ja lisäosoitekirjojen määrityksen suunnittelu](plan-configuration-global-address-book-additional-address-books.md)
 
-## <a name="workflow"></a>Työnkulku
+## Työnkulku
+<a id="workflow" class="xliff"></a>
 -   [Työnkulkujärjestelmän yleiskatsaus](overview-workflow-system.md)
 -   [Työnkulun järjestelmäarkkitehtuuri](workflow-system-architecture.md)
 -   [Työnkulun elementit](workflow-elements.md)
@@ -61,22 +65,26 @@ Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Micros
 -   [Määritä rinnakkaishaara](configure-parallel-branch-workflow.md)
 -   [Määritä rivinimikkeen työnkulun elementti](configure-line-item-workflow.md)
 
-## <a name="case-management"></a>Palvelupyynnön hallinta
+## Palvelupyynnön hallinta
+<a id="case-management" class="xliff"></a>
 -   [Suunnittelu: Tapauksen määritys](plan-case-management.md)
 -   [Palvelupyynnön hallinnan esimerkkejä](cases.md)
 
-## <a name="electronic-signatures"></a>Sähköiset allekirjoitukset
+## Sähköiset allekirjoitukset
+<a id="electronic-signatures" class="xliff"></a>
 -   [Sähköisten allekirjoitusten yleiskuvaus](electronic-signature-overview.md)
 -   [Sähköisten allekirjoitusten määrittäminen](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (tehtäväopas)
 
-## <a name="organizations"></a>Organisaatiot
+## Organisaatiot
+<a id="organizations" class="xliff"></a>
 -   [Organisaatiot ja organisaatiohierarkiat](organizations-organizational-hierarchies.md)
 -   [Suunnittele organisaatiohierarkia](plan-organizational-hierarchy.md)
 -   [Luo toimintayksikkö](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (tehtäväopas)
 -   [Luo organisaatiohierarkia](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (tehtäväopas)
 -   [Luo yritys](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (tehtäväopas)
 
-## <a name="general-administration"></a>Yleinen hallinta
+## Yleinen hallinta
+<a id="general-administration" class="xliff"></a>
 -   [Bannerin ja logon vaihtaminen](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (tehtäväopas)
 -   [Tietoja päivämäärä- ja aikatiedoista ja aikavyöhykkeistä](date-time-zones.md)
 -   [Tietuemallit](record-templates.md)

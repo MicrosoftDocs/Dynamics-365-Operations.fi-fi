@@ -1,37 +1,38 @@
 ---
 title: Projektisopimukset
-description: "Tässä artikkelissa käsitellään erityyppisille projekteille ja rahoituslähteille luotavia projektisopimuksia, sopimusten hallintaa ja projektin asiakkaiden laskuttamista Microsoft Dynamics 365 for Operations -ohjelmassa. Aihe sisältää myös esimerkkejä."
+description: "Tässä artikkelissa käsitellään erityyppisille projekteille ja rahoituslähteille luotavia projektisopimuksia, sopimusten hallintaa ja projektin asiakkaiden laskuttamista Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa. Artikkelissa on myös esimerkkejä."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23561
 ms.assetid: bfd18d9b-d9a6-4e21-bc95-bf4af45f617f
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9f3bdbd147f3132d64e3b9ac2bdd37f7278ae18d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2aa70e050bf068a26e2d0d86c26045fc000931eb
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="project-contracts"></a>Projektisopimukset
+# Projektisopimukset
+<a id="project-contracts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa käsitellään erityyppisille projekteille ja rahoituslähteille luotavia projektisopimuksia, sopimusten hallintaa ja projektin asiakkaiden laskuttamista Microsoft Dynamics 365 for Operations -ohjelmassa. Aihe sisältää myös esimerkkejä.
+Tässä artikkelissa käsitellään erityyppisille projekteille ja rahoituslähteille luotavia projektisopimuksia, sopimusten hallintaa ja projektin asiakkaiden laskuttamista Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa. Artikkelissa on myös esimerkkejä.
 
 Projektisopimukselle luotavan projektin tyyppi määrittää, miten projektin asiakkaita laskutetaan. Vaikka voit muuttaa projektisopimusta ja siihen liittyvää projektia, et voi vaihtaa projektityyppiä. 
 
@@ -41,7 +42,8 @@ Jokainen laskutettava projekti on liitettävä johonkin projektisopimukseen. Pro
 
 Projektisopimus voi määrittää vähintään yhden rahoituslähteen. Niinpä voitkin jakaa laskutuksen usean rahoittajan kesken, määrittää rahoitusrajat niin, että rahoituslähteiltä laskutetaan enintään määritetty summa, ja määrittää rahoitussäännöt menojen laskuttamista varten.
 
-## <a name="funding-for-project-contracts"></a>Projektisopimusten rahoitus
+## Projektisopimusten rahoitus
+<a id="funding-for-project-contracts" class="xliff"></a>
 Joissakin projektisopimuksissa määritetään, että useat osapuolet jakavat projektikustannusten rahoitusvastuun. Seuraavassa on muutamia esimerkkejä:
 
 -   Suuri asiakas, jolla on useita divisioonia, pyytää rahoituksen jakamista divisioonan mukaan.
@@ -49,7 +51,7 @@ Joissakin projektisopimuksissa määritetään, että useat osapuolet jakavat pr
 -   Kaksi kuntaa rahoittaa yhdessä tieprojektia.
 -   Siltaprojekti rahoitetaan julkishallinnolla ja yksityiseltä yritykseltä saatavalla rahoituksella.
 
-Voit jakaa Microsoft Dynamics 365 for Operations -järjestelmässä yhden tapahtuman tai koko projektin laskutuksen useiden asiakkaiden, avustusten tai organisaatioiden kesken. 
+Voit jakaa Finance and Operationsissa yhden tapahtuman tai koko projektin laskutuksen useiden asiakkaiden, avustusten tai organisaatioiden kesken. 
 
 Monen rahoittajan projekteissa kaikkia projektin lisärahoitukseen osallistuvia kutsutaan rahoituslähteiksi. Kun asiakas, organisaatio tai avustus on määritetty rahoituslähteeksi, se määrittää vähintään yhteen rahoitussääntöön. Säännöt sisältävät kriteerit, jotka määrittävät, miten kulut kohdistetaan projektin useita rahoituslähteitä. 
 
@@ -68,7 +70,8 @@ Voit helpottaa laskutuksen jakamista useiden rahoituslähteiden kesken seuraavie
 
 Tapahtumaan liitettävä veroryhmä määritetään etsimällä veroryhmän määritys projektista. Jos veroryhmän määritys ei ole tehty projektitasolla, sitä etsitään projektisopimuksesta.
 
-### <a name="example-multiple-funding-sources-simple"></a>Esimerkki: Useita rahoituslähteitä (yksinkertainen)
+### Esimerkki: Useita rahoituslähteitä (yksinkertainen)
+<a id="example-multiple-funding-sources-simple" class="xliff"></a>
 
 Seuraavassa taulussa on skenaarioita rahoituksen kohdistuksen hallinnasta, kun rahoituslähteitä on useita. Nämä skenaariot perustuvat seuraaviin oletuksiin:
 
@@ -164,7 +167,8 @@ Seuraavassa taulussa on skenaarioita rahoituksen kohdistuksen hallinnasta, kun r
 </tbody>
 </table>
 
-### <a name="example-multiple-funding-sources-complex"></a>Esimerkki: Useita rahoituslähteitä (monitahoinen)
+### Esimerkki: Useita rahoituslähteitä (monitahoinen)
+<a id="example-multiple-funding-sources-complex" class="xliff"></a>
 
 Sinulla on kolme rahoituslähdettä, joita haluat käyttää seuraavassa järjestyksessä:
 
@@ -249,7 +253,8 @@ Seuraavassa taulussa tätä skenaariota käsitellään tarkemmin.
 </tbody>
 </table>
 
-## <a name="billing-rules"></a>Laskutussäännöt
+## Laskutussäännöt
+<a id="billing-rules" class="xliff"></a>
 Kun neuvottelet projektisopimuksen asiakkaan kanssa, voit määrittää, miten ja milloin voit laskuttaa asiakkaalta projektin työn. Voit määrittää projektisopimukseen ja projektin määrittämisen jälkeen projektin laskutussäännöt. Tarjoussäännöt on määritetty projektisopimukseen perustuvissa projektiehdoissa. Luotavat laskutussäännöt määräytyvät projektisopimuksen ehtojen ja projektityypin, kuten Aika ja materiaali tai Kiinteä hinta, mukaan. Voit luoda yhteen projektisopimukseen useita laskutussääntöjä. Voit määrittää laskutussäännön useita projekteja varten, jotka liittyvät samaan projektisopimukseen ja joilla on samanlaiset laskutusehdot. 
 
 Voit määrittää seuraavat laskutussääntöjen tyypit:
@@ -268,7 +273,8 @@ Kun olet valmis laskuttamaan asiakasta, projektin laskutettava summa lasketaan l
 
 Seuraavissa osassa on esimerkkejä laskutussääntöjen määrittämisestä projektille ja niiden hallinnasta.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-the-number-of-units-delivered"></a>Esimerkki: Luo toimitettujen yksiköiden määrään perustuva laskutussääntö
+### Esimerkki: Luo toimitettujen yksiköiden määrään perustuva laskutussääntö
+<a id="example-create-a-billing-rule-that-is-based-on-the-number-of-units-delivered" class="xliff"></a>
 
 Organisaatio solmii sopimuksen yhteensä viiden koulutusistunnon toimittamisesta asiakkaan työntekijöille. Kunkin koulutusistunnon hinta on 10 000. Laskutat asiakasta jokaisen koulutusistunnon jälkeen. 
 
@@ -280,14 +286,16 @@ Käytät sopimuksen laskutussääntöjen määrittämiseen seuraavia arvoja:
 
 Kun yksi koulutusistunto on suoritettu, voit luoda laskun ensimmäisen yksikön toimituksesta summalle 10 000 ja lähettää laskun asiakkaalle.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-manual-calculation"></a>Esimerkki: Luo projektin valmistumisasteeseen perustuva laskutussääntö (lasketaan manuaalisesti)
+### Esimerkki: Luo projektin valmistumisasteeseen perustuva laskutussääntö (lasketaan manuaalisesti)
+<a id="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-manual-calculation" class="xliff"></a>
 
 Organisaatiosi, joka on erikoistunut ohjelmistokonsultointiin, sitoutuu kehittämään asiakkaalle osan tuotteesta, jota asiakas kehittää. Organisaatiosi sitoutuu toimittamaan tuotteelle ohjelmistokoodia kuuden kuukauden ajan. Asiakas suostuu maksamaan organisaatiollesi työstä yhteensä 100 000. Luot laskutussäännön, jolla asiakasta laskutetaan projektissa suoritetun prosenttimääräisen työn perusteella. Prosenttiosuus on määritetty sopimuksessa.
 
 -   Ensimmäisen kuukauden lopussa tapaat asiakkaan ja määrität valmiin työn osuuden. Kun olette tarkastaneet projektin yhdessä asiakkaan kanssa, päätätte, että projekti on 15-prosenttisesti valmis.
 -   Luot laskun summalle 15 000 (15 prosenttia summasta 100 000) ja lähetät sen asiakkaalle.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-automatic-calculation"></a>Esimerkki: Luo projektin valmistumisasteeseen perustuva laskutussääntö (lasketaan automaattisesti)
+### Esimerkki: Luo projektin valmistumisasteeseen perustuva laskutussääntö (lasketaan automaattisesti)
+<a id="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-automatic-calculation" class="xliff"></a>
 
 Organisaatiosi on ohjelmistokehitysyritys, joka sopii kehittävänsä asiakkaalle palkanlaskennan kirjanpitopaketin hintaan 30 000. Asiakas sitoutuu maksamaan organisaatiollesi työn valmistumisprosentin mukaisesti. Arvioit, että projektikustannukset ovat 20 000. Projektisopimus määrittää työluokat laskutusprosessia varten. Määrität laskutussäännöt, jotka laskevat automaattisesti laskujen summat kunkin luokan töiden valmistumisprosentin mukaan. Asetat budjetin jokaiselle luokalle:
 
@@ -300,7 +308,8 @@ Kun myyntilasku luodaan ensimmäisen kerran, laskutussumma lasketaan automaattis
 -   Laskun summa 8 667 lasketaan automaattisesti (33 prosenttia 20 000:sta + 20 prosenttia 10 000:sta).
 -   Luot laskun summalle 8 667 ja lähetät sen asiakkaalle.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-agreed-upon-milestones"></a>Esimerkki: Luo laskutussääntö sovittujen välitavoitteiden perusteella
+### Esimerkki: Luo laskutussääntö sovittujen välitavoitteiden perusteella
+<a id="example-create-a-billing-rule-that-is-based-on-agreed-upon-milestones" class="xliff"></a>
 
 Organisaatio on johdon konsultointiyritys, joka on sopinut suorittavansa markkinointitutkimuksen kuluttajatuotteelle, jota asiakas suunnittelee myyvänsä. Asiakas sitoutuu käyttämään palveluitasi kolmen kuukauden ajan maaliskuusta alkaen ja sitoutuu maksamaan organisaatiollesi 50 000. Projektissa on kolme välitavoitetta:
 
@@ -317,7 +326,8 @@ Projektisopimusta määritettäessä sovit laskuttavasi asiakasta valmistuneen v
 
 Kun ensimmäinen välitavoite valmistuu 31. maaliskuuta, merkitset välitavoitteen valmiiksi ja luot sitten laskun summalle 10 000. Lasku lähetetään asiakkaalle. Et voi luoda laskua välitavoitteelle, ennen kuin välitavoite on merkitty valmiiksi.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-services-plus-a-management-fee"></a>Esimerkki: Luo palveluihin ja hallintokuluun perustuva laskutussääntö
+### Esimerkki: Luo palveluihin ja hallintokuluun perustuva laskutussääntö
+<a id="example-create-a-billing-rule-that-is-based-on-services-plus-a-management-fee" class="xliff"></a>
 
 Organisaatio on johdon konsultointiyritys, joka on sopinut suorittavansa markkinointitutkimuksen arvioidakseen asiakkaan, vähittäismyyntiyrityksen, kehittämän tuotteen kannattavuuden. Sopimuksen ehdoissa määritetään, että käytettävissä on yrityksen kolmen parhaan johdon konsultin palvelut ja että käytössä on veloitus käytetyn ajan ja materiaalin perusteella. Asiakas sopii maksuksi 100/tunti ja 10 prosentin hallintakulun projektiin käytettyjen konsultointituntien osalta. 
 
@@ -331,7 +341,8 @@ Kun luot laskun asiakkaalle, asiakkaalta laskutetaan 10 prosentin hallintokulu j
 
 Jos maksut ovat verotettavia asiakkaalle ja arvonlisäveroryhmä valitaan projektisopimukseen, arvonlisäveroryhmä syötetään automaattisesti laskutuksen säännön maksuille.
 
-### <a name="example-create-a-billing-rule-for-the-value-of-time-and-materials"></a>Esimerkki: Luo laskutussääntö ajan ja materiaalien arvolle
+### Esimerkki: Luo laskutussääntö ajan ja materiaalien arvolle
+<a id="example-create-a-billing-rule-for-the-value-of-time-and-materials" class="xliff"></a>
 
 Organisaatiosi on ohjelmointialan konsulttiyritys, joka sopii toimittavansa viisi teknistä konsulttia työskentelemään asiakkaan ohjelmistokehitysprojektissa seuraavan kuuden kuukauden ajan. Asiakas sopii maksavansa 150/konsultointitunnista ja toimistotarvikekulut. Organisaatiosi lähettää laskun asiakkaalle jokaisen kuukauden lopussa. 
 

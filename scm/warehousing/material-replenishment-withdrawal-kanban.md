@@ -1,0 +1,98 @@
+---
+title: "Täydennys ja otto-kanbanit | Microsoft Docs"
+description: "Tässä ohjeaiheessa käsitellään, miten otto-kanbaneja käytetään valmistustehtävien materiaalitäydennykseen."
+author: johanhoffmann
+manager: AnnBe
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+keywords: KanbanBoardTransferJob, KanbanFlow, KanbanRules
+audience: Application User
+ms.reviewer: 121
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.industry: Manufacturing
+ms.author: johanhoffmann
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: abac5e05f40132844cf1817be533151cbf238d95
+ms.contentlocale: fi-fi
+ms.lasthandoff: 06/13/2017
+
+---
+
+# Täydennys ja otto-kanbanit
+<a id="replenishment-with-withdrawal-kanbans" class="xliff"></a>
+
+[!include[banner](../includes/banner.md)]
+
+
+Tässä ohjeaiheessa käsitellään, miten otto-kanbaneja käytetään valmistustehtävien materiaalitäydennykseen.
+
+## Otto-kanbania käyttävän materiaalitäydennyksen työnkulku
+<a id="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban" class="xliff"></a>
+-------------------------------------------------------------------
+
+Otto-kanbaneja voi käyttää yhden nimikkeen kanbanin siirtämiseen varastojen ja materiaalia kuluttavien tuotantosijaintien välillä. Otto-kanban tukee materiaalitäydennyksen imuohjausratkaisua, jossa imusignaali tarvitaan tarjonnan käynnistämiseen tietylle tarpeelle. 
+
+Seuraavassa skenaariossa on imuohjattu täydennysjärjestelmä, jossa imusignaali käynnistää tuotantoprosessin täydennysmateriaalin kanbanin luonnin. 
+
+[![Imusignaali käynnistää tuotantoprosessin täydennysmateriaalin kanbanin luonnin](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+
+1.  Otto-kanban
+2.  Varastotyön kanbanin lähtö- ja poispanosijainti
+3.  Kanbanin kohdesijainti ja tuotannon varastosijainti
+4.  Valmistusprosessi
+5.  Kanban-keräilyn varastotyö
+6.  Raaka-aineen varastosijainnit
+7.  Materiaalivarasto
+8.  Valmistuksen varasto
+
+Tässä skenaariossa valmistusprosessi (4) kuluttaa materiaalia tuotannon varastosijainnista (3) valmistuksen varastossa (8). Kun materiaalin käsittely-yksikköä (kanbania) kulutetaan, se rekisteröidään tyhjäksi. Nimikkeen alkuperälle luodaan täydennyssignaali ja uusi kanban (1) luodaan. Tässä tapauksessa nimikkeen alkuperä koostuu materiaalivaraston sijainneista (7). Kanbanin materiaali kerätään ja pannan pois saman varaston sijaintiin (2). Kun materiaali kerätään, se on valmis siirrettäväksi sijainnista 2 tuotannon varastosijaintiin (3) valmistuksen varastossa (8).
+
+## Otto-kanbanin kanban-keräilyn varastotyön määrittäminen
+<a id="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban" class="xliff"></a>
+
+Voit ottaa otto-kanbanin raaka-aineen keräilyn käyttöön määrittämällä **Kanban-keräilyn** työtilaustyypin aaltomallit, työmallit ja sijaintidirektiivit. Tämä työtilaustyyppi ei tue vain otto-kanbanin keräilyprosessia. Se tukee myös valmistus-kanbanin keräilyprosessia. Voit kuitenkin määrittää kummallekin kanban-tyypille erillisen keräilyprosessin erottamalla aaltomallit, työmallit ja sijaintidirektiivit. Voit erottaa aaltomallit, työmallit ja sijaintidirektiivit määrittämällä ehdot kyseisten yksikköjen kyselyjen tehtävätyypissä (**Prosessi** tai **Siirto**).
+
+## Otto-kanbanin määrittäminen
+<a id="configure-the-withdrawal-kanban" class="xliff"></a>
+
+Otto-kanbanissa käytettävä siirtotehtävä määritetään aktivoidun tehtäväsuunnitelman osana Lean-tuotantovirrassa. Siirtotehtävän määrityksen osana määritetään myös siirron lähtö- ja kohdesijainnit. Kun siirtotehtävä on määritetty, voit määrittää sille **Otto**-tyypin kanban-säännön. Kanban-sääntö määrittää otto-kanbanin käytännöt ja määritykset. Kanbanin määrä määrittää, kuinka monta materiaalin käsittely-yksikön yksikköä kanban siirtää siirtoprosessin aikana. Kiinteää kanban-määrää käytetään, kun valittuna on kiinteä täydennysstrategia. Määrä määrittää, kuinka monta kanbania tarvitaan, jotta varasto ei lopu kysynnän lähteessä. Kiinteä määrä voidaan laskea todellisen kysynnän, historiallisen kysynnän ja palvelutasojen perusteella. Kahdessa seuraavassa skenaariossa kerrotaan, miten voit hallita otto-kanbania käyttävää materiaalitäydennystä.
+
+## Skenaario 1: Tuotannon varastointisijainnin täydentäminen kiinteän otto-kanbanin avulla
+<a id="scenario-1-replenish-a-production-input-location-by-using-a-fixed-withdrawal-kanban" class="xliff"></a>
+
+Valmistusprosessi kuluttaa ostettua raaka-ainetta tuotannon varastosijainnista, joka sijaitsee tuotantovarastossa. Kun raaka-aine vastaanotetaan toimittajalta, se varastoidaan materiaalivaraston sijainteihin. Koska materiaalin kysyntä katsotaan olevan vakaa kauden aikana, se määritetään tuotannon toimittajaksi kiinteämääräisellä kanban-työnkululla. Kun kanban on kulutettu tuotannon varastointisijainnissa, tyhjän signaali rekisteröidään ja uusi samantyyppinen kanban lisätään työnkulkuun. 
+
+Tyhjän signaali voidaan määrittää tapahtumaan automaattisesti, kun kanban on valmis. Tyhjän signaali voidaan vaihtoehtoisesti määrittää manuaaliseksi vuorovaikutukseksi, joka annetaan joko kanban-siirron taulusta tai kämmenlaitteen valikosta. Kanban-siirron taulu on työtila, jossa hallitaan kaikkia kanban-elinkaaren tehtäviä. 
+
+Kanbania luotaessa raaka-aineen aaltorivi lisätään materiaalivaraston kanban-aaltoon. Kanban-siirron taulun keräysluettelo-osassa voi seurata materiaalin ja liittyvien varastoprosessien tilaa aallon luonnista työn luontiin siihen saakka, että materiaali on varastossa siirron lähtösijainnissa ja valmis siirrettäväksi tuotannon varastointisijainteihin. Kanban voidaan suorittaa joko kanban-siirron taulusta tai kämmenlaitteen valikosta. 
+
+Tässä skenaariossa materiaalivaraston keräystyö käsitellään yhtenä tehtävänä. Materiaalivaraston ja tuotannon varastoinnin sijainnin välinen siirtotehtävä käsitellään erillisenä tehtävänä. Tällä voi olla kätevä toimintatapa, jos esimerkiksi kahden varaston välinen etäisyys on suuri. Siinä tapauksessa kanban-siirtotehtävä voi vastata kuorma-auton kuormaa. 
+
+Jos varastosijainnit ja tuotannon varastoinnin sijainnit eivät ole kaukana toisistaan, siirtotehtävä kannattaa ehkä sisällyttää keräilyprosessiin. Se voidaan sitten materiaalin keräilyn jälkeen asettaa suoraan tuotannon varastoinnin sijaintiin. Voit tukea tätä prosessia määrittämällä siirtotehtävän siten, että se valmistuu automaattisesti, kun otto-kanbanin keräystyö on käsitelty.
+
+## Skenaario 2: Siirtotehtävän valmistuminen automaattisesti, kun kanban-keräystyö on käsitelty
+<a id="scenario-2-automatically-complete-the-transfer-activity-when-kanban-picking-work-is-processed" class="xliff"></a>
+
+Seuraavassa skenaariossa otto-kanbanin siirtotehtävä on määritetty siirtymään kahden sijainnin välillä samassa varastossa. Otto-kanbanin siirtotehtävä on määritetty siten, että se valmistuu automaattisesti. 
+
+[![Siirtotehtävä valmistuu automaattisesti, kun kanban-keräystyö käsitellään](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+
+1.  Raaka-aineiden ja tuotannon jaettu varasto
+2.  Raaka-aineiden varastosijainnit
+3.  Varastotyön kanbanin lähtö- ja poispanosijainti
+4.  Otto-kanban
+5.  Tuotannon varastointisijainti
+6.  Valmistusprosessi
+
+Kun kanban on kulutettu tuotannon varastointisijainnissa, kanban ilmoitetaan tyhjäksi ja uusi kanban lisätään työnkulkuun. Kanbania luotaessa kanban-aaltoon lisätään aaltorivi. Kun kanban-aalto käsitellään, kanban-keräilylle luodaan varastotyö. Varastotyöntekijä käsittelee kanban-keräilyn työn, ja työ ohjaa hänet keräämään kanbanin materiaalin varastosijainnissa. Kun tämä varastotyöntekijä vahvistaa keräilyn, kanban valmistuu automaattisesti ja varastotyöntekijä ohjataan sijoittamaan materiaali tuotannon varastoinnin sijaintiin.
+
+

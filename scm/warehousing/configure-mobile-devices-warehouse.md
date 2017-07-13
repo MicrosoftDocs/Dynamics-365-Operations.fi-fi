@@ -3,14 +3,14 @@ title: "Konfiguroi varastotyön mobiililaitteet"
 description: "Tässä artikkelissa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSRFMenuItem
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 29941
 ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6a7658c56e2d0712c6aa27a4bb8ffc02bbd01d6c
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: dfb738e41f4b3f7d475a551dca0aba7a071dd989
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfiguroi varastotyön mobiililaitteet
+# Konfiguroi varastotyön mobiililaitteet
+<a id="set-up-mobile-devices-for-warehouse-work" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,7 +42,8 @@ Tässä artikkelissa kuvataan, kuinka valikkokohteet määritetään mobiililait
 
 Jos haluat luoda kyselyn tai toiminnon valikkovaihtoehdon, määritä asetuksen **Tila** arvoksi **Epäsuora**. Luettelo **Toimintokoodi**-asetuksista tulee saataville siten, että voit valita kyselyn tai toiminnon tyypin, jota varten valikkokohde on. Voit luoda valikkovaihtoehdon fyysisen varastoinnin työn luomiseen, määritä **Tila**-kentän arvoksi **Työ**. Näkyviin tulee luettelo **Työn luontiprosessi** -vaihtoehdoista. Jos haluat luoda valikkovaihtoehdon nykyisen varastotyön käsittelyyn, määritä **Tila** kentän arvoksi **Työ** ja määritä **Käytä nykyistä työtä** -asetukseksi **Kyllä**. **Huomautus:** Valikkokohdalle on käytettävissä lisäkenttiä sille valitsemastasi tilasta riippuen, ja jos valikkokohtaa käytetään suorittamaan olemassa oleva työ. Lisätietoja lisäkenttien valinnasta on osiossa “Lisävalikkovaihtoehdot” myöhemmin tässä aiheessa.
 
-## <a name="configure-menu-items-for-activities-and-inquiries"></a>Toimintojen ja kyselyjen valikkovaihtoehtojen määrittäminen
+## Toimintojen ja kyselyjen valikkovaihtoehtojen määrittäminen
+<a id="configure-menu-items-for-activities-and-inquiries" class="xliff"></a>
 Jos valikkovaihtoehdon **Tila** kentän arvoksi määritetään **Epäsuora**, voit luoda valikkovaihtoehdon suorittamaan yleisen tehtävän tai kyselyn, joka ei luo työtä. Tällaisia tehtäviä ovat esimerkiksi rekisterikilpien uudelleentulostus tai toimipaikan nimikkeiden sijaintia koskeva kysely. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot.
 
 | Vaihtoehto                      | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -64,7 +66,8 @@ Jos valikkovaihtoehdon **Tila** kentän arvoksi määritetään **Epäsuora**, v
 | Muuta eräkäsittelyä    | Anna työntekijän määrittää erän käsittelykoodi nimikkeelle ja erälle. Tämä vaihtoehto päivittää eräkohtaisen käsittelykoodin.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Näytä avoin työluettelo      | Näyttää käyttäjäkohtaisen saatavilla olevien töiden luettelon. Käyttäjä voi valita suoritettavan työn, joka kohdistetaan hänelle. Luettelo on tarkoitettu katseltavaksi tablettilaitteissa, joiden näytön koko on 7 tuumaa tai enemmän. Kun valitset tämän vaihtoehdon, **Muokkaa kyselyä**- ja **Kenttäluettelo**-valikkovaihtoehdot ovat käytettävissä. **Muokkaa kyselyä** -sivulla voit määrittää ehtoja luettelossa näkyville töille. **Kenttäluettelo**-sivulla voit valita työluettelossa näkyvät kentät. Voit esimerkiksi rajoittaa näkyvissä olevien kenttien määrää, jotta käyttäjän on helpompi valita oikea työnimike. Voit myös valita **Yleiset**-välilehdessä **Tietueita sivulla** -kentässä, miten monta työtietuetta kullakin sivulla näytetään. Jos **Salli käyttäjien suodattaa työtä tapahtumatyypeittäin** -vaihtoehto on valittuna, työluettelossa on **Työn suodatus** -ohjausobjekti, jolla käyttäjä voi suodattaa luettelon tapahtumatyypin mukaan. Käyttäjä näkee työluettelossa vain työt, joiden käyttöoikeus hänellä on. Varmista, että käyttäjillä on oikeudet yhteen tai useampaan käyttäjäohjattuun valikkovaihtoehtoon, jotka tukevat tiettyä työluokkatyyppiä, jota heidän tulisi pystyä käyttämään. Käyttöoikeudet tarkistetaan myös, kun käyttäjä yrittää suorittaa työn luettelosta. |
 
-## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Valikkovaihtoehtojen määrittäminen työn luomiseksi toiselle työntekijälle tai prosessille
+## Valikkovaihtoehtojen määrittäminen työn luomiseksi toiselle työntekijälle tai prosessille
+<a id="configure-menu-items-to-create-work-for-another-worker-or-process" class="xliff"></a>
 Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, kun alustava toiminto on suoritettu mobiililaitteella. Jos esimerkiksi yksi työntekijä käyttää mobiililaitetta nimikkeen vastaanottamiseen, hyllytystyö luodaan toiselle työntekijälle. Määritä työn luova valikkovaihtoehto valitsemalla **Mobiililaitteen valikkovaihtoehdot** -sivulla **Tila**-kentässä **Työ**. Seuraavassa taulukossa **Työn luontiprosessi** -kentän vaihtoehdot on järjestetty tilaustyypin mukaan.
 
 <table>
@@ -165,7 +168,7 @@ Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, 
 </tr>
 <tr>
 <td>Siirto mallin mukaan</td>
-<td>Siirrä nimikkeet yhdestä toimipaikasta toiseen puoliautomaattisella tavalla. Työntekijä valitsee sijainnin, josta nimikkeet siirretään, ja Dynamics 365 for Operations määrittää sijaintidirektiivin avulla, minne ne siirretään.</td>
+<td>Siirrä nimikkeet yhdestä toimipaikasta toiseen puoliautomaattisella tavalla. Työntekijä valitsee sijainnin, josta nimikkeet siirretään, ja Finance and Operations määrittää sijaintidirektiivin avulla, minne ne siirretään.</td>
 </tr>
 <tr>
 <td>Varastosiirto</td>
@@ -193,7 +196,8 @@ Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, 
 </tbody>
 </table>
 
-## <a name="configure-menu-items-to-process-existing-work"></a>Valikkovaihtoehdon määrittäminen käsittelemään olemassa olevat työt
+## Valikkovaihtoehdon määrittäminen käsittelemään olemassa olevat työt
+<a id="configure-menu-items-to-process-existing-work" class="xliff"></a>
 Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkovaihtoehdot käsittelemään työt, jotka on luotu aiemmin. Määritä **Tila**-kentän arvoksi **Työ** ja valitse **Käytä nykyistä työtä** -vaihtoehto. Jotkin lisäasetukset sitten vapautuvat käyttöön **Yleiset**-välilehdessä. Valikkovaihtoehdon käyttöä voi hallita määrittämällä yhden tai useamman työluokan **Työluokka**-pikavälilehdessä. Työluokat määrittävät työn, jota valikkovaihtoehdolla voi käsitellä. Työluokan kautta voidaan myös myöntää käyttöoikeus tiettyihin käyttäjärooleihin tai erityyppisten työvaiheiden erilliskäsittelyyn. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot.
 
 <table>
@@ -214,7 +218,7 @@ Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkov
 </tr>
 <tr class="even">
 <td>Järjestelmäohjattu</td>
-<td>Microsoft Dynamics 365 for Operations ohjaa työn tyyppiä, joka on määritetty työntekijälle ja siinä järjestyksessä, jossa työntekijä suorittaa työn. Kun valitset tämän vaihtoehdon, voit valita toimintoruudussa <strong>Järjestelmäohjattu työ</strong> avataksesi <strong>Järjestelmäohjattu lajittelujärjestys</strong> -sivun, jossa voit määrittää työn lajittelukriteerit. Lajitteluehto hallitsee järjestystä, jossa työntekijä suorittaa työn. Voit luoda tarvitsemasi määrän kriteereitä.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations ohjaa työn tyyppiä, joka on määritetty työntekijälle, ja järjestystä, jossa työntekijä suorittaa työn. Kun valitset tämän vaihtoehdon, voit valita toimintoruudussa <strong>Järjestelmäohjattu työ</strong> avataksesi <strong>Järjestelmäohjattu lajittelujärjestys</strong> -sivun, jossa voit määrittää työn lajittelukriteerit. Lajitteluehto hallitsee järjestystä, jossa työntekijä suorittaa työn. Voit luoda tarvitsemasi määrän kriteereitä.</td>
 </tr>
 <tr class="odd">
 <td>Käyttäjäohjattu</td>
@@ -226,7 +230,7 @@ Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkov
 </tr>
 <tr class="odd">
 <td>Järjestelmän ryhmittely</td>
-<td>Microsoft Dynamics 365 for Operations ryhmittelee työntekijän työn määritetyn kentän perusteella. Esimerkiksi keräilytyö ryhmitellään, kun työntekijä skannaa lähetyksen tunnuksen, kuorman tunnuksen tai minkä tahansa arvon, joka voi linkittää jokaisen työyksikön. Jos valitset tämän vaihtoehdon, seuraavat vaihtoehdot ovat käytettävissä:
+<td>Microsoft Dynamics 365 for Finance and Operations ryhmittelee työntekijän työn määritetyn kentän perusteella. Esimerkiksi keräilytyö ryhmitellään, kun työntekijä skannaa lähetyksen tunnuksen, kuorman tunnuksen tai minkä tahansa arvon, joka voi linkittää jokaisen työyksikön. Jos valitset tämän vaihtoehdon, seuraavat vaihtoehdot ovat käytettävissä:
 <ul>
 <li><strong>Järjestelmän ryhmittelykenttä</strong> – Valitse kenttä, jonka työntekijä skannaa työn ryhmittelemiseksi.</li>
 <li><strong>Järjestelmän ryhmittelyotsikko</strong> – Anna teksti, joka opastaa työntekijää, mitä hänen pitää skannata työn ryhmittelemiseksi.</li>
@@ -247,12 +251,13 @@ Tämä on hyödyllinen vaihtoehto esimerkiksi silloin, kun useita kuormalavoja a
 </tr>
 <tr class="even">
 <td>Inventoinnin ryhmittely</td>
-<td>Työntekijä valitsee vyöhykkeen, työpoolin tai sijainnin, ja Microsoft Dynamics 365 for Operations määrittää työn valinnan perusteella. Jos valitset tämän vaihtoehdon, voit valita toimintoruudusta myös <strong>Inventointi</strong>-vaihtoehdon määrittääksesi lisätiedot ja sen, kuinka monta kertaa työntekijän on toistettava laskenta, jos ero löydetään.</td>
+<td>Työntekijä valitsee vyöhykkeen, työpoolin tai sijainnin ja Microsoft Dynamics 365 for Finance and Operations määrittää työn valinnan perusteella. Jos valitset tämän vaihtoehdon, voit valita toimintoruudusta myös <strong>Inventointi</strong>-vaihtoehdon määrittääksesi lisätiedot ja sen, kuinka monta kertaa työntekijän on toistettava laskenta, jos ero löydetään.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="additional-menu-item-options"></a>Valikon lisävaihtoehdot
+## Valikon lisävaihtoehdot
+<a id="additional-menu-item-options" class="xliff"></a>
 Lisätietoja valikkovaihtoehtojen asetuksia on **Mobiililaitteen valikkovaihtoehdot** -sivulla. Vaihtoehdot vaihtelevat sen prosessin mukaan, jolle määrität valikkovaihtoehtoa. 
 
 Seuraavassa taulussa kuvataan nämä asetukset.
@@ -331,7 +336,7 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tr>
 <tr class="odd">
 <td>Ryhmä pantu pois</td>
-<td>Valitse tämä vaihtoehto, jos haluat ryhmitellä hyllytystyöt. Tämä vaihtoehto on käytettävissä, kun joko työntekijä tai Microsoft Dynamics 365 for Operations on ryhmitellyt työn. Kun työntekijä on saanut ryhmän kaikki keräilytyöt valmiiksi, samaan ryhmään luodaan hyllytystyö.</td>
+<td>Valitse tämä vaihtoehto, jos haluat ryhmitellä hyllytystyöt. Tämä vaihtoehto on käytettävissä, kun joko työntekijä tai Microsoft Dynamics 365 for Finance and Operations on ryhmitellyt työn. Kun työntekijä on saanut ryhmän kaikki keräilytyöt valmiiksi, samaan ryhmään luodaan hyllytystyö.</td>
 </tr>
 <tr class="even">
 <td>Varasto-oikaisutyypit</td>
@@ -364,11 +369,11 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tr>
 <tr class="even">
 <td>Järjestelmän ryhmittelykenttä</td>
-<td>Valitse kenttä, joka määrittää, miten Microsoft Dynamics 365 for Operations ryhmittelee keräilytyön työntekijälle. Esimerkiksi jos valitset <strong>ShipmentId</strong>-kentän, työntekijä skannaa lähetystunnuksen keräilytyön ryhmittelemiseksi. Tämän jälkeen kaikki lähetyksen työt on määritetty työntekijälle. Tämä kenttä edellyttää, että luot valikkovaihtoehdon, jolla voi käyttää aiemmin luotua järjestelmän ryhmittelemää työtä. Kirjoita teksti myös <strong>Järjestelmän ryhmittelyotsikko</strong> -kenttään, jotta työntekijä tietää, mitä pitää skannata.</td>
+<td>Valitse kenttä, joka määrittää, miten Microsoft Dynamics 365 for Finance and Operations ryhmittelee keräilytyön työntekijälle. Esimerkiksi jos valitset <strong>ShipmentId</strong>-kentän, työntekijä skannaa lähetystunnuksen keräilytyön ryhmittelemiseksi. Tämän jälkeen kaikki lähetyksen työt on määritetty työntekijälle. Tämä kenttä edellyttää, että luot valikkovaihtoehdon, jolla voi käyttää aiemmin luotua järjestelmän ryhmittelemää työtä. Kirjoita teksti myös <strong>Järjestelmän ryhmittelyotsikko</strong> -kenttään, jotta työntekijä tietää, mitä pitää skannata.</td>
 </tr>
 <tr class="odd">
 <td>Järjestelmän ryhmittelyotsikko</td>
-<td>Kirjoita teksti, jossa työntekijälle kerrotaan skannattavat tiedot, kun Microsoft Dynamics 365 for Operations ryhmittelee keräilytyön. Jos esimerkiksi käytät <strong>ShipmentId</strong>-kenttää keräilytöiden ryhmittelemiseen lähetyksen mukaan, voit kirjoittaa kenttään <strong>Lähetyksen tunnus</strong>. Tämä kenttä edellyttää, että luot valikkovaihtoehdon, jolla voi käyttää aiemmin luotua järjestelmän ryhmittelemää työtä. Sinun on myös valittava ryhmittelykenttä <strong>Järjestelmän ryhmittelykenttä</strong> -kentästä.</td>
+<td>Kirjoita teksti, jossa työntekijälle kerrotaan skannattavat tiedot, kun Microsoft Dynamics 365 for Finance and Operations ryhmittelee keräilytyön. Jos esimerkiksi käytät <strong>ShipmentId</strong>-kenttää keräilytöiden ryhmittelemiseen lähetyksen mukaan, voit kirjoittaa kenttään <strong>Lähetyksen tunnus</strong>. Tämä kenttä edellyttää, että luot valikkovaihtoehdon, jolla voi käyttää aiemmin luotua järjestelmän ryhmittelemää työtä. Sinun on myös valittava ryhmittelykenttä <strong>Järjestelmän ryhmittelykenttä</strong> -kentästä.</td>
 </tr>
 <tr class="even">
 <td>Käytä oletustietoja</td>
@@ -384,13 +389,14 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tr>
 <tr class="odd">
 <td>Työmallin koodi</td>
-<td>Valitse työmalli, joka synnyttää prosessin työn. Esimerkiksi jos vastaanotat nimikkeen ostotilaukselle, hyllytystyö luodaan työmallin perusteella. Jos et valitse työmallia, Microsoft Dynamics 365 for Operations määrittää mallin kyselyn ehtojen perusteella. Katso lisätietoja työmalleista artikkelista <a href="control-warehouse-location-directives.md">Varastotyön hallinta työmalleilla ja sijaintidirektiiveillä</a>.</td>
+<td>Valitse työmalli, joka synnyttää prosessin työn. Esimerkiksi jos vastaanotat nimikkeen ostotilaukselle, hyllytystyö luodaan työmallin perusteella. Jos et valitse työmallia, Microsoft Dynamics 365 for Finance and Operations määrittää mallin kyselyn ehtojen perusteella. Katso lisätietoja työmalleista artikkelista <a href="control-warehouse-location-directives.md">Varastotyön hallinta työmalleilla ja sijaintidirektiiveillä</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Edellytä, että työntekijät vahvistavat tuotteen, sijainnin tai määrän nimikkeitä keräillessään.
-Voit määrittää työn vahvistukset, jotka edellyttävät, että työntekijän käyttää mobiililaitetta sijainnin tai määrän rekisteröintiin suorittaessaan työtä varastossa. Työn vahvistusten avulla voidaan varmistaa, että työntekijä on oikeassa sijainnissa tai käsittelee oikeaa nimikkeiden määrää. Voit myös antaa Microsoft Dynamics 365 for Operations -järjestelmän vahvistaa automaattisesti työntekijän rekisteröinnin. Jos otat käyttöön automaattisen vahvistuksen, et voi edellyttää vahvistuksia sijainnille tai määrälle. Työn vahvistukset sisältävät myös tuotteita ja tuotevariantteja. Voit myös rekisteröidä vahvistuksia lukemalla viivakoodin. Vahvistaaksesi tuotteita ja tuotevariantteja, sinun on syötettävä tuotteen tai tuotevariantin tunnus. Tunnus voi olla tuotetunnus, tuotehaun tunnus, ulkoinen tunnus, GTIN-koodi tai viivakoodi. Kun olet kirjoittanut tunnuksen tai skannannut viivakoodin, tuotevariantin dimensiot näkyvät mobiililaitteessa. 
+## Edellytä, että työntekijät vahvistavat tuotteen, sijainnin tai määrän nimikkeitä keräillessään.
+<a id="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items" class="xliff"></a>
+Voit määrittää työn vahvistukset, jotka edellyttävät, että työntekijän käyttää mobiililaitetta sijainnin tai määrän rekisteröintiin suorittaessaan työtä varastossa. Työn vahvistusten avulla voidaan varmistaa, että työntekijä on oikeassa sijainnissa tai käsittelee oikeaa nimikkeiden määrää. Voit myös antaa Microsoft Dynamics 365 for Finance and Operationsin vahvistaa automaattisesti työntekijän rekisteröinnin. Jos otat käyttöön automaattisen vahvistuksen, et voi edellyttää vahvistuksia sijainnille tai määrälle. Työn vahvistukset sisältävät myös tuotteita ja tuotevariantteja. Voit myös rekisteröidä vahvistuksia lukemalla viivakoodin. Vahvistaaksesi tuotteita ja tuotevariantteja, sinun on syötettävä tuotteen tai tuotevariantin tunnus. Tunnus voi olla tuotetunnus, tuotehaun tunnus, ulkoinen tunnus, GTIN-koodi tai viivakoodi. Kun olet kirjoittanut tunnuksen tai skannannut viivakoodin, tuotevariantin dimensiot näkyvät mobiililaitteessa. 
 
 Seuraavassa taulukossa on kuvattu eri työtyypit, joiden kanssa työn vahvistuksia voi käyttää.
 
@@ -408,7 +414,8 @@ Seuraavassa taulukossa on kuvattu eri työtyypit, joiden kanssa työn vahvistuks
 
 **Huomautus:** Voit vaatia tuotteen vahvistusta ainoastaan keräily- ja laitto-työtyypeille.
 
-<a name="see-also"></a>Lisätietoja
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
 [Varaston mobiililaitteen näyttöasetukset](change-warehouse-mobile-device-displays.md)

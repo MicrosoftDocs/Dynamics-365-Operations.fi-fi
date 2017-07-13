@@ -3,13 +3,13 @@ title: "Uudet tehtäväoppaat (helmikuu 2016)"
 description: "Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM -kirjastoissa helmikuuhun 2016 mennessä.  Julkaistut kirjastot sisältävät (helmikuu 2016) Microsoft Dynamics 365 for Operationsin yhdistetyn APQC-kirjaston sekä (helmikuu 2016) aloitusoppaan."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
 ms.search.region: global
@@ -17,27 +17,30 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3c99753f22e537fdc026342dce12389fb9acc83a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cdad1d6c2466b47b07133a5335866ef6881609ca
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>Uudet tehtäväoppaat (helmikuu 2016)
+# Uudet tehtäväoppaat (helmikuu 2016)
+<a id="new-task-guides-february-2016" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM -kirjastoissa helmikuuhun 2016 mennessä.  Julkaistut kirjastot sisältävät (helmikuu 2016) Microsoft Dynamics 365 for Operationsin yhdistetyn APQC-kirjaston sekä (helmikuu 2016) aloitusoppaan.
+Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM -kirjastoissa helmikuuhun 2016 mennessä.  Julkaistut kirjastot sisältävät (helmikuu 2016) Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston sekä (helmikuu 2016) aloitusoppaan.
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Microsoft Dynamics 365 for Operationsin yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016)
+Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016)
+<a id="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax" class="xliff"></a>
 ---------------------------------------------------------------------------------
 
-(Helmikuu 2016) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, jotka on tarkoitettu Dynamics 365 for Operations 7.0.0 -version ohjeeksi. Jos tarvitset näiden tehtäväoppaiden lokalisoituja versioita, ne ovat saatavilla (toukokuu 2016) Microsoft Dynamics 365 for Operationsin yhdistetyssä APQC-kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
+(Helmikuu 2016) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, jotka on tarkoitettu Dynamics AX 7.0.0 -version ohjeeksi. Jos tarvitset näiden tehtäväoppaiden lokalisoituja versioita, ne ovat saatavilla (toukokuu 2016) Microsoft Dynamics AX:n yhdistetyssä APQC-kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
 
-### <a name="accounts-payable"></a>Ostoreskontra
+### Ostoreskontra
+<a id="accounts-payable" class="xliff"></a>
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -52,7 +55,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="accounts-receivable"></a>Myyntireskontra
+### Myyntireskontra
+<a id="accounts-receivable" class="xliff"></a>
 
 |                                                             |                    |
 |-------------------------------------------------------------|--------------------|
@@ -73,7 +77,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="cash-and-bank-management"></a>Maksuliikenteen hallinta
+### Maksuliikenteen hallinta
+<a id="cash-and-bank-management" class="xliff"></a>
 
 |                                                                      |                    |
 |----------------------------------------------------------------------|--------------------|
@@ -101,7 +106,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="compliance"></a>Yhteensopivuus
+### Yhteensopivuus
+<a id="compliance" class="xliff"></a>
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -110,7 +116,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="cost-management"></a>Kustannushintojen hallinta
+### Kustannushintojen hallinta
+<a id="cost-management" class="xliff"></a>
 
 |                                                                     |                    |
 |---------------------------------------------------------------------|--------------------|
@@ -123,7 +130,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="countryregion-functionality"></a>Maa/alue-toiminto
+### Maa/alue-toiminto
+<a id="countryregion-functionality" class="xliff"></a>
 
 |                                                                                                        |                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
@@ -265,7 +273,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="develop-vision-and-strategy"></a>Vision ja strategian kehittäminen
+### Vision ja strategian kehittäminen
+<a id="develop-vision-and-strategy" class="xliff"></a>
 
 |                                                                                          |                    |
 |------------------------------------------------------------------------------------------|--------------------|
@@ -278,7 +287,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="electronic-reporting"></a>Sähköinen raportointi
+### Sähköinen raportointi
+<a id="electronic-reporting" class="xliff"></a>
 
 |                                                 |                    |
 |-------------------------------------------------|--------------------|
@@ -291,7 +301,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="expense-management"></a>Kulujenhallinta
+### Kulujenhallinta
+<a id="expense-management" class="xliff"></a>
 
 |                              |                    |
 |------------------------------|--------------------|
@@ -300,7 +311,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="fixed-assets"></a>Käyttöomaisuudet
+### Käyttöomaisuudet
+<a id="fixed-assets" class="xliff"></a>
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -323,7 +335,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="general-ledger"></a>Kirjanpito
+### Kirjanpito
+<a id="general-ledger" class="xliff"></a>
 
 |                                                                   |                    |
 |-------------------------------------------------------------------|--------------------|
@@ -356,7 +369,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="human-capital-management"></a>Henkisen pääoman hallinta
+### Henkisen pääoman hallinta
+<a id="human-capital-management" class="xliff"></a>
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -400,7 +414,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="inventory-management"></a>Varastonhallinta
+### Varastonhallinta
+<a id="inventory-management" class="xliff"></a>
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -424,7 +439,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="manufacturing"></a>Valmistus
+### Valmistus
+<a id="manufacturing" class="xliff"></a>
 
 |                                                               |                    |
 |---------------------------------------------------------------|--------------------|
@@ -476,7 +492,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="master-planning"></a>Pääsuunnittelu
+### Pääsuunnittelu
+<a id="master-planning" class="xliff"></a>
 
 |                                                   |                    |
 |---------------------------------------------------|--------------------|
@@ -489,7 +506,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="organization-administration"></a>Organisaation hallinto
+### Organisaation hallinto
+<a id="organization-administration" class="xliff"></a>
 
 |                                           |                    |
 |-------------------------------------------|--------------------|
@@ -503,7 +521,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="planning"></a>Suunnittelu
+### Suunnittelu
+<a id="planning" class="xliff"></a>
 
 |                        |                    |
 |------------------------|--------------------|
@@ -512,7 +531,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="procurement-and-sourcing"></a>Hankinta
+### Hankinta
+<a id="procurement-and-sourcing" class="xliff"></a>
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -527,7 +547,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="product-information-and-configuration"></a>Tuotteen tiedot ja määritykset
+### Tuotteen tiedot ja määritykset
+<a id="product-information-and-configuration" class="xliff"></a>
 
 |                                                       |                    |
 |-------------------------------------------------------|--------------------|
@@ -553,7 +574,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="public-sector"></a>Julkinen sektori
+### Julkinen sektori
+<a id="public-sector" class="xliff"></a>
 
 |                                                                                         |                    |
 |-----------------------------------------------------------------------------------------|--------------------|
@@ -579,7 +601,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="retail-and-commerce"></a>Vähittäismyynti ja kauppa
+### Vähittäismyynti ja kauppa
+<a id="retail-and-commerce" class="xliff"></a>
 
 |                                                                                           |                    |
 |-------------------------------------------------------------------------------------------|--------------------|
@@ -621,7 +644,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="sales"></a>Myynti
+### Myynti
+<a id="sales" class="xliff"></a>
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -644,7 +668,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="sales-tax"></a>Arvonlisävero
+### Arvonlisävero
+<a id="sales-tax" class="xliff"></a>
 
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
@@ -663,7 +688,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="security"></a>Suojaus
+### Suojaus
+<a id="security" class="xliff"></a>
 
 |                                                         |                    |
 |---------------------------------------------------------|--------------------|
@@ -674,7 +700,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-### <a name="warehouse-and-transportation"></a>Varasto ja kuljetus
+### Varasto ja kuljetus
+<a id="warehouse-and-transportation" class="xliff"></a>
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -699,7 +726,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Aloituskirjaston tehtäväoppaat (helmikuu 2016)
+## Aloituskirjaston tehtäväoppaat (helmikuu 2016)
+<a id="task-guides-in-the-february-2016-getting-started-library" class="xliff"></a>
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM-rivi**                                       | **Maa/alue** |
@@ -719,7 +747,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
  
 
-<a name="see-also"></a>Lisätietoja
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
 [Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)

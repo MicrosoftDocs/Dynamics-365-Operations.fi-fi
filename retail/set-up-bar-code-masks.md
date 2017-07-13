@@ -3,40 +3,44 @@ title: "Viivakoodin muotojen määrittäminen"
 description: "Tässä aiheessa kuvataan, miten määrität viivakoodin muodon merkit, viivakoodin muodot, ja miten viivakoodin muodot liitetään viivakoodeihin."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7b71cbe75f2d7e8f20201e8fa50df8ea1021c4de
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 958cac2e85ae7fa514f6f26cbb6178d8fdec9783
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-bar-code-masks"></a>Viivakoodin muotojen määrittäminen
+# Viivakoodin muotojen määrittäminen
+<a id="set-up-bar-code-masks" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
 Tässä aiheessa kuvataan, miten määrität viivakoodin muodon merkit, viivakoodin muodot, ja miten viivakoodin muodot liitetään viivakoodeihin.
 
-<a name="set-up-bar-code-mask-characters"></a>Viivakoodin muodon merkkien määrittäminen
+Viivakoodin muodon merkkien määrittäminen
+<a id="set-up-bar-code-mask-characters" class="xliff"></a>
 -------------------------------
 
-Viivakoodin muotoja käytetään viivakoodien luomiseen ja tunnistamaan myyntipisteeseen luettavat viivakoodit nopeasti. Muodot koostuvat merkeistä, jotka toimivat paikkamerkkeinä, jotka osoittavat muodon, jossa viivakoodit luodaan. Jotta voisit määrittää viivakoodin muodon, sinun on määritettävä viivakoodin muodon merkit. Mene kohtaan **Vähittäismyynti ja kauppa** &gt; **Varastonhallinta** &gt; **Viivakoodit ja etiketit** &gt; **Muodon merkit**. Luo viivakoodin muotomerkit painamalla **Uusi**-painiketta. Muotomerkit voidaan luoda ilmaisemaan seuraavia viivakooditietoja.
+Viivakoodin muotoja käytetään viivakoodien luomiseen ja tunnistamaan myyntipisteeseen luettavat viivakoodit nopeasti. Muodot koostuvat merkeistä, jotka toimivat paikkamerkkeinä, jotka osoittavat muodon, jossa viivakoodit luodaan. Jotta voisit määrittää viivakoodin muodon, sinun on määritettävä viivakoodin muodon merkit. Mene kohtaan **Vähittäismyynti** &gt; **Varastonhallinta** &gt; **Viivakoodit ja etiketit** &gt; **Muodon merkit**. Luo viivakoodin muotomerkit painamalla **Uusi**-painiketta. Muotomerkit voidaan luoda ilmaisemaan seuraavia viivakooditietoja.
 
 |                      |                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -53,12 +57,14 @@ Viivakoodin muotoja käytetään viivakoodien luomiseen ja tunnistamaan myyntipi
 | **Työntekijä**         | Ilmaisee viivakoodin osan työntekijän tunnusnumerolle, jota käytetään myyntipisteeseen kirjautumisessa viivakoodilla.                                  |
 | **Asiakas**         | Ilmaisee asiakastunnuksen osan.                                                                                  |
 | **Tietomerkintä**       | *Ei vielä toteutettu.*                                                                                          |
-| **Alennuskoodi**    | Ilmaisee viivakoodissa alennuskoodin, jota voi käyttää alennuksen lisäämiseen myyntipisteellä.             |
+| **Alennuskoodi**    | *Poistettu* Dynamics 365 for Retail kevään 2017 versiosta alkaen. Aiemmin: ilmaisee viivakoodissa alennuskoodin, jota voi käyttää alennuksen lisäämiseen myyntipisteellä.                                                                   |
+| **Kuponkikoodi**      | Ilmaisee kuponkikoodin viivakoodille, joka lisää alennuksen vähittäismyyntitilaukseen. Tämä korvaa alennuskoodin.     |
 | **Lahjakortti**        | Ilmaisee lahjakortin numeron, kun lahjakortti myönnetään tai sillä tehdään maksu.                                               |
 | **Kanta-asiakaskortti**     | Lisää kanta-asiakkaan tapahtumaan; voidaan käyttää kanta-asiakaskortilla maksettaessa.                             |
 
-## <a name="define-bar-code-masks"></a>Määritä viivakoodin muodot
-Kun viivakoodin muotomerkit on määritetty tarvittaville viivakoodin muodoille, siirry kohtaan **Vähittäismyynti ja kauppa** &gt; **Varastonhallinta** &gt; **Viivakoodit ja etiketit** &gt; **Viivakoodin muotoasetukset**. Tällä sivulla voit määrittää viivakoodin muodot, jotka käyttävät aiemmin määritettyjä merkkejä. Näitä viivakoodin muotoja käytetään viivakoodien luonnissa, ja ne helpottavat luettujen viivakoodien tunnistamista myyntipisteellä.
+## Määritä viivakoodin muodot
+<a id="define-bar-code-masks" class="xliff"></a>
+Kun viivakoodin muotomerkit on määritetty tarvittaville viivakoodin muodoille, siirry kohtaan **Vähittäismyynti** &gt; **Varastonhallinta** &gt; **Viivakoodit ja etiketit** &gt; **Viivakoodin muotoasetukset**. Tällä sivulla voit määrittää viivakoodin muodot, jotka käyttävät aiemmin määritettyjä merkkejä. Näitä viivakoodin muotoja käytetään viivakoodien luonnissa, ja ne helpottavat luettujen viivakoodien tunnistamista myyntipisteellä.
 
 1.  Luo uusi viivakoodin muoto painamalla **Uusi**-painiketta.
 2.  Syötä arvot **Muodon tunnus**- ja **Kuvaus**-kenttiin ja valitse viivakoodin muototyyppi **Tyyppi**-kentässä.
@@ -73,7 +79,8 @@ Voit esimerkiksi luoda viivakoodin muodon, jonka tunnus on "Tuote" seuraavasti:
 4.  Lisää muodon segmentti. Valittuna on muodon segmentti "Tuote".
 5.  Anna tuotesegmentille pituus, esimerkiksi "10". Pituuden tulisi vastata yleisesti liikkeessä käytettävän tuotetunnuksen pituutta. Muodon esikatselu näytetään **Yleinen**-osassa, kohdassa **Muoto**.
 
-## <a name="assign-bar-code-masks-to-bar-codes"></a>Määritä viivakoodin muodot viivakoodeille
+## Määritä viivakoodin muodot viivakoodeille
+<a id="assign-bar-code-masks-to-bar-codes" class="xliff"></a>
 Viivakoodien muodot on määritettävä viivakoodeille ennen, kuin niitä voi käyttää. Jatkaen edellistä esimerkkiä, voit määrittää viivakoodin muodon viivakoodille seuraavasti:
 
 1.  Siirty kohtaan **Organisaation hallinta** &gt; **Asetukset** &gt; **Viivakoodit** Luo uusi viivakoodi valitsemalla **Uusi**.

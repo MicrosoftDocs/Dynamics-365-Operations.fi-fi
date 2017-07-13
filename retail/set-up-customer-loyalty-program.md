@@ -1,39 +1,43 @@
 ---
 title: "Kanta-asiakasohjelman määrittäminen"
-description: "Tässä artikkelissa kuvataan kanta-asiakasohjelman määrittämistä. Kanta-asiakasohjelmat voivat nostaa asiakasuskollisuutta palkitsemalla asiakkaita, jotka asioivat myymälässäsi. Microsoft Dynamics 365 for Operationsissa voit määrittää yksinkertaisia tai monimutkaisia kanta-asiakasohjelmia yritysten välille missä tahansa vähittäismyyntikanavassa."
+description: "Tässä artikkelissa kuvataan kanta-asiakasohjelman määrittämistä. Kanta-asiakasohjelmat voivat nostaa asiakasuskollisuutta palkitsemalla asiakkaita, jotka asioivat myymälässäsi. Microsoft Dynamics 365 for Retailissa voit määrittää yksinkertaisia tai monimutkaisia kanta-asiakasohjelmia yritysten välille missä tahansa vähittäismyyntikanavassa."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 04521c20ddeca1154b134b23c1db69f45c554ed3
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-a-customer-loyalty-program"></a>Kanta-asiakasohjelman määrittäminen
+# Kanta-asiakasohjelman määrittäminen
+<a id="set-up-a-customer-loyalty-program" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Tässä artikkelissa kuvataan kanta-asiakasohjelman määrittämistä. Kanta-asiakasohjelmat voivat nostaa asiakasuskollisuutta palkitsemalla asiakkaita, jotka asioivat myymälässäsi. Microsoft Dynamics 365 for Operationsissa voit määrittää yksinkertaisia tai monimutkaisia kanta-asiakasohjelmia yritysten välille missä tahansa vähittäismyyntikanavassa.
+Tässä artikkelissa kuvataan kanta-asiakasohjelman määrittämistä. Kanta-asiakasohjelmat voivat nostaa asiakasuskollisuutta palkitsemalla asiakkaita, jotka asioivat myymälässäsi. Microsoft Dynamics 365 for Retailissa voit määrittää yksinkertaisia tai monimutkaisia kanta-asiakasohjelmia yritysten välille missä tahansa vähittäismyyntikanavassa.
 
-<a name="loyalty-features"></a>Kanta-asiakastoiminnot
+Kanta-asiakastoiminnot
+<a id="loyalty-features" class="xliff"></a>
 ----------------
 
 Voit määrittää kanta-asiakasohjelman käyttämällä seuraavia vaihtoehtoja:
@@ -44,10 +48,12 @@ Voit määrittää kanta-asiakasohjelman käyttämällä seuraavia vaihtoehtoja:
 -   Voit myöntää kanta-asiakaskortteja mille tahansa vähittäismyyntikanavalle, joka on osana kanta-asiakasohjelmiasi ja yhdistää kanta-asiakaskortteja yhteen tai useampaan kanta-asiakasohjelma, johon asiakas voi osallistua. Voit myös yhdistää asiakastietueen kanta-asiakaskorttiin, jotta asiakas voi kerätä kanta-asiakaspisteitä useilla korteilla sekä lunastaa ne.
 -   Oikaise kanta-asiakaskortit manuaalisesti tai siirrä kanta-asiakaspalkkioiden saldo kortilta toiselle asiakkaan palkitsemiseksi.
 
-## <a name="setting-up-loyalty-programs"></a>Kanta-asiakasohjelmien määrittäminen
-Kun otat kanta-asiakkuusominaisuuden käyttöön Dynamics 365 for Operations - Retailissa, sinun on määritettävä useita komponentteja. Seuraavassa kaaviossa on kuvattu kanta-asiakkuuskomponentit ja kuinka ne liittyvät toisiinsa. ![Kanta-asiakkuuden määrittämisprosessin kulku](./media/loyaltyprocess.gif)
+## Kanta-asiakasohjelmien määrittäminen
+<a id="setting-up-loyalty-programs" class="xliff"></a>
+Kun otat kanta-asiakkuusominaisuuden käyttöön Dynamics 365 for Retailissa, sinun on määritettävä useita komponentteja. Seuraavassa kaaviossa on kuvattu kanta-asiakkuuskomponentit ja kuinka ne liittyvät toisiinsa. ![Kanta-asiakkuuden määrittämisprosessin kulku](./media/loyaltyprocess.gif)
 
-## <a name="loyalty-components"></a>Kanta-asiakkuuskomponentit
+## Kanta-asiakkuuskomponentit
+<a id="loyalty-components" class="xliff"></a>
 Seuraavassa taulukossa on kuvattu jokainen komponentti ja sen käyttöpaikka kanta-asiakkuuden määrityksessä.
 
 | Komponentti                                        | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Missä se on käytössä                                                                                                                                                                                                                                                                                                                                                                 |
@@ -63,12 +69,13 @@ Seuraavassa taulukossa on kuvattu jokainen komponentti ja sen käyttöpaikka kan
 | Kanta-asiakkuusmallien asetukset                           | Kanta-asiakkuusmallit määrittävät valittua kanta-asiakkuusohjemaa koskevat ansainta- ja lunastussäännöt. Määrität vähittäismyynnin kanavat kanta-asiakkuusmalliin tunnistamaan, mitkä kanta-asiakasohjelma, ansaintasäännöt ja lunastussäännöt koskevat vähittäismyymälää.                                                                                                                                                                                                                                                                                                                                  | Kanta-asiakkuusmalli liitetään kanta-asiakasohjelmaan ja vähittäismyyntikanaviin. Voit määrittää useita kanta-asiakkuusmalleja samaan kanta-asiakasohjelmaan ja voit liittää useita kanta-asiakkuusmalleja useisiin vähittäismyyntikanaviin.                                                                                                                                                                        |
 | Kanta-asiakaskorttien asetukset                             | Kanta-asiakaskortin omistava asiakas voi osallistua kanta-asiakasohjelmiin, jotka on määritetty kortille. Kanta-asiakaskortit voidaan antaa nimettömänä tai ne voidaan määrittää tietylle asiakkaalle. Voit tarkastella tietyn kortin kanta-asiakkuustapahtumia ja voit tarkastella kortille kertyneiden kanta-asiakkuuspisteiden yhteenvetoa. Voit lähettää kanta-asiakaskortit mistä tahansa vähittäismyynnin kanavasta. Voit myös manuaalisesti säätää kanta-asiakaskortin päivittämään asiakkaan eri tasolle, lisäämään kanta-asiakkuuspisteitä tai siirtämään kanta-asiakkuuspisteet kortilta toiselle. | Kanta-asiakasohjelmat liitetään kanta-asiakaskorttiin.                                                                                                                                                                                                                                                                                                                                  |
 
-## <a name="loyalty-processes"></a>Kanta-asiakkuusprosessit
+## Kanta-asiakkuusprosessit
+<a id="loyalty-processes" class="xliff"></a>
 Seuraavassa taulukossa on kuvaus prosesseista, jotka on suoritettava, jotta kanta-asiakkuusmääritykset ja -tiedot voidaan lähettää myymälöihin ja kanta-asiakkuustapahtumat voidaan hakea myymälöistä.
 
 | Prosessin nimi                         | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                    | Sivun nimi                            |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| 1050 (kanta-asiakkaan tiedot)           | Suorita tämä prosessi, jotta voit lähettää kanta-asiakkuustiedot Microsoft Dynamics 365 for Operationsista vähittäismyymälöihin. Tämä prosessi kannattaa ajoittaa suoritettavaksi säännöllisesti, jotta kanta-asiakkuustiedot siirtyvät kaikkiin myymälöihin.                                                                                                                                                                                               | Jakeluaikataulu                |
+| 1050 (kanta-asiakkaan tiedot)           | Suorita tämä prosessi, jotta voit lähettää kanta-asiakkuustiedot Microsoft Dynamics 365 for Retailista vähittäismyymälöihin. Tämä prosessi kannattaa ajoittaa suoritettavaksi säännöllisesti, jotta kanta-asiakkuustiedot siirtyvät kaikkiin myymälöihin.                                                                                                                                                                                               | Jakeluaikataulu                |
 | Käsittele kanta-asiakkuusmallit              | Suorita prosessi, jolla määritetään kanta-asiakkuusmallit vähittäismyynnin kanavien kanssa, jotka liitetään kanta-asiakkuusmalleihin. Tämä prosessi voidaan ajoittaa suoritettavaksi eräprosessina. Tämä prosessi on suoritettava, jos muutat kanta-asiakkuuksien määritystietoja, kuten kanta-asiakkuusmalleja-, -ohjelmia tai -pisteitä.                                                                                               | Käsittele kanta-asiakkuusmallit              |
 | Käsittele kanta-asiakastapahtumia offline-tilassa | Suorita tämä prosessi, jotta voit päivittää kanta-asiakaskortteihin offline-tilassa käsitellyt tapahtumat. Tätä prosessia käytetään vain, jos **Ansaitse offline** -tilassa -valintaruutu on valittu **Vähittäismyynnin yhteiset parametrit** -sivulta siten, että etuja voi ansaita offline-tilassa.                                                                                                                                               | Käsittele kanta-asiakastapahtumia offline-tilassa |
 | Päivitä kanta-asiakaskorttitasot            | Suorita tämä prosessi, jotta voit arvioida asiakkaan ansaitsemat edut kanta-asiakasohjelman tasosääntöjen mukaisesti ja päivittää asiakkaan tasotilanteen. Tämä prosessi tarvitaan vain, jos muutat kanta-asiakasohjelmien tasosääntöjä ja haluat, että päivitetyt säännöt kohdistetaan takautuvasti jo myönnettyihin kanta-asiakaskortteihin. Tämä prosessi voidaan suorittaa eräprosessina tai yksittäisille korteille. | Päivitä kanta-asiakaskorttitasot            |

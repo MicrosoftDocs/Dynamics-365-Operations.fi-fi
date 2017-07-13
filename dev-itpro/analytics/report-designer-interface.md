@@ -3,7 +3,7 @@ title: "Report Designer -ohjelman käyttöliittymä"
 description: "Tässä artikkelissa käsitellään Report Designerissa liikkumista ja omia tarpeita vastaamien asetusten käyttämistä."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.region: Global
@@ -19,27 +19,30 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 775a836748949a86b64a0ddec15ee4519b1c5127
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: aad8f2617d94e9abc77dafe96cb95f7e191873bd
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="report-designer-interface"></a>Report Designer -ohjelman käyttöliittymä
+# Report Designer -ohjelman käyttöliittymä
+<a id="report-designer-interface" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa käsitellään Report Designerissa liikkumista ja omia tarpeita vastaamien asetusten käyttämistä. 
 
-<a name="report-designer-menu-commands"></a>Report Designer -ohjelman valikkokomennot
+Report Designer -ohjelman valikkokomennot
+<a id="report-designer-menu-commands" class="xliff"></a>
 -----------------------------
 
 Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät valikkokomennot ja asetukset. Jotkin valikkokomennot ja asetukset ovat käytettävissä vain tietyissä tilanteissa. Esimerkiksi raportointiyksiköiden ylennysten ja alennusten komennot ovat käytettävissä vain, kun raportointipuun määritystä muokataan.
 
-### <a name="file-menu"></a>Tiedosto-valikko
+### Tiedosto-valikko
+<a id="file-menu" class="xliff"></a>
 
 **Tiedosto**-valikko on kaikkien käyttäjien käytettävissä. Valikon komennot esitellään alla.
 
@@ -53,14 +56,15 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Tallenna nimellä                           | Tallenna nykyinen rivin, sarakkeen, raportointipuun tai raportin määritys uudella nimellä.                                                                            |
 | Ominaisuudet                        | Avaa **Ominaisuudet**-valintaikkuna, jossa voit muuttaa raportin nimen ja kuvauksen.                                                                                                   |
 | Luo                          | Luo nykyinen raportti. Tämä komento on käytettävissä raportin määrityksestä.                                                                                                                 |
-| Tarkastele raporttia                       | Avaa luodun raportin uusin versio Dynamics 365 for Operations -ohjelmassa. Tämä komento on käytettävissä raportin määrityksestä, jos luotuna on vähintään yksi raportti.                                 |
+| Tarkastele raporttia                       | Avaa luodun raportin uusin versio Dynamics 365 for Finance and Operationsissa. Tämä komento on käytettävissä raportin määrityksestä, jos luotuna on vähintään yksi raportti.                                 |
 | Viimeisimmät raporttien määritykset         | Näytä äskettäin luotujen tai muokattujen raporttien luettelo. Tämän jälkeen voit valita raportin luettelosta.                                                                                    |
 | Viimeisimmät rivien määritykset            | Näytä äskettäin luotujen tai muokattujen rivien määritysten luettelo. Tämän jälkeen voit valita rivin määrityksen luettelosta.                                                                    |
 | Viimeisimmät sarakkeiden määritykset         | Näytä äskettäin luotujen tai muokattujen sarakkeiden määritysten luettelo. Tämän jälkeen voit valita sarakkeen määrityksen luettelosta.                                                              |
 | Viimeisimmät raportointipuiden määritykset | Näytä äskettäin luotujen tai muokattujen raportointipuiden määritysten luettelo. Tämän jälkeen voit valita raportointipuun määrityksen luettelosta.                                              |
 | Lopeta                              | Lopeta Report Designer.                                                                                                                                                                            |
 
-### <a name="edit-menu"></a>Muokkaa-valikko
+### Muokkaa-valikko
+<a id="edit-menu" class="xliff"></a>
 
 **Muokkaa**-valikko on niiden käyttäjien käytettävissä, joilla on **suunnittelijan** tai **järjestelmänvalvojan** rooli. Tämä valikko sisältää alla esiteltävät komennot.
 
@@ -88,7 +92,8 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Lisää raportointiyksikkö                  | Lisää tyhjä rivi raportointipuun määritykseen. Tämä komento on käytettävissä raportointipuun määrityksestä.                                                                                                |
 | Poista raportointiyksikkö                  | Poista valittu raportointiyksikön rivi raportointipuun määrityksestä. Tämä komento on käytettävissä raportointipuun määrityksestä.                                                                             |
 
-### <a name="view-menu"></a>Näytä-valikko
+### Näytä-valikko
+<a id="view-menu" class="xliff"></a>
 
 **Näytä**-valikko on kaikkien käyttäjien käytettävissä. Valikon komennot esitellään alla.
 
@@ -99,7 +104,8 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Tilarivi      | Näytä tai piilota **Report Designer** -ikkunan tilatiedot. |
 | Tervetulo-sivu    | Avaa **Tervetuloa**-sivu.                                             |
 
-### <a name="format-menu"></a>Muotoilu-valikko
+### Muotoilu-valikko
+<a id="format-menu" class="xliff"></a>
 
 **Muotoilu**-valikko on niiden käyttäjien käytettävissä, joilla on **suunnittelijan** tai **järjestelmänvalvojan** rooli. Tämä valikko sisältää alla esiteltävät komennot.
 
@@ -110,7 +116,8 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Piilota                  | Piilota valittu sarake. Tämä komento on käytettävissä rivin, sarakkeen tai raportointipuun määrityksestä.                                                                                        |
 | Tuo esiin                | Tuo esiin valittujen sarakkeiden välissä olevat piilotetut sarakkeet. Tämä komento on käytettävissä rivin, sarakkeen tai raportointipuun määrityksestä.                                                      |
 
-### <a name="company-menu"></a>Yritys-valikko
+### Yritys-valikko
+<a id="company-menu" class="xliff"></a>
 
 **Yritys**-valikko on niiden käyttäjien käytettävissä, joilla on **suunnittelijan** tai **järjestelmänvalvojan** rooli. Tämä valikko sisältää alla esiteltävät komennot.
 
@@ -119,7 +126,8 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Yritykset             | Avaa **Yritykset**-valintaikkuna, jossa voi luoda ja muokata yrityksiä.                                          |
 | Rakenneosaryhmät | Avaa **Rakenneosaryhmät**-valintaikkuna, jossa voi luoda, muokata, tuoda ja viedä rakenneosaryhmiä. |
 
-### <a name="go-menu"></a>Siirry-valikko
+### Siirry-valikko
+<a id="go-menu" class="xliff"></a>
 
 **Siirry**-valikko on kaikkien käyttäjien käytettävissä. Valikon komennot esitellään alla. **Huomautus:** Näiden komentojen vaikutus ei ole näkyvä, jos siirtymisruutu ei ole näkyvissä.
 
@@ -131,7 +139,8 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Raportointipuiden määritykset | Näytä raportointipuiden määritykset siirtymisruudussa.                            |
 | Suojaus                   | Näyttää käyttäjien, ryhmien ja yritysten suojaustiedot siirtymisruudussa. |
 
-### <a name="tools-menu"></a>Työkalut-valikko
+### Työkalut-valikko
+<a id="tools-menu" class="xliff"></a>
 
 **Työkalut**-valikko on kaikkien käyttäjien käytettävissä, mutta joidenkin komentojen käytettävyyttä on rajoitettu. Tämä valikko sisältää alla esiteltävät komennot.
 
@@ -144,7 +153,8 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Päivitä välimuistiin tallennetut taloushallinnon tiedot | Päivitä taloushallinnon dimensioiden sarakkeen tiedot.                                                                                                                                                               |
 | Optiot                       | Avaa **Asetukset**-valintaikkuna, jossa voi muokata Report Designer -ohjelman käyttäjän asetuksia.                                                                                                                       |
 
-### <a name="window-menu"></a>Ikkuna-valikko
+### Ikkuna-valikko
+<a id="window-menu" class="xliff"></a>
 
 **Ikkuna**-valikko on kaikkien käyttäjien käytettävissä. Valikon komennot esitellään alla.
 
@@ -157,19 +167,22 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Lukitse pystysuunnassa      | Lukitse valittu sarake niin, että sarake näkyy ikkunassa myös silloin, kun ikkunaa vieritetään. Tämä komento on **suunnittelijan** tai **järjestelmänvalvojan** roolin omaavien käyttäjien käytettävissä. |
 | Avointen ikkunoiden luettelo | Näytä avointen ikkunoiden luettelo. Valitse näkyville tuotava ikkuna.                                                                                                               |
 
-### <a name="help-menu"></a>Ohje-valikko
+### Ohje-valikko
+<a id="help-menu" class="xliff"></a>
 
 **Ohje**-valikko on kaikkien käyttäjien käytettävissä. Valikon komennot esitellään alla.
 
 | Komento | kuvaus                                                  |
 |---------|--------------------------------------------------------------|
-| Ohje    | Avaa Dynamics 365 for Operations -ohjelman ohjeen talousraportoinnin aihesivu. |
+| Ohje    | Avaa Dynamics 365 for Finance and Operationsin ohjeen talousraportoinnin aihesivu. |
 |         |                                                              |
 
-## <a name="report-designer-toolbar-buttons"></a>Report Designer -ohjelman työkalurivin painikkeet
+## Report Designer -ohjelman työkalurivin painikkeet
+<a id="report-designer-toolbar-buttons" class="xliff"></a>
 Seuraavassa taulukossa esitellään raporttien suunnittelussa käytettävissä olevat työkalurivin painikkeet. Jotkin työkalurivin painikkeet ovat käytettävissä vain tietyissä tilanteissa. Esimerkiksi raportointiyksiköiden ylennysten ja alennusten painikkeet ovat käytettävissä vain, kun raportointipuun määritystä muokataan.
 
-### <a name="standard-toolbar"></a>Vakiotyökalurivi
+### Vakiotyökalurivi
+<a id="standard-toolbar" class="xliff"></a>
 
 Vakiotyökalurivi mahdollistaa tiedostojen ja muokkauskomentojen nopean käyttämisen. Tämä työkalurivi sisältää seuraavat painikkeet.
 
@@ -194,7 +207,8 @@ Vakiotyökalurivi mahdollistaa tiedostojen ja muokkauskomentojen nopean käyttä
 | [![Tiivistä-painike](./media/collapsec130389.png)](./media/collapsec130389.png)               | Tiivistä raportointipuu.                                                                                                                                                           |
 | [![Ohje-painike](./media/helpc130389.png)](./media/helpc130389.png)                           | Avaa Ohje.                                                                                                                                                                             |
 
-### <a name="formatting-toolbar"></a>Muotoilutyökalurivi
+### Muotoilutyökalurivi
+<a id="formatting-toolbar" class="xliff"></a>
 
 Muotoilutyökalurivin avulla tyylikomennot on helppo ottaa käyttöön. Tämä työkalurivi sisältää seuraavat painikkeet.
 
@@ -211,7 +225,8 @@ Muotoilutyökalurivin avulla tyylikomennot on helppo ottaa käyttöön. Tämä t
 | [![Taustaväri-painike](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Muuta nykyisen solun taustaväriä.        |
 | [![Fontin väri -painike](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Muuta nykyisen tekstin väriä.                   |
 
-### <a name="report-designer-toolbar"></a>Report Designer -työkalurivi
+### Report Designer -työkalurivi
+<a id="report-designer-toolbar" class="xliff"></a>
 
 Reporter Designer -työkaluriviltä voi käyttää nopeasti Report Designerin siirtymiskomentoja. Tämä työkalurivi sisältää seuraavat painikkeet.
 
@@ -226,7 +241,8 @@ Reporter Designer -työkaluriviltä voi käyttää nopeasti Report Designerin si
 
 
 
-<a name="see-also"></a>Lisätietoja
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
 [Taloushallinnan raportointi](financial-reporting-intro.md)

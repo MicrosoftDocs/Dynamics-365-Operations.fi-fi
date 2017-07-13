@@ -3,13 +3,13 @@ title: Myynti ja markkinointi
 description: "Voit käyttää myyntiä ja markkinointia myyntivirran erityyppisten tietojen hankkimiseen, tallentamiseen ja käyttämiseen. Näitä tietoja ovat alkuperäinen myyntitoimenpide, tulevaisuuden seurantatoiminto ja lisämyynnit."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 92303
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
@@ -17,46 +17,54 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 25ea6e64453b22d664dd65a1f1bb18e3a1997bc5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: dddcc764bb11540b8207350c463d1adb2533e1c0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="sales-and-marketing"></a>Myynti ja markkinointi
+# Myynti ja markkinointi
+<a id="sales-and-marketing" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Voit käyttää myyntiä ja markkinointia myyntivirran erityyppisten tietojen hankkimiseen, tallentamiseen ja käyttämiseen. Näitä tietoja ovat alkuperäinen myyntitoimenpide, tulevaisuuden seurantatoiminto ja lisämyynnit.
 
-<a name="marketing"></a>Markkinointi
+Markkinointi
+<a id="marketing" class="xliff"></a>
 ---------
 
 Voit etsiä markkinointikampanjoihin ja -toimintoja avulla mahdollisiin asiakkaisiin ja luoda heihin suhteita niin, että ensimmäiset yhteydenotot muuttuvat myyntisuhteiksi. Seuraava prosessikuva näyttää markkinoinnin liiketoimintaprosessin. [![Markkinoinnin liiketoimintaprosessi](./media/marketing01.jpg)](./media/marketing01.jpg)
 
-### <a name="relationships"></a>Suhteet
+### Suhteet
+<a id="relationships" class="xliff"></a>
 
 Myynnissä ja markkinoinnissa ensikosketus mahdollisiin asiakkaisiin voi tapahtua monenlaisissa tilanteissa. Voit löytää mahdollisen asiakkaan esimerkiksi messuilla tai asiakas voi muuttua mahdolliseksi liidiksi organisaation massapostituskampanjan jälkeen. On erittäin tärkeää tiedostaa osapuolen yksikkö, ennen kuin yksiköstä tulee asiakas. Seuraavassa kuvassa on yksikkösuhteet, kun mahdollisesta asiakkaasta tulee varsinainen asiakas. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
-### <a name="campaigns"></a>Kampanjat
+### Kampanjat
+<a id="campaigns" class="xliff"></a>
 
-Kampanjan kohteena ovat ne prospektien, liidien, mahdollisuuksien ja asiakkaiden yhteyshenkilöt, jotka on valittu osallistumaan kampanjaan. Voit luoda Microsoft Dynamics 365 for Operationsissa monenlaisia kampanjoita, kuten puhelinmarkkinointi-, postitus- ja sähköpostikampanjoita, joilla asiakaspotentiaali voidaan maksimoida. Kun kampanja etenee ja saat positiivisia vastauksia, voit aloittaa myyntiprosessin niiden vastaajien kanssa, jotka vastasivat myönteisesti kampanjaan.
+Kampanjan kohteena ovat ne prospektien, liidien, mahdollisuuksien ja asiakkaiden yhteyshenkilöt, jotka on valittu osallistumaan kampanjaan. Voit luoda Microsoft Dynamics 365 for Finance and Operationsissa monenlaisia kampanjoita, kuten puhelinmarkkinointi-, postitus- ja sähköpostikampanjoita, joilla asiakaspotentiaali voidaan maksimoida. Kun kampanja etenee ja saat positiivisia vastauksia, voit aloittaa myyntiprosessin niiden vastaajien kanssa, jotka vastasivat myönteisesti kampanjaan.
 
-## <a name="sales"></a>Myynti
+## Myynti
+<a id="sales" class="xliff"></a>
 Myyntitoimintoa käytetään tarjousten, lisämyynnin ja ristiin myynnin luomiseen uusille ja nykyisille asiakkaille, myyntitilausten luomiseen ja asiakkaiden myyntilaskujen luomiseen. Seuraava prosessikuva näyttää myynnin liiketoimintaprosessin. [![Myynnin liiketoimintaprosessi](./media/sales01.jpg)](./media/sales01.jpg)
 
-### <a name="sales-quotations"></a>Myyntitarjoukset
+### Myyntitarjoukset
+<a id="sales-quotations" class="xliff"></a>
 
 Voit tarjota asiakkaille toimittamiasi hyödykkeitä tai palveluja luomalla myyntitarjouksia. Asiakas voi pyytää tarjousta tai voit luoda tarjouksen vastauksena mahdollisen tai nykyisen asiakkaan pyyntöön. Kun asiakas hyväksyy myyntitarjouksen, voit muuntaa sen myyntitilaukseksi.
 
-### <a name="up-sellcross-sell"></a>Lisämyynti / liittyvien tuotteiden myynti
+### Lisämyynti / liittyvien tuotteiden myynti
+<a id="up-sellcross-sell" class="xliff"></a>
 
 Lisä- ja ristiinmyynti ovat tuotteiden myyntitekniikoita, kun tilaus on merkitty asiakkaalle. Lisämyynnissä nykyisen tuotteen tilalle ehdotetaan toista tuotetta. Ristiinmyynnissä tuotetta ehdotetaan nykyisen tuotteen lisäksi. Kun määrität tuoteluetteloita, voit luoda erityissääntöjä ilmaisemaan, milloin tuotetta ehdotetaan ristiin- tai lisämyyntituotteeksi.
 
-### <a name="sales-orders"></a>Myyntitilaukset
+### Myyntitilaukset
+<a id="sales-orders" class="xliff"></a>
 
 Kun uusi myyntitilaus luodaan, valitse luotavan myyntitilauksen tyyppi. Vaihtoehtoja on viisi. **Huomautus:** kun olet luonut myyntitilauksen, mitä tahansa tilaustyyppiä voidaan muuttaa. Poikkeuksena on kuitenkin **nimikkeiden vaatimustyyppi**, jos myyntitilauksen tila on **Toimitettu**.
 
@@ -68,15 +76,18 @@ Kun uusi myyntitilaus luodaan, valitse luotavan myyntitilauksen tyyppi. Vaihtoeh
 | Palautettu tilaus    | Tyyppiä käytetään, kun asiakas palauttaa nimikkeen. Palautusnumero määritetään automaattisesti.                                                                                                                                                                                            |
 | Nimiketarpeet | Tämä tyyppi luodaan automaattisesti, kun nimike myydään projektin kautta.                                                                                                                                                                                                                       |
 
-### <a name="sales-agreements"></a>Myyntisopimukset
+### Myyntisopimukset
+<a id="sales-agreements" class="xliff"></a>
 
 Myyntisopimus on sopimus, jolla asiakas vahvistaa ostavansa tuotetta tietyn määrän tai tietyn summan tietyssä ajassa saadakseen erikoishinnan ja alennuksia. Myyntisopimuksen hinnat ja alennukset korvaavat kaikki kauppasopimuksissa määritetyt hinnat ja alennukset. Myyntisopimus on voimassa määritetyn ajan. Myynnille **Myyntitilaus**-sivulla määritettävän pyydetyn lähetyspäivämäärän on oltava voimassaolokaudella. Oletusarvon mukaan myyntisopimus on pidossa. Voit tilata myyntisopimuksesta vain, kun sen asetuksena on **Voimassa** .
 
-### <a name="backorders"></a>Jälkitoimitukset
+### Jälkitoimitukset
+<a id="backorders" class="xliff"></a>
 
 Tilausten tallentaminen ja vahvistaminen edellyttää ehkä jälkitoimitusten ja poikkeusten hallintaa, ennen kuin myynti on valmis. Jälkitoimitukset ovat joko ostotilauksia, joita toimittaja ei ole vielä toimittanut, tai myyntitilauksia, joita ei ole vielä toimitettu asiakkaalle. Jälkitoimitusten seuranta on tärkeää. Jos esimerkiksi toimittajien tuotetoimitukset myöhästyvät, asiakastoimituksen päivämäärää voidaan joutua lykkäämään ja ilmoittamaan asiakkaille viivästyksestä. Voit tarkastella jälkitoimituksia nimikkeen, asiakkaan tai toimittajan mukaan.
 
-#### <a name="viewing-backorders-by-item"></a>Nimikekohtaisten jälkitoimitusten tarkasteleminen
+#### Nimikekohtaisten jälkitoimitusten tarkasteleminen
+<a id="viewing-backorders-by-item" class="xliff"></a>
 
 Kun tarkastelet jälkitoimituksia nimikekohtaisesti, voit seurata tietyn tuotteen tulevien tapahtumien odotettua kulkua. Voit esimerkiksi tarkistaa seuraavat tiedot.
 
@@ -86,15 +97,18 @@ Kun tarkastelet jälkitoimituksia nimikekohtaisesti, voit seurata tietyn tuottee
 
 Tekemällä tämä tarkistuksen voit vastata asiakkaiden pyyntöihin nimiketoimituksen ajoittamisesta. Lisäksi myyntitilauksille voi määrittää prioriteetteja ja jakaa varastossa olevat nimikkeet tilausten kesken.
 
-#### <a name="viewing-backorders-by-customer"></a>Asiakaskohtaisten jälkitoimitusten tarkasteleminen
+#### Asiakaskohtaisten jälkitoimitusten tarkasteleminen
+<a id="viewing-backorders-by-customer" class="xliff"></a>
 
 Asiakaskohtaisia jälkitoimituksia tarkastelemalla voit tarkastella asiakkaan jäljellä olevia tilauksia. Tämä tarkistus on kätevä, kun sinun vastattava viivästyneitä nimikkeitä odottaville asiakkaille.
 
-#### <a name="viewing-backorders-by-vendor"></a>Toimittajakohtaisten jälkitoimitusten tarkasteleminen
+#### Toimittajakohtaisten jälkitoimitusten tarkasteleminen
+<a id="viewing-backorders-by-vendor" class="xliff"></a>
 
 Kun tarkastelet toimittajakohtaisia jälkitoimituksia, voit seurata puuttuvia toimituksia ja odotettuja toimituspäiviä. Tämä tarkistus auttaa myös priorisoimaan jälkitilaukset, kun tuotteet saapuvat toimittajilta ja myyntitilaukset on kerättävä toimitettavaksi.
 
-### <a name="invoices"></a>Laskut
+### Laskut
+<a id="invoices" class="xliff"></a>
 
 Myyntiprosessin aikana voi luoda kolmenlaisia laskuja:
 
@@ -102,7 +116,8 @@ Myyntiprosessin aikana voi luoda kolmenlaisia laskuja:
 -   Vapaatekstilasku
 -   Proformalasku
 
-#### <a name="customer-invoice"></a>Myyntilasku
+#### Myyntilasku
+<a id="customer-invoice" class="xliff"></a>
 
 Myyntilasku on lasku, jonka organisaatio antaa asiakkaalle myynnin yhteydessä. Voit luoda tällaisen myyntilaskun otsikon sisältävän myyntitilauksen sekä vähintään yhden nimike- tai palvelurivin perusteella. Myyntilasku päättää myyntitilauksen, pakkausluettelon ja myyntilaskujakson.  
 
@@ -114,11 +129,13 @@ Voit luoda myyntilaskun niiden pakkausluettelon rivinimikkeiden perusteella, jot
 
 Kun kirjaat laskun, jokaisen nimikkeen **Laskuttamatta**-määrä päivitetään valittujen pakkausluetteloiden toimitusten kokonaismäärällä. Jos myyntitilauksen kaikkien nimikkeiden **Laskuttamatta**-määrä ja **Jäljellä oleva määrä** on 0 (nolla), myyntitilauksen tilaksi muutetaan **Laskutettu**. Jos määrä ei ole 0, myyntitilauksen tilaa ei muuteta ja voit merkitä lisälaskuja. Varastotapahtumat päivitetään laskun numerolla ja myyntitilausrivin tilaksi muutetaan **Laskutettu**.
 
-#### <a name="free-text-invoice"></a>Vapaatekstilasku
+#### Vapaatekstilasku
+<a id="free-text-invoice" class="xliff"></a>
 
 Vapaatekstilasku on lasku, joka ei liity myyntitilaukseen. Sen tilausriveillä on kirjanpitotilit, vapaatekstikuvaukset ja myyntisumma. Tällaiseen laskuun ei ovi antaa nimiketunnusta. Lisäksi soveltuvat arvonlisäverotiedot on annettava. Myynnin päätilin ilmaistaan jokaisella laskurivillä. Asiakkaan saldo kirjataan vapaatekstilaskussa käytetystä kirjausprofiilista yhteenvetotilille.
 
-#### <a name="pro-forma-invoice"></a>Proformalasku
+#### Proformalasku
+<a id="pro-forma-invoice" class="xliff"></a>
 
 Proformalasku on lasku, joka laaditaan todellisen laskusumman ennusteena ennen laskun kirjaamista. Proformalaskun voi tulostaa joko myyntilaskulle tai vapaatekstilaskulle.
 

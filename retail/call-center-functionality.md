@@ -1,40 +1,42 @@
 ---
 title: Puhelukeskuksen toiminnot
-description: "Tämä artikkeli sisältää Microsoft Dynamics 365 for Operationsin puhelinkeskuksen myyntitoimintojen yleiskatsauksen."
+description: "Tässä artikkelissa on Microsoft Dynamics 365 for Retailin puhelinkeskuksen myyntitoimintojen yleiskatsaus."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 40d7c1a95f33c189639c12279a8e3a286f0c6761
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: befbf43a0af8016895e570f5d8cf3a51983692f2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="call-center-functionality"></a>Puhelukeskuksen toiminnot
+# Puhelukeskuksen toiminnot
+<a id="call-center-functionality" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Tämä artikkeli sisältää Microsoft Dynamics 365 for Operationsin puhelinkeskuksen myyntitoimintojen yleiskatsauksen.
+Tässä artikkelissa on Microsoft Dynamics 365 for Retailin puhelinkeskuksen myyntitoimintojen yleiskatsaus.
 
-Microsoft Dynamics AX:n Vähittäismyynti ja kauppa -osio tukee myös puhelukeskuksia vähittäismyyntikanavan tyyppinä. Puhelinpalvelukeskuksessa työntekijät ottavat vastaan asiakastilauksia puhelimitse ja luovat myyntitilauksia. Puhelinkeskuksen toimintoihin sisältyy toimintoja, joiden tarkoituksena on helpottaa puhelimessa tilaamista ja asiakaspalvelua tilausprosessin aikana. Esimerkiksi puhelukeskuksen työntekijät voivat syöttää maksutiedot suoraan myyntitilauksesta ja tarkastella yksityiskohtaista yhteenvetoa kuluista ja maksuista ennen tilauksen lähettämistä. Työntekijöillä on myös mahdollisuus hallita hinnoittelua ja käyttää eri tietoja asiakkaista, tuotteista ja hinnoista **Myyntitilaus**-sivun kautta. Puhelukeskukset voivat myös laajennetusti seurata asiakkaan historiatietoja ja tilauksen tilaa. Jokaisella puhelinkeskuksella voi olla omat käyttäjät, maksutavat, hintaryhmät, taloushallinnon dimensiot ja toimitustavat. Voit määrittää nämä asetukset puhelinkeskusta luotaessa. Voit lisäksi ottaa käyttöön tai poistaa käytöstä seuraavat, vain puhelinpalvelukeskuksille ominaiset toimintoryhmät **Puhelukeskus**-sivulla:
+Dynamics 365 for Retail tukee myös puhelinkeskuksia vähittäismyyntikanavana. Työntekijät ottavat puhelinkeskuksessa vastaan asiakkaiden tilauksia puhelimitse ja luovat myyntitilauksia. Puhelinkeskuksen toimintoihin sisältyy toimintoja, joiden tarkoituksena on helpottaa puhelimessa tilaamista ja asiakaspalvelua tilausprosessin aikana. Esimerkiksi puhelukeskuksen työntekijät voivat syöttää maksutiedot suoraan myyntitilauksesta ja tarkastella yksityiskohtaista yhteenvetoa kuluista ja maksuista ennen tilauksen lähettämistä. Työntekijöillä on myös mahdollisuus hallita hinnoittelua ja käyttää eri tietoja asiakkaista, tuotteista ja hinnoista **Myyntitilaus**-sivun kautta. Puhelukeskukset voivat myös laajennetusti seurata asiakkaan historiatietoja ja tilauksen tilaa. Jokaisella puhelinkeskuksella voi olla omat käyttäjät, maksutavat, hintaryhmät, taloushallinnon dimensiot ja toimitustavat. Voit määrittää nämä asetukset puhelinkeskusta luotaessa. Voit lisäksi ottaa käyttöön tai poistaa käytöstä seuraavat, vain puhelinpalvelukeskuksille ominaiset toimintoryhmät **Puhelukeskus**-sivulla:
 
 -   **Tilauksen viimeistely** – Tämä ryhmä sisältää ominaisuuksia, jotka liittyvät maksuihin ja tilausten viimeistelyyn **Myyntitilaus**-sivulla.
 -   **Ohjattu myynti** – Tämä ryhmä sisältää ominaisuuksia, jotka liittyvät lähdekoodeihin, komentosarjoihin ja luettelopyyntöihin.

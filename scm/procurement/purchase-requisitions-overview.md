@@ -3,14 +3,14 @@ title: Ostoehdotusten yleiskatsaus
 description: "Tässä artikkelissa kuvataan ostoehdotusten työnkulkua ja eri tiloja."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 38e7fba3fbd12de3a1cd9ac7b1c627834978ba30
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8c60d870d0ca178af84919e5ebaaa13769b46f8a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="purchase-requisition-overview"></a>Ostoehdotusten yleiskatsaus
+# Ostoehdotusten yleiskatsaus
+<a id="purchase-requisition-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,24 +38,28 @@ Voit luoda ostoehdotuksia organisaatiosi käyttämille tuotteille riippuen siit�
 
 Kun ostoehdotus on hyväksytty, sitä voidaan käyttää ostotilauksen luomiseen. Ostotilaukset ovat ulkoisia tiedostoja, joita hankintaosasto lähettää toimittajille.
 
-## <a name="creating-purchase-requisitions"></a>Ostoehdotuksien luominen
+## Ostoehdotuksien luominen
+<a id="creating-purchase-requisitions" class="xliff"></a>
 Voit luoda ostoehdotuksen **Omat ostoehdotukset** -sivulla ja valita tarvitsemasi nimikkeet ja palvelut. Voit valita nimikkeet tuotteiden hankintaluettelosta, jonka organisaatiosi on luonut, tai voit pyytää nimikkeet, joita ei löydy luettelosta, valitsemalla hankintaluokan ja kirjoittamalla tuotteen tiedot.  
 
-Ennen kuin ostoehdotus voidaan lähettää tarkistettavaksi, työnkulut on määritettävä Microsoft Dynamics 365 for Operations -järjestelmässä. Työnkulun avulla voit siirtää ostoehdotuksen tarkistusprosessin läpi alkuperäisestä **Luonnos**-tilasta lopulliseen **Hyväksytty**-tilaan.
+Ennen kuin ostoehdotus voidaan lähettää tarkistettavaksi, työnkulut on määritettävä Microsoft Dynamics 365 for Finance and Operationsissa. Työnkulun avulla voit siirtää ostoehdotuksen tarkistusprosessin läpi alkuperäisestä **Luonnos**-tilasta lopulliseen **Hyväksytty**-tilaan.
 
-### <a name="purchase-requisition-statuses"></a>Ostoehdotusten tilat
+### Ostoehdotusten tilat
+<a id="purchase-requisition-statuses" class="xliff"></a>
 
 Kun luot uuden ostotilauksen, sille määritetään tila. Jokaiselle ostoehdotusriville määritetään myös tila. Kun käyttäjä lähettää ostoehdotuksen työnkulkuun tarkistusta varten, ostoehdotuksen ja jokaisen ehdotusrivin tilaa päivitetään kun ne siirtyvät työnkulkuprosessin läpi.  
 
 Voit määrittää ostoehdotuksen työnkulkuprosessin voi kierrättämään ostoehdotuksen tarkistuksen kautta yhtenä asiakirjana. Vaihtoehtoisesti ostoehdotuksen rivit voidaan reitittää yksittäin sopiville tarkistajille. Jos ostoehdotusrivit tarkastetaan yksitellen, kunkin rivin tilaa voi päivittää kun rivi kulkee tarkastusprosessi läpi. Kun kaikki rivit ovat käyneet läpi koko tarkastusprosessin, eikä ostoehdotuksella ole jäljellä tarkastustyövaiheita, hankintaehdotuksen yleinen tila päivitetään.
 
-### <a name="purchase-requisition-workflow"></a>Ostoehdotuksen työnkulku
+### Ostoehdotuksen työnkulku
+<a id="purchase-requisition-workflow" class="xliff"></a>
 
 Seuraava kaavio kuvaa ostoehdotukselle ja sen riveille määritettäviä tiloja kun ne kulkevat työnkulkuprosessin läpi.  
 
 [![Ostoehdotuksen otsikon ja rivien tilat](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
-### <a name="purchase-requisition-header-and-line-status-relationships"></a>Ostoehdotuksen otsikon ja rivien tilojen suhde
+### Ostoehdotuksen otsikon ja rivien tilojen suhde
+<a id="purchase-requisition-header-and-line-status-relationships" class="xliff"></a>
 
 Ostoehdotuksen yleinen tila määritetään ostoehdotusrivien tilan mukaan. Siispä tarkistusprosessi on täytettävä kaikilla ostoehdotusriveillä ennen kuin koko ehdotuksen tarkistusprosessi on valmis. Seuraava taulukko kuvaa ostoehdotuksen otsikolle ja sen riveille määritettäviä tiloja kun ne kulkevat työnkulkuprosessin läpi.
 
@@ -133,19 +138,23 @@ Jos lähetät hylätyn ostoehdotusrivin uudelleen, tarkistusprosessi käynnistyy
 </tbody>
 </table>
 
-## <a name="distributing-costs-to-multiple-financial-accounts"></a>Kustannusten jakaminen useisiin kirjanpitotileihin
+## Kustannusten jakaminen useisiin kirjanpitotileihin
+<a id="distributing-costs-to-multiple-financial-accounts" class="xliff"></a>
 Voit jakaa kustannukset tuotteesta, joka kuuluu ostoehdotukseen, useille kirjanpitotileille. Jos organisaatiossa käytetään dimensioita, kuten kustannuspaikkoja ja osastoja, voit jakaa tuotekustannukset dimensioista taloushallinnon tileille.
 
-## <a name="requisition-purposes"></a>Ehdotuksen tarkoitukset
+## Ehdotuksen tarkoitukset
+<a id="requisition-purposes" class="xliff"></a>
 Ostoehdotuksen tarkoitukset tekevät ehdotuksien vaatimusten toteuttamisesta joustavampaa. Ehdotuksen luodessasi voit liittää yksi kahdesta tarkoituksesta siihen: kulutus tai täydennys. Riippuen ehdotuksen tarkoituksesta ja siitä, miten organisaatio on määritetty, ehdotuksen tarve voidaan täyttää ostotilauksella, siirtotilauksella, tuotantotilauksella tai kanbanilla.  
 
 Hankintakäytännöissä voit hallita ostoehdotusten tarkoituksia, jotka ovat käytettävissä, kun ehdotus luodaan organisaatioosi.
 
-### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Ehdotukset, joiden tarkoituksena on kulutus
+### Ehdotukset, joiden tarkoituksena on kulutus
+<a id="requisitions-that-have-a-purpose-of-consumption" class="xliff"></a>
 
-Ehdotus, jonka tarkoitus on kulutus esittää tarpeen nimikkeille tai palveluille, joita organisaatiosi käyttää sisäisesti. Tämän tyyppisellä ehdotuksella luotu kysyntä täytetään aina ostotilauksella. Jos Microsoft Dynamics 365 for Operations on määritetty luomaan ostotilaukset automaattisesti, tilaukset luodaan, kun ostoehdotus on hyväksytty.
+Ehdotus, jonka tarkoitus on kulutus esittää tarpeen nimikkeille tai palveluille, joita organisaatiosi käyttää sisäisesti. Tämän tyyppisellä ehdotuksella luotu kysyntä täytetään aina ostotilauksella. Jos Microsoft Dynamics 365 for Finance and Operations on määritetty luomaan ostotilaukset automaattisesti, tilaukset luodaan, kun ostoehdotus on hyväksytty.
 
-### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Ehdotukset, joiden tarkoitus täydennys
+### Ehdotukset, joiden tarkoitus täydennys
+<a id="requisitions-that-have-a-purpose-of-replenishment" class="xliff"></a>
 
 Ehdotus, jonka tarkoitus on täydennys, edustaa varaston täydentämistä tarvittaessa. Voit esimerkiksi luoda tilauksen tuotteiden täydentämiseksi, jotta ne voidaan myydä määrätyssä vähittäismyyntipaikassa tiettyyn aikaan. Tämäntyyppisen ehdotuksen aikaansaama kysyntä voidaan täyttää ostotilauksella, siirtotilauksella, tuotantotilauksella tai kanbanilla.  
 
@@ -153,14 +162,16 @@ Kun ehdotuksen tarkoitus on täydennys, rahasumman sijaan kysyntä ilmaistaan m�
 
 Käyttääksesi ostoehdotuksia, joiden tarkoitus on täydennys, pääajoitus on määritettävä sisältämään ehdotustarpeen pääajoituksessa. Tämäntyyppisiin tarkoituksiin luotujen ehdotuksien toteutuskeinot määräytyvät automaattisesti tarjonnan säännöksien kautta, jotka on perustettu organisaatiosi artikkeleille ja suunniteltu käyttämällä pääaikatauluja.
 
-## <a name="purchase-requisitions-and-requests-for-quotation"></a>Ostoehdotukset ja tarjouspyynnöt
+## Ostoehdotukset ja tarjouspyynnöt
+<a id="purchase-requisitions-and-requests-for-quotation" class="xliff"></a>
 Joissain tapauksissa on aloitettava tarjouspyyntöprosessi, jonka kautta tunnistat toimittajan ja ostoehdotuksessa pyydettyjen tuotteiden hinnan. Tarjouspyynnön voi luoda ostoehdotuksen ollessa tarkistettavana. Kun hyväksyt tarjouksen, tiedot toimittajasta, hinnasta ja niin edelleen siirretään ehdotukseen.  
 
 Voit laittaa ostoehdotuksen pitoon valitsemalla **Pidossa**-valintaruudun **Ostoehdotuksen tiedot** -sivulla. Ostoehdotuksen käsittely voi jatkua vasta, kun poistat eston poistamalla tämän valintaruudun.  
 
 **Huomautus:** eProcurement-järjestelmässä ostoehdotuksesi tarjouspyyntö voi antaa toimittajien lisätä vaihtoehtoisia rivejä. Tässä tapauksessa hyväksytyt vaihtoehdot näkyvät ostoehdotuksessa.
 
-## <a name="demand-consolidation"></a>Kysynnän konsolidointi
+## Kysynnän konsolidointi
+<a id="demand-consolidation" class="xliff"></a>
 Yhdistämällä useita ostoehdotusrivejä useista ostoehdotuksista voit lisätä neuvotteluvoimaa toimittajia kohtaan ja saavuttaa paremman hinnoittelun, pienemmät lähetys- ja käsittelykustannukset ja vähentää yleiskustannuksia.  
 
 Ostoehdotusrivit ovat käytettävissä tarpeiden yhdistämiseen vain, jos seuraavat ehdot täyttyvät:
@@ -178,7 +189,8 @@ Kun olet lisännyt hankintarivejä konsolidointiehdotukseen ja tehnyt tarvitsema
 
 Voidaksesi luoda ostotilauksen ostoehdotusriveille, joille ei ole valittavissa kysynnän konsolidointia tai joita ei ole valittu konsolidointiehdotukseen on käsiteltävä manuaalisesti.
 
-### <a name="consolidating-purchase-requisition-lines"></a>Ostoehdotuksen rivien konsolidointi
+### Ostoehdotuksen rivien konsolidointi
+<a id="consolidating-purchase-requisition-lines" class="xliff"></a>
 
 Kysynnän konsolidoinnin prosessi alkaa kohdasta, jossa ostoehdotus hyväksytään työnkulussa, jos budjetin hallinta on määritetty organisaatiolle ja budjettivaraukset sekä alustavat varaukset on tallennettu. Seuraavassa kaaviossa on kuvattu prosessin kulku kysynnän konsolidoinnille.  
 
@@ -193,7 +205,8 @@ Noudata seuraavia vaiheita, jos haluat konsolidoida ostoehdotusrivit.
 5.  Luo ostotilaukset konsolidoiduille ehdotusriveille tai konsolidointiehdotuksen ostoehdotusriveille.
 
 
-<a name="see-also"></a>Lisätietoja
+Lisätietoja
+<a id="see-also" class="xliff"></a>
 --------
 
 [Kulutusehdotuksen luominen (tehtävän ohjaus)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)

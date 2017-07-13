@@ -3,7 +3,7 @@ title: "Arvonlisäveron yleiskuvaus"
 description: "Tämä artikkeli sisältää arvonlisäverojärjestelmän yleiskatsauksen. Artikkelissa esitellään arvonlisäveroasetusten elementit ja se, miten ne toimivat yhdessä."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
@@ -19,22 +19,26 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdb3188f533cf0cdb1e70c63891408e45d02418d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="sales-tax-overview"></a>Arvonlisäveron yleiskuvaus
+# Arvonlisäveron yleiskuvaus
+<a id="sales-tax-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Tämä artikkeli sisältää arvonlisäverojärjestelmän yleiskatsauksen. Artikkelissa esitellään arvonlisäveroasetusten elementit ja se, miten ne toimivat yhdessä.
 
-<a name="overview"></a>Yleiskuvaus
+Yleiskuvaus
+<a id="overview" class="xliff"></a>
 --------
 
 Arvonlisäveroympäristö tukee monenlaisia välillisiä veroja, kuten arvonlisäveroja (ALV), GST-veroa, yksikköperusteisia maksuja ja ennakonpidätystä. Nämä verot lasketaan ja dokumentoidaan osto- ja myyntitapahtumien aikana. Ne on myös ilmoitettava ja maksettava veroviranomaisille säännöllisesti. 
@@ -67,17 +71,20 @@ Seuraavassa taulussa käsitellään yksiköitä ja veroasetusten järjestystä.
 | Määritä nimikkeiden arvonlisäveroryhmät.                                   | Pakollinen. Nimikkeen arvonlisäveroryhmät sisältävät luettelon koodeista, joita käytetään tapahtuman resurssille (kuten tuote tai palvelu). Tiettyä tapahtumaa koskeva arvonlisävero määräytyy sekä tapahtuman arvonlisäveroryhmään että nimikkeen arvonlisäveroryhmään sisältyvien arvonlisäverokoodien mukaan. |
 | Määritä arvolisäveron parametrit sovelluksen parametrisivulla. | Pakollinen. Parametrit on määritettävä eri alueilla, kuten kirjanpidossa, myyntireskontrassa ja ostoreskontrassa, jotta välilliset verot voidaan laskea oikein. Vaikka useimmilla näistä parametreista on oletusarvot, ne on muokattava kunkin yrityksen tarpeisiin sopiviksi.                                          |
 
-## <a name="sales-tax-on-transactions"></a>Tapahtumien arvonlisävero
+## Tapahtumien arvonlisävero
+<a id="sales-tax-on-transactions" class="xliff"></a>
 Jokaiselle tapahtumalle (kuten myynti- ja ostoasiakirjan riveille ja kirjauskansioille) on annettava arvonlisäveroryhmä tai nimikkeen arvonlisäveroryhmä, jotta arvolisävero voidaan laskea. Oletusryhmät on määritetty päätiedoissa (niitä ovat esimerkiksi asiakas, toimittaja, nimike ja hankintaluokka), mutta voit tarvittaessa muuttaa tapahtuman ryhmiä manuaalisesti. Kummassakin ryhmässä on arvonlisäverokoodiluettelo ja kahden arvolisäverokoodiluettelon leikkauspiste määrittää tapahtumassa käytettävien arvolisäverokoodien luettelon. 
 
 Voit hakea lasketun arvonlisäveron jokaisessa tapahtumassa avaamalla **Arvonlisäverotapahtuma**-sivun. Voit etsiä arvolisäveron joko asiakirjan riville tai koko asiakirjalle. Voit oikaista tiettyjen asiakirjojen (kuten toimittajan laskun ja kirjauskansioiden) lasketun arvonlisäveron, jos alkuperäisessä asiakirjassa on poikkeavia summia.
 
-## <a name="sales-tax-settlement-and-reporting"></a>Arvonlisäveron tilitys ja ilmoittaminen
-Arvonlisävero on ilmoitettava ja maksettava veroviranomaisille säännöllisin väliajoin (esimerkiksi kuukausittain tai neljännesvuosittain). Microsoft Dynamics 365 for Operationsissa on toimintoja, joilla voit tilittää kauden verotilit ja vastakirjat saldot verotilitystilille kirjanpidon kirjausryhmien määritysten mukaisesti. Voit käyttää tätä toimintoa **Tilitä ja kirjaa arvonlisävero** -sivulla. Arvonlisäveron tilityskausi, jonka ajalta arvonlisäverot on tilitettävä, on määritettävä. 
+## Arvonlisäveron tilitys ja ilmoittaminen
+<a id="sales-tax-settlement-and-reporting" class="xliff"></a>
+Arvonlisävero on ilmoitettava ja maksettava veroviranomaisille säännöllisin väliajoin (esimerkiksi kuukausittain tai neljännesvuosittain). Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa on toimintoja, joilla voit tilittää kauden verotilit ja vastakirjat saldot verotilitystilille kirjanpidon kirjausryhmien määritysten mukaisesti. Voit käyttää tätä toimintoa **Tilitä ja kirjaa arvonlisävero** -sivulla. Arvonlisäveron tilityskausi, jonka ajalta arvonlisäverot on tilitettävä, on määritettävä. 
 
 Kun arvonlisävero on maksettu, arvolisäveron tilitystilin saldo on täsmäytettävä pankkitiliin. Jos arvonlisäveron tilityskaudessa määritetty arvonlisäveroviranomainen liittyy toimittajatiliin, arvolisäveron saldo kirjataan avoimena toimittajan laskuja, joka voidaan sisällyttää säännölliseen maksuehdotukseen.
 
-## <a name="conditional-sales-tax"></a>Suoritusperusteinen vero
+## Suoritusperusteinen vero
+<a id="conditional-sales-tax" class="xliff"></a>
 Suoritusperusteinen vero ilmaisee, että arvonlisävero on maksettava suhteessa laskulla maksettuun summaan. Vastaavasti normaali ALV lasketaan laskutuksen yhteydessä. Suoritusperusteinen vero on maksettava veroviranomaiselle maksun kirjaamisen yhteydessä, ei laskua kirjattaessa. Kun lasku on kirjattu, tapahtuma on raportoitava arvonlisäverokirjan raporttiin. Tapahtuma on kuitenkin jätettävä pois arvonlisäveron maksuraportista. 
 
 Jos valitset Suoritusperusteinen vero -valintaruudun Kirjanpidon parametrit -lomakkeessa, arvonlisäveroa ei voida vähentää ennen kuin lasku on maksettu. Tämä on juridinen edellytys muutamissa maissa/alueilla.
@@ -85,7 +92,8 @@ Jos valitset Suoritusperusteinen vero -valintaruudun Kirjanpidon parametrit -lom
 > [!NOTE]
 > Kun valitset Suoritusperusteinen vero -valintaruudun, toiminnon käyttäminen edellyttää arvonlisäverokoodien ja -ryhmien määrittämistä ja kirjanpidon kirjausryhmien luomista. |
 
-###  <a name="example"></a>Esimerkki
+###  Esimerkki
+<a id="example" class="xliff"></a>
 
 Arvonlisäverot tilitetään kuukausittain. Kesäkuun 15. päivä luodaan asiakaslasku 10 000 + ALV.
 -   Arvonlisävero on 25 prosenttia eli 2 500 euroa.

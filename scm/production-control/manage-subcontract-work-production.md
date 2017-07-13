@@ -1,16 +1,16 @@
 ---
 title: "Tuotannon alihankintatyön hallinta"
-description: "Tässä ohjeaiheessa kerrotaan, miten alihankintatoimintoja hallitaan Microsoft Dynamics 365 for Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin."
+description: "Tässä ohjeaiheessa kerrotaan, miten alihankintatoimintoja hallitaan Microsoft Dynamics 365 for Finance and Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -19,20 +19,21 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 582807f9f416d3e6e73226dfd2e22af2d6331acd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0e1368d3f637143fd47c3772c811257e8472cc74
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="manage-subcontracting-work-in-production"></a>Tuotannon alihankintatyön hallinta
+# Tuotannon alihankintatyön hallinta
+<a id="manage-subcontracting-work-in-production" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä ohjeaiheessa kerrotaan, miten alihankintatoimintoja hallitaan Microsoft Dynamics 365 for Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
+Tässä ohjeaiheessa kerrotaan, miten alihankintatoimintoja hallitaan Microsoft Dynamics 365 for Finance and Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
 
 [Tuotantoprosessin](production-process-overview.md) töitä voivat tehdä resurssit, joita omistaa tai hallinnoi toimittajat. Yleensä toimittajan resursseja käytetään tasaamaan jaksoittaista suurempaa kysyntää, joka ylittää yhtiön omien resurssien kapasiteetin. Toimittaja voi myös pystyä tarjoamaan erityisiä [resurssin ominaisuuksia](resource-capabilities.md)tai resursseja alempaan hintaan.  
 
@@ -42,7 +43,7 @@ Alihankintatoimintoja tai -toimenpiteitä käytettäessä ne vaikuttavat kaikkii
 
 Sisäisten resurssien kiinteä kustannushinta kohdistetaan yleensä ajanjaksolle. Sitä vastoin alihankintaresurssien kustannukset perustuvat liittyvän palvelun ostohintaan. Palvelu on määritetty toisena tuotteena ja sitä käytetään suorittamaan tietyn alihankintaoperaation hankinta- ja ostoprosesseihin.  
 
-Tällä hetkellä on ei ole eksplisiittistä puolivalmisteiden käsitettä Microsoft Dynamics 365 for Operationsissa. Tuotantotilaukselle, joka edellyttää useita toimintoja muuntaakseen raaka-aineet valmiiksi tuotteeksi, valmis tuote kirjataan takaisin varastoon vain viimeisessä operaatiossa. Puolivalmiita tuotteita, jotka aiemmat toimet tuottavat, käsitellään keskeneräisenä työnä (KET), mutta niitä ei kirjata tai seurata varastossa. Vaikka voit jakaa reitit ja tuoterakenteet useisiin pienempiin yksiköihin, tämä lähestymistapa kasvattaa hallittavien tuotteiden, tuoterakenteiden ja reittien määrää.  
+Tällä hetkellä Microsoft Dynamics 365 for Finance and Operationsissa ei ole eksplisiittistä puolivalmisteiden käsitettä. Tuotantotilaukselle, joka edellyttää useita toimintoja muuntaakseen raaka-aineet valmiiksi tuotteeksi, valmis tuote kirjataan takaisin varastoon vain viimeisessä operaatiossa. Puolivalmiita tuotteita, jotka aiemmat toimet tuottavat, käsitellään keskeneräisenä työnä (KET), mutta niitä ei kirjata tai seurata varastossa. Vaikka voit jakaa reitit ja tuoterakenteet useisiin pienempiin yksiköihin, tämä lähestymistapa kasvattaa hallittavien tuotteiden, tuoterakenteiden ja reittien määrää.  
 
 Tuotannon alihankintatyön mallintamiseen on kaksi tapaa. Nämä menetelmät eroavat siinä, miten alihankinnan prosessi voidaan mallintaa, miten puolivalmisteet esitetään prosessissa ja miten kustannusseuranta on hallittu.
 
@@ -58,7 +59,8 @@ Tuotannon alihankintatyön mallintamiseen on kaksi tapaa. Nämä menetelmät ero
     -   Tämän menetelmä sallii koostetun ja asynkronisen hankinnan. (Materiaalivirrat ovat riippumattomia hankintaprosessista.)
     -   Kustannusseuranta varaa alihankintatyöt omassa kustannuserittelyn lohkossaan.
 
-## <a name="subcontracting-of-route-operations"></a>Reititystehtävien alihankinta
+## Reititystehtävien alihankinta
+<a id="subcontracting-of-route-operations" class="xliff"></a>
 Jotta voisit käyttää reititystehtävien alihankintaa tuotanto- tai erätilauksille, palvelutuote, jota käytetään palvelun hankintaan, on määritettävä **Palvelu** -tyypin tuotteeksi. Lisäksi sillä on oltava nimikemalliryhmä, jossa on **Varastotuote**-vaihtoehto kohdassa **Varastokäytäntö** arvolla **Kyllä**. Tämä vaihtoehto määrittää, lasketaanko tuote varastoksi tuotteen vastaanotossa (**Varastotuote** = **Kyllä**), vai merkitäänkö tuote voitto-ja tappiotilille (**Varastotuote** = **Ei**). Vaikka tämä saattaa näyttää olevan ristiriitaista, se perustuu siihen, että vain ne tuotteet, joita tämä käytäntö koskee, luovat varastotapahtumia, joita voidaan käyttää kustannusseurannassa suunniteltujen kustannusten laskentaan ja selvittämään todelliset kustannukset, kun tuotantotilaus on päättynyt.  
 
 Jotta tämä otettaisiin huomioon suunnittelun ja kustannusten laskennassa, palvelu on lisättävä tuoterakenteeseen. Tuoterakenteen rivin täytyy olla **Toimittaja**-tyyppiä, ja se on kohdistettava reittitehtävään, johon palvelu on kohdistettu. Tällä reitityksen työvaiheella on oltava kustannusresurssi ja resurssivaatimus, jotka viittaavat **Toimittaja**-tyypin resurssiin, joka yhdistää toiminnan ja liittyvän palvelun vastaavan toimittajatiliin.  
@@ -67,22 +69,26 @@ Kun tätä määritystä käytetään, luodaan ostotilaus liittyvälle palvelutu
 
 Tuotantotilauksella voi olla monta toimintoa, ja kukin toiminto voidaan kohdistaa eri toimittajalle. Tämän vuoksi päästä-päähän-tuotantotilaus voi aiheuttaa useita ostotilauksia.
 
-## <a name="subcontracting-of-production-flow-activities"></a>Tuotantovirran tehtävien alihankinta
+## Tuotantovirran tehtävien alihankinta
+<a id="subcontracting-of-production-flow-activities" class="xliff"></a>
 [Lean-valmistuksen](lean-manufacturing-overview.md) lähestymistavassa alihankintatyö on mallinnettu palveluna, joka liittyy [tuotantovirran](http://ax.help.dynamics.com/en/wiki/create-a-production-flow-version/) tehtävään (tehtäväoppaan aihe). Siksi tämäntyyppinen alihankinta on niin sanottu [toimintoperusteisen alihankinta.](activity-based-subcontracting.md) Kustannusryhmän tyyppi, jonka nimi on **Suora ulkoistaminen** on otettu käyttöön, ja alihankinnan palvelut eivät enää kuulu valmiiden tuotteiden tuoterakenteeseen (BOM). Lean-valmistusta käytettäessä kaikki tehtävät määritellään kanbaneina, jotka voidaan liittää yhteen tai useampaan tuotantovirran tehtävään. Tähän mennessä selitys kuulostaa aivan samalta kuin tuotantotilauksissa. Mutta siinä missä tuotantotilausten on aina päätyttävä valmiiseen tuotteeseen, voit luoda kanbaneita tukemaan puolivalmiita tuotteita. Sinun ei tarvitse ottaa käyttöön uutta tuotetta ja tuoterakenteen tasoa.  
 
 Koska kanban-säännöt voivat olla erittäin dynaamisia, voit mallintaa saman tuotteen toimittamisen variantteja tuotantovirrassa. Kun käytät lean-alihankintaa, materiaalivirta ja taloushallinnon työnkulku erotetaan tiukasti toisistaan. Kaikki materiaalivirta esitetään kanban-toimintoina. Palvelutuotteiden ja näiden palvelujen vastaanottokirjauksien ostotilaukset voidaan automatisoida tuotantovirran kanban-töiden tilan perusteella. Kanban-työt voidaan aloittaa ja suorittaa jopa ennen ostotilausten luomista. Alihankinta-asiakirjat (ostotilaus ja palvelun oston vastaanotto) voidaan koostaa ajanjakson ja palvelun mukaan. Tämän vuoksi ostoasiakirjojen ja niiden rivien määrä voidaan säilyttää pienenä jopa hyvin toistuvissa toiminnoissa, jossa toimittajat tarjoavat alihankintapalveluja yhden vaiheen työnkulun avulla.
 
-### <a name="modeling-subcontracting-in-a-production-flow"></a>Alihankinnan mallinnus tuotantovirrassa
+### Alihankinnan mallinnus tuotantovirrassa
+<a id="modeling-subcontracting-in-a-production-flow" class="xliff"></a>
 
 [Lean-tuotantovirrassa](lean-manufacturing-modeling-lean-organization.md) prosessintoiminto voidaan määrittää alihankintana, kun se on varattu työsolulle (resurssiryhmälle), jolla on yhden toimittajan resurssi. Kun työsolu on alihankintana, liittyvät prosessin toiminnot on linkitettävä ostosopimuksen rivin, joka sisältää palvelunimikkeen ja palvelun hinnan. Tehtävän palvelusopimus määrittää myös laskennan suhteen tuotteen kanban-työn tuotteen määrän ja tästä johtuvan palvelun määrän välillä. Voit valita, lasketaanko palvelun määrä töiden määrän, töille raportoidun hyvän tuotteen määrän vai tuotteen kokonaismäärän mukaan (tämä kokonaismäärä sisältää hukkatavaratuotteet).  
 
 Siirtotoiminnot voidaan määrittää myös alihankintana. Tämä määritelmä ilmenee implisiittisesti valitessasi vastuullisen osapuolen lähettämiselle siirtotoiminnossa. Kun valitset **Huolitsija** tai **Vastaanottaja** ja jos vastaava lähde- tai kohdevarasto on toimittajan hallitsema varasto, tehtävä katsotaan alihankinnaksi. Kun valitset **Rahdinkuljettaja**, tehtävä on aina alihankintana. Alihankinnan prosessin toimintojen tavoin alihankintana suoritettava siirtotehtävä on yhdistettävä palvelusopimukseen ennen kuin tuotantovirta voidaan aktivoida.
 
-### <a name="backflush-costing"></a>Jälkikustannuslaskenta
+### Jälkikustannuslaskenta
+<a id="backflush-costing" class="xliff"></a>
 
 Lean-valmistuksen kustannuslaskennan ratkaisuun on täysin integroitu alihankintatöiden kustannuslaskenta (jälkikustannuslaskenta). Kun palvelun ostotilauksen vastaanotto kirjataan tai kun laskutus suoritetaan, palvelun kustannukset kohdistetaan tuotantovirtaan. Jälkikustannuslaskennalle alihankintapalvelujen varianssi lasketaan kuittaamalla vastaanotettujen tuotteiden vakiokustannuksen alihankintalohko toteutuneita vastaanotettuja ja laskutettuja palvelun määriä vasten.
 
-## <a name="material-supply-for-subcontracted-operations"></a>Alihankintatoimintojen materiaalin toimittaminen
+## Alihankintatoimintojen materiaalin toimittaminen
+<a id="material-supply-for-subcontracted-operations" class="xliff"></a>
 Puolivalmisteet ja muu liittyvä materiaali on siirrettävä paikkaan, jossa työ suoritetaan fyysisesti. Käytettäessä alihankintatoimintoja ja -tehtäviä, tämä siirto liittyy usein lisäkuljetukseen toimittajan toimipaikkaan. Varaamalla alihankinnan toimintoon tuoterakenteessa materiaalia, ilmoitat, että materiaali täytyy valmistella kohdistetun resurssin resurssiryhmän syötesijainnissa. Pääsuunnittelu tai lean-täydennys valmistelee materiaalin sitten kyseiseen sijaintiin.  
 
 Toimittajan toimipaikassa sijaitsevan varaston mallintamisen paras käytäntö on määrittää toimittajan hallinnoima fyysinen varasto. Voit helposti määrittää toimittajan hallitsema varaston luomalla uuden varaston ja määrittämällä toimittajatilin. Kirjataksesi, että materiaali on siirrettävä toimittajalle ennen kuin toiminto voidaan suorittaa, sinun tulee varata toimittajan hallitsema varasto resurssia hallitsevan resurssiryhmän syötevarastoon.  

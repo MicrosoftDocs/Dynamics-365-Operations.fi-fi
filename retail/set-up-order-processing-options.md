@@ -1,39 +1,42 @@
 ---
 title: "Tilaustenkäsittelyprosessin määrittäminen"
-description: "Tämän ohjeaihe antaa tietoja siitä, kuinka puhelukeskusten tilauksia käsitellään Dynamics 365 for Operations - Retailin avulla."
+description: "Tämän ohjeaihe antaa tietoja siitä, kuinka puhelukeskusten tilauksia käsitellään Dynamics 365 for Retailin avulla."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 52b56274c8b72c67bc0a50f23114cebc510f1667
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: afdea84b7016fcc3214dc94f2d393a5f3d256370
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-order-processing-options"></a>Tilaustenkäsittelyprosessin määrittäminen
+# Tilaustenkäsittelyasetusten määrittäminen
+<a id="set-up-order-processing-options" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Tämän ohjeaihe antaa tietoja siitä, kuinka puhelukeskusten tilauksia käsitellään Dynamics 365 for Operations - Retailin avulla. 
+Tämän ohjeaihe antaa tietoja siitä, kuinka puhelukeskusten tilauksia käsitellään Dynamics 365 for Retailin avulla. 
 
-Dynamics 365 for Operationsin Vähittäismyynti ja kauppa -osio tukee useita vähittäismyynnin kanavia, kuten verkkokauppoja, perinteisiä liikkeitä ja puhelinmyyntiä. Puhelinpalvelukeskuksissa työntekijät ottavat vastaan asiakastilauksia puhelimitse ja luovat myyntitilauksia. Tässä ohjeaiheessa kuvataan, kuinka puhelinkeskus luodaan ja miten puhelinkeskuksen asetukset määritetään. Jokaisella puhelinkeskuksella voi olla omat käyttäjät, maksutavat, hintaryhmät, taloushallinnon dimensiot ja toimitustavat. Voit määrittää nämä asetukset puhelinkeskusta luotaessa. **Tärkeää:** Ennen kuin puhelukeskuksen työnkulkuja voidaan käyttää, kun nykyinen Dynamics AX:n käyttäjä luo myyntitilauksia, käyttäjän on oltava määritetty puhelukeskuksen käyttäjäksi. Voit ottaa käyttöön tai poistaa käytöstä vain puhelinpalvelukeskuksille ominaiset ryhmät tai toiminnot **Puhelukeskus**-sivulla. Seuraavat ominaisuusryhmät voidaan ottaa käyttöön:
+Retail tukee useita vähittäismyynnin kanavia, kuten verkkokauppoja, verkon kauppapaikkoja, perinteisiä liikkeitä ja puhelinmyyntiä. Puhelinpalvelukeskuksissa työntekijät ottavat vastaan asiakastilauksia puhelimitse ja luovat myyntitilauksia. Tässä ohjeaiheessa kuvataan, kuinka puhelinkeskus luodaan ja miten puhelinkeskuksen asetukset määritetään. Jokaisella puhelinkeskuksella voi olla omat käyttäjät, maksutavat, hintaryhmät, taloushallinnon dimensiot ja toimitustavat. Voit määrittää nämä asetukset puhelinkeskusta luotaessa. **Tärkeää:** Ennen kuin puhelukeskuksen työnkulkuja voidaan käyttää, kun käyttäjä luo myyntitilauksia, käyttäjän on oltava määritetty puhelukeskuksen käyttäjäksi. Voit ottaa käyttöön tai poistaa käytöstä vain puhelinpalvelukeskuksille ominaiset ryhmät tai toiminnot **Puhelukeskus**-sivulla. Seuraavat ominaisuusryhmät voidaan ottaa käyttöön:
 
 -   **Tilauksen viimeistely** – Tämä ryhmä sisältää ominaisuuksia, jotka liittyvät maksuihin ja tilausten viimeistelyyn **Myyntitilaus**-sivulla.
 -   **Ohjattu myynti** – Tämä ryhmä sisältää ominaisuuksia, jotka liittyvät lähdekoodeihin, komentosarjoihin ja luettelopyyntöihin.

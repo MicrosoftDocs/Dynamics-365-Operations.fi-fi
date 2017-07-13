@@ -1,47 +1,52 @@
 ---
 title: Konfiguroi kulujen hallinta
-description: "Tässä artikkelissa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin Microsoft Dynamics AX:n matkalaskut määritetään. Matkalaskujen alueelle voit tallentaa esimerkiksi maksutapojen, matkustusehdotusten, kuluraporttien ja -käytäntöjen tiedot."
-author: kfend
+description: "Tässä artikkelissa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin 365 for Finance and Operations, Enterprise Editionin kulujenhallinta määritetään. Matkalaskujen alueelle voit tallentaa esimerkiksi maksutapojen, matkustusehdotusten, kuluraporttien ja -käytäntöjen tiedot."
+author: KimANelson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: GlobalCategory, ProjCategory, TrvLocations, TrvParameters, TrvPaymethod, TrvPerDiems
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23001
 ms.assetid: aa3fd14d-7e94-4603-985f-ca26d6f860ea
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 62bef78c143f7ad83e78982dbecb1c9e4542187d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: edd3d8ca760c1453ae7cf8d5ff2fdfdedbb022c4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-expense-management"></a>Konfiguroi kulujen hallinta
+# Konfiguroi kulujen hallinta
+<a id="configure-expense-management" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin Microsoft Dynamics AX:n matkalaskut määritetään. Matkalaskujen alueelle voit tallentaa esimerkiksi maksutapojen, matkustusehdotusten, kuluraporttien ja -käytäntöjen tiedot. 
+Tässä artikkelissa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin 365 for Finance and Operations, Enterprise Editionin kulujenhallinta määritetään. Matkalaskujen alueelle voit tallentaa esimerkiksi maksutapojen, matkustusehdotusten, kuluraporttien ja -käytäntöjen tiedot. 
 
 Koska monet päätökset, jotka teet kulujen hallinnan määrityksiä suunniteltaessa, perustuvat organisaatiohierarkiaan ja taloushallinnan rakenteeseen, sinun on tutustuttava kyseisten alueiden ohjeistukseen.
 
-## <a name="intercompany-expenses"></a>Konsernin sisäiset kulut
+## Konsernin sisäiset kulut
+<a id="intercompany-expenses" class="xliff"></a>
 Kun otat konsernin sisäiset kulut käyttöön, annat yrityksille ja työntekijöille oikeuden luoda kuluja toisen organisaation yrityksen puolesta tai kerätä siltä maksun. Esimerkiksi yrityksen A työntekijä suorittaa yrityksen B projektin. Jos konsernin sisäiset kulut on otettu käyttöön, työntekijä voi sitten lähettää aikaraportin yritykselle B, joka maksaa hänelle. Jos organisaatiossa ei ole useita yrityksiä, konsernin sisäisiä kuluja ei tarvitse ottaa käyttöön. **Päätös:** haluatko ottaa käyttöön konsernin sisäiset kulut?
 
-## <a name="financial-management"></a>Taloushallinto
+## Taloushallinto
+<a id="financial-management" class="xliff"></a>
 Kulujen hallinta on integroitu tiukasti organisaation taloushallintoon. Monet kulujen hallinnan määritykset perustuvat päätöksiin, joita olet tehnyt organisaation raha-asioista. Seuraavissa osissa käsitellään suunnittelua edellyttäviä alueita ja päätöksiä, jotka perustuvat organisaation taloudellisiin päätöksiin ja johtoryhmän opastukseen.
 
-### <a name="per-diems"></a>Päivärahat
+### Päivärahat
+<a id="per-diems" class="xliff"></a>
 
 Organisaation myöntämät työntekijöiden päivärahat on määritettävä. Koska päivärahoja käytetään yleensä kulujen, kuten aterioiden, majoituksen ja muiden satunnaisten menojen korvaamiseen, voit luoda sääntöjä organisaation tarjoamille päivärahoille. Päivärahan suuruus voi perustua vuodenaikaan, matkan kohteeseen tai molempiin. Kun määritä päivärahasäännön, voit määrittää, mikä prosenttiosuus päivärahasta pidätetään, jos työntekijällä on käytettävissään ilmaisia aterioita tai palveluita. Voit myös määrittää päivärahatasot, joilla määritetään vähimmäis- ja enimmäismäärä tunteja, joilla tietyn suuruista päivärahaa voidaan käyttää työntekijän matkalla. **Päätökset:**
 
@@ -62,7 +67,8 @@ Organisaation myöntämät työntekijöiden päivärahat on määritettävä. Ko
         -   hotelli
         -   muut kulut
 
-### <a name="expense-management-journals-and-accounts"></a>Kulujen hallinnan kirjauskansiot ja tilit
+### Kulujen hallinnan kirjauskansiot ja tilit
+<a id="expense-management-journals-and-accounts" class="xliff"></a>
 
 Kulujen hallinta edellyttää useiden kirjauskansioiden ja tilien käyttöä. Sinun on esimerkiksi päätettävä, käytetäänkö samaa tiliä käteisennakoille ja luottokorttien riitautuksille. **Päätökset:**
 
@@ -70,7 +76,8 @@ Kulujen hallinta edellyttää useiden kirjauskansioiden ja tilien käyttöä. Si
 -   Mitä tiliä käytetään käteisennakoille?
 -   Kirjataanko käteisennakot välittömästi?
 
-### <a name="payment-methods"></a>Maksutavat
+### Maksutavat
+<a id="payment-methods" class="xliff"></a>
 
 Jos työtekijöillä on mahdollisuus aiheuttaa kuluja yrityksen puolesta, sinun on määritettävä maksutavat, joita työntekijät saavat käyttää. Voit esimerkiksi sallia työntekijöille käteisen ja yrityksen luottokortin käytön. Voit myös sallia työntekijöiden omien luottokorttien käytön, joka hyvitetään sitten työntekijöille. Jokaisen sallitun maksutavan kohdalla on tehtävä seuraavat päätökset. **Päätökset:**
 
@@ -80,7 +87,8 @@ Jos työtekijöillä on mahdollisuus aiheuttaa kuluja yrityksen puolesta, sinun 
 -   Jos vastatili on, mikä tili se on?
 -   Jos maksutapa on luottokortti, pitäisikö maksutapaa käyttää vain tuotujen tapahtumien yhteydessä?
 
-### <a name="expense-categories-and-shared-categories"></a>Kululuokat ja jaetut luokat
+### Kululuokat ja jaetut luokat
+<a id="expense-categories-and-shared-categories" class="xliff"></a>
 
 Kun työntekijät luovat kuluraportin, jokainen heidän tallentamansa kulu on liitettävä kululuokkaan. Kululuokat johdetaan jaetuista luokista, jotka jaetaan kaikissa organisaation yrityksissä. Nämä luokat voidaan jakaa myös projektin hallinnassa ja kirjanpidossa sen mukaan, miten organisaatio on määritetty. Määritä organisaation määrityksen ja toteutusryhmän ohjeistuksen perusteella, käytetäänkö kulujen hallinnassa käytettyjä luokkia vain kuluissa vai jaetaanko ne projektin ja kulujen kesken. Huomaa, että nämä luokat voidaan jakaa projektin ja kuljen tai projektin tai tuotannon kesken mutta ei kulujen ja tuotannon kesken. Jokaisen kululuokan kohdalla on tehtävä seuraavat päätökset. **Päätökset:**
 
@@ -118,7 +126,8 @@ Kun työntekijät luovat kuluraportin, jokainen heidän tallentamansa kulu on li
 
  
 
-### <a name="taxes"></a>Verot
+### Verot
+<a id="taxes" class="xliff"></a>
 
 Kuluihin liittyvissä veroissa on määritettävä, mitä sisällytetään tai otetaan käyttöön kuluraporteissa. **Päätökset:**
 
@@ -127,7 +136,8 @@ Kuluihin liittyvissä veroissa on määritettävä, mitä sisällytetään tai o
 
 Huomaa, että jos olet päättänyt käyttää kirjanpidon suunnittelun aikana Yhdysvaltain arvonlisäverosääntöjä, mikä tehdään valitsemalla **Käytä arvonlisäverotuksen sääntöjä** -kentän arvoksi Kyllä, et voi ottaa käyttöön veronpalautuksia kuluissa.
 
-## <a name="policies"></a>Käytännöt
+## Käytännöt
+<a id="policies" class="xliff"></a>
 Voit luoda kuluraporttikäytäntöjä, joilla organisaatio voi säästää aikaa ja rahaa, kun työntekijät aiheuttavat kuluja yrityksen nimissä. Käytännöt varmistavat, että työntekijät noudattavat budjettia, antavat kaikki tarvittavat tiedot ja kuluttavat rahaa vain tarvittaessa. Seuraavat päätökset on tehtävä jokaisen kuluraporttikäytännön ja jokaisen luomasi kuluraportin hyväksyntäkäytännön kohdalla. **Päätökset:**
 
 -   Mikä on käytännön nimi?

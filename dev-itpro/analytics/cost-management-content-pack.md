@@ -3,13 +3,13 @@ title: "Kustannusten hallinnan Power BI -sisältö"
 description: "Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
@@ -18,26 +18,29 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a9449e42224d5dfb1bc1f0368a041c45afc334a2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="cost-management-power-bi-content"></a>Kustannusten hallinnan Power BI -sisältö
+# Kustannusten hallinnan Power BI -sisältö
+<a id="cost-management-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
-# <a name="overview"></a>Yleiskuvaus
+# Yleiskuvaus
+<a id="overview" class="xliff"></a>
 
 **Kustannushallinnan** Microsoft Power BI -sisältö on tarkoitettu varaston kirjanpitäjille tai organisaation henkilöille, jotka ovat vastuussa varastosta. **Kustannustenhallinnan** Power BI -sisältö tarjoaa johdolle näkymän varastoon ja keskeneräisten töiden (KET) varastoon ja miten kustannukset kulkevat niiden läpi luokittain pitkällä aikavälillä. Näitä tietoja voidaan käyttää myös raportin yksityiskohtaisena täydennyksenä.
 
-## <a name="key-measures"></a>Keskeiset mitat
+## Keskeiset mitat
+<a id="key-measures" class="xliff"></a>
 
 + Alkusaldo
 + Loppusaldo
@@ -45,16 +48,19 @@ Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöö
 + Nettomuutos %
 + Erääntyminen
 
-## <a name="key-performance-indicators"></a>Suorituskykyilmaisimet
+## Suorituskykyilmaisimet
+<a id="key-performance-indicators" class="xliff"></a>
 + Varaston liikevaihto
 + Varaston tarkkuus
 
 CostStatementCache taulukko on ensisijainen tietolähde kohteelle CostAggregatedCostStatementEntryEntity. tietojoukon välimuistin kehys hallitsee tätä taulua. Oletusarvon mukaan taulukko päivitetään 24 tunnin välein, mutta voit ottaa käyttöön manuaaliset päivitykset tietojen välimuistin määrityksissä. Voit sitten tehdä manuaalisen päivityksen **Kustannushallinta**- tai **Kustannusanalyyis** -työtilassa. Kun CostStatementCache-päivitys on suoritettu, sinun on päivitettävä Power BI.com -sivustolla OData-yhteys nähdäksesi päivitetyt tiedot sivustolla. Varianssin (osto, tuotanto) mitat tässä Power BI -sisällössä pätevät vain nimikkeisiin, jotka arvioidaan varaston vakiokustannuksen menetelmällä. Tuotannon varianssi lasketaan aktiivisten kustannusten ja toteutuneiden kustannusten välisenä erona. Tuotannon varianssi lasketaan, kun tuotantotilauksen tilana on **Päättynyt**. Saat lisätietoja tuotannon varianssin tyypeistä ja siitä, miten kukin tyyppi lasketaan, ohjeaiheesta [Valmiin tuotantotilauksen varianssien analysointi](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-**Kustannushallinnan** Power BI -sisältöä on saatavana osoitteessa PowerBI.com. Lisätietoja Microsoft Dynamics 365 for Operations -tietojen liittämisestä ja lataamisesta on artikkelissa [Power BI -sisällön hakeminen PowerBI.com-sivustosta](power-bi-home-page.md).
+## Power BI -sisällön käyttö
+<a id="accessing-the-power-bi-content" class="xliff"></a>
+**Kustannushallinnan** Power BI -sisältöä on saatavana osoitteessa PowerBI.com. Lisätietoja Microsoft Dynamics 365 for Finance and Operationsin tietojen liittämisestä ja lataamisesta on artikkelissa [Power BI -sisällön hakeminen PowerBI.com-sivustosta](power-bi-home-page.md).
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
+## Mittareita, jotka sisältyvät Power BI -sisältöön
+<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
 Sisältö sisältää joukon raporttisivuja. Jokainen sivu koostuu joukosta mittareita, jotka ovat visualisoitu kaavioiden, ruutujen ja taulukoiden muodossa. Seuraavassa taulukossa on yleiskatsaus visualisoinneista **kustannushallinnan** Power BI -sisällössä.
 
 | Raporttisivu | Kaaviot | Otsikot |
@@ -83,10 +89,11 @@ Sisältö sisältää joukon raporttisivuja. Jokainen sivu koostuu joukosta mitt
 | |KET-nettomuutos toimipaikan nimen ja luokan nimitason 2 mukaan | |
 | |Tuotannon vaihtelut ja toimipaikan nimen ja luokan nimitason 3 mukaan | |
 
-## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
-Dynamics 365 for Operations -tietoja käytetään täyttämään **Kustannushallinnan** Power BI -sisällön raporttisivut. Nämä tiedot esitetään koottuina mittauksina, jotka vaiheistetaan yksikkösäilössä, joka on analytiikkaa varten optimoitu Microsoft SQL -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md). Seuraavia tärkeitä koostettuja mittoja käytetään sisällön perustana.
+## Tietomallin ja yksiköiden tiedot
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+Finance and Operationsin tietoja käytetään täyttämään **Kustannusseuranta** – Power BI -sisällön raporttisivut. Nämä tiedot esitetään koottuina mittauksina, jotka vaiheistetaan yksikkösäilössä, joka on analytiikkaa varten optimoitu Microsoft SQL -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md). Seuraavia tärkeitä koostettuja mittoja käytetään sisällön perustana.
 
-| Kokonaisuus            | Tärkeät koostemitat | Dynamics 365 for Operationsin tietolähde | Kenttä             | kuvaus                       |
+| Kokonaisuus            | Tärkeät koostemitat | Finance and Operationsin tietolähde | Kenttä             | kuvaus                       |
 |-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
 | Tiliotteen tapahtumat | Nettomuutos                | CostAggregatedCostStatementEntryEntity      | sum(\[Amount\])   | Summa kirjanpitovaluuttana |
 | Tiliotteen tapahtumat | Nettomuutoksen määrä       | CostAggregatedCostStatementEntryEntity      | sum(\[Quantity\]) |                                   |
@@ -136,7 +143,8 @@ Suodattimina käytetään seuraavia tärkeimpiä dimensioita osittamaan koostemi
 | Kirjanpidot          | Valuutta, nimi, kuvaus                  |
 | Toimipaikat            | Tunnus, nimi, maa, paikkakunta                      |
 
-## <a name="additional-resources"></a>Lisäresurssit
+## Lisäresurssit
+<a id="additional-resources" class="xliff"></a>
 Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:
 
 -   [Tietoyksiköt](..\data-entities\data-entities.md)
