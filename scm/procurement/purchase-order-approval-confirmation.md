@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: 0ec91bcf0ab334585eefae2fe54750c45419682e
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Ostotilausten hyväksyminen ja vahvistaminen
-<a id="approve-and-confirm-purchase-orders" class="xliff"></a>
+# <a name="approve-and-confirm-purchase-orders"></a>Ostotilausten hyväksyminen ja vahvistaminen
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Tässä artikkelissa käsitellään ostotilauksen tilat, jotka se läpäisee luo
 
 Kun ostotilaus on luotu, sen on ehkä läpäistävä hyväksyntäprosessi. Kun toimittaja on hyväksynyt tilauksen, ostotilauksen tilaksi määritetään **Vahvistettu**.
 
-## Ostotilausten hyväksyntä
-<a id="approval-of-purchase-orders" class="xliff"></a>
+## <a name="approval-of-purchase-orders"></a>Ostotilausten hyväksyntä
 Jos ostotilauksessa ei käytetä muutoksenhallintaa, sen tila on **Hyväksytty** heti, kun ne on luotu, kun taas muutoksenhallintaa käyttävien ostotilausten tila on **Luonnos**. Ostotilauksen, joka on luotu suunnittelun tilauksen päätilauksesta, tilaksi on aina määritetty **Hyväksytty** muutoksenhallinnan asetuksista riippumatta. Ostotilaus luo varastotapahtumia vain, kun se siirtyy **Hyväksytty**-tilaan. Tämän vuoksi varasto ei näytä olevan varattavissa tai merkittävissä, ennen kuin tilaus on hyväksytty.  
 
 Ostotilauksen muutoksenhallinta otetaan käyttöön määrittämällä **Ota muutostenhallinta käyttöön** -vaihtoehto **Hankintaparametrit**-sivulla. Kun muutoksenhallinta on otettu käyttöön, ostotilauksen on läpäistävä hyväksyntätyönkulku ennen valmistumista. Microsoft Dynamics 365 for Finance and Operationsissa on työnprosessin editori, jossa voit määrittää työnkulun omaa hyväksyntäprosessia vastaavaksi. Tämä työnkulku voi sisältää automaattisen hyväksymisen sääntöjä, sääntöjä, joilla määritetään tiettyjen ostotilausten hyväksyjä, ja pitkään hyväksymistä odottaneen työnkulun eskalointisäännöt. Voit ottaa muutoksenhallintaprosessin käyttöön kaikille toimittajille tai tietyille toimittajille. Voit myös määrittää prosessin niin, että se voidaan ohittaa yksittäisissä ostotilauksissa.  
@@ -54,8 +52,7 @@ Kun muutoksenhallinta on otettu käyttöön, ostotilaukset läpäisevät kuusi h
 | Vahvistettu       | Ostotilaus vahvistettiin. Ostotilausta ei voi vahvistaa, ennen kuin se on hyväksytty.        | Kyllä                       |
 | Päätetty       | Ostotilaus on lopullinen. Se on nyt rahoituksellisesti suljettu eikä sitä voi enää muuttaa. | Ei                        |
 
-## Ostotilausten vahvistaminen
-<a id="confirming-purchase-orders" class="xliff"></a>
+## <a name="confirming-purchase-orders"></a>Ostotilausten vahvistaminen
 Ostotilausten, joiden hyväksyntätila on **Hyväksytty**, on ehkä läpäistävä lisävaiheita ennen vahvistusta. Toimittajalle on ehkä esimerkiksi lähetettävä hintoja, alennuksia tai toimituspäiviä koskeva kysely. Tässä tapauksessa voit määrittää ostotilauksen tilaksi **Ulkoisessa tarkistuksessa** **Ostokysely**-toiminnolla.  
 
 Toimittajaportaalin käyttöoikeudet omaavat toimittajat voivat tarkastella tilauksia portaalissa ja joko hyväksyä tai hylätä ne. Tämän tarkistusprosessin aikana ostotilauksen tila on **Ulkoisessa tarkistuksessa**. Toimittajaportaali voidaan määrittää siten, että toimittaja vahvistaa tilauksen automaattisesti Finance and Operationsissa. Voit vaihtoehtoisesti vahvistaa tilauksen manuaalisesti, kun on saanut vahvistuksen toimittajalta. Jos toimittaja hylkää ostotilauksen, hylkäyksen lisäksi toimitetaan hylkäyksen syy ja muutosehdotukset. Tässä tapauksessa ostotilauksen tilaksi jää **Ulkoisessa tarkistuksessa**.  
@@ -69,8 +66,7 @@ Kun toimittaja on hyväksynyt tilauksen, seuraavana vaiheena on ostotilauksen ki
 
 Toimittaja voi pyytää jonkinlaisen vakuuden siitä, että osto maksetaan. Ostoreskontraprosessissa on erilaisia tapoja, jolla tämä takuu voidaan antaa. Esimerkiksi **Ennakkomaksu**-toiminto varaa varat ostotilaukseen ja tämä ennakkomaksu tallennetaan ostotilaukseen.
 
-## Ostotilausten muuttaminen
-<a id="changing-purchase-orders" class="xliff"></a>
+## <a name="changing-purchase-orders"></a>Ostotilausten muuttaminen
 Joissakin tilanteissa ostotilausta on muutettava, ennen kuin sen hyväksynnän tilana on **Hyväksytty** tai **Vahvistettu**.  
 
 Jos ostotilaus luotiin muutoksenhallintaprosessilla, voit tehdä muutoksia peruuttamalla tilauksen tai, jos tilaus on jo hyväksytty, **Pyydä muutosta** -toiminnolla. Tässä tapauksessa hyväksynnän tilaksi vaihdetaan **Luonnos**, ja voit sitten muokata tilausta. Kun muutokset ovat valmiina, ostotilaus on ehkä lähetettävä uudelleenhyväksyttäväksi. Voit määrittää uudelleenhyväksyntää edellyttävät muutostyypit käyttämällä **Ostotilausten uudelleenhyväksymissääntö** -käytäntösääntöä **Ostokäytännöt**-sivulla.  
@@ -79,8 +75,7 @@ Jos osa ostotilausrivin tilatusta määrästä on toimitettu, tilattua määrä�
 
 Kun tilaus on vahvistettu, et voi enää poistaa sitä. Voit kuitenkin peruuttaa tilauksen koko määrän tai minkä tahansa jäljellä olevan määrän, kunhan määrää ei ole vastaanotettu tai laskutettu.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Ostotilausten yleiskatsaus](purchase-order-overview.md)

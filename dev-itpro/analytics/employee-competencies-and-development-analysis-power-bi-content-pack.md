@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations
 ms.custom: 263894
 ms.assetid: 7d375d8a-b2de-4bec-b575-93d1d4521b79
 ms.search.region: Global
 ms.author: jcart
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,25 +23,21 @@ ms.openlocfilehash: f5b3c180f0a9d60fa5d4d8398daf79a14da2d6f4
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Työntekijän osaamisen ja kehittymisen Power BI -sisältö
-<a id="employee-competencies-and-development-power-bi-content" class="xliff"></a>
+# <a name="employee-competencies-and-development-power-bi-content"></a>Työntekijän osaamisen ja kehittymisen Power BI -sisältö
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä ohjeaiheessa käsitellään Finance and Operationsin työntekijän osaamisalueiden ja kehittymisen Power BI -sisältöä. Siinä kuvataan, miten avaat sisältöpakettiin kuuluvat raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
-Sisältöpaketin avaaminen
-<a id="accessing-the-content-pack" class="xliff"></a>
+<a name="accessing-the-content-pack"></a>Sisältöpaketin avaaminen
 --------------------------
 
 Löydät työntekijän osaamisen ja kehittymisen sisältöpaketin Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Saat lisätietoja siitä, miten sisältöpaketti ladataan ja miten se liitetään Microsoft Dynamics 365 for Finance and Operationsin tietoihin, artikkelista [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md).
 
-## Raportit, jotka sisältyvät sisältöpakettiin
-<a id="reports-that-are-included-in-the-content-pack" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-content-pack"></a>Raportit, jotka sisältyvät sisältöpakettiin
 Kun olet liittänyt sisältöpaketin Dynamics 365 for Finance and Operations -tietoihin, organisaatiosi tiedot näkyvät raporteissa. Jos et ole käyttänyt Microsoft Power BI:tä aiemmin, lisätietoja löydät artikkelista [Power BI:n ohjattu oppiminen](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporteissa, jotka sisältyvät sisältöpakettiin, on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
 
 | Raportti                            | Sisältö                                               |
@@ -51,8 +48,7 @@ Kun olet liittänyt sisältöpaketin Dynamics 365 for Finance and Operations -ti
 
 Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Tietomallin ja yksiköiden tiedot
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 Finance and Operationsin tietoja käytetään työntekijän osaamisalueiden ja kehittymisen sisältöpaketin raporttien täyttämiseen. Seuraavassa taulukossa on esitetty yksiköt, joihin sisältöpaketti on perustunut.
 
 | Kokonaisuus                            | Sisältö                                                                                                   | Suhteet muihin yksiköihin                                                                                                                                                                                                                                                                       |
@@ -84,8 +80,7 @@ Finance and Operationsin tietoja käytetään työntekijän osaamisalueiden ja k
 
 Näitä yksikköjä käytettiin luomaan laskettuja mittoja tietomallissa. Näitä laskennallisia mittoja käytetään sitten laskemaan sisältöpaketissa käytettävät tunnusluvut (KPI:t) ja raportit. Jos haluat sisällyttää lisälaskutoimitukset raportteihin ja koontinäyttöön, voit ladata CompetenciesandDevelopment.pbix-tiedoston LCS:stä ja muokata sitä. Tämä tiedosto on sisältöpaketin luomisessa käytetty oletustietomalli. Kun olet tehnyt haluamasi muutokset, voit luoda organisaation sisältöpaketin ja koontinäytön, joka sisältää lisäämäsi tiedot.
 
-## Lisäresurssit
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Lisäresurssit
 Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:
 
 -   [Tietoyksiköt](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)

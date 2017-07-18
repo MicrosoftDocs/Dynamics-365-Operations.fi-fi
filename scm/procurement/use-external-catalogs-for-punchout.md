@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -23,11 +24,9 @@ ms.openlocfilehash: 01955aefb27bd18809b35fd025c9dd1b8eb70520
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla
-<a id="use-external-catalogs-for-punchout-eprocurement" class="xliff"></a>
+# <a name="use-external-catalogs-for-punchout-eprocurement"></a>Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla
 Käyttämällä ulkoisia luetteloita sähköiseen hankintaan siirryttäessä ei tarvitse ylläpitää toimittajien tuotetietoja omissa päätiedoissa. Sen sijaan toimittajan sivuston ostoskori muunnetaan varasto-ottoehdotusriveiksi, joissa on oikeat tuotetiedot. 
 
 Vältä toimittajien tuotekuvausten ja -hintojen säilyttämistä omissa tuotteen päätiedoissa. Käytä sen sijaan ulkoisia luetteloita siirryttäessä sähköiseen hankintaan Kun työntekijät tämän jälkeen luovat ostoehdotuksia, he voivat siirtyä toimittajan ulkoiseen tuoteluettelosivustoon (toisin sanoen he voivat poistua sinun järjestelmästäsi ja siirtyä toimittajan sivustoon). Tuotteet, jotka on lisätty ostoskoriin toimittajan sivustossa, voidaan muuntaa sitten varasto-ottoehdotusriveiksi. Näin saat oikean tuotetiedot: tuotteen tunnuksen, nimen ja hinnan jne.

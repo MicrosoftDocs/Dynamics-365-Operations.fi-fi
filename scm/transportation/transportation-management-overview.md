@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 2fbea4f5e86a6bef98be5df3a2b69aac36e371e5
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Kuljetustenhallinnan yleiskatsaus
-<a id="transportation-management-overview" class="xliff"></a>
+# <a name="transportation-management-overview"></a>Kuljetustenhallinnan yleiskatsaus
 
 [!include[banner](../includes/banner.md)]
 
@@ -69,26 +68,22 @@ Kuljetustenhallinnan avulla voit hallita yrityksen kuljetuksia sekä määrittä
 </tbody>
 </table>
 
-## Kuljetusten suunnittelu Finance and Operationsissa
-<a id="planning-transportation-in-finance-and-operations" class="xliff"></a>
+## <a name="planning-transportation-in-finance-and-operations"></a>Kuljetusten suunnittelu Finance and Operationsissa
 Kuljetustenhallinnassa kuljetusten suunnittelu voidaan tehdä joko tilausten tai niistä luotujen lähetysten perusteella. Lähetykset tapahtuvat aina jossakin vaiheessa, mutta niitä ei tarvita kuljetusten suunnittelussa. Siirtotilaukset kuuluvat lähtevien tilausten skenaarioon, ja ne voidaan suunnitella yhdessä myyntitilausten kanssa. 
 
 ![Kuormapiirustus](./media/Load-drawing1-1024x477.jpg)
 
-## Saapuva kuljetus
-<a id="inbound-transportation" class="xliff"></a>
+## <a name="inbound-transportation"></a>Saapuva kuljetus
 Kun tilaat nimikkeitä toimittajalta, ja nimikkeet on toimitettava varastoosi, haluat ehkä järjestää nimikkeiden kuljetuksen itse. Dynamics 365 for Finance and Operations -ohjelmassa voit suunnitella saapuvan kuorman kuljetuksen ja vastaanoton. Seuraavat kuvat esittävät liiketoimintaprosessin kulkua saapuvan kuorman kuljetuksen suunnittelulle. 
 
 ![Saapuvien kuormakuljetusten liiketoimintaprosessin työnkulku](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
-## Lähtevä kuljetus
-<a id="outbound-transportation" class="xliff"></a>
+## <a name="outbound-transportation"></a>Lähtevä kuljetus
 Voit suunnitella ja käsitellä lähtevän kuorman tiettyjen nimikkeiden toimittamiseksi yrityksen varastosta asiakkaalle. Finance and Operations -ohjelmassa voit suunnitella lähtevän kuorman kuljetuksen ja toimituksen. Seuraavassa kuvassa on esitetty liiketoiminnan prosessin kulku lähtevien kuormien suunnittelemiseksi ja käsittelemiseksi lähetystä varten. 
 
 ![Lähtevien kuormien suunnittelu ja käsittely](./media/Planningandprocessingoutboundloads.jpg)
 
-## Kuormituksen luonti
-<a id="load-building" class="xliff"></a>
+## <a name="load-building"></a>Kuormituksen luonti
 Finance and Operations sisältää Tilavuuteen perustuva kuormituksen luontistrategia -nimisen kuorman luontistrategian. Sen avulla voit käyttää kuormamallissa määritettyjä suurimpia korkeus- ja painoarvoja tai korvata asetukset syöttämällä uudet arvot. Jos haluat käyttää tätä strategiaa, valitse se **Kuormituksen luontistrategia** -kentässä **Asetukset**-pikavälilehdessä **Kuormituksen luonnin työtila** -sivulla. Voit lisätä myös oman kuormituksen rakennuksen strategioita luomalla uuden luokan sovellusobjektipuussa (AOT).
 
 

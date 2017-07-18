@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 90043
 ms.assetid: 49fa97eb-8e10-49a5-9261-1e393159f178
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -26,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Täydennys
-<a id="replenishment" class="xliff"></a>
+# <a name="replenishment"></a>Täydennys
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +40,7 @@ Tässä ohjeaiheessa käsitellään täydennysstrategioita, joita voi käyttää
 
 Täydennystyö luodaan täydennysmallin perusteella kaikissa kolmessa strategiassa.
 
-## Aallon kysynnän täydennys
-<a id="wave-demand-replenishment" class="xliff"></a>
+## <a name="wave-demand-replenishment"></a>Aallon kysynnän täydennys
 
 Aallon kysynnän täydennys luo kysynnän mukaan täydennystyön, jos tuotantotilausten, kanbanien, lähtevien tilausten tai kuormien määrä ei ole käytettävissä, kun aalto luo työn. Täydennysmallissa on tietoja nimikkeen ehdoista, mittayksiköstä, kysynnän lisäyksestä ja sijainnista. 
 
@@ -54,20 +53,17 @@ Mallin luonnin lisäksi voit määrittää joitakin täydennysasetuksia aaltomal
 
 Kysynnän täydennystä tuetaan myyntitilauksissa, siirtotilauksissa, tuotantotilauksissa ja kanbaneissa. 
 
-## Vähimmäis- tai enimmäistäydennys
-<a id="minmax-replenishment" class="xliff"></a>
+## <a name="minmax-replenishment"></a>Vähimmäis- tai enimmäistäydennys
 Vähimmäis- tai enimmäistäydennyksessä varastoa täydennetään niin, että on määritettyjen vähimmäis- ja enimmäisrajojen välillä. Yleensä tämä prosessi tapahtuu kerran päivässä, jotta voidaan varmistaa, että kaikki keräilysijainnit on täytetty enimmäistasolle ennen keräilyn aloittamista. 
 
 Vähimmäis- ja enimmäissummat määritetään täydennysmallissa. Monet muut mallin asetukset muistuttavat aallon kysynnän täydennyksessä käytettäviä malleja. Mallissa on oltava yksi rivi kullekin nimikkeelle ja sijainnille. Kun täydennys suoritetaan käyttämällä erätyötä, Finance and Operations tarkistaa täydennyksen tarpeen siinä järjestyksessä, johon rivit on järjestetty. 
 
 Huomaa, vähimmäis- ja enimmäistäydennysstrategia ei voi täydentää tyhjää sijaintia, ellei sijaintia ole määritetty nimikkeen kiinteästi sijainniksi. Jos täydennettävä sijainti ei ole kiinteä sijainti, täydennettävää nimikettä ei voi määrittää. Niinpä ennen täydennystä tarvitaan ainakin varastosaldo.
 
-## Kuorman kysynnän täydennys
-<a id="load-demand-replenishment" class="xliff"></a>
+## <a name="load-demand-replenishment"></a>Kuorman kysynnän täydennys
 Kuorman kysynnän täydennys summaa useiden kuormien kysynnän ja luo täydennystyön, jota tarvitaan varaston täyttämiseen liittyvissä keräilysijainneissa. Kuorman kysynnän täydennys muistuttaa monin tavoin aallon kysynnän täydennystä. Suurin on siinä, miten ja milloin kuorman kysynnän täydennys ja aallon kysynnän täydennys suoritetaan. Vähimmäis- tai enimmäistäydennyksen tavoin kuorman kysynnän täydennys suoritetaan käyttämällä erätyötä. Voit määrittää erätyön valitsemalla **Kuorman kysynnän täydennys** -sivulla käytettävän täydennysmallin ja määrittämällä suodatinkyselyn, joka määrittää kysynnän määrittämisessä käytettävät kuormat. Sijaintikysely määrittää sijainnit, joista käytettävissä olevat määrät vähennetään kuormien koottuun kysyntään vastaamiseksi.
 
-## Täydennyksen edellytykset
-<a id="replenishment-prerequisites" class="xliff"></a>
+## <a name="replenishment-prerequisites"></a>Täydennyksen edellytykset
 | Edellytys            | Kuvaus                                                                                                                                                                                                                                        |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nimike                    | Nimike on otettava käyttöön varastonhallintaprosesseille.                                                                                                                                                                                       |

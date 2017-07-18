@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 keywords: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 audience: Application User
-ms.reviewer: 121
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.industry: Manufacturing
 ms.author: johanhoffmann
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Täydennys ja otto-kanbanit
-<a id="replenishment-with-withdrawal-kanbans" class="xliff"></a>
+# <a name="replenishment-with-withdrawal-kanbans"></a>Täydennys ja otto-kanbanit
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä ohjeaiheessa käsitellään, miten otto-kanbaneja käytetään valmistustehtävien materiaalitäydennykseen.
 
-## Otto-kanbania käyttävän materiaalitäydennyksen työnkulku
-<a id="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban" class="xliff"></a>
+## <a name="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban"></a>Otto-kanbania käyttävän materiaalitäydennyksen työnkulku
 -------------------------------------------------------------------
 
 Otto-kanbaneja voi käyttää yhden nimikkeen kanbanin siirtämiseen varastojen ja materiaalia kuluttavien tuotantosijaintien välillä. Otto-kanban tukee materiaalitäydennyksen imuohjausratkaisua, jossa imusignaali tarvitaan tarjonnan käynnistämiseen tietylle tarpeelle. 
@@ -56,18 +54,15 @@ Seuraavassa skenaariossa on imuohjattu täydennysjärjestelmä, jossa imusignaal
 
 Tässä skenaariossa valmistusprosessi (4) kuluttaa materiaalia tuotannon varastosijainnista (3) valmistuksen varastossa (8). Kun materiaalin käsittely-yksikköä (kanbania) kulutetaan, se rekisteröidään tyhjäksi. Nimikkeen alkuperälle luodaan täydennyssignaali ja uusi kanban (1) luodaan. Tässä tapauksessa nimikkeen alkuperä koostuu materiaalivaraston sijainneista (7). Kanbanin materiaali kerätään ja pannan pois saman varaston sijaintiin (2). Kun materiaali kerätään, se on valmis siirrettäväksi sijainnista 2 tuotannon varastosijaintiin (3) valmistuksen varastossa (8).
 
-## Otto-kanbanin kanban-keräilyn varastotyön määrittäminen
-<a id="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban" class="xliff"></a>
+## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>Otto-kanbanin kanban-keräilyn varastotyön määrittäminen
 
 Voit ottaa otto-kanbanin raaka-aineen keräilyn käyttöön määrittämällä **Kanban-keräilyn** työtilaustyypin aaltomallit, työmallit ja sijaintidirektiivit. Tämä työtilaustyyppi ei tue vain otto-kanbanin keräilyprosessia. Se tukee myös valmistus-kanbanin keräilyprosessia. Voit kuitenkin määrittää kummallekin kanban-tyypille erillisen keräilyprosessin erottamalla aaltomallit, työmallit ja sijaintidirektiivit. Voit erottaa aaltomallit, työmallit ja sijaintidirektiivit määrittämällä ehdot kyseisten yksikköjen kyselyjen tehtävätyypissä (**Prosessi** tai **Siirto**).
 
-## Otto-kanbanin määrittäminen
-<a id="configure-the-withdrawal-kanban" class="xliff"></a>
+## <a name="configure-the-withdrawal-kanban"></a>Otto-kanbanin määrittäminen
 
 Otto-kanbanissa käytettävä siirtotehtävä määritetään aktivoidun tehtäväsuunnitelman osana Lean-tuotantovirrassa. Siirtotehtävän määrityksen osana määritetään myös siirron lähtö- ja kohdesijainnit. Kun siirtotehtävä on määritetty, voit määrittää sille **Otto**-tyypin kanban-säännön. Kanban-sääntö määrittää otto-kanbanin käytännöt ja määritykset. Kanbanin määrä määrittää, kuinka monta materiaalin käsittely-yksikön yksikköä kanban siirtää siirtoprosessin aikana. Kiinteää kanban-määrää käytetään, kun valittuna on kiinteä täydennysstrategia. Määrä määrittää, kuinka monta kanbania tarvitaan, jotta varasto ei lopu kysynnän lähteessä. Kiinteä määrä voidaan laskea todellisen kysynnän, historiallisen kysynnän ja palvelutasojen perusteella. Kahdessa seuraavassa skenaariossa kerrotaan, miten voit hallita otto-kanbania käyttävää materiaalitäydennystä.
 
-## Skenaario 1: Tuotannon varastointisijainnin täydentäminen kiinteän otto-kanbanin avulla
-<a id="scenario-1-replenish-a-production-input-location-by-using-a-fixed-withdrawal-kanban" class="xliff"></a>
+## <a name="scenario-1-replenish-a-production-input-location-by-using-a-fixed-withdrawal-kanban"></a>Skenaario 1: Tuotannon varastointisijainnin täydentäminen kiinteän otto-kanbanin avulla
 
 Valmistusprosessi kuluttaa ostettua raaka-ainetta tuotannon varastosijainnista, joka sijaitsee tuotantovarastossa. Kun raaka-aine vastaanotetaan toimittajalta, se varastoidaan materiaalivaraston sijainteihin. Koska materiaalin kysyntä katsotaan olevan vakaa kauden aikana, se määritetään tuotannon toimittajaksi kiinteämääräisellä kanban-työnkululla. Kun kanban on kulutettu tuotannon varastointisijainnissa, tyhjän signaali rekisteröidään ja uusi samantyyppinen kanban lisätään työnkulkuun. 
 
@@ -79,8 +74,7 @@ Tässä skenaariossa materiaalivaraston keräystyö käsitellään yhtenä teht�
 
 Jos varastosijainnit ja tuotannon varastoinnin sijainnit eivät ole kaukana toisistaan, siirtotehtävä kannattaa ehkä sisällyttää keräilyprosessiin. Se voidaan sitten materiaalin keräilyn jälkeen asettaa suoraan tuotannon varastoinnin sijaintiin. Voit tukea tätä prosessia määrittämällä siirtotehtävän siten, että se valmistuu automaattisesti, kun otto-kanbanin keräystyö on käsitelty.
 
-## Skenaario 2: Siirtotehtävän valmistuminen automaattisesti, kun kanban-keräystyö on käsitelty
-<a id="scenario-2-automatically-complete-the-transfer-activity-when-kanban-picking-work-is-processed" class="xliff"></a>
+## <a name="scenario-2-automatically-complete-the-transfer-activity-when-kanban-picking-work-is-processed"></a>Skenaario 2: Siirtotehtävän valmistuminen automaattisesti, kun kanban-keräystyö on käsitelty
 
 Seuraavassa skenaariossa otto-kanbanin siirtotehtävä on määritetty siirtymään kahden sijainnin välillä samassa varastossa. Otto-kanbanin siirtotehtävä on määritetty siten, että se valmistuu automaattisesti. 
 

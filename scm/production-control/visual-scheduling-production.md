@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 keywords: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.industry: Manufacturing
 ms.author: johanhoffmann
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Töiden ajoittamisen Gantt-kaavio
-<a id="gantt-chart-for-job-scheduling" class="xliff"></a>
+# <a name="gantt-chart-for-job-scheduling"></a>Töiden ajoittamisen Gantt-kaavio
 
 [!include[banner](../includes/banner.md)]
 
@@ -51,17 +50,14 @@ Gantt-kaavio voidaan avata kahteen eri näkymään, **Tilausnäkymä** ja **Resu
 4.  Tilauksen toimituspäivä -kuvake
 5.  Kapasiteettipalkki
 
-## Tilausnäkymä
-<a id="order-view" class="xliff"></a>
+## <a name="order-view"></a>Tilausnäkymä
 
 [![orderview](./media/orderview.png)](./media/orderview.png)
 
-## Resurssinäkymä
-<a id="resource-view" class="xliff"></a>
+## <a name="resource-view"></a>Resurssinäkymä
 [![resview](./media/resview.png)](./media/resview.png)
 
-## Tehtävät
-<a id="activities" class="xliff"></a>
+## <a name="activities"></a>Tehtävät
 Tehtävät näkyvät palkkeina ja järjestetään aika-asteikkoruudukossa ajoitetun aloitus- ja päättymisajan mukaan, jossa palkkien pituus näytetään suhteessa aikaan, joka tarvitaan tehtävän suorittamiseen. Tehtävät näkyvät aika-asteikon mukaan. Voit säätää valikon aika-asteikkoa, jossa voit valita aloitus ja päättymispäivämäärän ja ajan yksikön, esimerkiksi tunteet tai päivät. Säätämällä aika-asteikkoa voit määrittää aikavälin, jossa haluat hallita tehtäviä. 
 
 Yhteenvedon selkeyttämiseksi tehtävien väreille voidaan määrittää erilaiset valinnat. Voit määrittää yksittäisten värin tehtäville, käyttää teemaväriä yleisenä sovelluksen väriteemana tai asettaa värin tuotantotilausten hallitsemiseksi värikoodeittain. 
@@ -74,39 +70,32 @@ Saat lisätietoja tehtävästä tehtävän valintaikkunassa. Avaa valintaikkuna 
 
 Tehtävät voidaan ryhmittää ryhmittelytason mukaan. Ryhmittelytasot ovat hierarkkisia ja niitä voidaan käyttää toimintojen loogiseen ryhmittämiseen. Jos esimerkiksi käytössä on asettelu, missä valmistustehtäviä ryhmitellään toimipaikan, tuotantoyksikön, resurssiryhmän ja resurssin mukaan, voit käyttää ryhmittelytasoja tehtävien ryhmittelyyn kyseisen asettelun mukaan. Ryhmittelytasoja voidaan laajentaa ja tiivistää yksittäisellä ryhmittelytasolla tai kaikilla tasoilla kaaviossa käyttämällä **Laajenna kaikki** ja **Tiivistä kaikki** -painikkeita valikossa. Voit myös määrittää laajennettavat tai tiivistettävät ryhmittelytasot, kun kaavio avataan.
 
-### Materiaalien saatavuus
-<a id="material-availability" class="xliff"></a>
+### <a name="material-availability"></a>Materiaalien saatavuus
 
 Gantt-kaavio voidaan määrittää tuottamaan suunnittelutoiminnon, joka sisältää yksityiskohtaisia tietoja materiaalin tilasta yksittäisissä tehtävissä. Esimerkiksi tästä voi olla hyötyä, jos materiaali viivästyy ja vaikuttaa tuotantosuunnitelmaan. Tällöin materiaaliongelmat näkyvät Gantt-kaaviossa korostettuina, jotta suunnittelija ymmärtää seuraukset ja tekee tarvittavat oikaisut. 
 
 Työssä näkyy materiaalipuutteiden kuvake, jos aikataulun mukainen työn aloituspäivä on myöhempi kuin työssä kulutetun materiaalin saatavuuspäivämäärä. Materiaalin saatavuuspäivämäärä lasketaan dynaamisen pääsuunnitelman tarvekohdistustietojen perusteella. Materiaalipuutteiden kuvake näkyy esimerkiksi työssä, jossa käytetään materiaalia, joka on tarvekohdistettu ostotilaukseen ja materiaalin vastaanotto on myöhemmin kuin työn suunniteltu aloituspäivä.
 
-### Materiaalin saatavuuspäivämäärän osoitus
-<a id="indicator-of-material-availability-date" class="xliff"></a>
+### <a name="indicator-of-material-availability-date"></a>Materiaalin saatavuuspäivämäärän osoitus
 
 Kaavion töissä määritetyn materiaalipuutteen kuvakkeen ohella voit määrittää kyseiseen työhön näkymään myös materiaalin saatavuuspäivämäärän kuvake. Kuvake näkyy vain jos materiaalin saatavuuspäivämäärä sijoittuu kaavion määritettyyn aikaväliin. Jos materiaalin saatavuuspäivämäärä on määritetyn aikavälin ulkopuolella, yksityiskohtaisemmat materiaalin saatavuustiedot saadaan materiaaliluettelosta valintaikkunassa. Luettelossa on myös kuvake, joka näyttää työn myöhässä olevat materiaalit. Voit ajoittaa työn uudelleen käytettämällä materiaalin saatavuuspäivämäärää aloituspäivämääränä.
 
-### Tilauksen toimituspäivän osoitus
-<a id="indicator-of-order-delivery-date" class="xliff"></a>
+### <a name="indicator-of-order-delivery-date"></a>Tilauksen toimituspäivän osoitus
 
 Kuvake ilmaisee tuotantotilauksen toimituspäivämäärän. Kuvake näkyy vain tilausnäkymässä.
 
-### Kapasiteettipalkki
-<a id="capacity-bar" class="xliff"></a>
+### <a name="capacity-bar"></a>Kapasiteettipalkki
 
 Voit määrittää kaavion siten, että resurssien kapasiteettipalkki näkyy. Tämä palkki näyttää työn resurssikapasiteetin yhteenvedon määritetyllä aikavälillä kaaviossa. Kapasiteettipalkkia ei näytetä aikajaksoissa, joissa resurssia ei ole varattu. Ajanjaksoissa, joissa resurssi on varattu kapasiteetille, kapasiteettipalkki näkyy kiinteänä. Ajanjaksoissa, joissa resurssi on ylivarattu, palkki näkyy paksumpana ja punaisena. Esimerkiksi jos kaksi työtä on päällekkäin, kapasiteettipalkki ilmaisee ylivarausta päällekkäisellä aikavälillä. Kapasiteettipalkki päivittyy dynaamisesti, kun ajoitat työn. Kapasiteettipalkki otetaan käyttöön **Näytä kapasiteettipalkki** -valikosta. Se voidaan näyttää vain **Resurssinäkymässä**. Jos haluat nähdä yksityiskohtaisemman näkymän resurssin kuormituskapasiteetista, käytä **Kapasiteetin kuormitus** -kaaviota, joka voidaan avata valitun tehtävän valikosta tai pikavalikosta.
 
-## Töiden ajoittamisen Gantt-kaaviossa
-<a id="job-scheduling-in-the-gantt-chart" class="xliff"></a>
+## <a name="job-scheduling-in-the-gantt-chart"></a>Töiden ajoittamisen Gantt-kaaviossa
 Gantt-kaavion avulla on useita mahdollisuuksia tehdä tuotantosuunnitelman oikaisuja. Gantt-kaaviossa voi ajoittaa uudelleen toimintoja vedä ja pudota -toiminnolla tai aikatauluvalikosta. Voit ottaa suunnitteluprosessissa huomioon resurssikapasiteetin, resurssien suorituskyvyn ja materiaalirajoitukset.
 
-### Töiden ajoittaminen Vedä ja pudota -toiminnolla
-<a id="schedule-a-job-as-a-drag-and-drop-interaction" class="xliff"></a>
+### <a name="schedule-a-job-as-a-drag-and-drop-interaction"></a>Töiden ajoittaminen Vedä ja pudota -toiminnolla
 
 Voit ajoittaa työn uudelleen määritetyn ajanjakson sisällä vedä ja pudota -toiminnolla. Vain ajoittaa työn uudelleen ainoastaan samalle resurssille ja voit ajoittaa vain yhden työn kerrallaan.
 
-### Työn ajoittaminen valikosta
-<a id="schedule-a-job-from-the-menu" class="xliff"></a>
+### <a name="schedule-a-job-from-the-menu"></a>Työn ajoittaminen valikosta
 
 **Ajoita työt** -valikossa voidaan ajoittaa vähintään yksi valittu työ kaaviossa ajoituksen suunnan ja ajoituksen päivämäärän perusteella. Käytettävissä on kolme eri ajoitussuuntaa.
 
@@ -116,8 +105,7 @@ Voit ajoittaa työn uudelleen määritetyn ajanjakson sisällä vedä ja pudota 
 
 Työtä ei voi ajoittaa Gantt-kaavion määritetyn aikavälin ulkopuolella. Jos näin tehdään, työ jää ajoittamattomaksi ja näyttöön tulee virhesanoma "Työtä ei voitu ajoittaa määritettynä ajanjaksona".
 
-### Ajoita aiemmat työt
-<a id="schedule-previous-jobs" class="xliff"></a>
+### <a name="schedule-previous-jobs"></a>Ajoita aiemmat työt
 
 Tehtäväverkossa, kuten samaan tuotantotilaukseen kuuluvissa töissä, voit käyttää **Ajoita aiemmat työt** -toimintoa ajoittaessasi edelliset työt suhteessa valittuun työhön verkossa. Seuraavassa esimerkissä korostettu tehtävä on valittu työ.
 
@@ -137,8 +125,7 @@ Jälkeen
 </tr>
 </table>
 
-### Ajoita seuraavat työt
-<a id="schedule-next-jobs" class="xliff"></a>
+### <a name="schedule-next-jobs"></a>Ajoita seuraavat työt
 
 Voit ajoittaa tehtäväverkon valittua työtä seuraavat työt **Ajoita seuraavat työt** -toiminnolla. Seuraavassa esimerkissä korostettu tehtävä on valittu työ.
 
@@ -158,8 +145,7 @@ Jälkeen
 </tr>
 </table>
 
-### Ajoita työn ympärille
-<a id="schedule-around-job" class="xliff"></a>
+### <a name="schedule-around-job"></a>Ajoita työn ympärille
 
 Voit ajoittaa tehtäväverkon valittua työtä seuraavan ja edellisen työn **Ajoita työn ympärille** -toiminnolla. Seuraavassa esimerkissä korostettu tehtävä on valittu työ.
 
@@ -179,8 +165,7 @@ Jälkeen
 </tr>
 </table>
 
-### Järjestä työt
-<a id="arrange-jobs" class="xliff"></a>
+### <a name="arrange-jobs"></a>Järjestä työt
 
 Voit käyttää **Järjestä** -toimintoa ja ajoittaa saman resurssin valitut tehtävät. Nämä toiminnot voi olla samassa tehtäväverkossa mutta voivat kuulua myös eri verkkoihin. Kun käytät järjestä-toimintoa, valittujen tehtävien väliajat poistuvat. Tämän toiminnon avulla voit optimoida resurssien kapasiteetin käytön.
 
@@ -200,27 +185,22 @@ Jälkeen
 </tr>
 </table>
 
-### Tehtävien määrittäminen uudelleen resurssista toiseen
-<a id="reassign-activities-from-one-resource-to-another" class="xliff"></a>
+### <a name="reassign-activities-from-one-resource-to-another"></a>Tehtävien määrittäminen uudelleen resurssista toiseen
 
 Voit määrittää tehtävän uudelleen resurssista toiseen. Tämä voi olla hyödyllistä tilanteissa, jossa laite on epäkunnossa tai ylivarattu, ja haluat löytää toisen käytettävissä resurssin, joka voi tehdä tehtävän.
 
-### Tehtävän määrittäminen uudelleen vedä ja pudota -toiminnolla
-<a id="reassigning-an-activity-as-a-drag-and-drop-interaction" class="xliff"></a>
+### <a name="reassigning-an-activity-as-a-drag-and-drop-interaction"></a>Tehtävän määrittäminen uudelleen vedä ja pudota -toiminnolla
 
 **Resurssi**-näkymässä voit määrittää tehtävän uudelleen toiselle resurssille Gantt-kaaviossa vedä ja pudota -toiminnolla. Voit tehdä sen valitsemalla rivin, jossa tehtävä on ajoitettu. Kun rivi on valittu, voit vetää ja pudottaa rivin kaaviossa resurssiin, joka on ryhmitelty toisen resurssin ryhmittelytasolle.
 
-### Tehtävän määrittäminen uudelleen Ajoita työt -valikosta
-<a id="reassigning-an-activity-from-the-schedule-jobs-menu" class="xliff"></a>
+### <a name="reassigning-an-activity-from-the-schedule-jobs-menu"></a>Tehtävän määrittäminen uudelleen Ajoita työt -valikosta
 
 Voit määrittää työn uudelleen **Ajoita työ** -valintaikkunasta, joka avautuu **Ajoita työ** -valikosta. Tästä valikosta voit ainoastaan määrittää työn uudelleen resurssille, joka on ladattu aiemmin Gantt-kaavioon. Jos valitset vain yhden työn, pudotettu resurssi lajitellaan käytettävien resurssien mukaan. Jos valitset useampia töitä, resurssiluettelosta käytettävien resurssien tietoja ei saada.
 
-## Lisäresurssien lataaminen Gantt-kaavioon
-<a id="load-additional-resources-to-the-gantt-chart" class="xliff"></a>
+## <a name="load-additional-resources-to-the-gantt-chart"></a>Lisäresurssien lataaminen Gantt-kaavioon
 **Resurssinäkymästä** voit ladata Gantt-kaavioon lisäresursseja. Tämä voi olla hyödyllistä, jos etsitään vaihtoehtoisia resursseja työlle, joka on ajoitettu ylivaratulle tai rikkoutuneelle laitteelle. **Lisäresurssien lataaminen** -sivulla saat luettelon resursseista, jotka ovat ajanmukaisia luettelon avaamispäivämäärästä lähtien. Gantt-kaaviossa valittuun työhön käytettävissä olevat resurssit luetellaan ensimmäisenä. Jos useita töitä on valittu, käytettävissä olevia resursseja ei näy ennen luettelon avaamista. **Lisäresurssien lataaminen** -sivulla voit valita yhden tai useamman resurssin, joka ladataan Gantt-kaavioon kun olet vahvistanut valintasi. Jos valitulle resurssille ei ole ajoitettuja töitä Gantt-kaavion aikavälillä, resurssi sijoitetaan resurssin ryhmittelytasolle Gantt-kaavion tehtäväluettelon loppuun.
 
-### Gantt-kaavion käyttäminen
-<a id="access-the-gantt-chart" class="xliff"></a>
+### <a name="access-the-gantt-chart"></a>Gantt-kaavion käyttäminen
 
 Gantt-kaavion voit avata seuraavilta sivuilta.
 

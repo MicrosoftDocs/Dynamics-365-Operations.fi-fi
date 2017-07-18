@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: abruer
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,8 +23,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Laskujen hyväksyntöjen mobiilityötila
-<a id="invoice-approvals-mobile-workspace" class="xliff"></a>
+# <a name="invoice-approvals-mobile-workspace"></a>Laskujen hyväksyntöjen mobiilityötila
 
 [!include[banner](../includes/banner.md)]
 
@@ -31,13 +31,11 @@ Tässä ohjeaiheessa on tietoja **laskujen hyväksyntöjen** mobiilityötilasta.
 
 Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Yleiskuvaus
 
 **Laskun hyväksyntöjen** mobiilityötilan avulla ostoreskontran käsittelijät ja esimiehet voivat tarkastella laskuja, jotka on määritetty heille toimittajan laskun otsikon työnkulussa. Voit tarkastella laskun tietoja sekä rivi- ja jakelutietoja, mikä parantaa hyväksyntäpäätöksiä. Voit valita työtilassa toiminnon, jolla lasku siirtyy työnkulussa. 
 
-## Edellytykset
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Edellytykset
 
 Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunnossa.
 
@@ -64,16 +62,14 @@ Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunno
 </tbody>
 </table>
 
-## Mobiilisovelluksen lataaminen ja asentaminen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 
 Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Kirjautuminen mobiilisovellukseen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
 
 1.  Käynnistä sovellus mobiililaitteessa.
 2.  Anna oman Microsoft Dynamics 365:n URL-osoite.
@@ -82,8 +78,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
     [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Laskun hyväksyminen laskun hyväksyntöjen mobiilityötilassa
-<a id="approve-invoices-by-using-the-invoice-approvals-mobile-workspace" class="xliff"></a>
+## <a name="approve-invoices-by-using-the-invoice-approvals-mobile-workspace"></a>Laskun hyväksyminen laskun hyväksyntöjen mobiilityötilassa
 1.  Valitse mobiililaitteessasi **laskun hyväksyntöjen** työtila.
 2.  Valitse toimittajan laskun otsikon työnkulussa sinulle määritetty lasku.
 3.  Tarkista **Laskun tiedot** -sivulla laskun otsikon tiedot, kuten toimittaja ja päivämäärä.

@@ -9,6 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: 
 ms.assetid: 
 ms.search.region: Global
@@ -19,31 +20,26 @@ ms.openlocfilehash: e105c4b171979a03c20718c1fa9d558c921cd704
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Tietojen vahvistuksen työtila
-<a id="data-validation-workspace" class="xliff"></a>
+# <a name="data-validation-workspace"></a>Tietojen vahvistuksen työtila
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä ohjeaiheessa on **tietojen tarkistuksen tarkistusluettelon työtilan** ja liitettyjen määritysten yleiskatsaus.
 
-## Tietojen tarkistuksen tarkistusluettelon työtila
-<a id="data-validation-checklist-workspace" class="xliff"></a>
+## <a name="data-validation-checklist-workspace"></a>Tietojen tarkistuksen tarkistusluettelon työtila
 
 Voit seurata **tietojen tarkistuksen tarkistusluettelon** työtilassa eri yritysten, alueiden ja henkilöiden tarkistusprosesseja. Tarkistusluettelon voidaan käyttää uudessa käyttöönotossa, päivityksen jälkeen tai siirron jälkeen. **Tietojen tarkistuksen tarkistusluettelon** työtilan näkymän mukaan näkyvissä on kaikki tietojen tarkistusprojektin tehtävät ja tilat tai vain sinulle määritetyt tehtävät.
 
 Valitse ensin tietojen tarkistuksen tarkistusluettelo työtilan yläosassa. Kaikki työtilassa näkyvät tiedot suodatetaan valitun tietojen tarkistusprojektin mukaan.
 
-### Yhteenvetoruudut
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Yhteenvetoruudut
 
 **Yhteenveto**-ruudut sisältävät prosessin yleiskuvauksen. Voit seurata mittareiden avulla voit seurata tietojen tarkistusprosessia. Näet prosessin kaikki jäljellä olevat tehtävät, valmiit tehtävät, meneillään olevat tehtävät ja vielä aloittamattomat tehtävät. Nämä tiedot koskevat kaikkia valittuun tietojen tarkistusprojektiin liittyviä yrityksiä.
 
-### Tehtävät ja tila -osa
-<a id="tasks-and-status-section" class="xliff"></a>
+### <a name="tasks-and-status-section"></a>Tehtävät ja tila -osa
 
 Tietojen tarkistusprojektin kokonaistila näkyy **Tehtävät ja tilat** -osiossa eri tavoin: tila yrityksen, alueen tai tehtäväluettelon mukaan. Voit valita suodattimen, kun haluat tarkastella tietyn yrityksen tilaa. Kukin tilavälilehti sisältää erittelyn sekä valmistuneiden prosenttiosuuden että jäljellä olevien tehtävien määrän mukaan.
 
@@ -56,13 +52,11 @@ Voit liittää tehtäviin tiedostoja, huomautuksia, kuvia ja URL-osoitteita **Li
 
 **Täyttäjä**-vaihtoehto täytetään automaattisesti tehtävän valmistumisen jälkeen tehtävän suorittaneen työntekijän nimellä. **Valmistumispäivämäärä**-kenttään päivitetään automaattisesti kuluva päivämäärä ja kellonaika.
 
-### Konfiguroi tietojen tarkistusprojekti -sivu
-<a id="configure-data-validation-project-page" class="xliff"></a>
+### <a name="configure-data-validation-project-page"></a>Konfiguroi tietojen tarkistusprojekti -sivu
 
 Ennen kuin **tietojen tarkistuksen tarkistusluettelon** työtilaa voi käyttää, prosessi on määritettävä **Konfiguroi tietojen tarkistusprojekti** -sivulla. (Valitse **Työtilat** \> **Tietojen tarkistuksen tarkistusluettelo** \> **Konfiguroi tietojen tarkistusprojekti**.)
 
-### Tehtäväalueet
-<a id="task-areas" class="xliff"></a>
+### <a name="task-areas"></a>Tehtäväalueet
 
 Tehtäväalueiden avulla voi ryhmitellä tietojen tarkistustehtäviä loogisiin omistusoikeuden alueisiin organisaatiossa. Tehtäväalueina voidaan käyttää esimerkiksi ostoreskontraa, myyntireskontraa tai kirjanpitoa.
 

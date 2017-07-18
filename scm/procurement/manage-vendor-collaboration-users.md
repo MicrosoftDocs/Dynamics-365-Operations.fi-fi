@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: ec7ed3a81d296e9bef4d26f1756b73883d560cb5
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Toimittajayhteistyön käyttäjien hallinta
-<a id="manage-vendor-collaboration-users" class="xliff"></a>
+# <a name="manage-vendor-collaboration-users"></a>Toimittajayhteistyön käyttäjien hallinta
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ Microsoft Dynamics 365 for Finance and Operationsin toimittajayhteistyöliittym�
 
 Katso lisätietoja toimittajayhteistyön käytöstä hankinta-asiantuntijana kohdasta [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).
 
-## Lisää uusia toimittajayhteistyön yhteyshenkilöitä
-<a id="add-new-vendor-collaboration-contacts" class="xliff"></a>
+## <a name="add-new-vendor-collaboration-contacts"></a>Lisää uusia toimittajayhteistyön yhteyshenkilöitä
 Jos haluat antaa toimittajayhteistyön käyttöoikeudet toiselle käyttäjälle, heidät on ensin lisättävätoimittajayhteistyön yhteyshenkilöiksi. Voit myös halutessasi lisätä yhteyshenkilöitä yrityksesi työntekijöille, jotka eivät käytä toimittajayhteistyötä. He voivat olla yhteyshenkilöitä esimerkiksi toisentyyppisiä hankintatietoja varten. Uudet yhteystiedot lisätään **Kaikki yhteyshenkilöt** -sivulle, jolle päästään **Toimittajayhteistyö** &gt; **Yhteyshenkilöt** -valikosta. Uuden yhteyshenkilön lisääminen:
 
 1.  Valitse **Uusi**.
@@ -49,8 +47,7 @@ Jos haluat antaa toimittajayhteistyön käyttöoikeudet toiselle käyttäjälle,
 
 Jos haluat poistaa yhteyshenkilön tiedot, voit poistaa vain itse luomasi tiedot.
 
-## Toimittajayhteistyön käyttäjäpyynnöt
-<a id="vendor-collaboration-user-requests" class="xliff"></a>
+## <a name="vendor-collaboration-user-requests"></a>Toimittajayhteistyön käyttäjäpyynnöt
 Toimittajayhteistyön käyttäjäpyyntöjä voi esittää hankinta-asiantuntija tai ulkoisen toimittajan järjestelmänvalvoja.
 
 -   Jos olet ulkoinen toimittaja, lähetä pyynnöt **Kaikki yhteyshenkilöt** -sivulta **Toimittajayhteistyö**-moduulista.
@@ -60,8 +57,7 @@ Voit tehdä pyynnön käyttäjän valmistelemisesta, käyttäjän poistamisesta 
 
 Kun pyyntö on lähetetty, se lisätään **Toimittajayhteistyön käyttäjäpyynnöt** -luetteloon **Toimittajayhteistyö**-moduuliin, ja **Toimittajayhteistyön käyttäjäpyyntö** -luetteloon **Hankinta**-moduulissa (hankintamoduuli ei ole ulkoisten käyttäjien käytettävissä).
 
-### Käyttäjän valmistelu
-<a id="provision-a-user" class="xliff"></a>
+### <a name="provision-a-user"></a>Käyttäjän valmistelu
 
 Ennen kuin voit pyytää uuden käyttäjän valmistelua, kyseisen henkilön on määritettävä yhteyshenkilöksi vähintään yhdelle toimittajatilille. Uuden toimittajayhteistyön käyttäjäpyynnön luominen:
 
@@ -73,8 +69,7 @@ Ennen kuin voit pyytää uuden käyttäjän valmistelua, kyseisen henkilön on m
 
 Kun toimittajan käyttäjäpyyntö on lähetetty **Toimittajayhteistyön käyttö sallittu** -kentän arvoksi tulee **Kyllä** valitulle toimittajatilille ja käyttäjäpyynnön työnkulku aloitetaan. Uusi käyttäjä luodaan Finance and Operationsissa ja käyttöoikeusroolit määritetään osana työnkulkua. Lisäksi Azure B2B -palvelu aktivoituu ja käynnistää käsittelyn Azure-portaalissa ja liittää uuden tai entisen ADD-käyttäjätilin Finance and Operationsin käyttäjätiliin.
 
-### Poista käyttäjä
-<a id="inactivate-a-user" class="xliff"></a>
+### <a name="inactivate-a-user"></a>Poista käyttäjä
 
 Toimittajayhteistyön käyttöoikeus voidaan poistaa käyttäjältä kahdella tavalla:
 
@@ -87,8 +82,7 @@ Käyttäjän käyttöoikeuksien poistamispyynnön esittäminen:
 2.  Kirjoita kommentti **Liiketoimintaperuste**-kentässä.
 3.  Valitse **Lähetä**.
 
-### Muuta käyttöoikeusrooleja
-<a id="modify-security-roles" class="xliff"></a>
+### <a name="modify-security-roles"></a>Muuta käyttöoikeusrooleja
 
 **Ylläpidä toimittajakäyttäjän rooleja** -sivu on sama kuin **Valmistele toimittajakäyttäjä** -sivu sillä erotuksella, että käyttöoikeusrooliluetteloa voidaan muokata.  
 

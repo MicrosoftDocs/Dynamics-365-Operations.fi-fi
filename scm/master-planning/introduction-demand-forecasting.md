@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72004
 ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 6b4498ae05b9495918c0a079cc88903820192a59
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Kysynnän ennustepalveluiden yleiskatsaus
-<a id="demand-forecasting-overview" class="xliff"></a>
+# <a name="demand-forecasting-overview"></a>Kysynnän ennustepalveluiden yleiskatsaus
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Kysynnän ennusteita käytetään ennustamaan riippumatonta kysyntää myyntitil
 
 Perusennusteen luonnissa historiallisten tapahtumien yhteenveto viedään Microsoft Azuren automaattianalyysipalveluun, jota isännöidään Azuressa. Koska tätä palvelua ei jaeta käyttäjien kesken, sitä voidaan mukauttaa alakohtaisten vaatimusten täyttämiseksi. Voit käyttää Finance and Operationsia ennusteen visualisointiin ja muuttamiseen sekä ennusteen tarkkuutta koskevien suorituskykyilmaisimien (KPI:t) tarkastelemiseen.
 
-## Kysynnän ennusteen tärkeimmät ominaisuudet
-<a id="key-features-of-demand-forecasting" class="xliff"></a>
+## <a name="key-features-of-demand-forecasting"></a>Kysynnän ennusteen tärkeimmät ominaisuudet
 Tässä on muutamia kysynnän ennusteiden pääominaisuuksia:
 
 -   Luo historiallisiin tietoihin perustuva tilastollinen perusennuste
@@ -48,8 +46,7 @@ Tässä on muutamia kysynnän ennusteiden pääominaisuuksia:
 -   Poista poikkeava arvo.
 -   Luo ennusteen tarkkuuden mittarit.
 
-## Kysynnän ennusteen pääteemat
-<a id="major-themes-in-demand-forecasting" class="xliff"></a>
+## <a name="major-themes-in-demand-forecasting"></a>Kysynnän ennusteen pääteemat
 Kysynnän ennusteissa käytetään kolmea pääteemaa:
 
 -   **Modulaarisuus** – Kysynnän ennusteet ovat modulaarisia ja helposti määritettäviä. Voit ottaa toiminnon käyttöön ja poistaa sen käytöstä muuttamalla konfigurointiavain kohdassa **Kauppa** &gt; **Varastoennuste** &gt; **Kysynnän ennuste**.
@@ -60,8 +57,7 @@ Kysynnän ennusteissa käytetään kolmea pääteemaa:
     -   Jos et tarvitse korkeaa suorituskykyä tai jos sinun ei tarvitse käsitellä suurta tietojen määrää, voit käyttää automaattianalyysipalveluiden vapaata tasoa. Suosittelemme, että aloitat aina tältä tasolta, etenkin käyttöönotto- ja testausvaiheiden aikana. Jos tarvitset korkeampaa suorituskykyä ja lisätallennustilaa, voit käyttää automaattianalyysipalveluiden standarditasoa. Tämä taso vaatii Azure-tilauksen ja siihen liittyy lisäkustannuksia. Saat lisätietoja automaattianalyysipalveluiden hinnoittelusta kohdassa <http://aka.ms/machine-learning-price-info>.
 -   **Ennusteen vähennys missä tahansa erotuskohdassa** – Kysynnän ennusteet perustuvat Finance and Operationsissa tälle toiminnolle, jonka avulla voit ennustaa sekä sidonnaista että riippumatonta kysyntää missä tahansa erotuskohdassa.
 
-## Kysynnän ennusteen peruskulku
-<a id="basic-flow-in-demand-forecasting" class="xliff"></a>
+## <a name="basic-flow-in-demand-forecasting"></a>Kysynnän ennusteen peruskulku
 Seuraavassa kaaviossa on kuvattu kysynnän ennusteen peruskulku. 
 
 [![Kysynnän ennusteen esittelykaavio](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
@@ -74,12 +70,10 @@ Ennusteet, historialliset tiedot ja kysynnän ennusteisiin aiemmissa iteraatiois
 
 Voit käyttää Finance and Operationsia perusennusteiden visualisointiin ja muokkaukseen. Manuaaliset muutokset on valtuutettava ennen kuin ennusteita voidaan käyttää suunnitteluun.
 
-## Rajoitukset
-<a id="limitations" class="xliff"></a>
+## <a name="limitations"></a>Rajoitukset
 Finance and Operationsin kysynnän ennuste on työkalu, joka auttaa valmistusteollisuuden asiakkaita luomaan ennusteprosesseja. Se tarjoaa kysynnän ennusteen ratkaisun perustoiminnot ja on suunniteltu helposti laajennettavaksi. Kysynnän ennusteet eivät ehkä sovellu parhaiten vähittäismyynti-, tukkukauppa-, varastointi-, kuljetus- tai muulla palvelualalla oleville asiakkaille.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Kysynnän ennusteiden asetukset](demand-forecasting-setup.md)

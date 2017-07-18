@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMDimensionMember
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223174
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: 74a3033ffbdba2efc6c5ecd6c55019898751a146
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Kohdistusperusteet
-<a id="allocation-bases" class="xliff"></a> 
+# <a name="allocation-bases"></a>Kohdistusperusteet 
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +39,7 @@ Kustannuslaskennassa on kolmenlaisia kustannusperusteita:
 - Hierarkian kohdistusperusteet
 - Kaavan kohdistusperusteet
 
-## Ennalta määritetyn dimension jäsenen kohdistusperusteet
-<a id="predefined-dimension-member-allocation-bases" class="xliff"></a>
+## <a name="predefined-dimension-member-allocation-bases"></a>Ennalta määritetyn dimension jäsenen kohdistusperusteet
 
 Ennalta määritetyn dimension jäsenen kohdistusperusteet luodaan automaattisesti, kun jokin seuraavan tyyppisistä dimension jäsenistä luodaan:
 
@@ -51,8 +49,7 @@ Ennalta määritetyn dimension jäsenen kohdistusperusteet luodaan automaattises
 > [!NOTE]
 > Kustannustason dimension jäseneen perustuvat ennalta määritetyn dimension jäsenen kohdistusperusteet ottavat huomioon vain tietolähteen arvot. Tietolähde voi olla esimerkiksi kirjanpito tai budjetti.
 
-### Esimerkki 1: Kustannustason dimension jäsenen käyttö kohdistusperusteena
-<a id="example-1-use-a-cost-element-dimension-member-as-the-allocation-base" class="xliff"></a>
+### <a name="example-1-use-a-cost-element-dimension-member-as-the-allocation-base"></a>Esimerkki 1: Kustannustason dimension jäsenen käyttö kohdistusperusteena
 Tässä esimerkissä näytetään sellaisen kustannuksen kohdistussäännön luonti, jolla kustannustaso 10002 (työntekijän vakuutus) kohdistetaan kustannustasoon 10001 (palkat) kirjattuun saldoon. Kohdistussääntö määritetään kunkin osaston palkkojen suhteessa kokonaispalkkakustannuksiin. (Tarkistettava)
 
 Tilikartta määritetään kirjanpidossa seuraavasti:
@@ -140,8 +137,7 @@ Kun kustannustasoa 10001 (palkat) on käytetty kohdistusperusteena, yleiskustann
 | CC002       | FI                  | 10 002        | Työntekijän vakuutus | Luokittelematon  | 500,00    | 31.1.2017      |
 | CC099       | VS                  | 10 002        | Työntekijän vakuutus | Luokittelematon  | 300,00    | 31.1.2017      |
 
-### Esimerkki 2: Tilastodimension jäsenen käyttö kohdistusperusteena
-<a id="example-2-use-a-statistical-dimension-member-as-the-allocation-base" class="xliff"></a>
+### <a name="example-2-use-a-statistical-dimension-member-as-the-allocation-base"></a>Esimerkki 2: Tilastodimension jäsenen käyttö kohdistusperusteena
 
 Tilastodimension jäseniä voidaan käyttää kohdistusperusteena määrittämään käytäntöjä tai raportoimaan kustannusobjektikohtaista ei-rahallista kulutusta. Voit luoda tilastodimension jäseniä manuaalisesti tai tuoda ne tiedostosta tietojen hallinnan tuonti- ja vientityökalulla.
 
@@ -234,13 +230,11 @@ Tämä on esimerkki kustannusten jakosäännöstä, jos sähkön ennalta määri
 | CC002       | FI   | 4,100.00  | (4 100 ÷ 21 550) × summa  |
 | CC003       | VS   | 15,000.00 | (15 000 ÷ 21 550) × summa |
 
-## Hierarkian kohdistusperusteet
-<a id="hierarchy-allocation-bases" class="xliff"></a>
+## <a name="hierarchy-allocation-bases"></a>Hierarkian kohdistusperusteet
 
 Kustannuslaskijat voivat luoda hierarkian kohdistusperusteet manuaalisesti käyttämällä kustannusobjektidimension hierarkiasolmua aiemmin luodussa kohdistusperusteessa. Voit rajoittaa tällä tavoin alkuperäisen ennalta määritetyn dimension jäsenen kohdistusperusteen aluetta. Vain ennalta määritetyn dimension jäsenen kohdistusperustetta voidaan käyttää useiden hierarkian kohdistusperusten luontiin. Alueita voidaan ylläpitää siinä kustannusobjektidimension hierarkiassa, joka on liitetty hierarkian kohdistusperusteisiin.
 
-### Esimerkki: Organisaation kokoaikaisiin työntekijöihin perustuvat hierarkian kohdistusperusteet
-<a id="example-hierarchy-allocation-bases-that-are-based-on-full-time-employees-in-the-organization" class="xliff"></a>
+### <a name="example-hierarchy-allocation-bases-that-are-based-on-full-time-employees-in-the-organization"></a>Esimerkki: Organisaation kokoaikaisiin työntekijöihin perustuvat hierarkian kohdistusperusteet
 Tämä on esimerkki kustannusobjektidimension hierarkiasta, joka voidaan luoda kuvaamaan yksinkertaistettua organisaatiota.
 
 | Hierarkian nimi | Solmutaso 0 | Solmutaso 1 | Solmutaso 2 | Dimension jäsenet |
@@ -283,8 +277,7 @@ Tämä on esimerkki kustannusten jakosäännöstä, jos kokoaikaisten työntekij
 | CC001       | Henkilöstöhallinto   | 1,00      | (1/3) × summa    |
 | CC002       | FI   | 2,00      | (2/3) × summa    |
 
-## Kaavan kohdistusperusteet
-<a id="formula-allocation-bases" class="xliff"></a>
+## <a name="formula-allocation-bases"></a>Kaavan kohdistusperusteet
 
 Voit määrittää kaavan kohdistusperusteen avulla kaavojen lisäasetuksia oikean kohdistusperusteen saamiseksi. Voit luoda manuaalisesti kaavan kohdistusperusteita.
 
@@ -313,8 +306,7 @@ Perinteisiä **JOS**-lausekkeita ei tueta. Voit kuitenkin lausekkeita ja tarkist
 | a \> b    | Tosi       | 1      |
 | a \> b    | Epätosi      | 0      |
 
-### Esimerkki 1: Yksinkertainen kaava
-<a id="example-1-a-simple-formula" class="xliff"></a>
+### <a name="example-1-a-simple-formula"></a>Esimerkki 1: Yksinkertainen kaava
 
 Sähkölaskussa on usein kaksi osaa:
 
@@ -379,8 +371,7 @@ Tämä on esimerkki kustannusten jakosäännöstä, jos sähkön kaavan kohdistu
 | CC002       | FI   | 1,00      | (1/3) × summa     |
 | CC003       | VS   | 1,00      | (1/3) × summa     |
 
-### Esimerkki 2: Lisäasetuksia käyttävä kaava
-<a id="example-2-an-advanced-formula" class="xliff"></a>
+### <a name="example-2-an-advanced-formula"></a>Esimerkki 2: Lisäasetuksia käyttävä kaava
 Tässä esimerkissä sähkön kustannus ei vain seuraa toteutunutta sähkönkulutusta kilowattitunteina. Johto haluaa sisällyttää kannustimen sähkönkulutuksen vähentämiseen. 
 
 | Sääntö              | Osuus | 

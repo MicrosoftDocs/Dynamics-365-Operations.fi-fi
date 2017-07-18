@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 12afcde947463b3abf58dea6138653a32dcda6f1
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Projektinhallinta ja kirjanpito
-<a id="project-management-and-accounting" class="xliff"></a>
+# <a name="project-management-and-accounting"></a>Projektinhallinta ja kirjanpito
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,14 +34,12 @@ Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla 
 
 Projekti on tehtäväryhmä, joka on suunniteltu tarjoamaan palvelu, tuottamaan tuote tai tuloksen saavuttamiseksi. Projektit kuluttavat resursseja ja luovat taloudellisia tuloksia tuottojen tai käyttöomaisuuden muodossa.
 
-## Projektit eri aloilla
-<a id="projects-across-industries" class="xliff"></a>
+## <a name="projects-across-industries"></a>Projektit eri aloilla
 Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla kuvassa esitetyllä tavalla. [![Projektit eri aloilla](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 Puhelinpalvelukeskuksessa, lipun avulla voidaan kuvata joukko toimenpiteitä, joita puhelun ratkaiseminen edellyttää. Konsulttiyritykset, kuten hallinnolliset tai tekniset konsulttiorganisaatiot tai mainostoimistot, viittaavat toimintoihinsa projekteina. Markkinoinnissa kampanja edustaa työtehtäviä, jotka pitää toimittaa. Projektiin perustuvassa valmistuksessa, tuotantotilaus liittyy eri töihin, jotka on tehtävä valmiiden tuotteiden tuottamiseksi. Mitä nimiä niistä käytetäänkään, näihin projekteihin sisältyy resursseja, aikatauluja ja kustannuksia. Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin projektinhallinta- ja kirjanpitotoiminnot voivat auttaa suunnittelussa, suorituksessa ja projektianalyysissa.
 
-## Projektin vaiheet
-<a id="project-phases" class="xliff"></a>
+## <a name="project-phases"></a>Projektin vaiheet
 Vaikka seuraava prosessinkulku on suunnattu ulkoisiin projekteihin tai projektiin, jotka ovat valmiita yhdelle tai useammalle asiakkaalle, toiminto koskee myös sisäisiä kustannus vain -projekteja. 
 
 ![Projektin 3 vaihetta](./media/3-stages-of-a-project.png) 
@@ -53,12 +50,10 @@ Kuten edellisessä kuvassa näkyy, projektinhallinta ja kirjanpito voidaan jakaa
 2.  Suorita
 3.  Analysoi
 
-## Aloita projekti
-<a id="initiate-the-project" class="xliff"></a>
+## <a name="initiate-the-project"></a>Aloita projekti
 Projektin aloittamisessa suoritetaan useita keskeisiä prosesseja. Voit lähettää asiakkaalle työmäärän arvion, kulut ja materiaalin projektitarjouksena. Voit tallentaa laskutuksen ehdot, rajoitukset ja sopimukset projektisopimukseen. Voit käyttää työnositus (WBS) suunnitelmaa arvioimaan työtä. Voit määrittää budjetit ja ennusteet ja ohjata projektin suorittamista. Seuraavassa kuvassa näkyy projektin rakenne. [![projektin rakenne](./media/project-structure1.jpg)](./media/project-structure1.jpg)  
 
-### Luo projektitarjoukset
-<a id="create-project-quotations" class="xliff"></a>
+### <a name="create-project-quotations"></a>Luo projektitarjoukset
 
 Projektin myynnin alkuvaiheessa voit projektitarjouksen avulla tarjota asiakkaalle tarjouksen, joka ei ole sitova. Tarjous voi sisältää useita elementtejä, kuten tarjoukseen sisältyvät nimikkeet ja palvelut, perusyhteystiedot, erityiskauppasopimukset ja alennukset sekä mahdolliset verot ja lisämaksut.
 
@@ -66,27 +61,23 @@ Voit myös tehdä organisaatiosi ja asiakkaan välisen takuuasiakirjan projektit
 
 Lisätietoja on kohdassa [Projektitarjoukset](project-quotations.md).
 
-### Luo projektisopimukset
-<a id="create-project-contracts" class="xliff"></a>
+### <a name="create-project-contracts"></a>Luo projektisopimukset
 
 Kun saat sopimuksen asiakkaan tai muun rahoituslähteen kanssa viedäksesi projektin loppuun, sinun on ensin luotava projektisopimus. Seuraavaksi, kun luot projektin, sinun on määritettävä se vastaavaan sopimukseen. Se, minkä tyyppisen projektin luot projektisopimukselle, määrittää millä tavalla projektin asiakkaita laskutetaan. Voit muokata projektisopimusta ja siihen liittyvää projektia, mutta et voi muuttaa projektityyppiä. Lisätietoja projektityypeistä kohdassa "Projektien luominen".
 
 Lisätietoa projektisopimuksista kohdassa [Projektisopimukset](project-contracts.md)
 
-### Luo työrakenteen malleja
-<a id="create-work-breakdown-structures" class="xliff"></a>
+### <a name="create-work-breakdown-structures"></a>Luo työrakenteen malleja
 
 Työrakenteen tarkkuus riippuu arvioiden ja arvioissa käytettävien seurantasojen vaaditusta tarkkuustasosta. Projektit, joissa on vähän toleranssia aikataulussa tai hinnassa lipeämiseen, edellyttävät tavallisesti yksityiskohtaisemman työnosituksen (WBS) ja ne myös edellyttävät, että työnkulkua ja kustannuksia seurataan turvallisemmin työnosituksen puitteissa. 
 
 Lisätietoja on kohdassa [Työrakenteet](work-breakdown-structures.md).
 
-### Projektibudjettien ja ennusteiden luominen
-<a id="create-project-forecasts-and-budgets" class="xliff"></a>
+### <a name="create-project-forecasts-and-budgets"></a>Projektibudjettien ja ennusteiden luominen
 
 Jos organisaatiossasi on toiminnallinen näkökulma ja keskitytään tuottoihin ja kustannuksiin, jotka ovat peräisin tietyistä tapahtumista, voidaan käyttää ennusteita. Mutta jos organisaatiosi keskittyy enemmän taloushallinnon summiin, voit käyttää budjetointia. Kummallakin menetelmällä on omat etunsa. Lisätietoja on kohdassa [Projektien budjetit ja ennusteet](project-forecasts-budgets.md).
 
-### Luo projektit
-<a id="create-projects" class="xliff"></a>
+### <a name="create-projects"></a>Luo projektit
 
 Voit luoda kuusi eri projektityyppiä Microsoft Finance and Operationsissa. Kullekin projektityypille on määritetty eri kustannukset ja tuotot tunnistamista varten. Valitsemasi projektityyppi määräytyy projektin tarkoituksen mukaan. Seuraavassa taulukossa kuvataan jokaisen projektityypin tavallinen käyttötarkoitus.
 
@@ -101,8 +92,7 @@ Voit luoda kuusi eri projektityyppiä Microsoft Finance and Operationsissa. Kull
 | Aika              | Aikaprojekteja käytetään seuraamaan aikaa, joka liitetään ei-veloitettaviin ja tuottamattomiin toimintoihin, kuten projektiin, joka seuraa työntekijöiden sairaslomia. Aikaprojektien tapahtumia ei kirjata kirjanpitoon. Sen sijaan ne on sisällytetty työntekijän käyttöasteen raportteihin. Aikaprojekteissa voi tallentaa vain tuntitapahtumia. Voit rekisteröidä nämä tunnit projektiin kirjauskansion tai aikaraportin avulla. Kun tunnit kirjataan, ne näkyvät projektin tapahtumina, joilla ei ole vastaavaa tositetapahtumaa. **Huomautus:** Aikaprojektien tapahtumia ei näytetä **Kirjaa kustannukset**-, **Jaksota tuotot**- tai **Luo laskutusehdotukset** -sivulla.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 
-### Työntekijöiden, luokkien ja resurssien määrittäminen
-<a id="assign-workers-categories-and-resources" class="xliff"></a>
+### <a name="assign-workers-categories-and-resources"></a>Työntekijöiden, luokkien ja resurssien määrittäminen
 
 Voit ajoittaa työntekijäresurssit, jotka perustuvat joko projektin vaatimuksiin ja aikatauluun, tai työntekijöiden taitoihin ja käytettävyyteen. Resurssin ajoituksen avulla voit ottaa käyttöön oman organisaatiosi työntekijöiden resurssit tehokkaasti. Löydät nopeasti pätevimmät työntekijät, jotka ovat käytettävissä projektiasi varten. Näet myös helposti, miten näitä työntekijöitä voidaan käyttää tehokkaammin projektin aikana. 
 
@@ -115,26 +105,22 @@ Seuraavassa on esimerkkejä siitä, kuinka voit käyttää resurssien ajoitustoi
 -   Tarkastele työntekijän käyttöä joko yhteenvetona (esimerkiksi osaston tai työntekijän mukaan) tai valitse yksityiskohtainen näkymä (kuten osaston työntekijöiden mukaan tai kaikkien työntekijöiden viikoittaisten tietojen mukaan).
 -   Muokkaa resurssinmäärityksiä eri aikayksiköille, kuten päivä, viikko tai kuukausi, jotta työntekijöiden käyttö voidaan optimoida.
 
-## Projektin suorittaminen
-<a id="execute-the-project" class="xliff"></a>
+## <a name="execute-the-project"></a>Projektin suorittaminen
 Projektia suoritettaessa ryhmän jäsenet tai esimies tallentavat työmäärä ja aiheutuneet kustannukset, käyttämällä aikaraportteja, kuluraportteja ja muita liikeasiakirjoja. Projektipäälliköillä on työkaluja, joiden avulla he voivat seurata projektin budjetoitujen kokonaissummien käyttöä. Projektipäälliköt voivat myös tilata, kerätä tai hankkia materiaaleja projekteihin käyttämällä ostotilauksia ja muita liiketoiminta-asiakirjoja. Laskut laaditaan ja hyväksytään, niin että asiakkaita laskutetaan käynnissä olevasta työstä. Lopuksi tämän prosessin aikana tuotto hyväksytään vaikuttamaan organisaation myyntitietoja.
 
-### Hallitse työrakenteen malleja
-<a id="manage-work-breakdown-structures" class="xliff"></a>
+### <a name="manage-work-breakdown-structures"></a>Hallitse työrakenteen malleja
 
 WBS on kuvaus työstä, joka on suoritettava projektia varten. WBS on työtehtävien arvojärjestys. Se vastaa ei ainoastaan kuhunkin tehtävään liittyvästä työstä, mutta myös koosta, kustannuksista ja tehtävän kestosta. 
 
 Lisätietoja on kohdassa [Työrakenteet](work-breakdown-structures.md).
 
-### Projektibudjettien ja ennusteiden hallinta
-<a id="manage-project-forecasts-and-budgets" class="xliff"></a>
+### <a name="manage-project-forecasts-and-budgets"></a>Projektibudjettien ja ennusteiden hallinta
 
 Projekteja voidaan hallita ja kontrolloida kahdella tavalla: projektiennusteilla ja projektien budjeteilla. Jos organisaatiossasi on toiminnallinen näkökulma ja keskitytään tuottoihin ja kustannuksiin, jotka ovat peräisin tietyistä tapahtumista, voidaan käyttää ennusteita. Mutta jos organisaatiosi keskittyy enemmän taloushallinnon summiin, voit käyttää budjetointia.
 
 Lisätietoja on kohdassa [Projektien budjetit ja ennusteet](project-forecasts-budgets.md).
 
-### Luo tuotantotilauksia
-<a id="create-production-orders" class="xliff"></a>
+### <a name="create-production-orders"></a>Luo tuotantotilauksia
 
 Projekteihin liittyvä tuotantotilaus voidaan yhdistää myyntitilaukseen tai nimiketarpeeseen, joko käyttämällä valmiissa nimike -menetelmää tai kulutettu nimike -menetelmää. Lisäksi jos tuotantotilaus on luotu manuaalisesti, ei ole linkkiä tuotantotilauksen ja myyntitilauksen tai nimikevaatimuksen välillä (ei linkkiä tilaukseen). Mutta jos tuotantotilaus on luotu automaattisesti myyntitilauksen tai nimiketarpeen täyttämiseksi, tuotantotilauksen ja myyntitilauksen tai nimiketarpeen välillä on yhteys (linkki tilaukseen). 
 
@@ -145,13 +131,11 @@ Perustuen näiden tekijöiden yhdistelmiin, käytä yhtä seuraavista tavoista:
 -   **Käytetty nimike / linkki tilaukseen** – yhdistää projektin nimiketarpeeseen. Tämän menetelmän avulla voit tarkastella toteutuneita projektikustannuksia, kun tuotannon tila on **Aloitettu** tai kun tuotanto raportoidaan valmiiksi. Kustannukset kirjataan useina tuotannossa käytettyjen raaka-aineiden ja tuntien projektinimiketapahtumina. Kun nimiketarve päivitetään pakkausluetteloon, projektikustannuksia ei kirjata. Voit myös määrittää, millä tuoterakennehierarkian tasolla tuotannon projekteja seurataan.
 -   ****Käytetty nimike / ei linkkiä tilaukseen**** – yhdistää projektin nimiketarpeeseen. Tämän menetelmän avulla voit tarkastella toteutuneita projektikustannuksia, kun tuotannon tila on **Aloitettu** tai kun tuotanto raportoidaan valmiiksi. Kustannukset kirjataan useina tuotannossa käytettyjen raaka-aineiden ja tuntien projektinimiketapahtumina. Voit myös määrittää, millä tuoterakennehierarkian tasolla tuotannon projekteja seurataan.
 
-### Hanki tuotteita ja palveluja
-<a id="procure-products-and-services" class="xliff"></a>
+### <a name="procure-products-and-services"></a>Hanki tuotteita ja palveluja
 
 Nimikkeiden ostaminen ja myyminen ovat tärkeimpiä tehtäviä monissa projekteihin keskittyneissä yrityksissä.
 
-#### Projektin ostotilaukset
-<a id="purchase-orders-for-projects" class="xliff"></a>
+#### <a name="purchase-orders-for-projects"></a>Projektin ostotilaukset
 
 Ostotilauksen tarkoitus määrittää ostotilauksen kulutusajankohdan ja tämän vuoksi sen, mitkä nimikkeet veloitetaan projektissa.
 
@@ -191,8 +175,7 @@ Ostotilauksen tarkoitus määrittää ostotilauksen kulutusajankohdan ja tämän
 </tbody>
 </table>
 
-#### Projektien myyntitilaukset
-<a id="sales-orders-for-projects" class="xliff"></a>
+#### <a name="sales-orders-for-projects"></a>Projektien myyntitilaukset
 
 Projektinhallinnassa ja kirjanpidossa nimikkeiden kulutus voidaan rekisteröidä usealla eri tavalla. Voit myydä tai ostaa nimikkeitä projektista tai varata nimikkeitä projektia varten. 
 
@@ -215,8 +198,7 @@ Seuraavassa taulukossa kuvataan menetelmät nimikkeiden tilaamiseksi ja kuinka n
 | Nimiketarve  | Kirjoita nimikkeet, joita ei kuluteta välittömästi. Tämän menetelmän avulla voidaan seurata yksittäisessä nimiketarvetietueessa kulutettuja nimikemääriä.    | Nimiketapahtumat kulutetaan pakkausluettelon päivityksen yhteydessä. Toisin sanoen nimiketarve luodaan pakkausluettelon kirjaamisen yhteydessä. |
 | Ostotilaukset   | Kirjoita tapahtumat yhteen kolmesta sijainnista ostomenetelmästä riippuen.                                                                              | Nimiketapahtumia kulutetaan pakkausluettelon päivityksen yhteydessä, tai asiakkaan tai toimittajan laskutuksen yhteydessä.                                      |
 
-### Projektilaskujen käsittely
-<a id="process-project-invoices" class="xliff"></a>
+### <a name="process-project-invoices"></a>Projektilaskujen käsittely
 
 Projektityyppi määrittää, mitä laskutusmenettelyä käytetään. Vain kahta ulkoista projektityyppiä (aika- ja materiaaliprojektit sekä kiinteähintaiset projektit) voidaan laskuttaa. Aika- ja materiaaliprojektit sekä kiinteähintaiset projektit liittyvät aina projektisopimukseen. 
 
@@ -226,8 +208,7 @@ Ennen kuin luot projektin myyntilaskun, voit luoda alustavan laskun tai laskuehd
 Lisätietoja projektilaskujen käsittelystä on kohdassa [Projektien laskutus](../accounts-payable/project-invoicing.md).
 
 
-### Projektin jäljellä olevien kustannusten laskeminen
-<a id="calculate-the-cost-to-complete-a-project" class="xliff"></a>
+### <a name="calculate-the-cost-to-complete-a-project"></a>Projektin jäljellä olevien kustannusten laskeminen
 
 Kun luot arvion, voit valita projektin loppuun suorittamiseen tarvittavien kustannusten laskennassa käytettävän menetelmän. Voit valita menetelmän **jäljellä olevat kustannukset**-kentästä **arvion luominen** -sivulla. Valitsemaasi menetelmää käytetään erikseen jokaisessa kustannusrivissä arvioiduissa kustannuksissa. Kun rivin tilana on **luotu**, menetelmä jota käytetään voidaan muuttaa **kustannusarvio**-sivulla. 
 
@@ -279,21 +260,18 @@ Finance and Operations ei vähennä ennustettuja arvioita automaattisesti. Siksi
 </tbody>
 </table>
 
-## Projektin analysointi
-<a id="analyze-the-project" class="xliff"></a>
+## <a name="analyze-the-project"></a>Projektin analysointi
 Perustasolla, projektia käytetään ryhmittämään tapahtumat ja kirjaamaan kustannukset, ja sitten kirjaamaan nämä kustannukset kirjanpitoon. 
 
 Yleensä nämä tapahtumat perustuvat asiakirjoihin, kuten aikaraportteihin, kuluraportteihin, toimittajalaskuihin tai varastotapahtumiin. Projektin elinkaari alkaa yleensä arvioista, ennustuksista ja budjeteista, joka auttavat suunnittelemaan ja ennakoimaan projektiin liittyvät työt ja taloudelliset vaikutukset. Kun analysoit projektin, voit arvioida ei vain sellaisia tapahtumia, jotka tapahtuivat projektin aikana, mutta myös ennusteiden sekä arvioiden paikkansapitävyyden, projektin jäsenten käyttöasteen ja yleisen onnistumisen projektin aikana.
 
-### Anaysoi kassavirta
-<a id="analyze-cash-flow" class="xliff"></a>
+### <a name="analyze-cash-flow"></a>Anaysoi kassavirta
 
 Kassavirran seurantatoiminnon avulla voit tarkistaa sekä projektin ennustetun että todellisen kassavirran. Kassavirran voi tarkistaa, kun projekti on meneillään, mutta myös päättyneen projektin kassavirtaa voi tarkastella. 
 
 Kassavirtoja valvomalla voidaan arvioida yksittäisiä projekteja, käyttää raportteja useiden projektien tarkasteluun ja siirtää projektin kassavirtoja kirjanpidon kassavirtaennusteisiin.
 
-#### Kassavirtauksen ennustaminen
-<a id="cash-inflow-forecasting" class="xliff"></a>
+#### <a name="cash-inflow-forecasting"></a>Kassavirtauksen ennustaminen
 
 Voit ennustaakassavirtaukset valitulle projektille asetustesi mukaisesti. Esimerkiksi, jos projektipäivämäärä on 5. maaliskuuta 2012 ja laskutat 31. maaliskuuta 2012, näin voit ennustaa eräpäivän ja odotetun myynnin maksupäivän:
 
@@ -309,8 +287,7 @@ Yleiset puskuripäivät voivat korvata joko yksittäiset puskuripäivät tai ne 
 
 Projektisopimuksen mukainen yksittäisten puskuripäivien asettaminen. Päivämäärät lasketaan sekä myynnin eräpäivän perusteella että sen perusteella, mitä organisaatiosi tietää asiakkaan maksutottumuksista.
 
-#### Todellinen kassavirta
-<a id="actual-cash-inflow" class="xliff"></a>
+#### <a name="actual-cash-inflow"></a>Todellinen kassavirta
 
 Todellinen kassavirta sisään on hyvin samankaltainen kuin ennustettu kassavirta, mutta laskutoimitukset voidaan aloittaa ensimmäisestä laskun päivämäärästä. Tässä on esimerkki:
 
@@ -318,8 +295,7 @@ Todellinen kassavirta sisään on hyvin samankaltainen kuin ennustettu kassavirt
 -   **Eräpäivä:** 16.3.2012. Maksuehdoksi määritetään 14 päivää.
 -   **Odotettu myynnin maksupäivä:** 29.3.2012. Laskentaan sisältyy kolme yleistä puskuripäivää ja 10 yksittäistä puskuripäivää.
 
-#### Kustannusennusteiden tekeminen
-<a id="cost-forecasting" class="xliff"></a>
+#### <a name="cost-forecasting"></a>Kustannusennusteiden tekeminen
 
 Määriteltyjen päivien mukaan kustannuksien maksupäivä voi olla eri kuin projektipäivämäärä. Tällöin kustannusten maksupäivä lasketaan lisäämällä päivien lukumäärä projektipäiväyksestä päivien lukumäärään maksuehdoissa. 
 
@@ -348,16 +324,14 @@ Kun kaikki myynti- ja toimittajalaskut ovat valmiita, voit tarkastella kenttien 
 | Kassavirta ulos  | Kokonaiskustannukset              |
 | Nettokassavirta | Käyttökate            |
 
-### Tarkista kustannukset
-<a id="review-costs" class="xliff"></a>
+### <a name="review-costs"></a>Tarkista kustannukset
 
 Voit valvoa organisaatiollesi projektin aikana aiheutuvia kustannuksia **kustannusseuranta**-sivulla. Vertaamalla alkuperäisiä projektin budjetoituja kustannuksia projektin nykyisiin toteutuneisiin kustannuksiin ja sidottuihin kustannuksiin voidaan määrittää, onko projekti aikataulussa, meneenkö se budjetin yli tai ali. 
 
 > [!NOTE] 
 > Käytettäessä **Kustannusseuranta**-sivua tarkastellaksesi projektikustannuksien nykyistä tilaa, käytä ennustemalleja, jotka valittiin alkuperäiselle sekä jäljellä olevalle budjetille. Jos valitset muita ennustemalleja, kun lasket kustannuksia, laskennan tulokset eivät ole tarkkoja.
 
-#### Jäljellä olevien budjetoitujen summien tarkasteleminen
-<a id="viewing-the-remaining-budgeted-amounts" class="xliff"></a>
+#### <a name="viewing-the-remaining-budgeted-amounts"></a>Jäljellä olevien budjetoitujen summien tarkasteleminen
 
 Jos **jäljellä oleva budjetti** on valittu kustannuksien hallintamenetelmäksi **projektin hallinta ja kirjanpidon parametrit** -sivulla **kustannusseuranta**-sivu laskee kustannukset, joita ei ole kirjattu toteutuneiksi tai merkitty sidotuiksi. Erityisesti, summat **yleiset**-välilehdessä, alemmassa ruudussa **kustannusseuranta**-sivulla, lasketaan seuraavasti:
 
@@ -374,8 +348,7 @@ Jos **jäljellä oleva budjetti** on valittu kustannuksien hallintamenetelmäksi
 -   **Määrään perustuva varianssi** – alkuperäisen ennusteen ja kokonaisennusteen summien ero yhteensä. Ero voidaan ilmaista matemaattisesti seuraavasti (ennusteen kokonaismäärä) × (alkuperäinen keskimääräinen hinta - keskimääräinen hinta yhteensä). Tämä laskutoimitus koskee vain projektitunteja.
 -   **Hintaan perustuva varianssi** – alkuperäisen ennusteen ja kokonaisennusteen summien ero yhteensä. Ero voidaan ilmaista matemaattisesti seuraavasti (alkuperäinen ennusteen hinta) × (alkuperäinen ennusteen määrä – ennusteen kokonaismäärä). Tämä laskutoimitus koskee vain projektitunteja.
 
-#### Budjetoitujen kokonaissummien tarkasteleminen
-<a id="viewing-the-total-budgeted-amounts" class="xliff"></a>
+#### <a name="viewing-the-total-budgeted-amounts"></a>Budjetoitujen kokonaissummien tarkasteleminen
 
 Jos **kokonaisbudjetti** on valittu kustannuksien hallintamenetelmäksi **projektin hallinnan ja kirjanpidon parametrit** -sivulla **kustannusseuranta** -sivu laskee projektin todelliset kustannukset ja kokonaiskustannukset, jotta voit määrittää näiden kahden väliset erot. Erityisesti, **Budjetin hallinta**-sivulla, summat alemman ruudun sarakkeissa **yleistä**-välilehdessä, lasketaan seuraavasti:
 
@@ -392,8 +365,7 @@ Jos **kokonaisbudjetti** on valittu kustannuksien hallintamenetelmäksi **projek
 -   **Määrään perustuva varianssi** – alkuperäisen budjetin ja kokonaisbudjetin summien ero yhteensä. Tämä summa lasketaan vähentämällä kaikki budjetoidut tunnit alkuperäisistä budjetoiduista tunneista ja kertomalla erotus alkuperäisellä budjetoidulla kustannushinnalla. Tämä erotus voidaan ilmaista matemaattisesti (alkuperäinen budjetoitu kustannushinta) × (alkuperäiset budjetoidut tunnit – kaikki budjetoidut tunnit). Tämä laskutoimitus koskee vain projektitunteja.
 -   **Hintaan perustuva varianssi** – Tämä summa lasketaan vähentämällä kaikki budjetoidut tunnit alkuperäisistä budjetoiduista tunneista ja kertomalla erotus kulutettujen tuntien kokonaismäärällä. Tämä erotus voidaan ilmaista matemaattisesti (kaikki budjetoidut tunnit) × (alkuperäiset budjetoidut tunnit – kaikki budjetoidut tunnit). Tämä laskutoimitus koskee vain projektitunteja.
 
-### Analysoi käyttö
-<a id="analyze-utilization" class="xliff"></a>
+### <a name="analyze-utilization"></a>Analysoi käyttö
 
 Käyttöaste on sen ajan prosenttiosuus, jolloin työntekijä tekee laskutettavaa tai tuottavaa työtä tietyllä kaudella. Laskutettavat tunnit ovat työntekijän tunnit, joka veloitetaan tietylle asiakkaalle. 
 
@@ -420,8 +392,7 @@ Laske käyttöaste **tuntien käyttö** -sivulla. Laskelmat perustuvat oletusase
 
 Kun lasket työntekijän käyttöastetta, voit käyttää normaalitunteja tai sisällytettyjä tunteja. Käytettäessäsi sisällytettyjä tunteja varmista, että työntekijät kirjaavat kaiken heidän käyttämänsä ajan tuntilomakkeen ajanjaksoihin, sillä laskenta näkyy kirjattujen tuntien prosenttiosuutena. Kun lasket tuntien käyttöastetta projektiin, projektisopimukseen, asiakastietueeseen tai luokkaan, sinun tulee käyttää sisällytettyjä tunteja laskentaan.
 
-### Tarkastele projektilaskelmia
-<a id="review-project-statements" class="xliff"></a>
+### <a name="review-project-statements"></a>Tarkastele projektilaskelmia
 
 Voit luoda projektilaskelman tarkastellaksesi nopeasti projektin tilaa. Kun suoritat projektilaskelman, voit määrittää valitsemasi kriteerit, joita käytetään laskelman luomisessa, tekemällä valintoja **yleiset**-välilehden **projektilaskelmat**-sivulla. Voit valita lisäätkö vai poistatko seuraavat tiedot:
 

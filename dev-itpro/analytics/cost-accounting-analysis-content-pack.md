@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 270274
 ms.assetid: b74549df-35d5-4f2f-b3c7-405b0d38ea78
 ms.search.region: Global
 ms.author: aevengir
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,18 +23,15 @@ ms.openlocfilehash: 1d19276331a4278f44ad14292ed434c49b74d727
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Kustannuslaskennan analyysin Power BI -sisältö
-<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
+# <a name="cost-accounting-analysis-power-bi-content"></a>Kustannuslaskennan analyysin Power BI -sisältö
 
 [!include[banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, mitä **Kustannuslaskenta-analyysi** – Power BI -sisältöön sisältyy. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Yleiskuvaus
 
 **Kustannuslaskenta-analyysi** – Microsoft Power BI -sisältö on tarkoitettu kustannuksista vastaaville henkilöille tai kenelle tahansa, joka on vastuussa organisaation kustannusseurannasta. Se sisältää tärkeitä mittareita, kuten kustannukset, suuruus ja kustannushinta budjetin kustannusten, todellisten kustannusten ja joustavan budjetin kustannusten mukaan. Se käyttää **Kustannuslaskentamoduulin** tapahtumatietoja ja tarjoaa koko organisaation kustannusten kokoomanäytön yhtenä raportointivaluuttana. Esimiehet voit suodattaa tietoja kustannusobjektien mukaan suorittaakseen kustannusseurantaa organisaatioyksiköille, vaikka organisaatiolla voi olla useita yrityksiä. 
 
@@ -45,8 +43,7 @@ Katso lisätietoja kustannuslaskennasta ohjeaiheesta [Kustannuslaskennan aloitus
 
 Määrittämällä käyttäjätason suojauksen kustannuslaskentaan ja yhdistämällä sen rivitason suojaukseen Power BI:ssä, voit myöntää kaikille kustannusobjektien omistajille pääsyn **Kustannuslaskennan analyysin** Power BI -sisältöön. Kaikki visualisoinnin data sitten suodatetaan sen käyttöoikeustason perusteella, jota ohjataan kustannuslaskennassa. Saat lisätietoja käyttöoikeustason suojauksesta ja rivitason suojauksesta ohjeaiheesta [Kustannuslaskennan Power BI -sisällön suojauksen määrittäminen](setup-security-cost-accounting-content-pack.md).
 
-## Power BI -sisällön käyttö
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 Löydät **Kustannuslaskennan analyysin** Power BI -sisällön Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
 
 Muista ladata käyttämääsi Microsoft Dynamics 365 -versiota vastaava **Kustannuslaskenta-analyysi** -sisältö.
@@ -54,8 +51,7 @@ Muista ladata käyttämääsi Microsoft Dynamics 365 -versiota vastaava **Kustan
 > [!NOTE]
 > KB 4011327 on edellytys tämän Power BI -sisällön käytölle. Kun olet kirjautunut LCS:ään, voit avata KB-artikkelin osoitteessa <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
-## Mittareita, jotka sisältyvät Power BI -sisältöön
-<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 Sisältö sisältää joukon raporttisivuja. Jokainen sivu koostuu joukosta mittareita, jotka ovat visualisoitu kaavioiden, ruutujen ja taulukoiden muodossa. Seuraavassa taulukossa on yleiskatsaus visualisoinneista **kustannuslaskennan analyysin** Power BI -sisällössä.
 
 | Raporttisivu                      | Kaavio                                                                                                                         | Ruutu                                          |
@@ -76,8 +72,7 @@ Sisältö sisältää joukon raporttisivuja. Jokainen sivu koostuu joukosta mitt
 | Kustannusraportti tilikauden mukaan  | Todelliset kustannukset kustannuselementin hierarkiatason mukaan ja kustannusobjektin dimension jäsenen nimen mukaan                                             |                                               |
 |                                  | Todelliset kustannukset kustannusobjektin dimension jäsenen nimen mukaan ja kustannustason dimension jäsenen nimen mukaan                                       |                                               |
 
-## Tietomallin ja yksiköiden tiedot
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 Seuraavilla tiedoilla täytetään **Kustannuslaskenta-analyysi** – Power BI -sisällön raporttisivut. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md). 
 
 Seuraavia tärkeitä koostettuja mittoja käytetään sisällön perustana.

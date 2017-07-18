@@ -15,7 +15,7 @@ ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ms.search.region: Global
 ms.author: abruer
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -23,11 +23,9 @@ ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/14/2017
 
-
 ---
 
-# Toimittajayhteistyön laskutustyötila
-<a id="vendor-collaboration-invoicing-workspace" class="xliff"></a>
+# <a name="vendor-collaboration-invoicing-workspace"></a>Toimittajayhteistyön laskutustyötila
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +36,7 @@ Tässä aiheessa kerrotaan, miten toimittajien laskuja voidaan tarkastella ja l�
 Toimittajayhteistyön laskutustyötila
 ----------------------------------------
 
-### Yhteenvetoruudut
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Yhteenvetoruudut
 
 **Yhteenveto**-ruuduissa näkyy yhteenveto valitun toimittajan laskuista. Voit tarkastella laskuja tilan mukaan.
 -   Luonnoslaskuja ei ole lähetetty työnkulkuun.
@@ -48,8 +45,7 @@ Toimittajayhteistyön laskutustyötila
 -   Maksetut laskut on maksettu kokonaan Finance and Operations -järjestelmässä.
 
 Ruutua napsauttamalla avautuu suodatettu näkymä **laskujen luettelo** sivulle.
-### Taulukkoluettelot
-<a id="tabular-lists" class="xliff"></a>
+### <a name="tabular-lists"></a>Taulukkoluettelot
 
 **Taulukkoluettelot** kohdassa laskutuksen tila on eritelty samalla tavalla kuin yhteenvetoruuduissa: Luonnos- ja Lähetetty, ei hyväksytty -luetteloissa. Luonnos-tilassa lasku voidaan lähettää työnkulkuun tai poistaa. Viimeisessä taulukkoluettelossa voit etsiä laskut. Suodattamalla saat nopeampia hakuja.
 Kaikki toimittajan laskut -luettelosivu

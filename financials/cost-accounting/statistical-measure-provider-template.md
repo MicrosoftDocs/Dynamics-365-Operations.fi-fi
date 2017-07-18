@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: 180863b5c3b8fe7870ab58f3849e52583f5880c1
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Tilastodimension jäsenet ja tilastomittauksen lähdemallit
-<a id="statistical-dimension-members-and-statistical-measure-provider-templates" class="xliff"></a>
+# <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Tilastodimension jäsenet ja tilastomittauksen lähdemallit
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Tilastodimensiota ja sen jäseniä käytetään rekisteröitäessä ja hallittae
 - Kohdistusperusteena kustannusten jaon tai kustannusten kohdistuksen tyyppisissä käytännöissä.
 - Ei-rahallista kulutusta raportoitaessa
 
-## Tilastodimensio
-<a id="statistical-dimension" class="xliff"></a>
+## <a name="statistical-dimension"></a>Tilastodimensio
 
 Tilastodimensiolla on yksilöivä nimi ja joukko yksilöiviä dimension jäseniä. Tilastodimensio määritetään kustannuslaskennan kirjanpidon tunnukselle. Tämä suhde sitoo kaikki vastaavat tilastodimension jäsenet kustannuslaskennan kirjanpitoon. Tämän vuoksi kaikki tilastomerkinnät luodaan kustannuslaskennan kirjanpidon kontekstissa.
 
@@ -57,8 +55,7 @@ Esimerkki tilastodimensiosta, joka on määritetty kustannuslaskennan kirjanpito
 |-----------------------|---------------------|--------------------|-----------------|------------------------|-----------------------------|
 | Johdon laskentatoimi | USD                 | Vakiovaluutta  | Tilikausi     | Jaetut kustannustasot   | Jaetut tilastoelementit |
 
-## Tilastodimension jäsenet
-<a id="statistical-dimension-members" class="xliff"></a>
+## <a name="statistical-dimension-members"></a>Tilastodimension jäsenet
 
 Tilastodimension jäsen edustaa yksikköä, jolle haluat rekisteröidä ei-rahalliset toimenpiteet. Näitä toimenpiteitä voidaan käyttää kohdistusperusteena tai ei-rahallisten arvojen raportointiin.
 
@@ -74,8 +71,7 @@ Seuraavassa on esimerkkejä tyypillisistä tilastodimension jäsenistä.
 | Jaetut tilastoelementit | Sähkö          | Sähkönkulutus | kWh  |
 | Jaetut tilastoelementit | Pak. KP              | Pakkauksen kustannuspaikka   | h |
 
-## Tilastomittauksen lähdemalli
-<a id="statistical-measure-provider-template" class="xliff"></a>
+## <a name="statistical-measure-provider-template"></a>Tilastomittauksen lähdemalli
 
 Tilastomittaukset voivat olla peräisin monenlaisista lähteistä. Microsoft Dynamics 365 for Finance and Operations Enterprise edition on erinomainen tilastomittausten lähde. Voit käyttää tilastomittauksen lähdemallia määrittämään helposti tuotavia tilastomittauksia.
 
@@ -113,8 +109,7 @@ Kun luot **Tilastomittauksen lähdemalli**-tietueen, sinun on päätettävä, mi
 - **Määrä** – Tietueiden kustannusobjektikohtainen määrä siirretään.
 - **Summa** – Tietueiden kustannusobjektikohtainen summa siirretään. ( **Summa**-kenttä ja **Päivämäärä**-kenttä ovat pakollisia.)
 
-## Määrä-toiminnon käyttö
-<a id="using-the-count-function" class="xliff"></a>
+## <a name="using-the-count-function"></a>Määrä-toiminnon käyttö
 
 Tilastomittauksen lähdemalli voidaan määrittää seuraavasti.
 
@@ -183,8 +178,7 @@ Jos ennalta määritetyn dimension jäsenen FTE-kohdistusperuste on määritetty
 | CC002       | FI | 2,00      | (2/5) × summa    |
 | CC003       | VS | 2,00      | (2/5) × summa    |
 
-## Summa-toiminnon käyttö
-<a id="using-the-sum-function" class="xliff"></a>
+## <a name="using-the-sum-function"></a>Summa-toiminnon käyttö
 
 Tuotannon kustannuspaikka, CC010 (pakkaus), vastaa tuotteiden pakkausta ennen niiden toimitusta asiakkaille. Suorat työn kustannukset lisätään tuotteisiin tuoterakenteen ja reitityksen kautta. Kustannuspaikan ylläpidosta aiheutuvat epäsuorat kustannukset pitää myös määrittää valmistetuille tuotteille. Yleensä tällaisen määrityksen paras tilastomittaus on rekisteröity tuotekohtainen tuotantotuntimäärä tietyn ajan kuluessa.
 
@@ -271,8 +265,7 @@ Jos ennalta määritetyn dimension jäsenen Pak. KP -kohdistusperuste on määri
 | Appelsiinimehu, yritysmyynti      | 16,00     | (16 ÷ 24) × määrä |
 | Appelsiinimehu, kuluttajamyynti | 8,00      | (8 ÷ 24) × määrä  |
 
-## Tuodut tilastomittaukset
-<a id="imported-statistical-measures" class="xliff"></a>
+## <a name="imported-statistical-measures"></a>Tuodut tilastomittaukset
 
 Voit tuoda tilastomittauksia kustannuslaskentaan käyttämällä tietojen hallinnan tuonti/vienti-työkalua.
 
@@ -351,8 +344,7 @@ Jos ennalta määritetyn dimension jäsenen Sähkö-kohdistusperuste on määrit
 | CC002       | FI | 4,100.00  | (4 100 ÷ 21 550) × summa  |
 | CC003       | VS | 15,000.00 | (15 000 ÷ 21 550) × summa |
 
-## Lisätietoja
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Lisätietoja
 
 [Kohdistusperusteet](allocation-bases.md)
 

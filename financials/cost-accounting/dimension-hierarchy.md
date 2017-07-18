@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,18 +25,15 @@ ms.openlocfilehash: dcbab70d2057a2eb252538a51343fa8bae16873d
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Dimensiohierarkia
-<a id="dimension-hierarchy" class="xliff"></a>
+# <a name="dimension-hierarchy"></a>Dimensiohierarkia
 
 [!include[banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja dimensiohierarkioista. Dimensiohierarkian avulla voi määrittää kustannuslaskennan raportoinnin rakenteen, kustannuskäytännöt ja suojausasetukset.  
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Yleiskuvaus
 
 Dimensiohierarkioita käytetään useissa tilanteissa kustannuslaskennassa. Voit määrittää seuraavat tiedot dimensiohierarkian avulla:
 
@@ -59,26 +57,22 @@ Dimensiohierarkia voidaan luoda seuraaville dimensiotyypeille:
 > - Dimensiohierarkian rakenteessa voi olla rajoittamaton määrä tasoja. Kaikki tasot ovat käytettävissä **Kustannusseuranta**-työtilassa. Jos käytät raportointiin Microsoft Exceliä tai Microsoft Power BI:tä, vain 15 ensimmäistä dimensiohierarkian tasoa viedään. Tämä rajoitus on käytössä, koska sekä Excel että Power BI edellyttävät kiinteää rakennetta.
 > - Dimensiohierarkialla ei ole voimassaoloaikaa. Tämän vuoksi kaikki dimensiohierarkiaan tehdyt muutokset tallennetaan heti tietueeseen, eikä tiettyä päivämäärää edeltävää ja sen jälkeistä vertailua voi tehdä.
 
-## Dimensiohierarkiatyyppi
-<a id="dimension-hierarchy-type" class="xliff"></a>
+## <a name="dimension-hierarchy-type"></a>Dimensiohierarkiatyyppi
 
 Uutta dimensiohierarkiaa luotaessa on valittava hierarkiatyyppi. Valitse **Kustannuslaskenta** > **Dimensiot** > **Dimensiohierarkiat**. Valitse ensin **Uusi** ja sitten dimension hierarkiatyyppi. Voit valita joko **Dimension luokitushierarkia** tai **Dimension luokitteluhierarkia**.
 
-### Dimension luokitushierarkia
-<a id="dimension-categorization-hierarchy" class="xliff"></a>
+### <a name="dimension-categorization-hierarchy"></a>Dimension luokitushierarkia
 
 **Dimension luokitushierarkiaa** käytetään raportointiin. Se tukee vain kustannustason dimensioita. Kun valitset tämän tyypit, seuraavat säännöt ovat käytössä:
 
 -  Dimension jäsen voidaan liittää hierarkiarakenteeseen useammin kuin kerran.
 -  Voit sijoittaa kustannustason dimensiojäsenen eri solmukohtiin määrittämällä kustannustoiminnan lehtisolmuun.
 
-### Dimension luokitteluhierarkia
-<a id="dimension-classification-hierarchy" class="xliff"></a>
+### <a name="dimension-classification-hierarchy"></a>Dimension luokitteluhierarkia
 
 **Dimension luokitteluhierarkia** -tyyppiä käytetään sääntöjen määrittämiseen ja raportointiin. Se tukee kaikkia dimensiota, kuten kustannusobjekteja, kustannustasoja ja tilastodimensioita. Kun valitset tämän tyypin, dimension jäsen voidaan liittää hierarkiarakenteeseen vain kerran.
 
-## Dimensiohierarkian luominen ja ylläpitäminen
-<a id="create-and-maintain-a-dimension-hierarchy" class="xliff"></a>
+## <a name="create-and-maintain-a-dimension-hierarchy"></a>Dimensiohierarkian luominen ja ylläpitäminen
 
 Dimensiohierarkia luodaan puurakenteena, jossa on solmu- ja lehtisolmusuhteita
 
@@ -86,8 +80,7 @@ Dimensiohierarkia luodaan puurakenteena, jossa on solmu- ja lehtisolmusuhteita
 -  Solmuun ei voi olla määritettynä sekä alisolmuja että lehtisolmuja.
 -  Lehtisolmu voidaan määrittää vain hierarkian alimmalla tasolla.
 
-### Esimerkki
-<a id="example" class="xliff"></a>
+### <a name="example"></a>Esimerkki
 
 Pienyrityksessä on seuraava organisaatiorakenne, jossa ovat taloushallinto ja henkilöstöhallinto ovat hallinnon alaisia osastoja, kun taas kokoonpano ja pakkaus ovat tuotannon alaisia osastoja.
 
@@ -165,13 +158,11 @@ Käytännön dimensiohierarkia voidaan määrittää tässä kuvatulla tavalla.
 > [!NOTE]
 > Solmulla voi olla **Dimension jäsenalueet** -kohdassa 1:_n_ dimension jäsenaluetta. Voit lisätä ne dimension jäsentunnukset, jotka eivät ole vielä dimension jäseniä. Tämä menetelmä mahdollistaa hierarkian käytön myös tulevaisuudessa.  
 
-### Hierarkian kopiointi
-<a id="copy-a-hierarchy" class="xliff"></a>
+### <a name="copy-a-hierarchy"></a>Hierarkian kopiointi
 
 Voit kopioida nykyisen dimensiohierarkian uuden dimensiohierarkian lähtökohdaksi. Tämä on kätevää, jos haluat verrata edellistä dimensiohierarkiaa uuteen dimensiohierarkiaan.
 
-### Hierarkian solmujen järjestäminen uudelleen
-<a id="rearrange-nodes-in-a-hierarchy" class="xliff"></a>
+### <a name="rearrange-nodes-in-a-hierarchy"></a>Hierarkian solmujen järjestäminen uudelleen
 
 Voit siirtää solmua rakenteessa ylös- tai alaspäin nykyisellä tasolla. Voit järjestää tällä tavoin solmut uudelleen **Kustannusseuranta**-työtilassa tehtävää raportointia varten.
 
@@ -183,8 +174,7 @@ Voit siirtää solmu hierarkiassa uuteen sijaintiin valitsemalla kohdesolmun. So
 > [!NOTE] 
 > Solmujen järjestystä ei säilytetä, kun tiedot viedään Exceliin tai Power BI:iin, koska niistä käytetään oletusarvoisesti aakkosnumeerista lajittelua. Järjestys on palautettava manuaalisesti.
 
-## Raportoinnin dimensiohierarkioiden määrittäminen
-<a id="define-dimension-hierarchies-for-reporting" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-reporting"></a>Raportoinnin dimensiohierarkioiden määrittäminen
 
 Dimensiohierarkiat ovat tärkeitä raportoinnissa. Voit määrittää niiden avulla yksittäiseen organisaatioon sopivan rakenteen. Koosteet tehdään dimensiohierarkian solmutasolla, jotta asianomaiset millä tahansa organisaatiotasolla voivat nähdä minkä tahansa tason tietoja.
 
@@ -223,8 +213,7 @@ Seuraavassa on esimerkki raportointirakenteen dimensiohierarkiasta.
 | Organisaatio                              | Tuotanto                                | Pakkaus                                 | CC005                                     |                                            |
 | Organisaatio                              | Tuotanto                                | Kokoonpano                                  | CC006                                     |                                            |
 
-### Raportoinnissa käytettävien dimensiohierarkioiden päivittäminen
-<a id="update-the-dimension-hierarchies-that-are-used-for-reporting" class="xliff"></a> 
+### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a>Raportoinnissa käytettävien dimensiohierarkioiden päivittäminen 
 
 Edellä mainituissa raportointityökaluissa käytettävät dimensiohierarkiat on ajan mittaan päivitettävä. Dimensiohierarkiat voi päivittää asiakasohjelman päivityksellä.
 
@@ -239,8 +228,7 @@ Välimuistiin valmiiksi tallennettu työ noutaa dimensiohierarkioiden päivityks
 > [!NOTE] 
 > Voit käynnistää dimensiohierarkian välimuistin päivityksen viemällä dimensiohierarkian tai päivitettävät hierarkiat uudelleen Exceliin.
 
-## Kustannuskäytäntöjen dimensiohierarkioiden määrittäminen
-<a id="define-dimension-hierarchies-for-cost-policies" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-cost-policies"></a>Kustannuskäytäntöjen dimensiohierarkioiden määrittäminen
 
 Kustannuslaskenta sisältää useita käytäntöjä, joissa yksityiskohtaiset säännöt määritetään. Seuraaville käytännöille on määritettävä vähintään yksi dimensiohierarkia:
 
@@ -251,8 +239,7 @@ Kustannuslaskenta sisältää useita käytäntöjä, joissa yksityiskohtaiset s�
 
 Sääntöjä on helppo luoda dimensiohierarkioissa. Sinun ei tarvitse luoda sääntöjä dimensioyhdistelmän jokaiselle jäsenelle, jos käytät dimensiohierarkian tasojen mukaan muodostettavia dimension jäsenkoosteita. Jos sinulla on päällekkäisiä sääntöjä, sinun on määritettävä järjestelmää varten säännöt, jotka se ottaa huomioon yleiskustannuslaskennassa.
 
-### Esimerkki: kustannustoimintakäytännön määrittäminen
-<a id="example-define-a-cost-behavior-policy" class="xliff"></a>
+### <a name="example-define-a-cost-behavior-policy"></a>Esimerkki: kustannustoimintakäytännön määrittäminen
 
 Uusi kustannustoimintakäytäntö luodaan ja soveltuvat dimensiohierarkiat määritetään käytäntöön tässä kuvatulla tavalla.
 
@@ -295,8 +282,7 @@ Tätä sääntöä ei oteta enää huomioon, jos yleiskustannuslaskenta tehdää
 > [!NOTE] 
 > **Voimassaolo alkaa**- ja **Voimassaolo päättyy** -kenttiä voimassaolopäivä ja -aika. Voit määrittää säännön vanhentumaan ja suorittaa uuden yleiskustannuslaskennan samana päivänä.
 
-## Suojausasetusten dimensiohierarkioiden määrittäminen
-<a id="define-dimension-hierarchies-for-security-setup" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-security-setup"></a>Suojausasetusten dimensiohierarkioiden määrittäminen
 
 Kustannuslaskentatietojen pitäisi olla kaikkien raportointiyksiköistä vastaavien esimiesten käytettävissä. Kustannuslaskennan terminologiassa raportointiyksikkö vastaa kustannusobjektia tai kustannusobjektien joukkoa.
 

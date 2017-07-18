@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,29 +23,24 @@ ms.openlocfilehash: 33b7a499caf9292e44c155a0e1bd6a8929558be5
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Pankin tiliotteen tiedoston tuomisen vianmääritys
-<a id="bank-statement-file-import-troubleshooting" class="xliff"></a>
+# <a name="bank-statement-file-import-troubleshooting"></a>Pankin tiliotteen tiedoston tuomisen vianmääritys
 
 [!include[banner](../includes/banner.md)]
 
 
 On tärkeää, että pankin tiliotetiedosto vastaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa tuettuja asetteluja. Tiliotteiden tiukkojen standardien vuoksi suurin osa integraatioista toimii oikein. Kuitenkin joskus tiliotetiedostoa ei voi tuoda tai se sisältää virheellisiä tuloksia. Yleensä ongelmat johtuvat pienistä eroista tiliotetiedostossa. Tässä artikkelissa selitetään, miten nämä erot ja niistä johtuvat ongelmat korjataan.
 
-Mikä virhe on kyseessä?
-<a id="what-is-the-error" class="xliff"></a>
+<a name="what-is-the-error"></a>Mikä virhe on kyseessä?
 ------------------
 
 Kun tiliotetiedoston tuontia on yritetty, siirry Tietojen hallinnan työhistoriaan ja sen suoritustietoihin löytääksesi virheen. Virhe voi auttaa osoittamalla tiliotteeseen, saldoon tai tiliotteen riviin. Se ei kuitenkaan todennäköisesti anna riittävästi tietoa, jotta ongelman aiheuttavan kentän tai elementin voisi tunnistaa.
 
-## Mitä ovat erot?
-<a id="what-are-the-differences" class="xliff"></a>
+## <a name="what-are-the-differences"></a>Mitä ovat erot?
 Vertaa pankkitiedoston asettelumääritystä Finance and Operationsin tuontimääritykseen ja kiinnitä huomiota kenttien ja elementtien eroihin. Vertaa tiliotetiedostoa liittyvään Finance and Operations -näytetiedostoon. ISO20022-tiedostoissa on erot helppo nähdä.
 
-## Muunnokset
-<a id="transformations" class="xliff"></a>
+## <a name="transformations"></a>Muunnokset
 Yleensä muutokset on tehtävä johonkin kolmesta muunnoksesta. Jokaisen muunnos on kirjoitettu tiettyyn standardiin.
 
 | Resurssin nimi                                         | Tiedostonimi                          |
@@ -53,10 +49,8 @@ Yleensä muutokset on tehtävä johonkin kolmesta muunnoksesta. Jokaisen muunnos
 | BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt | ISO20022XML-to-Reconciliation.xslt |
 | BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
 
-## Muunnosten virheenkorjaus
-<a id="debugging-transformations" class="xliff"></a>
-### Oikaise BAI2- ja MT940-tiedostot
-<a id="adjust-the-bai2-and-mt940-files" class="xliff"></a>
+## <a name="debugging-transformations"></a>Muunnosten virheenkorjaus
+### <a name="adjust-the-bai2-and-mt940-files"></a>Oikaise BAI2- ja MT940-tiedostot
 
 BAI2- ja MT940-tiedostot ovat tekstiin perustuvia tiedostoja ja ne on oikaistava, jotta Extensible Stylesheet Language Transformation -kielen (XSLT) virheenkorjauksen voi ottaa käyttöön. Ohjelma tekee oikaisun, kun tiedosto tuodaan.
 
@@ -67,8 +61,7 @@ BAI2- ja MT940-tiedostot ovat tekstiin perustuvia tiedostoja ja ne on oikaistava
 
 2.  Kopioi tiliotetiedoston sisältö ja liitä se XML-tiedostoon niin, että ne korvaavat **PASTESTATEMENTFILEHERE**-kohdan.
 
-### XSLT-virheenkorjaus
-<a id="debug-the-xslt" class="xliff"></a>
+### <a name="debug-the-xslt"></a>XSLT-virheenkorjaus
 
 Lisätietoja on kohdassa <https://msdn.microsoft.com/en-us/library/ms255605.aspx>.
 
@@ -81,18 +74,15 @@ Lisätietoja on kohdassa <https://msdn.microsoft.com/en-us/library/ms255605.aspx
 7.  Määritä tarvittavat katkaisukohdat.
 8.  Valitse valikosta **XML** &gt; **Aloita XSLT-virheenkorjaus**.
 
-### Muotoile XSLT-tuloste
-<a id="format-the-xslt-output" class="xliff"></a>
+### <a name="format-the-xslt-output"></a>Muotoile XSLT-tuloste
 
 Kun muunnos ajetaan, se luo tiedoston, jonka voi avata Visual Studiossa. Voit muotoilla tiedoston nopeasti Ctrl+A, Ctrl+K ja Ctrl+D -näppäinkomennoilla.
 
-### Muunnoksen oikaiseminen
-<a id="adjust-the-transformation" class="xliff"></a>
+### <a name="adjust-the-transformation"></a>Muunnoksen oikaiseminen
 
 Oikaise muunnos saadaksesi haluamasi kentän tai elementin tiliotetiedostoon. Määritä sitten kyseinen kenttä tai elementti asiaankuuluvaan Finance and Operations -elementtiin.
 
-### Debet/kredit-ilmaisin
-<a id="debitcredit-indicator" class="xliff"></a>
+### <a name="debitcredit-indicator"></a>Debet/kredit-ilmaisin
 
 Toisinaan on mahdollista, että veloitukset on tuotu hyvityksinä ja hyvitykset veloituksina. Tämän ongelman ratkaisemiseksi on muutettava asiaankuuluvaa XSLT:tä. Jos tiliotteet ovat peräisin useasta pankista, varmista, että kaikissa käytetään samaa debet-/kredit-lähestymistapaa tai luo niille erilliset muunnokseet.
 
@@ -100,8 +90,7 @@ Toisinaan on mahdollista, että veloitukset on tuotu hyvityksinä ja hyvitykset 
 -   ISO20022XML-to-Reconcilation.xslt GetCreditDebit -malli
 -   MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator -malli
 
-## Esimerkkejä tiliotteiden muodoista ja teknisistä asetteluista
-<a id="examples-of-bank-statement-formats-and-technical-layouts" class="xliff"></a>
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Esimerkkejä tiliotteiden muodoista ja teknisistä asetteluista
 Seuraavassa taulukossa on esimerkkejä tuonnin lisäasetuksista pankkitilin täsmäytystietojen tuontitiedoston teknisistä asettelumäärityksistä sekä kolme esimerkkitiliotetiedostoa: Voit ladata näytetiedostot ja tekniset asettelut täältä: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 

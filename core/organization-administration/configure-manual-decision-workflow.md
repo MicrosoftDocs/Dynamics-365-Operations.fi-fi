@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 6ea8b060741ea94af16861d5bb52894a577e5521
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Manuaalisen päätöksen konfiguroiminen työnkulkuun
-<a id="configure-a-manual-decision-in-a-workflow" class="xliff"></a>
+# <a name="configure-a-manual-decision-in-a-workflow"></a>Manuaalisen päätöksen konfiguroiminen työnkulkuun
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,15 +34,13 @@ Tässä ohjeaiheessa kerrotaan, miten manuaalisen päätöksen eri ominaisuudet 
 
 Manuaalinen päätös konfiguroidaan työnkulkueditorissa napsauttamalla päätöstä hiiren kakkospainikkeella ja valitsemalla **Ominaisuudet**, joka avaa **Ominaisuudet**-sivun. Sitten voit määrittää seuraavien ohjeiden avulla manuaalisen päätöksen ominaisuudet.
 
-## Päätöksen nimi
-<a id="name-the-decision" class="xliff"></a>
+## <a name="name-the-decision"></a>Päätöksen nimi
 Kirjoita näiden ohjeiden avulla nimi manuaaliselle päätökselle.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
 2.  Kirjoita manuaalisen päätöksen yksilöivä nimi **Nimi**-kenttään.
 
-## Aiherivin ja ohjeiden määrittäminen
-<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
+## <a name="enter-a-subject-line-and-instructions"></a>Aiherivin ja ohjeiden määrittäminen
 Sinun on luotava aiherivi ja ohjeet käyttäjille, jotka on määritetty manuaaliseen päätökseen. Esimerkiksi jos olet konfiguroimassa ostoehdotukselle päätöstä, sille määritetty käyttäjä näkee aiherivin ja ohjeet **Ostoehdotukset**-sivulla. Aiherivi näytetään sivulla olevalla viestirivillä. Käyttäjä voi sitten avata ohjeet napsauttamalla viestirivin kuvaketta. Seuraavia ohjeita noudattamalla voit määrittää aiherivin ja ohjeet.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
@@ -77,8 +74,7 @@ Sinun on luotava aiherivi ja ohjeet käyttäjille, jotka on määritetty manuaal
     5.  Voit mukauttaa tekstiä lisäämällä paikkamerkkejä vaiheen 6 mukaisesti.
     6.  Valitse **Sulje**.
 
-## Määritä päätöksen mahdolliset tulokset
-<a id="specify-the-possible-outcomes-of-a-decision" class="xliff"></a>
+## <a name="specify-the-possible-outcomes-of-a-decision"></a>Määritä päätöksen mahdolliset tulokset
 Kun asiakirja määritetään päätöksentekijälle, siihen sisältyy yleensä kysymys, johon päätöksentekijän on vastattava. Kysymyksen vastaus on yleensä **Kyllä** tai **Ei** tai **Tosi** tai **Epätosi**. Noudata seuraavia ohjeita määrittääksesi manuaalisen päätöksen mahdolliset tulokset.
 
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
@@ -98,8 +94,7 @@ Kun asiakirja määritetään päätöksentekijälle, siihen sisältyy yleensä 
     4.  Kirjota tekstisi **Käännetty teksti** -kenttään.
     5.  Valitse **Sulje**.
 
-## Määritä, milloin ilmoitukset lähetetään
-<a id="specify-when-notifications-are-sent" class="xliff"></a>
+## <a name="specify-when-notifications-are-sent"></a>Määritä, milloin ilmoitukset lähetetään
 Voit lähettää käyttäjille ilmoituksia, kun päätös on tehty, delegoitu tai eskaloitu. Toimi seuraavasti määrittääksesi, milloin ilmoitukset lähetetään, ja kenelle ne lähetetään.
 
 1.  Valitse vasemmasta ruudusta **Ilmoitukset**.
@@ -168,8 +163,7 @@ Voit lähettää käyttäjille ilmoituksia, kun päätös on tehty, delegoitu ta
 
 8.  Toista vaiheet 3-7 kullekin tapahtumalle, jonka valitsit vaiheessa 2.
 
-## Määritä päätös
-<a id="assign-a-decision" class="xliff"></a>
+## <a name="assign-a-decision"></a>Määritä päätös
 Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaalinen päätös määritetään.
 
 1.  Valitse vasemmasta ruudusta **Määritys**.
@@ -255,8 +249,7 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
 
     Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on erääntynyt. Erääntyneet päätökset eskaloidaan, sivun **Eskalointi**-alueessa valitsemiesi asetusten mukaan.
 
-## Erääntyneen päätöksen toimenpiteiden määrittäminen
-<a id="specify-what-happens-when-a-decision-is-overdue" class="xliff"></a>
+## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Erääntyneen päätöksen toimenpiteiden määrittäminen
 Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on erääntynyt. Erääntyneen päätöksen voi eskaloida tai määrittää automaattisesti toisen käyttäjän tehtäväksi. Seuraa näitä ohjeita, jos haluat eskaloida erääntyneet päätökset.
 
 1.  Valitse vasemmasta ruudusta **Eskalointi**.
@@ -327,8 +320,7 @@ Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on eräänty
 5.  Toista vaiheet 3 ja 4 jokaiselle käyttäjälle, joka lisätään eskalointipolkuun. Käyttäjien järjestystä voi muuttaa.
 6.  Jos eskalointipolun käyttäjät eivät tee päätöstä ajoissa, järjestelmä tekee päätöksen automaattisesti. Voit määrittää vaihtoehdon, jonka järjestelmän valitsee valitsemalla **Toiminto**-rivin ja sitten valitsemalla **Lopetustoiminto**-välilehdellä vaihtoehdon.
 
-## Aikarajan määrittäminen
-<a id="set-a-time-limit" class="xliff"></a>
+## <a name="set-a-time-limit"></a>Aikarajan määrittäminen
 Noudata seuraavia ohjeita, jos päätös on tehtävä tietyn ajan kuluessa. **Huomautus:** näiden ohjeiden mukaan valitsemasi asetukset korvaavat asetukset, jotka olet valinnut kunkin hyväksyntävaiheen **Liitos**- ja **Eskalointi**-alueissa.
 
 1.  Napsauta vasemmassa ruudussa **Lisäasetukset**.

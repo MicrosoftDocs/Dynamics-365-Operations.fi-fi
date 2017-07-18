@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Talent, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: JCart
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,8 +23,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Yrityksen hakemiston mobiilityötila
-<a id="company-directory-mobile-workspace" class="xliff"></a>
+# <a name="company-directory-mobile-workspace"></a>Yrityksen hakemiston mobiilityötila
 
 [!include[banner](../includes/banner.md)]
 
@@ -31,8 +31,7 @@ Tässä ohjeaiheessa on tietoja **Yrityksen hakemisto** -mobiilityötilasta. Kä
 
 Tätä mobiilityötilaa voi käyttää Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Yleiskuvaus
 Käyttäjät voivat tehdä seuraavia tehtäviä **Yrityksen hakemisto** -mobiilityötilassa:
 
 - tarkastella organisaation työntekijäluetteloa
@@ -40,8 +39,7 @@ Käyttäjät voivat tehdä seuraavia tehtäviä **Yrityksen hakemisto** -mobiili
 - tarkastella työntekijöiden yhteystietoja
 - ottaa yhteyttä työntekijöihin profiilitiedoista.
 
-## Edellytykset
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Edellytykset
 Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunnossa.
 
 <table>
@@ -71,15 +69,13 @@ Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunno
 </tbody>
 </table>
 
-## Mobiilisovelluksen lataaminen ja asentaminen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Kirjautuminen mobiilisovellukseen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
 1.  Käynnistä sovellus mobiililaitteessa.
 2.  Anna oman Microsoft Dynamics 365:n URL-osoite.
 3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
@@ -87,13 +83,11 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Yrityksen hakemiston tarkastelu mobiilityötilassa
-<a id="view-the-company-directory-by-using-the-mobile-workspace" class="xliff"></a>
+## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a>Yrityksen hakemiston tarkastelu mobiilityötilassa
 1.  Valitse mobiilisovelluksessa **Yrityksen hakemisto** -työtila. Näkyvissä on työntekijäluettelo.
 3.  Valitse työntekijä. **Työntekijän profiili** -sivu avautuu. Tällä sivulla on näkyvissä muun muassa työntekijän etunimi, sukunimi, nimike ja osasto.
 
-## Haku yrityksen hakemistossa mobiilityötilassa
-<a id="search-the-company-directory-by-using-the-mobile-workspace" class="xliff"></a>
+## <a name="search-the-company-directory-by-using-the-mobile-workspace"></a>Haku yrityksen hakemistossa mobiilityötilassa
 1.  Valitse mobiilisovelluksessa **Yrityksen hakemisto** -työtila.
 2.  Aloita haku kirjoittamalla **Haku**-kenttään työntekijän etunimi, sukunimi, nimike tai osasto.
 3.  Valitse työntekijä. **Työntekijän profiili** -sivu avautuu. Tällä sivulla on näkyvissä muun muassa työntekijän etunimi, sukunimi, nimike ja osasto.

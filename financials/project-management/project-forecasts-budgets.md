@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23501
 ms.assetid: 4e6d1384-19a2-4232-b3f3-d2590c218bd7
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: 835a92a8f95c7d75b02f5991cc2528c6a209540a
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Projektiennusteet ja -budjetit
-<a id="project-forecasts-and-budgets" class="xliff"></a>
+# <a name="project-forecasts-and-budgets"></a>Projektiennusteet ja -budjetit
 
 [!include[banner](../includes/banner.md)]
 
@@ -54,8 +53,7 @@ Kummallakin menetelmällä on omat etunsa. Ota seuraavat seikat huomioon, kun va
 | **Kustannusten ylitykset**         | Voit vain sallia tai estää kustannuksen ylityksen aiheuttavien tapahtumien merkinnän.                                                                                                                                                                | Projektin budjetoinnissa käyttäjillä on muita hallintavaihtoehtoja. Voit sallia varoitukset ja ylitykset.                                                                   |
 | **Seuranta**               | Ennustetta seurataan ennustevähennysten avulla. Toteutuneet summat vähennetään ennustetapahtuman saldoista ilman kirjausketjua. Tämä voi vaikeuttaa sen seurantaa, missä toteutuneiden tapahtumat tapahtuivat.                   | Projektibudjetin hallinnassa todelliset summat vähennetään jäljellä olevan budjetin summista. Tämä mahdollistaa selkeämmän kirjausketjun.                                   |
 
-## Projektiennusteet
-<a id="project-forecasts" class="xliff"></a>
+## <a name="project-forecasts"></a>Projektiennusteet
 Kun käytät projektin ennustetta, voit kirjoittaa ennustetapahtumia ennustelomakkeilla kullekin tapahtumatyypille. Jokaista todelliselle tapahtumalle käytettävissä olevaa määritettä voidaan käyttää ennustetapahtumaan, kuten rivin kannattavuutta, rivin määritteitä, työntekijöitä tai kuvauksia. Voit myös ennakoida, kuinka kauan kustannuksen syntymisen jälkeen laskutat sen asiakkaalta. 
 
 Projektiennustetapahtumat perustuvat yksiköihin ja summiin. 
@@ -72,8 +70,7 @@ Voit tarkistaa, kopioida, poistaa tai siirtää projektiennusteita kirjanpitobud
 -   **Kopioi tai poista** – Kun kopioit ennustetapahtumia, yhden ennustemallin tapahtumarivit kopioidaan toiseen ennustemalliin. Kun poistat ennusteen, poistat ennustemallin ennustetapahtumat. Jos haluat rajoittaa kopioitavia tai rajoitettavia ennustetapahtumia, valitse tietyt tapahtumatyypit ja päivämäärät. Tällä tavoin voit kopioida tai poistaa vain tiettyjä ennusteen osia.
 -   **Siirto** – Kun siirrät projektiennusteen kirjanpitobudjettiin, siirrät ennustemallin ennustetapahtumat kirjanpitobudjettiin. Voit korvata siirrettävällä projektiennusteella minkä tahansa kirjanpitobudjettiin aiemmin siirretyn tapahtuman.
 
-## Projektibudjetit
-<a id="project-budgets" class="xliff"></a>
+## <a name="project-budgets"></a>Projektibudjetit
 Projektin budjetointi on yksinkertaisempaa kuin ennusteet, vaikka siihen integroidaan ennustemallit. Alkuperäiset budjetin tiedot ja muutokset ilmoitetaan yhdellä lomakkeella, jossa voi tehdä vain summaan, luokkaan tai tehtävään perustuvia ennusteita. 
 
 Projektin budjetoinnissa kaikki alkuperäisen budjetit ja muutokset on lähettävä projektityönkulkuun hyväksyttäväksi. Työnkulku parantaa prosessin hallintaa ja luo muutoshistoriatietueen. 
@@ -82,8 +79,7 @@ Projektin budjetointi muistuttaa kirjanpitobudjetointi, mutta sen määrittämin
 
 Projektibudjetit liitetään automaattisesti kahteen ennustemalliin, joista toinen on alkuperäiselle budjetille ja toinen jäljellä olevalle budjetille. Tämän vuoksi ennustemalleihin perustuvat raportit voivat käyttää budjetin tietoja. Kun projektibudjetti on sidottu, järjestelmä luo raportointiin ja hallintaan käytettäviä ennustetapahtumia liitettyjen mallien perusteella.
 
-## Ennustemallit
-<a id="forecast-models" class="xliff"></a>
+## <a name="forecast-models"></a>Ennustemallit
 Ennustemalleissa on yksitasoinen hierarkia. Tämä tarkoittaa, että jokaiseen projektiennusteeseen on liitettävä yksi ennustemalli.
 
 Jos käytät projektin ennusteita, voit määrittää mallit alimalleiksi. Voit sitten luoda ennusteita osaston, ajanjakson tai alueen mukaan. Voit esimerkiksi luoda vuodelle ennustemallin ja sitten alimallit alueelliset ennusteet (etelä, pohjoinen, länsi ja itä), jotka aluepäälliköt lähettävät. Valitsemalla eri asetuksia voit tarkastella käytettävissä olevien raporttien tietoja koko ennusten tai alimallin mukaan.

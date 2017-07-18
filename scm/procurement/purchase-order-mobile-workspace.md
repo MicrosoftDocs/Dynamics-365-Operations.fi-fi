@@ -10,11 +10,12 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
+ms.reviewer: bis
 ms.search.scope: Core, Operations, UnifiedOperations, Retail
 ms.custom: 30211
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -22,11 +23,9 @@ ms.openlocfilehash: a2ab719b971c325be184d1d950f6c03815e4cea2
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Ostotilauksen hyväksymisen mobiilityötila
-<a id="purchase-order-approval-mobile-workspace" class="xliff"></a>
+# <a name="purchase-order-approval-mobile-workspace"></a>Ostotilauksen hyväksymisen mobiilityötila
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,22 +33,18 @@ ms.lasthandoff: 06/20/2017
 
 Tässä ohjeaiheessa on tietoja **ostotilausten hyväksymisen** mobiilityötilasta. Voit tarkastella työtilassa ostotilauksia ja vastata niihin eri toiminnoilla. Voit esimerkiksi hyväksyä tai hylätä ostotilauksen.
  
-## Yleiskuvaus
-<a id="overview" class="xliff"></a> 
+## <a name="overview"></a>Yleiskuvaus 
 Hyväksymistä edellyttävät ostotilaukset läpäisevät hyväksymistyönkulun. Työnkulussa voi olla erilaisia vaiheita, jotka edellyttävät vähintään yhden henkilön tekemiä toimia. Henkilön on ehkä esimerkiksi suoritettava tehtävä loppuun tai hyväksyttävä ostotilaus. 
 
 **Ostotilauksen hyväksymisen** työtilassa on helppo tarkastella ostotilauksia ja reagoida niihin mobiililaitteessa. Työtilassa voi myös tehdä samoja toimia kuin Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin verkkoasiakasohjelmassa.
 
-## Edellytykset
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Edellytykset
 Edellytykset vaihtelevat sen mukaan, mikä Finance and Operationsin versio on otettu käyttöön organisaatiossa.
 
-### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys 
 Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **ostotilauksen hyväksymisen** mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611, johon on asennettu vähintään ympäristöpäivitys 3
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611, johon on asennettu vähintään ympäristöpäivitys 3
 Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsin versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
 
 <table>
@@ -80,16 +75,14 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsi
 </tbody>
 </table>
 
-## Mobiilisovelluksen lataaminen ja asentaminen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 Lataa ja asenna Microsoft Dynamics 365 for Unified Operations -mobiilisovellus:
 
 - [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 - [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
 
 
-## Kirjautuminen mobiilisovellukseen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
 
 1. Käynnistä sovellus mobiililaitteessa.
 2. Anna oman Microsoft Dynamics 365:n URL-osoite.
@@ -98,16 +91,14 @@ Lataa ja asenna Microsoft Dynamics 365 for Unified Operations -mobiilisovellus:
 
 ![Ostotilauksen hyväksymisen työtila käytettävissä olevien työtilojen luettelossa](./media/po-workspaces.png)
 
-## Käyttäjälle määritettyjen tilausten tarkasteleminen
-<a id="view-orders-that-are-assigned-to-you" class="xliff"></a>
+## <a name="view-orders-that-are-assigned-to-you"></a>Käyttäjälle määritettyjen tilausten tarkasteleminen
 1. Valitse mobiililaitteessa **Ostotilauksen hyväksyntä** -työtila.
 2. Valitsemalla ostotilauksen hyväksymisen työtilassa **Minulle määritetyt tilaukset** voit tarkastella kaikki ostotilauksia, joissa sinua on pyydetty tekemään toimia.
 3. Valitse tilaus. Näet **Tilauksen tiedot** -sivulla tilauksen otsikon tiedot ja rivit. Työkulkutehtävässä on myös ohjeet.
 4. Avaa **Otsikon kirjanpidollinen jako** -sivu valitsemalla **Kirjanpidolliset jaot**.
 5. Palaa **Tilauksen tiedot** -sivulle ja valitse rivi. Voit tilausrivin tiedoissa rivikohtaisiin kirjanpidollisiin jakoihin.
 
-## Ostotilauksen toiminnon viimeistely
-<a id="complete-an-action-on-the-purchase-order" class="xliff"></a>
+## <a name="complete-an-action-on-the-purchase-order"></a>Ostotilauksen toiminnon viimeistely
 Kun olet tarkastellut sinulle määritettyä ostotilausta ja lukenut työnkulun ohjeet, olet valmis tekemään toimintoja.
 
 1. Valitse mobiililaitteessa **Ostotilauksen hyväksyntä** -työtila.

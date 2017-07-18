@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +24,9 @@ ms.openlocfilehash: c5381ab48e394702c2423de7a5b5cb9166993388
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Hintasimulointi
-<a id="price-simulation" class="xliff"></a>
+# <a name="price-simulation"></a>Hintasimulointi
 
 [!include[banner](../includes/banner.md)]
 
@@ -50,12 +48,10 @@ Voit määrittää hälytyksen, kun luot tarjouksen. Hälytyksiä voi käyttää
 -   Pysyt niiden avulla selvillä, missä tilassa tarjoukset ovat organisaatiossa.
 -   Ne voivat aiheuttaa tietyn tarjouksen tarkistuksen tai ilmoittaa, milloin alennusrajat ylitetään.
 
-## Hintasimulointi ja alennukset
-<a id="price-simulation-and-discounts" class="xliff"></a>
+## <a name="price-simulation-and-discounts"></a>Hintasimulointi ja alennukset
 Jotta alennukset ja hinnat varmasti lasketaan oikein, alennuksia sisältävien tarjousten hintasimuloinnit on tehtävä erityisen huolellisesti. Koska kaikkia hintasimulointeja käsitellään aktiivisen tarjousrivin tai koko tarjouksen erityisalennuksina, alennusten eroja on seurattava.
 
-### Kauppasopimusten alennustyypit
-<a id="types-of-discounts-in-trade-agreements" class="xliff"></a>
+### <a name="types-of-discounts-in-trade-agreements"></a>Kauppasopimusten alennustyypit
 
 Microsoft Dynamics 365 for Finance and Operationsin kauppasopimuksissa voi olla neljäntyyppisiä hinnanalennuksia. Nämä alennukset voidaan määrittää eri nimikkeille, asiakkaille tai hintaryhmille ja niitä voidaan rajoittaa päivämäärän mukaan. Laskuvirheiden välttämiseksi kauppasopimukset on otettava huomioon hintasimulointeja suoritettaessa. Kauppasopimusten neljä alennustyyppiä:
 
@@ -64,17 +60,14 @@ Microsoft Dynamics 365 for Finance and Operationsin kauppasopimuksissa voi olla 
 -   **Monirivialennus** – Jos yhdistetyt määrät ylittävät määrittämäsi rajan, tilattujen nimikkeiden ennalta määritetyt yhdistelmät aiheuttavat alennuksen koko tilaukseen. Rivialennus vähennetään tavallisesti rivisummista ennen hintasimuloinnin suorittamista. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, vaikuttaa hintasimulointiin.
 -   **Kokonaisalennus** – Jos yhdistetyt summat ylittävät määrittämäsi rajan, ennalta määrityt tilattujen nimikkeet aiheuttavat alennuksen koko tilaukseen. Tarjousrivit muodostavat kokonaisalennuksen. Koska kokonaisalennusta käytetään tarjouksen kokonaissumman alennuksena, se pienentää tarjouksen kokonaissummaa. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, vaikuttaa hintasimulointiin.
 
-### Tarjousrivit ja kauppasopimukset
-<a id="quotation-lines-and-trade-agreements" class="xliff"></a>
+### <a name="quotation-lines-and-trade-agreements"></a>Tarjousrivit ja kauppasopimukset
 
 Kun luot tarjousriviä tai muokkaat sitä, rivialennukset lasketaan automaattisesti. Nimikkeen myyntihinta etsitään kauppasopimuksen perusteella.
 
-## Esimerkkejä hintasimuloinnista
-<a id="price-simulation-examples" class="xliff"></a>
+## <a name="price-simulation-examples"></a>Esimerkkejä hintasimuloinnista
 Seuraavissa esimerkeissä käytetään hintasimulointia tarjouksen otsikoihin ja yhden rivin nimikkeisiin.
 
-### Tarjouksen otsikoiden hintasimulointi
-<a id="price-simulation-for-quotation-headers" class="xliff"></a>
+### <a name="price-simulation-for-quotation-headers"></a>Tarjouksen otsikoiden hintasimulointi
 
 Luot tarjouksen, jossa on seuraavat rivit:
 
@@ -105,8 +98,7 @@ Suoritat hintasimuloinnin ja sovellat 15 prosentin kokonaisalennusta koko tarjou
 | Uusi katetuotto Yhdysvaltain dollareina                       | 270,47 – 184,96                           | 85,51    |
 | Uusi katetuottoprosentti                               | \[(270.47 - 184.96) ÷ 270.47\] × 100      | 31,61 %   |
 
-### Hintasimulointi yhden rivin nimikkeille
-<a id="price-simulation-for-single-line-items" class="xliff"></a>
+### <a name="price-simulation-for-single-line-items"></a>Hintasimulointi yhden rivin nimikkeille
 
 Luot tarjouksen, jossa on seuraavat rivit:
 

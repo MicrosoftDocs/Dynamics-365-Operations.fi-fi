@@ -10,12 +10,13 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58801
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,19 +24,16 @@ ms.openlocfilehash: b1f5da07ffff5e34d8c73012a1e3c85fe1546fda
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Sähköisen raportoinnin konfiguraatioiden elinkaaren hallinta
-<a id="manage-the-electronic-reporting-configuration-lifecycle" class="xliff"></a>
+# <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Sähköisen raportoinnin konfiguraatioiden elinkaaren hallinta
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä ohjeaiheessa käsitellään sähköisen raportoinnin konfiguraatioiden elinkaaren hallintaa Dynamics 365 for Finance and Operations -ratkaisussa.
 
-Yleiskuvaus
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Yleiskuvaus
 --------
 
 Sähköinen raportointi on moduuli, joka tukee lakisääteisiä ja maakohtaisia sähköisten asiakirjojen vaatimuksia Microsoft Dynamics 365 for Finance and Operationsissa. Sähköisessä raportoinnissa oletuksena on se, että yksittäisille sähköisille asiakirjoille voidaan suorittaa seuraavat tehtävät. Lisätietoja on ohjeaiheessa [sähköisen raportoinnin yleiskuvaus](general-electronic-reporting.md).
@@ -59,8 +57,7 @@ Sähköinen raportointi on moduuli, joka tukee lakisääteisiä ja maakohtaisia 
 -   Käytä mallia määrätyssä liiketoimintaprosessissa:
     -   Suorita sähköisen raportoinnin konfiguraatio määrätyssä liiketoimintaprosessissa. Voit esimerkiksi viitata sähköisen raportoinnin konfiguraatioon tietyssä ostoreskontran maksumenetelmässä, jos haluat luoda sähköisen maksuviestin laskujen käsittelyä varten.
 
-## Käsitteet
-<a id="concepts" class="xliff"></a>
+## <a name="concepts"></a>Käsitteet
 Sähköisen raportoinnin konfiguraatioiden elinkaareen liittyvät seuraavat roolit ja tehtävät.
 
 | Rooli                                       | Tehtävät                                                      | kuvaus                                                                                                                                                                                                                  |
@@ -70,8 +67,7 @@ Sähköisen raportoinnin konfiguraatioiden elinkaareen liittyvät seuraavat rool
 | Taloushallintopäällikkö                      | Sähköisen raportoinnin artefakteihin viittaavien prosessiin liittyvien asetusten määrittäminen. | Esimerkiksi **Taloushallintopäällikkö**-rooli, joka sallii sähköisen raportoinnin konfiguraation asetusten käyttämisen tietyssä ostoreskontran maksumenetelmässä sähköisen maksuviestin luomiseksi laskujen käsittelyä varten. |
 | Ostoreskontran maksuliikenneassistentti            | Sähköisen raportoinnin artefaktien käyttäminen määrätyssä liiketoimintaprosessissa.                | Esimerkiksi **Ostoreskontran maksuliikenneassistentti** -rooli, joka sallii sähköisten maksuviestien luomisen laskujen käsittelyä varten tietylle maksutavalle määritetyn sähköisen raportoinnin muodon perusteella.           |
 
-## Sähköisen raportoinnin konfiguraation kehityksen elinkaari
-<a id="er-configuration-development-lifecycle" class="xliff"></a>
+## <a name="er-configuration-development-lifecycle"></a>Sähköisen raportoinnin konfiguraation kehityksen elinkaari
 On suositeltavaa, että sähköisen raportoinnin konfiguraatiot suunnitellaan kehitysympäristössä erillisenä Finance and Operations -esiintymänä seuraavista sähköiseen raportointiin liittyvistä syistä:
 
 -   Käyttäjät, joilla on joko **Sähköisen raportoinnin kehittäjä**- tai **Sähköisen raportoinnin toiminnallinen konsultti** -rooli, voivat muokata konfiguraatioita ja suorittaa ne sitten testitarkoituksissa. Tämä skenaario saattaa aiheuttaa kutsuja luokkien tai taulujen menetelmistä, jotka voivat olla vahingollisia liiketoimintatiedoille ja Finance and Operations -esiintymän suorituskyvylle.
@@ -79,8 +75,7 @@ On suositeltavaa, että sähköisen raportoinnin konfiguraatiot suunnitellaan ke
 
 Kehitysympäristössä suunnitellut sähköisen raportoinnin konfiguraatiot voidaan ladata testiympäristöön konfiguraation arviointia (oikea prosessi-integraatio, tulosten oikeellisuus, suorituskyky) ja laadunvarmistusta (roolipohjaisten käyttöoikeuksien oikeellisuus, tehtävien eriyttäminen jne.) varten. Tähän tarkoitukseen voidaan käyttää toimintoja, jotka sallivat sähköisen raportoinnin konfiguraatioiden vaihdon. Lopuksi testatut sähköisen raportoinnin konfiguraatiot voidaan ladata joko LCS:ään, jossa ne voidaan jakaa palvelun tilaajille, tai tuotantoympäristöön sisäiseen käyttöön, kuten seuraavassa kaaviossa. ![ER-konfiguraation elinkaari](./media/ger-configuration-lifecycle.png)
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)

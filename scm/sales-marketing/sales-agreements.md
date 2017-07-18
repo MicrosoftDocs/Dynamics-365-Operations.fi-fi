@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +24,9 @@ ms.openlocfilehash: 4eaa4fef65fb310524f25d052aeefb58c5f20fe4
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Myyntisopimukset
-<a id="sales-agreements" class="xliff"></a>
+# <a name="sales-agreements"></a>Myyntisopimukset
 
 [!include[banner](../includes/banner.md)]
 
@@ -43,8 +41,7 @@ Voit luoda myyntitilauksen suoraan myyntisopimuksesta käyttämällä **Vapauta 
 
 **Huomautus:** aiemmissa versioissa myyntisopimuksia kutsuttiin nimellä Myynnin yleistilaukset.
 
-## Vahvistustyypit
-<a id="commitment-types" class="xliff"></a>
+## <a name="commitment-types"></a>Vahvistustyypit
 Jokainen myyntisopimuksen rivi ilmaisee sitoutumisen myydä jotain. Yleensä sitoumuksia on kahdentyyppisiä:
 
 -   **Arvositoumus**– Asiakas suostuu ostamaan tuotteita tietystä summasta.
@@ -59,8 +56,7 @@ Sopimus voi myös sitoa asiakkaan ostamaan tuoteluokan tiettyä tuotetta tai tuo
 
 Saman myyntisopimuksen riveillä voi olla erityyppisiä sitoumuksia.
 
-## Myyntisopimusten hintaehdot
-<a id="pricing-terms-for-sales-agreements" class="xliff"></a>
+## <a name="pricing-terms-for-sales-agreements"></a>Myyntisopimusten hintaehdot
 Hintaehdot voivat olla erilaisia, riippuen sitoumustyypistä. Myyntisopimukseen linkitetyssä myyntitilauksessa sopimuksen hinnoitteluehdot kumoavat muihin kauppasopimuksiin perustuvat hinnoitteluehdot. Seuraava taulukko kuvailee hintoihin liittyvät kentät, joihin eri sitoumustyypit vaikuttavat. Kyllä-arvo osoittaa, että kentän voi päivittää tilausrivillä.
 
 | Vahvistustyyppi                   | Yksikköhinta | Hintayksikkö | Alennusprosentti | Käteisalennussumma |
@@ -70,36 +66,31 @@ Hintaehdot voivat olla erilaisia, riippuen sitoumustyypistä. Myyntisopimukseen 
 | Tuoteluokan arvon sitoutuminen |            |            | Kyllä              |                      |
 | Arvon sitoutuminen                  |            |            | Kyllä              |                      |
 
-## Myyntisopimuskäytännöt
-<a id="policies-for-sales-agreements" class="xliff"></a>
+## <a name="policies-for-sales-agreements"></a>Myyntisopimuskäytännöt
 Seuraavat käytännöt vaikuttavat siihen, miten myyntisopimussitoumuksen ja sitä vastaavien myyntitilausrivien välinen yhteys toimii:
 
 -   **Maksimi pakotetaan** – Kaikkien tilausrivien kokonaismäärä tai summa ei voi olla enempää kuin sitä vastaavan sitoumuksen määrä tai summa.
 -   **Hinta ja alennus on kiinteä** – Tilausrivin ja sitä vastaavan sitoumuksen hinnat eivät voi olla erilaiset. Jos tilausrivin hintaa muutetaan, yhteys sitoumukseen rikkoutuu. Jos yhteys rikkoutuu, tilausrivi ei edistä sitoumuksen täyttymistä.
 -   **Vapautuksen vähimmäissumma** ja **Vapautuksen enimmäissumma** – Jos määrä on asetettu ja yrität tehdä tilausriviin muutoksia, joiden seurauksena tilausrivi poikkeaa siihen liittyvästä sitoumuksesta, näyttöön tulee ilmoitus.
 
-## Myyntisopimusten täytäntöönpanolaskelmat
-<a id="fulfillment-calculations-for-sales-agreements" class="xliff"></a>
+## <a name="fulfillment-calculations-for-sales-agreements"></a>Myyntisopimusten täytäntöönpanolaskelmat
 **Myyntisopimukset**-sivun **Rivin tiedot** -pikavälilehdessä olevassa **Täytäntöönpano**-välilehdessä näkyvät täytäntöönpanon määrät ja summat.  
 
 **Täytäntöönpano**-alueessa voit tarkastella kaikkien määritettyyn myyntisopimukseen yhdistettyjen tilausrivien kokonaismääriä ja -summia. Voit myös katsoa jäljellä olevat summat tai määrät, jotka tarvitaan sitoumuksen toteuttamiseen.  
 
 **Sopimus**-alueessa voit tarkastella tietyn myyntisopimuksen määriä sekä summia. Nämä määrät ja summat ovat ne kokonaismäärät ja summat, jotka ilmoitettiin.
 
-## Myyntisopimusten vahvistukset ja versiohistoria
-<a id="confirmations-and-version-history-for-sales-agreements" class="xliff"></a>
+## <a name="confirmations-and-version-history-for-sales-agreements"></a>Myyntisopimusten vahvistukset ja versiohistoria
 Kun vahvistat myyntisopimuksen, sen nykyinen versio tallennetaan historiatauluun. Jos muutat myyntisopimusta, voit vahvistaa sen uudestaan, jolloin siitä tallentuu historiaan toinen versio.  
 
 Jos et vahvista myyntisopimusta, voit yhä luoda myyntitilauksia sen pohjalta. Myyntisopimuksen historiatietoja ei kuitenkaan säilytetä.  
 
 Voit esikatsella tai printata kaikki vahvistusten korjaukset. Tämän jälkeen voit jakaa korjaukset asiakkaalle saadaksesi hyväksynnän.
 
-## Myyntisopimusten käyttäminen tilausprosessissa
-<a id="applying-sales-agreements-during-the-ordering-process" class="xliff"></a>
+## <a name="applying-sales-agreements-during-the-ordering-process"></a>Myyntisopimusten käyttäminen tilausprosessissa
 Jos et vapauta myyntitilauksia suoraan myyntisopimuksista, voit silti yhdistää myyntisopimuksen tilaukseen tilaustenkäsittelyprosessissa. Kun luot uutta myyntitilausta ja valitset myyntisopimuksen, kyseisen sopimuksen ehdot, kuten maksu- ja toimitusehdot sekä toimitusosoite, täytetään tilauksen otsikkoon, ja järjestelmä luo sopimuksen ja tilauksen välille linkin. Tämän jälkeen myyntisopimuksessa olevat hinnat ja alennukset kopioidaan tilausriveille, ja voit valita myyntisopimuksessa määritellyistä tuotteista ja luokista haluamasi. Sama myyntitilaus voi sisältää sekä rivejä, jotka eivät liity myyntisopimukseen, että rivejä, joilla on myyntisopimusta koskeva sitoumus.
 
-## Myyntisopimuksiin linkitettyjen myyntitilausten muokkaaminen
-<a id="modifying-sales-orders-that-are-linked-to-sales-agreements" class="xliff"></a>
+## <a name="modifying-sales-orders-that-are-linked-to-sales-agreements"></a>Myyntisopimuksiin linkitettyjen myyntitilausten muokkaaminen
 Jos olet luonut (vapautetun) myyntitilauksen myyntisopimuksesta, joitakin myyntitilausrivien kenttiä voi muokata vain, jos poistat linkin niihin liittyviin myyntisopimuksen riveihin. Seuraavassa taulukossa on esitetty joitakin näistä kentistä.
 
 | Kenttä                                                             | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -109,20 +100,17 @@ Jos olet luonut (vapautetun) myyntitilauksen myyntisopimuksesta, joitakin myynti
 | Nettosumma                                                        | Jos määrittämäsi summa ylittää sellaisella myyntisopimuksen rivillä määritetyn summan, jossa **Maksimi pakotetaan** -valintaruutu on valittuna, näyttöön tulee sanomaruutu, joka kysyy, haluatko tallentaa muutetun summan. Valitsemalla **Kyllä** voit poistaa linkin myyntisopimuksen riviin ja laskea hinnan uudelleen. Valitsemalla **Ei** voit poistaa linkin myyntisopimuksen riviin laskematta hintaa uudelleen.                                                                 |
 | Määrä                                                          | Jos määrittämäsi määrä ylittää sellaisella myyntisopimuksen rivillä määritetyn määrän, jossa **Maksimi pakotetaan** -valintaruutu on valittuna, näyttöön tulee sanomaruutu, joka kysyy, haluatko tallentaa muutetun määrän. Valitsemalla **Kyllä** voit poistaa linkin myyntisopimuksen riviin ja laskea hinnan uudelleen. Valitsemalla **Ei** voit poistaa linkin myyntisopimuksen riviin laskematta hintaa uudelleen.                                                            |
 
-## Myyntisopimuksesta tilatun nimikkeen palauttaminen
-<a id="returning-an-item-that-was-ordered-from-a-sales-agreement" class="xliff"></a>
+## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Myyntisopimuksesta tilatun nimikkeen palauttaminen
 Kun asiakas palauttaa tuotteen, joka on tilattu myyntisopimuksen kautta, Microsoft Dynamics 365 for Finance and Operations voi etsiä liittyvän myyntisopimuksen sitoumuksen ja päivittää sen automaattisesti vastaamaan muuttunutta määrää tai summaa. Luomalla myyntisopimukseen linkitettyyn alkuperäiseen myyntitilaukseen perustuvan palautustilauksen muodostat suhteen myyntisopimuksen sitoumuksen, myyntitilausrivin ja palautustilauslaskun välille.  
 
 Jos et halua vähentää palautettua nimikemäärää myyntisopimuksen sitoumuksesta, **Palautustilaus**-sivun **Poista linkki** -ohjausobjektilla voit poistaa palautustilauksen ja myyntisopimuksen sitoumuksen välisen linkin. Jos haluat muodostaa linkin uudelleen myöhemmin, valitse **Luo linkki**.  
 
 **Huomautus:** Palautustilaus voidaan linkittää vain yhteen myyntisopimukseen. Jos asiakas palauttaa useita tuotteita, jotka on tilattu usean myyntisopimuksen kautta, sinun on luotava uusi palautustilaus kullekin tuotteelle ja linkki vastaavaan myyntisopimukseen.
 
-## Automaattinen haku myyntisopimuksia varten
-<a id="automatic-search-for-sales-agreements" class="xliff"></a>
+## <a name="automatic-search-for-sales-agreements"></a>Automaattinen haku myyntisopimuksia varten
 Joissakin tilanteissa, joissa myyntitilauksia luodaan epäsuorasti, esimerkiksi luodessasi hyvityslaskua tai konsernin sisäisiä myyntitilauksia, voit määrittää, hakeeko Microsoft Dynamics 365 for Finance and Operations automaattisesti käyttökelpoisia myyntisopimuksia.
 
-## Taloushallinnon dimensiot myyntisopimuksissa
-<a id="financial-dimensions-on-sales-agreements" class="xliff"></a>
+## <a name="financial-dimensions-on-sales-agreements"></a>Taloushallinnon dimensiot myyntisopimuksissa
 Voit kopioida taloushallinnon dimensiot joko asiakirjojen ylätunnisteisiin tai myyntisopimusten yksittäisille riveille. Sopimuksen otsikon tai sopimusrivin dimensioita voi muuttaa milloin tahansa. Tässä tapauksessa dimensiot kopioidaan automaattisesti vapautustilausten otsikkoon tai vapautusriville.
 
 
