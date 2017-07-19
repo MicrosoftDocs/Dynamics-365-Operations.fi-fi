@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 74d520199410711b80b750a12ee726633e09d01c
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Kysynnän ennusteiden asetukset
-<a id="demand-forecasting-setup" class="xliff"></a>
+# <a name="demand-forecasting-setup"></a>Kysynnän ennusteiden asetukset
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,24 +36,21 @@ Tässä ohjeaiheessa kuvataan asetustehtävät, jotka sinun on suoritettava kysy
 
 Määritystehtäviin kuuluu seuraavien tietojen ja parametrien asettaminen:
 
-## Nimikkeenkohdistustunnus
-<a id="item-allocation-key" class="xliff"></a>
+## <a name="item-allocation-key"></a>Nimikkeenkohdistustunnus
 Kysynnän ennuste lasketaan nimikkeelle ja sen dimensioille vain, jos nimike on nimikkeen kohdistustunnuksen osa. Tätä sääntöä käytetään suurten nimikejoukkojen ryhmittämiseen niin, että kysynnän ennusteita voidaan luoda nopeammin. Nimikkeen kohdistustunnuksen prosenttiosuus ohitetaan kysynnän ennusteita luotaessa. Ennusteet luodaan pelkästään historiallisten tietojen perusteella. 
 
 Nimikkeen ja sen dimensioiden on oltava osa vain yhtä nimikkeen kohdistustunnusta, jos tätä nimikkeen kohdistustunnusta käytetään ennusteen luonnin aikana. 
 
 Varastointiyksikkö (SKU) lisätään nimikkeen kohdistustunnukselle kohdassa **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennuste** &gt; **Nimikkeen kohdistustunnukset**. Määritä nimike kohdistustunnukselle **Määritä nimikkeet** -sivulla.
 
-## Konsernin sisäiset suunnitteluryhmät
-<a id="intercompany-planning-groups" class="xliff"></a>
+## <a name="intercompany-planning-groups"></a>Konsernin sisäiset suunnitteluryhmät
 Kysynnän ennusteet luovat kaikki yritykset kattavia ennusteita. Microsoft Dynamics 365 for Finance and Operationsissa yritykset, joiden suunnittelu suoritetaan yhdessä, ryhmitetään yhdeksi konsernin sisäiseksi suunnitteluryhmäksi. Määritelläksesi yrityskohtaisesti mitkä nimikkeen kohdistustunnukset tulisi ottaa huomioon kysynnän ennusteissa, liitä nimikkeen kohdistustunnus konsernin suunnitteluryhmän jäseneen menemällä kohtaan **Pääsuunnittelu** &gt; **Asetukset** &gt; **Konsernin sisäiset suunnitteluryhmät**. 
 
 Jos nimikkeen kohdistustunnuksia ei ole määritetty konsernin sisäisen suunnitteluryhmän jäsenille, kysynnän ennuste lasketaan oletusarvoisesti kaikille niille nimikkeille, jotka on määritetty kaikkiin nimikkeen kohdistustunnuksiin kaikista Finance and Operations -yrityksistä. Lisäsuodatusvaihtoehtoja yrityksille ja nimikkeen kohdistustunnuksille löytyy **Luo tilastollinen perusennuste** -sivulta. 
 
 Tarkista nimikkeiden ennustettu lukumäärä. Tarpeettomat nimikkeet saattavat aiheuttaa lisäkustannuksia käyttäessäsi Microsoft Azure automaattianalyysipalvelua.
 
-## Kysynnän ennusteen parametrit
-<a id="demand-forecasting-parameters" class="xliff"></a>
+## <a name="demand-forecasting-parameters"></a>Kysynnän ennusteen parametrit
 Määritä kysynnän ennusteen parametrit kohdassa **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennusteen parametrit**. Koska kysynnän ennusteet suoritetaan kaikki yritykset kattavasti, asetukset yleiset. Asetukset koskevat toisin sanoen kaikkia yrityksiä. 
 
 Kysynnän ennusteet luovat ennusteet lukumäärinä. Näin ollen mittayksikkö, jossa määrä ilmaistaan, on määritettävä **Kysynnän ennusteen yksikkö** -kentässä. Mittayksikön on oltava yksilöivä sen varmistamiseksi, että kooste ja prosenttijakauma ovat järkevät. Lisätietoja koosteesta ja prosenttijakaumasta on kohdassa [Manuaalisten muutosten tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md). Varmista, että jokaiselle mittayksikölle, jota käytetään kysynnän ennusteeseen sisältyvälle varastointiyksikölle, on muuntosääntö kyseiselle mittayksikölle ja yleinen ennusteen mittayksikkö. Kysynnän ennustetta luotaessa niiden nimikkeiden luettelo, joilla ei ole mittayksikön muuntoa, kirjataan niin, että voit helposti korjata asetukset. 
@@ -80,12 +76,10 @@ Finance and Operations käyttää automaattianalyysipalveluiden verkkopalvelua e
 
 Voit käyttää omaa palveluasi kysynnän ennusteiden luomiseen automaattianalyysipalvelun tai Finance and Operationsin kysynnän ennusteiden luomisen kokeilujen avulla. Ohjeet Dynamics 365 for Finance and Operationsin kysynnän ennusteiden luomisen kokeilujen käyttämiseen verkkopalveluna löytyy Finance and Operationsista. Valitse **Kysynnän ennusteen parametrit** -sivulla **Azuren automaattianalyysipalvelut** -välilehti.
 
-## Finance and Operationsin kysynnän ennusteiden automaattianalyysipalvelun asetukset
-<a id="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service" class="xliff"></a>
+## <a name="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service"></a>Finance and Operationsin kysynnän ennusteiden automaattianalyysipalvelun asetukset
 Jos haluat tarkastella parametreja, jotka voidaan määrittää Finance and Operationsin kysynnän ennusteiden automaattianalyysipalveluille, siirry kohtaan **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennuste** &gt; **Ennustealgoritmin parametrit**. **Ennustealgoritmin parametrit** sivu näyttää parametrien oletusarvot. Voit korvata nämä parametrit **Kysynnän ennusteen parametrit** -sivulla. Korvaa parametrit yleisesti **Yleinen** -välilehdessä, tai nimikkeen kohdistustunnuskohtaisesti **Nimikkeen kohdistustunnus** -välilehdessä. Nimikkeen kohdistustunnuksella korvattavat parametrit vaikuttavat vain kyseiseen nimikkeen kohdistustunnukseen määritettyjen nimikkeiden ennusteisiin.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Kysynnän ennusteen esittely](introduction-demand-forecasting.md)

@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: sarasch
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -20,11 +21,9 @@ ms.openlocfilehash: a8ccd99431178c3cb4e73e7cd199de8e0845d716
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/14/2017
 
-
 ---
 
-# Kassavirtaennusteet
-<a id="cash-flow-forecasting" class="xliff"></a>
+# <a name="cash-flow-forecasting"></a>Kassavirtaennusteet
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Voit analysoida tulevaa kassavirtaa ja valuuttavaatimuksia kassavirran ennustety
 
 Kun nämä tehtävät on tehty, voit laskea ja analysoida kassavirran ja tulevien valuuttatarpeiden ennusteet.
 
-## Kassavirtaennusteen integrointi
-<a id="cash-flow-forecasting-integration" class="xliff"></a>
+## <a name="cash-flow-forecasting-integration"></a>Kassavirtaennusteen integrointi
 
 Kassavirtaennuste voidaan integroida kirjanpitoon, ostoreskontraan, myyntireskontraan budjetointiin ja inventoinnin- ja varastonhallintaan. Ennusteprosessi käyttää järjestelmään vietyjä tapahtumatietoja. Laskentaprosessi puolestaan ennustaa kunkin tapahtuman odotetun käteisvaikutuksen. Seuraavat tapahtumatyypit otetaan huomioon kassavirtaa laskettaessa:
 
@@ -51,13 +49,11 @@ Kassavirtaennuste voidaan integroida kirjanpitoon, ostoreskontraan, myyntireskon
 
 Vaikka projektinhallintaa ja kirjanpito eivät ole suoraan integroituja, projektitapahtumat voidaan sisällyttää monella tavalla kassavirtaennusteeseen. Kirjatut projektilaskut sisällytetään ennusteeseen avoimien asiakastapahtumien osana. Projektista peräisin olevat myynti- ja ostotilaukset sisällytetään ennusteeseen avoimina tilauksina sen jälkeen, kun ne on viety järjestelmään. Voit myös siirtää projektiennusteet kirjanpidon budjettimalliin. Tämä kirjanpidon budjettimalli sisällytetään sitten kassavirtaennusteeseen budjettirekisterimerkintöjen osana.
 
-## Konfiguraatio
-<a id="configuration" class="xliff"></a>
+## <a name="configuration"></a>Konfiguraatio
 
 Voit määrittää kassaviran ennusteprosessin **Kassavirtaennusteen määritys** -sivulla. Voit määrittää tällä sivulla seurattavat rahatilit ja kunkin alueen oletusennustetoiminnot.
 
-### Kirjanpito
-<a id="general-ledger" class="xliff"></a>
+### <a name="general-ledger"></a>Kirjanpito
 
 Määritä ensin kassavirtaennusteen aikana seurattavat rahatilit. Yleensä nämä rahatilit ovat päätilejä, jotka on liitetty käteisvaroja vastaanottaviin ja maksaviin pankkitileihin. Valitse **Kassavirtaennusteen määritys** -sivun **Kirjanpito**-välilehdessä ennusteeseen sisällytettävät päätilit. Jos pankkitili on liitetty päätiliin **Pankkitili**-sivulla, se näkyy **Pankkitili**-kentässä.
 
@@ -65,8 +61,7 @@ Voit määrittää riippuvaisen kassavirtaennusteen päätilille, joka sisältä
 
 Määritä ensin **Päätili**-kentässä ensisijainen päätili, jossa tapahtumien odotetaan aluksi näkyvän. Määritä **Riippuvainen päätili** -kenttään tili, johon ensisijaisen päätilin ensimmäinen tapahtuma vaikuttaa. Määritä rivin muihin kenttiin sopivat arvot. Voit muuttaa **Prosenttia**-kentän arvon sen mukaan, miten ensisijainen päätili vaikuttaa riippuvaiseen päätiliin. Valitse myynti- tai ostoennusteeseen useimmille asiakkaille tai toimittajille tyypillinen **Maksuehto**-arvo. Määritä **Kirjaustyyppi** -kenttään kassavirtaennusteeseen liittyvä odotettu kirjaustyyppi.
 
-### Ostoreskontra
-<a id="accounts-payable" class="xliff"></a>
+### <a name="accounts-payable"></a>Ostoreskontra
 
 Voit laskea ostojen ennusteen **Kassavirtaennusteen määritys** -sivun **Ostoreskontra**-välilehden asetuksilla. Ennen ostoreskontran kassavirtaennusteen määrittämistä on määritettävä maksuehto, toimittajaryhmät ja toimittajan kirjausprofiilit.
 
@@ -78,8 +73,7 @@ Voit ohittaa **Laskun eräpäivän ja maksupäivän välinen aika** -kentän ole
 
 Voit ohittaa tietyn toimittajan kirjausprofiilien **Rahatili**-kentän oletusarvon. Ennuste käyttää **Ostoennusteen oletusarvot** -osan oletusarvoa, ellei tapahtuman toimittajaan liittyvälle kirjausprofiilille ole määritetty toista rahatiliä. Voit ohittaa oletusarvon valitsemalla kirjausprofiilin ja määrittämällä sitten rahatilin, johon vaikutuksen odotetaan kohdistuvan.
 
-### Myyntireskontra
-<a id="accounts-receivable" class="xliff"></a>
+### <a name="accounts-receivable"></a>Myyntireskontra
 
 Voit laskea myyntiennusteen **Kassavirtaennusteen määritys** -sivun **Myyntireskontra**-välilehden asetuksilla. Ennen myyntireskontran kassavirtaennusteen määrittämistä on määritettävä maksuehto, asiakasryhmät ja asiakkaiden kirjausprofiilit.
 
@@ -91,18 +85,15 @@ Voit ohittaa **Laskun eräpäivän ja maksupäivän välinen aika** -kentän ole
 
 Voit ohittaa tietyn asiakkaan kirjausprofiilien **Rahatili**-kentän oletusarvon. Ennuste käyttää **Myyntiennusteen oletusarvot** -osan oletusarvoa, ellei tapahtuman asiakkaaseen liittyvälle kirjausprofiilille ole määritetty toista rahatiliä. Voit ohittaa oletusarvon valitsemalla kirjausprofiilin ja määrittämällä sitten rahatilin, johon vaikutuksen odotetaan kohdistuvan.
 
-### Budjetointi
-<a id="budgeting" class="xliff"></a>
+### <a name="budgeting"></a>Budjetointi
 
 Budjettimalleista luodut budjetit voidaan sisällyttää kassavirtaennusteisiin. Valitse **Kassavirtaennusteen määritys** -sivun **Budjetointi**-välilehdessä ennusteeseen sisällytettävät budjettimallit. Uudet budjettirekisterimerkinnät sisältyvät oletusarvoisesti ennusteisiin sen jälkeen, kun budjettimalli on otettu käyttöön kassavirtaennusteessa. Kassavirtaennusteen sisällyttäminen voidaan ohittaa yksittäisissä budjettirekisterimerkinnöissä.
 
-### Inventoinnin- ja varastonhallinta
-<a id="inventory-management" class="xliff"></a>
+### <a name="inventory-management"></a>Inventoinnin- ja varastonhallinta
 
 Varaston kysynnän ja tarjonnan ennusteet voidaan sisällyttää kassavirtaennusteisiin. Valitse **Kassavirtaennusteen määritys** -sivun **Inventoinnin- ja varastonhallinta**-välilehdessä kassavirtaennusteeseen sisällytettävät ennustemallit. Kassavirtaennusteen sisällyttäminen voidaan ohittaa yksittäisillä kysynnän ja tarjonnan ennusteriveillä.
 
-### Laskelma
-<a id="calculation" class="xliff"></a>
+### <a name="calculation"></a>Laskelma
 
 Kassavirran laskentaprosessin on suoritettava ennen kassavirtaennusteen analyysien tarkastelemista. Laskentaprosessi projisoi vietyjen tapahtumien tulevat vaikutukset käteisvaroihin.
 
@@ -113,8 +104,7 @@ Laske kassavirtaennuste **Laske kassavirtaennusteet** -sivulla. Voit laskea koko
 
 Voit käyttää kassavirtaennusteen laatimiseen myös eräkäsittelyä. Voit varmistaa, että ennusteanalytiikka päivitetään säännöllisesti määrittämällä kassavirtaennusteen laskennalle toistuvan eräkäsittelyn.
 
-### Raportointi
-<a id="reporting" class="xliff"></a>
+### <a name="reporting"></a>Raportointi
 
 Analyyttinen raportointi edellyttää, että liitetyt yksikkötiedot on päivitettävä kassavirtaennusteen laskemisen jälkeen. Valitse **Yksikkösäilö**-säilö sivulla **LedgerCovLiquidityMeasurement-kooste**-mitta ja valitse sitten **Päivitä**.
 

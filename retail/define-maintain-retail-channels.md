@@ -10,13 +10,14 @@ ms.service: dynamics-365-retail
 ms.technology: 
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
+ms.reviewer: josaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: mumani
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
@@ -24,11 +25,9 @@ ms.openlocfilehash: 3f0b566963574569cb40b72550e2337c9ba8a2ce
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Vähittäismyyntikanavien määrittäminen ja ylläpitäminen
-<a id="define-and-maintain-retail-channels" class="xliff"></a>
+# <a name="define-and-maintain-retail-channels"></a>Vähittäismyyntikanavien määrittäminen ja ylläpitäminen
 
 [!include[banner](includes/banner.md)]
 
@@ -37,12 +36,10 @@ Tämä artikkeli sisältää perinteisten myymälöiden määrittämisprosessin 
 
 Dynamics 365 for Retail tukee useita vähittäismyynnin kanavia, kuten verkkokauppoja, puhelinkeskuksia ja perinteisiä myymälöitä. Perinteistä myymälöitä kutsutaan vähittäismyymäläksi. Jokaisella vähittäismyymälällä voi olla omat maksuvälineet, hintaryhmät, kassakoneet, tulo- ja kulutilit sekä oma henkilökunta. Vähittäismyymälälle on määritettävä kaikki edellä luetellut elementit, ennen kuin se voidaan luoda. Kun olet luonut vähittäismyymälän, voit määrittää myymälän tuotteet. Voit myös liittää työntekijät, kassapäätteet ja asiakkaat myymälään. Lopuksi lisäät uuden myymälän organisaatiohierarkiaan.
 
-## Vähittäismyynnin varastojen määrittäminen
-<a id="setting-up-retail-stores" class="xliff"></a>
+## <a name="setting-up-retail-stores"></a>Vähittäismyynnin varastojen määrittäminen
 Ennen kuin voit määrittää Dynamics 365 for Retailin vähittäismyymälän, edellytetyt tehtävät on tehtävä ensin. Tämän jälkeen voit luoda vähittäismyymälän ja lisätä tiedot.
 
-### Edellytykset
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Edellytykset
 
 Ennen kuin voit määrittää vähittäismyymälän, sinun on suoritettava seuraavat tehtävät:
 
@@ -61,8 +58,7 @@ Ennen kuin voit määrittää vähittäismyymälän, sinun on suoritettava seura
 
 Tarkastele kaikkia näihin edellytyksiin sisältyviä tehtäviä ja suorita vain tehtävät, jotka koskevat sinua.
 
-### Aseta vähittäismyyntiliike
-<a id="set-up-a-retail-store" class="xliff"></a>
+### <a name="set-up-a-retail-store"></a>Aseta vähittäismyyntiliike
 
 Kun olet tehnyt edellytettävät toimet, määritä vähittäismyymälän tiedot suorittamalla nämä tehtävät:
 
@@ -72,8 +68,7 @@ Kun olet tehnyt edellytettävät toimet, määritä vähittäismyymälän tiedot
 4.  Lisää tietoja niiden tuotteiden tuotekuvauksiin, joita myyt myymälöissäsi. Voit esimerkiksi lisätä rtf-tekstiä ja kuvia. Nämä tuotetiedot näkyvät useissa paikoissa, kuten myyntipisteen kassakoneella ja tulostetuissa etiketeissä.
 5.  Lisää myymälä oletusorganisaatiohierarkiaan, joka on liitetty **vähittäismyyntivalikoimaan**, **vähittäismyynnin täydennykseen** tai **vähittäismyynnin raportointiin**.
 
-### Kun olet määrittänyt myymälän
-<a id="after-you-set-up-a-retail-store" class="xliff"></a>
+### <a name="after-you-set-up-a-retail-store"></a>Kun olet määrittänyt myymälän
 
 Kun olet lisännyt vähittäismyymälälle tietoja, päätä tehtävät lähettämällä uudet vähittäismyymälän tiedot Retail POS -sovellukseen.
 
@@ -84,8 +79,7 @@ Kun olet lisännyt vähittäismyymälälle tietoja, päätä tehtävät lähett�
 5.  Julkaise vähittäismyymälä lähettääksesi myymälän tietoja Retail POS -sovellukseen.
 6.  Suorita työt lähettääksesi myymälän Retail POS -sovellukseen.
 
-## Organisaatiohierarkiat
-<a id="organization-hierarchies" class="xliff"></a>
+## <a name="organization-hierarchies"></a>Organisaatiohierarkiat
 Retail määrittää vähittäismyyntikanavien rakenteen organisaatiohierarkioiden avulla. Organisaatiohierarkiat edustavat liiketoimintasi muodostavien organisaatioiden välisiä suhteita. Kun perustat kauppoja, voit lisätä ne organisaatiohierarkiaan. Myymälät jakavat sitten valikoimissa, täydennyksissä ja raportoinnissa käytettävät tiedot.
 
 

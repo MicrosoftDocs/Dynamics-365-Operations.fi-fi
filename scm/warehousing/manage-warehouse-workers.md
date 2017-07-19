@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -23,11 +24,9 @@ ms.openlocfilehash: 52753c21862a2955e15140bb1cdb5ef6f6efe31a
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Varastotyöntekijöiden hallinta
-<a id="manage-warehouse-workers" class="xliff"></a>
+# <a name="manage-warehouse-workers"></a>Varastotyöntekijöiden hallinta
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,14 +39,12 @@ Luo uusi työn käyttäjä **Työntekijät**-sivulla **Yleinen**-välilehden **V
 
 Osana kunkin työn käyttäjän asetusten määrittämistä voit myös määrittää tietyt prosessin työnkulut. Voit esimerkiksi käyttää **On inventoinnin valvoja** -kenttää määrittääksesi, voiko käyttäjä käsitellä inventoinnin ristiriitoihin tehtäviä oikaisuja inventoinnin aikana vai tuleeko toisen henkilön ensin tarkastaa nämä oikaisut.
 
-## Työn standardien määrittäminen
-<a id="defining-labor-standards" class="xliff"></a>
+## <a name="defining-labor-standards"></a>Työn standardien määrittäminen
 **Työn standardit** -sivulla voit määrittää järjestelmän käyttämät laskentatavat sen laskiessa arvioidun ajan, minkä määrätyn tyyppisen työn tulisi viedä. Nämä määritykset voidaan tehdä yleisellä tai tietyllä tasolla. Voit esimerkiksi määrittää ajan, jonka pitäisi mennä ostotilauksen keräilyyn kiloa kohden tietyllä yksikkömäärityksellä, kun käytetään määrättyä keräilyprosessia. Samanaikaisesti voit toiseen laskentatapaan perustuen kirjata ajan käsillä olevan, keräiltävän varaston syöttötoiminnolle. 
 
 Ota määrittämäsi työn standardit käyttöön valitsemalla **Salli työn standardit** -vaihtoehto kullekin varastolle, missä työn standardeja tullaan käyttämään.
 
-## Varastotyön valvonta ja ohjaus
-<a id="monitoring-and-controlling-warehouse-work" class="xliff"></a>
+## <a name="monitoring-and-controlling-warehouse-work"></a>Varastotyön valvonta ja ohjaus
 **Kaikki työ**-sivulla voit valvoa ja ylläpitää kaikkea suunniteltua, meneillään olevaa ja valmistunutta työtä. Tältä sivulta voit päivittää erilaisia prosesseja, kuten varastotyön käyttäjien määritykset ja työn prioriteetti. Voit myös porautua työn otsikkoon ja työn riveihin liittyviin yksityiskohtiin saadaksesi kuvan odotetuista tai valmistuneista työprosesseista. 
 
 Jos otat käyttöön **Työn standardit** -vaihtoehdon, näet lasketun arvioidun ajan työlle. Kun työ sitten on käsittelyssä, näytetään toteutunut aika kullekin työtoiminnolle. Tällä tavoin voit verrata arvioituja aikalaskelmia toteutuneeseen aikaan. 

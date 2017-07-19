@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations, Talent, Core
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 ms.search.region: Global
 ms.author: jcart
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,25 +23,21 @@ ms.openlocfilehash: 1f732a53eee17317417058b92706a9228d783cb5
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Työvoiman mittarit - Power BI -sisältö
-<a id="workforce-metrics-power-bi-content" class="xliff"></a>
+# <a name="workforce-metrics-power-bi-content"></a>Työvoiman mittarit - Power BI -sisältö
 
 [!include[banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään **työvoiman mittareiden** Power BI -sisältöä Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
-## Power BI -sisällön käyttö
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 **Työvoimamittarien** Power BI -sisältö näkyy **Henkilöstön hallinta** työtilassa, jos käytät jotain näistä tuotteista:
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys
 - Microsoft Dynamics 365 for Talent
 
-## Mittareita, jotka sisältyvät Power BI -sisältöön
-<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 Seuraavassa taulukossa ovat jokaisessa raportissa näkyvät mittarit.
 
 | Raportti                                           | Mittarit                                                                                                                                                                                                            |
@@ -61,8 +58,7 @@ Seuraavassa taulukossa ovat jokaisessa raportissa näkyvät mittarit.
 
 Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa on kohdassa [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Power BI -sisällön laajentaminen
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Power BI -sisällön laajentaminen
 Jos käytät Microsoft Dynamics Lifecycle Servicesin (LCS) sisältöpaketteja, voit tehdä erinomaisia analyyseja henkilöille, jotka eivät käytä Finance and Operationsia. Voit muokata näitä sisältöpaketit sisältämään muita raportteja ja visuaalisia tietoja ja julkaista sitten sisältöpaketit analysoitavaksi Power BI.com -vuokraajassa.
 
 **Työvoiman mittarit** ovat Power BI -sisällössä Jaettu omaisuus -kirjastossa LCS:ssä. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
@@ -72,8 +68,7 @@ Muista ladata käyttämääsi Microsoft Dynamics 365 -versiota vastaava **Työvo
 >[!NOTE]
 >Lifecycle Servicesin .pbix-tiedostot koskevat vain Finance and Operationsia.
 
-## Tietomallin ja yksiköiden tiedot
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 Seuraavassa taulukossa on esitetty yksiköt, joihin sisältö perustuu.
 
 | Kokonaisuus                   | Sisältö                                                                            | Suhteet muihin yksiköihin |

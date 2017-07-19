@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application user, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,21 +23,18 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Talousjohtajan yhteenveto – Power BI -sisältö
-<a id="cfo-overview-power-bi-content" class="xliff"></a>
+# <a name="cfo-overview-power-bi-content"></a>Talousjohtajan yhteenveto – Power BI -sisältö
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä ohjeaiheessa käsitellään **talousjohtajan yhteenvetoa** ja Microsoft Power BI -sisältöä. 
 
-## Power BI -sisällön käyttö
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 
 Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys, **Talousjohtajan yhteenveto** – Power BI -sisällön raportit näkyvät **Talousjohtajan yhteenveto** -työtilassa.
 
-## Raportit, jotka sisältyvät Power BI -sisältöön
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raportit, jotka sisältyvät Power BI -sisältöön
 **Talousjohtajan yhteenveto** – Power BI -sisältö koostuu erilaisen Power BI -sisällön raporteista sekä joistakin kirjanpidon toteutuneista ja budjetin saldoista. Talousjohtaja saakin siksi Power BI -sisällön avulla yleiskuvan organisaatiosta.
 
 Seuraavassa taulukossa on esitetty Power BI -sisältö, josta raportit kopioidaan, ja raportit, jotka ovat käytettävissä **Talousjohtajan yhteenveto** -työtilassa. Erilaisen Power BI -sisällön ohjeistukseen on linkkejä.
@@ -49,8 +47,7 @@ Seuraavassa taulukossa on esitetty Power BI -sisältö, josta raportit kopioidaa
 | [Luotonvalvonnan hallinta](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi) | <ul><li>Asiakkaiden erääntyneet</li><li>Luottorajan ylittäneet asiakkaat</li><li>Erääntyneet saldot</li></ul> |
 | [Osto- ja kulutusanalyysi](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi) | <ul><li>Osto kuukauden tai päivän mukaan</li><li>10 suurinta toimittajaa ostojen mukaan</li><li>10 parasta tuotetta ostojen mukaan</li></ul> |
 
-## Power BI -sisällön laajentaminen
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Power BI -sisällön laajentaminen
 Jos käytät Microsoft Dynamics Lifecycle Servicesin (LCS) sisältöpaketteja, voit tehdä erinomaisia analyyseja henkilöille, jotka eivät käytä Microsoft Dynamics 365:tä. Voit muokata näitä sisältöpaketit sisältämään muita raportteja ja visuaalisia tietoja ja julkaista sitten sisältöpaketit analysoitavaksi Power BI.com -vuokraajassa.
 
 **Talousjohtajan yhteenveto** – Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).

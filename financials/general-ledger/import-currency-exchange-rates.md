@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
 ms.author: epopov
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: 2d0654d6dbed3b4fe56b8918194132787f66af80
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Tuo valuutanvaihtokurssit
-<a id="import-currency-exchange-rates" class="xliff"></a>
+# <a name="import-currency-exchange-rates"></a>Tuo valuutanvaihtokurssit
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Jos oikeudellinen yksikkö on saanut laskuja ulkomaan valuutassa, on tarpeen muu
 
 Seuraavissa osissa kuvataan ulkomaiden valuuttakurssien tuomisen määrittämisessä ja käsittelyssä käytettävää tiedonkulkua.
 
-## Konfiguroi vaihtokurssipalvelu
-<a id="configure-an-exchange-rate-provider" class="xliff"></a>
+## <a name="configure-an-exchange-rate-provider"></a>Konfiguroi vaihtokurssipalvelu
 Ennen kuin tuot vaihtokurssit, tiedot, joita tarvitaan tarjoajille, jotka tarjoavat vaihtokurssit, on määritettävä. Valitse vaihtokurssin toimittajat **Konfiguroi vaihtokurssipalvelut** -sivulla. Jotkin vaihtokurssipalvelut sisältyvät Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin esittelytietoihin. Seuraavassa taulukossa kuvaillaan tämän sivun ohjausobjektit.
 
 |           |                                                                                                                                                                                                                             |
@@ -47,8 +45,7 @@ Ennen kuin tuot vaihtokurssit, tiedot, joita tarvitaan tarjoajille, jotka tarjoa
 | **Avain**   | Palvelun tarvitsemien konfigurointitietojen yksilöivä tunnus. Nämä tiedot lisätään automaattisesti jokaiseen vaihtokurssipalveluun, jonka lisäät **Lisää**-painiketta napsauttamalla. |
 | **Arvo** | Jokaisen avaimen tiedot. Nämä tiedot lisätään jokaiseen vaihtokurssipalveluun, jonka lisäät **Lisää**-painiketta napsauttamalla.                                                                                         |
 
-## Tuo valuutanvaihtokurssit
-<a id="import-currency-exchange-rates" class="xliff"></a>
+## <a name="import-currency-exchange-rates"></a>Tuo valuutanvaihtokurssit
 Voit tuoda valuuttakurssit vaihtokurssin tarjoajien lähteestä ja määrittää ne **Valuutan vaihtokurssit** -sivulla. Käytä **Tuo valuutanvaihtokurssit** -sivua tuodaksesi vaihtokurssit. Seuraavassa taulukossa on kuvattu kentät, joita tarvitaan tuontiprosessin onnistuneeseen suorittamiseen.
 
 |                                        |                                                                                                                                                                                                                                                                                                                                                                             |

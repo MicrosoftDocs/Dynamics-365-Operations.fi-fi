@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
@@ -23,11 +24,9 @@ ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/09/2017
 
-
 ---
 
-# Ostotilausten yleiskatsaus
-<a id="purchase-order-overview" class="xliff"></a>
+# <a name="purchase-order-overview"></a>Ostotilausten yleiskatsaus
 
 [!include[banner](../includes/banner.md)]
 
@@ -51,8 +50,7 @@ Seuraavissa artikkeleissa on yhteenveto ostotilauksen vaiheista:
 -   [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
 -   [Toimittajan laskujen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
-## Ostotilaustyypit
-<a id="types-of-purchase-orders" class="xliff"></a>
+## <a name="types-of-purchase-orders"></a>Ostotilaustyypit
 Ostotilaustyyppejä on kolme. Tyyppi on määritettävä ostotilauksen luomisen yhteydessä. Voit määrittää uusien tilausten oletustilaustyypin **Hankintaparametrit**-sivulla.
 
 | Ostotilaustyyppi        | Kuvaus                                                                                                                                                                                                                                                                           |
@@ -61,8 +59,7 @@ Ostotilaustyyppejä on kolme. Tyyppi on määritettävä ostotilauksen luomisen 
 | Ostotilaus | Käytä tätä tyyppi ostotilauksen luontiin, kun tilaukset vahvistetaan toimittajalle ja kun tilauksia käsitellään vastaanotossa ja laskutuksessa ennen toimittajalle maksamista. Tämä on yleisin ostotilaustyyppi.                                                                          |
 | Palautettu tilaus | Käytä tyyppiä, kun palautat tavaroita toimittajalle. Tämä tilaustyyppi edellyttää, että määrität toimittajan antaman palautusnumeron. Palautusnumero määritetään ostotilauksen **Yleiset**-välilehdessä. Tilausrivien määrien on oltava negatiivisia. |
 
-## Ostotilauksen tilat
-<a id="purchase-order-statuses" class="xliff"></a>
+## <a name="purchase-order-statuses"></a>Ostotilauksen tilat
 Ostotilauksessa on useita tilauksen etenemistä ilmaisevia tilakenttiä. Nämä kentät näkyvät tilauksen **Otsikko**-kentässä ja muutamat näkyvät myös kaikkien tilausten ruudukkoyhteenvedossa. **Tila**-kenttä näyttää tilausmäärien tilan. Käytettävissä ovat seuraavat arvot:
 
 -   **Avoin tilaus** – tilaukset on luotu ja määrät on tilattu.
@@ -86,8 +83,7 @@ Voit arvioida **Asiakirjan tila** -kentän avulla nopeasti tilauksen edistymisen
 -   **Vahvistettu** – Tämä tila määritetään sen jälkeen, kun tilaus on vahvistettu. Yleensä tämä on viimeinen tilaukselle määritetty hyväksymistila.
 
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Ostotilausten luominen](purchase-order-creation.md)

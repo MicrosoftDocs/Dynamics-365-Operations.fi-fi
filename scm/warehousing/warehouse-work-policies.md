@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSWorkPolicy
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196561
 ms.assetid: cbf48ec6-1836-48d5-ad66-a9b534af1786
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-05-31
+ms.search.validFrom: 2016-05-31T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -24,11 +25,9 @@ ms.openlocfilehash: 7612003bc20f91f173629893750478b034cff27b
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Varaston työkäytännöt
-<a id="warehouse-work-policies" class="xliff"></a>
+# <a name="warehouse-work-policies"></a>Varaston työkäytännöt
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Tämä työkäytäntö määrittää, onko varastotyö luotu varastoprosessia va
 -   **Varastosijainnit**
 -   **Tuotteet**
 
-## Työtilaustyypit
-<a id="work-order-types" class="xliff"></a>
+## <a name="work-order-types"></a>Työtilaustyypit
 Voit valita seuraavista työtilaustyypeistä:
 
 -   Valmiiden tuotteiden poispano
@@ -52,16 +50,13 @@ Voit valita seuraavista työtilaustyypeistä:
 
 **Työn luontimenetelmä** -kentän arvo on **Ei koskaan**. Tämä arvo ilmaisee, että työkäytäntö estää työn varastotyön luomisen valitulle työtilaustyypille.
 
-## Varastosijainnit
-<a id="inventory-locations" class="xliff"></a>
+## <a name="inventory-locations"></a>Varastosijainnit
 Voit valita sijainnin, johon työkäytäntö sopii. Jos sijaintia ei ole liitetty työkäytäntöön, työkäytäntö ei koske mitään prosessia. **Sijainnit**-sivulla voidaan valita tai peruuttaa työkäytännön valinta määrätyssä sijainnissa.
 
-## Tuotteet
-<a id="products" class="xliff"></a>
+## <a name="products"></a>Tuotteet
 Voit valita tuotteen, johon työkäytäntö sopii. Voi soveltaa työkäytäntöä joko kaikkiin tai valittuihin tuotteisiin.
 
-## Esimerkki
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Esimerkki
 Seuraavassa esimerkissä on kaksi tuotantotilausta RD-001 ja PRD-00*2*. Tuotantotilaus PRD-001 sisältää **Kokoonpano**-työvaiheen, jolla tuote SC1 raportoidaan valmiiksi sijainnissa O1. Tuotantotilaus PRD-002 sisältää **maalaus**-työvaiheen ja käyttää tuotetta SC1 sijainnista O1. Tuotantotilaus PRD-002 käyttää myös raaka-ainetta RM1 sijainnissa O1. RM1 varastoidaan varastosijaintiin BULK-001, josta raaka-ainekeräilyn varastotyö kerää sen sijaintiin O1. Keräilytyö luodaan, kun tuotanto PRD 002 vapautetaan. 
 
 [![Varaston työkäytännöt](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
@@ -84,8 +79,7 @@ Seuraavassa on esimerkki työmenettelystä jonka voit määrittää näiden hava
 
 Seuraavissa menettelyissä saadaan vaiheittaiset ohjeet varastotyökäytännön määrittämiseksi tässä skenaariossa. Esimerkkiasetuksissa kuvataan myös, miten tuotantotilaus raportoidaan valmiiksi tiettyyn sijaintiin, jossa ei ole varastorekisterinumero-ohjausta.
 
-## Määritä varaston työkäytäntö
-<a id="set-up-a-warehouse-work-policy" class="xliff"></a>
+## <a name="set-up-a-warehouse-work-policy"></a>Määritä varaston työkäytäntö
 Varastointiprosessit eivät aina sisällä varastotyötä. Voit määrittää työn käytännön, joka estää raaka-aineen keräilytyön ja valmiiden tuotteiden poispanotöiden luonnin tietyille tuotejoukoille tietyissä sijainneissa. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. 
 
 STEPS (21)
@@ -114,8 +108,7 @@ STEPS (21)
 | 20. | Syötä tai valitse Nimiketunnus-kentän arvoksi L0101.                         |
 | 21. | Valitse Tallenna.                                                                |
 
-## Raportoi tuotantotilaus valmistuneeksi sijaintiin, jossa ei ole varastorekisterinumero-ohjausta
-<a id="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled" class="xliff"></a>
+## <a name="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled"></a>Raportoi tuotantotilaus valmistuneeksi sijaintiin, jossa ei ole varastorekisterinumero-ohjausta
 Tässä menettelyssä näytetään esimerkki valmiiksi ilmoittamisesta sijaintiin, jota ei ohjata rekisterikilvellä. Tehtävä edellyttää käytettävää työkäytäntöä. Työkäytännön määrittäminen on esitelty edellisessä menettelyssä. 
 
 STEPS (25)

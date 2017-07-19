@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,23 +23,19 @@ ms.openlocfilehash: b20f526d20d357750777d0f9bda26e4d9d55b335
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Taloudellisen suorituskyvyn Power BI -sisältö
-<a id="financial-performance-power-bi-content" class="xliff"></a>
+# <a name="financial-performance-power-bi-content"></a>Taloudellisen suorituskyvyn Power BI -sisältö
 
 [!include[banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään **taloudellisen suorituskyvyn** Microsoft Power BI -sisältöä Siinä kerrotaan sisältyvistä koontinäytöistä ja raporteista sekä sisältöpaketin muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
-## Power BI -sisällön käyttö
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 
 Voit avata **taloudellisen suorituskyvyn** Power BI:n Microsoft Dynamics Lifecycle Servicesistä (LCS) ja PowerBI.comista.
 
-### Käytettävissä LCS:stä
-<a id="available-from-lcs" class="xliff"></a>
+### <a name="available-from-lcs"></a>Käytettävissä LCS:stä
 LCS:ssä käytettävissä oleva **taloudellisen suorituskyvyn** Power BI -sisältö tukee seuraavia versioita:
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys
@@ -46,16 +43,13 @@ LCS:ssä käytettävissä oleva **taloudellisen suorituskyvyn** Power BI -sisäl
 
 Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisältöpaketin lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
 
-### Käyttö PowerBI.comista
-<a id="available-from-powerbicom" class="xliff"></a>
+### <a name="available-from-powerbicom"></a>Käyttö PowerBI.comista
 PowerBI.com-sivustossa käytettävissä oleva **taloudellisen suorituskyvyn** Power BI -sisältö tukee Microsoft Dynamics AX -versioita 7.0 ja 7.0.1. Lisätietoja Dynamics AX:n tietojen liittämisestä ja lataamisesta on ohjeaiheessa [Power BI -sisällön käyttäminen PowerBI.com-sivustossa](power-bi-home-page.md).
 
-## Päätilin asetukset
-<a id="main-account-setup" class="xliff"></a>
+## <a name="main-account-setup"></a>Päätilin asetukset
 Koska organisaatiot haluavat velkojen ja tuottosummien näkyvän raporteissa positiivisina summina, päätilien määritys on tärkeää. Jotta nämä päätilit näkyisivät positiivisina summina, päätilityypiksi on asetettava **Velka** tai **Tuotto**. Käytettäessä näitä tilityyppejä Power BI -raportointi kääntää merkit ja näyttää summat positiivisina.
 
-## Power BI -sisältöön sisältyvä koontinäyttö ja raportit
-<a id="dashboard-and-reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Power BI -sisältöön sisältyvä koontinäyttö ja raportit
 Koontinäyttö sisältää yhteenvetoruutuja tiedoista, jotka perustuvat pohjana oleviin raportteihin. Kukin ruutu sisältää kuluvan vuoden yhteenvetotietoja, jotka koskevat kaikkia organisaation yrityksiä. Tässä on esimerkkejä ruuduista:
 
 - Maksu
@@ -91,8 +85,7 @@ Kunkin ruudun taustatukena on raportti. Nämä raportit sisältävät kaavioita 
 
 Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Tietomallin ja yksiköiden tiedot
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 **Taloudellisen suorituskyvyn** Power BI -sisällön perustana käytettiin seuraavia yksikköjä:
 
 **Koostetietoyksiköt**

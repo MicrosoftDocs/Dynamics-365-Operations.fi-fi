@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,19 +24,16 @@ ms.openlocfilehash: fedde78a563939fd7080e748c412c89c71586823
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Taloushallinnan raportointi
-<a id="financial-reporting" class="xliff"></a>
+# <a name="financial-reporting"></a>Taloushallinnan raportointi
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä ohjeaiheessa kerrotaan, miten voit löydät talousraportoinnin Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa ja miten käytät taloudellisen raportoinnin ominaisuuksia. Se sisältää kuvauksen oletusraporteista, jotka toimitetaan.
 
-Taloushallinnon raportoinnin käyttäminen
-<a id="accessing-financial-reporting" class="xliff"></a>
+<a name="accessing-financial-reporting"></a>Taloushallinnon raportoinnin käyttäminen
 -----------------------------
 
 **Talousraportointi**-valikko sijaitsee seuraavissa paikoissa Finance and Operationsissa:
@@ -55,8 +53,7 @@ Yrityksen talousraporttien luontia ja muodostamista varten kyseiselle yrityksen 
 
 Käyttäjät, joille on määritetty soveltuvat oikeudet ja tehtävät käyttöoikeusroolin kautta, voivat käyttää talousraportointitoimintoja. Seuraavissa osissa käsitellään nämä oikeudet ja tehtävät sekä niihin liitetyt roolit.
 
-### Velvollisuudet
-<a id="duties" class="xliff"></a>
+### <a name="duties"></a>Velvollisuudet
 
 | Tehtävän selite                            | Kuvaus                                                             | AOT-nimi                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
@@ -65,8 +62,7 @@ Käyttäjät, joille on määritetty soveltuvat oikeudet ja tehtävät käyttöo
 | Luo raportit            | Luo ja päivitä raportit.                                 | FinancialReportsGenerate         |
 | Arvioi taloudellista suorituskykyä          | Arvioi ja analysoi taloudellista suorituskykyä.                               | FinancialReportsPerfReview       |
 
-### Oikeudet
-<a id="privileges" class="xliff"></a>
+### <a name="privileges"></a>Oikeudet
 
 | Oikeuksien otsikko                       | Kuvaus                                                             | AOT-nimi                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
@@ -75,8 +71,7 @@ Käyttäjät, joille on määritetty soveltuvat oikeudet ja tehtävät käyttöo
 | Luo raportit            | Luo ja päivitä raportit.                                 | FinancialReportsGenerateReports  |
 | Näytä raportit                | Näytä raportit.                                                 | FinancialReportsView             |
 
-### Roolit
-<a id="roles" class="xliff"></a>
+### <a name="roles"></a>Roolit
 
 | Oikeuksien otsikko                       | Tulli                                  | Roolit                                                                           |
 |---------------------------------------|---------------------------------------|---------------------------------------------------------------------------------|
@@ -87,8 +82,7 @@ Käyttäjät, joille on määritetty soveltuvat oikeudet ja tehtävät käyttöo
 
 Kun käyttäjä on lisätty tai rooli on muuttunut, raporttien pitäisi olla käyttäjän käytettävissä muutamassa minuutissa. **Huomautus:** järjestelmänvalvojan rooli lisätään kaikkiin rooleihin taloudellisessa raportoinnissa.
 
-## Oletusraportit
-<a id="default-reports" class="xliff"></a>
+## <a name="default-reports"></a>Oletusraportit
 Talousraportointi sisältää 22 oletusraporttia. Kaikki raportit käyttävät Finance and Operationsin päätilin oletusluokkia. Voit käyttää näitä raportteja sellaisenaan tai omien talousraportointitarpeiden lähtökohtana. Perinteisten raporttien, kuten tuloslaskelma tai tase, lisäksi nämä oletusraportit sisältävät raportteja, jotka näyttävät millaisia raportteja voidaan luoda. Kukin raportti seuraavassa taulukossa linkittyy raporttia koskevaan Office Mix -esitykseen.
 
 | Oletusraportti                                                                                         | kuvaus                                                                                                                                                                                                                                                                                                          |
@@ -116,16 +110,13 @@ Talousraportointi sisältää 22 oletusraporttia. Kaikki raportit käyttävät F
 | [Viikoittainen myynti ja alennukset – oletus](https://mix.office.com/watch/112ng0hy5de0j)                     | Antaa lisätietoja kuukauden jokaisen viikon myynnistä ja alennuksista. Tämä raportti sisältää neljän viikon yhteisarvon.                                                                                                                                                                                                              |
 | [Käytettävissä olevat budjettivarat -oletus](https://mix.office.com/watch/15hcpezcbx7tv)                         | Tarkastele tarkistetun budjetin, toteutuneiden menojen, budjettivarausten ja käytettävissä olevien budjettivarojen yksityiskohtaista vertailua.                                                                                                                                                                                  |
 
-## Talousraporttien avaaminen
-<a id="opening-financial-reports" class="xliff"></a>
+## <a name="opening-financial-reports"></a>Talousraporttien avaaminen
 Kun napsautat **Talousraportointi**-valikon, näkyviin tulee luettelo yrityksen oletusraportteja. Voit sitten avata raportin tai muokata sitä. Avaa jokin oletusraportti valitsemalla sen nimi. Kun raportti avataan ensimmäisen kerran, se luodaan automaattisesti edelliselle kuukaudelle. Jos esimerkiksi avaat raportin ensimmäisen kerran elokuussa 2016, raportti luodaan päivämäärälle 31.7.2016. Kun raportti on avattu, voit aloittaa siihen perehtymisen porautumalla tiettyyn tietoon ja muuttamalla raporttiasetuksia.
 
-## Talousraporttien luominen ja muokkaaminen
-<a id="creating-and-modifying-financial-reports" class="xliff"></a>
+## <a name="creating-and-modifying-financial-reports"></a>Talousraporttien luominen ja muokkaaminen
 Voit luoda raporttiluettelosta uuden raportin tai muokata aiemmin luotua raporttia. Jos sinulla on tarvittavat käyttöoikeudet, voit luoda uuden taloudellisen raportin valitsemalla **Uusi** toimintoruudussa. Raportin suunnitteluohjelma ladataan laitteeseen. Kun raportin suunnitteluohjelma käynnistyy, voit luoda sitten uuden raportin. Kun uusi raportti on tallennettu, se tukee näkyviin talousraporttiluetteloon. Luettelossa näkyvät vain raportit, jotka on luotu Finance and Operationsissa käytössä olevalle yritykselle. Lisätietoja talousraporttien luomisesta ja muokkaamisesta Finance and Operationsissa on Dynamicsin talousraportoinnin blogin [blogikirjoituksissa](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/). **Huomautus:** Tietokoneelle, jolle ladataan raportin suunnitteluohjelman asiakasohjelma, on oltava asennettuna Microsoft .NET Frameworkin versio 4.6.2. Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [täältä](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Jos käytössäsi on Chrome, sinun on asennettava ClickOnce-laajennus ladataksesi raportin suunnittelun asiakasohjelman. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. Voit myös muokata talousraporttiluettelossa näkyvää raporttia. Raporttia ympäröivä alue on valittu, valitse toimintoruudussa **Muokkaa**. Raportin suunnitteluohjelma käynnistyy.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Näytä raportit](view-financial-reports.md)

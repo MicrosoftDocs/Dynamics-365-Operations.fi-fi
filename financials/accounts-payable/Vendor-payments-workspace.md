@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: 
 ms.assetid: 
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -21,28 +22,23 @@ ms.openlocfilehash: 4011a2383fe4556b730fa0b6353ba0b9773a4eec
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/14/2017
 
-
 ---
 
-# Toimittajan maksujen työtila
-<a id="vendor-payments-workspace" class="xliff"></a>
+# <a name="vendor-payments-workspace"></a>Toimittajan maksujen työtila
 
 [!include[banner](../includes/banner.md)]
 
 **Toimittajamaksut** -työtilassa näkyy toimittajan maksujen käsittelyyn liittyviä tietoja. Työtilassa on **Oma työ** -näkymä ja **Analytiikka**-sivu. **Oma työ** -näkymä näyttää yhteenvetoruudut, toimittajatapahtumaruudukot ja liittyvän toimittajan tiedot. **Analytiikka**-sivu käyttää Microsoft Power BI:n ominaisuuksien avulla toimittajan maksuihin liittyviä visuaalisia tietoja.
 
-## Oma työ -näkymä
-<a id="my-work-view" class="xliff"></a>
+## <a name="my-work-view"></a>Oma työ -näkymä
 
-### Yhteenvetoruudut
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Yhteenvetoruudut
 
 **Yhteenveto**-osan ruudut antavat yleiskuvan maksutietojesi tilasta. Voit tarkastella maksukirjauskansioista, joita ei ole vielä kirjattu, laskuja, joiden eräpäivä on ohitettu, ja kaikki toimittajat, jotka ovat pidossa. **Yhteenveto**-osassa voit luoda uuden maksuajon.
 
 **Yhteenveto**-osan tiedot on tarkoitettu yritykselle, johon olet kirjautunut.
 
-### Toimittajatapahtumaruudukot
-<a id="vendor-transactions-grids" class="xliff"></a>
+### <a name="vendor-transactions-grids"></a>Toimittajatapahtumaruudukot
 
 **Toimittajatapahtumat**-osa sisältää ruudukot, joissa näkyvät laskut, jotka ovat erääntyneet, ja maksut, joita ei ole maksettu. **Erääntyneet laskut** -ruudukossa voit tarkastella valitun laskun maksuhistoriaa. **Maksamattomat laskut** -ruudukossa voit tarkastella valitun laskun maksuhistoriaa ja maksaa laskun.
 
@@ -50,13 +46,11 @@ Keskitettyjen maksujen kirjanpitäjät voivat käyttää suodatinta, joka näkyy
 
 **Toimittajatapahtumat**-osan **Etsi tapahtumia** -välilehden avulla voit etsiä toimittajatapahtumaa.
 
-### Aiheeseen liittyviä tietoja
-<a id="related-information" class="xliff"></a>
+### <a name="related-information"></a>Aiheeseen liittyviä tietoja
 
 Voit tarkastella **Ostoreskontran erääntyminen** -raporttia ja **Maksuyhteenveto päivän mukaan** -raporttia työtilan **Liittyviä tietoja** linkkien avulla.
 
-## Analytiikka-sivu
-<a id="analytics-page" class="xliff"></a>
+## <a name="analytics-page"></a>Analytiikka-sivu
 
 **Analytiikka**-sivulla on tärkeitä mittareita, kuten erääntyneet toimittajalaskut ja toimittajalaskuja, jotka erääntyvät myöhemmin. Tällä sivulla on yhdeksän raporttisivua. Yksi sivu sisältää yhteenvedon ja kahdeksalla muulla sivulla on tietoja ostoreskontran maksumittareista.
 

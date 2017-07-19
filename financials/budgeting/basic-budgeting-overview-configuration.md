@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,19 +23,16 @@ ms.openlocfilehash: f35db274a6b14f6bae185b69348d3829c77801b5
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Budjetoinnin yleiskatsaus 
-<a id="budgeting-overview" class="xliff"></a>
+# <a name="budgeting-overview"></a>Budjetoinnin yleiskatsaus 
 
 [!include[banner](../includes/banner.md)]
 
 
 Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin Financials-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin arvoihin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
 
-Yleiskuvaus
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Yleiskuvaus
 --------
 
 Yrityksen hyväksyttyä budjettia ylläpidetään tiedostossa, joka tunnetaan nimellä *budjettitapahtuma*. Budjetin rekisterin merkintäasiakirjan rivejä kutsutaan *budjettitilin* tapahtumiksi, ja ne sisältävät taloushallinnon dimensiotiedot, päivämäärät ja summat hyväksytystä budjetista. Budjettirekisterin tapahtuma-asiakirja integroidaan taloushallinnon perusraportteihin ja kyselysivuihin, joissa kirjanpidon summia verrataan budjettisummiin. 
@@ -48,8 +46,7 @@ Finance and Operationsissa on useita tapoja luoda budjettitapahtumia:
 
 Budjettirekisterin tapahtumaa pidetään valmiina kun budjettisaldot on päivitetty. Valitse **Budjettirekisterimerkinnät** -sivulla **Päivitä budjettisaldot** valitulle budjettirekisterin tapahtumalle tai useille tapahtumille. Kun olet päivittänyt budjettisaldot, budjettitapahtuman tila muuttuu arvoksi **Valmis**. Valmista budjettitapahtumaa ei voida avata uudelleen muokkausta varten. Näin ollen, jos budjettitietoja täytyy korjata, sinun on luotava uusi budjettitapahtuma sen sijaan, että korjaisit valmiin budjettitapahtuman tietoja.
 
-## Määritys
-<a id="configuration" class="xliff"></a>
+## <a name="configuration"></a>Määritys
 Aloita budjetin määrittäminen **Budjetointiparametrit**-sivulla. Tällä sivulla sinun on määritettävä budjetin kirjauskansio, budjettitapahtumien numerosarja, ja oletustoiminnot työtiloissa.
 
 Seuraavaksi, jos on olemassa budjettitapahtumien hyväksyntää ohjaavia käytäntöjä, budjettityypistä riippuen (esimerkiksi siirrot tai aliversiot), sinun on luotava budjettitapahtuman työnkulut **Budjetoinnin työnkulut** -sivulla. Jos on skenaarioita, joissa siirrot saattavat olla sallittuja ilman työnkulun hyväksyntää, voit määrittää budjetin siirtosäännöt, jotka tukevat näitä skenaarioita. 
@@ -74,8 +71,7 @@ Budjettikoodeja käyttämällä luot hyväksyttyjen budjettimuutosten kirjausket
 
 Voit myös halutessasi määrittää *Budjetin iirtosäännöt*. Voit käyttää budjetin siirtosääntöjä valitsemalla **Käytä sääntöjä budjetin siirtoja varten** **Budjettiparametrit**-sivulla. Kun budjettisiirron säännöt ovat käytössä, jos käyttäjä luo asiakirjan käyttämällä budjettikoodia, joka on tyyppiä **Siirto**, budjettisaldoja ei päivitetä, jos budjettisiirron sääntöjä rikotaan. Voit esimerkiksi sallia Myynti- ja markkinointiosastolle budjettisiirron asiakirjat, joissa kulubudjetti siirretään päätilien välillä, mutta estää budjetin siirrot tältä osastolta tai tälle osastolle, ellei kyseisen tyyppiselle budjettitilitapahtumalle ole myönnetty työnkulun hyväksyntää.
 
-## Työntilojen ja kyselysivujen käyttäminen budjetti vs. toteutunut -lukujen seurantaan
-<a id="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals" class="xliff"></a>
+## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Työntilojen ja kyselysivujen käyttäminen budjetti vs. toteutunut -lukujen seurantaan
 Budjettipäällikkö voi tarkastella budjetin senhetkistä tilaa **Kirjanpitobudjetit ja ennusteet** -työtilassa. **Budjetin ylittävät kulut** ja **Budjetin alittava tuotto** -välilehdiltä löytyy pikakatsaus taloushallinnon dimensioiden yhdistelmiin, joissa tavoitebudjetteihin ei päästä tai jotka lähestyvät ko. rajaa. Voit mukauttaa näillä välilehdillä käytettävää budjetin raja-arvoprosenttia ja taloushallinnon dimensioiden joukkoa valitsemalla **Määritä oma työtila**. Voit valita **Yksikön päälliköt** nähdäksesi työntekijät, jotka ovat vastuussa tietyistä näille välilehdille valituista taloushallinnon dimensioiden yhdistelmistä. Jos esimerkiksi näet, että liiketoimintaosaston kulubudjetti on ylittämässä budjetin raja-arvoa, voit helposti löytää ja ottaa yhteyttä liiketoimintaosaston päällikköön keskustellaksesi asiasta. 
 
 > [!NOTE] 

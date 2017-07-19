@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,19 +23,16 @@ ms.openlocfilehash: eb7fd01874b08417933ddf575c7d6ff866b4e6f8
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
-<a id="reconcile-bank-statements-by-using-advanced-bank-reconciliation" class="xliff"></a>
+# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
 
 [!include[banner](../includes/banner.md)]
 
 
 Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa. Tässä aiheessa käsitellään täsmäytysprosessia.  
 
-Tuo sähköinen tiliote
-<a id="import-an-electronic-bank-statement" class="xliff"></a>
+<a name="import-an-electronic-bank-statement"></a>Tuo sähköinen tiliote
 -----------------------------------
 
 Voit tuoda tiliotteet **Tiliotteet**-sivun **Tuo tiliote** -toiminnolla. Tiliotteessa pankkitili tunnistetaan tiliotteessa pankkitilin tiedoissa määritetyillä arvoilla. Näitä arvoja ovat pankin nimi, tilinumero, reititysnumero, SWIFT (Society for Worldwide Interbank Financial Telecommunication) -koodi ja kansainvälinen tilinumero (IBAN). 
@@ -50,8 +48,7 @@ Voit myös ladata useita tiliotetiedostoja Finance and Operationsiin yhdellä ke
 
 Valittavana on **Täsmäytä tuonnin jälkeen** -asetus. Kun tässä asetuksessa on valittu **Kyllä**, järjestelmä tarkistaa automaattisesti tiliotteen, luo uuden pankkitilin täsmäytyksen ja laskentataulukon sekä suorittaa oletusarvoisen täsmäytyksen sääntöjoukon, kun tiliote ladataan palvelimeen. Tämä toiminto automatisoi siihen pisteeseen, jossa tapahtumat on täsmäytettävä manuaalisesti.
 
-## Tarkista tiliotteen oikeellisuus
-<a id="validate-the-bank-statement" class="xliff"></a>
+## <a name="validate-the-bank-statement"></a>Tarkista tiliotteen oikeellisuus
 Tarkista tiliote valitsemalla **Vahvista** **Tiliotteet**-sivulla. Tiliotteet on tarkistettava ennen täsmäytystä. Tämä vaihe suoritetaan automaattisesti, jos **Täsmäytä tuonnin jälkeen** -asetukseksi oli valittu tuonnin aikana **Kyllä**. 
 
 Tiliotteen vahvistuksessa tarkistetaan seuraavat tiedot:
@@ -66,8 +63,7 @@ Tiliotteen vahvistuksessa tarkistetaan seuraavat tiedot:
 
 Kun vahvistus on valmis, tiliotteen tilaksi päivitetään **Vahvistettu**. Tiliote on tarkistettava ennen täsmäytystä.
 
-## Täsmäytä tiliote
-<a id="reconcile-the-bank-statement" class="xliff"></a>
+## <a name="reconcile-the-bank-statement"></a>Täsmäytä tiliote
 Kun olet tuonut sähköisen tiliotteen ja vahvistanut sen **Tiliotteet**-sivulla, voit täsmäyttää tiliotteen **Pankkitilin täsmäytys**- ja **Pankkitilin täsmäytyksen laskentataulukko** -sivuilla. 
 
 Luo uusi täsmäytys valitsemalla **Pankkitilin täsmäytys** -sivulla **Uusi** ja valitse sitten tuodun tiliotteen pankkitili. Pankkitilillä voi olla vain yksi avoin pankkitilin täsmäytys. Katkaisupäivämäärä määrittää, mitkä tiliotteen tapahtumat ja Dynamics 365 for Operations -pankkitapahtumat sisältyvät täsmäytyksen laskentataulukkoon. Oletusarvoisesti katkaisupäivämääränä käytetään kuluvaa järjestelmäpäivämäärää, mutta voit muuttaa täsmäytyksen päivämäärän. Muut otsikkotiedot haetaan automaattisesti tiliotteesta. Tämä vaihe suoritetaan automaattisesti, jos **Täsmäytä tuonnin jälkeen** -asetukseksi oli valittu tuonnin aikana **Kyllä**. 
@@ -96,8 +92,7 @@ Voit kumota virheellisesti täsmäytettyjen tapahtumien täsmäytykset. Valitse 
 
 Kun kaikki tiliotteen rivit on käsitelty, merkitse pankkitilin täsmäytyksen laskentataulukko täsmäytetyksi.
 
-## Kirjaa uudet täsmäytykseen liitetyt tapahtumat
-<a id="post-new-transactions-that-are-associated-with-the-reconciliation" class="xliff"></a>
+## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Kirjaa uudet täsmäytykseen liitetyt tapahtumat
 Täsmäytyksen laskentataulukossa **uusiksi** merkityt tiliotteen tapahtumat kirjataan **Tiliote**-sivulla. Voit tarkastella tiliotteen tietoja valitsemalla **Tiliote**-sivulla tiliotteen tunnuksen. Voit tarkastella uusien tapahtumien ja niihin liitettyjen kirjanpidon merkintöjen tietoja valitsemalla **Kirjanpito**-sivulla **Näytä jakaumat**- ja **Tarkastele kirjanpitoa** -vaihtoehdot. Kirjaa **uusiksi** merkityt tiliotteen rivit kirjanpitoon valitsemalla **Kirjaa**. Huomaa, että tiliote voidaan kirjata vain kerran.
 
 

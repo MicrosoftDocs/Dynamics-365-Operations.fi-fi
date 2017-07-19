@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15461
 ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: d260f460bf0da072eb46909d8c28d18041ecaa78
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Numerosarjan yleiskatsaus
-<a id="number-sequence-overview" class="xliff"></a>
+# <a name="number-sequence-overview"></a>Numerosarjan yleiskatsaus
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ Numerosarjaesimerkit
 ------------------------
 
 Seuraavissa esimerkeissä näytetään, kuinka segmenttejä käytetään numerosarjamuotojen luomiseen. Erityisesti esimerkit osoittavat alueen segmenttien vaikutuksen.
-### Kuluraportin numerot
-<a id="expense-report-numbers" class="xliff"></a>
+### <a name="expense-report-numbers"></a>Kuluraportin numerot
 
 Seuraavassa esimerkissä kuluraportin numerot määritetään yritykselle, jonka nimi on **CS**. **Alue:** Matkalaskut **Viite:** Kuluraportin numero **Vaikutusalue:** Oikeushenkilö **Oikeushenkilö:** CS
 | Segmentit  | Segmenttityyppi | Arvo     |
@@ -50,8 +48,7 @@ Seuraavassa esimerkissä kuluraportin numerot määritetään yritykselle, jonka
 
 **Esimerkki numeromuotoilusta**: CS-KULU-0039 Määrität vastaavat numerosarjamuodot muille yrityksille. Jos vaihdat vain esimerkiksi **RW**-yrityksen yritys-segmentin arvon, muotoiltu numero on RW-KULU-0039. Voit myös vaihtaa koko numerosarjamuodon muihin yrityksiin. Nyt voit esimerkiksi ohittaa yrityksen vaikutusalueen segmentin ja luoda muotoillun numeron, kuten Exp-0001.
 
-### Myyntitilausnumerot
-<a id="sales-order-numbers" class="xliff"></a>
+### <a name="sales-order-numbers"></a>Myyntitilausnumerot
 
 Seuraavassa esimerkissä myyntitilausnumerot määritetään yritystunnukselle **CEU**. **Alue:** Myynti **Viite:** Myyntitilaus **Vaikutusalue:** Yritys **Yritys:** CEU
 | Segmentit  | Segmenttityyppi | Arvo    |
@@ -61,8 +58,7 @@ Seuraavassa esimerkissä myyntitilausnumerot määritetään yritystunnukselle *
 
 **Esimerkki numeromuotoilusta**: SO-0029 Vaikka vaikutusalueen segmenttiä ei ole sisällytetty muotoon, numerointi käynnistyy uudelleen kunkin yrityksen tunnuksen kohdalla. Jos käytät samaa muotoa kaikille yrityksen tunnuksille, samoja numeroita käytetään kussakin yrityksessä. Esimerkiksi myyntitilausta SO-0029 käytetään jokaisessa yrityksessä. Voit myös vaihtaa koko numerosarjamuodon muuhun yritystunnukseen.
 
-### Ostoehdotuksen numerot
-<a id="purchase-requisition-numbers" class="xliff"></a>
+### <a name="purchase-requisition-numbers"></a>Ostoehdotuksen numerot
 
 Seuraavassa esimerkissä ostoehdotusnumerot ovat organisaation laajuisia. **Alue:** Osto **Viite:** Ostoehdotus **Vaikutusalue:** Jaettu
 | Segmentit  | Segmenttityyppi | Arvo    |
@@ -74,13 +70,11 @@ Seuraavassa esimerkissä ostoehdotusnumerot ovat organisaation laajuisia. **Alue
 -----------------------------------------------
 
 Mieti seuraavia tietoja siitä, miten numerosarjat määritys voi vaikuttaa järjestelmän suorituskykyyn, ennen kuin määrität numerosarjoja.
-### Jatkuvat ja ei-jatkuvat numerosarjat
-<a id="continuous-and-non-continuous-number-sequences" class="xliff"></a>
+### <a name="continuous-and-non-continuous-number-sequences"></a>Jatkuvat ja ei-jatkuvat numerosarjat
 
 Numerosarjat voivat olla jatkuvia tai ei-jatkuvia. Jatkuva numerosarja ei ohita yhtäkään numeroa, mutta numeroita ei voi käyttää peräkkäin. Ei-jatkuvien numerosarjojen numerot käytetään sarjassa, mutta numerosarja voi ohittaa numeroita. Jos esimerkiksi käyttäjä peruuttaa tapahtuman, numero luodaan mutta sitä ei käytetä. Jatkuvassa numerosarjassa sitä numeroa kierrätetään myöhemmin. Numerosarjassa, joka ei ole jatkuva numerosarja, numeroa ei käytetä. Ulkoiset asiakirjat, kuten ostotilaukset, myyntitilaukset ja laskut, vaativat tavallisesti jatkuvat numerosarjat. Kuitenkin jatkuvat numerosarjat saattavat heikentää järjestelmän vasteaikaa, koska järjestelmän on pyydettävä numeroa tietokannasta aina, kun uusi asiakirja tai tietue luodaan. Jos käytössä ei ole jatkuvaa numerosarja, **Esijako** voidaan ottaa käyttöön **Numerosarja**-sivun **Suorituskyky**-pikavälilehdessä. Kun määrität ennalta kohdistettavan numeroiden määrän, järjestelmä valitsee numerot ja tallentaa ne muistiin. Uudet numerot pyydetään tietokannasta vasta sitten, kun esijaettu määrä on käytetty. Elleivät säännökset vaadi jatkuvien numerosarjojen käyttöä, suosittelemme, että käytät ei-jatkuvia numerosarjoja paremman suorituskyvyn vuoksi.
 
-### Automaattinen numerosarjojen puhdistus
-<a id="automatic-cleanup-of-number-sequences" class="xliff"></a>
+### <a name="automatic-cleanup-of-number-sequences"></a>Automaattinen numerosarjojen puhdistus
 
 Järjestelmä ei voi kierrättää numeroita automaattisesti jatkuvia numerosarjoja varten sähkökatkoksen, sovellusvirheen tai muun odottamattoman vian takia. Voit suorittaa vapautusprosessi manuaalisesti tai automaattisesti palauttaaksesi menetetyt numerot. Mieti palvelimen käyttö puhdistusprosessin suunnittelussa. On suositeltavaa suorittaa vapautus erätyönä hiljaisena aikana.
 

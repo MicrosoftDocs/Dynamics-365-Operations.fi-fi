@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
 ms.author: cvocph
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 84322bb3f02d236843bebc24c4c5eccdd4d9f2bf
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Reseptien suunnittelu
-<a id="formula-designer" class="xliff"></a>
+# <a name="formula-designer"></a>Reseptien suunnittelu
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,8 +44,7 @@ Valitse **Suodata** muuttaaksesi näkymän alkuperäistä valintaa. Jos valitset
 
 Seuraavissa osissa käsitellään rakennesuunnitteluikkunassa olevia toimintoja.
 
-## Kaavan rakenteen analysointi kaavojen suunnittelutoiminnon avulla
-<a id="analyze-a-formula-structure-by-using-the-formula-designer" class="xliff"></a>
+## <a name="analyze-a-formula-structure-by-using-the-formula-designer"></a>Kaavan rakenteen analysointi kaavojen suunnittelutoiminnon avulla
 Kaavojen suunnittelutoiminnossa on kaksi osaa:
 
 -   Kaavarakenteen puunäkymä.
@@ -57,8 +55,7 @@ Kaavojen suunnittelutoiminnossa on kaksi osaa:
     -   **Reititys** – näyttää valittuun solmuun liittyvän reitityksen otsikon.
     -   **Reitityksen työvaiheet** – näyttää esikatseluikkunan reitityksen työvaiheista. Kun tiettyyn työvaiheeseen liitetty tuoterakenteen rivi valitaan, työvaiheeseen lisätään merkintä **Komponentti tarvitaan työvaiheessa**.
 
-## Kaavan ja reititykseen valinta
-<a id="select-a-formula-and-route" class="xliff"></a>
+## <a name="select-a-formula-and-route"></a>Kaavan ja reititykseen valinta
 Kaavojen suunnittelutoiminnon otsikossa näytetään suodatin, jota käytetään kaavalle ja reititykselle. Voit vaihtaa suodatinta **Suodatin** -valintaikkunassa. Seuraavassa taulukossa kuvaillaan tämän valintaikkunan kentät.
 
 <table>
@@ -102,8 +99,7 @@ Kaavojen suunnittelutoiminnon otsikossa näytetään suodatin, jota käytetään
 
 Kun tarkastelet tai muokkaat kaavojen suunnittelutoiminnolla kaavoja, jotka sisältävät haamunimikkeitä vähintään yhdellä tasolla, ylimpään nimikkeeseen liittyvä reitti kattaa yleensä kaavahierarkian kokonaisuudessaan. Yhteenvetoa voit helpottaa lukitsemalla ylätason reitityksen näyttöön napsauttamalla **Näytä** &gt; **Lukitse reititys**. Reitityksen lukituksen voit poistaa napsauttamalla **Näytä** &gt; **Poista reitityksen lukitus**.
 
-## Kaavojen ja kaavarivien lisääminen ja muokkaaminen
-<a id="add-and-edit-formulas-and-formula-lines" class="xliff"></a>
+## <a name="add-and-edit-formulas-and-formula-lines"></a>Kaavojen ja kaavarivien lisääminen ja muokkaaminen
 Muokkaa kaavariviä tai kaavoja **Tuoterakennerivit**- tai **Kaava**-toiminnoilla. Kun valitset puurakenteessa solmun, solmun tyyppi määrittelee saatavilla olevat toiminnot.
 
 | Toiminto                            | kuvaus                                                                                               | Solmutyyppi ja ehdot |
@@ -117,8 +113,7 @@ Muokkaa kaavariviä tai kaavoja **Tuoterakennerivit**- tai **Kaava**-toiminnoill
 | Kaava &gt; Laskenta            | Näyttöön tulee valintaikkuna, jossa voidaan suorittaa kustannuksen tai myyntihinnan laskenta valitulle tuotevariantille. | Tämä toiminto on käytettävissä silloin, kun valittu solmu liittyy kaavan versioon. |
 | Kaava &gt; Tarkistus                  | Vahvista ja tarkista valittu kaava.                                                                  | Tämä toiminto on käytettävissä silloin, kun valittu solmu liittyy kaavan versioon. |
 
-## Puunäkymän määrittäminen
-<a id="configuring-the-tree-view" class="xliff"></a>
+## <a name="configuring-the-tree-view"></a>Puunäkymän määrittäminen
 Mukauta kaavan suunnittelutoiminnon puunäkymässä näkyviä tietoja valitsemalla **Asetukset**.
 
 | Kenttäryhmä | kuvaus |

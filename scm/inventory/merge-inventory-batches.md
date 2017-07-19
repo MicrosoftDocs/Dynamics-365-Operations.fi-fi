@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -23,11 +24,9 @@ ms.openlocfilehash: aec97976ef6a2b4c66118289f7f76b14351456f8
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Yhdistä varastoerät
-<a id="merge-inventory-batches" class="xliff"></a>
+# <a name="merge-inventory-batches"></a>Yhdistä varastoerät
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Tässä artikkelissa on tietoja kahden tai useamman varastoerän konsolidoinnist
 
 Kun yhdistät eriä, laskelmat voivat auttaa optimoimaan yhdistetyn erän ominaisuudet ja erämääritteet. Kun lähde-erät on valittu, yhdistetyn erän voi tarkistaa ja sitä voi vielä muuttaa ennen kirjausta. Voit myös siirtää erän yhdistämisen varastokirjauskansioon hyväksyttäväksi. Varasto voidaan varata tai kirjata suoraan varastokirjauskansiosta. Yhdistetyt erän kirjatessasi varasto oikaistaan lähde-erillä ja yhdistetyllä erällä.
 
-## Onko tiettyjä edellytyksiä?
-<a id="are-there-any-prerequisites" class="xliff"></a>
+## <a name="are-there-any-prerequisites"></a>Onko tiettyjä edellytyksiä?
 Kyllä, on asioita, jotka on määritettävä ennen erän yhdistämisen työkalujen käyttöä. Seuraavassa taulussa kuvataan edellytykset.
 
 <table>
@@ -80,23 +78,19 @@ Kyllä, on asioita, jotka on määritettävä ennen erän yhdistämisen työkalu
 </tbody>
 </table>
 
-## Milloin kannattaa yhdistää varaston erät?
-<a id="when-might-i-want-to-merge-batches-of-inventory" class="xliff"></a>
+## <a name="when-might-i-want-to-merge-batches-of-inventory"></a>Milloin kannattaa yhdistää varaston erät?
 Seuraavat skenaariot ovat esimerkkejä siitä, milloin erien yhdistäminen saattaa olla hyödyllistä.
 
 -   Sammy kulkee varastossaan ja huomaa, että samasta nimikkeestä on useita eriä, joiden määrät ovat pieniä. Hän odottaa saavansa useita toimituksia ja hän havaitsee, että hän voi vapauttaa työtilaa yhdistämällä uuteen erään parittomat määrät.
 -   Sammy vastaanottaa varastoa ja haluaa yhdistää uuden erän sellaiseen erään, joka hänellä jo on, ja parantaa näin aiemman erän erämääritteen arvoa.
 
-## Voinko yhdistää eri toimipaikkojen ja yritysten eriä?
-<a id="can-i-merge-batches-across-sites-and-legal-entities" class="xliff"></a>
+## <a name="can-i-merge-batches-across-sites-and-legal-entities"></a>Voinko yhdistää eri toimipaikkojen ja yritysten eriä?
 Ei, voit yhdistää vain eriä, joilla on sama toimipaikka ja varaston varastodimensiot yhdessä yrityksessä. Voit määrittää yhdistetylle erälle toisen sijainnin ja kuormalavan tunnuksen.
 
-## Voinko yhdistää osittaisia määriä?
-<a id="can-i-merge-partial-quantities" class="xliff"></a>
+## <a name="can-i-merge-partial-quantities"></a>Voinko yhdistää osittaisia määriä?
 Et, voit yhdistää vain erien täyden määrän. Eräyhdistämistoiminto on tarkoitettu varasto-ominaisuudeksi (ei tuotanto-ominaisuudeksi).
 
-## Mitä jos erillä on erilaiset erämääritearvot?
-<a id="what-if-the-batches-have-different-batch-attribute-values" class="xliff"></a>
+## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Mitä jos erillä on erilaiset erämääritearvot?
 Kun valitset tiettyyn erään yhdistettävät lähde-erät, Finance and Operations tarkistaa, onko kaikilla erillä samat ominaisuudet tai määritearvot. Kun määritteen arvo on sama, yhdistetylle erälle ehdotetaan arvoa. Tätä arvoa voi muuttaa. Yhdistetyn erän toisistaan poikkeavat määritearvot jätetään tyhjiksi. Voit lisätä nämä arvot manuaalisesti. Jos määritearvon erämääritetyyppi on kokonaisluku tai murtoluku, eivätkä arvot ole samoja kaikille lähde-erille, arvo lasketaan käyttämällä painotettua keskiarvoa. Laskettu arvo pyöristetään ylös- tai alaspäin lähimpään lisäykseen. Jos lähde-erän arvo on tyhjä, erää ja sen määrää ei sisällytetä laskentaan. **Esimerkki** Seuraavissa esimerkeissä kuvataan painotetun keskiarvon laskenta yhdistetylle erälle. Kahdella lähde-erällä on tyhjä arvo erämääritetyypille, joka on kokonaisluku. Seuraava määrite on liitetty lähde-eriin.
 
 | Ominaisuus | Minimi | Lisäys | Maksimi |
@@ -128,20 +122,17 @@ Erien B1 ja B4 arvoja ja määriä ei sisällytetä painotetun keskiarvon lasken
 | 25    | 30                                             | 0,461538462     | 11,53846154                                                           |
 |       | **Yhteensä:** 65, joka on painojen summa |                 | **Yhteensä:** 21,5384615, pyöristetty 21:een (lähin korotus) |
 
-## Mitä jos erillä on erilaiset erän päivämäärät?
-<a id="what-if-the-batches-have-different-batch-dates" class="xliff"></a>
+## <a name="what-if-the-batches-have-different-batch-dates"></a>Mitä jos erillä on erilaiset erän päivämäärät?
 Jos erillä on eri eräpäivämäärät, osa päivämääristä lasketaan **Erän yhdistäminen** -sivun **Yhdistetty erä** -pikavälilehden **Erän päivämäärät** -ryhmän arvojen perusteella. Järjestelmä laskee **Erän päivämäärät** -ryhmän kenttien arvot. Arvoihin sisältyvät valmistuspäivämäärä, vanhentumispäivämäärä, suositeltavan varastointiajan päivämäärä sekä parasta ennen -päivämäärä. Päivämäärät lasketaan nimikkeen **Vapautetut tuotteen tiedot** -sivun **Nimiketiedot**-kentän asetusten perusteella. Voit tarvittaessa muuttaa arvoja tai kirjata ne manuaalisesti. Muiden päivämäärien osalta ei suoriteta laskentaa. Samaa periaatetta käytetään erämääritteen arvoille. Jos päivämäärä on sama kaikille lähde-erille, yhdistetylle erälle ehdotetaan tätä päivämäärää. Jos päivämäärä ei ole sama kaikille lähde-erille, yhdistetyn erän päivämäärä on tyhjä, ja sen voi kirjoittaa manuaalisesti.
 
-## Mitä jos dimensiot ovat erilaiset erissä, jotka haluan yhdistää?
-<a id="what-if-the-dimensions-are-different-on-the-batches-that-i-want-to-merge" class="xliff"></a>
+## <a name="what-if-the-dimensions-are-different-on-the-batches-that-i-want-to-merge"></a>Mitä jos dimensiot ovat erilaiset erissä, jotka haluan yhdistää?
 Tuotedimensiot, seurantadimensiot ja varastodimensiot käsitellään seuraavasti:
 
 -   **Tuotedimensiot** – Kaikkien valitun nimikkeen tuotedimensioiden on oltava samat. Eriä ei voi yhdistää tuotedimensioiden kesken.
 -   **Seurantadimensiot** – Uusi eränumero luodaan automaattisesti, jos nimikkeelle on määritetty eränumeroryhmä. Jos nimikkeelle ei ole määritetty eränumeroryhmää, voit valita aiemmin luodun erän tai syöttää numeron manuaalisesti. Sarjanumerot siirretään lähde-erästä yhdistetyt yhdistetyn erän varaston kirjauskansioriveille.
 -   **Varastodimensiot** – Toimipaikka- ja varastodimensioiden on oltava samat kaikille lähde-erille ja yhdistetylle erälle. Voit määrittää yhdistetylle erälle uuden sijainnin ja kuormalavan tunnuksen.
 
-## Kirjauksen toiminta
-<a id="how-does-posting-work" class="xliff"></a>
+## <a name="how-does-posting-work"></a>Kirjauksen toiminta
 Kirjaaminen toimii kahdella eri tavalla sen mukaan, käytetäänkö hyväksyntäprosessia kirjauskansioita varten. **Siirto kirjauskansioon**- ja **Kirjaa erän yhdistäminen** -toimintojen avulla voit siirtää erän yhdistämisen kirjauskansioon, jossa se voidaan tarkistaa ja kirjata, tai voit kirjata erän yhdistämisen suoraan. Olennaisin ero kahden toiminnon välillä on se, että siirtäminen kirjauskansioon ei kirjaa erien yhdistämistä. Molemmat toiminnot luovat uuden erän, jos aiemmin luotua erää ei ole valittuna, päivittävät kaikki erätiedot ja määritearvot ja luovat varastokirjauskansion.
 
 -   **Siirto kirjauskansioon** – Siirtää erän yhdistämisen tiedot uuteen varastokirjauskansioon. Jos olet määrittänyt automaattisia varauksia, lähde-erän määrät varataan. Erän yhdistämistietoja ei voi muuttaa. Jos sinun on muokattava erän yhdistämistä, kirjauskansio on poistettava. Kirjauskansiota voi käyttää tehtävänä, joka toisen työntekijän on suoritettava myöhemmin. Erän määrän varaus kirjauskansioon suojataan. Tämän kohdistuksen avulla laatusuunnittelija tai varastopäällikkö voi luoda tehtäviä omille työntekijöilleen.
@@ -149,8 +140,7 @@ Kirjaaminen toimii kahdella eri tavalla sen mukaan, käytetäänkö hyväksyntä
 
 Voit hyväksyä erän yhdistämisen varastokirjauskansion **Kaikki erän yhdistämiset** -luettelosivulta. Valitse **Kirjauskansio** &gt; **Kirjaa**. Kun kirjauskansio on kirjattu, et voi muuttaa yhdistetyn erän tietoja. Kun olet siirtänyt erän yhdistämisen varastokirjauskansioon, voit muuttaa tietoja vain, jos kirjauskansio on poistettu.
 
-## Miksi en näe todellista painoa varaston kirjauskansiossa, kun olen yhdistänyt todellisen painon nimikkeen?
-<a id="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal" class="xliff"></a>
+## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Miksi en näe todellista painoa varaston kirjauskansiossa, kun olen yhdistänyt todellisen painon nimikkeen?
 Voit yhdistää todellisen painon nimikkeiden eriä samalla tavalla kuin muitakin nimikkeitä. Todellisen painon tietoja ei kuitenkaan näytetä varastokirjauskansiossa. Suosittelemme, että varmistat todelliset painotiedot ennen erän yhdistämisen siirtämistä varaston kirjauskansioon.
 
 

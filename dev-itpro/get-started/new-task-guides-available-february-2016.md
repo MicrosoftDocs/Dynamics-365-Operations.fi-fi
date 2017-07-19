@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
 ms.search.region: global
 ms.author: josaw
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,25 +23,21 @@ ms.openlocfilehash: cdad1d6c2466b47b07133a5335866ef6881609ca
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Uudet tehtäväoppaat (helmikuu 2016)
-<a id="new-task-guides-february-2016" class="xliff"></a>
+# <a name="new-task-guides-february-2016"></a>Uudet tehtäväoppaat (helmikuu 2016)
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM -kirjastoissa helmikuuhun 2016 mennessä.  Julkaistut kirjastot sisältävät (helmikuu 2016) Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston sekä (helmikuu 2016) aloitusoppaan.
 
-Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016)
-<a id="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax" class="xliff"></a>
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016)
 ---------------------------------------------------------------------------------
 
 (Helmikuu 2016) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, jotka on tarkoitettu Dynamics AX 7.0.0 -version ohjeeksi. Jos tarvitset näiden tehtäväoppaiden lokalisoituja versioita, ne ovat saatavilla (toukokuu 2016) Microsoft Dynamics AX:n yhdistetyssä APQC-kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
 
-### Ostoreskontra
-<a id="accounts-payable" class="xliff"></a>
+### <a name="accounts-payable"></a>Ostoreskontra
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -55,8 +52,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Myyntireskontra
-<a id="accounts-receivable" class="xliff"></a>
+### <a name="accounts-receivable"></a>Myyntireskontra
 
 |                                                             |                    |
 |-------------------------------------------------------------|--------------------|
@@ -77,8 +73,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Maksuliikenteen hallinta
-<a id="cash-and-bank-management" class="xliff"></a>
+### <a name="cash-and-bank-management"></a>Maksuliikenteen hallinta
 
 |                                                                      |                    |
 |----------------------------------------------------------------------|--------------------|
@@ -106,8 +101,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Yhteensopivuus
-<a id="compliance" class="xliff"></a>
+### <a name="compliance"></a>Yhteensopivuus
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -116,8 +110,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Kustannushintojen hallinta
-<a id="cost-management" class="xliff"></a>
+### <a name="cost-management"></a>Kustannushintojen hallinta
 
 |                                                                     |                    |
 |---------------------------------------------------------------------|--------------------|
@@ -130,8 +123,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Maa/alue-toiminto
-<a id="countryregion-functionality" class="xliff"></a>
+### <a name="countryregion-functionality"></a>Maa/alue-toiminto
 
 |                                                                                                        |                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
@@ -273,8 +265,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Vision ja strategian kehittäminen
-<a id="develop-vision-and-strategy" class="xliff"></a>
+### <a name="develop-vision-and-strategy"></a>Vision ja strategian kehittäminen
 
 |                                                                                          |                    |
 |------------------------------------------------------------------------------------------|--------------------|
@@ -287,8 +278,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Sähköinen raportointi
-<a id="electronic-reporting" class="xliff"></a>
+### <a name="electronic-reporting"></a>Sähköinen raportointi
 
 |                                                 |                    |
 |-------------------------------------------------|--------------------|
@@ -301,8 +291,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Kulujenhallinta
-<a id="expense-management" class="xliff"></a>
+### <a name="expense-management"></a>Kulujenhallinta
 
 |                              |                    |
 |------------------------------|--------------------|
@@ -311,8 +300,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Käyttöomaisuudet
-<a id="fixed-assets" class="xliff"></a>
+### <a name="fixed-assets"></a>Käyttöomaisuudet
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -335,8 +323,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Kirjanpito
-<a id="general-ledger" class="xliff"></a>
+### <a name="general-ledger"></a>Kirjanpito
 
 |                                                                   |                    |
 |-------------------------------------------------------------------|--------------------|
@@ -369,8 +356,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Henkisen pääoman hallinta
-<a id="human-capital-management" class="xliff"></a>
+### <a name="human-capital-management"></a>Henkisen pääoman hallinta
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -414,8 +400,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Varastonhallinta
-<a id="inventory-management" class="xliff"></a>
+### <a name="inventory-management"></a>Varastonhallinta
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -439,8 +424,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Valmistus
-<a id="manufacturing" class="xliff"></a>
+### <a name="manufacturing"></a>Valmistus
 
 |                                                               |                    |
 |---------------------------------------------------------------|--------------------|
@@ -492,8 +476,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Pääsuunnittelu
-<a id="master-planning" class="xliff"></a>
+### <a name="master-planning"></a>Pääsuunnittelu
 
 |                                                   |                    |
 |---------------------------------------------------|--------------------|
@@ -506,8 +489,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Organisaation hallinto
-<a id="organization-administration" class="xliff"></a>
+### <a name="organization-administration"></a>Organisaation hallinto
 
 |                                           |                    |
 |-------------------------------------------|--------------------|
@@ -521,8 +503,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Suunnittelu
-<a id="planning" class="xliff"></a>
+### <a name="planning"></a>Suunnittelu
 
 |                        |                    |
 |------------------------|--------------------|
@@ -531,8 +512,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Hankinta
-<a id="procurement-and-sourcing" class="xliff"></a>
+### <a name="procurement-and-sourcing"></a>Hankinta
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -547,8 +527,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Tuotteen tiedot ja määritykset
-<a id="product-information-and-configuration" class="xliff"></a>
+### <a name="product-information-and-configuration"></a>Tuotteen tiedot ja määritykset
 
 |                                                       |                    |
 |-------------------------------------------------------|--------------------|
@@ -574,8 +553,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Julkinen sektori
-<a id="public-sector" class="xliff"></a>
+### <a name="public-sector"></a>Julkinen sektori
 
 |                                                                                         |                    |
 |-----------------------------------------------------------------------------------------|--------------------|
@@ -601,8 +579,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Vähittäismyynti ja kauppa
-<a id="retail-and-commerce" class="xliff"></a>
+### <a name="retail-and-commerce"></a>Vähittäismyynti ja kauppa
 
 |                                                                                           |                    |
 |-------------------------------------------------------------------------------------------|--------------------|
@@ -644,8 +621,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Myynti
-<a id="sales" class="xliff"></a>
+### <a name="sales"></a>Myynti
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -668,8 +644,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Arvonlisävero
-<a id="sales-tax" class="xliff"></a>
+### <a name="sales-tax"></a>Arvonlisävero
 
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
@@ -688,8 +663,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Suojaus
-<a id="security" class="xliff"></a>
+### <a name="security"></a>Suojaus
 
 |                                                         |                    |
 |---------------------------------------------------------|--------------------|
@@ -700,8 +674,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-### Varasto ja kuljetus
-<a id="warehouse-and-transportation" class="xliff"></a>
+### <a name="warehouse-and-transportation"></a>Varasto ja kuljetus
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -726,8 +699,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-## Aloituskirjaston tehtäväoppaat (helmikuu 2016)
-<a id="task-guides-in-the-february-2016-getting-started-library" class="xliff"></a>
+## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Aloituskirjaston tehtäväoppaat (helmikuu 2016)
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM-rivi**                                       | **Maa/alue** |
@@ -747,8 +719,7 @@ Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016
 
  
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)

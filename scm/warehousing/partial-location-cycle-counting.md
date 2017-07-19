@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 keywords: WHSCycleCountPlan WHSWorkLineCycleCount WHSWorkTemplateLineGroup, WHSWorkTemplateTable
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Sijainnin osittainen inventointi
-<a id="partial-location-cycle-counting" class="xliff"></a>
+# <a name="partial-location-cycle-counting"></a>Sijainnin osittainen inventointi
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Inventointisuunnitelmat ohjaavat varsinaista inventointia. Voit pyytää vain ti
 
 Kun inventointityö luodaan inventointisuunnitelmien avulla, voit ohjata varsinaisia inventointitoimenpiteitä. Voit pyytää vain tiettyjen tuotteiden tai tuotevarianttien inventointia sen sijaan, että toimipaikan koko käytettävissä oleva varasto inventoitaisiin. Tiettyjen tuotteiden suodattaminen auttaa varastopäällikköä pienentämään tarkistuksen yleiskustannuksia, välttämään konsolidointi virheitä ja säästämään aikaa.
 
-## Toimipaikan osittaisen inventoinnin määrittäminen
-<a id="how-to-configure-partial-location-cycle-counting" class="xliff"></a>
+## <a name="how-to-configure-partial-location-cycle-counting"></a>Toimipaikan osittaisen inventoinnin määrittäminen
 Kun inventoinnin työvaiheissa käytetään varastotyöprosessia, kullekin sijainnille luodaan työotsikko. Kun määrität inventointisuunnitelmaa, voit rajoittaa luotavan inventointityön määrää käyttämällä **Valitse sijainnit** -kyselyä. Kun valitset inventointisuunnitelman tuotteita, voit tarkentaa inventointia valitsemalla sekä tuote- että tuotevarianttikyselyn. 
 
 Voit liittää **työmallin** inventointisuunnitelmaan määrittämään, miten inventointityö on luotava. Inventointitoimenpiteiden työmalliin on suora viittaus inventointisuunnitelmasta. 
@@ -51,8 +49,7 @@ Ennen osittaisen inventointityön käsittelyä mobiililaitteen valikosta on vali
 
 Osittaisessa inventointiprosessissa sijainnin **Edellinen inventointi** -asetuksen päivämäärää ja kellonaikaa ei päivitetä,
 
-## Esimerkki
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Esimerkki
 Tässä esimerkissä vain nimiketunnus A0001 on inventoitava varastossa 61.
 
 1.  Inventoinnille luodaan uusi työmalli. **Työrivin tauot** -asetus ryhmittelee inventointityörivit nimiketunnuksen mukaan. Tämän vuoksi luodussa inventointityössä on nimiketunnuskohtaiset rivit. Voit ryhmittää rivit myös tuotevarianttitunnuksen mukaan.
@@ -61,8 +58,7 @@ Tässä esimerkissä vain nimiketunnus A0001 on inventoitava varastossa 61.
 
 
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Inventointi](cycle-counting.md)

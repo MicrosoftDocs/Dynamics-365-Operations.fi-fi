@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventCostOnhandItem
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -25,19 +25,16 @@ ms.openlocfilehash: 823d3edd106925339607d01fbf5f1921b85ff244
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Kustannusobjektit
-<a id="cost-objects" class="xliff"></a>
+# <a name="cost-objects"></a>Kustannusobjektit
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa on tietoja kustannusobjekteista ja siitä, miten kustannukset ja määrät kerätään. Kustannusobjekti on yksikkö, johon kustannukset ja määrät kerätään. Kustannusobjektiyksiköt voivat olla tuotteita tai tuotevariantteja, kuten tyylin ja värin variantteja.  
 
-Kustannusobjektit
-<a id="cost-objects" class="xliff"></a>
+<a name="cost-objects"></a>Kustannusobjektit
 ------------
 
 **Kustannuskohde**-sivulla eritellään kaikki kustannuskohteet, jotka on rekisteröity tuotteeseen. Kustannuskohteet määritetään seuraavista lähteistä saaduilla tiedoilla:
@@ -60,8 +57,7 @@ Seuraavassa taulukossa näkyy mikä on kustannuskohde ja mikä on varastokohde.
 | Kustannuskohde      | x           | x    |           |           |
 | Varastokohde | x           | x    |  x        | x         |
 
-## Kustannusten ja määrien kasvu
-<a id="accumulation-of-costs-and-quantities" class="xliff"></a>
+## <a name="accumulation-of-costs-and-quantities"></a>Kustannusten ja määrien kasvu
 -   Arvo **Arvo**-kentässä on seuraavien arvojen summa:
     -   Fyysinen kustannus
     -   Rahoituksellinen kustannus
@@ -74,8 +70,7 @@ Seuraavassa taulukossa näkyy mikä on kustannuskohde ja mikä on varastokohde.
 
 **Huomautus:** **Sisällytä fyysinen arvo** -parametri ei vaikuta edellisiin laskelmiin.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Tuotedimensioryhmä](https://technet.microsoft.com/en-us/library/aa499382.aspx)

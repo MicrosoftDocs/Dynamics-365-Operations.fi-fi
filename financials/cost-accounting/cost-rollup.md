@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: c236c72c2f29578f5ce8f2e536bd708a6ef358a6
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-## Kustannusten koontikäytäntö ja yleiskustannuslaskenta
-<a id="cost-rollup-policy-and-overhead-calculation" class="xliff"></a> 
+## <a name="cost-rollup-policy-and-overhead-calculation"></a>Kustannusten koontikäytäntö ja yleiskustannuslaskenta 
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,8 +44,7 @@ Nämä vaikutukset voi välttää määrittämällä kustannusten kohdistuksen k
 > [!NOTE]
 > Voit määrityksiä, jos raportointivaatimukset muuttuvat.
 
-## Esimerkki kustannusten koontikäytännön asetuksista
-<a id="example-of-cost-rollup-policy-setup" class="xliff"></a>
+## <a name="example-of-cost-rollup-policy-setup"></a>Esimerkki kustannusten koontikäytännön asetuksista
 
 Kuvittele, että organisaation rakenteessa on neljä kustannuspaikkaa.
 
@@ -155,8 +153,7 @@ Kustannusten kohdistussäännöt voidaan määrittää seuraavasti.
 | CC001                                | Yhteensä         | **Henkilöstöpalvelut**        |
 | CC002                                | Yhteensä         | **Taloushallinnon palvelut** |
 
-<br>Kustannuspaikkojen välinen kustannusvirta
-<a id="brhow-cost-flows-between-cost-centers" class="xliff"></a> 
+<a name="brhow-cost-flows-between-cost-centers"></a><br>Kustannuspaikkojen välinen kustannusvirta 
 ---------------------------------------------------
 
 Jos haluat tietää minkälainen on organisaation kustannuspaikkojen välinen kustannusvirta, voit luoda kullekin kustannuspaikalle **Toissijainen**-tyypin kustannustasoja. Näitä kustannustasoja voi sitten käyttää siirtämään saldoja kustannuspaikkojen välillä yleiskustannuslaskennan aikana.
@@ -207,8 +204,7 @@ Luo **kustannusten koontikäytäntö**, jossa kukin kustannuspaikka on yhdistett
 | CC003                                | Tuloslaskelma               | **SC-CC003**           |
 | CC004                                | Tuloslaskelma               | **SC-CC004**           |
 
-## Yleiskustannuslaskennan suorittaminen
-<a id="perform-overhead-calculation" class="xliff"></a>
+## <a name="perform-overhead-calculation"></a>Yleiskustannuslaskennan suorittaminen
 
 **Kirjauskansio**
 
@@ -257,8 +253,7 @@ Kirjauskansiovienneistä avattavalla **Kustannusobjektin kustannussaldon kirjaus
 
 Kun **yleiskustannuslaskenta** on valmis, voit raportoida tulokset esimerkiksi seuraavilla työkaluilla: Microsoft SharePoint Workspace, Excel tai Power BI.
 
-## Raporttien näyttäminen Excelissä
-<a id="view-reporting-in-excel" class="xliff"></a> 
+## <a name="view-reporting-in-excel"></a>Raporttien näyttäminen Excelissä 
 
 Voit tarkastella tietoja dimensiohierarkioiden ansiosta eri koostetasoilla.
 
@@ -302,8 +297,7 @@ Selkeä **kohdistusten kohdistuksen** ja **kustannuksen koontikäytäntöjen** v
 
 
 
-## Lisätietoja
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Lisätietoja
 -  [Kustannusobjektin dimensiot](cost-objects.md)
 -  [Kustannustason dimensiot](cost-elements.md)
 -  [Dimensiohierarkiat](dimension-hierarchy.md)

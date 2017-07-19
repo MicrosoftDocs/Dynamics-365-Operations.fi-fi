@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysUserSetup
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.author: tlefor
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Käyttäjäkokemuksen mukauttaminen
-<a id="personalize-the-user-experience" class="xliff"></a>
+# <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ Microsoft Dynamics 365 for Finance and Operationsissa on monenlaisia mukauttamis
 
 Kaikki ja kaiken tyyppiset käyttäjän Finance and Operationsissa tekemät mukautukset koskevat vain kyseistä käyttäjää riippumatta siitä yrityksestä, jonka kanssa käyttäjä on vuorovaikutuksessa. Käyttäjän sivulle tekemät muutokset eivät vaikuta järjestelmän muihin käyttäjiin.
 
-## Nykyisen käyttäjän järjestelmänlaajuiset vaihtoehdot
-<a id="systemwide-options-for-the-current-user" class="xliff"></a>
+## <a name="systemwide-options-for-the-current-user"></a>Nykyisen käyttäjän järjestelmänlaajuiset vaihtoehdot
 Näet Siirtymispalkissa rattaan kuvan, jota kutsutaan **Asetukset**-valikkopainikkeeksi. Tämän **Asetukset**-valikon avaaminen tuo näyttöön eri vaihtoehtoja. Valinta **Asetukset** avaa käyttäjälle **Asetukset**-sivun. Tällä sivulla on neljä vaihtoehtovälilehteä: **Visuaalinen**, **Valinnat**, **Tili**, ja **Työnkulku**.
 
 -   **Visuaalinen:** Käytä tätä valitaksesi väriteeman ja sivusi elementtien oletuskoon.
@@ -47,8 +45,7 @@ Näet Siirtymispalkissa rattaan kuvan, jota kutsutaan **Asetukset**-valikkopaini
 -   **Tili:** Anna tässä käyttäjätunnuksesi ja muut tiliin liittyvät vaihtoehdot.
 -   **Työnkulku:** Tässä voit valita työnkulkuun liittyviä vaihtoehtoja.
 
-## Implisiittiset mukautukset
-<a id="implicit-personalizations" class="xliff"></a>
+## <a name="implicit-personalizations"></a>Implisiittiset mukautukset
 Implisiittiset mukautukset ovat niitä mukautuksia, jotka suoritat yksinkertaisesti olemalla vuorovaikutuksessa tiettyjen tarkistusten kanssa, jotka muistavat nykyisen näkyvän tilansa. 
 
 **Ruudukon sarakkeet:** Voit muokata luettelon sarakkeen leveyttä valitsemalla koon muuttamiseen tarkoitetun palkin sarakkeen otsikon vasemmalla tai oikealla puolella ja vetämällä sitä vasemmalle tai oikealle haluttuun leveyteen. Finance and Operations tallentaa haluamasi leveyden ja näyttää kyseisen sarakkeen tämänlevyisenä aina, kun avaat kyseisen luettelon sisältämän sivun. 
@@ -57,8 +54,7 @@ Implisiittiset mukautukset ovat niitä mukautuksia, jotka suoritat yksinkertaise
 
 **Tietoruudut:** Joillain sivuilla on osioita nimeltä Tietoruutu. Tämä ruutu sisältää kyseisen sivun aihepiiriin liittyvää tietoa vain-luku-muodossa. Kutakin Tietoruutu-osion osa kutsutaan Tietoruuduksi. Voit laajentaa tai tiivistää Tietoruudun, ja Finance and Operations tallentaa valintasi. Joissain tapauksissa tietoruudun tiivistäminen parantaa suorituskykyä, koska Finance and Operationsin ei tarvitse noutaa tietoja kyseistä tietoruutua varten ennen kuin se laajennetaan.
 
-## Eksplisiittinen mukauttaminen Mukauttaminen-työkalurivin avulla
-<a id="explicit-personalizations-using-the-personalization-toolbar" class="xliff"></a>
+## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Eksplisiittinen mukauttaminen Mukauttaminen-työkalurivin avulla
 Jokaisella henkilöllä ja yrityksellä on eri perspektiivi siihen, mitkä tiedot ovat heille tärkeimpiä, tai mitkä tiedot eivät ole tarpeen heidän tavassaan harjoittaa liiketoimintaa. Mahdollisuus muokata tapaa, jolla tiedot järjestetään, miten niiden kanssa ollaan vuorovaikutuksessa tai jopa miten ne piilotetaan, on avain siihen, miten Finance and Operationsista tehdään henkilökohtainen ja tuottava kokemus. 
 
 Eksplisiittinen mukauttaminen on mukauttamista, jonka suoritat nimenomaisena tarkoituksenasi muuttaa elementin tai sivun ulkonäköä valitsemalla mukauttamisvalikko. Perustasollaan eksplisiittistä mukauttamista on, kun napsautat elementtiä hiiren oikealla painikkeella ja valitset **Mukauta**. (Huomaa, että kaikkia sivusi elementtejä ei voida mukauttaa.). Kun valitset tämän mukauttamistavan, näet elementin ominaisuusikkunan. 
@@ -93,8 +89,7 @@ Valitse **Sulje**-painike sulkeaksesi työkalurivin ja palauttaaksesi sivun sen 
 
 Mukauttaminen-työkaluriviä käytettäessä tallentaminen on implisiittistä. Mukautuksesi tulevat voimaan heti, kun olet tehnyt ne, eikä **Tallenna**-painiketta tarvitse napsauttaa. Joissain tapauksissa näet riippulukon kuvan elementin vieressä, kun valitset työkalun. Tämä tarkoittaa, että sivun oikein toimiminen edellyttää, että valittuun työkaluun liittyviä ominaisuuksia ei muuteta. Kun Mukauttaminen-työkalu avataan, sivusta tulee ei-vuorovaikutteinen. Et voi syöttää tietoja etkä laajentaa tai tiivistää osioita.
 
-## Eksplisiittinen mukauttaminen: Ruudun tai luettelon lisääminen työtilaan
-<a id="explicit-personalization-adding-a-tile-or-list-to-a-workspace" class="xliff"></a>
+## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Eksplisiittinen mukauttaminen: Ruudun tai luettelon lisääminen työtilaan
 Joillain luetteloja sisältävillä sivuilla on käytettävissä mukauttamisen lisätoiminto sen Toimintoruudussa Mukauttaminen-ryhmän Asetukset-välilehdessä. Valitse **Lisää työtilaan** avataksesi avattavan luettelon, jonka avulla voit näyttää työtilassa nykyisen luettelosi tiedot (suodatettuina ja lajiteltuina tai oletusmuotoisina) luettelon tai yhteenvetoruudun muodossa (jota voidaan käyttää näyttämään luettelossa olevien nimikkeiden lukumäärä). 
 
 [![Lisää työtilaan](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
@@ -105,16 +100,13 @@ Lisää ruutu työtilaan suodattamalla luettelo niin, että se näyttää tiedot
 
 Kun luettelosi tai ruutusi on lisätty työtilaan, voit avata kyseisen työtilan ja järjestää luettelon tai ruudun uudelleen sen ryhmän sisällä, johon se on sijoitettu.
 
-## Eksplisiittinen mukauttaminen: Yhteenvedon lisääminen työtilasta koontinäyttöön
-<a id="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard" class="xliff"></a>
+## <a name="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard"></a>Eksplisiittinen mukauttaminen: Yhteenvedon lisääminen työtilasta koontinäyttöön
 Joissain työtiloissa on lukumääräruutuja (ruutuja, joissa on numeroita), jotka haluaisit nähdä myös koontinäytössäsi. Napsauta työtilassa lukumääräruutua hiiren oikealla painikkeella ja valitse **Mukauta**. Valitse **Kiinnitä koontinäyttöön**. Kun seuraavan kerran siirryt valittuun koontinäyttöön (ja päivität sen), näet, kyseisen lukumäärän kyseessä olevan työtilan siirtymisruudun alapuolella koontinäytössä.
 
-## Eksplisiittinen mukauttaminen: Koontinäyttösi mukauttaminen
-<a id="explicit-personalization-personalizing-your-dashboard" class="xliff"></a>
+## <a name="explicit-personalization-personalizing-your-dashboard"></a>Eksplisiittinen mukauttaminen: Koontinäyttösi mukauttaminen
 Koontinäyttö on usein ensimmäinen sivu, jonka näet, kun avaat Finance and Operationsin. Voit mukauttaa koontinäytön nimeämällä uudelleen työtilasi siirtymisruudut, näyttämällä vain haluamasi ruudut, nimeämällä ruudut uudelleen, tai järjestämällä ruudut haluamaasi järjestykseen. Mukauta koontinäkymä valitsemalla mikä tahansa ruutu ja avaa kontekstivalikko napsauttamalla hiiren oikealla painikkeella. Valitse kontekstivalikossa **Mukauta**. Jos valittu ruutu on se, jonka haluaisit piilottaa, nimetä uudelleen tai ohittaa, voit tehdä muutoksen suoraan esiin tulleessa Ominaisuudet-ikkunassa. Jos haluat järjestää ruudut, valitse **Mukauta tämä lomake** Ominaisuudet-ikkunassa avataksesi Mukauttaminen-työkalurivin. Voit sitten järjestää ruudut Siirrä-työkalun avulla.
 
-## Mukauttamisen hallinta
-<a id="administration-of-personalization" class="xliff"></a>
+## <a name="administration-of-personalization"></a>Mukauttamisen hallinta
 Kun olet mukauttanut sivun, voit jakaa mukautuksesi muiden käyttäjien kanssa. Se onnistuu viemällä mukautettuja sivuja. Tämän jälkeen voit pyytää käyttäjiä siirtymään mukautetulle sivulle ja tuomaan luomasi mukautustiedoston.
 
 Jos käyttäjällä on järjestelmänvalvojan oikeudet, hän voi myös hallita muiden käyttäjien mukautuksia **Mukautukset**-sivulla. Tällä sivulla on neljä välilehteä: **Järjestelmä**, **Käyttäjät**, **Tuonti** ja **Tyhjennä**.

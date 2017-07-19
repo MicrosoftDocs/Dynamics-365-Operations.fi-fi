@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,25 +25,21 @@ ms.openlocfilehash: 5c5f06d1a518963738e446b5032261059d98bf13
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Kustannusseurannan yleiskatsaus
-<a id="cost-control-overview" class="xliff"></a> 
+# <a name="cost-control-overview"></a>Kustannusseurannan yleiskatsaus 
 
 [!include[banner](../includes/banner.md)]
 
 Esimiehet voivat avata **Kustannusseuranta**-työtilassa keskitetysti vastuullaan olevia yhden tai kaikkien dimensioiden (kuten kustannuspaikkojen ja tuoteryhmien) kustannusobjekteja tai kustannusobjektijoukkoja koskevia raportteja. Työtilan raportit ovat täysin kustannuslaskijoiden hallinnassa, joten raportoinnissa käytettävä asettelu ja tiedot ovat yhtenäiset koko organisaatiossa.
 
-## Kustannusseurannan työtilan konfiguraatio
-<a id="cost-control-workspace-configuration" class="xliff"></a>
+## <a name="cost-control-workspace-configuration"></a>Kustannusseurannan työtilan konfiguraatio
 
 Kustannuslaskijat voivat määrittää tarvitsemansa määrän raporttimäärityksiä haluamallaan tietojen kokoonpanolla tai asettelulla. Raportin määritys koostuu kuudesta osasta, joista jokainen vaikuttaa joko kohdennettujen tietojen kokoonpanon tai asettelun valintaan.
 
 Määritä kustannusseurannan työtila valitsemalla **Kustannusseuranta** \> **Asetukset** \> **Kustannusseurannan työtilan konfiguraatio**.
 
-### Yleiset
-<a id="general" class="xliff"></a>
+### <a name="general"></a>Yleiset
 
 Voit luoda yksilöllisen raporttiasettelun **Yleiset**-pikavälilehdessä. Raportin nimi on yksilöllinen tunniste, jonka käyttäjät tunnistavat **Kustannusseuranta**-työtilassa. Voit määrittää, jaetaanko raportti vai onko se tarkoitettu vain kustannuslaskijoiden sisäiseen käyttöön.
 
@@ -52,8 +49,7 @@ Voit luoda yksilöllisen raporttiasettelun **Yleiset**-pikavälilehdessä. Rapor
 | kuvaus | Kirjoita tarkka kuvaus. |
 | Julkaistu   | Jos valitset tässä kentässä **Kyllä**, käyttäjä, jolle on määritetty jokin seuraavista rooleista, näkee raportin **Kustannuslaskenta**-työtilassa:<ul><li>Kustannuslaskennan hallinta</li><li>Kustannuslaskija</li><li>Kustannuslaskijan apulainen</li><li>Kustannusobjektin vastuuhenkilö</li></ul>Jos valitset tässä kentässä **Ei**, vain käyttäjät, joille on määritetty jokin seuraavista rooleista, näkee raportin **Kustannuslaskenta**-työtilassa:<ul><li>Kustannuslaskennan hallinta</li><li>Kustannuslaskija</li><li>Kustannuslaskijan apulainen</li></ul> |
 
-### Tietojen suodatus
-<a id="data-filtering" class="xliff"></a>
+### <a name="data-filtering"></a>Tietojen suodatus
 
 Määritä raportin tietoperusta **Tietojen suodatus** -pikavälilehdessä. Tämän raportin käyttäjät näkevät arvot raportissa sen jälkeen, kun lähdetiedot on käsitelty.
 
@@ -66,8 +62,7 @@ Määritä raportin tietoperusta **Tietojen suodatus** -pikavälilehdessä. Täm
 | Budjetin alkuperäinen versio                                           | Valitse budjetin versiotunnus, joka on tämän raportin alkuperäinen budjetti. |
 | Budjetin uusi versio                                            | Valitse budjetin versiotunnus, joka on tämän raportin muutettu budjetti. |
 
-### Määritä laskentatietueet
-<a id="assign-calculation-records" class="xliff"></a>
+### <a name="assign-calculation-records"></a>Määritä laskentatietueet
 
 Yleiskustannuslaskenta suorittaa lähdetiedoissa useita laskentatoimintoja, kustannustoiminnan luokittelu, kustannusten jakelu tai kustannusten kohdistus. Samalle tilikaudelle voidaan tehdä useita yleiskustannuslaskentoja, jos havaitaan puuttuvia tietolähteitä tai sääntöjä on päivitettävä. Jokainen yleiskustannuslaskenta tallennetaan yksilöllisellä tunnuksella. Kustannuslaskija voi valita tietyn yleiskustannuslaskennan tunnuksen. Raportin käyttäjät, kuten esimiehet, näkevät yleiskustannuslaskennan tulokset **Kustannusseuranta**-työtilassa.
 
@@ -78,8 +73,7 @@ Yleiskustannuslaskenta suorittaa lähdetiedoissa useita laskentatoimintoja, kust
 | Budjettiversio         | Valitse sopiva yleiskustannuslaskennan tunnus. |
 | Uusi budjettiversio | Valitse sopiva yleiskustannuslaskennan tunnus. |
 
-### Tilikausia sarakkeessa
-<a id="fiscal-periods-per-column" class="xliff"></a>
+### <a name="fiscal-periods-per-column"></a>Tilikausia sarakkeessa
 
 Kustannuslaskija päättää **Tilikausia sarakkeessa** -pikavälilehdessä, mitä tilikausi näytetään raporttiasettelussa.
 
@@ -92,8 +86,7 @@ Valittujen sarakkeiden arvoit kerrotaan **Tilikausia sarakkeessa** -pikavälileh
 | Vuoden alusta         | Vuoden alusta on näkyvissä. Seuraavaa kaavaa käytetään:<br>YearToDate (nykyinen tilikausi)<blockquote>[!NOTE]<br>Nykyinen tilikausi määritetään oletusarvoisesti istunnon päivämäärän mukaan. **Kustannusseuranta**-työtilassa voi valita tietyn tilikauden. Valittu arvo vastaa sitten nykyistä kautta ja **Vuoden alusta** -arvo päivitetään vastaavasti.</blockquote> |
 | Keskiarvo vuoden alusta | Keskiarvo vuoden alusta on näkyvissä. Seuraavaa kaavaa käytetään:<br>(YearToDate [nykyinen tilikausi]) ÷ (Count [nykyinen tilikausi])<p><strong>Esimerkki</strong></p><ul><li>**Tilastodimension jäsen:** kokoaikaiset työntekijät</li><li>**Kuluva päivämäärä:** 21.3.2017</li><li>**Kausi:** tilikausi 1, tilikausi 2, tilikausi 3</li><li>**Suuruus:** 10, 10, 12</li></ul>Tässä tapauksessa **Keskiarvo vuoden alusta** = (10 + 10 + 12) ÷ 3 = 10,67<p>**Keskiarvo vuoden alusta** -arvo voidaan laskea kustannustason dimension jäsenille ja tilastodimension jäsenille.</p><blockquote>[!NOTE]<br>Nykyinen tilikausi määritetään oletusarvoisesti istunnon päivämäärän mukaan. **Kustannusseuranta**-työtilassa voi valita tietyn tilikauden. Valittu arvo vastaa sitten nykyistä kautta. Lisäksi **Vuoden alusta**- ja **Keskiarvo vuoden alusta** -arvot päivitetään vastaavasti.</blockquote> |
 
-### Kustannusten näytettävät sarakkeet
-<a id="columns-to-display-for-costs" class="xliff"></a>
+### <a name="columns-to-display-for-costs"></a>Kustannusten näytettävät sarakkeet
 
 Kustannuslaskija päättää **Kustannusten näytettävät sarakkeet** -pikavälilehdessä, mitä sarakkeita raportin asettelussa käytetään. Käytössä on kolme luokkaa: kiinteä kustannus, muuttuva kulu ja luokittelemattomat kulut.
 
@@ -105,8 +98,7 @@ Kustannuslaskija päättää **Kustannusten näytettävät sarakkeet** -pikaväl
 | Kokonaiskustannukset            | Tässä saraketyyppi näyttää kokonaiskustannukset (luokittelemattomat kulut, kiinteän kustannuksen ja muuttuvan kulun).<blockquote>[!NOTE]<br>Saraketyyppi näyttää saldon koko ajan.</blockquote> |
 | Luokittelemattomat kulut     | Tämä saraketyyppi näyttää luokittelemattomat kulut.<blockquote>[!NOTE]<br>Tällä sarakkeella voidaan tarkistaa, onko kaikki kustannukset luokiteltu oikein yleiskustannuslaskennassa tai onko kustannustoiminnan sääntöjä muutettava.</blockquote> |
 
-### Budjetoitujen kustannusten näytettävät sarakkeet
-<a id="columns-to-display-for-budgeted-costs" class="xliff"></a>
+### <a name="columns-to-display-for-budgeted-costs"></a>Budjetoitujen kustannusten näytettävät sarakkeet
 
 Kustannuslaskija päättää **Budjetoitujen kustannusten näytettävät sarakkeet** -pikavälilehdessä, mitkä valittujen budjettiversioiden sarakkeet näytetään. Alkuperäinen ja muutettu budjetti voidaan valita erikseen.
 
@@ -122,8 +114,7 @@ Kustannuslaskija päättää **Budjetoitujen kustannusten näytettävät sarakke
 | Varianssin vuoden raja-arvo   | Määritä vuoden rahasumman varianssin raja-arvo. Jos raja-arvo ylittyy, rivi korostetaan punaisella **Kustannusseuranta**-työtilassa. |
 | Varianssin raja-arvoprosentti      | Määritä varianssin raja-arvo prosentteina. Jos raja-arvo ylittyy, rivi korostetaan punaisella **Kustannusseuranta**-työtilassa.<blockquote>[!NOTE]<br>Sama prosenttiraja-arvo koskee nykyistä kautta ja vuotta.</blockquote> |
 
-## Kustannusseurannan työtila
-<a id="cost-control-workspace" class="xliff"></a>
+## <a name="cost-control-workspace"></a>Kustannusseurannan työtila
 
 **Kustannusseuranta**-työtila on suunniteltu verkkoraportiksi. Niinpä kaikille kustannusobjektista vastaaville esimiehille voidaan myöntää käyttöoikeus. Käyttöoikeuden myöntäminen käsitellään ohjeaiheessa [Kustannusobjektin vastuuhenkilöiden käyttöoikeuksien määrittäminen](access-rights-cost-object-controller.md).
 
@@ -137,13 +128,11 @@ Kirjanpidon vuosikalenterin kauden arvot määritetään raportin nimen ja sen k
 
 Käyttäjät voivat valita kustannusobjektin dimensiohierarkiassa koostetason, jolla saldot näytetään. Ottamalla käyttöön käyttöoikeustason suojauksen voit hallita käyttöoikeuksia siten, että käyttäjät voivat valita vain ne hierarkiatasot, joihin heille on myönnetty käyttöoikeus. Niinpä he näkevät vain ne koostesaldot, joiden käyttöoikeudet heille on myönnetty.
 
-### Lisää tai poista sarakkeita
-<a id="add-or-remove-columns" class="xliff"></a>
+### <a name="add-or-remove-columns"></a>Lisää tai poista sarakkeita
 
 Käyttäjät voivat mukauttaa raportin sarakkeet omia tarpeitaan vastaaviksi.
 
-### Näytä tiedot
-<a id="view-details" class="xliff"></a>
+### <a name="view-details"></a>Näytä tiedot
 
 Käyttäjät voivat porautua työtilassa näkyvien saldojen taustoihin. Jos käyttäjät valitsevat kustannustason dimensiohierarkian solmun ja valitsevat sitten **Näytä tiedot**, solmun tarkat tiedot näkyvät **Kustannustason tiedot** -valintaikkunassa.
 

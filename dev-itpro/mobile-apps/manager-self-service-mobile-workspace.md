@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Talent, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: shielas
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,8 +23,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Oman ryhmän mobiilityötila
-<a id="my-team-mobile-workspace" class="xliff"></a>
+# <a name="my-team-mobile-workspace"></a>Oman ryhmän mobiilityötila
 
 [!include[banner](../includes/banner.md)]
 
@@ -31,8 +31,7 @@ Tässä ohjeaiheessa on tietoja **oman ryhmän** mobiilityötilasta. Esimiehet v
 
 Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a> 
+## <a name="overview"></a>Yleiskuvaus 
 Esimiehet voit tehdä seuraavia tehtäviä **oman ryhmän** mobiilityötilassa:
 
 - Esimiehen suorista alaisista koostuvan luettelon tarkastelu.
@@ -40,8 +39,7 @@ Esimiehet voit tehdä seuraavia tehtäviä **oman ryhmän** mobiilityötilassa:
 - Ryhmän kunkin jäsenen yksityiskohtaisten tietojen tarkastelu. Näitä tietoja ovat esimerkiksi syntymäaika, ikälisäpäivämäärä sekä kompensaatio- ja suoritustiedot.
 - Kehun lähettäminen esimiehen laajennetun raportointiryhmän jäsenelle.
 
-## Edellytykset
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Edellytykset
 Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunnossa.
 
 <table>
@@ -71,16 +69,14 @@ Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunno
 </tbody>
 </table>
 
-## Mobiilisovelluksen lataaminen ja asentaminen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 
 Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Kirjautuminen mobiilisovellukseen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
 1.  Käynnistä sovellus mobiililaitteessa.
 2.  Anna oman Microsoft Dynamics 365:n URL-osoite.
 3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
@@ -88,19 +84,16 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Ryhmän jäsenten tarkastelu oman ryhmän mobiilityötilassa
-<a id="view-team-members-by-using-the-my-team-mobile-workspace" class="xliff"></a>
+## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Ryhmän jäsenten tarkastelu oman ryhmän mobiilityötilassa
 1.  Valitse mobiilisovelluksessa **Oma ryhmä** -työtila. Luettelo ryhmän jäsenistä avautuu. Luettelossa on myös kunkin ryhmän jäsenen nimike sekä tämän mahdolliset suorat alaiset.
 2.  Valitse ryhmän jäsen. **Ryhmän jäsenen yhteenveto** -sivu avautuu. Tällä sivulla olevia tietoja ovat esimerkiksi ryhmän jäsenen syntymäaika, ikälisäpäivä, vuodet nykyisessä toimessa ja kompensaation tiedot.
 
-## Laajennetun ryhmän jäsenten tarkastelu oman ryhmän mobiilityötilassa
-<a id="view-extended-team-members-by-using-the-my-team-mobile-workspace" class="xliff"></a>
+## <a name="view-extended-team-members-by-using-the-my-team-mobile-workspace"></a>Laajennetun ryhmän jäsenten tarkastelu oman ryhmän mobiilityötilassa
 1.  Valitse mobiilisovelluksessa **Oma ryhmä** -työtila. Luettelo ryhmän jäsenistä avautuu. Luettelossa on myös kunkin ryhmän jäsenen nimike sekä tämän mahdolliset suorat alaiset.
 1.  Valitse **Suorat alaiset** -linkki. Luettelo laajennetun ryhmän jäsenistä avautuu.
 1.  Valitse ryhmän jäsen. **Ryhmän jäsenen yhteenveto** -sivu avautuu. Tällä sivulla olevia tietoja ovat esimerkiksi ryhmän jäsenen syntymäaika, ikälisäpäivä, vuodet nykyisessä toimessa ja kompensaation tiedot.
 
-## Kehujen lähettäminen laajennetun ryhmän jäsenille oman ryhmän mobiilityötilassa
-<a id="send-praise-about-team-members-by-using-the-my-team-mobile-workspace" class="xliff"></a>
+## <a name="send-praise-about-team-members-by-using-the-my-team-mobile-workspace"></a>Kehujen lähettäminen laajennetun ryhmän jäsenille oman ryhmän mobiilityötilassa
 1.  Valitse mobiilisovelluksessa **Oma ryhmä** -työtila. Luettelo ryhmän jäsenistä avautuu. Luettelossa on myös kunkin ryhmän jäsenen nimike sekä tämän mahdolliset suorat alaiset.
 1.  Valitse ryhmän jäsen. **Ryhmän jäsenen yhteenveto** -sivu avautuu.
 1.  Valitse **Lähetä kehu**. 

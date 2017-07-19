@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: sunilg
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
@@ -22,19 +23,16 @@ ms.openlocfilehash: 0ca4ebdca1fce3863a50abf19a071af1f1c425e0
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Mobiililaskujen hyväksynnät
-<a id="mobile-invoice-approvals" class="xliff"></a>
+# <a name="mobile-invoice-approvals"></a>Mobiililaskujen hyväksynnät
 
 [!include[banner](../includes/banner.md)]
 
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiilin käyttökokemuksen. Vaativimmissa skenaarioissa ympäristö sallii myös, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä mobiiliympäristössä on käydä läpi joitakin suunnittelutilanteita. Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi. Tämä ohjeaihe auttaa sinua suunnittelemaan tilanteen muita variaatioita ja sitä voidaan soveltaa myös muihin tilanteisiin, jotka eivät liity toimittajan laskuihin.
 
-Edellytykset
-<a id="prerequisites" class="xliff"></a>
+<a name="prerequisites"></a>Edellytykset
 -------------
 
 | Edellytys                                                                                            | kuvaus                                                                                                                                                          |
@@ -46,8 +44,7 @@ Edellytykset
 | Asenna hotfix-korjaus KB 3208224.                                                                              | Sovelluskoodi toimittajan laskujen hyväksynnän mobiilisovellukselle. Tämä sisältyy Microsoft Dynamics AX -sovellukseen 7.0.1 (May 2016).                          |
 | Android-, iOS- tai Windows-laite, jossa on asennettuna Finance and Operationsin mobiilisovellus | Etsi sovellus omasta sovelluskaupastasi.                                                                                                                     |
 
-## Johdanto
-<a id="introduction" class="xliff"></a>
+## <a name="introduction"></a>Johdanto
 Toimittajalaskujen mobiilihyväksyntä vaatii nämä kolme hotfix-korjausta, jotka on mainittu "Edellytykset"-osassa. Nämä hotfix-korjaukset eivät tarjoa työtilaa laskujen hyväksyntään. Perustiedot työtiloista mobiiliympäristössä on mobiilikäsikirjassa, joka mainitaan "Edellytykset"-osassa. Laskun hyväksynnän työtila on suunniteltava. 
 
 Jokainen organisaatio määrittää oman toimittajan laskujen liiketoimintaprosessinsa eri tavalla. Ennen kuin suunnittelet toimittajan laskujen hyväksynnän mobiilikäyttöliittymän, sinun kannattaa harkita seuraavia näkökohtia liiketoimintaprosesseista. Ajatuksena on käyttää näitä tietopisteitä mahdollisimman paljon laitteen käyttäjäkokemuksen parantamiseksi.
@@ -68,8 +65,7 @@ Laskun hyväksyntöjen mobiilikokemuksen rakenne vaihtelee riippuen vastauksista
 
 Yleisenä ohjeena voi sanoa, että kun työskentelet mobiilisuunnittelijan kanssa, muista julkaista muutokset, jotta päivityksiä ei menetettäisi.
 
-## Yksinkertaisen laskun hyväksynnän skenaarion suunnitteleminen Contosolle
-<a id="designing-a-simple-invoice-approval-scenario-for-contoso" class="xliff"></a>
+## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a>Yksinkertaisen laskun hyväksynnän skenaarion suunnitteleminen Contosolle
 <table>
 <colgroup>
 <col width="50%" />
@@ -128,8 +124,7 @@ Yleisenä ohjeena voi sanoa, että kun työskentelet mobiilisuunnittelijan kanss
 </tbody>
 </table>
 
-### Luo työtila
-<a id="create-the-workspace" class="xliff"></a>
+### <a name="create-the-workspace"></a>Luo työtila
 
 1.  Avaa selaimessa Finance and Operations ja kirjaudu sisään.
 2.  Kun olet kirjautunut sisään, lisää **&mode=mobile** URL-osoitteeseen (kuten seuraavassa esimerkissä) ja päivitä sivu: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
@@ -141,8 +136,7 @@ Yleisenä ohjeena voi sanoa, että kun työskentelet mobiilisuunnittelijan kanss
 8.  Valitse **Valmis**
 9.  Tallenna muutokset valitsemalla **Julkaise työtila**
 
-### Minulle määritetyt toimittajien laskut
-<a id="vendor-invoices-assigned-to-me" class="xliff"></a>
+### <a name="vendor-invoices-assigned-to-me"></a>Minulle määritetyt toimittajien laskut
 
 Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka on määritetty käyttäjälle tarkistettavaksi. Voit suunnitella tämän mobiilisivun Finance and Operationsin **VendMobileInvoiceAssignedToMeListPage**-sivulla. Ennen kuin suoritat nämä toimet, varmista, että vähintään yksi toimittajalasku on määritetty itsellesi tarkistettavaksi, ja että laskurivillä on kaksi jakoa. Tämä määritys täyttää tämän skenaarion vaatimukset.
 
@@ -175,8 +169,7 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
 12. Tallenna muutokset valitsemalla **Julkaise työtila**.
 13. Ota käyttöön **Näytä laskun loppusumma odottavien toimittajalaskujen luettelossa** Ostoreskontran parametrit -lomakkeessa kohdassa **Lasku**. Huomaa, että ainoastaan ottamalla käyttöön tämän parametrin laskun kokonaissumma lasketaan näytettäväksi odottavien toimittajan laskujen luettelosivulla. Tämä on uusi ominaisuus, joka kuuluu vaadittuun hotfix-korjaukseen 3208224.
 
-### Toimittajan laskun tiedot
-<a id="vendor-invoice-details" class="xliff"></a>
+### <a name="vendor-invoice-details"></a>Toimittajan laskun tiedot
 
 Voit suunnitella laskun tietojen sivun käyttämällä Finance and Operationsin **VendMobileInvoiceHeaderDetails**-sivua. Huomaa, että riippuen järjestelmässäsi olevien laskujen määrästä tällä sivulla näytetään vanhin lasku (lasku, joka on luotu ensin). Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tässä tarvitaan vain jotkin laskutiedot, että voimme suunnitella mobiilisivun. [![Työnkulku-sivu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
@@ -211,13 +204,11 @@ Voit suunnitella laskun tietojen sivun käyttämällä Finance and Operationsin 
 13. Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
 14. Tallenna muutokset valitsemalla **Julkaise työtila**.
 
-### Työnkulkutehtävät
-<a id="workflow-actions" class="xliff"></a>
+### <a name="workflow-actions"></a>Työnkulkutehtävät
 
 Voit lisätä työnkulkutoimintoja Finance and Operationsin **VendMobileInvoiceHeaderDetails**-sivulla. Jos haluat avata tämän sivun, korvaa valikkovaihtoehdon nimi URL-osoitteessa, kuten teit aikaisemmin. Avaa sitten mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta. Toimi seuraavien vaiheiden mukaisesti lisätäksesi työnkulkutoimintoja tietosivulle. Sinulle on oltava määritettynä sopivassa tilassa olevia laskuja, joiden avulla pääset työnkulkutoimintoihin.
 
-#### Työnkulkutoimintojen tallentaminen
-<a id="record-workflow-actions" class="xliff"></a>
+#### <a name="record-workflow-actions"></a>Työnkulkutoimintojen tallentaminen
 1.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
 2.  Valitse **Laskun tiedot** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.
 3.  Valitse **Toiminnot**-välilehdessä **Lisää toiminto**.
@@ -231,8 +222,7 @@ Voit lisätä työnkulkutoimintoja Finance and Operationsin **VendMobileInvoiceH
 11. Tallenna muutokset valitsemalla **Julkaise työtila**.
 12. Tallenna kaikki tarvittavat työnkulkutoiminnot toistamalla edelliset vaiheet. 
 
-#### .js-tiedoston luominen
-<a id="create-a-js-file" class="xliff"></a>
+#### <a name="create-a-js-file"></a>.js-tiedoston luominen
 1. Avaa Muistio tai Microsoft Visual Studio ja liitä seuraava koodi. Tallenna tiedosto .js-tiedostona. Koodilla voidaan suorittaa seuraavia toimintoja:
     - Se piilottaa ylimääräiset työnkulkuun liittyvät sarakkeet, jotka on lisätty aiemmin mobiililuettelosivulla. Lisäsimme nämä sarakkeet, jotta sovelluksella on nämä tiedot oikeassa asiayhteydessä, jotta se voi suorittaa seuraavan vaiheen.
     - Aktiiviseen työnkulun vaiheen perusteella se käyttää logiikkaa, joka näyttää vain kyseiset toiminnot.
@@ -304,8 +294,7 @@ Voit lisätä työnkulkutoimintoja Finance and Operationsin **VendMobileInvoiceH
 4.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
 5.  Tallenna muutokset valitsemalla **Julkaise työtila**.
 
-### Toimittajalaskujen liitteet
-<a id="vendor-invoice-attachments" class="xliff"></a>
+### <a name="vendor-invoice-attachments"></a>Toimittajalaskujen liitteet
 
 1.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
 2.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
@@ -316,8 +305,7 @@ Voit lisätä työnkulkutoimintoja Finance and Operationsin **VendMobileInvoiceH
 7.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
 8.  Tallenna muutokset valitsemalla **Julkaise työtila**.
 
-### Toimittajan laskujen rivijaot
-<a id="vendor-invoice-line-distributions" class="xliff"></a>
+### <a name="vendor-invoice-line-distributions"></a>Toimittajan laskujen rivijaot
 
 Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot ja että laskulla on aina vain yksi rivi. Koska tämä skenaario on yksinkertainen, mobiililaitteen käyttökokemuksenkin täytyy olla yksinkertainen, jotta käyttäjän ei tarvitse porautua alaspäin useita tasoja nähdäkseen jaot. Finance and Operationsin toimittajan laskuihin sisältyy mahdollisuus näyttää kaikki jaot laskun otsikosta. Tämän kokemuksen tarvitsemme mobiiliskenaariossa. Tämän vuoksi käytämme **VendMobileInvoiceAllDistributionTree**-sivua suunnittellaksemme mobiiliskenaarion tämän osan. 
 
@@ -420,8 +408,7 @@ Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot
 4.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
 5.  Tallenna muutokset valitsemalla **Julkaise työtila**.
 
-### Valintasäännöt
-<a id="validation" class="xliff"></a>
+### <a name="validation"></a>Valintasäännöt
 
 Avaa sovellus mobiililaitteessa ja muodosta yhteys Finance and Operations -esiintymään. Varmista, että kirjaudut yritykseen jossa toimittajalaskuja on määritetty sinulle tarkistusta varten. Sinun pitäisi voida suorittaa seuraavat toimet:
 
@@ -433,8 +420,7 @@ Avaa sovellus mobiililaitteessa ja muodosta yhteys Finance and Operations -esiin
 -   Tiedot-sivulla näet linkin **Näytä kirjanpito** -sivulle ja tämän linkin avulla voit siirtyä jakosivulle ja tarkastella jakoja.
 -   Valitse Tiedot-sivulla **Toiminnot**-valikko sivun alaosasta ja suorita työnkulkutoimintoja, joita sovelletaan työnkulun vaiheeseen.
 
-## Monimutkaisen laskun hyväksynnän skenaarion suunnitteleminen Fabrikamille
-<a id="designing-a-complex-invoice-approval-scenario-for-fabrikam" class="xliff"></a>
+## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Monimutkaisen laskun hyväksynnän skenaarion suunnitteleminen Fabrikamille
 <table>
 <colgroup>
 <col width="50%" />
@@ -493,8 +479,7 @@ Avaa sovellus mobiililaitteessa ja muodosta yhteys Finance and Operations -esiin
 </tbody>
 </table>
 
-### Seuraavat vaiheet
-<a id="next-steps" class="xliff"></a>
+### <a name="next-steps"></a>Seuraavat vaiheet
 
 Skenaariolle 1 voidaan tehdä seuraavat muunnelmat perustuen skenaarion 2 vaatimuksiin. Voit parantaa mobiilisovelluskokemusta tämän osan avulla.
 

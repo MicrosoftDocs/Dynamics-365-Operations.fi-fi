@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94153
 ms.assetid: 33e98da7-01c1-4369-923d-aa1c8326cb80
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 205903bb68804a46414410c85eacce03c6df6fc7
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konsernin sisäinen laskutus
-<a id="intercompany-invoicing" class="xliff"></a>
+# <a name="intercompany-invoicing"></a>Konsernin sisäinen laskutus
 
 [!include[banner](../includes/banner.md)]
 
@@ -53,8 +52,7 @@ Tavoitteena on tehostaa ja joustavoittaa konsernin sisäisten projektitapahtumie
     -   **Myyntihinnan alittava summa** – summa, jonka lainaava yritys pidättää myyntihinnasta ennen siirtoa lainaajayritykseen.
     -   **Kateprosentti**– **Hinnoittelu**-kentässä annettu luku on kateprosentti, joka ilmaistaan myyntihinnan prosenttiosuutena.
 
-## Esimerkki 1: Määritä konsernin sisäiset laskutusparametrit
-<a id="example-1-set-up-parameters-for-intercompany-invoicing" class="xliff"></a>
+## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>Esimerkki 1: Määritä konsernin sisäiset laskutusparametrit
 Tässä esimerkissä USSI on lainaajayritys ja sen resurssit raportoivat ajan lainaavalle yritykselle, FRSI:lle, jolla on sopimus loppuasiakkaan kanssa. USSI:n työntekijöiden raportoimat tunnit ja kulut voidaan sisällyttää FRSI:n luomaan projektilaskuun. Tapahtumilla on lisäksi kolmas lähde, joka on peräisin lainaajayrityksestä (tässä esimerkissä USSI), kun se toimittaa jaettuja toimittajapalveluita tytäryhtiöille (kuten FRSI:lle) ja välittää sitten nämä kulut näiden tytäryhtiöiden projekteihin. Finance and Operations suorittaa kaikki laskuasiakirjojen ja verolaskelmien täsmäytykset. 
 
 Tässä esimerkissä FRSI:n on oltava USSI-yrityksen asiakas ja USSI:n on oltava FRSI-yrityksen toimittaja. Voit sitten määrittää konsernin sisäisen suhteen kahden yrityksen välille. Seuraavassa menettelyssä kuvataan parametrien määrittäminen siten, että kumpikin yritys voi osallistua konsernin sisäiseen laskutukseen.
@@ -74,8 +72,7 @@ Tässä esimerkissä FRSI:n on oltava USSI-yrityksen asiakas ja USSI:n on oltava
 4.  Valitse valuutta, tapahtuman tyyppi ja siirtohintamalli. Laskussa käytetty valuutta on valuutta, joka on määritetty lainaajayrityksen lainaavan yrityksen asiakastietueessa. Valuuttaa käytetään täsmäyttämään viennit siirtohintataulussa.
 5.  Valitse **Kirjanpito** &gt; **Kirjausasetukset** &gt; **Konsernin sisäinen laskenta** ja määritä USSI:n ja FRSI:n suhde.
 
-## Esimerkki 2: Luo ja kirjaa konsernin sisäinen aikaraportti
-<a id="example-2-create-and-post-an-intercompany-timesheet" class="xliff"></a>
+## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>Esimerkki 2: Luo ja kirjaa konsernin sisäinen aikaraportti
 USSI:n, lainaajayrityksen, on luotava ja kirjattava FRSI:n, lainaavan yrityksen, projektin aikaraportti. Tämän tehtävän edellyttämille vaiheille on kaksi aloituskohtaa.
 
 | Vaihe | Tulopaikka                                                                       | kuvaus                                                                                                                                                                                       |
@@ -83,8 +80,7 @@ USSI:n, lainaajayrityksen, on luotava ja kirjattava FRSI:n, lainaavan yrityksen,
 | A    | **Projektinhallinta ja kirjanpito** &gt; **Työaikaraportit** &gt; **Kaikki työaikaraportit** | Luo uusi aikaraportti. Valitse aikaraporttirivin **Yritys**-kentässä **FRSI**. Valitse **Projektitunnus**-kentässä FRSI:n projekti. Anna kunkin viikonpäivän tunnit. |
 | B    | **Työaikaraportti**-sivu                                                                | Kirjaa aikaraportti työnkulun suorittamisen jälkeen ja kirjaa tositenumero muistiin.                                                                                                               |
 
-## Esimerkki 3: Luo ja kirjaa konsernin sisäinen toimittajan lasku
-<a id="example-3-create-and-post-an-intercompany-vendor-invoice" class="xliff"></a>
+## <a name="example-3-create-and-post-an-intercompany-vendor-invoice"></a>Esimerkki 3: Luo ja kirjaa konsernin sisäinen toimittajan lasku
 USSI:n, lainaajayrityksen, on luotava ja kirjattava FRSI:n, lainaavan yrityksen, projektin konsernin sisäinen toimittajan lasku. Tämä toimittajan lasku kuvaa ulkoistettua työtä ja kuluja, jotka USSI:n maksamat toimittajat suorittivat. Tämän tehtävän edellyttämille vaiheille on kaksi aloituskohtaa.
 
 | Vaihe | Tulopaikka                                                                                      | kuvaus                                                                                                                                                                                                                                                                          |
@@ -92,8 +88,7 @@ USSI:n, lainaajayrityksen, on luotava ja kirjattava FRSI:n, lainaavan yrityksen,
 | A    | **Ostoreskontra** &gt; **Laskut** &gt; **Avoimet toimittajan laskut** &gt; **Uusi toimittajan lasku** | Luo uusi toimittajan lasku ja vie FRSI-projektin puolesta hankitut palvelut.                                                                                                                                                                                  |
 | B    | **Toimittajan lasku** -sivu                                                                      | Anna rivit, jotka kuvaavat FRSI:n ulkoistettuja palveluja. Lisää **Rivin erittely** -pikavälilehden laskurivin **Projekti**-välilehden **Projektiyritys**-kenttään **FRSI**. Anna projektitiedot ja muut vastaavat tiedot. Kirjaa sitten toimittajan lasku. |
 
-## Esimerkki 4: Luo ja kirjaa konsernin sisäinen lasku
-<a id="example-4-create-and-post-the-intercompany-invoice" class="xliff"></a>
+## <a name="example-4-create-and-post-the-intercompany-invoice"></a>Esimerkki 4: Luo ja kirjaa konsernin sisäinen lasku
 Lainaajayritys USSI:n on luotava ja kirjattava konsernin sisäinen lasku. Tämän tehtävän edellyttämille vaiheille on kaksi aloituskohtaa.
 
 | Vaihe | Tulopaikka                                                                                             | kuvaus                                                                                                                                      |
@@ -104,8 +99,7 @@ Lainaajayritys USSI:n on luotava ja kirjattava konsernin sisäinen lasku. Tämä
 | D    | **Konsernin sisäinen lasku** -sivu                                                                       | Kuvassa on konsernin sisäinen myyntilaskuehdotus.                                                                                             |
 | E    | **Konsernin sisäinen lasku** -sivu                                                                       | Valitse **Kirjaa**.                                                                                                                                  |
 
-## Esimerkki 5: Kirjaa toimittajan lasku ja laskuta asiakasta
-<a id="example-5-post-the-vendor-invoice-and-invoice-the-customer" class="xliff"></a>
+## <a name="example-5-post-the-vendor-invoice-and-invoice-the-customer"></a>Esimerkki 5: Kirjaa toimittajan lasku ja laskuta asiakasta
 Kun lainaajayritys USSI Kirjaa konsernin sisäisen myyntilaskun, vastaava odottava toimittajan lasku luodaan lainaavassa yrityksessä FRSI. Kun tämä toimittajan lasku on kirjattu, FRSI laskuttaa projektin asiakkaalta myös USSI:n lisäämät tunnit. Tämän tehtävän edellyttämille vaiheille on kolme aloituskohtaa.
 
 | Vaihe | Tulopaikka                                                                                        | kuvaus                                                                                                             |

@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: JmgProdParameters
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.industry: Manufacturing
 ms.author: johanhoffmann
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Tuotannonohjauksen tuotantoparametrit
-<a id="production-parameters-in-manufacturing-execution" class="xliff"></a>
+# <a name="production-parameters-in-manufacturing-execution"></a>Tuotannonohjauksen tuotantoparametrit
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,8 +43,7 @@ Harkitse tarkasti, mitä **Tuotantotilausten oletusarvot** -sivun asetuksia halu
 - **Ilmoita valmiiksi** – parametrit, joita käytetään, kun nimikkeitä ilmoitetaan valmiiksi tuotantotilauksen viimeisessä työvaiheessa.
 - **Oikeellisuustarkistus** – parametrit joilla tarkistetaan tuotantotilausten aloitus- ja palautemäärien oikeellisuus.
 
-## Tuotannon töiden tyypit
-<a id="types-of-production-jobs" class="xliff"></a>
+## <a name="types-of-production-jobs"></a>Tuotannon töiden tyypit
 Voit valita **Työvaiheet** -välilehdessä **Työn rekisteröinti** -sivulla rekisteröivät tuotantotöiden tyypit.
 
 Tavallisesti työntekijät voivat luoda rekisteröintejä asetus- ja prosessitöille. Jos kuitenkin töiden ajoitus on käytössä, voit valita muitakin työtyyppejä, jotka työntekijöiden on rekisteröitävä, kun tuotantotilauksia käsitellään. Voit esimerkiksi edellyttää siirtotöiden rekisteröintiä.
@@ -58,8 +56,7 @@ Jos reititysryhmässä on valittu **Töiden hallinta**, kyseinen työtyyppi ilmo
 > [!NOTE]
 > Osan työtyypeistä voidaan voi ilmoittaa manuaalisesti tuotantokirjauskansioiden avulla. Valitse siinä tapauksessa työtyypiksi **Töiden hallinta** mutta älä valitse rekisteröinnin työtyyppiä tuotannonohjauksen **Tuotantoparametrit**-sivun **Työvaiheet**-välilehdessä.
 
-## Tuoterakenteen kulutuksen ja keräysluettelon kirjauskansiot
-<a id="bom-consumption-and-picking-list-journals" class="xliff"></a>
+## <a name="bom-consumption-and-picking-list-journals"></a>Tuoterakenteen kulutuksen ja keräysluettelon kirjauskansiot
 Tuotantorakenteen kulutuksen yhdenmukainen määrittäminen on tärkeää, sillä sen avulla voidaan varmistaa, että varastonhallinta on tehokasta. Jos esimerkiksi tuoterakenteen kulutuksen parametreja ei määritetä oikein tuotannonohjauksessa, materiaalit voidaan vähentää varastosta kahdesti tai niitä ei vähennetä lainkaan.
 
 Automaattinen tuoterakenteen kulutus määritetään **Tuotantoparametrit**-sivulla kolmessa vaiheessa:
@@ -91,8 +88,7 @@ Voit valita kussakin vaiheessa **Automaattinen tuoterakennekulutus** -kentässä
 
 Seuraavissa esimerkeissä esimerkkejä erilaisia tuoterakenteen kulutussääntöjä tukevista parametriasetuksista. Parametrit on määritetään tuotannonohjauksen **Tuotantoparametrit**-sivulla.
 
-### Esimerkki 1: Työvaiheiden jälkipoisto
-<a id="example-1-backflushing-on-operations" class="xliff"></a>
+### <a name="example-1-backflushing-on-operations"></a>Esimerkki 1: Työvaiheiden jälkipoisto
 
 Käytä seuraavia asetuksia, jos keräysluettelon kirjauskansiot ja tuoterakennenimikkeiden kulutus on luotava, kun työvaiheen nimikkeet ilmoitetaan valmiiksi.
 
@@ -104,8 +100,7 @@ Käytä seuraavia asetuksia, jos keräysluettelon kirjauskansiot ja tuoterakenne
 | Ilmoita valmiiksi | Automaattinen tuoterakennekulutus      | **Ei koskaan**                           |
 | Ilmoita valmiiksi | Päivitä valmis online-raportti | **Tila + määrä**               |
 
-### Esimerkki 2: Tuotannon jälkipoisto
-<a id="example-2-backflushing-on-production" class="xliff"></a>
+### <a name="example-2-backflushing-on-production"></a>Esimerkki 2: Tuotannon jälkipoisto
 
 Käytä seuraavia asetuksia, jos keräysluettelon kirjauskansiot ja tuoterakennenimikkeiden kulutus on luotava, kun tuotantotilauksen nimikkeet ilmoitetaan valmiiksi.
 
@@ -117,8 +112,7 @@ Käytä seuraavia asetuksia, jos keräysluettelon kirjauskansiot ja tuoterakenne
 | Ilmoita valmiiksi | Automaattinen tuoterakennekulutus      | **Aina**                          |
 | Ilmoita valmiiksi | Päivitä valmis online-raportti | **Tila + määrä**               |
 
-### Esimerkki 3: Materiaaliottosääntö
-<a id="example-3-flushing-principle" class="xliff"></a>
+### <a name="example-3-flushing-principle"></a>Esimerkki 3: Materiaaliottosääntö
 
 Käytä seuraavia asetuksia, jos keräysluettelon kirjauskansiot ja tuoterakennenimikkeiden kulutus on luotava tuoterakennenimikkeiden materiaalinottosäännön asetuksen mukaisesti.
 
@@ -130,8 +124,7 @@ Käytä seuraavia asetuksia, jos keräysluettelon kirjauskansiot ja tuoterakenne
 | Ilmoita valmiiksi | Automaattinen tuoterakennekulutus      | **Ei koskaan**              |
 | Ilmoita valmiiksi | Päivitä valmis online-raportti | **Tila + määrä**  |
 
-### Esimerkki 4: Materiaalien vähennys tuotantotilauksen käynnistyksen aikana
-<a id="example-4-deduction-of-materials-during-startup-of-a-production-order" class="xliff"></a>
+### <a name="example-4-deduction-of-materials-during-startup-of-a-production-order"></a>Esimerkki 4: Materiaalien vähennys tuotantotilauksen käynnistyksen aikana
 
 Käytä seuraavia asetuksia, jos keräysluettelon kirjauskansiot ja tuoterakennenimikkeiden kulutus on luotava, kun tuotanto aloitetaan.
 
@@ -149,8 +142,7 @@ Keräysluettelon kirjauskansiot kirjataan aiemmin tässä osassa käsiteltyjen v
 - Työvaiheen määrää koskevaa palautetta ilmoitettaessa
 - Ilmoitettaessa nimikkeitä valmiiksi tuotantotilauksessa
 
-### Esimerkki 5: Manuaalinen tuoterakennekulutus
-<a id="example-5-manual-bom-consumption" class="xliff"></a>
+### <a name="example-5-manual-bom-consumption"></a>Esimerkki 5: Manuaalinen tuoterakennekulutus
 
 Voit käyttää seuraavia asetuksia, jos materiaalit on poistettava aina manuaalisesti varastosta. Keräysluettelon kirjauskansioita ei siinä tapauksessa kirjata.
 

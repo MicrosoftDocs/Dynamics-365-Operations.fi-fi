@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
 ms.author: abruer
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 31040ff14b99a9b351268feb88698ac706befb55
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Yksi tosite useille asiakkaan tai toimittajan tietueille
-<a id="single-voucher-with-multiple-customer-or-vendor-records" class="xliff"></a>
+# <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Yksi tosite useille asiakkaan tai toimittajan tietueille
 
 [!include[banner](../includes/banner.md)]
 
@@ -46,12 +45,10 @@ Tässä aiheessa kerrotaan, miten tilitystä käsitellään kirjattaessa yksi to
 -   Käteisalennuksen laskeminen
 -   Uudelleenarvostuksen laskeminen
 
-## Miten tilitys vaikuttaa yhden tositteen käyttöön
-<a id="how-does-settlement-impact-single-voucher-usage" class="xliff"></a>
+## <a name="how-does-settlement-impact-single-voucher-usage"></a>Miten tilitys vaikuttaa yhden tositteen käyttöön
 Kun kirjaat tositteen, jossa on useita asiakas- tai toimittajatietueita, kun yksi kirjanpidon tosite luodaan, joka sisältää useita ostoreskontran tai myyntireskontran saldoja. Tilitysprosessin aikana alkuperäisiä kirjanpidon kirjauksia käytetään käteisalennuksen, toteutumattomien voittojen ja tappioiden, toteutuneiden voittojen ja tappioidensekä alkuperäisen tiedoston yhteenvetotilin kirjanpitomerkintöjen luomista varten. Esimerkiksi jos käteisalennus tehdään tilitettäessä toimittajamaksua laskulle, käteisalennuksen kirjanpidon täytyy kirjata ostoreskontran kirjanpitotilille alkuperäisestä laskusta. Jos alkuperäinen lasku kirjattiin tositteeseen, joka sisältää useita toimittajatietueita, tehdään alkuperäisen kirjanpidon yhteenveto. Koska tässä tapauksessa ei voida siirtyä jokaisen toimittajatapahtuman yksityiskohtaiseen kirjanpidon kirjaukseen yhdessä tositteessa, ei voida määrittää, kuinka käyttäjä tarkoitetti käteisalennuksen laskettavaksi.
 
-### Usean toimittajan yhteinen tosite ja vaikutus käteisalennuksen kirjanpitoon
-<a id="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting" class="xliff"></a>
+### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting"></a>Usean toimittajan yhteinen tosite ja vaikutus käteisalennuksen kirjanpitoon
 
 Seuraavassa esimerkissä useita toimittajalaskuja kirjataan kirjanpidossa yhdelle tositteelle **Kirjauskansio**-sivulla. Nämä laskut jakautuvat useille tilin dimensioille.
 
@@ -115,8 +112,7 @@ Kun INV2 on maksettu, tehdään seuraava merkintä. Huomaa, että käteisalennuk
 | 14000056    | 520200-003-- | Toimittajan käteisalennus |           | 3,00       |
 | 14000056    | 200110-001-  | Toimittajan saldo       | 3,00      |            |
 
-### Usean toimittajan yhteinen tosite ja vaikutus toteutuneeseen voiton/tappion kirjanpitoon
-<a id="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting" class="xliff"></a>
+### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting"></a>Usean toimittajan yhteinen tosite ja vaikutus toteutuneeseen voiton/tappion kirjanpitoon
 
 |             |                  |             |                 |           |            |                  |              |
 |-------------|------------------|-------------|-----------------|-----------|------------|------------------|--------------|
@@ -165,8 +161,7 @@ Kun INV2 on maksettu, tehdään seuraava merkintä. Huomaa, että vaihtokurssita
 | 14000056    | 801300-002- | Vaihtokurssitappio | 0,00                                     | 2,00                                    |
 | 14000056    | 200110-001- | Toimittajan saldo     |                                          | -2,00                                   |
 
-## Yksi tosite saldon siirroille ja nettoutusskenaarioille
-<a id="one-voucher-for-balance-transfers-and-netting-scenarios" class="xliff"></a>
+## <a name="one-voucher-for-balance-transfers-and-netting-scenarios"></a>Yksi tosite saldon siirroille ja nettoutusskenaarioille
 Kaksi yleisesti käytettyjä skenaarioita, jotka käyttävät yhtä tositetta, joka sisältää useita asiakas- tai toimittajasaldosiirtoja yhdeltä asiakkaalta/toimittajalta toiselle asiakkaalle/toimittajalle, ja saman organisaation asiakkaan ja toimittajan nettouttaminen. Seuraavissa kahdessa esimerkissä kuvataan suositeltua tapaa syöttämällä nämä skenaariot Finance and Operations -järjestelmään vaihtoehtona niiden kirjoittamiselle yhteen tositteeseen. 
 
 *Saldon siirto* on yksi tosite jossa on useita asiakkaita, joka kirjoitetaan saldon siirtoa varten asiakkaalta asiakkaalle (sama toimittajille). Tämä skenaario voi ilmetä, kun vastuu laskun maksamisesta siirtyy toiselle osapuolelle, kuten tytäryhtiön siirtämä vastuu emoyhtiölle. 
@@ -238,8 +233,7 @@ Käteisalennukseen liittyvän tositteen taloushallinnon dimensioita käytetään
 
 ### 
 
-## Yksi tosite ja nettoutus useille asiakkaille ja toimittajielle
-<a id="one-voucher-with-a-netting-for-multiple-customers-and-vendors" class="xliff"></a>
+## <a name="one-voucher-with-a-netting-for-multiple-customers-and-vendors"></a>Yksi tosite ja nettoutus useille asiakkaille ja toimittajielle
 Nettoutus voi olla hyödyllinen, kun organisaatio ostaa tai myy samalle yritykselle. Sen sijaan, että toimittajan laskuja maksetaan ja odotetaan myyntilaskujen maksua, toimittajan laskut ja myyntilaskut nettoutetaan. Nettoutustapahtuma täsmäytetään avoimia saldoja vastaan. 
 
 Oletetaan esimerkiksi, että toimittaja 1001 ja asiakas US-008 ovat sama yksikkö, joten organisaatiosi haluaa nettouttaa osto- ja myyntisaldot ennen maksua / jäljellä olevan saldon vastaanottoa. Oletetaan, että asiakastietue on velkaa 75,00 EUR ja toimittajatietue on velkaa 100,00 EUR, mikä tarkoittaa sitä, että haluat nettouttaa saldot ja maksaa toimittajalle vain 25,00 EUR. Lisäksi oletetaan että kirjanpitovaluutta on USD. Tässä tapauksessa nettoutustapahtuma kirjataan yhtenä tositteena tilin ostoreskontran maksukirjauskansioon.

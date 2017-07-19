@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 26ca948e26708126686ca0d96ea21dc16b1c3799
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Organisaatiohierarkian asetusten määrittäminen
-<a id="configure-organizational-hierarchy" class="xliff"></a>
+# <a name="configure-organizational-hierarchy"></a>Organisaatiohierarkian asetusten määrittäminen
 
 [!include[banner](../includes/banner.md)]
 
@@ -58,8 +57,7 @@ Sinulla on oltava vähintään yksi yritys liiketoiminnan edustajana Finance and
 | Tuotteet                                 | Tuotteiden määritelmät jaetaan, ja ne on vapautettava yksittäisille yrityksille ennen kuin ne voidaan sisällyttää tapahtumiin. Jokaisella yrityksellä on oma joukko vapautettuja tuotteita, jotka voidaan sisällyttää tapahtuma-asiakirjoihin. Jos sisäisten organisaatioidesi on käytettävä erilaisia tuotteita, on organisaatiot mallinnettava yrityksinä. **Huomautus:** Vaikka tuotteiden määritykset jaetaan, voit määrittää jokaisessa varastotoimipaikassa nimikkeelle eri myynnit, ostot ja varastointiparametrit jokaisessa yrityksessä, jossa tuote julkaistaan.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Kaikilla toimintayksiköillä on sama tuotejoukko. Jos sisäiset organisaatiosi voivat jakaa samoja tuotteita, voit mallintaa organisaatiot liiketoiminnan yksiköiksi.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Kysely ja raportointi                    | Sinun on muutettava yrityksiä manuaalisesti tapahtumien kirjoittamiseksi ja suoritettava kyselyt useissa yrityksissä. Tietoturvarajoitusten vuoksi konsolidoitu kysely ja raportointi voi kuluttaa paljon resursseja ja kestää pitkään.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Sinun ei tarvitse muuttaa yrityksiä käyttämään tietoja useista toimintayksiköistä. Konsolidoitu kysely ja raportointi ja aluekohtainen kysely on helppoa ja nopeaa.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-## Parhaat käytännöt organisaatioiden ja hierarkioiden mallintamiseen
-<a id="best-practices-for-modeling-organizations-and-hierarchies" class="xliff"></a>
+## <a name="best-practices-for-modeling-organizations-and-hierarchies"></a>Parhaat käytännöt organisaatioiden ja hierarkioiden mallintamiseen
 Ota huomioon seuraavat suositeltavat menetelmät organisaatiohierarkian käyttöönoton yhteydessä:
 -   Luo osasto yrityksen ja liiketoimintayksikön välisen liitoksen mallintamiseksi. Sitten voit koota tietoja osastosta yritykseen lakisääteistä raportointia varten ja osastosta liiketoimintayksikköön sisäistä raportointia varten. Osastot voivat olla voittokeskuksia. Jos käytät osastoja, sinun ei tarvitse käyttää yrityksiä ja liiketoimintayksiköiden tilirakennedimensioita tilirakenteessa. Voit käyttää vain osastoja dimensiona. On kuitenkin käytettävä kustannuspaikkoja ja osastoja tilirakenteen dimensioina tilirakenteessa, jos kustannuspaikkoja käytetään vain kustannusten kokoamiseen ja osastoja käytetään tuottokirjausta varten.
 -   Mallinna useita hierarkioita toimintayksiköille, jos tuloksen raportoinnin vaatimukset ovat monimutkaisia.

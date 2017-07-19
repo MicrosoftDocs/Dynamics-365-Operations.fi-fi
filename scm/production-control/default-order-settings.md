@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventItemOrderSetup
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -24,11 +25,9 @@ ms.openlocfilehash: b4e8ff363a98f8dfc90af0133807373566531568
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Dimensioiden ja tuotevarianttien oletustilausasetukset
-<a id="default-order-settings-for-dimensions-and-product-variants" class="xliff"></a>
+# <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimensioiden ja tuotevarianttien oletustilausasetukset
 
 [!include[banner](../includes/banner.md)]
 
@@ -39,8 +38,7 @@ Tilauksen Microsoft Dynamics 365 for Finance and Operations, Enterprise Editioni
 
 Voit määrittää nimiketilausten oletusasetukset **Tilauksen oletusasetukset** -sivulla. Voit avata sivun kohdassa **Tuotetietojen hallinta** &gt; **Tuotteet** &gt; **Vapautetut tuotteet** &gt; valitse vapautettu tuote &gt; **Suunnitelma**- tai ****Varastonhallinta**** -toimintoruutu &gt; **Tilausasetukset** &gt; **Tilauksen oletusasetukset**.
 
-## Tilauksen oletusasetukset
-<a id="default-order-settings" class="xliff"></a>
+## <a name="default-order-settings"></a>Tilauksen oletusasetukset
 Tilauksen oletusasetuksia on kolme ostoille, myynnille ja varastolle. Tilauksen oletusasetuksia ostoille käytetään luotaessa:
 
 -   Ostotilausrivit
@@ -77,8 +75,7 @@ Varaston oletusasetukset ovat voimassa myös luotaessa:
 -   Tuoterakenteen rivit
 -   Suunnitellut tuotantotilaukset
 
-## Vapautetun tuotteen koko määritys
-<a id="full-definition-of-a-released-product" class="xliff"></a>
+## <a name="full-definition-of-a-released-product"></a>Vapautetun tuotteen koko määritys
 Kun luot tapahtumaa, vapautetun tuotteen koko määritelmä on määritettävä rivillä, ennen kuin Finance and Operations yrittää tunnistaa tilauksen oletusasetukset. Vapautetun tuotteen koko määritelmä tarkoittaa sitä, että nimikenumero ja kaikki aktiiviset tuotedimensiot, kuten konfiguraatio, koko, tyyli ja väri on määritetty tapahtumassa. Esimerkiksi jos luot ostotilausrivin vapautetulle tuotevariantille manuaalisesti, sinun on määritettävä kaikki vaaditut tuotedimensiot ennen toimipaikan, varaston, määrän ja läpimenoajan näkymistä oletusarvoisesti tilausrivillä. 
 
 Kaikkia tilauksen oletusasetusparametreja ei käytetä luotaessa tilausta tai kirjauskansion rivejä. Määrät ja läpimenoaikojen näytetään vain oletusarvon mukaan. Esimerkiksi kun lasketaan kirjauskansion riviä, vain toimipaikka ja varasto näytetään oletuksena, kun rivi luodaan. Luonnollisesti määrien oletusarvojen määrityksiä tai tarkistuksia useista nimikkeitä tai minimeistä ei suoriteta, kun rivi luodaan tai kun päiväkirjaan kirjataan. 
@@ -87,29 +84,24 @@ Järjestelmä yrittää aina löytää oletusarvoisen toimipisteen ja varaston k
 
 Oletusarvoiset tilaustyyppi, oston ja varaston läpimenoaika voidaan ohittaa nimikkeen kattavuussääntöjen mukaan **Nimikkeen kattavuus** -sivulla. Vaikka tilauksen oletusasetukset eivät salli tuotannon ja siirron läpimenoajan eroa, nimikkeen kattavuussäännöt sallivat sen. Kuitenkin nimikkeen kattavuusasetuksia käytetään ainoastaan tarvesuunnittelussa luotaessa suunniteltua tuotantoa ja suunniteltuja siirtotilauksia, eikä niitä käytetä tuotanto- ja siirtotilausten luomiseen manuaalisesti. 
 
-## Tilauksen oletusasetusten säännöt
-<a id="default-order-settings-rules" class="xliff"></a>
+## <a name="default-order-settings-rules"></a>Tilauksen oletusasetusten säännöt
 Voit määrittää yleiset tilauksen oletusasetukset ja haluamasi määrän tilauksen oletusasetusten sääntöjä, jotka ovat käytettävissä vain tietyillä ehdoilla, kuten toimipaikka tai tietty tuotedimensio tai tuotedimensioyhdistelmä. Varastokohtaisia tilausasetuksia ei voi määrittää.
 
-### Luokitus tilauksen oletusasetuksissa
-<a id="rank-in-default-order-settings" class="xliff"></a>
+### <a name="rank-in-default-order-settings"></a>Luokitus tilauksen oletusasetuksissa
 
 Tilauksen oletusasetusten säännöt sisältävät luokituksia. Mitä korkeampi luokitus, sitä tärkeämpi sääntö on, joten sillä on suurempi prioriteetti ja sitä on käytettävä ennen alemman luokan sääntöjä. Yleisten tilausten oletusasetuksien luokitusarvo on nolla, jota ei voi muokata. Vain yhdellä säännöllä voi olla luokitus 0. Säännöillä voi olla sama luokitus, jos dimensioilla, joihin niitä sovelletaan, on eroja. Tästä on hyötyä mallinnettaessa toimipaikkakohtaisia tilausasetuksia. Luotaessa uusi tilauksen oletusasetussääntö, tilausarvojen, lopetusmerkin jne. arvot ovat samat kuin säännössä jolla on nollaluokitus, mutta ne voidaan ohittaa.
 
-### Vapautettujen tuotteiden oletustilausasetukset
-<a id="default-order-settings-for-released-products" class="xliff"></a>
+### <a name="default-order-settings-for-released-products"></a>Vapautettujen tuotteiden oletustilausasetukset
 
 Voit määrittää yksittäisille vapautetuille tuotteille yleiset tilausasetukset tai toimipaikkakohtaiset tilausasetukset. Yleisten tilausasetusten luokitus on aina nolla. Jos määrität uusia myynnin, ostojen ja varaston tilausasetuksia samalla kertaa yhdessä, suosittelemme, että käytät **Tietonäkymä**-kohtaa **Tilauksen oletusasetukset** -sivulla. Voit siirtyä tietonäkymään **Asetukset**-toimintoruudussa &gt; **Sivun asetukset** &gt; **Vaihda näyttö** &gt; **Tietonäkymä**.
 
-### Toimipaikkakohtaiset tilausasetukset
-<a id="site-specific-order-settings" class="xliff"></a>
+### <a name="site-specific-order-settings"></a>Toimipaikkakohtaiset tilausasetukset
 
 Voit luoda sivuston toimipaikkakohtaiset tilausasetukset valitsemalla **Uusi**. **Tietonäkymä**-kohdassa täytä toimipaikka **Asetukset käytössä** &gt; **Toimipaikka**-kentässä. **Ruudukkonäkymä**-kohdassa täytä toimipaikka **Toimipaikka** -sarakkeeseen. Uusi sääntö saa automaattisesti uuden luokitusarvon, joka on suurempi kuin nolla. Voit luoda niin monta toimipaikkakohtaista sääntöä kuin on tarpeen ja määrittää toimipaikkakohtaisille säännöille saman luokituksen mallintaaksesi, että ne ovat yhtä tärkeitä. 
 
 Jos olet **Tietonäkymä**-kohdassa et saat nimikkeelle luotujen sääntöjen yhteenvetoa. Yleisiä tietoja saat **Näytä/piilota luettelo** -painikkeella. Kun tilausrivi luodaan eikä sille anneta toimipaikkaa, Finance and Operations etsii sääntöä, jossa toimipaikkaa ei ole määritetty. Tämä voi auttaa määrittämään tilausrivin oletustoimipaikan. Tätä toimipaikkaa käytetään etsittäessä toimipaikkakohtaista sääntöä, johon oletusvarasto on voitu määrittää. Tätä varastoa käytetään tilausrivillä.
 
-### Tuotedimension erityistilausasetukset
-<a id="specific-order-settings-for-product-dimension" class="xliff"></a>
+### <a name="specific-order-settings-for-product-dimension"></a>Tuotedimension erityistilausasetukset
 
 Voit määrittää tilausasetusten säännöt, joita käytetään aktiiviseen tuotedimensioon tai aktiiviseen tuotedimensioyhdistelmään. Jos tuotedimension kenttä on jätetty tyhjäksi, sääntö koskee kaikkia tuotedimension arvoja. 
 
@@ -164,8 +156,7 @@ Koska luokitusnumero on tärkeä, **Tilauksen oletusasetukset**-toimintoruudussa
 
 Vapautetulla tuotteella voi olla useita luotuja sääntöjä. Saat selkeämmän käsityksen siitä, mikä sääntö on hallitseva ja miksi sitä tarvitaan, kohdasta **Ruudukkonäkymä** **Tilauksen oletusasetukset** -sivulla. Voit ottaa ruudukkonäkymän käyttöön kohdassa **Asetukset**-toimintoruutu &gt; **Sivun asetukset** &gt; **Vaihda näkymää** &gt; **Ruudukkonäkymä**. Ruudukossa näytettävien sarakkeiden määrä voi olla hyvin suuri, erityisesti myynti- ja varasto-välilehdillä. Näytettävien sarakkeiden enimmäismäärää ruudukossa voidaan rajoittaa piilottamalla tai näyttämällä sarakeryhmiä painikkeilla kohdassa **Tilauksen oletusasetukset** &gt; **Sarakkeen näyttö** -valikko.
 
-### Vapautetun tuotevariantin erityistilausasetukset
-<a id="specific-order-settings-for-released-product-variant" class="xliff"></a>
+### <a name="specific-order-settings-for-released-product-variant"></a>Vapautetun tuotevariantin erityistilausasetukset
 
 Jos tilauksen oletusasetusten sääntöjärjestelmä on liian hankala, on mahdollista määrittää tilauksen oletusasetukset jokaiselle tuotevariantille. Seuraavissa esimerkeissä esitetään, miten tämä etsii tuotetta ja edellä kuvattuja tapauksia.
 
