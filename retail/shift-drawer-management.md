@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Vuoron- ja kassanhallinta
-<a id="shift-and-cash-drawer-management" class="xliff"></a>
+# <a name="shift-and-cash-drawer-management"></a>Vuoron- ja kassanhallinta
 
 [!include[banner](includes/banner.md)]
 
@@ -38,12 +37,10 @@ Tässä artikkelissa käsitellään kahden vähittäismyynnin myyntipistetyypin 
 
 Vähittäismyynnin myyntipistevuoroja on kahdenlaisia: erillinen ja jaettu. Yksi työntekijä kerrallaan voi käyttää erillistä vuoroa. Useat käyttäjät voivat käyttää jaettua vuoroa useassa paikassa. Niillä voikin luoda tehokkaasti yhden vuoron useille myymälän työntekijöille.
 
-## Erilliset vuorot
-<a id="standalone-shifts" class="xliff"></a>
+## <a name="standalone-shifts"></a>Erilliset vuorot
 Erillisiä vuoroja käytetään perinteisissä kiinteissä myyntipisteskenaarioissa, joissa kassa täsmätään erikseen jokaisessa myyntipisteen kassakoneessa. Esimerkiksi elintarvikemyymälässä on tavallisesti useita kiinteitä myyntipisteen kassakoneita ja kullekin kassakoneelle on määritetty kassa. Tässä tapauksessa jokaisessa kassakoneessa käytetään todennäköisesti erillistä vuoroa ja kassa vastaa kassasta tai kassakoneen fyysisestä kassasta. Erillinen vuoro käsittää kaikki kassakoneen tapahtumat kassan työvuoron aikana. Tehtäviä voivat olla kassaan talletettu alkusumma, kaikki poistot ja lisäykset kassaan eri toiminnoilla, kuten toimitukset pankkiin ja liukuva merkintä, ja kassan laskeminen maksuvälineittäin vuoron lopussa.
 
-### Määritä erillinen vuoro
-<a id="set-up-a-stand-alone-shift" class="xliff"></a>
+### <a name="set-up-a-stand-alone-shift"></a>Määritä erillinen vuoro
 
 Erillinen vuoro määritetään kassatasolla. Tässä menettelyssä käsitellään erillisen vuoron määrittäminen myyntipisteen kassakoneessa.
 
@@ -58,8 +55,7 @@ Erillinen vuoro määritetään kassatasolla. Tässä menettelyssä käsitellä�
 9.  Valitse **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulu**.
 10. Synkronoi myyntipisteen muutokset valitsemalla ensin **1090**-jakeluaikataulu ja sitten **Suorita nyt**.
 
-### Käytä erillistä vuoroa
-<a id="use-a-stand-alone-shift" class="xliff"></a>
+### <a name="use-a-stand-alone-shift"></a>Käytä erillistä vuoroa
 
 1.  Kirjaudu myyntipisteeseen.
 2.  Jos yhtään avointa vuoroa ei ole, valitse **Avaa uusi vuoro**.
@@ -71,12 +67,10 @@ Erillinen vuoro määritetään kassatasolla. Tässä menettelyssä käsitellä�
 
 **Huomautus:** Vuoron aikana on käytettävissä muita toimintoja sen mukaan, mitä liiketoimintaprosesseja on käytössä. **Toimitus kassakaappiin**-, **Toimitus pankkiin**- ja **Maksuvälineen poisto** -toiminnoilla voidaan poistaa rahaa kassasta päivän aikana tai ennen vuoron sulkemista. Jos kassa käy vähiin, kassaa voidaan lisätä **Liukuva merkintä** -toiminnolla.
 
-## Jaetut vuorot
-<a id="shared-shifts" class="xliff"></a>
+## <a name="shared-shifts"></a>Jaetut vuorot
 Jaettua vuoroa käytetään ympäristössä, jossa kassalla tai kassaryhmällä on useita käyttäjiä työpäivän aikana. Jaettua vuoroa käytetään yleensä mobiilimyyntipisteympäristöissä. Mobiiliympäristössä kassoja ei määritetä henkilökohtaisesti eikä yksittäinen henkilö vastaa tietystä kassasta. Sen sijaan kaikkien kassojen on voitava hoitaa myynti ja täydentää kassaa heitä lähimmässä kassassa. Tässä skenaariossa jaetut kassat sisältyvät jaettuun vuoroon. Kaikki jaetun vuoron kassat sisältyvät samaan vuoroon, jotta vuoron kassanhallintaan liittyvät toimet voidaan hoitaa. Vuoron alkusumman pitäisikin siksi sisältää kaikkien jaettuun vuoroon sisältyvin kassojen yhteiskassavarat. Samoin kassan laskeminen maksuvälineittäin on kaikkien jaettuun vuoroon sisältyvin kassojen yhteiskassavarat. **Huomautus:** Kussakin myymälässä voi olla avoinna samanaikaisesti vain yksi jaettu vuoro. Samassa myymälässä voi käyttää jaettuja vuoroja ja erillisiä vuoroja.
 
-### Määritä jaettu vuoro
-<a id="set-up-a-shared-shift" class="xliff"></a>
+### <a name="set-up-a-shared-shift"></a>Määritä jaettu vuoro
 
 1.  Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **Myyntipisteiden asetukset** &gt; **Myyntipisteiden profiilit** &gt; **Laiteprofiilit**.
 2.  Valitse jaetussa vuorossa käytettävä laiteprofiili.
@@ -89,8 +83,7 @@ Jaettua vuoroa käytetään ympäristössä, jossa kassalla tai kassaryhmällä 
 9.  Valitse **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulu**.
 10. Synkronoi myyntipisteen muutokset valitsemalla ensin **1090**-jakeluaikataulu ja sitten **Suorita nyt**.
 
-### Käytä jaettua vuoroa
-<a id="use-a-shared-shift" class="xliff"></a>
+### <a name="use-a-shared-shift"></a>Käytä jaettua vuoroa
 
 1.  Kirjaudu myyntipisteeseen.
 2.  Jos myyntipistettä ei ole vielä liitetty laiteasemaan, aktivoi jaetun vuoron laiteasema valitsemalla ensin **Muu kuin kassatoiminto** ja sitten **Valitse laiteasema** -toiminto. Tämä vaihe on tarvittava tehdä vain, kun kassakone lisätään ensimmäisen kerran jaettuun vuoroympäristöön.

@@ -23,8 +23,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Eurooppalaiset verodirektiivit
-<a id="tax-directives-for-europe" class="xliff"></a>
+# <a name="tax-directives-for-europe"></a>Eurooppalaiset verodirektiivit
 Kaikkien jäsenmaiden on noudatettava EU-direktiivin säädöksiä, jotka koskevat laskusääntöjä ja laskuun luotaessa sisällytettäviä tietoja. EU-direktiivi mainitsee tiedot, jotka toimittajien on ilmoitettava EU-asiakkailleen. Laskussa on esimerkiksi oltava viite, joka ilmaisee oikeudellisen perusteen arvonlisäveron nollaverokannalle tai vapautukselle. Jos lasku oikaisee aiemmin kirjoitetun laskun, kuten hyvityslasku, alkuperäiseen laskuun on oltava selkeä viittaus.
 
 - Voit tulostaa arvolisäkoodien kuvauksen myyntilaskuun, vapaatekstilaskuun tai projektilaskuraportti määrittämällä arvonlisäverokoodin verodirektiivin viittaustekstin.

@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Tietokoodit
-<a id="info-codes" class="xliff"></a>
+# <a name="info-codes"></a>Tietokoodit
 
 [!include[banner](includes/banner.md)]
 
@@ -43,14 +42,12 @@ Tietokoodit tarjoavat tavan kerätä tietoja myyntipisteen rekisteriin. Voit kä
 -   Myy tuote tavallisessa myynnissä, alennetussa myynnissä tai ilmaisena tuotteena.
 -   Kehota kassanhoitajaa kirjoittamaan arvo tai valitsemaan tarvittava arvo alikoodiluettelosta kassaa avattaessa ilman myynnin työvaiheen suorittamista.
 
-## Tietokoodiryhmä
-<a id="info-codes-group" class="xliff"></a>
+## <a name="info-codes-group"></a>Tietokoodiryhmä
 Voit luoda Dynamics 365 for Retailissa tietokoodien ryhmiä. Tietokoodiryhmät lisäävät joustavuutta ja antavat mahdollisuuden määrittää vähemmän tietokoodeja ja käyttää niitä monipuolisemmin. Voit käyttää tietokoodiryhmiä seuraavilla tavoilla:
 -   Määritä vähemmän tietokoodeja ja käytä niitä helposti uudelleen. Tietokoodiryhmissä olevilla tietokoodeilla ei ole ennalta määritettyjä riippuvuuksia muissa tietokoodeissa. Voit sisällyttää samat kooditiedot useisiin tietokoodiryhmiin ja sitten käyttää priorisointia esittämään samat tietokoodit siinä järjestyksessä, joka vastaa kulloisiakin vaatimuksia.
 -   Linkitä tietokoodit muihin tietokoodeihin tai tietokoodiryhmiin, jotta voit kerätä tietoja tuotteesta tai tapahtumasta määrittämättä erillistä tietokoodia tai linkitettyä tietokoodia jokaiselle skenaariolle.
 
-## Tietokoodiesimerkkejä
-<a id="info-code-examples" class="xliff"></a>
+## <a name="info-code-examples"></a>Tietokoodiesimerkkejä
 **Esimerkki 1: Tietokoodien uudelleenkäyttö** Voit linkittää tietokoodit siten, että kun yksi tietokoodi käynnistyy, toinen koodi käynnistyy heti sen jälkeen. Kun esimerkiksi myyt tiettyjä tuotteita, kehota kassanhoitaja kysymään asiakkailta, haluavatko he ostaa paristoja ja tuotetakuun. Muiden tuotteiden kohdalla voit kehottaa kassanhoitajaa kysymään asiakkaalta, haluaako tämä ostaa paristoja, ja pyytämään asiakkaan postinumeron. Jos näissä tilanteissa luodaan linkitettyjä tietokoodeja, sinun on määritettävä tietokoodin jokainen muutos siten, että kassanhoitajaa kehotetaan pyytämään oikeat tiedot. Jos käytät tietokoodiryhmiä, yleiset tietokoodit, kuten paristojen pyytäminen, voidaan määrittää kerran ja sitten käyttää uudelleen useissa tietokoodiryhmissä. Voit käyttää myös priorisointia tietokoodiryhmissä määrittämään järjestyksen, jossa kehotteita näytetään.
 
 

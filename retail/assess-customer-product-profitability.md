@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Asiakkaiden ja tuotteiden kannattavuuden arviointi
-<a id="assess-customer-and-product-profitability" class="xliff"></a>
+# <a name="assess-customer-and-product-profitability"></a>Asiakkaiden ja tuotteiden kannattavuuden arviointi
 
 [!include[banner](includes/banner.md)]
 

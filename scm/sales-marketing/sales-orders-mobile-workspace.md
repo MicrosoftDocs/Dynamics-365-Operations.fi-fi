@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Myyntitilausten mobiilityötila
-<a id="sales-orders-mobile-workspace" class="xliff"></a>
+# <a name="sales-orders-mobile-workspace"></a>Myyntitilausten mobiilityötila
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,14 +35,12 @@ Tässä ohjeaiheessa on tietoja **Myyntitilaukset**-mobiilityötilasta. Tämän 
 
 Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Yleiskuvaus
 **Myyntitilaukset** -mobiilin työtilan avulla voit tarkastella kunkin myyntitilauksen yksityiskohtaisia tietoja. Näihin tietoihin kuuluvat tilauksen tila, asiakkaan yhteystiedot ja tilauksen vastaanottajan yhteystiedot. **Myyntitilausten** mobiilityötilassa on pikanäyttö myyntitilauksista. Voit tarkastella myyntitilauksia asiakaskohtaisesti, näyttää kaikki myyntitilaukset tai tarkastella yksittäisen myyntitilauksen tietoja. 
 
 Mobiili työtila tarjoaa kaksi näkymää, joilla voit analysoida myyntitilausten yksityiskohtia.
 
-### Näytä kaikki myyntitilaukset
-<a id="view-all-sales-orders" class="xliff"></a>
+### <a name="view-all-sales-orders"></a>Näytä kaikki myyntitilaukset
 Tämä näkymä sisältää kaikki myyntitilaukset.
 
 -   Valitse tarkasteltavat myyntitilaukset seuraavien suodattimien avulla:
@@ -64,8 +61,7 @@ Tämä näkymä sisältää kaikki myyntitilaukset.
     -   Tilausrivit
     -   Lähetykset, joista näet miten ja milloin myyntitilaus on toimitettu
 
-### Tarkastele asiakkaan tilauksia
-<a id="view-orders-for-a-customer" class="xliff"></a>
+### <a name="view-orders-for-a-customer"></a>Tarkastele asiakkaan tilauksia
 Tässä näkymässä on asiakaskohtainen luettelo myyntitilauksista.
 
 -   Voit tarkastella asiakkaan myyntitilauksia seuraavien suodattimien avulla:
@@ -86,16 +82,13 @@ Tässä näkymässä on asiakaskohtainen luettelo myyntitilauksista.
         -   Tilausrivit
         -   Lähetykset, joista näet miten ja milloin myyntitilaus on toimitettu
 
-## Edellytykset
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Edellytykset
 Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
 
-### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys 
 Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **Myyntitilaukset**-mobiilityötilassa. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611, johon on asennettu vähintään ympäristöpäivitys 3
-<a id="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611, johon on asennettu vähintään ympäristöpäivitys 3
 Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsin versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
 
 <table>
@@ -128,15 +121,13 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsi
 </tbody>
 </table>
 
-## Mobiilisovelluksen lataaminen ja asentaminen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Kirjautuminen mobiilisovellukseen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
 
 1.  Käynnistä sovellus mobiililaitteessa.
 2.  Anna Dynamics 365 -URL-osoitteesi.
@@ -145,8 +136,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Tarkastele asiakkaan myyntitilausten tietoja mobiilin Myyntitilaukset-työtilan avulla.
-<a id="view-information-about-sales-orders-for-a-customer-by-using-the-sales-order-mobile-workspace" class="xliff"></a>
+## <a name="view-information-about-sales-orders-for-a-customer-by-using-the-sales-order-mobile-workspace"></a>Tarkastele asiakkaan myyntitilausten tietoja mobiilin Myyntitilaukset-työtilan avulla.
 
 1.  Valitse mobiililaitteessasi **Myyntitilaukset** -työtila.
 2.  Valitse **Tarkastele asiakkaan tilauksia**.

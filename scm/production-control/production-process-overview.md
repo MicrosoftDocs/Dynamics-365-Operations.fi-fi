@@ -28,8 +28,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Tuotantoprosessin yleiskatsaus
-<a id="production-process-overview" class="xliff"></a>
+# <a name="production-process-overview"></a>Tuotantoprosessin yleiskatsaus
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,8 +43,7 @@ Tuotantoprosessiin vaikuttavat yleensä sille valitut kustannuslaskenta- ja vara
 
 Kustannusten mittaustavan valinta määrittää myös materiaalien ja resurssien kulutusta koskevat raportointivaatimukset tuotantoprosessin aikana. Yleensä todellisten kustannusten menetelmät edellyttävät tarkkaa raportointia työn tasolla, kun taas kausittaisissa kustannusten laskumenetelmissä materiaalien ja resurssien kulutus voidaan raportoida yleisemmällä tasolla.
 
-## Monen tilan tuotanto
-<a id="mixed-mode-manufacturing" class="xliff"></a>
+## <a name="mixed-mode-manufacturing"></a>Monen tilan tuotanto
 Eri tuotteet ja tuotantotopologiat edellyttävät erilaisten tilaustyyppien käyttöä. Finance and Operationsissa eri tilaustyyppejä voi käyttää yhdistetyssä tilassa. Toisin sanoen kaikki tilaustyypit voivat tapahtua yhden valmiin tuotteen valmistuksessa alusta loppuun.
 
 -   **Tuotantotilaus** – Tämä on perinteinen tilaustyyppi, jolla tiettyä tuotetta tai tuotevarianttia valmistetaan tietty määrä määrättynä päivämääränä. Tuotantotilaukset perustuvat tuoterakenteisiin ja reitityksiin.
@@ -53,8 +51,7 @@ Eri tuotteet ja tuotantotopologiat edellyttävät erilaisten tilaustyyppien käy
 -   **Kanban** – Kanbaneilla ilmaistaan toistuvia lean-valmistusprosesseja, jotka perustuvat tuotantovirtoihin, kanban-sääntöihin ja tuoterakenteisiin.
 -   **Projekti** – Valmistusprojektissa tuotteet ja palvelut yhdistyvät tiettyyn aikatauluun ja budjettiin. Tuotannon valmistusosuus voidaan toimittaa minkä tahansa muun tilaustyypin kautta.
 
-## Valmistusperiaatteet
-<a id="manufacturing-principles" class="xliff"></a>
+## <a name="manufacturing-principles"></a>Valmistusperiaatteet
 Tiettyä tuotetta ja niihin liittyviä markkinoita parhaimmin vastaavan valmistusperiaatteen valinnassa on otettava huomioon tuotanto- ja logistiikkavaatimukset sekä toimitusaikoihin liittyvät asiakkaiden odotukset.
 
 -   **Valmistus varastoon** – Tämä on perinteinen valmistusperiaate, jossa tuotteita valmistetaan varastoon ennakoidun tai minimaalisen varastotäydennyksen mukaan (jälkimmäinen lasketaan yleensä ennakoidun tai historiallisen kulutuksen perusteella).
@@ -62,8 +59,7 @@ Tiettyä tuotetta ja niihin liittyviä markkinoita parhaimmin vastaavan valmistu
 -   **Määritys tilauksesta** – Valmistus tilauksesta -periaatteessa arvoketjun lopulliset työvaiheet suoritetaan tilauksesta. Tuotettavaa todellista tuotevarianttia ei määritetä etukäteen, vaan se luodaan tilausta syötettäessä myytävän tuotteen määritysmallin perusteella. Määritä tilauksesta -periaate edellyttää jonkin verran prosessin yhtenäistämistä tiettyä tuoteriviä varten.
 -   **Suunnittelu tilauksesta** – Suunnittelu tilauksesta -prosessit liittyvät yleensä tilaukseen ja käynnistyvät tavallisesti suunnitteluvaiheessa. Suunnitteluvaiheessa suunnitellaan ja kuvaillaan varsinaiset tuotteet, joiden valmistusta tilauksen täyttäminen edellyttää. Tuotanto- ja erätilauksia tai kanbaneja voidaan tämän jälkeen luoda tuotteiden tuotantoa varten.
 
-## Tuotannon elinkaaren yleiskatsaus
-<a id="overview-of-the-production-life-cycle" class="xliff"></a>
+## <a name="overview-of-the-production-life-cycle"></a>Tuotannon elinkaaren yleiskatsaus
 Seuraavat tuotannon elinkaaren vaiheet voivat tapahtua kaikille tilaustyypeille, joita monen tilan tuotannossa voidaan käyttää. Kaikkia ei kuitenkaan esitetä eksplisiittisenä tilauksen tilana.
 
 1.  **Luotu** – Voit luoda tuotanto- tai erätilauksen tai kanbanin manuaalisesti tai määrittää järjestelmän luomaan ne erilaisten kysyntäsignaalien perusteella. Pääsuunnittelu luo tuotanto- tai erätilauksia tai kanbaneja, kun suunnitellut tilaukset vahvistetaan. Muita kysyntäsignaaleja ovat myyntitilaukset tai tarvekohdistetut signaalit muista tuotantotilauksista tai kanbaneista. Kanbaneissa, joissa määrä on kiinteä, kysyntäsignaalit luodaan, kun kanbanit rekisteröidään tyhjiksi.
@@ -84,8 +80,7 @@ Seuraavat tuotannon elinkaaren vaiheet voivat tapahtua kaikille tilaustyypeille,
 12. **Kauden sulkeminen** – Jotkin kustannuslaskennan periaatteet, kuten kausittainen keskiarvo, jälkikustannuslaskenta, FIFO tai LIFO, edellyttävät ajoittaisia toimita, jotta varasto tai tilikausi voidaan sulkea. Yleensä järjestelmä yrittää raportoida kaikkien materiaalien ja resurssien kulutuksesta ja varaston sekä hävikin oikaisuista ennen kausien sulkemista. Tämä raportointi tehdään yleensä käyttämällä varaston siirtokirjauskansioita tai oikaisun kirjauskansioita. Tavoitteena on arvioida toimintayksiköiden taloudellista suorituskykyä kullakin kaudella. Joskus kun käytetään pitkäaikaisia tuotantotilauksia, jotka kattavat koko taloudellisen raportointijakson, tuotantokirjauskansioiden avulla voidaan raportoida tuotannon edistymisestä ja resurssien kulutuksesta kauden lopussa.
 
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Tuotannon palaute](production-feedback.md)

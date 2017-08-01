@@ -25,8 +25,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Excel-lisäosan käyttö
-<a id="use-the-excel-add-in" class="xliff"></a>
+# <a name="use-the-excel-add-in"></a>Excel-lisäosan käyttö
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Tässä ohjeaiheessa kerrotaan, kuinka avaat yksikkötietoja Microsoft Exceliss�
 
 Kun avaat yksikkötietoja Microsoft Excelissä, voit tarkastella ja muokata nopeasti tietoja Microsoft Dynamicsin Excel-lisäosalla. Tämä apuohjelma edellyttää, että käytössä on Microsoft Excel 2016. **Huomautus:** jos Microsoft Azure Active Directory (Azure AD) -vuokralaisesi on määritetty käyttämään Active Directoryn liittoutumispalveluita (AD FS), varmista, että toukokuun 2016 päivitys on asennettu, jotta Excel-lisäosa pystyy kirjaamaan sinut sisään.
 
-## Yksikkötietojen avaaminen Excelissä Dynamics 365 for Finance and Operationsista käsin
-<a id="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations" class="xliff"></a>
+## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations"></a>Yksikkötietojen avaaminen Excelissä Dynamics 365 for Finance and Operationsista käsin
 1.  Napsauta Microsoft Dynamics 365 for Finance and Operations -sivulta **Avaa Microsoft Officessa**. Jos sivun juuritietolähde (taulukko) on sama kuin minkä tahansa yksikön juuritietolähde, sivulle muodostetaan oletusasetuksena **Avaa Excelissä**. **Avaa Excelissä** -vaihtoehto löytyy usein käytetyillä sivuilla, kuten **Kaikki toimittajat** ja **Kaikki asiakkaat**.
 2.  Valitse **Avaa Excelissä** -vaihtoehto ja avaa luotu työkirja. Tämä työkirja sisältää yksikön sidostiedot, osoitin ympäristöön ja osoitin Excel-lisäosaan.
 3.  Valitse Excelin **Ota muokkaus käyttöön** -painike, jotta voit ajaa Excel-lisäosan. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
@@ -45,8 +43,7 @@ Kun avaat yksikkötietoja Microsoft Excelissä, voit tarkastella ja muokata nope
 
 Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että työkirjassa ei ole tietoja ennen kuin Excel-lisäosa on lukenut tiedot.
 
-## Avaa yksikön tiedot Excelissä käynnistämisen yhteydessä
-<a id="open-entity-data-in-excel-when-you-start-from-excel" class="xliff"></a>
+## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Avaa yksikön tiedot Excelissä käynnistämisen yhteydessä
 1.  Avaa Office-kauppa napsauttamalla **Kauppa**-painiketta Excelin **Lisää**-välilehden **Lisäosat**-ryhmässä.
 2.  Etsi Office-kaupasta avainsanalla "Dynamics" ja valitse **Lisää** **Microsoft Dynamicsin Office-lisäosa** (Excel-lisäosa).
 3.  Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan** voidaksesi käyttää sitä. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
@@ -61,12 +58,10 @@ Jos URL-osoite on esimerkiksi https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTabl
 11. Kun olet lisännyt haluamasi kentät **Valitut kentät** -luetteloon, varmista, että kohdistin on oikeassa kohdassa taulukkoa (esimerkiksi solu A1) ja valitse sitten **Valmis**. Valitse sitten **Valmis** sulkeaksesi suunnitteluohjelman.
 12. Valitse **Päivitä** hakeaksesi tietojoukon.
 
-## Näytä ja päivitä yksikön tiedot Excelissä
-<a id="view-and-update-entity-data-in-excel" class="xliff"></a>
+## <a name="view-and-update-entity-data-in-excel"></a>Näytä ja päivitä yksikön tiedot Excelissä
 Kun Excel-lisäosa lukee yksikön tiedot työkirjaan, voit päivittää tiedot milloin tahansa valitsemalla Excel-lisäosassa **Päivitä**.
 
-## Muokkaa yksikön tietoja Excelissä
-<a id="edit-entity-data-in-excel" class="xliff"></a>
+## <a name="edit-entity-data-in-excel"></a>Muokkaa yksikön tietoja Excelissä
 Voit muuttaa yksikön tietoja tarpeidesi mukaisesti ja julkaista muutokset takaisin valitsemalla Excel-lisäosassa **Julkaise**. Jos haluat muokata tietuetta, valitse työkirjassa solu ja muuta sitten solun arvoa. Jos haluat lisätä uuden tietueen, seuraa jotakin näistä vaiheista:
 
 -   Napsauta tietolähdetauluun ja valitse sitten **Uusi** Excel-lisäosassa.
@@ -81,8 +76,7 @@ Jos haluat poistaa tietueen, seuraa jotakin näistä vaiheista:
 -   Napsauta hiiren kakkospainikkeella poistettavaa riviä ja valitse sitten **Poista** &gt; **Taulukon rivit**.
 Jos tietolähteitä on lisätty liittyvinä, otsikko julkaistaan ennen rivejä. Jos muiden tietolähteiden välillä on riippuvaisuuksia, joudut ehkä vaihtamaan oletusjulkaisujärjestystä. Julkaisujärjestystä voit muuttaa Excel-apuohjelmassa napsauttamalla **Asetukset**-painiketta (rattaan kuva). Valitse sitten **Data Connector** -pikavälilehdessä **Määritä julkaisujärjestys**.
 
-## Lisää tai poista sarakkeita
-<a id="add-or-remove-columns" class="xliff"></a>
+## <a name="add-or-remove-columns"></a>Lisää tai poista sarakkeita
 Voit säätää työkirjaan automaattisesti lisättäviä sarakkeita suunnittelijasovelluksessa.
 
 1.  Käynnistää Excel-lisäosan tietolähteen suunnitteluohjelma napsauttamalla **Asetukset** -painiketta (rattaan kuva) ja valitsemalla sitten **Ota rakenne käyttöön** -valintaruutu.
@@ -96,8 +90,7 @@ Voit säätää työkirjaan automaattisesti lisättäviä sarakkeita suunnitteli
 5. Ota käyttöön tietolähteeseen tehdyt muutokset valitsemalla **Päivitä**. Valitse sitten **Valmis** sulkeaksesi suunnitteluohjelman. 
 6. Jos olet lisännyt kentän (sarakkeen), valitse **Päivitä**, niin ohjelma hakee päivitetyn tietojoukon.
 
-## [](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Vianmääritys
-<a id="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting" class="xliff"></a>
+## <a name="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting"></a>[](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Vianmääritys
 Tietyt ongelmat ovat ratkaistavissa muutaman helpon vaiheen kautta.
 
 -   **Lataa sovelmat -painike on näkyvissä.** Jos Excel-lisäosassa on **Lataa sovelmat** -painike kirjautumisen jälkeen, et ehkä ole kirjautunut oikeana käyttäjänä. Ratkaise ongelma varmistamalla, että Excel-lisäosan oikeassa yläkulmassa on oikea käyttäjänimi. Jos näkyvillä on väärä käyttäjänimi, napsauta sitä, kirjaudu ulos ja kirjaudu takaisin sisään.

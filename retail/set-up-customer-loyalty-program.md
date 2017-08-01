@@ -28,16 +28,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kanta-asiakasohjelman määrittäminen
-<a id="set-up-a-customer-loyalty-program" class="xliff"></a>
+# <a name="set-up-a-customer-loyalty-program"></a>Kanta-asiakasohjelman määrittäminen
 
 [!include[banner](includes/banner.md)]
 
 
 Tässä artikkelissa kuvataan kanta-asiakasohjelman määrittämistä. Kanta-asiakasohjelmat voivat nostaa asiakasuskollisuutta palkitsemalla asiakkaita, jotka asioivat myymälässäsi. Microsoft Dynamics 365 for Retailissa voit määrittää yksinkertaisia tai monimutkaisia kanta-asiakasohjelmia yritysten välille missä tahansa vähittäismyyntikanavassa.
 
-Kanta-asiakastoiminnot
-<a id="loyalty-features" class="xliff"></a>
+<a name="loyalty-features"></a>Kanta-asiakastoiminnot
 ----------------
 
 Voit määrittää kanta-asiakasohjelman käyttämällä seuraavia vaihtoehtoja:
@@ -48,12 +46,10 @@ Voit määrittää kanta-asiakasohjelman käyttämällä seuraavia vaihtoehtoja:
 -   Voit myöntää kanta-asiakaskortteja mille tahansa vähittäismyyntikanavalle, joka on osana kanta-asiakasohjelmiasi ja yhdistää kanta-asiakaskortteja yhteen tai useampaan kanta-asiakasohjelma, johon asiakas voi osallistua. Voit myös yhdistää asiakastietueen kanta-asiakaskorttiin, jotta asiakas voi kerätä kanta-asiakaspisteitä useilla korteilla sekä lunastaa ne.
 -   Oikaise kanta-asiakaskortit manuaalisesti tai siirrä kanta-asiakaspalkkioiden saldo kortilta toiselle asiakkaan palkitsemiseksi.
 
-## Kanta-asiakasohjelmien määrittäminen
-<a id="setting-up-loyalty-programs" class="xliff"></a>
+## <a name="setting-up-loyalty-programs"></a>Kanta-asiakasohjelmien määrittäminen
 Kun otat kanta-asiakkuusominaisuuden käyttöön Dynamics 365 for Retailissa, sinun on määritettävä useita komponentteja. Seuraavassa kaaviossa on kuvattu kanta-asiakkuuskomponentit ja kuinka ne liittyvät toisiinsa. ![Kanta-asiakkuuden määrittämisprosessin kulku](./media/loyaltyprocess.gif)
 
-## Kanta-asiakkuuskomponentit
-<a id="loyalty-components" class="xliff"></a>
+## <a name="loyalty-components"></a>Kanta-asiakkuuskomponentit
 Seuraavassa taulukossa on kuvattu jokainen komponentti ja sen käyttöpaikka kanta-asiakkuuden määrityksessä.
 
 | Komponentti                                        | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Missä se on käytössä                                                                                                                                                                                                                                                                                                                                                                 |
@@ -69,8 +65,7 @@ Seuraavassa taulukossa on kuvattu jokainen komponentti ja sen käyttöpaikka kan
 | Kanta-asiakkuusmallien asetukset                           | Kanta-asiakkuusmallit määrittävät valittua kanta-asiakkuusohjemaa koskevat ansainta- ja lunastussäännöt. Määrität vähittäismyynnin kanavat kanta-asiakkuusmalliin tunnistamaan, mitkä kanta-asiakasohjelma, ansaintasäännöt ja lunastussäännöt koskevat vähittäismyymälää.                                                                                                                                                                                                                                                                                                                                  | Kanta-asiakkuusmalli liitetään kanta-asiakasohjelmaan ja vähittäismyyntikanaviin. Voit määrittää useita kanta-asiakkuusmalleja samaan kanta-asiakasohjelmaan ja voit liittää useita kanta-asiakkuusmalleja useisiin vähittäismyyntikanaviin.                                                                                                                                                                        |
 | Kanta-asiakaskorttien asetukset                             | Kanta-asiakaskortin omistava asiakas voi osallistua kanta-asiakasohjelmiin, jotka on määritetty kortille. Kanta-asiakaskortit voidaan antaa nimettömänä tai ne voidaan määrittää tietylle asiakkaalle. Voit tarkastella tietyn kortin kanta-asiakkuustapahtumia ja voit tarkastella kortille kertyneiden kanta-asiakkuuspisteiden yhteenvetoa. Voit lähettää kanta-asiakaskortit mistä tahansa vähittäismyynnin kanavasta. Voit myös manuaalisesti säätää kanta-asiakaskortin päivittämään asiakkaan eri tasolle, lisäämään kanta-asiakkuuspisteitä tai siirtämään kanta-asiakkuuspisteet kortilta toiselle. | Kanta-asiakasohjelmat liitetään kanta-asiakaskorttiin.                                                                                                                                                                                                                                                                                                                                  |
 
-## Kanta-asiakkuusprosessit
-<a id="loyalty-processes" class="xliff"></a>
+## <a name="loyalty-processes"></a>Kanta-asiakkuusprosessit
 Seuraavassa taulukossa on kuvaus prosesseista, jotka on suoritettava, jotta kanta-asiakkuusmääritykset ja -tiedot voidaan lähettää myymälöihin ja kanta-asiakkuustapahtumat voidaan hakea myymälöistä.
 
 | Prosessin nimi                         | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                    | Sivun nimi                            |

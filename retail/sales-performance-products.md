@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Myynnin suorituksen tuotekohtainen arviointi
-<a id="assess-sales-performance-by-product" class="xliff"></a>
+# <a name="assess-sales-performance-by-product"></a>Myynnin suorituksen tuotekohtainen arviointi
 
 [!include[banner](includes/banner.md)]
 

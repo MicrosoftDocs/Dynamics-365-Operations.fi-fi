@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Myöhemmäksi päivätyt sekit
-<a id="postdated-checks" class="xliff"></a>
+# <a name="postdated-checks"></a>Myöhemmäksi päivätyt sekit
 
 [!include[banner](../includes/banner.md)]
 

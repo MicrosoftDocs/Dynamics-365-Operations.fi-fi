@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumasivulle
-<a id="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device" class="xliff"></a>
+# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumasivulle
 
 [!include[banner](includes/banner.md)]
 
@@ -37,8 +36,7 @@ Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipist
 
 Voit näyttää tuotesuosituksia myyntipisteen laitteessa, kun käytät Microsoft Dynamics 365 for Retailia. *Suositukset* ovat nimikkeitä, joista asiakas on mahdollisesti kiinnostunut ostohistorian, toiveluettelon ja muiden asiakkaiden verkosta tai kivijalkakaupasta ostamien tuotteiden perusteella. Voit näyttää tuotteen suosituksi lisäämällä ohjausobjektin tapahtumanäytölle näytön asettelun suunnittelutoiminnon avulla.
 
-## Avaa asettelun suunnittelutoiminto
-<a id="open-layout-designer" class="xliff"></a>
+## <a name="open-layout-designer"></a>Avaa asettelun suunnittelutoiminto
 1.  Siirry kohtaan **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **Myyntipiste** &gt; **Näytön asettelut**.
 2.  Pikasuodattimen avulla voit etsiä näyttöä, johon haluat lisätä ohjausobjektin. Voit esimerkiksi suodattaa **Näyttöasettelun tunnus** -kentässä arvolla "F2CP16:9M".
 3.  Etsi haluamasi tietue luettelosta ja valitse se. Valitse esimerkiksi "Nimi: F2CP16:9M Näyttöasettelun tunnus: F2CP16:9M'.
@@ -53,8 +51,7 @@ Käytettävissä on kaksi asetusta. Valitse vaihtoehto, joka sopii parhaiten myy
 -   Suositukset ovat aina näkyvissä.
 -   A **Suositukset**-välilehti näkyy oikealla puolella näytön ruudukossa.
 
-#### Saat suositukset aina näkyville:
-<a id="to-make-recommendations-always-visible" class="xliff"></a>
+#### <a name="to-make-recommendations-always-visible"></a>Saat suositukset aina näkyville:
 
 1.  Pienennä tapahtumarivien tiedot -alueen korkeutta niin, että se on samalla korkeudella kuin asiakaspaneeli vasemmalla puolellaan. [](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 2.  Vasemmanpuoleisesta valikosta vedä ja pudota suosituksien ohjausobjekti Tapahtumarivin tiedot -alueen ja painikeruudukon väliin näytön alareunassa keskellä. Muuta ohjausobjektin kokoa, jotta se mahtuu kyseiseen tilaan. [](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
@@ -63,8 +60,7 @@ Käytettävissä on kaksi asetusta. Valitse vaihtoehto, joka sopii parhaiten myy
 5.  Valitse luettelossa **1090, kassakoneet**.
 6.  Valitse **Suorita nyt**.
 
-#### Lisää Suositukset-välilehti painikeruudukkoon näytön oikealla puolella seuraavasti:
-<a id="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen" class="xliff"></a>
+#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Lisää Suositukset-välilehti painikeruudukkoon näytön oikealla puolella seuraavasti:
 
 1.  Napsauta hiiren kakkospainikkeella tyhjää tilaa sivun oikeassa reunassa painikeruudukon viimeisen välilehden alapuolella.
 2.  Valitse **Mukauta**.[![pic-5](./media/pic-5.png)](./media/pic-5.png)
@@ -80,8 +76,7 @@ Käytettävissä on kaksi asetusta. Valitse vaihtoehto, joka sopii parhaiten myy
 12. Valitse **Suorita nyt**.
 
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Mukautettujen tuotesuositusten yleiskuvaus](personalized-product-recommendations.md)

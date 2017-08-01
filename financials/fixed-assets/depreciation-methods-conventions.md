@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Poistomenetelmät ja -käytännöt
-<a id="depreciation-methods-and-conventions" class="xliff"></a>
+# <a name="depreciation-methods-and-conventions"></a>Poistomenetelmät ja -käytännöt
 
 [!include[banner](../includes/banner.md)]
 
@@ -68,8 +67,7 @@ Voit valita seuraavista poistomenetelmistä.
 
 
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Käyttöomaisuuden poisto](fixed-asset-depreciation.md)

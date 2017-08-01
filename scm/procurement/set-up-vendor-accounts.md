@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Toimittajatilien asettaminen
-<a id="set-up-vendor-accounts" class="xliff"></a>
+# <a name="set-up-vendor-accounts"></a>Toimittajatilien asettaminen
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,20 +48,16 @@ Toimittajatilien luomisprosessia voi nopeuttaa luomalla malleja. Mallit luodaan 
 
 Voit myös luoda käyttäjän mallin omaan käyttöösi. Et voi poistaa toimittajaa, joka liittyy muihin tietueisiin, kuten tuotteisiin tai yhteyshenkilöihin.
 
-## Toimittajan tilinumerot
-<a id="vendor-account-numbers" class="xliff"></a>
+## <a name="vendor-account-numbers"></a>Toimittajan tilinumerot
 Tilinumero on toimittajan yksilöivä tunnus. Voit määrittää järjestelmän luomaan tilinumerot automaattisesti, kun luot toimittajan. Numerosarjan voi myös määrittää niin, että numerot määritetään manuaalisesti. Voit esimerkiksi käyttää toimittajan puhelinnumeroa tunnuksena.
 
-## Toimittajaorganisaatiot ja yksittäiset toimittajat
-<a id="vendor-organizations-and-individual-vendors" class="xliff"></a>
+## <a name="vendor-organizations-and-individual-vendors"></a>Toimittajaorganisaatiot ja yksittäiset toimittajat
 Kun luot uuden toimittajatilin, on valittava, onko toimittaja henkilö tai organisaatio. Valinta vaikuttaa tietoihin, jotka toimittajasta on määritettävä. Henkilön tietoihin kuuluvat etu- ja sukunimi sekä nimike. Organisaation tietoihin kuuluvat organisaation numero ja sen työntekijöiden määrä.
 
-## Osoitteet
-<a id="addresses" class="xliff"></a>
+## <a name="addresses"></a>Osoitteet
 Jokaiselle toimittajalle voidaan määrittää useita osoitteita, joita käytetään eri tarkoituksiin. Voit luoda osoitteen, jonka tarkoitus on **Lasku**. Tai jos suoritat maksut toimittajalle käyttämällä sekkejä, voit määrittää osoitteen, jonka tarkoitus on **Maksusuorituksen saaja**. Jos osoitetta käytetään kansainvälisissä tilisiirroissa, tarkoitus on **SWIFT**.
 
-## Toimittajan yhteyshenkilöt
-<a id="vendor-contacts" class="xliff"></a>
+## <a name="vendor-contacts"></a>Toimittajan yhteyshenkilöt
 Voit tallentaa toimittajalle yhteyshenkilöitä. Yhteyshenkilöitä voidaan sitten käyttää asiakirjoissa, kuten ostotilauksissa tai tarjouspyynnöissä.  
 
 Toimittajan yhteyshenkilöitä voit lisätä **Kaikki toimittajat** -sivulla, napsauttamalla **Toimittaja**-välilehden **Asetukset**-ryhmässä **Yhteyshenkilöt** &gt; **Lisää yhteyshenkilöitä**.  
@@ -75,8 +70,7 @@ Et voi poistaa yhteyshenkilötietuetta, jos yhteyshenkilöön viitataan asiakirj
 
 Voit lisätä toimittajan yhteyshenkilöitä omiin Microsoft Office 365 -yhteystietoihisi. Sinun on kuitenkin ensin määritettävä Dynamics 365 for Finance and Operationsin ja Office 365:n välinen synkronointi sekä Microsoft Exchange Serverin synkronoinnissa että ohjattu Microsoft Outlook -asennustoiminnossa.
 
-## Toimittajat eri yrityksissä
-<a id="vendors-in-different-legal-entities" class="xliff"></a>
+## <a name="vendors-in-different-legal-entities"></a>Toimittajat eri yrityksissä
 Jos toimittaja on rekisteröity vain yhteen yritykseen organisaatiossasi ja toisen yrityksen on rekisteröitävä sama toimittaja, voit käyttää **Lisää toimittaja toiseen yritykseen** -sivun avulla, jossa voit määrittää toimittajalle liikesuhteen toisen yrityksen kanssa. Sinun on valittava toimittajalle toimittajaryhmä, valuutta ja pidon tila valitussa yrityksessä.  
 
 Jos organisaatiossasi on useita yrityksiä, jotka toimivat saman toimittajan kanssa, ja jos kukin yritys ylläpitää erillistä toimittajatiliä kyseistä toimittajaa varten, voit näiden ohjeiden avulla yhdistää eri toimittajatilit. Näin osoite- ja työntekijöiden määrätiedot voidaan jakaa siten, että ne on päivitettävä vain yhdessä paikassa.  
@@ -86,12 +80,10 @@ Voit yhdistää osapuolten tunnukset seuraavien ohjeiden mukaisesti.
 1.  Avaa **Yleinen osoitekirja** -sivu ja valitse osoitekirjatietueet, jotka edustavat toimittajaa kussakin yrityksessä, jotka haluat sisällyttää määritykseen.
 2.  Valitse Toimintoruudussa **Yhdistä tietueet**.
 
-## Sopimukset
-<a id="agreements" class="xliff"></a>
+## <a name="agreements"></a>Sopimukset
 Kun määrität toimittajatilin, voi myös olla hyvä rekisteröidä toimittajan kanssa solmitut sopimukset. Toimittajatietueen toimintojen avulla voit määrittää hinta- ja alennussopimukset. Voit myös määrittää ostosopimuksen **Ostosopimukset**-sivulla.
 
-## Toimittajan asettaminen pitoon
-<a id="putting-a-vendor-on-hold" class="xliff"></a>
+## <a name="putting-a-vendor-on-hold"></a>Toimittajan asettaminen pitoon
 Voit asettaa toimittajan pitoon eri tapahtumatyyppien kohdalla. Valittavissa ovat seuraavat vaihtoehdot:
 
 -   **Ei** – Toimittaja ei ole pidossa.
@@ -103,16 +95,13 @@ Voit asettaa toimittajan pitoon eri tapahtumatyyppien kohdalla. Valittavissa ova
 
 Kun asetat toimittajan pitoon, voit myös määrittää pidolle syyn ja päivämäärän, jona pitotila päättyy. Jos et määritä päättymispäivämäärää, toimittajan pitotila on voimassa toistaiseksi.
 
-## Laskutustoimittaja
-<a id="vendor-invoice-account" class="xliff"></a>
+## <a name="vendor-invoice-account"></a>Laskutustoimittaja
 Jos usealla toimittajalla on sama laskutusosoite tai jos toimittajaa laskutetaan kolmannen osapuolen kautta, voit määrittää toimittajatietueelle erillisen laskutustilin. Laskutustili on tili, jota hyvitetään laskun summalla, kun toimittajalasku luodaan ostotilauksesta. Jos laskutustiliä ei luoda toimittajan tietueelle, laskutustilinä käytetään toimittajatiliä.
 
-## Toimittajan pankkitilit
-<a id="vendor-bank-accounts" class="xliff"></a>
+## <a name="vendor-bank-accounts"></a>Toimittajan pankkitilit
 Jos suoritat maksuja toimittajan pankkitilille, voit syöttää toimittajan pankki- ja pankkitilitiedot **Toimittajan pankkitilit**-sivulla. Voit myös kirjoittaa valitun pankkitilin oikeellisuustarkistus- ja maksutiedot. Voit esimerkiksi lisätä esilaskuja toimittajan pankkitileille. Näitä esilaskuja voi käyttää tilitietojen, kuten reititysnumeroiden ja tilinumeroiden, oikeellisuuden tarkastamiseen. Toimittajalle on määritettävä oletusmaksutili. Varsinaista maksua suoritettaessa tämän tilin voi muuttaa joksikin toiseksi toimittajan tiliksi.
 
-## Kirjanpitotilit
-<a id="ledger-accounts" class="xliff"></a>
+## <a name="ledger-accounts"></a>Kirjanpitotilit
 Voit määrittää oletustilit, jotka näkyvät automaattisesti toimittajan laskujen kirjauskansioissa määritetyn toimittajan osalta. Tämä toiminnallisuus voi olla hyödyllinen, jos yleensä maksat samantyyppisistä nimikkeistä tai palveluista samoille toimittajille ajan kuluessa. Kun määrität oletustilin, voit nopeasti ja tehokkaasti määrittää kirjauskansiomerkinnät laskukirjauskansioon. Määritettäviä oletustilejä ei käytetä ostotilauksille tai toimittajalaskuille, jotka on kirjataan **Toimittajalasku**-sivulla.  
 
 Oletustilit valitaan **Oletustilin määritys** -sivulla, jonka voit avata toimittajatietueen **Lasku**-välilehdeltä. Tässä valitut tilit näkyvät suodatetussa toimittajatilien luettelossa, kun kirjaat kirjauskansioviennin. Yhden tileistä voi määrittää oletustiliksi.

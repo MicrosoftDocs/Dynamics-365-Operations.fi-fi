@@ -26,16 +26,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kaavojen suunnittelutoiminto sähköisessä raportoinnissa
-<a id="formula-designer-in-electronic-reporting" class="xliff"></a>
+# <a name="formula-designer-in-electronic-reporting"></a>Kaavojen suunnittelutoiminto sähköisessä raportoinnissa
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER). Kun tietyn sähköisen asiakirjan muotoa suunnitellaan ER:ssä, käytössä ovat Microsoftin Excel-tyyppiset kaavat, joiden avulla tiedot voidaan muuntaa vastaamaan asiakirjan toteuttamis- ja muotoiluvaatimuksia. Tuettuja toimintotyyppejä on useita: teksti, päivämäärä ja aika, matemaattiset ja loogiset toiminnot, tiedot, tietotyyppien muunnos ja muut (liiketoiminnan toimialuekohtaiset toiminnot).
 
-Yleiskatsaus kaavan suunnittelutoimintoon
-<a id="formula-designer-overview" class="xliff"></a>
+<a name="formula-designer-overview"></a>Yleiskatsaus kaavan suunnittelutoimintoon
 -------------------------
 
 Sähköinen raportointi (ER) tukee kaavojen suunnittelutoimintoa. Tämän vuoksi voit määrittää suunnittelun yhteydessä lausekkeita, joita voidaan käyttää suorituksen aikana seuraavissa tehtävissä:
@@ -56,10 +54,8 @@ Kaavojen suunnittelutoiminnon sivu voidaan avata, kun teet seuraavaa:
 -   Prosessin hallinnan tarkistusten ehtojen määritys
 -   Prosessin hallinnan tarkistusten sanoman tekstin määritys
 
-## ER-kaavojen suunnitteleminen
-<a id="designing-er-formulas" class="xliff"></a>
-### Tietojen sidonta
-<a id="data-binding" class="xliff"></a>
+## <a name="designing-er-formulas"></a>ER-kaavojen suunnitteleminen
+### <a name="data-binding"></a>Tietojen sidonta
 
 ER-kaavojen suunnittelutoiminnon avulla voi määrittää lausekkeen, joka muuntaa tietolähteistä vastaanotetut tiedot niin, että tiedot voidaan täyttää tietojen käyttäjään suorituksen aikana:
 
@@ -69,13 +65,11 @@ ER-kaavojen suunnittelutoiminnon avulla voi määrittää lausekkeen, joka muunt
 
 Seuraavassa kuvassa esitellään tämäntyyppisen lausekkeen rakenne. Tässä esimerkissä lauseke palauttaa **Intrastat.AmountMST**-kentän arvon Finance and Operationsin **Intrastat**-taulusta sen jälkeen, kun arvo on pyöristetty kahteen desimaaliin. [![picture-expression-binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg) Seuraavassa kuvassa esitellään, miten tämäntyyppistä lauseketta käytetään. Tässä esimerkissä suunnitellun lausekkeen tulos täytetään **Veroraportointimalli**-tietomallin **Transaction.InvoicedAmount**-komponentilla. [![picture-expression-binding2](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg) Suorituksen aikana suunniteltu kaava, **ROUND (Intrastat.AmountMST, 2)**, pyöristää kunkin **Intrastat**-taulukon **AmountMST**-kentän arvon kahteen desimaaliin ja täyttää pyöristetyn arvon **Veroraportointi**-tietomallin **Transaction.InvoicedAmount**-komponenttiin.
 
-### Tietojen muotoilu
-<a id="data-formatting" class="xliff"></a>
+### <a name="data-formatting"></a>Tietojen muotoilu
 
 ER-kaavojen suunnittelutoiminnon avulla voi määrittää lausekkeen, joka muotoilee tietolähteistä vastaanotetut tiedot niin, että tiedot voidaan lähettää sähköisen asiakirjan luonnin osana. Jos määritettynä on muotoiluja, jotka on kohdistettava muodolle uudelleenkäytettävänä tyypillisenä sääntönä, voit käyttää muotoilua kerran muotoilukonfiguraatiossa nimettynä muunnoksena, jolla on muotoilulauseke. Tämän jälkeen nimetty muunnos voidaan linkittää useisiin muotokomponentteihin, joiden tulosten on oltava luodun lausekkeen mukaisesti muotoiltuja. Seuraavassa kuvassa esitellään tämäntyyppisen muotoilun rakenne. Tässä esimerkissä **TrimmedString**-muunnos ottaa saapuvat **merkkijono**-tyyppiset tiedot ja lyhentää ylimääräiset välilyönnit alusta ja lopusta, kun merkkijonon arvo palautetaan. [![picture-transformation-design](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Seuraavassa kuvassa esitellään, miten tämäntyyppistä muunnosta voidaan käyttää. Tässä esimerkissä useat muotokomponentit, jotka lähettävät tekstin tuloksena sähköisen asiakirjan luontiin suorituksen aikana, viittaavat **TrimmedString**-muunnokseen nimen mukaan. [![picture-transformation-usage](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Kun muodon komponentit viittaavat **TrimmedString** -muunnokseen (esimerkiksi **partyName** komponentti edellisessä kuvassa) tämä lähettää tekstin tuotoksena luotavaan asiakirjaan. Teksti ei sisällä edeltäviä eikä lopussa olevia välilyöntejä. Jos sinulla on muotoiluja, joita tulee kohdistaa yksitellen, voit käyttää muotoilua tietyn muotokomponentin sidonnan yksittäisenä lausekkeena. Seuraavassa kuvassa esitellään tämäntyyppinen lauseke. Tässä esimerkissä **partyType**-muotokomponentti on sidottu tietolähteeseen sen lausekkeen kautta, joka muuntaa saapuvat tiedot tietolähteen **Model.Company.RegistrationType**-kentästä isoilla kirjaimilla kirjoitetuksi tekstiksi ja lähettää tekstin tulosteena sähköiseen asiakirjaan. [![picture-binding-with-formula](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-### Prosessinkulun hallinta
-<a id="process-flow-control" class="xliff"></a>
+### <a name="process-flow-control"></a>Prosessinkulun hallinta
 
 ER-kaavojen suunnittelutoimintoa voidaan käyttää määritettäessä lausekkeita, joita käytetään hallitsemaan asiakirjojen luonnin prosessinkulkua. Voit tehdä seuraavat toimet:
 
@@ -98,8 +92,7 @@ Jokainen prosessinkulun hallinnan sääntö suunnitellaan yksittäiseksi tarkist
 
 [![picture-file-control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-### Perussyntaksi
-<a id="basic-syntax" class="xliff"></a>
+### <a name="basic-syntax"></a>Perussyntaksi
 
 ER-lausekkeet voivat sisältää joitakin seuraavia elementtejä tai kaikki seuraavat elementit:
 
@@ -109,13 +102,11 @@ ER-lausekkeet voivat sisältää joitakin seuraavia elementtejä tai kaikki seur
 -   Polut
 -   Toiminnot
 
-#### Vakiot
-<a id="constants" class="xliff"></a>
+#### <a name="constants"></a>Vakiot
 
 Voit käyttää teksti- ja numeerisia vakioita (arvoja, joita ei lasketa), kun suunnittelet lausekkeita. Esimerkiksi lauseke **VALUE ("100") + 20** käyttää numeerista vakiota 20 ja merkkijonovakiota "100". Se palauttaa numeerisen arvon **120**. ER-kaavojen suunnittelutoiminto tukee ohitusjärjestyksiä, joten voit määrittää, että osaa lausekkeen merkkijonosta tulee käsitellä eri tavalla. Esimerkiksi lauseke **"Leo Tolstoi ""Sota ja rauha"" Osa 1"** palauttaa tekstimerkkijonon **Leo Tolstoi "Sota ja rauha" Osa 1**.
 
-#### Operaattorit
-<a id="operators" class="xliff"></a>
+#### <a name="operators"></a>Operaattorit
 
 Seuraavassa taulukossa näkyvät aritmeettiset operaattorit, joita voi käyttää matemaattisten perusoperaattoreiden, kuten lisäyksen, vähennyksen, jakolaskun ja kertolaskun suorittamiseen.
 
@@ -143,8 +134,7 @@ Lisäksi &-merkkiä voidaan käyttää tekstin ketjutusoperaattorina, joka liitt
 |----------|-------------|------------------------------------------------|
 | &        | Liitä | "Ei tulostettavaa" & ": " & "tietueita ei löytynyt" |
 
-#### Operaattoreiden käsittelyjärjestys
-<a id="operator-precedence" class="xliff"></a>
+#### <a name="operator-precedence"></a>Operaattoreiden käsittelyjärjestys
 
 Järjestys, jossa yhdistelmälausekkeen osat lasketaan, on tärkeä. Esimerkiksi lausekkeen **1 + 4 / 2** tulos on erilainen riippuen siitä, suoritetaanko ensi yhteenlasku- vai jakotoiminto. Sulkeiden avulla voit määrittää, miten lauseke lasketaan. Jos haluat esimerkiksi osoittaa, että yhteenlaskutoiminto suoritetaan ensin, voit muokata edeltävän lausekkeen muotoon **(1 + 4) / 2**. Jos lausekkeen toimintojen suoritusjärjestystä ei ole määritetty eksplisiittisesti, järjestys perustuu oletusarvoiseen tukioperaattoreiden määrittämään käsittelyjärjestykseen. Seuraavassa taulukossa esitellään operaattorit ja niihin liitetyt käsittelyjärjestykset. Operaattorit, joilla on korkeampi käsittelyjärjestys (esimerkiksi 7) suoritetaan ennen operaattoreita, joilla on alempi käsittelyjärjestys (esimerkiksi 1).
 
@@ -160,8 +150,7 @@ Järjestys, jossa yhdistelmälausekkeen osat lasketaan, on tärkeä. Esimerkiksi
 
 Samalla rivillä olevilla operaattoreilla on sama käsittelyjärjestys. Jos lauseke sisältää useamman kuin yhden näistä operaattoreista, lauseke lasketaan vasemmalta oikealle. Esimerkiksi lauseke **1 + 6 / 2 \* 3 &gt; 5** palauttaa arvon **tosi**. Suosittelemme sulkeiden käyttämistä, kun lausekkeiden haluttu laskentajärjestys halutaan ilmaista ja kun lausekkeista halutaan tehdä helpommin luettavia ja ylläpidettäviä.
 
-#### Viitteet
-<a id="references" class="xliff"></a>
+#### <a name="references"></a>Viitteet
 
 Kaikkia nykyisen ER-komponentin (joko malli tai muoto) tietolähteitä, jotka ovat käytettävissä lausekkeen suunnittelun yhteydessä, voidaan käyttää nimettyinä viitteinä. Esimerkiksi nykyinen ER-tietomalli sisältää **ReportingDate**-tietolähteen, joka palauttaa **DATETIME**-tietotyypin arvon. Siihen voidaan viitata lausekkeessa, jotta kyseinen arvo saadaan muotoiltua oikein luotavassa asiakirjassa seuraavasti: **DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")**. Kaikilla viittaavan tietolähteen nimen merkit, jotka eivät ole kirjaimia, on oltava edessään puolilainausmerkki. Kaikilla viittaavan tietolähteen nimillä, jotka sisältävät ainakin yhden merkin, joka ei ole kirjain (välimerkit tai muut kirjoitetut merkit) on oltava puolilainausmerkkien sisällä. Seuraavassa on muutamia esimerkkejä:
 
@@ -180,22 +169,18 @@ Huomaa, että siirtäminen kyseisiin menetelmäparametreihin voidaan määrittä
 - Vain vakiot voidaan siirtää kyseisiin menetelmiin, ja niiden arvo määritetään suunnitteluvaiheessa.
 - Vain alkeis- eli perustietotyyppejä tuetaan kyseissä parametreissa (kuten kokonaisluku, reaaliluku, totuusarvo ja merkkijono).
 
-#### Polku
-<a id="path" class="xliff"></a>
+#### <a name="path"></a>Polku
 
 Kun lauseke viittaa rakenteelliseen tietolähteeseen, polun määritettä voidaan käyttää valittaessa tietolähteen tietty primitiivinen elementti. Piste (.) -merkkiä käytetään erottamaan rakenteisen tietolähteen yksittäiset elementit. Esimerkiksi nykyinen ER-tietomalli sisältää **InvoiceTransactions**-tietolähteen, joka palauttaa tietueluettelon. **InvoiceTransactions**-tietuerakenne sisältää **AmountDebit**- ja **AmountCredit**-kentän, jotka palauttavat numeerisia arvoja. Voit siis suunnitella seuraavan lausekkeen, jolla lasketaan laskutettu määrä: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**
 
-#### Toiminnot
-<a id="functions" class="xliff"></a>
+#### <a name="functions"></a>Toiminnot
 
 Seuraavassa osassa esitellään toiminnot, joita voidaan käyttää ER-lausekkeissa. Kaikkia lausekekontekstin (nykyinen ER-tietomalli tai ER-muoto) tietolähteitä, ja myös rajoituksia, voidaan käyttää kutsuvien toimintojen parametreina kutsutoimintoargumenttien luettelon mukaisesti. Esimerkiksi nykyinen ER-tietomalli sisältää **InvoiceTransactions**-tietolähteen, joka palauttaa tietueluettelon. **InvoiceTransactions**-tietuerakenne sisältää **AmountDebit**- ja **AmountCredit**-kentän, jotka palauttavat numeerisia arvoja. Voit siis laskea laskutetun määrän suunnittelemalla seuraavan lausekkeen, jossa käytetään sisäänrakennettua ER-pyöristystoimintoa: **PYÖRISTYS (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**
 
-## Tuetut toiminnot
-<a id="supported-functions" class="xliff"></a>
+## <a name="supported-functions"></a>Tuetut toiminnot
 Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käytettävissä ER-tietomallien ja ER-raporttien suunnitteluun. Toimintoluettelo ei ole pysyvä, vaan kehittäjät voivat laajentaa sitä. ER-kaavojen suunnittelutoiminto -ruudusta löydät käytettävissä olevien toimintojen luettelon.
 
-### Päivämäärä- ja aikatoiminnot
-<a id="date-and-time-functions" class="xliff"></a>
+### <a name="date-and-time-functions"></a>Päivämäärä- ja aikatoiminnot
 
 | Toiminto                                   | Kuvaus                                                                                                                                                                                                                                                                                                                                                      | Esimerkki                                                                                                                                                                                                                                                                                               |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -223,8 +208,7 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 | DATEVALUE (merkkijono, muoto, maa/alue)              | Palauttaa merkkijonon päivämääräesityksen käyttämällä määritettyä muotoa ja maata/aluetta.       | **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", “IT”)** palauttaa päivämäärän 21.1.2016 määritetyn mukautetun muodon ja maan/alueen mukaisesti. Tämän funktion kutsu **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", “EN-US”)** ilmoittaa poikkeuksen, sillä annettua merkkijonoa ei tunnisteta kelvolliseksi päivämääräksi.                                                                                                                       |
 | DATETIMEVALUE (merkkijono, muoto)              | Palauttaa merkkijonon päivämäärä- ja kellonaikaesityksen käyttämällä määritettyä muotoa.       | **DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")** palauttaa arvon 21.12.2016 2.55.00 määritetyn muokatetun muodon ja oletussovelluksen **EN-US**-maa-asetuksen mukaisesti.                                                                                                                       |
 | DATETIMEVALUE (merkkijono, muoto, maa/alue)              | Palauttaa merkkijonon päivämäärä- ja kellonaikaesityksen käyttämällä määritettyä muotoa ja maata/aluetta.       | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", “IT”)** palauttaa arvon 21.12.2016 2.55.00 määritetyn mukautetun muodon ja maan/alueen mukaisesti. Tämän funktion kutsu **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", “EN-US”)** ilmoittaa poikkeuksen, sillä annettua merkkijonoa ei tunnisteta kelvolliseksi päivämääräksi ja kellonajaksi.                                                                                                                       |
-### Luettelotoiminnot
-<a id="list-functions" class="xliff"></a>
+### <a name="list-functions"></a>Luettelotoiminnot
 
 <table>
 <colgroup>
@@ -364,19 +348,17 @@ Otsikko- ja Kuvaus-kentät palauttavat suorituksen aikana muodon kieliasetuksiin
 </tbody>
 </table>
 
-### Loogiset toiminnot
-<a id="logical-functions" class="xliff"></a>
+### <a name="logical-functions"></a>Loogiset toiminnot
 
 | Toiminto                                                                                | kuvaus                                                                                                                                                                                                                                                                     | Esimerkki                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | CASE (expression, option 1, result 1 \[, option 2, result 2\] ... \[, default result\]) | Laskee määritetyn lausekkeen arvon määritetyille vaihtoehtoisille valinnoille. Palauttaa sen valinnan tuloksen, joka on sama kuin lausekkeen arvo. Muussa tapauksessa palauttaa vaihtoehtoisesti syötetyn oletustuloksen (viimeinen parametri, jonka jälkeen ei tule valintaa). | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** palauttaa merkkijonon **TALVI**, kun nykyisen Finance and Operations -istunnon päivämäärä on loka- ja joulukuun välissä. Muussa tapauksessa se palauttaa tyhjän merkkijonon. |
 | IF (ehto, arvo 1, arvo 2)                                                        | Palauttaa määritetyn arvon 1, kun annetut ehdot täyttyvät. Muussa tapauksessa palautetaan arvo 2. Jos arvo 1 ja arvo 2 ovat tietueita tai tietueluetteloita, tuloksessa on vain kentät, jotka ovat molemmissa luetteloissa.                                                                     | **IF (1=2, "ehto täyttyy", "ehto ei täyty")** palauttaa merkkijonon **"ehto ei täyty"**.                                                                                                                                                      |
 | NOT (ehto)                                                                         | Palauttaa määritetyn ehdon käänteisen loogisen arvon.                                                                                                                                                                                                                   | **NOT (TOSI)** palauttaa arvon **EPÄTOSI**.                                                                                                                                                                                                                            |
-| AND (condition 1\[, condition 2, ...\])                                                 | Palauttaa arvon **TOSI**, jos *kaikki *määritetyt ehdot ovat tosia. Muussa tapauksessa palauttaa **EPÄTOSI**-arvon.                                                                                                                                                                                            | **AND (1=1, "a"="a")** palauttaa arvon **TOSI**. **AND (1=2, "a"="a")** palauttaa arvon **EPÄTOSI**.                                                                                                                                                                           |
-| OR (condition 1\[, condition 2, ...\])                                                  | Palauttaa arvon **EPÄTOSI**, jos *kaikki *määritetyt ehdot ovat epätosia. Palauttaa arvon **TOSI**, jos *jokin *määritetyistä ehdoista on tosi.                                                                                                                                                                 | **OR (1=2, "a"="a")** palauttaa arvon **TOSI**.                                                                                                                                                                                                                      |
+| AND (condition 1\[, condition 2, ...\])                                                 | Palauttaa arvon **TOSI**, jos *kaikki* määritetyt ehdot ovat tosia. Muussa tapauksessa palauttaa **EPÄTOSI**-arvon.                                                                                                                                                                                            | **AND (1=1, "a"="a")** palauttaa arvon **TOSI**. **AND (1=2, "a"="a")** palauttaa arvon **EPÄTOSI**.                                                                                                                                                                           |
+| OR (condition 1\[, condition 2, ...\])                                                  | Palauttaa arvon **EPÄTOSI**, jos *kaikki* määritetyt ehdot ovat epätosia. Palauttaa arvon **TOSI**, jos *jokin* määritetyistä ehdoista on tosi.                                                                                                                                                                 | **OR (1=2, "a"="a")** palauttaa arvon **TOSI**.                                                                                                                                                                                                                      |
 
-### Matemaattinen toiminto
-<a id="mathematical-functions" class="xliff"></a>
+### <a name="mathematical-functions"></a>Matemaattinen toiminto
 
 <table>
 <colgroup>
@@ -448,16 +430,14 @@ Otsikko- ja Kuvaus-kentät palauttavat suorituksen aikana muodon kieliasetuksiin
 
 
 
-### Tallennustoiminnot
-<a id="record-functions" class="xliff"></a>
+### <a name="record-functions"></a>Tallennustoiminnot
 
 | Toiminto             | kuvaus                                                                                                                                                                                                                                     | Esimerkki                                                                                                                                             |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | NULLCONTAINER (luettelo) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen. **Huomautus:** Tämä toiminto on vanhentunut. Käytä sen sijaan **EMPTYRECORD**-toimintoa.                                                                                  | **NULLCONTAINER (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
 | EMPTYRECORD (tietue) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen. **Huomautus:** **Tyhjä** tietue on tietue, jonka kaikilla kentillä on tyhjä arvo (**0** \[nolla\] numeroille, tyhjä merkkijono jne.). | **EMPTYRECORD (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla.   |
 
-### Tekstitoiminnot
-<a id="text-functions" class="xliff"></a>
+### <a name="text-functions"></a>Tekstitoiminnot
 
 <table>
 <colgroup>
@@ -589,8 +569,7 @@ Reaali-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.
 **TEXT (1/3) palauttaa arvon 0,33**. |
 | QRCODE (merkkijono) | Palauttaa annetun merkkijonon QR-koodin kuvan base64-binaarimuodossa. | **QRCODE (“Sample text”)** palauttaa arvon **U2FtcGxlIHRleHQ=**.   |
 
-### Tietojen keruutoiminnot
-<a id="data-collection-functions" class="xliff"></a>
+### <a name="data-collection-functions"></a>Tietojen keruutoiminnot
 
 | Toiminto             | kuvaus                                                                                                                                                                                                                                     | Esimerkki                                                                                                                                             |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -604,8 +583,7 @@ Reaali-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.
 
 
 
-### Muut (liiketoiminnan toimialuekohtaiset) toiminnot
-<a id="other-business-domainspecific-functions" class="xliff"></a>
+### <a name="other-business-domainspecific-functions"></a>Muut (liiketoiminnan toimialuekohtaiset) toiminnot
 
 | Toiminto                                                                         | kuvaus                                                                                                                                                                                                                                                        | Esimerkki                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -622,13 +600,11 @@ Reaali-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.
 | TABLENAME2ID (merkkijono)                                                       | Palauttaa annetun taulun nimen kokonaislukumuodon.                                                                                                                                                                      | **TABLENAME2ID (“Intrastat”)** palauttaa arvon **1510**.                                                                                                                                                                                                                                                                   |
 | ISVALIDCHARACTERISO7064 (merkkijono)                                                       | Palauttaa totuusarvon **TOSI**, kun annettu merkkijono vastaa kelvollista kansainvälistä tilinumeroa (IBAN). Palauttaa muussa tapauksessa totuusarvon **EPÄTOSI**.                                                                                                                                                                      | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** palauttaa arvon **TOSI**. **ISVALIDCHARACTERISO7064 ("AT61")** palauttaa arvon **EPÄTOSI**.                                                                                                                                                                                                                                                                   |
 
-### Toimintojen luettelon laajennus
-<a id="functions-list-extension" class="xliff"></a>
+### <a name="functions-list-extension"></a>Toimintojen luettelon laajennus
 
 ER:n avulla on mahdollista laajentaa luetteloa toiminnoista, joita käytetään ER-lausekkeissa. Tähän tarvitaan jonkin verran suunnittelutyötä. Lisätietoja on kohdassa [Sähköisen raportoinnin toimintojen luettelon laajentaminen](general-electronic-reporting-formulas-list-extension.md).
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)

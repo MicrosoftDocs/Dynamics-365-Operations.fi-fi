@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kyselylomakkeet
-<a id="questionnaires" class="xliff"></a>
+# <a name="questionnaires"></a>Kyselylomakkeet
 
 Tässä aiheessa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia. 
 
@@ -50,8 +49,7 @@ Seuraavassa taulukossa on linkkejä kyselylomakkeen ydintehtävien lisätietoihi
 
 
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Kyselylomakkeiden suunnitteleminen](design-questionnaires.md)

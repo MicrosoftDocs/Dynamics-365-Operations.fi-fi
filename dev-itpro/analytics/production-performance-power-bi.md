@@ -22,15 +22,13 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Tuotannon suorituskyvyn Power BI -sisältö
-<a id="production-performance-power-bi-content" class="xliff"></a>
+# <a name="production-performance-power-bi-content"></a>Tuotannon suorituskyvyn Power BI -sisältö
 
 [!include[banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, mitä **tuotannon suorituskyvyn** Microsoft Power BI -sisältö sisältää. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Yleiskuvaus
 
 **Tuotannon suorituskyvyn** Power BI -sisältö on suunnattu tuotannon esimiehille ja henkilöille, jotka vastaavat organisaatiossa tuotannonhallinnasta.
 
@@ -42,12 +40,10 @@ Voit myös analysoida tuotannon variansseja Power BI -sisällön avulla. Tuotann
 
 **Tuotannon suorituskyvyn** Power BI -sisältö sisältää tuotanto- ja erätilauksista peräisin olevia tietoja. Raporteissa ei ole kanban-tuotantoihin liittyviä tietoja.
 
-## Power BI -sisällön käyttö
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 -päivitys, **tuotannon suorituskyvyn** Power BI -sisältö näytetään **Tuotannon suorituskyky** -sivulla (**Tuotannonhallinta** > **Kyselyt ja raportit** > **Tuotannon suorituskyvyn analyysi** > **Tuotannon suorituskyky**). 
 
-## Mittareita, jotka sisältyvät Power BI -sisältöön
-<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 
 **Tuotannon suorituskyvyn** Power BI -sisältö sisältää raporttisivujoukon. Jokainen sivu koostuu joukosta mittareita, jotka ovat visualisoitu kaavioiden, ruutujen ja taulukoiden muodossa.
 
@@ -62,8 +58,7 @@ Seuraavassa taulukossa on sisältyvien visualisointien yhteenveto.
 | Viallisten trendi resurssin mukaan                  | Viallisten osuus (ppm) käsitellyn määrän mukaan | |
 | Työtilausten kustannuslaskennan tuotannon varianssit | <ul><li>Tuotannon varianssi päivämäärän ja kustannusryhmän tyypin mukaan</li><li>Tuotannon varianssi toimipaikan ja kustannusryhmän tyypin mukaan</li><li>10 merkittävintä tuotetta, jolla on kielteinen tuotannon varianssi</li><li>10 merkittävintä kielteistä tuotannon varianssia resurssin mukaan</li></ul> | <ul><li>Toteutunut kustannus</li><li>Tuotannon varianssi</li><li>Tuotannon varianssi – %</li></ul> |
 
-## Power BI -sisällön laajentaminen
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Power BI -sisällön laajentaminen
 Jos käytät Microsoft Dynamics Lifecycle Servicesin (LCS) sisältöpaketteja, voit tehdä erinomaisia analyyseja henkilöille, jotka eivät käytä Microsoft Dynamics 365:tä. Voit muokata näitä sisältöpaketit sisältämään muita raportteja ja visuaalisia tietoja ja julkaista sitten sisältöpaketit analysoitavaksi Power BI.com -vuokraajassa.
 
 **Tuotannon suorituskyvyn** Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
@@ -73,8 +68,7 @@ Muista ladata käyttämääsi Dynamics 365 -versiota vastaava **tuotannon suorit
 > [!NOTE]
 > Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, Power BI -sisällön edellytyksenä on KB 4011327. Kun olet kirjautunut LCS:ään, voit siirtyä tietämyskantaan osoitteessa https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
-## Tietomallin ja yksiköiden tiedot
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
 Seuraavia tietoja käytetään **Tuotannon suorituskyvyn** Power BI -sisällön raporteissa. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja yksikkösäilöstä on ohjeaiheessa [Power BI:n ja yksikkösäilön integrointi](power-bi-integration-entity-store.md).
 
@@ -144,8 +138,7 @@ Seuraavassa taulukossa on tärkeimmät koostemittojen osittamisen suodattimina k
 | Resurssit                 | Resurssin tunnus, resurssin nimi, resurssin tyyppi ja resurssiryhmä |
 | Tuotteet                  | Tuotenumero, tuotteen nimi, nimiketunnus ja nimikeryhmä         |
 
-## Lisäresurssit
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Lisäresurssit
 
 Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:
 

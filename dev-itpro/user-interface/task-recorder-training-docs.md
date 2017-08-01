@@ -27,8 +27,7 @@ ms.lasthandoff: 06/17/2017
 
 ---
 
-# Dokumentaation tai koulutuksen luominen tehtävätallenteiden avulla
-<a id="create-documentation-or-training-using-task-recordings" class="xliff"></a>
+# <a name="create-documentation-or-training-using-task-recordings"></a>Dokumentaation tai koulutuksen luominen tehtävätallenteiden avulla
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Tässä ohjeaiheessa kerrotaan, mitä tehtävien tallennustoiminto ja tehtäväo
 > [!IMPORTANT]
 > Dynamics 365 for Talentissa ei voi myöskään luoda mukautettuja tehtäväoppaita. Talentin ohjejärjestelmä yhdistetään automaattisesti tuotteen tehtäväoppaisiin. 
 
-Lisätietoja tehtävän tallennustoiminnosta
-<a id="learn-about-task-recorder" class="xliff"></a>
+<a name="learn-about-task-recorder"></a>Lisätietoja tehtävän tallennustoiminnosta
 -------------------------
 
 Tehtävän tallennustoiminto on työkalu, jolla voi tallentaa tuotteen käyttöliittymässä suoritetut toiminnot. Kun käytät tehtävän tallennustoimintoa, kaikki palvelimen avulla käyttöliittymässä suoritettavat tehtävät, kuten arvojen lisääminen, asetusten muuttaminen ja tietojen poistaminen, tallennetaan. Kaikkia tallennettuja vaiheita kutsutaan *tehtävätallenteeksi*. Tehtävätallenteita voidaan käyttää esimerkiksi seuraavilla tavoilla:
@@ -50,8 +48,7 @@ Tehtävän tallennustoiminto on työkalu, jolla voi tallentaa tuotteen käyttöl
 
 Voit luoda omia tehtävätallenteita, toistaa Microsoftin tehtävätallenteita tai muokata Microsoftin toimittamia tehtävätallenteita omaa konfiguraatiota vastaaviksi. Lisätietoja tehtävien tallennustoiminnosta on kohdassa [Tehtävien tallennustoiminto](task-recorder.md).
 
-## Tehtävätallenteen suunnitteleminen
-<a id="plan-your-task-recording" class="xliff"></a>
+## <a name="plan-your-task-recording"></a>Tehtävätallenteen suunnitteleminen
 Pidä seuraavat tiedot mielessäsi, kun olet luomassa uutta tehtävätallennetta tai muokkaamassa Microsoftin tehtävätallennetta.
 
 -   Suunnittele tallenne samaan tapaan kuin video. Tee päätökset etukäteen.
@@ -101,12 +98,10 @@ Ilmoitusten huomautus näyttää tältä tehtäväoppaan kuplassa.
 
 **Päätä, missä kohtaa käyttöliittymää tallentaminen alkaa** Sivu, jolla olet tehtävätallenteen tallentamisen alkaessa, vaikuttaa siihen, millä sivulla tehtävän ohjaus näytetään. Jos haluat tehtävätallenteen olevan esimerkiksi ohjeruudussa, kun käyttäjä valitsee Kirjanpitoparametrit-sivun, sinun on aloitettava tallentaminen Kirjanpitoparametrit-sivulta. **Tallenna tallenteet .axtr-tiedostoina** Kun olet luonut tehtävätallenteen tai muokannut sitä, näkyviin tulee useita tallenteen lataus- tai tallennusvaihtoehtoja. Voit ladata tiedoston tehtävätallenteen pakettina (.axtr) tai käsittelemättömänä tallennetiedostona (.xml) tai Word-asiakirjana tai tallentaa tiedoston LCS-kirjastoon. Tehtävätallenne kannattaa aina tallentaa tehtävätallenteen pakettitiedostona (.axtr). Se helpottaa tiedoston ylläpitoa, jos menettelyitä tai huomautuksia on muutettava myöhemmin. Jos haluat noutaa tiedoston Word-asiakirjana, tallenna se myös silloin tehtävätallenteen pakettitiedostona.
 
-## Tehtävätallenteen luominen
-<a id="create-your-task-recording" class="xliff"></a>
+## <a name="create-your-task-recording"></a>Tehtävätallenteen luominen
 Yksityiskohtaiset vaiheet löytyvät kohdasta [Tehtävätallenteen luominen](task-recorder.md).
 
-## Microsoftin tehtävätallenteiden kopioiminen ja mukauttaminen
-<a id="copy-and-customize-microsofts-task-recordings" class="xliff"></a>
+## <a name="copy-and-customize-microsofts-task-recordings"></a>Microsoftin tehtävätallenteiden kopioiminen ja mukauttaminen
 Voit ladata ja muokata Microsoftin tehtävätallenteita, kun haluat käyttää niitä omassa dokumentaatiossa tai koulutusmateriaaleissa. Lataa Microsoftin tehtävätallenteet seuraavien vaiheiden avulla:
 
 1.  Avaa tehtävien tallennustoiminto Tehtävän tallennustoiminto sijaitsee **asetusvalikossa**.
@@ -121,12 +116,10 @@ Voit ladata ja muokata Microsoftin tehtävätallenteita, kun haluat käyttää n
 10. Kun olet päässyt tallenteen toistossa loppuun, valitse näytön yläosassa olevan tehtävän tallennustoiminnon palkissa **Pysäytä**.
 11. Määritä tehtävätallenteen tallennustapa.
 
-## Tehtävätallenteiden sisällyttäminen ohjeruutuun
-<a id="include-your-task-recordings-in-the-help-pane" class="xliff"></a>
+## <a name="include-your-task-recordings-in-the-help-pane"></a>Tehtävätallenteiden sisällyttäminen ohjeruutuun
 Voit näyttää omat mukautetut tehtävätallenteen ohjeruudussa tehtävän ohjauksina toistettavina tai tekstinä tarkasteltavina. Tallenna tehtävätallenteet ensin omaan BPM-kirjastoon ja päivitä ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään.](../get-started/help-connect.md)
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Ohjeen yleiskatsaus](..\get-started\help-overview.md)

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Hyvitykset ja perinnät myyntireskontrassa
-<a id="credit-and-collections-in-accounts-receivable" class="xliff"></a>
+# <a name="credit-and-collections-in-accounts-receivable"></a>Hyvitykset ja perinnät myyntireskontrassa
 
 [!include[banner](../includes/banner.md)]
 
@@ -47,8 +46,7 @@ Ennen kuin aloitat perinnän määrittämisen tai sen kanssa työskentelyn, on h
 
 Seuraavissa osissa kuvataan kutakin konseptia.
 
-## Asiakkaan erääntymistilannevedokset
-<a id="customer-aging-snapshots" class="xliff"></a>
+## <a name="customer-aging-snapshots"></a>Asiakkaan erääntymistilannevedokset
 Erääntymistilannevedos sisältää asiakkaan lasketut erääntyneet saldot kyseisenä ajankohtana. Nämä tiedot näkyvät Erääntyneet saldot- ja Perintä-sivulla. Erääntymistilannevedos on luotava ennen kuin voit tarkastella Perintä-luettelosivujen tietoja. 
 
 Kunkin asiakkaan erääntymistilannevedos sisältää erääntymistilanteen otsikko- ja erittelytietueet, jotka vastaavat kutakin erääntymiskautta erääntymiskauden määrityksessä. 
@@ -57,18 +55,15 @@ Erääntymistilannevedoksen otsikko sisältää asiakkaan tilillä erääntyneen
 
 Erääntymistilannevedoksen erittelytietue luodaan jokaiselle erääntymiskauden määrittelyyn sisältyvälle erääntymiskaudelle. Kunkin erääntymistilannevedoksen erittelytietue sisältää erääntymiskauden tunnuksen sekä tapahtumien kokonaissumman erääntymiskauden päivämääriltä. Tapahtumat määritetään erääntymiskaudelle, kuten 30 päivää myöhässä. Päivämäärä on suhteessa Erääntyy-päivämäärään, joka määritetään erääntymistilannevedosta luotaessa. Nämä tiedot näytetään Erääntyneet saldot -luettelosivulla sekä ja Perintä-sivun Erääntyneet saldot -tietoruudussa.
 
-##  Perinnän asiakaspoolit 
-<a id="collections-customer-pools" class="xliff"></a>
+## <a name="collections-customer-pools"></a> Perinnän asiakaspoolit 
 Asiakaspoolit ovat kyselyitä, jotka määrittävät asiakastietueiden joukkoa, joka näytetään ja jota hallitaan kokoelmia tai erääntymisprosesseja varten. Voit suodattaa Erääntyneet saldot-, Perintätoimet- ja Perintätapaukset-luettelosivujen tietoja asiakaspoolien avulla. Voit suodattaa myös erääntymistilannevedoksen luontiin sisältyneet asiakastilit asiakaspoolien avulla.
 
-## Perimisasiamiehet
-<a id="collections-agents" class="xliff"></a>
+## <a name="collections-agents"></a>Perimisasiamiehet
 Microsoft Dynamics 365 for Finance and Operationsin käyttäjät voivat tarkastella oletusarvoisesti kaikkia asiakastietoja perinnän luettelosivuilla. Voit käyttää perimisasiamiestietueita määrittämään asiakaspoolit, jotka ovat saatavilla tietojen suodattamiseen perinnän luettelosivuilla ja Perintä-sivulle. 
 
 Perimisasiamies on henkilö, joka työskentelee asiakkaiden kanssa varmistaakseen, että maksut peritään ajoissa. Finance and Operationsin perimisasiamiehet ovat työtekijöitä, jotka on määritetty käyttäjille Käyttäjän määritys -sivulla.
 
-##  Perinnän luettelosivut 
-<a id="collections-list-pages" class="xliff"></a>
+## <a name="collections-list-pages"></a> Perinnän luettelosivut 
 Seuraavat luettelosivut ovat hyödyllisiä perintätietojen järjestämisessä.
 -   Erääntyneet saldot – Sarakkeet luettelosivulla näyttävät asiakkaan saldot ja erääntyneet summat erääntymiskauden mukaan. Nämä tiedot on tallennettu erääntymistilannevedokseen. Erääntymiskaudet on määritelty käytetyn erääntymiskauden määritelmän mukaan. Erääntymiskauden määritelmä on otettu asiakkaspoolista, jos sellainen on määritetty poolikyselylle. Jos asiakaspoolilla ei ole erääntymiskausimääritelmää, käytetään Myyntireskontran parametrit -sivulla määritettyä oletuserääntymiskauden määritelmää. Jos oletuserääntymiskauden määritystä ei ole määritetty, käytetään Erääntymiskausien määritykset -sivun ensimmäistä erääntymiskausimääritystä.
 -   Perintätehtävät – Luettelosivun sarakkeissa näytetään tehtävät, jotka on tunnistettu perintätehtäviksi. Nämä tehtävät luodaan Perintä-sivulla. Aktiviteettien avulla seurataan työtä, joka liittyy perimisiin.
@@ -81,8 +76,7 @@ Seuraavat luettelosivut ovat hyödyllisiä perintätietojen järjestämisessä.
 <li>Jos käyttäjä on määritetty perimisasiamieheksi, ainoastaan kyseiselle perimisasiamiehelle valitut poolit ovat saatavilla luettelosivulla. Jos Anna edustajan tarkastella kaikkia asiakaspooleja -asetus on valittuna perimisasiamiehen Perimisasiamies-sivulla, kyseinen edustaja voi käyttää kaikkia pooleja.</li>
 
 
-##  Perintä-sivu
-<a id="collections-page" class="xliff"></a>
+## <a name="collections-page"></a> Perintä-sivu
 Perintä-sivulla voit tarkastella ja hallita asiakkaan perintätietoja, tehtäviä ja tapauksia sekä suorittaa niille toimenpiteitä. 
 
 Ylemmässä ruudussa näytetään valitun asiakkaan tapaukset. Keskiruutu näyttää asiakkaan tapahtumat. Alemmassa ruudussa näkyvät asiakasta koskevat tehtävät. Voit luoda perintätapauksia seurataksesi yhden tai useamman tapahtuman ja tehtävän perintätietoja. Ylä- ja alaruutujen tietoja voidaan suodattaa tapauskohtaisesti. 
@@ -91,14 +85,12 @@ Valitun asiakkaan erääntyneet saldot ja luottorajatiedot näkyvät tietoruudui
 
 Toimintoruutu sisältää painikkeita, joissa näytetään valittuun asiakkaaseen, tapaukseen, tapahtumaan tai tehtävään liittyviä tietoja. Voit myös suorittaa yleisiä toimintoja, kuten tapahtuman perintätilan muuttaminen, sähköpostiviestien lähettäminen sähköpostitarjoaja-integraation välityksellä, asiakkaiden hyvittäminen, NSF-maksujen käsittely ja perintäkelvottomien saldojen poiskirjaaminen.
 
-##  Korkojen ja kulujen peruuttaminen, palauttaminen tai kääntäminen 
-<a id="waive-reinstate-or-reverse-interest-and-fees" class="xliff"></a>
+## <a name="waive-reinstate-or-reverse-interest-and-fees"></a> Korkojen ja kulujen peruuttaminen, palauttaminen tai kääntäminen 
 Voit peruuttaa, palauttaa tai kääntää kokonaisia korkolaskuja tai niiden osana olevia kuluja ja tapahtumakorkoja. Voit tehdä tämän Kaikki asiakkaat -luettelosivun toimintoruudun Perintä-välilehdeltä napsauttamalla kohtia Korkolasku, Tapahtumakorko tai Kulu. 
 
 Nämä muutokset vaikuttavat vain korkolaskuihin sekä niihin sisältyviin korkoihin ja kuluihin. Poista kaikki maksut, jotka asiakas on velkaa kohdan "Luo poistotapahtumia yhdellä askeleella" vaiheiden avulla.
 
-## Luo poistotapahtumat
-<a id="create-writeoff-transactions" class="xliff"></a>
+## <a name="create-writeoff-transactions"></a>Luo poistotapahtumat
 Voit kirjata epävarmat saatavat pois napsauttamalla Kirjaa pois -painiketta Perintä-lomakkeessa tai Erääntyneet saldot-, Asiakkaat- ja Avoimet asiakkaan laskut -luettelosivuilla. 
 
 Kun kirjaat pois asiakkaan tapahtumia, kaikki asiakkaan tapahtumat merkitään automaattisesti selvitettäväksi. Poiskirjattava summa riippuu merkittyjen tapahtumien nettosummasta. Poiskirjaustapahtuma luodaan yleisessä kirjauskansiossa ja se voi sisältää enintään kolmen tyyppisiä kirjauskansion rivejä.

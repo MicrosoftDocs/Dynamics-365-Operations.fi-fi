@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Valikoimien määrittäminen
-<a id="set-up-assortments" class="xliff"></a>
+# <a name="set-up-assortments"></a>Valikoimien määrittäminen
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Tässä artikkelissa kuvataan, mikä valikoima on, ja kerrotaan, kuinka voit mä
 
 Valikoima on kokoelma toisiinsa liittyviä tuotteita, jotka määritetään vähittäismyynnin kanavalle, kuten myymälälle tai verkkokaupalle. Voit käyttää valikoimia tunnistamaan tuotteet, jotka ovat myynnissä jokaisessa myymälässä. Valikoimaan voi sisältyä tuoteluokkia. Siispä kaikki tiettyyn luokkaan määritetyt tuotteet sisältyvät valikoimaan. Valikoimaan voi myös sisältyä tiettyjä tuotteita ja tuotevariantteja. Valikoiman määrittämällä voit määrittää tuhansia tuotteita vähittäismyynnin kanaviisi yhdellä kertaa juuri sellaisena yhdistelmänä, joka liikkeissäsi tarvitaan. Voit määrittää niin monta tuotevalikoimaa kuin on tarpeen. Kukin tuote voi kuulua yhteen tai useampaa valikoimaan, ja jokaisen valikoiman voi määrittää yhteen tai useampaan vähittäismyynnin kanavaan. Voit esimerkiksi määrittää yhden valikoiman, joka sisältää joukon perustuotteita. Tämä valikoima kuuluu kaikille myymälöille. Voit sitten määrittää toisen valikoiman, joka sisältää vain suuria urheiluvälineitä. Vain suuremmat myymäläsi saavat tämän valikoiman. Seuraavassa kaaviossa näkyy, kuinka tuotteet voi liittää valikoimiin, ja valikoimat voi liittää vähittäismyynnin kanaviin. ![Tuotevalikoimien suhteet](./media/assortments_relationship.gif)
 
-## Edellytykset
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Edellytykset
 Ennen kuin voit määrittää valikoiman ja liittää sen vähittäismyynnin kanavaan, sinun on suoritettava seuraavat tehtävät.
 
 | Tehtävä                              | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -49,8 +47,7 @@ Ennen kuin voit määrittää valikoiman ja liittää sen vähittäismyynnin kan
 | Määritä tuotteet.                  | Ennen kuin voit lisätä tuotteita valikoimaan, sinun on lisättävä tuotteet Microsoft Dynamics 365 for Retail. Voit lisätä tuotteet manuaalisesti tai voit tuoda ne toimittajalta. Kun olet lisännyt tuotteet, ne tulee vapauttaa yritykselle. Vain tuotteet, jotka on vapautettu yritykselle, voidaan tuoda vähittäismyyntikanavien saataville. Tuotteet, joita ei ole vielä vapautettu yrityksen käyttöön voidaan lisätä valikoimaan, ja valikoima voidaan hyväksyä. Vasta kun tuotteet on vapautettu yritykselle, voidaan ne tuoda vähittäismyyntikanavien saataville.                                                                                                                                                                                                                                                                                     |
 | Määritä luokkahierarkia.      | Voit vähittäismyynnin tuotteita luodessasi ryhmitellä ja luokitella ne käyttämällä luokkahierarkia-ominaisuutta. Voit luoda yhden ydinhierarkian, jonka avulla voit ryhmitellä ja luokitella kaikki vähittäismyyntikanaviesi kautta tarjoamasi tuotteet. Voit myös luoda erillisiä, täydentäviä luokkahierarkioita ryhmitelläksesi tai luokitellaksesi tuotteesi erityistarkoituksiin, kuten kampanjoihin tai valikoimiin. Luokkahierarkioiden avulla voit määrittää kaikki tietyn luokan tuotteet valikoimaan. Kaikki tuotteet, jotka lisätään valikoimaan sisältyvään luokkaan sisältyvät automaattisesti valikoimaan. Seuraavan kerran, kun vähittäismyynnin valikoiman ajastustyö suoritetaan, nämä tuotteet tulevat saataville vähittäismyynnin kanaviin, joihin valikoima on määritetty.                                            |
 
-## Valikoiman määrittäminen
-<a id="setting-up-an-assortment" class="xliff"></a>
+## <a name="setting-up-an-assortment"></a>Valikoiman määrittäminen
 Kun olet määrittänyt edellytykset, voit luoda valikoiman ja määrittää sen vähittäismyynnin kanaville. Kun määrität valikoimaa, tee seuraavat tehtävät:
 
 1.  Luo uusi valikoima tai kopioi aiemmin luotu valikoima.

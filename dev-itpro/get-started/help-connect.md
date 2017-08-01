@@ -27,23 +27,20 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Yhdistäminen ohjejärjestelmään
-<a id="connect-the-help-system" class="xliff"></a>
+# <a name="connect-the-help-system"></a>Yhdistäminen ohjejärjestelmään
 
 [!include[banner](../includes/banner.md)]
 
 
 Tämä ohjeaihe kuvaa Finance and Operationsin ohjejärjestelmän komponentit. Se tarjoaa näiden komponenttien yhdistämistapojen yleiskatsauksen ja mukautetun ohjeen luomisen yhteenvedon. 
 
-## Ohjearkkitehtuuri
-<a id="help-architecture" class="xliff"></a>
+## <a name="help-architecture"></a>Ohjearkkitehtuuri
 Seuraavassa kuvassa on osa Finance and Operationsin ohjejärjestelmästä. Tuotteen ohjejärjestelmä käyttää Dynamics 365 for Finance and Operations -sivuston (https://docs.microsoft.com) artikkeleja sekä Lifecycle Servicesin (LCS) liiketoimintaprosessin mallintajaan tallennettuja tehtäväoppaita. 
 > [!NOTE]
 > Jos kaaviossa on ominaisuuden vieressä tähtimerkki (\*), ominaisuutta suunnitellaan mutta se ei ole vielä käytössä. [![Ohjearkkitehtuuri](./media/help-architecture.png)](./media/help-architecture.png)
 
 
-## Yhteyden muodostaminen ohjejärjestelmään
-<a id="connecting-the-help-system" class="xliff"></a>
+## <a name="connecting-the-help-system"></a>Yhteyden muodostaminen ohjejärjestelmään
 > [!NOTE]
 > **Tehtäväoppaat**-välilehti ei ole tällä hetkellä käytettävissä Microsoft Dynamics 365 for Talentissa ja Microsoft Dynamics 365 for Retailissa. Tämän toiminnon käyttöönottamista myöhemmissä versiossa ollaan toteuttamassa. Perustoimintoja koskevat Talentin aloituskokemuksen tehtäväoppaat ovat edelleen käytettävissä. Retailin ja Talentin menettelyohje on saatavana myös docs.microsoft.com-sivustossa ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)).
  
@@ -63,8 +60,7 @@ Järjestelmänvalvojat voivat muodostaa **Järjestelmäparametrit**-lomakkeella 
 
 Kun olet suorittanut nämä vaiheet, voit avata **Ohje**-ruudun ja valita **Tehtävän ohjaukset** -välilehden. Näet nyt sitä sivua koskevat tehtäväoppaat, jolla nyt olet Finance and Operationsissa. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
 
-### Käännettyjen tehtäväoppaiden näyttäminen
-<a id="showing-translated-task-guides" class="xliff"></a>
+### <a name="showing-translated-task-guides"></a>Käännettyjen tehtäväoppaiden näyttäminen
 
 Käännetyt tehtäväoppaat toimitettiin toukokuun 2016 yhdistetyssä APQC-kirjastossa ja käytön aloituskirjastossa. Jos haluat avata lokalisoidun tehtäväoppaan ohjeen Finance and Operationsissa, varmista, että olet muodostanut yhteyden toukokuun kirjastoon. Kullekin käyttäjälle avautuvan tehtäväoppaan kieli määräytyy kieliasetuksissa, jotka on valittu kohdassa **Asetukset** &gt; **Asetukset**. 
 
@@ -73,14 +69,12 @@ Käännetyt tehtäväoppaat toimitettiin toukokuun 2016 yhdistetyssä APQC-kirja
 > -   Jos tehtäväopas on käännetty, tehtäväopas avautuu valitsemallasi kielellä.
 > -   Jos tehtäväopasta ei ole vielä käännetty, vain osa tekstistä (ohjausobjektien teksti) näkyy valitun kielisenä.
 
-## Mukautetun ohjeen luominen
-<a id="creating-custom-help" class="xliff"></a>
+## <a name="creating-custom-help"></a>Mukautetun ohjeen luominen
 Voit luoda oman mukautetun Finance and Operations- ja Retail -ohjeen luomalla sille tehtävätallenteita ja tallentamalla ne LCS:n liiketoimintaprosessien kirjastoon. Mukautettuja tehtäväoppaita ei voi luoda Talentissa. 
 
 Kumppanit voivat puolestaan siirtää kirjasto yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Voit myös kopioida yhdistetyn yleisen APQC-kirjaston sekä avata oman kopion, avata tehtävätallenteet sieltä, muokata niitä ja tallentaa sitten muutetut tallenteet. Lisätietoja on artikkelissa [Ohjeistuksena tai koulutuksena käytettävien tehtävätallenteiden luominen](../user-interface/task-recorder.md).
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Yleistä Ohjeesta](help-overview.md)

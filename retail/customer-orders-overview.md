@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Asiakastilausten yleiskatsaus
-<a id="customer-orders-overview" class="xliff"></a>
+# <a name="customer-orders-overview"></a>Asiakastilausten yleiskatsaus
 
 [!include[banner](includes/banner.md)]
 
@@ -44,8 +43,7 @@ Monikanavaisessa vähittäismyyntimaailmassa monet vähittäiskauppiaat tarjoava
 
 Vähittäiskauppiaat käyttävät asiakastilauksia myös pienentääkseen menetettyä myyntiä, jota varaston tyhjeneminen voi muuten aiheuttaa, koska kauppatavara voidaan toimittaa tai kerätä eri aikaan tai eri paikasta.
 
-## Määritä asiakastilaukset
-<a id="set-up-customer-orders" class="xliff"></a>
+## <a name="set-up-customer-orders"></a>Määritä asiakastilaukset
 Seuraavassa on joitakin parametreja, jotka voidaan asettaa **Vähittäismyynnin parametrit** -sivulla määrittääksesi, miten asiakkaiden tilaukset suoritetaan:
 
 -   **Oletuskäsirahaprosentti** – määritä summa, joka asiakkaan on maksettava talletuksena ennen tilauksen vahvistamista. Oletuskäsirahaprosentti lasketaan prosenttiosuutena tilauksen arvosta. Oikeuksista riippuen myymälän johtaja saattaa pysytä ohittamaan summan käyttämällä asetusta **Talletuksen ohitus**.
@@ -57,10 +55,8 @@ Seuraavassa on joitakin parametreja, jotka voidaan asettaa **Vähittäismyynnin 
     -   Kulut otetaan käyttöön myyntitilauksen otsikon tasolla ja kun tuotelinjan jokin määrä palautetaan, suurinta tuotteille ja määrälle sallittua toimitusmaksun palautusta ei voi määrittää tavalla, joka toimii kaikille vähittäismyynnin asiakkaille.
     -   Kuljetusmaksut syntyvät toimituksen kaikissa esiintymissä. Jos asiakas palauttaa tuotteet useita kertoja ja jälleenmyyjän käytäntö määrittää, että vähittäismyyjä vasta toimituskustannuksista, palautettavat kuljetusmaksut ovat enemmän kuin todelliset kuljetusmaksut.
 
-## Asiakastilausten tapahtumien työnkulku
-<a id="transaction-flow-for-customer-orders" class="xliff"></a>
-### Luo asiakastilaus Retail Modern POS -sovelluksessa
-<a id="create-a-customer-order-in-retail-modern-pos" class="xliff"></a>
+## <a name="transaction-flow-for-customer-orders"></a>Asiakastilausten tapahtumien työnkulku
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Luo asiakastilaus Retail Modern POS -sovelluksessa
 
 1.  Lisää asiakas tapahtumaan.
 2.  Lisää tuotteet ostoskoriin.
@@ -69,46 +65,39 @@ Seuraavassa on joitakin parametreja, jotka voidaan asettaa **Vähittäismyynnin 
 5.  Valitse **Kerää valitut** tai **Kerää kaikki** valitaksesi tuotteet, jotka kerätään nykyisestä myymälästä tai eri myymälästä tiettynä päivänä.
 6.  Veloita talletussumma, jos seitä vaaditaan.
 
-### Olemassa olevan asiakkaan tilauksen muokkaaminen
-<a id="edit-an-existing-customer-order" class="xliff"></a>
+### <a name="edit-an-existing-customer-order"></a>Olemassa olevan asiakkaan tilauksen muokkaaminen
 
 1.  Valitse kotisivulla **Etsi tilaus**.
 2.  Etsi ja valitse muokattava tilaus. Valitse sivun alareunassa **Muokkaa**.
 
-### Kerää tilaus
-<a id="pick-up-an-order" class="xliff"></a>
+### <a name="pick-up-an-order"></a>Kerää tilaus
 
 1.  Valitse kotisivulla **Etsi tilaus**.
 2.  Valitse kerättävä tilaus. Valitse sivun alareunassa **Keräys ja pakkaus**.
 3.  Valitse **Kerää**.
 
-### Tilauksen peruuttaminen
-<a id="cancel-an-order" class="xliff"></a>
+### <a name="cancel-an-order"></a>Tilauksen peruuttaminen
 
 1.  Valitse kotisivulla **Etsi tilaus**.
 2.  Valitse peruutettava tilaus. Valitse sivun alareunassa **Peruuta**.
 
-#### Palautustilauksen luominen
-<a id="create-a-return-order" class="xliff"></a>
+#### <a name="create-a-return-order"></a>Palautustilauksen luominen
 
 1.  Valitse kotisivulla **Etsi tilaus**.
 2.  Valitse palautettava tilaus, valitse tilauksen lasku ja sitten tuotelinja, johon kauppatavara palautetaan.
 3.  Valitse sivun alareunassa **Palautustilaus**.
 
-## Asiakastilausten tapahtumien asynkroninen työnkulku
-<a id="asynchronous-transaction-flow-for-customer-orders" class="xliff"></a>
+## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asiakastilausten tapahtumien asynkroninen työnkulku
 Asiakastilauksia voi luoda myyntipisteen (POS) asiakasohjelmassa joko synkronoidussa tai asynkronisessa tilassa.
 
-### Ota käyttöön asiakastilausten luonti asynkronisessa tilassa
-<a id="enable-customer-orders-to-be-created-in-asynchronous-mode" class="xliff"></a>
+### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Ota käyttöön asiakastilausten luonti asynkronisessa tilassa
 
 1.  Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **POS-profiilit** &gt; **Toimintoprofiilit**.
 2.  **Yleiset**-pikavälilehdessä määritä **Luo asiakastilaus asynkronisessa tilassa** -asetuksen arvoksi **Kyllä**.
 
 Kun **Luo asiakastilaus asynkronisessa tilassa** -asetuksen arvo on **Kyllä**, asiakastilaukset luodaan aina asynkronisessa tilassa, vaikka Retail Transaction Service (RTS) -palvelu on käytettävissä. Jos määrität tämän asetuksen arvoksi **Ei**, asiakkaan tilaukset luodaan aina synkronoidussa tilassa RTS:n avulla. Kun asiakastilaukset on luotu asynkronisessa tilassa, ne ovat vedetään ja lisätään Retailiin Pull (P) -töitä käyttämällä. Retailissa luodaan vastaavat myyntitilaukset, kun **Synkronoi tilaukset** suoritetaan joko manuaalisesti tai eräprosessina.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Hybridit asiakastilaukset](hybrid-customer-orders.md)

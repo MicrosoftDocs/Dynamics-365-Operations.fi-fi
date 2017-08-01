@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kiinteiden kompensaatiosuunnitelmien luominen
-<a id="create-fixed-compensation-plans" class="xliff"></a>
+# <a name="create-fixed-compensation-plans"></a>Kiinteiden kompensaatiosuunnitelmien luominen
 
 [!include[banner](includes/banner.md)]
 
@@ -37,32 +36,26 @@ Kiinteä kompensaatio viittaa työntekijän normaaliin bruttopalkkaan. Tässä a
 
 Kiinteät kompensaatiomäärät voidaan laskea työntekijöille, perustuen esimerkiksi suorituskykyyn, alueeseen ja budjetin korotuksiin. Microsoft Talent tukee vaihetta, luokkaa ja rivin kompensaatiotyyppejä.
 
-## Kiinteät kompensaatiokomponentit
-<a id="fixed-compensation-components" class="xliff"></a>
-### Kompensaatiotasot
-<a id="compensation-levels" class="xliff"></a>
+## <a name="fixed-compensation-components"></a>Kiinteät kompensaatiokomponentit
+### <a name="compensation-levels"></a>Kompensaatiotasot
 
 Voit käyttää **kompensaatiotasoja** määrittääksesi kompensaation eri töille. Ne auttavat takaamaan, että työntekijöille maksetaan oikeudenmukaisesti korvausta.  **Kompensaatiotasot**-sivulla voit määrittää, kompensaatiotasot, joita tarvitaan kussakin vaiheessa, palkkaluokassa ja kompensaatioluokan suunnitelmassa. Käytä **"Ylös"** ja **"Alas"** -painikkeita asettaaksesi tasot oikeaan järjestykseen tyypin mukaan. Työn kompensaatiotasojen määrittäminen auttaa takaamaan, että kaikille kyseisessä työtehtävässä työskenteleville maksetaan saman tasoinen palkka.
 
-### Viitepisteet
-<a id="reference-points" class="xliff"></a>
+### <a name="reference-points"></a>Viitepisteet
 
 **Viitepisteet** ovat ruudukon sarakkeita, jotka määrittävät kompensaatioalueet kullekin tasolle. Kompensaatiotaso on ruudukon rivi. Palkkaluokan tyypin suunnitelman viitepisteet ovat yleensä minimi, keskitaso ja maksimi. Luo viitepisteet **Viitepisteiden määritykset** -sivulla.
 
-### Kompensaatioruudukot
-<a id="compensation-grids" class="xliff"></a>
+### <a name="compensation-grids"></a>Kompensaatioruudukot
 
 Tasojen ja viitepisteiden määrittämisen jälkeen ne voidaan yhdistää luomaan **kompensaatioruudukko**. **Kompensaatioruudukot** -sivulla, määritä ruudukon tiedot. Esimerkiksi, määritä mihin tehtävään ruudukko on tarkoitettu, minkä tyyppiseen suunnitelmaan sitä käytetään ja mitä viitepisteitä tai sarakkeita tarvitaan ruudukossa. Kun olet kirjoittanut tiedot, valitse **Kompensaatiorakenne** lisätäksesi tasoja ja summia ruudukkoon. 
 
 **Vihje:** Käytä **Laajamittaiset muutokset** -toimintoa kompensaatiorakenteessa asettamaan alkuperäiset summat ja kasvata prosentit tai summat eri tasoilla tai viitepisteissä.
 
-### Maksutiheydet
-<a id="pay-frequencies" class="xliff"></a>
+### <a name="pay-frequencies"></a>Maksutiheydet
 
 **Maksutiheydet** määrittävät, kuinka työntekijän palkka tai palkkio määritetään (esimerkiksi 10 euroa tunnissa tai 50 000 vuodessa) ja tunti-, viikko-, kuukausi- (12 kuukauden) sekä vuosihinnat muutetaan. Esimerkiksi: Yritys, jolla on 38 tunnin työviikko tuntipalkalla työskenteleville työntekijöille, asettaa maksutiheyden, jonka tuntipalkka on 1, viikkopalkka on 38, kuukausipalkka on 164.6666666667 ja vuosipalkka on 1,976. Näitä muunnoksia käytetään laskettaessa eri palkat, jotka näkyvät työntekijän kiinteässä kompensaatiotietueessa.
 
-## Kiinteät kompensaatiosuunnitelmat
-<a id="fixed-compensation-plans" class="xliff"></a>
+## <a name="fixed-compensation-plans"></a>Kiinteät kompensaatiosuunnitelmat
 Voit suunnitella kiinteän kompensaatiosuunnitelman yhdistääksesi kaikki komponentit, jotka olet määrittänyt. Luodaksesi kiinteän kompensaatiosuunnitelman, avaa **Kiinteät kompansaatiosuunnitelmat** -sivu. Tässä voit antaa nimen ja kuvauksen suunnitelmallesi, valita minkä tyyppinen suunnitelma se on (vaihe, luokka tai kompensaatioluokka), valita maksutiheyden, jota aiot käyttää työntekijän palkkatasolle (tuntikohtainen summa, vuosittainen summa ja niin edelleen) ja asettaa joitakin vaihtoehtoja, jotka ohjaavat miten kompensaatiota käsitellään. 
 
 **Alueen ulkopuolinen toleranssi** -asetuksien avulla voit määrittää, miten tiukka haluat olla varmistaaksesi, että kompensaatiosummat ovat vähimmäis- ja enimmäissummien välillä. **Kova** hintatoleranssi edellyttää, että kompensaatio on määritetty tietyllä välillä kullakin tasolla. A **Pehmeä** hintatoleranssi hälyttää, jos korvauksen summa on alueen ulkopuolella, mutta voit jatkaa. Jos laitat toleranssin **"Ei yhtään"**, voit syöttää minkä vain korvaussumman työntekijälle saamatta virhe- tai varoitusviestejä. 
@@ -79,10 +72,8 @@ Kun olet määrittänyt perustiedot kiinteään kompensaatiosuunnitelmaan, voit 
 
 Kun olet valinnut vaihtoehdon **Kompensaatiorakenne** -sivu avautuu ja voit tehdä muutoksia uuteen kompensaatioruudukkoon tai jo olemassa olevaan kompensaatioruudukkoon.
 
-## Kiinteän kompensaation voimaanastuminen
-<a id="fixed-compensation-enrollment" class="xliff"></a>
-### Määritä, ketkä saavat käyttää suunnitelmaa
-<a id="determine-who-is-eligible-for-the-plan" class="xliff"></a>
+## <a name="fixed-compensation-enrollment"></a>Kiinteän kompensaation voimaanastuminen
+### <a name="determine-who-is-eligible-for-the-plan"></a>Määritä, ketkä saavat käyttää suunnitelmaa
 
 Työntekijöiden rekisteröiminen kiinteään kompensaatiosuunnitelmaan on ensimmäinen vaihe määritettäessä, kuka soveltuu suunnitelmassa määritettyyn kompensaatioon. Ennen kuin voidaan määrittää oikeutussääntöjä, suunnitelmaa ei voida määrittää kenellekään työntekijälle. Voit määrittää oikeutuksen avaamalla **Oikeutussäännöt**-sivun. Tässä voit luoda uuden oikeutussäännön kompensaatiosuunnitelmalle ja määrittää ehdot, jotka työntekijän on täytettävä, jotta hänellä olisi oikeutus suunnitelmaan. Voit rajoittaa sopivuutta koskien osastoa, ammattijärjestöä, kompensaatioaluetta (sijainti), työtä, työnkuvaa, työn tyyppiä tai kompensaatiotasoa. Vain ne työntekijät, jotka täyttävät oikeutussäännön kaikki ehdot, voidaan rekisteröidä kompensaatiosuunnitelmaan. 
 
@@ -98,15 +89,13 @@ Oikeutussääntö arvioi tiettyjen toimikenttien arvot kuten työ, virka ja työ
 
 Oikeutussäännössä otetaan huomioon myös ammattijärjestöt, jotka liittyvät työntekijään (**Työntekijät**-sivulla **Työntekijä**-välilehdessä, klikkaa **Henkilökohtaisia tietoja** &gt; **Ammattijärjestöt**).
 
-### Määritä kiinteän kompensaation toiminnot
-<a id="define-fixed-compensation-actions" class="xliff"></a>
+### <a name="define-fixed-compensation-actions"></a>Määritä kiinteän kompensaation toiminnot
 
 **Kiinteän kompensaation toimintoja** käytetään asetettaessa ja soveltaessa työntekijän kiinteän kompensaation asetuksia. Kiinteän kompensaation toiminnot avulla voit antaa kuvaavat nimet eri toiminnoille, joita korvaus- ja etujenhallinta voi suorittaa. Erilaisilla toimenpidetyypeillä on erityinen logiikka, niin, että niitä voidaan käyttää tiettyinä aikoina. 
 
 Esimerkiksi, kun työntekijälle on määritetty kiinteä kompensaatio, vain toimintoja, joilla on **Palkkaa/Palkkaa uudelleen**-tyyppi, käytetään. Tässä tapauksessa voit halutessasi luoda kolme eri toimintaa **Palkkaa/Palkkaa uudelleen**-tyypille ja nimetä ne **Palkkaa**, **Palkkaa uudelleen** ja **Siirrä**. Sen jälkeen sinulla on kuvaavampi selitys sille, miksi työntekijä sai kiinteän kompensaation tai sitä muutettiin.
 
-### Merkitse työntekijä
-<a id="enroll-the-employee" class="xliff"></a>
+### <a name="enroll-the-employee"></a>Merkitse työntekijä
 
 Voit nyt määrittää työntekijän kiinteään kompensaatiosuunnitelmaan. Avaa **Työntekijät**-sivu ja valitse työntekijä, joka määritetään kompensaatiosuunnitelmaan. Valitse toimintoruudussa **Kompensaatio** &gt; **Kiinteä suunnitelma**. Voit nyt luoda uuden kiinteän kompensaatiotoiminnon kyseiselle työntekijälle. 
 
@@ -114,8 +103,7 @@ Voit nyt määrittää työntekijän kiinteään kompensaatiosuunnitelmaan. Avaa
 
 Järjestelmä tarkistaa, että se kompensaatiosumma, joka on eritelty luokan tai tyypin kompensaatiosuunnitelmassa, on vähimmäis- ja enimmäisviitepisteiden väilllä, työntekijän työn annetulla kompensaatiotasolla. Jos korvaussumma on sallitun alueen ulkopuolella, varoitus tai virhesanoma tulee näkyviin, joka on määritetty kiinteän kompensaatiosuunnitelman toleranssitason mukaisesti.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Kompensaatiosuunnitelmat](compensation-plans.md)

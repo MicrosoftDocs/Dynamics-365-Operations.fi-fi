@@ -79,7 +79,7 @@ Budjettipäällikkö voi tarkastella budjetin senhetkistä tilaa **Kirjanpitobud
 
 **Toteutunut vs. budjetti** -kyselysivun kautta voit porautua budjetti vs. toteutunut -summien yksityiskohtaisiin tietoihin. Valitse kyselysivun rivi ja napsauta **Kauden saldot** nähdäksesi budjetoidut ja toteutuneet summat tilikausille jaettuna. **Budjettitiliviennit**-sivu porautuu budjettitapahtumien budjettisummien yksityiskohtaisiin tietoihin. **Yleisen kirjauskansion merkinnät**-sivu avaa kirjanpitotapahtumat, jotka sisältyvät laskettuun **Toteutuneet**-summaan. 
 
-Budjettisuunnittelutoimintoa käyttävä yritys voi luoda ja käyttää *budjettiennusteita ***Kirjanpitobudjetit ja ennusteet** -työtilassa.
+Budjettisuunnittelutoimintoa käyttävä yritys voi luoda ja käyttää *budjettiennusteita* **Kirjanpitobudjetit ja ennusteet** -työtilassa.
 
 
 

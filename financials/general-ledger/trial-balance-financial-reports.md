@@ -26,16 +26,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Pääkirjan talousraportit
-<a id="trial-balance-financial-reports" class="xliff"></a>
+# <a name="trial-balance-financial-reports"></a>Pääkirjan talousraportit
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa kuvataan pääkirjojen oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin sekä niiden muokkaaminen liiketoimintasi tarpeiden mukaan. 
 
-Pääkirjan oletusraportit
-<a id="default-trial-balance-reports" class="xliff"></a>
+<a name="default-trial-balance-reports"></a>Pääkirjan oletusraportit
 -----------------------------
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin talousraportointi-osa sisältää kolme pääkirjan raporttia..
@@ -46,8 +44,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin talousra
 | Pääkirjan yhteenveto – oletus                | Määrittää kaikkien tilien saldotiedot ja sisältää alku- ja loppusaldot, debet- ja kreditsaldot sekä niiden nettoeron.                                        |
 | Pääkirjan yhteenveto vuosittain – oletus | Määrittää kaikkien tilien saldotiedot ja sisältää alku- ja loppusaldot, debet- ja kreditsaldot sekä niiden kuluvan vuoden ja edellisen vuoden nettoeron. |
 
-## Rakenneosat
-<a id="building-blocks" class="xliff"></a>
+## <a name="building-blocks"></a>Rakenneosat
 Pääkirjan talousraporteissa käytetään seuraavia rakenneosia.
 
 | Oletusraportti                                 | Rivimääritys          | Sarakemääritys                              |
@@ -56,8 +53,7 @@ Pääkirjan talousraporteissa käytetään seuraavia rakenneosia.
 | Pääkirjan yhteenveto – oletus                | Pääkirja - oletusarvo | Pääkirjan yhteenveto - oletusarvo                |
 | Pääkirjan yhteenveto vuosittain – oletus | Pääkirja - oletusarvo | Pääkirjan yhteenveto vuosittain - oletusarvo |
 
-### Rivimääritys
-<a id="row-definition" class="xliff"></a>
+### <a name="row-definition"></a>Rivimääritys
 
 Rivimääritys, Pääkirja – Oletusarvo, sisältää yhden rivin, joka hakee kaikki päätilit. Tämän vuoksi kuka tahansa voi luoda raportin ilman muutosten tekemistä. Voit siirtyä raporttia tarkastellessasi yhdelle riville, kun haluat nähdä kunkin tilin tiedot. Voit muokata rivimääritystä niin, että se sisältää enemmän tietoja. Pääkirjan muokkaaminen - oletusrivimääritys, joka sisältää kaikkien tilien rivit. Noudata seuraavia ohjeita.
 
@@ -66,8 +62,7 @@ Rivimääritys, Pääkirja – Oletusarvo, sisältää yhden rivin, joka hakee k
 
 Rivimääritys sisältää nyt kaikki oletusyrityksen päätilit.
 
-### Sarakemääritys
-<a id="column-definition" class="xliff"></a>
+### <a name="column-definition"></a>Sarakemääritys
 
 Jokaisessa pääkirjan raportissa käytetään eri sarakemääritystä. Nämä sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksityiskohtaisia tasoja ja taloushallinnon tietoja.
 
@@ -106,8 +101,7 @@ Jokaisessa pääkirjan raportissa käytetään eri sarakemääritystä. Nämä s
 
  
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Taloushallinnan raportointi](financial-reporting-getting-started.md)

@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfiguroi varastotyön mobiililaitteet
-<a id="set-up-mobile-devices-for-warehouse-work" class="xliff"></a>
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfiguroi varastotyön mobiililaitteet
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Tässä artikkelissa kuvataan, kuinka valikkokohteet määritetään mobiililait
 
 Jos haluat luoda kyselyn tai toiminnon valikkovaihtoehdon, määritä asetuksen **Tila** arvoksi **Epäsuora**. Luettelo **Toimintokoodi**-asetuksista tulee saataville siten, että voit valita kyselyn tai toiminnon tyypin, jota varten valikkokohde on. Voit luoda valikkovaihtoehdon fyysisen varastoinnin työn luomiseen, määritä **Tila**-kentän arvoksi **Työ**. Näkyviin tulee luettelo **Työn luontiprosessi** -vaihtoehdoista. Jos haluat luoda valikkovaihtoehdon nykyisen varastotyön käsittelyyn, määritä **Tila** kentän arvoksi **Työ** ja määritä **Käytä nykyistä työtä** -asetukseksi **Kyllä**. **Huomautus:** Valikkokohdalle on käytettävissä lisäkenttiä sille valitsemastasi tilasta riippuen, ja jos valikkokohtaa käytetään suorittamaan olemassa oleva työ. Lisätietoja lisäkenttien valinnasta on osiossa “Lisävalikkovaihtoehdot” myöhemmin tässä aiheessa.
 
-## Toimintojen ja kyselyjen valikkovaihtoehtojen määrittäminen
-<a id="configure-menu-items-for-activities-and-inquiries" class="xliff"></a>
+## <a name="configure-menu-items-for-activities-and-inquiries"></a>Toimintojen ja kyselyjen valikkovaihtoehtojen määrittäminen
 Jos valikkovaihtoehdon **Tila** kentän arvoksi määritetään **Epäsuora**, voit luoda valikkovaihtoehdon suorittamaan yleisen tehtävän tai kyselyn, joka ei luo työtä. Tällaisia tehtäviä ovat esimerkiksi rekisterikilpien uudelleentulostus tai toimipaikan nimikkeiden sijaintia koskeva kysely. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot.
 
 | Vaihtoehto                      | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -66,8 +64,7 @@ Jos valikkovaihtoehdon **Tila** kentän arvoksi määritetään **Epäsuora**, v
 | Muuta eräkäsittelyä    | Anna työntekijän määrittää erän käsittelykoodi nimikkeelle ja erälle. Tämä vaihtoehto päivittää eräkohtaisen käsittelykoodin.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Näytä avoin työluettelo      | Näyttää käyttäjäkohtaisen saatavilla olevien töiden luettelon. Käyttäjä voi valita suoritettavan työn, joka kohdistetaan hänelle. Luettelo on tarkoitettu katseltavaksi tablettilaitteissa, joiden näytön koko on 7 tuumaa tai enemmän. Kun valitset tämän vaihtoehdon, **Muokkaa kyselyä**- ja **Kenttäluettelo**-valikkovaihtoehdot ovat käytettävissä. **Muokkaa kyselyä** -sivulla voit määrittää ehtoja luettelossa näkyville töille. **Kenttäluettelo**-sivulla voit valita työluettelossa näkyvät kentät. Voit esimerkiksi rajoittaa näkyvissä olevien kenttien määrää, jotta käyttäjän on helpompi valita oikea työnimike. Voit myös valita **Yleiset**-välilehdessä **Tietueita sivulla** -kentässä, miten monta työtietuetta kullakin sivulla näytetään. Jos **Salli käyttäjien suodattaa työtä tapahtumatyypeittäin** -vaihtoehto on valittuna, työluettelossa on **Työn suodatus** -ohjausobjekti, jolla käyttäjä voi suodattaa luettelon tapahtumatyypin mukaan. Käyttäjä näkee työluettelossa vain työt, joiden käyttöoikeus hänellä on. Varmista, että käyttäjillä on oikeudet yhteen tai useampaan käyttäjäohjattuun valikkovaihtoehtoon, jotka tukevat tiettyä työluokkatyyppiä, jota heidän tulisi pystyä käyttämään. Käyttöoikeudet tarkistetaan myös, kun käyttäjä yrittää suorittaa työn luettelosta. |
 
-## Valikkovaihtoehtojen määrittäminen työn luomiseksi toiselle työntekijälle tai prosessille
-<a id="configure-menu-items-to-create-work-for-another-worker-or-process" class="xliff"></a>
+## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Valikkovaihtoehtojen määrittäminen työn luomiseksi toiselle työntekijälle tai prosessille
 Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, kun alustava toiminto on suoritettu mobiililaitteella. Jos esimerkiksi yksi työntekijä käyttää mobiililaitetta nimikkeen vastaanottamiseen, hyllytystyö luodaan toiselle työntekijälle. Määritä työn luova valikkovaihtoehto valitsemalla **Mobiililaitteen valikkovaihtoehdot** -sivulla **Tila**-kentässä **Työ**. Seuraavassa taulukossa **Työn luontiprosessi** -kentän vaihtoehdot on järjestetty tilaustyypin mukaan.
 
 <table>
@@ -196,8 +193,7 @@ Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, 
 </tbody>
 </table>
 
-## Valikkovaihtoehdon määrittäminen käsittelemään olemassa olevat työt
-<a id="configure-menu-items-to-process-existing-work" class="xliff"></a>
+## <a name="configure-menu-items-to-process-existing-work"></a>Valikkovaihtoehdon määrittäminen käsittelemään olemassa olevat työt
 Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkovaihtoehdot käsittelemään työt, jotka on luotu aiemmin. Määritä **Tila**-kentän arvoksi **Työ** ja valitse **Käytä nykyistä työtä** -vaihtoehto. Jotkin lisäasetukset sitten vapautuvat käyttöön **Yleiset**-välilehdessä. Valikkovaihtoehdon käyttöä voi hallita määrittämällä yhden tai useamman työluokan **Työluokka**-pikavälilehdessä. Työluokat määrittävät työn, jota valikkovaihtoehdolla voi käsitellä. Työluokan kautta voidaan myös myöntää käyttöoikeus tiettyihin käyttäjärooleihin tai erityyppisten työvaiheiden erilliskäsittelyyn. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot.
 
 <table>
@@ -256,8 +252,7 @@ Tämä on hyödyllinen vaihtoehto esimerkiksi silloin, kun useita kuormalavoja a
 </tbody>
 </table>
 
-## Valikon lisävaihtoehdot
-<a id="additional-menu-item-options" class="xliff"></a>
+## <a name="additional-menu-item-options"></a>Valikon lisävaihtoehdot
 Lisätietoja valikkovaihtoehtojen asetuksia on **Mobiililaitteen valikkovaihtoehdot** -sivulla. Vaihtoehdot vaihtelevat sen prosessin mukaan, jolle määrität valikkovaihtoehtoa. 
 
 Seuraavassa taulussa kuvataan nämä asetukset.
@@ -394,8 +389,7 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tbody>
 </table>
 
-## Edellytä, että työntekijät vahvistavat tuotteen, sijainnin tai määrän nimikkeitä keräillessään.
-<a id="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items" class="xliff"></a>
+## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Edellytä, että työntekijät vahvistavat tuotteen, sijainnin tai määrän nimikkeitä keräillessään.
 Voit määrittää työn vahvistukset, jotka edellyttävät, että työntekijän käyttää mobiililaitetta sijainnin tai määrän rekisteröintiin suorittaessaan työtä varastossa. Työn vahvistusten avulla voidaan varmistaa, että työntekijä on oikeassa sijainnissa tai käsittelee oikeaa nimikkeiden määrää. Voit myös antaa Microsoft Dynamics 365 for Finance and Operationsin vahvistaa automaattisesti työntekijän rekisteröinnin. Jos otat käyttöön automaattisen vahvistuksen, et voi edellyttää vahvistuksia sijainnille tai määrälle. Työn vahvistukset sisältävät myös tuotteita ja tuotevariantteja. Voit myös rekisteröidä vahvistuksia lukemalla viivakoodin. Vahvistaaksesi tuotteita ja tuotevariantteja, sinun on syötettävä tuotteen tai tuotevariantin tunnus. Tunnus voi olla tuotetunnus, tuotehaun tunnus, ulkoinen tunnus, GTIN-koodi tai viivakoodi. Kun olet kirjoittanut tunnuksen tai skannannut viivakoodin, tuotevariantin dimensiot näkyvät mobiililaitteessa. 
 
 Seuraavassa taulukossa on kuvattu eri työtyypit, joiden kanssa työn vahvistuksia voi käyttää.
@@ -414,8 +408,7 @@ Seuraavassa taulukossa on kuvattu eri työtyypit, joiden kanssa työn vahvistuks
 
 **Huomautus:** Voit vaatia tuotteen vahvistusta ainoastaan keräily- ja laitto-työtyypeille.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Varaston mobiililaitteen näyttöasetukset](change-warehouse-mobile-device-displays.md)

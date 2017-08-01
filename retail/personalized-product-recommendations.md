@@ -27,16 +27,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Mukautettujen tuotesuositusten yleiskatsaus
-<a id="personalized-product-recommendations-overview" class="xliff"></a>
+# <a name="personalized-product-recommendations-overview"></a>Mukautettujen tuotesuositusten yleiskatsaus
 
 [!include[banner](includes/banner.md)]
 
 
 Dynamics 365 for Retailissa voidaan näyttää suosituksia myyntipisteen laitteessa. Suositukset ovat nimikkeitä, joista asiakas on mahdollisesti kiinnostunut ostohistorian, toiveluettelon ja muiden asiakkaiden verkosta tai kivijalkakaupasta ostamien tuotteiden perusteella. Myyjillä, joilla on laajat tuoteluettelot, suositukset auttavat asiakasta löytämään uusia tuotteita. Esittämällä tuotesuosituksia, jotka on kohdistettu asiakkaan kiinnostuksen kohteisiin, kauppiaat parantavat lisä- ja ristiinmyyntiään ja tehostavat asiakkaiden sitoutumista. Dynamics 365 for Retailin tuotesuositukset toimivat kognitiivisten palveluiden ja Microsoft Azuren koneoppimisen avulla.
 
-Skenaariot
-<a id="scenarios" class="xliff"></a>
+<a name="scenarios"></a>Skenaariot
 ---------
 
 Tuotteen suosituksia on käytössä seuraavissa myyntipisteskenaarioissa. Ne ovat saatavissa Cloud POS - ja Modern POS (MPOS) -myyntipisteissä.
@@ -60,8 +58,7 @@ Tuotteen suosituksia on käytössä seuraavissa myyntipisteskenaarioissa. Ne ova
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## Dynamics 365 for Retailin määrittäminen ottamaan käyttöön myyntipisteen suositukset
-<a id="configure-dynamics-365-for-retail-to-enable-pos-recommendations" class="xliff"></a>
+## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Dynamics 365 for Retailin määrittäminen ottamaan käyttöön myyntipisteen suositukset
 Voit määrittää tuotesuositukset seuraavasti.
 
 1.  Varmista, että olet valinnut oikean **yrityksen**.
@@ -70,8 +67,7 @@ Voit määrittää tuotesuositukset seuraavasti.
 4.  Siirry kohtaan **Vähittäismyynnin parametrit**, valitse **Automaattianalyysipalvelut** ja valitse **Kyllä** kohdassa **Ota käyttöön myyntipisteen suositukset**.
 5.  Saat suositukset näkyviin myyntipisteessä suorittamalla yleisen konfiguraatiotyön **1110**. Saat myyntipisteen näytön asetteluun tehdyt muutokset näkyviin suorittamalla kanavan konfigurointityön **1070**.
 
-## []()Miten se toimii?
-<a id="how-does-it-work" class="xliff"></a>
+## <a name="how-does-it-work"></a>[]()Miten se toimii?
 Kun päivität **Yksikkösäilö**-yksikön, seuraavat toiminnot tapahtuvat.
 
 -   Dynamics 365 for Retailin toiminnallisesta tietokannasta poimitaan tiedot kognitiivisten palveluiden edellyttämässä muodossa ja ne lähetetään yksikkösäilöön.
@@ -84,8 +80,7 @@ Kun otat käyttöön **Ota suositukset käyttöön** -asetuksen ja suoritat konf
 -   Mallin tunnistetiedot ja tunnus annetaan saataville CRT:lle niin, että tuotteen suosituspyynnöt online-tilassa olevista Cloud POS- ja MPOS -myyntipisteistä voidaan suorittaa.
 
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumasivulle](add-recommendations-control-pos-screen.md)

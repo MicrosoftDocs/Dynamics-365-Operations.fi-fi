@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kustannusseurannan mobiilityötila
-<a id="cost-controlling-mobile-workspace" class="xliff"></a>
+# <a name="cost-controlling-mobile-workspace"></a>Kustannusseurannan mobiilityötila
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,20 +34,17 @@ Tässä ohjeaiheessa on tietoja **Kustannusseuranta**-mobiilityötilasta. Kustan
 
 Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Yleiskuvaus
 **Kustannusten hallinnan** mobiilityötila sisältää kustannuspaikkojen nykyisen suorituskyvyn välittömän näkymän vertaamalla toteutuneita kustannuksia budjetoituihin kustannuksiin. Voit porautua yksittäisten kustannuselementtien tilaan.
 
 Työntekijä voi esimerkiksi saada kutsun kansainväliseen konferenssiin, mutta organisaation on katettava kaikki matkakulut. Työntekijä kysyy esimieheltään, voiko hän osallistua kokoukseen. Esimies avaa nopeasti **kustannusten hallinnan** mobiilityötilan puhelimessaan nähdäkseen, onko budjetissa varaa työntekijän osallistumiseen kokoukseen.
 
-### Tietoturva
-<a id="data-security" class="xliff"></a>
+### <a name="data-security"></a>Tietoturva
 **Kustannusten hallinnan** mobiilityötilan tiedot suojataan käyttäjän tunnistetietojen mukaan. Kustannuspaikan johtajan on sallittu nähdä vain tiedot omasta kustannuspaikastaan. Käyttöoikeustason tietoturva on hallittu **Kustannuslaskenta**-moduulissa.
 
 Kustannusten kirjanpitäjät määrittävät **kustannusten hallinnan** mobiilityötilan **Kustannuslaskenta**-moduulissa. Työtila on käytettävissä sovelluksessa, kun se on julkaistu mobiilisovellukseen. Näin varmistetaan, että kaikkien kustannuspaikkojen johtajat organisaatiossa näkevät tiedot samassa muodossa.
 
-### Toiminnot, näkymät ja linkit
-<a id="actions-views-and-links" class="xliff"></a>
+### <a name="actions-views-and-links"></a>Toiminnot, näkymät ja linkit
 Seuraavat toiminnot, näkymät ja linkit sisältyvät **Kustannusseuranta**-mobiilityötilassa:
 
 -   **Toiminnot:**
@@ -80,16 +76,13 @@ Seuraavat toiminnot, näkymät ja linkit sisältyvät **Kustannusseuranta**-mobi
     
     [![Kustannuselementin kortti ](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
-## Edellytykset
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Edellytykset
 Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
 
-### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys
 Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **Kustannusseuranta**-mobiilityötilassa. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.
 Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations -versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset.
 
 <table>
@@ -123,15 +116,13 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations 
 </table>
 
 
-## Mobiilisovelluksen lataaminen ja asentaminen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Kirjautuminen mobiilisovellukseen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
 
 1.  Käynnistä sovellus mobiililaitteessa.
 2.  Anna Dynamics 365 -URL-osoitteesi.
@@ -140,8 +131,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Tarkastele kustannuspaikkasi suorituskykyä kustannusten hallinnan mobiilissa työtilassa
-<a id="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace" class="xliff"></a>
+## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>Tarkastele kustannuspaikkasi suorituskykyä kustannusten hallinnan mobiilissa työtilassa
 
 1.  Valitse mobiililaitteessasi **Kustannusten hallinta** -työtila.
 2.  Valitse **Kustannusobjektin hallinta**.

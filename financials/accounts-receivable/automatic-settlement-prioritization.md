@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Automaattinen tilitys ja priorisointi
-<a id="automatic-settlement-and-prioritization" class="xliff"></a>
+# <a name="automatic-settlement-and-prioritization"></a>Automaattinen tilitys ja priorisointi
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Sinulla on kaksi vaihtoehtoa, kun täsmäytät maksuja laskujen ja muiden tapaht
 
 Seuraavissa osissa kuvataan, kuinka tapahtumat täsmäytetään jokaiselle menetelmälle.
 
-## Esimerkkitapahtumat
-<a id="example-transactions" class="xliff"></a>
+## <a name="example-transactions"></a>Esimerkkitapahtumat
 Myöhemmin tässä artikkelissa kuvatut tilitysesimerkit perustuvat seuraaviin tapahtumiin. Kaikki tapahtumat koskevat asiakasta 2050.
 
 | Tapahtuma   | Päivämäärä        | Summa | Käteisalennuksen ehdot | Käteisalennuksen päivämäärä | Kommentit                                                                                                                                                                                      |
@@ -53,8 +51,7 @@ Myöhemmin tässä artikkelissa kuvatut tilitysesimerkit perustuvat seuraaviin t
 | Lasku 3     | 15. lokakuuta  | 500,00 | 2 % 14/netto 30        | 29. lokakuuta         |                                                                                                                                                                                               |
 | Korkolasku | 15. lokakuuta  | 7:00   |                     |                    | Tämä korkolasku on laskulle 1 ja laskulle 2. Summa lasketaan 2 prosentin korkona summista, jotka ovat vähintään 30 päivää myöhässä. Esimerkki: 0,02 × (100,00 + 250,00) = 7,00. |
 
-## Käyttäjän määrittämä tilitysprioriteetti
-<a id="userdefined-settlement-priority" class="xliff"></a>
+## <a name="userdefined-settlement-priority"></a>Käyttäjän määrittämä tilitysprioriteetti
 Jos valitset **Käytä automaattisten selvitysten priorisointia** -asetukseksi **Kyllä** **Myyntireskontran parametrit** -sivulla, **Tilitysprioriteetti**-sivulla määritettyä tilitysprioriteettia käytetään, kun tapahtumia valitaan automaattiseen tilitykseen. Tässä esimerkissä määritetään seuraava tilitysjärjestys:
 
 1.  Tapahtumatyyppi
@@ -75,8 +72,7 @@ Jos kirjaat 700,00:n maksun 25. lokakuuta, maksu tilitetään tapahtumiin seuraa
 | Lasku 2     | 1.9.2015   | 10 002   | 250,00                         | 250,00           | 0,00    | USD      |
 | Lasku 3     | 15.10.2015 |         | 500,00                         | 343,00           | 157,00  | USD      |
 
-## Oletusarvoinen automaattinen tilitys
-<a id="default-automatic-settlement" class="xliff"></a>
+## <a name="default-automatic-settlement"></a>Oletusarvoinen automaattinen tilitys
 Jos käyttäjäkohtaista tilitysprioriteettia ei ole, tapahtumat valitaan tilitykseen eräpäivän perusteella. Täsmäytettävillä tapahtumilla on oltava sama valuutta kuin tapahtumilla, joiden kanssa ne täsmäytetään. Jos 700,00:n maksu kirjataan 25. lokakuuta, seuraavat tapahtumat valitaan tilitystä varten.
 
 | Tosite       | Päivämäärä       | Lasku | Summa tapahtuman valuuttana | Täsmäytettävä summa | Saldo | Valuutta |

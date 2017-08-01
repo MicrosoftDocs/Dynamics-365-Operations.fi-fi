@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Uudet ja muuttuneet ominaisuudet
-<a id="whats-new-or-changed" class="xliff"></a>
+# <a name="whats-new-or-changed"></a>Uudet ja muuttuneet ominaisuudet
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Micr
 
 Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä koskeva päivitysprosessi](../migration-upgrade/upgrade-latest-update.md).
 
-## Sovelluksen versiot
-<a id="application-releases" class="xliff"></a>
+## <a name="application-releases"></a>Sovelluksen versiot
 
 Lisätietoja uusista mobiilityötiloista ja Power BI -sisällöstä on kohdassa [Dynamics 365 for Finance and Operations -mobiilisovellukselle julkaistut uudet mobiilityötilat](../mobile-apps/mobile-workspaces-released.md) ja [Dynamics 365 for Finance and Operations -ohjelmalle julkaistu Power BI -sisältö](../analytics/power-bi-home-page.md)
 
@@ -89,8 +87,7 @@ Lisätietoja uusista mobiilityötiloista ja Power BI -sisällöstä on kohdassa 
 </tbody>
 </table>
 
-## Ympäristön versiot
-<a id="platform-releases" class="xliff"></a>
+## <a name="platform-releases"></a>Ympäristön versiot
 
 <table>
 <colgroup>

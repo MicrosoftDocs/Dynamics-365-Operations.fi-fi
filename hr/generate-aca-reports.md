@@ -26,16 +26,13 @@ ms.lasthandoff: 06/13/2017
 
 
 ---
-# Affordable Care Act -raporttien luominen
-<a id="generate-affordable-care-act-reports" class="xliff"></a>
+# <a name="generate-affordable-care-act-reports"></a>Affordable Care Act -raporttien luominen
 Toiminnon tarkoituksena on auttaa niitä työnantajia, joiden on seurattava lomakkeissa 1095-B- ja 1095-C-ilmoitettavia tietoja. Näitä lomakkeita käytetään Affordable Care Act -lain **työnantajan valtakirjaosassa**. Huomaa, että toiminto on käytössä vain yhdysvaltalaisissa yrityksissä.
 
-## Aloittaminen
-<a id="getting-started" class="xliff"></a>
+## <a name="getting-started"></a>Aloittaminen
 Kun 1095-B- ja 1095-C-lomakkeilla raportoitavien tietojen seuranta aloitetaan, aivan ensimmäiseksi on luotava vähintään yksi Affordable Care -kattavuusryhmä. Näillä Affordable Care -kattavuusryhmillä ilmaistaan työntekijälle tarjottava kattavuus, työntekijän osuus edullisimmasta kuukausimaksusta (jos kustannus ylittää liittovaltion köyhyysrajan) ja työnantajan mahdollisesti käyttämä Safe Harbor -ohjelma. Affordable Care Act -ryhmien käytön avulla voit hallita näitä kenttiä koskevia tietoja ilman jokaisen työtekijätietueen käsittelyä silloin, kun ehdot ovat samat. Lisäksi Affordable Care -kattavuusryhmät voi määrittää helposti yhdelle tai usealle työntekijälle sivun joukkomääritystoiminnolla.
 
-## Kattavuusryhmän useiden versioiden ylläpitäminen
-<a id="maintaining-multiple-versions-of-a-coverage-group" class="xliff"></a>
+## <a name="maintaining-multiple-versions-of-a-coverage-group"></a>Kattavuusryhmän useiden versioiden ylläpitäminen
 Voit ylläpitää useita kattavuusryhmän versioita, joten voit ryhmän tiedot pysyvät ajan tasalla tekemällä muutoksia sen sijaan, että työntekijät määritettäisiin luotuun uuteen ryhmään aina, kun organisaatiossa ja tarjotuissa eduissa tapahtuu muutoksia. 
 
 Kun olet luonut tarvittavat Affordable Care -kattavuusryhmät, voit määrittää työntekijät kerralla ryhmiin valitsemalla sivulla **Joukkomääritys**-toiminnon. Vaihtoehtoisesti voit siirtyä kunkin työntekijän sivulla ja ilmoittaa, onko ACA-tietoja seurattava ja onko ne raportoiva samalla kun määrität työntekijän Affordable Care -kattavuusryhmään.
@@ -44,8 +41,7 @@ Jos työntekijän Affordable Care -kattavuustietoja ei tarvitse seurata eikä ra
 
 Voit määrittää Affordable Care -kattavuusryhmän arvoille poikkeuksille napsauttamalla Työntekijän tiedot -sivulla Affordable Care -kattavuuslinkkiä. Tämä linkki sijaitsee Työsuhde-välilehden Lisätiedot-osassa.
 
-## Terveydenhuollon kattavuuden raportointi
-<a id="reporting-health-care-coverage" class="xliff"></a>
+## <a name="reporting-health-care-coverage"></a>Terveydenhuollon kattavuuden raportointi
 Sen lisäksi että seurataan minkä laajuinen terveydenhuolto kokopäiväisille työntekijöille on mahdollisesti tarjottu, lisätietoja on raportoiva 1095-C-lomakkeella, jos työntekijä tarjoaa työnantajan sponsoroimaa omakustanteista terveydenhuoltoa, johon työntekijä on rekisteröity (riippumatta siitä, onko kyse koko- vai osa-aikaisesta työntekijästä). Jokainen työntekijä (ja heidän huollettavansa), jonka työnantajan sponsoroimat etusuunnitelmat kattavat, on sisällytettävä raporttiin niiden kuukausien ajalta, joita kattavuus koskee. 
 
 Voit ilmaista, onko kukin etusuunnitelma raportoiva, valitsemalla **ACA-raportoitavien** valintaruudun.
@@ -54,14 +50,12 @@ Jos työtekijät ovat lisäksi valinneet, että etu kattaa myös jonkin heidän 
 
 Voit ilmoittaa **Huollettavaa koskevien kattavuuspäivämäärien hallinta** -sivulla päivämäärät, jolloin etu kattoi huollettavan. Kun tällä sivulla annetaan päivämääriä, **Katettu**-valintaruutu valitaan automaattisesti **Etujen ylläpito** -sivulla.
 
-## 1095B- ja 1095C-lomakkeiden luominen
-<a id="generate-1095b-and-1095c-forms" class="xliff"></a>
+## <a name="generate-1095b-and-1095c-forms"></a>1095B- ja 1095C-lomakkeiden luominen
 Voit luoda 1095-B- ja 1095-C-lomakkeita myös tuotteesta ja jakaa ne työntekijöille. Järjestelmässä voidaan luoda myös sähköinen 1095-C- ja vastaava 1094-C-tiedosto, jotka voidaan lähettää IRS-virastoon.  
 
 Anna 1095-C-lomaketta luotaessa soveltuva kalenteri- tai verovuosi, jos haluat tulostaa kaksi- tai kolmisivuisen lomakkeen. Kolmisivuista lomaketta tarvitaan vain, jos työnantaja tarjoaa omakustanteisen vakuutuksen ja työntekijällä on yli kuusi katettua huollettavaa (työntekijä mukaan lukien). Kaksisivuista lomaketta luotaessa järjestelmä havaitsee automaattisesti, jos työntekijällä on yli 6 katettua huollettavaa, eikä kyseistä työntekijää sisällytetä lomaketta luotaessa. Lisäksi järjestelmä sisällyttää kolmisivuista lomaketta luotaessa vain ne työntekijät, joilla on yli kuusi katettua huollettavaa.
 
-## Tietojen tarkastelu
-<a id="viewing-information" class="xliff"></a>
+## <a name="viewing-information"></a>Tietojen tarkastelu
 Voit tarkistaa **Työntekijän Affordable Care -kattavuus** -sivulla kuhunkin kattavuusryhmään määritetyt työntekijät, työntekijät, joita ei tarvitse sisällyttää raporttiin, ja määrittämättömät työntekijät.
 
 Jos jokin Affordable Care -kattavuusryhmän oletusarvoista on korvattu, muutetun arvon vieressä näkyy tähtimerkki. Jos jokaisen 12 kuukauden arvo on sama eikä sitä ole korvattu, arvo tulostuu **Kaikki 12 kuukautta** -sarakkeessa.

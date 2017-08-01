@@ -25,23 +25,19 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Materiaalikulutuksen rekisteröinti mobiililaitteella
-<a id="register-material-consumption-using-a-mobile-device" class="xliff"></a>
+# <a name="register-material-consumption-using-a-mobile-device"></a>Materiaalikulutuksen rekisteröinti mobiililaitteella
 Tässä ohjeaiheessa käsitellään työnkulkua, jolla tuotannossa kulutettavat raaka-aineet voidaan rekisteröidä kämmenlaitteella.
 
-Johdanto
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Johdanto
 ------------
 
 Tämä työnkulku on hyödyllinen, jos materiaalin tarkka seuranta on välttämätöntä. Näissä tilanteissa materiaalin jäljitettävyyden ylläpito edellyttää kulutuksen tarkan ajan ja määrän ilmoittamista. Tämä prosessi voidaan nähdä esi- tai jälkipoiston peilikuvana, sillä näissä toiminnoissa rekisteröinnin ajankohta ja varsinaisen kulutuksen ajankohta poikkeavat toisistaan. Tämän vuoksi automaattista kulutusstrategiaa ei voi käyttää joissakin materiaaleissa, joissa on edellytyksenä jäljitettävyys. Tarkastellaan yksinkertainen skenaariota, joka selittää, miten määritetään työnkulku tuotannossa tapahtuvan raaka-aineiden kulutuksen rekisteröintiin kämmenlaitteella. [![](./media/scenario3.png)](./media/scenario3.png)
 
-### Skenaarion tiedot
-<a id="scenario-details" class="xliff"></a>
+### <a name="scenario-details"></a>Skenaarion tiedot
 
 Jatkuva tuotantoprosessi (5) kuluttaa eräohjattua raaka-ainetta RM-100. Materiaali on käytettävissä varaston sijainnissa Bulk-001 (1), rekisterikilpi on PL-1 ja siinä on kaksi erää B1 ja B2, joiden kummankin määrä 100 lbs. RM-100:n varastotyö (2) vapautetaan ja käsitellään. Materiaali kerätään sijainnista Bulk-001 tuotannon varastoinnin sijaintiin PIL-01 (3), joka on määritetty rekisterikilpiohjatuksi sijainniksi. Koneenkäyttäjä punnitsee materiaalin tuotannon varastointisijainnissa (3) ja rekisteröi painon. Eränumero on kulutettu (4). Osa materiaalista lisätään tuotannon varastoinnin sijainnista tuotantoprosessiin määritetyin aikavälein. Kun koneenkäyttäjä lisää materiaalia, se punnitaan vaa'alla ja eränumero rekisteröidään.
 
-## Työnkulun määrittäminen rekisteröimään kulutus kämmenlaitteella
-<a id="set-up-the-workflow-to-register-consumption-using-a-handheld-device" class="xliff"></a>
+## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Työnkulun määrittäminen rekisteröimään kulutus kämmenlaitteella
 Luo valmis tuote, FG 100, tuoterakenteella, jossa on eräohjattua raaka-ainetta RM-100. Lisää RM-100:n kaksi erää, B1 ja B2, joissa on määrä 100, sijaintiin Bulk-001, jossa on rekisterikilpi PL-1. RM-100:n tuoterakennerivin materiaaliottosäännöksi on valittu **Manuaalinen**. Määritä tuotannon varastoinnin sijainniksi PIL-01. Voit tehdä sen valitsemalla tämän sijainnin tuotannon varastoinnin oletussijainniksi varastossa 51.
 
 1.  Luo uusi mobiililaitteen valikkovaihtoehto: 
@@ -85,8 +81,7 @@ Voit nyt valita rekisteröinnin jatkamisen esimerkiksi eränumerolla B2. Avoimee
 
 Kun rekisteröinti on valmis, kirjaa kirjauskansio ja lopeta työnkulku valitsemalla **Valmis**.
 
-### Lisäkommentit
-<a id="additional-comments" class="xliff"></a> 
+### <a name="additional-comments"></a>Lisäkommentit 
 
 -   Jos käyttäjä peruuttaa työnkulun kirjauskansion rivin luomisen jälkeen, kirjauskansio on kirjaamattomassa tilassa. Jos käyttäjä kuitenkin haluaa myöhemmin käyttää saman tuotantotilauksen työnkulkua, rivit lisätään avoimeen kirjauskansioon eikä uuteen kirjauskansioon.
 -   Uusi työnkulku tukee myös sarjanumeroiden rekisteröintiä.

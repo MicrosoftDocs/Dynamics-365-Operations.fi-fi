@@ -24,13 +24,11 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Cross docking tuotantotilauksista lähtevien laituriin
-<a id="cross-docking-from-production-orders-to-outbound-docks" class="xliff"></a>
+# <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking tuotantotilauksista lähtevien laituriin
 
 Tässä ohjeaiheessa kerrotaan, miten valmiiksi ilmoitetun materiaalin cross docking -prosessia hallitaan tuotantolinjasta lähtevien laituriin.
 
-Johdanto
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Johdanto
 ------------
 
 Cross docking tuotannosta lähtevien sijaintiin on hyödyllinen valmistajille, joiden tuotantomäärät ovat suuria ja jotka haluavat lähettää valmiit tuotteet heti, kun tuotantolinja on ilmoittanut ne valmiiksi. Tuotteet on tarkoitus lähettää jakelukeskuksiin, jotka sijaitsevat asiakaskysynnän läheisyydessä, sen sijaan että varastoa koottaisiin valmistustoimipaikkaan.
@@ -47,25 +45,21 @@ Tuote ilmoitetaan valmiiksi tuotannon tuotossijaintiin (3) ja trukin kuljettaja 
 
 [![](./media/scenario1.png)](./media/scenario1.png)
 
-## Cross docking -määritys
-<a id="configure-cross-docking" class="xliff"></a>
+## <a name="configure-cross-docking"></a>Cross docking -määritys
 Voit määrittää cross docking -prosessin **työkäytännöissä**. Työkäytäntö sisältää työtilaustyypin, paikan ja tuotteen. Seuraavassa esimerkissä cross docking määritetään tuotteelle X ja sijaintiin Y.
 
-#### Työtilaustyypit
-<a id="work-order-types" class="xliff"></a>
+#### <a name="work-order-types"></a>Työtilaustyypit
 
 -   Työtilaustyyppi: valmiiden tuotteiden poispano
 -   Työn luontimentelmä: cross docking
 -   Cross docking -käytännön nimi: siirtotilaukset
 
-#### Varastosijainnit
-<a id="inventory-locations" class="xliff"></a>
+#### <a name="inventory-locations"></a>Varastosijainnit
 
 -   Varasto: 51
 -   Paikka: Y
 
-#### Tuotteet
-<a id="products" class="xliff"></a>
+#### <a name="products"></a>Tuotteet
 
 -   Nimiketunnus: X
 
@@ -76,31 +70,26 @@ Tällä hetkellä cross docking voidaan määrittää vain kahdelle työtilausty
 
 **Cross docking -käytännössä** määritetään, mitä asiakirjatyyppejä cross docking koskee. Tällä hetkellä ainoa tuettu asiakirjatyyppi on **siirtotilaus**. Seuraavassa esimerkissä määritetään cross docking -käytäntö.
 
-### Cross docking -käytännön nimi: siirtotilaus
-<a id="cross-docking-policy-name-transfer-order" class="xliff"></a>
+### <a name="cross-docking-policy-name-transfer-order"></a>Cross docking -käytännön nimi: siirtotilaus
 
 -   Järjestysnumero: 10
 -   Työtilaustyyppi: siirtovarasto-otto
 -   Cross docking -tarve vaatii sijainnin: epätosi
 -   Cross docking -strategia: päivämäärä ja aika
 
-### Järjestysnumero
-<a id="sequence-number" class="xliff"></a>
+### <a name="sequence-number"></a>Järjestysnumero
 
 **Järjestysnumero** ilmaisee asiakirjatyypin prioriteetin. Tällä hetkellä ainoa tuettu tyyppi on **siirtovarasto-otto**. Järjestysnumerolla onkin merkitystä vasta sitten, kun tuettavia tilaustyyppiä on useita.
 
-### Cross docking -käytäntö
-<a id="cross-docking-policy" class="xliff"></a>
+### <a name="cross-docking-policy"></a>Cross docking -käytäntö
 
 Cross docking -käytäntö määrittää myös siirtotilauksen kysynnän priorisointikäytännön. Jos esimerkiksi samalle tuotteelle on useita siirtotilauksia, kuormassa määritetty ja siirtotilaukseen liitetty ajoitettu päivämäärä ja aika määrittävät tilausten priorisointijärjestyksen. Ajoitettu päivämäärä ja aika voidaan määrittää suoraan kuormassa. Vaihtoehtoisesti ne voidaan määrittää kuormaan liitetyssä **ajoitetusta tapaamisesta**. Cross docking -strategia määrittää priorisoinnin. Tällä hetkellä on vain yksi strategia: **päivämäärä ja kellonaika**.
 
-### Cross docking -tarve vaatii sijainnin
-<a id="cross-docking-demand-requires-location" class="xliff"></a>
+### <a name="cross-docking-demand-requires-location"></a>Cross docking -tarve vaatii sijainnin
 
 Voit määrittää cross docking -käytännössä ehdon, jonka mukaan siirtotilauksiin on määritettävä sijainti, jota ilman sitä ei voi ottaa mukaan cross docking -prosessiin. Tämä ehto määritetään **Cross docking -tarve vaatii sijainnin** -kentässä. Kuormaan liitettyä ajoitetun tapaamisen sijaintia käytetään niiden tavaroiden lopullisena sijaintia, joissa käytetään cross dockingia. **Määritä**-työtilaustyypin **siirtovarasto-oton** sijaintidirektiivi määrittää niiden tavaroiden lopulllisen sijainnin, joissa käytetään cross dockingia. **Cross docking -tarve vaatii sijainnin** -kentän määrittäminen voi olla hyödyllistä skenaariossa, jossa valmiissa tavaroissa käytetään cross dockingia vain, jossa perävaunu on määritetty lastausovelle. Tässä skenaariossa tavarat siirretään suoraan tuotantolinjalta perävaunuun. Kun perävaunu on määritetty lastausovelle, käyttäjä määrittää sijainnin ajoitettuun tapaamiseen, jolloin sijainti tulee myös käytettäväksi cross dockingissa. Seuraavissa osissa käsitellään kaksi esimerkkiä.
 
-#### Skenaario 1 – Cross docking tuotannosta siirtotilauksiin
-<a id="scenario-1--cross-docking-from-production-to-transfer-orders" class="xliff"></a>
+#### <a name="scenario-1--cross-docking-from-production-to-transfer-orders"></a>Skenaario 1 – Cross docking tuotannosta siirtotilauksiin
 
 Kun tuote on ilmoitettu valmiiksi tuotantolinjalla, se siirretään lastausovisijaintiin, jossa se lastataan kuorma-autoon ja siirretään jakelukeskukseen. Käytä yrityksen USMF:ää.
 
@@ -117,8 +106,7 @@ Kun tuote on ilmoitettu valmiiksi tuotantolinjalla, se siirretään lastausovisi
 
 **Valmiiden tuotteiden poispano** -tyyppinen työ luotiin ja käsiteltiin.
 
-#### Skenaario 2 – Cross docking tuotannosta siirtotuotantotilaukseen sekä ajoitettu tapaaminen
-<a id="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule" class="xliff"></a>
+#### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Skenaario 2 – Cross docking tuotannosta siirtotuotantotilaukseen sekä ajoitettu tapaaminen
 
 Kun tuote on ilmoitettu valmiiksi tuotantolinjalla, se siirretään lastausovisijaintiin, joka saadaan lastausovisijaintien ajoitetusta tapaamisesta. Käytä yrityksen USMF:ää.
 
@@ -132,8 +120,7 @@ Kun tuote on ilmoitettu valmiiksi tuotantolinjalla, se siirretään lastausovisi
 8.  Siirry mobiililaiteportaaliin ja valitse valikossa **Ilmoita valmiiksi ja pane pois**.
 9.  Ilmoita nimiketunnus **L0101** valmiiksi kämmenlaitteessa. Huomaa, että poispanosijainti on nyt **LASTAUSOVI 2**. Tämä sijainti löytyy ajoitetusta tapaamisesta eikä **Siirron vastaanotto** -sijaintidirektiivistä.
 
-### Lisätiedot
-<a id="additional-information" class="xliff"></a>
+### <a name="additional-information"></a>Lisätiedot
 
 -   Cross docking -skenaariota tuetaan erä- ja sarjanumero-ohjatuissa nimikkeissä sekä erä- että sarjanumerodimensioissa, joille on määritetty varaushierarkiassa sijainti ylä- tai alapuolella.
 -   Valmiiksi raportoitua määrää ei voi jakaa pienemmälle siirtotilaustarpeelle. Jos esimerkiksi 20 kappaletta ilmoitetaan valmiiksi ja siirtotilaus on 5 kappaleelle, cross dockingiin soveltuvaa siirtotilausta ei löydy.

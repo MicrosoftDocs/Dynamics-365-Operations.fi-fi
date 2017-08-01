@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Myymälän suorituksen analysointi
-<a id="analyze-store-performance" class="xliff"></a>
+# <a name="analyze-store-performance"></a>Myymälän suorituksen analysointi
 
 [!include[banner](includes/banner.md)]
 

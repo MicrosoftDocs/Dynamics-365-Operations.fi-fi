@@ -26,16 +26,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kulujenhallinnan mobiilityötila
-<a id="expense-management-mobile-workspace" class="xliff"></a>
+# <a name="expense-management-mobile-workspace"></a>Kulujenhallinnan mobiilityötila
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä ohjeaiheessa on tietoja kulujenhallinnan mobiilityötilasta, joka on saatavilla Microsoft Dynamics 365 for Finance and Operationsin mobiilisovelluksessa. Työtilan avulla käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Mobiilityötilassa käyttäjät voivat myös luoda kulurivejä nopeasti käyttämällä liitettyä kuittia.
 
-Yhteenveto Kulujenhallinnan mobiilityötilasta
-<a id="overview-of-the-expense-management-mobile-workspace" class="xliff"></a>
+<a name="overview-of-the-expense-management-mobile-workspace"></a>Yhteenveto Kulujenhallinnan mobiilityötilasta
 ---------------------------------------------------
 
 Moni organisaatio edellyttää, että työntekijän hyvitettäväksi lähetettäviin matka- tai yritystoimintaan liittyvään kuluraporttiin liitetään kuitti. **Kulujenhallinnan** mobiilityötilan avulla käyttäjät voivat nopeasti luoda uusia kulurivejä valitsemassaan mobiililaitteessa liittämällä kuitista valokuvakopion. Käyttäjät voivat myös ottaa kuvan kuitista ja liittää sen kuluraporttiin myöhemmin. **Kulujenhallinnan** mobiilityötilan avulla käyttäjä voi siis:
@@ -46,8 +44,7 @@ Moni organisaatio edellyttää, että työntekijän hyvitettäväksi lähetettä
 
 Ohjeen jäljellä olevat osat käsittelevät **Kulujenhallinnan** mobiilityötilan käyttöönottoa ja käyttöä.
 
-## Edellytykset
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Edellytykset
 Varmista ennen **kulujenhallinnan** mobiilityötilan käyttöönottoa, että järjestelmänvalvoja on toteuttanut seuraavat vaatimukset.
 
 <table>
@@ -93,15 +90,13 @@ Varmista ennen **kulujenhallinnan** mobiilityötilan käyttöönottoa, että jä
 </tbody>
 </table>
 
-## Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen
-<a id="download-and-install-the-finance-and-operations-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-finance-and-operations-mobile-app"></a>Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen
 Lataa ja asenna Finance and Operations -mobiilisovellus sovelluskaupasta.
 
 -   Android: [Finance and Operations Google Play Storessa](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
 -   iPhone: [Finance and Operations iTunes App Storessa](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 
-## Finance and Operations -mobiilisovellukseen kirjautuminen
-<a id="sign-in-to-the-finance-and-operations-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-finance-and-operations-mobile-app"></a>Finance and Operations -mobiilisovellukseen kirjautuminen
 1.  Käynnistä sovellus mobiililaitteessa.
 2.  Anna Finance and Operationsin URL-osoite.
 3.  annan yritys, johon kirjaudutaan. Kirjoita esimerkiksi **USMF**.
@@ -110,8 +105,7 @@ Lataa ja asenna Finance and Operations -mobiilisovellus sovelluskaupasta.
 
 [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Kuittien sieppaaminen kulujenhallinnan mobiilityötilassa
-<a id="capture-a-receipt-by-using-the-expense-management-mobile-workspace" class="xliff"></a>
+## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a>Kuittien sieppaaminen kulujenhallinnan mobiilityötilassa
 1.  Valitse mobiililaitteessasi **Kulujenhallinnan** työtila.
 2.  Valitse **Sieppaa kuitti**.
 3.  Valitse **Ota kuva** tai **Valitse kuva**.
@@ -125,8 +119,7 @@ Lataa ja asenna Finance and Operations -mobiilisovellus sovelluskaupasta.
 
 5.  Valitse **Valmis**.
 
-## Kulujen pikasyöttö kulujenhallinnan mobiilityötilassa
-<a id="quick-expense-entry-by-using-the-expense-management-mobile-workspace" class="xliff"></a>
+## <a name="quick-expense-entry-by-using-the-expense-management-mobile-workspace"></a>Kulujen pikasyöttö kulujenhallinnan mobiilityötilassa
 1.  Valitse mobiililaitteessasi **Kulujenhallinnan** työtila.
 2.  Valitse **Kulun pikasyöttö**.
 3.  Valitse kulun luokka. Näet luettelon kululuokista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Finance and Operationsin mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos luokka ei ole luettelossa, valitse **Haku** ja tee verkkohaku Finance and Operationsissa. Etsi kululuokan tai -tyypin perusteella.

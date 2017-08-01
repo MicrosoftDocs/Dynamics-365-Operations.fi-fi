@@ -21,15 +21,13 @@ ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
 
 ---
-# Toimittajan laskuautomaatio
-<a id="vendor-invoice-automation" class="xliff"></a>
+# <a name="vendor-invoice-automation"></a>Toimittajan laskuautomaatio
 
 Tässä ohjeaiheessa kerrotaan ominaisuuksista, joita voidaan käyttää toimittajalaskujen päästä päähän -automatisointiin. Tämä koskee myös laskuja, jotka sisältävät liitteitä.
 
 Organisaatiot, jotka haluavat helpottaa ostoreskontran prosessejaan, määrittelevät usein laskutusprosessin yhdeksi tärkeimmäksi tehostettavaksi prosessialueeksi. Usein nämä organisaatiot siirtävät paperilaskujen käsittelyn ulkoiselle optisten merkkien tunnistuksen (OCR) palveluntarjoajalle. Ne saavat koneellisesti luettavat laskun metatiedot ja jokaisen laskun skannatun kuvan. Automaation avuksi luodaan "viimeisen osuuden" ratkaisu, joka mahdollistaa näiden artefaktien käytön laskutusjärjestelmissä. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition mahdollistaa nyt tämän "viimeisen osuuden" valmiin automaatioratkaisun käyttöönoton laskuautomaatioratkaisun avulla.
 
-## Ratkaisukonteksti
-<a id="solution-context" class="xliff"></a>
+## <a name="solution-context"></a>Ratkaisukonteksti
 
 Laskuautomaatioratkaisu tuo käyttöön vakiokäyttöliittymän, joka sisällyttää laskun metatiedot laskun otsikkoon ja laskutusriveille sekä mahdolliset laskuliitteet. Mikä tahansa ulkoinen järjestelmä, joka voi luoda tämän käyttöliittymän kanssa yhteensopivia artefakteja, voi lähettää syötteen Finance and Operations -palveluun laskujen ja liitteiden automaattista käsittelyä varten.
 
@@ -39,8 +37,7 @@ Seuraavassa kuvassa on esimerkkitilanne integroinnista, jossa Contoso on tehnyt 
 
 Edellisestä skenaariosta on useita mahdollisia versioita, jos laskun integrointi on pakollinen. Toinen käyttöliittymän käyttötapaus on tietojen siirtäminen laskujen ja liitteiden luomiseksi Finance and Operations -palvelussa.
 
-### Ratkaisukomponentit
-<a id="solution-components" class="xliff"></a>
+### <a name="solution-components"></a>Ratkaisukomponentit
 
 Seuraavat komponentit sisältyvät kattavaan ratkaisuun:
 
@@ -50,8 +47,7 @@ Seuraavat komponentit sisältyvät kattavaan ratkaisuun:
 
 Tämä aiheohje sisältää myös näiden ratkaisukomponenttien yksityiskohtaiset kuvaukset.
 
-## Tietoyksiköt
-<a id="data-entities" class="xliff"></a>
+## <a name="data-entities"></a>Tietoyksiköt
 
 Datapaketti on työyksikkö, joka on lähetettävä Finance and Operations -palveluun, jotta laskun otsikko, laskurivit ja laskun liitteet voidaan luoda. Seuraavia tietoyksiköitä käytetään datapaketin muodostavien artefaktien luomiseen:
 
@@ -77,8 +73,7 @@ Noudata näitä vaiheita, kun haluat luoda nopeasti testitietoja, jotka sisält�
 1. Vie tiedot.
 1. Lataa viedyt tiedot pakettina. Voit käyttää pakettia tietojen tuontiin kohde-esiintymiin testausta varten.
 
-### Yritys määrittäminen laskua varten
-<a id="determining-the-legal-entity-for-an-invoice" class="xliff"></a>
+### <a name="determining-the-legal-entity-for-an-invoice"></a>Yritys määrittäminen laskua varten
 
 Tietopakettien kautta tuodut laskut voidaan liittää ne omistaviin yrityksiin kahdella tavalla:
 
@@ -88,13 +83,11 @@ Tietopakettien kautta tuodut laskut voidaan liittää ne omistaviin yrityksiin k
 > [!NOTE]
 > Tämä on vakiotyyppinen tietojen hallintatoiminto. Tämä on selitetty laskujen yhteydessä vain kattavuuden vuoksi.
 
-## Poikkeuksen käsittely
-<a id="exception-processing" class="xliff"></a>
+## <a name="exception-processing"></a>Poikkeuksen käsittely
 
 Skenaarioissa, joissa toimittajalaskut tulevat Finance and Operations -palveluun integroinnin kautta, ostoreskontratiimin jäsenellä on oltava helppo tapa käsitellä poikkeuksia tai epäonnistuneita laskuja ja keino luoda odottavia laskuja epäonnistuneista laskuista. Toimittajan laskujen poikkeusten käsittely on nyt osa Finance and Operations -palvelua.
 
-### Poikkeusluettelo-sivu
-<a id="exceptions-list-page" class="xliff"></a>
+### <a name="exceptions-list-page"></a>Poikkeusluettelo-sivu
 
 Uusi laskun poikkeusten luettelosivu on kohdassa **Ostoreskontra** > **Laskut** > **Epäonnistuneet tuonnit** > **Toimittajan laskut, joiden tuonti epäonnistui**. Tällä sivulla näkyvät kaikki toimittajalaskujen otsikkotietueet Toimittajan laskun otsikko ‑tietoyksikön väliaikaisesta taulukosta. Huomaa, että samaa tietueita voidaan tarkastella **Tietojen hallinta** -työtilasta, jossa voit myös suorittaa samat toiminnot, jotka ovat käytössä poikkeusten käsittelytoiminnossa. Poikkeuksien käsittelytoiminnon käyttöliittymä on kuitenkin optimoitu toimintokäyttäjää varten.
 
@@ -129,8 +122,7 @@ Luettelosivun tukee seuraavia toimia:
 + **Muokkaa** – Avaa poikkeustietue muokkaustilassa siten, että voit korjata ongelmia.
 + **Asetukset** – Luettelosivuilla käytettävissä olevien vakiovaihtoehtojen tarkastelu. Voit käyttää **Lisää työtilaan** -asetusta ja kiinnittää työtilaasi poikkeusluettelosivun luettelona tai ruutuna.
 
-### Poikkeustiedot-sivu
-<a id="exception-details-page" class="xliff"></a>
+### <a name="exception-details-page"></a>Poikkeustiedot-sivu
 
 Käynnistäessäsi muokkaustilan näyttöön tulee poikkeustiedot-sivu laskuista, joissa on ongelmia. Jos liitteitä on paljon, lasku ja oletusliite näkyvät rinnakkain Poikkeustiedot-sivulla.
 
@@ -142,8 +134,7 @@ Poikkeustiedot-sivu tukee seuraava toimintoa:
 
 + **Luo odottava lasku** – Kun laskun ongelmat on korjattu poikkeuskäsittelyn yhteydessä, voit luoda laskun valitsemalla tämän painikkeen. Odottavien laskujen luominen tapahtuu taustalla (asynkronisena työvaiheena).
 
-### Jaettu palvelu vs. organisaatioperusteinen poikkeusten käsittely
-<a id="shared-service-vs-organization-based-exception-processing" class="xliff"></a>
+### <a name="shared-service-vs-organization-based-exception-processing"></a>Jaettu palvelu vs. organisaatioperusteinen poikkeusten käsittely
 
 Poikkeusluettelo-sivu tukee vakiotyyppisiä suojausrakenteita, joita **Tietojen hallinta** -työtila tukee väliaikaisten tiedostojen käsittelyssä. Laskun tuontityö voidaan suojata seuraavilla tavoilla:
 
@@ -159,8 +150,7 @@ Esimerkiksi Contoso on päättänyt käsitellä laskun poikkeuksia yrityskohtais
 
 Contoso voi myös päättää ettei se pakota mitään suojausta, jotta samat käyttäjät voivat prosessoida laskun poikkeuksia kaikissa yrityksissä. Tämä asetus mahdollistaa jaetut palvelut -skenaarion laskun poikkeusten hallintaa varten.
 
-## Liitteiden rinnakkainen tarkastelu
-<a id="side-by-side-attachment-viewer" class="xliff"></a>
+## <a name="side-by-side-attachment-viewer"></a>Liitteiden rinnakkainen tarkastelu
 
 Seuraavilla sivuilla, joita käytetään laskutusprosessiin, on nyt liitteiden tarkastelutoiminto toimittajan laskujen helppoa tarkastelua varten:
 
@@ -184,20 +174,17 @@ Liitteen tarkastelutoiminnon päätoiminto:
 > [!NOTE]
 > Nämä toiminnot ovat käytettävissä vain kuvatiedostoille (JPEG TIFF, PNG jne.). Näillä toiminnoilla kuvaan tekemäsi muutokset tallennetaan kuvatiedostoon. Tällä hetkellä liitteen tarkastelutoiminto ei sisällä versionhallinta- tai tarkistusominaisuuksia.
 
-### Oletusliite
-<a id="default-attachment" class="xliff"></a>
+### <a name="default-attachment"></a>Oletusliite
 
 Jos toimittajalaskussa on useampia kuin yksi liite , voit määrittää yhden asiakirjan oletusliitteeksi **Liitteet**-sivulla. **On oletusliite** -asetus on tämän toiminnon osaksi lisätty uusi asetus. Tämä asetus on käytettävissä myös toimittajan laskujen asiakirjaliite -tietoyksikössä. Näin oletusliite voidaan määrittää integrointien avulla.
 
 Ainoastaan yksi tiedosto voidaan määrittää oletusliitteeksi. Määritettyäsi asiakirjan oletusliitteeksi se näytetään automaattisesti liitteen katseluohjelmassa laskun avaamisen yhteydessä. Jos et määritä mitään asiakirjaa oletusliitteeksi, liitteen katseluohjelma ei näytetä automaattisesti mitään liitettä laskun avaamisen yhteydessä.
 
-### Näytä/piilota laskun liitteet
-<a id="showhide-invoice-attachments" class="xliff"></a>
+### <a name="showhide-invoice-attachments"></a>Näytä/piilota laskun liitteet
 
 Uudella painikkeella, joka on käytettävissä **Poikkeuksen käsittely**, **Odottava lasku** ja **Laskukirjauskansio** -kyselysivuilla, voit näyttää tai piilottaa liitteiden tarkastelutoiminnon.
 
-### Suojaus
-<a id="security" class="xliff"></a>
+### <a name="security"></a>Suojaus
 
 Seuraavia liitteen katseluohjelman toimintoja ohjataan roolipohjaisen suojauksen kautta:
 
@@ -205,8 +192,7 @@ Seuraavia liitteen katseluohjelman toimintoja ohjataan roolipohjaisen suojauksen
 + Esto
 + Huomautus
 
-### Odottavat toimittajan laskut -sivu
-<a id="pending-vendor-invoices-page" class="xliff"></a>
+### <a name="pending-vendor-invoices-page"></a>Odottavat toimittajan laskut -sivu
 
 Seuraavat oikeudet mahdollistavat vain luku -tyyppiset käyttöoikeudet tai luku-/kirjoitus-oikeudet liitteen katseluohjelmassa korostamis-, esto- ja huomautustoiminnoille:
 
@@ -223,8 +209,7 @@ Seuraavat roolit antavat vain luku -oikeudet tai luku-/kirjoitusoikeudet liittee
 + **Ostoreskontra-assistentti** ja **Ostoreskontrapäällikkö**: Toimittajan laskujen ylläpito -tehtävä on annettu näille rooleille.
 + **Ostoreskontra-assistentti**, **Ostoreskontrapäällikkö**, **Ostoreskontran keskitetty maksuliikenneassistentti** ja **Ostoreskontran maksuliikenneassistentti**: Kohdista kyselyjä toimittajan laskujen tilaan -velvollisuus on liitetty näihin rooleihin.
 
-### Laskun poikkeustiedot -sivu
-<a id="invoice-exception-details-page" class="xliff"></a>
+### <a name="invoice-exception-details-page"></a>Laskun poikkeustiedot -sivu
 
 Seuraavat oikeudet mahdollistavat vain luku -tyyppiset käyttöoikeudet tai luku-/kirjoitus-oikeudet liitteen katseluohjelmassa korostamis-, esto- ja huomautustoiminnoille.
 

@@ -26,24 +26,21 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Toiminnon haku
-<a id="action-search" class="xliff"></a>
+# <a name="action-search"></a>Toiminnon haku
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa kuvataan Microsoft Dynamics 365 for Finance and Operationsin toimintohakuominaisuutta. Toimintohaku auttaa sinua löytämään ja suorittamaan toimintoja sivulla.
 
-Johdanto
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Johdanto
 ------------
 
 Microsoft Dynamics 365 for Finance and Operations näyttää ensisijaisesti komennot toimintoruuduissa – sekä vakiotoimintoruudussa, joka näkyy sivun yläreunassa, että työkalupalkeissa, jotka näkyvät sivun eri osissa. Aiemmissa versioissa Päävihjeet-toiminnon avulla pystyit nopeasti käyttämään mitä tahansa toimintoruudun painiketta painamalla Alt-näppäintä ja sitten sarjan kirjaimia. 
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) Nykyisessä Finance and Operationsin versiossa Päävihjeet-toimintoa ei kuitenkaan ole enää saatavilla, vaan sen on korvannut toimintohakuominaisuus. Tämän uuden ominaisuuden avulla voit nopeasti etsiä ja suorittaa painikkeen mistä tahansa näkyvillä olevasta toimintoruudusta.
 
-## Toimintohaun käyttö
-<a id="using-action-search" class="xliff"></a>
+## <a name="using-action-search"></a>Toimintohaun käyttö
 Suorita seuraavat vaiheet, kun haluat käyttää toimintohaku-ominaisuutta:
 
 1.  Valitse toimintoruudussa **toimintohaku**-kenttää. (**toimintohaku**-kentässä on suurennuslasikuvake.)
@@ -56,8 +53,7 @@ Kun painike on suoritettu, huomio palautuu viimeiseen toimeesi sivulla niin, ett
 
 Voit myös aloittaa toiminnon painamalla näppäinyhdistelmää Ctrl+/ tai Alt+Q. Paina pikanäppäintä uudelleen palataksesi edelliseen toimeesi sivulla.
 
-## Tulosluetteloon tutustuminen
-<a id="understanding-the-results-list" class="xliff"></a>
+## <a name="understanding-the-results-list"></a>Tulosluetteloon tutustuminen
 Usein Finance and Operationsissa sinun on tiedettävä painikkeesta sekä sijainti että konteksti, jotta ymmärtäisit täysin painikkeen tarkoituksen. Tämän vuoksi lisätiedot on jokaisesta nimikkeestä tulosluettelossa, jotta voit ymmärtää täysin luettelossa näytettävät painikkeet. Erityisesti painikkeen "polku" näytetään. Tämä polku saattaa soveltuvin osin sisältää seuraavien käyttöliittymäelementtien otsikot:
 
 -   Toimintoruutu-välilehti
@@ -74,8 +70,7 @@ Edellisessä esimerkissä toimintohakku näytti tulokset standardimuotoisesta to
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
-## Toimintohaku vs. siirtymishaku
-<a id="action-search-vs-navigation-search" class="xliff"></a>
+## <a name="action-search-vs-navigation-search"></a>Toimintohaku vs. siirtymishaku
 Toimintohaun tarkoituksena on etsiä ja suorittaa toimintoja sivulla. Finance and Operationsissa on myös erillinen hakumekanismi sivujen etsimiseen ja niille siirtymiseen. Lisätietoja tästä ominaisuudesta löydät artikkelista. [Siirtymishaku](navigation-search.md).
 
 

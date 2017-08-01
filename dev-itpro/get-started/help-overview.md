@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Yleistä Ohjeesta
-<a id="help-overview" class="xliff"></a>
+# <a name="help-overview"></a>Yleistä Ohjeesta
 
 [!include[banner](../includes/banner.md)]
 
@@ -57,8 +56,7 @@ Tässä ohjeaiheessa käsitellään ohjejärjestelmää ja kerrotaan, miten voit
 > [!IMPORTANT]
 > **Tehtäväoppaat**-välilehti ei ole tällä hetkellä käytettävissä Microsoft Dynamics 365 for Talentissa ja Microsoft Dynamics 365 for Retailissa. Tämän toiminnon käyttöönottamista myöhemmissä versiossa ollaan toteuttamassa. Perustoimintoja koskevat Talentin aloituskokemuksen tehtäväoppaat ovat edelleen käytettävissä. Retailin ja Talentin menettelyohje on saatavana myös docs.microsoft.com-sivustossa ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)).
 
-## Ohje osoitteessa docs.microsoft.com
-<a id="help-on-docsmicrosoftcom" class="xliff"></a>
+## <a name="help-on-docsmicrosoftcom"></a>Ohje osoitteessa docs.microsoft.com
 
 Docs.microsoft.com-sivusto ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) on Dynamics 365 for Finance and Operationsin tuoteohjeistuksen ensisijainen lähde. Sivustossa on seuraavat ominaisuudet:
 
@@ -67,8 +65,7 @@ Docs.microsoft.com-sivusto ([docs.microsoft.com/dynamics365/operations](/dynamic
 -   **Eri tyyppisen sisällön käyttö** – saat sivustossa nopeasti käyttöösi erilaista Dynamics 365 for Finance and Operationsia koskevaa sisältöä, kuten Microsoft Office Mix -esityksiä, tehtäväoppaita, videoita ja ohjeaiheita.
 -   **Liiketoimintaprosesseja tukeva sisältö**– sivustossa on liiketoimintaprosesseihin keskittyvää sisältöä, joka hyödyntää Microsoft Dynamics Lifecycle Services (LCS) -palvelujen liiketoimintaprosessin mallintajaa.
 
-### Haku sivustosta docs.microsoft.com
-<a id="searching-on-docsmicrosoftcom" class="xliff"></a>
+### <a name="searching-on-docsmicrosoftcom"></a>Haku sivustosta docs.microsoft.com
 Sisältöä koskevista hauista esitetään paljon kysymyksiä. Jos aloitat sivuston käytön sivulta, jolla on tietoja Finance and Operationsista, hakusi koskee vain Finance and Operationsin sisältöä. Voit poistaa laajuuden määrityksen valitsemalla hakuruudun Operations-kohdan vieressä olevaa X-kohtaa. 
 
 ![Hae](./media/search-scope.png)
@@ -78,12 +75,10 @@ Voit etsiä sisältöä myös millä tahansa hakukoneella. Haku tuottaa parhaat 
 
 ![Sivustohaun tulokset](./media/site-search-results.png)
 
-### Unified Operationsin docs.microsoft.com-sisällysluettelo
-<a id="the-docsmicrosoftcom-table-of-contents-for-unified-operations" class="xliff"></a>
+### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>Unified Operationsin docs.microsoft.com-sisällysluettelo
 Kaikilla tuotteilla on Docs-sivustossa sama sisällysluettelo, jonka avulla asiakkaat näkevät käyttämänsä ohjeaiheen kontekstin. Voit etsiä ohjeaiheita myös suodattamalla.
 
-### Miten voin vaikuttaa?
-<a id="how-can-i-contribute" class="xliff"></a> 
+### <a name="how-can-i-contribute"></a>Miten voin vaikuttaa? 
 
 Jätä kommentti. 
 
@@ -105,8 +100,7 @@ Syötä oikealle sähköpostiosoite ja uusi salasana, kun haluat luoda sivustoll
 ![Kirjautumisasetukset](./media/signin-options.png)
 
 
-## Tehtäväoppaat
-<a id="task-guides" class="xliff"></a>
+## <a name="task-guides"></a>Tehtäväoppaat
 Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti tehtävän tai liiketoimintaprosessin eri vaiheet. Voit avata (toistaa) tehtäväoppaan Ohje-ruudusta. Kun napsautat tehtäväopasta ensimmäisen kerran, Ohje-ruutuun tulee näkyviin tehtävän vaiheittaiset ohjeet. Lokalisoidut tehtäväoppaat ovat nyt saatavana. 
 
 Kullekin Unified Operations -tuotteelle on saatavana erilliset tehtäväoppaat. Kohdassa Tehtäväoppaiden käyttö ohjeruudusta käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä. 
@@ -119,8 +113,7 @@ Aloita opastettu vuorovaikutteinen toiminta valitsemalla **Käynnistä tehtävä
 > [!IMPORTANT] 
 > Tehtäväoppaan toiston aikana annettavat tiedot ovat todellisia. Jos olet tuotantoympäristössä, tiedot annetaan käytössä olevassa yrityksessä.
 
-### Tehtävän tallennustoiminto
-<a id="it-all-begins-with-task-recorder" class="xliff"></a>
+### <a name="it-all-begins-with-task-recorder"></a>Tehtävän tallennustoiminto
 
 Tehtävän ohjaukset luodaan tehtävän tallennustoiminnolla. Kun käytät tehtävätallennetta, kaikki Finance and Operations -käyttöliittymässä tekemäsi toimet (kuten valikoiden napsauttaminen, asetusten muuttaminen ja tietojen antaminen) tallennetaan. Kaikkia tallennettuja vaiheita kutsutaan tehtävätallenteeksi. Kuten edellisessä osassa selitettiin, tehtävätallenteet voidaan näyttää Ohje-ruudussa ja ne voidaan toistaa tehtävän opastuksena. Tehtävätallenteita voi kuitenkin käyttää myös muilla tavoin:
 
@@ -129,27 +122,23 @@ Tehtävän ohjaukset luodaan tehtävän tallennustoiminnolla. Kun käytät teht�
 
 Lisätietoja tehtävän tallennustoiminnosta on ohjeaiheessa [Finance and Operationsin tehtävien tallennustoiminto](../user-interface/task-recorder.md).
 
-### Mukautettujen tehtävätallenteiden luominen
-<a id="creating-customized-task-recordings" class="xliff"></a>
+### <a name="creating-customized-task-recordings"></a>Mukautettujen tehtävätallenteiden luominen
 
 Voit luoda omia tehtävätallenteita tai ladata ja mukauttaa Microsoftin toimittamia tehtävätallenteita. Voitkin luoda organisaatiolle mukautetun ohjeen, joka vastaa juuri kyseistä Finance and Operations -käyttöönottoa. Jos haluat näyttää tehtävätallenteen Finance and Operationsin ohjeruudussa ja toistaa sen tehtäväoppaana, tallenne on tallennettava LCS:n BPM-kirjastoon. Kumppanit voivat puolestaan siirtää kirjaston yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Täydelliset ohjeet ovat artikkelissa [Ohjeistuksen tai koulutuksen luonti tehtävätallenteiden avulla](../user-interface/task-recorder.md).
 
-## Tuotteen sisäinen ohje
-<a id="in-product-help" class="xliff"></a>
+## <a name="in-product-help"></a>Tuotteen sisäinen ohje
 Voit käyttää Finance and Operationsin ohjesisältöä joko napsauttamalla **Ohje** (**?**) -kuvaketta tai näppäinyhdistelmällä Ctrl+Vaihto+?. Kumpikin menetelmä avaa Ohje-ruudun. Voit käyttää Ohje-ruudusta kaikkia artikkeleita tai tehtävän ohjauksia. 
 
 ![Ohje-ruutu](./media/help-pane-wiki-1024x684.png)
 
-### Ohjeaiheiden käyttö ohjeruudusta
-<a id="accessing-help-topics-from-the-help-pane" class="xliff"></a>
+### <a name="accessing-help-topics-from-the-help-pane"></a>Ohjeaiheiden käyttö ohjeruudusta
 
 Voit avata Finance and Operations -asiakasohjelmaa koskevia artikkeleita ohjeruudussa. Kun avaat ohjeruudun ja valitset **Wiki**-välilehden, näkyvissä on avointa Finance and Operations -sivua käsitteleviä artikkeleita. Jos artikkeleita ei löydy, tarkenna hakua avainsanoilla. Kun napsautat artikkelia Ohje-ruudussa, selaimeen avautuu uusi välilehti, jossa artikkeli näkyy. 
 
 > [!IMPORTANT]
 > Tämä osa ei koske Dynamics 365 for Talentia. Talentin ohjejärjestelmä yhdistetään automaattisesti tuotteen tehtäväoppaisiin. Talentissa ei voi myöskään luoda mukautettuja tehtäväoppaita. 
 
-### Tehtävän ohjauksien käyttö Ohje-ruudusta
-<a id="accessing-task-guides-from-the-help-pane" class="xliff"></a>
+### <a name="accessing-task-guides-from-the-help-pane"></a>Tehtävän ohjauksien käyttö Ohje-ruudusta
 
 Tehtäväoppaita ei voi käyttää ohjeruudusta, ennen kuin järjestelmänvalvojan on määrittänyt asetuksia Finance and Operationsin **Järjestelmän parametrit** -sivulla. 
 
@@ -175,15 +164,13 @@ Kun järjestelmänvalvoja on suorittanut nämä vaiheet, voit avata Ohje-ruudun 
 
 ![Tehtäväoppaan lukunäkymä](./media/task-guide-ops-1024x742.png)
 
-### Missä käännetyt tehtäväoppaat sijaitsevat?
-<a id="where-are-the-translated-task-guides" class="xliff"></a>
+### <a name="where-are-the-translated-task-guides"></a>Missä käännetyt tehtäväoppaat sijaitsevat?
 
 Käännetyt tehtävän ohjaukset julkaistaan kirjastoissa, joiden otsikossa lukee "kaikki kielet". Jos haluat avata lokalisoidun tehtäväoppaan ohjeen Finance and Operationsissa, varmista, että olet muodostanut sopivaan kirjastoon. Kullekin käyttäjälle avautuvan tehtäväoppaan kieli määräytyy kieliasetuksissa, jotka on valittu kohdassa **Asetukset** &gt; **Asetukset**. 
 -   Jos tehtäväopas on käännetty, tehtäväopas avautuu valitsemallasi kielellä.
 -   Jos tehtäväopasta ei ole vielä käännetty, vain osa tekstistä (ohjausobjektien teksti) näkyy valitun kielisenä.
 
-## Lisäresurssit
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Lisäresurssit
 Seuraavassa taulussa on luettelo sivustoista, joissa on Unified Operations -sisältöä. Sisältösivustomme on järjestetty tukemaan asiakkaan elinkaarta. Kullakin vaiheella on omat tukisivustot. Jos sivuston nimen vieressä on tähti (\*), sivustoon on kirjauduttava palvelusopimukseen liitetyllä tilillä.
 
 | Sivusto                                                                     | kuvaus                                                                                                                                                                                                                                |
@@ -199,8 +186,7 @@ Seuraavassa taulussa on luettelo sivustoista, joissa on Unified Operations -sis�
 
 
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 [Finance and Operationsin ohjejärjestelmä (ladattava tietolomake)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
 

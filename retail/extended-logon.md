@@ -28,60 +28,50 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Jatketun sisäänkirjautumisen määrittäminen pilvimyyntipisteelle ja myyntipisteelle
-<a id="set-up-extended-logon-functionality-for-cloud-pos-and-mpos" class="xliff"></a>
+# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Jatketun sisäänkirjautumisen määrittäminen pilvimyyntipisteelle ja myyntipisteelle
 
 [!include[banner](includes/banner.md)]
 
 
 Tässä aiheessa käsitellään Cloud POS:n ja Retail Modern POS:n (MPOS) laajennetun kirjautumisen määrittämistä.
 
-Jatketun sisäänkirjautumisen määrittäminen
-<a id="setting-up-extended-logon" class="xliff"></a>
+<a name="setting-up-extended-logon"></a>Jatketun sisäänkirjautumisen määrittäminen
 =========================
 
 Viivakoodimuotojen asetukset ovat **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipisteen profiilit** &gt; **Toimintoprofiilit**. **Toiminnot**-pikavälilehti sisältää seuraavat jatkettuun sisäänkirjautumiseen liittyvät asetukset.
 
-### Henkilökunnan viivakoodisisäänkirjautuminen
-<a id="staff-bar-code-logon" class="xliff"></a>
+### <a name="staff-bar-code-logon"></a>Henkilökunnan viivakoodisisäänkirjautuminen
 
 Kun **Henkilökunnan viivakoodisisäänkirjautuminen** -asetus on käytössä, työntekijät, joiden myyntipisteen sisäänkirjautumisen tunnistetietoihin on määritetty jatkettu sisäänkirjautuminen, voivat kirjautua sisään viivakoodin avulla.
 
-### Henkilökunnan viivakoodisisäänkirjautumisessa tarvitaan salasana
-<a id="staff-bar-code-logon-requires-password" class="xliff"></a>
+### <a name="staff-bar-code-logon-requires-password"></a>Henkilökunnan viivakoodisisäänkirjautumisessa tarvitaan salasana
 
 Kun **Henkilökunnan viivakoodisisäänkirjautumisessa tarvitaan salasana** -asetus on käytössä, henkilökunnan viivakoodisisäänkirjautuminen valitsee vain työntekijän, jolle on määritetty esitetty jatkettu sisäänkirjautuminen. Työntekijöiden on silti syötettävä salasanansa, kun tämä asetus on käytössä.
 
-### Henkilökunnan korttisisäänkirjautuminen
-<a id="staff-card-logon" class="xliff"></a>
+### <a name="staff-card-logon"></a>Henkilökunnan korttisisäänkirjautuminen
 
 Kun **Henkilökunnan korttisisäänkirjautuminen** -asetus on käytössä, työntekijät, joiden myyntipisteen sisäänkirjautumisen tunnistetietoihin on määritetty jatkettu sisäänkirjautuminen, voivat kirjautua sisään magneettinauhan avulla.
 
-### Henkilökunnan korttisisäänkirjautumisessa tarvitaan salasana
-<a id="staff-card-logon-requires-password" class="xliff"></a>
+### <a name="staff-card-logon-requires-password"></a>Henkilökunnan korttisisäänkirjautumisessa tarvitaan salasana
 
 Kun **Henkilökunnan korttisisäänkirjautumisessa tarvitaan salasana** -asetus on käytössä, henkilökunnan korttisisäänkirjautuminen valitsee vain työntekijän, jolle on määritetty esitetty jatkettu sisäänkirjautuminen. Työntekijöiden on silti syötettävä salasanansa, kun tämä asetus on käytössä.
 
-Jatketun sisäänkirjautumisen määrittäminen
-<a id="assigning-an-extended-logon" class="xliff"></a>
+<a name="assigning-an-extended-logon"></a>Jatketun sisäänkirjautumisen määrittäminen
 ===========================
 
 Oletuksena vain päälliköt voivat määrittää työntekijöille jatketun sisäänkirjautumisen. Määritä laajennettu sisäänkirjautuminen, siirtymällä myyntipisteessä kohtaan **Jatkettu kirjautuminen**. Etsi sitten työntekijä syöttämällä hänen operaattorintunnus hakukenttään. Valitse työntekijä ja napsauta sitten **Määritä**. Lue tai skannaa työntekijälle määritettävä jatkettu sisäänkirjautuminen seuraavalla sivulla. Jos kortin luku tai skannaus luettiin onnistuneesti, **OK**-painike tulee näkyviin. Napsauta **OK** tallentaaksesi jatkettu sisäänkirjautuminen kyseiselle työntekijälle.
 
-Jatketun sisäänkirjautumisen poistaminen
-<a id="deleting-an-extended-logon" class="xliff"></a>
+<a name="deleting-an-extended-logon"></a>Jatketun sisäänkirjautumisen poistaminen
 ==========================
 
 Poista työntekijälle määritetty jatkettu sisäänkirjautuminen etsimällä työntekijä **Jatkettu kirjautuminen** -toiminnon avulla. Valitse työntekijä ja napsauta sitten **Poista määritys**. Kaikki tälle käyttäjälle määritetyt jatketun kirjautumisen tunnistetiedot poistetaan.
 
-Jatketun kirjautumisen laajentaminen
-<a id="extending-extended-logon" class="xliff"></a>
+<a name="extending-extended-logon"></a>Jatketun kirjautumisen laajentaminen
 ========================
 
 Kirjautumispalvelua voidaan laajentaa niin, että ne tukevat laajennettuja kirjautumislaitteita kuten käsiskannereita. Lisätietoja on POS-laajennettavuusdokumentaatiossa.
 
-Jatketun sisäänkirjautumisen käyttäminen
-<a id="using-extended-logon" class="xliff"></a>
+<a name="using-extended-logon"></a>Jatketun sisäänkirjautumisen käyttäminen
 ====================
 
 Kun jatkettu sisäänkirjautuminen on määritetty ja työntekijälle on määritetty viivakoodi tai magneettinauha, työntekijän tarvitsee vain lukea tai skannata korttinsa myyntipisteen kirjautumissivulla. Jos tarvitaan myös salasana ennen kuin kirjautuminen voi jatkua, työntekijää kehotetaan syöttämään salasanansa.

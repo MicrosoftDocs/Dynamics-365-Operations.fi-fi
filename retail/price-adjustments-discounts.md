@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Hinnanoikaisut ja alennukset
-<a id="price-adjustments-and-discounts" class="xliff"></a>
+# <a name="price-adjustments-and-discounts"></a>Hinnanoikaisut ja alennukset
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Tässä artikkelissa on tietoja Microsoft Dynamics 365 for Retailin hinnanoikais
 
 Voit tehdä Microsoft Dynamics 365 for Retailissa tuotteille hinnanoikaisuja sekä määrittää alennuksia, joita käytetään rivinimikkeeseen tai tapahtumaan myyntipisteessä, puhelinkeskuksen myyntitilauksessa tai verkkotilauksessa. Sekä hinnanoikaisut että alennukset voidaan linkittää hintaryhmiin. Hinnanoikaisuille ja alennuksille voidaan määrittää yksi aloitus- ja päättymispäivämäärä tai toistuva jakso, alennuskoodi ja joitakin muita määritteitä. Hinnanoikaisuja ja alennuksia voidaan käyttää tuotteissa, varianteissa tai kategorioissa. Jos tuotteelle on useita alennuksia, asiakas voi saada minkä tahansa alennuksen tai alennusten yhdistelmän alennuksen määritysten mukaisesti. Dynamics 365 for Retail käyttää automaattisesti alennusta tai alennusten yhdistelmää, joka takaa asiakkaalle parhaan hinnan. Kun määrität hinnanoikaisua tai alennusta, muista vahvistaa, että hintaryhmät on liitetty oikeisiin kanaviin, luetteloihin, liitoksiin tai kanta-asiakasohjelmiin, joissa haluat käyttää alennusta. Lisäksi jos haluat luoda alennustunnuksen automaattisesti, määritä numerosarjat **Vähittäismyynnin parametrit** -sivulla, ennen kuin määrität uuden hinnanoikaisun tai alennuksen. **Huomautus:** Voit poistaa hinnanoikaisun tai alennuksen. Tällöin tilastotiedot kuitenkin häviävät.
 
-### Alennusten tyypit
-<a id="types-of-discounts" class="xliff"></a>
+### <a name="types-of-discounts"></a>Alennusten tyypit
 
 Vähittäismyynnin alennuksia on neljää tyyppiä:
 

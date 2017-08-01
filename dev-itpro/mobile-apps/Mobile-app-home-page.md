@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Mobiilisovelluksen kotisivu
-<a id="mobile-app-home-page" class="xliff"></a>
+# <a name="mobile-app-home-page"></a>Mobiilisovelluksen kotisivu
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Unified Operation
 > [!NOTE]
 > Mobiilisovelluksen nimi oli aiemmin *Microsoft Dynamics 365 for Finance and Operations*.
 
-Yleiskuvaus
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Yleiskuvaus
 --------
 
 Mobiilisovelluksen avulla organisaatiosi liiketoimintaprosesseja voi käyttää mobiililaitteilla. Kun IT-järjestelmänvalvoja ottaa mobiilityötilat käyttöön organisaatiossa, käyttäjät voivat kirjautua sisään sovellukseen ja aloittaa liiketoimintaprosessien käyttämisen heti mobiililaitteillaan. Mobiilisovellukseen sisältyvät seuraavat, tuottavuutta parantavat ominaisuudet:
@@ -47,8 +45,7 @@ Mobiilisovelluksen avulla organisaatiosi liiketoimintaprosesseja voi käyttää 
 - IT-järjestelmänvalvoja tai sovelluskehittäjät voivat suunnitella mobiilityötiloja helposti verkkoasiakasohjelman työtilojen helppokäyttöisellä suunnitteluohjelmalla.
 - IT-järjestelmävalvojat voivat halutessaan optimoida työtilojen offline-ominaisuuksia liiketoimintalogiikan laajennuskehyksen avulla. Koska tietojen käsittely ei keskeydy laitteen ollessa offline-tilassa, mobiiliskenaariosi säilyvät mukautuvina, vaikka laitteilla ei olisikaan jatkuvaa verkkoyhteyttä.
 
-## Mobiilisovelluksen osat
-<a id="elements-of-the-mobile-app" class="xliff"></a>
+## <a name="elements-of-the-mobile-app"></a>Mobiilisovelluksen osat
 Mobiilisovelluksen käyttö koostuu neljästä, perusosasta: koontinäyttö, työtilat, sivut ja toiminnot. 
 
 [![Mobiilisovelluksen siirtymiskonseptit](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
@@ -62,8 +59,7 @@ Mobiilisovelluksen käyttö koostuu neljästä, perusosasta: koontinäyttö, ty�
     - Siirtyminen muille sivuille, joilla on liittyviä tietoja, kuten yksikön tietoja tai rivejä.
     - Tutustu luetteloon **toiminnoista**, jotka ovat käytettävissä kyseiseltä sivulta. Toimintojen avulla voit luoda tai muokata tietoja.
 
-## Käyttöönottoprosessi
-<a id="implementation-process" class="xliff"></a>
+## <a name="implementation-process"></a>Käyttöönottoprosessi
 Seuraavassa kuvassa on esitys Microsoftin toimittamien mobiilityötilojen ja mukautettujen mobiilityötilojen käyttöönottamisesta. 
 
 ![Mobiilisovellusten käyttöönottoprosessi](./media/Mobile-implementation-process-5.png)

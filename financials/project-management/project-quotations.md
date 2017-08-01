@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Projektitarjoukset
-<a id="project-quotations" class="xliff"></a>
+# <a name="project-quotations"></a>Projektitarjoukset
 
 [!include[banner](../includes/banner.md)]
 

@@ -24,23 +24,19 @@ ms.lasthandoff: 06/14/2017
 
 ---
 
-# Käyttöomaisuuden hallinnan työtila
-<a id="fixed-asset-management-workspace" class="xliff"></a>
+# <a name="fixed-asset-management-workspace"></a>Käyttöomaisuuden hallinnan työtila
 
 [!include[banner](../includes/banner.md)]
 
 **Käyttöomaisuuden hallinnan** työtilassa on järjestelmään vietyyn käyttöomaisuuteen liittyviä tietoja. Työtilassa on yhteenvetonäkymä ja analytiikkanäkymä. **Oma työ** -välilehdessä on yhteenvetoruutuja, tietoja käyttöomaisuudesta ja nykyisen yrityksen käyttöomaisuuteen liittyviä tietoja. Voit lisätä työtilassa analyysitietoja myös suoraan Power BI:n analytiikkaosaan. **Analytiikka – kaikki yritykset** -välilehti näyttää Microsoft Power BI:n ominaisuuksien avulla kaikkien yritysten käyttöomaisuuteen liittyviä visualisointeja.
 
-## Oma työ
-<a id="my-work" class="xliff"></a>
+## <a name="my-work"></a>Oma työ
 
-### Yhteenveto
-<a id="summary" class="xliff"></a>
+### <a name="summary"></a>Yhteenveto
 
 **Yhteenveto**-osan ruuduista saa yleiskatsauksen käyttöomaisuudesta. Tietoja on esimerkiksi vielä ostamattoman käyttöomaisuuden, kuluvan vuoden aikana ostetun käyttöomaisuuden ja kuluvan vuoden aikana poistetun käyttöomaisuuden mittareista. **Yhteenveto**-osasta pääsee myös siirtymään nopeasti **Käyttöomaisuus**-luettelosivulle, erän poistoehdotukseen ja käyttöomaisuuden kirjauskansioon.
 
-### Etsi käyttöomaisuus
-<a id="find-fixed-assets" class="xliff"></a>
+### <a name="find-fixed-assets"></a>Etsi käyttöomaisuus
 
 Voit hakea **Etsi käyttöomaisuus** -osassa nopeasti käyttöomaisuuseriä antamalla käyttöomaisuuden numeron, ryhmän, nimen, sijainnin tai vastuuhenkilön. Kaikki hakua vastaavat käyttöomaisuuserät näkyvät luettelossa.
 
@@ -50,20 +46,17 @@ Voit tarkastella luettelosta seuraavia sivuja:
  - Kaikkien käyttöomaisuuteen liitettyjen kirjojen **Kirjat**-sivu
  - **Käyttöomaisuuden arvostukset** -sivu
 
-### Arvostukset
-<a id="valuations" class="xliff"></a>
+### <a name="valuations"></a>Arvostukset
 
 **Käyttöomaisuuden arvostukset** -sivun avulla näet yhdellä sivulla tärkeimmät käyttöomaisuutta koskevat tiedot sekä tiedot kaikista käyttöomaisuuteen liitetyistä kirjoista. Sivun vasemman yläkulman **Saldot**-vaihtoehto näyttää kunkin käyttöomaisuuteen liitetyn kirjan nykyisen arvostuksen. Voit porautua arvoista taaksepäin tarkistamaan, mistä tapahtumista yhteenvetoarvo tarkkaan ottaen koostuu. Sivun vasemman yläkulman **Profiili**-vaihtoehto näyttää kunkin käyttöomaisuuteen liitetyn kirjan poistoaikataulun.
 
 Voit käyttää **Käyttöomaisuuden arvostukset** -sivua **Käyttöomaisuuden hallinta** -työtilasta tai **Käyttöomaisuus**-luettelosivulta.
 
-### Aiheeseen liittyviä tietoja
-<a id="related-information" class="xliff"></a>
+### <a name="related-information"></a>Aiheeseen liittyviä tietoja
 
 Voi siirtyä suoraan **Kirjojen asetukset** -sivulle, **Käyttöomaisuustapahtumien kysely** -sivulle ja useisiin raportteihin työtilan **Liittyvät tiedot** -osan linkeistä.
 
-### Analytiikka – kaikki yritykset
-<a id="analytics--all-companies" class="xliff"></a>
+### <a name="analytics--all-companies"></a>Analytiikka – kaikki yritykset
 
 **Analytiikka**-sivulla on tärkeitä kaikkia järjestelmän yrityksiä koskevia käyttöomaisuuden mittareita. Tämän välilehden käyttöä hallitaan Näytä kaikkien yritysten käyttöomaisuuserien analytiikka -suojausoikeuksilla.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Luottokorttien määritys, varmennus ja sieppaaminen
-<a id="credit-card-setup-authorization-and-capture" class="xliff"></a>
+# <a name="credit-card-setup-authorization-and-capture"></a>Luottokorttien määritys, varmennus ja sieppaaminen
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ ms.lasthandoff: 06/13/2017
 
 Tässä artikkelissa on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin tehtävän luottokortin varmennuksen yleiskatsaus. Artikkeli sisältää tietoja maksupalvelun määrittämisestä, luottokortin lisäämisestä myyntitilaukseen ja varmennuksen mitätöinnistä.
 
-Luottokorttien maksupalvelun määrittäminen
-<a id="setting-up-the-credit-card-payment-service" class="xliff"></a>
+<a name="setting-up-the-credit-card-payment-service"></a>Luottokorttien maksupalvelun määrittäminen
 ------------------------------------------
 
 Jos haluat käyttää luottokortteja, sinun on määritettävä ja aktivoitava maksupalvelu Maksupalvelut-sivulla. Maksupalvelu toimii välittäjänä yrityksesi ja asiakkaan korttimaksut käsittelevän pankin välillä. Sinun on käytettävä luottokorttimaksun tarjoajaa, joka on saatavilla Maksuyhdistin-kentässä ja määrittää tili kyseiselle palveluntarjoajalle. Sinun on sitten määritettävä muut asetukset Maksupalvelut-sivulla, määritettävä luottokorttityypit American Express, Discover, MasterCard ja Visa -korteille Luottokorttityypit-sivulla ja aktivoitava palveluntarjoaja oletuspalveluntarjoajaksi. Sinun on myös noudatettava seuraavia vaiheita:
@@ -46,8 +44,7 @@ Jos haluat käyttää luottokortteja, sinun on määritettävä ja aktivoitava m
 -   Määritä luottokorttien maksuehdot Maksuehdot-sivulla. Valitse Luottokortti Maksutyyppi-kentässä.
 -   Syötä asiakkaan luottokorttitiedot Asiakkaan luottokortit -sivulla.
 
-## Uuden luottokortin lisääminen
-<a id="adding-a-new-credit-card" class="xliff"></a>
+## <a name="adding-a-new-credit-card"></a>Uuden luottokortin lisääminen
 Voit luoda uudet luottokorttitietueet Asiakkaat-sivulla kohdasta Asiakas > Määritä > Luottokortti. Voit myös luoda luottokorttitietueita kirjatessasi myyntitilauksia Myyntitilaus-sivulla kohdasta Hallinta > Asiakas > Luottokortti > Rekisteröi.
 Luottokortin lisääminen myyntitilaukseen
 -------------------------------------
@@ -58,13 +55,11 @@ Luottokortin varmennus
 
 Kun luottokortti varmennetaan, kortin numero ja kortin haltijan henkilöllisyys varmennetaan ja käytettävissä oleva luottosaldo tarkistetaan. Voit myös tarkistaa kortin tarkistusnumeron ja kortinhaltijan osoitteen. Laskun summa vähennetään tämän jälkeen asiakkaan käytettävissä olevasta luottosaldosta. Maksupalvelu lähettää tiedon luottokortin hyväksymisestä tai hylkäämisestä. Kun myyntitilaus laskutetaan, laskun summa veloitetaan (siepataan) luottokortilta.
 
-### Kortin tarkistusnumero
-<a id="card-verification-value" class="xliff"></a>
+### <a name="card-verification-value"></a>Kortin tarkistusnumero
 
 Voit vaatia kortin tarkistusarvon käyttöä, jota kutsutaan toisinaan myös turvakoodiksi. American Express -korteilla tämä luku on nelinumeroinen. Discover, MasterCard ja Visa -korteilla luku on kolminumeroinen.
 
-### Osoitteen tarkistus
-<a id="address-verification" class="xliff"></a>
+### <a name="address-verification"></a>Osoitteen tarkistus
 
 Osoitteen varmennustiedot lähetetään aina maksupalvelulle. Voit päättää, kuinka paljon tietoja tarvitaan tapahtuman hyväksymiseksi. Muista varmistaa palveluntarjoajaltasi, voiko se hyväksyä näitä tietoja. Nämä ovat osoitetietojen varmennuksen vaihtoehdot:
 -   **Hyväksy tapahtuma aina** – Hyväksy tapahtuma riippumatta osoitteen tarkistustuloksista.
@@ -72,19 +67,16 @@ Osoitteen varmennustiedot lähetetään aina maksupalvelulle. Voit päättää, 
 -   **Laskutusosoite** – Vertaa kortinhaltijan nimeä ja laskutusosoitetta tapahtumasta luottokorttiyhtiön tietoihin.
 -   **Laskutusosoitteen postinumero** – Vertaa kortinhaltijan nimeä, laskutusosoitetta ja postinumeroa tapahtumasta luottokorttiyhtiön tietoihin.
 
-## Tietotuki
-<a id="data-support" class="xliff"></a>
+## <a name="data-support"></a>Tietotuki
 Voit määrittää kullekin tukemallesi luottokorttityypille tuetun tiedon tason. Taso määrittää, kuinka paljon tietoja tapahtumasta siirretään maksupalvelulle. Muista varmistaa palveluntarjoajaltasi, voiko se tarjota näitä tietoja. Nämä ovat tietotuen tasoasetukset:
 -   **Taso 1** – Siirrä tapahtuman päivämäärä, summa ja kuvaus.
 -   **Taso 2** – Siirrä kaikki tason 1 tiedot sekä toimitusosoite, myyjän osoite ja verotiedot.
 -   **Taso 3** – Siirrä kaikki tason 2 tiedot sekä tilausrivin tiedot.
 
-## Osamaksut
-<a id="partial-payments" class="xliff"></a>
+## <a name="partial-payments"></a>Osamaksut
 Jos toimitat vain osan tilauksesta, osatilauksen määrä siepataan ja koko tilauksen määrälle tarkoitettu varmennus suljetaan. Toimittamattomalle tilausmäärälle luodaan sitten uusi varmennus.
 
-## Varmennuksen mitätöinti 
-<a id="voiding-an-authorization" class="xliff"></a>
+## <a name="voiding-an-authorization"></a>Varmennuksen mitätöinti 
 Luottokortin varmennuksen voit mitätöidä vaihtamalla maksutavan sellaiseksi, jolla ei ole Luottokortti-tyyppiä.
 
 

@@ -25,15 +25,13 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Käytettävissä oleva Power BI -sisältö
-<a id="power-bi-content-available" class="xliff"></a>
+# <a name="power-bi-content-available"></a>Käytettävissä oleva Power BI -sisältö
 [!include[banner](../includes/banner.md)]
 
 
 Tämä ohjeaihe on luettelo käytettävissä olevasta Microsoft Power BI -sisällöstä, ja siinä kerrotaan resursseista, joissa on lisätietoja kyseisestä sisällöstä.
 
-## Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivityksen Power BI -sisältö
-<a id="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a>
+## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivityksen Power BI -sisältö
 Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys, käytettävissä on seuraava Power BI -sisältö:
 
 - [Etujen Power BI -sisältö](benefits-power-bi.md)
@@ -55,19 +53,15 @@ Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise
 - [Varaston suorituskyvyn Power BI -sisältö](warehouse-power-bi-content.md)
 - [Työvoiman mittarit - Power BI -sisältö](workforce-analysis-power-bi-content-pack.md)  
 
-### Sisällön käyttäminen
-<a id="accessing-the-content" class="xliff"></a>
+### <a name="accessing-the-content"></a>Sisällön käyttäminen
 
-#### Upotettu sisältö
-<a id="embedded-content" class="xliff"></a>
+#### <a name="embedded-content"></a>Upotettu sisältö
 Tähtimerkillä (\*) merkittyä sisältöä lukuun ottamatta kaikki edellisessä luettelossa mainittu sisältö on upotettuna sovelluksessa. Saat lisätietoja Power BI -sisällön tarkastelemista napsauttamalla linkkejä.
 
-#### Lifecycle Servicesissä käytettävissä olevat tiedostot
-<a id="files-available-in-lifecycle-services" class="xliff"></a>
+#### <a name="files-available-in-lifecycle-services"></a>Lifecycle Servicesissä käytettävissä olevat tiedostot
 Tämä Power BI -sisältö on käytettävissä Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen yhdistämisestä tietoihin on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
 
-## Dynamics 365 for Operationsin version 1611 Power BI -sisältö
-<a id="power-bi-content-for-dynamics-365-for-operations-version-1611" class="xliff"></a>
+## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a>Dynamics 365 for Operationsin version 1611 Power BI -sisältö
 Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, seuraava Power BI -sisältö on käytettävissä:
 
 - [Etuudet - Power BI -sisältö](compensation-and-benefits-analysis-power-bi-content-pack.md)   
@@ -84,20 +78,17 @@ Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, seuraava P
 - [Varaston suorituskyvyn Power BI -sisältö](warehouse-power-bi-content.md)
 - [Työvoiman mittarit - Power BI -sisältö](workforce-analysis-power-bi-content-pack.md)  
 
-### Sisällön käyttäminen
-<a id="accessing-the-content" class="xliff"></a>
+### <a name="accessing-the-content"></a>Sisällön käyttäminen
 Tämä Power BI -sisältö on käytettävissä Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen yhdistämisestä tietoihin on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
 
-## Microsoft Dynamics AX:n Power BI -sisältö
-<a id="power-bi-content-for-microsoft-dynamics-ax" class="xliff"></a>
+## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n Power BI -sisältö
 Jos käytössä on Microsoft Dynamics AX 7.0 tai Microsoft Dynamics AX 7.0.1, seuraava Power BI -sisältö on käytettävissä:
 
 - [Kustannushintojen hallinta - Power BI -sisältö](cost-management-content-pack.md)    
 - [Taloudellisen suorituskyvyn Power BI -sisältö](financial-performance-power-bi-content-pack.md)
 - [Vähittäismyyntikanavan suorituskyvyn Power BI -sisältö](retail-channel-performance-dashboard-power-bi-data.md) 
 
-### Sisällön käyttäminen
-<a id="accessing-the-content" class="xliff"></a>
+### <a name="accessing-the-content"></a>Sisällön käyttäminen
 Tämä Power BI -sisältö on käytettävissä PowerBI.comista.
 
 1. Kirjaudu sisään osoitteessa [PowerBI.com](https://www.powerbi.com/).

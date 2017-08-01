@@ -26,37 +26,32 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Tuloslaskelman talousraportti
-<a id="income-statement-financial-report" class="xliff"></a>
+# <a name="income-statement-financial-report"></a>Tuloslaskelman talousraportti
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa kuvataan tuloilmoituksen oletusraporttia. Siinä myös kuvataan rakenneosat, jotka liittyvät tähän raporttiin. 
 
-Tuloslaskelman oletusraportti
-<a id="default-income-statement-report" class="xliff"></a>
+<a name="default-income-statement-report"></a>Tuloslaskelman oletusraportti
 -------------------------------
 
 | Oletusraportti             | Toiminnot                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
 | Tuloslaskelma – oletus | Sisältää organisaation tuottavuusnäkymän sekä kuluvalle kaudelle että vuoden alusta tähän asti. |
 
-## Rakenneosat
-<a id="building-blocks" class="xliff"></a>
+## <a name="building-blocks"></a>Rakenneosat
 Tuloslaskelman talousraportissa käytetään seuraavia rakenneosia.
 
 | Oletusraportti             | Rivimääritys                     | Sarakemääritys          |
 |----------------------------|------------------------------------|----------------------------|
 | Tuloslaskelma - oletus | Yhteenvetotuloslaskelma - oletus | Kausittainen ja vuoden alusta - oletusarvo |
 
-### Rivimääritys
-<a id="row-definition" class="xliff"></a>
+### <a name="row-definition"></a>Rivimääritys
 
 Rivimääritys, yhteenvetotuloslaskelma – oletusarvo, sisältää osan perinteisen tuloslaskelman jokaiselle osalle. Päätilin luokan dimensiota käytetään tämän rivimäärityksen muodostamisessa. Tämän vuoksi kuka tahansa voi luoda raportin ilman muutosten tekemistä.
 
-### Sarakemääritys
-<a id="column-definition" class="xliff"></a>
+### <a name="column-definition"></a>Sarakemääritys
 
 Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksityiskohtaisia tasoja ja taloushallinnon tietoja.
 
@@ -67,8 +62,7 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
 
  
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Talousraportointi](financial-reporting-getting-started.md)

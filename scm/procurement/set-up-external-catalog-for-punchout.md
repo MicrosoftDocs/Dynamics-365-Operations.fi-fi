@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen
-<a id="set-up-an-external-catalog-for-punchout-eprocurement" class="xliff"></a>
+# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen
 
 Ulkoisen luettelon avulla voit varmistaa, että Dynamics 365 for Finance and Operations Enterprise edition heinäkuun 2017 päivityksellä myöhemmin käsiteltävät tuote- ja hintatiedot ovat paikkansapitäviä ja ajan tasalla. Varasto-ottoehdotus voidaan hyväksyä ja muuttaa ostotilaukseksi ja tilaus voidaan lähettää toimittajalle.
 
@@ -35,13 +34,11 @@ Kun ulkoinen luettelo on määritetty ja työntekijä valmistelee varasto-ottoeh
 
 Tiedonsiirron määrittääksesi toimittajan on luovutettava käyttöösi tietoja, joita voit käyttää ulkoisen luettelon konfiguraatiossa, kuten henkilöllisyys, ostajayrityksen toimialue, esimerkiksi "DUNS" ja "DUNS-numero", tunnistetiedot ja URL-osoite toimittajaluetteloon pääsemiseksi.
 
-## Ulkoisen luettelon asettaminen
-<a id="setting-up-an-external-catalog" class="xliff"></a>
+## <a name="setting-up-an-external-catalog"></a>Ulkoisen luettelon asettaminen
 
 Ulkoisen luettelon avulla työntekijä, joka määrittää ostoehdotuksen, pitää ohjata ulkoiseen sivustoon valitsemaan tuotteita. Tuotteet, jotka työntekijä valitsee ulkoisesta luettelosta, palautetaan Dynamics 365 for Finance and Operationsiin ajan tasalla olevien hintatietojen kera, minkä jälkeen ne voidaan lisätä ostoehdotukseen. Tarkoituksena ei ole, että työntekijät voivat tehdä tilauksen ulkoisessa sivustossa. Ulkoista luetteloa määritettäessä on varmistettava, että sivuston, jota voidaan käyttää ulkoisesta luettelosta, tarkoituksena on tarjoustietojen kerääminen eikä todellisen tilauksen tekeminen.
 
-### Kun määrität ulkoisen toimittajan tuoteluettelon, tee seuraavat tehtävät:
-<a id="to-set-up-an-external-vendor-catalog-complete-the-following-tasks" class="xliff"></a>
+### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Kun määrität ulkoisen toimittajan tuoteluettelon, tee seuraavat tehtävät:
 
 1. Määritä hankintaluokkahierarkia. Katso lisätietoja kohdasta [Aseta menettelytavat hankintaluokkien hierarkioille](/https://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/).
 2. Rekisteröi toimittaja Finance and Operationsiin. Ennen kuin voit määrittää toimittajan ulkoisen luettelon sivustolle pääsyn konfiguraatiot, sinun on määritettävä toimittaja ja toimittajan yhteystiedot Microsoft Dynamics 365 -järjestelmässä. Lisäksi ulkoisen luettelon toimittaja on lisättävä valittuun hankintaluokkaan. Lisätietoja toimittajien rekisteröinnistä Microsoft Dynamics 365:een on kohdassa [Toimittajayhteistyön käyttäjien hallinta](/procurement/manage-vendor-collaboration-users.md). Tietoja toimittajan määrittämisestä hankintaluokkaan on kohdassa [Hyväksy toimittajia tiettyihin hankintaluokkiin](/https://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/).
@@ -51,8 +48,7 @@ Ulkoisen luettelon avulla työntekijä, joka määrittää ostoehdotuksen, pitä
 6. Aktivoi ulkoinen luettelo **Aktivoi luettelo** -painikkeella **Ulkoiset luettelot** -sivulla. Ulkoinen luettelo on otettava käyttöön, ennen kuin työntekijät voivat käyttää sitä. Voit poistaa ulkoisen luettelon milloin tahansa.
 
 
-## (4) Ulkoisen toimittajaluettelon määrittäminen
-<a id="4-configure-the-external-vendor-catalog" class="xliff"></a>
+## <a name="4-configure-the-external-vendor-catalog"></a>(4) Ulkoisen toimittajaluettelon määrittäminen
 
 Tämä osa sisältää lisätietoja vaiheesta 4 edellä olevassa osassa.
 
@@ -68,8 +64,7 @@ Hankintakäytäntöjen avulla sallitaan tai rajoitetaan luokkien käyttöoikeuks
 
 Voit milloin tahansa ladata järjestelmän luoman viestin mallin valitsemalla **Palauta viestimuoto**. Huomaa, että jos palautat viestin muodon, nykyinen viesti korvataan automaattisesti luodulla viestimuodolla, jossa on tyhjiä tunnisteita.
 
-### cXML-määritysviesti
-<a id="cxml-setup-message" class="xliff"></a>
+### <a name="cxml-setup-message"></a>cXML-määritysviesti
 Ohessa on kuvaus tunnisteista, jotka sisältyvät malliin:
 
 | Kenttä | kuvaus | 
@@ -84,15 +79,13 @@ Ohessa on kuvaus tunnisteista, jotka sisältyvät malliin:
 |< Pyydä deploymentMode = ”” >|Testaus tai tuotannon käyttöönotto.|
 |< Pyyntö >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL >|Toimittajan yrityksen siirtymispäätepisteen URL-osoite.|
 
-### Ulkoiset elementit
-<a id="extrinsic-elements" class="xliff"></a>
+### <a name="extrinsic-elements"></a>Ulkoiset elementit
 
 Ulkoinen elementti on lisätieto, kuten käyttäjätunnus, joka perustuu käyttäjä, jolle siirto suoritetaan. Ulkoinen elementti määritetään, kun siirto tapahtuu ja se voidaan lähettää viestin pyynnön asetussanomassa.
 Toimittajalla voi olla vaatimus ulkoisen elementin vastaanottamisesta määrityspyynnössä. Tällöin kannattaa lisätä ulkoinen elementti ulkoisten elementtien luetteloon **Viestimuoto**-osassa **Ulkoinen luettelo** -sivulla. Määritä ulkoisen elementin nimi, jonka toimittaja voi tunnistaa, ja liitä se arvoon. Arvojen vaihtoehdot ovat: käyttäjänimi, sähköposti tai satunnainen arvo.
 Saat lisätietoja cXML-protokollasta kohdasta: http://cxml.org/
 
-## Takaisinlähetysviesti
-<a id="post-back-message" class="xliff"></a>
+## <a name="post-back-message"></a>Takaisinlähetysviesti
 Takaisinlähetysviesti on viesti, joka saadaan toimittajalta, kun käyttäjä kirjautuu pois ulkoisesta sivustosta ja palaa Finance and Operationsiin. Takaisinlähetysviestejä ei voi määrittää. Sanomat perustuvat cXML protocol määritys. Seuraavassa on tietoja, jotka voivat kuulua takaisinlähetysviestissä, joka vastaanotetaan ostoehdotuksen rivillä:
 
 | Toimittajalta vastaanotettu viesti | Kopioitu ostoehdotuksen riville Finance and Operationsissa|
@@ -107,8 +100,7 @@ Takaisinlähetysviesti on viesti, joka saadaan toimittajalta, kun käyttäjä ki
 |< ItemDetail >< Classification >< /Classification >|Sisältyy nimikkeen kuvaukseen|
 |< ItemDetail >< Luokitusryhmä=”” >|Sisältyy nimikkeen kuvaukseen|
 
-## Poista ulkoinen luettelo
-<a id="delete-an-external-catalog" class="xliff"></a>
+## <a name="delete-an-external-catalog"></a>Poista ulkoinen luettelo
 Poista ulkoinen luettelo sivulla olevalla Poista-toiminnolla.
 
 Ulkoista toimittajan tuoteluetteloa ei voi poistaa, jos tuotetta on pyydetty ulkoisesta toimittajan tuoteluettelosta. Sen sijaan ulkoisen toimittajan tuoteluettelon tilaksi määritetään ei-aktiiviseksi. Jos haluat poistaa ulkoisten toimittajien luettelon sivuston käyttöoikeudet mutta et poistaa niitä, muuta ulkoisen tuoteluettelon tilaksi ei-aktiivinen.

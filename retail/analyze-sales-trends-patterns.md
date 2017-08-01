@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Myyntitrendien ja -mallien analysointi
-<a id="analyze-sales-trends-and-patterns" class="xliff"></a>
+# <a name="analyze-sales-trends-and-patterns"></a>Myyntitrendien ja -mallien analysointi
 
 [!include[banner](includes/banner.md)]
 
