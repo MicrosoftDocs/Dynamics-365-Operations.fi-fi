@@ -21,25 +21,21 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kassayhteenveto – Power BI -sisältö
-<a id="cash-overview-power-bi-content" class="xliff"></a>
+# <a name="cash-overview-power-bi-content"></a>Kassayhteenveto – Power BI -sisältö
 
 [!include[banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään **kassayhteenvetoa** ja Microsoft Power BI -sisältöä. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Yleiskuvaus
 
 **Kassayhteenveto** – Power BI -sisältö luotiin henkilöille, jotka vastaavat organisaatiossa käteisvaroista. **Kassayhteenveto** – Power BI -sisältö tuo näkyvyyttä kassavirtaan. Se sisältää myös ennusteita, jotka parantavat päätöksentekoa ja siten myös kassavirran tilaa. Voit analysoida käteisvaroja yrityksen, valuutan ja pankkitilin perusteella. Saat tällä tavoin paremman käsityksen ylijäämistä ja vajeista.
 
-## Power BI -sisällön käyttö
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 
 Jos käytössä on Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys, **Kassayhteenveto** – Power BI -sisällön raportit näkyvät **Kassayhteenveto**- ja **Maksuliikenne**-työtiloissa.
 
-## Raportit, jotka sisältyvät Power BI -sisältöön
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raportit, jotka sisältyvät Power BI -sisältöön
 Seuraavassa taulukossa on tietoja mittareista, jotka löytyvät **Kassayhteenveto** – Power BI -sisällön kultakin raporttisivulta.
 
 | Raportti                                | Sisältö |
@@ -51,14 +47,12 @@ Seuraavassa taulukossa on tietoja mittareista, jotka löytyvät **Kassayhteenvet
 | Valuuttaennuste                     | <ul><li>Ennakoidut valuuttasaldot</li><li>Päivittäinen valuutan yhteenveto</li><li>Ennusteen tiedot</li></ul> |
 | Pankkitilin saldot                         | <ul><li>Pankkitilin kokonaissaldo järjestelmän valuuttana</li><li>Saldo yrityksen mukaan</li><li>Kuluvan päivän toteutuneen ja ennustetun saldon vertailu pankkitilin valuuttana</li><li>Saldo pankkitilin mukaan</li><li>Saldo valuutan mukaan</li></ul> |
 
-## Power BI -sisällön laajentaminen
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Power BI -sisällön laajentaminen
 Voit tehdä hyviä analyyseja henkilöille, jotka eivät käytä Dynamics 365:tä, Lifecycle Servicesin (LCS) sisältöpakettien avulla. Nämä sisältöpaketit voidaan muokata sisältämään muita raportteja ja visuaalisia tietoja, ja ne voidaan sitten julkaista analysoitavaksi Power BI.com -vuokraajassa. 
 
 **Kassayhteenveto** – Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
 
-## Tietomallin ja yksiköiden tiedot
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
 Seuraavassa taulukossa on esitetty yksiköt, joihin **Kassayhteenveto** – Power BI -sisältö perustuu.
 

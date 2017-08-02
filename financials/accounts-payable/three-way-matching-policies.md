@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kolmisuuntaiset vastaavuuskäytännöt
-<a id="three-way-matching-policies" class="xliff"></a>
+# <a name="three-way-matching-policies"></a>Kolmisuuntaiset vastaavuuskäytännöt
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa on esimerkkejä kolmisuuntaisesta vastaavuudesta.
 
-Esimerkki: Kolmisuuntainen vastaavuus nimikkeille
-<a id="example-three-way-matching-for-items" class="xliff"></a>
+<a name="example-three-way-matching-for-items"></a>Esimerkki: Kolmisuuntainen vastaavuus nimikkeille
 -------------------------------------
 
 **Yhteenveto:** Ken on vastuuhenkilö Fabrikam-nimisen yrityksen pääkonttorissa. Hän päättää, että kaikki toimittajan laskut, jotka perustuvat ostotilauksiin on yhdistettävä ostotilausriveihin (kaksisuuntainen vastaavuus). Käyttöomaisuuserinä käytettävien nimikkeiden ostolaskujen tulisi vastata sekä ostotilausrivejä että tuotteen vastaanottorivejä (kolmisuuntainen vastaavuus).
@@ -49,8 +47,7 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 -   Paula ja April ovat laskentapäälliköitä Fabrikamin Yhdysvaltain haaran ostoreskontraosastolla. He voivat valvoa yrityksen käytäntöjä ja varmistaa, että laskut maksetaan vasta, kun ne on täsmäytetty ostotilaukseen sekä sen ollessa aiheellista, tuotteiden ja palveluiden vastaanottoon.
 -   Tony on Fabrikamin Yhdysvaltain haaran tuotantopäällikkö. Hän ja muu tuotantohenkilöstö voi varmistaa, että nimikkeet vastaanotetaan siten, miten ne on tilattu toimittajilta ja että ne ovat seurattavissa niin, että henkilökunnalla on työnsä suorittamiseen vaadittavat resurssit.
 
-### Edellytykset
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Edellytykset
 
 -   Ken asettaa vastaavuuskäytännön yritystasolla kolmisuuntaiseksi.
 -   Ken asettaa yritystason otsikon tilan automaattisen vastaavuuspäivityksen asetuksen tilaksi Kyllä.
@@ -64,8 +61,7 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 
 -   Arnie, Contoson myyntireskontrakäsittelijä tarkistaa viikon toimitukset. Hän lähetystapahtumat, jotka laskutetaan Fabrikamilta CNC Milicron-koneiden toimituksesta. Hän lisää lähetys- ja käsittelykulut laskulle. Fabrikam ottaa toimituskulut osaksi käyttöomaisuuden kustannusta.
 
-### Skenaario
-<a id="scenario" class="xliff"></a>
+### <a name="scenario"></a>Skenaario
 
 1.  Sammy, Fabrikamin vastaanotto-osaston työntekijä vastaanottaa Contoson konetoimituksen kokonaismäärän. Hän syöttää määräksi 5 tuotteen vastaanotossa. Koska ostotilaus on vastaanotettu kokonaisuudessaan, sen tilaksi muuttuu Vastaanotettu.
 2.  Fabrikamin ostoreskontravastaava April kirjaa ja vahvistaa Contoson lähettämän laskun. Hän vahvistaa seuraavat tiedot:
@@ -91,8 +87,7 @@ Finance and Operationsin laskurivi sisältää seuraavat tiedot.
 
 Koska rivi läpäisee laskun täsmäytysprosessin, lasku on mahdollista kirjata.
 
-##  Esimerkki: Kolmisuuntainen vastaavuus nimike- ja toimittajayhdistelmille
-<a id="example-three-way-matching-for-item-and-vendor-combinations" class="xliff"></a>
+## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a> Esimerkki: Kolmisuuntainen vastaavuus nimike- ja toimittajayhdistelmille
 Yhteenveto: Ken on vastuuhenkilö Fabrikam-nimisen yrityksen pääkonttorissa. Hän päättää, että kaikki laskut, jotka perustuvat ostotilauksiin on yhdistettävä ostotilausriveihin (kaksisuuntainen vastaavuus). Cassie on Fabrikamin Malesian-konttorin kirjanpitäjä. Hän määrittää, että valitut, tietyiltä malesialaisilta toimittajilta tilattavat nimikkeet on täsmäytettävä sekä ostotilauksen riveihin ja tuotteen vastaanottoriveihin (kolmisuuntainen vastaavuus). Hän voi myös ohittaa vastaavuuskäytännön korkeamman tason vastaavuudella haluamilleen ostotilauksille. 
 
 Volyymi ja summat ovat pieniä, ja tiettyjen malesialaistoimittajien lähetyksissä on ollut ongelmia. Tämän vuoksi Cassie määrittää tiettyjen, Malesiasta hankittavien nimike- ja toimittajayhdistelmien hallinnan tasoksi kolmisuuntaisen vastaavuuden. 
@@ -101,8 +96,7 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 -   Ken on Fabrikam-nimisen yrityksen vastuuhenkilö. Hän voi auttaa organisaationsa henkilöstöä tunnistamaan ja oikaisemaan toimittajien nimikkeiden, eli tavaroiden ja palveluiden tilauksiin, vastaanottoihin ja maksuihin liittyviä ongelmia.
 -   Cassie on Fabrikamin Malesian-konttorin kirjanpitäjä. Hän voi valvoa yrityksen käytäntöjä ja varmistaa, että laskut maksetaan vasta, kun ne on täsmäytetty ostotilauksen riveihin sekä tuotteiden vastaanottoihin, jotka vastaavat tuotteita ja palveluita. Hän voi myös nostaa hallinnan tason kolmisuuntaiseksi vastaavuudeksi haluamilleen nimikkeille hallitakseen toiminnan kustannuksia.
 
-### Edellytykset
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Edellytykset
 
 -   Ken asettaa vastaavuuskäytännön yritystasolla kaksisuuntaiseksi.
 -   Ken asettaa yrityksen Täsmäytä kokonaishinnat -kentän arvoksi Prosenttiosuus ja syöttää 10 % toleranssiprosentiksi.
@@ -116,8 +110,7 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
     | MM01 – Langaton hiiri | 2        | 40,00      | 80,00      | Kaksisuuntainen vastaavuus                | Kolmisuuntainen vastaavuus                           |
     | USB-muistitikku             | 200      | 10,00      | 2 000,00   | Kaksisuuntainen vastaavuus                | Kaksisuuntainen vastaavuus                             |
 
-### Skenaario
-<a id="scenario" class="xliff"></a>
+### <a name="scenario"></a>Skenaario
 
 1.  Nimikkeet saapuvat. Sammy, työntekijä Fabrikamin Malesian konttorin vastaanotossa keskeytetään työssään eikä kirjaa tuotteen vastaanottoa välittömästi.
 2.  Fabrikamin ostoreskontravastaava April kirjaa ja vahvistaa Contoson lähettämän laskun. Hän vahvistaa seuraavat tiedot:

@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Tilaustenkäsittelyasetusten määrittäminen
-<a id="set-up-order-processing-options" class="xliff"></a>
+# <a name="set-up-order-processing-options"></a>Tilaustenkäsittelyasetusten määrittäminen
 
 [!include[banner](includes/banner.md)]
 

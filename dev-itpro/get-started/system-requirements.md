@@ -25,16 +25,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Järjestelmävaatimukset
-<a id="system-requirements" class="xliff"></a>
+# <a name="system-requirements"></a>Järjestelmävaatimukset
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations Enterprise edition -ohjelman nykyisen version järjestelmävaatimuksista.
 
-Tuetut selaimet
-<a id="supported-web-browsers" class="xliff"></a>
+<a name="supported-web-browsers"></a>Tuetut selaimet
 ----------------------
 
 Verkkosovellus voidaan suorittaa seuraavissa selaimissa, joita käytetään määritetyissä käyttöjärjestelmissä:
@@ -54,8 +52,7 @@ Ohjelmistovalmistajien sivustot sisältävät tietoja kunkin selaimen uusimmasta
 -   PDF-tiedostojen esikatseluun suosittelemme modernia verkkoselainta, kuten Microsoft Edge (uusin julkinen versio) Windows 10 -käyttöjärjestelmässä tai Google Chrome (uusin julkinen versio) Windows 10, Windows 8.1, Windows 8 tai Windows 7 -käyttöjärjestelmässä tai Google Nexus 10 -taulutietokoneessa.
 
 
-### Retail Cloud POS -sovelluksen tuetut selaimet
-<a id="supported-web-browsers-for-retail-cloud-pos" class="xliff"></a>
+### <a name="supported-web-browsers-for-retail-cloud-pos"></a>Retail Cloud POS -sovelluksen tuetut selaimet
 
 Vähittäismyynnin pilvimyyntipiste voidaan suorittaa seuraavissa selaimissa, joita käytetään määritetyissä käyttöjärjestelmissä:
 
@@ -63,8 +60,7 @@ Vähittäismyynnin pilvimyyntipiste voidaan suorittaa seuraavissa selaimissa, jo
 -   Internet Explorerin 11 Windows 10, Windows 8.1- tai Windows 7 -käyttöjärjestelmässä
 -   Chrome (uusin julkaistu versio) Windows 10, Windows 8.1 tai Windows 7 -käyttöjärjestelmässä
 
-## Verkon vaatimukset
-<a id="network-requirements" class="xliff"></a>
+## <a name="network-requirements"></a>Verkon vaatimukset
 -   Dynamics 365 for Finance and Operations, Enterprise edition on suunniteltu verkkoja varten, joiden viive on 250–300 millisekuntia (ms) tai vähemmän. Tämä on viive selainasiakkaan ja Microsoftin Azure-datakeskuksen välillä, joka isännöi Finance and Operations -sovellusta. On suositeltavaa testata verkon viive osoitteessa <http://www.azurespeed.com>.
 -   Kaistanleveyden vaatimukset riippuvat skenaariostasi. Yleisimmät tilanteet vaativat yli 50 kilotavua sekunnissa (KBps) kaistanleveyttä. Suosittelemme kuitenkin suurempaa kaistanleveyttä tilanteissa, joissa hyötykuorman vaatimus on korkea, kuten työtiloissa, tai tilanteissa, joissa vaaditaan laajaa mukauttamista.
 
@@ -72,25 +68,20 @@ Finance and Operations on yleisesti optimoitu Internet-käyttöön. Kyselyiden m
 
 **Varoitus:** älä laske kaistanleveysvaatimuksia asiakkaan sijainnista kertomalla käyttäjien määrä kaistanleveyden vähimmäisvaatimuksella. Tietyn sijainnin samanaikainen käyttö on vaikea laskea. Asiakkaat, jotka ovat huolissaan kaistanleveyden vaatimuksista voivat käyttää Finance and Operationsin ennakkoversiota.
 
-## .NET Framework -vaatimukset
-<a id="net-framework-requirements" class="xliff"></a>
+## <a name="net-framework-requirements"></a>.NET Framework -vaatimukset
 .NET Framework -version 4.6.2 vaaditaan kaikille kerran klikattaville sovelluksille, kuten asiakirjan reititysagentille. Asennusohjeet löydät kohdasta [.NET Frameworkin asentaminen](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
-## Tuetut Microsoft Office -sovellukset
-<a id="supported-microsoft-office-applications" class="xliff"></a>
+## <a name="supported-microsoft-office-applications"></a>Tuetut Microsoft Office -sovellukset
 -   Microsoft Office 2016:n Windows- tai Mac-version on oltava asennettuna, jotta Microsoft Excel ja Word-lisäosia voi käyttää. Lisätietoja versiovaatimuksista löydät kohdasta [Office-integroinnin vianmääritys](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
 -   Microsoft Office 2007 tai sitä uudempi on oltava asennettuna, jotta voit tarkastella Vie Exceliin tai Vie Wordiin -toimintojen luomia asiakirjoja.
 
-## Retail Modern POS -vaatimukset
-<a id="retail-modern-pos-requirements" class="xliff"></a>
-### Tuetut käyttöjärjestelmät
-<a id="supported-operating-systems" class="xliff"></a>
+## <a name="retail-modern-pos-requirements"></a>Retail Modern POS -vaatimukset
+### <a name="supported-operating-systems"></a>Tuetut käyttöjärjestelmät
 
 -   Retail Modern POS on 32-bittinen sovellus, mutta sen voi suorittaa sekä x86- että x64-arkkitehtuureilla.
 -   Retail Modern POS on tuettu vain Windows 10 Pro, Enterprise ja Enterprise LTSB -versioissa.
 
-### Järjestelmän vähimmäisvaatimukset
-<a id="minimum-system-requirements" class="xliff"></a>
+### <a name="minimum-system-requirements"></a>Järjestelmän vähimmäisvaatimukset
 
 -   Pienin tuettu näyttötarkkuus on 1280 × 1024.
 -   Tietokoneen, jolla Retail Modern POS -sovellusta käytetään on vastattava seuraavia vaatimuksia:
@@ -98,10 +89,8 @@ Finance and Operations on yleisesti optimoitu Internet-käyttöön. Kyselyiden m
     -   Siinä on oltava vähintään 3 gigatavua (GB) keskusmuistia.
     -   Siinä on oltava Internet-yhteys.
 
-## Retail hardware station -vaatimukset
-<a id="retail-hardware-station-requirements" class="xliff"></a>
-### Tuetut käyttöjärjestelmät
-<a id="supported-operating-systems" class="xliff"></a>
+## <a name="retail-hardware-station-requirements"></a>Retail hardware station -vaatimukset
+### <a name="supported-operating-systems"></a>Tuetut käyttöjärjestelmät
 
 -   Retail hardware station on 32-bittinen sovellus, mutta sen voi suorittaa sekä x86- että x64-arkkitehtuureilla.
 -   Retail hardware station on tuettu seuraavissa käyttöjärjestelmissä:
@@ -109,18 +98,15 @@ Finance and Operations on yleisesti optimoitu Internet-käyttöön. Kyselyiden m
     -   Windows 8.1 Update 1 Professional, Enterprise ja Embedded
     -   Windows 10 Pro, Enterprise ja Enterprise LTSB
 
-### Järjestelmän vähimmäisvaatimukset
-<a id="minimum-system-requirements" class="xliff"></a>
+### <a name="minimum-system-requirements"></a>Järjestelmän vähimmäisvaatimukset
 
 Tietokoneen on täytettävä kaikki järjestelmän vähimmäisvaatimukset, jotta seuraavien kohteiden asennus ja käyttö on mahdollista:
 
 -   IIS (Internet Information Services)
 -   Kolmannen osapuolen laitteisto
 
-## Vähittäismyymälän vähittäismyyntilaitteen vaatimukset
-<a id="retail-store-scale-unit-requirements" class="xliff"></a>
-### Tuetut käyttöjärjestelmät
-<a id="supported-operating-systems" class="xliff"></a>
+## <a name="retail-store-scale-unit-requirements"></a>Vähittäismyymälän vähittäismyyntilaitteen vaatimukset
+### <a name="supported-operating-systems"></a>Tuetut käyttöjärjestelmät
 
 -   Vähittäismyymälän vähittäismyyntilaite on 32-bittinen sovellus, mutta sen voi suorittaa sekä x86- että x64-arkkitehtuureilla.
 -   Vähittäismyymälän vähittäismyyntilaite on tuettu seuraavissa käyttöjärjestelmissä:
@@ -128,24 +114,20 @@ Tietokoneen on täytettävä kaikki järjestelmän vähimmäisvaatimukset, jotta
     -   Windows 8.1 Update 1 Professional, Enterprise ja Embedded
     -   Windows 10 Pro, Enterprise ja Enterprise LTSB
 
-### Järjestelmän vähimmäisvaatimukset
-<a id="minimum-system-requirements" class="xliff"></a>
+### <a name="minimum-system-requirements"></a>Järjestelmän vähimmäisvaatimukset
 
 -   4 Gt RAM-muistia
 -   1,6 GHz korkein ytimen suoritinnopeus (vähintään kaksi ydintä)
 -   Vähintään 10 gigatavua vapaata tallennustilaa (kanavatietokanta voi vaatia paljon tallennustilaa)
 
-### Suositeltavat järjestelmävaatimukset
-<a id="recommended-system-requirements" class="xliff"></a>
+### <a name="recommended-system-requirements"></a>Suositeltavat järjestelmävaatimukset
 
 -   6 Gt RAM-muistia
 -   2,4 GHz i7 (tai vastaava) ydinkohtainen suoritinnopeus (suositus on neljä ydintä)
 -   Vähintään 10 gigatavua vapaata tallennustilaa (kanavatietokanta voi vaatia paljon tallennustilaa)
 
-## Connectorin vaatimukset
-<a id="connector-requirements" class="xliff"></a>
-### Tuetut käyttöjärjestelmät
-<a id="supported-operating-systems" class="xliff"></a>
+## <a name="connector-requirements"></a>Connectorin vaatimukset
+### <a name="supported-operating-systems"></a>Tuetut käyttöjärjestelmät
 
 -   Connector for Microsoft Dynamics AX:ssä on kaksi erillistä asennusohjelmaa, **Async Server Connector service** ja **Real-time service for Dynamics AX 2012 R3**.
 -   Molemmat komponentit ovat 32-bittinen sovelluksia, mutta ne voi suorittaa sekä x86- että x64-arkkitehtuureilla.
@@ -155,19 +137,16 @@ Tietokoneen on täytettävä kaikki järjestelmän vähimmäisvaatimukset, jotta
     -   Windows 10 Pro, Enterprise ja Enterprise LTSB
     -   Windows Server 2012 R2, Windows Server 2016
 
-### Järjestelmän vähimmäisvaatimukset
-<a id="minimum-system-requirements" class="xliff"></a>
+### <a name="minimum-system-requirements"></a>Järjestelmän vähimmäisvaatimukset
 
 -   2 GT RAM-muistia, 4 GT RAM-muistia suositellaan
 -   1,6 GHz korkein ytimen suoritinnopeus (vähintään kaksi ydintä)
 -   Vähintään 10 gigatavua vapaata tallennustilaa (kanavatietokanta voi vaatia paljon tallennustilaa)
 
-## Vaatimukset paikalliseen kehitykseen virtuaalikoneessa
-<a id="requirements-for-development-on-local-vms" class="xliff"></a>
+## <a name="requirements-for-development-on-local-vms"></a>Vaatimukset paikalliseen kehitykseen virtuaalikoneessa
 Lisätietoja paikallisesta virtuaalikoneessa (VMs) kehittämistä koskevista vaatimuksista on kohdassa [Paikalliset virtuaalikoneet](../dev-tools/access-instances.md).
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Dynamics 365 for Finance and Operations, Enterprise Editionin kokeiluversion hankkiminen](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy)

@@ -27,16 +27,13 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kompensaation käsittely
-<a id="process-compensation" class="xliff"></a>
+# <a name="process-compensation"></a>Kompensaation käsittely
 Voit laskea kompensaation käsittelyssä työntekijöille uudet peruskompensaatiosummat pääoman oikaisujen, pätevyyteen liittyvien palkankorotustavoitteiden ja suorituksen perusteella. Tässä blogikirjoituksessa käsitellään kiinteiden kompensaatiosuunnitelmien perustyöntyönkulku kompensaation käsittelyssä ilman, että suoritus huomioidaan.
 
-## Uusien kompensaatiosummien ja -budjettien suunnittelu
-<a id="plan-the-new-compensation-amounts-and-budgets" class="xliff"></a>
+## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Uusien kompensaatiosummien ja -budjettien suunnittelu
 Jos haluat antaa työntekijöille pätevyyteen liittyvän palkankorotuksen, kiinteä lisäysbudjetti on ensin määritettävä kullekin osastolle: Kompensaation hallinta > Linkkejä > Pätevyyteen liittyvän palkankorotuksen tavoitteet. (Vaihtoehtoisesti voit avata tämän lomakkeen osaston kautta: Organisaatio > Osastot.) Voit nyt määrittää tarkemmin, onko tietyn ammattijärjestön tai toimipaikan työntekijöillä erilainen korotusprosentti. **Budjetti-** ja **Valuutta** -kentät on tarkoitettu vain tiedoksi, ja niiden avulla voi ilmoittaa budjetin valuuttasumman.
 
-## Kompensaatioprosessin määrittäminen
-<a id="set-up-the-compensation-process" class="xliff"></a>
+## <a name="set-up-the-compensation-process"></a>Kompensaatioprosessin määrittäminen
 Voit määrittä prosessitapahtumassa kompensaation käsittelyparametrit. Tähän sisältyy arviointipäiväjakso kompensaatiosummien määrittämistä varten.  Siinä on myös päivämäärä, jolloin uudet kompensaatiosummat tulevat voimaan.
 
 Vaihtoehtoisesti voit sisällyttää kiinteään suhteellisesti jaettuun palkkioon liittyvän työhönottopäivämäärän, jos jossakin kiinteässä kompensaatiosuunnitelmassa työhönottosääntönä on Prosentti. Näissä suunnitelmissa kaikki, jotka otettiin töihin jakson alkamispäivän jälkeen ja ennen kiinteään suhteellisesti jaettuun palkkioon liittyvää työhönottopäivämäärää, saavat 100 % lasketusta pätevyyteen perustuvasta tai yleisestä palkankorotuksesta. Kaikki, jotka otettiin töihin kiinteään suhteellisesti jaettuun palkkioon liittyvän työhönottopäivämäärän jälkeen ja ennen jakson päättymispäivää, saavat osan lasketusta palkankorotuksesta sen perusteella, kuinka monta päivää koko jaksosta he olivat töissä. Jos jakso esimerkiksi alkaa 1.1. ja päättyy 31.12. ja jos kiinteään suhteellisesti jaettuun palkkioon liittyvä työhönottopäivämäärä on 1.4., maaliskuussa töihin otettu työntekijä saa koko lasketun palkankorotuksen, kun taas 1.7. töihin otettu työntekijä saa suhteessa noin puolet lasketusta palkankorotuksesta.
@@ -66,12 +63,10 @@ Voit lisätä vain niitä kiinteään kompensaatio toimintoja, joissa on vaiheit
 |                                | **1 vaihe**– järjestelmä tarkistaa, onko työntekijä jo oman tasonsa viimeisessä viitepisteessä.                                                                                             |
 |                                | **2 vaihetta** – järjestelmä siirtää työntekijän kaksi vaihetta eteenpäin nykyisellä tasolla. Järjestelmä voi siirtää työntekijän vain yhden vaiheen tai nolla vaihetta, jos he pääsevät tasonsa viimeiseen viitepisteeseen. |
 
-## Suorita kompensaatioprosessi
-<a id="run-the-compensation-process" class="xliff"></a>
+## <a name="run-the-compensation-process"></a>Suorita kompensaatioprosessi
 Kun prosessitapahtumaan on määritetty tarvittavat päivämääräkentät, suunnitelmat ja toiminnot, voit valita Prosessitapahtuma-sivulla **Suorita prosessi**. Se avaa kompensaation prosessitapahtumien valintaikkunan. Jos valitset tässä valintaikkunassa **Näytä käsittelyn tulokset** -vaihtoehdon, näet, miten kompensaation summat on laskettu kullekin työntekijälle. Kun valitset **OK**, kaikkien valitussa kompensaatiosuunnitelmassa jakson päättymispäivänä olevien työntekijöiden kompensaatioprosessi suoritetaan.
 
-## Prosessitulosten näyttäminen
-<a id="view-the-process-results" class="xliff"></a>
+## <a name="view-the-process-results"></a>Prosessitulosten näyttäminen
 Voit tarkastella prosessin tuloksia avaamalla **Prosessin tulokset** -sivun. Uusi kompensaatiotapahtuma luodaan aina, kun prosessitapahtuma suoritetaan. Tällä tavoin voit tehdä kokeiluja, tehdä muutoksia ja suorittaa kompensaatiotapahtuman useita kertoja, jotta näet, miten erilaiset muutokset vaikuttavat työntekijän kompensaatioon.
 
 Prosessin tulos -sivulla on tietoja prosessiajosta, kuten ajon suoritusajankohta, prosessin suorittaja ja mahdolliset prosessin suorittamisen aikana tapahtuneet virheet. Voit myös valita **Lukittu**-valintaruudun, jolloin **Lataa kompensaatio** -painike poistetaan käytöstä eikä kukaan voi ladata kompensaatiotapahtumia työntekijätietueisiin. **Työntekijöiden tulokset** -painikkeella saadaan näkyviin luettelo ajoon sisältyvistä työntekijöistä.
@@ -80,8 +75,7 @@ Työntekijän tuloksissa on tietoja itse prosessista sekä prosessissa tehdyist�
 
 Kun työntekijän kompensaatiosummat on arvoitu ja mahdolliset suositeltujen arvojen muutokset on tehty, voit muuttaa **Työntekijätapahtuma**-rivin **tilan**. Tämä ilmaisee, onko tapahtuma hyväksytty vai ohitetaanko se. Vaihtoehtoisesti voit poistaa kaikki työntekijän suositukseen tehdyt muutokset napsauttamalla **Laske uudelleen** -painiketta. Aiemmin luodun työntekijätapahtuman tila on nyt merkitty ohitetuksi ja uusi työntekijätapahtuma luodaan uudelleenlasketuilla arvoilla.
 
-## Hyväksyttyjen kompensaation muutoksien lataaminen
-<a id="loading-approved-compensation-changes" class="xliff"></a>
+## <a name="loading-approved-compensation-changes"></a>Hyväksyttyjen kompensaation muutoksien lataaminen
 Kun vähintään yhden työntekijätapahtuman tila on päivitetty hyväksytyksi, kyseinen tapahtuma voidaan ladata työntekijän kiinteän kompensaation tietueisiin. Se voidaan tehdä joko valitsemalla työntekijätapahtumat yksi kerrallaan ja napsauttamalla työntekijän kompensaation latauspainiketta työntekijän tulossivulla tai lataamalla kaikki hyväksytyt työntekijätapahtumat kerralla valitsemalla prosessin tulossivulla **Lataa kompensaatio**.
 
 Kun **Lataa kompensaatio** -valintaikkunassa valitaan **OK**, muut kuin nolla kompensaation toimintorivit lisätään **Työntekijän kiinteä kompensaatio** -sivulla.

@@ -29,24 +29,21 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kanavakohtaisten alennusten määrittäminen
-<a id="define-channel-specific-discounts" class="xliff"></a>
+# <a name="define-channel-specific-discounts"></a>Kanavakohtaisten alennusten määrittäminen
 
 [!include[banner](includes/banner.md)]
 
 
 Vähittäismyyjät määrittävät usein erilaisia alennuksia eri kanaville. Tässä aiheessa tarkastellaan käsitteitä, joita tarvitaan tietyn kanavan alennuksen luomisessa. 
 
-Kanavakohtaiset alennukset
-<a id="channel-specific-discounts" class="xliff"></a>
+<a name="channel-specific-discounts"></a>Kanavakohtaiset alennukset
 --------------------------
 
 Vähittäismyyjät tarjoavat usein erilaisia alennuksia eri kanaville. Syynä voi olla paikallisten markkinaolosuhteiden huomioon ottaminen tai kilpailu muiden vähittäismyyjien kanssa.
 
 Microsoft Dynamics 365 for Retail määrittää kanavakohtaiset alennukset hintaryhmien avulla. Hintaryhmät voivat määrittää yhteen seuraavista yksiköistä tai useisiin yksikköihin: kanavat. luettelot, liitokset ja kanta-asiakasohjelmat. Tässä artikkelissa käsitellään kanavia, mutta samat käsitteet koskevat myös luettelo-, liitos- ja kanta-asiakasalennuksia.
 
-## Hintaryhmät
-<a id="price-groups" class="xliff"></a>
+## <a name="price-groups"></a>Hintaryhmät
 
 [![Hintaryhmät](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
@@ -57,8 +54,7 @@ Edellä olevassa kaaviossa on kuva tapahtumassa mahdollisesti olevien yksikköje
 -   **Kanta-asiakasohjelman hintaryhmät** – tällä sivulla on luettelo kanta-asiakasohjelmista ja alennuksista, jotka on liitetty yhteen kullekin hintaryhmälle.
 -   **Liitoksen hintaryhmät** – tällä sivulla on luettelo liitoksista ja alennuksista, jotka on liitetty yhteen kullekin hintaryhmälle.
 
-## Kanavan alennusasetusten esimerkki
-<a id="example-channel-discount-set-up" class="xliff"></a>
+## <a name="example-channel-discount-set-up"></a>Kanavan alennusasetusten esimerkki
 Seuraavassa esimerkissä käsitellään tehtäviä, jotka liittyvät kanava-alennuksen määrittämiseen.
 
 1.  Tässä esimerkissä on **Houston**-niminen kanava ja luot uuden alennuksen, jonka nimi on **Takaisin kouluun**.
@@ -69,8 +65,7 @@ Seuraavassa esimerkissä käsitellään tehtäviä, jotka liittyvät kanava-alen
 
  
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Hinnanoikaisut ja alennukset](price-adjustments-discounts.md)

@@ -26,14 +26,12 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Vähittäismyynnin kuponkien luonti
-<a id="create-coupons-for-retail-sales" class="xliff"></a>
+# <a name="create-coupons-for-retail-sales"></a>Vähittäismyynnin kuponkien luonti
 
 [!include[banner](includes/banner.md)]
 
 
-## Kuponkien yleiskatsaus
-<a id="overview-of-coupons" class="xliff"></a>
+## <a name="overview-of-coupons"></a>Kuponkien yleiskatsaus
 
 Kupongit ovat koodeja ja viivakoodeja, joilla vähittäismyynnin alennukset lisätään tapahtumiin. Kussakin kupongissa voi olla useita koodeja, ja kullakin koodilla voi olla oma voimassaolopäivämäärä. 
 
@@ -46,22 +44,19 @@ Alennus ja kuponki luodaan kuponkia varten erikseen. Ne linkitetään sitten val
 > [!NOTE]
 > Kun kuponki on linkitetty alennukseen, monet Microsoft Dynamics 365 for Retailin alennussivun kentät muuttuvat vain luku -muotoisiksi, sillä niitä hallitaan kupongin asetuksista. Niitä ovat esimerkiksi tilan ja vakiopäivämääräalueen kentät.
 
-### Kupongit, joiden käyttö on rajoitettua
-<a id="limited-use-coupons" class="xliff"></a>
+### <a name="limited-use-coupons"></a>Kupongit, joiden käyttö on rajoitettua
 
 Kupongit voidaan määrittää siten, niiden käyttö on rajoitettua. Käyttöraja voidaan määrittä asiakas- tai kanavakohtaisesti tai yleisenä rajoituksena. Tätä rajoitusta noudatetaan, kun koodi tai viivakoodi annetaan tai skannataan myyntipisteessä tai myynnin tilaustenkäsittelyn aikana. Kuponki kirjataan käytetyksi, kun tilaus, johon kuponki on liitetty, on valmis.
 
 Rajaa noudatetaan kupongin kuponkikoodikohtaisesti. Esimerkiksi kaksi kuponkikoodia sisältävää kertakäyttökuponkia voi käyttää kahdesta: kerran kummallakin koodilla. Jokainen kupongin koodi voidaan määrittää erikseen aktiiviseksi.
 
-## Kuponkien hallinta
-<a id="managing-coupons" class="xliff"></a>
+## <a name="managing-coupons"></a>Kuponkien hallinta
 
 Alennus ja kuponki on luotava erikseen. Ne linkitetään sitten valitsemalla alennus kuponkisivulla. Kun kuponki on linkitetty alennukseen, monet alennuskentät muuttuvat vain luku -muotoisiksi, sillä niitä hallitaan kupongin asetuksista. Niitä ovat esimerkiksi tilan ja vakiopäivämääräalueen kentät.  
 
 Kupongit ovatkin nyt eräänlainen ylimääräinen oikeellisuustarkistus muiden vähittäismyynnin alennusten lisäksi. Kuponki sisältää tarvittavat kuponkikoodit ja viivakoodit sekä kyseisteen koodien päivämääräalueet, käyttörajoitukset ja asiakkaalta edellytettävän ominaisuuden. Alennus ilmoittaa tuotejoukon, jota kuponki koskee. Alennusten hintaryhmät ilmoittavat asiakas-, kanava- tai luettelojoukon, jota kuponki koskee.
 
-## Kupongeissa tarvittavat järjestelmäasetukset
-<a id="system-setup-for-coupons" class="xliff"></a> 
+## <a name="system-setup-for-coupons"></a>Kupongeissa tarvittavat järjestelmäasetukset 
 
 Ennen kuin kupongin määrittämistä on määritettävä kupongin viivakoodi ja kaksi kuponkinumerosarjaa. 
 
@@ -77,8 +72,7 @@ Ennen kuin kupongin määrittämistä on määritettävä kupongin viivakoodi ja
 6.  Valitse **Vähittäismyynnin parametrit** -sivun **Numerosarjat**-välilehdessä kuponkinumerolle ja kuponkikooditunnukselle luomasi numerosarjat.
 7.  Voit nyt avata **Kupongit**-sivun ja luoda uusia kuponkeja.
 
-## Osittaisten päivitysten vaikutus kuponkeihin
-<a id="the-effect-of-partial-updates-on-coupons" class="xliff"></a>
+## <a name="the-effect-of-partial-updates-on-coupons"></a>Osittaisten päivitysten vaikutus kuponkeihin
 
 Kuponkitoiminto koostuu useista erillisistä Dynamics 365 for Retailin ominaisuuksista. Microsoft Dynamics 365 for Retail Headquarters (HQ) ja kanava voidaan päivittää osoittein kaikissa komponenteissa. Tämän vuoksi on tärkeää, että ymmärrät, miten osittaiset päivitykset vaikuttavat kuponkitoimintoon kokonaisuudessaan.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Hybridit asiakastilaukset
-<a id="hybrid-customer-orders" class="xliff"></a>
+# <a name="hybrid-customer-orders"></a>Hybridit asiakastilaukset
 
 [!include[banner](includes/banner.md)]
 
@@ -42,8 +41,7 @@ Voit toteuttaa Microsoft Dynamics 365 for Retailissa kaikki asiakastilauksen tuo
 
 Jos valitun myyntikorin rivi on valittu ja on myös **Kerää valitut**, **Toimita valitut** tai **Asiakas kuljettaa valitut** valittuna, vain tämä tietty ostoskorin rivi on määritetty kyseiselle toimitustavalle. Tässä tapauksessa prosessi jatkuu tavalliseen tapaan. Kuitenkin jos **Kerää valitut**, **Toimita valitut** tai **Asiakas kuljettaa valitut** on valittu, mutta myyntikorin riviä ei, uusi sivu avautuu, jossa luetellaan kaikki ostoskorin rivit. Tällä näytöllä voit valita useita rivejä kerralla toimitustavan asettamiseen. Kun kyseistä menetelmää käytetään rivin valitsemiseen, ohitetaan edelliset toimitustavat, jotka on määritetty riville.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Asiakastilausten yleiskatsaus](customer-orders-overview.md)

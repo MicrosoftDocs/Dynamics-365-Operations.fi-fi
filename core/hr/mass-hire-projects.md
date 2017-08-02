@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Joukkotyöhönottoprojektit
-<a id="mass-hire-projects" class="xliff"></a>
+# <a name="mass-hire-projects"></a>Joukkotyöhönottoprojektit
 
 [!include[banner](../includes/banner.md)]
 
 
 Henkilöstöhallinnon asiantuntija voi luoda useita toimia ja palkata useita työntekijöitä näihin toimiin joukkotyöhönottoprojektien avulla.
 
-Yleiskuvaus
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Yleiskuvaus
 --------
 
 Jos otat työhön samalla kertaa useita työntekijöitä esimerkiksi sesonkitarpeen vuoksi, kannattaa luoda joukkotyöhönottoprojekti. Joukkotyöhönottoprojektin luominen on kannattavaa, koska voit luoda toimitietueet, työntekijätietueet ja työntekijämääritykset toimille samanaikaisesti. Kun luot toimia joukkotyöhönottoprojektiin, voit määrittää seuraavat tiedot:
@@ -45,16 +43,14 @@ Jos otat työhön samalla kertaa useita työntekijöitä esimerkiksi sesonkitarp
 -   Osasto ja työ, jotka liittyvät toimiin
 -   Toimen kokoaikaisuutta vastaava arvo
 
-## Esimerkki
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Esimerkki
 Kesällä palkataan yleensä 15-20 osa-aikaista opiskelijaa yrityksen kesäharjoittelupaikkoihin. Tänä vuonna haluat palkata viisi kirjanpitäjää, viisi tilauskäsittelijää ja viisi kassanhoitajaa. Sen sijaan, että loisit jokaisen toimi- ja työntekijätietueen erikseen, voit luoda yhden joukkotyöhönottoprojektin nimellä "SummerInterns". Projektin aloitus- ja päättymispäivämäärät vastaavat joukkotyöhönottoprojektille luomiesi toimien aloitus- ja päättymispäivämääriä. 
 
 Valitse **Joukkotyöhönottoprojektit** -sivulla "SummerInterns"-projekti ja napsauta sitten **Avaa projekti**. Valitse avoimet joukkotyöhönottoprojektissa **Luo toimia** ja kirjoita kirjanpitäjätoimen tiedot. Voit määrittää, että viisi kirjanpitäjän toimea on luotava samoilla tiedoilla, ja napsauttaa sitten OK. Toista nämä vaiheet tilauskäsittelijän ja kassanhoitajan toimille. 
 
 Valittuasi kesäharjoittelijoiksi palkattavat opiskelijat, voit syöttää opiskelijoiden tiedot niiden toimien **Toimen tiedot** kohtaan, johon olet kunkin opiskelijan valinnut. Kun olet syöttänyt kaikkien toimien tiedot, valitse toimi Joukkotyöhönottoprojektit-sivulta ja napsauta sitten **Ota palvelukseen**. Jokaiselle toimelle luodaan toimitietue ja jokaiselle työhön ottamallesi henkilölle luodaan työntekijätietue, joka liitetään asiaankuuluvaan toimeen.
 
-## Joukkotyöhönottoprojektin tilat
-<a id="mass-hire-project-statuses" class="xliff"></a>
+## <a name="mass-hire-project-statuses"></a>Joukkotyöhönottoprojektin tilat
 Joukkotyöhönottoprojektin tila voi olla jokin seuraavista.
 -   Luotu
 -   Avoin

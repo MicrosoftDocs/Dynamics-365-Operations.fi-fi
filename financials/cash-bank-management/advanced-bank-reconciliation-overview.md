@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Pankkitilin täsmäytyksen lisätoimintojen yhteenveto
-<a id="advanced-bank-reconciliation-overview" class="xliff"></a>
+# <a name="advanced-bank-reconciliation-overview"></a>Pankkitilin täsmäytyksen lisätoimintojen yhteenveto
 
 [!include[banner](../includes/banner.md)]
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kyselylomakkeen jakaminen ja täyttäminen
-<a id="distribute-and-complete-a-questionnaire" class="xliff"></a>
+# <a name="distribute-and-complete-a-questionnaire"></a>Kyselylomakkeen jakaminen ja täyttäminen
 
 Tässä artikkelissa kerrotaan, miten suunnittelemasi kyselylomakkeet jaetaan niin, että ne ovat oikean henkilön tai henkilöryhmän täytettävissä. 
 
@@ -39,12 +38,10 @@ Kyselylomakkeen voi jakaa seuraavilla tavoilla:
 -   Luo suunniteltuja vastausistuntoja. Näin kyselylomake on vain tietyn henkilön käytettävissä.
 -   Luo aikataulu. Näin kyselylomake voi olla useiden henkilöiden käytettävissä.
 
-## Kyselylomakkeen merkitseminen aktiiviseksi
-<a id="marking-a-questionnaire-as-active" class="xliff"></a>
+## <a name="marking-a-questionnaire-as-active"></a>Kyselylomakkeen merkitseminen aktiiviseksi
 Kun määrität **Aktiivinen**-kentän arvoksi **Kyllä** **Kyselylomakkeet**-sivulla, voit määrittää kyselylomakkeen kaikkien työntekijöiden käyttöön. Vastaajat voivat täyttää kyselylomakkeen useita kertoja. Tämä toiminto on hyödyllinen, jos haluat kerätä palautetta koko vuoden ajan. Voit luoda esimerkiksi kyselylomakkeen, jonka avulla työntekijät voivat antaa palautetta kahvilan lounaspalvelusta.
 
-## Kyselylomakeryhmät
-<a id="questionnaire-groups" class="xliff"></a>
+## <a name="questionnaire-groups"></a>Kyselylomakeryhmät
 Voit määrittää kyselylomakeryhmät ja lisätä vastaajat, joille kyselylomake jaetaan. 
 
 Voit luoda kyselylomakeryhmiä seuraavilta sivuilta:
@@ -54,8 +51,7 @@ Voit luoda kyselylomakeryhmiä seuraavilta sivuilta:
 
 Liitä kyselylomakeryhmä kyselylomakkeeseen valitsemalla **Kyselylomakkeet**-sivulla **Käyttöoikeudet**. Kun kyselylomake on tallennettu aktiiviseksi, kyselylomakeryhmän jäsenet voivat täyttää kyselylomakkeen. Tämä toiminto on hyödyllinen, jos haluat testata kyselylomakkeen valitulla ryhmällä henkilöitä, ennen kuin se lähetetään suuremmalle ryhmälle, tai jos haluat kohdistaa kyselylomakkeen tietylle yleisölle.
 
-## Kyselylomakkeen suunnitellut vastausistunnot
-<a id="planned-answer-sessions-in-a-questionnaire" class="xliff"></a>
+## <a name="planned-answer-sessions-in-a-questionnaire"></a>Kyselylomakkeen suunnitellut vastausistunnot
 Suunnitellut vastausistunnot ovat vastaajille suunniteltuja ja valittuja kyselylomakkeita. 
 
 **Huomautus:** Kyselylomake on määritettävä ennen suunniteltujen vastausistuntojen määrittämistä. 
@@ -70,12 +66,10 @@ Suunniteltuja vastausistuntoja käytetään myös **Kyselylomakkeiden aikataulut
 
 Kukin henkilö voi vastata kyselylomakkeeseen vain kerran.
 
-## Kyselylomakkeen ajoittaminen
-<a id="scheduling-a-questionnaire" class="xliff"></a>
+## <a name="scheduling-a-questionnaire"></a>Kyselylomakkeen ajoittaminen
 Halutessasi voit aikatauluttaa kyselylomakkeen useille vastaajille.
 
-### Suunnittelutyypit
-<a id="planning-types" class="xliff"></a>
+### <a name="planning-types"></a>Suunnittelutyypit
 
 Suunnittelutyypit ovat pakollisia, jos haluat ajoittaa suunnitellut vastausistunnot useille vastaajille. Suunnittelutyyppejä käytetään kyselylomakkeiden aikataulujen luokittelussa. Voit ajoittaa kyselylomakkeita esimerkiksi seuraavia tarkoituksia varten:
 
@@ -85,8 +79,7 @@ Suunnittelutyypit ovat pakollisia, jos haluat ajoittaa suunnitellut vastausistun
 
 Voit määrittää kyselylomakkeen aikataulun suunnittelutyypit **Kyselylomakkeiden aikataulut** -sivulla.
 
-### Kyselylomakkeen viitetyypit
-<a id="reference-types-for-questionnaire" class="xliff"></a>
+### <a name="reference-types-for-questionnaire"></a>Kyselylomakkeen viitetyypit
 
 Viitetyyppien avulla voit syöttää vastaajille ehdot, jotka valitsisit kyselylomakkeen ajoittamisen yhteydessä. 
 
@@ -94,8 +87,7 @@ Määritä kyselylomakkeen viitetyypit **Viitetyypit**-sivulla. Kukin viitetyypp
 
 Esimerkiksi Kurssit-taulussa voit määrittää kurssin, jota kyselylomake koskee. Kun määrität Kurssit-taulun viitteen, osa **Kurssit**-sivun kentistä ja painikkeista ovat käytettävissä.
 
-### Kyselylomakkeiden aikataulut
-<a id="questionnaire-schedules" class="xliff"></a>
+### <a name="questionnaire-schedules"></a>Kyselylomakkeiden aikataulut
 
 Voit käyttää kyselylomakkeen ajoituksia luodessasi useita suunniteltuja vastausistuntoja käyttäjäryhmälle viitetyypin perusteella. Luo aikataulu **Kyselylomakkeiden aikataulut** -sivulla. Luokittele aikataulu valitsemalla suunnittelutyyppi ja valitse myös viitetyyppi, jota käytetään suoritettaessa järjestelmäkysely tiettyjen käyttäjien osalta. Jos määrität Kurssit-taulun arvoksi Viitetyyppi, voit valita tietyn kurssin **Viite**-kentässä. 
 
@@ -105,32 +97,27 @@ Voit tarkastella aikataulun vastausistuntoja **Suunnitellut vastausistunnot** -k
 
 Ota kyselylomake käyttöön liittyvien suunniteltujen vastausistuntojen käyttäjille valitsemalla **Toiminnot** &gt; **Käynnistä**. Voit tarkastella kyselylomakkeen vastauksia **Vastaukset**-kohdassa. Voit myös kopioida kyselylomakkeen aikataulun asetuksia, suunniteltuja vastausistuntoja ja vastauksia uutta kyselylomakkeen aikataulua varten.
 
-## Käytettävissä olevista kyselylomakkeista ilmoittaminen vastaajille
-<a id="notifying-respondents-about-questionnaires-that-are-available-to-them" class="xliff"></a>
+## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Käytettävissä olevista kyselylomakkeista ilmoittaminen vastaajille
 Kun jaat kyselylomakkeen, sinun on ilmoitettava vastaajille, että kyselylomakkeet ovat heidän saatavillaan. 
 
 **Huomautus:** Vastaajien on oltava Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin käyttäjiä, jotta kyselylomakkeen täyttäminen on mahdollista.
 
-### Suunnitellusta vastausistunnosta ilmoittaminen vastaajille
-<a id="notifying-respondents-about-a-planned-answer-session" class="xliff"></a>
+### <a name="notifying-respondents-about-a-planned-answer-session"></a>Suunnitellusta vastausistunnosta ilmoittaminen vastaajille
 
 Jos käytössä on suunniteltu vastausistunto, henkilölle on ilmoitettava suoraan esimerkiksi puhelimitse tai sähköpostitse.
 
-### Aikataulusta ilmoittaminen vastaajille
-<a id="notifying-respondents-about-a-scheduling" class="xliff"></a>
+### <a name="notifying-respondents-about-a-scheduling"></a>Aikataulusta ilmoittaminen vastaajille
 
 **Kyselylomakkeiden aikataulut** -sivulla voidaan luoda ja lähettää sähköpostiviesti kaikille kyselylomakkeen vastaajille. Syötä sähköpostiviestin teksti **Työntekijän itsepalvelun sähköpostiosoite** -välilehdessä. Kun ajoitus on aloitettu, luo ja lähetä sähköposti vastaajille valitsemalla **Toiminnot** &gt; **Lähetä sähköposti**. Vastaajat voivat sitten kirjautua sivustoon ja täyttää kyselylomakkeen. 
 
 **Huomautus:** IT-järjestelmänvalvojan on syötettävä sähköpostiasetukset **Sähköpostiparametrit**-sivulla, ennen kuin tämä toiminto otetaan käyttöön.
 
-## Ajoitetun kyselyn päättäminen
-<a id="ending-a-scheduled-questionnaire" class="xliff"></a>
+## <a name="ending-a-scheduled-questionnaire"></a>Ajoitetun kyselyn päättäminen
 Voit lopettaa aikataulutetun kyselylomakkeen, kun kaikki vastaajat ovat tehneet vastausistuntonsa loppuun. Kun ajoitettu kyselylomake lopetetaan, asetuksia ei enää voi kopioida uuteen aikatauluun. 
 
 **Huomautus:** Jos yksi tai useampi vastaaja ei ole täyttänyt vastauslomaketta, mutta haluat siitä huolimatta lopettaa aikataulutuksen, poista vastaaja tai vastaajat **Suunniteltu vastausistunto** -sivun luettelosta. Sen jälkeen voit lopettaa aikataulun.
 
-## Kyselylomakkeiden täyttäminen
-<a id="completing-questionnaires" class="xliff"></a>
+## <a name="completing-questionnaires"></a>Kyselylomakkeiden täyttäminen
 Kun kyselylomake on suunniteltu ja jaettu, valitut vastaajat voivat täyttää sen. Voit täyttää kyselylomakkeita kahdesta käytettävissäsi olevasta sijainnista:
 
 -   Valitse siirtymisruudussa **Kyselylomakkeet** &gt; **Jaa** &gt; **Täydennä kyselylomake**.
@@ -138,8 +125,7 @@ Kun kyselylomake on suunniteltu ja jaettu, valitut vastaajat voivat täyttää s
 
 Kyselylomakkeet voidaan määrittää tietyille käyttäjille tai käyttäjäryhmille tai kaikille verkon käyttäjille.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Kyselylomakkeiden suunnitteleminen](design-questionnaires.md)

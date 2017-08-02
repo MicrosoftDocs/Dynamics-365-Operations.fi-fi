@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Tuotekonfiguraatiomallien yleiskatsaus
-<a id="product-configuration-models-overview" class="xliff"></a>
+# <a name="product-configuration-models-overview"></a>Tuotekonfiguraatiomallien yleiskatsaus
 
 [!include[banner](../includes/banner.md)]
 

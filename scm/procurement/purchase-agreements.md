@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Ostosopimukset
-<a id="purchase-agreements" class="xliff"></a>
+# <a name="purchase-agreements"></a>Ostosopimukset
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +39,7 @@ Voit luoda, hakea ja seurata **Ostosopimukset**-sivulla ostosopimuksia, jotka ov
 
 Kun olet luonut ostosopimuksen, se tulee voimaan vasta, kun se on aktivoitu. Aktivoi ostosopimus valitsemalla **Merkitse sopimus voimassa olevaksi** -asetukseksi **Kyllä**.
 
-## Vahvistustyypit
-<a id="commitment-types" class="xliff"></a>
+## <a name="commitment-types"></a>Vahvistustyypit
 Jokainen rivi ostosopimuksessa velvoittaa ostamaan jotakin. Voit täyttää sitoumuksen käyttämällä useiden ostotilausten rivejä. On neljänlaisia sitoumuksia:
 
 -   **Tuotteen määrän vahvistus** – ostat tietyn määrän tuotteita.
@@ -49,8 +47,7 @@ Jokainen rivi ostosopimuksessa velvoittaa ostamaan jotakin. Voit täyttää sito
 -   **Tuoteluokan arvon sitoutuminen** - Ostat tietyllä valuuttasummalla hankintaluokasta. Summa voi olla luetteloartikkelille tai artikkelille muualta kuin luettelosta.
 -   **Arvon sitoutuminen** – ostat tietyllä valuuttasummalla tuotteita jostain hankintaluokasta.
 
-## Ostosopimusten hintaehdot
-<a id="pricing-terms-for-purchase-agreements" class="xliff"></a>
+## <a name="pricing-terms-for-purchase-agreements"></a>Ostosopimusten hintaehdot
 Hintaehdot voivat olla erilaisia, riippuen sitoumustyypistä. Ostosopimusten hintaehdot ohittavat muut hintaehdot, jotka on määritelty kauppasopimuksille. Seuraava taulukko kuvailee hintoihin liittyvät kentät, joihin eri sitoumustyypit vaikuttavat. Kentät joissa on **Kyllä** voidaan päivittää tilausrivillä.
 
 | Vahvistustyyppi                   | Yksikköhinta | Hintayksikkö | Alennusprosentti | Käteisalennussumma |
@@ -60,16 +57,14 @@ Hintaehdot voivat olla erilaisia, riippuen sitoumustyypistä. Ostosopimusten hin
 | Tuoteluokan arvon sitoutuminen |            |            | Kyllä              |                      |
 | Arvon sitoutuminen                  |            |            | Kyllä              |                      |
 
-## Ostosopimusten säännökset
-<a id="policies-for-purchase-agreements" class="xliff"></a>
+## <a name="policies-for-purchase-agreements"></a>Ostosopimusten säännökset
 Seuraavat käytännöt vaikuttavat siihen, miten ostosopimussitoumuksen ja sitä vastaavien ostotilausrivien välinen yhteys toimii:
 
 -   **Maksimi pakotetaan** – Kaikkien tilausrivien kokonaismäärä tai summa ei voi olla enempää kuin sitä vastaavan sitoumuksen määrä tai summa.
 -   **Hinta ja alennus on kiinteä** – Tilausrivin ja sitä vastaavan sitoumuksen hinnan on oltava sama. Jos tilausrivin hintaa muutetaan, yhteys sitoumukseen rikkoutuu. Jos yhteys katkeaa, tilausrivi ei edistä sitoumuksen täyttymistä.
 -   **Vapautuksen vähimmäissumma ja Vapautuksen enimmäissumma** – Jos summa on määritetty, saat ilmoituksen, jos yrität tehdä tilausriviin muutoksia, joiden seurauksena tilausrivi poikkeaa siihen liittyvästä sitoumuksesta.
 
-## Ostosopimusten toteutumisen laskelmoinnit
-<a id="fulfillment-calculations-for-purchase-agreements" class="xliff"></a>
+## <a name="fulfillment-calculations-for-purchase-agreements"></a>Ostosopimusten toteutumisen laskelmoinnit
 **Ostosopimukset**-sivun **Rivin tiedot** -pikavälilehdessä olevassa **Täytäntöönpano**-välilehdessä näkyvät täytäntöönpanon määrät ja summat.  
 
 Sitoumuksen täytäntöönpanoon tarvittavat jäljellä oleva summa tai määrä näkyy **Täytäntöönpano**-alueella.  
@@ -78,31 +73,26 @@ Sitoumuksen täytäntöönpanoon tarvittavat jäljellä oleva summa tai määrä
 
 Voit käyttää täytäntöönpanon laskentaan vaikuttavia ostotilausrivejä ja laskurivejä valitsemalla **Liittyvät tiedot** -toiminnon ostosopimuksen riveillä tai otsikossa.
 
-## Ostosopimusten vahvistukset ja versiohistorian
-<a id="confirmations-and-version-history-for-purchase-agreements" class="xliff"></a>
+## <a name="confirmations-and-version-history-for-purchase-agreements"></a>Ostosopimusten vahvistukset ja versiohistorian
 Kun vahvistat ostosopimuksen, sen uusin versio tallennetaan historiataulukkoon. Jos muutat ostosopimusta, voit vahvistaa sen uudestaan tallentaaksesi toisen ostosopimuksen version historiaan. Jos et vahvista ostosopimusta, voit yhä luoda ostotilauksia sen pohjalta. Mutta ostosopimusten historiatietoja ei säilytetä. Voit esikatsella tai tulostaa kaikki sopimuksen versiot. Sitten voit jakaa korjaukset toimittajasi kanssa saadaksesi hyväksynnän.
 
-## Ostosopimukset lisääminen tilausprosessiin
-<a id="applying-purchase-agreements-in-the-ordering-process" class="xliff"></a>
+## <a name="applying-purchase-agreements-in-the-ordering-process"></a>Ostosopimukset lisääminen tilausprosessiin
 Kun luot ostotilauksen, voit käyttää siinä ostosopimusta. Sopimusehtojen tiedot, kuten maksuehdot, toimitusajat ja toimitusosoite, kopioidaan sitten ostotilauksen otsikkoon. Jos ostotilauksessa on vähintään yksi sopimuksen kattaman tuotteen tai luokan rivi, kyseisillä riveillä käytetään ostosopimuksen hintoja ja alennuksia. Tilausrivin summa tai määrä vaikuttaa ostosopimuksen sitoumuksen täytäntöönpanoon. Sama ostotilaus voi sisältää sekä rivejä, jotka eivät liity ostosopimukseen, että rivejä, jotka ovat sitoutuneet ostosopimukseen.  
 
 Voit valita ostosopimuksen vain, kun olet luomassa ostotilausta. Et voi valita ostosopimusta, kun ostotilaus on luotu.  
 Joissakin tilanteissa, joissa ostotilaukset luodaan epäsuorasti, voit määrittää, hakeeko Finance and Operations automaattisesti käytettävää ostosopimusta. Voit esimerkiksi toimia näin, kun vahvistat automaattisesti suunniteltuja ostotilauksia tai luot ostotilauksia, jotka perustuvat myyntitilauksiin.
 
-## Ostosopimukset ja konsernin sisäinen kauppa
-<a id="purchase-agreements-and-intercompany-trade" class="xliff"></a>
+## <a name="purchase-agreements-and-intercompany-trade"></a>Ostosopimukset ja konsernin sisäinen kauppa
 Yhtiöiden väliset jäljityssuhteet voidaan luoda toimittajan tilien ja asiakkaan tilien välille, kun ne ovat eri oikeushenkilöitä. Kun myyntitilaus tai ostotilaus luodaan yhdelle osapuolelle, luodaan myös konsernin sisäinen tilausketju. Tilausketjussa myyntitilaus ja ostotilaus on luotu soveltuville yrityksille.  
 
 Voit luoda ostosopimuksen tai myyntisopimuksen yhdelle yhtiöiden väliselle kaupankäynnin osapuolelle. Sitten voit kehittää vastaavan ostosopimuksen tai myyntisopimuksen toiselle yhtiöiden väliselle kaupankäynnin osapuolelle toisessa laillisessa kokonaisuudessa.  
 
 Jos luot konsernin sisäisen ostosopimuksen, joka käyttää konsernin sisäistä ostosopimusta yhdessä yrityksessä, vastaava konsernin sisäinen myyntitilaus käyttää vastaavaa konsernin sisäistä myyntisopimusta toisessa yrityksessä. Myyntisopimuksen sitoumuksien täytäntöönpano ja ostosopimusten täytäntöönpano on synkronoitu samalla tavoin kuin konsernin sisäinen myyntitilaus ja konsernin sisäinen ostotilaus on synkronoitu.
 
-## Ostosopimusten taloudelliset dimensiot
-<a id="financial-dimensions-on-purchase-agreements" class="xliff"></a>
+## <a name="financial-dimensions-on-purchase-agreements"></a>Ostosopimusten taloudelliset dimensiot
 Voit kopioida taloudelliset dimensiot asiakirjojen ylätunnisteisiin tai ostosopimusten yksittäisille riveille. Jos muutat sopimuksen otsikon tai sopimusrivin dimensioita, muutos ei vaikuta vapautettuihin tilauksiin mutta sitä käytetään uusissa tilauksissa.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Uuden ostosopimuksen luominen (tehtävän ohjaus)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)

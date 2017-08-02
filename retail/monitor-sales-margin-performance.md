@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Myynnin ja marginaalien seuranta
-<a id="monitor-sales-and-margin-performance" class="xliff"></a>
+# <a name="monitor-sales-and-margin-performance"></a>Myynnin ja marginaalien seuranta
 
 [!include[banner](includes/banner.md)]
 

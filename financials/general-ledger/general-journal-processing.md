@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kirjanpidon kirjauskansion käsittely
-<a id="general-journal-processing" class="xliff"></a>
+# <a name="general-journal-processing"></a>Kirjanpidon kirjauskansion käsittely
 
 [!include[banner](../includes/banner.md)]
 
@@ -60,12 +59,10 @@ Voit määrittää toistuvia kirjauskansioita **Kausikirjauskansiot**-sivulla ja
 
 Voit käyttää tositemalleja milloin tahansa. **Yleiset kirjauskansiot** -sivulla löytyy **Tallenna-** ja **Valitse tositemalli** -toiminnot **Kirjaustosite**-sivulla tositerivien kohdassa **Toiminnot**.
 
-## Liittyvät asetukset
-<a id="related-setup" class="xliff"></a>
+## <a name="related-setup"></a>Liittyvät asetukset
 Seuraavat asetukset eivät koske nimenomaan yleisiä kirjauskansioita, mutta ne auttavat takaamaan, että oikeat tiedot tulevat kirjatuiksi ja että kirjaaminen on helppoa.
 
-### Päätili
-<a id="main-account" class="xliff"></a>
+### <a name="main-account"></a>Päätili
 
 Päätilin asetukset tarjoaa useita vaihtoehtoja yleisen kirjauskansion käsittelyyn:
 
@@ -81,8 +78,7 @@ Päätilin asetukset tarjoaa useita vaihtoehtoja yleisen kirjauskansion käsitte
     -   **Käyttäjän oikeellisuustarkistus** – Tällä vaihtoehdolla valvotaan, millä käyttäjillä on oikeus tehdä kirjauksia päätilille.
     -   **Kirjaustyypin oikeellisuustarkistus** – Tällä vaihtoehdolla valvotaan, mitkä kirjaustyypit ovat sallittuja päätilillä.
 
-### Kirjanpitorakenteet ja lisäsääntöjen rakenteet
-<a id="accounting-structures-and-advanced-rules-structures" class="xliff"></a>
+### <a name="accounting-structures-and-advanced-rules-structures"></a>Kirjanpitorakenteet ja lisäsääntöjen rakenteet
 
 Kirjanpitorakenteet ja lisäsääntöjen rakenteet ovat erittäin tärkeitä sen varmistamisessa, että taloushallinnon raportoinnissa ja suorituskyvyn mittaamisessa tarvittavat tiedot ja asiakirjat kerätään kirjanpidon kirjauskansion käsittelyn yhteydessä. Kirjanpitorakenteiden ja lisäsääntöjen rakenteiden ansiosta voit räätälöidä tietojen syöttörutiinin. Voit sallia tietojen syötön vain kussakin tilanteessa asianmukaisille taloushallinnon dimensioille sekä toimeenpanna vaatimuksen, että pakolliset ja oikeat tiedot tulevat aina kerätyiksi.
 

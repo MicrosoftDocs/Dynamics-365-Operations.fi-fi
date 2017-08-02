@@ -27,24 +27,21 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Etuohjelman määrittäminen ja hallinta
-<a id="define-and-manage-a-benefits-program" class="xliff"></a>
+# <a name="define-and-manage-a-benefits-program"></a>Etuohjelman määrittäminen ja hallinta
 
 [!include[banner](includes/banner.md)]
 
 
 Henkilöstöhallinto sisältää joukon työkaluja, joiden avulla organisaation tarjoamia tai työntekijöitä varten käsittelemiä etuja, vähennyksiä ja työntekijöiden kompensaatiosuunnitelmia voi määrittää ja ylläpitää. Tässä artikkelissa on tietoja etujen määrittämisestä ja hallinnasta.
 
-Etujen asetukset
-<a id="benefit-setup" class="xliff"></a>
+<a name="benefit-setup"></a>Etujen asetukset
 -------------
 
 Työntekijät voidaan rekisteröidä etuihin sen jälkeen, kun kunkin edun elementit on luotu. Nämä elementit yhdistävät samanlaiset etusuunnitelmat ja määrittävät oletusasetukset, kuten vähennysten määrät ja kirjanpitotiedot. Useita asetuksia voidaan muokata myöhemmin, kun työntekijät rekisteröidään etuun. Organisaation etusuunnitelmassa voi olla useita rekisteröitymisasetuksia tai työntekijä voi peruuttaa suunnitelmaan rekisteröitymisen. 
 
 [![Etuprosessin työnkulku](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
-## Edun elementit
-<a id="benefit-elements" class="xliff"></a>
+## <a name="benefit-elements"></a>Edun elementit
 Ennen etujen luomista ja työntekijöiden rekisteröimistä niihin määritetään edun muodostavat elementit, joita ovat tyyppi, suunnitelma ja asetukset.
 
 -   **Tyyppi** – kokoelma tietynlaisia etuussuunnitelmia, kuten työterveys tai pysäköinti.
@@ -55,8 +52,7 @@ Organisaatio voi tarjota työntekijöille jokaista etutyyppiä, kuten näöntark
 
 [![benefit pic](./media/benefit-pic.png)](./media/benefit-pic.png)
 
-## Oikeutus
-<a id="eligibility" class="xliff"></a>
+## <a name="eligibility"></a>Oikeutus
 Useat tekijät määrittävät työntekijän kelpoisuuden työnantajan tarjoamiin erilaisiin etutyyppeihin. Kun etu luodaan Microsoft Talentissa, etuun liittyvän kelpoisuuden tyyppi voidaan määrittää. 
 
 Voit tehdä edun käytettäväksi kaikille työntekijöille. Jotkin yritykset tarjoavat esimerkiksi pysäköintilippuja luontaisetuna kaikille työntekijöille. Kun tämä etu luodaan, määritä kelpoisuuden arvoksi **Kaikki työntekijät ovat oikeutettuja**. 
@@ -65,16 +61,14 @@ Muissa eduissa, kuten, palkanpidätyksissä ja veroissa, kelpoisuus ei ole voima
 
 Etukelpoisuus voi perustua sääntöön. Esimerkissä yritys tarjoaa työntekijöille kahta erityyppistä henkivakuutusetua. Johtotason työntekijät ovat oikeutettuja eri henkivakuutussuunnitelmaan kuin kokoaikaiset työntekijät. Talentissa voidaan luoda etukelpoisuuden sääntö, jonka avulla etsitään johtotason työntekijät, ja toinen sääntö, jonka avulla etsitään kokoaikaiset työntekijät. Tämän jälkeen säännöt kohdistetaan soveltuvaan etuun.
 
-## Rekisteröityminen
-<a id="enrollment" class="xliff"></a>
+## <a name="enrollment"></a>Rekisteröityminen
 Kun organisaation tarjoamat edut on luotu ja kelpoisuus määritetty, voit rekisteröidä työntekijät etuihin. Yhden prosessin aikana etuihin voi rekisteröidä yhden työntekijän tai useita työntekijäitä yhteen tai useaan etuun. 
 
 Joskus organisaatio lopettaa tietyn edun tarjoamisen. Tällöin etu ja siihen rekisteröidyt työntekijät on päivitettävä. Etujen joukkopäättämisen avulla voit muuttaa samalla sekä edun että työntekijän rekisteröimisten päättymispäivää. Voit myös valita useita työntekijöitä, joka on rekisteröity johonkin etuun, ja muuttaa niiden kattamiseen päättymispäivämäärän. 
 
 Etujen joukkopäättämisen avulla voi samaan tapaan laajentaa sekä edun että työntekijöiden rekisteröitymisten päättymispäivää, jos haluat edun olevan käytettävissä alkuperäistä aikaa pidempään.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Etukelpoisuuden käytännöt](benefit-eligibility-policies.md)

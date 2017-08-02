@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Tilikauden sulkemisen työtila
-<a id="financial-period-close-workspace" class="xliff"></a>
+# <a name="financial-period-close-workspace"></a>Tilikauden sulkemisen työtila
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,13 +40,11 @@ Tilikauden sulkemisen työtila
 
 Valitse ensin sulkemisaikataulu työtilan yläosassa. Kaikki työtilassa näkyvät tiedot suodatetaan valitun sulkemisaikataulun mukaan.
 
-### Yhteenvetoruudut
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Yhteenvetoruudut
 
 **Yhteenveto**-ruudut sisältävät prosessin yleiskuvauksen. Mittareiden avulla voit seurata sulkemisprosessia. Näkyvillä ovat erääntyneet tehtävät, kuluvan päivän jäljellä olevat tehtävät, kuluvana päivänä erääntyvät, mutta riippuvuuksien vuoksi estetyt tehtävät sekä kaikki prosessin jäljellä olevat tehtävät. Nämä tiedot koskevat kaikkia valittuun sulkemisaikatauluun liittyviä yrityksiä.
 
-### Tehtävät ja tila -osa
-<a id="tasks-and-status-section" class="xliff"></a>
+### <a name="tasks-and-status-section"></a>Tehtävät ja tila -osa
 
 **Tehtävät ja tila** -osassa yleisen sulkemisaikataulun tila eritellään useilla eri tavoilla: tila yrityksen mukaan, tila alueen mukaan ja tila vastuuhenkilön mukaan. Voit tarkastella näiden tehtävien tilaa sulkemisaikataulussa, vain kuluvana päivänä erääntyvissä tehtävissä tai erääntyneissä tehtävissä, muuttamalla korttiluettelon yläosassa olevaa suodatinta. Voit myös valita yrityssuodattimen, kun haluat tarkastella tietyn yrityksen tilaa. Kukin tilavälilehti sisältää erittelyn sekä valmistuneiden prosenttiosuuden että jäljellä olevien tehtävien määrän mukaan. Suodata yksityiskohtainen tehtäväluettelo valitun kortin mukaan valitsemalla kortti tai **Näytä tiedot** -toiminto. 
 
@@ -64,16 +61,13 @@ Voit liittää tehtäviin tiedostoja, huomautuksia, kuvia ja URL-osoitteita **Li
 
 **Tehtävä valmis** -vaihtoehto on valittava manuaalisesti tehtävän valmistuttua. **Valmistumispäivämäärä**-kenttään päivitetään automaattisesti kuluva päivämäärä ja kellonaika. Riippuvuuden mittarit päivitetään myös tarpeen mukaan.
 
-## Kaikkien tilikauden sulkemisen tehtävien luettelosivu
-<a id="all-financial-period-close-tasks-list-page" class="xliff"></a>
+## <a name="all-financial-period-close-tasks-list-page"></a>Kaikkien tilikauden sulkemisen tehtävien luettelosivu
 Voit tarkastella kuluvan ja edellisen kauden suljettuja tehtäviä **Kaikki tilikauden sulkemisen tehtävät** -luettelosivulla. Luettelosivua kannattaa käyttää erityisesti sulkemisprosessin historiallisessa analyysissä, koska luettelosivu sisältää ajoitetun eräpäivän, toteutuneen valmistumispäivän ja tehtävän suorittaneen henkilön tietoja. Voit viedä luettelosivun tiedot helposti Microsoft Exceliin raportointia ja tarkistusta varten.
 
-## Tilikauden sulkemisalueen konfigurointi -sivu
-<a id="financial-period-close-configuration-page" class="xliff"></a>
+## <a name="financial-period-close-configuration-page"></a>Tilikauden sulkemisalueen konfigurointi -sivu
 Ennen kuin **tilikauden sulkemisen** työtilaa voi käyttää, prosessi on määritettävä Microsoft Dynamics 365 for Finance and Operationsissa **Tilikauden sulkemisalueen konfigurointi** -sivulla. (Valitse **Kirjanpito** &gt; **Kauden sulkeminen** &gt; **Tilikauden sulkemisalueen konfigurointi**.)
 
-### Resurssit
-<a id="resources" class="xliff"></a>
+### <a name="resources"></a>Resurssit
 
 Määritä **Resurssit**-välilehdessä sulkemisprosesseissa mukana olevat henkilöt. Sulkemistehtävästä vastuussa oleva työntekijä on määritettävä tässä ensin. Myös työtilan työntekijän näkymä on määritettävä. Valittavissa ovat seuraavat vaihtoehdot:
 
@@ -82,18 +76,15 @@ Määritä **Resurssit**-välilehdessä sulkemisprosesseissa mukana olevat henki
 
 Käyttäjät, joilla on vain heille määritettyjen tehtävien katseluoikeus, eivät voi lisätä tehtäviä tehtäväluetteloon, muokata tehtäviä tai poistaa tehtäviä tehtäväluettelosta.
 
-### Tehtäväalueet
-<a id="task-areas" class="xliff"></a>
+### <a name="task-areas"></a>Tehtäväalueet
 
 Tehtäväalueiden avulla voi ryhmitellä sulkemistehtäviä omistusoikeuden loogisiin alueisiin organisaatiossa. Tehtäväalueina voidaan käyttää esimerkiksi ostoreskontraa, myyntireskontraa tai kirjanpitoa.
 
-### Kalenterit
-<a id="calendars" class="xliff"></a>
+### <a name="calendars"></a>Kalenterit
 
 Luo ja muokkaa tilikauden sulkemiskalentereita Kalenterit-välilehdessä.  Siellä määritetään sulkemisprosessien työpäivät, ja sitä käytetään myös sulkemistehtävien ajoituksessa.  Luo uusi kalenteri ja määritä tehtävän ajoituksessa käytettävät työpäivät.  Kalenteri kannattaa luoda pitkälle aikavälille, kuten vuodeksi tai useiksi vuosiksi, koska sitä ei voi muokata luomisen jälkeen.  Kun kalenteri on luotu, kalenterin tietyt päivät, kuten lomat, päivitetään Muokkaa-painikkeen avulla.  Sulkemistehtävät ajoitetaan päiville, joiden Ohjausarvo-kohdan arvoksi on määritetty Avoin.  Jos sulkemistehtäviä ei ajoiteta tietylle päivälle, kyseisen päivän Ohjausarvo-kohdan arvoksi on määritettävä Suljettu.
 
-### Mallit
-<a id="templates" class="xliff"></a>
+### <a name="templates"></a>Mallit
 
 Tilikauden sulkemismallin avulla voi määrittää kaikki sulkemisprosessin osana olevat tehtävät. Sulkemistehtävä on toistuva työ, joka määritetään henkilölle ja joka tehdään valmiiksi sulkemisprosessin osana. Jokaiselle sulkemistehtävälle on määritettävä suhteellinen eräpäivä mallissa. Suhteellinen eräpäivä tarkoittaa niiden päivien määrää, joka kunkin kauden erääntyvällä tehtävällä on jäljellä määritetyn kauden päättymispäivämäärään tai niiden päivien määrää, joka kyseisestä päättymispäivämäärästä on kulunut. Jokaiselle tehtävälle määritetään myös erääntymisaika. Erääntymisaika määritetään kunkin käyttäjän käyttämän aikavyöhykkeen kontekstissa. 
 
@@ -107,8 +98,7 @@ Voit määrittää mallissa tehtävän riippuvuudet. Jos tehtävä on määritet
 
 Voit luoda useita tilikauden sulkemismalleja. Eri mallien avulla voi seurata sulkemisprosesseja erilaisissa kausityypeissä, kuten kuukauden loppu tai vuoden loppu, tai yrityksiä, jotka käyttävät erilaisia sulkemisprosesseja. Kun yksi malli on luotu, voit kopioida sen uuteen malliin ja tehdä tarvittavat muutokset. Kuhunkin sulkemisaikatauluun voi liittää vain yhden mallin.
 
-### Sulkemisaikataulut
-<a id="closing-schedules" class="xliff"></a>
+### <a name="closing-schedules"></a>Sulkemisaikataulut
 
 Sulkemisaikataulua käytetään liitettäessä tilikauden sulkemismalli määritettyyn suljettavaan tilikauteen. Tämän jälkeen mallin tehtävät luodaan automaattisesti määritetylle kaudelle ja työtilaan lisätään uusi sulkemisaikataulu. Kun uusi sulkemisaikataulu luodaan, sulkemistehtävien toteutuneet eräpäivät määritetään **Kauden päättymispäivä** -kentän avulla tilikauden sulkemismalliin liitetyn suhteellisen eräpäivän perusteella. 
 

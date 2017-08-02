@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Myyntipisteen näytön asettelujen määrittäminen
-<a id="configure-screen-layouts-for-pos" class="xliff"></a>
+# <a name="configure-screen-layouts-for-pos"></a>Myyntipisteen näytön asettelujen määrittäminen
 
 [!include[banner](includes/banner.md)]
 
@@ -37,8 +36,7 @@ Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS -käyttöliitt
 
 Microsoft Dynamics 365 for Retail POS:n käyttöliittymät voidaan määrittää käyttäen visuaalisten profiilien ja näyttöasettelujen yhdistelmää, jotka on määritetty myymälöille, kassakoneille ja/tai käyttäjille.
 
-## Visuaalinen profiili
-<a id="visual-profile" class="xliff"></a>
+## <a name="visual-profile"></a>Visuaalinen profiili
 Visuaaliset profiilit määritetään kassakoneille ja niitä käytetään määrittämään visuaalisia elementtejä, jotka ovat kassakonekohtaisia ja kaikille työntekijöille jaettuja. Kaikki käyttäjät, jotka kirjautuvat kassakoneeseen, näkevät samat teemat, värit ja kuvat. 
 
 **Profiilinumero** - profiilinumero on visuaalisen profiilin yksilöivä tunnus. 
@@ -55,8 +53,7 @@ Visuaaliset profiilit määritetään kassakoneille ja niitä käytetään mää
 
 **Sovelluksen tausta** -Myyntipiste voi myös käyttää kuvaa taustana koko sovelluksessa yhtenäisen teemavärin sijaan. Samoin kuin kirjautumisnäytön taustassa, tiedostokoko olisi pidettävä mahdollisimman pienenä.
 
-## Näytön asettelut
-<a id="screen-layouts" class="xliff"></a>
+## <a name="screen-layouts"></a>Näytön asettelut
 Näytön asettelun kokoonpano määrittää käyttöliittymän ohjausobjektien toiminnot, sisällön ja sijoittelut myyntipisteen Tervetuloa-näytössä ja tapahtumanäytössä. 
 
 **Tervetuloa-näyttö** - Tervetuloa-näyttö on yleensä sivu, jonka käyttäjät näkevät, kun he ensin kirjautuvat myyntipisteeseen. Tervetuloa-näyttö voi koostua tavaramerkin kuvasta painikeruudukoista, jotka tarjoavat pääsyn myyntipisteen toimintoihin. Toiminnot, jotka eivät liity nykyiseen tapahtumaan sijoitetaan yleensä tähän. 
@@ -65,13 +62,11 @@ Näytön asettelun kokoonpano määrittää käyttöliittymän ohjausobjektien t
 
 **Oletusaloitusnäyttö** - jotkin vähittäismyyjät haluavat, että kassa siirtyy suoraan tapahtumanäyttöön kirjautumisen jälkeen. Oletusaloitusnäytön asetuksen avulla tämä voidaan määrittää kullekin näyttöasettelulle.
 
-### Liitos
-<a id="assignment" class="xliff"></a>
+### <a name="assignment"></a>Liitos
 
 Näytön asettelut voidaan määrittää myymälän, kassakoneen tai käyttäjän tasolla. Käyttäjän määritys korvaa kassakoneen ja myymälän määrityksen, ja kassakoneen määritys korvaa myymälän määrityksen. Yksinkertaisessa tilanteessa, jossa kaikki käyttäjät käyttävät samaa asettelua riippumatta kassakoneesta tai roolista, näytön asettelu voidaan määrittää vain myymälässä. Tapauksissa, jossa tietyt kassakoneet tai käyttäjät vaativat erityisiä asetteluita, ne voidaan määritellä asianmukaisesti.
 
-### Asettelukoot
-<a id="layout-sizes" class="xliff"></a>
+### <a name="layout-sizes"></a>Asettelukoot
 
 Tämä ominaisuus on käytössä vain Dynamics 365 for Retailin versiossa 1611. Koska useissa tapauksissa näytön asetteluita voidaan käyttää useissa näyttökoissa ja tarkkuuksissa, käyttäjät voivat määrittää kullekin näyttötyypille oman asettelun ja sisällön. POS-sovellus valitsee automaattisesti asettelun lähimmän koon laitteen käynnistyksen yhteydessä. Näytön asettelu voi sisältää myös täysikokoisten ja pienikokoisten laitteiden kokoonpanoja. Tämän kokoonpanon avulla käyttäjä voidaan määrittää yhteen näyttöasetteluun, joka toimii myymälän erikokoissa ja erityyppisissä laitteissa. 
 
@@ -79,8 +74,7 @@ Tämä ominaisuus on käytössä vain Dynamics 365 for Retailin versiossa 1611. 
 
 **Modern POS - kompakti** - kompaktit asettelut sopivat parhaiten puhelimiin tai pieniin tabletteihin. Kompaktien laitteiden suunnittelumahdollisuudet ovat rajalliset. Käyttäjät voivat määrittää kuitti- ja summaruutujen sarakkeet ja kentät.
 
-### Näytön asettelun suunnittelutoiminto
-<a id="screen-layout-designer" class="xliff"></a>
+### <a name="screen-layout-designer"></a>Näytön asettelun suunnittelutoiminto
 
 Jokainen näyttöasettelun asettelun koko pitää määrittää näyttöasettelun suunnittelutoiminnossa. Suunnittelijan avulla käyttäjät voivat määrittää tapahtumanäytön käyttöliittymäelementit. Näytön asettelun suunnittelutoiminto käyttää ClickOnce-toimintoa lataamaan, asentamaan ja käynnistämään sovelluksen uusimman version aina, kun se avataan. Tarkista selaimen ClickOnce-käyttövaatimukset – joissakin selaimissa, kuten Chromessa, tarvitaan laajennuksia. 
 
@@ -98,8 +92,7 @@ Jokainen näyttöasettelun asettelun koko pitää määrittää näyttöasettelu
 
 **Suositellut tuotteet** - Jos tämä on määritetty ympäristöön, Suositellut tuotteet -ohjausobjekti näyttää tuote-ehdotuksia koneoppimiseen perustuen. Suositellut tuotteet -ohjausobjekti on käytettävissä vain Dynamics 365 for Retailin version 1611 täydellisissä asetteluissa. **Mukautettu ohjausobjekti **- Mukautettu ohjausobjekti toimii näytössä paikkamerkkinä varaamassa tilaa mukautetulle sisällölle. Mukautettu ohjausobjekti on käytettävissä vain täydellisissä asetteluissa.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Retail POS-asettelun suunnittelutoiminto asentaminen](install-pos-layout-designer.md)

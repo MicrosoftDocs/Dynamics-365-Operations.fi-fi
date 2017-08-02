@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-## Kustannusobjektin vastuuhenkilön käyttöoikeudet
-<a id="access-rights-of-a-cost-object-controller" class="xliff"></a>
+## <a name="access-rights-of-a-cost-object-controller"></a>Kustannusobjektin vastuuhenkilön käyttöoikeudet
 
 [!include[banner](../includes/banner.md)]
 
@@ -56,8 +55,7 @@ Kun **kustannusobjektin vastuuhenkilön** rooli on määritetty esimiehelle, tä
 > [!NOTE]
 > **kustannusobjektin vastuuhenkilön** roolilla ei voi hallita sitä, mitä kustannusobjekteja käyttäjä voi käyttää ja minkä tietoja hän voi tarkastella. Rivitason suojaus perustuu dimensio- ja käyttöoikeusluettelohierarkioihin.
 
-## Käyttöoikeuksien myöntäminen
-<a id="grant-access-rights" class="xliff"></a>
+## <a name="grant-access-rights"></a>Käyttöoikeuksien myöntäminen
 Seuraavassa on esimerkki dimensiohierarkiasta.
 
 **Dimension hierarkiatiedot**

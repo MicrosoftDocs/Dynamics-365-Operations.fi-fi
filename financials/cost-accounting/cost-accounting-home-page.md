@@ -24,8 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kustannuslaskennan aloitussivu
-<a id="cost-accounting-home-page" class="xliff"></a>
+# <a name="cost-accounting-home-page"></a>Kustannuslaskennan aloitussivu
 
 [!include[banner](../includes/banner.md)]
 
@@ -48,8 +47,7 @@ Kustannuslaskenta-moduulin avulla voit tehdä seuraavat:
 -   Työtilassa tarkasteltavien tiliotteiden luominen
 -   Luo raportteja Excelissä.
 
-## Aloittaminen
-<a id="get-started" class="xliff"></a>
+## <a name="get-started"></a>Aloittaminen
 
 > [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
 
@@ -66,14 +64,12 @@ Käsitteiden ymmärtäminen helpottaa ymmärtämään, miten voit käyttää kus
 -   [Kustannusobjektin dimensiot](cost-objects.md)
 -   [Luo kustannusobjekteja](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (ohjattu tehtävä)
 
-## Kustannusseurannan mobiilityötila
-<a id="cost-control-mobile-workspace" class="xliff"></a>
+## <a name="cost-control-mobile-workspace"></a>Kustannusseurannan mobiilityötila
 Kustannusten hallinnan mobiilityötilan avulla kustannuspaikan päälliköt näkevät kustannuspaikan suorituskyvyn missä tahansa ja milloin tahansa.
 
 -   [Kustannusseurannan mobiilityötila](cost-controlling-mobile-workspace.md)
 
-## Kustannuslaskennan analyysin Power BI -sisältö
-<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
+## <a name="cost-accounting-analysis-power-bi-content"></a>Kustannuslaskennan analyysin Power BI -sisältö
 Kustannuslaskennan analyysin Microsoft Power BI -sisältö on tarkoitettu kustannusten controllereille tai kenelle tahansa, joka on vastuussa organisaation kustannusseurannasta. Se sisältää tärkeitä mittareita, kuten kustannukset, suuruus ja kustannushinta budjetin kustannusten, todellisten kustannusten ja joustavan budjetin kustannusten mukaan. Se käyttää Finance and Operationsin kustannuslaskentaa ja tarjoaa koko organisaation kustannusten kokoomanäytön yhtenä raportointivaluuttana. Esimiehet voit suodattaa tietoja kustannusobjektien mukaan suorittaakseen kustannusseurantaa organisaatioyksiköille, vaikka organisaatiolla voi olla useita yrityksiä.
 
 -   [Kustannuslaskennan analyysin Power BI -sisältö](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)

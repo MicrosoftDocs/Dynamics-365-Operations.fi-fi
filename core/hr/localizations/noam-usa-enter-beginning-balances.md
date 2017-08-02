@@ -26,8 +26,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Palkanlaskennan alkusaldojen antaminen
-<a id="enter-payroll-beginning-balances" class="xliff"></a>
+# <a name="enter-payroll-beginning-balances"></a>Palkanlaskennan alkusaldojen antaminen
 
 [!include[banner](../../includes/banner.md)]]
 
@@ -52,12 +51,10 @@ Seuraavassa esimerkissä näytetään, miten työntekijän palkanlaskennan alkus
 > [!NOTE] 
 > Jos haluat toistaa samat vaiheet jäljempänä, käytä esittelytietoja. Esittelytiedot voidaan ladata PartnerSourcessa
 
-### A. Palkanlaskennan alkusaldoissa käytettävien ansiokoodien määrittäminen
-<a id="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances" class="xliff"></a>
+### <a name="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances"></a>A. Palkanlaskennan alkusaldoissa käytettävien ansiokoodien määrittäminen
 Varmista palkanlaskennan alkusaldoja annettaessa, että Salli ansioilmoitushintojen muokkaus -vaihtoehto otettiin käyttöön, kun käytettävät ansiokoodit määritettiin. Kun vaihtoehto on käytössä, voit antaa summat manuaalisesti vanhasta järjestelmästä. 
 
-### B. Alkusaldon sisältävän ansioilmoituksen luominen työntekijälle
-<a id="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance" class="xliff"></a>
+### <a name="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance"></a>B. Alkusaldon sisältävän ansioilmoituksen luominen työntekijälle
 Tässä vaiheessa kullekin työntekijälle luodaan manuaalisesti vanhan järjestelmän viimeisen maksukauden ansioilmoitus, joka luo ansioilmoitusrivit uuteen palkanlaskentajärjestelmään. Lisää yksi rivi kullekin ansiokoodille sekä summalle vuoden alusta ja tunneille. Mallivaiheet ovat seuraavat:
 
 1. Avaa **Kaikki ansioilmoitukset** -sivu ja valitse **Uusi**.  
@@ -121,12 +118,10 @@ Rivi 3: **Ansioilmoitusrivi**-välilehti
 
 Valitse **OK** ja sulje **Infoloki**.
 
-#### Miksi Poista kirjanpito käytöstä -valintaruutu on valittava maksuilmoituksia luotaessa?
-<a id="why-disable-accounting-checkbox-needs-to-be-turned-on-when-generating-pay-statements" class="xliff"></a>
+#### <a name="why-disable-accounting-checkbox-needs-to-be-turned-on-when-generating-pay-statements"></a>Miksi Poista kirjanpito käytöstä -valintaruutu on valittava maksuilmoituksia luotaessa?
 Tämä asetus estää maksuilmoituksen riviin jakamisen ja viennin kirjanpitoon. Et halua kirjata alkusaldon maksuilmoitusta, sillä on arvot ovat jo siirretty kirjanpitoon vanhasta järjestelmästä. Saldo ladataan vain raportointia ja rajoittamista varten.
 
-### C. Työntekijöiden maksuilmoitusten luominen
-<a id="c-create-pay-statements-for-employees" class="xliff"></a>
+### <a name="c-create-pay-statements-for-employees"></a>C. Työntekijöiden maksuilmoitusten luominen
 Kun olet luonut alkusaldot sisältävät maksuilmoitukset, sinun on tarkistettava, että maksuilmoitukset vastaavat palkanlaskennan tietoja. Sinun on myös päivitettävä etu- ja verotustiedot manuaalisesti vastaamaan aiemman palkanlaskentajärjestelmän tietoja. Kun olet tarkistanut, että aiemman palkkalaskentajärjestelmään summat vastaavat nykyisten maksuilmoitusten summia, maksuilmoitukset on viimeisteltävä.
 
 1. Avaa **Kaikki maksuilmoitukset** -sivu.
@@ -180,8 +175,7 @@ Kun olet luonut alkusaldot sisältävät maksuilmoitukset, sinun on tarkistettav
 
 Samaa prosessi voidaan toistaa tarvittaessa erikseen kullekin edellisen vuoden vuosineljänneksille. Se on tarpeellista vain, jos asiakas haluat nähdä tiedot neljännesvuosittain ilman, että tiedot olisi tarkistettava vanhasta järjestelmästä.
 
-## Työntekijän alkusaldoa antaessa tapahtuu virhe
-<a id="if-you-make-a-mistake-entering-beginning-balances-for-an-employee" class="xliff"></a>
+## <a name="if-you-make-a-mistake-entering-beginning-balances-for-an-employee"></a>Työntekijän alkusaldoa antaessa tapahtuu virhe
 Tapahtumat voidaan peruuttaa ja antaa uudelleen. Voit peruuttaa tapahtuman suorittamalla seuraavat vaiheet **Kaikki maksuilmoitukset** -sivulla.
 
 1. Valitse **Palauta**.

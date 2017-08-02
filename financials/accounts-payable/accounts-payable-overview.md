@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Ostoreskontran määrittäminen
-<a id="configure-accounts-payable" class="xliff"></a>
+# <a name="configure-accounts-payable"></a>Ostoreskontran määrittäminen
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa kuvataan sivut, joiden avulla määritetään perustoiminnot ja valinnaiset toiminnot Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin ostoreskontrassa. Artikkelissa kerrotaan myös ennen ostoreskontran määrittämisen aloittamista suoritettavat asetusvaiheet.
 
-Ostoreskontra-määrityksen edellytykset
-<a id="prerequisites-for-accounts-payable-setup" class="xliff"></a>
+<a name="prerequisites-for-accounts-payable-setup"></a>Ostoreskontra-määrityksen edellytykset
 ----------------------------------------
 
 Ennen ostoreskontran määrittämäistä, seuraavat asetukset on määritettävä:
@@ -46,8 +44,7 @@ Ennen ostoreskontran määrittämäistä, seuraavat asetukset on määritettäv�
     -   Jos aiot suorittaa valuuttakurssioikaisuja, määritä valuuttakoodit Valuutat-sivulla, vaihtokurssin tyypit Vaihtokurssin tyypit -sivulla ja valuutan vaihtokurssit Valuutan vaihtokurssit -sivulla.
 -   Määritä Maksuliikenteen hallinta -kohdassa pankkitilit, joita käytetään maksutapojen yhteydessä.
 
-## Ostoreskontra-asetusten sivut
-<a id="setup-pages-for-accounts-payable" class="xliff"></a>
+## <a name="setup-pages-for-accounts-payable"></a>Ostoreskontra-asetusten sivut
 
 Voit määrittää seuraavilla sivuilla ostoreskontran perustoiminnot kullekin yritykselle. Sivut mainitaan suositeltavassa määritysjärjestyksessä. Voit helpottaa määritysprosessia luomalla ensimmäisistä tietueista malleja. Mallissa arvot yleensä annetaan useisiin sellaisiin kenttiin, joiden ominaisuuksia organisaatio haluaa käyttää tietyn toimittajatyypin yhteydessä.
 1.  Määritä Maksuehdot-sivulla maksuehdot, jotka haluat määrittää myyntitilauksiin, ostotilauksiin, asiakkaisiin ja toimittajiin ja joiden mukaan laskujen eräpäivät määräytyvät.
@@ -58,8 +55,7 @@ Voit määrittää seuraavilla sivuilla ostoreskontran perustoiminnot kullekin y
 6.  Määritä Lomakeasetukset-sivulla niiden erilaisten toimittajiin liittyvien asiakirjojen muoto, joilla organisaatio seuraa toimittajien vastaanottoja ja antaa syyt toimittajille maksettaville suorituksille.
 7.  Luo ja ylläpidä Toimittajat-sivulla toimittajatilejä sekä veroviranomaisia, joille organisaatio ilmoittaa arvonlisäveron.
 
-## Ostoreskontran valinnaiset asetussivut
-<a id="optional-setup-pages-for-accounts-payable" class="xliff"></a>
+## <a name="optional-setup-pages-for-accounts-payable"></a>Ostoreskontran valinnaiset asetussivut
 Perustoimintojen lisäksi ostoreskontrassa voi määrittää muita toimintoja.
 
 Lisäasetusten sivut on järjestetty toiminnon mukaan.
@@ -125,8 +121,7 @@ Lisäasetusten sivut on järjestetty toiminnon mukaan.
 
 -   Vahvista ja päivitä **1099-kentät** -sivulla vähimmäissummat, jotka on ilmoitettava Yhdysvaltain veroviranomaiselle (IRS) uusimpien IRS-vaatimusten perusteella.
 
-## **Muiden moduulien valinnaiset asetukset**
-<a id="optional-setup-for-other-modules" class="xliff"></a>
+## <a name="optional-setup-for-other-modules"></a>**Muiden moduulien valinnaiset asetukset**
 **Organisaation hallinto**
 
 -   Määritä Numerosarjat-sivulla laskunumeroiden numerosarjaryhmät.

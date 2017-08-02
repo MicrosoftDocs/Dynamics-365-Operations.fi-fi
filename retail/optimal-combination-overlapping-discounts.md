@@ -27,8 +27,7 @@ ms.lasthandoff: 06/14/2017
 
 ---
 
-# Määritä optimaalinen yhdistelmä päällekkäisiä alennuksia
-<a id="determine-the-optimal-combination-of-overlapping-discounts" class="xliff"></a>
+# <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Määritä optimaalinen yhdistelmä päällekkäisiä alennuksia
 
 [!include[banner](includes/banner.md)]
 
@@ -37,12 +36,10 @@ Kun alennukset menevät päällekkäin, sinun on määritettävä alennuksien yh
 
 Tämä artikkeli koskee Microsoft Dynamics AX 2012 R3 KB 3105973 (julkaistu 2.11.2015) tai uudempaa versiota sekä Microsoft Dynamics 365 for Retailia. Päällekkäisten alennusten käyttöä varten on otettu menetelmä, jolla voidaan määrittää päällekkäisten alennusten yhdistelmän käyttö mahdollisimman nopeasti. Kutsumme tätä uutta menetelmää **rajan-arvojen luokitteluksi**. Raja-arvojen luokittelua käytetään silloin kun aika, joka vaaditaan mahdollisten päällekkäisten alennusten yhdistelmien arvioimiseen, ylittää raja-arvon, joka määritetään **Vähittäismyynnin parametrit** -sivulla. Raja-arvon luokittelumenetelmässä arvo lasketaan kullekin päällekkäiselle alennukselle käyttämällä jaettujen tuotteiden alennuksen arvoa. Sitten päällekkäisiä alennuksia käytetään suurimmasta suhteellisesta arvosta pienimpään suhteelliseen arvoon. Lisätietoja tästä uudesta menetelmästä on jäljempänä tässä artikkelissa olevassa "Raja-arvo"-osassa. Raja-arvon luokittelua ei käytetä, kun tuotteen alennussummat eivät vaikuta tapahtuman toisiin tuotteisiin. Tätä menetelmää ei käytetä esimerkiksi kahden yksinkertaisen alennuksen tapauksessa tai yksinkertaisen määräalennuksen yhteydessä.
 
-## Esimerkkejä alennuksista
-<a id="discount-examples" class="xliff"></a>
+## <a name="discount-examples"></a>Esimerkkejä alennuksista
 Voit luoda rajoittamattoman määrän vähittäismyynnin alennuksia yhteisille tuotejoukoille. Kuitenkin ilman rajoituksia saattaa ilmaantua suorituskyvyn ongelmia, kun yrität laskea alennukset, joita pitäisi käyttää eri tuotteissa. Seuraavissa esimerkeissä kuvataan tarkemmin tätä ongelmaa. Esimerkissä 1 aloitamme kahdesta tuotteesta ja kahdesta päällekkäisestä alennuksesta. Sitten esimerkissä 2 näytämme, miten ongelma kehittyy, kun tuotteita on useampia.
 
-### Esimerkki 1: Kaksi tuotetta ja kaksi alennusta
-<a id="example-1-two-products-and-two-discounts" class="xliff"></a>
+### <a name="example-1-two-products-and-two-discounts"></a>Esimerkki 1: Kaksi tuotetta ja kaksi alennusta
 
 Tässä esimerkissä tarvitaan kaksi tuotetta kunkin alennuksen saadakseen ja alennuksia ei voi yhdistää. Tässä esimerkissä alennukset ovat **Paras hinta** -alennuksia. Molemmat tuotteet oikeuttavat molempiin alennuksiin. Tässä ovat nämä kaksi alennusta.
 ![Päällekkäisten alennusten yhdistelmä 01](./media/overlapping-discount-combo-01.jpg)
@@ -51,8 +48,7 @@ Mille tahansa kahdelle tuotteelle parempi näitä alennuksista määräytyy kumm
 
 **Huomautus:** Kun tuotteen 1 hinta on yhtä suuri kuin kaksi kolmasosaa tuotteen 2 hinnasta, kaksi alennusta ovat yhtä suuria. Tässä esimerkissä voimassa oleva alennusprosentti alennukselle 1 vaihtelee muutamasta prosentista (kun näiden kahden tuotteen hinnat ovat kaukana toisistaan) enintään 25 prosenttiin (kun kahdella tuotteella on sama hinta). Alennuksen 2 voimassa oleva alennusprosentti on kiinteä. Se on aina 20 prosenttia. Koska alennuksen 1 voimassa oleva alennusprosentti voi olla suurempi tai pienempi kuin alennus 2, paras alennus riippuu näiden kahden alennettavan tuotteen hinnoista. Tässä esimerkissä laskutoimitukset on suoritettu nopeasti, koska käytetään vain kahta alennusta kahteen tuotteeseen. On vain kaksi mahdollista yhdistelmää: alennuksen 1 yksi käyttö tai alennuksen 2 yksi käyttö. Tässä ei tarvitse laskea permutaatioita, koska niitä ei ole. Kunkin alennuksen arvo lasketaan käyttämällä kumpaakin tuotetta ja parasta alennusta käytetään.
 
-### Esimerkki 2: Neljä tuotetta ja kaksi alennusta
-<a id="example-2-four-products-and-two-discounts" class="xliff"></a>
+### <a name="example-2-four-products-and-two-discounts"></a>Esimerkki 2: Neljä tuotetta ja kaksi alennusta
 
 Seuraavaksi käytämme neljää tuotetta ja samaa kahta alennusta. Kaikki neljä tuotetta oikeuttavat molempiin alennuksiin. Tässä tapauksessa on 12 mahdollista yhdistelmää. Lopuksi kahta alennusta sovelletaan tapahtumaan jossain seuraavista kolmesta yhdistelmästä: kaksi alennuksen 1 käyttöä, kaksi alennuksen 2 käyttöä tai sekä yksi alennuksen 1 käyttö että yksi alennuksen 2 käyttö. Mahdollisten yhdistelmien esittelemiseksi tarkastelemme kahta eri neljän tuotteen joukkoa, joilla on eri hinnat:
 
@@ -68,16 +64,14 @@ Ensin etsimme suurimman alennuksen, joka on saatavilla mille tahansa kahdelle tu
 
 **Huomautus:** Kun hinnat vaihtelevat ja vähintään kaksi alennusta kilpailee, ainoa tapa varmistaa paras alennusten yhdistelmä on arvioida molemmat alennukset ja verrata niitä.
 
-## Mahdollisia yhdistelmiä yhteensä
-<a id="total-possible-combinations" class="xliff"></a>
+## <a name="total-possible-combinations"></a>Mahdollisia yhdistelmiä yhteensä
 Tässä osassa jatketaan edellisen osan esimerkkiä. Lisäämme enemmän tuotteita ja vielä yhden alennuksen, jolloin näemme, kuinka monta yhdistelmää pitää laskea ja verrata. Seuraavassa taulukossa on esitetty mahdollisten alennusyhdistelmien määrä tuotteen määrän kasvaessa. Taulukosta näkyy, mitä tapahtuu, kun on kaksi päällekkäistä alennusta, kuten edellisessä esimerkissä, ja kun on kolme päällekkäistä alennusta. Mahdollisten arvioitavien alennusyhdistelmien määrä ylittää määrän, jota edes nopea tietokone ei voi laskea ja verrata riittävän nopeasti vähittäismyynnin tarpeisiin.
 
 ![Päällekkäisten alennusten yhdistelmä 05](./media/overlapping-discount-combo-05.jpg)
 
 Kun käytetään vielä suurempia määriä tai useampia päällekkäisiä alennuksia, mahdollisten alennusyhdistelmien kokonaismäärä nousee nopeasti miljooniin, ja parhaan yhdistelmän valinta kestää jo huomattavan pitkään. Vähittäismyynnin hintamoduuliin on tehty joitain optimointeja, jotta voitaisiin vähentää arvioitavien yhdistelmien määrää. Koska tapahtuman päällekkäisten alennusten määriä ja tuotemääriä ei ole rajoitettu, paljon yhdistelmiä on arvioitava aina, kun on päällekkäisiä alennuksia. Raja-arvojen luokittelumenetelmä on yksi ratkaisu tähän ongelmaan.
 
-## Raja-arvomenetelmä
-<a id="marginal-value-method" class="xliff"></a>
+## <a name="marginal-value-method"></a>Raja-arvomenetelmä
 Eksponentiaalisesti kasvavan arvioitavien yhdistelmien määrän ongelman ratkaisemiseksi on olemassa optimointi, joka laskee arvon per jaettu tuote kullekin alennukselle, joka on kohdistettu tuotejoukkoon, johon voidaan käyttää kahta tai useampaa alennusta. Viittaamme tähän arvoon jaettujen tuotteiden alennuksen **raja-arvona**. Raja-arvo on tuotemäärän nostamisen keskimääräinen kokonaisalennussumman nousu, kun jaetut tuotteet kuuluvat kunkin alennuksen piiriin. Raja-arvo lasketaan ottamalla kokonaisalennussumma (DTotal), vähentämällä alennussumma ilman jaettuja tuotteita (DMinus\\ Shared) ja jakamalla kyseinen erotus jaettujen tuotteiden määrällä (ProductsShared). 
 ![Päällekkäisten alennusten yhdistelmä 06](./media/overlapping-discount-combo-06.jpg)
 

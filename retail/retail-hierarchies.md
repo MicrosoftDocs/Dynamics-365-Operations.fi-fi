@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Vähittäismyyntihierarkiat
-<a id="retail-hierarchies" class="xliff"></a>
+# <a name="retail-hierarchies"></a>Vähittäismyyntihierarkiat
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Tässä artikkelissa käsitellään Microsoft Dynamics 365 for Retailin vähitt�
 
 Voit luoda vähittäismyyntiluokan hierarkian, jonka avulla voit järjestää vähittäismyyntikanavissa myymiäsi tuotteita. Vähittäismyynnin tuotehierarkioiden avulla voit luokitella tai ryhmitellä tuotteita. Tuotteiden avulla voit luoda edelleen tuotevalikoimia ja asiakkaiden kanta-asiakasohjelmia. Voit myös määrittää tuotteiden määritteitä ja ominaisuuksia sekä hinnoittelurakenteen, sisällyttää tuotteita kampanjoihin ja käyttää niitä raportoinnissa. Voit luoda yhden vähittäismyynnin luokkahierarkian edustamaan kaikkia organisaatiosi tuotteita ja luokkia ja käyttää sitten tätä luokkahierarkiaa useisiin tarkoituksiin. Voit myös vaihtoehtoisesti luoda useita vähittäismyynnin luokkahierarkioita erikoistarkoituksiin, kuten tuotekampanjoihin. Vähittäismyynnin tuotehierarkiaa luotaessa on määritettävä luokkahierarkian tarkoituksen määrittävä luokkahierarkian tyyppi. Esimerkiksi kun tuotteita selataan luokittain verkossa tai myyntipisteissä, viittaukset koskevat vain tuotehierarkioita, joiden tyypiksi on määritetty **Vähittäismyynnin siirtymishierarkia**.
 
-## Vähittäismyyntihierarkian tyypit
-<a id="retail-hierarchy-types" class="xliff"></a>
+## <a name="retail-hierarchy-types"></a>Vähittäismyyntihierarkian tyypit
 Seuraavassa taulukossa on kuvattu käytettävissä olevia vähittäismyynnin luokkahierarkioiden tyyppejä ja niiden tarkoitusta.
 
 | Luokkahierarkian tyyppi       | Tarkoitus                                                                                                                                                                                                                                                                                                            |

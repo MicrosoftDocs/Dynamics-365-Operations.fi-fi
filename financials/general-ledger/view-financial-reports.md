@@ -26,24 +26,20 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Näytä raportit
-<a id="view-financial-reports" class="xliff"></a>
+# <a name="view-financial-reports"></a>Näytä raportit
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 for Finance and Operations Enterprise editionissa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
 
-Taloushallinnon raportoinnin yleiskatsaus
-<a id="financial-reporting-overview" class="xliff"></a>
+<a name="financial-reporting-overview"></a>Taloushallinnon raportoinnin yleiskatsaus
 ----------------------------
 
-## Avaa taloudellinen raportti
-<a id="open-a-financial-report" class="xliff"></a>
+## <a name="open-a-financial-report"></a>Avaa taloudellinen raportti
 Voit avata raportin valitsemalla raportin nimen. Kun raportti avataan ensimmäistä kertaa, se luodaan automaattisesti edelliselle kuukaudelle. Jos esimerkiksi avaat raportin ensimmäisen kerran elokuussa 2015, raportti luotiin päivämäärälle 31.7.2015. Kun raportti on avattu, voit aloittaa siihen perehtymisen porautumalla tiettyyn tietoon ja muuttamalla raporttiasetuksia.
 
-## Raportin tietoihin perehtyminen
-<a id="drill-down-on-a-financial-report" class="xliff"></a>
+## <a name="drill-down-on-a-financial-report"></a>Raportin tietoihin perehtyminen
 Taloudelliset raportit voivat sisältää useita yksityiskohtaisia tasoja. Taloushallinnon taso on ensimmäinen taso jonka näet, kun avaat taloushallinnon raportin. Siirtyäksesi kirjanpitotasoon, valitse tiedot joihin haluat perehtyä. Esimerkiksi, tarkastellaksesi tilin myyntitietoja, valitse myyntitiedot, joita haluat tutkia. Kirjanpitotasolta, voit mennä alaspäin tarkastelemaan tapahtumia, joista tilin saldo muodostuu. Voit tarkastella tapahtumia kahdella tavalla: raportin tapahtumat ja tositetapahtumat.
 
 -   **Raportin tapahtumat** – tapahtumat näkyvät muotoillussa näkymässä, joka kuuluu taloushallinnon raporttiin. Tarkastellaksesi tapahtumia muotoillussa näkymässä, valitse tieto johon haluat perehtyä ja valitse sitten **Perehdy raportin tapahtumatasolle**.
@@ -51,8 +47,7 @@ Taloudelliset raportit voivat sisältää useita yksityiskohtaisia tasoja. Talou
 
 Jos tiedot ovat budjettitietoja, voit avata budjettitilimerkinnöt. Sulkeaksesi raportin tasoja ja palataksesi sinne mistä aloitit, voit painaa Esc-näppäintä tai klikata **Sulje**-painiketta (**X**) oikeassa yläkulmassa.
 
-## Muuta raporttiasetuksia
-<a id="change-report-options" class="xliff"></a>
+## <a name="change-report-options"></a>Muuta raporttiasetuksia
 Voit muuttaa raportin päivämäärää, lisätä ominaisuus- ja dimensiosuodattimia tai vaihtaa budjettisuunnitelmaa **todellinen vs. budjetti** -raportissa. Valitse toimintoruudussa **Raportin asetukset** ja noudata sitten jotakin seuraavista askelista:
 
 -   Muuttaaksesi raportin perustekautta ja perustevuotta, valitse perustekausi ja perustevuosi ja klikkaa sitten **OK**.
@@ -62,28 +57,22 @@ Voit muuttaa raportin päivämäärää, lisätä ominaisuus- ja dimensiosuodatt
 
 Kun klikkaat **OK**, kaikki valitsemasi vaihtoehdot käytetään raporttiin. Jos päätät, että et halua käyttää valittuja asetuksia, klikkaa **peruuta**.
 
-## Päivitä talousraportti
-<a id="update-a-financial-report" class="xliff"></a>
+## <a name="update-a-financial-report"></a>Päivitä talousraportti
 Voit päivittää (päivitys) talousraportin siten, että siinä näkyy kaikkein viimeisimmät tiedot sille vuodelle ja kaudelle, jolle raportti luotiin. Jos esimerkiksi päivität talousraportin, joka on luotu lokakuulle 2015, raportti sisältää kaikki uudet lokakuulle 2015 kirjatut tapahtumat. Päivitä raportti valitsemalla toimintoruudussa **Päivitä**. Päivitetty raportti on saatavissa vain sen päivittäneelle henkilölle. Raportti on julkaistava, jotta muut käyttäjät näkevät samat tiedot.
 
-## Julkaise talousraportti
-<a id="publish-a-financial-report" class="xliff"></a>
+## <a name="publish-a-financial-report"></a>Julkaise talousraportti
 Kun olet päivittänyt talousraportin, voit julkaista sen. Organisaation muut käyttäjät voivat sitten tarkastella sitä. Julkaistaksesi raportin toimintoruudussa, klikkaa **julkaise**.
 
-## Näytä talousraportti eri valuuttana
-<a id="display-a-financial-report-in-a-different-currency" class="xliff"></a>
+## <a name="display-a-financial-report-in-a-different-currency"></a>Näytä talousraportti eri valuuttana
 Talousraportti voidaan näyttää minä vain valuuttana milloin tahansa. Näyttääksesi raportin toisena valuuttana, toimintoruudussa, klikkaa **valuutta** ja valitse sitten valuutta. Raportti käännetään kyseiseksi valuutaksi ja tulokset näytetään. kaikki valuuttakoodit tai merkit, jotka sisällytetään raportin rakenteen osaksi, päivitetään vastaamaan uutta valuuttaa. Listalla näkyvät valuutat ovat raportoinnin valuuttoja, jotka on määritetty Finance and Operationsissa.
 
-## Näytä talousraportti yhteenvetona
-<a id="display-a-summarized-view-of-the-financial-report" class="xliff"></a>
+## <a name="display-a-summarized-view-of-the-financial-report"></a>Näytä talousraportti yhteenvetona
 Talousraportti voi sisältää erittelyrivejä ja yhteenveto-rivejä. Erittelyrivit ovat rivejä, joilla on päätilit tai dimensiot. Yhteenvetorivit ovat kuvaus-, summa- ja laskentarivejä. Näyttääksesi vain yhteenvetorivit raportissa, klikkaa **näytä** ja valitse sitten **vain yhteenvetorivit**. Raportti on tiivistetty ja näyttää vain yhteenvetorivit. Nähdäksesi yhteenvetorivit sekä erittelyrivit, klikkaa **näytä** ja valitse sitten **vain yhteenvetorivit** uudelleen.
 
-## Avaa edellisen kuukauden taloudellinen raportti
-<a id="open-a-financial-report-from-a-previous-month" class="xliff"></a>
+## <a name="open-a-financial-report-from-a-previous-month"></a>Avaa edellisen kuukauden taloudellinen raportti
 Voit tarkastella edellisten kuukauksien tai kuluvan kuukauden raportteja ilman raportin uudelleen tekemistä. Voit avata raportin edelliselle kuukaudelle valitsemalla **Näytä** ja valitsemalla sitten **Edelliset raportit**. Näkyviin tulee luettelo edellisistä kuukausista, joille raportti on luotu. Laajenna kuukausi lukeaksesi raportin, valitse päivämäärä ja valitse sitten **OK**. Edellisen kuukauden raportti tulee näkyviin. Voit palauttaa kuluvan kuukauden raportin valitsemalla **peruuta**.
 
-## Tulosra talousraportti
-<a id="print-a-financial-report" class="xliff"></a>
+## <a name="print-a-financial-report"></a>Tulosra talousraportti
 Tulostaaksesi talousraportin toimintoruudussa, valitse **tulosta** ja noudata sitten yhtä tai useampaa seuraavista askeista määrittääksesi tulostusasetukset:
 
 -   Sisällyttääksesi yksityiskohtaisia tasoja tulostettavaan raporttiin, säädä liukusäätimellä **kyllä** tai **ei**. Jos raportissa käytetään raportointipuuta, voit valita kaikki raportointiyksiköt tai vain nykyisen raportointiyksikön.
@@ -93,12 +82,10 @@ Tulostaaksesi talousraportin toimintoruudussa, valitse **tulosta** ja noudata si
 
 Sen jälkeen, kun olet määritätänyt tulostusasetukset, valitse **tulosta** tulostaaksesi raportin. Jos päätät, että et halua tulostaa raporttia, klikkaa **peruuta** sen sijaan. Tulostettavan raportin esikatselu tulee näkyviin. Voit valita tulostimen, johon raportti lähetetään ja voit myös määrittää tulostusasetuksia.
 
-## Lähetä talousraportti
-<a id="export-a-financial-report" class="xliff"></a>
+## <a name="export-a-financial-report"></a>Lähetä talousraportti
 Lähettääksesi talousraportin. toimintoruudussa, klikkaa **lähetä**. Raportti lähetetään Microsoft Exceliin ja selaimesi kysyy, haluatko avata tai tallentaa vientitiedostoon. Vientiasetuksia, jotka on määritetty raportin suunnittelussa, käytetään vietävään raporttiin.    
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Microsoft Dynamics AX:n talousraportointi](/dynamics365/unified-operations/dev-itpro/analytics/financial-reporting-intro)

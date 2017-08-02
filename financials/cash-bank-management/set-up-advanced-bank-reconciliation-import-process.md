@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Määritä pankkitilin täsmäytyksen lisätoimintojen tuontiprosessi
-<a id="set-up-the-advanced-bank-reconciliation-import-process" class="xliff"></a>
+# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Määritä pankkitilin täsmäytyksen lisätoimintojen tuontiprosessi
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliot
 
 Tiliotteen tuontiasetukset vaihtelevat sähköisen tiliotteen muodon mukaan. Finance and Operations tukee heti kolmea tiliotemuotoa, jotka ovat ISO20022, MT940 ja BAI2.
 
-## Mallitiedostot
-<a id="sample-files" class="xliff"></a>
+## <a name="sample-files"></a>Mallitiedostot
 Tarvitset kaikkia kolmea muotoa varten tiedostot, jotka kääntävät sähköisen tiliotteen alkuperäisestä muodosta muotoon, jota Finance and Operations voi käyttää. Tarvittavat resurssitiedostot sijaitsevat Microsoft Visual Studion Application Explorerin **Resurssit**-solmussa. Kun olet löytänyt tiedot, kopioi ne yhteen tunnettuun sijaintiin, sillä silloin ne on helpompi ladata palvelimeen määritysprosessin aikana.
 
 | Resurssin nimi                                           | Tiedostonimi                            |
@@ -50,8 +48,7 @@ Tarvitset kaikkia kolmea muotoa varten tiedostot, jotka kääntävät sähköise
 | BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
 | BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
 
-## Esimerkkejä tiliotteiden muodoista ja teknisistä asetteluista
-<a id="examples-of-bank-statement-formats-and-technical-layouts" class="xliff"></a>
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Esimerkkejä tiliotteiden muodoista ja teknisistä asetteluista
 Alla on esimerkkejä tuonnin lisäasetuksia pankkitilin täsmäytystietojen tuontitiedoston teknisistä asettelumäärityksistä sekä kolme esimerkkitiliotetiedostoa: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 | Tekninen asettelumääritys                             | Esimerkkitiliotetiedosto          |
@@ -62,8 +59,7 @@ Alla on esimerkkejä tuonnin lisäasetuksia pankkitilin täsmäytystietojen tuon
 
  
 
-## Määritä ISO20022-tiliotteiden tuonti
-<a id="set-up-the-import-of-iso20022-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Määritä ISO20022-tiliotteiden tuonti
 Määritä ensin ISO20022-tiliotteiden tiliotemuodon käsittelyryhmä käyttämällä tietoyksikkökehystä.
 
 1.  Valitse **Työtilat** &gt; **Tietojen hallinta**.
@@ -96,8 +92,7 @@ Viimeinen vaihe on pankkitilin täsmäytyksen lisätoimintojen ottaminen käytt�
 3.  Valitse **Täsmäytys**-välilehdessä **Pankkitilin täsmäytyksen lisätoiminnot**-asetukseksi **Kyllä**.
 4.  Määritä **Tiliotteen muotoilu**-kenttä aiemmin luomallesi muotoilulle, kuten **ISO20022**.
 
-## Määritä MT940-tiliotteiden tuonti
-<a id="set-up-the-import-of-mt940-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-mt940-bank-statements"></a>Määritä MT940-tiliotteiden tuonti
 Määritä ensin MT940-tiliotteiden tiliotemuodon käsittelyryhmä käyttämällä tietoyksikkökehystä.
 
 1.  Valitse **Työtilat** &gt; **Tietojen hallinta**.
@@ -133,8 +128,7 @@ Viimeinen vaihe on pankkitilin täsmäytyksen lisätoimintojen ottaminen käytt�
 4.  Kun sinua pyydetään vahvistamaan valintasi ja ottamaan Pankkitilin täsmäytyksen lisätoiminto käyttöön, valitse **OK**.
 5.  Määritä **Tiliotteen muotoilu** -kenttä aiemmin luomallesi muotoilulle, kuten **MT940**.
 
-## Määritä BAI2-tiliotteiden tuonti
-<a id="set-up-the-import-of-bai2-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-bai2-bank-statements"></a>Määritä BAI2-tiliotteiden tuonti
 Määritä ensin BAI2-tiliotteiden tiliotemuodon käsittelyryhmä käyttämällä tietoyksikkökehystä.
 
 1.  Valitse **Työtilat** &gt; **Tietojen hallinta**.
@@ -170,8 +164,7 @@ Viimeinen vaihe on pankkitilin täsmäytyksen lisätoimintojen ottaminen käytt�
 4.  Kun sinua pyydetään vahvistamaan valintasi ja ottamaan Pankkitilin täsmäytyksen lisätoiminto käyttöön, valitse **OK**.
 5.  Määritä **Tiliotteen muotoilu** -kenttä aiemmin luomallesi muotoilulle, kuten **BAI2**.
 
-## Testaa tiliotteen tuonti
-<a id="test-the-bank-statement-import" class="xliff"></a>
+## <a name="test-the-bank-statement-import"></a>Testaa tiliotteen tuonti
 Viimeisessä vaiheessa testataan, että tiliotteen tuonti onnistuu.
 
 1.  Siirry kohtaan **Maksuliikenteen hallinta** &gt; **Pankkitilit**.

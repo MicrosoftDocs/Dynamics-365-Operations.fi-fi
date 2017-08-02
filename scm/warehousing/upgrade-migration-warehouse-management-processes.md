@@ -25,41 +25,34 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Siirtyminen AX 2012:sta Finance and Operationsiin
-<a id="migrate-from-ax-2012-to-finance-and-operations" class="xliff"></a>
+# <a name="migrate-from-ax-2012-to-finance-and-operations"></a>Siirtyminen AX 2012:sta Finance and Operationsiin
 
 Tässä ohjeaiheessa esitetään yhteenveto tuotteen ja varastonhallinnan siirtoasetuksista MicrosoftDynamics 365 for Finance and Operations Enterprise edition -versiossa.
 
-Johdanto
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Johdanto
 ------------
 
 Finance and Operationsin päivityksen aikana tuotteiden käyttö on estetty, jos ne liitetään varastodimensioryhmään, joka ei vastaa varastodimensioryhmän asetuksia Finance and Operationsissa. Päivityksen jälkeen voit kuitenkin käyttää siirtoasetuksia **Vaihda nimikkeen varastodimensioryhmä** -prosessissa ja poistaa käyttöeston tuotteista, jotka on estetty päivityksen aikana. Sitten voit käsitellä kyseisten tuotteiden tapahtumia. Jotkin nimikkeet voi olla liitetty aiemmin varastodimensioryhmiin, missä toimipaikka-, varasto- ja sijainti-varastodimensiot ovat käytössä ja niitä seurataan fyysisesti. Tässä tapauksessa voit käyttää **Vaihda nimikkeen varastodimensioryhmä** -prosessia ja ottaa käyttöön nimikkeet, joita käytetään varaston hallintaprosesseissa. Tämä ominaisuus on hyödyllinen, jos haluat käyttää varaston hallintatoimintoja nykyisille nimikkeille.
 
-## Finance and Operationsin päivittäminen, kun AX 2012 R3 WMSII on käytössä
-<a id="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used" class="xliff"></a>
+## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Finance and Operationsin päivittäminen, kun AX 2012 R3 WMSII on käytössä
 Finance and Operations ei enää tue vanhaa **WMSII** -moduulia, joka on peräisin Microsoft Dynamics AX 2012:sta. Sen sijaan voit käyttää uutta **Varastonhallinta**-moduulia. Lisätietoja on kohdassa [Varastonhallinnan aloitussivu](https://ax.help.dynamics.com/en/wiki/warehouse-management/). Aiemmissa versioissa kirjanpitovarastosta voi valita varastodimensioiden sijainnin ja kuormalavatunnuksen. Kuitenkin osana päivitysprosessia kuormalavatunnus-varastodimensiota ei enää voida ottaa käyttöön kirjanpitovarastossa. Kaikki tuotteet, jotka liittyvät varastodimensioryhmään, joka käyttää kuormalavatunnus-varastodimensiota, estetään eikä niitä käsitellä.
 
-### Nimikkeiden ottaminen käyttöön Finance and Operations
-<a id="enabling-items-in-finance-and-operations" class="xliff"></a>
+### <a name="enabling-items-in-finance-and-operations"></a>Nimikkeiden ottaminen käyttöön Finance and Operations
 
 Finance and Operationsissa nimikkeet, joita käytetään osana varaston hallintaprosesseja, täytyy liittää varastodimensioryhmään, jossa **Käytä varastonhallintaprosesseja** -parametri on valittu. Kun tämä asetus on valittuna, toimipaikka-, varasto-, varaston tila-, sijainti- ja rekisterikilpi-varastodimensiot tulevat aktiivisiksi. Voit vaihtaa tämän tyyppisen varastodimensioryhmän vain niille nimikkeille, jotka on jo liitetty varastodimensioryhmiin, joissa sijainnin varastodimensio on aktiivinen.
 
-### Nimikkeet, joiden varastopäivitykset on estetty
-<a id="items-that-are-blocked-for-inventory-updates" class="xliff"></a>
+### <a name="items-that-are-blocked-for-inventory-updates"></a>Nimikkeet, joiden varastopäivitykset on estetty
 
 Näet luettelon vapautetuista tuotteista, joka on estetty päivityksen yhteydessä ja joita ei voi käsitellä, valitse **Inventoinnin- ja varastonhallinta** &gt; **Asetukset** &gt; **Varasto** &gt; **Nimikkeet, joiden varastopäivitykset on estetty**.
 
-### Toimituskiellossa olevien tuotteiden ottaminen käyttöön
-<a id="reapplying-blocked-products" class="xliff"></a>
+### <a name="reapplying-blocked-products"></a>Toimituskiellossa olevien tuotteiden ottaminen käyttöön
 
 Tuotteet, jotka on estetty päivityksen yhteydessä, pitää valita uusi varastodimensioryhmä tuotteille. Huomaa, että voit vaihtaa varastodimensioryhmän vaikka varastotapahtumia on avoimena. Voit käyttää nimikkeitä, jotka on estetty päivityksen yhteydessä, voit valita toisen seuraavista vaihtoehdoista:
 
 -   Muuta varastodimensioryhmä nimikkeelle varastodimensioryhmässä, joka käyttää vain toimipaikka-, varasto- ja toimipaikka-varastodimensioita. Tämän muutoksen tuloksena kuormalavatunnus-varastodimensio ei ole enää käytössä.
 -   Muuta varastodimensioryhmä nimikkeelle varastodimensioryhmässä, joka käyttää vain varastonhallintaprosesseja. Tämän muutoksen tuloksena rekisterikilpi-varastodimensio on nyt käytössä.
 
-### Siirtämisprosessit
-<a id="migration-processes" class="xliff"></a>
+### <a name="migration-processes"></a>Siirtämisprosessit
 
 Finance and Operationsissa nimikkeiden seuranta on osa varastonhallintaprosesseja. Näissä prosesseissa kaikki varastot ja niiden sijainnit pitää liittää sijainnin profiiliin. Käsitteellisesti näitä prosesseja on käsiteltävä, jos haluat käyttää varaston hallintaprosesseja:
 
@@ -68,13 +61,11 @@ Finance and Operationsissa nimikkeiden seuranta on osa varastonhallintaprosessej
 
 Jos lähdevarastodimensioryhmät käyttävät kuormalavatunnus-varastodimensiota, aiemmin käytettävissä olevan varaston, jota käytti kuormalavatunnus-varastodimensiota, sijainnit pitää liittää sijaintiprofiiliin, missä **Käytä rekisterikilven seurantaa**-parametri on valittuna. Jos olemassa olevia varastoja ei saa ottaa käyttöön varaston hallintaprosessien käyttämiseksi, voit muuttaa olemassa olevan varaston varastodimensioryhmät ryhmiin, jotka käsittelevät vain toimipaikka-, varasto- ja sijaintivarastodimensioita.
 
-### Varastonhallintaprosessien käyttäminen
-<a id="using-the-warehouse-management-processes" class="xliff"></a>
+### <a name="using-the-warehouse-management-processes"></a>Varastonhallintaprosessien käyttäminen
 
 Ennen kuin voit käyttää vapautettuja tuotteita **Varastonhallinta**-moduulissa, tuotteiden on käytettävä varastodimensioryhmää, missä **Käytä varastonhallintaprosesseja** -parametri on valittuna.
 
-#### Ota varastot käyttöön varastonhallintaprosesseja varten
-<a id="enable-warehouses-to-use-warehouse-management-processes" class="xliff"></a>
+#### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Ota varastot käyttöön varastonhallintaprosesseja varten
 
 1.  Luo vähintään yksi uusi sijaintiprofiili.
 2.  Valitse **Varastonhallinta** &gt; **Asetukset** &gt; **Ota varastonhallintaprosessit käyttöön** &gt; **Ota varaston asetukset käyttöön**.
@@ -83,8 +74,7 @@ Ennen kuin voit käyttää vapautettuja tuotteita **Varastonhallinta**-moduuliss
 5.  Vahvista muutokset. Vahvistusprosessin osana suoritetaan erilaisia tietojen eheyden vahvistusprosesseja. Suuremman päivitysprosessin yhteydessä ilmeneviä ongelmia saatetaan joutua säätämään lähteen käyttöönoton yhteydessä. Tässä tapauksessa tarvitaan lisätietopäivitystä.
 6.  Muutosten käsittely.
 
-#### Nimikkeiden varastodimensioryhmän muuttaminen siten, että se käyttää varastonhallintaprosesseja
-<a id="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes" class="xliff"></a>
+#### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Nimikkeiden varastodimensioryhmän muuttaminen siten, että se käyttää varastonhallintaprosesseja
 
 1.  Luo uusi **Varaston tila** -arvo ja määritä **Oletusvarastotilan tunnus** -arvo **Varastonhallinnan parametrit** -asetuksista.
 2.  Luo uusi varastodimensioryhmä, missä **Käytä varastonhallintaprosesseja** -parametri on valittuna.

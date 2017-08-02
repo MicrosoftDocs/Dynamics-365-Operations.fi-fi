@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Laadunhallinnan yleiskuvaus
-<a id="quality-management-overview" class="xliff"></a>
+# <a name="quality-management-overview"></a>Laadunhallinnan yleiskuvaus
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ Määrityksistä poikkeamisen hallintatoiminnon lisäksi laadunhallinta sisält�
 
 Kun määrität laatuliitoksen, Finance and Operations voi luoda liiketoiminnan eri prosesseille, tapahtumille ja ehdoille laatutilauksia. Laatuliitos voi koskea tiettyä nimikettä, tiettyä nimikeryhmää tai kaikkia nimikkeitä.
 
-## Esimerkkejä laadunhallinnan käytöstä
-<a id="examples-of-the-use-of-quality-management" class="xliff"></a>
+## <a name="examples-of-the-use-of-quality-management"></a>Esimerkkejä laadunhallinnan käytöstä
 Laadunhallinta on joustavaa ja se voidaan toteuttaa eri tavoin vastaamaan toimitusketjun työvaiheiden tiettyjen tasojen vaatimuksia. Seuraavassa esimerkissä käsitellään näiden ominaisuuksien mahdollisia käyttötapoja:
 
 -   Laadunvalvontaprosessin käynnistäminen automaattisesti ennaltamääritettyjen ehtojen perusteella (kun tietyn toimittajan ostotilaus rekisteröidään varastossa).
@@ -52,8 +50,7 @@ Laadunhallinta on joustavaa ja se voidaan toteuttaa eri tavoin vastaamaan toimit
 -   Hyväksyttävän laadun tason määrittäminen laadun mittaustoleranssien hallintaa varten.
 -   Tarkastustyövaiheiden edellyttämien resurssien, kuten testausalueen tai testin mittavälineiden, määrittäminen.
 
-## Laatuliitosten käsitteleminen
-<a id="working-with-quality-associations" class="xliff"></a>
+## <a name="working-with-quality-associations"></a>Laatuliitosten käsitteleminen
 Laatuliitosta käyttävä liiketoimintoprosessi voidaan liittää eri lähdeasiakirjoihin, kuten ostotilauksiin, myyntitilauksiin tai tuotantotilauksiin. 
 
 Jokaisessa laatuliitostietueessa määritetään joukko testejä, hyväksyttävän laadun taso ja otantasuunnitelma, jota käytetään muodostettavissa laatutilauksissa. Laatuliitostietue on määritettävä liiketoimintaprosessin jokaiselle muunnokselle. Voit esimerkiksi määrittää laatuliitoksen, joka muodostaa laatutilauksen, kun ostotilauksen tuotteen vastaanotto päivitetään. Toimeenpanosuunnitelma määritysten mukaisesti käynnistävä prosessi voidaan estää, jos laatutilaus on avoinna. Myös seuraavat prosessit, kuten ostotilauksen laskutus, voidaan estää. 
@@ -298,8 +295,7 @@ Seuraavassa taulussa on lisätietoja laatutilausten muodostamisesta tietyntyyppi
 </tbody>
 </table>
 
-## Laadunhallinnan sivut
-<a id="quality-management-pages" class="xliff"></a>
+## <a name="quality-management-pages"></a>Laadunhallinnan sivut
 <table>
 <colgroup>
 <col width="33%" />
@@ -360,8 +356,7 @@ Laatuliitos on määritettävä kutakin sellaista liiketoimintaprosessin muutost
 
 
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Laadunhallintaprosessit](quality-management-processes.md)

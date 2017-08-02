@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Toimittajayhteistyön mobiilityötila
-<a id="vendor-collaboration-mobile-workspace" class="xliff"></a>
+# <a name="vendor-collaboration-mobile-workspace"></a>Toimittajayhteistyön mobiilityötila
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Tässä ohjeaiheessa on tietoja **toimittajayhteistyön** mobiilityötilasta. Ty
 
 Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a> 
+## <a name="overview"></a>Yleiskuvaus 
 **Toimittajayhteistyön** mobiilityötila pitää toimittajat ajan tasalla uusista ostotilauksista, jotta he voivat nähdä ja vastata ostotilauksiin Microsoft Dynamics 365 for Finance and Operationsin Enterprise edition -www-asiakasohjelmassa. 
 
 >[!NOTE]
@@ -60,16 +58,13 @@ WWW-asiakasohjelman toimittajayhteistyön web-liittymää käytetään uusien yh
 -   Näytä toimittajatiliin rekisteröidyt yhteyshenkilön tiedot. (Tehtävä edellyttää lisätietoja käyttöoikeusroolille.)
 -   Tarkastele käyttäjän lähettämän pyynnön tietoja ja seurata pyynnön tilaa. (Tehtävä edellyttää lisätietoja käyttöoikeusroolille.)
 
-## Edellytykset
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Edellytykset
 Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
 
-### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys 
 Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **Toimittajayhteistyö** mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611, johon on asennettu vähintään ympäristöpäivitys 3
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611, johon on asennettu vähintään ympäristöpäivitys 3
 Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsin versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
 
 <table>
@@ -117,16 +112,14 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsi
 </tbody>
 </table>
 
-## Mobiilisovelluksen lataaminen ja asentaminen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 
 Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Kirjautuminen mobiilisovellukseen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
 1.  Käynnistä sovellus mobiililaitteessa.
 2.  Anna oman Microsoft Dynamics 365:n URL-osoite.
 4.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
@@ -134,32 +127,27 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
     [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Toimittajayhteistyön mobiilityötilan käyttäminen
-<a id="use-the-vendor-collaboration-mobile-workspace" class="xliff"></a>
+## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Toimittajayhteistyön mobiilityötilan käyttäminen
 Kun valitset **Toimittajayhteistyö**-työtilan, näet seuraavat vaihtoehdot.
 
 ![Toimittajayhteistyön mobiilityötila](./media/vendor-collaboration-mobile-app.png)
 
 **Toimittajayhteistyö**-työtila sisältää seuraavat sivut.
 
-### Yhteyshenkilöt
-<a id="contacts" class="xliff"></a>
+### <a name="contacts"></a>Yhteyshenkilöt
 **Yhteystiedot** -sivulla näet kaikki yhteyshenkilöt, jotka on määritetty toimittajan tilille. Siinä näkyy yhteyshenkilön nimi, ensisijainen sähköpostiosoite ja käyttäjän tunnus, jos yhteyshenkilöllä on sähköpostitunnus. Sivu näyttää myös, onko yhteyshenkilön käyttäjätili aktiivinen. Kun valitset henkilön, näet yhteystiedot, kuten yritykset, joiden yhteyshenkilö hän on. Näet myös yhteystiedot, kuten puhelinnumero tai vaihtoehtoisen sähköpostiosoitteen.
 
-### Käyttäjäpyynnöt
-<a id="user-requests" class="xliff"></a>
+### <a name="user-requests"></a>Käyttäjäpyynnöt
 **Käyttäjäpyynnöt**-sivulla näet toimittajayhteistyön web-liittymän kautta lähettämäsi käyttäjäpyynnöt ja niiden tilan. Voit myös seurata pyyntöjen tilaa. Kun valitset käyttäjäpyynnön, näet pyynnön sisällön, voit lisätä tai poistaa käyttäjän käytöstä, muuttaa suojausasetuksia ja nähdä, mitä käyttöoikeusrooleja käyttäjälle on pyydetty.
 
-### Tarkastuskelpoiset ostotilaukset
-<a id="purchase-orders-ready-for-review" class="xliff"></a>
+### <a name="purchase-orders-ready-for-review"></a>Tarkastuskelpoiset ostotilaukset
 **Tarkastuskelpoiset ostotilaukset** -sivulla näet kaikki ostotilaukset, jotka asiakas on lähettänyt ja joihin ei ole vielä vastattu. Voit tarkastella tiettyjä tilauksen tietoja, kuten mitä tuotteita pyyntöön kuuluu ja milloin tuotteet tulee toimittaa. Hintatiedot ovat saatavilla myös kunkin toimittajan määrityksistä riippuen.
 
 Näet myös, onko ostotilauksella huomautuksia tai liitetiedostoja. Avataksesi huomautuksia ja liitteitä sinun on käytettävä toimittajayhteistyön web-liittymän WWW-asiakasohjelmaa. Valitse **Ostotilausrivi** nähdäksesi kaikki rivit ja niillä olevat tiedot. Huomaa, että kullakin rivillä on ilmaisin, joka näyttää, onko rivillä huomautuksia tai liitetiedostoja, tai onko rivin toimitusosoite eri, kuin mitä otsikossa näytetään.
 
 Ostotilaukseen voi vastata vain toimittajayhteistyön web-liittymän WWW-asiakasohjelmassa.
 
-### Odottaa asiakkaan toimintoa
-<a id="awaiting-customer-action" class="xliff"></a>
+### <a name="awaiting-customer-action"></a>Odottaa asiakkaan toimintoa
 **Odottaa asiakkaan toimintoa** -sivulta löydät ostotilaukset, johon sinä tai joku muu yrityksesi työntekijä, jolla on käyttöoikeus toimittajayhteistyö-liittymään, on vastannut. Ostotilaukset näkyvät tässä luettelossa vain, jos asiakkaan on tehtävä jokin seuraavista toimista ostotilaukselle.
 
 -   Jos ostotilaus on hylätty, asiakkaan on joko päivitettävä alkuperäistä tilausta tai peruutettava se ja lähetettävä se uudelleen. Kun ostotilaus lähetetään uudelleen, sitä ei enää näy **Odottaa asiakkaan toimintoa** -sivulta.
@@ -182,7 +170,6 @@ Huomaa, että **Toimitus**-kentän arvo **Kyllä** tai **Ei** osoittaa, toimitet
 
 Kaikki tilausriville tehdyt muutokset näytetään. Ladattuja huomautuksia ja liitteitä ei kuitenkaan näytetä. Tarkastellaksesi huomautuksia ja liitteitä sinun on käytettävä toimittajayhteistyön web-liittymän WWW-asiakasohjelmaa.
 
-### Avoimet vahvistetut tilaukset
-<a id="open-confirmed-orders" class="xliff"></a>
+### <a name="open-confirmed-orders"></a>Avoimet vahvistetut tilaukset
 Kun asiakas on vahvistanut ostotilauksen, (ts. ostotilaus on siirretty **Vahvistettu** -tilaan), se näkyy avoimissa vahvistetuissa tilauksissa. Se pysyy luettelossa, kunnes se on rekisteröity asiakkaan vastaanottamaksi.
 

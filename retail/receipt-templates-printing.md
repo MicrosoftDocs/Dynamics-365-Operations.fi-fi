@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kuittimallit ja tulostus
-<a id="receipt-templates-and-printing" class="xliff"></a>
+# <a name="receipt-templates-and-printing"></a>Kuittimallit ja tulostus
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittä
 
 **Tärkeää:** Sinun on määritettävä lomakkeiden asettelut ja kuittiprofiilit kuittien ja muiden asiakirjojen tulostamiseksi Retail Modern POS- ja Cloud POS -sovelluksesta. Voit sisällyttää kuittiprofiiliin useita lomakeasetteluita. Voit sitten määrittää kuittiprofiilin tulostimeen laitteistoprofiilia muuttamalla.
 
-## Kuittimuodon määrittäminen
-<a id="set-up-a-receipt-format" class="xliff"></a>
+## <a name="set-up-a-receipt-format"></a>Kuittimuodon määrittäminen
 1.  Valitse **Retail** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipiste** &gt; **Kuitin muodot**.
 2.  Valitse **Kuitin muoto** -sivulla **Uusi** luodaksesi uuden lomakeasettelun, tai valitse aiemmin luodun lomakeasettelu.
 3.  Kirjoita **Kuitin muoto** -kenttään lomakeasettelun tunnus ja valitse sitten kuitin tyyppi, johon tätä asettelua käytetään. Voit myös kirjoittaa kuitille kuvauksen ja lyhyen nimen **Otsikko**-kenttään.
@@ -49,8 +47,7 @@ Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittä
     -   **Kehote käyttäjälle** – Käyttäjää kehotetaan tulostamaan kuitti..
     -   **Tarvittaessa** – Tätä vaihtoehtoa käytetään vain lahjojen kuiteille. Kun tämä vaihtoehto on valittuna, käyttäjä voi tulostaa lahjan kuitin **Muuta**-sivulta, jos lahjan kuitti tarvitaan.
 
-## Kuitin muodon suunnittelu
-<a id="design-a-receipt-format" class="xliff"></a>
+## <a name="design-a-receipt-format"></a>Kuitin muodon suunnittelu
 Lomakkeen asettelun suunnittelutoiminnon avulla voit luoda lomakkeen asettelun graafisesti. Sivulla **Kuitin muodon suunnittelutoiminto** on kolme osiota: **Ylätunniste**, **Rivit**, ja **Alatunniste**. Tietyt lomakeasettelut käyttävät elementtejä kaikista kolmesta osasta ja osa vain yhdestä tai kahdesta osasta. Tarkastele jokaisen osan käytettävissä olevia elementtejä napsauttamalla sopivaa painiketta sivun vasemmassa laidassa olevassa siirtymisruudussa.
 
 1.  Valitse **Retail** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipiste** &gt; **Kuitin muodot**.
@@ -70,8 +67,7 @@ Lomakkeen asettelun suunnittelutoiminnon avulla voit luoda lomakkeen asettelun g
     -   **Fontin koko** – Fontin koko voi olla joko **Tavallinen** tai **Suuri**. Suuret kirjaimet ovat kaksi kertaa korkeampia kuin tavalliset kirjaimet. Suurien kirjaimien käyttö voikin saa aikaan sen, että kuitissa on päällekkäistä tekstiä.
     -   **Poista** – Tätä painiketta napsauttamalla voit poistaa valitun osan lomakkeen asettelusta.
 
-## Määritä kuittiprofiilit
-<a id="assign-receipt-profiles" class="xliff"></a>
+## <a name="assign-receipt-profiles"></a>Määritä kuittiprofiilit
 Kuittiprofiilit määritetään suoraan tulostimeen laitteistoprofiilin kautta.
 
 1.  Avaa laitteistoprofiili valitsemalla **Retail** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipisteen profiilit** &gt; **Laiteprofiili**.

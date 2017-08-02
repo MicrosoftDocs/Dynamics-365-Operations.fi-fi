@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kirjanpidon kirjauskansiotyypit
-<a id="ledger-journal-types" class="xliff"></a>
+# <a name="ledger-journal-types"></a>Kirjanpidon kirjauskansiotyypit
 
 [!include[banner](../includes/banner.md)]
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Viivakoodien määrittäminen
-<a id="set-up-bar-codes" class="xliff"></a>
+# <a name="set-up-bar-codes"></a>Viivakoodien määrittäminen
 
 [!include[banner](includes/banner.md)]
 
@@ -44,8 +43,7 @@ Voit käyttää viivakoodeja tuotteiden ostamisessa ja myynnissä, tuotevariantt
 4.  Luo viivakoodit tuotteille.
 
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Viivakoodin muotojen määrittäminen](set-up-bar-code-masks.md)

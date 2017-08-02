@@ -23,8 +23,7 @@ ms.lasthandoff: 06/14/2017
 
 ---
 
-# Käänteinen verovelvollisuus
-<a id="reverse-charge-vat" class="xliff"></a>
+# <a name="reverse-charge-vat"></a>Käänteinen verovelvollisuus
 Tässä ohjeaiheessa kerrotaan yleisesti eurooppalaisten maiden käänteisen arvonlisäveron määrittämisestä.
 
 Käänteinen vero on veromalli, jossa ALV:n kirjanpito- ja raportointivastuu siirtyy myyjältä tavaran ja/tai palvelun ostajalle. Tämän vuoksi tavaroiden ja/tai palvelujen vastaanottaja ilmoitta ALV-ilmoituksessa sekä maksettavan veron (myyjän roolissa) että vähennettävän veron (ostajan roolissa)
@@ -33,8 +32,7 @@ EU-direktiivin mukaisesti jäsenmaat voivat määrittää, miten yleiset vaatimu
 
 Seuraavat asetukset on tehtävä käänteisen veron käyttöä varten.
 
-## Määritä arvonlisäverokoodit
-<a id="set-up-sales-tax-codes" class="xliff"></a>
+## <a name="set-up-sales-tax-codes"></a>Määritä arvonlisäverokoodit
 Osto- ja myyntitoimintoihin kannattaa käyttää erillisiä arvonlisäverokoodeja.
 
 <table>
@@ -58,8 +56,7 @@ Tämä negatiivinen arvonlisäverokoodi on määritettävä ensin nimikkeen arvo
 </tbody>
 </table>
 
-## Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen
-<a id="set-up-sales-tax-groups-and-item-sales-tax-groups" class="xliff"></a>
+## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen
 Osto- ja myyntitoimintoihin kannattaa käyttää erillisiä arvonlisäveroryhmiä.
 
 <table>
@@ -77,12 +74,10 @@ Osto- ja myyntitoimintoihin kannattaa käyttää erillisiä arvonlisäveroryhmi�
 </tr>
 </table>
 
-## Käänteisten veroryhmien määrittäminen
-<a id="set-up-reverse-charge-groups" class="xliff"></a>
+## <a name="set-up-reverse-charge-groups"></a>Käänteisten veroryhmien määrittäminen
 Voit määrittää **Käänteisen veloituksen nimikeryhmät** -sivulla (**Verot** > **Asetukset** > **Arvonlisävero** > **Käänteisen veloituksen nimikeryhmät**) tuote- tai palveluryhmät tai yksittäiset tuotteet tai palvelut, joissa voidaan käyttää käänteistä arvonlisäveroa. Määritä kullekin käänteisen veron nimikeryhmälle myynnin ja/tai ostojen nimike-, nimikeryhmä- tai luokkaluettelo.
 
-## Käänteisen verotuksen sääntöjen määrittäminen
-<a id="set-up-reverse-charge-rules" class="xliff"></a>
+## <a name="set-up-reverse-charge-rules"></a>Käänteisen verotuksen sääntöjen määrittäminen
 Voit määrittää **Käänteinen veloituksen säännöt** -sivulla (**Verot** > **Asetukset** > **Arvonlisävero** > **Käänteisen veloituksen säännöt**) soveltuvuussäännöt ostoja ja myyntiä varten. Voit määrittää käänteisen verotuksen soveltuvuussääntöjoukon. Määritä kullekin säännölle seuraavat kentät:
 
 - **Tiedostotyyppi** – valitse **Ostotilaus**, **Toimittajan laskun kirjauskansio**, **Myyntitilaus**, **Vapaatekstilasku**, **Myyntilaskukirjauskansio** ja/tai **Toimittajan lasku**.
@@ -99,18 +94,15 @@ Voit lisäksi määrittää, näkyvätkö ilmoitukset ja päivitetäänkö asiak
 - **Kehote** – avautuva ilmoitus pyytää vahvistamaan, että käänteistä vero saa käyttää.
 - **Määritä** – asiakirjarivi päivitetään ilman lisäilmoituksia.
 
-## Oletusparametrien määrittäminen
-<a id="set-up-default-parameters" class="xliff"></a>
+## <a name="set-up-default-parameters"></a>Oletusparametrien määrittäminen
 Voit ottaa toiminnon käyttöön valitsemalla **Kirjanpitoparametrit**-sivun **Käänteinen veloitus**-välilehdessä **Ota käänteinen veloitus käyttöön** -asetukseksi **Kyllä**. Valitse **Ostotilauksen arvonlisäveroryhmä**- ja **Myyntitilauksen arvonlisäveroryhmä** -kentissä oletusarvoiset arvonlisäveroryhmät. Kun käänteisen veron soveltuvuusehto täyttyy, myynti- tai ostotilausrivi päivitetään näillä arvonlisäveroryhmillä.
 
-## Myyntilaskun käänteinen vero
-<a id="reverse-charge-on-a-sales-invoice" class="xliff"></a>
+## <a name="reverse-charge-on-a-sales-invoice"></a>Myyntilaskun käänteinen vero
 Käänteisen veromallin alaisessa myynnissä myyjä ei voita arvolisäveroa. Laskussa ilmoitetaan sen sijaan sekä käänteisen verovelvollisuuden alaiset nimikkeet että käänteisen verovelvollisuuden kokonaissumma.
 
 Kun kirjattavassa myyntilaskussa on käänteistä veroa, arvolisäverotapahtumissa on verosuuntana **Maksettava arvonlisävero** ja arvonlisävero on nolla ja **Käänteinen veloitus** -valintaruutu on valittu.
 
-## Ostolaskun käänteinen vero
-<a id="reverse-charge-on-a-purchase-invoice" class="xliff"></a>
+## <a name="reverse-charge-on-a-purchase-invoice"></a>Ostolaskun käänteinen vero
 Käänteiseen veromalliin kuuluvissa ostoissa käänteisen veron sisältävän laskun vastaanottava ostaja toimii ostajana ja myyjänä arvonlisäveron kirjanpitoa varten.
 
 Kun käänteisen veron sisältävä ostolasku kirjataan, kirjanpitoon luodaan kaksi arvonlisäverotapahtumaa. Toisen tapahtuman verosuunta on **Saatava arvonlisävero**. Toisessa tapahtumassa verosuunta on **Maksettava arvonlisävero** ja **Käänteinen veloitus** -valintaruutu on valittu.

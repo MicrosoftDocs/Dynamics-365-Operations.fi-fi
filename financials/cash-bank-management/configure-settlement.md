@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Tilin konfiguroiminen
-<a id="configure-settlement" class="xliff"></a>
+# <a name="configure-settlement"></a>Tilin konfiguroiminen
 
 [!include[banner](../includes/banner.md)]
 

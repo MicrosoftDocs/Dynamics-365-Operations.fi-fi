@@ -27,8 +27,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Määritä yrityskohtaisia henkilöstöhallinnon parametreja
-<a id="set-up-company-specific-hr-parameters" class="xliff"></a>
+# <a name="set-up-company-specific-hr-parameters"></a>Määritä yrityskohtaisia henkilöstöhallinnon parametreja
 
 [!include[banner](includes/banner.md)]
 
@@ -50,20 +49,17 @@ Kukin välilehti sisältää yksittäistä yhtiötä koskevia tietoja. **Yleinen
 
 **Kompensaatio**-välilehden asetukset määrittävät, onko käyttäjien vahvistettava, että he haluavat tallentaa joko kiinteän tai muuttuvan kompensaatiosuunnitelman asetukset. Jos valitset **Otetaan vahvistuksen tallennus käyttöön** -asetuksen, aina kun käyttäjä sulkee kompensaatioon liittyvän sivun, tälle lähetetään viesti, jossa tätä pyydetään tallentamaan tietue. Jotkin kompensaationhallinnan sivut eivät salli käyttäjille tietojen poistamista. Näin ollen, kehottamalla käyttäjiä vahvistamaan, että he haluavat tallentaa tiedot, saatat pystyä rajoittamaan tietojen määrää, jotka on tallennettu mutta joita ei voida poistaa myöhemmin. Jos **Otetaan vahvistuksen tallennus käyttöön** -valintaruutu tyhjennetään, tietueet tallennetaan aina heti, mahdollisesti jo ennen kuin käyttäjä on valmis. Jos käytät suorituskyvyn hallintaa, **Kompensaatio** -välilehdellä voit myös valita suorituskykyä arvioitaessa käytettävän arviointimallin kompensaatiosuunnitelmille määritetyn mallin asemesta. 
 
-### Aiemmin julkaistu toiminto
-<a id="previously-released-functionality" class="xliff"></a>
+### <a name="previously-released-functionality"></a>Aiemmin julkaistu toiminto
 **Numerojärjestys**-välilehden asetukset määrittävät numerosarjat, joita käytetään tunnusten määrittämiseen automaattisesti nimikkeille henkilöstöhallinnossa, kuten sovelluksille, poissaolomerkinnöille, kompensaatioprosessin tuloksille, tapausnumeroille, kursseille ja kurssien työjärjestyksille. Jos haluat ylläpitää numerosarjaviitteitä ja koodeja, käytä **Numerojärjestykset**-luettelosivua (valitse **Organisaation hallinto** &gt; **Numerojärjestykset** &gt; **Numerojärjestykset**).
 
-### Jos käytät Dynamics 365 for Talentia
-<a id="if-youre-using-dynamics-365-for-talent" class="xliff"></a>
+### <a name="if-youre-using-dynamics-365-for-talent"></a>Jos käytät Dynamics 365 for Talentia
 **Numerojärjestys**-välilehden asetukset määrittävät numerosarjat, joita käytetään tunnusten määrittämiseen automaattisesti nimikkeille henkilöstöhallinnossa, kuten sovelluksille, poissaolomerkinnöille, kompensaatioprosessin tuloksille, tapausnumeroille, kursseille ja kurssien työjärjestyksille. Jos haluat ylläpitää numerosarjaviitteitä ja koodeja, käytä **Numerojärjestykset** -luettelosivua (valitse **Järjestelmän hallinto** &gt; **Linkit-välilehti** &gt; **Numerojärjestykset** &gt; **Numerojärjestykset**). 
 
 **FMLA**-välilehden asetuksissa määritetään, montako tuntia työntekijän on työskenneltävä saadakseen oikeuden FMLA-etuihin, oikeuteen vaadittavan työsuhteen pituuden, ja työsuhteen alkamispäivän, jota käytetään määrittämään työsuhteen pituus. Asetukset määrittävät myös FMLA-tuntien määrän, joihin työntekijällä on oikeus, ja FMLA-lomakalenterin, jota käytetään työntekijöiden käyttämien FMLA-tuntien määrän laskemisessa. **FMLA**-välilehti koskee vain yhdysvaltalaisia yrityksiä. 
 
 **Huomautus:** Tehtyjen työtuntien määrä ei voi ylittää 1 250 tuntia, ja työsuhteen pituus ei voi ylittää 12 kuukautta. Nämä enimmäisarvot ovat Yhdysvaltojen liittovaltion lainsäädännön mukaiset. Lopuksi, **Työntekijän itsepalvelu** -välilehden asetuksissa määritellään tiedot, jotka esimies voi syöttää työntekijöidensä puolesta.
 
-Lisätietoja
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Lisätietoja
 --------
 
 [Määritä henkilöstöhallinnon parametreja eri yrityksissä](set-up-hr-parameters-across-legal-entities.md)

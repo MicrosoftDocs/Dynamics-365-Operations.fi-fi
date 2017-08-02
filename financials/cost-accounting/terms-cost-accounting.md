@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kustannuslaskennan sanasto
-<a id="cost-accounting-terminology" class="xliff"></a>
+# <a name="cost-accounting-terminology"></a>Kustannuslaskennan sanasto
 
 [!include[banner](../includes/banner.md)]
 

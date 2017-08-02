@@ -26,15 +26,13 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Varaston suorituskyvyn Power BI -sisältö
-<a id="warehouse-performance-power-bi-content" class="xliff"></a>
+# <a name="warehouse-performance-power-bi-content"></a>Varaston suorituskyvyn Power BI -sisältö
 
 [!include[banner](../includes/banner.md)]
 
 Tässä aiheessa kuvataan, mitä kuuluu **Varaston suorituskyvyn** Microsoft Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Yleiskuvaus
 
 **Varaston suorituskyvyn** Power BI -sisältöpaketti on luotu varaston ja toiminnoista vastaavien johtajien tärkeiden saapuvien, lähtevien ja varaston mittareiden seurantaan. Se käyttää varastonhallinta-, tuote- ja muita järjestelmäsi tapahtumatietoja tarjotakseen kootun näkymän varaston suorituskyvystä sekä erittelyn toimittajista, tuoteryhmistä ja tuotteista sekä sijainneista ja varastoista. 
 
@@ -44,12 +42,10 @@ Varaston esimiehet voivat käyttää **Varaston suorituskyvyn** Power BI -sisäl
 -   **Lähetysten suorituskyky** – Mittaa, lähetetäänkö tuotteet varastostasi täydellisinä ja ajallaan asiakkaille (toisin sanoen lähtevien lähetysten ja toimitusten suorituskykyä), jotta voit tunnistaa tuotteisiin, sijainteihin, varastoihin tai kohdistettuihin asiakkaisiin liittyvät ongelmat. Jos huomaat, että lähetyksesi tietyille alueille tai tiettyihin kaupunkeihin ovat myöhässä, voi olla tarpeen kiinnittää tarkempaa huomiota kuljetusten tai tilien hallintaan.
 -   **Toimipaikkojen varastotarkkuus** – Varastotarkkuus on tärkeä sisäinen varaston liiketoimintatieto (BI). Laskennan yleisen tarkkuuden selvittäminen on hyvin tärkeää. Tärkeää on myös määrittää, kuinka tarkasti varastoit nimikkeitä oikeissa toimipaikoissa, ja jotta voit korostaa ristiriitatietoja löytääksesi nimikkeille paremmat paikat tai aloittaaksesi tietyille nimikkeille kokonaislaskennan. (Nimikepohjainen laskentatoiminta toimitetaan tällä hetkellä korjaustiedostona.) Jos käytät tätä Power BI -sisältöpakettia käytettävissä olevan varaston oikeellisuuden selvittämiseen toimipaikkakohtaisesti, voit myös tunnistaa varkaustapaukset liikkeissäsi. Voit myös määrittää, onko yhdessäkään toimipaikassasi käytettävissä olevia määriä, jotka poikkeavat yrityksen resurssien suunnittelutiedoista (ERP). Toimipaikat voivat olla liian suuria tai niiden laskenta voi olla mahdotonta. Fyysinen sijoittelu voi vaihtoehtoisesti olla huonoa, jonka vuoksi yksittäisen nimiketyypin synkronointi käytettävissä olevaan tietoon on vaikeaa.
 
-## Power BI -sisätöpaketin käyttö
-<a id="accessing-the-power-bi-content-pack" class="xliff"></a>
+## <a name="accessing-the-power-bi-content-pack"></a>Power BI -sisätöpaketin käyttö
 Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 -päivitys, **Varaston suorituskyvyn** Power BI -sisältö näytetään **Varaston suorituskyky** -sivulla (**Varastonhallinta** > **Kyselyt ja raportit** > **Varaston suorituskyvyn analyysi** > **Varaston suorituskyky**). 
 
-## Mittareita, jotka sisältyvät Power BI -sisältöön
-<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 **Varastoinnin suorituskyvyn** Power BI -sisältöpaketti sisältää raportin. Tämä raportti koostuu joukosta mittareita, jotka ovat visualisoitu kaavioiden, ruutujen ja taulukoiden muodossa. Seuraavassa taulukossa on yleiskatsaus visualisoinneista **varastoinnin suorituskyvyn** Power BI -sisällössä.
 
 | Raporttisivu                 | Kaaviot                                   | kuvaus                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -81,8 +77,7 @@ Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise
 | Lähetysten suorituskyky        | Lähetetyt tuotteen mukaan                       | Etuajassa, ajallaan tai myöhässä lähetettyjen tuotteiden osuus nimikkeen tai nimikeryhmän mukaan.                                                                                                                                                                                                                                                                                                                                   |
 | Lähetysten suorituskyky        | Lähetetyt asiakkaan mukaan                      | Etuajassa, ajallaan tai myöhässä lähetettyjen tuotteiden osuus asiakkaan tai asiakasryhmän mukaan.                                                                                                                                                                                                                                                                                                                           |
 | Lähetysten suorituskyky        | Lähetetyt sijainnin/varaston mukaan              | Etuajassa, ajallaan tai myöhässä lähetettyjen tuotteiden osuus sijainnin tai varaston mukaan.                                                                                                                                                                                                                                                                                                                                    |
-## Power BI -sisällön laajentaminen
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Power BI -sisällön laajentaminen
 Jos käytät Microsoft Dynamics Lifecycle Servicesin (LCS) sisältöpaketteja, voit tehdä erinomaisia analyyseja henkilöille, jotka eivät käytä Microsoft Dynamics 365:tä. Voit muokata näitä sisältöpaketit sisältämään muita raportteja ja visuaalisia tietoja ja julkaista sitten sisältöpaketit analysoitavaksi Power BI.com -vuokraajassa. 
 
 **Varaston suorituskyvyn** Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
@@ -92,8 +87,7 @@ Muista ladata käyttämääsi Dynamics 365 -versiota vastaava **Varaston suoritu
 > [!NOTE]
 > Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, Power BI -sisällön edellytyksenä on KB 4011327. Kun olet kirjautunut LCS:ään, voit siirtyä tietämyskantaan osoitteessa https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
-## Tietomallin ja laskelmien tiedot
-<a id="understanding-the-data-model-and-calculations" class="xliff"></a>
+## <a name="understanding-the-data-model-and-calculations"></a>Tietomallin ja laskelmien tiedot
 Seuraavia tietoja käytetään **Varaston suorituskyvyn** Power BI -sisällön raporttisivujen täyttämiseen. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md). 
 
 Seuraavia tärkeitä koostettuja mittoja käytetään sisällön perustana.

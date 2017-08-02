@@ -26,16 +26,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Tarkastele ja suunnittele talousraportteja
-<a id="view-and-design-financial-reports" class="xliff"></a>
+# <a name="view-and-design-financial-reports"></a>Tarkastele ja suunnittele talousraportteja
 
 [!include[banner](../includes/banner.md)]
 
 
 Tässä artikkelissa on harjoituksia, joissa selitetään, miten tarkastellaan ja luodaan raportteja Microsoft Dynamics 365 for Finance and Operationsissa. Talousraportointi koostuu Finance and Operationsissa tapahtuvasta tarkastelusta ja yhden napsautuksen raporttisuunnitteluohjelmasta, jolla voit luoda ja muokata raportteja.  
 
-Tehtävä 1: Luo ja tutki taloushallinnon oletusraportteja
-<a id="exercise-1-generate-and-explore-a-default-financial-report" class="xliff"></a>
+<a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Tehtävä 1: Luo ja tutki taloushallinnon oletusraportteja
 -----------------------------------------------------------
 
 Tässä harjoituksessa luodaan ja tutustutaan nykyiseen oletusraporttiin. Tämä raportti sisältää kaikki tilit ja se sisältää myös tiliominaisuudet (määritteet) näille tileille. Perehdyt tapahtumatietoihin, käytät dimensiosuodattimia, muutat raportin valuutan. Ensinnäkin päivitämme dimensioiden näyttöjärjestyksen talousraportointia varten. Voit valita dimensioiden näyttämistavan, ei ainoastaan suunniteltaessa ja tilinpäätöksiä tarkasteltaessa.
@@ -66,8 +64,7 @@ Tässä harjoituksessa luodaan ja tutustutaan nykyiseen oletusraporttiin. Tämä
 18. Sulje **Kirjanpidon tiedot** -raportti.
 19. Sulje **Raportin suunnittelija**.
 
-## Harjoitus 2: Lisää muita tiliominaisuuksia raportin rakenteeseen
-<a id="exercise-2-add-additional-account-properties-to-a-report-design" class="xliff"></a>
+## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a>Harjoitus 2: Lisää muita tiliominaisuuksia raportin rakenteeseen
 Tässä harjoituksessa muokataan nykyistä oletusraporttia. Päivität sekä rivimäärityksen sisältämään kaikki tilit, että sarakemäärityksen sisältämään tilin määritteet. Kun päivitykset ovat valmiit, luot juuri valmistuneen raportin ja tutkit raporttia. Aloitammme tilinpäätöksien luettelosta.
 
 1.  Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
@@ -103,8 +100,7 @@ Tässä harjoituksessa muokataan nykyistä oletusraporttia. Päivität sekä riv
 25. Sulje **Saldoraportti ominaisuuksilla**-raportti.
 26. Sulje **Raportin suunnittelija**.
 
-## Harjoitus 3: Luo moniulotteinen raportti käyttämällä raportointipuuta
-<a id="exercise-3-create-a-multidimensional-report-using-a-reporting-tree" class="xliff"></a>
+## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Harjoitus 3: Luo moniulotteinen raportti käyttämällä raportointipuuta
 Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet luomaan raportointipuun ja lisäämään raporttimääritykseen tuottaaksesi kustannuspaikka / jaetun tuloslaskelman. Kun päivitykset ovat valmiita, tulet luomaan kustannuspaikka / jaetun tuloslaskelman ja tutkimaan raporttia käyttämällä raportointipuuta. Aloitammme tilinpäätöksien luettelosta.
 
 1.  Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
@@ -140,8 +136,7 @@ Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet luomaan raporto
 31. Sulje **Tuloslaskelma - oletus**.
 32. Sulje **Raportin suunnittelija**.
 
-## Harjoitus 4: Luo konsolidoitu raportti käyttämällä organisaatiohierarkiaa
-<a id="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy" class="xliff"></a>
+## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a>Harjoitus 4: Luo konsolidoitu raportti käyttämällä organisaatiohierarkiaa
 Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet lisäämään organisaatiohierarkian raporttimääritykseen tuottaaksesi konsolidoidun tuloslaskelman ja taseen. Kun päivitykset ovat valmiita, tulet luomaan konsolidoidun raportin ja tutkimaan raporttia käyttämällä raportointipuuta. Aloitammme tilinpäätöksien luettelosta.
 
 1.  Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
@@ -160,8 +155,7 @@ Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet lisäämään o
 14. Sulje **Konsolidoitu tase ja tuloslaskelma rinnakkain**.
 15. Sulje **Raportin suunnittelija**.
 
-## Harjoitus 5: Luo rinnakkainen osastojen raportti
-<a id="exercise-5-create-a-sidebyside-departmental-report" class="xliff"></a>
+## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Harjoitus 5: Luo rinnakkainen osastojen raportti
 Tässä harjoituksessa luot uuden raportin. Raportti on rinnakkainen osastojen tuloslaskelmaan. Käytät aiemmin luotua rivimääritystä, mutta luo uusi raporttimääritys ja uusi sarakemääritys, joka käyttää dimensiosuodattimia. Aloitammme tilinpäätöksien luettelosta.
 
 1.  Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
@@ -188,8 +182,7 @@ Tässä harjoituksessa luot uuden raportin. Raportti on rinnakkainen osastojen t
 17. Muuta yksityiskohtatasoksi **Rahoitus, tili ja tapahtuma**.
 18. **Tallenna** muutokset ja **luo**. Kun raportti on luotu ja avautuu, voit tutkia raporttia.
 
-## Lisäresurssit
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Lisäresurssit
 [Talousraportointi](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started)  
 [Tarkastele tilinpäätöksiä](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
 [Dynamicsin taloushallinnon raportoinnin blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)

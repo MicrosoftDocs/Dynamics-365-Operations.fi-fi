@@ -26,20 +26,17 @@ ms.lasthandoff: 06/14/2017
 
 [!include[banner](../includes/banner.md)]
 
-# Sähköisen raportoinnin mallisekkimuodot
-<a id="electronic-reporting-sample-check-formats" class="xliff"></a>
+# <a name="electronic-reporting-sample-check-formats"></a>Sähköisen raportoinnin mallisekkimuodot
 
 Voit muotoilla toimittajan sekkejä sähköisellä raportoinnilla. Markkinoilla on monia pankki- ja sekkipalvelukohtaisia sekkimuotoja. Sähköisen raportoinnin työkalusäilön maksun sekkimalliin sisältyy sekkimuotomalleja. Näiden mallisekkien nimet ovat **Sekki keskellä (USA)** ja **Sekki ylhäällä, kanta alapuolella (USA)**.
 
-## Mitä sekkimuotoja tuetaan tällä hetkellä?
-<a id="what-check-formats-are-currently-supported" class="xliff"></a>
+## <a name="what-check-formats-are-currently-supported"></a>Mitä sekkimuotoja tuetaan tällä hetkellä?
 
 Tarkista Microsoft Dynamics Lifecycle Servicesin (LCS) jaetusta omaisuuskirjastosta luettelo tämän hetkisistä käytettävistä olevista tiedostoista, joiden tyyppi on **GER-määritys**. Seuraavassa Määritettävät asetukset -osiossa on linkki ohjeaiheeseen, jossa kerrotaan, miten luodaan LCS-säilö käytettävissä olevien määritysten tarkastelua varten ja tuodaan valitut määritykset.
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition sisältää mallimuodon, jossa sekki on ensin ylhäällä ja sitten seuraavana on kaksi maksusuoritusosaa. Siinä on myös mallimuoto, jossa sekki on keskellä kahden maksusuoritusosan välissä. Nämä mallimuodot vastaavat Deluxe-yrityssekkimuotoja.
 
-## Mitä asetuksia on määritettävä?
-<a id="what-do-i-have-to-set-up" class="xliff"></a>
+## <a name="what-do-i-have-to-set-up"></a>Mitä asetuksia on määritettävä?
 
 - Ennen sekkien tulostusta sähköisessä raportoinnissa ainakin yksi aktiivinen sekkimääritys on tuotava sähköisen raportoinnin määrityksiin. Ohjeet löydät artikkelista [Lataa sähköisen raportoinnin konfiguraatiot Lifecycle Servicesistä](/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 - Kun määrität pankkitilin maksuliikenteen hallinnan sekkejä, valitse ensin **Yleinen sähköinen vientimuoto** -valintaruutu ja sitten sopiva sekkimuoto vientimuotomääritykseksi.

@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Vähittäismyyntituotteiden määrittäminen
-<a id="set-up-retail-products" class="xliff"></a>
+# <a name="set-up-retail-products"></a>Vähittäismyyntituotteiden määrittäminen
 
 [!include[banner](includes/banner.md)]
 

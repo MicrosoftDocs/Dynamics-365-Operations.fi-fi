@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Alusta Retail-ympäristössä alkutiedot
-<a id="initialize-seed-data-in-a-new-retail-environment" class="xliff"></a>
+# <a name="initialize-seed-data-in-a-new-retail-environment"></a>Alusta Retail-ympäristössä alkutiedot
 
 [!include[banner](includes/banner.md)]
 

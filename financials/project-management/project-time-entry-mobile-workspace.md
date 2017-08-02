@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Projektin aikamerkintöjen mobiilityötila
-<a id="project-time-entry-mobile-workspace" class="xliff"></a>
+# <a name="project-time-entry-mobile-workspace"></a>Projektin aikamerkintöjen mobiilityötila
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Tässä ohjeaiheessa on tietoja **projektin aikamerkintöjen** mobiilityötilast
 
 Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella. 
 
-## Yleiskuvaus
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Yleiskuvaus
 Projektiresurssit ovat kohteessa tai liikkeellä osana päivittäistä työtään. **Projektin aikamerkinnät** -mobiilityötilan avulla käyttäjät voivat syöttää laskutettavan tai ei-laskutettavan aikansa projektiin valitsemallaan mobiililaitteella. Tämän ansiosta projektiresurssit voivat tehdä aikakirjauksia missä ja milloin tahansa. He voivat myös tarkastella aiemmin kirjattuja merkintöjä. 
 
 Käyttäjät voivat suorittaa seuraavat tehtävät **projektin aikamerkintöjen** mobiilityötilassa:
@@ -48,16 +46,13 @@ Käyttäjät voivat suorittaa seuraavat tehtävät **projektin aikamerkintöjen*
 -   Kirjaa aika projektiin laskutettavaksi tai ei-laskutettavaksi.
 -   Voit myös kirjoittaa ulkoisia tai sisäisiä kommentteja.
 
-## Edellytykset
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Edellytykset
 Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
 
-### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys 
 Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **projektin aikamerkintöjen** mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.
 Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations -versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
 
 <table>
@@ -90,16 +85,14 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations 
 </tbody>
 </table>
 
-## Mobiilisovelluksen lataaminen ja asentaminen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 
 Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Kirjautuminen mobiilisovellukseen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
 1.  Käynnistä sovellus mobiililaitteessa.
 2.  Anna Dynamics 365 -URL-osoitteesi.
 3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
@@ -107,8 +100,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Aikakirjausten syöttäminen Projektin aikakirjausten mobiilityötilassa
-<a id="enter-time-by-using-the-project-time-entry-mobile-workspace" class="xliff"></a>
+## <a name="enter-time-by-using-the-project-time-entry-mobile-workspace"></a>Aikakirjausten syöttäminen Projektin aikakirjausten mobiilityötilassa
 1.  Valitse mobiililaitteessasi **Projektin aikakirjausten** työtila.
 2.  Valitse **Aikamerkintä**. Kuluvan viikon kalenteripäivät näytetään.
 3.  Napsauta valitun päivän kohdalla **Toiminnot** &gt; **Uusi kirjaus**.

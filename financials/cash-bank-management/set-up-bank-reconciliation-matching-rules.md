@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Aseta pankkitilin täsmäytyksen yhteensopivuussäännöt
-<a id="set-up-bank-reconciliation-matching-rules" class="xliff"></a>
+# <a name="set-up-bank-reconciliation-matching-rules"></a>Aseta pankkitilin täsmäytyksen yhteensopivuussäännöt
 
 [!include[banner](../includes/banner.md)]
 

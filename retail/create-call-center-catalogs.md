@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Puhelinkeskuksen luettelon luominen
-<a id="create-a-call-center-catalog" class="xliff"></a>
+# <a name="create-a-call-center-catalog"></a>Puhelinkeskuksen luettelon luominen
 
 [!include[banner](includes/banner.md)]
 
@@ -43,8 +42,7 @@ Puhelinkeskuksessa voit käyttää tuote-esitteitä tunnistaaksesi tuotteet, joi
 
 Nämä asetukset on määritettävä ennen luettelon hyväksymistä ja julkaisemista.
 
-## Edellytykset
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Edellytykset
 Seuraavat tehtävät on suoritettava ennen aloittamista:
 
 -   Määritä tuotteet ja tuotevalikoimat.
@@ -55,28 +53,23 @@ Seuraavat tehtävät on suoritettava ennen aloittamista:
 -   Lisää puhelinkeskus organisaatiohierarkiaan.
 -   Luo organisaatiohierarkia tai muokkaa sitä.
 
-## Luo luettelo
-<a id="create-a-catalog" class="xliff"></a>
+## <a name="create-a-catalog"></a>Luo luettelo
 Sinun on ensin luotava luettelo, lisättävä tuotteet luetteloon ja tarkastettava ja päivitettävä sitten tuotteiden määritteet.
 
-## Luettelon vahvistaminen
-<a id="validate-the-catalog" class="xliff"></a>
+## <a name="validate-the-catalog"></a>Luettelon vahvistaminen
 Kun olet saanut luettelon määritettyä, se täytyy vahvistaa. Vahvistusprosessi tarkistaa, että kanavamääritteiden ja tuotemääritteiden vaatimat tiedot ovat täydellisiä ja kelvollisia ja että luettelo voidaan julkaista.
 
-## Luettelon lähettäminen tarkistettavaksi ja hyväksyttäväksi
-<a id="submit-the-catalog-for-review-and-approval" class="xliff"></a>
+## <a name="submit-the-catalog-for-review-and-approval"></a>Luettelon lähettäminen tarkistettavaksi ja hyväksyttäväksi
 Kun luettelo on vahvistettu, voit lähettää sen arvioitavaksi ja hyväksyttäväksi. Luettelo on hyväksyttävä ennen kuin se voidaan julkaista. Voit määrittää työnkulun niin, että luettelot hyväksytään automaattisesti tai edellyttävät manuaalista hyväksyntää.
 
-## Valinnainen: Lisää lähdekoodit, ilmaiset tuotteet ja käsikirjoitukset
-<a id="optional-add-source-codes-free-products-and-scripts" class="xliff"></a>
+## <a name="optional-add-source-codes-free-products-and-scripts"></a>Valinnainen: Lisää lähdekoodit, ilmaiset tuotteet ja käsikirjoitukset
 Voit lisätä puhelinkeskuksen luetteloon myös seuraavat nimikkeet. Ne ovat valinnaisia.
 
 -   **Lähdekoodien** avulla painettuja luetteloita käyttävät yritykset voivat seurata asiakasvasteita tiettyihin luetteloihin. Lähdekoodit tulostetaan usein luettelon taakse ja ne kirjoitetaan myyntitilaukseen, kun asiakas suorittaa oston. Jos haluat lisätä luetteloon lähdekoodia, sinun on ensin luotava kohdemarkkina. Kohdemarkkina on yleensä yhdistetty itse omistettuun tai vuokrattuun postituslistaan.
 -   **Ilmaiset tuotteet** ovat kampanjanimikkeitä, jotka sisällytetään asiakkaan tilaukseen ilmaiseksi, kun luetteloon viitataan.
 -   **Komentosarjoilla** voidaan ohjata työntekijän vuorovaikutusta asiakkaiden kanssa luettelon tai sen sisältämän tuotteen yhteydessä.
 
-## Luettelon julkaiseminen
-<a id="publish-the-catalog" class="xliff"></a>
+## <a name="publish-the-catalog"></a>Luettelon julkaiseminen
 Julkaisemalla puhelinkeskusluettelon viimeistelet tuotetiedot luettelossa. Julkaiseminen ilmaisee myös, että luettelo on valmis lisätoimille, joita haluat suorittaa. Voit esimerkiksi luoda tulostetun luettelon. Voit julkaista omia luetteloita manuaalisesti, tai eräprosessin avulla voit julkaista aikataulun perusteella. Ennen kuin voit julkaista luettelon, luettelon täytyy olla vahvistettu ja hyväksytty. Jos haluat muuttaa luetteloa sen jälkeen, kun se on julkaistu, peru luettelo ja julkaise se uudelleen.
 
 
