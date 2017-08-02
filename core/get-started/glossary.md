@@ -1,37 +1,35 @@
 ---
-title: Dynamics 365 for Operations -sanasto
-description: "Microsoft Dynamics 365 for Operations -sanastossa on määritelty Dynamics 365 for Operations -tuotteen tärkeimmät termit ja käsitteet."
+title: Finance and Operations -sanasto
+description: "Tässä sanastossa on selitetty Microsoft Dynamics 365 for Finance and Operations Enterprise Editionin keskeiset termit ja käsitteet."
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 44101
 ms.assetid: d4e01957-69a0-4c92-91c5-4646c8b0cad8
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4f3015ed4f8dc165d988b2b63ed9ad89d6d6f578
+ms.translationtype: HT
+ms.sourcegitcommit: 84ee9110fa32a551133a6ab4b7c6feb9ea9c017a
+ms.openlocfilehash: 0b4d5285cc1aa44da566ec5d7fa7ebe568729fdf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/08/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for Operations -sanasto
+# <a name="finance-and-operations-glossary"></a>Finance and Operations -sanasto
 
 [!include[banner](../includes/banner.md)]
 
-
-Microsoft Dynamics 365 for Operations -sanastossa on määritelty Dynamics 365 for Operations -tuotteen tärkeimmät termit ja käsitteet. 
+Tässä sanastossa on selitetty Microsoft Dynamics 365 for Finance and Operations Enterprise Editionin keskeiset termit ja käsitteet. 
 
 ### <a name="a"></a>**A**
 
@@ -51,17 +49,9 @@ Yhdysvalloissa käytettävä sähköinen rahansiirtojärjestelmä, jonka avulla 
 
 Mitattu määrä, joka syötetään tehtävään tai tulostetaan tehtävästä.
 
-###### <a name="address-verification-service"></a>**osoitteen tarkistuspalvelu**
+###### <a name="address-verification"></a>**osoitteen tarkistus**
 
 Luottokorttikäsittelijän tarjoama palvelu, joka tarkistaa, että kortinhaltijan antama laskutusosoite täsmää myöntäneen pankin tallentamia tietoja.
-
-###### <a name="adjusted-unit-price"></a>**oikaistu yksikköhinta**
-
-Määritepohjaisen hinnoittelun ja toteutuneen vastaanotetun vaikuttavuuden perusteella laskettu yksikköhinta.
-
-###### <a name="advanced-pricing"></a>**erityishinnoittelu**
-
-Logiikka, jonka avulla lasketaan vaikuttavuusnimikkeen ostohinta.
 
 ###### <a name="aging"></a>**erääntyminen**
 
@@ -93,7 +83,7 @@ Prosessierän tai siirtoerän tuotemäärite.
 
 Suositeltu päivämäärä, johon asti tuotteen laatu tai ominaisuus on optimaalinen.
 
-###### <a name="best-before-period"></a>**ennen parasta ennen -päivää**
+###### <a name="best-before-period"></a>**parasta ennen -kausi**
 
 Ajanjakso, jonka aikana tuotteen laatu ja ominaisuudet ovat parhaimmillaan.
 
@@ -101,14 +91,13 @@ Ajanjakso, jonka aikana tuotteen laatu ja ominaisuudet ovat parhaimmillaan.
 
 Lähdeasiakirja, johon on kirjattu varaukseton pyyntö kolmannelle osapuolelle suorittaa maksu toiselle osapuolelle vaadittaessa.
 
-###### <a name="bill-of-materials"></a>**tuoterakenne**
-
-Luettelo tuotteista ja tuotemääristä, jotka tarvitaan yhden tuotteen valmistamiseen.
-
 ###### <a name="blocking"></a>**esto**
 
 Toiminto, joka asettaa asiakirjan tai tuotteen pitoon.
 
+###### <a name="bom-bill-of-materials"></a>**tuoterakenne**
+
+Luettelo tuotteista ja tuotemääristä, jotka tarvitaan yhden tuotteen valmistamiseen.
 ###### <a name="budget-control"></a>**budjetin hallinta**
 
 Käytäntö, jossa menot sallitaan vain siinä tapauksessa, että budjetista voidaan varata varoja tulevien maksusitoumuksien täyttämiseksi.
@@ -175,14 +164,6 @@ Päätilien luettelo.
 
 Kirjanpitoluokka, jonka avulla lasketaan tuotteiden valmistuksen ja varastoinnin taloudelliset seuraukset.
 
-###### <a name="commodity-pricing"></a>**raaka-aineperusteinen hinnoittelu**
-
-Hinnoittelustrategia, jonka avulla päivitetään sellaisten myyntinimikkeiden hintoja, joiden raaka-aineiden hinta vaihtelee usein.
-
-###### <a name="consolidated-order"></a>**konsolidoitu tilaus**
-
-Lähdeasiakirja, johon on kirjattu vähintään yksi viitetilaus.
-
 ###### <a name="contractor"></a>**alihankkija**
 
 Alihankkija-työnantajasuhteeseen yrityksen kanssa osallistuvan henkilön rooli.
@@ -194,10 +175,6 @@ Nimike, joka on valmistettu yhdessä toisen nimikkeen kanssa.
 ###### <a name="cost-center"></a>**kustannuspaikka**
 
 Toimintayksikkö, jonka esimiehet vastaavat budjetoiduista ja toteutuneista menoista.
-
-###### <a name="cost-of-goods-sold"></a>**myytyjen tuotteiden kustannukset**
-
-Kirjanpitoluokka, jonka avulla lasketaan tuotteiden valmistuksen ja varastoinnin taloudelliset seuraukset.
 
 ###### <a name="cost-variance"></a>**kustannuspoikkeama**
 
@@ -223,7 +200,7 @@ Tehtävän suorittamiseen käytetty aika.
 
 ###### <a name="dashboard"></a>**koontinäyttö**
 
-Dynamics 365 for Operations -sivuston tyypillinen aloitussivu. Koontinäytössä käyttäjät näkevät osion kullekin työtilalle, jonka käyttöoikeus heillä on. Kussakin osiossa näytetään aiheeseen liittyvän työtilan yhteenveto-osioiden ruudut. Koontinäyttö koostuu nimestä ja ruutuja sisältävistä osioista.
+Finance and Operations -sivuston tyypillinen aloitussivu. Koontinäytössä käyttäjät näkevät osion kullekin työtilalle, jonka käyttöoikeus heillä on. Kussakin osiossa näytetään aiheeseen liittyvän työtilan yhteenveto-osioiden ruudut. Koontinäyttö koostuu nimestä ja ruutuja sisältävistä osioista.
 
 ###### <a name="data-entity"></a>**tietoyksikkö**
 
@@ -260,10 +237,6 @@ Määritysmenetelmä, jolla luodaan tuotevariantteja valitsemalla tuotedimensioi
 ###### <a name="distinct-product"></a>**erillinen tuote**
 
 Yksilöivästi tunnistettava tuote.
-
-###### <a name="document-blocking"></a>**asiakirjojen esto**
-
-Menetelmä, jossa työvaiheprosessi laitetaan pitoon tilattujen tuotteiden laadunvalmistusprosessin ajaksi.
 
 ###### <a name="document-management-system"></a>**tiedostojen hallintajärjestelmä**
 
@@ -316,10 +289,6 @@ Valuutta, jolla on kiinteä vaihtokurssi suhteessa toiseen valuuttaan.
 ###### <a name="fixed-quantity-kanban"></a>**vakiomäärän kanban**
 
 Kanban, jota käytetään, kun kanban-sääntöön määritettyjen kanbanien määrä on vakio.
-
-###### <a name="flexible-authentication"></a>**joustava todennus**
-
-Todennusprosessi, jossa voidaan todentaa erilaisten käyttäjätietojen hallintajärjestelmien käyttäjiä.
 
 ###### <a name="formula"></a>**kaava**
 
@@ -379,13 +348,9 @@ Prosessi tai siirtotehtävä tuotantovirrassa, jonka käynnistää kanban.
 
 Tuotekomponenttien noutaminen varastosta kanban-tuotantotöiden suorittamiseksi.
 
-###### <a name="kanban-product-quantity"></a>**kanban-tuotemäärä**
-
-Kanban-sääntöön perustuva kanbanin nimiketarpeiden määrä.
-
 ###### <a name="kanban-rule"></a>**kanban-sääntö**
 
-Lean-valmistusjärjestelmän sääntö, joka toteuttaa materiaalisuunnittelu ja -täydennyskäytännöt ohjaamalla sitä, miten prosessi- ja siirtotehtäviä koordinoidaan tuotantovirroissa.
+Lean-valmistusjärjestelmän sääntö, joka toteuttaa materiaalien suunnittelun ja täydennyksen käytännöt ohjaamalla sitä, miten prosessi- ja siirtotehtäviä koordinoidaan tuotantovirroissa.
 
 ### <a name="l"></a>**L**
 
@@ -410,10 +375,6 @@ Aakkosnumeerinen tunnus, joka antaa osapuolelle oikeuden käyttää ohjelmistoa 
 Osapuolen mahdollisuus käyttää nykyisiä varoja nykyisten velkojen täsmäyttämiseen.
 
 ### <a name="m"></a>**M**
-
-###### <a name="manufacturing-overhead-based-on-material"></a>**materiaaliin perustuvan valmistuksen yleiskustannukset**
-
-Valmistuksen yleiskustannukset ilmaistaan välillisten kustannusten laskentakaavana lisämaksuprosentille. Raaka-ainekomponenteille määritetty kustannusryhmä toimii laskentakaavan perustana. Laskentakaavat voidaan määrittää yksittäisille tuotteille tai tuotteille määritetyille tuoteryhmille, jotta raaka-aineisiin perustuvien valmistuksen yleiskustannukset voidaan laskea joustavammin.
 
 ###### <a name="master-scheduling"></a>**pääajoitus**
 
@@ -459,10 +420,6 @@ Paketti on käännettävissä ja käyttöön otettavissa oleva yhden tai useamma
 
 ###### <a name="party"></a>**osapuoli**
 
-Yksikkö, joka omaksuu juridisesti sitovan roolin sopimuksellisessa suhteessa.
-
-###### <a name="party"></a>**osapuoli**
-
 Henkilö tai organisaatio, joka osallistuu taloudellisiin tehtäviin.
 
 ###### <a name="pegging"></a>**tarvekohdistus**
@@ -472,10 +429,6 @@ Prosessi, jolla vaadittavan nimikkeen määrä jäljitetään sen lähteeseen.
 ###### <a name="pegging-event"></a>**tarvekohdistustapahtuma**
 
 Resurssinkulun tapahtuma, joka ilmoittaa tuotteen kysynnästä.
-
-###### <a name="phantom-item"></a>**haamunimike**
-
-Nimike, joka on tuotettu mutta jota ei ole varastoitu.
 
 ###### <a name="planned-intercompany-demand"></a>**suunniteltu konsernin sisäinen kysyntä**
 
@@ -489,17 +442,9 @@ Taloudellisen tapahtuman rahallisen arvon kirjaaminen tietylle tilille tai yhtee
 
 Henkilö, joka luo lähdeasiakirjan taloudellisen resurssin pyynnölle.
 
-###### <a name="privilege"></a>**oikeus**
-
-Yksi tai useampi käyttöoikeus, jonka käyttäjä tarvitsee tehtävän suorittamiseen.
-
 ###### <a name="procurement-catalog"></a>**tuotteiden hankintaluettelo**
 
 Hankintaluokan mukaan ryhmitelty tuotevalikoiman luettelo. Tuotteiden hankintaluetteloa käytetään pyydettäessä tuotteita organisaation sisäiseen käyttöön.
-
-###### <a name="product-component"></a>**tuotekomponentti**
-
-Tuotteen osa.
 
 ###### <a name="product-dimension"></a>**tuotedimensio**
 
@@ -507,7 +452,7 @@ Väriin, kokoon tai konfiguraatioon liittyvät tuotemääritteet, joita käytet�
 
 ###### <a name="product-family"></a>**tuoteperhe**
 
-Yksilöivä ryhmä nimikkeitä, palveluita tai oikeuksia, jotka joko ovat mukana samoissa tuotanto- tai toimitustehtävissä tai joita tarjotaan samoille markkina-alueille. Dynamics 365 for Operations -järjestelmässä ryhmä esitetään käyttämällä ennusteen kohdistustunnusta.
+Yksilöivä ryhmä nimikkeitä, palveluita tai oikeuksia, jotka joko ovat mukana samoissa tuotanto- tai toimitustehtävissä tai joita tarjotaan samoille markkina-alueille. Finance and Operations -järjestelmässä ryhmä esitetään käyttämällä ennusteen kohdistustunnusta.
 
 ###### <a name="product-master"></a>**päätuote**
 
@@ -581,10 +526,6 @@ Menetelmä, jolla voi lisätä tai vähentää ennustevaatimuksia pääsuunnitte
 
 Tietue, johon kirjataan resurssikulun tapahtumien toiminnalliset, juridiset ja taloudelliset seuraukset kirjanpitojärjestelmässä.
 
-###### <a name="regulated-product"></a>**säännelty tuote**
-
-Tuote, joka on yhteensopivuus- ja tarkastusraportointia edellyttävän viranomaisen sääntelyn alainen.
-
 ###### <a name="rfq-request-for-quotation"></a>**tarjouspyyntö**
 
 Lähdeasiakirja, jossa pyydetään tarjoamaan tietyn tuotemäärän toimitusta tietyllä hinnalla ja tiettyyn päivämäärään mennessä.
@@ -593,9 +534,6 @@ Lähdeasiakirja, jossa pyydetään tarjoamaan tietyn tuotemäärän toimitusta t
 
 Henkilö, joka pyytää taloudellisia resursseja.
 
-###### <a name="restricted-product"></a>**rajoitettu tuote**
-
-Tuote, jonka jakelua on rajoitettu tai jonka jakelu on estetty viranomaispäätöksellä.
 
 ### <a name="s"></a>**S**
 
@@ -647,13 +585,6 @@ Lähdeasiakirjarivillä oleva tuotemäärä, joka luo tarvekohdistusvaatimuksen.
 
 Tulevan kysynnän arvio, joka luodaan käyttämällä ennustealgoritmia historiallisiin tapahtumatietoihin.
 
-###### <a name="supermarket"></a>**supermarket**
-
-Määräaikainen varastosijainti, jolla on rajallinen kapasiteetti ja jonka avulla kulutuspisteen lähellä oleva materiaali määritellään eriin.
-
-###### <a name="system-defined-financial-dimension-type"></a>**järjestelmän määrittämä taloushallinnon dimension tyyppi**
-
-Tietokannassa olevaan taulukkoon tai näkymään yhdistetty taloushallinnon dimensio, joka edustaa yksikkötyyppiä ja jonka arvot ovat kyseisen yksikkötyypin yksittäisen määritteen toimialueella.
 
 ### <a name="t"></a>**T**
 
@@ -665,13 +596,13 @@ Yhden tuoteyksikön tuottamiseen kuluva aika.
 
 Hallittu, ohjattu kokemus tehtävän tallentamisen vaiheissa. Tehtäväopas ohjaa käyttäjän tallennetun kokemuksen läpi. Kaikki tietoturvaan, tietoihin ja sovelluksiin liittyvät toiminnot ovat samat tehtäväopasta suoritettaessa kuin ilman tehtäväopasta. Tehtäväopas hankkii samoilla välineillä kuin tehtävien tallennustoiminto tiedon siitä, milloin käyttäjä on suorittanut tarkoitetun vaiheen loppuun, jotta se voi kehottaa käyttäjää siirtymään seuraavaan tallennusvaiheeseen.
 
-###### <a name="task-recorder"></a>**tehtävien tallennustoiminto**
+###### <a name="task-recorder"></a>**Tehtävien tallennustoiminto**
 
-Dynamics 365 for Operations -järjestelmään esiasennettu työkalu. Toiminto tallentaa tallennuksen aikana kaikki tapahtumat, jotka käyttäjä syöttää Dynamics 365 for Operations -käyttöliittymässä ja jotka suoritetaan palvelimen avulla, kuten arvojen lisäämisen, asetusten muuttamisen tai tietojen poistamisen.
+Finance and Operations -järjestelmään esiasennettu työkalu. Toiminto tallentaa tallennuksen aikana kaikki tapahtumat, jotka käyttäjä syöttää Finance and Operations -käyttöliittymässä ja jotka suoritetaan palvelimen avulla, kuten arvojen lisäämisen, asetusten muuttamisen tai tietojen poistamisen.
 
 ###### <a name="task-recording"></a>**tehtävätallenne**
 
-Tiedosto, joka sisältää toiminnot ja huomautukset, jotka taltioidaan, kun tehtävien tallennustoimintoa suoritetaan Microsoft Dynamics 365 for Operations -järjestelmässä.
+Tiedosto, joka sisältää toiminnot ja huomautukset, jotka taltioidaan, kun tehtävien tallennustoimintoa suoritetaan Finance and Operations -järjestelmässä.
 
 ###### <a name="three-way-matching-policy"></a>**kolmisuuntainen vastaavuuskäytäntö**
 
@@ -684,12 +615,6 @@ Siirrettävän tai siirrettävissä olevan yhden tai useamman nimikkeen määrä
 ###### <a name="two-way-matching-policy"></a>**kaksisuuntainen vastaavuuskäytäntö**
 
 Vastaavuuskäytäntö, joka edellyttää, että vähintään yhden toimittajan laskun hinnat vastaavat vähintään yhden ostotilauksen hintoja.
-
-### <a name="u"></a>**U**
-
-###### <a name="user-defined-financial-dimension-type"></a>**käyttäjän määrittämä taloushallinnon dimension tyyppi**
-
-Taloushallinnon dimensio, joka on yhdistetty käyttäjän määrittämään arvoluetteloon.
 
 ### <a name="v"></a>**V**
 
@@ -726,7 +651,4 @@ Työntekijän tai alihankkijan roolissa toimiva henkilö, joka saa korvauksen pa
 ###### <a name="workspace"></a>**työtila**
 
 Sivu, joka tarjoaa yleiskatsauksen yhteen käyttäjän suorittamaan tehtävään. Sivulla on ruutuja, luetteloita ja kaavioita, jotka näyttävät odottavat työt ja niihin liittyvät tiedot useista lähteistä. Se nostaa esille usein toistuvat näihin tietoihin liittyvät työt. Työtilan yhteenveto-osiossa näytettävät ruudut näkyvät myös niihin liittyvässä koontinäytön osassa.
-
-
-
 
