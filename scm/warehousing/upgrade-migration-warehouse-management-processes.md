@@ -15,13 +15,13 @@ ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 5ab19faddedae8cf61222762714609601b0ae96f
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: cacf48bc10be5c06154816c2f9951ab4bbaee1c1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +35,7 @@ Tässä ohjeaiheessa esitetään yhteenveto tuotteen ja varastonhallinnan siirto
 Finance and Operationsin päivityksen aikana tuotteiden käyttö on estetty, jos ne liitetään varastodimensioryhmään, joka ei vastaa varastodimensioryhmän asetuksia Finance and Operationsissa. Päivityksen jälkeen voit kuitenkin käyttää siirtoasetuksia **Vaihda nimikkeen varastodimensioryhmä** -prosessissa ja poistaa käyttöeston tuotteista, jotka on estetty päivityksen aikana. Sitten voit käsitellä kyseisten tuotteiden tapahtumia. Jotkin nimikkeet voi olla liitetty aiemmin varastodimensioryhmiin, missä toimipaikka-, varasto- ja sijainti-varastodimensiot ovat käytössä ja niitä seurataan fyysisesti. Tässä tapauksessa voit käyttää **Vaihda nimikkeen varastodimensioryhmä** -prosessia ja ottaa käyttöön nimikkeet, joita käytetään varaston hallintaprosesseissa. Tämä ominaisuus on hyödyllinen, jos haluat käyttää varaston hallintatoimintoja nykyisille nimikkeille.
 
 ## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Finance and Operationsin päivittäminen, kun AX 2012 R3 WMSII on käytössä
-Finance and Operations ei enää tue vanhaa **WMSII** -moduulia, joka on peräisin Microsoft Dynamics AX 2012:sta. Sen sijaan voit käyttää uutta **Varastonhallinta**-moduulia. Lisätietoja on kohdassa [Varastonhallinnan aloitussivu](https://ax.help.dynamics.com/en/wiki/warehouse-management/). Aiemmissa versioissa kirjanpitovarastosta voi valita varastodimensioiden sijainnin ja kuormalavatunnuksen. Kuitenkin osana päivitysprosessia kuormalavatunnus-varastodimensiota ei enää voida ottaa käyttöön kirjanpitovarastossa. Kaikki tuotteet, jotka liittyvät varastodimensioryhmään, joka käyttää kuormalavatunnus-varastodimensiota, estetään eikä niitä käsitellä.
+Finance and Operations ei enää tue vanhaa **WMSII** -moduulia, joka on peräisin Microsoft Dynamics AX 2012:sta. Sen sijaan voit käyttää uutta **Varastonhallinta**-moduulia. Aiemmissa versioissa kirjanpitovarastosta voi valita varastodimensioiden sijainnin ja kuormalavatunnuksen. Kuitenkin osana päivitysprosessia kuormalavatunnus-varastodimensiota ei enää voida ottaa käyttöön kirjanpitovarastossa. Kaikki tuotteet, jotka liittyvät varastodimensioryhmään, joka käyttää kuormalavatunnus-varastodimensiota, estetään eikä niitä käsitellä.
 
 ### <a name="enabling-items-in-finance-and-operations"></a>Nimikkeiden ottaminen käyttöön Finance and Operations
 
@@ -70,7 +70,7 @@ Ennen kuin voit käyttää vapautettuja tuotteita **Varastonhallinta**-moduuliss
 1.  Luo vähintään yksi uusi sijaintiprofiili.
 2.  Valitse **Varastonhallinta** &gt; **Asetukset** &gt; **Ota varastonhallintaprosessit käyttöön** &gt; **Ota varaston asetukset käyttöön**.
 3.  **Ota varaston asetukset käyttöön** -sivulla lisää varastot, jotka haluat ottaa käyttöön. Voit tehdä tämän vaiheen suoraan sivulla tai käyttämällä Microsoft Office -integrointi.
-4.  Varastopaikan profiilin määrittäminen kaikkiin sijainteihin. Voit tehdä tämän vaiheen helposti käyttämällä Microsoft Office -integrointia suoraan sivulla. Voit viedä ja tuoda tietoja tai käyttää tietoja yksikön käsittelyyn [Tietojen hallinta](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+4.  Varastopaikan profiilin määrittäminen kaikkiin sijainteihin. Voit tehdä tämän vaiheen helposti käyttämällä Microsoft Office -integrointia suoraan sivulla. Voit viedä ja tuoda tietoja tai käyttää tietoja yksikön käsittelyyn [Tietojen hallinta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 5.  Vahvista muutokset. Vahvistusprosessin osana suoritetaan erilaisia tietojen eheyden vahvistusprosesseja. Suuremman päivitysprosessin yhteydessä ilmeneviä ongelmia saatetaan joutua säätämään lähteen käyttöönoton yhteydessä. Tässä tapauksessa tarvitaan lisätietopäivitystä.
 6.  Muutosten käsittely.
 
@@ -81,7 +81,7 @@ Ennen kuin voit käyttää vapautettuja tuotteita **Varastonhallinta**-moduuliss
 3.  Määritä **Varaushierarkia**-sivulla uusi varaushierakia nimikkeen varasto- ja seurantadimensioryhmien mukaan.
 4.  Luo vähintään yksi sarjaryhmä, joka sisältää vähintään samat yksiköt, joita käytetään nimikkeiden varastoyksiköissä.
 5.  Valitse **Varastonhallinta** &gt; **Asetukset** &gt; **Ota varastonhallintaprosessit käyttöön** &gt;**Vaihda nimikkeen varastodimensioryhmä**.
-6.  Lisää **Vaihda nimikkeen varastodimensioryhmä** -sivulla nimikenumerot, varastodimensioryhmät ja yksikön sarjaryhmät. Voit tehdä tämän vaiheen helposti käyttämällä Microsoft Office -integrointia tai tietoyksikköprosessin avulla [Tietojen hallinta](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+6.  Lisää **Vaihda nimikkeen varastodimensioryhmä** -sivulla nimikenumerot, varastodimensioryhmät ja yksikön sarjaryhmät. Voit tehdä tämän vaiheen helposti käyttämällä Microsoft Office -integrointia tai tietoyksikköprosessin avulla [Tietojen hallinta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 7.  Vahvista muutokset. Vahvistusprosessin osana suoritetaan erilaisia tietojen eheyden vahvistusprosesseja. Suuremman päivitysprosessin yhteydessä ilmeneviä ongelmia saatetaan joutua säätämään lähteen käyttöönoton yhteydessä. Tässä tapauksessa tarvitaan lisätietopäivitystä.
 8.  Muutosten käsittely. Kaikkien varastodimensioiden päivitys voi kestää jonkin aikaa. Voit valvoa edistymistä erätehtävätöillä.
 

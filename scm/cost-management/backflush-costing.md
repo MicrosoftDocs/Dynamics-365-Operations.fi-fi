@@ -18,13 +18,12 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: e520c292b7350f332649f23fb4232e7ecd191776
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
+ms.openlocfilehash: 404803c6317b2aeda78de86d4ba11987b2a8cf65
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +34,7 @@ ms.lasthandoff: 06/13/2017
 
 Tässä aiheessa esitellään jälkikustannuslaskennan käsite, jota käytetään Lean-valmistuksessa. 
 
-Lean-valmistuksen kustannuslaskenta mahdollistaa jälkikustannuslaskentana tunnetun kustannuskertymämenetelmän käytön tuotantovirrassa. Jälkikustannuslaskentamenetelmässä kulutettavat suorat materiaalit kerätään tuotantovirran keskeneräisten töiden (KET) kustannustilille. Menetelmässä käytetään standardikustannusten varastomalliryhmää. Tuotantovirrasta vastaanotetut tuotteet vähennetään KET-tililtä niiden vakiokustannuksen mukaisesti. Tärkein ero jälkikustannuslaskennan ja vakiokustannuksen välillä on, että jälkikustannuslaskennassa variansseja ei lasketa kanban- tai lopputuotekohtaisesti. Sen sijaan varianssit lasketaan tuotantovirtakohtaisesti tietyllä aikavälillä. Tämä menetelmä esittelee todellisen Lean-konseptin materiaalikulutuksen raportointiin. Kohdistettuja materiaalin poimintamääriä ei raportoida kanbaniin tai tuotantotilaukseen. Sen sijaan kokonaiset erät tai materiaalin käsittely-yksiköt vaiheistetaan tuotantovirtaan. Kun erät tai materiaalin käsittely-yksiköt rekisteröidään tyhjiksi, ne ilmoitetaan kulutetuiksi. Erityiskulutusta voidaan käyttää, riippuen [tuotantovirran konfiguraatiosta](http://ax.help.dynamics.com/en/wiki/lean-manufacturing-modeling-the-lean-organization/). Jotta erityiskulutusta voisi käyttää, organisaatioiden on sallittava materiaalin katoaminen tuotantovirran keskeneräisistä töistä. Ajoittainen jälkikustannuslaskenta määrittää keskeneräisten töiden voimassa olevan arvon kauden loppuun. Tämä määritys perustuu kanbanin materiaalin käsittely-yksiköihin ja kanban-työn tilaan. Voimassa olevien arvojen ja todellisten KET-arvojen väliset erot kustannusryhmittäin ja nimikkeittäin lasketaan ja näytetään variansseina.
+Lean-valmistuksen kustannuslaskenta mahdollistaa jälkikustannuslaskentana tunnetun kustannuskertymämenetelmän käytön tuotantovirrassa. Jälkikustannuslaskentamenetelmässä kulutettavat suorat materiaalit kerätään tuotantovirran keskeneräisten töiden (KET) kustannustilille. Menetelmässä käytetään standardikustannusten varastomalliryhmää. Tuotantovirrasta vastaanotetut tuotteet vähennetään KET-tililtä niiden vakiokustannuksen mukaisesti. Tärkein ero jälkikustannuslaskennan ja vakiokustannuksen välillä on, että jälkikustannuslaskennassa variansseja ei lasketa kanban- tai lopputuotekohtaisesti. Sen sijaan varianssit lasketaan tuotantovirtakohtaisesti tietyllä aikavälillä. Tämä menetelmä esittelee todellisen Lean-konseptin materiaalikulutuksen raportointiin. Kohdistettuja materiaalin poimintamääriä ei raportoida kanbaniin tai tuotantotilaukseen. Sen sijaan kokonaiset erät tai materiaalin käsittely-yksiköt vaiheistetaan tuotantovirtaan. Kun erät tai materiaalin käsittely-yksiköt rekisteröidään tyhjiksi, ne ilmoitetaan kulutetuiksi. Erityiskulutusta voidaan käyttää, riippuen [tuotantovirran konfiguraatiosta](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization). Jotta erityiskulutusta voisi käyttää, organisaatioiden on sallittava materiaalin katoaminen tuotantovirran keskeneräisistä töistä. Ajoittainen jälkikustannuslaskenta määrittää keskeneräisten töiden voimassa olevan arvon kauden loppuun. Tämä määritys perustuu kanbanin materiaalin käsittely-yksiköihin ja kanban-työn tilaan. Voimassa olevien arvojen ja todellisten KET-arvojen väliset erot kustannusryhmittäin ja nimikkeittäin lasketaan ja näytetään variansseina.
 
 ## <a name="configuring-backflush-costing"></a>Jälkikustannuslaskennan määrittäminen
 Kustannuslaskenta otetaan käyttöön seuraavasti:

@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 2df0c6dc9b41dde861f5361bfcc1226786e7aa76
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 282973618e56db3feb0103a7021a66d137218a7a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/25/2017
 
 ---
 
@@ -35,28 +35,30 @@ Tämä ohjeaihe on luettelo käytettävissä olevasta Microsoft Power BI -sisäl
 Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys, käytettävissä on seuraava Power BI -sisältö:
 
 - [Etujen Power BI -sisältö](benefits-power-bi.md)
-- [Kassayhteenvedon Power BI -sisältö](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+- [Kassayhteenvedon Power BI -sisältö](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 - [Talousjohtajan yhteenvedon Power BI -sisältö](CFO-power-bi.md)
 - [Kompensaation Power BI -sisältö](compensation-power-bi.md)
 - [Kustannuslaskenta-analyysin Power BI -sisältö*](cost-accounting-analysis-content-pack.md) 
-- [Luotonvalvonnan hallinnan Power BI -sisältö](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Luotonvalvonnan hallinnan Power BI -sisältö](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [Työntekijän kehityksen Power BI -sisältö](employee-development-PBI.md) 
 - [Taloudellisen suorituskyvyn Power BI -sisältö*](financial-performance-power-bi-content-pack.md)
-- [Käyttöomaisuuden hallinnan Power BI -sisältö](/dynamics365/operations/financials/fixed-assets/Fixed-asset-management-workspace)
+- [Käyttöomaisuuden hallinnan Power BI -sisältö](/dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
 - [Oppimisen Power BI -sisältö](learning-power-bi.md)
 - [Käytäntöpäällikön Power BI -sisältö](practice-manager-power-bi.md)
 - [Tuotannon suorituskyvyn Power BI -sisältö](production-performance-power-bi.md)
 - [Ostojen kulutusanalyysi - Power BI -sisältö](purchase-content-pack-for-power-bi.md) 
 - [Työhönotto - Power BI -sisältö](recruiting-analysis-power-bi-content-pack.md) 
 - [Myynnin ja kannattavuuden suorituskyvyn Power BI -sisältö](sales-profitability-performance-content-pack.md)
-- [Toimittajan maksujen Power BI -sisältö](/dynamics365/operations/financials/accounts-payable/Vendor-payments-workspace)
+- [Toimittajan maksujen Power BI -sisältö](/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
 - [Varaston suorituskyvyn Power BI -sisältö](warehouse-power-bi-content.md)
 - [Työvoiman mittarit - Power BI -sisältö](workforce-analysis-power-bi-content-pack.md)  
 
 ### <a name="accessing-the-content"></a>Sisällön käyttäminen
 
 #### <a name="embedded-content"></a>Upotettu sisältö
-Tähtimerkillä (\*) merkittyä sisältöä lukuun ottamatta kaikki edellisessä luettelossa mainittu sisältö on upotettuna sovelluksessa. Saat lisätietoja Power BI -sisällön tarkastelemista napsauttamalla linkkejä.
+Tähtimerkillä (\*) merkittyä sisältöä lukuun ottamatta kaikki edellisessä luettelossa mainittu sisältö on upotettuna sovelluksessa. Saat lisätietoja Power BI -sisällön tarkastelemista napsauttamalla edellä olevia linkkejä.
+
+Power BI -raporttien tietojen näyttäminen edellyttää, että Yksikkösäilö on päivitetty. Lisätietoja on ohjeaiheen [Power BI:n ja yksikkösäilön integraatio](power-bi-integration-entity-store.md) kohdassa *Päivitä Yksikkösäilö*.
 
 #### <a name="files-available-in-lifecycle-services"></a>Lifecycle Servicesissä käytettävissä olevat tiedostot
 Tämä Power BI -sisältö on käytettävissä Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen yhdistämisestä tietoihin on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
@@ -66,7 +68,7 @@ Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, seuraava P
 
 - [Etuudet - Power BI -sisältö](compensation-and-benefits-analysis-power-bi-content-pack.md)   
 - [Kustannuslaskenta-analyysin Power BI -sisältö](cost-accounting-analysis-content-pack.md) 
-- [Luotonvalvonnan hallinnan Power BI -sisältö](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Luotonvalvonnan hallinnan Power BI -sisältö](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [Työntekijöiden osaamistieto- ja kehitys - Power BI -sisältö](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
 - [Taloudellisen suorituskyvyn Power BI -sisältö](financial-performance-power-bi-content-pack.md)
 - [Organisaation koulutus - Power BI -sisältö](organizational-training-analysis-power-bi-content-pack.md) 

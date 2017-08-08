@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 889a9ce79d4599a60a4503d7876276a1452a5465
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 84243a91d8b76873cd33651bbdff900b14d9c76e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,8 +36,8 @@ Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Micros
 ----------------
 
 -   [Numerosarjan yleiskatsaus](number-sequence-overview.md)
--   [Numerosarjojen määrittäminen ohjatulla toiminnolla](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (tehtäväopas)
--   [Yksittäisten numerosarjojen määrittäminen](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (tehtäväopas)
+-   [Numerosarjojen määrittäminen ohjatulla toiminnolla](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (tehtäväopas)
+-   [Yksittäisten numerosarjojen määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (tehtäväopas)
 
 ## <a name="address-books"></a>Osoitekirjat
 -   [Osoitekirjat](qa-address-books.md)
@@ -67,17 +67,17 @@ Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Micros
 
 ## <a name="electronic-signatures"></a>Sähköiset allekirjoitukset
 -   [Sähköisten allekirjoitusten yleiskuvaus](electronic-signature-overview.md)
--   [Sähköisten allekirjoitusten määrittäminen](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (tehtäväopas)
+-   [Sähköisten allekirjoitusten määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (tehtäväopas)
 
 ## <a name="organizations"></a>Organisaatiot
 -   [Organisaatiot ja organisaatiohierarkiat](organizations-organizational-hierarchies.md)
 -   [Suunnittele organisaatiohierarkia](plan-organizational-hierarchy.md)
--   [Luo toimintayksikkö](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (tehtäväopas)
--   [Luo organisaatiohierarkia](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (tehtäväopas)
--   [Luo yritys](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (tehtäväopas)
+-   [Luo toimintayksikkö](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (tehtäväopas)
+-   [Luo organisaatiohierarkia](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (tehtäväopas)
+-   [Luo yritys](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (tehtäväopas)
 
 ## <a name="general-administration"></a>Yleinen hallinta
--   [Bannerin ja logon vaihtaminen](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (tehtäväopas)
+-   [Bannerin ja logon vaihtaminen](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (tehtäväopas)
 -   [Tietoja päivämäärä- ja aikatiedoista ja aikavyöhykkeistä](date-time-zones.md)
 -   [Tietuemallit](record-templates.md)
 

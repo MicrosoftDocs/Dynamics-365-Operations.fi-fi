@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 91207e03902fa8a45ab44270cc61b58ef9e3c98c
+ms.translationtype: HT
+ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
+ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -32,33 +31,31 @@ ms.lasthandoff: 06/20/2017
 
 Tämä artikkeli sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen. 
 
-> [!IMPORTANT] 
+> [!NOTE] 
 > Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations, Enterprise Edition; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Ohjeaiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
-
-Finance and Operationsissa on uudistettu ohjejärjestelmä, joka perustuu kahteen pääkomponenttiin:
-
--   Dokumentaatiosivusto
--   Tehtäväoppaat
-
-Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations, Enterprise Edition; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Ohjeaiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa. 
 
 Kaikkien Unified Operations -tuotteiden jakama ohjejärjestelmä:
 - Dynamics 365 for Finance and Operations, Enterprise Edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
+Finance and Operationsissa on uudistettu ohjejärjestelmä, joka perustuu kahteen pääkomponenttiin:
+
+-   Dokumentaatiosivusto
+-   Tehtäväoppaat
+
 Voit käyttää ohjeaiheita ja tehtäväoppaita ohjeruudusta riippumatta siitä, mitä tuotetta käytät. Seuraavassa näyttökuvassa on Dynamics 365 for Finance and Operations
 
-![Ohje-ruutu](./media/help-pane-ops-task-guides-1024x741.png)
+![Ohje-ruutu](./media/help-pane-ops-task-guides.png)
 
 Tässä ohjeaiheessa käsitellään ohjejärjestelmää ja kerrotaan, miten voit luoda organisaatiolle oman mukautetun ohjeistuksen ja koulutusresurssit.
 
 > [!IMPORTANT]
-> **Tehtäväoppaat**-välilehti ei ole tällä hetkellä käytettävissä Microsoft Dynamics 365 for Talentissa ja Microsoft Dynamics 365 for Retailissa. Tämän toiminnon käyttöönottamista myöhemmissä versiossa ollaan toteuttamassa. Perustoimintoja koskevat Talentin aloituskokemuksen tehtäväoppaat ovat edelleen käytettävissä. Retailin ja Talentin menettelyohje on saatavana myös docs.microsoft.com-sivustossa ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)).
+> **Tehtäväoppaat**-välilehti ei ole tällä hetkellä käytettävissä Microsoft Dynamics 365 for Talentissa ja Microsoft Dynamics 365 for Retailissa. Tämän toiminnon käyttöönottamista myöhemmissä versiossa ollaan toteuttamassa. Perustoimintoja koskevat Talentin aloituskokemuksen tehtäväoppaat ovat edelleen käytettävissä. Retailin ja Talentin menettelyohje on saatavana myös docs.microsoft.com-sivustossa ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)).
 
 ## <a name="help-on-docsmicrosoftcom"></a>Ohje osoitteessa docs.microsoft.com
 
-Docs.microsoft.com-sivusto ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) on Dynamics 365 for Finance and Operationsin tuoteohjeistuksen ensisijainen lähde. Sivustossa on seuraavat ominaisuudet:
+Docs.microsoft.com-sivusto ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) on Dynamics 365 for Finance and Operationsin tuoteohjeistuksen ensisijainen lähde. Sivustossa on seuraavat ominaisuudet:
 
 -   **Uusin sisältö**– sivusto on nopea ja joustava tapa luoda, toimittaa ja päivittää tuoteohjeistusta. Niinpä saatkin aina käyttöösi uusimmat tekniset tiedot.
 -   **Asiantuntijoiden kirjoittama sisältö**– sivusto sisältää monipuolisesti tuoteohjeistusta, jota yhteisön jäsenet (sekä Microsoftin sisällä että ulkopuolella) voidaan täydentää.
@@ -68,12 +65,13 @@ Docs.microsoft.com-sivusto ([docs.microsoft.com/dynamics365/operations](/dynamic
 ### <a name="searching-on-docsmicrosoftcom"></a>Haku sivustosta docs.microsoft.com
 Sisältöä koskevista hauista esitetään paljon kysymyksiä. Jos aloitat sivuston käytön sivulta, jolla on tietoja Finance and Operationsista, hakusi koskee vain Finance and Operationsin sisältöä. Voit poistaa laajuuden määrityksen valitsemalla hakuruudun Operations-kohdan vieressä olevaa X-kohtaa. 
 
-![Hae](./media/search-scope.png)
+![Hae](./media/search-scope-2.png)
 
 Voit etsiä sisältöä myös millä tahansa hakukoneella. Haku tuottaa parhaat tulokset, jos käytössä on sivustohaku, esimerkiksi site:docs.microsoft.com dynamics 365 "hakuehto"  
-![Sivustohaku](./media/site-search.png)
 
-![Sivustohaun tulokset](./media/site-search-results.png)
+![Sivustohaku](./media/site-search-1.png)
+
+![Sivustohaun tulokset](./media/site-search-results-2.png)
 
 ### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>Unified Operationsin docs.microsoft.com-sisällysluettelo
 Kaikilla tuotteilla on Docs-sivustossa sama sisällysluettelo, jonka avulla asiakkaat näkevät käyttämänsä ohjeaiheen kontekstin. Voit etsiä ohjeaiheita myös suodattamalla.
@@ -105,7 +103,7 @@ Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti te
 
 Kullekin Unified Operations -tuotteelle on saatavana erilliset tehtäväoppaat. Kohdassa Tehtäväoppaiden käyttö ohjeruudusta käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä. 
 
-![Tehtäväoppaan lukunäkymä](./media/task-guide-ops-1024x742.png)
+![Tehtäväoppaan lukunäkymä](./media/task-guide-ops.png)
 
 Aloita opastettu vuorovaikutteinen toiminta valitsemalla **Käynnistä tehtävän ohjaus** Ohje-ruudun alareunassa. Musta osoitin avautuu ja ilmaisee suoritettavan toiminnon. Noudata käyttöliittymän ohjeita ja anna tiedot ohjeiden mukaisesti. 
 ![Tehtäväoppaan vaiheen ohje](./media/task-guide-step-1-ops.png)
@@ -129,7 +127,7 @@ Voit luoda omia tehtävätallenteita tai ladata ja mukauttaa Microsoftin toimitt
 ## <a name="in-product-help"></a>Tuotteen sisäinen ohje
 Voit käyttää Finance and Operationsin ohjesisältöä joko napsauttamalla **Ohje** (**?**) -kuvaketta tai näppäinyhdistelmällä Ctrl+Vaihto+?. Kumpikin menetelmä avaa Ohje-ruudun. Voit käyttää Ohje-ruudusta kaikkia artikkeleita tai tehtävän ohjauksia. 
 
-![Ohje-ruutu](./media/help-pane-wiki-1024x684.png)
+![Ohje-ruutu](./media/help-pane-wiki.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Ohjeaiheiden käyttö ohjeruudusta
 
@@ -162,7 +160,7 @@ Toimi seuraavasti **Järjestelmän parametrit** -sivulla:
 
 Kun järjestelmänvalvoja on suorittanut nämä vaiheet, voit avata Ohje-ruudun ja valita **Tehtävän ohjaukset** -välilehden. Näet nyt sitä sivua koskevat tehtäväoppaat, joka on avoinna Finance and Operationsissa. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla. Kun napsautat tehtävän ohjausta Ohje-ruudussa, vaiheittaiset ohjeet tulevat näkyviin Ohje-ruutuun ja voit toistaa tehtävän ohjauksen. 
 
-![Tehtäväoppaan lukunäkymä](./media/task-guide-ops-1024x742.png)
+![Tehtäväoppaan lukunäkymä](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>Missä käännetyt tehtäväoppaat sijaitsevat?
 

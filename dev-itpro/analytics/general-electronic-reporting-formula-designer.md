@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: kfend
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 655a6fd99c0688b13c31c79f3322a287f902e7f1
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2c04bbccf22ab830404206cd54b4cb8e97b6a822
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -196,8 +196,8 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 | SESSIONNOW ()                              | Palauttaa nykyisen Dynamics 365 for Finance and Operations -istunnon päivämäärän ja kellonajan päivämäärä/aika-arvona.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
 | DATEFORMAT (päivämäärä, muoto)                  | Palauttaa päivämäärän merkkijonoesityksen käyttämällä määritettyä muotoa.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** palauttaa nykyisen Dynamics 365 for Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24-12-2015** määritetyn mukautetun muodon mukaisesti.                                                                                                                      |
 | DATEFORMAT (päivämäärä, muoto, maa-asetus)         | Muunna määritetty päivämäärän arvo merkkijonoksi, joka on määritetyssä muodossa ja jolla on määritetyt [maa-asetukset](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)     | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24.12.2015** valitun Saksan maa-asetuksen mukaisesti.                                                                                                                       |
-| DAYOFYEAR (päivämäärä)              | Palauttaa tammikuun 1. päivän ja määritetyn päivämäärän välisten päivien määrän kokonaislukuna.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** palauttaa arvon **61**.
-**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** palauttaa arvon **1**.                                                                                                                       |
+| DAYOFYEAR (päivämäärä)              | Palauttaa tammikuun 1. päivän ja määritetyn päivämäärän välisten päivien määrän kokonaislukuna.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** palauttaa arvon **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** palauttaa arvon **1**. 
+                                                                                                                      |
 
 **Tietojen muuntotoiminnot**
 
@@ -236,7 +236,14 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 <li>Erät tavallisina luetteloina (<strong>arvo</strong>-komponentti)</li>
 <li>Nykyinen eränumero (<strong>BatchNumber</strong>-komponentti)</li>
 </ul></td>
-<td>Seuraavassa esimerkissä <strong>Rivit</strong>-tietolähde luodaan tietueluettelona, joka sisältää kolme tietuetta. Se on jaettu eriin, joista jokainen sisältää enintään kaksi tietuetta. <a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> Tässä on suunniteltu muotoasettelu, jossa luodaan <strong>Rivit</strong>-tietolähteen sidonnat XML-muodon tulostuksen luomiseksi. Se edustaa kunkin erän ja erän tietueiden yksittäisiä solmuja. <a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> Seuraava on suunnitellun muodon suorittamisen tulos. <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<td>Seuraavassa esimerkissä <strong>Rivit</strong>-tietolähde luodaan tietueluettelona, joka sisältää kolme tietuetta. Se on jaettu eriin, joista jokainen sisältää enintään kaksi tietuetta. 
+<a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 
+
+Tässä on suunniteltu muotoasettelu, jossa luodaan <strong>Rivit</strong>-tietolähteen sidonnat XML-muodon tulostuksen luomiseksi. Se edustaa kunkin erän ja erän tietueiden yksittäisiä solmuja. 
+<a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> 
+
+Seuraava on suunnitellun muodon suorittamisen tulos. 
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
 </tr>
 <tr class="odd">
 <td>LIST (tietue 1 [, tietue 2, ...])</td>
@@ -300,7 +307,14 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 <li>Määritetyn luettelon tietueet tavallisina luetteloita (<strong>arvo</strong>-komponentti)</li>
 <li>Nykyisen tietueen indeksi (<strong>numero</strong>-komponentti)</li>
 </ul></td>
-<td>Seuraavassa esimerkissä <strong>Numeroitu</strong>-tietolähde luodaan toimittajan tietueiden numeroituna luettelona <strong>Toimittajat</strong>-tietolähteestä, joka viittaa<strong>VendTable</strong>-taulukkoon. <a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a>Tässä on muoto, jossa tietojen sidokset luodaan, jotta tulos voidaan luoda XML-muodossa. Se edustaa yksittäisiä toimittajia numeroituina solmuina. <a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> Tässä on suunnitellun muodon suorittamisen tulos. <a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<td>Seuraavassa esimerkissä <strong>Numeroitu</strong>-tietolähde luodaan toimittajan tietueiden numeroituna luettelona <strong>Toimittajat</strong>-tietolähteestä, joka viittaa<strong>VendTable</strong>-taulukkoon. 
+<a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> 
+
+Tässä on muoto, jossa tietojen sidokset luodaan, jotta tulos voidaan luoda XML-muodossa. Se edustaa yksittäisiä toimittajia numeroituina solmuina. 
+<a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> 
+
+Tässä on suunnitellun muodon suorittamisen tulos. 
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
 </tr>
 <tr class="odd">
 <td>COUNT (luettelo)</td>
@@ -322,13 +336,24 @@ Luotu luettelo koostuu tietueista, joilla on seuraavat kentät:
 <li>kuvaus</li>
 </ul>
 Otsikko- ja Kuvaus-kentät palauttavat suorituksen aikana muodon kieliasetuksiin perustuvat arvot.</td>
-<td>Seuraavassa esimerkissä kuvataan tietomalliin tuotu luettelointi. <a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>Katso seuraava esimerkki:
+<td>Seuraavassa esimerkissä kuvataan tietomalliin tuotu luettelointi. 
+<a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>
+
+Katso seuraava esimerkki:
 <ul>
 <li>Mallin luettelointi lisätään raporttiin tietolähteenä.</li>
 <li>ER-lauseke, joka on suunniteltu käyttämään mallin luettelointia tämän toiminnon parametrina.</li>
 <li>Tietueluettelon tyypin tietolähde lisätään raporttiin käyttäen luotua ER-lauseketta.</li>
 </ul>
-<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a>Seuraavassa esimerkissä kerrotaan, miten ER-muodon elementit, jotka on sidottu tietolähteen tietueen tyyppiin, on luotu LISTOFFIELDS-toiminnolla.<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>Tässä on suunnitellun muodon suorittamisen tulos.<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>Huomautus:</strong> Otsikoiden ja kuvausten käännetty teksti täytetään ER-tulostusmuodossa FILE- ja FOLDER-muotoisten päätason elementtien kieliasetusten mukaisesti.</td>
+<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> 
+
+Seuraavassa esimerkissä on ER-lomakkeen elementit, jotka on sidottu LISTOFFIELDS-funktiolla luotuun tietueluettelotyypin tietolähteeseen.
+<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>
+
+Tässä on suunnitellun muodon suorittamisen tulos.
+<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>
+
+Huomautus:</strong> Selitteiden ja kuvausten käännetty teksti täytetään ER-lomakkeeseen FILE- ja FOLDER-päälomake-elementeille määritetyt kieliasetukset.</td>
 </tr>
 <tr class="odd">
 <td>STRINGJOIN (luettelo, kenttänimi, erotin)</td>
@@ -338,7 +363,18 @@ Otsikko- ja Kuvaus-kentät palauttavat suorituksen aikana muodon kieliasetuksiin
 <tr class="even">
 <td>SPLITLISTBYLIMIT (luettelo, raja-arvo, lähderaja-arvo)</td>
 <td>Jakaa luettelon uudeksi aliluetteloiden luetteloksi ja palauttaa tuloksen tietueluettelonsisältöön. Raja-arvoparametri määrittää arvon, joka jakaa alkuperäisen luettelon. Lähderaja-arvo-parametri määrittää vaiheen, jonka mukaan kokonaissummaa kasvatetaan. Rajaa ei käytetä tietyn luettelon yhteen nimikkeeseen, kun lähderaja ylittää määritetyn rajan.</td>
-<td>Seuraavassa esimerkissä esitetään esimerkkimuoto tietolähteitä käyttäen. <a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>Tämä on muodon suorittamisen tulos, joka on kauppatavaroiden järjestämätön luettelo.<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>Seuraavassa esimerkissä on sama oikaistu muoto, jonka mukaan kauppatavaraerät on järjestetty nimikeluetteloiksi. Yksi erä saa sisältää ainoastaan kauppatavaroita, joiden kokonaispaino ei ylitä raja-arvoa 9.<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>Tämä on oikaistun muodon suorittamisen tulos. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a><strong>Huomautus:</strong> Rajaa ei sovellettu alkuperäisen listan viimeiseen nimikkeeseen, koska arvo (11) ylittää lähteen (painon) raja-arvon, joka on 9. Käytä joko toimintoa <strong>WHERE</strong> tai vastaavan muodon elementin <strong>Enabled</strong> (käytössä) lauseketta ohittaaksesi (skip) alaluettelot raporttia muodostettaessa (tarvittaessa).</td>
+<td>Seuraavassa esimerkissä esitetään esimerkkimuoto tietolähteitä käyttäen. 
+<a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>
+
+Tässä on tuloksena muoto, joka on kauppatavaroiden jäsentämätön luettelo.
+<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>
+
+Seuraavassa esimerkissä on sama muoto, joka säädettiin ilmaisemaan kauppatavarat erinä, kun yhdessä erässä on oltava kauppatavaroita, joiden kokonaispaino ei saa olla suurempi kuin 9.
+<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>
+
+Tässä on säädetyn muodon suorittamisen tulos. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
+
+<strong>Huomautus:</strong> Rajaa ei sovellettu alkuperäisen listan viimeiseen nimikkeeseen, koska arvo (11) ylittää lähteen (painon) raja-arvon, joka on 9. Käytä joko toimintoa <strong>WHERE</strong> tai vastaavan muodon elementin <strong>Enabled</strong> (käytössä) lauseketta ohittaaksesi (skip) alaluettelot raporttia muodostettaessa (tarvittaessa).</td>
 </tr>
 <tr class="odd">
 <td>FILTER (luettelo, ehto)</td>
@@ -506,12 +542,15 @@ Otsikko- ja Kuvaus-kentät palauttavat suorituksen aikana muodon kieliasetuksiin
 <tr class="odd">
 <td>TEXT (syöte)</td>
 <td>Palauttaa määritetyn syötteen, joka muunnetaan tekstimerkkijonoksi. Se puolestaan muotoillaan nykyisen Finance and Operations -esiintymän palvelimen aluekohtaisten asetusten perusteella. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
-<td>Jos Finance and Operations -esiintymän palvelimen aluekohtaisiksi asetuksiksi on määritetty <strong>FI-FI</strong>, <strong>TEXT (NOW ())</strong> palauttaa nykyisen Finance and Operations -istunnon päivämäärän 17.12.2015 tekstimerkkijonona <strong>17.12.2015 07.59.23</strong>. <strong>TEXT (1/3)</strong> palauttaa arvon <strong>&quot;0.33&quot;</strong>.</td>
+<td>Jos Finance and Operations -esiintymän palvelimen aluekohtaisiksi asetuksiksi on määritetty <strong>FI-FI</strong>, <strong>TEXT (NOW ())</strong> palauttaa nykyisen Finance and Operations -istunnon päivämäärän 17.12.2015 tekstimerkkijonona <strong>&quot;17.12.2015 07.59.23&quot;</strong>. <strong>TEXT (1/3)</strong> palauttaa arvon <strong>&quot;0.33&quot;</strong>.</td>
 </tr>
 <tr class="even">
 <td>FORMAT (merkkijono 1, merkkijono 2[, merkkijono 3, ...])</td>
 <td>Palauttaa määritetyn merkkijonon, jota on muotoiltu korvaamalla kaikki <strong>%N</strong>-esiintymät <em>n</em>. argumentilla. Argumentit ovat merkkijonoja. Jos parametrille ei ole annettu argumenttia, parametri palautetaan merkkijonoon arvona <strong>&quot;%N&quot;</strong>. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
-<td>Tässä esimerkissä <strong>PaymentModel</strong>-tietolähde palauttaa asiakastietueluettelon <strong>asiakas</strong>-komponentin kautta ja käsittelyn päivämäärän arvon <strong>ProcessingDate</strong>-kentän kautta. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a>ER-muodossa, joka on suunniteltu sähköisen tiedoston luomiseen valituille asiakkaille, tietolähteeksi valitaan <strong>PaymentModel</strong>. Se ohjaa prosessin kulkua. Loppukäyttäjille annetaan poikkeus, kun valittu asiakas pysäytetään raportin käsittelypäivämääränä. Tälle käsittelyn ohjausobjektin tyypille muotoiltua kaavaa käytetään seuraavissa resursseissa:
+<td>Tässä esimerkissä <strong>PaymentModel</strong>-tietolähde palauttaa asiakastietueluettelon <strong>asiakas</strong>-komponentin kautta ja käsittelyn päivämäärän arvon <strong>ProcessingDate</strong>-kentän kautta. 
+<a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 
+
+ER-muodossa, joka on suunniteltu sähköisen tiedoston luomiseen valituille asiakkaille, tietolähteeksi valitaan <strong>PaymentModel</strong>. Se ohjaa prosessin kulkua. Loppukäyttäjille annetaan poikkeus, kun valittu asiakas pysäytetään raportin käsittelypäivämääränä. Tälle käsittelyn ohjausobjektin tyypille muotoiltua kaavaa käytetään seuraavissa resursseissa:
 <ul>
 <li>Finance and Operationsin otsikko SYS70894, jossa on seuraava teksti:
 <ul>
@@ -549,7 +588,8 @@ Tässä on kaava, jota voi muotoilla: FORMAT (CONCATENATE (@&quot;SYS70894&quot;
 <td>TRIM (merkkijono)</td>
 <td>Palauttaa annetun tekstin sen jälkeen, kun edeltävät ja lopussa olevat välilyönnit on poistettu ja sanojen välissä olevat moninkertaiset välilyönnit on poistettu. </td>
 <td><strong>TRIM ("     Sample     text     ")</strong> palauttaa muodon <strong>"Sample text".</strong></td>
-=======
+</tr>
+<tr class="odd">
 <td>GETENUMVALUEBYNAME (luetteloinnin tietolähteen polku, luettelointiarvon etikettiteksti)</td>
 <td>Palauttaa määritetyn luetteloinnin tietolähteen tämän luettelointiotsikon määritetyn tekstin arvon.</td>
 <td>Seuraavassa esimerkissä on tietomallissa tuodun ReportDirection-luettelointi. Huomaa, että luettelointiarvoille on määritetty otsikot.

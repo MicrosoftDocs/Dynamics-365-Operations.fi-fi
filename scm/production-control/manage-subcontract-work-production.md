@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0e1368d3f637143fd47c3772c811257e8472cc74
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: ebcae0e323203a98a9b8ed1113db945fceaaa4af
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -68,7 +68,7 @@ Kun tätä määritystä käytetään, luodaan ostotilaus liittyvälle palvelutu
 Tuotantotilauksella voi olla monta toimintoa, ja kukin toiminto voidaan kohdistaa eri toimittajalle. Tämän vuoksi päästä-päähän-tuotantotilaus voi aiheuttaa useita ostotilauksia.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Tuotantovirran tehtävien alihankinta
-[Lean-valmistuksen](lean-manufacturing-overview.md) lähestymistavassa alihankintatyö on mallinnettu palveluna, joka liittyy [tuotantovirran](http://ax.help.dynamics.com/en/wiki/create-a-production-flow-version/) tehtävään (tehtäväoppaan aihe). Siksi tämäntyyppinen alihankinta on niin sanottu [toimintoperusteisen alihankinta.](activity-based-subcontracting.md) Kustannusryhmän tyyppi, jonka nimi on **Suora ulkoistaminen** on otettu käyttöön, ja alihankinnan palvelut eivät enää kuulu valmiiden tuotteiden tuoterakenteeseen (BOM). Lean-valmistusta käytettäessä kaikki tehtävät määritellään kanbaneina, jotka voidaan liittää yhteen tai useampaan tuotantovirran tehtävään. Tähän mennessä selitys kuulostaa aivan samalta kuin tuotantotilauksissa. Mutta siinä missä tuotantotilausten on aina päätyttävä valmiiseen tuotteeseen, voit luoda kanbaneita tukemaan puolivalmiita tuotteita. Sinun ei tarvitse ottaa käyttöön uutta tuotetta ja tuoterakenteen tasoa.  
+[Lean-valmistuksen](lean-manufacturing-overview.md) lähestymistavassa alihankintatyö on mallinnettu palveluna, joka liittyy [tuotantovirran](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-production-flow-version) tehtävään (tehtäväoppaan aihe). Siksi tämäntyyppinen alihankinta on niin sanottu [toimintoperusteisen alihankinta.](activity-based-subcontracting.md) Kustannusryhmän tyyppi, jonka nimi on **Suora ulkoistaminen** on otettu käyttöön, ja alihankinnan palvelut eivät enää kuulu valmiiden tuotteiden tuoterakenteeseen (BOM). Lean-valmistusta käytettäessä kaikki tehtävät määritellään kanbaneina, jotka voidaan liittää yhteen tai useampaan tuotantovirran tehtävään. Tähän mennessä selitys kuulostaa aivan samalta kuin tuotantotilauksissa. Mutta siinä missä tuotantotilausten on aina päätyttävä valmiiseen tuotteeseen, voit luoda kanbaneita tukemaan puolivalmiita tuotteita. Sinun ei tarvitse ottaa käyttöön uutta tuotetta ja tuoterakenteen tasoa.  
 
 Koska kanban-säännöt voivat olla erittäin dynaamisia, voit mallintaa saman tuotteen toimittamisen variantteja tuotantovirrassa. Kun käytät lean-alihankintaa, materiaalivirta ja taloushallinnon työnkulku erotetaan tiukasti toisistaan. Kaikki materiaalivirta esitetään kanban-toimintoina. Palvelutuotteiden ja näiden palvelujen vastaanottokirjauksien ostotilaukset voidaan automatisoida tuotantovirran kanban-töiden tilan perusteella. Kanban-työt voidaan aloittaa ja suorittaa jopa ennen ostotilausten luomista. Alihankinta-asiakirjat (ostotilaus ja palvelun oston vastaanotto) voidaan koostaa ajanjakson ja palvelun mukaan. Tämän vuoksi ostoasiakirjojen ja niiden rivien määrä voidaan säilyttää pienenä jopa hyvin toistuvissa toiminnoissa, jossa toimittajat tarjoavat alihankintapalveluja yhden vaiheen työnkulun avulla.
 

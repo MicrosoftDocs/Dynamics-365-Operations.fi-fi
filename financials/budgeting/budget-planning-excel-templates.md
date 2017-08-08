@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,12 +35,18 @@ Tässä aiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan
 Tässä ohjeaiheessa kuvataan, miten luodaan Excel-malleja, joita käytetään budjettisuunnitelmissa käyttämällä vakionäytetietoja ja Järjestelmänvalvoja-käyttäjätunnusta. Saat lisätietoja budjettisuunnittelusta artikkelista [Budjetin suunnittelun yhteenveto.](budget-planning-overview-configuration.md) Voit myös seurata [Budjettisuunnittelun perusteet](budget-plan.md) -opetusohjelma oppiaksesi perustiedot moduulin määrityksestä sekä käytön periaatteet.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Luo laskentataulukko budjettisuunnitelman asiakirja-asettelun avulla
-Budjettisuunnitelma-asiakirjoja voi tarkastella ja muokata käyttämällä yhtä tai useampaa asettelua. Kussakin asettelussa voi olla liitetty budjettisuunnitelman asiakirjamalli, jotta budjettisuunnitelman tietoja voidaan tarkastella ja muokata Excel-laskentataulukossa. Tässä ohjeaiheessa luodaan budjettisuunnitelman asiakirjamalli käyttämällä valmista asettelumääritystä. Avaa **Budjettisuunnitelmien luettelo** (**Budjetointi**&gt; **Budjettisuunnitelmat**). Luo uusi budjettisuunnitelma-asiakirja valitsemalla **Uusi**. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+
+Budjettisuunnitelma-asiakirjoja voi tarkastella ja muokata käyttämällä yhtä tai useampaa asettelua. Kussakin asettelussa voi olla liitetty budjettisuunnitelman asiakirjamalli, jotta budjettisuunnitelman tietoja voidaan tarkastella ja muokata Excel-laskentataulukossa. Tässä ohjeaiheessa luodaan budjettisuunnitelman asiakirjamalli käyttämällä valmista asettelumääritystä. 
+
+Avaa **Budjettisuunnitelmien luettelo** (**Budjetointi** &gt; **Budjettisuunnitelmat**). Luo uusi budjettisuunnitelma-asiakirja valitsemalla **Uusi**. 
+
+[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Käytä **Lisää rivi** -vaihtoehtoa, jos haluat lisätä rivejä. Voit tarkastella budjettisuunnitelman asiakirjan asettelun määrityksiä valitsemalla **Asettelut**. 
+
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Voit tarkistaa asettelun määritykset ja muuttaa niitä tarvittaessa. Siirry kohtaan **Malli** &gt; **Luo** luodaksesi Excel-tiedoston tälle asettelulle. Kun malli on luotu, siirry kohtaan **Malli** &gt; **Näytä** avataksesi ja tarkistaaksesi budjettisuunnitelman asiakirjamallin. Voit tallentaa Excel-tiedoston paikalliseen asemaan. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
+Voit tarkistaa asettelun määritykset ja muuttaa niitä tarvittaessa. Siirry kohtaan **Malli** &gt; **Luo** luodaksesi Excel-tiedoston tälle asettelulle. Kun malli on luotu, siirry kohtaan **Malli** &gt; **Näytä** avataksesi ja tarkistaaksesi budjettisuunnitelman asiakirjamallin. Voit tallentaa Excel-tiedoston paikalliseen asemaan. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Budjettisuunnitelman asiakirjan asettelua ei voi muokata, kun Excel-malli on liitetty siihen. Voit muokata asettelua, poistamalla liitetyn Excel-mallitiedoston ja luomalla se uudelleen. Tämä tarvitaan pitämään asettelun kentät ja laskentataulukko synkronoituna. 

@@ -11,19 +11,18 @@ ms.technology:
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: cebd1b6f041e18c2e016142aba7447bf813f570b
-ms.openlocfilehash: f6327b339441f2f1f6d4e557e45d085685245a08
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: b9ad00b4157d1f732a8f2400712c94a92a17b273
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/19/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -34,7 +33,7 @@ ms.lasthandoff: 06/19/2017
 
 Tämä aihe esittelee sähköisen raportointityökalun. Artikkelissa on tietoja keskeisistä käsitteistä ja sähköisen raportoinnin tukemista skenaarioista. Lisäksi siinä on luettelo muodoista, jotka on suunniteltu osana tätä ratkaisua ja jotka julkaistaan sen osana.
 
-Sähköinen raportointi on työkalu, jolla voit määrittää saapuvien ja lähtevien sähköisten asiakirjojen muodon eri maiden ja alueiden säädösten mukaisesti. Sähköinen raportointi mahdollistaa näiden muotojen hallinnan niiden elinkaaren aikana. Voit esimerkiksi ottaa käyttöön uusia säädöksiin perustuvia vaatimuksia ja luoda vaatimusten mukaisia liiketoiminnan asiakirjoja, jotka mahdollistavat sähköisen tiedonsiirron viranomaisten, pankkien ja muiden osapuolien välillä.
+ER on työkalu, jolla voit määrittää saapuvien ja lähtevien sähköisten asiakirjojen muodon eri maiden ja alueiden säädösten mukaisesti. Sähköinen raportointi mahdollistaa näiden muotojen hallinnan niiden elinkaaren aikana. Voit esimerkiksi ottaa käyttöön uusia säädöksiin perustuvia vaatimuksia ja luoda vaatimusten mukaisia liiketoiminnan asiakirjoja, jotka mahdollistavat sähköisen tiedonsiirron viranomaisten, pankkien ja muiden osapuolien välillä.
 
 Sähköinen raportointimoduuli on suunnattu yrityskäyttäjille eikä kehittäjille. Koska määritykset koskevat muotoja koodin sijaan, sähköisten asiakirjojen muotojen käsittely- ja muokkausprosessi on nopeaa ja helppoa.
 
@@ -43,8 +42,8 @@ Sähköinen raportointi tukee tällä hetkellä TXT- ja XML-tiedostoja, Microsof
 ## <a name="capabilities"></a>Toiminnot
 Sähköisessä raportointimoduulissa on seuraavat toiminnot:
 
-- Se on yksi jaettu, eri toimialueilla toimiva sähköisen raportoinnin työkalu, joka korvaa yli 20 erilaista Microsoft Dynamics 365 for Operationsin sähköisen raportoinnin moduulia.
-- Se eristää raportin muodon tällä hetkellä käyttöönotetusta Dynamics 365 for Operationsista. Toisin sanoen muotoa voi käyttää Microsoft Dynamics 365 for Operationsin eri versioissa.
+- Se on yksi jaettu, eri toimialueilla toimiva sähköisen raportoinnin työkalu, joka korvaa yli 20 erilaista Microsoft Dynamics 365 for Finance and Operationsin sähköisen raportoinnin moduulia.
+- Se eristää raportin muodon tällä hetkellä käyttöönotetusta Finance and Operationsista. Toisin sanoen muotoa voi käyttää Finance and Operationsin eri versioissa.
 - Se tukee alkuperäiseen muotoon perustuvan mukautetun muodon luontia. Sen toiminnoilla voi myös päivittää automaattisesti mukautetut muodot, kun alkuperäiseen muotoon on tehty muutoksia. Tämä onnistuu lokalisointi- ja mukautusvaatimusten avulla.
 - Siitä tulee ensisijainen vakiotyökalu lokalisointivaatimusten tukemiseen sähköisessä raportoinnissa – sekä Microsoftille että sen kumppaneille.
 - Se tukee mahdollisuutta jakaa muotoja kumppaneille ja asiakkaille Microsoft Dynamics Lifecycle Services (LCS) -palveluissa.
@@ -59,7 +58,8 @@ Sähköinen raportointi tukee kahdenlaisia osia: **tietomalleja** ja **muotoa**.
 Tietomallikomponentti on tietorakenne abstrakti kuvaus. Sen avulla tietty liiketoiminnan toimialue voidaan selittää riittävän yksityiskohtaisesti kyseisen toimialueen raportointitarpeiden mukaisesti. Tietomalliosassa on seuraavat osat:
 
 - Tietomalli joukkona toimialuekohtaisia liiketoimintayksiköitä ja rakenteeltaan hierarkkisena määrityksenä kyseisten yksiköiden välisistä suhteista.
-- Mallin yhdistämismääritykset, jotka linkittävät valitut Microsoft Dynamics 365 for Operations -tietolähteet yksittäisiin tietomallin elementteihin ja jotka määrittävät suorituksenaikaisen tiedonkulun ja säännöt liiketoiminnan tietojen täyttämiseen tietomalliosassa.
+- Mallin yhdistämismääritykset, jotka linkittävät valitut Finance and Operations -tietolähteet yksittäisiin tietomallin elementteihin ja jotka määrittävät suorituksenaikaisen tiedonkulun ja säännöt liiketoiminnan tietojen täyttämiseen tietomalliosassa.
+
 Tietomallin liiketoimintayksikkö ilmaistaan säilönä (tietue). Liiketoimintayksikön ominaisuudet esitetään tietokohteina (kentät). Kullakin tiedolla on yksilöllinen nimi, otsikko, kuvaus ja arvo. Kunkin tiedon arvo voidaan suunnitella tunnistettavaksi esimerkiksi merkkijonona, kokonaislukuna, reaalilukuna, päivämääränä, valintalistan tyyppinä tai totuusarvona. Se voi olla myös toinen tietue tai tietueluettelo.
 
 Yksittäisessä tietomallikomponentissa voi olla useita toimialuekohtaisten liiketoimintayksiköiden hierarkioita. Siinä voi olla myös suorituksenaikaista rapottikohtaista tiedonkulku tukevia yhdistämismäärityksiä. Hierarkiat erotellaan sen yksittäisen tietueen perusteella, joka on valittu mallien yhdistämisen juureksi. Esimerkiksi maksutoimialueen alueen tietomalli voi tukea seuraavia yhdistämismäärityksiä:
@@ -71,17 +71,18 @@ Huomaa, että liiketoimintayksiköt, kuten yritys ja maksutapahtumat, suunnitell
 
 Lähteviä sähköisiä asiakirjoja tukevassa mallin yhdistämismäärityksessä on seuraavat ominaisuudet:
 
-- Se voi käyttää Dynamics 365 for Operationsin tietotyyppejä tietomallina. Se voi käyttää esimerkiksi taulukoita, tietoyksiköitä, menetelmiä tai valintaluetteloita.
+- Se voi käyttää Finance and Operationsin tietotyyppejä tietomallina. Se voi käyttää esimerkiksi taulukoita, tietoyksiköitä, menetelmiä tai valintaluetteloita.
 - Se tukee käyttäjän syöttöparametreja, jotka voidaan määrittää tietomallin tietolähteiksi, kun osa tiedoista on määritettävä suorituksen aikana.
-- Se tukee Dynamics 365 for Operationsin tietojen muuntamista tarvittaviksi ryhmiksi. Voit myös suodattaa, lajittelu ja summata tietoja sekä loogisia laskettuja kenttiä, jotka on suunniteltu Microsoft Excelin kaavoja muistuttavilla kaavoilla seuraavassa kuvassa esitetyllä tavalla. Lisätietoja on ohjeaiheessa [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)).
+- Se tukee Finance and Operationsin tietojen muuntamista tarvittaviksi ryhmiksi. Voit myös suodattaa, lajittelu ja summata tietoja sekä loogisia laskettuja kenttiä, jotka on suunniteltu Microsoft Excelin kaavoja muistuttavilla kaavoilla seuraavassa kuvassa esitetyllä tavalla. Lisätietoja on ohjeaiheessa [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)).
 
 [![Kaavan suunnittelutoiminto](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
 
 Saapuvia sähköisiä asiakirjoja tukevassa mallin yhdistämismäärityksessä on seuraavat ominaisuudet:
 
-- Se käyttää kohteina erilaisia Dynamics 365 for Operationsin päivitettäviä tietoelementtejä. Näitä tietoelementtejä ovat esimerkiksi taulut, tietoyksiköt ja näkymät. Tietoja voi päivittää saapuvien sähköisten asiakirjojen tiedoilla. Yhdessä mallin yhdistämismäärityksessä voidaan käyttää useita kohteita.
+- Se voi käyttää erilaisia päivitettäviä tietoelementtejä kohteina. Näitä tietoelementtejä ovat esimerkiksi taulut, tietoyksiköt ja näkymät. Tietoja voi päivittää saapuvien sähköisten asiakirjojen tiedoilla. Yhdessä mallin yhdistämismäärityksessä voidaan käyttää useita kohteita.
 - Se tukee käyttäjän syöttöparametreja, jotka voidaan määrittää tietomallin tietolähteiksi, kun osa tiedoista on määritettävä suorituksen aikana.
-Tietomallikomponentti on suunniteltu käytettäväksi kullakin liiketoiminnan toimialueella yhtenäisenä tietolähteenä raportoinnissa, joka eristää raportoinnin Dynamics 365 for Operationsin tietolähteiden fyysisestä toteuttamisesta. Se kuvaa toimialuekohtaisia liiketoimintakonsepteja ja toimintoja muodossa, joka tehostaa raportointimuotojen alkusuunnittelua ja sen jälkeisestä ylläpitoa.
+
+Tietomallikomponentti on suunniteltu käytettäväksi kullakin liiketoiminnan toimialueella yhtenäisenä tietolähteenä raportoinnissa, joka eristää raportoinnin Finance and Operationsin tietolähteiden fyysisestä toteuttamisesta. Se kuvaa toimialuekohtaisia liiketoimintakonsepteja ja toimintoja muodossa, joka tehostaa raportointimuotojen alkusuunnittelua ja sen jälkeisestä ylläpitoa.
 
 #### <a name="format-components-for-outgoing-electronic-documents"></a>Lähtevien sähköisten asiakirjojen muotokomponentit
 
@@ -133,32 +134,32 @@ Sähköisissä raportointiosissa tuetaan versionhallintaa. Sähköisen raportoin
 
 Versioita, joiden tila on joko **Valmis** tai **Jaettu**, voidaan käyttää muissa tiedonsiirroissa. Seuraavat toimet voidaan suorittaa komponentissa, jolla on nämä tilat:
 
-- Komponentti voidaan sarjoittaa XML-muodossa ja viedä Dynamics 365 for Operationsista XML-muotoisena tiedostona.
-- Komponentti voidaan sarjoittaa uudelleen XML-tiedostosta ja tuoda Dynamics 365 for Operationsiin sähköisen raportointikomponentin uutena versiona.
+- Komponentit voidaan sarjoittaa XML-muodossa ja viedä XML-muotoisena tiedostona.
+- Komponentti voidaan sarjoittaa uudelleen XML-tiedostosta ja tuoda Finance and Operationsiin ER-komponentin uutena versiona.
 
 #### <a name="component-date-effectivity"></a>Komponentin päivämäärän voimassaolo
 
-Sähköisen raportointikomponentin versioilla on voimassaolopäivämäärät. Voit määrittää sähköiselle raportointikomponentille **Voimaantulopäivä**-arvon määrittämään päivän, josta lähtien kyseinen komponentti on voimassa raportointiprosesseissa. Dynamics 365 for Operationsin istunnon päivämäärää käytetään määrittämään, onko komponentti suoritettavissa. Jos tiettynä päivänä on voimassa useampia kuin yksi versio, viimeisintä versiota käytetään raportointiprosessissa.
+Sähköisen raportointikomponentin versioilla on voimassaolopäivämäärät. Voit määrittää sähköiselle raportointikomponentille **Voimaantulopäivä**-arvon määrittämään päivän, josta lähtien kyseinen komponentti on voimassa raportointiprosesseissa. Finance and Operationsin istunnon päivämäärää käytetään määrittämään, onko komponentti suoritettavissa. Jos tiettynä päivänä on voimassa useampia kuin yksi versio, viimeisintä versiota käytetään raportointiprosessissa.
 
 #### <a name="component-access"></a>Komponenttien käyttöoikeudet
 
-Sähköisten raportointiosien käyttöoikeus määräytyy maan/alueen ISO-koodiasetuksista. Jos tämä asetus on tyhjä muotomääritysten valitussa versiossa, muoto-osaa voidaan käyttää suorituksenaikainen missä tahansa Dynamics 365 for Operations -yrityksessä. Jos asetuksessa on ISO-maa-/aluekoodeja, muoto-osia voidaan käyttää vain niissä Dynamics 365 for Operations -yrityksissä, joiden ensisijainen osoite on määritetty joksikin muoto-osan ISO-maa-/aluekoodiksi.
+Sähköisten raportointiosien käyttöoikeus määräytyy maan/alueen ISO-koodiasetuksista. Jos tämä asetus on tyhjä muotomääritysten valitussa versiossa, muoto-osaa voidaan käyttää suorituksenaikainen missä tahansa yrityksessä. Jos asetuksessa on ISO-maa-/aluekoodeja, muoto-osia voidaan käyttää vain niissä yrityksissä, joiden ensisijainen osoite on määritetty joksikin muoto-osan ISO-maa-/aluekoodiksi.
 
 Tietomuoto-osien eri versioilla voi olla erilaiset ISO-maa/aluekoodeja koskevat asetukset.
 
 #### <a name="configuration"></a>Määritys
 
-Sähköinen raportointimääritys on tietyn sähköisen raportointikomponentin paketoija. Kyse voi olla joko tietomallikomponentista tai muotokomponentista. Määritykset voivat sisältää sähköisen raportointikomponentin eri versioita. Kukin määritys merkitään tietyn määrityslähteen omistamaksi. Määrityskomponentin **Luonnos**-versiota voidaan muokata, jos kyseisten määritysten omistaja on valittu Dynamics 365 for Operationsin sähköisten raportointiasetusten aktiiviseksi lähteeksi.
+Sähköinen raportointimääritys on tietyn sähköisen raportointikomponentin paketoija. Kyse voi olla joko tietomallikomponentista tai muotokomponentista. Määritykset voivat sisältää sähköisen raportointikomponentin eri versioita. Kukin määritys merkitään tietyn määrityslähteen omistamaksi. Määrityskomponentin **Luonnos**-versiota voidaan muokata, jos kyseisten määritysten omistaja on valittu Finance and Operationsin ER-asetusten aktiiviseksi lähteeksi.
 
 Kussakin mallimäärityksessä on tietomallikomponentti. Uusien muotomääritysten alkuperä voi olla tietty tietomallimääritys. Luotu määritysmuoto tulee näkyviin määrityspuuhun alkuperäisen tietomallimääritysten alikohteena.
 
 Luodussa muotomäärityksessä on muotokomponentti. Alkuperäisten mallimääritysten tietomallikomponentti lisätään automaattisesti alimuodon muotokomponentin määritykseen oletustietolähteenä.
 
-Sähköiset raportointimääritykset jaetaan Dynamics 365 for Operations -yrityksille.
+ER-määritykset jaetaan Finance and Operations -yrityksille.
 
 #### <a name="provider"></a>Tarjoaja
 
-Sähköinen raportointipalvelu on osapuolen tunniste, jota ilmaistaan sähköisten raportointimääritysten tekijä (omistaja). Voit hallita sähköisen raportoinnin avulla määrityspalvelujen luetteloa. Sähköisille asiakirjoille Dynamics 365 for Operations -ratkaisun osana julkaistujen muotomääritysten omistajaksi merkitään **Microsoftin** määrityspalvelu.
+Sähköinen raportointipalvelu on osapuolen tunniste, jota ilmaistaan sähköisten raportointimääritysten tekijä (omistaja). Voit hallita sähköisen raportoinnin avulla määrityspalvelujen luetteloa. Sähköisille asiakirjoille Finance and Operations -ratkaisun osana julkaistujen muotomääritysten omistajaksi merkitään **Microsoftin** määrityspalvelu.
 
 Lisätietoja uuden sähköisen raportointipalvelun rekisteröimisestä on tehtäväoppaassa **ER Konfiguraation lähteen luominen ja merkitseminen aktiiviseksi** (liiketoimintaprosessin **7.5.4.3 IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen (10677)** osa).
 
@@ -166,11 +167,11 @@ Lisätietoja uuden sähköisen raportointipalvelun rekisteröimisestä on tehtä
 
 Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säilöön. Tällä hetkellä tuetaan kahta sähköisen raportointisäilön tyyppiä: **Operatiiviset resurssit** ja **LCS-projekti**.
 
-**Operatiivisten resurssien** säilö antaa mahdollisuuden käyttää määritysluetteloa, jonka Microsoft sähköisen raportoinnin määrityspalveluna julkaisee Dynamics 365 for Operations -ratkaisun osana. Nämä määritykset voidaan tuoda nykyiseen Dynamics 365 for Operationsin esiintymään ja niitä voidaan käyttää sähköisessä raportoinnissa. Niitä voidaan käyttää myös muissa lisälokalisoinneissa ja -mukautuksissa.
+**Operatiivisten resurssien** säilö antaa mahdollisuuden käyttää määritysluetteloa, jonka Microsoft sähköisen raportoinnin määrityspalveluna julkaisee Finance and Operations -ratkaisun osana. Nämä määritykset voidaan tuoda nykyiseen Finance and Operationsin esiintymään ja niitä voidaan käyttää sähköisessä raportoinnissa. Niitä voidaan käyttää myös muissa lisälokalisoinneissa ja -mukautuksissa.
 
-**LCS-projektin** säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin säilön rekisteröintivaiheessa. Sähköinen raportointi mahdollistaa jaettujen määritysten latauksen nykyisestä Dynamics 365 for Operationsin esiintymästä tiettyyn **LCS-projektin** säilöön. Voit myös tuoda määrityksiä **LCS-projektin** säilöstä nykyiseen Dynamics 365 for Operationsin esiintymään.
+**LCS-projektin** säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin säilön rekisteröintivaiheessa. Sähköinen raportointi mahdollistaa jaettujen määritysten latauksen nykyisestä Finance and Operationsin esiintymästä tiettyyn **LCS-projektin** säilöön. Voit myös tuoda määrityksiä **LCS-projektin** säilöstä nykyiseen Finance and Operationsin esiintymään.
 
-Vaaditut **LCS-projektin** säilöt voidaan rekisteröidä erikseen kullekin nykyisen Dynamics 365 for Operationsin esiintymän määrityspalvelulle. Kukin säilö voidaan osoittaa tiettyyn määrityspalveluun.
+Vaaditut **LCS-projektin** säilöt voidaan rekisteröidä erikseen kullekin nykyisen Finance and Operationsin esiintymän määrityspalvelulle. Kukin säilö voidaan osoittaa tiettyyn määrityspalveluun.
 
 ## <a name="supported-scenarios"></a>Tuetut skenaariot
 ### <a name="building-a-data-model"></a>Tietomallin rakentaminen
@@ -204,7 +205,7 @@ Sähköiseen raportointiin sisältyy mallin yhdistämismääritysten suunnittelu
 Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin mallin yhdistämismäärityksen määrittäminen ja tietolähteiden valinta**- ja **Sähköisen raportoinnin tietomallin yhdistämismääritysten tekeminen valittuihin tietolähteisiin** -tehtäväoppaat (osa **7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)** -liiketoimintaprosessia).
 
 ### <a name="configuring-data-model-mappings-for-incoming-documents"></a>Saapuvien asiakirjojen tietomallin yhdistämismääritysten määrittäminen
-Sähköiseen raportointiin sisältyy mallin yhdistämismääritysten suunnittelutoiminto, jolla käyttäjät voivat tehdä yhdistämismäärityksiä tiettyihin kohteisiin suunniteltuihin tietomalleihin. Tietomallien yhdistämismääritys voidaan esimerkiksi tehdä Dynamics 365 for Operationsin päivitettäviin tietokomponentteihin (tauluihin, tietoyksiköihin ja näkymiin). Dynamics 365 for Operationsin tiedot päivitetään yhdistämismääritysten perusteella suorituksen aikana tietomallin tiedoilla. Tietomalli täytetään sähköisen tietomallimuodon abstraktina tallennuksena saapuvasta sähköisestä asiakirjasta tuotavilla tiedoilla. Seuraavassa kuvassa on esimerkki tämän tyyppisestä tietomallin yhdistämismäärityksestä. Tässä esimerkissä maksutoimialueen tietomallin **NETS-yhdistämismäärityksen tuonti** -mallin yhdistämismäärityksellä tuetaan norjalaisen NETS-pankkimuodon tiliotteiden tuontia.
+Sähköiseen raportointiin sisältyy mallin yhdistämismääritysten suunnittelutoiminto, jolla käyttäjät voivat tehdä yhdistämismäärityksiä tiettyihin kohteisiin suunniteltuihin tietomalleihin. Tietomallien yhdistämismääritys voidaan esimerkiksi tehdä Finance and Operationsin päivitettäviin tietokomponentteihin (tauluihin, tietoyksiköihin ja näkymiin). Finance and Operationsin tiedot päivitetään yhdistämismääritysten perusteella suorituksen aikana tietomallin tiedoilla. Tietomalli täytetään sähköisen tietomallimuodon abstraktina tallennuksena saapuvasta sähköisestä asiakirjasta tuotavilla tiedoilla. Seuraavassa kuvassa on esimerkki tämän tyyppisestä tietomallin yhdistämismäärityksestä. Tässä esimerkissä maksutoimialueen tietomallin **NETS-yhdistämismäärityksen tuonti** -mallin yhdistämismäärityksellä tuetaan norjalaisen NETS-pankkimuodon tiliotteiden tuontia.
 
 [![NETS-tuontimallin yhdistämismäärityksen tuontiesimerkki](./media/ER-overview-08.png)](./media/ER-overview-08.png)
 
@@ -283,7 +284,7 @@ Voit luoda (johtaa) sähköisessä raportoinnissa uuden osan LCS:stä tuodun osa
 
 ### <a name="upgrading-a-format-selecting-a-new-version-of-base-format-rebase"></a>Muodon päivittäminen valitsemalla perusmuodon uusi versio (pohjustus)
 
-Voit ottaa sähköisessä raportoinnissa automaattisesti käyttöön viimeisimpään perusosaan versioon tehdyt muutokset nykyisessä johdetun osan luonnosversiossa. Tätä prosessia kutsutaan *pohjustamiseksi*. Esimerkiksi LCS:stä tuodun muodon uusimpaan versioon tehdyt lakisääteiset muutokset voidaan yhdistää automaattisesti tämän sähköisen asiakirjan muodon mukautettuun versioon. Muutoksia, joita ei voi yhdistetään automaattisesti, pidetään ristiriitoina. Nämä ristiriidat jätetään ratkaistavaksi manuaalisesti kyseisen osan suunnittelutyökaluun. Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin muodon päivitys ottamalla käyttöön sen perusversio** -tehtäväopas (osa **7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)** -liiketoimintaprosessia).
+Voit ottaa sähköisessä raportoinnissa automaattisesti käyttöön viimeisimpään perusosaan versioon tehdyt muutokset nykyisessä johdetun osan luonnosversiossa. Tätä prosessia kutsutaan *pohjustamiseksi*. Esimerkiksi LCS:stä tuodun muodon uusimpaan versioon tehdyt lakisääteiset muutokset voidaan yhdistää automaattisesti tämän sähköisen asiakirjan muodon mukautettuun versioon. Muutoksia, joita ei voi yhdistetään automaattisesti, pidetään ristiriitoina. Nämä ristiriidat jätetään ratkaistavaksi manuaalisesti kyseisen osan suunnittelutyökaluun. Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin muodon päivitys ottamalla käyttöön kyseisen muodon perusversio** -tehtäväopas (osa **7.5.5.3 Muutetun IT-palvelu- ja -ratkaisuosan hankinta ja kehittäminen (10683)** -liiketoimintaprosessia).
 
 ## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a>Finance and Operations -ratkaisussa toimitettavien sähköisten raportointimääritysten luettelo
 | Toimialakohtaiset tietomallimääritykset: otsikko | Toimialue                | Tietomalliriippuvainen muotomääritykset: otsikko | Kuvaus                                                        |

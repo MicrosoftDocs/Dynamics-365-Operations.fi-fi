@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 3c3c215dbc64c3b823ab8537b66f72d7d7fdf5c1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -94,6 +94,18 @@ Voit asettaa toimittajan pitoon eri tapahtumatyyppien kohdalla. Valittavissa ova
 -   **Ei koskaan** – Toimittajaa ei aseteta pitoon aktiivisuuden puutteen vuoksi.
 
 Kun asetat toimittajan pitoon, voit myös määrittää pidolle syyn ja päivämäärän, jona pitotila päättyy. Jos et määritä päättymispäivämäärää, toimittajan pitotila on voimassa toistaiseksi.
+
+Voit joukkopäivittää toimittajan pidossa-tilan tilaan **Kaikki** **Toimittajan inaktivointi** -sivulla valittujen ehtojen perusteella ja määrittää, miksi toimittaja on pidossa.
+
+Seuraavilla ehdoilla sisällytetään toimittajat, jotka ovat olleet kaudella passiivisia, sisällyttää tai sulkea pois toimittajat, jotka ovat työntekijöitä, ja sulkea pois toimittajat, joilla on lisäaikaa ennen seuraavaa pitoa.
+
+- Sovellus laskee **Toimittajan inaktivointi** -sivun **Pitojakso**-kenttään annettujen päivien perusteella viimeisen päivän, jolloin toimittajalla voi olla tehtäviä, jotta toimittaa ei pidettäisiä aktiivisena. Toisin sanoa kuluva päivä, josta on vähennetty annettujen päivien määrä. Jos toimittajalla on ainakin yksi lasku, jossa päivämäärä laskettua viimeisintä päivämäärää myöhäisempi, toimittaja jätetään pois inaktivoinnista. Tämä tarkistetaan myös, jos toimittajalla on maksuja kyseisen päivämäärän jälkeen, avoimia ostoehdotuksia, avoimia ostotilauksia, tarjouspyyntöjä tai vastauksia.
+- **Lisäaika ennen seuraavaa pitoa** -kentässä olevaa päivien määrää käytetään laskemaan lisäajan viimeinen päivä. Toisin sanoa kuluva päivä, josta on vähennetty antamasi päivät. Tämä koskee vain toimittajia, jotka on inaktivoitu aiemmin. Jos kyse on aiemmasta inaktivoinnista, sovellus varmistaa, onko toimittajalla muita inaktivointeja, ja tarkistaa, tapahtuiko viimeisin inaktivointi ennen lisäajan viimeistä päivää. Jos näin on, toimittaja sisällytetään inaktivointiprosessiin.
+- Parametri **Sisältää työntekijät** viittaa työntekijään linkitettyihin toimittajiin. Voit määrittää sen, jos haluat sisällyttää kyseiset työntekijät.
+
+Prosessi sulkee aina pois toimittajat, joiden arvo **Toimittajan pito** -kentässä on **Ei koskaan**.
+
+Tarkistukset läpäisevät toimittajat asetetaan pitoon, jolloin **Toimittajan pito** -kentän arvoksi tulee **Kaikki** ja **Syy** valinnalle. Toimittajalle luodaan tietue pitohistoriaan.
 
 ## <a name="vendor-invoice-account"></a>Laskutustoimittaja
 Jos usealla toimittajalla on sama laskutusosoite tai jos toimittajaa laskutetaan kolmannen osapuolen kautta, voit määrittää toimittajatietueelle erillisen laskutustilin. Laskutustili on tili, jota hyvitetään laskun summalla, kun toimittajalasku luodaan ostotilauksesta. Jos laskutustiliä ei luoda toimittajan tietueelle, laskutustilinä käytetään toimittajatiliä.
