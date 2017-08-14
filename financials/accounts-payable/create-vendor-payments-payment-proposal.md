@@ -3,26 +3,26 @@ title: Toimittajamaksujen luominen maksuehdotuksen avulla
 description: "Tässä aiheessa on yleiskatsaus maksuehdotusvaihtoehdoista. Artikkeli sisältää myös esimerkkejä maksuehdotusten toiminnasta. Maksuehdotuksia käytetään usein toimittajan maksujen luomiseen, koska kyselyn avulla on nopeaa valita toimittajan laskuja maksuun esimerkiksi eräpäivän ja käteisalennuksen mukaan."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b351ea58a25c763dcf90ff1c61e0e3b3cba6c34a
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: aac70abc25c45ef4479425cdb648f4450d5db2dc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -40,7 +40,7 @@ Maksuehdotuskysely sisältää useita välilehtiä, joista jokaisella on eri ase
 ## <a name="parameters"></a>Parametrit
 -   **Valitse laskut**: – Laskut, jotka sisältyvät **Aloituspäivämäärä**- ja **Lopetuspäivämäärä**-kentillä määritettyyn päivämääräväliin ovat valittavissa eräpäivän, käteisalennuksen päivämäärän tai molempien perusteella. Jos käytät käteisalennuksen päivämäärää, järjestelmä etsii ensin laskut, joiden käteisalennuksen päivämäärä on aloitus- ja lopetuspäivämäärien välillä. Järjestelmä määrittää, onko lasku oikeutettu käteisalennukseen käyttämällä istunnon päivämäärää varmistaakseen, että käteisalennuksen päivämäärä ei ole jo mennyt.
 -   **Aloituspäivämäärä** ja **Lopetuspäivämäärä** – Maksut, joiden eräpäivä tai käteisalennuksen päivämäärä ovat määritetyssä päivämäärävälissä valitaan maksuun.
--   **Maksupäivä** – Jos päivämäärä on määritetty, kaikki maksut luodaan tänä päivänä. **Aikaisin maksupäivä** -kenttä ohitetaan.
+-   **Maksupäivä** – Tätä käytetään vain, kun maksutavan **Kausi**-kentässä on valittu **Yhteensä**. Jos päivämäärä on määritetty, kaikki maksut luodaan tänä päivänä. **Aikaisin maksupäivä** -kenttä ohitetaan.
 -   **Aikaisin maksupäivä** – Kirjoita aikaisin maksupäivä. Esimerkiksi, **Aloituspäivämäärä**- ja **Lopetuspäivämäärä**-kentillä määritetään päivämääräväliksi 1-10. syyskuuta, aikaisimmaksi maksupäiväksi 5. syyskuuta. Tällöin kaikki laskut, joiden eräpäivä on välillä 1-5. syyskuuta maksetaan 5. syyskuuta. Kaikki laskut, joiden eräpäivä on välillä 5-10. syyskuuta maksetaan kunkin laskun eräpäivänä.
 -   **Summaraja** – Syötä suurin kokonaissumma kaikille maksuille.
 -   **Luo maksut ilman laskun esikatselua** – Jos tämän asetuksen arvoksi valitaan **Kyllä**, maksut luodaan heti **Toimittajan maksut** -sivulla. **Maksuehdotus**-sivu ohitetaan. Maksujen luonti on siis nopeampaa. Maksuja voi edelleen muokata **Toimittajan maksut** -sivulla. Vaihtoehtoisesti voit palata **Maksuehdotus**-sivulle **Muokkaa valitun maksun laskuja** -painikkeella.

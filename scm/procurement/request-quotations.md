@@ -1,6 +1,6 @@
 ---
 title: "Tarjouspyynnöt"
-description: "Tämä artikkeli sisältää yleistietoja tarjouspyynnöistä. Organisaatiot luovat tarjouspyyntöjä silloin, kun niiden on ostettava nimikkeitä tai palveluita, ja halutaan saada kilpailukykyisiä tarjouksia useilta toimittajilta. Tarjouspyynnössä pyydät toimittajilta hinnat ja toimitusaikoja nimikkeiden määrille, jotka määrität. Voit myös pyytää toimittajia määrittämään, liittyykö tarjoukseen satunnaisia kuluja, esimerkiksi lähetyskustannuksia, tai tarjoaako toimittaja alennuksia suurista tilauksista tai toimittajalaskun maksamisesta aikaisin."
+description: "Tämä ohjeaihe sisältää yleistietoja tarjouspyynnöistä. Organisaatiot luovat tarjouspyyntöjä silloin, kun niiden on ostettava nimikkeitä tai palveluita, ja halutaan saada kilpailukykyisiä tarjouksia useilta toimittajilta."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/20/2017
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d681f4c107a9dbc1ea8c5e1de38b2d45cf19bcfa
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 47e394c8642f502c698dbcd5506979b7cac0a830
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tämä artikkeli sisältää yleistietoja tarjouspyynnöistä. Organisaatiot luovat tarjouspyyntöjä silloin, kun niiden on ostettava nimikkeitä tai palveluita, ja halutaan saada kilpailukykyisiä tarjouksia useilta toimittajilta. Tarjouspyynnössä pyydät toimittajilta hinnat ja toimitusaikoja nimikkeiden määrille, jotka määrität. Voit myös pyytää toimittajia määrittämään, liittyykö tarjoukseen satunnaisia kuluja, esimerkiksi lähetyskustannuksia, tai tarjoaako toimittaja alennuksia suurista tilauksista tai toimittajalaskun maksamisesta aikaisin.
+Tämä ohjeaihe sisältää yleistietoja tarjouspyynnöistä. Organisaatiot luovat tarjouspyyntöjä silloin, kun niiden on ostettava nimikkeitä tai palveluita, ja halutaan saada kilpailukykyisiä tarjouksia useilta toimittajilta. Tarjouspyynnössä pyydät toimittajilta hinnat ja toimitusaikoja nimikkeiden määrille, jotka määrität. Voit myös pyytää toimittajia määrittämään, liittyykö tarjoukseen satunnaisia kuluja, esimerkiksi lähetyskustannuksia, tai tarjoaako toimittaja alennuksia suurista tilauksista tai toimittajalaskun maksamisesta aikaisin.
 
 Tarjouspyyntöprosessiin sisältyvät seuraavat tehtävät:
 
--   Tarjouspyynnön luominen ja lähettäminen yhdelle tai useammalle toimittajalle
--   Tarjouspyyntövastausten (tarjousten) vastaanottaminen ja rekisteröiminen
+-   Tarjouspyynnön luominen ja lähettäminen yhdelle tai useammalle toimittajalle.
+-   Tarjouspyyntövastausten (tarjousten) vastaanottaminen ja rekisteröiminen.
 -   Hyväksyttyjen tarjousten siirtäminen ostotilaukseen, ostosopimukseen tai ostoehdotukseen.
 
 Seuraavassa kuvassa on yhteenveto tarjouspyyntöprosessista.  
@@ -66,17 +66,17 @@ Tilojen järjestys tarjouspyyntöjen käsittelylle on seuraava:
 3.  **Vastaanotettu**
 4.  **Hyväksytty**/**Peruutettu**/**Hylätty**
 
-Tiloja on kuvattu tarkemmin tämän artikkelin seuraavissa osissa.
+Tiloja on kuvattu tarkemmin tämän ohjeaiheen seuraavissa osissa.
 
 ## <a name="setting-up-rfq-functionality"></a>Tarjouspyyntötoimintojen asetukset
 Ennen tarjouspyyntötapauksen luomista sinun täytyy määrittää tarjouspyynnön tiedot **Hankintaparametrit**-sivulla. Tarjouspyyntötapausta luodessasi voit määrittää oletusarvot, jotka kopioidaan tarjouspyyntöön. Voit määrittää seuraavat oletusarvot:
 
--   Uusien tarjouspyyntöjen ostotyyppi: **Ostotilaus** tai **Ostosopimus**
--   Vanhentumispäivämäärä ja -ajan asetukset
+-   Uusien tarjouspyyntöjen ostotyyppi: **Ostotilaus** tai **Ostosopimus**.
+-   Vanhentumispäivämäärän ja -ajan asetukset.
 -   Toimitustiedot ja maksuehdot.
--   Tarjouspyynnön vastaukseen sisällytettävät kentät
+-   Tarjouspyynnön vastaukseen sisällytettävät kentät.
 
-Nämä arvot voi ohittaa tietyissä tarjouspyyntötapauksissa. Myös muutosprosessi täytyy määrittää. Tämän määrityksen yhteydessä voit ottaa käyttöön kentän lukituksen. Kun kentän lukitus on käytössä ja hankinta-asiantuntija haluaa tehdä tarjouspyyntöön muutoksia, hänen on ensin valittava **Tarjous**-välilehden **Muutos**-osasta **Luo**. Kun muutokset on päivitetty tarjouspyyntöön, hankinta-asiantuntijan on suoritettava prosessi loppuun valitsemalla **Viimeistele**.** **Viimeistelytoiminto luo sähköpostiviestin, joka ilmoittaa toimittajille tarjouspyynnön muutoksista. Toimittajille lähetettävän sähköposti-ilmoituksen malli valitaan **Hankintaparametrit**-sivulta. Luotava malli voi sisältää seuraavia korvattavia tunnisteita:
+Nämä arvot voi ohittaa tietyissä tarjouspyyntötapauksissa. Myös muutosprosessi täytyy määrittää. Tämän määrityksen yhteydessä voit ottaa käyttöön kentän lukituksen. Kun kentän lukitus on käytössä ja hankinta-asiantuntija haluaa tehdä tarjouspyyntöön muutoksia, hänen on ensin valittava **Tarjous**-välilehden **Muutos**-osasta **Luo**. Kun tarjouspyyntö on päivitetty lisäyksellä, hankinta-asiantuntijan on viimeisteltävä prosessi valitsemalla **Viimeistele**. **Viimeistele**-toiminto luo sähköpostiviestin, joka ilmoittaa toimittajille muutetusta tarjouspyynnöstä. Toimittajille lähetettävän sähköposti-ilmoituksen malli valitaan **Hankintaparametrit**-sivulta. Luotava malli voi sisältää seuraavia korvattavia tunnisteita:
 
 -   %Tarjouksen palautuksen syy%
 -   %Muutoksen syy%
@@ -87,7 +87,10 @@ Nämä arvot voi ohittaa tietyissä tarjouspyyntötapauksissa. Myös muutosprose
 
 Jos haluat osoittaa tarjouspyynnön vastauksessa tarjouksen hylkäämisen tai hyväksymisen syyn syykoodeilla, määritä syykoodit **Toimittajan syyt** -sivulla.  
 
-Voit määrittää tulostettujen tai tallennettujen tarjouspyyntöasiakirjojen ulkoasun hankinnan **Lomakeasetukset**-sivulla.  
+Voit määrittää tulostettujen tai tallennettujen tarjouspyyntöasiakirjojen ulkoasun hankinnan **Lomakeasetukset**-sivulla. 
+
+**Huomautus:** Julkisen sektorin määrityksessä jo lähetettyyn tarjouspyyntöön tehdyt muutokset edellyttävät muutosprosessin käyttöä. Kun tarjouspyyntö on lähetetty, kentät on lukittu, joten edellä mainitun muutosprosessin käyttäminen valitsemalla **Luo** on pakollinen vaihe tehtäessä muutoksia tarjouspyyntöön.
+Tätä ohjataan kentän lukitusparametrilla **Lukitse tarjouspyynnöt, kun ne on lähetetty** kohdassa **Lukitse tarjouspyynnöt, kun ne on lähetetty**. Parametrin arvoksi määritetään **Kyllä**. Julkisen sektorin määrityksissä tämä on oletusasetus, jota ei voi muuttaa. Tämä tarkoittaa, että siinä missä muutosprosessi voidaan käsitellä manuaalisesti muissa kuin julkisen sektorin määrityksessä, julkisella sektorilla muutoksia käsitellään lukitsemalla kentät tarjouspyynnön lähettämisen jälkeen.
 
 Kun luot ostotilaukselle tarjouspyynnön ja lisäät tarjouspyyntöön varastonimikkeen, luodaan varastotapahtuma, jossa vastaanoton tila on **Tarjouksen vastaanotto**. Vain tarjouspyyntörivit, joilla on tämä tila, otetaan huomioon, kun lasket toimituksia pääsuunnitelmaa käyttämällä. Jos haluat, että pääsuunnitelma sisältää tarjouspyynnön rivejä odotettuna vastaanottona, tämä on määritettävä pääsuunnittelun asetuksissa.  
 
@@ -181,7 +184,7 @@ Kun hyväksyt tarjouspyynnön vastauksen, jonka tyyppi on **Ostoehdotus**, ostoe
 
 Voit lisätä vastaukseen syykoodin, joka selittää, miksi tarjous on hyväksytty tai hylätty.  
 
-Voit hyväksyä joitakin tarjouksen rivejä ja hylätä muut. Voit myös hyväksyä rivejä eri toimittajilta. Huomaa kuitenkin, että jos hyväksyt joitakin rivejä, näkyviin tulee kehote, jossa kysytään, haluatko hylätä kaikki muut rivit. Jos siis haluat hyväksyä muitakin rivejä, valitse **Peruuta**, kun kehote tulee näyttöön.  
+Voit hyväksyä joitakin tarjouksen rivejä ja hylätä muut. Voit myös hyväksyä rivejä eri toimittajilta. Huomaa, että jos hyväksyt joitakin rivejä, näkyviin tulee kehote, jossa kysytään, haluatko hylätä kaikki muut rivit. Jos siis haluat hyväksyä muitakin rivejä, valitse **Peruuta**, kun kehote tulee näyttöön.  
 
 Seuraavassa taulukossa näkyy, miten tarjouspyynnön tila muuttuu, kun hyväksyt ja hylkäät toimittajien tarjouksia.
 

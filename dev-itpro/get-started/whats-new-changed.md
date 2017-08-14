@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: a65de22d01d15510c3f2cb792b86e6a88260bed9
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2044bd5a3c858fb099fa7f612ede9963acc51efb
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -34,9 +34,10 @@ Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Micr
 
 Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä koskeva päivitysprosessi](../migration-upgrade/upgrade-latest-update.md).
 
-## <a name="application-releases"></a>Sovelluksen versiot
+> [!NOTE]
+> Dynamics 365 for Operations (paikallinen) ollaan nimeämässä uudelleen. Dynamics 365 for Operations (paikallinen) -viittauksia on viestinnässä ja käyttöoikeusoppaissa. Tuotetta käyttöönotettaessa näkyy nimi Dynamics 365 for Finance and Operations, Enterprise edition. Molemmat nimet viittaavat samaan tuotteeseen.
 
-Lisätietoja uusista mobiilityötiloista ja Power BI -sisällöstä on kohdassa [Dynamics 365 for Finance and Operations -mobiilisovellukselle julkaistut uudet mobiilityötilat](../mobile-apps/mobile-workspaces-released.md) ja [Dynamics 365 for Finance and Operations -ohjelmalle julkaistu Power BI -sisältö](../analytics/power-bi-home-page.md)
+## <a name="application-releases"></a>Sovelluksen versiot
 
 <table>
 <colgroup>
@@ -59,7 +60,7 @@ Lisätietoja uusista mobiilityötiloista ja Power BI -sisällöstä on kohdassa 
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Heinäkuun 2017 päivitys</td>
-<td>X</td>
+<td>7.2.11792.56024</td>
 <td>2017. kesäkuuta</td>
 <td><a href="whats-new-application-July-2017-update.md">Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 uudet ja muuttuneet ominaisuudet</a></td>
 </tr>
@@ -110,7 +111,7 @@ Lisätietoja uusista mobiilityötiloista ja Power BI -sisällöstä on kohdassa 
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Ympäristöpäivitys 8</td>
-<td>X</td>
+<td>7.0.4565.16212</td>
 <td>2017. kesäkuuta</td>
 <td><a href="whats-new-platform-update-8.md">Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin ympäristön päivityksen 8 (heinäkuu 2017) uudet ja muuttuneet ominaisuudet</a></td>
 </tr>

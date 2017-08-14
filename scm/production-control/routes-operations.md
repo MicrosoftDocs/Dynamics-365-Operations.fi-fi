@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 61548f2e308781e8329ca3cd26c3e6502d2f92c9
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 017985645e0f77e7f269fce2932c0ec0f6eaaa1c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -45,7 +45,7 @@ Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaih
 -   **Reititysversio** – Reititysversio määrittää reitityksen, jota käytetään tuotteen tai tuotevariantin tuottamisessa. Reititysversio mahdollistaa reititysten käyttämisen uudelleen tuotteissa tai reitityksen muuttamisen ajan kuluessa. Reititysversiot mahdollistavat myös eri reititysten käyttämisen saman tuotteen tuottamisessa. Tällöin käytettävä reititys riippuu eri tekijöistä, kuten sijainnista ja tuotettavasta määrästä.
 
 ## <a name="routes"></a>Reititykset
-Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa käytettävien työvaiheiden järjestyksen. Jokaiselle työvaiheelle määritetään työvaihenumero ja seuraava työvaihe. Työvaiheiden järjestys muodostaa reittiverkoston, joka voidaan esittää suunnatussa kaaviossa, jolla on vähintään yksi aloituspiste ja yksi päätepiste. Dynamics 365 for Finance and Operations -ohjelmassa reititykset erotetaan toisistaan rakennetyypin perusteella. Reititystyypit ovat yksinkertainen reititys ja reittiverkosto. Tuotannonohjauksen parametrien avulla voi määrittää, ovatko käytössä ainoastaan yksinkertaiset reititykset vai myös monimutkaisemmat reittiverkostot.
+Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa käytettävien työvaiheiden järjestyksen. Jokaiselle työvaiheelle määritetään työvaihenumero ja seuraava työvaihe. Työvaiheiden järjestys muodostaa reittiverkoston, joka voidaan esittää suunnatussa kaaviossa, jolla on vähintään yksi aloituspiste ja yksi päätepiste. Finance and Operationsissa reititykset erotetaan toisistaan rakennetyypin perusteella. Reititystyypit ovat yksinkertainen reititys ja reittiverkosto. Tuotannonohjauksen parametrien avulla voi määrittää, ovatko käytössä ainoastaan yksinkertaiset reititykset vai myös monimutkaisemmat reittiverkostot.
 
 ### <a name="simple-routes"></a>Yksinkertaiset reititykset
 
@@ -87,8 +87,8 @@ Kukin reititys voidaan hyväksyä erikseen tai jättää hyväksymättä. Huomaa
 
 Jos ylläpidät lokia, johon tallennetaan kunkin reitityksen hyväksyjä, voit vaatia reitityksen hyväksynnästä sähköiset allekirjoitukset. Käyttäjien on tällöin vahvistettava henkilöllisyytensä [sähköisen allekirjoituksen](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview) avulla.
 
-## <a name="operations"></a>Työvaiheet
-Työvaihe on tuotantoprosessin vaihe. Dynamics 365 for Finance and Operations -ohjelmassa jokaiselle työvaiheelle annetaan tunnus ja yksinkertainen kuvaus. Seuraavissa taulukoissa esitellään tyypilliset esimerkit konepajan työvaiheista.
+## <a name="operations"></a>Operations
+Työvaihe on tuotantoprosessin vaihe. Finance and Operationsissa jokaiselle työvaiheelle annetaan tunnus ja yksinkertainen kuvaus. Seuraavissa taulukoissa esitellään tyypilliset esimerkit konepajan työvaiheista.
 
 | Työvaihe  | kuvaus        |
 |------------|--------------------|
@@ -109,7 +109,7 @@ Työvaiheen seuraavia operationaalisia ominaisuuksia ylläpidetään työvaihesu
 -   Resurssivaatimukset
 -   Huomautukset ja ohjeet
 
-Voit määrittää useita työvaihesuhteita samalle työvaiheelle. Kukin työvaihesuhde koskee kuitenkin yhtä tiettyä työvaihetta. Se tallentaa nimikeryhmään liittyvän reitityksen, vapautetun tuotteen tai vapautettujen tuotteiden joukon ominaisuudet. Tämän vuoksi samaa työvaihetta voidaan käyttää useissa reitityksissä, joilla on erilaiset operationaaliset ominaisuudet. Lisäksi päätietojen ylläpitäminen on helpompaa, jos käytössä on vakiotyövaiheet, joilla on samat operationaaliset ominaisuudet riippumatta käytettävästä reitityksestä ja valmistettavasta tuotteesta. Työvaihesuhteen vaikutusalue määritetään **Nimikekoodi**, **Item relation**-, **Reitityskoodi**- ja **Reitityssuhde**-ominaisuuksien avulla seuraavassa taulukossa esitetyllä tavalla.
+Voit määrittää useita työvaihesuhteita samalle työvaiheelle. Kukin työvaihesuhde koskee kuitenkin yhtä tiettyä työvaihetta. Se tallentaa nimikeryhmään liittyvän reitityksen, vapautetun tuotteen tai vapautettujen tuotteiden joukon ominaisuudet. Tämän vuoksi samaa työvaihetta voidaan käyttää useissa reitityksissä, joilla on erilaiset operationaaliset ominaisuudet. Lisäksi päätietojen ylläpitäminen on helpompaa, jos käytössä on vakiotyövaiheet, joilla on samat operationaaliset ominaisuudet riippumatta käytettävästä reitityksestä ja valmistettavasta tuotteesta. Työvaihesuhteen vaikutusalue määritetään **Nimikekoodi**, **Nimikesuhde**-, **Reitityskoodi**- ja **Reitityssuhde**-ominaisuuksien avulla seuraavassa taulukossa esitetyllä tavalla.
 
 | Nimikekoodi | Nimikkeen suhde         | Reitityskoodi | Reitityssuhde   | Työvaihesuhteen vaikutusalue                                                                                                                                                                                                                                                                              |
 |-----------|-----------------------|------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -128,7 +128,7 @@ Työvaihesuhteiden avulla reititysten määrittäminen on joustavaa. Oletusomina
 
 ### <a name="modifying-product-specific-routes"></a>Tuotekohtaisten reititysten muokkaaminen
 
-Kun avaat **Reititys**-sivun **Vapautetun tuotteen tiedot** -sivulla, sivulla näkyvät valittuun vapautettuun tuotteeseen liittyvät reititysversiot. Tässä kontekstissa Dynamics 365 for Finance and Operations näyttää jokaisen työvaiheen operationaaliset ominaisuudet reititysversiota parhaiten vastaavasta työvaihesuhteesta. Työvaiheluettelo sisältää työvaihesuhteen **Nimikekoodi**- ja **Reitityskoodi**-ominaisuudet. Tämän vuoksi määritetään, mikä työvaihesuhde näytetään.  
+Kun avaat **Reititys**-sivun **Vapautetun tuotteen tiedot** -sivulla, sivulla näkyvät valittuun vapautettuun tuotteeseen liittyvät reititysversiot. Tässä kontekstissa Finance and Operations näyttää jokaisen työvaiheen operationaaliset ominaisuudet reititysversiota parhaiten vastaavasta työvaihesuhteesta. Työvaiheluettelo sisältää työvaihesuhteen **Nimikekoodi**- ja **Reitityskoodi**-ominaisuudet. Tämän vuoksi määritetään, mikä työvaihesuhde näytetään.  
 
 **Reititys**-sivulla voi muokata työvaiheen operationaalisia ominaisuuksia, kuten ajoaika ja kustannusluokat. Muutokset tallennetaan työvaihesuhteeseen, joka liittyy reititykseen ja vapautettuun tuotteeseen, johon nykyisessä reititysversiossa viitataan. Jos näytettävä työvaihesuhde ei liity reititykseen ja vapautettuun tuotteeseen, järjestelmä luo työvaihesuhteesta kopion ennen muutosten tallentamista. Tämä kopio *on* liittyy reititykseen ja vapautettuun tuotteeseen. Tämän vuoksi muutokset eivät vaikuta muihin reitityksiin tai vapautettuihin tuotteisiin. Voit varmistaa **Reititys**-sivulla muokattavan työvaihesuhteen **Nimikekoodi**- ja **Reitityskoodi**-kentän avulla.  
 
@@ -150,9 +150,9 @@ Jos yrityksesi käyttää vakiotyövaiheita ja toimintaparametrit ovat samat kai
 
 ### <a name="applying-operation-relations"></a>Työvaihesuhteiden käyttäminen
 
-Joissakin tapauksissa Dynamics 365 for Finance and Operations -ohjelman on löydettävä työvaiheen operationaaliset ominaisuudet. Jos esimerkiksi luodaan ostotilaus, kunkin työvaiheen operationaaliset ominaisuudet on kopioitava työvaihesuhteista tuotantoreititykseen. Näissä tilanteissa Dynamics 365 for Finance and Operations hakee liittyviä työvaihesuhteita aina yksityiskohtaisimmista yhdistelmistä vähemmän yksityiskohtaisiin yhdistelmiin.  
+Joissakin tapauksissa Finance and Operationsin on löydettävä työvaiheen toiminnalliset ominaisuudet. Jos esimerkiksi luodaan ostotilaus, kunkin työvaiheen operationaaliset ominaisuudet on kopioitava työvaihesuhteista tuotantoreititykseen. Näissä tilanteissa Dynamics 365 for Finance and Operations hakee liittyviä työvaihesuhteita aina yksityiskohtaisimmista yhdistelmistä vähemmän yksityiskohtaisiin yhdistelmiin.  
 
-Kun Dynamics 365 for Finance and Operations hakee vapautetulle tuotteelle soveltuvinta työvaihesuhdetta, työvaihesuhdetta, joka vastaa vapautetun tuotteen nimikkeen tunnusta, pidetään ensisijaisena verrattuna työsuhteeseen, joka vastaa nimikeryhmän tunnusta. Vastaavasti työvaihesuhdetta, joka vastaa nimikeryhmän tunnusta, pidetään ensisijaisena verrattuna oletustyövaihesuhteeseen. Haku tehdään seuraavassa järjestyksessä:
+Kun Finance and Operations hakee vapautetulle tuotteelle soveltuvinta työvaihesuhdetta, työvaihesuhdetta, joka vastaa vapautetun tuotteen nimikkeen tunnusta, pidetään ensisijaisena verrattuna työsuhteeseen, joka vastaa nimikeryhmän tunnusta. Vastaavasti työvaihesuhdetta, joka vastaa nimikeryhmän tunnusta, pidetään ensisijaisena verrattuna oletustyövaihesuhteeseen. Haku tehdään seuraavassa järjestyksessä:
 
 1.  **Nimikekoodi**=**taulukko** ja **nimikesuhde**=&lt;nimikkeen tunnus&gt;
 2.  **Nimikekoodi**=**ryhmä** ja **nimikesuhde**=&lt;nimikeryhmän tunnus&gt;
@@ -199,7 +199,7 @@ Liiketoimintatarpeiden perusteella voit mahdollisesti vähentää työtä, joka 
 
 ### <a name="making-routes-independent-of-resources"></a>Reittien määrittäminen resursseista riippumattomiksi
 
-Useissa järjestelmissä operatiivinen resurssi tai resurssiryhmä, joka suorittaa työvaiheen, on määritettävä reitityksessä. Dynamics 365 for Finance and Operations -ohjelmassa voit kuitenkin määrittää vaatimusjoukon, joka operatiivisten resurssien on täytettävä, jotta niitä voidaan käyttää työvaiheessa. Tämän vuoksi tiettyä operatiivista resurssia tai resurssiryhmää, jota tullaan käyttämään, ei tarvitse määrittää ennen työvaiheen ajoittamista. Tämä toiminto on erityisen hyödyllinen silloin, kun useat työntekijät tai koneet voivat suorittaa saman työvaiheen.  
+Useissa järjestelmissä operatiivinen resurssi tai resurssiryhmä, joka suorittaa työvaiheen, on määritettävä reitityksessä. Finance and Operationsissa voit kuitenkin määrittää vaatimusjoukon, joka operatiivisten resurssien on täytettävä, jotta niitä voidaan käyttää työvaiheessa. Tämän vuoksi tiettyä operatiivista resurssia tai resurssiryhmää, jota tullaan käyttämään, ei tarvitse määrittää ennen työvaiheen ajoittamista. Tämä toiminto on erityisen hyödyllinen silloin, kun useat työntekijät tai koneet voivat suorittaa saman työvaiheen.  
 
 Voit määrittää esimerkiksi, että työvaihe vaatii operatiivisen resurssin, jonka tyyppi on **Kone** ja jonka **leimauskapasiteetti** on 20 tonnia. Ajoitusmoduuli ratkaisee nämä vaatimukset tietyn operatiivisen resurssin tai resurssiryhmän osalta, kun työvaihe ajoitetaan. Joustavuus paranee, koska voit määrittää nämä vaatimukset sen sijaan, että työvaihe olisi sidottava tiettyyn koneeseen. Lisäksi ylläpito on helpompaa, kun resursseja siirretään tai uusia resursseja lisätään.  
 

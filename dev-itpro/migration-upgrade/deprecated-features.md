@@ -3,25 +3,25 @@ title: Vanhentuneet ominaisuudet
 description: "Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan."
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Platform
+ms.reviewer: sericks
+ms.search.scope: Operations, Platform, UnifiedOperations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 6
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
-ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 18274d9ca390ee3d6d463b3a6d67ddc3a39294f8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/16/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -29,9 +29,10 @@ ms.lasthandoff: 06/16/2017
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan.
+Tässä ohjeaiheessa käsitellään ominaisuuksia, joka on poistettu Microsoft Dynamics 365 for Finance and Operations Enterprise Editionissa tai joiden poistoa suunnitellaan.
 
-## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivityksessä poistetut ominaisuudet
+## <a name="features-that-have-been-deprecated-for-all-deployment-types-of-the-july-2017-update-with-platform-update-8"></a>Ominaisuudet, jotka ovat vanhentuneet kaikissa ympäristöpäivityksen 8 heinäkuun 2017 päivityksen käyttöönottotyypeissä
+Tässä luettelossa on ominaisuuksia, jotka ovat vanhentuneet sekä pilvipalvelujen että paikallisissa käyttöönotoissa.
 
 ### <a name="warehouse-mobile-devices-portal"></a>Varaston mobiililaiteportaali
 
@@ -40,7 +41,7 @@ Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu pai
 |                                  |                                                 |
 |----------------------------------|-------------------------------------------------|
 | **Poiston syy**       | Sama toiminto.                        |
-| **Onko toinen ominaisuus korvannut?** | Kyllä. Finance and Operations – varastointi on korvannut tämän ominaisuuden. Lisätietoja asennuksesta ja ennakkoedellytyksistä on ohjeaiheessa [Microsoft Dynamics 365 for Finance and Operationsin varastointisovelluksen asentaminen ja määrittäminen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Onko toinen ominaisuus korvannut?** | Kyllä. Finance and Operations – varastointi on korvannut tämän ominaisuuden. Lisätietoja asennuksesta ja ennakkoedellytyksistä on ohjeaiheessa [Microsoft Dynamics 365 for Finance and Operationsin varastointisovelluksen asentaminen ja määrittäminen](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Vaikutuksen alaiset moduulit**             | Varaston hallinta, kuljetusten hallinta |
 
 ### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Pankkitilin täsmäytyksen lisätoimintojen manuaalisen täsmäytyksen täsmäytyssääntö
@@ -61,7 +62,29 @@ Windows 8 -tablettisovelluksessa oli kulujen vienti- ja hyväksymistoiminnot.
 |----------------------------------|------------------------------------------------------------------------------------------|
 | **Poiston syy**       | Finance and Operationsia voi käyttää tableteissa. Tablettisovellusta ei enää tarvita. |
 | **Onko toinen ominaisuus korvannut?** | Nro                                                                                      |
-| **Vaikutuksen alaiset moduulit**             | Matkalaskut                                                                       |
+| **Vaikutuksen alaiset moduulit**             | Kulujen hallinta                                                                       |
+
+## <a name="features-that-have-been-deprecated-for-on-premises-deployments-of-the-july-2017-update-with-platform-update-8"></a>Ominaisuudet, jotka ovat vanhentuneet ympäristöpäivityksen 8 heinäkuun 2017 päivityksen paikallisissa käyttöönotoissa
+
+### <a name="ssrs-report-viewer-control"></a>SSRS-raportin katseluohjelman ohjausobjekti
+
+Tällä ominaisuudella käytettiin HTML-muotoisia Finance and Operations -verkkoasiakasohjelmassa.
+
+|                                  |  |
+|----------------------------------|--|
+| **Poiston syy**       | SQL Reporting Services (SSRS) ei tue raportin katseluohjelman ohjausobjektia, joka on yhteensopiva paikallisen verkkoasiakasohjelman kanssa.      |
+| **Onko toinen ominaisuus korvannut?** | Paikallinen palvelu hahmontaa raportit PDF-tiedostoina. Ota sovellusraporttien upotetut porautumislinkit käyttöön käyttämällä laajennuksia. |
+| **Vaikutuksen alaiset moduulit**             | Kaikki    |
+
+### <a name="document-routing-agent"></a>Asiakirjareitityksen agentti
+
+Asiakirjareitityksen agentti -asiakasohjelmaa käytetään palveluyhdyskäytävänä muodostamaan yhteys pilvestä toimialuetodennettuihin verkkotulostimiin.
+
+|                                  |  |
+|----------------------------------|--|
+| **Poiston syy**       | Paikallisia käyttöönottoja isännöidään toimialuetodennetuista palvelimista. Tällä tavoin verkkotulostimia voi käyttää suoraan suojatulla yhteydellä. |
+| **Onko toinen ominaisuus korvannut?** | Tämä osa ei ole välttämätön paikallisissa käyttöönotoissa.|
+| **Vaikutuksen alaiset moduulit**             | Ei mitään               |
 
 
 <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Ominaisuudet, jotka on poistettu Dynamics 365 for Operations -versiosta 1611 ympäristöpäivityksessä 3
@@ -488,11 +511,20 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Mic
 
 Tieto-osiot erottavat Microsoft Dynamics AX:n tietokannan tiedot loogisesti.
 
-|                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   |   |
+|---|---|
 | Poiston syy       | Tieto-osiot otettiin käyttöön Microsoft Dynamics AX 2012 R2:ssa tietojen eristämistä varten. Yleisessä skenaariossa yrityksellä on tytäryhtiöitä mutta tytäryhtiön tiedot eivät saisi olla toisen tytäryhtiön nähtävissä, vaikka kumpikin tytäryhtiö on saman IT-osaston alaisuudessa. Ohjelmassa oli kuitenkin otettava käyttöön ylimääräisiä komentosarjoja ja hallintakustannuksia, jotta uusia osioita voitaisiin luoda, tiedot voitaisiin lisätä ja osiotiedot voitaisiin varmuuskopioida. Pilvipalvelussa, jossa meillä on käyttöympäristövuokrattuja (PaaS-palvelu) tietokantapalveluja (Microsoft Azuren SQL-tietokanta), tietokantaa on tehokkaampaa käyttää erityssäilönä kuin tehdä eristys ohjelmassa. Riippumatta siitä, tarvitaanko tietojen osiointia tytäryhtiöitä tai useita vuokraajia varten tai koon vuoksi, mielestämme skenaariot voidaan käsitellä paremmin useissa tietokannoissa tai Dynamics AX:n esiintymissä. |
-| Onko toinen ominaisuus korvannut? | Tieto-osiot korvataan tulevissa versioissa tukemalla useita tietokantoja tai Dynamics AX:n esiintymiä.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Onko toinen ominaisuus korvannut? | Tieto-osiot korvataan tulevissa versioissa tukemalla useita tietokantoja tai Dynamics AX:n esiintymiä.    |
+| Vaikutuksen alaiset moduulit             | Kaikki  |
+
+### <a name="database-and-file-share-storage-for-attachments"></a>Liitteiden tallennus tietokantaa ja jaettuun tiedostoresurssiin
+Microsoft Dynamics AX 2012:ssa liitteet voitiin tallentaa tietokantaan ja jaettuihin tiedostoresursseihin. Kumpaakaan asetusta ei tueta enää.
+
+|                              |                                        |
+|------------------------------|----------------------------------------|
+| Poiston syy       | Tallennusta jaettuna tiedostoresurssina ei enää tueta, koska pilvipalveluympäristöt eivät voi viestiä paikallisten jaettujen tiedostoresurssien kanssa. Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä. Azure Blob -tallennus vastaa tietokantatallennusta, sillä asiakirjoja voi käyttää vain Dynamics 365 for Finance and Operations -asiakasohjelman lomakkeiden kautta. Lisäksi tällä tavoin saadaan tallennustila, joka ei heikennä tietokannan toimintaa. Blob-tallennus on asiakirjanhallinnan oletustallennusmekanismi ja toimii välittömästi. |
+| Onko toinen ominaisuus korvannut? | Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä.       |
+| Vaikutuksen alaiset moduulit             | Kaikki                   |
 
 ### <a name="delimitation"></a>Rajoitus
 
@@ -525,7 +557,7 @@ Dynamics AX 2012 R3 -versiossa Retail Modern POS -sovellus voi muodostaa suoran 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Poiston syy       | Käytössä on nyt yleinen toiminto lokalisoidun toiminnon sijaan.                                                                                                                                                                 |
-| Onko toinen ominaisuus korvannut? | Kyllä. Pankkitilin täsmäytyksen lisätoiminnot on korvannut tämän toiminnon. Lisäksi camt.053 ISO20022 -tiliotteen tuonnin käyttöönottoa suunnitellaan kirjauskansioon seuraavassa Dynamics AX -päivityksessä. |
+| Onko toinen ominaisuus korvannut? | Kyllä. Pankkitilin täsmäytyksen lisätoiminnot on korvannut tämän toiminnon. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                                                                   |
 
 ### <a name="ebilanz-xbrl-for-germany"></a>eBilanz (XBRL Saksassa)
@@ -577,7 +609,7 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Poiston syy       | Muotoa ei enää käytetä Saksassa, sillä SEPA (yhtenäinen euromaksualue) -toiminto on korvannut sen.                                                                                                                                                                 |
-| Onko toinen ominaisuus korvannut? | Kyllä. SEPA-maksun vienti ja pankkitilin täsmäytyksen lisätoiminnot tiliotteiden tuomiseen on korvannut tämän toiminnon. Lisäksi camt.053 ISO20022 -tiliotteen tuonnin käyttöönottoa suunnitellaan kirjauskansioon seuraavassa Dynamics AX -päivityksessä. |
+| Onko toinen ominaisuus korvannut? | Kyllä. SEPA-maksun vienti ja pankkitilin täsmäytyksen lisätoiminnot tiliotteiden tuomiseen on korvannut tämän toiminnon. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                                                                                                                            |
 
 ### <a name="german-dtazv-payment-format"></a>Saksan DTAZV-maksumuoto
@@ -593,7 +625,7 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Poiston syy       | Käytössä on nyt yleinen toiminto lokalisoidun toiminnon sijaan.                                                                                                                                                                 |
-| Onko toinen ominaisuus korvannut? | Kyllä. Pankkitilin täsmäytyksen lisätoiminnot on korvannut tämän toiminnon. Lisäksi camt.053 ISO20022 -tiliotteen tuonnin käyttöönottoa suunnitellaan kirjauskansioon seuraavassa Dynamics AX -päivityksessä. |
+| Onko toinen ominaisuus korvannut? | Kyllä. Pankkitilin täsmäytyksen lisätoiminnot on korvannut tämän toiminnon. |
 | Vaikutuksen alaiset moduulit             | Kaikki                                                                                                                                                                                                                                   |
 
 ### <a name="german-xml-eu-sales-list"></a>Saksan XML-muotoinen EU-myyntiluettelo

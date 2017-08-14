@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: fa629b4b8f7fcbd15ee89bc66cbc0bd7ca45215c
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: d549f38b9278eed222a1318c51962b248149c569
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -78,7 +78,7 @@ Tuotannon varastoinnin kirjauskansiot toimivat kuten nimikkeen saapumisen kirjau
 
 ### <a name="counting"></a>Inventointi
 
-Voit korjata inventointikirjauskansioiden avulla nimikkeille tai nimikeryhmille rekisteröidyn käytettävissä olevan varaston ja kirjata sitten todellisen fyysisen määrän. Tällä tavoin tehdä oikaisut, joita tarvitaan erojen täsmäyttämiseen. Voit liittää inventointikäytännöt inventointiryhmiin, mikä auttaa ryhmittämään erilaisia ominaisuuksia sisältävät nimikkeet, jotta ne voidaan sisällyttää inventointikirjauskansioon. Voit esimerkiksi määrittää inventointiryhmät inventoimaan tietyn tiheyden nimikkeet tai inventoimaan nimikkeet, kun varasto laskee tietylle tasolle. Lisätietoja inventointiryhmien määrittämisestä on artikkelissa [Varaston inventointiprosessien määrittäminen (tehtäväopas)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Voit korjata inventointikirjauskansioiden avulla nimikkeille tai nimikeryhmille rekisteröidyn käytettävissä olevan varaston ja kirjata sitten todellisen fyysisen määrän. Tällä tavoin tehdä oikaisut, joita tarvitaan erojen täsmäyttämiseen. Voit liittää inventointikäytännöt inventointiryhmiin, mikä auttaa ryhmittämään erilaisia ominaisuuksia sisältävät nimikkeet, jotta ne voidaan sisällyttää inventointikirjauskansioon. Voit esimerkiksi määrittää inventointiryhmät inventoimaan tietyn tiheyden nimikkeet tai inventoimaan nimikkeet, kun varasto laskee tietylle tasolle. Lisätietoja inventointiryhmien määrittämisestä on artikkelissa [Varaston inventointiprosessien määrittäminen (tehtäväopas)](/dynamics365/unified-operations/supply-chain/inventory/tasks/define-inventory-counting-processes).
 
 ### <a name="tag-counting"></a>Inventointi tunnisteiden perusteella
 

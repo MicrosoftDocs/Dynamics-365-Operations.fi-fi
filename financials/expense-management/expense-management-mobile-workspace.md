@@ -1,58 +1,72 @@
 ---
 title: "Kulujenhallinnan mobiilityötila"
-description: "Tässä ohjeaiheessa on tietoja kulujenhallinnan mobiilityötilasta, joka on saatavilla Microsoft Dynamics 365 for Finance and Operationsin mobiilisovelluksessa. Työtilan avulla käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Mobiilityötilassa käyttäjät voivat myös luoda kulurivejä nopeasti käyttämällä liitettyä kuittia."
-author: annbe
+description: "Tässä ohjeaiheessa on tietoja kulujen hallinnan mobiilityötilasta. Työtilan avulla käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Käyttäjät voivat myös luoda nopeasti kulurivin liitteenä olevan kuitin avulla sekä luoda ja hallita omia kuluraporttejaan."
+author: KimANelson
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-audience: end user, IT Pro
-ms.reviewer: annbe
-ms.search.scope: Operations
+audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 274023
 ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
-ms.author: annbe
+ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0e52d1c5dde7f79c4a8ac5ac2d9c3b25bba9c2cd
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: 2dd3db95eb741c37dd8a50c397cb4c9494599250
+ms.openlocfilehash: 993586b1fb46c21d2b68a6060ab897c8ccc76a6c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="expense-management-mobile-workspace"></a>Kulujenhallinnan mobiilityötila
+# <a name="expense-management-mobile-workspace"></a>Kulujen hallinnan mobiilityötila
 
 [!include[banner](../includes/banner.md)]
 
+Tässä ohjeaiheessa on tietoja **Kulujen hallinta** -mobiilityötilasta. Työtilan avulla käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Käyttäjät voivat myös luoda nopeasti kulurivin liitteenä olevan kuitin avulla sekä luoda ja hallita omia kuluraporttejaan. Hyväksyjät voivat myös tarkastella heille määritettyjä kuluraportteja **Kulujen hallinta** -mobiilityötilassa sekä joko hyväksyä tai hylätä nämä kuluraportit.
 
-Tässä ohjeaiheessa on tietoja kulujenhallinnan mobiilityötilasta, joka on saatavilla Microsoft Dynamics 365 for Finance and Operationsin mobiilisovelluksessa. Työtilan avulla käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Mobiilityötilassa käyttäjät voivat myös luoda kulurivejä nopeasti käyttämällä liitettyä kuittia.
 
-<a name="overview-of-the-expense-management-mobile-workspace"></a>Yhteenveto Kulujenhallinnan mobiilityötilasta
----------------------------------------------------
+Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
 
-Moni organisaatio edellyttää, että työntekijän hyvitettäväksi lähetettäviin matka- tai yritystoimintaan liittyvään kuluraporttiin liitetään kuitti. **Kulujenhallinnan** mobiilityötilan avulla käyttäjät voivat nopeasti luoda uusia kulurivejä valitsemassaan mobiililaitteessa liittämällä kuitista valokuvakopion. Käyttäjät voivat myös ottaa kuvan kuitista ja liittää sen kuluraporttiin myöhemmin. **Kulujenhallinnan** mobiilityötilan avulla käyttäjä voi siis:
 
--   ottaa kuvan kuitista ja ladata sen Microsoft Dynamics for Finance and Operationsiin. Käyttäjän voi sitten liittää kuvan kuluraporttiin myöhemmin.
--   Ladata tiedoston siepattuna kuittina. Käyttäjän voi sitten liittää tiedoston kuluraporttiin myöhemmin.
--   Luoda uuden kulurivin liitetystä kuitista. Käyttäjä voi sitten lisätä rivinimikkeen kuluraporttiin myöhemmin, ja lähettää sen hyväksyntää ja hyvitystä varten.
+## <a name="overview"></a>Yleiskuvaus
 
-Ohjeen jäljellä olevat osat käsittelevät **Kulujenhallinnan** mobiilityötilan käyttöönottoa ja käyttöä.
+Moni organisaatio edellyttää, että työntekijän hyvitettäväksi lähetettäviin matka- tai yritystoimintaan liittyvään kuluraporttiin liitetään kuitti. **Kulujenhallinnan** mobiilityötilan avulla käyttäjät voivat nopeasti luoda uusia kulurivejä valitsemassaan mobiililaitteessa liittämällä kuitista valokuvakopion. Käyttäjät voivat myös ottaa kuvan kuitista ja liittää sen kuluraporttiin myöhemmin. Työntekijät voivat myös luoda ja hallita kuluraporttejaan sekä lähettää ne sitten hyväksyttäviksi ja hyvitettäviksi mobiililaitteestaan.
+
+
+Käyttäjät voivat tehdä **Kulujen hallinta** -mobiilityötilassa seuraavat tehtävät:
+
+- Ottaa kuvan kuitista ja ladata sen Microsoft Dynamics for Finance and Operations, Enterprise Editioniin. Voit sitten liittää kuvan kuluraporttiin myöhemmin.
+- Ladata tiedoston siepattuna kuittina. Voit sitten liittää tiedostoon kuluraporttiin myöhemmin.
+- Luoda uuden kulurivin liitetystä kuitista. Voit sitten lisätä rivinimikkeen kuluraporttiin myöhemmin, ja lähettää sen hyväksyntää ja hyvitystä varten.
+
+Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys, voit käyttää myös seuraavia ominaisuuksia:
+
+- Luo uusi kuluraportti.
+- Liitä luottokorttitapahtumat ja muut aiemmin luodut kulut kuluraporttiin.
+- Luo uudet kulut kuluraporttiin.
+- Liitä kuitti kuluraportin kuluun, joko ottamalla kuva kuitista tai lataamalla tiedosto tarkistettuna kuittina.
+- Lisää yrityksen kulukäytännön mukaisesti vierasluettelo kuluun.
+- Erittele kulut yrityksen kulukäytäntöjen mukaisesti.
+- Lähetä kuluraportti hyväksyttäväksi ja hyvitettäväksi.
+- Hyväksy tai hylkää kuluraportit, joiden hyväksyjäksi sinut on määritetty.
 
 ## <a name="prerequisites"></a>Edellytykset
-Varmista ennen **kulujenhallinnan** mobiilityötilan käyttöönottoa, että järjestelmänvalvoja on toteuttanut seuraavat vaatimukset.
+Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys 
+Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **Kulujen hallinta** -mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.
+Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations -versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Edellytys</th>
@@ -62,77 +76,171 @@ Varmista ennen **kulujenhallinnan** mobiilityötilan käyttöönottoa, että jä
 </thead>
 <tbody>
 <tr class="odd">
-<td>Käytössä on oltava Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu ympäristöpäivitys 3.</td>
+<td>Ota KB 4019015 käyttöön.</td>
 <td>Järjestelmänvalvoja</td>
-<td>Jos organisaatiosi ei ole vielä ottanut Finance and Operationsia käyttöön, järjestelmänvalvojan kannattaa tutustua ohjeaiheeseen<a href="/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Finance and Operations -kokeiluympäristön käyttöönotto</a>.</td>
+<td>KB 4019015 on X++-päivitys tai metatietojen korjaus, joka sisältää <strong>Kulujen hallinta</strong> -mobiilityötilan. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4019015 -päivityksen.
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Lataa metatietojen hotfix-korjaus Microsoft Dynamics Lifecycle Servicesistä (LCS)</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>ApplicationSuite</strong>- ja <strong>ExpenseMobile</strong>-mallit ja lataa sitten käyttöön otettava paketti LCS:ään.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Ota käyttöönotettava paketti käyttöön</a>.</li>
+</ol></td>
 </tr>
 <tr class="even">
-<td>KB 4019015 on oltava asennettu.</td>
+<td>Julkaise <strong>Kulujen hallinta</strong> -mobiilityötila.</td>
 <td>Järjestelmänvalvoja</td>
-<td>KB 4019015 (X++-päivitys tai metatietojen korjaus) sisältää neljä mobiilia työtilaa toimitusketjun hallintaan. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4019015 -päivityksen:
-<ol>
-<li>Lataa KB 4019015 Microsoft Dynamicsin elinkaaripalveluista (LCS).</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>ApplicationSuite</strong>- ja <strong>ExpenseMobile</strong>-mallit ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Asenna käyttöön otettava paketti</a> omaan Finance and Operations -järjestelmään.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><strong>Kulujenhallinnan</strong> mobiilityötila on julkaistava myös Finance and Operations -mobiilisovellukseen.</td>
-<td>Järjestelmänvalvoja</td>
-<td><ol>
-<li>Käynnistä Finance and Operations selaimessa.</li>
-<li>Valitse <strong>Järjestelmäparametrit</strong> -sivulta <strong>Mobiilityötilojen hallinta</strong>.</li>
-<li>Valitse <strong>Kulujenhallinnan</strong> työtila.</li>
-<li>Valitse <strong>Julkaise mobiilityötila</strong>.</li>
-</ol></td>
+<td>Lisätietoja on ohjeaiheessa <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobiilityötilan julkaiseminen</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-finance-and-operations-mobile-app"></a>Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen
-Lataa ja asenna Finance and Operations -mobiilisovellus sovelluskaupasta.
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Lataa ja asenna Dynamics 365 for Operations -mobiilisovellus
+Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
--   Android: [Finance and Operations Google Play Storessa](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone: [Finance and Operations iTunes App Storessa](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+- [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
+- [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-finance-and-operations-mobile-app"></a>Finance and Operations -mobiilisovellukseen kirjautuminen
-1.  Käynnistä sovellus mobiililaitteessa.
-2.  Anna Finance and Operationsin URL-osoite.
-3.  annan yritys, johon kirjaudutaan. Kirjoita esimerkiksi **USMF**.
-4.  Kun kirjaudut ensimmäisen kerran sisään, sinulta kysytään Finance and Operations -tilin käyttäjänimeä ja salasanaa. Kirjota tunnistetiedot.
-5.  Kun olet kirjautunut sisään, näet yrityksen käytettävissä olevat työtilat. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, voit päivittää mobiilien työtilojen luettelon vetämällä alaspäin. 
+## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
+1. Käynnistä sovellus mobiililaitteessa.
+2. Anna Dynamics 365 -URL-osoitteesi.
+4. Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
+5. Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
+
 
 [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a>Kuittien sieppaaminen kulujenhallinnan mobiilityötilassa
-1.  Valitse mobiililaitteessasi **Kulujenhallinnan** työtila.
-2.  Valitse **Sieppaa kuitti**.
-3.  Valitse **Ota kuva** tai **Valitse kuva**.
-4.  Jos valitsit **Ota kuva** -vaihtoehdon, toimi seuraavasti:
-    1.  Sinut siirretään mobiililaitteesi kameraan, jotta voit ottaa kuitista kuvan. Kun olet ottanut kuvan, hyväksy se napauttamalla **OK**.
-    2.  Valinnainen: Anna kuvalle nimi ja syötä muistiinpanoja.
 
-     **Tai:** Jos valitsit **Valitse kuva**, toimi seuraavasti:
-    1.  Valitse kuva luettelosta.
-    2.  Valinnainen: Anna kuvalle nimi ja syötä muistiinpanoja.
+1. Avaa **Kulujen hallinta** -työtila mobiililaitteessa.
+2. Valitse **Sieppaa kuitti**.
+3. Valitse **Ota kuva** tai **Valitse kuva**.
+4. Noudata seuraavia ohjeita:
 
-5.  Valitse **Valmis**.
+    - Jos valitsit **Ota kuva** -vaihtoehdon, toimi seuraavasti:
 
-## <a name="quick-expense-entry-by-using-the-expense-management-mobile-workspace"></a>Kulujen pikasyöttö kulujenhallinnan mobiilityötilassa
-1.  Valitse mobiililaitteessasi **Kulujenhallinnan** työtila.
-2.  Valitse **Kulun pikasyöttö**.
-3.  Valitse kulun luokka. Näet luettelon kululuokista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Finance and Operationsin mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos luokka ei ole luettelossa, valitse **Haku** ja tee verkkohaku Finance and Operationsissa. Etsi kululuokan tai -tyypin perusteella.
-4.  Anna kulun tapahtumapäivämäärä.
-5.  Valinnainen: anna kulun myyjä.
-6.  Syötä kulun summa.
-7.  Valitse kulun valuutta. Näet luettelon valuuttakoodeista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 400 valuuttaa, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Finance and Operationsin mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos valuutta ei ole luettelossa, valitse **Haku** ja tee verkkohaku Finance and Operationsissa. Etsi valuutan tai nimen mukaan.
-8.  Valitse **Ota kuva** tai **Valitse kuva**.
-9.  Jos valitsit **Ota kuva**, sinut siirretään mobiililaitteesi kameraan, jotta voit ottaa kuitista kuvan. Kun olet ottanut kuvan, hyväksy se napauttamalla **OK**.  tai Jos valitsit **Valitse kuva**, valitse kuva luettelosta.
+        1. Sinut siirretään mobiililaitteesi kameraan, jotta voit ottaa kuitista kuvan. Kun olet ottanut kuvan, hyväksy se valitsemalla **OK**.
+        2. Valinnainen: Anna kuvalle nimi ja syötä muistiinpanoja.
+
+    - Jos valitsit **Valitse kuva**, toimi seuraavasti:
+
+        1. Valitse kuva luettelosta.
+        2. Valinnainen: Anna kuvalle nimi ja syötä muistiinpanoja.
+
+5. Valitse **Valmis**.
+
+## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Kulujen kirjaaminen nopeasti kulujen hallinnan mobiilityötilassa
+1. Avaa **Kulujen hallinta** -työtila mobiililaitteessa.
+2. Valitse **Kulun pikasyöttö**.
+3. Valitse kulun luokka. Näet luettelon kululuokista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos luokka ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi kululuokan tai -tyypin perusteella.
+4. Anna kulun tapahtumapäivämäärä.
+5. Valinnainen: anna kulun myyjä.
+6. Syötä kulun summa.
+7. Valitse kulun valuutta. Näet luettelon valuuttakoodeista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvoisesti ladataan 400 valuuttaa, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos valuutta ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi valuutan tai nimen mukaan.
+8. Valitse **Ota kuva** tai **Valitse kuva**.
+9. Noudata seuraavia ohjeita:
+
+    - Jos valitsit **Ota kuva**, sinut siirretään mobiililaitteesi kameraan, jotta voit ottaa kuitista kuvan. Kun olet ottanut kuvan, hyväksy se valitsemalla **OK**.
+    - Jos valitsit **Valitse kuva**, valitse kuva luettelosta.
+
 10. Valitse **Valmis**.
 
+## <a name="approve-an-expense-report-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a>Kuluraportin hyväksyminen kulujen hallinnan mobiilityötilassa (jos käytössä on heinäkuun 2017 päivitys)
+1. Avaa **Kulujen hallinta** -työtila mobiililaitteessa.
+2. **Kulujen hyväksynnät** näyttää, kuinka monta kuluraporttia on määritetty sinulle hyväksyttäväksi. Luku päivitetään noin 30 minuutin välein. Valitse **Kulujen hyväksynnät**.
 
+    Luettelo sinulle hyväksyttäväksi määritetyistä kuluraporteista avautuu.
+    
+3. Voit tarkastella kulujen erittelyä valitsemalla kuluraportin.
+4. Voit tarkastella erittelyä valitsemalla kulun. Näytettäviä kulutietoja ovat esimerkiksi mahdolliset kuitit, vieraat ja erittelyt.
+5. Valitse **Kuluraportti**-sivulla, hyväksytkö vai hylkäätkö kuluraportin.
+6. Anna mahdolliset hyväksymistoimintoon liittyvät kommentit.
+7. Valitse **Valmis**.
 
+## <a name="create-a-new-expense-report-and-submit-it-for-approval-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a>Uuden kuluraportin luominen ja sen lähettäminen hyväksyminen kulujen hallinnan mobiilityötilassa (jos käytössä on heinäkuun 2017 päivitys)
+1. Avaa **Kulujen hallinta** -työtila mobiililaitteessa.
+2. Valitse **Kulumerkintä**.
+3. Valitse joko **Uusi raportti** tai valitse luettelosta aikaisemmin luotu kuluraportti.
+4. Jos kyse on uudesta kuluraportista, anna raportin syy ja mahdolliset muut käytettävissä olevat tiedot. Nämä tiedot vaihtelevat sen mukaan, miten kulujen hallinta on määritetty yrityksessä.
+5. Valitse **Valmis**.
+6. Lisää aiemmat kulut, kuten luottokorttitapahtumat, kuluraporttiin valitsemalla **Liitä**.
+7. Valitse luettelosta vähintään yksi kulu.
+8. Valitse **Valmis**.
+9. Lisää uusi kulu kuluraporttiin valitsemalla **Uusi kulu**.
+10. Valitse kulun luokka. Näet luettelon kululuokista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos luokka ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi kululuokan tai -tyypin perusteella.
+11. Valinnainen: anna kulun myyjä.
+12. Anna kulun tapahtumapäivämäärä.
+13. Syötä kulun summa.
+14. Valitse kulun valuutta. Näet luettelon valuuttakoodeista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvoisesti ladataan 400 valuuttaa, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos valuutta ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi valuutan tai nimen mukaan.
+15. Valitse **Valmis**.
+16. Tarkenna kulun tietoja valitsemalla **Lisää lisätiedot**. Käytettävissä olevat kentät määräytyvät yrityksen kulujen hallinnan määritysten mukaan.
+17. Jos yrityksen käytäntö edellyttää kuittien liittämistä, valitse **Kuitit** ja tee seuraavat toimet:
 
+    1. Valitse **Tarkista kuitti** tai **Liitä kuitti**.
+    2. Noudata seuraavia ohjeita:
 
+        - Jos valitsit **Tarkista kuitti**, toimi seuraavasti:
+
+            1. Valitse **Ota kuva** tai **Valitse kuva**.
+            2. Noudata seuraavia ohjeita:
+
+                - Jos valitsit **Ota kuva** -vaihtoehdon, toimi seuraavasti:
+
+                    1. Sinut siirretään mobiililaitteesi kameraan, jotta voit ottaa kuitista kuvan. Kun olet ottanut kuvan, hyväksy se valitsemalla **OK**.
+                    2. Valinnainen: Anna kuvalle nimi ja syötä muistiinpanoja.
+
+                - Jos valitsit **Valitse kuva**, toimi seuraavasti:
+
+                    1. Valitse kuva luettelosta.
+                    2. Valinnainen: Anna kuvalle nimi ja syötä muistiinpanoja.
+
+            3.  Valitse **Valmis**.
+
+        - Jos valitsit **Liitä kuitti**, toimi seuraavasti:
+
+            1.  Valitse luettelosta vähintään yksi kuva.
+            2.  Valitse **Valmis**.
+
+    3. Palaa kulun tietoihin valitsemalla **Takaisin**.
+
+18. Jos yrityksen käytäntö edellyttää, että kuluun liittyy vieras, valitse **Vierailijat** ja tee seuraavat toimet:
+
+    1. Valitse **Vierailija**, **Aiemmat vieraat** tai **Työtoverit**.
+    2. Noudata seuraavia ohjeita:
+
+        - Jos valitsit **Vierailija**, toimi seuraavasti:
+
+            1. Anna vierailijan nimi.
+            2. Valinnainen: Annan vierailijan organisaation ja/tai maa.
+            3. Valinnainen: Anna vierailijan ammattinimike.
+            4. Valitse **Valmis**.
+
+        - Jos valitsit **Aiemmat vieraat**, toimi seuraavasti:
+
+            1. Valitse luettelosta vähintään yksi aiempi vieras. Näkyviin tulee luettelo vieraista, jotka olet lisännyt aiempiin kuluraportteihin. Nämä raportit on ladattu offline-käytön mahdollistavaan sovellukseen. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos aiempi vieras ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Voit hakea nimen, organisaation, maan tai ammattinimikkeen perusteella.
+            2. Valitse **Valmis**.
+
+        - Jos valitsit **Työtoverit**, toimi seuraavasti:
+
+            1. Valitse luettelosta vähintään yksi työtoveri. Näet luettelon työtovereista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos työtoveri ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Voit hakea nimen, yrityksen tai ammattinimikkeen perusteella.
+            2. Valitse **Valmis**.
+
+    3. Palaa kulun tietoihin valitsemalla **Takaisin**.
+
+19. Jos yrityksen käytäntö edellyttää kulujen erittelyä, valitse **Erittely** ja tee seuraavat toimet:
+
+    1. Valitse erittelyn ensimmäinen päivämäärä.
+    2. Valitse **Lisää erittely**.
+    3. Valitse kulun erittelyn aliluokka. Näet luettelon kulujen aliluokista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos aliluokka ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Tee haku kulujen aliluokan nimen mukaan.
+    4. Anna eriteltävän tapahtuman summa.
+    5. Muokkaa tapahtuman päivämäärää tarvittaessa.
+    6. Valitse **Valmis**.
+    7. Toista edelliset vaiheet, kunnes kaikki valitun päivämäärän erittelyt on lisätty.
+    8. Jos päiviä on enemmän, voit kopioida erittelyt seuraavalle päivälle valitsemalla **Kopioi seuraavaan päivään**. Vaihtoehtoisesti voit valita eriteltävän päivämäärän ja lisätä erittelyt samoin kuin ensimmäisenä päivämääränä.
+    9. Kun kulun erittely on valmis, palaa kulun tietoihin valitsemalla **Takaisin**.
+
+20. Palaa **Kuluraportti**-sivulle valitsemalla **Takaisin**.
+21. Toista edelliset vaiheet, kunnes kaikki kulut on lisätty.
+22. Valitse **Lähetä**.
+23. Kirjoita tarvittaessa kommentit hyväksyjälle.
+24. Valitse **Valmis**.
 
