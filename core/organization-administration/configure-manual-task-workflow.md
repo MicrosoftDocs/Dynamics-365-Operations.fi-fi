@@ -3,7 +3,7 @@ title: "Manuaalisen tehtävän konfiguroiminen työnkulkuun"
 description: "Tässä ohjeaiheessa kerrotaan, miten manuaalisen tehtävän ominaisuudet määritetään."
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -165,6 +165,7 @@ Jos käyttäjä ei suorita manuaalista tehtävää aikarajan puitteissa, tehtäv
 
 1.  Valitse vasemmasta ruudusta **Eskalointi**.
 2.  Luo eskalointipolku valitsemalla **Käytä eskalointipolkua** -valintaruutu. Järjestelmä määrittää tehtävän automaattisesti eskalointipolussa luetelluille käyttäjille. Seuraava taulukko on esimerkki eskalointipolusta.
+
     | Järjestys | Eskalointipolku      |
     |----------|----------------------|
     | 1        | Määritä rooliin: Donna     |
@@ -318,7 +319,9 @@ Voit lähettää käyttäjille ilmoituksia, kun manuaalinen tehtävä on suorite
 8.  Toista vaiheet 3-7 kullekin tapahtumalle, jonka valitsit vaiheessa 2.
 
 ## <a name="set-a-time-limit"></a>Aikarajan määrittäminen
-Noudata seuraavia ohjeita, jos manuaalinen tehtävä on suoritettava tietyn ajan kuluessa. **Huomautus:** näiden ohjeiden mukaan valitsemasi asetukset korvaavat asetukset, jotka olet valinnut kunkin hyväksyntävaiheen **Liitos**- ja **Eskalointi**-alueissa.
+Noudata seuraavia ohjeita, jos manuaalinen tehtävä on suoritettava tietyn ajan kuluessa. 
+
+**Huomautus:** näiden ohjeiden mukaan valitsemasi asetukset korvaavat asetukset, jotka olet valinnut kunkin hyväksyntävaiheen **Liitos**- ja **Eskalointi**-alueissa.
 
 1.  Napsauta vasemmassa ruudussa **Lisäasetukset**.
 2.  Merkitse **Aseta aikaraja työnkulun elementille** -valintaruutu.
