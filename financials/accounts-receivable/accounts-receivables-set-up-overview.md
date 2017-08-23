@@ -1,9 +1,9 @@
 ---
 title: "Myyntireskontran sekä luotonvalvonnan määrittäminen"
 description: "Määritä myyntireskontra ja luotonvalvonta, kun haluat seurata laskuja ja asiakkailta saapuvia maksuja."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74556e571c215b0fea8deb061fd968c240b063d4
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 1d37014e8f7b333a15077fc3477808a3ad62b96f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -66,12 +65,12 @@ Seuraavassa taulukossa on luettelo sivuista, jotka tukevat myyntireskontran ja l
 |                                                      | Valuutat                           | Luo organisaatiosi käyttämät valuutat ja tarkastele niitä.                                                                                                                                                                                                                       |
 |                                                      | Valuutan vaihtokurssit              | Luo ja ylläpidä sopivia vaihtokursseja kirjanpitovaluutan ja muiden valuuttojen välillä.                                                                                                                                                                              |
 |                                                      | Konsernin sisäinen laskenta              | Luo luettelo tileistä, joihin nykyinen yritys voi kirjata. Sinun on määritettävä debet- ja kredit-tilit sekä kirjauskansio, johon vastaanotetaan toisen yrityksen tapahtumat.                                                                             |
-|                                                      | Maksutavat - asiakas        | Voit luoda ja ylläpitää tietoja asiakkaiden maksutavoista.                                                                                                                                                                                                           |
+|                                                      | Maksutavat - asiakas        | Voit luoda ja ylläpitää tietoja asiakkaiden maksutavoista. Lisätietoja on ohjeaiheessa [Asiakkaan maksutavan määrittäminen](tasks/establish-customer-method-payment.md).                                                                                             |
 |                                                      | Organisaatiohierarkiat             | Keskitettyjen maksujen organisaatiohierarkian määrittäminen.                                                                                                                                                                                                                        |
 |                                                      | Organisaatiohierarkian tarkoitukset      | Määritä tarkoitus keskitetyille maksuille.                                                                                                                                                                                                                                       |
 |                                                      | Maksupäivät                         | Voit määrittää maksupäivät, joiden avulla lasketaan eräpäivät asiakkailta saapuville maksuille tai toimittajille maksettaville maksuille.                                                                                                                                                |
-|                                                      | Toimitusmaksu                          | Voit luoda ja ylläpitää asiakkaisiin liittyviä toimitusmaksuja, esimerkiksi vekselien toimitusmaksuja.                                                                                                                                                                               |
-|                                                      | Toimitusmaksujen asetukset                    | Voit määrittää toimitusmaksujen asetukset erilaisille pankkien, maksutapojen, maksusuoritustyyppien, maksumäärittelyiden, valuuttojen ja päivämäärävälien yhdistelmille.                                                                                                                              |
+|                                                      | Toimitusmaksu                          | Voit luoda ja ylläpitää asiakkaisiin liittyviä toimitusmaksuja, esimerkiksi vekselien toimitusmaksuja.                                                                                                                                                                         |
+|                                                      | Toimitusmaksujen asetukset                    | Voit määrittää toimitusmaksujen asetukset erilaisille pankkien, maksutapojen, maksusuoritustyyppien, maksumäärittelyiden, valuuttojen ja päivämäärävälien yhdistelmille.  Lisätietoja on ohjeaiheessa [Asiakkaan toimitusmaksujen määrittäminen](tasks/establish-customer-payment-fees.md).                                                                                   |
 |                                                      | Maksusuunnitelmat                    | Voit luoda maksusuunnitelmia ja ajoittaa niiden avulla maksueriä asiakkailta ja toimittajille.                                                                                                                                                                       |
 |                                                      | Maksumäärittely                | Voit luoda ja tarkastella Maksutavat-sivulla valitun maksutavan maksumäärittelykoodeja. Valitun maksutavan maksumäärittelytunnukset määritetään pankin kanssa tehdyn sopimuksen mukaan.                    |
 |                                                      | Tapahtuman teksti                     | Voit luoda tapahtuman tekstin automaattista kirjanpitoon kirjausta varten. Voit määrittää tapahtuman tekstin useilla kielillä.                                                                                                                                                           |
@@ -83,8 +82,8 @@ Seuraavassa taulukossa on luettelo sivuista, jotka tukevat myyntireskontran ja l
 |                                                      | Maksutavat - asiakas        | Voit luoda ja ylläpitää tietoja asiakkaiden maksutavoista.                                                                                                                                                                                                           |
 |                                                      | Allekirjoitus                            | Voit lisätä, muuttaa ja poistaa allekirjoituskuvatiedostoja, kuten .bmp-, .jpg-, ja .gif-tiedostoja. Allekirjoituskuvatiedostot tulostetaan sekkeihin yrityksen virallisiksi allekirjoituksiksi.                                                                                                             |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
-| Myyntireskontran tilastotietojen määrittäminen           | Erääntymiskausien määritykset             | Voit määrittää ja hallita käyttäjän määrittämiä erääntymisjaksomäärityksiä, joiden avulla analysoidaan asiakas- ja toimittajatilien erääntymistä määritetyn päivämäärän perusteella.                                                                                                         |
-|                                                      | Liiketoiminnan tilastotiedot                  | Voit määrittää liiketoiminnan tilastotietokyselyitä, jotka voivat auttaa organisaation suorituskyvyn analysoinnissa.                                                                                                                                                                              |
+| Myyntireskontran tilastotietojen määrittäminen           | Erääntymiskausien määritykset             | Voit määrittää ja hallita käyttäjän määrittämiä erääntymisjaksomäärityksiä, joiden avulla analysoidaan asiakas- ja toimittajatilien erääntymistä määritetyn päivämäärän perusteella. Lisätietoja on ohjeaiheessa [Myyntireskontran erääntymistietojen määrittäminen ja luominen](tasks/set-up-accounts-receivable-aging-information.md).                                                           |
+|                                                      | Liiketoimintatilastot                  | Voit määrittää liiketoiminnan tilastotietokyselyitä, jotka voivat auttaa organisaation suorituskyvyn analysoinnissa.                                                                                                                                                                              |
 |                                                      | Liiketoiminnan tilastotiedot              | Voit tarkastella valittuja liiketoiminnan tilastotietoja ruudukkomuodossa.                                                                                                                                                                                                                     |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
 | Ylläpidä asiakastietoja                     | Osoitekirja                         | Voit määrittää tai näyttää tietoja prospekteista, liideistä, mahdollisuuksista, asiakkaista, yhteyshenkilöistä, kilpailijoista ja työntekijöistä.                                                                                                                                                          |

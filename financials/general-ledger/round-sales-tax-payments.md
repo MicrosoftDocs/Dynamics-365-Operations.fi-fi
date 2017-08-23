@@ -3,7 +3,7 @@ title: "Arvonlisäveromaksut ja pyöristyssäännöt"
 description: "Tässä artikkelissa kerrotaan, miten ALV-viranomaisten pyöristyssäännön määrittäminen toimii, ja miten arvonlisäverosaldo pyöristetään arvonlisäverotyön arvonlisäveron selvityksen ja kirjauksen aikana."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ec117598a6a008e5b274179659b515824029874
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 8de01b77fcbeb65321e60614b6a11d264460208f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -65,8 +64,11 @@ Seuraavassa taulukossa on esitetty, miten summa 98 765,43 summa pyöristetään 
 > [!NOTE]                                                                                  
 > Jos valitset Oma etu, pyöristys tehdään aina yrityksen eduksi. 
 
-Lisätietoja on kohdassa [Arvonlisäveron yleiskuvaus](indirect-taxes-overview.md). 
-
+Lisätietoja on seuraavissa aiheissa:
+- [Arvonlisäveron yleiskatsaus](indirect-taxes-overview.md)
+- [Arvonlisäveromaksun luominen](tasks/create-sales-tax-payment.md)
+- [Myyntitapahtumien luominen asiakirjoihin](tasks/create-sales-tax-transactions-documents.md)
+- [Näytä kirjatut arvonlisäverotapahtumat](tasks/view-posted-sales-tax-transactions.md)
 
 
 

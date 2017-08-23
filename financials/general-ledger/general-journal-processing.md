@@ -3,7 +3,7 @@ title: "Kirjanpidon kirjauskansion käsittely"
 description: "Tässä artikkelissa kerrotaan Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja jonka avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 68da281cb4793ed83f70c68d061d327aa8a8c772
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -82,8 +81,13 @@ Päätilin asetukset tarjoaa useita vaihtoehtoja yleisen kirjauskansion käsitte
 
 Kirjanpitorakenteet ja lisäsääntöjen rakenteet ovat erittäin tärkeitä sen varmistamisessa, että taloushallinnon raportoinnissa ja suorituskyvyn mittaamisessa tarvittavat tiedot ja asiakirjat kerätään kirjanpidon kirjauskansion käsittelyn yhteydessä. Kirjanpitorakenteiden ja lisäsääntöjen rakenteiden ansiosta voit räätälöidä tietojen syöttörutiinin. Voit sallia tietojen syötön vain kussakin tilanteessa asianmukaisille taloushallinnon dimensioille sekä toimeenpanna vaatimuksen, että pakolliset ja oikeat tiedot tulevat aina kerätyiksi.
 
-Lisätietoja on ohjeaiheessa [Suunnittelu: tilikartta](plan-chart-of-accounts.md). 
-
+Lisätietoja on seuraavissa aiheissa:
+- [Suunnittelu: tilikartta](plan-chart-of-accounts.md). 
+- [Luo kirjauskansioiden lisäsäännöt](tasks/create-advanced-rules-journals.md)
+- [Kirjauskansioviennin luonti mallin avulla](tasks/create-journal-entry-template.md)
+- [Luo ja vahvista kirjauskansiot](tasks/create-validate-journals.md)
+- [Kirjaa kausittaiset kirjauskansiot](tasks/post-periodic-journals.md)
+- [Käsittele kirjanpidon kohdistuskirjauskansio](tasks/process-ledger-allocation-journal.md)
 
 
 

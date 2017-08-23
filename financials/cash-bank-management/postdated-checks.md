@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: f7cf2b7996d113f0f883b39f3603de8236e8ad2c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 6a535b5f1192b7c27383cb8ece53f76a9c76f047
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -52,7 +51,7 @@ Microsoft Dynamics 365 for Finance and Operations tukee myöhemmäksi päivätty
 </tr>
 <tr class="even">
 <td>Kirjaa ja lähetä toimittajalle jälkeen päin päivitetty lasku</td>
-<td>Rekisteröi toimittajalle kirjoittamasi myöhemmäksi päivätyn sekin tiedot. Kun maksu kirjataan, toimittajan velka siirretään, mutta pankkitiliä ei vielä hyvitetä. Sen sijaan käytetään selvitystiliä.</td>
+<td>Rekisteröi toimittajalle kirjoittamasi myöhemmäksi päivätyn sekin tiedot. Kun maksu kirjataan, toimittajan velka siirretään, mutta pankkitiliä ei vielä hyvitetä. Sen sijaan käytetään selvitystiliä. </td>
 </tr>
 <tr class="odd">
 <td>Rekisteröi ja kirjaa asiakkaan myöhemmäksi päivitetty sekki</td>
@@ -87,6 +86,17 @@ Jos toimittajalle lähetetty tai asiakkaalta vastaanotettu alkuperäinen sekki o
 
 
 
+Lisätietoja on seuraavissa aiheissa:
+
+[Määritä jälkeen päin päivitetyt sekit](tasks/set-up-postdated-checks.md)
+
+[Rekisteröi ja kirjaa asiakkaan myöhemmäksi päivitetty sekki](tasks/register-post-postdated-check-customer.md)
+
+[Tilitä asiakkaalta jälkeen päin päivitetty lasku](tasks/settle-postdated-check-customer.md)
+
+[Rekisteröi ja kirjaa toimittajan myöhemmäksi päivitetty sekki](tasks/register-post-postdated-check-vendor.md) 
+
+[Tilitä toimittajalle jälkeen päin päivitetty lasku](tasks/settle-postdated-check-vendor.md)
 
 
 

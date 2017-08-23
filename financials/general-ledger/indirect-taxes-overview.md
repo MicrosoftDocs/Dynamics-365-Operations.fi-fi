@@ -3,7 +3,7 @@ title: "Arvonlisäveron yleiskuvaus"
 description: "Tämä artikkeli sisältää arvonlisäverojärjestelmän yleiskatsauksen. Artikkelissa esitellään arvonlisäveroasetusten elementit ja se, miten ne toimivat yhdessä."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: f4838dade6b2694a11f4b9775fe53560b1332f18
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -47,7 +46,7 @@ Yksiköt, joista veroasetukset kostuvat, ja niiden väliset suhteet näkyvät se
 
 Jokaiselle yrityksen kirjaamalle arvonlisäverolle on määritettävä arvolisäverokoodi. Arvonlisäverokoodi sisältää veroprosentin ja arvonlisäveron laskusäännöt. 
 
-Jokainen arvonlisäverokoodi on linkitettävä arvolisäveron tilityskauteen. Arvonlisäveron tilityskausi määrittää, kuinka usein arvolisävero on ilmoitettava ja maksettava arvonlisäveroviranomaisille. Jokainen arvonlisäveron tilityskausi on määritettävä arvolisäveroviranomaiseen. Arvonlisäveroviranomainen ilmaisee yksikön, jolle arvonlisävero ilmoitetaan ja maksetaan. Se määrittää myös arvonlisäveroilmoituksen asettelun. Arvonlisäveroviranomaiset voivat liittyä toimittajatileihin. 
+Jokainen arvonlisäverokoodi on linkitettävä arvolisäveron tilityskauteen. Arvonlisäveron tilityskausi määrittää, kuinka usein arvolisävero on ilmoitettava ja maksettava arvonlisäveroviranomaisille. Jokainen arvonlisäveron tilityskausi on määritettävä arvolisäveroviranomaiseen. Arvonlisäveroviranomainen ilmaisee yksikön, jolle arvonlisävero ilmoitetaan ja maksetaan. Se määrittää myös arvonlisäveroilmoituksen asettelun. Arvonlisäveroviranomaiset voivat liittyä toimittajatileihin. Lisätietoja on ohjeaiheessa [Arvonlisäveron tilityskausien määrittäminen](tasks/set-up-sales-tax-settlement-periods.md).
 
 Jokainen arvonlisäverokoodi on linkitettävä myös kirjanpidon kirjausryhmään. Kirjanpidon kirjausryhmä määrittää päätilin, johon arvonlisäverokoodien summat kirjataan. 
 
@@ -60,13 +59,13 @@ Seuraavassa taulussa käsitellään yksiköitä ja veroasetusten järjestystä.
 | Määritystapahtuma                                                  | Pakollinen/Valinnainen ja kuvaus                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Luo päätilit.                                           | Pakollinen. Ennen kuin arvonlisäveroihin liittyviä toimintoja voi määrittää, on luotava päätilit, joita yritys käyttää verojen maksamiseen ja kirjaamiseen.                                                                                                                                                                             |
-| Aseta arvonlisäveron kirjanpidon kirjausryhmät.                     | Pakollinen. Kirjanpidon kirjausryhmät määrittävät arvonlisäverojen kirjaamisen ja maksamisen päätilit.                                                                                                                                                                                                                            |
-| Määritä arvonlisäveroviranomaiset.                                   | Pakollinen. Arvonlisäveroviranomaiset ovat yksiköitä, joille vero on ilmoitettava ja maksettava.                                                                                                                                                                                                                                   |
+| Aseta arvonlisäveron kirjanpidon kirjausryhmät.                     | Pakollinen. Kirjanpidon kirjausryhmät määrittävät arvonlisäverojen kirjaamisen ja maksamisen päätilit.   Lisätietoja on ohjeaiheessa [Arvonlisäveron kirjanpidon kirjausryhmien määrittäminen](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
+| Määritä arvonlisäveroviranomaiset.                                   | Pakollinen. Arvonlisäveroviranomaiset ovat yksiköitä, joille vero on ilmoitettava ja maksettava.    Lisätietoja on ohjeaiheessa [Arvonlisäveroviranomaisten määrittäminen](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
 | Määritä arvonlisäveron tilityskaudet.                            | Pakollinen. Arvonlisäveron tilityskausissa on tiedot siitä, milloin arvonlisävero on ilmoitettava ja maksettava sekä kuinka usein se on tehtävä. Ne on liitetty arvonlisäveroviranomaiseen.                                                                                                                                                       |
-| Määritä arvonlisäveroilmoituksen koodit.                               | Valinnainen. Arvonlisäverokoodeille voidaan määrittää arvonlisäveroilmoituksen koodeja, joilla useiden arvolisäverokoodien summat ilmoitetaan yhdellä arvonlisäveroilmoituksen koodilla.                                                                                                                                                                 |
-| Määritä arvonlisäverokoodit.                                         | Pakollinen. Arvonlisäverokoodit sisältävät veroprosentit ja kunkin arvonlisäveron laskusäännöt. Arvonlisäverokoodit liittyvät arvonlisäveron tilityskauteen ja kirjanpidon kirjausryhmään.                                                                                                                                        |
+| Määritä arvonlisäveroilmoituksen koodit.                               | Valinnainen. Arvonlisäverokoodeille voidaan määrittää arvonlisäveroilmoituksen koodeja, joilla useiden arvolisäverokoodien summat ilmoitetaan yhdellä arvonlisäveroilmoituksen koodilla. Lisätietoja on ohjeaiheessa [Arvonlisäveroilmoituksen koodien määrittäminen](tasks/set-up-sales-tax-reporting-codes.md).                                         |
+| Määritä arvonlisäverokoodit.                                         | Pakollinen. Arvonlisäverokoodit sisältävät veroprosentit ja kunkin arvonlisäveron laskusäännöt. Arvonlisäverokoodit liittyvät arvonlisäveron tilityskauteen ja kirjanpidon kirjausryhmään. Lisätietoja on ohjeaiheessa [Arvonlisäverokoodien määrittäminen](tasks/set-up-sales-tax-codes.md).                                |
 | Määritä arvonlisäveroryhmät.                                        | Pakollinen. Arvonlisäveroryhmät sisältää luettelon arvolisäverokoodeista, joita tapahtuman osapuoleen (asiakas tai toimittaja) käytetään. Tiettyä tapahtumaa koskeva arvonlisävero määräytyy sekä tapahtuman arvonlisäveroryhmään että nimikkeen arvonlisäveroryhmään sisältyvien arvonlisäverokoodien mukaan.                  |
-| Määritä nimikkeiden arvonlisäveroryhmät.                                   | Pakollinen. Nimikkeen arvonlisäveroryhmät sisältävät luettelon koodeista, joita käytetään tapahtuman resurssille (kuten tuote tai palvelu). Tiettyä tapahtumaa koskeva arvonlisävero määräytyy sekä tapahtuman arvonlisäveroryhmään että nimikkeen arvonlisäveroryhmään sisältyvien arvonlisäverokoodien mukaan. |
+| Määritä nimikkeiden arvonlisäveroryhmät.                                   | Pakollinen. Nimikkeen arvonlisäveroryhmät sisältävät luettelon koodeista, joita käytetään tapahtuman resurssille (kuten tuote tai palvelu). Tiettyä tapahtumaa koskeva arvonlisävero määräytyy sekä tapahtuman arvonlisäveroryhmään että nimikkeen arvonlisäveroryhmään sisältyvien arvonlisäverokoodien mukaan. Lisätietoja on ohjeaiheessa [Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen](tasks/set-up-sales-tax-groups-item-sales-tax-groups.md). |
 | Määritä arvolisäveron parametrit sovelluksen parametrisivulla. | Pakollinen. Parametrit on määritettävä eri alueilla, kuten kirjanpidossa, myyntireskontrassa ja ostoreskontrassa, jotta välilliset verot voidaan laskea oikein. Vaikka useimmilla näistä parametreista on oletusarvot, ne on muokattava kunkin yrityksen tarpeisiin sopiviksi.                                          |
 
 ## <a name="sales-tax-on-transactions"></a>Tapahtumien arvonlisävero
@@ -98,5 +97,5 @@ Yleensä ALV 2 500 olisi tilitettävä ja maksettava veroviranomaiselle laskun k
 Jos kuitenkin käytät suoritusperusteista arvonlisäveroa, täsmäytät veron veroviranomaiselle, kun saat maksun asiakkaalta 30.7.
 
 
-
+Lisätietoja on ohjeaiheessa [Ennakonpidätyksen määrittäminen](tasks/set-up-withholding-tax.md).
 
