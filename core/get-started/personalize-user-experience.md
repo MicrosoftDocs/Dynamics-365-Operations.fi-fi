@@ -1,9 +1,9 @@
 ---
-title: "Mukauta käyttäjäkokemusta"
-description: "Tässä artikkelissa kerrotaan, kuinka voit mukauttaa Microsoft Dynamics 365 for Finance and Operationsia."
+title: "Käyttäjäkokemuksen mukauttaminen"
+description: "Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Finance and Operationsin mukauttamista."
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.author: tlefor
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
+ms.translationtype: HT
+ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -31,28 +31,28 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kerrotaan, kuinka voit mukauttaa Microsoft Dynamics 365 for Finance and Operationsia.
+Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Finance and Operationsin mukauttamista.
 
 Microsoft Dynamics 365 for Finance and Operationsissa on monenlaisia mukauttamismahdollisuuksia. Jotkut mukautukset ovat valintoja, jotka teet asetussivulla vaihtoehtojen luettelossa. Jotkin mukautukset ovat implisiittisiä, esimerkiksi Finance and Operations seuraa ruudukoiden sarakeleveyksiä, jos muutat niitä, sekä pikavälilehtien laajennus- ja tiivistystiloja. Muut mukautukset ovat eksplisiittisiä. Eksplisiittistä mukauttamista varten siirryt vuorovaikutteiseen mukautustilaan ja muutat sivun ulkonäköä hallitsemalla suoraan tapaa, jolla eri elementit näkyvät tai toimivat sivulla. 
 
 Kaikki ja kaiken tyyppiset käyttäjän Finance and Operationsissa tekemät mukautukset koskevat vain kyseistä käyttäjää riippumatta siitä yrityksestä, jonka kanssa käyttäjä on vuorovaikutuksessa. Käyttäjän sivulle tekemät muutokset eivät vaikuta järjestelmän muihin käyttäjiin.
 
 ## <a name="systemwide-options-for-the-current-user"></a>Nykyisen käyttäjän järjestelmänlaajuiset vaihtoehdot
-Näet Siirtymispalkissa rattaan kuvan, jota kutsutaan **Asetukset**-valikkopainikkeeksi. Tämän **Asetukset**-valikon avaaminen tuo näyttöön eri vaihtoehtoja. Valinta **Asetukset** avaa käyttäjälle **Asetukset**-sivun. Tällä sivulla on neljä vaihtoehtovälilehteä: **Visuaalinen**, **Valinnat**, **Tili**, ja **Työnkulku**.
+Näet Siirtymispalkissa rattaan kuvan, jota kutsutaan **Asetukset**-valikkopainikkeeksi. Tämän **Asetukset**-valikon avaaminen tuo näyttöön eri vaihtoehtoja. Valinta **Asetukset** avaa käyttäjälle **Asetukset**-sivun. Käytettävissä on neljä välilehteä: 
 
--   **Visuaalinen:** Käytä tätä valitaksesi väriteeman ja sivusi elementtien oletuskoon.
--   **Valinnat:** Voit valita täällä oletusasetukset, jotka näkyvät aina, kun avaat Finance and Operationsin. Näitä asetuksia ovat yritys, aloitussivu ja oletusnäkymä tai -muokkaustila (joka määrittää, onko sivu lukittu katselua varten vai avautuuko se muokkausta varten aina, kun avaat sen). Löydät myös kieli-, aikavyöhyke-, päivämäärä-, aika- ja numeromuotojen vaihtoehdot. Viimeisenä sivulla on erilaisia sekalaisia valintoja, jotka vaihtelevat versioiden välillä.
--   **Tili:** Anna tässä käyttäjätunnuksesi ja muut tiliin liittyvät vaihtoehdot.
--   **Työnkulku:** Tässä voit valita työnkulkuun liittyviä vaihtoehtoja.
+-   **Visuaalinen** – Voit valita välilehdellä väriteeman ja sivun elementtien oletuskoon.
+-   **Valinnat** – Voit valita välilehdessä oletusasetukset, jotka näkyvät aina, kun avaat Finance and Operationsin. Näitä asetuksia ovat yritys, aloitussivu ja oletusnäkymä tai -muokkaustila (joka määrittää, onko sivu lukittu katselua varten vai avautuuko se muokkausta varten aina, kun avaat sen). Löydät myös kieli-, aikavyöhyke-, päivämäärä-, aika- ja numeromuotojen vaihtoehdot. Viimeisenä sivulla on erilaisia sekalaisia valintoja, jotka vaihtelevat versioiden välillä.
+-   **Tili** – Voit antaa välilehdessä käyttäjätunnuksen ja muut tiliin liittyvät asetukset.
+-   **Työnkulku** – Voit valita välilehdessä työnkulkuun liittyviä asetuksia.
 
 ## <a name="implicit-personalizations"></a>Implisiittiset mukautukset
 Implisiittiset mukautukset ovat niitä mukautuksia, jotka suoritat yksinkertaisesti olemalla vuorovaikutuksessa tiettyjen tarkistusten kanssa, jotka muistavat nykyisen näkyvän tilansa. 
 
-**Ruudukon sarakkeet:** Voit muokata luettelon sarakkeen leveyttä valitsemalla koon muuttamiseen tarkoitetun palkin sarakkeen otsikon vasemmalla tai oikealla puolella ja vetämällä sitä vasemmalle tai oikealle haluttuun leveyteen. Finance and Operations tallentaa haluamasi leveyden ja näyttää kyseisen sarakkeen tämänlevyisenä aina, kun avaat kyseisen luettelon sisältämän sivun. 
+**Ruudukon sarakkeet** – Voit muokata luettelon sarakkeen leveyttä valitsemalla koon muuttamiseen tarkoitetun palkin sarakkeen otsikon vasemmalla tai oikealla puolella ja vetämällä sitä vasemmalle tai oikealle haluttuun leveyteen. Finance and Operations tallentaa haluamasi leveyden ja näyttää kyseisen sarakkeen tämänlevyisenä aina, kun avaat kyseisen luettelon sisältämän sivun. 
 
-**Pikavälilehdet:** Joillain sivuilla on laajennettavia osioita nimeltä pikavälilehdet. Finance and Operations tallentaa tiedon, mitkä pikavälilehdet olet laajentanut ja mitkä pikavälilehdet olet tiivistänyt. Aina palatessasi sivulle samat pikavälilehdet laajennetaan tai tiivistetään edellisen käyttökertasi perusteella. Tässä artikkelissa kerromme, miten voit muuttaa pikavälilehtien osioiden järjestystä. Joissain tapauksissa pikavälilehden tiivistäminen parantaa suorituskykyä, koska Finance and Operationsin ei tarvitse noutaa tietoja kyseistä pikavälilehteä varten ennen kuin se laajennetaan. 
+**Pikavälilehdet** – Joillain sivuilla on laajennettavia pikavälilehdeksi kutsuttaja osia. Finance and Operations tallentaa tiedon, mitkä pikavälilehdet olet laajentanut ja mitkä pikavälilehdet olet tiivistänyt. Aina palatessasi sivulle samat pikavälilehdet laajennetaan tai tiivistetään edellisen käyttökertasi perusteella. Tässä artikkelissa kerromme, miten voit muuttaa pikavälilehtien osioiden järjestystä. Joissain tapauksissa pikavälilehden tiivistäminen parantaa suorituskykyä, koska Finance and Operationsin ei tarvitse noutaa tietoja kyseistä pikavälilehteä varten ennen kuin se laajennetaan. 
 
-**Tietoruudut:** Joillain sivuilla on osioita nimeltä Tietoruutu. Tämä ruutu sisältää kyseisen sivun aihepiiriin liittyvää tietoa vain-luku-muodossa. Kutakin Tietoruutu-osion osa kutsutaan Tietoruuduksi. Voit laajentaa tai tiivistää Tietoruudun, ja Finance and Operations tallentaa valintasi. Joissain tapauksissa tietoruudun tiivistäminen parantaa suorituskykyä, koska Finance and Operationsin ei tarvitse noutaa tietoja kyseistä tietoruutua varten ennen kuin se laajennetaan.
+**Tietoruudut** – Joillain sivuilla on Tietoruutu-nimisiä osia. Tämä ruutu sisältää kyseisen sivun aihepiiriin liittyvää tietoa vain-luku-muodossa. Kutakin Tietoruutu-osion osa kutsutaan Tietoruuduksi. Voit laajentaa tai tiivistää Tietoruudun, ja Finance and Operations tallentaa valintasi. Joissain tapauksissa tietoruudun tiivistäminen parantaa suorituskykyä, koska Finance and Operationsin ei tarvitse noutaa tietoja kyseistä tietoruutua varten ennen kuin se laajennetaan.
 
 ## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Eksplisiittinen mukauttaminen Mukauttaminen-työkalurivin avulla
 Jokaisella henkilöllä ja yrityksellä on eri perspektiivi siihen, mitkä tiedot ovat heille tärkeimpiä, tai mitkä tiedot eivät ole tarpeen heidän tavassaan harjoittaa liiketoimintaa. Mahdollisuus muokata tapaa, jolla tiedot järjestetään, miten niiden kanssa ollaan vuorovaikutuksessa tai jopa miten ne piilotetaan, on avain siihen, miten Finance and Operationsista tehdään henkilökohtainen ja tuottava kokemus. 
@@ -107,15 +107,20 @@ Joissain työtiloissa on lukumääräruutuja (ruutuja, joissa on numeroita), jot
 Koontinäyttö on usein ensimmäinen sivu, jonka näet, kun avaat Finance and Operationsin. Voit mukauttaa koontinäytön nimeämällä uudelleen työtilasi siirtymisruudut, näyttämällä vain haluamasi ruudut, nimeämällä ruudut uudelleen, tai järjestämällä ruudut haluamaasi järjestykseen. Mukauta koontinäkymä valitsemalla mikä tahansa ruutu ja avaa kontekstivalikko napsauttamalla hiiren oikealla painikkeella. Valitse kontekstivalikossa **Mukauta**. Jos valittu ruutu on se, jonka haluaisit piilottaa, nimetä uudelleen tai ohittaa, voit tehdä muutoksen suoraan esiin tulleessa Ominaisuudet-ikkunassa. Jos haluat järjestää ruudut, valitse **Mukauta tämä lomake** Ominaisuudet-ikkunassa avataksesi Mukauttaminen-työkalurivin. Voit sitten järjestää ruudut Siirrä-työkalun avulla.
 
 ## <a name="administration-of-personalization"></a>Mukauttamisen hallinta
-Kun olet mukauttanut sivun, voit jakaa mukautuksesi muiden käyttäjien kanssa. Se onnistuu viemällä mukautettuja sivuja. Tämän jälkeen voit pyytää käyttäjiä siirtymään mukautetulle sivulle ja tuomaan luomasi mukautustiedoston.
+Kun olet mukauttanut sivun, voit jakaa mukautukset muiden käyttäjien kanssa viemällä mukautetun sivun. Tämän jälkeen voit pyytää käyttäjiä siirtymään mukautetulle sivulle ja tuomaan luomasi mukautustiedoston.
 
-Jos käyttäjällä on järjestelmänvalvojan oikeudet, hän voi myös hallita muiden käyttäjien mukautuksia **Mukautukset**-sivulla. Tällä sivulla on neljä välilehteä: **Järjestelmä**, **Käyttäjät**, **Tuonti** ja **Tyhjennä**.
+Jos käyttäjällä on järjestelmänvalvojan oikeudet, hän voi myös hallita muiden käyttäjien mukautuksia **Mukautukset**-sivulla. Sivulla on neljä välilehteä: 
 
 - **Järjestelmä** – Voit poistaa tässä välilehdessä kaikki järjestelmän mukautukset tilapäisesti tai kokonaan käytöstä. Mukautuksia ei kuitenkaan poisteta. Sen sijaan kaikki sivut palautetaan oletustilaan. Jos otat mukautukset myöhemmin uudelleen käyttöön, kaikkia mukautuksia käytetään uudelleen kunkin käyttäjän sivulla. Voit myös poistaa kaikkien käyttäjien kaikki mukautukset. Huomioi, että kun poistat kaikki mukautukset, ei ole mitään tapaa ottaa ne uudelleen käyttöön järjestelmän kautta. Varmista sen vuoksi ennen tämän vaiheen suorittamista, että olet vienyt kaikki ne mukautukset, jotka ehkä haluat tuoda myöhemmin.
 - **Käyttäjät** – Voit määrittää tässä välilehdessä, voiko kukin käyttäjä tehdä implisiittisen vai eksplisiittisen mukautuksen. Voit myös määrittää, voiko kukin käyttäjä suorittaa implisiittisen vai eksplisiittisen mukautuksen tietyllä sivulla. Voit myös tuoda, viedä tai poistaa mukautuksia kullekin käyttäjälle.
 - **Tuonti** – Voit yhden tai usean käyttäjän mukautuksen. Voit käyttää välilehteä, kun olet luonut sivun tai työtilan mukautuksen, ja tuoda sitten mukautuksen mukautustiedostona. Voit tuoda mukautustiedoston ja käyttää sitä yhdelle tai usealle käyttäjälle valitsemalla kaikkien käyttäjien luettelosta yksittäiset käyttäjät. Vaihtoehtoisesti voit suodattaa tietyn rooli ja valita käyttäjät kyseisessä roolissa. Kun olet valinnut mukautusta käyttävät käyttäjät, valitse ensin **Tuo** ja sitten mukautustiedostosi. Mukautuksen oikeellisuus tarkistetaan ja sitä käytetään kaikille käyttäjille, kun he seuraavan kerran avaavat valitun sivun.
 - **Tyhjennä** – Voit tyhjentää yhden tai usean käyttäjän sivun tai työtilan mukautukset. Valitse ensin sivu tai työtila, josta mukautukset tyhjennetään. Valitse seuraavaksi yksittäiset käyttäjät kaikkien käyttäjien luettelosta. Vaihtoehtoisesti voit suodattaa tietyn rooli ja valita käyttäjät kyseisestä roolista. Kun olet valinnut sekä sivun tai työtilan ja käyttäjät, valitse **Tyhjennä**. Kaikki mukautukset, joita valitut käyttäjät ovat käyttäneet valitulla sivulla tai valitussa työtilassa, poistetaan. Tätä toimintoa ei voi kumota. Jos sivulla tai työtilassa on kuitenkin tallennettuja mukautuksia, nämä mukautukset voidaan tuoda uudelleen.
 
+## <a name="personalization-of-inventory-dimensions"></a>Varastodimensioiden mukauttaminen
 
+Kun mukautat varastodimension asetuksia sivulla, pidä mielessä **Näytä dimensio** -asetuksen avulla luodut asetukset. Jos esimerkiksi piilotat eränumeron varastodimension sarakkeen mukauttamalla ja sarake näkyy, kun sivu avataan seuraavan kerran, syynä voi olla se, että dimension näyttöasetukset määrittävät, mitkä varastodimension sarakkeet näytetään. 
 
+Dimension näyttöasetuksia käytetään kaikilla sivulla, ja nämä asetukset korvaavat kaikki yksittäisten sivujen mukautetut varastodimension kenttien asetukset. 
+
+Eränumeron varastodimension esimerkissä kyseinen dimensio olisi poistettava taulukon **Näytä dimensiot** -asetuksesta, jotta se ei näkyisi. Silloin tätä muutosta käytettäisiin tietyn sivun lisäksi kaikilla sivuilla.
 

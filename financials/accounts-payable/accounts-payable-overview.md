@@ -1,9 +1,9 @@
 ---
 title: "Ostoreskontran määrittäminen"
 description: "Tässä artikkelissa kuvataan sivut, joiden avulla määritetään perustoiminnot ja valinnaiset toiminnot Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin ostoreskontrassa. Artikkelissa kerrotaan myös ennen ostoreskontran määrittämisen aloittamista suoritettavat asetusvaiheet."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2a61cb86a4f2cfc6d701445c139e22df0db44f8c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 9b29fec7fadbb1ac699f1144f011df1bfd2f511a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -47,7 +46,7 @@ Ennen ostoreskontran määrittämäistä, seuraavat asetukset on määritettäv�
 ## <a name="setup-pages-for-accounts-payable"></a>Ostoreskontra-asetusten sivut
 
 Voit määrittää seuraavilla sivuilla ostoreskontran perustoiminnot kullekin yritykselle. Sivut mainitaan suositeltavassa määritysjärjestyksessä. Voit helpottaa määritysprosessia luomalla ensimmäisistä tietueista malleja. Mallissa arvot yleensä annetaan useisiin sellaisiin kenttiin, joiden ominaisuuksia organisaatio haluaa käyttää tietyn toimittajatyypin yhteydessä.
-1.  Määritä Maksuehdot-sivulla maksuehdot, jotka haluat määrittää myyntitilauksiin, ostotilauksiin, asiakkaisiin ja toimittajiin ja joiden mukaan laskujen eräpäivät määräytyvät.
+1.  Määritä Maksuehdot-sivulla maksuehdot, jotka haluat määrittää myyntitilauksiin, ostotilauksiin, asiakkaisiin ja toimittajiin ja joiden mukaan laskujen eräpäivät määräytyvät. Lisätietoja on ohjeaiheessa [Toimittajan toimitusmaksujen määrittäminen](tasks/define-vendor-payment-fees.md).
 2.  Luo ja ylläpidä Maksutapa - Toimittajat -sivulla tiedot tavoista, joilla organisaatio maksaa toimittajille.
 3.  Luo ja ylläpidä Toimittajaryhmät-sivulla toimittajaryhmiä, joilla on samat tärkeät kirjaus-, tilitys-, maksu-, raportointi- ja ennusteparametrit.
 4.  Määritä Toimittajan kirjausprofiilit -sivulla kirjausprofiilit, jotka määrittävät, miten toimittajatapahtumat kirjataan kirjanpitoon.

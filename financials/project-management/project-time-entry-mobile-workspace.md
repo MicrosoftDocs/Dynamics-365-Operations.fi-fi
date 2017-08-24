@@ -18,12 +18,11 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: d80dea89db1fbe270b96063f3818ec3ac95239c8
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 83899969255a9b771fc5e62e66e3c5ffdca0296e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -105,11 +104,11 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 2.  Valitse **Aikamerkintä**. Kuluvan viikon kalenteripäivät näytetään.
 3.  Napsauta valitun päivän kohdalla **Toiminnot** &gt; **Uusi kirjaus**.
 4.  Anna kirjattava tuntien määrä.
-5.  Valitse aikakirjauksen kohdeprojekti. Luettelo koostuu projekteista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+5.  Valitse aikakirjauksen kohdeprojekti. Luettelo koostuu projekteista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 6.  Jos projekti ei ole luettelossa, valitse **Hae**. Voit hakea nimen, projektin nimen tai asiakkaan perusteella.
-7.  Valitse luokka. Luettelo koostuu luokista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+7.  Valitse luokka. Luettelo koostuu luokista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 8.  Jos luokka ei ole luettelossa, valitse **Hae**. Etsi luokan tai luokan nimen mukaan.
-9.  Valitse tehtävä. Luettelo koostuu tehtävistä, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+9.  Valitse tehtävä. Luettelo koostuu tehtävistä, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 10. Jos tehtävä ei ole luettelossa, valitse **Hae**. Etsi tehtävän numeron tai tarkoituksen mukaan.
 
 11. Valitse rivin ominaisuus.

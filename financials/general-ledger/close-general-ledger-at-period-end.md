@@ -3,7 +3,7 @@ title: Sulje kirjanpito kauden lopussa
 description: "Tässä aiheessa käsitellään tehtäviä, jotka yleensä viimeistellään, kun suoritetaan kirjanpidon kauden sulkemista."
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,13 +15,13 @@ ms.custom: 14111
 ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 81d687cc16ef43442c8c1c166cc6f0d8b171e28f
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: bcf58b0ca995883bc466eec66a3d75c73c0be79e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -45,8 +45,13 @@ Kirjanpidossa voit tehdä päätöstoimenpiteet jakson tai vuoden lopussa. Lopet
 -   Luo kauden lopun tilinpäätöksiä käyttämällä taloushallinnon raportointia.
 -   Määritä kirjanpitokaudet asentoon **Pidossa** niin, ettei muita kirjauksia tule. Voit myös rajoittaa kauden tietylle käyttäjäryhmälle, loppukauden tehtävien aikana, paremman hallinnan takia. Se ei ole suositeltavaa määrittää jaksoja asentoon **Suljettu pysyvästi**, koska kun kausi on suljettu, sitä ei voi avata uudelleen.
 
-Tilikauden työtilan sulkemista voidaan käyttää järjestämään ja seuraamaan erilaisia kauden lopun prosessien edellyttämiä tehtäviä. Katso lisätietoja ohjeaiheista [Tilikauden sulkemisen työtila](financial-period-close-workspace.md) ja [Tilikauden lopetus](Year-end-close.md). 
+Tilikauden työtilan sulkemista voidaan käyttää järjestämään ja seuraamaan erilaisia kauden lopun prosessien edellyttämiä tehtäviä. 
 
+
+Lisätietoja on seuraavissa aiheissa:
+- [Tilikauden sulkemisen työtila](financial-period-close-workspace.md) 
+- [Tilikauden lopetus](Year-end-close.md)  
+- [Tilikauden joukkosulkeminen](tasks/mass-financial-period-close.md)
 
 
 

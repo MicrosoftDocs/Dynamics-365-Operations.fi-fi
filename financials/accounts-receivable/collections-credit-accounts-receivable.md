@@ -1,9 +1,9 @@
 ---
 title: "Hyvitykset ja perinnät myyntireskontrassa"
 description: "Myyntireskontran perintätietoja hallitaan yhdessä keskitetyssä näkymässä käyttämällä Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin Perintä-sivua. Luotonvalvonnan johtajat voivat käyttää uutta keskitettyä näkymää perinnän hallitsemiseen. Perimisasiamiehet voivat aloittaa perintäprosessin asiakasluetteloista, jotka muodostetaan ennalta määritettyjen ehtojen mukaan, tai Asiakkaat-sivulta."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 282084b9d4e63795ec475690e5b22e06c23bb704
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -90,6 +89,8 @@ Voit peruuttaa, palauttaa tai kääntää kokonaisia korkolaskuja tai niiden osa
 
 Nämä muutokset vaikuttavat vain korkolaskuihin sekä niihin sisältyviin korkoihin ja kuluihin. Poista kaikki maksut, jotka asiakas on velkaa kohdan "Luo poistotapahtumia yhdellä askeleella" vaiheiden avulla.
 
+Lisätietoja on ohjeaiheissa [Korkoryhmäalueen luominen](tasks/create-interest-code-range.md) ja [Koron käsittely](tasks/process-interest.md). 
+
 ## <a name="create-writeoff-transactions"></a>Luo poistotapahtumat
 Voit kirjata epävarmat saatavat pois napsauttamalla Kirjaa pois -painiketta Perintä-lomakkeessa tai Erääntyneet saldot-, Asiakkaat- ja Avoimet asiakkaan laskut -luettelosivuilla. 
 
@@ -100,7 +101,10 @@ Kun kirjaat pois asiakkaan tapahtumia, kaikki asiakkaan tapahtumat merkitään a
 -   Kirjauskansiorivin kolmas tyyppi on kirjanpidon poiskirjaustieto arvonlisäveroille. Kirjauskansiorivi luodaan vain, jos Erillinen arvonlisävero -asetus on valittuna myyntireskontran parametrisivulla. Jos merkityt tapahtumat sisältävät useita arvonlisäveron kulutilien, dimensioiden ja arvonlisäverokoodien yhdistelmiä, kullekin yhdistelmälle luodaan erillinen kirjauskansion rivi.
 
 Poiskirjaustapahtuma luodaan tapahtuman valuutalla.
-Ei katetta -maksujen (NFS) käsittely  
+
+Lisätietoja on ohjeaiheessa [Poiskirjauksen kirjauskansion luominen asiakkaalle](tasks/create-write-off-journal-customer.md).
+
+<a name="process-not-sufficient-funds-nsf-payments"></a>Ei katetta -maksujen (NFS) käsittely  
 --------------------------------------------
 
 Voit käsitellä NSF-maksuja napsauttamalla Perintä-sivulla NSF-maksu -kohtaa. Maksu peruutetaan, kun napsautat tätä painiketta. Jos NSF-maksu koskee asiakkaan kuluja, veloitustapahtuma luodaan maksujen kirjauskansioon. Maksusumma perustuu automaattisten veloitusten asetuksiin. Automaattiset veloitukset, joita sovelletaan NSF-maksuihin määritetään kuluryhmässä, joka on valittu Pankkitilit-sivulla pankkitilille, jota asia koskee.

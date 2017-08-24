@@ -1,9 +1,9 @@
 ---
 title: Excelin budjettisuunnittelumallit
 description: "Tässä aiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa."
-author: twheeloc
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
-ms.author: sigitac
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: ryansand
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: fi-fi
 ms.lasthandoff: 07/27/2017
 
@@ -38,22 +38,27 @@ Tässä ohjeaiheessa kuvataan, miten luodaan Excel-malleja, joita käytetään b
 
 Budjettisuunnitelma-asiakirjoja voi tarkastella ja muokata käyttämällä yhtä tai useampaa asettelua. Kussakin asettelussa voi olla liitetty budjettisuunnitelman asiakirjamalli, jotta budjettisuunnitelman tietoja voidaan tarkastella ja muokata Excel-laskentataulukossa. Tässä ohjeaiheessa luodaan budjettisuunnitelman asiakirjamalli käyttämällä valmista asettelumääritystä. 
 
-Avaa **Budjettisuunnitelmien luettelo** (**Budjetointi** &gt; **Budjettisuunnitelmat**). Luo uusi budjettisuunnitelma-asiakirja valitsemalla **Uusi**. 
+1. Avaa **Budjettisuunnitelmien luettelo** (**Budjetointi** &gt; **Budjettisuunnitelmat**). 
+2. Luo uusi budjettisuunnitelma-asiakirja valitsemalla **Uusi**. 
 
-[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+  [![Budjettisuunnitelmaluettelo](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
-Käytä **Lisää rivi** -vaihtoehtoa, jos haluat lisätä rivejä. Voit tarkastella budjettisuunnitelman asiakirjan asettelun määrityksiä valitsemalla **Asettelut**. 
+3. Käytä **Lisää rivi** -vaihtoehtoa, jos haluat lisätä rivejä. Voit tarkastella budjettisuunnitelman asiakirjan asettelun määrityksiä valitsemalla **Asettelut**. 
 
-[![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+  [![Budjettisuunnitelmien lisäys](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Voit tarkistaa asettelun määritykset ja muuttaa niitä tarvittaessa. Siirry kohtaan **Malli** &gt; **Luo** luodaksesi Excel-tiedoston tälle asettelulle. Kun malli on luotu, siirry kohtaan **Malli** &gt; **Näytä** avataksesi ja tarkistaaksesi budjettisuunnitelman asiakirjamallin. Voit tallentaa Excel-tiedoston paikalliseen asemaan. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
+Voit tarkistaa asettelun määritykset ja muuttaa niitä tarvittaessa. 
+1. Siirry kohtaan **Malli** &gt; **Luo** luodaksesi Excel-tiedoston tälle asettelulle. 
+2. Kun malli on luotu, siirry kohtaan **Malli** &gt; **Näytä** avataksesi ja tarkistaaksesi budjettisuunnitelman asiakirjamallin. Voit tallentaa Excel-tiedoston paikalliseen asemaan. 
+
+[![Tallenna nimellä](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Budjettisuunnitelman asiakirjan asettelua ei voi muokata, kun Excel-malli on liitetty siihen. Voit muokata asettelua, poistamalla liitetyn Excel-mallitiedoston ja luomalla se uudelleen. Tämä tarvitaan pitämään asettelun kentät ja laskentataulukko synkronoituna. 
 
 Excel-malli sisältää budjettisuunnitelman asiakirja-asettelun kaikki osat, joiden **Käytettävissä työkirjassa** -sarakkeen arvo on Tosi. Excel-mallissa ei sallita päällekkäisiä osia. Esimerkiksi jos asettelu sisältää sarakkeet Request Q1, Request Q2, Request Q3 ja Request Q4 sekä summasarakkeen, joka edustaa kaikkien neljän neljännesvuosittaisen sarakkeen summaa, vain neljännesvuosittaisia sarakkeita tai summasaraketta voidaan käyttää Excel-mallissa. Excel-tiedosto ei voi päivittää päällekkäisiä sarakkeita päivityksen aikana, koska taulukon tiedoista voi tulla vanhentuneita tai virheellisiä.
 
-[![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
+[![Esimerkki](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
 > Voit välttää mahdollisia ongelmia budjettisuunnitelman tietojen tarkastelemisessa ja muokkaamisessa Excelissä, jos sama käyttäjä on kirjautunut sekä Microsoft Dynamics 365 for Finance and Operations, Enterprise Editioniin että Microsoft Dynamics Office -apuohjelman Data Connectoriin.
@@ -63,7 +68,7 @@ Jos haluat lisätä otsikkotietoja, valitse ylin rivi Excel-tiedostossa ja lisä
 
 [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
 
-Valitse **Rakenne**-välilehdessä,** ****Lisää kenttiä** ja sitten **BudgetPlanHeader** yksikön tietolähteeksi.
+Valitse **Rakenne**-välilehdessä, **Lisää kenttiä** ja sitten **BudgetPlanHeader** yksikön tietolähteeksi.
 
 [![bpt6](./media/bpt6-1024x615.png)](./media/bpt6.png)
 

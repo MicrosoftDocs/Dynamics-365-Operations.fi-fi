@@ -16,7 +16,7 @@ ms.custom: 62243
 ms.assetid: ffd17b5f-9aea-40e0-be49-d8702f615256
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 975497e8ed0c9738c225bad4db9165bf2ebc0192
@@ -42,7 +42,9 @@ Näiden ohjeiden avulla voit valmistella yhden yrityksen maksujen käsittelyn or
 Määritä keskitettyjen maksujen organisaatiohierarkia. Samaa organisaatiohierarkiaa käytetään sekä toimittajien että asiakkaiden keskitetyissä maksuissa. **Huomautus:** Hierarkian rakenteella ei ole merkitystä keskitettyjen maksujen käsittelyssä. Mikä tahansa hierarkian yritys voi käsitellä maksuja hierarkian toisten yritysten puolesta. Voit luoda uuden organisaatiorakenteen **Organisaatiohierarkiat**-sivulla. Valitse **Tarkoitus**-kenttään **Keskitetyt maksut**. 
 
 ## <a name="set-up-an-intercompany-account-for-centralized-payments"></a>Keskitettyjen maksujen konsernitilin määrittäminen
-Kun nykyisen yrityksen maksutapahtumat selvitetään muiden yritysten laskuja vastaan, jokaiselle yritykselle luodaan asianmukaiset erääntymiskohteen ja -lähteen tapahtumat. Määritä yritys, johon sovellettavissa olevat käteisalennukset ja realisoituneet voitto- tai tappiosummat kirjataan. Ennen kuin aloitat, päätä, mitä yritystä toimittajan ja asiakkaan maksujen käsittelyssä käytetään. Jos yksi yritys käsittelee toimittajan maksut ja toinen asiakkaan maksut, sinun on siirryttävä yritysten välillä. Valitse **Konsernin sisäinen laskenta** -sivulla sen yrityksen konsernin sisäisen suhteen tietue, jonka puolesta käsittelet maksut. **Keskitetyt maksut** -välilehdessä voit määrittää, kirjataanko käteisalennukset maksutapahtuman (tai muun toimittajatilin saldoa pienentävän tapahtuman) yritykseen vai laskutapahtuman (tai muun toimittajatilin saldoa suurentavan tapahtuman) yritykseen. Tämä valinta toimii yhdessä **Käteisalennuksen hallinta**- ja **Ostoreskontran parametrit** -sivun **Käteisalennuksen hallinta** -kentän kanssa. Liikamaksuissa ja pyöristyseroissa käytetään maksutapahtuman yrityksen asetuksia. Liian pienissä maksuissa sekä pyöristyseroissa käytetään laskun yrityksen asetuksia.
+Kun nykyisen yrityksen maksutapahtumat selvitetään muiden yritysten laskuja vastaan, jokaiselle yritykselle luodaan asianmukaiset erääntymiskohteen ja -lähteen tapahtumat. Määritä yritys, johon sovellettavissa olevat käteisalennukset ja realisoituneet voitto- tai tappiosummat kirjataan. Ennen kuin aloitat, päätä, mitä yritystä toimittajan ja asiakkaan maksujen käsittelyssä käytetään. Jos yksi yritys käsittelee toimittajan maksut ja toinen asiakkaan maksut, sinun on siirryttävä yritysten välillä. Valitse **Konsernin sisäinen laskenta** -sivulla sen yrityksen konsernin sisäisen suhteen tietue, jonka puolesta käsittelet maksut. 
+
+**Keskitetyt maksut** -välilehdessä voit määrittää, kirjataanko käteisalennukset maksutapahtuman (tai muun toimittajatilin saldoa pienentävän tapahtuman) yritykseen vai laskutapahtuman (tai muun toimittajatilin saldoa suurentavan tapahtuman) yritykseen. Tämä valinta toimii yhdessä **Käteisalennuksen hallinta**- ja **Ostoreskontran parametrit** -sivun **Käteisalennuksen hallinta** -kentän kanssa. Liikamaksuissa ja pyöristyseroissa käytetään maksutapahtuman yrityksen asetuksia. Liian pienissä maksuissa sekä pyöristyseroissa käytetään laskun yrityksen asetuksia.
 
 ## <a name="map-vendor-accounts-across-legal-entities"></a>Eri yritysten toimittajatilien yhdistäminen
 Jos suoritat toimittajalle maksun yhdestä yrityksestä ja haluat valita kyseisen toimittajan laskuja muista yrityksistä, varmista, että kunkin yrityksen kaikki vastaavat toimittajatilit käyttävät samaa osoitekirjan tunnusta. Jos vastaanotat maksun asiakkaalta, joka maksaa laskut useaan yritykseen, sinun on varmistettava, että kaikki vastaavat asiakastilit käyttävät samaa osoitekirjatunnusta jokaisessa yrityksessä.

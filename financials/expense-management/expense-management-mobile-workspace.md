@@ -16,12 +16,12 @@ ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2dd3db95eb741c37dd8a50c397cb4c9494599250
-ms.openlocfilehash: 993586b1fb46c21d2b68a6060ab897c8ccc76a6c
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 58d36505461ea89bf466209d3da968d1357e58ae
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -131,11 +131,11 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 ## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Kulujen kirjaaminen nopeasti kulujen hallinnan mobiilityötilassa
 1. Avaa **Kulujen hallinta** -työtila mobiililaitteessa.
 2. Valitse **Kulun pikasyöttö**.
-3. Valitse kulun luokka. Näet luettelon kululuokista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos luokka ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi kululuokan tai -tyypin perusteella.
+3. Valitse kulun luokka. Näet luettelon kululuokista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jos luokka ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi kululuokan tai -tyypin perusteella.
 4. Anna kulun tapahtumapäivämäärä.
 5. Valinnainen: anna kulun myyjä.
 6. Syötä kulun summa.
-7. Valitse kulun valuutta. Näet luettelon valuuttakoodeista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvoisesti ladataan 400 valuuttaa, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos valuutta ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi valuutan tai nimen mukaan.
+7. Valitse kulun valuutta. Näet luettelon valuuttakoodeista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvoisesti ladataan 400 valuuttaa, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jos valuutta ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi valuutan tai nimen mukaan.
 8. Valitse **Ota kuva** tai **Valitse kuva**.
 9. Noudata seuraavia ohjeita:
 
@@ -166,11 +166,11 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 7. Valitse luettelosta vähintään yksi kulu.
 8. Valitse **Valmis**.
 9. Lisää uusi kulu kuluraporttiin valitsemalla **Uusi kulu**.
-10. Valitse kulun luokka. Näet luettelon kululuokista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos luokka ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi kululuokan tai -tyypin perusteella.
+10. Valitse kulun luokka. Näet luettelon kululuokista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jos luokka ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi kululuokan tai -tyypin perusteella.
 11. Valinnainen: anna kulun myyjä.
 12. Anna kulun tapahtumapäivämäärä.
 13. Syötä kulun summa.
-14. Valitse kulun valuutta. Näet luettelon valuuttakoodeista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvoisesti ladataan 400 valuuttaa, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos valuutta ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi valuutan tai nimen mukaan.
+14. Valitse kulun valuutta. Näet luettelon valuuttakoodeista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvoisesti ladataan 400 valuuttaa, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jos valuutta ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Etsi valuutan tai nimen mukaan.
 15. Valitse **Valmis**.
 16. Tarkenna kulun tietoja valitsemalla **Lisää lisätiedot**. Käytettävissä olevat kentät määräytyvät yrityksen kulujen hallinnan määritysten mukaan.
 17. Jos yrityksen käytäntö edellyttää kuittien liittämistä, valitse **Kuitit** ja tee seuraavat toimet:
@@ -216,12 +216,12 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
         - Jos valitsit **Aiemmat vieraat**, toimi seuraavasti:
 
-            1. Valitse luettelosta vähintään yksi aiempi vieras. Näkyviin tulee luettelo vieraista, jotka olet lisännyt aiempiin kuluraportteihin. Nämä raportit on ladattu offline-käytön mahdollistavaan sovellukseen. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos aiempi vieras ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Voit hakea nimen, organisaation, maan tai ammattinimikkeen perusteella.
+            1. Valitse luettelosta vähintään yksi aiempi vieras. Näkyviin tulee luettelo vieraista, jotka olet lisännyt aiempiin kuluraportteihin. Nämä raportit on ladattu offline-käytön mahdollistavaan sovellukseen. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jos aiempi vieras ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Voit hakea nimen, organisaation, maan tai ammattinimikkeen perusteella.
             2. Valitse **Valmis**.
 
         - Jos valitsit **Työtoverit**, toimi seuraavasti:
 
-            1. Valitse luettelosta vähintään yksi työtoveri. Näet luettelon työtovereista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos työtoveri ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Voit hakea nimen, yrityksen tai ammattinimikkeen perusteella.
+            1. Valitse luettelosta vähintään yksi työtoveri. Näet luettelon työtovereista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jos työtoveri ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Voit hakea nimen, yrityksen tai ammattinimikkeen perusteella.
             2. Valitse **Valmis**.
 
     3. Palaa kulun tietoihin valitsemalla **Takaisin**.
@@ -230,7 +230,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
     1. Valitse erittelyn ensimmäinen päivämäärä.
     2. Valitse **Lisää erittely**.
-    3. Valitse kulun erittelyn aliluokka. Näet luettelon kulujen aliluokista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jos aliluokka ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Tee haku kulujen aliluokan nimen mukaan.
+    3. Valitse kulun erittelyn aliluokka. Näet luettelon kulujen aliluokista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jos aliluokka ei ole luettelossa, tee verkkohaku valitsemalla **Hae**. Tee haku kulujen aliluokan nimen mukaan.
     4. Anna eriteltävän tapahtuman summa.
     5. Muokkaa tapahtuman päivämäärää tarvittaessa.
     6. Valitse **Valmis**.

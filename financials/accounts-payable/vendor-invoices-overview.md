@@ -1,9 +1,9 @@
 ---
 title: Toimittajan laskujen yleiskatsaus
 description: "Tässä artikkelissa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,15 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 16ff8ebb0e620f45c4d290ee5076d5505abf3436
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 4c27b5a8ab1a7aeab31b48937dcaf4a86d798689
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -75,11 +74,23 @@ Kun kirjaat laskun, jokaisen nimikkeen **Laskuttamatta**-määrä päivitetään
 
 Tässä vaihtoehdossa oletetaan, että vähintään yksi tuotteen vastaanotto on kirjattu ostotilaukseen. Toimittajalasku perustuu näiden tuotteiden vastaanottoihin ja vastaa niiden määriä. Laskun kirjanpitotiedot perustuvat tietoihin, jotka syötettiin laskujen kirjauksen yhteydessä.
 
+Lisätietoja on ohjeaiheessa [Toimittajan laskun kirjaaminen ja täsmäyttäminen vastaanotettuihin määriin](../accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md)
+
 ## <a name="working-with-multiple-invoices"></a>Useita laskujen käsittely
 
-Voit käsitellä useita laskuja samaan aikaan ja kirjata ne kaikki samaan aikaan. Jos sinun on luotava useita laskuja, käytä **Odottavat toimittajan laskut** -sivua. Jos sinun on kirjattava ja tulostettava useita toimittaja laskuja, käytä laskujen hyväksymiskirjauskansion sivua. Jos käytät laskun hyväksynnän kirjauskansiota, ostotilaukselle on oltava kirjattuna ainakin yksi tuotteen vastaanotto ja että ostotilauksen laskun on oltava kirjattuna laskurekisteriin. Laskun kirjanpitotiedot ovat peräisin rekisteriin kirjatusta laskusta.
+Voit käsitellä useita laskuja samaan aikaan ja kirjata ne kaikki samaan aikaan. Jos sinun on luotava useita laskuja, käytä **Odottavat toimittajan laskut** -sivua. Jos sinun on kirjattava ja tulostettava useita toimittaja laskuja, käytä laskujen hyväksymiskirjauskansion sivua. Jos käytät laskun hyväksynnän kirjauskansiota, ostotilaukselle on oltava kirjattuna ainakin yksi tuotteen vastaanotto ja että ostotilauksen laskun on oltava kirjattuna laskurekisteriin. Laskun kirjanpitotiedot ovat peräisin laskusta, joka on kirjattu rekisteriin.
 
 
+Lisätietoja on kohdassa 
 
+ - [Määritä toimittajan laskutuskäytännöt](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
+
+ - [Laskun keskeiset tiedot ostoreskontraan toimittajalaskun avulla](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+ 
+ - [Laskun keskeiset tiedot ostoreskontraan hyväksymiskirjauskansion avulla](tasks/key-invoice-data-into-ap-system-approval-journal.md)
+  
+ - [Laskun keskeiset tiedot ostoreskontrajärjestelmään laskupoolin avulla](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
+ 
+ - [Toimittajan laskun tallentaminen laskukirjauskansioon](tasks/record-vendor-invoice-invoice-journal.md)
 
 

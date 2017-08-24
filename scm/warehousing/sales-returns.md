@@ -15,13 +15,13 @@ ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: 0484723217ccff2ebf717d059429d863ececb797
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -37,7 +37,7 @@ Asiakas voi palauttaa nimikkeitä useista syistä. Nimike saattaa olla viallinen
 ## <a name="return-order-process"></a>Palautustilausten prosessi
 Seuraavassa kuvassa on yhteenveto palautustilausten prosessista.  
 
-[![salesreturns01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![Palautustilausten prosessi](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 Palautustilauksilla on kaksi prosessia: tuotteen fyysinen palautus tai pelkkä hyvitys.
 
@@ -213,7 +213,7 @@ Korvaavien tuotteiden hallintaan on kaksi menetelmää:
 
 Ennakolta tehtävässä korvauksessa korvaava tuote voidaan toimittaa asiakkaalle ennen, kuin palautus on vastaanotettu. Tämä menetelmä on hyödyllinen, jos nimike on esimerkiksi koneen osa, jota ei voi irrottaa ennen kuin sille on saatavilla varaosa, tai jos haluat, että asiakkaasi saa korvaavan tuotteen niin pian kuin mahdollista. Ennakolta tehtävä korvaustilaus on itsenäinen myyntitilaus. Otsikkotiedot alustetaan asiakkaan perusteella ja rivin tiedot alustetaan palautustilauksesta. Voit muokata, käsitellä ja poistaa korvaustilausta erillään palautustilauksesta. Kun poistat korvaustilauksen, näyttöön tulee sanoma, että tilaus on luotu korvaustilaukseksi. Seuraavassa kuvassa esitellään ennakolta tehtävän korvauksen prosessi.  
 
-[![Ennakolta tehtävän korvauksen prosessi](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)  
+![Ennakolta tehtävän korvauksen prosessi](./media/SalesReturn04.png)
 
 Palautustilaus sisältää viittauksen korvaustilaukseen. Jos palautustilaukselle luodaan ennakolta tehtävä korvaustilaus ennen, kuin viallinen tuote on palautettu, et voi valita käsittelykoodeja korvaukselle sen jälkeen, kun viallinen tuote on palautettu.
 
@@ -221,7 +221,7 @@ Palautustilaus sisältää viittauksen korvaustilaukseen. Jos palautustilauksell
 
 Jos toimitat asiakkaalle korvaavan nimikkeen ja käytät palautustilauksessa **Korvaus ja hävitys**- tai **Korvaus ja hyvitys** -käsittelytoimenpidettä, käytä prosessia, joka esitellään seuraavassa kuvassa.  
 
-[![Korvausprosessi, kun käytössä on käsittelykoodi](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)  
+![Korvausprosessi, kun käytössä on käsittelykoodi](./media/SalesReturn05.png)
 
 Korvaava nimike toimitetaan itsenäisen myyntitilauksen, eli korvaavan myyntitilauksen avulla. Tämä myyntitilaus luodaan, kun palautustilauksen pakkausluettelo muodostetaan. Tilauksen otsikossa käytetään asiakkaan tietoja, joihin viitataan palautustilauksen otsikossa. Rivin tiedot on kerätään tiedoista, jotka on syötetty **Korvaava nimike** -sivulla. **Korvaava nimike** -sivulle on täytettävä rivit, joilla on käsittelytoimenpiteitä, jotka alkavat sanalla "korv". Korvaavan nimikkeen määrää tai tyyppiä ei kuitenkaan vahvisteta tai rajoiteta. Tämä mahdollistaa tapaukset, joissa asiakas haluaa saman nimikkeen eri kokoonpanossa tai koossa, sekä tapaukset, joissa asiakas haluaa täysin eri nimikkeen. Samanlainen nimike syötetään oletuksena **Korvaava nimike** -sivulle. Voit kuitenkin valita toisen nimikkeen, jos kyseinen toiminto on otettu käyttöön. **Huomautus:** voit muokata ja poistaa korvaavan myyntitilauksen, kun se on luotu.
 
@@ -254,7 +254,7 @@ Palautustilauksia voi suorittaa kahden organisaatiosi sisäisen yrityksen välil
 
 Seuraavassa kuvassa esitellään vähimmäismääritys, joka tarvitaan kahden yrityksen konsernin sisäiseen suhteeseen ja konsernin sisäiseen kaupankäyntiin.  
 
-[![Vähimmäisasetukset](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)  
+![Vähimmäisasetukset](./media/SalesReturn06.png)
 
 Seuraavassa tilanteessa CompBuy on ostava yritys, ja CompSell on myyjäyritys. Yleensä myyjäyritys toimittaa tavarat ostavalle yritykselle tai, suoratoimitustapauksissa suoraan loppuasiakkaalle. CompBuy on määritellyt toimittajan IC\_CompSell konsernin sisäiseksi päätepisteeksi, joka on liitetty CompSell-yritykseen. Samanaikaisesti CompSell on määritellyt asiakkaan IC\_CompBuy konsernin sisäiseksi päätepisteeksi, joka on liitetty CompBuy-yritykseen. Molempiin yrityksiin on määritettävä asianmukaiset toimintakäytännöt ja arvon määritykset. Suoratoimitustilanteessa konsernin sisäinen palautustilaus, joka on lisäksi konsernin sisäinen myyntitilaus luodaan myyjäyrityksessä. Konsernin sisäisen palautustilauksen palautusnumeron voi poimia CompSellin RMA-numerosarjasta, tai se voidaan kopioida CompBuyn alkuperäisen palautustilauksen palautusnumerosta. Palautusnumeron asetukset CompBuyn **PurchaseRequisition**-toimintakäytännössä määrittävät nämä toiminnot. Jos palautusnumero synkronoidaan suosittelemme valmistautumaan numeroristiriitariskin lieventämiseen, jos molemmat yritykset käyttävät samaa numerosarjaa.
 
@@ -262,7 +262,7 @@ Seuraavassa tilanteessa CompBuy on ostava yritys, ja CompSell on myyjäyritys. Y
 
 Tähän tilanteeseen liittyy kaksi saman organisaation yritystä seuraavan kuvan mukaisesti.  
 
-[![Yksinkertainen konsernin sisäinen palautus](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
+![Yksinkertainen konsernin sisäinen palautus](./media/SalesReturn07.png)
 
 Tilaus-toimitusketjun voi muodostaa, kun toimittajan palautustilaus luodaan ostavassa yrityksessä tai asiakkaan palautustilaus luodaan myyjäyrityksessä. Finance and Operations luo vastaavan tilauksen toiseen yritykseen ja varmistaa, että toimittajan palautustilauksen otsikko- ja rivitiedot vastaavat asiakkaan palautustilauksen asetuksia. Luotu palautustilaus joko sisältää tai jättää pois viittauksen (**Etsi myyntitilaus**) olemassa olevaan asiakkaan laskuun. Kummankin tilauksen pakkausluettelo ja lasku voidaan käsitellä erikseen. Sinun ei tarvitse luoda pakkausluetteloa toimittajan palautustilaukselle ennen kuin luot pakkausluettelon asiakkaan palautustilaukselle.
 
@@ -270,7 +270,7 @@ Tilaus-toimitusketjun voi muodostaa, kun toimittajan palautustilaus luodaan osta
 
 Tämä tilanne voidaan luoda, jos edellisen **Suoratoimitus**-tyyppinen myynti on valmis ja asiakkaan kanssa toimivalla yrityksellä on asiakasta koskeva lasku. Seuraavassa kuvassa CompBuy on myynyt ja laskuttanut tuotteita asiakkaalle Extern. Tuotteet on toimitettu suoraan CompSell-yritykseltä asiakkaalle konsernin sisäisen tilausketjun kautta.  
 
-[![Suoratoimitettavat palautukset kolmen osapuolen kesken](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)  
+![Suoratoimitettavat palautukset kolmen osapuolen kesken](./media/SalesReturn08.png)
 
 Jos ulkoinen asiakas haluaa palauttaa tuotteet, CompBuy-yritys luo asiakkaalle palautustilauksen (RMA02). Konsernin sisäinen ketju luodaan, kun palautustilaus merkitään suoratoimitettavaksi. Kun käytät **Etsi myyntitilaus** -toimintoa etsiessäsi palautettavan myyntilaskun, luodaan konsernin sisäinen tilausketju, joka koostuu seuraavista asiakirjoista:
 
@@ -292,7 +292,7 @@ Seuraavissa esimerkeissä palautuksen kustannushinta esitetään **Varastokustan
 
 Palautustilauksessa ei ole viittausta myyntilaskuun. Palautettu nimike hyvitetään. **Hyvityksen korjaus** -parametri ei ole valittuna, kun palautustilauksen laskun tai hyvityslasku muodostetaan.  
 
-[![Palautustilauksessa ei ole viittausta myyntilaskuun](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)  
+![Palautustilauksessa ei ole viittausta myyntilaskuun](./media/SalesReturn09.png)  
 
 **Huomautus:** nimikkeen päätietuehintaa käytetään **Palautuksen kustannushinta** -parametrin oletusarvona. Oletushinta eroaa kustannushinnasta varasto-oton hetkellä. Vaikutus on siis, että on syntynyt tappio-arvo on 3. Palautustilaus ei lisäksi sisällä alennusta, joka asiakkaalle oli annettu myyntitilauksessa. Tämän vuoksi ilmenee liian suuri hyvitys.
 
@@ -300,7 +300,7 @@ Palautustilauksessa ei ole viittausta myyntilaskuun. Palautettu nimike hyvitetä
 
 Esimerkki 2 on muuten sama kuin esimerkki 1, mutta **Hyvityksen korjaus** -parametri on valittuna, kun palautustilauksen lasku muodostetaan.  
 
-[![Hyvityksen korjaus on valittuna palautustilaukselle ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
+![Hyvityksen korjaus on valittuna palautustilaukselle ](./media/SalesReturn10.png)  
 
 **Huomautus:** kirjanpidon kirjaukset syötetään negatiivisina oikaisuina.
 
@@ -308,7 +308,7 @@ Esimerkki 2 on muuten sama kuin esimerkki 1, mutta **Hyvityksen korjaus** -param
 
 Tässä esimerkissä palautustilauksen rivi on luotu **Etsi myyntitilaus** -toiminnolla. **Hyvityksen korjaus** -parametri ei ole valittuna, kun lasku luodaan.  
 
-[![Palautustilauksen rivi on luotu Etsi myyntitilaus -toiminnolla ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
+![Palautustilauksen rivi on luotu Etsi myyntitilaus -toiminnolla ](./media/SalesReturn11.png)  
 
 **Huomautus:** **Alennus** ja **Palautuksen kustannushinta** on määritetty oikein. Tämän vuoksi myyntilasku ilmenee käännettynä.
 

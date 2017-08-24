@@ -1,9 +1,9 @@
 ---
 title: Myyntilaskun luominen
 description: 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,14 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fd89921a97782c4d09807a730ab077809304159f
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 249b1f331d6889d3b9ed2ace2e5db21d7a5d3e46
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,11 +30,20 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-
-
-**Myyntitilauksen myyntilasku** on myyntiin liittyvä lasku, jonka organisaatio antaa asiakkaalle. Tämän tyyppinen myyntilasku luonti perustuu myyntitilaukseen, jossa on tilausrivit ja nimiketunnukset. Nimiketunnukset määritetään ja kirjataan kirjanpitoon. Alareskontran kirjauskansioviennit eivät ole käytettävissä myyntitilauksen asiakaslaskulle. 
+**Myyntitilauksen myyntilasku** on myyntiin liittyvä lasku, jonka organisaatio antaa asiakkaalle. Tämän tyyppinen myyntilasku luonti perustuu myyntitilaukseen, jossa on tilausrivit ja nimiketunnukset. Nimiketunnukset määritetään ja kirjataan kirjanpitoon. Alareskontran kirjauskansioviennit eivät ole käytettävissä myyntitilauksen asiakaslaskulle. Lisätietoja on ohjeaiheessa [Myyntitilauksen laskujen luominen](tasks/create-sales-order-invoices.md).
 
 **Vapaatekstilasku** ei liity myyntitilaukseen. Sen tilausriveillä on antamasi kirjanpitotilit, vapaatekstikuvaukset ja myyntisumma. Tällaiseen laskuun ei voi kirjoittaa nimiketunnusta. Arvonlisäverotiedot on kirjoitettava. Myynnin päätili ilmaistaan jokaisella laskurivillä, ja voit jakaa sen useille kirjanpitotileille valitsemalla **Jaa summat** **Vapaatekstilasku**-sivulla. Myös asiakkaan saldo kirjataan vapaatekstilaskussa käytetystä kirjausprofiilista yhteenvetotilille.
+
+Lisätietoja on kohdassa 
+
+[Luo vapaatekstilasku](tasks/create-free-text-invoice.md)
+
+[Vapaatekstilaskumallin luominen](tasks/create-free-text-invoice-template.md)
+
+[Vapaatekstilaskumallin määrittäminen asiakkaalle](tasks/assign-free-text-invoice-template-customer.md)
+
+[Luo ja kirjaa toistuvat vapaatekstilaskut](tasks/post-recurring-free-text-invoices.md)
+
 
 **Proformalasku** on lasku, joka laaditaan todellisten laskusummien ennusteena ennen laskun kirjaamista. Proformalaskun voi tulostaa joko myyntilauksen myyntilaskulle tai vapaatekstilaskulle.
 

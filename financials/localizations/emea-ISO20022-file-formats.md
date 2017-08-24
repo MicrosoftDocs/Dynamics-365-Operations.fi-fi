@@ -3,7 +3,7 @@ title: ISO20022-tiedostojen tuominen
 description: "Tässä ohjeaiheessa kerrotaan, miten ISO 20022 - maksutiedostojen camt.054- ja pain.002-muodot tuodaan Microsoft Dynamics 365 for Finance and Operations, Enterprise editioniin."
 author: neserovleo
 manager: AnnBe
-ms.date: 05/25/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,13 +13,13 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
 ms.author: v-lenest
-ms.search.validFrom: 2017-06-01T00:00:00.000Z
+ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 48e280bf0a6c5db237bd389fe448c9d698d3ae12
-ms.openlocfilehash: acf6ed5f503d77f372d802a51a71cec062c2b24b
+ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
+ms.openlocfilehash: 90e21bb939bd96a3420decb5f9bc07c017c3e946
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 07/31/2017
 
 ---
 
@@ -105,4 +105,29 @@ Jos olet tuomassa camt.054-tiedoston, määritä seuraavat lisäparametrit:
 - **Selvitä tapahtumat** – valitse asetukseksi **Kyllä**, jos tuodut toimittajan maksut on selvitettävä järjestelmästä löytyvien laskujen kanssa.
 
 Voit tarkastella tuotuja tietoja **Maksutapahtumat**-sivulla. 
+
+## <a name="additional-details"></a>Lisätiedot
+
+Kun tuot LCS:n muotokonfiguraatioita, tuot koko konfiguraatiopuun, johon myös mallin ja mallin yhdistämismäärityksen konfiguraatiot sisältyvät. Versiosta 8 alkaen maksumallin yhdistämismääritykset sijaitsevat ratkaisupuun erillisissä ER-konfiguraatioissa (Maksumallin yhdistämismääritys 1611, Maksumallin yhdistämismääritys kohteeseen ISO20022 jne.). Yhdessä mallissa (maksumallissa) on useita erilaisia maksumuotoja, minkä vuoksi erillinen yhdistämismääritysten käsittely helpottaa ratkaisevasti ratkaisun ylläpitoa. Mietitään esimerkiksi seuraavaa skenaariota: luot tilisiirtotiedostoja ISO20022-maksujen avulla ja tuot sitten pankin palautussanomat. Tässä skenaariossa kannattaa käyttää seuraavia konfiguraatioita:
+
+ - **Maksumalli**
+ - **Maksumallin yhdistämismääritys 1611** – tuontitiedosto luodaan tällä yhdistämismäärityksellä.
+ - **Maksumallin yhdistämismääritys kohteeseen ISO20022** – tämä konfiguraatio sisältää kaikki yhdistämismääritykset, joilla tiedot tuodaan (yhdistämismäärityksen kohdesuuntaan).
+ - **ISO20022-tilisiirto** – Tämä konfiguraatio sisältää muotokomponentin, joka vastaa tuontitiedoston luonnista (pain.001) Maksumallin yhdistämismäärityksen 1611 perusteella. Lisäksi siinä on muoto, jolla tehdään komponenttia koskeva mallin yhdistämismääritys. Tätä komponenttia käytetään yhdessä Maksumallin yhdistämismääritys kohteeseen ISO20022 vietyjen maksujen rekisteröimiseen järjestelmään lisätuonteja varten (tuonti teknisessä CustVendProcessedPayments-taulussa).
+ - **ISO20022-tilisiirto (CE)**, jossa CE vastaa maatunnusta. Tunnus on ISO20022-tilisiirrosta johdettu muoto, jossa on sama rakenne mutta tiettyjä maakohtaisia eroja.
+ - **Pain.002** – tätä muotoa käytetään yhdessä Maksumallin yhdistämismääritys kohteeseen ISO20022 -konfiguraation kanssa tuomaan pain.002-tiedosto toimittajan maksujen siirtokirjauskansioon.
+ - **Camt.054** – tätä muotoa käytetään yhdessä Maksumallin yhdistämismääritys kohteeseen ISO20022 -konfiguraation kanssa tuomaan camt.054-tiedosto toimittajan maksujen siirtokirjauskansioon. Samaa muotokonfiguraatiota käytetään asiakkaan maksujen tuontitoiminnossa mutta Maksumallin yhdistämismääritykset kohteeseen ISO20022 -konfiguraatiossa käytetään erilaista yhdistämismääritystä.
+
+Lisätietoja sähköisestä raportoinnista on ohjeaiheessa [Sähköisen raportoinnin yleiskatsaus](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+
+## <a name="additional-resources"></a>Lisäresurssit
+- [Toimittajien maksujen luominen ja tuonti ISO20022-maksumuodossa](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
+- [Tuo ISO20022-tilisiirron konfiguraatio](./tasks/import-iso20022-credit-transfer-configuration.md)
+- [Tuo ISO20022-suoraveloituksen konfiguraatio](./tasks/import-iso20022-direct-debit-configuration.md)
+- [Määritä yrityksen pankkitilit ISO20022-tilisiirtoja varten](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
+- [Määritä yrityksen pankkitilit ISO20022-suoraveloituksia varten](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
+- [Määritä asiakas ja asiakkaan pankkitilit ISO20022-suoraveloituksia varten](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
+- [Maksutavan määrittäminen ISO20022-tilisiirtoja varten](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
+- [Maksutavan määrittäminen ISO20022-suoraveloitusta varten](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Määritä toimittajat ja toimittajien pankkitilit ISO20022-tilisiirtoja varten](./tasks/set-up-vendor-iso20022-credit-transfers.md)
 

@@ -15,13 +15,13 @@ ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
-ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
+ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
+ms.openlocfilehash: 171d006e20834ea4ad6d5651ec27fc305eac4bc6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -32,9 +32,9 @@ ms.lasthandoff: 07/27/2017
 Tämä artikkeli sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen. 
 
 > [!NOTE] 
-> Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations, Enterprise Edition; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Ohjeaiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
+> Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations, Enterprise Edition; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
 
-Kaikkien Unified Operations -tuotteiden jakama ohjejärjestelmä:
+Kaikkien seuraavien tuotteiden jakama ohjejärjestelmä:
 - Dynamics 365 for Finance and Operations, Enterprise Edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
@@ -73,7 +73,7 @@ Voit etsiä sisältöä myös millä tahansa hakukoneella. Haku tuottaa parhaat 
 
 ![Sivustohaun tulokset](./media/site-search-results-2.png)
 
-### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>Unified Operationsin docs.microsoft.com-sisällysluettelo
+### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com-sisällysluettelo
 Kaikilla tuotteilla on Docs-sivustossa sama sisällysluettelo, jonka avulla asiakkaat näkevät käyttämänsä ohjeaiheen kontekstin. Voit etsiä ohjeaiheita myös suodattamalla.
 
 ### <a name="how-can-i-contribute"></a>Miten voin vaikuttaa? 
@@ -101,7 +101,7 @@ Syötä oikealle sähköpostiosoite ja uusi salasana, kun haluat luoda sivustoll
 ## <a name="task-guides"></a>Tehtäväoppaat
 Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti tehtävän tai liiketoimintaprosessin eri vaiheet. Voit avata (toistaa) tehtäväoppaan Ohje-ruudusta. Kun napsautat tehtäväopasta ensimmäisen kerran, Ohje-ruutuun tulee näkyviin tehtävän vaiheittaiset ohjeet. Lokalisoidut tehtäväoppaat ovat nyt saatavana. 
 
-Kullekin Unified Operations -tuotteelle on saatavana erilliset tehtäväoppaat. Kohdassa Tehtäväoppaiden käyttö ohjeruudusta käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä. 
+Esimerkiksi seuraavilla tuotteilla on omat tehtäväoppaat: Dynamics 365 for Retail, Dynamics 365 for Finance and Operations tai Dynamics 365 for Talent. Kohdassa Tehtäväoppaiden käyttö ohjeruudusta käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä. 
 
 ![Tehtäväoppaan lukunäkymä](./media/task-guide-ops.png)
 
@@ -169,7 +169,7 @@ Käännetyt tehtävän ohjaukset julkaistaan kirjastoissa, joiden otsikossa luke
 -   Jos tehtäväopasta ei ole vielä käännetty, vain osa tekstistä (ohjausobjektien teksti) näkyy valitun kielisenä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
-Seuraavassa taulussa on luettelo sivustoista, joissa on Unified Operations -sisältöä. Sisältösivustomme on järjestetty tukemaan asiakkaan elinkaarta. Kullakin vaiheella on omat tukisivustot. Jos sivuston nimen vieressä on tähti (\*), sivustoon on kirjauduttava palvelusopimukseen liitetyllä tilillä.
+Seuraavassa taulussa on sivustoluettelo. Sisältösivustomme on järjestetty tukemaan asiakkaan elinkaarta. Kullakin vaiheella on omat tukisivustot. Jos sivuston nimen vieressä on tähti (\*), sivustoon on kirjauduttava palvelusopimukseen liitetyllä tilillä.
 
 | Sivusto                                                                     | kuvaus                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

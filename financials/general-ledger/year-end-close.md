@@ -3,7 +3,7 @@ title: Tilikauden lopetus
 description: "Tässä aiheessa kuvataan kirjanpidon tilivuoden sulkemisprosessissa tarvittavat asetukset ja ohjeet."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 50a6a23febc725eb05d30d5db4f97ca699607461
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 4aad946f51c0c9a0a4c0ea1249e6e876cc628e20
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -86,7 +86,7 @@ Jos haluat peruuttaa aiemman tilivuoden sulkemisen valitulle tilivuodelle, aseta
 
 Tilikauden lopetusprosessi ajetaan oletusarvoisesti eräajona. On suositeltavinta suorittaa prosessi eräajona, jotta käyttäjä voi palata muihin toimiin. **Edellisen tilikauden lopetuksen päivämäärä** -kenttään päivitetään istunnon päivämäärä joka kerta, kun tilivuoden sulkemisprosessi suoritetaan.
 
-Lisätietoja on ohjeaiheessa [Sulje kirjanpito kauden lopussa](close-general-ledger-at-period-end.md).
+Lisätietoja on ohjeaiheissa [Kirjanpidon sulkeminen kauden lopussa](close-general-ledger-at-period-end.md) ja [Tilikauden sulkeminen](tasks/close-fiscal-year.md).
 
 
 

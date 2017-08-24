@@ -15,13 +15,13 @@ ms.custom: 261824
 ms.assetid: d0784b2c-fe10-428d-8d07-fd474ca50fcc
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: c132c04bc64f02201252f03830d3f8309306f19c
+ms.translationtype: HT
+ms.sourcegitcommit: 9953d2f29a67b35f4bb43f577df1c4d910e379a1
+ms.openlocfilehash: 08a420a776f47119a5dc47f9119545aa448ffdbd
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,15 +30,20 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä ohjeaiheessa kerrotaan, miten talousraportoinnin tietovaraston palautetaan Microsoft Dynamics 365 for Finance and Operations -tietokannan palauttamisen jälkeen. 
+Tässä ohjeaiheessa kerrotaan, miten talousraportoinnin tietovaraston palautetaan Microsoft Dynamics 365 for Finance and Operations -tietokannan palauttamisen jälkeen.
 
-Finance and Operations -tietokanta voidaan joutua palauttamaan useissa eri tilanteissa, kuten tietokannan varmuuskopioinnin tai toisesta ympäristöstä kopioinnin yhteydessä. Tällöin on noudatettava tiettyjä vaiheita, joiden avulla varmistetaan, että talousraportoinnin tietovarasto käyttää palautettua Finance and Operations -tietokantaa oikein. Lisätietoja talousraportoinnin tietovaraston palauttamisesta, kun palauttamisessa ei ole kyse Finance and Operations -tietokannan palauttamisesta on ohjeaiheessa [Management Reporter -tietovaraston palauttaminen](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/). Ota huomioon, että tämän prosessin vaiheita tuetaan Dynamics 365 for Operations -ohjelman toukokuu 2016 -versiossa (sovelluksen versio 7.0.1265.23014 ja talousraportoinnin versio 7.0.10000.4) ja uudemmissa versioissa. Jos käytössä on Finance and Operationsin vanha versio, ota yhteys tukiryhmään.
+Jos joskus palautat Finance and Operations -tietokannan varmuuskopiosta tai toisen ympäristön tietokannasta, sinun noudatettava tämän ohjeaiheen ohjeita. Tällä tavoin voit varmistaa, että raportin tietovarasto käyttää oikein palautettua Finance and Operations -tietokantaa. 
+<!--If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. -->
+> [!Note] 
+> Tämän prosessin vaiheita tuetaan Dynamics 365 for Operationsin toukokuun 2016 -versiossa (sovelluksen koontiversio 7.0.1265.23014 ja raportoinnin koontiversio 7.0.10000.4) ja uudemmissa versioissa. Jos käytössä on Finance and Operationsin vanha versio, ota yhteys tukiryhmään.
 
 ## <a name="export-report-definitions"></a>Raporttimääritysten vieminen
 Vie aluksi Report Designerin raporttirakenteet seuraavasti:
 
 1.  Siirry Report Designerissa kohtaan **Yritys** &gt; **Rakenneosaryhmät**.
-2.  Valitse vietävä rakenneosaryhmä ja valitse sitten **Vie**. **Huomautus:** Finance and Operations tukee vain yhtä **oletusarvoista** rakenneosaryhmää.
+2.  Valitse vietävä rakenneosaryhmä ja valitse sitten **Vie**. 
+    > [!Note] 
+    > Finance and Operations tukee vain yhtä **oletusarvoista** rakenneosaryhmää.
 3.  Valitse vietävät raporttimääritykset seuraavasti:
     -   Voit viedä kaikki raporttien määritykset ja liittyvät rakenneosat valitsemalla **Valitse kaikki**.
     -   Voit viedä tiettyjä raportti-, rivi-, sarake-, puu- ja dimensioyhdistelmiä valitsemalla kyseisen välilehden ja valitsemalla sitten vietävät kohteet. Voit valita useita välilehden kohteita pitämällä Ctrl-näppäintä alhaalla. Kun valitset vietävät raportit, liittyvät rivi-, sarake-, puu- ja dimensioyhdistelmät valitaan myös.
@@ -63,9 +68,9 @@ Muodosta yhteys kaikkiin ympäristön tietokoneisiin etätyöpöydän avulla. Py
 Näillä palveluilla on avoimet yhteydet Finance and Operations -tietokantaan.
 
 ## <a name="reset"></a>Palauta
-#### <a name="locate-the-latest-dataupgradezip-package"></a>Uusimman DataUpgrade.zip-paketin etsiminen
+#### <a name="locate-and-download-the-latest-minorversiondataupgradezip-package"></a>Uusimman MinorVersionDataUpgrade.zip-paketin etsiminen ja lataaminen
 
-Etsi uusin DataUpgrade.zip-paketti kohdan [DataUpgrade.zip-komentosarjan lataaminen](..\migration-upgrade\upgrade-data-to-latest-update.md) ohjeilla. Ohjeissa kerrotaan, miten löydät tietojen päivityksen paketin oikean version ympäristöäsi varten.
+Etsi uudin MinorVersionDataUpgrade.zip-paketti ohjeaiheessa [Uusimman tietojen päivityksen käyttöönotettavan paketin lataaminen](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package) annettujen ohjeiden mukaisesti. Ohjeissa kerrotaan, miten tietojen päivityspaketin oikea versio etsitään ja ladataan. Päivitystä ei tarvita MinorVersionDataUpgrade.zip-paketin lataamiseen. MinorVersionDataUpgrade.zip-paketin noutamista varten tarvitsee tehdä vain Uusimman tietojen päivityksen käyttöönotettavan paketin lataaminen -osan vaiheet, ja muut ohjeaiheessa mainitut vaiheet voi jättää tekemättä.
 
 #### <a name="execute-scripts-against-finance-and-operations-database"></a>Komentosarjojen suorittaminen Finance and Operations -tietokannassa
 
@@ -105,8 +110,10 @@ Tuo raporttimallit Report Designerista viennin aikana luotua tiedostoa seuraavas
 
 1.  Siirry Report Designerissa kohtaan **Yritys** &gt; **Rakenneosaryhmät**.
 2.  Valitse vietävä rakenneosaryhmä ja valitse sitten **Vie**. 
+
     > [!NOTE]
     > Finance and Operations tukee vain yhtä **oletusarvoista** rakenneosaryhmää.
+    
 3.  Valitse **oletusrakenneosa** ja valitse sitten **Tuo**.
 4.  Valitse viedyt raporttimääritykset sisältävä tiedosto ja valitse sitten **Avaa**.
 5.  Valitse Tuo-valintaikkunassa tuotavat raporttien määritykset.
