@@ -14,13 +14,13 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758
-ms.openlocfilehash: ead315d2e07818b35dd2806fca7e242f4028be07
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 25cba59dfbab2e1030660840e85d278452e39e52
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 07/27/2017
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Finance and Operations -ohjelmassa on toiminto, joka on käytössä [tuotteen saatavuusoppaassa](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
+Microsoft Dynamics 365 for Finance and Operations -ohjelmassa on toiminto, joka on käytössä [kansainvälisessä tuotesaatavuusoppaassa](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
 
-Tässä aiheessa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista toiminnoista. 
+Tässä aiheessa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista ratkaisuista, päivityksistä ja toiminnoista. 
 
 ## <a name="developing-localized-solutions"></a>Lokalisoitujen ratkaisujen kehittäminen
 Seuraavissa resursseissa on ohjeita ja tietoja, jotka auttavat maa- ja aluekohtaisia mukautuksia määrittäviä kehittäjiä ja ISV-toimittajia. Kyse voi olla myös sellaista maata varten luodusta ratkaisusta, jota Microsoft ei tue.
@@ -96,9 +96,13 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 -   [CODA-tiliote](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import)
 -   [Intervat-veroilmoitus](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [PRODCOM-raporttimääritykset](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report)
+-   [Täsmäytysraportit](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports)
 
 ### <a name="brazil"></a>Brasilia
 
+-   [CIAP-käyttöomaisuus](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset)
+-   [Verokirjojen määrittäminen](/dynamics365/unified-operations/financials/localizations/latam-bra-configure-fiscal-books)
+-   [Kirjanpidon konsolidoinnin tapahtumien vienti ja tuonti – Brasilia](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions)
 -   [Verokirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books)
 -   [Veroasiakirjan tekstin paikkamerkit](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders)
 -   [Veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework)
@@ -108,10 +112,12 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 -   [Sähköisen maksun palautuksen aikana luodut kirjauskansiot](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process)
 -   [NF-e-prosessi](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process)
 -   [Yritysten parametrit](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters)
+-   [Sähköisten maksusuoritusten käsittely – Brasilia](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances)
 -   [Ostoa täydentävät veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents)
 -   [Viitattavat veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents)
 -   [Myyntiä täydentävät veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
 -   [Palvelun sähköinen veroasiakirja](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document)
+-   [NF-eXML- ja DANFE-asiakirjojen määritys, tuonti ja tarkistus](/dynamics365/unified-operations/financials/localizations/latam-bra-set-up-import-nfe)
 -   [Veromääritteet](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes)
 -   [Veromaksut](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments)
 -   [Verot](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes)
@@ -159,6 +165,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 - [Vaihtokurssioikaisut](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
 - [Maksutapojen tiedostomuodot](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 - [Viron ja Liettuan käyttöomaisuuden luovutus](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [ISO20022-tiedostojen tuominen](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats)
 - [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
 - [Varastokirjauskansioiden raportit](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
 - [Laskun ja pakkausluettelon numerointi Latviassa ja Liettuassa](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
@@ -174,6 +181,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 - [SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
 - [Asiakkaan ja toimittajan kompensaation määrittäminen](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
 - [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [Storno-kirjanpito](/dynamics365/unified-operations/financials/localizations/emea-storno)
 - [Verodirektiivit](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
 - [Raporttien ja asiakirjojen summien esitysmuodon päivittäminen](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
 - [ALV-vaihtokurssit](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
@@ -246,6 +254,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 
 -   [Käyttöomaisuuden korjauserittely](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
 -   [Laskun ja pakkausluettelon numerointi](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+-   [ALV-ilmoituksen tiedot](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details)
 
 ### <a name="mexico"></a>Meksiko
 
@@ -294,8 +303,9 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 -   [Käteisalennus otettu käyttöön laskussa -parametri](/dynamics365/unified-operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
 -   [Suoritusperusteinen vero](/dynamics365/unified-operations/financials/localizations/emea-esp-conditional-sales-tax)
 -   [Käyttöomaisuuden uudelleenarvostusryhmät](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
--   [Yhteisön sisäinen alv](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat)
+-   [Yhteisön sisäinen ALV](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat)
 -   [Kerta-asiakkaat](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
+-   [Tulosta sekit Espanjan asettelun avulla](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout)
 -   [Espanjalaiset velkakirjojen asetukset](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Osto- ja myyntisyklit](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Erikoisviennit ja avaavat taseet](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain)
@@ -313,6 +323,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 ### <a name="thailand"></a>Thaimaa
 
 -   [Varastokorttiraportit](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports)
+-   [Korvaus-/oikaisuverolasku – Thaimaa](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices)
 -   [Toteutumaton ALV](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat)
 -   [Ennakonpidätys](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax)
 
@@ -322,6 +333,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 
 ### <a name="united-states"></a>Yhdysvallat
 
+-   [Julkisen sektorin 1099-lomake](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector)   
 -   [I-9-lomakkeen vahvistus](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
 -   [Vuoden lopun 1099-raportit](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Palkanlaskenta](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)
