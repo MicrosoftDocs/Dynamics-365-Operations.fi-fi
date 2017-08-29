@@ -1,7 +1,7 @@
 ---
 title: "Keskitettyjen maksujen määrittäminen"
 description: "Näiden ohjeiden avulla voit valmistella yhden yrityksen maksujen käsittelyn organisaation muiden yritysten puolesta."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article

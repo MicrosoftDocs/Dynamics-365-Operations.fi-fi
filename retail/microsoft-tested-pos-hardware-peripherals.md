@@ -1,7 +1,7 @@
 ---
 title: Myyntipisteen oheislaitteet
 description: "Retail Modern point of sale (POS) ja Cloud POS voivat käyttää useita myyntipisteen (POS) oheislaitteita, liittymiä ja käyttöönottovaihtoehtoja, jotka soveltuvat jälleenmyyjien erilaisiin liiketoimintaskenaarioihin."
-author: josaw1
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f5f090eb406488ecfcd502c2cc6e3a63ca16111a
 ms.contentlocale: fi-fi
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

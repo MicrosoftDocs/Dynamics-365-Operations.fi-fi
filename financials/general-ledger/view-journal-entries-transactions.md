@@ -1,7 +1,7 @@
 ---
 title: "Näytä tapahtumat ja kirjauskansiomerkinnät"
 description: "Tässä artikkelissa esitellään kirjauskansiovientien ja -tapahtumien eri tarkastelutavat."
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

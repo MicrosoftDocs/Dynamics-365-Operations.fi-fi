@@ -1,7 +1,7 @@
 ---
 title: "Kanta-asiakasohjelman määrittäminen"
 description: "Tässä artikkelissa kuvataan kanta-asiakasohjelman määrittämistä. Kanta-asiakasohjelmat voivat nostaa asiakasuskollisuutta palkitsemalla asiakkaita, jotka asioivat myymälässäsi. Microsoft Dynamics 365 for Retailissa voit määrittää yksinkertaisia tai monimutkaisia kanta-asiakasohjelmia yritysten välille missä tahansa vähittäismyyntikanavassa."
-author: josaw1
+author: scott-tucker
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: fi-fi
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 
