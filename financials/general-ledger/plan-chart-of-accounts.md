@@ -1,7 +1,7 @@
 ---
 title: Suunnittele tilikarttasi
 description: "Tässä artikkelissa on tietoja, joiden avulla voit suunnitella organisaation tilikartan."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

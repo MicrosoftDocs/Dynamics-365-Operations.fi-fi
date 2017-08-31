@@ -13,13 +13,13 @@ ms.reviewer: margoc
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 1b46d24a0f671502c9dc3d46849240342d680468
+ms.sourcegitcommit: 8ae84f23744947cf49365d318a208802c6db95a9
+ms.openlocfilehash: 5c40e4bf1d2defeeb656348e1bc3886d5423ca12
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 07/27/2017
 
 Microsoft Dynamics 365 for Finance and Operations on Microsoftin yrityksille tarkoitettu yrityssovellus. Sovelluksen avulla käyttäjät voivat tehdä nopeasti älykkäitä päätöksiä, sillä he saavat älykkäästä käyttöliittymästä reaaliaikaisia analyyseja ja tietoja. Sovelluksen liiketoimintalogiikka auttaa yrityksiä muuttumaan ja toimimaan innovatiivisesti. Myös liiketoimintaprosessien uudelleensuunnittelu nopeutuu. Yritykset voivat kasvaa joustavasti omaan tahtiinsa ja harjoittaa liiketoimintaa käytännössä ajasta ja paikasta riippumatta. Niinpä yritykset voivatkin skaalata toimintojaan maailmanlaajuisesti liiketoiminnan tarpeiden mukaan. 
 
-Tämä ohje näyttää, miten yrityksesi voi hyötyä Dynamics 365 for Finance and Operations -ohjelman käytöstä. Se on liitetty yhdistetyn Operations-paketin, Dynamics 365 for Retail -ohjelman ja Dynamics 365 for Talent -ohjelman ohjeisiin. 
+Tämä ohje näyttää, miten yrityksesi voi hyötyä Dynamics 365 for Finance and Operations -ohjelman käytöstä. Se on linkitetty liittyvien tuotteiden, Dynamics 365 for Retail -ohjelman ja Dynamics 365 for Talent -ohjelman ohjeisiin. 
 
 <table>
 <colgroup>
@@ -86,7 +86,7 @@ Tämä ohje näyttää, miten yrityksesi voi hyötyä Dynamics 365 for Finance a
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Taloushallinnon raportointi</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">Säännösten mukainen raportointi</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/mobile-platform">Mobiiliympäristö</a></h3>
+<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobiiliympäristö</a></h3>
 
 <h3>Kehittäjän toiminnot</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Kehittäjien kotisivu</a></p>
