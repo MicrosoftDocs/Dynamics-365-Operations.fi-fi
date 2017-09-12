@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/27/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-Tässä artikkelissa kuvataan, miten varastokirjauskansioita voidaan käyttää erityyppisten varastotilannetapahtumien kirjaamisessa. 
+Tässä artikkelissa kuvataan, miten varastokirjauskansioita voidaan käyttää erityyppisten varastotilannetapahtumien kirjaamisessa.
 
 Microsoft Dynamics 365 for Finance and Operationsin varastokirjauskansioihin kirjataan erityyppisiä fyysisiä varastotapahtumia, kuten varasto-ottoja ja -vastaanottoja, varastosiirtoja, tuoterakenteiden luonteja ja fyysisen varaston täsmäytys. Kaikki varastokirjauskansioita käytetään samalla tavalla, mutta ne on jaettu eri tyyppeihin.
 
@@ -95,7 +95,4 @@ Vain yksi käyttäjä kerrallaan voi käsitellä kirjauskansiota. Jos useiden k�
 
 ## <a name="posting-journal-lines"></a>Kirjauskansioluettelorivit
 Voit kirjata luomiasi kirjauskansiorivejä koska tahansa siihen saakka, että nimike lisätään lisätapahtumille. Kirjauskansioon annetut tiedot pysyvät kirjauskansiossa, vaikka suljet kirjauskansion kirjaamatta rivejä.
-
-
-
 

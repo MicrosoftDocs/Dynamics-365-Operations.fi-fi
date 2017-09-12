@@ -1,4 +1,4 @@
---- 
+---
 title: "Luo ja käsittele määritysten noudattaminen"
 description: "Tällä menettelyllä voi hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/27/2017
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tällä menettelyllä voi hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella. Voit toistaa tallenteen USMF-esittely-yrityksessä ja käyttää ehdotettuja arvoja. Tämän menettelyn suorittaa yleensä laatuassistentti.  Edellytyksenä on suorittaa Tarkista tavaroiden laatu -tehtävätallenteen suorittaminen. Määrityksistä poikkeamisen hyväksymisen käsittely edellyttää, että tehtävätallenteen suorittajalle on määritetty Nimi-arvo Käyttäjät-sivulla. Asiakirjojen huomautusten käyttö taas edellyttää, että tiedoston käsittely on aktivoitu käyttäjäasetuksissa. 
+Tällä menettelyllä voi hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella. Voit toistaa tallenteen USMF-esittely-yrityksessä ja käyttää ehdotettuja arvoja. Tämän menettelyn suorittaa yleensä laatuassistentti.  Edellytyksenä on suorittaa Tarkista tavaroiden laatu -tehtävätallenteen suorittaminen. Määrityksistä poikkeamisen hyväksymisen käsittely edellyttää, että tehtävätallenteen suorittajalle on määritetty Nimi-arvo Käyttäjät-sivulla. Asiakirjojen huomautusten käyttö taas edellyttää, että tiedoston käsittely on aktivoitu käyttäjäasetuksissa.
 
 
 ## <a name="select-a-quality-order"></a>Valitse laatutilaus.
@@ -78,5 +78,4 @@ Tällä menettelyllä voi hallita määrityksistä poikkeamisia aiemmin luodun l
 3. Valitse Kyllä.
 4. Sulje sivu.
 5. Sulje sivu.
-
 

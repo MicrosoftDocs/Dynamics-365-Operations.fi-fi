@@ -1,4 +1,4 @@
---- 
+---
 title: Tarkista tavaroiden laatu
 description: "Tässä menettelyssä näytetään, miten laatutilaus käsitellään."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -55,5 +55,4 @@ Tässä menettelyssä näytetään, miten laatutilaus käsitellään. Voit suori
 4. Klikkaa Valitse.
 5. Valitse OK.
 6. Sulje sivu.
-
 

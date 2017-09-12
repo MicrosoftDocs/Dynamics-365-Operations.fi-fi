@@ -1,7 +1,7 @@
 ---
 title: "Nimikkeiden ja raaka-aineiden seuranta varastossa, tuotannossa ja myynnissä"
 description: "Tässä ohjeaiheessa kuvataan, kuinka voit määrittää nimikkeen seurannan avulla nimikkeiden ja raaka-aineiden aiemman, nykyisen ja tulevan käyttöpaikan tuotanto- ja myyntiprosesseissa."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä ohjeaiheessa kuvataan, kuinka voit määrittää nimikkeen seurannan avulla nimikkeiden ja raaka-aineiden aiemman, nykyisen ja tulevan käyttöpaikan tuotanto- ja myyntiprosesseissa. 
+Tässä ohjeaiheessa kuvataan, kuinka voit määrittää nimikkeen seurannan avulla nimikkeiden ja raaka-aineiden aiemman, nykyisen ja tulevan käyttöpaikan tuotanto- ja myyntiprosesseissa.
 
 Nimikkeen seurantatoiminto on käytössä **Nimikkeen seuranta** -sivulla. Seuraavissa osissa kuvataan, kuinka nimikkeen seurantaa käytetään ja mitä asetuksia ja rajoituksia siihen liittyy.
 
@@ -142,7 +142,4 @@ Voit luoda **Lähetetty asiakkaille** -raportin, jossa määritetään lähetett
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Voinko jäljittää oheistuotteita ja sivutuotteita?
 Voit seurata rinnakkaistuotteita, mutta et voi seurata sivutuotteita, koska niihin ei ole tavallisesti liitetty seurantadimensioita. Kun seuraat nimikettä, seurantatietoihin sisältyvät kaikki liittyvät oheistuotteet. Solmun, joka sisältää rinnakkaistuotteen lisätiedoissa on sana "rinnakkaistuote". Voit tarkastella tietoja oheistuotteesta myös valitsemalla seurantatietojen solmun ja napsauttamalla sitten **Tuotanto**-pikavälilehteä.
-
-
-
 

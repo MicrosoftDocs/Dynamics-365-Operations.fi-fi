@@ -1,4 +1,4 @@
---- 
+---
 title: "Varastoinventoinnin prosessien määrittäminen"
 description: "Tässä menettelyssä kerrotaan, miten perusvarastoinventoinnin prosessien konfigurointi tehdään luomalla inventointiryhmä ja inventoinnin kirjauskansio."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -84,5 +84,4 @@ Tässä menettelyssä kerrotaan, miten perusvarastoinventoinnin prosessien konfi
 7. Valitse luettelosta inventointiryhmä
     * Tässä voit valita tietyn inventointiryhmän, jota käytetään valitsemasi tietyn varaston nimikkeessä. Kun kyseisen varaston inventointi suoritetaan, inventointikäytäntö korvaa nimikkeen yleisen inventointikäytännön.  
 8. Valitse Tallenna.
-
 

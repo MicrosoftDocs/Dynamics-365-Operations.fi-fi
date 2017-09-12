@@ -1,4 +1,4 @@
---- 
+---
 title: Varaston varastotasojen oikaisu (perusvarastointi)
 description: "Tässä menettelyssä selvitetään varaston oikaisun kirjauskansion luonti- ja kirjausprosessi, jolla voidaan oikaista varastossa olevien tuotteiden varastotasoja."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Tässä menettelyssä selvitetään varaston oikaisun kirjauskansion luonti- ja 
 4. Valitse OK.
 5. Sulje lomake.
 6. Sulje sivu.
-
 

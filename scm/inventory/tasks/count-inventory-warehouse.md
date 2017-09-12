@@ -1,4 +1,4 @@
---- 
+---
 title: "Varaston kokonaismäärän laskeminen"
 description: "Tässä menettelyssä käsitellään varaston inventointikirjauskansion luonti- ja kirjausprosessi, jolla voidaan inventoida tietty nimike varastosijainnissa."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -68,5 +68,4 @@ Tässä menettelyssä käsitellään varaston inventointikirjauskansion luonti- 
 1. Valitse Varasto.
 2. Valitse Tapahtumat.
     * Tässä näkyvät kaikki liittyvät tapahtumat, jotka luodaan, kun varaston inventointikirjauskansioon kirjataan.   
-
 

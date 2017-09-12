@@ -1,7 +1,7 @@
 ---
 title: Saapumisten yhteenveto
 description: "Tässä aiheessa on tietoja Saapumisen yleiskuva -ominaisuudesta. Saapumisen yleiskuva -sivu on osa tätä ominaisuutta ja se tarjoaa yhteenvedon kaikista saapuvista nimikkeistä, joita odotetaan."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
@@ -37,9 +37,9 @@ Tässä aiheessa on tietoja Saapumisen yleiskuva -ominaisuudesta. Saapumisen yle
 **Saapumisen yleiskuva** -sivulla on yhteenveto kaikista saapumista odottavista nimikkeistä. Siinä näytetään myös saapumiset, jotka voidaan alustaa yhteenvedon perusteella. Tässä ohjeaiheessa keskitytään vastaanottoprosessiin.
 
 ## <a name="business-scenario"></a>Yrityksen skenaario
-Seuraavana on esimerkki saapuvien prosessista. 
+Seuraavana on esimerkki saapuvien prosessista.
 
-[![Yrityksen skenaario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png) 
+[![Yrityksen skenaario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Sammy, vastaanottoassistentti, haluaa tietää, mitä odotetaan saapuvan tänä päivänä. Hän näkee **Saapumisen yleiskuva** -sivulla tiedot nykyisistä tehtävistä ja karkean arvion määristä, tilavuudesta, painosta, tilaustyypeistä ja niin edelleen. Toimitus saapuu myöhemmin saapuvien laiturille ja Sammy vastaanottaa toimitusluettelon. Sammy voi suorittaa **Saapumisen yleiskuva** -sivulla seuraavat tehtävät:
 
@@ -69,7 +69,7 @@ Tässä esimerkissä **Saapumisen yleiskuvaprofiilin nimi** -kentän arvoksi **S
 
 Jotta saapumisen kirjauskansiot luotaisiin automaattisesti **Saapumisen yleiskuva** -sivulta, sinun on määritettävä asianmukaiset tiedot **Kirjauskansio**-kenttäryhmään **Saapumisen asetukset** -välilehdellä.
 
--   Kirjauskansion nimi on määritettävä, jotta kansion voi luoda. 
+-   Kirjauskansion nimi on määritettävä, jotta kansion voi luoda.
 
 [![Kirjauskansion nimen määrittäminen](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
@@ -123,7 +123,4 @@ Kun kaikki tavarat on rekisteröity, varastopäällikkö tai ostopäällikkö vo
 
 ## <a name="summary"></a>Yhteenveto
 **Saapumisen yleiskuva** -sivun avulla varastopäällikkö ja varastotyöntekijät voivat nähdä yleiskuvan odotettavissa olevasta työstä, joka on tehtävä saapuvien käsittelyn aikana. Sivun avulla voidaan myös aloittaa nimikkeiden saapumisprosessi, jotta nimikkeiden seuranta voidaan aloittaa heti, kun ne saapuvat varastolle.
-
-
-
 

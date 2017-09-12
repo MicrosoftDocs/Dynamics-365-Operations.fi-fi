@@ -1,4 +1,4 @@
---- 
+---
 title: "Nimikkeen tai raaka-aineen jäljittäminen"
 description: "Tässä menettelyssä käsitellään, miten nimikkeen seurannalla voidaan selvittää, miten nimikkeitä tai raaka-aineita on käytetty tai ollaan käyttämässä."
 author: pjacobse
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -54,5 +54,4 @@ Tässä menettelyssä käsitellään, miten nimikkeen seurannalla voidaan selvit
 8. Valitse toimintoruudussa Jäljitys.
 9. Valitse Lähetetyt myyntitilaukset.
 10. Sulje sivu.
-
 

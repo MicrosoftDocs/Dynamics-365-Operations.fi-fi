@@ -1,4 +1,4 @@
---- 
+---
 title: "Fyysisen varaston siirtäminen varastossa"
 description: "Tässä menettelyssä käsitellään varastosiirtokirjauskansion luominen ja kirjaaminen, jotta nimikkeen siirto varastosijainnista toiseen voidaan rekisteröidä."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Tässä menettelyssä käsitellään varastosiirtokirjauskansion luominen ja kir
 1. Valitse Varasto.
 2. Valitse Tapahtumat.
     * Tässä on näkyvissä tapahtumat, jotka luotiin kirjauskansioon kirjattaessa.  
-
 

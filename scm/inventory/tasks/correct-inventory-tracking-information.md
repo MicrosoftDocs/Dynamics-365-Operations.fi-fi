@@ -1,4 +1,4 @@
---- 
+---
 title: Oikeat varaston seurantatiedot
 description: "Tässä menettelyssä käsitellään varastosiirtokirjauskansion luonti- ja kirjausprosessia, jolla mahdollisestaan varaston seurantatietojen korjaaminen."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ Tässä menettelyssä käsitellään varastosiirtokirjauskansion luonti- ja kirj
 1. Valitse Varasto.
 2. Valitse Tapahtumat.
     * Tässä on näkyvissä tapahtumat, jotka luotiin kirjauskansioon kirjattaessa.   
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Määritä laatutilaukset"
 description: "Seuraavissa vaiheissa kerrotaan, miten laadunhallintaprosessi otetaan käyttöön, kun saapuva varasto on tarkistettava heti saapumisen yhteydessä tehtävän rekisteröinnin jälkeen."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -142,5 +142,4 @@ Seuraavissa vaiheissa kerrotaan, miten laadunhallintaprosessi otetaan käyttöö
 15. Etsi haluamasi tietue luettelosta ja valitse se.
 16. Valitse Tallenna.
 17. Sulje sivu.
-
 

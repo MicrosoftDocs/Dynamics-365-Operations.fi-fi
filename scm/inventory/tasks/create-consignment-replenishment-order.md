@@ -1,4 +1,4 @@
---- 
+---
 title: "Luo tavaralähetyksen täydennystilaus"
 description: "Tässä menettelyssä kuvataan, miten luot tavaralähetyksen täydennystilauksen, jossa voit seurata odotettua toimittajan lähetystä tavaralähetysvarastoon."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -60,7 +60,7 @@ Tässä menettelyssä kuvataan, miten luot tavaralähetyksen täydennystilauksen
 ## <a name="receive-items"></a>Vastaanota nimikkeet
 1. Valitse Tuotteen vastaanotto.
 2. Kirjoita arvo Ulkoisen tuotteen vastaanotto -kenttään.
-3. Syötä Määrä-kenttään numero, joka on pienempi kuin numero, joka siinä on. 
+3. Syötä Määrä-kenttään numero, joka on pienempi kuin numero, joka siinä on.
 4. Valitse OK.
 
 ## <a name="check-the-on-hand-inventory"></a>Tarkista käytettävissä oleva varasto.
@@ -70,5 +70,4 @@ Tässä menettelyssä kuvataan, miten luot tavaralähetyksen täydennystilauksen
     * Toimitusvarastoon vastaanotetut nimikkeet, jotka omistaa toimittaja ovat käytettävissä. Tavaralähetyksen täydennystilauksella jäljellä oleva määrä näytetään Tilattu yhteensä -kentässä.  
 4. Sulje sivu.
 5. Valitse Sulje.
-
 

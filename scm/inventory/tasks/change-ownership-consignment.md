@@ -1,4 +1,4 @@
---- 
+---
 title: "Tavaralähetysvaraston omistajuuden muuttaminen tuotannon kysynnän perusteella"
 description: "Tässä menettelyssä, miten muutat tavaralähetysvaraston omistajuuden toimittajalta yrityksellesi, kun varastolle on kysyntää tuotannossa."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -51,5 +51,4 @@ Tässä menettelyssä, miten muutat tavaralähetysvaraston omistajuuden toimitta
     * Kun kirjauskansio kirjataan, toimittajan omistama varasto vapautetaan "Omistuksen muutos"-viittauksen avulla. Varasto vastaanotetaan sitten käytettäväksi varastotapahtumalla, johon päivitetään ostotilauksen tuotteen vastaanotto. Huomaa, että vain ne tapahtumat luodaan, jotka liittyvät kirjattuun kirjauskansioon. Odotettuja varastotapahtumia ei luoda.  
 2. Valitse OK.
 3. Sulje sivu.
-
 

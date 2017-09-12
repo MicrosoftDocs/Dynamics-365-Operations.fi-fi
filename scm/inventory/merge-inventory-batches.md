@@ -1,7 +1,7 @@
 ---
 title: "Yhdistä varastoerät"
 description: "Tässä artikkelissa on tietoja kahden tai useamman varastoerän konsolidoinnista yhdistetyksi eräksi."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -31,7 +31,7 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on tietoja kahden tai useamman varastoerän konsolidoinnista yhdistetyksi eräksi. 
+Tässä artikkelissa on tietoja kahden tai useamman varastoerän konsolidoinnista yhdistetyksi eräksi.
 
 Kun yhdistät eriä, laskelmat voivat auttaa optimoimaan yhdistetyn erän ominaisuudet ja erämääritteet. Kun lähde-erät on valittu, yhdistetyn erän voi tarkistaa ja sitä voi vielä muuttaa ennen kirjausta. Voit myös siirtää erän yhdistämisen varastokirjauskansioon hyväksyttäväksi. Varasto voidaan varata tai kirjata suoraan varastokirjauskansiosta. Yhdistetyt erän kirjatessasi varasto oikaistaan lähde-erillä ja yhdistetyllä erällä.
 
@@ -142,7 +142,4 @@ Voit hyväksyä erän yhdistämisen varastokirjauskansion **Kaikki erän yhdist�
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Miksi en näe todellista painoa varaston kirjauskansiossa, kun olen yhdistänyt todellisen painon nimikkeen?
 Voit yhdistää todellisen painon nimikkeiden eriä samalla tavalla kuin muitakin nimikkeitä. Todellisen painon tietoja ei kuitenkaan näytetä varastokirjauskansiossa. Suosittelemme, että varmistat todelliset painotiedot ennen erän yhdistämisen siirtämistä varaston kirjauskansioon.
-
-
-
 

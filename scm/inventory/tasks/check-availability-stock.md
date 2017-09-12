@@ -1,4 +1,4 @@
---- 
+---
 title: Varastosaatavuuden tarkistus
 description: "Tässä menettelyssä kerrotaan, miten tietyn nimiketunnuksen varastosaldo ja käytettävissä oleva varasto tarkistetaan."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Tässä menettelyssä kerrotaan, miten tietyn nimiketunnuksen varastosaldo ja k�
 4. Valitse Näytä dimensiot.
 5. Valitse OK.
 6. Sulje sivu.
-
 

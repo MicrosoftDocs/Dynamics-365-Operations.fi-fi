@@ -1,4 +1,4 @@
---- 
+---
 title: Alusta varaston varastotasoja
 description: "Tässä menettelyssä selitetään, miten käytettävissä oleva varasto päivitetään manuaalisesti varastosiirron kirjauskansion avulla."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Tässä menettelyssä selitetään, miten käytettävissä oleva varasto päivit
 24. Valitse OK.
 25. Sulje sivu.
 26. Sulje sivu.
-
 

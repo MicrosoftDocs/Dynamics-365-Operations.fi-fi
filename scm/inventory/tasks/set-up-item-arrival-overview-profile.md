@@ -1,7 +1,7 @@
---- 
+---
 title: "Määritä nimikkeen saapumisen yhteenvedon profiili"
 description: "Tässä tehtävässä määritetään saapumisen yleiskuvaprofiili."
-author: BibiSp
+author: perlynne
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ Tässä tehtävässä määritetään saapumisen yleiskuvaprofiili. Saapumisen y
     * Valitse vastaanottorivit siirtotilauksista.  
 17. Valitse Tallenna.
 18. Sulje sivu.
-
 

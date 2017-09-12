@@ -1,4 +1,4 @@
---- 
+---
 title: "Luo ja ylläpidä varastoesto"
 description: "Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muiden lähtevien asiakirjojen tai varastoeston avulla."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -34,7 +34,7 @@ Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston
 1. Valitse Inventoinnin- ja varastonhallinta > Kausittaiset tehtävät > Varastoesto.
 2. Valitse Uusi.
 3. Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.
-4. Valitse luettelosta nimike. 
+4. Valitse luettelosta nimike.
     * Määritä estettävä nimiketunnus, jolla on fyysistä käytettävissä olevaa varastoa. Jos käytössä on USMF, voit valita nimikkeen M9201.  
 5. Kirjoita numero Määrä-kenttään.
     * Jos käytössä on nimike M9201, määritä arvo, joka on pienempi kuin 200.  
@@ -55,5 +55,4 @@ Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston
 1. Valitse Poista.
 2. Valitse Kyllä.
 3. Sulje sivu.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Määritä hallinnan esivaatimukset"
 description: "Näitä toimintaohjeita noudattamalla voit ottaa käyttöön määrityksistä poikkeamisen hallintaprosessit."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -101,5 +101,4 @@ Näitä toimintaohjeita noudattamalla voit ottaa käyttöön määrityksistä po
 3. Kirjoita Karanteenivyöhyke-kenttään arvo.
 4. Kirjoita arvo Kuvaus-kenttään.
 5. Sulje sivu.
-
 
