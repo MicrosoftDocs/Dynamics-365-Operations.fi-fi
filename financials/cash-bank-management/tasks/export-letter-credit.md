@@ -16,127 +16,127 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 55f62b501b545db54d717d8c66d09ec831cb286f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 07fef304361fa0008f57425ff27596e4e382072a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="export-a-letter-of-credit"></a>Vie remburssi
+# <a name="export-a-letter-of-credit"></a><span data-ttu-id="45db1-103">Vie remburssi</span><span class="sxs-lookup"><span data-stu-id="45db1-103">Export a letter of credit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä käsitellään vientiremburssiprosessi.
+<span data-ttu-id="45db1-104">Tässä menettelyssä käsitellään vientiremburssiprosessi.</span><span class="sxs-lookup"><span data-stu-id="45db1-104">This procedure walks through the process of the Export letter of credit.</span></span>
 
-Remburssi on pankin antama sopimus, jossa pankki suostuu varmistamaan maksun ostajan puolesta, jos ostajan ja myyjän väliset ehdot täyttyvät.
-
-
-
-Suorittaa Määritä pankin limiitit ja kirjausprofiilit - ja Luo pankin limiittisopimus remburssia varten -menettelyt ennen tätä menettelyä. USMF-demoyritys on oltava valittuna, muuten menettelyn suorittaminen ei onnistu.
+<span data-ttu-id="45db1-105">Remburssi on pankin antama sopimus, jossa pankki suostuu varmistamaan maksun ostajan puolesta, jos ostajan ja myyjän väliset ehdot täyttyvät.</span><span class="sxs-lookup"><span data-stu-id="45db1-105">A letter of credit is an agreement that is issued by a bank, in which the bank agrees to ensure payment on behalf of the buyer, if the terms of the agreement between the buyer and seller are met.</span></span>
 
 
 
+<span data-ttu-id="45db1-106">Suorittaa Määritä pankin limiitit ja kirjausprofiilit - ja Luo pankin limiittisopimus remburssia varten -menettelyt ennen tätä menettelyä.</span><span class="sxs-lookup"><span data-stu-id="45db1-106">Run the 'Set up bank facilities and posting profiles' procedure and the 'Letter of Credit_Create a bank facility agreement' procedure prior to this procedure.</span></span> <span data-ttu-id="45db1-107">USMF-demoyritys on oltava valittuna, muuten menettelyn suorittaminen ei onnistu.</span><span class="sxs-lookup"><span data-stu-id="45db1-107">The USMF demo company must be selected in order to run this procedure successfully.</span></span>
 
-## <a name="create-sales-order-for-export-letter-of-credit"></a>Luo myyntitilaus vientiremburssille
-1. Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Asiakastili-kentässä avattavan valikon painike.
-4. Etsi haluamasi tietue luettelosta ja valitse se.
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Laajenna tai tiivistä Yleiset-osa.
-7. Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.
-    * Valitse toimipaikka, johon otettava nimike on varastoitu.  
-8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-9. Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.
-    * Valitse varasto, johon otettava nimike on varastoitu.  
-10. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-    * Huomautus: Pankkitositteen tyyppi -kenttään on valittava arvo Remburssi.  
-11. Valitse Pankkitositteen tyyppi -kentässä Remburssi.
-12. Laajenna tai tiivistä Toimitus-osa.
-    * Valitse Toimituspäivän tarkistus = Ei mitään.  
-13. Kirjoita päivämäärä Pyydetty vastaanottopäivämäärä -kenttään.
-14. Valitse OK.
-15. Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.
-    * Valitse otettava tai myytävä pakollinen nimike.  
-16. Etsi haluamasi tietue luettelosta ja valitse se.
-17. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-18. Syötä Yksikköhinta-kenttään numero.
-19. Laajenna tai tiivistä Rivitiedot-osa.
-20. Valitse Toimitus-välilehti.
-21. Kirjoita päivämäärä Pyydetty lähetyspäivämäärä -kenttään.
-22. Kirjoita päivämäärä Vahvistettu lähetyspäivämäärä -kenttään.
-23. Valitse toimintoruudussa Hallitse.
-24. Valitse Remburssi.
-25. Kirjoita arvo Pankkitositteen numero -kenttään.
-26. Anna päivämäärä ja kellonaika Vanhentumispäivä-kenttään.
-27. Laajenna tai tiivistä Pankin tiedot -osa.
-28. Avaa haku napsauttamalla Liikkeelle laskeva pankki -kentässä avattavan valikon painiketta.
-29. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-30. Avaa haku napsauttamalla Neuvova pankki -kentässä avattavan valikon painiketta.
-31. Etsi haluamasi tietue luettelosta ja valitse se.
-32. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-33. Valitse Hae myyntitilauksen lähetykset.
-34. Valitse Liikkeeseen laskevan pankin asiakirja.
-35. Sulje sivu.
 
-## <a name="post-packing-slip"></a>Kirjaa pakkausluettelo
-1. Valitse toimintoruudussa Kerää ja pakkaa.
-2. Valitse Kirjaa pakkausluettelo.
-3. Laajenna tai tiivistä Parametrit-osa.
-4. Valitse Määrä-kentässä Kaikki.
-5. Laajenna tai tiivistä Asetukset-osa.
-6. Kirjoita päivämäärä Pakkausluettelon päiväys -kenttään.
-7. Valitse Lähetyksen numero.
-8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-9. Valitse OK.
-10. Valitse OK.
 
-## <a name="post-sales-invoice"></a>Kirjaa myyntilasku
-1. Valitse toimintoruudussa Lasku.
-2. Valitse Lasku.
-3. Laajenna tai tiivistä Yhteenveto-osa.
-4. Valitse Lähetyksen numero.
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Laajenna tai tiivistä Asetukset-osa.
-7. Kirjoita päivämäärä Laskun päivämäärä -kenttään.
-8. Valitse OK.
-9. Valitse OK.
 
-## <a name="shipment-document-submitted-status"></a>Lähetysasiakirjojen lähetystila
-1. Valitse toimintoruudussa Hallitse.
-2. Valitse Remburssi.
-3. Laajenna tai tiivistä Rivit-osa.
-    * Huomautus: Asiakirja lähetetty -kentässä on oltava valittuna Kyllä.  
+## <a name="create-sales-order-for-export-letter-of-credit"></a><span data-ttu-id="45db1-108">Luo myyntitilaus vientiremburssille</span><span class="sxs-lookup"><span data-stu-id="45db1-108">Create Sales Order for Export letter of credit</span></span>
+1. <span data-ttu-id="45db1-109">Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.</span><span class="sxs-lookup"><span data-stu-id="45db1-109">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="45db1-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="45db1-110">Click New.</span></span>
+3. <span data-ttu-id="45db1-111">Avaa haku valitsemalla Asiakastili-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="45db1-111">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="45db1-112">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="45db1-112">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="45db1-113">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="45db1-113">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="45db1-114">Laajenna tai tiivistä Yleiset-osa.</span><span class="sxs-lookup"><span data-stu-id="45db1-114">Expand or collapse the General section.</span></span>
+7. <span data-ttu-id="45db1-115">Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="45db1-115">In the Site field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="45db1-116">Valitse toimipaikka, johon otettava nimike on varastoitu.</span><span class="sxs-lookup"><span data-stu-id="45db1-116">Select the Site where the item to be issued is stocked.</span></span>  
+8. <span data-ttu-id="45db1-117">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="45db1-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="45db1-118">Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="45db1-118">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="45db1-119">Valitse varasto, johon otettava nimike on varastoitu.</span><span class="sxs-lookup"><span data-stu-id="45db1-119">Select the Warehouse where item to be issued is stocked.</span></span>  
+10. <span data-ttu-id="45db1-120">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="45db1-120">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="45db1-121">Huomautus: Pankkitositteen tyyppi -kenttään on valittava arvo Remburssi.</span><span class="sxs-lookup"><span data-stu-id="45db1-121">Note: The Bank document type field should be selected with the value 'Letter of credit'.</span></span>  
+11. <span data-ttu-id="45db1-122">Valitse Pankkitositteen tyyppi -kentässä Remburssi.</span><span class="sxs-lookup"><span data-stu-id="45db1-122">In the Bank document type field, select 'Letter of credit'.</span></span>
+12. <span data-ttu-id="45db1-123">Laajenna tai tiivistä Toimitus-osa.</span><span class="sxs-lookup"><span data-stu-id="45db1-123">Expand or collapse the Delivery section.</span></span>
+    * <span data-ttu-id="45db1-124">Valitse Toimituspäivän tarkistus = Ei mitään.</span><span class="sxs-lookup"><span data-stu-id="45db1-124">Select Delivery date control = None.</span></span>  
+13. <span data-ttu-id="45db1-125">Kirjoita päivämäärä Pyydetty vastaanottopäivämäärä -kenttään.</span><span class="sxs-lookup"><span data-stu-id="45db1-125">In the Requested receipt date field, enter a date.</span></span>
+14. <span data-ttu-id="45db1-126">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="45db1-126">Click OK.</span></span>
+15. <span data-ttu-id="45db1-127">Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="45db1-127">In the Item number field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="45db1-128">Valitse otettava tai myytävä pakollinen nimike.</span><span class="sxs-lookup"><span data-stu-id="45db1-128">Select the required item to be Issued/Sold.</span></span>  
+16. <span data-ttu-id="45db1-129">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="45db1-129">In the list, find and select the desired record.</span></span>
+17. <span data-ttu-id="45db1-130">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="45db1-130">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="45db1-131">Syötä Yksikköhinta-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="45db1-131">In the Unit price field, enter a number.</span></span>
+19. <span data-ttu-id="45db1-132">Laajenna tai tiivistä Rivitiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="45db1-132">Expand or collapse the Line details section.</span></span>
+20. <span data-ttu-id="45db1-133">Valitse Toimitus-välilehti.</span><span class="sxs-lookup"><span data-stu-id="45db1-133">Click the Delivery tab.</span></span>
+21. <span data-ttu-id="45db1-134">Kirjoita päivämäärä Pyydetty lähetyspäivämäärä -kenttään.</span><span class="sxs-lookup"><span data-stu-id="45db1-134">In the Requested ship date field, enter a date.</span></span>
+22. <span data-ttu-id="45db1-135">Kirjoita päivämäärä Vahvistettu lähetyspäivämäärä -kenttään.</span><span class="sxs-lookup"><span data-stu-id="45db1-135">In the Confirmed ship date field, enter a date.</span></span>
+23. <span data-ttu-id="45db1-136">Valitse toimintoruudussa Hallitse.</span><span class="sxs-lookup"><span data-stu-id="45db1-136">On the Action Pane, click Manage.</span></span>
+24. <span data-ttu-id="45db1-137">Valitse Remburssi.</span><span class="sxs-lookup"><span data-stu-id="45db1-137">Click Letter of credit.</span></span>
+25. <span data-ttu-id="45db1-138">Kirjoita arvo Pankkitositteen numero -kenttään.</span><span class="sxs-lookup"><span data-stu-id="45db1-138">In the Bank document number field, type a value.</span></span>
+26. <span data-ttu-id="45db1-139">Anna päivämäärä ja kellonaika Vanhentumispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="45db1-139">In the Expiration date field, enter a date and time.</span></span>
+27. <span data-ttu-id="45db1-140">Laajenna tai tiivistä Pankin tiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="45db1-140">Expand or collapse the Bank details section.</span></span>
+28. <span data-ttu-id="45db1-141">Avaa haku napsauttamalla Liikkeelle laskeva pankki -kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="45db1-141">In the Issuing bank field, click the drop-down button to open the lookup.</span></span>
+29. <span data-ttu-id="45db1-142">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="45db1-142">In the list, click the link in the selected row.</span></span>
+30. <span data-ttu-id="45db1-143">Avaa haku napsauttamalla Neuvova pankki -kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="45db1-143">In the Advising bank field, click the drop-down button to open the lookup.</span></span>
+31. <span data-ttu-id="45db1-144">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="45db1-144">In the list, find and select the desired record.</span></span>
+32. <span data-ttu-id="45db1-145">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="45db1-145">In the list, click the link in the selected row.</span></span>
+33. <span data-ttu-id="45db1-146">Valitse Hae myyntitilauksen lähetykset.</span><span class="sxs-lookup"><span data-stu-id="45db1-146">Click Fetch sales order shipments.</span></span>
+34. <span data-ttu-id="45db1-147">Valitse Liikkeeseen laskevan pankin asiakirja.</span><span class="sxs-lookup"><span data-stu-id="45db1-147">Click Issue bank document.</span></span>
+35. <span data-ttu-id="45db1-148">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="45db1-148">Close the page.</span></span>
 
-## <a name="verify-export-letter-of-credit"></a>Tarkista vientiremburssi
-1. Valitse Maksuliikenteen hallinta > Luottokirjeet > Vientiremburssi ja tuontiperintä.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-    * Tarkista, vientiremburssin lähetyksen tila on Laskutettu.  
+## <a name="post-packing-slip"></a><span data-ttu-id="45db1-149">Kirjaa pakkausluettelo</span><span class="sxs-lookup"><span data-stu-id="45db1-149">Post Packing slip</span></span>
+1. <span data-ttu-id="45db1-150">Valitse toimintoruudussa Kerää ja pakkaa.</span><span class="sxs-lookup"><span data-stu-id="45db1-150">On the Action Pane, click Pick and pack.</span></span>
+2. <span data-ttu-id="45db1-151">Valitse Kirjaa pakkausluettelo.</span><span class="sxs-lookup"><span data-stu-id="45db1-151">Click Post packing slip.</span></span>
+3. <span data-ttu-id="45db1-152">Laajenna tai tiivistä Parametrit-osa.</span><span class="sxs-lookup"><span data-stu-id="45db1-152">Expand or collapse the Parameters section.</span></span>
+4. <span data-ttu-id="45db1-153">Valitse Määrä-kentässä Kaikki.</span><span class="sxs-lookup"><span data-stu-id="45db1-153">In the Quantity field, select 'All'.</span></span>
+5. <span data-ttu-id="45db1-154">Laajenna tai tiivistä Asetukset-osa.</span><span class="sxs-lookup"><span data-stu-id="45db1-154">Expand or collapse the Setup section.</span></span>
+6. <span data-ttu-id="45db1-155">Kirjoita päivämäärä Pakkausluettelon päiväys -kenttään.</span><span class="sxs-lookup"><span data-stu-id="45db1-155">In the Packing slip date field, enter a date.</span></span>
+7. <span data-ttu-id="45db1-156">Valitse Lähetyksen numero.</span><span class="sxs-lookup"><span data-stu-id="45db1-156">Select the Shipment number.</span></span>
+8. <span data-ttu-id="45db1-157">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="45db1-157">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="45db1-158">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="45db1-158">Click OK.</span></span>
+10. <span data-ttu-id="45db1-159">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="45db1-159">Click OK.</span></span>
 
-## <a name="customer-payment"></a>Asiakkaan maksu
-1. Siirry kohtaan Myyntireskontra > Maksut > Maksukirjauskansio.
-2. Valitse Uusi.
-3. Merkitse valittu rivi luettelossa.
-4. Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Valitse Rivit.
-7. Syötä Päivämäärään-kenttään päivämäärä.
-8. Määritä Tili-kenttään haluamasi arvot.
-9. Valitse Tilitys.
-10. Valitse Summat-otsikon valintaruutu.
-    * Huomautus: valitse Näytä-kentän asetukseksi Remburssi.  
-11. Etsi haluamasi tietue luettelosta ja valitse se.
-12. Valitse Merkitse-valintaruutu tai poista sen valinta.
-13. Valitse OK.
-14. Valitse Maksu-välilehti.
-    * Tarkista Pankkitositteen numero- ja Lähetyksen numero -asetusten tiedot  
-15. Valitse Kirjaa.
+## <a name="post-sales-invoice"></a><span data-ttu-id="45db1-160">Kirjaa myyntilasku</span><span class="sxs-lookup"><span data-stu-id="45db1-160">Post sales invoice</span></span>
+1. <span data-ttu-id="45db1-161">Valitse toimintoruudussa Lasku.</span><span class="sxs-lookup"><span data-stu-id="45db1-161">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="45db1-162">Valitse Lasku.</span><span class="sxs-lookup"><span data-stu-id="45db1-162">Click Invoice.</span></span>
+3. <span data-ttu-id="45db1-163">Laajenna tai tiivistä Yhteenveto-osa.</span><span class="sxs-lookup"><span data-stu-id="45db1-163">Expand or collapse the Overview section.</span></span>
+4. <span data-ttu-id="45db1-164">Valitse Lähetyksen numero.</span><span class="sxs-lookup"><span data-stu-id="45db1-164">Select the Shipment number.</span></span>
+5. <span data-ttu-id="45db1-165">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="45db1-165">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="45db1-166">Laajenna tai tiivistä Asetukset-osa.</span><span class="sxs-lookup"><span data-stu-id="45db1-166">Expand or collapse the Setup section.</span></span>
+7. <span data-ttu-id="45db1-167">Kirjoita päivämäärä Laskun päivämäärä -kenttään.</span><span class="sxs-lookup"><span data-stu-id="45db1-167">In the Invoice date field, enter a date.</span></span>
+8. <span data-ttu-id="45db1-168">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="45db1-168">Click OK.</span></span>
+9. <span data-ttu-id="45db1-169">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="45db1-169">Click OK.</span></span>
 
-## <a name="verify-export-letter-of-credit-after-payment"></a>Tarkista vientiremburssi maksun jälkeen
-1. Valitse Maksuliikenteen hallinta > Luottokirjeet > Vientiremburssi ja tuontiperintä.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-    * Tarkista, että Lähetyksen tila = Maksu vastaanotettu ja saldon summa = 0,00.  
+## <a name="shipment-document-submitted-status"></a><span data-ttu-id="45db1-170">Lähetysasiakirjojen lähetystila</span><span class="sxs-lookup"><span data-stu-id="45db1-170">Shipment document submitted status</span></span>
+1. <span data-ttu-id="45db1-171">Valitse toimintoruudussa Hallitse.</span><span class="sxs-lookup"><span data-stu-id="45db1-171">On the Action Pane, click Manage.</span></span>
+2. <span data-ttu-id="45db1-172">Valitse Remburssi.</span><span class="sxs-lookup"><span data-stu-id="45db1-172">Click Letter of credit.</span></span>
+3. <span data-ttu-id="45db1-173">Laajenna tai tiivistä Rivit-osa.</span><span class="sxs-lookup"><span data-stu-id="45db1-173">Expand or collapse the Lines section.</span></span>
+    * <span data-ttu-id="45db1-174">Huomautus: Asiakirja lähetetty -kentässä on oltava valittuna Kyllä.</span><span class="sxs-lookup"><span data-stu-id="45db1-174">Note: The 'Document submitted' field should be set to 'Yes'.</span></span>  
+
+## <a name="verify-export-letter-of-credit"></a><span data-ttu-id="45db1-175">Tarkista vientiremburssi</span><span class="sxs-lookup"><span data-stu-id="45db1-175">Verify Export letter of credit</span></span>
+1. <span data-ttu-id="45db1-176">Valitse Maksuliikenteen hallinta > Luottokirjeet > Vientiremburssi ja tuontiperintä.</span><span class="sxs-lookup"><span data-stu-id="45db1-176">Go to Cash and bank management > Letters of credit > Export letter of credit and import collection.</span></span>
+2. <span data-ttu-id="45db1-177">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="45db1-177">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="45db1-178">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="45db1-178">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="45db1-179">Tarkista, vientiremburssin lähetyksen tila on Laskutettu.</span><span class="sxs-lookup"><span data-stu-id="45db1-179">Verify that the Export letter of credit has a Shipment status of 'Invoiced'.</span></span>  
+
+## <a name="customer-payment"></a><span data-ttu-id="45db1-180">Asiakkaan maksu</span><span class="sxs-lookup"><span data-stu-id="45db1-180">Customer payment</span></span>
+1. <span data-ttu-id="45db1-181">Siirry kohtaan Myyntireskontra > Maksut > Maksukirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="45db1-181">Go to Accounts receivable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="45db1-182">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="45db1-182">Click New.</span></span>
+3. <span data-ttu-id="45db1-183">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="45db1-183">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="45db1-184">Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="45db1-184">In the Name field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="45db1-185">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="45db1-185">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="45db1-186">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="45db1-186">Click Lines.</span></span>
+7. <span data-ttu-id="45db1-187">Syötä Päivämäärään-kenttään päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="45db1-187">In the Date field, enter a date.</span></span>
+8. <span data-ttu-id="45db1-188">Määritä Tili-kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="45db1-188">In the Account field, specify the desired values.</span></span>
+9. <span data-ttu-id="45db1-189">Valitse Tilitys.</span><span class="sxs-lookup"><span data-stu-id="45db1-189">Click Settlement.</span></span>
+10. <span data-ttu-id="45db1-190">Valitse Summat-otsikon valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="45db1-190">Select the check box on the header of Totals.</span></span>
+    * <span data-ttu-id="45db1-191">Huomautus: valitse Näytä-kentän asetukseksi Remburssi.</span><span class="sxs-lookup"><span data-stu-id="45db1-191">Note: Set the Show field to 'Letter of credit'.</span></span>  
+11. <span data-ttu-id="45db1-192">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="45db1-192">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="45db1-193">Valitse Merkitse-valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="45db1-193">Select or clear the Mark check box.</span></span>
+13. <span data-ttu-id="45db1-194">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="45db1-194">Click OK.</span></span>
+14. <span data-ttu-id="45db1-195">Valitse Maksu-välilehti.</span><span class="sxs-lookup"><span data-stu-id="45db1-195">Click the Payment tab.</span></span>
+    * <span data-ttu-id="45db1-196">Tarkista Pankkitositteen numero- ja Lähetyksen numero -asetusten tiedot</span><span class="sxs-lookup"><span data-stu-id="45db1-196">Verify Bank document number and Shipment number details</span></span>  
+15. <span data-ttu-id="45db1-197">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="45db1-197">Click Post.</span></span>
+
+## <a name="verify-export-letter-of-credit-after-payment"></a><span data-ttu-id="45db1-198">Tarkista vientiremburssi maksun jälkeen</span><span class="sxs-lookup"><span data-stu-id="45db1-198">Verify Export letter of credit after payment</span></span>
+1. <span data-ttu-id="45db1-199">Valitse Maksuliikenteen hallinta > Luottokirjeet > Vientiremburssi ja tuontiperintä.</span><span class="sxs-lookup"><span data-stu-id="45db1-199">Go to Cash and bank management > Letters of credit > Export letter of credit and import collection.</span></span>
+2. <span data-ttu-id="45db1-200">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="45db1-200">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="45db1-201">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="45db1-201">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="45db1-202">Tarkista, että Lähetyksen tila = Maksu vastaanotettu ja saldon summa = 0,00.</span><span class="sxs-lookup"><span data-stu-id="45db1-202">Verify Shipment status = Payment received and balance amount = 0.00.</span></span>  
 
 

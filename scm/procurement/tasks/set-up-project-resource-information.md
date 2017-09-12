@@ -17,38 +17,38 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 1b95b797d5e2b9dbf6e325e71705727b87c5e10e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9824971eb2a970f6136df9cc2c5feffc038b8f09
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-project-resource-information"></a>Määritä projektin resurssitiedot
+# <a name="set-up-project-resource-information"></a><span data-ttu-id="e08e4-103">Määritä projektin resurssitiedot</span><span class="sxs-lookup"><span data-stu-id="e08e4-103">Set up project resource information</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tämä menettely osoittaa, miten projektiresurssi määritetään. Tässä tehtävässä käytetään USMF-tietojoukkoa.
+<span data-ttu-id="e08e4-104">Tämä menettely osoittaa, miten projektiresurssi määritetään.</span><span class="sxs-lookup"><span data-stu-id="e08e4-104">This procedure shows how to set up a project resource.</span></span> <span data-ttu-id="e08e4-105">Tässä tehtävässä käytetään USMF-tietojoukkoa.</span><span class="sxs-lookup"><span data-stu-id="e08e4-105">This task uses the USMF data set.</span></span>
 
-1. Valitse Projektinhallinta ja kirjanpito > Projektiresurssit > Resurssiluettelo.
-2. Valitse Uusi resurssi.
-3. Anna tai valitse Työntekijä-kentässä arvo.
-4. Syötä tai valitse arvo Kalenteri-kenttään.
-5. Anna tai valitse arvo Kausikoodi-kenttään.
-6. Valitse Luo.
-7. Valitse Kustannushinnat.
-8. Valitse Kustannushinta – tunnit.
-9. Valitse Uusi.
-10. Syötä päivämäärä Voimaantulopäivä-kenttään.
-11. Syötä Kustannushinta-kenttään numero.
-12. Valitse Tallenna.
-13. Sulje sivu.
-14. Valitse Myyntihinnat.
-15. Valitse Myyntihinta – tunti.
-16. Valitse Uusi.
-17. Syötä päivämäärä Voimaantulopäivä-kenttään.
-18. Anna Hinnoittelu-kentässä luku.
-19. Valitse Kirjaustapa-kentästä jokin vaihtoehto.
-20. Valitse Tallenna.
-21. Sulje sivu.
+1. <span data-ttu-id="e08e4-106">Valitse Projektinhallinta ja kirjanpito > Projektiresurssit > Resurssiluettelo.</span><span class="sxs-lookup"><span data-stu-id="e08e4-106">Go to Project management and accounting > Project resources > Resources list.</span></span>
+2. <span data-ttu-id="e08e4-107">Valitse Uusi resurssi.</span><span class="sxs-lookup"><span data-stu-id="e08e4-107">Click New resource.</span></span>
+3. <span data-ttu-id="e08e4-108">Anna tai valitse Työntekijä-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="e08e4-108">In the Worker field, enter or select a value.</span></span>
+4. <span data-ttu-id="e08e4-109">Syötä tai valitse arvo Kalenteri-kenttään.</span><span class="sxs-lookup"><span data-stu-id="e08e4-109">In the Calendar field, enter or select a value.</span></span>
+5. <span data-ttu-id="e08e4-110">Anna tai valitse arvo Kausikoodi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="e08e4-110">In the Period code field, enter or select a value.</span></span>
+6. <span data-ttu-id="e08e4-111">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="e08e4-111">Click Create.</span></span>
+7. <span data-ttu-id="e08e4-112">Valitse Kustannushinnat.</span><span class="sxs-lookup"><span data-stu-id="e08e4-112">Click Cost prices.</span></span>
+8. <span data-ttu-id="e08e4-113">Valitse Kustannushinta – tunnit.</span><span class="sxs-lookup"><span data-stu-id="e08e4-113">Click Cost price - hour.</span></span>
+9. <span data-ttu-id="e08e4-114">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="e08e4-114">Click New.</span></span>
+10. <span data-ttu-id="e08e4-115">Syötä päivämäärä Voimaantulopäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="e08e4-115">In the Effective date field, enter a date.</span></span>
+11. <span data-ttu-id="e08e4-116">Syötä Kustannushinta-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="e08e4-116">In the Cost price field, enter a number.</span></span>
+12. <span data-ttu-id="e08e4-117">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="e08e4-117">Click Save.</span></span>
+13. <span data-ttu-id="e08e4-118">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="e08e4-118">Close the page.</span></span>
+14. <span data-ttu-id="e08e4-119">Valitse Myyntihinnat.</span><span class="sxs-lookup"><span data-stu-id="e08e4-119">Click Sales prices.</span></span>
+15. <span data-ttu-id="e08e4-120">Valitse Myyntihinta – tunti.</span><span class="sxs-lookup"><span data-stu-id="e08e4-120">Click Sales price - hour.</span></span>
+16. <span data-ttu-id="e08e4-121">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="e08e4-121">Click New.</span></span>
+17. <span data-ttu-id="e08e4-122">Syötä päivämäärä Voimaantulopäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="e08e4-122">In the Effective date field, enter a date.</span></span>
+18. <span data-ttu-id="e08e4-123">Anna Hinnoittelu-kentässä luku.</span><span class="sxs-lookup"><span data-stu-id="e08e4-123">In the Pricing field, enter a number.</span></span>
+19. <span data-ttu-id="e08e4-124">Valitse Kirjaustapa-kentästä jokin vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="e08e4-124">In the Valid for field, select an option.</span></span>
+20. <span data-ttu-id="e08e4-125">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="e08e4-125">Click Save.</span></span>
+21. <span data-ttu-id="e08e4-126">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="e08e4-126">Close the page.</span></span>
 
 

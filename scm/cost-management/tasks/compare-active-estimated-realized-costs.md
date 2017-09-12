@@ -17,26 +17,26 @@ ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 9fe1577ec2557d61f051b503d8822a31478abf0e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1429229096e8aa06bab982f07d0281bbbd5f7861
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>Aktiivisten, ennakkolaskettujen ja toteutuneiden kustannusten vertaaminen tuotantotilaukseen
+# <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a><span data-ttu-id="7c94d-103">Aktiivisten, ennakkolaskettujen ja toteutuneiden kustannusten vertaaminen tuotantotilaukseen</span><span class="sxs-lookup"><span data-stu-id="7c94d-103">Compare active, estimated, and realized costs on a production order</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä kuvataan, miten tuotantotilauksen tuotannon suuren varianssin syitä tarkastellaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä menettely on tarkoitettu kustannusten vastuuhenkilölle.
+<span data-ttu-id="7c94d-104">Tässä kuvataan, miten tuotantotilauksen tuotannon suuren varianssin syitä tarkastellaan.</span><span class="sxs-lookup"><span data-stu-id="7c94d-104">This procedure shows how to view reasons for high production variance for a production order.</span></span> <span data-ttu-id="7c94d-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="7c94d-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="7c94d-106">Tämä menettely on tarkoitettu kustannusten vastuuhenkilölle.</span><span class="sxs-lookup"><span data-stu-id="7c94d-106">This procedure is intended for the cost controller.</span></span>
 
-1. Valitse Kustannuslaskenta.
-2. Syötä tai valitse arvo Päivämäärä-kenttään.
-    * Tässä menettelyssä käytetään tilivuotta 2012. Voit määrittää aloituspäivämääräksi 1.1.2012 ja lopetuspäivämääräksi 31.12.2012.  
-3. Valitse Tuotannon suuret varianssit -välilehti.
-4. Seuraa Tuotanto-kentän linkkiä napsauttamalla.
-    * Seuraa Tuotanto-kentän linkkiä napsauttamalla P000116-kohtaa.  
-5. Valitse toimintoruudussa Hallitse kustannuksia.
-6. Valitse Näytä kustannusvertailu.
-7. Valitse Sulje.
+1. <span data-ttu-id="7c94d-107">Valitse Kustannuslaskenta.</span><span class="sxs-lookup"><span data-stu-id="7c94d-107">Click Cost administration.</span></span>
+2. <span data-ttu-id="7c94d-108">Syötä tai valitse arvo Päivämäärä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7c94d-108">In the Date field, enter or select a value.</span></span>
+    * <span data-ttu-id="7c94d-109">Tässä menettelyssä käytetään tilivuotta 2012.</span><span class="sxs-lookup"><span data-stu-id="7c94d-109">This procedure uses the fiscal year 2012.</span></span> <span data-ttu-id="7c94d-110">Voit määrittää aloituspäivämääräksi 1.1.2012 ja lopetuspäivämääräksi 31.12.2012.</span><span class="sxs-lookup"><span data-stu-id="7c94d-110">You can set From date to January 1, 2012 and To date to December 31, 2012.</span></span>  
+3. <span data-ttu-id="7c94d-111">Valitse Tuotannon suuret varianssit -välilehti.</span><span class="sxs-lookup"><span data-stu-id="7c94d-111">Click the High production variances tab.</span></span>
+4. <span data-ttu-id="7c94d-112">Seuraa Tuotanto-kentän linkkiä napsauttamalla.</span><span class="sxs-lookup"><span data-stu-id="7c94d-112">Click to follow the link in the Production field.</span></span>
+    * <span data-ttu-id="7c94d-113">Seuraa Tuotanto-kentän linkkiä napsauttamalla P000116-kohtaa.</span><span class="sxs-lookup"><span data-stu-id="7c94d-113">Click P000116 to follow the link in the Production field.</span></span>  
+5. <span data-ttu-id="7c94d-114">Valitse toimintoruudussa Hallitse kustannuksia.</span><span class="sxs-lookup"><span data-stu-id="7c94d-114">On the Action Pane, click Manage costs.</span></span>
+6. <span data-ttu-id="7c94d-115">Valitse Näytä kustannusvertailu.</span><span class="sxs-lookup"><span data-stu-id="7c94d-115">Click View cost comparison.</span></span>
+7. <span data-ttu-id="7c94d-116">Valitse Sulje.</span><span class="sxs-lookup"><span data-stu-id="7c94d-116">Click Close.</span></span>
 
 

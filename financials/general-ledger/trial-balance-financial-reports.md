@@ -18,96 +18,96 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 86e8e91f2af474999d89bb63ac9e2afad7843c8a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6405599186c8d07ac5ade19d3b7d27ae83b036ff
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="trial-balance-financial-reports"></a>Pääkirjan talousraportit
+# <a name="trial-balance-financial-reports"></a><span data-ttu-id="e316b-104">Pääkirjan talousraportit</span><span class="sxs-lookup"><span data-stu-id="e316b-104">Trial balance financial reports</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kuvataan pääkirjojen oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin sekä niiden muokkaaminen liiketoimintasi tarpeiden mukaan. 
+<span data-ttu-id="e316b-105">Tässä artikkelissa kuvataan pääkirjojen oletusraportteja.</span><span class="sxs-lookup"><span data-stu-id="e316b-105">This article describes the default reports for trial balances.</span></span> <span data-ttu-id="e316b-106">Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin sekä niiden muokkaaminen liiketoimintasi tarpeiden mukaan.</span><span class="sxs-lookup"><span data-stu-id="e316b-106">It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements.</span></span> 
 
-<a name="default-trial-balance-reports"></a>Pääkirjan oletusraportit
+<a name="default-trial-balance-reports"></a><span data-ttu-id="e316b-107">Pääkirjan oletusraportit</span><span class="sxs-lookup"><span data-stu-id="e316b-107">Default trial balance reports</span></span>
 -----------------------------
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin talousraportointi-osa sisältää kolme pääkirjan raporttia..
+<span data-ttu-id="e316b-108">Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin talousraportointi-osa sisältää kolme pääkirjan raporttia..</span><span class="sxs-lookup"><span data-stu-id="e316b-108">Three trial balance reports are available in Financial reporting in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span>
 
-| Oletusraportti                                 | Toiminnot                                                                                                                                                                                        |
+| <span data-ttu-id="e316b-109">Oletusraportti</span><span class="sxs-lookup"><span data-stu-id="e316b-109">Default report</span></span>                                 | <span data-ttu-id="e316b-110">Toiminnot</span><span class="sxs-lookup"><span data-stu-id="e316b-110">What it does</span></span>                                                                                                                                                                                        |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Yksityiskohtainen pääkirja – oletus               | Määrittää kaikkien tilien saldotiedot ja sisältää debet- ja kreditsaldot ja näiden nettosaldot sekä tapahtumapäivämäärän, tositteen ja kirjauskansion kuvauksen.                  |
-| Pääkirjan yhteenveto – oletus                | Määrittää kaikkien tilien saldotiedot ja sisältää alku- ja loppusaldot, debet- ja kreditsaldot sekä niiden nettoeron.                                        |
-| Pääkirjan yhteenveto vuosittain – oletus | Määrittää kaikkien tilien saldotiedot ja sisältää alku- ja loppusaldot, debet- ja kreditsaldot sekä niiden kuluvan vuoden ja edellisen vuoden nettoeron. |
+| <span data-ttu-id="e316b-111">Yksityiskohtainen pääkirja – oletus</span><span class="sxs-lookup"><span data-stu-id="e316b-111">Detailed Trial Balance - Default</span></span>               | <span data-ttu-id="e316b-112">Määrittää kaikkien tilien saldotiedot ja sisältää debet- ja kreditsaldot ja näiden nettosaldot sekä tapahtumapäivämäärän, tositteen ja kirjauskansion kuvauksen.</span><span class="sxs-lookup"><span data-stu-id="e316b-112">Provides balance information for all accounts, and includes debit and credit balances, and the net of these, together with the transaction date, voucher, and journal description.</span></span>                  |
+| <span data-ttu-id="e316b-113">Pääkirjan yhteenveto – oletus</span><span class="sxs-lookup"><span data-stu-id="e316b-113">Summary Trial Balance – Default</span></span>                | <span data-ttu-id="e316b-114">Määrittää kaikkien tilien saldotiedot ja sisältää alku- ja loppusaldot, debet- ja kreditsaldot sekä niiden nettoeron.</span><span class="sxs-lookup"><span data-stu-id="e316b-114">Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference.</span></span>                                        |
+| <span data-ttu-id="e316b-115">Pääkirjan yhteenveto vuosittain – oletus</span><span class="sxs-lookup"><span data-stu-id="e316b-115">Summary Trial Balance Year Over Year – Default</span></span> | <span data-ttu-id="e316b-116">Määrittää kaikkien tilien saldotiedot ja sisältää alku- ja loppusaldot, debet- ja kreditsaldot sekä niiden kuluvan vuoden ja edellisen vuoden nettoeron.</span><span class="sxs-lookup"><span data-stu-id="e316b-116">Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference for the current year and the past year.</span></span> |
 
-## <a name="building-blocks"></a>Rakenneosat
-Pääkirjan talousraporteissa käytetään seuraavia rakenneosia.
+## <a name="building-blocks"></a><span data-ttu-id="e316b-117">Rakenneosat</span><span class="sxs-lookup"><span data-stu-id="e316b-117">Building blocks</span></span>
+<span data-ttu-id="e316b-118">Pääkirjan talousraporteissa käytetään seuraavia rakenneosia.</span><span class="sxs-lookup"><span data-stu-id="e316b-118">The trial balance financial reports use the following building blocks.</span></span>
 
-| Oletusraportti                                 | Rivimääritys          | Sarakemääritys                              |
+| <span data-ttu-id="e316b-119">Oletusraportti</span><span class="sxs-lookup"><span data-stu-id="e316b-119">Default report</span></span>                                 | <span data-ttu-id="e316b-120">Rivimääritys</span><span class="sxs-lookup"><span data-stu-id="e316b-120">Row definition</span></span>          | <span data-ttu-id="e316b-121">Sarakemääritys</span><span class="sxs-lookup"><span data-stu-id="e316b-121">Column definition</span></span>                              |
 |------------------------------------------------|-------------------------|------------------------------------------------|
-| Yksityiskohtainen pääkirja – oletus               | Pääkirja - oletusarvo | Yksityiskohtainen pääkirja – oletus               |
-| Pääkirjan yhteenveto – oletus                | Pääkirja - oletusarvo | Pääkirjan yhteenveto - oletusarvo                |
-| Pääkirjan yhteenveto vuosittain – oletus | Pääkirja - oletusarvo | Pääkirjan yhteenveto vuosittain - oletusarvo |
+| <span data-ttu-id="e316b-122">Yksityiskohtainen pääkirja – oletus</span><span class="sxs-lookup"><span data-stu-id="e316b-122">Detailed Trial Balance - Default</span></span>               | <span data-ttu-id="e316b-123">Pääkirja - oletusarvo</span><span class="sxs-lookup"><span data-stu-id="e316b-123">Trial Balance - Default</span></span> | <span data-ttu-id="e316b-124">Yksityiskohtainen pääkirja – oletus</span><span class="sxs-lookup"><span data-stu-id="e316b-124">Detailed Trial Balance - Default</span></span>               |
+| <span data-ttu-id="e316b-125">Pääkirjan yhteenveto – oletus</span><span class="sxs-lookup"><span data-stu-id="e316b-125">Summary Trial Balance – Default</span></span>                | <span data-ttu-id="e316b-126">Pääkirja - oletusarvo</span><span class="sxs-lookup"><span data-stu-id="e316b-126">Trial Balance - Default</span></span> | <span data-ttu-id="e316b-127">Pääkirjan yhteenveto - oletusarvo</span><span class="sxs-lookup"><span data-stu-id="e316b-127">Summary Trial Balance - Default</span></span>                |
+| <span data-ttu-id="e316b-128">Pääkirjan yhteenveto vuosittain – oletus</span><span class="sxs-lookup"><span data-stu-id="e316b-128">Summary Trial Balance Year Over Year – Default</span></span> | <span data-ttu-id="e316b-129">Pääkirja - oletusarvo</span><span class="sxs-lookup"><span data-stu-id="e316b-129">Trial Balance - Default</span></span> | <span data-ttu-id="e316b-130">Pääkirjan yhteenveto vuosittain - oletusarvo</span><span class="sxs-lookup"><span data-stu-id="e316b-130">Summary Trial Balance Year Over Year - Default</span></span> |
 
-### <a name="row-definition"></a>Rivimääritys
+### <a name="row-definition"></a><span data-ttu-id="e316b-131">Rivimääritys</span><span class="sxs-lookup"><span data-stu-id="e316b-131">Row definition</span></span>
 
-Rivimääritys, Pääkirja – Oletusarvo, sisältää yhden rivin, joka hakee kaikki päätilit. Tämän vuoksi kuka tahansa voi luoda raportin ilman muutosten tekemistä. Voit siirtyä raporttia tarkastellessasi yhdelle riville, kun haluat nähdä kunkin tilin tiedot. Voit muokata rivimääritystä niin, että se sisältää enemmän tietoja. Pääkirjan muokkaaminen - oletusrivimääritys, joka sisältää kaikkien tilien rivit. Noudata seuraavia ohjeita.
+<span data-ttu-id="e316b-132">Rivimääritys, Pääkirja – Oletusarvo, sisältää yhden rivin, joka hakee kaikki päätilit.</span><span class="sxs-lookup"><span data-stu-id="e316b-132">The row definition, Trial Balance – Default, contains a single row that pulls in all main accounts.</span></span> <span data-ttu-id="e316b-133">Tämän vuoksi kuka tahansa voi luoda raportin ilman muutosten tekemistä.</span><span class="sxs-lookup"><span data-stu-id="e316b-133">Therefore, anyone can generate the report without having to make any modifications.</span></span> <span data-ttu-id="e316b-134">Voit siirtyä raporttia tarkastellessasi yhdelle riville, kun haluat nähdä kunkin tilin tiedot.</span><span class="sxs-lookup"><span data-stu-id="e316b-134">When you view the report, you drill into the single row to see details about each account.</span></span> <span data-ttu-id="e316b-135">Voit muokata rivimääritystä niin, että se sisältää enemmän tietoja.</span><span class="sxs-lookup"><span data-stu-id="e316b-135">You can modify the row definition so that it includes more detail.</span></span> <span data-ttu-id="e316b-136">Pääkirjan muokkaaminen - oletusrivimääritys, joka sisältää kaikkien tilien rivit. Noudata seuraavia ohjeita.</span><span class="sxs-lookup"><span data-stu-id="e316b-136">To modify the Trial Balance – Default row definition so that it includes rows for all accounts, follow these steps.</span></span>
 
-1.  Valitse **Muokkaa** ja valitse sitten **Lisää rivejä dimensioista**. **Lisää rivejä dimensioista** -komennon avulla voit valita rivimääritykseen haluamasi dimensiot. Tässä rivimäärityksessä käytetään **päätiliä**.
-2.  Varmista, että **päätili** sisältää kaikki et-merkit (&) ja valitse sitten **OK**.
+1.  <span data-ttu-id="e316b-137">Valitse **Muokkaa** ja valitse sitten **Lisää rivejä dimensioista**.</span><span class="sxs-lookup"><span data-stu-id="e316b-137">Click **Edit**, and then click **Insert Rows from Dimensions**.</span></span> <span data-ttu-id="e316b-138">**Lisää rivejä dimensioista** -komennon avulla voit valita rivimääritykseen haluamasi dimensiot.</span><span class="sxs-lookup"><span data-stu-id="e316b-138">The **Insert Rows from Dimensions** command lets you choose the dimensions that you want to have in your row definition.</span></span> <span data-ttu-id="e316b-139">Tässä rivimäärityksessä käytetään **päätiliä**.</span><span class="sxs-lookup"><span data-stu-id="e316b-139">For this row definition, you're going to use **Main Account**.</span></span>
+2.  <span data-ttu-id="e316b-140">Varmista, että **päätili** sisältää kaikki et-merkit (&) ja valitse sitten **OK**.</span><span class="sxs-lookup"><span data-stu-id="e316b-140">Make sure that **Main Account** contains all ampersands (&), and then click **OK**.</span></span>
 
-Rivimääritys sisältää nyt kaikki oletusyrityksen päätilit.
+<span data-ttu-id="e316b-141">Rivimääritys sisältää nyt kaikki oletusyrityksen päätilit.</span><span class="sxs-lookup"><span data-stu-id="e316b-141">The row definition now contains all the main accounts for your default legal entity.</span></span>
 
-### <a name="column-definition"></a>Sarakemääritys
+### <a name="column-definition"></a><span data-ttu-id="e316b-142">Sarakemääritys</span><span class="sxs-lookup"><span data-stu-id="e316b-142">Column definition</span></span>
 
-Jokaisessa pääkirjan raportissa käytetään eri sarakemääritystä. Nämä sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksityiskohtaisia tasoja ja taloushallinnon tietoja.
+<span data-ttu-id="e316b-143">Jokaisessa pääkirjan raportissa käytetään eri sarakemääritystä.</span><span class="sxs-lookup"><span data-stu-id="e316b-143">Each trial balance report uses a different column definition.</span></span> <span data-ttu-id="e316b-144">Nämä sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksityiskohtaisia tasoja ja taloushallinnon tietoja.</span><span class="sxs-lookup"><span data-stu-id="e316b-144">These column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
 
--   **Yksityiskohtainen pääkirja – oletussaraketyypit:**
-    -   **DESC** – rivimäärityksen kuvaus
-    -   **ACCT** – tilikoodit
-    -   **ATTR (3)** – määritteet:
-        -   Tapahtumapäivä
-        -   Tosite
-        -   Kirjauskansion kuvaus
-    -   **FD** – vain debet-tiedot sisältävät taloushallinnon tiedot
-    -   **FD** – vain kredit-tiedot sisältävät taloushallinnon tiedot
-    -   **CALC** – nettoerotus
--   **Pääkirjan yhteenveto – oletussaraketyypit:**
-    -   **ACCT** – tilikoodit
-    -   **DESC** – rivimäärityksen kuvaus
-    -   **ATTR** – määrite:
-        -   Tosite
-    -   **FD** – alkusaldon taloushallinnon tiedot
-    -   **FD** – vain debet-tiedot sisältävät taloushallinnon tiedot
-    -   **FD** – vain kredit-tiedot sisältävät taloushallinnon tiedot
-    -   **CALC** – nettoerotus
-    -   **CALC** – loppusaldo
--   **Pääkirjan yhteenveto vuosittain – oletusarvo**
-    -   **ACCT** – tilikoodit
-    -   **DESC** – rivimäärityksen kuvaus
-    -   **ATTR** – määrite
-        -   Tosite
-    -   **FD** – kuluvan vuoden alkusaldon taloushallinnon tiedot
-    -   **FD** – vain kuluvan vuoden debet-tiedot sisältävät taloushallinnon tiedot
-    -   **FD** – vain kuluvan vuoden kredit-tiedot sisältävät taloushallinnon tiedot
-    -   **CALC** – nettoerotus
-    -   **CALC** – loppusaldo
-    -   **FD** – vain edellisen vuoden debet-tiedot sisältävät taloushallinnon tiedot
-    -   **FD** – vain edellisen vuoden kredit-tiedot sisältävät taloushallinnon tiedot
+-   <span data-ttu-id="e316b-145">**Yksityiskohtainen pääkirja – oletussaraketyypit:**</span><span class="sxs-lookup"><span data-stu-id="e316b-145">**Detailed Trial Balance – Default column types:**</span></span>
+    -   <span data-ttu-id="e316b-146">**DESC** – rivimäärityksen kuvaus</span><span class="sxs-lookup"><span data-stu-id="e316b-146">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="e316b-147">**ACCT** – tilikoodit</span><span class="sxs-lookup"><span data-stu-id="e316b-147">**ACCT** – Account codes</span></span>
+    -   <span data-ttu-id="e316b-148">**ATTR (3)** – määritteet:</span><span class="sxs-lookup"><span data-stu-id="e316b-148">**ATTR (3)** – Attributes:</span></span>
+        -   <span data-ttu-id="e316b-149">Tapahtumapäivä</span><span class="sxs-lookup"><span data-stu-id="e316b-149">Transaction Date</span></span>
+        -   <span data-ttu-id="e316b-150">Tosite</span><span class="sxs-lookup"><span data-stu-id="e316b-150">Voucher</span></span>
+        -   <span data-ttu-id="e316b-151">Kirjauskansion kuvaus</span><span class="sxs-lookup"><span data-stu-id="e316b-151">Journal Description</span></span>
+    -   <span data-ttu-id="e316b-152">**FD** – vain debet-tiedot sisältävät taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="e316b-152">**FD** – Financial data that contains only debits</span></span>
+    -   <span data-ttu-id="e316b-153">**FD** – vain kredit-tiedot sisältävät taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="e316b-153">**FD** – Financial data that contains only credits</span></span>
+    -   <span data-ttu-id="e316b-154">**CALC** – nettoerotus</span><span class="sxs-lookup"><span data-stu-id="e316b-154">**CALC** – The net difference</span></span>
+-   <span data-ttu-id="e316b-155">**Pääkirjan yhteenveto – oletussaraketyypit:**</span><span class="sxs-lookup"><span data-stu-id="e316b-155">**Summary Trial Balance – Default columns types:**</span></span>
+    -   <span data-ttu-id="e316b-156">**ACCT** – tilikoodit</span><span class="sxs-lookup"><span data-stu-id="e316b-156">**ACCT** – Account codes</span></span>
+    -   <span data-ttu-id="e316b-157">**DESC** – rivimäärityksen kuvaus</span><span class="sxs-lookup"><span data-stu-id="e316b-157">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="e316b-158">**ATTR** – määrite:</span><span class="sxs-lookup"><span data-stu-id="e316b-158">**ATTR** – An attribute:</span></span>
+        -   <span data-ttu-id="e316b-159">Tosite</span><span class="sxs-lookup"><span data-stu-id="e316b-159">Voucher</span></span>
+    -   <span data-ttu-id="e316b-160">**FD** – alkusaldon taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="e316b-160">**FD** – The beginning balance financial data</span></span>
+    -   <span data-ttu-id="e316b-161">**FD** – vain debet-tiedot sisältävät taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="e316b-161">**FD** – Financial data that contains only debits</span></span>
+    -   <span data-ttu-id="e316b-162">**FD** – vain kredit-tiedot sisältävät taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="e316b-162">**FD** – Financial data that contains only credits</span></span>
+    -   <span data-ttu-id="e316b-163">**CALC** – nettoerotus</span><span class="sxs-lookup"><span data-stu-id="e316b-163">**CALC** – The net difference</span></span>
+    -   <span data-ttu-id="e316b-164">**CALC** – loppusaldo</span><span class="sxs-lookup"><span data-stu-id="e316b-164">**CALC** – The closing balance</span></span>
+-   <span data-ttu-id="e316b-165">**Pääkirjan yhteenveto vuosittain – oletusarvo**</span><span class="sxs-lookup"><span data-stu-id="e316b-165">**Summary Trial Balance Year Over Year – Default:**</span></span>
+    -   <span data-ttu-id="e316b-166">**ACCT** – tilikoodit</span><span class="sxs-lookup"><span data-stu-id="e316b-166">**ACCT** – Account codes</span></span>
+    -   <span data-ttu-id="e316b-167">**DESC** – rivimäärityksen kuvaus</span><span class="sxs-lookup"><span data-stu-id="e316b-167">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="e316b-168">**ATTR** – määrite</span><span class="sxs-lookup"><span data-stu-id="e316b-168">**ATTR** – An attribute</span></span>
+        -   <span data-ttu-id="e316b-169">Tosite</span><span class="sxs-lookup"><span data-stu-id="e316b-169">Voucher</span></span>
+    -   <span data-ttu-id="e316b-170">**FD** – kuluvan vuoden alkusaldon taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="e316b-170">**FD** – The beginning balance financial data for the current year</span></span>
+    -   <span data-ttu-id="e316b-171">**FD** – vain kuluvan vuoden debet-tiedot sisältävät taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="e316b-171">**FD** – Financial data that contains only debits for the current year</span></span>
+    -   <span data-ttu-id="e316b-172">**FD** – vain kuluvan vuoden kredit-tiedot sisältävät taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="e316b-172">**FD** – Financial data that contains only credits for the current year</span></span>
+    -   <span data-ttu-id="e316b-173">**CALC** – nettoerotus</span><span class="sxs-lookup"><span data-stu-id="e316b-173">**CALC** – The net difference</span></span>
+    -   <span data-ttu-id="e316b-174">**CALC** – loppusaldo</span><span class="sxs-lookup"><span data-stu-id="e316b-174">**CALC** – The closing balance</span></span>
+    -   <span data-ttu-id="e316b-175">**FD** – vain edellisen vuoden debet-tiedot sisältävät taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="e316b-175">**FD** – Financial data that contains only debits for the last year</span></span>
+    -   <span data-ttu-id="e316b-176">**FD** – vain edellisen vuoden kredit-tiedot sisältävät taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="e316b-176">**FD** – Financial data that contains only credits for the last year</span></span>
 
  
 
-<a name="see-also"></a>Lisätietoja
+<a name="see-also"></a><span data-ttu-id="e316b-177">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="e316b-177">See also</span></span>
 --------
 
-[Taloushallinnan raportointi](financial-reporting-getting-started.md)
+[<span data-ttu-id="e316b-178">Taloushallinnan raportointi</span><span class="sxs-lookup"><span data-stu-id="e316b-178">Financial reporting</span></span>](financial-reporting-getting-started.md)
 
-[Näytä raportit](view-financial-reports.md)
+[<span data-ttu-id="e316b-179">Näytä raportit</span><span class="sxs-lookup"><span data-stu-id="e316b-179">View financial reports</span></span>](view-financial-reports.md)
 
-[Dynamicsin talousraportointi -blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[<span data-ttu-id="e316b-180">Dynamicsin talousraportointi -blogi</span><span class="sxs-lookup"><span data-stu-id="e316b-180">Dynamics Financial Reporting Blog</span></span>](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

@@ -16,45 +16,45 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 1200b18b2109cef2f6d89c0b93ebb3b1d127decb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7c9093439c4c0c4645d96ad97ba56f31026ec334
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="receive-items-on-purchase-order-from-item-requirement"></a>Ostotilauksen nimikkeiden vastaanotto nimiketarpeen perusteella
+# <a name="receive-items-on-purchase-order-from-item-requirement"></a><span data-ttu-id="75f14-103">Ostotilauksen nimikkeiden vastaanotto nimiketarpeen perusteella</span><span class="sxs-lookup"><span data-stu-id="75f14-103">Receive items on purchase order from item requirement</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä osoitetaan, miten ostotilauksen nimikkeet vastaanotetaan nimiketarpeesta.
+<span data-ttu-id="75f14-104">Tässä menettelyssä osoitetaan, miten ostotilauksen nimikkeet vastaanotetaan nimiketarpeesta.</span><span class="sxs-lookup"><span data-stu-id="75f14-104">This procedure shows how to receive items on a purchase order from an item requirement.</span></span>
 
-Kun käytät nimiketarvetta nimiketapahtuman sijaan, voit suunnitella toimituksen niin, että se tapahtuu juuri ennen nimikkeen käyttöä, luoda ostotilauksen, sisällyttää nimikkeen kauppasopimukseen ja sisällyttää nimiketarpeen tuotannonsuunnitteluun. 
+<span data-ttu-id="75f14-105">Kun käytät nimiketarvetta nimiketapahtuman sijaan, voit suunnitella toimituksen niin, että se tapahtuu juuri ennen nimikkeen käyttöä, luoda ostotilauksen, sisällyttää nimikkeen kauppasopimukseen ja sisällyttää nimiketarpeen tuotannonsuunnitteluun.</span><span class="sxs-lookup"><span data-stu-id="75f14-105">By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.</span></span> 
 
-Tässä tehtävässä käytetään USSI-tietojoukkoa.
+<span data-ttu-id="75f14-106">Tässä tehtävässä käytetään USSI-tietojoukkoa.</span><span class="sxs-lookup"><span data-stu-id="75f14-106">This task uses the USSI data set.</span></span>
 
-1. Valitse Projektinhallinta ja kirjanpito > Projektit > Kaikki projektit.
-2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-3. Valitse toimintoruudussa Suunnitelma.
-4. Valitse Nimiketarpeet.
-5. Valitse Uusi.
-6. Merkitse valittu rivi luettelossa.
-7. Syötä tai valitse arvo Nimiketunnus-kentässä.
-8. Kirjoita numero Määrä-kenttään.
-9. Valitse Tallenna.
-10. Valitse toimintoruudussa Hallitse.
-11. Valitse Toiminnot.
-12. Valitse Luo ostotilaus.
-13. Valitse Sisällytä-valintaruutu.
-14. Anna tai valitse arvo Toimittajatili-kentässä.
-15. Valitse OK.
-16. Valitse Ostoreskontra > Ostotilaukset > Kaikki ostotilaukset.
-17. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-18. Valitse toimintoruudussa Osta.
-19. Valitse Vahvista.
-20. Valitse toimintoruudussa Vastaanota.
-21. Valitse Tuotteen vastaanotto.
-22. Merkitse valittu rivi luettelossa.
-23. Kirjoita arvo Tuotteen vastaanotto -kenttään.
-24. Valitse OK.
+1. <span data-ttu-id="75f14-107">Valitse Projektinhallinta ja kirjanpito > Projektit > Kaikki projektit.</span><span class="sxs-lookup"><span data-stu-id="75f14-107">Go to Project management and accounting > Projects > All projects.</span></span>
+2. <span data-ttu-id="75f14-108">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="75f14-108">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="75f14-109">Valitse toimintoruudussa Suunnitelma.</span><span class="sxs-lookup"><span data-stu-id="75f14-109">On the Action Pane, click Plan.</span></span>
+4. <span data-ttu-id="75f14-110">Valitse Nimiketarpeet.</span><span class="sxs-lookup"><span data-stu-id="75f14-110">Click Item requirements.</span></span>
+5. <span data-ttu-id="75f14-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="75f14-111">Click New.</span></span>
+6. <span data-ttu-id="75f14-112">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="75f14-112">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="75f14-113">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="75f14-113">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="75f14-114">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="75f14-114">In the Quantity field, enter a number.</span></span>
+9. <span data-ttu-id="75f14-115">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="75f14-115">Click Save.</span></span>
+10. <span data-ttu-id="75f14-116">Valitse toimintoruudussa Hallitse.</span><span class="sxs-lookup"><span data-stu-id="75f14-116">On the Action Pane, click Manage.</span></span>
+11. <span data-ttu-id="75f14-117">Valitse Toiminnot.</span><span class="sxs-lookup"><span data-stu-id="75f14-117">Click Functions.</span></span>
+12. <span data-ttu-id="75f14-118">Valitse Luo ostotilaus.</span><span class="sxs-lookup"><span data-stu-id="75f14-118">Click Create purchase order.</span></span>
+13. <span data-ttu-id="75f14-119">Valitse Sisällytä-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="75f14-119">Select the Include check box.</span></span>
+14. <span data-ttu-id="75f14-120">Anna tai valitse arvo Toimittajatili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="75f14-120">In the Vendor account field, enter or select a value.</span></span>
+15. <span data-ttu-id="75f14-121">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="75f14-121">Click OK.</span></span>
+16. <span data-ttu-id="75f14-122">Valitse Ostoreskontra > Ostotilaukset > Kaikki ostotilaukset.</span><span class="sxs-lookup"><span data-stu-id="75f14-122">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+17. <span data-ttu-id="75f14-123">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="75f14-123">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="75f14-124">Valitse toimintoruudussa Osta.</span><span class="sxs-lookup"><span data-stu-id="75f14-124">On the Action Pane, click Purchase.</span></span>
+19. <span data-ttu-id="75f14-125">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="75f14-125">Click Confirm.</span></span>
+20. <span data-ttu-id="75f14-126">Valitse toimintoruudussa Vastaanota.</span><span class="sxs-lookup"><span data-stu-id="75f14-126">On the Action Pane, click Receive.</span></span>
+21. <span data-ttu-id="75f14-127">Valitse Tuotteen vastaanotto.</span><span class="sxs-lookup"><span data-stu-id="75f14-127">Click Product receipt.</span></span>
+22. <span data-ttu-id="75f14-128">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="75f14-128">In the list, mark the selected row.</span></span>
+23. <span data-ttu-id="75f14-129">Kirjoita arvo Tuotteen vastaanotto -kenttään.</span><span class="sxs-lookup"><span data-stu-id="75f14-129">In the Product receipt field, type a value.</span></span>
+24. <span data-ttu-id="75f14-130">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="75f14-130">Click OK.</span></span>
 
 

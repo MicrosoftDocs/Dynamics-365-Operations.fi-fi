@@ -18,31 +18,31 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 415e8ec91f3968883cb4e7ece10d8a26782bac1b
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 6856a52ce85d31c4ef8225e56159e8a7ec698fd7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="eu-entry-certificates"></a>EU-saapumistodistukset
+# <a name="eu-entry-certificates"></a><span data-ttu-id="60ec9-103">EU-saapumistodistukset</span><span class="sxs-lookup"><span data-stu-id="60ec9-103">EU entry certificates</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on tietoja Euroopan unionin (EU) saapumistodistuksista.
+<span data-ttu-id="60ec9-104">Tässä artikkelissa on tietoja Euroopan unionin (EU) saapumistodistuksista.</span><span class="sxs-lookup"><span data-stu-id="60ec9-104">This article provides information about European Union (EU) entry certificates.</span></span>
 
-Voit suorittaa seuraavat Euroopan unionin (EU) saapumistodistuksen tehtävät:
+<span data-ttu-id="60ec9-105">Voit suorittaa seuraavat Euroopan unionin (EU) saapumistodistuksen tehtävät:</span><span class="sxs-lookup"><span data-stu-id="60ec9-105">You can complete the following tasks for a European Union (EU) entry certificate:</span></span>
 
--   Luo ja julkaise EU-saapumistodistus yhdessä pakkausluettelon tai myyntilaskun kanssa nimikkeiden tai palveluiden toimittamiseksi EU-maihin tai EU-alueille.
--   Vastaanota EU-asiakkaan allekirjoittama merkinnän varmenne.
--   Lataa allekirjoitettu EU-saapumistodistus, joka on vastaanotettu joko asiakkaalta tai kolmannelta osapuolelta, joka on vastuussa nimikkeiden toimittamisesta asiakkaalle.
--   Liitä ladattu EU-merkinnän sertifikaatti myyntilaskuun.
--   Päivitä ladatun EU-merkinnän varmenteen tila.
+-   <span data-ttu-id="60ec9-106">Luo ja julkaise EU-saapumistodistus yhdessä pakkausluettelon tai myyntilaskun kanssa nimikkeiden tai palveluiden toimittamiseksi EU-maihin tai EU-alueille.</span><span class="sxs-lookup"><span data-stu-id="60ec9-106">Create and issue an EU entry certificate together with a packing slip or customer invoice for the delivery of items or services to EU countries/regions.</span></span>
+-   <span data-ttu-id="60ec9-107">Vastaanota EU-asiakkaan allekirjoittama merkinnän varmenne.</span><span class="sxs-lookup"><span data-stu-id="60ec9-107">Receive the EU entry certificate that is signed by an EU customer.</span></span>
+-   <span data-ttu-id="60ec9-108">Lataa allekirjoitettu EU-saapumistodistus, joka on vastaanotettu joko asiakkaalta tai kolmannelta osapuolelta, joka on vastuussa nimikkeiden toimittamisesta asiakkaalle.</span><span class="sxs-lookup"><span data-stu-id="60ec9-108">Upload the signed EU entry certificate that is received either from the customer or from a third party who is responsible for delivering items to the customer.</span></span>
+-   <span data-ttu-id="60ec9-109">Liitä ladattu EU-merkinnän sertifikaatti myyntilaskuun.</span><span class="sxs-lookup"><span data-stu-id="60ec9-109">Associate the uploaded EU entry certificate with a customer invoice.</span></span>
+-   <span data-ttu-id="60ec9-110">Päivitä ladatun EU-merkinnän varmenteen tila.</span><span class="sxs-lookup"><span data-stu-id="60ec9-110">Update the status of the uploaded EU entry certificate.</span></span>
 
-## <a name="prerequisites"></a>Edellytykset
-Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen aloittamista.
+## <a name="prerequisites"></a><span data-ttu-id="60ec9-111">Edellytykset</span><span class="sxs-lookup"><span data-stu-id="60ec9-111">Prerequisites</span></span>
+<span data-ttu-id="60ec9-112">Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen aloittamista.</span><span class="sxs-lookup"><span data-stu-id="60ec9-112">The following table shows the prerequisites that must be in place before you start.</span></span>
 
 <table>
 <colgroup>
@@ -51,54 +51,54 @@ Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Luokka</th>
-<th>Edellytys</th>
+<th><span data-ttu-id="60ec9-113">Luokka</span><span class="sxs-lookup"><span data-stu-id="60ec9-113">Category</span></span></th>
+<th><span data-ttu-id="60ec9-114">Edellytys</span><span class="sxs-lookup"><span data-stu-id="60ec9-114">Prerequisite</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Maa/alue</td>
-<td>Yrityksen ensisijainen osoitteen on oltava EU-jäsenvaltiossa.</td>
+<td><span data-ttu-id="60ec9-115">Maa/alue</span><span class="sxs-lookup"><span data-stu-id="60ec9-115">Country/region</span></span></td>
+<td><span data-ttu-id="60ec9-116">Yrityksen ensisijainen osoitteen on oltava EU-jäsenvaltiossa.</span><span class="sxs-lookup"><span data-stu-id="60ec9-116">The primary address of the legal entity must be in a EU member state.</span></span></td>
 </tr>
 <tr class="even">
-<td>Liittyvät määritystehtävät</td>
+<td><span data-ttu-id="60ec9-117">Liittyvät määritystehtävät</span><span class="sxs-lookup"><span data-stu-id="60ec9-117">Related set up tasks</span></span></td>
 <td><ul>
-<li>Valitse <strong>Myyntireskontran parametrit</strong> -sivulla vaihtoehdot <strong>Ota käyttöön merkinnän varmenteen hallinta</strong> ja <strong>Ota käyttöön merkinnän varmenteen myöntäminen</strong>.</li>
-<li>Valitse <strong>Asiakkaat</strong>-sivun <strong>Lasku ja toimitus</strong> -pikavälilehdessä <strong>Merkinnän varmenne tarvitaan</strong> osoittamaan, että EU-saapumistodistus on pakollinen asiakkaalle. Myönnä asiakkaalle yrityksen EU-saapumisilmoitus valitsemalla <strong>Myönnä merkinnän varmenne</strong>.</li>
-<li>Valitse <strong>Myyntireskontran parametrit</strong> -sivulla <strong>Merkinnän varmenne</strong> -viitteeksi numerosarjakoodi.</li>
+<li><span data-ttu-id="60ec9-118">Valitse <strong>Myyntireskontran parametrit</strong> -sivulla vaihtoehdot <strong>Ota käyttöön merkinnän varmenteen hallinta</strong> ja <strong>Ota käyttöön merkinnän varmenteen myöntäminen</strong>.</span><span class="sxs-lookup"><span data-stu-id="60ec9-118">On the <strong>Accounts receivable parameters</strong> page, select the <strong>Enable entry certificate management</strong> and <strong>Enable entry certificate issuing</strong> options.</span></span></li>
+<li><span data-ttu-id="60ec9-119">Valitse <strong>Asiakkaat</strong>-sivun <strong>Lasku ja toimitus</strong> -pikavälilehdessä <strong>Merkinnän varmenne tarvitaan</strong> osoittamaan, että EU-saapumistodistus on pakollinen asiakkaalle.</span><span class="sxs-lookup"><span data-stu-id="60ec9-119">On the <strong>Customers</strong> page, on the <strong>Invoice and delivery</strong> FastTab, select the <strong>Entry certificate required</strong> option to indicate that an EU entry certificate is mandatory for the customer.</span></span> <span data-ttu-id="60ec9-120">Myönnä asiakkaalle yrityksen EU-saapumisilmoitus valitsemalla <strong>Myönnä merkinnän varmenne</strong>.</span><span class="sxs-lookup"><span data-stu-id="60ec9-120">Select the <strong>Issue entry certificate</strong> option to issue an EU entry certificate of the legal entity to the customer.</span></span></li>
+<li><span data-ttu-id="60ec9-121">Valitse <strong>Myyntireskontran parametrit</strong> -sivulla <strong>Merkinnän varmenne</strong> -viitteeksi numerosarjakoodi.</span><span class="sxs-lookup"><span data-stu-id="60ec9-121">On the <strong>Accounts receivable parameters</strong> page, select a number sequence code for the <strong>Entry certificate</strong> reference.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Liittyvät tapahtumat</td>
+<td><span data-ttu-id="60ec9-122">Liittyvät tapahtumat</span><span class="sxs-lookup"><span data-stu-id="60ec9-122">Related transactions</span></span></td>
 <td><ul>
-<li>Luo asiakastili.</li>
-<li>Luo myyntitilaus.</li>
+<li><span data-ttu-id="60ec9-123">Luo asiakastili.</span><span class="sxs-lookup"><span data-stu-id="60ec9-123">Create a customer account.</span></span></li>
+<li><span data-ttu-id="60ec9-124">Luo myyntitilaus.</span><span class="sxs-lookup"><span data-stu-id="60ec9-124">Create a sales order.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a>EU-saapumistodistuksen luominen, rekisteröidään ja lataaminen
-Voit luoda EU-merkinnän varmenne automaattisesti vai manuaalisesti. EU-merkinnän sertifikaatti luodaan ja tulostetaan automaattisesti, kun kirjaat pakkausluettelon tai asiakkaan laskun käyttämällä **Pakkausluettelon kirjaus**- tai **Laskun kirjaus** -sivua. Voit luoda tai uudelleentulostaa EU-saapumistodistuksen manuaalisesti asiakaslaskulle **Laskukirjauskansio**-sivulla. Voit myös antaa **Merkinnän varmenteen tosite** -sivulla tietoja kolmannen osapuolen myöntämästä EU-saapumistodistuksesta.
+## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a><span data-ttu-id="60ec9-125">EU-saapumistodistuksen luominen, rekisteröidään ja lataaminen</span><span class="sxs-lookup"><span data-stu-id="60ec9-125">Creating, registering, and uploading an EU entry certificate</span></span>
+<span data-ttu-id="60ec9-126">Voit luoda EU-merkinnän varmenne automaattisesti vai manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="60ec9-126">You can create an EU entry certificate automatically or manually.</span></span> <span data-ttu-id="60ec9-127">EU-merkinnän sertifikaatti luodaan ja tulostetaan automaattisesti, kun kirjaat pakkausluettelon tai asiakkaan laskun käyttämällä **Pakkausluettelon kirjaus**- tai **Laskun kirjaus** -sivua.</span><span class="sxs-lookup"><span data-stu-id="60ec9-127">An EU entry certificate is created and printed automatically when you post a packing slip or invoice for a customer by using the **Packing slip posting** page or the **Posting invoice** page.</span></span> <span data-ttu-id="60ec9-128">Voit luoda tai uudelleentulostaa EU-saapumistodistuksen manuaalisesti asiakaslaskulle **Laskukirjauskansio**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="60ec9-128">To manually create or reprint an EU entry certificate for a customer invoice, use the **Invoice journal** page.</span></span> <span data-ttu-id="60ec9-129">Voit myös antaa **Merkinnän varmenteen tosite** -sivulla tietoja kolmannen osapuolen myöntämästä EU-saapumistodistuksesta.</span><span class="sxs-lookup"><span data-stu-id="60ec9-129">Additionally, you can use the **Entry certificate journal** page to enter details about an EU entry certificate that is issued by a third party.</span></span>
 
-### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a>EU-saapumistodistuksen luominen automaattisesti tai manuaalisesti
+### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a><span data-ttu-id="60ec9-130">EU-saapumistodistuksen luominen automaattisesti tai manuaalisesti</span><span class="sxs-lookup"><span data-stu-id="60ec9-130">Creating an EU entry certificate automatically or manually</span></span>
 
-Voit luoda EU-saapumistodistuksia automaattisesti pakkausluettelon avulla **Kaikki myyntitilaukset** -sivulla tai laskun avulla **Myyntitilaus**-sivulla. Voit luoda EU-saapumistodistuksen manuaalisesti laskun avulla **Laskukirjauskansio**-sivulla. Laskun todistuksen tila on kuitenkin muutettava ennen EU-saapumistodistuksen luontia manuaalisesti.
+<span data-ttu-id="60ec9-131">Voit luoda EU-saapumistodistuksia automaattisesti pakkausluettelon avulla **Kaikki myyntitilaukset** -sivulla tai laskun avulla **Myyntitilaus**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="60ec9-131">You can create an EU entry certificate automatically by using a packing slip on the **All sales orders** page or by using an invoice on the **Sales order** page.</span></span> <span data-ttu-id="60ec9-132">Voit luoda EU-saapumistodistuksen manuaalisesti laskun avulla **Laskukirjauskansio**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="60ec9-132">To manually create an EU entry certificate, you can use an invoice on the **Invoice journal** page.</span></span> <span data-ttu-id="60ec9-133">Laskun todistuksen tila on kuitenkin muutettava ennen EU-saapumistodistuksen luontia manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="60ec9-133">However, you must change the certification status of the invoice before you manually create an EU entry certificate.</span></span>
 
-### <a name="registering-an-eu-entry-certificate"></a>EU-saapumistodistuksen rekisteröinti
+### <a name="registering-an-eu-entry-certificate"></a><span data-ttu-id="60ec9-134">EU-saapumistodistuksen rekisteröinti</span><span class="sxs-lookup"><span data-stu-id="60ec9-134">Registering an EU entry certificate</span></span>
 
-Jos rekisteröinti on pakollinen, voit rekisteröidä kolmannen osapuolen myöntämän EU-saapumistodistuksen **Merkinnän varmenteen tosite** -sivulla.
+<span data-ttu-id="60ec9-135">Jos rekisteröinti on pakollinen, voit rekisteröidä kolmannen osapuolen myöntämän EU-saapumistodistuksen **Merkinnän varmenteen tosite** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="60ec9-135">If registration is required, you can use the **Entry certificate journal** page to register an EU entry certificate that is issued by a third party.</span></span>
 
-### <a name="uploading-a-received-eu-entry-certificate"></a>Vastaanotetun EU-saapumistodistuksen lataaminen
+### <a name="uploading-a-received-eu-entry-certificate"></a><span data-ttu-id="60ec9-136">Vastaanotetun EU-saapumistodistuksen lataaminen</span><span class="sxs-lookup"><span data-stu-id="60ec9-136">Uploading a received EU entry certificate</span></span>
 
-Lataa EU-asiakkaan allekirjoittama EU-saapumistodistus **Liitteet**-sivulla. Kun todistus on ladattu, voit liittää sen laskuun näyttönä nimikkeiden toimituksesta. Tämä näyttö on pakollinen, jos on tehtävä lasku, joka ei sisällä arvonlisäveroa (ALV). Sitä käytetään myös tilintarkastuksen aikana.
+<span data-ttu-id="60ec9-137">Lataa EU-asiakkaan allekirjoittama EU-saapumistodistus **Liitteet**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="60ec9-137">Use the **Attachments** page to upload a received EU entry certificate that is signed by an EU customer.</span></span> <span data-ttu-id="60ec9-138">Kun todistus on ladattu, voit liittää sen laskuun näyttönä nimikkeiden toimituksesta.</span><span class="sxs-lookup"><span data-stu-id="60ec9-138">After the certificate is uploaded, you can associate it with an invoice as proof that the items were delivered.</span></span> <span data-ttu-id="60ec9-139">Tämä näyttö on pakollinen, jos on tehtävä lasku, joka ei sisällä arvonlisäveroa (ALV). Sitä käytetään myös tilintarkastuksen aikana.</span><span class="sxs-lookup"><span data-stu-id="60ec9-139">This proof is required if you must issue an invoice that doesn't include value-added tax (VAT), and it's also used during auditing.</span></span>
 
-### <a name="optional-updating-the-certification-status-and-printing-status-of-an-invoice"></a>Valinnainen: Todistuksen tilan ja laskun tulostustilan päivittäminen
+### <a name="optional-updating-the-certification-status-and-printing-status-of-an-invoice"></a><span data-ttu-id="60ec9-140">Valinnainen: Todistuksen tilan ja laskun tulostustilan päivittäminen</span><span class="sxs-lookup"><span data-stu-id="60ec9-140">Optional: Updating the certification status and printing status of an invoice</span></span>
 
-Voit päivittää saapumistodistuksen tilan ja myyntilaskun tulostustilan **Laskukirjauskansio**-sivulla.
+<span data-ttu-id="60ec9-141">Voit päivittää saapumistodistuksen tilan ja myyntilaskun tulostustilan **Laskukirjauskansio**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="60ec9-141">You can update the entry certification status and printing status of a customer invoice by using the **Invoice journal** page.</span></span>
 
-## <a name="technical-information-for-system-administrators"></a>Teknisiä tietoja järjestelmänvalvojille
-Jos sinulla ei ole niiden sivujen käyttöoikeutta, joita käytetään tämän tehtävän suorittamiseen, ota yhteys järjestelmänvalvojaan ja anna seuraavassa taulukossa näkyvät tiedot.
+## <a name="technical-information-for-system-administrators"></a><span data-ttu-id="60ec9-142">Teknisiä tietoja järjestelmänvalvojille</span><span class="sxs-lookup"><span data-stu-id="60ec9-142">Technical information for system administrators</span></span>
+<span data-ttu-id="60ec9-143">Jos sinulla ei ole niiden sivujen käyttöoikeutta, joita käytetään tämän tehtävän suorittamiseen, ota yhteys järjestelmänvalvojaan ja anna seuraavassa taulukossa näkyvät tiedot.</span><span class="sxs-lookup"><span data-stu-id="60ec9-143">If you don't have access to the pages that are used to complete this task, contact your system administrator, and provide the information that is shown in the following table.</span></span>
 
 <table>
 <colgroup>
@@ -107,19 +107,19 @@ Jos sinulla ei ole niiden sivujen käyttöoikeutta, joita käytetään tämän t
 </colgroup>
 <thead>
 <tr class="header">
-<th>Luokka</th>
-<th>Edellytys</th>
+<th><span data-ttu-id="60ec9-144">Luokka</span><span class="sxs-lookup"><span data-stu-id="60ec9-144">Category</span></span></th>
+<th><span data-ttu-id="60ec9-145">Edellytys</span><span class="sxs-lookup"><span data-stu-id="60ec9-145">Prerequisite</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Käyttöoikeusroolit ja velvollisuudet</td>
-<td>Jos haluat määrittää ja luoda EU-merkinnän varmenteita nimikkeille tai palveluille, sinun on oltava sellaisen käyttöoikeusroolin jäsen, johon sisältyy seuraavat tehtävät:
+<td><span data-ttu-id="60ec9-146">Käyttöoikeusroolit ja velvollisuudet</span><span class="sxs-lookup"><span data-stu-id="60ec9-146">Security roles and duties</span></span></td>
+<td><span data-ttu-id="60ec9-147">Jos haluat määrittää ja luoda EU-merkinnän varmenteita nimikkeille tai palveluille, sinun on oltava sellaisen käyttöoikeusroolin jäsen, johon sisältyy seuraavat tehtävät:</span><span class="sxs-lookup"><span data-stu-id="60ec9-147">To set up and create EU entry certificates for items or services, you must be a member of a security role that includes the following duties:</span></span>
 <ul>
-<li><strong>Myyntireskontran käsittelijä</strong> (CustInvoiceAccountsReceivableClerk)</li>
-<li><strong>Asiakaspalvelun edustaja</strong> (TradeCustomerServiceRepresentative)</li>
-<li><strong>Myyjä</strong> (TradeSalesClerk)</li>
-<li><strong>Kuljetushenkilö</strong> (InventShippingClerk)</li>
+<li><span data-ttu-id="60ec9-148"><strong>Myyntireskontran käsittelijä</strong> (CustInvoiceAccountsReceivableClerk)</span><span class="sxs-lookup"><span data-stu-id="60ec9-148"><strong>Accounts receivable clerk</strong> (CustInvoiceAccountsReceivableClerk)</span></span></li>
+<li><span data-ttu-id="60ec9-149"><strong>Asiakaspalvelun edustaja</strong> (TradeCustomerServiceRepresentative)</span><span class="sxs-lookup"><span data-stu-id="60ec9-149"><strong>Customer service representative</strong> (TradeCustomerServiceRepresentative)</span></span></li>
+<li><span data-ttu-id="60ec9-150"><strong>Myyjä</strong> (TradeSalesClerk)</span><span class="sxs-lookup"><span data-stu-id="60ec9-150"><strong>Sales clerk</strong> (TradeSalesClerk)</span></span></li>
+<li><span data-ttu-id="60ec9-151"><strong>Kuljetushenkilö</strong> (InventShippingClerk)</span><span class="sxs-lookup"><span data-stu-id="60ec9-151"><strong>Shipping clerk</strong> (InventShippingClerk)</span></span></li>
 </ul></td>
 </tr>
 </tbody>

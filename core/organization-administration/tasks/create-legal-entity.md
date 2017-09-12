@@ -16,45 +16,45 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: e07adb5f77681c7901662ae94b6d916008ac3c6d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 89d3babc4447ca7398521b93634db7ecb6cfb5de
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-legal-entity"></a>Luo uusi yritys
+# <a name="create-a-legal-entity"></a><span data-ttu-id="95634-103">Luo uusi yritys</span><span class="sxs-lookup"><span data-stu-id="95634-103">Create a legal entity</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Yritys on organisaatio, joka tunnistetaan oikeudellisen vallan rekisteröinnin kautta. Yritys voi solmia sopimuksia ja yritykseltä edellytetään suorituskykyä kuvaavien lausuntojen valmistelemista. Seuraavissa vaiheissa on selostettu, miten yritys luodaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+<span data-ttu-id="95634-104">Yritys on organisaatio, joka tunnistetaan oikeudellisen vallan rekisteröinnin kautta.</span><span class="sxs-lookup"><span data-stu-id="95634-104">A legal entity is an organization that is identified through registration with a legal authority.</span></span> <span data-ttu-id="95634-105">Yritys voi solmia sopimuksia ja yritykseltä edellytetään suorituskykyä kuvaavien lausuntojen valmistelemista.</span><span class="sxs-lookup"><span data-stu-id="95634-105">Legal entities can enter into contracts and are required to prepare statements that report on their performance.</span></span> <span data-ttu-id="95634-106">Seuraavissa vaiheissa on selostettu, miten yritys luodaan.</span><span class="sxs-lookup"><span data-stu-id="95634-106">The following procedure explains how to create a legal entity.</span></span> <span data-ttu-id="95634-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="95634-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Siirry kohtaan Organisaation hallinto > Organisaatiot > Yritykset.
-2. Valitse Uusi.
-3. Kirjoita arvo Nimi-kenttään.
-4. Kirjoita arvo Yritys-kenttään.
-5. Syötä tai valitse arvo Maa/alue-kentässä.
-6. Valitse OK.
-    * Anna seuraavat yrityksen perustiedot Yleinen-osassa: hakunimi, jos sellainen on pakollinen. Hakunimi on vaihtoehtoinen nimi, jota voidaan käyttää tämän yrityksen etsimiseen. Valitse käytetäänkö tätä oikeushenkilöä konsolidointiyrityksenä. Valitse käytetäänkö tätä oikeushenkilöä eliminointiyrityksenä.  
-7. Laajenna osa Osoitteet.
-    * Kirjoita Osoitteet-osaan osoitetiedot, kuten katuosoite ja -numero, postinumero ja postitoimipaikka.  
-8. Laajenna Yhteystiedot-osa.
-    * Kirjoita Yhteystiedot-osaan tiedot viestintämenetelmistä, kuten sähköpostiosoitteet, URL-osoitteet ja puhelinnumerot.  
-9. Laajenna Lakisääteinen raportointi -osa.
-    * Kirjoita Lakisääteinen raportointi -osaan rekisterinumerot, joita käytetään lakisääteisiin ilmoituksiin.  
-10. Laajenna Rekisteröintinumerot-osa.
-    * Kirjoita Rekisteröintinumerot-osaan kaikki yrityksestä vaadittavat tiedot.  
-11. Laajenna Pankkitilitiedot-osa.
-    * Kirjoita Pankkitilin tiedot -osaan yrityksen pankkitilien numerot ja reititysnumerot.  
-12. Laajenna Ulkomaankauppa ja -logistiikka -osa.
-    * Kirjoita Ulkomaankauppa ja -logistiikka -osaan yrityksen lähetystiedot.  
-13. Laajenna Numerosarjat-osa.
-    * Numerosarjat-osassa voit tarkastella yritykseen liitettyjä numerosarjoja.  
-14. Laajenna Kuvat-osa.
-    * Kuvat-osassa voit tarkastella tai muuttaa, yritykseen liitetyn logon ja/tai koontinäytön kuvan.  
-15. Laajenna Verorekisteröinti-osa.
-    * Kirjoita Verorekisteröinti-osaan rekisterinumerot, joita käytetään raportoitaessa veroviranomaisille.  
-16. Laajenna Vero 1099 -osa.
-    * Kirjoita Vero 1099 -osaan oikeushenkilön 1099-tiedot.  
-17. Valitse Tallenna.
+1. <span data-ttu-id="95634-108">Siirry kohtaan Organisaation hallinto > Organisaatiot > Yritykset.</span><span class="sxs-lookup"><span data-stu-id="95634-108">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="95634-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="95634-109">Click New.</span></span>
+3. <span data-ttu-id="95634-110">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="95634-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="95634-111">Kirjoita arvo Yritys-kenttään.</span><span class="sxs-lookup"><span data-stu-id="95634-111">In the Company field, type a value.</span></span>
+5. <span data-ttu-id="95634-112">Syötä tai valitse arvo Maa/alue-kentässä.</span><span class="sxs-lookup"><span data-stu-id="95634-112">In the Country/region field, enter or select a value.</span></span>
+6. <span data-ttu-id="95634-113">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="95634-113">Click OK.</span></span>
+    * <span data-ttu-id="95634-114">Anna seuraavat yrityksen perustiedot Yleinen-osassa: hakunimi, jos sellainen on pakollinen.</span><span class="sxs-lookup"><span data-stu-id="95634-114">In the General section, provide the following general information about the legal entity: Enter a search name, if a search name is required.</span></span> <span data-ttu-id="95634-115">Hakunimi on vaihtoehtoinen nimi, jota voidaan käyttää tämän yrityksen etsimiseen.</span><span class="sxs-lookup"><span data-stu-id="95634-115">A search name is an alternate name that can be used to search for this legal entity.</span></span> <span data-ttu-id="95634-116">Valitse käytetäänkö tätä oikeushenkilöä konsolidointiyrityksenä.</span><span class="sxs-lookup"><span data-stu-id="95634-116">Select whether this legal entity is being used as a consolidation company.</span></span> <span data-ttu-id="95634-117">Valitse käytetäänkö tätä oikeushenkilöä eliminointiyrityksenä.</span><span class="sxs-lookup"><span data-stu-id="95634-117">Select whether this legal entity is being used as an elimination company.</span></span>  
+7. <span data-ttu-id="95634-118">Laajenna osa Osoitteet.</span><span class="sxs-lookup"><span data-stu-id="95634-118">Expand the Addresses section.</span></span>
+    * <span data-ttu-id="95634-119">Kirjoita Osoitteet-osaan osoitetiedot, kuten katuosoite ja -numero, postinumero ja postitoimipaikka.</span><span class="sxs-lookup"><span data-stu-id="95634-119">In the Addresses section, enter address information, such as the street name and number, postal code, and city.</span></span>  
+8. <span data-ttu-id="95634-120">Laajenna Yhteystiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="95634-120">Expand the Contact information section.</span></span>
+    * <span data-ttu-id="95634-121">Kirjoita Yhteystiedot-osaan tiedot viestintämenetelmistä, kuten sähköpostiosoitteet, URL-osoitteet ja puhelinnumerot.</span><span class="sxs-lookup"><span data-stu-id="95634-121">In the Contact information section, enter information about methods of communication, such as email addresses, URLs, and telephone numbers.</span></span>  
+9. <span data-ttu-id="95634-122">Laajenna Lakisääteinen raportointi -osa.</span><span class="sxs-lookup"><span data-stu-id="95634-122">Expand the Statutory reporting section.</span></span>
+    * <span data-ttu-id="95634-123">Kirjoita Lakisääteinen raportointi -osaan rekisterinumerot, joita käytetään lakisääteisiin ilmoituksiin.</span><span class="sxs-lookup"><span data-stu-id="95634-123">In the Statutory reporting section, enter the registration numbers that are used for statutory reporting.</span></span>  
+10. <span data-ttu-id="95634-124">Laajenna Rekisteröintinumerot-osa.</span><span class="sxs-lookup"><span data-stu-id="95634-124">Expand the Registration numbers section.</span></span>
+    * <span data-ttu-id="95634-125">Kirjoita Rekisteröintinumerot-osaan kaikki yrityksestä vaadittavat tiedot.</span><span class="sxs-lookup"><span data-stu-id="95634-125">In the Registration numbers section, enter any information required by the legal entity.</span></span>  
+11. <span data-ttu-id="95634-126">Laajenna Pankkitilitiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="95634-126">Expand the Bank account information section.</span></span>
+    * <span data-ttu-id="95634-127">Kirjoita Pankkitilin tiedot -osaan yrityksen pankkitilien numerot ja reititysnumerot.</span><span class="sxs-lookup"><span data-stu-id="95634-127">In the Bank account information section, enter bank accounts and routing numbers for the legal entity.</span></span>  
+12. <span data-ttu-id="95634-128">Laajenna Ulkomaankauppa ja -logistiikka -osa.</span><span class="sxs-lookup"><span data-stu-id="95634-128">Expand the Foreign trade and logistics section.</span></span>
+    * <span data-ttu-id="95634-129">Kirjoita Ulkomaankauppa ja -logistiikka -osaan yrityksen lähetystiedot.</span><span class="sxs-lookup"><span data-stu-id="95634-129">In the Foreign trade and logistics section, enter shipping information for the legal entity.</span></span>  
+13. <span data-ttu-id="95634-130">Laajenna Numerosarjat-osa.</span><span class="sxs-lookup"><span data-stu-id="95634-130">Expand the Number sequences section.</span></span>
+    * <span data-ttu-id="95634-131">Numerosarjat-osassa voit tarkastella yritykseen liitettyjä numerosarjoja.</span><span class="sxs-lookup"><span data-stu-id="95634-131">In the Number sequences section, you can view the number sequences that are associated with the legal entity.</span></span>  
+14. <span data-ttu-id="95634-132">Laajenna Kuvat-osa.</span><span class="sxs-lookup"><span data-stu-id="95634-132">Expand the Images section.</span></span>
+    * <span data-ttu-id="95634-133">Kuvat-osassa voit tarkastella tai muuttaa, yritykseen liitetyn logon ja/tai koontinäytön kuvan.</span><span class="sxs-lookup"><span data-stu-id="95634-133">In the Images section, view or change the logo and/or dashboard image that are associated with the legal entity.</span></span>  
+15. <span data-ttu-id="95634-134">Laajenna Verorekisteröinti-osa.</span><span class="sxs-lookup"><span data-stu-id="95634-134">Expand the Tax registration section.</span></span>
+    * <span data-ttu-id="95634-135">Kirjoita Verorekisteröinti-osaan rekisterinumerot, joita käytetään raportoitaessa veroviranomaisille.</span><span class="sxs-lookup"><span data-stu-id="95634-135">In the Tax registration section, enter the registration numbers that are used to report to tax authorities.</span></span>  
+16. <span data-ttu-id="95634-136">Laajenna Vero 1099 -osa.</span><span class="sxs-lookup"><span data-stu-id="95634-136">Expand the Tax 1099 section.</span></span>
+    * <span data-ttu-id="95634-137">Kirjoita Vero 1099 -osaan oikeushenkilön 1099-tiedot.</span><span class="sxs-lookup"><span data-stu-id="95634-137">In the Tax 1099 section, enter 1099 information for the legal entity.</span></span>  
+17. <span data-ttu-id="95634-138">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="95634-138">Click Save.</span></span>
 
 

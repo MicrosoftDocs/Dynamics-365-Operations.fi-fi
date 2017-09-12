@@ -17,60 +17,60 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 2d446b63041e00ae12ecbed501925afc46a90ca7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 33ae479a8479732a1857577743a22068d2059a47
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-sales-event-kanban-rule"></a>Luo myyntitapahtuman kanban-sääntö
+# <a name="create-a-sales-event-kanban-rule"></a><span data-ttu-id="dcc85-103">Luo myyntitapahtuman kanban-sääntö</span><span class="sxs-lookup"><span data-stu-id="dcc85-103">Create a sales event kanban rule</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä käsitellään asetuksia, joita tarvitaan myyntitilauksen luonnin aikana käynnistettävän kanban-säännön luomiseen. Tapahtuman kanban-sääntö täydentää myyntitilausriveiltä lähtevät vaatimukset. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Se on tarkoitettu prosessiteknikolle tai arvovirtaa hallitsevalle työntekijälle uuden tai muokatun tuotteen tuotannon valmisteluun.
+<span data-ttu-id="dcc85-104">Tässä menettelyssä käsitellään asetuksia, joita tarvitaan myyntitilauksen luonnin aikana käynnistettävän kanban-säännön luomiseen.</span><span class="sxs-lookup"><span data-stu-id="dcc85-104">This procedure focuses on the setup needed to create a kanban rule that is triggered during sales order creation.</span></span> <span data-ttu-id="dcc85-105">Tapahtuman kanban-sääntö täydentää myyntitilausriveiltä lähtevät vaatimukset.</span><span class="sxs-lookup"><span data-stu-id="dcc85-105">The event kanban rule replenishes requirements that originate from sales order lines.</span></span> <span data-ttu-id="dcc85-106">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="dcc85-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="dcc85-107">Se on tarkoitettu prosessiteknikolle tai arvovirtaa hallitsevalle työntekijälle uuden tai muokatun tuotteen tuotannon valmisteluun.</span><span class="sxs-lookup"><span data-stu-id="dcc85-107">It is intended for the process engineer or the value stream manager as they prepare production of a new or modified product.</span></span>
 
 
 
 
-## <a name="create-a-new-kanban-rule"></a>Luo uusi kanban-sääntö
-1. Valitse Kanban-säännöt.
-2. Valitse Uusi.
-3. Valitse Täydennysstrategia-kentässä Tapahtuma.
-    * Tapahtuman valitseminen tarkoittaa, että tapahtuma, kuten myyntitilausrivin luonti, käynnistää kanban-säännön.   Tätä käytetään alueilla, jossa kunkin kanbanin pitäisi kattaa tietty tarve.  
-4. Anna tai valitse Ensimmäinen suunnitelman tehtävä -kentässä arvo.
-    * Valitse Lopullinen kokoonpano.  
-5. Laajenna Tiedot-osa.
-6. Anna tai valitse Tuote-kentässä arvo.
-    * Valitse L0050.  
+## <a name="create-a-new-kanban-rule"></a><span data-ttu-id="dcc85-108">Luo uusi kanban-sääntö</span><span class="sxs-lookup"><span data-stu-id="dcc85-108">Create a new kanban rule</span></span>
+1. <span data-ttu-id="dcc85-109">Valitse Kanban-säännöt.</span><span class="sxs-lookup"><span data-stu-id="dcc85-109">Go to Kanban rules.</span></span>
+2. <span data-ttu-id="dcc85-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="dcc85-110">Click New.</span></span>
+3. <span data-ttu-id="dcc85-111">Valitse Täydennysstrategia-kentässä Tapahtuma.</span><span class="sxs-lookup"><span data-stu-id="dcc85-111">In the Replenishment strategy field, select 'Event'.</span></span>
+    * <span data-ttu-id="dcc85-112">Tapahtuman valitseminen tarkoittaa, että tapahtuma, kuten myyntitilausrivin luonti, käynnistää kanban-säännön.</span><span class="sxs-lookup"><span data-stu-id="dcc85-112">Selecting Event means that the kanban rule is triggered by an event, for example, creation of a sales order line.</span></span>   <span data-ttu-id="dcc85-113">Tätä käytetään alueilla, jossa kunkin kanbanin pitäisi kattaa tietty tarve.</span><span class="sxs-lookup"><span data-stu-id="dcc85-113">This is applied to areas where each kanban should cover a specific demand.</span></span>  
+4. <span data-ttu-id="dcc85-114">Anna tai valitse Ensimmäinen suunnitelman tehtävä -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="dcc85-114">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="dcc85-115">Valitse Lopullinen kokoonpano.</span><span class="sxs-lookup"><span data-stu-id="dcc85-115">Select Final assembly.</span></span>  
+5. <span data-ttu-id="dcc85-116">Laajenna Tiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="dcc85-116">Expand the Details section.</span></span>
+6. <span data-ttu-id="dcc85-117">Anna tai valitse Tuote-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="dcc85-117">In the Product field, enter or select a value.</span></span>
+    * <span data-ttu-id="dcc85-118">Valitse L0050.</span><span class="sxs-lookup"><span data-stu-id="dcc85-118">Select L0050.</span></span>  
 
-## <a name="define-an-event"></a>Määritä tapahtuma
-1. Laajenna Tapahtumat-osa.
-2. Valitse Myyntitapahtuma-kentässä Automaattinen.
-    * Kun automaattinen myyntitapahtuma valitaan, tämä kanban-sääntö käynnistetään automaattisesti, kun myyntirivi vastaa tuotetta ja vastaanottosijaintia. Tässä menettelyssä tuote L0050 on varastossa 13.  
-3. Määritä tapahtuman vähimmäismääräksi 50.
-    * Kun tapahtuman vähimmäismäärä on 50, vain tapahtumat, joiden määrä on vähintään 50, käynnistävät kanban-säännön.  
-4. Laajenna Tuotantovirta-osa.
-    * Huomaa, vastaanottosijainti on varasto 13. Tämä tarkoittaa, että kanban-sääntö käynnistetään tässä sijainnissa.  
-    * Tässä esimerkissä myyntirivi tuotteelle L0050, jonka määrä varastossa 13 on vähintään 50, käynnistää tämän kanban-säännön.  
+## <a name="define-an-event"></a><span data-ttu-id="dcc85-119">Määritä tapahtuma</span><span class="sxs-lookup"><span data-stu-id="dcc85-119">Define an event</span></span>
+1. <span data-ttu-id="dcc85-120">Laajenna Tapahtumat-osa.</span><span class="sxs-lookup"><span data-stu-id="dcc85-120">Expand the Events section.</span></span>
+2. <span data-ttu-id="dcc85-121">Valitse Myyntitapahtuma-kentässä Automaattinen.</span><span class="sxs-lookup"><span data-stu-id="dcc85-121">In the Sales event field, select 'Automatic'.</span></span>
+    * <span data-ttu-id="dcc85-122">Kun automaattinen myyntitapahtuma valitaan, tämä kanban-sääntö käynnistetään automaattisesti, kun myyntirivi vastaa tuotetta ja vastaanottosijaintia.</span><span class="sxs-lookup"><span data-stu-id="dcc85-122">By selecting the sales event Automatic, this kanban rule will be triggered automatically when a sales line matches the product and receipt location.</span></span> <span data-ttu-id="dcc85-123">Tässä menettelyssä tuote L0050 on varastossa 13.</span><span class="sxs-lookup"><span data-stu-id="dcc85-123">In this procedure, it is product L0050 on warehouse 13.</span></span>  
+3. <span data-ttu-id="dcc85-124">Määritä tapahtuman vähimmäismääräksi 50.</span><span class="sxs-lookup"><span data-stu-id="dcc85-124">Set Minimum event quantity to '50'.</span></span>
+    * <span data-ttu-id="dcc85-125">Kun tapahtuman vähimmäismäärä on 50, vain tapahtumat, joiden määrä on vähintään 50, käynnistävät kanban-säännön.</span><span class="sxs-lookup"><span data-stu-id="dcc85-125">With a minimum event quantity of 50, the kanban rule will only be triggered by events with a quantity of 50 or more.</span></span>  
+4. <span data-ttu-id="dcc85-126">Laajenna Tuotantovirta-osa.</span><span class="sxs-lookup"><span data-stu-id="dcc85-126">Expand the Production flow section.</span></span>
+    * <span data-ttu-id="dcc85-127">Huomaa, vastaanottosijainti on varasto 13.</span><span class="sxs-lookup"><span data-stu-id="dcc85-127">Notice that the Receipt location is warehouse 13.</span></span> <span data-ttu-id="dcc85-128">Tämä tarkoittaa, että kanban-sääntö käynnistetään tässä sijainnissa.</span><span class="sxs-lookup"><span data-stu-id="dcc85-128">This means that this kanban rule will be triggered for this location.</span></span>  
+    * <span data-ttu-id="dcc85-129">Tässä esimerkissä myyntirivi tuotteelle L0050, jonka määrä varastossa 13 on vähintään 50, käynnistää tämän kanban-säännön.</span><span class="sxs-lookup"><span data-stu-id="dcc85-129">In this example, a sales line for product L0050, with a quantity of 50 or more, on warehouse 13, will trigger this kanban rule.</span></span>  
 
-## <a name="create-sales-line-to-trigger-event-kanban-rule"></a>Luo tapahtuman kanban-säännön käynnistävä myyntirivi
-1. Siirry Kaikki myyntitilaukset -kohtaan.
-    * Varoitus näytetään, kun kanban-sääntö tallennetaan, joten kanbanit luodaan reaaliaikaisesti myyntitilauksen luonnin aikana.  
-2. Valitse Uusi.
-3. Syötä tai valitse arvo Asiakastili-kentässä.
-    * Valitse esimerkiksi arvo US-003.  
-4. Valitse OK.
-5. Kirjoita Nimiketunnus-kenttään L0050.
-6. Kirjoita Toimipaikka-kenttään 1.
-    * Valitse toimipaikka 1, koska varasto 13 on toimipaikassa 1.  
-7. Anna tai valitse Varasto-kentässä arvo.
-    * Määritä Varasto-arvoksi 13.  
-8. Valitse määräksi 75.
-    * Anna määräksi vähintään 50, jotta luotu kanban-sääntö luodaan.  
+## <a name="create-sales-line-to-trigger-event-kanban-rule"></a><span data-ttu-id="dcc85-130">Luo tapahtuman kanban-säännön käynnistävä myyntirivi</span><span class="sxs-lookup"><span data-stu-id="dcc85-130">Create sales line to trigger event kanban rule</span></span>
+1. <span data-ttu-id="dcc85-131">Siirry Kaikki myyntitilaukset -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="dcc85-131">Go to All sales orders.</span></span>
+    * <span data-ttu-id="dcc85-132">Varoitus näytetään, kun kanban-sääntö tallennetaan, joten kanbanit luodaan reaaliaikaisesti myyntitilauksen luonnin aikana.</span><span class="sxs-lookup"><span data-stu-id="dcc85-132">A warning is shown when the kanban rule is saved, which means that kanbans will be created in real-time during sales order creation.</span></span>  
+2. <span data-ttu-id="dcc85-133">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="dcc85-133">Click New.</span></span>
+3. <span data-ttu-id="dcc85-134">Syötä tai valitse arvo Asiakastili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="dcc85-134">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="dcc85-135">Valitse esimerkiksi arvo US-003.</span><span class="sxs-lookup"><span data-stu-id="dcc85-135">For example, select US-003.</span></span>  
+4. <span data-ttu-id="dcc85-136">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="dcc85-136">Click OK.</span></span>
+5. <span data-ttu-id="dcc85-137">Kirjoita Nimiketunnus-kenttään L0050.</span><span class="sxs-lookup"><span data-stu-id="dcc85-137">In the Item number field, type 'L0050'.</span></span>
+6. <span data-ttu-id="dcc85-138">Kirjoita Toimipaikka-kenttään 1.</span><span class="sxs-lookup"><span data-stu-id="dcc85-138">In the Site field, type '1'.</span></span>
+    * <span data-ttu-id="dcc85-139">Valitse toimipaikka 1, koska varasto 13 on toimipaikassa 1.</span><span class="sxs-lookup"><span data-stu-id="dcc85-139">Select Site 1 because Warehouse 13 is on Site 1.</span></span>  
+7. <span data-ttu-id="dcc85-140">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="dcc85-140">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="dcc85-141">Määritä Varasto-arvoksi 13.</span><span class="sxs-lookup"><span data-stu-id="dcc85-141">Set Warehouse to 13.</span></span>  
+8. <span data-ttu-id="dcc85-142">Valitse määräksi 75.</span><span class="sxs-lookup"><span data-stu-id="dcc85-142">Set Quantity to '75'.</span></span>
+    * <span data-ttu-id="dcc85-143">Anna määräksi vähintään 50, jotta luotu kanban-sääntö luodaan.</span><span class="sxs-lookup"><span data-stu-id="dcc85-143">Enter a quantity of 50 or greater, to trigger the created kanban rule.</span></span>  
 
-## <a name="verify-that-kanban-is-created"></a>Varmista, että kanban on luotu
-1. Valitse Tuote ja toimitus.
-2. Valitse Näytä tarvekohdistuspuu.
-    * Huomaa, että luotavalla kanbanilla on sama määrä kuin myyntirivillä. Näet myös mitä materiaaliottoja L0050:n tuotantoon tarvitaan. Tämä on tämän menettelyn viimeinen vaihe.  
+## <a name="verify-that-kanban-is-created"></a><span data-ttu-id="dcc85-144">Varmista, että kanban on luotu</span><span class="sxs-lookup"><span data-stu-id="dcc85-144">Verify that kanban is created</span></span>
+1. <span data-ttu-id="dcc85-145">Valitse Tuote ja toimitus.</span><span class="sxs-lookup"><span data-stu-id="dcc85-145">Click Product and supply.</span></span>
+2. <span data-ttu-id="dcc85-146">Valitse Näytä tarvekohdistuspuu.</span><span class="sxs-lookup"><span data-stu-id="dcc85-146">Click View pegging tree.</span></span>
+    * <span data-ttu-id="dcc85-147">Huomaa, että luotavalla kanbanilla on sama määrä kuin myyntirivillä.</span><span class="sxs-lookup"><span data-stu-id="dcc85-147">Notice that a kanban with the same quantity as the sales line is created.</span></span> <span data-ttu-id="dcc85-148">Näet myös mitä materiaaliottoja L0050:n tuotantoon tarvitaan.</span><span class="sxs-lookup"><span data-stu-id="dcc85-148">You can also see the material issues needed to produce L0050.</span></span> <span data-ttu-id="dcc85-149">Tämä on tämän menettelyn viimeinen vaihe.</span><span class="sxs-lookup"><span data-stu-id="dcc85-149">This is the last step in this procedure.</span></span>  
 
 

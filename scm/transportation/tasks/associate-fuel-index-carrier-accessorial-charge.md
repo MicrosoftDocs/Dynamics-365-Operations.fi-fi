@@ -17,64 +17,64 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: d3ab4ee1a8ab74226b784496b56f26d26ed04ed8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a2b8534231c5fa50b1e0f709e09d318bb8202a43
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>Liitä polttoaineindeksi rahdinkuljettajaan lisämaksuna
+# <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a><span data-ttu-id="c26c8-103">Liitä polttoaineindeksi rahdinkuljettajaan lisämaksuna</span><span class="sxs-lookup"><span data-stu-id="c26c8-103">Associate a fuel index with a carrier as an accessorial charge</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä ohjauksessa kerrotaan, miten polttoaineen lisämaksun määritys, rahdinkuljettajan lisämaksu, lisämaksun päätiedot luodaan ja liitetään rahdinkuljettajan polttoaineindeksiin rahdinkuljettajan kanssa. Rahdinkuljettajan polttoaineindeksi on määritettävä ennen tämän ohjauksen suorittamista. Sen voi määrittää Määritä rahdinkuljettajan polttoaineindeksi -ohjauksessa. Logistiikkapäällikkö tekee yleensä nämä tehtävät. Tämän menettelyn luomisessa käytetty esittelytietojen yritys on USMF.
+<span data-ttu-id="c26c8-104">Tässä ohjauksessa kerrotaan, miten polttoaineen lisämaksun määritys, rahdinkuljettajan lisämaksu, lisämaksun päätiedot luodaan ja liitetään rahdinkuljettajan polttoaineindeksiin rahdinkuljettajan kanssa.</span><span class="sxs-lookup"><span data-stu-id="c26c8-104">This guide shows how to create an accessorial assignment, carrier accessorial charge, accessorial master for fuel surcharge, and associate a carrier fuel index with a carrier.</span></span> <span data-ttu-id="c26c8-105">Rahdinkuljettajan polttoaineindeksi on määritettävä ennen tämän ohjauksen suorittamista.</span><span class="sxs-lookup"><span data-stu-id="c26c8-105">You need to have set up a carrier fuel index before you run this guide.</span></span> <span data-ttu-id="c26c8-106">Sen voi määrittää Määritä rahdinkuljettajan polttoaineindeksi -ohjauksessa.</span><span class="sxs-lookup"><span data-stu-id="c26c8-106">You can use the “Set up a carrier fuel index” guide to do this.</span></span> <span data-ttu-id="c26c8-107">Logistiikkapäällikkö tekee yleensä nämä tehtävät.</span><span class="sxs-lookup"><span data-stu-id="c26c8-107">These setup tasks are typically done by a Logistics manager.</span></span> <span data-ttu-id="c26c8-108">Tämän menettelyn luomisessa käytetty esittelytietojen yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="c26c8-108">The demo data used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-an-accessorial-master"></a>Lisämaksun päätietojen luominen
-1. Valitse Kuljetustenhallinta > Asetukset > Luokitus > Lisämaksun päätiedot.
-2. Valitse Uusi.
-3. Kirjoita arvo Lisämaksun päätiedot -kenttään.
-4. Kirjoita arvo Nimi-kenttään.
-5. Valitse Tallenna.
+## <a name="create-an-accessorial-master"></a><span data-ttu-id="c26c8-109">Lisämaksun päätietojen luominen</span><span class="sxs-lookup"><span data-stu-id="c26c8-109">Create an accessorial master</span></span>
+1. <span data-ttu-id="c26c8-110">Valitse Kuljetustenhallinta > Asetukset > Luokitus > Lisämaksun päätiedot.</span><span class="sxs-lookup"><span data-stu-id="c26c8-110">Go to Transportation management > Setup > Rating > Accessorial masters.</span></span>
+2. <span data-ttu-id="c26c8-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c26c8-111">Click New.</span></span>
+3. <span data-ttu-id="c26c8-112">Kirjoita arvo Lisämaksun päätiedot -kenttään.</span><span class="sxs-lookup"><span data-stu-id="c26c8-112">In the Accessorial master field, type a value.</span></span>
+4. <span data-ttu-id="c26c8-113">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c26c8-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="c26c8-114">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c26c8-114">Click Save.</span></span>
 
-## <a name="create-a-carrier-accessorial-charge"></a>Rahdinkuljettajan lisämaksun luominen
-1. Valitse Kuljetustenhallinta > Asetukset > Luokitus > Rahdinkuljettajan lisämaksut.
-2. Valitse Uusi.
-3. Kirjoita Rahdinkuljettajan lisämaksun tunnus -kenttään arvo.
-4. Avaa haku valitsemalla Lähetyksen rahdinkuljettaja -kentässä avattavan valikon painike.
-5. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Tässä esimerkissä valitaan kuorma-autonkuljettaja.  
-6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-7. Avaa haku valitsemalla Rahdinkuljettajan palvelu -kentässä avattavan valikon painike.
-8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-9. Avaa haku valitsemalla Lisämaksun päätiedot -kentässä avattavan valikon painike.
-10. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Tässä esimerkissä valitaan juuri luodut lisämaksun päätiedot.  
-11. Valitse Tallenna.
+## <a name="create-a-carrier-accessorial-charge"></a><span data-ttu-id="c26c8-115">Rahdinkuljettajan lisämaksun luominen</span><span class="sxs-lookup"><span data-stu-id="c26c8-115">Create a carrier accessorial charge</span></span>
+1. <span data-ttu-id="c26c8-116">Valitse Kuljetustenhallinta > Asetukset > Luokitus > Rahdinkuljettajan lisämaksut.</span><span class="sxs-lookup"><span data-stu-id="c26c8-116">Go to Transportation management > Setup > Rating > Carrier accessorial charges.</span></span>
+2. <span data-ttu-id="c26c8-117">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c26c8-117">Click New.</span></span>
+3. <span data-ttu-id="c26c8-118">Kirjoita Rahdinkuljettajan lisämaksun tunnus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="c26c8-118">In the Carrier accessorial ID field, type a value.</span></span>
+4. <span data-ttu-id="c26c8-119">Avaa haku valitsemalla Lähetyksen rahdinkuljettaja -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c26c8-119">In the Shipping carrier field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="c26c8-120">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c26c8-120">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="c26c8-121">Tässä esimerkissä valitaan kuorma-autonkuljettaja.</span><span class="sxs-lookup"><span data-stu-id="c26c8-121">In this example, choose Truck Carrier.</span></span>  
+6. <span data-ttu-id="c26c8-122">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c26c8-122">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="c26c8-123">Avaa haku valitsemalla Rahdinkuljettajan palvelu -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c26c8-123">In the Carrier service field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="c26c8-124">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c26c8-124">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="c26c8-125">Avaa haku valitsemalla Lisämaksun päätiedot -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c26c8-125">In the Accessorial master field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="c26c8-126">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c26c8-126">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="c26c8-127">Tässä esimerkissä valitaan juuri luodut lisämaksun päätiedot.</span><span class="sxs-lookup"><span data-stu-id="c26c8-127">In this example, choose the newly created Accessorial master.</span></span>  
+11. <span data-ttu-id="c26c8-128">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c26c8-128">Click Save.</span></span>
 
-## <a name="create-an-accessorial-assignment"></a>Lisämaksun määritysten luominen
-1. Valitse Lisämaksun määritykset.
-2. Valitse Uusi.
-3. Kirjoita arvo Nimi-kenttään.
-4. Ota käyttöön Ehdot-osan laajennus.
-    * Voit määrittää ehdoissa, että polttoaineen lisämaksua käytetään aina. Tässä esimerkissä voit myös valita, että sitä käytetään vain tietyllä alueella.  
-5. Kirjoita arvo Postinumero lähtö -kenttään.
-6. Kirjoita arvo Postinumero kohde -kenttään.
-7. Ota käyttöön Laskenta-osan laajennus.
-    * Laskenta-osassa voit määrittää, miten polttoaineen lisämaksu lasketaan. Laskenta riippuu laskelman perustaksi valitusta lisämaksun yksiköstä.  
-8. Valitse Lisämaksun tyyppi -kentässä Polttoaineen lisämaksu.
-9. Valitse Lisämaksun yksikkö -kentässä Kilometri.
-10. Avaa haku valitsemalla Alue-kentässä avattavan valikon painike.
-11. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-12. Valitse Tallenna.
+## <a name="create-an-accessorial-assignment"></a><span data-ttu-id="c26c8-129">Lisämaksun määritysten luominen</span><span class="sxs-lookup"><span data-stu-id="c26c8-129">Create an accessorial assignment</span></span>
+1. <span data-ttu-id="c26c8-130">Valitse Lisämaksun määritykset.</span><span class="sxs-lookup"><span data-stu-id="c26c8-130">Click Accessorial assignments.</span></span>
+2. <span data-ttu-id="c26c8-131">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c26c8-131">Click New.</span></span>
+3. <span data-ttu-id="c26c8-132">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c26c8-132">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="c26c8-133">Ota käyttöön Ehdot-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="c26c8-133">Toggle the expansion of the Criteria section.</span></span>
+    * <span data-ttu-id="c26c8-134">Voit määrittää ehdoissa, että polttoaineen lisämaksua käytetään aina. Tässä esimerkissä voit myös valita, että sitä käytetään vain tietyllä alueella.</span><span class="sxs-lookup"><span data-stu-id="c26c8-134">In the criteria, you can choose to always apply the fuel surcharge or for this example choose that it only applies within a certain region.</span></span>  
+5. <span data-ttu-id="c26c8-135">Kirjoita arvo Postinumero lähtö -kenttään.</span><span class="sxs-lookup"><span data-stu-id="c26c8-135">In the ZIP/postal code from field, type a value.</span></span>
+6. <span data-ttu-id="c26c8-136">Kirjoita arvo Postinumero kohde -kenttään.</span><span class="sxs-lookup"><span data-stu-id="c26c8-136">In the ZIP/postal code to field, type a value.</span></span>
+7. <span data-ttu-id="c26c8-137">Ota käyttöön Laskenta-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="c26c8-137">Toggle the expansion of the Calculation section.</span></span>
+    * <span data-ttu-id="c26c8-138">Laskenta-osassa voit määrittää, miten polttoaineen lisämaksu lasketaan.</span><span class="sxs-lookup"><span data-stu-id="c26c8-138">In the calculation section you can specify how to calculate the fuel surcharge.</span></span> <span data-ttu-id="c26c8-139">Laskenta riippuu laskelman perustaksi valitusta lisämaksun yksiköstä.</span><span class="sxs-lookup"><span data-stu-id="c26c8-139">This calculation depends on the Accessorial unit that you chose as the base for your calculation.</span></span>  
+8. <span data-ttu-id="c26c8-140">Valitse Lisämaksun tyyppi -kentässä Polttoaineen lisämaksu.</span><span class="sxs-lookup"><span data-stu-id="c26c8-140">In the Accessorial fee type field, select 'Fuel surcharge'.</span></span>
+9. <span data-ttu-id="c26c8-141">Valitse Lisämaksun yksikkö -kentässä Kilometri.</span><span class="sxs-lookup"><span data-stu-id="c26c8-141">In the Accessorial unit field, select 'Mileage'.</span></span>
+10. <span data-ttu-id="c26c8-142">Avaa haku valitsemalla Alue-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c26c8-142">In the Region field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="c26c8-143">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c26c8-143">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="c26c8-144">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c26c8-144">Click Save.</span></span>
 
-## <a name="update-the-carrier-rating-profile"></a>Rahdinkuljettajan hinnoitteluprofiilin päivittäminen
-1. Valitse Kuljetustenhallinta > Asetukset > Rahdinkuljettajat > Lähetyksen rahdinkuljettajat.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Ota Luokituksen profiilit -osan laajennus käyttöön.
-4. Valitse Muokkaa.
-5. Avaa haku valitsemalla Rahdinkuljettajan polttoaineindeksi -kentässä avattavan valikon painike.
-6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-7. Valitse Tallenna.
+## <a name="update-the-carrier-rating-profile"></a><span data-ttu-id="c26c8-145">Rahdinkuljettajan hinnoitteluprofiilin päivittäminen</span><span class="sxs-lookup"><span data-stu-id="c26c8-145">Update the carrier rating profile</span></span>
+1. <span data-ttu-id="c26c8-146">Valitse Kuljetustenhallinta > Asetukset > Rahdinkuljettajat > Lähetyksen rahdinkuljettajat.</span><span class="sxs-lookup"><span data-stu-id="c26c8-146">Go to Transportation management > Setup > Carriers > Shipping carriers.</span></span>
+2. <span data-ttu-id="c26c8-147">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c26c8-147">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="c26c8-148">Ota Luokituksen profiilit -osan laajennus käyttöön.</span><span class="sxs-lookup"><span data-stu-id="c26c8-148">Toggle the expansion of the Rating profiles section.</span></span>
+4. <span data-ttu-id="c26c8-149">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="c26c8-149">Click Edit.</span></span>
+5. <span data-ttu-id="c26c8-150">Avaa haku valitsemalla Rahdinkuljettajan polttoaineindeksi -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c26c8-150">In the Carrier fuel index field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="c26c8-151">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c26c8-151">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="c26c8-152">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c26c8-152">Click Save.</span></span>
 
 

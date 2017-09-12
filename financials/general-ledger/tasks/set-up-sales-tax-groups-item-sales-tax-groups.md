@@ -16,37 +16,37 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: a7edb946dbc19ab6734c4b3dc2aafea3c29c91b1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 4d7f1093edcfff65fd466fa8138b1bb5203648b3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen
+# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="636d4-103">Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="636d4-103">Set up sales tax groups and item sales tax groups</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä tehtävän tallennuksessa esitellään arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen. Arvonlisäveroryhmät ovat asiakkaisiin ja toimittajiin liitettyjen arvonlisäverokoodien ryhmiä. Niitä on liitetty myös niiden tapahtumien kirjanpitotileihin, joita ei ole kirjattu tietylle toimittajalle tai asiakkaalle.  Nimikkeiden arvonlisäveroryhmät ovat resursseihin, kuten tuotteisiin, liitettyjen arvonlisäverokoodien ryhmiä.  Määritettyä tapahtumaa koskeva arvonlisävero määräytyy sekä tapahtuman arvonlisäveroryhmään että nimikkeen arvonlisäveroryhmään sisältyvien arvonlisäverokoodien mukaan.  Arvonlisävero voidaan laskea vain, jos arvonlisäveroryhmä ja nimikkeen arvonlisäveroryhmä on valittu kullekin sellaiselle tapahtumalle, jonka osalta arvonlisävero on laskettava tai tallennettava.  
+<span data-ttu-id="636d4-104">Tässä tehtävän tallennuksessa esitellään arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen.</span><span class="sxs-lookup"><span data-stu-id="636d4-104">This task recording walks you through the setup of Sales tax and Item sales tax groups.</span></span> <span data-ttu-id="636d4-105">Arvonlisäveroryhmät ovat asiakkaisiin ja toimittajiin liitettyjen arvonlisäverokoodien ryhmiä.</span><span class="sxs-lookup"><span data-stu-id="636d4-105">Sales tax groups are groups of sales tax codes that are attached to customers and vendors.</span></span> <span data-ttu-id="636d4-106">Niitä on liitetty myös niiden tapahtumien kirjanpitotileihin, joita ei ole kirjattu tietylle toimittajalle tai asiakkaalle.</span><span class="sxs-lookup"><span data-stu-id="636d4-106">They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.</span></span>  <span data-ttu-id="636d4-107">Nimikkeiden arvonlisäveroryhmät ovat resursseihin, kuten tuotteisiin, liitettyjen arvonlisäverokoodien ryhmiä.</span><span class="sxs-lookup"><span data-stu-id="636d4-107">Item sales tax groups are groups of sales tax codes that are attached to resources like products.</span></span>  <span data-ttu-id="636d4-108">Määritettyä tapahtumaa koskeva arvonlisävero määräytyy sekä tapahtuman arvonlisäveroryhmään että nimikkeen arvonlisäveroryhmään sisältyvien arvonlisäverokoodien mukaan.</span><span class="sxs-lookup"><span data-stu-id="636d4-108">The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.</span></span>  <span data-ttu-id="636d4-109">Arvonlisävero voidaan laskea vain, jos arvonlisäveroryhmä ja nimikkeen arvonlisäveroryhmä on valittu kullekin sellaiselle tapahtumalle, jonka osalta arvonlisävero on laskettava tai tallennettava.</span><span class="sxs-lookup"><span data-stu-id="636d4-109">Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.</span></span>  
 
-1. Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäveroryhmät.
-2. Valitse Uusi.
-3. Kirjoita Arvonlisäveroryhmä-kenttään arvo.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Ota käyttöön Asetukset-osan laajennus.
-6. ValitseLisää.
-7. Merkitse valittu rivi luettelossa.
-8. Avaa haku valitsemalla Arvonlisäverokoodi-kentässä avattavan valikon painike.
-9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-10. Valitse Tallenna.
-11. Sulje sivu.
-12. Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäveroryhmät.
-13. Valitse Uusi.
-14. Kirjoita Nimikkeen arvonlisäveroryhmä -kenttään arvo.
-15. Kirjoita arvo Kuvaus-kenttään.
-16. ValitseLisää.
-17. Merkitse valittu rivi luettelossa.
-18. Avaa haku valitsemalla Arvonlisäverokoodi-kentässä avattavan valikon painike.
-19. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-20. Valitse Tallenna.
+1. <span data-ttu-id="636d4-110">Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäveroryhmät.</span><span class="sxs-lookup"><span data-stu-id="636d4-110">Go to Tax > Indirect taxes > Sales tax > Sales tax groups.</span></span>
+2. <span data-ttu-id="636d4-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="636d4-111">Click New.</span></span>
+3. <span data-ttu-id="636d4-112">Kirjoita Arvonlisäveroryhmä-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="636d4-112">In the Sales tax group field, type a value.</span></span>
+4. <span data-ttu-id="636d4-113">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="636d4-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="636d4-114">Ota käyttöön Asetukset-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="636d4-114">Toggle the expansion of the Setup section.</span></span>
+6. <span data-ttu-id="636d4-115">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="636d4-115">Click Add.</span></span>
+7. <span data-ttu-id="636d4-116">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="636d4-116">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="636d4-117">Avaa haku valitsemalla Arvonlisäverokoodi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="636d4-117">In the Sales tax code field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="636d4-118">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="636d4-118">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="636d4-119">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="636d4-119">Click Save.</span></span>
+11. <span data-ttu-id="636d4-120">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="636d4-120">Close the page.</span></span>
+12. <span data-ttu-id="636d4-121">Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäveroryhmät.</span><span class="sxs-lookup"><span data-stu-id="636d4-121">Go to Tax > Indirect taxes > Sales tax > Item sales tax groups.</span></span>
+13. <span data-ttu-id="636d4-122">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="636d4-122">Click New.</span></span>
+14. <span data-ttu-id="636d4-123">Kirjoita Nimikkeen arvonlisäveroryhmä -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="636d4-123">In the Item sales tax group field, type a value.</span></span>
+15. <span data-ttu-id="636d4-124">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="636d4-124">In the Description field, type a value.</span></span>
+16. <span data-ttu-id="636d4-125">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="636d4-125">Click Add.</span></span>
+17. <span data-ttu-id="636d4-126">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="636d4-126">In the list, mark the selected row.</span></span>
+18. <span data-ttu-id="636d4-127">Avaa haku valitsemalla Arvonlisäverokoodi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="636d4-127">In the Sales tax code field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="636d4-128">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="636d4-128">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="636d4-129">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="636d4-129">Click Save.</span></span>
 
 

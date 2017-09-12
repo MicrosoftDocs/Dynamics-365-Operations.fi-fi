@@ -16,33 +16,33 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 9ea412e4324542a570c1ab2c37824089a3dfec26
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e27dc0623f27ee21408d14aefb93ca13c40be672
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="hire-a-candidate-through-recruiting"></a>Ehdokkaan työhönotto rekrytoinnin kautta
+# <a name="hire-a-candidate-through-recruiting"></a><span data-ttu-id="4984f-103">Ehdokkaan työhönotto rekrytoinnin kautta</span><span class="sxs-lookup"><span data-stu-id="4984f-103">Hire a candidate through recruiting</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä rekrytoija palkkaa hakijan, joka lähetti hakemuksen tietyn työhönottoprojektin aikana. Kun hakija palkataan työhönottoprojektin kautta, luodaan uusi työntekijätietue ja hakijan tietueen tilaksi tulee Toimessa. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Suorita menettely loppuun siirtymällä kohtaan Henkilöstöhallinto > Työhönotto > Hakemukset > Hakemukset. 
+<span data-ttu-id="4984f-104">Tässä menettelyssä rekrytoija palkkaa hakijan, joka lähetti hakemuksen tietyn työhönottoprojektin aikana.</span><span class="sxs-lookup"><span data-stu-id="4984f-104">This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project.</span></span> <span data-ttu-id="4984f-105">Kun hakija palkataan työhönottoprojektin kautta, luodaan uusi työntekijätietue ja hakijan tietueen tilaksi tulee Toimessa.</span><span class="sxs-lookup"><span data-stu-id="4984f-105">When you hire an applicant through a recruiting project, a new worker record will be created and the applicant’s record will have a status of Employed.</span></span> <span data-ttu-id="4984f-106">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="4984f-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="4984f-107">Suorita menettely loppuun siirtymällä kohtaan Henkilöstöhallinto > Työhönotto > Hakemukset > Hakemukset.</span><span class="sxs-lookup"><span data-stu-id="4984f-107">To complete this procedure, navigate to Human resources > Recruitment > Applications >Applications</span></span> 
 
-1. Ulkoisen hakijan hakemuksen valitseminen
-2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-3. Valitse Hakemuksen tila.
-4. Valitse Palkkaa uusi työntekijä.
-5. Syötä päivämäärä ja kellonaika Työsuhteen aloituspäivämäärä -kenttään.
-6. Avaa haku napsauttamalla Toimi-kentässä avattavan valikon painiketta.
-7. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-8. Syötä päivämäärä ja kellonaika Toimeksiannon aloitus -kenttään.
-9. Valitse Palkkaa uusi työntekijä.
-10. Laajenna Työhistoria-tietoruutu.
-11. Laajenna Nykyiset toimet -tietoruutu.
-12. Laajenna Työhistoria-tietoruutu.
-13. Laajenna Nykyiset toimet -tietoruutu.
-14. Laajenna tai tiivistä Osoitteet-osa.
-15. Laajenna tai tiivistä Yhteystiedot-osa.
-16. Laajenna tai tiivistä Henkilökohtaiset tiedot -osa.
+1. <span data-ttu-id="4984f-108">Ulkoisen hakijan hakemuksen valitseminen</span><span class="sxs-lookup"><span data-stu-id="4984f-108">Select an Application for an External applicant</span></span>
+2. <span data-ttu-id="4984f-109">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="4984f-109">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="4984f-110">Valitse Hakemuksen tila.</span><span class="sxs-lookup"><span data-stu-id="4984f-110">Click Application status.</span></span>
+4. <span data-ttu-id="4984f-111">Valitse Palkkaa uusi työntekijä.</span><span class="sxs-lookup"><span data-stu-id="4984f-111">Click Hire new worker.</span></span>
+5. <span data-ttu-id="4984f-112">Syötä päivämäärä ja kellonaika Työsuhteen aloituspäivämäärä -kenttään.</span><span class="sxs-lookup"><span data-stu-id="4984f-112">In the Employment start date field, enter a date and time.</span></span>
+6. <span data-ttu-id="4984f-113">Avaa haku napsauttamalla Toimi-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="4984f-113">In the Position field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="4984f-114">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="4984f-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="4984f-115">Syötä päivämäärä ja kellonaika Toimeksiannon aloitus -kenttään.</span><span class="sxs-lookup"><span data-stu-id="4984f-115">In the Assignment start field, enter a date and time.</span></span>
+9. <span data-ttu-id="4984f-116">Valitse Palkkaa uusi työntekijä.</span><span class="sxs-lookup"><span data-stu-id="4984f-116">Click Hire new worker.</span></span>
+10. <span data-ttu-id="4984f-117">Laajenna Työhistoria-tietoruutu.</span><span class="sxs-lookup"><span data-stu-id="4984f-117">Expand the Employment history FactBox.</span></span>
+11. <span data-ttu-id="4984f-118">Laajenna Nykyiset toimet -tietoruutu.</span><span class="sxs-lookup"><span data-stu-id="4984f-118">Expand the Current positions FactBox.</span></span>
+12. <span data-ttu-id="4984f-119">Laajenna Työhistoria-tietoruutu.</span><span class="sxs-lookup"><span data-stu-id="4984f-119">Expand the Employment history FactBox.</span></span>
+13. <span data-ttu-id="4984f-120">Laajenna Nykyiset toimet -tietoruutu.</span><span class="sxs-lookup"><span data-stu-id="4984f-120">Expand the Current positions FactBox.</span></span>
+14. <span data-ttu-id="4984f-121">Laajenna tai tiivistä Osoitteet-osa.</span><span class="sxs-lookup"><span data-stu-id="4984f-121">Expand or collapse the Addresses section.</span></span>
+15. <span data-ttu-id="4984f-122">Laajenna tai tiivistä Yhteystiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="4984f-122">Expand or collapse the Contact information section.</span></span>
+16. <span data-ttu-id="4984f-123">Laajenna tai tiivistä Henkilökohtaiset tiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="4984f-123">Expand or collapse the Personal information section.</span></span>
 
 

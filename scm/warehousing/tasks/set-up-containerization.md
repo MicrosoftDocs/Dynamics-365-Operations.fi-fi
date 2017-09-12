@@ -17,102 +17,102 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 38b60098daa0389af596920682c30dcd9b17a7fb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: aeb7d956560c513c08d5e20dcf20989b49137a52
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-containerization"></a>Määritä konttiinpakkaus
+# <a name="set-up-containerization"></a><span data-ttu-id="fde3b-103">Määritä konttiinpakkaus</span><span class="sxs-lookup"><span data-stu-id="fde3b-103">Set up containerization</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kuvataan, kuinka voit automatisoida kuormien konttiinpakkauksen Varastonhallinnassa. Automaattinen konttiinpakkaus luo lähetyksille kontit ja keräilytyöt kun aalto käsitellään, ja työrivit voidaan jakaa määriin, jotka sopivat kontteihin. Tämän avulla varastotyöntekijän voivat keräillä nimikkeet suoraan valittuun konttiin. Manuaaliseen pakkauskäsittelyyn verrattuna järjestelmä automatisoi tehtäviä, kuten konttien luonnin, nimikkeiden liittämisen ja konttien sulkemisen. Tässä menettelyssä käytetään esittely-yritystä USMF, ja sen suorittaa varastopäällikkö.
+<span data-ttu-id="fde3b-104">Tässä menettelyssä kuvataan, kuinka voit automatisoida kuormien konttiinpakkauksen Varastonhallinnassa.</span><span class="sxs-lookup"><span data-stu-id="fde3b-104">This procedure describes how to automate the containerization of loads in Warehouse management.</span></span> <span data-ttu-id="fde3b-105">Automaattinen konttiinpakkaus luo lähetyksille kontit ja keräilytyöt kun aalto käsitellään, ja työrivit voidaan jakaa määriin, jotka sopivat kontteihin.</span><span class="sxs-lookup"><span data-stu-id="fde3b-105">Automated containerization creates containers and the picking work for shipments when a wave is processed and work lines can be split into quantities that fit the containers.</span></span> <span data-ttu-id="fde3b-106">Tämän avulla varastotyöntekijän voivat keräillä nimikkeet suoraan valittuun konttiin.</span><span class="sxs-lookup"><span data-stu-id="fde3b-106">This helps warehouse workers to pick the items directly into the chosen container.</span></span> <span data-ttu-id="fde3b-107">Manuaaliseen pakkauskäsittelyyn verrattuna järjestelmä automatisoi tehtäviä, kuten konttien luonnin, nimikkeiden liittämisen ja konttien sulkemisen.</span><span class="sxs-lookup"><span data-stu-id="fde3b-107">Compared to the manual packing process, tasks such as creating containers, assigning items, and closing containers are automated by the system.</span></span> <span data-ttu-id="fde3b-108">Tässä menettelyssä käytetään esittely-yritystä USMF, ja sen suorittaa varastopäällikkö.</span><span class="sxs-lookup"><span data-stu-id="fde3b-108">This procedure uses the USMF demo company and is performed by a Warehouse manager.</span></span>
 
 
-## <a name="set-up-a-wave-template"></a>Aaltomallin asetuksien määrittäminen
-1. Valitse Varastonhallinta > Asetukset > Aallot > Aaltomallit.
-2. Valitse Uusi.
-3. Syötä Aaltomallin nimi -kenttään arvo.
-4. Kirjoita Aaltomallin kuvaus -kenttään arvo.
-5. Syötä tai valitse arvo Toimipaikka-kenttään.
-6. Anna tai valitse Varasto-kentässä arvo.
-7. Laajenna Menetelmät-osa.
-    * Valitut menetelmät -ruudussa näkyvät valitun aaltomallin tyypin menetelmät. Aaltomallin on sisällettävä pakkaa konttiin -menetelmä.  
-8. Etsi haluamasi tietue luettelosta ja valitse se.
-9. Kirjoita arvo Aallon vaihekoodi -kenttään.
-    * Kirjoita aaltovaiheen koodi lisätylle menetelmälle, joka voi olla mikä tahansa koodi. Voit lisätä menetelmän useammin kuin kerran ja määrittää sille eri aaltovaiheen koodit. Valitse tällöin Toistettava-asetus tälle menetelmälle Aallon käsittelymenetelmät -sivulla  
-10. Valitse Tallenna.
-11. Sulje sivu.
+## <a name="set-up-a-wave-template"></a><span data-ttu-id="fde3b-109">Aaltomallin asetuksien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="fde3b-109">Set up a wave template</span></span>
+1. <span data-ttu-id="fde3b-110">Valitse Varastonhallinta > Asetukset > Aallot > Aaltomallit.</span><span class="sxs-lookup"><span data-stu-id="fde3b-110">Go to Warehouse management > Setup > Waves > Wave templates.</span></span>
+2. <span data-ttu-id="fde3b-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="fde3b-111">Click New.</span></span>
+3. <span data-ttu-id="fde3b-112">Syötä Aaltomallin nimi -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="fde3b-112">In the Wave template name field, type a value.</span></span>
+4. <span data-ttu-id="fde3b-113">Kirjoita Aaltomallin kuvaus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="fde3b-113">In the Wave template description field, type a value.</span></span>
+5. <span data-ttu-id="fde3b-114">Syötä tai valitse arvo Toimipaikka-kenttään.</span><span class="sxs-lookup"><span data-stu-id="fde3b-114">In the Site field, enter or select a value.</span></span>
+6. <span data-ttu-id="fde3b-115">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="fde3b-115">In the Warehouse field, enter or select a value.</span></span>
+7. <span data-ttu-id="fde3b-116">Laajenna Menetelmät-osa.</span><span class="sxs-lookup"><span data-stu-id="fde3b-116">Expand the Methods section.</span></span>
+    * <span data-ttu-id="fde3b-117">Valitut menetelmät -ruudussa näkyvät valitun aaltomallin tyypin menetelmät.</span><span class="sxs-lookup"><span data-stu-id="fde3b-117">The Selected methods pane lists the methods for the selected wave template type.</span></span> <span data-ttu-id="fde3b-118">Aaltomallin on sisällettävä pakkaa konttiin -menetelmä.</span><span class="sxs-lookup"><span data-stu-id="fde3b-118">The wave template must include the containerize method.</span></span>  
+8. <span data-ttu-id="fde3b-119">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="fde3b-119">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="fde3b-120">Kirjoita arvo Aallon vaihekoodi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="fde3b-120">In the Wave step code field, type a value.</span></span>
+    * <span data-ttu-id="fde3b-121">Kirjoita aaltovaiheen koodi lisätylle menetelmälle, joka voi olla mikä tahansa koodi.</span><span class="sxs-lookup"><span data-stu-id="fde3b-121">Enter a Wave step code for the added method, which can be any code.</span></span> <span data-ttu-id="fde3b-122">Voit lisätä menetelmän useammin kuin kerran ja määrittää sille eri aaltovaiheen koodit.</span><span class="sxs-lookup"><span data-stu-id="fde3b-122">It’s possible to add the method more than once and assign different wave step codes.</span></span> <span data-ttu-id="fde3b-123">Valitse tällöin Toistettava-asetus tälle menetelmälle Aallon käsittelymenetelmät -sivulla</span><span class="sxs-lookup"><span data-stu-id="fde3b-123">To do this, select Repeatable for this method in the Wave process methods page.</span></span>  
+10. <span data-ttu-id="fde3b-124">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="fde3b-124">Click Save.</span></span>
+11. <span data-ttu-id="fde3b-125">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="fde3b-125">Close the page.</span></span>
 
-## <a name="set-up-a-container-type"></a>Määritä konttityyppi
-1. Valitse Varastonhallinta > Asetukset > Kontit > Konttityypit.
-    * Voit määrittää haluamasi kontit Konttityypit-sivulla. Voit määrittää konttien fyysiset dimensiot, kuten taarapainon, enimmäispainon, enimmäistilavuuden, pituuden, leveyden ja korkeuden. Tässä esimerkissä on kolmea eri kokoista laatikkoa.  
-2. Valitse Uusi.
-3. Kirjoita arvo Konttityyppi-kenttään.
-4. Syötä Taarapaino-kenttään numero.
-5. Lisää Enimmäispaino-kenttään numero.
-6. Syötä Tilavuus-kenttään numero.
-7. Lisää Pituus-kenttään numero.
-8. Kirjoita Leveys-kenttään numero.
-9. Kirjoita Korkeus-kenttään numero.
-10. Kirjoita arvo Kuvaus-kenttään.
-11. Valitse Tallenna.
-12. Valitse Uusi.
-13. Kirjoita arvo Konttityyppi-kenttään.
-14. Kirjoita arvo Kuvaus-kenttään.
-15. Syötä Taarapaino-kenttään numero.
-16. Lisää Enimmäispaino-kenttään numero.
-17. Syötä Tilavuus-kenttään numero.
-18. Lisää Pituus-kenttään numero.
-19. Kirjoita Leveys-kenttään numero.
-20. Kirjoita Korkeus-kenttään numero.
-21. Valitse Tallenna.
-22. Valitse Uusi.
-23. Kirjoita arvo Konttityyppi-kenttään.
-24. Kirjoita arvo Kuvaus-kenttään.
-25. Syötä Taarapaino-kenttään numero.
-26. Lisää Enimmäispaino-kenttään numero.
-27. Syötä Tilavuus-kenttään numero.
-28. Lisää Pituus-kenttään numero.
-29. Kirjoita Leveys-kenttään numero.
-30. Kirjoita Korkeus-kenttään numero.
-31. Valitse Tallenna.
-32. Sulje sivu.
+## <a name="set-up-a-container-type"></a><span data-ttu-id="fde3b-126">Määritä konttityyppi</span><span class="sxs-lookup"><span data-stu-id="fde3b-126">Set up a container type</span></span>
+1. <span data-ttu-id="fde3b-127">Valitse Varastonhallinta > Asetukset > Kontit > Konttityypit.</span><span class="sxs-lookup"><span data-stu-id="fde3b-127">Go to Warehouse management > Setup > Containers > Container types.</span></span>
+    * <span data-ttu-id="fde3b-128">Voit määrittää haluamasi kontit Konttityypit-sivulla.</span><span class="sxs-lookup"><span data-stu-id="fde3b-128">You can define your containers in the Container types page.</span></span> <span data-ttu-id="fde3b-129">Voit määrittää konttien fyysiset dimensiot, kuten taarapainon, enimmäispainon, enimmäistilavuuden, pituuden, leveyden ja korkeuden.</span><span class="sxs-lookup"><span data-stu-id="fde3b-129">You can configure the physical dimensions of containers including tare weight, maximum weight, maximum volume, length, width, and height.</span></span> <span data-ttu-id="fde3b-130">Tässä esimerkissä on kolmea eri kokoista laatikkoa.</span><span class="sxs-lookup"><span data-stu-id="fde3b-130">In this example, we have three different sizes of boxes.</span></span>  
+2. <span data-ttu-id="fde3b-131">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="fde3b-131">Click New.</span></span>
+3. <span data-ttu-id="fde3b-132">Kirjoita arvo Konttityyppi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="fde3b-132">In the Container type code field, type a value.</span></span>
+4. <span data-ttu-id="fde3b-133">Syötä Taarapaino-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-133">In the Tare weight field, enter a number.</span></span>
+5. <span data-ttu-id="fde3b-134">Lisää Enimmäispaino-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-134">In the Maximum weight field, enter a number.</span></span>
+6. <span data-ttu-id="fde3b-135">Syötä Tilavuus-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-135">In the Volume field, enter a number.</span></span>
+7. <span data-ttu-id="fde3b-136">Lisää Pituus-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-136">In the Length field, enter a number.</span></span>
+8. <span data-ttu-id="fde3b-137">Kirjoita Leveys-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-137">In the Width field, enter a number.</span></span>
+9. <span data-ttu-id="fde3b-138">Kirjoita Korkeus-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-138">In the Height field, enter a number.</span></span>
+10. <span data-ttu-id="fde3b-139">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="fde3b-139">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="fde3b-140">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="fde3b-140">Click Save.</span></span>
+12. <span data-ttu-id="fde3b-141">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="fde3b-141">Click New.</span></span>
+13. <span data-ttu-id="fde3b-142">Kirjoita arvo Konttityyppi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="fde3b-142">In the Container type code field, type a value.</span></span>
+14. <span data-ttu-id="fde3b-143">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="fde3b-143">In the Description field, type a value.</span></span>
+15. <span data-ttu-id="fde3b-144">Syötä Taarapaino-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-144">In the Tare weight field, enter a number.</span></span>
+16. <span data-ttu-id="fde3b-145">Lisää Enimmäispaino-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-145">In the Maximum weight field, enter a number.</span></span>
+17. <span data-ttu-id="fde3b-146">Syötä Tilavuus-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-146">In the Volume field, enter a number.</span></span>
+18. <span data-ttu-id="fde3b-147">Lisää Pituus-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-147">In the Length field, enter a number.</span></span>
+19. <span data-ttu-id="fde3b-148">Kirjoita Leveys-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-148">In the Width field, enter a number.</span></span>
+20. <span data-ttu-id="fde3b-149">Kirjoita Korkeus-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-149">In the Height field, enter a number.</span></span>
+21. <span data-ttu-id="fde3b-150">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="fde3b-150">Click Save.</span></span>
+22. <span data-ttu-id="fde3b-151">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="fde3b-151">Click New.</span></span>
+23. <span data-ttu-id="fde3b-152">Kirjoita arvo Konttityyppi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="fde3b-152">In the Container type code field, type a value.</span></span>
+24. <span data-ttu-id="fde3b-153">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="fde3b-153">In the Description field, type a value.</span></span>
+25. <span data-ttu-id="fde3b-154">Syötä Taarapaino-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-154">In the Tare weight field, enter a number.</span></span>
+26. <span data-ttu-id="fde3b-155">Lisää Enimmäispaino-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-155">In the Maximum weight field, enter a number.</span></span>
+27. <span data-ttu-id="fde3b-156">Syötä Tilavuus-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-156">In the Volume field, enter a number.</span></span>
+28. <span data-ttu-id="fde3b-157">Lisää Pituus-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-157">In the Length field, enter a number.</span></span>
+29. <span data-ttu-id="fde3b-158">Kirjoita Leveys-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-158">In the Width field, enter a number.</span></span>
+30. <span data-ttu-id="fde3b-159">Kirjoita Korkeus-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="fde3b-159">In the Height field, enter a number.</span></span>
+31. <span data-ttu-id="fde3b-160">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="fde3b-160">Click Save.</span></span>
+32. <span data-ttu-id="fde3b-161">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="fde3b-161">Close the page.</span></span>
 
-## <a name="set-up-a-container-group"></a>Määritä konttiryhmä
-1. Valitse Varastonhallinta > Asetukset > Kontit > Konttiryhmät.
-2. Valitse Uusi.
-    * Voit määrittää konttityyppien loogiset ryhmät. Voit määrittää kullekin ryhmälle konttien pakkausjärjestyksen ja prosenttiosuuden, jonka perusteella kontit täytetään. Nimikkeen kokodimensiota käytetään määrittämään, onko kontissa tilaa. Järjestelmä valitsee kontin, jonka kokodimensiot ovat lähimpänä nimikettä. Jos ryhmässä on useita konttityyppejä, suosittelemme, että järjestät järjestyksen koon mukaan niin, että suurin kontti on ensimmäinen, numero 1 sarjassa, ja pienin kontti on viimeinen.    
-3. Kirjoita Konttiryhmän tunnus -kenttään arvo.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Valitse Uusi.
-6. Merkitse valittu rivi luettelossa.
-7. Anna tai valitse arvo Konttityyppi -kentässä.
-8. Valitse Uusi.
-9. Merkitse valittu rivi luettelossa.
-10. Anna tai valitse arvo Konttityyppi -kentässä.
-11. Valitse Uusi.
-12. Merkitse valittu rivi luettelossa.
-13. Anna tai valitse arvo Konttityyppi -kentässä.
-14. Valitse Tallenna.
-15. Sulje sivu.
+## <a name="set-up-a-container-group"></a><span data-ttu-id="fde3b-162">Määritä konttiryhmä</span><span class="sxs-lookup"><span data-stu-id="fde3b-162">Set up a container group</span></span>
+1. <span data-ttu-id="fde3b-163">Valitse Varastonhallinta > Asetukset > Kontit > Konttiryhmät.</span><span class="sxs-lookup"><span data-stu-id="fde3b-163">Go to Warehouse management > Setup > Containers > Container groups.</span></span>
+2. <span data-ttu-id="fde3b-164">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="fde3b-164">Click New.</span></span>
+    * <span data-ttu-id="fde3b-165">Voit määrittää konttityyppien loogiset ryhmät.</span><span class="sxs-lookup"><span data-stu-id="fde3b-165">You can set up logical groups of container types.</span></span> <span data-ttu-id="fde3b-166">Voit määrittää kullekin ryhmälle konttien pakkausjärjestyksen ja prosenttiosuuden, jonka perusteella kontit täytetään. Nimikkeen kokodimensiota käytetään määrittämään, onko kontissa tilaa.</span><span class="sxs-lookup"><span data-stu-id="fde3b-166">For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill.The size dimensions of the item is used to determine whether it will fit in a container.</span></span> <span data-ttu-id="fde3b-167">Järjestelmä valitsee kontin, jonka kokodimensiot ovat lähimpänä nimikettä.</span><span class="sxs-lookup"><span data-stu-id="fde3b-167">The container that is closest to the size dimensions of the item is used.</span></span> <span data-ttu-id="fde3b-168">Jos ryhmässä on useita konttityyppejä, suosittelemme, että järjestät järjestyksen koon mukaan niin, että suurin kontti on ensimmäinen, numero 1 sarjassa, ja pienin kontti on viimeinen.</span><span class="sxs-lookup"><span data-stu-id="fde3b-168">If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.</span></span>    
+3. <span data-ttu-id="fde3b-169">Kirjoita Konttiryhmän tunnus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="fde3b-169">In the Container group ID field, type a value.</span></span>
+4. <span data-ttu-id="fde3b-170">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="fde3b-170">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="fde3b-171">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="fde3b-171">Click New.</span></span>
+6. <span data-ttu-id="fde3b-172">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="fde3b-172">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="fde3b-173">Anna tai valitse arvo Konttityyppi -kentässä.</span><span class="sxs-lookup"><span data-stu-id="fde3b-173">In the Container type field, enter or select a value.</span></span>
+8. <span data-ttu-id="fde3b-174">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="fde3b-174">Click New.</span></span>
+9. <span data-ttu-id="fde3b-175">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="fde3b-175">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="fde3b-176">Anna tai valitse arvo Konttityyppi -kentässä.</span><span class="sxs-lookup"><span data-stu-id="fde3b-176">In the Container type field, enter or select a value.</span></span>
+11. <span data-ttu-id="fde3b-177">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="fde3b-177">Click New.</span></span>
+12. <span data-ttu-id="fde3b-178">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="fde3b-178">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="fde3b-179">Anna tai valitse arvo Konttityyppi -kentässä.</span><span class="sxs-lookup"><span data-stu-id="fde3b-179">In the Container type field, enter or select a value.</span></span>
+14. <span data-ttu-id="fde3b-180">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="fde3b-180">Click Save.</span></span>
+15. <span data-ttu-id="fde3b-181">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="fde3b-181">Close the page.</span></span>
 
-## <a name="set-up-a-container-build-template"></a>Aseta kontin muodostusmalli
-1. Valitse Varastonhallinta > Asetukset > Kontit > Kontin rakennusmallit.
-2. Valitse Uusi.
-    * Kontin rakennusmalli perustuu suoritettavaan konttiinpakkauksen prosessiin. Kukin kontin rakennusmalli määrittää yhden konttiinpakkauksen prosessin, jota käytetään aaltomallissa. Muokkaa kyselyä -komennon avulla voit määrittää ehdot, jonka perusteella valittu malli käsitellään. Voit esimerkiksi haluta suorittaa konttiinpakkauksen vain tietyille asiakkaille, tuotteille tai varastoille, tai voit lisätä vastaavan kyselyalueen malliin. Kontin rakennusmalli linkitetään aaltomallin vaiheisiin Aallon vaihekoodi -kentän avulla. Kun aalto suoritetaan, se määrittää, mitä kontin rakennusmalleja käytetään konttiinpakkauksen aloittamiseen. Peruskyselytyyppi-kenttä määrittää pakattavat kohteet ja suodattimen perusteen.  
-3. Merkitse valittu rivi luettelossa.
-4. Kirjoita Konttimallin tunnus -kenttään arvo.
-5. Anna tai valitse Konttiryhmän tunnus -kentässä arvo.
-6. Kirjoita arvo Aallon vaihekoodi -kenttään.
-7. Merkitse Salli jaetut keräilyt -valintaruutu.
-8. Valitse Tallenna.
-9. Napsauta Säilön yhdistämisrajoitukset -kohtaa.
-    * Yhdistämislogiikan keskeytysten avulla voit määrittää sääntöjä pakkauksen kohdistusriveille konteissa. Jos esimerkiksi lisäät Nimiketunnus-kentän, kun nimikkeet on liitetty kontteihin, luodaan uusi kontti aina silloin, kun kohdataan uusi nimiketunnus. Tämä estää työntekijöitä pakkaamasta kahden eri asiakkaan kohdistusrivejä samaan konttiin.  
-10. Valitse Uusi.
-11. Valitse vaihtoehto Taulukko-kentässä.
-12. Syötä tai valitse arvo Kentän valinta -kentässä.
-13. Valitse OK.
+## <a name="set-up-a-container-build-template"></a><span data-ttu-id="fde3b-182">Aseta kontin muodostusmalli</span><span class="sxs-lookup"><span data-stu-id="fde3b-182">Set up a container build template</span></span>
+1. <span data-ttu-id="fde3b-183">Valitse Varastonhallinta > Asetukset > Kontit > Kontin rakennusmallit.</span><span class="sxs-lookup"><span data-stu-id="fde3b-183">Go to Warehouse management > Setup > Containers > Container build templates.</span></span>
+2. <span data-ttu-id="fde3b-184">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="fde3b-184">Click New.</span></span>
+    * <span data-ttu-id="fde3b-185">Kontin rakennusmalli perustuu suoritettavaan konttiinpakkauksen prosessiin.</span><span class="sxs-lookup"><span data-stu-id="fde3b-185">The container build template is based on which of the containerization processes are performed.</span></span> <span data-ttu-id="fde3b-186">Kukin kontin rakennusmalli määrittää yhden konttiinpakkauksen prosessin, jota käytetään aaltomallissa.</span><span class="sxs-lookup"><span data-stu-id="fde3b-186">Each container build template defines one containerization process that will be used by a wave template.</span></span> <span data-ttu-id="fde3b-187">Muokkaa kyselyä -komennon avulla voit määrittää ehdot, jonka perusteella valittu malli käsitellään.</span><span class="sxs-lookup"><span data-stu-id="fde3b-187">The Edit query option allows you to define the conditions on which the selected template will be processed.</span></span> <span data-ttu-id="fde3b-188">Voit esimerkiksi haluta suorittaa konttiinpakkauksen vain tietyille asiakkaille, tuotteille tai varastoille, tai voit lisätä vastaavan kyselyalueen malliin.</span><span class="sxs-lookup"><span data-stu-id="fde3b-188">For example, you may want to only run containerization for specific customers, products, or warehouses or you can add the corresponding query ranges to the template.</span></span> <span data-ttu-id="fde3b-189">Kontin rakennusmalli linkitetään aaltomallin vaiheisiin Aallon vaihekoodi -kentän avulla.</span><span class="sxs-lookup"><span data-stu-id="fde3b-189">The Wave step code field is how a container build template is linked to steps in a wave template.</span></span> <span data-ttu-id="fde3b-190">Kun aalto suoritetaan, se määrittää, mitä kontin rakennusmalleja käytetään konttiinpakkauksen aloittamiseen.</span><span class="sxs-lookup"><span data-stu-id="fde3b-190">When a wave is executed, it determines which container build template(s) are used to initiate containerization.</span></span> <span data-ttu-id="fde3b-191">Peruskyselytyyppi-kenttä määrittää pakattavat kohteet ja suodattimen perusteen.</span><span class="sxs-lookup"><span data-stu-id="fde3b-191">The Base query type field determines what to pack and what to base the filter query on.</span></span>  
+3. <span data-ttu-id="fde3b-192">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="fde3b-192">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="fde3b-193">Kirjoita Konttimallin tunnus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="fde3b-193">In the Container template ID field, type a value.</span></span>
+5. <span data-ttu-id="fde3b-194">Anna tai valitse Konttiryhmän tunnus -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="fde3b-194">In the Container group ID field, enter or select a value.</span></span>
+6. <span data-ttu-id="fde3b-195">Kirjoita arvo Aallon vaihekoodi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="fde3b-195">In the Wave step code field, type a value.</span></span>
+7. <span data-ttu-id="fde3b-196">Merkitse Salli jaetut keräilyt -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="fde3b-196">Select the Allow split picks check box.</span></span>
+8. <span data-ttu-id="fde3b-197">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="fde3b-197">Click Save.</span></span>
+9. <span data-ttu-id="fde3b-198">Napsauta Säilön yhdistämisrajoitukset -kohtaa.</span><span class="sxs-lookup"><span data-stu-id="fde3b-198">Click Containier mixing constraints.</span></span>
+    * <span data-ttu-id="fde3b-199">Yhdistämislogiikan keskeytysten avulla voit määrittää sääntöjä pakkauksen kohdistusriveille konteissa.</span><span class="sxs-lookup"><span data-stu-id="fde3b-199">Mixing logic breaks allows you to set up rules for packing allocation lines in containers.</span></span> <span data-ttu-id="fde3b-200">Jos esimerkiksi lisäät Nimiketunnus-kentän, kun nimikkeet on liitetty kontteihin, luodaan uusi kontti aina silloin, kun kohdataan uusi nimiketunnus.</span><span class="sxs-lookup"><span data-stu-id="fde3b-200">For example, if you add the Item number field, when items are assigned to containers, a new container will be created when there is a new item number.</span></span> <span data-ttu-id="fde3b-201">Tämä estää työntekijöitä pakkaamasta kahden eri asiakkaan kohdistusrivejä samaan konttiin.</span><span class="sxs-lookup"><span data-stu-id="fde3b-201">This is will prevent workers from packing allocations lines for two different customers in the same container.</span></span>  
+10. <span data-ttu-id="fde3b-202">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="fde3b-202">Click New.</span></span>
+11. <span data-ttu-id="fde3b-203">Valitse vaihtoehto Taulukko-kentässä.</span><span class="sxs-lookup"><span data-stu-id="fde3b-203">In the Table field, select an option.</span></span>
+12. <span data-ttu-id="fde3b-204">Syötä tai valitse arvo Kentän valinta -kentässä.</span><span class="sxs-lookup"><span data-stu-id="fde3b-204">In the Field Select field, enter or select a value.</span></span>
+13. <span data-ttu-id="fde3b-205">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="fde3b-205">Click OK.</span></span>
 
 

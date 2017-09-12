@@ -22,181 +22,181 @@ ms.contentlocale: fi-fi
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Muodon päivittäminen ottamalla käyttöön muodon uusi perusversio sähköistä raportointia (ER) varten
+# <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a><span data-ttu-id="3796c-103">Muodon päivittäminen ottamalla käyttöön muodon uusi perusversio sähköistä raportointia (ER) varten</span><span class="sxs-lookup"><span data-stu-id="3796c-103">Upgrade your format by adopting of new base version of that format for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi ylläpitää muotokonfiguraatiota sähköiselle raportoinnille (ER). Seuraavassa menettelyssä kerrotaan, miten luodaan muodosta mukautettu versio konfiguroinnin lähteen (CP) tarjoaman muodon perusteella. Siinä käsitellään myös muodon uuden perusversion käyttöönotto.
+<span data-ttu-id="3796c-104">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi ylläpitää muotokonfiguraatiota sähköiselle raportoinnille (ER).</span><span class="sxs-lookup"><span data-stu-id="3796c-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration.</span></span> <span data-ttu-id="3796c-105">Seuraavassa menettelyssä kerrotaan, miten luodaan muodosta mukautettu versio konfiguroinnin lähteen (CP) tarjoaman muodon perusteella.</span><span class="sxs-lookup"><span data-stu-id="3796c-105">This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP).</span></span> <span data-ttu-id="3796c-106">Siinä käsitellään myös muodon uuden perusversion käyttöönotto.</span><span class="sxs-lookup"><span data-stu-id="3796c-106">It also explains how to adopt a new, base version of that format.</span></span>
 
 
 
-Näitä vaiheita varten on suoritettava ensin seuraavien menettelyiden vaiheet: "Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi" ja "Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen". Nämä vaiheet voidaan suorittaa GBSI-yrityksessä.
+<span data-ttu-id="3796c-107">Näitä vaiheita varten on suoritettava ensin seuraavien menettelyiden vaiheet: "Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi" ja "Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen".</span><span class="sxs-lookup"><span data-stu-id="3796c-107">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” and “Use created format to generate electronic documents for payments” procedures.</span></span> <span data-ttu-id="3796c-108">Nämä vaiheet voidaan suorittaa GBSI-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="3796c-108">These steps can be performed in the GBSI company.</span></span>
 
 
-## <a name="select-format-configuration-for-customization"></a>Mukautettavan muotokonfiguraation valinta
-1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
-    * Tässä esimerkissä malliyritys Litware, Inc. (http://www.litware.com) toimii konfiguraation lähteenä, joka tukee tietyn maan muotokonfiguraatioita sähköisille maksuille.    Malliyritys Proseware, Inc. (http://www.proseware.com) toimii kuluttajana muotokonfiguraatiolle, jonka Litware, Inc. antoi. Proseware, Inc. käyttää muotoja tietyillä maan alueilla.  
-2. Valitse Raportointikonfiguraatiot.
-3. Valitse Näytä suodattimet.
-4. Käytä seuraavia suodattimia: Anna suodattimen arvoksi Nimi-kenttään BACS (Iso-Britannia, kuvitteellinen) käyttämällä Alkaa-suodatinoperaattoria.
-    * BACS (Iso-Britannia, kuvitteellinen)  
-    * Valitun BACS-muotomäärityksen (Iso-Britannia, kuvitteellinen ja mukautettu) omistaja on toimittaja Litware, Inc.  
-5. Valitse Näytä suodattimet.
-6. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Proseware Inc. käyttää mukauttamiseen tämän muodon versiota, jonka tila on Valmis.  
+## <a name="select-format-configuration-for-customization"></a><span data-ttu-id="3796c-109">Mukautettavan muotokonfiguraation valinta</span><span class="sxs-lookup"><span data-stu-id="3796c-109">Select format configuration for customization</span></span>
+1. <span data-ttu-id="3796c-110">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="3796c-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="3796c-111">Tässä esimerkissä malliyritys Litware, Inc. (http://www.litware.com) toimii konfiguraation lähteenä, joka tukee tietyn maan muotokonfiguraatioita sähköisille maksuille.</span><span class="sxs-lookup"><span data-stu-id="3796c-111">In this example, sample company Litware, Inc. (http://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country.</span></span>    <span data-ttu-id="3796c-112">Malliyritys Proseware, Inc. (http://www.proseware.com) toimii kuluttajana muotokonfiguraatiolle, jonka Litware, Inc. antoi.</span><span class="sxs-lookup"><span data-stu-id="3796c-112">Sample company Proseware, Inc. (http://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided.</span></span> <span data-ttu-id="3796c-113">Proseware, Inc. käyttää muotoja tietyillä maan alueilla.</span><span class="sxs-lookup"><span data-stu-id="3796c-113">Proseware, Inc. uses formats in certain regions of that country.</span></span>  
+2. <span data-ttu-id="3796c-114">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="3796c-114">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="3796c-115">Valitse Näytä suodattimet.</span><span class="sxs-lookup"><span data-stu-id="3796c-115">Click Show filters.</span></span>
+4. <span data-ttu-id="3796c-116">Käytä seuraavia suodattimia: Anna suodattimen arvoksi Nimi-kenttään BACS (Iso-Britannia, kuvitteellinen) käyttämällä Alkaa-suodatinoperaattoria.</span><span class="sxs-lookup"><span data-stu-id="3796c-116">Apply the following filters: Enter a filter value of "BACS (UK fictitious)" on the "Name" field using the "begins with" filter operator</span></span>
+    * <span data-ttu-id="3796c-117">BACS (Iso-Britannia, kuvitteellinen)</span><span class="sxs-lookup"><span data-stu-id="3796c-117">BACS (UK fictitious)</span></span>  
+    * <span data-ttu-id="3796c-118">Valitun BACS-muotomäärityksen (Iso-Britannia, kuvitteellinen ja mukautettu) omistaja on toimittaja Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="3796c-118">The selected format configuration BACS (UK fictitious) is owned by provider Litware, Inc.</span></span>  
+5. <span data-ttu-id="3796c-119">Valitse Näytä suodattimet.</span><span class="sxs-lookup"><span data-stu-id="3796c-119">Click Show filters.</span></span>
+6. <span data-ttu-id="3796c-120">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="3796c-120">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="3796c-121">Proseware Inc. käyttää mukauttamiseen tämän muodon versiota, jonka tila on Valmis.</span><span class="sxs-lookup"><span data-stu-id="3796c-121">The version of the format with the status of Completed will be used by Proseware, Inc. for customization.</span></span>  
 
-## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a>Luo uusi konfiguraatio sähköisen asiakirjan mukautetulle muodolle
-    * Proseware Inc. on vastaanottanut Litware, Inc:ltä palvelutilauksen mukaisesti version 1.1 BACS-muotokonfiguraatiosta (Iso-Britannia, kuvitteellinen), joka sisältää alustavan muodon sähköisten maksuasiakirjojen luomiseen Proseware Inc. haluaa käyttää konfiguraatiota vakiomuodossaan maassaan, mutta joitain mukautuksia tarvitaan tukemaan aluekohtaisia erityisvaatimuksia. Proseware Inc. haluaa säilyttää mahdollisuuden päivittää mukautetun muodon heti, kun uusi versio (joka sisältää muutoksia uusien maakohtaisten vaatimusten tukeen) on saatavilla Litware, Inc:ltä. Yritys haluaa myös suorittaa päivityksen mahdollisimman edullisesti.  Tätä varten Proseware, Inc:n on luotava määritys käyttämällä Litware, Inc:n BACS-muotokonfiguraatiota (Iso-Britannia, kuvitteellinen) pohjana.  
-1. Sulje sivu.
-2. Valitse Proseware, Inc. ja tee siitä aktiivinen lähde.
-3. Valitse Aseta aktiiviseksi.
-4. Valitse Raportointikonfiguraatiot.
-5. Laajenna puussa solmu Payments (simplified model).
-6. Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious).
-    * Valitse Litware, Inc:n BACS-muotokonfiguraatio (Iso-Britannia, kuvitteellinen). Proseware, Inc. käyttää versiota 1.1 mukautetun version pohjana.  
-7. Avaa valintaikkuna napsauttamalla Luo konfigurointi.
-    * Näin voit luoda uuden määrityksen mukautetulle maksumuodolle.  
-8. Anna Uusi-kentän arvoksi "Derive from Name: BACS (UK fictitious), Litware, Inc."
-    * Valitse Johda-vaihtoehto vahvistaaksesi BACS (Iso-Britannia, kuvitteellinen) -konfiguraation käytön pohjana mukautetulle versiolle.  
-9. Syötä Nimi-kenttään BACS (Iso-Britannia, kuvitteellinen ja mukautettu).
-    * BACS (Iso-Britannia, kuvitteellinen, mukautettu)  
-10. Kirjoita Kuvaus-kenttään BACS - toimittajan maksumuoto (Iso-Britannia, kuvitteellinen ja mukautettu).
-    * BACS - toimittajan maksumuoto (Iso-Britannia, kuvitteellinen ja mukautettu)  
-    * Aktiivinen konfiguraation lähde (Proseware, Inc.) syötetään tähän automaattisesti. Tämä lähde voi ylläpitää tätä konfiguraatiota. Muut lähteet voivat käyttää tätä konfiguraatiota, mutta eivät ylläpitää sitä.  
-11. Valitse Luo konfiguraatio.
+## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a><span data-ttu-id="3796c-122">Luo uusi konfiguraatio sähköisen asiakirjan mukautetulle muodolle</span><span class="sxs-lookup"><span data-stu-id="3796c-122">Create a new configuration for your custom format of electronic document</span></span>
+    * <span data-ttu-id="3796c-123">Proseware Inc. on vastaanottanut Litware, Inc:ltä palvelutilauksen mukaisesti version 1.1 BACS-muotokonfiguraatiosta (Iso-Britannia, kuvitteellinen), joka sisältää alustavan muodon sähköisten maksuasiakirjojen luomiseen</span><span class="sxs-lookup"><span data-stu-id="3796c-123">Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription.</span></span> <span data-ttu-id="3796c-124">Proseware Inc. haluaa käyttää konfiguraatiota vakiomuodossaan maassaan, mutta joitain mukautuksia tarvitaan tukemaan aluekohtaisia erityisvaatimuksia.</span><span class="sxs-lookup"><span data-stu-id="3796c-124">Proseware, Inc. wants to start using this as a standard for their country but some customization is required to support specific regional requirements.</span></span> <span data-ttu-id="3796c-125">Proseware Inc. haluaa säilyttää mahdollisuuden päivittää mukautetun muodon heti, kun uusi versio (joka sisältää muutoksia uusien maakohtaisten vaatimusten tukeen) on saatavilla Litware, Inc:ltä. Yritys haluaa myös suorittaa päivityksen mahdollisimman edullisesti.</span><span class="sxs-lookup"><span data-stu-id="3796c-125">Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.</span></span>  <span data-ttu-id="3796c-126">Tätä varten Proseware, Inc:n on luotava määritys käyttämällä Litware, Inc:n BACS-muotokonfiguraatiota (Iso-Britannia, kuvitteellinen) pohjana.</span><span class="sxs-lookup"><span data-stu-id="3796c-126">To do this, Proseware, Inc. needs to create a configuration using the Litware, Inc. configuration BACS (UK fictitious) as a base.</span></span>  
+1. <span data-ttu-id="3796c-127">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="3796c-127">Close the page.</span></span>
+2. <span data-ttu-id="3796c-128">Valitse Proseware, Inc. ja tee siitä aktiivinen lähde.</span><span class="sxs-lookup"><span data-stu-id="3796c-128">Select Proseware, Inc. to make it an active provider.</span></span>
+3. <span data-ttu-id="3796c-129">Valitse Aseta aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="3796c-129">Click Set active.</span></span>
+4. <span data-ttu-id="3796c-130">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="3796c-130">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="3796c-131">Laajenna puussa solmu Payments (simplified model).</span><span class="sxs-lookup"><span data-stu-id="3796c-131">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="3796c-132">Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious).</span><span class="sxs-lookup"><span data-stu-id="3796c-132">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+    * <span data-ttu-id="3796c-133">Valitse Litware, Inc:n BACS-muotokonfiguraatio (Iso-Britannia, kuvitteellinen). Proseware, Inc. käyttää versiota 1.1 mukautetun version pohjana.</span><span class="sxs-lookup"><span data-stu-id="3796c-133">Select the BACS (UK fictitious) configuration from Litware, Inc.     Proseware, Inc. will use version 1.1 as a base for the custom version.</span></span>  
+7. <span data-ttu-id="3796c-134">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="3796c-134">Click Create configuration to open the drop dialog.</span></span>
+    * <span data-ttu-id="3796c-135">Näin voit luoda uuden määrityksen mukautetulle maksumuodolle.</span><span class="sxs-lookup"><span data-stu-id="3796c-135">This lets you create a new configuration for a custom payment format.</span></span>  
+8. <span data-ttu-id="3796c-136">Anna Uusi-kentän arvoksi "Derive from Name: BACS (UK fictitious), Litware, Inc."</span><span class="sxs-lookup"><span data-stu-id="3796c-136">In the New field, enter 'Derive from Name: BACS (UK fictitious), Litware, Inc.'.</span></span>
+    * <span data-ttu-id="3796c-137">Valitse Johda-vaihtoehto vahvistaaksesi BACS (Iso-Britannia, kuvitteellinen) -konfiguraation käytön pohjana mukautetulle versiolle.</span><span class="sxs-lookup"><span data-stu-id="3796c-137">Select the Derive option to confirm the usage of BACS (UK fictitious) as the base for creating the custom version.</span></span>  
+9. <span data-ttu-id="3796c-138">Syötä Nimi-kenttään BACS (Iso-Britannia, kuvitteellinen ja mukautettu).</span><span class="sxs-lookup"><span data-stu-id="3796c-138">In the Name field, type 'BACS (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="3796c-139">BACS (Iso-Britannia, kuvitteellinen, mukautettu)</span><span class="sxs-lookup"><span data-stu-id="3796c-139">BACS (UK fictitious custom)</span></span>  
+10. <span data-ttu-id="3796c-140">Kirjoita Kuvaus-kenttään BACS - toimittajan maksumuoto (Iso-Britannia, kuvitteellinen ja mukautettu).</span><span class="sxs-lookup"><span data-stu-id="3796c-140">In the Description field, type 'BACS vendor payment (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="3796c-141">BACS - toimittajan maksumuoto (Iso-Britannia, kuvitteellinen ja mukautettu)</span><span class="sxs-lookup"><span data-stu-id="3796c-141">BACS vendor payment (UK fictitious custom)</span></span>  
+    * <span data-ttu-id="3796c-142">Aktiivinen konfiguraation lähde (Proseware, Inc.) syötetään tähän automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="3796c-142">The active configuration provider (Proseware, Inc.) is automatically entered here.</span></span> <span data-ttu-id="3796c-143">Tämä lähde voi ylläpitää tätä konfiguraatiota.</span><span class="sxs-lookup"><span data-stu-id="3796c-143">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="3796c-144">Muut lähteet voivat käyttää tätä konfiguraatiota, mutta eivät ylläpitää sitä.</span><span class="sxs-lookup"><span data-stu-id="3796c-144">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
+11. <span data-ttu-id="3796c-145">Valitse Luo konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="3796c-145">Click Create configuration.</span></span>
 
-## <a name="customize-your-format-for-the-electronic-document"></a>Sähköisen asiakirjan muodon mukauttaminen
-1. Valitse Suunnittelutoiminto.
-2. Valitse Laajenna tai tiivistä.
-3. Valitse Laajenna tai tiivistä.
-4. Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki.
-5. Avaa valintaikkuna valitsemalla Lisää.
-6. Valitse puussa solmu XML\Element.
-7. Syötä Nimi-kenttään IBAN.
-    * IBAN-tilinumero  
-8. Valitse OK.
-9. Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki\IBAN.
-10. Avaa valintaikkuna valitsemalla Lisää.
-11. Valitse puussa solmu Text\String.
-12. Valitse OK.
-13. Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Nimi\Merkkijono.
-14. Anna Enimmäispituus-kentän arvoksi 60.
-15. Valitse Yhdistämismääritys-välilehti.
-16. Laajenna puussa solmu model.
-17. Laajenna puussa solmu model\Payments.
-18. Laajenna puussa solmu model\Payments\Creditor.
-19. Laajenna puussa solmu model\Payments\Creditor\Account.
-20. Valitse puussa malli\Maksut\Laskuttaja\Tili\IBAN.
-21. Valitse puussa Xml\Sanoma\Maksut\Nimike =  model.Payments\Vendor\Bank\IBAN\String.
-22. Valitse Sido.
-23. Valitse Tallenna.
+## <a name="customize-your-format-for-the-electronic-document"></a><span data-ttu-id="3796c-146">Sähköisen asiakirjan muodon mukauttaminen</span><span class="sxs-lookup"><span data-stu-id="3796c-146">Customize your format for the electronic document</span></span>
+1. <span data-ttu-id="3796c-147">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="3796c-147">Click Designer.</span></span>
+2. <span data-ttu-id="3796c-148">Valitse Laajenna tai tiivistä.</span><span class="sxs-lookup"><span data-stu-id="3796c-148">Click Expand/collapse.</span></span>
+3. <span data-ttu-id="3796c-149">Valitse Laajenna tai tiivistä.</span><span class="sxs-lookup"><span data-stu-id="3796c-149">Click Expand/collapse.</span></span>
+4. <span data-ttu-id="3796c-150">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki.</span><span class="sxs-lookup"><span data-stu-id="3796c-150">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
+5. <span data-ttu-id="3796c-151">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="3796c-151">Click Add to open the drop dialog.</span></span>
+6. <span data-ttu-id="3796c-152">Valitse puussa solmu XML\Element.</span><span class="sxs-lookup"><span data-stu-id="3796c-152">In the tree, select 'XML\Element'.</span></span>
+7. <span data-ttu-id="3796c-153">Syötä Nimi-kenttään IBAN.</span><span class="sxs-lookup"><span data-stu-id="3796c-153">In the Name field, type 'IBAN'.</span></span>
+    * <span data-ttu-id="3796c-154">IBAN-tilinumero</span><span class="sxs-lookup"><span data-stu-id="3796c-154">IBAN</span></span>  
+8. <span data-ttu-id="3796c-155">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3796c-155">Click OK.</span></span>
+9. <span data-ttu-id="3796c-156">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki\IBAN.</span><span class="sxs-lookup"><span data-stu-id="3796c-156">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\IBAN'.</span></span>
+10. <span data-ttu-id="3796c-157">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="3796c-157">Click Add to open the drop dialog.</span></span>
+11. <span data-ttu-id="3796c-158">Valitse puussa solmu Text\String.</span><span class="sxs-lookup"><span data-stu-id="3796c-158">In the tree, select 'Text\String'.</span></span>
+12. <span data-ttu-id="3796c-159">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3796c-159">Click OK.</span></span>
+13. <span data-ttu-id="3796c-160">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Nimi\Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="3796c-160">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
+14. <span data-ttu-id="3796c-161">Anna Enimmäispituus-kentän arvoksi 60.</span><span class="sxs-lookup"><span data-stu-id="3796c-161">In the Maximum length field, enter '60'.</span></span>
+15. <span data-ttu-id="3796c-162">Valitse Yhdistämismääritys-välilehti.</span><span class="sxs-lookup"><span data-stu-id="3796c-162">Click the Mapping tab.</span></span>
+16. <span data-ttu-id="3796c-163">Laajenna puussa solmu model.</span><span class="sxs-lookup"><span data-stu-id="3796c-163">In the tree, expand 'model'.</span></span>
+17. <span data-ttu-id="3796c-164">Laajenna puussa solmu model\Payments.</span><span class="sxs-lookup"><span data-stu-id="3796c-164">In the tree, expand 'model\Payments'.</span></span>
+18. <span data-ttu-id="3796c-165">Laajenna puussa solmu model\Payments\Creditor.</span><span class="sxs-lookup"><span data-stu-id="3796c-165">In the tree, expand 'model\Payments\Creditor'.</span></span>
+19. <span data-ttu-id="3796c-166">Laajenna puussa solmu model\Payments\Creditor\Account.</span><span class="sxs-lookup"><span data-stu-id="3796c-166">In the tree, expand 'model\Payments\Creditor\Account'.</span></span>
+20. <span data-ttu-id="3796c-167">Valitse puussa malli\Maksut\Laskuttaja\Tili\IBAN.</span><span class="sxs-lookup"><span data-stu-id="3796c-167">In the tree, select 'model\Payments\Creditor\Account\IBAN'.</span></span>
+21. <span data-ttu-id="3796c-168">Valitse puussa Xml\Sanoma\Maksut\Nimike =  model.Payments\Vendor\Bank\IBAN\String.</span><span class="sxs-lookup"><span data-stu-id="3796c-168">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\IBAN\String'.</span></span>
+22. <span data-ttu-id="3796c-169">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="3796c-169">Click Bind.</span></span>
+23. <span data-ttu-id="3796c-170">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="3796c-170">Click Save.</span></span>
 
-## <a name="validate-the-customized-format"></a>Mukautetun muodon vahvistaminen
-1. Valitse Vahvista.
-    * Vahvista mukautetun muodon asettelu ja tietojen yhdistämisen muutokset, että kaikki sidokset ovat kunnossa.  
-2. Sulje sivu.
+## <a name="validate-the-customized-format"></a><span data-ttu-id="3796c-171">Mukautetun muodon vahvistaminen</span><span class="sxs-lookup"><span data-stu-id="3796c-171">Validate the customized format</span></span>
+1. <span data-ttu-id="3796c-172">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="3796c-172">Click Validate.</span></span>
+    * <span data-ttu-id="3796c-173">Vahvista mukautetun muodon asettelu ja tietojen yhdistämisen muutokset, että kaikki sidokset ovat kunnossa.</span><span class="sxs-lookup"><span data-stu-id="3796c-173">Validate the customized format layout and data mapping changes to make sure that all bindings are okay.</span></span>  
+2. <span data-ttu-id="3796c-174">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="3796c-174">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a>Mukautetun muotomäärityksen nykyisen version tilan muuttaminen
-    * Muuta suunnitellun muotomäärityksen tila Luonnos-tilasta Valmis-tilaan. Tällöin se on käytettävissä maksuasiakirjojen luomiseen.  
-1. Voit muuttaa tilaa valitsemalla Muuta.
-    * Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.  
-2. Valitse Valmis.
-3. Kirjoita arvo Kuvaus-kenttään.
-4. Valitse OK.
-5. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.1.1. Tämä tarkoittaa, että kyseessä on mukautetun BACS-muodon (Iso-Britannia, kuvitteellinen ja mukautettu) versio 1, joka perustuu BACS-muodon versioon 1, joka perustuu Maksut-tietomallin versioon 1 (yksinkertaistettu malli).  
+## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a><span data-ttu-id="3796c-175">Mukautetun muotomäärityksen nykyisen version tilan muuttaminen</span><span class="sxs-lookup"><span data-stu-id="3796c-175">Change the status of the current version of the custom format configuration</span></span>
+    * <span data-ttu-id="3796c-176">Muuta suunnitellun muotomäärityksen tila Luonnos-tilasta Valmis-tilaan. Tällöin se on käytettävissä maksuasiakirjojen luomiseen.</span><span class="sxs-lookup"><span data-stu-id="3796c-176">Change the status of the designed format configuration from Draft to Completed to make it available for payment document generation.</span></span>  
+1. <span data-ttu-id="3796c-177">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="3796c-177">Click Change status.</span></span>
+    * <span data-ttu-id="3796c-178">Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.</span><span class="sxs-lookup"><span data-stu-id="3796c-178">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="3796c-179">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="3796c-179">Click Complete.</span></span>
+3. <span data-ttu-id="3796c-180">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3796c-180">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="3796c-181">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3796c-181">Click OK.</span></span>
+5. <span data-ttu-id="3796c-182">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="3796c-182">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="3796c-183">Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.1.1.</span><span class="sxs-lookup"><span data-stu-id="3796c-183">Note that the created configuration is saved as completed version 1.1.1.</span></span> <span data-ttu-id="3796c-184">Tämä tarkoittaa, että kyseessä on mukautetun BACS-muodon (Iso-Britannia, kuvitteellinen ja mukautettu) versio 1, joka perustuu BACS-muodon versioon 1, joka perustuu Maksut-tietomallin versioon 1 (yksinkertaistettu malli).</span><span class="sxs-lookup"><span data-stu-id="3796c-184">This means it is version 1 of the custom BACS (UK fictitious custom) format, which is based on version 1 of the BACS (UK fictitious) format, which is based on version 1 of the Payments (simplified model) data model.</span></span>  
 
-## <a name="test-the-customized-format-to-generate-payment-files"></a>Mukautetun muodon maksutiedostojen luonnin testaaminen
-    * Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa Dynamics 365 for Finance and Operations, Enterprise edition -istunnossa. Valitse BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa. Varmista, että luotu maksutiedosto sisältää on viimeisimmän XML-solmun, joka vastaa IBAN-koodia aluekohtaisten vaatimusten mukaisesti.  
+## <a name="test-the-customized-format-to-generate-payment-files"></a><span data-ttu-id="3796c-185">Mukautetun muodon maksutiedostojen luonnin testaaminen</span><span class="sxs-lookup"><span data-stu-id="3796c-185">Test the customized format to generate payment files</span></span>
+    * <span data-ttu-id="3796c-186">Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa Dynamics 365 for Finance and Operations, Enterprise edition -istunnossa.</span><span class="sxs-lookup"><span data-stu-id="3796c-186">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in a parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="3796c-187">Valitse BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa.</span><span class="sxs-lookup"><span data-stu-id="3796c-187">Select the BACS (UK fictitious custom) format in electronic payment method parameters.</span></span> <span data-ttu-id="3796c-188">Varmista, että luotu maksutiedosto sisältää on viimeisimmän XML-solmun, joka vastaa IBAN-koodia aluekohtaisten vaatimusten mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="3796c-188">Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.</span></span>  
 
-## <a name="update-the-existing-country-specific-configuration"></a>Olemassaolevien maakohtaisten konfiguraatioiden päivittäminen
-    * Litware, Inc. haluaa päivittää BACS-konfiguraation (Iso-Britannia, kuvitteellinen) ja ottaa käyttöön uudet maavaatimukset sähköisen asiakirjan muodon hallinnassa. Tämä sisältyy tulevaan konfiguraation versiopäivitykseen, joka tarjotaan palvelun tilaajille, joihin Proseware, Inc. kuuluu.  
-    * Todellisissa palveluntoteutusprosesseissa Proseware Inc. voi tuoda jokaisen uuden version BACS-muodosta (Iso-Britannia, kuvitteellinen) Litware, Inc:n LCS-konfiguraatiosäilöstä. Näissä toimintaohjeissa tätä simuloidaan päivittämällä BACS-muoto (Iso-Britannia, kuvitteellinen) palveluntarjoajan puolesta.  
-1. Sulje sivu.
-2. Valitse Litware, inc. -tarjoaja.
-3. Valitse Aseta aktiiviseksi.
-4. Valitse Raportointikonfiguraatiot.
-5. Laajenna puussa solmu Payments (simplified model).
-6. Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious).
-    * Litware, Inc:n omistaman luonnosversion lähde-BACS (Iso-Britannia, kuvitteellinen) valitaan tuomaan uusien maakohtaisten vaatimusten tuki.  
+## <a name="update-the-existing-country-specific-configuration"></a><span data-ttu-id="3796c-189">Olemassaolevien maakohtaisten konfiguraatioiden päivittäminen</span><span class="sxs-lookup"><span data-stu-id="3796c-189">Update the existing country-specific configuration</span></span>
+    * <span data-ttu-id="3796c-190">Litware, Inc. haluaa päivittää BACS-konfiguraation (Iso-Britannia, kuvitteellinen) ja ottaa käyttöön uudet maavaatimukset sähköisen asiakirjan muodon hallinnassa.</span><span class="sxs-lookup"><span data-stu-id="3796c-190">Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country requirements for managing the format of the electronic document.</span></span> <span data-ttu-id="3796c-191">Tämä sisältyy tulevaan konfiguraation versiopäivitykseen, joka tarjotaan palvelun tilaajille, joihin Proseware, Inc. kuuluu.</span><span class="sxs-lookup"><span data-stu-id="3796c-191">Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.</span></span>  
+    * <span data-ttu-id="3796c-192">Todellisissa palveluntoteutusprosesseissa Proseware Inc. voi tuoda jokaisen uuden version BACS-muodosta (Iso-Britannia, kuvitteellinen) Litware, Inc:n LCS-konfiguraatiosäilöstä.</span><span class="sxs-lookup"><span data-stu-id="3796c-192">In real service provision related processes, each new version of BACS (UK fictitious) can be imported by Proseware, Inc. from Litware, Inc. configurations’ LCS repository.</span></span> <span data-ttu-id="3796c-193">Näissä toimintaohjeissa tätä simuloidaan päivittämällä BACS-muoto (Iso-Britannia, kuvitteellinen) palveluntarjoajan puolesta.</span><span class="sxs-lookup"><span data-stu-id="3796c-193">In this procedure we will simulate this by updating BACS (UK fictitious) on behalf of a service provider.</span></span>  
+1. <span data-ttu-id="3796c-194">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="3796c-194">Close the page.</span></span>
+2. <span data-ttu-id="3796c-195">Valitse Litware, inc.</span><span class="sxs-lookup"><span data-stu-id="3796c-195">Select Litware, inc.</span></span> <span data-ttu-id="3796c-196">-tarjoaja.</span><span class="sxs-lookup"><span data-stu-id="3796c-196">provider.</span></span>
+3. <span data-ttu-id="3796c-197">Valitse Aseta aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="3796c-197">Click Set active.</span></span>
+4. <span data-ttu-id="3796c-198">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="3796c-198">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="3796c-199">Laajenna puussa solmu Payments (simplified model).</span><span class="sxs-lookup"><span data-stu-id="3796c-199">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="3796c-200">Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious).</span><span class="sxs-lookup"><span data-stu-id="3796c-200">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+    * <span data-ttu-id="3796c-201">Litware, Inc:n omistaman luonnosversion lähde-BACS (Iso-Britannia, kuvitteellinen) valitaan tuomaan uusien maakohtaisten vaatimusten tuki.</span><span class="sxs-lookup"><span data-stu-id="3796c-201">The draft version owned by Litware, Inc. provider BACS (UK fictitious) is selected to bring in changes to support new country-specific requirements.</span></span>  
 
-## <a name="localize-the-base-format-of-the-electronic-document"></a>Sähköisen asiakirjan perusmuodon lokalisoiminen
-    * Oletetaan, että Litware, Inc:n on tuettava uusia maakohtaisia vaatimuksia: - Arvo laskuttajan SWIFT-koodille jokaisessa maksutapahtumassa.  - 100 merkin raja toimittajan nimelle luontitiedostossa.  
-    * Uudet maakohtaiset vaatimukset  
-    * Valitse halutun konfiguraation luonnosversio tuodaksesi vaaditut muutokset.  
-1. Valitse Suunnittelutoiminto.
-2. Valitse Laajenna tai tiivistä.
-3. Valitse Laajenna tai tiivistä.
-4. Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki.
-5. Avaa valintaikkuna valitsemalla Lisää.
-6. Valitse puussa solmu XML\Element.
-7. Syötä Nimi-kenttään SWIFT.
-    * SWIFT-koodi  
-8. Valitse OK.
-9. Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki\SWIFT.
-10. Avaa valintaikkuna valitsemalla Lisää.
-11. Valitse puussa solmu Text\String.
-12. Valitse OK.
-13. Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Nimi\Merkkijono.
-14. Anna Enimmäispituus-kentän arvoksi 100.
-15. Valitse Yhdistämismääritys-välilehti.
-16. Laajenna puussa solmu model.
-17. Laajenna puussa solmu model\Payments.
-18. Laajenna puussa solmu model\Payments\Creditor.
-19. Laajenna puussa solmu expand 'model\Payments\Creditor\Agent.
-20. Valitse puussa malli\Maksut\Laskuttaja\Edustaja\SWIFT.
-21. Valitse puussa Xml\Sanoma\Maksut\Nimike =  model.Payments\Vendor\Bank\SWIFT\String.
-22. Valitse Sido.
-23. Valitse Tallenna.
+## <a name="localize-the-base-format-of-the-electronic-document"></a><span data-ttu-id="3796c-202">Sähköisen asiakirjan perusmuodon lokalisoiminen</span><span class="sxs-lookup"><span data-stu-id="3796c-202">Localize the base format of the electronic document</span></span>
+    * <span data-ttu-id="3796c-203">Oletetaan, että Litware, Inc:n on tuettava uusia maakohtaisia vaatimuksia: - Arvo laskuttajan SWIFT-koodille jokaisessa maksutapahtumassa.</span><span class="sxs-lookup"><span data-stu-id="3796c-203">Assume that there are new country-specific requirements to be supported by Litware, Inc.:  - A value for the creditor’s bank SWIFT code in each payment transaction.</span></span>  <span data-ttu-id="3796c-204">- 100 merkin raja toimittajan nimelle luontitiedostossa.</span><span class="sxs-lookup"><span data-stu-id="3796c-204">- A limit of 100 characters for the length of text for the vendor’s name in a generating file.</span></span>  
+    * <span data-ttu-id="3796c-205">Uudet maakohtaiset vaatimukset</span><span class="sxs-lookup"><span data-stu-id="3796c-205">New country-specific requirements</span></span>  
+    * <span data-ttu-id="3796c-206">Valitse halutun konfiguraation luonnosversio tuodaksesi vaaditut muutokset.</span><span class="sxs-lookup"><span data-stu-id="3796c-206">Select the draft version of the desired configuration to introduce required changes.</span></span>  
+1. <span data-ttu-id="3796c-207">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="3796c-207">Click Designer.</span></span>
+2. <span data-ttu-id="3796c-208">Valitse Laajenna tai tiivistä.</span><span class="sxs-lookup"><span data-stu-id="3796c-208">Click Expand/collapse.</span></span>
+3. <span data-ttu-id="3796c-209">Valitse Laajenna tai tiivistä.</span><span class="sxs-lookup"><span data-stu-id="3796c-209">Click Expand/collapse.</span></span>
+4. <span data-ttu-id="3796c-210">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki.</span><span class="sxs-lookup"><span data-stu-id="3796c-210">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
+5. <span data-ttu-id="3796c-211">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="3796c-211">Click Add to open the drop dialog.</span></span>
+6. <span data-ttu-id="3796c-212">Valitse puussa solmu XML\Element.</span><span class="sxs-lookup"><span data-stu-id="3796c-212">In the tree, select 'XML\Element'.</span></span>
+7. <span data-ttu-id="3796c-213">Syötä Nimi-kenttään SWIFT.</span><span class="sxs-lookup"><span data-stu-id="3796c-213">In the Name field, type 'SWIFT'.</span></span>
+    * <span data-ttu-id="3796c-214">SWIFT-koodi</span><span class="sxs-lookup"><span data-stu-id="3796c-214">SWIFT</span></span>  
+8. <span data-ttu-id="3796c-215">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3796c-215">Click OK.</span></span>
+9. <span data-ttu-id="3796c-216">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki\SWIFT.</span><span class="sxs-lookup"><span data-stu-id="3796c-216">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\SWIFT'.</span></span>
+10. <span data-ttu-id="3796c-217">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="3796c-217">Click Add to open the drop dialog.</span></span>
+11. <span data-ttu-id="3796c-218">Valitse puussa solmu Text\String.</span><span class="sxs-lookup"><span data-stu-id="3796c-218">In the tree, select 'Text\String'.</span></span>
+12. <span data-ttu-id="3796c-219">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3796c-219">Click OK.</span></span>
+13. <span data-ttu-id="3796c-220">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Nimi\Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="3796c-220">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
+14. <span data-ttu-id="3796c-221">Anna Enimmäispituus-kentän arvoksi 100.</span><span class="sxs-lookup"><span data-stu-id="3796c-221">In the Maximum length field, enter '100'.</span></span>
+15. <span data-ttu-id="3796c-222">Valitse Yhdistämismääritys-välilehti.</span><span class="sxs-lookup"><span data-stu-id="3796c-222">Click the Mapping tab.</span></span>
+16. <span data-ttu-id="3796c-223">Laajenna puussa solmu model.</span><span class="sxs-lookup"><span data-stu-id="3796c-223">In the tree, expand 'model'.</span></span>
+17. <span data-ttu-id="3796c-224">Laajenna puussa solmu model\Payments.</span><span class="sxs-lookup"><span data-stu-id="3796c-224">In the tree, expand 'model\Payments'.</span></span>
+18. <span data-ttu-id="3796c-225">Laajenna puussa solmu model\Payments\Creditor.</span><span class="sxs-lookup"><span data-stu-id="3796c-225">In the tree, expand 'model\Payments\Creditor'.</span></span>
+19. <span data-ttu-id="3796c-226">Laajenna puussa solmu expand 'model\Payments\Creditor\Agent.</span><span class="sxs-lookup"><span data-stu-id="3796c-226">In the tree, expand 'model\Payments\Creditor\Agent'.</span></span>
+20. <span data-ttu-id="3796c-227">Valitse puussa malli\Maksut\Laskuttaja\Edustaja\SWIFT.</span><span class="sxs-lookup"><span data-stu-id="3796c-227">In the tree, select 'model\Payments\Creditor\Agent\SWIFT'.</span></span>
+21. <span data-ttu-id="3796c-228">Valitse puussa Xml\Sanoma\Maksut\Nimike =  model.Payments\Vendor\Bank\SWIFT\String.</span><span class="sxs-lookup"><span data-stu-id="3796c-228">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\SWIFT\String'.</span></span>
+22. <span data-ttu-id="3796c-229">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="3796c-229">Click Bind.</span></span>
+23. <span data-ttu-id="3796c-230">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="3796c-230">Click Save.</span></span>
 
-## <a name="validate-the-localized-format"></a>Lokalisoidun muodon tarkistaminen
-1. Valitse Vahvista.
-2. Sulje sivu.
+## <a name="validate-the-localized-format"></a><span data-ttu-id="3796c-231">Lokalisoidun muodon tarkistaminen</span><span class="sxs-lookup"><span data-stu-id="3796c-231">Validate the localized format</span></span>
+1. <span data-ttu-id="3796c-232">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="3796c-232">Click Validate.</span></span>
+2. <span data-ttu-id="3796c-233">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="3796c-233">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a>Muotokonfiguraation nykyisen perusversion tilan muuttaminen
-    * Muutta päivitetyn muotokonfiguraation perusversion tila luonnoksesta valmiiksi, jotta se on käytettävissä maksuasiakirjojen luomiseen ja siitä johdettujen muotokonfiguraatioiden päivityksiin.  
-1. Voit muuttaa tilaa valitsemalla Muuta.
-    * Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.  
-2. Valitse Valmis.
-3. Kirjoita arvo Kuvaus-kenttään.
-4. Valitse OK.
-5. Etsi haluamasi tietue luettelosta ja valitse se.
+## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a><span data-ttu-id="3796c-234">Muotokonfiguraation nykyisen perusversion tilan muuttaminen</span><span class="sxs-lookup"><span data-stu-id="3796c-234">Change the status of the current version of the base format configuration</span></span>
+    * <span data-ttu-id="3796c-235">Muutta päivitetyn muotokonfiguraation perusversion tila luonnoksesta valmiiksi, jotta se on käytettävissä maksuasiakirjojen luomiseen ja siitä johdettujen muotokonfiguraatioiden päivityksiin.</span><span class="sxs-lookup"><span data-stu-id="3796c-235">Change the status of the updated base format configuration from Draft to Completed to make it available for generation of payment documents and updates of format configurations derived from it.</span></span>  
+1. <span data-ttu-id="3796c-236">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="3796c-236">Click Change status.</span></span>
+    * <span data-ttu-id="3796c-237">Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.</span><span class="sxs-lookup"><span data-stu-id="3796c-237">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="3796c-238">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="3796c-238">Click Complete.</span></span>
+3. <span data-ttu-id="3796c-239">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3796c-239">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="3796c-240">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3796c-240">Click OK.</span></span>
+5. <span data-ttu-id="3796c-241">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="3796c-241">In the list, find and select the desired record.</span></span>
 
-## <a name="change-the-base-version-for-the-custom-format-configuration"></a>Mukautetun muotokonfiguraation perusversion muuttaminen
-    * Proseware, Inc. saa tiedon, että saatavilla on BACS-konfiguraation (Iso-Britannia, kuvitteellinen) versiopäivitys 1.2, jolla on mahdollista luoda sähköisiä maksuasiakirjoja vasta julkaistujen maakohtaisten vaatimusten mukaisesti. Proseware, Inc. haluaa käyttää uutta versiota maan standardien noudattamiseen.  Tämän vuoksi Proseware, Inc:n on muutettava peruskonfiguraation versiota mukautetulle BACS-konfiguraatiolleen (Iso-Britannia, kuvitteellinen ja mukautettu). Käytä uutta versiota 1.2 edellisen BACS-muodon (Iso-Britannia, kuvitteellinen) 1.1-version sijaan.  
-1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
-2. Valitse Proseware, Inc -lähde ja merkitse aktiiviseksi.
-3. Valitse Aseta aktiiviseksi.
-4. Valitse Raportointikonfiguraatiot.
-5. Laajenna puussa solmu Payments (simplified model).
-6. Laajenna puussa solmu Payments (simplified model)\BACS (UK fictitious).
-7. Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom).
-    * Valitse BACS-muodon (Iso-Britannia, kuvitteellinen ja mukautettu) konfiguraatio, jonka omistaa Proseware, Inc.  
-    * Käytä valitun konfiguraation luonnosversiota tuodaksesi vaaditut muutokset.  
-8. Valitse Pohjusta.
-    * Valitse peruskonfiguraation uusi versio 1.2 käytettäväksi perusteena konfiguraation päivityksille.  
-9. Valitse OK.
-    * Huomaa, että osaa muodon muutosten ristiriidoista, jotka havaitaan mukautetun version ja uuden perusversion yhdistämisen yhteydessä, ei voida yhdistää automaattisesti.  
+## <a name="change-the-base-version-for-the-custom-format-configuration"></a><span data-ttu-id="3796c-242">Mukautetun muotokonfiguraation perusversion muuttaminen</span><span class="sxs-lookup"><span data-stu-id="3796c-242">Change the base version for the custom format configuration</span></span>
+    * <span data-ttu-id="3796c-243">Proseware, Inc. saa tiedon, että saatavilla on BACS-konfiguraation (Iso-Britannia, kuvitteellinen) versiopäivitys 1.2, jolla on mahdollista luoda sähköisiä maksuasiakirjoja vasta julkaistujen maakohtaisten vaatimusten mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="3796c-243">Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country-specific requirements.</span></span> <span data-ttu-id="3796c-244">Proseware, Inc. haluaa käyttää uutta versiota maan standardien noudattamiseen.</span><span class="sxs-lookup"><span data-stu-id="3796c-244">Proseware, Inc. wants to start using it as a standard for the country.</span></span>  <span data-ttu-id="3796c-245">Tämän vuoksi Proseware, Inc:n on muutettava peruskonfiguraation versiota mukautetulle BACS-konfiguraatiolleen (Iso-Britannia, kuvitteellinen ja mukautettu).</span><span class="sxs-lookup"><span data-stu-id="3796c-245">To do this, Proseware, Inc. needs to change the base configuration version for the custom configuration BACS (UK fictitious custom).</span></span> <span data-ttu-id="3796c-246">Käytä uutta versiota 1.2 edellisen BACS-muodon (Iso-Britannia, kuvitteellinen) 1.1-version sijaan.</span><span class="sxs-lookup"><span data-stu-id="3796c-246">Instead of version 1.1 of BACS (UK fictitious) use new version 1.2.</span></span>  
+1. <span data-ttu-id="3796c-247">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="3796c-247">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="3796c-248">Valitse Proseware, Inc -lähde ja merkitse aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="3796c-248">Select the Proseware, Inc. provider to mark it as active.</span></span>
+3. <span data-ttu-id="3796c-249">Valitse Aseta aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="3796c-249">Click Set active.</span></span>
+4. <span data-ttu-id="3796c-250">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="3796c-250">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="3796c-251">Laajenna puussa solmu Payments (simplified model).</span><span class="sxs-lookup"><span data-stu-id="3796c-251">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="3796c-252">Laajenna puussa solmu Payments (simplified model)\BACS (UK fictitious).</span><span class="sxs-lookup"><span data-stu-id="3796c-252">In the tree, expand 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+7. <span data-ttu-id="3796c-253">Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom).</span><span class="sxs-lookup"><span data-stu-id="3796c-253">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="3796c-254">Valitse BACS-muodon (Iso-Britannia, kuvitteellinen ja mukautettu) konfiguraatio, jonka omistaa Proseware, Inc.</span><span class="sxs-lookup"><span data-stu-id="3796c-254">Select the BACS (UK fictitious custom) configuration, which is owned by Proseware, Inc.</span></span>  
+    * <span data-ttu-id="3796c-255">Käytä valitun konfiguraation luonnosversiota tuodaksesi vaaditut muutokset.</span><span class="sxs-lookup"><span data-stu-id="3796c-255">Use the draft version of the selected configuration to introduce required changes.</span></span>  
+8. <span data-ttu-id="3796c-256">Valitse Pohjusta.</span><span class="sxs-lookup"><span data-stu-id="3796c-256">Click Rebase.</span></span>
+    * <span data-ttu-id="3796c-257">Valitse peruskonfiguraation uusi versio 1.2 käytettäväksi perusteena konfiguraation päivityksille.</span><span class="sxs-lookup"><span data-stu-id="3796c-257">Select the new version 1.2 of the base configuration to be applied as a new base for updating the configuration.</span></span>  
+9. <span data-ttu-id="3796c-258">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3796c-258">Click OK.</span></span>
+    * <span data-ttu-id="3796c-259">Huomaa, että osaa muodon muutosten ristiriidoista, jotka havaitaan mukautetun version ja uuden perusversion yhdistämisen yhteydessä, ei voida yhdistää automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="3796c-259">Note that some conflicts have been discovered between merging the custom version and a new base version representing some format changes that can’t be merged automatically.</span></span>  
 
-## <a name="resolve-rebase-conflicts"></a>Pohjustusriitojen ratkaiseminen
-1. Valitse Suunnittelutoiminto.
-    * Huomaa, että muutoksia toimittajan nimen pituusrajoitukseen ei voitu selvittää automaattisesti. Tämä esitetään sen vuoksi ristiriitojen luettelossa. Jokaiselle päivitystyypin ristiriidalle on seuraavat ratkaisuvaihtoehdot: - Käytä aiempaa perusarvoa (painike ruudukon yläpuolella) edellisen perusversion arvon mukaisesti (tässä tapauksessa 0).  - Käytä perusarvoa (painike ruudukon yläpuolella) uuden perusversion arvon mukaisesti (tässä tapauksessa 100).  - Säilytä oma (mukautettu) arvo (tässä tapauksessa 60).  Valitse Kohdista perusarvo -painiketta kohdistaaksesi maakohtaisesti sallitut 100 merkkiä toimittajan nimille.  
-    * Huomaa, että Proseware, Inc. ja Litware, Inc. käyttävät mukautettuja ja paikallisia versioita tästä muodosta käyttäen IBAN- ja SWIFT-koodeja liittyvissä komponenteissa, jotka yhdistetään automaattisesti hallitussa muodossa.  
-2. Valitse Käytä aiempaa perusarvoa.
-    * Valitse Kohdista perusarvo -painiketta kohdistaaksesi maakohtaisesti sallitut 100 merkkiä toimittajan nimille.  
-3. Valitse Tallenna.
-    * Muodon tallentaminen poistaa ratkaistut ristiriidat luettelosta.  
-4. Sulje sivu.
+## <a name="resolve-rebase-conflicts"></a><span data-ttu-id="3796c-260">Pohjustusriitojen ratkaiseminen</span><span class="sxs-lookup"><span data-stu-id="3796c-260">Resolve rebase conflicts</span></span>
+1. <span data-ttu-id="3796c-261">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="3796c-261">Click Designer.</span></span>
+    * <span data-ttu-id="3796c-262">Huomaa, että muutoksia toimittajan nimen pituusrajoitukseen ei voitu selvittää automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="3796c-262">Note that changes to the vendor’s name text length limit couldn’t be resolved automatically.</span></span> <span data-ttu-id="3796c-263">Tämä esitetään sen vuoksi ristiriitojen luettelossa.</span><span class="sxs-lookup"><span data-stu-id="3796c-263">Therefore, this is presented in a conflicts list.</span></span> <span data-ttu-id="3796c-264">Jokaiselle päivitystyypin ristiriidalle on seuraavat ratkaisuvaihtoehdot: - Käytä aiempaa perusarvoa (painike ruudukon yläpuolella) edellisen perusversion arvon mukaisesti (tässä tapauksessa 0).</span><span class="sxs-lookup"><span data-stu-id="3796c-264">For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).</span></span>  <span data-ttu-id="3796c-265">- Käytä perusarvoa (painike ruudukon yläpuolella) uuden perusversion arvon mukaisesti (tässä tapauksessa 100).</span><span class="sxs-lookup"><span data-stu-id="3796c-265">- Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).</span></span>  <span data-ttu-id="3796c-266">- Säilytä oma (mukautettu) arvo (tässä tapauksessa 60).</span><span class="sxs-lookup"><span data-stu-id="3796c-266">- Keep your own (custom) value (60 in our case).</span></span>  <span data-ttu-id="3796c-267">Valitse Kohdista perusarvo -painiketta kohdistaaksesi maakohtaisesti sallitut 100 merkkiä toimittajan nimille.</span><span class="sxs-lookup"><span data-stu-id="3796c-267">Click Apply base value to apply a country-specific limit of 100 characters for vendor’s name text length.</span></span>  
+    * <span data-ttu-id="3796c-268">Huomaa, että Proseware, Inc. ja Litware, Inc. käyttävät mukautettuja ja paikallisia versioita tästä muodosta käyttäen IBAN- ja SWIFT-koodeja liittyvissä komponenteissa, jotka yhdistetään automaattisesti hallitussa muodossa.</span><span class="sxs-lookup"><span data-stu-id="3796c-268">Note that Proseware, Inc. and Litware, Inc. have custom and local versions of this format using IBAN and SWIFT codes with related components that are automatically merged in the managing format.</span></span>  
+2. <span data-ttu-id="3796c-269">Valitse Käytä aiempaa perusarvoa.</span><span class="sxs-lookup"><span data-stu-id="3796c-269">Click Apply base value.</span></span>
+    * <span data-ttu-id="3796c-270">Valitse Kohdista perusarvo -painiketta kohdistaaksesi maakohtaisesti sallitut 100 merkkiä toimittajan nimille.</span><span class="sxs-lookup"><span data-stu-id="3796c-270">Click Apply base value to apply the country-specific limit of 100 characters for vendor names.</span></span>  
+3. <span data-ttu-id="3796c-271">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="3796c-271">Click Save.</span></span>
+    * <span data-ttu-id="3796c-272">Muodon tallentaminen poistaa ratkaistut ristiriidat luettelosta.</span><span class="sxs-lookup"><span data-stu-id="3796c-272">Saving the format will remove resolved conflicts from the conflicts list.</span></span>  
+4. <span data-ttu-id="3796c-273">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="3796c-273">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a>Muotokonfiguraation uuden mukautetun version tilan muuttaminen
-1. Voit muuttaa tilaa valitsemalla Muuta.
-    * Muuttaa päivitetyn mukautetun muotokonfiguraation tilan luonnoksesta valmiiksi. Muotomääritykset ovat nyt käytettävissä maksuasiakirjoja luotaessa. Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.  
-2. Valitse Valmis.
-3. Kirjoita arvo Kuvaus-kenttään.
-4. Valitse OK.
-    * Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.2.2: BACS-perusmuodon (Iso-Britannia, kuvitteellinen ja mukautettu) versiona 2, joka perustuu BACS-perusmuodon (Iso-Britannia, kuvitteellinen) versioon 2, joka perustuu maksujen tietomallin versioon 1 (yksinkertaistettu malli).  
+## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a><span data-ttu-id="3796c-274">Muotokonfiguraation uuden mukautetun version tilan muuttaminen</span><span class="sxs-lookup"><span data-stu-id="3796c-274">Change the status of the new version of the custom format configuration</span></span>
+1. <span data-ttu-id="3796c-275">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="3796c-275">Click Change status.</span></span>
+    * <span data-ttu-id="3796c-276">Muuttaa päivitetyn mukautetun muotokonfiguraation tilan luonnoksesta valmiiksi.</span><span class="sxs-lookup"><span data-stu-id="3796c-276">Change the status of the updated, custom format configuration from Draft to Completed.</span></span> <span data-ttu-id="3796c-277">Muotomääritykset ovat nyt käytettävissä maksuasiakirjoja luotaessa.</span><span class="sxs-lookup"><span data-stu-id="3796c-277">This will make the format configuration available for generating payment documents.</span></span> <span data-ttu-id="3796c-278">Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.</span><span class="sxs-lookup"><span data-stu-id="3796c-278">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="3796c-279">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="3796c-279">Click Complete.</span></span>
+3. <span data-ttu-id="3796c-280">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3796c-280">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="3796c-281">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3796c-281">Click OK.</span></span>
+    * <span data-ttu-id="3796c-282">Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.2.2: BACS-perusmuodon (Iso-Britannia, kuvitteellinen ja mukautettu) versiona 2, joka perustuu BACS-perusmuodon (Iso-Britannia, kuvitteellinen) versioon 2, joka perustuu maksujen tietomallin versioon 1 (yksinkertaistettu malli).</span><span class="sxs-lookup"><span data-stu-id="3796c-282">Note that the created configuration is saved as completed version 1.2.2: version 2 of base BACS (UK fictitious custom) format, which is based on version 2 of base BACS (UK fictitious) format, which is based on version 1 of Payments (simplified model) data model.</span></span>  
 
-## <a name="test-the-customized-format-for-payment-files-generation"></a>Mukautetun muodon maksutiedostojen luonnin testaaminen
-    * Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa Dynamics 365 for Finance and Operations, Enterprise edition -istunnossa. Valitse luotu BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa. Varmista, että luotu maksutiedosto sisältää on viimeisimmän Proseware, Inc:n XML-solmun, joka vastaa IBAN-tilikoodia aluekohtaisten vaatimusten mukaisesti. Tiedoston pitäisi myös sisältää viimeisin Litware, Inc:n XML-solmu, joka edustaa SWIFT-pankkikoodia maakohtaisten vaatimusten mukaisesti.  
+## <a name="test-the-customized-format-for-payment-files-generation"></a><span data-ttu-id="3796c-283">Mukautetun muodon maksutiedostojen luonnin testaaminen</span><span class="sxs-lookup"><span data-stu-id="3796c-283">Test the customized format for payment files generation</span></span>
+    * <span data-ttu-id="3796c-284">Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa Dynamics 365 for Finance and Operations, Enterprise edition -istunnossa.</span><span class="sxs-lookup"><span data-stu-id="3796c-284">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="3796c-285">Valitse luotu BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa.</span><span class="sxs-lookup"><span data-stu-id="3796c-285">Select the created ‘BACS (UK fictitious custom)’ format in electronic payment method parameters.</span></span> <span data-ttu-id="3796c-286">Varmista, että luotu maksutiedosto sisältää on viimeisimmän Proseware, Inc:n XML-solmun, joka vastaa IBAN-tilikoodia aluekohtaisten vaatimusten mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="3796c-286">Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements.</span></span> <span data-ttu-id="3796c-287">Tiedoston pitäisi myös sisältää viimeisin Litware, Inc:n XML-solmu, joka edustaa SWIFT-pankkikoodia maakohtaisten vaatimusten mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="3796c-287">The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.</span></span>  
 
 

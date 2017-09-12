@@ -16,36 +16,36 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ca2b755406fb7fce4b11457be86f6a8685004438
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 31c8e2ba87ef8c17a3147e1159104585258d4164
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-batch-job"></a>Erätyön luominen
+# <a name="create-a-batch-job"></a><span data-ttu-id="0b614-103">Erätyön luominen</span><span class="sxs-lookup"><span data-stu-id="0b614-103">Create a batch job</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Erätyö on joukko tehtäviä, jotka lähetetään Application Object Server -palvelinesiintymään (AOS) automaattista käsittelyä varten. Erätyöt suoritetaan sen käyttäjän käyttöoikeustiedoilla, joka on luonut työn. Luo erätyö seuraavien ohjeiden mukaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+<span data-ttu-id="0b614-104">Erätyö on joukko tehtäviä, jotka lähetetään Application Object Server -palvelinesiintymään (AOS) automaattista käsittelyä varten.</span><span class="sxs-lookup"><span data-stu-id="0b614-104">A batch job is a group of tasks that are submitted to an Application Object Server (AOS) instance for automatic processing.</span></span> <span data-ttu-id="0b614-105">Erätyöt suoritetaan sen käyttäjän käyttöoikeustiedoilla, joka on luonut työn.</span><span class="sxs-lookup"><span data-stu-id="0b614-105">Batch jobs are run by using the security credentials of the user who created the job.</span></span> <span data-ttu-id="0b614-106">Luo erätyö seuraavien ohjeiden mukaan.</span><span class="sxs-lookup"><span data-stu-id="0b614-106">Use the following procedure to create a batch job.</span></span> <span data-ttu-id="0b614-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="0b614-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-the-batch-job"></a>Luo erätyö
-1. Valitse Järjestelmänhallinta > Kyselyt > Erätyöt.
-2. Valitse Uusi.
-3. Kirjoita arvo Työnkuvaus -kenttään.
-4. Määritä päivämäärä ja kellonaika kentässä Ajoitettu alkamispäivämäärä/-kellonaika.
-5. Valitse Tallenna.
+## <a name="create-the-batch-job"></a><span data-ttu-id="0b614-108">Luo erätyö</span><span class="sxs-lookup"><span data-stu-id="0b614-108">Create the batch job</span></span>
+1. <span data-ttu-id="0b614-109">Valitse Järjestelmänhallinta > Kyselyt > Erätyöt.</span><span class="sxs-lookup"><span data-stu-id="0b614-109">Go to System administration > Inquiries > Batch jobs.</span></span>
+2. <span data-ttu-id="0b614-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="0b614-110">Click New.</span></span>
+3. <span data-ttu-id="0b614-111">Kirjoita arvo Työnkuvaus -kenttään.</span><span class="sxs-lookup"><span data-stu-id="0b614-111">In the Job description field, type a value.</span></span>
+4. <span data-ttu-id="0b614-112">Määritä päivämäärä ja kellonaika kentässä Ajoitettu alkamispäivämäärä/-kellonaika.</span><span class="sxs-lookup"><span data-stu-id="0b614-112">In the Scheduled start date/time field, enter a date and time.</span></span>
+5. <span data-ttu-id="0b614-113">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="0b614-113">Click Save.</span></span>
 
-## <a name="create-a-recurrence"></a>Luo toistuvuus
-1. Valitse toimintoruudussa Erätyö.
-2. Valitse Toistuminen.
-    * Aseta toistumisalue ja -kuvio näiden asetusten avulla.  
-3. Valitse OK.
+## <a name="create-a-recurrence"></a><span data-ttu-id="0b614-114">Luo toistuvuus</span><span class="sxs-lookup"><span data-stu-id="0b614-114">Create a recurrence</span></span>
+1. <span data-ttu-id="0b614-115">Valitse toimintoruudussa Erätyö.</span><span class="sxs-lookup"><span data-stu-id="0b614-115">On the Action Pane, click Batch job.</span></span>
+2. <span data-ttu-id="0b614-116">Valitse Toistuminen.</span><span class="sxs-lookup"><span data-stu-id="0b614-116">Click Recurrence.</span></span>
+    * <span data-ttu-id="0b614-117">Aseta toistumisalue ja -kuvio näiden asetusten avulla.</span><span class="sxs-lookup"><span data-stu-id="0b614-117">Use these options to enter a range and pattern for the recurrence.</span></span>  
+3. <span data-ttu-id="0b614-118">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="0b614-118">Click OK.</span></span>
 
-## <a name="add-alerts"></a>Lisää hälytyksiä
-1. Valitse toimintoruudussa Erätyö.
-2. Valitse Hälytykset.
-    * Ilmaise, haluatko lähettää hälytysviestin, kun erätyö on päättynyt tai peruutettu, tai jos siinä on kohdattu virhe. Määritä sitten, haluatko ilmoitukset ponnahdussanomina.   
-3. Valitse OK.
+## <a name="add-alerts"></a><span data-ttu-id="0b614-119">Lisää hälytyksiä</span><span class="sxs-lookup"><span data-stu-id="0b614-119">Add alerts</span></span>
+1. <span data-ttu-id="0b614-120">Valitse toimintoruudussa Erätyö.</span><span class="sxs-lookup"><span data-stu-id="0b614-120">On the Action Pane, click Batch job.</span></span>
+2. <span data-ttu-id="0b614-121">Valitse Hälytykset.</span><span class="sxs-lookup"><span data-stu-id="0b614-121">Click Alerts.</span></span>
+    * <span data-ttu-id="0b614-122">Ilmaise, haluatko lähettää hälytysviestin, kun erätyö on päättynyt tai peruutettu, tai jos siinä on kohdattu virhe.</span><span class="sxs-lookup"><span data-stu-id="0b614-122">Indicate if you want alert messages sent when the batch job ends, has an error, or is canceled.</span></span> <span data-ttu-id="0b614-123">Määritä sitten, haluatko ilmoitukset ponnahdussanomina.</span><span class="sxs-lookup"><span data-stu-id="0b614-123">Then specify if you want the alerts to be displayed as pop-up messages.</span></span>   
+3. <span data-ttu-id="0b614-124">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="0b614-124">Click OK.</span></span>
 
 

@@ -16,150 +16,150 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 65db27e59ce5f9234eeb486efeb9bb6e9dad40f7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 473cad588253b0eb42eb927834e186ccfa4c4f1e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a>Sähköisen raportoinnin (ER) mallin yhdistämismäärityksen konfiguraation hallinta
+# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a><span data-ttu-id="32a95-103">Sähköisen raportoinnin (ER) mallin yhdistämismäärityksen konfiguraation hallinta</span><span class="sxs-lookup"><span data-stu-id="32a95-103">Manage model mapping configurations for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Seuraavissa vaiheissa kerrotaan, miten käyttäjä, jolla on järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi hallita sähköisen raportoinnin (ER) mallin yhdistämismäärityksiä erillisissä ER-konfiguraatioissa. Tässä tehtäväoppaassa luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Tätä tehtäväopastaa varten on suoritettava ensin ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -tehtäväoppaan vaiheet. 
+<span data-ttu-id="32a95-104">Seuraavissa vaiheissa kerrotaan, miten käyttäjä, jolla on järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi hallita sähköisen raportoinnin (ER) mallin yhdistämismäärityksiä erillisissä ER-konfiguraatioissa.</span><span class="sxs-lookup"><span data-stu-id="32a95-104">The following steps explain how a user assigned to the System administrator or Electronic reporting developer role can manage Electronic reporting (ER) model mappings in separate ER configurations.</span></span> <span data-ttu-id="32a95-105">Tässä tehtäväoppaassa luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Tätä tehtäväopastaa varten on suoritettava ensin ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -tehtäväoppaan vaiheet.</span><span class="sxs-lookup"><span data-stu-id="32a95-105">In this task guide, you will create required ER configurations for the sample company, Litware, Inc. To complete this task guide, you must first complete the steps in the task guide, “ER Create a configuration provider” and mark it as active.</span></span> 
 
-Voit suorittaa tämän tehtäväoppaan valitsemasi yrityksen tietojoukon avulla, koska yritykset jakavat ER-konfiguraatiot. Tämän tehtäväoppaan toiminnot ovat käytettävissä, jos asennettuna on jokin seuraavista Dynamics 365 for Operations -version hotfix-korjauksista: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 Dynamics AX 7.0 -versiolle tai https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871.
+<span data-ttu-id="32a95-106">Voit suorittaa tämän tehtäväoppaan valitsemasi yrityksen tietojoukon avulla, koska yritykset jakavat ER-konfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="32a95-106">Because ER configurations are shared among companies, you can complete this task guide using the company data set of your choice.</span></span> <span data-ttu-id="32a95-107">Tämän tehtäväoppaan toiminnot ovat käytettävissä, jos asennettuna on jokin seuraavista Dynamics 365 for Operations -version hotfix-korjauksista: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 Dynamics AX 7.0 -versiolle tai https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871.</span><span class="sxs-lookup"><span data-stu-id="32a95-107">The functionality for this task guide is available if you have installed one of the following hotfixes: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 for the Dynamics AX 7.0 version or https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 for the Dynamics 365 for Operations version.</span></span>
 
-1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
-    * Tarkista, onko Litware, Inc. -malliyrityksen konfiguraation lähde käytettävissä ja onko se merkitty aktiiviseksi. Jos konfiguraation lähde ei ole näkyvissä, suorita ensin Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -tehtäväoppaan vaiheet.   
+1. <span data-ttu-id="32a95-108">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="32a95-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="32a95-109">Tarkista, onko Litware, Inc. -malliyrityksen konfiguraation lähde käytettävissä ja onko se merkitty aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="32a95-109">Verify that the configuration provider for the sample company Litware, Inc. is available and marked as active.</span></span> <span data-ttu-id="32a95-110">Jos konfiguraation lähde ei ole näkyvissä, suorita ensin Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -tehtäväoppaan vaiheet.</span><span class="sxs-lookup"><span data-stu-id="32a95-110">If you don’t see this configuration provider, you must first complete the steps in the task guide, Create a configuration provider and mark it as active.</span></span>   
 
-## <a name="add-a-new-er-model-configuration"></a>Uuden ER-mallimäärityksen lisääminen
-1. Valitse Raportointikonfiguraatiot.
-    * Luo uusi mallin konfiguraatio. Konfiguraatioiden puurakenteen nimen on oltava yksilöivä.  
-2. Avaa valintaikkuna napsauttamalla Luo konfigurointi.
-3. Syötä Nimi-kenttään Tietomallin esimerkki.
-    * Tietomallin esimerkki  
-4. Valitse Luo konfiguraatio.
-5. Valitse Suunnittelutoiminto.
-6. Avaa valintaikkuna valitsemalla Uusi.
-7. Kirjoita Nimi-kenttään "Juuri".
-    * Juuri  
-8. ValitseLisää.
-9. Avaa valintaikkuna valitsemalla Uusi.
-10. Syötä Nimi-kenttään Yritys.
-    * Yritys   
-11. ValitseLisää.
-12. Syötä Kuvaus-kenttään teksti, yrityksen kuvaus tai yritys, johon käyttäjä oli kirjautuneena suorituksen aikana. 
-    * Sen yrityksen kuvaus, johon käyttäjä on kirjautuneena suorituksen aikana.  
-13. Valitse Juuriviite.
-14. Valitse OK.
-15. Valitse Tallenna.
-16. Sulje sivu.
-17. Voit muuttaa tilaa valitsemalla Muuta.
-18. Valitse Valmis.
-19. Valitse OK.
+## <a name="add-a-new-er-model-configuration"></a><span data-ttu-id="32a95-111">Uuden ER-mallimäärityksen lisääminen</span><span class="sxs-lookup"><span data-stu-id="32a95-111">Add a new ER model configuration</span></span>
+1. <span data-ttu-id="32a95-112">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="32a95-112">Click Reporting configurations.</span></span>
+    * <span data-ttu-id="32a95-113">Luo uusi mallin konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="32a95-113">Add a new model configuration.</span></span> <span data-ttu-id="32a95-114">Konfiguraatioiden puurakenteen nimen on oltava yksilöivä.</span><span class="sxs-lookup"><span data-stu-id="32a95-114">The name must be unique in the configurations tree.</span></span>  
+2. <span data-ttu-id="32a95-115">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="32a95-115">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="32a95-116">Syötä Nimi-kenttään Tietomallin esimerkki.</span><span class="sxs-lookup"><span data-stu-id="32a95-116">In the Name field, type 'Sample data model'.</span></span>
+    * <span data-ttu-id="32a95-117">Tietomallin esimerkki</span><span class="sxs-lookup"><span data-stu-id="32a95-117">Sample data model</span></span>  
+4. <span data-ttu-id="32a95-118">Valitse Luo konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="32a95-118">Click Create configuration.</span></span>
+5. <span data-ttu-id="32a95-119">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="32a95-119">Click Designer.</span></span>
+6. <span data-ttu-id="32a95-120">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="32a95-120">Click New to open the drop dialog.</span></span>
+7. <span data-ttu-id="32a95-121">Kirjoita Nimi-kenttään "Juuri".</span><span class="sxs-lookup"><span data-stu-id="32a95-121">In the Name field, type 'Root'.</span></span>
+    * <span data-ttu-id="32a95-122">Juuri</span><span class="sxs-lookup"><span data-stu-id="32a95-122">Root</span></span>  
+8. <span data-ttu-id="32a95-123">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="32a95-123">Click Add.</span></span>
+9. <span data-ttu-id="32a95-124">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="32a95-124">Click New to open the drop dialog.</span></span>
+10. <span data-ttu-id="32a95-125">Syötä Nimi-kenttään Yritys.</span><span class="sxs-lookup"><span data-stu-id="32a95-125">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="32a95-126">Yritys </span><span class="sxs-lookup"><span data-stu-id="32a95-126">Company</span></span>  
+11. <span data-ttu-id="32a95-127">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="32a95-127">Click Add.</span></span>
+12. <span data-ttu-id="32a95-128">Syötä Kuvaus-kenttään teksti, yrityksen kuvaus tai yritys, johon käyttäjä oli kirjautuneena suorituksen aikana.</span><span class="sxs-lookup"><span data-stu-id="32a95-128">In the Description field, enter the text, Description of the legal entity or company in which a user logged at run-time.</span></span> 
+    * <span data-ttu-id="32a95-129">Sen yrityksen kuvaus, johon käyttäjä on kirjautuneena suorituksen aikana.</span><span class="sxs-lookup"><span data-stu-id="32a95-129">Description of the legal entity or company in which a user logged at run-time.</span></span>  
+13. <span data-ttu-id="32a95-130">Valitse Juuriviite.</span><span class="sxs-lookup"><span data-stu-id="32a95-130">Click Root reference.</span></span>
+14. <span data-ttu-id="32a95-131">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="32a95-131">Click OK.</span></span>
+15. <span data-ttu-id="32a95-132">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="32a95-132">Click Save.</span></span>
+16. <span data-ttu-id="32a95-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="32a95-133">Close the page.</span></span>
+17. <span data-ttu-id="32a95-134">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="32a95-134">Click Change status.</span></span>
+18. <span data-ttu-id="32a95-135">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="32a95-135">Click Complete.</span></span>
+19. <span data-ttu-id="32a95-136">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="32a95-136">Click OK.</span></span>
 
-## <a name="add-a-new-er-model-mapping-configuration"></a>Uuden ER-mallin yhdistämismäärityksen konfiguraation lisääminen
-1. Avaa valintaikkuna napsauttamalla Luo konfigurointi.
-2. Anna Uusi-kenttään Mallin yhdistämismääritys perustuu tietomalliin Tietomallin esimerkki.
-3. Syötä Nimi-kenttään Esimerkkiyhdistämismääritys.
-    * Esimerkkiyhdistämismääritys  
-4. Valitse Luo konfiguraatio.
-5. Laajenna Edellytykset-osa.
-    * Huomaa, että toteutusten edellytysten ryhmä on lisätty automaattisesti. Ryhmä sisältää edellytetyn komponentin, joka viittaa päätietomallin konfiguraatioon ja jossa käytetään Toteutus-merkintää. Merkintä tarkoittaa, että Esimerkkiyhdistämismääritys-yhdistämismäärityksen konfiguraatiota pidetään Esimerkki-tietomallin toteutuksena. Tämä vuoksi tämä komponentti pakottaa sähköisen raportoinnin lataamaan mallin yhdistämismäärityksen konfiguraation (Esimerkkiyhdistämismääritys) sähköisen raportoinnin säilöstä, kun mallin konfiguraatio, Esimerkkitietomalli, ladataan.   
-6. Valitse Suunnittelutoiminto.
-    * Ota huomioon, että luotu mallin yhdistämismäärityksen kokoonpano sisältää uuden tyhjän yhdistämismäärityksen, jolla on sama nimi kuin luodulla konfiguraatiolla. Huomioi, että kun valittu päämallin konfiguraatio sisältää mallin yhdistämismäärityksiä, ne kopioidaan uuteen mallin yhdistämismäärityksen konfiguraatioon.   
-7. Valitse Suunnittelutoiminto.
-8. Valitse puussa Dynamics 365 for Operations\Table.
-9. Valitse Lisää juuri.
-10. Syötä Nimi-kenttään Yritys.
-    * Yritys   
-11. Syötä Taulu-kenttään CompanyInfo.
-    * CompanyInfo  
-12. Valitse OK.
-13. Laajenna puussa Company.
-14. Laajenna puussa Company\find().
-15. Valitse puussa Company\find()\Name.
-16. Valitse Sido.
-17. Valitse Tallenna.
-18. Sulje sivu.
-19. Sulje sivu.
-20. Valitse toimintoruudussa Konfiguroinnit.
-21. Valitse Käyttäjän parametrit.
-22. Valitse Suorita asetukset -kentässä Kyllä.
-23. Valitse OK.
-24. Valitse Muokkaa.
-25. Valitse Suorita luonnos -kentässä Kyllä.
+## <a name="add-a-new-er-model-mapping-configuration"></a><span data-ttu-id="32a95-137">Uuden ER-mallin yhdistämismäärityksen konfiguraation lisääminen</span><span class="sxs-lookup"><span data-stu-id="32a95-137">Add a new ER model mapping configuration</span></span>
+1. <span data-ttu-id="32a95-138">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="32a95-138">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="32a95-139">Anna Uusi-kenttään Mallin yhdistämismääritys perustuu tietomalliin Tietomallin esimerkki.</span><span class="sxs-lookup"><span data-stu-id="32a95-139">In the New field, enter 'Model Mapping based on data model Sample data model'.</span></span>
+3. <span data-ttu-id="32a95-140">Syötä Nimi-kenttään Esimerkkiyhdistämismääritys.</span><span class="sxs-lookup"><span data-stu-id="32a95-140">In the Name field, type 'Sample mapping'.</span></span>
+    * <span data-ttu-id="32a95-141">Esimerkkiyhdistämismääritys</span><span class="sxs-lookup"><span data-stu-id="32a95-141">Sample mapping</span></span>  
+4. <span data-ttu-id="32a95-142">Valitse Luo konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="32a95-142">Click Create configuration.</span></span>
+5. <span data-ttu-id="32a95-143">Laajenna Edellytykset-osa.</span><span class="sxs-lookup"><span data-stu-id="32a95-143">Expand the Prerequisites section.</span></span>
+    * <span data-ttu-id="32a95-144">Huomaa, että toteutusten edellytysten ryhmä on lisätty automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="32a95-144">Note that the Implementations prerequisites group has been added automatically.</span></span> <span data-ttu-id="32a95-145">Ryhmä sisältää edellytetyn komponentin, joka viittaa päätietomallin konfiguraatioon ja jossa käytetään Toteutus-merkintää.</span><span class="sxs-lookup"><span data-stu-id="32a95-145">The group contains the prerequisite component that refers to the parent data model configuration and is marked as Implementation.</span></span> <span data-ttu-id="32a95-146">Merkintä tarkoittaa, että Esimerkkiyhdistämismääritys-yhdistämismäärityksen konfiguraatiota pidetään Esimerkki-tietomallin toteutuksena.</span><span class="sxs-lookup"><span data-stu-id="32a95-146">This means that this Sample mapping model mapping configuration is considered the implementation of the data model, Sample data model.</span></span> <span data-ttu-id="32a95-147">Tämä vuoksi tämä komponentti pakottaa sähköisen raportoinnin lataamaan mallin yhdistämismäärityksen konfiguraation (Esimerkkiyhdistämismääritys) sähköisen raportoinnin säilöstä, kun mallin konfiguraatio, Esimerkkitietomalli, ladataan.</span><span class="sxs-lookup"><span data-stu-id="32a95-147">Therefore, this component will force ER to download the model mapping configuration, Sample mapping from an ER repository when the model configuration, Sample data model, is downloaded.</span></span>   
+6. <span data-ttu-id="32a95-148">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="32a95-148">Click Designer.</span></span>
+    * <span data-ttu-id="32a95-149">Ota huomioon, että luotu mallin yhdistämismäärityksen kokoonpano sisältää uuden tyhjän yhdistämismäärityksen, jolla on sama nimi kuin luodulla konfiguraatiolla.</span><span class="sxs-lookup"><span data-stu-id="32a95-149">Note that the created model mapping configuration contains a new blank mapping with the same name as the created configuration.</span></span> <span data-ttu-id="32a95-150">Huomioi, että kun valittu päämallin konfiguraatio sisältää mallin yhdistämismäärityksiä, ne kopioidaan uuteen mallin yhdistämismäärityksen konfiguraatioon.</span><span class="sxs-lookup"><span data-stu-id="32a95-150">Be aware that when a selected parent model configuration contains model mappings, they will be copied to a new model mapping configuration.</span></span>   
+7. <span data-ttu-id="32a95-151">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="32a95-151">Click Designer.</span></span>
+8. <span data-ttu-id="32a95-152">Valitse puussa Dynamics 365 for Operations\Table.</span><span class="sxs-lookup"><span data-stu-id="32a95-152">In the tree, select 'Dynamics 365 for Operations\Table'.</span></span>
+9. <span data-ttu-id="32a95-153">Valitse Lisää juuri.</span><span class="sxs-lookup"><span data-stu-id="32a95-153">Click Add root.</span></span>
+10. <span data-ttu-id="32a95-154">Syötä Nimi-kenttään Yritys.</span><span class="sxs-lookup"><span data-stu-id="32a95-154">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="32a95-155">Yritys </span><span class="sxs-lookup"><span data-stu-id="32a95-155">Company</span></span>  
+11. <span data-ttu-id="32a95-156">Syötä Taulu-kenttään CompanyInfo.</span><span class="sxs-lookup"><span data-stu-id="32a95-156">In the Table field, type 'CompanyInfo'.</span></span>
+    * <span data-ttu-id="32a95-157">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="32a95-157">CompanyInfo</span></span>  
+12. <span data-ttu-id="32a95-158">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="32a95-158">Click OK.</span></span>
+13. <span data-ttu-id="32a95-159">Laajenna puussa Company.</span><span class="sxs-lookup"><span data-stu-id="32a95-159">In the tree, expand 'Company'.</span></span>
+14. <span data-ttu-id="32a95-160">Laajenna puussa Company\find().</span><span class="sxs-lookup"><span data-stu-id="32a95-160">In the tree, expand 'Company\find()'.</span></span>
+15. <span data-ttu-id="32a95-161">Valitse puussa Company\find()\Name.</span><span class="sxs-lookup"><span data-stu-id="32a95-161">In the tree, select 'Company\find()\Name'.</span></span>
+16. <span data-ttu-id="32a95-162">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="32a95-162">Click Bind.</span></span>
+17. <span data-ttu-id="32a95-163">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="32a95-163">Click Save.</span></span>
+18. <span data-ttu-id="32a95-164">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="32a95-164">Close the page.</span></span>
+19. <span data-ttu-id="32a95-165">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="32a95-165">Close the page.</span></span>
+20. <span data-ttu-id="32a95-166">Valitse toimintoruudussa Konfiguroinnit.</span><span class="sxs-lookup"><span data-stu-id="32a95-166">On the Action Pane, click Configurations.</span></span>
+21. <span data-ttu-id="32a95-167">Valitse Käyttäjän parametrit.</span><span class="sxs-lookup"><span data-stu-id="32a95-167">Click User parameters.</span></span>
+22. <span data-ttu-id="32a95-168">Valitse Suorita asetukset -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="32a95-168">Select Yes in the Run settings field.</span></span>
+23. <span data-ttu-id="32a95-169">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="32a95-169">Click OK.</span></span>
+24. <span data-ttu-id="32a95-170">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="32a95-170">Click Edit.</span></span>
+25. <span data-ttu-id="32a95-171">Valitse Suorita luonnos -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="32a95-171">Select Yes in the Run Draft field.</span></span>
 
-## <a name="add-a-new-er-format-configuration"></a>Uuden ER-muotokonfiguraation lisääminen
-1. Valitse puussa Sample data model.
-2. Avaa valintaikkuna napsauttamalla Luo konfigurointi.
-3. Anna Uusi-kenttään Muoto perustuu tietomalliin Tietomallin esimerkki.
-4. Syötä Nimi-kenttään Esimerkkimuoto.
-    * Esimerkkimuoto  
-5. Valitse Luo konfiguraatio.
-6. Valitse Suunnittelutoiminto.
-7. Avaa valintaikkuna valitsemalla Lisää juuri.
-8. Valitse puussa solmu Text\String.
-9. Valitse OK.
-10. Valitse Yhdistämismääritys-välilehti.
-11. Laajenna puussa solmu model.
-12. Valitse puussa model\Company.
-13. Valitse Sido.
-14. Valitse Tallenna.
-15. Sulje sivu.
-    * Suorita luodun muodon luonnosversio testausta varten.  
-16. Valitse Suorita.
-    * Valitse Versiot-pikavälilehdessä Suorita.  
-17. Valitse OK.
-    * Tarkista tulos, joka sisältää sen yrityksen nimen, johon tämän muotokonfiguraation suorittava käyttäjä on kirjautunut. Ota huomioon, että tämä muotokonfiguraatio käyttää tätä mallin yhdistämismäärityksen konfiguraatiota, koska vaaditut mallin yhdistämismääritykset sisältäviä konfiguraatioita on vain yksi.   
+## <a name="add-a-new-er-format-configuration"></a><span data-ttu-id="32a95-172">Uuden ER-muotokonfiguraation lisääminen</span><span class="sxs-lookup"><span data-stu-id="32a95-172">Add a new ER format configuration</span></span>
+1. <span data-ttu-id="32a95-173">Valitse puussa Sample data model.</span><span class="sxs-lookup"><span data-stu-id="32a95-173">In the tree, select 'Sample data model'.</span></span>
+2. <span data-ttu-id="32a95-174">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="32a95-174">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="32a95-175">Anna Uusi-kenttään Muoto perustuu tietomalliin Tietomallin esimerkki.</span><span class="sxs-lookup"><span data-stu-id="32a95-175">In the New field, enter 'Format based on data model Sample data model'.</span></span>
+4. <span data-ttu-id="32a95-176">Syötä Nimi-kenttään Esimerkkimuoto.</span><span class="sxs-lookup"><span data-stu-id="32a95-176">In the Name field, type 'Sample format'.</span></span>
+    * <span data-ttu-id="32a95-177">Esimerkkimuoto</span><span class="sxs-lookup"><span data-stu-id="32a95-177">Sample format</span></span>  
+5. <span data-ttu-id="32a95-178">Valitse Luo konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="32a95-178">Click Create configuration.</span></span>
+6. <span data-ttu-id="32a95-179">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="32a95-179">Click Designer.</span></span>
+7. <span data-ttu-id="32a95-180">Avaa valintaikkuna valitsemalla Lisää juuri.</span><span class="sxs-lookup"><span data-stu-id="32a95-180">Click Add root to open the drop dialog.</span></span>
+8. <span data-ttu-id="32a95-181">Valitse puussa solmu Text\String.</span><span class="sxs-lookup"><span data-stu-id="32a95-181">In the tree, select 'Text\String'.</span></span>
+9. <span data-ttu-id="32a95-182">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="32a95-182">Click OK.</span></span>
+10. <span data-ttu-id="32a95-183">Valitse Yhdistämismääritys-välilehti.</span><span class="sxs-lookup"><span data-stu-id="32a95-183">Click the Mapping tab.</span></span>
+11. <span data-ttu-id="32a95-184">Laajenna puussa solmu model.</span><span class="sxs-lookup"><span data-stu-id="32a95-184">In the tree, expand 'model'.</span></span>
+12. <span data-ttu-id="32a95-185">Valitse puussa model\Company.</span><span class="sxs-lookup"><span data-stu-id="32a95-185">In the tree, select 'model\Company'.</span></span>
+13. <span data-ttu-id="32a95-186">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="32a95-186">Click Bind.</span></span>
+14. <span data-ttu-id="32a95-187">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="32a95-187">Click Save.</span></span>
+15. <span data-ttu-id="32a95-188">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="32a95-188">Close the page.</span></span>
+    * <span data-ttu-id="32a95-189">Suorita luodun muodon luonnosversio testausta varten.</span><span class="sxs-lookup"><span data-stu-id="32a95-189">Run the draft version of the created format for testing purposes.</span></span>  
+16. <span data-ttu-id="32a95-190">Valitse Suorita.</span><span class="sxs-lookup"><span data-stu-id="32a95-190">Click Run.</span></span>
+    * <span data-ttu-id="32a95-191">Valitse Versiot-pikavälilehdessä Suorita.</span><span class="sxs-lookup"><span data-stu-id="32a95-191">On the Versions FastTab, click Run.</span></span>  
+17. <span data-ttu-id="32a95-192">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="32a95-192">Click OK.</span></span>
+    * <span data-ttu-id="32a95-193">Tarkista tulos, joka sisältää sen yrityksen nimen, johon tämän muotokonfiguraation suorittava käyttäjä on kirjautunut.</span><span class="sxs-lookup"><span data-stu-id="32a95-193">Review the output that contains the name of the company in which the user who is running this format configuration is logged into.</span></span> <span data-ttu-id="32a95-194">Ota huomioon, että tämä muotokonfiguraatio käyttää tätä mallin yhdistämismäärityksen konfiguraatiota, koska vaaditut mallin yhdistämismääritykset sisältäviä konfiguraatioita on vain yksi.</span><span class="sxs-lookup"><span data-stu-id="32a95-194">Note that the created model mapping configuration is used by this format configuration because there is only one configuration available that contains required model mappings.</span></span>   
 
-## <a name="add-alternative-er-model-mapping-configuration"></a>Vaihtoehtoisen ER-mallin yhdistämismäärityksen konfiguraation lisääminen
-1. Valitse puussa Sample data model.
-2. Avaa valintaikkuna napsauttamalla Luo konfigurointi.
-3. Anna Uusi-kenttään Mallin yhdistämismääritys perustuu tietomalliin Tietomallin esimerkki.
-4. Syötä Nimi-kenttään Esimerkkiyhdistämismääritys (vaihtoehto).
-    * Esimerkkiyhdistämismääritys (vaihtoehto)  
-5. Valitse Luo konfiguraatio.
-6. Valitse Suunnittelutoiminto.
-7. Valitse Suunnittelutoiminto.
-8. Valitse puussa Dynamics 365 for Operations\Table.
-9. Valitse Lisää juuri.
-10. Syötä Nimi-kenttään Yritys.
-    * Yritys   
-11. Syötä Taulu-kenttään CompanyInfo.
-    * CompanyInfo  
-12. Valitse OK.
-13. Valitse Muokkaa.
-14. Valitse puussa solmu String\CONCATENATE.
-15. Valitse Lisää toiminto.
-16. Laajenna puussa Company.
-17. Laajenna puussa Company\find().
-18. Valitse puussa Company\find()\Name.
-19. Valitse Lisää tietolähde.
-20. Kirjoita arvo Resepti-kenttään.
-    * CONCATENATE(Company.'find()'.Name, ";",  
-21. Valitse puussa Company\find()\Company(DataArea).
-22. Valitse Lisää tietolähde.
-23. Kirjoita arvo Resepti-kenttään.
-    * CONCATENATE(Company.'find()'.Name, ";", Company.'find()'.DataArea)  
-24. Valitse Tallenna.
-25. Sulje sivu.
-26. Valitse Tallenna.
-27. Sulje sivu.
-28. Sulje sivu.
-29. Valitse Suorita luonnos -kentässä Kyllä.
+## <a name="add-alternative-er-model-mapping-configuration"></a><span data-ttu-id="32a95-195">Vaihtoehtoisen ER-mallin yhdistämismäärityksen konfiguraation lisääminen</span><span class="sxs-lookup"><span data-stu-id="32a95-195">Add alternative ER model mapping configuration</span></span>
+1. <span data-ttu-id="32a95-196">Valitse puussa Sample data model.</span><span class="sxs-lookup"><span data-stu-id="32a95-196">In the tree, select 'Sample data model'.</span></span>
+2. <span data-ttu-id="32a95-197">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="32a95-197">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="32a95-198">Anna Uusi-kenttään Mallin yhdistämismääritys perustuu tietomalliin Tietomallin esimerkki.</span><span class="sxs-lookup"><span data-stu-id="32a95-198">In the New field, enter 'Model Mapping based on data model Sample data model'.</span></span>
+4. <span data-ttu-id="32a95-199">Syötä Nimi-kenttään Esimerkkiyhdistämismääritys (vaihtoehto).</span><span class="sxs-lookup"><span data-stu-id="32a95-199">In the Name field, type 'Sample mapping (alternative)'.</span></span>
+    * <span data-ttu-id="32a95-200">Esimerkkiyhdistämismääritys (vaihtoehto)</span><span class="sxs-lookup"><span data-stu-id="32a95-200">Sample mapping (alternative)</span></span>  
+5. <span data-ttu-id="32a95-201">Valitse Luo konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="32a95-201">Click Create configuration.</span></span>
+6. <span data-ttu-id="32a95-202">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="32a95-202">Click Designer.</span></span>
+7. <span data-ttu-id="32a95-203">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="32a95-203">Click Designer.</span></span>
+8. <span data-ttu-id="32a95-204">Valitse puussa Dynamics 365 for Operations\Table.</span><span class="sxs-lookup"><span data-stu-id="32a95-204">In the tree, select 'Dynamics 365 for Operations\Table'.</span></span>
+9. <span data-ttu-id="32a95-205">Valitse Lisää juuri.</span><span class="sxs-lookup"><span data-stu-id="32a95-205">Click Add root.</span></span>
+10. <span data-ttu-id="32a95-206">Syötä Nimi-kenttään Yritys.</span><span class="sxs-lookup"><span data-stu-id="32a95-206">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="32a95-207">Yritys </span><span class="sxs-lookup"><span data-stu-id="32a95-207">Company</span></span>  
+11. <span data-ttu-id="32a95-208">Syötä Taulu-kenttään CompanyInfo.</span><span class="sxs-lookup"><span data-stu-id="32a95-208">In the Table field, type 'CompanyInfo'.</span></span>
+    * <span data-ttu-id="32a95-209">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="32a95-209">CompanyInfo</span></span>  
+12. <span data-ttu-id="32a95-210">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="32a95-210">Click OK.</span></span>
+13. <span data-ttu-id="32a95-211">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="32a95-211">Click Edit.</span></span>
+14. <span data-ttu-id="32a95-212">Valitse puussa solmu String\CONCATENATE.</span><span class="sxs-lookup"><span data-stu-id="32a95-212">In the tree, select 'String\CONCATENATE'.</span></span>
+15. <span data-ttu-id="32a95-213">Valitse Lisää toiminto.</span><span class="sxs-lookup"><span data-stu-id="32a95-213">Click Add function.</span></span>
+16. <span data-ttu-id="32a95-214">Laajenna puussa Company.</span><span class="sxs-lookup"><span data-stu-id="32a95-214">In the tree, expand 'Company'.</span></span>
+17. <span data-ttu-id="32a95-215">Laajenna puussa Company\find().</span><span class="sxs-lookup"><span data-stu-id="32a95-215">In the tree, expand 'Company\find()'.</span></span>
+18. <span data-ttu-id="32a95-216">Valitse puussa Company\find()\Name.</span><span class="sxs-lookup"><span data-stu-id="32a95-216">In the tree, select 'Company\find()\Name'.</span></span>
+19. <span data-ttu-id="32a95-217">Valitse Lisää tietolähde.</span><span class="sxs-lookup"><span data-stu-id="32a95-217">Click Add data source.</span></span>
+20. <span data-ttu-id="32a95-218">Kirjoita arvo Resepti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="32a95-218">In the Formula field, type a value.</span></span>
+    * <span data-ttu-id="32a95-219">CONCATENATE(Company.'find()'.Name, ";",</span><span class="sxs-lookup"><span data-stu-id="32a95-219">CONCATENATE(Company.'find()'.Name, ";",</span></span>  
+21. <span data-ttu-id="32a95-220">Valitse puussa Company\find()\Company(DataArea).</span><span class="sxs-lookup"><span data-stu-id="32a95-220">In the tree, select 'Company\find()\Company(DataArea)'.</span></span>
+22. <span data-ttu-id="32a95-221">Valitse Lisää tietolähde.</span><span class="sxs-lookup"><span data-stu-id="32a95-221">Click Add data source.</span></span>
+23. <span data-ttu-id="32a95-222">Kirjoita arvo Resepti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="32a95-222">In the Formula field, type a value.</span></span>
+    * <span data-ttu-id="32a95-223">CONCATENATE(Company.'find()'.Name, ";", Company.'find()'.DataArea)</span><span class="sxs-lookup"><span data-stu-id="32a95-223">CONCATENATE(Company.'find()'.Name, ";", Company.'find()'.DataArea)</span></span>  
+24. <span data-ttu-id="32a95-224">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="32a95-224">Click Save.</span></span>
+25. <span data-ttu-id="32a95-225">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="32a95-225">Close the page.</span></span>
+26. <span data-ttu-id="32a95-226">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="32a95-226">Click Save.</span></span>
+27. <span data-ttu-id="32a95-227">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="32a95-227">Close the page.</span></span>
+28. <span data-ttu-id="32a95-228">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="32a95-228">Close the page.</span></span>
+29. <span data-ttu-id="32a95-229">Valitse Suorita luonnos -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="32a95-229">Select Yes in the Run Draft field.</span></span>
 
-## <a name="use-an-existing-er-model-mapping-configuration"></a>Aiemmin määritetyn ER-mallin yhdistämismäärityksen konfiguraation käyttäminen
-1. Valitse puussa Sample data model\Sample format.
-2. Valitse Suorita.
-    * Ota huomioon, että ER-muotokonfiguraation luonnosversiota ei voi suorittaa, koska suoritettavan ER-muodon tietolähteeksi valitulla määrittämättömällä tietomallilla on käytettävissä useita mallin yhdistämismäärityksen konfiguraatioita.   
-    * Seuraavaksi määritetään vaihtoehtoinen mallin yhdistämismäärityksen konfiguraatio, josta mallin yhdistämismäärityksiä käytetään tietolähteinä ER-muodon suorituksessa.   
-3. Valitse puussa Sample data model\Sample mapping (alternative).
-4. Valitse Mallin määrityksen oletusarvo -kentässä Kyllä.
-5. Valitse puussa Sample data model\Sample format.
-6. Valitse Suorita.
-7. Valitse OK.
-    * Ota huomioon, että tämä muotokonfiguraatio käyttää mallin yhdistämismäärityksen oletuskonfiguraatiota sähköisen asiakirjan (luotu tuloste sisältää yrityskoodin) luomiseen.  
+## <a name="use-an-existing-er-model-mapping-configuration"></a><span data-ttu-id="32a95-230">Aiemmin määritetyn ER-mallin yhdistämismäärityksen konfiguraation käyttäminen</span><span class="sxs-lookup"><span data-stu-id="32a95-230">Use an existing ER model mapping configuration</span></span>
+1. <span data-ttu-id="32a95-231">Valitse puussa Sample data model\Sample format.</span><span class="sxs-lookup"><span data-stu-id="32a95-231">In the tree, select 'Sample data model\Sample format'.</span></span>
+2. <span data-ttu-id="32a95-232">Valitse Suorita.</span><span class="sxs-lookup"><span data-stu-id="32a95-232">Click Run.</span></span>
+    * <span data-ttu-id="32a95-233">Ota huomioon, että ER-muotokonfiguraation luonnosversiota ei voi suorittaa, koska suoritettavan ER-muodon tietolähteeksi valitulla määrittämättömällä tietomallilla on käytettävissä useita mallin yhdistämismäärityksen konfiguraatioita.</span><span class="sxs-lookup"><span data-stu-id="32a95-233">Note that the selected draft version of the ER format configuration can’t be executed because there is more than one model mapping configuration available for the undefined data model that has been selected as the data source of the running ER format.</span></span>   
+    * <span data-ttu-id="32a95-234">Seuraavaksi määritetään vaihtoehtoinen mallin yhdistämismäärityksen konfiguraatio, josta mallin yhdistämismäärityksiä käytetään tietolähteinä ER-muodon suorituksessa.</span><span class="sxs-lookup"><span data-stu-id="32a95-234">Next, you will define the alternative model mapping configuration as the one from which model mappings will be used as data sources for running ER format.</span></span>   
+3. <span data-ttu-id="32a95-235">Valitse puussa Sample data model\Sample mapping (alternative).</span><span class="sxs-lookup"><span data-stu-id="32a95-235">In the tree, select 'Sample data model\Sample mapping (alternative)'.</span></span>
+4. <span data-ttu-id="32a95-236">Valitse Mallin määrityksen oletusarvo -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="32a95-236">Select Yes in the Default for model mapping field.</span></span>
+5. <span data-ttu-id="32a95-237">Valitse puussa Sample data model\Sample format.</span><span class="sxs-lookup"><span data-stu-id="32a95-237">In the tree, select 'Sample data model\Sample format'.</span></span>
+6. <span data-ttu-id="32a95-238">Valitse Suorita.</span><span class="sxs-lookup"><span data-stu-id="32a95-238">Click Run.</span></span>
+7. <span data-ttu-id="32a95-239">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="32a95-239">Click OK.</span></span>
+    * <span data-ttu-id="32a95-240">Ota huomioon, että tämä muotokonfiguraatio käyttää mallin yhdistämismäärityksen oletuskonfiguraatiota sähköisen asiakirjan (luotu tuloste sisältää yrityskoodin) luomiseen.</span><span class="sxs-lookup"><span data-stu-id="32a95-240">Note that the default model mapping configuration is used by this format configuration for generating the electronic document (the created output contains the company code).</span></span>  
 
 

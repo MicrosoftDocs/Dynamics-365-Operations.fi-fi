@@ -18,246 +18,246 @@ ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a7275e9ad8d655d0d2ee5ba90a792775dec0cf05
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: fc36d399759b6321995f9bd827849c8a0bced090
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="project-resourcing"></a>Projektin resursointi
+# <a name="project-resourcing"></a><span data-ttu-id="e1e08-103">Projektin resursointi</span><span class="sxs-lookup"><span data-stu-id="e1e08-103">Project resourcing</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä aiheessa on tietoja projektien resursoinnista.
+<span data-ttu-id="e1e08-104">Tässä aiheessa on tietoja projektien resursoinnista.</span><span class="sxs-lookup"><span data-stu-id="e1e08-104">This topic provides information about project resourcing.</span></span>
 
-Yksi projekti- ja resurssipäälliköiden haasteista projektin suunnitteluvaiheessa on resurssien kohdistaminen. Tällöin on määritettävä ja varattava oikea resurssi projektityöhön. Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa voi määrittää projektien resursointitoiminnoilla roolit, joita käsitellään väliaikaisina resursseina ja jotka voidaan sitten varata tiettyyn sitoumukseen tai sitoumuksen osaksi. Tämäntyyppisen resursoinnin avulla projekti- ja resurssipäälliköt voivat suorittaa seuraavia tehtäviä:
+<span data-ttu-id="e1e08-105">Yksi projekti- ja resurssipäälliköiden haasteista projektin suunnitteluvaiheessa on resurssien kohdistaminen. Tällöin on määritettävä ja varattava oikea resurssi projektityöhön.</span><span class="sxs-lookup"><span data-stu-id="e1e08-105">One challenge for project managers and resource managers during the project planning stage is resource allocation, where they must determine and reserve the correct resource to work on a project.</span></span> <span data-ttu-id="e1e08-106">Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa voi määrittää projektien resursointitoiminnoilla roolit, joita käsitellään väliaikaisina resursseina ja jotka voidaan sitten varata tiettyyn sitoumukseen tai sitoumuksen osaksi.</span><span class="sxs-lookup"><span data-stu-id="e1e08-106">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, resourcing capabilities for projects let you define roles that are treated as temporary resources that can be reserved for a specific engagement, or part of an engagement.</span></span> <span data-ttu-id="e1e08-107">Tämäntyyppisen resursoinnin avulla projekti- ja resurssipäälliköt voivat suorittaa seuraavia tehtäviä:</span><span class="sxs-lookup"><span data-stu-id="e1e08-107">This type of resourcing lets project managers and resource managers complete the following tasks:</span></span>
 
--   Määrittää roolin, jolla on resurssien kohdistamista helpottavat tarvittavat osaamisalueet.
--   Määrittää roolien avulla varattuihin resursseihin perustuvan alustavan sitoumusaikataulun.
--   Arvioida kustannuksia ja määrittää alustavan budjetin projektiin liitettyjen roolien ja resurssien perusteella.
--   Arvioida roolien avulla kuhunkin sitoumukseen tarvittavien resurssivarausten määrän.
--   Arvioida projektin koko elinkaaren ajaksi tarvittavien resurssien määrän.
--   Laatia työrakenteen käyttämällä alustavia resurssimäärityksiä.
+-   <span data-ttu-id="e1e08-108">Määrittää roolin, jolla on resurssien kohdistamista helpottavat tarvittavat osaamisalueet.</span><span class="sxs-lookup"><span data-stu-id="e1e08-108">Define a role that has the required competencies to make it easy to match resources.</span></span>
+-   <span data-ttu-id="e1e08-109">Määrittää roolien avulla varattuihin resursseihin perustuvan alustavan sitoumusaikataulun.</span><span class="sxs-lookup"><span data-stu-id="e1e08-109">Use roles to define an initial engagement schedule that is based on reserved resources.</span></span>
+-   <span data-ttu-id="e1e08-110">Arvioida kustannuksia ja määrittää alustavan budjetin projektiin liitettyjen roolien ja resurssien perusteella.</span><span class="sxs-lookup"><span data-stu-id="e1e08-110">Estimate costs and determine an initial budget, based on assigned roles and resources for a project.</span></span>
+-   <span data-ttu-id="e1e08-111">Arvioida roolien avulla kuhunkin sitoumukseen tarvittavien resurssivarausten määrän.</span><span class="sxs-lookup"><span data-stu-id="e1e08-111">Use roles to estimate the number of resource reservations that are required for each engagement.</span></span>
+-   <span data-ttu-id="e1e08-112">Arvioida projektin koko elinkaaren ajaksi tarvittavien resurssien määrän.</span><span class="sxs-lookup"><span data-stu-id="e1e08-112">Estimate the number of resources that are required for the entire life cycle of a project.</span></span>
+-   <span data-ttu-id="e1e08-113">Laatia työrakenteen käyttämällä alustavia resurssimäärityksiä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-113">Draft a work breakdown structure (WBS) by using the initial resource assignments.</span></span>
 
-[![Projektin elinkaari](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg) 
+<span data-ttu-id="e1e08-114">[![Projektin elinkaari](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg)</span><span class="sxs-lookup"><span data-stu-id="e1e08-114">[![Project life cycle](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg)</span></span> 
 
-Projektisuunnittelun edetessä suunnitellut resurssit voidaan korvata henkilöstöllisillä resursseilla. Projektipäällikkö voi myös palata päivittämään resursointivaraukset missä tahansa projektin vaiheessa.
+<span data-ttu-id="e1e08-115">Projektisuunnittelun edetessä suunnitellut resurssit voidaan korvata henkilöstöllisillä resursseilla.</span><span class="sxs-lookup"><span data-stu-id="e1e08-115">As project planning proceeds, planned resources can be replaced with staffed resources.</span></span> <span data-ttu-id="e1e08-116">Projektipäällikkö voi myös palata päivittämään resursointivaraukset missä tahansa projektin vaiheessa.</span><span class="sxs-lookup"><span data-stu-id="e1e08-116">The project manager can also go back and update the resourcing reservations during any of the project stages.</span></span>
 
-## <a name="set-up-project-resources"></a>Projektiresurssien määrittäminen
-Sinun täytyy määrittää kalenteri ja liittää se työntekijään. Kalenterin avulla aikataulutetaan projekti ja siihen varattujen resurssien työaika. Kalenteria määrittäessään projektipäälliköt voivat suorittaa resurssien tasaamisen resurssien optimoinnin yhteydessä. Kalenterin aikataulun perusteella resursseille voidaan asettaa rajoituksia. Voit määrittää kalenterin **Kalenterit**-sivulla. 
+## <a name="set-up-project-resources"></a><span data-ttu-id="e1e08-117">Projektiresurssien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="e1e08-117">Set up project resources</span></span>
+<span data-ttu-id="e1e08-118">Sinun täytyy määrittää kalenteri ja liittää se työntekijään.</span><span class="sxs-lookup"><span data-stu-id="e1e08-118">You must set up a calendar and associate it with an employee or a worker.</span></span> <span data-ttu-id="e1e08-119">Kalenterin avulla aikataulutetaan projekti ja siihen varattujen resurssien työaika.</span><span class="sxs-lookup"><span data-stu-id="e1e08-119">The calendar is used to schedule the project and the working time of the resources that are reserved for the project.</span></span> <span data-ttu-id="e1e08-120">Kalenteria määrittäessään projektipäälliköt voivat suorittaa resurssien tasaamisen resurssien optimoinnin yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-120">During calendar setup, project managers can perform resource leveling as part of resource optimization.</span></span> <span data-ttu-id="e1e08-121">Kalenterin aikataulun perusteella resursseille voidaan asettaa rajoituksia.</span><span class="sxs-lookup"><span data-stu-id="e1e08-121">Based on the calendar schedule, restrictions can be placed on resources.</span></span> <span data-ttu-id="e1e08-122">Voit määrittää kalenterin **Kalenterit**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="e1e08-122">You can set up a calendar on the **Calendars** page.</span></span> 
 
-Kun määrität työntekijän projektiin resurssiksi, voit valita sen yrityksen työntekijöitä, jonka resursseja olet määrittämässä, tai organisaation muun yrityksen työntekijöitä. Ne ovat konsernin sisäisiä resursseja. Seuraavissa ohjeissa selitetään, miten työntekijä määritetään yrityksen projektiin resurssiksi ja miten konsernin sisäinen projektin resurssi määritetään.
+<span data-ttu-id="e1e08-123">Kun määrität työntekijän projektiin resurssiksi, voit valita sen yrityksen työntekijöitä, jonka resursseja olet määrittämässä, tai organisaation muun yrityksen työntekijöitä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-123">When you set up a worker as a project resource, you can select from workers that work in the company for which you are setting up resources or, you can select workers from other companies within your organization.</span></span> <span data-ttu-id="e1e08-124">Ne ovat konsernin sisäisiä resursseja.</span><span class="sxs-lookup"><span data-stu-id="e1e08-124">These are intercompany resources.</span></span> <span data-ttu-id="e1e08-125">Seuraavissa ohjeissa selitetään, miten työntekijä määritetään yrityksen projektiin resurssiksi ja miten konsernin sisäinen projektin resurssi määritetään.</span><span class="sxs-lookup"><span data-stu-id="e1e08-125">The following procedures explain how to set up a worker as a project resource within your company and how to set up an intercompany project resource.</span></span>
 
-### <a name="set-up-a-worker-as-a-project-resource"></a>Työntekijän määrittäminen projektiresurssiksi
+### <a name="set-up-a-worker-as-a-project-resource"></a><span data-ttu-id="e1e08-126">Työntekijän määrittäminen projektiresurssiksi</span><span class="sxs-lookup"><span data-stu-id="e1e08-126">Set up a worker as a project resource</span></span>
 
-1.  Valitse **Työntekijät**-sivun **Työntekijät**-luettelosta työntekijä, jonka haluat lisätä projektiin resurssiksi, ja avaa haluamasi työntekijätietue.
-2.  Valitse toimintoruudussa **Projekti** &gt; **Asetukset** &gt; **Projektiasetukset**.
-3.  Valitse kalenteri ja sulje sivu.
+1.  <span data-ttu-id="e1e08-127">Valitse **Työntekijät**-sivun **Työntekijät**-luettelosta työntekijä, jonka haluat lisätä projektiin resurssiksi, ja avaa haluamasi työntekijätietue.</span><span class="sxs-lookup"><span data-stu-id="e1e08-127">On the **Workers** page, in the **Workers** list, select the worker that you're adding as a project resource, and open the worker record.</span></span>
+2.  <span data-ttu-id="e1e08-128">Valitse toimintoruudussa **Projekti** &gt; **Asetukset** &gt; **Projektiasetukset**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-128">On the Action Pane, click **Project** &gt; **Setup** &gt; **Project setup**.</span></span>
+3.  <span data-ttu-id="e1e08-129">Valitse kalenteri ja sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="e1e08-129">Select a calendar, and then close the page.</span></span>
 
-Voit myös määrittää resurssille oletusprojektit eräänlaisena esimäärityksenä. Esimäärityksiä voidaan käyttää, kun resurssi- tai projektipäällikkö tietää jo etukäteen, missä projekteissa resurssi työskentelee. Esimääritykset voivat perustua myös projektin sponsorin tai asiakkaan pyyntöön. Jos haluat esimäärittää projektin, valitse **Määritä projektit** -sivulta **Projektit**-välilehdestä **Jäljellä olevat projektit** -luettelosta haluamasi projekti.
+<span data-ttu-id="e1e08-130">Voit myös määrittää resurssille oletusprojektit eräänlaisena esimäärityksenä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-130">You can also specify default projects for a resource as a type of pre-assignment.</span></span> <span data-ttu-id="e1e08-131">Esimäärityksiä voidaan käyttää, kun resurssi- tai projektipäällikkö tietää jo etukäteen, missä projekteissa resurssi työskentelee.</span><span class="sxs-lookup"><span data-stu-id="e1e08-131">Pre-assignments can be used when the resource manager or project manager knows which projects the resource will be working on in advance.</span></span> <span data-ttu-id="e1e08-132">Esimääritykset voivat perustua myös projektin sponsorin tai asiakkaan pyyntöön.</span><span class="sxs-lookup"><span data-stu-id="e1e08-132">Pre-assignments can also be based on the request of a project sponsor or customer.</span></span> <span data-ttu-id="e1e08-133">Jos haluat esimäärittää projektin, valitse **Määritä projektit** -sivulta **Projektit**-välilehdestä **Jäljellä olevat projektit** -luettelosta haluamasi projekti.</span><span class="sxs-lookup"><span data-stu-id="e1e08-133">To pre-assign a project, on the **Assign projects** page, on the **Projects** tab, in the **Remaining projects** list, select the appropriate project.</span></span>
 
-### <a name="set-up-an-intercompany-resource"></a>Konsernin sisäisen resurssin määrittäminen
+### <a name="set-up-an-intercompany-resource"></a><span data-ttu-id="e1e08-134">Konsernin sisäisen resurssin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="e1e08-134">Set up an intercompany resource</span></span>
 
-Kun määrität työntekijää konsernin sisäiseksi resurssiksi, määritä tiedot yrityksestä, joka antaa resurssin lainaksi ja yrityksestä, joka ottaa resurssin lainaksi. 
+<span data-ttu-id="e1e08-135">Kun määrität työntekijää konsernin sisäiseksi resurssiksi, määritä tiedot yrityksestä, joka antaa resurssin lainaksi ja yrityksestä, joka ottaa resurssin lainaksi.</span><span class="sxs-lookup"><span data-stu-id="e1e08-135">When you set up a worker as an intercompany resource, you must complete the setup in the lending company and the borrowing company.</span></span> 
 
-**Yritys, joka antaa resurssin lainaksi:**
+<span data-ttu-id="e1e08-136">**Yritys, joka antaa resurssin lainaksi:**</span><span class="sxs-lookup"><span data-stu-id="e1e08-136">**In the lending company:**</span></span>
 
-1.  Varmista Finance and Operationsissa, että resurssin lainaava yritys on valittu. Tee sitten toimenpiteet, jotka on mainittu edellä olevassa kohdassa Työntekijän määrittäminen projektiresurssiksi.
-2.  Siirry kohtaan **Kirjanpito**&gt; **Kirjausasetukset **&gt; **Konsernikirjanpito**. Valitse **Uusi**.
-3.  **Yrityksen tunnus **-kenttään yritys, jolta resurssi lainataan. Anna tarvittavat tiedot muihin kenttiin ja valitse sitten **Tallenna**.
-4.  Siirry kohtaan **Projektinhallinta ja kirjanpito **&gt; **Asetukset **&gt; **Hinnat **&gt; **Siirtohinta**.** **
-5.  Valitse **Siirtohinta**-näytössä **Uusi**. Valitse sitten **Lainaava yritys **-kenttään soveltuva yritys.
-6.  Jos haluat lainata lainaavalle yritykselle resurssin, jonka loit tämän osan alussa, valitse **Resurssi**-kentässä luomasi resurssin nimi. Jos haluat, että kaikki yrityksen resurssit ovat lainaavan yrityksen käytettävissä, jätä **Resurssi*-kenttä tyhjäksi.
-7.  Siirry kohtaan **Projektinhallinta ja kirjanpito **&gt; **Asetukset **&gt; **Projektinhallinnan ja kirjanpidon parametrit**. Määritä **Konsernin sisäinen **-välilehden **Ota käyttöön konsernin sisäinen resurssien ajoitus ja aikaraportit **-kentän arvoksi **Kyllä**.
+1.  <span data-ttu-id="e1e08-137">Varmista Finance and Operationsissa, että resurssin lainaava yritys on valittu. Tee sitten toimenpiteet, jotka on mainittu edellä olevassa kohdassa Työntekijän määrittäminen projektiresurssiksi.</span><span class="sxs-lookup"><span data-stu-id="e1e08-137">In Finance and Operations, verify that the lending company is selected, and then complete the procedure above, "Set up a worker as a project resource."</span></span>
+2.  <span data-ttu-id="e1e08-138">Siirry kohtaan **Kirjanpito**&gt; **Kirjausasetukset **&gt; **Konsernikirjanpito**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-138">Go to **General ledger **&gt; **Posting setup **&gt; **Intercompany accounting**.</span></span> <span data-ttu-id="e1e08-139">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-139">Click **New**.</span></span>
+3.  <span data-ttu-id="e1e08-140">**Yrityksen tunnus **-kenttään yritys, jolta resurssi lainataan.</span><span class="sxs-lookup"><span data-stu-id="e1e08-140">In the **Legal entity ID **field, select the lending company.</span></span> <span data-ttu-id="e1e08-141">Anna tarvittavat tiedot muihin kenttiin ja valitse sitten **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-141">Fill in the remaining fields as appropriate, and then click **Save**.</span></span>
+4.  <span data-ttu-id="e1e08-142">Siirry kohtaan **Projektinhallinta ja kirjanpito **&gt; **Asetukset **&gt; **Hinnat **&gt; **Siirtohinta**.**</span><span class="sxs-lookup"><span data-stu-id="e1e08-142">Go the **Project management and accounting **&gt; **Setup **&gt; **Prices ** &gt; **Transfer price**.**</span></span> **
+5.  <span data-ttu-id="e1e08-143">Valitse **Siirtohinta**-näytössä **Uusi**. Valitse sitten **Lainaava yritys **-kenttään soveltuva yritys.</span><span class="sxs-lookup"><span data-stu-id="e1e08-143">On the **Transfer price **form, click **New**, and in the **Borrowing legal entity **field, select the appropriate company.</span></span>
+6.  <span data-ttu-id="e1e08-144">Jos haluat lainata lainaavalle yritykselle resurssin, jonka loit tämän osan alussa, valitse **Resurssi**-kentässä luomasi resurssin nimi.</span><span class="sxs-lookup"><span data-stu-id="e1e08-144">If you want to only loan the borrowing company the resource that you created at the beginning of this section, in the **Resource** field, select the name of the resource that you created.</span></span> <span data-ttu-id="e1e08-145">Jos haluat, että kaikki yrityksen resurssit ovat lainaavan yrityksen käytettävissä, jätä **Resurssi*-kenttä tyhjäksi.</span><span class="sxs-lookup"><span data-stu-id="e1e08-145">If you want to make all resources in the company available to the borrowing company, leave the **Resource **field blank.</span></span>
+7.  <span data-ttu-id="e1e08-146">Siirry kohtaan **Projektinhallinta ja kirjanpito **&gt; **Asetukset **&gt; **Projektinhallinnan ja kirjanpidon parametrit**. Määritä **Konsernin sisäinen **-välilehden **Ota käyttöön konsernin sisäinen resurssien ajoitus ja aikaraportit **-kentän arvoksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-146">Go to **Project management and accounting **&gt; **Setup **&gt; **Project management and accounting parameters**, and on the **Intercompany **tab, set the **Enable intercompany resource scheduling and timesheets **field to **Yes**.</span></span>
 
-**Yritys, joka lainaa resurssin:**
+<span data-ttu-id="e1e08-147">**Yritys, joka lainaa resurssin:**</span><span class="sxs-lookup"><span data-stu-id="e1e08-147">**In the borrowing company:**</span></span>
 
-1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektiresurssit** &gt; **Resurssiluettelo**.
-2.  Syötä hakusuodattimeen edellisessä toimenpiteessä sille yritykselle luomasi resurssin nimi, jolta resurssi lainataan. Varmista, että nimi löytyy sen yrityksen resurssiluettelosta, jolle resurssi lainataan.
+1.  <span data-ttu-id="e1e08-148">Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektiresurssit** &gt; **Resurssiluettelo**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-148">Go to **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.</span></span>
+2.  <span data-ttu-id="e1e08-149">Syötä hakusuodattimeen edellisessä toimenpiteessä sille yritykselle luomasi resurssin nimi, jolta resurssi lainataan. Varmista, että nimi löytyy sen yrityksen resurssiluettelosta, jolle resurssi lainataan.</span><span class="sxs-lookup"><span data-stu-id="e1e08-149">In the search filter, enter the name of the resource that you created in the previous procedure for the lending company to verify that the name is included in the resource list for the borrowing company.</span></span>
 
-## <a name="manage-resource-competencies"></a>Resurssin osaamisalueiden hallinta
-Resurssin osaamistietojen määritys on olennainen osa resurssien hallintaa. Osaamisalueita voi käyttää perustasona määriteltäessä resursseja, joilla on oikeanlaiset taidot, koulutus, todistukset ja projektikokemus. Nämä tiedot on määritettävä joka resurssille ja päivitettävä säännöllisesti. Näin voit maksimoida osaamisen, kun tiettyjä resurssien osaamisalueita yhdistellään projektin resurssimäärityksen yhteydessä. [![Esimerkkejä osaamisalueista, todistuksista, koulutuksesta ja projektikokemuksesta](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
+## <a name="manage-resource-competencies"></a><span data-ttu-id="e1e08-150">Resurssin osaamisalueiden hallinta</span><span class="sxs-lookup"><span data-stu-id="e1e08-150">Manage resource competencies</span></span>
+<span data-ttu-id="e1e08-151">Resurssin osaamistietojen määritys on olennainen osa resurssien hallintaa.</span><span class="sxs-lookup"><span data-stu-id="e1e08-151">Resource competencies are an essential part of resource management.</span></span> <span data-ttu-id="e1e08-152">Osaamisalueita voi käyttää perustasona määriteltäessä resursseja, joilla on oikeanlaiset taidot, koulutus, todistukset ja projektikokemus.</span><span class="sxs-lookup"><span data-stu-id="e1e08-152">Competencies can be used as a baseline to determine resources that have the correct balance of skills, education, certification, and project experience.</span></span> <span data-ttu-id="e1e08-153">Nämä tiedot on määritettävä joka resurssille ja päivitettävä säännöllisesti.</span><span class="sxs-lookup"><span data-stu-id="e1e08-153">You should set up this information for each resource and update it on a regular basis.</span></span> <span data-ttu-id="e1e08-154">Näin voit maksimoida osaamisen, kun tiettyjä resurssien osaamisalueita yhdistellään projektin resurssimäärityksen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-154">In this way, you can maximize capabilities when specific resource competencies are matched during project resource assignment.</span></span> <span data-ttu-id="e1e08-155">[![Esimerkkejä osaamisalueista, todistuksista, koulutuksesta ja projektikokemuksesta](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg)</span><span class="sxs-lookup"><span data-stu-id="e1e08-155">[![Examples of skills, certifications, education, and project experience](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg)</span></span> 
 
-Seuraavissa ohjeissa selitetään, miten voi määrittää joitakin resurssin osaamisalueista. 
+<span data-ttu-id="e1e08-156">Seuraavissa ohjeissa selitetään, miten voi määrittää joitakin resurssin osaamisalueista.</span><span class="sxs-lookup"><span data-stu-id="e1e08-156">The following procedures explain how to set up some of the competencies for a resource.</span></span> 
 
-Voit määrittää työntekijän osaamisalueet joko Henkilöstöhallinto-osassa **Työntekijät**-luettelossa tai Projektinhallinta ja kirjanpito -osassa **Resurssit**-sivulla. Seuraavissa vaiheissa käytetään Henkilöstöhallinto-osan **Työntekijät**-luetteloa.
+<span data-ttu-id="e1e08-157">Voit määrittää työntekijän osaamisalueet joko Henkilöstöhallinto-osassa **Työntekijät**-luettelossa tai Projektinhallinta ja kirjanpito -osassa **Resurssit**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="e1e08-157">To set up competencies for a worker, you can use either the **Workers** list page in Human resources or the **Resources** list page in Project management and accounting.</span></span> <span data-ttu-id="e1e08-158">Seuraavissa vaiheissa käytetään Henkilöstöhallinto-osan **Työntekijät**-luetteloa.</span><span class="sxs-lookup"><span data-stu-id="e1e08-158">For the following procedures, the **Workers** list page in Human resources is used.</span></span>
 
-### <a name="set-up-competencies-certificates"></a>Osaamisalueiden määrittäminen: todistukset
+### <a name="set-up-competencies-certificates"></a><span data-ttu-id="e1e08-159">Osaamisalueiden määrittäminen: todistukset</span><span class="sxs-lookup"><span data-stu-id="e1e08-159">Set up competencies: Certificates</span></span>
 
-1.  Valitse **Työntekijät**-luettelosivulta sen työntekijän rivi, johon haluat lisätä todistustiedot.
-2.  Napsauta toimintoruudun **Työntekijä**-välilehdessä **Osaamistiedot**-ryhmässä **Todistukset**.
-3.  Valitse **Uusi**.
-4.  Valitse **Todistuksen tyyppi** -kentästä **PMP**.
-5.  Valitse **Alkamispäivä** -kentästä **10/1/2015**.
-6.  Valitse **Tallenna** ja sulje sitten sivu.
+1.  <span data-ttu-id="e1e08-160">Valitse **Työntekijät**-luettelosivulta sen työntekijän rivi, johon haluat lisätä todistustiedot.</span><span class="sxs-lookup"><span data-stu-id="e1e08-160">On the **Workers** list page, select the line of the worker that you're adding certificate information for.</span></span>
+2.  <span data-ttu-id="e1e08-161">Napsauta toimintoruudun **Työntekijä**-välilehdessä **Osaamistiedot**-ryhmässä **Todistukset**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-161">On the Action Pane, on the **Worker** tab, in the **Competencies** group, click **Certificates**.</span></span>
+3.  <span data-ttu-id="e1e08-162">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-162">Click **New**.</span></span>
+4.  <span data-ttu-id="e1e08-163">Valitse **Todistuksen tyyppi** -kentästä **PMP**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-163">In the **Certificate type** field, select **PMP**.</span></span>
+5.  <span data-ttu-id="e1e08-164">Valitse **Alkamispäivä** -kentästä **10/1/2015**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-164">In the **Start date** field, select **10/1/2015**.</span></span>
+6.  <span data-ttu-id="e1e08-165">Valitse **Tallenna** ja sulje sitten sivu.</span><span class="sxs-lookup"><span data-stu-id="e1e08-165">Click **Save**, and then close the page.</span></span>
 
-### <a name="set-up-competencies-skills"></a>Osaamisalueiden määrittäminen: osaamisalueet
+### <a name="set-up-competencies-skills"></a><span data-ttu-id="e1e08-166">Osaamisalueiden määrittäminen: osaamisalueet</span><span class="sxs-lookup"><span data-stu-id="e1e08-166">Set up competencies: Skills</span></span>
 
-1.  Varmista **Työntekijät**-luettelosivulla, että aiemmassa vaiheessa valitsemasi työntekijä on yhä valittuna. Valitse sitten toimintoruudun **Työntekijä**-välilehdessä **Osaamistiedot**-ryhmässä **Osaamisalueet**.
-2.  Valitse **Uusi**.
-3.  Valitse **Osaamisalue**-kentästä **Projektinhallinta**.
-4.  Valitse **Taso**-kentästä **Asiantuntija**.
-5.  Valitse **Tasopäivämäärä**-kentästä **1-/14/2014**.
-6.  Kirjoita **Kokemus vuosina** -kenttään arvoksi **10**.
-7.  Valitse **Tallenna** ja sulje sitten sivu.
+1.  <span data-ttu-id="e1e08-167">Varmista **Työntekijät**-luettelosivulla, että aiemmassa vaiheessa valitsemasi työntekijä on yhä valittuna.</span><span class="sxs-lookup"><span data-stu-id="e1e08-167">On the **Workers** list page, make sure that the worker that you used in the previous procedure is still selected.</span></span> <span data-ttu-id="e1e08-168">Valitse sitten toimintoruudun **Työntekijä**-välilehdessä **Osaamistiedot**-ryhmässä **Osaamisalueet**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-168">Then, on the Action Pane, on the **Worker** tab, in the **Competencies** group, click **Skills**.</span></span>
+2.  <span data-ttu-id="e1e08-169">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-169">Click **New**.</span></span>
+3.  <span data-ttu-id="e1e08-170">Valitse **Osaamisalue**-kentästä **Projektinhallinta**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-170">In the **Skill** field, select **Project management**.</span></span>
+4.  <span data-ttu-id="e1e08-171">Valitse **Taso**-kentästä **Asiantuntija**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-171">In the **Level** field, select **5 Expert**.</span></span>
+5.  <span data-ttu-id="e1e08-172">Valitse **Tasopäivämäärä**-kentästä **1-/14/2014**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-172">In the **Level date** field, select **1-/14/2014**.</span></span>
+6.  <span data-ttu-id="e1e08-173">Kirjoita **Kokemus vuosina** -kenttään arvoksi **10**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-173">In the **Years of experience** field, enter **10**.</span></span>
+7.  <span data-ttu-id="e1e08-174">Valitse **Tallenna** ja sulje sitten sivu.</span><span class="sxs-lookup"><span data-stu-id="e1e08-174">Click **Save**, and then close the page.</span></span>
 
-## <a name="create-a-new-project"></a>Luo uusi projekti
-1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Työtilat** &gt; **Projektinhallinta**.
-2.  Valitse **Uusi projekti** ja syötä sitten seuraavat arvot:
-    -   **Projektityyppi** - Aika ja materiaali
-    -   **Projektin nimi** - XYZ-päivitysvaihe 2
-    -   **Projektiryhmä** - TM\_WIP
-    -   **Projektisopimuksen tunnus** - 00000002
-3.  Valitse **Luo projekti**.
+## <a name="create-a-new-project"></a><span data-ttu-id="e1e08-175">Luo uusi projekti</span><span class="sxs-lookup"><span data-stu-id="e1e08-175">Create a new project</span></span>
+1.  <span data-ttu-id="e1e08-176">Valitse **Projektinhallinta ja kirjanpito** &gt; **Työtilat** &gt; **Projektinhallinta**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-176">Click **Project management and accounting** &gt; **Workspaces** &gt; **Project management**.</span></span>
+2.  <span data-ttu-id="e1e08-177">Valitse **Uusi projekti** ja syötä sitten seuraavat arvot:</span><span class="sxs-lookup"><span data-stu-id="e1e08-177">Click **New project**, and enter the following values:</span></span>
+    -   <span data-ttu-id="e1e08-178">**Projektityyppi** - Aika ja materiaali</span><span class="sxs-lookup"><span data-stu-id="e1e08-178">**Project type** - Time and material</span></span>
+    -   <span data-ttu-id="e1e08-179">**Projektin nimi** - XYZ-päivitysvaihe 2</span><span class="sxs-lookup"><span data-stu-id="e1e08-179">**Project name** - XYZ Upgrade Phase 2</span></span>
+    -   <span data-ttu-id="e1e08-180">**Projektiryhmä** - TM\_WIP</span><span class="sxs-lookup"><span data-stu-id="e1e08-180">**Project group** - TM\_WIP</span></span>
+    -   <span data-ttu-id="e1e08-181">**Projektisopimuksen tunnus** - 00000002</span><span class="sxs-lookup"><span data-stu-id="e1e08-181">**Project contract ID**  - 00000002</span></span>
+3.  <span data-ttu-id="e1e08-182">Valitse **Luo projekti**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-182">Click **Create project**.</span></span>
 
-### <a name="assign-a-resource-to-a-project"></a>Resurssin määrittäminen projektiin
+### <a name="assign-a-resource-to-a-project"></a><span data-ttu-id="e1e08-183">Resurssin määrittäminen projektiin</span><span class="sxs-lookup"><span data-stu-id="e1e08-183">Assign a resource to a project</span></span>
 
-1.  Valitse **Henkilöstöhallinto** &gt; **Työntekijät** &gt; **Työntekijät**.
-2.  Valitse **Työntekijät**-luettelosta sen työntekijän tietue, jonka osaamisalueet määritit aiemmassa vaiheessa, ja avaa tietue.
-3.  Valitse toimintoruudussa **Projekti**-välilehden **Asetukset**-ryhmästä **Määritä projektit**.
-4.  Napsauta **Resurssin oikeellisuustarkistuksen projektimääritykset** -sivulla **Projektit**-välilehteä.
-5.  Suodata **Lisää projekti valittuihin projekteihin** -kohdassa näkyviin XYZ-päivitysvaihe 2 -projekti
-6.  Valitse **Jäljellä olevat projektit** -ruudusta haluamasi projekti ja lisää se **Valitut projektit** -ruutuun napsauttamalla nuolta.
-7.  Sulje sivu.
+1.  <span data-ttu-id="e1e08-184">Valitse **Henkilöstöhallinto** &gt; **Työntekijät** &gt; **Työntekijät**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-184">Click **Human resources** &gt; **Workers** &gt; **Workers**.</span></span>
+2.  <span data-ttu-id="e1e08-185">Valitse **Työntekijät**-luettelosta sen työntekijän tietue, jonka osaamisalueet määritit aiemmassa vaiheessa, ja avaa tietue.</span><span class="sxs-lookup"><span data-stu-id="e1e08-185">In the **Workers** list, select the record for the worker that you previously set up competencies for, and open the worker record.</span></span>
+3.  <span data-ttu-id="e1e08-186">Valitse toimintoruudussa **Projekti**-välilehden **Asetukset**-ryhmästä **Määritä projektit**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-186">On the Action Pane, on the **Project** tab, in the **Setup** group, click **Assign projects**.</span></span>
+4.  <span data-ttu-id="e1e08-187">Napsauta **Resurssin oikeellisuustarkistuksen projektimääritykset** -sivulla **Projektit**-välilehteä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-187">On the **Resource validation project assignments** page, click the **Projects** tab.</span></span>
+5.  <span data-ttu-id="e1e08-188">Suodata **Lisää projekti valittuihin projekteihin** -kohdassa näkyviin XYZ-päivitysvaihe 2 -projekti</span><span class="sxs-lookup"><span data-stu-id="e1e08-188">In the **Add the project to selected projects**, filter on the project, XYZ Upgrade Phase 2</span></span>
+6.  <span data-ttu-id="e1e08-189">Valitse **Jäljellä olevat projektit** -ruudusta haluamasi projekti ja lisää se **Valitut projektit** -ruutuun napsauttamalla nuolta.</span><span class="sxs-lookup"><span data-stu-id="e1e08-189">In the **Remaining projects** pane, select a project, and then click the arrow to add it to the **Selected projects** pane.</span></span>
+7.  <span data-ttu-id="e1e08-190">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="e1e08-190">Close the page.</span></span>
 
-Tarvittaessa voit myös määrittää resurssille luokkia. Luokkatyyppi on joko Kustannus tai Tuotto. Tämä määräytyy organisaation mukaan. Jos resurssille ei ole määritetty luokkia, Finance and Operations etsii oletusluokan kustannusten ja tuoton tuntihinnoista.
+<span data-ttu-id="e1e08-191">Tarvittaessa voit myös määrittää resurssille luokkia.</span><span class="sxs-lookup"><span data-stu-id="e1e08-191">If needed, you can also assign categories for a resource.</span></span> <span data-ttu-id="e1e08-192">Luokkatyyppi on joko Kustannus tai Tuotto.</span><span class="sxs-lookup"><span data-stu-id="e1e08-192">The category type is either Cost or Revenue.</span></span> <span data-ttu-id="e1e08-193">Tämä määräytyy organisaation mukaan.</span><span class="sxs-lookup"><span data-stu-id="e1e08-193">This is determined by your organization.</span></span> <span data-ttu-id="e1e08-194">Jos resurssille ei ole määritetty luokkia, Finance and Operations etsii oletusluokan kustannusten ja tuoton tuntihinnoista.</span><span class="sxs-lookup"><span data-stu-id="e1e08-194">If there are no assigned categories for the resource, Finance and Operations will look up the default category on hour prices for cost and revenue.</span></span>
 
-### <a name="set-up-project-resource-and-role-characteristics"></a>Projektin resurssin ja rooliominaisuuksien määrittäminen
+### <a name="set-up-project-resource-and-role-characteristics"></a><span data-ttu-id="e1e08-195">Projektin resurssin ja rooliominaisuuksien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="e1e08-195">Set up project resource and role characteristics</span></span>
 
-Projektipäällikkö voi projektin resursointitoiminnolla luoda projektissa tarvittavia rooleja. Rooleja voidaan käyttää, kun vahvistetut resurssit eivät ole vielä tiedossa resurssien varaamisen aikana. Rooleja voidaan väliaikaisesti varata suunnitelluiksi resursseiksi, jotta voit jatkaa projektin suunnitteluvaiheita. 
+<span data-ttu-id="e1e08-196">Projektipäällikkö voi projektin resursointitoiminnolla luoda projektissa tarvittavia rooleja.</span><span class="sxs-lookup"><span data-stu-id="e1e08-196">A project manager can use the project resourcing functionality to create the roles that are required for the project.</span></span> <span data-ttu-id="e1e08-197">Rooleja voidaan käyttää, kun vahvistetut resurssit eivät ole vielä tiedossa resurssien varaamisen aikana.</span><span class="sxs-lookup"><span data-stu-id="e1e08-197">Roles can be used when confirmed resources are still unknown when reserving resources.</span></span> <span data-ttu-id="e1e08-198">Rooleja voidaan väliaikaisesti varata suunnitelluiksi resursseiksi, jotta voit jatkaa projektin suunnitteluvaiheita.</span><span class="sxs-lookup"><span data-stu-id="e1e08-198">Roles can be temporarily reserved as planned resources, so that you can continue the project planning stages.</span></span> 
 
-[![Esimerkki roolista](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
+<span data-ttu-id="e1e08-199">[![Esimerkki roolista](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg)</span><span class="sxs-lookup"><span data-stu-id="e1e08-199">[![Example of a role](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg)</span></span> 
 
-**Skenaario:** Contoso palkattiin suorittamaan aika- ja materiaaliprojekti, jolla on hyväksytty projektin perustamisasiakirja. Nuorempi projektipäällikkö on yhä laatimassa projektin laajuutta. Resurssipäällikkö on parhaillaan määrittämässä resursseja, jotka varataan uuteen projektiin. Yksi rooleista, joita projektin sponsori on toivonut projektin tärkeyden vuoksi, on vastaava projektipäällikkö. Resurssipäällikön on hankittava uusi resurssi, ja hän määrittää roolin järjestelmään siltä varalta, että nuorempi projektipäällikkö tarvitsee resurssitiedot projektin suunnittelua varten. 
+<span data-ttu-id="e1e08-200">**Skenaario:** Contoso palkattiin suorittamaan aika- ja materiaaliprojekti, jolla on hyväksytty projektin perustamisasiakirja.</span><span class="sxs-lookup"><span data-stu-id="e1e08-200">**Scenario:** Contoso was hired to complete a Time and material project that has an approved project charter.</span></span> <span data-ttu-id="e1e08-201">Nuorempi projektipäällikkö on yhä laatimassa projektin laajuutta.</span><span class="sxs-lookup"><span data-stu-id="e1e08-201">The junior project manager is still completing the scope of the project.</span></span> <span data-ttu-id="e1e08-202">Resurssipäällikkö on parhaillaan määrittämässä resursseja, jotka varataan uuteen projektiin.</span><span class="sxs-lookup"><span data-stu-id="e1e08-202">The resource manager is currently identifying specific resources that will be reserved to work on the new project.</span></span> <span data-ttu-id="e1e08-203">Yksi rooleista, joita projektin sponsori on toivonut projektin tärkeyden vuoksi, on vastaava projektipäällikkö.</span><span class="sxs-lookup"><span data-stu-id="e1e08-203">One of the roles that the project sponsor requested, because of the critical nature of the project, is the Senior project manager.</span></span> <span data-ttu-id="e1e08-204">Resurssipäällikön on hankittava uusi resurssi, ja hän määrittää roolin järjestelmään siltä varalta, että nuorempi projektipäällikkö tarvitsee resurssitiedot projektin suunnittelua varten.</span><span class="sxs-lookup"><span data-stu-id="e1e08-204">The resource manager must acquire the new resource and define the role in the system in case the junior project manager requires the resource information during the project planning.</span></span> 
 
-Seuraavissa vaiheissa on esitetty, miten resurssipäällikkö voi määrittää vastaavan projektipäällikön roolin ja liittää siihen resurssin ominaisuudet. Myöhemmin roolin avulla voidaan hakea käytettävissä olevia resursseja, jotka vastaavat tarvittavia resurssin osaamisalueita.
+<span data-ttu-id="e1e08-205">Seuraavissa vaiheissa on esitetty, miten resurssipäällikkö voi määrittää vastaavan projektipäällikön roolin ja liittää siihen resurssin ominaisuudet.</span><span class="sxs-lookup"><span data-stu-id="e1e08-205">The following steps show how the resource manager can set up the Senior project manager role and associate resource characteristics with it.</span></span> <span data-ttu-id="e1e08-206">Myöhemmin roolin avulla voidaan hakea käytettävissä olevia resursseja, jotka vastaavat tarvittavia resurssin osaamisalueita.</span><span class="sxs-lookup"><span data-stu-id="e1e08-206">Later, the role can be used to search for available resources that match the required resource competencies.</span></span>
 
-1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Resurssit** &gt; **Määritä roolit**.
-2.  Valitse **Uusi** ja syötä seuraavat arvot:
-    -   **Roolin tunnus** - Vastaava projektipäällikkö
-    -   **Kuvaus** - Vastaava projektipäällikkö
-3.  Valitse **Luo**.
-4.  Valitse **Vastaava projektipäällikkö** -rooli ja valitse sitten **Määritä ominaisuudet**.
-5.  Valitse **Ominaisuuden tyyppi** -kentästä **Osaamisalue**.
-6.  Syötä **Käytettävissä olevat ominaisuudet** -kenttään hakemasi osaamisalue.
-7.  Valitse **Ominaisuustyyppi**-kentästä **Todistus**.
-8.  Syötä **Käytettävissä olevat ominaisuudet** -kenttään haettava todistustyyppi.
-9.  Valitse **OK** ja sulje sivu.
+1.  <span data-ttu-id="e1e08-207">Valitse **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Resurssit** &gt; **Määritä roolit**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-207">Click **Project management and accounting** &gt; **Setup** &gt; **Resources** &gt; **Setup roles**.</span></span>
+2.  <span data-ttu-id="e1e08-208">Valitse **Uusi** ja syötä seuraavat arvot:</span><span class="sxs-lookup"><span data-stu-id="e1e08-208">Click **New**, and enter the following values:</span></span>
+    -   <span data-ttu-id="e1e08-209">**Roolin tunnus** - Vastaava projektipäällikkö</span><span class="sxs-lookup"><span data-stu-id="e1e08-209">**Role ID** - Senior Project Manager</span></span>
+    -   <span data-ttu-id="e1e08-210">**Kuvaus** - Vastaava projektipäällikkö</span><span class="sxs-lookup"><span data-stu-id="e1e08-210">**Description** - Senior Project Manager</span></span>
+3.  <span data-ttu-id="e1e08-211">Valitse **Luo**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-211">Click **Create**.</span></span>
+4.  <span data-ttu-id="e1e08-212">Valitse **Vastaava projektipäällikkö** -rooli ja valitse sitten **Määritä ominaisuudet**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-212">Select the **Senior Project Manager** role, and then click **Configure characteristics**.</span></span>
+5.  <span data-ttu-id="e1e08-213">Valitse **Ominaisuuden tyyppi** -kentästä **Osaamisalue**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-213">In the **Characteristics type** field, select **Skill**.</span></span>
+6.  <span data-ttu-id="e1e08-214">Syötä **Käytettävissä olevat ominaisuudet** -kenttään hakemasi osaamisalue.</span><span class="sxs-lookup"><span data-stu-id="e1e08-214">In the **Available characteristics** field, enter the skill that you're searching for.</span></span>
+7.  <span data-ttu-id="e1e08-215">Valitse **Ominaisuustyyppi**-kentästä **Todistus**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-215">In the **Characteristic type** field, select **Certificate**.</span></span>
+8.  <span data-ttu-id="e1e08-216">Syötä **Käytettävissä olevat ominaisuudet** -kenttään haettava todistustyyppi.</span><span class="sxs-lookup"><span data-stu-id="e1e08-216">In the **Available characteristics** field, enter the certificate type to search for.</span></span>
+9.  <span data-ttu-id="e1e08-217">Valitse **OK** ja sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="e1e08-217">Click **OK**, and close the page.</span></span>
 
-### <a name="assign-a-project-resource-to-a-project"></a>Projektiresurssin määrittäminen projektiin
+### <a name="assign-a-project-resource-to-a-project"></a><span data-ttu-id="e1e08-218">Projektiresurssin määrittäminen projektiin</span><span class="sxs-lookup"><span data-stu-id="e1e08-218">Assign a project resource to a project</span></span>
 
-1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Yleiset** &gt; **Projektit** &gt; **Kaikki projektit** ja avaa **XYZ-päivitysvaihe 2** -projekti.
-2.  Valitse **Projektiryhmän ja ajoitus** -välilehdestä **Lisää**.
-3.  Valitse **Rooli**-kentästä **Ryhmän jäsen**.
-4.  Valitse **Varaa kalenterista**.
-5.  Valitse **Resurssin saatavuus** -sivulta **Näyttöasetukset**.
-6.  Syötä **Muuta näyttöasetuksia** -sivulle seuraavat arvot:
-    -   **Päivämääräalueen muoto** - Päivä
-    -   **Näytä saatavuuskuvaukset** - Kyllä
-    -   **Näytä jäljellä oleva kapasiteetti** - Kyllä
-7.  Valitse resurssiluettelosta haluamasi resurssi.
-8.  Valitse **Kiinteä varaus** &gt; **Koko kapasiteetti**.
-9.  Sulje sivu.
+1.  <span data-ttu-id="e1e08-219">Valitse **Projektinhallinta ja kirjanpito** &gt; **Yleiset** &gt; **Projektit** &gt; **Kaikki projektit** ja avaa **XYZ-päivitysvaihe 2** -projekti.</span><span class="sxs-lookup"><span data-stu-id="e1e08-219">Click **Project management and accounting** &gt; **Common** &gt; **Projects** &gt; **All projects**, and open the **XYZ Upgrade Phase 2** project.</span></span>
+2.  <span data-ttu-id="e1e08-220">Valitse **Projektiryhmän ja ajoitus** -välilehdestä **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-220">On the **Project team and scheduling** tab, click **Add**.</span></span>
+3.  <span data-ttu-id="e1e08-221">Valitse **Rooli**-kentästä **Ryhmän jäsen**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-221">In the **Role** field, select **Team member**.</span></span>
+4.  <span data-ttu-id="e1e08-222">Valitse **Varaa kalenterista**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-222">Click **Book from calendar**.</span></span>
+5.  <span data-ttu-id="e1e08-223">Valitse **Resurssin saatavuus** -sivulta **Näyttöasetukset**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-223">On the **Resource availability** page, click **View settings**.</span></span>
+6.  <span data-ttu-id="e1e08-224">Syötä **Muuta näyttöasetuksia** -sivulle seuraavat arvot:</span><span class="sxs-lookup"><span data-stu-id="e1e08-224">On the **Adjust view settings** page, enter the following values:</span></span>
+    -   <span data-ttu-id="e1e08-225">**Päivämääräalueen muoto** - Päivä</span><span class="sxs-lookup"><span data-stu-id="e1e08-225">**Format for date range view** - Day</span></span>
+    -   <span data-ttu-id="e1e08-226">**Näytä saatavuuskuvaukset** - Kyllä</span><span class="sxs-lookup"><span data-stu-id="e1e08-226">**Display availability descriptions** - Yes</span></span>
+    -   <span data-ttu-id="e1e08-227">**Näytä jäljellä oleva kapasiteetti** - Kyllä</span><span class="sxs-lookup"><span data-stu-id="e1e08-227">**Display remaining capacity** - Yes</span></span>
+7.  <span data-ttu-id="e1e08-228">Valitse resurssiluettelosta haluamasi resurssi.</span><span class="sxs-lookup"><span data-stu-id="e1e08-228">In the list of resources, select a resource.</span></span>
+8.  <span data-ttu-id="e1e08-229">Valitse **Kiinteä varaus** &gt; **Koko kapasiteetti**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-229">Click **Hard book** &gt; **Full capacity**.</span></span>
+9.  <span data-ttu-id="e1e08-230">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="e1e08-230">Close the page.</span></span>
 
-### <a name="assign-a-resource-to-a-default-role"></a>Resurssin määrittäminen oletusrooliin
+### <a name="assign-a-resource-to-a-default-role"></a><span data-ttu-id="e1e08-231">Resurssin määrittäminen oletusrooliin</span><span class="sxs-lookup"><span data-stu-id="e1e08-231">Assign a resource to a default role</span></span>
 
-Voit auttaa projekti- tai resurssipäälliköitä porautumalla alemmas resursseihin, jotka voidaan varata projektiin. Voit liittää oletusroolin aiemmin luotuun tai vasta hankittuun resurssiin. Esimerkiksi kun Daniel palkattiin, hänellä oli yritysanalyytikon rooliin tarvittava kokemus ja osaamisalueet. Resurssipäällikkö määritti tämän roolin Danielin oletusrooliksi. Resurssipäällikkö lisäsi Danielin toisin sanoen niiden yritysanalyytikkojen pooliin, jotka ovat käytettävissä projekteissa. 
+<span data-ttu-id="e1e08-232">Voit auttaa projekti- tai resurssipäälliköitä porautumalla alemmas resursseihin, jotka voidaan varata projektiin.</span><span class="sxs-lookup"><span data-stu-id="e1e08-232">To help project or resource managers, you can drill down further on the resources that can be reserved for a project.</span></span> <span data-ttu-id="e1e08-233">Voit liittää oletusroolin aiemmin luotuun tai vasta hankittuun resurssiin.</span><span class="sxs-lookup"><span data-stu-id="e1e08-233">You can associate a default role with an existing resource or a newly acquired resource.</span></span> <span data-ttu-id="e1e08-234">Esimerkiksi kun Daniel palkattiin, hänellä oli yritysanalyytikon rooliin tarvittava kokemus ja osaamisalueet.</span><span class="sxs-lookup"><span data-stu-id="e1e08-234">For example, when Daniel was hired, he had the experience and skills to fill the Business analyst role.</span></span> <span data-ttu-id="e1e08-235">Resurssipäällikkö määritti tämän roolin Danielin oletusrooliksi.</span><span class="sxs-lookup"><span data-stu-id="e1e08-235">The resource manager assigned this role as Daniel's default role.</span></span> <span data-ttu-id="e1e08-236">Resurssipäällikkö lisäsi Danielin toisin sanoen niiden yritysanalyytikkojen pooliin, jotka ovat käytettävissä projekteissa.</span><span class="sxs-lookup"><span data-stu-id="e1e08-236">Therefore, the resource manager added Daniel to a pool of business analysts who are available to work on projects.</span></span> 
 
-Resurssin varaamisen yhteydessä projektipäälliköt voivat suodattaa roolin resurssit, jotka ovat käytettävissä projektitöihin. Päälliköt voivat käyttää näitä tietoja yhtenä ehtona analysoidessaan päätöksiä useiden ehtojen perusteella resurssien täyttämisen yhteydessä. He voivat lisätä suodattimeen muitakin resurssin ominaisuuksia ja hakea niiden avulla resursseja, joilla on projektissa tarvittavat osaamisalueet, koulutus ja kokemus. 
+<span data-ttu-id="e1e08-237">Resurssin varaamisen yhteydessä projektipäälliköt voivat suodattaa roolin resurssit, jotka ovat käytettävissä projektitöihin.</span><span class="sxs-lookup"><span data-stu-id="e1e08-237">During resource reservation, project managers can filter the role resources that are available to work on projects.</span></span> <span data-ttu-id="e1e08-238">Päälliköt voivat käyttää näitä tietoja yhtenä ehtona analysoidessaan päätöksiä useiden ehtojen perusteella resurssien täyttämisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-238">They can use this information as one criterion when they perform multi-criteria decision analysis during resource fulfillment.</span></span> <span data-ttu-id="e1e08-239">He voivat lisätä suodattimeen muitakin resurssin ominaisuuksia ja hakea niiden avulla resursseja, joilla on projektissa tarvittavat osaamisalueet, koulutus ja kokemus.</span><span class="sxs-lookup"><span data-stu-id="e1e08-239">They can also add other resource characteristics to the filter to search for resources that have specific skills, education, and experience for a given project.</span></span> 
 
-**Skenaario:** Hyväksytty projekti on alkanut, ja vastaavan projektipäällikön rooli on varattu suunniteltuna resurssina projektin suunnitteluvaiheessa. Resurssipäällikön on nyt hankittava rooliin sopiva resurssi.
+<span data-ttu-id="e1e08-240">**Skenaario:** Hyväksytty projekti on alkanut, ja vastaavan projektipäällikön rooli on varattu suunniteltuna resurssina projektin suunnitteluvaiheessa.</span><span class="sxs-lookup"><span data-stu-id="e1e08-240">**Scenario:** An approved project has started, and the Senior project manager role was reserved as a planned resource during the project planning stage.</span></span> <span data-ttu-id="e1e08-241">Resurssipäällikön on nyt hankittava rooliin sopiva resurssi.</span><span class="sxs-lookup"><span data-stu-id="e1e08-241">The resource manager has now acquired a resource to fulfill the Senior project manager role.</span></span>
 
-1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektiresurssit** &gt; **Resurssiluettelo**.
-2.  Valitse **Resurssi**-luettelosta **Daniel Goldschmidt**.
-3.  Valitse **Projektiresurssi** &gt; **Ylläpidä** &gt; **Resurssin rooli**.
-4.  Valitse **Uusi** ja syötä seuraavat arvot:
-    -   **Voimassa** - (Nykyinen päivämäärä)
-    -   **Päättyminen** - Ei koskaan
-    -   **Rooli** - Vastaava projektipäällikkö
-5.  Valitse **Tallenna** ja sulje sitten sivu.
-6.  Lisää **Osaamistiedot**-välilehdessä **ProjectMgmt**-osaamisalue ja **PMP**-todistus.
+1.  <span data-ttu-id="e1e08-242">Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektiresurssit** &gt; **Resurssiluettelo**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-242">Click **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.</span></span>
+2.  <span data-ttu-id="e1e08-243">Valitse **Resurssi**-luettelosta **Daniel Goldschmidt**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-243">In the **Resource** list, select **Daniel Goldschmidt**.</span></span>
+3.  <span data-ttu-id="e1e08-244">Valitse **Projektiresurssi** &gt; **Ylläpidä** &gt; **Resurssin rooli**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-244">Click **Project resource** &gt; **Maintain** &gt; **Resource role**.</span></span>
+4.  <span data-ttu-id="e1e08-245">Valitse **Uusi** ja syötä seuraavat arvot:</span><span class="sxs-lookup"><span data-stu-id="e1e08-245">Click **New**, and enter the following values:</span></span>
+    -   <span data-ttu-id="e1e08-246">**Voimassa** - (Nykyinen päivämäärä)</span><span class="sxs-lookup"><span data-stu-id="e1e08-246">**Effective** - (The current date)</span></span>
+    -   <span data-ttu-id="e1e08-247">**Päättyminen** - Ei koskaan</span><span class="sxs-lookup"><span data-stu-id="e1e08-247">**Expiration** - Never</span></span>
+    -   <span data-ttu-id="e1e08-248">**Rooli** - Vastaava projektipäällikkö</span><span class="sxs-lookup"><span data-stu-id="e1e08-248">**Role** - Senior Project Manager</span></span>
+5.  <span data-ttu-id="e1e08-249">Valitse **Tallenna** ja sulje sitten sivu.</span><span class="sxs-lookup"><span data-stu-id="e1e08-249">Click **Save**, and then close the page.</span></span>
+6.  <span data-ttu-id="e1e08-250">Lisää **Osaamistiedot**-välilehdessä **ProjectMgmt**-osaamisalue ja **PMP**-todistus.</span><span class="sxs-lookup"><span data-stu-id="e1e08-250">On the **Competencies** tab, add the **ProjectMgmt** skill and the **PMP** certificate.</span></span>
 
-## <a name="set-up-role-based-pricing"></a>Roolipohjaisen hinnoittelun määrittäminen
-Rooleille voidaan määrittää kaikki kustannukset sekä myynti- ja siirtohinnat.
+## <a name="set-up-role-based-pricing"></a><span data-ttu-id="e1e08-251">Roolipohjaisen hinnoittelun määrittäminen</span><span class="sxs-lookup"><span data-stu-id="e1e08-251">Set up role-based pricing</span></span>
+<span data-ttu-id="e1e08-252">Rooleille voidaan määrittää kaikki kustannukset sekä myynti- ja siirtohinnat.</span><span class="sxs-lookup"><span data-stu-id="e1e08-252">All cost, sales, and transfer prices can be set up for roles.</span></span>
 
-1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Hinnat** &gt; **Myyntihinta (tunti)**.
-2.  Valitse **Uusi**.
-3.  Anna voimaantulopäivämäärä.
-4.  Valitse **Rooli**-sarakkeesta haluamasi rooli.
-5.  Syötä **Hinnoittelu**-sarakkeeseen hinta valitulle resurssiroolille.
+1.  <span data-ttu-id="e1e08-253">Valitse **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Hinnat** &gt; **Myyntihinta (tunti)**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-253">Click **Project management and accounting** &gt; **Setup** &gt; **Prices** &gt; **Sales price (hour)**.</span></span>
+2.  <span data-ttu-id="e1e08-254">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-254">Click **New**.</span></span>
+3.  <span data-ttu-id="e1e08-255">Anna voimaantulopäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-255">Enter an effective date.</span></span>
+4.  <span data-ttu-id="e1e08-256">Valitse **Rooli**-sarakkeesta haluamasi rooli.</span><span class="sxs-lookup"><span data-stu-id="e1e08-256">In the **Role** column, select a role.</span></span>
+5.  <span data-ttu-id="e1e08-257">Syötä **Hinnoittelu**-sarakkeeseen hinta valitulle resurssiroolille.</span><span class="sxs-lookup"><span data-stu-id="e1e08-257">In the **Pricing** column, enter a price for the selected resource role.</span></span>
 
-## <a name="form-a-project-team"></a>Projektiryhmän muodostaminen
-Projektipäällikön täytyy liittää projektin yhteydessä aiemmin määritetyt roolit projektiin, jotta hän voi käyttää niitä. Projektille voidaan määrittää useita rooleja, ja Finance and Operations nimeää ne selvyyden vuoksi automaattisesti varaamisen yhteydessä. Jos projektipäällikkö tarvitsee esimerkiksi kolme ohjelmistosuunnittelijaa, luodaan automaattisesti kolme ohjelmistosuunnittelijan roolia, joiden nimikkeinä on ohjelmistosuunnittelija 1, ohjelmistosuunnittelija 2 ja ohjelmistosuunnittelija 3. Jos roolille on määritetty ominaisuudet jo aiemmin, niitä käytetään suodattimina resurssia haettaessa. Hakua voi tarkentaa lisäämällä muitakin ominaisuuksia tarpeen mukaan. 
+## <a name="form-a-project-team"></a><span data-ttu-id="e1e08-258">Projektiryhmän muodostaminen</span><span class="sxs-lookup"><span data-stu-id="e1e08-258">Form a project team</span></span>
+<span data-ttu-id="e1e08-259">Projektipäällikön täytyy liittää projektin yhteydessä aiemmin määritetyt roolit projektiin, jotta hän voi käyttää niitä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-259">To use the roles that were previously set up in a project, a project manager must associate the roles with the project.</span></span> <span data-ttu-id="e1e08-260">Projektille voidaan määrittää useita rooleja, ja Finance and Operations nimeää ne selvyyden vuoksi automaattisesti varaamisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-260">Multiple roles can be assigned for a project, and Finance and Operations automatically labels these roles during reservation to prevent confusion.</span></span> <span data-ttu-id="e1e08-261">Jos projektipäällikkö tarvitsee esimerkiksi kolme ohjelmistosuunnittelijaa, luodaan automaattisesti kolme ohjelmistosuunnittelijan roolia, joiden nimikkeinä on ohjelmistosuunnittelija 1, ohjelmistosuunnittelija 2 ja ohjelmistosuunnittelija 3.</span><span class="sxs-lookup"><span data-stu-id="e1e08-261">For example, if the project manager requires three software engineers, three Software engineer roles that have software engineer 1, software engineer 2, and software engineer 3 as their labels are automatically generated.</span></span> <span data-ttu-id="e1e08-262">Jos roolille on määritetty ominaisuudet jo aiemmin, niitä käytetään suodattimina resurssia haettaessa.</span><span class="sxs-lookup"><span data-stu-id="e1e08-262">If role characteristics were previously set for the role, they are applied as a filter during searches for a resource.</span></span> <span data-ttu-id="e1e08-263">Hakua voi tarkentaa lisäämällä muitakin ominaisuuksia tarpeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="e1e08-263">Additional characteristics can be added as required to further refine the search.</span></span> 
 
-Myös näyttöasetukset voidaan mukauttaa, jotta resurssien käytettävyys saadaan paremmin näkyviin. Näyttöperusteeksi voi valita käytettävyyden tunnin, päivän, viikon, kuukauden, vuosineljänneksen tai vuoden perusteella. Myös resurssien käytettävissä ja jäljellä olevan kapasiteetin voi suodattaa näkyviin. Tämä vaihtoehto on hyödyllinen ajanhallinnassa, kun arvioit tehtäviin käytettävissä olevaa aikaa tai resurssien käytettävyyttä. 
+<span data-ttu-id="e1e08-264">Myös näyttöasetukset voidaan mukauttaa, jotta resurssien käytettävyys saadaan paremmin näkyviin.</span><span class="sxs-lookup"><span data-stu-id="e1e08-264">View settings can also be customized to give a better view of resource availability.</span></span> <span data-ttu-id="e1e08-265">Näyttöperusteeksi voi valita käytettävyyden tunnin, päivän, viikon, kuukauden, vuosineljänneksen tai vuoden perusteella.</span><span class="sxs-lookup"><span data-stu-id="e1e08-265">There are options to show hourly, daily, weekly, monthly, quarterly, and annual availability.</span></span> <span data-ttu-id="e1e08-266">Myös resurssien käytettävissä ja jäljellä olevan kapasiteetin voi suodattaa näkyviin.</span><span class="sxs-lookup"><span data-stu-id="e1e08-266">There is also an option to show available and remaining capacity on resources.</span></span> <span data-ttu-id="e1e08-267">Tämä vaihtoehto on hyödyllinen ajanhallinnassa, kun arvioit tehtäviin käytettävissä olevaa aikaa tai resurssien käytettävyyttä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-267">This option is useful for time management when you're estimating available time for activities or resource availability.</span></span> 
 
-Projektipäällikkö voi valita sivulta haluamansa roolin. Jos vaatimuksia vastaava resurssi on käytettävissä, projektipäällikkö voi valintansa mukaan varata resurssin rooliin. Huomaa, että resursseja ei tarvitse varata tässä suunnitteluvaiheessa. Työrakennetta luodessasi voit korvata roolit projektin henkilöstöllisillä resursseilla. Jos roolit korvataan työrakenteessa henkilöstöllisillä resursseilla, resurssiasetukset päivittävät projektiryhmän luettelon ja aikataulun automaattisesti. 
+<span data-ttu-id="e1e08-268">Projektipäällikkö voi valita sivulta haluamansa roolin. Jos vaatimuksia vastaava resurssi on käytettävissä, projektipäällikkö voi valintansa mukaan varata resurssin rooliin.</span><span class="sxs-lookup"><span data-stu-id="e1e08-268">The project manager can select a role on the page and then, if there is an available resource that fits the requirement, select to reserve a resource to fill the role.</span></span> <span data-ttu-id="e1e08-269">Huomaa, että resursseja ei tarvitse varata tässä suunnitteluvaiheessa.</span><span class="sxs-lookup"><span data-stu-id="e1e08-269">Note that the resources don't have to be reserved at this point during the planning stage.</span></span> <span data-ttu-id="e1e08-270">Työrakennetta luodessasi voit korvata roolit projektin henkilöstöllisillä resursseilla.</span><span class="sxs-lookup"><span data-stu-id="e1e08-270">When you create a WBS, you can replace roles with staffed resources for the project.</span></span> <span data-ttu-id="e1e08-271">Jos roolit korvataan työrakenteessa henkilöstöllisillä resursseilla, resurssiasetukset päivittävät projektiryhmän luettelon ja aikataulun automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="e1e08-271">If roles are replaced with staffed resources in the WBS, the resource setup automatically updates the project team listing and scheduling.</span></span> 
 
-[![Projektiryhmän luettelo, joka sisältää sekä roolit todellinen resurssit](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) 
+<span data-ttu-id="e1e08-272">[![Projektiryhmän luettelo, joka sisältää sekä roolit todellinen resurssit](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg)</span><span class="sxs-lookup"><span data-stu-id="e1e08-272">[![Project team listing that includes both roles and actual resources](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg)</span></span> 
 
-Projektipäällikkö voi varata resurssin projektiin eri tavoilla, esimerkiksi valitsemalla **Jäljellä oleva kapasiteetti**, **Koko kapasiteetti**, **Kapasiteettiprosentti** ja **Määritä tunnit**. Nämä varausasetukset voi peruuttaa milloin tahansa, jos resurssimääritykset muuttuvat. Kahta varaustyyppiä tuetaan:
+<span data-ttu-id="e1e08-273">Projektipäällikkö voi varata resurssin projektiin eri tavoilla, esimerkiksi valitsemalla **Jäljellä oleva kapasiteetti**, **Koko kapasiteetti**, **Kapasiteettiprosentti** ja **Määritä tunnit**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-273">The project manager has various options for booking a resource for a project, such as **Remaining capacity**, **Full capacity**, **Capacity percentage**, and **Specify hours**.</span></span> <span data-ttu-id="e1e08-274">Nämä varausasetukset voi peruuttaa milloin tahansa, jos resurssimääritykset muuttuvat.</span><span class="sxs-lookup"><span data-stu-id="e1e08-274">These booking options can be canceled at any time if resource assignments change.</span></span> <span data-ttu-id="e1e08-275">Kahta varaustyyppiä tuetaan:</span><span class="sxs-lookup"><span data-stu-id="e1e08-275">Two types of booking are supported:</span></span>
 
--   **Kiinteä varaus** – Resurssivaraus on hyväksytty ja resurssin työskentely sitoumuksessa on vahvistettu tietyksi ajaksi.
--   **Alustava varaus** – Resurssivaraus on alustavasti määritetty työskentelemään sitoumuksessa tietyllä ajalla.
+-   <span data-ttu-id="e1e08-276">**Kiinteä varaus** – Resurssivaraus on hyväksytty ja resurssin työskentely sitoumuksessa on vahvistettu tietyksi ajaksi.</span><span class="sxs-lookup"><span data-stu-id="e1e08-276">**Hard Book** – The resource reservation was approved and confirmed to work on the engagement for the specified duration.</span></span>
+-   <span data-ttu-id="e1e08-277">**Alustava varaus** – Resurssivaraus on alustavasti määritetty työskentelemään sitoumuksessa tietyllä ajalla.</span><span class="sxs-lookup"><span data-stu-id="e1e08-277">**Soft book** – The resource reservations was tentatively set to work on the engagement for the specified duration.</span></span>
 
-Seuraavissa vaiheissa on selostettu, miten projektiryhmä luodaan.
+<span data-ttu-id="e1e08-278">Seuraavissa vaiheissa on selostettu, miten projektiryhmä luodaan.</span><span class="sxs-lookup"><span data-stu-id="e1e08-278">The following procedure explains how to create a project team.</span></span>
 
-### <a name="create-a-project-team"></a>Projektiryhmän luominen
+### <a name="create-a-project-team"></a><span data-ttu-id="e1e08-279">Projektiryhmän luominen</span><span class="sxs-lookup"><span data-stu-id="e1e08-279">Create a project team</span></span>
 
-1.  Valitse **Kaikki projektit** -luettelosivulta haluamasi projekti ja valitse sitten **Muokkaa**.
-2.  Syötä **Projektiryhmän ja ajoitus** -välilehdessä **Ajoita päättymispäivä** -kenttään aikataulun alkamispäivä plus yksi kuukausi. Jos aikataulun alkamispäivä on esimerkiksi 24. kesäkuuta 2017 (24/06/2017), syötä **24/07/2017**.
-3.  Valitse **Lisää**.
-4.  Valitse **Lisää roolit projektiin** -ruudun **Rooli**-kentästä **Vastaava projektipäällikkö**.
-5.  Valitse **Vaaditut osaamisalueet**.
-6.  Aiemmin vastaavan projektipäällikön roolille määrittämäsi ominaisuudet tulevat oletusarvoisesti valituiksi **Valitse ominaisuudet** -sivulla. Napsauta **OK**.
-7.  Syötä **Lisää roolit projektiin** -sivulla **Resurssien määrä** -kenttään arvoksi **1**.
-8.  Hakutoiminto näyttää **Resurssi**-kentässä kaikki resurssit, joilla on tarvittavat osaamistiedot. Valitse **Daniel Goldschmidt** ja sitten **Luo**.
-9.  Valitse **Projekti**-sivulla **Lisää**.
-10. Valitse **Lisää roolit projektiin** -ruudun **Rooli**-kentästä **Ryhmän jäsen**. Syötä **Resurssien määrä** -kenttään arvoksi **5**.
-11. Valitse **Luo**.
-12. Valitse **Projektit**-sivulla **Toteuta resurssi**.
+1.  <span data-ttu-id="e1e08-280">Valitse **Kaikki projektit** -luettelosivulta haluamasi projekti ja valitse sitten **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-280">On the **All projects** list page, select a project, and then click **Edit**.</span></span>
+2.  <span data-ttu-id="e1e08-281">Syötä **Projektiryhmän ja ajoitus** -välilehdessä **Ajoita päättymispäivä** -kenttään aikataulun alkamispäivä plus yksi kuukausi.</span><span class="sxs-lookup"><span data-stu-id="e1e08-281">On the **Project team and scheduling** tab, in the **Schedule end date** field, enter the schedule start date plus one month.</span></span> <span data-ttu-id="e1e08-282">Jos aikataulun alkamispäivä on esimerkiksi 24. kesäkuuta 2017 (24/06/2017), syötä **24/07/2017**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-282">For example, if the schedule start date is June 24, 2017 (24/06/2017), enter **24/07/2017**.</span></span>
+3.  <span data-ttu-id="e1e08-283">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-283">Click **Add**.</span></span>
+4.  <span data-ttu-id="e1e08-284">Valitse **Lisää roolit projektiin** -ruudun **Rooli**-kentästä **Vastaava projektipäällikkö**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-284">In the **Add roles to the project** pane, in the **Role** field, select **Senior Project Manager**.</span></span>
+5.  <span data-ttu-id="e1e08-285">Valitse **Vaaditut osaamisalueet**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-285">Click **Required competencies**.</span></span>
+6.  <span data-ttu-id="e1e08-286">Aiemmin vastaavan projektipäällikön roolille määrittämäsi ominaisuudet tulevat oletusarvoisesti valituiksi **Valitse ominaisuudet** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="e1e08-286">On the **Choose characteristics** page, the characteristics that you previously set for the Senior project manager role are selected by default.</span></span> <span data-ttu-id="e1e08-287">Napsauta **OK**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-287">Click **OK**.</span></span>
+7.  <span data-ttu-id="e1e08-288">Syötä **Lisää roolit projektiin** -sivulla **Resurssien määrä** -kenttään arvoksi **1**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-288">On the **Add roles to project** page, in the **Number of resources** field, enter **1**.</span></span>
+8.  <span data-ttu-id="e1e08-289">Hakutoiminto näyttää **Resurssi**-kentässä kaikki resurssit, joilla on tarvittavat osaamistiedot.</span><span class="sxs-lookup"><span data-stu-id="e1e08-289">In the **Resource** field, the lookup shows all resources that have the required competencies.</span></span> <span data-ttu-id="e1e08-290">Valitse **Daniel Goldschmidt** ja sitten **Luo**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-290">Select **Daniel Goldschmidt**, and then click **Create**.</span></span>
+9.  <span data-ttu-id="e1e08-291">Valitse **Projekti**-sivulla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-291">On the **Project** page, click **Add**.</span></span>
+10. <span data-ttu-id="e1e08-292">Valitse **Lisää roolit projektiin** -ruudun **Rooli**-kentästä **Ryhmän jäsen**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-292">In the **Add roles to the project** pane, in the **Role** field, select **Team member**.</span></span> <span data-ttu-id="e1e08-293">Syötä **Resurssien määrä** -kenttään arvoksi **5**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-293">In the **Number of resources** field, enter **5**.</span></span>
+11. <span data-ttu-id="e1e08-294">Valitse **Luo**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-294">Click **Create**.</span></span>
+12. <span data-ttu-id="e1e08-295">Valitse **Projektit**-sivulla **Toteuta resurssi**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-295">On the **Projects** page, click **Fulfill resource**.</span></span>
 
-## <a name="resource-capacity-synchronization"></a>Resurssin kapasiteetin synkronointi
-Resurssin synkronointiprosessi auttaa varmistamaan, että kalenterin ja peruskalenterin tiedot siirtyvät projektiresurssien ajoitukseen. Jos kalenteria muutetaan, prosessit tekevät projektiresurssien ajoitukseen tarvittavat päivitykset. Prosessit auttavat myös parantamaan suorituskykyä, koska kalenterin resurssitiedot synkronoidaan etukäteen, jotta resurssin ajoitustietoihin tehtävät päivitykset voidaan tehdä nopeammin. Prosessit kannattaa ajoittaa eräajona, ei yksitellen. Muussa tapauksessa riskinä on, että edelliseen synkronointiin sisällytettävät päivämäärät unohtuvat. Jos sisällytettäviä päivämääriä ei käytetä, päivämäärien synkronointiin voi jäädä aukkoja.
+## <a name="resource-capacity-synchronization"></a><span data-ttu-id="e1e08-296">Resurssin kapasiteetin synkronointi</span><span class="sxs-lookup"><span data-stu-id="e1e08-296">Resource capacity synchronization</span></span>
+<span data-ttu-id="e1e08-297">Resurssin synkronointiprosessi auttaa varmistamaan, että kalenterin ja peruskalenterin tiedot siirtyvät projektiresurssien ajoitukseen.</span><span class="sxs-lookup"><span data-stu-id="e1e08-297">The processes for resource synchronization helps guarantee that the calendar and base calendar information trickles down into project resource scheduling.</span></span> <span data-ttu-id="e1e08-298">Jos kalenteria muutetaan, prosessit tekevät projektiresurssien ajoitukseen tarvittavat päivitykset.</span><span class="sxs-lookup"><span data-stu-id="e1e08-298">If the calendar is changed, the processes make the required updates to the scheduling of project resources.</span></span> <span data-ttu-id="e1e08-299">Prosessit auttavat myös parantamaan suorituskykyä, koska kalenterin resurssitiedot synkronoidaan etukäteen, jotta resurssin ajoitustietoihin tehtävät päivitykset voidaan tehdä nopeammin.</span><span class="sxs-lookup"><span data-stu-id="e1e08-299">The processes also help improve performance, because the calendar’s resource information is synchronized in advance, so that updates to resource scheduling information occur more quickly.</span></span> <span data-ttu-id="e1e08-300">Prosessit kannattaa ajoittaa eräajona, ei yksitellen.</span><span class="sxs-lookup"><span data-stu-id="e1e08-300">We recommend that you schedule the processes as a batch instead of one at a time.</span></span> <span data-ttu-id="e1e08-301">Muussa tapauksessa riskinä on, että edelliseen synkronointiin sisällytettävät päivämäärät unohtuvat.</span><span class="sxs-lookup"><span data-stu-id="e1e08-301">Otherwise, there is a risk that someone will forget the inclusive dates when the information was last synchronized.</span></span> <span data-ttu-id="e1e08-302">Jos sisällytettäviä päivämääriä ei käytetä, päivämäärien synkronointiin voi jäädä aukkoja.</span><span class="sxs-lookup"><span data-stu-id="e1e08-302">If inclusive dates aren't used, gaps can occur during date synchronization.</span></span>
 
 ### <a name="calendar-synchronizationmediaprojectresourcing04-1024x471jpg"></a>![Kalenterin synkronointi](./media/projectresourcing04-1024x471.jpg)
 
-**Synkronoi resurssin kapasiteetin koonnit**
+<span data-ttu-id="e1e08-304">**Synkronoi resurssin kapasiteetin koonnit**</span><span class="sxs-lookup"><span data-stu-id="e1e08-304">**Synchronize resource capacity roll-ups**</span></span>
 
-Synkronointiprosessin tarkoituksena on synkronoida kaikki resurssin kalenteritiedot. Näihin tietoihin sisältyvät peruskalenterin tiedot kaikista muutoksista, jotka tehdään projektin resurssikalenterin kapasiteettitaulukkoon. Jos projektiin lisätään uusia resursseja, synkronoinnin avulla voidaan varmistaa, että päivitetyt kalenteritiedot ovat käytettävissä. Synkronoinnin voi tehdä milloin tahansa. 
+<span data-ttu-id="e1e08-305">Synkronointiprosessin tarkoituksena on synkronoida kaikki resurssin kalenteritiedot.</span><span class="sxs-lookup"><span data-stu-id="e1e08-305">The synchronization process is designed to synchronize all resource calendar information.</span></span> <span data-ttu-id="e1e08-306">Näihin tietoihin sisältyvät peruskalenterin tiedot kaikista muutoksista, jotka tehdään projektin resurssikalenterin kapasiteettitaulukkoon.</span><span class="sxs-lookup"><span data-stu-id="e1e08-306">This information includes base calendar information about any changes to the project’s Resource calendar capacity table.</span></span> <span data-ttu-id="e1e08-307">Jos projektiin lisätään uusia resursseja, synkronoinnin avulla voidaan varmistaa, että päivitetyt kalenteritiedot ovat käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-307">If new resources are added in the project, synchronization helps ensure that the updated calendar information is available.</span></span> <span data-ttu-id="e1e08-308">Synkronoinnin voi tehdä milloin tahansa.</span><span class="sxs-lookup"><span data-stu-id="e1e08-308">This synchronization can be done at any time.</span></span> 
 
-Ne kannattaa tehdä eräajona. Vaihtoehdot ovat käytettävissä kapasiteettivarauksia synkronoitaessa.
+<span data-ttu-id="e1e08-309">Ne kannattaa tehdä eräajona.</span><span class="sxs-lookup"><span data-stu-id="e1e08-309">We recommend that you use a batch.</span></span> <span data-ttu-id="e1e08-310">Vaihtoehdot ovat käytettävissä kapasiteettivarauksia synkronoitaessa.</span><span class="sxs-lookup"><span data-stu-id="e1e08-310">The options are available in synchronizing capacity reservations.</span></span>
 
--   Valitse **Projektinhallinta ja kirjanpito** &gt; **Kausittainen** &gt; **Kapasiteetin synkronointi** &gt; **Synkronoi resurssin kapasiteetin koonnit**.
+-   <span data-ttu-id="e1e08-311">Valitse **Projektinhallinta ja kirjanpito** &gt; **Kausittainen** &gt; **Kapasiteetin synkronointi** &gt; **Synkronoi resurssin kapasiteetin koonnit**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-311">Click **Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resources capacity roll-ups**.</span></span>
 
-| Vaihtoehto | kuvaus                                                                                                                                                                                          |
+| <span data-ttu-id="e1e08-312">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="e1e08-312">Option</span></span> | <span data-ttu-id="e1e08-313">kuvaus</span><span class="sxs-lookup"><span data-stu-id="e1e08-313">Description</span></span>                                                                                                                                                                                          |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kyllä    | Synkronoi kaikki resurssitiedot kalenteriin ja peruskalenterin tietojen kanssa ja korvaa kaikki projektin resurssin kapasiteettikalenterissa olevat tiedot.                                                  |
-| Ei     | Synkronoi resurssitiedot päivämäärävälin koodin sekä määritettyjen alkamis- ja päättymispäivämäärien perusteella. Tämä vaihtoehto ei poista nykyisiä tietoja, ja se päivittää vain uusien lisättyjen resurssien tiedot. |
+| <span data-ttu-id="e1e08-314">Kyllä</span><span class="sxs-lookup"><span data-stu-id="e1e08-314">Yes</span></span>    | <span data-ttu-id="e1e08-315">Synkronoi kaikki resurssitiedot kalenteriin ja peruskalenterin tietojen kanssa ja korvaa kaikki projektin resurssin kapasiteettikalenterissa olevat tiedot.</span><span class="sxs-lookup"><span data-stu-id="e1e08-315">Synchronize all resource data with calendar and base calendar information, and replace all information in the project's resource capacity calendar.</span></span>                                                  |
+| <span data-ttu-id="e1e08-316">Ei</span><span class="sxs-lookup"><span data-stu-id="e1e08-316">No</span></span>     | <span data-ttu-id="e1e08-317">Synkronoi resurssitiedot päivämäärävälin koodin sekä määritettyjen alkamis- ja päättymispäivämäärien perusteella.</span><span class="sxs-lookup"><span data-stu-id="e1e08-317">Synchronize resource data, based on the date interval code, and the specified start and end dates.</span></span> <span data-ttu-id="e1e08-318">Tämä vaihtoehto ei poista nykyisiä tietoja, ja se päivittää vain uusien lisättyjen resurssien tiedot.</span><span class="sxs-lookup"><span data-stu-id="e1e08-318">This option doesn't remove existing data, and updates information only for newly added resources.</span></span> |
 
-[![Synkronointiprosessi](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)
+<span data-ttu-id="e1e08-319">[![Synkronointiprosessi](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)</span><span class="sxs-lookup"><span data-stu-id="e1e08-319">[![Synchronization process](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)</span></span>
 
-## <a name="set-up-roles-on-wbs-templates"></a>Roolien määrittäminen työrakennemalleille
-Projektipäälliköt voivat määrittää työrakennemalleja ja käyttää niitä luodessaan uusille projekteille työrakennetta. Projektipäälliköt voivat lisätä rooleja malleja luodessaan. Voit määrittää roolin työrakennemalliin seuraavasti.** **
+## <a name="set-up-roles-on-wbs-templates"></a><span data-ttu-id="e1e08-320">Roolien määrittäminen työrakennemalleille</span><span class="sxs-lookup"><span data-stu-id="e1e08-320">Set up roles on WBS templates</span></span>
+<span data-ttu-id="e1e08-321">Projektipäälliköt voivat määrittää työrakennemalleja ja käyttää niitä luodessaan uusille projekteille työrakennetta.</span><span class="sxs-lookup"><span data-stu-id="e1e08-321">Project managers can set up WBS templates that they can apply when they create a WBS for new projects.</span></span> <span data-ttu-id="e1e08-322">Projektipäälliköt voivat lisätä rooleja malleja luodessaan.</span><span class="sxs-lookup"><span data-stu-id="e1e08-322">Project managers can add roles when they create a template.</span></span> <span data-ttu-id="e1e08-323">Voit määrittää roolin työrakennemalliin seuraavasti.** **</span><span class="sxs-lookup"><span data-stu-id="e1e08-323">Use the following procedure to assign a role to a WBS template.** **</span></span>
 
-1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Projektit** &gt; **Työrakennemallit**.
-2.  Valitse valitun työrakennemallin **Tiedot**-kohta.
-3.  Valitse luettelosta haluamasi tehtävä ja valitse sitten **Rooli**-kentästä tehtävään määritettävä rooli.
+1.  <span data-ttu-id="e1e08-324">Valitse **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Projektit** &gt; **Työrakennemallit**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-324">Click **Project management and accounting** &gt; **Setup** &gt; **Projects** &gt; **Work breakdown structure templates**.</span></span>
+2.  <span data-ttu-id="e1e08-325">Valitse valitun työrakennemallin **Tiedot**-kohta.</span><span class="sxs-lookup"><span data-stu-id="e1e08-325">Click **Details** for a selected WBS template.</span></span>
+3.  <span data-ttu-id="e1e08-326">Valitse luettelosta haluamasi tehtävä ja valitse sitten **Rooli**-kentästä tehtävään määritettävä rooli.</span><span class="sxs-lookup"><span data-stu-id="e1e08-326">Select a task in the list, and then, in the **Role** field, select a role to assign to the task.</span></span>
 
-### <a name="work-with-a-wbs"></a>Työrakenteen käsitteleminen
+### <a name="work-with-a-wbs"></a><span data-ttu-id="e1e08-327">Työrakenteen käsitteleminen</span><span class="sxs-lookup"><span data-stu-id="e1e08-327">Work with a WBS</span></span>
 
-Voit luoda uuden työrakenteen tai kopioida sen aiemmin luodusta työrakennemallista. Projektipäällikkö voi hallita resursseja helposti määrittämällä työrakenteessa roolit uusille tehtäville. Roolit voidaan korvata, kun resurssi on hankittu tai kun vahvistettu resurssi tehtävään on määritetty. Näin projektipäälliköt voivat suorittaa joustavasti seuraavat tehtävät:
+<span data-ttu-id="e1e08-328">Voit luoda uuden työrakenteen tai kopioida sen aiemmin luodusta työrakennemallista.</span><span class="sxs-lookup"><span data-stu-id="e1e08-328">You can create a new WBS, or you can copy a WBS from an existing WBS template.</span></span> <span data-ttu-id="e1e08-329">Projektipäällikkö voi hallita resursseja helposti määrittämällä työrakenteessa roolit uusille tehtäville.</span><span class="sxs-lookup"><span data-stu-id="e1e08-329">A project manager can easily manage the resources by assigning roles to new tasks on the WBS.</span></span> <span data-ttu-id="e1e08-330">Roolit voidaan korvata, kun resurssi on hankittu tai kun vahvistettu resurssi tehtävään on määritetty.</span><span class="sxs-lookup"><span data-stu-id="e1e08-330">Roles can be replaced after a resource is acquired, or after a confirmed resource to work on the task is identified.</span></span> <span data-ttu-id="e1e08-331">Näin projektipäälliköt voivat suorittaa joustavasti seuraavat tehtävät:</span><span class="sxs-lookup"><span data-stu-id="e1e08-331">This flexibility lets project managers perform the following tasks:</span></span>
 
--   Määrittää työrakenteen työpaketteihin tarvittavan resurssien määrän.
--   Arvioida projektikustannukset.
--   Määritellä alustavan budjetin.
--   Arvioida tehtävän kestoa roolien ja resurssien perusteella.
--   Kehittää joitakin projektinhallintasuunnitelmia käytettävissä olevien projektitietojen pohjalta.
+-   <span data-ttu-id="e1e08-332">Määrittää työrakenteen työpaketteihin tarvittavan resurssien määrän.</span><span class="sxs-lookup"><span data-stu-id="e1e08-332">Identify the number of resources that are required for WBS work packages.</span></span>
+-   <span data-ttu-id="e1e08-333">Arvioida projektikustannukset.</span><span class="sxs-lookup"><span data-stu-id="e1e08-333">Estimate project costs.</span></span>
+-   <span data-ttu-id="e1e08-334">Määritellä alustavan budjetin.</span><span class="sxs-lookup"><span data-stu-id="e1e08-334">Determine a preliminary budget.</span></span>
+-   <span data-ttu-id="e1e08-335">Arvioida tehtävän kestoa roolien ja resurssien perusteella.</span><span class="sxs-lookup"><span data-stu-id="e1e08-335">Estimate activity duration, based on roles and resources.</span></span>
+-   <span data-ttu-id="e1e08-336">Kehittää joitakin projektinhallintasuunnitelmia käytettävissä olevien projektitietojen pohjalta.</span><span class="sxs-lookup"><span data-stu-id="e1e08-336">Develop some project management plans, based on the available project information.</span></span>
 
-Työrakenteeseen on liitetty lisäasetuksia, jotka helpottavat resursointitoimintojen käyttöä.
+<span data-ttu-id="e1e08-337">Työrakenteeseen on liitetty lisäasetuksia, jotka helpottavat resursointitoimintojen käyttöä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-337">Additional options have been added in the WBS to better use the resourcing functionality.</span></span>
 
 <table>
 <colgroup>
@@ -266,95 +266,95 @@ Työrakenteeseen on liitetty lisäasetuksia, jotka helpottavat resursointitoimin
 </colgroup>
 <thead>
 <tr class="header">
-<th>Vaihtoehto</th>
-<th>Kuvaus</th>
+<th><span data-ttu-id="e1e08-338">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="e1e08-338">Option</span></span></th>
+<th><span data-ttu-id="e1e08-339">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="e1e08-339">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Resurssimääritykset</td>
-<td>Tarkastele määritettyjä resursseja, päivämääriä, tuntimääriä ja tehtävien varaustyyppiä työrakenteessa.</td>
+<td><span data-ttu-id="e1e08-340">Resurssimääritykset</span><span class="sxs-lookup"><span data-stu-id="e1e08-340">Resource assignments</span></span></td>
+<td><span data-ttu-id="e1e08-341">Tarkastele määritettyjä resursseja, päivämääriä, tuntimääriä ja tehtävien varaustyyppiä työrakenteessa.</span><span class="sxs-lookup"><span data-stu-id="e1e08-341">View the assigned resources, dates, number of hours, and booking type for tasks on the WBS.</span></span></td>
 </tr>
 <tr class="even">
-<td>Luo ryhmä automaattisesti</td>
-<td>Lisää suunnitellut resurssit automaattisesti käyttämällä tehtävään liitettyjä rooleja. Finance and Operations ehdottaa suunniteltuja resursseja automaattisesti käyttämällä rooleihin perustuvaa useiden ehtojen analyysia. Kun tehtäville on määritetty roolit ja työaika (tunnit) työrakenteessa ja rakenne on julkaistu, valitse <strong>Luo ryhmä automaattisesti</strong>. Tarvittava suunniteltujen resurssien määrä lisätään työrakenteeseen ja <strong>Projektiryhmä ja ajoitus</strong> -välilehteen.</td>
+<td><span data-ttu-id="e1e08-342">Luo ryhmä automaattisesti</span><span class="sxs-lookup"><span data-stu-id="e1e08-342">Auto generate team</span></span></td>
+<td><span data-ttu-id="e1e08-343">Lisää suunnitellut resurssit automaattisesti käyttämällä tehtävään liitettyjä rooleja.</span><span class="sxs-lookup"><span data-stu-id="e1e08-343">Automatically add planned resources by using roles that are associated with a task.</span></span> <span data-ttu-id="e1e08-344">Finance and Operations ehdottaa suunniteltuja resursseja automaattisesti käyttämällä rooleihin perustuvaa useiden ehtojen analyysia.</span><span class="sxs-lookup"><span data-stu-id="e1e08-344">Finance and Operations automatically suggests planned resources by using multi-criteria decision analysis that is based on roles.</span></span> <span data-ttu-id="e1e08-345">Kun tehtäville on määritetty roolit ja työaika (tunnit) työrakenteessa ja rakenne on julkaistu, valitse <strong>Luo ryhmä automaattisesti</strong>.</span><span class="sxs-lookup"><span data-stu-id="e1e08-345">After the roles and effort (hours) have been set for the tasks in a WBS, and the structure has been released, click <strong>Auto generate team</strong>.</span></span> <span data-ttu-id="e1e08-346">Tarvittava suunniteltujen resurssien määrä lisätään työrakenteeseen ja <strong>Projektiryhmä ja ajoitus</strong> -välilehteen.</span><span class="sxs-lookup"><span data-stu-id="e1e08-346">The required number of planned resources is added to the WBS and the <strong>Project and team scheduling</strong> tab.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Resurssi (avattava luettelo)</td>
-<td><strong>Käynnistä resurssimääritys</strong> -sivulla voit valita resurssit kiinteää tai alustavaa varausta varten määritetyn keston perusteella. Voit muokata näyttöasetuksia niin, että saat näkyviin ja voit määrittää resurssitehtävien keston. Voit valita ja määrittää resursseja työpakettitasolla käyttämällä seuraavia vaihtoehtoja:
+<td><span data-ttu-id="e1e08-347">Resurssi (avattava luettelo)</span><span class="sxs-lookup"><span data-stu-id="e1e08-347">Resource (drop-down list)</span></span></td>
+<td><span data-ttu-id="e1e08-348"><strong>Käynnistä resurssimääritys</strong> -sivulla voit valita resurssit kiinteää tai alustavaa varausta varten määritetyn keston perusteella.</span><span class="sxs-lookup"><span data-stu-id="e1e08-348">On the <strong>Launch resource assignment </strong>page, you can select resources to hard-book or soft-book, based on the specified duration.</span></span> <span data-ttu-id="e1e08-349">Voit muokata näyttöasetuksia niin, että saat näkyviin ja voit määrittää resurssitehtävien keston.</span><span class="sxs-lookup"><span data-stu-id="e1e08-349">You can adjust the view settings to see and set the duration of resource activities.</span></span> <span data-ttu-id="e1e08-350">Voit valita ja määrittää resursseja työpakettitasolla käyttämällä seuraavia vaihtoehtoja:</span><span class="sxs-lookup"><span data-stu-id="e1e08-350">You can select and assign resources at the work package level by using the following options:</span></span>
 <ul>
-<li><strong>Hyväksy</strong> – vahvistaa tehtävään liitettyyn resurssiin tehdyt muutokset.</li>
-<li><strong>Peruuta</strong> – peruuttaa tehtävään liitettyyn resurssiin tehdyt muutokset.</li>
-<li><strong>Määritä automaattisesti</strong> – Tämä vaihtoehto valitsee valitulle tehtävälle käytettävissä olevan henkilöstöllisen resurssin ja vastaavan roolin.</li>
+<li><span data-ttu-id="e1e08-351"><strong>Hyväksy</strong> – vahvistaa tehtävään liitettyyn resurssiin tehdyt muutokset.</span><span class="sxs-lookup"><span data-stu-id="e1e08-351"><strong>Accept</strong> – Confirm changes to the resource that is assigned to a task.</span></span></li>
+<li><span data-ttu-id="e1e08-352"><strong>Peruuta</strong> – peruuttaa tehtävään liitettyyn resurssiin tehdyt muutokset.</span><span class="sxs-lookup"><span data-stu-id="e1e08-352"><strong>Cancel</strong> – Cancel changes to the resource that is assigned to a task.</span></span></li>
+<li><span data-ttu-id="e1e08-353"><strong>Määritä automaattisesti</strong> – Tämä vaihtoehto valitsee valitulle tehtävälle käytettävissä olevan henkilöstöllisen resurssin ja vastaavan roolin.</span><span class="sxs-lookup"><span data-stu-id="e1e08-353"><strong>Assign automatically</strong> – This option selects an available staffed resource with a matching role to the selected task.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektit** &gt; **Kaikki projektit**.
-2.  Valitse luettelosta **XYZ-päivitysvaihe 2** -projekti.
-3.  Valitse **Suunnitelma** &gt; **Tehtävät** &gt; **Työrakenne**.
-4.  Valitse **Uusi** ja lisää seuraavat ykköstason tehtävät työrakenteeseen:
-    -   Aloittaminen
-    -   Suunnittelu
-    -   Suoritetaan
-    -   Valvonta ja ohjaus
-    -   Sulje
+1.  <span data-ttu-id="e1e08-354">Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektit** &gt; **Kaikki projektit**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-354">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="e1e08-355">Valitse luettelosta **XYZ-päivitysvaihe 2** -projekti.</span><span class="sxs-lookup"><span data-stu-id="e1e08-355">In the list, select the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="e1e08-356">Valitse **Suunnitelma** &gt; **Tehtävät** &gt; **Työrakenne**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-356">Click **Plan** &gt; **Activities** &gt; **Work breakdown structure**.</span></span>
+4.  <span data-ttu-id="e1e08-357">Valitse **Uusi** ja lisää seuraavat ykköstason tehtävät työrakenteeseen:</span><span class="sxs-lookup"><span data-stu-id="e1e08-357">Click **New** to add the following level-one activities to the WBS:</span></span>
+    -   <span data-ttu-id="e1e08-358">Aloittaminen</span><span class="sxs-lookup"><span data-stu-id="e1e08-358">Initiating</span></span>
+    -   <span data-ttu-id="e1e08-359">Suunnittelu</span><span class="sxs-lookup"><span data-stu-id="e1e08-359">Planning</span></span>
+    -   <span data-ttu-id="e1e08-360">Suoritetaan</span><span class="sxs-lookup"><span data-stu-id="e1e08-360">Executing</span></span>
+    -   <span data-ttu-id="e1e08-361">Valvonta ja ohjaus</span><span class="sxs-lookup"><span data-stu-id="e1e08-361">Monitoring and Control</span></span>
+    -   <span data-ttu-id="e1e08-362">Sulje</span><span class="sxs-lookup"><span data-stu-id="e1e08-362">Close</span></span>
 
-5.  Määritä päivämäärät ja työmäärä (tunnit) kuten seuraavassa näyttökuvassa.[![Päivämäärien ja työn määrittäminen](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)
-6.  Valitse **Aloittaminen**-tehtävärivi ja valitse sitten **Rooli**-kentästä **Vastaava projektipäällikkö**.
-7.  Valitse **Julkaise**.
-8.  Valitse samalta riviltä **Resurssi**-kentästä **Daniel Goldschmidt**.
-9.  Valitse **Hyväksy**.
-10. Valitsemalla **Suunnittelu**-tehtävärivi ja valitse sitten **Rooli**-kentästä **Yritysanalyytikko**.
-11. Valitse **Julkaise** ja sitten **Luo ryhmä automaattisesti**.
-12. Valitse näyttöön tulevassa valintaikkunassa **Kyllä**.
-13. Tarkista, että **Resurssi**-kentässä arvona on **Yritysanalyytikko 1**.
-14. Avaa hakutoiminto **Yritysanalyytikko 1** -resurssin kohdalla ja valitse **Käynnistä resurssimäärityksen lomake**.
-15. Valitse tehtävään työntekijä.
-16. Valitse **Määritä alustavasti** &gt; **Koko kapasiteetti**.
-17. Valitse **Tallenna** ja sulje sivu. 
+5.  <span data-ttu-id="e1e08-363">Määritä päivämäärät ja työmäärä (tunnit) kuten seuraavassa näyttökuvassa.[![Päivämäärien ja työn määrittäminen](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)</span><span class="sxs-lookup"><span data-stu-id="e1e08-363">Set the dates and effort (hours), as shown in the following screenshot.[![Setting the dates and effort](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)</span></span>
+6.  <span data-ttu-id="e1e08-364">Valitse **Aloittaminen**-tehtävärivi ja valitse sitten **Rooli**-kentästä **Vastaava projektipäällikkö**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-364">Select the **Initiating** task line, and then, in the **Role** field, select **Senior Project Manager**.</span></span>
+7.  <span data-ttu-id="e1e08-365">Valitse **Julkaise**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-365">Click **Publish**.</span></span>
+8.  <span data-ttu-id="e1e08-366">Valitse samalta riviltä **Resurssi**-kentästä **Daniel Goldschmidt**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-366">On the same line, in the **Resource** field, select **Daniel Goldschmidt**.</span></span>
+9.  <span data-ttu-id="e1e08-367">Valitse **Hyväksy**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-367">Click **Accept**.</span></span>
+10. <span data-ttu-id="e1e08-368">Valitsemalla **Suunnittelu**-tehtävärivi ja valitse sitten **Rooli**-kentästä **Yritysanalyytikko**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-368">Select the **Planning** task line, and then, in the **Role** field, select **Business analyst**.</span></span>
+11. <span data-ttu-id="e1e08-369">Valitse **Julkaise** ja sitten **Luo ryhmä automaattisesti**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-369">Click **Publish**, and then click **Auto generate team**.</span></span>
+12. <span data-ttu-id="e1e08-370">Valitse näyttöön tulevassa valintaikkunassa **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-370">In the dialog box that appears, click **Yes**.</span></span>
+13. <span data-ttu-id="e1e08-371">Tarkista, että **Resurssi**-kentässä arvona on **Yritysanalyytikko 1**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-371">In the **Resource** field, verify that the value is **Business analyst 1**.</span></span>
+14. <span data-ttu-id="e1e08-372">Avaa hakutoiminto **Yritysanalyytikko 1** -resurssin kohdalla ja valitse **Käynnistä resurssimäärityksen lomake**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-372">For the **Business analyst 1** resource, open the lookup, and click **Launch resource assignments form**.</span></span>
+15. <span data-ttu-id="e1e08-373">Valitse tehtävään työntekijä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-373">Select a worker for the task.</span></span>
+16. <span data-ttu-id="e1e08-374">Valitse **Määritä alustavasti** &gt; **Koko kapasiteetti**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-374">Click **Soft assign** &gt; **Full capacity**.</span></span>
+17. <span data-ttu-id="e1e08-375">Valitse **Tallenna** ja sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="e1e08-375">Click **Save**, and close the page.</span></span> 
 
 > [!NOTE] 
-> Näyttöön ei tule varoitusta siitä, että määritetyn resurssin arvo on nyt 2, koska resurssien määrä on edelleen 1.
-18. Tarkista **Työrakenne**-sivulta työrakenteen resurssimääritys ja valitse sitten **Tallenna**.
+> <span data-ttu-id="e1e08-376">Näyttöön ei tule varoitusta siitä, että määritetyn resurssin arvo on nyt 2, koska resurssien määrä on edelleen 1.</span><span class="sxs-lookup"><span data-stu-id="e1e08-376">You don't receive a warning that the specified resource is now 2, because the number of resources remains at 1.</span></span>
+18. <span data-ttu-id="e1e08-377">Tarkista **Työrakenne**-sivulta työrakenteen resurssimääritys ja valitse sitten **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-377">On the **Work breakdown structure** page, validate the resource assignment on the WBS, and then click **Save**.</span></span>
 
-## <a name="resource-fulfillment-for-planned-resources"></a>Resurssin toteuttaminen suunnitelluille resursseille
-Projektipäällikkö voi suunnitella projektille tarvittavat resurssiroolit. Resurssipäällikkö näkee suunnitellut resurssit pyyntöinä **Resurssin toteuttaminen** -sivulla ja voi määrittää varsinaiset resurssit.
+## <a name="resource-fulfillment-for-planned-resources"></a><span data-ttu-id="e1e08-378">Resurssin toteuttaminen suunnitelluille resursseille</span><span class="sxs-lookup"><span data-stu-id="e1e08-378">Resource fulfillment for planned resources</span></span>
+<span data-ttu-id="e1e08-379">Projektipäällikkö voi suunnitella projektille tarvittavat resurssiroolit.</span><span class="sxs-lookup"><span data-stu-id="e1e08-379">A project manager can plan required resource roles for a project.</span></span> <span data-ttu-id="e1e08-380">Resurssipäällikkö näkee suunnitellut resurssit pyyntöinä **Resurssin toteuttaminen** -sivulla ja voi määrittää varsinaiset resurssit.</span><span class="sxs-lookup"><span data-stu-id="e1e08-380">The resource manager will see these planned resources as requests on the **Resource fulfillment** page and can assign actual resources.</span></span>
 
-1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektit** &gt; **Kaikki projektit**.
-2.  Valitse luettelosta **XYZ-päivitysvaihe 2** -projekti.
-3.  Valitse **Projekti**.
-4.  Valitse **Muokkaa**.
-5.  Valitse **Projektiryhmän ja ajoitus** -välilehdestä **Lisää**.
-6.  Valitse **Lisää roolit** -valintaikkunassa **Ohjelmistokehittäjä**-rooli.
-7.  Valitse **Luo**.
-8.  Sulje projektisivu.
-9.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektiresurssit** &gt; **Resurssin toteuttaminen**.
-10. Valitse **Ohjelmistokehittäjä 1** **XYZ-päivitysvaihe 2** -projektille.
-11. Valitse työntekijä ja napsauta sitten **Määritä**.
-12. Tarkista, että **Ohjelmistokehittäjä 1** -rivi on poistettu **XYZ-päivitysvaihe 2** -projektista.
-13. Tarkista **Projektiryhmä ja ajoitus** -välilehdessä, että vaiheessa 11 valitsemasi työntekijä on lisätty **XYZ-päivitysvaihe 2** -projektiin **ohjelmistokehittäjäksi**.
+1.  <span data-ttu-id="e1e08-381">Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektit** &gt; **Kaikki projektit**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-381">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="e1e08-382">Valitse luettelosta **XYZ-päivitysvaihe 2** -projekti.</span><span class="sxs-lookup"><span data-stu-id="e1e08-382">In the list, select the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="e1e08-383">Valitse **Projekti**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-383">Click **Project**.</span></span>
+4.  <span data-ttu-id="e1e08-384">Valitse **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-384">Click **Edit**.</span></span>
+5.  <span data-ttu-id="e1e08-385">Valitse **Projektiryhmän ja ajoitus** -välilehdestä **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-385">On the **Project team and scheduling** tab,** **click **Add**.</span></span>
+6.  <span data-ttu-id="e1e08-386">Valitse **Lisää roolit** -valintaikkunassa **Ohjelmistokehittäjä**-rooli.</span><span class="sxs-lookup"><span data-stu-id="e1e08-386">In the **Add roles** dialog box, select the **Software developer** role.</span></span>
+7.  <span data-ttu-id="e1e08-387">Valitse **Luo**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-387">Click **Create**.</span></span>
+8.  <span data-ttu-id="e1e08-388">Sulje projektisivu.</span><span class="sxs-lookup"><span data-stu-id="e1e08-388">Close the project page.</span></span>
+9.  <span data-ttu-id="e1e08-389">Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektiresurssit** &gt; **Resurssin toteuttaminen**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-389">Click **Project management and accounting** &gt; **Project resources** &gt; **Resource fulfillment**.</span></span>
+10. <span data-ttu-id="e1e08-390">Valitse **Ohjelmistokehittäjä 1** **XYZ-päivitysvaihe 2** -projektille.</span><span class="sxs-lookup"><span data-stu-id="e1e08-390">Select **Software developer 1** for the **XYZ Upgrade project Phase 2** project.</span></span>
+11. <span data-ttu-id="e1e08-391">Valitse työntekijä ja napsauta sitten **Määritä**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-391">Select a worker, and then click **Assign**.</span></span>
+12. <span data-ttu-id="e1e08-392">Tarkista, että **Ohjelmistokehittäjä 1** -rivi on poistettu **XYZ-päivitysvaihe 2** -projektista.</span><span class="sxs-lookup"><span data-stu-id="e1e08-392">Verify that the line for **Software developer 1** has been removed for the **XYZ Upgrade project Phase 2** project.</span></span>
+13. <span data-ttu-id="e1e08-393">Tarkista **Projektiryhmä ja ajoitus** -välilehdessä, että vaiheessa 11 valitsemasi työntekijä on lisätty **XYZ-päivitysvaihe 2** -projektiin **ohjelmistokehittäjäksi**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-393">On the **Project team and scheduling** tab, for the **XYZ Upgrade Phase 2** project, verify that the worker that you selected in step 11 has been added as **Software developer**.</span></span>
 
-## <a name="requests-for-project-resources"></a>Projektiresurssien pyynnöt
-Projektiresurssin ajoitustoiminto tukee vain resurssipäälliköitä, jotka jakavat henkilöllisiä resursseja sitoumuksiin tai projekteihin. Tämä toiminto otetaan käyttöön suorittamalla seuraavat tehtävät valmiiksi tai varmistamalla, että ne on suoritettu.
+## <a name="requests-for-project-resources"></a><span data-ttu-id="e1e08-394">Projektiresurssien pyynnöt</span><span class="sxs-lookup"><span data-stu-id="e1e08-394">Requests for project resources</span></span>
+<span data-ttu-id="e1e08-395">Projektiresurssin ajoitustoiminto tukee vain resurssipäälliköitä, jotka jakavat henkilöllisiä resursseja sitoumuksiin tai projekteihin.</span><span class="sxs-lookup"><span data-stu-id="e1e08-395">The project resource scheduling functionality only supports resource managers to distribute staffed resources on engagements or projects.</span></span> <span data-ttu-id="e1e08-396">Tämä toiminto otetaan käyttöön suorittamalla seuraavat tehtävät valmiiksi tai varmistamalla, että ne on suoritettu.</span><span class="sxs-lookup"><span data-stu-id="e1e08-396">To enable this functionality, complete the following tasks, or verify that they have been completed.</span></span>
 
--   Määritä numerosarjat.
--   Määritä projektinhallinnan ja kirjanpidon työnkulut.
--   Ota resurssipyynnön työnkulku käyttöön.
+-   <span data-ttu-id="e1e08-397">Määritä numerosarjat.</span><span class="sxs-lookup"><span data-stu-id="e1e08-397">Set up number sequences.</span></span>
+-   <span data-ttu-id="e1e08-398">Määritä projektinhallinnan ja kirjanpidon työnkulut.</span><span class="sxs-lookup"><span data-stu-id="e1e08-398">Set up project management and accounting workflows.</span></span>
+-   <span data-ttu-id="e1e08-399">Ota resurssipyynnön työnkulku käyttöön.</span><span class="sxs-lookup"><span data-stu-id="e1e08-399">Enable resource request workflow.</span></span>
 
-Kun olet varmistanut, että tehtävät on tehty, tai suorittanut ne, voit suorittaa seuraavat tehtävät tarvittaessa.
+<span data-ttu-id="e1e08-400">Kun olet varmistanut, että tehtävät on tehty, tai suorittanut ne, voit suorittaa seuraavat tehtävät tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="e1e08-400">After you have either verified or completed the tasks above, you can complete the following tasks as needed.</span></span>
 
--   Luo resurssipyyntö alustavasti varatusta henkilöllisestä resurssista.
--   Seuraa resurssipyyntöjä.
--   Täytä resurssipyynnöt.
--   Pyydä henkilöllistä resurssia työrakenteesta.
--   Varaa projektin resurssit ilman henkilöllisen resurssin pyyntöä.
+-   <span data-ttu-id="e1e08-401">Luo resurssipyyntö alustavasti varatusta henkilöllisestä resurssista.</span><span class="sxs-lookup"><span data-stu-id="e1e08-401">Create a resource request from a soft-booked staffed resource.</span></span>
+-   <span data-ttu-id="e1e08-402">Seuraa resurssipyyntöjä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-402">Monitor resource requests.</span></span>
+-   <span data-ttu-id="e1e08-403">Täytä resurssipyynnöt.</span><span class="sxs-lookup"><span data-stu-id="e1e08-403">Fulfill resource requests.</span></span>
+-   <span data-ttu-id="e1e08-404">Pyydä henkilöllistä resurssia työrakenteesta.</span><span class="sxs-lookup"><span data-stu-id="e1e08-404">Request a staffed resource from WBS.</span></span>
+-   <span data-ttu-id="e1e08-405">Varaa projektin resurssit ilman henkilöllisen resurssin pyyntöä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-405">Book resources to a project without a request for a staffed resource.</span></span>
 
-## <a name="monitor-project-teams"></a>Projektiryhmien seuranta
-1.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektit** &gt; **Kaikki projektit**.
-2.  Napsauta projektiluettelossa **XYZ-päivitysvaihe 2** -projektin **Projektitunnus**-linkkiä.
-3.  Tarkista **Projektiryhmä ja ajoitus** -pikavälilehdessä, että luettelossa näkyvät projektiresurssit ovat oikein.
+## <a name="monitor-project-teams"></a><span data-ttu-id="e1e08-406">Projektiryhmien seuranta</span><span class="sxs-lookup"><span data-stu-id="e1e08-406">Monitor project teams</span></span>
+1.  <span data-ttu-id="e1e08-407">Valitse **Projektinhallinta ja kirjanpito** &gt; **Projektit** &gt; **Kaikki projektit**.</span><span class="sxs-lookup"><span data-stu-id="e1e08-407">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="e1e08-408">Napsauta projektiluettelossa **XYZ-päivitysvaihe 2** -projektin **Projektitunnus**-linkkiä.</span><span class="sxs-lookup"><span data-stu-id="e1e08-408">In the list of projects, click the **Project ID** link for the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="e1e08-409">Tarkista **Projektiryhmä ja ajoitus** -pikavälilehdessä, että luettelossa näkyvät projektiresurssit ovat oikein.</span><span class="sxs-lookup"><span data-stu-id="e1e08-409">On the **Project team and scheduling** FastTab, verify that the project resources that are listed are correct.</span></span>
 
 
 

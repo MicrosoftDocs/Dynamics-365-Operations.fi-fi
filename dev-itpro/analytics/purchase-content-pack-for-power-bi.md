@@ -15,36 +15,36 @@ ms.custom: 265434
 ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
 ms.search.region: global
 ms.author: fdahl
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: daba17aed7e6cc475a16d6100c5c99ee747ca048
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 4e60a6c7d79f59382b3958b849d78aac18550bc3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="purchase-spend-analysis-power-bi-content"></a>Ostojen ja kulutuksen analyysi - Power BI -sisältö
+# <a name="purchase-spend-analysis-power-bi-content"></a><span data-ttu-id="c4b2d-104">Ostojen ja kulutuksen analyysi - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="c4b2d-104">Purchase spend analysis Power BI content</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, mitä **osto- ja kulutusanalyysin** Microsoft Power BI -sisältö sisältää. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
+<span data-ttu-id="c4b2d-105">Tässä ohjeaiheessa kerrotaan, mitä **osto- ja kulutusanalyysin** Microsoft Power BI -sisältö sisältää.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-105">This topic describes what is included in the **Purchase spend analysis** Microsoft Power BI content.</span></span> <span data-ttu-id="c4b2d-106">Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
-## <a name="overview"></a>Yleiskuvaus
+## <a name="overview"></a><span data-ttu-id="c4b2d-107">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="c4b2d-107">Overview</span></span>
 
-**Osto- ja kustannusanalyysin** Power BI -sisältö on suunniteltu ostopäälliköiden ja budjetista vastaavien esimiesten käyttöön, sillä auttaa seuraamaan ostoja ja kulutusta. Esimiehet voivat analysoida ostoja ja kulutusta seuraavin tavoin:
+<span data-ttu-id="c4b2d-108">**Osto- ja kustannusanalyysin** Power BI -sisältö on suunniteltu ostopäälliköiden ja budjetista vastaavien esimiesten käyttöön, sillä auttaa seuraamaan ostoja ja kulutusta.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-108">The **Purchase spend analysis** Power BI content was designed to help purchasing managers and managers who are responsible for budgets keep an eye on purchase spending.</span></span> <span data-ttu-id="c4b2d-109">Esimiehet voivat analysoida ostoja ja kulutusta seuraavin tavoin:</span><span class="sxs-lookup"><span data-stu-id="c4b2d-109">Managers can analyze purchase spending in the following ways:</span></span>
 
--   Ostot vuoden alusta (toimittajaryhmän ja yksittäisten toimittajien, hankintaluokan ja yksittäisten tuotteiden ja toimittajan sijainnin mukaan)
--   Ostojen vuosittainen muutos (toimittajaryhmän ja hankintaluokan mukaan)
+-   <span data-ttu-id="c4b2d-110">Ostot vuoden alusta (toimittajaryhmän ja yksittäisten toimittajien, hankintaluokan ja yksittäisten tuotteiden ja toimittajan sijainnin mukaan)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-110">Year-to-date purchase (by vendor group and individual vendors, procurement category and individual products, and vendor location)</span></span>
+-   <span data-ttu-id="c4b2d-111">Ostojen vuosittainen muutos (toimittajaryhmän ja hankintaluokan mukaan)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-111">Year-over-year purchase change (by vendor group and procurement category)</span></span>
 
-Sisältö käyttää ostotapahtumiin liittyviä tietoja ja antaa koko yrityksen ostolukujen koostenäkymän sekä toimittaja- ja tuotekohtaisen erittelyn ostoista ja kulutuksesta. Raportit korostavat ostojen ja kulutuksen muutoksia ajanjakson aikana. Tämän vuoksi raportteja voidaan käyttää, kun esimiehille ilmoitetaan yksittäisten toimittajien ja tuotteiden positiivisista ja negatiivisista kulutussuuntauksista. Lisäksi kaaviot osoittavat eri hankintaluokkien ja toimittajaryhmien ostot ja kulutuksen. Näin ollen luokka- ja aluepäälliköitä voivat käyttää kaavioita apuna kulutuskäyttäytymisessä tapahtuvien muutoksien havaitsemisessa.
+<span data-ttu-id="c4b2d-112">Sisältö käyttää ostotapahtumiin liittyviä tietoja ja antaa koko yrityksen ostolukujen koostenäkymän sekä toimittaja- ja tuotekohtaisen erittelyn ostoista ja kulutuksesta.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-112">The content uses purchase transactional data, and provides both an aggregate view of the company-wide purchase figures and a breakdown of purchase spending by vendor and product.</span></span> <span data-ttu-id="c4b2d-113">Raportit korostavat ostojen ja kulutuksen muutoksia ajanjakson aikana.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-113">Reports highlight changes in purchase spending over time.</span></span> <span data-ttu-id="c4b2d-114">Tämän vuoksi raportteja voidaan käyttää, kun esimiehille ilmoitetaan yksittäisten toimittajien ja tuotteiden positiivisista ja negatiivisista kulutussuuntauksista.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-114">Therefore, the reports can be used to alert managers about positive and negative spending trends for individual vendors and products.</span></span> <span data-ttu-id="c4b2d-115">Lisäksi kaaviot osoittavat eri hankintaluokkien ja toimittajaryhmien ostot ja kulutuksen.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-115">Additionally, charts show purchase spending for different procurement categories and vendor groups.</span></span> <span data-ttu-id="c4b2d-116">Näin ollen luokka- ja aluepäälliköitä voivat käyttää kaavioita apuna kulutuskäyttäytymisessä tapahtuvien muutoksien havaitsemisessa.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-116">Therefore, category and regional managers can use the charts to help identify changes in spending behavior.</span></span>
 
-## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys, **osto- ja kulutusanalyysin** Power BI -sisältö näkyy **Osto- ja kulutusanalyysi** -sivulla (**Hankinta** > **Kyselyt ja raportit** > **Ostojen suorituskykyanalyysi** > **Osto- ja kulutusanalyysi**). 
+## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="c4b2d-117">Power BI -sisällön käyttö</span><span class="sxs-lookup"><span data-stu-id="c4b2d-117">Accessing the Power BI content</span></span>
+<span data-ttu-id="c4b2d-118">Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys, **osto- ja kulutusanalyysin** Power BI -sisältö näkyy **Osto- ja kulutusanalyysi** -sivulla (**Hankinta** > **Kyselyt ja raportit** > **Ostojen suorituskykyanalyysi** > **Osto- ja kulutusanalyysi**).</span><span class="sxs-lookup"><span data-stu-id="c4b2d-118">If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the **Purchase spend analysis** Power BI content is shown on the **Purchase and spend analysis** page (**Procurement and sourcing** > **Inquiries and reports** > **Purchase performance analysis** > **Purchase and spend analysis**).</span></span> 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
-**Ostojen ja kulutuksen analyysin** Power BI -sisältöön lukeutuu raportti, joka koostuu mittarijoukosta. Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina. Seuraavassa taulukossa on visualisointien yhteenveto.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="c4b2d-119">Mittareita, jotka sisältyvät Power BI -sisältöön</span><span class="sxs-lookup"><span data-stu-id="c4b2d-119">Metrics that are included in the Power BI content</span></span>
+<span data-ttu-id="c4b2d-120">**Ostojen ja kulutuksen analyysin** Power BI -sisältöön lukeutuu raportti, joka koostuu mittarijoukosta.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-120">The **Purchase spend analysis** Power BI content includes a report that consists of a set of metrics.</span></span> <span data-ttu-id="c4b2d-121">Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-121">These metrics are visualized as charts, tiles, and tables.</span></span> <span data-ttu-id="c4b2d-122">Seuraavassa taulukossa on visualisointien yhteenveto.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-122">The following table provides an overview of the visualizations.</span></span>
 
 <table>
 <colgroup>
@@ -54,120 +54,120 @@ Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise
 </colgroup>
 <thead>
 <tr class="header">
-<th>Raporttisivu</th>
-<th>Kaaviot</th>
-<th>Ruudut</th>
+<th><span data-ttu-id="c4b2d-123">Raporttisivu</span><span class="sxs-lookup"><span data-stu-id="c4b2d-123">Report page</span></span></th>
+<th><span data-ttu-id="c4b2d-124">Kaaviot</span><span class="sxs-lookup"><span data-stu-id="c4b2d-124">Charts</span></span></th>
+<th><span data-ttu-id="c4b2d-125">Ruudut</span><span class="sxs-lookup"><span data-stu-id="c4b2d-125">Tiles</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Ostot toimittajan mukaan</td>
+<td><span data-ttu-id="c4b2d-126">Ostot toimittajan mukaan</span><span class="sxs-lookup"><span data-stu-id="c4b2d-126">Purchase by vendor</span></span></td>
 <td><ul>
-<li>10 parasta toimittajaa ostojen mukaan (pinottu palkkikaavio)</li>
-<li>Ostot yhteensä toimittajaryhmän/maan/nimen mukaan (ympyräkaavio)</li>
-<li>Ostot toimittajaryhmän/maan/nimen mukaan (sarakekaavio)</li>
-<li>Ostot keskimäärin toimittajaryhmän/maan/nimen mukaan (sarakekaavio)</li>
+<li><span data-ttu-id="c4b2d-127">10 parasta toimittajaa ostojen mukaan (pinottu palkkikaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-127">Top 10 vendors by purchase (stacked bar chart)</span></span></li>
+<li><span data-ttu-id="c4b2d-128">Ostot yhteensä toimittajaryhmän/maan/nimen mukaan (ympyräkaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-128">Total purchase by vendor group / country / name (pie chart)</span></span></li>
+<li><span data-ttu-id="c4b2d-129">Ostot toimittajaryhmän/maan/nimen mukaan (sarakekaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-129">Purchase by vendor group / country / name (column chart)</span></span></li>
+<li><span data-ttu-id="c4b2d-130">Ostot keskimäärin toimittajaryhmän/maan/nimen mukaan (sarakekaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-130">Average purchase by vendor group / country / name (column chart)</span></span></li>
 </ul></td>
 <td><ul>
-<li>Osto yhteensä</li>
-<li>Ostojen vuosittainen kasvu</li>
-<li>Toimittajien kokonaismäärä</li>
-<li>Aktiivisten toimittajien kokonaismäärä</li>
+<li><span data-ttu-id="c4b2d-131">Osto yhteensä</span><span class="sxs-lookup"><span data-stu-id="c4b2d-131">Total purchase</span></span></li>
+<li><span data-ttu-id="c4b2d-132">Ostojen vuosittainen kasvu</span><span class="sxs-lookup"><span data-stu-id="c4b2d-132">YOY purchase growth</span></span></li>
+<li><span data-ttu-id="c4b2d-133">Toimittajien kokonaismäärä</span><span class="sxs-lookup"><span data-stu-id="c4b2d-133">Total # vendors</span></span></li>
+<li><span data-ttu-id="c4b2d-134">Aktiivisten toimittajien kokonaismäärä</span><span class="sxs-lookup"><span data-stu-id="c4b2d-134">Total # of active vendors</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Ostot tuotteen mukaan</td>
+<td><span data-ttu-id="c4b2d-135">Ostot tuotteen mukaan</span><span class="sxs-lookup"><span data-stu-id="c4b2d-135">Purchase by product</span></span></td>
 <td><ul>
-<li>Ostot hankintaluokan / tuotteen nimen mukaan (sarakekaavio)</li>
-<li>Ostot yhteensä hankintaluokan / tuotteen nimen mukaan (ympyräkaavio)</li>
-<li>10 parasta tuotetta ostojen mukaan (pinottu palkkikaavio)</li>
+<li><span data-ttu-id="c4b2d-136">Ostot hankintaluokan / tuotteen nimen mukaan (sarakekaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-136">Purchase by procurement category / product name (column chart)</span></span></li>
+<li><span data-ttu-id="c4b2d-137">Ostot yhteensä hankintaluokan / tuotteen nimen mukaan (ympyräkaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-137">Total purchase by procurement category / product name (pie chart)</span></span></li>
+<li><span data-ttu-id="c4b2d-138">10 parasta tuotetta ostojen mukaan (pinottu palkkikaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-138">Top 10 products by purchase (stacked bar chart)</span></span></li>
 </ul></td>
 <td><ul>
-<li>Tuotteiden kokonaismäärä</li>
-<li>Kaikkien aktiivisten tuotteiden prosenttiosuus tuotteiden kokonaismäärästä</li>
-<li>Tuotteiden määrä, joista koostuu 80 % ostoista</li>
+<li><span data-ttu-id="c4b2d-139">Tuotteiden kokonaismäärä</span><span class="sxs-lookup"><span data-stu-id="c4b2d-139">Total # of products</span></span></li>
+<li><span data-ttu-id="c4b2d-140">Kaikkien aktiivisten tuotteiden prosenttiosuus tuotteiden kokonaismäärästä</span><span class="sxs-lookup"><span data-stu-id="c4b2d-140">Total active products percentage of total # of products</span></span></li>
+<li><span data-ttu-id="c4b2d-141">Tuotteiden määrä, joista koostuu 80 % ostoista</span><span class="sxs-lookup"><span data-stu-id="c4b2d-141">Number of products accounting for 80% purchase</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Ostot kauden mukaan*</td>
+<td><span data-ttu-id="c4b2d-142">Ostot kauden mukaan*</span><span class="sxs-lookup"><span data-stu-id="c4b2d-142">Purchase by period*</span></span></td>
 <td><ul>
-<li>Ostot kuukauden/päivän mukaan (sarakekaavio)</li>
-<li>Kumulatiivisten ostojen vuosittainen varianssi (vesiputouskaavio)</li>
-<li>Ostot yhteensä, vuosittainen kasvu (sarakekaavio)</li>
-<li>Hankintaraportti (matriisi)</li>
+<li><span data-ttu-id="c4b2d-143">Ostot kuukauden/päivän mukaan (sarakekaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-143">Purchase by month / day (column chart)</span></span></li>
+<li><span data-ttu-id="c4b2d-144">Kumulatiivisten ostojen vuosittainen varianssi (vesiputouskaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-144">Cumulative purchase YOY variance (waterfall chart)</span></span></li>
+<li><span data-ttu-id="c4b2d-145">Ostot yhteensä, vuosittainen kasvu (sarakekaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-145">Total purchase YOY growth (column chart)</span></span></li>
+<li><span data-ttu-id="c4b2d-146">Hankintaraportti (matriisi)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-146">Procurement statement (matrix)</span></span></li>
 </ul></td>
 <td><ul>
-<li>Ostojen vuosittainen kasvu</li>
-<li>Ostojen vuosittainen kasvuprosentti</li>
+<li><span data-ttu-id="c4b2d-147">Ostojen vuosittainen kasvu</span><span class="sxs-lookup"><span data-stu-id="c4b2d-147">YOY purchase growth</span></span></li>
+<li><span data-ttu-id="c4b2d-148">Ostojen vuosittainen kasvuprosentti</span><span class="sxs-lookup"><span data-stu-id="c4b2d-148">YOY purchase growth %</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Ostot toimittajan sijainnin mukaan</td>
+<td><span data-ttu-id="c4b2d-149">Ostot toimittajan sijainnin mukaan</span><span class="sxs-lookup"><span data-stu-id="c4b2d-149">Purchase by vendor location</span></span></td>
 <td><ul>
-<li>Ostot kaupungin mukaan</li>
-<li>Ostojen vuosittainen kasvuprosentti</li>
-<li>Ostot maan mukaan</li>
+<li><span data-ttu-id="c4b2d-150">Ostot kaupungin mukaan</span><span class="sxs-lookup"><span data-stu-id="c4b2d-150">Purchase by city</span></span></li>
+<li><span data-ttu-id="c4b2d-151">Ostojen vuosittainen kasvuprosentti</span><span class="sxs-lookup"><span data-stu-id="c4b2d-151">Purchase YOY growth %</span></span></li>
+<li><span data-ttu-id="c4b2d-152">Ostot maan mukaan</span><span class="sxs-lookup"><span data-stu-id="c4b2d-152">Purchase by country</span></span></li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>Ostojen ja kulutuksen analyysi ajan mukaan</td>
+<td><span data-ttu-id="c4b2d-153">Ostojen ja kulutuksen analyysi ajan mukaan</span><span class="sxs-lookup"><span data-stu-id="c4b2d-153">Purchase spend analysis by time</span></span></td>
 <td><ul>
-<li>Ostojen kuluva vuosi kuukauden/päivän mukaan (viivakaavio)</li>
-<li>Ostojen kuluva ja edellinen vuosi (viiva- ja sarakekaavio)</li>
+<li><span data-ttu-id="c4b2d-154">Ostojen kuluva vuosi kuukauden/päivän mukaan (viivakaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-154">Purchase current year by month / day (line chart)</span></span></li>
+<li><span data-ttu-id="c4b2d-155">Ostojen kuluva ja edellinen vuosi (viiva- ja sarakekaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-155">Purchase current and last year (line and column chart)</span></span></li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Ostojen ja kulutuksen analyysi toimittajan mukaan</td>
+<td><span data-ttu-id="c4b2d-156">Ostojen ja kulutuksen analyysi toimittajan mukaan</span><span class="sxs-lookup"><span data-stu-id="c4b2d-156">Purchase spend analysis by vendor</span></span></td>
 <td><ul>
-<li>10 parasta toimittajaa ostojen prosenttiosuuden mukaan (suppilokaavio)</li>
-<li>10 toimittajaa, joiden vuosittainen kulutus on noussut eniten</li>
-<li>10 toimittajaa, joiden vuosittainen kulutus on laskenut eniten</li>
+<li><span data-ttu-id="c4b2d-157">10 parasta toimittajaa ostojen prosenttiosuuden mukaan (suppilokaavio)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-157">Top 10 vendor purchase % of purchase (funnel)</span></span></li>
+<li><span data-ttu-id="c4b2d-158">10 toimittajaa, joiden vuosittainen kulutus on noussut eniten</span><span class="sxs-lookup"><span data-stu-id="c4b2d-158">Top 10 vendors with increased spending YOY</span></span></li>
+<li><span data-ttu-id="c4b2d-159">10 toimittajaa, joiden vuosittainen kulutus on laskenut eniten</span><span class="sxs-lookup"><span data-stu-id="c4b2d-159">Top 10 vendors with decreased spending YOY</span></span></li>
 </ul></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-\* Ostot tänä ja edellisenä vuonna sekä kasvu hankintaluokan mukaan
+<span data-ttu-id="c4b2d-160">\* Ostot tänä ja edellisenä vuonna sekä kasvu hankintaluokan mukaan</span><span class="sxs-lookup"><span data-stu-id="c4b2d-160">\* Purchase this year and last year, and growth by procurement category</span></span>
 
-## <a name="extending-the-power-bi-content"></a>Power BI -sisällön laajentaminen
-Jos käytät Microsoft Dynamics Lifecycle Servicesin (LCS) sisältöpaketteja, voit tehdä erinomaisia analyyseja henkilöille, jotka eivät käytä Microsoft Dynamics 365:tä. Voit muokata näitä sisältöpaketit sisältämään muita raportteja ja visuaalisia tietoja ja julkaista sitten sisältöpaketit analysoitavaksi Power BI.com -vuokraajassa. 
+## <a name="extending-the-power-bi-content"></a><span data-ttu-id="c4b2d-161">Power BI -sisällön laajentaminen</span><span class="sxs-lookup"><span data-stu-id="c4b2d-161">Extending the Power BI content</span></span>
+<span data-ttu-id="c4b2d-162">Jos käytät Microsoft Dynamics Lifecycle Servicesin (LCS) sisältöpaketteja, voit tehdä erinomaisia analyyseja henkilöille, jotka eivät käytä Microsoft Dynamics 365:tä.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-162">By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Microsoft Dynamics 365.</span></span> <span data-ttu-id="c4b2d-163">Voit muokata näitä sisältöpaketit sisältämään muita raportteja ja visuaalisia tietoja ja julkaista sitten sisältöpaketit analysoitavaksi Power BI.com -vuokraajassa.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-163">You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.</span></span> 
 
-**Osto- ja kulutusanalyysin** Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
+<span data-ttu-id="c4b2d-164">**Osto- ja kulutusanalyysin** Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-164">You can find the **Purchase spend analysis** Power BI content in the Shared assets library in LCS.</span></span> <span data-ttu-id="c4b2d-165">Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md).</span><span class="sxs-lookup"><span data-stu-id="c4b2d-165">For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).</span></span> <span data-ttu-id="c4b2d-166">Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).</span><span class="sxs-lookup"><span data-stu-id="c4b2d-166">To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.</span></span>
 
-Muista ladata käyttämääsi Dynamics 365 -versiota vastaava **osto- ja kulutusanalyysin** sisältö.
+<span data-ttu-id="c4b2d-167">Muista ladata käyttämääsi Dynamics 365 -versiota vastaava **osto- ja kulutusanalyysin** sisältö.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-167">Be sure to download the **Purchase spend analysis** content that applies to the version of Dynamics 365 that you're using.</span></span>
 
 > [!NOTE]
-> Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, Power BI -sisällön edellytyksenä on KB 4011327. Kun olet kirjautunut LCS:ään, voit siirtyä tietämyskantaan osoitteessa https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+> <span data-ttu-id="c4b2d-168">Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, Power BI -sisällön edellytyksenä on KB 4011327.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-168">If you're using Microsoft Dynamics 365 for Operations version 1611, KB 4011327 is a prerequisite for this Power BI content.</span></span> <span data-ttu-id="c4b2d-169">Kun olet kirjautunut LCS:ään, voit siirtyä tietämyskantaan osoitteessa https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-169">After you sign in to LCS, you can access the KB at https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.</span></span>
 
-## <a name="data-model-and-entities"></a>Tietomalli ja yksiköt
-Seuraavia tietoja käytetään **osto- ja kulutusanalyysin** Power BI -sisällön raporttisivujen täyttämiseen. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md).
+## <a name="data-model-and-entities"></a><span data-ttu-id="c4b2d-170">Tietomalli ja yksiköt</span><span class="sxs-lookup"><span data-stu-id="c4b2d-170">Data model and entities</span></span>
+<span data-ttu-id="c4b2d-171">Seuraavia tietoja käytetään **osto- ja kulutusanalyysin** Power BI -sisällön raporttisivujen täyttämiseen.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-171">The following data is used to fill the report pages in the **Purchase spend analysis** Power BI content.</span></span> <span data-ttu-id="c4b2d-172">Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-172">This data is represented as aggregate measurements that are staged in the Entity store.</span></span> <span data-ttu-id="c4b2d-173">Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-173">The Entity store is a Microsoft SQL Server database that is optimized for analytics.</span></span> <span data-ttu-id="c4b2d-174">Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md).</span><span class="sxs-lookup"><span data-stu-id="c4b2d-174">For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span>
 
-Sisällön koostetut mittaukset ovat alijoukko Microsoft Dynamics AX 2012:n ja AX 2012 R3:n ostokuutiossa saatavilla olleista koostemitoista. Jotta kuution koostetut mittaukset voi tallentaa yksikkösäilöön, niistä on tehtävä käyttöönottokelpoisia. Lisätietoja koostettujen mittojen tallentamisesta yksikkösäilöön on ohjeaiheessa [Power BI:n ja yksikkösäilön integroinnin yleiskatsaus](power-bi-integration-entity-store.md). Seuraavat tärkeät koostemitat ovat käytettävissä suoraan laskun rivien yksiköstä. Niitä käytetään sisällön perustana.
+<span data-ttu-id="c4b2d-175">Sisällön koostetut mittaukset ovat alijoukko Microsoft Dynamics AX 2012:n ja AX 2012 R3:n ostokuutiossa saatavilla olleista koostemitoista.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-175">The aggregate measurements in this content are the subset of aggregate measurements that were available in the Purchase Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3.</span></span> <span data-ttu-id="c4b2d-176">Jotta kuution koostetut mittaukset voi tallentaa yksikkösäilöön, niistä on tehtävä käyttöönottokelpoisia.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-176">To stage the cube’s aggregate measurements in the Entity store, you must make them deployable.</span></span> <span data-ttu-id="c4b2d-177">Lisätietoja koostettujen mittojen tallentamisesta yksikkösäilöön on ohjeaiheessa [Power BI:n ja yksikkösäilön integroinnin yleiskatsaus](power-bi-integration-entity-store.md).</span><span class="sxs-lookup"><span data-stu-id="c4b2d-177">For more information, see the procedure for staging aggregate measurements in the Entity store in [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span> <span data-ttu-id="c4b2d-178">Seuraavat tärkeät koostemitat ovat käytettävissä suoraan laskun rivien yksiköstä. Niitä käytetään sisällön perustana.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-178">The following key aggregate measurements are available directly from the Invoice lines entity and are used as the basis of the content.</span></span>
 
-| Kokonaisuus        | Tärkeät koostemitat | Tietolähde                                 | Kenttä              | kuvaus                            |
+| <span data-ttu-id="c4b2d-179">Kokonaisuus</span><span class="sxs-lookup"><span data-stu-id="c4b2d-179">Entity</span></span>        | <span data-ttu-id="c4b2d-180">Tärkeät koostemitat</span><span class="sxs-lookup"><span data-stu-id="c4b2d-180">Key aggregate measurements</span></span> | <span data-ttu-id="c4b2d-181">Tietolähde</span><span class="sxs-lookup"><span data-stu-id="c4b2d-181">Data source</span></span>                                 | <span data-ttu-id="c4b2d-182">Kenttä</span><span class="sxs-lookup"><span data-stu-id="c4b2d-182">Field</span></span>              | <span data-ttu-id="c4b2d-183">kuvaus</span><span class="sxs-lookup"><span data-stu-id="c4b2d-183">Description</span></span>                            |
 |---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|
-| Laskurivit | Osto                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Summa kirjanpitovaluuttana. |
+| <span data-ttu-id="c4b2d-184">Laskurivit</span><span class="sxs-lookup"><span data-stu-id="c4b2d-184">Invoice lines</span></span> | <span data-ttu-id="c4b2d-185">Osto</span><span class="sxs-lookup"><span data-stu-id="c4b2d-185">Purchase</span></span>                   | <span data-ttu-id="c4b2d-186">VendInvoiceTrans</span><span class="sxs-lookup"><span data-stu-id="c4b2d-186">VendInvoiceTrans</span></span>                            | <span data-ttu-id="c4b2d-187">SUM(LineAmountMST)</span><span class="sxs-lookup"><span data-stu-id="c4b2d-187">SUM(LineAmountMST)</span></span> | <span data-ttu-id="c4b2d-188">Summa kirjanpitovaluuttana.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-188">The amount in the accounting currency.</span></span> |
 
-Seuraavassa taulukossa esitellään tärkeät mitat, jotka lasketaan sisällössä ja jotka saadaan laskun rivien yksiköstä.
+<span data-ttu-id="c4b2d-189">Seuraavassa taulukossa esitellään tärkeät mitat, jotka lasketaan sisällössä ja jotka saadaan laskun rivien yksiköstä.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-189">The following table shows the key measurements in the content that are calculated from the Invoice lines entity.</span></span>
 
-| Mitta               | Laskelma                                                                                         |
+| <span data-ttu-id="c4b2d-190">Mitta</span><span class="sxs-lookup"><span data-stu-id="c4b2d-190">Measure</span></span>               | <span data-ttu-id="c4b2d-191">Laskelma</span><span class="sxs-lookup"><span data-stu-id="c4b2d-191">Calculation</span></span>                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
-| Kuluvan vuoden ostot | Kuluvan vuoden ostot = SUM('Invoice lines'\[Purchase\])                                            |
-| Edellisen vuoden ostot    | Edellisen vuoden ostot = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\])) |
-| Ostojen vuosittainen kasvu   | Ostojen vuosittainen kasvu = \[Kuluvan vuoden ostot\] – \[Edellisen vuoden ostot\]                            |
+| <span data-ttu-id="c4b2d-192">Kuluvan vuoden ostot</span><span class="sxs-lookup"><span data-stu-id="c4b2d-192">Purchase current year</span></span> | <span data-ttu-id="c4b2d-193">Kuluvan vuoden ostot = SUM('Invoice lines'\[Purchase\])</span><span class="sxs-lookup"><span data-stu-id="c4b2d-193">Purchase current year = SUM('Invoice lines'\[Purchase\])</span></span>                                            |
+| <span data-ttu-id="c4b2d-194">Edellisen vuoden ostot</span><span class="sxs-lookup"><span data-stu-id="c4b2d-194">Purchase last year</span></span>    | <span data-ttu-id="c4b2d-195">Edellisen vuoden ostot = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\]))</span><span class="sxs-lookup"><span data-stu-id="c4b2d-195">Purchase last year = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\]))</span></span> |
+| <span data-ttu-id="c4b2d-196">Ostojen vuosittainen kasvu</span><span class="sxs-lookup"><span data-stu-id="c4b2d-196">YOY purchase growth</span></span>   | <span data-ttu-id="c4b2d-197">Ostojen vuosittainen kasvu = \[Kuluvan vuoden ostot\] – \[Edellisen vuoden ostot\]</span><span class="sxs-lookup"><span data-stu-id="c4b2d-197">YOY purchase growth = \[Purchase current year\] – \[Purchase last year\]</span></span>                            |
 
-Seuraavia sisällön tärkeitä dimensioita käytetään koostemittojen ositussuodattimina. Tämä parantaa rakeisuutta ja sen avulla saadaan entistä tarkempaa analyysitietoa.
+<span data-ttu-id="c4b2d-198">Seuraavia sisällön tärkeitä dimensioita käytetään koostemittojen ositussuodattimina. Tämä parantaa rakeisuutta ja sen avulla saadaan entistä tarkempaa analyysitietoa.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-198">The following key dimensions in the content are used as filters to slice the aggregate measurements, so that you can achieve more granularity and gain deeper analytical insights.</span></span>
 
-| Kokonaisuus                 | Esimerkkejä määritteistä                                |
+| <span data-ttu-id="c4b2d-199">Kokonaisuus</span><span class="sxs-lookup"><span data-stu-id="c4b2d-199">Entity</span></span>                 | <span data-ttu-id="c4b2d-200">Esimerkkejä määritteistä</span><span class="sxs-lookup"><span data-stu-id="c4b2d-200">Examples of attributes</span></span>                                |
 |------------------------|-------------------------------------------------------|
-| Toimittajat                | Toimittajaryhmät, toimittajan maa tai alueet, toimittajan nimi |
-| Tuotteet               | Tuotenumero, tuotteen nimi, nimikeryhmien nimi        |
-| Hankintaluokat | Hankintaluokka, hankintaluokkien nimet      |
-| Oikeushenkilöt         | Yrityksen nimi                                     |
-| Päivämäärät                  | Päivämäärät, vuosisiirtymä                                    |
+| <span data-ttu-id="c4b2d-201">Toimittajat</span><span class="sxs-lookup"><span data-stu-id="c4b2d-201">Vendors</span></span>                | <span data-ttu-id="c4b2d-202">Toimittajaryhmät, toimittajan maa tai alueet, toimittajan nimi</span><span class="sxs-lookup"><span data-stu-id="c4b2d-202">Vendor groups, Vendor country or regions, Vendor name</span></span> |
+| <span data-ttu-id="c4b2d-203">Tuotteet</span><span class="sxs-lookup"><span data-stu-id="c4b2d-203">Products</span></span>               | <span data-ttu-id="c4b2d-204">Tuotenumero, tuotteen nimi, nimikeryhmien nimi</span><span class="sxs-lookup"><span data-stu-id="c4b2d-204">Product number, Product name, Item groups name</span></span>        |
+| <span data-ttu-id="c4b2d-205">Hankintaluokat</span><span class="sxs-lookup"><span data-stu-id="c4b2d-205">Procurement categories</span></span> | <span data-ttu-id="c4b2d-206">Hankintaluokka, hankintaluokkien nimet</span><span class="sxs-lookup"><span data-stu-id="c4b2d-206">Procurement category, Procurement category names</span></span>      |
+| <span data-ttu-id="c4b2d-207">Oikeushenkilöt</span><span class="sxs-lookup"><span data-stu-id="c4b2d-207">Legal entities</span></span>         | <span data-ttu-id="c4b2d-208">Yrityksen nimi</span><span class="sxs-lookup"><span data-stu-id="c4b2d-208">Legal entity name</span></span>                                     |
+| <span data-ttu-id="c4b2d-209">Päivämäärät</span><span class="sxs-lookup"><span data-stu-id="c4b2d-209">Dates</span></span>                  | <span data-ttu-id="c4b2d-210">Päivämäärät, vuosisiirtymä</span><span class="sxs-lookup"><span data-stu-id="c4b2d-210">Dates, Year offset</span></span>                                    |
 
-Kuluvan kalenterivuoden tiedot näkyvät oletusarvoisesti sisällössä. Voit kuitenkin muuttaa päivämääräsuodatinta raportin suodatinosassa. Voit muuttaa myös yrityssuodatinta.
+<span data-ttu-id="c4b2d-211">Kuluvan kalenterivuoden tiedot näkyvät oletusarvoisesti sisällössä.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-211">By default, the content shows data for the current calendar year.</span></span> <span data-ttu-id="c4b2d-212">Voit kuitenkin muuttaa päivämääräsuodatinta raportin suodatinosassa.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-212">However, you can change the date filter in the report filters section.</span></span> <span data-ttu-id="c4b2d-213">Voit muuttaa myös yrityssuodatinta.</span><span class="sxs-lookup"><span data-stu-id="c4b2d-213">You can also change the company filter.</span></span>
 

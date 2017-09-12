@@ -16,29 +16,29 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: c4dcc0a086095029aec24eda0b89a7f6a2063bf3
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3a6aa136018e586fd66e77c0f2af3a9f321f822f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="view-posted-sales-tax-transactions"></a>Näytä kirjatut arvonlisäverotapahtumat
+# <a name="view-posted-sales-tax-transactions"></a><span data-ttu-id="f2e3a-103">Näytä kirjatut arvonlisäverotapahtumat</span><span class="sxs-lookup"><span data-stu-id="f2e3a-103">View posted sales tax transactions</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Voit tarkastella haluamiasi kirjattuja arvonlisäverotapahtumia eri sivuilta. Tässä tehtävässä käytetään esittely-yritystä USMF.
+<span data-ttu-id="f2e3a-104">Voit tarkastella haluamiasi kirjattuja arvonlisäverotapahtumia eri sivuilta.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-104">You can view posted sales tax transactions from various page depending on what you need to view.</span></span> <span data-ttu-id="f2e3a-105">Tässä tehtävässä käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-105">This task uses the USMF demo company.</span></span>
 
-1. Valitse Vero > Kyselyt ja raportit > Arvonlisäverokyselyt > Kirjattu arvonlisävero.
-2. Valitse Näytä suodattimet.
-3. Sulje sivu.
-4. Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäveron tilityskaudet.
-5. Laajenna Kausivälit-osa.
-6. Valitse haluamasi väli.
-7. Näytä valitun tilityskausivälin kirjatut arvonlisäverotapahtumat.
-8. Voit suodattaa kirjattujen arvonlisäverotapahtumien luetteloa tarkemmin.
-9. Sulje sivu.
-10. Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäverokoodit.
-11. Valitse toimintoruudussa Arvonlisäverokoodi.
-12. Valitse Kirjattu arvonlisävero.
+1. <span data-ttu-id="f2e3a-106">Valitse Vero > Kyselyt ja raportit > Arvonlisäverokyselyt > Kirjattu arvonlisävero.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-106">Go to Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax.</span></span>
+2. <span data-ttu-id="f2e3a-107">Valitse Näytä suodattimet.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-107">Click Show filters.</span></span>
+3. <span data-ttu-id="f2e3a-108">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-108">Close the page.</span></span>
+4. <span data-ttu-id="f2e3a-109">Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäveron tilityskaudet.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-109">Go to Tax > Indirect taxes > Sales tax > Sales tax settlement periods.</span></span>
+5. <span data-ttu-id="f2e3a-110">Laajenna Kausivälit-osa.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-110">Expand the Period intervals section.</span></span>
+6. <span data-ttu-id="f2e3a-111">Valitse haluamasi väli.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-111">Select the interval you are interested in.</span></span>
+7. <span data-ttu-id="f2e3a-112">Näytä valitun tilityskausivälin kirjatut arvonlisäverotapahtumat.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-112">Display posted sales tax transactions for the selected settlement period interval.</span></span>
+8. <span data-ttu-id="f2e3a-113">Voit suodattaa kirjattujen arvonlisäverotapahtumien luetteloa tarkemmin.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-113">You can further filter the list of posted sales tax transactions.</span></span>
+9. <span data-ttu-id="f2e3a-114">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-114">Close the page.</span></span>
+10. <span data-ttu-id="f2e3a-115">Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäverokoodit.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-115">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
+11. <span data-ttu-id="f2e3a-116">Valitse toimintoruudussa Arvonlisäverokoodi.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-116">On the Action Pane, click Sales tax code.</span></span>
+12. <span data-ttu-id="f2e3a-117">Valitse Kirjattu arvonlisävero.</span><span class="sxs-lookup"><span data-stu-id="f2e3a-117">Click Posted sales tax.</span></span>
 
 

@@ -16,24 +16,24 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: f009d040d7bdc419363dd9d7bc84fdeae5284ea6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b6a0ffb1b5be1ecda929ad604fc39b260fa1c34c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="add-an-image-to-a-product"></a>Kuvan lisääminen tuotteelle
+# <a name="add-an-image-to-a-product"></a><span data-ttu-id="56d42-103">Kuvan lisääminen tuotteelle</span><span class="sxs-lookup"><span data-stu-id="56d42-103">Add an image to a product</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä toimintaohjeessa kuvataan, miten kuva lisätään tuotteeseen, jonka avulla tämä tehtävä on luotu esittely-yritys USMF:ssä.
+<span data-ttu-id="56d42-104">Tässä toimintaohjeessa kuvataan, miten kuva lisätään tuotteeseen, jonka avulla tämä tehtävä on luotu esittely-yritys USMF:ssä.</span><span class="sxs-lookup"><span data-stu-id="56d42-104">This procedure shows how to add an image to a product The demo data company used to create this task is USMF.</span></span>
 
-1. Mene Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet.
-2. Laajenna tuotekuvan tietoruutu.
-3. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Valitse tässä esimerkissä nimiketunnus C0002.  
-4. Valitse Vaihda kuva.
-5. Valitse Uusi.
-    * Valitse Selaa. Etsi haluamasi kuva ja sulje sitten valintaikkuna.    
+1. <span data-ttu-id="56d42-105">Mene Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="56d42-105">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="56d42-106">Laajenna tuotekuvan tietoruutu.</span><span class="sxs-lookup"><span data-stu-id="56d42-106">Expand the Product image FactBox.</span></span>
+3. <span data-ttu-id="56d42-107">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="56d42-107">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="56d42-108">Valitse tässä esimerkissä nimiketunnus C0002.</span><span class="sxs-lookup"><span data-stu-id="56d42-108">For example, select the item number C0002.</span></span>  
+4. <span data-ttu-id="56d42-109">Valitse Vaihda kuva.</span><span class="sxs-lookup"><span data-stu-id="56d42-109">Click Change image.</span></span>
+5. <span data-ttu-id="56d42-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="56d42-110">Click New.</span></span>
+    * <span data-ttu-id="56d42-111">Valitse Selaa.</span><span class="sxs-lookup"><span data-stu-id="56d42-111">Click Browse.</span></span> <span data-ttu-id="56d42-112">Etsi haluamasi kuva ja sulje sitten valintaikkuna.</span><span class="sxs-lookup"><span data-stu-id="56d42-112">Find the image that you want to use, select it, and then close the dialog box.</span></span>    
 
 

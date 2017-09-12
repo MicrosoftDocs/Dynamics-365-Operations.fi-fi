@@ -22,37 +22,37 @@ ms.contentlocale: fi-fi
 ms.lasthandoff: 07/28/2017
 
 ---
-# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Lisää merkintä suorituskyvyn kirjauskansioon ja lähetä kehuja
+# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a><span data-ttu-id="551a8-103">Lisää merkintä suorituskyvyn kirjauskansioon ja lähetä kehuja</span><span class="sxs-lookup"><span data-stu-id="551a8-103">Add to your performance journal and send praise to someone</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Suoritustason kirjauskansiossa on tietoja siitä, miten olet saavuttanut tavoitteesi tai suoriutunut jakson aikana. Voit myös antaa palautetta kollegoillesi kirjauskansiosta. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.
+<span data-ttu-id="551a8-104">Suoritustason kirjauskansiossa on tietoja siitä, miten olet saavuttanut tavoitteesi tai suoriutunut jakson aikana.</span><span class="sxs-lookup"><span data-stu-id="551a8-104">The performance journal holds information that relates to how you met your goals or how you performed during a period.</span></span> <span data-ttu-id="551a8-105">Voit myös antaa palautetta kollegoillesi kirjauskansiosta.</span><span class="sxs-lookup"><span data-stu-id="551a8-105">You can also praise the actions of a co-worker from the journal.</span></span> <span data-ttu-id="551a8-106">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="551a8-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="551a8-107">Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="551a8-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. Valitse Kaikki työtilat > Työntekijän asiakaspalvelu.
-2. Valitse Suoritustason kirjauskansio.
-3. Valitse Uusi.
-4. Kirjoita Otsikko-kenttään arvo.
-5. Kirjoita arvo Kuvaus-kenttään.
-    * Suorituskyvyn kirjauskansion päivämäärä on päivämäärä, jolloin kirjauskansio on luotu.  
-    * Lähde määrittää, mistä suorituskyvyn kirjauskansio on peräisin. Kun luot sen itse, lähteenä on Oma kirjauskansio. Kun esimies luo sen, lähteenä on Esimiehen kirjauskansio.  
-    * Voit jakaa kirjauskansion esimiehellesi tai tehdä sen näkyväksi vain itsellesi.  
-6. Syötä päivämäärä Aloituspäivä-kenttään.
-7. Syötä Valmistumispäivämäärä-kenttään päivämäärä.
-8. Valitse Kehityssuunnitelma-kentässä Kyllä.
-9. Kirjoita arvo kenttään Avainsanat.
-10. Valitse Lisää ulkoinen linkki.
-11. Kirjoita Kuvaus-kentän arvoksi Envision.
-12. Kirjoita Internet-osoitekenttään 'https://www.microsoft.com/en/envision/default'.
-13. Napsauta Tallenna-painikkeen alla olevaa tekstiä "Suoritustason kirjauskansio" palataksesi ruudukkoon.
-    * Voit lisätä valitun kirjauskansion tai kansiot tavoitteeseen niin, että se tulee esiin, kun avaat tavoitteen. Linkki lisätään Linkit-pikavälilehdelle.    Jos lisäät tavoitteeseen kirjauskansion ja lisäät sitten tavoitteen arviointiin, kirjauskansio tulee automaattisesti näkyviin arvioinnissa.  
-    * Voit lisätä valitun kirjauskansion tai kansiot arviointiin niin, että se tulee esiin, kun avaat arvioinnin.    Linkki lisätään Linkit-pikavälilehdelle.  
-14. Valitse Pikalisäys.
-15. Kirjoita Otsikko-kenttään arvo.
-16. Kirjoita arvo Kuvaus-kenttään.
-17. Valitse Tallenna.
-18. Valitse Lähetä kehu.
-19. Valitse henkilö yrityksen työntekijäluettelosta.
-20. Kirjoita kuvaus-kenttään 'Kiitos avustasi konferenssin aikana!'.
-21. Valitse Lähetä.
+1. <span data-ttu-id="551a8-108">Valitse Kaikki työtilat > Työntekijän asiakaspalvelu.</span><span class="sxs-lookup"><span data-stu-id="551a8-108">Go to All workspaces > Employee self service.</span></span>
+2. <span data-ttu-id="551a8-109">Valitse Suoritustason kirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="551a8-109">Click Performance journal.</span></span>
+3. <span data-ttu-id="551a8-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="551a8-110">Click New.</span></span>
+4. <span data-ttu-id="551a8-111">Kirjoita Otsikko-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="551a8-111">In the Title field, type a value.</span></span>
+5. <span data-ttu-id="551a8-112">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="551a8-112">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="551a8-113">Suorituskyvyn kirjauskansion päivämäärä on päivämäärä, jolloin kirjauskansio on luotu.</span><span class="sxs-lookup"><span data-stu-id="551a8-113">The performance journal date is the date that the journal was created.</span></span>  
+    * <span data-ttu-id="551a8-114">Lähde määrittää, mistä suorituskyvyn kirjauskansio on peräisin.</span><span class="sxs-lookup"><span data-stu-id="551a8-114">The source represents where the performance journal came from.</span></span> <span data-ttu-id="551a8-115">Kun luot sen itse, lähteenä on Oma kirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="551a8-115">When you create one, it comes from My journal.</span></span> <span data-ttu-id="551a8-116">Kun esimies luo sen, lähteenä on Esimiehen kirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="551a8-116">If your manager creates one, it comes from the Manager journal.</span></span>  
+    * <span data-ttu-id="551a8-117">Voit jakaa kirjauskansion esimiehellesi tai tehdä sen näkyväksi vain itsellesi.</span><span class="sxs-lookup"><span data-stu-id="551a8-117">You can share this journal with your manager or make it only visible to you.</span></span>  
+6. <span data-ttu-id="551a8-118">Syötä päivämäärä Aloituspäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="551a8-118">In the Start date field, enter a date.</span></span>
+7. <span data-ttu-id="551a8-119">Syötä Valmistumispäivämäärä-kenttään päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="551a8-119">In the Date completed field, enter a date.</span></span>
+8. <span data-ttu-id="551a8-120">Valitse Kehityssuunnitelma-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="551a8-120">Select Yes in the Development plan field.</span></span>
+9. <span data-ttu-id="551a8-121">Kirjoita arvo kenttään Avainsanat.</span><span class="sxs-lookup"><span data-stu-id="551a8-121">In the Keywords field, type a value.</span></span>
+10. <span data-ttu-id="551a8-122">Valitse Lisää ulkoinen linkki.</span><span class="sxs-lookup"><span data-stu-id="551a8-122">Click Add external link.</span></span>
+11. <span data-ttu-id="551a8-123">Kirjoita Kuvaus-kentän arvoksi Envision.</span><span class="sxs-lookup"><span data-stu-id="551a8-123">In the Description field, type 'Envision'.</span></span>
+12. <span data-ttu-id="551a8-124">Kirjoita Internet-osoitekenttään 'https://www.microsoft.com/en/envision/default'.</span><span class="sxs-lookup"><span data-stu-id="551a8-124">In the Internet address field, type 'https://www.microsoft.com/en/envision/default'.</span></span>
+13. <span data-ttu-id="551a8-125">Napsauta Tallenna-painikkeen alla olevaa tekstiä "Suoritustason kirjauskansio" palataksesi ruudukkoon.</span><span class="sxs-lookup"><span data-stu-id="551a8-125">Click on the caption below the Save button called "Performance journal" to return to the grid.</span></span>
+    * <span data-ttu-id="551a8-126">Voit lisätä valitun kirjauskansion tai kansiot tavoitteeseen niin, että se tulee esiin, kun avaat tavoitteen.</span><span class="sxs-lookup"><span data-stu-id="551a8-126">You can add the selected journal or journals to a goal so that it appears when you open the goal.</span></span> <span data-ttu-id="551a8-127">Linkki lisätään Linkit-pikavälilehdelle.</span><span class="sxs-lookup"><span data-stu-id="551a8-127">A link will be added in the Links fast tab.</span></span>    <span data-ttu-id="551a8-128">Jos lisäät tavoitteeseen kirjauskansion ja lisäät sitten tavoitteen arviointiin, kirjauskansio tulee automaattisesti näkyviin arvioinnissa.</span><span class="sxs-lookup"><span data-stu-id="551a8-128">If you add a journal to a goal and then add the goal to a review, the journal will appear on the review automatically.</span></span>  
+    * <span data-ttu-id="551a8-129">Voit lisätä valitun kirjauskansion tai kansiot arviointiin niin, että se tulee esiin, kun avaat arvioinnin.</span><span class="sxs-lookup"><span data-stu-id="551a8-129">You can add the selected journal or journals to a review so that it appears when you open the review.</span></span>    <span data-ttu-id="551a8-130">Linkki lisätään Linkit-pikavälilehdelle.</span><span class="sxs-lookup"><span data-stu-id="551a8-130">A link will be added in the Links fast tab.</span></span>  
+14. <span data-ttu-id="551a8-131">Valitse Pikalisäys.</span><span class="sxs-lookup"><span data-stu-id="551a8-131">Click Quick add.</span></span>
+15. <span data-ttu-id="551a8-132">Kirjoita Otsikko-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="551a8-132">In the Title field, type a value.</span></span>
+16. <span data-ttu-id="551a8-133">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="551a8-133">In the Description field, type a value.</span></span>
+17. <span data-ttu-id="551a8-134">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="551a8-134">Click Save.</span></span>
+18. <span data-ttu-id="551a8-135">Valitse Lähetä kehu.</span><span class="sxs-lookup"><span data-stu-id="551a8-135">Click Send praise.</span></span>
+19. <span data-ttu-id="551a8-136">Valitse henkilö yrityksen työntekijäluettelosta.</span><span class="sxs-lookup"><span data-stu-id="551a8-136">Select a person from the list of employees in the company.</span></span>
+20. <span data-ttu-id="551a8-137">Kirjoita kuvaus-kenttään 'Kiitos avustasi konferenssin aikana!'.</span><span class="sxs-lookup"><span data-stu-id="551a8-137">In the Description field, enter 'Thanks for all the help at the conference!'.</span></span>
+21. <span data-ttu-id="551a8-138">Valitse Lähetä.</span><span class="sxs-lookup"><span data-stu-id="551a8-138">Click Send.</span></span>
 
 

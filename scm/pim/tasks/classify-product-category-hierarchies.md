@@ -15,31 +15,31 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
+ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
+ms.sourcegitcommit: 3b855c1f2ff9ab8e0144a18ce69fc649149d7e8a
 ms.openlocfilehash: d258f4c3421efdb4cb727f470d78901e301faa64
 ms.contentlocale: fi-fi
 ms.lasthandoff: 07/28/2017
 
 ---
-# <a name="classify-a-product-using-category-hierarchies"></a>Tuotteen luokittelu luokkahierarkioiden avulla
+# <a name="classify-a-product-using-category-hierarchies"></a><span data-ttu-id="b9ef6-103">Tuotteen luokittelu luokkahierarkioiden avulla</span><span class="sxs-lookup"><span data-stu-id="b9ef6-103">Classify a product using category hierarchies</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Luokkahierarkioiden avulla voit luokitella tuotteita vientiin, hankintaan, myyntiin tai muihin tarkoituksiin. Tuotepäällikkö tekee yleensä tämän tehtävän. Esimerkissä käytetään esittelytietojen yrityksen USMF tuotenumeroa M0009.
+<span data-ttu-id="b9ef6-104">Luokkahierarkioiden avulla voit luokitella tuotteita vientiin, hankintaan, myyntiin tai muihin tarkoituksiin.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-104">Use category hierarchies to classify products for export, procurement, sales, or other purposes.</span></span> <span data-ttu-id="b9ef6-105">Tuotepäällikkö tekee yleensä tämän tehtävän.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-105">This task is typically performed by a product manager.</span></span> <span data-ttu-id="b9ef6-106">Esimerkissä käytetään esittelytietojen yrityksen USMF tuotenumeroa M0009.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-106">The example uses product number M0009 in demo data company USMF.</span></span>
 
-1. Valitse Vapautetun tuotteen ylläpito.
-2. Valitse Kaikki vapautetut tuotteet.
-3. Etsi haluamasi tietue luettelosta ja valitse se.
-4. Valitse toimintoruudussa Tuote.
-5. Valitse Tuoteluokat.
-6. Valitse Uusi.
-7. Anna tai valitse Luokkahierarkia-kentässä arvo.
-8. Anna tai valitse Luokka-kentässä arvo.
-9. Valitse Uusi.
-10. Anna tai valitse Luokkahierarkia-kentässä arvo.
-11. Anna tai valitse Luokka-kentässä arvo.
-12. Sulje sivu.
+1. <span data-ttu-id="b9ef6-107">Valitse Vapautetun tuotteen ylläpito.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-107">Click Released product maintenance.</span></span>
+2. <span data-ttu-id="b9ef6-108">Valitse Kaikki vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-108">Click All released products.</span></span>
+3. <span data-ttu-id="b9ef6-109">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-109">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="b9ef6-110">Valitse toimintoruudussa Tuote.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-110">On the Action Pane, click Product.</span></span>
+5. <span data-ttu-id="b9ef6-111">Valitse Tuoteluokat.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-111">Click Product categories.</span></span>
+6. <span data-ttu-id="b9ef6-112">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-112">Click New.</span></span>
+7. <span data-ttu-id="b9ef6-113">Anna tai valitse Luokkahierarkia-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-113">In the Category hierarchy field, enter or select a value.</span></span>
+8. <span data-ttu-id="b9ef6-114">Anna tai valitse Luokka-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-114">In the Category field, enter or select a value.</span></span>
+9. <span data-ttu-id="b9ef6-115">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-115">Click New.</span></span>
+10. <span data-ttu-id="b9ef6-116">Anna tai valitse Luokkahierarkia-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-116">In the Category hierarchy field, enter or select a value.</span></span>
+11. <span data-ttu-id="b9ef6-117">Anna tai valitse Luokka-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-117">In the Category field, enter or select a value.</span></span>
+12. <span data-ttu-id="b9ef6-118">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="b9ef6-118">Close the page.</span></span>
 
 

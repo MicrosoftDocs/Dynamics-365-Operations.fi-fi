@@ -16,35 +16,35 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 3003a0dfa30c981eacfd5a643a1c5e902c2ba45d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5735cabd5a1eab23fbe2b92cf1395110cb33a93c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Kustannuslaskennan kirjanpidon tietolähteen hallinta
+# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a><span data-ttu-id="48c87-103">Kustannuslaskennan kirjanpidon tietolähteen hallinta</span><span class="sxs-lookup"><span data-stu-id="48c87-103">Manage a data source for the cost accounting ledger</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskennan kirjanpidossa. Ennen tämän tehtävän suorittamista tulee toistaa Kustannuslaskennan kirjanpidon luominen- ja Kustannusseurantayksiköiden määrittäminen -tehtäväoppaat. Tämä tallenne käyttää esittelytietojen USP2-yritystä.
+<span data-ttu-id="48c87-104">Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskennan kirjanpidossa.</span><span class="sxs-lookup"><span data-stu-id="48c87-104">Use this procedure to manage the general ledger data source for a cost accounting ledger.</span></span> <span data-ttu-id="48c87-105">Ennen tämän tehtävän suorittamista tulee toistaa Kustannuslaskennan kirjanpidon luominen- ja Kustannusseurantayksiköiden määrittäminen -tehtäväoppaat.</span><span class="sxs-lookup"><span data-stu-id="48c87-105">Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides.</span></span> <span data-ttu-id="48c87-106">Tämä tallenne käyttää esittelytietojen USP2-yritystä.</span><span class="sxs-lookup"><span data-stu-id="48c87-106">This recording uses the USP2 demo data company.</span></span>
 
-1. Valitse Kustannuslaskenta > Kirjanpidon asetukset > Kustannuslaskennan kirjanpidot.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Valitse Toteutuneet versiot.
-4. Valitse toimintoruudussa Hallitse.
-5. Valitse Kirjanpito.
-6. Valitse Uusi.
-7. Kirjoita arvo Nimi-kenttään.
-8. Anna tai valitse arvo Tietopalvelu-kenttään.
-    * Valitse tässä esimerkissä Dynamics 365 for Finance and Operations – kirjanpitomerkinnät.  
-9. Syötä tai valitse arvo Kustannustason dimensio -kenttään.
-    * Valitse tässä esimerkissä Kustannustasot.  
-10. Valitse Tallenna.
-11. Valitse Määritä tietopalvelu.
-12. Anna tai valitse arvo Yritys-kenttään.
-    * Valitse tässä esimerkissä USP2.  
-13. Valitse Uusi.
-14. Valitse Kirjanpitotaso-kentässä Nykyinen.
-15. Valitse OK.
+1. <span data-ttu-id="48c87-107">Valitse Kustannuslaskenta > Kirjanpidon asetukset > Kustannuslaskennan kirjanpidot.</span><span class="sxs-lookup"><span data-stu-id="48c87-107">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="48c87-108">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="48c87-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="48c87-109">Valitse Toteutuneet versiot.</span><span class="sxs-lookup"><span data-stu-id="48c87-109">Click Actual versions.</span></span>
+4. <span data-ttu-id="48c87-110">Valitse toimintoruudussa Hallitse.</span><span class="sxs-lookup"><span data-stu-id="48c87-110">On the Action Pane, click Manage.</span></span>
+5. <span data-ttu-id="48c87-111">Valitse Kirjanpito.</span><span class="sxs-lookup"><span data-stu-id="48c87-111">Click General ledger.</span></span>
+6. <span data-ttu-id="48c87-112">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="48c87-112">Click New.</span></span>
+7. <span data-ttu-id="48c87-113">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="48c87-113">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="48c87-114">Anna tai valitse arvo Tietopalvelu-kenttään.</span><span class="sxs-lookup"><span data-stu-id="48c87-114">In the Data provider field, enter or select a value.</span></span>
+    * <span data-ttu-id="48c87-115">Valitse tässä esimerkissä Dynamics 365 for Finance and Operations – kirjanpitomerkinnät.</span><span class="sxs-lookup"><span data-stu-id="48c87-115">For this example, select Dynamics 365 for Finance and Operations - General ledger entries.</span></span>  
+9. <span data-ttu-id="48c87-116">Syötä tai valitse arvo Kustannustason dimensio -kenttään.</span><span class="sxs-lookup"><span data-stu-id="48c87-116">In the Cost element dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="48c87-117">Valitse tässä esimerkissä Kustannustasot.</span><span class="sxs-lookup"><span data-stu-id="48c87-117">For this example, select Cost elements.</span></span>  
+10. <span data-ttu-id="48c87-118">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="48c87-118">Click Save.</span></span>
+11. <span data-ttu-id="48c87-119">Valitse Määritä tietopalvelu.</span><span class="sxs-lookup"><span data-stu-id="48c87-119">Click Configure data provider.</span></span>
+12. <span data-ttu-id="48c87-120">Anna tai valitse arvo Yritys-kenttään.</span><span class="sxs-lookup"><span data-stu-id="48c87-120">In the Legal entity field, enter or select a value.</span></span>
+    * <span data-ttu-id="48c87-121">Valitse tässä esimerkissä USP2.</span><span class="sxs-lookup"><span data-stu-id="48c87-121">For this example, select USP2.</span></span>  
+13. <span data-ttu-id="48c87-122">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="48c87-122">Click New.</span></span>
+14. <span data-ttu-id="48c87-123">Valitse Kirjanpitotaso-kentässä Nykyinen.</span><span class="sxs-lookup"><span data-stu-id="48c87-123">In the Posting layer field, select Current.</span></span>
+15. <span data-ttu-id="48c87-124">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="48c87-124">Click OK.</span></span>
 
 

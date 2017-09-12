@@ -20,119 +20,119 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ce3ff2ac0a5bd9bd342baa05425d7d0957ab8a09
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 30634b0af343ad171c385a95c4ba0934180f70cf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="reduction-keys"></a>Vähennysavaimet
+# <a name="reduction-keys"></a><span data-ttu-id="dd89b-105">Vähennysavaimet</span><span class="sxs-lookup"><span data-stu-id="dd89b-105">Reduction keys</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tämä artikkeli sisältää esimerkkejä, jotka kuvaavat vähennysavaimen määrittämistä. Artikkelissa kuvataan erilaisia vähennysavaimen asetuksia ja kunkin asetuksen tuloksia. Vähennysavaimen avulla voit määrittää, kuinka ennustevaatimuksia voidaan vähentää.
+<span data-ttu-id="dd89b-106">Tämä artikkeli sisältää esimerkkejä, jotka kuvaavat vähennysavaimen määrittämistä.</span><span class="sxs-lookup"><span data-stu-id="dd89b-106">This articles provides examples that show how to set up a reduction key.</span></span> <span data-ttu-id="dd89b-107">Artikkelissa kuvataan erilaisia vähennysavaimen asetuksia ja kunkin asetuksen tuloksia.</span><span class="sxs-lookup"><span data-stu-id="dd89b-107">It includes information about the various reduction key settings and the results of each.</span></span> <span data-ttu-id="dd89b-108">Vähennysavaimen avulla voit määrittää, kuinka ennustevaatimuksia voidaan vähentää.</span><span class="sxs-lookup"><span data-stu-id="dd89b-108">You can use a reduction key to define how to reduce forecast requirements.</span></span>
 
-<a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>Esimerkki 1: Ennusteen vähennysperiaatteena Prosentti – vähennysavain
+<a name="example-1-percent---reduction-key-forecast-reduction-principle"></a><span data-ttu-id="dd89b-109">Esimerkki 1: Ennusteen vähennysperiaatteena Prosentti – vähennysavain</span><span class="sxs-lookup"><span data-stu-id="dd89b-109">Example 1: Percent - reduction key forecast reduction principle</span></span>
 ---------------------------------------------------------------
 
-Tämä esimerkki osoittaa, miten vähennysavain pienentää kysynnän ennustetarpeita vähennysavaimen määrittämien prosenttien ja kausien mukaisesti.
+<span data-ttu-id="dd89b-110">Tämä esimerkki osoittaa, miten vähennysavain pienentää kysynnän ennustetarpeita vähennysavaimen määrittämien prosenttien ja kausien mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="dd89b-110">This example shows how a reduction key reduces demand forecast requirements according to the percentages and periods that are defined by the reduction key.</span></span>
 
-1.  Määritä **Vähennysavaimet**-sivulla seuraavat rivit.
-    | Vaihto | Yksikkö  | Prosentti |
+1.  <span data-ttu-id="dd89b-111">Määritä **Vähennysavaimet**-sivulla seuraavat rivit.</span><span class="sxs-lookup"><span data-stu-id="dd89b-111">On the **Reduction keys** page, set up the following lines.</span></span>
+    | <span data-ttu-id="dd89b-112">Vaihto</span><span class="sxs-lookup"><span data-stu-id="dd89b-112">Change</span></span> | <span data-ttu-id="dd89b-113">Yksikkö</span><span class="sxs-lookup"><span data-stu-id="dd89b-113">Unit</span></span>  | <span data-ttu-id="dd89b-114">Prosentti</span><span class="sxs-lookup"><span data-stu-id="dd89b-114">Percent</span></span> |
     |--------|-------|---------|
-    | 1      | Kuukausi | 100     |
-    | 2      | Kuukausi | 75      |
-    | 3      | Kuukausi | 50      |
-    | 4      | Kuukausi | 25      |
+    | <span data-ttu-id="dd89b-115">1</span><span class="sxs-lookup"><span data-stu-id="dd89b-115">1</span></span>      | <span data-ttu-id="dd89b-116">Kuukausi</span><span class="sxs-lookup"><span data-stu-id="dd89b-116">Month</span></span> | <span data-ttu-id="dd89b-117">100</span><span class="sxs-lookup"><span data-stu-id="dd89b-117">100</span></span>     |
+    | <span data-ttu-id="dd89b-118">2</span><span class="sxs-lookup"><span data-stu-id="dd89b-118">2</span></span>      | <span data-ttu-id="dd89b-119">Kuukausi</span><span class="sxs-lookup"><span data-stu-id="dd89b-119">Month</span></span> | <span data-ttu-id="dd89b-120">75</span><span class="sxs-lookup"><span data-stu-id="dd89b-120">75</span></span>      |
+    | <span data-ttu-id="dd89b-121">3</span><span class="sxs-lookup"><span data-stu-id="dd89b-121">3</span></span>      | <span data-ttu-id="dd89b-122">Kuukausi</span><span class="sxs-lookup"><span data-stu-id="dd89b-122">Month</span></span> | <span data-ttu-id="dd89b-123">50</span><span class="sxs-lookup"><span data-stu-id="dd89b-123">50</span></span>      |
+    | <span data-ttu-id="dd89b-124">4</span><span class="sxs-lookup"><span data-stu-id="dd89b-124">4</span></span>      | <span data-ttu-id="dd89b-125">Kuukausi</span><span class="sxs-lookup"><span data-stu-id="dd89b-125">Month</span></span> | <span data-ttu-id="dd89b-126">25</span><span class="sxs-lookup"><span data-stu-id="dd89b-126">25</span></span>      |
 
-2.  Linkitä vähennysavain nimikkeen kattavuusryhmään.
-3.  Valitse **Pääsuunnitelmat**-sivulla **Vähennysperiaate** -kentästä **Prosentti - vähennysavain**.
-4.  Luo kysynnän ennuste 1 000 kappaleesta kuukaudessa.
+2.  <span data-ttu-id="dd89b-127">Linkitä vähennysavain nimikkeen kattavuusryhmään.</span><span class="sxs-lookup"><span data-stu-id="dd89b-127">Link the reduction key to the item's coverage group.</span></span>
+3.  <span data-ttu-id="dd89b-128">Valitse **Pääsuunnitelmat**-sivulla **Vähennysperiaate** -kentästä **Prosentti - vähennysavain**.</span><span class="sxs-lookup"><span data-stu-id="dd89b-128">On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.</span></span>
+4.  <span data-ttu-id="dd89b-129">Luo kysynnän ennuste 1 000 kappaleesta kuukaudessa.</span><span class="sxs-lookup"><span data-stu-id="dd89b-129">Create a demand forecast of 1,000 pieces per month.</span></span>
 
-Jos suoritat ennusteajoituksen 1. tammikuuta, kysynnän ennustetarpeita kulutetaan **Vähennysavaimet**-sivulla määritettyjen prosenttien mukaisesti. Pääsuunnitelmaan siirretään seuraavat tarvemäärät.
+<span data-ttu-id="dd89b-130">Jos suoritat ennusteajoituksen 1. tammikuuta, kysynnän ennustetarpeita kulutetaan **Vähennysavaimet**-sivulla määritettyjen prosenttien mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="dd89b-130">If you run forecast scheduling on January 1, the demand forecast requirements are consumed according to the percentages that you set up on the **Reduction keys** page.</span></span> <span data-ttu-id="dd89b-131">Pääsuunnitelmaan siirretään seuraavat tarvemäärät.</span><span class="sxs-lookup"><span data-stu-id="dd89b-131">The following requirement quantities are transferred to the master plan.</span></span>
 
-| Kuukausi                | Kappaletarve |
+| <span data-ttu-id="dd89b-132">Kuukausi</span><span class="sxs-lookup"><span data-stu-id="dd89b-132">Month</span></span>                | <span data-ttu-id="dd89b-133">Kappaletarve</span><span class="sxs-lookup"><span data-stu-id="dd89b-133">Number of pieces required</span></span> |
 |----------------------|---------------------------|
-| Tammikuu              | 0                         |
-| Helmikuu             | 250                       |
-| Maaliskuu                | 500                       |
-| Huhtikuu                | 750                       |
-| Touko–joulukuu | 1 000                     |
+| <span data-ttu-id="dd89b-134">Tammikuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-134">January</span></span>              | <span data-ttu-id="dd89b-135">0</span><span class="sxs-lookup"><span data-stu-id="dd89b-135">0</span></span>                         |
+| <span data-ttu-id="dd89b-136">Helmikuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-136">February</span></span>             | <span data-ttu-id="dd89b-137">250</span><span class="sxs-lookup"><span data-stu-id="dd89b-137">250</span></span>                       |
+| <span data-ttu-id="dd89b-138">Maaliskuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-138">March</span></span>                | <span data-ttu-id="dd89b-139">500</span><span class="sxs-lookup"><span data-stu-id="dd89b-139">500</span></span>                       |
+| <span data-ttu-id="dd89b-140">Huhtikuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-140">April</span></span>                | <span data-ttu-id="dd89b-141">750</span><span class="sxs-lookup"><span data-stu-id="dd89b-141">750</span></span>                       |
+| <span data-ttu-id="dd89b-142">Touko–joulukuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-142">May through December</span></span> | <span data-ttu-id="dd89b-143">1 000</span><span class="sxs-lookup"><span data-stu-id="dd89b-143">1,000</span></span>                     |
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Esimerkki 2: Ennusteen vähennysperiaatteena Tapahtumat – vähennysavain
-Tämä esimerkki osoittaa, miten vähennysavaimen määrittelemillä jaksoilla toteutuvat tilaukset pienentävät kysynnän ennustetarpeita.
+## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a><span data-ttu-id="dd89b-144">Esimerkki 2: Ennusteen vähennysperiaatteena Tapahtumat – vähennysavain</span><span class="sxs-lookup"><span data-stu-id="dd89b-144">Example 2: Transactions  reduction key forecast reduction principle</span></span>
+<span data-ttu-id="dd89b-145">Tämä esimerkki osoittaa, miten vähennysavaimen määrittelemillä jaksoilla toteutuvat tilaukset pienentävät kysynnän ennustetarpeita.</span><span class="sxs-lookup"><span data-stu-id="dd89b-145">This example shows how actual orders that occur during the periods that are defined by the reduction key reduce demand forecast requirements.</span></span>
 
--   Valitse **Pääsuunnitelmat**-sivulla **Vähennysperiaate** -kentästä **Tapahtuma - vähennysavain**.
+-   <span data-ttu-id="dd89b-146">Valitse **Pääsuunnitelmat**-sivulla **Vähennysperiaate** -kentästä **Tapahtuma - vähennysavain**.</span><span class="sxs-lookup"><span data-stu-id="dd89b-146">On the **Master plans** page, in the **Reduction principle** field, select **Transactions - reduction key**.</span></span>
 
-1. tammikuuta mennessä on tehty seuraavat myyntitilaukset.
+<span data-ttu-id="dd89b-147">1. tammikuuta mennessä on tehty seuraavat myyntitilaukset.</span><span class="sxs-lookup"><span data-stu-id="dd89b-147">The following sales orders exist on January 1.</span></span>
 
-| Kuukausi    | Tilattu kappalemäärä |
+| <span data-ttu-id="dd89b-148">Kuukausi</span><span class="sxs-lookup"><span data-stu-id="dd89b-148">Month</span></span>    | <span data-ttu-id="dd89b-149">Tilattu kappalemäärä</span><span class="sxs-lookup"><span data-stu-id="dd89b-149">Number of pieces ordered</span></span> |
 |----------|--------------------------|
-| Tammikuu  | 956                      |
-| Helmikuu | 1 176                    |
-| Maaliskuu    | 451                      |
-| Huhtikuu    | 119                      |
+| <span data-ttu-id="dd89b-150">Tammikuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-150">January</span></span>  | <span data-ttu-id="dd89b-151">956</span><span class="sxs-lookup"><span data-stu-id="dd89b-151">956</span></span>                      |
+| <span data-ttu-id="dd89b-152">Helmikuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-152">February</span></span> | <span data-ttu-id="dd89b-153">1 176</span><span class="sxs-lookup"><span data-stu-id="dd89b-153">1,176</span></span>                    |
+| <span data-ttu-id="dd89b-154">Maaliskuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-154">March</span></span>    | <span data-ttu-id="dd89b-155">451</span><span class="sxs-lookup"><span data-stu-id="dd89b-155">451</span></span>                      |
+| <span data-ttu-id="dd89b-156">Huhtikuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-156">April</span></span>    | <span data-ttu-id="dd89b-157">119</span><span class="sxs-lookup"><span data-stu-id="dd89b-157">119</span></span>                      |
 
-Jos käytät samaa 1 000 kappaleen kysyntäennustetta kuukaudessa, pääsuunnitelmaan siirretään seuraavat tarvemäärät.
+<span data-ttu-id="dd89b-158">Jos käytät samaa 1 000 kappaleen kysyntäennustetta kuukaudessa, pääsuunnitelmaan siirretään seuraavat tarvemäärät.</span><span class="sxs-lookup"><span data-stu-id="dd89b-158">If you use the same demand forecast of 1,000 pieces per month, the following requirement quantities are transferred to the master plan.</span></span>
 
-| Kuukausi                | Kappaletarve |
+| <span data-ttu-id="dd89b-159">Kuukausi</span><span class="sxs-lookup"><span data-stu-id="dd89b-159">Month</span></span>                | <span data-ttu-id="dd89b-160">Kappaletarve</span><span class="sxs-lookup"><span data-stu-id="dd89b-160">Number of pieces required</span></span> |
 |----------------------|---------------------------|
-| Tammikuu              | 44                        |
-| Helmikuu             | 0                         |
-| Maaliskuu                | 549                       |
-| Huhtikuu                | 881                       |
-| Touko–joulukuu | 1 000                     |
+| <span data-ttu-id="dd89b-161">Tammikuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-161">January</span></span>              | <span data-ttu-id="dd89b-162">44</span><span class="sxs-lookup"><span data-stu-id="dd89b-162">44</span></span>                        |
+| <span data-ttu-id="dd89b-163">Helmikuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-163">February</span></span>             | <span data-ttu-id="dd89b-164">0</span><span class="sxs-lookup"><span data-stu-id="dd89b-164">0</span></span>                         |
+| <span data-ttu-id="dd89b-165">Maaliskuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-165">March</span></span>                | <span data-ttu-id="dd89b-166">549</span><span class="sxs-lookup"><span data-stu-id="dd89b-166">549</span></span>                       |
+| <span data-ttu-id="dd89b-167">Huhtikuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-167">April</span></span>                | <span data-ttu-id="dd89b-168">881</span><span class="sxs-lookup"><span data-stu-id="dd89b-168">881</span></span>                       |
+| <span data-ttu-id="dd89b-169">Touko–joulukuu</span><span class="sxs-lookup"><span data-stu-id="dd89b-169">May through December</span></span> | <span data-ttu-id="dd89b-170">1 000</span><span class="sxs-lookup"><span data-stu-id="dd89b-170">1,000</span></span>                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Esimerkki 3: Ennusteen vähennysperiaatteena Tapahtumat – dynaaminen kausi
-Useimmiten järjestelmät on määritetty siten, että tapahtumat vähentävät kysynnän ennustetta määritetyillä ennustekausilla: viikkoina, kuukausina ja niin edelleen. Nämä kaudet vähennysavaimeen. Kahden kysynnän ennusterivin välinen aika voi kuitenkin myös *vihjata* tiettyyn kauteen.
+## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a><span data-ttu-id="dd89b-171">Esimerkki 3: Ennusteen vähennysperiaatteena Tapahtumat – dynaaminen kausi</span><span class="sxs-lookup"><span data-stu-id="dd89b-171">Example 3: Transactions  dynamic period forecast reduction principle</span></span>
+<span data-ttu-id="dd89b-172">Useimmiten järjestelmät on määritetty siten, että tapahtumat vähentävät kysynnän ennustetta määritetyillä ennustekausilla: viikkoina, kuukausina ja niin edelleen.</span><span class="sxs-lookup"><span data-stu-id="dd89b-172">In most cases, systems are set up so that transactions reduce demand forecast within specific forecast periods: weeks, months, and so on.</span></span> <span data-ttu-id="dd89b-173">Nämä kaudet vähennysavaimeen.</span><span class="sxs-lookup"><span data-stu-id="dd89b-173">These periods are defined in the reduction key.</span></span> <span data-ttu-id="dd89b-174">Kahden kysynnän ennusterivin välinen aika voi kuitenkin myös *vihjata* tiettyyn kauteen.</span><span class="sxs-lookup"><span data-stu-id="dd89b-174">However, the time between two demand forecast lines can also *imply* a period.</span></span>
 
-1.  Luo kysynnän ennuste seuraaville päivämäärille ja määrille.
-    | Päivämäärä       | Kysynnän ennuste |
+1.  <span data-ttu-id="dd89b-175">Luo kysynnän ennuste seuraaville päivämäärille ja määrille.</span><span class="sxs-lookup"><span data-stu-id="dd89b-175">Create a demand forecast for the following dates and quantities.</span></span>
+    | <span data-ttu-id="dd89b-176">Päivämäärä</span><span class="sxs-lookup"><span data-stu-id="dd89b-176">Date</span></span>       | <span data-ttu-id="dd89b-177">Kysynnän ennuste</span><span class="sxs-lookup"><span data-stu-id="dd89b-177">Demand forecast</span></span> |
     |------------|-----------------|
-    | 1. tammikuuta  | 1 000           |
-    | 5. tammikuuta  | 500             |
-    | 12. tammikuuta | 1 000           |
+    | <span data-ttu-id="dd89b-178">1. tammikuuta</span><span class="sxs-lookup"><span data-stu-id="dd89b-178">January 1</span></span>  | <span data-ttu-id="dd89b-179">1 000</span><span class="sxs-lookup"><span data-stu-id="dd89b-179">1,000</span></span>           |
+    | <span data-ttu-id="dd89b-180">5. tammikuuta</span><span class="sxs-lookup"><span data-stu-id="dd89b-180">January 5</span></span>  | <span data-ttu-id="dd89b-181">500</span><span class="sxs-lookup"><span data-stu-id="dd89b-181">500</span></span>             |
+    | <span data-ttu-id="dd89b-182">12. tammikuuta</span><span class="sxs-lookup"><span data-stu-id="dd89b-182">January 12</span></span> | <span data-ttu-id="dd89b-183">1 000</span><span class="sxs-lookup"><span data-stu-id="dd89b-183">1,000</span></span>           |
 
-    Tässä ennusteessa ennustepäivämäärien välillä ei ole selvää jaksoa. Ensimmäisen ja toisen päivämäärän välissä on neljä päivää ja toisen sekä kolmannen päivämäärän välissä seitsemän päivää. Nämä eri aikavälit ovat dynaamisia kausia.
-2.  Luo myyntitilausrivit seuraavasti.
-    | Päivämäärä                             | Myyntitilauksen määrä |
+    <span data-ttu-id="dd89b-184">Tässä ennusteessa ennustepäivämäärien välillä ei ole selvää jaksoa. Ensimmäisen ja toisen päivämäärän välissä on neljä päivää ja toisen sekä kolmannen päivämäärän välissä seitsemän päivää.</span><span class="sxs-lookup"><span data-stu-id="dd89b-184">In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span.</span></span> <span data-ttu-id="dd89b-185">Nämä eri aikavälit ovat dynaamisia kausia.</span><span class="sxs-lookup"><span data-stu-id="dd89b-185">These various spans are the dynamic periods.</span></span>
+2.  <span data-ttu-id="dd89b-186">Luo myyntitilausrivit seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="dd89b-186">Create sales order lines as follows.</span></span>
+    | <span data-ttu-id="dd89b-187">Päivämäärä</span><span class="sxs-lookup"><span data-stu-id="dd89b-187">Date</span></span>                             | <span data-ttu-id="dd89b-188">Myyntitilauksen määrä</span><span class="sxs-lookup"><span data-stu-id="dd89b-188">Sales order quantity</span></span> |
     |----------------------------------|----------------------|
-    | 15. joulukuuta edellisenä vuonna | 500                  |
-    | 3. tammikuuta                        | 100                  |
-    | 10. tammikuuta                       | 200                  |
+    | <span data-ttu-id="dd89b-189">15. joulukuuta edellisenä vuonna</span><span class="sxs-lookup"><span data-stu-id="dd89b-189">December 15 in the previous year</span></span> | <span data-ttu-id="dd89b-190">500</span><span class="sxs-lookup"><span data-stu-id="dd89b-190">500</span></span>                  |
+    | <span data-ttu-id="dd89b-191">3. tammikuuta</span><span class="sxs-lookup"><span data-stu-id="dd89b-191">January 3</span></span>                        | <span data-ttu-id="dd89b-192">100</span><span class="sxs-lookup"><span data-stu-id="dd89b-192">100</span></span>                  |
+    | <span data-ttu-id="dd89b-193">10. tammikuuta</span><span class="sxs-lookup"><span data-stu-id="dd89b-193">January 10</span></span>                       | <span data-ttu-id="dd89b-194">200</span><span class="sxs-lookup"><span data-stu-id="dd89b-194">200</span></span>                  |
 
-Ennustetta vähennetään seuraavasti:
+<span data-ttu-id="dd89b-195">Ennustetta vähennetään seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="dd89b-195">The forecast will be reduced as follows:</span></span>
 
--   Ensimmäinen myyntitilaus ei ole millään kaudella, joten se ei vähennä mitään ennustetta.
--   Toinen myyntitilaus on 1.–5. tammikuuta, joten se vähentää tammikuun 1. päivän ennustetta 100:lla.
--   Kolmas myyntitilaus on 5.–12. tammikuuta, joten se vähentää tammikuun 5. päivän 200:lla.
+-   <span data-ttu-id="dd89b-196">Ensimmäinen myyntitilaus ei ole millään kaudella, joten se ei vähennä mitään ennustetta.</span><span class="sxs-lookup"><span data-stu-id="dd89b-196">The first sales order isn't within any period, so it won't reduce any forecast.</span></span>
+-   <span data-ttu-id="dd89b-197">Toinen myyntitilaus on 1.–5. tammikuuta, joten se vähentää tammikuun 1. päivän ennustetta 100:lla.</span><span class="sxs-lookup"><span data-stu-id="dd89b-197">The second sales order is between January 1 and January 5, so it will reduce the forecast for January 1 by 100.</span></span>
+-   <span data-ttu-id="dd89b-198">Kolmas myyntitilaus on 5.–12. tammikuuta, joten se vähentää tammikuun 5. päivän 200:lla.</span><span class="sxs-lookup"><span data-stu-id="dd89b-198">The third sales order is between January 5 and January 12, so it will reduce the forecast for January 5 by 200.</span></span>
 
-Ennusteen täyttämiseksi luodaan seuraava suunniteltu tilaus.
+<span data-ttu-id="dd89b-199">Ennusteen täyttämiseksi luodaan seuraava suunniteltu tilaus.</span><span class="sxs-lookup"><span data-stu-id="dd89b-199">The following planned order will be created to fulfill the forecast.</span></span>
 
-| Kysynnän ennusteen päivämäärä | Vähennetty määrä |
+| <span data-ttu-id="dd89b-200">Kysynnän ennusteen päivämäärä</span><span class="sxs-lookup"><span data-stu-id="dd89b-200">Demand forecast date</span></span> | <span data-ttu-id="dd89b-201">Vähennetty määrä</span><span class="sxs-lookup"><span data-stu-id="dd89b-201">Reduced quantity</span></span> |
 |----------------------|------------------|
-| 1. tammikuuta            | 900              |
-| 5. tammikuuta            | 300              |
-| 12. tammikuuta           | 1 000            |
+| <span data-ttu-id="dd89b-202">1. tammikuuta</span><span class="sxs-lookup"><span data-stu-id="dd89b-202">January 1</span></span>            | <span data-ttu-id="dd89b-203">900</span><span class="sxs-lookup"><span data-stu-id="dd89b-203">900</span></span>              |
+| <span data-ttu-id="dd89b-204">5. tammikuuta</span><span class="sxs-lookup"><span data-stu-id="dd89b-204">January 5</span></span>            | <span data-ttu-id="dd89b-205">300</span><span class="sxs-lookup"><span data-stu-id="dd89b-205">300</span></span>              |
+| <span data-ttu-id="dd89b-206">12. tammikuuta</span><span class="sxs-lookup"><span data-stu-id="dd89b-206">January 12</span></span>           | <span data-ttu-id="dd89b-207">1 000</span><span class="sxs-lookup"><span data-stu-id="dd89b-207">1,000</span></span>            |
 
-Seuraavassa on yhteenveto **Tapahtumat - dynaaminen kausi** -vähennyksestä:
+<span data-ttu-id="dd89b-208">Seuraavassa on yhteenveto **Tapahtumat - dynaaminen kausi** -vähennyksestä:</span><span class="sxs-lookup"><span data-stu-id="dd89b-208">Here is a summary of **Transactions - dynamic period** reduction:</span></span>
 
--   Ennustetarvetta vähentävät dynaamisella kaudella tapahtuvat toteutuneet tilaustapahtumat Dynaaminen kausi kattaa nykyiset ennustepäivämäärät ja päättyy seuraavan ennusteen alkuun.
--   Tämä menetelmä ei käytä tai edellytä vähennysavainta.
--   Kun tätä vaihtoehtoa käytetään, tapahtuu seuraavaa:
-    -   Jos ennuste vähenee kokonaan, nykyisen ennusteen ennustetarpeiksi tulee nolla.
-    -   Jos tulevaa ennustetta ei ole, vähennetään edellisen syötetyn ennusteen ennustetarpeita.
-    -   Ennusteen vähennyslaskentaan sisällytetään aikarajat.
-    -   Ennusteen vähennyslaskentaan sisällytetään positiiviset päivät.
-    -   Jos toteutuneet tilaustapahtumat ylittävät ennustetarpeet, jäljelle jääviä tapahtumia ei siirretä seuraavalle ennustekaudelle.
+-   <span data-ttu-id="dd89b-209">Ennustetarvetta vähentävät dynaamisella kaudella tapahtuvat toteutuneet tilaustapahtumat</span><span class="sxs-lookup"><span data-stu-id="dd89b-209">Forecast requirements are reduced by the actual order transactions that occur during the dynamic period.</span></span> <span data-ttu-id="dd89b-210">Dynaaminen kausi kattaa nykyiset ennustepäivämäärät ja päättyy seuraavan ennusteen alkuun.</span><span class="sxs-lookup"><span data-stu-id="dd89b-210">The dynamic period covers the current forecast dates and ends at the start of the next forecast.</span></span>
+-   <span data-ttu-id="dd89b-211">Tämä menetelmä ei käytä tai edellytä vähennysavainta.</span><span class="sxs-lookup"><span data-stu-id="dd89b-211">This method doesn't use or require a reduction key.</span></span>
+-   <span data-ttu-id="dd89b-212">Kun tätä vaihtoehtoa käytetään, tapahtuu seuraavaa:</span><span class="sxs-lookup"><span data-stu-id="dd89b-212">When this option is used, the following behavior occurs:</span></span>
+    -   <span data-ttu-id="dd89b-213">Jos ennuste vähenee kokonaan, nykyisen ennusteen ennustetarpeiksi tulee nolla.</span><span class="sxs-lookup"><span data-stu-id="dd89b-213">If the forecast is reduced completely, the forecast requirements for the current forecast become 0 (zero).</span></span>
+    -   <span data-ttu-id="dd89b-214">Jos tulevaa ennustetta ei ole, vähennetään edellisen syötetyn ennusteen ennustetarpeita.</span><span class="sxs-lookup"><span data-stu-id="dd89b-214">If there is no future forecast, forecast requirements from the last forecast that was entered are reduced.</span></span>
+    -   <span data-ttu-id="dd89b-215">Ennusteen vähennyslaskentaan sisällytetään aikarajat.</span><span class="sxs-lookup"><span data-stu-id="dd89b-215">Time fences are included in the forecast reduction calculation.</span></span>
+    -   <span data-ttu-id="dd89b-216">Ennusteen vähennyslaskentaan sisällytetään positiiviset päivät.</span><span class="sxs-lookup"><span data-stu-id="dd89b-216">Positive days are included in the forecast reduction calculation.</span></span>
+    -   <span data-ttu-id="dd89b-217">Jos toteutuneet tilaustapahtumat ylittävät ennustetarpeet, jäljelle jääviä tapahtumia ei siirretä seuraavalle ennustekaudelle.</span><span class="sxs-lookup"><span data-stu-id="dd89b-217">If actual order transactions exceed the forecasted requirements, the remaining transactions aren't forwarded to the next forecast period.</span></span>
 
 
-<a name="see-also"></a>Lisätietoja
+<a name="see-also"></a><span data-ttu-id="dd89b-218">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="dd89b-218">See also</span></span>
 --------
 
-[Pääsuunnitelmat](master-plans.md)
+[<span data-ttu-id="dd89b-219">Pääsuunnitelmat</span><span class="sxs-lookup"><span data-stu-id="dd89b-219">Master plans</span></span>](master-plans.md)
 
 
 

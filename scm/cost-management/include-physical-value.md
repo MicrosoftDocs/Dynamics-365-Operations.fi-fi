@@ -17,42 +17,42 @@ ms.assetid: 1928c145-bf82-436d-87ca-e7a173e31923
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d45e7a56851f3f4ac7a7d2d8c4ca9f23b6535fc
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: fa59031ed2144c2e92399933cd5dd40bfca0f2ae
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="include-physical-value"></a>Sisällytä fyysinen arvo
+# <a name="include-physical-value"></a><span data-ttu-id="ee419-103">Sisällytä fyysinen arvo</span><span class="sxs-lookup"><span data-stu-id="ee419-103">Include physical value</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Nimikemalliryhmät -sivun Varastomalli-pikavälilehden Sisällytä fyysinen arvo -valintaruudun avulla määritetään, otetaanko fyysisesti päivitetyt tapahtumat huomioon nimikkeen keskimääräisen käyttökustannushinnan laskennassa.
+<span data-ttu-id="ee419-104">Nimikemalliryhmät -sivun Varastomalli-pikavälilehden Sisällytä fyysinen arvo -valintaruudun avulla määritetään, otetaanko fyysisesti päivitetyt tapahtumat huomioon nimikkeen keskimääräisen käyttökustannushinnan laskennassa.</span><span class="sxs-lookup"><span data-stu-id="ee419-104">You use the Include physical value check box on the Inventory model FastTab of the Item model groups page to specify whether physically updated transactions are considered when the running average cost price is calculated for an item.</span></span>
 
-**Sisällytä fyysinen arvo** -valintaruudulla on seuraavat arvot.
+<span data-ttu-id="ee419-105">**Sisällytä fyysinen arvo** -valintaruudulla on seuraavat arvot.</span><span class="sxs-lookup"><span data-stu-id="ee419-105">The **Include physical value** check box has the following values.</span></span>
 
-| Arvo    | Tulos                                                                                                                          |
+| <span data-ttu-id="ee419-106">Arvo</span><span class="sxs-lookup"><span data-stu-id="ee419-106">Value</span></span>    | <span data-ttu-id="ee419-107">Tulos</span><span class="sxs-lookup"><span data-stu-id="ee419-107">Result</span></span>                                                                                                                          |
 |----------|---------------------------------------------------------------------------------------------------------------------------------|
-| Valittu | Keskimääräisen kustannushinnan laskennassa käytetään sekä fyysisesti että rahoituksellisesti päivitettyjä tapahtumia. |
-| Selvitetyt  | Keskimääräisen kustannushinnan laskennassa käytetään vain rahoituksellisesti päivitettyjä tapahtumia.                                     |
+| <span data-ttu-id="ee419-108">Valittu</span><span class="sxs-lookup"><span data-stu-id="ee419-108">Selected</span></span> | <span data-ttu-id="ee419-109">Keskimääräisen kustannushinnan laskennassa käytetään sekä fyysisesti että rahoituksellisesti päivitettyjä tapahtumia.</span><span class="sxs-lookup"><span data-stu-id="ee419-109">Both physically updated transactions and financially updated transactions are used to calculate the running average cost price.</span></span> |
+| <span data-ttu-id="ee419-110">Selvitetyt</span><span class="sxs-lookup"><span data-stu-id="ee419-110">Cleared</span></span>  | <span data-ttu-id="ee419-111">Keskimääräisen kustannushinnan laskennassa käytetään vain rahoituksellisesti päivitettyjä tapahtumia.</span><span class="sxs-lookup"><span data-stu-id="ee419-111">Only financially updated transactions are used to calculate the running average cost price.</span></span>                                     |
 
-Valintaruudulla on hieman erilaisia vaikutuksia käytettävän varastomallin mukaan.
+<span data-ttu-id="ee419-112">Valintaruudulla on hieman erilaisia vaikutuksia käytettävän varastomallin mukaan.</span><span class="sxs-lookup"><span data-stu-id="ee419-112">The check box has slightly different effects, depending on the inventory model that you use.</span></span>
 
--   Jos valitset **Sisällytä fyysinen arvo** -valintaruudun, kun käytät FIFO-, LIFO- tai LIFO-päivämäärävarastomallia, varaston sulkeminen oikaisee myös fyysisesti päivitetyt tapahtumat.
--   Jos et valitse **Sisällytä fyysinen arvo** -valintaruutua käyttäessäsi näitä varastomalleja, varaston sulkeminen selvittää vain kirjanpidollisesti päivitetyt tapahtumat.
--   Kun käytät painotettua keskiarvoa tai painotetun keskiarvon päivämäärän varastomallia, varaston sulkeminen selvittää vain rahoituksellisesti päivitetyt tapahtumat riippumatta siitä, onko **Sisällytä fyysinen arvo** -valintaruutu valittu.
+-   <span data-ttu-id="ee419-113">Jos valitset **Sisällytä fyysinen arvo** -valintaruudun, kun käytät FIFO-, LIFO- tai LIFO-päivämäärävarastomallia, varaston sulkeminen oikaisee myös fyysisesti päivitetyt tapahtumat.</span><span class="sxs-lookup"><span data-stu-id="ee419-113">If you select the **Include physical value** check box when you use the FIFO (First in, first out), LIFO (Last in, first out), or LIFO date inventory model, inventory close also makes adjustments to physically updated transactions.</span></span>
+-   <span data-ttu-id="ee419-114">Jos et valitse **Sisällytä fyysinen arvo** -valintaruutua käyttäessäsi näitä varastomalleja, varaston sulkeminen selvittää vain kirjanpidollisesti päivitetyt tapahtumat.</span><span class="sxs-lookup"><span data-stu-id="ee419-114">If you don't select the **Include physical value** check box when you use these inventory models, inventory close makes settlements only to financially updated transactions.</span></span>
+-   <span data-ttu-id="ee419-115">Kun käytät painotettua keskiarvoa tai painotetun keskiarvon päivämäärän varastomallia, varaston sulkeminen selvittää vain rahoituksellisesti päivitetyt tapahtumat riippumatta siitä, onko **Sisällytä fyysinen arvo** -valintaruutu valittu.</span><span class="sxs-lookup"><span data-stu-id="ee419-115">When you use the weighted average or weighted average date inventory model, inventory close settles only financially updated transactions, regardless of whether you select the **Include physical value** check box.</span></span>
 
-**Esimerkki 1** Olet valinnut**Sisällytä fyysinen arvo** -valintaruudun ja saat seuraavat ostotilaukset:
+<span data-ttu-id="ee419-116">**Esimerkki 1** Olet valinnut**Sisällytä fyysinen arvo** -valintaruudun ja saat seuraavat ostotilaukset:</span><span class="sxs-lookup"><span data-stu-id="ee419-116">**Example 1** You've selected the **Include physical value** check box and receive the following purchase orders:</span></span>
 
--   Ostotilaus, jonka määrä on 2 ja kustannushinta 10,00 USD, on pakkausluettelopäivitetty
--   Ostotilaus, jonka määrä on 3 ja kustannushinta 12,00 USD, on laskupäivitetty
+-   <span data-ttu-id="ee419-117">Ostotilaus, jonka määrä on 2 ja kustannushinta 10,00 USD, on pakkausluettelopäivitetty</span><span class="sxs-lookup"><span data-stu-id="ee419-117">A purchase order for a quantity of 2 and a cost price of USD 10.00 that has been packing slip–updated</span></span>
+-   <span data-ttu-id="ee419-118">Ostotilaus, jonka määrä on 3 ja kustannushinta 12,00 USD, on laskupäivitetty</span><span class="sxs-lookup"><span data-stu-id="ee419-118">A purchase order for a quantity of 3 and a cost price of USD 12.00 that has been invoice-updated</span></span>
 
-Tässä tilanteessa keskimääräinen käyttökustannushinta on 11,20 Yhdysvaltain dollaria (USD), koska kustannushinnan laskennassa käytetään sekä fyysisesti että rahoituksellisesti päivitettyjä tapahtumia. **Esimerkki 2** Et ole valinnut **Sisällytä fyysinen arvo** -valintaruutua ja nimikeasetusten kustannushinta on 10,00 Yhdysvaltain dollaria (USD). Saat ostotilauksen, jonka määrä on 20 ja kustannushinta 12,00 USD, ja se on pakkausluettelopäivitetty. Kun myyntitilaus kirjataan, kirjattu kustannussumman on 10,00 Yhdysvaltain dollaria (USD), koska fyysisesti kirjatut tapahtumat eivät ole mukana keskimääräisessä käyttökustannushinnassa. **Huomautus:** Jos puolestaan olet valinnut nimikkeen **Sisällytä fyysinen arvo** -valintaruudun ja myyntitilaus kirjataan, kirjattu kustannussumma on 12,00 Yhdysvaltain dollaria.
+<span data-ttu-id="ee419-119">Tässä tilanteessa keskimääräinen käyttökustannushinta on 11,20 Yhdysvaltain dollaria (USD), koska kustannushinnan laskennassa käytetään sekä fyysisesti että rahoituksellisesti päivitettyjä tapahtumia.</span><span class="sxs-lookup"><span data-stu-id="ee419-119">In this case, the running average cost price will be USD 11.20, because both physically updated transactions and financially updated transactions are used to calculate the cost price.</span></span> <span data-ttu-id="ee419-120">**Esimerkki 2** Et ole valinnut **Sisällytä fyysinen arvo** -valintaruutua ja nimikeasetusten kustannushinta on 10,00 Yhdysvaltain dollaria (USD).</span><span class="sxs-lookup"><span data-stu-id="ee419-120">**Example 2** You haven't selected the **Include physical value** check box, and the cost price on the item setup is USD 10.00.</span></span> <span data-ttu-id="ee419-121">Saat ostotilauksen, jonka määrä on 20 ja kustannushinta 12,00 USD, ja se on pakkausluettelopäivitetty.</span><span class="sxs-lookup"><span data-stu-id="ee419-121">You receive a purchase order for a quantity of 20 and a cost price of USD 12.00 that has been packing slip–updated.</span></span> <span data-ttu-id="ee419-122">Kun myyntitilaus kirjataan, kirjattu kustannussumman on 10,00 Yhdysvaltain dollaria (USD), koska fyysisesti kirjatut tapahtumat eivät ole mukana keskimääräisessä käyttökustannushinnassa.</span><span class="sxs-lookup"><span data-stu-id="ee419-122">When a sales order is posted, the posted cost amount is USD 10.00, because the running average cost price won't include physically posted transactions.</span></span> <span data-ttu-id="ee419-123">**Huomautus:** Jos puolestaan olet valinnut nimikkeen **Sisällytä fyysinen arvo** -valintaruudun ja myyntitilaus kirjataan, kirjattu kustannussumma on 12,00 Yhdysvaltain dollaria.</span><span class="sxs-lookup"><span data-stu-id="ee419-123">**Note:** For comparison, if you select the **Include physical value** check box for this item, when a sales order is posted, the posted cost amount will be USD 12.00.</span></span>
 
 
 

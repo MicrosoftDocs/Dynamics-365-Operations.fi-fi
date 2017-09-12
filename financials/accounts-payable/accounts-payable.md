@@ -18,22 +18,22 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4b03825057c4b42781043f15c067bdb520addc2e
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 64bce1e23ef929793c0c838978d9eb646551a048
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="accounts-payable-home-page"></a>Ostoreskontran aloitussivu
+# <a name="accounts-payable-home-page"></a><span data-ttu-id="042c8-103">Ostoreskontran aloitussivu</span><span class="sxs-lookup"><span data-stu-id="042c8-103">Accounts payable home page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä aiheessa on yleiskuvaus ostoreskontrasta. 
+<span data-ttu-id="042c8-104">Tässä aiheessa on yleiskuvaus ostoreskontrasta.</span><span class="sxs-lookup"><span data-stu-id="042c8-104">This topic provides an overview of Accounts payable.</span></span> 
 
-Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta. Sen jälkeen kun laskut on syötetty tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai **Toimittajan lasku** -sivulla. Voit automatisoida tarkistusprosessin laskun täsmäytyksen, toimittajan laskutuskäytäntöjen ja työnkulun avulla, jolloin tietyt ehdot täyttävät laskut hyväksytään automaattisesti ja muut laskut merkitään valtuutetun käyttäjän tarkistettavaksi.
+<span data-ttu-id="042c8-105">Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta.</span><span class="sxs-lookup"><span data-stu-id="042c8-105">You can enter vendor invoices manually or receive them electronically through a data entity.</span></span> <span data-ttu-id="042c8-106">Sen jälkeen kun laskut on syötetty tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai **Toimittajan lasku** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="042c8-106">After the invoices are entered or received, you can review and approve the invoices by using an invoice approval journal or the **Vendor invoice** page.</span></span> <span data-ttu-id="042c8-107">Voit automatisoida tarkistusprosessin laskun täsmäytyksen, toimittajan laskutuskäytäntöjen ja työnkulun avulla, jolloin tietyt ehdot täyttävät laskut hyväksytään automaattisesti ja muut laskut merkitään valtuutetun käyttäjän tarkistettavaksi.</span><span class="sxs-lookup"><span data-stu-id="042c8-107">You can use invoice matching, vendor invoice policies, and workflow to automate the review process so that invoices that meet certain criteria are automatically approved, and the remaining invoices are flagged for review by an authorized user.</span></span>
 
 
 

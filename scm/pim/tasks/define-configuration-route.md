@@ -16,33 +16,33 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: c0ad052ac0237f4da463ee80197a019df071f827
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 42d37079eeea99aeea062168f4dd5462a8da8016
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-configuration-routes"></a>Määritä konfiguraation reititykset
+# <a name="define-configuration-routes"></a><span data-ttu-id="9f8a7-103">Määritä konfiguraation reititykset</span><span class="sxs-lookup"><span data-stu-id="9f8a7-103">Define configuration routes</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä keskitytään määrittämään konfiguraatioreitti, joka määrittää, missä järjestyksessä konfiguraatioryhmät esitetään. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä on kuudes kahdeksasta menettelystä, joissa selitetään, miten dimensioihin perustuvia konfiguraatioyhdistelmiä luodaan.
+<span data-ttu-id="9f8a7-104">Tässä menettelyssä keskitytään määrittämään konfiguraatioreitti, joka määrittää, missä järjestyksessä konfiguraatioryhmät esitetään.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-104">This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented.</span></span> <span data-ttu-id="9f8a7-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="9f8a7-106">Tämä on kuudes kahdeksasta menettelystä, joissa selitetään, miten dimensioihin perustuvia konfiguraatioyhdistelmiä luodaan.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-106">This is the sixth procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
 
-1. Valitse Tuotetietojen hallinta > Tuoterakenteet ja kaavat > Tuoterakenteet.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Valitse toimintoruudussa Asetukset.
-4. Valitse Vaihda näkymä.
-5. Valitse Otsikkonäkymä.
-6. Laajenna tai tiivistä Konfiguraatioreitti-osa.
-7. ValitseLisää.
-8. Merkitse valittu rivi luettelossa.
-9. Avaa haku napsauttamalla Konfiguraatioryhmä-kentässä avattavan valikon painiketta.
-10. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-11. ValitseLisää.
-12. Merkitse valittu rivi luettelossa.
-13. Avaa haku napsauttamalla Konfiguraatioryhmä-kentässä avattavan valikon painiketta.
-14. Etsi haluamasi tietue luettelosta ja valitse se.
-15. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-16. Valitse Tallenna.
+1. <span data-ttu-id="9f8a7-107">Valitse Tuotetietojen hallinta > Tuoterakenteet ja kaavat > Tuoterakenteet.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-107">Go to Product information management > Bills of materials and formulas > Bills of materials.</span></span>
+2. <span data-ttu-id="9f8a7-108">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="9f8a7-109">Valitse toimintoruudussa Asetukset.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-109">On the Action Pane, click Options.</span></span>
+4. <span data-ttu-id="9f8a7-110">Valitse Vaihda näkymä.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-110">Click Change view.</span></span>
+5. <span data-ttu-id="9f8a7-111">Valitse Otsikkonäkymä.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-111">Click Header view.</span></span>
+6. <span data-ttu-id="9f8a7-112">Laajenna tai tiivistä Konfiguraatioreitti-osa.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-112">Expand or collapse the Configuration route section.</span></span>
+7. <span data-ttu-id="9f8a7-113">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-113">Click Add.</span></span>
+8. <span data-ttu-id="9f8a7-114">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-114">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="9f8a7-115">Avaa haku napsauttamalla Konfiguraatioryhmä-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-115">In the Configuration group field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="9f8a7-116">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-116">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="9f8a7-117">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-117">Click Add.</span></span>
+12. <span data-ttu-id="9f8a7-118">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-118">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="9f8a7-119">Avaa haku napsauttamalla Konfiguraatioryhmä-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-119">In the Configuration group field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="9f8a7-120">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-120">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="9f8a7-121">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-121">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="9f8a7-122">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="9f8a7-122">Click Save.</span></span>
 
 

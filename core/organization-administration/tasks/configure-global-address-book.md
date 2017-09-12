@@ -16,34 +16,34 @@ ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0ecd161cf779977b34017561529cd73961f3c936
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e6e5c84d379ad6a94099cdb68d44d5c7b9ce0969
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-the-global-address-book"></a>Yleisen osoitekirjan määrittäminen
+# <a name="configure-the-global-address-book"></a><span data-ttu-id="b9271-103">Yleisen osoitekirjan määrittäminen</span><span class="sxs-lookup"><span data-stu-id="b9271-103">Configure the global address book</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Voit määrittää tällä menettelyllä yleisen osoitekirjan oletusarvot ja suojauskäytännöt. 
+<span data-ttu-id="b9271-104">Voit määrittää tällä menettelyllä yleisen osoitekirjan oletusarvot ja suojauskäytännöt.</span><span class="sxs-lookup"><span data-stu-id="b9271-104">Use this procedure to set the default values and security policies for the global address book.</span></span> 
 
-Tämän tehtävän luomisessa käytetty esittely-yritys on USMF. Tämä tehtävä on tarkoitettu suunnittelu- ja määritysryhmälle.
+<span data-ttu-id="b9271-105">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="b9271-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="b9271-106">Tämä tehtävä on tarkoitettu suunnittelu- ja määritysryhmälle.</span><span class="sxs-lookup"><span data-stu-id="b9271-106">This task is intended for the Planning and configuration team.</span></span>
 
-1. Valitse Organisaation hallinto > Yleinen osoitekirja > Yleisen osoitekirjan parametrit.
-2. Valitse Nimien järjestys -kentässä, miten nimet näytetään.
-3. Valitse, poistetaanko osapuolet, joille ei ole määritetty roolia.
-4. Valitse, tarkistetaanko tietueiden kaksoiskappaleet
-5. Valitse, näytetäänkö osoitteissa DUNS-numero.
-6. Valitse, tarkistetaanko yksilölliset DUNS-numerot.
-7. Valitse Osapuoli-kentässä vaihtoehto.
-8. Valitse Asiakas-kentässä vaihtoehto.
-9. Valitse Toimittaja-kentässä vaihtoehto.
-10. Valitse Prospekti-kentässä vaihtoehto.
-11. Valitse Kilpailija-kentässä vaihtoehto.
-12. Valitse Yksityisen sijainnin suojaus -välilehti.
-13. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Voit lisätä useita rooleja Valitut roolit -ruutuun painamalla Vaihto-näppäintä ja lisäämällä sitten valitut roolit nuolta napsauttamalla.  
-14. Valitse Tallenna.
+1. <span data-ttu-id="b9271-107">Valitse Organisaation hallinto > Yleinen osoitekirja > Yleisen osoitekirjan parametrit.</span><span class="sxs-lookup"><span data-stu-id="b9271-107">Go to Organization administration > Global address book > Global address book parameters.</span></span>
+2. <span data-ttu-id="b9271-108">Valitse Nimien järjestys -kentässä, miten nimet näytetään.</span><span class="sxs-lookup"><span data-stu-id="b9271-108">In the Name sequence field, select how names should be shown.</span></span>
+3. <span data-ttu-id="b9271-109">Valitse, poistetaanko osapuolet, joille ei ole määritetty roolia.</span><span class="sxs-lookup"><span data-stu-id="b9271-109">Select whether to delete parties with that have not been assigned a role.</span></span>
+4. <span data-ttu-id="b9271-110">Valitse, tarkistetaanko tietueiden kaksoiskappaleet</span><span class="sxs-lookup"><span data-stu-id="b9271-110">Select whether to check for duplicate records.</span></span>
+5. <span data-ttu-id="b9271-111">Valitse, näytetäänkö osoitteissa DUNS-numero.</span><span class="sxs-lookup"><span data-stu-id="b9271-111">Select whether to display the DUNS number on addresses.</span></span>
+6. <span data-ttu-id="b9271-112">Valitse, tarkistetaanko yksilölliset DUNS-numerot.</span><span class="sxs-lookup"><span data-stu-id="b9271-112">Select whether to check for unique DUNS numbers.</span></span>
+7. <span data-ttu-id="b9271-113">Valitse Osapuoli-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="b9271-113">In the Party field, select an option.</span></span>
+8. <span data-ttu-id="b9271-114">Valitse Asiakas-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="b9271-114">In the Customer field, select an option.</span></span>
+9. <span data-ttu-id="b9271-115">Valitse Toimittaja-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="b9271-115">In the Vendor field, select an option.</span></span>
+10. <span data-ttu-id="b9271-116">Valitse Prospekti-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="b9271-116">In the Prospect field, select an option.</span></span>
+11. <span data-ttu-id="b9271-117">Valitse Kilpailija-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="b9271-117">In the Competitor field, select an option.</span></span>
+12. <span data-ttu-id="b9271-118">Valitse Yksityisen sijainnin suojaus -välilehti.</span><span class="sxs-lookup"><span data-stu-id="b9271-118">Click the Private location security tab.</span></span>
+13. <span data-ttu-id="b9271-119">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="b9271-119">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="b9271-120">Voit lisätä useita rooleja Valitut roolit -ruutuun painamalla Vaihto-näppäintä ja lisäämällä sitten valitut roolit nuolta napsauttamalla.</span><span class="sxs-lookup"><span data-stu-id="b9271-120">Press the Shift key to select multiple roles to add to the Selected roles pane and then click the arrow to add the selected roles.</span></span>  
+14. <span data-ttu-id="b9271-121">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="b9271-121">Click Save.</span></span>
 
 

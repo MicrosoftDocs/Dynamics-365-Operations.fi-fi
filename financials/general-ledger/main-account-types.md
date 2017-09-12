@@ -19,27 +19,27 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
-ms.openlocfilehash: eb8ad0717ce0d9950e479d8e213a82f8e296da1d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2ef6f46b85c9f7784a15f416e1a2a1b009dfa02a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="main-account-types"></a>Päätilin tyypit
+# <a name="main-account-types"></a><span data-ttu-id="1dac9-103">Päätilin tyypit</span><span class="sxs-lookup"><span data-stu-id="1dac9-103">Main account types</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Päätilin tyypit määrittävät sen, kuinka montaa päätiliä tilikartassa käytetään.
+<span data-ttu-id="1dac9-104">Päätilin tyypit määrittävät sen, kuinka montaa päätiliä tilikartassa käytetään.</span><span class="sxs-lookup"><span data-stu-id="1dac9-104">The main account types determine how a main account is used in the chart of accounts.</span></span>
 
-Päätilin tyyppi on valittava luotaessa päätilejä Päätilit - tilikartat -sivulla.
--   Tulos, Tuotto ja Kulu – Näitä päätilejä käytetään kirjaustileinä. Tulostilejä käytetään tuottojen ja menojen kirjaamiseen. Kaikkien tulos-, tuotto- ja kulutilien summa määrittää koko vuoden tuloksen. Tuotto- ja kustannuspäätilejä käytetään samaan tarkoitukseen kuin tulospäätiliä.
--   Tase, Käyttöomaisuus, Velka ja Pääoma – Näitä päätilejä käytetään tapahtumatileinä, joille kirjataan yrityksen omaisuuksien ja velkojen summat.
--   Summa – Näitä päätilejä käytetään tilivälien lisäämiseen. Määritä Summa-päätilin tyyppi käyttämällä Tiliväli-sivua, jolla näytetään kaikkien tilivälien ryhmien saldojen summa. Avaa Tiliväli-sivu napsauttamalla Summat-painiketta Yleinen-välilehdellä, kun ole valinnut Summa-tyypin tilin.
--   Raportointi – Näitä päätilejä käytetään tilinpäätösraportointiin ainoastaan Brasiliassa.
+<span data-ttu-id="1dac9-105">Päätilin tyyppi on valittava luotaessa päätilejä Päätilit - tilikartat -sivulla.</span><span class="sxs-lookup"><span data-stu-id="1dac9-105">You must select a main account type when you create a main account in the Main accounts - chart of accounts page.</span></span>
+-   <span data-ttu-id="1dac9-106">Tulos, Tuotto ja Kulu – Näitä päätilejä käytetään kirjaustileinä.</span><span class="sxs-lookup"><span data-stu-id="1dac9-106">Profit and loss, Revenue, and Expense – These main accounts are used as posting accounts.</span></span> <span data-ttu-id="1dac9-107">Tulostilejä käytetään tuottojen ja menojen kirjaamiseen.</span><span class="sxs-lookup"><span data-stu-id="1dac9-107">Profit and loss accounts are used to record revenue and expenses.</span></span> <span data-ttu-id="1dac9-108">Kaikkien tulos-, tuotto- ja kulutilien summa määrittää koko vuoden tuloksen.</span><span class="sxs-lookup"><span data-stu-id="1dac9-108">The sum of all profit and loss, revenue, and expense accounts determines the year-end results.</span></span> <span data-ttu-id="1dac9-109">Tuotto- ja kustannuspäätilejä käytetään samaan tarkoitukseen kuin tulospäätiliä.</span><span class="sxs-lookup"><span data-stu-id="1dac9-109">Revenue and Expense main accounts have the same function as Profit and loss main accounts.</span></span>
+-   <span data-ttu-id="1dac9-110">Tase, Käyttöomaisuus, Velka ja Pääoma – Näitä päätilejä käytetään tapahtumatileinä, joille kirjataan yrityksen omaisuuksien ja velkojen summat.</span><span class="sxs-lookup"><span data-stu-id="1dac9-110">Balance sheet, Asset, Liability, and Equity – These main accounts are used as transaction accounts to record the amounts that a legal entity owns or owes.</span></span>
+-   <span data-ttu-id="1dac9-111">Summa – Näitä päätilejä käytetään tilivälien lisäämiseen.</span><span class="sxs-lookup"><span data-stu-id="1dac9-111">Total – These main accounts are used to add account intervals.</span></span> <span data-ttu-id="1dac9-112">Määritä Summa-päätilin tyyppi käyttämällä Tiliväli-sivua, jolla näytetään kaikkien tilivälien ryhmien saldojen summa.</span><span class="sxs-lookup"><span data-stu-id="1dac9-112">Configure the Total main account type by using the Account interval page, which displays the total of the group balances for all account intervals.</span></span> <span data-ttu-id="1dac9-113">Avaa Tiliväli-sivu napsauttamalla Summat-painiketta Yleinen-välilehdellä, kun ole valinnut Summa-tyypin tilin.</span><span class="sxs-lookup"><span data-stu-id="1dac9-113">Access the Account interval page by click Totals on the General tab once you have selected a Total account type.</span></span>
+-   <span data-ttu-id="1dac9-114">Raportointi – Näitä päätilejä käytetään tilinpäätösraportointiin ainoastaan Brasiliassa.</span><span class="sxs-lookup"><span data-stu-id="1dac9-114">Reporting – These main accounts are used for financial statement reporting for Brazil only.</span></span>
 
-Lisätietoja on ohjeaiheessa [Päätililuokkien määrittäminen](tasks/set-up-main-account-categories.md)
+<span data-ttu-id="1dac9-115">Lisätietoja on ohjeaiheessa [Päätililuokkien määrittäminen](tasks/set-up-main-account-categories.md)</span><span class="sxs-lookup"><span data-stu-id="1dac9-115">For more information, see [Set up main account categories](tasks/set-up-main-account-categories.md).</span></span>
 
 
 

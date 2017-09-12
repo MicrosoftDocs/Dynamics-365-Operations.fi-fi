@@ -1,4 +1,4 @@
---- 
+---
 title: "Varastoinventoinnin prosessien määrittäminen"
 description: "Tässä menettelyssä kerrotaan, miten perusvarastoinventoinnin prosessien konfigurointi tehdään luomalla inventointiryhmä ja inventoinnin kirjauskansio."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,72 +17,71 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 62c60faafd9ad96ce636a08102bc8652f9fff870
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: c14c846c55a3d821945160835817cd4f467deda9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="define-inventory-counting-processes"></a>Varastoinventoinnin prosessien määrittäminen
+# <a name="define-inventory-counting-processes"></a><span data-ttu-id="21680-103">Varastoinventoinnin prosessien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="21680-103">Define inventory counting processes</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kerrotaan, miten perusvarastoinventoinnin prosessien konfigurointi tehdään luomalla inventointiryhmä ja inventoinnin kirjauskansio. Menettelyssä kerrotaan myös, miten varasto- ja nimiketason inventointikäytännöt otetaan käyttöön. Varaston esimies tekee yleensä nämä tehtävät. Edellytyksenä on, että olemassa on joitakin aiemmin määritettyjä vapautettuja tuotteita ja varastoja. Jos käytössä on esittelytietojen yritys, voit suorittaa tämän menettelyn käyttämällä USMF-yritystä ja mitä tahansa varastoitua nimikettä.
+<span data-ttu-id="21680-104">Tässä menettelyssä kerrotaan, miten perusvarastoinventoinnin prosessien konfigurointi tehdään luomalla inventointiryhmä ja inventoinnin kirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="21680-104">This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal.</span></span> <span data-ttu-id="21680-105">Menettelyssä kerrotaan myös, miten varasto- ja nimiketason inventointikäytännöt otetaan käyttöön.</span><span class="sxs-lookup"><span data-stu-id="21680-105">It also shows you how to enable counting policies on a warehouse and item level.</span></span> <span data-ttu-id="21680-106">Varaston esimies tekee yleensä nämä tehtävät.</span><span class="sxs-lookup"><span data-stu-id="21680-106">These tasks would typically be carried out by a warehouse supervisor.</span></span> <span data-ttu-id="21680-107">Edellytyksenä on, että olemassa on joitakin aiemmin määritettyjä vapautettuja tuotteita ja varastoja.</span><span class="sxs-lookup"><span data-stu-id="21680-107">It is a prerequisite to have some existing released products and warehouses.</span></span> <span data-ttu-id="21680-108">Jos käytössä on esittelytietojen yritys, voit suorittaa tämän menettelyn käyttämällä USMF-yritystä ja mitä tahansa varastoitua nimikettä.</span><span class="sxs-lookup"><span data-stu-id="21680-108">If you're using a demo data company, you can run this procedure in the USMF company with any stocked item.</span></span>
 
 
-## <a name="create-a-counting-group"></a>Luo inventointiryhmä.
-1. Valitse Inventoinnin- ja varastonhallinta > Asetukset > Varasto > Inventointiryhmät.
-2. Valitse Uusi.
-3. Kirjoita arvo Inventointiryhmä-kenttään.
-4. Kirjoita arvo Nimi-kenttään.
-5. Valitse vaihtoehto Inventointikoodi-kentässä.
-    * Manuaalinen – Sisältää rivit aina, kun suoritat työn. Voit siis päättää inventointiryhmän inventointivälin.  Kausi – Lisää inventointikirjauskansion kauden, kun kausiväli on umpeutunut.   Varastosaldo nolla – Jos käytettävissä oleva varasto laskee nollaan (0), ohjelma luo rivejä inventointikirjauskansioon, kun työ suoritetaan. Jos käytettävissä oleva varasto saavuttaa 0 laskemisen jälkeen, rivejä syntyy seuraavan kerran kun käynnistät laskennan.   Vähintään - Lisää rivejä laskentakirjauskansioon, jos käytettävissä oleva varasto on yhtä suuri tai pienempi kuin määritelty vähimmäismäärä.  
-    * Valinnainen: Jos olet määrittänyt Inventointikoodi-kentän arvoksi Kausi, kirjoita Inventointikausi-kenttään kauden aikaväli. Välien yksikkö on päivät.  
-    * Kun suoritat inventoinnin kirjauskansiossa uusien rivien luontityön, uudet rivit luodaan tässä kentässä määritetyin välein siitä huolimatta, miten usein suoritat kyseisen työn. Jos esimerkiksi inventointikaudeksi on määritetty 7, kirjauskansion rivit luotiin inventointia varten viimeksi tammikuun 1. päivä ja toinen työ on aloitettu tammikuun 5 päivä, seitsemää päivää ei ole kulunut eikä kyseisen kausivälin kirjauskansioon luoda rivejä. Jos aloitat työn uudelleen tammikuun 8. päivä., ohjelma luo kauden rivit inventoinnin kirjauskansioon, koska 7 päivää on kulunut.  
-6. Valitse Tallenna.
+## <a name="create-a-counting-group"></a><span data-ttu-id="21680-109">Luo inventointiryhmä.</span><span class="sxs-lookup"><span data-stu-id="21680-109">Create a counting group</span></span>
+1. <span data-ttu-id="21680-110">Valitse Inventoinnin- ja varastonhallinta > Asetukset > Varasto > Inventointiryhmät.</span><span class="sxs-lookup"><span data-stu-id="21680-110">Go to Inventory management > Setup > Inventory > Counting groups.</span></span>
+2. <span data-ttu-id="21680-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="21680-111">Click New.</span></span>
+3. <span data-ttu-id="21680-112">Kirjoita arvo Inventointiryhmä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="21680-112">In the Counting group field, type a value.</span></span>
+4. <span data-ttu-id="21680-113">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="21680-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="21680-114">Valitse vaihtoehto Inventointikoodi-kentässä.</span><span class="sxs-lookup"><span data-stu-id="21680-114">In the Counting code field, select an option.</span></span>
+    * <span data-ttu-id="21680-115">Manuaalinen – Sisältää rivit aina, kun suoritat työn.</span><span class="sxs-lookup"><span data-stu-id="21680-115">Manual – Includes lines every time you run the job.</span></span> <span data-ttu-id="21680-116">Voit siis päättää inventointiryhmän inventointivälin.</span><span class="sxs-lookup"><span data-stu-id="21680-116">In other words, you decide the counting interval for the counting group.</span></span>  <span data-ttu-id="21680-117">Kausi – Lisää inventointikirjauskansion kauden, kun kausiväli on umpeutunut.</span><span class="sxs-lookup"><span data-stu-id="21680-117">Period – Includes lines for the period in the counting journal when the period interval has expired.</span></span>   <span data-ttu-id="21680-118">Varastosaldo nolla – Jos käytettävissä oleva varasto laskee nollaan (0), ohjelma luo rivejä inventointikirjauskansioon, kun työ suoritetaan.</span><span class="sxs-lookup"><span data-stu-id="21680-118">Zero in stock – If on-hand inventory reaches zero (0), lines are generated in the counting journal when the job is run.</span></span> <span data-ttu-id="21680-119">Jos käytettävissä oleva varasto saavuttaa 0 laskemisen jälkeen, rivejä syntyy seuraavan kerran kun käynnistät laskennan.</span><span class="sxs-lookup"><span data-stu-id="21680-119">If the on-hand inventory reaches 0 after a count, lines are generated the next time that you start the count.</span></span>   <span data-ttu-id="21680-120">Vähintään - Lisää rivejä laskentakirjauskansioon, jos käytettävissä oleva varasto on yhtä suuri tai pienempi kuin määritelty vähimmäismäärä.</span><span class="sxs-lookup"><span data-stu-id="21680-120">Minimum – Inserts lines in the counting journal if the on-hand inventory is equal to or less than the minimum that is specified.</span></span>  
+    * <span data-ttu-id="21680-121">Valinnainen: Jos olet määrittänyt Inventointikoodi-kentän arvoksi Kausi, kirjoita Inventointikausi-kenttään kauden aikaväli.</span><span class="sxs-lookup"><span data-stu-id="21680-121">Optional: If you have specified Period in the Counting code field, you must type the interval for the period in the Counting period field.</span></span> <span data-ttu-id="21680-122">Välien yksikkö on päivät.</span><span class="sxs-lookup"><span data-stu-id="21680-122">The unit for intervals is days.</span></span>  
+    * <span data-ttu-id="21680-123">Kun suoritat inventoinnin kirjauskansiossa uusien rivien luontityön, uudet rivit luodaan tässä kentässä määritetyin välein siitä huolimatta, miten usein suoritat kyseisen työn.</span><span class="sxs-lookup"><span data-stu-id="21680-123">When you run the job for creating new lines in the counting journal, new lines are created at the interval specified in this field, regardless of how often you run the same job.</span></span> <span data-ttu-id="21680-124">Jos esimerkiksi inventointikaudeksi on määritetty 7, kirjauskansion rivit luotiin inventointia varten viimeksi tammikuun 1. päivä ja toinen työ on aloitettu tammikuun 5 päivä, seitsemää päivää ei ole kulunut eikä kyseisen kausivälin kirjauskansioon luoda rivejä.</span><span class="sxs-lookup"><span data-stu-id="21680-124">For example, if Counting period is set to 7, and journal lines were last generated for a count on January 1, if another job is started on January 5, seven days have not passed and so no lines are generated in the journal for that period interval.</span></span> <span data-ttu-id="21680-125">Jos aloitat työn uudelleen tammikuun 8. päivä., ohjelma luo kauden rivit inventoinnin kirjauskansioon, koska 7 päivää on kulunut.</span><span class="sxs-lookup"><span data-stu-id="21680-125">If you start the job again on January 8, lines are generated for the period in the counting journal, because 7 days have passed.</span></span>  
+6. <span data-ttu-id="21680-126">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="21680-126">Click Save.</span></span>
 
-## <a name="create-a-counting-journal-name"></a>Inventoinnin kirjauskansion nimen luominen
-1. Valitse Inventoinnin- ja varastonhallinta > Asetukset > Kirjauskansioiden nimet > Varasto.
-2. Valitse Uusi.
-3. Kirjoita arvo Nimi-kenttään.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Valitse Kirjauskansion tyyppi -kentässä Inventointi.
-    * Valinnainen: Voit valita eri tositesarjan tunnuksen, jos haluat inventoinnin kirjauskansioiden luonnin yhteydessä luotujen tositteiden tunnuksille tietyn numerosarjan. Tositesarjat luodaan Numerosarjat-sivulla.  
-6. Valitse vaihtoehto Erittelytaso-kentässä.
-    * Erittelytaso, jota käytetään, kun kirjauskansio kirjataan.  
-    * Valinnainen: Voit muuttaa arvoa Varaus-kentässä. Tämä on nimikkeiden varaustapa inventoinnin aikana.   
-    * Manuaalinen – Nimikkeet on varattu manuaalisesti varauslomakkeessa.   Automaattinen – Tilauksen määrä varataan nimikkeen käytettävissä olevasta varastosta.   Hajotus – Varaus on osa tapahtuman pääsuunnittelua.  
-7. Valitse Tallenna.
+## <a name="create-a-counting-journal-name"></a><span data-ttu-id="21680-127">Inventoinnin kirjauskansion nimen luominen</span><span class="sxs-lookup"><span data-stu-id="21680-127">Create a counting journal name</span></span>
+1. <span data-ttu-id="21680-128">Valitse Inventoinnin- ja varastonhallinta > Asetukset > Kirjauskansioiden nimet > Varasto.</span><span class="sxs-lookup"><span data-stu-id="21680-128">Go to Inventory management > Setup > Journal names > Inventory.</span></span>
+2. <span data-ttu-id="21680-129">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="21680-129">Click New.</span></span>
+3. <span data-ttu-id="21680-130">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="21680-130">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="21680-131">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="21680-131">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="21680-132">Valitse Kirjauskansion tyyppi -kentässä Inventointi.</span><span class="sxs-lookup"><span data-stu-id="21680-132">In the Journal type field, select 'Counting'.</span></span>
+    * <span data-ttu-id="21680-133">Valinnainen: Voit valita eri tositesarjan tunnuksen, jos haluat inventoinnin kirjauskansioiden luonnin yhteydessä luotujen tositteiden tunnuksille tietyn numerosarjan.</span><span class="sxs-lookup"><span data-stu-id="21680-133">Optional: you can select a different voucher series ID if you want a specific number sequence for the voucher IDs generated when creating counting journals.</span></span> <span data-ttu-id="21680-134">Tositesarjat luodaan Numerosarjat-sivulla.</span><span class="sxs-lookup"><span data-stu-id="21680-134">Voucher series are created in the Number sequences page.</span></span>  
+6. <span data-ttu-id="21680-135">Valitse vaihtoehto Erittelytaso-kentässä.</span><span class="sxs-lookup"><span data-stu-id="21680-135">In the Detail level field, select an option.</span></span>
+    * <span data-ttu-id="21680-136">Erittelytaso, jota käytetään, kun kirjauskansio kirjataan.</span><span class="sxs-lookup"><span data-stu-id="21680-136">This is the level of detail that is applied when the journal is posted.</span></span>  
+    * <span data-ttu-id="21680-137">Valinnainen: Voit muuttaa arvoa Varaus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="21680-137">Optional: you can change the value in the Reservation field.</span></span> <span data-ttu-id="21680-138">Tämä on nimikkeiden varaustapa inventoinnin aikana.</span><span class="sxs-lookup"><span data-stu-id="21680-138">This is the method used to reserve items during counting.</span></span>   
+    * <span data-ttu-id="21680-139">Manuaalinen – Nimikkeet on varattu manuaalisesti varauslomakkeessa.</span><span class="sxs-lookup"><span data-stu-id="21680-139">Manual – The items are reserved manually in the Reservation form.</span></span>   <span data-ttu-id="21680-140">Automaattinen – Tilauksen määrä varataan nimikkeen käytettävissä olevasta varastosta.</span><span class="sxs-lookup"><span data-stu-id="21680-140">Automatic – The order quantity is reserved from the available, on-hand inventory for the item.</span></span>   <span data-ttu-id="21680-141">Hajotus – Varaus on osa tapahtuman pääsuunnittelua.</span><span class="sxs-lookup"><span data-stu-id="21680-141">Explosion – The reservation is part of the master planning of the transaction.</span></span>  
+7. <span data-ttu-id="21680-142">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="21680-142">Click Save.</span></span>
 
-## <a name="set-standard-counting-journal-name"></a>Vakioinventoinnin kirjauskansion nimen määrittäminen
-1. Siirry kohtaan Varastonhallinta > Asetukset > Varasto ja varastonhallinnan parametrit.
-2. Valitse Kirjauskansiot-välilehti.
-3. Avaa haku valitsemalla Inventointi-kentässä avattavan valikon painike.
-4. Valitse aiemmin luomasi kirjauskansio.
-    * Tämä kirjauskansio on oletuskirjauskansio varastokirjauskansioille, joiden tyyppinä on Inventointi.  
-5. Valitse Yleiset-välilehti.
-    * Valinnainen: Valitse tämä asetus, kun haluat lukita nimikkeen inventoinnin ajaksi. Tällä estetään pakkausluetteloiden, keräysluetteloiden ja keräysluettelon rekisteröintien päivitykset.  
+## <a name="set-standard-counting-journal-name"></a><span data-ttu-id="21680-143">Vakioinventoinnin kirjauskansion nimen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="21680-143">Set standard counting journal name</span></span>
+1. <span data-ttu-id="21680-144">Siirry kohtaan Varastonhallinta > Asetukset > Varasto ja varastonhallinnan parametrit.</span><span class="sxs-lookup"><span data-stu-id="21680-144">Go to Inventory management > Setup > Inventory and warehouse management parameters.</span></span>
+2. <span data-ttu-id="21680-145">Valitse Kirjauskansiot-välilehti.</span><span class="sxs-lookup"><span data-stu-id="21680-145">Click the Journals tab.</span></span>
+3. <span data-ttu-id="21680-146">Avaa haku valitsemalla Inventointi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="21680-146">In the Counting field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="21680-147">Valitse aiemmin luomasi kirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="21680-147">Select the journal you previously created.</span></span>
+    * <span data-ttu-id="21680-148">Tämä kirjauskansio on oletuskirjauskansio varastokirjauskansioille, joiden tyyppinä on Inventointi.</span><span class="sxs-lookup"><span data-stu-id="21680-148">This journal will then be the default journal name for inventory journals of the Counting type.</span></span>  
+5. <span data-ttu-id="21680-149">Valitse Yleiset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="21680-149">Click the General tab.</span></span>
+    * <span data-ttu-id="21680-150">Valinnainen: Valitse tämä asetus, kun haluat lukita nimikkeen inventoinnin ajaksi. Tällä estetään pakkausluetteloiden, keräysluetteloiden ja keräysluettelon rekisteröintien päivitykset.</span><span class="sxs-lookup"><span data-stu-id="21680-150">Optional: Select this option to lock an item during the counting process to prevent updates for packing slips, picking lists, or picking list registrations.</span></span>  
 
-## <a name="set-the-counting-policy-for-an-item"></a>Nimikkeen inventointikäytännön määrittäminen
-1. Mene Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet.
-2. Valitse luettelosta sen tuotteen nimiketunnuksen linkki, jonka inventointikäytännöt haluat määrittää.
-    * Ota huomioon, että sinun on valittava nimike, jota seurataan varastossa. Varastoimattomia tuotteita ei voi inventoida. Jos käytössä on USMF-esittelytietoja, voit valita nimikkeen A0001.  
-3. Valitse Muokkaa.
-4. Ota käyttöön Varastonhallinta-osan laajennus.
-5. Avaa haku valitsemalla Inventointiryhmä-kentässä avattavan valikon painike.
-6. Valitse luettelosta aiemmin luomasi inventointiryhmä.
-    * Tämä tuote lisätään, kun varaston inventoinnin kirjauskansion rivit luodaan tämän inventointiryhmän avulla.  
-7. Valitse Tallenna.
+## <a name="set-the-counting-policy-for-an-item"></a><span data-ttu-id="21680-151">Nimikkeen inventointikäytännön määrittäminen</span><span class="sxs-lookup"><span data-stu-id="21680-151">Set the counting policy for an item</span></span>
+1. <span data-ttu-id="21680-152">Mene Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="21680-152">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="21680-153">Valitse luettelosta sen tuotteen nimiketunnuksen linkki, jonka inventointikäytännöt haluat määrittää.</span><span class="sxs-lookup"><span data-stu-id="21680-153">In the list, click on the link for the Item number of the product that you want to set counting policies on.</span></span>
+    * <span data-ttu-id="21680-154">Ota huomioon, että sinun on valittava nimike, jota seurataan varastossa.</span><span class="sxs-lookup"><span data-stu-id="21680-154">Note that you need to select an item that is inventory tracked.</span></span> <span data-ttu-id="21680-155">Varastoimattomia tuotteita ei voi inventoida.</span><span class="sxs-lookup"><span data-stu-id="21680-155">A non-stocked product can't be counted.</span></span> <span data-ttu-id="21680-156">Jos käytössä on USMF-esittelytietoja, voit valita nimikkeen A0001.</span><span class="sxs-lookup"><span data-stu-id="21680-156">If you are using USMF demo data you can select item A0001.</span></span>  
+3. <span data-ttu-id="21680-157">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="21680-157">Click Edit.</span></span>
+4. <span data-ttu-id="21680-158">Ota käyttöön Varastonhallinta-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="21680-158">Toggle the expansion of the Manage inventory section.</span></span>
+5. <span data-ttu-id="21680-159">Avaa haku valitsemalla Inventointiryhmä-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="21680-159">In the Counting group field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="21680-160">Valitse luettelosta aiemmin luomasi inventointiryhmä.</span><span class="sxs-lookup"><span data-stu-id="21680-160">In the list, click on the counting group you previously created.</span></span>
+    * <span data-ttu-id="21680-161">Tämä tuote lisätään, kun varaston inventoinnin kirjauskansion rivit luodaan tämän inventointiryhmän avulla.</span><span class="sxs-lookup"><span data-stu-id="21680-161">This product will now be included when inventory counting journal lines are created using this counting group.</span></span>  
+7. <span data-ttu-id="21680-162">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="21680-162">Click Save.</span></span>
 
-## <a name="set-the-counting-policy-for-an-item-in-a-specific-warehouse"></a>Tietyn varaston nimikkeen inventointikäytännön määrittäminen
-1. Valitse toimintoruudussa Varastonhallinta.
-2. Valitse Varastonimikkeet.
-3. Valitse Uusi.
-4. Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.
-5. Valitse luettelosta varasto, jolle haluat määrittää tietyt inventointikäytännöt.
-6. Avaa haku valitsemalla Inventointiryhmä-kentässä avattavan valikon painike.
-7. Valitse luettelosta inventointiryhmä
-    * Tässä voit valita tietyn inventointiryhmän, jota käytetään valitsemasi tietyn varaston nimikkeessä. Kun kyseisen varaston inventointi suoritetaan, inventointikäytäntö korvaa nimikkeen yleisen inventointikäytännön.  
-8. Valitse Tallenna.
-
+## <a name="set-the-counting-policy-for-an-item-in-a-specific-warehouse"></a><span data-ttu-id="21680-163">Tietyn varaston nimikkeen inventointikäytännön määrittäminen</span><span class="sxs-lookup"><span data-stu-id="21680-163">Set the counting policy for an item in a specific warehouse</span></span>
+1. <span data-ttu-id="21680-164">Valitse toimintoruudussa Varastonhallinta.</span><span class="sxs-lookup"><span data-stu-id="21680-164">On the Action Pane, click Manage inventory.</span></span>
+2. <span data-ttu-id="21680-165">Valitse Varastonimikkeet.</span><span class="sxs-lookup"><span data-stu-id="21680-165">Click Warehouse items.</span></span>
+3. <span data-ttu-id="21680-166">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="21680-166">Click New.</span></span>
+4. <span data-ttu-id="21680-167">Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="21680-167">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="21680-168">Valitse luettelosta varasto, jolle haluat määrittää tietyt inventointikäytännöt.</span><span class="sxs-lookup"><span data-stu-id="21680-168">In the list, select the warehouse you want set up specific counting policies for.</span></span>
+6. <span data-ttu-id="21680-169">Avaa haku valitsemalla Inventointiryhmä-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="21680-169">In the Counting group field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="21680-170">Valitse luettelosta inventointiryhmä</span><span class="sxs-lookup"><span data-stu-id="21680-170">In the list, select a counting group</span></span>
+    * <span data-ttu-id="21680-171">Tässä voit valita tietyn inventointiryhmän, jota käytetään valitsemasi tietyn varaston nimikkeessä.</span><span class="sxs-lookup"><span data-stu-id="21680-171">Here you can select a specific counting group that should apply to the item in the specific warehouse you have selected.</span></span> <span data-ttu-id="21680-172">Kun kyseisen varaston inventointi suoritetaan, inventointikäytäntö korvaa nimikkeen yleisen inventointikäytännön.</span><span class="sxs-lookup"><span data-stu-id="21680-172">When counting is performed in that warehouse, this counting policy will override the general counting policy for the item.</span></span>  
+8. <span data-ttu-id="21680-173">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="21680-173">Click Save.</span></span>
 

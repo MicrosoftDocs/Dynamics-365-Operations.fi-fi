@@ -1,2 +1,2 @@
 > [!NOTE]
-> Tämän aiheen muokkausta ei sallita, koska sen luo Lifecycle Servicesin liiketoimintaprosessi.
+> <span data-ttu-id="ec7b3-101">Tämän aiheen muokkausta ei sallita, koska sen luo Lifecycle Servicesin liiketoimintaprosessi.</span><span class="sxs-lookup"><span data-stu-id="ec7b3-101">We will not be accepting edits to this topic, because it is generated from a business process in Lifecycle Services.</span></span>

@@ -16,58 +16,58 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 1edd7aca4e583ec459ded8ca4182582721665333
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 49d512c3093f97c9c6d8ab15d29119e7a3b9a455
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-benefit-eligibility-rules-and-policies"></a>Määritä edun oikeutussäännöt ja -käytännöt
+# <a name="define-benefit-eligibility-rules-and-policies"></a><span data-ttu-id="08d74-103">Määritä edun oikeutussäännöt ja -käytännöt</span><span class="sxs-lookup"><span data-stu-id="08d74-103">Define benefit eligibility rules and policies</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä tallenteessa kerrotaan, miten edun oikeutussäännöt ja -käytännöt luodaan. Tämän jälkeen näytetään, miten säännöt liitetään etuihin.  
+<span data-ttu-id="08d74-104">Tässä tallenteessa kerrotaan, miten edun oikeutussäännöt ja -käytännöt luodaan. Tämän jälkeen näytetään, miten säännöt liitetään etuihin.</span><span class="sxs-lookup"><span data-stu-id="08d74-104">This recording will show you how you can create benefit eligibility rules and policies and then assign rules to Benefits.</span></span>  
 
-Tämän tallenteen luomisessa käytetty demotietojen yritys on USMF.
+<span data-ttu-id="08d74-105">Tämän tallenteen luomisessa käytetty demotietojen yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="08d74-105">The demo data company used to create this recording is USMF.</span></span>
 
 
-## <a name="create-benefit-eligibility-policy-rule-type"></a>Etukelpoisuuden käytäntösääntötyypin luominen
-1. Valitse Henkilöstöhallinto > Edut > Oikeutus > Etukelpoisuuden käytäntösääntötyypit.
-2. Valitse Uusi.
-3. Kirjoita arvo Säännön nimi-kenttään.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Avaa haku valitsemalla Kyselyn nimi -kentässä avattavan valikon painike.
-6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-7. Valitse Tallenna.
-8. Sulje sivu.
+## <a name="create-benefit-eligibility-policy-rule-type"></a><span data-ttu-id="08d74-106">Etukelpoisuuden käytäntösääntötyypin luominen</span><span class="sxs-lookup"><span data-stu-id="08d74-106">Create benefit eligibility policy rule type</span></span>
+1. <span data-ttu-id="08d74-107">Valitse Henkilöstöhallinto > Edut > Oikeutus > Etukelpoisuuden käytäntösääntötyypit.</span><span class="sxs-lookup"><span data-stu-id="08d74-107">Go to Human resources > Benefits > Eligibility > Benefit eligibility policy rule types.</span></span>
+2. <span data-ttu-id="08d74-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="08d74-108">Click New.</span></span>
+3. <span data-ttu-id="08d74-109">Kirjoita arvo Säännön nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="08d74-109">In the Rule name field, type a value.</span></span>
+4. <span data-ttu-id="08d74-110">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="08d74-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="08d74-111">Avaa haku valitsemalla Kyselyn nimi -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="08d74-111">In the Query name field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="08d74-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="08d74-112">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="08d74-113">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="08d74-113">Click Save.</span></span>
+8. <span data-ttu-id="08d74-114">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="08d74-114">Close the page.</span></span>
 
-## <a name="benefit-eligibility-policy"></a>Etukelpoisuuden käytäntö
-1. Valitse Henkilöstöhallinto > Edut > Oikeutus > Etukelpoisuuden käytännöt.
-2. Valitse aiemmin luotu etukäytäntö.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-4. Ota käyttöön Käytäntöorganisaatiot-osien laajennus.  Tässä voit lisätä organisaatiot, jotka haluat lisätä käytäntöön, tai poistaa niitä.
-5. Laajenna tai tiivistä Käytäntösäännöt-osa.
-6. Valitse luettelosta aiemmin luotu käytäntösääntö.
-7. Valitse Luo käytäntösääntö.
-8. Syötä Voimaantulopäivä-kenttään päivämäärä, jolloin haluat ottaa käytännön käyttöön.
-    * Kun voimaantulo- ja päättymispäivät määritetään, voit muuttaa käytäntösääntöjä jatkossa. Näin käytäntöön ei tarvitse palata silloin, kun haluat ottaa muutokset käyttöön.  
+## <a name="benefit-eligibility-policy"></a><span data-ttu-id="08d74-115">Etukelpoisuuden käytäntö</span><span class="sxs-lookup"><span data-stu-id="08d74-115">Benefit eligibility policy</span></span>
+1. <span data-ttu-id="08d74-116">Valitse Henkilöstöhallinto > Edut > Oikeutus > Etukelpoisuuden käytännöt.</span><span class="sxs-lookup"><span data-stu-id="08d74-116">Go to Human resources > Benefits > Eligibility > Benefit eligibility policies.</span></span>
+2. <span data-ttu-id="08d74-117">Valitse aiemmin luotu etukäytäntö.</span><span class="sxs-lookup"><span data-stu-id="08d74-117">Select an existing benefit policy.</span></span>
+3. <span data-ttu-id="08d74-118">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="08d74-118">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="08d74-119">Ota käyttöön Käytäntöorganisaatiot-osien laajennus.</span><span class="sxs-lookup"><span data-stu-id="08d74-119">Toggle the expansion of the Policy organizations sections.</span></span>  <span data-ttu-id="08d74-120">Tässä voit lisätä organisaatiot, jotka haluat lisätä käytäntöön, tai poistaa niitä.</span><span class="sxs-lookup"><span data-stu-id="08d74-120">Here you can add or remove any organizations you want to include in the policy.</span></span>
+5. <span data-ttu-id="08d74-121">Laajenna tai tiivistä Käytäntösäännöt-osa.</span><span class="sxs-lookup"><span data-stu-id="08d74-121">Expand or collapse the Policy rules section.</span></span>
+6. <span data-ttu-id="08d74-122">Valitse luettelosta aiemmin luotu käytäntösääntö.</span><span class="sxs-lookup"><span data-stu-id="08d74-122">In the list find the policy rule previously created.</span></span>
+7. <span data-ttu-id="08d74-123">Valitse Luo käytäntösääntö.</span><span class="sxs-lookup"><span data-stu-id="08d74-123">Click Create policy rule.</span></span>
+8. <span data-ttu-id="08d74-124">Syötä Voimaantulopäivä-kenttään päivämäärä, jolloin haluat ottaa käytännön käyttöön.</span><span class="sxs-lookup"><span data-stu-id="08d74-124">In the Effective date field, enter the date in which you want the policy to become effective.</span></span>
+    * <span data-ttu-id="08d74-125">Kun voimaantulo- ja päättymispäivät määritetään, voit muuttaa käytäntösääntöjä jatkossa. Näin käytäntöön ei tarvitse palata silloin, kun haluat ottaa muutokset käyttöön.</span><span class="sxs-lookup"><span data-stu-id="08d74-125">Setting effective and end dates allows you to make future changes to policy rules and removing the need to come back to the policy when you want those changes to take effect.</span></span>  
 9. 
-    * Jos esimerkiksi haluat kohdistaa säännön vain myyntipäällikköihin, voit luoda seuraavan Where-lauseen: kun toimen kuvaus on yhtä suuri kuin myyntipäällikkö.  Where-lauseita voi yhdistää säännössä And- ja Or-operaattorin avulla.  
-10. Valitse OK.
-11. Sulje sivu.
-12. Sulje sivu.
+    * <span data-ttu-id="08d74-126">Jos esimerkiksi haluat kohdistaa säännön vain myyntipäällikköihin, voit luoda seuraavan Where-lauseen: kun toimen kuvaus on yhtä suuri kuin myyntipäällikkö.</span><span class="sxs-lookup"><span data-stu-id="08d74-126">For example if you wanted the rule to only apply to Sales Managers you could create the Where clause to say: Where position description equals Sales Manager.</span></span>  <span data-ttu-id="08d74-127">Where-lauseita voi yhdistää säännössä And- ja Or-operaattorin avulla.</span><span class="sxs-lookup"><span data-stu-id="08d74-127">You can And or Or multiple Where statements together in the rule.</span></span>  
+10. <span data-ttu-id="08d74-128">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="08d74-128">Click OK.</span></span>
+11. <span data-ttu-id="08d74-129">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="08d74-129">Close the page.</span></span>
+12. <span data-ttu-id="08d74-130">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="08d74-130">Close the page.</span></span>
 
-## <a name="assign-rule-to-benefit"></a>Säännön liittäminen etuun
-1. Siirry kohtaan Henkilöstöhallinto > Edut > Edut.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-4. Laajenna tai tiivistä Oikeutussäännöt-osa.
-5. Valitse Muokkaa.
-6. Valitse Oikeutus-kentässä luettelosta Sääntöön perustuva -kohta.
-7. Avaa haku valitsemalla Sääntötyyppi-kentässä avattavan valikon painike.
-8. Etsi ja valitse luettelosta aiemmin luotu sääntö.
-9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-10. Valitse Tallenna.
-11. Sulje lomake.
+## <a name="assign-rule-to-benefit"></a><span data-ttu-id="08d74-131">Säännön liittäminen etuun</span><span class="sxs-lookup"><span data-stu-id="08d74-131">Assign rule to benefit</span></span>
+1. <span data-ttu-id="08d74-132">Siirry kohtaan Henkilöstöhallinto > Edut > Edut.</span><span class="sxs-lookup"><span data-stu-id="08d74-132">Go to Human resources > Benefits > Benefits.</span></span>
+2. <span data-ttu-id="08d74-133">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="08d74-133">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="08d74-134">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="08d74-134">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="08d74-135">Laajenna tai tiivistä Oikeutussäännöt-osa.</span><span class="sxs-lookup"><span data-stu-id="08d74-135">Expand or collapse the Eligibility rules section.</span></span>
+5. <span data-ttu-id="08d74-136">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="08d74-136">Click Edit.</span></span>
+6. <span data-ttu-id="08d74-137">Valitse Oikeutus-kentässä luettelosta Sääntöön perustuva -kohta.</span><span class="sxs-lookup"><span data-stu-id="08d74-137">In the Eligibility field, select Rule based from the list.</span></span>
+7. <span data-ttu-id="08d74-138">Avaa haku valitsemalla Sääntötyyppi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="08d74-138">In the Rule type field, click the drop down button to open the lookup.</span></span>
+8. <span data-ttu-id="08d74-139">Etsi ja valitse luettelosta aiemmin luotu sääntö.</span><span class="sxs-lookup"><span data-stu-id="08d74-139">In the list find and select the rule you previously created.</span></span>
+9. <span data-ttu-id="08d74-140">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="08d74-140">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="08d74-141">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="08d74-141">Click Save.</span></span>
+11. <span data-ttu-id="08d74-142">Sulje lomake.</span><span class="sxs-lookup"><span data-stu-id="08d74-142">Close the form.</span></span>
 
 

@@ -16,43 +16,43 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 361067c7aa82ac87a20eb8f1094639f53705ac25
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5936196d4772c8fcfcc8a00767d17268f6609cde
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-new-users"></a>Uusien käyttäjien luominen
+# <a name="create-new-users"></a><span data-ttu-id="4bf5a-103">Uusien käyttäjien luominen</span><span class="sxs-lookup"><span data-stu-id="4bf5a-103">Create new users</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Käyttäjät ovat organisaation sisäisiä käyttäjiä tai ulkoisia asiakkaita ja toimittajia, jotka tarvitsevat järjestelmän käyttöoikeuden töidensä tekemiseen. Järjestelmänvalvojat voivat lisätä käyttäjiä järjestelmään suorittamalla tämän menettelyn. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. 
+<span data-ttu-id="4bf5a-104">Käyttäjät ovat organisaation sisäisiä käyttäjiä tai ulkoisia asiakkaita ja toimittajia, jotka tarvitsevat järjestelmän käyttöoikeuden töidensä tekemiseen.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-104">Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs.</span></span> <span data-ttu-id="4bf5a-105">Järjestelmänvalvojat voivat lisätä käyttäjiä järjestelmään suorittamalla tämän menettelyn.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-105">System administrators can complete this procedure to add users to the system.</span></span> <span data-ttu-id="4bf5a-106">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-106">The demo data company used to create this procedure is USMF.</span></span> 
 
 
-## <a name="add-a-new-user"></a>Lisää uusi käyttäjä
-1. Valitse Järjestelmänhallinta > Käyttäjät > Käyttäjät.
-2. Valitse Uusi.
-3. Kirjoita Käyttäjätunnus-kenttään arvo.
-    * Anna käyttäjän yksilöllinen tunniste. Käyttäjätunnus on pakollinen.  
-4. Kirjoita Käyttäjän nimi -kenttään arvo.
-    * Anna käyttäjän nimi.  
-5. Kirjoita Toimialue-kenttään arvo.
-    * Anna käyttäjän toimialue.  
-6. Kirjoita Alias-kenttään arvo.
-    * Anna käyttäjän alias.  
-7. Avaa haku napsauttamalla Yritys-kentässä avattavan valikon painiketta.
-8. Etsi haluamasi tietue luettelosta ja valitse se.
-9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-    * Valitse käyttäjän yritys  
-10. Valitse Määritä rooleja.
-11. Etsi haluamasi tietue luettelosta ja valitse se.
-12. Valitse OK.
-13. Valitse Tallenna.
+## <a name="add-a-new-user"></a><span data-ttu-id="4bf5a-107">Lisää uusi käyttäjä</span><span class="sxs-lookup"><span data-stu-id="4bf5a-107">Add a new user</span></span>
+1. <span data-ttu-id="4bf5a-108">Valitse Järjestelmänhallinta > Käyttäjät > Käyttäjät.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-108">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="4bf5a-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-109">Click New.</span></span>
+3. <span data-ttu-id="4bf5a-110">Kirjoita Käyttäjätunnus-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-110">In the User ID field, type a value.</span></span>
+    * <span data-ttu-id="4bf5a-111">Anna käyttäjän yksilöllinen tunniste.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-111">Enter a unique identifier for the user.</span></span> <span data-ttu-id="4bf5a-112">Käyttäjätunnus on pakollinen.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-112">A user ID is required.</span></span>  
+4. <span data-ttu-id="4bf5a-113">Kirjoita Käyttäjän nimi -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-113">In the User name field, type a value.</span></span>
+    * <span data-ttu-id="4bf5a-114">Anna käyttäjän nimi.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-114">Enter the user's name.</span></span>  
+5. <span data-ttu-id="4bf5a-115">Kirjoita Toimialue-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-115">In the Domain field, type a value.</span></span>
+    * <span data-ttu-id="4bf5a-116">Anna käyttäjän toimialue.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-116">Enter the user's domain.</span></span>  
+6. <span data-ttu-id="4bf5a-117">Kirjoita Alias-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-117">In the Alias field, type a value.</span></span>
+    * <span data-ttu-id="4bf5a-118">Anna käyttäjän alias.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-118">Enter the user's alias.</span></span>  
+7. <span data-ttu-id="4bf5a-119">Avaa haku napsauttamalla Yritys-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-119">In the Company field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="4bf5a-120">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-120">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="4bf5a-121">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-121">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="4bf5a-122">Valitse käyttäjän yritys</span><span class="sxs-lookup"><span data-stu-id="4bf5a-122">Select the user's company</span></span>  
+10. <span data-ttu-id="4bf5a-123">Valitse Määritä rooleja.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-123">Click Assign roles.</span></span>
+11. <span data-ttu-id="4bf5a-124">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-124">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="4bf5a-125">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-125">Click OK.</span></span>
+13. <span data-ttu-id="4bf5a-126">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-126">Click Save.</span></span>
 
-## <a name="import-users"></a>Tuo käyttäjiä
-1. Valitse Tuo käyttäjiä.
-2. Merkitse valittu rivi luettelossa.
-3. Valitse Tuo käyttäjiä.
-4. Valitse Sulje.
+## <a name="import-users"></a><span data-ttu-id="4bf5a-127">Tuo käyttäjiä</span><span class="sxs-lookup"><span data-stu-id="4bf5a-127">Import users</span></span>
+1. <span data-ttu-id="4bf5a-128">Valitse Tuo käyttäjiä.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-128">Click Import users.</span></span>
+2. <span data-ttu-id="4bf5a-129">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-129">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="4bf5a-130">Valitse Tuo käyttäjiä.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-130">Click Import users.</span></span>
+4. <span data-ttu-id="4bf5a-131">Valitse Sulje.</span><span class="sxs-lookup"><span data-stu-id="4bf5a-131">Click Close.</span></span>
 
 

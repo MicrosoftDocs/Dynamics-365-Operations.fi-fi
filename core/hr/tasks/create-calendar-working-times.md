@@ -16,36 +16,36 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: a42cf70b7197330c7b139ecdde77f36695a102cb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d65fe0363e418f9c2e78bd78e802a4b0ea98599c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-calendar-and-generate-working-times"></a>Kalenterin ja työaikojen luominen
+# <a name="create-a-calendar-and-generate-working-times"></a><span data-ttu-id="c4b63-103">Kalenterin ja työaikojen luominen</span><span class="sxs-lookup"><span data-stu-id="c4b63-103">Create a calendar and generate working times</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Kalenterit kuvaavat operatiivisten resurssien kapasiteetin ja työajat. Tämä menettely auttaa määrittämään työkalenterin työaikamallin perusteella. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.
+<span data-ttu-id="c4b63-104">Kalenterit kuvaavat operatiivisten resurssien kapasiteetin ja työajat.</span><span class="sxs-lookup"><span data-stu-id="c4b63-104">Calendars describe the capacity and working times of operations resources.</span></span> <span data-ttu-id="c4b63-105">Tämä menettely auttaa määrittämään työkalenterin työaikamallin perusteella.</span><span class="sxs-lookup"><span data-stu-id="c4b63-105">This procedure will help you define a work calendar based on a working time template.</span></span> <span data-ttu-id="c4b63-106">Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.</span><span class="sxs-lookup"><span data-stu-id="c4b63-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 
-1. Siirry kohtaan Kaikki työtilat > Resurssin elinkaaren hallinta.
-2. Valitse Kalenterit.
-3. Valitse Uusi.
-4. Kirjoita Kalenteri-kenttään arvo.
-    * Tämä on kalenterin tunnus, jota käytetään viitteenä, kun kalentereita määritetään esimerkiksi operatiiviseen resurssiin tai resurssiryhmään.  
-5. Kirjoita arvo Nimi-kenttään.
-6. Lisää Tavallisen työpäivän kesto tunteina -kenttään numero.
-7. Merkitse valittu rivi luettelossa.
-8. Valitse Työajat.
-9. Valitse Kokoa työajat.
-    * Luo työtunnit jokaiselle päivälle kautena, jolloin haluat ajoittaa töitä. Ajan mittaan voit luo työaikoja lisäkausille.  
-10. Syötä päivämäärä Päivämäärästä-kenttään.
-    * Tämä on ensimmäinen päivä, jolloin kalenterin on oltava avoinna.  
-11. Kirjoita päivämäärä Päivämäärään-kenttään.
-    * Tämä on viimeinen päivä, jolloin kalenteri on avoinna.  
-12. Anna tai valitse Työaikamalli-kentässä arvo.
-    * Työaikamalli määrittää työtunnit viikon jokaiselle päivälle.  
-13. Valitse OK.
-14. Sulje sivu.
+1. <span data-ttu-id="c4b63-107">Siirry kohtaan Kaikki työtilat > Resurssin elinkaaren hallinta.</span><span class="sxs-lookup"><span data-stu-id="c4b63-107">Go to All workspaces > Resource lifecycle management.</span></span>
+2. <span data-ttu-id="c4b63-108">Valitse Kalenterit.</span><span class="sxs-lookup"><span data-stu-id="c4b63-108">Click Calendars.</span></span>
+3. <span data-ttu-id="c4b63-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c4b63-109">Click New.</span></span>
+4. <span data-ttu-id="c4b63-110">Kirjoita Kalenteri-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="c4b63-110">In the Calendar field, type a value.</span></span>
+    * <span data-ttu-id="c4b63-111">Tämä on kalenterin tunnus, jota käytetään viitteenä, kun kalentereita määritetään esimerkiksi operatiiviseen resurssiin tai resurssiryhmään.</span><span class="sxs-lookup"><span data-stu-id="c4b63-111">This is the ID of the calendar, which is used as a reference when assigning calendars, such as to an operations resource or a resource group.</span></span>  
+5. <span data-ttu-id="c4b63-112">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c4b63-112">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="c4b63-113">Lisää Tavallisen työpäivän kesto tunteina -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="c4b63-113">In the Standard work day in hours field, enter a number.</span></span>
+7. <span data-ttu-id="c4b63-114">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="c4b63-114">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="c4b63-115">Valitse Työajat.</span><span class="sxs-lookup"><span data-stu-id="c4b63-115">Click Working times.</span></span>
+9. <span data-ttu-id="c4b63-116">Valitse Kokoa työajat.</span><span class="sxs-lookup"><span data-stu-id="c4b63-116">Click Compose working times.</span></span>
+    * <span data-ttu-id="c4b63-117">Luo työtunnit jokaiselle päivälle kautena, jolloin haluat ajoittaa töitä.</span><span class="sxs-lookup"><span data-stu-id="c4b63-117">Generate working hours for each day in the period where you want to be able to schedule work.</span></span> <span data-ttu-id="c4b63-118">Ajan mittaan voit luo työaikoja lisäkausille.</span><span class="sxs-lookup"><span data-stu-id="c4b63-118">As time goes by, you can generate working times for additional periods.</span></span>  
+10. <span data-ttu-id="c4b63-119">Syötä päivämäärä Päivämäärästä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c4b63-119">In the From date field, enter a date.</span></span>
+    * <span data-ttu-id="c4b63-120">Tämä on ensimmäinen päivä, jolloin kalenterin on oltava avoinna.</span><span class="sxs-lookup"><span data-stu-id="c4b63-120">This is the first day that this calendar must be open.</span></span>  
+11. <span data-ttu-id="c4b63-121">Kirjoita päivämäärä Päivämäärään-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c4b63-121">In the To date field, enter a date.</span></span>
+    * <span data-ttu-id="c4b63-122">Tämä on viimeinen päivä, jolloin kalenteri on avoinna.</span><span class="sxs-lookup"><span data-stu-id="c4b63-122">This is the last day that this calendar is open.</span></span>  
+12. <span data-ttu-id="c4b63-123">Anna tai valitse Työaikamalli-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="c4b63-123">In the Working time template field, enter or select a value.</span></span>
+    * <span data-ttu-id="c4b63-124">Työaikamalli määrittää työtunnit viikon jokaiselle päivälle.</span><span class="sxs-lookup"><span data-stu-id="c4b63-124">The working time template defines the working hours for each day of the week.</span></span>  
+13. <span data-ttu-id="c4b63-125">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="c4b63-125">Click OK.</span></span>
+14. <span data-ttu-id="c4b63-126">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="c4b63-126">Close the page.</span></span>
 
 

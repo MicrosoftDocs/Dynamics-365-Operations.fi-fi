@@ -19,32 +19,32 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: d6c04b8a6a4208e187786be158ceb3c84e1bb408
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 679bafc81e7c3bd328dd3be3d8cabe7969077f93
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="assess-sales-performance-by-product"></a>Myynnin suorituksen tuotekohtainen arviointi
+# <a name="assess-sales-performance-by-product"></a><span data-ttu-id="35596-103">Myynnin suorituksen tuotekohtainen arviointi</span><span class="sxs-lookup"><span data-stu-id="35596-103">Assess sales performance by product</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Retail -sovelluksella voit tutkia 10 parhaan tuotteen kannattavuutta. 
+<span data-ttu-id="35596-104">Microsoft Dynamics 365 for Retail -sovelluksella voit tutkia 10 parhaan tuotteen kannattavuutta.</span><span class="sxs-lookup"><span data-stu-id="35596-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span> 
 
-Osana Dynamics 365 for Retailia käyttäjät voivat tutkia parhaiden tuotteiden (10 - 100) tuottavuutta eri organisaatiohierarkian tasoilla perustuen yhteen seuraavista kriteereistä:
+<span data-ttu-id="35596-105">Osana Dynamics 365 for Retailia käyttäjät voivat tutkia parhaiden tuotteiden (10 - 100) tuottavuutta eri organisaatiohierarkian tasoilla perustuen yhteen seuraavista kriteereistä:</span><span class="sxs-lookup"><span data-stu-id="35596-105">As part of Dynamics 365 for Retail, users can also study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
 
--   Myyntisumma
--   Määrä
--   Bruttovoittokate
--   Marginaalin prosenttiosuus
+-   <span data-ttu-id="35596-106">Myyntisumma</span><span class="sxs-lookup"><span data-stu-id="35596-106">Sales amount</span></span>
+-   <span data-ttu-id="35596-107">Määrä</span><span class="sxs-lookup"><span data-stu-id="35596-107">Quantity</span></span>
+-   <span data-ttu-id="35596-108">Bruttovoittokate</span><span class="sxs-lookup"><span data-stu-id="35596-108">Gross profit margin</span></span>
+-   <span data-ttu-id="35596-109">Marginaalin prosenttiosuus</span><span class="sxs-lookup"><span data-stu-id="35596-109">Margin percentage</span></span>
 
-Voit käyttää tässä arvioinnissa valmista **Parhaat tuotteet**-raporttia, jonka voit avata mistä tahansa seuraavista sijainneista:
+<span data-ttu-id="35596-110">Voit käyttää tässä arvioinnissa valmista **Parhaat tuotteet**-raporttia, jonka voit avata mistä tahansa seuraavista sijainneista:</span><span class="sxs-lookup"><span data-stu-id="35596-110">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
 
--   **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Parhaat tuotteet -raportti**
--   **Luokka- ja tuotehallinta** -työtila &gt; **Vähittäismyynti** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Parhaat tuotteet -raportti**
--   **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Parhaat tuotteet -raportti**
+-   <span data-ttu-id="35596-111">**Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Parhaat tuotteet -raportti**</span><span class="sxs-lookup"><span data-stu-id="35596-111">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="35596-112">**Luokka- ja tuotehallinta** -työtila &gt; **Vähittäismyynti** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Parhaat tuotteet -raportti**</span><span class="sxs-lookup"><span data-stu-id="35596-112">**Category and product management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="35596-113">**Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Parhaat tuotteet -raportti**</span><span class="sxs-lookup"><span data-stu-id="35596-113">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
 
 
 

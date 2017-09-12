@@ -16,39 +16,39 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 73bfc08115a9727cbdcbe9b37e1427e67341dbd8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 791ec304b9ea7c49fbea506d73c4daffd4478739
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="process-rebates-for-payment"></a>Käsittele ostohyvityksiä maksua varten
+# <a name="process-rebates-for-payment"></a><span data-ttu-id="a8282-103">Käsittele ostohyvityksiä maksua varten</span><span class="sxs-lookup"><span data-stu-id="a8282-103">Process rebates for payment</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tämä menettely osoittaa, miten asiakkaiden hyväksytyt ja käsitellyt ostohyvitykset muunnetaan hyvityslaskuiksi. Voit käyttää tätä opastusta USMF-demoyrityksessä. Opastuksen edellytyksenä on, että käytössä on vähintään yhden ostohyvitysvaatimuksen tila on Merkitse. Jos käytössä on USMF, suorita asiakkaiden ostohyvitysten luonti- ja käsittelyopastus ennen tämän opastuksen aloittamista.
+<span data-ttu-id="a8282-104">Tämä menettely osoittaa, miten asiakkaiden hyväksytyt ja käsitellyt ostohyvitykset muunnetaan hyvityslaskuiksi.</span><span class="sxs-lookup"><span data-stu-id="a8282-104">This procedure demonstrates how to convert approved and processed customer rebates to credit notes.</span></span> <span data-ttu-id="a8282-105">Voit käyttää tätä opastusta USMF-demoyrityksessä.</span><span class="sxs-lookup"><span data-stu-id="a8282-105">You can use this guide in the USMF demo company.</span></span> <span data-ttu-id="a8282-106">Opastuksen edellytyksenä on, että käytössä on vähintään yhden ostohyvitysvaatimuksen tila on Merkitse.</span><span class="sxs-lookup"><span data-stu-id="a8282-106">The precondition for this guide is to have one or more rebate claims which have a status of Mark.</span></span> <span data-ttu-id="a8282-107">Jos käytössä on USMF, suorita asiakkaiden ostohyvitysten luonti- ja käsittelyopastus ennen tämän opastuksen aloittamista.</span><span class="sxs-lookup"><span data-stu-id="a8282-107">If you’re using USMF you should run the "Generate and process customer rebates" guide before you start this guide.</span></span>
 
 
-## <a name="convert-rebate-claims-to-credit-note"></a>Muunna ostohyvitysvaatimukset hyvityslaskuksi
-1. Valitse Kaikki asiakkaat.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-4. Valitse toimintoruudussa Perintä.
-5. Valitse Selvitä tapahtumat.
-6. Valitse Toiminnot.
-7. Valitse Ostohyvitysohjelma.
-    * Ostohyvitys-sivulla on luettelo ostohyvitysvaatimuksista, jotka olet käsitellyt asiakkaan ostohyvitystyötilassa ja joiden tila on Merkitse.    
-8. Valitse Muokkaa.
-    * Valitse hyvityslaskuun sisällytettävien vaatimusten Merkitse-valintaruudut.   
-9. Valitse Toiminnot.
-10. Valitse Luo hyvityslasku.
-    * Avautuva sanoma ilmoittaa, että kirjauskansio on kirjattu. (Tämä on Myyntireskontran parametrit -sivulla määritetty myyntireskontran kulutuksen kirjauskansio.) Tämän vuoksi todellinen velkasumma (hyvitys) siirretään asiakkaan saldoon. Asiakastiliä hyvitetään ja ostohyvitysohjelman jaksotusta on veloitettu.  
-11. Sulje sivu.
-12. Valitse Peruuta.
-    * Sivu päivitetään näyttämään päivitykset.  
-13. Valitse toimintoruudussa Perintä.
-14. Valitse Selvitä tapahtumat.
-    * Huomaa, että negatiivisen summan tapahtuma, joka ilmaisee ostohyvityksen kokonaismäärän ilman laskutusviitteen määrää, on lisätty asiakkaan saldoon.   
-15. Valitse Peruuta.
+## <a name="convert-rebate-claims-to-credit-note"></a><span data-ttu-id="a8282-108">Muunna ostohyvitysvaatimukset hyvityslaskuksi</span><span class="sxs-lookup"><span data-stu-id="a8282-108">Convert rebate claims to credit note</span></span>
+1. <span data-ttu-id="a8282-109">Valitse Kaikki asiakkaat.</span><span class="sxs-lookup"><span data-stu-id="a8282-109">Go to All customers.</span></span>
+2. <span data-ttu-id="a8282-110">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a8282-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="a8282-111">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a8282-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="a8282-112">Valitse toimintoruudussa Perintä.</span><span class="sxs-lookup"><span data-stu-id="a8282-112">On the Action Pane, click Collect.</span></span>
+5. <span data-ttu-id="a8282-113">Valitse Selvitä tapahtumat.</span><span class="sxs-lookup"><span data-stu-id="a8282-113">Click Settle transactions.</span></span>
+6. <span data-ttu-id="a8282-114">Valitse Toiminnot.</span><span class="sxs-lookup"><span data-stu-id="a8282-114">Click Functions.</span></span>
+7. <span data-ttu-id="a8282-115">Valitse Ostohyvitysohjelma.</span><span class="sxs-lookup"><span data-stu-id="a8282-115">Click Rebate program.</span></span>
+    * <span data-ttu-id="a8282-116">Ostohyvitys-sivulla on luettelo ostohyvitysvaatimuksista, jotka olet käsitellyt asiakkaan ostohyvitystyötilassa ja joiden tila on Merkitse.</span><span class="sxs-lookup"><span data-stu-id="a8282-116">The Rebate page lists the rebate claims that you have processed in the customer rebate workbench and that are in status Mark.</span></span>    
+8. <span data-ttu-id="a8282-117">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="a8282-117">Click Edit.</span></span>
+    * <span data-ttu-id="a8282-118">Valitse hyvityslaskuun sisällytettävien vaatimusten Merkitse-valintaruudut.</span><span class="sxs-lookup"><span data-stu-id="a8282-118">Set checkmarks in the Mark field for the claims that you want to include into credit note.</span></span>   
+9. <span data-ttu-id="a8282-119">Valitse Toiminnot.</span><span class="sxs-lookup"><span data-stu-id="a8282-119">Click Functions.</span></span>
+10. <span data-ttu-id="a8282-120">Valitse Luo hyvityslasku.</span><span class="sxs-lookup"><span data-stu-id="a8282-120">Click Create credit note.</span></span>
+    * <span data-ttu-id="a8282-121">Avautuva sanoma ilmoittaa, että kirjauskansio on kirjattu. (Tämä on Myyntireskontran parametrit -sivulla määritetty myyntireskontran kulutuksen kirjauskansio.)</span><span class="sxs-lookup"><span data-stu-id="a8282-121">A message appears to inform you that a journal has been posted (This is the Accounts receivable consumption journal, as specified in the Accounts receivable parameters page).</span></span> <span data-ttu-id="a8282-122">Tämän vuoksi todellinen velkasumma (hyvitys) siirretään asiakkaan saldoon.</span><span class="sxs-lookup"><span data-stu-id="a8282-122">This causes the real liability (credit) amount to be moved to the customer balance.</span></span> <span data-ttu-id="a8282-123">Asiakastiliä hyvitetään ja ostohyvitysohjelman jaksotusta on veloitettu.</span><span class="sxs-lookup"><span data-stu-id="a8282-123">This means that the customer’s account has been credited, and the Rebate accrual account has been debited.</span></span>  
+11. <span data-ttu-id="a8282-124">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="a8282-124">Close the page.</span></span>
+12. <span data-ttu-id="a8282-125">Valitse Peruuta.</span><span class="sxs-lookup"><span data-stu-id="a8282-125">Click Cancel.</span></span>
+    * <span data-ttu-id="a8282-126">Sivu päivitetään näyttämään päivitykset.</span><span class="sxs-lookup"><span data-stu-id="a8282-126">This refreshes the page so that you can see the updates.</span></span>  
+13. <span data-ttu-id="a8282-127">Valitse toimintoruudussa Perintä.</span><span class="sxs-lookup"><span data-stu-id="a8282-127">On the Action Pane, click Collect.</span></span>
+14. <span data-ttu-id="a8282-128">Valitse Selvitä tapahtumat.</span><span class="sxs-lookup"><span data-stu-id="a8282-128">Click Settle transactions.</span></span>
+    * <span data-ttu-id="a8282-129">Huomaa, että negatiivisen summan tapahtuma, joka ilmaisee ostohyvityksen kokonaismäärän ilman laskutusviitteen määrää, on lisätty asiakkaan saldoon.</span><span class="sxs-lookup"><span data-stu-id="a8282-129">Note that a transaction for negative amount, representing the total rebate amount, without invoice reference has been added to the customer balance.</span></span>   
+15. <span data-ttu-id="a8282-130">Valitse Peruuta.</span><span class="sxs-lookup"><span data-stu-id="a8282-130">Click Cancel.</span></span>
 
 

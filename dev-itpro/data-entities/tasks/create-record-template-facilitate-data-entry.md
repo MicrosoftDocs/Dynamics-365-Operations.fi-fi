@@ -16,37 +16,37 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: e8f56b1e5ab0431eee95bbe4f6f11d22b56e77e8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6f8d804133f8e9c6f47420d41df8d9430381e2fe
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-record-template-to-facilitate-data-entry"></a>Tietuemallin luonti helpottamaan tietojen kirjaamista
+# <a name="create-a-record-template-to-facilitate-data-entry"></a><span data-ttu-id="022cd-103">Tietuemallin luonti helpottamaan tietojen kirjaamista</span><span class="sxs-lookup"><span data-stu-id="022cd-103">Create a record template to facilitate data entry</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tämä menettely näyttää, miten voit luoda tietuemallin, jolloin usein käytettyjen kenttien arvoja ei tarvitse lisätä erikseen kussakin uudessa tietueessa. Tässä menettelyssä luodaan uusi tietue uusille käyttöomaisuuteen lisättäville kannettaville. Tässä menettelyssä käytetään USMF-malliyritystä.
+<span data-ttu-id="022cd-104">Tämä menettely näyttää, miten voit luoda tietuemallin, jolloin usein käytettyjen kenttien arvoja ei tarvitse lisätä erikseen kussakin uudessa tietueessa.</span><span class="sxs-lookup"><span data-stu-id="022cd-104">This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record.</span></span> <span data-ttu-id="022cd-105">Tässä menettelyssä luodaan uusi tietue uusille käyttöomaisuuteen lisättäville kannettaville.</span><span class="sxs-lookup"><span data-stu-id="022cd-105">In this procedure, you’ll create a new record for new laptops that should be added to your fixed assets.</span></span> <span data-ttu-id="022cd-106">Tässä menettelyssä käytetään USMF-malliyritystä.</span><span class="sxs-lookup"><span data-stu-id="022cd-106">This procedure uses the USMF sample company.</span></span>
 
-1. Siirry kohtaan Käyttöomaisuudet > Käyttöomaisuudet > Käyttöomaisuudet.
-2. Valitse Uusi.
-3. Syötä tai valitse arvo Käyttöomaisuusryhmä-kentässä.
-4. Kirjoita arvo Nimi-kenttään.
-    * Kirjoita esimerkiksi Yritysliidi, kannettava.  
-5. Kirjoita arvo Hakunimi-kenttään.
-    * Kirjoita esimerkiksi "kannettava".  
-6. Laajenna Teknistä tietoa -osa.
-7. Kirjoita arvo Valmistaja-kenttään.
-8. Kirjoita Malli-kenttään arvo.
-9. Kirjoita Mallin vuosi -kenttään arvo.
-10. Valitse toimintoruudussa Asetukset.
-11. Valitse Tietueen tiedot.
-12. Valitse Käyttäjämalli.
-13. Kirjoita arvo Nimi-kenttään.
-    * Kirjoita esimerkiksi Yrityskannettava.  
-14. Kirjoita arvo Kuvaus-kenttään.
-    * Kirjoita esimerkiksi Yrityskannettava.  
-15. Valitse OK.
-16. Valitse Sulje.
+1. <span data-ttu-id="022cd-107">Siirry kohtaan Käyttöomaisuudet > Käyttöomaisuudet > Käyttöomaisuudet.</span><span class="sxs-lookup"><span data-stu-id="022cd-107">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="022cd-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="022cd-108">Click New.</span></span>
+3. <span data-ttu-id="022cd-109">Syötä tai valitse arvo Käyttöomaisuusryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="022cd-109">In the Fixed asset group field, enter or select a value.</span></span>
+4. <span data-ttu-id="022cd-110">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="022cd-110">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="022cd-111">Kirjoita esimerkiksi Yritysliidi, kannettava.</span><span class="sxs-lookup"><span data-stu-id="022cd-111">For example, enter 'Corporate lead laptop'.</span></span>  
+5. <span data-ttu-id="022cd-112">Kirjoita arvo Hakunimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="022cd-112">In the Search name field, type a value.</span></span>
+    * <span data-ttu-id="022cd-113">Kirjoita esimerkiksi "kannettava".</span><span class="sxs-lookup"><span data-stu-id="022cd-113">For example, enter 'laptop.'</span></span>  
+6. <span data-ttu-id="022cd-114">Laajenna Teknistä tietoa -osa.</span><span class="sxs-lookup"><span data-stu-id="022cd-114">Expand the Technical information section.</span></span>
+7. <span data-ttu-id="022cd-115">Kirjoita arvo Valmistaja-kenttään.</span><span class="sxs-lookup"><span data-stu-id="022cd-115">In the Make field, type a value.</span></span>
+8. <span data-ttu-id="022cd-116">Kirjoita Malli-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="022cd-116">In the Model field, type a value.</span></span>
+9. <span data-ttu-id="022cd-117">Kirjoita Mallin vuosi -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="022cd-117">In the Model year field, type a value.</span></span>
+10. <span data-ttu-id="022cd-118">Valitse toimintoruudussa Asetukset.</span><span class="sxs-lookup"><span data-stu-id="022cd-118">On the Action Pane, click Options.</span></span>
+11. <span data-ttu-id="022cd-119">Valitse Tietueen tiedot.</span><span class="sxs-lookup"><span data-stu-id="022cd-119">Click Record info.</span></span>
+12. <span data-ttu-id="022cd-120">Valitse Käyttäjämalli.</span><span class="sxs-lookup"><span data-stu-id="022cd-120">Click User template.</span></span>
+13. <span data-ttu-id="022cd-121">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="022cd-121">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="022cd-122">Kirjoita esimerkiksi Yrityskannettava.</span><span class="sxs-lookup"><span data-stu-id="022cd-122">For example, enter 'Corporate laptop.'</span></span>  
+14. <span data-ttu-id="022cd-123">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="022cd-123">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="022cd-124">Kirjoita esimerkiksi Yrityskannettava.</span><span class="sxs-lookup"><span data-stu-id="022cd-124">For example, enter 'Corporate laptop'.</span></span>  
+15. <span data-ttu-id="022cd-125">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="022cd-125">Click OK.</span></span>
+16. <span data-ttu-id="022cd-126">Valitse Sulje.</span><span class="sxs-lookup"><span data-stu-id="022cd-126">Click Close.</span></span>
 
 

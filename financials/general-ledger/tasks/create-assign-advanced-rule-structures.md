@@ -16,56 +16,56 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7c38debf005cf14176a5184c489242e914c1ff4c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ebad4ec9ec6242978a26007a64416ae1b2af5c28
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-assign-advanced-rule-structures"></a>Luo ja määritä lisäsääntörakenteet
+# <a name="create-and-assign-advanced-rule-structures"></a><span data-ttu-id="b7a6a-103">Luo ja määritä lisäsääntörakenteet</span><span class="sxs-lookup"><span data-stu-id="b7a6a-103">Create and assign advanced rule structures</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä tehtäväopastuksessa käsitellään lisäsääntörakenteen luomista ja sen määrittämistä tilirakenteeseen. Opastuksessa käytetään USMF-demoyritystä.
+<span data-ttu-id="b7a6a-104">Tässä tehtäväopastuksessa käsitellään lisäsääntörakenteen luomista ja sen määrittämistä tilirakenteeseen.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-104">This task guide steps through creating and assigning an advanced rule structure to an account structure.</span></span> <span data-ttu-id="b7a6a-105">Opastuksessa käytetään USMF-demoyritystä.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-105">This guide uses the USMF demo company.</span></span>
 
 
-## <a name="create-an-advanced-rule-structure"></a>Luo kehittynyt sääntörakenne
-1. Valitse Kirjanpito > Tilikartta > Rakenteet > Lisäsääntörakenteet.
-2. Avaa valintaikkuna valitsemalla Uusi.
-3. Kirjoita Lisäsääntörakenteet-kenttää sääntörakennetta kuvaava nimi.
-4. Kirjoita Kuvaus-kenttään rakennetta kuvaava arvo.
-5. Valitse OK.
-6. Valitse Lisää segmentti.
-7. Valitse taloushallinnon dimensio segmenttiluettelosta.
-    * Esimerkki: myymälä.  
-8. Valitse Lisää segmentti.
-9. Avaa lisäsääntörakenne napsauttamalla luettelossa sen linkkiä.
-10. Valitse Aktivoi.
-11. Valitse Aktivoi.
+## <a name="create-an-advanced-rule-structure"></a><span data-ttu-id="b7a6a-106">Luo kehittynyt sääntörakenne</span><span class="sxs-lookup"><span data-stu-id="b7a6a-106">Create an advanced rule structure</span></span>
+1. <span data-ttu-id="b7a6a-107">Valitse Kirjanpito > Tilikartta > Rakenteet > Lisäsääntörakenteet.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-107">Go to General ledger > Chart of accounts > Structures > Advanced rule structures.</span></span>
+2. <span data-ttu-id="b7a6a-108">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-108">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="b7a6a-109">Kirjoita Lisäsääntörakenteet-kenttää sääntörakennetta kuvaava nimi.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-109">In the Advanced rule structure field, type a name to descritbe the rule structure.</span></span>
+4. <span data-ttu-id="b7a6a-110">Kirjoita Kuvaus-kenttään rakennetta kuvaava arvo.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-110">In the Description field, type a value to describe the structure.</span></span>
+5. <span data-ttu-id="b7a6a-111">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-111">Click OK.</span></span>
+6. <span data-ttu-id="b7a6a-112">Valitse Lisää segmentti.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-112">Click Add segment.</span></span>
+7. <span data-ttu-id="b7a6a-113">Valitse taloushallinnon dimensio segmenttiluettelosta.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-113">In the list of segments, select a financial dimension.</span></span>
+    * <span data-ttu-id="b7a6a-114">Esimerkki: myymälä.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-114">For example, Store.</span></span>  
+8. <span data-ttu-id="b7a6a-115">Valitse Lisää segmentti.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-115">Click Add segment.</span></span>
+9. <span data-ttu-id="b7a6a-116">Avaa lisäsääntörakenne napsauttamalla luettelossa sen linkkiä.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-116">In the list, click the link of the advanced rule structure to view it.</span></span>
+10. <span data-ttu-id="b7a6a-117">Valitse Aktivoi.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-117">Click Activate.</span></span>
+11. <span data-ttu-id="b7a6a-118">Valitse Aktivoi.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-118">Click Activate.</span></span>
 
-## <a name="apply-an-advanced-rule-structure-to-an-account-structure"></a>Käytä lisäsääntörakennetta tilirakenteeseen
-1. Sulje lomake.
-2. Sulje sivu.
-3. Valitse Kirjanpito > Tilikartta > Rakenteet > Määritä tilirakenteet.
-4. Etsi ja valitse luettelossa tilirakenne, johon haluat käyttää lisäsääntöä.
-5. Avaa tilirakenne napsauttamalla sen nimeä.
-6. Valitse Muokkaa.
-    * Voit myös valita Lisäsäännöt, jolloin sinua pyydetään asettamalla tilirakenne luonnostilaan.  
-7. Valitse Lisäsäännöt.
-8. Avaa valintaikkuna valitsemalla Uusi.
-9. Kirjoita arvo Lisäsääntö-kenttään.
-10. Kirjoita arvo Nimi-kenttään.
-11. Valitse Luo.
-12. Valitse Lisää uusia kriteerejä.
-13. Valitse Missä-kentässä päätili tai taloushallinnon dimensio.
-14. Valitse Käyttäjä-kentässä vaihtoehto, kuten on välillä ja sisältää.
-15. Kirjoita arvo Arvo-kenttään.
-16. Kirjoita kautta-kenttään arvo.
-17. Avaa valintaikkuna valitsemalla Lisää.
-18. Etsi luettelosta lisäsääntörakenne, jota haluat käyttää, kun antamasi ehdot täyttyvät.
-19. ValitseLisää.
-20. Sulje sivu.
-21. Valitse Aktivoi.
-22. Valitse Aktivoi.
+## <a name="apply-an-advanced-rule-structure-to-an-account-structure"></a><span data-ttu-id="b7a6a-119">Käytä lisäsääntörakennetta tilirakenteeseen</span><span class="sxs-lookup"><span data-stu-id="b7a6a-119">Apply an advanced rule structure to an account structure</span></span>
+1. <span data-ttu-id="b7a6a-120">Sulje lomake.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-120">Close the form.</span></span>
+2. <span data-ttu-id="b7a6a-121">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-121">Close the page.</span></span>
+3. <span data-ttu-id="b7a6a-122">Valitse Kirjanpito > Tilikartta > Rakenteet > Määritä tilirakenteet.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-122">Go to General ledger > Chart of accounts > Structures > Configure account structures.</span></span>
+4. <span data-ttu-id="b7a6a-123">Etsi ja valitse luettelossa tilirakenne, johon haluat käyttää lisäsääntöä.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-123">In the list, find and select the account structure you want to apply the advanced rule to.</span></span>
+5. <span data-ttu-id="b7a6a-124">Avaa tilirakenne napsauttamalla sen nimeä.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-124">Click the name of the account structure to open it.</span></span>
+6. <span data-ttu-id="b7a6a-125">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-125">Click Edit.</span></span>
+    * <span data-ttu-id="b7a6a-126">Voit myös valita Lisäsäännöt, jolloin sinua pyydetään asettamalla tilirakenne luonnostilaan.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-126">You can also click Advanced rules and you will be prompted to put the account structure in Draft mode.</span></span>  
+7. <span data-ttu-id="b7a6a-127">Valitse Lisäsäännöt.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-127">Click Advanced rules.</span></span>
+8. <span data-ttu-id="b7a6a-128">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-128">Click New to open the drop dialog.</span></span>
+9. <span data-ttu-id="b7a6a-129">Kirjoita arvo Lisäsääntö-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-129">In the Advanced rule field, type a value.</span></span>
+10. <span data-ttu-id="b7a6a-130">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-130">In the Name field, type a value.</span></span>
+11. <span data-ttu-id="b7a6a-131">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-131">Click Create.</span></span>
+12. <span data-ttu-id="b7a6a-132">Valitse Lisää uusia kriteerejä.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-132">Click Add new criteria.</span></span>
+13. <span data-ttu-id="b7a6a-133">Valitse Missä-kentässä päätili tai taloushallinnon dimensio.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-133">In the Where field, select main account or a financial dimension.</span></span>
+14. <span data-ttu-id="b7a6a-134">Valitse Käyttäjä-kentässä vaihtoehto, kuten on välillä ja sisältää.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-134">In the Operator field, select an option, such as is between and includes.</span></span>
+15. <span data-ttu-id="b7a6a-135">Kirjoita arvo Arvo-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-135">In the Value field, type a value.</span></span>
+16. <span data-ttu-id="b7a6a-136">Kirjoita kautta-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-136">In the through field, type a value.</span></span>
+17. <span data-ttu-id="b7a6a-137">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-137">Click Add to open the drop dialog.</span></span>
+18. <span data-ttu-id="b7a6a-138">Etsi luettelosta lisäsääntörakenne, jota haluat käyttää, kun antamasi ehdot täyttyvät.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-138">In the list, find the advanced rule structure you want to use when the criteria you entered is met.</span></span>
+19. <span data-ttu-id="b7a6a-139">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-139">Click Add.</span></span>
+20. <span data-ttu-id="b7a6a-140">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-140">Close the page.</span></span>
+21. <span data-ttu-id="b7a6a-141">Valitse Aktivoi.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-141">Click Activate.</span></span>
+22. <span data-ttu-id="b7a6a-142">Valitse Aktivoi.</span><span class="sxs-lookup"><span data-stu-id="b7a6a-142">Click Activate.</span></span>
 
 

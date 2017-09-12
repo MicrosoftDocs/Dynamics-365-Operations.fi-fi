@@ -26,92 +26,92 @@ ms.lasthandoff: 08/10/2017
 
 ---
 
-# <a name="project-time-entry-mobile-workspace"></a>Projektin aikamerkintöjen mobiilityötila
+# <a name="project-time-entry-mobile-workspace"></a><span data-ttu-id="bd86c-104">Projektin aikamerkintöjen mobiilityötila</span><span class="sxs-lookup"><span data-stu-id="bd86c-104">Project time entry mobile workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja **projektin aikamerkintöjen** mobiilityötilasta. Työtilan avulla käyttäjät voivat syöttää ja tallentaa projektin aikakirjauksia mobiililaittella.
+<span data-ttu-id="bd86c-105">Tässä ohjeaiheessa on tietoja **projektin aikamerkintöjen** mobiilityötilasta.</span><span class="sxs-lookup"><span data-stu-id="bd86c-105">This topic provides information about the **Project time entry** mobile workspace.</span></span> <span data-ttu-id="bd86c-106">Työtilan avulla käyttäjät voivat syöttää ja tallentaa projektin aikakirjauksia mobiililaittella.</span><span class="sxs-lookup"><span data-stu-id="bd86c-106">This workspace lets users enter and save time against a project by using their mobile device.</span></span>
 
-Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella. 
+<span data-ttu-id="bd86c-107">Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.</span><span class="sxs-lookup"><span data-stu-id="bd86c-107">This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span> 
 
-## <a name="overview"></a>Yleiskuvaus
-Projektiresurssit ovat kohteessa tai liikkeellä osana päivittäistä työtään. **Projektin aikamerkinnät** -mobiilityötilan avulla käyttäjät voivat syöttää laskutettavan tai ei-laskutettavan aikansa projektiin valitsemallaan mobiililaitteella. Tämän ansiosta projektiresurssit voivat tehdä aikakirjauksia missä ja milloin tahansa. He voivat myös tarkastella aiemmin kirjattuja merkintöjä. 
+## <a name="overview"></a><span data-ttu-id="bd86c-108">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="bd86c-108">Overview</span></span>
+<span data-ttu-id="bd86c-109">Projektiresurssit ovat kohteessa tai liikkeellä osana päivittäistä työtään.</span><span class="sxs-lookup"><span data-stu-id="bd86c-109">As part of their daily work, project resources are often on-site or traveling.</span></span> <span data-ttu-id="bd86c-110">**Projektin aikamerkinnät** -mobiilityötilan avulla käyttäjät voivat syöttää laskutettavan tai ei-laskutettavan aikansa projektiin valitsemallaan mobiililaitteella.</span><span class="sxs-lookup"><span data-stu-id="bd86c-110">The **Project time entry** mobile workspace lets users enter their billable or non-billable time against a project on the mobile device of their choice.</span></span> <span data-ttu-id="bd86c-111">Tämän ansiosta projektiresurssit voivat tehdä aikakirjauksia missä ja milloin tahansa.</span><span class="sxs-lookup"><span data-stu-id="bd86c-111">Therefore, project resources can record time entries anytime and anywhere.</span></span> <span data-ttu-id="bd86c-112">He voivat myös tarkastella aiemmin kirjattuja merkintöjä.</span><span class="sxs-lookup"><span data-stu-id="bd86c-112">They can also view time entries that have already been recorded.</span></span> 
 
-Käyttäjät voivat suorittaa seuraavat tehtävät **projektin aikamerkintöjen** mobiilityötilassa:
+<span data-ttu-id="bd86c-113">Käyttäjät voivat suorittaa seuraavat tehtävät **projektin aikamerkintöjen** mobiilityötilassa:</span><span class="sxs-lookup"><span data-stu-id="bd86c-113">Specifically, in the **Project time entry** mobile workspace, users can perform these tasks:</span></span>
 
--   Anna valitulle päivämäärällä tuntien määrä, jonka olet käyttänyt tietyn tehtävän suorittamiseen.
--   Hae projekti, jolle haluat kirjata tunteja projektin tai asiakkaan nimellä .
--   Määritä käyttämällesi ajalle luokka ja tehtävä.
--   Kirjaa aika projektiin laskutettavaksi tai ei-laskutettavaksi.
--   Voit myös kirjoittaa ulkoisia tai sisäisiä kommentteja.
+-   <span data-ttu-id="bd86c-114">Anna valitulle päivämäärällä tuntien määrä, jonka olet käyttänyt tietyn tehtävän suorittamiseen.</span><span class="sxs-lookup"><span data-stu-id="bd86c-114">For any selected date, enter the number of hours that you spent on a specific task.</span></span>
+-   <span data-ttu-id="bd86c-115">Hae projekti, jolle haluat kirjata tunteja projektin tai asiakkaan nimellä .</span><span class="sxs-lookup"><span data-stu-id="bd86c-115">Search by project name or customer to find the project to enter time for.</span></span>
+-   <span data-ttu-id="bd86c-116">Määritä käyttämällesi ajalle luokka ja tehtävä.</span><span class="sxs-lookup"><span data-stu-id="bd86c-116">Specify the category and activity for the time that you spent.</span></span>
+-   <span data-ttu-id="bd86c-117">Kirjaa aika projektiin laskutettavaksi tai ei-laskutettavaksi.</span><span class="sxs-lookup"><span data-stu-id="bd86c-117">Record the time as billable or non-billable for the project.</span></span>
+-   <span data-ttu-id="bd86c-118">Voit myös kirjoittaa ulkoisia tai sisäisiä kommentteja.</span><span class="sxs-lookup"><span data-stu-id="bd86c-118">Optionally enter any external or internal comments.</span></span>
 
-## <a name="prerequisites"></a>Edellytykset
-Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
+## <a name="prerequisites"></a><span data-ttu-id="bd86c-119">Edellytykset</span><span class="sxs-lookup"><span data-stu-id="bd86c-119">Prerequisites</span></span>
+<span data-ttu-id="bd86c-120">Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.</span><span class="sxs-lookup"><span data-stu-id="bd86c-120">The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys 
-Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **projektin aikamerkintöjen** mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a><span data-ttu-id="bd86c-121">Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys</span><span class="sxs-lookup"><span data-stu-id="bd86c-121">Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</span></span> 
+<span data-ttu-id="bd86c-122">Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **projektin aikamerkintöjen** mobiilityötila.</span><span class="sxs-lookup"><span data-stu-id="bd86c-122">If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Project time entry** mobile workspace.</span></span> <span data-ttu-id="bd86c-123">Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).</span><span class="sxs-lookup"><span data-stu-id="bd86c-123">For instructions, see [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.
-Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations -versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a><span data-ttu-id="bd86c-124">Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.</span><span class="sxs-lookup"><span data-stu-id="bd86c-124">Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later</span></span>
+<span data-ttu-id="bd86c-125">Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations -versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset.</span><span class="sxs-lookup"><span data-stu-id="bd86c-125">If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites.</span></span> 
 
 <table>
 <thead>
 <tr class="header">
-<th>Edellytys</th>
-<th>Rooli</th>
-<th>kuvaus</th>
+<th><span data-ttu-id="bd86c-126">Edellytys</span><span class="sxs-lookup"><span data-stu-id="bd86c-126">Prerequisite</span></span></th>
+<th><span data-ttu-id="bd86c-127">Rooli</span><span class="sxs-lookup"><span data-stu-id="bd86c-127">Role</span></span></th>
+<th><span data-ttu-id="bd86c-128">kuvaus</span><span class="sxs-lookup"><span data-stu-id="bd86c-128">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 
-<td>KB 4018050 -käyttöönotto.</td>
-<td>Järjestelmänvalvoja</td>
-<td>KB 4018050 on X++-päivitys tai metatietojen korjaus, joka sisältää <strong>projektin aikakirjausten</strong> mobiilityötilan. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4018050 -päivityksen.
+<td><span data-ttu-id="bd86c-129">KB 4018050 -käyttöönotto.</span><span class="sxs-lookup"><span data-stu-id="bd86c-129">Implement KB 4018050.</span></span></td>
+<td><span data-ttu-id="bd86c-130">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="bd86c-130">System administrator</span></span></td>
+<td><span data-ttu-id="bd86c-131">KB 4018050 on X++-päivitys tai metatietojen korjaus, joka sisältää <strong>projektin aikakirjausten</strong> mobiilityötilan.</span><span class="sxs-lookup"><span data-stu-id="bd86c-131">KB 4018050 is an X++ update or metadata hotfix that contains the <strong>Project time entry</strong> mobile workspace.</span></span> <span data-ttu-id="bd86c-132">Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4018050 -päivityksen.</span><span class="sxs-lookup"><span data-stu-id="bd86c-132">To implement KB 4018050, your system administrator must follow these steps.</span></span>
 <ol>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Lataa metatietojen hotfix-korjaus Microsoft Dynamics Lifecycle Servicesistä (LCS)</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>ApplicationSuite</strong>- ja <strong>ProjectMobile</strong>-mallit ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Ota käyttöönotettava paketti käyttöön</a>.</li>
+<li><span data-ttu-id="bd86c-133"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Lataa metatietojen hotfix-korjaus Microsoft Dynamics Lifecycle Servicesistä (LCS)</a>.</span><span class="sxs-lookup"><span data-stu-id="bd86c-133"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</span></span></li>
+<li><span data-ttu-id="bd86c-134"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</span><span class="sxs-lookup"><span data-stu-id="bd86c-134"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</span></span></li>
+<li><span data-ttu-id="bd86c-135"><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>ApplicationSuite</strong>- ja <strong>ProjectMobile</strong>-mallit ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</span><span class="sxs-lookup"><span data-stu-id="bd86c-135"><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ProjectMobile</strong> models, and then upload the deployable package to LCS.</span></span></li>
+<li><span data-ttu-id="bd86c-136"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Ota käyttöönotettava paketti käyttöön</a>.</span><span class="sxs-lookup"><span data-stu-id="bd86c-136"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</span></span></li>
 
 </ol></td>
 </tr>
 <tr class="even">
-<td>Julkaise <strong>projektin aikamerkintöjen</strong> mobiilityötila.</td>
-<td>Järjestelmänvalvoja</td>
-<td>Lisätietoja on ohjeaiheessa <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobiilityötilan julkaiseminen</a>.</td>
+<td><span data-ttu-id="bd86c-137">Julkaise <strong>projektin aikamerkintöjen</strong> mobiilityötila.</span><span class="sxs-lookup"><span data-stu-id="bd86c-137">Publish the <strong>Project time entry</strong> mobile workspace.</span></span></td>
+<td><span data-ttu-id="bd86c-138">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="bd86c-138">System administrator</span></span></td>
+<td><span data-ttu-id="bd86c-139">Lisätietoja on ohjeaiheessa <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobiilityötilan julkaiseminen</a>.</span><span class="sxs-lookup"><span data-stu-id="bd86c-139">See <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
+## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="bd86c-140">Mobiilisovelluksen lataaminen ja asentaminen</span><span class="sxs-lookup"><span data-stu-id="bd86c-140">Download and install the mobile app</span></span>
 
-Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
+<span data-ttu-id="bd86c-141">Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:</span><span class="sxs-lookup"><span data-stu-id="bd86c-141">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
 
--   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
--   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
+-   [<span data-ttu-id="bd86c-142">Android-puhelimet</span><span class="sxs-lookup"><span data-stu-id="bd86c-142">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [<span data-ttu-id="bd86c-143">IPhone-puhelimet</span><span class="sxs-lookup"><span data-stu-id="bd86c-143">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
-1.  Käynnistä sovellus mobiililaitteessa.
-2.  Anna Dynamics 365 -URL-osoitteesi.
-3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
-4.  Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="bd86c-144">Kirjautuminen mobiilisovellukseen</span><span class="sxs-lookup"><span data-stu-id="bd86c-144">Sign in to the mobile app</span></span>
+1.  <span data-ttu-id="bd86c-145">Käynnistä sovellus mobiililaitteessa.</span><span class="sxs-lookup"><span data-stu-id="bd86c-145">Start the app on your mobile device.</span></span>
+2.  <span data-ttu-id="bd86c-146">Anna Dynamics 365 -URL-osoitteesi.</span><span class="sxs-lookup"><span data-stu-id="bd86c-146">Enter your Dynamics 365 URL.</span></span>
+3.  <span data-ttu-id="bd86c-147">Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran.</span><span class="sxs-lookup"><span data-stu-id="bd86c-147">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="bd86c-148">Kirjota tunnistetiedot.</span><span class="sxs-lookup"><span data-stu-id="bd86c-148">Enter your credentials.</span></span>
+4.  <span data-ttu-id="bd86c-149">Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä.</span><span class="sxs-lookup"><span data-stu-id="bd86c-149">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="bd86c-150">Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.</span><span class="sxs-lookup"><span data-stu-id="bd86c-150">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
 
-[![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+<span data-ttu-id="bd86c-151">[![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="bd86c-151">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
 
-## <a name="enter-time-by-using-the-project-time-entry-mobile-workspace"></a>Aikakirjausten syöttäminen Projektin aikakirjausten mobiilityötilassa
-1.  Valitse mobiililaitteessasi **Projektin aikakirjausten** työtila.
-2.  Valitse **Aikamerkintä**. Kuluvan viikon kalenteripäivät näytetään.
-3.  Napsauta valitun päivän kohdalla **Toiminnot** &gt; **Uusi kirjaus**.
-4.  Anna kirjattava tuntien määrä.
-5.  Valitse aikakirjauksen kohdeprojekti. Luettelo koostuu projekteista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
-6.  Jos projekti ei ole luettelossa, valitse **Hae**. Voit hakea nimen, projektin nimen tai asiakkaan perusteella.
-7.  Valitse luokka. Luettelo koostuu luokista, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
-8.  Jos luokka ei ole luettelossa, valitse **Hae**. Etsi luokan tai luokan nimen mukaan.
-9.  Valitse tehtävä. Luettelo koostuu tehtävistä, jotka on ladattu sovellukseen offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
-10. Jos tehtävä ei ole luettelossa, valitse **Hae**. Etsi tehtävän numeron tai tarkoituksen mukaan.
+## <a name="enter-time-by-using-the-project-time-entry-mobile-workspace"></a><span data-ttu-id="bd86c-152">Aikakirjausten syöttäminen Projektin aikakirjausten mobiilityötilassa</span><span class="sxs-lookup"><span data-stu-id="bd86c-152">Enter time by using the Project time entry mobile workspace</span></span>
+1.  <span data-ttu-id="bd86c-153">Valitse mobiililaitteessasi **Projektin aikakirjausten** työtila.</span><span class="sxs-lookup"><span data-stu-id="bd86c-153">On your mobile device, select the **Project time entry** workspace.</span></span>
+2.  <span data-ttu-id="bd86c-154">Valitse **Aikamerkintä**.</span><span class="sxs-lookup"><span data-stu-id="bd86c-154">Select **Time entry**.</span></span> <span data-ttu-id="bd86c-155">Kuluvan viikon kalenteripäivät näytetään.</span><span class="sxs-lookup"><span data-stu-id="bd86c-155">The calendar dates for the current week are shown.</span></span>
+3.  <span data-ttu-id="bd86c-156">Napsauta valitun päivän kohdalla **Toiminnot** &gt; **Uusi kirjaus**.</span><span class="sxs-lookup"><span data-stu-id="bd86c-156">For a selected date, select **Actions** &gt; **New entry**.</span></span>
+4.  <span data-ttu-id="bd86c-157">Anna kirjattava tuntien määrä.</span><span class="sxs-lookup"><span data-stu-id="bd86c-157">Enter the number of hours to record.</span></span>
+5.  <span data-ttu-id="bd86c-158">Valitse aikakirjauksen kohdeprojekti.</span><span class="sxs-lookup"><span data-stu-id="bd86c-158">Select the project for the time entry.</span></span> <span data-ttu-id="bd86c-159">Luettelo koostuu projekteista, jotka on ladattu sovellukseen offline-käyttöä varten.</span><span class="sxs-lookup"><span data-stu-id="bd86c-159">A list shows the projects that are loaded into your app for offline use.</span></span> <span data-ttu-id="bd86c-160">Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää.</span><span class="sxs-lookup"><span data-stu-id="bd86c-160">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="bd86c-161">Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="bd86c-161">For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span>
+6.  <span data-ttu-id="bd86c-162">Jos projekti ei ole luettelossa, valitse **Hae**.</span><span class="sxs-lookup"><span data-stu-id="bd86c-162">If your project isn't in the list, select **Search**.</span></span> <span data-ttu-id="bd86c-163">Voit hakea nimen, projektin nimen tai asiakkaan perusteella.</span><span class="sxs-lookup"><span data-stu-id="bd86c-163">Search by name, or switch to search by project name or customer.</span></span>
+7.  <span data-ttu-id="bd86c-164">Valitse luokka.</span><span class="sxs-lookup"><span data-stu-id="bd86c-164">Select a category.</span></span> <span data-ttu-id="bd86c-165">Luettelo koostuu luokista, jotka on ladattu sovellukseen offline-käyttöä varten.</span><span class="sxs-lookup"><span data-stu-id="bd86c-165">A list shows the categories that are loaded into your app for offline use.</span></span> <span data-ttu-id="bd86c-166">Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää.</span><span class="sxs-lookup"><span data-stu-id="bd86c-166">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="bd86c-167">Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="bd86c-167">For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span>
+8.  <span data-ttu-id="bd86c-168">Jos luokka ei ole luettelossa, valitse **Hae**.</span><span class="sxs-lookup"><span data-stu-id="bd86c-168">If your category isn't in the list, select **Search**.</span></span> <span data-ttu-id="bd86c-169">Etsi luokan tai luokan nimen mukaan.</span><span class="sxs-lookup"><span data-stu-id="bd86c-169">Search by category, or switch to search by category name.</span></span>
+9.  <span data-ttu-id="bd86c-170">Valitse tehtävä.</span><span class="sxs-lookup"><span data-stu-id="bd86c-170">Select an activity.</span></span> <span data-ttu-id="bd86c-171">Luettelo koostuu tehtävistä, jotka on ladattu sovellukseen offline-käyttöä varten.</span><span class="sxs-lookup"><span data-stu-id="bd86c-171">A list shows the activities that are loaded into your app for offline use.</span></span> <span data-ttu-id="bd86c-172">Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää.</span><span class="sxs-lookup"><span data-stu-id="bd86c-172">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="bd86c-173">Lisätietoja on ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="bd86c-173">For more information, see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span>
+10. <span data-ttu-id="bd86c-174">Jos tehtävä ei ole luettelossa, valitse **Hae**.</span><span class="sxs-lookup"><span data-stu-id="bd86c-174">If your activity isn't in the list, select **Search**.</span></span> <span data-ttu-id="bd86c-175">Etsi tehtävän numeron tai tarkoituksen mukaan.</span><span class="sxs-lookup"><span data-stu-id="bd86c-175">Search by activity number, or switch to search by purpose.</span></span>
 
-11. Valitse rivin ominaisuus.
-12. Voit myös kirjoittaa ulkoisia tai sisäisiä kommentteja.
-13. Valitse **Valmis**.
+11. <span data-ttu-id="bd86c-176">Valitse rivin ominaisuus.</span><span class="sxs-lookup"><span data-stu-id="bd86c-176">Select the line property.</span></span>
+12. <span data-ttu-id="bd86c-177">Voit myös kirjoittaa ulkoisia tai sisäisiä kommentteja.</span><span class="sxs-lookup"><span data-stu-id="bd86c-177">Optional: Enter any external and internal comments.</span></span>
+13. <span data-ttu-id="bd86c-178">Valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="bd86c-178">Select **Done**.</span></span>
 

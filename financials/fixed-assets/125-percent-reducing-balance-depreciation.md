@@ -19,73 +19,73 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6e9a50c9cc03a7f561a3c23987538c0285c542e8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 680396bd251cda603dbcd244664fa3421d12e85a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="125-percent-reducing-balance-depreciation"></a>Jäännöspoisto 125 prosenttia
+# <a name="125-percent-reducing-balance-depreciation"></a><span data-ttu-id="15ed7-103">Jäännöspoisto 125 prosenttia</span><span class="sxs-lookup"><span data-stu-id="15ed7-103">125 percent reducing balance depreciation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on yleiskuvaus 125 prosentin jäännösarvon poistomenetelmästä.
+<span data-ttu-id="15ed7-104">Tässä artikkelissa on yleiskuvaus 125 prosentin jäännösarvon poistomenetelmästä.</span><span class="sxs-lookup"><span data-stu-id="15ed7-104">This article gives an overview of the 125 percent reducing balance method of depreciation.</span></span>
 
-Kun käyttöomaisuuden poistoprofiili määritetään ja **Poistoprofiilit**-sivun **Menetelmä** -kentästä valitaan **Jäännösarvo 125 %**, tähän poistoprofiiliin liitetyn käyttöomaisuuden poistoprosentti on sama kullakin poistojaksolla. Tämä prosentti lasketaan omaisuuserän käyttöajan mukaan. Jos omaisuuserän käyttöaika on esimerkiksi viisi vuotta, poistoprosentti on 25 (125 % ÷ 5).
+<span data-ttu-id="15ed7-105">Kun käyttöomaisuuden poistoprofiili määritetään ja **Poistoprofiilit**-sivun **Menetelmä** -kentästä valitaan **Jäännösarvo 125 %**, tähän poistoprofiiliin liitetyn käyttöomaisuuden poistoprosentti on sama kullakin poistojaksolla.</span><span class="sxs-lookup"><span data-stu-id="15ed7-105">When you set up a fixed asset depreciation profile and select **125% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that are assigned to the depreciation profile are depreciated by the same percentage in each depreciation period.</span></span> <span data-ttu-id="15ed7-106">Tämä prosentti lasketaan omaisuuserän käyttöajan mukaan.</span><span class="sxs-lookup"><span data-stu-id="15ed7-106">This percentage is calculated based on the service life of the asset.</span></span> <span data-ttu-id="15ed7-107">Jos omaisuuserän käyttöaika on esimerkiksi viisi vuotta, poistoprosentti on 25 (125 % ÷ 5).</span><span class="sxs-lookup"><span data-stu-id="15ed7-107">For example, if an asset has a service life of five years, the percentage is calculated as 25 percent (125% ÷ 5).</span></span>
 
-Jos haluat määrittää jäännösarvoksi 125 %, valitse **Poistoprofiilit**-sivulla myös **Poistovuosi**- ja **Kausiväli**-kentän asetukset. **Kausiväli**-kentän käytettävissä olevat vaihtoehdot vaihtelevat **Poistovuosi**-kentässä valitun arvon mukaan.
+<span data-ttu-id="15ed7-108">Jos haluat määrittää jäännösarvoksi 125 %, valitse **Poistoprofiilit**-sivulla myös **Poistovuosi**- ja **Kausiväli**-kentän asetukset.</span><span class="sxs-lookup"><span data-stu-id="15ed7-108">To set up 125% reducing balance depreciation, you must also select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page.</span></span> <span data-ttu-id="15ed7-109">**Kausiväli**-kentän käytettävissä olevat vaihtoehdot vaihtelevat **Poistovuosi**-kentässä valitun arvon mukaan.</span><span class="sxs-lookup"><span data-stu-id="15ed7-109">The options that are available in the **Period frequency** field vary, depending on the value that is selected in the **Depreciation year** field.</span></span>
 
-## <a name="select-a-depreciation-year"></a>Poistovuoden valitseminen
-Voit valita **Poistoprofiilit**-sivulla **Poistovuosi**-kenttään joko **Kalenteri** tai **Tilikausi**. Oletusarvo on **Kalenteri**. 
+## <a name="select-a-depreciation-year"></a><span data-ttu-id="15ed7-110">Poistovuoden valitseminen</span><span class="sxs-lookup"><span data-stu-id="15ed7-110">Select a depreciation year</span></span>
+<span data-ttu-id="15ed7-111">Voit valita **Poistoprofiilit**-sivulla **Poistovuosi**-kenttään joko **Kalenteri** tai **Tilikausi**.</span><span class="sxs-lookup"><span data-stu-id="15ed7-111">You can select either **Calendar** or **Fiscal** in the **Depreciation year** field on the **Depreciation profiles** page.</span></span> <span data-ttu-id="15ed7-112">Oletusarvo on **Kalenteri**.</span><span class="sxs-lookup"><span data-stu-id="15ed7-112">The default value is **Calendar**.</span></span> 
 
-Valinta määrittää, mitä valintoja **Kausiväli**-kentässä on käytettävissä. Tämä kenttäsi määrittää poiston jaksotuksen kirjauspäivät ja -määrät kalenterivuoden aikana.
+<span data-ttu-id="15ed7-113">Valinta määrittää, mitä valintoja **Kausiväli**-kentässä on käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="15ed7-113">Your selection determines the options that are available in the **Period frequency** field.</span></span> <span data-ttu-id="15ed7-114">Tämä kenttäsi määrittää poiston jaksotuksen kirjauspäivät ja -määrät kalenterivuoden aikana.</span><span class="sxs-lookup"><span data-stu-id="15ed7-114">This field defines the depreciation accrual posting dates and amounts throughout the calendar year.</span></span>
 
-### <a name="calendar"></a>Kalenteri
+### <a name="calendar"></a><span data-ttu-id="15ed7-115">Kalenteri</span><span class="sxs-lookup"><span data-stu-id="15ed7-115">Calendar</span></span>
 
-Voit säilyttää **Poistovuosi** -kentässä oletusarvon **Kalenteri**. 
+<span data-ttu-id="15ed7-116">Voit säilyttää **Poistovuosi** -kentässä oletusarvon **Kalenteri**.</span><span class="sxs-lookup"><span data-stu-id="15ed7-116">You can keep the default value in the **Depreciation year** field, **Calendar**.</span></span> 
 
-**Kalenteri**-vaihtoehto päivittää joka vuosi poistokannan 1. tammikuuta. Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. 
+<span data-ttu-id="15ed7-117">**Kalenteri**-vaihtoehto päivittää joka vuosi poistokannan 1. tammikuuta.</span><span class="sxs-lookup"><span data-stu-id="15ed7-117">The **Calendar** option updates the depreciation base on January 1 of each year.</span></span> <span data-ttu-id="15ed7-118">Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla.</span><span class="sxs-lookup"><span data-stu-id="15ed7-118">Typically, the depreciation base is the net book value minus the scrap value.</span></span> <span data-ttu-id="15ed7-119">Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja.</span><span class="sxs-lookup"><span data-stu-id="15ed7-119">In the examples later in this topic, the depreciation base is the numerator in the first expression in the calculations column.</span></span> 
 
-Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käytettävissä seuraavat vaihtoehdot:
+<span data-ttu-id="15ed7-120">Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käytettävissä seuraavat vaihtoehdot:</span><span class="sxs-lookup"><span data-stu-id="15ed7-120">If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:</span></span>
 
--   **Vuosittain** kirjaa summan 31. joulukuuta.
--   **Kuukausittain** kirjaa kuukausikohtaisen poiston kunkin kuun lopussa.
--   **Neljännesvuosittain** kirjaa neljännesvuoden poiston kalenterivuoden kunkin neljänneksen lopussa (31.3, 30.6. 30.9. ja 31.12.)
--   **Puolivuosittain** kirjaa puolen vuoden summan kalenteripuolivuosittain (30.6. ja 31.12.).
--   **Päivittäin** kirjaa päivittäisen poistomenetelmän poistosumman käyttämällä yhtä tapahtumaa päivää kohden.
+-   <span data-ttu-id="15ed7-121">**Vuosittain** kirjaa summan 31. joulukuuta.</span><span class="sxs-lookup"><span data-stu-id="15ed7-121">**Yearly** posts an amount on December 31.</span></span>
+-   <span data-ttu-id="15ed7-122">**Kuukausittain** kirjaa kuukausikohtaisen poiston kunkin kuun lopussa.</span><span class="sxs-lookup"><span data-stu-id="15ed7-122">**Monthly** posts a monthly amount at the end of each calendar month.</span></span>
+-   <span data-ttu-id="15ed7-123">**Neljännesvuosittain** kirjaa neljännesvuoden poiston kalenterivuoden kunkin neljänneksen lopussa (31.3, 30.6. 30.9. ja 31.12.)</span><span class="sxs-lookup"><span data-stu-id="15ed7-123">**Quarterly** posts a quarterly amount at the end of each calendar quarter (March 31, June 30, September 30, and December 31).</span></span>
+-   <span data-ttu-id="15ed7-124">**Puolivuosittain** kirjaa puolen vuoden summan kalenteripuolivuosittain (30.6. ja 31.12.).</span><span class="sxs-lookup"><span data-stu-id="15ed7-124">**Half-Yearly** posts a half-yearly amount at the calendar half year (June 30 and December 31).</span></span>
+-   <span data-ttu-id="15ed7-125">**Päivittäin** kirjaa päivittäisen poistomenetelmän poistosumman käyttämällä yhtä tapahtumaa päivää kohden.</span><span class="sxs-lookup"><span data-stu-id="15ed7-125">**Daily** posts the depreciation amount for the daily depreciation method by using one transaction for each day.</span></span>
 
-### <a name="fiscal"></a>Veroasiakirja
+### <a name="fiscal"></a><span data-ttu-id="15ed7-126">Veroasiakirja</span><span class="sxs-lookup"><span data-stu-id="15ed7-126">Fiscal</span></span>
 
-Jos valitset **Poistovuosi**-kentässä **Tilivuosi**-vaihtoehdon, 125 prosentin poisto lasketaan kirjalle määritetyn kirjanpidon vuosikalenterin tilivuoden perusteella tai **Kirjanpito**-sivulla valitun kirjanpidon vuosikalenterin perusteella. Kirjanpidon vuosikalenterit määritetään **Kirjanpidon kalenterit** -sivulla. 
+<span data-ttu-id="15ed7-127">Jos valitset **Poistovuosi**-kentässä **Tilivuosi**-vaihtoehdon, 125 prosentin poisto lasketaan kirjalle määritetyn kirjanpidon vuosikalenterin tilivuoden perusteella tai **Kirjanpito**-sivulla valitun kirjanpidon vuosikalenterin perusteella.</span><span class="sxs-lookup"><span data-stu-id="15ed7-127">If you select **Fiscal** in the **Depreciation year** field, 125% reducing depreciation is calculated based on the fiscal year for the fiscal calendar that is specified for the book, or for the fiscal calendar that is selected on the **Ledger** page.</span></span> <span data-ttu-id="15ed7-128">Kirjanpidon vuosikalenterit määritetään **Kirjanpidon kalenterit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="15ed7-128">Fiscal calendars are set up on the **Fiscal calendars** page.</span></span> 
 
-Esimerkiksi tilikauden 1.7 – 30.6. poistojen laskeminen alkaa 1.7. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto säätyy automaattisesti kutakin tilijaksoa varten ja seuraavan tilivuoden pituus määräytyy **Kirjanpidon kalenterit**-lomakkeessa määritetyistä tilijaksojen asetuksista. 
+<span data-ttu-id="15ed7-129">Esimerkiksi tilikauden 1.7 – 30.6. poistojen laskeminen alkaa 1.7.</span><span class="sxs-lookup"><span data-stu-id="15ed7-129">For example, for the fiscal year July 1 through June 30, the depreciation calculation starts on July 1.</span></span> <span data-ttu-id="15ed7-130">Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta.</span><span class="sxs-lookup"><span data-stu-id="15ed7-130">The fiscal year can be longer or shorter than 12 months.</span></span> <span data-ttu-id="15ed7-131">Poisto säätyy automaattisesti kutakin tilijaksoa varten ja seuraavan tilivuoden pituus määräytyy **Kirjanpidon kalenterit**-lomakkeessa määritetyistä tilijaksojen asetuksista.</span><span class="sxs-lookup"><span data-stu-id="15ed7-131">The depreciation is automatically adjusted for each period, and the length of the next fiscal year is determined by the setup of periods on the **Fiscal calendars** page.</span></span> 
 
-Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavissa**Kausiväli**-kentässä:
+<span data-ttu-id="15ed7-132">Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavissa**Kausiväli**-kentässä:</span><span class="sxs-lookup"><span data-stu-id="15ed7-132">If you select **Fiscal** as the depreciation year, the following options are available in the **Period frequency** field:</span></span>
 
--   **Vuosittain**-vaihtoehto kirjaa tilikaudelle lasketun poiston kokonaismäärän yhtenä summana tilikauden viimeisenä päivänä.
--   **Tilikausi** kirjaa tilivuodelle lasketun poiston kokonaismäärän. Summa on jaksotettu tilikausille, jotka määritetään **Kirjanpidon kalenterit** -sivulla.
+-   <span data-ttu-id="15ed7-133">**Vuosittain**-vaihtoehto kirjaa tilikaudelle lasketun poiston kokonaismäärän yhtenä summana tilikauden viimeisenä päivänä.</span><span class="sxs-lookup"><span data-stu-id="15ed7-133">**Yearly** posts the total amount of the depreciation that is calculated for the fiscal year as one amount, on the last day of the fiscal year.</span></span>
+-   <span data-ttu-id="15ed7-134">**Tilikausi** kirjaa tilivuodelle lasketun poiston kokonaismäärän.</span><span class="sxs-lookup"><span data-stu-id="15ed7-134">**Fiscal period** posts the total amount of the depreciation that is calculated for the fiscal year.</span></span> <span data-ttu-id="15ed7-135">Summa on jaksotettu tilikausille, jotka määritetään **Kirjanpidon kalenterit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="15ed7-135">This amount is accrued into the fiscal periods that are defined on the **Fiscal calendars** page.</span></span>
 
-## <a name="example-of-125-reducing-balance-depreciation"></a>Esimerkki 125 prosentin jäännöspoistosta
+## <a name="example-of-125-reducing-balance-depreciation"></a><span data-ttu-id="15ed7-136">Esimerkki 125 prosentin jäännöspoistosta</span><span class="sxs-lookup"><span data-stu-id="15ed7-136">Example of 125% reducing balance depreciation</span></span>
 |                                |        |
 |--------------------------------|--------|
-| Hankintakustannukset               | 11 000 |
-| Jäännösarvo                  | 1 000  |
-| Poistokanta              | 10 000 |
-| Käyttöikä vuosina             | 5      |
-| Vuosittainen poistoprosentti: | 25 %    |
+| <span data-ttu-id="15ed7-137">Hankintakustannukset</span><span class="sxs-lookup"><span data-stu-id="15ed7-137">Acquisition cost</span></span>               | <span data-ttu-id="15ed7-138">11 000</span><span class="sxs-lookup"><span data-stu-id="15ed7-138">11,000</span></span> |
+| <span data-ttu-id="15ed7-139">Jäännösarvo</span><span class="sxs-lookup"><span data-stu-id="15ed7-139">Salvage value</span></span>                  | <span data-ttu-id="15ed7-140">1 000</span><span class="sxs-lookup"><span data-stu-id="15ed7-140">1,000</span></span>  |
+| <span data-ttu-id="15ed7-141">Poistokanta</span><span class="sxs-lookup"><span data-stu-id="15ed7-141">Depreciation base</span></span>              | <span data-ttu-id="15ed7-142">10 000</span><span class="sxs-lookup"><span data-stu-id="15ed7-142">10,000</span></span> |
+| <span data-ttu-id="15ed7-143">Käyttöikä vuosina</span><span class="sxs-lookup"><span data-stu-id="15ed7-143">Service life years</span></span>             | <span data-ttu-id="15ed7-144">5</span><span class="sxs-lookup"><span data-stu-id="15ed7-144">5</span></span>      |
+| <span data-ttu-id="15ed7-145">Vuosittainen poistoprosentti:</span><span class="sxs-lookup"><span data-stu-id="15ed7-145">Yearly depreciation percentage</span></span> | <span data-ttu-id="15ed7-146">25 %</span><span class="sxs-lookup"><span data-stu-id="15ed7-146">25%</span></span>    |
 
-125 %:n jäännösarvomenetelmä jakaa arvon 125 % käyttövuosilla. Kyseinen prosentti kerrotaan käyttöomaisuuserän nettokirjanpitoarvolla, jolloin saadaan tulokseksi vuoden poistosumma.
+<span data-ttu-id="15ed7-147">125 %:n jäännösarvomenetelmä jakaa arvon 125 % käyttövuosilla.</span><span class="sxs-lookup"><span data-stu-id="15ed7-147">The 125% reducing balance method divides 125 percent by the service life years.</span></span> <span data-ttu-id="15ed7-148">Kyseinen prosentti kerrotaan käyttöomaisuuserän nettokirjanpitoarvolla, jolloin saadaan tulokseksi vuoden poistosumma.</span><span class="sxs-lookup"><span data-stu-id="15ed7-148">That percentage will be multiplied by the net book value of the asset to determine the depreciation amount for the year.</span></span>
 
-| Kausi | Vuotuisen poistomäärän laskeminen | Kirjanpitoarvo                    | Nettokirjanpitoarvo vuoden lopussa: |
+| <span data-ttu-id="15ed7-149">Kausi</span><span class="sxs-lookup"><span data-stu-id="15ed7-149">Period</span></span> | <span data-ttu-id="15ed7-150">Vuotuisen poistomäärän laskeminen</span><span class="sxs-lookup"><span data-stu-id="15ed7-150">Calculation of the yearly depreciation amount</span></span> | <span data-ttu-id="15ed7-151">Kirjanpitoarvo</span><span class="sxs-lookup"><span data-stu-id="15ed7-151">Book value</span></span>                    | <span data-ttu-id="15ed7-152">Nettokirjanpitoarvo vuoden lopussa:</span><span class="sxs-lookup"><span data-stu-id="15ed7-152">Net book value at the end of the year</span></span> |
 |--------|-----------------------------------------------|-------------------------------|---------------------------------------|
-| Vuosi 1 | (11 000 – 1 000) × 25% = 2 500                | (11 000 – 2 500) = 8 500      | (11 000 – 1 000 – 2 500) = 7 500      |
-| Vuosi 2 | 7 500 × 25 % = 1 875                           | (8 500 – 1 875) = 6 625       | (7 500 – 1 875) = 5 625               |
-| Vuosi 3 | 5 625 × 25 % = 1 406,25                        | (6 625 – 1 406,25) = 5 218,75 | (5 625 – 1 406,25) = 4 218,75         |
+| <span data-ttu-id="15ed7-153">Vuosi 1</span><span class="sxs-lookup"><span data-stu-id="15ed7-153">Year 1</span></span> | <span data-ttu-id="15ed7-154">(11 000 – 1 000) × 25% = 2 500</span><span class="sxs-lookup"><span data-stu-id="15ed7-154">(11,000 – 1,000) × 25% = 2,500</span></span>                | <span data-ttu-id="15ed7-155">(11 000 – 2 500) = 8 500</span><span class="sxs-lookup"><span data-stu-id="15ed7-155">(11,000 – 2,500) = 8,500</span></span>      | <span data-ttu-id="15ed7-156">(11 000 – 1 000 – 2 500) = 7 500</span><span class="sxs-lookup"><span data-stu-id="15ed7-156">(11,000 – 1,000 – 2,500) = 7,500</span></span>      |
+| <span data-ttu-id="15ed7-157">Vuosi 2</span><span class="sxs-lookup"><span data-stu-id="15ed7-157">Year 2</span></span> | <span data-ttu-id="15ed7-158">7 500 × 25 % = 1 875</span><span class="sxs-lookup"><span data-stu-id="15ed7-158">7,500 × 25% = 1,875</span></span>                           | <span data-ttu-id="15ed7-159">(8 500 – 1 875) = 6 625</span><span class="sxs-lookup"><span data-stu-id="15ed7-159">(8,500 – 1,875) = 6,625</span></span>       | <span data-ttu-id="15ed7-160">(7 500 – 1 875) = 5 625</span><span class="sxs-lookup"><span data-stu-id="15ed7-160">(7,500 – 1,875) = 5,625</span></span>               |
+| <span data-ttu-id="15ed7-161">Vuosi 3</span><span class="sxs-lookup"><span data-stu-id="15ed7-161">Year 3</span></span> | <span data-ttu-id="15ed7-162">5 625 × 25 % = 1 406,25</span><span class="sxs-lookup"><span data-stu-id="15ed7-162">5,625 × 25% = 1,406.25</span></span>                        | <span data-ttu-id="15ed7-163">(6 625 – 1 406,25) = 5 218,75</span><span class="sxs-lookup"><span data-stu-id="15ed7-163">(6,625 – 1,406.25) = 5,218.75</span></span> | <span data-ttu-id="15ed7-164">(5 625 – 1 406,25) = 4 218,75</span><span class="sxs-lookup"><span data-stu-id="15ed7-164">(5,625 – 1,406.25) = 4,218.75</span></span>         |
 
 > [!NOTE] 
-> Jos 125 %:n jäännösarvon poistomenetelmän avulla laskettu määrä on pienempi kuin tasapoistomenetelmän avulla laskettu määrä, jäljellä olevalle käyttöiälle on yleensä olemassa tasapoistomenetelmä.
+> <span data-ttu-id="15ed7-165">Jos 125 %:n jäännösarvon poistomenetelmän avulla laskettu määrä on pienempi kuin tasapoistomenetelmän avulla laskettu määrä, jäljellä olevalle käyttöiälle on yleensä olemassa tasapoistomenetelmä.</span><span class="sxs-lookup"><span data-stu-id="15ed7-165">Typically, when the amount that is calculated by using the 125% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there is a conversion to the straight line method for the remaining life.</span></span>
 
 
 

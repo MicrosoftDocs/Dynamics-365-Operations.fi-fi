@@ -15,112 +15,112 @@ ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 6ea8b060741ea94af16861d5bb52894a577e5521
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 078d7d5e822a5ffa74131838b249563201b54c7f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configure-a-manual-decision-in-a-workflow"></a>Manuaalisen päätöksen konfiguroiminen työnkulkuun
+# <a name="configure-a-manual-decision-in-a-workflow"></a><span data-ttu-id="e3c97-103">Manuaalisen päätöksen konfiguroiminen työnkulkuun</span><span class="sxs-lookup"><span data-stu-id="e3c97-103">Configure a manual decision in a workflow</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä ohjeaiheessa kerrotaan, miten manuaalisen päätöksen eri ominaisuudet määritetään.
+<span data-ttu-id="e3c97-104">Tässä ohjeaiheessa kerrotaan, miten manuaalisen päätöksen eri ominaisuudet määritetään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-104">This topic explains how to configure the properties of a manual decision.</span></span>
 
-Manuaalinen päätös konfiguroidaan työnkulkueditorissa napsauttamalla päätöstä hiiren kakkospainikkeella ja valitsemalla **Ominaisuudet**, joka avaa **Ominaisuudet**-sivun. Sitten voit määrittää seuraavien ohjeiden avulla manuaalisen päätöksen ominaisuudet.
+<span data-ttu-id="e3c97-105">Manuaalinen päätös konfiguroidaan työnkulkueditorissa napsauttamalla päätöstä hiiren kakkospainikkeella ja valitsemalla **Ominaisuudet**, joka avaa **Ominaisuudet**-sivun.</span><span class="sxs-lookup"><span data-stu-id="e3c97-105">To configure a manual decision in the workflow editor, right-click the manual decision, and then click **Properties** to open the **Properties** page.</span></span> <span data-ttu-id="e3c97-106">Sitten voit määrittää seuraavien ohjeiden avulla manuaalisen päätöksen ominaisuudet.</span><span class="sxs-lookup"><span data-stu-id="e3c97-106">Then use the following procedures to configure the properties of the manual decision.</span></span>
 
-## <a name="name-the-decision"></a>Päätöksen nimi
-Kirjoita näiden ohjeiden avulla nimi manuaaliselle päätökselle.
+## <a name="name-the-decision"></a><span data-ttu-id="e3c97-107">Päätöksen nimi</span><span class="sxs-lookup"><span data-stu-id="e3c97-107">Name the decision</span></span>
+<span data-ttu-id="e3c97-108">Kirjoita näiden ohjeiden avulla nimi manuaaliselle päätökselle.</span><span class="sxs-lookup"><span data-stu-id="e3c97-108">Follow these steps to enter a name for the manual decision.</span></span>
 
-1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
-2.  Kirjoita manuaalisen päätöksen yksilöivä nimi **Nimi**-kenttään.
+1.  <span data-ttu-id="e3c97-109">Napsauta vasemmassa ruudussa **Perusasetukset**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-109">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="e3c97-110">Kirjoita manuaalisen päätöksen yksilöivä nimi **Nimi**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-110">In the **Name** field, enter a unique name for the manual decision.</span></span>
 
-## <a name="enter-a-subject-line-and-instructions"></a>Aiherivin ja ohjeiden määrittäminen
-Sinun on luotava aiherivi ja ohjeet käyttäjille, jotka on määritetty manuaaliseen päätökseen. Esimerkiksi jos olet konfiguroimassa ostoehdotukselle päätöstä, sille määritetty käyttäjä näkee aiherivin ja ohjeet **Ostoehdotukset**-sivulla. Aiherivi näytetään sivulla olevalla viestirivillä. Käyttäjä voi sitten avata ohjeet napsauttamalla viestirivin kuvaketta. Seuraavia ohjeita noudattamalla voit määrittää aiherivin ja ohjeet.
+## <a name="enter-a-subject-line-and-instructions"></a><span data-ttu-id="e3c97-111">Aiherivin ja ohjeiden määrittäminen</span><span class="sxs-lookup"><span data-stu-id="e3c97-111">Enter a subject line and instructions</span></span>
+<span data-ttu-id="e3c97-112">Sinun on luotava aiherivi ja ohjeet käyttäjille, jotka on määritetty manuaaliseen päätökseen.</span><span class="sxs-lookup"><span data-stu-id="e3c97-112">You must provide a subject line and instructions to users who are assigned to the manual decision.</span></span> <span data-ttu-id="e3c97-113">Esimerkiksi jos olet konfiguroimassa ostoehdotukselle päätöstä, sille määritetty käyttäjä näkee aiherivin ja ohjeet **Ostoehdotukset**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="e3c97-113">For example, if you're configuring a decision for purchase requisitions, the user who is assigned to the decision sees the subject line and instructions on the **Purchase requisitions** page.</span></span> <span data-ttu-id="e3c97-114">Aiherivi näytetään sivulla olevalla viestirivillä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-114">The subject line appears in a message bar on the page.</span></span> <span data-ttu-id="e3c97-115">Käyttäjä voi sitten avata ohjeet napsauttamalla viestirivin kuvaketta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-115">The user can then click the icon in the message bar to view the instructions.</span></span> <span data-ttu-id="e3c97-116">Seuraavia ohjeita noudattamalla voit määrittää aiherivin ja ohjeet.</span><span class="sxs-lookup"><span data-stu-id="e3c97-116">Follow these steps to enter a subject line and instructions.</span></span>
 
-1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
-2.  Kirjoita aiherivi **Ohjeet**-välilehden **Työnimikkeen aihe** -kenttään.
-3.  Voit mukauttaa aiheriviä lisäämällä paikkamerkkejä. Kun käyttäjät tarkastelevat ilmoitusta, paikkamerkit korvataan asianmukaisilla tiedoilla. Paikkamerkkejä voit lisätä seuraavasti:
-    1.  Napsauta tekstiruudussa kohtaa, johon haluat lisätä paikkamerkin.
-    2.  Napsauta **Lisää paikkamerkki** -painiketta.
-    3.  Valitse esiin tulevasta luettelosta lisättävä paikkamerkki.
-    4.  Valitse **Lisää**.
+1.  <span data-ttu-id="e3c97-117">Napsauta vasemmassa ruudussa **Perusasetukset**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-117">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="e3c97-118">Kirjoita aiherivi **Ohjeet**-välilehden **Työnimikkeen aihe** -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-118">On the **Instructions** tab, in the **Work item subject** field, enter the subject line.</span></span>
+3.  <span data-ttu-id="e3c97-119">Voit mukauttaa aiheriviä lisäämällä paikkamerkkejä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-119">To personalize the subject line, you can insert placeholders.</span></span> <span data-ttu-id="e3c97-120">Kun käyttäjät tarkastelevat ilmoitusta, paikkamerkit korvataan asianmukaisilla tiedoilla.</span><span class="sxs-lookup"><span data-stu-id="e3c97-120">Placeholders are replaced with appropriate data when the subject line is shown to users.</span></span> <span data-ttu-id="e3c97-121">Paikkamerkkejä voit lisätä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="e3c97-121">Follow these steps to insert a placeholder:</span></span>
+    1.  <span data-ttu-id="e3c97-122">Napsauta tekstiruudussa kohtaa, johon haluat lisätä paikkamerkin.</span><span class="sxs-lookup"><span data-stu-id="e3c97-122">In the text box, click where the placeholder should appear.</span></span>
+    2.  <span data-ttu-id="e3c97-123">Napsauta **Lisää paikkamerkki** -painiketta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-123">Click **Insert placeholder**.</span></span>
+    3.  <span data-ttu-id="e3c97-124">Valitse esiin tulevasta luettelosta lisättävä paikkamerkki.</span><span class="sxs-lookup"><span data-stu-id="e3c97-124">In the list that appears, select the placeholder to insert.</span></span>
+    4.  <span data-ttu-id="e3c97-125">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-125">Click **Insert**.</span></span>
 
-4.  Aiherivin käännökset voit lisätä seuraavasti:
-    1.  Napsauta **Käännökset**-painiketta.
-    2.  Valitse esiin tulevalla sivulla **Lisää**.
-    3.  Valitse esiin tulevasta luettelosta kieli, jolla kirjoitat tekstin.
-    4.  Kirjota tekstisi **Käännetty teksti** -kenttään.
-    5.  Voit mukauttaa tekstiä lisäämällä paikkamerkkejä vaiheen 3 mukaisesti.
-    6.  Valitse **Sulje**.
+4.  <span data-ttu-id="e3c97-126">Aiherivin käännökset voit lisätä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="e3c97-126">To add translations of the subject line, follow these steps:</span></span>
+    1.  <span data-ttu-id="e3c97-127">Napsauta **Käännökset**-painiketta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-127">Click **Translations**.</span></span>
+    2.  <span data-ttu-id="e3c97-128">Valitse esiin tulevalla sivulla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-128">On the page that appears, click **Add**.</span></span>
+    3.  <span data-ttu-id="e3c97-129">Valitse esiin tulevasta luettelosta kieli, jolla kirjoitat tekstin.</span><span class="sxs-lookup"><span data-stu-id="e3c97-129">In the list that appears, select the language that you're entering the text in.</span></span>
+    4.  <span data-ttu-id="e3c97-130">Kirjota tekstisi **Käännetty teksti** -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-130">In the **Translated text** field, enter the text.</span></span>
+    5.  <span data-ttu-id="e3c97-131">Voit mukauttaa tekstiä lisäämällä paikkamerkkejä vaiheen 3 mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="e3c97-131">To personalize the text, you can insert placeholders as described in step 3.</span></span>
+    6.  <span data-ttu-id="e3c97-132">Valitse **Sulje**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-132">Click **Close**.</span></span>
 
-5.  Kirjoita ohjeet **Työnimikkeen ohjeet** -kenttään.
-6.  Voit mukauttaa ohjeita lisäämällä paikkamerkkejä. Kun käyttäjät tarkastelevat ohjeita, paikkamerkit korvataan asianmukaisilla tiedoilla. Paikkamerkkejä voit lisätä seuraavasti:
-    1.  Napsauta tekstiruudussa kohtaa, johon haluat lisätä paikkamerkin.
-    2.  Napsauta **Lisää paikkamerkki** -painiketta.
-    3.  Valitse esiin tulevasta luettelosta lisättävä paikkamerkki.
-    4.  Valitse **Lisää**.
+5.  <span data-ttu-id="e3c97-133">Kirjoita ohjeet **Työnimikkeen ohjeet** -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-133">In the **Work item instructions** field, enter the instructions.</span></span>
+6.  <span data-ttu-id="e3c97-134">Voit mukauttaa ohjeita lisäämällä paikkamerkkejä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-134">To personalize the instructions, you can insert placeholders.</span></span> <span data-ttu-id="e3c97-135">Kun käyttäjät tarkastelevat ohjeita, paikkamerkit korvataan asianmukaisilla tiedoilla.</span><span class="sxs-lookup"><span data-stu-id="e3c97-135">Placeholders are replaced with appropriate data when the instructions are shown to users.</span></span> <span data-ttu-id="e3c97-136">Paikkamerkkejä voit lisätä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="e3c97-136">Follow these steps to insert a placeholder:</span></span>
+    1.  <span data-ttu-id="e3c97-137">Napsauta tekstiruudussa kohtaa, johon haluat lisätä paikkamerkin.</span><span class="sxs-lookup"><span data-stu-id="e3c97-137">In the text box, click where the placeholder should appear.</span></span>
+    2.  <span data-ttu-id="e3c97-138">Napsauta **Lisää paikkamerkki** -painiketta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-138">Click **Insert placeholder**.</span></span>
+    3.  <span data-ttu-id="e3c97-139">Valitse esiin tulevasta luettelosta lisättävä paikkamerkki.</span><span class="sxs-lookup"><span data-stu-id="e3c97-139">In the list that appears, select the placeholder to insert.</span></span>
+    4.  <span data-ttu-id="e3c97-140">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-140">Click **Insert**.</span></span>
 
-7.  Ohjeiden käännökset voit lisätä seuraavasti:
-    1.  Napsauta **Käännökset**-painiketta.
-    2.  Valitse esiin tulevalla sivulla **Lisää**.
-    3.  Valitse esiin tulevasta luettelosta kieli, jolla kirjoitat tekstin.
-    4.  Kirjota tekstisi **Käännetty teksti** -kenttään.
-    5.  Voit mukauttaa tekstiä lisäämällä paikkamerkkejä vaiheen 6 mukaisesti.
-    6.  Valitse **Sulje**.
+7.  <span data-ttu-id="e3c97-141">Ohjeiden käännökset voit lisätä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="e3c97-141">To add translations of the instructions, follow these steps:</span></span>
+    1.  <span data-ttu-id="e3c97-142">Napsauta **Käännökset**-painiketta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-142">Click **Translations**.</span></span>
+    2.  <span data-ttu-id="e3c97-143">Valitse esiin tulevalla sivulla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-143">On the page that appears, click **Add**.</span></span>
+    3.  <span data-ttu-id="e3c97-144">Valitse esiin tulevasta luettelosta kieli, jolla kirjoitat tekstin.</span><span class="sxs-lookup"><span data-stu-id="e3c97-144">In the list that appears, select the language that you're entering the text in.</span></span>
+    4.  <span data-ttu-id="e3c97-145">Kirjota tekstisi **Käännetty teksti** -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-145">In the **Translated text** field, enter the text.</span></span>
+    5.  <span data-ttu-id="e3c97-146">Voit mukauttaa tekstiä lisäämällä paikkamerkkejä vaiheen 6 mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="e3c97-146">To personalize the text, you can insert placeholders as described in step 6.</span></span>
+    6.  <span data-ttu-id="e3c97-147">Valitse **Sulje**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-147">Click **Close**.</span></span>
 
-## <a name="specify-the-possible-outcomes-of-a-decision"></a>Määritä päätöksen mahdolliset tulokset
-Kun asiakirja määritetään päätöksentekijälle, siihen sisältyy yleensä kysymys, johon päätöksentekijän on vastattava. Kysymyksen vastaus on yleensä **Kyllä** tai **Ei** tai **Tosi** tai **Epätosi**. Noudata seuraavia ohjeita määrittääksesi manuaalisen päätöksen mahdolliset tulokset.
+## <a name="specify-the-possible-outcomes-of-a-decision"></a><span data-ttu-id="e3c97-148">Määritä päätöksen mahdolliset tulokset</span><span class="sxs-lookup"><span data-stu-id="e3c97-148">Specify the possible outcomes of a decision</span></span>
+<span data-ttu-id="e3c97-149">Kun asiakirja määritetään päätöksentekijälle, siihen sisältyy yleensä kysymys, johon päätöksentekijän on vastattava.</span><span class="sxs-lookup"><span data-stu-id="e3c97-149">Typically, when a document is assigned to a decision maker, the decision maker is asked a question.</span></span> <span data-ttu-id="e3c97-150">Kysymyksen vastaus on yleensä **Kyllä** tai **Ei** tai **Tosi** tai **Epätosi**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-150">The answer to this question is usually **Yes** or **No**, or **True** or **False**.</span></span> <span data-ttu-id="e3c97-151">Noudata seuraavia ohjeita määrittääksesi manuaalisen päätöksen mahdolliset tulokset.</span><span class="sxs-lookup"><span data-stu-id="e3c97-151">Follow these steps to specify the possible outcomes of the manual decision.</span></span>
 
-1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
-2.  Valitse **Tulokset**-välilehden **Tulos 1** -kenttään tuloksen nimi tai vaihtoehto.
-3.  Tulosten käännökset voit lisätä seuraavasti:
-    1.  Napsauta **Käännökset**-painiketta.
-    2.  Valitse esiin tulevalla sivulla **Lisää**.
-    3.  Valitse esiin tulevasta luettelosta kieli, jolla kirjoitat tekstin.
-    4.  Kirjota tekstisi **Käännetty teksti** -kenttään.
-    5.  Valitse **Sulje**.
+1.  <span data-ttu-id="e3c97-152">Napsauta vasemmassa ruudussa **Perusasetukset**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-152">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="e3c97-153">Valitse **Tulokset**-välilehden **Tulos 1** -kenttään tuloksen nimi tai vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="e3c97-153">On the **Outcomes** tab, in the **Outcome 1** field, enter the name of the outcome, or the option.</span></span>
+3.  <span data-ttu-id="e3c97-154">Tulosten käännökset voit lisätä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="e3c97-154">To add translations of the outcome, follow these steps:</span></span>
+    1.  <span data-ttu-id="e3c97-155">Napsauta **Käännökset**-painiketta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-155">Click **Translations**.</span></span>
+    2.  <span data-ttu-id="e3c97-156">Valitse esiin tulevalla sivulla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-156">On the page that appears, click **Add**.</span></span>
+    3.  <span data-ttu-id="e3c97-157">Valitse esiin tulevasta luettelosta kieli, jolla kirjoitat tekstin.</span><span class="sxs-lookup"><span data-stu-id="e3c97-157">In the list that appears, select the language that you're entering the text in.</span></span>
+    4.  <span data-ttu-id="e3c97-158">Kirjota tekstisi **Käännetty teksti** -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-158">In the **Translated text** field, enter the text.</span></span>
+    5.  <span data-ttu-id="e3c97-159">Valitse **Sulje**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-159">Click **Close**.</span></span>
 
-4.  Valitse **Tulos 2** -kenttään tuloksen nimi tai vaihtoehto.
-5.  Tulosten käännökset voit lisätä seuraavasti:
-    1.  Napsauta **Käännökset**-painiketta.
-    2.  Valitse esiin tulevalla sivulla **Lisää**.
-    3.  Valitse esiin tulevasta luettelosta kieli, jolla kirjoitat tekstin.
-    4.  Kirjota tekstisi **Käännetty teksti** -kenttään.
-    5.  Valitse **Sulje**.
+4.  <span data-ttu-id="e3c97-160">Valitse **Tulos 2** -kenttään tuloksen nimi tai vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="e3c97-160">In the **Outcome 2** field, enter the name of the outcome, or the option.</span></span>
+5.  <span data-ttu-id="e3c97-161">Tulosten käännökset voit lisätä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="e3c97-161">To add translations of the outcome, follow these steps:</span></span>
+    1.  <span data-ttu-id="e3c97-162">Napsauta **Käännökset**-painiketta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-162">Click **Translations**.</span></span>
+    2.  <span data-ttu-id="e3c97-163">Valitse esiin tulevalla sivulla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-163">On the page that appears, click **Add**.</span></span>
+    3.  <span data-ttu-id="e3c97-164">Valitse esiin tulevasta luettelosta kieli, jolla kirjoitat tekstin.</span><span class="sxs-lookup"><span data-stu-id="e3c97-164">In the list that appears, select the language that you're entering the text in.</span></span>
+    4.  <span data-ttu-id="e3c97-165">Kirjota tekstisi **Käännetty teksti** -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-165">In the **Translated text** field, enter the text.</span></span>
+    5.  <span data-ttu-id="e3c97-166">Valitse **Sulje**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-166">Click **Close**.</span></span>
 
-## <a name="specify-when-notifications-are-sent"></a>Määritä, milloin ilmoitukset lähetetään
-Voit lähettää käyttäjille ilmoituksia, kun päätös on tehty, delegoitu tai eskaloitu. Toimi seuraavasti määrittääksesi, milloin ilmoitukset lähetetään, ja kenelle ne lähetetään.
+## <a name="specify-when-notifications-are-sent"></a><span data-ttu-id="e3c97-167">Määritä, milloin ilmoitukset lähetetään</span><span class="sxs-lookup"><span data-stu-id="e3c97-167">Specify when notifications are sent</span></span>
+<span data-ttu-id="e3c97-168">Voit lähettää käyttäjille ilmoituksia, kun päätös on tehty, delegoitu tai eskaloitu.</span><span class="sxs-lookup"><span data-stu-id="e3c97-168">You can send notifications to people when a decision has been made, delegated, or escalated.</span></span> <span data-ttu-id="e3c97-169">Toimi seuraavasti määrittääksesi, milloin ilmoitukset lähetetään, ja kenelle ne lähetetään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-169">Follow these steps to specify when notifications are sent, and who the notifications are sent to.</span></span>
 
-1.  Valitse vasemmasta ruudusta **Ilmoitukset**.
-2.  Valitse tapahtuman vieressä oleva valintaruutu, jos haluat lähettää siihen liittyviä ilmoituksia:
-    -   **\[Vaihtoehto 1\]** – Määritetty käyttäjä on valinnut **\[vaihtoehdon 1\]**.
-    -   **\[Vaihtoehto 2\]** – Määritetty käyttäjä on valinnut **\[vaihtoehdon 2\]**.
-    -   **Delegoi** – Määritetty käyttäjä on delegoinut päätöksen toiselle käyttäjälle.
-    -   **Eskaloi** – Määritetty käyttäjä ei ole tehnyt päätöstä määräajassa.
+1.  <span data-ttu-id="e3c97-170">Valitse vasemmasta ruudusta **Ilmoitukset**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-170">In the left pane, click **Notifications**.</span></span>
+2.  <span data-ttu-id="e3c97-171">Valitse tapahtuman vieressä oleva valintaruutu, jos haluat lähettää siihen liittyviä ilmoituksia:</span><span class="sxs-lookup"><span data-stu-id="e3c97-171">Select the check box next to the events that notifications should be sent for:</span></span>
+    -   <span data-ttu-id="e3c97-172">**\[Vaihtoehto 1\]** – Määritetty käyttäjä on valinnut **\[vaihtoehdon 1\]**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-172">**\[Choice 1\]** – The assigned user has selected **\[Choice 1\]**.</span></span>
+    -   <span data-ttu-id="e3c97-173">**\[Vaihtoehto 2\]** – Määritetty käyttäjä on valinnut **\[vaihtoehdon 2\]**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-173">**\[Choice 2\]** – The assigned user has selected **\[Choice 2\]**.</span></span>
+    -   <span data-ttu-id="e3c97-174">**Delegoi** – Määritetty käyttäjä on delegoinut päätöksen toiselle käyttäjälle.</span><span class="sxs-lookup"><span data-stu-id="e3c97-174">**Delegate** – The assigned user has assigned the decision to another user.</span></span>
+    -   <span data-ttu-id="e3c97-175">**Eskaloi** – Määritetty käyttäjä ei ole tehnyt päätöstä määräajassa.</span><span class="sxs-lookup"><span data-stu-id="e3c97-175">**Escalate** – The assigned user hasn't made the decision in the allotted time.</span></span>
 
-3.  Valitse sen tapahtuman rivi, jonka valitsit vaiheessa 2.
-4.  Kirjoita **Ilmoitusteksti**-välilehden tekstiruutuun ilmoituksen leipäteksti.
-5.  Voit mukauttaa ilmoitusta lisäämällä paikkamerkkejä. Kun käyttäjät tarkastelevat ilmoitusta, paikkamerkit korvataan asianmukaisilla tiedoilla. Paikkamerkkejä voit lisätä seuraavasti:
-    1.  Napsauta tekstiruudussa kohtaa, johon haluat lisätä paikkamerkin.
-    2.  Napsauta **Lisää paikkamerkki** -painiketta.
-    3.  Valitse esiin tulevasta luettelosta lisättävä paikkamerkki.
-    4.  Valitse **Lisää**.
+3.  <span data-ttu-id="e3c97-176">Valitse sen tapahtuman rivi, jonka valitsit vaiheessa 2.</span><span class="sxs-lookup"><span data-stu-id="e3c97-176">Select the row for an event that you selected in step 2.</span></span>
+4.  <span data-ttu-id="e3c97-177">Kirjoita **Ilmoitusteksti**-välilehden tekstiruutuun ilmoituksen leipäteksti.</span><span class="sxs-lookup"><span data-stu-id="e3c97-177">On the **Notification text** tab, in the text box, enter the text of the notification.</span></span>
+5.  <span data-ttu-id="e3c97-178">Voit mukauttaa ilmoitusta lisäämällä paikkamerkkejä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-178">To personalize the notification, you can insert placeholders.</span></span> <span data-ttu-id="e3c97-179">Kun käyttäjät tarkastelevat ilmoitusta, paikkamerkit korvataan asianmukaisilla tiedoilla.</span><span class="sxs-lookup"><span data-stu-id="e3c97-179">Placeholders are replaced with appropriate data when the notification is show to users.</span></span> <span data-ttu-id="e3c97-180">Paikkamerkkejä voit lisätä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="e3c97-180">Follow these steps to insert a placeholder:</span></span>
+    1.  <span data-ttu-id="e3c97-181">Napsauta tekstiruudussa kohtaa, johon haluat lisätä paikkamerkin.</span><span class="sxs-lookup"><span data-stu-id="e3c97-181">In the text box, click where the placeholder should appear.</span></span>
+    2.  <span data-ttu-id="e3c97-182">Napsauta **Lisää paikkamerkki** -painiketta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-182">Click **Insert placeholder**.</span></span>
+    3.  <span data-ttu-id="e3c97-183">Valitse esiin tulevasta luettelosta lisättävä paikkamerkki.</span><span class="sxs-lookup"><span data-stu-id="e3c97-183">In the list that appears, select the placeholder to insert.</span></span>
+    4.  <span data-ttu-id="e3c97-184">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-184">Click **Insert**.</span></span>
 
-6.  Ilmoitusten käännökset voit lisätä seuraavasti:
-    1.  Napsauta **Käännökset**-painiketta.
-    2.  Valitse esiin tulevalla sivulla **Lisää**.
-    3.  Valitse esiin tulevasta luettelosta kieli, jolla kirjoitat tekstin.
-    4.  Kirjota tekstisi **Käännetty teksti** -kenttään.
-    5.  Voit mukauttaa tekstiä lisäämällä paikkamerkkejä vaiheen 5 mukaisesti.
-    6.  Valitse **Sulje**.
+6.  <span data-ttu-id="e3c97-185">Ilmoitusten käännökset voit lisätä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="e3c97-185">To add translations of the notification, follow these steps:</span></span>
+    1.  <span data-ttu-id="e3c97-186">Napsauta **Käännökset**-painiketta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-186">Click **Translations**.</span></span>
+    2.  <span data-ttu-id="e3c97-187">Valitse esiin tulevalla sivulla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-187">On the page that appears, click **Add**.</span></span>
+    3.  <span data-ttu-id="e3c97-188">Valitse esiin tulevasta luettelosta kieli, jolla kirjoitat tekstin.</span><span class="sxs-lookup"><span data-stu-id="e3c97-188">In the list that appears, select the language that you're entering the text in.</span></span>
+    4.  <span data-ttu-id="e3c97-189">Kirjota tekstisi **Käännetty teksti** -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-189">In the **Translated text** field, enter the text.</span></span>
+    5.  <span data-ttu-id="e3c97-190">Voit mukauttaa tekstiä lisäämällä paikkamerkkejä vaiheen 5 mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="e3c97-190">To personalize the text, you can insert placeholders as described in step 5.</span></span>
+    6.  <span data-ttu-id="e3c97-191">Valitse **Sulje**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-191">Click **Close**.</span></span>
 
-7.  Valitse **Vastaanottaja**-välilehdellä käyttäjät, joille ilmoitukset lähetetään. Valitse jokin seuraavan taulukon vaihtoehdoista ja noudata vaihtoehdon toimia ennen siirtymistä vaiheeseen 8.
+7.  <span data-ttu-id="e3c97-192">Valitse **Vastaanottaja**-välilehdellä käyttäjät, joille ilmoitukset lähetetään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-192">On the **Recipient** tab, specify who the notifications are sent to.</span></span> <span data-ttu-id="e3c97-193">Valitse jokin seuraavan taulukon vaihtoehdoista ja noudata vaihtoehdon toimia ennen siirtymistä vaiheeseen 8.</span><span class="sxs-lookup"><span data-stu-id="e3c97-193">Select one of the options in the following table, and then follow the additional steps for that option before you go to step 8.</span></span>
     <table>
     <colgroup>
     <col width="33%" />
@@ -129,45 +129,45 @@ Voit lähettää käyttäjille ilmoituksia, kun päätös on tehty, delegoitu ta
     </colgroup>
     <thead>
     <tr class="header">
-    <th>Vaihtoehto</th>
-    <th>Ilmoituksen vastaanottajat</th>
-    <th>Lisävaiheet</th>
+    <th><span data-ttu-id="e3c97-194">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="e3c97-194">Option</span></span></th>
+    <th><span data-ttu-id="e3c97-195">Ilmoituksen vastaanottajat</span><span class="sxs-lookup"><span data-stu-id="e3c97-195">Notification recipients</span></span></th>
+    <th><span data-ttu-id="e3c97-196">Lisävaiheet</span><span class="sxs-lookup"><span data-stu-id="e3c97-196">Additional steps</span></span></th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Osallistuja</td>
-    <td>Käyttäjät, jotka on määritetty tiettyyn ryhmään tai rooliin</td>
+    <td><span data-ttu-id="e3c97-197">Osallistuja</span><span class="sxs-lookup"><span data-stu-id="e3c97-197">Participant</span></span></td>
+    <td><span data-ttu-id="e3c97-198">Käyttäjät, jotka on määritetty tiettyyn ryhmään tai rooliin</span><span class="sxs-lookup"><span data-stu-id="e3c97-198">Users who are assigned to a specific group or role</span></span></td>
     <td><ol>
-    <li>Valittuasi <strong>osallistujan</strong>, valitse <strong>Rooliperustainen</strong>-välilehdellä <strong>Osallistujan tyyppi</strong> -luettelosta ryhmän tai roolin tyyppi, jolle ilmoituksia lähetetään.</li>
-    <li>Valitse <strong>Osallistuja</strong>-luettelosta, ryhmä tai rooli, jolle ilmoituksia lähetetään.</li>
+    <li><span data-ttu-id="e3c97-199">Valittuasi <strong>osallistujan</strong>, valitse <strong>Rooliperustainen</strong>-välilehdellä <strong>Osallistujan tyyppi</strong> -luettelosta ryhmän tai roolin tyyppi, jolle ilmoituksia lähetetään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-199">After you select <strong>Participant</strong>, on the <strong>Role based</strong> tab, in the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</span></span></li>
+    <li><span data-ttu-id="e3c97-200">Valitse <strong>Osallistuja</strong>-luettelosta, ryhmä tai rooli, jolle ilmoituksia lähetetään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-200">In the <strong>Participant</strong> list, select the group or to send notifications to.</span></span></li>
     </ol></td>
     </tr>
     <tr class="even">
-    <td>Työnkulun käyttäjä</td>
-    <td>Nykyisen työnkulun käyttäjät</td>
+    <td><span data-ttu-id="e3c97-201">Työnkulun käyttäjä</span><span class="sxs-lookup"><span data-stu-id="e3c97-201">Workflow user</span></span></td>
+    <td><span data-ttu-id="e3c97-202">Nykyisen työnkulun käyttäjät</span><span class="sxs-lookup"><span data-stu-id="e3c97-202">Users in the current workflow</span></span></td>
     <td><ul>
-    <li>Valittuasi <strong>työnkulun käyttäjän</strong>, valitse <strong>Työnkulun käyttäjä</strong> -välilehdessä <strong>Työnkulun käyttäjä</strong> -luettelosta käyttäjä, joka osallistuu työnkulun.</li>
+    <li><span data-ttu-id="e3c97-203">Valittuasi <strong>työnkulun käyttäjän</strong>, valitse <strong>Työnkulun käyttäjä</strong> -välilehdessä <strong>Työnkulun käyttäjä</strong> -luettelosta käyttäjä, joka osallistuu työnkulun.</span><span class="sxs-lookup"><span data-stu-id="e3c97-203">After you select <strong>Workflow user</strong>, on the <strong>Workflow user</strong> tab, in the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
     </ul></td>
     </tr>
     <tr class="odd">
-    <td>Käyttäjä</td>
-    <td>Tietyt Microsoft Dynamics 365 for Finance and Operations -käyttäjät</td>
+    <td><span data-ttu-id="e3c97-204">Käyttäjä</span><span class="sxs-lookup"><span data-stu-id="e3c97-204">User</span></span></td>
+    <td><span data-ttu-id="e3c97-205">Tietyt Microsoft Dynamics 365 for Finance and Operations -käyttäjät</span><span class="sxs-lookup"><span data-stu-id="e3c97-205">Specific Microsoft Dynamics 365 for Finance and Operations users</span></span></td>
     <td><ol>
-    <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><span data-ttu-id="e3c97-206">Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-206">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
+    <li><span data-ttu-id="e3c97-207"><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät.</span><span class="sxs-lookup"><span data-stu-id="e3c97-207">The <strong>Available users</strong> list includes all Finance and Operations users.</span></span> <span data-ttu-id="e3c97-208">Valitse käyttäjät, joille ilmoituksia lähetetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</span><span class="sxs-lookup"><span data-stu-id="e3c97-208">Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</span></span></li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-8.  Toista vaiheet 3-7 kullekin tapahtumalle, jonka valitsit vaiheessa 2.
+8.  <span data-ttu-id="e3c97-209">Toista vaiheet 3-7 kullekin tapahtumalle, jonka valitsit vaiheessa 2.</span><span class="sxs-lookup"><span data-stu-id="e3c97-209">Repeat steps 3 through 7 for each event that you selected in step 2.</span></span>
 
-## <a name="assign-a-decision"></a>Määritä päätös
-Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaalinen päätös määritetään.
+## <a name="assign-a-decision"></a><span data-ttu-id="e3c97-210">Määritä päätös</span><span class="sxs-lookup"><span data-stu-id="e3c97-210">Assign a decision</span></span>
+<span data-ttu-id="e3c97-211">Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaalinen päätös määritetään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-211">Follow these steps to specify who a manual decision should be assigned to.</span></span>
 
-1.  Valitse vasemmasta ruudusta **Määritys**.
-2.  Valitse **Määrityksen tyyppi** -välilehdellä jokin seuraavan taulukon vaihtoehdoista ja noudata vaihtoehdon toimia ennen siirtymistä vaiheeseen 3.
+1.  <span data-ttu-id="e3c97-212">Valitse vasemmasta ruudusta **Määritys**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-212">In the left pane, click **Assignment**.</span></span>
+2.  <span data-ttu-id="e3c97-213">Valitse **Määrityksen tyyppi** -välilehdellä jokin seuraavan taulukon vaihtoehdoista ja noudata vaihtoehdon toimia ennen siirtymistä vaiheeseen 3.</span><span class="sxs-lookup"><span data-stu-id="e3c97-213">On the **Assignment type** tab, select one of the options in the following table, and then follow the additional steps for that option before you go to step 3.</span></span>
     <table>
     <colgroup>
     <col width="33%" />
@@ -176,92 +176,93 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
     </colgroup>
     <thead>
     <tr class="header">
-    <th>Vaihtoehto</th>
-    <th>Käyttäjät, joille päätös on määritetty</th>
-    <th>Lisävaiheet</th>
+    <th><span data-ttu-id="e3c97-214">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="e3c97-214">Option</span></span></th>
+    <th><span data-ttu-id="e3c97-215">Käyttäjät, joille päätös on määritetty</span><span class="sxs-lookup"><span data-stu-id="e3c97-215">Users that the decision is assigned to</span></span></th>
+    <th><span data-ttu-id="e3c97-216">Lisävaiheet</span><span class="sxs-lookup"><span data-stu-id="e3c97-216">Additional steps</span></span></th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Osallistuja</td>
-    <td>Käyttäjät, jotka on määritetty tiettyyn ryhmään tai rooliin</td>
+    <td><span data-ttu-id="e3c97-217">Osallistuja</span><span class="sxs-lookup"><span data-stu-id="e3c97-217">Participant</span></span></td>
+    <td><span data-ttu-id="e3c97-218">Käyttäjät, jotka on määritetty tiettyyn ryhmään tai rooliin</span><span class="sxs-lookup"><span data-stu-id="e3c97-218">Users who are assigned to a specific group or role</span></span></td>
     <td><ol>
-    <li>Valittuasi <strong>osallistujan</strong>, valitse <strong>Rooliperustainen</strong>-välilehdellä <strong>Osallistujan tyyppi</strong> -luettelosta ryhmän tai roolin tyyppi, jolle päätös määritetään.</li>
-    <li>Valitse <strong>Osallistuja</strong>-luettelosta, ryhmä tai rooli, jolle päätös määritetään.</li>
+    <li><span data-ttu-id="e3c97-219">Valittuasi <strong>osallistujan</strong>, valitse <strong>Rooliperustainen</strong>-välilehdellä <strong>Osallistujan tyyppi</strong> -luettelosta ryhmän tai roolin tyyppi, jolle päätös määritetään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-219">After you select <strong>Participant</strong>, on the <strong>Role based</strong> tab, in the <strong>Type of participant</strong> list, select the type of group or role to assign the decision to.</span></span></li>
+    <li><span data-ttu-id="e3c97-220">Valitse <strong>Osallistuja</strong>-luettelosta, ryhmä tai rooli, jolle päätös määritetään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-220">In the <strong>Participant</strong> list, select the group or role to assign the decision to.</span></span></li>
     </ol></td>
     </tr>
     <tr class="even">
-    <td>Hierarkia</td>
-    <td>Tietyssä organisaatiohierarkiassa olevat käyttäjät</td>
+    <td><span data-ttu-id="e3c97-221">Hierarkia</span><span class="sxs-lookup"><span data-stu-id="e3c97-221">Hierarchy</span></span></td>
+    <td><span data-ttu-id="e3c97-222">Tietyssä organisaatiohierarkiassa olevat käyttäjät</span><span class="sxs-lookup"><span data-stu-id="e3c97-222">Users in a specific organizational hierarchy</span></span></td>
     <td><ol>
-    <li>Valittuasi <strong>hierarkian</strong>, valitse <strong>Hierarkian valinta</strong> -välilehdellä <strong>Hierarkian tyyppi</strong> -luettelosta hierarkian tyyppi, jolle päätös määritetään.</li>
-    <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille päätöksen voi määrittää. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste: <ol>
-    <li>Määritä aloituspiste valitsemalla henkilö <strong>Alku</strong>-luettelosta.</li>
-    <li>Määritä lopetuspiste valitsemalla <strong>Lisää pysäytysehto</strong>. Määritä sitten ehto, joka ilmaisee, missä kohtaa hierarkiaa järjestelmä lopettaa nimien noutamisen.</li>
+    <li><span data-ttu-id="e3c97-223">Valittuasi <strong>hierarkian</strong>, valitse <strong>Hierarkian valinta</strong> -välilehdellä <strong>Hierarkian tyyppi</strong> -luettelosta hierarkian tyyppi, jolle päätös määritetään.</span><span class="sxs-lookup"><span data-stu-id="e3c97-223">After you select <strong>Hierarchy</strong>, on the <strong>Hierarchy selection</strong> tab, in the <strong>Hierarchy type</strong> list, select the type of hierarchy to assign the decision to.</span></span></li>
+    <li><span data-ttu-id="e3c97-224">Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-224">The system must retrieve a range of user names from the hierarchy.</span></span> <span data-ttu-id="e3c97-225">Nämä nimet edustavat käyttäjiä, joille päätöksen voi määrittää.</span><span class="sxs-lookup"><span data-stu-id="e3c97-225">These names represent users that the decision can be assigned to.</span></span> <span data-ttu-id="e3c97-226">Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste:</span><span class="sxs-lookup"><span data-stu-id="e3c97-226">Follow these steps to specify the starting point and ending point of the range of user names that the system retrieves:</span></span> <ol>
+    <li><span data-ttu-id="e3c97-227">Määritä aloituspiste valitsemalla henkilö <strong>Alku</strong>-luettelosta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-227">To specify the starting point, select a person in the <strong>Start from</strong> list.</span></span></li>
+    <li><span data-ttu-id="e3c97-228">Määritä lopetuspiste valitsemalla <strong>Lisää pysäytysehto</strong>.</span><span class="sxs-lookup"><span data-stu-id="e3c97-228">To specify the ending point, click <strong>Add condition</strong>.</span></span> <span data-ttu-id="e3c97-229">Määritä sitten ehto, joka ilmaisee, missä kohtaa hierarkiaa järjestelmä lopettaa nimien noutamisen.</span><span class="sxs-lookup"><span data-stu-id="e3c97-229">Then enter a condition that determines where in the hierarchy the system stops retrieving names.</span></span></li>
     </ol></li>
-    <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille päätös määritetään: <ul>
-    <li><strong>Määritä kaikille noudetuille työntekijöille</strong> – Päätös määritetään joukon kaikille käyttäjille.</li>
-    <li><strong>Määritä vain viimeksi noudetulle käyttäjälle</strong> – Päätös määritetään vain joukon viimeiselle työntekijälle.</li>
-    <li><strong>Jätä pois käyttäjät, joilla on seuraava ehto</strong> – Päätöstä ei liitetä niille joukon käyttäjille, jotka täyttävät määritetyn ehdon. Määritä ehto valitsemalla <strong>Lisää ehto</strong>.</li>
+    <li><span data-ttu-id="e3c97-230">Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille päätös määritetään:</span><span class="sxs-lookup"><span data-stu-id="e3c97-230">On the <strong>Hierarchy options</strong> tab, specify which users in the range the decision should be assigned to:</span></span> <ul>
+    <li><span data-ttu-id="e3c97-231"><strong>Määritä kaikille noudetuille työntekijöille</strong> – Päätös määritetään joukon kaikille käyttäjille.</span><span class="sxs-lookup"><span data-stu-id="e3c97-231"><strong>Assign to all users retrieved</strong> – The decision is assigned to all users in the range.</span></span></li>
+    <li><span data-ttu-id="e3c97-232"><strong>Määritä vain viimeksi noudetulle käyttäjälle</strong> – Päätös määritetään vain joukon viimeiselle työntekijälle.</span><span class="sxs-lookup"><span data-stu-id="e3c97-232"><strong>Assign only to last user retrieved</strong> – The decision is assigned to only the last user in the range.</span></span></li>
+    <li><span data-ttu-id="e3c97-233"><strong>Jätä pois käyttäjät, joilla on seuraava ehto</strong> – Päätöstä ei liitetä niille joukon käyttäjille, jotka täyttävät määritetyn ehdon.</span><span class="sxs-lookup"><span data-stu-id="e3c97-233"><strong>Exclude users with the following condition</strong> – The decision isn't assigned to any users in the range who meet a specific condition.</span></span> <span data-ttu-id="e3c97-234">Määritä ehto valitsemalla <strong>Lisää ehto</strong>.</span><span class="sxs-lookup"><span data-stu-id="e3c97-234">Click <strong>Add condition</strong> to specify the condition.</span></span></li>
     </ul></li>
     </ol></td>
     </tr>
     <tr class="odd">
-    <td>Työnkulun käyttäjä</td>
-    <td>Nykyisen työnkulun käyttäjät</td>
+    <td><span data-ttu-id="e3c97-235">Työnkulun käyttäjä</span><span class="sxs-lookup"><span data-stu-id="e3c97-235">Workflow user</span></span></td>
+    <td><span data-ttu-id="e3c97-236">Nykyisen työnkulun käyttäjät</span><span class="sxs-lookup"><span data-stu-id="e3c97-236">Users in the current workflow</span></span></td>
     <td><ul>
-    <li>Valittuasi <strong>työnkulun käyttäjän</strong>, valitse <strong>Työnkulun käyttäjä</strong> -välilehdessä <strong>Työnkulun käyttäjä</strong> -luettelosta käyttäjä, joka osallistuu työnkulun.</li>
+    <li><span data-ttu-id="e3c97-237">Valittuasi <strong>työnkulun käyttäjän</strong>, valitse <strong>Työnkulun käyttäjä</strong> -välilehdessä <strong>Työnkulun käyttäjä</strong> -luettelosta käyttäjä, joka osallistuu työnkulun.</span><span class="sxs-lookup"><span data-stu-id="e3c97-237">After you select <strong>Workflow user</strong>, on the <strong>Workflow user</strong> tab, in the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
     </ul></td>
     </tr>
     <tr class="even">
-    <td>Käyttäjä</td>
-    <td>Tietyt Finance and Operations -käyttäjät</td>
+    <td><span data-ttu-id="e3c97-238">Käyttäjä</span><span class="sxs-lookup"><span data-stu-id="e3c97-238">User</span></span></td>
+    <td><span data-ttu-id="e3c97-239">Tietyt Finance and Operations -käyttäjät</span><span class="sxs-lookup"><span data-stu-id="e3c97-239">Specific Finance and Operations users</span></span></td>
     <td><ol>
-    <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät. Valitse käyttäjät, joille päätös liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><span data-ttu-id="e3c97-240">Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-240">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
+    <li><span data-ttu-id="e3c97-241"><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät.</span><span class="sxs-lookup"><span data-stu-id="e3c97-241">The <strong>Available users</strong> list includes all Finance and Operations users.</span></span> <span data-ttu-id="e3c97-242">Valitse käyttäjät, joille päätös liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</span><span class="sxs-lookup"><span data-stu-id="e3c97-242">Select the users to assign the decision to, and then move those users to the <strong>Selected users</strong> list.</span></span></li>
     </ol></td>
     </tr>
     <tr class="odd">
-    <td>Jono</td>
-    <td>Työnimikejono</td>
+    <td><span data-ttu-id="e3c97-243">Jono</span><span class="sxs-lookup"><span data-stu-id="e3c97-243">Queue</span></span></td>
+    <td><span data-ttu-id="e3c97-244">Työnimikejono</span><span class="sxs-lookup"><span data-stu-id="e3c97-244">A work item queue</span></span></td>
     <td><ol>
-    <li>Valittuasi <strong>jonon</strong>, napsauta <strong>Jonoperustainen</strong>-välilehteä.</li>
-    <li>Voit määrittää päätöksen tiettyyn jonoon seuraavasti: <ol>
-    <li>Valitse <strong>Jonon tyyppi</strong> -luettelosta <strong>Työnimikejonot</strong>.</li>
-    <li>Valitse jono <strong>Jonon nimi</strong> -luettelosta.</li>
+    <li><span data-ttu-id="e3c97-245">Valittuasi <strong>jonon</strong>, napsauta <strong>Jonoperustainen</strong>-välilehteä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-245">After you select <strong>Queue</strong>, click the <strong>Queue based</strong> tab.</span></span></li>
+    <li><span data-ttu-id="e3c97-246">Voit määrittää päätöksen tiettyyn jonoon seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="e3c97-246">To assign the decision to a specific queue, follow these steps:</span></span> <ol>
+    <li><span data-ttu-id="e3c97-247">Valitse <strong>Jonon tyyppi</strong> -luettelosta <strong>Työnimikejonot</strong>.</span><span class="sxs-lookup"><span data-stu-id="e3c97-247">In the <strong>Queue type</strong> list, select <strong>Work item queues</strong>.</span></span></li>
+    <li><span data-ttu-id="e3c97-248">Valitse jono <strong>Jonon nimi</strong> -luettelosta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-248">In the <strong>Queue name</strong> list, select the queue.</span></span></li>
     </ol></li>
-    <li>Noudata seuraavia ohjeita, jos haluat, että tietty ehto päättää, mihin jonoon päätös määritetään: <ol>
-    <li>Valitse <strong>Jonon tyyppi</strong> -luettelosta <strong>Ehdolliset työnimikejonot</strong>.</li>
-    <li>Valitse <strong>Ehdollinen jono</strong> <strong>Jonon nimi</strong> -luettelosta.</li>
+    <li><span data-ttu-id="e3c97-249">Noudata seuraavia ohjeita, jos haluat, että tietty ehto päättää, mihin jonoon päätös määritetään:</span><span class="sxs-lookup"><span data-stu-id="e3c97-249">If a specific condition should determine which queue the decision is assigned to, follow these steps:</span></span> <ol>
+    <li><span data-ttu-id="e3c97-250">Valitse <strong>Jonon tyyppi</strong> -luettelosta <strong>Ehdolliset työnimikejonot</strong>.</span><span class="sxs-lookup"><span data-stu-id="e3c97-250">In the <strong>Queue type</strong> list, select <strong>Conditional work item queues</strong>.</span></span></li>
+    <li><span data-ttu-id="e3c97-251">Valitse <strong>Ehdollinen jono</strong> <strong>Jonon nimi</strong> -luettelosta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-251">In the <strong>Queue name</strong> list, select <strong>Conditional queue</strong>.</span></span></li>
     </ol></li>
-    </ol>
-    <strong>Huomautus:</strong> tätä vaihtoehtoa käytetään vain muutamissa työnkuluissa, kuten Palvelupyynnön hallinnassa.</td>
+    </ol><span data-ttu-id="e3c97-252">
+    <strong>Huomautus:</strong> tätä vaihtoehtoa käytetään vain muutamissa työnkuluissa, kuten Palvelupyynnön hallinnassa.</span><span class="sxs-lookup"><span data-stu-id="e3c97-252">
+    <strong>Note:</strong> This option is used for only a few workflows, such as Case management.</span></span></td>
     </tr>
     </tbody>
     </table>
 
-3.  Määritä **Aikaraja**-välilehden **Kesto**-kenttään kuinka paljon aikaa käyttäjällä on tehdä päätös. Valitse jompikumpi seuraavista vaihtoehdoista:
-    -   **Tunnit** – Määritä käyttäjän päätöksentekoaika tunteina. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
-    -   **Päivät** – Määritä käyttäjän päätöksentekoaika päivinä. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
-    -   **Viikot** – Määritä käyttäjän päätöksentekoaika viikkoina.
-    -   **Kuukaudet** – Valitse päivä ja viikko, johon mennessä käyttäjän tulee tehdä päätös. Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös kuukauden kolmannen viikon perjantaihin mennessä.
-    -   **Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä käyttäjän tulee tehdä päätös. Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös joulukuun kolmannen viikon perjantaihin mennessä.
+3.  <span data-ttu-id="e3c97-253">Määritä **Aikaraja**-välilehden **Kesto**-kenttään kuinka paljon aikaa käyttäjällä on tehdä päätös.</span><span class="sxs-lookup"><span data-stu-id="e3c97-253">On the **Time limit** tab, in the **Duration** field, specify how much time the user has to make the decision.</span></span> <span data-ttu-id="e3c97-254">Valitse jompikumpi seuraavista vaihtoehdoista:</span><span class="sxs-lookup"><span data-stu-id="e3c97-254">Select one of the following options:</span></span>
+    -   <span data-ttu-id="e3c97-255">**Tunnit** – Määritä käyttäjän päätöksentekoaika tunteina.</span><span class="sxs-lookup"><span data-stu-id="e3c97-255">**Hours** – Enter the number of hours that the user has to make the decision.</span></span> <span data-ttu-id="e3c97-256">Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.</span><span class="sxs-lookup"><span data-stu-id="e3c97-256">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    -   <span data-ttu-id="e3c97-257">**Päivät** – Määritä käyttäjän päätöksentekoaika päivinä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-257">**Days** – Enter the number of days that the user has to make the decision.</span></span> <span data-ttu-id="e3c97-258">Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.</span><span class="sxs-lookup"><span data-stu-id="e3c97-258">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    -   <span data-ttu-id="e3c97-259">**Viikot** – Määritä käyttäjän päätöksentekoaika viikkoina.</span><span class="sxs-lookup"><span data-stu-id="e3c97-259">**Weeks** – Enter the number of weeks that the user has to make the decision.</span></span>
+    -   <span data-ttu-id="e3c97-260">**Kuukaudet** – Valitse päivä ja viikko, johon mennessä käyttäjän tulee tehdä päätös.</span><span class="sxs-lookup"><span data-stu-id="e3c97-260">**Months** – Select the day and week that the user must make the decision by.</span></span> <span data-ttu-id="e3c97-261">Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös kuukauden kolmannen viikon perjantaihin mennessä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-261">For example, you might want the user to make the decision by Friday of the third week of the month.</span></span>
+    -   <span data-ttu-id="e3c97-262">**Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä käyttäjän tulee tehdä päätös.</span><span class="sxs-lookup"><span data-stu-id="e3c97-262">**Years** – Select the day, week, and month that the user must make the decision by.</span></span> <span data-ttu-id="e3c97-263">Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös joulukuun kolmannen viikon perjantaihin mennessä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-263">For example, you might want the user to make the decision by Friday of the third week of December.</span></span>
 
-    Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on erääntynyt. Erääntyneet päätökset eskaloidaan, sivun **Eskalointi**-alueessa valitsemiesi asetusten mukaan.
+    <span data-ttu-id="e3c97-264">Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on erääntynyt.</span><span class="sxs-lookup"><span data-stu-id="e3c97-264">If the user doesn't make the decision in the allotted time, the decision is overdue.</span></span> <span data-ttu-id="e3c97-265">Erääntyneet päätökset eskaloidaan, sivun **Eskalointi**-alueessa valitsemiesi asetusten mukaan.</span><span class="sxs-lookup"><span data-stu-id="e3c97-265">A decision that is overdue is escalated, based on the options that you select in the **Escalation** area of the page.</span></span>
 
-## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Erääntyneen päätöksen toimenpiteiden määrittäminen
-Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on erääntynyt. Erääntyneen päätöksen voi eskaloida tai määrittää automaattisesti toisen käyttäjän tehtäväksi. Seuraa näitä ohjeita, jos haluat eskaloida erääntyneet päätökset.
+## <a name="specify-what-happens-when-a-decision-is-overdue"></a><span data-ttu-id="e3c97-266">Erääntyneen päätöksen toimenpiteiden määrittäminen</span><span class="sxs-lookup"><span data-stu-id="e3c97-266">Specify what happens when a decision is overdue</span></span>
+<span data-ttu-id="e3c97-267">Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on erääntynyt.</span><span class="sxs-lookup"><span data-stu-id="e3c97-267">If a user doesn't make the decision in the allotted time, the decision is overdue.</span></span> <span data-ttu-id="e3c97-268">Erääntyneen päätöksen voi eskaloida tai määrittää automaattisesti toisen käyttäjän tehtäväksi.</span><span class="sxs-lookup"><span data-stu-id="e3c97-268">A decision that is overdue can be escalated, or automatically assigned to another user.</span></span> <span data-ttu-id="e3c97-269">Seuraa näitä ohjeita, jos haluat eskaloida erääntyneet päätökset.</span><span class="sxs-lookup"><span data-stu-id="e3c97-269">Follow these steps to escalate the decision if it's overdue.</span></span>
 
-1.  Valitse vasemmasta ruudusta **Eskalointi**.
-2.  Luo eskalointipolku valitsemalla **Käytä eskalointipolkua** -valintaruutu. Järjestelmä määrittää päätöksen automaattisesti eskalointipolussa luetelluille käyttäjille. Seuraava taulukko on esimerkki eskalointipolusta.
-    | Järjestys | Eskalointipolku            |
+1.  <span data-ttu-id="e3c97-270">Valitse vasemmasta ruudusta **Eskalointi**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-270">In the left pane, click **Escalation**.</span></span>
+2.  <span data-ttu-id="e3c97-271">Luo eskalointipolku valitsemalla **Käytä eskalointipolkua** -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="e3c97-271">Select the **Use escalation path** check box to create an escalation path.</span></span> <span data-ttu-id="e3c97-272">Järjestelmä määrittää päätöksen automaattisesti eskalointipolussa luetelluille käyttäjille.</span><span class="sxs-lookup"><span data-stu-id="e3c97-272">The system automatically assigns the decision to the users who are listed in the escalation path.</span></span> <span data-ttu-id="e3c97-273">Seuraava taulukko on esimerkki eskalointipolusta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-273">For example, the following table represents an escalation path.</span></span>
+    | <span data-ttu-id="e3c97-274">Järjestys</span><span class="sxs-lookup"><span data-stu-id="e3c97-274">Sequence</span></span> | <span data-ttu-id="e3c97-275">Eskalointipolku</span><span class="sxs-lookup"><span data-stu-id="e3c97-275">Escalation path</span></span>            |
     |----------|----------------------------|
-    | 1        | Määritä rooliin: Donna           |
-    | 2        | Määritä rooliin: Erin            |
-    | 3        | Lopullinen toiminto: \[Vaihtoehto 1\] |
+    | <span data-ttu-id="e3c97-276">1</span><span class="sxs-lookup"><span data-stu-id="e3c97-276">1</span></span>        | <span data-ttu-id="e3c97-277">Määritä rooliin: Donna</span><span class="sxs-lookup"><span data-stu-id="e3c97-277">Assign to: Donna</span></span>           |
+    | <span data-ttu-id="e3c97-278">2</span><span class="sxs-lookup"><span data-stu-id="e3c97-278">2</span></span>        | <span data-ttu-id="e3c97-279">Määritä rooliin: Erin</span><span class="sxs-lookup"><span data-stu-id="e3c97-279">Assign to: Erin</span></span>            |
+    | <span data-ttu-id="e3c97-280">3</span><span class="sxs-lookup"><span data-stu-id="e3c97-280">3</span></span>        | <span data-ttu-id="e3c97-281">Lopullinen toiminto: \[Vaihtoehto 1\]</span><span class="sxs-lookup"><span data-stu-id="e3c97-281">Final action: \[Choice 1\]</span></span> |
 
-    Tässä esimerkissä järjestelmä määrittää erääntyneen päätöksen Donnalle. Jos Donna ei tee päätöstä ajoissa, päätöksenteko määritetään Erinille. Jos Erin ei tee päätöstä ajoissa, järjestelmä valitsee **\[vaihtoehdon 1\]**.
-3.  Voit lisätä käyttäjän eskalointipolkuun valitsemalla **Lisää eskalaatio**. Valitse jokin seuraavan taulukon vaihtoehdoista ja noudata vaihtoehdon toimia ennen siirtymistä vaiheeseen 4.
+    <span data-ttu-id="e3c97-282">Tässä esimerkissä järjestelmä määrittää erääntyneen päätöksen Donnalle.</span><span class="sxs-lookup"><span data-stu-id="e3c97-282">In this example, the system assigns the overdue decision to Donna.</span></span> <span data-ttu-id="e3c97-283">Jos Donna ei tee päätöstä ajoissa, päätöksenteko määritetään Erinille.</span><span class="sxs-lookup"><span data-stu-id="e3c97-283">If Donna doesn't make the decision in the allotted time, the system assigns the decision to Erin.</span></span> <span data-ttu-id="e3c97-284">Jos Erin ei tee päätöstä ajoissa, järjestelmä valitsee **\[vaihtoehdon 1\]**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-284">If Erin doesn't make the decision in the allotted time, the system selects **\[Choice 1\]** as the decision.</span></span>
+3.  <span data-ttu-id="e3c97-285">Voit lisätä käyttäjän eskalointipolkuun valitsemalla **Lisää eskalaatio**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-285">To add a user to the escalation path, click **Add escalation**.</span></span> <span data-ttu-id="e3c97-286">Valitse jokin seuraavan taulukon vaihtoehdoista ja noudata vaihtoehdon toimia ennen siirtymistä vaiheeseen 4.</span><span class="sxs-lookup"><span data-stu-id="e3c97-286">Select one of the options in the following table, and then follow the additional steps for that option before you go to step 4.</span></span>
     <table>
     <colgroup>
     <col width="33%" />
@@ -270,69 +271,69 @@ Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on eräänty
     </colgroup>
     <thead>
     <tr class="header">
-    <th>Vaihtoehto</th>
-    <th>Käyttäjät, joille päätös eskaloidaan</th>
-    <th>Lisävaiheet</th>
+    <th><span data-ttu-id="e3c97-287">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="e3c97-287">Option</span></span></th>
+    <th><span data-ttu-id="e3c97-288">Käyttäjät, joille päätös eskaloidaan</span><span class="sxs-lookup"><span data-stu-id="e3c97-288">Users that the decision is escalated to</span></span></th>
+    <th><span data-ttu-id="e3c97-289">Lisävaiheet</span><span class="sxs-lookup"><span data-stu-id="e3c97-289">Additional steps</span></span></th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Hierarkia</td>
-    <td>Tietyssä organisaatiohierarkiassa olevat käyttäjät</td>
+    <td><span data-ttu-id="e3c97-290">Hierarkia</span><span class="sxs-lookup"><span data-stu-id="e3c97-290">Hierarchy</span></span></td>
+    <td><span data-ttu-id="e3c97-291">Tietyssä organisaatiohierarkiassa olevat käyttäjät</span><span class="sxs-lookup"><span data-stu-id="e3c97-291">Users in a specific organizational hierarchy</span></span></td>
     <td><ol>
-    <li>Valittuasi <strong>hierarkian</strong>, valitse <strong>Hierarkian valinta</strong> -välilehdellä <strong>Hierarkian tyyppi</strong> -luettelosta hierarkian tyyppi, jolle päätös eskaloidaan.</li>
-    <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille päätöksen voi eskaloida. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste: <ol>
-    <li>Määritä aloituspiste valitsemalla henkilö <strong>Alku</strong>-luettelosta.</li>
-    <li>Määritä lopetuspiste valitsemalla <strong>Lisää pysäytysehto</strong>. Määritä sitten ehto, joka ilmaisee, missä kohtaa hierarkiaa järjestelmä lopettaa nimien noutamisen.</li>
+    <li><span data-ttu-id="e3c97-292">Valittuasi <strong>hierarkian</strong>, valitse <strong>Hierarkian valinta</strong> -välilehdellä <strong>Hierarkian tyyppi</strong> -luettelosta hierarkian tyyppi, jolle päätös eskaloidaan.</span><span class="sxs-lookup"><span data-stu-id="e3c97-292">After you select <strong>Hierarchy</strong>, on the <strong>Hierarchy selection</strong> tab, in the <strong>Hierarchy type</strong> list, select the type of hierarchy to escalate the decision to.</span></span></li>
+    <li><span data-ttu-id="e3c97-293">Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-293">The system must retrieve a range of user names from the hierarchy.</span></span> <span data-ttu-id="e3c97-294">Nämä nimet edustavat käyttäjiä, joille päätöksen voi eskaloida.</span><span class="sxs-lookup"><span data-stu-id="e3c97-294">These names represent users that the decision can be escalated to.</span></span> <span data-ttu-id="e3c97-295">Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste:</span><span class="sxs-lookup"><span data-stu-id="e3c97-295">Follow these steps to specify the starting point and ending point of the range of user names that the system retrieves:</span></span> <ol>
+    <li><span data-ttu-id="e3c97-296">Määritä aloituspiste valitsemalla henkilö <strong>Alku</strong>-luettelosta.</span><span class="sxs-lookup"><span data-stu-id="e3c97-296">To specify the starting point, select a person in the <strong>Start from</strong> list.</span></span></li>
+    <li><span data-ttu-id="e3c97-297">Määritä lopetuspiste valitsemalla <strong>Lisää pysäytysehto</strong>.</span><span class="sxs-lookup"><span data-stu-id="e3c97-297">To specify the ending point, click <strong>Add condition</strong>.</span></span> <span data-ttu-id="e3c97-298">Määritä sitten ehto, joka ilmaisee, missä kohtaa hierarkiaa järjestelmä lopettaa nimien noutamisen.</span><span class="sxs-lookup"><span data-stu-id="e3c97-298">Then enter a condition that determines where in the hierarchy the system stops retrieving names.</span></span></li>
     </ol></li>
-    <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille päätös eskaloidaan: <ul>
-    <li><strong>Määritä kaikille noudetuille työntekijöille</strong> – Päätös eskaloidaan joukon kaikille käyttäjille.</li>
-    <li><strong>Määritä vain viimeksi noudetulle käyttäjälle</strong> – Päätös eskaloidaan vain joukon viimeiselle työntekijälle.</li>
-    <li><strong>Jätä pois käyttäjät, joilla on seuraava ehto</strong> – Päätöstä ei eskaloida niille joukon käyttäjille, jotka täyttävät määritetyn ehdon. Määritä ehto valitsemalla <strong>Lisää ehto</strong>.</li>
+    <li><span data-ttu-id="e3c97-299">Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille päätös eskaloidaan:</span><span class="sxs-lookup"><span data-stu-id="e3c97-299">On the <strong>Hierarchy options</strong> tab, specify which users in the range the decision should be escalated to:</span></span> <ul>
+    <li><span data-ttu-id="e3c97-300"><strong>Määritä kaikille noudetuille työntekijöille</strong> – Päätös eskaloidaan joukon kaikille käyttäjille.</span><span class="sxs-lookup"><span data-stu-id="e3c97-300"><strong>Assign to all users retrieved</strong> – The decision is escalated to all users in the range.</span></span></li>
+    <li><span data-ttu-id="e3c97-301"><strong>Määritä vain viimeksi noudetulle käyttäjälle</strong> – Päätös eskaloidaan vain joukon viimeiselle työntekijälle.</span><span class="sxs-lookup"><span data-stu-id="e3c97-301"><strong>Assign only to last user retrieved</strong> – The decision is escalated to only the last user in the range.</span></span></li>
+    <li><span data-ttu-id="e3c97-302"><strong>Jätä pois käyttäjät, joilla on seuraava ehto</strong> – Päätöstä ei eskaloida niille joukon käyttäjille, jotka täyttävät määritetyn ehdon.</span><span class="sxs-lookup"><span data-stu-id="e3c97-302"><strong>Exclude users with the following condition:</strong> – The decision isn't escalated to any users in the range who meet a specific condition.</span></span> <span data-ttu-id="e3c97-303">Määritä ehto valitsemalla <strong>Lisää ehto</strong>.</span><span class="sxs-lookup"><span data-stu-id="e3c97-303">Click <strong>Add condition</strong> to specify the condition.</span></span></li>
     </ul></li>
     </ol></td>
     </tr>
     <tr class="even">
-    <td>Työnkulun käyttäjä</td>
-    <td>Nykyisen työnkulun käyttäjät</td>
+    <td><span data-ttu-id="e3c97-304">Työnkulun käyttäjä</span><span class="sxs-lookup"><span data-stu-id="e3c97-304">Workflow user</span></span></td>
+    <td><span data-ttu-id="e3c97-305">Nykyisen työnkulun käyttäjät</span><span class="sxs-lookup"><span data-stu-id="e3c97-305">Users in the current workflow</span></span></td>
     <td><ul>
-    <li>Valittuasi <strong>työnkulun käyttäjän</strong>, valitse <strong>Työnkulun käyttäjä</strong> -välilehdessä <strong>Työnkulun käyttäjä</strong> -luettelosta käyttäjä, joka osallistuu työnkulun.</li>
+    <li><span data-ttu-id="e3c97-306">Valittuasi <strong>työnkulun käyttäjän</strong>, valitse <strong>Työnkulun käyttäjä</strong> -välilehdessä <strong>Työnkulun käyttäjä</strong> -luettelosta käyttäjä, joka osallistuu työnkulun.</span><span class="sxs-lookup"><span data-stu-id="e3c97-306">After you select <strong>Workflow user</strong>, on the <strong>Workflow user</strong> tab, in the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
     </ul></td>
     </tr>
     <tr class="odd">
-    <td>Käyttäjä</td>
-    <td>Tietyt Finance and Operations -käyttäjät</td>
+    <td><span data-ttu-id="e3c97-307">Käyttäjä</span><span class="sxs-lookup"><span data-stu-id="e3c97-307">User</span></span></td>
+    <td><span data-ttu-id="e3c97-308">Tietyt Finance and Operations -käyttäjät</span><span class="sxs-lookup"><span data-stu-id="e3c97-308">Specific Finance and Operations users</span></span></td>
     <td><ol>
-    <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät. Valitse käyttäjät, joille päätös eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><span data-ttu-id="e3c97-309">Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-309">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
+    <li><span data-ttu-id="e3c97-310"><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät.</span><span class="sxs-lookup"><span data-stu-id="e3c97-310">The <strong>Available users</strong> list includes all Finance and Operations users.</span></span> <span data-ttu-id="e3c97-311">Valitse käyttäjät, joille päätös eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</span><span class="sxs-lookup"><span data-stu-id="e3c97-311">Select the users to escalate the decision to, and then move those users to the <strong>Selected users</strong> list.</span></span></li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-4.  Määritä **Aikaraja**-välilehden **Kesto**-kenttään kuinka paljon aikaa käyttäjällä on tehdä päätös. Valitse jompikumpi seuraavista vaihtoehdoista:
-    -   **Tunnit** – Määritä käyttäjän päätöksentekoaika tunteina. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
-    -   **Päivät** – Määritä käyttäjän päätöksentekoaika päivinä. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
-    -   **Viikot** – Määritä käyttäjän päätöksentekoaika viikkoina.
-    -   **Kuukaudet** – Valitse päivä ja viikko, johon mennessä käyttäjän tulee tehdä päätös. Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös kuukauden kolmannen viikon perjantaihin mennessä.
-    -   **Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä käyttäjän tulee tehdä päätös. Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös joulukuun kolmannen viikon perjantaihin mennessä.
+4.  <span data-ttu-id="e3c97-312">Määritä **Aikaraja**-välilehden **Kesto**-kenttään kuinka paljon aikaa käyttäjällä on tehdä päätös.</span><span class="sxs-lookup"><span data-stu-id="e3c97-312">On the **Time limit** tab, in the **Duration** field, specify how much time the user has to make the decision.</span></span> <span data-ttu-id="e3c97-313">Valitse jompikumpi seuraavista vaihtoehdoista:</span><span class="sxs-lookup"><span data-stu-id="e3c97-313">Select one of the following options:</span></span>
+    -   <span data-ttu-id="e3c97-314">**Tunnit** – Määritä käyttäjän päätöksentekoaika tunteina.</span><span class="sxs-lookup"><span data-stu-id="e3c97-314">**Hours** – Enter the number of hours that the user has to make the decision.</span></span> <span data-ttu-id="e3c97-315">Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.</span><span class="sxs-lookup"><span data-stu-id="e3c97-315">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    -   <span data-ttu-id="e3c97-316">**Päivät** – Määritä käyttäjän päätöksentekoaika päivinä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-316">**Days** – Enter the number of days that the user has to make the decision.</span></span> <span data-ttu-id="e3c97-317">Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.</span><span class="sxs-lookup"><span data-stu-id="e3c97-317">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    -   <span data-ttu-id="e3c97-318">**Viikot** – Määritä käyttäjän päätöksentekoaika viikkoina.</span><span class="sxs-lookup"><span data-stu-id="e3c97-318">**Weeks** – Enter the number of weeks that the user has to make the decision.</span></span>
+    -   <span data-ttu-id="e3c97-319">**Kuukaudet** – Valitse päivä ja viikko, johon mennessä käyttäjän tulee tehdä päätös.</span><span class="sxs-lookup"><span data-stu-id="e3c97-319">**Months** – Select the day and week that the user must make the decision by.</span></span> <span data-ttu-id="e3c97-320">Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös kuukauden kolmannen viikon perjantaihin mennessä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-320">For example, you might want the user to make the decision by Friday of the third week of the month.</span></span>
+    -   <span data-ttu-id="e3c97-321">**Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä käyttäjän tulee tehdä päätös.</span><span class="sxs-lookup"><span data-stu-id="e3c97-321">**Years** – Select the day, week, and month that the user must make the decision by.</span></span> <span data-ttu-id="e3c97-322">Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös joulukuun kolmannen viikon perjantaihin mennessä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-322">For example, you might want the user to make the decision by Friday of the third week of December.</span></span>
 
-5.  Toista vaiheet 3 ja 4 jokaiselle käyttäjälle, joka lisätään eskalointipolkuun. Käyttäjien järjestystä voi muuttaa.
-6.  Jos eskalointipolun käyttäjät eivät tee päätöstä ajoissa, järjestelmä tekee päätöksen automaattisesti. Voit määrittää vaihtoehdon, jonka järjestelmän valitsee valitsemalla **Toiminto**-rivin ja sitten valitsemalla **Lopetustoiminto**-välilehdellä vaihtoehdon.
+5.  <span data-ttu-id="e3c97-323">Toista vaiheet 3 ja 4 jokaiselle käyttäjälle, joka lisätään eskalointipolkuun.</span><span class="sxs-lookup"><span data-stu-id="e3c97-323">Repeat steps 3 through 4 for each user that should be added to the escalation path.</span></span> <span data-ttu-id="e3c97-324">Käyttäjien järjestystä voi muuttaa.</span><span class="sxs-lookup"><span data-stu-id="e3c97-324">You can change the order of the users.</span></span>
+6.  <span data-ttu-id="e3c97-325">Jos eskalointipolun käyttäjät eivät tee päätöstä ajoissa, järjestelmä tekee päätöksen automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="e3c97-325">If the users in the escalation path don't make the decision in the allotted time, the system makes the decision.</span></span> <span data-ttu-id="e3c97-326">Voit määrittää vaihtoehdon, jonka järjestelmän valitsee valitsemalla **Toiminto**-rivin ja sitten valitsemalla **Lopetustoiminto**-välilehdellä vaihtoehdon.</span><span class="sxs-lookup"><span data-stu-id="e3c97-326">To specify the option that the system selects, select the **Action** row, and then, on the **End action** tab, select an option.</span></span>
 
-## <a name="set-a-time-limit"></a>Aikarajan määrittäminen
-Noudata seuraavia ohjeita, jos päätös on tehtävä tietyn ajan kuluessa. **Huomautus:** näiden ohjeiden mukaan valitsemasi asetukset korvaavat asetukset, jotka olet valinnut kunkin hyväksyntävaiheen **Liitos**- ja **Eskalointi**-alueissa.
+## <a name="set-a-time-limit"></a><span data-ttu-id="e3c97-327">Aikarajan määrittäminen</span><span class="sxs-lookup"><span data-stu-id="e3c97-327">Set a time limit</span></span>
+<span data-ttu-id="e3c97-328">Noudata seuraavia ohjeita, jos päätös on tehtävä tietyn ajan kuluessa.</span><span class="sxs-lookup"><span data-stu-id="e3c97-328">Follow these steps if the decision must be made in a specific time.</span></span> <span data-ttu-id="e3c97-329">**Huomautus:** näiden ohjeiden mukaan valitsemasi asetukset korvaavat asetukset, jotka olet valinnut kunkin hyväksyntävaiheen **Liitos**- ja **Eskalointi**-alueissa.</span><span class="sxs-lookup"><span data-stu-id="e3c97-329">**Note:** The options that you select in this procedure override the options that you selected in the **Assignment** and **Escalation** areas of the page.</span></span>
 
-1.  Napsauta vasemmassa ruudussa **Lisäasetukset**.
-2.  Merkitse **Aseta aikaraja työnkulun elementille** -valintaruutu.
-3.  Valitse **Kesto**-kenttään, aika, johon mennessä päätös on tehtävä. Valitse jompikumpi seuraavista vaihtoehdoista:
-    -   **Tunnit** – Anna tuntien määrä. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
-    -   **Päivät** – Anna päivien määrä. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
-    -   **Viikot** – Anna viikkojen määrä.
-    -   **Kuukaudet** – Valitse päivä ja viikko, johon mennessä päätös on tehtävä. Voit esimerkiksi määrittää, että päätös on tehtävä kuukauden kolmannen viikon perjantaihin mennessä.
-    -   **Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä päätös on tehtävä. Voit esimerkiksi määrittää, että päätös on tehtävä joulukuun kolmannen viikon perjantaihin mennessä.
+1.  <span data-ttu-id="e3c97-330">Napsauta vasemmassa ruudussa **Lisäasetukset**.</span><span class="sxs-lookup"><span data-stu-id="e3c97-330">In the left pane, click **Advanced settings**.</span></span>
+2.  <span data-ttu-id="e3c97-331">Merkitse **Aseta aikaraja työnkulun elementille** -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="e3c97-331">Select the **Set a time limit for the workflow element** check box.</span></span>
+3.  <span data-ttu-id="e3c97-332">Valitse **Kesto**-kenttään, aika, johon mennessä päätös on tehtävä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-332">In the **Duration** field, specify when the decision must be made.</span></span> <span data-ttu-id="e3c97-333">Valitse jompikumpi seuraavista vaihtoehdoista:</span><span class="sxs-lookup"><span data-stu-id="e3c97-333">Select one of the following options:</span></span>
+    -   <span data-ttu-id="e3c97-334">**Tunnit** – Anna tuntien määrä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-334">**Hours** – Enter the number of hours.</span></span> <span data-ttu-id="e3c97-335">Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.</span><span class="sxs-lookup"><span data-stu-id="e3c97-335">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    -   <span data-ttu-id="e3c97-336">**Päivät** – Anna päivien määrä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-336">**Days** – Enter the number of days.</span></span> <span data-ttu-id="e3c97-337">Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.</span><span class="sxs-lookup"><span data-stu-id="e3c97-337">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    -   <span data-ttu-id="e3c97-338">**Viikot** – Anna viikkojen määrä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-338">**Weeks** – Enter the number of weeks.</span></span>
+    -   <span data-ttu-id="e3c97-339">**Kuukaudet** – Valitse päivä ja viikko, johon mennessä päätös on tehtävä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-339">**Months** – Select the day and week that the decision must be made by.</span></span> <span data-ttu-id="e3c97-340">Voit esimerkiksi määrittää, että päätös on tehtävä kuukauden kolmannen viikon perjantaihin mennessä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-340">For example, you might want the decision to be made by Friday of the third week of the month.</span></span>
+    -   <span data-ttu-id="e3c97-341">**Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä päätös on tehtävä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-341">**Years** – Select the day, week, and month that the decision must be made by.</span></span> <span data-ttu-id="e3c97-342">Voit esimerkiksi määrittää, että päätös on tehtävä joulukuun kolmannen viikon perjantaihin mennessä.</span><span class="sxs-lookup"><span data-stu-id="e3c97-342">For example, you might want the decision to be made by Friday of the third week of December.</span></span>
 
-4.  Jos aikaraja ylittyy, järjestelmä tekee päätöksen automaattisesti. Valitse **Toiminto**-luettelosta vaihtoehto, jonka haluat järjestelmän valitsevan.
+4.  <span data-ttu-id="e3c97-343">Jos aikaraja ylittyy, järjestelmä tekee päätöksen automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="e3c97-343">If the time limit is exceeded, the system makes the decision.</span></span> <span data-ttu-id="e3c97-344">Valitse **Toiminto**-luettelosta vaihtoehto, jonka haluat järjestelmän valitsevan.</span><span class="sxs-lookup"><span data-stu-id="e3c97-344">In the **Action** list, select the option that the system should select.</span></span>
 
 
 

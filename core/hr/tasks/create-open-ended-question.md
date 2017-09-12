@@ -16,25 +16,25 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 373cd15efba507aa9b35f61ce4a8c9fd8750f60d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 8b226fe4a6300cecfefdc8f4a5e3c0c82d6c625e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-an-open-ended-question"></a>Avoimen kysymyksen luominen
+# <a name="create-an-open-ended-question"></a><span data-ttu-id="1f7da-103">Avoimen kysymyksen luominen</span><span class="sxs-lookup"><span data-stu-id="1f7da-103">Create an open-ended question</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Vastaajat voivat kirjoittaa avoimiin kysymyksiin oman vastauksen. Voit määrittää, onko vastaus numero, desimaaliluku, päivämäärä, kommentti tms. Tässä menettelyssä kerrotaan, miten avoin kysymys luodaan. Aloita menettely siirtymällä kohtaan Kyselylomake > Suunnittelu > Kysymykset. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+<span data-ttu-id="1f7da-104">Vastaajat voivat kirjoittaa avoimiin kysymyksiin oman vastauksen.</span><span class="sxs-lookup"><span data-stu-id="1f7da-104">Open-ended questions enable respondents to provide their own response.</span></span> <span data-ttu-id="1f7da-105">Voit määrittää, onko vastaus numero, desimaaliluku, päivämäärä, kommentti tms.</span><span class="sxs-lookup"><span data-stu-id="1f7da-105">You can control whether that response is a number, decimal, date, comment and so on.</span></span> <span data-ttu-id="1f7da-106">Tässä menettelyssä kerrotaan, miten avoin kysymys luodaan.</span><span class="sxs-lookup"><span data-stu-id="1f7da-106">This procedure walks through the process of creating a specific type of question, an open-ended question.</span></span> <span data-ttu-id="1f7da-107">Aloita menettely siirtymällä kohtaan Kyselylomake > Suunnittelu > Kysymykset.</span><span class="sxs-lookup"><span data-stu-id="1f7da-107">To begin this procedure, go to Questionnaire > Design > Questions.</span></span> <span data-ttu-id="1f7da-108">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="1f7da-108">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Valitse Uusi.
-2. Valitse Tyyppi liittyvien kysymysten ryhmittelyä varten.
-3. Etsi haluamasi tietue luettelosta ja valitse se.
-4. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-    * Avoimissa kysymyksissä käytetään Teksti-, Kokonaisluku-, Reaaliluku-, Päivämäärä-, Aika- ja Huomautus-tyyppisiä syöttöjä  
-5. Valitse vaihtoehto Syötetyyppi-kentässä.
-    * Avoimissa kysymyksissä käytetään Teksti- tai Huomautus-tyyppistä syöttöä.  
-6. Syötä kysymys Teksti-kenttään.
+1. <span data-ttu-id="1f7da-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="1f7da-109">Click New.</span></span>
+2. <span data-ttu-id="1f7da-110">Valitse Tyyppi liittyvien kysymysten ryhmittelyä varten.</span><span class="sxs-lookup"><span data-stu-id="1f7da-110">Select a Type to group related questions.</span></span>
+3. <span data-ttu-id="1f7da-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="1f7da-111">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="1f7da-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="1f7da-112">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="1f7da-113">Avoimissa kysymyksissä käytetään Teksti-, Kokonaisluku-, Reaaliluku-, Päivämäärä-, Aika- ja Huomautus-tyyppisiä syöttöjä</span><span class="sxs-lookup"><span data-stu-id="1f7da-113">Input types of Text, Integer, Real, Date, Time, and Note are used for open-ended questions.</span></span>  
+5. <span data-ttu-id="1f7da-114">Valitse vaihtoehto Syötetyyppi-kentässä.</span><span class="sxs-lookup"><span data-stu-id="1f7da-114">In the Input type field, select an option.</span></span>
+    * <span data-ttu-id="1f7da-115">Avoimissa kysymyksissä käytetään Teksti- tai Huomautus-tyyppistä syöttöä.</span><span class="sxs-lookup"><span data-stu-id="1f7da-115">An input type of Text or Note is used for an open-ended question.</span></span>  
+6. <span data-ttu-id="1f7da-116">Syötä kysymys Teksti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="1f7da-116">In the Text field, enter your question.</span></span>
 
 

@@ -17,29 +17,29 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: ba3b528f8739e4e84ffdbeea5d0af5817f2d9c10
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 731a3ec06efa103ba663df83240c77dfe78bb7cd
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="parameter-configurations-for-retail-statements"></a>Vähittäismyynnin laskelmien parametrin konfiguraatiot
+# <a name="parameter-configurations-for-retail-statements"></a><span data-ttu-id="87644-103">Vähittäismyynnin laskelmien parametrin konfiguraatiot</span><span class="sxs-lookup"><span data-stu-id="87644-103">Parameter configurations for Retail statements</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tässä menettelyssä esitellään vähittäismyynnin parametrit konfiguraatiot, jotka vaikuttavat vähittäismyynnin laskelmien luomiseen ja kirjaamiseen. Näissä toimintaohjeissa käytetään esittely-yritystä USRT.
+<span data-ttu-id="87644-104">Tässä menettelyssä esitellään vähittäismyynnin parametrit konfiguraatiot, jotka vaikuttavat vähittäismyynnin laskelmien luomiseen ja kirjaamiseen.</span><span class="sxs-lookup"><span data-stu-id="87644-104">This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted.</span></span> <span data-ttu-id="87644-105">Näissä toimintaohjeissa käytetään esittely-yritystä USRT.</span><span class="sxs-lookup"><span data-stu-id="87644-105">This procedure uses the USRT demo company.</span></span>
 
-1. Valitse Vähittäismyynti ja kauppa > Pääkonttorin asetukset > Parametrit > Vähittäismyyntiparametrit.
-2. Valitse Kirjaus-välilehti.
-    * Valitse Kyllä, jos haluat kirjata erityisesti kausialennussummat.  
-    * Valitse Vakio, kun haluat käyttää oletustilejä. Valitse Kausittainen, jos haluat määrittää kunkin kausialennuksen käyttämän tili.  
-    * Valitse Yhteenveto, jos varastorivit yhdistetään aina, kun se on mahdollista.  
-    * Valitse Kyllä, jos laskut ja maksut selvitetään automaattisesti laskelman kirjausprosessin osana.  
-    * Valitse Kyllä, jos kassakaappiin toimitukset yhdistetään.  
-    * Valitse Kyllä, jos pankkiin toimitukset yhdistetään.  
-    * Valitse Kyllä, jos laskelman kirjauksen yhdistäminen otetaan käyttöön.  
-    * Valitse Kyllä, kun tilaukset luodaan ja käsitellään rinnakkain, kun laskelmat kirjataan.  
-    * Syötä kussakin erätyötehtävässä käsiteltävien tilausten enimmäismäärä.  
-3. Valitse Tallenna.
+1. <span data-ttu-id="87644-106">Valitse Vähittäismyynti ja kauppa > Pääkonttorin asetukset > Parametrit > Vähittäismyyntiparametrit.</span><span class="sxs-lookup"><span data-stu-id="87644-106">Go to Retail and commerce > Headquarters setup  > Parameters > Retail parameters.</span></span>
+2. <span data-ttu-id="87644-107">Valitse Kirjaus-välilehti.</span><span class="sxs-lookup"><span data-stu-id="87644-107">Click the Posting tab.</span></span>
+    * <span data-ttu-id="87644-108">Valitse Kyllä, jos haluat kirjata erityisesti kausialennussummat.</span><span class="sxs-lookup"><span data-stu-id="87644-108">Select "Yes" if you want to post the periodic discount amounts specifically.</span></span>  
+    * <span data-ttu-id="87644-109">Valitse Vakio, kun haluat käyttää oletustilejä. Valitse Kausittainen, jos haluat määrittää kunkin kausialennuksen käyttämän tili.</span><span class="sxs-lookup"><span data-stu-id="87644-109">Select "Standard" to use default accounts, or select "Periodic" if you want to define which account to use for each periodic discount.</span></span>  
+    * <span data-ttu-id="87644-110">Valitse Yhteenveto, jos varastorivit yhdistetään aina, kun se on mahdollista.</span><span class="sxs-lookup"><span data-stu-id="87644-110">Select "Summary" if inventory lines should get aggregated whenever possible.</span></span>  
+    * <span data-ttu-id="87644-111">Valitse Kyllä, jos laskut ja maksut selvitetään automaattisesti laskelman kirjausprosessin osana.</span><span class="sxs-lookup"><span data-stu-id="87644-111">Select "Yes" if Invoices and Payments should get automatically settled as part of the Statement posting process.</span></span>  
+    * <span data-ttu-id="87644-112">Valitse Kyllä, jos kassakaappiin toimitukset yhdistetään.</span><span class="sxs-lookup"><span data-stu-id="87644-112">Select "Yes" if Safe drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="87644-113">Valitse Kyllä, jos pankkiin toimitukset yhdistetään.</span><span class="sxs-lookup"><span data-stu-id="87644-113">Select "Yes" if Bank drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="87644-114">Valitse Kyllä, jos laskelman kirjauksen yhdistäminen otetaan käyttöön.</span><span class="sxs-lookup"><span data-stu-id="87644-114">Select "Yes" to turn aggregation on for Statement posting.</span></span>  
+    * <span data-ttu-id="87644-115">Valitse Kyllä, kun tilaukset luodaan ja käsitellään rinnakkain, kun laskelmat kirjataan.</span><span class="sxs-lookup"><span data-stu-id="87644-115">Select "Yes" to create and process orders in parallel when statements are posted.</span></span>  
+    * <span data-ttu-id="87644-116">Syötä kussakin erätyötehtävässä käsiteltävien tilausten enimmäismäärä.</span><span class="sxs-lookup"><span data-stu-id="87644-116">Enter the maximum orders to be processed in each batch job task.</span></span>  
+3. <span data-ttu-id="87644-117">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="87644-117">Click Save.</span></span>
 
 

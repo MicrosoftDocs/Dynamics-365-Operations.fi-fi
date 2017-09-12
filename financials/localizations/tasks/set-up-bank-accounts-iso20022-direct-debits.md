@@ -16,56 +16,56 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7aac1af99f2b5a7b1a123a8e3d3d6ddcaaa39b8d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 52970c54849e91c5052ad61ffc6458e646cbb262
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a>Määritä asiakas ja asiakkaan pankkitilit ISO20022-suoraveloituksia varten
+# <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a><span data-ttu-id="2a3ac-103">Määritä asiakas ja asiakkaan pankkitilit ISO20022-suoraveloituksia varten</span><span class="sxs-lookup"><span data-stu-id="2a3ac-103">Set up customers and customer bank accounts for ISO20022 direct debits</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä tehtävässä kerrotaan, miten ISO20022-suoraveloituksen maksutiedostossa vaadittavat asiakkaan pankkitili ja asiakkaan suoraveloitusvaltakirja määritetään. Määritetyistä asiakkaan maksumuodoista riippuu, tarvitaanko asiakkaalle tai asiakkaan pankkitilille tähän ohjeeseen kuulumattomia lisätietoja ja mitä ko. lisätiedot ovat. 
+<span data-ttu-id="2a3ac-104">Tässä tehtävässä kerrotaan, miten ISO20022-suoraveloituksen maksutiedostossa vaadittavat asiakkaan pankkitili ja asiakkaan suoraveloitusvaltakirja määritetään.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-104">This task walks you through setting up a customer bank account and a customer direct debit mandate which are required to generate the customer payment file like ISO20022 direct debit.</span></span> <span data-ttu-id="2a3ac-105">Määritetyistä asiakkaan maksumuodoista riippuu, tarvitaanko asiakkaalle tai asiakkaan pankkitilille tähän ohjeeseen kuulumattomia lisätietoja ja mitä ko. lisätiedot ovat.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-105">Depending on the customer payment formats tha are set up, additional information, not covered in this procedure, might be required for a customer or a customer bank account.</span></span> 
 
-Tämä tehtävä luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijainen osoite on Saksassa.
-
-
-
-Tämä on neljäs viidestä tehtävästä, joilla esitellään asiakasmaksujen prosessi, jossa käytetään sähköisen raportoinnin määrityksiä.
+<span data-ttu-id="2a3ac-106">Tämä tehtävä luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijainen osoite on Saksassa.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-106">This task was created using the demo data company DEMF with a legal entity primary address in Germany.</span></span>
 
 
-## <a name="set-up-a-customer-bank-account"></a>Asiakkaan pankkitilin määrittäminen
-1. Siirry kohtaan Myyntireskontra > Asiakkaat > Kaikki asiakkaat.
-2. Käytä pikasuodatinta tietueiden etsimiseen. Voit esimerkiksi suodattaa Tili-kenttää arvolla DE-010.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-4. Valitse toimintoruudussa Asiakas.
-5. Valitse Pankkitilit.
-6. Valitse Uusi.
-7. Kirjoita arvo Pankkitili-kenttään.
-8. Kirjoita arvo Nimi-kenttään.
-    * Kirjoita esimerkiksi 'EUR bank'.  
-9. Syötä tai valitse arvo Pankkiryhmät-kentässä.
-10. Syötä arvon IBAN-kenttään.
-    * Kirjoita esimerkiksi 'DE36200400000628808808'.  
-11. Syötä arvo SWIFT-koodi-kenttään.
-    * Esimerkki: Syötä COBADEFFXXX.  Huomaa, ettei SWIFT\BIC ole pakollinen monissa maksumuodoissa; se on kuitenkin suositeltavaa rekisteröidä pankkitilille.  
-12. Valitse Tallenna.
-13. Sulje sivu.
-14. Valitse Muokkaa.
-15. Laajenna Oletusmaksut-osa.
-16. Syötä tai valitse arvo Pankkitili-kentässä.
 
-## <a name="add-a-direct-debit-mandate"></a>Suoraveloitusvaltakirjan lisääminen
-1. Laajenna Suoraveloitusvaltakirjat-osa.
-2. ValitseLisää.
-3. Syötä tai valitse arvo Laskuttajan pankkitili -kentässä.
-    * Voit valita esimerkiksi arvon DEMF OPER.  
-4. Syötä päivämäärä Allekirjoitus-kenttään.
-5. Vahvista päivämäärän päivitys valitsemalla Kyllä.
-6. Syötä tai valitse arvo Allekirjoitussijainti-kenttään.
-7. Syötä numero Odotettu maksujen määrä -kenttään.
-8. Valitse OK.
-9. Valitse Tallenna.
+<span data-ttu-id="2a3ac-107">Tämä on neljäs viidestä tehtävästä, joilla esitellään asiakasmaksujen prosessi, jossa käytetään sähköisen raportoinnin määrityksiä.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-107">This is the fourth of five procedures that demonstrate the customer payment process using electronic reporting configurations.</span></span>
+
+
+## <a name="set-up-a-customer-bank-account"></a><span data-ttu-id="2a3ac-108">Asiakkaan pankkitilin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="2a3ac-108">Set up a customer bank account</span></span>
+1. <span data-ttu-id="2a3ac-109">Siirry kohtaan Myyntireskontra > Asiakkaat > Kaikki asiakkaat.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-109">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="2a3ac-110">Käytä pikasuodatinta tietueiden etsimiseen.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-110">Use the Quick Filter to find records.</span></span> <span data-ttu-id="2a3ac-111">Voit esimerkiksi suodattaa Tili-kenttää arvolla DE-010.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-111">For example, filter on the Account field with a value of 'DE-010 '.</span></span>
+3. <span data-ttu-id="2a3ac-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-112">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="2a3ac-113">Valitse toimintoruudussa Asiakas.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-113">On the Action Pane, click Customer.</span></span>
+5. <span data-ttu-id="2a3ac-114">Valitse Pankkitilit.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-114">Click Bank accounts.</span></span>
+6. <span data-ttu-id="2a3ac-115">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-115">Click New.</span></span>
+7. <span data-ttu-id="2a3ac-116">Kirjoita arvo Pankkitili-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-116">In the Bank account field, type a value.</span></span>
+8. <span data-ttu-id="2a3ac-117">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-117">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="2a3ac-118">Kirjoita esimerkiksi 'EUR bank'.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-118">For example, enter 'EUR bank'.</span></span>  
+9. <span data-ttu-id="2a3ac-119">Syötä tai valitse arvo Pankkiryhmät-kentässä.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-119">In the Bank groups field, enter or select a value.</span></span>
+10. <span data-ttu-id="2a3ac-120">Syötä arvon IBAN-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-120">In the IBAN field, type a value.</span></span>
+    * <span data-ttu-id="2a3ac-121">Kirjoita esimerkiksi 'DE36200400000628808808'.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-121">For example, enter 'DE36200400000628808808'.</span></span>  
+11. <span data-ttu-id="2a3ac-122">Syötä arvo SWIFT-koodi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-122">In the SWIFT code field, type a value.</span></span>
+    * <span data-ttu-id="2a3ac-123">Esimerkki: Syötä COBADEFFXXX.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-123">For example: Enter 'COBADEFFXXX'.</span></span>  <span data-ttu-id="2a3ac-124">Huomaa, ettei SWIFT\BIC ole pakollinen monissa maksumuodoissa; se on kuitenkin suositeltavaa rekisteröidä pankkitilille.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-124">Please note that SWIFT \ BIC is not mandatory for many payment formats however it is recommended to have it registered for a bank account.</span></span>  
+12. <span data-ttu-id="2a3ac-125">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-125">Click Save.</span></span>
+13. <span data-ttu-id="2a3ac-126">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-126">Close the page.</span></span>
+14. <span data-ttu-id="2a3ac-127">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-127">Click Edit.</span></span>
+15. <span data-ttu-id="2a3ac-128">Laajenna Oletusmaksut-osa.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-128">Expand the Payment defaults section.</span></span>
+16. <span data-ttu-id="2a3ac-129">Syötä tai valitse arvo Pankkitili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-129">In the Bank account field, enter or select a value.</span></span>
+
+## <a name="add-a-direct-debit-mandate"></a><span data-ttu-id="2a3ac-130">Suoraveloitusvaltakirjan lisääminen</span><span class="sxs-lookup"><span data-stu-id="2a3ac-130">Add a direct debit mandate</span></span>
+1. <span data-ttu-id="2a3ac-131">Laajenna Suoraveloitusvaltakirjat-osa.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-131">Expand the Direct debit mandates section.</span></span>
+2. <span data-ttu-id="2a3ac-132">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-132">Click Add.</span></span>
+3. <span data-ttu-id="2a3ac-133">Syötä tai valitse arvo Laskuttajan pankkitili -kentässä.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-133">In the Creditor bank account field, enter or select a value.</span></span>
+    * <span data-ttu-id="2a3ac-134">Voit valita esimerkiksi arvon DEMF OPER.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-134">For example, select DEMF OPER.</span></span>  
+4. <span data-ttu-id="2a3ac-135">Syötä päivämäärä Allekirjoitus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-135">In the Signature date field, enter a date.</span></span>
+5. <span data-ttu-id="2a3ac-136">Vahvista päivämäärän päivitys valitsemalla Kyllä.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-136">Click Yes to confirm the date update.</span></span>
+6. <span data-ttu-id="2a3ac-137">Syötä tai valitse arvo Allekirjoitussijainti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-137">In the Signature location field, enter or select a value.</span></span>
+7. <span data-ttu-id="2a3ac-138">Syötä numero Odotettu maksujen määrä -kenttään.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-138">In the Expected number of payments field, enter a number.</span></span>
+8. <span data-ttu-id="2a3ac-139">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-139">Click OK.</span></span>
+9. <span data-ttu-id="2a3ac-140">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="2a3ac-140">Click Save.</span></span>
 
 

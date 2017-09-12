@@ -17,39 +17,39 @@ ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: b73147d76880714d22db8e95d1369b4a01ddaae6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: dce0016ede691a70a6eb1bf3240fa595efec0241
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a>Siirrä tuotteita jakelukeskuksesta myymälään käyttäen ostotarjontaa
+# <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a><span data-ttu-id="7d794-103">Siirrä tuotteita jakelukeskuksesta myymälään käyttäen ostotarjontaa</span><span class="sxs-lookup"><span data-stu-id="7d794-103">Push products from distribution center to store using buyer's push</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tässä menettelyssä esitellään, miten ostovaatimus luodaan ja miten sitä käsitellään jaettaessa tuotteita yhdestä sijainnista yhteen tai useaan myymälään. Käyttäjä voi määrittää useita konfiguraatioita. Järjestelmä voi ehdottaa, miten tuotteet jaellaan, tai käyttäjä voi syöttää manuaalisesti, minne tuotteet jaellaan ja miten paljon kuhunkin myymälään tuotteita siirtyy. Menettely ei sisällä tietojen asetuksia, joita ostovaatimuksessa voi käyttää, kuten täydennyssääntöjä, organisaatiohierarkioita ja myymälän painoja. Näissä toimintaohjeissa käytetään esittely-yritystä USRT.
+<span data-ttu-id="7d794-104">Tässä menettelyssä esitellään, miten ostovaatimus luodaan ja miten sitä käsitellään jaettaessa tuotteita yhdestä sijainnista yhteen tai useaan myymälään.</span><span class="sxs-lookup"><span data-stu-id="7d794-104">This procedure walks through the steps to create and process a Buyer´s push to distribute products from one location to one or many stores.</span></span> <span data-ttu-id="7d794-105">Käyttäjä voi määrittää useita konfiguraatioita. Järjestelmä voi ehdottaa, miten tuotteet jaellaan, tai käyttäjä voi syöttää manuaalisesti, minne tuotteet jaellaan ja miten paljon kuhunkin myymälään tuotteita siirtyy.</span><span class="sxs-lookup"><span data-stu-id="7d794-105">The user can define multiple configurations and have the system suggest how to distribute the products, or manually enter where the products are distributed to and how much gets distributed to each store.</span></span> <span data-ttu-id="7d794-106">Menettely ei sisällä tietojen asetuksia, joita ostovaatimuksessa voi käyttää, kuten täydennyssääntöjä, organisaatiohierarkioita ja myymälän painoja.</span><span class="sxs-lookup"><span data-stu-id="7d794-106">This procedure doesn't include setup of data that can be used in the Buyer´s push, such as replenishment rules, organizational hierarchies, and store weights.</span></span> <span data-ttu-id="7d794-107">Näissä toimintaohjeissa käytetään esittely-yritystä USRT.</span><span class="sxs-lookup"><span data-stu-id="7d794-107">This procedure uses the USRT demo company.</span></span>
 
-1. Siirry Ostovaatimus-kohtaan.
-2. Valitse Uusi.
-3. Kirjoita arvo Kuvaus-kenttään.
-4. Syötä tai valitse arvo Toimipaikka-kenttään.
-5. Syötä tai valitse Varasto-kenttään varasto, joka sisältää tuotteita, joilla on käytettävissä olevia määriä.
-6. ValitseLisää.
-7. Merkitse valittu rivi luettelossa.
-8. Syötä tai valitse tuote Nimiketunnus-kentässä.
-9. ValitseLisää.
-10. Merkitse valittu rivi luettelossa.
-11. Syötä tai valitse tuotevariantti Nimiketunnus-kentässä.
-    * Kun tuotevariantti syötetään, jokaiselle variantille luodaan rivit.  
-12. Merkitse rivi luettelossa.
-13. Määritä Siirretty määrä -kenttään, miten monta valittua tuotetta haluat jaella.
-14. Syötä Siirrettävä lisämäärä -kenttään niiden tuotteiden määrä, joilla on jaettavaa käytettävissä olevaa määrää.
-15. Syötä Jakelu-kenttään Sijaintipaino.
-    * Voit valita muita tyyppejä jakelun eri säännöille.  
-16. Syötä tai valitse arvo Täydennyshierarkia-kentässä.
-17. Valitse Ota valikoimat huomioon -kentässä Kyllä.
-18. Valitse Laske määrät ja tarkista, että määrät on lisätty Varasto-osan riveille.
-19. Valitse Luo tilaus.
-20. Valitse Kyllä.
+1. <span data-ttu-id="7d794-108">Siirry Ostovaatimus-kohtaan.</span><span class="sxs-lookup"><span data-stu-id="7d794-108">Go to Buyer's push.</span></span>
+2. <span data-ttu-id="7d794-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7d794-109">Click New.</span></span>
+3. <span data-ttu-id="7d794-110">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7d794-110">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="7d794-111">Syötä tai valitse arvo Toimipaikka-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7d794-111">In the Site field, enter or select a value.</span></span>
+5. <span data-ttu-id="7d794-112">Syötä tai valitse Varasto-kenttään varasto, joka sisältää tuotteita, joilla on käytettävissä olevia määriä.</span><span class="sxs-lookup"><span data-stu-id="7d794-112">In the Warehouse field, enter or select a warehouse that has products with on-hand quantities.</span></span>
+6. <span data-ttu-id="7d794-113">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="7d794-113">Click Add.</span></span>
+7. <span data-ttu-id="7d794-114">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7d794-114">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="7d794-115">Syötä tai valitse tuote Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7d794-115">In the Item number field, enter or select a product.</span></span>
+9. <span data-ttu-id="7d794-116">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="7d794-116">Click Add.</span></span>
+10. <span data-ttu-id="7d794-117">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7d794-117">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="7d794-118">Syötä tai valitse tuotevariantti Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7d794-118">In the Item number field, enter or select a variant product.</span></span>
+    * <span data-ttu-id="7d794-119">Kun tuotevariantti syötetään, jokaiselle variantille luodaan rivit.</span><span class="sxs-lookup"><span data-stu-id="7d794-119">When entering a variant product, lines will be created for each variant.</span></span>  
+12. <span data-ttu-id="7d794-120">Merkitse rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7d794-120">In the list, mark a row.</span></span>
+13. <span data-ttu-id="7d794-121">Määritä Siirretty määrä -kenttään, miten monta valittua tuotetta haluat jaella.</span><span class="sxs-lookup"><span data-stu-id="7d794-121">In the Pushed quantity field, type how many of the selected product you want to distribute.</span></span>
+14. <span data-ttu-id="7d794-122">Syötä Siirrettävä lisämäärä -kenttään niiden tuotteiden määrä, joilla on jaettavaa käytettävissä olevaa määrää.</span><span class="sxs-lookup"><span data-stu-id="7d794-122">In the Additional quantity to push field, enter the quantity of the products that have available quantity to distribute.</span></span>
+15. <span data-ttu-id="7d794-123">Syötä Jakelu-kenttään Sijaintipaino.</span><span class="sxs-lookup"><span data-stu-id="7d794-123">In the Distribution field, enter 'Location weight'.</span></span>
+    * <span data-ttu-id="7d794-124">Voit valita muita tyyppejä jakelun eri säännöille.</span><span class="sxs-lookup"><span data-stu-id="7d794-124">You can select the other types to use other rules for the distribution.</span></span>  
+16. <span data-ttu-id="7d794-125">Syötä tai valitse arvo Täydennyshierarkia-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7d794-125">In the Replenishment hierarchy field, select a value.</span></span>
+17. <span data-ttu-id="7d794-126">Valitse Ota valikoimat huomioon -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="7d794-126">Select Yes in the Respect assortments field.</span></span>
+18. <span data-ttu-id="7d794-127">Valitse Laske määrät ja tarkista, että määrät on lisätty Varasto-osan riveille.</span><span class="sxs-lookup"><span data-stu-id="7d794-127">Click Calculate quantities and review the quantities that are added to the rows in the Warehouse section.</span></span>
+19. <span data-ttu-id="7d794-128">Valitse Luo tilaus.</span><span class="sxs-lookup"><span data-stu-id="7d794-128">Click Create order.</span></span>
+20. <span data-ttu-id="7d794-129">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="7d794-129">Click Yes.</span></span>
 
 

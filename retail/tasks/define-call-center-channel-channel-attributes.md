@@ -16,88 +16,88 @@ ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 45972e6eed9ea73ed37dcf6e45c6c866d94c7174
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c3d2f6785b9054ede7ea96ebd48c5d1f23e510e7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-call-center-channel-and-channel-attributes"></a>Määritä puhelinkeskuksen kanava ja kanavamääritteet
+# <a name="define-call-center-channel-and-channel-attributes"></a><span data-ttu-id="c6592-103">Määritä puhelinkeskuksen kanava ja kanavamääritteet</span><span class="sxs-lookup"><span data-stu-id="c6592-103">Define call center channel and channel attributes</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kerrotaan, miten uusi vähittäismyyntikanava luodaan ja miten kanavamääritteet määritetään. Tämän tehtävän luomisessa käytetty USRT-yrityksen demotietoja. Tämä menettely on tarkoitettu vähittäismyymälän IT-osaston roolille.
+<span data-ttu-id="c6592-104">Tässä menettelyssä kerrotaan, miten uusi vähittäismyyntikanava luodaan ja miten kanavamääritteet määritetään.</span><span class="sxs-lookup"><span data-stu-id="c6592-104">This procedure walks through creating a new retail channel and defining channel attributes.</span></span> <span data-ttu-id="c6592-105">Tämän tehtävän luomisessa käytetty USRT-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="c6592-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="c6592-106">Tämä menettely on tarkoitettu vähittäismyymälän IT-osaston roolille.</span><span class="sxs-lookup"><span data-stu-id="c6592-106">This procedure is intended for the Retail IT role.</span></span>
 
 
-## <a name="create-new-store"></a>Uuden myymälän luominen
-1. Siirry Kaikki työtiloja > Kanavan käyttöönotto.
-2. Valitse Uusi kanava.
-3. Valitse Myymälä.
-4. Kirjoita arvo Nimi-kenttään.
-5. Kirjoita arvo Myymälän numero -kenttään.
-6. Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.
-7. Etsi haluamasi tietue luettelosta ja valitse se.
-8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-9. Valitse vaihtoehto Varaston aikavyöhyke -kentässä.
-10. Avaa haku valitsemalla Kanavaprofiili-kentässä avattavan valikon painike.
-11. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-12. Avaa haku valitsemalla Kieli-kentässä avattavan valikon painike.
-13. Etsi haluamasi tietue luettelosta ja valitse se.
-14. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-15. Avaa haku valitsemalla Arvonlisäveroryhmä-kentässä avattavan valikon painike.
-16. Etsi haluamasi tietue luettelosta ja valitse se.
-17. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-18. Avaa haku valitsemalla Asiakkaan osoitekirja -kentässä avattavan valikon painike.
-    * Valitse osoitekirja, johon tämän myymälän asiakkaat linkitetään.  
-19. Etsi haluamasi tietue luettelosta ja valitse se.
-20. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-21. Klikkaa Valitse.
-22. Avaa haku valitsemalla Työntekijän osoitekirja -kentässä avattavan valikon painike.
-    * Valitse osoitekirja, johon tämän kanavan kassat linkitetään.  
-23. Etsi haluamasi tietue luettelosta ja valitse se.
-24. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-25. Klikkaa Valitse.
-26. Avaa haku valitsemalla Oletusasiakas-kentässä avattavan valikon painike.
-27. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-28. Laajenna tai tiivistä Näytön asettelu -osa.
-29. Avaa haku valitsemalla Näytön asettelun tunnus -kentässä avattavan valikon painike.
-    * Valitse tämän myymälän myyntipisteen näytön oletusasettelu.  
-30. Etsi haluamasi tietue luettelosta ja valitse se.
-31. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-32. Valitse toimintoruudussa Määritä.
-33. Valitse Kanavamääritteet.
-34. Valitse Uusi.
-35. Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.
-36. Etsi haluamasi tietue luettelosta ja valitse se.
-37. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-38. Valitse Tallenna.
-39. Sulje sivu.
-40. Valitse toimintoruudussa Määritä.
-41. Valitse Maksutavat.
-42. Valitse Uusi.
-43. Avaa haku valitsemalla Maksutapa-kentässä avattavan valikon painike.
-44. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-45. Laajenna tai tiivistä Kirjaus-osa.
-46. Määritä Tilinumero-kenttään haluamasi arvot.
-47. Valitse Tallenna.
-48. Sulje sivu.
-49. Valitse toimintoruudussa Määritä.
-50. Valitse Kassatilitys.
-51. Valitse Uusi.
-52. Syötä luku Summa tapahtuman valuuttana -kenttään.
-53. Avaa haku valitsemalla Valuutta-kentässä avattavan valikon painike.
-54. Etsi haluamasi tietue luettelosta ja valitse se.
-55. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-56. Valitse Tallenna.
-57. Sulje sivu.
-58. Valitse toimintoruudussa Määritä.
-59. Valitse Myymäläpaikantimen ryhmämääritys.
-60. Valitse Uusi.
-61. Merkitse valittu rivi luettelossa.
-62. Avaa haku valitsemalla Paikanninryhmä-kentässä avattavan valikon painike.
-63. Etsi haluamasi tietue luettelosta ja valitse se.
-64. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-65. Valitse Tallenna.
-66. Sulje sivu.
+## <a name="create-new-store"></a><span data-ttu-id="c6592-107">Uuden myymälän luominen</span><span class="sxs-lookup"><span data-stu-id="c6592-107">Create new store</span></span>
+1. <span data-ttu-id="c6592-108">Siirry Kaikki työtiloja > Kanavan käyttöönotto.</span><span class="sxs-lookup"><span data-stu-id="c6592-108">Go to All workspaces > Channel deployment.</span></span>
+2. <span data-ttu-id="c6592-109">Valitse Uusi kanava.</span><span class="sxs-lookup"><span data-stu-id="c6592-109">Click New channel.</span></span>
+3. <span data-ttu-id="c6592-110">Valitse Myymälä.</span><span class="sxs-lookup"><span data-stu-id="c6592-110">Click Store.</span></span>
+4. <span data-ttu-id="c6592-111">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c6592-111">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="c6592-112">Kirjoita arvo Myymälän numero -kenttään.</span><span class="sxs-lookup"><span data-stu-id="c6592-112">In the Store number field, type a value.</span></span>
+6. <span data-ttu-id="c6592-113">Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-113">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="c6592-114">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c6592-114">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="c6592-115">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-115">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="c6592-116">Valitse vaihtoehto Varaston aikavyöhyke -kentässä.</span><span class="sxs-lookup"><span data-stu-id="c6592-116">In the Store time zone field, select an option.</span></span>
+10. <span data-ttu-id="c6592-117">Avaa haku valitsemalla Kanavaprofiili-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-117">In the Channel profile field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="c6592-118">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-118">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="c6592-119">Avaa haku valitsemalla Kieli-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-119">In the Language field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="c6592-120">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c6592-120">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="c6592-121">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-121">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="c6592-122">Avaa haku valitsemalla Arvonlisäveroryhmä-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-122">In the Sales tax group field, click the drop-down button to open the lookup.</span></span>
+16. <span data-ttu-id="c6592-123">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c6592-123">In the list, find and select the desired record.</span></span>
+17. <span data-ttu-id="c6592-124">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-124">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="c6592-125">Avaa haku valitsemalla Asiakkaan osoitekirja -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-125">In the Customer address book field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="c6592-126">Valitse osoitekirja, johon tämän myymälän asiakkaat linkitetään.</span><span class="sxs-lookup"><span data-stu-id="c6592-126">Select the address book used to link customers to this store.</span></span>  
+19. <span data-ttu-id="c6592-127">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c6592-127">In the list, find and select the desired record.</span></span>
+20. <span data-ttu-id="c6592-128">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-128">In the list, click the link in the selected row.</span></span>
+21. <span data-ttu-id="c6592-129">Klikkaa Valitse.</span><span class="sxs-lookup"><span data-stu-id="c6592-129">Click Select.</span></span>
+22. <span data-ttu-id="c6592-130">Avaa haku valitsemalla Työntekijän osoitekirja -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-130">In the Employee address book field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="c6592-131">Valitse osoitekirja, johon tämän kanavan kassat linkitetään.</span><span class="sxs-lookup"><span data-stu-id="c6592-131">Select the address book used to link cashiers to this channel.</span></span>  
+23. <span data-ttu-id="c6592-132">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c6592-132">In the list, find and select the desired record.</span></span>
+24. <span data-ttu-id="c6592-133">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-133">In the list, click the link in the selected row.</span></span>
+25. <span data-ttu-id="c6592-134">Klikkaa Valitse.</span><span class="sxs-lookup"><span data-stu-id="c6592-134">Click Select.</span></span>
+26. <span data-ttu-id="c6592-135">Avaa haku valitsemalla Oletusasiakas-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-135">In the Default customer field, click the drop-down button to open the lookup.</span></span>
+27. <span data-ttu-id="c6592-136">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-136">In the list, click the link in the selected row.</span></span>
+28. <span data-ttu-id="c6592-137">Laajenna tai tiivistä Näytön asettelu -osa.</span><span class="sxs-lookup"><span data-stu-id="c6592-137">Expand or collapse the Screen layout section.</span></span>
+29. <span data-ttu-id="c6592-138">Avaa haku valitsemalla Näytön asettelun tunnus -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-138">In the Screen layout ID field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="c6592-139">Valitse tämän myymälän myyntipisteen näytön oletusasettelu.</span><span class="sxs-lookup"><span data-stu-id="c6592-139">Select the default POS screen layout for this store.</span></span>  
+30. <span data-ttu-id="c6592-140">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c6592-140">In the list, find and select the desired record.</span></span>
+31. <span data-ttu-id="c6592-141">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-141">In the list, click the link in the selected row.</span></span>
+32. <span data-ttu-id="c6592-142">Valitse toimintoruudussa Määritä.</span><span class="sxs-lookup"><span data-stu-id="c6592-142">On the Action Pane, click Set up.</span></span>
+33. <span data-ttu-id="c6592-143">Valitse Kanavamääritteet.</span><span class="sxs-lookup"><span data-stu-id="c6592-143">Click Channel attributes.</span></span>
+34. <span data-ttu-id="c6592-144">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c6592-144">Click New.</span></span>
+35. <span data-ttu-id="c6592-145">Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-145">In the Name field, click the drop-down button to open the lookup.</span></span>
+36. <span data-ttu-id="c6592-146">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c6592-146">In the list, find and select the desired record.</span></span>
+37. <span data-ttu-id="c6592-147">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-147">In the list, click the link in the selected row.</span></span>
+38. <span data-ttu-id="c6592-148">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c6592-148">Click Save.</span></span>
+39. <span data-ttu-id="c6592-149">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="c6592-149">Close the page.</span></span>
+40. <span data-ttu-id="c6592-150">Valitse toimintoruudussa Määritä.</span><span class="sxs-lookup"><span data-stu-id="c6592-150">On the Action Pane, click Set up.</span></span>
+41. <span data-ttu-id="c6592-151">Valitse Maksutavat.</span><span class="sxs-lookup"><span data-stu-id="c6592-151">Click Payment methods.</span></span>
+42. <span data-ttu-id="c6592-152">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c6592-152">Click New.</span></span>
+43. <span data-ttu-id="c6592-153">Avaa haku valitsemalla Maksutapa-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-153">In the Payment method field, click the drop-down button to open the lookup.</span></span>
+44. <span data-ttu-id="c6592-154">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-154">In the list, click the link in the selected row.</span></span>
+45. <span data-ttu-id="c6592-155">Laajenna tai tiivistä Kirjaus-osa.</span><span class="sxs-lookup"><span data-stu-id="c6592-155">Expand or collapse the Posting section.</span></span>
+46. <span data-ttu-id="c6592-156">Määritä Tilinumero-kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="c6592-156">In the Account number field, specify the desired values.</span></span>
+47. <span data-ttu-id="c6592-157">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c6592-157">Click Save.</span></span>
+48. <span data-ttu-id="c6592-158">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="c6592-158">Close the page.</span></span>
+49. <span data-ttu-id="c6592-159">Valitse toimintoruudussa Määritä.</span><span class="sxs-lookup"><span data-stu-id="c6592-159">On the Action Pane, click Set up.</span></span>
+50. <span data-ttu-id="c6592-160">Valitse Kassatilitys.</span><span class="sxs-lookup"><span data-stu-id="c6592-160">Click Cash declaration.</span></span>
+51. <span data-ttu-id="c6592-161">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c6592-161">Click New.</span></span>
+52. <span data-ttu-id="c6592-162">Syötä luku Summa tapahtuman valuuttana -kenttään.</span><span class="sxs-lookup"><span data-stu-id="c6592-162">In the Amount in transaction currency field, enter a number.</span></span>
+53. <span data-ttu-id="c6592-163">Avaa haku valitsemalla Valuutta-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-163">In the Currency field, click the drop-down button to open the lookup.</span></span>
+54. <span data-ttu-id="c6592-164">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c6592-164">In the list, find and select the desired record.</span></span>
+55. <span data-ttu-id="c6592-165">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-165">In the list, click the link in the selected row.</span></span>
+56. <span data-ttu-id="c6592-166">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c6592-166">Click Save.</span></span>
+57. <span data-ttu-id="c6592-167">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="c6592-167">Close the page.</span></span>
+58. <span data-ttu-id="c6592-168">Valitse toimintoruudussa Määritä.</span><span class="sxs-lookup"><span data-stu-id="c6592-168">On the Action Pane, click Set up.</span></span>
+59. <span data-ttu-id="c6592-169">Valitse Myymäläpaikantimen ryhmämääritys.</span><span class="sxs-lookup"><span data-stu-id="c6592-169">Click Store locator group assignment.</span></span>
+60. <span data-ttu-id="c6592-170">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c6592-170">Click New.</span></span>
+61. <span data-ttu-id="c6592-171">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="c6592-171">In the list, mark the selected row.</span></span>
+62. <span data-ttu-id="c6592-172">Avaa haku valitsemalla Paikanninryhmä-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6592-172">In the Locator group field, click the drop-down button to open the lookup.</span></span>
+63. <span data-ttu-id="c6592-173">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c6592-173">In the list, find and select the desired record.</span></span>
+64. <span data-ttu-id="c6592-174">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6592-174">In the list, click the link in the selected row.</span></span>
+65. <span data-ttu-id="c6592-175">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c6592-175">Click Save.</span></span>
+66. <span data-ttu-id="c6592-176">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="c6592-176">Close the page.</span></span>
 
 

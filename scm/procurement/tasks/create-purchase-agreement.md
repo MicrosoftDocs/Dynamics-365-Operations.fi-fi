@@ -16,72 +16,72 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 22a252d98da5415f50a1d6ffb28f57aae19b5d14
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0d0cc6508071bea3f622bc21f06aa55d2b757b6f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-purchase-agreement"></a>Luo ostosopimus
+# <a name="create-a-purchase-agreement"></a><span data-ttu-id="a0419-103">Luo ostosopimus</span><span class="sxs-lookup"><span data-stu-id="a0419-103">Create a purchase agreement</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tämä menettely opastaa luomaan ostosopimuksen. Se on yleensä ostopäällikön tehtävä. Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoilla tai omilla tiedoillasi. Ennen aloittamista on määritettävä ostosopimusluokitukset. Kun olet luonut sopimuksen, voit luoda sen avulla ostotilauksen, jolloin ostotilauksen ehdot kopioituvat otsikkoon ja niille tilauksen riveille, joihin sopimus vaikuttaa.
+<span data-ttu-id="a0419-104">Tämä menettely opastaa luomaan ostosopimuksen.</span><span class="sxs-lookup"><span data-stu-id="a0419-104">This procedure guides you through the creation of a purchase agreement.</span></span> <span data-ttu-id="a0419-105">Se on yleensä ostopäällikön tehtävä.</span><span class="sxs-lookup"><span data-stu-id="a0419-105">This would typically be done by a purchasing manager.</span></span> <span data-ttu-id="a0419-106">Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoilla tai omilla tiedoillasi.</span><span class="sxs-lookup"><span data-stu-id="a0419-106">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="a0419-107">Ennen aloittamista on määritettävä ostosopimusluokitukset.</span><span class="sxs-lookup"><span data-stu-id="a0419-107">You need to have set up purchase agreement classifications before you start.</span></span> <span data-ttu-id="a0419-108">Kun olet luonut sopimuksen, voit luoda sen avulla ostotilauksen, jolloin ostotilauksen ehdot kopioituvat otsikkoon ja niille tilauksen riveille, joihin sopimus vaikuttaa.</span><span class="sxs-lookup"><span data-stu-id="a0419-108">Once you've created an agreement you can use it when you create a PO, and this will copy the purchase agreement conditions to the header and to any lines in the order that are affected by the agreement.</span></span>
 
 
-## <a name="create-a-new-purchase-agreement"></a>Luo uusi ostosopimus
-1. Valitse Hankinta > Ostosopimukset > Ostosopimukset.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Toimittajan tili -kentässä avattavan valikon painike.
-4. Etsi haluamasi tietue luettelosta ja valitse se.
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Avaa haku napsauttamalla Ostosopimuksen luokitus -kentässä avattavan valikon painiketta.
-7. Etsi haluamasi tietue luettelosta ja valitse se.
-8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-9. Laajenna Yleiset-osa.
-10. Kirjoita päivämäärä Vanhentumispäivä-kenttään.
-    * Tämä vanhentumispäivä on kaikkien sitoutumisrivien oletusarvo ja määrittää, miten kauan kukin sitoutuminen on voimassa.  
-11. Kirjoita Asiakirjan nimi -kenttään ostosopimuksen nimi.
-    * Jätä Oletussitoumus -kentän arvoksi Tuotteen määrän vahvistus (tai vaihda tarvittaessa tähän arvoon).  
-    * Sitoutumisen oletusavo määrittää sopimusrivien vaihtoehdot. Jos tarvitset sopimuksen rivejä luodessasi uuden sitoutumistyypin, sinun on muutettava otsikon oletussitoutumista.  Sitoutumistyyppejä on 4: Tuotteen määrän vahvistus – koskee tiettyä tuotemäärää. Tuotteen arvon vahvistus – koskee tuotteen tiettyä valuuttasumma. Tuoteluokan arvon sitoutuminen – koskee tiettyä hankintaluokan valuuttasummaa, jossa summa voi olla luettelonimike tai ei-luettelonimike. Arvon sitoutuminen – koskee tiettyä valuuttasumma, jonka voi täyttää mikä tahansa tuote tai hankintaluokka.  
-12. Valitse OK.
+## <a name="create-a-new-purchase-agreement"></a><span data-ttu-id="a0419-109">Luo uusi ostosopimus</span><span class="sxs-lookup"><span data-stu-id="a0419-109">Create a new purchase agreement</span></span>
+1. <span data-ttu-id="a0419-110">Valitse Hankinta > Ostosopimukset > Ostosopimukset.</span><span class="sxs-lookup"><span data-stu-id="a0419-110">Go to Procurement and sourcing > Purchase agreements > Purchase agreements.</span></span>
+2. <span data-ttu-id="a0419-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="a0419-111">Click New.</span></span>
+3. <span data-ttu-id="a0419-112">Avaa haku valitsemalla Toimittajan tili -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a0419-112">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="a0419-113">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a0419-113">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="a0419-114">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a0419-114">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="a0419-115">Avaa haku napsauttamalla Ostosopimuksen luokitus -kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="a0419-115">In the Purchase agreement classification field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="a0419-116">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a0419-116">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="a0419-117">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a0419-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="a0419-118">Laajenna Yleiset-osa.</span><span class="sxs-lookup"><span data-stu-id="a0419-118">Expand the General section.</span></span>
+10. <span data-ttu-id="a0419-119">Kirjoita päivämäärä Vanhentumispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="a0419-119">In the Expiration date field, enter a date.</span></span>
+    * <span data-ttu-id="a0419-120">Tämä vanhentumispäivä on kaikkien sitoutumisrivien oletusarvo ja määrittää, miten kauan kukin sitoutuminen on voimassa.</span><span class="sxs-lookup"><span data-stu-id="a0419-120">This expiration date will be the default for all commitment lines and will determine how long each specific commitment is valid.</span></span>  
+11. <span data-ttu-id="a0419-121">Kirjoita Asiakirjan nimi -kenttään ostosopimuksen nimi.</span><span class="sxs-lookup"><span data-stu-id="a0419-121">In the Document title field, type a name for your purchase agreement.</span></span>
+    * <span data-ttu-id="a0419-122">Jätä Oletussitoumus -kentän arvoksi Tuotteen määrän vahvistus (tai vaihda tarvittaessa tähän arvoon).</span><span class="sxs-lookup"><span data-stu-id="a0419-122">Leave the Default commitment field set to Product quantity commitment (or change it if it’s not set to this).</span></span>  
+    * <span data-ttu-id="a0419-123">Sitoutumisen oletusavo määrittää sopimusrivien vaihtoehdot.</span><span class="sxs-lookup"><span data-stu-id="a0419-123">The default commitment value determines your options on the agreement lines.</span></span> <span data-ttu-id="a0419-124">Jos tarvitset sopimuksen rivejä luodessasi uuden sitoutumistyypin, sinun on muutettava otsikon oletussitoutumista.</span><span class="sxs-lookup"><span data-stu-id="a0419-124">If you need a new commitment type when you’re creating the agreement lines, you need to change the default commitment on the header.</span></span>  <span data-ttu-id="a0419-125">Sitoutumistyyppejä on 4: Tuotteen määrän vahvistus – koskee tiettyä tuotemäärää. Tuotteen arvon vahvistus – koskee tuotteen tiettyä valuuttasumma. Tuoteluokan arvon sitoutuminen – koskee tiettyä hankintaluokan valuuttasummaa, jossa summa voi olla luettelonimike tai ei-luettelonimike. Arvon sitoutuminen – koskee tiettyä valuuttasumma, jonka voi täyttää mikä tahansa tuote tai hankintaluokka.</span><span class="sxs-lookup"><span data-stu-id="a0419-125">There are 4 types of commitments: Product quantity commitment - for a specific quantity of a product; Product value commitment - for a specific currency amount of a product; Product category value commitment - for a specific currency amount in a procurement category where the amount can be for a catalog item or a non-catalog item; Value commitment - for a specific currency amount which can be fulfilled by any product or by any procurement category.</span></span>  
+12. <span data-ttu-id="a0419-126">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="a0419-126">Click OK.</span></span>
 
-## <a name="add-a-commitment"></a>Lisää sitoutuminen
-1. Valitse Lisää rivi.
-2. Merkitse valittu rivi luettelossa.
-3. Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.
-4. Valitse tuote,johon haluat lisätä sitoutumisen.
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Kirjoita numero Määrä-kenttään.
-    * Kokonaismäärä, jonka olet sopinut ostavasi toimittajalta.  
-7. Syötä Yksikköhinta-kenttään numero.
-8. Laajenna Rivin erittely -osa.
-9. Valitse Maksimi pakotetaan -asetukseksi Kyllä.
-    * Maksimi pakotetaan -vaihtoehto rajoittaa sitoutumisen käyttöä. Voit ostaa enintään rivin Määrä-kentässä määritetyn määrän.  
-10. Tiivistä Rivitiedot-osa.
+## <a name="add-a-commitment"></a><span data-ttu-id="a0419-127">Lisää sitoutuminen</span><span class="sxs-lookup"><span data-stu-id="a0419-127">Add a commitment</span></span>
+1. <span data-ttu-id="a0419-128">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="a0419-128">Click Add line.</span></span>
+2. <span data-ttu-id="a0419-129">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="a0419-129">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="a0419-130">Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a0419-130">In the Item number field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="a0419-131">Valitse tuote,johon haluat lisätä sitoutumisen.</span><span class="sxs-lookup"><span data-stu-id="a0419-131">Select the product you want to add a commitment for.</span></span>
+5. <span data-ttu-id="a0419-132">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a0419-132">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="a0419-133">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="a0419-133">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="a0419-134">Kokonaismäärä, jonka olet sopinut ostavasi toimittajalta.</span><span class="sxs-lookup"><span data-stu-id="a0419-134">This is the total quantity that you have agreed to buy from your vendor.</span></span>  
+7. <span data-ttu-id="a0419-135">Syötä Yksikköhinta-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="a0419-135">In the Unit price field, enter a number.</span></span>
+8. <span data-ttu-id="a0419-136">Laajenna Rivin erittely -osa.</span><span class="sxs-lookup"><span data-stu-id="a0419-136">Expand the Line details section.</span></span>
+9. <span data-ttu-id="a0419-137">Valitse Maksimi pakotetaan -asetukseksi Kyllä.</span><span class="sxs-lookup"><span data-stu-id="a0419-137">Set the Max is enforced option to Yes.</span></span>
+    * <span data-ttu-id="a0419-138">Maksimi pakotetaan -vaihtoehto rajoittaa sitoutumisen käyttöä.</span><span class="sxs-lookup"><span data-stu-id="a0419-138">The Max is enforced option limits the use of the commitment.</span></span> <span data-ttu-id="a0419-139">Voit ostaa enintään rivin Määrä-kentässä määritetyn määrän.</span><span class="sxs-lookup"><span data-stu-id="a0419-139">You can only purchase up to the quantity that's specified in the Quantity field for the line.</span></span>  
+10. <span data-ttu-id="a0419-140">Tiivistä Rivitiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="a0419-140">Collapse the Line details section.</span></span>
 
-## <a name="add-header-conditions"></a>Lisää otsikkoehdot
-1. Valitse toimintoruudussa Asetukset.
-2. Valitse Vaihda näkymä.
-3. Valitse Otsikkonäkymä.
-4. Laajenna Ehdot-osa.
-5. Avaa haku valitsemalla Maksutapa-kentässä avattavan valikon painike.
-    * Toimittajatilin maksuehdot näkyvät tässä oletusarvoisesti.       
-6. Etsi haluamasi tietue luettelosta ja valitse se.
-7. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-8. Avaa haku napsauttamalla Toimitustapa-kentässä avattavan valikon painiketta.
-9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-10. Avaa haku napsauttamalla Toimitusehdot-kentässä avattavan valikon painiketta.
-11. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
+## <a name="add-header-conditions"></a><span data-ttu-id="a0419-141">Lisää otsikkoehdot</span><span class="sxs-lookup"><span data-stu-id="a0419-141">Add header conditions</span></span>
+1. <span data-ttu-id="a0419-142">Valitse toimintoruudussa Asetukset.</span><span class="sxs-lookup"><span data-stu-id="a0419-142">On the Action Pane, click Options.</span></span>
+2. <span data-ttu-id="a0419-143">Valitse Vaihda näkymä.</span><span class="sxs-lookup"><span data-stu-id="a0419-143">Click Change view.</span></span>
+3. <span data-ttu-id="a0419-144">Valitse Otsikkonäkymä.</span><span class="sxs-lookup"><span data-stu-id="a0419-144">Click Header view.</span></span>
+4. <span data-ttu-id="a0419-145">Laajenna Ehdot-osa.</span><span class="sxs-lookup"><span data-stu-id="a0419-145">Expand the Terms section.</span></span>
+5. <span data-ttu-id="a0419-146">Avaa haku valitsemalla Maksutapa-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a0419-146">In the Method of payment field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="a0419-147">Toimittajatilin maksuehdot näkyvät tässä oletusarvoisesti.</span><span class="sxs-lookup"><span data-stu-id="a0419-147">The payment terms from the vendor account are shown here by default.</span></span>       
+6. <span data-ttu-id="a0419-148">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a0419-148">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="a0419-149">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a0419-149">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="a0419-150">Avaa haku napsauttamalla Toimitustapa-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="a0419-150">In the Mode of delivery field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="a0419-151">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a0419-151">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="a0419-152">Avaa haku napsauttamalla Toimitusehdot-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="a0419-152">In the Delivery terms field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="a0419-153">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a0419-153">In the list, click the link in the selected row.</span></span>
 
-## <a name="confirm-and-activate-the-agreement"></a>Vahvista ja aktivoi sopimus
-1. Valitse toimintoruudussa Ostosopimus.
-2. Valitse Vahvistus.
-    * Valitse Merkitse sopimus voimassa olevaksi -asetukseksi Kyllä.  
-3. Valitse OK.
-4. Valitse toimintoruudussa Ostosopimus.
-5. Valitse Ostosopimuksen vahvistukset.
-    * Esikatselu/tulostus-vaihtoehdolla voi luoda ostosopimusasiakirjan, jonka voi tulostaa tai lähettää asiakkaalle. Jos päivität sopimusta myöhemmin ja vahvistat sen uudelleen, molemmat versiot näkyvät tässä.  
-6. Sulje sivu.
+## <a name="confirm-and-activate-the-agreement"></a><span data-ttu-id="a0419-154">Vahvista ja aktivoi sopimus</span><span class="sxs-lookup"><span data-stu-id="a0419-154">Confirm and activate the agreement</span></span>
+1. <span data-ttu-id="a0419-155">Valitse toimintoruudussa Ostosopimus.</span><span class="sxs-lookup"><span data-stu-id="a0419-155">On the Action Pane, click Purchase agreement.</span></span>
+2. <span data-ttu-id="a0419-156">Valitse Vahvistus.</span><span class="sxs-lookup"><span data-stu-id="a0419-156">Click Confirmation.</span></span>
+    * <span data-ttu-id="a0419-157">Valitse Merkitse sopimus voimassa olevaksi -asetukseksi Kyllä.</span><span class="sxs-lookup"><span data-stu-id="a0419-157">Set the Mark agreement as effective option to Yes.</span></span>  
+3. <span data-ttu-id="a0419-158">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="a0419-158">Click OK.</span></span>
+4. <span data-ttu-id="a0419-159">Valitse toimintoruudussa Ostosopimus.</span><span class="sxs-lookup"><span data-stu-id="a0419-159">On the Action Pane, click Purchase agreement.</span></span>
+5. <span data-ttu-id="a0419-160">Valitse Ostosopimuksen vahvistukset.</span><span class="sxs-lookup"><span data-stu-id="a0419-160">Click Purchase agreement confirmations.</span></span>
+    * <span data-ttu-id="a0419-161">Esikatselu/tulostus-vaihtoehdolla voi luoda ostosopimusasiakirjan, jonka voi tulostaa tai lähettää asiakkaalle.</span><span class="sxs-lookup"><span data-stu-id="a0419-161">The Preview/Print option allows you to generate a document for the purchase agreement which you can then print or send to the vendor.</span></span> <span data-ttu-id="a0419-162">Jos päivität sopimusta myöhemmin ja vahvistat sen uudelleen, molemmat versiot näkyvät tässä.</span><span class="sxs-lookup"><span data-stu-id="a0419-162">If you update the agreement later on and re-confirm it, both versions will be shown here.</span></span>  
+6. <span data-ttu-id="a0419-163">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="a0419-163">Close the page.</span></span>
 
 

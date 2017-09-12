@@ -16,49 +16,49 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: e55a1325814d9671030b36742f29056cd3117b31
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6aef83b18ba5f18506921e08f3674b6bb272d3ab
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enter-applicant-and-application-data-manually"></a>Anna hakijan ja hakemuksen tiedot manuaalisesti
+# <a name="enter-applicant-and-application-data-manually"></a><span data-ttu-id="1cf82-103">Anna hakijan ja hakemuksen tiedot manuaalisesti</span><span class="sxs-lookup"><span data-stu-id="1cf82-103">Enter applicant and application data manually</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kerrotaan, miten hakijoiden ja hakemusten tietoja ylläpidetään manuaalisesti.   Voit syöttää ja ylläpitää hakijoiden henkilökohtaisia tietoja, haastattelupäivämääriä ja -aikoja, suosituksia, osaamisalueita ja apuvälinepyyntöjä. Voit myös päivittää hakijoiden työhakemusten tilaa ja luoda hakijoille kansilehtiä tai sähköpostiviestejä. Kun hakijatietue on luotu, hakijalle luodaan henkilötietue yleiseen osoitekirjaan.       Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+<span data-ttu-id="1cf82-104">Tässä menettelyssä kerrotaan, miten hakijoiden ja hakemusten tietoja ylläpidetään manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="1cf82-104">This procedure shows how to manually maintain information about applicants and their application.</span></span>   <span data-ttu-id="1cf82-105">Voit syöttää ja ylläpitää hakijoiden henkilökohtaisia tietoja, haastattelupäivämääriä ja -aikoja, suosituksia, osaamisalueita ja apuvälinepyyntöjä.</span><span class="sxs-lookup"><span data-stu-id="1cf82-105">You can enter and maintain personal information, interview dates and times, references, competencies, and accommodation requests for applicants.</span></span> <span data-ttu-id="1cf82-106">Voit myös päivittää hakijoiden työhakemusten tilaa ja luoda hakijoille kansilehtiä tai sähköpostiviestejä.</span><span class="sxs-lookup"><span data-stu-id="1cf82-106">You can also update the status of applicants’ applications for employment and create letters or email messages to communicate with applicants.</span></span> <span data-ttu-id="1cf82-107">Kun hakijatietue on luotu, hakijalle luodaan henkilötietue yleiseen osoitekirjaan.</span><span class="sxs-lookup"><span data-stu-id="1cf82-107">When you create an applicant record, a person record for that applicant is created in the global address book.</span></span>       <span data-ttu-id="1cf82-108">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="1cf82-108">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-new-applicant-record"></a>Uuden hakijatietueen luominen
-1. Siirry kohtaan Henkilöstöhallinto > Työhönotto > Hakijat > Hakijat.
-2. Valitse Uusi.
-3. Kirjoita arvo Etunimi-kenttään.
-4. Kirjoita arvo Sukunimi-kenttään.
-    * Voit syöttää hakijalle tarvittaessa lisätietoja. Lisätietoja voivat olla esimerkiksi hakijan korkein tutkinto, nykyinen ammattinimike tai edellinen työnantaja.  
-5. Ota käyttöön Yhteystiedot-osan laajennus.
-6. ValitseLisää.
-7. Syötä Kuvaus-kenttään Viestintä - sähköposti.
-8. Valitse vaihtoehto Tyyppi-kentässä.
-9. Kirjoita arvo Yhteyshenkilön puhelinnumero/osoite -kenttään.
-    * Tätä sähköpostiosoitetta käytetään luotaessa sähköpostiviestintä hakijan kanssa.  
-10. ValitseLisää.
-11. Kirjoita arvo Kuvaus-kenttään.
-12. Kirjoita arvo Yhteyshenkilön puhelinnumero/osoite -kenttään.
-    * Hakijan henkilökohtaiset tiedot.  
-    * Voit syöttää hakijalle tarvittaessa lisätietoja henkilökohtaisiin tietoihin. Tiedot voivat olla esimerkiksi syntymäpäivä, etninen alkuperä, sukupuoli tai siviilisääty.  
-13. Valitse toimintoruudussa Osaamisalueet.
-    * Voit syöttää hakijan osaamisalueprofiilin, joka sisältää osaamisalueet, työkokemus, koulutuksen ja todistukset.  
-    * Näitä tietoja voidaan käyttää yhdistettäessä hakijan osaamisalueet yrityksen tiedoissa määritettyjen töihin liitettyihin osaamisalueiden kanssa.   
+## <a name="create-a-new-applicant-record"></a><span data-ttu-id="1cf82-109">Uuden hakijatietueen luominen</span><span class="sxs-lookup"><span data-stu-id="1cf82-109">Create a new applicant record</span></span>
+1. <span data-ttu-id="1cf82-110">Siirry kohtaan Henkilöstöhallinto > Työhönotto > Hakijat > Hakijat.</span><span class="sxs-lookup"><span data-stu-id="1cf82-110">Go to Human resources > Recruitment > Applicants > Applicants.</span></span>
+2. <span data-ttu-id="1cf82-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="1cf82-111">Click New.</span></span>
+3. <span data-ttu-id="1cf82-112">Kirjoita arvo Etunimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="1cf82-112">In the First name field, type a value.</span></span>
+4. <span data-ttu-id="1cf82-113">Kirjoita arvo Sukunimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="1cf82-113">In the Last name field, type a value.</span></span>
+    * <span data-ttu-id="1cf82-114">Voit syöttää hakijalle tarvittaessa lisätietoja.</span><span class="sxs-lookup"><span data-stu-id="1cf82-114">You can enter additional applicant information if it's available.</span></span> <span data-ttu-id="1cf82-115">Lisätietoja voivat olla esimerkiksi hakijan korkein tutkinto, nykyinen ammattinimike tai edellinen työnantaja.</span><span class="sxs-lookup"><span data-stu-id="1cf82-115">For example, information can include the applicant's highest degree, current job title, or previous employer.</span></span>  
+5. <span data-ttu-id="1cf82-116">Ota käyttöön Yhteystiedot-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="1cf82-116">Toggle the expansion of the Contact information section.</span></span>
+6. <span data-ttu-id="1cf82-117">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="1cf82-117">Click Add.</span></span>
+7. <span data-ttu-id="1cf82-118">Syötä Kuvaus-kenttään Viestintä - sähköposti.</span><span class="sxs-lookup"><span data-stu-id="1cf82-118">In the Description field, type 'Communications email'.</span></span>
+8. <span data-ttu-id="1cf82-119">Valitse vaihtoehto Tyyppi-kentässä.</span><span class="sxs-lookup"><span data-stu-id="1cf82-119">In the Type field, select an option.</span></span>
+9. <span data-ttu-id="1cf82-120">Kirjoita arvo Yhteyshenkilön puhelinnumero/osoite -kenttään.</span><span class="sxs-lookup"><span data-stu-id="1cf82-120">In the Contact number/address field, type a value.</span></span>
+    * <span data-ttu-id="1cf82-121">Tätä sähköpostiosoitetta käytetään luotaessa sähköpostiviestintä hakijan kanssa.</span><span class="sxs-lookup"><span data-stu-id="1cf82-121">This email address will be used to generate email communication with the applicant.</span></span>  
+10. <span data-ttu-id="1cf82-122">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="1cf82-122">Click Add.</span></span>
+11. <span data-ttu-id="1cf82-123">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="1cf82-123">In the Description field, type a value.</span></span>
+12. <span data-ttu-id="1cf82-124">Kirjoita arvo Yhteyshenkilön puhelinnumero/osoite -kenttään.</span><span class="sxs-lookup"><span data-stu-id="1cf82-124">In the Contact number/address field, type a value.</span></span>
+    * <span data-ttu-id="1cf82-125">Hakijan henkilökohtaiset tiedot.</span><span class="sxs-lookup"><span data-stu-id="1cf82-125">Applicant personal information.</span></span>  
+    * <span data-ttu-id="1cf82-126">Voit syöttää hakijalle tarvittaessa lisätietoja henkilökohtaisiin tietoihin.</span><span class="sxs-lookup"><span data-stu-id="1cf82-126">You can enter additional personal information for the applicant, if needed.</span></span> <span data-ttu-id="1cf82-127">Tiedot voivat olla esimerkiksi syntymäpäivä, etninen alkuperä, sukupuoli tai siviilisääty.</span><span class="sxs-lookup"><span data-stu-id="1cf82-127">For example, this can include birth date, ethnic origin, gender, or marital status.</span></span>  
+13. <span data-ttu-id="1cf82-128">Valitse toimintoruudussa Osaamisalueet.</span><span class="sxs-lookup"><span data-stu-id="1cf82-128">On the Action Pane, click Competencies.</span></span>
+    * <span data-ttu-id="1cf82-129">Voit syöttää hakijan osaamisalueprofiilin, joka sisältää osaamisalueet, työkokemus, koulutuksen ja todistukset.</span><span class="sxs-lookup"><span data-stu-id="1cf82-129">You can enter the applicant's competency profile, including their skills, professional experiences, education, tests, or certificates.</span></span>  
+    * <span data-ttu-id="1cf82-130">Näitä tietoja voidaan käyttää yhdistettäessä hakijan osaamisalueet yrityksen tiedoissa määritettyjen töihin liitettyihin osaamisalueiden kanssa.</span><span class="sxs-lookup"><span data-stu-id="1cf82-130">This information can be used to map the applicant's skills to the skills associated with the jobs defined in your company's data.</span></span>   
 
-## <a name="create-an-application-for-the-applicant"></a>Hakemuksen luominen hakijalle
-1. Valitse Hakemukset.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Työhönottoprojekti-kentässä avattavan valikon painike.
-    * Kun valitset työhönottoprojektin, hakija liitetään tiettyyn kyseisen työhönottoprojektin avoimeen työpaikkaan.  
-4. Etsi haluamasi tietue luettelosta ja valitse se.
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-    * Oletusarvoisesti työ ja osasto perustuvat valittuun työhönottoprojektiin.  
-6. Valitse Tallenna.
-    * Kun hakemus on tallennettu, voit liittää siihen asiakirjoja. Niitä ovat esimerkiksi hakijan kokemus, palkkiot ja kansilehti.  
+## <a name="create-an-application-for-the-applicant"></a><span data-ttu-id="1cf82-131">Hakemuksen luominen hakijalle</span><span class="sxs-lookup"><span data-stu-id="1cf82-131">Create an application for the applicant</span></span>
+1. <span data-ttu-id="1cf82-132">Valitse Hakemukset.</span><span class="sxs-lookup"><span data-stu-id="1cf82-132">Click Applications.</span></span>
+2. <span data-ttu-id="1cf82-133">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="1cf82-133">Click New.</span></span>
+3. <span data-ttu-id="1cf82-134">Avaa haku valitsemalla Työhönottoprojekti-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="1cf82-134">In the Recruitment project field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="1cf82-135">Kun valitset työhönottoprojektin, hakija liitetään tiettyyn kyseisen työhönottoprojektin avoimeen työpaikkaan.</span><span class="sxs-lookup"><span data-stu-id="1cf82-135">By selecting a recruitment project, the applicant will be associated with a specific opening included in that recruitment project.</span></span>  
+4. <span data-ttu-id="1cf82-136">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="1cf82-136">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="1cf82-137">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="1cf82-137">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="1cf82-138">Oletusarvoisesti työ ja osasto perustuvat valittuun työhönottoprojektiin.</span><span class="sxs-lookup"><span data-stu-id="1cf82-138">By default, the job and department are based on the selected recruitment project.</span></span>  
+6. <span data-ttu-id="1cf82-139">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="1cf82-139">Click Save.</span></span>
+    * <span data-ttu-id="1cf82-140">Kun hakemus on tallennettu, voit liittää siihen asiakirjoja. Niitä ovat esimerkiksi hakijan kokemus, palkkiot ja kansilehti.</span><span class="sxs-lookup"><span data-stu-id="1cf82-140">After saving the application, you can attach documents to it, including the applicant's experience, awards, and cover letter.</span></span>  
 
 

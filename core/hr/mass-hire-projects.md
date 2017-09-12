@@ -19,73 +19,73 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 006a8c110fe694c487e1e89e52c07438cf2becc3
+ms.sourcegitcommit: 754c52431fbaf97307a5e630150c3248fad5d271
+ms.openlocfilehash: cc6621c51bd0018bfb449457a30aed807cf56bda
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/01/2017
 
 ---
 
-# <a name="mass-hire-projects"></a>Joukkotyöhönottoprojektit
+# <a name="mass-hire-projects"></a><span data-ttu-id="a5ed3-103">Joukkotyöhönottoprojektit</span><span class="sxs-lookup"><span data-stu-id="a5ed3-103">Mass hire projects</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Henkilöstöhallinnon asiantuntija voi luoda useita toimia ja palkata useita työntekijöitä näihin toimiin joukkotyöhönottoprojektien avulla.
+<span data-ttu-id="a5ed3-104">Henkilöstöhallinnon asiantuntija voi luoda useita toimia ja palkata useita työntekijöitä näihin toimiin joukkotyöhönottoprojektien avulla.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-104">Mass hire projects allow human resources specialists to create multiple positions and efficiently hire workers into those positions.</span></span>
 
-<a name="overview"></a>Yleiskuvaus
+<a name="overview"></a><span data-ttu-id="a5ed3-105">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="a5ed3-105">Overview</span></span>
 --------
 
-Jos otat työhön samalla kertaa useita työntekijöitä esimerkiksi sesonkitarpeen vuoksi, kannattaa luoda joukkotyöhönottoprojekti. Joukkotyöhönottoprojektin luominen on kannattavaa, koska voit luoda toimitietueet, työntekijätietueet ja työntekijämääritykset toimille samanaikaisesti. Kun luot toimia joukkotyöhönottoprojektiin, voit määrittää seuraavat tiedot:
--   Luotavien toimien määrä
--   Työntekijätyyppi, joita palkkaat toimiin
--   Osasto ja työ, jotka liittyvät toimiin
--   Toimen kokoaikaisuutta vastaava arvo
+<span data-ttu-id="a5ed3-106">Jos otat työhön samalla kertaa useita työntekijöitä esimerkiksi sesonkitarpeen vuoksi, kannattaa luoda joukkotyöhönottoprojekti.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-106">Use mass hire projects when you hire multiple workers at one time, such as when you hire to meet a seasonal demand.</span></span> <span data-ttu-id="a5ed3-107">Joukkotyöhönottoprojektin luominen on kannattavaa, koska voit luoda toimitietueet, työntekijätietueet ja työntekijämääritykset toimille samanaikaisesti.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-107">Creating a mass hire project is useful because you can create position records, worker records, and worker assignments for positions at the same time.</span></span> <span data-ttu-id="a5ed3-108">Kun luot toimia joukkotyöhönottoprojektiin, voit määrittää seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="a5ed3-108">When you create positions for a mass hire project, you can specify the following information:</span></span>
+-   <span data-ttu-id="a5ed3-109">Luotavien toimien määrä</span><span class="sxs-lookup"><span data-stu-id="a5ed3-109">The number of positions to create</span></span>
+-   <span data-ttu-id="a5ed3-110">Työntekijätyyppi, joita palkkaat toimiin</span><span class="sxs-lookup"><span data-stu-id="a5ed3-110">The worker type of the people that you will hire for the positions</span></span>
+-   <span data-ttu-id="a5ed3-111">Osasto ja työ, jotka liittyvät toimiin</span><span class="sxs-lookup"><span data-stu-id="a5ed3-111">The department and the job that are associated with the positions</span></span>
+-   <span data-ttu-id="a5ed3-112">Toimen kokoaikaisuutta vastaava arvo</span><span class="sxs-lookup"><span data-stu-id="a5ed3-112">The full-time equivalent value of the position</span></span>
 
-## <a name="example"></a>Esimerkki
-Kesällä palkataan yleensä 15-20 osa-aikaista opiskelijaa yrityksen kesäharjoittelupaikkoihin. Tänä vuonna haluat palkata viisi kirjanpitäjää, viisi tilauskäsittelijää ja viisi kassanhoitajaa. Sen sijaan, että loisit jokaisen toimi- ja työntekijätietueen erikseen, voit luoda yhden joukkotyöhönottoprojektin nimellä "SummerInterns". Projektin aloitus- ja päättymispäivämäärät vastaavat joukkotyöhönottoprojektille luomiesi toimien aloitus- ja päättymispäivämääriä. 
+## <a name="example"></a><span data-ttu-id="a5ed3-113">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="a5ed3-113">Example</span></span>
+<span data-ttu-id="a5ed3-114">Kesällä palkataan yleensä 15-20 osa-aikaista opiskelijaa yrityksen kesäharjoittelupaikkoihin.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-114">In the summer, you usually hire 15-20 part-time college students to fill available internships in your company.</span></span> <span data-ttu-id="a5ed3-115">Tänä vuonna haluat palkata viisi kirjanpitäjää, viisi tilauskäsittelijää ja viisi kassanhoitajaa.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-115">This year, you want to hire five accountants, five order processors, and five cashiers.</span></span> <span data-ttu-id="a5ed3-116">Sen sijaan, että loisit jokaisen toimi- ja työntekijätietueen erikseen, voit luoda yhden joukkotyöhönottoprojektin nimellä "SummerInterns".</span><span class="sxs-lookup"><span data-stu-id="a5ed3-116">Instead of creating each position record and worker record separately, you create one mass hire project called “SummerInterns”.</span></span> <span data-ttu-id="a5ed3-117">Projektin aloitus- ja päättymispäivämäärät vastaavat joukkotyöhönottoprojektille luomiesi toimien aloitus- ja päättymispäivämääriä.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-117">The project start and end dates correlate with the start and end dates of the position durations for the positions you create for the mass hire project.</span></span> 
 
-Valitse **Joukkotyöhönottoprojektit** -sivulla "SummerInterns"-projekti ja napsauta sitten **Avaa projekti**. Valitse avoimet joukkotyöhönottoprojektissa **Luo toimia** ja kirjoita kirjanpitäjätoimen tiedot. Voit määrittää, että viisi kirjanpitäjän toimea on luotava samoilla tiedoilla, ja napsauttaa sitten OK. Toista nämä vaiheet tilauskäsittelijän ja kassanhoitajan toimille. 
+<span data-ttu-id="a5ed3-118">Valitse **Joukkotyöhönottoprojektit** -sivulla "SummerInterns"-projekti ja napsauta sitten **Avaa projekti**.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-118">In the **Mass hire projects** page, select the “SummerInterns” project and then click **Open project**.</span></span> <span data-ttu-id="a5ed3-119">Valitse avoimet joukkotyöhönottoprojektissa **Luo toimia** ja kirjoita kirjanpitäjätoimen tiedot.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-119">In the open mass hire project, click **Create positions** and enter information about the accountant position.</span></span> <span data-ttu-id="a5ed3-120">Voit määrittää, että viisi kirjanpitäjän toimea on luotava samoilla tiedoilla, ja napsauttaa sitten OK.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-120">You can indicate that five accountant positions should be created using the same information for each one, and then click OK.</span></span> <span data-ttu-id="a5ed3-121">Toista nämä vaiheet tilauskäsittelijän ja kassanhoitajan toimille.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-121">Repeat this process for the order processor and cashier positions.</span></span> 
 
-Valittuasi kesäharjoittelijoiksi palkattavat opiskelijat, voit syöttää opiskelijoiden tiedot niiden toimien **Toimen tiedot** kohtaan, johon olet kunkin opiskelijan valinnut. Kun olet syöttänyt kaikkien toimien tiedot, valitse toimi Joukkotyöhönottoprojektit-sivulta ja napsauta sitten **Ota palvelukseen**. Jokaiselle toimelle luodaan toimitietue ja jokaiselle työhön ottamallesi henkilölle luodaan työntekijätietue, joka liitetään asiaankuuluvaan toimeen.
+<span data-ttu-id="a5ed3-122">Valittuasi kesäharjoittelijoiksi palkattavat opiskelijat, voit syöttää opiskelijoiden tiedot niiden toimien **Toimen tiedot** kohtaan, johon olet kunkin opiskelijan valinnut.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-122">After selecting students to hire for the internship positions, you'll enter each student’s information in the **Position details** for the position that you're hiring them for.</span></span> <span data-ttu-id="a5ed3-123">Kun olet syöttänyt kaikkien toimien tiedot, valitse toimi Joukkotyöhönottoprojektit-sivulta ja napsauta sitten **Ota palvelukseen**.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-123">When you have entered all of the position details, select the position in the Mass hire projects page, and then click **Hire**.</span></span> <span data-ttu-id="a5ed3-124">Jokaiselle toimelle luodaan toimitietue ja jokaiselle työhön ottamallesi henkilölle luodaan työntekijätietue, joka liitetään asiaankuuluvaan toimeen.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-124">A position record will be created for each position and a worker record will be created and assigned to the correct position for each person who you hire.</span></span>
 
-## <a name="mass-hire-project-statuses"></a>Joukkotyöhönottoprojektin tilat
-Joukkotyöhönottoprojektin tila voi olla jokin seuraavista.
--   Luotu
--   Avoin
--   Suljettu
+## <a name="mass-hire-project-statuses"></a><span data-ttu-id="a5ed3-125">Joukkotyöhönottoprojektin tilat</span><span class="sxs-lookup"><span data-stu-id="a5ed3-125">Mass hire project statuses</span></span>
+<span data-ttu-id="a5ed3-126">Joukkotyöhönottoprojektin tila voi olla jokin seuraavista.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-126">A mass hire project can have the following statuses.</span></span>
+-   <span data-ttu-id="a5ed3-127">Luotu</span><span class="sxs-lookup"><span data-stu-id="a5ed3-127">Created</span></span>
+-   <span data-ttu-id="a5ed3-128">Avoin</span><span class="sxs-lookup"><span data-stu-id="a5ed3-128">Open</span></span>
+-   <span data-ttu-id="a5ed3-129">Suljettu</span><span class="sxs-lookup"><span data-stu-id="a5ed3-129">Closed</span></span>
 
-Napsauta **Joukkotyöhönottoprojekti**-sivulla **Avaa projekti** tai **Sulje projekti** muuttaaksesi joukkotyöhönottoprojektin tilaa. Seuraavassa taulukossa on kuvattu, mitä voit tehdä projektille sen tilan mukaan.
+<span data-ttu-id="a5ed3-130">Napsauta **Joukkotyöhönottoprojekti**-sivulla **Avaa projekti** tai **Sulje projekti** muuttaaksesi joukkotyöhönottoprojektin tilaa.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-130">On the **Mass hire project** page, click **Open project** or **Close project** to change the status of a mass hire project.</span></span> <span data-ttu-id="a5ed3-131">Seuraavassa taulukossa on kuvattu, mitä voit tehdä projektille sen tilan mukaan.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-131">The following table describes what you can do with a project according to its status.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tila</th>
-<th>Kuvaus</th>
+<th><span data-ttu-id="a5ed3-132">Tila</span><span class="sxs-lookup"><span data-stu-id="a5ed3-132">Status</span></span></th>
+<th><span data-ttu-id="a5ed3-133">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="a5ed3-133">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Luotu</td>
-<td>Voit luoda ja muokata tietoja, mutta et luoda toimia projektille. Tämä on uusien projektien oletustila.</td>
+<td><span data-ttu-id="a5ed3-134">Luotu</span><span class="sxs-lookup"><span data-stu-id="a5ed3-134">Created</span></span></td>
+<td><span data-ttu-id="a5ed3-135">Voit luoda ja muokata tietoja, mutta et luoda toimia projektille.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-135">You can create and modify information, but cannot create positions for the project.</span></span> <span data-ttu-id="a5ed3-136">Tämä on uusien projektien oletustila.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-136">This is the default status for new projects.</span></span></td>
 </tr>
 <tr class="even">
-<td>Avoin</td>
-<td>Voit muokata projektin tietoja, luoda toimia joukkotyöhönottoprojektin ja palkata henkilöitä toimiin. Tämä on aktiivisten projektien tila.</td>
+<td><span data-ttu-id="a5ed3-137">Avoin</span><span class="sxs-lookup"><span data-stu-id="a5ed3-137">Open</span></span></td>
+<td><span data-ttu-id="a5ed3-138">Voit muokata projektin tietoja, luoda toimia joukkotyöhönottoprojektin ja palkata henkilöitä toimiin.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-138">You can modify the project details, create positions for the mass hire project, and hire people for the positions.</span></span> <span data-ttu-id="a5ed3-139">Tämä on aktiivisten projektien tila.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-139">This is the status for active projects.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Suljettu</td>
-<td>Et voi lisätä toimia projektiin. Lisätäksesi toimia joukkotyöhönottoprojektiin, avaa projekti uudelleen. Tämä on valmiiden projektien tila.
+<td><span data-ttu-id="a5ed3-140">Suljettu</span><span class="sxs-lookup"><span data-stu-id="a5ed3-140">Closed</span></span></td>
+<td><span data-ttu-id="a5ed3-141">Et voi lisätä toimia projektiin.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-141">You cannot add positions to the project.</span></span> <span data-ttu-id="a5ed3-142">Lisätäksesi toimia joukkotyöhönottoprojektiin, avaa projekti uudelleen.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-142">To add positions to the mass hire project, open the project again.</span></span> <span data-ttu-id="a5ed3-143">Tämä on valmiiden projektien tila.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-143">This is the status for completed projects.</span></span>
 <div class="alert">
 <table>
 <thead>
 <tr class="header">
-<th><strong>Huomautus </strong></th>
+<th><span data-ttu-id="a5ed3-144"><strong>Huomautus </strong></span><span class="sxs-lookup"><span data-stu-id="a5ed3-144"><strong>Note</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Ennen joukkotyöhönottoprojektin sulkemista kaikkien projektin toimien tilan on oltava joko Luotu tai Suljettu.</td>
+<td><span data-ttu-id="a5ed3-145">Ennen joukkotyöhönottoprojektin sulkemista kaikkien projektin toimien tilan on oltava joko Luotu tai Suljettu.</span><span class="sxs-lookup"><span data-stu-id="a5ed3-145">Before you can close a mass hire project, all positions in the project must have a status of either Created or Closed.</span></span></td>
 </tr>
 </tbody>
 </table>

@@ -19,153 +19,153 @@ ms.author: dkrame
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 688550888e5e029e38e945cec633170465df73f9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: af2d61717a5aa02b2a3ef26144a845b81b32ca53
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Työresurssien järjestäminen osastojen, töiden ja toimien avulla
+# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a><span data-ttu-id="be145-104">Työresurssien järjestäminen osastojen, töiden ja toimien avulla</span><span class="sxs-lookup"><span data-stu-id="be145-104">Organize your workforce using departments, jobs, and positions</span></span>
 
 [!include[banner](includes/banner.md)]
 
 [!include[retail name](includes/retail-name.md)]
 
 
-Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä ohjeaiheessa kuvataan elementtien käsitteellisiä tietoja. 
+<span data-ttu-id="be145-105">Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa.</span><span class="sxs-lookup"><span data-stu-id="be145-105">Departments, jobs, and positions are organizational elements that are maintained within Human resources.</span></span> <span data-ttu-id="be145-106">Tässä ohjeaiheessa kuvataan elementtien käsitteellisiä tietoja.</span><span class="sxs-lookup"><span data-stu-id="be145-106">This topic describes conceptual information about these elements.</span></span> 
 
-Seuraavassa esimerkissä on kuvattu tässä ohjeaiheessa käytettäviä käsitteitä.
+<span data-ttu-id="be145-107">Seuraavassa esimerkissä on kuvattu tässä ohjeaiheessa käytettäviä käsitteitä.</span><span class="sxs-lookup"><span data-stu-id="be145-107">The following example is used to illustrate the concepts described in this topic.</span></span>
 
-|**Osasto**|**Sijainti**|**Työ**|
+|<span data-ttu-id="be145-108">**Osasto**</span><span class="sxs-lookup"><span data-stu-id="be145-108">**Department**</span></span>|<span data-ttu-id="be145-109">**Sijainti**</span><span class="sxs-lookup"><span data-stu-id="be145-109">**Position**</span></span>|<span data-ttu-id="be145-110">**Työ**</span><span class="sxs-lookup"><span data-stu-id="be145-110">**Job**</span></span>|
 |---|---|---|
-|**myynti**|Myyntipäällikkö (Itä)|Myyntipäällikkö|
-|**myynti**|Myyntipäällikkö (Länsi)|Myyntipäällikkö|
-|**myynti**|Myyntipäällikkö (Keski)|Myyntipäällikkö|
-|**Kirjanpito**|Taloushallintopäällikkö|Laskentapäällikkö|
-|**Kirjanpito**|Kirjanpitäjä A|Kirjanpitäjä|
-|**Henkilöstöhallinto**|Henkilöstöpäällikkö (Itä)|Henkilöstöpäällikkö|
-|**Henkilöstöhallinto**|Henkilöstöpäällikkö (Länsi)|Henkilöstöpäällikkö|
-|**Henkilöstöhallinto**|Henkilöstöpäällikkö (Keski)|Henkilöstöpäällikkö|
+|<span data-ttu-id="be145-111">**myynti**</span><span class="sxs-lookup"><span data-stu-id="be145-111">**Sales**</span></span>|<span data-ttu-id="be145-112">Myyntipäällikkö (Itä)</span><span class="sxs-lookup"><span data-stu-id="be145-112">Sales manager (East)</span></span>|<span data-ttu-id="be145-113">Myyntipäällikkö</span><span class="sxs-lookup"><span data-stu-id="be145-113">Sales manager</span></span>|
+|<span data-ttu-id="be145-114">**myynti**</span><span class="sxs-lookup"><span data-stu-id="be145-114">**Sales**</span></span>|<span data-ttu-id="be145-115">Myyntipäällikkö (Länsi)</span><span class="sxs-lookup"><span data-stu-id="be145-115">Sales manager (West)</span></span>|<span data-ttu-id="be145-116">Myyntipäällikkö</span><span class="sxs-lookup"><span data-stu-id="be145-116">Sales manager</span></span>|
+|<span data-ttu-id="be145-117">**myynti**</span><span class="sxs-lookup"><span data-stu-id="be145-117">**Sales**</span></span>|<span data-ttu-id="be145-118">Myyntipäällikkö (Keski)</span><span class="sxs-lookup"><span data-stu-id="be145-118">Sales manager (Central)</span></span>|<span data-ttu-id="be145-119">Myyntipäällikkö</span><span class="sxs-lookup"><span data-stu-id="be145-119">Sales manager</span></span>|
+|<span data-ttu-id="be145-120">**Kirjanpito**</span><span class="sxs-lookup"><span data-stu-id="be145-120">**Accounting**</span></span>|<span data-ttu-id="be145-121">Taloushallintopäällikkö</span><span class="sxs-lookup"><span data-stu-id="be145-121">Accounting supervisor</span></span>|<span data-ttu-id="be145-122">Laskentapäällikkö</span><span class="sxs-lookup"><span data-stu-id="be145-122">Accounting manager</span></span>|
+|<span data-ttu-id="be145-123">**Kirjanpito**</span><span class="sxs-lookup"><span data-stu-id="be145-123">**Accounting**</span></span>|<span data-ttu-id="be145-124">Kirjanpitäjä A</span><span class="sxs-lookup"><span data-stu-id="be145-124">Accounting-A</span></span>|<span data-ttu-id="be145-125">Kirjanpitäjä</span><span class="sxs-lookup"><span data-stu-id="be145-125">Accountant</span></span>|
+|<span data-ttu-id="be145-126">**Henkilöstöhallinto**</span><span class="sxs-lookup"><span data-stu-id="be145-126">**Human resources**</span></span>|<span data-ttu-id="be145-127">Henkilöstöpäällikkö (Itä)</span><span class="sxs-lookup"><span data-stu-id="be145-127">HR manager (East)</span></span>|<span data-ttu-id="be145-128">Henkilöstöpäällikkö</span><span class="sxs-lookup"><span data-stu-id="be145-128">HR manager</span></span>|
+|<span data-ttu-id="be145-129">**Henkilöstöhallinto**</span><span class="sxs-lookup"><span data-stu-id="be145-129">**Human resources**</span></span>|<span data-ttu-id="be145-130">Henkilöstöpäällikkö (Länsi)</span><span class="sxs-lookup"><span data-stu-id="be145-130">HR manager (West)</span></span>|<span data-ttu-id="be145-131">Henkilöstöpäällikkö</span><span class="sxs-lookup"><span data-stu-id="be145-131">HR manager</span></span>|
+|<span data-ttu-id="be145-132">**Henkilöstöhallinto**</span><span class="sxs-lookup"><span data-stu-id="be145-132">**Human resources**</span></span>|<span data-ttu-id="be145-133">Henkilöstöpäällikkö (Keski)</span><span class="sxs-lookup"><span data-stu-id="be145-133">HR manager (Central)</span></span>|<span data-ttu-id="be145-134">Henkilöstöpäällikkö</span><span class="sxs-lookup"><span data-stu-id="be145-134">HR manager</span></span>|
 
  
- <a name="departments"></a>Osastot
+ <a name="departments"></a><span data-ttu-id="be145-135">Osastot</span><span class="sxs-lookup"><span data-stu-id="be145-135">Departments</span></span>
 ------------
 
-Osasto on toimintayksikkö, joka edustaa organisaation luokkaa tai toiminta-aluetta ja vastaa tietystä organisaation osa-alueesta, kuten myynnistä tai kirjanpidosta. Osastoa käytetään toiminta-alueiden raportoinnissa, ja sillä voi olla tulosvastuu. Osasto voi myös sisältää kustannuspaikkojen ryhmän. Organisaation osastoja ovat esimerkiksi myynti, kirjanpito ja henkilöstöhallinto.
+<span data-ttu-id="be145-136">Osasto on toimintayksikkö, joka edustaa organisaation luokkaa tai toiminta-aluetta ja vastaa tietystä organisaation osa-alueesta, kuten myynnistä tai kirjanpidosta.</span><span class="sxs-lookup"><span data-stu-id="be145-136">A department is an operating unit that represents a category or functional area of an organization that is responsible for a specific area of the organization, such as sales or accounting.</span></span> <span data-ttu-id="be145-137">Osastoa käytetään toiminta-alueiden raportoinnissa, ja sillä voi olla tulosvastuu.</span><span class="sxs-lookup"><span data-stu-id="be145-137">A department is used to report on functional areas and may have profit and loss responsibility.</span></span> <span data-ttu-id="be145-138">Osasto voi myös sisältää kustannuspaikkojen ryhmän.</span><span class="sxs-lookup"><span data-stu-id="be145-138">Also, a department might include a group of cost centers.</span></span> <span data-ttu-id="be145-139">Organisaation osastoja ovat esimerkiksi myynti, kirjanpito ja henkilöstöhallinto.</span><span class="sxs-lookup"><span data-stu-id="be145-139">Sales, accounting, and human resources are some examples of departments in an organization.</span></span>
 
-## <a name="jobs-and-positions"></a> Työt ja toimet
-Työ sisältää tehtäviä ja vastuita, joita työn suorittajalta edellytetään. Toimi on työn yksittäinen esiintymä. Työssä tarvittavat vastuualueet, työtehtävät, taidot, koulutustiedot ja todistukset tarvitaan myös työhön liittyvissä toimissa.
-### <a name="job-tasks"></a>Työtehtävät
+## <a name="jobs-and-positions"></a><span data-ttu-id="be145-140"> Työt ja toimet</span><span class="sxs-lookup"><span data-stu-id="be145-140">Jobs and positions</span></span>
+<span data-ttu-id="be145-141">Työ sisältää tehtäviä ja vastuita, joita työn suorittajalta edellytetään.</span><span class="sxs-lookup"><span data-stu-id="be145-141">A job is a collection of tasks and responsibilities that are required of a person who performs a job.</span></span> <span data-ttu-id="be145-142">Toimi on työn yksittäinen esiintymä.</span><span class="sxs-lookup"><span data-stu-id="be145-142">A position is an individual instance of a job.</span></span> <span data-ttu-id="be145-143">Työssä tarvittavat vastuualueet, työtehtävät, taidot, koulutustiedot ja todistukset tarvitaan myös työhön liittyvissä toimissa.</span><span class="sxs-lookup"><span data-stu-id="be145-143">Areas of responsibility, job tasks, job functions, skills, education information, and certificates that are required for a job are also required for positions that are associated with a job.</span></span>
+### <a name="job-tasks"></a><span data-ttu-id="be145-144">Työtehtävät</span><span class="sxs-lookup"><span data-stu-id="be145-144">Job tasks</span></span>
 
-Voit luoda työtehtäviä, jotka kuvaavat kyseisessä toimessa toimivan työntekijän perustehtäviä. Samaan työtehtävään voidaan lisätä useita töitä, ja töiden toimet perivät työtehtävät. Seuraavassa taulukossa on esimerkkejä työtehtävistä.
+<span data-ttu-id="be145-145">Voit luoda työtehtäviä, jotka kuvaavat kyseisessä toimessa toimivan työntekijän perustehtäviä.</span><span class="sxs-lookup"><span data-stu-id="be145-145">You can create job tasks that describe the basic tasks that a worker in a position for that job must complete.</span></span> <span data-ttu-id="be145-146">Samaan työtehtävään voidaan lisätä useita töitä, ja töiden toimet perivät työtehtävät.</span><span class="sxs-lookup"><span data-stu-id="be145-146">The same job task can be added to multiple jobs, and positions for those jobs will inherit those job tasks.</span></span> <span data-ttu-id="be145-147">Seuraavassa taulukossa on esimerkkejä työtehtävistä.</span><span class="sxs-lookup"><span data-stu-id="be145-147">Examples of job tasks are listed in the following table.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Työ</th>
-<th>Työtehtävä</th>
+<th><span data-ttu-id="be145-148">Työ</span><span class="sxs-lookup"><span data-stu-id="be145-148">Job</span></span></th>
+<th><span data-ttu-id="be145-149">Työtehtävä</span><span class="sxs-lookup"><span data-stu-id="be145-149">Job task</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Myyntipäällikkö</td>
+<td><span data-ttu-id="be145-150">Myyntipäällikkö</span><span class="sxs-lookup"><span data-stu-id="be145-150">Sales manager</span></span></td>
 <td><ul>
-<li><span class="input">Suorituskykytarkistus</span> – Arvioi jokaisen myyjän suorituskykyä.</li>
-<li><span class="input">Poissaolotarkistus</span> – Hyväksy tai hylkää kunkin myyjän poissaolopyynnöt tai -rekisteröinnit.</li>
+<li><span data-ttu-id="be145-151"><span class="input">Suorituskykytarkistus</span> – Arvioi jokaisen myyjän suorituskykyä.</span><span class="sxs-lookup"><span data-stu-id="be145-151"><span class="input">Perf-review</span> – Review each salesperson’s job performance.</span></span></li>
+<li><span data-ttu-id="be145-152"><span class="input">Poissaolotarkistus</span> – Hyväksy tai hylkää kunkin myyjän poissaolopyynnöt tai -rekisteröinnit.</span><span class="sxs-lookup"><span data-stu-id="be145-152"><span class="input">Abs-review</span> – Approve or reject each salesperson’s absence requests or registrations.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Kirjanpitäjä</td>
-<td><span class="input">TAL-raportti</span> – Esitä viikoittaiset talousraportit talousjohtajalle.</td>
+<td><span data-ttu-id="be145-153">Kirjanpitäjä</span><span class="sxs-lookup"><span data-stu-id="be145-153">Accountant</span></span></td>
+<td><span data-ttu-id="be145-154"><span class="input">TAL-raportti</span> – Esitä viikoittaiset talousraportit talousjohtajalle.</span><span class="sxs-lookup"><span data-stu-id="be145-154"><span class="input">FIN-Report</span> – Present weekly financial reports to chief financial officer.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="job-functions"></a>Työtehtävät
+### <a name="job-functions"></a><span data-ttu-id="be145-155">Työtehtävät</span><span class="sxs-lookup"><span data-stu-id="be145-155">Job functions</span></span>
 
-Työtehtävät ovat työhön määritettyjä tehtäviä tai vastuita. Työtehtävät voidaan määrittää töille, ja niitä voidaan käyttää kompensaatiosuunnitelmien kelpoisuussääntöjen määrittämisessä ja käyttöönotossa. Seuraavassa taulukossa on esimerkkejä työtehtävistä.
+<span data-ttu-id="be145-156">Työtehtävät ovat</span><span class="sxs-lookup"><span data-stu-id="be145-156">Job functions are like job tasks.</span></span> <span data-ttu-id="be145-157">työhön määritettyjä tehtäviä tai vastuita.</span><span class="sxs-lookup"><span data-stu-id="be145-157">A job function describes one or more tasks, duties or responsibilities that are assigned to a job.</span></span> <span data-ttu-id="be145-158">Työtehtävät voidaan määrittää töille, ja niitä voidaan käyttää kompensaatiosuunnitelmien kelpoisuussääntöjen määrittämisessä ja käyttöönotossa.</span><span class="sxs-lookup"><span data-stu-id="be145-158">Job functions can be assigned to jobs and used to set up and implement eligibility rules for compensation plans.</span></span> <span data-ttu-id="be145-159">Seuraavassa taulukossa on esimerkkejä työtehtävistä.</span><span class="sxs-lookup"><span data-stu-id="be145-159">Examples of job functions are listed in the following table.</span></span>
 
-| Työ           | Työtehtävä                                                |
+| <span data-ttu-id="be145-160">Työ</span><span class="sxs-lookup"><span data-stu-id="be145-160">Job</span></span>           | <span data-ttu-id="be145-161">Työtehtävä</span><span class="sxs-lookup"><span data-stu-id="be145-161">Job function</span></span>                                                |
 |---------------|-------------------------------------------------------------|
-| Myyntipäällikkö | Hnk.hallinto – Sinulle raportoivien henkilöiden hallinta.               |
-| Kirjanpitäjä    | TAL-tarkastus – Ylläpidä tiettyjen tilien taloustietoja. |
+| <span data-ttu-id="be145-162">Myyntipäällikkö</span><span class="sxs-lookup"><span data-stu-id="be145-162">Sales manager</span></span> | <span data-ttu-id="be145-163">Hnk.hallinto – Sinulle raportoivien henkilöiden hallinta.</span><span class="sxs-lookup"><span data-stu-id="be145-163">Mng-people – Manage people who report to you.</span></span>               |
+| <span data-ttu-id="be145-164">Kirjanpitäjä</span><span class="sxs-lookup"><span data-stu-id="be145-164">Accountant</span></span>    | <span data-ttu-id="be145-165">TAL-tarkastus – Ylläpidä tiettyjen tilien taloustietoja.</span><span class="sxs-lookup"><span data-stu-id="be145-165">FIN-Review – Maintain financial data for a set of accounts.</span></span> |
 
-### <a name="job-types"></a>Työtyypit
+### <a name="job-types"></a><span data-ttu-id="be145-166">Työtyypit</span><span class="sxs-lookup"><span data-stu-id="be145-166">Job types</span></span>
 
-Työtyyppien avulla voi luokitella samankaltaisia töitä. Työtyypit voidaan työtehtävien tapaan määrittää töille, ja niitä voidaan käyttää kompensaatiosuunnitelmien kelpoisuussääntöjen määrittämisessä ja käyttöönotossa. Seuraavassa luettelossa on esimerkkejä työtyypeistä:
--   Kokoaikainen
--   Osa-aikainen
--   Palkka
--   Tuntipalkka
+<span data-ttu-id="be145-167">Työtyyppien avulla voi luokitella samankaltaisia töitä.</span><span class="sxs-lookup"><span data-stu-id="be145-167">Use job types to classify similar jobs into categories.</span></span> <span data-ttu-id="be145-168">Työtyypit voidaan työtehtävien tapaan määrittää töille, ja niitä voidaan käyttää kompensaatiosuunnitelmien kelpoisuussääntöjen määrittämisessä ja käyttöönotossa.</span><span class="sxs-lookup"><span data-stu-id="be145-168">Job types, just like job functions, can be assigned to jobs and used to set up and implement eligibility rules for compensation plans.</span></span> <span data-ttu-id="be145-169">Seuraavassa luettelossa on esimerkkejä työtyypeistä:</span><span class="sxs-lookup"><span data-stu-id="be145-169">Some examples of job types are included in the following list:</span></span>
+-   <span data-ttu-id="be145-170">Kokoaikainen</span><span class="sxs-lookup"><span data-stu-id="be145-170">Full-time</span></span>
+-   <span data-ttu-id="be145-171">Osa-aikainen</span><span class="sxs-lookup"><span data-stu-id="be145-171">Part-time</span></span>
+-   <span data-ttu-id="be145-172">Palkka</span><span class="sxs-lookup"><span data-stu-id="be145-172">Salary</span></span>
+-   <span data-ttu-id="be145-173">Tuntipalkka</span><span class="sxs-lookup"><span data-stu-id="be145-173">Hourly pay</span></span>
 
-### <a name="areas-of-responsibility"></a>Vastuualueet
+### <a name="areas-of-responsibility"></a><span data-ttu-id="be145-174">Vastuualueet</span><span class="sxs-lookup"><span data-stu-id="be145-174">Areas of responsibility</span></span>
 
-Vastuualueiden avulla voi osoittaa tietyssä toimessa toimivan työntekijän vastuulla olevat työroolit, prosessit ja tuotteet. Esimerkiksi Kirjanpitäjä-toimessa vastuualue voi olla Tuotteen A talousraportointi.
+<span data-ttu-id="be145-175">Vastuualueiden avulla voi osoittaa tietyssä toimessa toimivan työntekijän vastuulla olevat työroolit, prosessit ja tuotteet.</span><span class="sxs-lookup"><span data-stu-id="be145-175">Use areas of responsibility to indicate the work roles, processes, and products that a worker in a position for that job would be responsible for.</span></span> <span data-ttu-id="be145-176">Esimerkiksi Kirjanpitäjä-toimessa vastuualue voi olla Tuotteen A talousraportointi.</span><span class="sxs-lookup"><span data-stu-id="be145-176">An example of an area of responsibility for a job titled “Accountant” might be “Financial reporting for Product A”.</span></span>
 
-<a name="positions"></a>Toimet
+<a name="positions"></a><span data-ttu-id="be145-177">Toimet</span><span class="sxs-lookup"><span data-stu-id="be145-177">Positions</span></span>
 ----------
 
-Toimet ovat organisaatiohierarkian alemman tason tärkeä osa. Toimi on työn yksittäinen esiintymä. Esimerkiksi toimi Myyntipäällikkö (Itä) on vain yksi Myyntipäällikkö-työhön liittyvistä toimista. Toimet sijoittuvat osastoille, ja niitä määritetään työntekijöille.
-### <a name="position-creation-and-maintenance"></a>Toimen luominen ja ylläpito
+<span data-ttu-id="be145-178">Toimet ovat organisaatiohierarkian alemman tason tärkeä osa.</span><span class="sxs-lookup"><span data-stu-id="be145-178">Positions are an important element of the lower level of an organization hierarchy.</span></span> <span data-ttu-id="be145-179">Toimi on työn yksittäinen esiintymä.</span><span class="sxs-lookup"><span data-stu-id="be145-179">A position is an individual instance of a job.</span></span> <span data-ttu-id="be145-180">Esimerkiksi toimi Myyntipäällikkö (Itä) on vain yksi Myyntipäällikkö-työhön liittyvistä toimista.</span><span class="sxs-lookup"><span data-stu-id="be145-180">For example, the position, “Sales manager (East),” is just one of the positions that is associated with the job, “Sales manager.”</span></span> <span data-ttu-id="be145-181">Toimet sijoittuvat osastoille, ja niitä määritetään työntekijöille.</span><span class="sxs-lookup"><span data-stu-id="be145-181">Positions exist in a department and are assigned to workers.</span></span>
+### <a name="position-creation-and-maintenance"></a><span data-ttu-id="be145-182">Toimen luominen ja ylläpito</span><span class="sxs-lookup"><span data-stu-id="be145-182">Position creation and maintenance</span></span>
 
--   Voit tarkastella toimiin liittyvää järjestelmän muutoshistoriaa helppokäyttöisellä luettelosivulla.
--   Voit luoda syykoodeja, joita käyttäjät voivat valita toimia luodessaan tai muokatessaan.
--   Voit luoda henkilöstön toimintotyyppejä ja määrittää henkilöstötoiminnoille numerojärjestyksen.
--   Voit määrittää työnkulun niin, että toimien lisäämiselle ja muuttamiselle tarvitaan hyväksyntä.
+-   <span data-ttu-id="be145-183">Voit tarkastella toimiin liittyvää järjestelmän muutoshistoriaa helppokäyttöisellä luettelosivulla.</span><span class="sxs-lookup"><span data-stu-id="be145-183">You can view a history of position-related system changes in an easy-to-access list page.</span></span>
+-   <span data-ttu-id="be145-184">Voit luoda syykoodeja, joita käyttäjät voivat valita toimia luodessaan tai muokatessaan.</span><span class="sxs-lookup"><span data-stu-id="be145-184">You can create reason codes that your users can select when they create or modify positions.</span></span>
+-   <span data-ttu-id="be145-185">Voit luoda henkilöstön toimintotyyppejä ja määrittää henkilöstötoiminnoille numerojärjestyksen.</span><span class="sxs-lookup"><span data-stu-id="be145-185">You can create personnel action types and assign a number sequence to personnel actions.</span></span>
+-   <span data-ttu-id="be145-186">Voit määrittää työnkulun niin, että toimien lisäämiselle ja muuttamiselle tarvitaan hyväksyntä.</span><span class="sxs-lookup"><span data-stu-id="be145-186">You can set up workflow so that position additions and changes can require approval.</span></span>
 
-### <a name="position-duration"></a>Toimen kesto
+### <a name="position-duration"></a><span data-ttu-id="be145-187">Toimen kesto</span><span class="sxs-lookup"><span data-stu-id="be145-187">Position duration</span></span>
 
-Jokainen toimi on voimassa tietyn aikavälin. Sitä kutsutaan kestoksi. Esimerkiksi kesätöiden kesto voi olla 1.5.2015–31.8.2015.
+<span data-ttu-id="be145-188">Jokainen toimi on voimassa tietyn aikavälin.</span><span class="sxs-lookup"><span data-stu-id="be145-188">Every position has a length of time that the position is effective.</span></span> <span data-ttu-id="be145-189">Sitä kutsutaan kestoksi.</span><span class="sxs-lookup"><span data-stu-id="be145-189">This length of time is referred to as duration.</span></span> <span data-ttu-id="be145-190">Esimerkiksi kesätöiden kesto voi olla 1.5.2015–31.8.2015.</span><span class="sxs-lookup"><span data-stu-id="be145-190">For example, summer positions might have duration of May 1, 2015 until August 31, 2015.</span></span>
 
-### <a name="worker-assignments"></a>Työntekijämääritykset
+### <a name="worker-assignments"></a><span data-ttu-id="be145-191">Työntekijämääritykset</span><span class="sxs-lookup"><span data-stu-id="be145-191">Worker assignments</span></span>
 
-Kun määrität työntekijän johonkin toimeen, täytät kyseisen toimen. Voit määrittää työntekijöitä useisiin toimiin, mutta kuhunkin toimeen voi määrittää vain yhden työntekijän kerrallaan.
+<span data-ttu-id="be145-192">Kun määrität työntekijän johonkin toimeen, täytät kyseisen toimen.</span><span class="sxs-lookup"><span data-stu-id="be145-192">When you assign a worker to a position, you fill that position.</span></span> <span data-ttu-id="be145-193">Voit määrittää työntekijöitä useisiin toimiin, mutta kuhunkin toimeen voi määrittää vain yhden työntekijän kerrallaan.</span><span class="sxs-lookup"><span data-stu-id="be145-193">You can assign workers to multiple positions, but only one worker can be assigned to a position at the same time.</span></span>
 
-### <a name="reporting-relationships"></a>Raportointisuhteet
+### <a name="reporting-relationships"></a><span data-ttu-id="be145-194">Raportointisuhteet</span><span class="sxs-lookup"><span data-stu-id="be145-194">Reporting relationships</span></span>
 
-Toimet ovat organisaatiohierarkian alemman tason tärkeitä osia. Toimi-lomakkeessa voit määrittää toimen, jolle toinen toimi raportoi. Kun määrität työntekijän toimeen, joka raportoi toiselle toimelle, luot näihin kahteen toimeen määritettyjen työntekijöiden välisen raportointisuhteen. Esimerkki: Toimi Kirjanpitäjä A raportoi toimelle Kirjanpidon esimies. Kim Akers on nimitetty kirjanpidon esimieheksi ja Sanjay Patel kirjanpitäjäksi A. Sanjay Patel raportoi siis Kim Akersille. 
+<span data-ttu-id="be145-195">Toimet ovat organisaatiohierarkian alemman tason tärkeitä osia.</span><span class="sxs-lookup"><span data-stu-id="be145-195">Positions are important elements of the lower level of an organization hierarchy.</span></span> <span data-ttu-id="be145-196">Toimi-lomakkeessa voit määrittää toimen, jolle toinen toimi raportoi.</span><span class="sxs-lookup"><span data-stu-id="be145-196">In the Position form, you can specify the position that a position reports to.</span></span> <span data-ttu-id="be145-197">Kun määrität työntekijän toimeen, joka raportoi toiselle toimelle, luot näihin kahteen toimeen määritettyjen työntekijöiden välisen raportointisuhteen.</span><span class="sxs-lookup"><span data-stu-id="be145-197">When you assign a worker to a position that reports to another position, you create a reporting relationship between the workers who are assigned to the two positions.</span></span> <span data-ttu-id="be145-198">Esimerkki: Toimi Kirjanpitäjä A raportoi toimelle Kirjanpidon esimies.</span><span class="sxs-lookup"><span data-stu-id="be145-198">For example, position “Accountant-A” reports to position “Accounting Supervisor”.</span></span> <span data-ttu-id="be145-199">Kim Akers on nimitetty kirjanpidon esimieheksi ja Sanjay Patel kirjanpitäjäksi A.</span><span class="sxs-lookup"><span data-stu-id="be145-199">Kim Akers is assigned to position “Accounting Supervisor” and Sanjay Patel is assigned to position “Accountant-A”.</span></span> <span data-ttu-id="be145-200">Sanjay Patel raportoi siis Kim Akersille.</span><span class="sxs-lookup"><span data-stu-id="be145-200">This means that Sanjay Patel reports to Kim Akers.</span></span> 
 
-Jos organisaatio käyttää matriisihierarkiaan tai jotakin toista mukautettua hierarkiaa, voit määrittää toimien hierarkiatyypit ja lisätä sitten toimiin raportointisuhteet jokaiselle määrittämällesi hierarkiatyypille. Esimerkki: Lori Penor on Adventure Worksin johtaja, joka nimitetään pääjohtajan toimeen. Lori johtaa pienoissovellusten puhdistamiseen käytettävän tuotteen kehitystyötä. Lori tarvitsee kirjanpitäjän avuksi tuotekehityksen taloushallintoon. Hän on rekrytoinut Sanjay Patelin kirjanpitäjäksi. Sanjay raportoi suoraan Kim Akersille, mutta hän työskentelee myös Lori Penorin kanssa pienoissovelluksen tuotekehityksen taloushallinnossa. 
+<span data-ttu-id="be145-201">Jos organisaatio käyttää matriisihierarkiaan tai jotakin toista mukautettua hierarkiaa, voit määrittää toimien hierarkiatyypit ja lisätä sitten toimiin raportointisuhteet jokaiselle määrittämällesi hierarkiatyypille.</span><span class="sxs-lookup"><span data-stu-id="be145-201">If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up.</span></span> <span data-ttu-id="be145-202">Esimerkki: Lori Penor on Adventure Worksin johtaja, joka nimitetään pääjohtajan toimeen.</span><span class="sxs-lookup"><span data-stu-id="be145-202">For example, Lori Penor is a general manager at Adventure Works and is assigned to the “General Manager” position.</span></span> <span data-ttu-id="be145-203">Lori johtaa pienoissovellusten puhdistamiseen käytettävän tuotteen kehitystyötä.</span><span class="sxs-lookup"><span data-stu-id="be145-203">Lori manages the development of a product that is used to clean widgets.</span></span> <span data-ttu-id="be145-204">Lori tarvitsee kirjanpitäjän avuksi tuotekehityksen taloushallintoon.</span><span class="sxs-lookup"><span data-stu-id="be145-204">Lori requires an accountant to help her with the finances for developing the product.</span></span> <span data-ttu-id="be145-205">Hän on rekrytoinut Sanjay Patelin kirjanpitäjäksi.</span><span class="sxs-lookup"><span data-stu-id="be145-205">Therefore, she has recruited Sanjay Patel to be her accountant.</span></span> <span data-ttu-id="be145-206">Sanjay raportoi suoraan Kim Akersille, mutta hän työskentelee myös Lori Penorin kanssa pienoissovelluksen tuotekehityksen taloushallinnossa.</span><span class="sxs-lookup"><span data-stu-id="be145-206">Sanjay reports directly to Kim Akers, but also works with Lori Penor on his work related to the finances for developing the widget cleaner.</span></span> 
 
-Edellisessä esimerkissä määrittäisit Sanjay Patelin ja Lori Penorin välisen työsuhteen suorittamalla seuraavat tehtävät:
-1.  Luo Pienoissovellus-niminen mukautettu toimen hierarkiatyyppi, jotta voit luoda hierarkian, joka sisältää pienoissovelluksen tuotekehityksestä vastaavat toimet.
-2.  Määritä pääjohtajan toimi toimeksi, jolle kirjanpitäjä A:n toimi raportoi Pienoissovellus-hierarkiassa.
+<span data-ttu-id="be145-207">Edellisessä esimerkissä määrittäisit Sanjay Patelin ja Lori Penorin välisen työsuhteen suorittamalla seuraavat tehtävät:</span><span class="sxs-lookup"><span data-stu-id="be145-207">For the previous example, you would complete the following tasks to set up the working relationship between Sanjay Patel and Lori Penor:</span></span>
+1.  <span data-ttu-id="be145-208">Luo Pienoissovellus-niminen mukautettu toimen hierarkiatyyppi, jotta voit luoda hierarkian, joka sisältää pienoissovelluksen tuotekehityksestä vastaavat toimet.</span><span class="sxs-lookup"><span data-stu-id="be145-208">Create a custom position hierarchy type called “Widget” to create a hierarchy that includes positions responsible for working on the widget cleaner product.</span></span>
+2.  <span data-ttu-id="be145-209">Määritä pääjohtajan toimi toimeksi, jolle kirjanpitäjä A:n toimi raportoi Pienoissovellus-hierarkiassa.</span><span class="sxs-lookup"><span data-stu-id="be145-209">Assign the General Manager position to be the position that the Accountant-A position reports to in the Widget hierarchy.</span></span>
 
-Toimihierarkian avulla voit tarkastella toimien raportointirakennetta. Jos toimihierarkioita on useita, voit tarkastella kutakin hierarkiatyyppiä toimihierarkiassa. Voit myös hakea toimia toimen tunnuksen tai siihen nimitetyn henkilön nimen perusteella. Toimihierarkia on organisaatiohierarkia.
+<span data-ttu-id="be145-210">Toimihierarkian avulla voit tarkastella toimien raportointirakennetta.</span><span class="sxs-lookup"><span data-stu-id="be145-210">Use the position hierarchy to view the reporting structure of positions.</span></span> <span data-ttu-id="be145-211">Jos toimihierarkioita on useita, voit tarkastella kutakin hierarkiatyyppiä toimihierarkiassa.</span><span class="sxs-lookup"><span data-stu-id="be145-211">If you have multiple position hierarchies, you can view the hierarchy for each hierarchy type in the position hierarchy.</span></span> <span data-ttu-id="be145-212">Voit myös hakea toimia toimen tunnuksen tai siihen nimitetyn henkilön nimen perusteella.</span><span class="sxs-lookup"><span data-stu-id="be145-212">Also, you can search for a position by position ID or by the name of the worker who is assigned to the position.</span></span> <span data-ttu-id="be145-213">Toimihierarkia on organisaatiohierarkia.</span><span class="sxs-lookup"><span data-stu-id="be145-213">The position hierarchy is an organizational hierarchy.</span></span>
 
-## <a name="date-effective-records"></a>Voimassaolotietueet
-Joissakin tietueissa voit määrittää tietueeseen tehtävät tulevat muutokset. Seuraavat tiedot ovat voimassaolotietueita.
+## <a name="date-effective-records"></a><span data-ttu-id="be145-214">Voimassaolotietueet</span><span class="sxs-lookup"><span data-stu-id="be145-214">Date effective records</span></span>
+<span data-ttu-id="be145-215">Joissakin tietueissa voit määrittää tietueeseen tehtävät tulevat muutokset.</span><span class="sxs-lookup"><span data-stu-id="be145-215">For some records, you can specify future changes to the record.</span></span> <span data-ttu-id="be145-216">Seuraavat tiedot ovat voimassaolotietueita.</span><span class="sxs-lookup"><span data-stu-id="be145-216">The following information is date effective.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Tietueet</th>
-<th>Voimassaolotiedot</th>
+<th><span data-ttu-id="be145-217">Tietueet</span><span class="sxs-lookup"><span data-stu-id="be145-217">Records</span></span></th>
+<th><span data-ttu-id="be145-218">Voimassaolotiedot</span><span class="sxs-lookup"><span data-stu-id="be145-218">Date effective information</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Työt</td>
+<td><span data-ttu-id="be145-219">Työt</span><span class="sxs-lookup"><span data-stu-id="be145-219">Jobs</span></span></td>
 <td><ul>
-<li>Jotkin yksityiskohtaiset työtiedot</li>
-<li>Työn luokittelutiedot</li>
-<li>Kompensaatiotiedot</li>
+<li><span data-ttu-id="be145-220">Jotkin yksityiskohtaiset työtiedot</span><span class="sxs-lookup"><span data-stu-id="be145-220">Some detailed job information</span></span></li>
+<li><span data-ttu-id="be145-221">Työn luokittelutiedot</span><span class="sxs-lookup"><span data-stu-id="be145-221">Job classification information</span></span></li>
+<li><span data-ttu-id="be145-222">Kompensaatiotiedot</span><span class="sxs-lookup"><span data-stu-id="be145-222">Compensation information</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Toimet</td>
+<td><span data-ttu-id="be145-223">Toimet</span><span class="sxs-lookup"><span data-stu-id="be145-223">Positions</span></span></td>
 <td><ul>
-<li>Jotkin yksityiskohtaiset toimitiedot</li>
-<li>Työntekijämääritykset</li>
-<li>Toimen kestot</li>
-<li>Positiohierarkiat</li>
+<li><span data-ttu-id="be145-224">Jotkin yksityiskohtaiset toimitiedot</span><span class="sxs-lookup"><span data-stu-id="be145-224">Some detailed position information</span></span></li>
+<li><span data-ttu-id="be145-225">Työntekijämääritykset</span><span class="sxs-lookup"><span data-stu-id="be145-225">Worker assignments</span></span></li>
+<li><span data-ttu-id="be145-226">Toimen kestot</span><span class="sxs-lookup"><span data-stu-id="be145-226">Position durations</span></span></li>
+<li><span data-ttu-id="be145-227">Positiohierarkiat</span><span class="sxs-lookup"><span data-stu-id="be145-227">Position hierarchies</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-Voit muokata edellä olevassa taulukossa mainittuja toimen tai työn tietoja ja määrittää päivämäärän, jona toimen tai työn muutokset tulevat voimaan. Esimerkki: Toimi voidaan määrittää vain yhdelle työntekijälle, mutta Sanjay Patel, joka on nimitetty kirjanpitäjä A:n toimeen, on lähdössä yrityksestä kahden viikon kuluttua. Joe Healy tulee hänen tilalleen. Vaikka Sanjay on edelleen toimessaan, voit määrittää Joe Healyn samaan toimeen siten, että määritys tulee voimaan vasta Sanjayn viimeisen työpäivän jälkeen.
+<span data-ttu-id="be145-228">Voit muokata edellä olevassa taulukossa mainittuja toimen tai työn tietoja ja määrittää päivämäärän, jona toimen tai työn muutokset tulevat voimaan.</span><span class="sxs-lookup"><span data-stu-id="be145-228">You can modify the information mentioned in the previous table for a position or a job and specify a date when the modifications to the position or job should take effect.</span></span> <span data-ttu-id="be145-229">Esimerkki: Toimi voidaan määrittää vain yhdelle työntekijälle, mutta Sanjay Patel, joka on nimitetty kirjanpitäjä A:n toimeen, on lähdössä yrityksestä kahden viikon kuluttua.</span><span class="sxs-lookup"><span data-stu-id="be145-229">For example, a position can only be assigned to one worker, but Sanjay Patel, who is assigned to the position Accountant-A, will be leaving in two weeks.</span></span> <span data-ttu-id="be145-230">Joe Healy tulee hänen tilalleen.</span><span class="sxs-lookup"><span data-stu-id="be145-230">Joe Healy will replace Sanjay Patel when he leaves.</span></span> <span data-ttu-id="be145-231">Vaikka Sanjay on edelleen toimessaan, voit määrittää Joe Healyn samaan toimeen siten, että määritys tulee voimaan vasta Sanjayn viimeisen työpäivän jälkeen.</span><span class="sxs-lookup"><span data-stu-id="be145-231">Even though Sanjay is still assigned to his position, you can assign Joe Healy to the same position so that the assignment is effective only after Sanjay’s last day.</span></span>
 
 
 

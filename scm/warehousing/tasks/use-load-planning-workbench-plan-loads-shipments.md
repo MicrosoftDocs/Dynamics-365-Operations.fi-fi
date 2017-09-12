@@ -17,53 +17,53 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 982c746de1329be435d9047d4057cba100475b1b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f840a4c15305af5f55451ae7f1cec2da25e685a4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Suunnittele kuormat ja lähetykset kuormasuunnittelun työtilassa
+# <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a><span data-ttu-id="e7b6d-103">Suunnittele kuormat ja lähetykset kuormasuunnittelun työtilassa</span><span class="sxs-lookup"><span data-stu-id="e7b6d-103">Plan loads and shipments using the Load planning workbench</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kerrotaan, miten myyntitilaukselle luodaan kuorma kuormasuunnittelun työtilan avulla. Ensimmäiseksi luodaan edellytyksenä oleva myyntitilaus. Tämä menettely on osa kuljetuskoordinaattorin päivittäistä työtä. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+<span data-ttu-id="e7b6d-104">Tässä menettelyssä kerrotaan, miten myyntitilaukselle luodaan kuorma kuormasuunnittelun työtilan avulla.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-104">This procedure shows how to use the load planning workbench to create a load for a sales order.</span></span> <span data-ttu-id="e7b6d-105">Ensimmäiseksi luodaan edellytyksenä oleva myyntitilaus.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-105">As a prerequisite we'll create the sales order first.</span></span> <span data-ttu-id="e7b6d-106">Tämä menettely on osa kuljetuskoordinaattorin päivittäistä työtä.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-106">This procedure is part of the daily work for the transportation coordinator.</span></span> <span data-ttu-id="e7b6d-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-sales-order"></a>Luo myyntitilaus
-1. Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Asiakastili-kentässä avattavan valikon painike.
-4. Valitse tili US-004.
-5. Valitse OK.
-6. Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.
-7. Valitse nimike A0001.
-    * A0001 on kuljetustenhallinnan käytössä.  
-8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-9. Kirjoita numero Määrä-kenttään.
-10. Syötä Varasto-kenttään 24.
-    * Valitse tässä esimerkissä varasto 24. Kuljetuksenhallinta ja varastonhallinnan lisätoiminnot ovat tässä varastossa käytössä.  
-11. Valitse Tallenna.
-12. Sulje sivu.
+## <a name="create-a-sales-order"></a><span data-ttu-id="e7b6d-108">Luo myyntitilaus</span><span class="sxs-lookup"><span data-stu-id="e7b6d-108">Create a sales order</span></span>
+1. <span data-ttu-id="e7b6d-109">Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-109">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="e7b6d-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-110">Click New.</span></span>
+3. <span data-ttu-id="e7b6d-111">Avaa haku valitsemalla Asiakastili-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-111">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="e7b6d-112">Valitse tili US-004.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-112">Select account US-004.</span></span>
+5. <span data-ttu-id="e7b6d-113">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-113">Click OK.</span></span>
+6. <span data-ttu-id="e7b6d-114">Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-114">In the Item number field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="e7b6d-115">Valitse nimike A0001.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-115">Select item A0001.</span></span>
+    * <span data-ttu-id="e7b6d-116">A0001 on kuljetustenhallinnan käytössä.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-116">A0001 is enabled for transportation management.</span></span>  
+8. <span data-ttu-id="e7b6d-117">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="e7b6d-118">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-118">In the Quantity field, enter a number.</span></span>
+10. <span data-ttu-id="e7b6d-119">Syötä Varasto-kenttään 24.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-119">In the Warehouse field, type '24'.</span></span>
+    * <span data-ttu-id="e7b6d-120">Valitse tässä esimerkissä varasto 24.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-120">In this example select warehouse 24.</span></span> <span data-ttu-id="e7b6d-121">Kuljetuksenhallinta ja varastonhallinnan lisätoiminnot ovat tässä varastossa käytössä.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-121">This warehouse is enabled for transportation management and advanced warehouse management.</span></span>  
+11. <span data-ttu-id="e7b6d-122">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-122">Click Save.</span></span>
+12. <span data-ttu-id="e7b6d-123">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-123">Close the page.</span></span>
 
-## <a name="create-a-new-load"></a>Uuden kuorman luominen
-1. Valitse Kuljetustenhallinta > Suunnittelu > Kuormasuunnittelun työtila.
-2. Valitse Myyntirivit-välilehti.
-    * Muodostetaan nyt juuri luodulle myyntitilaukselle kuorma. Kuormat voidaan muodostaa tarjonnan ja kysynnän perusteella ostotilauksista, siirtotilauksista ja myyntitilauksista.  
-3. Valitse toimintoruudussa Tarjonta ja kysyntä.
-4. Valitse Uuteen kuormaan.
-5. Avaa haku valitsemalla Kuorman mallitunnus -kentässä avattavan valikon painike.
-    * Kuormamalli määrittää koko kuorman painon ja tilavuuden enimmäismitat. Kuormamalli voi esittää esimerkiksi kontin tai kuorma-auton koon.  
-6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-7. Valitse OK.
+## <a name="create-a-new-load"></a><span data-ttu-id="e7b6d-124">Uuden kuorman luominen</span><span class="sxs-lookup"><span data-stu-id="e7b6d-124">Create a new load</span></span>
+1. <span data-ttu-id="e7b6d-125">Valitse Kuljetustenhallinta > Suunnittelu > Kuormasuunnittelun työtila.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-125">Go to Transportation management > Planning > Load planning workbench.</span></span>
+2. <span data-ttu-id="e7b6d-126">Valitse Myyntirivit-välilehti.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-126">Click the Sales lines tab.</span></span>
+    * <span data-ttu-id="e7b6d-127">Muodostetaan nyt juuri luodulle myyntitilaukselle kuorma.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-127">Now you'll build the load for the sales order that you just created.</span></span> <span data-ttu-id="e7b6d-128">Kuormat voidaan muodostaa tarjonnan ja kysynnän perusteella ostotilauksista, siirtotilauksista ja myyntitilauksista.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-128">Loads can be built based on supply and demand from purchase orders, transfer orders, and sales orders.</span></span>  
+3. <span data-ttu-id="e7b6d-129">Valitse toimintoruudussa Tarjonta ja kysyntä.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-129">On the Action Pane, click Supply and demand.</span></span>
+4. <span data-ttu-id="e7b6d-130">Valitse Uuteen kuormaan.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-130">Click To new load.</span></span>
+5. <span data-ttu-id="e7b6d-131">Avaa haku valitsemalla Kuorman mallitunnus -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-131">In the Load template ID field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="e7b6d-132">Kuormamalli määrittää koko kuorman painon ja tilavuuden enimmäismitat.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-132">The Load template defines maximum measurements for weight and volume of the entire load.</span></span> <span data-ttu-id="e7b6d-133">Kuormamalli voi esittää esimerkiksi kontin tai kuorma-auton koon.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-133">For example, the load template might represent the size of a container or truck.</span></span>  
+6. <span data-ttu-id="e7b6d-134">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-134">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="e7b6d-135">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-135">Click OK.</span></span>
 
-## <a name="rate-and-route-the-load"></a>Kuorman hinnan ja reitityksen määrittäminen
-1. Valitse Hinnoittelu ja reititys.
-2. Valitse Hinnan ja reitin työtila.
-3. Valitse Hintavertailu.
-4. Etsi haluamasi tietue luettelosta ja valitse se.
-5. Valitse Liitä.
-6. Sulje sivu.
-7. Sulje sivu.
+## <a name="rate-and-route-the-load"></a><span data-ttu-id="e7b6d-136">Kuorman hinnan ja reitityksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="e7b6d-136">Rate and route the load</span></span>
+1. <span data-ttu-id="e7b6d-137">Valitse Hinnoittelu ja reititys.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-137">Click Rating and routing.</span></span>
+2. <span data-ttu-id="e7b6d-138">Valitse Hinnan ja reitin työtila.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-138">Click Rate route workbench.</span></span>
+3. <span data-ttu-id="e7b6d-139">Valitse Hintavertailu.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-139">Click Rate shop.</span></span>
+4. <span data-ttu-id="e7b6d-140">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-140">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="e7b6d-141">Valitse Liitä.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-141">Click Assign.</span></span>
+6. <span data-ttu-id="e7b6d-142">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-142">Close the page.</span></span>
+7. <span data-ttu-id="e7b6d-143">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="e7b6d-143">Close the page.</span></span>
 
 

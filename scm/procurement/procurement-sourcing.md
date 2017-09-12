@@ -15,7 +15,7 @@ ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
@@ -25,84 +25,84 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="procurement-and-sourcing-home-page"></a>Hankinnan aloitussivu
+# <a name="procurement-and-sourcing-home-page"></a><span data-ttu-id="329e5-103">Hankinnan aloitussivu</span><span class="sxs-lookup"><span data-stu-id="329e5-103">Procurement and sourcing home page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä aiheessa on luettelo hankinnan ohjeaiheista ja muista resursseista.
+<span data-ttu-id="329e5-104">Tässä aiheessa on luettelo hankinnan ohjeaiheista ja muista resursseista.</span><span class="sxs-lookup"><span data-stu-id="329e5-104">This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.</span></span>
 
-Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen hankintaan, vastaanottamiseen, laskuttamiseen ja maksujen käsittelyyn toimittajalla. Hankintaprosessit voidaan määrittää tiettyjä liiketoimintatarpeita varten määrittämällä ostokäytäntöjä ja työnkulkuja. Yleistietoja on kohdassa [Yleiskatsaus hankintaan](procurement-sourcing-overview.md). Muita resursseja on lueteltu alla.
+<span data-ttu-id="329e5-105">Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen hankintaan, vastaanottamiseen, laskuttamiseen ja maksujen käsittelyyn toimittajalla.</span><span class="sxs-lookup"><span data-stu-id="329e5-105">Procurement and sourcing covers all steps from identifying a need for product and services, through procuring the product, receipt, invoice, and processing payment with vendors.</span></span> <span data-ttu-id="329e5-106">Hankintaprosessit voidaan määrittää tiettyjä liiketoimintatarpeita varten määrittämällä ostokäytäntöjä ja työnkulkuja.</span><span class="sxs-lookup"><span data-stu-id="329e5-106">Procurement processes can be configured toward specific business needs by defining purchasing policies and workflows.</span></span> <span data-ttu-id="329e5-107">Yleistietoja on kohdassa [Yleiskatsaus hankintaan](procurement-sourcing-overview.md).</span><span class="sxs-lookup"><span data-stu-id="329e5-107">For general information, see [Procurement and sourcing overview](procurement-sourcing-overview.md).</span></span> <span data-ttu-id="329e5-108">Muita resursseja on lueteltu alla.</span><span class="sxs-lookup"><span data-stu-id="329e5-108">Additional resources are listed below.</span></span>
 
-## <a name="purchase-requisitions"></a>Ostoehdotukset
--   [Ostoehdotusten yleiskatsaus](purchase-requisitions-overview.md)
--   [Luo kulutusehdotus](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-consumption)
--   [Luo ehdotus, joka käyttää tarjouspyyntöä](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-uses-rfq)
--   [Määritä käyttöoikeudet tuotteiden tilaamiseen jonkun muun puolesta](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-permissions-ordering-products)
+## <a name="purchase-requisitions"></a><span data-ttu-id="329e5-109">Ostoehdotukset</span><span class="sxs-lookup"><span data-stu-id="329e5-109">Purchase requisitions</span></span>
+-   [<span data-ttu-id="329e5-110">Ostoehdotusten yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="329e5-110">Purchase requisition overview</span></span>](purchase-requisitions-overview.md)
+-   [<span data-ttu-id="329e5-111">Luo kulutusehdotus</span><span class="sxs-lookup"><span data-stu-id="329e5-111">Create a requisition for consumption</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-consumption)
+-   [<span data-ttu-id="329e5-112">Luo ehdotus, joka käyttää tarjouspyyntöä</span><span class="sxs-lookup"><span data-stu-id="329e5-112">Create a requisition that uses an RFQ</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-uses-rfq)
+-   [<span data-ttu-id="329e5-113">Määritä käyttöoikeudet tuotteiden tilaamiseen jonkun muun puolesta</span><span class="sxs-lookup"><span data-stu-id="329e5-113">Set up permissions for ordering products on behalf of someone else</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-permissions-ordering-products)
 
-## <a name="requests-for-quotation"></a>Tarjouspyynnöt
--   [Tarjouspyyntö](request-quotations.md)
--   [Luo tarjouspyyntö](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-request-quotation)
--   [Syötä ja vertaa tarjouspyyntöjä ja myönnä sopimuksia](/dynamics365/unified-operations/supply-chain/procurement/tasks/enter-compare-rfq-bids-award-contracts)
--   [Luo tarjouspyyntöjen pisteytystapa](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-scoring-method-rfqs)
--   [Luo tarjouspyyntöjen pyyntötyypit ja pisteytysperusteet](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-solicitation-types-scoring-criteria-rfqs)
+## <a name="requests-for-quotation"></a><span data-ttu-id="329e5-114">Tarjouspyynnöt</span><span class="sxs-lookup"><span data-stu-id="329e5-114">Requests for quotation</span></span>
+-   [<span data-ttu-id="329e5-115">Tarjouspyyntö</span><span class="sxs-lookup"><span data-stu-id="329e5-115">Request for quotations</span></span>](request-quotations.md)
+-   [<span data-ttu-id="329e5-116">Luo tarjouspyyntö</span><span class="sxs-lookup"><span data-stu-id="329e5-116">Create a request for quotation</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-request-quotation)
+-   [<span data-ttu-id="329e5-117">Syötä ja vertaa tarjouspyyntöjä ja myönnä sopimuksia</span><span class="sxs-lookup"><span data-stu-id="329e5-117">Enter and compare RFQ bids and award contracts</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/enter-compare-rfq-bids-award-contracts)
+-   [<span data-ttu-id="329e5-118">Luo tarjouspyyntöjen pisteytystapa</span><span class="sxs-lookup"><span data-stu-id="329e5-118">Create a scoring method for RFQs</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-scoring-method-rfqs)
+-   [<span data-ttu-id="329e5-119">Luo tarjouspyyntöjen pyyntötyypit ja pisteytysperusteet</span><span class="sxs-lookup"><span data-stu-id="329e5-119">Create solicitation types and scoring criteria for RFQs</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-solicitation-types-scoring-criteria-rfqs)
 
-## <a name="vendor-management-and-collaboration"></a>Toimittajien hallinta ja toimittajayhteistyö
--   [Toimittajatilien määrittäminen](set-up-vendor-accounts.md)
--   [Toimittajatilin luominen](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-vendor-account)
--   [Luo toimittajan pankkitili](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-vendor-bank-account)
--   [Toimittajien etsiminen](/dynamics365/unified-operations/supply-chain/procurement/tasks/search-vendors)
--   [Hyväksy tietyille tuotteille toimittajia](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-products)
--   [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md)
--   [Toimittajayhteistyö asiakkaiden kanssa](vendor-collaboration-work-customers-dynamics-365-operations.md)
--   [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md)
--   [Määritä ja ylläpidä toimittajayhteistyötä](set-up-maintain-vendor-collaboration.md)
--   [Microsoft Dynamics 365 Finance and Operationsin saapuvan tavaralähetyksen esittelykäsikirjoitus](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(tiedote)
--   [Tavaralähetysvaraston valvonta toimittajayhteistyön avulla](/dynamics365/unified-operations/supply-chain/inventory/tasks/monitor-consignment-inventory-vendor-collaboration)
--   [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md) (vain Dynamics AX:n helmikuun 2016 ja toukokuun 2016 versiot)
--   [Käyttöoikeuksien määrittäminen toimittajaportaalin käyttäjille](configure-security-vendor-portal-users.md) (vain Finance and Operationsin toukokuun 2016 versiot)
--   [Toimittajayhteistyön mobiilityötila Microsoft Dynamics 365 for Finance and Operations -sovellusta varten](vendor-collaboration-mobile-workspace.md)
+## <a name="vendor-management-and-collaboration"></a><span data-ttu-id="329e5-120">Toimittajien hallinta ja toimittajayhteistyö</span><span class="sxs-lookup"><span data-stu-id="329e5-120">Vendor management and collaboration</span></span>
+-   [<span data-ttu-id="329e5-121">Toimittajatilien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="329e5-121">Setting up vendor accounts</span></span>](set-up-vendor-accounts.md)
+-   [<span data-ttu-id="329e5-122">Toimittajatilin luominen</span><span class="sxs-lookup"><span data-stu-id="329e5-122">Create a vendor account</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-vendor-account)
+-   [<span data-ttu-id="329e5-123">Luo toimittajan pankkitili</span><span class="sxs-lookup"><span data-stu-id="329e5-123">Create a vendor bank account</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-vendor-bank-account)
+-   [<span data-ttu-id="329e5-124">Toimittajien etsiminen</span><span class="sxs-lookup"><span data-stu-id="329e5-124">Search for vendors</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/search-vendors)
+-   [<span data-ttu-id="329e5-125">Hyväksy tietyille tuotteille toimittajia</span><span class="sxs-lookup"><span data-stu-id="329e5-125">Approve vendors for specific products</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-products)
+-   [<span data-ttu-id="329e5-126">Toimittajayhteistyö ulkoisten toimittajien kanssa</span><span class="sxs-lookup"><span data-stu-id="329e5-126">Vendor collaboration with external vendors</span></span>](vendor-collaboration-work-external-vendors.md)
+-   [<span data-ttu-id="329e5-127">Toimittajayhteistyö asiakkaiden kanssa</span><span class="sxs-lookup"><span data-stu-id="329e5-127">Vendor collaboration with customers</span></span>](vendor-collaboration-work-customers-dynamics-365-operations.md)
+-   [<span data-ttu-id="329e5-128">Toimittajayhteistyön käyttäjien hallinta</span><span class="sxs-lookup"><span data-stu-id="329e5-128">Manage vendor collaboration users</span></span>](manage-vendor-collaboration-users.md)
+-   [<span data-ttu-id="329e5-129">Määritä ja ylläpidä toimittajayhteistyötä</span><span class="sxs-lookup"><span data-stu-id="329e5-129">Set up and maintain vendor collaboration</span></span>](set-up-maintain-vendor-collaboration.md)
+-   <span data-ttu-id="329e5-130">[Microsoft Dynamics 365 Finance and Operationsin saapuvan tavaralähetyksen esittelykäsikirjoitus](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(tiedote)</span><span class="sxs-lookup"><span data-stu-id="329e5-130">[Inbound consignment inventory demo script for Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(white paper)</span></span>
+-   [<span data-ttu-id="329e5-131">Tavaralähetysvaraston valvonta toimittajayhteistyön avulla</span><span class="sxs-lookup"><span data-stu-id="329e5-131">Monitor consignment inventory using vendor collaboration</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/monitor-consignment-inventory-vendor-collaboration)
+-   <span data-ttu-id="329e5-132">[Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md) (vain Dynamics AX:n helmikuun 2016 ja toukokuun 2016 versiot)</span><span class="sxs-lookup"><span data-stu-id="329e5-132">[Collaborating with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)  (February 2016 and May 2016 versions of Dynamics AX only)</span></span>
+-   <span data-ttu-id="329e5-133">[Käyttöoikeuksien määrittäminen toimittajaportaalin käyttäjille](configure-security-vendor-portal-users.md) (vain Finance and Operationsin toukokuun 2016 versiot)</span><span class="sxs-lookup"><span data-stu-id="329e5-133">[Configuration of security for Vendor portal users](configure-security-vendor-portal-users.md) (2016 and May 2016 versions of Finance and Operations only)</span></span>
+-   [<span data-ttu-id="329e5-134">Toimittajayhteistyön mobiilityötila Microsoft Dynamics 365 for Finance and Operations -sovellusta varten</span><span class="sxs-lookup"><span data-stu-id="329e5-134">Vendor collaboration mobile workspace for Microsoft Dynamics 365 for Finance and Operations app</span></span>](vendor-collaboration-mobile-workspace.md)
 
-## <a name="procurement-product-management"></a>Tuoteluokan hallinta
--   [Tuotteiden hankintaluettelot](procurement-catalogs.md)
--   [Luo hankintaluettelo](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-procurement-catalog)
--   [Toimittajaluetteloiden tuominen](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blogikirjoitus)
--   [Määritä hankintaluokkahierarkia](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-procurement-category-hierarchy)
--   [Aseta menettelytavat hankintaluokkien hierarkioille](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies)
--   [Hyväksy toimittajia tiettyihin hankintaluokkiin](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories)
+## <a name="procurement-product-management"></a><span data-ttu-id="329e5-135">Tuoteluokan hallinta</span><span class="sxs-lookup"><span data-stu-id="329e5-135">Procurement product management</span></span>
+-   [<span data-ttu-id="329e5-136">Tuotteiden hankintaluettelot</span><span class="sxs-lookup"><span data-stu-id="329e5-136">Procurement catalogs</span></span>](procurement-catalogs.md)
+-   [<span data-ttu-id="329e5-137">Luo hankintaluettelo</span><span class="sxs-lookup"><span data-stu-id="329e5-137">Create a procurement catalog</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-procurement-catalog)
+-   <span data-ttu-id="329e5-138">[Toimittajaluetteloiden tuominen](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blogikirjoitus)</span><span class="sxs-lookup"><span data-stu-id="329e5-138">[Importing vendor catalogs](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blog post)</span></span>
+-   [<span data-ttu-id="329e5-139">Määritä hankintaluokkahierarkia</span><span class="sxs-lookup"><span data-stu-id="329e5-139">Set up a procurement category hierarchy</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-procurement-category-hierarchy)
+-   [<span data-ttu-id="329e5-140">Aseta menettelytavat hankintaluokkien hierarkioille</span><span class="sxs-lookup"><span data-stu-id="329e5-140">Set up policies for procurement category hierarchies</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies)
+-   [<span data-ttu-id="329e5-141">Hyväksy toimittajia tiettyihin hankintaluokkiin</span><span class="sxs-lookup"><span data-stu-id="329e5-141">Approve vendors for specific procurement categories</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories)
 
-## <a name="procurement"></a>Hankinta
--   [Ostotilausten yleiskatsaus](purchase-order-overview.md)
--   [Ostotilauksen luonti](purchase-order-creation.md)
--   [Ostotilauksen hyväksyntä ja vahvistus](purchase-order-approval-confirmation.md)
--   [Ostotilauksen luominen](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order)
--   [Luo toistuva ostotilaus](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-repeat-purchase-order)
--   [Ostotilauksen luominen myyntitilauksesta](/dynamics365/unified-operations/supply-chain/sales-marketing/tasks/create-purchase-order-sales-order)
--   [Luo ostotilaus kertatoimittajalle](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order-one-time-supplier)
--   [Luo ostotilaus, jolla on toimitusaikataulu](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order-delivery-schedule)
--   [Luo ostopalautustilaus](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-return-order)
--   [Vapautustilauksen luominen ostosopimuksesta](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement)
--   [Oston vapautustilauksen luominen ostotilausta luotaessa](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-creating-purchase-order)
--   [Luo tavaralähetyksen täydennystilaus](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-consignment-replenishment-order)
+## <a name="procurement"></a><span data-ttu-id="329e5-142">Hankinta</span><span class="sxs-lookup"><span data-stu-id="329e5-142">Procurement</span></span>
+-   [<span data-ttu-id="329e5-143">Ostotilausten yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="329e5-143">Purchase order overview</span></span>](purchase-order-overview.md)
+-   [<span data-ttu-id="329e5-144">Ostotilauksen luonti</span><span class="sxs-lookup"><span data-stu-id="329e5-144">Purchase order creation</span></span>](purchase-order-creation.md)
+-   [<span data-ttu-id="329e5-145">Ostotilauksen hyväksyntä ja vahvistus</span><span class="sxs-lookup"><span data-stu-id="329e5-145">Purchase order approval and confirmation</span></span>](purchase-order-approval-confirmation.md)
+-   [<span data-ttu-id="329e5-146">Ostotilauksen luominen</span><span class="sxs-lookup"><span data-stu-id="329e5-146">Create a purchase order</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order)
+-   [<span data-ttu-id="329e5-147">Luo toistuva ostotilaus</span><span class="sxs-lookup"><span data-stu-id="329e5-147">Create a repeat purchase order</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-repeat-purchase-order)
+-   [<span data-ttu-id="329e5-148">Ostotilauksen luominen myyntitilauksesta</span><span class="sxs-lookup"><span data-stu-id="329e5-148">Create a purchase order from a sales order</span></span>](/dynamics365/unified-operations/supply-chain/sales-marketing/tasks/create-purchase-order-sales-order)
+-   [<span data-ttu-id="329e5-149">Luo ostotilaus kertatoimittajalle</span><span class="sxs-lookup"><span data-stu-id="329e5-149">Create a purchase order for a one-time supplier</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order-one-time-supplier)
+-   [<span data-ttu-id="329e5-150">Luo ostotilaus, jolla on toimitusaikataulu</span><span class="sxs-lookup"><span data-stu-id="329e5-150">Create a purchase order with a delivery schedule</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order-delivery-schedule)
+-   [<span data-ttu-id="329e5-151">Luo ostopalautustilaus</span><span class="sxs-lookup"><span data-stu-id="329e5-151">Create a purchase return order</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-return-order)
+-   [<span data-ttu-id="329e5-152">Vapautustilauksen luominen ostosopimuksesta</span><span class="sxs-lookup"><span data-stu-id="329e5-152">Create a purchase release order from a purchase agreement</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement)
+-   [<span data-ttu-id="329e5-153">Oston vapautustilauksen luominen ostotilausta luotaessa</span><span class="sxs-lookup"><span data-stu-id="329e5-153">Create a purchase release order when creating the purchase order</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-creating-purchase-order)
+-   [<span data-ttu-id="329e5-154">Luo tavaralähetyksen täydennystilaus</span><span class="sxs-lookup"><span data-stu-id="329e5-154">Create a consignment replenishment order</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-consignment-replenishment-order)
 
-## <a name="prices-and-discounts"></a>Hinnat ja alennukset
--   [Ostosopimukset](purchase-agreements.md)
--   [Luo ostosopimus](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-agreement)
--   [Toimittajien ostohyvitykset](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (raportti)
+## <a name="prices-and-discounts"></a><span data-ttu-id="329e5-155">Hinnat ja alennukset</span><span class="sxs-lookup"><span data-stu-id="329e5-155">Prices and discounts</span></span>
+-   [<span data-ttu-id="329e5-156">Ostosopimukset</span><span class="sxs-lookup"><span data-stu-id="329e5-156">Purchase agreements</span></span>](purchase-agreements.md)
+-   [<span data-ttu-id="329e5-157">Luo ostosopimus</span><span class="sxs-lookup"><span data-stu-id="329e5-157">Create a purchase agreement</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-agreement)
+-   <span data-ttu-id="329e5-158">[Toimittajien ostohyvitykset](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (raportti)</span><span class="sxs-lookup"><span data-stu-id="329e5-158">[Vendor rebates](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (white paper)</span></span>
 
-## <a name="product-receipt-and-invoicing"></a>Tuotteen vastaanotto ja laskutus
--   [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
--   [Toimittajan laskujen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
--   [Toimittajan kirjausprofiilit](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## <a name="product-receipt-and-invoicing"></a><span data-ttu-id="329e5-159">Tuotteen vastaanotto ja laskutus</span><span class="sxs-lookup"><span data-stu-id="329e5-159">Product receipt and invoicing</span></span>
+-   [<span data-ttu-id="329e5-160">Tuotteen vastaanotto ostotilausten perusteella</span><span class="sxs-lookup"><span data-stu-id="329e5-160">Product receipt against purchase orders</span></span>](product-receipt-against-purchase-orders.md)
+-   [<span data-ttu-id="329e5-161">Toimittajan laskujen yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="329e5-161">Overview of vendor invoices</span></span>](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+-   [<span data-ttu-id="329e5-162">Toimittajan kirjausprofiilit</span><span class="sxs-lookup"><span data-stu-id="329e5-162">Vendor posting profiles</span></span>](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-## <a name="procurement-and-sourcing-workflows"></a>Hankinnan työnkulut
--   [Hankinnan yleiskatsaus](procurement-sourcing-overview.md)
--   [Hankinnan työnkulut](procurement-sourcing-workflows.md)
--   [Ostotilauksen tuotteiden vastaanoton kirjaaminen](/dynamics365/unified-operations/supply-chain/procurement/tasks/record-receipt-goods-purchase-order)
--   [Ostoehdotuksen työnkulku](purchase-requisitions-workflow.md)
--   [Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (raportti)
--   [Ostokäytännöt](purchase-policies.md)
--   [Luo ostokäytännöt](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchasing-policies)
+## <a name="procurement-and-sourcing-workflows"></a><span data-ttu-id="329e5-163">Hankinnan työnkulut</span><span class="sxs-lookup"><span data-stu-id="329e5-163">Procurement and sourcing workflows</span></span>
+-   [<span data-ttu-id="329e5-164">Hankinnan yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="329e5-164">Procurement and sourcing overview</span></span>](procurement-sourcing-overview.md)
+-   [<span data-ttu-id="329e5-165">Hankinnan työnkulut</span><span class="sxs-lookup"><span data-stu-id="329e5-165">Procurement and sourcing workflows</span></span>](procurement-sourcing-workflows.md)
+-   [<span data-ttu-id="329e5-166">Ostotilauksen tuotteiden vastaanoton kirjaaminen</span><span class="sxs-lookup"><span data-stu-id="329e5-166">Record the receipt of goods on the purchase order</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/record-receipt-goods-purchase-order)
+-   [<span data-ttu-id="329e5-167">Ostoehdotuksen työnkulku</span><span class="sxs-lookup"><span data-stu-id="329e5-167">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
+-   <span data-ttu-id="329e5-168">[Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (raportti)</span><span class="sxs-lookup"><span data-stu-id="329e5-168">[Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (white paper)</span></span>
+-   [<span data-ttu-id="329e5-169">Ostokäytännöt</span><span class="sxs-lookup"><span data-stu-id="329e5-169">Purchasing policies</span></span>](purchase-policies.md)
+-   [<span data-ttu-id="329e5-170">Luo ostokäytännöt</span><span class="sxs-lookup"><span data-stu-id="329e5-170">Create purchasing policies</span></span>](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchasing-policies)
 
 
 

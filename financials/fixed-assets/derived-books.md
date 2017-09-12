@@ -16,37 +16,37 @@ ms.custom: 3401
 ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3cf2f1143837a35a41b12ef566743aefd90fc462
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 5afdabf93128bc52cb223d0c35c6bcdae5f5ca2a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="derived-books"></a>Johdetut kirjat
+# <a name="derived-books"></a><span data-ttu-id="8f196-103">Johdetut kirjat</span><span class="sxs-lookup"><span data-stu-id="8f196-103">Derived books</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on yleiskuvaus johdetun kirjan toiminnoista.
+<span data-ttu-id="8f196-104">Tässä artikkelissa on yleiskuvaus johdetun kirjan toiminnoista.</span><span class="sxs-lookup"><span data-stu-id="8f196-104">This article provides an overview of derived book functionality.</span></span>
 
-Johdettujen kirjojen avulla voidaan yksinkertaistaa säännöllisesti ajoitettujen käyttöomaisuuden kirjatapahtumien kirjaamista.  Voit valita yhden kirjan ensisijaiseksi kirjaksi. Valinta on yleensä kirjanpidon poistossa käytettävä kirja. Tämän jälkeen se liitetään muihin kirjoihin, jotka on määritetty kirjaamaan tapahtumat samoille aikaväleille kuin ensisijainen kirja. Verotuksen poistojen kirjat määritetään usein johdettuina kirjoina. 
+<span data-ttu-id="8f196-105">Johdettujen kirjojen avulla voidaan yksinkertaistaa säännöllisesti ajoitettujen käyttöomaisuuden kirjatapahtumien kirjaamista.</span><span class="sxs-lookup"><span data-stu-id="8f196-105">The purpose of derived books is to simplify the posting of fixed asset book transactions that are planned for regular intervals.</span></span>  <span data-ttu-id="8f196-106">Voit valita yhden kirjan ensisijaiseksi kirjaksi.</span><span class="sxs-lookup"><span data-stu-id="8f196-106">You choose one book as the primary book.</span></span> <span data-ttu-id="8f196-107">Valinta on yleensä kirjanpidon poistossa käytettävä kirja.</span><span class="sxs-lookup"><span data-stu-id="8f196-107">This usually is the book that is used for accounting depreciation.</span></span> <span data-ttu-id="8f196-108">Tämän jälkeen se liitetään muihin kirjoihin, jotka on määritetty kirjaamaan tapahtumat samoille aikaväleille kuin ensisijainen kirja.</span><span class="sxs-lookup"><span data-stu-id="8f196-108">You then attach to it other books that are set up to post transactions in the same intervals as the primary book.</span></span> <span data-ttu-id="8f196-109">Verotuksen poistojen kirjat määritetään usein johdettuina kirjoina.</span><span class="sxs-lookup"><span data-stu-id="8f196-109">Tax depreciation books are often set up as derived books.</span></span> 
 
-Yleisimmät johdettuihin kirjoihin kirjattavaksi määritettävät tapahtumat ovat hankinnat, hankintaoikaisut ja luovutukset. 
+<span data-ttu-id="8f196-110">Yleisimmät johdettuihin kirjoihin kirjattavaksi määritettävät tapahtumat ovat hankinnat, hankintaoikaisut ja luovutukset.</span><span class="sxs-lookup"><span data-stu-id="8f196-110">The most common transactions to set up to post to derived books are acquisitions, acquisition adjustments, and disposals.</span></span> 
 
-## <a name="example"></a>Esimerkki
+## <a name="example"></a><span data-ttu-id="8f196-111">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="8f196-111">Example</span></span>
 
-Hankinta-tapahtumatyypin kirjan A johdetuiksi kirjoiksi on määritetty kirjat B ja C. Kirjalle A syötetään käyttöomaisuuserän 123 hankintatapahtuma, jonka summa on 1 500,00. 
+<span data-ttu-id="8f196-112">Hankinta-tapahtumatyypin kirjan A johdetuiksi kirjoiksi on määritetty kirjat B ja C.</span><span class="sxs-lookup"><span data-stu-id="8f196-112">Book B and book C are set up as derived books for book A for the Acquisition transaction type.</span></span> <span data-ttu-id="8f196-113">Kirjalle A syötetään käyttöomaisuuserän 123 hankintatapahtuma, jonka summa on 1 500,00.</span><span class="sxs-lookup"><span data-stu-id="8f196-113">In book A, you enter an acquisition transaction for asset 123 for 1,500.00.</span></span> 
 
-Kun tapahtuma kirjataan, hankintatapahtuma luodaan ja kirjataan käyttöomaisuuserälle 123 sekä kirjaan B että kirjaan C summalla 1 500,00. Kun valmistelet ensisijaisen kirjan tapahtumia käyttöomaisuuden kirjauskansioon kirjaamista varten, voit tarkastella ja muokata myös johdettujen kirjojen tapahtumia. Jos valmistelet ensisijaisen kirjan tapahtumia toisessa kirjauskansiossa, et voi tarkastella johdettujen arvojen tapahtumia. Ne kirjataan määritetyille tileille ja määritettyihin kirjanpitotasoihin, kun ensisijaisen kirjan tapahtumat kirjataan.
+<span data-ttu-id="8f196-114">Kun tapahtuma kirjataan, hankintatapahtuma luodaan ja kirjataan käyttöomaisuuserälle 123 sekä kirjaan B että kirjaan C summalla 1 500,00.</span><span class="sxs-lookup"><span data-stu-id="8f196-114">When the transaction is posted, an acquisition transaction is generated and posted in asset 123 for book B and in asset 123 for book C for 1,500.00.</span></span> <span data-ttu-id="8f196-115">Kun valmistelet ensisijaisen kirjan tapahtumia käyttöomaisuuden kirjauskansioon kirjaamista varten, voit tarkastella ja muokata myös johdettujen kirjojen tapahtumia.</span><span class="sxs-lookup"><span data-stu-id="8f196-115">When you prepare the transactions of the primary book for posting in the fixed asset journal, you can also view and modify the transactions of the derived books.</span></span> <span data-ttu-id="8f196-116">Jos valmistelet ensisijaisen kirjan tapahtumia toisessa kirjauskansiossa, et voi tarkastella johdettujen arvojen tapahtumia.</span><span class="sxs-lookup"><span data-stu-id="8f196-116">If you prepare the primary book transactions in another journal, the transactions of the derived value are not displayed.</span></span> <span data-ttu-id="8f196-117">Ne kirjataan määritetyille tileille ja määritettyihin kirjanpitotasoihin, kun ensisijaisen kirjan tapahtumat kirjataan.</span><span class="sxs-lookup"><span data-stu-id="8f196-117">However, they are posted to the appropriate accounts and posting layers when you post the primary book transactions.</span></span>
 
 > [!NOTE]                                                                                                                               
-> Kirjat, joihin on määritetty tapahtumien kirjaus jollakin muulla aikavälillä kuin ensisijaisessa kirjassa, on liitettävä käyttöomaisuuserään erillisinä kirjoina, ei johdettuina kirjoina.  
+> <span data-ttu-id="8f196-118">Kirjat, joihin on määritetty tapahtumien kirjaus jollakin muulla aikavälillä kuin ensisijaisessa kirjassa, on liitettävä käyttöomaisuuserään erillisinä kirjoina, ei johdettuina kirjoina.</span><span class="sxs-lookup"><span data-stu-id="8f196-118">Books that are set up to post transactions at intervals other than the primary book intervals must be attached to the fixed asset as separate books and not as derived books.</span></span>  
 
-Lisätietoja on kohdassa [Kirjaaminen johdetuissa kirjoissa](post-derived-value-models.md)
+<span data-ttu-id="8f196-119">Lisätietoja on kohdassa [Kirjaaminen johdetuissa kirjoissa](post-derived-value-models.md)</span><span class="sxs-lookup"><span data-stu-id="8f196-119">For more information, see [Posting with derived books](post-derived-value-models.md).</span></span>
 
 
 

@@ -17,34 +17,34 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: a22db527d9ab80da9e3592eeef30b4675a3c39c8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 75b91ea330258a5b57e9e58cb32539d57e458f28
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="end-a-production-order"></a>Tuotantotilauksen lopetus
+# <a name="end-a-production-order"></a><span data-ttu-id="b040f-103">Tuotantotilauksen lopetus</span><span class="sxs-lookup"><span data-stu-id="b040f-103">End a production order</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä selvitetään, miten tuotantotilaus päätetään. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä on viimeinen seitsemästä tuotantotilauksen elinkaaresta kertovasta menettelystä.
+<span data-ttu-id="b040f-104">Tässä menettelyssä selvitetään, miten tuotantotilaus päätetään.</span><span class="sxs-lookup"><span data-stu-id="b040f-104">This procedure shows how to end a production order.</span></span> <span data-ttu-id="b040f-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="b040f-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b040f-106">Tämä on viimeinen seitsemästä tuotantotilauksen elinkaaresta kertovasta menettelystä.</span><span class="sxs-lookup"><span data-stu-id="b040f-106">This is the final procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="end-a-production-order"></a>Tuotantotilauksen lopetus
-1. Siirry kohtaan Tuotannonhallinta > Tuotantotilaukset > Kaikki tuotantotilaukset.
-    * Valitse tuotantotilaus, jonka tila on Ilmoitettu valmiiksi.  
-2. Valitse toimintoruudussa Tuotantotilaus.
-3. Valitse Lopetus.
-    * Voit vahvistaa tällä sivulla, että haluat päättää tuotantotilauksen.  
-4. Valitse Yleiset-välilehti.
-5. Syötä Päivämäärään-kenttään päivämäärä.
-6. Valitse Hävikkimenetelmä-kentässä Kohdistus.
-    * Kun valitset kohdistusmenetelmän, materiaalihävikki kustannukset lisätään valmiisiin tuotteisiin.  
-7. Valitse OK.
+## <a name="end-a-production-order"></a><span data-ttu-id="b040f-107">Tuotantotilauksen lopetus</span><span class="sxs-lookup"><span data-stu-id="b040f-107">End a production order</span></span>
+1. <span data-ttu-id="b040f-108">Siirry kohtaan Tuotannonhallinta > Tuotantotilaukset > Kaikki tuotantotilaukset.</span><span class="sxs-lookup"><span data-stu-id="b040f-108">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="b040f-109">Valitse tuotantotilaus, jonka tila on Ilmoitettu valmiiksi.</span><span class="sxs-lookup"><span data-stu-id="b040f-109">Select a production order that has the status Reported as finished.</span></span>  
+2. <span data-ttu-id="b040f-110">Valitse toimintoruudussa Tuotantotilaus.</span><span class="sxs-lookup"><span data-stu-id="b040f-110">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="b040f-111">Valitse Lopetus.</span><span class="sxs-lookup"><span data-stu-id="b040f-111">Click End.</span></span>
+    * <span data-ttu-id="b040f-112">Voit vahvistaa tällä sivulla, että haluat päättää tuotantotilauksen.</span><span class="sxs-lookup"><span data-stu-id="b040f-112">On this page, you can confirm that you want to end the production order.</span></span>  
+4. <span data-ttu-id="b040f-113">Valitse Yleiset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="b040f-113">Click the General tab.</span></span>
+5. <span data-ttu-id="b040f-114">Syötä Päivämäärään-kenttään päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="b040f-114">In the Date field, enter a date.</span></span>
+6. <span data-ttu-id="b040f-115">Valitse Hävikkimenetelmä-kentässä Kohdistus.</span><span class="sxs-lookup"><span data-stu-id="b040f-115">In the Scrap method field, select 'Allocation'.</span></span>
+    * <span data-ttu-id="b040f-116">Kun valitset kohdistusmenetelmän, materiaalihävikki kustannukset lisätään valmiisiin tuotteisiin.</span><span class="sxs-lookup"><span data-stu-id="b040f-116">When you select the Allocation method, costs from the scrapped materials are added to the finished goods.</span></span>  
+7. <span data-ttu-id="b040f-117">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="b040f-117">Click OK.</span></span>
 
-## <a name="validate-calculation-results"></a>Vahvista laskennan tulokset
-1. Valitse toimintoruudussa Hallitse kustannuksia.
-2. Valitse Näytä kustannusvertailu.
-    * Kun tuotantotilaus on päätetty, voit verrata arvioitua kustannushintaa toteutuneisiin kustannushintaan. Saat tällä tavoin paremman käsityksen tuotannon variansseista.  
+## <a name="validate-calculation-results"></a><span data-ttu-id="b040f-118">Vahvista laskennan tulokset</span><span class="sxs-lookup"><span data-stu-id="b040f-118">Validate calculation results</span></span>
+1. <span data-ttu-id="b040f-119">Valitse toimintoruudussa Hallitse kustannuksia.</span><span class="sxs-lookup"><span data-stu-id="b040f-119">On the Action Pane, click Manage costs.</span></span>
+2. <span data-ttu-id="b040f-120">Valitse Näytä kustannusvertailu.</span><span class="sxs-lookup"><span data-stu-id="b040f-120">Click View cost comparison.</span></span>
+    * <span data-ttu-id="b040f-121">Kun tuotantotilaus on päätetty, voit verrata arvioitua kustannushintaa toteutuneisiin kustannushintaan. Saat tällä tavoin paremman käsityksen tuotannon variansseista.</span><span class="sxs-lookup"><span data-stu-id="b040f-121">After you have ended the production order, you can compare the estimated cost price against the realized cost price to get an overview of the production variances.</span></span>  
 
 

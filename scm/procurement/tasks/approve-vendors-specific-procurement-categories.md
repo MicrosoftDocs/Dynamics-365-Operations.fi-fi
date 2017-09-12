@@ -16,34 +16,34 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 75486202c3fdcaff78a5592389c624d8e21fa969
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 83945932d56abf6bf44476e5647f8ae7abdc3602
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="approve-vendors-for-specific-procurement-categories"></a>Hyväksy toimittajia tiettyihin hankintaluokkiin
+# <a name="approve-vendors-for-specific-procurement-categories"></a><span data-ttu-id="e2a8a-103">Hyväksy toimittajia tiettyihin hankintaluokkiin</span><span class="sxs-lookup"><span data-stu-id="e2a8a-103">Approve vendors for specific procurement categories</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ostoehdotusta luotaessa saattaa olla tarpeen valita hyväksytty tai ensisijainen toimittaja sen mukaan, miten ostokäytännöt on määritetty. Seuraavassa menettelyssä kuvataan, miten toimittaja määritetään hyväksytyksi tai ensisijaiseksi tietylle hankintaluokalle. Yleensä hankinta-asiantuntijat suorittavat tämän tehtävän. Voit käyttää tätä menettelyä esittely-yrityksessä USMF.
+<span data-ttu-id="e2a8a-104">Ostoehdotusta luotaessa saattaa olla tarpeen valita hyväksytty tai ensisijainen toimittaja sen mukaan, miten ostokäytännöt on määritetty.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-104">When a purchase requisition is created, there may be a requirement to select an approved or preferred vendor, depending on how the purchasing policies are set up.</span></span> <span data-ttu-id="e2a8a-105">Seuraavassa menettelyssä kuvataan, miten toimittaja määritetään hyväksytyksi tai ensisijaiseksi tietylle hankintaluokalle.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-105">This procedure shows you how to specify that a vendor is approved or preferred for a specific procurement category.</span></span> <span data-ttu-id="e2a8a-106">Yleensä hankinta-asiantuntijat suorittavat tämän tehtävän.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-106">This task would usually be carried out by a procurement professional.</span></span> <span data-ttu-id="e2a8a-107">Voit käyttää tätä menettelyä esittely-yrityksessä USMF.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-107">You can use this procedure in demo data company USMF.</span></span>
 
-1. Valitse Hankinta > Toimittajat > Kaikki toimittajat.
-2. Valitse toimittaja, jonka haluat määrittää hyväksytyksi tai ensisijaiseksi tietylle luokalle.
-3. Valitse toimintoruudussa Yleiset.
-4. Valitse Luokat.
-5. Valitse Lisää luokka.
-6. Valitse Luokka-kenttään TOIMISTON JA TYÖPÖYDÄN LISÄVARUSTEET (TOIMISTON JA TYÖPÖYDÄN LISÄVARUSTEET).
-7. Valitse Toimittajaluokan tila -kenttään "Ensisijainen".
-    * Luokalle on mahdollista määrittää useampi kuin yksi ensisijainen toimittaja.  
-8. Valitse Tallenna.
-9. Valitse Hankinta > Hankintaluokat.
-10. Valitse puusta "CORP PROCUREMENT CATEGORIES\OFFICE AND DESK ACCESSORIES".
-11. Laajenna Toimittajat-osa.
-    * Tarkista, että valitsemasi toimittaja näkyy ensisijaisten toimittajien luettelossa Toimiston ja työpöydän lisävarusteet -luokassa. Jos käytät tätä menettelyä tehtäväoppaana, saatat joutua napsauttamaan lukituksen avauspainiketta voidaksesi selata alas toimittajaluetteloon.  On myös mahdollista lisätä ensisijaisia ja hyväksyttyjä toimittajia tällä sivulla.  
-12. Laajenna puussa "OFFICE AND DESK ACCESSORIES".
-13. Valitse puussa "Sakset".
-14. Valitse Ei Peri toimittajat ylemmän tason luokalta -kenttään.
-15. Valitse Kyllä Peri toimittajat ylemmän tason luokalta -kenttään.
+1. <span data-ttu-id="e2a8a-108">Valitse Hankinta > Toimittajat > Kaikki toimittajat.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-108">Go to Procurement and sourcing > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="e2a8a-109">Valitse toimittaja, jonka haluat määrittää hyväksytyksi tai ensisijaiseksi tietylle luokalle.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-109">Select the vendor that you want to set as an approved or preferred vendor for a category.</span></span>
+3. <span data-ttu-id="e2a8a-110">Valitse toimintoruudussa Yleiset.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-110">On the Action Pane, click General.</span></span>
+4. <span data-ttu-id="e2a8a-111">Valitse Luokat.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-111">Click Categories.</span></span>
+5. <span data-ttu-id="e2a8a-112">Valitse Lisää luokka.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-112">Click Add category.</span></span>
+6. <span data-ttu-id="e2a8a-113">Valitse Luokka-kenttään TOIMISTON JA TYÖPÖYDÄN LISÄVARUSTEET (TOIMISTON JA TYÖPÖYDÄN LISÄVARUSTEET).</span><span class="sxs-lookup"><span data-stu-id="e2a8a-113">In the Category field, select OFFICE AND DESK ACCESSORIES (OFFICE AND DESK ACCESSORIES).</span></span>
+7. <span data-ttu-id="e2a8a-114">Valitse Toimittajaluokan tila -kenttään "Ensisijainen".</span><span class="sxs-lookup"><span data-stu-id="e2a8a-114">In the Vendor category status field, select 'Preferred'.</span></span>
+    * <span data-ttu-id="e2a8a-115">Luokalle on mahdollista määrittää useampi kuin yksi ensisijainen toimittaja.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-115">It’s possible to specify more than one preferred vendor for a category.</span></span>  
+8. <span data-ttu-id="e2a8a-116">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-116">Click Save.</span></span>
+9. <span data-ttu-id="e2a8a-117">Valitse Hankinta > Hankintaluokat.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-117">Go to Procurement and sourcing > Procurement categories.</span></span>
+10. <span data-ttu-id="e2a8a-118">Valitse puusta "CORP PROCUREMENT CATEGORIES\OFFICE AND DESK ACCESSORIES".</span><span class="sxs-lookup"><span data-stu-id="e2a8a-118">In the tree, select 'CORP PROCUREMENT CATEGORIES\OFFICE AND DESK ACCESSORIES'.</span></span>
+11. <span data-ttu-id="e2a8a-119">Laajenna Toimittajat-osa.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-119">Expand the Vendors section.</span></span>
+    * <span data-ttu-id="e2a8a-120">Tarkista, että valitsemasi toimittaja näkyy ensisijaisten toimittajien luettelossa Toimiston ja työpöydän lisävarusteet -luokassa.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-120">Check if the vendor that you selected  appears as a preferred vendor for the Office and desk accessories category.</span></span> <span data-ttu-id="e2a8a-121">Jos käytät tätä menettelyä tehtäväoppaana, saatat joutua napsauttamaan lukituksen avauspainiketta voidaksesi selata alas toimittajaluetteloon.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-121">If you’re running this procedure as a task guide, you may have to click the Unlock button to be able to scroll down to the list of vendors.</span></span>  <span data-ttu-id="e2a8a-122">On myös mahdollista lisätä ensisijaisia ja hyväksyttyjä toimittajia tällä sivulla.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-122">It’s also possible to add preferred and approved vendors on this page.</span></span>  
+12. <span data-ttu-id="e2a8a-123">Laajenna puussa "OFFICE AND DESK ACCESSORIES".</span><span class="sxs-lookup"><span data-stu-id="e2a8a-123">In the tree, expand 'OFFICE AND DESK ACCESSORIES'.</span></span>
+13. <span data-ttu-id="e2a8a-124">Valitse puussa "Sakset".</span><span class="sxs-lookup"><span data-stu-id="e2a8a-124">In the tree, select 'Scissors'.</span></span>
+14. <span data-ttu-id="e2a8a-125">Valitse Ei Peri toimittajat ylemmän tason luokalta -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-125">Select No in the Inherit vendors from parent category: field.</span></span>
+15. <span data-ttu-id="e2a8a-126">Valitse Kyllä Peri toimittajat ylemmän tason luokalta -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e2a8a-126">Select Yes in the Inherit vendors from parent category: field.</span></span>
 
 

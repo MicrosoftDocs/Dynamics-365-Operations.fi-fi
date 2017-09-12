@@ -16,88 +16,88 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: bb32fbf14e7a96481dd78059e0299e33e754c0d7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1fcb2c4d47f0c8e701be025e0554ed476693d732
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="mass-create-sales-quotations"></a>Luo useita myyntitarjouksia
+# <a name="mass-create-sales-quotations"></a><span data-ttu-id="44487-103">Luo useita myyntitarjouksia</span><span class="sxs-lookup"><span data-stu-id="44487-103">Mass create sales quotations</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä käsitellään, miten luodaan tehokkaasti tarjouksia, jotka sisältävät useita monille asiakkaille lähetettäviä tuotteita tai palveluja. Tämä joukkotarjouksen luonti perustuu tarjousmalleihin. Voit suorittaa tämän menettelyn USMF-demoyrityksen tiedoilla tai käyttää omia tietoja.
+<span data-ttu-id="44487-104">Tässä menettelyssä käsitellään, miten luodaan tehokkaasti tarjouksia, jotka sisältävät useita monille asiakkaille lähetettäviä tuotteita tai palveluja.</span><span class="sxs-lookup"><span data-stu-id="44487-104">This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers.</span></span> <span data-ttu-id="44487-105">Tämä joukkotarjouksen luonti perustuu tarjousmalleihin.</span><span class="sxs-lookup"><span data-stu-id="44487-105">This mass quotation creation is based on quotation templates.</span></span> <span data-ttu-id="44487-106">Voit suorittaa tämän menettelyn USMF-demoyrityksen tiedoilla tai käyttää omia tietoja.</span><span class="sxs-lookup"><span data-stu-id="44487-106">You can run this procedure on your own data or in demo data company USMF.</span></span>
 
 
-## <a name="create-a-quotation-template"></a>Luo tarjousmalli
-1. Valitse Myynti ja markkinointi > Asetukset > Tarjoukset > Malliryhmät.
-2. Valitse Uusi.
-3. Kirjoita Ryhmän tunnus -kenttään haluamasi tunnus.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Valitse Tallenna.
-6. Sulje sivu.
-7. Valitse Myynti ja markkinointi > Myyntitarjoukset > Kaikki tarjoukset.
-8. Valitse Uusi.
-9. Valitse Tilityyppi-kentässä Asiakas.
-10. Syötä tai valitse arvo Asiakastili-kentässä.
-11. Valitse OK.
-    * Jotta tarjouksesta tulisi malli, sinun on suoritettava tarjouksen otsikon määritysvaiheet. Se on tehtävä ennen rivien lisäämistä tarjoukseen.   
-12. Valitse toimintoruudussa Asetukset.
-13. Valitse Vaihda näkymä.
-14. Valitse Otsikkonäkymä.
-15. Laajenna osa Asetukset.
-16. anna tai valitse Ryhmän tunnus -kentässä arvo.
-17. Syötä Mallin nimi -kenttään arvo.
-18. Valitse Aktiivinen-kentässä Kyllä.
-    * Kun uuteen myyntitarjoukseen käytetään malleja, vain aktiivisia malleja voi käyttää.  
-19. Valitse toimintoruudussa Asetukset.
-20. Valitse Vaihda näkymä.
-21. Valitse Rivinäkymä.
-22. Anna tai valitse Nimike-kentässä arvo.
-23. Kirjoita Nimike-kenttään arvo.
-24. Sulje sivu.
-25. Lisää Alennusprosentti-kenttään numero.
-26. Valitse Lisää rivi.
-27. Anna tai valitse Nimike-kentässä arvo.
-28. Kirjoita Nimike-kenttään arvo.
-29. Sulje sivu.
-30. Anna Yksikköhinta-kentässä uusi hinta tai vaihda nykyistä hintaa.
-31. Valitse Lisää rivi.
-32. Anna tai valitse Nimike-kentässä arvo.
-33. Kirjoita Nimike-kenttään arvo.
-34. Sulje sivu.
-35. Kirjoita numero Määrä-kenttään.
-36. Lisää Alennus-kenttään numero.
-37. Valitse Tallenna.
+## <a name="create-a-quotation-template"></a><span data-ttu-id="44487-107">Luo tarjousmalli</span><span class="sxs-lookup"><span data-stu-id="44487-107">Create a quotation template</span></span>
+1. <span data-ttu-id="44487-108">Valitse Myynti ja markkinointi > Asetukset > Tarjoukset > Malliryhmät.</span><span class="sxs-lookup"><span data-stu-id="44487-108">Go to Sales and marketing > Setup > Quotations > Template groups.</span></span>
+2. <span data-ttu-id="44487-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="44487-109">Click New.</span></span>
+3. <span data-ttu-id="44487-110">Kirjoita Ryhmän tunnus -kenttään haluamasi tunnus.</span><span class="sxs-lookup"><span data-stu-id="44487-110">In the Group ID field, type an ID of your choice.</span></span>
+4. <span data-ttu-id="44487-111">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="44487-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="44487-112">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="44487-112">Click Save.</span></span>
+6. <span data-ttu-id="44487-113">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="44487-113">Close the page.</span></span>
+7. <span data-ttu-id="44487-114">Valitse Myynti ja markkinointi > Myyntitarjoukset > Kaikki tarjoukset.</span><span class="sxs-lookup"><span data-stu-id="44487-114">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+8. <span data-ttu-id="44487-115">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="44487-115">Click New.</span></span>
+9. <span data-ttu-id="44487-116">Valitse Tilityyppi-kentässä Asiakas.</span><span class="sxs-lookup"><span data-stu-id="44487-116">In the Account type field, select 'Customer'.</span></span>
+10. <span data-ttu-id="44487-117">Syötä tai valitse arvo Asiakastili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="44487-117">In the Customer account field, enter or select a value.</span></span>
+11. <span data-ttu-id="44487-118">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="44487-118">Click OK.</span></span>
+    * <span data-ttu-id="44487-119">Jotta tarjouksesta tulisi malli, sinun on suoritettava tarjouksen otsikon määritysvaiheet.</span><span class="sxs-lookup"><span data-stu-id="44487-119">For a quotation to become a template you must carry out  setup steps on the quotation header.</span></span> <span data-ttu-id="44487-120">Se on tehtävä ennen rivien lisäämistä tarjoukseen.</span><span class="sxs-lookup"><span data-stu-id="44487-120">This must be done before you add lines to the quotation.</span></span>   
+12. <span data-ttu-id="44487-121">Valitse toimintoruudussa Asetukset.</span><span class="sxs-lookup"><span data-stu-id="44487-121">On the Action Pane, click Options.</span></span>
+13. <span data-ttu-id="44487-122">Valitse Vaihda näkymä.</span><span class="sxs-lookup"><span data-stu-id="44487-122">Click Change view.</span></span>
+14. <span data-ttu-id="44487-123">Valitse Otsikkonäkymä.</span><span class="sxs-lookup"><span data-stu-id="44487-123">Click Header view.</span></span>
+15. <span data-ttu-id="44487-124">Laajenna osa Asetukset.</span><span class="sxs-lookup"><span data-stu-id="44487-124">Expand the Setup section.</span></span>
+16. <span data-ttu-id="44487-125">anna tai valitse Ryhmän tunnus -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-125">In the Group ID field, enter or select a value.</span></span>
+17. <span data-ttu-id="44487-126">Syötä Mallin nimi -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-126">In the Template name field, type a value.</span></span>
+18. <span data-ttu-id="44487-127">Valitse Aktiivinen-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="44487-127">Select Yes in the Active field.</span></span>
+    * <span data-ttu-id="44487-128">Kun uuteen myyntitarjoukseen käytetään malleja, vain aktiivisia malleja voi käyttää.</span><span class="sxs-lookup"><span data-stu-id="44487-128">Only active templates can be used when you apply a template to a new sales quotation.</span></span>  
+19. <span data-ttu-id="44487-129">Valitse toimintoruudussa Asetukset.</span><span class="sxs-lookup"><span data-stu-id="44487-129">On the Action Pane, click Options.</span></span>
+20. <span data-ttu-id="44487-130">Valitse Vaihda näkymä.</span><span class="sxs-lookup"><span data-stu-id="44487-130">Click Change view.</span></span>
+21. <span data-ttu-id="44487-131">Valitse Rivinäkymä.</span><span class="sxs-lookup"><span data-stu-id="44487-131">Click Line view.</span></span>
+22. <span data-ttu-id="44487-132">Anna tai valitse Nimike-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-132">In the Item field, enter or select a value.</span></span>
+23. <span data-ttu-id="44487-133">Kirjoita Nimike-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-133">In the Item field, type a value.</span></span>
+24. <span data-ttu-id="44487-134">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="44487-134">Close the page.</span></span>
+25. <span data-ttu-id="44487-135">Lisää Alennusprosentti-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="44487-135">In the Discount percent field, enter a number.</span></span>
+26. <span data-ttu-id="44487-136">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="44487-136">Click Add line.</span></span>
+27. <span data-ttu-id="44487-137">Anna tai valitse Nimike-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-137">In the Item field, enter or select a value.</span></span>
+28. <span data-ttu-id="44487-138">Kirjoita Nimike-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-138">In the Item field, type a value.</span></span>
+29. <span data-ttu-id="44487-139">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="44487-139">Close the page.</span></span>
+30. <span data-ttu-id="44487-140">Anna Yksikköhinta-kentässä uusi hinta tai vaihda nykyistä hintaa.</span><span class="sxs-lookup"><span data-stu-id="44487-140">In the Unit price field, enter a new price or change the current one.</span></span>
+31. <span data-ttu-id="44487-141">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="44487-141">Click Add line.</span></span>
+32. <span data-ttu-id="44487-142">Anna tai valitse Nimike-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-142">In the Item field, enter or select a value.</span></span>
+33. <span data-ttu-id="44487-143">Kirjoita Nimike-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-143">In the Item field, type a value.</span></span>
+34. <span data-ttu-id="44487-144">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="44487-144">Close the page.</span></span>
+35. <span data-ttu-id="44487-145">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="44487-145">In the Quantity field, enter a number.</span></span>
+36. <span data-ttu-id="44487-146">Lisää Alennus-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="44487-146">In the Discount field, enter a number.</span></span>
+37. <span data-ttu-id="44487-147">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="44487-147">Click Save.</span></span>
 
-## <a name="apply-the-template-to-create-a-single-quotation"></a>Luo mallilla yksittäinen tarjous
-1. Valitse Myynti ja markkinointi > Myyntitarjoukset > Kaikki tarjoukset.
-    * Huomaa, että juuri luomasi tarjous on merkitty malliksi.  
-2. Valitse Uusi.
-3. Valitse Tilityyppi-kentässä Asiakas.
-4. Syötä tai valitse arvo Asiakastili-kentässä.
-5. Laajenna Malli-osa.
-6. anna tai valitse Ryhmän tunnus -kentässä arvo.
-7. Anna tai valitse Mallin nimi -kentässä arvo.
-8. Valitse Laskentatapa-kentässä Mallin arvojen perusteella.
-9. Valitse OK.
-    * Uusi tarjous on nyt luotu mallin tietojen ja ehtojen perusteella.  
-10. Sulje sivu.
-11. Sulje sivu.
+## <a name="apply-the-template-to-create-a-single-quotation"></a><span data-ttu-id="44487-148">Luo mallilla yksittäinen tarjous</span><span class="sxs-lookup"><span data-stu-id="44487-148">Apply the template to create a single quotation</span></span>
+1. <span data-ttu-id="44487-149">Valitse Myynti ja markkinointi > Myyntitarjoukset > Kaikki tarjoukset.</span><span class="sxs-lookup"><span data-stu-id="44487-149">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+    * <span data-ttu-id="44487-150">Huomaa, että juuri luomasi tarjous on merkitty malliksi.</span><span class="sxs-lookup"><span data-stu-id="44487-150">Note that the quotation you have just created is marked as template.</span></span>  
+2. <span data-ttu-id="44487-151">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="44487-151">Click New.</span></span>
+3. <span data-ttu-id="44487-152">Valitse Tilityyppi-kentässä Asiakas.</span><span class="sxs-lookup"><span data-stu-id="44487-152">In the Account type field, select 'Customer'.</span></span>
+4. <span data-ttu-id="44487-153">Syötä tai valitse arvo Asiakastili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="44487-153">In the Customer account field, enter or select a value.</span></span>
+5. <span data-ttu-id="44487-154">Laajenna Malli-osa.</span><span class="sxs-lookup"><span data-stu-id="44487-154">Expand the Template section.</span></span>
+6. <span data-ttu-id="44487-155">anna tai valitse Ryhmän tunnus -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-155">In the Group ID field, enter or select a value.</span></span>
+7. <span data-ttu-id="44487-156">Anna tai valitse Mallin nimi -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-156">In the Template name field, enter or select a value.</span></span>
+8. <span data-ttu-id="44487-157">Valitse Laskentatapa-kentässä Mallin arvojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="44487-157">In the Calculation method field, select 'Based on template values'.</span></span>
+9. <span data-ttu-id="44487-158">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="44487-158">Click OK.</span></span>
+    * <span data-ttu-id="44487-159">Uusi tarjous on nyt luotu mallin tietojen ja ehtojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="44487-159">The new quotation has now been created, based on the data and terms of the template.</span></span>  
+10. <span data-ttu-id="44487-160">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="44487-160">Close the page.</span></span>
+11. <span data-ttu-id="44487-161">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="44487-161">Close the page.</span></span>
 
-## <a name="apply-the-template-to-mass-create-quotations"></a>Luo mallilla useita tarjouksia
-1. Valitse Myynti ja markkinointi > Myyntitarjoukset > Tarjouksen päivittäminen > Luo useita tarjouksia.
-2. Valitse Tilityyppi-kentässä Asiakas.
-3. anna tai valitse Ryhmän tunnus -kentässä arvo.
-4. Anna tai valitse Mallin nimi -kentässä arvo.
-5. Valitse Laskentatapa-kentässä Mallin arvojen perusteella.
-6. Laajenna Tietueet-kohta ja sisällytä osaan.
-7. Valitse Suodatin.
-8. Määritä Ehdot-kentässä suodatin kattamaan ne asiakkaat, jotka haluat sisällyttää tähän useiden tarjousten luontiin. Käytä muotoa Asiakas1...AsiakasN.
-    * Voit esimerkiksi määrittää suodattimeksi US-001..US-004  
-9. Valitse OK.
-10. Valitse OK.
-11. Valitse Myynti ja markkinointi > Myyntitarjoukset > Kaikki tarjoukset.
-    * Varmista, että tarjoukset on luotu valitun mallin perusteella kaikille joukkopäivitysrutiinissa määritetyille asiakkaille.  
+## <a name="apply-the-template-to-mass-create-quotations"></a><span data-ttu-id="44487-162">Luo mallilla useita tarjouksia</span><span class="sxs-lookup"><span data-stu-id="44487-162">Apply the template to mass create quotations</span></span>
+1. <span data-ttu-id="44487-163">Valitse Myynti ja markkinointi > Myyntitarjoukset > Tarjouksen päivittäminen > Luo useita tarjouksia.</span><span class="sxs-lookup"><span data-stu-id="44487-163">Go to Sales and marketing > Sales quotations > Quotation update > Mass create quotations.</span></span>
+2. <span data-ttu-id="44487-164">Valitse Tilityyppi-kentässä Asiakas.</span><span class="sxs-lookup"><span data-stu-id="44487-164">In the Account type field, select 'Customer'.</span></span>
+3. <span data-ttu-id="44487-165">anna tai valitse Ryhmän tunnus -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-165">In the Group ID field, enter or select a value.</span></span>
+4. <span data-ttu-id="44487-166">Anna tai valitse Mallin nimi -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="44487-166">In the Template name field, enter or select a value.</span></span>
+5. <span data-ttu-id="44487-167">Valitse Laskentatapa-kentässä Mallin arvojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="44487-167">In the Calculation method field, select 'Based on template values'.</span></span>
+6. <span data-ttu-id="44487-168">Laajenna Tietueet-kohta ja sisällytä osaan.</span><span class="sxs-lookup"><span data-stu-id="44487-168">Expand the Records to include section.</span></span>
+7. <span data-ttu-id="44487-169">Valitse Suodatin.</span><span class="sxs-lookup"><span data-stu-id="44487-169">Click Filter.</span></span>
+8. <span data-ttu-id="44487-170">Määritä Ehdot-kentässä suodatin kattamaan ne asiakkaat, jotka haluat sisällyttää tähän useiden tarjousten luontiin.</span><span class="sxs-lookup"><span data-stu-id="44487-170">In the Criteria field, set the filter to cover a range of customers you want to include in this mass quotation creation.</span></span> <span data-ttu-id="44487-171">Käytä muotoa Asiakas1...AsiakasN.</span><span class="sxs-lookup"><span data-stu-id="44487-171">Use the following format "Customer1..CustomerN.</span></span>
+    * <span data-ttu-id="44487-172">Voit esimerkiksi määrittää suodattimeksi US-001..US-004</span><span class="sxs-lookup"><span data-stu-id="44487-172">For example, you could set the filter to: US-001..US-004</span></span>  
+9. <span data-ttu-id="44487-173">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="44487-173">Click OK.</span></span>
+10. <span data-ttu-id="44487-174">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="44487-174">Click OK.</span></span>
+11. <span data-ttu-id="44487-175">Valitse Myynti ja markkinointi > Myyntitarjoukset > Kaikki tarjoukset.</span><span class="sxs-lookup"><span data-stu-id="44487-175">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+    * <span data-ttu-id="44487-176">Varmista, että tarjoukset on luotu valitun mallin perusteella kaikille joukkopäivitysrutiinissa määritetyille asiakkaille.</span><span class="sxs-lookup"><span data-stu-id="44487-176">Verify that quotations have been created for all the customers specified in the mass update routine, as based on the selected template.</span></span>  
 
 

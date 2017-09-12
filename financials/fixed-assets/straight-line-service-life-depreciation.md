@@ -16,95 +16,95 @@ ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ff3d87f610489608f0bebadd9bb4c9c5c727992
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2b8c078841ca2e4bd994bbfbbe2abb130a4cf6fa
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="straight-line-service-life-depreciation"></a>Käyttöikään perustuva tasapoisto
+# <a name="straight-line-service-life-depreciation"></a><span data-ttu-id="97a7c-103">Käyttöikään perustuva tasapoisto</span><span class="sxs-lookup"><span data-stu-id="97a7c-103">Straight line service life depreciation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on yleiskuvaus käyttöikään perustuvasta tasapoistomenetelmästä.
+<span data-ttu-id="97a7c-104">Tässä artikkelissa on yleiskuvaus käyttöikään perustuvasta tasapoistomenetelmästä.</span><span class="sxs-lookup"><span data-stu-id="97a7c-104">This article gives an overview of the Straight line service life method of depreciation.</span></span>
 
-Jos määrität käyttöomaisuudelle poistoprofiilin ja valitset Tasapoisto - käyttöaika -asetuksen Poistoprofiilit-sivun Menetelmä-kentästä, niiden käyttöomaisuuserien poisto, joille on määritetty tämä poistoprofiili, perustuu käyttöomaisuuden jäljellä olevaan käyttöikään. Tavallisesti poiston määrä on tällöin sama kullakin poistojaksolla. 
+<span data-ttu-id="97a7c-105">Jos määrität käyttöomaisuudelle poistoprofiilin ja valitset Tasapoisto - käyttöaika -asetuksen Poistoprofiilit-sivun Menetelmä-kentästä, niiden käyttöomaisuuserien poisto, joille on määritetty tämä poistoprofiili, perustuu käyttöomaisuuden jäljellä olevaan käyttöikään.</span><span class="sxs-lookup"><span data-stu-id="97a7c-105">When you set up a fixed asset depreciation profile and select Straight line service life in the Method field in the Depreciation profiles page, the assets that have this depreciation profile assigned to them are depreciated based on the total service life of the asset.</span></span> <span data-ttu-id="97a7c-106">Tavallisesti poiston määrä on tällöin sama kullakin poistojaksolla.</span><span class="sxs-lookup"><span data-stu-id="97a7c-106">This generally is the same depreciation amount in each depreciation period.</span></span> 
 
-Ero tasapoiston jäljellä olevan käyttöajan ja tasapoiston käyttöajan mukaan lasketun poiston määrässä on silloin, kun käyttöomaisuuteen kirjataan arvon muutos. 
+<span data-ttu-id="97a7c-107">Ero tasapoiston jäljellä olevan käyttöajan ja tasapoiston käyttöajan mukaan lasketun poiston määrässä on silloin, kun käyttöomaisuuteen kirjataan arvon muutos.</span><span class="sxs-lookup"><span data-stu-id="97a7c-107">The difference in the depreciation amount that is calculated between straight line service life remaining and straight line service life is when there is an adjustment posted to the asset.</span></span> 
 
-Jos haluat määrittää käyttöaikaan perustuvan tasapoiston, valitse Poistoprofiilit-sivulla myös Poistovuosi- ja Kausiväli-kenttien asetukset.
+<span data-ttu-id="97a7c-108">Jos haluat määrittää käyttöaikaan perustuvan tasapoiston, valitse Poistoprofiilit-sivulla myös Poistovuosi- ja Kausiväli-kenttien asetukset.</span><span class="sxs-lookup"><span data-stu-id="97a7c-108">To set up straight line service life depreciation, you must also select options in the Depreciation year and Period frequency fields in the Depreciation profiles page.</span></span>
 
-## <a name="select-a-depreciation-year"></a>Poistovuoden valitseminen
-Voit valita Poistoprofiilit-sivulla Poistovuosi-kenttään joko Kalenteri tai Tilikausi. Valinta määrittää, mitä valintoja Kausiväli-kentässä on käytettävissä. Oletusarvo on Kalenteri.
+## <a name="select-a-depreciation-year"></a><span data-ttu-id="97a7c-109">Poistovuoden valitseminen</span><span class="sxs-lookup"><span data-stu-id="97a7c-109">Select a depreciation year</span></span>
+<span data-ttu-id="97a7c-110">Voit valita Poistoprofiilit-sivulla Poistovuosi-kenttään joko Kalenteri tai Tilikausi.</span><span class="sxs-lookup"><span data-stu-id="97a7c-110">You can select either Calendar or Fiscal in the Depreciation year field in the Depreciation profiles page.</span></span> <span data-ttu-id="97a7c-111">Valinta määrittää, mitä valintoja Kausiväli-kentässä on käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="97a7c-111">The selection defines the options that are available in the Period frequency field.</span></span> <span data-ttu-id="97a7c-112">Oletusarvo on Kalenteri.</span><span class="sxs-lookup"><span data-stu-id="97a7c-112">The default option is Calendar.</span></span>
 
-### <a name="calendar"></a>Kalenteri
+### <a name="calendar"></a><span data-ttu-id="97a7c-113">Kalenteri</span><span class="sxs-lookup"><span data-stu-id="97a7c-113">Calendar</span></span>
 
-Jos valitset Poistovuosi-kentän arvoksi Kalenterivuosi, järjestelmä olettaa kauden olevan 1. tammikuuta–31. joulukuuta, vaikka kirjanpidon vuosikalenteri olisikin määritetty toisin. 
+<span data-ttu-id="97a7c-114">Jos valitset Poistovuosi-kentän arvoksi Kalenterivuosi, järjestelmä olettaa kauden olevan 1. tammikuuta–31. joulukuuta, vaikka kirjanpidon vuosikalenteri olisikin määritetty toisin.</span><span class="sxs-lookup"><span data-stu-id="97a7c-114">If you select Calendar, a year of January 1 to December 31 is assumed, even if you have defined the fiscal calendar differently.</span></span> 
 
-Kalenteri-vaihtoehto päivittää poistokannan, joka on tavallisesti nettokirjanpitoarvo vähennettynä jäännösarvolla, kunkin vuoden tammikuun 1. päivänä. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. 
+<span data-ttu-id="97a7c-115">Kalenteri-vaihtoehto päivittää poistokannan, joka on tavallisesti nettokirjanpitoarvo vähennettynä jäännösarvolla, kunkin vuoden tammikuun 1. päivänä.</span><span class="sxs-lookup"><span data-stu-id="97a7c-115">The Calendar option updates the depreciation base, which is typically the net book value minus the salvage value, on January 1 of each year.</span></span> <span data-ttu-id="97a7c-116">Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja.</span><span class="sxs-lookup"><span data-stu-id="97a7c-116">In the examples later in this topic, the depreciation base is the numerator in the first expression in the calculations column.</span></span> 
 
-Jos valitset Kalenteri-vaihtoehdon, Kausiväli-kentässä ovat käytettävissä seuraavat vaihtoehdot, jotka määrittävät poiston jaksotuksen kirjauspäivät ja -määrät kalenterivuoden aikana:
--   Vuosittain – summa kirjataan 31. joulukuuta.
--   Kuukausittain kirjaa kuukausikohtaisen poiston kunkin kuun lopussa
--   Neljännesvuosittain kirjaa neljännesvuoden poiston kalenterivuoden kunkin neljänneksen lopussa (31.3, 30.6. 30.9. ja 31.12.)
--   Puolivuosittain – puolen vuoden summa kirjataan kunkin kalenterivuosipuolikkaan lopussa (30.6. ja 31.12.)
--   Päivittäin kirjaa päivittäisen poistomenetelmän poistosumman yhdellä tapahtumalla päivää kohden.
+<span data-ttu-id="97a7c-117">Jos valitset Kalenteri-vaihtoehdon, Kausiväli-kentässä ovat käytettävissä seuraavat vaihtoehdot, jotka määrittävät poiston jaksotuksen kirjauspäivät ja -määrät kalenterivuoden aikana:</span><span class="sxs-lookup"><span data-stu-id="97a7c-117">If you select Calendar, the following options are available in the Period frequency field, which defines the depreciation accrual posting dates and amounts throughout the calendar year:</span></span>
+-   <span data-ttu-id="97a7c-118">Vuosittain – summa kirjataan 31. joulukuuta.</span><span class="sxs-lookup"><span data-stu-id="97a7c-118">Yearly posts an amount on December 31.</span></span>
+-   <span data-ttu-id="97a7c-119">Kuukausittain kirjaa kuukausikohtaisen poiston kunkin kuun lopussa</span><span class="sxs-lookup"><span data-stu-id="97a7c-119">Monthly posts a monthly amount at the end of each calendar month.</span></span>
+-   <span data-ttu-id="97a7c-120">Neljännesvuosittain kirjaa neljännesvuoden poiston kalenterivuoden kunkin neljänneksen lopussa (31.3, 30.6. 30.9. ja 31.12.)</span><span class="sxs-lookup"><span data-stu-id="97a7c-120">Quarterly posts a quarterly amount at the end of each calendar quarter (March 31, June 30, September 30, and December 31).</span></span>
+-   <span data-ttu-id="97a7c-121">Puolivuosittain – puolen vuoden summa kirjataan kunkin kalenterivuosipuolikkaan lopussa (30.6. ja 31.12.)</span><span class="sxs-lookup"><span data-stu-id="97a7c-121">Half-Yearly posts a half-yearly amount at the end of each calendar half year (June 30 and December 31).</span></span>
+-   <span data-ttu-id="97a7c-122">Päivittäin kirjaa päivittäisen poistomenetelmän poistosumman yhdellä tapahtumalla päivää kohden.</span><span class="sxs-lookup"><span data-stu-id="97a7c-122">Daily posts the depreciation amount for the daily depreciation method using one transaction for each day.</span></span>
 
-Jos valitset esimerkiksi Vuosittain, vuoden poisto kirjataan vain kerran eli kunkin vuoden joulukuun 31. päivä. Jos valitset Kuukausittain, kuukauden poisto kirjataan joka kuukausi käyttämällä 1/12 koko vuoden poistosummasta.
+<span data-ttu-id="97a7c-123">Jos valitset esimerkiksi Vuosittain, vuoden poisto kirjataan vain kerran eli kunkin vuoden joulukuun 31. päivä.</span><span class="sxs-lookup"><span data-stu-id="97a7c-123">For example, if you select Yearly, the yearly depreciation is posted only one time, on December 31 of each year.</span></span> <span data-ttu-id="97a7c-124">Jos valitset Kuukausittain, kuukauden poisto kirjataan joka kuukausi käyttämällä 1/12 koko vuoden poistosummasta.</span><span class="sxs-lookup"><span data-stu-id="97a7c-124">If you select Monthly, the monthly depreciation is posted each month as 1/12 of the yearly depreciation amount.</span></span>
 
-### <a name="fiscal"></a>Tilivuosi
+### <a name="fiscal"></a><span data-ttu-id="97a7c-125">Tilivuosi</span><span class="sxs-lookup"><span data-stu-id="97a7c-125">Fiscal</span></span>
 
-Jos valitset Poistovuosi-kentästä Tilivuosi-vaihtoehdon, käytetään käyttöaikaan perustuvaa tasapoistomenetelmää. Se lasketaan tilivuodesta, jonka määrittää kirjalle määritetty kirjanpidon vuosikalenteri tai Kirjanpito-sivulla valittu kirjanpidon vuosikalenteri. Kirjanpidon vuosikalenterit määritetään Kirjanpidon kalenterit -sivulla.
+<span data-ttu-id="97a7c-126">Jos valitset Poistovuosi-kentästä Tilivuosi-vaihtoehdon, käytetään käyttöaikaan perustuvaa tasapoistomenetelmää.</span><span class="sxs-lookup"><span data-stu-id="97a7c-126">If you select Fiscal in the Depreciation year field, the straight line service life depreciation is used.</span></span> <span data-ttu-id="97a7c-127">Se lasketaan tilivuodesta, jonka määrittää kirjalle määritetty kirjanpidon vuosikalenteri tai Kirjanpito-sivulla valittu kirjanpidon vuosikalenteri.</span><span class="sxs-lookup"><span data-stu-id="97a7c-127">It is calculated based on the fiscal year, which is defined by the fiscal calendar that is specified for the book, or by the fiscal calendar that is selected in the Ledger page.</span></span> <span data-ttu-id="97a7c-128">Kirjanpidon vuosikalenterit määritetään Kirjanpidon kalenterit -sivulla.</span><span class="sxs-lookup"><span data-stu-id="97a7c-128">Fiscal calendars are set up in the Fiscal calendars page.</span></span>
 
-Esimerkiksi tilikauden 1.7–30.6. poistojen laskeminen alkaa 1.7. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto oikaistaan automaattisesti jokaisella tilikaudella. Seuraavan tilikauden pituus perustuu Kirjanpidon kalenterit -lomakkeessa uuden tilikauden luomisen yhteydessä määritettyihin tilikausiin. 
+<span data-ttu-id="97a7c-129">Esimerkiksi tilikauden 1.7–30.6. poistojen laskeminen alkaa 1.7.</span><span class="sxs-lookup"><span data-stu-id="97a7c-129">For example, for fiscal year July 1 through June 30, the depreciation calculation starts on July 1.</span></span> <span data-ttu-id="97a7c-130">Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta.</span><span class="sxs-lookup"><span data-stu-id="97a7c-130">The fiscal year can be longer or shorter than 12 months.</span></span> <span data-ttu-id="97a7c-131">Poisto oikaistaan automaattisesti jokaisella tilikaudella.</span><span class="sxs-lookup"><span data-stu-id="97a7c-131">The depreciation automatically is adjusted for each fiscal period.</span></span> <span data-ttu-id="97a7c-132">Seuraavan tilikauden pituus perustuu Kirjanpidon kalenterit -lomakkeessa uuden tilikauden luomisen yhteydessä määritettyihin tilikausiin.</span><span class="sxs-lookup"><span data-stu-id="97a7c-132">The length of the next fiscal year is based on the fiscal periods that you set up when you create a new fiscal year in the Fiscal calendars form.</span></span> 
 
-Jos valitset tilivuoden, seuraavat vaihtoehdot ovat käytettävissä Kausiväli-kentässä:
--   Vuosittain-vaihtoehto kirjaa tilikaudelle lasketun poiston kokonaismäärän yhtenä summana tilikauden viimeisenä päivänä.
--   Tilikausi laskee tilivuodelle poiston kokonaismäärän. Se jaetaan kausiksi, jotka on määritetty kirjanpidon vuosikalenterille Kirjanpidon kalenterit -lomakkeessa.
+<span data-ttu-id="97a7c-133">Jos valitset tilivuoden, seuraavat vaihtoehdot ovat käytettävissä Kausiväli-kentässä:</span><span class="sxs-lookup"><span data-stu-id="97a7c-133">If you select Fiscal, the following options are available in the Period frequency field:</span></span>
+-   <span data-ttu-id="97a7c-134">Vuosittain-vaihtoehto kirjaa tilikaudelle lasketun poiston kokonaismäärän yhtenä summana tilikauden viimeisenä päivänä.</span><span class="sxs-lookup"><span data-stu-id="97a7c-134">Yearly posts the total amount of the depreciation that is calculated for the fiscal year as one amount on the last day of the fiscal year.</span></span>
+-   <span data-ttu-id="97a7c-135">Tilikausi laskee tilivuodelle poiston kokonaismäärän. Se jaetaan kausiksi, jotka on määritetty kirjanpidon vuosikalenterille Kirjanpidon kalenterit -lomakkeessa.</span><span class="sxs-lookup"><span data-stu-id="97a7c-135">Fiscal period calculates the total amount of the depreciation for the fiscal year, which is accrued into the periods that are defined in the Fiscal calendars form for the fiscal calendar.</span></span>
 
-## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Esimerkki: Muuttumattoman käyttöomaisuuden tasapoisto
-Oletetaan, että käyttöomaisuudella on seuraavat ominaisuudet.
+## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a><span data-ttu-id="97a7c-136">Esimerkki: Muuttumattoman käyttöomaisuuden tasapoisto</span><span class="sxs-lookup"><span data-stu-id="97a7c-136">Example: Straight line depreciation of an unchanged fixed asset</span></span>
+<span data-ttu-id="97a7c-137">Oletetaan, että käyttöomaisuudella on seuraavat ominaisuudet.</span><span class="sxs-lookup"><span data-stu-id="97a7c-137">Suppose that a fixed asset has the following characteristics.</span></span>
 
 |                     |        |
 |---------------------|--------|
-| Hankintakustannukset    | 11 000 |
-| Jäännösarvo       | 1 000  |
-| Poistokanta   | 10 000 |
-| Käyttöikä vuosina  | 5      |
-| Vuotuinen poisto | 2 000  |
+| <span data-ttu-id="97a7c-138">Hankintakustannukset</span><span class="sxs-lookup"><span data-stu-id="97a7c-138">Acquisition cost</span></span>    | <span data-ttu-id="97a7c-139">11 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-139">11,000</span></span> |
+| <span data-ttu-id="97a7c-140">Jäännösarvo</span><span class="sxs-lookup"><span data-stu-id="97a7c-140">Salvage value</span></span>       | <span data-ttu-id="97a7c-141">1 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-141">1,000</span></span>  |
+| <span data-ttu-id="97a7c-142">Poistokanta</span><span class="sxs-lookup"><span data-stu-id="97a7c-142">Depreciation base</span></span>   | <span data-ttu-id="97a7c-143">10 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-143">10,000</span></span> |
+| <span data-ttu-id="97a7c-144">Käyttöikä vuosina</span><span class="sxs-lookup"><span data-stu-id="97a7c-144">Service life years</span></span>  | <span data-ttu-id="97a7c-145">5</span><span class="sxs-lookup"><span data-stu-id="97a7c-145">5</span></span>      |
+| <span data-ttu-id="97a7c-146">Vuotuinen poisto</span><span class="sxs-lookup"><span data-stu-id="97a7c-146">Yearly depreciation</span></span> | <span data-ttu-id="97a7c-147">2 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-147">2,000</span></span>  |
 
-Poiston määrä kunakin vuonna on sama. (hankintahinta - jäännösarvo) / käyttöaika vuosina
+<span data-ttu-id="97a7c-148">Poiston määrä kunakin vuonna on sama.</span><span class="sxs-lookup"><span data-stu-id="97a7c-148">You get the same depreciation amount each year.</span></span> <span data-ttu-id="97a7c-149">(hankintahinta - jäännösarvo) / käyttöaika vuosina</span><span class="sxs-lookup"><span data-stu-id="97a7c-149">(Acquisition cost - Salvage value) / Service life years</span></span>
 
-| Jakso: | Vuotuisen poistomäärän laskeminen: | Nettokirjanpitoarvo vuoden lopussa: |
+| <span data-ttu-id="97a7c-150">Jakso:</span><span class="sxs-lookup"><span data-stu-id="97a7c-150">Period</span></span> | <span data-ttu-id="97a7c-151">Vuotuisen poistomäärän laskeminen:</span><span class="sxs-lookup"><span data-stu-id="97a7c-151">Calculation of yearly depreciation amount</span></span> | <span data-ttu-id="97a7c-152">Nettokirjanpitoarvo vuoden lopussa:</span><span class="sxs-lookup"><span data-stu-id="97a7c-152">Net book value at the end of the year</span></span> |
 |--------|-------------------------------------------|---------------------------------------|
-| Vuosi 1 | (11 000 - 1 000) / 5 = 2 000              | 9 000                                 |
-| Vuosi 2 | (11 000 - 1 000) / 5 = 2 000              | 7 000                                 |
-| Vuosi 3 | (11 000 - 1 000) / 5 = 2 000              | 5 000                                 |
-| Vuosi 4 | (11 000 - 1 000) / 5 = 2 000              | 3 000                                 |
-| Vuosi 5 | (11 000 - 1 000) / 5 = 2 000              | 1 000                                 |
+| <span data-ttu-id="97a7c-153">Vuosi 1</span><span class="sxs-lookup"><span data-stu-id="97a7c-153">Year 1</span></span> | <span data-ttu-id="97a7c-154">(11 000 - 1 000) / 5 = 2 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-154">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="97a7c-155">9 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-155">9,000</span></span>                                 |
+| <span data-ttu-id="97a7c-156">Vuosi 2</span><span class="sxs-lookup"><span data-stu-id="97a7c-156">Year 2</span></span> | <span data-ttu-id="97a7c-157">(11 000 - 1 000) / 5 = 2 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-157">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="97a7c-158">7 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-158">7,000</span></span>                                 |
+| <span data-ttu-id="97a7c-159">Vuosi 3</span><span class="sxs-lookup"><span data-stu-id="97a7c-159">Year 3</span></span> | <span data-ttu-id="97a7c-160">(11 000 - 1 000) / 5 = 2 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-160">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="97a7c-161">5 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-161">5,000</span></span>                                 |
+| <span data-ttu-id="97a7c-162">Vuosi 4</span><span class="sxs-lookup"><span data-stu-id="97a7c-162">Year 4</span></span> | <span data-ttu-id="97a7c-163">(11 000 - 1 000) / 5 = 2 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-163">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="97a7c-164">3 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-164">3,000</span></span>                                 |
+| <span data-ttu-id="97a7c-165">Vuosi 5</span><span class="sxs-lookup"><span data-stu-id="97a7c-165">Year 5</span></span> | <span data-ttu-id="97a7c-166">(11 000 - 1 000) / 5 = 2 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-166">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="97a7c-167">1 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-167">1,000</span></span>                                 |
 
-## <a name="example-straight-line-depreciation-of-a-modified-fixed-asset"></a> Esimerkki: Muutetun käyttöomaisuuden tasapoisto
+## <a name="example-straight-line-depreciation-of-a-modified-fixed-asset"></a><span data-ttu-id="97a7c-168"> Esimerkki: Muutetun käyttöomaisuuden tasapoisto</span><span class="sxs-lookup"><span data-stu-id="97a7c-168">Example: Straight line depreciation of a modified fixed asset</span></span>
 
-Oletetaan, että samaan käyttöomaisuuserään lisätään vuonna 2 hankintaoikaisu, jonka arvo on 4 000. 
+<span data-ttu-id="97a7c-169">Oletetaan, että samaan käyttöomaisuuserään lisätään vuonna 2 hankintaoikaisu, jonka arvo on 4 000.</span><span class="sxs-lookup"><span data-stu-id="97a7c-169">Suppose that you add an acquisition adjustment of 4,000 in year 2 to the same fixed asset.</span></span> 
 
-Hankintaoikaisun käyttöaika on sama kuin käyttöomaisuuserän käyttöaika ja se alkaa hankintahetkellä. Vuoden 5 lopussa on jäljellä nettokirjanpitoarvo, joka vastaa hankintaoikaisun nettokirjanpitoarvoa. Kunkin jakson poisto lasketaan seuraavassa taulukossa esitetyllä tavalla.
+<span data-ttu-id="97a7c-170">Hankintaoikaisun käyttöaika on sama kuin käyttöomaisuuserän käyttöaika ja se alkaa hankintahetkellä.</span><span class="sxs-lookup"><span data-stu-id="97a7c-170">The service life of the acquisition adjustment is the same as that of the fixed asset and starts at the time of its acquisition.</span></span> <span data-ttu-id="97a7c-171">Vuoden 5 lopussa on jäljellä nettokirjanpitoarvo, joka vastaa hankintaoikaisun nettokirjanpitoarvoa.</span><span class="sxs-lookup"><span data-stu-id="97a7c-171">A net book value remains at the end of year 5, corresponding to the net book value of the acquisition adjustment.</span></span> <span data-ttu-id="97a7c-172">Kunkin jakson poisto lasketaan seuraavassa taulukossa esitetyllä tavalla.</span><span class="sxs-lookup"><span data-stu-id="97a7c-172">The depreciation by period is calculated as shown in the following table.</span></span>
 
-| Jakso: | Vuotuisen poistomäärän laskeminen: | Nettokirjanpitoarvo vuoden lopussa: |
+| <span data-ttu-id="97a7c-173">Jakso:</span><span class="sxs-lookup"><span data-stu-id="97a7c-173">Period</span></span> | <span data-ttu-id="97a7c-174">Vuotuisen poistomäärän laskeminen:</span><span class="sxs-lookup"><span data-stu-id="97a7c-174">Calculation of yearly depreciation amount</span></span> | <span data-ttu-id="97a7c-175">Nettokirjanpitoarvo vuoden lopussa:</span><span class="sxs-lookup"><span data-stu-id="97a7c-175">Net book value at the end of the year</span></span> |
 |--------|-------------------------------------------|---------------------------------------|
-| Vuosi 1 | 10 000 / 5 = 2 000                        | 11 000 - 2 000 = 9 000                |
-| Vuosi 2 | 4 000 (hankintaoikaisu)            | 9 000 + 4 000 =13 000                 |
-| Vuosi 2 | 14 000 / 5 = 2 800                        | 13 000 - 2 800 = 10 200               |
-| Vuosi 3 | 14 000 / 5 = 2 800                        | 10 200 - 2 800 = 7 400                |
-| Vuosi 4 | 14 000 / 5 = 2 800                        | 7 400 - 2 800 = 4 600                 |
-| Vuosi 5 | 14 000 / 5 = 2 800                        | 4 600 - 2 800 = 1 800                 |
-| Vuosi 6 | Jäljellä oleva arvo 800\*                           | 1 800 – 800 = 1 000                   |
+| <span data-ttu-id="97a7c-176">Vuosi 1</span><span class="sxs-lookup"><span data-stu-id="97a7c-176">Year 1</span></span> | <span data-ttu-id="97a7c-177">10 000 / 5 = 2 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-177">10,000 / 5 = 2,000</span></span>                        | <span data-ttu-id="97a7c-178">11 000 - 2 000 = 9 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-178">11,000 - 2,000 = 9,000</span></span>                |
+| <span data-ttu-id="97a7c-179">Vuosi 2</span><span class="sxs-lookup"><span data-stu-id="97a7c-179">Year 2</span></span> | <span data-ttu-id="97a7c-180">4 000 (hankintaoikaisu)</span><span class="sxs-lookup"><span data-stu-id="97a7c-180">4,000 (acquisition adjustment)</span></span>            | <span data-ttu-id="97a7c-181">9 000 + 4 000 =13 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-181">9,000 + 4,000 =13,000</span></span>                 |
+| <span data-ttu-id="97a7c-182">Vuosi 2</span><span class="sxs-lookup"><span data-stu-id="97a7c-182">Year 2</span></span> | <span data-ttu-id="97a7c-183">14 000 / 5 = 2 800</span><span class="sxs-lookup"><span data-stu-id="97a7c-183">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="97a7c-184">13 000 - 2 800 = 10 200</span><span class="sxs-lookup"><span data-stu-id="97a7c-184">13,000 - 2,800 = 10,200</span></span>               |
+| <span data-ttu-id="97a7c-185">Vuosi 3</span><span class="sxs-lookup"><span data-stu-id="97a7c-185">Year 3</span></span> | <span data-ttu-id="97a7c-186">14 000 / 5 = 2 800</span><span class="sxs-lookup"><span data-stu-id="97a7c-186">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="97a7c-187">10 200 - 2 800 = 7 400</span><span class="sxs-lookup"><span data-stu-id="97a7c-187">10,200 - 2,800 = 7,400</span></span>                |
+| <span data-ttu-id="97a7c-188">Vuosi 4</span><span class="sxs-lookup"><span data-stu-id="97a7c-188">Year 4</span></span> | <span data-ttu-id="97a7c-189">14 000 / 5 = 2 800</span><span class="sxs-lookup"><span data-stu-id="97a7c-189">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="97a7c-190">7 400 - 2 800 = 4 600</span><span class="sxs-lookup"><span data-stu-id="97a7c-190">7,400 - 2,800 = 4,600</span></span>                 |
+| <span data-ttu-id="97a7c-191">Vuosi 5</span><span class="sxs-lookup"><span data-stu-id="97a7c-191">Year 5</span></span> | <span data-ttu-id="97a7c-192">14 000 / 5 = 2 800</span><span class="sxs-lookup"><span data-stu-id="97a7c-192">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="97a7c-193">4 600 - 2 800 = 1 800</span><span class="sxs-lookup"><span data-stu-id="97a7c-193">4,600 - 2,800 = 1,800</span></span>                 |
+| <span data-ttu-id="97a7c-194">Vuosi 6</span><span class="sxs-lookup"><span data-stu-id="97a7c-194">Year 6</span></span> | <span data-ttu-id="97a7c-195">Jäljellä oleva arvo 800\*</span><span class="sxs-lookup"><span data-stu-id="97a7c-195">Remaining 800\*</span></span>                           | <span data-ttu-id="97a7c-196">1 800 – 800 = 1 000</span><span class="sxs-lookup"><span data-stu-id="97a7c-196">1,800 – 800 = 1,000</span></span>                   |
 
-\*Koska jäännösarvo on pienempi kuin poistosumma, kirjataan vain jäännösarvolla vähennetty jäljellä oleva summa.
+<span data-ttu-id="97a7c-197">\*Koska jäännösarvo on pienempi kuin poistosumma, kirjataan vain jäännösarvolla vähennetty jäljellä oleva summa.</span><span class="sxs-lookup"><span data-stu-id="97a7c-197">\*Because the remaining amount is less than the depreciation amount, only the remaining amount minus the salvage value is taken.</span></span>
 
 
 

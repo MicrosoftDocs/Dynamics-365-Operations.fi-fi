@@ -16,20 +16,20 @@ ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 2f7945ad1837fed0dcb473bb7ce66b0796433776
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 69a449766f2e5d9a6833127fcd28a2959d4578fc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="change-the-date-for-the-session"></a>Istunnon päivämäärän muuttaminen
+# <a name="change-the-date-for-the-session"></a><span data-ttu-id="d3c4e-103">Istunnon päivämäärän muuttaminen</span><span class="sxs-lookup"><span data-stu-id="d3c4e-103">Change the date for the session</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Kuluvaa päivää käytetään oletusarvoisesti syötettäessä tai kirjattaessa merkintöjä kirjauskansioon. Voit muuttaa nykyisessä istunnossa käytettävää päivämäärää. Tällä toiminnolla voi tarvittaessa päivätä kirjauskansion tai lähdeasiakirjojen merkinnät varhemmaksi.
+<span data-ttu-id="d3c4e-104">Kuluvaa päivää käytetään oletusarvoisesti syötettäessä tai kirjattaessa merkintöjä kirjauskansioon.</span><span class="sxs-lookup"><span data-stu-id="d3c4e-104">By default, the current date is used when entering and posting journal entries or source documents.</span></span> <span data-ttu-id="d3c4e-105">Voit muuttaa nykyisessä istunnossa käytettävää päivämäärää.</span><span class="sxs-lookup"><span data-stu-id="d3c4e-105">You can change the date that is used for your current session.</span></span> <span data-ttu-id="d3c4e-106">Tällä toiminnolla voi tarvittaessa päivätä kirjauskansion tai lähdeasiakirjojen merkinnät varhemmaksi.</span><span class="sxs-lookup"><span data-stu-id="d3c4e-106">Use this feature to back-date journal entries or source documents, as necessary.</span></span>
 
-1. Valitse Yleinen > Yleinen > Istunnon päivämäärä ja aika.
-2. Syötä Päivämäärään-kenttään päivämäärä.
-3. Valitse OK.
+1. <span data-ttu-id="d3c4e-107">Valitse Yleinen > Yleinen > Istunnon päivämäärä ja aika.</span><span class="sxs-lookup"><span data-stu-id="d3c4e-107">Go to Common > Common > Session date and time.</span></span>
+2. <span data-ttu-id="d3c4e-108">Syötä Päivämäärään-kenttään päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="d3c4e-108">In the Date field, enter a date.</span></span>
+3. <span data-ttu-id="d3c4e-109">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="d3c4e-109">Click OK.</span></span>
 
 

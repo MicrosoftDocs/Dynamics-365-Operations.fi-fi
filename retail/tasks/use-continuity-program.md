@@ -17,48 +17,48 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: bd584bbb49ea83c4debf11ad0169c346ef0f9637
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5d3b5690bfbd10b77e784d35d0c4f4518de58333
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="use-a-continuity-program"></a>Käytä jatkuvuusohjelmaa
+# <a name="use-a-continuity-program"></a><span data-ttu-id="fd440-103">Käytä jatkuvuusohjelmaa</span><span class="sxs-lookup"><span data-stu-id="fd440-103">Use a continuity program</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Näissä toimintaohjeissa neuvotaan, miten jatkuvuusohjelman avulla tehdään myyntejä ja käsitellään niihin liittyviä myyntitilauksia. Käyttäjä on määritettävä puhelinkeskuksen käyttäjäksi, jotta tämän menettelyn voi suorittaa. Menettely käyttää esittelytietojen USRT-yritystä.
+<span data-ttu-id="fd440-104">Näissä toimintaohjeissa neuvotaan, miten jatkuvuusohjelman avulla tehdään myyntejä ja käsitellään niihin liittyviä myyntitilauksia.</span><span class="sxs-lookup"><span data-stu-id="fd440-104">This procedure walks through selling a continuity program and processing related sales orders.</span></span> <span data-ttu-id="fd440-105">Käyttäjä on määritettävä puhelinkeskuksen käyttäjäksi, jotta tämän menettelyn voi suorittaa.</span><span class="sxs-lookup"><span data-stu-id="fd440-105">To complete this procedure, the user has to be set up as a call center user.</span></span> <span data-ttu-id="fd440-106">Menettely käyttää esittelytietojen USRT-yritystä.</span><span class="sxs-lookup"><span data-stu-id="fd440-106">This procedure uses the USRT demo data company.</span></span>
 
-1. Valitse Vähittäismyynti ja kauppa > Asiakkaat > Asiakaspalvelu.
-2. Kirjoita SearchText-kenttään "Karen" ja paina sitten sarkainnäppäintä.
-    * Tarkennettu haku -valintaikkunan tulisi aueta. Jos näin ei tapahdu, valitse Etsi kentän oikealla puolella.  
-3. Merkitse valittu rivi luettelossa.
-    * Tuloksissa tulisi olla vain yksi rivi nimellä Karen Berg. Valitse rivi napsauttamalla valintamerkkiä ruudukon vasemmassa laidassa.  
-4. Klikkaa Valitse.
-5. Valitse Uusi myyntitilaus.
-    * Ota muistiin myyntitilauksen numero. Tarvitset sitä myöhemmin.  
-6. Kirjoita Nimiketunnus-kenttään 88000 ja paina sitten sarkainnäppäintä.
-    * Tämä on jatkuvuusnimike USRT-yrityksen esittelytiedoissa.  
-7. Valitse Valmis.
-8. Kirjoita Maksutapa-kenttään "Visa".
-9. Valitse Lisää luottokortti.
-    * Anna pakolliset luottokorttitiedot tällä sivulla.  
-10. Valitse OK.
-11. Laajenna Maksu-osa.
-    * Jotta puhelinkeskus voi lähettää tilauksen, tilaukselle on syötettävä maksuja.  
-12. Valitse OK.
-13. Valitse Lähetä.
-    * Jatkuvuustilauksen luonti on nyt valmis. Seuraavaksi ajat kaksi eräprosessia, jotka käsittelevät jatkuvuustilaukset.  
-14. Sulje sivu.
-15. Valitse Vähittäismyynti ja kauppa > Jatkuvuus > Käsittele jatkuvuusmaksut.
-16. Kirjoita Jatkuvuusnimike-kenttään 88000 ja paina sitten sarkainnäppäintä.
-17. Valitse OK.
-18. Valitse Vähittäismyynti ja kauppa > Jatkuvuus > Luo jatkuvuuden alitilaukset.
-    * Tämä prosessi luo uusia myyntitilauksia, jotka perustuvat jatkuvuusohjelmasi asetuksiin.  
-19. Kirjoita Jatkuvuusnimike-kenttään 88000 ja paina sitten sarkainnäppäintä.
-    * Nimike 88000 on jatkuvuusnimike USRT-yrityksen esittelytiedoissa.  
-20. Syötä tai valitse arvo kentässä Myyntitilaus.
-    * Anna aiemmin ohjeessa muistiin ottamasi myyntitilauksen numero. Tämä vähentää ohjeiden suoritusaikaa huomattavasti. Myyntitilaus-kenttä on valinnainen – voit käsitellä kaikki yhden ohjelman tilaukset.  
-21. Valitse OK.
+1. <span data-ttu-id="fd440-107">Valitse Vähittäismyynti ja kauppa > Asiakkaat > Asiakaspalvelu.</span><span class="sxs-lookup"><span data-stu-id="fd440-107">Go to Retail and commerce > Customers > Customer service.</span></span>
+2. <span data-ttu-id="fd440-108">Kirjoita SearchText-kenttään "Karen" ja paina sitten sarkainnäppäintä.</span><span class="sxs-lookup"><span data-stu-id="fd440-108">In the SearchText field, type 'Karen' and then press the Tab key.</span></span>
+    * <span data-ttu-id="fd440-109">Tarkennettu haku -valintaikkunan tulisi aueta.</span><span class="sxs-lookup"><span data-stu-id="fd440-109">The advanced search dialog should pop up.</span></span> <span data-ttu-id="fd440-110">Jos näin ei tapahdu, valitse Etsi kentän oikealla puolella.</span><span class="sxs-lookup"><span data-stu-id="fd440-110">If it doesn't, click Search to the right of this field.</span></span>  
+3. <span data-ttu-id="fd440-111">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="fd440-111">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="fd440-112">Tuloksissa tulisi olla vain yksi rivi nimellä Karen Berg.</span><span class="sxs-lookup"><span data-stu-id="fd440-112">There should be only one row with Karen Berg showing.</span></span> <span data-ttu-id="fd440-113">Valitse rivi napsauttamalla valintamerkkiä ruudukon vasemmassa laidassa.</span><span class="sxs-lookup"><span data-stu-id="fd440-113">Select the row by clicking on the checkmark column on the far left of the grid.</span></span>  
+4. <span data-ttu-id="fd440-114">Klikkaa Valitse.</span><span class="sxs-lookup"><span data-stu-id="fd440-114">Click Select.</span></span>
+5. <span data-ttu-id="fd440-115">Valitse Uusi myyntitilaus.</span><span class="sxs-lookup"><span data-stu-id="fd440-115">Click New sales order.</span></span>
+    * <span data-ttu-id="fd440-116">Ota muistiin myyntitilauksen numero.</span><span class="sxs-lookup"><span data-stu-id="fd440-116">It's a good idea to note the sales order number.</span></span> <span data-ttu-id="fd440-117">Tarvitset sitä myöhemmin.</span><span class="sxs-lookup"><span data-stu-id="fd440-117">You'll need it later in this procedure.</span></span>  
+6. <span data-ttu-id="fd440-118">Kirjoita Nimiketunnus-kenttään 88000 ja paina sitten sarkainnäppäintä.</span><span class="sxs-lookup"><span data-stu-id="fd440-118">In the Item number field, type '88000' and then press the Tab key.</span></span>
+    * <span data-ttu-id="fd440-119">Tämä on jatkuvuusnimike USRT-yrityksen esittelytiedoissa.</span><span class="sxs-lookup"><span data-stu-id="fd440-119">This is a continuity item in the USRT demo data.</span></span>  
+7. <span data-ttu-id="fd440-120">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="fd440-120">Click Complete.</span></span>
+8. <span data-ttu-id="fd440-121">Kirjoita Maksutapa-kenttään "Visa".</span><span class="sxs-lookup"><span data-stu-id="fd440-121">In the Payment method field, enter 'Visa'.</span></span>
+9. <span data-ttu-id="fd440-122">Valitse Lisää luottokortti.</span><span class="sxs-lookup"><span data-stu-id="fd440-122">Click Add credit card.</span></span>
+    * <span data-ttu-id="fd440-123">Anna pakolliset luottokorttitiedot tällä sivulla.</span><span class="sxs-lookup"><span data-stu-id="fd440-123">Enter the required credit card information on this page.</span></span>  
+10. <span data-ttu-id="fd440-124">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="fd440-124">Click OK.</span></span>
+11. <span data-ttu-id="fd440-125">Laajenna Maksu-osa.</span><span class="sxs-lookup"><span data-stu-id="fd440-125">Expand the Payment section.</span></span>
+    * <span data-ttu-id="fd440-126">Jotta puhelinkeskus voi lähettää tilauksen, tilaukselle on syötettävä maksuja.</span><span class="sxs-lookup"><span data-stu-id="fd440-126">To submit a call center order, payments have to be entered for the order.</span></span>  
+12. <span data-ttu-id="fd440-127">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="fd440-127">Click OK.</span></span>
+13. <span data-ttu-id="fd440-128">Valitse Lähetä.</span><span class="sxs-lookup"><span data-stu-id="fd440-128">Click Submit.</span></span>
+    * <span data-ttu-id="fd440-129">Jatkuvuustilauksen luonti on nyt valmis.</span><span class="sxs-lookup"><span data-stu-id="fd440-129">You're done creating a new continuity order.</span></span> <span data-ttu-id="fd440-130">Seuraavaksi ajat kaksi eräprosessia, jotka käsittelevät jatkuvuustilaukset.</span><span class="sxs-lookup"><span data-stu-id="fd440-130">Next, you'll run two batch processes that are used to process the continuity orders.</span></span>  
+14. <span data-ttu-id="fd440-131">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="fd440-131">Close the page.</span></span>
+15. <span data-ttu-id="fd440-132">Valitse Vähittäismyynti ja kauppa > Jatkuvuus > Käsittele jatkuvuusmaksut.</span><span class="sxs-lookup"><span data-stu-id="fd440-132">Go to Retail and commerce > Continuity > Process continuity payments.</span></span>
+16. <span data-ttu-id="fd440-133">Kirjoita Jatkuvuusnimike-kenttään 88000 ja paina sitten sarkainnäppäintä.</span><span class="sxs-lookup"><span data-stu-id="fd440-133">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
+17. <span data-ttu-id="fd440-134">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="fd440-134">Click OK.</span></span>
+18. <span data-ttu-id="fd440-135">Valitse Vähittäismyynti ja kauppa > Jatkuvuus > Luo jatkuvuuden alitilaukset.</span><span class="sxs-lookup"><span data-stu-id="fd440-135">Go to Retail and commerce > Continuity > Create continuity child orders.</span></span>
+    * <span data-ttu-id="fd440-136">Tämä prosessi luo uusia myyntitilauksia, jotka perustuvat jatkuvuusohjelmasi asetuksiin.</span><span class="sxs-lookup"><span data-stu-id="fd440-136">This process will create new sales orders based on the settings of your continuity programs.</span></span>  
+19. <span data-ttu-id="fd440-137">Kirjoita Jatkuvuusnimike-kenttään 88000 ja paina sitten sarkainnäppäintä.</span><span class="sxs-lookup"><span data-stu-id="fd440-137">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
+    * <span data-ttu-id="fd440-138">Nimike 88000 on jatkuvuusnimike USRT-yrityksen esittelytiedoissa.</span><span class="sxs-lookup"><span data-stu-id="fd440-138">Item '88000' is a continuity item in the USRT demo data.</span></span>  
+20. <span data-ttu-id="fd440-139">Syötä tai valitse arvo kentässä Myyntitilaus.</span><span class="sxs-lookup"><span data-stu-id="fd440-139">In the Sales order field, enter or select a value.</span></span>
+    * <span data-ttu-id="fd440-140">Anna aiemmin ohjeessa muistiin ottamasi myyntitilauksen numero.</span><span class="sxs-lookup"><span data-stu-id="fd440-140">Enter the sales order number that you noted earlier in the procedure.</span></span> <span data-ttu-id="fd440-141">Tämä vähentää ohjeiden suoritusaikaa huomattavasti.</span><span class="sxs-lookup"><span data-stu-id="fd440-141">This will keep the processing time to a minimal for this procedure.</span></span> <span data-ttu-id="fd440-142">Myyntitilaus-kenttä on valinnainen – voit käsitellä kaikki yhden ohjelman tilaukset.</span><span class="sxs-lookup"><span data-stu-id="fd440-142">The Sales order field field is optional--you could process all orders for any one program.</span></span>  
+21. <span data-ttu-id="fd440-143">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="fd440-143">Click OK.</span></span>
 
 

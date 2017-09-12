@@ -25,45 +25,45 @@ ms.lasthandoff: 08/04/2017
 
 ---
 
-# <a name="mobile-app-home-page"></a>Mobiilisovelluksen kotisivu
+# <a name="mobile-app-home-page"></a><span data-ttu-id="149ab-103">Mobiilisovelluksen kotisivu</span><span class="sxs-lookup"><span data-stu-id="149ab-103">Mobile app home page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Unified Operationsin mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
+<span data-ttu-id="149ab-104">Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Unified Operationsin mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.</span><span class="sxs-lookup"><span data-stu-id="149ab-104">This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.</span></span>
 
 > [!NOTE]
-> Mobiilisovelluksen nimi oli aiemmin *Microsoft Dynamics 365 for Finance and Operations*.
+> <span data-ttu-id="149ab-105">Mobiilisovelluksen nimi oli aiemmin *Microsoft Dynamics 365 for Finance and Operations*.</span><span class="sxs-lookup"><span data-stu-id="149ab-105">The mobile app was previously named *Microsoft Dynamics 365 for Finance and Operations*.</span></span>
 
-<a name="overview"></a>Yleiskuvaus
+<a name="overview"></a><span data-ttu-id="149ab-106">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="149ab-106">Overview</span></span>
 --------
 
-Mobiilisovelluksen avulla organisaatiosi liiketoimintaprosesseja voi käyttää mobiililaitteilla. Kun IT-järjestelmänvalvoja ottaa mobiilityötilat käyttöön organisaatiossa, käyttäjät voivat kirjautua sisään sovellukseen ja aloittaa liiketoimintaprosessien käyttämisen heti mobiililaitteillaan. Mobiilisovellukseen sisältyvät seuraavat, tuottavuutta parantavat ominaisuudet:
+<span data-ttu-id="149ab-107">Mobiilisovelluksen avulla organisaatiosi liiketoimintaprosesseja voi käyttää mobiililaitteilla.</span><span class="sxs-lookup"><span data-stu-id="149ab-107">The mobile app enables your organization to make its business processes available on mobile devices.</span></span> <span data-ttu-id="149ab-108">Kun IT-järjestelmänvalvoja ottaa mobiilityötilat käyttöön organisaatiossa, käyttäjät voivat kirjautua sisään sovellukseen ja aloittaa liiketoimintaprosessien käyttämisen heti mobiililaitteillaan.</span><span class="sxs-lookup"><span data-stu-id="149ab-108">After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.</span></span> <span data-ttu-id="149ab-109">Mobiilisovellukseen sisältyvät seuraavat, tuottavuutta parantavat ominaisuudet:</span><span class="sxs-lookup"><span data-stu-id="149ab-109">The mobile app includes the following features that can help increase productivity:</span></span>
 
-- Käyttäjät voivat tarkastella, muokata ja käynnistää toimita liiketoiminnan tiedoille, vaikka mobiililaitteen verkkoyhteys olisikin heikko tai laite offline-tilassa. Kun laite muodostaa verkkoyhteyden uudelleen, offline-tietotoiminnot synkronoidaan automaattisesti Dynamics 365 for Finance and Operations, Enterprise Editionin tai Microsoft Dynamics 365 for Finance and Operationsin kanssa.
-- IT-järjestelmänvalvojat tai sovelluskehittäjät voivat julkaista organisaatiolleen räätälöityjä mobiilityötiloja. Sovellus käyttää olemassa olevia koodiresursseja. Sinun ei siis täydy luoda tarkistusmenettelyitä, liiketoimintalogiikkaa tai suojausmäärittelyitä uudelleen.
-- IT-järjestelmänvalvoja tai sovelluskehittäjät voivat suunnitella mobiilityötiloja helposti verkkoasiakasohjelman työtilojen helppokäyttöisellä suunnitteluohjelmalla.
-- IT-järjestelmävalvojat voivat halutessaan optimoida työtilojen offline-ominaisuuksia liiketoimintalogiikan laajennuskehyksen avulla. Koska tietojen käsittely ei keskeydy laitteen ollessa offline-tilassa, mobiiliskenaariosi säilyvät mukautuvina, vaikka laitteilla ei olisikaan jatkuvaa verkkoyhteyttä.
+- <span data-ttu-id="149ab-110">Käyttäjät voivat tarkastella, muokata ja käynnistää toimita liiketoiminnan tiedoille, vaikka mobiililaitteen verkkoyhteys olisikin heikko tai laite offline-tilassa.</span><span class="sxs-lookup"><span data-stu-id="149ab-110">Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline.</span></span> <span data-ttu-id="149ab-111">Kun laite muodostaa verkkoyhteyden uudelleen, offline-tietotoiminnot synkronoidaan automaattisesti Dynamics 365 for Finance and Operations, Enterprise Editionin tai Microsoft Dynamics 365 for Finance and Operationsin kanssa.</span><span class="sxs-lookup"><span data-stu-id="149ab-111">When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations, Enterprise edition, or Microsoft Dynamics 365 for Finance and Operations.</span></span>
+- <span data-ttu-id="149ab-112">IT-järjestelmänvalvojat tai sovelluskehittäjät voivat julkaista organisaatiolleen räätälöityjä mobiilityötiloja.</span><span class="sxs-lookup"><span data-stu-id="149ab-112">IT admins or developers can build and publish mobile workspaces that have been tailored to their organization.</span></span> <span data-ttu-id="149ab-113">Sovellus käyttää olemassa olevia koodiresursseja.</span><span class="sxs-lookup"><span data-stu-id="149ab-113">The app uses your existing code assets.</span></span> <span data-ttu-id="149ab-114">Sinun ei siis täydy luoda tarkistusmenettelyitä, liiketoimintalogiikkaa tai suojausmäärittelyitä uudelleen.</span><span class="sxs-lookup"><span data-stu-id="149ab-114">Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.</span></span>
+- <span data-ttu-id="149ab-115">IT-järjestelmänvalvoja tai sovelluskehittäjät voivat suunnitella mobiilityötiloja helposti verkkoasiakasohjelman työtilojen helppokäyttöisellä suunnitteluohjelmalla.</span><span class="sxs-lookup"><span data-stu-id="149ab-115">IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.</span></span>
+- <span data-ttu-id="149ab-116">IT-järjestelmävalvojat voivat halutessaan optimoida työtilojen offline-ominaisuuksia liiketoimintalogiikan laajennuskehyksen avulla.</span><span class="sxs-lookup"><span data-stu-id="149ab-116">IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework.</span></span> <span data-ttu-id="149ab-117">Koska tietojen käsittely ei keskeydy laitteen ollessa offline-tilassa, mobiiliskenaariosi säilyvät mukautuvina, vaikka laitteilla ei olisikaan jatkuvaa verkkoyhteyttä.</span><span class="sxs-lookup"><span data-stu-id="149ab-117">Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.</span></span>
 
-## <a name="elements-of-the-mobile-app"></a>Mobiilisovelluksen osat
-Mobiilisovelluksen käyttö koostuu neljästä, perusosasta: koontinäyttö, työtilat, sivut ja toiminnot. 
+## <a name="elements-of-the-mobile-app"></a><span data-ttu-id="149ab-118">Mobiilisovelluksen osat</span><span class="sxs-lookup"><span data-stu-id="149ab-118">Elements of the mobile app</span></span>
+<span data-ttu-id="149ab-119">Mobiilisovelluksen käyttö koostuu neljästä, perusosasta: koontinäyttö, työtilat, sivut ja toiminnot.</span><span class="sxs-lookup"><span data-stu-id="149ab-119">Navigation in the mobile app consists of four basic concepts: the dashboard, workspaces, pages, and actions.</span></span> 
 
-[![Mobiilisovelluksen siirtymiskonseptit](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+<span data-ttu-id="149ab-120">[![Mobiilisovelluksen siirtymiskonseptit](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span><span class="sxs-lookup"><span data-stu-id="149ab-120">[![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span></span>
 
-1. **Koontinäyttö** aukea, kun sovellus käynnistetään.
-2. Koontinäytössä on luettelo julkaistuista **työtiloista**.
-3. Kussakin työtilassa näet luettelon **sivuista**, jotka ovat saatavilla kyseisessä työtilassa.
-4. Kun olet sivulla, voit suorittaa siellä useita toimintoja. Seuraavassa on muutamia esimerkkejä:
+1. <span data-ttu-id="149ab-121">**Koontinäyttö** aukea, kun sovellus käynnistetään.</span><span class="sxs-lookup"><span data-stu-id="149ab-121">When you start the app, you go to the **dashboard**.</span></span>
+2. <span data-ttu-id="149ab-122">Koontinäytössä on luettelo julkaistuista **työtiloista**.</span><span class="sxs-lookup"><span data-stu-id="149ab-122">On the dashboard, you can see a list of **workspaces** that have been published.</span></span>
+3. <span data-ttu-id="149ab-123">Kussakin työtilassa näet luettelon **sivuista**, jotka ovat saatavilla kyseisessä työtilassa.</span><span class="sxs-lookup"><span data-stu-id="149ab-123">In each workspace, you can see a list of **pages** that are available for that workspace.</span></span>
+4. <span data-ttu-id="149ab-124">Kun olet sivulla, voit suorittaa siellä useita toimintoja.</span><span class="sxs-lookup"><span data-stu-id="149ab-124">After you're on a page, you can perform several actions.</span></span> <span data-ttu-id="149ab-125">Seuraavassa on muutamia esimerkkejä:</span><span class="sxs-lookup"><span data-stu-id="149ab-125">Here are some examples:</span></span>
 
-    - Yksityiskohtaisten tietojen tarkastelu.
-    - Siirtyminen muille sivuille, joilla on liittyviä tietoja, kuten yksikön tietoja tai rivejä.
-    - Tutustu luetteloon **toiminnoista**, jotka ovat käytettävissä kyseiseltä sivulta. Toimintojen avulla voit luoda tai muokata tietoja.
+    - <span data-ttu-id="149ab-126">Yksityiskohtaisten tietojen tarkastelu.</span><span class="sxs-lookup"><span data-stu-id="149ab-126">View detailed data.</span></span>
+    - <span data-ttu-id="149ab-127">Siirtyminen muille sivuille, joilla on liittyviä tietoja, kuten yksikön tietoja tai rivejä.</span><span class="sxs-lookup"><span data-stu-id="149ab-127">Navigate to other pages for related data, such as entity details or lines.</span></span>
+    - <span data-ttu-id="149ab-128">Tutustu luetteloon **toiminnoista**, jotka ovat käytettävissä kyseiseltä sivulta.</span><span class="sxs-lookup"><span data-stu-id="149ab-128">See a list of **actions** that are available for that page.</span></span> <span data-ttu-id="149ab-129">Toimintojen avulla voit luoda tai muokata tietoja.</span><span class="sxs-lookup"><span data-stu-id="149ab-129">Actions let you create or edit existing data.</span></span>
 
-## <a name="implementation-process"></a>Käyttöönottoprosessi
-Seuraavassa kuvassa on esitys Microsoftin toimittamien mobiilityötilojen ja mukautettujen mobiilityötilojen käyttöönottamisesta. 
+## <a name="implementation-process"></a><span data-ttu-id="149ab-130">Käyttöönottoprosessi</span><span class="sxs-lookup"><span data-stu-id="149ab-130">Implementation process</span></span>
+<span data-ttu-id="149ab-131">Seuraavassa kuvassa on esitys Microsoftin toimittamien mobiilityötilojen ja mukautettujen mobiilityötilojen käyttöönottamisesta.</span><span class="sxs-lookup"><span data-stu-id="149ab-131">The following illustration shows the process for implementing both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> 
 
 ![Mobiilisovellusten käyttöönottoprosessi](./media/Mobile-implementation-process-5.png)
 
-Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käyttöön sekä Microsoftin tarjoamia mobiilityötiloja että mukautettuja mobiilityötiloja. Ensimmäisen sarakkeen numerot vastaavat edellisessä kuvassa esitettyjä vaiheita.
+<span data-ttu-id="149ab-133">Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käyttöön sekä Microsoftin tarjoamia mobiilityötiloja että mukautettuja mobiilityötiloja.</span><span class="sxs-lookup"><span data-stu-id="149ab-133">The following table includes links to resources that can help you implement both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> <span data-ttu-id="149ab-134">Ensimmäisen sarakkeen numerot vastaavat edellisessä kuvassa esitettyjä vaiheita.</span><span class="sxs-lookup"><span data-stu-id="149ab-134">The numbers in the first column correspond to the numbered steps in the previous illustration.</span></span>
 
 <table>
 <colgroup>
@@ -74,80 +74,81 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 </colgroup>
 <thead>
 <tr class="header">
-<th>Vaihe</th>
-<th>Rooli</th>
-<th>Toimenpide</th>
-<th>Resursseja, jotka auttavat suorittamaan toiminnon</th>
+<th><span data-ttu-id="149ab-135">Vaihe</span><span class="sxs-lookup"><span data-stu-id="149ab-135">Step</span></span></th>
+<th><span data-ttu-id="149ab-136">Rooli</span><span class="sxs-lookup"><span data-stu-id="149ab-136">Role</span></span></th>
+<th><span data-ttu-id="149ab-137">Toimenpide</span><span class="sxs-lookup"><span data-stu-id="149ab-137">Action</span></span></th>
+<th><span data-ttu-id="149ab-138">Resursseja, jotka auttavat suorittamaan toiminnon</span><span class="sxs-lookup"><span data-stu-id="149ab-138">Resources to help you complete the action</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>Järjestelmänvalvoja</td>
-<td>Ota Finance and Operations tai Finance and Operations käyttöön organisaatiossa.</td>
-<td><ul><li>Jos et ole vielä ottanut Microsoft Dynamics 365 -versiosta, lisätietoja on ohjeaiheessa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön käyttöönotto</a>.</li><li>Jos haluat tutustua käytettävissä oleviin mobiilityötilaluetteloihin, lisätietoja on ohjeaiheessa <a href="mobile-workspaces-released.md">Äskettäin vapautetut mobiilityötilat</a>.</li></ul></td>
+<td><span data-ttu-id="149ab-139">1</span><span class="sxs-lookup"><span data-stu-id="149ab-139">1</span></span></td>
+<td><span data-ttu-id="149ab-140">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="149ab-140">System administrator</span></span></td>
+<td><span data-ttu-id="149ab-141">Ota Finance and Operations tai Finance and Operations käyttöön organisaatiossa.</span><span class="sxs-lookup"><span data-stu-id="149ab-141">Implement Finance and Operations or Finance and Operations in your organization.</span></span></td>
+<td><ul><li><span data-ttu-id="149ab-142">Jos et ole vielä ottanut Microsoft Dynamics 365 -versiosta, lisätietoja on ohjeaiheessa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön käyttöönotto</a>.</span><span class="sxs-lookup"><span data-stu-id="149ab-142">If you haven't yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span></li><li><span data-ttu-id="149ab-143">Jos haluat tutustua käytettävissä oleviin mobiilityötilaluetteloihin, lisätietoja on ohjeaiheessa <a href="mobile-workspaces-released.md">Äskettäin vapautetut mobiilityötilat</a>.</span><span class="sxs-lookup"><span data-stu-id="149ab-143">To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span></li></ul></td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>Järjestelmänvalvoja</td>
-<td><strong>Jos käytössä on Microsoft Dynamics 365 for Finance and Operationsin versio 1611:</strong> Lataa ja asenna KB:t, joilla otetaan Microsoftin mobiilityötilat käyttöön.</td>
-<td>Lisätietoja on seuraavissa ohjeaiheissa:
+<td><span data-ttu-id="149ab-144">2</span><span class="sxs-lookup"><span data-stu-id="149ab-144">2</span></span></td>
+<td><span data-ttu-id="149ab-145">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="149ab-145">System administrator</span></span></td>
+<td><span data-ttu-id="149ab-146"><strong>Jos käytössä on Microsoft Dynamics 365 for Finance and Operationsin versio 1611:</strong> Lataa ja asenna KB:t, joilla otetaan Microsoftin mobiilityötilat käyttöön.</span><span class="sxs-lookup"><span data-stu-id="149ab-146"><strong>If you're using Microsoft Dynamics 365 for Finance and Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</span></span></td>
+<td><span data-ttu-id="149ab-147">Lisätietoja on seuraavissa ohjeaiheissa:</span><span class="sxs-lookup"><span data-stu-id="149ab-147">See the following topics for more information:</span></span>
 <ul>
 
-<li><a href="/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace">Kustannusseurannan mobiilityötilat</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Käytettävissä olevan varaston mobiilityötila</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Myyntitilausten mobiilityötilat</a></li>
-<li><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Toimittajayhteistyön mobiilityötila</a></li>
-<li><a href="/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace">Projektin aikamerkintöjen mobiilityötila</a></li>
-<li><a href="/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace">Kulujenhallinnan mobiilityötila</a></li>
+<li><span data-ttu-id="149ab-148"><a href="/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace">Kustannusseurannan mobiilityötilat</a></span><span class="sxs-lookup"><span data-stu-id="149ab-148"><a href="/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></span></span></li>
+<li><span data-ttu-id="149ab-149"><a href="/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Käytettävissä olevan varaston mobiilityötila</a></span><span class="sxs-lookup"><span data-stu-id="149ab-149"><a href="/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Inventory on-hand mobile workspace</a></span></span></li>
+<li><span data-ttu-id="149ab-150"><a href="/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Myyntitilausten mobiilityötilat</a></span><span class="sxs-lookup"><span data-stu-id="149ab-150"><a href="/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Sales orders mobile workspaces</a></span></span></li>
+<li><span data-ttu-id="149ab-151"><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Toimittajayhteistyön mobiilityötila</a></span><span class="sxs-lookup"><span data-stu-id="149ab-151"><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Vendor collaboration mobile workspace</a></span></span></li>
+<li><span data-ttu-id="149ab-152"><a href="/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace">Projektin aikamerkintöjen mobiilityötila</a></span><span class="sxs-lookup"><span data-stu-id="149ab-152"><a href="/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace">Project time entry mobile workspace</a></span></span></li>
+<li><span data-ttu-id="149ab-153"><a href="/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace">Kulujenhallinnan mobiilityötila</a></span><span class="sxs-lookup"><span data-stu-id="149ab-153"><a href="/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace">Expense management mobile workspace</a></span></span></li>
 
 </ul></td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td>Järjestelmänvalvoja</td>
-<td>Julkaise Microsoftin tarjoamat mobiilityötilat.</td>
-<td><a href="publish-mobile-workspace.md">Julkaise mobiilityötila</a>
-</td>
+<td><span data-ttu-id="149ab-154">3</span><span class="sxs-lookup"><span data-stu-id="149ab-154">3</span></span></td>
+<td><span data-ttu-id="149ab-155">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="149ab-155">System administrator</span></span></td>
+<td><span data-ttu-id="149ab-156">Julkaise Microsoftin tarjoamat mobiilityötilat.</span><span class="sxs-lookup"><span data-stu-id="149ab-156">Publish the mobile workspaces that are provided by Microsoft.</span></span></td>
+<td><span data-ttu-id="149ab-157"><a href="publish-mobile-workspace.md">Julkaise mobiilityötila</a>
+</span><span class="sxs-lookup"><span data-stu-id="149ab-157"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a>
+</span></span></td>
 </tr>
 <tr class="even">
-<td>4</td>
-<td>Kehittäjä tai riippumaton ohjelmistotoimittaja (ISV)</td>
-<td>Luo mukautettuja mobiilityötiloja mobiiliympäristön avulla.</td>
-<td><a href="platform/mobile-platform-home-page.md">Mobiiliympäristö</a></td>
+<td><span data-ttu-id="149ab-158">4</span><span class="sxs-lookup"><span data-stu-id="149ab-158">4</span></span></td>
+<td><span data-ttu-id="149ab-159">Kehittäjä tai riippumaton ohjelmistotoimittaja (ISV)</span><span class="sxs-lookup"><span data-stu-id="149ab-159">Developer or independent software vendor (ISV)</span></span></td>
+<td><span data-ttu-id="149ab-160">Luo mukautettuja mobiilityötiloja mobiiliympäristön avulla.</span><span class="sxs-lookup"><span data-stu-id="149ab-160">Use the mobile platform to create custom mobile workspaces.</span></span></td>
+<td><span data-ttu-id="149ab-161"><a href="platform/mobile-platform-home-page.md">Mobiiliympäristö</a></span><span class="sxs-lookup"><span data-stu-id="149ab-161"><a href="platform/mobile-platform-home-page.md">Mobile platform</a></span></span></td>
 </tr>
 <tr class="odd">
-<td>5</td>
-<td>riippumaton ohjelmistotoimittaja</td>
-<td>Luo käyttöön otettava paketti, joka sisältää mukautettuja mobiilityötiloja ja lataa paketti Microsoft Dynamicsin elinkaaripalveluihin (LCS).</td>
-<td><a href="../deployment/create-apply-deployable-package.md">Käyttöön otettavan paketin luominen</a></td>
+<td><span data-ttu-id="149ab-162">5</span><span class="sxs-lookup"><span data-stu-id="149ab-162">5</span></span></td>
+<td><span data-ttu-id="149ab-163">riippumaton ohjelmistotoimittaja</span><span class="sxs-lookup"><span data-stu-id="149ab-163">ISV</span></span></td>
+<td><span data-ttu-id="149ab-164">Luo käyttöön otettava paketti, joka sisältää mukautettuja mobiilityötiloja ja lataa paketti Microsoft Dynamicsin elinkaaripalveluihin (LCS).</span><span class="sxs-lookup"><span data-stu-id="149ab-164">Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</span></span></td>
+<td><span data-ttu-id="149ab-165"><a href="../deployment/create-apply-deployable-package.md">Käyttöön otettavan paketin luominen</a></span><span class="sxs-lookup"><span data-stu-id="149ab-165"><a href="../deployment/create-apply-deployable-package.md">Create a deployable package</a></span></span></td>
 </tr>
 <tr class="even">
-<td>6</td>
-<td>Järjestelmänvalvoja</td>
-<td>Avaa riippumattoman ohjelmistotoimittajan tarjoamat mukautetut työtilat sisältävä paketti.</td>
-<td><a href="../deployment/apply-deployable-package-system.md">Käyttöönotettavan paketin käyttäminen</a></td>
+<td><span data-ttu-id="149ab-166">6</span><span class="sxs-lookup"><span data-stu-id="149ab-166">6</span></span></td>
+<td><span data-ttu-id="149ab-167">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="149ab-167">System administrator</span></span></td>
+<td><span data-ttu-id="149ab-168">Avaa riippumattoman ohjelmistotoimittajan tarjoamat mukautetut työtilat sisältävä paketti.</span><span class="sxs-lookup"><span data-stu-id="149ab-168">Apply the deployable package that contains the custom workspaces that are provided by the independent software vendor (ISV).</span></span></td>
+<td><span data-ttu-id="149ab-169"><a href="../deployment/apply-deployable-package-system.md">Käyttöönotettavan paketin käyttäminen</a></span><span class="sxs-lookup"><span data-stu-id="149ab-169"><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package</a></span></span></td>
 </tr>
 <tr class="odd">
-<td>7</td>
-<td>Järjestelmänvalvoja</td>
-<td>Julkaise ohjelmistotoimittajan tarjoamat, mukautetut mobiilityötilat.</td>
-<td><a href="publish-mobile-workspace.md">Mobiilityötilan julkaisu</a></td>
+<td><span data-ttu-id="149ab-170">7</span><span class="sxs-lookup"><span data-stu-id="149ab-170">7</span></span></td>
+<td><span data-ttu-id="149ab-171">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="149ab-171">System administrator</span></span></td>
+<td><span data-ttu-id="149ab-172">Julkaise ohjelmistotoimittajan tarjoamat, mukautetut mobiilityötilat.</span><span class="sxs-lookup"><span data-stu-id="149ab-172">Publish the custom mobile workspaces that are provided by the ISV.</span></span></td>
+<td><span data-ttu-id="149ab-173"><a href="publish-mobile-workspace.md">Mobiilityötilan julkaisu</a></span><span class="sxs-lookup"><span data-stu-id="149ab-173"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a></span></span></td>
 </tr>
 <tr class="even">
-<td>8</td>
-<td>Käyttäjä</td>
-<td>Lataa ja asenna mobiilisovellus.</td>
+<td><span data-ttu-id="149ab-174">8</span><span class="sxs-lookup"><span data-stu-id="149ab-174">8</span></span></td>
+<td><span data-ttu-id="149ab-175">Käyttäjä</span><span class="sxs-lookup"><span data-stu-id="149ab-175">User</span></span></td>
+<td><span data-ttu-id="149ab-176">Lataa ja asenna mobiilisovellus.</span><span class="sxs-lookup"><span data-stu-id="149ab-176">Download and install the mobile app.</span></span></td>
 <td><ul>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">Android-puhelimet</a></li>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850663">IPhone-puhelimet</a></li></ul>
+<li><span data-ttu-id="149ab-177"><a href="https://go.microsoft.com/fwlink/?linkid=850662">Android-puhelimet</a></span><span class="sxs-lookup"><span data-stu-id="149ab-177"><a href="https://go.microsoft.com/fwlink/?linkid=850662">For Android phones</a></span></span></li>
+<li><span data-ttu-id="149ab-178"><a href="https://go.microsoft.com/fwlink/?linkid=850663">IPhone-puhelimet</a></span><span class="sxs-lookup"><span data-stu-id="149ab-178"><a href="https://go.microsoft.com/fwlink/?linkid=850663">For iPhones</a></span></span></li></ul>
 </td>
 </tr>
 <tr class="odd">
-<td>9</td>
-<td>Käyttäjä</td>
-<td>Kirjaudu mobiilisovellukseen ja käytä sitä. Sovellus sisältää järjestelmänvalvojan julkaisemat mobiilityötilat.</td>
-<td>Jos haluat tutustua Microsoftin toimittamaan mobiilityötilaluetteloon, lisätietoja on ohjeaiheessa <a href="mobile-workspaces-released.md">Äskettäin vapautetut mobiilityötilat</a>.
+<td><span data-ttu-id="149ab-179">9</span><span class="sxs-lookup"><span data-stu-id="149ab-179">9</span></span></td>
+<td><span data-ttu-id="149ab-180">Käyttäjä</span><span class="sxs-lookup"><span data-stu-id="149ab-180">User</span></span></td>
+<td><span data-ttu-id="149ab-181">Kirjaudu mobiilisovellukseen ja käytä sitä.</span><span class="sxs-lookup"><span data-stu-id="149ab-181">Sign in, and use the mobile app.</span></span> <span data-ttu-id="149ab-182">Sovellus sisältää järjestelmänvalvojan julkaisemat mobiilityötilat.</span><span class="sxs-lookup"><span data-stu-id="149ab-182">The app includes the mobile workspaces that have been published by the system administrator.</span></span></td>
+<td><span data-ttu-id="149ab-183">Jos haluat tutustua Microsoftin toimittamaan mobiilityötilaluetteloon, lisätietoja on ohjeaiheessa <a href="mobile-workspaces-released.md">Äskettäin vapautetut mobiilityötilat</a>.</span><span class="sxs-lookup"><span data-stu-id="149ab-183">To see a list of mobile workspaces that are provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span>
 </td>
 </tr>
 </tbody>

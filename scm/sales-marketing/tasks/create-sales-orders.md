@@ -16,56 +16,56 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 62276765e1cc76b2328a7b5b57bd18593d93e4ab
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1308490140542d5159358173cfe59079b9483bb4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-sales-orders"></a>luoda myyntitilauksia
+# <a name="create-sales-orders"></a><span data-ttu-id="1b041-103">luoda myyntitilauksia</span><span class="sxs-lookup"><span data-stu-id="1b041-103">Create sales orders</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä näytetään, miten myyntitilaus luodaan. Voit käyttää tätä menettelyä esittely-yrityksessä USMF. Myyntitilausten käsittelijä luo yleensä myyntitilaukset. 
+<span data-ttu-id="1b041-104">Tässä menettelyssä näytetään, miten myyntitilaus luodaan.</span><span class="sxs-lookup"><span data-stu-id="1b041-104">This procedure shows you how to create a sales order.</span></span> <span data-ttu-id="1b041-105">Voit käyttää tätä menettelyä esittely-yrityksessä USMF.</span><span class="sxs-lookup"><span data-stu-id="1b041-105">You can use the procedure in demo data company USMF.</span></span> <span data-ttu-id="1b041-106">Myyntitilausten käsittelijä luo yleensä myyntitilaukset.</span><span class="sxs-lookup"><span data-stu-id="1b041-106">Sales orders are typically created by a sales order processor.</span></span> 
 
 
 
 
-## <a name="enter-sales-order-header-details"></a>Syötä myyntitilauksen otsikon tiedot
-1. Siirry kohtaan Myynti ja markkinointi > Myyntitilaukset > Kaikki myyntitilaukset.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Asiakastili-kentässä avattavan valikon painike.
-4. Etsi asiakastietue luettelosta ja valitse se.
-    * Valitse tässä esimerkissä asiakasnumero US-004.  
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Valitse OK.
+## <a name="enter-sales-order-header-details"></a><span data-ttu-id="1b041-107">Syötä myyntitilauksen otsikon tiedot</span><span class="sxs-lookup"><span data-stu-id="1b041-107">Enter sales order header details</span></span>
+1. <span data-ttu-id="1b041-108">Siirry kohtaan Myynti ja markkinointi > Myyntitilaukset > Kaikki myyntitilaukset.</span><span class="sxs-lookup"><span data-stu-id="1b041-108">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
+2. <span data-ttu-id="1b041-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="1b041-109">Click New.</span></span>
+3. <span data-ttu-id="1b041-110">Avaa haku valitsemalla Asiakastili-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="1b041-110">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="1b041-111">Etsi asiakastietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="1b041-111">In the list, find and select the customer record.</span></span>
+    * <span data-ttu-id="1b041-112">Valitse tässä esimerkissä asiakasnumero US-004.</span><span class="sxs-lookup"><span data-stu-id="1b041-112">For this example, select customer number US-004.</span></span>  
+5. <span data-ttu-id="1b041-113">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="1b041-113">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="1b041-114">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="1b041-114">Click OK.</span></span>
 
-## <a name="enter-sales-order-line-details"></a>Syötä myyntitilausrivin tiedot
-    * Organisaation myymät tuotteet voivat olla dimensioiden erottelemia variantteja, kuten määritys, väri, koko ja tyyli. Tuotteet voidaan määrittää myös käyttämään varastodimensioita, kuten toimipaikkaa, varastoa ja kuormalava, sekä seurantadimensioita, kuten erää ja sarjanumeroita. Valitse dimensioiden määrittämisen jälkeen kyseisille tilausrivin dimensioille arvot. Voit parantaa tilaustenkäsittelyn tehokkuutta lisäämällä tilausruudukkoon vastaavien dimensioiden kentät.  
-1. Valitse myyntitilausrivi.
-2. Valitse Dimensiot.
-    * Tässä esimerkissä valitaan väri-, toimipaikka ja varastodimensio. Tässä valitut dimensiot näkyvät myyntitilausruudukossa. Jos haluat säilyttää valinnat, määritä Tallenna asetukset -vaihtoehdon arvoksi Kyllä.   
-3. Valitse OK.
-4. Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.
-5. Valitse tässä esimerkissä nimiketunnus T0004.
-6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-    * Jos nimike on osa myyntiluokkaa, nimikkeen nimi näkyy automaattisesti Myyntiluokka-kentässä.  
-    * Jos tuotedimensiokentissä on jo arvo, se on luultavasti kopioitu tuotetietueesta, jossa se on määritetty oletustuotedimensioksi. Voit muuttaa oletusarvoa milloin tahansa.   
-7. Avaa haku valitsemalla Väri-kentässä avattavan valikon painike.
-8. Etsi haluamasi tietue luettelosta ja valitse se.
-9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-10. Kirjoita numero Määrä-kenttään.
-    * Jos nimike myydään eri yksikköinä kuin missä se ostettiin, tuotettiin ja varastoitiin, ja myynnin mittayksikkö on määritetty tuotetietueessa, tämä arvo näkyy Yksikkö-kentässä. Voit muuttaa arvoa milloin tahansa.   
-    * Jos Toimipaikka-kentässä on jo arvo, se on kopioitu tilausotsikosta tai tuotteeseen liitetyistä tilausasetuksista. Voit muuttaa arvoa milloin tahansa. Jos kenttä on tyhjä, valitse arvo.   
-    * Jos Yksikön hinta -kentässä on jo arvo, se on kopioitu kelvollisesta kauppasopimuksesta tai tuotetietueesta. (Yksikköhinta voi olla peräisin myös myyntisopimuksesta, mutta myyntitilausten luontiprosessi myyntisopimuksista on erilainen kuin tässä esiteltävä prosessi.) Jos kenttä on tyhjä, syötä arvo.   
-    * Alennus-kenttä sisältää tuoteyksikkökohtaisen alennussumman. Voit laskea rivialennuksen kokonaissumman kertomalla alennuksen arvon rivin määrällä.    Jos Alennus-kentässä on jo arvo, se on kopioitu kelvollisesta kauppasopimuksesta. Syötä arvo, jos kenttä on tyhjä ja haluat antaa asiakkaalle rivialennuksen.  
-    * Alennusprosentti-kenttä sisältää prosenttiarvon, jonka mukaan rivin kokonaisbruttosummaa vähennetään.  Jos Alennusprosentti-kentässä on jo arvo, se on kopioitu kelvollisesta kauppasopimuksesta. Syötä arvo, jos kenttä on tyhjä ja haluat antaa asiakkaalle rivialennuksen.  
-    * Nettosumma-kentässä on arvo, joka on laskettu rivisumman ja alennusten mukaan oikaistun yksikköhinnan perusteella.  Lasketun arvon voi korvata toisella arvolla.  
+## <a name="enter-sales-order-line-details"></a><span data-ttu-id="1b041-115">Syötä myyntitilausrivin tiedot</span><span class="sxs-lookup"><span data-stu-id="1b041-115">Enter sales order line details</span></span>
+    * <span data-ttu-id="1b041-116">Organisaation myymät tuotteet voivat olla dimensioiden erottelemia variantteja, kuten määritys, väri, koko ja tyyli.</span><span class="sxs-lookup"><span data-stu-id="1b041-116">The products sold by your organization may come in variants differentiated by dimensions, such as configuration, color, size, and style.</span></span> <span data-ttu-id="1b041-117">Tuotteet voidaan määrittää myös käyttämään varastodimensioita, kuten toimipaikkaa, varastoa ja kuormalava, sekä seurantadimensioita, kuten erää ja sarjanumeroita.</span><span class="sxs-lookup"><span data-stu-id="1b041-117">Also, products may be set up to use storage dimensions, such as site, warehouse, and pallet, and racking dimensions, such as batch and serial numbers.</span></span> <span data-ttu-id="1b041-118">Valitse dimensioiden määrittämisen jälkeen kyseisille tilausrivin dimensioille arvot.</span><span class="sxs-lookup"><span data-stu-id="1b041-118">When these dimensions are assigned, you must select the values for those dimensions on the order line.</span></span> <span data-ttu-id="1b041-119">Voit parantaa tilaustenkäsittelyn tehokkuutta lisäämällä tilausruudukkoon vastaavien dimensioiden kentät.</span><span class="sxs-lookup"><span data-stu-id="1b041-119">To improve order entry efficiency, you may want to add the respective dimension fields to the order grid.</span></span>  
+1. <span data-ttu-id="1b041-120">Valitse myyntitilausrivi.</span><span class="sxs-lookup"><span data-stu-id="1b041-120">Click Sales order line.</span></span>
+2. <span data-ttu-id="1b041-121">Valitse Dimensiot.</span><span class="sxs-lookup"><span data-stu-id="1b041-121">Click Dimensions.</span></span>
+    * <span data-ttu-id="1b041-122">Tässä esimerkissä valitaan väri-, toimipaikka ja varastodimensio.</span><span class="sxs-lookup"><span data-stu-id="1b041-122">For this example, select the Color, Site and Warehouse dimensions.</span></span> <span data-ttu-id="1b041-123">Tässä valitut dimensiot näkyvät myyntitilausruudukossa.</span><span class="sxs-lookup"><span data-stu-id="1b041-123">The dimensions you select here will appear in the sales order grid.</span></span> <span data-ttu-id="1b041-124">Jos haluat säilyttää valinnat, määritä Tallenna asetukset -vaihtoehdon arvoksi Kyllä.</span><span class="sxs-lookup"><span data-stu-id="1b041-124">If you want your selections to persist, set the Save setup option to Yes.</span></span>   
+3. <span data-ttu-id="1b041-125">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="1b041-125">Click OK.</span></span>
+4. <span data-ttu-id="1b041-126">Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="1b041-126">In the Item number field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="1b041-127">Valitse tässä esimerkissä nimiketunnus T0004.</span><span class="sxs-lookup"><span data-stu-id="1b041-127">For this example, select item number T0004.</span></span>
+6. <span data-ttu-id="1b041-128">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="1b041-128">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="1b041-129">Jos nimike on osa myyntiluokkaa, nimikkeen nimi näkyy automaattisesti Myyntiluokka-kentässä.</span><span class="sxs-lookup"><span data-stu-id="1b041-129">If the item is part of a sales category, the item name will automatically appear in the Sales category field.</span></span>  
+    * <span data-ttu-id="1b041-130">Jos tuotedimensiokentissä on jo arvo, se on luultavasti kopioitu tuotetietueesta, jossa se on määritetty oletustuotedimensioksi.</span><span class="sxs-lookup"><span data-stu-id="1b041-130">If product dimension fields already contain a value, this is because the value was copied from the product record where it is defined as a default product dimension.</span></span> <span data-ttu-id="1b041-131">Voit muuttaa oletusarvoa milloin tahansa.</span><span class="sxs-lookup"><span data-stu-id="1b041-131">You can change the default value at any time.</span></span>   
+7. <span data-ttu-id="1b041-132">Avaa haku valitsemalla Väri-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="1b041-132">In the Color field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="1b041-133">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="1b041-133">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="1b041-134">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="1b041-134">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="1b041-135">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="1b041-135">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="1b041-136">Jos nimike myydään eri yksikköinä kuin missä se ostettiin, tuotettiin ja varastoitiin, ja myynnin mittayksikkö on määritetty tuotetietueessa, tämä arvo näkyy Yksikkö-kentässä.</span><span class="sxs-lookup"><span data-stu-id="1b041-136">If the item is sold in different units than when it’s purchased, produced, and stored, and a sales unit of measure is set on the product record, this value will be shown in the Unit field.</span></span> <span data-ttu-id="1b041-137">Voit muuttaa arvoa milloin tahansa.</span><span class="sxs-lookup"><span data-stu-id="1b041-137">You can change the value at any time.</span></span>   
+    * <span data-ttu-id="1b041-138">Jos Toimipaikka-kentässä on jo arvo, se on kopioitu tilausotsikosta tai tuotteeseen liitetyistä tilausasetuksista.</span><span class="sxs-lookup"><span data-stu-id="1b041-138">If the Site field already contains a value, the value was copied from the order header or from the order settings that are associated with the product.</span></span> <span data-ttu-id="1b041-139">Voit muuttaa arvoa milloin tahansa.</span><span class="sxs-lookup"><span data-stu-id="1b041-139">You can change the value at any time.</span></span> <span data-ttu-id="1b041-140">Jos kenttä on tyhjä, valitse arvo.</span><span class="sxs-lookup"><span data-stu-id="1b041-140">If the field is empty, select a value.</span></span>   
+    * <span data-ttu-id="1b041-141">Jos Yksikön hinta -kentässä on jo arvo, se on kopioitu kelvollisesta kauppasopimuksesta tai tuotetietueesta.</span><span class="sxs-lookup"><span data-stu-id="1b041-141">If the Unit price field already contains a value, the value was copied from a valid trade agreement, or from the product record.</span></span> <span data-ttu-id="1b041-142">(Yksikköhinta voi olla peräisin myös myyntisopimuksesta, mutta myyntitilausten luontiprosessi myyntisopimuksista on erilainen kuin tässä esiteltävä prosessi.) Jos kenttä on tyhjä, syötä arvo.</span><span class="sxs-lookup"><span data-stu-id="1b041-142">(The unit price can also originate from a sales agreement, but the process for creating sales orders from sales agreements is different to the one shown here.) If the field is empty, enter a value.</span></span>   
+    * <span data-ttu-id="1b041-143">Alennus-kenttä sisältää tuoteyksikkökohtaisen alennussumman.</span><span class="sxs-lookup"><span data-stu-id="1b041-143">The Discount field contains a discount amount per product unit.</span></span> <span data-ttu-id="1b041-144">Voit laskea rivialennuksen kokonaissumman kertomalla alennuksen arvon rivin määrällä.</span><span class="sxs-lookup"><span data-stu-id="1b041-144">To calculate the total line discount amount, the discount value is multiplied by line quantity.</span></span>    <span data-ttu-id="1b041-145">Jos Alennus-kentässä on jo arvo, se on kopioitu kelvollisesta kauppasopimuksesta.</span><span class="sxs-lookup"><span data-stu-id="1b041-145">If the Discount field already contains a value, the value was copied from a valid trade agreement.</span></span> <span data-ttu-id="1b041-146">Syötä arvo, jos kenttä on tyhjä ja haluat antaa asiakkaalle rivialennuksen.</span><span class="sxs-lookup"><span data-stu-id="1b041-146">If the field is empty, and you want to give the customer a line discount, enter a value.</span></span>  
+    * <span data-ttu-id="1b041-147">Alennusprosentti-kenttä sisältää prosenttiarvon, jonka mukaan rivin kokonaisbruttosummaa vähennetään.</span><span class="sxs-lookup"><span data-stu-id="1b041-147">The Discount percent field contains a percentage value by which the total line gross amount is to be reduced.</span></span>  <span data-ttu-id="1b041-148">Jos Alennusprosentti-kentässä on jo arvo, se on kopioitu kelvollisesta kauppasopimuksesta.</span><span class="sxs-lookup"><span data-stu-id="1b041-148">If the Discount percent field already contains a value, it was copied from a valid trade agreement.</span></span> <span data-ttu-id="1b041-149">Syötä arvo, jos kenttä on tyhjä ja haluat antaa asiakkaalle rivialennuksen.</span><span class="sxs-lookup"><span data-stu-id="1b041-149">If the field is empty, and you want to give the customer a line discount, enter a value.</span></span>  
+    * <span data-ttu-id="1b041-150">Nettosumma-kentässä on arvo, joka on laskettu rivisumman ja alennusten mukaan oikaistun yksikköhinnan perusteella.</span><span class="sxs-lookup"><span data-stu-id="1b041-150">The Net amount field contains a value that is calculated based on the line's quantity and unit price adjusted by discounts.</span></span>  <span data-ttu-id="1b041-151">Lasketun arvon voi korvata toisella arvolla.</span><span class="sxs-lookup"><span data-stu-id="1b041-151">You can override the calculated value to a different one.</span></span>  
 
-## <a name="review-the-order-totals"></a>Tarkastele tilauksen kokonaissummia
-1. Valitse toimintoruudussa Myyntitilaus.
-2. Valitse Summat.
-    * Summat-sivulla näkyvät koko tilauksen tiedot. Näkyvillä olevia tietoja ovat esimerkiksi välisumma, joka on lopullisille rivialennuksille oikaistujen kaikkien rivin nettosummien summa, laskun kokonaissumma, joka on lopullisille tilaustason alennukselle oikaistu kokonaisvälisumma, kulut, arvonlisävero ja asiakkaan luottorajan tilanne.  Laskun summa on asiakkaan laskuasiakirjassa näkyvä summa.  
-3. Valitse OK.
+## <a name="review-the-order-totals"></a><span data-ttu-id="1b041-152">Tarkastele tilauksen kokonaissummia</span><span class="sxs-lookup"><span data-stu-id="1b041-152">Review the order totals</span></span>
+1. <span data-ttu-id="1b041-153">Valitse toimintoruudussa Myyntitilaus.</span><span class="sxs-lookup"><span data-stu-id="1b041-153">On the Action Pane, click Sales order.</span></span>
+2. <span data-ttu-id="1b041-154">Valitse Summat.</span><span class="sxs-lookup"><span data-stu-id="1b041-154">Click Totals.</span></span>
+    * <span data-ttu-id="1b041-155">Summat-sivulla näkyvät koko tilauksen tiedot.</span><span class="sxs-lookup"><span data-stu-id="1b041-155">The Totals page displays details about the entire order.</span></span> <span data-ttu-id="1b041-156">Näkyvillä olevia tietoja ovat esimerkiksi välisumma, joka on lopullisille rivialennuksille oikaistujen kaikkien rivin nettosummien summa, laskun kokonaissumma, joka on lopullisille tilaustason alennukselle oikaistu kokonaisvälisumma, kulut, arvonlisävero ja asiakkaan luottorajan tilanne.</span><span class="sxs-lookup"><span data-stu-id="1b041-156">This includes the subtotal amount, which is a sum of all line net amounts adjusted for eventual line discounts, the total invoice amount, which is a subtotal amount adjusted for eventual order-level discount, charges, and sales tax, the customer credit limit situation, and more.</span></span>  <span data-ttu-id="1b041-157">Laskun summa on asiakkaan laskuasiakirjassa näkyvä summa.</span><span class="sxs-lookup"><span data-stu-id="1b041-157">The invoice amount is the amount that will appear on the customer's invoice document.</span></span>  
+3. <span data-ttu-id="1b041-158">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="1b041-158">Click OK.</span></span>
 
 

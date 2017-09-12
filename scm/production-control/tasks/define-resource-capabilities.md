@@ -17,35 +17,35 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 4a7d342eeb16fd76f2dde58151bfc7973de76e2d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 99c230c0e6a580f77d863b6f0be298615966c479
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-resource-capabilities"></a>Määritä resurssin ominaisuudet
+# <a name="define-resource-capabilities"></a><span data-ttu-id="74255-103">Määritä resurssin ominaisuudet</span><span class="sxs-lookup"><span data-stu-id="74255-103">Define resource capabilities</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Resurssin ominaisuudet kertovat, mitä operatiiviset resurssit voivat tehdä. Ajoituksen aikana kunkin työn ja työvaiheen vaatimukset kohdistetaan käytettävissä olevien resurssien ominaisuuksiin. Tämä tehtävän ohjaus auttaa resurssin ominaisuuden luomisessa ja ominaisuuden liittämisessä resurssiin. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.
+<span data-ttu-id="74255-104">Resurssin ominaisuudet kertovat, mitä operatiiviset resurssit voivat tehdä.</span><span class="sxs-lookup"><span data-stu-id="74255-104">Resource capabilities describe what operations resources can do.</span></span> <span data-ttu-id="74255-105">Ajoituksen aikana kunkin työn ja työvaiheen vaatimukset kohdistetaan käytettävissä olevien resurssien ominaisuuksiin.</span><span class="sxs-lookup"><span data-stu-id="74255-105">During scheduling, the requirements of each job and operation are matched against the capabilities of the available resources.</span></span> <span data-ttu-id="74255-106">Tämä tehtävän ohjaus auttaa resurssin ominaisuuden luomisessa ja ominaisuuden liittämisessä resurssiin.</span><span class="sxs-lookup"><span data-stu-id="74255-106">This task guide will help you create a resource capability and assign it to a resource.</span></span> <span data-ttu-id="74255-107">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="74255-107">The demo data company used to create this task is USMF.</span></span>
 
 
-## <a name="create-a-resource-capability"></a>Resurssin ominaisuuden luominen
-1. Siirry Resurssin ominaisuudet -kohtaan.
-2. Valitse Uusi.
-3. Kirjoita resurssin ominaisuuden tunnus Ominaisuus-kenttään.
-    * Ominaisuuden tunnuksen avulla voit määrittää annetun työvaiheen ne resurssit, joilla on oltava tämä ominaisuus työvaiheen suorittamista varten.  
-4. Syötä ominaisuuden kuvaus Kuvaus-kenttään.
+## <a name="create-a-resource-capability"></a><span data-ttu-id="74255-108">Resurssin ominaisuuden luominen</span><span class="sxs-lookup"><span data-stu-id="74255-108">Create a resource capability</span></span>
+1. <span data-ttu-id="74255-109">Siirry Resurssin ominaisuudet -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="74255-109">Go to Resource capabilities.</span></span>
+2. <span data-ttu-id="74255-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="74255-110">Click New.</span></span>
+3. <span data-ttu-id="74255-111">Kirjoita resurssin ominaisuuden tunnus Ominaisuus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="74255-111">In the Capability field, type the ID of the resource capability.</span></span>
+    * <span data-ttu-id="74255-112">Ominaisuuden tunnuksen avulla voit määrittää annetun työvaiheen ne resurssit, joilla on oltava tämä ominaisuus työvaiheen suorittamista varten.</span><span class="sxs-lookup"><span data-stu-id="74255-112">For a given operation, you use the capability ID to specify that resources must have this capability to perform the operation.</span></span>  
+4. <span data-ttu-id="74255-113">Syötä ominaisuuden kuvaus Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="74255-113">In the Description field, enter a description of the capability.</span></span>
 
-## <a name="assign-capability-to-a-resource"></a>Ominaisuuden määrittäminen resurssille
-1. ValitseLisää.
-2. Kirjoita resurssin tunnus Resurssi-kenttään.
-    * Resurssin ominaisuus voidaan määrittää yhteen tai useaan resurssiin.  
-3. Syötä päivämäärä Päättyminen-kenttään.
-    * Tämän kentän avulla voit määrittää resurssin, jolla on ominaisuus vain rajoitetun ajan.  
-4. Syötä numero Prioriteetti-kenttään.
-    * Töiden ja työvaiheiden ajoittamisen yhteydessä voit määrittää, valitaanko resurssit prioriteetin mukaan. Jos tämä on valittu ja usea resurssi voi suorittaa työn tai työvaiheen vaadittuun päivämäärään mennessä, valitaan resurssi, jolla on liittyvän pakollisen ominaisuuden alhaisin prioriteetti.  
-5. Syötä numero Taso-kenttään.
-    * Kun määrität, että työ tai työvaihe vaatii tietyn ominaisuuden, voit määrittää myös vaadittavan vähimmäistason. Ominaisuuden tason avulla voit erotella resurssit, jotka voivat suorittaa saman työn, mutta jotka käyttävät erilaista nopeutta, voimaa jne.  
+## <a name="assign-capability-to-a-resource"></a><span data-ttu-id="74255-114">Ominaisuuden määrittäminen resurssille</span><span class="sxs-lookup"><span data-stu-id="74255-114">Assign capability to a resource</span></span>
+1. <span data-ttu-id="74255-115">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="74255-115">Click Add.</span></span>
+2. <span data-ttu-id="74255-116">Kirjoita resurssin tunnus Resurssi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="74255-116">In the Resource field, type the ID of the resource.</span></span>
+    * <span data-ttu-id="74255-117">Resurssin ominaisuus voidaan määrittää yhteen tai useaan resurssiin.</span><span class="sxs-lookup"><span data-stu-id="74255-117">A resource capability can be assigned to one or more resources.</span></span>  
+3. <span data-ttu-id="74255-118">Syötä päivämäärä Päättyminen-kenttään.</span><span class="sxs-lookup"><span data-stu-id="74255-118">In the Expiration field, enter a date.</span></span>
+    * <span data-ttu-id="74255-119">Tämän kentän avulla voit määrittää resurssin, jolla on ominaisuus vain rajoitetun ajan.</span><span class="sxs-lookup"><span data-stu-id="74255-119">You can use this field to specify that a resource has the capability for only a limited time.</span></span>  
+4. <span data-ttu-id="74255-120">Syötä numero Prioriteetti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="74255-120">In the Priority field, enter a number.</span></span>
+    * <span data-ttu-id="74255-121">Töiden ja työvaiheiden ajoittamisen yhteydessä voit määrittää, valitaanko resurssit prioriteetin mukaan.</span><span class="sxs-lookup"><span data-stu-id="74255-121">When you schedule jobs and operations, you can specify whether to select resources by priority.</span></span> <span data-ttu-id="74255-122">Jos tämä on valittu ja usea resurssi voi suorittaa työn tai työvaiheen vaadittuun päivämäärään mennessä, valitaan resurssi, jolla on liittyvän pakollisen ominaisuuden alhaisin prioriteetti.</span><span class="sxs-lookup"><span data-stu-id="74255-122">If you choose to do this, and more than one resource can perform the job or operation by the requested date, the resource that has the lowest priority with respect to the required capability is selected.</span></span>  
+5. <span data-ttu-id="74255-123">Syötä numero Taso-kenttään.</span><span class="sxs-lookup"><span data-stu-id="74255-123">In the Level field, enter a number.</span></span>
+    * <span data-ttu-id="74255-124">Kun määrität, että työ tai työvaihe vaatii tietyn ominaisuuden, voit määrittää myös vaadittavan vähimmäistason.</span><span class="sxs-lookup"><span data-stu-id="74255-124">When you specify that a job or operation requires a particular capability, you can also specify the minimum level that is required.</span></span> <span data-ttu-id="74255-125">Ominaisuuden tason avulla voit erotella resurssit, jotka voivat suorittaa saman työn, mutta jotka käyttävät erilaista nopeutta, voimaa jne.</span><span class="sxs-lookup"><span data-stu-id="74255-125">Use the capability level to differentiate resources that can perform the same job, but at different speeds, strengths, sizes, and so on.</span></span>  
 
 

@@ -16,46 +16,46 @@ ms.custom: 213984
 ms.assetid: 44cac104-c36c-4371-a992-9178b3fd65e9
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 701a8b2b94fecedcddada46ad6438448254c8e77
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 84ae84a567e5f45bc0b20538d04917c6feb21336
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="delivery-schedules"></a>Toimitusaikataulut
+# <a name="delivery-schedules"></a><span data-ttu-id="3aa62-103">Toimitusaikataulut</span><span class="sxs-lookup"><span data-stu-id="3aa62-103">Delivery schedules</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Toimitusaikataulujen avulla voit seurata tilausrivin määrää, kun käytät useita toimituksia yksittäistä myyntitilausta, myyntitarjousta tai ostotilausta varten.
+<span data-ttu-id="3aa62-104">Toimitusaikataulujen avulla voit seurata tilausrivin määrää, kun käytät useita toimituksia yksittäistä myyntitilausta, myyntitarjousta tai ostotilausta varten.</span><span class="sxs-lookup"><span data-stu-id="3aa62-104">Delivery schedules allow you to track order line quantity when you are using multiple deliveries for a single sales order, sales quotation, or purchase order.</span></span>
 
-Toimitusaikataulua käytetään, kun tilauksen kokonaismäärä tai tarjousrivi pitää toimittaa useissa lähetyksissä. Toimitusrivit edustavat yksittäisiä lähetyksiä. Jos toimitusrivejä on kaksi tai useampi, ne muodostavat yhden toimitusaikataulun. Toimitusriveillä voi olla eri toimituspäiviä, määriä, toimitustapoja ja varastodimensioita, kuten toimipaikka ja varasto.  
+<span data-ttu-id="3aa62-105">Toimitusaikataulua käytetään, kun tilauksen kokonaismäärä tai tarjousrivi pitää toimittaa useissa lähetyksissä.</span><span class="sxs-lookup"><span data-stu-id="3aa62-105">Use a delivery schedule when the total quantity on an order or quotation line must be delivered in multiple shipments.</span></span> <span data-ttu-id="3aa62-106">Toimitusrivit edustavat yksittäisiä lähetyksiä.</span><span class="sxs-lookup"><span data-stu-id="3aa62-106">Individual shipments are represented by delivery lines.</span></span> <span data-ttu-id="3aa62-107">Jos toimitusrivejä on kaksi tai useampi, ne muodostavat yhden toimitusaikataulun.</span><span class="sxs-lookup"><span data-stu-id="3aa62-107">Two or more delivery lines make up one delivery schedule.</span></span> <span data-ttu-id="3aa62-108">Toimitusriveillä voi olla eri toimituspäiviä, määriä, toimitustapoja ja varastodimensioita, kuten toimipaikka ja varasto.</span><span class="sxs-lookup"><span data-stu-id="3aa62-108">The delivery lines can have different delivery dates, quantities, modes of delivery, and storage dimensions, such as site and warehouse.</span></span>  
 
-**Esimerkki toimitusaikataulusta**
+<span data-ttu-id="3aa62-109">**Esimerkki toimitusaikataulusta**</span><span class="sxs-lookup"><span data-stu-id="3aa62-109">**Example of a delivery schedule**</span></span>
 
 |                                   |                                          |
 |-----------------------------------|------------------------------------------|
-| Kokonaistilaus (alkuperäinen tilausrivi) | 600 tuolia                               |
-| Pyydetty toimitusaikataulu       | 100 tuolia kuukaudessa                     |
-| Pyydetty toimituksen aikajakso | 6 kuukautta, kunkin kuukauden ensimmäisenä päivänä |
+| <span data-ttu-id="3aa62-110">Kokonaistilaus (alkuperäinen tilausrivi)</span><span class="sxs-lookup"><span data-stu-id="3aa62-110">Total order (original order line)</span></span> | <span data-ttu-id="3aa62-111">600 tuolia</span><span class="sxs-lookup"><span data-stu-id="3aa62-111">600 chairs</span></span>                               |
+| <span data-ttu-id="3aa62-112">Pyydetty toimitusaikataulu</span><span class="sxs-lookup"><span data-stu-id="3aa62-112">Requested delivery schedule</span></span>       | <span data-ttu-id="3aa62-113">100 tuolia kuukaudessa</span><span class="sxs-lookup"><span data-stu-id="3aa62-113">100 chairs per month</span></span>                     |
+| <span data-ttu-id="3aa62-114">Pyydetty toimituksen aikajakso</span><span class="sxs-lookup"><span data-stu-id="3aa62-114">Requested time frame for delivery</span></span> | <span data-ttu-id="3aa62-115">6 kuukautta, kunkin kuukauden ensimmäisenä päivänä</span><span class="sxs-lookup"><span data-stu-id="3aa62-115">6 months, on the first day of each month</span></span> |
 
-Tässä skenaariossa asiakas pyytää toimittamaan 600 tuolia 100 tuolin erissä kuuden kuukauden ajan. Voit seurata toimitusvaatimuksia luomalla toimitusaikataulun. Luo Toimitusaikataulu-sivulla kuusi erillistä toimitusriviä. Kullakin toimitusrivillä on 100 tuolia sekä niiden toimituspäivämäärät. Tässä tapauksessa kullekin riville luodaan vastakirjaus kuukauden ensimmäisenä päivänä kuutena peräkkäisenä kuukautena.  
+<span data-ttu-id="3aa62-116">Tässä skenaariossa asiakas pyytää toimittamaan 600 tuolia 100 tuolin erissä kuuden kuukauden ajan.</span><span class="sxs-lookup"><span data-stu-id="3aa62-116">In this scenario, the customer requests delivery of 600 chairs in batches of 100 chairs over a period of six months.</span></span> <span data-ttu-id="3aa62-117">Voit seurata toimitusvaatimuksia luomalla toimitusaikataulun.</span><span class="sxs-lookup"><span data-stu-id="3aa62-117">To keep track of the delivery requirements, you create a delivery schedule.</span></span> <span data-ttu-id="3aa62-118">Luo Toimitusaikataulu-sivulla kuusi erillistä toimitusriviä.</span><span class="sxs-lookup"><span data-stu-id="3aa62-118">On the delivery schedule page, you create six separate delivery lines.</span></span> <span data-ttu-id="3aa62-119">Kullakin toimitusrivillä on 100 tuolia sekä niiden toimituspäivämäärät.</span><span class="sxs-lookup"><span data-stu-id="3aa62-119">Each delivery line contains 100 chairs and indicates the delivery date for those 100 chairs.</span></span> <span data-ttu-id="3aa62-120">Tässä tapauksessa kullekin riville luodaan vastakirjaus kuukauden ensimmäisenä päivänä kuutena peräkkäisenä kuukautena.</span><span class="sxs-lookup"><span data-stu-id="3aa62-120">In this case, each line is offset on the first of the month for six consecutive months.</span></span>  
 
-Kun luot toimitusaikataulun, alkuperäisen tilausrivin tyypiksi vaihtuu automaattisesti **Tilausrivi ja monta toimitusta**. Tämäntyyppistä riviä kutsutaan kaupalliseksi riviksi, ja se on merkitty kuvakkeella. Toimitusrivi on merkitty eri kuvakkeella. Jos muutat toimitusrivillä olevaa määrää, kaupalliselle riville päivittyy toimitusaikataulun kokonaismäärä. Jos kauppasopimuksessa tilaukselle on määritetty kokonaisalennus, toimitusaikataulu varmistaa, että tilaus on oikeutettu kokonaisalennukseen, vaikka se jaettaisiinkin erillisiin toimituksiin.  
+<span data-ttu-id="3aa62-121">Kun luot toimitusaikataulun, alkuperäisen tilausrivin tyypiksi vaihtuu automaattisesti **Tilausrivi ja monta toimitusta**.</span><span class="sxs-lookup"><span data-stu-id="3aa62-121">When you create a delivery schedule, the type of the original order line is automatically changed to **Order line with multiple deliveries**.</span></span> <span data-ttu-id="3aa62-122">Tämäntyyppistä riviä kutsutaan kaupalliseksi riviksi, ja se on merkitty kuvakkeella.</span><span class="sxs-lookup"><span data-stu-id="3aa62-122">A line of this type is referred to as a commercial line and is marked by an icon.</span></span> <span data-ttu-id="3aa62-123">Toimitusrivi on merkitty eri kuvakkeella.</span><span class="sxs-lookup"><span data-stu-id="3aa62-123">The delivery line is marked by a different icon.</span></span> <span data-ttu-id="3aa62-124">Jos muutat toimitusrivillä olevaa määrää, kaupalliselle riville päivittyy toimitusaikataulun kokonaismäärä.</span><span class="sxs-lookup"><span data-stu-id="3aa62-124">If you change a quantity on a delivery line, the commercial line is updated to the total quantity of the delivery schedule.</span></span> <span data-ttu-id="3aa62-125">Jos kauppasopimuksessa tilaukselle on määritetty kokonaisalennus, toimitusaikataulu varmistaa, että tilaus on oikeutettu kokonaisalennukseen, vaikka se jaettaisiinkin erillisiin toimituksiin.</span><span class="sxs-lookup"><span data-stu-id="3aa62-125">If a trade agreement has defined a total discount for the order, the delivery schedule ensures that your order is eligible for the total order discount, even when the order is split into separate deliveries.</span></span>  
 
-Tilaukset, joilla on toimitusaikataulu, käsitellään toimitusrivien perusteella. Käsittely sisältää pakkausluetteloiden, tuotteen vastaanottojen ja laskutuksen kirjaamisen.  
+<span data-ttu-id="3aa62-126">Tilaukset, joilla on toimitusaikataulu, käsitellään toimitusrivien perusteella.</span><span class="sxs-lookup"><span data-stu-id="3aa62-126">Orders that have a delivery schedule are processed against the delivery lines.</span></span> <span data-ttu-id="3aa62-127">Käsittely sisältää pakkausluetteloiden, tuotteen vastaanottojen ja laskutuksen kirjaamisen.</span><span class="sxs-lookup"><span data-stu-id="3aa62-127">Processing includes the posting of packing slips, product receipts, and invoicing.</span></span>  
 
-Asiakirjatulosteissa tilauksista ja tarjouksista, joilla on toimitusaikataulu, näkyvät vain toimitusrivit. Niillä ei näy alkuperäisiä rivejä (kaupallisia rivejä). **Huomautus:** Lisäksi näkyvät vain toimitusrivit, kun suoritat seuraavat toiminnot:
+<span data-ttu-id="3aa62-128">Asiakirjatulosteissa tilauksista ja tarjouksista, joilla on toimitusaikataulu, näkyvät vain toimitusrivit.</span><span class="sxs-lookup"><span data-stu-id="3aa62-128">Document printouts of orders and quotations that have a delivery schedule show only the delivery lines.</span></span> <span data-ttu-id="3aa62-129">Niillä ei näy alkuperäisiä rivejä (kaupallisia rivejä).</span><span class="sxs-lookup"><span data-stu-id="3aa62-129">They don't show the original lines (commercial lines).</span></span> <span data-ttu-id="3aa62-130">**Huomautus:** Lisäksi näkyvät vain toimitusrivit, kun suoritat seuraavat toiminnot:</span><span class="sxs-lookup"><span data-stu-id="3aa62-130">**Note:** In addition, only the delivery lines are shown when you perform these actions:</span></span>
 
--   Julkaise
--   kopioit sivuja
--   selaat luettelosivuja ja raportteja.
+-   <span data-ttu-id="3aa62-131">Julkaise</span><span class="sxs-lookup"><span data-stu-id="3aa62-131">Post</span></span>
+-   <span data-ttu-id="3aa62-132">kopioit sivuja</span><span class="sxs-lookup"><span data-stu-id="3aa62-132">Copy pages</span></span>
+-   <span data-ttu-id="3aa62-133">selaat luettelosivuja ja raportteja.</span><span class="sxs-lookup"><span data-stu-id="3aa62-133">Browse list pages and reports</span></span>
 
-Kun vahvistat myyntitarjouksia, tuloksena muodostuvissa myyntitilauksissa näkyy koko toimitusaikataulu, myös tilausrivit, joihin sisältyy useita toimituksia. Lisäksi koko toimitusaikataulu näkyy kaikilla tärkeimmillä sivuilla, kuten myyntitilauksissa, myyntitarjouksissa ja ostotilauksissa.
+<span data-ttu-id="3aa62-134">Kun vahvistat myyntitarjouksia, tuloksena muodostuvissa myyntitilauksissa näkyy koko toimitusaikataulu, myös tilausrivit, joihin sisältyy useita toimituksia.</span><span class="sxs-lookup"><span data-stu-id="3aa62-134">When you confirm sales quotations, the resulting sales orders show the whole delivery schedule, even the order lines that have multiple deliveries.</span></span> <span data-ttu-id="3aa62-135">Lisäksi koko toimitusaikataulu näkyy kaikilla tärkeimmillä sivuilla, kuten myyntitilauksissa, myyntitarjouksissa ja ostotilauksissa.</span><span class="sxs-lookup"><span data-stu-id="3aa62-135">In addition, the whole delivery schedule is shown on all the major pages, such as sales orders, sales quotations, and purchase orders.</span></span>
 
 
 

@@ -19,124 +19,124 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f5d75794146eada9b9f439d99ad272f5af8db53b
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 5604f806eed81c60dfcae7cb7b1a22bba25aa454
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Käteisalennuksen käsittely liikamaksuille
+# <a name="handling-cash-discounts-for-overpayments"></a><span data-ttu-id="46779-103">Käteisalennuksen käsittely liikamaksuille</span><span class="sxs-lookup"><span data-stu-id="46779-103">Handling cash discounts for overpayments</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tämän artikkelin skenaariossa kerrotaan, miten maksua käsitellään, kun asiakkaalle annetaan käteisalennus, mutta tämä maksaa liikaa. 
+<span data-ttu-id="46779-104">Tämän artikkelin skenaariossa kerrotaan, miten maksua käsitellään, kun asiakkaalle annetaan käteisalennus, mutta tämä maksaa liikaa.</span><span class="sxs-lookup"><span data-stu-id="46779-104">This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays.</span></span> 
 
-Laskua on maksettu liikaa, kun maksusumma on suurempi kuin laskun summa, josta on vähennetty käteisalennus. Määrittääksesi miten käteisalennuksen erotus käsitellään, kun laskua on maksettu liikaa, käytä **Käteisalennuksen hallinta** ja **Liikaa tai liian vähän maksetun summan enimmäismäärä** -kenttiä **Myyntireskontran parametrit** -sivulla. Seuraavassa esimerkissä asiakas on maksanut laskussa liikaa 0,50.
+<span data-ttu-id="46779-105">Laskua on maksettu liikaa, kun maksusumma on suurempi kuin laskun summa, josta on vähennetty käteisalennus.</span><span class="sxs-lookup"><span data-stu-id="46779-105">An invoice is considered overpaid when the payment amount is more than the invoice amount minus the cash discount.</span></span> <span data-ttu-id="46779-106">Määrittääksesi miten käteisalennuksen erotus käsitellään, kun laskua on maksettu liikaa, käytä **Käteisalennuksen hallinta** ja **Liikaa tai liian vähän maksetun summan enimmäismäärä** -kenttiä **Myyntireskontran parametrit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="46779-106">To specify how an obtainable cash discount difference is handled when an invoice is overpaid, use the **Cash discount administration** and **Maximum overpayment or underpayment** fields on the **Accounts receivable parameters** page.</span></span> <span data-ttu-id="46779-107">Seuraavassa esimerkissä asiakas on maksanut laskussa liikaa 0,50.</span><span class="sxs-lookup"><span data-stu-id="46779-107">In the following example, the customer has overpaid the invoice by 0.50.</span></span>
 
-| Laskun kokonaissumma | Käteisalennus saatavilla | Maksettava summa, joka sisältää käteisalennuksen | Summa, jonka asiakas todellisuudessa maksaa |
+| <span data-ttu-id="46779-108">Laskun kokonaissumma</span><span class="sxs-lookup"><span data-stu-id="46779-108">Invoice total</span></span> | <span data-ttu-id="46779-109">Käteisalennus saatavilla</span><span class="sxs-lookup"><span data-stu-id="46779-109">Cash discount available</span></span> | <span data-ttu-id="46779-110">Maksettava summa, joka sisältää käteisalennuksen</span><span class="sxs-lookup"><span data-stu-id="46779-110">Amount to be paid, which includes the cash discount</span></span> | <span data-ttu-id="46779-111">Summa, jonka asiakas todellisuudessa maksaa</span><span class="sxs-lookup"><span data-stu-id="46779-111">Amount the customer actually pays</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|-----------------------------------|
-| 105,00        | 10,50                   | 94,50                                               | 95,00                             |
+| <span data-ttu-id="46779-112">105,00</span><span class="sxs-lookup"><span data-stu-id="46779-112">105.00</span></span>        | <span data-ttu-id="46779-113">10,50</span><span class="sxs-lookup"><span data-stu-id="46779-113">10.50</span></span>                   | <span data-ttu-id="46779-114">94,50</span><span class="sxs-lookup"><span data-stu-id="46779-114">94.50</span></span>                                               | <span data-ttu-id="46779-115">95,00</span><span class="sxs-lookup"><span data-stu-id="46779-115">95.00</span></span>                             |
 
-## <a name="cash-discount-administration--specific"></a>Käteisalennuksen hallinta = Yksilöity
-Kun **Yksilöity** -asetus on valittu **Käteisalennuksen hallinta** -kenttään **Automaattisten tapahtumien tilit** -sivulla, koko käteisalennuksen otetaan huomioon. Liikamaksu kirjataan joko käteisalennuksen eron kirjanpitotilille tai säilytetään saldona asiakkaan tilillä. Järjestelmän toiminta riippuu siitä, onko liikamaksun summa 0,00:n ja **Liikaa / liian vähän maksetun summan enimmäismäärä** -kentän summan välillä, vai onko liikamaksun summa suurempi kuin **Liikaa / liian vähän maksetun summan enimmäismäärä** -summa.
+## <a name="cash-discount-administration--specific"></a><span data-ttu-id="46779-116">Käteisalennuksen hallinta = Yksilöity</span><span class="sxs-lookup"><span data-stu-id="46779-116">Cash discount administration = Specific</span></span>
+<span data-ttu-id="46779-117">Kun **Yksilöity** -asetus on valittu **Käteisalennuksen hallinta** -kenttään **Automaattisten tapahtumien tilit** -sivulla, koko käteisalennuksen otetaan huomioon.</span><span class="sxs-lookup"><span data-stu-id="46779-117">When **Specific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the full cash discount is taken.</span></span> <span data-ttu-id="46779-118">Liikamaksu kirjataan joko käteisalennuksen eron kirjanpitotilille tai säilytetään saldona asiakkaan tilillä.</span><span class="sxs-lookup"><span data-stu-id="46779-118">The overpayment amount either is posted to a cash discount difference ledger account or remains a balance on the customer’s account.</span></span> <span data-ttu-id="46779-119">Järjestelmän toiminta riippuu siitä, onko liikamaksun summa 0,00:n ja **Liikaa / liian vähän maksetun summan enimmäismäärä** -kentän summan välillä, vai onko liikamaksun summa suurempi kuin **Liikaa / liian vähän maksetun summan enimmäismäärä** -summa.</span><span class="sxs-lookup"><span data-stu-id="46779-119">The behavior depends on whether the overpayment amount is between 0.00 and the amount that is entered in the **Maximum overpayment or underpayment** field, or whether the overpayment amount is more than the **Maximum overpayment or underpayment** amount.</span></span>
 
-### <a name="scenario-1"></a>Skenaario 1
+### <a name="scenario-1"></a><span data-ttu-id="46779-120">Skenaario 1</span><span class="sxs-lookup"><span data-stu-id="46779-120">Scenario 1</span></span>
 
-Tässä tilanteessa liikamaksun summa on 0,00:n ja suurimman liika- tai alimaksun välillä. Lasku on kirjattu summalle 105,00, ja käteisalennus on käytettävissä, jos lasku maksetaan seitsemän päivän kuluessa.
+<span data-ttu-id="46779-121">Tässä tilanteessa liikamaksun summa on 0,00:n ja suurimman liika- tai alimaksun välillä.</span><span class="sxs-lookup"><span data-stu-id="46779-121">In this scenario, the overpayment amount is between 0.00 and the maximum overpayment or underpayment.</span></span> <span data-ttu-id="46779-122">Lasku on kirjattu summalle 105,00, ja käteisalennus on käytettävissä, jos lasku maksetaan seitsemän päivän kuluessa.</span><span class="sxs-lookup"><span data-stu-id="46779-122">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Laskun kokonaissumma | Käteisalennus saatavilla | Maksettava summa, joka sisältää käteisalennuksen |
+| <span data-ttu-id="46779-123">Laskun kokonaissumma</span><span class="sxs-lookup"><span data-stu-id="46779-123">Invoice total</span></span> | <span data-ttu-id="46779-124">Käteisalennus saatavilla</span><span class="sxs-lookup"><span data-stu-id="46779-124">Cash discount available</span></span> | <span data-ttu-id="46779-125">Maksettava summa, joka sisältää käteisalennuksen</span><span class="sxs-lookup"><span data-stu-id="46779-125">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="46779-126">105,00</span><span class="sxs-lookup"><span data-stu-id="46779-126">105.00</span></span>        | <span data-ttu-id="46779-127">10,50</span><span class="sxs-lookup"><span data-stu-id="46779-127">10.50</span></span>                   | <span data-ttu-id="46779-128">94,50</span><span class="sxs-lookup"><span data-stu-id="46779-128">94.50</span></span>                                               |
 
-Asiakas suorittaa maksun summalla 95,00 käteisalennuskauden ollessa voimassa. Maksu selvitetään laskun kanssa, jonka arvo on 105,00. Kun lasku ja maksu on selvitetty, seuraavat tapahtumat luodaan asiakkaalle Myyntireskontraan.
+<span data-ttu-id="46779-129">Asiakas suorittaa maksun summalla 95,00 käteisalennuskauden ollessa voimassa.</span><span class="sxs-lookup"><span data-stu-id="46779-129">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="46779-130">Maksu selvitetään laskun kanssa, jonka arvo on 105,00.</span><span class="sxs-lookup"><span data-stu-id="46779-130">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="46779-131">Kun lasku ja maksu on selvitetty, seuraavat tapahtumat luodaan asiakkaalle Myyntireskontraan.</span><span class="sxs-lookup"><span data-stu-id="46779-131">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Tapahtuma   | Summa | Saldo |
+| <span data-ttu-id="46779-132">Tapahtuma</span><span class="sxs-lookup"><span data-stu-id="46779-132">Transaction</span></span>   | <span data-ttu-id="46779-133">Summa</span><span class="sxs-lookup"><span data-stu-id="46779-133">Amount</span></span> | <span data-ttu-id="46779-134">Saldo</span><span class="sxs-lookup"><span data-stu-id="46779-134">Balance</span></span> |
 |---------------|--------|---------|
-| Lasku       | 105,00 | 0,00    |
-| Maksu       | –95,00 | 0,00    |
-| Käteisalennus | –10,50 | 0,00    |
+| <span data-ttu-id="46779-135">Lasku</span><span class="sxs-lookup"><span data-stu-id="46779-135">Invoice</span></span>       | <span data-ttu-id="46779-136">105,00</span><span class="sxs-lookup"><span data-stu-id="46779-136">105.00</span></span> | <span data-ttu-id="46779-137">0,00</span><span class="sxs-lookup"><span data-stu-id="46779-137">0.00</span></span>    |
+| <span data-ttu-id="46779-138">Maksu</span><span class="sxs-lookup"><span data-stu-id="46779-138">Payment</span></span>       | <span data-ttu-id="46779-139">–95,00</span><span class="sxs-lookup"><span data-stu-id="46779-139">-95.00</span></span> | <span data-ttu-id="46779-140">0,00</span><span class="sxs-lookup"><span data-stu-id="46779-140">0.00</span></span>    |
+| <span data-ttu-id="46779-141">Käteisalennus</span><span class="sxs-lookup"><span data-stu-id="46779-141">Cash discount</span></span> | <span data-ttu-id="46779-142">–10,50</span><span class="sxs-lookup"><span data-stu-id="46779-142">-10.50</span></span> | <span data-ttu-id="46779-143">0,00</span><span class="sxs-lookup"><span data-stu-id="46779-143">0.00</span></span>    |
 
-Seuraavat kirjanpitomerkinnät luodaan maksulle ja täsmäytykselle. **Maksu**
+<span data-ttu-id="46779-144">Seuraavat kirjanpitomerkinnät luodaan maksulle ja täsmäytykselle.</span><span class="sxs-lookup"><span data-stu-id="46779-144">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="46779-145">**Maksu**</span><span class="sxs-lookup"><span data-stu-id="46779-145">**Payment**</span></span>
 
-| Tili             | Veloitussumma | Kredit-summa |
+| <span data-ttu-id="46779-146">Tili</span><span class="sxs-lookup"><span data-stu-id="46779-146">Account</span></span>             | <span data-ttu-id="46779-147">Veloitussumma</span><span class="sxs-lookup"><span data-stu-id="46779-147">Debit amount</span></span> | <span data-ttu-id="46779-148">Kredit-summa</span><span class="sxs-lookup"><span data-stu-id="46779-148">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Käteinen                | 95,00        |               |
-| Myyntireskontra |              | 95,00         |
+| <span data-ttu-id="46779-149">Käteinen</span><span class="sxs-lookup"><span data-stu-id="46779-149">Cash</span></span>                | <span data-ttu-id="46779-150">95,00</span><span class="sxs-lookup"><span data-stu-id="46779-150">95.00</span></span>        |               |
+| <span data-ttu-id="46779-151">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="46779-151">Accounts receivable</span></span> |              | <span data-ttu-id="46779-152">95,00</span><span class="sxs-lookup"><span data-stu-id="46779-152">95.00</span></span>         |
 
-**Tilitys**
+<span data-ttu-id="46779-153">**Tilitys**</span><span class="sxs-lookup"><span data-stu-id="46779-153">**Settlement**</span></span>
 
-| Tili                                                                                                          | Veloitussumma | Kredit-summa |
+| <span data-ttu-id="46779-154">Tili</span><span class="sxs-lookup"><span data-stu-id="46779-154">Account</span></span>                                                                                                          | <span data-ttu-id="46779-155">Veloitussumma</span><span class="sxs-lookup"><span data-stu-id="46779-155">Debit amount</span></span> | <span data-ttu-id="46779-156">Kredit-summa</span><span class="sxs-lookup"><span data-stu-id="46779-156">Credit amount</span></span> |
 |------------------------------------------------------------------------------------------------------------------|--------------|---------------|
-| Käteisalennus (**Asiakkaan alennusten päätili** -kenttä **Käteisalennukset**-sivulla)                 | 10,50        |               |
-| Myyntireskontra                                                                                              |              | 10,50         |
-| Asiakkaan käteisalennus (**Asiakkaan käteisalennus** -kenttä **Tili automaattisille tapahtumille** -sivulla) |              | 0,50          |
-| Myyntireskontra                                                                                              | 0,50         |               |
+| <span data-ttu-id="46779-157">Käteisalennus (**Asiakkaan alennusten päätili** -kenttä **Käteisalennukset**-sivulla)</span><span class="sxs-lookup"><span data-stu-id="46779-157">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span>                 | <span data-ttu-id="46779-158">10,50</span><span class="sxs-lookup"><span data-stu-id="46779-158">10.50</span></span>        |               |
+| <span data-ttu-id="46779-159">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="46779-159">Accounts receivable</span></span>                                                                                              |              | <span data-ttu-id="46779-160">10,50</span><span class="sxs-lookup"><span data-stu-id="46779-160">10.50</span></span>         |
+| <span data-ttu-id="46779-161">Asiakkaan käteisalennus (**Asiakkaan käteisalennus** -kenttä **Tili automaattisille tapahtumille** -sivulla)</span><span class="sxs-lookup"><span data-stu-id="46779-161">Customer cash discount (the **Customer cash discount** field on the **Account for automatic transactions** page)</span></span> |              | <span data-ttu-id="46779-162">0,50</span><span class="sxs-lookup"><span data-stu-id="46779-162">0.50</span></span>          |
+| <span data-ttu-id="46779-163">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="46779-163">Accounts receivable</span></span>                                                                                              | <span data-ttu-id="46779-164">0,50</span><span class="sxs-lookup"><span data-stu-id="46779-164">0.50</span></span>         |               |
 
-### <a name="scenario-2"></a>Skenaario 2
+### <a name="scenario-2"></a><span data-ttu-id="46779-165">Skenaario 2</span><span class="sxs-lookup"><span data-stu-id="46779-165">Scenario 2</span></span>
 
-Tässä skenaariossa liikamaksun summa on enemmän kuin suurin liika- tai alimaksun summa. Lasku on kirjattu summalle 105,00, ja käteisalennus on käytettävissä, jos lasku maksetaan seitsemän päivän kuluessa.
+<span data-ttu-id="46779-166">Tässä skenaariossa liikamaksun summa on enemmän kuin suurin liika- tai alimaksun summa.</span><span class="sxs-lookup"><span data-stu-id="46779-166">In this scenario, the overpayment amount exceeds the maximum overpayment or underpayment amount.</span></span> <span data-ttu-id="46779-167">Lasku on kirjattu summalle 105,00, ja käteisalennus on käytettävissä, jos lasku maksetaan seitsemän päivän kuluessa.</span><span class="sxs-lookup"><span data-stu-id="46779-167">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Laskun kokonaissumma | Käteisalennus saatavilla | Maksettava summa, joka sisältää käteisalennuksen |
+| <span data-ttu-id="46779-168">Laskun kokonaissumma</span><span class="sxs-lookup"><span data-stu-id="46779-168">Invoice total</span></span> | <span data-ttu-id="46779-169">Käteisalennus saatavilla</span><span class="sxs-lookup"><span data-stu-id="46779-169">Cash discount available</span></span> | <span data-ttu-id="46779-170">Maksettava summa, joka sisältää käteisalennuksen</span><span class="sxs-lookup"><span data-stu-id="46779-170">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="46779-171">105,00</span><span class="sxs-lookup"><span data-stu-id="46779-171">105.00</span></span>        | <span data-ttu-id="46779-172">10,50</span><span class="sxs-lookup"><span data-stu-id="46779-172">10.50</span></span>                   | <span data-ttu-id="46779-173">94,50</span><span class="sxs-lookup"><span data-stu-id="46779-173">94.50</span></span>                                               |
 
-Asiakas suorittaa maksun summalla 95,00 käteisalennuskauden ollessa voimassa. Maksu selvitetään laskun kanssa, jonka arvo on 105,00. Kun lasku ja maksu on selvitetty, seuraavat tapahtumat luodaan asiakkaalle Myyntireskontraan.
+<span data-ttu-id="46779-174">Asiakas suorittaa maksun summalla 95,00 käteisalennuskauden ollessa voimassa.</span><span class="sxs-lookup"><span data-stu-id="46779-174">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="46779-175">Maksu selvitetään laskun kanssa, jonka arvo on 105,00.</span><span class="sxs-lookup"><span data-stu-id="46779-175">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="46779-176">Kun lasku ja maksu on selvitetty, seuraavat tapahtumat luodaan asiakkaalle Myyntireskontraan.</span><span class="sxs-lookup"><span data-stu-id="46779-176">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Tapahtuma   | Summa | Saldo |
+| <span data-ttu-id="46779-177">Tapahtuma</span><span class="sxs-lookup"><span data-stu-id="46779-177">Transaction</span></span>   | <span data-ttu-id="46779-178">Summa</span><span class="sxs-lookup"><span data-stu-id="46779-178">Amount</span></span> | <span data-ttu-id="46779-179">Saldo</span><span class="sxs-lookup"><span data-stu-id="46779-179">Balance</span></span> |
 |---------------|--------|---------|
-| Lasku       | 105,00 | 0,00    |
-| Maksu       | –95,00 | –0,50   |
-| Käteisalennus | –10,50 | 0,00    |
+| <span data-ttu-id="46779-180">Lasku</span><span class="sxs-lookup"><span data-stu-id="46779-180">Invoice</span></span>       | <span data-ttu-id="46779-181">105,00</span><span class="sxs-lookup"><span data-stu-id="46779-181">105.00</span></span> | <span data-ttu-id="46779-182">0,00</span><span class="sxs-lookup"><span data-stu-id="46779-182">0.00</span></span>    |
+| <span data-ttu-id="46779-183">Maksu</span><span class="sxs-lookup"><span data-stu-id="46779-183">Payment</span></span>       | <span data-ttu-id="46779-184">–95,00</span><span class="sxs-lookup"><span data-stu-id="46779-184">-95.00</span></span> | <span data-ttu-id="46779-185">–0,50</span><span class="sxs-lookup"><span data-stu-id="46779-185">-0.50</span></span>   |
+| <span data-ttu-id="46779-186">Käteisalennus</span><span class="sxs-lookup"><span data-stu-id="46779-186">Cash discount</span></span> | <span data-ttu-id="46779-187">–10,50</span><span class="sxs-lookup"><span data-stu-id="46779-187">-10.50</span></span> | <span data-ttu-id="46779-188">0,00</span><span class="sxs-lookup"><span data-stu-id="46779-188">0.00</span></span>    |
 
-Liikamaksun summa 0,50 säilyy avoimena saldona maksuissa ja se voidaan täsmätä toisen laskun kanssa. Seuraavat kirjanpitomerkinnät luodaan maksulle ja täsmäytykselle. **Maksu**
+<span data-ttu-id="46779-189">Liikamaksun summa 0,50 säilyy avoimena saldona maksuissa ja se voidaan täsmätä toisen laskun kanssa.</span><span class="sxs-lookup"><span data-stu-id="46779-189">The overpayment amount of 0.50 will remain as an open balance on the payment and can be settled against another invoice.</span></span> <span data-ttu-id="46779-190">Seuraavat kirjanpitomerkinnät luodaan maksulle ja täsmäytykselle.</span><span class="sxs-lookup"><span data-stu-id="46779-190">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="46779-191">**Maksu**</span><span class="sxs-lookup"><span data-stu-id="46779-191">**Payment**</span></span>
 
-| Tili             | Veloitussumma | Kredit-summa |
+| <span data-ttu-id="46779-192">Tili</span><span class="sxs-lookup"><span data-stu-id="46779-192">Account</span></span>             | <span data-ttu-id="46779-193">Veloitussumma</span><span class="sxs-lookup"><span data-stu-id="46779-193">Debit amount</span></span> | <span data-ttu-id="46779-194">Kredit-summa</span><span class="sxs-lookup"><span data-stu-id="46779-194">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Käteinen                | 95,00        |               |
-| Myyntireskontra |              | 95,00         |
+| <span data-ttu-id="46779-195">Käteinen</span><span class="sxs-lookup"><span data-stu-id="46779-195">Cash</span></span>                | <span data-ttu-id="46779-196">95,00</span><span class="sxs-lookup"><span data-stu-id="46779-196">95.00</span></span>        |               |
+| <span data-ttu-id="46779-197">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="46779-197">Accounts receivable</span></span> |              | <span data-ttu-id="46779-198">95,00</span><span class="sxs-lookup"><span data-stu-id="46779-198">95.00</span></span>         |
 
-**Tilitys**
+<span data-ttu-id="46779-199">**Tilitys**</span><span class="sxs-lookup"><span data-stu-id="46779-199">**Settlement**</span></span>
 
-| Tili                                                                                          | Veloitussumma | Kredit-summa |
+| <span data-ttu-id="46779-200">Tili</span><span class="sxs-lookup"><span data-stu-id="46779-200">Account</span></span>                                                                                          | <span data-ttu-id="46779-201">Veloitussumma</span><span class="sxs-lookup"><span data-stu-id="46779-201">Debit amount</span></span> | <span data-ttu-id="46779-202">Kredit-summa</span><span class="sxs-lookup"><span data-stu-id="46779-202">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Käteisalennus (**Asiakkaan alennusten päätili** -kenttä **Käteisalennukset**-sivulla) | 10,50        |               |
-| Myyntireskontra                                                                              |              | 10,50         |
+| <span data-ttu-id="46779-203">Käteisalennus (**Asiakkaan alennusten päätili** -kenttä **Käteisalennukset**-sivulla)</span><span class="sxs-lookup"><span data-stu-id="46779-203">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="46779-204">10,50</span><span class="sxs-lookup"><span data-stu-id="46779-204">10.50</span></span>        |               |
+| <span data-ttu-id="46779-205">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="46779-205">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="46779-206">10,50</span><span class="sxs-lookup"><span data-stu-id="46779-206">10.50</span></span>         |
 
-## <a name="cash-discount-administration--unspecific"></a>Käteisalennuksen hallinta = Yksilöimätön
-Kun **Yksilöimätön** -asetus on valittu **Käteisalennuksen hallinta** -kenttään **Automaattisten tapahtumien tilit** -sivulla, käteisalennuksen summasta vähennetään liikamaksun summa. Järjestelmä toimii näin aina, riippumatta siitä, onko liikamaksun summa suurempi tai pienempi kuin **Liikaa / liian vähän maksetun summan enimmäismäärä** -kentän summa.
+## <a name="cash-discount-administration--unspecific"></a><span data-ttu-id="46779-207">Käteisalennuksen hallinta = Yksilöimätön</span><span class="sxs-lookup"><span data-stu-id="46779-207">Cash discount administration = Unspecific</span></span>
+<span data-ttu-id="46779-208">Kun **Yksilöimätön** -asetus on valittu **Käteisalennuksen hallinta** -kenttään **Automaattisten tapahtumien tilit** -sivulla, käteisalennuksen summasta vähennetään liikamaksun summa.</span><span class="sxs-lookup"><span data-stu-id="46779-208">When **Unspecific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the cash discount amount is reduced by the overpayment amount.</span></span> <span data-ttu-id="46779-209">Järjestelmä toimii näin aina, riippumatta siitä, onko liikamaksun summa suurempi tai pienempi kuin **Liikaa / liian vähän maksetun summan enimmäismäärä** -kentän summa.</span><span class="sxs-lookup"><span data-stu-id="46779-209">This behavior always applies, regardless of whether the overpayment amount is over or under the amount that is entered in the **Maximum overpayment or underpayment** field.</span></span>
 
-### <a name="scenario-3"></a>Skenaario 3
+### <a name="scenario-3"></a><span data-ttu-id="46779-210">Skenaario 3</span><span class="sxs-lookup"><span data-stu-id="46779-210">Scenario 3</span></span>
 
-Tässä skenaariossa lasku on kirjattu summalle 105,00, ja käteisalennus on käytettävissä, jos lasku maksetaan seitsemän päivän kuluessa.
+<span data-ttu-id="46779-211">Tässä skenaariossa lasku on kirjattu summalle 105,00, ja käteisalennus on käytettävissä, jos lasku maksetaan seitsemän päivän kuluessa.</span><span class="sxs-lookup"><span data-stu-id="46779-211">In this scenario, an invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Laskun kokonaissumma | Käteisalennus saatavilla | Maksettava summa, joka sisältää käteisalennuksen |
+| <span data-ttu-id="46779-212">Laskun kokonaissumma</span><span class="sxs-lookup"><span data-stu-id="46779-212">Invoice total</span></span> | <span data-ttu-id="46779-213">Käteisalennus saatavilla</span><span class="sxs-lookup"><span data-stu-id="46779-213">Cash discount available</span></span> | <span data-ttu-id="46779-214">Maksettava summa, joka sisältää käteisalennuksen</span><span class="sxs-lookup"><span data-stu-id="46779-214">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="46779-215">105,00</span><span class="sxs-lookup"><span data-stu-id="46779-215">105.00</span></span>        | <span data-ttu-id="46779-216">10,50</span><span class="sxs-lookup"><span data-stu-id="46779-216">10.50</span></span>                   | <span data-ttu-id="46779-217">94,50</span><span class="sxs-lookup"><span data-stu-id="46779-217">94.50</span></span>                                               |
 
-Asiakas suorittaa maksun summalla 95,00 käteisalennuskauden ollessa voimassa. Maksu selvitetään laskun kanssa, jonka arvo on 105,00. Kun lasku ja maksu on selvitetty, seuraavat tapahtumat luodaan asiakkaalle Myyntireskontraan.
+<span data-ttu-id="46779-218">Asiakas suorittaa maksun summalla 95,00 käteisalennuskauden ollessa voimassa.</span><span class="sxs-lookup"><span data-stu-id="46779-218">The customer submits a payment for 95.00 within the cash discount date.</span></span> <span data-ttu-id="46779-219">Maksu selvitetään laskun kanssa, jonka arvo on 105,00.</span><span class="sxs-lookup"><span data-stu-id="46779-219">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="46779-220">Kun lasku ja maksu on selvitetty, seuraavat tapahtumat luodaan asiakkaalle Myyntireskontraan.</span><span class="sxs-lookup"><span data-stu-id="46779-220">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Tapahtuma   | Summa | Saldo |
+| <span data-ttu-id="46779-221">Tapahtuma</span><span class="sxs-lookup"><span data-stu-id="46779-221">Transaction</span></span>   | <span data-ttu-id="46779-222">Summa</span><span class="sxs-lookup"><span data-stu-id="46779-222">Amount</span></span> | <span data-ttu-id="46779-223">Saldo</span><span class="sxs-lookup"><span data-stu-id="46779-223">Balance</span></span> |
 |---------------|--------|---------|
-| Lasku       | 105,00 | 0,00    |
-| Maksu       | –95,00 | –0,00   |
-| Käteisalennus | –10,00 | 0,00    |
+| <span data-ttu-id="46779-224">Lasku</span><span class="sxs-lookup"><span data-stu-id="46779-224">Invoice</span></span>       | <span data-ttu-id="46779-225">105,00</span><span class="sxs-lookup"><span data-stu-id="46779-225">105.00</span></span> | <span data-ttu-id="46779-226">0,00</span><span class="sxs-lookup"><span data-stu-id="46779-226">0.00</span></span>    |
+| <span data-ttu-id="46779-227">Maksu</span><span class="sxs-lookup"><span data-stu-id="46779-227">Payment</span></span>       | <span data-ttu-id="46779-228">–95,00</span><span class="sxs-lookup"><span data-stu-id="46779-228">-95.00</span></span> | <span data-ttu-id="46779-229">–0,00</span><span class="sxs-lookup"><span data-stu-id="46779-229">-0.00</span></span>   |
+| <span data-ttu-id="46779-230">Käteisalennus</span><span class="sxs-lookup"><span data-stu-id="46779-230">Cash discount</span></span> | <span data-ttu-id="46779-231">–10,00</span><span class="sxs-lookup"><span data-stu-id="46779-231">-10.00</span></span> | <span data-ttu-id="46779-232">0,00</span><span class="sxs-lookup"><span data-stu-id="46779-232">0.00</span></span>    |
 
-Käteisalennuksen määrä vähennetään arvosta 10,50 arvoon 10,00. Maksua ja laskua pidetään selvitettyinä. **Maksu**
+<span data-ttu-id="46779-233">Käteisalennuksen määrä vähennetään arvosta 10,50 arvoon 10,00.</span><span class="sxs-lookup"><span data-stu-id="46779-233">The cash discount amount is reduced from 10.50 to 10.00.</span></span> <span data-ttu-id="46779-234">Maksua ja laskua pidetään selvitettyinä.</span><span class="sxs-lookup"><span data-stu-id="46779-234">The payment and invoice are considered settled.</span></span> <span data-ttu-id="46779-235">**Maksu**</span><span class="sxs-lookup"><span data-stu-id="46779-235">**Payment**</span></span>
 
-| Tili             | Veloitussumma | Kredit-summa |
+| <span data-ttu-id="46779-236">Tili</span><span class="sxs-lookup"><span data-stu-id="46779-236">Account</span></span>             | <span data-ttu-id="46779-237">Veloitussumma</span><span class="sxs-lookup"><span data-stu-id="46779-237">Debit amount</span></span> | <span data-ttu-id="46779-238">Kredit-summa</span><span class="sxs-lookup"><span data-stu-id="46779-238">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Käteinen                | 95,00        |               |
-| Myyntireskontra |              | 95,00         |
+| <span data-ttu-id="46779-239">Käteinen</span><span class="sxs-lookup"><span data-stu-id="46779-239">Cash</span></span>                | <span data-ttu-id="46779-240">95,00</span><span class="sxs-lookup"><span data-stu-id="46779-240">95.00</span></span>        |               |
+| <span data-ttu-id="46779-241">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="46779-241">Accounts receivable</span></span> |              | <span data-ttu-id="46779-242">95,00</span><span class="sxs-lookup"><span data-stu-id="46779-242">95.00</span></span>         |
 
-**Tilitys**
+<span data-ttu-id="46779-243">**Tilitys**</span><span class="sxs-lookup"><span data-stu-id="46779-243">**Settlement**</span></span>
 
-| Tili                                                                                          | Veloitussumma | Kredit-summa |
+| <span data-ttu-id="46779-244">Tili</span><span class="sxs-lookup"><span data-stu-id="46779-244">Account</span></span>                                                                                          | <span data-ttu-id="46779-245">Veloitussumma</span><span class="sxs-lookup"><span data-stu-id="46779-245">Debit amount</span></span> | <span data-ttu-id="46779-246">Kredit-summa</span><span class="sxs-lookup"><span data-stu-id="46779-246">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Käteisalennus (**Asiakkaan alennusten päätili** -kenttä **Käteisalennukset**-sivulla) | 10,50        |               |
-| Myyntireskontra                                                                              |              | 10,50         |
+| <span data-ttu-id="46779-247">Käteisalennus (**Asiakkaan alennusten päätili** -kenttä **Käteisalennukset**-sivulla)</span><span class="sxs-lookup"><span data-stu-id="46779-247">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="46779-248">10,50</span><span class="sxs-lookup"><span data-stu-id="46779-248">10.50</span></span>        |               |
+| <span data-ttu-id="46779-249">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="46779-249">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="46779-250">10,50</span><span class="sxs-lookup"><span data-stu-id="46779-250">10.50</span></span>         |
 
 
 

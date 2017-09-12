@@ -16,59 +16,59 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: de5baa1e5c30ee998d113f7366c445a65723dfdc
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6bb7a5133e9412f4ed6fb74f0d3ee595c07a0c4b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-unit-of-measure"></a>Mittayksikön hallinta
+# <a name="manage-unit-of-measure"></a><span data-ttu-id="d4fab-103">Mittayksikön hallinta</span><span class="sxs-lookup"><span data-stu-id="d4fab-103">Manage unit of measure</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kerrotaan, miten mittayksikkö määritetään, miten yksikkö ja sen kuvaukset käännetään ja miten liittyvien yksiköiden muunnossäännöt määritetään. Voit käydä tämän menettelyn läpi esittelytietojen avulla tai käyttää omia tietojasi.
+<span data-ttu-id="d4fab-104">Tässä menettelyssä kerrotaan, miten mittayksikkö määritetään, miten yksikkö ja sen kuvaukset käännetään ja miten liittyvien yksiköiden muunnossäännöt määritetään.</span><span class="sxs-lookup"><span data-stu-id="d4fab-104">This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units.</span></span> <span data-ttu-id="d4fab-105">Voit käydä tämän menettelyn läpi esittelytietojen avulla tai käyttää omia tietojasi.</span><span class="sxs-lookup"><span data-stu-id="d4fab-105">You can walk through this procedure using demo data, or using your own data.</span></span>
 
-1. Siirry Vapautetun tuotteen ylläpito -kohtaan.
-2. Valitse Yksiköt.
+1. <span data-ttu-id="d4fab-106">Siirry Vapautetun tuotteen ylläpito -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="d4fab-106">Go to Released product maintenance.</span></span>
+2. <span data-ttu-id="d4fab-107">Valitse Yksiköt.</span><span class="sxs-lookup"><span data-stu-id="d4fab-107">Click Units.</span></span>
 
-## <a name="create-a-unit-of-measure"></a>Mittayksikön luominen
-1. Valitse Uusi.
-2. Kirjoita arvo Yksikkö-kenttään.
-    * Syötä mittayksikköön viitatessa käytettävä tunnus tai symboli.  
-3. Kirjoita arvo Kuvaus-kenttään.
-    * Syötä mittayksikölle kuvaava nimi järjestelmän kielellä.  
-4. Valitse Yksikköluokka-kentässä vaihtoehto.
-    * Yksikköluokka määrittää, mihin loogiseen ryhmittelyyn, kuten alue, paino tai määrä, mittayksikkö kuuluu.  
-5. Syötä Desimaalitarkkuus-kenttään numero.
-    * Määritä, miten paljon mittayksikön desimaaleja pyöristetään laskelman valmistuessa.  
-6. Valitse Tallenna.
+## <a name="create-a-unit-of-measure"></a><span data-ttu-id="d4fab-108">Mittayksikön luominen</span><span class="sxs-lookup"><span data-stu-id="d4fab-108">Create a unit of measure</span></span>
+1. <span data-ttu-id="d4fab-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="d4fab-109">Click New.</span></span>
+2. <span data-ttu-id="d4fab-110">Kirjoita arvo Yksikkö-kenttään.</span><span class="sxs-lookup"><span data-stu-id="d4fab-110">In the Unit field, type a value.</span></span>
+    * <span data-ttu-id="d4fab-111">Syötä mittayksikköön viitatessa käytettävä tunnus tai symboli.</span><span class="sxs-lookup"><span data-stu-id="d4fab-111">Enter the ID or symbol to use when referring to the unit of measure.</span></span>  
+3. <span data-ttu-id="d4fab-112">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="d4fab-112">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="d4fab-113">Syötä mittayksikölle kuvaava nimi järjestelmän kielellä.</span><span class="sxs-lookup"><span data-stu-id="d4fab-113">Enter a descriptive name for the unit of measure in the system language.</span></span>  
+4. <span data-ttu-id="d4fab-114">Valitse Yksikköluokka-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="d4fab-114">In the Unit class field, select an option.</span></span>
+    * <span data-ttu-id="d4fab-115">Yksikköluokka määrittää, mihin loogiseen ryhmittelyyn, kuten alue, paino tai määrä, mittayksikkö kuuluu.</span><span class="sxs-lookup"><span data-stu-id="d4fab-115">The unit class defines what logical grouping, such as area, mass, or quantity, the unit of measure is part of.</span></span>  
+5. <span data-ttu-id="d4fab-116">Syötä Desimaalitarkkuus-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="d4fab-116">In the Decimal precision field, enter a number.</span></span>
+    * <span data-ttu-id="d4fab-117">Määritä, miten paljon mittayksikön desimaaleja pyöristetään laskelman valmistuessa.</span><span class="sxs-lookup"><span data-stu-id="d4fab-117">Specify the number of decimals that the converted unit of measure must be rounded to when a calculation is completed for the unit of measure.</span></span>  
+6. <span data-ttu-id="d4fab-118">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="d4fab-118">Click Save.</span></span>
 
-## <a name="define-unit-translations"></a>Yksikkökäännösten määrittäminen
-1. Valitse Yksikön tekstit.
-2. Valitse Uusi.
-    * Käytä yksikön tekstiä, kun luot mittayksikköä kuvaavan tunnuksen tai symbolin käännöksen. Tätä käytetään asiakas- tai toimittajakohtaisten kielten ulkoisissa asiakirjoissa.  
-3. Syötä tai valitse arvo Kieli-kentässä.
-4. Kirjoita arvo Teksti-kenttään.
-5. Valitse Tallenna.
-6. Sulje sivu.
-7. Valitse Käännetyt yksiköiden kuvaukset.
-8. Valitse Uusi.
-    * Määritä mittayksikön kielikohtaiset kuvaukset.  
-9. Syötä tai valitse arvo Kieli-kentässä.
-10. Kirjoita arvo Kuvaus-kenttään.
-11. Valitse Tallenna.
-12. Sulje sivu.
+## <a name="define-unit-translations"></a><span data-ttu-id="d4fab-119">Yksikkökäännösten määrittäminen</span><span class="sxs-lookup"><span data-stu-id="d4fab-119">Define unit translations</span></span>
+1. <span data-ttu-id="d4fab-120">Valitse Yksikön tekstit.</span><span class="sxs-lookup"><span data-stu-id="d4fab-120">Click Unit texts.</span></span>
+2. <span data-ttu-id="d4fab-121">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="d4fab-121">Click New.</span></span>
+    * <span data-ttu-id="d4fab-122">Käytä yksikön tekstiä, kun luot mittayksikköä kuvaavan tunnuksen tai symbolin käännöksen. Tätä käytetään asiakas- tai toimittajakohtaisten kielten ulkoisissa asiakirjoissa.</span><span class="sxs-lookup"><span data-stu-id="d4fab-122">Use unit text to create a translation of the ID or a symbol representing the unit of measure for use on external documents in customer- or vendor-specific languages.</span></span>  
+3. <span data-ttu-id="d4fab-123">Syötä tai valitse arvo Kieli-kentässä.</span><span class="sxs-lookup"><span data-stu-id="d4fab-123">In the Language field, enter or select a value.</span></span>
+4. <span data-ttu-id="d4fab-124">Kirjoita arvo Teksti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="d4fab-124">In the Text field, type a value.</span></span>
+5. <span data-ttu-id="d4fab-125">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="d4fab-125">Click Save.</span></span>
+6. <span data-ttu-id="d4fab-126">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d4fab-126">Close the page.</span></span>
+7. <span data-ttu-id="d4fab-127">Valitse Käännetyt yksiköiden kuvaukset.</span><span class="sxs-lookup"><span data-stu-id="d4fab-127">Click Translated unit descriptions.</span></span>
+8. <span data-ttu-id="d4fab-128">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="d4fab-128">Click New.</span></span>
+    * <span data-ttu-id="d4fab-129">Määritä mittayksikön kielikohtaiset kuvaukset.</span><span class="sxs-lookup"><span data-stu-id="d4fab-129">Define language-specific descriptions for the unit of measure.</span></span>  
+9. <span data-ttu-id="d4fab-130">Syötä tai valitse arvo Kieli-kentässä.</span><span class="sxs-lookup"><span data-stu-id="d4fab-130">In the Language field, enter or select a value.</span></span>
+10. <span data-ttu-id="d4fab-131">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="d4fab-131">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="d4fab-132">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="d4fab-132">Click Save.</span></span>
+12. <span data-ttu-id="d4fab-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d4fab-133">Close the page.</span></span>
 
-## <a name="define-unit-conversion-rules"></a>Yksikön muunnössääntöjen määrittäminen
-1. Valitse Yksikön muunnokset.
-    * Määritä mittayksikön muuntamisen säännöt valitussa yksikköluokassa.  
-2. Avaa valintaikkuna valitsemalla Uusi.
-3. Syötä Kerroin-kenttään numero.
-    * Muuntokerroin Yksiköstä- ja Yksikköön-kohdan välillä. Esimerkiksi senttimetrien muuntokerroin metreiksi on 100, koska metri sisältää 100 senttimetriä.  
-4. Syötä tai valitse Yksikköön-kentän arvo.
-5. Valitse vaihtoehto Pyöristys-kentässä.
-    * Määritä, miten muunnettu arvo pyöristetään.  
-6. Valitse OK.
-7. Sulje sivu.
+## <a name="define-unit-conversion-rules"></a><span data-ttu-id="d4fab-134">Yksikön muunnössääntöjen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="d4fab-134">Define unit conversion rules</span></span>
+1. <span data-ttu-id="d4fab-135">Valitse Yksikön muunnokset.</span><span class="sxs-lookup"><span data-stu-id="d4fab-135">Click Unit conversions.</span></span>
+    * <span data-ttu-id="d4fab-136">Määritä mittayksikön muuntamisen säännöt valitussa yksikköluokassa.</span><span class="sxs-lookup"><span data-stu-id="d4fab-136">Define rules for converting the unit of measure to and from other units of measure in the selected unit class.</span></span>  
+2. <span data-ttu-id="d4fab-137">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="d4fab-137">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="d4fab-138">Syötä Kerroin-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="d4fab-138">In the Factor field, enter a number.</span></span>
+    * <span data-ttu-id="d4fab-139">Muuntokerroin Yksiköstä- ja Yksikköön-kohdan välillä.</span><span class="sxs-lookup"><span data-stu-id="d4fab-139">Conversion factor between the From unit and the To unit.</span></span> <span data-ttu-id="d4fab-140">Esimerkiksi senttimetrien muuntokerroin metreiksi on 100, koska metri sisältää 100 senttimetriä.</span><span class="sxs-lookup"><span data-stu-id="d4fab-140">For example, the conversion factor from centimeter to meter is 100 because there are 100 centimeters in one meter.</span></span>  
+4. <span data-ttu-id="d4fab-141">Syötä tai valitse Yksikköön-kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="d4fab-141">In the To unit field, enter or select a value.</span></span>
+5. <span data-ttu-id="d4fab-142">Valitse vaihtoehto Pyöristys-kentässä.</span><span class="sxs-lookup"><span data-stu-id="d4fab-142">In the Rounding field, select an option.</span></span>
+    * <span data-ttu-id="d4fab-143">Määritä, miten muunnettu arvo pyöristetään.</span><span class="sxs-lookup"><span data-stu-id="d4fab-143">Define how the converted value should be rounded.</span></span>  
+6. <span data-ttu-id="d4fab-144">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="d4fab-144">Click OK.</span></span>
+7. <span data-ttu-id="d4fab-145">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d4fab-145">Close the page.</span></span>
 
 

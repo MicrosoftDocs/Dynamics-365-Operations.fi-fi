@@ -17,82 +17,82 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: eec121859b7135741ccf204fd507ef0790f1c8d4
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e27be049bebd63c9266029b8981874417a9f0a8c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-shipping-carriers"></a>Lähetyksen rahdinkuljettajien määrittäminen
+# <a name="set-up-shipping-carriers"></a><span data-ttu-id="a9131-103">Lähetyksen rahdinkuljettajien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="a9131-103">Set up shipping carriers</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kuvataan, kuinka voit asettaa rahdinkuljettajan ja määrittää tiedot, kuten palvelu, lähetystila, kuljetuksen maksuväline, kuljetusrajoitukset ja lähetyshinta. Kuljetuskoordinaattori voi sitten määrittää lähtevälle tai saapuvalle kuormalle rahdinkuljettajan.
+<span data-ttu-id="a9131-104">Tässä menettelyssä kuvataan, kuinka voit asettaa rahdinkuljettajan ja määrittää tiedot, kuten palvelu, lähetystila, kuljetuksen maksuväline, kuljetusrajoitukset ja lähetyshinta.</span><span class="sxs-lookup"><span data-stu-id="a9131-104">This procedure shows how to set up a shipping carrier and define details such as service, shipment mode, transportation tender, transportation constraints, and shipping rate.</span></span> <span data-ttu-id="a9131-105">Kuljetuskoordinaattori voi sitten määrittää lähtevälle tai saapuvalle kuormalle rahdinkuljettajan.</span><span class="sxs-lookup"><span data-stu-id="a9131-105">A transportation coordinator can then assign a shipping carrier to an inbound or outbound load.</span></span>
 
 
-## <a name="create-a-new-shipping-carrier"></a>Uuden lähetyksen rahdinkuljettajan luominen
-1. Valitse Kuljetustenhallinta > Asetukset > Rahdinkuljettajat > Lähetyksen rahdinkuljettajat.
-2. Valitse Uusi.
-3. Syötä Lähetyksen rahdinkuljettaja -kenttään arvo.
-4. Kirjoita arvo Nimi-kenttään.
-5. Avaa haku Valitsemalla Tila-kentässä avattavan valikon painike.
-6. Etsi haluamasi tietue luettelosta ja valitse se.
-7. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
+## <a name="create-a-new-shipping-carrier"></a><span data-ttu-id="a9131-106">Uuden lähetyksen rahdinkuljettajan luominen</span><span class="sxs-lookup"><span data-stu-id="a9131-106">Create a new shipping carrier</span></span>
+1. <span data-ttu-id="a9131-107">Valitse Kuljetustenhallinta > Asetukset > Rahdinkuljettajat > Lähetyksen rahdinkuljettajat.</span><span class="sxs-lookup"><span data-stu-id="a9131-107">Go to Transportation management > Setup > Carriers > Shipping carriers.</span></span>
+2. <span data-ttu-id="a9131-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="a9131-108">Click New.</span></span>
+3. <span data-ttu-id="a9131-109">Syötä Lähetyksen rahdinkuljettaja -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="a9131-109">In the Shipping carrier field, type a value.</span></span>
+4. <span data-ttu-id="a9131-110">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="a9131-110">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="a9131-111">Avaa haku Valitsemalla Tila-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a9131-111">In the Mode field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="a9131-112">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a9131-112">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="a9131-113">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a9131-113">In the list, click the link in the selected row.</span></span>
 
-## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Lähetyksen rahdinkuljettajan yleistietojen täyttäminen
-1. Ota käyttöön Yleiskuvaus-osan laajennus.
-2. Valitse Aktivoi lähetyksen rahdinkuljettaja -valintaruutu tai poista sen valinta.
-3. Avaa haku valitsemalla Toimittaja-kentässä avattavan valikon painike.
-    * Valitse toimittajan tili, johon lähetyksen rahdinkuljettaja liitetään.  
-4. Etsi haluamasi tietue luettelosta ja valitse se.
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Valitse vaihtoehto Kuljetuksen maksuvälineen tyyppi -kentässä.
-    * Valitse Manuaalinen kuljetuksen maksuvälineen käyttö -sivu tai valitse EDI, kun haluat päivittää maksuvälineen sähköistä tiedonsiirtoa (EDI = Electronic Data Interchange).  
-7. Valitse Aktivoi rahdinkuljettajan luokitus -valintaruutu tai poista sen valinta.
+## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a><span data-ttu-id="a9131-114">Lähetyksen rahdinkuljettajan yleistietojen täyttäminen</span><span class="sxs-lookup"><span data-stu-id="a9131-114">Fill in the general information for the shipping carrier</span></span>
+1. <span data-ttu-id="a9131-115">Ota käyttöön Yleiskuvaus-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="a9131-115">Toggle the expansion of the Overview section.</span></span>
+2. <span data-ttu-id="a9131-116">Valitse Aktivoi lähetyksen rahdinkuljettaja -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="a9131-116">Check or uncheck the Activate shipping carrier checkbox.</span></span>
+3. <span data-ttu-id="a9131-117">Avaa haku valitsemalla Toimittaja-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a9131-117">In the Vendor field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="a9131-118">Valitse toimittajan tili, johon lähetyksen rahdinkuljettaja liitetään.</span><span class="sxs-lookup"><span data-stu-id="a9131-118">Select the vendor account to assign the shipping carrier to.</span></span>  
+4. <span data-ttu-id="a9131-119">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a9131-119">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="a9131-120">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a9131-120">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="a9131-121">Valitse vaihtoehto Kuljetuksen maksuvälineen tyyppi -kentässä.</span><span class="sxs-lookup"><span data-stu-id="a9131-121">In the Transportation tender type field, select an option.</span></span>
+    * <span data-ttu-id="a9131-122">Valitse Manuaalinen kuljetuksen maksuvälineen käyttö -sivu tai valitse EDI, kun haluat päivittää maksuvälineen sähköistä tiedonsiirtoa (EDI = Electronic Data Interchange).</span><span class="sxs-lookup"><span data-stu-id="a9131-122">Select Manual to use the Transportation Tender page, or select EDI to update the tender by using Electronic Data Interchange (EDI).</span></span>  
+7. <span data-ttu-id="a9131-123">Valitse Aktivoi rahdinkuljettajan luokitus -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="a9131-123">Check or uncheck the Activate carrier rating checkbox.</span></span>
 
-## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Lähetyksen rahdinkuljettajan tarvitsemien palveluiden luominen
-1. Ota käyttöön Palvelut-osan laajennus.
-2. Valitse Uusi.
-3. Merkitse valittu rivi luettelossa.
-4. Syötä Rahdinkuljettajan palvelu -kenttään arvo.
-5. Kirjoita arvo Nimi-kenttään.
-6. Avaa haku valitsemalla Kuljetusmenetelmä-kentässä avattavan valikon painike.
-7. Etsi haluamasi tietue luettelosta ja valitse se.
-8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
+## <a name="create-the-necessary-services-for-the-shipping-carrier"></a><span data-ttu-id="a9131-124">Lähetyksen rahdinkuljettajan tarvitsemien palveluiden luominen</span><span class="sxs-lookup"><span data-stu-id="a9131-124">Create the necessary services for the shipping carrier</span></span>
+1. <span data-ttu-id="a9131-125">Ota käyttöön Palvelut-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="a9131-125">Toggle the expansion of the Services section.</span></span>
+2. <span data-ttu-id="a9131-126">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="a9131-126">Click New.</span></span>
+3. <span data-ttu-id="a9131-127">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="a9131-127">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="a9131-128">Syötä Rahdinkuljettajan palvelu -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="a9131-128">In the Carrier service field, type a value.</span></span>
+5. <span data-ttu-id="a9131-129">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="a9131-129">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="a9131-130">Avaa haku valitsemalla Kuljetusmenetelmä-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a9131-130">In the Transportation method field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="a9131-131">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a9131-131">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="a9131-132">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a9131-132">In the list, click the link in the selected row.</span></span>
 
-## <a name="set-up-the-address-for-the-carrier-optional"></a>Rahdinkuljettajan osoitteen määrittäminen (valinnainen)
-1. Ota käyttöön Osoitteet-osan laajennus.
-2. Valitse Uusi.
-3. Kirjoita Nimi tai kuvaus -kenttään arvo.
-4. Avaa haku valitsemalla Maa/alue-kentässä avattavan valikon painike.
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Avaa haku valitsemalla Postinumero-kentässä avattavan valikon painike.
-7. Etsi haluamasi tietue luettelosta ja valitse se.
-8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-9. Kirjoita arvo Katuosoite-kenttään.
-10. Valitse OK.
+## <a name="set-up-the-address-for-the-carrier-optional"></a><span data-ttu-id="a9131-133">Rahdinkuljettajan osoitteen määrittäminen (valinnainen)</span><span class="sxs-lookup"><span data-stu-id="a9131-133">Set up the address for the carrier (optional)</span></span>
+1. <span data-ttu-id="a9131-134">Ota käyttöön Osoitteet-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="a9131-134">Toggle the expansion of the Addresses section.</span></span>
+2. <span data-ttu-id="a9131-135">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="a9131-135">Click New.</span></span>
+3. <span data-ttu-id="a9131-136">Kirjoita Nimi tai kuvaus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="a9131-136">In the Name or description field, type a value.</span></span>
+4. <span data-ttu-id="a9131-137">Avaa haku valitsemalla Maa/alue-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a9131-137">In the Country/region field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="a9131-138">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a9131-138">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="a9131-139">Avaa haku valitsemalla Postinumero-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a9131-139">In the ZIP/postal code field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="a9131-140">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a9131-140">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="a9131-141">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a9131-141">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="a9131-142">Kirjoita arvo Katuosoite-kenttään.</span><span class="sxs-lookup"><span data-stu-id="a9131-142">In the Street field, type a value.</span></span>
+10. <span data-ttu-id="a9131-143">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="a9131-143">Click OK.</span></span>
 
-## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Lähetyksen rahdinkuljettajan luokituksen profiilin määrittäminen
-1. Ota Luokituksen profiilit -osan laajennus käyttöön.
-2. Valitse Uusi.
-3. Merkitse valittu rivi luettelossa.
-4. Syötä Luokituksen profiili -kenttään arvo.
-5. Kirjoita arvo Nimi-kenttään.
-6. Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.
-7. Etsi haluamasi tietue luettelosta ja valitse se.
-8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-9. Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.
-10. Etsi haluamasi tietue luettelosta ja valitse se.
-11. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-12. Avaa haku valitsemalla Hinnan laskenta -kentässä avattavan valikon painike.
-    * Valitse hinnan laskenta rahdinkuljettajan yhteystietojen perusteella.  
-13. Etsi haluamasi tietue luettelosta ja valitse se.
-14. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-15. Avaa haku valitsemalla Hinnan päätiedot -kentässä avattavan valikon painike.
-16. Etsi haluamasi tietue luettelosta ja valitse se.
-17. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-18. Avaa haku valitsemalla Siirtoajan laskenta -kentässä avattavan valikon painike.
-19. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-20. Valitse Tallenna.
+## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a><span data-ttu-id="a9131-144">Lähetyksen rahdinkuljettajan luokituksen profiilin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="a9131-144">Set up the rating profile for the shipping carrier</span></span>
+1. <span data-ttu-id="a9131-145">Ota Luokituksen profiilit -osan laajennus käyttöön.</span><span class="sxs-lookup"><span data-stu-id="a9131-145">Toggle the expansion of the Rating profiles section.</span></span>
+2. <span data-ttu-id="a9131-146">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="a9131-146">Click New.</span></span>
+3. <span data-ttu-id="a9131-147">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="a9131-147">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="a9131-148">Syötä Luokituksen profiili -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="a9131-148">In the Rating profile field, type a value.</span></span>
+5. <span data-ttu-id="a9131-149">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="a9131-149">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="a9131-150">Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="a9131-150">In the Site field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="a9131-151">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a9131-151">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="a9131-152">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a9131-152">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="a9131-153">Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a9131-153">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="a9131-154">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a9131-154">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="a9131-155">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a9131-155">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="a9131-156">Avaa haku valitsemalla Hinnan laskenta -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a9131-156">In the Rate engine field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="a9131-157">Valitse hinnan laskenta rahdinkuljettajan yhteystietojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="a9131-157">Select the Rate engine that is in accordance with the contract that you have with the carrier.</span></span>  
+13. <span data-ttu-id="a9131-158">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a9131-158">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="a9131-159">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a9131-159">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="a9131-160">Avaa haku valitsemalla Hinnan päätiedot -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a9131-160">In the Rate master field, click the drop-down button to open the lookup.</span></span>
+16. <span data-ttu-id="a9131-161">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a9131-161">In the list, find and select the desired record.</span></span>
+17. <span data-ttu-id="a9131-162">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a9131-162">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="a9131-163">Avaa haku valitsemalla Siirtoajan laskenta -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="a9131-163">In the Transit time engine field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="a9131-164">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a9131-164">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="a9131-165">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="a9131-165">Click Save.</span></span>
 
 

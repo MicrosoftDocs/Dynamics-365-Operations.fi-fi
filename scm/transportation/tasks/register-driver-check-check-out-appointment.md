@@ -23,26 +23,26 @@ ms.contentlocale: fi-fi
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>Rekisteröi kuljettajan sisäänkuittaus ja lähteminen tapaamiseen
+# <a name="register-driver-check-in-and-check-out-for-an-appointment"></a><span data-ttu-id="08e50-103">Rekisteröi kuljettajan sisäänkuittaus ja lähteminen tapaamiseen</span><span class="sxs-lookup"><span data-stu-id="08e50-103">Register driver check-in and check-out for an appointment</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kuvataan, miten kuljettajan sisään- ja uloskuittaukset rekisteröidään. Kuljetuskoordinaattori tekee tämän yleensä. Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä. Ennen kuin aloitat, kuormalla on oltava tapaaminen. Tapaamisen voit luoda ajamalla ensin "Kuorman tapaamisen määrittäminen" -menettelyn.
+<span data-ttu-id="08e50-104">Tässä menettelyssä kuvataan, miten kuljettajan sisään- ja uloskuittaukset rekisteröidään.</span><span class="sxs-lookup"><span data-stu-id="08e50-104">This procedure shows how to register a driver check-in and a driver check-out.</span></span> <span data-ttu-id="08e50-105">Kuljetuskoordinaattori tekee tämän yleensä.</span><span class="sxs-lookup"><span data-stu-id="08e50-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="08e50-106">Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="08e50-106">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="08e50-107">Ennen kuin aloitat, kuormalla on oltava tapaaminen.</span><span class="sxs-lookup"><span data-stu-id="08e50-107">Before you start, there must be an appointment set up for a load.</span></span> <span data-ttu-id="08e50-108">Tapaamisen voit luoda ajamalla ensin "Kuorman tapaamisen määrittäminen" -menettelyn.</span><span class="sxs-lookup"><span data-stu-id="08e50-108">To create an appointment, you can run the “Set up an appointment for a load” procedure as a prerequisite.</span></span>
 
 
-## <a name="select-an-appointment"></a>Valitse tapaaminen
-1. Siirry kohtaan Kuljetustenhallinta > Suunnittelu > Laiturin tapaamisten ajoittaminen > Kuljettajan sisään- ja uloskuittaukset.
-2. Valitse tapaaminen.
+## <a name="select-an-appointment"></a><span data-ttu-id="08e50-109">Valitse tapaaminen</span><span class="sxs-lookup"><span data-stu-id="08e50-109">Select an appointment</span></span>
+1. <span data-ttu-id="08e50-110">Siirry kohtaan Kuljetustenhallinta > Suunnittelu > Laiturin tapaamisten ajoittaminen > Kuljettajan sisään- ja uloskuittaukset.</span><span class="sxs-lookup"><span data-stu-id="08e50-110">Go to Transportation management > Planning > Dock appointment scheduling > Driver check-in and check-out.</span></span>
+2. <span data-ttu-id="08e50-111">Valitse tapaaminen.</span><span class="sxs-lookup"><span data-stu-id="08e50-111">Select an appointment.</span></span>
 
-## <a name="register-driver-check-in"></a>Kuljettajan sisäänkuittauksen rekisteröinti
-1. Valitse Kuljettajan sisäänkuittaus.
-2. Kirjoita arvo Perävaunun tunnus -kenttään.
-3. Kirjoita arvo Kuljettajan nimi -kenttään.
-4. Kirjoita Ajokortti-kenttään arvo.
-5. Valitse OK.
+## <a name="register-driver-check-in"></a><span data-ttu-id="08e50-112">Kuljettajan sisäänkuittauksen rekisteröinti</span><span class="sxs-lookup"><span data-stu-id="08e50-112">Register driver check-in</span></span>
+1. <span data-ttu-id="08e50-113">Valitse Kuljettajan sisäänkuittaus.</span><span class="sxs-lookup"><span data-stu-id="08e50-113">Click Driver check-in.</span></span>
+2. <span data-ttu-id="08e50-114">Kirjoita arvo Perävaunun tunnus -kenttään.</span><span class="sxs-lookup"><span data-stu-id="08e50-114">In the Trailer number field, type a value.</span></span>
+3. <span data-ttu-id="08e50-115">Kirjoita arvo Kuljettajan nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="08e50-115">In the Driver name field, type a value.</span></span>
+4. <span data-ttu-id="08e50-116">Kirjoita Ajokortti-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="08e50-116">In the Driver license field, type a value.</span></span>
+5. <span data-ttu-id="08e50-117">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="08e50-117">Click OK.</span></span>
 
-## <a name="register-driver-check-out"></a>Kuljettajan uloskuittauksen rekisteröinti
-1. Valitse Kuljettajan uloskuittaus.
-2. Valitse OK.
+## <a name="register-driver-check-out"></a><span data-ttu-id="08e50-118">Kuljettajan uloskuittauksen rekisteröinti</span><span class="sxs-lookup"><span data-stu-id="08e50-118">Register driver check-out</span></span>
+1. <span data-ttu-id="08e50-119">Valitse Kuljettajan uloskuittaus.</span><span class="sxs-lookup"><span data-stu-id="08e50-119">Click Driver check-out.</span></span>
+2. <span data-ttu-id="08e50-120">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="08e50-120">Click OK.</span></span>
 
 

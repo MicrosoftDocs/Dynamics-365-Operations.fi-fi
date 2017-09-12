@@ -16,129 +16,129 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: be601efd857a0d57210680adcb0b0a1f17ca2f27
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: cbd9c5e3c4b5966e12f0219b321a548730adcd06
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-the-dependency-of-configurations-from-othcomponents-for-electronic-reporting-er"></a>Konfiguraatioiden muihin komponentteihin liittyvän riippuvuuden määrittäminen sähköistä raportointia (ER) varten
+# <a name="define-the-dependency-of-configurations-from-othcomponents-for-electronic-reporting-er"></a><span data-ttu-id="7a6cc-103">Konfiguraatioiden muihin komponentteihin liittyvän riippuvuuden määrittäminen sähköistä raportointia (ER) varten</span><span class="sxs-lookup"><span data-stu-id="7a6cc-103">Define the dependency of configurations from othcomponents for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Voit suorittaa nämä vaiheet, jos ER Mallin yhdistämismäärityksen konfiguraatioiden hallinta -tehtäväoppaan vaiheet on suoritettu ja sinulla on Microsoft Dynamics Lifecycle Services (LCS) -palvelun käyttöoikeus.
+<span data-ttu-id="7a6cc-104">Voit suorittaa nämä vaiheet, jos ER Mallin yhdistämismäärityksen konfiguraatioiden hallinta -tehtäväoppaan vaiheet on suoritettu ja sinulla on Microsoft Dynamics Lifecycle Services (LCS) -palvelun käyttöoikeus.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-104">To complete these steps, you must first complete the steps in the task guide, ER Manage model mapping configurations, and you must have access to Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-Tässä menettelyssä kerrotaan, miten sähköisen raportoinnin (ER) konfiguraatio suunnitellaan ja miten sen riippuvuus muista ohjelmistojen komponenteista määritetään. Näin voit varmistaa, että konfiguraatio ladataan oikein tiettyyn Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -versioon. Tässä esimerkissä luodaan pakollisia ER-konfiguraatioita malliyritykselle Litware, Inc. 
+<span data-ttu-id="7a6cc-105">Tässä menettelyssä kerrotaan, miten sähköisen raportoinnin (ER) konfiguraatio suunnitellaan ja miten sen riippuvuus muista ohjelmistojen komponenteista määritetään. Näin voit varmistaa, että konfiguraatio ladataan oikein tiettyyn Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -versioon.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-105">This procedure shows how to design an Electronic reporting (ER) configuration and specify its dependency from other software components, so that you can help guarantee that the configuration is correctly downloaded to a specific version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="7a6cc-106">Tässä esimerkissä luodaan pakollisia ER-konfiguraatioita malliyritykselle Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-106">In this example, you will create required ER configurations for the sample company Litware, Inc.</span></span> 
 
-Nämä ohjeet on tarkoitettu käyttäjille, joille on määritetty järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli. Nämä vaiheet voidaan suorittaa mille tahansa yritykselle, koska yritykset jakavat ER-konfiguraatiot. 
+<span data-ttu-id="7a6cc-107">Nämä ohjeet on tarkoitettu käyttäjille, joille on määritetty järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-107">This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them.</span></span> <span data-ttu-id="7a6cc-108">Nämä vaiheet voidaan suorittaa mille tahansa yritykselle, koska yritykset jakavat ER-konfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-108">The steps can be performed in any company, because ER configurations are shared among companies.</span></span> 
 
-1. Valitse Organisaation hallinto > Sähköinen raportointi > Konfiguraatiot.
-    * Varmista, että konfiguraatioiden puurakenne sisältää Tietomallin esimerkki -konfiguraation ja alinimikkeet. Suorita muussa tapauksessa ER Mallin yhdistämismäärityksen konfiguraatioiden hallinta -tehtäväoppaan vaiheet. Aloita sitten tämä opas uudelleen.   
+1. <span data-ttu-id="7a6cc-109">Valitse Organisaation hallinto > Sähköinen raportointi > Konfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-109">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+    * <span data-ttu-id="7a6cc-110">Varmista, että konfiguraatioiden puurakenne sisältää Tietomallin esimerkki -konfiguraation ja alinimikkeet.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-110">Make sure that the configurations tree contains the ‘Sample data model’ configuration and subordinate items.</span></span> <span data-ttu-id="7a6cc-111">Suorita muussa tapauksessa ER Mallin yhdistämismäärityksen konfiguraatioiden hallinta -tehtäväoppaan vaiheet. Aloita sitten tämä opas uudelleen.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-111">Otherwise, complete the steps in the task guide, ER Manage model mapping configurations, and then start this guide again.</span></span>   
 
-## <a name="define-the-dependency-of-er-configurations-from-other-components"></a>ER-konfiguraatioiden riippuvuuden määrittäminen muista osista
-1. Laajenna puussa Sample data model.
-2. Valitse puussa Sample data model\Sample mapping.
-    * Valitaan Esimerkkiyhdistämismääritys-mallin yhdistämismäärityksen konfiguraation luonnosversio. Nyt määritetään sen riippuvuus muista ohjelmistokomponenteista. Tämä vaihe on edellytys tämän konfiguraation version sähköisen raportoinnin säilöstä latauksen hallinnan ja muiden tämän version käyttötarkoitusten edellytys.   
-3. Laajenna Edellytykset-osa.
-    * Huomaa, että toteutusten edellytysten ryhmä on lisätty automaattisesti tässä vaiheessa. Tämä ryhmä sisältää edellytetyn komponentin, joka viittaa tietomallin konfiguraatioon. Sen Toteutus-merkintä on käytössä. Merkintä tarkoittaa, että Esimerkkiyhdistämismääritys-yhdistämismäärityksen konfiguraatiota pidetään Tietomallin esimerkki -tietomallin toteutuksena. Tämä komponentti pakottaa sähköisen raportoinnin lataamaan Esimerkkiyhdistämismääritys-yhdistämismäärityksen konfiguraation sähköisen raportoinnin säilöstä aina, kun Tietomallin esimerkki -mallin konfiguraatio ladataan.   
-4. Valitse Muokkaa.
-    * Konfiguraation nykyisen version yksittäinen riippuvuus ohjelmiston komponentista voidaan määrittää käyttämällä komponentin tyypin määritelmää ja joko komponentin versiota tai komponentin versioiden aluetta.  
-    * Halutut riippuvuudet voidaan ryhmitellä yhteen. Kun ryhmittelyn tyypiksi valitaan Kaikki, ryhmän riippuvuuden ehdon katsotaan täyttyneen, kun kukin tämän ryhmän ja aliryhmän riippuvuuden ehto täyttyy. Kun ryhmittelyn tyypiksi valitaan Yksi seuraavista, ryhmän riippuvuuden ehdon katsotaan täyttyneen, kun vähintään yksi tämän ryhmän riippuvuuden ehto täyttyy.   
-5. Valitse Uusi.
-6. Valitse Tuotteen edellytetty komponentti.
-7. Valitse Microsoft Dynamics 365 for Operations (1611).
-8. Kirjoita Versio-kenttään [7.1.1541.3036,8).
-    * [7.1.1541.3036,8)  
-    * Annetut riippuvuudet arvioidaan, kun tämä konfiguraatio ladataan mistä tahansa sähköisen raportoinnin säilöstä. Tämä konfiguraation versio ladataan sähköisen raportoinnin säilöstä, kun Tietomallin esimerkki -konfiguraation versio 1 on jo paikallaan tai ladattu etukäteen. Jos se on ladattu etukäteen, se on tehtävä valmiiksi Finance and Operations -sovelluksessa, jonka version on oltava 7.1.1541.3036 tai uudempi. Versio ei kuitenkaan saa olla uudempi kuin pääversio 8.   
-9. Valitse Tallenna.
-10. Sulje sivu.
-11. Voit muuttaa tilaa valitsemalla Muuta.
-12. Valitse Valmis.
-13. Valitse OK.
-14. Valitse puussa Sample data model\Sample mapping (alternative).
-15. Valitse Muokkaa.
-16. Valitse Uusi.
-17. Valitse Tuotteen edellytetty komponentti.
-18. Valitse Microsoft Dynamics AX 7.0 RTW.
-19. Kirjoita Versio-kenttään [7.0.1265.3015,7.1).
-    * [7.0.1265.3015,7.1)  
-    * Riippuvuudet arvioidaan, kun tämä konfiguraatio ladataan mistä tahansa sähköisen raportoinnin säilöstä. Tämä konfiguraation versio ladataan sähköisen raportoinnin säilöstä, kun Tietomallin esimerkki -konfiguraation versio 1 on jo paikallaan tai ladattu etukäteen. Jos se on ladattu etukäteen, se on tehtävä valmiiksi Microsoft Dynamics 365 for Finance and Operations, Enterprise editionissa, jonka version on oltava 7.0.1265.3015 tai uudempi. Versio ei kuitenkaan saa olla uudempi kuin aliversio 1.   
-20. Valitse Tallenna.
-21. Sulje sivu.
-22. Voit muuttaa tilaa valitsemalla Muuta.
-23. Valitse Valmis.
-24. Valitse OK.
+## <a name="define-the-dependency-of-er-configurations-from-other-components"></a><span data-ttu-id="7a6cc-112">ER-konfiguraatioiden riippuvuuden määrittäminen muista osista</span><span class="sxs-lookup"><span data-stu-id="7a6cc-112">Define the dependency of ER configurations from other components</span></span>
+1. <span data-ttu-id="7a6cc-113">Laajenna puussa Sample data model.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-113">In the tree, expand 'Sample data model'.</span></span>
+2. <span data-ttu-id="7a6cc-114">Valitse puussa Sample data model\Sample mapping.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-114">In the tree, select 'Sample data model\Sample mapping'.</span></span>
+    * <span data-ttu-id="7a6cc-115">Valitaan Esimerkkiyhdistämismääritys-mallin yhdistämismäärityksen konfiguraation luonnosversio.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-115">We selected the draft version of the ‘Sample mapping’ model mapping configuration.</span></span> <span data-ttu-id="7a6cc-116">Nyt määritetään sen riippuvuus muista ohjelmistokomponenteista.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-116">We will now define its dependency from other software components.</span></span> <span data-ttu-id="7a6cc-117">Tämä vaihe on edellytys tämän konfiguraation version sähköisen raportoinnin säilöstä latauksen hallinnan ja muiden tämän version käyttötarkoitusten edellytys.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-117">This step is considered a prerequisite for controlling the download of this configuration’s version from an ER repository and any further use of this version.</span></span>   
+3. <span data-ttu-id="7a6cc-118">Laajenna Edellytykset-osa.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-118">Expand the Prerequisites section.</span></span>
+    * <span data-ttu-id="7a6cc-119">Huomaa, että toteutusten edellytysten ryhmä on lisätty automaattisesti tässä vaiheessa.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-119">Note that the ‘Implementations’ prerequisites group has been added automatically at this stage.</span></span> <span data-ttu-id="7a6cc-120">Tämä ryhmä sisältää edellytetyn komponentin, joka viittaa tietomallin konfiguraatioon. Sen Toteutus-merkintä on käytössä.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-120">This group contains the prerequisite component that refers to the data model configuration and has the Implementation flag turned on.</span></span> <span data-ttu-id="7a6cc-121">Merkintä tarkoittaa, että Esimerkkiyhdistämismääritys-yhdistämismäärityksen konfiguraatiota pidetään Tietomallin esimerkki -tietomallin toteutuksena.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-121">This flag indicates that the ‘Sample mapping’ mapping configuration is considered the implementation of the ‘Sample data model’ data model.</span></span> <span data-ttu-id="7a6cc-122">Tämä komponentti pakottaa sähköisen raportoinnin lataamaan Esimerkkiyhdistämismääritys-yhdistämismäärityksen konfiguraation sähköisen raportoinnin säilöstä aina, kun Tietomallin esimerkki -mallin konfiguraatio ladataan.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-122">This component will force ER to download the ‘Sample mapping’ mapping configuration from an ER repository whenever the ‘Sample data model’ model configuration is downloaded.</span></span>   
+4. <span data-ttu-id="7a6cc-123">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-123">Click Edit.</span></span>
+    * <span data-ttu-id="7a6cc-124">Konfiguraation nykyisen version yksittäinen riippuvuus ohjelmiston komponentista voidaan määrittää käyttämällä komponentin tyypin määritelmää ja joko komponentin versiota tai komponentin versioiden aluetta.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-124">A single dependency of the current version of a configuration from a software component can be specified by using the definition of the component’s type, and either the component version or a range of component versions.</span></span>  
+    * <span data-ttu-id="7a6cc-125">Halutut riippuvuudet voidaan ryhmitellä yhteen.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-125">Desired dependencies can be grouped together.</span></span> <span data-ttu-id="7a6cc-126">Kun ryhmittelyn tyypiksi valitaan Kaikki, ryhmän riippuvuuden ehdon katsotaan täyttyneen, kun kukin tämän ryhmän ja aliryhmän riippuvuuden ehto täyttyy.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-126">When the ‘All of’ grouping type is selected, the dependency condition of this group is considered satisfied when each dependency condition from this group and subordinate group is satisfied.</span></span> <span data-ttu-id="7a6cc-127">Kun ryhmittelyn tyypiksi valitaan Yksi seuraavista, ryhmän riippuvuuden ehdon katsotaan täyttyneen, kun vähintään yksi tämän ryhmän riippuvuuden ehto täyttyy.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-127">When the ‘One of’ grouping type is selected, the dependency condition of this group is considered satisfied when at least one dependency condition from this group is satisfied.</span></span>   
+5. <span data-ttu-id="7a6cc-128">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-128">Click New.</span></span>
+6. <span data-ttu-id="7a6cc-129">Valitse Tuotteen edellytetty komponentti.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-129">Select Product prerequisite component.</span></span>
+7. <span data-ttu-id="7a6cc-130">Valitse Microsoft Dynamics 365 for Operations (1611).</span><span class="sxs-lookup"><span data-stu-id="7a6cc-130">Select Microsoft Dynamics 365 for Operations (1611).</span></span>
+8. <span data-ttu-id="7a6cc-131">Kirjoita Versio-kenttään [7.1.1541.3036,8).</span><span class="sxs-lookup"><span data-stu-id="7a6cc-131">In the Version field, type '[7.1.1541.3036,8)'.</span></span>
+    * <span data-ttu-id="7a6cc-132">[7.1.1541.3036,8)</span><span class="sxs-lookup"><span data-stu-id="7a6cc-132">[7.1.1541.3036,8)</span></span>  
+    * <span data-ttu-id="7a6cc-133">Annetut riippuvuudet arvioidaan, kun tämä konfiguraatio ladataan mistä tahansa sähköisen raportoinnin säilöstä.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-133">Dependencies that you enter will be evaluated when this configuration is downloaded from any ER repository.</span></span> <span data-ttu-id="7a6cc-134">Tämä konfiguraation versio ladataan sähköisen raportoinnin säilöstä, kun Tietomallin esimerkki -konfiguraation versio 1 on jo paikallaan tai ladattu etukäteen.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-134">This configuration version will be downloaded from the ER repository when version 1 of the ‘Sample data model’ configuration is either already in place or downloaded in advance.</span></span> <span data-ttu-id="7a6cc-135">Jos se on ladattu etukäteen, se on tehtävä valmiiksi Finance and Operations -sovelluksessa, jonka version on oltava 7.1.1541.3036 tai uudempi. Versio ei kuitenkaan saa olla uudempi kuin pääversio 8.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-135">If it’s downloaded in advance, it must be completed in Finance and Operations, the version of which must be 7.1.1541.3036 or later, but must not exceed major version 8.</span></span>   
+9. <span data-ttu-id="7a6cc-136">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-136">Click Save.</span></span>
+10. <span data-ttu-id="7a6cc-137">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-137">Close the page.</span></span>
+11. <span data-ttu-id="7a6cc-138">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-138">Click Change status.</span></span>
+12. <span data-ttu-id="7a6cc-139">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-139">Click Complete.</span></span>
+13. <span data-ttu-id="7a6cc-140">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-140">Click OK.</span></span>
+14. <span data-ttu-id="7a6cc-141">Valitse puussa Sample data model\Sample mapping (alternative).</span><span class="sxs-lookup"><span data-stu-id="7a6cc-141">In the tree, select 'Sample data model\Sample mapping (alternative)'.</span></span>
+15. <span data-ttu-id="7a6cc-142">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-142">Click Edit.</span></span>
+16. <span data-ttu-id="7a6cc-143">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-143">Click New.</span></span>
+17. <span data-ttu-id="7a6cc-144">Valitse Tuotteen edellytetty komponentti.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-144">Select Product prerequisite component.</span></span>
+18. <span data-ttu-id="7a6cc-145">Valitse Microsoft Dynamics AX 7.0 RTW.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-145">Select Microsoft Dynamics AX 7.0 RTW.</span></span>
+19. <span data-ttu-id="7a6cc-146">Kirjoita Versio-kenttään [7.0.1265.3015,7.1).</span><span class="sxs-lookup"><span data-stu-id="7a6cc-146">In the Version field, type '[7.0.1265.3015,7.1)'.</span></span>
+    * <span data-ttu-id="7a6cc-147">[7.0.1265.3015,7.1)</span><span class="sxs-lookup"><span data-stu-id="7a6cc-147">[7.0.1265.3015,7.1)</span></span>  
+    * <span data-ttu-id="7a6cc-148">Riippuvuudet arvioidaan, kun tämä konfiguraatio ladataan mistä tahansa sähköisen raportoinnin säilöstä.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-148">Dependencies will be evaluated when the configuration is downloaded from any ER repository.</span></span> <span data-ttu-id="7a6cc-149">Tämä konfiguraation versio ladataan sähköisen raportoinnin säilöstä, kun Tietomallin esimerkki -konfiguraation versio 1 on jo paikallaan tai ladattu etukäteen.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-149">This configuration version will be downloaded from the ER repository when version 1 of the ‘Sample data model’ configuration is either already in place or downloaded in advance.</span></span> <span data-ttu-id="7a6cc-150">Jos se on ladattu etukäteen, se on tehtävä valmiiksi Microsoft Dynamics 365 for Finance and Operations, Enterprise editionissa, jonka version on oltava 7.0.1265.3015 tai uudempi. Versio ei kuitenkaan saa olla uudempi kuin aliversio 1.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-150">If it’s downloaded in advance, it must be completed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, the version of which must be 7.0.1265.3015 or later, but must not exceed minor version 1.</span></span>   
+20. <span data-ttu-id="7a6cc-151">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-151">Click Save.</span></span>
+21. <span data-ttu-id="7a6cc-152">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-152">Close the page.</span></span>
+22. <span data-ttu-id="7a6cc-153">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-153">Click Change status.</span></span>
+23. <span data-ttu-id="7a6cc-154">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-154">Click Complete.</span></span>
+24. <span data-ttu-id="7a6cc-155">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-155">Click OK.</span></span>
 
-## <a name="configure-the-er-repository"></a>ER-säilön määrittäminen
-1. Sulje sivu.
-2. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
-    * Avaa nykyisen sähköisen raportointipalvelun Litware Inc. -yrityksen sähköisen raportoinnin säilöt.  
-3. Merkitse valittu rivi luettelossa.
-4. Valitse Säilöt.
-5. Valitse Näytä suodattimet.
-6. Syötä Tyypin nimi -kenttään suodattimen LCS-arvo käyttämällä sisältää-suodatinoperaattoria.
-    * Jos LCS-säilö on jo rekisteröity nykyisessä sähköisessä raportointipalvelussa, voit ohittaa tämän alitehtävän jäljellä olevat vaiheet. Jos LCS-säilöä ei ole vielä rekisteröity, suorita jäljellä olevat vaiheet.   
-7. Avaa valintaikkuna valitsemalla Lisää.
-8. Syötä Konfiguraatiosäilön tyyppi -kentän arvoksi LCS.
-9. Valitse Luo säilö.
-10. Anna tai valitse Projekti-kentässä arvo.
-    * Valitse haluamasi LCS-projekti Projekti-kentän hausta.  
-11. Valitse OK.
-12. Sulje sivu.
+## <a name="configure-the-er-repository"></a><span data-ttu-id="7a6cc-156">ER-säilön määrittäminen</span><span class="sxs-lookup"><span data-stu-id="7a6cc-156">Configure the ER repository</span></span>
+1. <span data-ttu-id="7a6cc-157">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-157">Close the page.</span></span>
+2. <span data-ttu-id="7a6cc-158">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-158">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="7a6cc-159">Avaa nykyisen sähköisen raportointipalvelun Litware Inc. -yrityksen sähköisen raportoinnin säilöt.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-159">Open the list of ER repositories for the current ER provider, Litware, Inc.</span></span>  
+3. <span data-ttu-id="7a6cc-160">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-160">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="7a6cc-161">Valitse Säilöt.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-161">Click Repositories.</span></span>
+5. <span data-ttu-id="7a6cc-162">Valitse Näytä suodattimet.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-162">Click Show filters.</span></span>
+6. <span data-ttu-id="7a6cc-163">Syötä Tyypin nimi -kenttään suodattimen LCS-arvo käyttämällä sisältää-suodatinoperaattoria.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-163">Enter a filter value of "LCS" on the "Type name" field using the "contains" filter operator.</span></span>
+    * <span data-ttu-id="7a6cc-164">Jos LCS-säilö on jo rekisteröity nykyisessä sähköisessä raportointipalvelussa, voit ohittaa tämän alitehtävän jäljellä olevat vaiheet.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-164">If the LCS repository is already registered for the current ER provider, you can skip the remaining steps in this sub-task.</span></span> <span data-ttu-id="7a6cc-165">Jos LCS-säilöä ei ole vielä rekisteröity, suorita jäljellä olevat vaiheet.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-165">If the LCS repository isn’t already registered, complete the remaining steps.</span></span>   
+7. <span data-ttu-id="7a6cc-166">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-166">Click Add to open the drop dialog.</span></span>
+8. <span data-ttu-id="7a6cc-167">Syötä Konfiguraatiosäilön tyyppi -kentän arvoksi LCS.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-167">In the Configuration repository type field, enter 'LCS'.</span></span>
+9. <span data-ttu-id="7a6cc-168">Valitse Luo säilö.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-168">Click Create repository.</span></span>
+10. <span data-ttu-id="7a6cc-169">Anna tai valitse Projekti-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-169">In the Project field, enter or select a value.</span></span>
+    * <span data-ttu-id="7a6cc-170">Valitse haluamasi LCS-projekti Projekti-kentän hausta.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-170">Select the desired LCS project from the lookup of the ‘Project’ field.</span></span>  
+11. <span data-ttu-id="7a6cc-171">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-171">Click OK.</span></span>
+12. <span data-ttu-id="7a6cc-172">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-172">Close the page.</span></span>
 
-## <a name="upload-configurations-to-lcs"></a>Konfiguraatioiden lataaminen LCS:ään
-1. Valitse Raportointikonfiguraatiot.
-2. Valitse puussa Sample data model.
-3. Valitse tämän konfiguraation valmis versio.
-4. Voit muuttaa tilaa valitsemalla Muuta.
-5. Valitse Jaa.
-6. Valitse OK.
-    * Tämän mallin konfiguraation versio 1 on ladattu LCS:ään LCS-projektin avulla aiemmin määritetyn sähköisen raportoinnin säilöä varten.   
-7. Laajenna puussa Sample data model.
-8. Valitse puussa Sample data model\Sample mapping.
-9. Valitse tämän konfiguraation valmis versio.
-10. Voit muuttaa tilaa valitsemalla Muuta.
-11. Valitse Jaa.
-12. Valitse OK.
-    * Tämän mallin yhdistämismäärityksen konfiguraation versio 1.1 on ladattu LCS:ään LCS-projektin avulla aiemmin määritetyn sähköisen raportoinnin säilöä varten.   
-13. Valitse puussa Sample data model\Sample mapping (alternative).
-14. Valitse tämän konfiguraation valmis versio.
-15. Voit muuttaa tilaa valitsemalla Muuta.
-16. Valitse Jaa.
-17. Valitse OK.
-    * Tämän mallin yhdistämismäärityksen konfiguraation versio 1.1 on ladattu LCS:ään LCS-projektin avulla aiemmin määritetyn sähköisen raportoinnin säilöä varten.   
+## <a name="upload-configurations-to-lcs"></a><span data-ttu-id="7a6cc-173">Konfiguraatioiden lataaminen LCS:ään</span><span class="sxs-lookup"><span data-stu-id="7a6cc-173">Upload configurations to LCS</span></span>
+1. <span data-ttu-id="7a6cc-174">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-174">Click Reporting configurations.</span></span>
+2. <span data-ttu-id="7a6cc-175">Valitse puussa Sample data model.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-175">In the tree, select 'Sample data model'.</span></span>
+3. <span data-ttu-id="7a6cc-176">Valitse tämän konfiguraation valmis versio.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-176">Select the completed version of this configuration.</span></span>
+4. <span data-ttu-id="7a6cc-177">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-177">Click Change status.</span></span>
+5. <span data-ttu-id="7a6cc-178">Valitse Jaa.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-178">Click Share.</span></span>
+6. <span data-ttu-id="7a6cc-179">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-179">Click OK.</span></span>
+    * <span data-ttu-id="7a6cc-180">Tämän mallin konfiguraation versio 1 on ladattu LCS:ään LCS-projektin avulla aiemmin määritetyn sähköisen raportoinnin säilöä varten.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-180">Version 1 of this model configuration has been uploaded to LCS by using the LCS project for the ER repository that was previously configured.</span></span>   
+7. <span data-ttu-id="7a6cc-181">Laajenna puussa Sample data model.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-181">In the tree, expand 'Sample data model'.</span></span>
+8. <span data-ttu-id="7a6cc-182">Valitse puussa Sample data model\Sample mapping.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-182">In the tree, select 'Sample data model\Sample mapping'.</span></span>
+9. <span data-ttu-id="7a6cc-183">Valitse tämän konfiguraation valmis versio.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-183">Select the completed version of this configuration.</span></span>
+10. <span data-ttu-id="7a6cc-184">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-184">Click Change status.</span></span>
+11. <span data-ttu-id="7a6cc-185">Valitse Jaa.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-185">Click Share.</span></span>
+12. <span data-ttu-id="7a6cc-186">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-186">Click OK.</span></span>
+    * <span data-ttu-id="7a6cc-187">Tämän mallin yhdistämismäärityksen konfiguraation versio 1.1 on ladattu LCS:ään LCS-projektin avulla aiemmin määritetyn sähköisen raportoinnin säilöä varten.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-187">Version 1.1 of this model mapping configuration has been uploaded to LCS by using the LCS project for the ER repository that was previously configured.</span></span>   
+13. <span data-ttu-id="7a6cc-188">Valitse puussa Sample data model\Sample mapping (alternative).</span><span class="sxs-lookup"><span data-stu-id="7a6cc-188">In the tree, select 'Sample data model\Sample mapping (alternative)'.</span></span>
+14. <span data-ttu-id="7a6cc-189">Valitse tämän konfiguraation valmis versio.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-189">Select the completed version of this configuration.</span></span>
+15. <span data-ttu-id="7a6cc-190">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-190">Click Change status.</span></span>
+16. <span data-ttu-id="7a6cc-191">Valitse Jaa.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-191">Click Share.</span></span>
+17. <span data-ttu-id="7a6cc-192">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-192">Click OK.</span></span>
+    * <span data-ttu-id="7a6cc-193">Tämän mallin yhdistämismäärityksen konfiguraation versio 1.1 on ladattu LCS:ään LCS-projektin avulla aiemmin määritetyn sähköisen raportoinnin säilöä varten.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-193">Version 1.1 of this model mapping configuration has been uploaded to LCS by using the LCS project for the ER repository that was previously configured.</span></span>   
 
-## <a name="evaluate-er-configuration-dependencies"></a>ER-konfiguraation riippuvuuksien arvioiminen
-    * Luodut konfiguraatiot poistetaan järjestelmästä ja ladataan takaisin LCS-säilöstä.  
-1. Valitse puussa Sample data model\Sample mapping.
-2. Valitse Poista.
-3. Valitse Kyllä.
-4. Valitse puussa Sample data model\Sample mapping (alternative).
-5. Valitse Poista.
-6. Valitse Kyllä.
-7. Valitse puussa Sample data model\Sample format.
-8. Valitse Poista.
-9. Valitse Kyllä.
-10. Valitse puussa Sample data model.
-11. Valitse Poista.
-12. Valitse Kyllä.
-13. Sulje sivu.
-    * Avaa nykyisen sähköisen raportointipalvelun Litware Inc. -yrityksen sähköisen raportoinnin säilöt.  
-14. Valitse Säilöt.
-15. Valitse Näytä suodattimet.
-16. Syötä Tyypin nimi -kenttään suodattimen LCS-arvo käyttämällä sisältää-suodatinoperaattoria.
-17. Valitse Avaa.
-18. Valitse puussa Sample data model.
-    * Ota huomioon, että voit tarkastella arviointia edellytysehtojen täyttymisestä nykyisen säilön kunkin ER-konfiguraation kohdalla. Voit tarkastella tätä arvioinnissa valitsemalla Tarkista edellytykset.   
-19. Valitse Tarkista edellytykset.
-20. Valitse Tuo.
-21. Valitse Kyllä.
-22. Sulje sivu.
-23. Sulje sivu.
-24. Sulje sivu.
-25. Valitse Organisaation hallinto > Sähköinen raportointi > Konfiguraatiot.
-26. Laajenna puussa Sample data model.
-    * Huomaa, että Esimerkkiyhdistämismääritys-mallin yhdistämismäärityksen konfiguraatio on ladattu yhdessä valitun tietomallin konfiguraation kanssa. Nämä kaksi tiedostoa ladataan yhdessä, koska Esimerkkiyhdistämismääritys-konfiguraatio on määritetty valitun tietomallin toteutuksessa. Se on myös käytössä Finance and Operationsissa. Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatiota ei ladattu, koska pakollisen sovellusversion ehtoja ei täytetä.   
-    * Jos kirjaudut sisään Dynamics 365 for Finance and Operations, Enterprise Editioniin, rekisteröit saman lähteen, käytät samaa LCS-projektia ja lataat saman tietomallin konfiguraation. Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatio ladataan, kun taas Esimerkkiyhdistämismääritys-konfiguraatio ohitetaan.  
+## <a name="evaluate-er-configuration-dependencies"></a><span data-ttu-id="7a6cc-194">ER-konfiguraation riippuvuuksien arvioiminen</span><span class="sxs-lookup"><span data-stu-id="7a6cc-194">Evaluate ER configuration dependencies</span></span>
+    * <span data-ttu-id="7a6cc-195">Luodut konfiguraatiot poistetaan järjestelmästä ja ladataan takaisin LCS-säilöstä.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-195">We will delete created configurations from the system and download them back from the LCS repository.</span></span>  
+1. <span data-ttu-id="7a6cc-196">Valitse puussa Sample data model\Sample mapping.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-196">In the tree, select 'Sample data model\Sample mapping'.</span></span>
+2. <span data-ttu-id="7a6cc-197">Valitse Poista.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-197">Click Delete.</span></span>
+3. <span data-ttu-id="7a6cc-198">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-198">Click Yes.</span></span>
+4. <span data-ttu-id="7a6cc-199">Valitse puussa Sample data model\Sample mapping (alternative).</span><span class="sxs-lookup"><span data-stu-id="7a6cc-199">In the tree, select 'Sample data model\Sample mapping (alternative)'.</span></span>
+5. <span data-ttu-id="7a6cc-200">Valitse Poista.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-200">Click Delete.</span></span>
+6. <span data-ttu-id="7a6cc-201">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-201">Click Yes.</span></span>
+7. <span data-ttu-id="7a6cc-202">Valitse puussa Sample data model\Sample format.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-202">In the tree, select 'Sample data model\Sample format'.</span></span>
+8. <span data-ttu-id="7a6cc-203">Valitse Poista.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-203">Click Delete.</span></span>
+9. <span data-ttu-id="7a6cc-204">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-204">Click Yes.</span></span>
+10. <span data-ttu-id="7a6cc-205">Valitse puussa Sample data model.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-205">In the tree, select 'Sample data model'.</span></span>
+11. <span data-ttu-id="7a6cc-206">Valitse Poista.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-206">Click Delete.</span></span>
+12. <span data-ttu-id="7a6cc-207">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-207">Click Yes.</span></span>
+13. <span data-ttu-id="7a6cc-208">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-208">Close the page.</span></span>
+    * <span data-ttu-id="7a6cc-209">Avaa nykyisen sähköisen raportointipalvelun Litware Inc. -yrityksen sähköisen raportoinnin säilöt.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-209">Open the list of ER repositories for the current ER provider, Litware, Inc.</span></span>  
+14. <span data-ttu-id="7a6cc-210">Valitse Säilöt.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-210">Click Repositories.</span></span>
+15. <span data-ttu-id="7a6cc-211">Valitse Näytä suodattimet.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-211">Click Show filters.</span></span>
+16. <span data-ttu-id="7a6cc-212">Syötä Tyypin nimi -kenttään suodattimen LCS-arvo käyttämällä sisältää-suodatinoperaattoria.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-212">Enter a filter value of "LCS" on the "Type name" field using the "contains" filter operator.</span></span>
+17. <span data-ttu-id="7a6cc-213">Valitse Avaa.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-213">Click Open.</span></span>
+18. <span data-ttu-id="7a6cc-214">Valitse puussa Sample data model.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-214">In the tree, select 'Sample data model'.</span></span>
+    * <span data-ttu-id="7a6cc-215">Ota huomioon, että voit tarkastella arviointia edellytysehtojen täyttymisestä nykyisen säilön kunkin ER-konfiguraation kohdalla.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-215">Note that you can view an evaluation of whether prerequisite conditions have been satisfied for each version of the ER configurations for the current repository.</span></span> <span data-ttu-id="7a6cc-216">Voit tarkastella tätä arvioinnissa valitsemalla Tarkista edellytykset.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-216">To view this evaluation, click Check prerequisites.</span></span>   
+19. <span data-ttu-id="7a6cc-217">Valitse Tarkista edellytykset.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-217">Click Check prerequisites.</span></span>
+20. <span data-ttu-id="7a6cc-218">Valitse Tuo.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-218">Click Import.</span></span>
+21. <span data-ttu-id="7a6cc-219">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-219">Click Yes.</span></span>
+22. <span data-ttu-id="7a6cc-220">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-220">Close the page.</span></span>
+23. <span data-ttu-id="7a6cc-221">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-221">Close the page.</span></span>
+24. <span data-ttu-id="7a6cc-222">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-222">Close the page.</span></span>
+25. <span data-ttu-id="7a6cc-223">Valitse Organisaation hallinto > Sähköinen raportointi > Konfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-223">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+26. <span data-ttu-id="7a6cc-224">Laajenna puussa Sample data model.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-224">In the tree, expand 'Sample data model'.</span></span>
+    * <span data-ttu-id="7a6cc-225">Huomaa, että Esimerkkiyhdistämismääritys-mallin yhdistämismäärityksen konfiguraatio on ladattu yhdessä valitun tietomallin konfiguraation kanssa.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-225">Note that the model ‘Sample mapping’ mapping configuration has been downloaded together with the selected data model configuration.</span></span> <span data-ttu-id="7a6cc-226">Nämä kaksi tiedostoa ladataan yhdessä, koska Esimerkkiyhdistämismääritys-konfiguraatio on määritetty valitun tietomallin toteutuksessa. Se on myös käytössä Finance and Operationsissa.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-226">The two files are downloaded together because ‘Sample mapping’ has been defined as implementing the selected data model, and because it’s applicable for Finance and Operations.</span></span> <span data-ttu-id="7a6cc-227">Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatiota ei ladattu, koska pakollisen sovellusversion ehtoja ei täytetä.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-227">The ‘Sample mapping (alternative)’ configuration hasn’t been downloaded because the condition for the required application version isn’t satisfied.</span></span>   
+    * <span data-ttu-id="7a6cc-228">Jos kirjaudut sisään Dynamics 365 for Finance and Operations, Enterprise Editioniin, rekisteröit saman lähteen, käytät samaa LCS-projektia ja lataat saman tietomallin konfiguraation. Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatio ladataan, kun taas Esimerkkiyhdistämismääritys-konfiguraatio ohitetaan.</span><span class="sxs-lookup"><span data-stu-id="7a6cc-228">If you sign in to Dynamics 365 for Finance and Operations, Enterprise edition, register the same provider, access the same LCS project, and download the same data model configuration, the ‘Sample mapping (alternative)’ configuration will download, whereas the ‘Sample mapping’ configuration will be skipped.</span></span>  
 
 

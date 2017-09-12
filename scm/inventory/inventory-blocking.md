@@ -1,7 +1,7 @@
 ---
 title: Varastoesto
 description: "Tässä artikkelissa on yleiskatsaus varastoestosta, joka on osa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,66 +10,63 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBlocking, InventQualityOrderTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7d00aaa272de32d4ef2082bf1822125800ca8a1e
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: eed2f3e203808f378ce954b6cc308859fea89e60
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="inventory-blocking"></a>Varastoesto
+# <a name="inventory-blocking"></a><span data-ttu-id="103f2-104">Varastoesto</span><span class="sxs-lookup"><span data-stu-id="103f2-104">Inventory blocking</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on yleiskatsaus varastoestosta, joka on osa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen.
+<span data-ttu-id="103f2-105">Tässä artikkelissa on yleiskatsaus varastoestosta, joka on osa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin laaduntarkastusprosessia.</span><span class="sxs-lookup"><span data-stu-id="103f2-105">This article provides an overview of inventory blocking, which is part of the quality inspection process in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="103f2-106">Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen.</span><span class="sxs-lookup"><span data-stu-id="103f2-106">You can use inventory blocking to prevent items from being processed or consumed.</span></span>
 
-Voit estää varastonimikkeitä seuraavilla tavoilla:
--   Manuaalisesti
--   Laatutilauksen luomalla
--   Käyttämällä prosessia, joka muodostaa laatutilauksen
--   Käyttämällä varaston tilan estoa
+<span data-ttu-id="103f2-107">Voit estää varastonimikkeitä seuraavilla tavoilla:</span><span class="sxs-lookup"><span data-stu-id="103f2-107">You can block inventory items in the following ways:</span></span>
+-   <span data-ttu-id="103f2-108">Manuaalisesti</span><span class="sxs-lookup"><span data-stu-id="103f2-108">Manually</span></span>
+-   <span data-ttu-id="103f2-109">Laatutilauksen luomalla</span><span class="sxs-lookup"><span data-stu-id="103f2-109">By creating a quality order</span></span>
+-   <span data-ttu-id="103f2-110">Käyttämällä prosessia, joka muodostaa laatutilauksen</span><span class="sxs-lookup"><span data-stu-id="103f2-110">By using a process that generates a quality order</span></span>
+-   <span data-ttu-id="103f2-111">Käyttämällä varaston tilan estoa</span><span class="sxs-lookup"><span data-stu-id="103f2-111">By using inventory status blocking</span></span>
 
-## <a name="blocking-items-manually"></a>Nimikkeiden manuaalinen esto
-Voit estää nimikkeen määrä luomalla tapahtuman **Varastoesto**-sivulla. Vain käytettävissä olevassa varastossa olevat nimikkeet voidaan asettaa toimituskieltoon manuaalisesti. Manuaalisesti estetyille määrille sinun tulee harkita, pitäisikö odotettujen kuittien sisältyä suunnittelutoimintoihin odotettuina ja saatavilla olevina määrinä. Oletetut vastaanotot ovat estettyjä nimikkeitä, joiden oletetaan olevan käytettävissä tarkastuksen jälkeen käytettävissä olevana varastona. Arvioidun päivämäärän voi säilyttää. Oletusarvon mukaan **Oletetut vastaanotot** -asetus on valittuna nimikkeille, jotka on estetty laatutilauksen kautta. Voit peruuttaa määrän manuaalisen eston poistamalla tapahtuman **Varastoestot**-sivulta.
+## <a name="blocking-items-manually"></a><span data-ttu-id="103f2-112">Nimikkeiden manuaalinen esto</span><span class="sxs-lookup"><span data-stu-id="103f2-112">Blocking items manually</span></span>
+<span data-ttu-id="103f2-113">Voit estää nimikkeen määrä luomalla tapahtuman **Varastoesto**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="103f2-113">You can block a quantity of an item by creating a transaction on the **Inventory blocking** page.</span></span> <span data-ttu-id="103f2-114">Vain käytettävissä olevassa varastossa olevat nimikkeet voidaan asettaa toimituskieltoon manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="103f2-114">Only items that are available as on-hand inventory can be blocked manually.</span></span> <span data-ttu-id="103f2-115">Manuaalisesti estetyille määrille sinun tulee harkita, pitäisikö odotettujen kuittien sisältyä suunnittelutoimintoihin odotettuina ja saatavilla olevina määrinä.</span><span class="sxs-lookup"><span data-stu-id="103f2-115">For manually blocked quantities, you must decide whether planning activities include expected receipts as an expected on-hand quantity.</span></span> <span data-ttu-id="103f2-116">Oletetut vastaanotot ovat estettyjä nimikkeitä, joiden oletetaan olevan käytettävissä tarkastuksen jälkeen käytettävissä olevana varastona.</span><span class="sxs-lookup"><span data-stu-id="103f2-116">Expected receipts are blocked items that you expect to be available as on-hand inventory after inspection is completed.</span></span> <span data-ttu-id="103f2-117">Arvioidun päivämäärän voi säilyttää.</span><span class="sxs-lookup"><span data-stu-id="103f2-117">You can maintain the expected date.</span></span> <span data-ttu-id="103f2-118">Oletusarvon mukaan **Oletetut vastaanotot** -asetus on valittuna nimikkeille, jotka on estetty laatutilauksen kautta.</span><span class="sxs-lookup"><span data-stu-id="103f2-118">By default, the **Expected receipts** option is selected for items that are blocked through a quality order.</span></span> <span data-ttu-id="103f2-119">Voit peruuttaa määrän manuaalisen eston poistamalla tapahtuman **Varastoestot**-sivulta.</span><span class="sxs-lookup"><span data-stu-id="103f2-119">You can cancel a manual block on a quantity by deleting the transaction on the **Inventory blocking** page.</span></span>
 
-## <a name="blocking-items-by-creating-a-quality-order"></a>Estä nimikkeet luomalla laatutilaus
-Voit määrittää nimikkeet, jotka on tarkistettava luomalla laatutilauksen **Laatutilaukset**-sivulla. Kun laatutilaus luodaan, nimikkeelle määritetty määrä estetään. Laatutilaukseen liitetty otantasuunitelma hallitsee ainoastaan tarkastettavien nimikkeiden määrää, ei estettyä määrää. Riippumatta määrästä, joka lähetetään tarkastettavaksi, otantasuunnitelman määritysten mukaan nimikemäärä, joka on määritetty laatutilauksessa, on määrä, joka on estetty.
+## <a name="blocking-items-by-creating-a-quality-order"></a><span data-ttu-id="103f2-120">Estä nimikkeet luomalla laatutilaus</span><span class="sxs-lookup"><span data-stu-id="103f2-120">Blocking items by creating a quality order</span></span>
+<span data-ttu-id="103f2-121">Voit määrittää nimikkeet, jotka on tarkistettava luomalla laatutilauksen **Laatutilaukset**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="103f2-121">You can specify items that must be inspected by creating a quality order on the **Quality orders** page.</span></span> <span data-ttu-id="103f2-122">Kun laatutilaus luodaan, nimikkeelle määritetty määrä estetään.</span><span class="sxs-lookup"><span data-stu-id="103f2-122">When you create a quality order, the quantity that you specify for an item is blocked.</span></span> <span data-ttu-id="103f2-123">Laatutilaukseen liitetty otantasuunitelma hallitsee ainoastaan tarkastettavien nimikkeiden määrää, ei estettyä määrää.</span><span class="sxs-lookup"><span data-stu-id="103f2-123">The sampling plan that is associated with a quality order controls only the quantity of items that must be inspected, not the quantity that is blocked.</span></span> <span data-ttu-id="103f2-124">Riippumatta määrästä, joka lähetetään tarkastettavaksi, otantasuunnitelman määritysten mukaan nimikemäärä, joka on määritetty laatutilauksessa, on määrä, joka on estetty.</span><span class="sxs-lookup"><span data-stu-id="103f2-124">The quantity that is entered on the quality order is the quantity that is blocked, regardless of the quantity that the sampling plan specifies should be sent for inspection.</span></span>
 
-## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Estä nimikkeet käyttämällä laatutilauksen luovaa prosessia
-Jos laatuprosessi määrittää, että nimike on tarkastettava, nimikemäärä estetään automaattisesti. Kun laatutilaus luodaan automaattisesti, laatutilaukseen liitetty nimikeotantasuunnitelma hallitsee sekä estettyjen nimikkeiden määrää että tarkistettavien nimikkeiden määrää. Jos **Täysi esto** -asetus on valittuna **Nimikeotanta**-sivulla, koko määrä esimerkiksi ostotilausrivistä estetään riippumatta nimikeotannan määrästä tarkastuksen aikana.
-### <a name="example"></a>Esimerkki
+## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a><span data-ttu-id="103f2-125">Estä nimikkeet käyttämällä laatutilauksen luovaa prosessia</span><span class="sxs-lookup"><span data-stu-id="103f2-125">Blocking items by using a process that generates a quality order</span></span>
+<span data-ttu-id="103f2-126">Jos laatuprosessi määrittää, että nimike on tarkastettava, nimikemäärä estetään automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="103f2-126">If a quality process specifies that an item must be inspected, a quantity of the item is blocked automatically.</span></span> <span data-ttu-id="103f2-127">Kun laatutilaus luodaan automaattisesti, laatutilaukseen liitetty nimikeotantasuunnitelma hallitsee sekä estettyjen nimikkeiden määrää että tarkistettavien nimikkeiden määrää.</span><span class="sxs-lookup"><span data-stu-id="103f2-127">Therefore, when a quality order is generated automatically, the item sampling plan that is associated with the quality order controls the both quantity of items that is blocked and the quantity that must be inspected.</span></span> <span data-ttu-id="103f2-128">Jos **Täysi esto** -asetus on valittuna **Nimikeotanta**-sivulla, koko määrä esimerkiksi ostotilausrivistä estetään riippumatta nimikeotannan määrästä tarkastuksen aikana.</span><span class="sxs-lookup"><span data-stu-id="103f2-128">If the **Full blocking** option on the **Item sampling** page is selected, the full quantity of, for example, a purchase order line is blocked during inspection, regardless of the item sampling quantity.</span></span>
+### <a name="example"></a><span data-ttu-id="103f2-129">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="103f2-129">Example</span></span>
 
-Seuraavassa esimerkissä laatutilaus luodaan ostotilauksen pakkausluettelon kirjaamisen yhteydessä. **Laatuliitokset**-sivulla on määritetty, että ostotilauksen pakkausluettelon kirjaus on määritetty prosessiksi, joka aktivoi laatutilauksen.
+<span data-ttu-id="103f2-130">Seuraavassa esimerkissä laatutilaus luodaan ostotilauksen pakkausluettelon kirjaamisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="103f2-130">In the following example, a quality order is generated when a purchase order packing slip is posted.</span></span> <span data-ttu-id="103f2-131">**Laatuliitokset**-sivulla on määritetty, että ostotilauksen pakkausluettelon kirjaus on määritetty prosessiksi, joka aktivoi laatutilauksen.</span><span class="sxs-lookup"><span data-stu-id="103f2-131">On the **Quality associations** page, you specified that posting of a purchase order packing slip is the process that activates a quality order.</span></span>
 
-|Asennus                                                                     |Käyttäjätoiminto                 |Tulos             |
+|<span data-ttu-id="103f2-132">Asennus</span><span class="sxs-lookup"><span data-stu-id="103f2-132">Setup</span></span>                                                                     |<span data-ttu-id="103f2-133">Käyttäjätoiminto</span><span class="sxs-lookup"><span data-stu-id="103f2-133">User action</span></span>                 |<span data-ttu-id="103f2-134">Tulos</span><span class="sxs-lookup"><span data-stu-id="103f2-134">Result</span></span>             |
 |--------------------------------------------------------------------------|----------------------------|-------------------|
-| Laatuliitos määrittää, että ostotilauksen pakkausluettelon kirjauksen yhteydessä on luotava laatutilaus. Laatutilauksen nimikkeen ottoasetus määrittää, että 10 prosenttia ostotilausrivin määrästä on tarkistettava. Lisäksi, koska **Täysi esto**-asetus on valittuna nimikkeen ottoasetukset ilmaisevat, että ostotilausrivin koko määrä pitää estää tarkastuksen aikana riippumatta määrästä, joka lähetetään tarkastettavaksi. | Pakkausluettelo kirjataan. | Laatutilaus on luotu. Kymmenen prosenttia nimikkeen ostotilauksen määrästä lähetetään tarkistukseen. Ostotilausrivin täysi määrä on estetty. |
+| <span data-ttu-id="103f2-135">Laatuliitos määrittää, että ostotilauksen pakkausluettelon kirjauksen yhteydessä on luotava laatutilaus.</span><span class="sxs-lookup"><span data-stu-id="103f2-135">A quality association specifies that a quality order must be generated when a purchase order packing slip is posted.</span></span> <span data-ttu-id="103f2-136">Laatutilauksen nimikkeen ottoasetus määrittää, että 10 prosenttia ostotilausrivin määrästä on tarkistettava.</span><span class="sxs-lookup"><span data-stu-id="103f2-136">The item sampling setup of the quality order specifies that 10 percent of the quantity on the purchase order line must be inspected.</span></span> <span data-ttu-id="103f2-137">Lisäksi, koska **Täysi esto**-asetus on valittuna nimikkeen ottoasetukset ilmaisevat, että ostotilausrivin koko määrä pitää estää tarkastuksen aikana riippumatta määrästä, joka lähetetään tarkastettavaksi.</span><span class="sxs-lookup"><span data-stu-id="103f2-137">Furthermore, because the **Full blocking** option selected in the item sampling setup, the full quantity of the purchase order line must be blocked during inspection, regardless of the quantity that is sent for inspection.</span></span> | <span data-ttu-id="103f2-138">Pakkausluettelo kirjataan.</span><span class="sxs-lookup"><span data-stu-id="103f2-138">The packing slip is posted.</span></span> | <span data-ttu-id="103f2-139">Laatutilaus on luotu.</span><span class="sxs-lookup"><span data-stu-id="103f2-139">A quality order is generated.</span></span> <span data-ttu-id="103f2-140">Kymmenen prosenttia nimikkeen ostotilauksen määrästä lähetetään tarkistukseen.</span><span class="sxs-lookup"><span data-stu-id="103f2-140">Ten percent of the purchase order quantity for the item is sent to inspection.</span></span> <span data-ttu-id="103f2-141">Ostotilausrivin täysi määrä on estetty.</span><span class="sxs-lookup"><span data-stu-id="103f2-141">The full quantity of the purchase order line is blocked.</span></span> |
 
-## <a name="blocking-items-by-using-inventory-status-blocking"></a>Nimikkeiden esto käyttämällä varaston tilan estoa
-Voit määrittää, mitkä varaston tilat saavat aikaan eston käyttämällä **Varastoesto**-parametria **Varaston tilat** -sivulla.  Varaston tiloja ei voi käyttää tuotanto-, myynti-, tai siirtotilauksien, lähtevien tapahtumien tai projekti-integrointien estotiloina. Ulosmeneville töille käytetään nimikkeitä, joilla on saatavilla oleva varaston tila. Jos on nimikkeitä, joiden tila on **Hajonnut**, ja pääsuunnittelu suoritetaan näillä nimikkeillä, niitä pidetään puuttuvina ja varasto täydennetään automaattisesti.
+## <a name="blocking-items-by-using-inventory-status-blocking"></a><span data-ttu-id="103f2-142">Nimikkeiden esto käyttämällä varaston tilan estoa</span><span class="sxs-lookup"><span data-stu-id="103f2-142">Blocking items by using inventory status blocking</span></span>
+<span data-ttu-id="103f2-143">Voit määrittää, mitkä varaston tilat saavat aikaan eston käyttämällä **Varastoesto**-parametria **Varaston tilat** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="103f2-143">You can specify which inventory statuses are blocking statuses by using the **Inventory blocking** parameter on the **Inventory statuses** page.</span></span> <span data-ttu-id="103f2-144"> Varaston tiloja ei voi käyttää tuotanto-, myynti-, tai siirtotilauksien, lähtevien tapahtumien tai projekti-integrointien estotiloina.</span><span class="sxs-lookup"><span data-stu-id="103f2-144">You can't use inventory statuses as blocking statuses for production orders, sales orders, transfer orders, outbound transactions, or project integrations.</span></span> <span data-ttu-id="103f2-145">Ulosmeneville töille käytetään nimikkeitä, joilla on saatavilla oleva varaston tila.</span><span class="sxs-lookup"><span data-stu-id="103f2-145">For outbound work, use items that have an available inventory status.</span></span> <span data-ttu-id="103f2-146">Jos on nimikkeitä, joiden tila on **Hajonnut**, ja pääsuunnittelu suoritetaan näillä nimikkeillä, niitä pidetään puuttuvina ja varasto täydennetään automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="103f2-146">If items have a status of **Broken**, and master planning is run on those items, the items are considered missing, and inventory is automatically replenished.</span></span>
 
 
 
-<a name="see-also"></a>Lisätietoja
+<a name="see-also"></a><span data-ttu-id="103f2-147">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="103f2-147">See also</span></span>
 --------
 
-[Varastoeston luonti ja ylläpito (tehtäväopas)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
+[<span data-ttu-id="103f2-148">Varastoeston luonti ja ylläpito (tehtäväopas)</span><span class="sxs-lookup"><span data-stu-id="103f2-148">Create and maintain an inventory blocking (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
 
-[Laadunhallintaprosessit](quality-management-processes.md)
+[<span data-ttu-id="103f2-149">Laadunhallintaprosessit</span><span class="sxs-lookup"><span data-stu-id="103f2-149">Quality management processes</span></span>](quality-management-processes.md)
 
-[Tavaroiden laadun tarkistaminen (tehtäväopas)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
-
-
-
+[<span data-ttu-id="103f2-150">Tavaroiden laadun tarkistaminen (tehtäväopas)</span><span class="sxs-lookup"><span data-stu-id="103f2-150">Inspect the quality of goods (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
 

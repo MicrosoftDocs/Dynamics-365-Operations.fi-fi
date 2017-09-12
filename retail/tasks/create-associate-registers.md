@@ -17,30 +17,30 @@ ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: c49b42ae4ef7505c48fc50cdf7c7e9800c248ec6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6a95019e50bcc060165dab3e6aa2b3ca8a897bf3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-associate-registers"></a>Luo ja liitä rekisterit
+# <a name="create-and-associate-registers"></a><span data-ttu-id="167c1-103">Luo ja liitä rekisterit</span><span class="sxs-lookup"><span data-stu-id="167c1-103">Create and associate registers</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tässä menettelyssä esitellään, miten myyntipisteen (POS) kassakone luodaan. Menettely käyttää USRT-demotietoyritystä.
+<span data-ttu-id="167c1-104">Tässä menettelyssä esitellään, miten myyntipisteen (POS) kassakone luodaan.</span><span class="sxs-lookup"><span data-stu-id="167c1-104">This procedure demonstrates how to create a point of sale (POS) register.</span></span> <span data-ttu-id="167c1-105">Menettely käyttää USRT-demotietoyritystä.</span><span class="sxs-lookup"><span data-stu-id="167c1-105">This procedure uses the demo data company USRT.</span></span>
 
-1. Siirry kohtaan Vähittäismyynti ja kauppa > Kanavan asetukset > Myyntipisteen asetukset > Kassakoneet.
-2. Valitse Uusi.
-3. Kirjoita Kassakoneen numero -kenttään uuden kassakoneen tunnus.
-    * Kassakoneen tunnus sisältää yleensä koodeja, joiden avulla kassakone yhdistetään myymälään, johon se kuuluu sekä sijaintiin myymälässä.  
-4. Kirjoita Nimi-kenttään kassakonetta kuvaava nimi.
-5. Syötä tai valitse arvo Myymälän numero -kentässä.
-6. Syötä tai valitse arvo Laiteprofiili-kentässä.
-    * Laiteprofiileilla määritetään vähittäismyynnin oheislaitteet, jotka liitetään kassakoneeseen, kuten käteislokero ja kuittitulostin.  
-7. Anna tai valitse Visuaalinen profiili -kentässä arvo.
-    * Visuaalisten profiilien avulla määritetään kuvat, joita käytetään myyntipisteen taustalla ja kirjautumissivulla. Niillä määritetään myös myyntipisteen teema.  
-8. Kirjoita arvo EFT:n POS-kassakoneen numero -kenttään.
-    * EFT:n POS-kassakoneen numeroa käytetään ilmoittamaan maksun käsittelijälle, miltä maksupäätteeltä varmennuspyyntö on lähetetty. Tätä arvoa kutsutaan usein nimellä "päätteen tunnus" tai "TID". TID löytyy yleensä maksupäätteen tarrasta.  
-9. Valitse Tallenna.
+1. <span data-ttu-id="167c1-106">Siirry kohtaan Vähittäismyynti ja kauppa > Kanavan asetukset > Myyntipisteen asetukset > Kassakoneet.</span><span class="sxs-lookup"><span data-stu-id="167c1-106">Go to Retail and commerce > Channel setup > POS setup > Registers.</span></span>
+2. <span data-ttu-id="167c1-107">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="167c1-107">Click New.</span></span>
+3. <span data-ttu-id="167c1-108">Kirjoita Kassakoneen numero -kenttään uuden kassakoneen tunnus.</span><span class="sxs-lookup"><span data-stu-id="167c1-108">In the Register number field, type an ID for the new register.</span></span>
+    * <span data-ttu-id="167c1-109">Kassakoneen tunnus sisältää yleensä koodeja, joiden avulla kassakone yhdistetään myymälään, johon se kuuluu sekä sijaintiin myymälässä.</span><span class="sxs-lookup"><span data-stu-id="167c1-109">The register ID typically includes codes that help map the register to the store to which it belongs, and the location within the store.</span></span>  
+4. <span data-ttu-id="167c1-110">Kirjoita Nimi-kenttään kassakonetta kuvaava nimi.</span><span class="sxs-lookup"><span data-stu-id="167c1-110">In the Name field, type a descriptive name for the register..</span></span>
+5. <span data-ttu-id="167c1-111">Syötä tai valitse arvo Myymälän numero -kentässä.</span><span class="sxs-lookup"><span data-stu-id="167c1-111">In the Store number field, enter or select a value.</span></span>
+6. <span data-ttu-id="167c1-112">Syötä tai valitse arvo Laiteprofiili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="167c1-112">In the Hardware profile field, enter or select a value.</span></span>
+    * <span data-ttu-id="167c1-113">Laiteprofiileilla määritetään vähittäismyynnin oheislaitteet, jotka liitetään kassakoneeseen, kuten käteislokero ja kuittitulostin.</span><span class="sxs-lookup"><span data-stu-id="167c1-113">Hardware profiles are used to specify the retail peripherals that will be connected to the register, such as cash drawer and receipt printer.</span></span>  
+7. <span data-ttu-id="167c1-114">Anna tai valitse Visuaalinen profiili -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="167c1-114">In the Visual profile field, enter or select a value.</span></span>
+    * <span data-ttu-id="167c1-115">Visuaalisten profiilien avulla määritetään kuvat, joita käytetään myyntipisteen taustalla ja kirjautumissivulla. Niillä määritetään myös myyntipisteen teema.</span><span class="sxs-lookup"><span data-stu-id="167c1-115">Visual profiles are used to specify the images used in the POS background and login page as well as themes for the POS.</span></span>  
+8. <span data-ttu-id="167c1-116">Kirjoita arvo EFT:n POS-kassakoneen numero -kenttään.</span><span class="sxs-lookup"><span data-stu-id="167c1-116">In the EFT POS register number field, type a value.</span></span>
+    * <span data-ttu-id="167c1-117">EFT:n POS-kassakoneen numeroa käytetään ilmoittamaan maksun käsittelijälle, miltä maksupäätteeltä varmennuspyyntö on lähetetty.</span><span class="sxs-lookup"><span data-stu-id="167c1-117">The EFT POS register number is used to inform the payment processor which payment terminal is sending authorization requests.</span></span> <span data-ttu-id="167c1-118">Tätä arvoa kutsutaan usein nimellä "päätteen tunnus" tai "TID".</span><span class="sxs-lookup"><span data-stu-id="167c1-118">This value is often called the "Terminal ID" or “TID”.</span></span> <span data-ttu-id="167c1-119">TID löytyy yleensä maksupäätteen tarrasta.</span><span class="sxs-lookup"><span data-stu-id="167c1-119">The TID can generally be found on a sticker on the payment device.</span></span>  
+9. <span data-ttu-id="167c1-120">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="167c1-120">Click Save.</span></span>
 
 

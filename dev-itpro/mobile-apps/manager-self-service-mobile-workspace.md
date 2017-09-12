@@ -13,90 +13,90 @@ ms.reviewer: sericks
 ms.search.scope: Talent, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: shielas
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 6178a9b1b5497672d68dee84a09800307ea60f54
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 0bfbc07130e908a1326cd01522038fc90bb3465f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="my-team-mobile-workspace"></a>Oman ryhmän mobiilityötila
+# <a name="my-team-mobile-workspace"></a><span data-ttu-id="7cff9-104">Oman ryhmän mobiilityötila</span><span class="sxs-lookup"><span data-stu-id="7cff9-104">My team mobile workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja **oman ryhmän** mobiilityötilasta. Esimiehet voivat tarkastella tässä työtilassa suoria alaisiaan ja laajennettua henkilökuntaa. He voivat myös lähettää kehuja raportointiketjuunsa kuuluville henkilöille.
+<span data-ttu-id="7cff9-105">Tässä ohjeaiheessa on tietoja **oman ryhmän** mobiilityötilasta.</span><span class="sxs-lookup"><span data-stu-id="7cff9-105">This topic provides information about the **My team** mobile workspace.</span></span> <span data-ttu-id="7cff9-106">Esimiehet voivat tarkastella tässä työtilassa suoria alaisiaan ja laajennettua henkilökuntaa.</span><span class="sxs-lookup"><span data-stu-id="7cff9-106">This workspace lets managers view their direct reports and extended staff.</span></span> <span data-ttu-id="7cff9-107">He voivat myös lähettää kehuja raportointiketjuunsa kuuluville henkilöille.</span><span class="sxs-lookup"><span data-stu-id="7cff9-107">They can also send praise to individuals in their reporting chain.</span></span>
 
-Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
+<span data-ttu-id="7cff9-108">Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.</span><span class="sxs-lookup"><span data-stu-id="7cff9-108">This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span>
 
-## <a name="overview"></a>Yleiskuvaus 
-Esimiehet voit tehdä seuraavia tehtäviä **oman ryhmän** mobiilityötilassa:
+## <a name="overview"></a><span data-ttu-id="7cff9-109">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="7cff9-109">Overview</span></span> 
+<span data-ttu-id="7cff9-110">Esimiehet voit tehdä seuraavia tehtäviä **oman ryhmän** mobiilityötilassa:</span><span class="sxs-lookup"><span data-stu-id="7cff9-110">The **My team** mobile workspace lets managers perform these tasks:</span></span>
 
-- Esimiehen suorista alaisista koostuvan luettelon tarkastelu.
-- Esimiehen laajennetusta raportointiryhmästä koostuvan luettelon tarkastelu.
-- Ryhmän kunkin jäsenen yksityiskohtaisten tietojen tarkastelu. Näitä tietoja ovat esimerkiksi syntymäaika, ikälisäpäivämäärä sekä kompensaatio- ja suoritustiedot.
-- Kehun lähettäminen esimiehen laajennetun raportointiryhmän jäsenelle.
+- <span data-ttu-id="7cff9-111">Esimiehen suorista alaisista koostuvan luettelon tarkastelu.</span><span class="sxs-lookup"><span data-stu-id="7cff9-111">View a list of the manager’s direct reports.</span></span>
+- <span data-ttu-id="7cff9-112">Esimiehen laajennetusta raportointiryhmästä koostuvan luettelon tarkastelu.</span><span class="sxs-lookup"><span data-stu-id="7cff9-112">View a list of the manager’s extended reporting team.</span></span>
+- <span data-ttu-id="7cff9-113">Ryhmän kunkin jäsenen yksityiskohtaisten tietojen tarkastelu. Näitä tietoja ovat esimerkiksi syntymäaika, ikälisäpäivämäärä sekä kompensaatio- ja suoritustiedot.</span><span class="sxs-lookup"><span data-stu-id="7cff9-113">View detailed information for each team member, such as birth date, seniority date, years of service, and compensation and performance information.</span></span>
+- <span data-ttu-id="7cff9-114">Kehun lähettäminen esimiehen laajennetun raportointiryhmän jäsenelle.</span><span class="sxs-lookup"><span data-stu-id="7cff9-114">Send praise to any individual in the manager’s extended reporting team.</span></span>
 
-## <a name="prerequisites"></a>Edellytykset
-Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunnossa.
+## <a name="prerequisites"></a><span data-ttu-id="7cff9-115">Edellytykset</span><span class="sxs-lookup"><span data-stu-id="7cff9-115">Prerequisites</span></span>
+<span data-ttu-id="7cff9-116">Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunnossa.</span><span class="sxs-lookup"><span data-stu-id="7cff9-116">Before you can use this mobile workspace, the following prerequisites must be met.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Edellytys</th>
-<th>Rooli</th>
-<th>kuvaus</th>
+<th><span data-ttu-id="7cff9-117">Edellytys</span><span class="sxs-lookup"><span data-stu-id="7cff9-117">Prerequisite</span></span></th>
+<th><span data-ttu-id="7cff9-118">Rooli</span><span class="sxs-lookup"><span data-stu-id="7cff9-118">Role</span></span></th>
+<th><span data-ttu-id="7cff9-119">kuvaus</span><span class="sxs-lookup"><span data-stu-id="7cff9-119">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Organisaatiossa on oltava käytössä jokin seuraavista tuotteista:
-<ul><li>Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys</li>
-<li>Microsoft Dynamics 365 for Talent</li>
+<td><span data-ttu-id="7cff9-120">Organisaatiossa on oltava käytössä jokin seuraavista tuotteista:</span><span class="sxs-lookup"><span data-stu-id="7cff9-120">One of the following products must be deployed in your organization:</span></span>
+<ul><li><span data-ttu-id="7cff9-121">Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys</span><span class="sxs-lookup"><span data-stu-id="7cff9-121">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</span></span></li>
+<li><span data-ttu-id="7cff9-122">Microsoft Dynamics 365 for Talent</span><span class="sxs-lookup"><span data-stu-id="7cff9-122">Microsoft Dynamics 365 for Talent</span></span></li>
 </ul>
 </td>
-<td>Järjestelmänvalvoja</td>
-<td>Jos Finance and Operationsia ei ole vielä otettu organisaatiossa käyttöön, lisätietoja on ohjeaiheessa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön ottaminen käyttöön</a>. Jos Talentia ei ole vielä otettu organisaatiossa käyttöön, järjestelmänvalvoja voi hakea kokeiluversion <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent-sivustosta</a>.
+<td><span data-ttu-id="7cff9-123">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="7cff9-123">System administrator</span></span></td>
+<td><span data-ttu-id="7cff9-124">Jos Finance and Operationsia ei ole vielä otettu organisaatiossa käyttöön, lisätietoja on ohjeaiheessa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön ottaminen käyttöön</a>.</span><span class="sxs-lookup"><span data-stu-id="7cff9-124">If you don't already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span> <span data-ttu-id="7cff9-125">Jos Talentia ei ole vielä otettu organisaatiossa käyttöön, järjestelmänvalvoja voi hakea kokeiluversion <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent-sivustosta</a>.</span><span class="sxs-lookup"><span data-stu-id="7cff9-125">If you don't already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent webpage</a>.</span></span>
 </td>
 </tr>
 <tr class="even">
-<td><strong>Oman ryhmän</strong> mobiilityötila on julkaistava.</td>
-<td>Järjestelmänvalvoja</td>
-<td>Lisätietoja on ohjeaiheessa <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobiilityötilan julkaiseminen</a>.</td>
+<td><span data-ttu-id="7cff9-126"><strong>Oman ryhmän</strong> mobiilityötila on julkaistava.</span><span class="sxs-lookup"><span data-stu-id="7cff9-126">The <strong>My team</strong> mobile workspace must be published.</span></span></td>
+<td><span data-ttu-id="7cff9-127">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="7cff9-127">System administrator</span></span></td>
+<td><span data-ttu-id="7cff9-128">Lisätietoja on ohjeaiheessa <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobiilityötilan julkaiseminen</a>.</span><span class="sxs-lookup"><span data-stu-id="7cff9-128">See <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
+## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="7cff9-129">Mobiilisovelluksen lataaminen ja asentaminen</span><span class="sxs-lookup"><span data-stu-id="7cff9-129">Download and install the mobile app</span></span>
 
-Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
+<span data-ttu-id="7cff9-130">Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:</span><span class="sxs-lookup"><span data-stu-id="7cff9-130">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
 
--   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
--   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
+-   [<span data-ttu-id="7cff9-131">Android-puhelimet</span><span class="sxs-lookup"><span data-stu-id="7cff9-131">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [<span data-ttu-id="7cff9-132">IPhone-puhelimet</span><span class="sxs-lookup"><span data-stu-id="7cff9-132">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
-1.  Käynnistä sovellus mobiililaitteessa.
-2.  Anna oman Microsoft Dynamics 365:n URL-osoite.
-3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
-4.  Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="7cff9-133">Kirjautuminen mobiilisovellukseen</span><span class="sxs-lookup"><span data-stu-id="7cff9-133">Sign in to the mobile app</span></span>
+1.  <span data-ttu-id="7cff9-134">Käynnistä sovellus mobiililaitteessa.</span><span class="sxs-lookup"><span data-stu-id="7cff9-134">Start the app on your mobile device.</span></span>
+2.  <span data-ttu-id="7cff9-135">Anna oman Microsoft Dynamics 365:n URL-osoite.</span><span class="sxs-lookup"><span data-stu-id="7cff9-135">Enter your Microsoft Dynamics 365 URL.</span></span>
+3.  <span data-ttu-id="7cff9-136">Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran.</span><span class="sxs-lookup"><span data-stu-id="7cff9-136">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="7cff9-137">Kirjota tunnistetiedot.</span><span class="sxs-lookup"><span data-stu-id="7cff9-137">Enter your credentials.</span></span>
+4.  <span data-ttu-id="7cff9-138">Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä.</span><span class="sxs-lookup"><span data-stu-id="7cff9-138">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="7cff9-139">Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.</span><span class="sxs-lookup"><span data-stu-id="7cff9-139">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
 
-[![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+<span data-ttu-id="7cff9-140">[![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="7cff9-140">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
 
-## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Ryhmän jäsenten tarkastelu oman ryhmän mobiilityötilassa
-1.  Valitse mobiilisovelluksessa **Oma ryhmä** -työtila. Luettelo ryhmän jäsenistä avautuu. Luettelossa on myös kunkin ryhmän jäsenen nimike sekä tämän mahdolliset suorat alaiset.
-2.  Valitse ryhmän jäsen. **Ryhmän jäsenen yhteenveto** -sivu avautuu. Tällä sivulla olevia tietoja ovat esimerkiksi ryhmän jäsenen syntymäaika, ikälisäpäivä, vuodet nykyisessä toimessa ja kompensaation tiedot.
+## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a><span data-ttu-id="7cff9-141">Ryhmän jäsenten tarkastelu oman ryhmän mobiilityötilassa</span><span class="sxs-lookup"><span data-stu-id="7cff9-141">View team members by using the My team mobile workspace</span></span>
+1.  <span data-ttu-id="7cff9-142">Valitse mobiilisovelluksessa **Oma ryhmä** -työtila.</span><span class="sxs-lookup"><span data-stu-id="7cff9-142">In the mobile app, select the **My team** workspace.</span></span> <span data-ttu-id="7cff9-143">Luettelo ryhmän jäsenistä avautuu.</span><span class="sxs-lookup"><span data-stu-id="7cff9-143">A list of team members is shown.</span></span> <span data-ttu-id="7cff9-144">Luettelossa on myös kunkin ryhmän jäsenen nimike sekä tämän mahdolliset suorat alaiset.</span><span class="sxs-lookup"><span data-stu-id="7cff9-144">The list also shows each team member's title, and any direct reports that he or she has.</span></span>
+2.  <span data-ttu-id="7cff9-145">Valitse ryhmän jäsen.</span><span class="sxs-lookup"><span data-stu-id="7cff9-145">Select a team member.</span></span> <span data-ttu-id="7cff9-146">**Ryhmän jäsenen yhteenveto** -sivu avautuu.</span><span class="sxs-lookup"><span data-stu-id="7cff9-146">The **Team member summary** page appears.</span></span> <span data-ttu-id="7cff9-147">Tällä sivulla olevia tietoja ovat esimerkiksi ryhmän jäsenen syntymäaika, ikälisäpäivä, vuodet nykyisessä toimessa ja kompensaation tiedot.</span><span class="sxs-lookup"><span data-stu-id="7cff9-147">The information on this page includes the team member's birth date, seniority date, years of service, years in his or her current position, and compensation information.</span></span>
 
-## <a name="view-extended-team-members-by-using-the-my-team-mobile-workspace"></a>Laajennetun ryhmän jäsenten tarkastelu oman ryhmän mobiilityötilassa
-1.  Valitse mobiilisovelluksessa **Oma ryhmä** -työtila. Luettelo ryhmän jäsenistä avautuu. Luettelossa on myös kunkin ryhmän jäsenen nimike sekä tämän mahdolliset suorat alaiset.
-1.  Valitse **Suorat alaiset** -linkki. Luettelo laajennetun ryhmän jäsenistä avautuu.
-1.  Valitse ryhmän jäsen. **Ryhmän jäsenen yhteenveto** -sivu avautuu. Tällä sivulla olevia tietoja ovat esimerkiksi ryhmän jäsenen syntymäaika, ikälisäpäivä, vuodet nykyisessä toimessa ja kompensaation tiedot.
+## <a name="view-extended-team-members-by-using-the-my-team-mobile-workspace"></a><span data-ttu-id="7cff9-148">Laajennetun ryhmän jäsenten tarkastelu oman ryhmän mobiilityötilassa</span><span class="sxs-lookup"><span data-stu-id="7cff9-148">View extended team members by using the My team mobile workspace</span></span>
+1.  <span data-ttu-id="7cff9-149">Valitse mobiilisovelluksessa **Oma ryhmä** -työtila.</span><span class="sxs-lookup"><span data-stu-id="7cff9-149">In the mobile app, select the **My team** workspace.</span></span> <span data-ttu-id="7cff9-150">Luettelo ryhmän jäsenistä avautuu.</span><span class="sxs-lookup"><span data-stu-id="7cff9-150">A list of team members is shown.</span></span> <span data-ttu-id="7cff9-151">Luettelossa on myös kunkin ryhmän jäsenen nimike sekä tämän mahdolliset suorat alaiset.</span><span class="sxs-lookup"><span data-stu-id="7cff9-151">The list also shows each team member's title, and any direct reports that he or she has.</span></span>
+1.  <span data-ttu-id="7cff9-152">Valitse **Suorat alaiset** -linkki.</span><span class="sxs-lookup"><span data-stu-id="7cff9-152">Select the **Direct reports** link.</span></span> <span data-ttu-id="7cff9-153">Luettelo laajennetun ryhmän jäsenistä avautuu.</span><span class="sxs-lookup"><span data-stu-id="7cff9-153">A list of your extended team is shown.</span></span>
+1.  <span data-ttu-id="7cff9-154">Valitse ryhmän jäsen.</span><span class="sxs-lookup"><span data-stu-id="7cff9-154">Select a team member.</span></span> <span data-ttu-id="7cff9-155">**Ryhmän jäsenen yhteenveto** -sivu avautuu.</span><span class="sxs-lookup"><span data-stu-id="7cff9-155">The **Team member summary** page appears.</span></span> <span data-ttu-id="7cff9-156">Tällä sivulla olevia tietoja ovat esimerkiksi ryhmän jäsenen syntymäaika, ikälisäpäivä, vuodet nykyisessä toimessa ja kompensaation tiedot.</span><span class="sxs-lookup"><span data-stu-id="7cff9-156">The information on this page includes the team member's birth date, seniority date, years of service, years in his or her current position, and compensation information.</span></span>
 
-## <a name="send-praise-about-team-members-by-using-the-my-team-mobile-workspace"></a>Kehujen lähettäminen laajennetun ryhmän jäsenille oman ryhmän mobiilityötilassa
-1.  Valitse mobiilisovelluksessa **Oma ryhmä** -työtila. Luettelo ryhmän jäsenistä avautuu. Luettelossa on myös kunkin ryhmän jäsenen nimike sekä tämän mahdolliset suorat alaiset.
-1.  Valitse ryhmän jäsen. **Ryhmän jäsenen yhteenveto** -sivu avautuu.
-1.  Valitse **Lähetä kehu**. 
-1. Kirjoita kehu, jonka haluat lähettää. 
-1. Valitse **Valmis**.
+## <a name="send-praise-about-team-members-by-using-the-my-team-mobile-workspace"></a><span data-ttu-id="7cff9-157">Kehujen lähettäminen laajennetun ryhmän jäsenille oman ryhmän mobiilityötilassa</span><span class="sxs-lookup"><span data-stu-id="7cff9-157">Send praise about team members by using the My team mobile workspace</span></span>
+1.  <span data-ttu-id="7cff9-158">Valitse mobiilisovelluksessa **Oma ryhmä** -työtila.</span><span class="sxs-lookup"><span data-stu-id="7cff9-158">In the mobile app, select the **My team** workspace.</span></span> <span data-ttu-id="7cff9-159">Luettelo ryhmän jäsenistä avautuu.</span><span class="sxs-lookup"><span data-stu-id="7cff9-159">A list of team members is shown.</span></span> <span data-ttu-id="7cff9-160">Luettelossa on myös kunkin ryhmän jäsenen nimike sekä tämän mahdolliset suorat alaiset.</span><span class="sxs-lookup"><span data-stu-id="7cff9-160">The list also shows each team member's title, and any direct reports that he or she has.</span></span>
+1.  <span data-ttu-id="7cff9-161">Valitse ryhmän jäsen.</span><span class="sxs-lookup"><span data-stu-id="7cff9-161">Select a team member.</span></span> <span data-ttu-id="7cff9-162">**Ryhmän jäsenen yhteenveto** -sivu avautuu.</span><span class="sxs-lookup"><span data-stu-id="7cff9-162">The **Team member summary** page appears.</span></span>
+1.  <span data-ttu-id="7cff9-163">Valitse **Lähetä kehu**.</span><span class="sxs-lookup"><span data-stu-id="7cff9-163">Select **Send praise**.</span></span> 
+1. <span data-ttu-id="7cff9-164">Kirjoita kehu, jonka haluat lähettää.</span><span class="sxs-lookup"><span data-stu-id="7cff9-164">Enter the text of the praise that you want to send.</span></span> 
+1. <span data-ttu-id="7cff9-165">Valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="7cff9-165">Select **Done**.</span></span>
 

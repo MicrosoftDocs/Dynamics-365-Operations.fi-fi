@@ -17,52 +17,52 @@ ms.assetid: b4625d10-c852-4fda-b718-79df458de0d4
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9ae0bbb641d7517d33ad087faec231cb0bda3f78
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 172bb55358c20ba80b1c32b05f1ae8e6aff8901f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="production-order-cost-estimation"></a>Tuotantotilauksen kustannusarvio
+# <a name="production-order-cost-estimation"></a><span data-ttu-id="a9efc-104">Tuotantotilauksen kustannusarvio</span><span class="sxs-lookup"><span data-stu-id="a9efc-104">Production order cost estimation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tämä artikkeli sisältää tietoja tuotannon kustannusarviosta. Tuotannon kustannusarvio sisältää arvioidut materiaalin ja kapasiteetin kulutuksesta aiheutuneet kustannukset, jotka syntyvät kun nimikettä tuotetaan suunniteltu tuotantotilausmäärä. 
+<span data-ttu-id="a9efc-105">Tämä artikkeli sisältää tietoja tuotannon kustannusarviosta.</span><span class="sxs-lookup"><span data-stu-id="a9efc-105">This article provides information about production cost estimation.</span></span> <span data-ttu-id="a9efc-106">Tuotannon kustannusarvio sisältää arvioidut materiaalin ja kapasiteetin kulutuksesta aiheutuneet kustannukset, jotka syntyvät kun nimikettä tuotetaan suunniteltu tuotantotilausmäärä.</span><span class="sxs-lookup"><span data-stu-id="a9efc-106">Production cost estimation provides the projected material and capacity consumption costs of producing an item in the planned production order quantity.</span></span> 
 
-Tuotantokustannukset on arvioitava tuotantotilauksen luomisen jälkeen. Tarkoitus on arvioida tuotantoprosessin nimikkeen ja reitityksen kulutus, koska nämä arviot muodostavat perustan seuraaville ajoitus- ja tuotantoprosesseille.
+<span data-ttu-id="a9efc-107">Tuotantokustannukset on arvioitava tuotantotilauksen luomisen jälkeen.</span><span class="sxs-lookup"><span data-stu-id="a9efc-107">After you create a production order, you must estimate production costs.</span></span> <span data-ttu-id="a9efc-108">Tarkoitus on arvioida tuotantoprosessin nimikkeen ja reitityksen kulutus, koska nämä arviot muodostavat perustan seuraaville ajoitus- ja tuotantoprosesseille.</span><span class="sxs-lookup"><span data-stu-id="a9efc-108">The purpose is to estimate item and route consumption for the production process, because these estimates are used as the basis for subsequent scheduling and production processes.</span></span>
 
-## <a name="production-cost-estimation"></a>Tuotannon kustannusarvio
-Tuotantokustannusten arviot perustuvat seuraaviin tietoihin:
+## <a name="production-cost-estimation"></a><span data-ttu-id="a9efc-109">Tuotannon kustannusarvio</span><span class="sxs-lookup"><span data-stu-id="a9efc-109">Production cost estimation</span></span>
+<span data-ttu-id="a9efc-110">Tuotantokustannusten arviot perustuvat seuraaviin tietoihin:</span><span class="sxs-lookup"><span data-stu-id="a9efc-110">Estimates of production costs are based on the following information:</span></span>
 
--   tuotantotilauksen määrä
--   tuotannon tuoterakenteiden komponentit
--   tuotantoreitityksen reititystyövaiheet
--   komponenttien ja työvaiheiden epäsuorat kustannukset
--   aktiivisten kustannusten tiedot laskentapäivän mukaan.
+-   <span data-ttu-id="a9efc-111">tuotantotilauksen määrä</span><span class="sxs-lookup"><span data-stu-id="a9efc-111">The quantity on the production order</span></span>
+-   <span data-ttu-id="a9efc-112">tuotannon tuoterakenteiden komponentit</span><span class="sxs-lookup"><span data-stu-id="a9efc-112">The components on the production bills of materials (BOMs)</span></span>
+-   <span data-ttu-id="a9efc-113">tuotantoreitityksen reititystyövaiheet</span><span class="sxs-lookup"><span data-stu-id="a9efc-113">The routing operations in the production route</span></span>
+-   <span data-ttu-id="a9efc-114">komponenttien ja työvaiheiden epäsuorat kustannukset</span><span class="sxs-lookup"><span data-stu-id="a9efc-114">The indirect costs that apply to the components and operations</span></span>
+-   <span data-ttu-id="a9efc-115">aktiivisten kustannusten tiedot laskentapäivän mukaan.</span><span class="sxs-lookup"><span data-stu-id="a9efc-115">The active cost data as of the calculation date</span></span>
 
-Jos tuotannon tuoterakenteissa on haamurivin nimike, laskelmat ovat haamun komponenttien ja reititystyövaiheiden mukaisia. Arviointitehtävää voi käyttää laskettaessa arvioidut kustannukset uudelleen niin, että ne vastaavat päivitettyjä tietoja. Päivitetyt tiedot voivat olla esimerkiksi muutoksia tuotantotilauksen määrässä, tuotannon tuoterakenteiden komponenteissa, tuotantoreitityksen reititystyövaiheissa, näitä komponentteja ja työvaiheita koskevissa epäsuorissa kustannuksissa tai laskentapäivämäärän mukaisissa aktiivisten kustannusten tiedoissa. Arvioitujen kustannusten laskelmat ehdottavat myös tuotantonimikkeelle myyntihintaa, joka perustuu hinta+hinnankorotus-malliin. Arvioitujen kustannusten laskelmat voivat koskea vaihtoehtoisesti myös viitetilauksia, jotka vastaavat tuotantotilaukseen linkitettyjä muita tuotantotilauksia.
+<span data-ttu-id="a9efc-116">Jos tuotannon tuoterakenteissa on haamurivin nimike, laskelmat ovat haamun komponenttien ja reititystyövaiheiden mukaisia.</span><span class="sxs-lookup"><span data-stu-id="a9efc-116">If there is a phantom line item on the production BOMs, the calculations reflect the phantom’s components and route operations.</span></span> <span data-ttu-id="a9efc-117">Arviointitehtävää voi käyttää laskettaessa arvioidut kustannukset uudelleen niin, että ne vastaavat päivitettyjä tietoja.</span><span class="sxs-lookup"><span data-stu-id="a9efc-117">You can use the estimation task to recalculate estimated costs so that they reflect updated information.</span></span> <span data-ttu-id="a9efc-118">Päivitetyt tiedot voivat olla esimerkiksi muutoksia tuotantotilauksen määrässä, tuotannon tuoterakenteiden komponenteissa, tuotantoreitityksen reititystyövaiheissa, näitä komponentteja ja työvaiheita koskevissa epäsuorissa kustannuksissa tai laskentapäivämäärän mukaisissa aktiivisten kustannusten tiedoissa.</span><span class="sxs-lookup"><span data-stu-id="a9efc-118">For example, the updated information might be changes to the quantity on the production order, the components on the production BOMs, the routing operations in the production route, the indirect costs that apply to these components and operations, or the active cost data as of the recalculation date.</span></span> <span data-ttu-id="a9efc-119">Arvioitujen kustannusten laskelmat ehdottavat myös tuotantonimikkeelle myyntihintaa, joka perustuu hinta+hinnankorotus-malliin.</span><span class="sxs-lookup"><span data-stu-id="a9efc-119">The calculations of estimated cost also suggest a sales price for the production item, based on a cost-plus-markup approach.</span></span> <span data-ttu-id="a9efc-120">Arvioitujen kustannusten laskelmat voivat koskea vaihtoehtoisesti myös viitetilauksia, jotka vastaavat tuotantotilaukseen linkitettyjä muita tuotantotilauksia.</span><span class="sxs-lookup"><span data-stu-id="a9efc-120">The calculations of estimated cost can optionally apply to reference orders that reflect other production orders that are linked to the production order.</span></span>
 
-## <a name="view-the-estimated-costs"></a>Arvioitujen kustannusten tarkasteleminen
-Kun arviointi on suoritettu, tulokset näkyvät **Hinnan laskenta** -sivulla. Arviointi laskee seuraavat arvot:
+## <a name="view-the-estimated-costs"></a><span data-ttu-id="a9efc-121">Arvioitujen kustannusten tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="a9efc-121">View the estimated costs</span></span>
+<span data-ttu-id="a9efc-122">Kun arviointi on suoritettu, tulokset näkyvät **Hinnan laskenta** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="a9efc-122">After you run estimation, you can view the results on the **Price calculation** page.</span></span> <span data-ttu-id="a9efc-123">Arviointi laskee seuraavat arvot:</span><span class="sxs-lookup"><span data-stu-id="a9efc-123">The estimation calculates the following values:</span></span>
 
--   **Tuotantokustannukset** – Tuotantokustannukset ovat arvion ylimmällä rivillä. Rivillä näkyvät kaikki tuotantotilauksen suorittamisesta aiheutuvat kustannukset sekä tuotannon kokonaismyyntihinta. Tuotantokustannukset ovat arvion kaikkien kustannusrivien summa.
--   **Reitti- tai resurssikustannukset** – Reitti- tai resurssikustannukset ovat tuotannon työvaiheiden kustannuksia. Ne sisältävät kustannuksia elementeistä, kuten asetusajasta, ajoajasta ja yleiskustannuksista.
--   **Materiaalikustannukset** – Materiaalikustannukset ovat nimikkeen tuottamisessa tarvittavien tuoterakennekomponenttien kustannuksia ja hintoja. Nämä kustannukset on määritetty aiemmin järjestelmään.
+-   <span data-ttu-id="a9efc-124">**Tuotantokustannukset** – Tuotantokustannukset ovat arvion ylimmällä rivillä.</span><span class="sxs-lookup"><span data-stu-id="a9efc-124">**Production cost** – The production cost is the top line of the estimate.</span></span> <span data-ttu-id="a9efc-125">Rivillä näkyvät kaikki tuotantotilauksen suorittamisesta aiheutuvat kustannukset sekä tuotannon kokonaismyyntihinta.</span><span class="sxs-lookup"><span data-stu-id="a9efc-125">It shows the complete cost of running the production order and the total sales price for the production.</span></span> <span data-ttu-id="a9efc-126">Tuotantokustannukset ovat arvion kaikkien kustannusrivien summa.</span><span class="sxs-lookup"><span data-stu-id="a9efc-126">It's the sum of all the cost lines on the estimate.</span></span>
+-   <span data-ttu-id="a9efc-127">**Reitti- tai resurssikustannukset** – Reitti- tai resurssikustannukset ovat tuotannon työvaiheiden kustannuksia.</span><span class="sxs-lookup"><span data-stu-id="a9efc-127">**Route or resource costs** – Route or resource costs are the costs for the production operations.</span></span> <span data-ttu-id="a9efc-128">Ne sisältävät kustannuksia elementeistä, kuten asetusajasta, ajoajasta ja yleiskustannuksista.</span><span class="sxs-lookup"><span data-stu-id="a9efc-128">They include the cost of elements such as setup time, run time, and overhead.</span></span>
+-   <span data-ttu-id="a9efc-129">**Materiaalikustannukset** – Materiaalikustannukset ovat nimikkeen tuottamisessa tarvittavien tuoterakennekomponenttien kustannuksia ja hintoja.</span><span class="sxs-lookup"><span data-stu-id="a9efc-129">**Material costs** – Material costs are the costs and prices of the BOM components that are required in order to produce the item.</span></span> <span data-ttu-id="a9efc-130">Nämä kustannukset on määritetty aiemmin järjestelmään.</span><span class="sxs-lookup"><span data-stu-id="a9efc-130">These costs have previously been established and entered into the system.</span></span>
 
-## <a name="other-uses-of-cost-estimation"></a>Kustannusarvion muita käyttökohteita
-Kustannusarvio sisältää myös seuraavat tiedot:
+## <a name="other-uses-of-cost-estimation"></a><span data-ttu-id="a9efc-131">Kustannusarvion muita käyttökohteita</span><span class="sxs-lookup"><span data-stu-id="a9efc-131">Other uses of cost estimation</span></span>
+<span data-ttu-id="a9efc-132">Kustannusarvio sisältää myös seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="a9efc-132">A cost estimate also provides the following information:</span></span>
 
--   järkevät hintatarjoukset
--   tilauksen kannattavuuden arviointi
--   raaka-aineiden käytön arviointi
--   aikaisempien tuotantojen kustannustietojen vertailu
--   budjetti- ja ennustetiedot
--   tietyn kustannustason ylläpitämiseen tarvittavien tuotantokokojen arviointi.
+-   <span data-ttu-id="a9efc-133">järkevät hintatarjoukset</span><span class="sxs-lookup"><span data-stu-id="a9efc-133">Meaningful price quotations</span></span>
+-   <span data-ttu-id="a9efc-134">tilauksen kannattavuuden arviointi</span><span class="sxs-lookup"><span data-stu-id="a9efc-134">Estimates of the profitability of the order</span></span>
+-   <span data-ttu-id="a9efc-135">raaka-aineiden käytön arviointi</span><span class="sxs-lookup"><span data-stu-id="a9efc-135">Estimates of raw material usage</span></span>
+-   <span data-ttu-id="a9efc-136">aikaisempien tuotantojen kustannustietojen vertailu</span><span class="sxs-lookup"><span data-stu-id="a9efc-136">Comparisons of cost information from previous productions</span></span>
+-   <span data-ttu-id="a9efc-137">budjetti- ja ennustetiedot</span><span class="sxs-lookup"><span data-stu-id="a9efc-137">Budget and forecasting information</span></span>
+-   <span data-ttu-id="a9efc-138">tietyn kustannustason ylläpitämiseen tarvittavien tuotantokokojen arviointi.</span><span class="sxs-lookup"><span data-stu-id="a9efc-138">Estimates of the production size that is required in order to maintain a particular cost</span></span>
 
 
 

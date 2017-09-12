@@ -19,36 +19,36 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 35133c305457b53abdf761f7fd557bf81bc28cde
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f8169c32dc47c1635f6d3d00852d14d677678868
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>Toimittajan laskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät
+# <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a><span data-ttu-id="4dce9-104">Toimittajan laskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät</span><span class="sxs-lookup"><span data-stu-id="4dce9-104">Accounting distributions and subledger journal entries for vendor invoices</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Kirjanpidon jakoja käytetään määrittämään, miten summa käsitellään, esimerkiksi miten kulu, vara, vero tai maksu käsitellään toimittajan laskussa. Jokaisella määrällä, joka on huomioitava toimittajan laskun kirjauksen yhteydessä, on yksi tai useampi kirjanpidollinen jako. 
+<span data-ttu-id="4dce9-105">Kirjanpidon jakoja käytetään määrittämään, miten summa käsitellään, esimerkiksi miten kulu, vara, vero tai maksu käsitellään toimittajan laskussa.</span><span class="sxs-lookup"><span data-stu-id="4dce9-105">Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice.</span></span> <span data-ttu-id="4dce9-106">Jokaisella määrällä, joka on huomioitava toimittajan laskun kirjauksen yhteydessä, on yksi tai useampi kirjanpidollinen jako.</span><span class="sxs-lookup"><span data-stu-id="4dce9-106">Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions.</span></span> 
 
-<a name="accounting-distributions"></a>Kirjanpidolliset jaot 
+<a name="accounting-distributions"></a><span data-ttu-id="4dce9-107">Kirjanpidolliset jaot</span><span class="sxs-lookup"><span data-stu-id="4dce9-107">Accounting distributions</span></span> 
 -------------------------
 
-Seuraavilla Toimittajan lasku -sivun painikkeilla voit tarkastella ja mahdollisesti muokata kirjanpidollisia jakoja kullekin ostotilauksen summalle.
--   **Jakosummat** – Tarkastele muokkaa yksittäisen rivin ja sen alatason rivien kirjanpidollisia jakoja, kuten veroja tai maksuja. Voit tarkastella ja muokata alarivin kirjanpidollisia jakoja myös suoraan Arvonlisäverotapahtumat- tai Kulutapahtumat-sivulla.
-    -   Muokkaa toimittajan laskun otsikon summia, kuten kuluja tai valuutan pyöristyssummia.
-    -   Muokkaa toimittajalaskun rivisummia.
--   **Näytä jakaumat** – Näytä asiakirjan kaikkien rivien kirjanpidolliset jaot. Et voi muokata kirjanpidollisia jakoja tästä näkymästä.
-    -   Näytä otsikon ja rivien summat.
+<span data-ttu-id="4dce9-108">Seuraavilla Toimittajan lasku -sivun painikkeilla voit tarkastella ja mahdollisesti muokata kirjanpidollisia jakoja kullekin ostotilauksen summalle.</span><span class="sxs-lookup"><span data-stu-id="4dce9-108">You can use the following buttons in the Vendor invoice page to view, and possibly modify, the accounting distributions for each amount on the vendor invoice.</span></span>
+-   <span data-ttu-id="4dce9-109">**Jakosummat** – Tarkastele muokkaa yksittäisen rivin ja sen alatason rivien kirjanpidollisia jakoja, kuten veroja tai maksuja.</span><span class="sxs-lookup"><span data-stu-id="4dce9-109">**Distribute amounts** – View and modify the accounting distributions for an individual line and any child lines, such as taxes or charges.</span></span> <span data-ttu-id="4dce9-110">Voit tarkastella ja muokata alarivin kirjanpidollisia jakoja myös suoraan Arvonlisäverotapahtumat- tai Kulutapahtumat-sivulla.</span><span class="sxs-lookup"><span data-stu-id="4dce9-110">You can also view and modify the accounting distributions for the child line directly from the Sales tax transactions page or the Charges transactions page.</span></span>
+    -   <span data-ttu-id="4dce9-111">Muokkaa toimittajan laskun otsikon summia, kuten kuluja tai valuutan pyöristyssummia.</span><span class="sxs-lookup"><span data-stu-id="4dce9-111">Modify vendor invoice header amounts, such as charges or currency rounding amounts.</span></span>
+    -   <span data-ttu-id="4dce9-112">Muokkaa toimittajalaskun rivisummia.</span><span class="sxs-lookup"><span data-stu-id="4dce9-112">Modify vendor invoice line amounts.</span></span>
+-   <span data-ttu-id="4dce9-113">**Näytä jakaumat** – Näytä asiakirjan kaikkien rivien kirjanpidolliset jaot.</span><span class="sxs-lookup"><span data-stu-id="4dce9-113">**View distributions** – View the accounting distributions for all lines on the document.</span></span> <span data-ttu-id="4dce9-114">Et voi muokata kirjanpidollisia jakoja tästä näkymästä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-114">You cannot modify the accounting distributions from this view.</span></span>
+    -   <span data-ttu-id="4dce9-115">Näytä otsikon ja rivien summat.</span><span class="sxs-lookup"><span data-stu-id="4dce9-115">View header and line amounts.</span></span>
 
-Jos toimittajalasku viittaa ostotilaukseen, voit jakaa ja muokata kirjanpidon jaot riveille, jotka sisältävät nimikkeen, joka ei ole varastossa. Jos toimittajan laskurivi viittaa ostotilausriviin, voit poistaa kirjanpitojaon. Et voi jakaa tai poistaa kulujen, verojen ja rivialennusten rivejä. Voi muokata kirjanpitotiliä, mutta et voi muuttaa summia tai prosentteja.
+<span data-ttu-id="4dce9-116">Jos toimittajalasku viittaa ostotilaukseen, voit jakaa ja muokata kirjanpidon jaot riveille, jotka sisältävät nimikkeen, joka ei ole varastossa.</span><span class="sxs-lookup"><span data-stu-id="4dce9-116">If the vendor invoice references a purchase order, you can split and modify the accounting distributions for lines that contain an item that is not stocked.</span></span> <span data-ttu-id="4dce9-117">Jos toimittajan laskurivi viittaa ostotilausriviin, voit poistaa kirjanpitojaon.</span><span class="sxs-lookup"><span data-stu-id="4dce9-117">If the vendor invoice line does not reference a purchase order line, you can also delete an accounting distribution.</span></span> <span data-ttu-id="4dce9-118">Et voi jakaa tai poistaa kulujen, verojen ja rivialennusten rivejä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-118">You cannot split or delete lines for charges, taxes, and line discounts.</span></span> <span data-ttu-id="4dce9-119">Voi muokata kirjanpitotiliä, mutta et voi muuttaa summia tai prosentteja.</span><span class="sxs-lookup"><span data-stu-id="4dce9-119">You can modify the ledger account, but you cannot change the amounts or percentages.</span></span>
 > [!NOTE]                                                                                                                                 
-> Jos ylätason rivillä on nimike, joka ei ole varastossa, ja kirjanpidon jaot jaetaan, rivin alempi taso jaetaan automaattisesti vastaamaan ylätason rivin taloushallinnon dimensioita. Alirivin kirjanpidollisia jakoja ei voi lisäksi jakaa tai poistaa, mutta alirivin asetuksista riippuen, voit mahdollisesti muuttaa alirivin kirjanpidollisten jakojen kirjanpitotiliä.
+> <span data-ttu-id="4dce9-120">Jos ylätason rivillä on nimike, joka ei ole varastossa, ja kirjanpidon jaot jaetaan, rivin alempi taso jaetaan automaattisesti vastaamaan ylätason rivin taloushallinnon dimensioita.</span><span class="sxs-lookup"><span data-stu-id="4dce9-120">If the parent line contains an item that is not stocked and the accounting distributions are split, the child line will be split automatically to match the financial dimensions of the parent line.</span></span> <span data-ttu-id="4dce9-121">Alirivin kirjanpidollisia jakoja ei voi lisäksi jakaa tai poistaa, mutta alirivin asetuksista riippuen, voit mahdollisesti muuttaa alirivin kirjanpidollisten jakojen kirjanpitotiliä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-121">The accounting distributions for the child line cannot be additionally split or deleted, but depending on the setup of the child line, you might be able to modify the ledger account for the accounting distributions of the child line.</span></span>
 
-## <a name="distributing-amounts"></a>Summien jakaminen
-Kun syötät toimittajan lasku, jokainen määrä jaetaan seuraavasti.
+## <a name="distributing-amounts"></a><span data-ttu-id="4dce9-122">Summien jakaminen</span><span class="sxs-lookup"><span data-stu-id="4dce9-122">Distributing amounts</span></span>
+<span data-ttu-id="4dce9-123">Kun syötät toimittajan lasku, jokainen määrä jaetaan seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="4dce9-123">When you enter a vendor invoice, each amount will be distributed as follows.</span></span>
 
 <table>
 <colgroup>
@@ -58,195 +58,195 @@ Kun syötät toimittajan lasku, jokainen määrä jaetaan seuraavasti.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Toimittajan laskun rivin tyyppi</th>
-<th>Tärkeysjärjestys, joka määrittää, mistä päätili näkyy.</th>
-<th>Tärkeysjärjestys, joka määrittää, mikä oletusarvoinen taloushallinnon dimensio tulee näkyviin.</th>
+<th><span data-ttu-id="4dce9-124">Toimittajan laskun rivin tyyppi</span><span class="sxs-lookup"><span data-stu-id="4dce9-124">Type of vendor invoice line</span></span></th>
+<th><span data-ttu-id="4dce9-125">Tärkeysjärjestys, joka määrittää, mistä päätili näkyy.</span><span class="sxs-lookup"><span data-stu-id="4dce9-125">Order of priority that determines where the main account is displayed from</span></span></th>
+<th><span data-ttu-id="4dce9-126">Tärkeysjärjestys, joka määrittää, mikä oletusarvoinen taloushallinnon dimensio tulee näkyviin.</span><span class="sxs-lookup"><span data-stu-id="4dce9-126">Order of priority that determines which default financial dimension is displayed</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Varastotuote</td>
+<td><span data-ttu-id="4dce9-127">Varastotuote</span><span class="sxs-lookup"><span data-stu-id="4dce9-127">Stocked product</span></span></td>
 <td><ol>
-<li>Kirjanpidollinen jako ostotilausriville.</li>
-<li>Päätili-kenttä, kun Kirjaus-sivulla on valittu Tuotteen ostomeno.</li>
+<li><span data-ttu-id="4dce9-128">Kirjanpidollinen jako ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-128">The accounting distribution for the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-129">Päätili-kenttä, kun Kirjaus-sivulla on valittu Tuotteen ostomeno.</span><span class="sxs-lookup"><span data-stu-id="4dce9-129">The Main account field when Purchase expenditure for product is selected in the Posting page.</span></span></li>
 </ol></td>
 <td><ol>
-<li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja toimittajan laskulla.</li>
+<li><span data-ttu-id="4dce9-130">Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-130">If the invoice line references a purchase order line, use the account distribution for the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-131">Käytä taloushallinnon oletusdimensioarvoja toimittajan laskulla.</span><span class="sxs-lookup"><span data-stu-id="4dce9-131">Use the default financial dimension values on the vendor invoice.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Hankintaluokka tai tuote, jota ei ole varastossa</td>
+<td><span data-ttu-id="4dce9-132">Hankintaluokka tai tuote, jota ei ole varastossa</span><span class="sxs-lookup"><span data-stu-id="4dce9-132">A procurement category or a product that is not stocked</span></span></td>
 <td><ol>
-<li>Kirjanpidollinen jako ostotilausriville, jos toimittajalaskurivi viittaa ostotilausriviin.</li>
-<li>Päätili-kenttä, kun Kirjaus-sivulla on valittu Kulun ostomeno.</li>
+<li><span data-ttu-id="4dce9-133">Kirjanpidollinen jako ostotilausriville, jos toimittajalaskurivi viittaa ostotilausriviin.</span><span class="sxs-lookup"><span data-stu-id="4dce9-133">The accounting distribution for the purchase order line, if the vendor invoice line references a purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-134">Päätili-kenttä, kun Kirjaus-sivulla on valittu Kulun ostomeno.</span><span class="sxs-lookup"><span data-stu-id="4dce9-134">The Main account field when Purchase expenditure for expense is selected in the Posting page.</span></span></li>
 </ol></td>
 <td><ol>
-<li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
-<li>Jos päätili on kohdistustili, käytä oletusarvoa kohdistustilin määrityksestä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja toimittajan laskulla.</li>
-<li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</li>
+<li><span data-ttu-id="4dce9-135">Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-135">If the invoice line references a purchase order line, use the account distribution for the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-136">Jos päätili on kohdistustili, käytä oletusarvoa kohdistustilin määrityksestä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-136">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="4dce9-137">Käytä taloushallinnon oletusdimensioarvoja toimittajan laskulla.</span><span class="sxs-lookup"><span data-stu-id="4dce9-137">Use the default financial dimension values on the vendor invoice.</span></span></li>
+<li><span data-ttu-id="4dce9-138">Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-138">Use the financial dimension values from the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-139">Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-139">Use the default financial dimension values from the main account in the Chart of Accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Käyttöomaisuus</td>
+<td><span data-ttu-id="4dce9-140">Käyttöomaisuus</span><span class="sxs-lookup"><span data-stu-id="4dce9-140">Fixed asset</span></span></td>
 <td><ol>
-<li>Kirjanpidollinen jako ostotilausriville, jos toimittajalaskurivi viittaa ostotilausriviin.</li>
-<li>Jos Toimittajan lasku -lomakkeessa Tapahtumatyyppi-kentästä on valittu Hankinta, Päätili-kenttä, kun Käyttöomaisuuserän kirjausprofiilit -sivulla on valittuna Hankinta.</li>
-<li>Jos Tapahtumatyyppi-kentästä on valittu Hankintaoikaisu, Päätili-kenttä, kun Käyttöomaisuuserän kirjausprofiilit -sivulla on valittuna Hankintaoikaisu.</li>
+<li><span data-ttu-id="4dce9-141">Kirjanpidollinen jako ostotilausriville, jos toimittajalaskurivi viittaa ostotilausriviin.</span><span class="sxs-lookup"><span data-stu-id="4dce9-141">The accounting distribution for the purchase order line, if the vendor invoice line references a purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-142">Jos Toimittajan lasku -lomakkeessa Tapahtumatyyppi-kentästä on valittu Hankinta, Päätili-kenttä, kun Käyttöomaisuuserän kirjausprofiilit -sivulla on valittuna Hankinta.</span><span class="sxs-lookup"><span data-stu-id="4dce9-142">If Acquisition is selected in the Transaction type field in the Vendor invoice form, the Main account field when Acquisition is selected in the Fixed asset posting profiles page.</span></span></li>
+<li><span data-ttu-id="4dce9-143">Jos Tapahtumatyyppi-kentästä on valittu Hankintaoikaisu, Päätili-kenttä, kun Käyttöomaisuuserän kirjausprofiilit -sivulla on valittuna Hankintaoikaisu.</span><span class="sxs-lookup"><span data-stu-id="4dce9-143">If Acquisition adjustment is selected in the Transaction type field, the Main account field when Acquisition adjustment is selected in the Fixed asset posting profiles page.</span></span></li>
 </ol></td>
 <td><ol>
-<li>Käytä ostotilausriville tilijakoa, jos laskun rivi viittaa ostotilauksen riviin.</li>
-<li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</li>
+<li><span data-ttu-id="4dce9-144">Käytä ostotilausriville tilijakoa, jos laskun rivi viittaa ostotilauksen riviin.</span><span class="sxs-lookup"><span data-stu-id="4dce9-144">Use the account distribution for the purchase order line, if the invoice line references a purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-145">Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-145">Use the financial dimension values from the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-146">Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-146">Use the default financial dimension values from the main account in the Chart of Accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Toimittajalaskurivillä määritetty projekti</td>
+<td><span data-ttu-id="4dce9-147">Toimittajalaskurivillä määritetty projekti</span><span class="sxs-lookup"><span data-stu-id="4dce9-147">Project defined on the vendor invoice line</span></span></td>
 <td><ol>
-<li>Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</li>
-<li>Jos Projektiryhmät-sivulla Kirjaa kustannukset - Nimike -sivulta on valittu Saldo, Päätili-kenttä, kun Kirjanpidon asetukset sivulta on valittu Kustannus.</li>
-<li>Jos Projektiryhmät-sivulla Kirjaa kustannukset - Nimike -sivulta on valittu Tulos, Päätili-kenttä, kun Kirjanpidon asetukset sivulta on valittu Kustannukset - Nimike.</li>
+<li><span data-ttu-id="4dce9-148">Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</span><span class="sxs-lookup"><span data-stu-id="4dce9-148">The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-149">Jos Projektiryhmät-sivulla Kirjaa kustannukset - Nimike -sivulta on valittu Saldo, Päätili-kenttä, kun Kirjanpidon asetukset sivulta on valittu Kustannus.</span><span class="sxs-lookup"><span data-stu-id="4dce9-149">If Balance is selected in the Post costs - item field in the Project groups page, the Main account field when Cost is selected in the Ledger posting setup page.</span></span></li>
+<li><span data-ttu-id="4dce9-150">Jos Projektiryhmät-sivulla Kirjaa kustannukset - Nimike -sivulta on valittu Tulos, Päätili-kenttä, kun Kirjanpidon asetukset sivulta on valittu Kustannukset - Nimike.</span><span class="sxs-lookup"><span data-stu-id="4dce9-150">If Profit and loss is selected in the Post costs - item field in the Project groups page, the Main account field when Cost - item is selected in the Ledger posting setup page.</span></span></li>
 </ol></td>
 <td><ol>
-<li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
+<li><span data-ttu-id="4dce9-151">Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-151">If the invoice line references a purchase order line, use the account distribution for the purchase order line.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Rivialennus</td>
+<td><span data-ttu-id="4dce9-152">Rivialennus</span><span class="sxs-lookup"><span data-stu-id="4dce9-152">Line discount</span></span></td>
 <td><ol>
-<li>Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</li>
-<li>Päätili-kenttä, kun Kirjaus-sivulta on valittu Alennus.</li>
-<li>Jos alennuspäätiliä ei ole määritetty kirjausprofiilissa, kirjanpidon jako kokonaishinnalle tilauksen ostorivillä.</li>
+<li><span data-ttu-id="4dce9-153">Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</span><span class="sxs-lookup"><span data-stu-id="4dce9-153">The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-154">Päätili-kenttä, kun Kirjaus-sivulta on valittu Alennus.</span><span class="sxs-lookup"><span data-stu-id="4dce9-154">The Main account field when Discount is selected in the Posting page.</span></span></li>
+<li><span data-ttu-id="4dce9-155">Jos alennuspäätiliä ei ole määritetty kirjausprofiilissa, kirjanpidon jako kokonaishinnalle tilauksen ostorivillä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-155">If a main account for a discount is not defined on the posting profile, the accounting distribution of the extended price on the purchase order line.</span></span></li>
 </ol></td>
 <td><ol>
-<li>Jos laskurivi on viittaus ostotilausriviin, käytä kirjanpidon jakoa ostotilausriville.</li>
-<li>Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
-<li>Käytä toimittajan laskurivin taloushallinnon dimension arvoja.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</li>
+<li><span data-ttu-id="4dce9-156">Jos laskurivi on viittaus ostotilausriviin, käytä kirjanpidon jakoa ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-156">If the invoice line references a purchase order line, use the accounting distribution for the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-157">Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-157">Use the financial dimensions from the accounting distributions for the extended price on the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-158">Käytä toimittajan laskurivin taloushallinnon dimension arvoja.</span><span class="sxs-lookup"><span data-stu-id="4dce9-158">Use the financial dimension values for the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-159">Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-159">Use the default financial dimension values from the main account in the Chart of Accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Oston kulut, jotka on syötetty ostotilausrivin Hinta ja alennus -välilehteen</td>
+<td><span data-ttu-id="4dce9-160">Oston kulut, jotka on syötetty ostotilausrivin Hinta ja alennus -välilehteen</span><span class="sxs-lookup"><span data-stu-id="4dce9-160">Purchase charge, which is entered on the Price and discount tab of the purchase order line</span></span></td>
 <td><ol>
-<li>Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</li>
-<li>Ostotilausrivin laajennetun hinnan kirjanpidollinen jako.</li>
+<li><span data-ttu-id="4dce9-161">Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</span><span class="sxs-lookup"><span data-stu-id="4dce9-161">The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-162">Ostotilausrivin laajennetun hinnan kirjanpidollinen jako.</span><span class="sxs-lookup"><span data-stu-id="4dce9-162">The accounting distribution of the extended price on the purchase order line.</span></span></li>
 </ol></td>
 <td><ol>
-<li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
-<li>Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
+<li><span data-ttu-id="4dce9-163">Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-163">If the invoice line references a purchase order line, use the account distribution for the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-164">Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-164">Use the financial dimensions from the accounting distributions for the extended price on the vendor invoice line.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Rivin kulu</td>
+<td><span data-ttu-id="4dce9-165">Rivin kulu</span><span class="sxs-lookup"><span data-stu-id="4dce9-165">Line charge</span></span></td>
 <td><ol>
-<li>Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</li>
-<li>Jos Kulujen koodi -lomakkeen Veloituslaji-kentästä on valittu Kirjanpitotili, Kulujen koodi -sivun Debet-tili-kenttä.</li>
-<li>Jos Kulujen koodi -lomakkeen Veloituslaji-kentästä on valittu Nimike, ostotilausrivin laajennetun hinnan kirjanpidollinen jako.</li>
-<li>Jos Kulujen koodi -lomakkeen Veloituslaji-kentästä on valittu Asiakas/Toimittaja, Kulujen koodi -sivun Kredit-tili-kenttä.</li>
+<li><span data-ttu-id="4dce9-166">Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</span><span class="sxs-lookup"><span data-stu-id="4dce9-166">The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-167">Jos Kulujen koodi -lomakkeen Veloituslaji-kentästä on valittu Kirjanpitotili, Kulujen koodi -sivun Debet-tili-kenttä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-167">If Ledger account is selected in the debit Type field in the Charges code form, the debit Account field in the Charges code page.</span></span></li>
+<li><span data-ttu-id="4dce9-168">Jos Kulujen koodi -lomakkeen Veloituslaji-kentästä on valittu Nimike, ostotilausrivin laajennetun hinnan kirjanpidollinen jako.</span><span class="sxs-lookup"><span data-stu-id="4dce9-168">If Item is selected in the debit Type field in the Charges code form, the accounting distribution for the extended price on the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-169">Jos Kulujen koodi -lomakkeen Veloituslaji-kentästä on valittu Asiakas/Toimittaja, Kulujen koodi -sivun Kredit-tili-kenttä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-169">If Customer/Vendor is selected in the debit Type field in the Charges code form, the credit Account field in the Charges code page.</span></span></li>
 </ol></td>
 <td><ol>
-<li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
-<li>Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</li>
+<li><span data-ttu-id="4dce9-170">Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-170">If the invoice line references a purchase order line, use the account distribution for the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-171">Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-171">Use the financial dimensions from the accounting distributions for the extended price on the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-172">Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-172">Use the financial dimension values from the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-173">Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-173">Use the default financial dimension values from the main account in the Chart of Accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Vero, seuraavalla ehdolla:
+<td><span data-ttu-id="4dce9-174">Vero, seuraavalla ehdolla:</span><span class="sxs-lookup"><span data-stu-id="4dce9-174">Tax, with the following condition:</span></span>
 <ul>
-<li>Käytä Yhdysvaltojen verotussääntöjä -vaihtoehto valitaan Kirjanpitoparametrit-sivulta.</li>
+<li><span data-ttu-id="4dce9-175">Käytä Yhdysvaltojen verotussääntöjä -vaihtoehto valitaan Kirjanpitoparametrit-sivulta.</span><span class="sxs-lookup"><span data-stu-id="4dce9-175">The Apply U.S. taxation rules option is selected in the General ledger parameters page.</span></span></li>
 </ul></td>
 <td><ol>
-<li>Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</li>
-<li>Kulun tai laajennetun hinnan kirjanpidollinen jako.</li>
+<li><span data-ttu-id="4dce9-176">Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</span><span class="sxs-lookup"><span data-stu-id="4dce9-176">The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-177">Kulun tai laajennetun hinnan kirjanpidollinen jako.</span><span class="sxs-lookup"><span data-stu-id="4dce9-177">The accounting distribution of the extended price or charge.</span></span></li>
 </ol></td>
 <td><ol>
-<li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
-<li>Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td>Vero, seuraavilla ehdoilla:
-<ul>
-<li>Käytä Yhdysvaltojen verotussääntöjä -vaihtoehdon valinta poistetaan Kirjanpitoparametrit-sivulla.</li>
-<li>Arvonlisäveroryhmän Käyttövero-kentän valinta poistetaan Arvonlisäveroryhmät-sivulla.</li>
-</ul></td>
-<td><ol>
-<li>Jos verosumma on palautettavissa, Kirjanpidon kirjausryhmät -sivun Saatava arvonlisävero -kenttä.</li>
-<li>Jos verosummaa ei voi palauttaa, kokonaishinta tai kulun kirjanpidollinen jako.</li>
-</ol></td>
-<td><ol>
-<li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
-<li>Käytä taloushallinnon dimensioita laajennetusta hinnasta tai kulun kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td>Vero, seuraavilla ehdoilla:
-<ul>
-<li>Käytä Yhdysvaltojen verotussääntöjä -vaihtoehdon valinta poistetaan Kirjanpitoparametrit-sivulla.</li>
-<li>Arvonlisäveroryhmän Käyttövero-kenttä valitaan Arvonlisäveroryhmät-sivulta.</li>
-</ul></td>
-<td><ol>
-<li>Jos verosumma on palautettavissa, Kirjanpidon kirjausryhmät -sivun Saatava arvonlisävero -kenttä.</li>
-<li>Jos verosumma ei ole palautettavissa, Kirjanpidon kirjausryhmät -sivun Käyttöverokulu-kenttä.</li>
-</ol></td>
-<td><ol>
-<li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
-<li>Käytä taloushallinnon dimensioita laajennetusta hinnasta tai kulun kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</li>
+<li><span data-ttu-id="4dce9-178">Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-178">If the invoice line references a purchase order line, use the account distribution for the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-179">Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-179">Use the financial dimensions from the accounting distributions for the extended price on the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-180">Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-180">Use the financial dimension values from the vendor invoice line.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Otsikkomaksu</td>
+<td><span data-ttu-id="4dce9-181">Vero, seuraavilla ehdoilla:</span><span class="sxs-lookup"><span data-stu-id="4dce9-181">Tax, with the following conditions:</span></span>
+<ul>
+<li><span data-ttu-id="4dce9-182">Käytä Yhdysvaltojen verotussääntöjä -vaihtoehdon valinta poistetaan Kirjanpitoparametrit-sivulla.</span><span class="sxs-lookup"><span data-stu-id="4dce9-182">The Apply U.S. taxation rules option is cleared in the General ledger parameters page.</span></span></li>
+<li><span data-ttu-id="4dce9-183">Arvonlisäveroryhmän Käyttövero-kentän valinta poistetaan Arvonlisäveroryhmät-sivulla.</span><span class="sxs-lookup"><span data-stu-id="4dce9-183">The Use tax field for the sales tax group is cleared in the Sales tax groups page.</span></span></li>
+</ul></td>
 <td><ol>
-<li>Jos Kulujen koodi -lomakkeen Veloituslaji-kentästä on valittu Kirjanpitotili, Kulujen koodi -sivun Debet-tili-kenttä.</li>
-<li>Jos Kulujen koodi -lomakkeen Veloituslaji-kentästä on valittu Asiakas/Toimittaja, Kulujen koodi -sivun Kredit-tili-kenttä.</li>
+<li><span data-ttu-id="4dce9-184">Jos verosumma on palautettavissa, Kirjanpidon kirjausryhmät -sivun Saatava arvonlisävero -kenttä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-184">If the tax amount is recoverable, the Sales tax receivable field in the Ledger posting groups page.</span></span></li>
+<li><span data-ttu-id="4dce9-185">Jos verosummaa ei voi palauttaa, kokonaishinta tai kulun kirjanpidollinen jako.</span><span class="sxs-lookup"><span data-stu-id="4dce9-185">If the tax amount is not recoverable, the extended price or the accounting distribution for the charge.</span></span></li>
 </ol></td>
 <td><ol>
-<li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
-<li>Jos päätili on kohdistustili, käytä oletusarvoa kohdistustilin määrityksestä.</li>
-<li>Käytä taloushallinnon dimension oletusmallin arvoja toimittajan laskun otsikosta.</li>
-<li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</li>
+<li><span data-ttu-id="4dce9-186">Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-186">If the invoice line references a purchase order line, use the account distribution for the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-187">Käytä taloushallinnon dimensioita laajennetusta hinnasta tai kulun kirjanpidollisesta jaosta toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-187">Use the financial dimensions from the extended price or the accounting distributions for the charge on the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-188">Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-188">Use the financial dimension values from the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-189">Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-189">Use the default financial dimension values from the main account in the Chart of Accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Otsikkoalennus</td>
+<td><span data-ttu-id="4dce9-190">Vero, seuraavilla ehdoilla:</span><span class="sxs-lookup"><span data-stu-id="4dce9-190">Tax, with the following conditions:</span></span>
+<ul>
+<li><span data-ttu-id="4dce9-191">Käytä Yhdysvaltojen verotussääntöjä -vaihtoehdon valinta poistetaan Kirjanpitoparametrit-sivulla.</span><span class="sxs-lookup"><span data-stu-id="4dce9-191">The Apply U.S. taxation rules option is cleared in the General ledger parameters page.</span></span></li>
+<li><span data-ttu-id="4dce9-192">Arvonlisäveroryhmän Käyttövero-kenttä valitaan Arvonlisäveroryhmät-sivulta.</span><span class="sxs-lookup"><span data-stu-id="4dce9-192">The Use tax field for the sales tax group is selected in the Sales tax groups page.</span></span></li>
+</ul></td>
 <td><ol>
-<li>Toimittajan laskun alennus -kirjaustyypin Päätili-kenttä Automaattisten tapahtumien tilit -sivulla.</li>
+<li><span data-ttu-id="4dce9-193">Jos verosumma on palautettavissa, Kirjanpidon kirjausryhmät -sivun Saatava arvonlisävero -kenttä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-193">If the tax amount is recoverable, the Sales tax receivable field in the Ledger posting groups page.</span></span></li>
+<li><span data-ttu-id="4dce9-194">Jos verosumma ei ole palautettavissa, Kirjanpidon kirjausryhmät -sivun Käyttöverokulu-kenttä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-194">If the tax amount is not recoverable, the Use tax expense field in the Ledger posting groups page.</span></span></li>
 </ol></td>
 <td><ol>
-<li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
-<li>Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</li>
+<li><span data-ttu-id="4dce9-195">Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-195">If the invoice line references a purchase order line, use the account distribution for the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-196">Käytä taloushallinnon dimensioita laajennetusta hinnasta tai kulun kirjanpidollisesta jaosta toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-196">Use the financial dimensions from the extended price or the accounting distributions for the charge on the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-197">Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-197">Use the financial dimension values from the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-198">Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-198">Use the default financial dimension values from the main account in the Chart of Accounts page.</span></span></li>
+</ol></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="4dce9-199">Otsikkomaksu</span><span class="sxs-lookup"><span data-stu-id="4dce9-199">Header charge</span></span></td>
+<td><ol>
+<li><span data-ttu-id="4dce9-200">Jos Kulujen koodi -lomakkeen Veloituslaji-kentästä on valittu Kirjanpitotili, Kulujen koodi -sivun Debet-tili-kenttä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-200">If Ledger account is selected in the debit Type field in the Charges code form, the debit Account field in the Charges code page.</span></span></li>
+<li><span data-ttu-id="4dce9-201">Jos Kulujen koodi -lomakkeen Veloituslaji-kentästä on valittu Asiakas/Toimittaja, Kulujen koodi -sivun Kredit-tili-kenttä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-201">If Customer/Vendor is selected in the debit Type field in the Charges code form, the credit Account field in the Charges code page.</span></span></li>
+</ol></td>
+<td><ol>
+<li><span data-ttu-id="4dce9-202">Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-202">If the invoice line references a purchase order line, use the account distribution for the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-203">Jos päätili on kohdistustili, käytä oletusarvoa kohdistustilin määrityksestä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-203">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="4dce9-204">Käytä taloushallinnon dimension oletusmallin arvoja toimittajan laskun otsikosta.</span><span class="sxs-lookup"><span data-stu-id="4dce9-204">Use the financial dimension default template values from the vendor invoice header.</span></span></li>
+<li><span data-ttu-id="4dce9-205">Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-205">Use the financial dimension values from the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-206">Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-206">Use the default financial dimension values from the main account in the Chart of Accounts page.</span></span></li>
+</ol></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="4dce9-207">Otsikkoalennus</span><span class="sxs-lookup"><span data-stu-id="4dce9-207">Header discount</span></span></td>
+<td><ol>
+<li><span data-ttu-id="4dce9-208">Toimittajan laskun alennus -kirjaustyypin Päätili-kenttä Automaattisten tapahtumien tilit -sivulla.</span><span class="sxs-lookup"><span data-stu-id="4dce9-208">The Main account field for the Vendor invoice discount posting type in the Accounts for automatic transactions page.</span></span></li>
+</ol></td>
+<td><ol>
+<li><span data-ttu-id="4dce9-209">Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</span><span class="sxs-lookup"><span data-stu-id="4dce9-209">If the invoice line references a purchase order line, use the account distribution for the purchase order line.</span></span></li>
+<li><span data-ttu-id="4dce9-210">Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-210">Use the financial dimensions from the accounting distributions for the extended price on the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-211">Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-211">Use the financial dimension values from the vendor invoice line.</span></span></li>
+<li><span data-ttu-id="4dce9-212">Käytä taloushallinnon oletusdimensioarvoja Tilikartta-sivun päätililtä.</span><span class="sxs-lookup"><span data-stu-id="4dce9-212">Use the default financial dimension values from the main account in the Chart of Accounts page.</span></span></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
  
-<a name="distributing-taxes"></a>Verojen jakaminen
+<a name="distributing-taxes"></a><span data-ttu-id="4dce9-213">Verojen jakaminen</span><span class="sxs-lookup"><span data-stu-id="4dce9-213">Distributing taxes</span></span>
 ------------------
 
-verojen kirjanpidollisia jakoja ei voi luoda ennen verojen laskentaa. Jotta voit laskea arvonlisäverot, sinun on suoritettava jokin seuraavista Toimittajan lasku -sivun tehtävistä:
--   Näytä laskun summa.
--   Näytä arvonlisävero.
--   Näytä alareskontran kirjauskansio.
--   Näytä kirjanpidolliset jaot koko toimittajan laskulle.
--   Sijoita toimittajan lasku pitoon.
--   Kirjaa toimittajalasku.
+<span data-ttu-id="4dce9-214">verojen kirjanpidollisia jakoja ei voi luoda ennen verojen laskentaa.</span><span class="sxs-lookup"><span data-stu-id="4dce9-214">Accounting distributions for taxes cannot be created until taxes are calculated.</span></span> <span data-ttu-id="4dce9-215">Jotta voit laskea arvonlisäverot, sinun on suoritettava jokin seuraavista Toimittajan lasku -sivun tehtävistä:</span><span class="sxs-lookup"><span data-stu-id="4dce9-215">To calculate sales taxes, you must complete one of the following tasks in the Vendor invoice page:</span></span>
+-   <span data-ttu-id="4dce9-216">Näytä laskun summa.</span><span class="sxs-lookup"><span data-stu-id="4dce9-216">View the invoice total.</span></span>
+-   <span data-ttu-id="4dce9-217">Näytä arvonlisävero.</span><span class="sxs-lookup"><span data-stu-id="4dce9-217">View the sales tax.</span></span>
+-   <span data-ttu-id="4dce9-218">Näytä alareskontran kirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="4dce9-218">View the subledger journal.</span></span>
+-   <span data-ttu-id="4dce9-219">Näytä kirjanpidolliset jaot koko toimittajan laskulle.</span><span class="sxs-lookup"><span data-stu-id="4dce9-219">View accounting distributions for the complete vendor invoice.</span></span>
+-   <span data-ttu-id="4dce9-220">Sijoita toimittajan lasku pitoon.</span><span class="sxs-lookup"><span data-stu-id="4dce9-220">Place the vendor invoice on hold.</span></span>
+-   <span data-ttu-id="4dce9-221">Kirjaa toimittajalasku.</span><span class="sxs-lookup"><span data-stu-id="4dce9-221">Post the vendor invoice.</span></span>
 
-## <a name="subledger-journals-for-vendor-invoices"></a>Alareskontran kirjauskansiot toimittajalaskuille
-Ennen kuin kirjaat toimittajalaskun, voit tarkastella laskun koko kirjanpitokirjausta, joka sisältää hyvitykset ja veloitukset, jotta voit varmistaa, että lasku kirjataan oikeille tileille. Tämä kirjanpitomerkinnän koko näkymä tunnetaan nimellä alareskontran kirjauskansio. 
+## <a name="subledger-journals-for-vendor-invoices"></a><span data-ttu-id="4dce9-222">Alareskontran kirjauskansiot toimittajalaskuille</span><span class="sxs-lookup"><span data-stu-id="4dce9-222">Subledger journals for vendor invoices</span></span>
+<span data-ttu-id="4dce9-223">Ennen kuin kirjaat toimittajalaskun, voit tarkastella laskun koko kirjanpitokirjausta, joka sisältää hyvitykset ja veloitukset, jotta voit varmistaa, että lasku kirjataan oikeille tileille.</span><span class="sxs-lookup"><span data-stu-id="4dce9-223">Before you post a vendor invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts.</span></span> <span data-ttu-id="4dce9-224">Tämä kirjanpitomerkinnän koko näkymä tunnetaan nimellä alareskontran kirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="4dce9-224">This view of the full accounting entry is called a subledger journal.</span></span> 
 
-Jos alareskontran kirjaus on virheellinen esikatsellessa, et voi muokata sitä ennen kuin kirjaat toimittajatilauksen. Sen sijaan sinun on muokattava kirjanpidollisia jakoja tai kirjausprofiilia. Kirjanpidollisia jakoja käytetään määrittämään yksi kirjanpitomerkinnän puolista, debet tai kredit. Alareskontran kirjauskansion kirjanpitoviennin vastakirjaus luodaan käyttämällä kirjausprofiileja, kuten toimittajatili tai vero.
+<span data-ttu-id="4dce9-225">Jos alareskontran kirjaus on virheellinen esikatsellessa, et voi muokata sitä ennen kuin kirjaat toimittajatilauksen.</span><span class="sxs-lookup"><span data-stu-id="4dce9-225">If the subledger journal entry is incorrect when you preview it before you journalize the vendor invoice, you cannot modify the subledger journal entry.</span></span> <span data-ttu-id="4dce9-226">Sen sijaan sinun on muokattava kirjanpidollisia jakoja tai kirjausprofiilia.</span><span class="sxs-lookup"><span data-stu-id="4dce9-226">Instead, you must modify the accounting distributions or the posting profile.</span></span> <span data-ttu-id="4dce9-227">Kirjanpidollisia jakoja käytetään määrittämään yksi kirjanpitomerkinnän puolista, debet tai kredit.</span><span class="sxs-lookup"><span data-stu-id="4dce9-227">The accounting distributions are used to define one side of the accounting entry, the debit or the credit.</span></span> <span data-ttu-id="4dce9-228">Alareskontran kirjauskansion kirjanpitoviennin vastakirjaus luodaan käyttämällä kirjausprofiileja, kuten toimittajatili tai vero.</span><span class="sxs-lookup"><span data-stu-id="4dce9-228">The offsetting subledger journal account entry is created by using the posting profiles, such as from the vendor account or tax.</span></span>
 
 
 

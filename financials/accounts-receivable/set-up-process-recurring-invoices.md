@@ -19,51 +19,51 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 463a81d615e6820b6ab45592cd21e28a76c6c04d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5f095b74df8b680f6e7e54520f9684298ec51aad
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="set-up-and-process-recurring-invoices"></a>Aseta ja käsittele toistuvia laskuja
+# <a name="set-up-and-process-recurring-invoices"></a><span data-ttu-id="92777-104">Aseta ja käsittele toistuvia laskuja</span><span class="sxs-lookup"><span data-stu-id="92777-104">Set up and process recurring invoices</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kerrotaan, miten toistuvat laskut määritetään ja miten niitä käsitellään. Voit käyttää toistuvia laskuja, jos asiakkailta laskutetaan sama summa säännöllisesti.
+<span data-ttu-id="92777-105">Tässä artikkelissa kerrotaan, miten toistuvat laskut määritetään ja miten niitä käsitellään.</span><span class="sxs-lookup"><span data-stu-id="92777-105">This article explains how to set up and process recurring invoices.</span></span> <span data-ttu-id="92777-106">Voit käyttää toistuvia laskuja, jos asiakkailta laskutetaan sama summa säännöllisesti.</span><span class="sxs-lookup"><span data-stu-id="92777-106">You can use recurring invoices if you must invoice customers for the same amount on a regular basis.</span></span>
 
-<a name="create-a-recurring-free-text-invoice-template"></a>Luo malli toistuville vapaatekstilaskuille
+<a name="create-a-recurring-free-text-invoice-template"></a><span data-ttu-id="92777-107">Luo malli toistuville vapaatekstilaskuille</span><span class="sxs-lookup"><span data-stu-id="92777-107">Create a recurring free text invoice template</span></span>
 ---------------------------------------------
 
-Laskuttaaksesi samoja säännöllisin väliajoin palveluita käyttäviä asiakkaita, on määritettävä vapaa tekstimuotoinen laskutusmalli, jota voidaan käyttää uudelleen laskujen luomiseen. Tämä malli sisältää seuraavat tiedot:
+<span data-ttu-id="92777-108">Laskuttaaksesi samoja säännöllisin väliajoin palveluita käyttäviä asiakkaita, on määritettävä vapaa tekstimuotoinen laskutusmalli, jota voidaan käyttää uudelleen laskujen luomiseen.</span><span class="sxs-lookup"><span data-stu-id="92777-108">To invoice customers for the same services on a regular basis, you must define a free text invoice template that can be reused to create the invoices.</span></span> <span data-ttu-id="92777-109">Tämä malli sisältää seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="92777-109">This template contains the following information:</span></span>
 
--   Otsikkotiedot, kuten veroryhmät, maksuehdot ja maksutapa
--   Rivin tietoja, kuten palvelun kuvaus, tulostilit, yksikköhinta ja laskutussumma
--   Toimitus-tai käsittelymaksut
--   Kirjanpidolliset jaot sekä taloushallinnon dimension tiedot, kuten kustannuspaikat ja liiketoimintayksiköt
+-   <span data-ttu-id="92777-110">Otsikkotiedot, kuten veroryhmät, maksuehdot ja maksutapa</span><span class="sxs-lookup"><span data-stu-id="92777-110">Header information, such as tax groups, terms of payment, and the method of payment</span></span>
+-   <span data-ttu-id="92777-111">Rivin tietoja, kuten palvelun kuvaus, tulostilit, yksikköhinta ja laskutussumma</span><span class="sxs-lookup"><span data-stu-id="92777-111">Line information, such as the service description, revenue accounts, unit price, and invoice amount</span></span>
+-   <span data-ttu-id="92777-112">Toimitus-tai käsittelymaksut</span><span class="sxs-lookup"><span data-stu-id="92777-112">Charges for shipping or handling</span></span>
+-   <span data-ttu-id="92777-113">Kirjanpidolliset jaot sekä taloushallinnon dimension tiedot, kuten kustannuspaikat ja liiketoimintayksiköt</span><span class="sxs-lookup"><span data-stu-id="92777-113">Accounting distributions together with financial dimension information, such as cost centers and business units</span></span>
 
-Itse asiassa luot koko laskun ja tallennat sen mallina. Voit määrittää mallit käyttämällä **toistuvat laskut** -sivuja.
+<span data-ttu-id="92777-114">Itse asiassa luot koko laskun ja tallennat sen mallina.</span><span class="sxs-lookup"><span data-stu-id="92777-114">In effect, you're creating an entire invoice and saving it as a template.</span></span> <span data-ttu-id="92777-115">Voit määrittää mallit käyttämällä **toistuvat laskut** -sivuja.</span><span class="sxs-lookup"><span data-stu-id="92777-115">You can set up the templates using the **Recurring invoices** page.</span></span>
 
-## <a name="assign-a-free-text-invoice-template-to-a-customer-and-enter-recurrence-details"></a>Määritä vapaatekstilaskun malli asiakkaalle ja syötä toistuvat yksityiskohdat
-Mallin luonnin jälkeen malli on määritettävä niille asiakkaille, joita haluat laskuttaa. Lisäksi, sinun on määritettävä milloin ja kuinka usein laskua käytetään. Voit määrittää malleja **lasku**-välilehdessä **asiakkaat**-sivulla. Lisää malli luetteloon ja päivitä seuraavat tiedot:
+## <a name="assign-a-free-text-invoice-template-to-a-customer-and-enter-recurrence-details"></a><span data-ttu-id="92777-116">Määritä vapaatekstilaskun malli asiakkaalle ja syötä toistuvat yksityiskohdat</span><span class="sxs-lookup"><span data-stu-id="92777-116">Assign a free text invoice template to a customer and enter recurrence details</span></span>
+<span data-ttu-id="92777-117">Mallin luonnin jälkeen malli on määritettävä niille asiakkaille, joita haluat laskuttaa.</span><span class="sxs-lookup"><span data-stu-id="92777-117">After the template is created, you must assign the template to the customers that you want to invoice.</span></span> <span data-ttu-id="92777-118">Lisäksi, sinun on määritettävä milloin ja kuinka usein laskua käytetään.</span><span class="sxs-lookup"><span data-stu-id="92777-118">Additionally, you must specify when and how often the invoice will be used.</span></span> <span data-ttu-id="92777-119">Voit määrittää malleja **lasku**-välilehdessä **asiakkaat**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="92777-119">You can assign the templates on the **Invoice** tab of the **Customers** page.</span></span> <span data-ttu-id="92777-120">Lisää malli luetteloon ja päivitä seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="92777-120">Add the template to the list, and update the following information:</span></span>
 
--   Alkamispäivämäärä ja halutessasi päättymispäivä toistuvaa laskutusta varten
--   Toistuvan laskutuksen käyttötiheys (esimerkiksi päivittäin tai kerran kuussa)
--   Laskutuksen enimmäissumma (jos tämä on pakollinen määritys)
+-   <span data-ttu-id="92777-121">Alkamispäivämäärä ja halutessasi päättymispäivä toistuvaa laskutusta varten</span><span class="sxs-lookup"><span data-stu-id="92777-121">The start date and, optionally, the end date for the recurring billing</span></span>
+-   <span data-ttu-id="92777-122">Toistuvan laskutuksen käyttötiheys (esimerkiksi päivittäin tai kerran kuussa)</span><span class="sxs-lookup"><span data-stu-id="92777-122">The frequency of the recurring billing (for example, every day or once a month)</span></span>
+-   <span data-ttu-id="92777-123">Laskutuksen enimmäissumma (jos tämä on pakollinen määritys)</span><span class="sxs-lookup"><span data-stu-id="92777-123">The maximum billing amount (if this information is required)</span></span>
 
-Asiakkaalla voi olla useita malleja, joilla on eri maksutiheydet.
+<span data-ttu-id="92777-124">Asiakkaalla voi olla useita malleja, joilla on eri maksutiheydet.</span><span class="sxs-lookup"><span data-stu-id="92777-124">A customer can have multiple templates that have different frequencies.</span></span>
 
-## <a name="generate-the-recurring-invoices"></a>Luo toistuvat laskut
-**Toistuvat laskut**-sivulla on tehtävä, joka käsittelee toistuvien laskujen malleja. Määritä laskutuspäivämäärä ja malli laskujen luontia varten. Laskut luodaan ja jokaiselle käsiteltävälle laskutusryhmälle määritetään yksi toistuva tunnusnumero.
-Kirjaa toistuvat vapaatekstilaskut
+## <a name="generate-the-recurring-invoices"></a><span data-ttu-id="92777-125">Luo toistuvat laskut</span><span class="sxs-lookup"><span data-stu-id="92777-125">Generate the recurring invoices</span></span>
+<span data-ttu-id="92777-126">**Toistuvat laskut**-sivulla on tehtävä, joka käsittelee toistuvien laskujen malleja.</span><span class="sxs-lookup"><span data-stu-id="92777-126">On the **Recurring invoices** page, there is a task that processes recurring invoice templates.</span></span> <span data-ttu-id="92777-127">Määritä laskutuspäivämäärä ja malli laskujen luontia varten.</span><span class="sxs-lookup"><span data-stu-id="92777-127">You specify the invoice date and the template to generate the invoices from.</span></span> <span data-ttu-id="92777-128">Laskut luodaan ja jokaiselle käsiteltävälle laskutusryhmälle määritetään yksi toistuva tunnusnumero.</span><span class="sxs-lookup"><span data-stu-id="92777-128">Invoices will be generated and assigned a single recurrence ID number for each group of invoices that is processed.</span></span>
+<span data-ttu-id="92777-129">Kirjaa toistuvat vapaatekstilaskut</span><span class="sxs-lookup"><span data-stu-id="92777-129">Post recurring free text invoices</span></span>
 ---------------------------------
 
-Sen jälkeen kun toistuvat laskut on luotu, laskun toistuvat tunnukset näkyvät kirjaustehtävässä **toistuvat laskut**-sivulla. Voit tarkastella kaikkia laskuja toistuvalle tunnukselle napsauttamalla linkkiä. Voit poistaa yksittäisiä laskuja toituvan tunnuksen laskujen tarkistuksen aikana. Asiakkaan toistumisasetukset palautetaan kyseiseen malliin niin, että se voidaan ottaa esille myöhemmin uudelleen. Voit kirjata yhden, useita tai kaikki laskut toistuvalla tunnuksella. Jos työnkulkuja on otettu käyttöön, sinun on valittava **lähetä** ennen kuin voit kirjata laskut.
-Tulosta toistuvat vapaatekstilaskut
+<span data-ttu-id="92777-130">Sen jälkeen kun toistuvat laskut on luotu, laskun toistuvat tunnukset näkyvät kirjaustehtävässä **toistuvat laskut**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="92777-130">After recurring invoices are generated, the invoice recurrence IDs appear in a posting task on the **Recurring invoices** page.</span></span> <span data-ttu-id="92777-131">Voit tarkastella kaikkia laskuja toistuvalle tunnukselle napsauttamalla linkkiä.</span><span class="sxs-lookup"><span data-stu-id="92777-131">You can view all of the invoices for a recurrence ID by clicking the link.</span></span> <span data-ttu-id="92777-132">Voit poistaa yksittäisiä laskuja toituvan tunnuksen laskujen tarkistuksen aikana.</span><span class="sxs-lookup"><span data-stu-id="92777-132">During your review of the invoices for the recurrence ID, you can delete individual invoices.</span></span> <span data-ttu-id="92777-133">Asiakkaan toistumisasetukset palautetaan kyseiseen malliin niin, että se voidaan ottaa esille myöhemmin uudelleen.</span><span class="sxs-lookup"><span data-stu-id="92777-133">The customer's recurrence settings will be reset for that template, so that it can be regenerated later.</span></span> <span data-ttu-id="92777-134">Voit kirjata yhden, useita tai kaikki laskut toistuvalla tunnuksella.</span><span class="sxs-lookup"><span data-stu-id="92777-134">You can post one, many, or all of the invoices for a recurrence ID.</span></span> <span data-ttu-id="92777-135">Jos työnkulkuja on otettu käyttöön, sinun on valittava **lähetä** ennen kuin voit kirjata laskut.</span><span class="sxs-lookup"><span data-stu-id="92777-135">If workflows are enabled, you must click **Submit** before you can post the invoices.</span></span>
+<span data-ttu-id="92777-136">Tulosta toistuvat vapaatekstilaskut</span><span class="sxs-lookup"><span data-stu-id="92777-136">Print recurring free text invoices</span></span>
 ----------------------------------
 
-Sen jälkeen kun toistuvat laskut on kirjattu, voit tulostaa laskuja vapaan tekstimuotoisen laskun luettelosivulta. Voit tulostaa laskut, jotka on valittu tai voit valita mitkä laskut haluat tulostaa.
+<span data-ttu-id="92777-137">Sen jälkeen kun toistuvat laskut on kirjattu, voit tulostaa laskuja vapaan tekstimuotoisen laskun luettelosivulta.</span><span class="sxs-lookup"><span data-stu-id="92777-137">After recurring invoices are posted, you can print the invoices from the free text invoice list page.</span></span> <span data-ttu-id="92777-138">Voit tulostaa laskut, jotka on valittu tai voit valita mitkä laskut haluat tulostaa.</span><span class="sxs-lookup"><span data-stu-id="92777-138">You can print the invoices that are selected, or you can select a range of invoices to print.</span></span>
 
 
 

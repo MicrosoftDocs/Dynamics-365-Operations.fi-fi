@@ -16,30 +16,30 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: c34ddb48cb5acc4c9d7023f2eeefaac5790f9bcc
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 183bbba80351c19d2218c577020b1e852ab45ac4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="view-outbound-planned-intercompany-demand"></a>Näytä lähtevä suunniteltu konserniyritysten välinen kysyntä
+# <a name="view-outbound-planned-intercompany-demand"></a><span data-ttu-id="7b805-103">Näytä lähtevä suunniteltu konserniyritysten välinen kysyntä</span><span class="sxs-lookup"><span data-stu-id="7b805-103">View outbound planned intercompany demand</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Näiden ohjeiden avulla voit tarkastella kaikkia suunniteltuja tilauksia, jotka täyttää konsernitoimittaja. Tämän menettelyn luomisessa käytetty esittely-yritys on DEMF.
+<span data-ttu-id="7b805-104">Näiden ohjeiden avulla voit tarkastella kaikkia suunniteltuja tilauksia, jotka täyttää konsernitoimittaja.</span><span class="sxs-lookup"><span data-stu-id="7b805-104">This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor.</span></span> <span data-ttu-id="7b805-105">Tämän menettelyn luomisessa käytetty esittely-yritys on DEMF.</span><span class="sxs-lookup"><span data-stu-id="7b805-105">The demo data company used to create this procedure is DEMF.</span></span>
 
-1. Valitse Pääsuunnittelu.
-2. Anna tai valitse Suunnitelma-kentässä arvo.
-    * Valitse suunnitelma 10 Suunitelma-kenttään.  
-3. Valitse Suorita.
-4. Syötä Säikeiden määrä -kenttään numero.
-    * Tämä vastaa pääsuunnittelussa käytettävien rinnakkaisten säikeiden määrää.  
-5. Valitse OK.
-    * Tämä saattaa kestää jonkin aikaa.  
-6. Valitse Suunniteltu konsernin sisäinen kysyntä.
-7. Valitse Lähtevä suunniteltu konserniyritysten välinen kysyntä.
-    * Tällä sivulla on yleiskuvaus suunnitellusta kysynnästä, jonka täyttää sisäisen toimitusketjun toimittaja.  
-8. Laajenna Ylöspäin suuntautuvan kysynnän tiedot -osa.
-    * Tässä osassa näytetään tietoja kysynnän täyttämisestä. Voit joutua odottamaan pääsuunnittelun valmistumista toimittajayrityksessä, ennen kuin näet lisätietoja tässä.  
+1. <span data-ttu-id="7b805-106">Valitse Pääsuunnittelu.</span><span class="sxs-lookup"><span data-stu-id="7b805-106">Click Master planning.</span></span>
+2. <span data-ttu-id="7b805-107">Anna tai valitse Suunnitelma-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="7b805-107">In the Plan field, enter or select a value.</span></span>
+    * <span data-ttu-id="7b805-108">Valitse suunnitelma 10 Suunitelma-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7b805-108">In the Plan field, select plan 10.</span></span>  
+3. <span data-ttu-id="7b805-109">Valitse Suorita.</span><span class="sxs-lookup"><span data-stu-id="7b805-109">Click Run.</span></span>
+4. <span data-ttu-id="7b805-110">Syötä Säikeiden määrä -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="7b805-110">In the Number of threads field, enter a number.</span></span>
+    * <span data-ttu-id="7b805-111">Tämä vastaa pääsuunnittelussa käytettävien rinnakkaisten säikeiden määrää.</span><span class="sxs-lookup"><span data-stu-id="7b805-111">This represents the number of parallel threads to be used for master planning.</span></span>  
+5. <span data-ttu-id="7b805-112">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7b805-112">Click OK.</span></span>
+    * <span data-ttu-id="7b805-113">Tämä saattaa kestää jonkin aikaa.</span><span class="sxs-lookup"><span data-stu-id="7b805-113">This may take a while.</span></span>  
+6. <span data-ttu-id="7b805-114">Valitse Suunniteltu konsernin sisäinen kysyntä.</span><span class="sxs-lookup"><span data-stu-id="7b805-114">Click Planned intercompany demand.</span></span>
+7. <span data-ttu-id="7b805-115">Valitse Lähtevä suunniteltu konserniyritysten välinen kysyntä.</span><span class="sxs-lookup"><span data-stu-id="7b805-115">Click Outbound planned intercompany demand.</span></span>
+    * <span data-ttu-id="7b805-116">Tällä sivulla on yleiskuvaus suunnitellusta kysynnästä, jonka täyttää sisäisen toimitusketjun toimittaja.</span><span class="sxs-lookup"><span data-stu-id="7b805-116">This page provides an overview of all the planned demand that will be fulfilled by an internal supply chain vendor.</span></span>  
+8. <span data-ttu-id="7b805-117">Laajenna Ylöspäin suuntautuvan kysynnän tiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="7b805-117">Expand the Upstream demand details section.</span></span>
+    * <span data-ttu-id="7b805-118">Tässä osassa näytetään tietoja kysynnän täyttämisestä.</span><span class="sxs-lookup"><span data-stu-id="7b805-118">In this section, you can see the details about how the demand will be fulfilled.</span></span> <span data-ttu-id="7b805-119">Voit joutua odottamaan pääsuunnittelun valmistumista toimittajayrityksessä, ennen kuin näet lisätietoja tässä.</span><span class="sxs-lookup"><span data-stu-id="7b805-119">You may need to wait for master planning to be run in the supply company before you can see additional information here.</span></span>  
 
 

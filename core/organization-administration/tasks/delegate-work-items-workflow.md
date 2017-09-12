@@ -16,36 +16,36 @@ ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 30415b28166d5551f43da04a28b0a5194323f2ab
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6483307ff89ce79a3ef16bb763e3124ac537a5d8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="delegate-work-items-in-a-workflow"></a>Työnkulun työnimikkeiden delegointi
+# <a name="delegate-work-items-in-a-workflow"></a><span data-ttu-id="ca107-103">Työnkulun työnimikkeiden delegointi</span><span class="sxs-lookup"><span data-stu-id="ca107-103">Delegate work items in a workflow</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Jos aiot olla poissa toimistosta tai et voi muutoin käsitellä työnimikkeitä, voit delegoida tai määrittää työnimikkeesi uudelleen muille käyttäjille. Tämä menettely auttaa määrittämään järjestelmän siten, että työnimikkeesi delegoidaan automaattisesti toiselle käyttäjälle.
+<span data-ttu-id="ca107-104">Jos aiot olla poissa toimistosta tai et voi muutoin käsitellä työnimikkeitä, voit delegoida tai määrittää työnimikkeesi uudelleen muille käyttäjille.</span><span class="sxs-lookup"><span data-stu-id="ca107-104">If you plan to be out of the office or otherwise unavailable to act on work items, you can delegate, or reassign, your work items to other users.</span></span> <span data-ttu-id="ca107-105">Tämä menettely auttaa määrittämään järjestelmän siten, että työnimikkeesi delegoidaan automaattisesti toiselle käyttäjälle.</span><span class="sxs-lookup"><span data-stu-id="ca107-105">This procedure helps you configure the system to automatically delegate your work items to another user.</span></span>
 
 
 
-Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+<span data-ttu-id="ca107-106">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="ca107-106">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="set-up-automatic-delegation"></a>Automaattisen delegoinnin määrittäminen
-1. Valitse Yleinen > Asetukset > Käyttäjän asetukset.
-2. Valitse Työnkulku-välilehti.
-    * Varmista, että Delegointi-osa on laajennettu.    Luo delegointisäännöt määrittämään, milloin tietyt työnimiketyypit delegoidaan. Tällä tavoin voit määrittää järjestelmän delegoimaan työnimikkeesi automaattisesti muille käyttäjille. Luo delegointisääntö seuraavien ohjeiden avulla.  
-3. ValitseLisää.
-4. Valitse Vaikutusalue-kentässä vaihtoehto.
-    * Kaikki – delegoi kaikki sinulle määritetyt työnimikkeet.    Moduuli – Delegoi vain tiettyyn työnkulkutyyppiin liittyvät työnimikkeet. Jos valitset tämän vaihtoehdon, työnkulkutyyppi on valittava Nimi-kentässä.    Työnkulku – Delegoi vain tiettyyn työnkulkuun liittyvät työnimikkeet. Jos valitset tämän vaihtoehdon, työnkulku on valittava Nimi-kentässä.  
-5. Valitse Delegoi-kentässä käyttäjä, jolle työnimikkeet delegoidaan.
-    * Määritä Alkamispäivämäärä ja -kellonaika- ja Päättymispäivämäärä ja -kellonaika -kenttien avulla, milloin haluat delegoida työnimikkeet automaattisesti.  
-6. Anna päivämäärä ja kellonaika Aloituspäivämäärä ja -kellonaika -kentässä.
-7. Anna päivämäärä ja kellonaika Päättymispäivämäärä ja -kellonaika -kentässä.
-8. Aktivoi tämä delegointisääntö valitsemalla Käytössä-valintaruutu.
-    * Jos Moduuli on valittu vaikutusalueeksi, moduuli on valittava myös Nimi-kentässä.    Jos Työnkulku on valittu vaikutusalueeksi, tietty työnkulku on valittava delegoitavaksi myös Nimi-kentässä.  
-9. Selitä Kommentti-kentässä, miksi delegoit työnimikkeet.
+## <a name="set-up-automatic-delegation"></a><span data-ttu-id="ca107-107">Automaattisen delegoinnin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="ca107-107">Set up automatic delegation</span></span>
+1. <span data-ttu-id="ca107-108">Valitse Yleinen > Asetukset > Käyttäjän asetukset.</span><span class="sxs-lookup"><span data-stu-id="ca107-108">Go to Common > Setup > User options.</span></span>
+2. <span data-ttu-id="ca107-109">Valitse Työnkulku-välilehti.</span><span class="sxs-lookup"><span data-stu-id="ca107-109">Click the Workflow tab.</span></span>
+    * <span data-ttu-id="ca107-110">Varmista, että Delegointi-osa on laajennettu.</span><span class="sxs-lookup"><span data-stu-id="ca107-110">Make sure the Delegation section is expanded.</span></span>    <span data-ttu-id="ca107-111">Luo delegointisäännöt määrittämään, milloin tietyt työnimiketyypit delegoidaan. Tällä tavoin voit määrittää järjestelmän delegoimaan työnimikkeesi automaattisesti muille käyttäjille.</span><span class="sxs-lookup"><span data-stu-id="ca107-111">To configure the system to automatically delegate your work items to other users, you must create delegation rules, which specify when certain types of work items are delegated.</span></span> <span data-ttu-id="ca107-112">Luo delegointisääntö seuraavien ohjeiden avulla.</span><span class="sxs-lookup"><span data-stu-id="ca107-112">Follow these steps to create a delegation rule.</span></span>  
+3. <span data-ttu-id="ca107-113">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="ca107-113">Click Add.</span></span>
+4. <span data-ttu-id="ca107-114">Valitse Vaikutusalue-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="ca107-114">In the Scope field, select an option.</span></span>
+    * <span data-ttu-id="ca107-115">Kaikki – delegoi kaikki sinulle määritetyt työnimikkeet.</span><span class="sxs-lookup"><span data-stu-id="ca107-115">All – Delegate all work items that are assigned to you.</span></span>    <span data-ttu-id="ca107-116">Moduuli – Delegoi vain tiettyyn työnkulkutyyppiin liittyvät työnimikkeet.</span><span class="sxs-lookup"><span data-stu-id="ca107-116">Module – Delegate only the work items that are related to a specific type of workflow.</span></span> <span data-ttu-id="ca107-117">Jos valitset tämän vaihtoehdon, työnkulkutyyppi on valittava Nimi-kentässä.</span><span class="sxs-lookup"><span data-stu-id="ca107-117">If you select this option, you must select the type of workflow in the Name field.</span></span>    <span data-ttu-id="ca107-118">Työnkulku – Delegoi vain tiettyyn työnkulkuun liittyvät työnimikkeet.</span><span class="sxs-lookup"><span data-stu-id="ca107-118">Workflow – Delegate only the work items that are related to a specific workflow.</span></span> <span data-ttu-id="ca107-119">Jos valitset tämän vaihtoehdon, työnkulku on valittava Nimi-kentässä.</span><span class="sxs-lookup"><span data-stu-id="ca107-119">If you select this option, you must select the workflow in the Name field.</span></span>  
+5. <span data-ttu-id="ca107-120">Valitse Delegoi-kentässä käyttäjä, jolle työnimikkeet delegoidaan.</span><span class="sxs-lookup"><span data-stu-id="ca107-120">In the Delegate field, select the user to delegate the work items to.</span></span>
+    * <span data-ttu-id="ca107-121">Määritä Alkamispäivämäärä ja -kellonaika- ja Päättymispäivämäärä ja -kellonaika -kenttien avulla, milloin haluat delegoida työnimikkeet automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="ca107-121">Use the Start date/time and End date/time fields to specify when you want the work items to be automatically delegated.</span></span>  
+6. <span data-ttu-id="ca107-122">Anna päivämäärä ja kellonaika Aloituspäivämäärä ja -kellonaika -kentässä.</span><span class="sxs-lookup"><span data-stu-id="ca107-122">In the Start date/time field, enter a date and time.</span></span>
+7. <span data-ttu-id="ca107-123">Anna päivämäärä ja kellonaika Päättymispäivämäärä ja -kellonaika -kentässä.</span><span class="sxs-lookup"><span data-stu-id="ca107-123">In the End date/time field, enter a date and time.</span></span>
+8. <span data-ttu-id="ca107-124">Aktivoi tämä delegointisääntö valitsemalla Käytössä-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="ca107-124">Select the Enabled check box to activate the delegation rule.</span></span>
+    * <span data-ttu-id="ca107-125">Jos Moduuli on valittu vaikutusalueeksi, moduuli on valittava myös Nimi-kentässä.</span><span class="sxs-lookup"><span data-stu-id="ca107-125">If you selected Module as the Scope, then you must select the module in the Name field.</span></span>    <span data-ttu-id="ca107-126">Jos Työnkulku on valittu vaikutusalueeksi, tietty työnkulku on valittava delegoitavaksi myös Nimi-kentässä.</span><span class="sxs-lookup"><span data-stu-id="ca107-126">If you selected Workflow as the Scope, then you must select the specific workflow to delegate in the Name field.</span></span>  
+9. <span data-ttu-id="ca107-127">Selitä Kommentti-kentässä, miksi delegoit työnimikkeet.</span><span class="sxs-lookup"><span data-stu-id="ca107-127">In the Comment field, enter a comment that explains why you are delegating the work items.</span></span>
 
 

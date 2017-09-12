@@ -24,34 +24,34 @@ ms.contentlocale: fi-fi
 ms.lasthandoff: 08/04/2017
 
 ---
-# <a name="on-premises-deployment-landing-page"></a>Paikallisen käyttöönoton saapumissivu
+# <a name="on-premises-deployment-landing-page"></a><span data-ttu-id="a94c4-103">Paikallisen käyttöönoton saapumissivu</span><span class="sxs-lookup"><span data-stu-id="a94c4-103">On-premises deployment landing page</span></span>
 
-Voit ottaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin (paikallinen) käyttöön. Kun valitset paikallisen käyttöönottotyypin, järjestelmävaatimukset, laitteiden koko ja toiminnot poikkeavat pilvikäyttöönotosta. Tässä ohjeaiheessa on linkkejä sisältöön, jossa on paikallisia käyttöönottoja koskevia tietoja.
+<span data-ttu-id="a94c4-104">Voit ottaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin (paikallinen) käyttöön.</span><span class="sxs-lookup"><span data-stu-id="a94c4-104">You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).</span></span> <span data-ttu-id="a94c4-105">Kun valitset paikallisen käyttöönottotyypin, järjestelmävaatimukset, laitteiden koko ja toiminnot poikkeavat pilvikäyttöönotosta.</span><span class="sxs-lookup"><span data-stu-id="a94c4-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="a94c4-106">Tässä ohjeaiheessa on linkkejä sisältöön, jossa on paikallisia käyttöönottoja koskevia tietoja.</span><span class="sxs-lookup"><span data-stu-id="a94c4-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
 
-**Huomautus:** Dynamics 365 for Operations (paikallinen) ollaan nimeämässä uudelleen. Dynamics 365 for Operations (paikallinen) -viittauksia on viestinnässä ja käyttöoikeusoppaissa. Tuotetta käyttöönotettaessa näkyy nimi Dynamics 365 for Finance and Operations, Enterprise edition. Molemmat nimet viittaavat samaan tuotteeseen.
+<span data-ttu-id="a94c4-107">**Huomautus:** Dynamics 365 for Operations (paikallinen) ollaan nimeämässä uudelleen.</span><span class="sxs-lookup"><span data-stu-id="a94c4-107">**Note:** Dynamics 365 for Operations (on-premises) is currently being renamed.</span></span> <span data-ttu-id="a94c4-108">Dynamics 365 for Operations (paikallinen) -viittauksia on viestinnässä ja käyttöoikeusoppaissa.</span><span class="sxs-lookup"><span data-stu-id="a94c4-108">You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides.</span></span> <span data-ttu-id="a94c4-109">Tuotetta käyttöönotettaessa näkyy nimi Dynamics 365 for Finance and Operations, Enterprise edition.</span><span class="sxs-lookup"><span data-stu-id="a94c4-109">The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="a94c4-110">Molemmat nimet viittaavat samaan tuotteeseen.</span><span class="sxs-lookup"><span data-stu-id="a94c4-110">Both of these names refer to the same product.</span></span>
 
-## <a name="get-started"></a>Aloittaminen
-- [(Paikallisen) Dynamics 365 for Finance and Operations, Enterprise Editionin yleiskatsaus](on-premises-overview.md)
-- [Paikallisten käyttöönottojen järjestelmävaatimukset](../get-started/system-requirements-on-prem.md)
-- [Laitteiston koon määrittäminen paikallisissa ympäristöissä](../get-started/hardware-sizing-on-premises-environments.md)
-- [Verkkopalvelun ja paikallisen ohjelmiston käyttöikäkäytäntö](../migration-upgrade/versions-update-policy.md)
-- [(Paikallisen) Dynamics 365 for Finance and Operations, Enterprise Editionin ostaminen](../get-started/purchase-on-premises.md)
+## <a name="get-started"></a><span data-ttu-id="a94c4-111">Aloittaminen</span><span class="sxs-lookup"><span data-stu-id="a94c4-111">Get started</span></span>
+- [<span data-ttu-id="a94c4-112">(Paikallisen) Dynamics 365 for Finance and Operations, Enterprise Editionin yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="a94c4-112">Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview</span></span>](on-premises-overview.md)
+- [<span data-ttu-id="a94c4-113">Paikallisten käyttöönottojen järjestelmävaatimukset</span><span class="sxs-lookup"><span data-stu-id="a94c4-113">System requirements for on-premises deployments</span></span>](../get-started/system-requirements-on-prem.md)
+- [<span data-ttu-id="a94c4-114">Laitteiston koon määrittäminen paikallisissa ympäristöissä</span><span class="sxs-lookup"><span data-stu-id="a94c4-114">Hardware sizing for on-premises environments</span></span>](../get-started/hardware-sizing-on-premises-environments.md)
+- [<span data-ttu-id="a94c4-115">Verkkopalvelun ja paikallisen ohjelmiston käyttöikäkäytäntö</span><span class="sxs-lookup"><span data-stu-id="a94c4-115">Online service and on-premises software lifecycle policy</span></span>](../migration-upgrade/versions-update-policy.md)
+- [<span data-ttu-id="a94c4-116">(Paikallisen) Dynamics 365 for Finance and Operations, Enterprise Editionin ostaminen</span><span class="sxs-lookup"><span data-stu-id="a94c4-116">Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)</span></span>](../get-started/purchase-on-premises.md)
 
-## <a name="onboard"></a>Onboard
-- [Paikallisen Lifecycle Services -projektin luominen](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Asennus ja käyttöönotto paikallisissa ympäristöissä](setup-deploy-on-premises-environments.md)
-- [SQL Server Reporting Servicesin määrittäminen paikallisessa käyttöönotossa](../analytics/configure-ssrs-on-premises.md)
-- [Mukautettujen mallien kehittäminen ja käyttöönottaminen paikallisissa ympäristöissä](develop-deploy-custom-models-on-premises.md)
+## <a name="onboard"></a><span data-ttu-id="a94c4-117">Onboard</span><span class="sxs-lookup"><span data-stu-id="a94c4-117">Onboard</span></span>
+- [<span data-ttu-id="a94c4-118">Paikallisen Lifecycle Services -projektin luominen</span><span class="sxs-lookup"><span data-stu-id="a94c4-118">Create an on-premises project in Lifecycle Services</span></span>](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
+- [<span data-ttu-id="a94c4-119">Asennus ja käyttöönotto paikallisissa ympäristöissä</span><span class="sxs-lookup"><span data-stu-id="a94c4-119">Set up and deploy on-premises environments</span></span>](setup-deploy-on-premises-environments.md)
+- [<span data-ttu-id="a94c4-120">SQL Server Reporting Servicesin määrittäminen paikallisessa käyttöönotossa</span><span class="sxs-lookup"><span data-stu-id="a94c4-120">Configure SQL Server Reporting Services for an on-premises deployment</span></span>](../analytics/configure-ssrs-on-premises.md)
+- [<span data-ttu-id="a94c4-121">Mukautettujen mallien kehittäminen ja käyttöönottaminen paikallisissa ympäristöissä</span><span class="sxs-lookup"><span data-stu-id="a94c4-121">Develop and deploy custom models to on-premises environments</span></span>](develop-deploy-custom-models-on-premises.md)
 
-## <a name="work-in-your-on-premises-deployment"></a>Paikallinen käyttöönoton käyttäminen
-- [Asiakirjanhallinnan määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management)
-- [Sähköisen raportoinnin konfiguraatioiden tuonti](../analytics/electronic-reporting-import-ger-configurations.md)
-- [Asiakirjan luonti-, julkaisu- ja tulostusominaisuudet paikallisissa käyttöönotoissa](../analytics/printing-capabilities-on-premises.md)
-- [Teknisen tuen määrittäminen](../lifecycle-services/support-experience.md)
-- [Asiakasohjelman internet-yhteyden vianmääritys](../user-interface/client-disconnected.md)
+## <a name="work-in-your-on-premises-deployment"></a><span data-ttu-id="a94c4-122">Paikallinen käyttöönoton käyttäminen</span><span class="sxs-lookup"><span data-stu-id="a94c4-122">Work in your on-premises deployment</span></span>
+- [<span data-ttu-id="a94c4-123">Asiakirjanhallinnan määrittäminen</span><span class="sxs-lookup"><span data-stu-id="a94c4-123">Configure document management</span></span>](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management)
+- [<span data-ttu-id="a94c4-124">Sähköisen raportoinnin konfiguraatioiden tuonti</span><span class="sxs-lookup"><span data-stu-id="a94c4-124">Import Electronic reporting configurations</span></span>](../analytics/electronic-reporting-import-ger-configurations.md)
+- [<span data-ttu-id="a94c4-125">Asiakirjan luonti-, julkaisu- ja tulostusominaisuudet paikallisissa käyttöönotoissa</span><span class="sxs-lookup"><span data-stu-id="a94c4-125">Document generation, publishing, and printing capabilities in on-premises deployments</span></span>](../analytics/printing-capabilities-on-premises.md)
+- [<span data-ttu-id="a94c4-126">Teknisen tuen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="a94c4-126">Set up technical support</span></span>](../lifecycle-services/support-experience.md)
+- [<span data-ttu-id="a94c4-127">Asiakasohjelman internet-yhteyden vianmääritys</span><span class="sxs-lookup"><span data-stu-id="a94c4-127">Client Internet connection troubleshooting</span></span>](../user-interface/client-disconnected.md)
 
-## <a name="other-resources"></a>Muut resurssit
-- [Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa](../get-started/features-not-implemented-on-prem.md)
-- [Vanhentuneet ominaisuudet](../migration-upgrade/deprecated-features.md)
+## <a name="other-resources"></a><span data-ttu-id="a94c4-128">Muut resurssit</span><span class="sxs-lookup"><span data-stu-id="a94c4-128">Other resources</span></span>
+- [<span data-ttu-id="a94c4-129">Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa</span><span class="sxs-lookup"><span data-stu-id="a94c4-129">Features not implemented in on-premises deployments</span></span>](../get-started/features-not-implemented-on-prem.md)
+- [<span data-ttu-id="a94c4-130">Vanhentuneet ominaisuudet</span><span class="sxs-lookup"><span data-stu-id="a94c4-130">Deprecated features</span></span>](../migration-upgrade/deprecated-features.md)
  
 

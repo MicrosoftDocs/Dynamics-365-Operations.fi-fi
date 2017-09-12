@@ -18,165 +18,165 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a4d1c81386c0ef03391f3127fa51a6b09a5142b3
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 785da18a851c4d040843f49ca9f1b9ae12d701d3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Määritä pankkitilin täsmäytyksen lisätoimintojen tuontiprosessi
+# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a><span data-ttu-id="0cd3a-104">Määritä pankkitilin täsmäytyksen lisätoimintojen tuontiprosessi</span><span class="sxs-lookup"><span data-stu-id="0cd3a-104">Set up the advanced bank reconciliation import process</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa. Tässä artikkelissa käsitellään tiliotteiden tuontitoimintoa. 
+<span data-ttu-id="0cd3a-105">Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-105">The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="0cd3a-106">Tässä artikkelissa käsitellään tiliotteiden tuontitoimintoa.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-106">This article explains how to set up the import functionality for your bank statements.</span></span> 
 
-Tiliotteen tuontiasetukset vaihtelevat sähköisen tiliotteen muodon mukaan. Finance and Operations tukee heti kolmea tiliotemuotoa, jotka ovat ISO20022, MT940 ja BAI2.
+<span data-ttu-id="0cd3a-107">Tiliotteen tuontiasetukset vaihtelevat sähköisen tiliotteen muodon mukaan.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-107">The setup for bank statement import varies, depending on the format of your electronic bank statement.</span></span> <span data-ttu-id="0cd3a-108">Finance and Operations tukee heti kolmea tiliotemuotoa, jotka ovat ISO20022, MT940 ja BAI2.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-108">Finance and Operations supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.</span></span>
 
-## <a name="sample-files"></a>Mallitiedostot
-Tarvitset kaikkia kolmea muotoa varten tiedostot, jotka kääntävät sähköisen tiliotteen alkuperäisestä muodosta muotoon, jota Finance and Operations voi käyttää. Tarvittavat resurssitiedostot sijaitsevat Microsoft Visual Studion Application Explorerin **Resurssit**-solmussa. Kun olet löytänyt tiedot, kopioi ne yhteen tunnettuun sijaintiin, sillä silloin ne on helpompi ladata palvelimeen määritysprosessin aikana.
+## <a name="sample-files"></a><span data-ttu-id="0cd3a-109">Mallitiedostot</span><span class="sxs-lookup"><span data-stu-id="0cd3a-109">Sample files</span></span>
+<span data-ttu-id="0cd3a-110">Tarvitset kaikkia kolmea muotoa varten tiedostot, jotka kääntävät sähköisen tiliotteen alkuperäisestä muodosta muotoon, jota Finance and Operations voi käyttää.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-110">For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Finance and Operations can use.</span></span> <span data-ttu-id="0cd3a-111">Tarvittavat resurssitiedostot sijaitsevat Microsoft Visual Studion Application Explorerin **Resurssit**-solmussa.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-111">You can find the required resource files under the **Resources** node in Application Explorer in Microsoft Visual Studio.</span></span> <span data-ttu-id="0cd3a-112">Kun olet löytänyt tiedot, kopioi ne yhteen tunnettuun sijaintiin, sillä silloin ne on helpompi ladata palvelimeen määritysprosessin aikana.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-112">After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.</span></span>
 
-| Resurssin nimi                                           | Tiedostonimi                            |
+| <span data-ttu-id="0cd3a-113">Resurssin nimi</span><span class="sxs-lookup"><span data-stu-id="0cd3a-113">Resource name</span></span>                                           | <span data-ttu-id="0cd3a-114">Tiedostonimi</span><span class="sxs-lookup"><span data-stu-id="0cd3a-114">File name</span></span>                            |
 |---------------------------------------------------------|--------------------------------------|
-| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt              | BAI2CSV-to-BAI2XML.xslt              |
-| BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt       | BAI2XML-to-Reconciliation.xslt       |
-| BankStmtImport\_BankReconciliation\_to\_Composite\_xslt | BankReconciliation-to-Composite.xslt |
-| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt   | ISO20022XML-to-Reconciliation.xslt   |
-| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt            | MT940TXT-to-MT940XML.xslt            |
-| BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
-| BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
+| <span data-ttu-id="0cd3a-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span></span>              | <span data-ttu-id="0cd3a-116">BAI2CSV-to-BAI2XML.xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-116">BAI2CSV-to-BAI2XML.xslt</span></span>              |
+| <span data-ttu-id="0cd3a-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span></span>       | <span data-ttu-id="0cd3a-118">BAI2XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-118">BAI2XML-to-Reconciliation.xslt</span></span>       |
+| <span data-ttu-id="0cd3a-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span></span> | <span data-ttu-id="0cd3a-120">BankReconciliation-to-Composite.xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-120">BankReconciliation-to-Composite.xslt</span></span> |
+| <span data-ttu-id="0cd3a-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span></span>   | <span data-ttu-id="0cd3a-122">ISO20022XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-122">ISO20022XML-to-Reconciliation.xslt</span></span>   |
+| <span data-ttu-id="0cd3a-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span></span>            | <span data-ttu-id="0cd3a-124">MT940TXT-to-MT940XML.xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-124">MT940TXT-to-MT940XML.xslt</span></span>            |
+| <span data-ttu-id="0cd3a-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span></span>      | <span data-ttu-id="0cd3a-126">MT940XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="0cd3a-126">MT940XML-to-Reconciliation.xslt</span></span>      |
+| <span data-ttu-id="0cd3a-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span><span class="sxs-lookup"><span data-stu-id="0cd3a-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span></span>          | <span data-ttu-id="0cd3a-128">SampleBankCompositeEntity.xml</span><span class="sxs-lookup"><span data-stu-id="0cd3a-128">SampleBankCompositeEntity.xml</span></span>        |
 
-## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Esimerkkejä tiliotteiden muodoista ja teknisistä asetteluista
-Alla on esimerkkejä tuonnin lisäasetuksia pankkitilin täsmäytystietojen tuontitiedoston teknisistä asettelumäärityksistä sekä kolme esimerkkitiliotetiedostoa: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a><span data-ttu-id="0cd3a-129">Esimerkkejä tiliotteiden muodoista ja teknisistä asetteluista</span><span class="sxs-lookup"><span data-stu-id="0cd3a-129">Examples of bank statement formats and technical layouts</span></span>
+<span data-ttu-id="0cd3a-130">Alla on esimerkkejä tuonnin lisäasetuksia pankkitilin täsmäytystietojen tuontitiedoston teknisistä asettelumäärityksistä sekä kolme esimerkkitiliotetiedostoa: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span><span class="sxs-lookup"><span data-stu-id="0cd3a-130">Below are examples of the advanced bank reconciliation import file technical layout definitions and three related bank statement example files: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span></span>  
 
-| Tekninen asettelumääritys                             | Esimerkkitiliotetiedosto          |
+| <span data-ttu-id="0cd3a-131">Tekninen asettelumääritys</span><span class="sxs-lookup"><span data-stu-id="0cd3a-131">Technical layout definition</span></span>                             | <span data-ttu-id="0cd3a-132">Esimerkkitiliotetiedosto</span><span class="sxs-lookup"><span data-stu-id="0cd3a-132">Bank statement example file</span></span>          |
 |---------------------------------------------------------|--------------------------------------|
-| DynamicsAXMT940Layout                                   | MT940StatementExample                |
-| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
-| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+| <span data-ttu-id="0cd3a-133">DynamicsAXMT940Layout</span><span class="sxs-lookup"><span data-stu-id="0cd3a-133">DynamicsAXMT940Layout</span></span>                                   | <span data-ttu-id="0cd3a-134">MT940StatementExample</span><span class="sxs-lookup"><span data-stu-id="0cd3a-134">MT940StatementExample</span></span>                |
+| <span data-ttu-id="0cd3a-135">DynamicsAXISO20022Layout</span><span class="sxs-lookup"><span data-stu-id="0cd3a-135">DynamicsAXISO20022Layout</span></span>                                | <span data-ttu-id="0cd3a-136">ISO20022StatementExample</span><span class="sxs-lookup"><span data-stu-id="0cd3a-136">ISO20022StatementExample</span></span>             |
+| <span data-ttu-id="0cd3a-137">DynamicsAXBAI2Layout</span><span class="sxs-lookup"><span data-stu-id="0cd3a-137">DynamicsAXBAI2Layout</span></span>                                    | <span data-ttu-id="0cd3a-138">BAI2StatementExample</span><span class="sxs-lookup"><span data-stu-id="0cd3a-138">BAI2StatementExample</span></span>                 |
 
  
 
-## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Määritä ISO20022-tiliotteiden tuonti
-Määritä ensin ISO20022-tiliotteiden tiliotemuodon käsittelyryhmä käyttämällä tietoyksikkökehystä.
+## <a name="set-up-the-import-of-iso20022-bank-statements"></a><span data-ttu-id="0cd3a-139">Määritä ISO20022-tiliotteiden tuonti</span><span class="sxs-lookup"><span data-stu-id="0cd3a-139">Set up the import of ISO20022 bank statements</span></span>
+<span data-ttu-id="0cd3a-140">Määritä ensin ISO20022-tiliotteiden tiliotemuodon käsittelyryhmä käyttämällä tietoyksikkökehystä.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-140">First, you must define the bank statement format processing group for ISO20022 bank statements by using the data entity framework.</span></span>
 
-1.  Valitse **Työtilat** &gt; **Tietojen hallinta**.
-2.  Valitse **Tuo**.
-3.  Anna muodolle nimi, kuten **ISO20022**.
-4.  Valitse **Lähdetietojen muoto**-kenttään **XML-elementti**.
-5.  Valitse **Yksikön nimi** -kenttään **Tiliotteet**.
-6.  Voit ladata tuontitiedostot valitsemalla **Lataa palvelimeen** ja siirtymällä sitten aiemmin tallentamaasi **SampleBankCompositeEntity.xml**-tiedostoon.
-7.  Kun Tiliotteet-yksikkö on ladattu ja yhdistämismääritykset ovat valmiit, valitse yksikölle **Näytä yhdistämismääritykset** -toiminto.
-8.  Tiliotteet-yksikkö on neljästä eri yksiköstä koostuva yhdistelmäyksikkö. Valitse luettelossa ensin **BankStatementDocumentEntity** ja sitten **Näytä yhdistämismääritykset** -toiminto.
-9.  Valitse **Muunnokset**-välilehdessä **Uusi**.
-10. Valitse järjestysnumerolle 1 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **ISO20022XML-to-Reconciliation.xslt**-tiedosto. **Huomautus:** Finance and Operationsin muunnostiedostot ovat vakiomuotoisia. Koska pankit poikkeavat usein tästä muodosta, sinun on päivitettävä tiliotemuotoon yhdistämismääritettävä muunnostiedosto. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
-11. Valitse **Uusi**.
-12. Valitse järjestysnumerolle 2 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **BankReconciliation-to-Composite.xslt**-tiedosto.
-13. Valitse **Käytä muunnoksia**.
+1.  <span data-ttu-id="0cd3a-141">Valitse **Työtilat** &gt; **Tietojen hallinta**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-141">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="0cd3a-142">Valitse **Tuo**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-142">Click **Import**.</span></span>
+3.  <span data-ttu-id="0cd3a-143">Anna muodolle nimi, kuten **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-143">Enter a name for the format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="0cd3a-144">Valitse **Lähdetietojen muoto**-kenttään **XML-elementti**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-144">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="0cd3a-145">Valitse **Yksikön nimi** -kenttään **Tiliotteet**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-145">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="0cd3a-146">Voit ladata tuontitiedostot valitsemalla **Lataa palvelimeen** ja siirtymällä sitten aiemmin tallentamaasi **SampleBankCompositeEntity.xml**-tiedostoon.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-146">To upload the import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="0cd3a-147">Kun Tiliotteet-yksikkö on ladattu ja yhdistämismääritykset ovat valmiit, valitse yksikölle **Näytä yhdistämismääritykset** -toiminto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-147">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="0cd3a-148">Tiliotteet-yksikkö on neljästä eri yksiköstä koostuva yhdistelmäyksikkö.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-148">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="0cd3a-149">Valitse luettelossa ensin **BankStatementDocumentEntity** ja sitten **Näytä yhdistämismääritykset** -toiminto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-149">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="0cd3a-150">Valitse **Muunnokset**-välilehdessä **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-150">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="0cd3a-151">Valitse järjestysnumerolle 1 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **ISO20022XML-to-Reconciliation.xslt**-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-151">For sequence number 1, click **Upload file**, and select the **ISO20022XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="0cd3a-152">**Huomautus:** Finance and Operationsin muunnostiedostot ovat vakiomuotoisia.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-152">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="0cd3a-153">Koska pankit poikkeavat usein tästä muodosta, sinun on päivitettävä tiliotemuotoon yhdistämismääritettävä muunnostiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-153">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+11. <span data-ttu-id="0cd3a-154">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-154">Click **New**.</span></span>
+12. <span data-ttu-id="0cd3a-155">Valitse järjestysnumerolle 2 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **BankReconciliation-to-Composite.xslt**-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-155">For sequence number 2, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+13. <span data-ttu-id="0cd3a-156">Valitse **Käytä muunnoksia**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-156">Click **Apply transforms**.</span></span>
 
-Kun muodon käsittelyryhmä on määritetty, seuraavana vaiheena on ISO20022-tiliotteiden tiliotemuodon sääntöjen määrittäminen.
+<span data-ttu-id="0cd3a-157">Kun muodon käsittelyryhmä on määritetty, seuraavana vaiheena on ISO20022-tiliotteiden tiliotemuodon sääntöjen määrittäminen.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-157">After the format processing group is set up, the next step is to define the bank statement format rules for ISO20022 bank statements.</span></span>
 
-1.  Valitse **Maksuliikenteen hallinta** &gt; **Asetukset** &gt; **Pankkitilin täsmäytyksen lisätoimintojen asetukset** &gt; **Tiliotteen muotoilu**.
-2.  Valitse **Uusi**.
-3.  Määritä tiliotteen muotoilu, kuten **ISO20022**.
-4.  Kirjoita muotoilun nimi.
-5.  Määritä **Käsittelyryhmä**-kenttä aiemmin määrittämällesi ryhmälle, kuten **ISO20022**.
-6.  Valitse **XML-tiedosto**-valintaruutu.
+1.  <span data-ttu-id="0cd3a-158">Valitse **Maksuliikenteen hallinta** &gt; **Asetukset** &gt; **Pankkitilin täsmäytyksen lisätoimintojen asetukset** &gt; **Tiliotteen muotoilu**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-158">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="0cd3a-159">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-159">Click **New**.</span></span>
+3.  <span data-ttu-id="0cd3a-160">Määritä tiliotteen muotoilu, kuten **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-160">Specify a statement format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="0cd3a-161">Kirjoita muotoilun nimi.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-161">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="0cd3a-162">Määritä **Käsittelyryhmä**-kenttä aiemmin määrittämällesi ryhmälle, kuten **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-162">Set the **Processing group** field to the group that you defined earlier, such as **ISO20022**.</span></span>
+6.  <span data-ttu-id="0cd3a-163">Valitse **XML-tiedosto**-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-163">Select the **XML file** check box.</span></span>
 
-Viimeinen vaihe on pankkitilin täsmäytyksen lisätoimintojen ottaminen käyttöön ja määritä pankkitilin tiliotteen muotoilu.
+<span data-ttu-id="0cd3a-164">Viimeinen vaihe on pankkitilin täsmäytyksen lisätoimintojen ottaminen käyttöön ja määritä pankkitilin tiliotteen muotoilu.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-164">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Siirry kohtaan **Maksuliikenteen hallinta** &gt; **Pankkitilit**.
-2.  Valitse pankkitili ja avaa se, jolloin tiedot tulevat näkyviin.
-3.  Valitse **Täsmäytys**-välilehdessä **Pankkitilin täsmäytyksen lisätoiminnot**-asetukseksi **Kyllä**.
-4.  Määritä **Tiliotteen muotoilu**-kenttä aiemmin luomallesi muotoilulle, kuten **ISO20022**.
+1.  <span data-ttu-id="0cd3a-165">Siirry kohtaan **Maksuliikenteen hallinta** &gt; **Pankkitilit**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-165">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="0cd3a-166">Valitse pankkitili ja avaa se, jolloin tiedot tulevat näkyviin.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-166">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="0cd3a-167">Valitse **Täsmäytys**-välilehdessä **Pankkitilin täsmäytyksen lisätoiminnot**-asetukseksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-167">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="0cd3a-168">Määritä **Tiliotteen muotoilu**-kenttä aiemmin luomallesi muotoilulle, kuten **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-168">Set the **Statement format** field to the format that you created earlier, such as **ISO20022**.</span></span>
 
-## <a name="set-up-the-import-of-mt940-bank-statements"></a>Määritä MT940-tiliotteiden tuonti
-Määritä ensin MT940-tiliotteiden tiliotemuodon käsittelyryhmä käyttämällä tietoyksikkökehystä.
+## <a name="set-up-the-import-of-mt940-bank-statements"></a><span data-ttu-id="0cd3a-169">Määritä MT940-tiliotteiden tuonti</span><span class="sxs-lookup"><span data-stu-id="0cd3a-169">Set up the import of MT940 bank statements</span></span>
+<span data-ttu-id="0cd3a-170">Määritä ensin MT940-tiliotteiden tiliotemuodon käsittelyryhmä käyttämällä tietoyksikkökehystä.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-170">First, you must define the bank statement format processing group for MT940 bank statements by using the data entity framework.</span></span>
 
-1.  Valitse **Työtilat** &gt; **Tietojen hallinta**.
-2.  Valitse **Tuo**.
-3.  Anna muodolle nimi, kuten **MT940**.
-4.  Valitse **Lähdetietojen muoto** -kenttään **XML-elementti**.
-5.  Valitse **Yksikön nimi** -kenttään **Tiliotteet**.
-6.  Voit ladata tuontitiedostot valitsemalla **Lataa palvelimeen** ja siirtymällä sitten aiemmin tallentamaasi **SampleBankCompositeEntity.xml**-tiedostoon.
-7.  Kun Tiliotteet-yksikkö on ladattu ja yhdistämismääritykset ovat valmiit, valitse yksikölle **Näytä yhdistämismääritykset** -toiminto.
-8.  Tiliotteet-yksikkö on neljästä eri yksiköstä koostuva yhdistelmäyksikkö. Valitse luettelossa ensin **BankStatementDocumentEntity** ja sitten **Näytä yhdistämismääritykset** -toiminto.
-9.  Valitse **Muunnokset**-välilehdessä **Uusi**.
-10. Valitse järjestysnumerolle 1 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **MT940TXT-to-MT940XML.xslt**-tiedosto.
-11. Valitse **Uusi**.
-12. Valitse järjestysnumerolle 2 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **MT940XML-to-Reconciliation.xslt**-tiedosto. **Huomautus:** Finance and Operationsin muunnostiedostot ovat vakiomuotoisia. Koska pankit poikkeavat usein tästä muodosta, sinun on päivitettävä tiliotemuotoon yhdistämismääritettävä muunnostiedosto. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
-13. Valitse **Uusi**.
-14. Valitse järjestysnumerolle 3 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **BankReconciliation-to-Composite.xslt**-tiedosto.
-15. Valitse **Käytä muunnoksia**.
+1.  <span data-ttu-id="0cd3a-171">Valitse **Työtilat** &gt; **Tietojen hallinta**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-171">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="0cd3a-172">Valitse **Tuo**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-172">Click **Import**.</span></span>
+3.  <span data-ttu-id="0cd3a-173">Anna muodolle nimi, kuten **MT940**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-173">Enter a name for the format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="0cd3a-174">Valitse **Lähdetietojen muoto** -kenttään **XML-elementti**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-174">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="0cd3a-175">Valitse **Yksikön nimi** -kenttään **Tiliotteet**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-175">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="0cd3a-176">Voit ladata tuontitiedostot valitsemalla **Lataa palvelimeen** ja siirtymällä sitten aiemmin tallentamaasi **SampleBankCompositeEntity.xml**-tiedostoon.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-176">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="0cd3a-177">Kun Tiliotteet-yksikkö on ladattu ja yhdistämismääritykset ovat valmiit, valitse yksikölle **Näytä yhdistämismääritykset** -toiminto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-177">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="0cd3a-178">Tiliotteet-yksikkö on neljästä eri yksiköstä koostuva yhdistelmäyksikkö.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-178">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="0cd3a-179">Valitse luettelossa ensin **BankStatementDocumentEntity** ja sitten **Näytä yhdistämismääritykset** -toiminto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-179">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="0cd3a-180">Valitse **Muunnokset**-välilehdessä **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-180">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="0cd3a-181">Valitse järjestysnumerolle 1 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **MT940TXT-to-MT940XML.xslt**-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-181">For sequence number 1, click **Upload file**, and select the **MT940TXT-to-MT940XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="0cd3a-182">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-182">Click **New**.</span></span>
+12. <span data-ttu-id="0cd3a-183">Valitse järjestysnumerolle 2 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **MT940XML-to-Reconciliation.xslt**-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-183">For sequence number 2, click **Upload file**, and select the **MT940XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="0cd3a-184">**Huomautus:** Finance and Operationsin muunnostiedostot ovat vakiomuotoisia.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-184">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="0cd3a-185">Koska pankit poikkeavat usein tästä muodosta, sinun on päivitettävä tiliotemuotoon yhdistämismääritettävä muunnostiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-185">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+13. <span data-ttu-id="0cd3a-186">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-186">Click **New**.</span></span>
+14. <span data-ttu-id="0cd3a-187">Valitse järjestysnumerolle 3 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **BankReconciliation-to-Composite.xslt**-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-187">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="0cd3a-188">Valitse **Käytä muunnoksia**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-188">Click **Apply transforms**.</span></span>
 
-Kun muodon käsittelyryhmä on määritetty, seuraavana vaiheena on MT940-tiliotteiden tiliotemuodon sääntöjen määrittäminen.
+<span data-ttu-id="0cd3a-189">Kun muodon käsittelyryhmä on määritetty, seuraavana vaiheena on MT940-tiliotteiden tiliotemuodon sääntöjen määrittäminen.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-189">After the format processing group is set up, the next step is to define the bank statement format rules for MT940 bank statements.</span></span>
 
-1.  Valitse **Maksuliikenteen hallinta** &gt; **Asetukset** &gt; **Pankkitilin täsmäytyksen lisätoimintojen asetukset** &gt; **Tiliotteen muotoilu**.
-2.  Valitse **Uusi**.
-3.  Määritä tiliotteen muotoilu, kuten **MT940**.
-4.  Kirjoita muotoilun nimi.
-5.  Määritä **Käsittelyryhmä**-kenttä aiemmin määrittämällesi ryhmälle, kuten **MT940**.
-6.  Valitse **Tiedostotyyppi** -kenttään **txt**.
+1.  <span data-ttu-id="0cd3a-190">Valitse **Maksuliikenteen hallinta** &gt; **Asetukset** &gt; **Pankkitilin täsmäytyksen lisätoimintojen asetukset** &gt; **Tiliotteen muotoilu**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-190">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="0cd3a-191">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-191">Click **New**.</span></span>
+3.  <span data-ttu-id="0cd3a-192">Määritä tiliotteen muotoilu, kuten **MT940**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-192">Specify a statement format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="0cd3a-193">Kirjoita muotoilun nimi.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-193">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="0cd3a-194">Määritä **Käsittelyryhmä**-kenttä aiemmin määrittämällesi ryhmälle, kuten **MT940**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-194">Set the **Processing group** field to the group that you defined earlier, such as **MT940**.</span></span>
+6.  <span data-ttu-id="0cd3a-195">Valitse **Tiedostotyyppi** -kenttään **txt**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-195">Set the **File type** field to **txt**.</span></span>
 
-Viimeinen vaihe on pankkitilin täsmäytyksen lisätoimintojen ottaminen käyttöön ja määritä pankkitilin tiliotteen muotoilu.
+<span data-ttu-id="0cd3a-196">Viimeinen vaihe on pankkitilin täsmäytyksen lisätoimintojen ottaminen käyttöön ja määritä pankkitilin tiliotteen muotoilu.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-196">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Siirry kohtaan **Maksuliikenteen hallinta** &gt; **Pankkitilit**.
-2.  Valitse pankkitili ja avaa se, jolloin tiedot tulevat näkyviin.
-3.  Valitse **Täsmäytys**-välilehdessä **Pankkitilin täsmäytyksen lisätoiminnot** -asetukseksi **Kyllä**.
-4.  Kun sinua pyydetään vahvistamaan valintasi ja ottamaan Pankkitilin täsmäytyksen lisätoiminto käyttöön, valitse **OK**.
-5.  Määritä **Tiliotteen muotoilu** -kenttä aiemmin luomallesi muotoilulle, kuten **MT940**.
+1.  <span data-ttu-id="0cd3a-197">Siirry kohtaan **Maksuliikenteen hallinta** &gt; **Pankkitilit**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-197">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="0cd3a-198">Valitse pankkitili ja avaa se, jolloin tiedot tulevat näkyviin.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-198">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="0cd3a-199">Valitse **Täsmäytys**-välilehdessä **Pankkitilin täsmäytyksen lisätoiminnot** -asetukseksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-199">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="0cd3a-200">Kun sinua pyydetään vahvistamaan valintasi ja ottamaan Pankkitilin täsmäytyksen lisätoiminto käyttöön, valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-200">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="0cd3a-201">Määritä **Tiliotteen muotoilu** -kenttä aiemmin luomallesi muotoilulle, kuten **MT940**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-201">Set the **Statement format** field to the format that you created earlier, such as **MT940**.</span></span>
 
-## <a name="set-up-the-import-of-bai2-bank-statements"></a>Määritä BAI2-tiliotteiden tuonti
-Määritä ensin BAI2-tiliotteiden tiliotemuodon käsittelyryhmä käyttämällä tietoyksikkökehystä.
+## <a name="set-up-the-import-of-bai2-bank-statements"></a><span data-ttu-id="0cd3a-202">Määritä BAI2-tiliotteiden tuonti</span><span class="sxs-lookup"><span data-stu-id="0cd3a-202">Set up the import of BAI2 bank statements</span></span>
+<span data-ttu-id="0cd3a-203">Määritä ensin BAI2-tiliotteiden tiliotemuodon käsittelyryhmä käyttämällä tietoyksikkökehystä.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-203">First, you must define the bank statement format processing group for BAI2 bank statements by using the data entity framework.</span></span>
 
-1.  Valitse **Työtilat** &gt; **Tietojen hallinta**.
-2.  Valitse **Tuo**.
-3.  Anna muodolle nimi, kuten **BAI2**.
-4.  Valitse **Lähdetietojen muoto** -kenttään **XML-elementti**.
-5.  Valitse **Yksikön nimi** -kenttään **Tiliotteet**.
-6.  Voit ladata tuontitiedostot valitsemalla **Lataa palvelimeen** ja siirtymällä sitten aiemmin tallentamaasi **SampleBankCompositeEntity.xml**-tiedostoon.
-7.  Kun Tiliotteet-yksikkö on ladattu ja yhdistämismääritykset ovat valmiit, valitse yksikölle **Näytä yhdistämismääritykset** -toiminto.
-8.  Tiliotteet-yksikkö on neljästä eri yksiköstä koostuva yhdistelmäyksikkö. Valitse luettelossa ensin **BankStatementDocumentEntity** ja sitten **Näytä yhdistämismääritykset** -toiminto.
-9.  Valitse **Muunnokset**-välilehdessä **Uusi**.
-10. Valitse järjestysnumerolle 1 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **BAI2CSV-to-BAI2XML.xslt**-tiedosto.
-11. Valitse **Uusi**.
-12. Valitse järjestysnumerolle 2 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **BAI2XML-to-Reconciliation.xslt**-tiedosto. **Huomautus:** Finance and Operationsin muunnostiedostot ovat vakiomuotoisia. Koska pankit poikkeavat usein tästä muodosta, sinun on päivitettävä tiliotemuotoon yhdistämismääritettävä muunnostiedosto. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
-13. Valitse **Uusi**.
-14. Valitse järjestysnumerolle 3 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **BankReconciliation-to-Composite.xslt**-tiedosto.
-15. Valitse **Käytä muunnoksia**.
+1.  <span data-ttu-id="0cd3a-204">Valitse **Työtilat** &gt; **Tietojen hallinta**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-204">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="0cd3a-205">Valitse **Tuo**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-205">Click **Import**.</span></span>
+3.  <span data-ttu-id="0cd3a-206">Anna muodolle nimi, kuten **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-206">Enter a name for the format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="0cd3a-207">Valitse **Lähdetietojen muoto** -kenttään **XML-elementti**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-207">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="0cd3a-208">Valitse **Yksikön nimi** -kenttään **Tiliotteet**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-208">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="0cd3a-209">Voit ladata tuontitiedostot valitsemalla **Lataa palvelimeen** ja siirtymällä sitten aiemmin tallentamaasi **SampleBankCompositeEntity.xml**-tiedostoon.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-209">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="0cd3a-210">Kun Tiliotteet-yksikkö on ladattu ja yhdistämismääritykset ovat valmiit, valitse yksikölle **Näytä yhdistämismääritykset** -toiminto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-210">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="0cd3a-211">Tiliotteet-yksikkö on neljästä eri yksiköstä koostuva yhdistelmäyksikkö.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-211">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="0cd3a-212">Valitse luettelossa ensin **BankStatementDocumentEntity** ja sitten **Näytä yhdistämismääritykset** -toiminto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-212">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="0cd3a-213">Valitse **Muunnokset**-välilehdessä **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-213">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="0cd3a-214">Valitse järjestysnumerolle 1 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **BAI2CSV-to-BAI2XML.xslt**-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-214">For sequence number 1, click **Upload file**, and select the **BAI2CSV-to-BAI2XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="0cd3a-215">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-215">Click **New**.</span></span>
+12. <span data-ttu-id="0cd3a-216">Valitse järjestysnumerolle 2 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **BAI2XML-to-Reconciliation.xslt**-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-216">For sequence number 2, click **Upload file**, and select the **BAI2XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="0cd3a-217">**Huomautus:** Finance and Operationsin muunnostiedostot ovat vakiomuotoisia.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-217">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="0cd3a-218">Koska pankit poikkeavat usein tästä muodosta, sinun on päivitettävä tiliotemuotoon yhdistämismääritettävä muunnostiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-218">Because banks often diverge from this format, and you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+13. <span data-ttu-id="0cd3a-219">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-219">Click **New**.</span></span>
+14. <span data-ttu-id="0cd3a-220">Valitse järjestysnumerolle 3 ensin **Lataa tiedosto palvelimeen** ja sitten aiemmin tallentamasi **BankReconciliation-to-Composite.xslt**-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-220">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="0cd3a-221">Valitse **Käytä muunnoksia**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-221">Click **Apply transforms**.</span></span>
 
-Kun muodon käsittelyryhmä on määritetty, seuraavana vaiheena on BAI2-tiliotteiden tiliotemuodon sääntöjen määrittäminen.
+<span data-ttu-id="0cd3a-222">Kun muodon käsittelyryhmä on määritetty, seuraavana vaiheena on BAI2-tiliotteiden tiliotemuodon sääntöjen määrittäminen.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-222">After the format processing group is set up, the next step is to define the bank statement format rules for BAI2 bank statements.</span></span>
 
-1.  Valitse **Maksuliikenteen hallinta** &gt; **Asetukset** &gt; **Pankkitilin täsmäytyksen lisätoimintojen asetukset** &gt; **Tiliotteen muotoilu**.
-2.  Valitse **Uusi**.
-3.  Määritä tiliotteen muotoilu, kuten **BAI2**.
-4.  Kirjoita muotoilun nimi.
-5.  Määritä **Käsittelyryhmä**-kenttä aiemmin määrittämällesi ryhmälle, kuten **BAI2**.
-6.  Valitse **Tiedostotyyppi** -kenttään **txt**.
+1.  <span data-ttu-id="0cd3a-223">Valitse **Maksuliikenteen hallinta** &gt; **Asetukset** &gt; **Pankkitilin täsmäytyksen lisätoimintojen asetukset** &gt; **Tiliotteen muotoilu**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-223">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="0cd3a-224">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-224">Click **New**.</span></span>
+3.  <span data-ttu-id="0cd3a-225">Määritä tiliotteen muotoilu, kuten **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-225">Specify a statement format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="0cd3a-226">Kirjoita muotoilun nimi.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-226">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="0cd3a-227">Määritä **Käsittelyryhmä**-kenttä aiemmin määrittämällesi ryhmälle, kuten **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-227">Set the **Processing group** field to the group that you defined earlier, such as **BAI2**.</span></span>
+6.  <span data-ttu-id="0cd3a-228">Valitse **Tiedostotyyppi** -kenttään **txt**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-228">Set the **File type** field to **txt**.</span></span>
 
-Viimeinen vaihe on pankkitilin täsmäytyksen lisätoimintojen ottaminen käyttöön ja määritä pankkitilin tiliotteen muotoilu.
+<span data-ttu-id="0cd3a-229">Viimeinen vaihe on pankkitilin täsmäytyksen lisätoimintojen ottaminen käyttöön ja määritä pankkitilin tiliotteen muotoilu.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-229">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Siirry kohtaan **Maksuliikenteen hallinta** &gt; **Pankkitilit**.
-2.  Valitse pankkitili ja avaa se, jolloin tiedot tulevat näkyviin.
-3.  Valitse **Täsmäytys**-välilehdessä **Pankkitilin täsmäytyksen lisätoiminnot** -asetukseksi **Kyllä**.
-4.  Kun sinua pyydetään vahvistamaan valintasi ja ottamaan Pankkitilin täsmäytyksen lisätoiminto käyttöön, valitse **OK**.
-5.  Määritä **Tiliotteen muotoilu** -kenttä aiemmin luomallesi muotoilulle, kuten **BAI2**.
+1.  <span data-ttu-id="0cd3a-230">Siirry kohtaan **Maksuliikenteen hallinta** &gt; **Pankkitilit**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-230">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="0cd3a-231">Valitse pankkitili ja avaa se, jolloin tiedot tulevat näkyviin.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-231">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="0cd3a-232">Valitse **Täsmäytys**-välilehdessä **Pankkitilin täsmäytyksen lisätoiminnot** -asetukseksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-232">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="0cd3a-233">Kun sinua pyydetään vahvistamaan valintasi ja ottamaan Pankkitilin täsmäytyksen lisätoiminto käyttöön, valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-233">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="0cd3a-234">Määritä **Tiliotteen muotoilu** -kenttä aiemmin luomallesi muotoilulle, kuten **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-234">Set the **Statement format** field to the format that you created earlier, such as **BAI2**.</span></span>
 
-## <a name="test-the-bank-statement-import"></a>Testaa tiliotteen tuonti
-Viimeisessä vaiheessa testataan, että tiliotteen tuonti onnistuu.
+## <a name="test-the-bank-statement-import"></a><span data-ttu-id="0cd3a-235">Testaa tiliotteen tuonti</span><span class="sxs-lookup"><span data-stu-id="0cd3a-235">Test the bank statement import</span></span>
+<span data-ttu-id="0cd3a-236">Viimeisessä vaiheessa testataan, että tiliotteen tuonti onnistuu.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-236">The final step is to test that you can import your bank statement.</span></span>
 
-1.  Siirry kohtaan **Maksuliikenteen hallinta** &gt; **Pankkitilit**.
-2.  Valitse pankkitili, jolle Pankkitilin täsmäytyksen lisätoiminnot on otettu käyttöön.
-3.  Valitse **Täsmäytä**-välilehdessä **Tiliotteet**.
-4.  Valitse **Tiliotteet**-sivulla **Tuo tiliote**.
-5.  Määritä **Pankkitili**-kenttä valitulle pankkitilille. **Tiliotteen muotoilu** -kenttä määritetään asetetaan automaattisesti pankkitilin asetuksen perusteella.
-6.  Valitse ensin **Selaa** ja sitten sähköinen tiliotetiedosto.
-7.  Valitse **Lataa palvelimeen**.
-8.  Napsauta **OK**.
+1.  <span data-ttu-id="0cd3a-237">Siirry kohtaan **Maksuliikenteen hallinta** &gt; **Pankkitilit**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-237">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="0cd3a-238">Valitse pankkitili, jolle Pankkitilin täsmäytyksen lisätoiminnot on otettu käyttöön.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-238">Select the bank account that Advanced bank reconciliation functionality is enabled for.</span></span>
+3.  <span data-ttu-id="0cd3a-239">Valitse **Täsmäytä**-välilehdessä **Tiliotteet**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-239">On the **Reconcile** tab, click **Bank statements**.</span></span>
+4.  <span data-ttu-id="0cd3a-240">Valitse **Tiliotteet**-sivulla **Tuo tiliote**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-240">On the **Bank statement** page, click **Import statement**.</span></span>
+5.  <span data-ttu-id="0cd3a-241">Määritä **Pankkitili**-kenttä valitulle pankkitilille.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-241">Set the **Bank account** field to the selected bank account.</span></span> <span data-ttu-id="0cd3a-242">**Tiliotteen muotoilu** -kenttä määritetään asetetaan automaattisesti pankkitilin asetuksen perusteella.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-242">The **Statement format** field will be set automatically, based on the setting on the bank account.</span></span>
+6.  <span data-ttu-id="0cd3a-243">Valitse ensin **Selaa** ja sitten sähköinen tiliotetiedosto.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-243">Click **Browse**, and select your electronic bank statement file.</span></span>
+7.  <span data-ttu-id="0cd3a-244">Valitse **Lataa palvelimeen**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-244">Click **Upload**.</span></span>
+8.  <span data-ttu-id="0cd3a-245">Napsauta **OK**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-245">Click **OK**.</span></span>
 
-Jos tuonti onnistuu, avautuva sanoma ilmoittaa, että tiliote on tuotu. Jos tuonti epäonnistuu, etsi työ **Tietojen hallinta** -työtilan **Työhistoria**-kohdasta. Avaa **Suorituksen yhteenveto** -sivu valitsemalla työn **Suorituksen tiedot** ja tuo tuontivirheet näkyviin valitsemalla **Näytä suoritusloki**.
+<span data-ttu-id="0cd3a-246">Jos tuonti onnistuu, avautuva sanoma ilmoittaa, että tiliote on tuotu.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-246">If the import is successful, you will receive a message that states that your statement was imported.</span></span> <span data-ttu-id="0cd3a-247">Jos tuonti epäonnistuu, etsi työ **Tietojen hallinta** -työtilan **Työhistoria**-kohdasta.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-247">If the import wasn't successful, in the **Data management** workspace, in the **Job history** section, find the job.</span></span> <span data-ttu-id="0cd3a-248">Avaa **Suorituksen yhteenveto** -sivu valitsemalla työn **Suorituksen tiedot** ja tuo tuontivirheet näkyviin valitsemalla **Näytä suoritusloki**.</span><span class="sxs-lookup"><span data-stu-id="0cd3a-248">Click **Execution details** for the job to open the **Execution summary** page, and then click **View execution log** to view the import errors.</span></span>
 
 
 

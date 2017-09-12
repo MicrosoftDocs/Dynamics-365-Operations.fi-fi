@@ -16,77 +16,77 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: e1ac289c261922f013b679eecfb054390b8aef73
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d01c7c19925a3c7064ab3f845b92b610b162066c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-direct-debit-mandate-for-a-customer"></a>Luo suoraveloitusvaltakirja asiakkaalle
+# <a name="create-a-direct-debit-mandate-for-a-customer"></a><span data-ttu-id="cb1ff-103">Luo suoraveloitusvaltakirja asiakkaalle</span><span class="sxs-lookup"><span data-stu-id="cb1ff-103">Create a direct debit mandate for a customer</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä tehtävän ohjauksessa kerrotaan, miten suoraveloitusvaltakirja luodaan ja miten sitä käytetään laskuissa.
+<span data-ttu-id="cb1ff-104">Tässä tehtävän ohjauksessa kerrotaan, miten suoraveloitusvaltakirja luodaan ja miten sitä käytetään laskuissa.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-104">This task guide demonstrates how to create a direct debit mandate and use it on an invoice.</span></span>
 
 
-## <a name="create-a-bank-account"></a>Pankkitilin luominen
-1. Siirry kohtaan Myyntireskontra > Asiakkaat > Kaikki asiakkaat.
-2. Voit valita esimerkiksi arvon US-001
-3. Valitse toimintoruudussa Asiakas.
-4. Valitse Pankkitilit.
-5. Valitse Uusi.
-6. Kirjoita arvo Pankkitili-kenttään.
-7. Kirjoita arvo Nimi-kenttään.
-8. Syötä arvon IBAN-kenttään.
-9. Kirjoita arvo Valuutta-kenttään.
-10. Valitse Tallenna.
-11. Sulje sivu.
-12. Valitse Maksuliikenteen hallinta > Pankkitilit > Pankkitilit.
-13. Etsi haluamasi tietue luettelosta ja valitse se.
-14. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-15. Valitse Muokkaa.
-16. Laajenna Lisätunnus-osa.
-17. Syötä Suoraveloitustunnus-kenttään arvo.
-18. Syötä arvon IBAN-kenttään.
-19. Sulje sivu.
-20. Sulje sivu.
+## <a name="create-a-bank-account"></a><span data-ttu-id="cb1ff-105">Pankkitilin luominen</span><span class="sxs-lookup"><span data-stu-id="cb1ff-105">Create a bank account</span></span>
+1. <span data-ttu-id="cb1ff-106">Siirry kohtaan Myyntireskontra > Asiakkaat > Kaikki asiakkaat.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-106">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="cb1ff-107">Voit valita esimerkiksi arvon US-001</span><span class="sxs-lookup"><span data-stu-id="cb1ff-107">For example, select US-001</span></span>
+3. <span data-ttu-id="cb1ff-108">Valitse toimintoruudussa Asiakas.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-108">On the Action Pane, click Customer.</span></span>
+4. <span data-ttu-id="cb1ff-109">Valitse Pankkitilit.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-109">Click Bank accounts.</span></span>
+5. <span data-ttu-id="cb1ff-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-110">Click New.</span></span>
+6. <span data-ttu-id="cb1ff-111">Kirjoita arvo Pankkitili-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-111">In the Bank account field, type a value.</span></span>
+7. <span data-ttu-id="cb1ff-112">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-112">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="cb1ff-113">Syötä arvon IBAN-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-113">In the IBAN field, type a value.</span></span>
+9. <span data-ttu-id="cb1ff-114">Kirjoita arvo Valuutta-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-114">In the Currency field, type a value.</span></span>
+10. <span data-ttu-id="cb1ff-115">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-115">Click Save.</span></span>
+11. <span data-ttu-id="cb1ff-116">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-116">Close the page.</span></span>
+12. <span data-ttu-id="cb1ff-117">Valitse Maksuliikenteen hallinta > Pankkitilit > Pankkitilit.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-117">Go to Cash and bank management > Bank accounts > Bank accounts.</span></span>
+13. <span data-ttu-id="cb1ff-118">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-118">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="cb1ff-119">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-119">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="cb1ff-120">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-120">Click Edit.</span></span>
+16. <span data-ttu-id="cb1ff-121">Laajenna Lisätunnus-osa.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-121">Expand the Additional identification section.</span></span>
+17. <span data-ttu-id="cb1ff-122">Syötä Suoraveloitustunnus-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-122">In the Direct debit ID field, type a value.</span></span>
+18. <span data-ttu-id="cb1ff-123">Syötä arvon IBAN-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-123">In the IBAN field, type a value.</span></span>
+19. <span data-ttu-id="cb1ff-124">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-124">Close the page.</span></span>
+20. <span data-ttu-id="cb1ff-125">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-125">Close the page.</span></span>
 
-## <a name="define-the-electronic-payment-method"></a>Sähköisen maksutavan määrittäminen
-1. Siirry kohtaan Myyntireskontra > Maksujen asetukset > Maksutavat.
-2. Valitse Uusi.
-3. Syötä arvo Maksutapa-kenttään.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Suoraveloitusvaltakirjan maksutavan maksutyypin on oltava Sähköinen maksu.
-6. Valitse Vaadi valtakirjaa -kentässä Kyllä.
-7. Sulje sivu.
+## <a name="define-the-electronic-payment-method"></a><span data-ttu-id="cb1ff-126">Sähköisen maksutavan määrittäminen</span><span class="sxs-lookup"><span data-stu-id="cb1ff-126">Define the electronic payment method</span></span>
+1. <span data-ttu-id="cb1ff-127">Siirry kohtaan Myyntireskontra > Maksujen asetukset > Maksutavat.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-127">Go to Accounts receivable > Payments setup > Methods of payment.</span></span>
+2. <span data-ttu-id="cb1ff-128">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-128">Click New.</span></span>
+3. <span data-ttu-id="cb1ff-129">Syötä arvo Maksutapa-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-129">In the Method of payment field, type a value.</span></span>
+4. <span data-ttu-id="cb1ff-130">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-130">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="cb1ff-131">Suoraveloitusvaltakirjan maksutavan maksutyypin on oltava Sähköinen maksu.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-131">The payment type for a direct debit mandate method of payment must be Electronic payment.</span></span>
+6. <span data-ttu-id="cb1ff-132">Valitse Vaadi valtakirjaa -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-132">Select Yes in the Require mandate field.</span></span>
+7. <span data-ttu-id="cb1ff-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-133">Close the page.</span></span>
 
-## <a name="add-a-direct-debit-mandate-to-a-customer"></a>Lisää suoraveloitusvaltakirja asiakkaalle.
-1. Siirry kohtaan Myyntireskontra > Asiakkaat > Kaikki asiakkaat.
-2. Voit valita esimerkiksi arvon US-001
-3. Valitse Muokkaa.
-4. Laajenna Oletusmaksut-osa.
-5. Anna tai valitse arvo Maksutapa-kentässä.
-6. Laajenna Oletusmaksut-osa.
-7. Laajenna Suoraveloitusvaltakirjat-osa.
-8. ValitseLisää.
-9. Syötä tai valitse arvo Pankkitili-kentässä.
-10. Syötä tai valitse arvo Laskuttajan pankkitili -kentässä.
-11. Syötä niiden maksujen määrä, jotka odotat käsiteltäväksi tämän valtakirjan osalta.
-12. Valitse OK.
-13. Valitse Tulosta.
-14. Valitse Valtakirjaraportti.
-15. Sulje sivu.
-16. Valitse Muokkaa.
-17. Syötä päivämäärä Allekirjoitus-kenttään.
-18. Valitse Kyllä.
-19. Syötä paikka, jossa valtakirja on allekirjoitettu.
-20. Valitse OK.
-21. Sulje sivu.
+## <a name="add-a-direct-debit-mandate-to-a-customer"></a><span data-ttu-id="cb1ff-134">Lisää suoraveloitusvaltakirja asiakkaalle.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-134">Add a direct debit mandate to a customer.</span></span>
+1. <span data-ttu-id="cb1ff-135">Siirry kohtaan Myyntireskontra > Asiakkaat > Kaikki asiakkaat.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-135">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="cb1ff-136">Voit valita esimerkiksi arvon US-001</span><span class="sxs-lookup"><span data-stu-id="cb1ff-136">For example, select US-001</span></span>
+3. <span data-ttu-id="cb1ff-137">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-137">Click Edit.</span></span>
+4. <span data-ttu-id="cb1ff-138">Laajenna Oletusmaksut-osa.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-138">Expand the Payment defaults section.</span></span>
+5. <span data-ttu-id="cb1ff-139">Anna tai valitse arvo Maksutapa-kentässä.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-139">In the Method of payment field, enter or select a value.</span></span>
+6. <span data-ttu-id="cb1ff-140">Laajenna Oletusmaksut-osa.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-140">Expand the Payment defaults section.</span></span>
+7. <span data-ttu-id="cb1ff-141">Laajenna Suoraveloitusvaltakirjat-osa.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-141">Expand the Direct debit mandates section.</span></span>
+8. <span data-ttu-id="cb1ff-142">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-142">Click Add.</span></span>
+9. <span data-ttu-id="cb1ff-143">Syötä tai valitse arvo Pankkitili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-143">In the Bank account field, enter or select a value.</span></span>
+10. <span data-ttu-id="cb1ff-144">Syötä tai valitse arvo Laskuttajan pankkitili -kentässä.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-144">In the Creditor bank account field, enter or select a value.</span></span>
+11. <span data-ttu-id="cb1ff-145">Syötä niiden maksujen määrä, jotka odotat käsiteltäväksi tämän valtakirjan osalta.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-145">Enter the number of payments that you expect to process for this mandate.</span></span>
+12. <span data-ttu-id="cb1ff-146">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-146">Click OK.</span></span>
+13. <span data-ttu-id="cb1ff-147">Valitse Tulosta.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-147">Click Print.</span></span>
+14. <span data-ttu-id="cb1ff-148">Valitse Valtakirjaraportti.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-148">Click Mandate report.</span></span>
+15. <span data-ttu-id="cb1ff-149">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-149">Close the page.</span></span>
+16. <span data-ttu-id="cb1ff-150">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-150">Click Edit.</span></span>
+17. <span data-ttu-id="cb1ff-151">Syötä päivämäärä Allekirjoitus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-151">In the Signature date field, enter a date.</span></span>
+18. <span data-ttu-id="cb1ff-152">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-152">Click Yes.</span></span>
+19. <span data-ttu-id="cb1ff-153">Syötä paikka, jossa valtakirja on allekirjoitettu.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-153">Enter the location where the mandate was signed.</span></span>
+20. <span data-ttu-id="cb1ff-154">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-154">Click OK.</span></span>
+21. <span data-ttu-id="cb1ff-155">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-155">Close the page.</span></span>
 
-## <a name="create-a-free-text-invoice-with-mandate"></a>Vapaatekstilaskun ja valtakirjan luominen
-1. Siirry kohtaan Myyntireskontra > Laskut > Kaikki vapaatekstilaskut.
-2. Valitse Uusi.
-3. Valitse asiakas, jolle valtakirja lisättiin.
-4. Anna tai valitse Suoraveloitusvaltakirjan tunnus -kentässä arvo.
+## <a name="create-a-free-text-invoice-with-mandate"></a><span data-ttu-id="cb1ff-156">Vapaatekstilaskun ja valtakirjan luominen</span><span class="sxs-lookup"><span data-stu-id="cb1ff-156">Create a free text invoice with mandate</span></span>
+1. <span data-ttu-id="cb1ff-157">Siirry kohtaan Myyntireskontra > Laskut > Kaikki vapaatekstilaskut.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-157">Go to Accounts receivable > Invoices > All free text invoices.</span></span>
+2. <span data-ttu-id="cb1ff-158">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-158">Click New.</span></span>
+3. <span data-ttu-id="cb1ff-159">Valitse asiakas, jolle valtakirja lisättiin.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-159">Select the customer that you added the mandate to.</span></span>
+4. <span data-ttu-id="cb1ff-160">Anna tai valitse Suoraveloitusvaltakirjan tunnus -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="cb1ff-160">In the Direct debit mandate ID field, enter or select a value.</span></span>
 
 

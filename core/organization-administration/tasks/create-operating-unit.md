@@ -16,30 +16,30 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 83e2f3f07482b6b32e3bfa33e63165d4160dba9c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 838d1c2d5d1ab2524e9f4be423fbf529b89f5f59
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-an-operating-unit"></a>Luo toimintayksikkö
+# <a name="create-an-operating-unit"></a><span data-ttu-id="79c97-103">Luo toimintayksikkö</span><span class="sxs-lookup"><span data-stu-id="79c97-103">Create an operating unit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Toimintayksikkö on organisaatio, jota käytetään jakamaan liiketoiminnan taloudellisten resurssien hallinta ja operationaaliset prosessit. Toimintayksikön henkilöiden vastuulla on rajattujen resurssien maksimointi, prosessien tehostaminen ja suorituskyvyn raportointi. Toimintayksiköihin kuuluvat kustannuspaikat, liiketoimintayksiköt, osastot ja arvovirrat. Luo toimintayksikkö seuraavien ohjeiden mukaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+<span data-ttu-id="79c97-104">Toimintayksikkö on organisaatio, jota käytetään jakamaan liiketoiminnan taloudellisten resurssien hallinta ja operationaaliset prosessit.</span><span class="sxs-lookup"><span data-stu-id="79c97-104">An operating unit is an organization that is used to divide the control of economic resources and operational processes in a business.</span></span> <span data-ttu-id="79c97-105">Toimintayksikön henkilöiden vastuulla on rajattujen resurssien maksimointi, prosessien tehostaminen ja suorituskyvyn raportointi.</span><span class="sxs-lookup"><span data-stu-id="79c97-105">People in an operating unit have a duty to maximize the use of scarce resources, improve processes, and account for their performance.</span></span> <span data-ttu-id="79c97-106">Toimintayksiköihin kuuluvat kustannuspaikat, liiketoimintayksiköt, osastot ja arvovirrat.</span><span class="sxs-lookup"><span data-stu-id="79c97-106">The types of operating units include cost centers, business units, departments, and value streams.</span></span> <span data-ttu-id="79c97-107">Luo toimintayksikkö seuraavien ohjeiden mukaan.</span><span class="sxs-lookup"><span data-stu-id="79c97-107">Use the following procedure to create an operating unit.</span></span> <span data-ttu-id="79c97-108">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="79c97-108">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Valitse Organisaation hallinto > Organisaatiot > Toimintayksiköt.
-2. Avaa valintaikkuna valitsemalla Uusi.
-3. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Valitse luotavan toimintoyksikön tyyppi.  
-4. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-5. Kirjoita arvo Nimi-kenttään.
-    * Laajenna Yleiset-osa tarvittaessa.  
-    * Ilmoita toimintayksikön yleistiedot, kuten tunnusnumero, DUNS-numero ja päällikkö.    
-    * Laajenna Osoite-osa tarvittaessa.  
-    * Määritä osoitetiedot, kuten katuosoite ja -numero, postinumero ja postitoimipaikka. Anna uusi osoitetietue valitsemalla Lisää tai muokkaa aiemmin luotua osoitetietuetta valitsemalla Muokkaa.   
-    * Laajenna Yhteistiedot-osa tarvittaessa.  
-    * Ilmoita viestintämenetelmien tiedot, kuten sähköpostiosoitteet, URL-osoitteet ja puhelinnumerot. Voit syöttää uuden viestintätietueen valitsemalla Uusi. Voit muokata aiemmin luodut viestintätietue valitsemalla Lisäasetukset > Lisäasetukset.   
-6. Valitse Tallenna.
+1. <span data-ttu-id="79c97-109">Valitse Organisaation hallinto > Organisaatiot > Toimintayksiköt.</span><span class="sxs-lookup"><span data-stu-id="79c97-109">Go to Organization administration > Organizations > Operating units.</span></span>
+2. <span data-ttu-id="79c97-110">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="79c97-110">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="79c97-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="79c97-111">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="79c97-112">Valitse luotavan toimintoyksikön tyyppi.</span><span class="sxs-lookup"><span data-stu-id="79c97-112">Select the type of operating unit you want to create.</span></span>  
+4. <span data-ttu-id="79c97-113">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="79c97-113">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="79c97-114">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="79c97-114">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="79c97-115">Laajenna Yleiset-osa tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="79c97-115">Expand the General section, if necessary.</span></span>  
+    * <span data-ttu-id="79c97-116">Ilmoita toimintayksikön yleistiedot, kuten tunnusnumero, DUNS-numero ja päällikkö.</span><span class="sxs-lookup"><span data-stu-id="79c97-116">Provide general information about the operating unit, such as an identification number, DUNS number, and manager.</span></span>    
+    * <span data-ttu-id="79c97-117">Laajenna Osoite-osa tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="79c97-117">Expand the Addresses section, if necessary.</span></span>  
+    * <span data-ttu-id="79c97-118">Määritä osoitetiedot, kuten katuosoite ja -numero, postinumero ja postitoimipaikka.</span><span class="sxs-lookup"><span data-stu-id="79c97-118">Enter address information, such as the street name and number, postal code, and city.</span></span> <span data-ttu-id="79c97-119">Anna uusi osoitetietue valitsemalla Lisää tai muokkaa aiemmin luotua osoitetietuetta valitsemalla Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="79c97-119">Click Add to enter a new address record, or click Edit to modify an existing address record.</span></span>   
+    * <span data-ttu-id="79c97-120">Laajenna Yhteistiedot-osa tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="79c97-120">Expand the Contact information section, if necessary.</span></span>  
+    * <span data-ttu-id="79c97-121">Ilmoita viestintämenetelmien tiedot, kuten sähköpostiosoitteet, URL-osoitteet ja puhelinnumerot.</span><span class="sxs-lookup"><span data-stu-id="79c97-121">Enter information about methods of communication, such as email addresses, URLs, and telephone numbers.</span></span> <span data-ttu-id="79c97-122">Voit syöttää uuden viestintätietueen valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="79c97-122">To enter a new communication record, click New.</span></span> <span data-ttu-id="79c97-123">Voit muokata aiemmin luodut viestintätietue valitsemalla Lisäasetukset > Lisäasetukset.</span><span class="sxs-lookup"><span data-stu-id="79c97-123">To modify an existing communication record, click More options > Advanced.</span></span>   
+6. <span data-ttu-id="79c97-124">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="79c97-124">Click Save.</span></span>
 
 

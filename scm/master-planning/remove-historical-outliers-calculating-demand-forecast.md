@@ -20,36 +20,36 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 72735c9e3fb4291076f0b577f45384dec319b2a7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ea3f08b20e25af6ebb738c2373b65532d74a0c80
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Poista poikkeavat tiedot aiemmista tapahtumatiedoista laskettaessa ennustetarvetta
+# <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a><span data-ttu-id="bb065-104">Poista poikkeavat tiedot aiemmista tapahtumatiedoista laskettaessa ennustetarvetta</span><span class="sxs-lookup"><span data-stu-id="bb065-104">Remove outliers from historical transaction data when calculating a demand forecast</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa käsitellään, miten poikkeavat arvot suljetaan pois kysynnän ennusteen laskemiseen käytettävistä historiatiedoista. Voit parantaa ennusteen tarkkuuta jättämällä poikkeavat arvot pois.
+<span data-ttu-id="bb065-105">Tässä artikkelissa käsitellään, miten poikkeavat arvot suljetaan pois kysynnän ennusteen laskemiseen käytettävistä historiatiedoista.</span><span class="sxs-lookup"><span data-stu-id="bb065-105">This article describes how to exclude outliers from the historical data that is used to calculate a demand forecast.</span></span> <span data-ttu-id="bb065-106">Voit parantaa ennusteen tarkkuuta jättämällä poikkeavat arvot pois.</span><span class="sxs-lookup"><span data-stu-id="bb065-106">By excluding outliers, you can improve forecast accuracy.</span></span>
 
-Voit parantaa ennusteen tarkkuuta jättämällä poikkeavat arvot pois. Tämä tehtävä on valinnainen. Prosessin yhteenveto:
+<span data-ttu-id="bb065-107">Voit parantaa ennusteen tarkkuuta jättämällä poikkeavat arvot pois.</span><span class="sxs-lookup"><span data-stu-id="bb065-107">You can exclude outliers to improve forecast accuracy.</span></span> <span data-ttu-id="bb065-108">Tämä tehtävä on valinnainen.</span><span class="sxs-lookup"><span data-stu-id="bb065-108">This is an optional task.</span></span> <span data-ttu-id="bb065-109">Prosessin yhteenveto:</span><span class="sxs-lookup"><span data-stu-id="bb065-109">Here is an overview of the process:</span></span>
 
-1.  Voit avata **Poikkeavan arvon poistaminen** -sivun valitsemalla **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennuste** &gt; **Poikkeavan arvon poistaminen**. Voit valita poistettavat tapahtumat tällä sivulla tekemällä kyselyjä.
-2.  Valitse yritys, jota kysely koskee, ja sitten anna nimi ja kuvaus. **Kyselyn päivämäärä** -kenttään valitaan automaattisesti nykyinen päivämäärä.
-3.  Valitsemalla **Aktiivinen**-valintaruudun voit jättää historiallisista tiedoista pois kyselyyn sisältyvät tapahtumat. Tämä asetus tulee voimaan, kun luot perusennusteen.
-4.  Voit lisätä, poistaa ja valita **Poikkeavan arvon kysely** -sivulla ehtoja, jotka määrittävät mitkä tapahtumat jätetään pois perusennusteen laskennasta. Valitse esimerkiksi tietty nimike tai tilaus, jonka haluat sulkea pois.
-5.  Valitse **Näytä tapahtumat**. **Poikkeavan arvon tapahtumat** -sivulla on luettelo tapahtumista, jotka vastaavat kyselyssä määritettyä ehtoa ja jotka suljetaan pois historiatiedoista, kun kysynnän ennuste lasketaan.
+1.  <span data-ttu-id="bb065-110">Voit avata **Poikkeavan arvon poistaminen** -sivun valitsemalla **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennuste** &gt; **Poikkeavan arvon poistaminen**. Voit valita poistettavat tapahtumat tällä sivulla tekemällä kyselyjä.</span><span class="sxs-lookup"><span data-stu-id="bb065-110">Click **Master planning** &gt; **Setup** &gt; **Demand forecasting** &gt; **Outlier removal** to open the **Outlier removal** page, where you can use a query to select the transactions to exclude.</span></span>
+2.  <span data-ttu-id="bb065-111">Valitse yritys, jota kysely koskee, ja sitten anna nimi ja kuvaus.</span><span class="sxs-lookup"><span data-stu-id="bb065-111">Select the company that the query applies to, and then enter a name and description.</span></span> <span data-ttu-id="bb065-112">**Kyselyn päivämäärä** -kenttään valitaan automaattisesti nykyinen päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="bb065-112">The **Query date** field is automatically set to the current date.</span></span>
+3.  <span data-ttu-id="bb065-113">Valitsemalla **Aktiivinen**-valintaruudun voit jättää historiallisista tiedoista pois kyselyyn sisältyvät tapahtumat.</span><span class="sxs-lookup"><span data-stu-id="bb065-113">Select the **Active** check box to exclude the transactions that the query finds from the historical data.</span></span> <span data-ttu-id="bb065-114">Tämä asetus tulee voimaan, kun luot perusennusteen.</span><span class="sxs-lookup"><span data-stu-id="bb065-114">This setting will take effect when you create a baseline forecast.</span></span>
+4.  <span data-ttu-id="bb065-115">Voit lisätä, poistaa ja valita **Poikkeavan arvon kysely** -sivulla ehtoja, jotka määrittävät mitkä tapahtumat jätetään pois perusennusteen laskennasta.</span><span class="sxs-lookup"><span data-stu-id="bb065-115">On the **Outlier removal query** page, you can add, remove, and select the criteria that define which transactions will be excluded when the baseline forecast is calculated.</span></span> <span data-ttu-id="bb065-116">Valitse esimerkiksi tietty nimike tai tilaus, jonka haluat sulkea pois.</span><span class="sxs-lookup"><span data-stu-id="bb065-116">For example, select a specific item or order transaction to exclude.</span></span>
+5.  <span data-ttu-id="bb065-117">Valitse **Näytä tapahtumat**.</span><span class="sxs-lookup"><span data-stu-id="bb065-117">Click **Display transactions**.</span></span> <span data-ttu-id="bb065-118">**Poikkeavan arvon tapahtumat** -sivulla on luettelo tapahtumista, jotka vastaavat kyselyssä määritettyä ehtoa ja jotka suljetaan pois historiatiedoista, kun kysynnän ennuste lasketaan.</span><span class="sxs-lookup"><span data-stu-id="bb065-118">The **Outlier transactions** page lists the transactions that meet the criteria that you defined in the query, and that will be excluded from the historical data when the demand forecast is calculated.</span></span>
 
-**Huomautus:** Voit luoda myös kyselyn, joka perustuu aiemmin luotuun kyselyyn. Valitse kysely, jonka haluat kopioida, ja valitse sitten **Monista**. **Kyselyn päivämäärä** -kenttä ilmaisee version. Voit käyttää kyselyä sellaisenaan tai muokata ehtoja valitsemalla **Muokkaa kyselyä**. Voit halutessasi muokata uuden kyselyn nimeä ja kuvausta.
+<span data-ttu-id="bb065-119">**Huomautus:** Voit luoda myös kyselyn, joka perustuu aiemmin luotuun kyselyyn.</span><span class="sxs-lookup"><span data-stu-id="bb065-119">**Note:** You can also create a query that is based on an existing query.</span></span> <span data-ttu-id="bb065-120">Valitse kysely, jonka haluat kopioida, ja valitse sitten **Monista**.</span><span class="sxs-lookup"><span data-stu-id="bb065-120">Select the query to copy, and then click **Duplicate**.</span></span> <span data-ttu-id="bb065-121">**Kyselyn päivämäärä** -kenttä ilmaisee version.</span><span class="sxs-lookup"><span data-stu-id="bb065-121">The **Query date** field identifies the version.</span></span> <span data-ttu-id="bb065-122">Voit käyttää kyselyä sellaisenaan tai muokata ehtoja valitsemalla **Muokkaa kyselyä**.</span><span class="sxs-lookup"><span data-stu-id="bb065-122">You can use the query as it is, or you can click **Edit query** to modify the criteria.</span></span> <span data-ttu-id="bb065-123">Voit halutessasi muokata uuden kyselyn nimeä ja kuvausta.</span><span class="sxs-lookup"><span data-stu-id="bb065-123">You can optionally modify the name and description of the new query.</span></span>
 
-<a name="see-also"></a>Lisätietoja
+<a name="see-also"></a><span data-ttu-id="bb065-124">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="bb065-124">See also</span></span>
 --------
 
-[Kysynnän ennusteen esittely](introduction-demand-forecasting.md)
+[<span data-ttu-id="bb065-125">Kysynnän ennusteen esittely</span><span class="sxs-lookup"><span data-stu-id="bb065-125">Introduction to demand forecasting</span></span>](introduction-demand-forecasting.md)
 
-[Ennusteen tarkkuuden valvonta](monitor-forecast-accuracy.md)
+[<span data-ttu-id="bb065-126">Ennusteen tarkkuuden valvonta</span><span class="sxs-lookup"><span data-stu-id="bb065-126">Monitoring forecast accuracy</span></span>](monitor-forecast-accuracy.md)
 
 
 

@@ -17,42 +17,42 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 2708ae5d7e2601fa8d86367470e196d4b2503c01
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 262fa70f0fa3c294059b3379c179be62100ea5a8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="add-an-existing-activity-to-a-production-flow-version"></a>Aiemmin luodun tehtävän lisääminen tuotantovirran versioon
+# <a name="add-an-existing-activity-to-a-production-flow-version"></a><span data-ttu-id="9e616-103">Aiemmin luodun tehtävän lisääminen tuotantovirran versioon</span><span class="sxs-lookup"><span data-stu-id="9e616-103">Add an existing activity to a production flow version</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Kun luot uusia tuotantovirtojen versioita, voit lisätä aiemmille versioille luotuja tehtäviä uuteen versioon. Tässä menettelyssä kuvataan, miten vanhalle tuotantovirralle luodaan uusi versio ilman, että tehtäviä kopioidaan. Vanha tehtävä lisätään uuteen versioon seuraavassa vaiheessa. 
+<span data-ttu-id="9e616-104">Kun luot uusia tuotantovirtojen versioita, voit lisätä aiemmille versioille luotuja tehtäviä uuteen versioon.</span><span class="sxs-lookup"><span data-stu-id="9e616-104">When creating new versions of production flows, you can choose to add activities created for the older versions, to the new version.</span></span> <span data-ttu-id="9e616-105">Tässä menettelyssä kuvataan, miten vanhalle tuotantovirralle luodaan uusi versio ilman, että tehtäviä kopioidaan.</span><span class="sxs-lookup"><span data-stu-id="9e616-105">This procedure shows how a new version is created for an existing production flow, without copying the activities.</span></span> <span data-ttu-id="9e616-106">Vanha tehtävä lisätään uuteen versioon seuraavassa vaiheessa.</span><span class="sxs-lookup"><span data-stu-id="9e616-106">In the next step, an existing activity is added to the new version.</span></span> 
 
-Tämän tehtävän edellytyksenä on tuotantovirran versio ja olemassa olevat tehtävät.
+<span data-ttu-id="9e616-107">Tämän tehtävän edellytyksenä on tuotantovirran versio ja olemassa olevat tehtävät.</span><span class="sxs-lookup"><span data-stu-id="9e616-107">This task requires production flow with version and activities already created.</span></span>
 
 
-## <a name="create-a-new-production-flow-version"></a>Luo uusi tuotantovirran versio
-1. Valitse Tuotannonhallinta > Asetukset > Lean-tuotantovirta > Tuotantovirrat.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-4. Valitse Muokkaa.
-5. Merkitse valittu rivi luettelossa.
-6. Anna päivämäärä ja kellonaika Vanhentumispäivä-kenttään.
-    * Huomaa, että ennen kuin luot uuden tuotantovirran version, varmista aktiivisen version vanhentumispäivämäärä ja -aika. Uudelle versiolle luodaan voimaantulon aloituspäivä, joka liittyy valitun version erääntymispäivään.  
-7. ValitseLisää.
-8. Valitse Kopioi versiosta -kentässä Ei.
-    * Valitse Ei, jos haluat aloittaa tyhjällä versiolla, jos suurin osa kopioidun version tehtävistä korvataan uusilla tehtävillä. Lisää muuttumattomat tehtävät manuaalisesti Lisää aiemmin luotu -toimintoon aktiviteettilomakkeella.  
-9. Valitse Kanban-sääntöjen kaksoiskappaleet -kentässä Ei.
-    * Kun tehtäviä ei kopioida uuteen versioon, kanban-sääntöjä ei voi kopioida samalla, kun uusi versio luodaan.   Käytät sen sijaan Luo korvaava kanban -toimintoa myöhemmin kanban-säännön lomakkeella korvataksesi vanhan tuotantovirran version kanban-säännöillä, jotka perustuvat uuden version tehtäviin.  
-10. Valitse OK.
-11. Etsi haluamasi tietue luettelosta ja valitse se.
+## <a name="create-a-new-production-flow-version"></a><span data-ttu-id="9e616-108">Luo uusi tuotantovirran versio</span><span class="sxs-lookup"><span data-stu-id="9e616-108">Create a new production flow version</span></span>
+1. <span data-ttu-id="9e616-109">Valitse Tuotannonhallinta > Asetukset > Lean-tuotantovirta > Tuotantovirrat.</span><span class="sxs-lookup"><span data-stu-id="9e616-109">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="9e616-110">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="9e616-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="9e616-111">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="9e616-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="9e616-112">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="9e616-112">Click Edit.</span></span>
+5. <span data-ttu-id="9e616-113">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="9e616-113">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="9e616-114">Anna päivämäärä ja kellonaika Vanhentumispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9e616-114">In the Expiration date field, enter a date and time.</span></span>
+    * <span data-ttu-id="9e616-115">Huomaa, että ennen kuin luot uuden tuotantovirran version, varmista aktiivisen version vanhentumispäivämäärä ja -aika.</span><span class="sxs-lookup"><span data-stu-id="9e616-115">Note that before you create a new production flow version, make sure to check the expiration date and time of the active version.</span></span> <span data-ttu-id="9e616-116">Uudelle versiolle luodaan voimaantulon aloituspäivä, joka liittyy valitun version erääntymispäivään.</span><span class="sxs-lookup"><span data-stu-id="9e616-116">The new version will be created with an effective start date, which connects to the expiry date of the selected version.</span></span>  
+7. <span data-ttu-id="9e616-117">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="9e616-117">Click Add.</span></span>
+8. <span data-ttu-id="9e616-118">Valitse Kopioi versiosta -kentässä Ei.</span><span class="sxs-lookup"><span data-stu-id="9e616-118">Select No in the Copy from version field.</span></span>
+    * <span data-ttu-id="9e616-119">Valitse Ei, jos haluat aloittaa tyhjällä versiolla, jos suurin osa kopioidun version tehtävistä korvataan uusilla tehtävillä.</span><span class="sxs-lookup"><span data-stu-id="9e616-119">Select No to start with an empty version if most of the activities of the copied version will be replaced by new activities.</span></span> <span data-ttu-id="9e616-120">Lisää muuttumattomat tehtävät manuaalisesti Lisää aiemmin luotu -toimintoon aktiviteettilomakkeella.</span><span class="sxs-lookup"><span data-stu-id="9e616-120">Add the unchanged activities to the Add existing function in the activity form manually.</span></span>  
+9. <span data-ttu-id="9e616-121">Valitse Kanban-sääntöjen kaksoiskappaleet -kentässä Ei.</span><span class="sxs-lookup"><span data-stu-id="9e616-121">Select No in the Duplicate kanban rules field.</span></span>
+    * <span data-ttu-id="9e616-122">Kun tehtäviä ei kopioida uuteen versioon, kanban-sääntöjä ei voi kopioida samalla, kun uusi versio luodaan.</span><span class="sxs-lookup"><span data-stu-id="9e616-122">When the activities are not copied to the new version, it is not possible to copy the kanban rules at the time of creation of the new version.</span></span>   <span data-ttu-id="9e616-123">Käytät sen sijaan Luo korvaava kanban -toimintoa myöhemmin kanban-säännön lomakkeella korvataksesi vanhan tuotantovirran version kanban-säännöillä, jotka perustuvat uuden version tehtäviin.</span><span class="sxs-lookup"><span data-stu-id="9e616-123">Instead you will use the create replacement kanban function later in the kanban rule form, to replace kanban rules of the old production flow version with kanban rules using the activities of the new version.</span></span>  
+10. <span data-ttu-id="9e616-124">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="9e616-124">Click OK.</span></span>
+11. <span data-ttu-id="9e616-125">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="9e616-125">In the list, find and select the desired record.</span></span>
 
-## <a name="add-an-existing-activity"></a>Lisää aiemmin luotu tehtävä
-1. Valitse Tehtävät.
-2. Avaa valintaikkuna valitsemalla Lisää aiemmin luotu.
-    * Etsi ja valitse uuteen tuotantovirran versioon lisättävä vanha tehtävä.  Huomaa, että luettelossa näkyvät kaikki ne tehtävät, jotka on luotu tämän tuotantovirran kaikkia aiempia versioita varten.  
-3. Syötä tai valitse arvo Tehtävä-kenttään.
-4. Valitse OK.
+## <a name="add-an-existing-activity"></a><span data-ttu-id="9e616-126">Lisää aiemmin luotu tehtävä</span><span class="sxs-lookup"><span data-stu-id="9e616-126">Add an existing activity</span></span>
+1. <span data-ttu-id="9e616-127">Valitse Tehtävät.</span><span class="sxs-lookup"><span data-stu-id="9e616-127">Click Activities.</span></span>
+2. <span data-ttu-id="9e616-128">Avaa valintaikkuna valitsemalla Lisää aiemmin luotu.</span><span class="sxs-lookup"><span data-stu-id="9e616-128">Click Add existing to open the drop dialog.</span></span>
+    * <span data-ttu-id="9e616-129">Etsi ja valitse uuteen tuotantovirran versioon lisättävä vanha tehtävä.</span><span class="sxs-lookup"><span data-stu-id="9e616-129">Find and select an existing activity to be added to the new production flow version.</span></span>  <span data-ttu-id="9e616-130">Huomaa, että luettelossa näkyvät kaikki ne tehtävät, jotka on luotu tämän tuotantovirran kaikkia aiempia versioita varten.</span><span class="sxs-lookup"><span data-stu-id="9e616-130">Note that the list shows all activities that have been created for this production flow for all previous versions of the flow.</span></span>  
+3. <span data-ttu-id="9e616-131">Syötä tai valitse arvo Tehtävä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9e616-131">In the Activity field, enter or select a value.</span></span>
+4. <span data-ttu-id="9e616-132">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="9e616-132">Click OK.</span></span>
 
 

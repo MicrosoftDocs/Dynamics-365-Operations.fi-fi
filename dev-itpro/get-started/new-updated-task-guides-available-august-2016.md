@@ -15,97 +15,97 @@ ms.custom: 252754
 ms.assetid: 11a72e4a-7899-42be-b180-a0f4b86d88f1
 ms.search.region: global
 ms.author: josaw
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1645d3a749128a92a4a54ad309c99d69b221f5a2
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 5648d38050f843aea77a2b1c8f129f47733884b6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-august-2016"></a>Uudet tai päivitetyt tehtäväoppaat (elokuu 2016)
+# <a name="new-or-updated-task-guides-august-2016"></a><span data-ttu-id="63627-104">Uudet tai päivitetyt tehtäväoppaat (elokuu 2016)</span><span class="sxs-lookup"><span data-stu-id="63627-104">New or updated task guides (August 2016)</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n Microsoftin (elokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
+<span data-ttu-id="63627-105">Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n Microsoftin (elokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon.</span><span class="sxs-lookup"><span data-stu-id="63627-105">This topic lists the new or updated Task guides that were released to the Microsoft (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX.</span></span> <span data-ttu-id="63627-106">Uutta aloituskirjastoa ei ole julkaistu.</span><span class="sxs-lookup"><span data-stu-id="63627-106">No new Getting Started Library was released.</span></span>
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (elokuu 2016 - kaikki kielet)
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a><span data-ttu-id="63627-107">[]()Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (elokuu 2016 - kaikki kielet)</span><span class="sxs-lookup"><span data-stu-id="63627-107">[]()Task guides in the (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX</span></span>
 ---------------------------------------------------------------------------------------------------
 
-(Elokuuu 2016 - kaikki kielet) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n ympäristöpäivityksen 2 (elokuu 2016), Dynamics AX:n toukokuun 2016 sovelluspäivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. Lisätietoja näistä julkaisuista on kohdassa [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
+<span data-ttu-id="63627-108">(Elokuuu 2016 - kaikki kielet) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n ympäristöpäivityksen 2 (elokuu 2016), Dynamics AX:n toukokuun 2016 sovelluspäivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena.</span><span class="sxs-lookup"><span data-stu-id="63627-108">The (August 2016 - all languages) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX platform update 2 (August 2016), the Dynamics AX May 2016 application update, and the Microsoft Dynamics AX February 2016 release.</span></span> <span data-ttu-id="63627-109">Lisätietoja näistä julkaisuista on kohdassa [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md).</span><span class="sxs-lookup"><span data-stu-id="63627-109">For more information about these releases, see [What’s new or changed](whats-new-changed.md).</span></span> <span data-ttu-id="63627-110">Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa.</span><span class="sxs-lookup"><span data-stu-id="63627-110">Localized versions of the Task guides are available in this library.</span></span> <span data-ttu-id="63627-111">Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).</span><span class="sxs-lookup"><span data-stu-id="63627-111">For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md).</span></span>
 
-### <a name="data-access"></a>Tietoyhteys
+### <a name="data-access"></a><span data-ttu-id="63627-112">Tietoyhteys</span><span class="sxs-lookup"><span data-stu-id="63627-112">Data access</span></span>
 
-| BPM-tunnistusrivi           | Maa/alue |
+| <span data-ttu-id="63627-113">BPM-tunnistusrivi</span><span class="sxs-lookup"><span data-stu-id="63627-113">BPM line</span></span>           | <span data-ttu-id="63627-114">Maa/alue</span><span class="sxs-lookup"><span data-stu-id="63627-114">Country/region</span></span> |
 |--------------------|----------------|
-| Erätyön luominen | Yleinen         |
+| <span data-ttu-id="63627-115">Erätyön luominen</span><span class="sxs-lookup"><span data-stu-id="63627-115">Create a batch job</span></span> | <span data-ttu-id="63627-116">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-116">Global</span></span>         |
 
-### <a name="inventory"></a>Varasto
+### <a name="inventory"></a><span data-ttu-id="63627-117">Varasto</span><span class="sxs-lookup"><span data-stu-id="63627-117">Inventory</span></span>
 
-| BPM-tunnistusrivi                                | Maa/alue |
+| <span data-ttu-id="63627-118">BPM-tunnistusrivi</span><span class="sxs-lookup"><span data-stu-id="63627-118">BPM line</span></span>                                | <span data-ttu-id="63627-119">Maa/alue</span><span class="sxs-lookup"><span data-stu-id="63627-119">Country/region</span></span> |
 |-----------------------------------------|----------------|
-| Varastosaatavuuden tarkistus         | Yleinen         |
-| Määritä nimikkeen saapumisen yhteenvedon profiili | Yleinen         |
+| <span data-ttu-id="63627-120">Varastosaatavuuden tarkistus</span><span class="sxs-lookup"><span data-stu-id="63627-120">Check the availability of stock</span></span>         | <span data-ttu-id="63627-121">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-121">Global</span></span>         |
+| <span data-ttu-id="63627-122">Määritä nimikkeen saapumisen yhteenvedon profiili</span><span class="sxs-lookup"><span data-stu-id="63627-122">Set up an item arrival overview profile</span></span> | <span data-ttu-id="63627-123">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-123">Global</span></span>         |
 
-### <a name="inventory-management"></a>Inventoinnin- ja varastonhallinta
+### <a name="inventory-management"></a><span data-ttu-id="63627-124">Inventoinnin- ja varastonhallinta</span><span class="sxs-lookup"><span data-stu-id="63627-124">Inventory management</span></span>
 
-| BPM-tunnistusrivi              | Maa/alue |
+| <span data-ttu-id="63627-125">BPM-tunnistusrivi</span><span class="sxs-lookup"><span data-stu-id="63627-125">BPM line</span></span>              | <span data-ttu-id="63627-126">Maa/alue</span><span class="sxs-lookup"><span data-stu-id="63627-126">Country/region</span></span> |
 |-----------------------|----------------|
-| Määritä laatutilaukset | Yleinen         |
+| <span data-ttu-id="63627-127">Määritä laatutilaukset</span><span class="sxs-lookup"><span data-stu-id="63627-127">Set up quality orders</span></span> | <span data-ttu-id="63627-128">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-128">Global</span></span>         |
 
-### <a name="procurement"></a>Hankinta
+### <a name="procurement"></a><span data-ttu-id="63627-129">Hankinta</span><span class="sxs-lookup"><span data-stu-id="63627-129">Procurement</span></span>
 
-| BPM-tunnistusrivi                                          | Maa/alue |
+| <span data-ttu-id="63627-130">BPM-tunnistusrivi</span><span class="sxs-lookup"><span data-stu-id="63627-130">BPM line</span></span>                                          | <span data-ttu-id="63627-131">Maa/alue</span><span class="sxs-lookup"><span data-stu-id="63627-131">Country/region</span></span> |
 |---------------------------------------------------|----------------|
-| Luo ostotilaus kertatoimittajalle   | Yleinen         |
-| Luo ostotilaus, jolla on toimitusaikataulu  | Yleinen         |
-| Luo ostopalautustilaus                    | Yleinen         |
-| Luo toistuva ostotilaus                    | Yleinen         |
-| Ostotilauksen tuotteiden vastaanoton kirjaaminen | Yleinen         |
+| <span data-ttu-id="63627-132">Luo ostotilaus kertatoimittajalle</span><span class="sxs-lookup"><span data-stu-id="63627-132">Create a purchase order for a one-time supplier</span></span>   | <span data-ttu-id="63627-133">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-133">Global</span></span>         |
+| <span data-ttu-id="63627-134">Luo ostotilaus, jolla on toimitusaikataulu</span><span class="sxs-lookup"><span data-stu-id="63627-134">Create a purchase order with a delivery schedule</span></span>  | <span data-ttu-id="63627-135">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-135">Global</span></span>         |
+| <span data-ttu-id="63627-136">Luo ostopalautustilaus</span><span class="sxs-lookup"><span data-stu-id="63627-136">Create a purchase return order</span></span>                    | <span data-ttu-id="63627-137">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-137">Global</span></span>         |
+| <span data-ttu-id="63627-138">Luo toistuva ostotilaus</span><span class="sxs-lookup"><span data-stu-id="63627-138">Create a repeat purchase order</span></span>                    | <span data-ttu-id="63627-139">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-139">Global</span></span>         |
+| <span data-ttu-id="63627-140">Ostotilauksen tuotteiden vastaanoton kirjaaminen</span><span class="sxs-lookup"><span data-stu-id="63627-140">Record the receipt of goods on the purchase order</span></span> | <span data-ttu-id="63627-141">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-141">Global</span></span>         |
 
-### <a name="resource-and-activities"></a>Resurssi ja tehtävät
+### <a name="resource-and-activities"></a><span data-ttu-id="63627-142">Resurssi ja tehtävät</span><span class="sxs-lookup"><span data-stu-id="63627-142">Resource and activities</span></span>
 
-| BPM-tunnistusrivi                                                | Maa/alue |
+| <span data-ttu-id="63627-143">BPM-tunnistusrivi</span><span class="sxs-lookup"><span data-stu-id="63627-143">BPM line</span></span>                                                | <span data-ttu-id="63627-144">Maa/alue</span><span class="sxs-lookup"><span data-stu-id="63627-144">Country/region</span></span> |
 |---------------------------------------------------------|----------------|
-| Aktivoi tuotantovirran versio                      | Yleinen         |
-| Luo kanban-sääntö usealle tehtävälle            | Yleinen         |
-| Luo kanban-sääntö käyttämällä kanban-rivitapahtumaa          | Yleinen         |
-| Luo kanban-sääntö käyttäen vähimmäisvarastotapahtumaa        | Yleinen         |
-| Varmuusvaraston kirjauskansion käyttäminen minimikattavuuden päivittämiseen | Yleinen         |
+| <span data-ttu-id="63627-145">Aktivoi tuotantovirran versio</span><span class="sxs-lookup"><span data-stu-id="63627-145">Activate a production flow version</span></span>                      | <span data-ttu-id="63627-146">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-146">Global</span></span>         |
+| <span data-ttu-id="63627-147">Luo kanban-sääntö usealle tehtävälle</span><span class="sxs-lookup"><span data-stu-id="63627-147">Create a kanban rule for multiple activities</span></span>            | <span data-ttu-id="63627-148">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-148">Global</span></span>         |
+| <span data-ttu-id="63627-149">Luo kanban-sääntö käyttämällä kanban-rivitapahtumaa</span><span class="sxs-lookup"><span data-stu-id="63627-149">Create a kanban rule using a kanban line event</span></span>          | <span data-ttu-id="63627-150">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-150">Global</span></span>         |
+| <span data-ttu-id="63627-151">Luo kanban-sääntö käyttäen vähimmäisvarastotapahtumaa</span><span class="sxs-lookup"><span data-stu-id="63627-151">Create a kanban rule using a minimum stock event</span></span>        | <span data-ttu-id="63627-152">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-152">Global</span></span>         |
+| <span data-ttu-id="63627-153">Varmuusvaraston kirjauskansion käyttäminen minimikattavuuden päivittämiseen</span><span class="sxs-lookup"><span data-stu-id="63627-153">Use the safety stock journal to update minimum coverage</span></span> | <span data-ttu-id="63627-154">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-154">Global</span></span>         |
 
-### <a name="supplier-relationship-management"></a>Toimittajasuhteen hallinta
+### <a name="supplier-relationship-management"></a><span data-ttu-id="63627-155">Toimittajasuhteen hallinta</span><span class="sxs-lookup"><span data-stu-id="63627-155">Supplier relationship management</span></span>
 
-| BPM-tunnistusrivi                                                           | Maa/alue |
+| <span data-ttu-id="63627-156">BPM-tunnistusrivi</span><span class="sxs-lookup"><span data-stu-id="63627-156">BPM line</span></span>                                                           | <span data-ttu-id="63627-157">Maa/alue</span><span class="sxs-lookup"><span data-stu-id="63627-157">Country/region</span></span> |
 |--------------------------------------------------------------------|----------------|
-| Hyväksy toimittajia tiettyihin hankintaluokkiin                | Yleinen         |
-| Luo hankintaluettelo                                       | Yleinen         |
-| Luo ehdotus, joka käyttää tarjouspyyntöä                              | Yleinen         |
-| Luo tarjouspyyntöjen pisteytystapa                                   | Yleinen         |
-| Luo toimittajan pankkitili                                       | Yleinen         |
-| Luo ostokäytännöt                                         | Yleinen         |
-| Luo tarjouspyyntöjen pyyntötyypit ja pisteytysperusteet            | Yleinen         |
-| Määritä käyttöoikeudet tuotteiden tilaamiseen jonkun muun puolesta | Yleinen         |
-| Aseta menettelytavat hankintaluokkien hierarkioille               | Yleinen         |
+| <span data-ttu-id="63627-158">Hyväksy toimittajia tiettyihin hankintaluokkiin</span><span class="sxs-lookup"><span data-stu-id="63627-158">Approve vendors for specific procurement categories</span></span>                | <span data-ttu-id="63627-159">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-159">Global</span></span>         |
+| <span data-ttu-id="63627-160">Luo hankintaluettelo</span><span class="sxs-lookup"><span data-stu-id="63627-160">Create a procurement catalog</span></span>                                       | <span data-ttu-id="63627-161">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-161">Global</span></span>         |
+| <span data-ttu-id="63627-162">Luo ehdotus, joka käyttää tarjouspyyntöä</span><span class="sxs-lookup"><span data-stu-id="63627-162">Create a requisition that uses an RFQ</span></span>                              | <span data-ttu-id="63627-163">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-163">Global</span></span>         |
+| <span data-ttu-id="63627-164">Luo tarjouspyyntöjen pisteytystapa</span><span class="sxs-lookup"><span data-stu-id="63627-164">Create a scoring method for RFQs</span></span>                                   | <span data-ttu-id="63627-165">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-165">Global</span></span>         |
+| <span data-ttu-id="63627-166">Luo toimittajan pankkitili</span><span class="sxs-lookup"><span data-stu-id="63627-166">Create a vendor bank account</span></span>                                       | <span data-ttu-id="63627-167">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-167">Global</span></span>         |
+| <span data-ttu-id="63627-168">Luo ostokäytännöt</span><span class="sxs-lookup"><span data-stu-id="63627-168">Create purchasing policies</span></span>                                         | <span data-ttu-id="63627-169">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-169">Global</span></span>         |
+| <span data-ttu-id="63627-170">Luo tarjouspyyntöjen pyyntötyypit ja pisteytysperusteet</span><span class="sxs-lookup"><span data-stu-id="63627-170">Create solicitation types and scoring criteria for RFQs</span></span>            | <span data-ttu-id="63627-171">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-171">Global</span></span>         |
+| <span data-ttu-id="63627-172">Määritä käyttöoikeudet tuotteiden tilaamiseen jonkun muun puolesta</span><span class="sxs-lookup"><span data-stu-id="63627-172">Set up permissions for ordering products on behalf of someone else</span></span> | <span data-ttu-id="63627-173">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-173">Global</span></span>         |
+| <span data-ttu-id="63627-174">Aseta menettelytavat hankintaluokkien hierarkioille</span><span class="sxs-lookup"><span data-stu-id="63627-174">Set up policies for procurement category hierarchies</span></span>               | <span data-ttu-id="63627-175">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-175">Global</span></span>         |
 
-### <a name="warehouse-and-transportation"></a>Varasto ja kuljetus
+### <a name="warehouse-and-transportation"></a><span data-ttu-id="63627-176">Varasto ja kuljetus</span><span class="sxs-lookup"><span data-stu-id="63627-176">Warehouse and transportation</span></span>
 
-| BPM-tunnistusrivi                                                                    | Maa/alue |
+| <span data-ttu-id="63627-177">BPM-tunnistusrivi</span><span class="sxs-lookup"><span data-stu-id="63627-177">BPM line</span></span>                                                                    | <span data-ttu-id="63627-178">Maa/alue</span><span class="sxs-lookup"><span data-stu-id="63627-178">Country/region</span></span> |
 |-----------------------------------------------------------------------------|----------------|
-| Määritä mobiililaitteen valikkokohde Ostotilaus-tyypin työn valmistumiselle | Yleinen         |
+| <span data-ttu-id="63627-179">Määritä mobiililaitteen valikkokohde Ostotilaus-tyypin työn valmistumiselle</span><span class="sxs-lookup"><span data-stu-id="63627-179">Set up a mobile device menu item for completing work of type Purchase order</span></span> | <span data-ttu-id="63627-180">Yleinen</span><span class="sxs-lookup"><span data-stu-id="63627-180">Global</span></span>         |
 
 
 
-<a name="see-also"></a>Lisätietoja
+<a name="see-also"></a><span data-ttu-id="63627-181">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="63627-181">See also</span></span>
 --------
 
-[Uudet tehtäväoppaat (helmikuu 2016)](new-task-guides-available-february-2016.md)
+[<span data-ttu-id="63627-182">Uudet tehtäväoppaat (helmikuu 2016)</span><span class="sxs-lookup"><span data-stu-id="63627-182">New Task guides (February 2016)</span></span>](new-task-guides-available-february-2016.md)
 
-[Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
+[<span data-ttu-id="63627-183">Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)</span><span class="sxs-lookup"><span data-stu-id="63627-183">New or updated Task guides (May 2016)</span></span>](new-updated-task-guides-available-may-2016.md)
 
-[Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)
+[<span data-ttu-id="63627-184">Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)</span><span class="sxs-lookup"><span data-stu-id="63627-184">New or updated Task guides (November 2016)</span></span>](new-task-guides-november-2016.md)
 
 
 

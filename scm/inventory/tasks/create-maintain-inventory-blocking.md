@@ -1,4 +1,4 @@
---- 
+---
 title: "Luo ja ylläpidä varastoesto"
 description: "Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muiden lähtevien asiakirjojen tai varastoeston avulla."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,43 +17,42 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 7d0834aa3a415e8e9b4eab745b680e22a680b6b6
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 7272349cf16b9459823a752b8d3df915f42606ef
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="create-and-maintain-inventory-blocking"></a>Luo ja ylläpidä varastoesto
+# <a name="create-and-maintain-inventory-blocking"></a><span data-ttu-id="ca17e-103">Luo ja ylläpidä varastoesto</span><span class="sxs-lookup"><span data-stu-id="ca17e-103">Create and maintain inventory blocking</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muiden lähtevien asiakirjojen tai varastoeston avulla. Voit suorittaa menettelyn esittelytietojen USMF-yrityksen avulla näkyvillä olevilla esimerkkiarvoilla. Aloita tämä menettely vasta, kun käytettävissä on fyysistä käytettävissä olevaa varastoa omaava nimike.
+<span data-ttu-id="ca17e-104">Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muiden lähtevien asiakirjojen tai varastoeston avulla.</span><span class="sxs-lookup"><span data-stu-id="ca17e-104">This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking.</span></span> <span data-ttu-id="ca17e-105">Voit suorittaa menettelyn esittelytietojen USMF-yrityksen avulla näkyvillä olevilla esimerkkiarvoilla.</span><span class="sxs-lookup"><span data-stu-id="ca17e-105">You can run the procedure in demo data company USMF using the example values that are shown.</span></span> <span data-ttu-id="ca17e-106">Aloita tämä menettely vasta, kun käytettävissä on fyysistä käytettävissä olevaa varastoa omaava nimike.</span><span class="sxs-lookup"><span data-stu-id="ca17e-106">You need to have an item with physical on-hand inventory available before you start this procedure.</span></span>
 
 
-## <a name="create-an-inventory-blocking"></a>Varastoeston luominen
-1. Valitse Inventoinnin- ja varastonhallinta > Kausittaiset tehtävät > Varastoesto.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.
-4. Valitse luettelosta nimike. 
-    * Määritä estettävä nimiketunnus, jolla on fyysistä käytettävissä olevaa varastoa. Jos käytössä on USMF, voit valita nimikkeen M9201.  
-5. Kirjoita numero Määrä-kenttään.
-    * Jos käytössä on nimike M9201, määritä arvo, joka on pienempi kuin 200.  
-6. Ota käyttöön Varastodimensiot-osan laajennus.
-7. Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.
-8. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Jos käytössä on nimike M9201, voit valita varaston 51.  
-9. Valitse Tallenna.
+## <a name="create-an-inventory-blocking"></a><span data-ttu-id="ca17e-107">Varastoeston luominen</span><span class="sxs-lookup"><span data-stu-id="ca17e-107">Create an inventory blocking</span></span>
+1. <span data-ttu-id="ca17e-108">Valitse Inventoinnin- ja varastonhallinta > Kausittaiset tehtävät > Varastoesto.</span><span class="sxs-lookup"><span data-stu-id="ca17e-108">Go to Inventory management > Periodic tasks > Inventory blocking.</span></span>
+2. <span data-ttu-id="ca17e-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="ca17e-109">Click New.</span></span>
+3. <span data-ttu-id="ca17e-110">Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="ca17e-110">In the Item number field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="ca17e-111">Valitse luettelosta nimike.</span><span class="sxs-lookup"><span data-stu-id="ca17e-111">In the list, select the item you want to choose.</span></span>
+    * <span data-ttu-id="ca17e-112">Määritä estettävä nimiketunnus, jolla on fyysistä käytettävissä olevaa varastoa.</span><span class="sxs-lookup"><span data-stu-id="ca17e-112">Select an item number with physical on-hand inventory that you want to block.</span></span> <span data-ttu-id="ca17e-113">Jos käytössä on USMF, voit valita nimikkeen M9201.</span><span class="sxs-lookup"><span data-stu-id="ca17e-113">If you’re using USMF you can select item M9201.</span></span>  
+5. <span data-ttu-id="ca17e-114">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ca17e-114">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="ca17e-115">Jos käytössä on nimike M9201, määritä arvo, joka on pienempi kuin 200.</span><span class="sxs-lookup"><span data-stu-id="ca17e-115">If you’re using item M9201, you need to select less than 200.</span></span>  
+6. <span data-ttu-id="ca17e-116">Ota käyttöön Varastodimensiot-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="ca17e-116">Toggle the expansion of the Inventory dimensions section.</span></span>
+7. <span data-ttu-id="ca17e-117">Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="ca17e-117">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="ca17e-118">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="ca17e-118">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="ca17e-119">Jos käytössä on nimike M9201, voit valita varaston 51.</span><span class="sxs-lookup"><span data-stu-id="ca17e-119">If you’re using item M9201, you can select warehouse 51.</span></span>  
+9. <span data-ttu-id="ca17e-120">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="ca17e-120">Click Save.</span></span>
 
-## <a name="update-the-conditions-of-the-inventory-blocking"></a>Varastoeston ehtojen päivittäminen
-1. Kirjoita numero Määrä-kenttään.
-    * Päivitä Varastomäärä-kenttä vastaamaan estettävää määrää.  
-2. Kirjoita päivämäärä Odotettu päivämäärä -kenttään.
-    * Haluat ehkä määrittää, milloin estetyn varaston odotetaan olevan varattavissa. Voit määrittää tätä varten odotetun päivämäärän. Jos varastoestolle on valittu Odotetut vastaanotot -asetus, kuten oletusarvoisesti on, voit luoda eston manuaalisesti. Tämä päivä näkyy odotetun tapahtuman kohdalla.  
-3. Valitse Tallenna.
+## <a name="update-the-conditions-of-the-inventory-blocking"></a><span data-ttu-id="ca17e-121">Varastoeston ehtojen päivittäminen</span><span class="sxs-lookup"><span data-stu-id="ca17e-121">Update the conditions of the inventory blocking</span></span>
+1. <span data-ttu-id="ca17e-122">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ca17e-122">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="ca17e-123">Päivitä Varastomäärä-kenttä vastaamaan estettävää määrää.</span><span class="sxs-lookup"><span data-stu-id="ca17e-123">Update the inventory quantity field to reflect the quantity to block.</span></span>  
+2. <span data-ttu-id="ca17e-124">Kirjoita päivämäärä Odotettu päivämäärä -kenttään.</span><span class="sxs-lookup"><span data-stu-id="ca17e-124">In the Expected date field, enter a date.</span></span>
+    * <span data-ttu-id="ca17e-125">Haluat ehkä määrittää, milloin estetyn varaston odotetaan olevan varattavissa. Voit määrittää tätä varten odotetun päivämäärän.</span><span class="sxs-lookup"><span data-stu-id="ca17e-125">You might want to indicate when the blocked inventory is expected to become available for reservation by assigning an expected date.</span></span> <span data-ttu-id="ca17e-126">Jos varastoestolle on valittu Odotetut vastaanotot -asetus, kuten oletusarvoisesti on, voit luoda eston manuaalisesti. Tämä päivä näkyy odotetun tapahtuman kohdalla.</span><span class="sxs-lookup"><span data-stu-id="ca17e-126">If the Expected receipts option is selected for the inventory blocking, as it is by default when you manually create a blocking, this date will appear on the expected transaction.</span></span>  
+3. <span data-ttu-id="ca17e-127">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="ca17e-127">Click Save.</span></span>
 
-## <a name="remove-the-inventory-blocking"></a>Varastoeston poistaminen
-1. Valitse Poista.
-2. Valitse Kyllä.
-3. Sulje sivu.
-
+## <a name="remove-the-inventory-blocking"></a><span data-ttu-id="ca17e-128">Varastoeston poistaminen</span><span class="sxs-lookup"><span data-stu-id="ca17e-128">Remove the inventory blocking</span></span>
+1. <span data-ttu-id="ca17e-129">Valitse Poista.</span><span class="sxs-lookup"><span data-stu-id="ca17e-129">Click Delete.</span></span>
+2. <span data-ttu-id="ca17e-130">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="ca17e-130">Click Yes.</span></span>
+3. <span data-ttu-id="ca17e-131">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ca17e-131">Close the page.</span></span>
 

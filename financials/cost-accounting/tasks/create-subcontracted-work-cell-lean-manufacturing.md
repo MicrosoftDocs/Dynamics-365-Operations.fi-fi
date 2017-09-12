@@ -16,59 +16,59 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 41cf47bb0578d9c854bd0dfc078b5b6fb559abca
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fc8dc0bc29c6bdb662c46808491abf5395f0be5d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>Lean-valmistuksen alihankintatyösolun luominen
+# <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a><span data-ttu-id="b2b20-103">Lean-valmistuksen alihankintatyösolun luominen</span><span class="sxs-lookup"><span data-stu-id="b2b20-103">Create a subcontracted work cell for lean manufacturing</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Kun haluat mallintaa alihankkijalle annetun lean-valmistuksen työn, luo työsolu, joka on liitetty työn tarjoavaan toimittajaan. Alihankinnan työsolu linkitetään toimittajaan Toimittaja-tyyppisen resurssin liitoksen kautta. Jos tämä tallenne toistetaan USMF-demoyrityksessä, voit valita toimittajan tilin, jonka tunnus on 1002, ja toimipaikan 1.
+<span data-ttu-id="b2b20-104">Kun haluat mallintaa alihankkijalle annetun lean-valmistuksen työn, luo työsolu, joka on liitetty työn tarjoavaan toimittajaan.</span><span class="sxs-lookup"><span data-stu-id="b2b20-104">To model subcontracted work for lean manufacturing, you must create a work cell that is associated with the vendor that provides the work.</span></span> <span data-ttu-id="b2b20-105">Alihankinnan työsolu linkitetään toimittajaan Toimittaja-tyyppisen resurssin liitoksen kautta.</span><span class="sxs-lookup"><span data-stu-id="b2b20-105">A subcontracted work cell is linked to the vendor through the association of a resource of the Vendor type.</span></span> <span data-ttu-id="b2b20-106">Jos tämä tallenne toistetaan USMF-demoyrityksessä, voit valita toimittajan tilin, jonka tunnus on 1002, ja toimipaikan 1.</span><span class="sxs-lookup"><span data-stu-id="b2b20-106">If you play this recording in the USMF demo company, you can select vendor account ID 1002 and site 1.</span></span>
 
 
-## <a name="create-a-vendor-resource"></a>Luo toimittajan resurssi
-1. Siirry Resurssit-kohtaan.
-2. Valitse Uusi.
-3. Kirjoita arvo Resurssi-kenttään.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Valitse Tyyppi-kenttään Toimittaja.
-6. Avaa haku valitsemalla Toimittaja-kentässä avattavan valikon painike.
+## <a name="create-a-vendor-resource"></a><span data-ttu-id="b2b20-107">Luo toimittajan resurssi</span><span class="sxs-lookup"><span data-stu-id="b2b20-107">Create a vendor resource</span></span>
+1. <span data-ttu-id="b2b20-108">Siirry Resurssit-kohtaan.</span><span class="sxs-lookup"><span data-stu-id="b2b20-108">Go to Resources.</span></span>
+2. <span data-ttu-id="b2b20-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="b2b20-109">Click New.</span></span>
+3. <span data-ttu-id="b2b20-110">Kirjoita arvo Resurssi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b2b20-110">In the Resource field, type a value.</span></span>
+4. <span data-ttu-id="b2b20-111">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b2b20-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="b2b20-112">Valitse Tyyppi-kenttään Toimittaja.</span><span class="sxs-lookup"><span data-stu-id="b2b20-112">In the Type field, select 'Vendor'.</span></span>
+6. <span data-ttu-id="b2b20-113">Avaa haku valitsemalla Toimittaja-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="b2b20-113">In the Vendor field, click the drop-down button to open the lookup.</span></span>
 
-## <a name="create-the-resource-group"></a>Luo resurssiryhmä
-1. Siirry Resurssiryhmät-kohtaan.
-2. Valitse Uusi.
-3. Kirjoita arvo Resurssiryhmä-kenttään.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.
-    * Valitse toimipaikka, johon työsolu kohdistetaan. Teoriassa toimipaikka voi edustaa yksittäistä toimittajan toimipaikkaa. Kuitenkin suurimmassa osassa tapauksia alihankinnan resurssit kohdistetaan toimipaikkaan, joka on tilannut alihankkijalle annetun työn. Ota huomioon, että alihankinnan työsolujen syöttö- ja tuotosvaraston on oltava samassa toimipaikassa.  
-6. Kirjoita arvo Toimipaikka-kenttään.
+## <a name="create-the-resource-group"></a><span data-ttu-id="b2b20-114">Luo resurssiryhmä</span><span class="sxs-lookup"><span data-stu-id="b2b20-114">Create the resource group</span></span>
+1. <span data-ttu-id="b2b20-115">Siirry Resurssiryhmät-kohtaan.</span><span class="sxs-lookup"><span data-stu-id="b2b20-115">Go to Resource groups.</span></span>
+2. <span data-ttu-id="b2b20-116">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="b2b20-116">Click New.</span></span>
+3. <span data-ttu-id="b2b20-117">Kirjoita arvo Resurssiryhmä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b2b20-117">In the Resource group field, type a value.</span></span>
+4. <span data-ttu-id="b2b20-118">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b2b20-118">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="b2b20-119">Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="b2b20-119">In the Site field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="b2b20-120">Valitse toimipaikka, johon työsolu kohdistetaan.</span><span class="sxs-lookup"><span data-stu-id="b2b20-120">Select the site that the work cell should be allocated to.</span></span> <span data-ttu-id="b2b20-121">Teoriassa toimipaikka voi edustaa yksittäistä toimittajan toimipaikkaa.</span><span class="sxs-lookup"><span data-stu-id="b2b20-121">In theory, a site can represent a single site that is operated by a vendor.</span></span> <span data-ttu-id="b2b20-122">Kuitenkin suurimmassa osassa tapauksia alihankinnan resurssit kohdistetaan toimipaikkaan, joka on tilannut alihankkijalle annetun työn.</span><span class="sxs-lookup"><span data-stu-id="b2b20-122">However, in most cases, subcontracted resources are just allocated to the site that orders the subcontracted work.</span></span> <span data-ttu-id="b2b20-123">Ota huomioon, että alihankinnan työsolujen syöttö- ja tuotosvaraston on oltava samassa toimipaikassa.</span><span class="sxs-lookup"><span data-stu-id="b2b20-123">Note that the input and output warehouses of subcontracted work cells must be on the same site.</span></span>  
+6. <span data-ttu-id="b2b20-124">Kirjoita arvo Toimipaikka-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b2b20-124">In the Site field, type a value.</span></span>
 7. @SysTaskRecorder:_RequestClose
-8. Valitse Työsolu-valintaruutu tai poista valintaruudun valinta.
-9. Avaa haku napsauttamalla Syöttövarasto-kentässä avattavan valikon painiketta.
-    * Valitse varasto ja sijainti, joita käytetään materiaalin paikkana toimittajan hallitsemassa työsolussa. Useissa tapauksissa varasto ja sijainti voidaan mallintaa käyttämällä erillistä varastoa toimittajaa kohti ja yhtä sijaintia työsolua kohti.  
-10. Avaa haku napsauttamalla Syöttösijainti-kentässä avattavan valikon painiketta.
-11. Avaa haku napsauttamalla Tuotosvarasto-kentässä avattavan valikon painiketta.
-    * Määritä varasto ja sijainti, jonne materiaali kirjataan, kun työsolun alihankintatehtävät kirjataan. Varasto ja sijainti voivat olla toimittajan toimipaikassa, jos toimittaja raportoi kanban-työt. Vaihtoehtoisesti varasto ja sijainti voivat olla vastaanottosijainnissa, joka on liitetty tuotantovirran seuraavaan vaiheeseen.  
-12. Avaa haku napsauttamalla Tuotossijainti-kentässä avattavan valikon painiketta.
-13. Laajenna tai tiivistä Kalenterit-osa.
-14. ValitseLisää.
-15. Avaa haku valitsemalla Kalenteri-kentässä avattavan valikon painike.
-    * Liitä työsolun työaikakalenteri resurssiryhmään. Kriittisiä resursseja varten kannattaa määrittää erityiset kalenterit, jotka edustavat tarkkoja työaikoja ja työsolun tai toimittajan toimipaikan liittyviä kapasiteetteja.  
-16. Laajenna tai tiivistä Resurssit-osa.
-17. ValitseLisää.
-    * Alihankinnan resurssiryhmällä on oltava liitetty resurssi, jonka tyyppi on Toimittaja. Se linkittää resurssiryhmän toimittajan tiliin.  
-18. Avaa haku valitsemalla Resurssi-kentässä avattavan valikon painike.
-    * Valitse tai syötä edellisessä alitehtävässä luotu toimittajan resurssi.  
-19. Laajenna tai tiivistä Työsolun kapasiteetti -osa.
-20. ValitseLisää.
-    * Työsolulle on määritettävä kapasiteetti. Tässä esimerkissä luodaan 100 kappaleen tuotantoteho tavallista työpäivää kohti.  
-21. Avaa haku napsauttamalla Tuotantovirtamalli-kentässä avattavan valikon painiketta.
-22. Valitse vaihtoehto Kapasiteettikausi-kentässä.
-23. Lisää Tuotantokapasiteetin keskimääräinen määrä -kenttään numero.
-24. Avaa haku napsauttamalla Yksikkö -kentässä avattavan valikon painiketta.
-25. Ratkaise muutokset yksikössä.
+8. <span data-ttu-id="b2b20-125">Valitse Työsolu-valintaruutu tai poista valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="b2b20-125">Select or clear the Work cell check box.</span></span>
+9. <span data-ttu-id="b2b20-126">Avaa haku napsauttamalla Syöttövarasto-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="b2b20-126">In the Input warehouse field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="b2b20-127">Valitse varasto ja sijainti, joita käytetään materiaalin paikkana toimittajan hallitsemassa työsolussa.</span><span class="sxs-lookup"><span data-stu-id="b2b20-127">Select the warehouse and location that are used to stage the material for the vendor-managed work cell.</span></span> <span data-ttu-id="b2b20-128">Useissa tapauksissa varasto ja sijainti voidaan mallintaa käyttämällä erillistä varastoa toimittajaa kohti ja yhtä sijaintia työsolua kohti.</span><span class="sxs-lookup"><span data-stu-id="b2b20-128">In many cases, the warehouse and location are modeled by using a separate warehouse per vendor and one location per work cell.</span></span>  
+10. <span data-ttu-id="b2b20-129">Avaa haku napsauttamalla Syöttösijainti-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="b2b20-129">In the Input location field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="b2b20-130">Avaa haku napsauttamalla Tuotosvarasto-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="b2b20-130">In the Output warehouse field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="b2b20-131">Määritä varasto ja sijainti, jonne materiaali kirjataan, kun työsolun alihankintatehtävät kirjataan.</span><span class="sxs-lookup"><span data-stu-id="b2b20-131">Define the warehouse and location where the material is posted when the subcontracted activities of the work cell are posted.</span></span> <span data-ttu-id="b2b20-132">Varasto ja sijainti voivat olla toimittajan toimipaikassa, jos toimittaja raportoi kanban-työt.</span><span class="sxs-lookup"><span data-stu-id="b2b20-132">The warehouse and location can be at the vendor site if the vendor reports the kanban jobs.</span></span> <span data-ttu-id="b2b20-133">Vaihtoehtoisesti varasto ja sijainti voivat olla vastaanottosijainnissa, joka on liitetty tuotantovirran seuraavaan vaiheeseen.</span><span class="sxs-lookup"><span data-stu-id="b2b20-133">Alternatively, the warehouse and location can be the receiving location that is associated with the next step of the production flow.</span></span>  
+12. <span data-ttu-id="b2b20-134">Avaa haku napsauttamalla Tuotossijainti-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="b2b20-134">In the Output location field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="b2b20-135">Laajenna tai tiivistä Kalenterit-osa.</span><span class="sxs-lookup"><span data-stu-id="b2b20-135">Expand or collapse the Calendars section.</span></span>
+14. <span data-ttu-id="b2b20-136">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b2b20-136">Click Add.</span></span>
+15. <span data-ttu-id="b2b20-137">Avaa haku valitsemalla Kalenteri-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="b2b20-137">In the Calendar field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="b2b20-138">Liitä työsolun työaikakalenteri resurssiryhmään.</span><span class="sxs-lookup"><span data-stu-id="b2b20-138">Associate the working time calendar of the work cell with the resource group.</span></span> <span data-ttu-id="b2b20-139">Kriittisiä resursseja varten kannattaa määrittää erityiset kalenterit, jotka edustavat tarkkoja työaikoja ja työsolun tai toimittajan toimipaikan liittyviä kapasiteetteja.</span><span class="sxs-lookup"><span data-stu-id="b2b20-139">For critical resources, we recommend that you define specific calendars that represent the exact working times and related capacities of the work cell or vendor site.</span></span>  
+16. <span data-ttu-id="b2b20-140">Laajenna tai tiivistä Resurssit-osa.</span><span class="sxs-lookup"><span data-stu-id="b2b20-140">Expand or collapse the Resources section.</span></span>
+17. <span data-ttu-id="b2b20-141">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b2b20-141">Click Add.</span></span>
+    * <span data-ttu-id="b2b20-142">Alihankinnan resurssiryhmällä on oltava liitetty resurssi, jonka tyyppi on Toimittaja. Se linkittää resurssiryhmän toimittajan tiliin.</span><span class="sxs-lookup"><span data-stu-id="b2b20-142">A subcontracted resource group must have an associated resource of the Vendor type that links the resource group to the vendor account.</span></span>  
+18. <span data-ttu-id="b2b20-143">Avaa haku valitsemalla Resurssi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="b2b20-143">In the Resource field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="b2b20-144">Valitse tai syötä edellisessä alitehtävässä luotu toimittajan resurssi.</span><span class="sxs-lookup"><span data-stu-id="b2b20-144">Select or enter the vendor resource that you created in the previous sub-task.</span></span>  
+19. <span data-ttu-id="b2b20-145">Laajenna tai tiivistä Työsolun kapasiteetti -osa.</span><span class="sxs-lookup"><span data-stu-id="b2b20-145">Expand or collapse the Work cell capacity section.</span></span>
+20. <span data-ttu-id="b2b20-146">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b2b20-146">Click Add.</span></span>
+    * <span data-ttu-id="b2b20-147">Työsolulle on määritettävä kapasiteetti.</span><span class="sxs-lookup"><span data-stu-id="b2b20-147">A work cell must have a defined capacity.</span></span> <span data-ttu-id="b2b20-148">Tässä esimerkissä luodaan 100 kappaleen tuotantoteho tavallista työpäivää kohti.</span><span class="sxs-lookup"><span data-stu-id="b2b20-148">In this example, we create a throughput capacity of 100 pieces per standard workday.</span></span>  
+21. <span data-ttu-id="b2b20-149">Avaa haku napsauttamalla Tuotantovirtamalli-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="b2b20-149">In the Production flow model field, click the drop-down button to open the lookup.</span></span>
+22. <span data-ttu-id="b2b20-150">Valitse vaihtoehto Kapasiteettikausi-kentässä.</span><span class="sxs-lookup"><span data-stu-id="b2b20-150">In the Capacity period field, select an option.</span></span>
+23. <span data-ttu-id="b2b20-151">Lisää Tuotantokapasiteetin keskimääräinen määrä -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="b2b20-151">In the Average throughput quantity field, enter a number.</span></span>
+24. <span data-ttu-id="b2b20-152">Avaa haku napsauttamalla Yksikkö -kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="b2b20-152">In the Unit field, click the drop-down button to open the lookup.</span></span>
+25. <span data-ttu-id="b2b20-153">Ratkaise muutokset yksikössä.</span><span class="sxs-lookup"><span data-stu-id="b2b20-153">ResolveChanges the Unit.</span></span>
 
 

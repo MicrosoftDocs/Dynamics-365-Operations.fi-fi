@@ -17,39 +17,39 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: ab13aced30f90c4d7c8b96f30340fff6e3eee927
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: dab14468713f9f23d20e7ca648711e2a4337cf7c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="retail-price-adjustments"></a>Vähittäismyynnin hinnanoikaisut
+# <a name="retail-price-adjustments"></a><span data-ttu-id="339f7-103">Vähittäismyynnin hinnanoikaisut</span><span class="sxs-lookup"><span data-stu-id="339f7-103">Retail price adjustments</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tässä menettelyssä esitellään vähittäismyynnin hinnanoikaisun luominen. Vähittäismyynnin hinnanoikaisu voidaan määrittää suoraan nimikkeen myyntihinnalle. Vaihtoehtoisesti myös perusmyyntihintaa tai kauppasopimuksen myyntihintaa voidaan muokata. Menettely käyttää esittelytietojen USRT-yritystä.
+<span data-ttu-id="339f7-104">Tässä menettelyssä esitellään vähittäismyynnin hinnanoikaisun luominen.</span><span class="sxs-lookup"><span data-stu-id="339f7-104">This procedure will walk through creating a retail price adjustment.</span></span> <span data-ttu-id="339f7-105">Vähittäismyynnin hinnanoikaisu voidaan määrittää suoraan nimikkeen myyntihinnalle. Vaihtoehtoisesti myös perusmyyntihintaa tai kauppasopimuksen myyntihintaa voidaan muokata.</span><span class="sxs-lookup"><span data-stu-id="339f7-105">A retail price adjustment can set an item's sale price directly, or modify its base sale price or trade agreement sale price.</span></span> <span data-ttu-id="339f7-106">Menettely käyttää esittelytietojen USRT-yritystä.</span><span class="sxs-lookup"><span data-stu-id="339f7-106">This procedure uses the USRT demo data company.</span></span>
 
-1. Valitse Hinnoittelun ja alennusten hallinta.
-2. Valitse Hinnanoikaisut-välilehti.
-3. Valitse Uusi.
-    * Tässä voit luoda kaikki useimmiten käytetyt hintojen ja alennusten säännöt, kuten vähittäismyynnin alennukset, hinnanoikaisut, kauppasopimuksen kirjauskansiot ja luokan hinnoittelusäännöt.  
-4. Valitse Hinnanoikaisu.
-5. Kirjoita arvo Nimi-kenttään.
-6. Laajenna Rivit-osa.
-7. ValitseLisää.
-    * Syötä tässä esimerkissä Tuote-kenttään arvo 81126.    Syötä sitten Alennusprosentti-kenttään 10,0.  
-    * Alennusprosentti-tyyppinen hinnanoikaisu pienentää perusmyyntihintaa tai kauppasopimuksen myyntihintaa.  
-8. ValitseLisää.
-    * Anna tässä esimerkissä Tuote-kenttään arvo 81125.    Valitse sitten Alennustapa-kenttään Käteisalennussumma.    Syötä lopuksi Käteisalennussumma-kenttään 5,0.  
-    * Käteisalennussumman alennuksen tyyppi on summa, joka saadaan perushinnasta tai kauppasopimuksen hinnasta.  
-9. Valitse Hintaryhmät.
-    * Valitse Hintaryhmä-kenttään RP-Houston.  
-    * Tämä liittää hinnanoikaisun Houstonin myymälään.  
-10. Valitse Tallenna.
-11. Sulje sivu.
-12. Valitse Tila-kentässä Käytössä.
-13. Valitse Tallenna.
-14. Sulje sivu.
-15. Päivitä sivu.
+1. <span data-ttu-id="339f7-107">Valitse Hinnoittelun ja alennusten hallinta.</span><span class="sxs-lookup"><span data-stu-id="339f7-107">Click Pricing and discount management.</span></span>
+2. <span data-ttu-id="339f7-108">Valitse Hinnanoikaisut-välilehti.</span><span class="sxs-lookup"><span data-stu-id="339f7-108">Click the Price adjustments tab.</span></span>
+3. <span data-ttu-id="339f7-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="339f7-109">Click New.</span></span>
+    * <span data-ttu-id="339f7-110">Tässä voit luoda kaikki useimmiten käytetyt hintojen ja alennusten säännöt, kuten vähittäismyynnin alennukset, hinnanoikaisut, kauppasopimuksen kirjauskansiot ja luokan hinnoittelusäännöt.</span><span class="sxs-lookup"><span data-stu-id="339f7-110">From here you can create all of the most commonly used price and discount rules, including retail discounts, price adjustments, trade agreement journals, and category pricing rules.</span></span>  
+4. <span data-ttu-id="339f7-111">Valitse Hinnanoikaisu.</span><span class="sxs-lookup"><span data-stu-id="339f7-111">Click Price adjustment.</span></span>
+5. <span data-ttu-id="339f7-112">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="339f7-112">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="339f7-113">Laajenna Rivit-osa.</span><span class="sxs-lookup"><span data-stu-id="339f7-113">Expand the Lines section.</span></span>
+7. <span data-ttu-id="339f7-114">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="339f7-114">Click Add.</span></span>
+    * <span data-ttu-id="339f7-115">Syötä tässä esimerkissä Tuote-kenttään arvo 81126.</span><span class="sxs-lookup"><span data-stu-id="339f7-115">For this example, enter '81126' in the Product field.</span></span>    <span data-ttu-id="339f7-116">Syötä sitten Alennusprosentti-kenttään 10,0.</span><span class="sxs-lookup"><span data-stu-id="339f7-116">Then, enter '10.0' in the Discount percentage field.</span></span>  
+    * <span data-ttu-id="339f7-117">Alennusprosentti-tyyppinen hinnanoikaisu pienentää perusmyyntihintaa tai kauppasopimuksen myyntihintaa.</span><span class="sxs-lookup"><span data-stu-id="339f7-117">A discount percentage type price adjustment will reduce a base sales price or trade agreement sales price.</span></span>  
+8. <span data-ttu-id="339f7-118">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="339f7-118">Click Add.</span></span>
+    * <span data-ttu-id="339f7-119">Anna tässä esimerkissä Tuote-kenttään arvo 81125.</span><span class="sxs-lookup"><span data-stu-id="339f7-119">For this example, enter '81125' in the Product field.</span></span>    <span data-ttu-id="339f7-120">Valitse sitten Alennustapa-kenttään Käteisalennussumma.</span><span class="sxs-lookup"><span data-stu-id="339f7-120">Then, select 'Cash discount amount' in the Discount method field.</span></span>    <span data-ttu-id="339f7-121">Syötä lopuksi Käteisalennussumma-kenttään 5,0.</span><span class="sxs-lookup"><span data-stu-id="339f7-121">Finally, enter '5.0' in the Cash discount amount field.</span></span>  
+    * <span data-ttu-id="339f7-122">Käteisalennussumman alennuksen tyyppi on summa, joka saadaan perushinnasta tai kauppasopimuksen hinnasta.</span><span class="sxs-lookup"><span data-stu-id="339f7-122">A Cash discount amount discount type is an amount taken off from a base price or a trade agreement price.</span></span>  
+9. <span data-ttu-id="339f7-123">Valitse Hintaryhmät.</span><span class="sxs-lookup"><span data-stu-id="339f7-123">Click Price groups.</span></span>
+    * <span data-ttu-id="339f7-124">Valitse Hintaryhmä-kenttään RP-Houston.</span><span class="sxs-lookup"><span data-stu-id="339f7-124">Select 'RP-Houston' in the Price group field.</span></span>  
+    * <span data-ttu-id="339f7-125">Tämä liittää hinnanoikaisun Houstonin myymälään.</span><span class="sxs-lookup"><span data-stu-id="339f7-125">This will associate the Price adjustment to the Houston store.</span></span>  
+10. <span data-ttu-id="339f7-126">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="339f7-126">Click Save.</span></span>
+11. <span data-ttu-id="339f7-127">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="339f7-127">Close the page.</span></span>
+12. <span data-ttu-id="339f7-128">Valitse Tila-kentässä Käytössä.</span><span class="sxs-lookup"><span data-stu-id="339f7-128">In the Status field, select 'Enabled'.</span></span>
+13. <span data-ttu-id="339f7-129">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="339f7-129">Click Save.</span></span>
+14. <span data-ttu-id="339f7-130">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="339f7-130">Close the page.</span></span>
+15. <span data-ttu-id="339f7-131">Päivitä sivu.</span><span class="sxs-lookup"><span data-stu-id="339f7-131">Refresh the page.</span></span>
 
 

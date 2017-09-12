@@ -26,19 +26,19 @@ ms.lasthandoff: 07/31/2017
 
 ---
 
-# <a name="prevent-discounts-for-retail-products"></a>Vähittäismyyntituotteiden alennusten estäminen
+# <a name="prevent-discounts-for-retail-products"></a><span data-ttu-id="98bf1-103">Vähittäismyyntituotteiden alennusten estäminen</span><span class="sxs-lookup"><span data-stu-id="98bf1-103">Prevent discounts for retail products</span></span>
 
 [!include[banner](includes/banner.md)]
 
-Jälleenmyyjillä voi olla erilaisia syitä, miksi he haluavat estää joidenkin tuotteiden hintojen alentamisen joko kampanjan tai myyntipisteellä tapahtuvan myynnin aikana.
+<span data-ttu-id="98bf1-104">Jälleenmyyjillä voi olla erilaisia syitä, miksi he haluavat estää joidenkin tuotteiden hintojen alentamisen joko kampanjan tai myyntipisteellä tapahtuvan myynnin aikana.</span><span class="sxs-lookup"><span data-stu-id="98bf1-104">There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.</span></span>
 
-Seuraavat asetukset sijaitsevat vapautettujen tuotteiden **Vähittäismyynti**-välilehdissä, ja niiden avulla tuote voidaan määrittää estämään kaikki alennukset tai manuaaliset alennukset. Asetukset voidaan määrittää myös vähittäismyynnin luokkahierarkian luokkatasolla.
+<span data-ttu-id="98bf1-105">Seuraavat asetukset sijaitsevat vapautettujen tuotteiden **Vähittäismyynti**-välilehdissä, ja niiden avulla tuote voidaan määrittää estämään kaikki alennukset tai manuaaliset alennukset.</span><span class="sxs-lookup"><span data-stu-id="98bf1-105">The following options, which can be found on the **Retail** tab of released products, will allow the product to be configured to prevent all or manual discounts.</span></span> <span data-ttu-id="98bf1-106">Asetukset voidaan määrittää myös vähittäismyynnin luokkahierarkian luokkatasolla.</span><span class="sxs-lookup"><span data-stu-id="98bf1-106">The settings can also be specified at the category level from the retail category hierarchy.</span></span>
 
-**Estä kaikki alennukset**: Valitse tämä asetus, jos haluat estää kaikenlaisten alennusten käytön tässä tuotteessa. Esto koskee kampanjoita, kuten yhdistelmä- ja määräalennuksia sekä alennuksia rajan ylittyessä, samoin kuin manuaalisia rivi- ja tapahtuma-alennuksia, joita myyntipisteen käyttäjä käyttää myyntitapahtuman aikana.
+<span data-ttu-id="98bf1-107">**Estä kaikki alennukset**: Valitse tämä asetus, jos haluat estää kaikenlaisten alennusten käytön tässä tuotteessa.</span><span class="sxs-lookup"><span data-stu-id="98bf1-107">**Prevent all discounts**: Select this option to prevent all types of discounts from being applied to this product.</span></span> <span data-ttu-id="98bf1-108">Esto koskee kampanjoita, kuten yhdistelmä- ja määräalennuksia sekä alennuksia rajan ylittyessä, samoin kuin manuaalisia rivi- ja tapahtuma-alennuksia, joita myyntipisteen käyttäjä käyttää myyntitapahtuman aikana.</span><span class="sxs-lookup"><span data-stu-id="98bf1-108">This includes promotions such as mix and match, quantity and threshold discounts, as well as manual line and transaction discounts that are applied during a sale by a POS user.</span></span>
 
-**Estä manuaaliset alennukset**: Valitse tämä asetus, jos haluat estää vain manuaaliset rivi- tai tapahtuma-alennukset, joita myyntipisteen käyttäjä käyttää myyntitapahtuman aikana. Tuotteissa, joissa tämä asetus on valittu, voidaan edelleen käyttää kampanja-alennuksia, kuten yhdistelmä- ja määräalennuksia sekä alennuksia rajan ylittyessä.
+<span data-ttu-id="98bf1-109">**Estä manuaaliset alennukset**: Valitse tämä asetus, jos haluat estää vain manuaaliset rivi- tai tapahtuma-alennukset, joita myyntipisteen käyttäjä käyttää myyntitapahtuman aikana.</span><span class="sxs-lookup"><span data-stu-id="98bf1-109">**Prevent manual discounts**: Select this option to only prevent the manual line or transaction discounts that are applied during a sale by a POS user.</span></span> <span data-ttu-id="98bf1-110">Tuotteissa, joissa tämä asetus on valittu, voidaan edelleen käyttää kampanja-alennuksia, kuten yhdistelmä- ja määräalennuksia sekä alennuksia rajan ylittyessä.</span><span class="sxs-lookup"><span data-stu-id="98bf1-110">Products with this option selected are still eligible for promotions, such as mix and match and quantity and threshold discounts.</span></span>
 
-**Huomautus**: nämä asetukset eivät rajoita hinnan ohitustoimintoa, koska se määrittää perushinnan, jota ei pidetä alennuksena.  
+<span data-ttu-id="98bf1-111">**Huomautus**: nämä asetukset eivät rajoita hinnan ohitustoimintoa, koska se määrittää perushinnan, jota ei pidetä alennuksena.</span><span class="sxs-lookup"><span data-stu-id="98bf1-111">**Note**: These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.</span></span>  
 
 ![estä alennukset -kenttä](/media/prevent-discounts.png)
 

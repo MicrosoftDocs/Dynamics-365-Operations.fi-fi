@@ -18,54 +18,54 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
-ms.openlocfilehash: 108a4f4ce366d2efd66fc1ed27ffb6b23ff0e933
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0e1b3382bc244996231bfb20f6d65ef2d07aef3a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="mobile-invoice-approvals"></a>Mobiililaskujen hyväksynnät
+# <a name="mobile-invoice-approvals"></a><span data-ttu-id="c8344-103">Mobiililaskujen hyväksynnät</span><span class="sxs-lookup"><span data-stu-id="c8344-103">Mobile invoice approvals</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiilin käyttökokemuksen. Vaativimmissa skenaarioissa ympäristö sallii myös, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä mobiiliympäristössä on käydä läpi joitakin suunnittelutilanteita. Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi. Tämä ohjeaihe auttaa sinua suunnittelemaan tilanteen muita variaatioita ja sitä voidaan soveltaa myös muihin tilanteisiin, jotka eivät liity toimittajan laskuihin.
+<span data-ttu-id="c8344-104">Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiilin käyttökokemuksen.</span><span class="sxs-lookup"><span data-stu-id="c8344-104">Mobile capabilities in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition let a business user design mobile experiences.</span></span> <span data-ttu-id="c8344-105">Vaativimmissa skenaarioissa ympäristö sallii myös, että kehittäjät laajentavat ominaisuuksia kuin haluavat.</span><span class="sxs-lookup"><span data-stu-id="c8344-105">For advanced scenarios, the platform also lets developers extend the capabilities as they desire.</span></span> <span data-ttu-id="c8344-106">Tehokkain keino oppia joitakin uusia käsitteitä mobiiliympäristössä on käydä läpi joitakin suunnittelutilanteita.</span><span class="sxs-lookup"><span data-stu-id="c8344-106">The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios.</span></span> <span data-ttu-id="c8344-107">Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi.</span><span class="sxs-lookup"><span data-stu-id="c8344-107">This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case.</span></span> <span data-ttu-id="c8344-108">Tämä ohjeaihe auttaa sinua suunnittelemaan tilanteen muita variaatioita ja sitä voidaan soveltaa myös muihin tilanteisiin, jotka eivät liity toimittajan laskuihin.</span><span class="sxs-lookup"><span data-stu-id="c8344-108">This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.</span></span>
 
-<a name="prerequisites"></a>Edellytykset
+<a name="prerequisites"></a><span data-ttu-id="c8344-109">Edellytykset</span><span class="sxs-lookup"><span data-stu-id="c8344-109">Prerequisites</span></span>
 -------------
 
-| Edellytys                                                                                            | kuvaus                                                                                                                                                          |
+| <span data-ttu-id="c8344-110">Edellytys</span><span class="sxs-lookup"><span data-stu-id="c8344-110">Prerequisite</span></span>                                                                                            | <span data-ttu-id="c8344-111">kuvaus</span><span class="sxs-lookup"><span data-stu-id="c8344-111">Description</span></span>                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobiilikäsikirja esitiedoiksi                                                                                |[Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
-| Dynamics 365 for Finance and Operations                                                                             | Ympäristö, johon on asennettu Microsoft Dynamics 365 for Operations -versio 1611 sekä Microsoft Dynamics for Operations ympäristöpäivitys 3 (Marraskuu 2016)                   |
-| Asenna hotfix-korjaus KB 3204341.                                                                              | Tehtävän tallennus voit virheellisesti tallentaa kaksi avattavan luettelon Sulje-komentoa. Tämä sisältyy Dynamics 365 for Operationsin ympäristöpäivitykseen 3 (marraskuun 2016 päivitys) |
-| Asenna hotfix-korjaus KB 3207800.                                                                              | Tämän päivityksen avulla liitteitä voi tarkastella mobiiliasiakkaassa. Tämä sisältyy Dynamics 365 for Operationsin ympäristöpäivitykseen 3 (marraskuun 2016 päivitys)           |
-| Asenna hotfix-korjaus KB 3208224.                                                                              | Sovelluskoodi toimittajan laskujen hyväksynnän mobiilisovellukselle. Tämä sisältyy Microsoft Dynamics AX -sovellukseen 7.0.1 (May 2016).                          |
-| Android-, iOS- tai Windows-laite, jossa on asennettuna Finance and Operationsin mobiilisovellus | Etsi sovellus omasta sovelluskaupastasi.                                                                                                                     |
+| <span data-ttu-id="c8344-112">Mobiilikäsikirja esitiedoiksi</span><span class="sxs-lookup"><span data-stu-id="c8344-112">Mobile handbook pre-read</span></span>                                                                                |[<span data-ttu-id="c8344-113">Mobiiliympäristö</span><span class="sxs-lookup"><span data-stu-id="c8344-113">Mobile platform</span></span>](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
+| <span data-ttu-id="c8344-114">Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="c8344-114">Dynamics 365 for Finance and Operations</span></span>                                                                             | <span data-ttu-id="c8344-115">Ympäristö, johon on asennettu Microsoft Dynamics 365 for Operations -versio 1611 sekä Microsoft Dynamics for Operations ympäristöpäivitys 3 (Marraskuu 2016)</span><span class="sxs-lookup"><span data-stu-id="c8344-115">An environment that has Microsoft Dynamics 365 for Operations version 1611 and Microsoft Dynamics for Operations platform update 3 (November 2016)</span></span>                   |
+| <span data-ttu-id="c8344-116">Asenna hotfix-korjaus KB 3204341.</span><span class="sxs-lookup"><span data-stu-id="c8344-116">Install hotfix KB 3204341.</span></span>                                                                              | <span data-ttu-id="c8344-117">Tehtävän tallennus voit virheellisesti tallentaa kaksi avattavan luettelon Sulje-komentoa. Tämä sisältyy Dynamics 365 for Operationsin ympäristöpäivitykseen 3 (marraskuun 2016 päivitys)</span><span class="sxs-lookup"><span data-stu-id="c8344-117">Task recorder can erroneously record two Close commands for dropdown dialogs this is included in Dynamics 365 for Operation platform update 3 (November 2016 update)</span></span> |
+| <span data-ttu-id="c8344-118">Asenna hotfix-korjaus KB 3207800.</span><span class="sxs-lookup"><span data-stu-id="c8344-118">Install hotfix KB 3207800.</span></span>                                                                              | <span data-ttu-id="c8344-119">Tämän päivityksen avulla liitteitä voi tarkastella mobiiliasiakkaassa. Tämä sisältyy Dynamics 365 for Operationsin ympäristöpäivitykseen 3 (marraskuun 2016 päivitys)</span><span class="sxs-lookup"><span data-stu-id="c8344-119">This hotfix enables attachments to be viewed on the mobile client this is included in Dynamics 365 for Operation platform update 3 (November 2016 update).</span></span>           |
+| <span data-ttu-id="c8344-120">Asenna hotfix-korjaus KB 3208224.</span><span class="sxs-lookup"><span data-stu-id="c8344-120">Install hotfix KB 3208224.</span></span>                                                                              | <span data-ttu-id="c8344-121">Sovelluskoodi toimittajan laskujen hyväksynnän mobiilisovellukselle. Tämä sisältyy Microsoft Dynamics AX -sovellukseen 7.0.1 (May 2016).</span><span class="sxs-lookup"><span data-stu-id="c8344-121">Application code for the mobile vendor invoice approval application this is included in Microsoft Dynamics AX application 7.0.1 (May 2016).</span></span>                          |
+| <span data-ttu-id="c8344-122">Android-, iOS- tai Windows-laite, jossa on asennettuna Finance and Operationsin mobiilisovellus</span><span class="sxs-lookup"><span data-stu-id="c8344-122">An Android or iOS or a Windows device that has the mobile app installed for Finance and Operations</span></span> | <span data-ttu-id="c8344-123">Etsi sovellus omasta sovelluskaupastasi.</span><span class="sxs-lookup"><span data-stu-id="c8344-123">Search for the app in the appropriate app store.</span></span>                                                                                                                     |
 
-## <a name="introduction"></a>Johdanto
-Toimittajalaskujen mobiilihyväksyntä vaatii nämä kolme hotfix-korjausta, jotka on mainittu "Edellytykset"-osassa. Nämä hotfix-korjaukset eivät tarjoa työtilaa laskujen hyväksyntään. Perustiedot työtiloista mobiiliympäristössä on mobiilikäsikirjassa, joka mainitaan "Edellytykset"-osassa. Laskun hyväksynnän työtila on suunniteltava. 
+## <a name="introduction"></a><span data-ttu-id="c8344-124">Johdanto</span><span class="sxs-lookup"><span data-stu-id="c8344-124">Introduction</span></span>
+<span data-ttu-id="c8344-125">Toimittajalaskujen mobiilihyväksyntä vaatii nämä kolme hotfix-korjausta, jotka on mainittu "Edellytykset"-osassa.</span><span class="sxs-lookup"><span data-stu-id="c8344-125">Mobile approvals for vendor invoices require the three hotfixes that are mentioned in the “Prerequisites” section.</span></span> <span data-ttu-id="c8344-126">Nämä hotfix-korjaukset eivät tarjoa työtilaa laskujen hyväksyntään.</span><span class="sxs-lookup"><span data-stu-id="c8344-126">These hotfixes don’t provide a workspace for the invoice approvals.</span></span> <span data-ttu-id="c8344-127">Perustiedot työtiloista mobiiliympäristössä on mobiilikäsikirjassa, joka mainitaan "Edellytykset"-osassa.</span><span class="sxs-lookup"><span data-stu-id="c8344-127">To learn what a workspace is in the context of mobile, read the mobile handbook that is mentioned in the “Prerequisites” section.</span></span> <span data-ttu-id="c8344-128">Laskun hyväksynnän työtila on suunniteltava.</span><span class="sxs-lookup"><span data-stu-id="c8344-128">The invoice approvals workspace must be designed.</span></span> 
 
-Jokainen organisaatio määrittää oman toimittajan laskujen liiketoimintaprosessinsa eri tavalla. Ennen kuin suunnittelet toimittajan laskujen hyväksynnän mobiilikäyttöliittymän, sinun kannattaa harkita seuraavia näkökohtia liiketoimintaprosesseista. Ajatuksena on käyttää näitä tietopisteitä mahdollisimman paljon laitteen käyttäjäkokemuksen parantamiseksi.
+<span data-ttu-id="c8344-129">Jokainen organisaatio määrittää oman toimittajan laskujen liiketoimintaprosessinsa eri tavalla.</span><span class="sxs-lookup"><span data-stu-id="c8344-129">Every organization orchestrates and defines its business process for vendor invoices differently.</span></span> <span data-ttu-id="c8344-130">Ennen kuin suunnittelet toimittajan laskujen hyväksynnän mobiilikäyttöliittymän, sinun kannattaa harkita seuraavia näkökohtia liiketoimintaprosesseista.</span><span class="sxs-lookup"><span data-stu-id="c8344-130">Before you design a mobile experience for vendor invoice approvals, you should consider the following aspects of the business process.</span></span> <span data-ttu-id="c8344-131">Ajatuksena on käyttää näitä tietopisteitä mahdollisimman paljon laitteen käyttäjäkokemuksen parantamiseksi.</span><span class="sxs-lookup"><span data-stu-id="c8344-131">The idea is to use these data points as much as possible to optimize the user experience on the device.</span></span>
 
--   Mitkä laskun otsikon kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?
--   Mitkä laskurivien kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?
--   Kuinka monta laskuriviä yhdessä laskussa on? Käytä tässä 80-20-sääntö ja optimoi tärkeimmät 80 prosenttia.
--   Haluavatko käyttäjät tarkastella mobiililaitteessa kirjanpidollisia jakoja (laskujen koodausta) tarkistusten aikana? Jos vastaus tähän kysymykseen on kyllä, harkitse seuraavia kysymyksiä:
-    -   Kuinka monta kirjanpidollista jakoa (laajennettua hintaa, arvonlisäveroa, kulua, jakoa jne.) on yhdellä laskurivillä? Käytä uudelleen 80-20-sääntöä.
-    -   Onko laskuissa myös kirjanpidolliset jaot laskuotsikossa? Jos näin on, ovatko nämä kirjanpidolliset jaot on käytettävissä laitteessa?
+-   <span data-ttu-id="c8344-132">Mitkä laskun otsikon kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</span><span class="sxs-lookup"><span data-stu-id="c8344-132">What fields from the invoice header will the user want to see in the mobile experience, and in what order?</span></span>
+-   <span data-ttu-id="c8344-133">Mitkä laskurivien kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</span><span class="sxs-lookup"><span data-stu-id="c8344-133">What fields from the invoice lines will the user want to see in the mobile experience, and in what order?</span></span>
+-   <span data-ttu-id="c8344-134">Kuinka monta laskuriviä yhdessä laskussa on?</span><span class="sxs-lookup"><span data-stu-id="c8344-134">How many invoice lines are there in an invoice?</span></span> <span data-ttu-id="c8344-135">Käytä tässä 80-20-sääntö ja optimoi tärkeimmät 80 prosenttia.</span><span class="sxs-lookup"><span data-stu-id="c8344-135">Apply the 80-20 rule here, and optimize for the 80 percent.</span></span>
+-   <span data-ttu-id="c8344-136">Haluavatko käyttäjät tarkastella mobiililaitteessa kirjanpidollisia jakoja (laskujen koodausta) tarkistusten aikana?</span><span class="sxs-lookup"><span data-stu-id="c8344-136">Will users want to see accounting distributions (invoice coding) on the mobile device during reviews?</span></span> <span data-ttu-id="c8344-137">Jos vastaus tähän kysymykseen on kyllä, harkitse seuraavia kysymyksiä:</span><span class="sxs-lookup"><span data-stu-id="c8344-137">If the answer to this question is yes, consider the following questions:</span></span>
+    -   <span data-ttu-id="c8344-138">Kuinka monta kirjanpidollista jakoa (laajennettua hintaa, arvonlisäveroa, kulua, jakoa jne.) on yhdellä laskurivillä?</span><span class="sxs-lookup"><span data-stu-id="c8344-138">How many accounting distributions (extended price, sales tax, charges, splits, and so on) are there for an invoice line?</span></span> <span data-ttu-id="c8344-139">Käytä uudelleen 80-20-sääntöä.</span><span class="sxs-lookup"><span data-stu-id="c8344-139">Again, apply the 80-20 rule.</span></span>
+    -   <span data-ttu-id="c8344-140">Onko laskuissa myös kirjanpidolliset jaot laskuotsikossa?</span><span class="sxs-lookup"><span data-stu-id="c8344-140">Do the invoices also have accounting distributions on the invoice header?</span></span> <span data-ttu-id="c8344-141">Jos näin on, ovatko nämä kirjanpidolliset jaot on käytettävissä laitteessa?</span><span class="sxs-lookup"><span data-stu-id="c8344-141">If so, should these accounting distributions be available on the device?</span></span>
 
 > [!NOTE]
-> Tässä ohjeaiheessa ei kerrota, kuinka muokkaa kirjanpidon jakoja, koska tätä toimintoa ei tueta tällä hetkellä mobiiliskenaarioissa.
+> <span data-ttu-id="c8344-142">Tässä ohjeaiheessa ei kerrota, kuinka muokkaa kirjanpidon jakoja, koska tätä toimintoa ei tueta tällä hetkellä mobiiliskenaarioissa.</span><span class="sxs-lookup"><span data-stu-id="c8344-142">This topic doesn’t explain how to edit accounting distributions, because this functionality isn’t currently supported for mobile scenarios.</span></span>
 
--   Haluavatko käyttäjät nähdä laskun liitteet laitteella?
+-   <span data-ttu-id="c8344-143">Haluavatko käyttäjät nähdä laskun liitteet laitteella?</span><span class="sxs-lookup"><span data-stu-id="c8344-143">Will users want to see attachments for the invoice on the device?</span></span>
 
-Laskun hyväksyntöjen mobiilikokemuksen rakenne vaihtelee riippuen vastauksista näihin kysymyksiin. Tavoitteena on optimoida organisaation liiketoimintaprosessin mobiilikäyttökokemus. Aiheen loppuosassa tarkastelemme kahta skenaarion versiota, jotka perustuvat eri vastauksiin edellisiin kysymyksiin. 
+<span data-ttu-id="c8344-144">Laskun hyväksyntöjen mobiilikokemuksen rakenne vaihtelee riippuen vastauksista näihin kysymyksiin.</span><span class="sxs-lookup"><span data-stu-id="c8344-144">The design of the mobile experience for invoice approvals will differ, depending on the answers to these questions.</span></span> <span data-ttu-id="c8344-145">Tavoitteena on optimoida organisaation liiketoimintaprosessin mobiilikäyttökokemus.</span><span class="sxs-lookup"><span data-stu-id="c8344-145">The objective is to optimize the user experience for the business process on mobile in an organization.</span></span> <span data-ttu-id="c8344-146">Aiheen loppuosassa tarkastelemme kahta skenaarion versiota, jotka perustuvat eri vastauksiin edellisiin kysymyksiin.</span><span class="sxs-lookup"><span data-stu-id="c8344-146">In the rest of this topic, we will look at two scenario variations that are based on different answers to the preceding questions.</span></span> 
 
-Yleisenä ohjeena voi sanoa, että kun työskentelet mobiilisuunnittelijan kanssa, muista julkaista muutokset, jotta päivityksiä ei menetettäisi.
+<span data-ttu-id="c8344-147">Yleisenä ohjeena voi sanoa, että kun työskentelet mobiilisuunnittelijan kanssa, muista julkaista muutokset, jotta päivityksiä ei menetettäisi.</span><span class="sxs-lookup"><span data-stu-id="c8344-147">As a general guidance, when working with the mobile designer, make sure to 'publish' the changes to prevent losing the updates.</span></span>
 
-## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a>Yksinkertaisen laskun hyväksynnän skenaarion suunnitteleminen Contosolle
+## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a><span data-ttu-id="c8344-148">Yksinkertaisen laskun hyväksynnän skenaarion suunnitteleminen Contosolle</span><span class="sxs-lookup"><span data-stu-id="c8344-148">Designing a simple invoice approval scenario for Contoso</span></span>
 <table>
 <colgroup>
 <col width="50%" />
@@ -73,162 +73,162 @@ Yleisenä ohjeena voi sanoa, että kun työskentelet mobiilisuunnittelijan kanss
 </colgroup>
 <thead>
 <tr class="header">
-<th>Skenaarion määrite</th>
-<th>Vastaus</th>
+<th><span data-ttu-id="c8344-149">Skenaarion määrite</span><span class="sxs-lookup"><span data-stu-id="c8344-149">Scenario attribute</span></span></th>
+<th><span data-ttu-id="c8344-150">Vastaus</span><span class="sxs-lookup"><span data-stu-id="c8344-150">Answer</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Mitkä laskun otsikon kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</td>
+<td><span data-ttu-id="c8344-151">Mitkä laskun otsikon kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</span><span class="sxs-lookup"><span data-stu-id="c8344-151">What fields from the invoice header will the user want to see in the mobile experience, and in what order?</span></span></td>
 <td><ol>
-<li>Toimittajan nimi</li>
-<li>Laskun kokonaissumma</li>
-<li>Laskutusasiakasnumero</li>
-<li>Laskun numero</li>
-<li>Laskun päivämäärä</li>
-<li>Laskun kuvaus</li>
-<li>Eräpäivä</li>
-<li>Laskutusvaluutta</li>
+<li><span data-ttu-id="c8344-152">Toimittajan nimi</span><span class="sxs-lookup"><span data-stu-id="c8344-152">Vendor name</span></span></li>
+<li><span data-ttu-id="c8344-153">Laskun kokonaissumma</span><span class="sxs-lookup"><span data-stu-id="c8344-153">Invoice total</span></span></li>
+<li><span data-ttu-id="c8344-154">Laskutusasiakasnumero</span><span class="sxs-lookup"><span data-stu-id="c8344-154">Invoice account</span></span></li>
+<li><span data-ttu-id="c8344-155">Laskun numero</span><span class="sxs-lookup"><span data-stu-id="c8344-155">Invoice number</span></span></li>
+<li><span data-ttu-id="c8344-156">Laskun päivämäärä</span><span class="sxs-lookup"><span data-stu-id="c8344-156">Invoice date</span></span></li>
+<li><span data-ttu-id="c8344-157">Laskun kuvaus</span><span class="sxs-lookup"><span data-stu-id="c8344-157">Invoice description</span></span></li>
+<li><span data-ttu-id="c8344-158">Eräpäivä</span><span class="sxs-lookup"><span data-stu-id="c8344-158">Due date</span></span></li>
+<li><span data-ttu-id="c8344-159">Laskutusvaluutta</span><span class="sxs-lookup"><span data-stu-id="c8344-159">Invoice currency</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Mitkä laskurivien kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</td>
+<td><span data-ttu-id="c8344-160">Mitkä laskurivien kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</span><span class="sxs-lookup"><span data-stu-id="c8344-160">What fields from the invoice lines will the user want to see in the mobile experience, and in what order?</span></span></td>
 <td><ol>
-<li>Hankintaluokka</li>
-<li>Määrä</li>
-<li>Yksikköhinta</li>
-<li>Rivin nettosumma</li>
-<li>Valmisteveron määrä</li>
+<li><span data-ttu-id="c8344-161">Hankintaluokka</span><span class="sxs-lookup"><span data-stu-id="c8344-161">Procurement category</span></span></li>
+<li><span data-ttu-id="c8344-162">Määrä</span><span class="sxs-lookup"><span data-stu-id="c8344-162">Quantity</span></span></li>
+<li><span data-ttu-id="c8344-163">Yksikköhinta</span><span class="sxs-lookup"><span data-stu-id="c8344-163">Unit price</span></span></li>
+<li><span data-ttu-id="c8344-164">Rivin nettosumma</span><span class="sxs-lookup"><span data-stu-id="c8344-164">Line net amount</span></span></li>
+<li><span data-ttu-id="c8344-165">Valmisteveron määrä</span><span class="sxs-lookup"><span data-stu-id="c8344-165">1099 amount</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Kuinka monta laskuriviä yhdessä laskussa on? Käytä tässä 80-20-sääntö ja optimoi tärkeimmät 80 prosenttia.</td>
-<td>1</td>
+<td><span data-ttu-id="c8344-166">Kuinka monta laskuriviä yhdessä laskussa on?</span><span class="sxs-lookup"><span data-stu-id="c8344-166">How many invoice lines are there in an invoice?</span></span> <span data-ttu-id="c8344-167">Käytä tässä 80-20-sääntö ja optimoi tärkeimmät 80 prosenttia.</span><span class="sxs-lookup"><span data-stu-id="c8344-167">Apply the 80-20 rule here, and optimize for the 80 percent.</span></span></td>
+<td><span data-ttu-id="c8344-168">1</span><span class="sxs-lookup"><span data-stu-id="c8344-168">1</span></span></td>
 </tr>
 <tr class="even">
-<td>Haluavatko käyttäjät tarkastella mobiililaitteessa kirjanpidollisia jakoja (laskujen koodausta) tarkistusten aikana?</td>
-<td>Kyllä</td>
+<td><span data-ttu-id="c8344-169">Haluavatko käyttäjät tarkastella mobiililaitteessa kirjanpidollisia jakoja (laskujen koodausta) tarkistusten aikana?</span><span class="sxs-lookup"><span data-stu-id="c8344-169">Will users want to see accounting distributions (invoice coding) on the mobile device during reviews?</span></span></td>
+<td><span data-ttu-id="c8344-170">Kyllä</span><span class="sxs-lookup"><span data-stu-id="c8344-170">Yes</span></span></td>
 </tr>
 <tr class="odd">
-<td>Kuinka monta kirjanpidollista jakoa (laajennettua hintaa, arvonlisäveroa, kulua jne.) on yhdellä laskurivillä? Käytä uudelleen 80-20-sääntöä.</td>
-<td>Laajennettu hinta: 2 ALV: 0 Kulut: 0</td>
+<td><span data-ttu-id="c8344-171">Kuinka monta kirjanpidollista jakoa (laajennettua hintaa, arvonlisäveroa, kulua jne.) on yhdellä laskurivillä?</span><span class="sxs-lookup"><span data-stu-id="c8344-171">How many accounting distributions (extended price, sales tax, charges, and so on) are there for an invoice line?</span></span> <span data-ttu-id="c8344-172">Käytä uudelleen 80-20-sääntöä.</span><span class="sxs-lookup"><span data-stu-id="c8344-172">Again, apply the 80-20 rule.</span></span></td>
+<td><span data-ttu-id="c8344-173">Laajennettu hinta: 2 ALV: 0 Kulut: 0</span><span class="sxs-lookup"><span data-stu-id="c8344-173">Extended price: 2 Sales tax: 0 Charges: 0</span></span></td>
 </tr>
 <tr class="even">
-<td>Onko laskuissa myös kirjanpidolliset jaot laskuotsikossa? Jos näin on, ovatko nämä kirjanpidolliset jaot on käytettävissä laitteessa?</td>
-<td>Ei käytössä</td>
+<td><span data-ttu-id="c8344-174">Onko laskuissa myös kirjanpidolliset jaot laskuotsikossa?</span><span class="sxs-lookup"><span data-stu-id="c8344-174">Do the invoices also have accounting distributions on the invoice header?</span></span> <span data-ttu-id="c8344-175">Jos näin on, ovatko nämä kirjanpidolliset jaot on käytettävissä laitteessa?</span><span class="sxs-lookup"><span data-stu-id="c8344-175">If so, should these accounting distributions be available on the device?</span></span></td>
+<td><span data-ttu-id="c8344-176">Ei käytössä</span><span class="sxs-lookup"><span data-stu-id="c8344-176">Not used</span></span></td>
 </tr>
 <tr class="odd">
-<td>Haluavatko käyttäjät nähdä laskun liitteet laitteella?</td>
-<td>Kyllä</td>
+<td><span data-ttu-id="c8344-177">Haluavatko käyttäjät nähdä laskun liitteet laitteella?</span><span class="sxs-lookup"><span data-stu-id="c8344-177">Will users want to see attachments for the invoice on the device?</span></span></td>
+<td><span data-ttu-id="c8344-178">Kyllä</span><span class="sxs-lookup"><span data-stu-id="c8344-178">Yes</span></span></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="create-the-workspace"></a>Luo työtila
+### <a name="create-the-workspace"></a><span data-ttu-id="c8344-179">Luo työtila</span><span class="sxs-lookup"><span data-stu-id="c8344-179">Create the workspace</span></span>
 
-1.  Avaa selaimessa Finance and Operations ja kirjaudu sisään.
-2.  Kun olet kirjautunut sisään, lisää **&mode=mobile** URL-osoitteeseen (kuten seuraavassa esimerkissä) ja päivitä sivu: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
-3.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**. Mobiilisovelluksen suunnitteluohjelma pitäisi tulla näkyviin samoin kuin tehtävän tallennustoiminto.
-4.  Luo uusi työtila napsauttamalla **Lisää**. Kirjoita tässä esimerkissä työtilan nimeksi **Omat hyväksynnät**.
-5.  Anna kuvaus.
-6.  Valitse työtilan väri. Työtilan väriä käytetään tämän työtilan yleisenä tyylinä mobiilikokemuksessa.
-7.  Valitse työtilan kuvake.
-8.  Valitse **Valmis**
-9.  Tallenna muutokset valitsemalla **Julkaise työtila**
+1.  <span data-ttu-id="c8344-180">Avaa selaimessa Finance and Operations ja kirjaudu sisään.</span><span class="sxs-lookup"><span data-stu-id="c8344-180">In a browser, open Finance and Operations, and sign in.</span></span>
+2.  <span data-ttu-id="c8344-181">Kun olet kirjautunut sisään, lisää **&mode=mobile** URL-osoitteeseen (kuten seuraavassa esimerkissä) ja päivitä sivu: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**</span><span class="sxs-lookup"><span data-stu-id="c8344-181">After you’ve signed in, append **&mode=mobile** to the URL as shown in the following example, and refresh the page: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**</span></span>
+3.  <span data-ttu-id="c8344-182">Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.</span><span class="sxs-lookup"><span data-stu-id="c8344-182">Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**.</span></span> <span data-ttu-id="c8344-183">Mobiilisovelluksen suunnitteluohjelma pitäisi tulla näkyviin samoin kuin tehtävän tallennustoiminto.</span><span class="sxs-lookup"><span data-stu-id="c8344-183">The mobile app designer must show up just as Task recorder shows up.</span></span>
+4.  <span data-ttu-id="c8344-184">Luo uusi työtila napsauttamalla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="c8344-184">Click **Add** to create a new workspace.</span></span> <span data-ttu-id="c8344-185">Kirjoita tässä esimerkissä työtilan nimeksi **Omat hyväksynnät**.</span><span class="sxs-lookup"><span data-stu-id="c8344-185">For this example, name the workspace **My approvals**.</span></span>
+5.  <span data-ttu-id="c8344-186">Anna kuvaus.</span><span class="sxs-lookup"><span data-stu-id="c8344-186">Enter a description.</span></span>
+6.  <span data-ttu-id="c8344-187">Valitse työtilan väri.</span><span class="sxs-lookup"><span data-stu-id="c8344-187">Select a workspace color.</span></span> <span data-ttu-id="c8344-188">Työtilan väriä käytetään tämän työtilan yleisenä tyylinä mobiilikokemuksessa.</span><span class="sxs-lookup"><span data-stu-id="c8344-188">The workspace color will be used for the overall style of the mobile experience for this workspace.</span></span>
+7.  <span data-ttu-id="c8344-189">Valitse työtilan kuvake.</span><span class="sxs-lookup"><span data-stu-id="c8344-189">Select an icon for the workspace.</span></span>
+8.  <span data-ttu-id="c8344-190">Valitse **Valmis**</span><span class="sxs-lookup"><span data-stu-id="c8344-190">Click **Done**</span></span>
+9.  <span data-ttu-id="c8344-191">Tallenna muutokset valitsemalla **Julkaise työtila**</span><span class="sxs-lookup"><span data-stu-id="c8344-191">Click **Publish workspace** to save the changes</span></span>
 
-### <a name="vendor-invoices-assigned-to-me"></a>Minulle määritetyt toimittajien laskut
+### <a name="vendor-invoices-assigned-to-me"></a><span data-ttu-id="c8344-192">Minulle määritetyt toimittajien laskut</span><span class="sxs-lookup"><span data-stu-id="c8344-192">Vendor invoices assigned to me</span></span>
 
-Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka on määritetty käyttäjälle tarkistettavaksi. Voit suunnitella tämän mobiilisivun Finance and Operationsin **VendMobileInvoiceAssignedToMeListPage**-sivulla. Ennen kuin suoritat nämä toimet, varmista, että vähintään yksi toimittajalasku on määritetty itsellesi tarkistettavaksi, ja että laskurivillä on kaksi jakoa. Tämä määritys täyttää tämän skenaarion vaatimukset.
+<span data-ttu-id="c8344-193">Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka on määritetty käyttäjälle tarkistettavaksi.</span><span class="sxs-lookup"><span data-stu-id="c8344-193">The first mobile page that you should design is the list of invoices that are assigned to the user for review.</span></span> <span data-ttu-id="c8344-194">Voit suunnitella tämän mobiilisivun Finance and Operationsin **VendMobileInvoiceAssignedToMeListPage**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="c8344-194">To design this mobile page, use the **VendMobileInvoiceAssignedToMeListPage** page in Finance and Operations.</span></span> <span data-ttu-id="c8344-195">Ennen kuin suoritat nämä toimet, varmista, että vähintään yksi toimittajalasku on määritetty itsellesi tarkistettavaksi, ja että laskurivillä on kaksi jakoa.</span><span class="sxs-lookup"><span data-stu-id="c8344-195">Before you complete this procedure, make sure that at least one vendor invoice is assigned to you for review, and that the invoice line has two distributions.</span></span> <span data-ttu-id="c8344-196">Tämä määritys täyttää tämän skenaarion vaatimukset.</span><span class="sxs-lookup"><span data-stu-id="c8344-196">This setup meets the requirements for this scenario.</span></span>
 
-1.  Korvaa Finance and Operationsin URL-osoitteessa valikkovaihtoehdon nimi merkkijonolla **VendMobileInvoiceAssignedToMeListPage**, jos haluat avata **Minulle määritetyt odottavat toimittajan laskut** -luettelosivun mobiiliversion **Ostoreskontra**-moduulissa. Tässä sivussa näkyvät ne laskut, jotka on järjestelmässä liitetty sinulle. Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tarvitset vain jonkin sinulle määritetyn laskun, jonka avulla voit suunnitella mobiilisivun. Käytettävissä olevat uudet sivut on suunniteltu erityisesti kehittämään mobiiliskenaarioita toimittajalaskuille. Siksi sinun on käytettävä näitä sivuja. URL-osoitteen pitäisi olla samantyyppinen seuraavan osoitteen kanssa, ja siihen siirryttyäsi sinun pitäisi nähdä oheisen kuvan mukainen sivu: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
-2.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
-3.  Valitse työtila ja sitten **Muokkaa**
-4.  Valitse **Lisää sivu** luodaksesi ensimmäisen mobiilisivun.
-5.  Kirjoita nimi, kuten **Omat toimittajalaskut** sekä kuvaus, kuten **Minulle tarkistettavaksi määritetyt toimittajalaskut**.
-6.  Valitse **Valmis**.
-7.  Valitse mobiilisivujen suunnitteluohjelmassa **Kentät**-välilehdessä **Valitse kentät**. Luettelosivun sarakkeiden tulisi olla likipitäen kuin seuraavassa kuvassa. [![Sarakkeet Minulle määritetyt odottavat toimittajan laskut -sivulla](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
-8.  Lisää tarvittavat sarakkeet luettelosivulta, joka on näytettävä käyttäjille mobiilisivulla. Kentät näytetään loppukäyttäjille lisäämisjärjestyksessä. Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen. Tämän skenaarion vaatimusten mukaan seuraavat kahdeksan kenttää ovat pakollisia. Joidenkin käyttäjien mielestä kahdeksan kenttää mobiililaitteessa saattaa kuitenkin olla liikaa. Siksi näytämme vain tärkeimmät kentät mobiilissa luettelonäkymässä. Muut kentät näkyvät tietonäkymässä, jonka suunnittelemme myöhemmin. Nyt lisäämme seuraavat kentät. Napsauta plus-merkkiä (**+**) sarakkeissa lisätäksesi ne mobiilisivulle.
-    - Toimittajan nimi
-    - Laskun kokonaissumma
-    - Laskutusasiakasnumero
-    - Laskun numero
-    - Laskun päivämäärä
+1.  <span data-ttu-id="c8344-197">Korvaa Finance and Operationsin URL-osoitteessa valikkovaihtoehdon nimi merkkijonolla **VendMobileInvoiceAssignedToMeListPage**, jos haluat avata **Minulle määritetyt odottavat toimittajan laskut** -luettelosivun mobiiliversion **Ostoreskontra**-moduulissa.</span><span class="sxs-lookup"><span data-stu-id="c8344-197">In the Finance and Operations URL, replace the name of the menu item with **VendMobileInvoiceAssignedToMeListPage** to open the mobile version of the **Pending vendor invoices assigned to me** list page in the **Accounts payable** module.</span></span> <span data-ttu-id="c8344-198">Tässä sivussa näkyvät ne laskut, jotka on järjestelmässä liitetty sinulle.</span><span class="sxs-lookup"><span data-stu-id="c8344-198">Depending on the number of invoices that you have in your system assigned to you, this page will show those invoices.</span></span> <span data-ttu-id="c8344-199">Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella.</span><span class="sxs-lookup"><span data-stu-id="c8344-199">To find a specific invoice, you can use the filter on the left.</span></span> <span data-ttu-id="c8344-200">Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua.</span><span class="sxs-lookup"><span data-stu-id="c8344-200">However, we don’t require a specific invoice for this example.</span></span> <span data-ttu-id="c8344-201">Tarvitset vain jonkin sinulle määritetyn laskun, jonka avulla voit suunnitella mobiilisivun.</span><span class="sxs-lookup"><span data-stu-id="c8344-201">We just require some invoice assigned to you which is going to allow you to design the mobile page.</span></span> <span data-ttu-id="c8344-202">Käytettävissä olevat uudet sivut on suunniteltu erityisesti kehittämään mobiiliskenaarioita toimittajalaskuille.</span><span class="sxs-lookup"><span data-stu-id="c8344-202">The new pages that are available have been designed specifically for developing mobile scenarios for vendor invoice.</span></span> <span data-ttu-id="c8344-203">Siksi sinun on käytettävä näitä sivuja.</span><span class="sxs-lookup"><span data-stu-id="c8344-203">Therefore, you must use these pages.</span></span> <span data-ttu-id="c8344-204">URL-osoitteen pitäisi olla samantyyppinen seuraavan osoitteen kanssa, ja siihen siirryttyäsi sinun pitäisi nähdä oheisen kuvan mukainen sivu: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)</span><span class="sxs-lookup"><span data-stu-id="c8344-204">The URL should resemble the following URL, and after you enter it, the page that is shown in the illustration must appear: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)</span></span>
+2.  <span data-ttu-id="c8344-205">Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.</span><span class="sxs-lookup"><span data-stu-id="c8344-205">Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**</span></span>
+3.  <span data-ttu-id="c8344-206">Valitse työtila ja sitten **Muokkaa**</span><span class="sxs-lookup"><span data-stu-id="c8344-206">Select your workspace and click **Edit**</span></span>
+4.  <span data-ttu-id="c8344-207">Valitse **Lisää sivu** luodaksesi ensimmäisen mobiilisivun.</span><span class="sxs-lookup"><span data-stu-id="c8344-207">Click **Add page** to create the first mobile page.</span></span>
+5.  <span data-ttu-id="c8344-208">Kirjoita nimi, kuten **Omat toimittajalaskut** sekä kuvaus, kuten **Minulle tarkistettavaksi määritetyt toimittajalaskut**.</span><span class="sxs-lookup"><span data-stu-id="c8344-208">Enter a name, such as **My vendor invoices**, and a description, such as **Vendor invoices assigned to me for review**.</span></span>
+6.  <span data-ttu-id="c8344-209">Valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="c8344-209">Click **Done**.</span></span>
+7.  <span data-ttu-id="c8344-210">Valitse mobiilisivujen suunnitteluohjelmassa **Kentät**-välilehdessä **Valitse kentät**.</span><span class="sxs-lookup"><span data-stu-id="c8344-210">In the mobile designer, on the **Fields** tab, click **Select fields**.</span></span> <span data-ttu-id="c8344-211">Luettelosivun sarakkeiden tulisi olla likipitäen kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="c8344-211">The columns on the list page must resemble the following illustration.</span></span> <span data-ttu-id="c8344-212">[![Sarakkeet Minulle määritetyt odottavat toimittajan laskut -sivulla](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)</span><span class="sxs-lookup"><span data-stu-id="c8344-212">[![Columns on the Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)</span></span>
+8.  <span data-ttu-id="c8344-213">Lisää tarvittavat sarakkeet luettelosivulta, joka on näytettävä käyttäjille mobiilisivulla.</span><span class="sxs-lookup"><span data-stu-id="c8344-213">Add the required columns from the list page that must be shown to the users in the mobile page.</span></span> <span data-ttu-id="c8344-214">Kentät näytetään loppukäyttäjille lisäämisjärjestyksessä.</span><span class="sxs-lookup"><span data-stu-id="c8344-214">The order in which you add is the order in which the fields will be displayed to the end user.</span></span> <span data-ttu-id="c8344-215">Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen.</span><span class="sxs-lookup"><span data-stu-id="c8344-215">The only way to change the ordering of the fields will be by re-selecting all the fields.</span></span> <span data-ttu-id="c8344-216">Tämän skenaarion vaatimusten mukaan seuraavat kahdeksan kenttää ovat pakollisia.</span><span class="sxs-lookup"><span data-stu-id="c8344-216">Based on the requirements for this scenario, the following eight fields are required.</span></span> <span data-ttu-id="c8344-217">Joidenkin käyttäjien mielestä kahdeksan kenttää mobiililaitteessa saattaa kuitenkin olla liikaa.</span><span class="sxs-lookup"><span data-stu-id="c8344-217">However, some users might consider eight fields too much information to have on a mobile device.</span></span> <span data-ttu-id="c8344-218">Siksi näytämme vain tärkeimmät kentät mobiilissa luettelonäkymässä.</span><span class="sxs-lookup"><span data-stu-id="c8344-218">Therefore, we will show only the most important fields in the mobile list view.</span></span> <span data-ttu-id="c8344-219">Muut kentät näkyvät tietonäkymässä, jonka suunnittelemme myöhemmin.</span><span class="sxs-lookup"><span data-stu-id="c8344-219">The remaining fields will appear in the details view that we will design later.</span></span> <span data-ttu-id="c8344-220">Nyt lisäämme seuraavat kentät.</span><span class="sxs-lookup"><span data-stu-id="c8344-220">For now, we will add the following fields.</span></span> <span data-ttu-id="c8344-221">Napsauta plus-merkkiä (**+**) sarakkeissa lisätäksesi ne mobiilisivulle.</span><span class="sxs-lookup"><span data-stu-id="c8344-221">Click the plus sign (**+**) in these columns to add to the mobile page.</span></span>
+    - <span data-ttu-id="c8344-222">Toimittajan nimi</span><span class="sxs-lookup"><span data-stu-id="c8344-222">Vendor name</span></span>
+    - <span data-ttu-id="c8344-223">Laskun kokonaissumma</span><span class="sxs-lookup"><span data-stu-id="c8344-223">Invoice total</span></span>
+    - <span data-ttu-id="c8344-224">Laskutusasiakasnumero</span><span class="sxs-lookup"><span data-stu-id="c8344-224">Invoice account</span></span>
+    - <span data-ttu-id="c8344-225">Laskun numero</span><span class="sxs-lookup"><span data-stu-id="c8344-225">Invoice number</span></span>
+    - <span data-ttu-id="c8344-226">Laskun päivämäärä</span><span class="sxs-lookup"><span data-stu-id="c8344-226">Invoice date</span></span>
 
-    Kun kentät on lisätty, mobiilisivun pitäisi muistuttaa seuraavaa kuvaa. 
-    [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
-9.  On myös lisättävä seuraavat sarakkeet nyt, että voimme ottaa työnkulkutoimintoja myöhemmin käyttöön.
-    - Näytä Suorita-tehtävä
-    - Näytä Delegoi-tehtävä
-    - Näytä Peruuta-tehtävä
-    - Näytä Hylkää-tehtävä
-    - Näytä Pyydä suoritusta -tehtävä
-    - Näytä Lähetä uudelleen -tehtävä
+    <span data-ttu-id="c8344-227">Kun kentät on lisätty, mobiilisivun pitäisi muistuttaa seuraavaa kuvaa.</span><span class="sxs-lookup"><span data-stu-id="c8344-227">After the fields are added, the mobile page must resemble the following illustration.</span></span> 
+    <span data-ttu-id="c8344-228">[![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)</span><span class="sxs-lookup"><span data-stu-id="c8344-228">[![Page after fields are added](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)</span></span>
+9.  <span data-ttu-id="c8344-229">On myös lisättävä seuraavat sarakkeet nyt, että voimme ottaa työnkulkutoimintoja myöhemmin käyttöön.</span><span class="sxs-lookup"><span data-stu-id="c8344-229">You must also add the following columns now, so that we can enable workflow actions later.</span></span>
+    - <span data-ttu-id="c8344-230">Näytä Suorita-tehtävä</span><span class="sxs-lookup"><span data-stu-id="c8344-230">Show complete task</span></span>
+    - <span data-ttu-id="c8344-231">Näytä Delegoi-tehtävä</span><span class="sxs-lookup"><span data-stu-id="c8344-231">Show delegate task</span></span>
+    - <span data-ttu-id="c8344-232">Näytä Peruuta-tehtävä</span><span class="sxs-lookup"><span data-stu-id="c8344-232">Show recall task</span></span>
+    - <span data-ttu-id="c8344-233">Näytä Hylkää-tehtävä</span><span class="sxs-lookup"><span data-stu-id="c8344-233">Show reject task</span></span>
+    - <span data-ttu-id="c8344-234">Näytä Pyydä suoritusta -tehtävä</span><span class="sxs-lookup"><span data-stu-id="c8344-234">Show request completion task</span></span>
+    - <span data-ttu-id="c8344-235">Näytä Lähetä uudelleen -tehtävä</span><span class="sxs-lookup"><span data-stu-id="c8344-235">Show resubmit task</span></span>
 
-10. Valitse **Valmis** poistuaksesi muokkaustilasta.
-11. Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
-12. Tallenna muutokset valitsemalla **Julkaise työtila**.
-13. Ota käyttöön **Näytä laskun loppusumma odottavien toimittajalaskujen luettelossa** Ostoreskontran parametrit -lomakkeessa kohdassa **Lasku**. Huomaa, että ainoastaan ottamalla käyttöön tämän parametrin laskun kokonaissumma lasketaan näytettäväksi odottavien toimittajan laskujen luettelosivulla. Tämä on uusi ominaisuus, joka kuuluu vaadittuun hotfix-korjaukseen 3208224.
+10. <span data-ttu-id="c8344-236">Valitse **Valmis** poistuaksesi muokkaustilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-236">Click **Done** to exit edit mode.</span></span>
+11. <span data-ttu-id="c8344-237">Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-237">Click **Back** and then **Done** to exit the workspace</span></span>
+12. <span data-ttu-id="c8344-238">Tallenna muutokset valitsemalla **Julkaise työtila**.</span><span class="sxs-lookup"><span data-stu-id="c8344-238">Click **Publish workspace** to save your work.</span></span>
+13. <span data-ttu-id="c8344-239">Ota käyttöön **Näytä laskun loppusumma odottavien toimittajalaskujen luettelossa** Ostoreskontran parametrit -lomakkeessa kohdassa **Lasku**.</span><span class="sxs-lookup"><span data-stu-id="c8344-239">Enable **Display invoice total on pending vendor invoices list** in accounts payable parameters form under **Invoice**.</span></span> <span data-ttu-id="c8344-240">Huomaa, että ainoastaan ottamalla käyttöön tämän parametrin laskun kokonaissumma lasketaan näytettäväksi odottavien toimittajan laskujen luettelosivulla.</span><span class="sxs-lookup"><span data-stu-id="c8344-240">Note that, only by enabling this parameter, invoice totals will be calculated to be displayed on the pending vendor invoices list page.</span></span> <span data-ttu-id="c8344-241">Tämä on uusi ominaisuus, joka kuuluu vaadittuun hotfix-korjaukseen 3208224.</span><span class="sxs-lookup"><span data-stu-id="c8344-241">This is a new capability as part of the pre-requisite hot fix 3208224.</span></span>
 
-### <a name="vendor-invoice-details"></a>Toimittajan laskun tiedot
+### <a name="vendor-invoice-details"></a><span data-ttu-id="c8344-242">Toimittajan laskun tiedot</span><span class="sxs-lookup"><span data-stu-id="c8344-242">Vendor invoice details</span></span>
 
-Voit suunnitella laskun tietojen sivun käyttämällä Finance and Operationsin **VendMobileInvoiceHeaderDetails**-sivua. Huomaa, että riippuen järjestelmässäsi olevien laskujen määrästä tällä sivulla näytetään vanhin lasku (lasku, joka on luotu ensin). Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tässä tarvitaan vain jotkin laskutiedot, että voimme suunnitella mobiilisivun. [![Työnkulku-sivu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+<span data-ttu-id="c8344-243">Voit suunnitella laskun tietojen sivun käyttämällä Finance and Operationsin **VendMobileInvoiceHeaderDetails**-sivua.</span><span class="sxs-lookup"><span data-stu-id="c8344-243">To design the invoice details page for mobile, use the **VendMobileInvoiceHeaderDetails** page in Finance and Operations.</span></span> <span data-ttu-id="c8344-244">Huomaa, että riippuen järjestelmässäsi olevien laskujen määrästä tällä sivulla näytetään vanhin lasku (lasku, joka on luotu ensin).</span><span class="sxs-lookup"><span data-stu-id="c8344-244">Note that, depending on the number of invoices that you have in your system, this page shows the oldest invoice (the invoice that was created first).</span></span> <span data-ttu-id="c8344-245">Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella.</span><span class="sxs-lookup"><span data-stu-id="c8344-245">To find a specific invoice, you can use the filter on the left.</span></span> <span data-ttu-id="c8344-246">Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua.</span><span class="sxs-lookup"><span data-stu-id="c8344-246">However, we don’t require a specific invoice for this example.</span></span> <span data-ttu-id="c8344-247">Tässä tarvitaan vain jotkin laskutiedot, että voimme suunnitella mobiilisivun.</span><span class="sxs-lookup"><span data-stu-id="c8344-247">We just require some invoice data so that we can design the mobile page.</span></span> <span data-ttu-id="c8344-248">[![Työnkulku-sivu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)</span><span class="sxs-lookup"><span data-stu-id="c8344-248">[![Workflow page](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)</span></span>
 
-1.  Korvaa Finance and Operationsin URL-osoitteessa valikkovaihtoehto nimi merkkijonolla **VendMobileInvoiceHeaderDetails**, jos haluat avata lomakkeen
-2.  Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.
-3.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
-4.  Valitse **Omat toimittajalaskut** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.
-5.  Valitse **Kentät** -välilehdessä sarakkeen otsikko **Ruudukko**.
-6.  Valitse **Ominaisuudet** &gt; **Lisää sivu**. **Huomautus:** Kun valitset **Ruudukko**-otsikon ja lisäät sivun, yhteys tietosivuun muodostetaan automaattisesti.
-7.  Kirjoita sivun otsikko, esimerkiksi **Laskun tiedot** ja kuvaus, kuten **Näytä laskun otsikko ja rivitiedot**.
-8.  Klikkaa **Valitse kentät**. Huomaa, että kentät näytetään loppukäyttäjille lisäämisjärjestyksessä. Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen. 
-9.  Lisää seuraavat kentät otsikosta tämän skenaarion vaatimusten mukaan:
-    - Toimittajan nimi
-    - Laskun kokonaissumma
-    - Laskutusasiakasnumero
-    - Laskun numero
-    - Laskun päivämäärä
-    - Laskun kuvaus
-    - Eräpäivä
-    - Laskutusvaluutta
+1.  <span data-ttu-id="c8344-249">Korvaa Finance and Operationsin URL-osoitteessa valikkovaihtoehto nimi merkkijonolla **VendMobileInvoiceHeaderDetails**, jos haluat avata lomakkeen</span><span class="sxs-lookup"><span data-stu-id="c8344-249">In the Finance and Operations URL, replace the name of the menu item with **VendMobileInvoiceHeaderDetails** to open the form</span></span>
+2.  <span data-ttu-id="c8344-250">Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.</span><span class="sxs-lookup"><span data-stu-id="c8344-250">Open the mobile designer from the **Settings** (gear) button.</span></span>
+3.  <span data-ttu-id="c8344-251">Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.</span><span class="sxs-lookup"><span data-stu-id="c8344-251">Click the **Edit** button to start edit mode in the workspace.</span></span>
+4.  <span data-ttu-id="c8344-252">Valitse **Omat toimittajalaskut** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="c8344-252">Select the **My vendor invoices **page that you created earlier, and then click **Edit**.</span></span>
+5.  <span data-ttu-id="c8344-253">Valitse **Kentät** -välilehdessä sarakkeen otsikko **Ruudukko**.</span><span class="sxs-lookup"><span data-stu-id="c8344-253">On the **Fields** tab, click the **Grid** column heading.</span></span>
+6.  <span data-ttu-id="c8344-254">Valitse **Ominaisuudet** &gt; **Lisää sivu**.</span><span class="sxs-lookup"><span data-stu-id="c8344-254">Click **Properties** &gt; **Add page**.</span></span> <span data-ttu-id="c8344-255">**Huomautus:** Kun valitset **Ruudukko**-otsikon ja lisäät sivun, yhteys tietosivuun muodostetaan automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="c8344-255">**Note:** When you click the **Grid** heading and add a page, the relationship with the details page is established automatically.</span></span>
+7.  <span data-ttu-id="c8344-256">Kirjoita sivun otsikko, esimerkiksi **Laskun tiedot** ja kuvaus, kuten **Näytä laskun otsikko ja rivitiedot**.</span><span class="sxs-lookup"><span data-stu-id="c8344-256">Enter a page title, such as **Invoice details**, and a description, such as **View invoice header and line details**.</span></span>
+8.  <span data-ttu-id="c8344-257">Klikkaa **Valitse kentät**.</span><span class="sxs-lookup"><span data-stu-id="c8344-257">Click **Select fields**.</span></span> <span data-ttu-id="c8344-258">Huomaa, että kentät näytetään loppukäyttäjille lisäämisjärjestyksessä.</span><span class="sxs-lookup"><span data-stu-id="c8344-258">Note that, the order in which you add is the order in which the fields will be displayed to the end user.</span></span> <span data-ttu-id="c8344-259">Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen.</span><span class="sxs-lookup"><span data-stu-id="c8344-259">The only way to change the ordering of the fields will be by re-selecting all the fields.</span></span> 
+9.  <span data-ttu-id="c8344-260">Lisää seuraavat kentät otsikosta tämän skenaarion vaatimusten mukaan:</span><span class="sxs-lookup"><span data-stu-id="c8344-260">Add the following fields from the header, based on the requirements for this scenario:</span></span>
+    - <span data-ttu-id="c8344-261">Toimittajan nimi</span><span class="sxs-lookup"><span data-stu-id="c8344-261">Vendor name</span></span>
+    - <span data-ttu-id="c8344-262">Laskun kokonaissumma</span><span class="sxs-lookup"><span data-stu-id="c8344-262">Invoice total</span></span>
+    - <span data-ttu-id="c8344-263">Laskutusasiakasnumero</span><span class="sxs-lookup"><span data-stu-id="c8344-263">Invoice account</span></span>
+    - <span data-ttu-id="c8344-264">Laskun numero</span><span class="sxs-lookup"><span data-stu-id="c8344-264">Invoice number</span></span>
+    - <span data-ttu-id="c8344-265">Laskun päivämäärä</span><span class="sxs-lookup"><span data-stu-id="c8344-265">Invoice date</span></span>
+    - <span data-ttu-id="c8344-266">Laskun kuvaus</span><span class="sxs-lookup"><span data-stu-id="c8344-266">Invoice description</span></span>
+    - <span data-ttu-id="c8344-267">Eräpäivä</span><span class="sxs-lookup"><span data-stu-id="c8344-267">Due date</span></span>
+    - <span data-ttu-id="c8344-268">Laskutusvaluutta</span><span class="sxs-lookup"><span data-stu-id="c8344-268">Invoice currency</span></span>
 
-10. Lisää seuraavat kentät sivun riviruudukosta:
-    - Hankintaluokka
-    - Määrä
-    - Yksikköhinta
-    - Rivin nettosumma
-    - Valmisteveron määrä
+10. <span data-ttu-id="c8344-269">Lisää seuraavat kentät sivun riviruudukosta:</span><span class="sxs-lookup"><span data-stu-id="c8344-269">Add the following fields from the lines grid on the page:</span></span>
+    - <span data-ttu-id="c8344-270">Hankintaluokka</span><span class="sxs-lookup"><span data-stu-id="c8344-270">Procurement category</span></span>
+    - <span data-ttu-id="c8344-271">Määrä</span><span class="sxs-lookup"><span data-stu-id="c8344-271">Quantity</span></span>
+    - <span data-ttu-id="c8344-272">Yksikköhinta</span><span class="sxs-lookup"><span data-stu-id="c8344-272">Unit price</span></span>
+    - <span data-ttu-id="c8344-273">Rivin nettosumma</span><span class="sxs-lookup"><span data-stu-id="c8344-273">Line net amount</span></span>
+    - <span data-ttu-id="c8344-274">Valmisteveron määrä</span><span class="sxs-lookup"><span data-stu-id="c8344-274">1099 amount</span></span>
 
-11. Kun kaikki edellisten kahden vaiheen kentät on lisätty, valitse **Valmis**. Sivun tulisi olla likipitäen kuin seuraavassa kuvassa.
-[![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
-12. Valitse **Valmis** poistuaksesi muokkaustilasta.
-13. Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
-14. Tallenna muutokset valitsemalla **Julkaise työtila**.
+11. <span data-ttu-id="c8344-275">Kun kaikki edellisten kahden vaiheen kentät on lisätty, valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="c8344-275">After all the fields from the previous two steps have been added, click **Done**.</span></span> <span data-ttu-id="c8344-276">Sivun tulisi olla likipitäen kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="c8344-276">The page must resemble the following illustration.</span></span>
+<span data-ttu-id="c8344-277">[![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)</span><span class="sxs-lookup"><span data-stu-id="c8344-277">[![Page after fields are added](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)</span></span>
+12. <span data-ttu-id="c8344-278">Valitse **Valmis** poistuaksesi muokkaustilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-278">Click **Done** to exit edit mode.</span></span>
+13. <span data-ttu-id="c8344-279">Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-279">Click **Back** and then **Done** to exit the workspace</span></span>
+14. <span data-ttu-id="c8344-280">Tallenna muutokset valitsemalla **Julkaise työtila**.</span><span class="sxs-lookup"><span data-stu-id="c8344-280">Click **Publish workspace** to save your work</span></span>
 
-### <a name="workflow-actions"></a>Työnkulkutehtävät
+### <a name="workflow-actions"></a><span data-ttu-id="c8344-281">Työnkulkutehtävät</span><span class="sxs-lookup"><span data-stu-id="c8344-281">Workflow actions</span></span>
 
-Voit lisätä työnkulkutoimintoja Finance and Operationsin **VendMobileInvoiceHeaderDetails**-sivulla. Jos haluat avata tämän sivun, korvaa valikkovaihtoehdon nimi URL-osoitteessa, kuten teit aikaisemmin. Avaa sitten mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta. Toimi seuraavien vaiheiden mukaisesti lisätäksesi työnkulkutoimintoja tietosivulle. Sinulle on oltava määritettynä sopivassa tilassa olevia laskuja, joiden avulla pääset työnkulkutoimintoihin.
+<span data-ttu-id="c8344-282">Voit lisätä työnkulkutoimintoja Finance and Operationsin **VendMobileInvoiceHeaderDetails**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="c8344-282">To add workflow actions, use the **VendMobileInvoiceHeaderDetails** page in Finance and Operations.</span></span> <span data-ttu-id="c8344-283">Jos haluat avata tämän sivun, korvaa valikkovaihtoehdon nimi URL-osoitteessa, kuten teit aikaisemmin.</span><span class="sxs-lookup"><span data-stu-id="c8344-283">To open this page, replace the name of the menu item in the URL, as you did earlier.</span></span> <span data-ttu-id="c8344-284">Avaa sitten mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.</span><span class="sxs-lookup"><span data-stu-id="c8344-284">Then open the mobile designer from the **Settings** (gear) button.</span></span> <span data-ttu-id="c8344-285">Toimi seuraavien vaiheiden mukaisesti lisätäksesi työnkulkutoimintoja tietosivulle.</span><span class="sxs-lookup"><span data-stu-id="c8344-285">Follow these steps to add workflow actions on the details page.</span></span> <span data-ttu-id="c8344-286">Sinulle on oltava määritettynä sopivassa tilassa olevia laskuja, joiden avulla pääset työnkulkutoimintoihin.</span><span class="sxs-lookup"><span data-stu-id="c8344-286">You must have invoices assigned to you that are in the appropriate state to make the workflow actions available to you that you are going to design for.</span></span>
 
-#### <a name="record-workflow-actions"></a>Työnkulkutoimintojen tallentaminen
-1.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
-2.  Valitse **Laskun tiedot** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.
-3.  Valitse **Toiminnot**-välilehdessä **Lisää toiminto**.
-4.  Kirjoita toiminnon otsikko, esimerkiksi **Hyväksy** ja kuvaus, kuten **Hyväksy lasku**. Huomaa, että tässä antamasi otsikko näkyy loppukäyttäjille toiminnon nimenä mobiilisovelluksessa.
-5.  Valitse **Valmis**.
-6.  Klikkaa **Valitse kentät**.
-7.  Siirry työnkulkuprosessin kautta **VendMobileInvoiceHeaderDetails**-sivulle ja suorita toiminto, jonka haluat tallentaa. Varmista, että kirjoitat työnkulun kommentit tämän prosessin aikana, jotta kommenttikenttä sisältyy myös mobiilikokemukseen.
-8.  Kun työnkulkutoiminto on suoritettu, valitse **Valmis** viimeistelläksesi Valitse kentät -tehtävän.
-9.  Valitse **Valmis** poistuaksesi muokkaustilasta.
-10. Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
-11. Tallenna muutokset valitsemalla **Julkaise työtila**.
-12. Tallenna kaikki tarvittavat työnkulkutoiminnot toistamalla edelliset vaiheet. 
+#### <a name="record-workflow-actions"></a><span data-ttu-id="c8344-287">Työnkulkutoimintojen tallentaminen</span><span class="sxs-lookup"><span data-stu-id="c8344-287">Record workflow actions</span></span>
+1.  <span data-ttu-id="c8344-288">Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.</span><span class="sxs-lookup"><span data-stu-id="c8344-288">Click the **Edit** button to start edit mode in the workspace.</span></span>
+2.  <span data-ttu-id="c8344-289">Valitse **Laskun tiedot** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="c8344-289">Select the **Invoice details** page that you created earlier, and then click **Edit**.</span></span>
+3.  <span data-ttu-id="c8344-290">Valitse **Toiminnot**-välilehdessä **Lisää toiminto**.</span><span class="sxs-lookup"><span data-stu-id="c8344-290">On the **Actions** tab, click **Add action**.</span></span>
+4.  <span data-ttu-id="c8344-291">Kirjoita toiminnon otsikko, esimerkiksi **Hyväksy** ja kuvaus, kuten **Hyväksy lasku**.</span><span class="sxs-lookup"><span data-stu-id="c8344-291">Enter an action title, such as **Approve**, and a description, such as **Approve invoice**.</span></span> <span data-ttu-id="c8344-292">Huomaa, että tässä antamasi otsikko näkyy loppukäyttäjille toiminnon nimenä mobiilisovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="c8344-292">Note that the action title that you enter here becomes the name of the action that is shown to the user in the mobile app.</span></span>
+5.  <span data-ttu-id="c8344-293">Valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="c8344-293">Click **Done**.</span></span>
+6.  <span data-ttu-id="c8344-294">Klikkaa **Valitse kentät**.</span><span class="sxs-lookup"><span data-stu-id="c8344-294">Click **Select fields**.</span></span>
+7.  <span data-ttu-id="c8344-295">Siirry työnkulkuprosessin kautta **VendMobileInvoiceHeaderDetails**-sivulle ja suorita toiminto, jonka haluat tallentaa.</span><span class="sxs-lookup"><span data-stu-id="c8344-295">Go through the workflow process on the **VendMobileInvoiceHeaderDetails** page, and complete the action that you wanted to record.</span></span> <span data-ttu-id="c8344-296">Varmista, että kirjoitat työnkulun kommentit tämän prosessin aikana, jotta kommenttikenttä sisältyy myös mobiilikokemukseen.</span><span class="sxs-lookup"><span data-stu-id="c8344-296">Make sure that you enter workflow comments during this process, so that a comments field is also included in the mobile experience.</span></span>
+8.  <span data-ttu-id="c8344-297">Kun työnkulkutoiminto on suoritettu, valitse **Valmis** viimeistelläksesi Valitse kentät -tehtävän.</span><span class="sxs-lookup"><span data-stu-id="c8344-297">After the workflow action is run, click **Done** to complete the Select fields task.</span></span>
+9.  <span data-ttu-id="c8344-298">Valitse **Valmis** poistuaksesi muokkaustilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-298">Click **Done** to exit edit mode.</span></span>
+10. <span data-ttu-id="c8344-299">Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-299">Click **Back** and then **Done** to exit the workspace</span></span>
+11. <span data-ttu-id="c8344-300">Tallenna muutokset valitsemalla **Julkaise työtila**.</span><span class="sxs-lookup"><span data-stu-id="c8344-300">Click **Publish workspace** to save your work</span></span>
+12. <span data-ttu-id="c8344-301">Tallenna kaikki tarvittavat työnkulkutoiminnot toistamalla edelliset vaiheet.</span><span class="sxs-lookup"><span data-stu-id="c8344-301">Repeat the previous steps to record all the required workflow actions.</span></span> 
 
-#### <a name="create-a-js-file"></a>.js-tiedoston luominen
-1. Avaa Muistio tai Microsoft Visual Studio ja liitä seuraava koodi. Tallenna tiedosto .js-tiedostona. Koodilla voidaan suorittaa seuraavia toimintoja:
-    - Se piilottaa ylimääräiset työnkulkuun liittyvät sarakkeet, jotka on lisätty aiemmin mobiililuettelosivulla. Lisäsimme nämä sarakkeet, jotta sovelluksella on nämä tiedot oikeassa asiayhteydessä, jotta se voi suorittaa seuraavan vaiheen.
-    - Aktiiviseen työnkulun vaiheen perusteella se käyttää logiikkaa, joka näyttää vain kyseiset toiminnot.
+#### <a name="create-a-js-file"></a><span data-ttu-id="c8344-302">.js-tiedoston luominen</span><span class="sxs-lookup"><span data-stu-id="c8344-302">Create a .js file</span></span>
+1. <span data-ttu-id="c8344-303">Avaa Muistio tai Microsoft Visual Studio ja liitä seuraava koodi.</span><span class="sxs-lookup"><span data-stu-id="c8344-303">Open Notepad or Microsoft Visual Studio, and paste the following code.</span></span> <span data-ttu-id="c8344-304">Tallenna tiedosto .js-tiedostona.</span><span class="sxs-lookup"><span data-stu-id="c8344-304">Save the file as a .js file.</span></span> <span data-ttu-id="c8344-305">Koodilla voidaan suorittaa seuraavia toimintoja:</span><span class="sxs-lookup"><span data-stu-id="c8344-305">This code does the following:</span></span>
+    - <span data-ttu-id="c8344-306">Se piilottaa ylimääräiset työnkulkuun liittyvät sarakkeet, jotka on lisätty aiemmin mobiililuettelosivulla.</span><span class="sxs-lookup"><span data-stu-id="c8344-306">It hides the extra workflow-related columns that we added earlier on the mobile list page.</span></span> <span data-ttu-id="c8344-307">Lisäsimme nämä sarakkeet, jotta sovelluksella on nämä tiedot oikeassa asiayhteydessä, jotta se voi suorittaa seuraavan vaiheen.</span><span class="sxs-lookup"><span data-stu-id="c8344-307">We added these columns so that the app has that information in context and can do the next step.</span></span>
+    - <span data-ttu-id="c8344-308">Aktiiviseen työnkulun vaiheen perusteella se käyttää logiikkaa, joka näyttää vain kyseiset toiminnot.</span><span class="sxs-lookup"><span data-stu-id="c8344-308">Based on the workflow step that is active, it applies logic to show only those actions.</span></span>
 
 > [!NOTE]
-> Sivujen ja muiden ohjausobjektien nimet on oltava koodissa samat kuin työtilan nimet.
+> <span data-ttu-id="c8344-309">Sivujen ja muiden ohjausobjektien nimet on oltava koodissa samat kuin työtilan nimet.</span><span class="sxs-lookup"><span data-stu-id="c8344-309">The name of the pages and other controls in the code must be the same as the names in the workspace.</span></span>
 
     function main(metadataService, dataService, cacheService, $q) {
            return {
@@ -289,56 +289,56 @@ Voit lisätä työnkulkutoimintoja Finance and Operationsin **VendMobileInvoiceH
            };
         }
 
-2.  Lataa kooditiedoston työtilaan valitsemalla **Logiikka**-välilehti
-3.  Valitse **Valmis** poistuaksesi muokkaustilasta.
-4.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
-5.  Tallenna muutokset valitsemalla **Julkaise työtila**.
+2.  <span data-ttu-id="c8344-310">Lataa kooditiedoston työtilaan valitsemalla **Logiikka**-välilehti</span><span class="sxs-lookup"><span data-stu-id="c8344-310">Upload the code file to the workspace by selecting the **Logic** tab</span></span>
+3.  <span data-ttu-id="c8344-311">Valitse **Valmis** poistuaksesi muokkaustilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-311">Click **Done** to exit edit mode.</span></span>
+4.  <span data-ttu-id="c8344-312">Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-312">Click **Back** and then **Done** to exit the workspace</span></span>
+5.  <span data-ttu-id="c8344-313">Tallenna muutokset valitsemalla **Julkaise työtila**.</span><span class="sxs-lookup"><span data-stu-id="c8344-313">Click **Publish workspace** to save your work</span></span>
 
-### <a name="vendor-invoice-attachments"></a>Toimittajalaskujen liitteet
+### <a name="vendor-invoice-attachments"></a><span data-ttu-id="c8344-314">Toimittajalaskujen liitteet</span><span class="sxs-lookup"><span data-stu-id="c8344-314">Vendor invoice attachments</span></span>
 
-1.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
-2.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
-3.  Valitse **Laskun tiedot** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.
-4.  Määritä **Tiedostojen hallinta** -asetukseksi **Kyllä** alla olevan esimerkin mukaisesti. **Huomautus:** Jos ei ole liitteitä ei ole tarpeen näyttää mobiililaitteessa, voit jättää tämän vaihtoehdon arvoksi **Ei**, joka on oletusasetus.
-![Tiedoston hallinta](./media/docmanagement-216x300.png)
-6.  Valitse **Valmis** poistuaksesi muokkaustilasta.
-7.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
-8.  Tallenna muutokset valitsemalla **Julkaise työtila**.
+1.  <span data-ttu-id="c8344-315">Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.</span><span class="sxs-lookup"><span data-stu-id="c8344-315">Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**</span></span>
+2.  <span data-ttu-id="c8344-316">Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.</span><span class="sxs-lookup"><span data-stu-id="c8344-316">Click the **Edit** button to start edit mode in the workspace.</span></span>
+3.  <span data-ttu-id="c8344-317">Valitse **Laskun tiedot** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="c8344-317">Select the **Invoice details **page that you created earlier, and then click **Edit**.</span></span>
+4.  <span data-ttu-id="c8344-318">Määritä **Tiedostojen hallinta** -asetukseksi **Kyllä** alla olevan esimerkin mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="c8344-318">Set the **Document management** option to **Yes** as shown below.</span></span> <span data-ttu-id="c8344-319">**Huomautus:** Jos ei ole liitteitä ei ole tarpeen näyttää mobiililaitteessa, voit jättää tämän vaihtoehdon arvoksi **Ei**, joka on oletusasetus.</span><span class="sxs-lookup"><span data-stu-id="c8344-319">**Note:** If there are no requirements to show attachments on the mobile device, you can leave this option set to **No**, which is the default setting.</span></span>
+<span data-ttu-id="c8344-320">![Tiedoston hallinta](./media/docmanagement-216x300.png)</span><span class="sxs-lookup"><span data-stu-id="c8344-320">![Document management](./media/docmanagement-216x300.png)</span></span>
+6.  <span data-ttu-id="c8344-321">Valitse **Valmis** poistuaksesi muokkaustilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-321">Click **Done** to exit edit mode.</span></span>
+7.  <span data-ttu-id="c8344-322">Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-322">Click **Back** and then **Done** to exit the workspace</span></span>
+8.  <span data-ttu-id="c8344-323">Tallenna muutokset valitsemalla **Julkaise työtila**.</span><span class="sxs-lookup"><span data-stu-id="c8344-323">Click **Publish workspace** to save your work</span></span>
 
-### <a name="vendor-invoice-line-distributions"></a>Toimittajan laskujen rivijaot
+### <a name="vendor-invoice-line-distributions"></a><span data-ttu-id="c8344-324">Toimittajan laskujen rivijaot</span><span class="sxs-lookup"><span data-stu-id="c8344-324">Vendor invoice line distributions</span></span>
 
-Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot ja että laskulla on aina vain yksi rivi. Koska tämä skenaario on yksinkertainen, mobiililaitteen käyttökokemuksenkin täytyy olla yksinkertainen, jotta käyttäjän ei tarvitse porautua alaspäin useita tasoja nähdäkseen jaot. Finance and Operationsin toimittajan laskuihin sisältyy mahdollisuus näyttää kaikki jaot laskun otsikosta. Tämän kokemuksen tarvitsemme mobiiliskenaariossa. Tämän vuoksi käytämme **VendMobileInvoiceAllDistributionTree**-sivua suunnittellaksemme mobiiliskenaarion tämän osan. 
+<span data-ttu-id="c8344-325">Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot ja että laskulla on aina vain yksi rivi.</span><span class="sxs-lookup"><span data-stu-id="c8344-325">The requirements for this scenario confirm that there will be only line-level distributions, and that an invoice will always have only one line.</span></span> <span data-ttu-id="c8344-326">Koska tämä skenaario on yksinkertainen, mobiililaitteen käyttökokemuksenkin täytyy olla yksinkertainen, jotta käyttäjän ei tarvitse porautua alaspäin useita tasoja nähdäkseen jaot.</span><span class="sxs-lookup"><span data-stu-id="c8344-326">Because this scenario is simple, the user experience on the mobile device must also be simple enough that the user doesn’t have to drill down several levels to view the distributions.</span></span> <span data-ttu-id="c8344-327">Finance and Operationsin toimittajan laskuihin sisältyy mahdollisuus näyttää kaikki jaot laskun otsikosta.</span><span class="sxs-lookup"><span data-stu-id="c8344-327">Vendor invoices in Finance and Operations include the option of showing all distributions from the invoice header.</span></span> <span data-ttu-id="c8344-328">Tämän kokemuksen tarvitsemme mobiiliskenaariossa.</span><span class="sxs-lookup"><span data-stu-id="c8344-328">This experience is what we need for the mobile scenario.</span></span> <span data-ttu-id="c8344-329">Tämän vuoksi käytämme **VendMobileInvoiceAllDistributionTree**-sivua suunnittellaksemme mobiiliskenaarion tämän osan.</span><span class="sxs-lookup"><span data-stu-id="c8344-329">Therefore, we will use the **VendMobileInvoiceAllDistributionTree** page to design this part of the mobile scenario.</span></span> 
 
 > [!NOTE] 
-> Kun tiedämme vaatimukset, se auttaa päättämään, mitä tiettyä sivua käyttää ja miten tarkalleen optimoida käyttäjän mobiilikokemus, kun suunnittelemme tätä skenaariota. Toisessa tilanteessa käytämme toista sivua näyttämään jaot, koska skenaarioiden vaatimukset eroavat.
+> <span data-ttu-id="c8344-330">Kun tiedämme vaatimukset, se auttaa päättämään, mitä tiettyä sivua käyttää ja miten tarkalleen optimoida käyttäjän mobiilikokemus, kun suunnittelemme tätä skenaariota.</span><span class="sxs-lookup"><span data-stu-id="c8344-330">Knowing the requirements helps us decide which specific page to use and how exactly to optimize the mobile experience for the user when we design the scenario.</span></span> <span data-ttu-id="c8344-331">Toisessa tilanteessa käytämme toista sivua näyttämään jaot, koska skenaarioiden vaatimukset eroavat.</span><span class="sxs-lookup"><span data-stu-id="c8344-331">In the second scenario, we will use a different page to show the distributions, because the requirements for that scenario differ.</span></span>
 
-1.  Korvaa valikkovaihtoehdon nimi URL-osoitteessa, kuten teit aikaisemmin. Sivun, joka näkyy, on muistutettava seuraavaa kuvaa.
-[![Kaikki jaot -sivu](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
-2.  Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.
-3.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa. **Huomautus:** Näet, että kaksi uutta sivua on luotu automaattisesti. Järjestelmä luo nämä sivut, koska otit käyttöön tiedostojen hallinnan edellisessä osassa. Voit ohittaa nämä uudet sivut.
-4.  Valitse **Lisää sivu**.
-5.  Kirjoita sivun otsikko, esimerkiksi **Näytä kirjanpito**  ja kuvaus, kuten **Näytä laskun kirjanpito**.
-6.  Valitse **Valmis**.
-7.  Klikkaa **Kentät**-välilehdessä **Valitse kentät**, valitse seuraavat kentät Jaot-sivulta ja valitse sitten **Valmis**:
-    1.  Summa
-    2.  Valuutta
-    3.  Kirjanpitotili
+1.  <span data-ttu-id="c8344-332">Korvaa valikkovaihtoehdon nimi URL-osoitteessa, kuten teit aikaisemmin.</span><span class="sxs-lookup"><span data-stu-id="c8344-332">In the URL, replace the name of the menu item, as you did before.</span></span> <span data-ttu-id="c8344-333">Sivun, joka näkyy, on muistutettava seuraavaa kuvaa.</span><span class="sxs-lookup"><span data-stu-id="c8344-333">The page that appears should resemble the following illustration.</span></span>
+<span data-ttu-id="c8344-334">[![Kaikki jaot -sivu](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)</span><span class="sxs-lookup"><span data-stu-id="c8344-334">[![All distributions page](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)</span></span>
+2.  <span data-ttu-id="c8344-335">Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.</span><span class="sxs-lookup"><span data-stu-id="c8344-335">Open the mobile designer from the **Settings** (gear) button.</span></span>
+3.  <span data-ttu-id="c8344-336">Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.</span><span class="sxs-lookup"><span data-stu-id="c8344-336">Click the **Edit** button to start edit mode in the workspace.</span></span> <span data-ttu-id="c8344-337">**Huomautus:** Näet, että kaksi uutta sivua on luotu automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="c8344-337">**Note:** You will see that two new pages were created automatically.</span></span> <span data-ttu-id="c8344-338">Järjestelmä luo nämä sivut, koska otit käyttöön tiedostojen hallinnan edellisessä osassa.</span><span class="sxs-lookup"><span data-stu-id="c8344-338">The system creates these pages, because you turned on document management in the previous section.</span></span> <span data-ttu-id="c8344-339">Voit ohittaa nämä uudet sivut.</span><span class="sxs-lookup"><span data-stu-id="c8344-339">You can ignore these new pages.</span></span>
+4.  <span data-ttu-id="c8344-340">Valitse **Lisää sivu**.</span><span class="sxs-lookup"><span data-stu-id="c8344-340">Click **Add page**.</span></span>
+5.  <span data-ttu-id="c8344-341">Kirjoita sivun otsikko, esimerkiksi **Näytä kirjanpito**  ja kuvaus, kuten **Näytä laskun kirjanpito**.</span><span class="sxs-lookup"><span data-stu-id="c8344-341">Enter a page title, such as **View accounting**, and a description, such as **View accounting for the invoice**.</span></span>
+6.  <span data-ttu-id="c8344-342">Valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="c8344-342">Click **Done**.</span></span>
+7.  <span data-ttu-id="c8344-343">Klikkaa **Kentät**-välilehdessä **Valitse kentät**, valitse seuraavat kentät Jaot-sivulta ja valitse sitten **Valmis**:</span><span class="sxs-lookup"><span data-stu-id="c8344-343">On the **Fields** tab, click **Select fields**, select the following fields from the distributions page, and then click **Done**:</span></span>
+    1.  <span data-ttu-id="c8344-344">Summa</span><span class="sxs-lookup"><span data-stu-id="c8344-344">Amount</span></span>
+    2.  <span data-ttu-id="c8344-345">Valuutta</span><span class="sxs-lookup"><span data-stu-id="c8344-345">Currency</span></span>
+    3.  <span data-ttu-id="c8344-346">Kirjanpitotili</span><span class="sxs-lookup"><span data-stu-id="c8344-346">Ledger account</span></span>
 
     > [!NOTE] 
-    > Emme valinneet **Kuvaus**-saraketta jakoruudukosta, koska tämän skenaarion vaatimukset vahvistivat, että vain laajennetulle hinnalle on olemassa jako. Tämän vuoksi käyttäjä ei edellytä toista kenttää sen summan tyypin määrittämiseksi, jolle jako on. Kuitenkin seuraavassa skenaariossa me **tulemme** käyttämään tätä tietoa, koska tämän skenaarion vaatimukset määrittävät, että muuntyyppisilläkin summilla on jakoja (kuten arvonlisävero).
-8.  Valitse **Valmis** poistuaksesi muokkaustilasta.
-9.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
-10. Tallenna muutokset valitsemalla **Julkaise työtila**.
+    > <span data-ttu-id="c8344-347">Emme valinneet **Kuvaus**-saraketta jakoruudukosta, koska tämän skenaarion vaatimukset vahvistivat, että vain laajennetulle hinnalle on olemassa jako.</span><span class="sxs-lookup"><span data-stu-id="c8344-347">We didn’t select the **Description** column from the distributions grid, because the requirements for this scenario confirmed that the extended price is the only amount that there will be distributions for.</span></span> <span data-ttu-id="c8344-348">Tämän vuoksi käyttäjä ei edellytä toista kenttää sen summan tyypin määrittämiseksi, jolle jako on.</span><span class="sxs-lookup"><span data-stu-id="c8344-348">Therefore, the user won’t require another field to determine the amount type that the distribution is for.</span></span> <span data-ttu-id="c8344-349">Kuitenkin seuraavassa skenaariossa me **tulemme** käyttämään tätä tietoa, koska tämän skenaarion vaatimukset määrittävät, että muuntyyppisilläkin summilla on jakoja (kuten arvonlisävero).</span><span class="sxs-lookup"><span data-stu-id="c8344-349">However, in the next scenario, we **will** use this information, because the requirements for that scenario specify that other amount types have distributions (for example, sales tax).</span></span>
+8.  <span data-ttu-id="c8344-350">Valitse **Valmis** poistuaksesi muokkaustilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-350">Click **Done** to exit edit mode.</span></span>
+9.  <span data-ttu-id="c8344-351">Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-351">Click **Back** and then **Done** to exit the workspace</span></span>
+10. <span data-ttu-id="c8344-352">Tallenna muutokset valitsemalla **Julkaise työtila**.</span><span class="sxs-lookup"><span data-stu-id="c8344-352">Click **Publish workspace** to save your work</span></span>
 
 > [!NOTE] 
-> **Näytä kirjanpito** -mobiilisivua ei ole tällä hetkellä linkitetty yhteenkään tähän mennessä suunniteltuun mobiilisivuun. Koska käyttäjän pitää voida siirtyä **Näytä kirjanpito** -sivulle mobiililaitteen **Laskun tiedot** -sivulta, meidän on luotava siirtyminen **Laskun tiedot** -sivulta **Näytä kirjanpito** -sivulle. Luomme tämän siirtymisen JavaScript-lisälogiikan avulla.
+> <span data-ttu-id="c8344-353">**Näytä kirjanpito** -mobiilisivua ei ole tällä hetkellä linkitetty yhteenkään tähän mennessä suunniteltuun mobiilisivuun.</span><span class="sxs-lookup"><span data-stu-id="c8344-353">The **View accounting** mobile page isn’t currently linked to any of the mobile pages that we have designed so far.</span></span> <span data-ttu-id="c8344-354">Koska käyttäjän pitää voida siirtyä **Näytä kirjanpito** -sivulle mobiililaitteen **Laskun tiedot** -sivulta, meidän on luotava siirtyminen **Laskun tiedot** -sivulta **Näytä kirjanpito** -sivulle.</span><span class="sxs-lookup"><span data-stu-id="c8344-354">Because the user should be able to navigate to the **View accounting** page from the **Invoice details** page on the mobile device, we must provide navigation from the **Invoice details** page to the **View accounting** page.</span></span> <span data-ttu-id="c8344-355">Luomme tämän siirtymisen JavaScript-lisälogiikan avulla.</span><span class="sxs-lookup"><span data-stu-id="c8344-355">We establish this navigation by using additional logic via JavaScript.</span></span>
 
-1.  Avaa .js-tiedosto, jonka loit aiemmin ja lisää rivit, jotka näkyvät korostettuina seuraavassa koodissa. Tämä koodi tekee kaksi asiaa:
-    1.  Sen avulla varmistetaan, että käyttäjät eivät voi siirtyä suoraan työtilasta **Näytä kirjanpito** -sivulle.
-    2.  Se luo siirtymisen ohjausobjektin **Laskun tiedot** -sivulta **Näytä kirjanpito** -sivulle.
+1.  <span data-ttu-id="c8344-356">Avaa .js-tiedosto, jonka loit aiemmin ja lisää rivit, jotka näkyvät korostettuina seuraavassa koodissa.</span><span class="sxs-lookup"><span data-stu-id="c8344-356">Open the .js file that you created earlier, and add the lines that are highlighted in the following code.</span></span> <span data-ttu-id="c8344-357">Tämä koodi tekee kaksi asiaa:</span><span class="sxs-lookup"><span data-stu-id="c8344-357">This code does two things:</span></span>
+    1.  <span data-ttu-id="c8344-358">Sen avulla varmistetaan, että käyttäjät eivät voi siirtyä suoraan työtilasta **Näytä kirjanpito** -sivulle.</span><span class="sxs-lookup"><span data-stu-id="c8344-358">It helps guarantee that users can’t navigate directly from the workspace to the **View accounting** page.</span></span>
+    2.  <span data-ttu-id="c8344-359">Se luo siirtymisen ohjausobjektin **Laskun tiedot** -sivulta **Näytä kirjanpito** -sivulle.</span><span class="sxs-lookup"><span data-stu-id="c8344-359">It establishes a navigation control from the **Invoice details** page to the **View accounting** page.</span></span>
 
 > [!NOTE] 
-> Sivujen ja muiden ohjausobjektien nimet on oltava koodissa samat kuin työtilan nimet.
+> <span data-ttu-id="c8344-360">Sivujen ja muiden ohjausobjektien nimet on oltava koodissa samat kuin työtilan nimet.</span><span class="sxs-lookup"><span data-stu-id="c8344-360">The name of the pages and other controls in the code must be the same as the names in the workspace.</span></span>
 
     function main(metadataService, dataService, cacheService, $q) {
            return {
@@ -403,24 +403,24 @@ Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot
            };
         }
 
-2.  Lataa kooditiedosto työtilaan ja korvaa edellinen koodi valitsemalla **Logiikka**-välilehti
-3.  Valitse **Valmis** poistuaksesi muokkaustilasta.
-4.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
-5.  Tallenna muutokset valitsemalla **Julkaise työtila**.
+2.  <span data-ttu-id="c8344-361">Lataa kooditiedosto työtilaan ja korvaa edellinen koodi valitsemalla **Logiikka**-välilehti</span><span class="sxs-lookup"><span data-stu-id="c8344-361">Upload the code file to the workspace by selecting the **Logic** tab to overwrite the previous code</span></span>
+3.  <span data-ttu-id="c8344-362">Valitse **Valmis** poistuaksesi muokkaustilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-362">Click **Done** to exit edit mode.</span></span>
+4.  <span data-ttu-id="c8344-363">Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.</span><span class="sxs-lookup"><span data-stu-id="c8344-363">Click **Back** and then **Done** to exit the workspace</span></span>
+5.  <span data-ttu-id="c8344-364">Tallenna muutokset valitsemalla **Julkaise työtila**.</span><span class="sxs-lookup"><span data-stu-id="c8344-364">Click **Publish workspace** to save your work</span></span>
 
-### <a name="validation"></a>Valintasäännöt
+### <a name="validation"></a><span data-ttu-id="c8344-365">Valintasäännöt</span><span class="sxs-lookup"><span data-stu-id="c8344-365">Validation</span></span>
 
-Avaa sovellus mobiililaitteessa ja muodosta yhteys Finance and Operations -esiintymään. Varmista, että kirjaudut yritykseen jossa toimittajalaskuja on määritetty sinulle tarkistusta varten. Sinun pitäisi voida suorittaa seuraavat toimet:
+<span data-ttu-id="c8344-366">Avaa sovellus mobiililaitteessa ja muodosta yhteys Finance and Operations -esiintymään.</span><span class="sxs-lookup"><span data-stu-id="c8344-366">From your mobile device, open the app, and connect to your Finance and Operations instance.</span></span> <span data-ttu-id="c8344-367">Varmista, että kirjaudut yritykseen jossa toimittajalaskuja on määritetty sinulle tarkistusta varten.</span><span class="sxs-lookup"><span data-stu-id="c8344-367">Make sure that you sign in to the company where vendor invoices are assigned to you for review.</span></span> <span data-ttu-id="c8344-368">Sinun pitäisi voida suorittaa seuraavat toimet:</span><span class="sxs-lookup"><span data-stu-id="c8344-368">You should be able to perform the following actions:</span></span>
 
--   Nähdä **Omat hyväksynnät** -työtila.
--   Porautua **Omat hyväksynnät** -työtilaan ja nähdä **Omat toimittajalaskut** -sivun.
--   Porautua **Omat toimittajalaskut** -sivulle ja nähdä sinulle määritetyt laskut.
--   Poraudu yhteen laskuista ja tarkastele laskun otsikon ja rivien tietoja.
--   Tiedot-sivulla näet linkin liitteisiin ja tämän linkin avulla voit siirtyä liiteluetteloon ja tarkastella liitteitä.
--   Tiedot-sivulla näet linkin **Näytä kirjanpito** -sivulle ja tämän linkin avulla voit siirtyä jakosivulle ja tarkastella jakoja.
--   Valitse Tiedot-sivulla **Toiminnot**-valikko sivun alaosasta ja suorita työnkulkutoimintoja, joita sovelletaan työnkulun vaiheeseen.
+-   <span data-ttu-id="c8344-369">Nähdä **Omat hyväksynnät** -työtila.</span><span class="sxs-lookup"><span data-stu-id="c8344-369">See the **My approvals** workspace.</span></span>
+-   <span data-ttu-id="c8344-370">Porautua **Omat hyväksynnät** -työtilaan ja nähdä **Omat toimittajalaskut** -sivun.</span><span class="sxs-lookup"><span data-stu-id="c8344-370">Drill into the **My approvals** workspace and see the **My vendor invoices** page.</span></span>
+-   <span data-ttu-id="c8344-371">Porautua **Omat toimittajalaskut** -sivulle ja nähdä sinulle määritetyt laskut.</span><span class="sxs-lookup"><span data-stu-id="c8344-371">Drill into the **My vendor invoices** page and see the list of invoices that are assigned to you.</span></span>
+-   <span data-ttu-id="c8344-372">Poraudu yhteen laskuista ja tarkastele laskun otsikon ja rivien tietoja.</span><span class="sxs-lookup"><span data-stu-id="c8344-372">Drill into one of the invoices, and see the invoice header details and line details.</span></span>
+-   <span data-ttu-id="c8344-373">Tiedot-sivulla näet linkin liitteisiin ja tämän linkin avulla voit siirtyä liiteluetteloon ja tarkastella liitteitä.</span><span class="sxs-lookup"><span data-stu-id="c8344-373">On the details page, see a link to attachments, and use this link to navigate to the attachments list and view the attachments.</span></span>
+-   <span data-ttu-id="c8344-374">Tiedot-sivulla näet linkin **Näytä kirjanpito** -sivulle ja tämän linkin avulla voit siirtyä jakosivulle ja tarkastella jakoja.</span><span class="sxs-lookup"><span data-stu-id="c8344-374">On the details page, see a link to the **View accounting** page, and use this link to navigate to the distributions page and view the distributions.</span></span>
+-   <span data-ttu-id="c8344-375">Valitse Tiedot-sivulla **Toiminnot**-valikko sivun alaosasta ja suorita työnkulkutoimintoja, joita sovelletaan työnkulun vaiheeseen.</span><span class="sxs-lookup"><span data-stu-id="c8344-375">On the details page, click the **Actions** menu at the bottom, and perform workflow actions that are applicable to the workflow step.</span></span>
 
-## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Monimutkaisen laskun hyväksynnän skenaarion suunnitteleminen Fabrikamille
+## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a><span data-ttu-id="c8344-376">Monimutkaisen laskun hyväksynnän skenaarion suunnitteleminen Fabrikamille</span><span class="sxs-lookup"><span data-stu-id="c8344-376">Designing a complex invoice approval scenario for Fabrikam</span></span>
 <table>
 <colgroup>
 <col width="50%" />
@@ -428,67 +428,67 @@ Avaa sovellus mobiililaitteessa ja muodosta yhteys Finance and Operations -esiin
 </colgroup>
 <thead>
 <tr class="header">
-<th>Skenaarion määrite</th>
-<th>Vastaus</th>
+<th><span data-ttu-id="c8344-377">Skenaarion määrite</span><span class="sxs-lookup"><span data-stu-id="c8344-377">Scenario attribute</span></span></th>
+<th><span data-ttu-id="c8344-378">Vastaus</span><span class="sxs-lookup"><span data-stu-id="c8344-378">Answer</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Mitkä laskun otsikon kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</td>
+<td><span data-ttu-id="c8344-379">Mitkä laskun otsikon kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</span><span class="sxs-lookup"><span data-stu-id="c8344-379">What fields from the invoice header will the user want to see in the mobile experience, and in what order?</span></span></td>
 <td><ol>
-<li>Toimittajan nimi</li>
-<li>Laskun summa</li>
-<li>Laskutusasiakasnumero</li>
-<li>Laskun numero</li>
-<li>Laskun päivämäärä</li>
-<li>Laskun kuvaus</li>
-<li>Eräpäivä</li>
-<li>Laskutusvaluutta</li>
+<li><span data-ttu-id="c8344-380">Toimittajan nimi</span><span class="sxs-lookup"><span data-stu-id="c8344-380">Vendor name</span></span></li>
+<li><span data-ttu-id="c8344-381">Laskun summa</span><span class="sxs-lookup"><span data-stu-id="c8344-381">Invoice amount</span></span></li>
+<li><span data-ttu-id="c8344-382">Laskutusasiakasnumero</span><span class="sxs-lookup"><span data-stu-id="c8344-382">Invoice account</span></span></li>
+<li><span data-ttu-id="c8344-383">Laskun numero</span><span class="sxs-lookup"><span data-stu-id="c8344-383">Invoice number</span></span></li>
+<li><span data-ttu-id="c8344-384">Laskun päivämäärä</span><span class="sxs-lookup"><span data-stu-id="c8344-384">Invoice date</span></span></li>
+<li><span data-ttu-id="c8344-385">Laskun kuvaus</span><span class="sxs-lookup"><span data-stu-id="c8344-385">Invoice description</span></span></li>
+<li><span data-ttu-id="c8344-386">Eräpäivä</span><span class="sxs-lookup"><span data-stu-id="c8344-386">Due date</span></span></li>
+<li><span data-ttu-id="c8344-387">Laskutusvaluutta</span><span class="sxs-lookup"><span data-stu-id="c8344-387">Invoice currency</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Mitkä laskurivien kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</td>
+<td><span data-ttu-id="c8344-388">Mitkä laskurivien kentät käyttäjät haluavat nähdä mobiilikäyttöliittymässä ja missä järjestyksessä?</span><span class="sxs-lookup"><span data-stu-id="c8344-388">What fields from the invoice lines will the user want to see in the mobile experience, and in what order?</span></span></td>
 <td><ol>
-<li>Hankintaluokka</li>
-<li>Määrä</li>
-<li>Yksikköhinta</li>
-<li>Rivin nettosumma</li>
-<li>Valmisteveron määrä</li>
+<li><span data-ttu-id="c8344-389">Hankintaluokka</span><span class="sxs-lookup"><span data-stu-id="c8344-389">Procurement category</span></span></li>
+<li><span data-ttu-id="c8344-390">Määrä</span><span class="sxs-lookup"><span data-stu-id="c8344-390">Quantity</span></span></li>
+<li><span data-ttu-id="c8344-391">Yksikköhinta</span><span class="sxs-lookup"><span data-stu-id="c8344-391">Unit price</span></span></li>
+<li><span data-ttu-id="c8344-392">Rivin nettosumma</span><span class="sxs-lookup"><span data-stu-id="c8344-392">Line net amount</span></span></li>
+<li><span data-ttu-id="c8344-393">Valmisteveron määrä</span><span class="sxs-lookup"><span data-stu-id="c8344-393">1099 amount</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Kuinka monta laskuriviä yhdessä laskussa on? Käytä tässä 80-20-sääntö ja optimoi tärkeimmät 80 prosenttia.</td>
-<td>5</td>
+<td><span data-ttu-id="c8344-394">Kuinka monta laskuriviä yhdessä laskussa on?</span><span class="sxs-lookup"><span data-stu-id="c8344-394">How many invoice lines are there in an invoice?</span></span> <span data-ttu-id="c8344-395">Käytä tässä 80-20-sääntö ja optimoi tärkeimmät 80 prosenttia.</span><span class="sxs-lookup"><span data-stu-id="c8344-395">Apply the 80-20 rule here, and optimize for the 80 percent.</span></span></td>
+<td><span data-ttu-id="c8344-396">5</span><span class="sxs-lookup"><span data-stu-id="c8344-396">5</span></span></td>
 </tr>
 <tr class="even">
-<td>Haluavatko käyttäjät tarkastella mobiililaitteessa kirjanpidollisia jakoja (laskujen koodausta) tarkistusten aikana?</td>
-<td>Kyllä</td>
+<td><span data-ttu-id="c8344-397">Haluavatko käyttäjät tarkastella mobiililaitteessa kirjanpidollisia jakoja (laskujen koodausta) tarkistusten aikana?</span><span class="sxs-lookup"><span data-stu-id="c8344-397">Will users want to see accounting distributions (invoice coding) on the mobile device during reviews?</span></span></td>
+<td><span data-ttu-id="c8344-398">Kyllä</span><span class="sxs-lookup"><span data-stu-id="c8344-398">Yes</span></span></td>
 </tr>
 <tr class="odd">
-<td>Kuinka monta kirjanpidollista jakoa (laajennettua hintaa, arvonlisäveroa, kulua jne.) on yhdellä laskurivillä? Käytä uudelleen 80-20-sääntöä.</td>
-<td>Laajennettu hinta: 2 ALV: 2 Kulut: 2</td>
+<td><span data-ttu-id="c8344-399">Kuinka monta kirjanpidollista jakoa (laajennettua hintaa, arvonlisäveroa, kulua jne.) on yhdellä laskurivillä?</span><span class="sxs-lookup"><span data-stu-id="c8344-399">How many accounting distributions (extended price, sales tax, charges, and so on) are there for an invoice line?</span></span> <span data-ttu-id="c8344-400">Käytä uudelleen 80-20-sääntöä.</span><span class="sxs-lookup"><span data-stu-id="c8344-400">Again, apply the 80-20 rule.</span></span></td>
+<td><span data-ttu-id="c8344-401">Laajennettu hinta: 2 ALV: 2 Kulut: 2</span><span class="sxs-lookup"><span data-stu-id="c8344-401">Extended price: 2 Sales tax: 2 Charges: 2</span></span></td>
 </tr>
 <tr class="even">
-<td>Onko laskuissa myös kirjanpidolliset jaot laskuotsikossa? Jos näin on, ovatko nämä kirjanpidolliset jaot on käytettävissä laitteessa?</td>
-<td>Ei käytössä</td>
+<td><span data-ttu-id="c8344-402">Onko laskuissa myös kirjanpidolliset jaot laskuotsikossa?</span><span class="sxs-lookup"><span data-stu-id="c8344-402">Do the invoices also have accounting distributions on the invoice header?</span></span> <span data-ttu-id="c8344-403">Jos näin on, ovatko nämä kirjanpidolliset jaot on käytettävissä laitteessa?</span><span class="sxs-lookup"><span data-stu-id="c8344-403">If so, should these accounting distributions be available on the device?</span></span></td>
+<td><span data-ttu-id="c8344-404">Ei käytössä</span><span class="sxs-lookup"><span data-stu-id="c8344-404">Not used</span></span></td>
 </tr>
 <tr class="odd">
-<td>Haluavatko käyttäjät nähdä laskun liitteet laitteella?</td>
-<td>Kyllä</td>
+<td><span data-ttu-id="c8344-405">Haluavatko käyttäjät nähdä laskun liitteet laitteella?</span><span class="sxs-lookup"><span data-stu-id="c8344-405">Will users want to see attachments for the invoice on the device?</span></span></td>
+<td><span data-ttu-id="c8344-406">Kyllä</span><span class="sxs-lookup"><span data-stu-id="c8344-406">Yes</span></span></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="next-steps"></a>Seuraavat vaiheet
+### <a name="next-steps"></a><span data-ttu-id="c8344-407">Seuraavat vaiheet</span><span class="sxs-lookup"><span data-stu-id="c8344-407">Next steps</span></span>
 
-Skenaariolle 1 voidaan tehdä seuraavat muunnelmat perustuen skenaarion 2 vaatimuksiin. Voit parantaa mobiilisovelluskokemusta tämän osan avulla.
+<span data-ttu-id="c8344-408">Skenaariolle 1 voidaan tehdä seuraavat muunnelmat perustuen skenaarion 2 vaatimuksiin.</span><span class="sxs-lookup"><span data-stu-id="c8344-408">The following variations can be done for scenario 1, based on the requirements for scenario 2.</span></span> <span data-ttu-id="c8344-409">Voit parantaa mobiilisovelluskokemusta tämän osan avulla.</span><span class="sxs-lookup"><span data-stu-id="c8344-409">You can use this section to improve your mobile app experience.</span></span>
 
-1.  Koska skenaariossa 2 odotetaan enemmän laskurivejä, seuraavat muutokset rakenteeseen auttavat optimoimaan mobiililaitteen käyttökokemusta:
-    1.  Sen sijaan että tarkastelisit laskurivejä tietosivulla (kuten skenaariossa 1), käyttäjät voivat tarkastella rivejä erillisellä mobiilisivulla.
-    2.  Koska tässä tilanteessa on odotettavissa useita laskun rivejä ja jos **VendMobileInvoiceAllDistributionTree** -sivua käytetään mobiilin jakosivun suunnittelussa (kuten skenaariossa 1), se voi olla hämmentävää käyttäjälle yhdistää rivit jakoihin. Tämän vuoksi käytä **VendMobileInvoiceLineDistributionTree**-sivua jakosivun suunnitteluun.
-    3.  Parhaassa tapauksessa tässä skenaariossa jaot pitäisi näyttää laskurivin yhteydessä. Varmista siksi, että käyttäjä voi porautua riviin nähdäkseen jakosivun. Sivulinkkiominaisuuden avulla voit määrittää porautumisen samalla tavalla kuin otsikko- ja tietosivuille skenaariossa 1.
+1.  <span data-ttu-id="c8344-410">Koska skenaariossa 2 odotetaan enemmän laskurivejä, seuraavat muutokset rakenteeseen auttavat optimoimaan mobiililaitteen käyttökokemusta:</span><span class="sxs-lookup"><span data-stu-id="c8344-410">Because more invoice lines are expected in scenario 2, the following changes to the design will help optimize the user experience on the mobile device:</span></span>
+    1.  <span data-ttu-id="c8344-411">Sen sijaan että tarkastelisit laskurivejä tietosivulla (kuten skenaariossa 1), käyttäjät voivat tarkastella rivejä erillisellä mobiilisivulla.</span><span class="sxs-lookup"><span data-stu-id="c8344-411">Instead of viewing invoice lines on the details page (as in scenario 1), users can choose to view lines on a separate mobile page.</span></span>
+    2.  <span data-ttu-id="c8344-412">Koska tässä tilanteessa on odotettavissa useita laskun rivejä ja jos **VendMobileInvoiceAllDistributionTree** -sivua käytetään mobiilin jakosivun suunnittelussa (kuten skenaariossa 1), se voi olla hämmentävää käyttäjälle yhdistää rivit jakoihin.</span><span class="sxs-lookup"><span data-stu-id="c8344-412">Because more than one invoice line is expected in this scenario, if the **VendMobileInvoiceAllDistributionTree** page is used to design the distributions page for mobile (as in scenario 1), it might be confusing for the user to correlate lines to distributions.</span></span> <span data-ttu-id="c8344-413">Tämän vuoksi käytä **VendMobileInvoiceLineDistributionTree**-sivua jakosivun suunnitteluun.</span><span class="sxs-lookup"><span data-stu-id="c8344-413">Therefore, use the **VendMobileInvoiceLineDistributionTree** page to design the distributions page.</span></span>
+    3.  <span data-ttu-id="c8344-414">Parhaassa tapauksessa tässä skenaariossa jaot pitäisi näyttää laskurivin yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="c8344-414">Ideally, the distributions should be shown in the context of an invoice line in this scenario.</span></span> <span data-ttu-id="c8344-415">Varmista siksi, että käyttäjä voi porautua riviin nähdäkseen jakosivun.</span><span class="sxs-lookup"><span data-stu-id="c8344-415">Therefore, make sure that the user can drill into a line to see the distributions page.</span></span> <span data-ttu-id="c8344-416">Sivulinkkiominaisuuden avulla voit määrittää porautumisen samalla tavalla kuin otsikko- ja tietosivuille skenaariossa 1.</span><span class="sxs-lookup"><span data-stu-id="c8344-416">Use the page link capability to establish the drill-through, just as you did for the header and details pages in scenario 1.</span></span>
 
-2.  Koska skenaariossa 2 on odotettavissa useita summatyyppejä (arvonlisävero, kulut jne.), on hyödyllistä näyttää summatyypin kuvaus. (Nämä tiedot jätettiin pois skenaariossa 1).
+2.  <span data-ttu-id="c8344-417">Koska skenaariossa 2 on odotettavissa useita summatyyppejä (arvonlisävero, kulut jne.), on hyödyllistä näyttää summatyypin kuvaus.</span><span class="sxs-lookup"><span data-stu-id="c8344-417">Because more than one amount type is expected on the distributions in scenario 2 (sales tax, charges, and so on), it will be useful to show the description of the amount type.</span></span> <span data-ttu-id="c8344-418">(Nämä tiedot jätettiin pois skenaariossa 1).</span><span class="sxs-lookup"><span data-stu-id="c8344-418">(We omitted this information in scenario 1.)</span></span>
 
 
 

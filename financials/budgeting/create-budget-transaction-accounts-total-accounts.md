@@ -19,33 +19,33 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 89ddb0f246eb1d874ff0f2b5305f30355905c45e
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: fd6dc5173fd37f0257c98c1a41f3e6ce40b5b680
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="create-a-budget-from-transaction-accounts-and-total-accounts"></a>Budjetin luominen tapahtumatileistä ja summatileistä
+# <a name="create-a-budget-from-transaction-accounts-and-total-accounts"></a><span data-ttu-id="12cee-104">Budjetin luominen tapahtumatileistä ja summatileistä</span><span class="sxs-lookup"><span data-stu-id="12cee-104">Create a budget from transaction accounts and total accounts</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on summatileihin perustuvien budjettien luontiprosessin yleiskatsaus. Artikkelissa kerrotaan myös, miten summatilien budjetin hallinta otetaan käyttöön, jos budjetin hallinta vaaditaan.
+<span data-ttu-id="12cee-105">Tässä artikkelissa on summatileihin perustuvien budjettien luontiprosessin yleiskatsaus.</span><span class="sxs-lookup"><span data-stu-id="12cee-105">This article provides an overview of the process for creating budgets based on total accounts.</span></span> <span data-ttu-id="12cee-106">Artikkelissa kerrotaan myös, miten summatilien budjetin hallinta otetaan käyttöön, jos budjetin hallinta vaaditaan.</span><span class="sxs-lookup"><span data-stu-id="12cee-106">It also explains how to turn on budget control for total accounts, if budget control is required.</span></span>
 
-Sekä budjettisuunnitelman että budjettirekisterimerkinnän asiakirjat mahdollistavat budjetoinnin päätileillä, joiden päätilin tyyppi on **Yhteensä**. Toteutuneet summat voidaan kirjata vain tapahtumien päätileille. 
+<span data-ttu-id="12cee-107">Sekä budjettisuunnitelman että budjettirekisterimerkinnän asiakirjat mahdollistavat budjetoinnin päätileillä, joiden päätilin tyyppi on **Yhteensä**.</span><span class="sxs-lookup"><span data-stu-id="12cee-107">Both budget plan and budget register entry documents allow for budgeting on main accounts that have a main account type of **Total**.</span></span> <span data-ttu-id="12cee-108">Toteutuneet summat voidaan kirjata vain tapahtumien päätileille.</span><span class="sxs-lookup"><span data-stu-id="12cee-108">Actuals can be posted only to transactional main accounts.</span></span> 
 
-Määritä kausittaiselle **Muodosta budjettisuunnitelma kirjanpidosta** -prosessille **Lähde**-välilehdessä ehdoksi päätilin **Yhteensä**-tyyppi. Tässä tapauksessa kukin pääsummatili sisällytetään kohdebudjettisuunnitelmaan. Summa on sama kuin valittujen päätilien alueen kokonaissumma. 
+<span data-ttu-id="12cee-109">Määritä kausittaiselle **Muodosta budjettisuunnitelma kirjanpidosta** -prosessille **Lähde**-välilehdessä ehdoksi päätilin **Yhteensä**-tyyppi.</span><span class="sxs-lookup"><span data-stu-id="12cee-109">For the **Generate budget plan from General ledger** periodic process, on the **Source** tab, you can specify the **Total** main account type as a criterion.</span></span> <span data-ttu-id="12cee-110">Tässä tapauksessa kukin pääsummatili sisällytetään kohdebudjettisuunnitelmaan. Summa on sama kuin valittujen päätilien alueen kokonaissumma.</span><span class="sxs-lookup"><span data-stu-id="12cee-110">In this case, each total main account will be included in the target budget plan, and the amount will equal the total amount of the range of selected main accounts.</span></span> 
 
-Voit aktivoida **Yhteensä**-tyypin päätilien budjetin hallinnan. Tätä toimintoa tuetaan kaikkien budjettiryhmien käytössä. Jokaiselle pääsummatilille budjettiryhmän osalta hallittava budjetti pitää luoda **Budjetin hallinnan konfiguraatio **-sivulla. Määrittämiesi ehtojen on sisällettävä pääsummatili ja tilialue. Voit nopeuttaa budjettiryhmien luontiprosessia käyttämällä budjetin hallintaryhmien tietoyksikköä. 
+<span data-ttu-id="12cee-111">Voit aktivoida **Yhteensä**-tyypin päätilien budjetin hallinnan.</span><span class="sxs-lookup"><span data-stu-id="12cee-111">You can activate budget control for main accounts of the **Total** type.</span></span> <span data-ttu-id="12cee-112">Tätä toimintoa tuetaan kaikkien budjettiryhmien käytössä.</span><span class="sxs-lookup"><span data-stu-id="12cee-112">This functionality is supported through the use of budget groups.</span></span> <span data-ttu-id="12cee-113">Jokaiselle pääsummatilille budjettiryhmän osalta hallittava budjetti pitää luoda **Budjetin hallinnan konfiguraatio **-sivulla.</span><span class="sxs-lookup"><span data-stu-id="12cee-113">For each total main account, the budget that should be controlled for a budget group must be created on the **Budget control configuration **page.</span></span> <span data-ttu-id="12cee-114">Määrittämiesi ehtojen on sisällettävä pääsummatili ja tilialue.</span><span class="sxs-lookup"><span data-stu-id="12cee-114">The criteria that you specify must include the total main account and the range of accounts.</span></span> <span data-ttu-id="12cee-115">Voit nopeuttaa budjettiryhmien luontiprosessia käyttämällä budjetin hallintaryhmien tietoyksikköä.</span><span class="sxs-lookup"><span data-stu-id="12cee-115">To speed up the process of creating budget groups, you can take advantage of the Budget control groups data entity.</span></span> 
 
-Jos budjetointia käytetään raportoinnissa, esimerkiksi tilinpäätöksessä, summatilin budjettisumma sisältää seuraavat summat:
+<span data-ttu-id="12cee-116">Jos budjetointia käytetään raportoinnissa, esimerkiksi tilinpäätöksessä, summatilin budjettisumma sisältää seuraavat summat:</span><span class="sxs-lookup"><span data-stu-id="12cee-116">When a budget is used in reporting, such as on a financial statement, the budget sum for the total account consists of the following amounts:</span></span>
 
--   kullekin tapahtumakirjanpitotilille summatilin aikavälinä luodut budjetit
--   suoraan summatilille syötetty budjettisumma.
+-   <span data-ttu-id="12cee-117">kullekin tapahtumakirjanpitotilille summatilin aikavälinä luodut budjetit</span><span class="sxs-lookup"><span data-stu-id="12cee-117">The budgets that are created from each transaction ledger account in the interval of the total account.</span></span>
+-   <span data-ttu-id="12cee-118">suoraan summatilille syötetty budjettisumma.</span><span class="sxs-lookup"><span data-stu-id="12cee-118">The budget amount that is entered directly on the total account.</span></span>
 
-Näin voidaan luoda summatilin aikavälille erilliset budjetit tärkeimpiä tapahtumatilejä varten ja lisätä sitten käytettävissä oleva budjettisumma summatilille.
+<span data-ttu-id="12cee-119">Näin voidaan luoda summatilin aikavälille erilliset budjetit tärkeimpiä tapahtumatilejä varten ja lisätä sitten käytettävissä oleva budjettisumma summatilille.</span><span class="sxs-lookup"><span data-stu-id="12cee-119">Therefore, you can create separate budgets for the most significant transaction accounts in the interval of the total account, and then add the available budget amount to the total account.</span></span>
 
 
 

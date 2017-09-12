@@ -14,39 +14,39 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: c5340f4dacd743600ef955c8d5228d1e2d2d2fa9
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 62b637b81a522c353067248deea79cfbf98518e9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="piece-picking-confirmation"></a>Kappaleen keräilyvahvistus
+# <a name="piece-picking-confirmation"></a><span data-ttu-id="3291f-103">Kappaleen keräilyvahvistus</span><span class="sxs-lookup"><span data-stu-id="3291f-103">Piece picking confirmation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Kappalekeräilyssä voit vahvistaa mobiililaitteessa varaston jokaisen kappaleen keräily- tai inventointityön avulla. Voit vahvistaa keräilyssä käsiteltävän työn määrän kerättävään työhön määritettyyn määrään saakka. Voit skannata inventointityössä inventoitavan varaston ja seurata kokonaismäärää.
+<span data-ttu-id="3291f-104">Kappalekeräilyssä voit vahvistaa mobiililaitteessa varaston jokaisen kappaleen keräily- tai inventointityön avulla.</span><span class="sxs-lookup"><span data-stu-id="3291f-104">Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.</span></span> <span data-ttu-id="3291f-105">Voit vahvistaa keräilyssä käsiteltävän työn määrän kerättävään työhön määritettyyn määrään saakka.</span><span class="sxs-lookup"><span data-stu-id="3291f-105">For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked.</span></span> <span data-ttu-id="3291f-106">Voit skannata inventointityössä inventoitavan varaston ja seurata kokonaismäärää.</span><span class="sxs-lookup"><span data-stu-id="3291f-106">For counting work, you can scan the inventory that you are counting and track the total amount.</span></span>
 
-Kun otat kappalekeräilyn käyttöön, tuotevahvistus valitaan automaattisesti. Kun työn tyyppinä on keräys, kappaleiden enimmäismäärä otetaan käyttöön. Tällä tavoin voit määrittää työprosessin aikana vahvistettavien kappaleiden enimmäismäärän. Enimmäismäärä perustuu käsiteltävänä olevaan nykyiseen työyksikköön. Enimmäismäärää ei voi määrittää, jos työtyyppinä on inventointi.
+<span data-ttu-id="3291f-107">Kun otat kappalekeräilyn käyttöön, tuotevahvistus valitaan automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="3291f-107">When you enable piece picking, product confirmation is automatically selected.</span></span> <span data-ttu-id="3291f-108">Kun työn tyyppinä on keräys, kappaleiden enimmäismäärä otetaan käyttöön.</span><span class="sxs-lookup"><span data-stu-id="3291f-108">For work-type picks, a maximum number of pieces is enabled.</span></span> <span data-ttu-id="3291f-109">Tällä tavoin voit määrittää työprosessin aikana vahvistettavien kappaleiden enimmäismäärän.</span><span class="sxs-lookup"><span data-stu-id="3291f-109">This allows you to set a maximum to the number of pieces that must be confirmed during the work process.</span></span> <span data-ttu-id="3291f-110">Enimmäismäärä perustuu käsiteltävänä olevaan nykyiseen työyksikköön.</span><span class="sxs-lookup"><span data-stu-id="3291f-110">The maximum quantity is based on the current work unit that is being processed.</span></span> <span data-ttu-id="3291f-111">Enimmäismäärää ei voi määrittää, jos työtyyppinä on inventointi.</span><span class="sxs-lookup"><span data-stu-id="3291f-111">The counting work type does not allow a maximum.</span></span>
 
-Voit käyttää myös skannattuun viivakoodin liitettyä määrää ja mittayksikköä. Tämä saapuvien ja lähtevien virtojen työ sisältää yhdistetyn rekisterikilven vastaanoton, ostotilausnimikkeen, siirtotilausnimikkeen ja kuormanimikkeen. Se toimii myös kappalekeräilyssä, jossa viivakoodin skannaus lisää määrän vahvistettujen kappaleiden kokonaismäärään muuntamalla mittayksikön viivakoodin ja työyksikön välillä. Jos viivakoodin mittayksikköä inventoitaessa vahvistetaan, että määrä on sallittu sarjaryhmän inventoinnissa, määrä lisätään kokonaismäärään.
+<span data-ttu-id="3291f-112">Voit käyttää myös skannattuun viivakoodin liitettyä määrää ja mittayksikköä.</span><span class="sxs-lookup"><span data-stu-id="3291f-112">You can also use the quantity and unit of measure (UOM) that is associated with a scanned bar code.</span></span> <span data-ttu-id="3291f-113">Tämä saapuvien ja lähtevien virtojen työ sisältää yhdistetyn rekisterikilven vastaanoton, ostotilausnimikkeen, siirtotilausnimikkeen ja kuormanimikkeen.</span><span class="sxs-lookup"><span data-stu-id="3291f-113">This will work for receiving on inbound flows including mixed license plate receiving, purchase order item, transfer order item, and load item.</span></span> <span data-ttu-id="3291f-114">Se toimii myös kappalekeräilyssä, jossa viivakoodin skannaus lisää määrän vahvistettujen kappaleiden kokonaismäärään muuntamalla mittayksikön viivakoodin ja työyksikön välillä.</span><span class="sxs-lookup"><span data-stu-id="3291f-114">It also works for piece picking where scanning the bar code will add the quantity to the total number of confirmed pieces converting between the UOM on the bar code and the work unit.</span></span> <span data-ttu-id="3291f-115">Jos viivakoodin mittayksikköä inventoitaessa vahvistetaan, että määrä on sallittu sarjaryhmän inventoinnissa, määrä lisätään kokonaismäärään.</span><span class="sxs-lookup"><span data-stu-id="3291f-115">If, when counting the UOM on the bar code, it is confirmed that the quantity is allowed for counting on the sequence group, the quantity will be added to the total count.</span></span>
 
-## <a name="where-it-applies"></a>Käyttö
+## <a name="where-it-applies"></a><span data-ttu-id="3291f-116">Käyttö</span><span class="sxs-lookup"><span data-stu-id="3291f-116">Where it applies</span></span>
 
-Kappalekeräilyä voi käyttää kaikissa inventointitöissä ja kaikenlaisten työtyyppien ensimmäisellä keräyksessä. Kappalekeräystä ei voi käyttää, jos nimikettä ohjataan sarjanumeroilla tai jos se on tuotanto- tai kanban-keräily rekisterikilpisijainnista ja jos nimike on määritetty väliaikaiseen varastoon.
+<span data-ttu-id="3291f-117">Kappalekeräilyä voi käyttää kaikissa inventointitöissä ja kaikenlaisten työtyyppien ensimmäisellä keräyksessä.</span><span class="sxs-lookup"><span data-stu-id="3291f-117">Piece picking works for all counting work and for the initial pick for any type of work.</span></span> <span data-ttu-id="3291f-118">Kappalekeräystä ei voi käyttää, jos nimikettä ohjataan sarjanumeroilla tai jos se on tuotanto- tai kanban-keräily rekisterikilpisijainnista ja jos nimike on määritetty väliaikaiseen varastoon.</span><span class="sxs-lookup"><span data-stu-id="3291f-118">Piece picking does not apply if the item is controlled by serial numbers or if it is a production or kanban pick from a license plate (LP) location and the item is set to staging.</span></span>
 
-## <a name="set-up-piece-picking"></a>Kappalekeräilyn määrittäminen
+## <a name="set-up-piece-picking"></a><span data-ttu-id="3291f-119">Kappalekeräilyn määrittäminen</span><span class="sxs-lookup"><span data-stu-id="3291f-119">Set up piece picking</span></span>
 
-1.  Avaa mobiililaitteen valikossa työn vahvistuksen määrityslomake: Varastonhallinta > **Varastonhallinta** > **Asetukset** > **Mobiililaite** > **Mobiililaitteen valikkovaihtoehdot**. 
-2. Avaa mobiililaitteen valikossa Työn vahvistusasetukset.
+1.  <span data-ttu-id="3291f-120">Avaa mobiililaitteen valikossa työn vahvistuksen määrityslomake: Varastonhallinta > **Varastonhallinta** > **Asetukset** > **Mobiililaite** > **Mobiililaitteen valikkovaihtoehdot**.</span><span class="sxs-lookup"><span data-stu-id="3291f-120">On a mobile device menu item, open the setup form for work confirmation: Warehouse management > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.</span></span> 
+2. <span data-ttu-id="3291f-121">Avaa mobiililaitteen valikossa Työn vahvistusasetukset.</span><span class="sxs-lookup"><span data-stu-id="3291f-121">From the mobile device menu item, open Work confirmation setup.</span></span>
 
-Seuraavat asetukset ovat valittavissa, kun työtyyppinä on keräily tai inventointi.
+<span data-ttu-id="3291f-122">Seuraavat asetukset ovat valittavissa, kun työtyyppinä on keräily tai inventointi.</span><span class="sxs-lookup"><span data-stu-id="3291f-122">The following options become available for selection when the work type is pick or counting.</span></span>
 
-| Vaihtoehto        | kuvaus   | 
+| <span data-ttu-id="3291f-123">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="3291f-123">Option</span></span>        | <span data-ttu-id="3291f-124">kuvaus</span><span class="sxs-lookup"><span data-stu-id="3291f-124">Description</span></span>   | 
 | ------------- | ------------- |
-| Kappaleen keräilyvahvistus   | Käytettävissä, kun työtyyppinä on keräily tai inventointi. Tuotteen vahvistus valitaan automaattisesti. Jokainen varastokappale voidaan vahvistaa mobiililaitteessa. | 
-| Kappaleiden enimmäismäärä     | Käytettävissä keräilytyössä, jos kappalekeräilyn vahvistus on otettu käyttöön. Määrittää rajan vahvistettavien kappaleiden määrälle. |  
+| <span data-ttu-id="3291f-125">Kappaleen keräilyvahvistus</span><span class="sxs-lookup"><span data-stu-id="3291f-125">Piece picking confirmation</span></span>   | <span data-ttu-id="3291f-126">Käytettävissä, kun työtyyppinä on keräily tai inventointi.</span><span class="sxs-lookup"><span data-stu-id="3291f-126">Available for pick and counting work types.</span></span> <span data-ttu-id="3291f-127">Tuotteen vahvistus valitaan automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="3291f-127">Product confirmation is automatically selected.</span></span> <span data-ttu-id="3291f-128">Jokainen varastokappale voidaan vahvistaa mobiililaitteessa.</span><span class="sxs-lookup"><span data-stu-id="3291f-128">Allows you to confirm each piece of inventory from the mobile device.</span></span> | 
+| <span data-ttu-id="3291f-129">Kappaleiden enimmäismäärä</span><span class="sxs-lookup"><span data-stu-id="3291f-129">Maximum number of pieces</span></span>     | <span data-ttu-id="3291f-130">Käytettävissä keräilytyössä, jos kappalekeräilyn vahvistus on otettu käyttöön.</span><span class="sxs-lookup"><span data-stu-id="3291f-130">Available for pick work if piece picking confirmation is enabled.</span></span> <span data-ttu-id="3291f-131">Määrittää rajan vahvistettavien kappaleiden määrälle.</span><span class="sxs-lookup"><span data-stu-id="3291f-131">Sets a limit to the number of pieces that you must confirm.</span></span> |  
 

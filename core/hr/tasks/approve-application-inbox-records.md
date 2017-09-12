@@ -16,36 +16,36 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 18873b3b62fe2c45466061242ab4df993e8d804c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1f614b507d28429922902d6c3676483b689ac3d2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="approve-application-inbox-records"></a>Hyväksy hakemuskorin tietueet
+# <a name="approve-application-inbox-records"></a><span data-ttu-id="d4ad9-103">Hyväksy hakemuskorin tietueet</span><span class="sxs-lookup"><span data-stu-id="d4ad9-103">Approve application inbox records</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kerrotaan, miten Työntekijän itsepalvelu -sivun kautta vastaanotettuja hakemuksia tarkastellaan. Hakemusten tarkastelemisen lisäksi niitä voi hyväksyä valittujen Saapuneet hakemukset -kansion tietueiden avulla. Saapuneet hakemukset -kansion tietueet edustavat yritykselle lähetettyjä työhakemuksia. Kun tietue on hyväksytty, hakemuksen lähettäneelle henkilölle luodaan hakijatietue. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+<span data-ttu-id="d4ad9-104">Tässä menettelyssä kerrotaan, miten Työntekijän itsepalvelu -sivun kautta vastaanotettuja hakemuksia tarkastellaan.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-104">This procedure shows how to review applications received through the Employee self-service pages.</span></span> <span data-ttu-id="d4ad9-105">Hakemusten tarkastelemisen lisäksi niitä voi hyväksyä valittujen Saapuneet hakemukset -kansion tietueiden avulla.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-105">In addition to reviewing the applications, you can approve the application in box records that you select.</span></span> <span data-ttu-id="d4ad9-106">Saapuneet hakemukset -kansion tietueet edustavat yritykselle lähetettyjä työhakemuksia.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-106">Application inbox records represent employment applications that were submitted to the company for consideration.</span></span> <span data-ttu-id="d4ad9-107">Kun tietue on hyväksytty, hakemuksen lähettäneelle henkilölle luodaan hakijatietue.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-107">After approving a record, an applicant record will be created for the person who submitted the application.</span></span> <span data-ttu-id="d4ad9-108">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-108">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="review-application-inbox-record"></a>Tarkasta saapuneet hakemukset -kansion tietue
-1. Valitse Henkilöstöhallinto > Työhönotto > Hakemukset > Saapuneet hakemukset.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Laajenna osa Osoitteet.
-4. Laajenna Yhteystiedot-osa.
-5. Laajenna Liitteet-osa.
+## <a name="review-application-inbox-record"></a><span data-ttu-id="d4ad9-109">Tarkasta saapuneet hakemukset -kansion tietue</span><span class="sxs-lookup"><span data-stu-id="d4ad9-109">Review application inbox record</span></span>
+1. <span data-ttu-id="d4ad9-110">Valitse Henkilöstöhallinto > Työhönotto > Hakemukset > Saapuneet hakemukset.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-110">Go to Human resources > Recruitment > Applications > Application inbox.</span></span>
+2. <span data-ttu-id="d4ad9-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-111">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="d4ad9-112">Laajenna osa Osoitteet.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-112">Expand the Addresses section.</span></span>
+4. <span data-ttu-id="d4ad9-113">Laajenna Yhteystiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-113">Expand the Contact information section.</span></span>
+5. <span data-ttu-id="d4ad9-114">Laajenna Liitteet-osa.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-114">Expand the Attachments section.</span></span>
 
-## <a name="approve-application-inbox-record"></a>Hyväksy saapuneet hakemukset -kansion tietue
-1. Merkitse valittu rivi luettelossa.
-2. Merkitse Nimi-kentän arvo muistiin myöhempää käyttöä varten
-3. Valitse Hyväksy.
-4. Valitse OK.
-5. Sulje sivu.
+## <a name="approve-application-inbox-record"></a><span data-ttu-id="d4ad9-115">Hyväksy saapuneet hakemukset -kansion tietue</span><span class="sxs-lookup"><span data-stu-id="d4ad9-115">Approve application inbox record</span></span>
+1. <span data-ttu-id="d4ad9-116">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-116">In the list, mark the selected row.</span></span>
+2. <span data-ttu-id="d4ad9-117">Merkitse Nimi-kentän arvo muistiin myöhempää käyttöä varten</span><span class="sxs-lookup"><span data-stu-id="d4ad9-117">Note the value in the Name field to reference later</span></span>
+3. <span data-ttu-id="d4ad9-118">Valitse Hyväksy.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-118">Click Approve.</span></span>
+4. <span data-ttu-id="d4ad9-119">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-119">Click OK.</span></span>
+5. <span data-ttu-id="d4ad9-120">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-120">Close the page.</span></span>
 
-## <a name="view-the-newly-created-application-record"></a>Näytä uusi hakemustietue
-1. Siirry kohtaan Henkilöstöhallinto > Työhönotto > Hakemukset > Hakemukset.
-2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-3. Laajenna Liitteet-osa.
+## <a name="view-the-newly-created-application-record"></a><span data-ttu-id="d4ad9-121">Näytä uusi hakemustietue</span><span class="sxs-lookup"><span data-stu-id="d4ad9-121">View the newly created application record</span></span>
+1. <span data-ttu-id="d4ad9-122">Siirry kohtaan Henkilöstöhallinto > Työhönotto > Hakemukset > Hakemukset.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-122">Go to Human resources > Recruitment > Applications > Applications.</span></span>
+2. <span data-ttu-id="d4ad9-123">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-123">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="d4ad9-124">Laajenna Liitteet-osa.</span><span class="sxs-lookup"><span data-stu-id="d4ad9-124">Expand the Attachments section.</span></span>
 
 

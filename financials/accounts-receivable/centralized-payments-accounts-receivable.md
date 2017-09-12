@@ -19,285 +19,285 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c5a09eedd1dd12b7f5343953b16f9f0b210213d7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6327d9cab1651d22cd411f718f6e3a2f8733e13e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="centralized-payments-for-accounts-receivable"></a>Myyntireskontran keskitetyt maksut
+# <a name="centralized-payments-for-accounts-receivable"></a><span data-ttu-id="6ba48-105">Myyntireskontran keskitetyt maksut</span><span class="sxs-lookup"><span data-stu-id="6ba48-105">Centralized payments for Accounts receivable</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja tapahtumia ei tarvitse lisätä useisiin yrityksiin. Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten keskitettyjen maksujen kirjaus toteutetaan eri tilanteissa.
+<span data-ttu-id="6ba48-106">Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="6ba48-106">Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments.</span></span> <span data-ttu-id="6ba48-107">Näin samoja tapahtumia ei tarvitse lisätä useisiin yrityksiin.</span><span class="sxs-lookup"><span data-stu-id="6ba48-107">Therefore, the same transaction doesn't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="6ba48-108">Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten keskitettyjen maksujen kirjaus toteutetaan eri tilanteissa.</span><span class="sxs-lookup"><span data-stu-id="6ba48-108">This article provides examples that show how posting for centralized payments is handled in various scenarios.</span></span>
 
-Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja tapahtumia ei tarvitse lisätä useisiin yrityksiin. Organisaatio säästää myös aikaa, koska maksuehdotusten, tilitysten sekä avoimien ja suljettujen tapahtumien keskitetyt maksuprosessit ovat tehokkaita. 
+<span data-ttu-id="6ba48-109">Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="6ba48-109">Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments.</span></span> <span data-ttu-id="6ba48-110">Näin samoja tapahtumia ei tarvitse lisätä useisiin yrityksiin.</span><span class="sxs-lookup"><span data-stu-id="6ba48-110">Therefore, the same transaction doesn't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="6ba48-111">Organisaatio säästää myös aikaa, koska maksuehdotusten, tilitysten sekä avoimien ja suljettujen tapahtumien keskitetyt maksuprosessit ovat tehokkaita.</span><span class="sxs-lookup"><span data-stu-id="6ba48-111">Additionally, the organization saves time, because the processes for payment proposals, settlements, and editing open and closed transactions for centralized payments are streamlined.</span></span> 
 
-Maksujen keskittämiseen tarkoitetussa organisaatiossa on useita toimintaa harjoittavia yrityksiä, ja jokainen toimintaa harjoittava yritys hallitsee omien saatavien laskujen tietojaan. Maksut kaikille toimintaa harjoittaville yrityksille vastaanotetaan yhdestä yrityksestä, joka toimii maksun yrityksenä. Selvitysprosessin aikana sovellettavissa olevat erääntymiskohteen ja -lähteen tapahtumat muodostetaan. Voit määrittää, mikä organisaatioon kuuluva yritys vastaanottaa toteutuneet voitto- tai tappiotapahtumat ja kuinka keskitettyihin maksuihin liittyvät käteisalennustapahtumat käsitellään. 
+<span data-ttu-id="6ba48-112">Maksujen keskittämiseen tarkoitetussa organisaatiossa on useita toimintaa harjoittavia yrityksiä, ja jokainen toimintaa harjoittava yritys hallitsee omien saatavien laskujen tietojaan.</span><span class="sxs-lookup"><span data-stu-id="6ba48-112">In a centralized payment organization, there are many legal entities for operations, and each operating legal entity manages its own invoices receivable information.</span></span> <span data-ttu-id="6ba48-113">Maksut kaikille toimintaa harjoittaville yrityksille vastaanotetaan yhdestä yrityksestä, joka toimii maksun yrityksenä.</span><span class="sxs-lookup"><span data-stu-id="6ba48-113">Payments for all the operating legal entities are received by a single legal entity, which is known as the legal entity of the payment.</span></span> <span data-ttu-id="6ba48-114">Selvitysprosessin aikana sovellettavissa olevat erääntymiskohteen ja -lähteen tapahtumat muodostetaan.</span><span class="sxs-lookup"><span data-stu-id="6ba48-114">During the settlement process, the applicable due-to and due-from transactions are generated.</span></span> <span data-ttu-id="6ba48-115">Voit määrittää, mikä organisaatioon kuuluva yritys vastaanottaa toteutuneet voitto- tai tappiotapahtumat ja kuinka keskitettyihin maksuihin liittyvät käteisalennustapahtumat käsitellään.</span><span class="sxs-lookup"><span data-stu-id="6ba48-115">You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a centralized payment are handled.</span></span> 
 
-Seuraavissa esimerkeissä näytetään, kuinka kirjaus toteutetaan eri tilanteissa. Lähtötilanne on kaikissa esimerkeissä sama:
+<span data-ttu-id="6ba48-116">Seuraavissa esimerkeissä näytetään, kuinka kirjaus toteutetaan eri tilanteissa.</span><span class="sxs-lookup"><span data-stu-id="6ba48-116">The following examples illustrate how posting is handled in various scenarios.</span></span> <span data-ttu-id="6ba48-117">Lähtötilanne on kaikissa esimerkeissä sama:</span><span class="sxs-lookup"><span data-stu-id="6ba48-117">The following configuration is assumed for all these examples:</span></span>
 
--   Yritykset ovat Fabrikam, Fabrikam East ja Fabrikam West. Asiakasmaksut lisätään Fabrikamiin.
--   **Konsernin sisäinen laskenta** -sivun **Käteisalennuksen jälkeen** -kentän arvoksi on valittu **Laskun oikeushenkilö**.
--   **Konsernin sisäinen laskenta** -sivun **Valuutanvaihdon voiton tai tappion jälkeen** -kentän arvoksi on valittu **Maksun oikeushenkilö**.
--   Asiakas Northwind Traders on määritetty kunkin yrityksen asiakkaaksi. Eri yritysten asiakkaat tunnistetaan samaksi asiakkaaksi, koska niillä on yhteinen yleisen osoitekirjan tunnus.
+-   <span data-ttu-id="6ba48-118">Yritykset ovat Fabrikam, Fabrikam East ja Fabrikam West.</span><span class="sxs-lookup"><span data-stu-id="6ba48-118">The legal entities are Fabrikam, Fabrikam East, and Fabrikam West.</span></span> <span data-ttu-id="6ba48-119">Asiakasmaksut lisätään Fabrikamiin.</span><span class="sxs-lookup"><span data-stu-id="6ba48-119">Customer payments are entered into Fabrikam.</span></span>
+-   <span data-ttu-id="6ba48-120">**Konsernin sisäinen laskenta** -sivun **Käteisalennuksen jälkeen** -kentän arvoksi on valittu **Laskun oikeushenkilö**.</span><span class="sxs-lookup"><span data-stu-id="6ba48-120">The **Post cash discount** field on the **Intercompany accounting** page is set to **Legal entity of the invoice**.</span></span>
+-   <span data-ttu-id="6ba48-121">**Konsernin sisäinen laskenta** -sivun **Valuutanvaihdon voiton tai tappion jälkeen** -kentän arvoksi on valittu **Maksun oikeushenkilö**.</span><span class="sxs-lookup"><span data-stu-id="6ba48-121">The **Post currency exchange gain or loss** field on the **Intercompany accounting** page is set to **Legal entity of the payment**.</span></span>
+-   <span data-ttu-id="6ba48-122">Asiakas Northwind Traders on määritetty kunkin yrityksen asiakkaaksi.</span><span class="sxs-lookup"><span data-stu-id="6ba48-122">Customer Northwind Traders is set up as a customer in each legal entity.</span></span> <span data-ttu-id="6ba48-123">Eri yritysten asiakkaat tunnistetaan samaksi asiakkaaksi, koska niillä on yhteinen yleisen osoitekirjan tunnus.</span><span class="sxs-lookup"><span data-stu-id="6ba48-123">The customers from the various legal entities are identified as the same customer because they share the same global address book ID.</span></span>
 
-| Osoitekirjan tunnus | Asiakastili | Nimi              | Oikeushenkilö  |
+| <span data-ttu-id="6ba48-124">Osoitekirjan tunnus</span><span class="sxs-lookup"><span data-stu-id="6ba48-124">Address book ID</span></span> | <span data-ttu-id="6ba48-125">Asiakastili</span><span class="sxs-lookup"><span data-stu-id="6ba48-125">Customer account</span></span> | <span data-ttu-id="6ba48-126">Nimi</span><span class="sxs-lookup"><span data-stu-id="6ba48-126">Name</span></span>              | <span data-ttu-id="6ba48-127">Oikeushenkilö</span><span class="sxs-lookup"><span data-stu-id="6ba48-127">Legal entity</span></span>  |
 |-----------------|------------------|-------------------|---------------|
-| 4050            | 4 000             | Northwind Traders | Fabrikam:      |
-| 4050            | 4 000             | Northwind Traders | Fabrikam East: |
-| 4050            | 10 000            | Northwind Traders | Fabrikam West: |
+| <span data-ttu-id="6ba48-128">4050</span><span class="sxs-lookup"><span data-stu-id="6ba48-128">4050</span></span>            | <span data-ttu-id="6ba48-129">4 000</span><span class="sxs-lookup"><span data-stu-id="6ba48-129">4000</span></span>             | <span data-ttu-id="6ba48-130">Northwind Traders</span><span class="sxs-lookup"><span data-stu-id="6ba48-130">Northwind Traders</span></span> | <span data-ttu-id="6ba48-131">Fabrikam:</span><span class="sxs-lookup"><span data-stu-id="6ba48-131">Fabrikam</span></span>      |
+| <span data-ttu-id="6ba48-132">4050</span><span class="sxs-lookup"><span data-stu-id="6ba48-132">4050</span></span>            | <span data-ttu-id="6ba48-133">4 000</span><span class="sxs-lookup"><span data-stu-id="6ba48-133">4000</span></span>             | <span data-ttu-id="6ba48-134">Northwind Traders</span><span class="sxs-lookup"><span data-stu-id="6ba48-134">Northwind Traders</span></span> | <span data-ttu-id="6ba48-135">Fabrikam East:</span><span class="sxs-lookup"><span data-stu-id="6ba48-135">Fabrikam East</span></span> |
+| <span data-ttu-id="6ba48-136">4050</span><span class="sxs-lookup"><span data-stu-id="6ba48-136">4050</span></span>            | <span data-ttu-id="6ba48-137">10 000</span><span class="sxs-lookup"><span data-stu-id="6ba48-137">10000</span></span>            | <span data-ttu-id="6ba48-138">Northwind Traders</span><span class="sxs-lookup"><span data-stu-id="6ba48-138">Northwind Traders</span></span> | <span data-ttu-id="6ba48-139">Fabrikam West:</span><span class="sxs-lookup"><span data-stu-id="6ba48-139">Fabrikam West</span></span> |
 
-## <a name="example-1-customer-payment-of-invoice-from-another-legal-entity"></a>Esimerkki 1: Asiakkaan laskun maksaminen toisesta yrityksestä
-Fabrikam vastaanottaa maksun, jonka summa on 600,00, Fabrikamin asiakastilille 4000, Northwind Traders. Maksu selvitetään asiakastilin 4000 (Fabrikam East) avoimen laskun kanssa.
+## <a name="example-1-customer-payment-of-invoice-from-another-legal-entity"></a><span data-ttu-id="6ba48-140">Esimerkki 1: Asiakkaan laskun maksaminen toisesta yrityksestä</span><span class="sxs-lookup"><span data-stu-id="6ba48-140">Example 1: Customer payment of invoice from another legal entity</span></span>
+<span data-ttu-id="6ba48-141">Fabrikam vastaanottaa maksun, jonka summa on 600,00, Fabrikamin asiakastilille 4000, Northwind Traders.</span><span class="sxs-lookup"><span data-stu-id="6ba48-141">Fabrikam receives a payment of 600.00 for Fabrikam customer account 4000, Northwind Traders.</span></span> <span data-ttu-id="6ba48-142">Maksu selvitetään asiakastilin 4000 (Fabrikam East) avoimen laskun kanssa.</span><span class="sxs-lookup"><span data-stu-id="6ba48-142">The payment is settled with an open invoice for customer account 4000 in Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-customer-4000"></a>Lasku kirjataan Fabrikam Eastiin asiakkaalle 4000
+### <a name="invoice-is-posted-in-fabrikam-east-for-customer-4000"></a><span data-ttu-id="6ba48-143">Lasku kirjataan Fabrikam Eastiin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-143">Invoice is posted in Fabrikam East for customer 4000</span></span>
 
-| Tili:                             | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-144">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-144">Account</span></span>                             | <span data-ttu-id="6ba48-145">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-145">Debit amount</span></span> | <span data-ttu-id="6ba48-146">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-146">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Myyntireskontra (Fabrikam East) | 600,00       |               |
-| Myynti (Fabrikam East)               |              | 600,00        |
+| <span data-ttu-id="6ba48-147">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-147">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="6ba48-148">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-148">600.00</span></span>       |               |
+| <span data-ttu-id="6ba48-149">Myynti (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-149">Sales (Fabrikam East)</span></span>               |              | <span data-ttu-id="6ba48-150">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-150">600.00</span></span>        |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a>Maksu vastaanotetaan ja kirjataan Fabrikamiin asiakkaalle 4000
+### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a><span data-ttu-id="6ba48-151">Maksu vastaanotetaan ja kirjataan Fabrikamiin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-151">Payment is received and posted in Fabrikam for customer 4000</span></span>
 
-| Tili:                        | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-152">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-152">Account</span></span>                        | <span data-ttu-id="6ba48-153">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-153">Debit amount</span></span> | <span data-ttu-id="6ba48-154">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-154">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Käteinen (Fabrikam)                | 600,00       |               |
-| Myyntireskontra (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="6ba48-155">Käteinen (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-155">Cash (Fabrikam)</span></span>                | <span data-ttu-id="6ba48-156">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-156">600.00</span></span>       |               |
+| <span data-ttu-id="6ba48-157">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-157">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="6ba48-158">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-158">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="6ba48-159">Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa</span><span class="sxs-lookup"><span data-stu-id="6ba48-159">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Kirjaus Fabrikamiin**
+<span data-ttu-id="6ba48-160">**Kirjaus Fabrikamiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-160">**Fabrikam posting**</span></span>
 
-| Tili:                         | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-161">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-161">Account</span></span>                         | <span data-ttu-id="6ba48-162">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-162">Debit amount</span></span> | <span data-ttu-id="6ba48-163">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-163">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Myyntireskontra (Fabrikam)  | 600,00       |               |
-| Saaja Fabrikam East (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="6ba48-164">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-164">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="6ba48-165">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-165">600.00</span></span>       |               |
+| <span data-ttu-id="6ba48-166">Saaja Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-166">Due to Fabrikam East (Fabrikam)</span></span> |              | <span data-ttu-id="6ba48-167">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-167">600.00</span></span>        |
 
-**Kirjaus Fabrikam Eastiin**
+<span data-ttu-id="6ba48-168">**Kirjaus Fabrikam Eastiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-168">**Fabrikam East posting**</span></span>
 
-| Tili:                             | Veloitussumma | Hyvityssumma |
+| <span data-ttu-id="6ba48-169">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-169">Account</span></span>                             | <span data-ttu-id="6ba48-170">Veloitussumma</span><span class="sxs-lookup"><span data-stu-id="6ba48-170">Debit amount</span></span> | <span data-ttu-id="6ba48-171">Hyvityssumma</span><span class="sxs-lookup"><span data-stu-id="6ba48-171">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Maksaja Fabrikam (Fabrikam East)   | 600,00       |               |
-| Myyntireskontra (Fabrikam East) |              | 600,00        |
+| <span data-ttu-id="6ba48-172">Maksaja Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-172">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="6ba48-173">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-173">600.00</span></span>       |               |
+| <span data-ttu-id="6ba48-174">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-174">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="6ba48-175">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-175">600.00</span></span>        |
 
-## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Esimerkki 2: Asiakkaan laskun ja käteisalennuksen maksaminen toisesta yrityksestä
-Fabrikam vastaanottaa maksun, jonka summa on 580,00, Fabrikamin asiakkaalle 4000, Northwind Traders. Fabrikam Eastilla on avoin lasku asiakkaalle 4000. Laskussa on käytettävissä käteisalennus, jonka summa on 20,00. Maksu selvitetään Fabrikam Eastin avointen laskujen kanssa. Käteisalennus kirjataan laskun yritykseen, joka on Fabrikam East.
+## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a><span data-ttu-id="6ba48-176">Esimerkki 2: Asiakkaan laskun ja käteisalennuksen maksaminen toisesta yrityksestä</span><span class="sxs-lookup"><span data-stu-id="6ba48-176">Example 2: Customer payment of invoice from another legal entity with cash discount</span></span>
+<span data-ttu-id="6ba48-177">Fabrikam vastaanottaa maksun, jonka summa on 580,00, Fabrikamin asiakkaalle 4000, Northwind Traders.</span><span class="sxs-lookup"><span data-stu-id="6ba48-177">Fabrikam receives a payment of 580.00 for Fabrikam customer 4000, Northwind Traders.</span></span> <span data-ttu-id="6ba48-178">Fabrikam Eastilla on avoin lasku asiakkaalle 4000.</span><span class="sxs-lookup"><span data-stu-id="6ba48-178">Fabrikam East has an open invoice for customer 4000.</span></span> <span data-ttu-id="6ba48-179">Laskussa on käytettävissä käteisalennus, jonka summa on 20,00.</span><span class="sxs-lookup"><span data-stu-id="6ba48-179">The invoice has a 20.00 cash discount available.</span></span> <span data-ttu-id="6ba48-180">Maksu selvitetään Fabrikam Eastin avointen laskujen kanssa.</span><span class="sxs-lookup"><span data-stu-id="6ba48-180">The payment is settled with the open Fabrikam East invoices.</span></span> <span data-ttu-id="6ba48-181">Käteisalennus kirjataan laskun yritykseen, joka on Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="6ba48-181">The cash discount is posted to the legal entity of the invoice, Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Lasku kirjataan Fabrikam Eastiin Fabrikam Westin asiakkaalle 4000
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a><span data-ttu-id="6ba48-182">Lasku kirjataan Fabrikam Eastiin Fabrikam Westin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-182">Invoice is posted in Fabrikam East for Fabrikam East customer 4000</span></span>
 
-| Tili:                             | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-183">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-183">Account</span></span>                             | <span data-ttu-id="6ba48-184">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-184">Debit amount</span></span> | <span data-ttu-id="6ba48-185">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-185">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Myyntireskontra (Fabrikam East) | 600,00       |               |
-| Myynti (Fabrikam East)               |              | 600,00        |
+| <span data-ttu-id="6ba48-186">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-186">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="6ba48-187">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-187">600.00</span></span>       |               |
+| <span data-ttu-id="6ba48-188">Myynti (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-188">Sales (Fabrikam East)</span></span>               |              | <span data-ttu-id="6ba48-189">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-189">600.00</span></span>        |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Maksu vastaanotetaan ja kirjataan Fabrikamiin Fabrikamin asiakkaalle 4000
+### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a><span data-ttu-id="6ba48-190">Maksu vastaanotetaan ja kirjataan Fabrikamiin Fabrikamin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-190">Payment is received and posted in Fabrikam for Fabrikam customer 4000</span></span>
 
-| Tili:                        | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-191">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-191">Account</span></span>                        | <span data-ttu-id="6ba48-192">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-192">Debit amount</span></span> | <span data-ttu-id="6ba48-193">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-193">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Käteinen (Fabrikam)                | 600,00       |               |
-| Myyntireskontra (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="6ba48-194">Käteinen (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-194">Cash (Fabrikam)</span></span>                | <span data-ttu-id="6ba48-195">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-195">600.00</span></span>       |               |
+| <span data-ttu-id="6ba48-196">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-196">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="6ba48-197">600,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-197">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="6ba48-198">Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa</span><span class="sxs-lookup"><span data-stu-id="6ba48-198">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Kirjaus Fabrikamiin**
+<span data-ttu-id="6ba48-199">**Kirjaus Fabrikamiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-199">**Fabrikam posting**</span></span>
 
-| Tili:                         | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-200">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-200">Account</span></span>                         | <span data-ttu-id="6ba48-201">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-201">Debit amount</span></span> | <span data-ttu-id="6ba48-202">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-202">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Myyntireskontra (Fabrikam)  | 580,00       |               |
-| Saaja Fabrikam East (Fabrikam) |              | 580,00        |
+| <span data-ttu-id="6ba48-203">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-203">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="6ba48-204">580,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-204">580.00</span></span>       |               |
+| <span data-ttu-id="6ba48-205">Saaja Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-205">Due to Fabrikam East (Fabrikam)</span></span> |              | <span data-ttu-id="6ba48-206">580,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-206">580.00</span></span>        |
 
-**Kirjaus Fabrikam Eastiin**
+<span data-ttu-id="6ba48-207">**Kirjaus Fabrikam Eastiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-207">**Fabrikam East posting**</span></span>
 
-| Tili:                             | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-208">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-208">Account</span></span>                             | <span data-ttu-id="6ba48-209">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-209">Debit amount</span></span> | <span data-ttu-id="6ba48-210">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-210">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Maksaja Fabrikam (Fabrikam East)   | 580,00       |               |
-| Myyntireskontra (Fabrikam East) |              | 580,00        |
-| Käteisalennus (Fabrikam East)       | 20,00        |               |
-| Myyntireskontra (Fabrikam East) |              | 20,00         |
+| <span data-ttu-id="6ba48-211">Maksaja Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-211">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="6ba48-212">580,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-212">580.00</span></span>       |               |
+| <span data-ttu-id="6ba48-213">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-213">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="6ba48-214">580,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-214">580.00</span></span>        |
+| <span data-ttu-id="6ba48-215">Käteisalennus (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-215">Cash discount (Fabrikam East)</span></span>       | <span data-ttu-id="6ba48-216">20,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-216">20.00</span></span>        |               |
+| <span data-ttu-id="6ba48-217">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-217">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="6ba48-218">20,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-218">20.00</span></span>         |
 
-## <a name="example-3-customer-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-gain"></a>Esimerkki 3: Asiakkaan laskun ja toteutuneen vaihtokurssivoiton maksaminen toisesta yrityksestä
-Fabrikam vastaanottaa 600,00 euron (EUR) maksun Fabrikamin asiakkaalle 4000, Northwind Traders. Maksu selvitetään asiakkaan 4000 (Fabrikam East) avoimen laskun kanssa. Valuuttakurssivoittotapahtuma muodostetaan selvitysprosessin aikana.
+## <a name="example-3-customer-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-gain"></a><span data-ttu-id="6ba48-219">Esimerkki 3: Asiakkaan laskun ja toteutuneen vaihtokurssivoiton maksaminen toisesta yrityksestä</span><span class="sxs-lookup"><span data-stu-id="6ba48-219">Example 3: Customer payment of invoice from another legal entity with realized exchange rate gain</span></span>
+<span data-ttu-id="6ba48-220">Fabrikam vastaanottaa 600,00 euron (EUR) maksun Fabrikamin asiakkaalle 4000, Northwind Traders.</span><span class="sxs-lookup"><span data-stu-id="6ba48-220">Fabrikam receives a payment of 600.00 euros (EUR) for Fabrikam customer 4000, Northwind Traders.</span></span> <span data-ttu-id="6ba48-221">Maksu selvitetään asiakkaan 4000 (Fabrikam East) avoimen laskun kanssa.</span><span class="sxs-lookup"><span data-stu-id="6ba48-221">The payment is settled with an open invoice for customer 4000 in Fabrikam East.</span></span> <span data-ttu-id="6ba48-222">Valuuttakurssivoittotapahtuma muodostetaan selvitysprosessin aikana.</span><span class="sxs-lookup"><span data-stu-id="6ba48-222">A currency exchange gain transaction is generated during the settlement process.</span></span>
 
--   Euron (EUR) ja Yhdysvaltain dollarin (USD) vaihtokurssi laskun päivämääränä: 1,2062
--   Euron ja Yhdysvaltain dollarin vaihtokurssi maksun päivämääränä: 1,2277
+-   <span data-ttu-id="6ba48-223">Euron (EUR) ja Yhdysvaltain dollarin (USD) vaihtokurssi laskun päivämääränä: 1,2062</span><span class="sxs-lookup"><span data-stu-id="6ba48-223">Exchange rate for EUR to U.S. dollars (USD) as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="6ba48-224">Euron ja Yhdysvaltain dollarin vaihtokurssi maksun päivämääränä: 1,2277</span><span class="sxs-lookup"><span data-stu-id="6ba48-224">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Lasku kirjataan Fabrikam Eastiin Fabrikam Westin asiakkaalle 4000
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a><span data-ttu-id="6ba48-225">Lasku kirjataan Fabrikam Eastiin Fabrikam Westin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-225">Invoice is posted in Fabrikam East for Fabrikam East customer 4000</span></span>
 
-| Tili:                             | Veloitussumma:            | Hyvityssumma:           |
+| <span data-ttu-id="6ba48-226">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-226">Account</span></span>                             | <span data-ttu-id="6ba48-227">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-227">Debit amount</span></span>            | <span data-ttu-id="6ba48-228">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-228">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Myyntireskontra (Fabrikam East) | 600,00 (EUR) / 723,72 (USD) |                         |
-| Myynti (Fabrikam East)               |                         | 600,00 (EUR) / 723,72 (USD) |
+| <span data-ttu-id="6ba48-229">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-229">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="6ba48-230">600,00 (EUR) / 723,72 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-230">600.00 EUR / 723.72 USD</span></span> |                         |
+| <span data-ttu-id="6ba48-231">Myynti (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-231">Sales (Fabrikam East)</span></span>               |                         | <span data-ttu-id="6ba48-232">600,00 (EUR) / 723,72 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-232">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Maksu vastaanotetaan ja kirjataan Fabrikamiin Fabrikamin asiakkaalle 4000
+### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a><span data-ttu-id="6ba48-233">Maksu vastaanotetaan ja kirjataan Fabrikamiin Fabrikamin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-233">Payment is received and posted in Fabrikam for Fabrikam customer 4000</span></span>
 
-| Tili:                        | Veloitussumma:            | Hyvityssumma:           |
+| <span data-ttu-id="6ba48-234">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-234">Account</span></span>                        | <span data-ttu-id="6ba48-235">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-235">Debit amount</span></span>            | <span data-ttu-id="6ba48-236">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-236">Credit amount</span></span>           |
 |--------------------------------|-------------------------|-------------------------|
-| Käteinen (Fabrikam)                | 600,00 (EUR) / 736,62 (USD) |                         |
-| Myyntireskontra (Fabrikam) |                         | 600,00 (EUR) / 736,62 (USD) |
+| <span data-ttu-id="6ba48-237">Käteinen (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-237">Cash (Fabrikam)</span></span>                | <span data-ttu-id="6ba48-238">600,00 (EUR) / 736,62 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-238">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="6ba48-239">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-239">Accounts receivable (Fabrikam)</span></span> |                         | <span data-ttu-id="6ba48-240">600,00 (EUR) / 736,62 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-240">600.00 EUR / 736.62 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="6ba48-241">Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa</span><span class="sxs-lookup"><span data-stu-id="6ba48-241">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Kirjaus Fabrikamiin**
+<span data-ttu-id="6ba48-242">**Kirjaus Fabrikamiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-242">**Fabrikam posting**</span></span>
 
-| Tili:                         | Veloitussumma:            | Hyvityssumma:           |
+| <span data-ttu-id="6ba48-243">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-243">Account</span></span>                         | <span data-ttu-id="6ba48-244">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-244">Debit amount</span></span>            | <span data-ttu-id="6ba48-245">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-245">Credit amount</span></span>           |
 |---------------------------------|-------------------------|-------------------------|
-| Myyntireskontra (Fabrikam)  | 600,00 (EUR) / 736,62 (USD) |                         |
-| Saaja Fabrikam East (Fabrikam) |                         | 600,00 (EUR) / 736,62 (USD) |
-| Saaja Fabrikam East (Fabrikam) | 0,00 (EUR) / 12,90 (USD)    |                         |
-| Realisoitunut voitto (Fabrikam)        |                         | 0,00 (EUR) / 12,90 (USD)    |
+| <span data-ttu-id="6ba48-246">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-246">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="6ba48-247">600,00 (EUR) / 736,62 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-247">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="6ba48-248">Saaja Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-248">Due to Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="6ba48-249">600,00 (EUR) / 736,62 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-249">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="6ba48-250">Saaja Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-250">Due to Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="6ba48-251">0,00 (EUR) / 12,90 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-251">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="6ba48-252">Realisoitunut voitto (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-252">Realized gain (Fabrikam)</span></span>        |                         | <span data-ttu-id="6ba48-253">0,00 (EUR) / 12,90 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-253">0.00 EUR / 12.90 USD</span></span>    |
 
-**Kirjaus Fabrikam Eastiin**
+<span data-ttu-id="6ba48-254">**Kirjaus Fabrikam Eastiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-254">**Fabrikam East posting**</span></span>
 
-| Tili:                             | Veloitussumma:            | Hyvityssumma:           |
+| <span data-ttu-id="6ba48-255">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-255">Account</span></span>                             | <span data-ttu-id="6ba48-256">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-256">Debit amount</span></span>            | <span data-ttu-id="6ba48-257">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-257">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Maksaja Fabrikam (Fabrikam East)   | 600,00 (EUR) / 736,62 (USD) |                         |
-| Myyntireskontra (Fabrikam East) |                         | 600,00 (EUR) / 736,62 (USD) |
-| Myyntireskontra (Fabrikam East) | 0,00 (EUR) / 12,90 (USD)    |                         |
-| Maksaja Fabrikam (Fabrikam East)   |                         | 0,00 (EUR) / 12,90 (USD)    |
+| <span data-ttu-id="6ba48-258">Maksaja Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-258">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="6ba48-259">600,00 (EUR) / 736,62 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-259">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="6ba48-260">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-260">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="6ba48-261">600,00 (EUR) / 736,62 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-261">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="6ba48-262">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-262">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="6ba48-263">0,00 (EUR) / 12,90 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-263">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="6ba48-264">Maksaja Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-264">Due from Fabrikam (Fabrikam East)</span></span>   |                         | <span data-ttu-id="6ba48-265">0,00 (EUR) / 12,90 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-265">0.00 EUR / 12.90 USD</span></span>    |
 
-## <a name="example-4-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-gain"></a>Esimerkki 4: Asiakkaan laskun, käteisalennuksen ja toteutuneen vaihtokurssivoiton maksaminen toisesta yrityksestä
-Fabrikam kirjaa Fabrikamin asiakkaan 4000, Northwind Traders, maksun Fabrikam Eastin avoimelle laskulle. Laskussa on käytettävissä käteisalennus, ja arvonlisäverotapahtuma muodostetaan. Maksu selvitetään Fabrikam Eastin avoimen laskun kanssa. Valuuttakurssivoittotapahtuma muodostetaan selvitysprosessin aikana. Käteisalennus kirjataan laskutusyritykseen (Fabrikam Eastiin) ja vaihtokurssivoitto maksutapahtuman yritykseen (Fabrikamiin).
+## <a name="example-4-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-gain"></a><span data-ttu-id="6ba48-266">Esimerkki 4: Asiakkaan laskun, käteisalennuksen ja toteutuneen vaihtokurssivoiton maksaminen toisesta yrityksestä</span><span class="sxs-lookup"><span data-stu-id="6ba48-266">Example 4: Customer payment of invoice from another legal entity with cash discount and realized exchange rate gain</span></span>
+<span data-ttu-id="6ba48-267">Fabrikam kirjaa Fabrikamin asiakkaan 4000, Northwind Traders, maksun Fabrikam Eastin avoimelle laskulle.</span><span class="sxs-lookup"><span data-stu-id="6ba48-267">Fabrikam posts a payment for Fabrikam customer 4000, Northwind Traders, for an open invoice in Fabrikam East.</span></span> <span data-ttu-id="6ba48-268">Laskussa on käytettävissä käteisalennus, ja arvonlisäverotapahtuma muodostetaan.</span><span class="sxs-lookup"><span data-stu-id="6ba48-268">The invoice has a cash discount available, and a sales tax transaction is generated.</span></span> <span data-ttu-id="6ba48-269">Maksu selvitetään Fabrikam Eastin avoimen laskun kanssa.</span><span class="sxs-lookup"><span data-stu-id="6ba48-269">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="6ba48-270">Valuuttakurssivoittotapahtuma muodostetaan selvitysprosessin aikana.</span><span class="sxs-lookup"><span data-stu-id="6ba48-270">A currency exchange gain transaction is generated during the settlement process.</span></span> <span data-ttu-id="6ba48-271">Käteisalennus kirjataan laskutusyritykseen (Fabrikam Eastiin) ja vaihtokurssivoitto maksutapahtuman yritykseen (Fabrikamiin).</span><span class="sxs-lookup"><span data-stu-id="6ba48-271">The cash discount is posted to the legal entity of the invoice (Fabrikam East), and the currency exchange gain is posted to the legal entity of the payment (Fabrikam).</span></span>
 
--   Euron ja Yhdysvaltain dollarin vaihtokurssi laskun päivämääränä: 1,2062
--   Euron ja Yhdysvaltain dollarin vaihtokurssi maksun päivämääränä: 1,2277
+-   <span data-ttu-id="6ba48-272">Euron ja Yhdysvaltain dollarin vaihtokurssi laskun päivämääränä: 1,2062</span><span class="sxs-lookup"><span data-stu-id="6ba48-272">Exchange rate for EUR to USD as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="6ba48-273">Euron ja Yhdysvaltain dollarin vaihtokurssi maksun päivämääränä: 1,2277</span><span class="sxs-lookup"><span data-stu-id="6ba48-273">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="free-text-invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-customer-4000"></a>Vapaatekstilasku kirjataan ja verotapahtuma muodostetaan Fabrikam Eastiin asiakkaalle 4000
+### <a name="free-text-invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-customer-4000"></a><span data-ttu-id="6ba48-274">Vapaatekstilasku kirjataan ja verotapahtuma muodostetaan Fabrikam Eastiin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-274">Free text invoice is posted and a tax transaction is generated in Fabrikam East for customer 4000</span></span>
 
-| Tili:                             | Veloitussumma:            | Hyvityssumma:           |
+| <span data-ttu-id="6ba48-275">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-275">Account</span></span>                             | <span data-ttu-id="6ba48-276">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-276">Debit amount</span></span>            | <span data-ttu-id="6ba48-277">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-277">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Myyntireskontra (Fabrikam East) | 638,22 (EUR) / 769,82 (USD) |                         |
-| Myynti (Fabrikam East)               |                         | 600,00 (EUR) / 723,72 (USD) |
-| Arvonlisävero (Fabrikam East)           |                         | 38,22 (EUR) / 46,10 (USD)   |
+| <span data-ttu-id="6ba48-278">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-278">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="6ba48-279">638,22 (EUR) / 769,82 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-279">638.22 EUR / 769.82 USD</span></span> |                         |
+| <span data-ttu-id="6ba48-280">Myynti (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-280">Sales (Fabrikam East)</span></span>               |                         | <span data-ttu-id="6ba48-281">600,00 (EUR) / 723,72 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-281">600.00 EUR / 723.72 USD</span></span> |
+| <span data-ttu-id="6ba48-282">Arvonlisävero (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-282">Sales tax (Fabrikam East)</span></span>           |                         | <span data-ttu-id="6ba48-283">38,22 (EUR) / 46,10 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-283">38.22 EUR / 46.10 USD</span></span>   |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a>Maksu vastaanotetaan ja kirjataan Fabrikamiin asiakkaalle 4000
+### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a><span data-ttu-id="6ba48-284">Maksu vastaanotetaan ja kirjataan Fabrikamiin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-284">Payment is received and posted in Fabrikam for customer 4000</span></span>
 
-| Tili:                        | Veloitussumma:            | Hyvityssumma:           |
+| <span data-ttu-id="6ba48-285">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-285">Account</span></span>                        | <span data-ttu-id="6ba48-286">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-286">Debit amount</span></span>            | <span data-ttu-id="6ba48-287">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-287">Credit amount</span></span>           |
 |--------------------------------|-------------------------|-------------------------|
-| Käteinen (Fabrikam)                | 626,22 (EUR) / 768,81 (USD) |                         |
-| Myyntireskontra (Fabrikam) |                         | 626,22 (EUR) / 768,81 (USD) |
+| <span data-ttu-id="6ba48-288">Käteinen (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-288">Cash (Fabrikam)</span></span>                | <span data-ttu-id="6ba48-289">626,22 (EUR) / 768,81 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-289">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="6ba48-290">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-290">Accounts receivable (Fabrikam)</span></span> |                         | <span data-ttu-id="6ba48-291">626,22 (EUR) / 768,81 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-291">626.22 EUR / 768.81 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="6ba48-292">Fabrikamin maksu selvitetään Fabrikam Eastin laskun kanssa</span><span class="sxs-lookup"><span data-stu-id="6ba48-292">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Kirjaus Fabrikamiin**
+<span data-ttu-id="6ba48-293">**Kirjaus Fabrikamiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-293">**Fabrikam posting**</span></span>
 
-| Tili:                         | Veloitussumma:            | Hyvityssumma:           |
+| <span data-ttu-id="6ba48-294">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-294">Account</span></span>                         | <span data-ttu-id="6ba48-295">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-295">Debit amount</span></span>            | <span data-ttu-id="6ba48-296">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-296">Credit amount</span></span>           |
 |---------------------------------|-------------------------|-------------------------|
-| Myyntireskontra (Fabrikam)  | 626,22 (EUR) / 768,81 (USD) |                         |
-| Saaja Fabrikam East (Fabrikam) |                         | 626,22 (EUR) / 768,81 (USD) |
-| Saaja Fabrikam East (Fabrikam) | 0,00 (EUR) / 13,46 (USD)    |                         |
-| Realisoitunut voitto (Fabrikam)        |                         | 0,00 (EUR) / 13,46 (USD)    |
+| <span data-ttu-id="6ba48-297">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-297">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="6ba48-298">626,22 (EUR) / 768,81 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-298">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="6ba48-299">Saaja Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-299">Due to Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="6ba48-300">626,22 (EUR) / 768,81 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-300">626.22 EUR / 768.81 USD</span></span> |
+| <span data-ttu-id="6ba48-301">Saaja Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-301">Due to Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="6ba48-302">0,00 (EUR) / 13,46 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-302">0.00 EUR / 13.46 USD</span></span>    |                         |
+| <span data-ttu-id="6ba48-303">Realisoitunut voitto (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-303">Realized gain (Fabrikam)</span></span>        |                         | <span data-ttu-id="6ba48-304">0,00 (EUR) / 13,46 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-304">0.00 EUR / 13.46 USD</span></span>    |
 
-**Kirjaus Fabrikam Eastiin**
+<span data-ttu-id="6ba48-305">**Kirjaus Fabrikam Eastiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-305">**Fabrikam East posting**</span></span>
 
-| Tili:                             | Veloitussumma:            | Hyvityssumma:           |
+| <span data-ttu-id="6ba48-306">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-306">Account</span></span>                             | <span data-ttu-id="6ba48-307">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-307">Debit amount</span></span>            | <span data-ttu-id="6ba48-308">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-308">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Maksaja Fabrikam (Fabrikam East)   | 626,22 (EUR) / 768,81 (USD) |                         |
-| Myyntireskontra (Fabrikam East) |                         | 626,22 (EUR) / 768,81 (USD) |
-| Myyntireskontra (Fabrikam East)  | 0,00 (EUR) / 13,46 (USD)    |                         |
-| Maksaja Fabrikam (Fabrikam East)   |                         | 0,00 (EUR) / 13,46 (USD)    |
-| Käteisalennus (Fabrikam East)       | 12,00 (EUR) / 14,47 (USD)   |                         |
-| Myyntireskontra (Fabrikam East) |                         | 12,00 (EUR) / 14,47 (USD)   |
+| <span data-ttu-id="6ba48-309">Maksaja Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-309">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="6ba48-310">626,22 (EUR) / 768,81 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-310">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="6ba48-311">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-311">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="6ba48-312">626,22 (EUR) / 768,81 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-312">626.22 EUR / 768.81 USD</span></span> |
+| <span data-ttu-id="6ba48-313">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-313">Accounts receivable (Fabrikam East</span></span>  | <span data-ttu-id="6ba48-314">0,00 (EUR) / 13,46 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-314">0.00 EUR / 13.46 USD</span></span>    |                         |
+| <span data-ttu-id="6ba48-315">Maksaja Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-315">Due from Fabrikam (Fabrikam East)</span></span>   |                         | <span data-ttu-id="6ba48-316">0,00 (EUR) / 13,46 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-316">0.00 EUR / 13.46 USD</span></span>    |
+| <span data-ttu-id="6ba48-317">Käteisalennus (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-317">Cash discount (Fabrikam East)</span></span>       | <span data-ttu-id="6ba48-318">12,00 (EUR) / 14,47 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-318">12.00 EUR / 14.47 USD</span></span>   |                         |
+| <span data-ttu-id="6ba48-319">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-319">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="6ba48-320">12,00 (EUR) / 14,47 (USD)</span><span class="sxs-lookup"><span data-stu-id="6ba48-320">12.00 EUR / 14.47 USD</span></span>   |
 
-## <a name="example-5-customer-credit-note-with-primary-payment"></a>Esimerkki 5: Asiakkaan hyvityslasku ja ensisijainen maksu
-Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind Traders. Maksu selvitetään Fabrikam Westin asiakkaan 10000 avoimen laskun ja Fabrikam Eastin asiakkaan 4000 avoimen hyvityslaskun kanssa. Maksu valitaan ensisijaiseksi maksuksi **Selvitä tapahtumat** -sivulla.
+## <a name="example-5-customer-credit-note-with-primary-payment"></a><span data-ttu-id="6ba48-321">Esimerkki 5: Asiakkaan hyvityslasku ja ensisijainen maksu</span><span class="sxs-lookup"><span data-stu-id="6ba48-321">Example 5: Customer credit note with primary payment</span></span>
+<span data-ttu-id="6ba48-322">Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind Traders.</span><span class="sxs-lookup"><span data-stu-id="6ba48-322">Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders.</span></span> <span data-ttu-id="6ba48-323">Maksu selvitetään Fabrikam Westin asiakkaan 10000 avoimen laskun ja Fabrikam Eastin asiakkaan 4000 avoimen hyvityslaskun kanssa.</span><span class="sxs-lookup"><span data-stu-id="6ba48-323">The payment is settled with an open invoice for Fabrikam West customer 10000 and an open credit note for Fabrikam East customer 4000.</span></span> <span data-ttu-id="6ba48-324">Maksu valitaan ensisijaiseksi maksuksi **Selvitä tapahtumat** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="6ba48-324">The payment is selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Lasku kirjataan Fabrikam Westiin asiakkaalle 10000
+### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a><span data-ttu-id="6ba48-325">Lasku kirjataan Fabrikam Westiin asiakkaalle 10000</span><span class="sxs-lookup"><span data-stu-id="6ba48-325">Invoice is posted to Fabrikam West for customer 10000</span></span>
 
-| Tili                             | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-326">Tili</span><span class="sxs-lookup"><span data-stu-id="6ba48-326">Account</span></span>                             | <span data-ttu-id="6ba48-327">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-327">Debit amount</span></span> | <span data-ttu-id="6ba48-328">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-328">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Myyntireskontra (Fabrikam West) | 100,00       |               |
-| Myynti (Fabrikam West)               |              | 100,00        |
+| <span data-ttu-id="6ba48-329">Myyntireskontra (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="6ba48-329">Accounts receivable (Fabrikam West)</span></span> | <span data-ttu-id="6ba48-330">100,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-330">100.00</span></span>       |               |
+| <span data-ttu-id="6ba48-331">Myynti (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="6ba48-331">Sales (Fabrikam West)</span></span>               |              | <span data-ttu-id="6ba48-332">100,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-332">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>Hyvityslasku kirjataan Fabrikam Eastiin asiakkaalle 4000
+### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a><span data-ttu-id="6ba48-333">Hyvityslasku kirjataan Fabrikam Eastiin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-333">Credit note is posted to Fabrikam East for customer 4000</span></span>
 
-| Tili:                             | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-334">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-334">Account</span></span>                             | <span data-ttu-id="6ba48-335">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-335">Debit amount</span></span> | <span data-ttu-id="6ba48-336">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-336">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Myyntipalautukset (Fabrikam East)       | 25,00        |               |
-| Myyntireskontra (Fabrikam East) |              | 25,00         |
+| <span data-ttu-id="6ba48-337">Myyntipalautukset (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-337">Sales returns (Fabrikam East)</span></span>       | <span data-ttu-id="6ba48-338">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-338">25.00</span></span>        |               |
+| <span data-ttu-id="6ba48-339">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-339">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="6ba48-340">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-340">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a>Maksu kirjataan Fabrikamiin asiakkaalle 4000
+### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a><span data-ttu-id="6ba48-341">Maksu kirjataan Fabrikamiin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-341">Payment is posted to Fabrikam for customer 4000</span></span>
 
-| Tili:                        | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-342">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-342">Account</span></span>                        | <span data-ttu-id="6ba48-343">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-343">Debit amount</span></span> | <span data-ttu-id="6ba48-344">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-344">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Käteinen (Fabrikam)                | 75,00        |               |
-| Myyntireskontra (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="6ba48-345">Käteinen (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-345">Cash (Fabrikam)</span></span>                | <span data-ttu-id="6ba48-346">75,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-346">75.00</span></span>        |               |
+| <span data-ttu-id="6ba48-347">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-347">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="6ba48-348">75,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-348">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikamin maksu selvitetään Fabrikam Westin laskun ja Fabrikam Eastin hyvityslaskun kanssa
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="6ba48-349">Fabrikamin maksu selvitetään Fabrikam Westin laskun ja Fabrikam Eastin hyvityslaskun kanssa</span><span class="sxs-lookup"><span data-stu-id="6ba48-349">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Kirjaus Fabrikamiin**
+<span data-ttu-id="6ba48-350">**Kirjaus Fabrikamiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-350">**Fabrikam posting**</span></span>
 
-| Tili:                           | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-351">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-351">Account</span></span>                           | <span data-ttu-id="6ba48-352">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-352">Debit amount</span></span> | <span data-ttu-id="6ba48-353">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-353">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Maksaja Fabrikam East (Fabrikam) | 25,00        |               |
-| Myyntireskontra (Fabrikam)    |              | 25,00         |
-| Myyntireskontra (Fabrikam)    | 100,00       |               |
-| Saaja Fabrikam West (Fabrikam)   |              | 100,00        |
+| <span data-ttu-id="6ba48-354">Maksaja Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-354">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="6ba48-355">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-355">25.00</span></span>        |               |
+| <span data-ttu-id="6ba48-356">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-356">Accounts receivable (Fabrikam)</span></span>    |              | <span data-ttu-id="6ba48-357">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-357">25.00</span></span>         |
+| <span data-ttu-id="6ba48-358">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-358">Accounts receivable (Fabrikam)</span></span>    | <span data-ttu-id="6ba48-359">100,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-359">100.00</span></span>       |               |
+| <span data-ttu-id="6ba48-360">Saaja Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-360">Due to Fabrikam West (Fabrikam)</span></span>   |              | <span data-ttu-id="6ba48-361">100,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-361">100.00</span></span>        |
 
-**Kirjaus Fabrikam Eastiin**
+<span data-ttu-id="6ba48-362">**Kirjaus Fabrikam Eastiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-362">**Fabrikam East posting**</span></span>
 
-| Tili:                             | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-363">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-363">Account</span></span>                             | <span data-ttu-id="6ba48-364">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-364">Debit amount</span></span> | <span data-ttu-id="6ba48-365">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-365">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Myyntireskontra (Fabrikam East) | 25,00        |               |
-| Saaja Fabrikam (Fabrikam East)     |              | 25,00         |
+| <span data-ttu-id="6ba48-366">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-366">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="6ba48-367">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-367">25.00</span></span>        |               |
+| <span data-ttu-id="6ba48-368">Saaja Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-368">Due to Fabrikam (Fabrikam East)</span></span>     |              | <span data-ttu-id="6ba48-369">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-369">25.00</span></span>         |
 
-**Kirjaus Fabrikam Westiin**
+<span data-ttu-id="6ba48-370">**Kirjaus Fabrikam Westiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-370">**Fabrikam West posting**</span></span>
 
-| Tili:                             | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-371">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-371">Account</span></span>                             | <span data-ttu-id="6ba48-372">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-372">Debit amount</span></span> | <span data-ttu-id="6ba48-373">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-373">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Maksaja Fabrikam (Fabrikam West)   | 100,00       |               |
-| Myyntireskontra (Fabrikam West) |              | 100,00        |
+| <span data-ttu-id="6ba48-374">Maksaja Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="6ba48-374">Due from Fabrikam (Fabrikam West)</span></span>   | <span data-ttu-id="6ba48-375">100,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-375">100.00</span></span>       |               |
+| <span data-ttu-id="6ba48-376">Myyntireskontra (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="6ba48-376">Accounts receivable (Fabrikam West)</span></span> |              | <span data-ttu-id="6ba48-377">100,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-377">100.00</span></span>        |
 
-## <a name="example-6-customer-credit-note-without-primary-payment"></a>Esimerkki 6: Asiakkaan hyvityslasku ilman ensisijaista maksua
-Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind Traders. Maksu selvitetään Fabrikam Westin asiakkaan 10000 avoimen laskun ja Fabrikam Eastin asiakkaan 4000 avoimen hyvityslaskun kanssa. Maksu ei valita ensisijaiseksi maksuksi **Selvitä tapahtumat** -sivulla.
+## <a name="example-6-customer-credit-note-without-primary-payment"></a><span data-ttu-id="6ba48-378">Esimerkki 6: Asiakkaan hyvityslasku ilman ensisijaista maksua</span><span class="sxs-lookup"><span data-stu-id="6ba48-378">Example 6: Customer credit note without primary payment</span></span>
+<span data-ttu-id="6ba48-379">Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind Traders.</span><span class="sxs-lookup"><span data-stu-id="6ba48-379">Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders.</span></span> <span data-ttu-id="6ba48-380">Maksu selvitetään Fabrikam Westin asiakkaan 10000 avoimen laskun ja Fabrikam Eastin asiakkaan 4000 avoimen hyvityslaskun kanssa.</span><span class="sxs-lookup"><span data-stu-id="6ba48-380">The payment is settled with an open invoice for Fabrikam West customer 10000 and an open credit note for Fabrikam East customer 4000.</span></span> <span data-ttu-id="6ba48-381">Maksu ei valita ensisijaiseksi maksuksi **Selvitä tapahtumat** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="6ba48-381">The payment isn't selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Lasku kirjataan Fabrikam Westiin asiakkaalle 10000
+### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a><span data-ttu-id="6ba48-382">Lasku kirjataan Fabrikam Westiin asiakkaalle 10000</span><span class="sxs-lookup"><span data-stu-id="6ba48-382">Invoice is posted to Fabrikam West for customer 10000</span></span>
 
-| Tili                             | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-383">Tili</span><span class="sxs-lookup"><span data-stu-id="6ba48-383">Account</span></span>                             | <span data-ttu-id="6ba48-384">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-384">Debit amount</span></span> | <span data-ttu-id="6ba48-385">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-385">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Myyntireskontra (Fabrikam West) | 100,00       |               |
-| Myynti (Fabrikam West)               |              | 100,00        |
+| <span data-ttu-id="6ba48-386">Myyntireskontra (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="6ba48-386">Accounts receivable (Fabrikam West)</span></span> | <span data-ttu-id="6ba48-387">100,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-387">100.00</span></span>       |               |
+| <span data-ttu-id="6ba48-388">Myynti (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="6ba48-388">Sales (Fabrikam West)</span></span>               |              | <span data-ttu-id="6ba48-389">100,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-389">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>Hyvityslasku kirjataan Fabrikam Eastiin asiakkaalle 4000
+### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a><span data-ttu-id="6ba48-390">Hyvityslasku kirjataan Fabrikam Eastiin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-390">Credit note is posted to Fabrikam East for customer 4000</span></span>
 
-| Tili:                             | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-391">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-391">Account</span></span>                             | <span data-ttu-id="6ba48-392">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-392">Debit amount</span></span> | <span data-ttu-id="6ba48-393">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-393">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Myyntipalautukset (Fabrikam East)       | 25,00        |               |
-| Myyntireskontra (Fabrikam East) |              | 25,00         |
+| <span data-ttu-id="6ba48-394">Myyntipalautukset (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-394">Sales returns (Fabrikam East)</span></span>       | <span data-ttu-id="6ba48-395">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-395">25.00</span></span>        |               |
+| <span data-ttu-id="6ba48-396">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-396">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="6ba48-397">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-397">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a>Maksu kirjataan Fabrikamiin asiakkaalle 4000
+### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a><span data-ttu-id="6ba48-398">Maksu kirjataan Fabrikamiin asiakkaalle 4000</span><span class="sxs-lookup"><span data-stu-id="6ba48-398">Payment is posted to Fabrikam for customer 4000</span></span>
 
-| Tili:                        | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-399">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-399">Account</span></span>                        | <span data-ttu-id="6ba48-400">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-400">Debit amount</span></span> | <span data-ttu-id="6ba48-401">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-401">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Käteinen (Fabrikam)                | 75,00        |               |
-| Myyntireskontra (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="6ba48-402">Käteinen (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-402">Cash (Fabrikam)</span></span>                | <span data-ttu-id="6ba48-403">75,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-403">75.00</span></span>        |               |
+| <span data-ttu-id="6ba48-404">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-404">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="6ba48-405">75,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-405">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikamin maksu selvitetään Fabrikam Westin laskun ja Fabrikam Eastin hyvityslaskun kanssa
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="6ba48-406">Fabrikamin maksu selvitetään Fabrikam Westin laskun ja Fabrikam Eastin hyvityslaskun kanssa</span><span class="sxs-lookup"><span data-stu-id="6ba48-406">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Kirjaus Fabrikamiin**
+<span data-ttu-id="6ba48-407">**Kirjaus Fabrikamiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-407">**Fabrikam posting**</span></span>
 
-| Tili:                         | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-408">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-408">Account</span></span>                         | <span data-ttu-id="6ba48-409">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-409">Debit amount</span></span> | <span data-ttu-id="6ba48-410">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-410">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Myyntireskontra (Fabrikam)  | 75,00        |               |
-| Saaja Fabrikam West (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="6ba48-411">Myyntireskontra (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-411">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="6ba48-412">75,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-412">75.00</span></span>        |               |
+| <span data-ttu-id="6ba48-413">Saaja Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="6ba48-413">Due to Fabrikam West (Fabrikam)</span></span> |              | <span data-ttu-id="6ba48-414">75,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-414">75.00</span></span>         |
 
-**Kirjaus Fabrikam Eastiin**
+<span data-ttu-id="6ba48-415">**Kirjaus Fabrikam Eastiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-415">**Fabrikam East posting**</span></span>
 
-| Tili:                              | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-416">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-416">Account</span></span>                              | <span data-ttu-id="6ba48-417">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-417">Debit amount</span></span> | <span data-ttu-id="6ba48-418">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-418">Credit amount</span></span> |
 |--------------------------------------|--------------|---------------|
-| Myyntireskontra (Fabrikam East)  | 25,00        |               |
-| Saaja Fabrikam West (Fabrikam East) |              | 25,00         |
+| <span data-ttu-id="6ba48-419">Myyntireskontra (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-419">Accounts receivable (Fabrikam East)</span></span>  | <span data-ttu-id="6ba48-420">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-420">25.00</span></span>        |               |
+| <span data-ttu-id="6ba48-421">Saaja Fabrikam West (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="6ba48-421">Due to Fabrikam West (Fabrikam East)</span></span> |              | <span data-ttu-id="6ba48-422">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-422">25.00</span></span>         |
 
-**Kirjaus Fabrikam Westiin**
+<span data-ttu-id="6ba48-423">**Kirjaus Fabrikam Westiin**</span><span class="sxs-lookup"><span data-stu-id="6ba48-423">**Fabrikam West posting**</span></span>
 
-| Tili:                                | Veloitussumma: | Hyvityssumma: |
+| <span data-ttu-id="6ba48-424">Tili:</span><span class="sxs-lookup"><span data-stu-id="6ba48-424">Account</span></span>                                | <span data-ttu-id="6ba48-425">Veloitussumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-425">Debit amount</span></span> | <span data-ttu-id="6ba48-426">Hyvityssumma:</span><span class="sxs-lookup"><span data-stu-id="6ba48-426">Credit amount</span></span> |
 |----------------------------------------|--------------|---------------|
-| Maksaja Fabrikam (Fabrikam West)      | 75,00        |               |
-| Myyntireskontra (Fabrikam West)    |              | 75,00         |
-| Maksaja Fabrikam East (Fabrikam West) | 25,00        |               |
-| Myyntireskontra (Fabrikam West)    |              | 25,00         |
+| <span data-ttu-id="6ba48-427">Maksaja Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="6ba48-427">Due from Fabrikam (Fabrikam West)</span></span>      | <span data-ttu-id="6ba48-428">75,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-428">75.00</span></span>        |               |
+| <span data-ttu-id="6ba48-429">Myyntireskontra (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="6ba48-429">Accounts receivable (Fabrikam West)</span></span>    |              | <span data-ttu-id="6ba48-430">75,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-430">75.00</span></span>         |
+| <span data-ttu-id="6ba48-431">Maksaja Fabrikam East (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="6ba48-431">Due from Fabrikam East (Fabrikam West)</span></span> | <span data-ttu-id="6ba48-432">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-432">25.00</span></span>        |               |
+| <span data-ttu-id="6ba48-433">Myyntireskontra (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="6ba48-433">Accounts receivable (Fabrikam West)</span></span>    |              | <span data-ttu-id="6ba48-434">25,00</span><span class="sxs-lookup"><span data-stu-id="6ba48-434">25.00</span></span>         |
 
 
 

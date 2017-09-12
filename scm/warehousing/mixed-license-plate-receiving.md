@@ -14,7 +14,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
@@ -24,29 +24,29 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="mixed-license-plate-receiving"></a>Yhdistetyn rekisterikilven vastaanotto
+# <a name="mixed-license-plate-receiving"></a><span data-ttu-id="58c36-103">Yhdistetyn rekisterikilven vastaanotto</span><span class="sxs-lookup"><span data-stu-id="58c36-103">Mixed license plate receiving</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Yhdistetyn rekisterikilven vastaanoton avulla voit muodostaa useista nimikkeistä koostuvia rekisterikilpiä ennen rekisteröintiä painopanotyön luontia. 
+<span data-ttu-id="58c36-104">Yhdistetyn rekisterikilven vastaanoton avulla voit muodostaa useista nimikkeistä koostuvia rekisterikilpiä ennen rekisteröintiä painopanotyön luontia.</span><span class="sxs-lookup"><span data-stu-id="58c36-104">Mixed license plate receiving allows you to build a license plate consisting of multiple items before you register and create put-away work.</span></span> 
 
-Useista nimikkeistä koostuvaa rekisterikilpeä ei tarvitse jakaa vastaanottolaiturilla kunkin nimikkeen rekisteröintiä varten. 
+<span data-ttu-id="58c36-105">Useista nimikkeistä koostuvaa rekisterikilpeä ei tarvitse jakaa vastaanottolaiturilla kunkin nimikkeen rekisteröintiä varten.</span><span class="sxs-lookup"><span data-stu-id="58c36-105">A license plate that consists of multiple items does not have to be split at the receiving dock for you to register each item.</span></span> 
 
-Kun lähdeasiakirjanrivien tunnistamiseen käytetään nimikeperusteista työnkulkua, voit skannata viivakoodit nimikehallinnassa. Jos viivakoodiin on määritetty määrä ja mittayksikkö, nimike ja määrä lisätään automaattisesti yhdistettyyn rekisterikilpeen ja näyttö palautuu uuden nimikkeen skannaustilaan. Voit tällä tavoin tarkastaa kaikki nimikkeet nopeasti ilman, että jokainen vaihe on vahvistettava. 
+<span data-ttu-id="58c36-106">Kun lähdeasiakirjanrivien tunnistamiseen käytetään nimikeperusteista työnkulkua, voit skannata viivakoodit nimikehallinnassa.</span><span class="sxs-lookup"><span data-stu-id="58c36-106">When using an item-related flow to identify the source document lines, you can scan bar codes on the item control.</span></span> <span data-ttu-id="58c36-107">Jos viivakoodiin on määritetty määrä ja mittayksikkö, nimike ja määrä lisätään automaattisesti yhdistettyyn rekisterikilpeen ja näyttö palautuu uuden nimikkeen skannaustilaan.</span><span class="sxs-lookup"><span data-stu-id="58c36-107">If the bar code has a quantity and a unit of measure (UOM) configured on it, the item and quantity will automatically be added to the mixed license plate, and you will be returned to the screen to scan another item.</span></span> <span data-ttu-id="58c36-108">Voit tällä tavoin tarkastaa kaikki nimikkeet nopeasti ilman, että jokainen vaihe on vahvistettava.</span><span class="sxs-lookup"><span data-stu-id="58c36-108">This allows you to quickly scan all the items without having to make a confirmation at each step.</span></span> 
 
-Voit näyttää yhdistetyn rekisterikilven vastaanottovirrassa luettelon nimikkeistä, jotka on jo skannattu rekisterikilpeen. Voit myös muokata tai korvat nimikkeen määrän siellä.
+<span data-ttu-id="58c36-109">Voit näyttää yhdistetyn rekisterikilven vastaanottovirrassa luettelon nimikkeistä, jotka on jo skannattu rekisterikilpeen. Voit myös muokata tai korvat nimikkeen määrän siellä.</span><span class="sxs-lookup"><span data-stu-id="58c36-109">In the flow for mixed license plate receiving, you can display the list of items that are already scanned to the license plate and from here you can modify or correct the quantity of an item.</span></span>
 
-## <a name="where-it-applies"></a>Käyttö
+## <a name="where-it-applies"></a><span data-ttu-id="58c36-110">Käyttö</span><span class="sxs-lookup"><span data-stu-id="58c36-110">Where it applies</span></span>
 
-Yhdistetyn rekisterikilven vastaanotto on mobiililaitteen vastaanottovirta useiden rivien tai nimikkeiden samanaikaista rekisteröintiä ja työn luomista varten. Tämä on kätevää, jos vastaanotat saapuvia rekisterikilpiä, joissa on useita nimikkeitä. 
+<span data-ttu-id="58c36-111">Yhdistetyn rekisterikilven vastaanotto on mobiililaitteen vastaanottovirta useiden rivien tai nimikkeiden samanaikaista rekisteröintiä ja työn luomista varten.</span><span class="sxs-lookup"><span data-stu-id="58c36-111">Mixed license plate receiving is a mobile device receiving flow to register and create work for multiple lines/items at the same time.</span></span> <span data-ttu-id="58c36-112">Tämä on kätevää, jos vastaanotat saapuvia rekisterikilpiä, joissa on useita nimikkeitä.</span><span class="sxs-lookup"><span data-stu-id="58c36-112">This is useful if you receive inbound license plates with multiple items.</span></span> 
 
-## <a name="how-to-set-up-mixed-license-plate-receiving"></a>Yhdistetyn rekisterikilven vastaanoton määrittäminen
-Yhdistetyn rekisterikilven vastaanotto määritetään mobiililaitteen valikkovaihtoehtona.
+## <a name="how-to-set-up-mixed-license-plate-receiving"></a><span data-ttu-id="58c36-113">Yhdistetyn rekisterikilven vastaanoton määrittäminen</span><span class="sxs-lookup"><span data-stu-id="58c36-113">How to set up mixed license plate receiving</span></span>
+<span data-ttu-id="58c36-114">Yhdistetyn rekisterikilven vastaanotto määritetään mobiililaitteen valikkovaihtoehtona.</span><span class="sxs-lookup"><span data-stu-id="58c36-114">Mixed license plate receiving is set up as a mobile device menu item.</span></span>
 
-Sinun on luotava uusi valikkovaihtoehto, jossa tilaksi on määritetty työ, joka ei käytä aiemmin luotua työtä ja joka käyttää jotakin seuraavista menetelmiä:
+<span data-ttu-id="58c36-115">Sinun on luotava uusi valikkovaihtoehto, jossa tilaksi on määritetty työ, joka ei käytä aiemmin luotua työtä ja joka käyttää jotakin seuraavista menetelmiä:</span><span class="sxs-lookup"><span data-stu-id="58c36-115">You need to create a new menu item with mode work that does not use existing work and use one of the following methods:</span></span>
 
-- Yhdistetyn rekisterikilven vastaanotto
-- Yhdistetyn rekisterikilven vastaanotto ja poispano
+- <span data-ttu-id="58c36-116">Yhdistetyn rekisterikilven vastaanotto</span><span class="sxs-lookup"><span data-stu-id="58c36-116">Mixed license plate receiving</span></span>
+- <span data-ttu-id="58c36-117">Yhdistetyn rekisterikilven vastaanotto ja poispano</span><span class="sxs-lookup"><span data-stu-id="58c36-117">Mixed license plate receiving and put away</span></span>
 
-Lähdeasiakirjarivien tunnistamisvaihtoehdot ovat ostotilausnimike, ostotilausrivi, palautustilaus, siirtotilausnimike ja siirtotilausrivi. Nämä vaihtoehdot voivat muuttaa yhden rekisterikilven vastaanottotilauksen. Viimeinen vaihtoehto on kuormanimikkeen mukaan. Voit lisätä rekisterikilpeen useita nimikkeitä mutta vaihtelu useiden kuormien välillä ei ole mahdollista.
+<span data-ttu-id="58c36-118">Lähdeasiakirjarivien tunnistamisvaihtoehdot ovat ostotilausnimike, ostotilausrivi, palautustilaus, siirtotilausnimike ja siirtotilausrivi.</span><span class="sxs-lookup"><span data-stu-id="58c36-118">The options to identify the source document lines are purchase order item, purchase order line, return order, transfer order item, and transfer order line.</span></span> <span data-ttu-id="58c36-119">Nämä vaihtoehdot voivat muuttaa yhden rekisterikilven vastaanottotilauksen.</span><span class="sxs-lookup"><span data-stu-id="58c36-119">These options can change the receiving order on a single license plate.</span></span> <span data-ttu-id="58c36-120">Viimeinen vaihtoehto on kuormanimikkeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="58c36-120">The last option is by load item.</span></span> <span data-ttu-id="58c36-121">Voit lisätä rekisterikilpeen useita nimikkeitä mutta vaihtelu useiden kuormien välillä ei ole mahdollista.</span><span class="sxs-lookup"><span data-stu-id="58c36-121">You can add multiple items to a license plate, but you cannot switch between multiple loads.</span></span>
 

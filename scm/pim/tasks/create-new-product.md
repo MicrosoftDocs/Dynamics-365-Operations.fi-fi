@@ -16,34 +16,34 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 856ad74ce30bb58975f78aeb3fafc6e2e2805c79
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d9307abf5e9543c8a2c880330c4430f5e4c5b340
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-new-product"></a>Luo uusi tuote
+# <a name="create-a-new-product"></a><span data-ttu-id="f8882-103">Luo uusi tuote</span><span class="sxs-lookup"><span data-stu-id="f8882-103">Create a new product</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä tehtävässä esitellään uuden jaetun tuotteen luominen. Tehtävän suorittaa yleensä tuotesuunnittelija. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.
+<span data-ttu-id="f8882-104">Tässä tehtävässä esitellään uuden jaetun tuotteen luominen.</span><span class="sxs-lookup"><span data-stu-id="f8882-104">This task shows how to create a new shared product.</span></span> <span data-ttu-id="f8882-105">Tehtävän suorittaa yleensä tuotesuunnittelija.</span><span class="sxs-lookup"><span data-stu-id="f8882-105">It is usually carried out by a product designer.</span></span> <span data-ttu-id="f8882-106">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="f8882-106">The demo data company used to create this task is USMF.</span></span>
 
-1. Valitse Tuotetietojen hallinta > Tuotteet > Tuotteet.
+1. <span data-ttu-id="f8882-107">Valitse Tuotetietojen hallinta > Tuotteet > Tuotteet.</span><span class="sxs-lookup"><span data-stu-id="f8882-107">Go to Product information management > Products > Products.</span></span>
 
-## <a name="create-a-product"></a>Luo tuote
-1. Valitse Uusi.
-2. Kirjoita arvo Tuotenumero-kenttään.
-    * Jos numerosarjaa ei ole määritetty tuotetunnukselle, se on syötettävä manuaalisesti.  
-3. Kirjoita arvo Tuotteen nimi -kenttään.
-    * Tuotenimen oletusarvoksi määritetään hakunimi. Arvoa voi muuttaa tarvittaessa.  
-4. Valitse OK.
+## <a name="create-a-product"></a><span data-ttu-id="f8882-108">Luo tuote</span><span class="sxs-lookup"><span data-stu-id="f8882-108">Create a product</span></span>
+1. <span data-ttu-id="f8882-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="f8882-109">Click New.</span></span>
+2. <span data-ttu-id="f8882-110">Kirjoita arvo Tuotenumero-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f8882-110">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="f8882-111">Jos numerosarjaa ei ole määritetty tuotetunnukselle, se on syötettävä manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="f8882-111">If a number sequence has not been set up for the product number, it must be entered manually.</span></span>  
+3. <span data-ttu-id="f8882-112">Kirjoita arvo Tuotteen nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="f8882-112">In the Product name field, type a value.</span></span>
+    * <span data-ttu-id="f8882-113">Tuotenimen oletusarvoksi määritetään hakunimi.</span><span class="sxs-lookup"><span data-stu-id="f8882-113">The product name defaults to the search name.</span></span> <span data-ttu-id="f8882-114">Arvoa voi muuttaa tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="f8882-114">You can change this if needed.</span></span>  
+4. <span data-ttu-id="f8882-115">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f8882-115">Click OK.</span></span>
 
-## <a name="set-up-dimension-groups"></a>Määritä dimensioryhmät
-1. Avaa valintaikkunalomake valitsemalla Dimensioryhmät.
-2. Syötä tai valitse arvo Varastodimensioryhmä-kentässä.
-    * Varastodimensioryhmä määrää, mitä varastodimensioita kullekin tuotteen tapahtumalle on syötettävä, ja miten sitä seurataan varastossa.  
-3. Syötä tai valitse arvo Seurantadimensioryhmä-kentässä.
-    * Seurantadimensioryhmä määrää, mitä seurantadimensioita kullekin tuotteen tapahtumalle on syötettävä, ja miten sitä käsitellään varastossa.  
-4. Valitse OK.
+## <a name="set-up-dimension-groups"></a><span data-ttu-id="f8882-116">Määritä dimensioryhmät</span><span class="sxs-lookup"><span data-stu-id="f8882-116">Set up dimension groups</span></span>
+1. <span data-ttu-id="f8882-117">Avaa valintaikkunalomake valitsemalla Dimensioryhmät.</span><span class="sxs-lookup"><span data-stu-id="f8882-117">Click Dimension groups to open the drop dialog.</span></span>
+2. <span data-ttu-id="f8882-118">Syötä tai valitse arvo Varastodimensioryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f8882-118">In the Storage dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="f8882-119">Varastodimensioryhmä määrää, mitä varastodimensioita kullekin tuotteen tapahtumalle on syötettävä, ja miten sitä seurataan varastossa.</span><span class="sxs-lookup"><span data-stu-id="f8882-119">The storage dimension group determines which storage dimensions you must enter on each transaction for the product and how it will be tracked in inventory.</span></span>  
+3. <span data-ttu-id="f8882-120">Syötä tai valitse arvo Seurantadimensioryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f8882-120">In the Tracking dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="f8882-121">Seurantadimensioryhmä määrää, mitä seurantadimensioita kullekin tuotteen tapahtumalle on syötettävä, ja miten sitä käsitellään varastossa.</span><span class="sxs-lookup"><span data-stu-id="f8882-121">The tracking dimension group determines which tracking dimensions you must enter for each transaction for the product, and how it will be handled in inventory.</span></span>  
+4. <span data-ttu-id="f8882-122">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f8882-122">Click OK.</span></span>
 
 

@@ -16,51 +16,51 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 10ccb4ac1088e27f3f5771bcb964bf3cc0a509ab
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d4aac437876862e9f776264fc81f246c820bdf45
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a>Ajoita tuotantotilaus työvaiheiden ja töiden ajoittamisen avulla
+# <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a><span data-ttu-id="2070b-103">Ajoita tuotantotilaus työvaiheiden ja töiden ajoittamisen avulla</span><span class="sxs-lookup"><span data-stu-id="2070b-103">Schedule a production order with operations and job scheduling</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Menettely keskittyy tuotantotilaukseen ajoittamiseen työvaiheiden ja töiden ajoittamisella. Vaikka yhtään työtä ei luotu työvaiheiden ajoituksella, töitä luotiin töiden ajoituksella. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF. Tämä menettely on tarkoitettu erillisessä valmistusympäristössä työskentelevälle tuotantopäällikölle, tuotantosuunnittelijalle tai työnohjauksen valvojalle.
+<span data-ttu-id="2070b-104">Menettely keskittyy tuotantotilaukseen ajoittamiseen työvaiheiden ja töiden ajoittamisella.</span><span class="sxs-lookup"><span data-stu-id="2070b-104">This procedure focuses on scheduling a production order with operations scheduling and job scheduling.</span></span> <span data-ttu-id="2070b-105">Vaikka yhtään työtä ei luotu työvaiheiden ajoituksella, töitä luotiin töiden ajoituksella.</span><span class="sxs-lookup"><span data-stu-id="2070b-105">No jobs are created with operations scheduling whereas jobs are created with job scheduling.</span></span> <span data-ttu-id="2070b-106">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="2070b-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="2070b-107">Tämä menettely on tarkoitettu erillisessä valmistusympäristössä työskentelevälle tuotantopäällikölle, tuotantosuunnittelijalle tai työnohjauksen valvojalle.</span><span class="sxs-lookup"><span data-stu-id="2070b-107">This procedure is intended for the production manager, production planner, or shop floor supervisor working in a discrete manufacturing environment.</span></span>
 
 
-## <a name="create-a-production-order"></a>Luo tuotantotilaus
-1. Siirry kohtaan Tuotannonhallinta > Tuotantotilaukset > Kaikki tuotantotilaukset.
-2. Valitse Uusi tuotantotilaus.
-3. Syötä tai valitse arvo Nimiketunnus-kentässä.
-    * Valitse nimiketunnus D0001.  
-4. Valitse Luo.
+## <a name="create-a-production-order"></a><span data-ttu-id="2070b-108">Luo tuotantotilaus</span><span class="sxs-lookup"><span data-stu-id="2070b-108">Create a production order</span></span>
+1. <span data-ttu-id="2070b-109">Siirry kohtaan Tuotannonhallinta > Tuotantotilaukset > Kaikki tuotantotilaukset.</span><span class="sxs-lookup"><span data-stu-id="2070b-109">Go to Production control > Production orders > All production orders.</span></span>
+2. <span data-ttu-id="2070b-110">Valitse Uusi tuotantotilaus.</span><span class="sxs-lookup"><span data-stu-id="2070b-110">Click New production order.</span></span>
+3. <span data-ttu-id="2070b-111">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="2070b-111">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="2070b-112">Valitse nimiketunnus D0001.</span><span class="sxs-lookup"><span data-stu-id="2070b-112">Select Item number D0001.</span></span>  
+4. <span data-ttu-id="2070b-113">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="2070b-113">Click Create.</span></span>
 
-## <a name="schedule-operations-for-the-production-order"></a>Ajoita tuotantotilauksen työvaiheet.
-1. Merkitse valittu rivi luettelossa.
-    * Valitse juuri luomasi tuotantotilaus. Sen pitäisi olla ensimmäisenä luettelossa.      
-2. Valitse toimintoruudussa Aikataulu.
-3. Valitse Ajoita työvaiheet.
-4. Valitse Ajoituksen suunta -kentässä Ajoituspäivästä eteenpäin.
-5. Anna Ajoituspäivämäärä-kentässä päivämäärä.
-    * Valitse tuleva päivämäärä, kuten tämä päivä viikon kuluttua. Valitulla ajoituksen suunnalla tuotantotilaus ajoitetaan tästä päivästä eteenpäin.  
-6. Valitse OK.
-7. Merkitse valittu rivi luettelossa.
-    * Huomaa, että tila on nyt Ajoitettu.  
-8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-9. Valitse Kaikki työt.
-    * Huomaa, että työvaiheiden ajoituksella ei luoda töitä.  
-10. Sulje sivu.
+## <a name="schedule-operations-for-the-production-order"></a><span data-ttu-id="2070b-114">Ajoita tuotantotilauksen työvaiheet.</span><span class="sxs-lookup"><span data-stu-id="2070b-114">Schedule operations for the production order</span></span>
+1. <span data-ttu-id="2070b-115">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="2070b-115">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="2070b-116">Valitse juuri luomasi tuotantotilaus.</span><span class="sxs-lookup"><span data-stu-id="2070b-116">Select the production order that you have just created.</span></span> <span data-ttu-id="2070b-117">Sen pitäisi olla ensimmäisenä luettelossa.</span><span class="sxs-lookup"><span data-stu-id="2070b-117">It should be at the top of the list.</span></span>      
+2. <span data-ttu-id="2070b-118">Valitse toimintoruudussa Aikataulu.</span><span class="sxs-lookup"><span data-stu-id="2070b-118">On the Action Pane, click Schedule.</span></span>
+3. <span data-ttu-id="2070b-119">Valitse Ajoita työvaiheet.</span><span class="sxs-lookup"><span data-stu-id="2070b-119">Click Schedule operations.</span></span>
+4. <span data-ttu-id="2070b-120">Valitse Ajoituksen suunta -kentässä Ajoituspäivästä eteenpäin.</span><span class="sxs-lookup"><span data-stu-id="2070b-120">In the Scheduling direction field, select 'Forward from scheduling date'.</span></span>
+5. <span data-ttu-id="2070b-121">Anna Ajoituspäivämäärä-kentässä päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="2070b-121">In the Scheduling date field, enter a date.</span></span>
+    * <span data-ttu-id="2070b-122">Valitse tuleva päivämäärä, kuten tämä päivä viikon kuluttua.</span><span class="sxs-lookup"><span data-stu-id="2070b-122">Select a future date, for example, today plus one week.</span></span> <span data-ttu-id="2070b-123">Valitulla ajoituksen suunnalla tuotantotilaus ajoitetaan tästä päivästä eteenpäin.</span><span class="sxs-lookup"><span data-stu-id="2070b-123">With the selected Scheduling direction, the production order will be scheduled forward from this date.</span></span>  
+6. <span data-ttu-id="2070b-124">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="2070b-124">Click OK.</span></span>
+7. <span data-ttu-id="2070b-125">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="2070b-125">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="2070b-126">Huomaa, että tila on nyt Ajoitettu.</span><span class="sxs-lookup"><span data-stu-id="2070b-126">Note that the status is changed to Scheduled.</span></span>  
+8. <span data-ttu-id="2070b-127">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="2070b-127">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="2070b-128">Valitse Kaikki työt.</span><span class="sxs-lookup"><span data-stu-id="2070b-128">Click All jobs.</span></span>
+    * <span data-ttu-id="2070b-129">Huomaa, että työvaiheiden ajoituksella ei luoda töitä.</span><span class="sxs-lookup"><span data-stu-id="2070b-129">Note that no jobs are created with operations scheduling.</span></span>  
+10. <span data-ttu-id="2070b-130">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2070b-130">Close the page.</span></span>
 
-## <a name="schedule-jobs-for-the-production-order"></a>Ajoita tuotantotilauksen työt.
-1. Valitse toimintoruudussa Aikataulu.
-2. Valitse Ajoita työt.
-3. Valitse Ajoituksen suunta -kentässä Ajoituspäivästä eteenpäin.
-4. Anna Ajoituspäivämäärä-kentässä päivämäärä.
-    * Valitse tuleva päivämäärä, kuten tämä päivä viikon kuluttua. Valitulla ajoituksen suunnalla tuotantotilaus ajoitetaan tästä päivästä eteenpäin.  
-5. Valitse OK.
-6. Valitse toimintoruudussa Tuotantotilaus.
-7. Valitse Kaikki työt.
-    * Huomaa, että aktiivisen reitin perusteella töiden ajoituksella luontiin viisi työtä.  
+## <a name="schedule-jobs-for-the-production-order"></a><span data-ttu-id="2070b-131">Ajoita tuotantotilauksen työt.</span><span class="sxs-lookup"><span data-stu-id="2070b-131">Schedule jobs for the production order</span></span>
+1. <span data-ttu-id="2070b-132">Valitse toimintoruudussa Aikataulu.</span><span class="sxs-lookup"><span data-stu-id="2070b-132">On the Action Pane, click Schedule.</span></span>
+2. <span data-ttu-id="2070b-133">Valitse Ajoita työt.</span><span class="sxs-lookup"><span data-stu-id="2070b-133">Click Schedule jobs.</span></span>
+3. <span data-ttu-id="2070b-134">Valitse Ajoituksen suunta -kentässä Ajoituspäivästä eteenpäin.</span><span class="sxs-lookup"><span data-stu-id="2070b-134">In the Scheduling direction field, select 'Forward from scheduling date'.</span></span>
+4. <span data-ttu-id="2070b-135">Anna Ajoituspäivämäärä-kentässä päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="2070b-135">In the Scheduling date field, enter a date.</span></span>
+    * <span data-ttu-id="2070b-136">Valitse tuleva päivämäärä, kuten tämä päivä viikon kuluttua.</span><span class="sxs-lookup"><span data-stu-id="2070b-136">Select a date in the future, for example, today plus one week.</span></span> <span data-ttu-id="2070b-137">Valitulla ajoituksen suunnalla tuotantotilaus ajoitetaan tästä päivästä eteenpäin.</span><span class="sxs-lookup"><span data-stu-id="2070b-137">With the selected Scheduling direction, the production order will be scheduled forward from this date.</span></span>  
+5. <span data-ttu-id="2070b-138">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="2070b-138">Click OK.</span></span>
+6. <span data-ttu-id="2070b-139">Valitse toimintoruudussa Tuotantotilaus.</span><span class="sxs-lookup"><span data-stu-id="2070b-139">On the Action Pane, click Production order.</span></span>
+7. <span data-ttu-id="2070b-140">Valitse Kaikki työt.</span><span class="sxs-lookup"><span data-stu-id="2070b-140">Click All jobs.</span></span>
+    * <span data-ttu-id="2070b-141">Huomaa, että aktiivisen reitin perusteella töiden ajoituksella luontiin viisi työtä.</span><span class="sxs-lookup"><span data-stu-id="2070b-141">Note that based on the active route, 5 jobs are created with job scheduling.</span></span>  
 
 

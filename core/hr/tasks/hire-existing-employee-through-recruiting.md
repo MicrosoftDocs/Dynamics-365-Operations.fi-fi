@@ -16,29 +16,29 @@ ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 839f803690bef657078483a073ef363beefa6ee3
-ms.openlocfilehash: 59688ad50addaf4e5a6d76ef78990b303ff114fe
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5dfe5c25b299284267bed91d58e0acefb7250570
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="hire-an-existing-employee-through-recruiting"></a>Nykyisen työntekijän työhönotto rekrytoinnin kautta
+# <a name="hire-an-existing-employee-through-recruiting"></a><span data-ttu-id="45237-103">Nykyisen työntekijän työhönotto rekrytoinnin kautta</span><span class="sxs-lookup"><span data-stu-id="45237-103">Hire an existing employee through recruiting</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Joskus avoimiin toimiin palkataan ehdokkaita, jotka ovat jo organisaatiossa töissä. Tässä menettelyssä kerrotaan nykyisen työntekijän palkkaamisesta työhönottoprosessin kautta. Tässä menettelyssä työhönottoprojekti on jo määritetty ja nykyinen työntekijä on jo lähettänyt hakemuksen työhönottoprojektiin. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+<span data-ttu-id="45237-104">Joskus avoimiin toimiin palkataan ehdokkaita, jotka ovat jo organisaatiossa töissä.</span><span class="sxs-lookup"><span data-stu-id="45237-104">Sometimes open positions can be filled by candidates who are already employees in your organization.</span></span> <span data-ttu-id="45237-105">Tässä menettelyssä kerrotaan nykyisen työntekijän palkkaamisesta työhönottoprosessin kautta.</span><span class="sxs-lookup"><span data-stu-id="45237-105">This procedure walks through the steps of hiring an existing employee through the recruiting process.</span></span> <span data-ttu-id="45237-106">Tässä menettelyssä työhönottoprojekti on jo määritetty ja nykyinen työntekijä on jo lähettänyt hakemuksen työhönottoprojektiin.</span><span class="sxs-lookup"><span data-stu-id="45237-106">In this procedure, a recruitment project has already been set up, and an existing employee has already submitted an application for the recruitment project.</span></span> <span data-ttu-id="45237-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="45237-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Siirry kohtaan Henkilöstöhallinto > Työhönotto > Hakemukset > Hakemukset.
-2. Etsi luettelosta palkattavan työntekijän hakemus. Esimerkki: 00002 John Emory
-3. Valitse Hakemuksen tila.
-    * Sovelluksen tila ilmaisee, missä vaiheessa työhönottoprosessia hakemus on.  Kaikki nämä vaiheet ovat valinnaisia. Yleensä hakemuksen tila vaihtelevat seuraavasti: vastaanotettu, vahvistettu ja haastateltu. Haastatteluprosessin jälkeen voidaan tehdä palkkauspäätös.  
-4. Valitse Muuta toimea.
-5. Valitse toimi, johon työntekijä palkataan.
-6. Syötä Uuden toimeksiannon alkupäivämäärä -kenttään päivämäärä, jona työntekijä aloittaa uudessa toimessa työskentelyn.  
-7. Syötä Uuden toimeksiannon päättymispäivämäärä -kenttään päivämäärä, jona työntekijä päättää uudessa toimessa työskentelyn.
-    * Uuden ja vanhan toimen aloituspäivä ja päättymispäivä voivat olla päällekkäisiä. Näin voi tapahtua silloin, kun henkilöllä on tehtäviä molemmissa toimissa siirtojakson aikana.  
-8. Vaihtoehtoisesti voit valita syykoodin. Esimerkki: Uudelleenorganisointi
-9. Valitse Muuta toimea.
-    * Voit myös muuttaa kompensaatiota täksi ajaksi. Jos et määritä kompensaatiota nyt, voit muuttaa sitä siirtymällä työntekijän lomakkeeseen, valitsemalla Kompensaatio-välilehden ja valitsemalla Kiinteä suunnitelma. Kun valitset Muuta toimea, hakemuksen tilaksi tulee Toimessa.  
+1. <span data-ttu-id="45237-108">Siirry kohtaan Henkilöstöhallinto > Työhönotto > Hakemukset > Hakemukset.</span><span class="sxs-lookup"><span data-stu-id="45237-108">Go to Human resources > Recruitment > Applications > Applications.</span></span>
+2. <span data-ttu-id="45237-109">Etsi luettelosta palkattavan työntekijän hakemus.</span><span class="sxs-lookup"><span data-stu-id="45237-109">In the list, find application for the employee that you would like to hire.</span></span> <span data-ttu-id="45237-110">Esimerkki: 00002 John Emory</span><span class="sxs-lookup"><span data-stu-id="45237-110">Example:  00002  John Emory</span></span>
+3. <span data-ttu-id="45237-111">Valitse Hakemuksen tila.</span><span class="sxs-lookup"><span data-stu-id="45237-111">Click Application status.</span></span>
+    * <span data-ttu-id="45237-112">Sovelluksen tila ilmaisee, missä vaiheessa työhönottoprosessia hakemus on.</span><span class="sxs-lookup"><span data-stu-id="45237-112">The application status indicates where an application is at in the recruitment process.</span></span>  <span data-ttu-id="45237-113">Kaikki nämä vaiheet ovat valinnaisia.</span><span class="sxs-lookup"><span data-stu-id="45237-113">Each of these steps is optional.</span></span> <span data-ttu-id="45237-114">Yleensä hakemuksen tila vaihtelevat seuraavasti: vastaanotettu, vahvistettu ja haastateltu.</span><span class="sxs-lookup"><span data-stu-id="45237-114">Typically, an application would move the statuses in the following order:  received, confirmed, and interviewed.</span></span> <span data-ttu-id="45237-115">Haastatteluprosessin jälkeen voidaan tehdä palkkauspäätös.</span><span class="sxs-lookup"><span data-stu-id="45237-115">After the interview process, a hiring decision would be made.</span></span>  
+4. <span data-ttu-id="45237-116">Valitse Muuta toimea.</span><span class="sxs-lookup"><span data-stu-id="45237-116">Click Change position.</span></span>
+5. <span data-ttu-id="45237-117">Valitse toimi, johon työntekijä palkataan.</span><span class="sxs-lookup"><span data-stu-id="45237-117">Select the position that you are hiring the employee into.</span></span>
+6. <span data-ttu-id="45237-118">Syötä Uuden toimeksiannon alkupäivämäärä -kenttään päivämäärä, jona työntekijä aloittaa uudessa toimessa työskentelyn.</span><span class="sxs-lookup"><span data-stu-id="45237-118">In the New Assignment Start Date field, enter the date that the employee will begin working in the new position.</span></span>  
+7. <span data-ttu-id="45237-119">Syötä Uuden toimeksiannon päättymispäivämäärä -kenttään päivämäärä, jona työntekijä päättää uudessa toimessa työskentelyn.</span><span class="sxs-lookup"><span data-stu-id="45237-119">In the Assignment end date, enter the date that the employee will stop working in their current position.</span></span>
+    * <span data-ttu-id="45237-120">Uuden ja vanhan toimen aloituspäivä ja päättymispäivä voivat olla päällekkäisiä.</span><span class="sxs-lookup"><span data-stu-id="45237-120">The starting date for the new position and the ending date of the old position may overlap.</span></span> <span data-ttu-id="45237-121">Näin voi tapahtua silloin, kun henkilöllä on tehtäviä molemmissa toimissa siirtojakson aikana.</span><span class="sxs-lookup"><span data-stu-id="45237-121">This can happen when a person is performing duties for both positions during a transition period.</span></span>  
+8. <span data-ttu-id="45237-122">Vaihtoehtoisesti voit valita syykoodin.</span><span class="sxs-lookup"><span data-stu-id="45237-122">Optionally, you can select a reason code.</span></span> <span data-ttu-id="45237-123">Esimerkki: Uudelleenorganisointi</span><span class="sxs-lookup"><span data-stu-id="45237-123">Example: Reorganization</span></span>
+9. <span data-ttu-id="45237-124">Valitse Muuta toimea.</span><span class="sxs-lookup"><span data-stu-id="45237-124">Click Change position.</span></span>
+    * <span data-ttu-id="45237-125">Voit myös muuttaa kompensaatiota täksi ajaksi.</span><span class="sxs-lookup"><span data-stu-id="45237-125">You may also change compensation at this time.</span></span> <span data-ttu-id="45237-126">Jos et määritä kompensaatiota nyt, voit muuttaa sitä siirtymällä työntekijän lomakkeeseen, valitsemalla Kompensaatio-välilehden ja valitsemalla Kiinteä suunnitelma.</span><span class="sxs-lookup"><span data-stu-id="45237-126">If you do not assign compensation at this time, you can change it by going to the worker form, selecting the Compensation tab, and choosing 'Fixed Plan'.</span></span> <span data-ttu-id="45237-127">Kun valitset Muuta toimea, hakemuksen tilaksi tulee Toimessa.</span><span class="sxs-lookup"><span data-stu-id="45237-127">After you select 'Change position', the status on the application will be updated to 'Employed'.</span></span>  
 
 

@@ -19,15 +19,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 093047d43a39fa723eb99e3daf34cf33fa81a099
+ms.sourcegitcommit: 55cb0f20dbd671e39d0f409a87cec93efd9ce4d6
+ms.openlocfilehash: bab0f6ca21f4216b70cccf24f5781e0dbf48b7f8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
 
-# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Alv-koodien koko summa- ja väli-laskentavaihtoehdot
+# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a><span data-ttu-id="88797-103">Alv-koodien koko summa- ja väli-laskentavaihtoehdot</span><span class="sxs-lookup"><span data-stu-id="88797-103">Whole amount and Interval calculation options for sales tax codes</span></span>
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,61 +35,61 @@ ms.lasthandoff: 05/25/2017
 
 
 
-Tässä artikkelissa kuvataan arvonlisäverokoodien Laskentatapa-kentän asetuksia ja sitä, miten arvonlisävero lasketaan välejä ja koko summia varten.
+<span data-ttu-id="88797-104">Tässä artikkelissa kuvataan arvonlisäverokoodien Laskentatapa-kentän asetuksia ja sitä, miten arvonlisävero lasketaan välejä ja koko summia varten.</span><span class="sxs-lookup"><span data-stu-id="88797-104">This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.</span></span>
 
-Voit määrittää, että alv-koodi lasketaan koko summan tai välisumman perusteella. Valitse Arvonlisäverokoodit-sivulla alv-koodin laskentatapa Laskenta-pikavälilehden Laskentatapa-kentässä.
--   Koko summa – veroprosentti kohdistetaan koko verotettavaan summaan.
--   Väli – Verotettava summa on jaettu osiin, joista jokainen kuuluu tietyn alv-prosentin alueeseen. Määritetylle välille osuvan summan vero lasketaan kyseistä väliä koskevan prosentin mukaan. Arvonlisävero on kullekin summavälille laskettavien verosummien yhteissumma.
+<span data-ttu-id="88797-105">Voit määrittää, että alv-koodi lasketaan koko summan tai välisumman perusteella.</span><span class="sxs-lookup"><span data-stu-id="88797-105">You can set up a sales tax code to be calculated based on a whole amount or an interval amount.</span></span> <span data-ttu-id="88797-106">Valitse Arvonlisäverokoodit-sivulla alv-koodin laskentatapa Laskenta-pikavälilehden Laskentatapa-kentässä.</span><span class="sxs-lookup"><span data-stu-id="88797-106">In the Sales tax codes page, use the Calculation method field on the Calculation FastTab to select how to calculate a sales tax code.</span></span>
+-   <span data-ttu-id="88797-107">Koko summa – veroprosentti kohdistetaan koko verotettavaan summaan.</span><span class="sxs-lookup"><span data-stu-id="88797-107">Whole amount – The tax rate is applied to the whole taxable amount.</span></span>
+-   <span data-ttu-id="88797-108">Väli – Verotettava summa on jaettu osiin, joista jokainen kuuluu tietyn alv-prosentin alueeseen.</span><span class="sxs-lookup"><span data-stu-id="88797-108">Interval – The taxable amount is divided into parts, each of which falls in a range that has a specific sales tax rate.</span></span> <span data-ttu-id="88797-109">Määritetylle välille osuvan summan vero lasketaan kyseistä väliä koskevan prosentin mukaan.</span><span class="sxs-lookup"><span data-stu-id="88797-109">The part of the amount that falls in a given interval is taxed according to the tax rate for that interval.</span></span> <span data-ttu-id="88797-110">Arvonlisävero on kullekin summavälille laskettavien verosummien yhteissumma.</span><span class="sxs-lookup"><span data-stu-id="88797-110">The sales tax is the sum of the tax amounts that are calculated for each amount interval.</span></span>
 > [!NOTE]                                                                                                                              
-> Väli-vaihtoehto on käytettävissä vain, jos valitset Kirjanpitoparametrit-sivulla Arvonlisävero-alueen Laskentatapa-kentästä Rivi-vaihtoehdon. 
+> <span data-ttu-id="88797-111">Väli-vaihtoehto on käytettävissä vain, jos valitset Kirjanpitoparametrit-sivulla Arvonlisävero-alueen Laskentatapa-kentästä Rivi-vaihtoehdon.</span><span class="sxs-lookup"><span data-stu-id="88797-111">The Interval option is available only when you select Line in the Calculation method field in the Sales tax area of the General ledger parameters page.</span></span> 
 
-Välit määritetään Arvonlisäverokoodin arvot -sivulla syöttämällä kunkin veroprosentin vähimmäis- ja enimmäisrajasummat. Jotta verot voidaan laskea kaikille verotettaville summille valitusta laskentatavasta riippumatta, välien on noudatettava seuraavia sääntöjä:
--   Ensimmäisen välin vähimmäisraja on oltava 0.
--   Viimeisen välin enimmäisrajan on oltava nolla, joka tarkoittaa ääretöntä.
--   Välin enimmäisrajan on oltava seuraavan välin vähimmäisraja.
+<span data-ttu-id="88797-112">Välit määritetään Arvonlisäverokoodin arvot -sivulla syöttämällä kunkin veroprosentin vähimmäis- ja enimmäisrajasummat.</span><span class="sxs-lookup"><span data-stu-id="88797-112">Intervals are set up in the Sales tax code values page by entering Minimum and Maximum limit amounts per tax rate.</span></span> <span data-ttu-id="88797-113">Jotta verot voidaan laskea kaikille verotettaville summille valitusta laskentatavasta riippumatta, välien on noudatettava seuraavia sääntöjä:</span><span class="sxs-lookup"><span data-stu-id="88797-113">For taxes to be calculated on all taxable amounts, regardless of which calculation method is selected, intervals must follow these rules:</span></span>
+-   <span data-ttu-id="88797-114">Ensimmäisen välin vähimmäisraja on oltava 0.</span><span class="sxs-lookup"><span data-stu-id="88797-114">The first interval must have a Minimum limit of zero.</span></span>
+-   <span data-ttu-id="88797-115">Viimeisen välin enimmäisrajan on oltava nolla, joka tarkoittaa ääretöntä.</span><span class="sxs-lookup"><span data-stu-id="88797-115">The last interval must have a Maximum limit of zero, which indicates infinity.</span></span>
+-   <span data-ttu-id="88797-116">Välin enimmäisrajan on oltava seuraavan välin vähimmäisraja.</span><span class="sxs-lookup"><span data-stu-id="88797-116">The Maximum limit of an interval must be the Minimum limit of the next interval.</span></span>
 
-Jos summa on edellisen välin enimmäisraja ja seuraavan välin vähimmäisraja, summaan käytetään ensimmäisen välin arvonlisäveroprosenttia. Jos summa jää enimmäis- ja vähimmäisrajojen määrittämien välien ulkopuolelle, alv-prosentti on 0.
+<span data-ttu-id="88797-117">Jos summa on edellisen välin enimmäisraja ja seuraavan välin vähimmäisraja, summaan käytetään ensimmäisen välin arvonlisäveroprosenttia.</span><span class="sxs-lookup"><span data-stu-id="88797-117">If an amount is the Maximum limit of the previous interval and the Minimum limit of the next interval, the sales tax rate of the first interval will be applied to the amount.</span></span> <span data-ttu-id="88797-118">Jos summa jää enimmäis- ja vähimmäisrajojen määrittämien välien ulkopuolelle, alv-prosentti on 0.</span><span class="sxs-lookup"><span data-stu-id="88797-118">If an amount falls outside the intervals that are defined by upper and lower limits, a sales tax rate of zero will be applied.</span></span>
 
-## <a name="example-whole-amount-method-of-calculation"></a>Esimerkki: Koko summa -laskutapa
-Arvonlisäveron koodi -sivulla arvonlisäveroprosentit määritetään seuraavin välein:
+## <a name="example-whole-amount-method-of-calculation"></a><span data-ttu-id="88797-119">Esimerkki: Koko summa -laskutapa</span><span class="sxs-lookup"><span data-stu-id="88797-119">Example: Whole amount method of calculation</span></span>
+<span data-ttu-id="88797-120">Arvonlisäveron koodi -sivulla arvonlisäveroprosentit määritetään seuraavin välein:</span><span class="sxs-lookup"><span data-stu-id="88797-120">In the Sales tax code values page, sales tax rates are set up in the following intervals:</span></span>
 |                   |                   |              |
 |-------------------|-------------------|--------------|
-| **Vähimmäisraja** | **Enimmäisraja** | **Veroprosentti** |
-| 0,00              | 50,00             | 30 %          |
-| 50,00             | 100,00            | 20 %          |
-| 100,00            | 0,00              | 10 %          |
+| <span data-ttu-id="88797-121">**Vähimmäisraja**</span><span class="sxs-lookup"><span data-stu-id="88797-121">**Minimum limit**</span></span> | <span data-ttu-id="88797-122">**Enimmäisraja**</span><span class="sxs-lookup"><span data-stu-id="88797-122">**Maximum limit**</span></span> | <span data-ttu-id="88797-123">**Veroprosentti**</span><span class="sxs-lookup"><span data-stu-id="88797-123">**Tax rate**</span></span> |
+| <span data-ttu-id="88797-124">0,00</span><span class="sxs-lookup"><span data-stu-id="88797-124">0.00</span></span>              | <span data-ttu-id="88797-125">50,00</span><span class="sxs-lookup"><span data-stu-id="88797-125">50.00</span></span>             | <span data-ttu-id="88797-126">30 %</span><span class="sxs-lookup"><span data-stu-id="88797-126">30%</span></span>          |
+| <span data-ttu-id="88797-127">50,00</span><span class="sxs-lookup"><span data-stu-id="88797-127">50.00</span></span>             | <span data-ttu-id="88797-128">100,00</span><span class="sxs-lookup"><span data-stu-id="88797-128">100.00</span></span>            | <span data-ttu-id="88797-129">20 %</span><span class="sxs-lookup"><span data-stu-id="88797-129">20%</span></span>          |
+| <span data-ttu-id="88797-130">100,00</span><span class="sxs-lookup"><span data-stu-id="88797-130">100.00</span></span>            | <span data-ttu-id="88797-131">0,00</span><span class="sxs-lookup"><span data-stu-id="88797-131">0.00</span></span>              | <span data-ttu-id="88797-132">10 %</span><span class="sxs-lookup"><span data-stu-id="88797-132">10%</span></span>          |
 
-Arvonlisävero lasketaan koko verotettavasta summasta
+<span data-ttu-id="88797-133">Arvonlisävero lasketaan koko verotettavasta summasta</span><span class="sxs-lookup"><span data-stu-id="88797-133">The sales tax is calculated on the whole taxable amount.</span></span>
 
-| Verotettava summa (hinta) | Laskelma    | Arvonlisävero |
+| <span data-ttu-id="88797-134">Verotettava summa (hinta)</span><span class="sxs-lookup"><span data-stu-id="88797-134">Taxable amount (price)</span></span> | <span data-ttu-id="88797-135">Laskelma</span><span class="sxs-lookup"><span data-stu-id="88797-135">Calculation</span></span>    | <span data-ttu-id="88797-136">Arvonlisävero</span><span class="sxs-lookup"><span data-stu-id="88797-136">Sales tax</span></span> |
 |------------------------|----------------|-----------|
-| 35,00                  | 35,00 \* 0,30  | 10,50     |
-| 50,00                  | 50,00 \* 0,30  | 15,00     |
-| 85,00                  | 85,00 \* 0,20  | 17,00     |
-| 305,00                 | 305,00 \* 0,10 | 30,50     |
+| <span data-ttu-id="88797-137">35,00</span><span class="sxs-lookup"><span data-stu-id="88797-137">35.00</span></span>                  | <span data-ttu-id="88797-138">35,00 \* 0,30</span><span class="sxs-lookup"><span data-stu-id="88797-138">35.00 \* 0.30</span></span>  | <span data-ttu-id="88797-139">10,50</span><span class="sxs-lookup"><span data-stu-id="88797-139">10.50</span></span>     |
+| <span data-ttu-id="88797-140">50,00</span><span class="sxs-lookup"><span data-stu-id="88797-140">50.00</span></span>                  | <span data-ttu-id="88797-141">50,00 \* 0,30</span><span class="sxs-lookup"><span data-stu-id="88797-141">50.00 \* 0.30</span></span>  | <span data-ttu-id="88797-142">15,00</span><span class="sxs-lookup"><span data-stu-id="88797-142">15.00</span></span>     |
+| <span data-ttu-id="88797-143">85,00</span><span class="sxs-lookup"><span data-stu-id="88797-143">85.00</span></span>                  | <span data-ttu-id="88797-144">85,00 \* 0,20</span><span class="sxs-lookup"><span data-stu-id="88797-144">85.00 \* 0.20</span></span>  | <span data-ttu-id="88797-145">17,00</span><span class="sxs-lookup"><span data-stu-id="88797-145">17.00</span></span>     |
+| <span data-ttu-id="88797-146">305,00</span><span class="sxs-lookup"><span data-stu-id="88797-146">305.00</span></span>                 | <span data-ttu-id="88797-147">305,00 \* 0,10</span><span class="sxs-lookup"><span data-stu-id="88797-147">305.00 \* 0.10</span></span> | <span data-ttu-id="88797-148">30,50</span><span class="sxs-lookup"><span data-stu-id="88797-148">30.50</span></span>     |
 
-## <a name="example-interval-method-of-calculation"></a> Esimerkki: Väli-laskentatapa
-Arvonlisäveroprosentit määritetään Arvot-sivulla seuraavin välein:
+## <a name="example-interval-method-of-calculation"></a><span data-ttu-id="88797-149"> Esimerkki: Väli-laskentatapa</span><span class="sxs-lookup"><span data-stu-id="88797-149">Example: Interval method of calculation</span></span>
+<span data-ttu-id="88797-150">Arvonlisäveroprosentit määritetään Arvot-sivulla seuraavin välein:</span><span class="sxs-lookup"><span data-stu-id="88797-150">In the Values page, sales tax rates are set up in the following intervals:</span></span>
 
 |                   |                   |              |
 |-------------------|-------------------|--------------|
-| **Vähimmäisraja** | **Enimmäisraja** | **Veroprosentti** |
-| 0,00              | 50,00             | 30 %          |
-| 50,00             | 100,00            | 20 %          |
-| 100,00            | 0,00              | 10 %          |
+| <span data-ttu-id="88797-151">**Vähimmäisraja**</span><span class="sxs-lookup"><span data-stu-id="88797-151">**Minimum limit**</span></span> | <span data-ttu-id="88797-152">**Enimmäisraja**</span><span class="sxs-lookup"><span data-stu-id="88797-152">**Maximum limit**</span></span> | <span data-ttu-id="88797-153">**Veroprosentti**</span><span class="sxs-lookup"><span data-stu-id="88797-153">**Tax rate**</span></span> |
+| <span data-ttu-id="88797-154">0,00</span><span class="sxs-lookup"><span data-stu-id="88797-154">0.00</span></span>              | <span data-ttu-id="88797-155">50,00</span><span class="sxs-lookup"><span data-stu-id="88797-155">50.00</span></span>             | <span data-ttu-id="88797-156">30 %</span><span class="sxs-lookup"><span data-stu-id="88797-156">30%</span></span>          |
+| <span data-ttu-id="88797-157">50,00</span><span class="sxs-lookup"><span data-stu-id="88797-157">50.00</span></span>             | <span data-ttu-id="88797-158">100,00</span><span class="sxs-lookup"><span data-stu-id="88797-158">100.00</span></span>            | <span data-ttu-id="88797-159">20 %</span><span class="sxs-lookup"><span data-stu-id="88797-159">20%</span></span>          |
+| <span data-ttu-id="88797-160">100,00</span><span class="sxs-lookup"><span data-stu-id="88797-160">100.00</span></span>            | <span data-ttu-id="88797-161">0,00</span><span class="sxs-lookup"><span data-stu-id="88797-161">0.00</span></span>              | <span data-ttu-id="88797-162">10 %</span><span class="sxs-lookup"><span data-stu-id="88797-162">10%</span></span>          |
 
-Arvonlisävero on kullekin summavälille laskettavien verosummien yhteissumma.
+<span data-ttu-id="88797-163">Arvonlisävero on kullekin summavälille laskettavien verosummien yhteissumma.</span><span class="sxs-lookup"><span data-stu-id="88797-163">The sales tax is the sum of the tax amounts that are calculated for each amount interval.</span></span>
 
-| Verotettava summa (hinta) | Laskelma                                                               | Arvonlisävero |
+| <span data-ttu-id="88797-164">Verotettava summa (hinta)</span><span class="sxs-lookup"><span data-stu-id="88797-164">Taxable amount (price)</span></span> | <span data-ttu-id="88797-165">Laskelma</span><span class="sxs-lookup"><span data-stu-id="88797-165">Calculation</span></span>                                                               | <span data-ttu-id="88797-166">Arvonlisävero</span><span class="sxs-lookup"><span data-stu-id="88797-166">Sales tax</span></span> |
 |------------------------|---------------------------------------------------------------------------|-----------|
-| 35,00                  | 35,00 \* 0,30                                                             | 10,50     |
-| 50,00                  | 50,00 \* 0,30                                                             | 15,00     |
-| 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
-| 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
+| <span data-ttu-id="88797-167">35,00</span><span class="sxs-lookup"><span data-stu-id="88797-167">35.00</span></span>                  | <span data-ttu-id="88797-168">35,00 \* 0,30</span><span class="sxs-lookup"><span data-stu-id="88797-168">35.00 \* 0.30</span></span>                                                             | <span data-ttu-id="88797-169">10,50</span><span class="sxs-lookup"><span data-stu-id="88797-169">10.50</span></span>     |
+| <span data-ttu-id="88797-170">50,00</span><span class="sxs-lookup"><span data-stu-id="88797-170">50.00</span></span>                  | <span data-ttu-id="88797-171">50,00 \* 0,30</span><span class="sxs-lookup"><span data-stu-id="88797-171">50.00 \* 0.30</span></span>                                                             | <span data-ttu-id="88797-172">15,00</span><span class="sxs-lookup"><span data-stu-id="88797-172">15.00</span></span>     |
+| <span data-ttu-id="88797-173">85,00</span><span class="sxs-lookup"><span data-stu-id="88797-173">85.00</span></span>                  | <span data-ttu-id="88797-174">(50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)</span><span class="sxs-lookup"><span data-stu-id="88797-174">(50.00 \* 0.30 = 15.00) + (35.00 \* 0.20 = 7.00)</span></span>                          | <span data-ttu-id="88797-175">22,00</span><span class="sxs-lookup"><span data-stu-id="88797-175">22.00</span></span>     |
+| <span data-ttu-id="88797-176">305,00</span><span class="sxs-lookup"><span data-stu-id="88797-176">305.00</span></span>                 | <span data-ttu-id="88797-177">(50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50)</span><span class="sxs-lookup"><span data-stu-id="88797-177">(50.00 \* 0.30 = 15.00) + (50.00 \* 0.20 = 10.00) + (205 \* 0.10 = 20.50)</span></span> | <span data-ttu-id="88797-178">45,50</span><span class="sxs-lookup"><span data-stu-id="88797-178">45.50</span></span>     |
 
  
 
-Lisätietoja on kohdassa [Arvonlisäveroprosenttien määrittäminen Alv-rajan peruste- ja Laskentatapa-kenttien perusteella](marginal-base-field.md).
+<span data-ttu-id="88797-179">Lisätietoja on kohdassa [Arvonlisäveroprosenttien määrittäminen Alv-rajan peruste- ja Laskentatapa-kenttien perusteella](marginal-base-field.md).</span><span class="sxs-lookup"><span data-stu-id="88797-179">For more information, see [Determining sale tax rates based on the Marginal base and Calculation method fields](marginal-base-field.md).</span></span>
 
 
 

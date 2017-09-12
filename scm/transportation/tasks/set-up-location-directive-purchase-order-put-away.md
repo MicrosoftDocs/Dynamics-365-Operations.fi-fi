@@ -17,81 +17,81 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 4c2456fffd9a010728154749b35c58db13f142bb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 45e1e54c807597d4d5ff7370748012cbf28c1c6b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Määritä sijaintidirektiivi ostotilauksen poispanolle
+# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a><span data-ttu-id="28bf2-103">Määritä sijaintidirektiivi ostotilauksen poispanolle</span><span class="sxs-lookup"><span data-stu-id="28bf2-103">Set up a location directive for purchase order put-away</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä näytetään, miten yksinkertainen sijaintidirektiivi määritetään. Näytetyssä esimerkissä luodaan sijaintidirektiivi, jolla määrätään, mihin ostotilaukseen vastaanotetut nimikkeet määritetään. Voit toistaa tämän tehtäväopastuksen mainituilla tiedoilla käyttämällä USMF-esittely-yrityksen tietoja. Edellytykset: Sinun on luotava käsittelykoodi. Tässä menettelyssä käytetään Relabel-käsittelykoodia. Jos olet luomassa sijaintidirektiivin omissa tiedoissasi, varastonhallinnan lisäasetusten on oltava määritettynä varastolle ja nimikkeille.  Tämä menettely on tarkoitettu varastopäällikölle.
+<span data-ttu-id="28bf2-104">Tässä menettelyssä näytetään, miten yksinkertainen sijaintidirektiivi määritetään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-104">This procedure shows you how to set up a simple location directive.</span></span> <span data-ttu-id="28bf2-105">Näytetyssä esimerkissä luodaan sijaintidirektiivi, jolla määrätään, mihin ostotilaukseen vastaanotetut nimikkeet määritetään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-105">The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order.</span></span> <span data-ttu-id="28bf2-106">Voit toistaa tämän tehtäväopastuksen mainituilla tiedoilla käyttämällä USMF-esittely-yrityksen tietoja.</span><span class="sxs-lookup"><span data-stu-id="28bf2-106">You can play this task guide with the data mentioned using demo data company USMF.</span></span> <span data-ttu-id="28bf2-107">Edellytykset: Sinun on luotava käsittelykoodi.</span><span class="sxs-lookup"><span data-stu-id="28bf2-107">Pre-conditions: You need to create a disposition code.</span></span> <span data-ttu-id="28bf2-108">Tässä menettelyssä käytetään Relabel-käsittelykoodia.</span><span class="sxs-lookup"><span data-stu-id="28bf2-108">In this procedure we use a disposition code called Relabel.</span></span> <span data-ttu-id="28bf2-109">Jos olet luomassa sijaintidirektiivin omissa tiedoissasi, varastonhallinnan lisäasetusten on oltava määritettynä varastolle ja nimikkeille.</span><span class="sxs-lookup"><span data-stu-id="28bf2-109">If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items.</span></span>  <span data-ttu-id="28bf2-110">Tämä menettely on tarkoitettu varastopäällikölle.</span><span class="sxs-lookup"><span data-stu-id="28bf2-110">This procedure is intended for the warehouse manager.</span></span>
 
-1. Valitse Varastonhallinta > Asetukset > Sijaintidirektiivit.
-2. Valitse Työtilaustyyppi-kentässä Ostotilaukset.
+1. <span data-ttu-id="28bf2-111">Valitse Varastonhallinta > Asetukset > Sijaintidirektiivit.</span><span class="sxs-lookup"><span data-stu-id="28bf2-111">Go to Warehouse management > Setup > Location directives.</span></span>
+2. <span data-ttu-id="28bf2-112">Valitse Työtilaustyyppi-kentässä Ostotilaukset.</span><span class="sxs-lookup"><span data-stu-id="28bf2-112">In the Work order type field, select 'Purchase orders'.</span></span>
 
-## <a name="create-a-location-directive-header"></a>Luo sijaintidirektiivin otsikko
-1. Valitse Uusi.
-2. Syötä Järjestysnumero-kenttään numero.
-    * Tämä on järjestys, jonka perusteella valitun työtyypin sijaintidirektiivi käsitellään. Voit myös tarvittaessa muokata järjestystä.  
-3. Kirjoita arvo Nimi-kenttään.
-    * Tämä on direktiivin yksilöivä tunniste.  
-4. Valitse Työtyyppi-kentässä Määritä.
-    * Valitse suoritettavan työn tyyppi Jos direktiivin työtilauksen tyyppi on Ostotilaus, Määritä on ainoa tuettu arvo.  
-5. Kirjoita arvo Toimipaikka-kenttään.
-6. Kirjoita arvo Varasto-kenttään.
-    * Jätä direktiivikoodi tyhjäksi.  Direktiivikoodeilla Määritä-tyypin työtilaustyypit linkitetään tiettyyn direktiiviin. Ostotilauksissa viimeisen Määritä-tyyppisen työtilausrivin sijainti ratkaistaan ennen työmallin määrittämistä. Työmallin viimeistä riviä ei voi tämän vuoksi yhdistää tiettyyn direktiiviin.   
-7. Kirjoita arvo Käsittelykoodi-kenttään.
-    * Käsittelykoodi rajoittaa sijaintidirektiivin käyttöä, joten sijaintidirektiiviä käytetään vain siinä tapauksessa, että varastotyöntekijä antaa tämän arvon rekisteröidessään nimikettä mobiililaitteella.  
-8. Valitse Tallenna.
+## <a name="create-a-location-directive-header"></a><span data-ttu-id="28bf2-113">Luo sijaintidirektiivin otsikko</span><span class="sxs-lookup"><span data-stu-id="28bf2-113">Create a location directive header</span></span>
+1. <span data-ttu-id="28bf2-114">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="28bf2-114">Click New.</span></span>
+2. <span data-ttu-id="28bf2-115">Syötä Järjestysnumero-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="28bf2-115">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="28bf2-116">Tämä on järjestys, jonka perusteella valitun työtyypin sijaintidirektiivi käsitellään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-116">This is the sequence in which the location directive is processed for the selected work type.</span></span> <span data-ttu-id="28bf2-117">Voit myös tarvittaessa muokata järjestystä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-117">You can also modify the sequence, if needed.</span></span>  
+3. <span data-ttu-id="28bf2-118">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-118">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="28bf2-119">Tämä on direktiivin yksilöivä tunniste.</span><span class="sxs-lookup"><span data-stu-id="28bf2-119">This is the unique identifier for this directive.</span></span>  
+4. <span data-ttu-id="28bf2-120">Valitse Työtyyppi-kentässä Määritä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-120">In the Work type field, select 'Put'.</span></span>
+    * <span data-ttu-id="28bf2-121">Valitse suoritettavan työn tyyppi</span><span class="sxs-lookup"><span data-stu-id="28bf2-121">Select the type of work to be performed.</span></span> <span data-ttu-id="28bf2-122">Jos direktiivin työtilauksen tyyppi on Ostotilaus, Määritä on ainoa tuettu arvo.</span><span class="sxs-lookup"><span data-stu-id="28bf2-122">For directive with work order type Purchase order, Put is the only supported value.</span></span>  
+5. <span data-ttu-id="28bf2-123">Kirjoita arvo Toimipaikka-kenttään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-123">In the Site field, type a value.</span></span>
+6. <span data-ttu-id="28bf2-124">Kirjoita arvo Varasto-kenttään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-124">In the Warehouse field, type a value.</span></span>
+    * <span data-ttu-id="28bf2-125">Jätä direktiivikoodi tyhjäksi.</span><span class="sxs-lookup"><span data-stu-id="28bf2-125">Leave the Directive code blank.</span></span>  <span data-ttu-id="28bf2-126">Direktiivikoodeilla Määritä-tyypin työtilaustyypit linkitetään tiettyyn direktiiviin.</span><span class="sxs-lookup"><span data-stu-id="28bf2-126">Directive codes are used to link a work order line of type Put to a specific directive.</span></span> <span data-ttu-id="28bf2-127">Ostotilauksissa viimeisen Määritä-tyyppisen työtilausrivin sijainti ratkaistaan ennen työmallin määrittämistä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-127">For purchase orders, the location of the last work order line of type Put is resolved before the work template is determined.</span></span> <span data-ttu-id="28bf2-128">Työmallin viimeistä riviä ei voi tämän vuoksi yhdistää tiettyyn direktiiviin.</span><span class="sxs-lookup"><span data-stu-id="28bf2-128">Therefore it is not possible to connect the last line of a work template to a specific directive.</span></span>   
+7. <span data-ttu-id="28bf2-129">Kirjoita arvo Käsittelykoodi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-129">In the Disposition code field, type a value.</span></span>
+    * <span data-ttu-id="28bf2-130">Käsittelykoodi rajoittaa sijaintidirektiivin käyttöä, joten sijaintidirektiiviä käytetään vain siinä tapauksessa, että varastotyöntekijä antaa tämän arvon rekisteröidessään nimikettä mobiililaitteella.</span><span class="sxs-lookup"><span data-stu-id="28bf2-130">The Disposition code limits the use of the location directive, so the location directive is only used if the warehouse worker enters this specific value during registration of the item using a mobile device.</span></span>  
+8. <span data-ttu-id="28bf2-131">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="28bf2-131">Click Save.</span></span>
 
-## <a name="edit-the-query-for-directive"></a>Muokkaa direktiivin kyselyä
-1. Valitse Muokkaa kyselyä.
-    * Tämän direktiivi on jo rajoitettu käytettäväksi määrittämäsi varastoon rekisteröidyissä nimikkeissä, joilla on määrittämäsi käsittelykoodi. Voit lisätä muita rajoituksia kyselyn avulla.  
-2. Valitse OK.
+## <a name="edit-the-query-for-directive"></a><span data-ttu-id="28bf2-132">Muokkaa direktiivin kyselyä</span><span class="sxs-lookup"><span data-stu-id="28bf2-132">Edit the query for directive</span></span>
+1. <span data-ttu-id="28bf2-133">Valitse Muokkaa kyselyä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-133">Click Edit query.</span></span>
+    * <span data-ttu-id="28bf2-134">Tämän direktiivi on jo rajoitettu käytettäväksi määrittämäsi varastoon rekisteröidyissä nimikkeissä, joilla on määrittämäsi käsittelykoodi.</span><span class="sxs-lookup"><span data-stu-id="28bf2-134">The use of this directive is already limited to be used for items registered in the warehouse that you specified, and with the disposition code that you specified.</span></span> <span data-ttu-id="28bf2-135">Voit lisätä muita rajoituksia kyselyn avulla.</span><span class="sxs-lookup"><span data-stu-id="28bf2-135">You can add other constraints using the query.</span></span>  
+2. <span data-ttu-id="28bf2-136">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="28bf2-136">Click OK.</span></span>
 
-## <a name="add-directive-lines"></a>Lisää direktiivirivit
-1. Valitse Uusi.
-    * Tämä on järjestys, jonka perusteella valitun työtyypin sijaintidirektiivin rivit käsitellään. Voit myös tarvittaessa muokata järjestystä.  
-2. Lisää Määrästä-kenttään numero.
-    * Tämä on vähimmäismäärä, jolla tämä direktiivirivi on voimassa.  
-3. Lisää Määrään-kenttään numero.
-4. Kirjoita arvo Yksikkö-kenttään.
-    * Yksikkö, jolla Määrästä ja Määrälle ilmoitetaan. Jos kenttä jätetään tyhjäksi, nimikkeen varastoyksikkö käytetään.  
-5. Valitse Etsi määrä -kentässä vaihtoehto.
-    * Ei mitään tai Rekisterikilpien määrä: kullekin rekisterikilvelle rekisteröity määrä. Määrä, jolle määrätty yksikkö: koko rekisteröity määrä. Jäljellä oleva määrä: ostotilausriviltä vielä rekisteröitävä määrä. Odotettu määrä: ostotilausrivillä määritetty kokonaismäärä.  
-6. Valitse Rajoita yksikön mukaan -valintaruutu tai poista sen valinta.
-    * Jos valitset tämän vaihtoehdon ja määrität yksikön Rajoita yksikön mukaan -sivulla, sijaintiin voidaan määrittää vain nimikkeet, joilla on kyseinen mittayksikkö. Jos mittayksikkö on esimerkiksi kuormalava, vain kuormalavojen nimikkeet voidaan asettaa määritettyyn sijaintiin.  
-7. Valitse Salli jakaminen -valintaruutu tai poista sen valinta.
-    * Tällä tavoin direktiivi voi jakaa määrän eri sijainteihin.  
-8. Valitse Tallenna.
+## <a name="add-directive-lines"></a><span data-ttu-id="28bf2-137">Lisää direktiivirivit</span><span class="sxs-lookup"><span data-stu-id="28bf2-137">Add directive lines</span></span>
+1. <span data-ttu-id="28bf2-138">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="28bf2-138">Click New.</span></span>
+    * <span data-ttu-id="28bf2-139">Tämä on järjestys, jonka perusteella valitun työtyypin sijaintidirektiivin rivit käsitellään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-139">This is the sequence in which the location directive lines are processed for the selected work type.</span></span> <span data-ttu-id="28bf2-140">Voit myös tarvittaessa muokata järjestystä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-140">You can also modify the sequence, if needed.</span></span>  
+2. <span data-ttu-id="28bf2-141">Lisää Määrästä-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="28bf2-141">In the From quantity field, enter a number.</span></span>
+    * <span data-ttu-id="28bf2-142">Tämä on vähimmäismäärä, jolla tämä direktiivirivi on voimassa.</span><span class="sxs-lookup"><span data-stu-id="28bf2-142">This is the lowest quantity that this directive line is valid for.</span></span>  
+3. <span data-ttu-id="28bf2-143">Lisää Määrään-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="28bf2-143">In the To quantity field, enter a number.</span></span>
+4. <span data-ttu-id="28bf2-144">Kirjoita arvo Yksikkö-kenttään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-144">In the Unit field, type a value.</span></span>
+    * <span data-ttu-id="28bf2-145">Yksikkö, jolla Määrästä ja Määrälle ilmoitetaan.</span><span class="sxs-lookup"><span data-stu-id="28bf2-145">The unit the From quantity and To quantity is expressed in.</span></span> <span data-ttu-id="28bf2-146">Jos kenttä jätetään tyhjäksi, nimikkeen varastoyksikkö käytetään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-146">If you leave this field blank the inventory unit from the item is used.</span></span>  
+5. <span data-ttu-id="28bf2-147">Valitse Etsi määrä -kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="28bf2-147">In the Locate quantity field, select an option.</span></span>
+    * <span data-ttu-id="28bf2-148">Ei mitään tai Rekisterikilpien määrä: kullekin rekisterikilvelle rekisteröity määrä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-148">None, or licence plate quantity: The quantity registered on each licence plate.</span></span> <span data-ttu-id="28bf2-149">Määrä, jolle määrätty yksikkö: koko rekisteröity määrä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-149">Unitized quantity: The entire quantity that’s been registered.</span></span> <span data-ttu-id="28bf2-150">Jäljellä oleva määrä: ostotilausriviltä vielä rekisteröitävä määrä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-150">Remaining quantity: The quantity that is yet to be registered from the purchase order line.</span></span> <span data-ttu-id="28bf2-151">Odotettu määrä: ostotilausrivillä määritetty kokonaismäärä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-151">Expected quantity: The total quantity that is specified on the purchase order line.</span></span>  
+6. <span data-ttu-id="28bf2-152">Valitse Rajoita yksikön mukaan -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="28bf2-152">Check or uncheck the Restrict by unit checkbox.</span></span>
+    * <span data-ttu-id="28bf2-153">Jos valitset tämän vaihtoehdon ja määrität yksikön Rajoita yksikön mukaan -sivulla, sijaintiin voidaan määrittää vain nimikkeet, joilla on kyseinen mittayksikkö.</span><span class="sxs-lookup"><span data-stu-id="28bf2-153">If you select this option, and specify the unit on the Restrict by unit page, only items with that unit of measurement can be put into the location.</span></span> <span data-ttu-id="28bf2-154">Jos mittayksikkö on esimerkiksi kuormalava, vain kuormalavojen nimikkeet voidaan asettaa määritettyyn sijaintiin.</span><span class="sxs-lookup"><span data-stu-id="28bf2-154">For example, if the unit of measurement is PL (pallets), only items in pallets can be put into the specified location.</span></span>  
+7. <span data-ttu-id="28bf2-155">Valitse Salli jakaminen -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="28bf2-155">Check or uncheck the Allow split checkbox.</span></span>
+    * <span data-ttu-id="28bf2-156">Tällä tavoin direktiivi voi jakaa määrän eri sijainteihin.</span><span class="sxs-lookup"><span data-stu-id="28bf2-156">This allows the directive to split the quantity across multiple locations.</span></span>  
+8. <span data-ttu-id="28bf2-157">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="28bf2-157">Click Save.</span></span>
 
-## <a name="restrict-the-directive-line-to-a-specific-unit"></a>Rajoita direktiivirivi tiettyyn yksikköön
-1. Valitse Rajoita yksikön mukaan.
-    * Tämä painike on käytettävissä vain, kun Tallenna valitaan Tallenna Rajoita yksikön mukaan -valintaruudun valinnan jälkeen.  
-2. Kirjoita arvo Yksikkö-kenttään.
-3. Sulje sivu.
+## <a name="restrict-the-directive-line-to-a-specific-unit"></a><span data-ttu-id="28bf2-158">Rajoita direktiivirivi tiettyyn yksikköön</span><span class="sxs-lookup"><span data-stu-id="28bf2-158">Restrict the directive line to a specific unit</span></span>
+1. <span data-ttu-id="28bf2-159">Valitse Rajoita yksikön mukaan.</span><span class="sxs-lookup"><span data-stu-id="28bf2-159">Click Restrict by unit.</span></span>
+    * <span data-ttu-id="28bf2-160">Tämä painike on käytettävissä vain, kun Tallenna valitaan Tallenna Rajoita yksikön mukaan -valintaruudun valinnan jälkeen.</span><span class="sxs-lookup"><span data-stu-id="28bf2-160">This button is only available when you press Save after you have selected the Restrict by unit check box.</span></span>  
+2. <span data-ttu-id="28bf2-161">Kirjoita arvo Yksikkö-kenttään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-161">In the Unit field, type a value.</span></span>
+3. <span data-ttu-id="28bf2-162">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="28bf2-162">Close the page.</span></span>
 
-## <a name="add-a-location-directive-action-line"></a>Lisää sijaintidirektiivin toimintorivi
-1. Valitse Uusi.
-    * Tämä on järjestys, jonka perusteella valitun työtyypin sijaintidirektiivin toimintorivit käsitellään. Voit myös tarvittaessa muokata järjestystä.  
-2. Kirjoita arvo Nimi-kenttään.
-    * Tämä on direktiivin toiminnon yksilöivä tunniste.  
-3. Valitse Kiinteän sijainnin käyttö -kentässä vaihtoehto.
-    * Kiinteät ja ei-kiinteät sijainnit: kaikki ei-kiinteät sijainnit ovat kelvollisia samoin kuin tuotteen oma kiinteä kyselyn määrittämissä rajoissa.  Tuotteelle vain kiinteitä sijainteja: tuotteen kiinteät sijainnit ovat kelvollisia ja tuotevariantit jakavat saman kiinteiden sijaintien joukon. Tuotevariantille vain kiinteitä sijainteja: vain kullekin tuotevariantille määritetyt kiinteät sijainnit ovat kelvollisia.  
-4. Valitse Strategia-kentässä vaihtoehto.
-    * Ostotilaus-työtilaustyypit tukevat seuraavia strategioita: Ei mitään: nimike asetetaan ensimmäiseen löydettyyn sijaintiin. Konsolidoi: nimike sijoitetaan sijaintiin, jossa on jo vastaavia kohteita. Tyhjä sijainti ilman saapuvia töitä: Nimike sijoitetaan ensimmäiseen löytyvään tyhjään sijaintiin. Sijainnin katsotaan olevan tyhjä, jos sillä ei ole fyysistä varastoa eikä odotettuja saapuvia töitä.  
-5. Valitse Tallenna.
+## <a name="add-a-location-directive-action-line"></a><span data-ttu-id="28bf2-163">Lisää sijaintidirektiivin toimintorivi</span><span class="sxs-lookup"><span data-stu-id="28bf2-163">Add a location directive action line</span></span>
+1. <span data-ttu-id="28bf2-164">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="28bf2-164">Click New.</span></span>
+    * <span data-ttu-id="28bf2-165">Tämä on järjestys, jonka perusteella valitun työtyypin sijaintidirektiivin toimintorivit käsitellään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-165">This is the sequence in which the location directive action lines are processed for the selected work type.</span></span> <span data-ttu-id="28bf2-166">Voit myös tarvittaessa muokata järjestystä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-166">You can also modify the sequence, if needed.</span></span>  
+2. <span data-ttu-id="28bf2-167">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-167">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="28bf2-168">Tämä on direktiivin toiminnon yksilöivä tunniste.</span><span class="sxs-lookup"><span data-stu-id="28bf2-168">This is the unique identifier for this directive action.</span></span>  
+3. <span data-ttu-id="28bf2-169">Valitse Kiinteän sijainnin käyttö -kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="28bf2-169">In the Fixed location usage field, select an option.</span></span>
+    * <span data-ttu-id="28bf2-170">Kiinteät ja ei-kiinteät sijainnit: kaikki ei-kiinteät sijainnit ovat kelvollisia samoin kuin tuotteen oma kiinteä kyselyn määrittämissä rajoissa.</span><span class="sxs-lookup"><span data-stu-id="28bf2-170">Fixed and non-fixed locations: All non-fixed locations are valid as well as the product’s own fixed location, within the range specified in the query.</span></span>  <span data-ttu-id="28bf2-171">Tuotteelle vain kiinteitä sijainteja: tuotteen kiinteät sijainnit ovat kelvollisia ja tuotevariantit jakavat saman kiinteiden sijaintien joukon.</span><span class="sxs-lookup"><span data-stu-id="28bf2-171">Only fixed location for the product: Fixed locations for the product are valid, and all product variants share the same set of fixed locations.</span></span> <span data-ttu-id="28bf2-172">Tuotevariantille vain kiinteitä sijainteja: vain kullekin tuotevariantille määritetyt kiinteät sijainnit ovat kelvollisia.</span><span class="sxs-lookup"><span data-stu-id="28bf2-172">Only fixed location for the product variants: Only fixed locations specified for each product variant are valid.</span></span>  
+4. <span data-ttu-id="28bf2-173">Valitse Strategia-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="28bf2-173">In the Strategy field, select an option.</span></span>
+    * <span data-ttu-id="28bf2-174">Ostotilaus-työtilaustyypit tukevat seuraavia strategioita: Ei mitään: nimike asetetaan ensimmäiseen löydettyyn sijaintiin.</span><span class="sxs-lookup"><span data-stu-id="28bf2-174">Work orders of type Purchase order support the following strategies: None: the item is placed at the first location that’s found.</span></span> <span data-ttu-id="28bf2-175">Konsolidoi: nimike sijoitetaan sijaintiin, jossa on jo vastaavia kohteita.</span><span class="sxs-lookup"><span data-stu-id="28bf2-175">Consolidate: The item is placed in a location where similar items are already available.</span></span> <span data-ttu-id="28bf2-176">Tyhjä sijainti ilman saapuvia töitä: Nimike sijoitetaan ensimmäiseen löytyvään tyhjään sijaintiin.</span><span class="sxs-lookup"><span data-stu-id="28bf2-176">Empty location with no incoming work: the item is placed in the first empty location that’s found.</span></span> <span data-ttu-id="28bf2-177">Sijainnin katsotaan olevan tyhjä, jos sillä ei ole fyysistä varastoa eikä odotettuja saapuvia töitä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-177">A location is considered to be empty if it has no physical inventory and no expected incoming work.</span></span>  
+5. <span data-ttu-id="28bf2-178">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="28bf2-178">Click Save.</span></span>
 
-## <a name="edit-the-query-for-directive-action-line"></a>Muokkaa direktiivin toimintorivin kyselyä
-1. Valitse Muokkaa kyselyä.
-2. ValitseLisää.
-3. Kirjoita Kenttä-kenttään Sijainnin profiilitunnus.
-    * Tässä esimerkissä mahdollisia sijainteja rajoitetaan sijaintiprofiilin tunnuksen avulla.  
-4. Kirjoita arvo Ehdot-kenttään.
-5. Valitse OK.
-    * Voit jatkaa direktiivirivien ja -toimintojen lisäämistä, kunnes varaston kaikki mahdolliset skenaariot on otettu huomioon.  
+## <a name="edit-the-query-for-directive-action-line"></a><span data-ttu-id="28bf2-179">Muokkaa direktiivin toimintorivin kyselyä</span><span class="sxs-lookup"><span data-stu-id="28bf2-179">Edit the query for directive action line</span></span>
+1. <span data-ttu-id="28bf2-180">Valitse Muokkaa kyselyä.</span><span class="sxs-lookup"><span data-stu-id="28bf2-180">Click Edit query.</span></span>
+2. <span data-ttu-id="28bf2-181">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="28bf2-181">Click Add.</span></span>
+3. <span data-ttu-id="28bf2-182">Kirjoita Kenttä-kenttään Sijainnin profiilitunnus.</span><span class="sxs-lookup"><span data-stu-id="28bf2-182">In the Field field, type 'location profile ID'.</span></span>
+    * <span data-ttu-id="28bf2-183">Tässä esimerkissä mahdollisia sijainteja rajoitetaan sijaintiprofiilin tunnuksen avulla.</span><span class="sxs-lookup"><span data-stu-id="28bf2-183">In this example, we’ll restrict the possible locations using a location profile ID.</span></span>  
+4. <span data-ttu-id="28bf2-184">Kirjoita arvo Ehdot-kenttään.</span><span class="sxs-lookup"><span data-stu-id="28bf2-184">In the Criteria field, type a value.</span></span>
+5. <span data-ttu-id="28bf2-185">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="28bf2-185">Click OK.</span></span>
+    * <span data-ttu-id="28bf2-186">Voit jatkaa direktiivirivien ja -toimintojen lisäämistä, kunnes varaston kaikki mahdolliset skenaariot on otettu huomioon.</span><span class="sxs-lookup"><span data-stu-id="28bf2-186">You can continue to add directive lines and directive actions until you have covered all the possible scenarios in your warehouse.</span></span>  
 
 

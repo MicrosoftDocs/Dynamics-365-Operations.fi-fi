@@ -16,24 +16,24 @@ ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0ecc0d3ca4ab38603db1b03eb63a263b14a81ea6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b39b0f0acf0a0fcdc472ba0bbfc3b15451c7a274
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-a-users-preferred-time-zone"></a>Käyttäjän ensisijaisen aikavyöhykkeen asettaminen
+# <a name="set-a-users-preferred-time-zone"></a><span data-ttu-id="83747-103">Käyttäjän ensisijaisen aikavyöhykkeen asettaminen</span><span class="sxs-lookup"><span data-stu-id="83747-103">Set a user's preferred time zone</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Seuraava menettely osoittaa, miten käyttäjä, jolla on järjestelmänvalvojan rooli, voi määrittää käyttäjän aikavyöhykkeen.
+<span data-ttu-id="83747-104">Seuraava menettely osoittaa, miten käyttäjä, jolla on järjestelmänvalvojan rooli, voi määrittää käyttäjän aikavyöhykkeen.</span><span class="sxs-lookup"><span data-stu-id="83747-104">The following procedure explains how a user in the System Administrator role can set the time zone for a user.</span></span>
 
-1. Valitse Järjestelmänhallinta > Käyttäjät > Käyttäjät.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-4. Napsauta Käyttäjän asetukset.
-5. Napsauta Asetukset-välilehteä.
-6. Valitse Aikavyöhyke-kentässä vaihtoehto.
-7. Valitse Tallenna.
+1. <span data-ttu-id="83747-105">Valitse Järjestelmänhallinta > Käyttäjät > Käyttäjät.</span><span class="sxs-lookup"><span data-stu-id="83747-105">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="83747-106">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="83747-106">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="83747-107">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="83747-107">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="83747-108">Napsauta Käyttäjän asetukset.</span><span class="sxs-lookup"><span data-stu-id="83747-108">Click User options.</span></span>
+5. <span data-ttu-id="83747-109">Napsauta Asetukset-välilehteä.</span><span class="sxs-lookup"><span data-stu-id="83747-109">Click the Preferences tab.</span></span>
+6. <span data-ttu-id="83747-110">Valitse Aikavyöhyke-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="83747-110">In the Time zone field, select an option.</span></span>
+7. <span data-ttu-id="83747-111">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="83747-111">Click Save.</span></span>
 
 

@@ -16,36 +16,36 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: af9e5f499e6c162189443d95c90b15c17d910739
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3bcb59c6edd04877dc2a052002be513205ae840a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Vapaatekstilaskumallin määrittäminen asiakkaalle
+# <a name="assign-a-free-text-invoice-template-to-a-customer"></a><span data-ttu-id="9921f-103">Vapaatekstilaskumallin määrittäminen asiakkaalle</span><span class="sxs-lookup"><span data-stu-id="9921f-103">Assign a free text invoice template to a customer</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä tehtävässä kerrotaan, miten vapaatekstilaskun malli liitetään asiakkaalle. Tässä tehtävässä käytetään USMF-esittely-yritystä. Tehtävä on tarkoitettu myyntireskontran laskujen hallinnasta ja käsittelemisestä vastaavalle käyttäjälle.
+<span data-ttu-id="9921f-104">Tässä tehtävässä kerrotaan, miten vapaatekstilaskun malli liitetään asiakkaalle.</span><span class="sxs-lookup"><span data-stu-id="9921f-104">This task demonstrates how to assign a free text invoice template to a customer.</span></span> <span data-ttu-id="9921f-105">Tässä tehtävässä käytetään USMF-esittely-yritystä. Tehtävä on tarkoitettu myyntireskontran laskujen hallinnasta ja käsittelemisestä vastaavalle käyttäjälle.</span><span class="sxs-lookup"><span data-stu-id="9921f-105">This task uses the USMF demo company and is intended for the user who is responsible for managing and processing A/R invoices.</span></span>
 
-1. Siirry kohtaan Myyntireskontra > Asiakkaat > Kaikki asiakkaat.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Valitse toimintoruudussa Lasku.
-4. Valitse Toistuvat laskut.
-    * Tällä sivulla liitetään vapaatekstilaskun mallit asiakkaille ja määritetään, miten usein laskut lähetetään asiakkaalle.  
-5. Valitse Uusi, kun haluat liittää asiakkaalle uuden mallin.
-6. Valitse vapaatekstilaskun malli, jonka haluat liittää asiakkaalle.
-7. Etsi haluamasi tietue luettelosta ja valitse se.
-8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-9. Syötä ensimmäisen laskun luontipäivämäärä.
-    * Määritä toiston päättymispäivämäärä.  
-    * Valitse jokin seuraavista vaihtoehdoista: Päättymispäivä puuttuu – Laskuja luodaan niin kauan kunnes malli poistetaan asiakkaan tililtä.  Laskutuksen päättymispäivämäärä – Valitse tämä vaihtoehto, kun haluat syöttää laskun luonnille viimeisen päivämäärän.  
-    * Suurin mahdollinen kumulatiivinen summa, jonka jälkeen laskujen luominen päättyy.  
-    * Syötä suurin mahdollinen kumulatiivinen summa, joka valitun mallin avulla voidaan saavuttaa. Jos esimerkiksi syötät arvioksi 1 000,00, ja kuukauden laskutus on 100,00, laskujen luominen päättyy kymmenennen laskun jälkeen.  
-    * Toistuvat laskut luodaan vapaatekstilaskun mallin tai asiakkaan tilin oletusarvojen perusteella.  
-    * Valitse käytettäväksi vapaatekstilaskumalli tai asiakastili, kun laskujen luonnin yhteydessä määritetään oletusarvo kielelle, kirjausprofiilille, arvonlisäveroryhmälle, nimikkeen arvonlisäveroryhmälle, luettelokoodille, toimituksen maalle/alueelle, valuutalle, maksuehdoille, maksutavalle, maksumääritykselle, maksuaikataululle, käteisalennukselle, taloushallinnon dimensiolle ja tilisiirtolomakkeelle.  
-10. Valitse toistumismalli.
-    * Päivittäin – Valitse tämä vaihtoehto ja syötä päivien määrä Per-kenttään. Jos syötät esimerkiksi luvun 15, asiakkaalle luodaan lasku 15 päivän välein.  Viikoittain – Valitse tämä vaihtoehto ja syötä viikkojen määrä Per-kenttään. Jos syötät esimerkiksi luvun 2, asiakkaalle luodaan lasku joka toinen viikko.  Kuukausittain – Valitse tämä vaihtoehto ja syötä kuukausien määrä Per-kenttään. Jos syötät esimerkiksi luvun 6, asiakkaalle luodaan lasku kuuden kuukauden välein.  Vuosittain– Valitse tämä vaihtoehto ja syötä vuosien määrä Per-kenttään. Jos syötät esimerkiksi luvun 2, asiakkaalle luodaan lasku joka toinen vuosi.  
-11. Syötä numero Per-kenttään.
+1. <span data-ttu-id="9921f-106">Siirry kohtaan Myyntireskontra > Asiakkaat > Kaikki asiakkaat.</span><span class="sxs-lookup"><span data-stu-id="9921f-106">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="9921f-107">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="9921f-107">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="9921f-108">Valitse toimintoruudussa Lasku.</span><span class="sxs-lookup"><span data-stu-id="9921f-108">On the Action Pane, click Invoice.</span></span>
+4. <span data-ttu-id="9921f-109">Valitse Toistuvat laskut.</span><span class="sxs-lookup"><span data-stu-id="9921f-109">Click Recurring invoices.</span></span>
+    * <span data-ttu-id="9921f-110">Tällä sivulla liitetään vapaatekstilaskun mallit asiakkaille ja määritetään, miten usein laskut lähetetään asiakkaalle.</span><span class="sxs-lookup"><span data-stu-id="9921f-110">Use this page to assign free text invoice templates to customers and specify how frequently invoices will be sent to the customer.</span></span>  
+5. <span data-ttu-id="9921f-111">Valitse Uusi, kun haluat liittää asiakkaalle uuden mallin.</span><span class="sxs-lookup"><span data-stu-id="9921f-111">Click New to assign a new template to the customer.</span></span>
+6. <span data-ttu-id="9921f-112">Valitse vapaatekstilaskun malli, jonka haluat liittää asiakkaalle.</span><span class="sxs-lookup"><span data-stu-id="9921f-112">Select the free text invoice template you want to assign to the customer.</span></span>
+7. <span data-ttu-id="9921f-113">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="9921f-113">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="9921f-114">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="9921f-114">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="9921f-115">Syötä ensimmäisen laskun luontipäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="9921f-115">Enter the date when the first invoice will be generated.</span></span>
+    * <span data-ttu-id="9921f-116">Määritä toiston päättymispäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="9921f-116">Enter a recurring end date.</span></span>  
+    * <span data-ttu-id="9921f-117">Valitse jokin seuraavista vaihtoehdoista: Päättymispäivä puuttuu – Laskuja luodaan niin kauan kunnes malli poistetaan asiakkaan tililtä.</span><span class="sxs-lookup"><span data-stu-id="9921f-117">Select one of the following: No end date – Invoices will be generated indefinitely until the template is removed from the customer account.</span></span>  <span data-ttu-id="9921f-118">Laskutuksen päättymispäivämäärä – Valitse tämä vaihtoehto, kun haluat syöttää laskun luonnille viimeisen päivämäärän.</span><span class="sxs-lookup"><span data-stu-id="9921f-118">Billing end date – Select this option and enter the last date that the invoice can be generated.</span></span>  
+    * <span data-ttu-id="9921f-119">Suurin mahdollinen kumulatiivinen summa, jonka jälkeen laskujen luominen päättyy.</span><span class="sxs-lookup"><span data-stu-id="9921f-119">Maximum cumulative amount after which invoice generation will stop.</span></span>  
+    * <span data-ttu-id="9921f-120">Syötä suurin mahdollinen kumulatiivinen summa, joka valitun mallin avulla voidaan saavuttaa.</span><span class="sxs-lookup"><span data-stu-id="9921f-120">Enter the maximum cumulative amount that can be reached using the selected template.</span></span> <span data-ttu-id="9921f-121">Jos esimerkiksi syötät arvioksi 1 000,00, ja kuukauden laskutus on 100,00, laskujen luominen päättyy kymmenennen laskun jälkeen.</span><span class="sxs-lookup"><span data-stu-id="9921f-121">For example, if you enter 1,000.00 and generate monthly invoices for 100.00 each, invoices will stop generating after the tenth invoice is generated.</span></span>  
+    * <span data-ttu-id="9921f-122">Toistuvat laskut luodaan vapaatekstilaskun mallin tai asiakkaan tilin oletusarvojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="9921f-122">Generate recurring invoices by using the default values from either free text invoice template or the customer account.</span></span>  
+    * <span data-ttu-id="9921f-123">Valitse käytettäväksi vapaatekstilaskumalli tai asiakastili, kun laskujen luonnin yhteydessä määritetään oletusarvo kielelle, kirjausprofiilille, arvonlisäveroryhmälle, nimikkeen arvonlisäveroryhmälle, luettelokoodille, toimituksen maalle/alueelle, valuutalle, maksuehdoille, maksutavalle, maksumääritykselle, maksuaikataululle, käteisalennukselle, taloushallinnon dimensiolle ja tilisiirtolomakkeelle.</span><span class="sxs-lookup"><span data-stu-id="9921f-123">Select whether to use the free text invoice template or the customer account to determine the default values for the language, posting profile, sales tax group, item sales tax group, list code, country/region for delivery, currency, terms of payment, method of payment, payment specification, payment schedule, cash discount, financial dimensions, and giro money transfer slip when invoices are created.</span></span>  
+10. <span data-ttu-id="9921f-124">Valitse toistumismalli.</span><span class="sxs-lookup"><span data-stu-id="9921f-124">Select the recurrence pattern.</span></span>
+    * <span data-ttu-id="9921f-125">Päivittäin – Valitse tämä vaihtoehto ja syötä päivien määrä Per-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9921f-125">Daily – Select this option and enter the number of days in the Per field.</span></span> <span data-ttu-id="9921f-126">Jos syötät esimerkiksi luvun 15, asiakkaalle luodaan lasku 15 päivän välein.</span><span class="sxs-lookup"><span data-stu-id="9921f-126">For example, if you enter 15, an invoice will be generated every 15 days for this customer.</span></span>  <span data-ttu-id="9921f-127">Viikoittain – Valitse tämä vaihtoehto ja syötä viikkojen määrä Per-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9921f-127">Weekly - Select this option and enter the number of weeks in the Per field.</span></span> <span data-ttu-id="9921f-128">Jos syötät esimerkiksi luvun 2, asiakkaalle luodaan lasku joka toinen viikko.</span><span class="sxs-lookup"><span data-stu-id="9921f-128">For example, if you enter 2, an invoice will be generated every two weeks for this customer.</span></span>  <span data-ttu-id="9921f-129">Kuukausittain – Valitse tämä vaihtoehto ja syötä kuukausien määrä Per-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9921f-129">Monthly - Select this option and enter the number of months in the Per field.</span></span> <span data-ttu-id="9921f-130">Jos syötät esimerkiksi luvun 6, asiakkaalle luodaan lasku kuuden kuukauden välein.</span><span class="sxs-lookup"><span data-stu-id="9921f-130">For example, if you enter 6, an invoice will be generated every six months for this customer.</span></span>  <span data-ttu-id="9921f-131">Vuosittain– Valitse tämä vaihtoehto ja syötä vuosien määrä Per-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9921f-131">Yearly – Select this option and enter the number of years in the Per field.</span></span> <span data-ttu-id="9921f-132">Jos syötät esimerkiksi luvun 2, asiakkaalle luodaan lasku joka toinen vuosi.</span><span class="sxs-lookup"><span data-stu-id="9921f-132">For example, if you enter 2, an invoice will be generated every two years for this customer.</span></span>  
+11. <span data-ttu-id="9921f-133">Syötä numero Per-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9921f-133">In the Per field, enter a number.</span></span>
 
 

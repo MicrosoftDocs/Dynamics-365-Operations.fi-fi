@@ -16,48 +16,48 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 88927a220246d11e48b210eb5648d7e7c2a7cef8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1187448393e4905ed5f2dfe826ec843fdcf0cb67
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-destinations-for-electronic-reporting-er"></a>Kohteiden konfigurointi sähköistä raportointia (ER) varten
+# <a name="configure-destinations-for-electronic-reporting-er"></a><span data-ttu-id="df5c0-103">Kohteiden konfigurointi sähköistä raportointia (ER) varten</span><span class="sxs-lookup"><span data-stu-id="df5c0-103">Configure destinations for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä esitellään, miten sähköisen raportoinnin (ER) tuloskomponenteille, kuten kansioille tai tiedostoille, voi käyttää eri kohteita. Tämän menettelyn luomisessa käytetty esittely-yritys on DEMF. Saksan on yrityksen ensisijaisen osoitteen maa/alue, mutta tässä menettelyssä voit käyttää mitä tahansa yritystä.. 
+<span data-ttu-id="df5c0-104">Tässä menettelyssä esitellään, miten sähköisen raportoinnin (ER) tuloskomponenteille, kuten kansioille tai tiedostoille, voi käyttää eri kohteita.</span><span class="sxs-lookup"><span data-stu-id="df5c0-104">This procedure demonstrates how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file.</span></span> <span data-ttu-id="df5c0-105">Tämän menettelyn luomisessa käytetty esittely-yritys on DEMF.</span><span class="sxs-lookup"><span data-stu-id="df5c0-105">The demo data company used to create this procedure is DEMF.</span></span> <span data-ttu-id="df5c0-106">Saksan on yrityksen ensisijaisen osoitteen maa/alue, mutta tässä menettelyssä voit käyttää mitä tahansa yritystä..</span><span class="sxs-lookup"><span data-stu-id="df5c0-106">Germany is the country\region of the legal entity’s primary address, however you can use any legal entity for this procedure.</span></span> 
 
-Esimerkissä käytetty muoto on ISO20022 Tilisiirto, mutta voit käyttää mitä tahansa aiemmin tuomaasi muotoa. Huomaa, että tämä menettely on esimerkki yhden tiedoston ja yhden kohteen määrityksestä. Lisätietoja sähköisen raportoinnin kohdehallinnasta on Dynamics 365 for Finance and Operationsin ohjeessa.
+<span data-ttu-id="df5c0-107">Esimerkissä käytetty muoto on ISO20022 Tilisiirto, mutta voit käyttää mitä tahansa aiemmin tuomaasi muotoa.</span><span class="sxs-lookup"><span data-stu-id="df5c0-107">The format used in this example is ISO20022 Credit transfer, but you can use any format that you have already imported.</span></span> <span data-ttu-id="df5c0-108">Huomaa, että tämä menettely on esimerkki yhden tiedoston ja yhden kohteen määrityksestä.</span><span class="sxs-lookup"><span data-stu-id="df5c0-108">Note, this procedure is an example of a single file and a single destination setup.</span></span> <span data-ttu-id="df5c0-109">Lisätietoja sähköisen raportoinnin kohdehallinnasta on Dynamics 365 for Finance and Operationsin ohjeessa.</span><span class="sxs-lookup"><span data-stu-id="df5c0-109">More information about Electronic reporting destination management can be found in the Dynamics 365 for Finance and Operations Help.</span></span>
 
-1. Valitse Organisaation hallinto > Sähköinen raportointi > Sähköisen raportoinnin kohde.
-2. Luo muodolle uusi kohdejoukko painamalla Uusi.
-3. Valitse Viite-kenttään muoto, jolle haluat konfiguroida kohteet.
-    * Jos valittavana ei ole arvoa, et ole tuonut yhtäkään sähköisen raportoinnin muotokonfiguraatiota. Muotokonfiguraatio on tuotava ennen kohteiden määrittämistä.  
-4. Luo tiedostokohde napsauttamalla Uusi.
-    * Huomaa, että voit luoda yhden tiedostokohteen kullekin samanmuotoiselle tuloskomponentille, kuten kansiolle tai tiedostolle. Voit ottaa käyttöön tai poistaa käytöstä kohteita erikseen asetuksissa.  
-5. Kirjoita Nimi-kenttään tuloskomponentin kutsumanimi.
-    * On suositeltavaa käyttää kuvaavia nimiä, kuten "Maksutiedosto" tai "Valvontaraportti". Nämä nimet esitetään käyttäjille, kun konfiguraatio ajetaan kohteen asetusten rinnalla.  
-6. Valitse Tiedostonimi-kohdassa muotokohtainen tiedosto tai kansio.
-7. Valitse Asetukset.
-8. Valitse Käytössä-kentässä Kyllä.
-    * Kunkin välilehden Käytössä-valintaruutu ottaa tai poistaa kunkin kohteen käytöstä erikseen. Tässä esimerkissä otetaan käyttöön tulostiedoston lähettäminen postin vastaanottajalle, kun tiedosto luodaan.  
-9. Määritä sähköpostin vastaanottajat napsauttamalla Muokkaa-painiketta.
-10. ValitseLisää.
-11. Valitse Tulostuksenhallinnan sähköposti.
-12. Valitse Sähköpostilähde-kentässä vaihtoehto.
-    * Voit valita sähköpostille eri lähdetyyppejä, kuten asiakas- tai toimittajatyypin Tämä määrittää Sähköpostin lähdetili -kaavan palauttaman argumenttityypin. Sähköpostin lähdetili -kaava, joka kuvaillaan tulevassa vaiheessa, on paikka, jossa sähköpostilähteen sidonta suoritetaan. Valitse Toimittaja, jos kaava palauttaa toimittajatilin. Käytä Toimittaja-arvoa, jos käytät ISO 20022 Tilisiirto -esimerkkikonfiguraatiota.  
-13. Valitse Sido sähköpostilähde.
-14. Kirjoita Kaava-kohtaan, asiakirjakohtainen viittaus aiemmin valitsemaasi osapuolen tyyppiin.
-    * Kirjoittamisen asemesta voit etsiä tietolähdesolmun, joka vastaa osapuolen tiliä ja napsauttaa Lisää tietolähde -painiketta päivittääksesi kaavan. Esimerkki: Jos käytössä on ISO 20022 Tilisiirto -konfiguraatio, toimittajatiliä vastaava solmu on $PaymentsForCoveringLetter'.Creditor.Identification.SourceID. Muussa tapauksessa voit kirjoittaa minkä tahansa merkkijonoarvon, kuten "DE-001", tallentaaksesi kaavan.  
-15. Valitse Tallenna.
-16. Sulje sivu.
-17. Määritä osapuolen yhteystiedot napsauttamalla Muokkaa-painiketta.
-18. Valitse Ensisijainen yhteyshenkilö -kentässä Kyllä.
-    * Erilaisia vaihtoehtoja voi käyttää ilmaisemaan, mitä yhteyshenkilötyyppiä osapuolen tulisi olla tämän kohteen sähköpostiosoitteessa. Tässä esimerkissä käytetään ensisijaista yhteyshenkilöä.  
-19. Valitse OK.
-20. Valitse OK.
-21. Kirjoita arvo Aihe-kenttään.
-22. Valitse OK.
+1. <span data-ttu-id="df5c0-110">Valitse Organisaation hallinto > Sähköinen raportointi > Sähköisen raportoinnin kohde.</span><span class="sxs-lookup"><span data-stu-id="df5c0-110">Go to Organization administration > Electronic reporting > Electronic reporting destination.</span></span>
+2. <span data-ttu-id="df5c0-111">Luo muodolle uusi kohdejoukko painamalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="df5c0-111">Click New to create a new set of destinations for a format.</span></span>
+3. <span data-ttu-id="df5c0-112">Valitse Viite-kenttään muoto, jolle haluat konfiguroida kohteet.</span><span class="sxs-lookup"><span data-stu-id="df5c0-112">In the Reference field, select a format for which you want to configure destinations.</span></span>
+    * <span data-ttu-id="df5c0-113">Jos valittavana ei ole arvoa, et ole tuonut yhtäkään sähköisen raportoinnin muotokonfiguraatiota.</span><span class="sxs-lookup"><span data-stu-id="df5c0-113">If you don't have a value to select, it means that you have not imported any Electronic reporting format configurations.</span></span> <span data-ttu-id="df5c0-114">Muotokonfiguraatio on tuotava ennen kohteiden määrittämistä.</span><span class="sxs-lookup"><span data-stu-id="df5c0-114">You must import a format configuration before setting up destinations.</span></span>  
+4. <span data-ttu-id="df5c0-115">Luo tiedostokohde napsauttamalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="df5c0-115">Click New to create a new file destination.</span></span>
+    * <span data-ttu-id="df5c0-116">Huomaa, että voit luoda yhden tiedostokohteen kullekin samanmuotoiselle tuloskomponentille, kuten kansiolle tai tiedostolle.</span><span class="sxs-lookup"><span data-stu-id="df5c0-116">Note, you can create one file destination for each output component of the same format, such as a folder or a file.</span></span> <span data-ttu-id="df5c0-117">Voit ottaa käyttöön tai poistaa käytöstä kohteita erikseen asetuksissa.</span><span class="sxs-lookup"><span data-stu-id="df5c0-117">You will be able to enable and disable destinations separately in the settings.</span></span>  
+5. <span data-ttu-id="df5c0-118">Kirjoita Nimi-kenttään tuloskomponentin kutsumanimi.</span><span class="sxs-lookup"><span data-stu-id="df5c0-118">In the Name field, enter the user-friendly name of output component.</span></span>
+    * <span data-ttu-id="df5c0-119">On suositeltavaa käyttää kuvaavia nimiä, kuten "Maksutiedosto" tai "Valvontaraportti".</span><span class="sxs-lookup"><span data-stu-id="df5c0-119">We recommend that you use meaningful names, such as "Payment file" or "Control report".</span></span> <span data-ttu-id="df5c0-120">Nämä nimet esitetään käyttäjille, kun konfiguraatio ajetaan kohteen asetusten rinnalla.</span><span class="sxs-lookup"><span data-stu-id="df5c0-120">These names will be presented to users at configuration runtime along with the destination settings.</span></span>  
+6. <span data-ttu-id="df5c0-121">Valitse Tiedostonimi-kohdassa muotokohtainen tiedosto tai kansio.</span><span class="sxs-lookup"><span data-stu-id="df5c0-121">In the File name, select a file or folder that is specific to the format.</span></span>
+7. <span data-ttu-id="df5c0-122">Valitse Asetukset.</span><span class="sxs-lookup"><span data-stu-id="df5c0-122">Click Settings.</span></span>
+8. <span data-ttu-id="df5c0-123">Valitse Käytössä-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="df5c0-123">Select Yes in the Enabled field.</span></span>
+    * <span data-ttu-id="df5c0-124">Kunkin välilehden Käytössä-valintaruutu ottaa tai poistaa kunkin kohteen käytöstä erikseen.</span><span class="sxs-lookup"><span data-stu-id="df5c0-124">The Enabled check box on each tab enables and disables each destination separately.</span></span> <span data-ttu-id="df5c0-125">Tässä esimerkissä otetaan käyttöön tulostiedoston lähettäminen postin vastaanottajalle, kun tiedosto luodaan.</span><span class="sxs-lookup"><span data-stu-id="df5c0-125">In this example, you'll enable sending an output file to a mail recipient when the file is generated.</span></span>  
+9. <span data-ttu-id="df5c0-126">Määritä sähköpostin vastaanottajat napsauttamalla Muokkaa-painiketta.</span><span class="sxs-lookup"><span data-stu-id="df5c0-126">Click Edit, to set up email recipients.</span></span>
+10. <span data-ttu-id="df5c0-127">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="df5c0-127">Click Add.</span></span>
+11. <span data-ttu-id="df5c0-128">Valitse Tulostuksenhallinnan sähköposti.</span><span class="sxs-lookup"><span data-stu-id="df5c0-128">Click Print Management email.</span></span>
+12. <span data-ttu-id="df5c0-129">Valitse Sähköpostilähde-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="df5c0-129">In the Email source  field, select an option.</span></span>
+    * <span data-ttu-id="df5c0-130">Voit valita sähköpostille eri lähdetyyppejä, kuten asiakas- tai toimittajatyypin</span><span class="sxs-lookup"><span data-stu-id="df5c0-130">You can select different email source types, such as a customer or a vendor type.</span></span> <span data-ttu-id="df5c0-131">Tämä määrittää Sähköpostin lähdetili -kaavan palauttaman argumenttityypin.</span><span class="sxs-lookup"><span data-stu-id="df5c0-131">This defines the type of argument that will be returned by the Email source account formula.</span></span> <span data-ttu-id="df5c0-132">Sähköpostin lähdetili -kaava, joka kuvaillaan tulevassa vaiheessa, on paikka, jossa sähköpostilähteen sidonta suoritetaan.</span><span class="sxs-lookup"><span data-stu-id="df5c0-132">The Email source account formula, described in a following step, is the place where you bind an email source.</span></span> <span data-ttu-id="df5c0-133">Valitse Toimittaja, jos kaava palauttaa toimittajatilin.</span><span class="sxs-lookup"><span data-stu-id="df5c0-133">Select Vendor if your formula will return a vendor account.</span></span> <span data-ttu-id="df5c0-134">Käytä Toimittaja-arvoa, jos käytät ISO 20022 Tilisiirto -esimerkkikonfiguraatiota.</span><span class="sxs-lookup"><span data-stu-id="df5c0-134">Use Vendor if you are using the ISO 20022 Credit Transfer configuration example.</span></span>  
+13. <span data-ttu-id="df5c0-135">Valitse Sido sähköpostilähde.</span><span class="sxs-lookup"><span data-stu-id="df5c0-135">Click Email source bind button.</span></span>
+14. <span data-ttu-id="df5c0-136">Kirjoita Kaava-kohtaan, asiakirjakohtainen viittaus aiemmin valitsemaasi osapuolen tyyppiin.</span><span class="sxs-lookup"><span data-stu-id="df5c0-136">In the Formula, enter a document-specific reference to a party type that you selected earlier.</span></span>
+    * <span data-ttu-id="df5c0-137">Kirjoittamisen asemesta voit etsiä tietolähdesolmun, joka vastaa osapuolen tiliä ja napsauttaa Lisää tietolähde -painiketta päivittääksesi kaavan.</span><span class="sxs-lookup"><span data-stu-id="df5c0-137">Instead of typing, you can find a data source node that represents the party account, and click the Add data source button to update the formula.</span></span> <span data-ttu-id="df5c0-138">Esimerkki: Jos käytössä on ISO 20022 Tilisiirto -konfiguraatio, toimittajatiliä vastaava solmu on $PaymentsForCoveringLetter'.Creditor.Identification.SourceID.</span><span class="sxs-lookup"><span data-stu-id="df5c0-138">For example, if you use the ISO 20022 Credit Transfer configuration, the node representing a vendor account is '$PaymentsForCoveringLetter'.Creditor.Identification.SourceID.</span></span> <span data-ttu-id="df5c0-139">Muussa tapauksessa voit kirjoittaa minkä tahansa merkkijonoarvon, kuten "DE-001", tallentaaksesi kaavan.</span><span class="sxs-lookup"><span data-stu-id="df5c0-139">Otherwise, enter any string value, such as "DE-001", to save a formula.</span></span>  
+15. <span data-ttu-id="df5c0-140">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="df5c0-140">Click Save.</span></span>
+16. <span data-ttu-id="df5c0-141">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="df5c0-141">Close the page.</span></span>
+17. <span data-ttu-id="df5c0-142">Määritä osapuolen yhteystiedot napsauttamalla Muokkaa-painiketta.</span><span class="sxs-lookup"><span data-stu-id="df5c0-142">Click Edit to configure contact details for the party.</span></span>
+18. <span data-ttu-id="df5c0-143">Valitse Ensisijainen yhteyshenkilö -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="df5c0-143">Select Yes in the Primary contact field.</span></span>
+    * <span data-ttu-id="df5c0-144">Erilaisia vaihtoehtoja voi käyttää ilmaisemaan, mitä yhteyshenkilötyyppiä osapuolen tulisi olla tämän kohteen sähköpostiosoitteessa.</span><span class="sxs-lookup"><span data-stu-id="df5c0-144">You may use different options to indicate what contact type of the party should be used as an email address for this destination.</span></span> <span data-ttu-id="df5c0-145">Tässä esimerkissä käytetään ensisijaista yhteyshenkilöä.</span><span class="sxs-lookup"><span data-stu-id="df5c0-145">We use primary contact in this example.</span></span>  
+19. <span data-ttu-id="df5c0-146">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="df5c0-146">Click OK.</span></span>
+20. <span data-ttu-id="df5c0-147">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="df5c0-147">Click OK.</span></span>
+21. <span data-ttu-id="df5c0-148">Kirjoita arvo Aihe-kenttään.</span><span class="sxs-lookup"><span data-stu-id="df5c0-148">In the Subject field, type a value.</span></span>
+22. <span data-ttu-id="df5c0-149">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="df5c0-149">Click OK.</span></span>
 
 

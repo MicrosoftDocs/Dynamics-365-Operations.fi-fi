@@ -17,133 +17,133 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 01a0c42c43a23234e0e355193f8dd7e8ee116f71
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 02af5d1beb2d4eb6a7162b47c42854725fbdbec2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-min-max-replenishment-process"></a>Määritä minimi-/maksimitäydennysprosessi
+# <a name="set-up-a-min-max-replenishment-process"></a><span data-ttu-id="c76f3-103">Määritä minimi-/maksimitäydennysprosessi</span><span class="sxs-lookup"><span data-stu-id="c76f3-103">Set up a min-max replenishment process</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Seuraavassa menettelyssä kuvataan, miten voit määrittää uuden täydennysprosessin, joka käyttää minimi-/maksimitäydennysstrategiaa. Sijainnin täydennystyö luodaan, kun varaston vähimmäistaso laskee minimitason alle. Menettelyssä näytetään myös, miten kiinteitä keräilysijainteja voi käyttää sallimaan täydennys vaikka varastosaldo laskisikin minimitason alle, ja miten täydennysprosessin voi määrittää ajettavaksi säännöllisesti eräajona. Yleensä varastopäällikkö tekee nämä tehtävät. Voit suorittaa tämän menettelyn USMF-malliyrityksessä käyttämällä muistiinpanojen esimerkkiarvoja, tai voit suorittaa sen omilla tiedoillasi. Jos käytät omia tietoja, varmista, että sinulla on varasto, jolla varastonhallintaprosessit ovat käytössä.
+<span data-ttu-id="c76f3-104">Seuraavassa menettelyssä kuvataan, miten voit määrittää uuden täydennysprosessin, joka käyttää minimi-/maksimitäydennysstrategiaa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-104">This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy.</span></span> <span data-ttu-id="c76f3-105">Sijainnin täydennystyö luodaan, kun varaston vähimmäistaso laskee minimitason alle.</span><span class="sxs-lookup"><span data-stu-id="c76f3-105">When inventory falls below the minimum level, work will be created to replenish the location.</span></span> <span data-ttu-id="c76f3-106">Menettelyssä näytetään myös, miten kiinteitä keräilysijainteja voi käyttää sallimaan täydennys vaikka varastosaldo laskisikin minimitason alle, ja miten täydennysprosessin voi määrittää ajettavaksi säännöllisesti eräajona.</span><span class="sxs-lookup"><span data-stu-id="c76f3-106">The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job.</span></span> <span data-ttu-id="c76f3-107">Yleensä varastopäällikkö tekee nämä tehtävät.</span><span class="sxs-lookup"><span data-stu-id="c76f3-107">These tasks would typically be carried out by a warehouse manager.</span></span> <span data-ttu-id="c76f3-108">Voit suorittaa tämän menettelyn USMF-malliyrityksessä käyttämällä muistiinpanojen esimerkkiarvoja, tai voit suorittaa sen omilla tiedoillasi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-108">You can run this procedure in the USMF demo data company using the example values in the notes, or can run it on your own data.</span></span> <span data-ttu-id="c76f3-109">Jos käytät omia tietoja, varmista, että sinulla on varasto, jolla varastonhallintaprosessit ovat käytössä.</span><span class="sxs-lookup"><span data-stu-id="c76f3-109">If you’re using your own data, make sure that you have a warehouse that’s enabled for Warehouse management processes.</span></span>
 
 
-## <a name="create-a-fixed-picking-location"></a>Luo kiinteä keräilysijainti
-1. Valitse Varastonhallinta > Asetukset > Varasto > Kiinteät sijainnit.
-    * Tämä on valinnainen tehtävä minimi-/maksimitäydennysprosessissa, mutta jos käytät kiinteää keräilyvarastopaikkaa, varasto voidaan täydentää vaikka se laskee alle vähimmäistason, koska järjestelmä määrittää, mitkä on täydennettävä, vaikka täydennettävää ei olisikaan.  
-2. Valitse Uusi.
-3. Syötä tai valitse arvo Nimiketunnus-kentässä.
-    * Jos käytössä on USMF, voit valita nimikkeen A0001.  
-4. Syötä tai valitse arvo Toimipaikka-kenttään.
-    * Jos käytössä on USMF, valitse toimipaikka 2.  
-5. Anna tai valitse Varasto-kentässä arvo.
-    * Jos käytössä on USMF, voit valita varaston 24.  
-6. Syötä tai valitse arvo Sijainti-kenttään.
-    * Jos käytössä on USMF, valitse CP-003.  
-7. Sulje sivu.
+## <a name="create-a-fixed-picking-location"></a><span data-ttu-id="c76f3-110">Luo kiinteä keräilysijainti</span><span class="sxs-lookup"><span data-stu-id="c76f3-110">Create a fixed picking location</span></span>
+1. <span data-ttu-id="c76f3-111">Valitse Varastonhallinta > Asetukset > Varasto > Kiinteät sijainnit.</span><span class="sxs-lookup"><span data-stu-id="c76f3-111">Go to Warehouse management > Setup > Warehouse > Fixed locations.</span></span>
+    * <span data-ttu-id="c76f3-112">Tämä on valinnainen tehtävä minimi-/maksimitäydennysprosessissa, mutta jos käytät kiinteää keräilyvarastopaikkaa, varasto voidaan täydentää vaikka se laskee alle vähimmäistason, koska järjestelmä määrittää, mitkä on täydennettävä, vaikka täydennettävää ei olisikaan.</span><span class="sxs-lookup"><span data-stu-id="c76f3-112">This is an optional task for min-max replenishment, but if you use fixed picking location, this allows stock to be replenished even if it falls below the minimum level, because the system can determine which items need to be replenished, even if there aren't any left.</span></span>  
+2. <span data-ttu-id="c76f3-113">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-113">Click New.</span></span>
+3. <span data-ttu-id="c76f3-114">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="c76f3-114">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="c76f3-115">Jos käytössä on USMF, voit valita nimikkeen A0001.</span><span class="sxs-lookup"><span data-stu-id="c76f3-115">If you’re using USMF, you can select item A0001.</span></span>  
+4. <span data-ttu-id="c76f3-116">Syötä tai valitse arvo Toimipaikka-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-116">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="c76f3-117">Jos käytössä on USMF, valitse toimipaikka 2.</span><span class="sxs-lookup"><span data-stu-id="c76f3-117">If you’re using USMF, you can select site 2.</span></span>  
+5. <span data-ttu-id="c76f3-118">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="c76f3-118">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="c76f3-119">Jos käytössä on USMF, voit valita varaston 24.</span><span class="sxs-lookup"><span data-stu-id="c76f3-119">If you’re using USMF, you can select warehouse 24.</span></span>  
+6. <span data-ttu-id="c76f3-120">Syötä tai valitse arvo Sijainti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-120">In the Location field, enter or select a value.</span></span>
+    * <span data-ttu-id="c76f3-121">Jos käytössä on USMF, valitse CP-003.</span><span class="sxs-lookup"><span data-stu-id="c76f3-121">If you’re using USMF, you can select CP-003.</span></span>  
+7. <span data-ttu-id="c76f3-122">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="c76f3-122">Close the page.</span></span>
 
-## <a name="create-a-replenishment-location-directive"></a>Luo täydennyssijainnin direktiivi
-1. Valitse Varastonhallinta > Asetukset > Sijaintidirektiivit.
-    * Sijaintidirektiivejä käytetään määrittämään, mistä nimikkeet tulee keräillä täydennysprosessissa.  
-2. Valitse Työtilauksen tyyppi -kentässä Täydennys.
-3. Valitse Uusi.
-4. Kirjoita arvo Nimi-kenttään.
-5. Valitse Työtyyppi-kentässä Keräilyt.
-6. Syötä tai valitse arvo Toimipaikka-kenttään.
-    * Jos käytössä on USMF, valitse toimipaikka 2.  
-7. Anna tai valitse Varasto-kentässä arvo.
-    * Jos käytössä on USMF, voit valita varaston 24.  
-8. Valitse Tallenna.
-9. Valitse Uusi.
-10. Merkitse valittu rivi luettelossa.
-11. Lisää Määrään-kenttään numero.
-    * Voit esimerkiksi asettaa sen arvoon 9999.  
-12. Merkitse Salli jakaminen -valintaruutu.
-    * Jos valitset tämän vaihtoehdon, töiden luontiprosessi sallii työrivien määrien jakamisen useille sijainneille.  
-13. Valitse Tallenna.
-14. Valitse Uusi.
-15. Merkitse valittu rivi luettelossa.
-16. Kirjoita arvo Nimi-kenttään.
-17. Valitse Tallenna.
-18. Valitse Muokkaa kyselyä.
-    * Voit muokata tätä kyselyä lisätäksesi rajoituksia varaston valintasijainnille täydennysprosessissa. On esimerkiksi mahdollista, että varastoa tulisi käyttää ainoastaan irtotavara-alueelta.  
-19. Valitse OK.
-20. Sulje sivu.
+## <a name="create-a-replenishment-location-directive"></a><span data-ttu-id="c76f3-123">Luo täydennyssijainnin direktiivi</span><span class="sxs-lookup"><span data-stu-id="c76f3-123">Create a replenishment location directive</span></span>
+1. <span data-ttu-id="c76f3-124">Valitse Varastonhallinta > Asetukset > Sijaintidirektiivit.</span><span class="sxs-lookup"><span data-stu-id="c76f3-124">Go to Warehouse management > Setup > Location directives.</span></span>
+    * <span data-ttu-id="c76f3-125">Sijaintidirektiivejä käytetään määrittämään, mistä nimikkeet tulee keräillä täydennysprosessissa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-125">Location directives are used to determine where items should be picked from in the replenishment process.</span></span>  
+2. <span data-ttu-id="c76f3-126">Valitse Työtilauksen tyyppi -kentässä Täydennys.</span><span class="sxs-lookup"><span data-stu-id="c76f3-126">In the Work order type field, select 'Replenishment'.</span></span>
+3. <span data-ttu-id="c76f3-127">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-127">Click New.</span></span>
+4. <span data-ttu-id="c76f3-128">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-128">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="c76f3-129">Valitse Työtyyppi-kentässä Keräilyt.</span><span class="sxs-lookup"><span data-stu-id="c76f3-129">In the Work type field, select 'Pick'.</span></span>
+6. <span data-ttu-id="c76f3-130">Syötä tai valitse arvo Toimipaikka-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-130">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="c76f3-131">Jos käytössä on USMF, valitse toimipaikka 2.</span><span class="sxs-lookup"><span data-stu-id="c76f3-131">If you’re using USMF, you can select site 2.</span></span>  
+7. <span data-ttu-id="c76f3-132">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="c76f3-132">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="c76f3-133">Jos käytössä on USMF, voit valita varaston 24.</span><span class="sxs-lookup"><span data-stu-id="c76f3-133">If you’re using USMF, you can select warehouse 24.</span></span>  
+8. <span data-ttu-id="c76f3-134">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c76f3-134">Click Save.</span></span>
+9. <span data-ttu-id="c76f3-135">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-135">Click New.</span></span>
+10. <span data-ttu-id="c76f3-136">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-136">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="c76f3-137">Lisää Määrään-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="c76f3-137">In the To quantity field, enter a number.</span></span>
+    * <span data-ttu-id="c76f3-138">Voit esimerkiksi asettaa sen arvoon 9999.</span><span class="sxs-lookup"><span data-stu-id="c76f3-138">For example, you can set it to 9999.</span></span>  
+12. <span data-ttu-id="c76f3-139">Merkitse Salli jakaminen -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="c76f3-139">Select the Allow split check box.</span></span>
+    * <span data-ttu-id="c76f3-140">Jos valitset tämän vaihtoehdon, töiden luontiprosessi sallii työrivien määrien jakamisen useille sijainneille.</span><span class="sxs-lookup"><span data-stu-id="c76f3-140">If you select this option, the work creation process will allow work line quantities to be split across multiple locations.</span></span>  
+13. <span data-ttu-id="c76f3-141">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c76f3-141">Click Save.</span></span>
+14. <span data-ttu-id="c76f3-142">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-142">Click New.</span></span>
+15. <span data-ttu-id="c76f3-143">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-143">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="c76f3-144">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-144">In the Name field, type a value.</span></span>
+17. <span data-ttu-id="c76f3-145">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c76f3-145">Click Save.</span></span>
+18. <span data-ttu-id="c76f3-146">Valitse Muokkaa kyselyä.</span><span class="sxs-lookup"><span data-stu-id="c76f3-146">Click Edit query.</span></span>
+    * <span data-ttu-id="c76f3-147">Voit muokata tätä kyselyä lisätäksesi rajoituksia varaston valintasijainnille täydennysprosessissa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-147">You can edit this query to add restrictions where inventory can be selected from in the replenishment process.</span></span> <span data-ttu-id="c76f3-148">On esimerkiksi mahdollista, että varastoa tulisi käyttää ainoastaan irtotavara-alueelta.</span><span class="sxs-lookup"><span data-stu-id="c76f3-148">For example, it could be that inventory should only be used from the Bulk area of the warehouse.</span></span>  
+19. <span data-ttu-id="c76f3-149">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="c76f3-149">Click OK.</span></span>
+20. <span data-ttu-id="c76f3-150">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="c76f3-150">Close the page.</span></span>
 
-## <a name="create-a-replenishment-work-template"></a>Luo täydennystyömalli
-1. Valitse Varastonhallinta > Asetukset > Työ > Työmallit.
-    * Työmallin avulla järjestelmää ohjataan minimi-/maksimitäydennysprosessin luomisessa. Työmallissa on oltava rivi vähintään keräilylle ja asettamiselle. Työmallin ilmoitetaan olevan virheellinen, kunnes kaikki tarpeellinen tieto on täytetty.  
-2. Valitse Työtilauksen tyyppi -kentässä Täydennys.
-3. Valitse Uusi.
-4. Kirjoita Työmalli-kenttään arvo.
-5. Valitse Tallenna.
-6. Valitse Uusi.
-7. Valitse Työtyyppi-kentässä Keräilyt.
-8. Syötä tai valitse arvo Työluokan tunnus -kenttään.
-    * Tämän tulisi olla täydentämiseen liittyvä työn luokka. Jos USMF on käytössä, valitse Täydennys.  
-9. Valitse Uusi.
-10. Merkitse valittu rivi luettelossa.
-11. Valitse Työtyyppi-kentässä Määritä.
-12. Syötä tai valitse arvo Työluokan tunnus -kenttään.
-13. Valitse Tallenna.
-14. Sulje sivu.
+## <a name="create-a-replenishment-work-template"></a><span data-ttu-id="c76f3-151">Luo täydennystyömalli</span><span class="sxs-lookup"><span data-stu-id="c76f3-151">Create a replenishment work template</span></span>
+1. <span data-ttu-id="c76f3-152">Valitse Varastonhallinta > Asetukset > Työ > Työmallit.</span><span class="sxs-lookup"><span data-stu-id="c76f3-152">Go to Warehouse management > Setup > Work > Work templates.</span></span>
+    * <span data-ttu-id="c76f3-153">Työmallin avulla järjestelmää ohjataan minimi-/maksimitäydennysprosessin luomisessa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-153">The work template is use to guide the system as to how the min/max replenishment work must be created.</span></span> <span data-ttu-id="c76f3-154">Työmallissa on oltava rivi vähintään keräilylle ja asettamiselle.</span><span class="sxs-lookup"><span data-stu-id="c76f3-154">As a minimum, there must be a work template line for a pick and a put.</span></span> <span data-ttu-id="c76f3-155">Työmallin ilmoitetaan olevan virheellinen, kunnes kaikki tarpeellinen tieto on täytetty.</span><span class="sxs-lookup"><span data-stu-id="c76f3-155">The work template will say that it’s Invalid until all the necessary information has been filled in.</span></span>  
+2. <span data-ttu-id="c76f3-156">Valitse Työtilauksen tyyppi -kentässä Täydennys.</span><span class="sxs-lookup"><span data-stu-id="c76f3-156">In the Work order type field, select 'Replenishment'.</span></span>
+3. <span data-ttu-id="c76f3-157">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-157">Click New.</span></span>
+4. <span data-ttu-id="c76f3-158">Kirjoita Työmalli-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="c76f3-158">In the Work template field, type a value.</span></span>
+5. <span data-ttu-id="c76f3-159">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c76f3-159">Click Save.</span></span>
+6. <span data-ttu-id="c76f3-160">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-160">Click New.</span></span>
+7. <span data-ttu-id="c76f3-161">Valitse Työtyyppi-kentässä Keräilyt.</span><span class="sxs-lookup"><span data-stu-id="c76f3-161">In the Work type field, select 'Pick'.</span></span>
+8. <span data-ttu-id="c76f3-162">Syötä tai valitse arvo Työluokan tunnus -kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-162">In the Work class ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="c76f3-163">Tämän tulisi olla täydentämiseen liittyvä työn luokka.</span><span class="sxs-lookup"><span data-stu-id="c76f3-163">This should be a work class related to replenishment.</span></span> <span data-ttu-id="c76f3-164">Jos USMF on käytössä, valitse Täydennys.</span><span class="sxs-lookup"><span data-stu-id="c76f3-164">If you’re using USMF, select Replenish.</span></span>  
+9. <span data-ttu-id="c76f3-165">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-165">Click New.</span></span>
+10. <span data-ttu-id="c76f3-166">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-166">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="c76f3-167">Valitse Työtyyppi-kentässä Määritä.</span><span class="sxs-lookup"><span data-stu-id="c76f3-167">In the Work type field, select 'Put'.</span></span>
+12. <span data-ttu-id="c76f3-168">Syötä tai valitse arvo Työluokan tunnus -kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-168">In the Work class ID field, enter or select a value.</span></span>
+13. <span data-ttu-id="c76f3-169">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c76f3-169">Click Save.</span></span>
+14. <span data-ttu-id="c76f3-170">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="c76f3-170">Close the page.</span></span>
 
-## <a name="create-a-new-replenishment-template"></a>Luo uusi täydennysmalli
-1. Valitse Varastonhallinta > Asetukset > Täydennys > Täydennysmallit.
-    * Täydennysmallilla määritetään täydennettävät nimikkeet ja määrät sekä täydennettävä sijainti.  
-2. Valitse Uusi.
-3. Kirjoita Täydennysmalli-kenttään arvo.
-    * Anna mallille nimi, joka osoittaa, että se on minimi-/maksimitäydennysprosessia varten.  
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Merkitse Salli aallon kysynnän käyttää varaamattomia määriä -valintaruutu.
-    * Jos valitset tämän vaihtoehdon, se ottaa käyttöön aaltokysynnän täydennyksen kuluttamaan määriä, jotka liittyvät minimi-/maksimitäydennysprosessiin. Tästä voi esimerkiksi olla hyötyä, jos minimi-/maksimitäydennystyötä ei ole käsitelty heti, jotta tarpeettomien kysyntää vastaavien täydennystöiden luonti voidaan välttää.  
-6. Valitse Uusi.
-7. Syötä Järjestysnumero-kenttään numero.
-8. Kirjoita arvo Kuvaus-kenttään.
-9. Merkitse valittu rivi luettelossa.
-10. Syötä tai valitse arvo Täydennysyksikkö-kenttään.
-    * Valitse esimerkiksi arvo pcs. Tämä asetus on pakollinen. Voit määrittää eri mittayksikön täydennystyölle verrattuna mallissa määritettyihin minimi- ja maksimivaraston tasoihin.  
-11. Anna tai valitse Työmalli-kentän arvo.
-    * Valitse aiemmin luomasi työmalli.  
-12. Syötä numero Vähimmäismäärä-kenttään.
-    * Valitse vähimmäismäärä, joka käynnistää täydennyksen. Määritä arvoksi esimerkiksi 50. Voit jättää tämän kentän arvoksi nollan, jos täydennät kiinteään sijaintiin ja Täydennä tyhjät kiinteät sijainnit -asetuksen arvo on Kyllä. Suosittelemme myös, että käytät Täydennä vain kiinteät sijainnit -asetusta suorituskyvyn parantamiseksi.  
-13. Syötä numero Enimmäismäärä-kenttään.
-    * Määritä arvoksi esimerkiksi 100.  
-14. Syötä tai valitse arvo Yksikkö-kenttään.
-    * Määritä vähimmäis- ja enimmäismäärien yksikkö. Määritä arvoksi esimerkiksi pcs.  
-15. Merkitse Täydennä tyhjät kiinteät sijainnit -valintaruutu.
-    * Valitse tämä valintaruutu, kun haluat täydentää kiinteät sijainnit, kun ne ovat tyhjät. Muussa tapauksessa vain sijainnit, jossa määrä on käytettävissä, täydennetään.  
-16. Merkitse Täydennä vain kiinteät sijainnit -valintaruutu.
-17. Napsauta Valitse tuotteet -kohtaa.
-    * Tässä voit määrittää, mitkä tuotteet tulee täydentää. Jos Kiinteät keräilysijainnit -asetus on valittuna, sijainnit on myös määritettävä tähän kyselyyn. Saatavilla on sekä variantti- että tuotekohtaisia kyselyitä.  
-18. Valitse Nimikkeet-rivi.
-19. Kirjoita arvo Ehdot-kenttään.
-    * Valitse kiinteisiin sijainteihin täydennettävät nimikkeet. Kirjoita esimerkiksi A* valitaksesi kaikki nimiketunnukset, jotka alkavat A:lla.  
-20. ValitseLisää.
-    * Lisää sijainnin entiteetti (jos se on jo olemassa) rajataksesi täydennystyön kiinteisiin keräilysijainteihin varaston tietyllä alueella.  
-21. Merkitse valittu rivi luettelossa.
-22. Aseta Taulukko-kentän arvoksi Sijainnit.
-23. Valitse Kenttä-kenttään Sijainnin profiilitunnus.
-24. Syötä tai valitse arvo Ehdot-kenttään.
-25. Valitse OK.
-26. Sulje sivu.
+## <a name="create-a-new-replenishment-template"></a><span data-ttu-id="c76f3-171">Luo uusi täydennysmalli</span><span class="sxs-lookup"><span data-stu-id="c76f3-171">Create a new replenishment template</span></span>
+1. <span data-ttu-id="c76f3-172">Valitse Varastonhallinta > Asetukset > Täydennys > Täydennysmallit.</span><span class="sxs-lookup"><span data-stu-id="c76f3-172">Go to Warehouse management > Setup > Replenishment > Replenishment templates.</span></span>
+    * <span data-ttu-id="c76f3-173">Täydennysmallilla määritetään täydennettävät nimikkeet ja määrät sekä täydennettävä sijainti.</span><span class="sxs-lookup"><span data-stu-id="c76f3-173">The replenishment template is used to define the items and quantities, and the location to replenish.</span></span>  
+2. <span data-ttu-id="c76f3-174">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-174">Click New.</span></span>
+3. <span data-ttu-id="c76f3-175">Kirjoita Täydennysmalli-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="c76f3-175">In the Replenish template field, type a value.</span></span>
+    * <span data-ttu-id="c76f3-176">Anna mallille nimi, joka osoittaa, että se on minimi-/maksimitäydennysprosessia varten.</span><span class="sxs-lookup"><span data-stu-id="c76f3-176">Give the template a name to indicate that it’s for min/max replenishment.</span></span>  
+4. <span data-ttu-id="c76f3-177">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-177">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="c76f3-178">Merkitse Salli aallon kysynnän käyttää varaamattomia määriä -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="c76f3-178">Select the Allow wave demand to use unreserved quantities check box.</span></span>
+    * <span data-ttu-id="c76f3-179">Jos valitset tämän vaihtoehdon, se ottaa käyttöön aaltokysynnän täydennyksen kuluttamaan määriä, jotka liittyvät minimi-/maksimitäydennysprosessiin.</span><span class="sxs-lookup"><span data-stu-id="c76f3-179">If you select this option, it enables wave demand replenishment to consume quantities that are related to min/max replenishment.</span></span> <span data-ttu-id="c76f3-180">Tästä voi esimerkiksi olla hyötyä, jos minimi-/maksimitäydennystyötä ei ole käsitelty heti, jotta tarpeettomien kysyntää vastaavien täydennystöiden luonti voidaan välttää.</span><span class="sxs-lookup"><span data-stu-id="c76f3-180">For example, this might be useful if the min/max replenishment work isn’t processed immediately, to avoid unnecessary demand replenishment work from being created.</span></span>  
+6. <span data-ttu-id="c76f3-181">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-181">Click New.</span></span>
+7. <span data-ttu-id="c76f3-182">Syötä Järjestysnumero-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="c76f3-182">In the Sequence number field, enter a number.</span></span>
+8. <span data-ttu-id="c76f3-183">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-183">In the Description field, type a value.</span></span>
+9. <span data-ttu-id="c76f3-184">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-184">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="c76f3-185">Syötä tai valitse arvo Täydennysyksikkö-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-185">In the Replenishment unit field, enter or select a value.</span></span>
+    * <span data-ttu-id="c76f3-186">Valitse esimerkiksi arvo pcs.</span><span class="sxs-lookup"><span data-stu-id="c76f3-186">For example, select pcs.</span></span> <span data-ttu-id="c76f3-187">Tämä asetus on pakollinen.</span><span class="sxs-lookup"><span data-stu-id="c76f3-187">This setting is mandatory.</span></span> <span data-ttu-id="c76f3-188">Voit määrittää eri mittayksikön täydennystyölle verrattuna mallissa määritettyihin minimi- ja maksimivaraston tasoihin.</span><span class="sxs-lookup"><span data-stu-id="c76f3-188">It allows you to specify a different unit of measurement for replenishment work compared to the unit specified for the minimum and maximum stock levels in this template.</span></span>  
+11. <span data-ttu-id="c76f3-189">Anna tai valitse Työmalli-kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="c76f3-189">In the Work template field, enter or select a value.</span></span>
+    * <span data-ttu-id="c76f3-190">Valitse aiemmin luomasi työmalli.</span><span class="sxs-lookup"><span data-stu-id="c76f3-190">Choose the work template that you created earlier.</span></span>  
+12. <span data-ttu-id="c76f3-191">Syötä numero Vähimmäismäärä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-191">In the Minimum quantity field, enter a number.</span></span>
+    * <span data-ttu-id="c76f3-192">Valitse vähimmäismäärä, joka käynnistää täydennyksen.</span><span class="sxs-lookup"><span data-stu-id="c76f3-192">Select the minimum quantity that should trigger the replenishment.</span></span> <span data-ttu-id="c76f3-193">Määritä arvoksi esimerkiksi 50.</span><span class="sxs-lookup"><span data-stu-id="c76f3-193">For example, set this to 50.</span></span> <span data-ttu-id="c76f3-194">Voit jättää tämän kentän arvoksi nollan, jos täydennät kiinteään sijaintiin ja Täydennä tyhjät kiinteät sijainnit -asetuksen arvo on Kyllä.</span><span class="sxs-lookup"><span data-stu-id="c76f3-194">It is possible to leave this set to zero, if you’re replenishing a fixed location and the Replenish empty fixed locations option is set to Yes.</span></span> <span data-ttu-id="c76f3-195">Suosittelemme myös, että käytät Täydennä vain kiinteät sijainnit -asetusta suorituskyvyn parantamiseksi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-195">We also recommend that you select the Replenish only fixed locations option for performance reasons.</span></span>  
+13. <span data-ttu-id="c76f3-196">Syötä numero Enimmäismäärä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-196">In the Maximum quantity field, enter a number.</span></span>
+    * <span data-ttu-id="c76f3-197">Määritä arvoksi esimerkiksi 100.</span><span class="sxs-lookup"><span data-stu-id="c76f3-197">For example, set this to 100.</span></span>  
+14. <span data-ttu-id="c76f3-198">Syötä tai valitse arvo Yksikkö-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-198">In the Unit field, enter or select a value.</span></span>
+    * <span data-ttu-id="c76f3-199">Määritä vähimmäis- ja enimmäismäärien yksikkö.</span><span class="sxs-lookup"><span data-stu-id="c76f3-199">Assign the unit for the minimum and maximum quantities.</span></span> <span data-ttu-id="c76f3-200">Määritä arvoksi esimerkiksi pcs.</span><span class="sxs-lookup"><span data-stu-id="c76f3-200">For example, set this to pcs.</span></span>  
+15. <span data-ttu-id="c76f3-201">Merkitse Täydennä tyhjät kiinteät sijainnit -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="c76f3-201">Select the Replenish empty fixed locations check box.</span></span>
+    * <span data-ttu-id="c76f3-202">Valitse tämä valintaruutu, kun haluat täydentää kiinteät sijainnit, kun ne ovat tyhjät.</span><span class="sxs-lookup"><span data-stu-id="c76f3-202">Select this check box to replenish fixed locations when they are empty.</span></span> <span data-ttu-id="c76f3-203">Muussa tapauksessa vain sijainnit, jossa määrä on käytettävissä, täydennetään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-203">Otherwise, only the locations where there is a quantity on hand will be replenished.</span></span>  
+16. <span data-ttu-id="c76f3-204">Merkitse Täydennä vain kiinteät sijainnit -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="c76f3-204">Select the Replenish only fixed locations check box.</span></span>
+17. <span data-ttu-id="c76f3-205">Napsauta Valitse tuotteet -kohtaa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-205">Click Select products.</span></span>
+    * <span data-ttu-id="c76f3-206">Tässä voit määrittää, mitkä tuotteet tulee täydentää.</span><span class="sxs-lookup"><span data-stu-id="c76f3-206">This is the place to define which products should be replenished.</span></span> <span data-ttu-id="c76f3-207">Jos Kiinteät keräilysijainnit -asetus on valittuna, sijainnit on myös määritettävä tähän kyselyyn.</span><span class="sxs-lookup"><span data-stu-id="c76f3-207">If the Fixed picking locations option is selected, you also need to define the locations in this query.</span></span> <span data-ttu-id="c76f3-208">Saatavilla on sekä variantti- että tuotekohtaisia kyselyitä.</span><span class="sxs-lookup"><span data-stu-id="c76f3-208">Variant-specific queries are available as well product-specific queries.</span></span>  
+18. <span data-ttu-id="c76f3-209">Valitse Nimikkeet-rivi.</span><span class="sxs-lookup"><span data-stu-id="c76f3-209">Select the Items row.</span></span>
+19. <span data-ttu-id="c76f3-210">Kirjoita arvo Ehdot-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-210">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="c76f3-211">Valitse kiinteisiin sijainteihin täydennettävät nimikkeet.</span><span class="sxs-lookup"><span data-stu-id="c76f3-211">Select the items that should be replenished at the fixed locations.</span></span> <span data-ttu-id="c76f3-212">Kirjoita esimerkiksi A* valitaksesi kaikki nimiketunnukset, jotka alkavat A:lla.</span><span class="sxs-lookup"><span data-stu-id="c76f3-212">For example, type A* to select all item numbers beginning with A.</span></span>  
+20. <span data-ttu-id="c76f3-213">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="c76f3-213">Click Add.</span></span>
+    * <span data-ttu-id="c76f3-214">Lisää sijainnin entiteetti (jos se on jo olemassa) rajataksesi täydennystyön kiinteisiin keräilysijainteihin varaston tietyllä alueella.</span><span class="sxs-lookup"><span data-stu-id="c76f3-214">Add the Location entity (unless it already exists) to be able to restrict the replenishment work to the fixed picking locations within a specific area of the warehouse.</span></span>  
+21. <span data-ttu-id="c76f3-215">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-215">In the list, mark the selected row.</span></span>
+22. <span data-ttu-id="c76f3-216">Aseta Taulukko-kentän arvoksi Sijainnit.</span><span class="sxs-lookup"><span data-stu-id="c76f3-216">Set the Table field to Locations.</span></span>
+23. <span data-ttu-id="c76f3-217">Valitse Kenttä-kenttään Sijainnin profiilitunnus.</span><span class="sxs-lookup"><span data-stu-id="c76f3-217">In the Field field, select Location profile ID.</span></span>
+24. <span data-ttu-id="c76f3-218">Syötä tai valitse arvo Ehdot-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-218">In the Criteria field, enter or select a value.</span></span>
+25. <span data-ttu-id="c76f3-219">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="c76f3-219">Click OK.</span></span>
+26. <span data-ttu-id="c76f3-220">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="c76f3-220">Close the page.</span></span>
 
-## <a name="set-the-replenishment-process-to-run-as-a-batch-job"></a>Aseta täydennysprosessi ajettavaksi eräajona
-1. Valitse Varastonhallinta > Täydennys > Täydennykset. 
-    * Täydennykset-sivulla voit asettaa täydennykset ajettavaksi eräajona tai vaatia, että ne käynnistetään manuaalisesti.  
-2. Valitse Suodatin.
-3. Merkitse valittu rivi luettelossa.
-4. Syötä tai valitse arvo Ehdot-kenttään.
-5. Valitse OK.
-6. Laajenna Suorita taustalla -osa.
-7. Aseta Eräkäsittely-asetuksen arvoksi Kyllä.
-8. Valitse Toistuminen.
-9. Valitse päättymispäivämääräasetuksen arvoksi Ei.
-10. Aseta toistumismalli.
-    * Valitse esimerkiksi Päivää.  
-11. Valitse OK.
-12. Valitse OK.
+## <a name="set-the-replenishment-process-to-run-as-a-batch-job"></a><span data-ttu-id="c76f3-221">Aseta täydennysprosessi ajettavaksi eräajona</span><span class="sxs-lookup"><span data-stu-id="c76f3-221">Set the replenishment process to run as a batch job</span></span>
+1. <span data-ttu-id="c76f3-222">Valitse Varastonhallinta > Täydennys > Täydennykset. </span><span class="sxs-lookup"><span data-stu-id="c76f3-222">Go to Warehouse management > Replenishment > Replenishments.</span></span>
+    * <span data-ttu-id="c76f3-223">Täydennykset-sivulla voit asettaa täydennykset ajettavaksi eräajona tai vaatia, että ne käynnistetään manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="c76f3-223">The Replenishments page allows you to set up replenishment to run as a batch job, or to require that it’s started manually.</span></span>  
+2. <span data-ttu-id="c76f3-224">Valitse Suodatin.</span><span class="sxs-lookup"><span data-stu-id="c76f3-224">Click Filter.</span></span>
+3. <span data-ttu-id="c76f3-225">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-225">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="c76f3-226">Syötä tai valitse arvo Ehdot-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c76f3-226">In the Criteria field, enter or select a value.</span></span>
+5. <span data-ttu-id="c76f3-227">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="c76f3-227">Click OK.</span></span>
+6. <span data-ttu-id="c76f3-228">Laajenna Suorita taustalla -osa.</span><span class="sxs-lookup"><span data-stu-id="c76f3-228">Expand the Run in the background section.</span></span>
+7. <span data-ttu-id="c76f3-229">Aseta Eräkäsittely-asetuksen arvoksi Kyllä.</span><span class="sxs-lookup"><span data-stu-id="c76f3-229">Set the Batch processing option to Yes.</span></span>
+8. <span data-ttu-id="c76f3-230">Valitse Toistuminen.</span><span class="sxs-lookup"><span data-stu-id="c76f3-230">Click Recurrence.</span></span>
+9. <span data-ttu-id="c76f3-231">Valitse päättymispäivämääräasetuksen arvoksi Ei.</span><span class="sxs-lookup"><span data-stu-id="c76f3-231">Select the No end date option.</span></span>
+10. <span data-ttu-id="c76f3-232">Aseta toistumismalli.</span><span class="sxs-lookup"><span data-stu-id="c76f3-232">Set the Recurrance pattern.</span></span>
+    * <span data-ttu-id="c76f3-233">Valitse esimerkiksi Päivää.</span><span class="sxs-lookup"><span data-stu-id="c76f3-233">For example, select Days.</span></span>  
+11. <span data-ttu-id="c76f3-234">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="c76f3-234">Click OK.</span></span>
+12. <span data-ttu-id="c76f3-235">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="c76f3-235">Click OK.</span></span>
 
 

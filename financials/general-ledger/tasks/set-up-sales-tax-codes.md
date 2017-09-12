@@ -16,40 +16,40 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 9d55964a8d29d84198a90634e4337db115fe686d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c8f1eea5e257ccb8f2e7fe900e2c8c68bdd5148f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-sales-tax-codes"></a>Määritä arvonlisäverokoodit
+# <a name="set-up-sales-tax-codes"></a><span data-ttu-id="35298-103">Määritä arvonlisäverokoodit</span><span class="sxs-lookup"><span data-stu-id="35298-103">Set up sales tax codes</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Arvonlisäverokoodit luodaan jokaiselle epäsuoralle verolle tai tullimaksulle, jonka yritys on velvollinen laskemaan, perimään ja maksamaan veroviranomaisille.
+<span data-ttu-id="35298-104">Arvonlisäverokoodit luodaan jokaiselle epäsuoralle verolle tai tullimaksulle, jonka yritys on velvollinen laskemaan, perimään ja maksamaan veroviranomaisille.</span><span class="sxs-lookup"><span data-stu-id="35298-104">Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.</span></span>
 
-Tässä tehtävässä käytetään esittely-yritystä USMF.
+<span data-ttu-id="35298-105">Tässä tehtävässä käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="35298-105">This task uses the USMF demo company.</span></span>
 
 
 
-1. Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäverokoodit.
-2. Valitse Uusi.
-3. Kirjoita Arvonlisäverokoodi-kenttään arvo.
-4. Kirjoita arvo Nimi-kenttään.
-5. Valitse tilityskausi, kun haluat määrittää, arvonlisäveroviranomaiset, joille arvonlisävero ilmoitetaan ja maksetaan sekä ilmoitus- ja maksuvälit.
-6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-7. Valitse kirjanpidon kirjausryhmä, kun haluat määrittää päätilit arvonlisäveron kirjanpitoon kirjaamista varten.
-8. Etsi haluamasi tietue luettelosta ja valitse se.
-9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-10. Laajenna Laskenta-pikavälilehti.
-    * Laskenta-pikavälilehti sisältää useita kenttiä, jotka ohjaavat arvonlisäverosummien laskentaa.  
-11. Valitse toimintoruudussa Arvonlisäverokoodi.
-12. Valitse Arvot.
-13. Merkitse valittu rivi luettelossa.
-14. Syötä tämän verokoodin arvo.
-    * Jos Summa Alkuperäinen-kentän Yksikkökohtainen summa -kohta on valittu, Laskenta-pikavälilehdessä arvo kerrotaan tapahtuman määrällä, kun arvonlisäverosumma lasketaan.  Jos verokoodi ei ole yksikköperusteinen vero, arvo esitetään prosenttiosuutena, joka kohdistetaan tämän verokoodin alkuperään arvonlisäverosumman laskemiseksi.     
-15. Valitse Tallenna.
-16. Sulje sivu.
-17. Valitse Tallenna.
+1. <span data-ttu-id="35298-106">Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäverokoodit.</span><span class="sxs-lookup"><span data-stu-id="35298-106">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
+2. <span data-ttu-id="35298-107">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="35298-107">Click New.</span></span>
+3. <span data-ttu-id="35298-108">Kirjoita Arvonlisäverokoodi-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="35298-108">In the Sales tax code field, type a value.</span></span>
+4. <span data-ttu-id="35298-109">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="35298-109">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="35298-110">Valitse tilityskausi, kun haluat määrittää, arvonlisäveroviranomaiset, joille arvonlisävero ilmoitetaan ja maksetaan sekä ilmoitus- ja maksuvälit.</span><span class="sxs-lookup"><span data-stu-id="35298-110">Select a Settlement period to specify which Sales tax authority and in which intervals this sales tax needs to be reported and paid.</span></span>
+6. <span data-ttu-id="35298-111">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="35298-111">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="35298-112">Valitse kirjanpidon kirjausryhmä, kun haluat määrittää päätilit arvonlisäveron kirjanpitoon kirjaamista varten.</span><span class="sxs-lookup"><span data-stu-id="35298-112">Select a Ledger posting group to specify the main accounts to post sales tax to the general ledger.</span></span>
+8. <span data-ttu-id="35298-113">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="35298-113">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="35298-114">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="35298-114">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="35298-115">Laajenna Laskenta-pikavälilehti.</span><span class="sxs-lookup"><span data-stu-id="35298-115">Expand the Calculation FastTab.</span></span>
+    * <span data-ttu-id="35298-116">Laskenta-pikavälilehti sisältää useita kenttiä, jotka ohjaavat arvonlisäverosummien laskentaa.</span><span class="sxs-lookup"><span data-stu-id="35298-116">The Calculation FastTab has multiple fields that control how sales tax amounts will be calculated.</span></span>  
+11. <span data-ttu-id="35298-117">Valitse toimintoruudussa Arvonlisäverokoodi.</span><span class="sxs-lookup"><span data-stu-id="35298-117">On the Action Pane, click Sales tax code.</span></span>
+12. <span data-ttu-id="35298-118">Valitse Arvot.</span><span class="sxs-lookup"><span data-stu-id="35298-118">Click Values.</span></span>
+13. <span data-ttu-id="35298-119">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="35298-119">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="35298-120">Syötä tämän verokoodin arvo.</span><span class="sxs-lookup"><span data-stu-id="35298-120">Enter the value for this tax code.</span></span>
+    * <span data-ttu-id="35298-121">Jos Summa Alkuperäinen-kentän Yksikkökohtainen summa -kohta on valittu, Laskenta-pikavälilehdessä arvo kerrotaan tapahtuman määrällä, kun arvonlisäverosumma lasketaan.</span><span class="sxs-lookup"><span data-stu-id="35298-121">On the Calculation FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.</span></span>  <span data-ttu-id="35298-122">Jos verokoodi ei ole yksikköperusteinen vero, arvo esitetään prosenttiosuutena, joka kohdistetaan tämän verokoodin alkuperään arvonlisäverosumman laskemiseksi.</span><span class="sxs-lookup"><span data-stu-id="35298-122">If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.</span></span>     
+15. <span data-ttu-id="35298-123">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="35298-123">Click Save.</span></span>
+16. <span data-ttu-id="35298-124">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="35298-124">Close the page.</span></span>
+17. <span data-ttu-id="35298-125">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="35298-125">Click Save.</span></span>
 
 

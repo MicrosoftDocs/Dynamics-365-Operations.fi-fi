@@ -16,36 +16,36 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7af954eaae76a327313a80cb3014d837267ccf4d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7e6ebb13084626b477b6e0b24acdc09e2c0d3d6d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-bonus-depreciation"></a>Bonuspoiston määrittäminen
+# <a name="set-up-bonus-depreciation"></a><span data-ttu-id="c3cf3-103">Bonuspoiston määrittäminen</span><span class="sxs-lookup"><span data-stu-id="c3cf3-103">Set up bonus depreciation</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kerrotaan, miten erityinen poistovähennys luodaan ja liitetään käyttöomaisuuskirjaan. Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja.
+<span data-ttu-id="c3cf3-104">Tässä menettelyssä kerrotaan, miten erityinen poistovähennys luodaan ja liitetään käyttöomaisuuskirjaan.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-104">This procedure shows how to create a special depreciation allowance and associate it with a fixed asset book.</span></span> <span data-ttu-id="c3cf3-105">Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
 
 
-## <a name="create-a-special-depreciation-allowance"></a>Erityisen poistovähennyksen luominen
-1. Siirry kohtaan Käyttöomaisuus > Asetukset > Erityinen poistovähennys.
-2. Valitse Uusi.
-3. Kirjoita Erityinen poistovähennys -kenttään arvo.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Syötä Prosentti-kenttään numero.
-    * Määritä summa, jos prosenttia ei ole ilmoitettu.  
+## <a name="create-a-special-depreciation-allowance"></a><span data-ttu-id="c3cf3-106">Erityisen poistovähennyksen luominen</span><span class="sxs-lookup"><span data-stu-id="c3cf3-106">Create a special depreciation allowance</span></span>
+1. <span data-ttu-id="c3cf3-107">Siirry kohtaan Käyttöomaisuus > Asetukset > Erityinen poistovähennys.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-107">Go to Fixed assets > Setup > Special depreciation allowance.</span></span>
+2. <span data-ttu-id="c3cf3-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-108">Click New.</span></span>
+3. <span data-ttu-id="c3cf3-109">Kirjoita Erityinen poistovähennys -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-109">In the Special depreciation allowance field, type a value.</span></span>
+4. <span data-ttu-id="c3cf3-110">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="c3cf3-111">Syötä Prosentti-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-111">In the Percentage field, enter a number.</span></span>
+    * <span data-ttu-id="c3cf3-112">Määritä summa, jos prosenttia ei ole ilmoitettu.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-112">If a percentage was not indicated, set an amount.</span></span>  
 
-## <a name="associate-a-special-depreciation-allowance-with-a-fixed-asset-group-book"></a>Erityisen poistovähennyksen liittäminen käyttöomaisuusryhmän kirjaan
-1. Siirry kohtaan Käyttöomaisuus > Asetukset > Käyttöomaisuusryhmät.
-2. Valitse luettelosta erityiseen poistovähennykseen liitetty käyttöomaisuusryhmä.
-3. Valitse Kirjat.
-4. Valitse luettelosta erityiseen poistovähennykseen liitetty kirja.
-5. Valitse Erityinen poistovähennys.
-6. Valitse Uusi.
-7. Kirjoita tai valitse Erityinen poistovähennys -kenttään arvo.
-    * Prosentin tai summan oletusarvo saadaan erityisen poistovähennyksen asetuksista.  
-8. Syötä numero Prioriteetti-kenttään.
+## <a name="associate-a-special-depreciation-allowance-with-a-fixed-asset-group-book"></a><span data-ttu-id="c3cf3-113">Erityisen poistovähennyksen liittäminen käyttöomaisuusryhmän kirjaan</span><span class="sxs-lookup"><span data-stu-id="c3cf3-113">Associate a special depreciation allowance with a fixed asset group book</span></span>
+1. <span data-ttu-id="c3cf3-114">Siirry kohtaan Käyttöomaisuus > Asetukset > Käyttöomaisuusryhmät.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-114">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
+2. <span data-ttu-id="c3cf3-115">Valitse luettelosta erityiseen poistovähennykseen liitetty käyttöomaisuusryhmä.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-115">In the list, select the fixed asset group associated with the special depreciation allowance.</span></span>
+3. <span data-ttu-id="c3cf3-116">Valitse Kirjat.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-116">Click Books.</span></span>
+4. <span data-ttu-id="c3cf3-117">Valitse luettelosta erityiseen poistovähennykseen liitetty kirja.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-117">In the list, select the book that is associated with the special depreciation allowance.</span></span>
+5. <span data-ttu-id="c3cf3-118">Valitse Erityinen poistovähennys.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-118">Click Special depreciation allowance.</span></span>
+6. <span data-ttu-id="c3cf3-119">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-119">Click New.</span></span>
+7. <span data-ttu-id="c3cf3-120">Kirjoita tai valitse Erityinen poistovähennys -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-120">In the Special depreciation allowance field, enter or select a value.</span></span>
+    * <span data-ttu-id="c3cf3-121">Prosentin tai summan oletusarvo saadaan erityisen poistovähennyksen asetuksista.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-121">The default for Percentage or Amount comes from the special depreciation allowance setup.</span></span>  
+8. <span data-ttu-id="c3cf3-122">Syötä numero Prioriteetti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c3cf3-122">In the Priority field, enter a number.</span></span>
 
 

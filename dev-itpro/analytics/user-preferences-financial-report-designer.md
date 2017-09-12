@@ -19,66 +19,66 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7d77428f07967985cf60ab252305819a6fd9d037
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6d8044b177d963842f02d787b7e40c96287f4b11
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="user-preferences-in-financial-report-designer"></a>Talousraportin suunnittelutoiminnon käyttäjän asetukset
+# <a name="user-preferences-in-financial-report-designer"></a><span data-ttu-id="87f7e-104">Talousraportin suunnittelutoiminnon käyttäjän asetukset</span><span class="sxs-lookup"><span data-stu-id="87f7e-104">User preferences in financial report designer</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa käsitellään sellaisten käyttäjän asetusten määrittämistä, joilla mukautetaan käyttäjän toimia talousraportin suunnittelutoiminnossa ja hallitaan ensimmäistä kirjautumiskokemusta. Voit myös hallita, miten yksittäisen raportit, raporttikirjasto ja oletusarvoiset tiedostosijainnit näytetään. 
+<span data-ttu-id="87f7e-105">Tässä artikkelissa käsitellään sellaisten käyttäjän asetusten määrittämistä, joilla mukautetaan käyttäjän toimia talousraportin suunnittelutoiminnossa ja hallitaan ensimmäistä kirjautumiskokemusta.</span><span class="sxs-lookup"><span data-stu-id="87f7e-105">This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience.</span></span> <span data-ttu-id="87f7e-106">Voit myös hallita, miten yksittäisen raportit, raporttikirjasto ja oletusarvoiset tiedostosijainnit näytetään.</span><span class="sxs-lookup"><span data-stu-id="87f7e-106">You can also control how individual reports, the report library, and the default file locations are displayed.</span></span> 
 
-<a name="set-user-preferences"></a>Käyttäjän asetusten määrittäminen
+<a name="set-user-preferences"></a><span data-ttu-id="87f7e-107">Käyttäjän asetusten määrittäminen</span><span class="sxs-lookup"><span data-stu-id="87f7e-107">Set user preferences</span></span>
 --------------------
 
-1.  Valitse Report Designerin **Työkalut**-valikossa **Asetukset**.
-2.  Valitse **Asetukset**-valintaikkunassa asetukset.
-3.  Napsauta **OK**.
+1.  <span data-ttu-id="87f7e-108">Valitse Report Designerin **Työkalut**-valikossa **Asetukset**.</span><span class="sxs-lookup"><span data-stu-id="87f7e-108">In Report Designer, on the **Tools** menu, click **Options**.</span></span>
+2.  <span data-ttu-id="87f7e-109">Valitse **Asetukset**-valintaikkunassa asetukset.</span><span class="sxs-lookup"><span data-stu-id="87f7e-109">In the **Options** dialog box, select your preferences.</span></span>
+3.  <span data-ttu-id="87f7e-110">Napsauta **OK**.</span><span class="sxs-lookup"><span data-stu-id="87f7e-110">Click **OK**.</span></span>
 
-## <a name="options-dialog-box-options"></a>Asetukset-valintaikkunan asetukset
+## <a name="options-dialog-box-options"></a><span data-ttu-id="87f7e-111">Asetukset-valintaikkunan asetukset</span><span class="sxs-lookup"><span data-stu-id="87f7e-111">Options dialog box options</span></span>
 <table>
 <thead>
 <tr class="header">
-<th>Käyttäjän asetukset</th>
-<th>kuvaus</th>
+<th><span data-ttu-id="87f7e-112">Käyttäjän asetukset</span><span class="sxs-lookup"><span data-stu-id="87f7e-112">User option</span></span></th>
+<th><span data-ttu-id="87f7e-113">kuvaus</span><span class="sxs-lookup"><span data-stu-id="87f7e-113">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Käynnistettäessä</td>
-<td>Valitse Report Designerin aloitusnäkymä. Valitse jompikumpi seuraavista vaihtoehdoista:
+<td><span data-ttu-id="87f7e-114">Käynnistettäessä</span><span class="sxs-lookup"><span data-stu-id="87f7e-114">At startup</span></span></td>
+<td><span data-ttu-id="87f7e-115">Valitse Report Designerin aloitusnäkymä.</span><span class="sxs-lookup"><span data-stu-id="87f7e-115">Select what you see when Report Designer starts.</span></span> <span data-ttu-id="87f7e-116">Valitse jompikumpi seuraavista vaihtoehdoista:</span><span class="sxs-lookup"><span data-stu-id="87f7e-116">Select one of the following options:</span></span>
 <ul>
-<li><strong>Lataa viimeksi ladattu raportti</strong> – viimeksi tarkasteltu raportti avataan.</li>
-<li><strong>Näytä Avaa-ikkuna</strong> – Avaa <strong>Avaa</strong>-ikkunan. <strong>Avaa</strong>-ikkunassa on hakuikkunan, jossa voit etsiä nopeasti rakenneosia.</li>
-<li><strong>Näytä tyhjä ympäristö</strong> – Avaa tyhjän suunnittelutoiminnon ikkunan.</li>
+<li><span data-ttu-id="87f7e-117"><strong>Lataa viimeksi ladattu raportti</strong> – viimeksi tarkasteltu raportti avataan.</span><span class="sxs-lookup"><span data-stu-id="87f7e-117"><strong>Load last loaded report</strong> – Open the last report that you viewed.</span></span></li>
+<li><span data-ttu-id="87f7e-118"><strong>Näytä Avaa-ikkuna</strong> – Avaa <strong>Avaa</strong>-ikkunan.</span><span class="sxs-lookup"><span data-stu-id="87f7e-118"><strong>Show Open window</strong> – Open the <strong>Open</strong> window.</span></span> <span data-ttu-id="87f7e-119"><strong>Avaa</strong>-ikkunassa on hakuikkunan, jossa voit etsiä nopeasti rakenneosia.</span><span class="sxs-lookup"><span data-stu-id="87f7e-119">The <strong>Open</strong> window provides a search window that you can use to quickly find building blocks.</span></span></li>
+<li><span data-ttu-id="87f7e-120"><strong>Näytä tyhjä ympäristö</strong> – Avaa tyhjän suunnittelutoiminnon ikkunan.</span><span class="sxs-lookup"><span data-stu-id="87f7e-120"><strong>Show empty environment</strong> – Open an empty designer window.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Vahvistuksen näyttäminen ennen Report Designerin lopettamista</td>
-<td>Valitse, haluatko varoitussanoman, kun sovellus lopetetaan. Voit varmistaa tällä sanomalla, että ohjelmaa ei lopeteta vahingossa.</td>
+<td><span data-ttu-id="87f7e-121">Vahvistuksen näyttäminen ennen Report Designerin lopettamista</span><span class="sxs-lookup"><span data-stu-id="87f7e-121">Display confirmation before exiting Report Designer</span></span></td>
+<td><span data-ttu-id="87f7e-122">Valitse, haluatko varoitussanoman, kun sovellus lopetetaan.</span><span class="sxs-lookup"><span data-stu-id="87f7e-122">Select whether to receive a warning message when you exit the application.</span></span> <span data-ttu-id="87f7e-123">Voit varmistaa tällä sanomalla, että ohjelmaa ei lopeteta vahingossa.</span><span class="sxs-lookup"><span data-stu-id="87f7e-123">This message helps guarantee that you don't exit the program unintentionally.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Automaattinen sarakeotsikoiden solujen alleviivaus</td>
-<td>Valitse, lisätäänkö alleviivaus uuden sarakeotsikon soluun.</td>
+<td><span data-ttu-id="87f7e-124">Automaattinen sarakeotsikoiden solujen alleviivaus</span><span class="sxs-lookup"><span data-stu-id="87f7e-124">Automatically apply cell underline in column headers</span></span></td>
+<td><span data-ttu-id="87f7e-125">Valitse, lisätäänkö alleviivaus uuden sarakeotsikon soluun.</span><span class="sxs-lookup"><span data-stu-id="87f7e-125">Select whether to insert an underline in the cell of a new column header.</span></span></td>
 </tr>
 <tr class="even">
-<td>Management Reporter -tiedostojen sijainti</td>
-<td>Määritä tiedostojen oletussijainti. Sovellus käyttää oletussijaintia, kun viet rakenneosaryhmiä.</td>
+<td><span data-ttu-id="87f7e-126">Management Reporter -tiedostojen sijainti</span><span class="sxs-lookup"><span data-stu-id="87f7e-126">Management Reporter files location</span></span></td>
+<td><span data-ttu-id="87f7e-127">Määritä tiedostojen oletussijainti.</span><span class="sxs-lookup"><span data-stu-id="87f7e-127">Specify the default location for files.</span></span> <span data-ttu-id="87f7e-128">Sovellus käyttää oletussijaintia, kun viet rakenneosaryhmiä.</span><span class="sxs-lookup"><span data-stu-id="87f7e-128">The application uses the default location when you export building block groups.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
 
-<a name="see-also"></a>Lisätietoja
+<a name="see-also"></a><span data-ttu-id="87f7e-129">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="87f7e-129">See also</span></span>
 --------
 
-[Taloushallinnan raportointi](financial-reporting-intro.md)
+[<span data-ttu-id="87f7e-130">Taloushallinnan raportointi</span><span class="sxs-lookup"><span data-stu-id="87f7e-130">Financial reporting</span></span>](financial-reporting-intro.md)
 
 
 

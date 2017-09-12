@@ -22,84 +22,84 @@ ms.contentlocale: fi-fi
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="ship-orders-as-direct-deliveries"></a>Lähetä tilaukset suoratoimituksina
+# <a name="ship-orders-as-direct-deliveries"></a><span data-ttu-id="7164f-103">Lähetä tilaukset suoratoimituksina</span><span class="sxs-lookup"><span data-stu-id="7164f-103">Ship orders as direct deliveries</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä käsitellään, miten myyntitilaukselle luodaan suoratoimitus. Käytät suoratoimitusta, kun haluat lähettää tavarat asiakkaalle suoraan toimittajalta sen sijaan, että ne lähetettäisiin ensin omaan varastoon. Voit suorittaa tämän menettelyn esittely-yrityksen USMF kanssa tai käyttää omia tietojasi. Toisen Luo suoratoimitukset suoraan työtilasta -alitehtävän suorittaminen edellyttää, että myyntitilauksessa valitsemaasi nimikkeeseen on määritetty oletustoimittaja vapautetun päätuotteen oston pikavälilehdessä.
+<span data-ttu-id="7164f-104">Tässä menettelyssä käsitellään, miten myyntitilaukselle luodaan suoratoimitus.</span><span class="sxs-lookup"><span data-stu-id="7164f-104">This procedure demonstrates how to create a direct delivery for a sales order.</span></span> <span data-ttu-id="7164f-105">Käytät suoratoimitusta, kun haluat lähettää tavarat asiakkaalle suoraan toimittajalta sen sijaan, että ne lähetettäisiin ensin omaan varastoon.</span><span class="sxs-lookup"><span data-stu-id="7164f-105">You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first.</span></span> <span data-ttu-id="7164f-106">Voit suorittaa tämän menettelyn esittely-yrityksen USMF kanssa tai käyttää omia tietojasi.</span><span class="sxs-lookup"><span data-stu-id="7164f-106">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="7164f-107">Toisen Luo suoratoimitukset suoraan työtilasta -alitehtävän suorittaminen edellyttää, että myyntitilauksessa valitsemaasi nimikkeeseen on määritetty oletustoimittaja vapautetun päätuotteen oston pikavälilehdessä.</span><span class="sxs-lookup"><span data-stu-id="7164f-107">To successfully complete the second sub-task "Create direct deliveries from the workbench", make sure that the item that you choose on the sales order has a default Vendor specified on the Purchase FastTab of the Released product master.</span></span>
 
 
-## <a name="set-an-individual-order-for-direct-delivery"></a>Määritä yksittäisen tilauksen suoratoimitus
-1. Siirry Kaikki myyntitilaukset -kohtaan.
-2. Valitse Uusi.
-3. Syötä tai valitse arvo Asiakastili-kentässä.
-    * Jos käytössä on USMF, voit valita tilin US-001.  
-4. Valitse OK.
-5. Syötä tai valitse arvo Nimiketunnus-kentässä.
-    * Jos käytössä on USMF, voit valita nimikkeen T0020.  
-6. Valitse Tallenna.
-7. Valitse toimintoruudussa Myyntitilaus.
-8. Valitse Suoratoimitus.
-    * Luo toimitus -sivulla on luettelo kaikista myyntitilauksesta kopioiduista avoimista myyntitilausriveistä. Voit tarkastella tilauksen tietoja ja tarvittaessa muokata tietoja, kuten määrää ja hinnoitteluehtoja, ennen suoratoimituksen luontia.  
-9. Valitse Sisällytä kaikki -kentässä Kyllä.
-    * Jos haluat muodostaa suoratoimituksen vain myyntitilausrivien alijoukolle, valitse ne yksitellen.  
-    * Toimittajatili-kenttään on ehkä jo lisätty toimittajanumero. Jos tuotteelle on määritetty oletustoimittaja (liitetyssä nimikekattavuudessa), kyseinen toimittaja kopioidaan riville. Muussa tapauksessa toimittaja on annettava manuaalisesti. Tässä esimerkissä uusi toimittaja valitaan seuraavassa vaiheessa, vaikka yhden tiedot olisi jo täytetty.   
-10. Anna tai valitse arvo Toimittajatili-kentässä.
-    * Jos käytössä on USMF, voit valita tilin 1001.  
-11. Valitse OK.
-    * Sanoma ilmoittaa, että ostotilaus on luotu.   
-12. Laajenna Rivin erittely -osa.
-13. Valitse Toimitus-välilehti.
-    * Suoratoimitus-kentän asetuksena on nyt Kyllä.  
-    * Luotu ostotilaus näkyy suoratoimituksen tilassa.   
-14. Valitse toimintoruudussa Yleiset.
-15. Valitse Liittyvät tilaukset.
-16. Siirry eteenpäin napsauttamalla Ostotilaus-kentän linkkiä.
-17. Laajenna Rivin erittely -osa.
-18. Valitse Osoite-välilehti.
-    * Huomaa, että ostotilausrivin toimitusosoite on asiakkaan toimitusosoite eikä yrityksesi osoite.  
-    * Jos muutat joko ostotilausrivin tai alkuperäisen myyntitilausrivin toimitusosoitteen, vastaava tilausrivi päivitetään automaattisesti.  
-19. Valitse Toimitus-välilehti.
-    * Myyntitilausrivin tavoin myös liitetyn ostotilausrivin tyypiksi on määritetty Suoratoimitus.  
-    * Ostotilausrivin toimituspäivämääräksi ja vahvistetuksi toimituspäivämääräksi on määritetty alkuperäisellä myyntitilausrivillä Pyydetty vastaanottopäivämäärä ja Vahvistettu vastaanottopäivämäärää.   
-    * Jos päivität jommankumman näistä päivämääristä joko ostorivillä tai myyntirivillä, vastaavan tilauksen päivämäärät päivitetään automaattisesti.     
-    * Ostotilaus joka on määritetty toimittamaan tavarat suoraan asiakkaalle on linkitetty alkuperäiseen myyntitilauksen erikoisliitoksella. Tämä liitos määrää säännön, jonka mukaan myyntitilauksen pakkausluetteloa ei voi päivittää myyntitilauksesta vaan se on tehtävä ostotilauksen avulla. Asiakaslaskutus on kuitenkin tehtävä myyntitilauksesta.  
-20. Valitse toimintoruudussa Osta.
-21. Valitse Vahvistus.
-22. Valitse OK.
-23. Valitse toimintoruudussa Vastaanota.
-24. Valitse Tuotteen vastaanotto.
-25. Kirjoita arvo Tuotteen vastaanotto -kenttään.
-26. Valitse OK.
-27. Valitse toimintoruudussa Yleiset.
-28. Valitse Liittyvät tilaukset.
-29. Merkitse valittu rivi luettelossa.
-    * Kun ostotilaus on päivitetty vastaanotetuiksi – eli toimittaja on lähettänyt tavarat asiakkaan osoitteeseen, jonka jälkeen alkuperäisen myyntitilauksen tilaksi on päivitetty automaattisesti Toimitettu.  
-    * Myyntitilaus voidaan nyt laskuttaa.    
-30. Valitse OK.
-31. Sulje sivu.
-32. Valitse OK.
+## <a name="set-an-individual-order-for-direct-delivery"></a><span data-ttu-id="7164f-108">Määritä yksittäisen tilauksen suoratoimitus</span><span class="sxs-lookup"><span data-stu-id="7164f-108">Set an individual order for direct delivery</span></span>
+1. <span data-ttu-id="7164f-109">Siirry Kaikki myyntitilaukset -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="7164f-109">Go to All sales orders.</span></span>
+2. <span data-ttu-id="7164f-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7164f-110">Click New.</span></span>
+3. <span data-ttu-id="7164f-111">Syötä tai valitse arvo Asiakastili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7164f-111">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="7164f-112">Jos käytössä on USMF, voit valita tilin US-001.</span><span class="sxs-lookup"><span data-stu-id="7164f-112">If you’re using USMF, you can select account US-001.</span></span>  
+4. <span data-ttu-id="7164f-113">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7164f-113">Click OK.</span></span>
+5. <span data-ttu-id="7164f-114">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7164f-114">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="7164f-115">Jos käytössä on USMF, voit valita nimikkeen T0020.</span><span class="sxs-lookup"><span data-stu-id="7164f-115">If you’re using USMF, you can select item T0020.</span></span>  
+6. <span data-ttu-id="7164f-116">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="7164f-116">Click Save.</span></span>
+7. <span data-ttu-id="7164f-117">Valitse toimintoruudussa Myyntitilaus.</span><span class="sxs-lookup"><span data-stu-id="7164f-117">On the Action Pane, click Sales order.</span></span>
+8. <span data-ttu-id="7164f-118">Valitse Suoratoimitus.</span><span class="sxs-lookup"><span data-stu-id="7164f-118">Click Direct delivery.</span></span>
+    * <span data-ttu-id="7164f-119">Luo toimitus -sivulla on luettelo kaikista myyntitilauksesta kopioiduista avoimista myyntitilausriveistä.</span><span class="sxs-lookup"><span data-stu-id="7164f-119">The Create delivery page lists all the open sales order lines as copied from the sales order.</span></span> <span data-ttu-id="7164f-120">Voit tarkastella tilauksen tietoja ja tarvittaessa muokata tietoja, kuten määrää ja hinnoitteluehtoja, ennen suoratoimituksen luontia.</span><span class="sxs-lookup"><span data-stu-id="7164f-120">You can review the order details, and if required, you can modify details such purchase quantity and pricing terms before you create the direct delivery.</span></span>  
+9. <span data-ttu-id="7164f-121">Valitse Sisällytä kaikki -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="7164f-121">Select Yes in the Include all field.</span></span>
+    * <span data-ttu-id="7164f-122">Jos haluat muodostaa suoratoimituksen vain myyntitilausrivien alijoukolle, valitse ne yksitellen.</span><span class="sxs-lookup"><span data-stu-id="7164f-122">If you want to generate a direct delivery for only a subset of the sales order lines, select these individually.</span></span>  
+    * <span data-ttu-id="7164f-123">Toimittajatili-kenttään on ehkä jo lisätty toimittajanumero.</span><span class="sxs-lookup"><span data-stu-id="7164f-123">The Vendor account field may or may not already be populated with a vendor number.</span></span> <span data-ttu-id="7164f-124">Jos tuotteelle on määritetty oletustoimittaja (liitetyssä nimikekattavuudessa), kyseinen toimittaja kopioidaan riville.</span><span class="sxs-lookup"><span data-stu-id="7164f-124">If the default vendor is set up for the product (on the associated Item coverage) then this vendor will be copied to the line.</span></span> <span data-ttu-id="7164f-125">Muussa tapauksessa toimittaja on annettava manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="7164f-125">Otherwise, you must enter a vendor manually.</span></span> <span data-ttu-id="7164f-126">Tässä esimerkissä uusi toimittaja valitaan seuraavassa vaiheessa, vaikka yhden tiedot olisi jo täytetty.</span><span class="sxs-lookup"><span data-stu-id="7164f-126">In this example, we’ll select a new vendor in the next step, even if one is already populated.</span></span>   
+10. <span data-ttu-id="7164f-127">Anna tai valitse arvo Toimittajatili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7164f-127">In the Vendor account field, enter or select a value.</span></span>
+    * <span data-ttu-id="7164f-128">Jos käytössä on USMF, voit valita tilin 1001.</span><span class="sxs-lookup"><span data-stu-id="7164f-128">If you’re using USMF, you can select account 1001.</span></span>  
+11. <span data-ttu-id="7164f-129">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7164f-129">Click OK.</span></span>
+    * <span data-ttu-id="7164f-130">Sanoma ilmoittaa, että ostotilaus on luotu.</span><span class="sxs-lookup"><span data-stu-id="7164f-130">The message informs you that the purchase order has now been created.</span></span>   
+12. <span data-ttu-id="7164f-131">Laajenna Rivin erittely -osa.</span><span class="sxs-lookup"><span data-stu-id="7164f-131">Expand the Line details section.</span></span>
+13. <span data-ttu-id="7164f-132">Valitse Toimitus-välilehti.</span><span class="sxs-lookup"><span data-stu-id="7164f-132">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="7164f-133">Suoratoimitus-kentän asetuksena on nyt Kyllä.</span><span class="sxs-lookup"><span data-stu-id="7164f-133">The Direct delivery field is now set to Yes.</span></span>  
+    * <span data-ttu-id="7164f-134">Luotu ostotilaus näkyy suoratoimituksen tilassa.</span><span class="sxs-lookup"><span data-stu-id="7164f-134">The Direct delivery status shows the Purchase order created.</span></span>   
+14. <span data-ttu-id="7164f-135">Valitse toimintoruudussa Yleiset.</span><span class="sxs-lookup"><span data-stu-id="7164f-135">On the Action Pane, click General.</span></span>
+15. <span data-ttu-id="7164f-136">Valitse Liittyvät tilaukset.</span><span class="sxs-lookup"><span data-stu-id="7164f-136">Click Related orders.</span></span>
+16. <span data-ttu-id="7164f-137">Siirry eteenpäin napsauttamalla Ostotilaus-kentän linkkiä.</span><span class="sxs-lookup"><span data-stu-id="7164f-137">Click to follow the link in the Purchase order field.</span></span>
+17. <span data-ttu-id="7164f-138">Laajenna Rivin erittely -osa.</span><span class="sxs-lookup"><span data-stu-id="7164f-138">Expand the Line details section.</span></span>
+18. <span data-ttu-id="7164f-139">Valitse Osoite-välilehti.</span><span class="sxs-lookup"><span data-stu-id="7164f-139">Click the Address tab.</span></span>
+    * <span data-ttu-id="7164f-140">Huomaa, että ostotilausrivin toimitusosoite on asiakkaan toimitusosoite eikä yrityksesi osoite.</span><span class="sxs-lookup"><span data-stu-id="7164f-140">Note that the delivery address for this purchase order line is the customer's delivery address and not your company's address.</span></span>  
+    * <span data-ttu-id="7164f-141">Jos muutat joko ostotilausrivin tai alkuperäisen myyntitilausrivin toimitusosoitteen, vastaava tilausrivi päivitetään automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="7164f-141">If you change the delivery address on either the purchase order line or the originating sales order line, the address on the corresponding order line will be automatically updated.</span></span>  
+19. <span data-ttu-id="7164f-142">Valitse Toimitus-välilehti.</span><span class="sxs-lookup"><span data-stu-id="7164f-142">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="7164f-143">Myyntitilausrivin tavoin myös liitetyn ostotilausrivin tyypiksi on määritetty Suoratoimitus.</span><span class="sxs-lookup"><span data-stu-id="7164f-143">Like the sales order line, the associated purchase order line type is also set to Direct delivery.</span></span>  
+    * <span data-ttu-id="7164f-144">Ostotilausrivin toimituspäivämääräksi ja vahvistetuksi toimituspäivämääräksi on määritetty alkuperäisellä myyntitilausrivillä Pyydetty vastaanottopäivämäärä ja Vahvistettu vastaanottopäivämäärää.</span><span class="sxs-lookup"><span data-stu-id="7164f-144">The purchase order line's Delivery  date and the Confirmed delivery date are set to the Requested receipt date and Confirmed receipt date of the originating sales order line respectively.</span></span>   
+    * <span data-ttu-id="7164f-145">Jos päivität jommankumman näistä päivämääristä joko ostorivillä tai myyntirivillä, vastaavan tilauksen päivämäärät päivitetään automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="7164f-145">If you update any of these dates on either the purchase line or the sales line, the dates on the corresponding order will be automatically updated.</span></span>     
+    * <span data-ttu-id="7164f-146">Ostotilaus joka on määritetty toimittamaan tavarat suoraan asiakkaalle on linkitetty alkuperäiseen myyntitilauksen erikoisliitoksella.</span><span class="sxs-lookup"><span data-stu-id="7164f-146">The purchase order that is set to deliver goods directly the customer is linked to the originating sales order by means of a special association.</span></span> <span data-ttu-id="7164f-147">Tämä liitos määrää säännön, jonka mukaan myyntitilauksen pakkausluetteloa ei voi päivittää myyntitilauksesta vaan se on tehtävä ostotilauksen avulla.</span><span class="sxs-lookup"><span data-stu-id="7164f-147">This association imposes the rule that the packing slip update of the sales order can't be done from the sales order itself and must be done by using the purchase order.</span></span> <span data-ttu-id="7164f-148">Asiakaslaskutus on kuitenkin tehtävä myyntitilauksesta.</span><span class="sxs-lookup"><span data-stu-id="7164f-148">However, customer invoicing must be carried out from the sales order.</span></span>  
+20. <span data-ttu-id="7164f-149">Valitse toimintoruudussa Osta.</span><span class="sxs-lookup"><span data-stu-id="7164f-149">On the Action Pane, click Purchase.</span></span>
+21. <span data-ttu-id="7164f-150">Valitse Vahvistus.</span><span class="sxs-lookup"><span data-stu-id="7164f-150">Click Confirmation.</span></span>
+22. <span data-ttu-id="7164f-151">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7164f-151">Click OK.</span></span>
+23. <span data-ttu-id="7164f-152">Valitse toimintoruudussa Vastaanota.</span><span class="sxs-lookup"><span data-stu-id="7164f-152">On the Action Pane, click Receive.</span></span>
+24. <span data-ttu-id="7164f-153">Valitse Tuotteen vastaanotto.</span><span class="sxs-lookup"><span data-stu-id="7164f-153">Click Product receipt.</span></span>
+25. <span data-ttu-id="7164f-154">Kirjoita arvo Tuotteen vastaanotto -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7164f-154">In the Product receipt field, type a value.</span></span>
+26. <span data-ttu-id="7164f-155">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7164f-155">Click OK.</span></span>
+27. <span data-ttu-id="7164f-156">Valitse toimintoruudussa Yleiset.</span><span class="sxs-lookup"><span data-stu-id="7164f-156">On the Action Pane, click General.</span></span>
+28. <span data-ttu-id="7164f-157">Valitse Liittyvät tilaukset.</span><span class="sxs-lookup"><span data-stu-id="7164f-157">Click Related orders.</span></span>
+29. <span data-ttu-id="7164f-158">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7164f-158">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="7164f-159">Kun ostotilaus on päivitetty vastaanotetuiksi – eli toimittaja on lähettänyt tavarat asiakkaan osoitteeseen, jonka jälkeen alkuperäisen myyntitilauksen tilaksi on päivitetty automaattisesti Toimitettu.</span><span class="sxs-lookup"><span data-stu-id="7164f-159">After the purchase order has been updated as received, or in other words, after the vendor has shipped the goods to your customer's address, the status of the originating sales order is automatically updated to Delivered.</span></span>  
+    * <span data-ttu-id="7164f-160">Myyntitilaus voidaan nyt laskuttaa.</span><span class="sxs-lookup"><span data-stu-id="7164f-160">The sales order can now be invoiced.</span></span>    
+30. <span data-ttu-id="7164f-161">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7164f-161">Click OK.</span></span>
+31. <span data-ttu-id="7164f-162">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7164f-162">Close the page.</span></span>
+32. <span data-ttu-id="7164f-163">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7164f-163">Click OK.</span></span>
 
-## <a name="create-direct-deliveries-from-the-workbench"></a>Luo suoratoimitukset suoraan työtilasta
-1. Sulje sivu.
-2. Sulje sivu.
-3. Siirry Kaikki myyntitilaukset -kohtaan.
-4. Valitse Uusi.
-5. Syötä tai valitse arvo Asiakastili-kentässä.
-6. Valitse OK.
-7. Syötä tai valitse arvo Nimiketunnus-kentässä.
-8. Laajenna Rivin erittely -osa.
-9. Valitse Toimitus-välilehti.
-    * Sen sijaan että suoratilaus luotaisiin myyntitilauksen osana kuten edellisessä menettelyssä, voit siirtää tämän tehtävän ostajalle. Jos haluat sisällyttää myyntitilausrivin suoratoimituksen käsittelyprosessiin, rivi on merkittävä suoratoimitettavaksi.  
-10. Valitse Suoratoimitus-kentässä Kyllä.
-    *   Jos nimike on jo määritetty oletusarvoisesti suoratoimitukseen, kentän asetuksena on tilausrivin käsittelyssä automaattisesti Kyllä. Voit määrittää nimikkeen suoratoimitettavaksi vapautetun tuotteen päätuotteessa valitsemalla Suoratoimitus-asetukseksi Kyllä ja valitsemalla suoratoimituksen oletusvaraston.  
-    * Koska ostotilausta ei ole vielä luotu, suoratoimituksen tilana Suoratoimitettava.   
-11. Sulje sivu.
-12. Sulje sivu.
-13. Valitse Suoratoimitus.
-    * Suoratoimitus-sivu toimii työtilana, jossa ostoedustaja saa yhteenvedon kaikista suoratoimitettavista myyntitilausriveistä, joten he voivat luoda vastaavat ostotilaukset. Lisäksi he tarkastella Vahvistus- ja Toimitus-välilehdissä avoimia suoratoimitustilauksia ja vahvistettuja tilauksia.   
-14. Valitse Luo suoratoimitus.
-15. Valitse Vahvistus-välilehti.
-    * Luotu suoratoimitustilaus siirretään automaattisesti Vahvistus-välilehteen. Voit halutessasi vahvistaa tilauksen suoraan tällä sivulla. Kun osto on vahvistettu, se siirretään automaattisesti Toimitus-välilehteen, josta voit rekisteröidä sen vastaanoton.  
+## <a name="create-direct-deliveries-from-the-workbench"></a><span data-ttu-id="7164f-164">Luo suoratoimitukset suoraan työtilasta</span><span class="sxs-lookup"><span data-stu-id="7164f-164">Create direct deliveries from the workbench</span></span>
+1. <span data-ttu-id="7164f-165">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7164f-165">Close the page.</span></span>
+2. <span data-ttu-id="7164f-166">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7164f-166">Close the page.</span></span>
+3. <span data-ttu-id="7164f-167">Siirry Kaikki myyntitilaukset -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="7164f-167">Go to All sales orders.</span></span>
+4. <span data-ttu-id="7164f-168">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7164f-168">Click New.</span></span>
+5. <span data-ttu-id="7164f-169">Syötä tai valitse arvo Asiakastili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7164f-169">In the Customer account field, enter or select a value.</span></span>
+6. <span data-ttu-id="7164f-170">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7164f-170">Click OK.</span></span>
+7. <span data-ttu-id="7164f-171">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7164f-171">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="7164f-172">Laajenna Rivin erittely -osa.</span><span class="sxs-lookup"><span data-stu-id="7164f-172">Expand the Line details section.</span></span>
+9. <span data-ttu-id="7164f-173">Valitse Toimitus-välilehti.</span><span class="sxs-lookup"><span data-stu-id="7164f-173">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="7164f-174">Sen sijaan että suoratilaus luotaisiin myyntitilauksen osana kuten edellisessä menettelyssä, voit siirtää tämän tehtävän ostajalle.</span><span class="sxs-lookup"><span data-stu-id="7164f-174">Instead of creating a direct delivery as part of the sales order processing as in the previous procedure, you can choose to hand over this task to a purchasing professional.</span></span> <span data-ttu-id="7164f-175">Jos haluat sisällyttää myyntitilausrivin suoratoimituksen käsittelyprosessiin, rivi on merkittävä suoratoimitettavaksi.</span><span class="sxs-lookup"><span data-stu-id="7164f-175">To include the sales order line in the direct delivery handling process, you must mark the line for direct delivery.</span></span>  
+10. <span data-ttu-id="7164f-176">Valitse Suoratoimitus-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="7164f-176">Select Yes in the Direct delivery field.</span></span>
+    *   <span data-ttu-id="7164f-177">Jos nimike on jo määritetty oletusarvoisesti suoratoimitukseen, kentän asetuksena on tilausrivin käsittelyssä automaattisesti Kyllä.</span><span class="sxs-lookup"><span data-stu-id="7164f-177">If the item has already been set up for direct delivery by default, the field will automatically be set to Yes at the order line entry.</span></span> <span data-ttu-id="7164f-178">Voit määrittää nimikkeen suoratoimitettavaksi vapautetun tuotteen päätuotteessa valitsemalla Suoratoimitus-asetukseksi Kyllä ja valitsemalla suoratoimituksen oletusvaraston.</span><span class="sxs-lookup"><span data-stu-id="7164f-178">You can set up an item for direct delivery on the Released product's master by setting the Direct delivery option to Yes and selecting a default Direct delivery warehouse.</span></span>  
+    * <span data-ttu-id="7164f-179">Koska ostotilausta ei ole vielä luotu, suoratoimituksen tilana Suoratoimitettava.</span><span class="sxs-lookup"><span data-stu-id="7164f-179">Because the purchase order has not yet been created, the Direct delivery status is set to To be direct delivered.</span></span>   
+11. <span data-ttu-id="7164f-180">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7164f-180">Close the page.</span></span>
+12. <span data-ttu-id="7164f-181">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7164f-181">Close the page.</span></span>
+13. <span data-ttu-id="7164f-182">Valitse Suoratoimitus.</span><span class="sxs-lookup"><span data-stu-id="7164f-182">Go to Direct delivery.</span></span>
+    * <span data-ttu-id="7164f-183">Suoratoimitus-sivu toimii työtilana, jossa ostoedustaja saa yhteenvedon kaikista suoratoimitettavista myyntitilausriveistä, joten he voivat luoda vastaavat ostotilaukset.</span><span class="sxs-lookup"><span data-stu-id="7164f-183">The Direct delivery page acts as a workbench that provides the purchasing agent with an overview of all the sales order lines that are to be direct delivered and it allows them to create the respective purchase orders.</span></span> <span data-ttu-id="7164f-184">Lisäksi he tarkastella Vahvistus- ja Toimitus-välilehdissä avoimia suoratoimitustilauksia ja vahvistettuja tilauksia.</span><span class="sxs-lookup"><span data-stu-id="7164f-184">In addition, they can view the open direct delivery orders and the confirmed orders on the Confirmation and Delivery tabs.</span></span>   
+14. <span data-ttu-id="7164f-185">Valitse Luo suoratoimitus.</span><span class="sxs-lookup"><span data-stu-id="7164f-185">Click Create direct delivery.</span></span>
+15. <span data-ttu-id="7164f-186">Valitse Vahvistus-välilehti.</span><span class="sxs-lookup"><span data-stu-id="7164f-186">Click the Confirmation tab.</span></span>
+    * <span data-ttu-id="7164f-187">Luotu suoratoimitustilaus siirretään automaattisesti Vahvistus-välilehteen.</span><span class="sxs-lookup"><span data-stu-id="7164f-187">After you have created a direct delivery order, it automatically moved to the Confirmation tab.</span></span> <span data-ttu-id="7164f-188">Voit halutessasi vahvistaa tilauksen suoraan tällä sivulla.</span><span class="sxs-lookup"><span data-stu-id="7164f-188">You can choose to confirm the order directly from this page.</span></span> <span data-ttu-id="7164f-189">Kun osto on vahvistettu, se siirretään automaattisesti Toimitus-välilehteen, josta voit rekisteröidä sen vastaanoton.</span><span class="sxs-lookup"><span data-stu-id="7164f-189">When the purchase is confirmed, it will automatically move to the Delivery tab, from which you can registered its receipt.</span></span>  
 
 

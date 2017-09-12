@@ -26,109 +26,109 @@ ms.lasthandoff: 08/10/2017
 
 ---
 
-# <a name="inventory-on-hand-mobile-workspace"></a>Käytettävissä olevan varaston mobiilityötila
+# <a name="inventory-on-hand-mobile-workspace"></a><span data-ttu-id="bdfa6-104">Käytettävissä olevan varaston mobiilityötila</span><span class="sxs-lookup"><span data-stu-id="bdfa6-104">Inventory on-hand mobile workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja **käytettävissä olevan varaston** mobiilityötilasta. Tämä työtila auttaa syventämään näkemyksiä varatusta ja käytettävissä olevasta varastosta milloin tahansa ja missä tahansa.
+<span data-ttu-id="bdfa6-105">Tässä ohjeaiheessa on tietoja **käytettävissä olevan varaston** mobiilityötilasta.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-105">This topic provides information about the **Inventory on-hand** mobile workspace.</span></span> <span data-ttu-id="bdfa6-106">Tämä työtila auttaa syventämään näkemyksiä varatusta ja käytettävissä olevasta varastosta milloin tahansa ja missä tahansa.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-106">This workspace helps you gain insights into reserved and available inventory anytime and anywhere.</span></span>
 
-Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
+<span data-ttu-id="bdfa6-107">Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-107">This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span>
 
-## <a name="overview"></a>Yleiskuvaus
-Yleensä yrityksillä on useita varaston toimituksia ja vastaanottoja joka päivä. Näiden siirrot muuttavat jatkuvasti käytettävissä olevan varaston tilaa. **Käytettävissä olevan varaston** mobiilityötilassa näet koko yrityksen käytettävissä olevan varaston tilan, jolloin voit hyödyntää uusimpia varastotietoja haluamassasi mobiililaitteessa. Riippumatta siitä, työskenteletkö fyysisessä varastossa, ostossa, myynnissä, tuotannossa, yrityksen johdossa tai muussa roolissa, voit käyttää käytettävissä olevan varaston tietoja milloin tahansa ja missä tahansa. 
+## <a name="overview"></a><span data-ttu-id="bdfa6-108">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="bdfa6-108">Overview</span></span>
+<span data-ttu-id="bdfa6-109">Yleensä yrityksillä on useita varaston toimituksia ja vastaanottoja joka päivä.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-109">Typically, companies have multiple shipments and multiple receipts of inventory every day.</span></span> <span data-ttu-id="bdfa6-110">Näiden siirrot muuttavat jatkuvasti käytettävissä olevan varaston tilaa.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-110">These movements constantly change the on-hand inventory status.</span></span> <span data-ttu-id="bdfa6-111">**Käytettävissä olevan varaston** mobiilityötilassa näet koko yrityksen käytettävissä olevan varaston tilan, jolloin voit hyödyntää uusimpia varastotietoja haluamassasi mobiililaitteessa.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-111">The **Inventory on-hand** mobile workspace lets you see the cross-company on-hand inventory status, so that you can gain the latest insights into inventory data on the mobile device of your choice.</span></span> <span data-ttu-id="bdfa6-112">Riippumatta siitä, työskenteletkö fyysisessä varastossa, ostossa, myynnissä, tuotannossa, yrityksen johdossa tai muussa roolissa, voit käyttää käytettävissä olevan varaston tietoja milloin tahansa ja missä tahansa.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-112">Regardless of whether you work in the warehouse, purchasing, sales, manufacturing, or management, or have other roles, you can access on-hand inventory data anytime and anywhere.</span></span> 
 
-Mobiilityötila sisältää välittömän näkymän käytettävissä olevan varaston tilasta kaikissa tiloissa. Sen avulla voit tarkastella käytettävää varastoa eri tiloissa, nykyisiä materiaalivarauksia ja varaamatonta, käytettävissä olevaa varastoa. Voit myös syöttää nimikenumeron suorittaaksesi kyselyjä käytettävissä olevaan varastoon ja suorittaa suodatetun haun varastotuotteille ja varianteille. 
+<span data-ttu-id="bdfa6-113">Mobiilityötila sisältää välittömän näkymän käytettävissä olevan varaston tilasta kaikissa tiloissa.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-113">The mobile workspace provides an instant view of the on-hand status across facilities.</span></span> <span data-ttu-id="bdfa6-114">Sen avulla voit tarkastella käytettävää varastoa eri tiloissa, nykyisiä materiaalivarauksia ja varaamatonta, käytettävissä olevaa varastoa.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-114">It lets you view on-hand inventory across facilities, current material reservations, and unreserved on-hand inventory.</span></span> <span data-ttu-id="bdfa6-115">Voit myös syöttää nimikenumeron suorittaaksesi kyselyjä käytettävissä olevaan varastoon ja suorittaa suodatetun haun varastotuotteille ja varianteille.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-115">You can also enter item numbers to query on-hand inventory, and can do a filtered search for on-hand products or variants.</span></span> 
 
-Erityisesti mobiilityötilassa on nämä ominaisuudet:
+<span data-ttu-id="bdfa6-116">Erityisesti mobiilityötilassa on nämä ominaisuudet:</span><span class="sxs-lookup"><span data-stu-id="bdfa6-116">Specifically, the mobile workspace provides these features:</span></span>
 
--   Voit etsiä tuotenumerolla tai tuotteen nimellä löytääksesi tuotteita ja tarkastellaksesi niiden käytettävissä olevan varaston tilaa.
--   Voit tarkastella valittujen tuotteiden osalta seuraavia tietoja:
+-   <span data-ttu-id="bdfa6-117">Voit etsiä tuotenumerolla tai tuotteen nimellä löytääksesi tuotteita ja tarkastellaksesi niiden käytettävissä olevan varaston tilaa.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-117">You can search by product number or product name to find products to view the on-hand inventory status for.</span></span>
+-   <span data-ttu-id="bdfa6-118">Voit tarkastella valittujen tuotteiden osalta seuraavia tietoja:</span><span class="sxs-lookup"><span data-stu-id="bdfa6-118">For the selected products, you can view the following information:</span></span>
 
-    -   Käytettävissä oleva varasto toimipaikan mukaan
-    -   Käytettävissä oleva varasto fyysisten varastojen mukaan
-    -   Käytettävissä oleva varasto sijaintien mukaan
-    -   Käytettävissä oleva varasto erän mukaan (eräohjatuille tuotteille)
-    -   Käytettävissä oleva varasto varastotilan mukaan
+    -   <span data-ttu-id="bdfa6-119">Käytettävissä oleva varasto toimipaikan mukaan</span><span class="sxs-lookup"><span data-stu-id="bdfa6-119">On-hand inventory per site</span></span>
+    -   <span data-ttu-id="bdfa6-120">Käytettävissä oleva varasto fyysisten varastojen mukaan</span><span class="sxs-lookup"><span data-stu-id="bdfa6-120">On-hand inventory per warehouse</span></span>
+    -   <span data-ttu-id="bdfa6-121">Käytettävissä oleva varasto sijaintien mukaan</span><span class="sxs-lookup"><span data-stu-id="bdfa6-121">On-hand inventory per location</span></span>
+    -   <span data-ttu-id="bdfa6-122">Käytettävissä oleva varasto erän mukaan (eräohjatuille tuotteille)</span><span class="sxs-lookup"><span data-stu-id="bdfa6-122">On-hand inventory per batch (for batch-controlled products)</span></span>
+    -   <span data-ttu-id="bdfa6-123">Käytettävissä oleva varasto varastotilan mukaan</span><span class="sxs-lookup"><span data-stu-id="bdfa6-123">On-hand inventory per inventory status</span></span>
     
--   Tuotteen varastosaldo näkyy seuraavilla tavoilla:
+-   <span data-ttu-id="bdfa6-124">Tuotteen varastosaldo näkyy seuraavilla tavoilla:</span><span class="sxs-lookup"><span data-stu-id="bdfa6-124">Product on-hand inventory is shown in the following ways:</span></span>
 
-    -   Fyysisen varaston mukaan (tämä näkymä edustaa kokonaismäärää).
-    -   Fyysisen varaston varattujen mukaan (tämä näkymä edustaa varattua määrää).
-    -   Käytettävissä olevan fyysisen varaston mukaan (tämä näkymä edustaa varaamatonta käytettävissä olevaa määrää).
+    -   <span data-ttu-id="bdfa6-125">Fyysisen varaston mukaan (tämä näkymä edustaa kokonaismäärää).</span><span class="sxs-lookup"><span data-stu-id="bdfa6-125">By physical inventory (This view represents the total amount.)</span></span>
+    -   <span data-ttu-id="bdfa6-126">Fyysisen varaston varattujen mukaan (tämä näkymä edustaa varattua määrää).</span><span class="sxs-lookup"><span data-stu-id="bdfa6-126">By physical reserved (This view represents the reserved amount.)</span></span>
+    -   <span data-ttu-id="bdfa6-127">Käytettävissä olevan fyysisen varaston mukaan (tämä näkymä edustaa varaamatonta käytettävissä olevaa määrää).</span><span class="sxs-lookup"><span data-stu-id="bdfa6-127">By available physical (This view represents available amount that has no reservations.)</span></span>
 
-## <a name="prerequisites"></a>Edellytykset
-Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
+## <a name="prerequisites"></a><span data-ttu-id="bdfa6-128">Edellytykset</span><span class="sxs-lookup"><span data-stu-id="bdfa6-128">Prerequisites</span></span>
+<span data-ttu-id="bdfa6-129">Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-129">The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys 
-Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **käytettävissä olevan varaston** mobiilityötilassa. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a><span data-ttu-id="bdfa6-130">Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys</span><span class="sxs-lookup"><span data-stu-id="bdfa6-130">Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</span></span> 
+<span data-ttu-id="bdfa6-131">Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on otettu organisaatiossa käyttöön, järjestelmänvalvojan on julkaistava **käytettävissä olevan varaston** mobiilityötilassa.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-131">If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Inventory on-hand** mobile workspace.</span></span> <span data-ttu-id="bdfa6-132">Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).</span><span class="sxs-lookup"><span data-stu-id="bdfa6-132">For instructions, see [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.
-Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations -versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a><span data-ttu-id="bdfa6-133">Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-133">Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later</span></span>
+<span data-ttu-id="bdfa6-134">Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations -versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-134">If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites.</span></span> 
 
 <table>
 <thead>
 <tr class="header">
-<th>Edellytys</th>
-<th>Rooli</th>
-<th>kuvaus</th>
+<th><span data-ttu-id="bdfa6-135">Edellytys</span><span class="sxs-lookup"><span data-stu-id="bdfa6-135">Prerequisite</span></span></th>
+<th><span data-ttu-id="bdfa6-136">Rooli</span><span class="sxs-lookup"><span data-stu-id="bdfa6-136">Role</span></span></th>
+<th><span data-ttu-id="bdfa6-137">kuvaus</span><span class="sxs-lookup"><span data-stu-id="bdfa6-137">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Ota KB 4013633 käyttöön.</td>
-<td>Järjestelmänvalvoja</td>
+<td><span data-ttu-id="bdfa6-138">Ota KB 4013633 käyttöön.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-138">Implement KB 4013633.</span></span></td>
+<td><span data-ttu-id="bdfa6-139">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="bdfa6-139">System administrator</span></span></td>
 
-<td>KB 4013633 on X++-päivitys tai metatietojen hotfix-korjaus, joka sisältää <strong>käytettävissä olevan varaston</strong> mobiilityötilan. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4013633 -päivityksen.
+<td><span data-ttu-id="bdfa6-140">KB 4013633 on X++-päivitys tai metatietojen hotfix-korjaus, joka sisältää <strong>käytettävissä olevan varaston</strong> mobiilityötilan.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-140">KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Inventory on-hand</strong> mobile workspace.</span></span> <span data-ttu-id="bdfa6-141">Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4013633 -päivityksen.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-141">To implement KB 4013633, your system administrator must follow these steps.</span></span>
 <ol>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Lataa metatietojen hotfix-korjaus Microsoft Dynamics Lifecycle Servicesistä (LCS)</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>SCMMobile</strong>-mallin ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Ota käyttöönotettava paketti käyttöön</a>.</li>
+<li><span data-ttu-id="bdfa6-142"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Lataa metatietojen hotfix-korjaus Microsoft Dynamics Lifecycle Servicesistä (LCS)</a>.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-142"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</span></span></li>
+<li><span data-ttu-id="bdfa6-143"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Asenna metatietojen korjaustiedosto</a>.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-143"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</span></span></li>
+<li><span data-ttu-id="bdfa6-144"><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Luo käyttöön otettava paketti</a>, joka sisältää <strong>SCMMobile</strong>-mallin ja lataa sitten käyttöön otettava paketti elinkaaripalveluihin.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-144"><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</span></span></li>
+<li><span data-ttu-id="bdfa6-145"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Ota käyttöönotettava paketti käyttöön</a>.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-145"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</span></span></li>
 
 </ol></td>
 </tr>
 <tr class="even">
-<td>Julkaise <strong>käytettävissä olevan varaston</strong> mobiilityötila.</td>
-<td>Järjestelmänvalvoja</td>
-<td>Lisätietoja on ohjeaiheessa <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobiilityötilan julkaiseminen</a>.</td>
+<td><span data-ttu-id="bdfa6-146">Julkaise <strong>käytettävissä olevan varaston</strong> mobiilityötila.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-146">Publish the <strong>Inventory on-hand</strong> mobile workspace.</span></span></td>
+<td><span data-ttu-id="bdfa6-147">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="bdfa6-147">System administrator</span></span></td>
+<td><span data-ttu-id="bdfa6-148">Lisätietoja on ohjeaiheessa <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobiilityötilan julkaiseminen</a>.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-148">See <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
+## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="bdfa6-149">Mobiilisovelluksen lataaminen ja asentaminen</span><span class="sxs-lookup"><span data-stu-id="bdfa6-149">Download and install the mobile app</span></span>
 
-Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
+<span data-ttu-id="bdfa6-150">Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:</span><span class="sxs-lookup"><span data-stu-id="bdfa6-150">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
 
--   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
--   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
+-   [<span data-ttu-id="bdfa6-151">Android-puhelimet</span><span class="sxs-lookup"><span data-stu-id="bdfa6-151">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [<span data-ttu-id="bdfa6-152">IPhone-puhelimet</span><span class="sxs-lookup"><span data-stu-id="bdfa6-152">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="bdfa6-153">Kirjautuminen mobiilisovellukseen</span><span class="sxs-lookup"><span data-stu-id="bdfa6-153">Sign in to the mobile app</span></span>
 
-1.  Käynnistä sovellus mobiililaitteessa.
-2.  Anna Dynamics 365 -URL-osoitteesi.
-3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
-4.  Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
+1.  <span data-ttu-id="bdfa6-154">Käynnistä sovellus mobiililaitteessa.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-154">Start the app on your mobile device.</span></span>
+2.  <span data-ttu-id="bdfa6-155">Anna Dynamics 365 -URL-osoitteesi.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-155">Enter your Dynamics 365 URL.</span></span>
+3.  <span data-ttu-id="bdfa6-156">Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-156">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="bdfa6-157">Kirjota tunnistetiedot.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-157">Enter your credentials.</span></span>
+4.  <span data-ttu-id="bdfa6-158">Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-158">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="bdfa6-159">Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-159">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
 
-    [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    <span data-ttu-id="bdfa6-160">[![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="bdfa6-160">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
 
-## <a name="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace"></a>Tarkastele tuotteen käytettävissä olevaa varastoa käytettävissä olevan varaston mobiilityötilan avulla
+## <a name="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace"></a><span data-ttu-id="bdfa6-161">Tarkastele tuotteen käytettävissä olevaa varastoa käytettävissä olevan varaston mobiilityötilan avulla</span><span class="sxs-lookup"><span data-stu-id="bdfa6-161">View the on-hand inventory for a product by using the Inventory on-hand mobile workspace</span></span>
 
-1.  Valitse mobiililaitteessasi **Käytettävissä oleva varasto** -työtila.
+1.  <span data-ttu-id="bdfa6-162">Valitse mobiililaitteessasi **Käytettävissä oleva varasto** -työtila.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-162">On your mobile device, select the **Inventory on-hand** workspace.</span></span>
 
-2.  Valitse **Tarkistaa käytettävissä oleva varasto nimikkeelle**. Näet luettelon tuotteista, jotka on ladattu sovellukseesi offline-käyttöä varten. Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää. Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
-3.  Jos nimike ei ole luettelossa, valitse **Hae lisää**. Etsi tuotteen numeron mukaan tai vaihda hakuun tuotteen nimen mukaan.
+2.  <span data-ttu-id="bdfa6-163">Valitse **Tarkistaa käytettävissä oleva varasto nimikkeelle**.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-163">Select **Check on-hand for an item**.</span></span> <span data-ttu-id="bdfa6-164">Näet luettelon tuotteista, jotka on ladattu sovellukseesi offline-käyttöä varten.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-164">You see a list of the products that are loaded into your app for offline use.</span></span> <span data-ttu-id="bdfa6-165">Oletusarvon mukaan ladataan 50 nimikettä, mutta sovelluskehittäjä voi muuttaa tätä määrää.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-165">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="bdfa6-166">Sovelluskehittäjille on lisätietoja ohjeaiheessa [Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="bdfa6-166">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span>
+3.  <span data-ttu-id="bdfa6-167">Jos nimike ei ole luettelossa, valitse **Hae lisää**.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-167">If your item isn't in the list, select **Search more**.</span></span> <span data-ttu-id="bdfa6-168">Etsi tuotteen numeron mukaan tai vaihda hakuun tuotteen nimen mukaan.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-168">Search by product number, or switch to a search by product name.</span></span>
 
-4.  Valitse tuote. Jos nimikkeellä on kuva, kuva näkyy.
-5.  Valitse jokin seuraavista vaihtoehdoista tarkastellaksesi käytettävissä olevan varaston tilaa:
+4.  <span data-ttu-id="bdfa6-169">Valitse tuote.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-169">Select a product.</span></span> <span data-ttu-id="bdfa6-170">Jos nimikkeellä on kuva, kuva näkyy.</span><span class="sxs-lookup"><span data-stu-id="bdfa6-170">If the item has an image, the image is shown.</span></span>
+5.  <span data-ttu-id="bdfa6-171">Valitse jokin seuraavista vaihtoehdoista tarkastellaksesi käytettävissä olevan varaston tilaa:</span><span class="sxs-lookup"><span data-stu-id="bdfa6-171">Select one of the following options to view the status of on-hand inventory:</span></span>
 
-    -   Näytä käytettävissä oleva varasto toimipaikan mukaan
-    -   Näytä käytettävissä oleva varaston fyysisen varaston mukaan
-    -   Näytä käytettävissä oleva varasto sijaintien mukaan
-    -   Näytä käytettävissä oleva varasto erän mukaan (eräohjatuille tuotteille)
-    -   Näytä käytettävissä oleva varasto varaston tilan mukaan
+    -   <span data-ttu-id="bdfa6-172">Näytä käytettävissä oleva varasto toimipaikan mukaan</span><span class="sxs-lookup"><span data-stu-id="bdfa6-172">View on-hand per site</span></span>
+    -   <span data-ttu-id="bdfa6-173">Näytä käytettävissä oleva varaston fyysisen varaston mukaan</span><span class="sxs-lookup"><span data-stu-id="bdfa6-173">View on-hand per warehouse</span></span>
+    -   <span data-ttu-id="bdfa6-174">Näytä käytettävissä oleva varasto sijaintien mukaan</span><span class="sxs-lookup"><span data-stu-id="bdfa6-174">View on-hand per location</span></span>
+    -   <span data-ttu-id="bdfa6-175">Näytä käytettävissä oleva varasto erän mukaan (eräohjatuille tuotteille)</span><span class="sxs-lookup"><span data-stu-id="bdfa6-175">View on-hand per batch (for batch-controlled products)</span></span>
+    -   <span data-ttu-id="bdfa6-176">Näytä käytettävissä oleva varasto varaston tilan mukaan</span><span class="sxs-lookup"><span data-stu-id="bdfa6-176">View on-hand per inventory status</span></span>
 
-    Tuotteen varastosaldo näkyy seuraavilla tavoilla:
-    -   Fyysisen varaston mukaan (tämä näkymä edustaa kokonaismäärää).
-    -   Fyysisen varaston varattujen mukaan (tämä näkymä edustaa varattua määrää).
-    -   Käytettävissä olevan fyysisen varaston mukaan (tämä näkymä edustaa varaamatonta käytettävissä olevaa määrää).
+    <span data-ttu-id="bdfa6-177">Tuotteen varastosaldo näkyy seuraavilla tavoilla:</span><span class="sxs-lookup"><span data-stu-id="bdfa6-177">Product on-hand inventory is shown in the following ways:</span></span>
+    -   <span data-ttu-id="bdfa6-178">Fyysisen varaston mukaan (tämä näkymä edustaa kokonaismäärää).</span><span class="sxs-lookup"><span data-stu-id="bdfa6-178">By physical inventory (This view represents the total amount.)</span></span>
+    -   <span data-ttu-id="bdfa6-179">Fyysisen varaston varattujen mukaan (tämä näkymä edustaa varattua määrää).</span><span class="sxs-lookup"><span data-stu-id="bdfa6-179">By physical reserved (This view represents the reserved amount.)</span></span>
+    -   <span data-ttu-id="bdfa6-180">Käytettävissä olevan fyysisen varaston mukaan (tämä näkymä edustaa varaamatonta käytettävissä olevaa määrää).</span><span class="sxs-lookup"><span data-stu-id="bdfa6-180">By available physical (This view represents the available amount that has no reservations.)</span></span>
 

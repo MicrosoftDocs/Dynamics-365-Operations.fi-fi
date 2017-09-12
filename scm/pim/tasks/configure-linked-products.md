@@ -16,28 +16,28 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 126447cad226c843afa2cf9bc609a316cab7b8cb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 306e9ebca811c576b06de3aef697ed64cbe85180
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-linked-products"></a>Linkitettyjen tuotteiden määrittäminen
+# <a name="configure-linked-products"></a><span data-ttu-id="93676-103">Linkitettyjen tuotteiden määrittäminen</span><span class="sxs-lookup"><span data-stu-id="93676-103">Configure linked products</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kerrotaan, miten linkitetyt tuotteen määritetään. Tässä menettelyssä käytetään esittelytietojen USRT-yritystä. Menettelyssä oletetaan, että molemmat tuotteet on jo luotu ja vapautettu.
+<span data-ttu-id="93676-104">Tässä menettelyssä kerrotaan, miten linkitetyt tuotteen määritetään.</span><span class="sxs-lookup"><span data-stu-id="93676-104">This procedure walks through configuring linked products.</span></span> <span data-ttu-id="93676-105">Tässä menettelyssä käytetään esittelytietojen USRT-yritystä. Menettelyssä oletetaan, että molemmat tuotteet on jo luotu ja vapautettu.</span><span class="sxs-lookup"><span data-stu-id="93676-105">This procedure uses the USRT demo data, and assumes both products have already been created and released.</span></span>
 
-1. Mene Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Valitse toimintoruudussa Vähittäismyynti.
-4. Valitse Linkitetyt tuotteet.
-5. Valitse Muokkaa.
-6. Avaa haku valitsemalla Linkitetty tuotetunnus -kentässä avattavan valikon painike.
-7. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-8. Avaa haku napsauttamalla Yksikkö -kentässä avattavan valikon painiketta.
-9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-10. Kirjoita numero Määrä-kenttään.
-11. Valitse Tallenna.
+1. <span data-ttu-id="93676-106">Mene Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="93676-106">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="93676-107">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="93676-107">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="93676-108">Valitse toimintoruudussa Vähittäismyynti.</span><span class="sxs-lookup"><span data-stu-id="93676-108">On the Action Pane, click Retail.</span></span>
+4. <span data-ttu-id="93676-109">Valitse Linkitetyt tuotteet.</span><span class="sxs-lookup"><span data-stu-id="93676-109">Click Linked products.</span></span>
+5. <span data-ttu-id="93676-110">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="93676-110">Click Edit.</span></span>
+6. <span data-ttu-id="93676-111">Avaa haku valitsemalla Linkitetty tuotetunnus -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="93676-111">In the Linked product number field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="93676-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="93676-112">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="93676-113">Avaa haku napsauttamalla Yksikkö -kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="93676-113">In the Unit field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="93676-114">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="93676-114">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="93676-115">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="93676-115">In the Quantity field, enter a number.</span></span>
+11. <span data-ttu-id="93676-116">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="93676-116">Click Save.</span></span>
 
 

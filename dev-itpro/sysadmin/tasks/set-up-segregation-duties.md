@@ -16,36 +16,36 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 2ab30f4326b627406f9a39d6c3203b181b67d68f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 754f28cd2831d8a9a57c408518d240de460b732b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-segregation-of-duties"></a>Määritä tehtävien eriyttäminen
+# <a name="set-up-segregation-of-duties"></a><span data-ttu-id="c1e4e-103">Määritä tehtävien eriyttäminen</span><span class="sxs-lookup"><span data-stu-id="c1e4e-103">Set up segregation of duties</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Voit määrittää sääntöjä erottamaan tehtävät, joilla on oltava eri käyttäjät. Tätä kutsutaan tehtävien eriyttämiseksi. Et ehkä esimerkiksi halua, että sama henkilö kuittaa tavaroiden vastaanottamisen ja käsittelee maksua toimittajalle. Tehtävien eriyttäminen auttaa vähentämään petosriskiä. Lisäksi se auttaa havaitsemaan virheet tai väärinkäytökset. Voit myös varmistaa tehtävien eriyttämisen avulla, että sisäisiä valvontakäytäntöjä noudatetaan. Lue sääntö seuraavalla menettelyllä. Sinun on oltava järjestelmänvalvoja, jotta voit suorittaa menettelyn. Tämän menettelyn luomisessa käytetty esittely-yritys on DAT. 
+<span data-ttu-id="c1e4e-104">Voit määrittää sääntöjä erottamaan tehtävät, joilla on oltava eri käyttäjät.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-104">You can set up rules to separate tasks that must be performed by different users.</span></span> <span data-ttu-id="c1e4e-105">Tätä kutsutaan tehtävien eriyttämiseksi.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-105">This concept is named segregation of duties.</span></span> <span data-ttu-id="c1e4e-106">Et ehkä esimerkiksi halua, että sama henkilö kuittaa tavaroiden vastaanottamisen ja käsittelee maksua toimittajalle.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-106">For example, you might not want the same person both to acknowledge the receipt of goods and to process payment to the vendor.</span></span> <span data-ttu-id="c1e4e-107">Tehtävien eriyttäminen auttaa vähentämään petosriskiä. Lisäksi se auttaa havaitsemaan virheet tai väärinkäytökset.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-107">Segregation of duties helps you reduce the risk of fraud, and it also helps you detect errors or irregularities.</span></span> <span data-ttu-id="c1e4e-108">Voit myös varmistaa tehtävien eriyttämisen avulla, että sisäisiä valvontakäytäntöjä noudatetaan.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-108">You can also use segregation of duties to enforce internal control policies.</span></span> <span data-ttu-id="c1e4e-109">Lue sääntö seuraavalla menettelyllä.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-109">Complete the following procedure to create a rule.</span></span> <span data-ttu-id="c1e4e-110">Sinun on oltava järjestelmänvalvoja, jotta voit suorittaa menettelyn.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-110">You must be a system administrator to complete the procedure.</span></span> <span data-ttu-id="c1e4e-111">Tämän menettelyn luomisessa käytetty esittely-yritys on DAT.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-111">The demo data company used to create this procedure is DAT.</span></span> 
 
-1. Valitse Järjestelmänhallinta > Suojaus > Tehtävien eriyttäminen > Tehtävien eriyttämisen säännöt.
-2. Valitse Uusi.
-3. Kirjoita arvo Nimi-kenttään.
-    * Anna säännön nimi.  
-4. Avaa haku napsauttamalla Ensimmäinen tehtävä -kentässä avattavan valikon painiketta.
-5. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Valitse ensimmäinen säännön ohjaama tehtävä.  
-6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-7. Avaa haku napsauttamalla Toinen tehtävä -kentässä avattavan valikon painiketta.
-8. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Valitse toinen säännön ohjaama tehtävä.  
-9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-10. Valitse vaihtoehto Vakavuusaste-kentässä.
-    * Valitse riskin vakavuustaso, jos sama käyttäjä tai rooli suorittaa molemmat tehtävät.  
-11. Kirjoita Suojausriski-kenttään arvo.
-    * Anna turvallisuusriskin kuvaus.  
-12. Kirjoita Suojauksen mitätöinti -kenttään arvo.
-    * Anna kuvaus toiminnoista, joilla lievennät turvallisuusriskiä. Voit lieventää riskiä esimerkiksi arvioimalla prosessin tarkasti, suorittamalla esimiestason arvioinnin kerran kuukaudessa tai jakamalla resurssit muiden osastojen kanssa.  
-13. Valitse Tallenna.
+1. <span data-ttu-id="c1e4e-112">Valitse Järjestelmänhallinta > Suojaus > Tehtävien eriyttäminen > Tehtävien eriyttämisen säännöt.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-112">Go to System administration > Security > Segregation of duties > Segregation of duties rules.</span></span>
+2. <span data-ttu-id="c1e4e-113">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-113">Click New.</span></span>
+3. <span data-ttu-id="c1e4e-114">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-114">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="c1e4e-115">Anna säännön nimi.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-115">Enter a name for the rule.</span></span>  
+4. <span data-ttu-id="c1e4e-116">Avaa haku napsauttamalla Ensimmäinen tehtävä -kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-116">In the First duty field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="c1e4e-117">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-117">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="c1e4e-118">Valitse ensimmäinen säännön ohjaama tehtävä.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-118">Select the first duty that is controlled by the rule.</span></span>  
+6. <span data-ttu-id="c1e4e-119">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-119">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="c1e4e-120">Avaa haku napsauttamalla Toinen tehtävä -kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-120">In the Second duty field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="c1e4e-121">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-121">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="c1e4e-122">Valitse toinen säännön ohjaama tehtävä.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-122">Select the second duty that is controlled by the rule.</span></span>  
+9. <span data-ttu-id="c1e4e-123">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-123">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="c1e4e-124">Valitse vaihtoehto Vakavuusaste-kentässä.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-124">In the Severity field, select an option.</span></span>
+    * <span data-ttu-id="c1e4e-125">Valitse riskin vakavuustaso, jos sama käyttäjä tai rooli suorittaa molemmat tehtävät.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-125">Select the severity of the risk that occurs when the same user or role performs both duties.</span></span>  
+11. <span data-ttu-id="c1e4e-126">Kirjoita Suojausriski-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-126">In the Security risk field, type a value.</span></span>
+    * <span data-ttu-id="c1e4e-127">Anna turvallisuusriskin kuvaus.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-127">Enter a description of the security risk.</span></span>  
+12. <span data-ttu-id="c1e4e-128">Kirjoita Suojauksen mitätöinti -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-128">In the Security mitigation field, type a value.</span></span>
+    * <span data-ttu-id="c1e4e-129">Anna kuvaus toiminnoista, joilla lievennät turvallisuusriskiä.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-129">Enter a description of the actions that you take to mitigate the security risk.</span></span> <span data-ttu-id="c1e4e-130">Voit lieventää riskiä esimerkiksi arvioimalla prosessin tarkasti, suorittamalla esimiestason arvioinnin kerran kuukaudessa tai jakamalla resurssit muiden osastojen kanssa.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-130">For example, you can mitigate the risk by conducting more detailed reviews of the process, by conducting a monthly managerial review, or by sharing resources with other departments.</span></span>  
+13. <span data-ttu-id="c1e4e-131">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c1e4e-131">Click Save.</span></span>
 
 
