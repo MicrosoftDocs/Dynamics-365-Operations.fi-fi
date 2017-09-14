@@ -1,7 +1,7 @@
 --- 
 title: Luo raaka-aineet (vain helmikuu 2016)
 description: "Tämä tehtävä keskittyy valmiiden ja puolivalmiiden tuotteiden osien luomiseen."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
