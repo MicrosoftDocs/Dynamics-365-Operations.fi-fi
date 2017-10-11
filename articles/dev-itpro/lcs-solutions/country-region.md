@@ -17,10 +17,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
-ms.openlocfilehash: 25cba59dfbab2e1030660840e85d278452e39e52
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: fd01d40d3e74503e3e310132882306ed8c23ad1d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -72,7 +72,7 @@ Tehtäväoppaita pääsee käyttämään tuotteen ohjeruudusta, ja niissä esite
 
 Pääset tehtäväoppaisiin siirtymällä Microsoft Dynamics 365 for Finance and Operations -ohjelman sivulle ja valitsemalla Ohje. Sivua käyttävien tehtäväoppaiden luettelo on ohjeruudussa. Voit myös hakea tehtäväoppaita nimen perusteella ohjeruudussa.
 
-Lisätietoja on aiheessa [Tehtäväoppaat](/dynamics365/unified-operations/dev-itpro/get-started/help-overview#task-guides).
+Lisätietoja on aiheessa [Tehtäväoppaat](../../fin-and-ops/get-started/help-overview.md#task-guides).
 
 
 ## <a name="countryregion-specific-help-topics"></a>Maa- ja aluekohtaiset ohjeaiheet
@@ -80,264 +80,264 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 
 ### <a name="australia"></a>Australia
 
--   [Pankkitiedostomuodot](/dynamics365/unified-operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks)
--   [Liiketoimintaraportti](/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement)
--   [Arvoltaan vähäisen käyttöomaisuuden poisto](/dynamics365/unified-operations/financials/localizations/apac-aus-low-value-pool-depreciation)
+-   [Pankkitiedostomuodot](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
+-   [Liiketoimintaraportti](../../financials/localizations/apac-aus-business-activity-statement.md)
+-   [Arvoltaan vähäisen käyttöomaisuuden poisto](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
 
 ### <a name="austria"></a>Itävalta
 
-- [Puolen vuoden poisto](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
-- [Pakkausmateriaalimaksut](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
-- [Ostoverot](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties)
-- [ALV-ilmoitus](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
+- [Puolen vuoden poisto](../../financials/localizations/emea-aut-half-year-depreciation.md)
+- [Pakkausmateriaalimaksut](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
+- [Ostoverot](../../financials/localizations/emea-aut-purchase-duties.md)
+- [ALV-ilmoitus](../../financials/localizations/emea-aut-vat-statement-details.md)
 
 ### <a name="belgium"></a>Belgia
 
--   [CODA-tiliote](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import)
--   [Intervat-veroilmoitus](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration)
--   [PRODCOM-raporttimääritykset](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report)
--   [Täsmäytysraportit](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports)
+-   [CODA-tiliote](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
+-   [Intervat-veroilmoitus](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
+-   [PRODCOM-raporttimääritykset](../../financials/localizations/emea-bel-prodcom-report.md)
+-   [Täsmäytysraportit](../../financials/localizations/emea-bel-reconciliation-reports.md)
 
 ### <a name="brazil"></a>Brasilia
 
--   [CIAP-käyttöomaisuus](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset)
--   [Verokirjojen määrittäminen](/dynamics365/unified-operations/financials/localizations/latam-bra-configure-fiscal-books)
--   [Kirjanpidon konsolidoinnin tapahtumien vienti ja tuonti – Brasilia](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions)
--   [Verokirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books)
--   [Veroasiakirjan tekstin paikkamerkit](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders)
--   [Veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework)
--   [ICMS-veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-icms-tax-fiscal-documents)
--   [NF-eXML-tiedostot ja DANFE-tiedostot](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails)
--   [Veroasiakirjojen tuonti](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents)
--   [Sähköisen maksun palautuksen aikana luodut kirjauskansiot](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process)
--   [NF-e-prosessi](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process)
--   [Yritysten parametrit](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters)
--   [Sähköisten maksusuoritusten käsittely – Brasilia](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances)
--   [Ostoa täydentävät veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents)
--   [Viitattavat veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents)
--   [Myyntiä täydentävät veroasiakirjat](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
--   [Palvelun sähköinen veroasiakirja](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document)
--   [NF-eXML- ja DANFE-asiakirjojen määritys, tuonti ja tarkistus](/dynamics365/unified-operations/financials/localizations/latam-bra-set-up-import-nfe)
--   [Veromääritteet](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes)
--   [Veromaksut](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments)
--   [Verot](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes)
+-   [CIAP-käyttöomaisuus](../../financials/localizations/latam-bra-ciap-fixed-asset.md)
+-   [Verokirjojen määrittäminen](../../financials/localizations/latam-bra-configure-fiscal-books.md)
+-   [Kirjanpidon konsolidoinnin tapahtumien vienti ja tuonti – Brasilia](../../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md)
+-   [Verokirjat](../../financials/localizations/latam-bra-fiscal-books.md)
+-   [Veroasiakirjan tekstin paikkamerkit](../../financials/localizations/latam-bra-fiscal-document-text-placeholders.md)
+-   [Veroasiakirjat](../../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md)
+-   [ICMS-veroasiakirjat](../../financials/localizations/latam-bra-icms-tax-fiscal-documents.md)
+-   [NF-eXML-tiedostot ja DANFE-tiedostot](../../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+-   [Veroasiakirjojen tuonti](../../financials/localizations/latam-bra-import-fiscal-documents.md)
+-   [Sähköisen maksun palautuksen aikana luodut kirjauskansiot](../../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md)
+-   [NF-e-prosessi](../../financials/localizations/latam-bra-nf-e-process.md)
+-   [Yritysten parametrit](../../financials/localizations/latam-bra-legal-entity-parameters.md)
+-   [Sähköisten maksusuoritusten käsittely – Brasilia](../../financials/localizations/latam-bra-process-electronic-payment-remittances.md)
+-   [Ostoa täydentävät veroasiakirjat](../../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md)
+-   [Viitattavat veroasiakirjat](../../financials/localizations/latam-bra-referenced-fiscal-documents.md)
+-   [Myyntiä täydentävät veroasiakirjat](../../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md)
+-   [Palvelun sähköinen veroasiakirja](../../financials/localizations/latam-bra-service-electronic-fiscal-document.md)
+-   [NF-eXML- ja DANFE-asiakirjojen määritys, tuonti ja tarkistus](../../financials/localizations/latam-bra-set-up-import-nfe.md)
+-   [Veromääritteet](../../financials/localizations/latam-bra-tax-attributes.md)
+-   [Veromaksut](../../financials/localizations/latam-bra-tax-payments.md)
+-   [Verot](../../financials/localizations/latam-bra-calculate-taxes.md)
 
 ### <a name="china"></a>Kiina
--   [Tuoterakennevertailu](/dynamics365/unified-operations/financials/localizations/apac-chn-bom-comparison)
--   [Kiinalaiset tositteet](/dynamics365/unified-operations/financials/localizations/apac-chn-vouchers)
--   [Verointegroinnin määritys](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration)
-    -   [Myyntilaskujen ALV – usein kysytyt kysymykset](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices)
-    -   [Käyttöomaisuuden poistomenetelmät](/dynamics365/unified-operations/financials/localizations/apac-chn-depreciation-methods-fixed-assets)
--   [Kiinalaisen Golden Tax -tietoyksikön tuonti](/dynamics365/unified-operations/financials/localizations/apac-chn-import-golden-tax-data-entity)
--   [Kuukausittainen keskiarvo -kustannusmalli](/dynamics365/unified-operations/financials/localizations/apac-chn-monthly-average-cost-model)
--   [Varaston päätilien kirjaus toimipaikoittain](/dynamics365/unified-operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site)
--   [Kirjanpitotilien debet- ja kredit-summien näyttäminen](/dynamics365/unified-operations/financials/localizations/apac-chn-negative-debits-credits)
+-   [Tuoterakennevertailu](../../financials/localizations/apac-chn-bom-comparison.md)
+-   [Kiinalaiset tositteet](../../financials/localizations/apac-chn-vouchers.md)
+-   [Verointegroinnin määritys](../../financials/localizations/apac-chn-tax-integration.md)
+    -   [Myyntilaskujen ALV – usein kysytyt kysymykset](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+    -   [Käyttöomaisuuden poistomenetelmät](../../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md)
+-   [Kiinalaisen Golden Tax -tietoyksikön tuonti](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
+-   [Kuukausittainen keskiarvo -kustannusmalli](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
+-   [Varaston päätilien kirjaus toimipaikoittain](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
+-   [Kirjanpitotilien debet- ja kredit-summien näyttäminen](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
 ### <a name="the-czech-republic"></a>Tšekin tasavalta
 
--   [Hyvityslaskun käteisalennus](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount)
--   [Poiston pyöristys](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding)
--   [Tšekin tasavallan käyttöomaisuuden luovutuksen puolivuotispoisto](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
--   [Poistojen keskeytykset](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
--   [Tšekin tasavallan käyttöomaisuuden poistomenetelmät](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation)
--   [Käyttöomaisuuserän esihankinnan kirjaus](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
--   [Tšekin tasavallan ALV-ilmoitus](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details)
--   [Arvonlisäveroilmoitus ](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions)
--   [Kausikirjauskansioiden jaetut kaudet](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
--   [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
--   [Raporttien ja asiakirjojen summien esitysmuodon päivittäminen](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms)
+-   [Hyvityslaskun käteisalennus](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
+-   [Poiston pyöristys](../../financials/localizations/emea-cze-depreciation-rounding.md)
+-   [Tšekin tasavallan käyttöomaisuuden luovutuksen puolivuotispoisto](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
+-   [Poistojen keskeytykset](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
+-   [Tšekin tasavallan käyttöomaisuuden poistomenetelmät](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
+-   [Käyttöomaisuuserän esihankinnan kirjaus](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
+-   [Tšekin tasavallan ALV-ilmoitus](../../financials/localizations/emea-cze-vat-statement-details.md)
+-   [Arvonlisäveroilmoitus ](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
+-   [Kausikirjauskansioiden jaetut kaudet](../../financials/localizations/emea-create-post-periodic-journals.md)
+-   [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
+-   [Raporttien ja asiakirjojen summien esitysmuodon päivittäminen](../../financials/localizations/emea-amount-printing-forms.md)
 
 ### <a name="estonia"></a>Viro
 
--   [Viron ALV-ilmoituksen tiedot](/dynamics365/unified-operations/financials/localizations/emea-est-vat-statement-details)
--   [Käyttöomaisuuden luovutus](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+-   [Viron ALV-ilmoituksen tiedot](../../financials/localizations/emea-est-vat-statement-details.md)
+-   [Käyttöomaisuuden luovutus](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
 ### <a name="europe"></a>Eurooppa
-- [Ennakonvaraajat](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
-- [Ennakkovaraajan tapahtumat](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions)
-- [Erityishinnoittelu](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice)
-- [Pankkitilin täsmäytys](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation)
-- [Korjaava laskutus](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice)
-- [Kausikirjauskansioiden luominen ja kirjaaminen](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
-- [Myyntitilausten laskutunnusten muokkaaminen](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
-- [EU-saapumistodistukset](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
-- [EU-myyntiluettelon raportointi](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
-- [Vaihtokurssioikaisut](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
-- [Maksutapojen tiedostomuodot](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
-- [Viron ja Liettuan käyttöomaisuuden luovutus](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
-- [ISO20022-tiedostojen tuominen](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats)
-- [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
-- [Varastokirjauskansioiden raportit](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
-- [Laskun ja pakkausluettelon numerointi Latviassa ja Liettuassa](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
-- [Laskun kirjoittamisen määräajat](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
-- [OIOUBL-standardit](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
-- [Maksuluetteloraportti](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
-- [Käteiskassa](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
-- [Käyttöomaisuuserän esihankinnan kirjaus](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
-- [Postinumerot](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
-- [Rekisteröintitunnukset](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
-- [Käänteinen veloitus](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge)
-- [SEPA (Single Euro Payments Area) -tilisiirron yleiskatsaus](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
-- [SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
-- [Asiakkaan ja toimittajan kompensaation määrittäminen](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
-- [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
-- [Storno-kirjanpito](/dynamics365/unified-operations/financials/localizations/emea-storno)
-- [Verodirektiivit](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
-- [Raporttien ja asiakirjojen summien esitysmuodon päivittäminen](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
-- [ALV-vaihtokurssit](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
-- [Itä-Euroopan tapahtumien ALV-rekisteröinti](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions)
-- [ALV-raportointi](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
-- [Tapahtumien näyttäminen tilitettäessä](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
+- [Ennakonvaraajat](../../financials/localizations/emea-advance-holders.md)
+- [Ennakkovaraajan tapahtumat](../../financials/localizations/emea-advance-holders-transactions.md)
+- [Erityislaskutus](../../financials/localizations/emea-advance-invoice.md)
+- [Pankkitilin täsmäytys](../../financials/localizations/emea-bank-reconciliation.md)
+- [Korjaava laskutus](../../financials/localizations/emea-corrective-invoice.md)
+- [Kausikirjauskansioiden luominen ja kirjaaminen](../../financials/localizations/emea-create-post-periodic-journals.md)
+- [Myyntitilausten laskutunnusten muokkaaminen](../../financials/localizations/emea-edit-invoice-id-sales-orders.md)
+- [EU-saapumistodistukset](../../financials/localizations/emea-entry-certificates.md)
+- [EU-myyntiluettelon raportointi](../../financials/localizations/emea-eu-sales-list.md)
+- [Vaihtokurssioikaisut](../../financials/localizations/emea-exchange-rate-adjustments.md)
+- [Maksutapojen tiedostomuodot](../../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
+- [Viron ja Liettuan käyttöomaisuuden luovutus](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+- [ISO20022-tiedostojen tuominen](../../financials/localizations/emea-ISO20022-file-formats.md)
+- [Intrastat](../../financials/localizations/emea-intrastat.md)
+- [Varastokirjauskansioiden raportit](../../financials/localizations/emea-set-up-report-inventory-journal-names.md)
+- [Laskun ja pakkausluettelon numerointi Latviassa ja Liettuassa](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
+- [Laskun kirjoittamisen määräajat](../../financials/localizations/emea-invoice-issue-deadline.md)
+- [OIOUBL-standardit](../../financials/localizations/emea-oioubl-standards-electronic-invoicing.md)
+- [Maksuluetteloraportti](../../financials/localizations/emea-eur-payment-slip-report-giro.md)
+- [Käteiskassa](../../financials/localizations/emea-petty-cash.md)
+- [Käyttöomaisuuserän esihankinnan kirjaus](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
+- [Postinumerot](../../financials/localizations/emea-import-create-postal-codes-manually.md)
+- [Rekisteröintitunnukset](../../financials/localizations/emea-registration-ids.md)
+- [Käänteinen veloitus](../../financials/localizations/emea-reverse-charge.md)
+- [SEPA (Single Euro Payments Area) -tilisiirron yleiskatsaus](../../financials/accounts-payable/sepa-credit-transfer.md)
+- [SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](../../financials/accounts-receivable/sepa-direct-debit-overview.md)
+- [Asiakkaan ja toimittajan kompensaation määrittäminen](../../financials/localizations/emea-compensation-customer-vendor-transactions.md)
+- [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
+- [Storno-kirjanpito](../../financials/localizations/emea-storno.md)
+- [Verodirektiivit](../../financials/localizations/emea-tax-directives.md)
+- [Raporttien ja asiakirjojen summien esitysmuodon päivittäminen](../../financials/localizations/emea-amount-printing-forms.md) 
+- [ALV-vaihtokurssit](../../financials/localizations/emea-vat-exchange-rate.md)
+- [Itä-Euroopan tapahtumien ALV-rekisteröinti](../../financials/localizations/emea-vat-register-transactions.md)
+- [ALV-raportointi](../../financials/localizations/emea-vat-reporting.md)
+- [Tilitettävien tapahtumien näyttäminen](../../financials/localizations/emea-transactions-settlement-form.md)
 
 ### <a name="france"></a>Ranska
--   [Lasku- ja tositenumerot aikajärjestyksessä](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
--   [Verotusetuun perustuva poisto Ranskassa](/dynamics365/unified-operations/financials/localizations/emea-fra-derogatory-depreciation)
--   [NAF-koodit ja siret-numerot](/dynamics365/unified-operations/financials/localizations/emea-fra-naf-codes-siret-numbers)
--   [Erääntyneiden asiakasmaksujen rangaistukset Ranskassa](/dynamics365/unified-operations/financials/localizations/emea-fra-apply-penalty-customer-payment-past-due)
--   [Kokonaissumman palautustekstin tulostaminen myyntilaskuun](/dynamics365/unified-operations/financials/localizations/emea-fra-print-lump-sum-recovery-text)
--   [RB/SL-poisto](/dynamics365/unified-operations/financials/localizations/emea-fra-rbsl-depreciation)
+-   [Lasku- ja tositenumerot aikajärjestyksessä](../../financials/localizations/emea-fra-chronological-invoices-vouchers.md)
+-   [Verotusetuun perustuva poisto Ranskassa](../../financials/localizations/emea-fra-derogatory-depreciation.md)
+-   [NAF-koodit ja siret-numerot](../../financials/localizations/emea-fra-naf-codes-siret-numbers.md)
+-   [Erääntyneiden asiakasmaksujen rangaistukset Ranskassa](../../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md)
+-   [Kokonaissumman palautustekstin tulostaminen myyntilaskuun](../../financials/localizations/emea-fra-print-lump-sum-recovery-text.md)
+-   [RB/SL-poisto](../../financials/localizations/emea-fra-rbsl-depreciation.md)
 
 #### <a name="public-sector"></a>Julkinen sektori
-   -   [Julkisen sektorin sitoumukset](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector)
-   -   [Julkisen sektorin mandats de paiement](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement)
-   -   [Osto ja hankinta](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-   -   [Julkisen sektorin kirjanpito](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting)
-   -   [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
-   -   [Toimittajan laskun maksun pidot](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
+   -   [Julkisen sektorin sitoumukset](../../financials/localizations/emea-fra-commitments-public-sector.md)
+   -   [Julkisen sektorin mandats de paiement](../../financials/localizations/emea-fra-mandats-de-paiement.md)
+   -   [Hankinta](../../financials/localizations/emea-fra-procurement-sourcing-public-sector.md)
+   -   [Julkisen sektorin kirjanpito](../../financials/localizations/emea-fra-public-sector-accounting.md)
+   -   [Titres de recette](../../financials/localizations/emea-fra-titres-de-recette-public-sector.md)
+   -   [Toimittajan laskun maksun pidot](../../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md)
 
 ### <a name="germany"></a>Saksa
--   [Lisähankintojen poisto](/dynamics365/unified-operations/financials/localizations/emea-deu-additional-acquisition-depreciation)
--   [Saksalainen tarkistustiedosto (GDPdU/GoBD)](/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export)
--   [Saksalainen kirjauskansioluettelon raportti](/dynamics365/unified-operations/financials/localizations/emea-deu-journal-list-report)
--   [Erillisen etiketin tulostaminen myynnistä peräisin oleville hyvityslaskuille](/dynamics365/unified-operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
+-   [Lisähankintojen poisto](../../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
+-   [Saksalainen tarkistustiedosto (GDPdU/GoBD)](../../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
+-   [Saksalainen kirjauskansioluettelon raportti](../../financials/localizations/emea-deu-journal-list-report.md)
+-   [Erillisen etiketin tulostaminen myynnistä peräisin oleville hyvityslaskuille](../../financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md)
 
 ### <a name="hungary"></a>Unkari
 
--   [Käyttöomaisuuden poistomenetelmät](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods) 
--   [Käyttöomaisuuden siirto varastoon](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-asset-to-inventory)
--   [Kustannukseltaan vähäinen käyttöomaisuus](/dynamics365/unified-operations/financials/localizations/emea-hun-low-cost-fixed-assets)
+-   [Käyttöomaisuuden poistomenetelmät](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
+-   [Käyttöomaisuuden siirto varastoon](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+-   [Kustannukseltaan vähäinen käyttöomaisuus](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 
 ### <a name="italy"></a>Italia
 
--   [Italian mustan listan raportti](/dynamics365/unified-operations/financials/localizations/emea-ita-black-list-report)
--   [ALV-ilmoituksen tiedot](/dynamics365/unified-operations/financials/localizations/emea-ita-vat-statements-details)
--   [Tapahtumien ennakkopidätyspäivämäärä](/dynamics365/unified-operations/financials/localizations/emea-ita-competence-date)
--   [Käyttöomaisuuden manuaalinen poisto](/dynamics365/unified-operations/financials/localizations/emea-ita-depreciation-of-fixed-assets)
--   [Pakkausluettelon päivämäärän tarkastus italialaisissa laskuissa](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
--   [Italialaiset arvonlisäverokirjat](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books)
--   [Julkishallinnon kirjoittamien laskujen jaettu maksu](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
--   [Ennakonpidätys](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax)
+-   [Italian mustan listan raportti](../../financials/localizations/emea-ita-black-list-report.md)
+-   [ALV-ilmoituksen tiedot](../../financials/localizations/emea-ita-vat-statements-details.md)
+-   [Tapahtumien ennakkopidätyspäivämäärä](../../financials/localizations/emea-ita-competence-date.md)
+-   [Käyttöomaisuuden manuaalinen poisto](../../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+-   [Pakkausluettelon päivämäärän tarkastus italialaisissa laskuissa](../../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
+-   [Italialaiset arvonlisäverokirjat](../../financials/localizations/emea-ita-fiscal-books.md)
+-   [Julkishallinnon kirjoittamien laskujen jaettu maksu](../../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
+-   [Ennakonpidätys](../../financials/localizations/emea-ita-withholding-tax.md)
 
 ### <a name="japan"></a>Japani
 
--  [Toimittajien kattamat pankkimaksut](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
--  [Konsolidoidut laskut](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
--  [Käyttöomaisuuden kohdistussäännöt](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
--  [Tasan jaettu poistomenetelmä](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
--  [Käyttöomaisuuden poisto](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
--  [Käyttöomaisuuden arvonalennuksen hallinta rahavirtaa tuottavassa yksikössä](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
--  [Postinumeroiden tuonti](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes)
--  [Käyttöomaisuuden käytöstäpoistositoumuksen määrittäminen](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
--  [Käyttöomaisuuden vähennysvientien määrittäminen](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
--  [Toimittajalle maksaminen hyväksymällä vekseli](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
--  [Progressiivisen ennakonpidätyksen laskenta](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
+-  [Toimittajien kattamat pankkimaksut](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
+-  [Konsolidoidut laskut](../../financials/localizations/apac-jpn-consolidate-invoices.md)
+-  [Käyttöomaisuuden kohdistussäännöt](../../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md)
+-  [Tasan jaettu poistomenetelmä](../../financials/localizations/apac-jpn-equally-divided-depreciation-method.md)
+-  [Käyttöomaisuuden poisto](../../financials/localizations/apac-jpn-fixed-asset-depreciation.md)
+-  [Käyttöomaisuuden arvonalennuksen hallinta rahavirtaa tuottavassa yksikössä](../../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md)
+-  [Postinumeroiden tuonti](../../financials/localizations/apac-jpn-import-postal-codes.md)
+-  [Käyttöomaisuuden käytöstäpoistositoumuksen määrittäminen](../../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md)
+-  [Käyttöomaisuuden vähennysvientien määrittäminen](../../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md)
+-  [Toimittajalle maksaminen hyväksymällä vekseli](../../financials/localizations/apac-jpn-endorse-bill-of-exchange.md)
+-  [Progressiivisen ennakonpidätyksen laskenta](../../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md)
 
 ### <a name="latvia"></a>Latvia
 
--   [Käyttöomaisuuden kirjanpito verotusta varten](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting)
--   [Käyttöomaisuuden sijaintimuutosten seuranta](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change)
--   [Laskun ja pakkausluettelon numerointi](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
--   [Luonnonvarojen verotusraportti](/dynamics365/unified-operations/financials/localizations/emea-lva-tax-natural-resources)
--   [ALV-ilmoituksen tiedot](/dynamics365/unified-operations/financials/localizations/emea-lva-vat-statement-details)
+-   [Käyttöomaisuuden kirjanpito verotusta varten](../../financials/localizations/emea-lva-fixed-assets-accounting.md)
+-   [Käyttöomaisuuden sijaintimuutosten seuranta](../../financials/localizations/emea-lva-fixed-assets-location-fields-change.md)
+-   [Laskun ja pakkausluettelon numerointi](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
+-   [Luonnonvarojen verotusraportti](../../financials/localizations/emea-lva-tax-natural-resources.md)
+-   [ALV-ilmoituksen tiedot](../../financials/localizations/emea-lva-vat-statement-details.md)
 
 ### <a name="lithuania"></a>Liettua
 
--   [Käyttöomaisuuden korjauserittely](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
--   [Laskun ja pakkausluettelon numerointi](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
--   [ALV-ilmoituksen tiedot](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details)
+-   [Käyttöomaisuuden korjauserittely](../../financials/localizations/emea-ltu-fixed-asset-repair-statement.md)
+-   [Laskun ja pakkausluettelon numerointi](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
+-   [ALV-ilmoituksen tiedot](../../financials/localizations/emea-ltu-vat-statement-details.md)
 
 ### <a name="mexico"></a>Meksiko
 
--   [DIOT-ilmoitus](/dynamics365/unified-operations/financials/localizations/latam-mex-diot-declaration-statement)
--   [Sähköiset kirjanpitoilmoitukset](/dynamics365/unified-operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements)
--   [Inflaatio-oikaisuilmoituksen raportti](/dynamics365/unified-operations/financials/localizations/latam-mex-adjustment-inflation-declaration-report)
--   [ISR-ilmoituksen raportti](/dynamics365/unified-operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes)
--   [Sähköiset laskut (CFDI)](/dynamics365/unified-operations/financials/localizations/latam-mex-CFDI-electronic-invoices)
+-   [DIOT-ilmoitus](../../financials/localizations/latam-mex-diot-declaration-statement.md)
+-   [Sähköiset kirjanpitoilmoitukset](../../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md)
+-   [Inflaatio-oikaisuilmoituksen raportti](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
+-   [ISR-ilmoituksen raportti](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
+-   [Sähköiset laskut (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
    
 ### <a name="malaysia"></a>Malesia
 
--   [GST-vero](/dynamics365/unified-operations/financials/localizations/apac-mys-gst)
+-   [GST-vero](../../financials/localizations/apac-mys-gst.md)
 
 ### <a name="netherlands"></a>Alankomaat
 
--   [Laskun kirjoittamisen määräaika](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
+-   [Laskun kirjoittamisen määräaika](../../financials/localizations/emea-invoice-issue-deadline.md)
 
 ### <a name="norway"></a>Norja
 
--   [Nets-tuontimuoto](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format)
--   [ALV-ilmoitus](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report)
+-   [Nets-tuontimuoto](../../financials/localizations/emea-nor-nets-import-format.md)
+-   [ALV-ilmoitus](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 
 ### <a name="poland"></a>Puola
 
--   [Rivialennusten laskenta yksikköhinnasta](/dynamics365/unified-operations/financials/localizations/emea-pol-line-discount-calculation-from-unit-price)
--   [Korjaushuomautukset](/dynamics365/unified-operations/financials/localizations/emea-pol-correction-notes)
--   [Myyntilaskun kaksoiskappaleiden numerointi](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering)
--   [Käyttöomaisuuden poisto](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-assets-depreciation)
--   [Käyttöomaisuuden luovutus](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension)
--   [Palautettavissa oleva pakkaus](/dynamics365/unified-operations/financials/localizations/emea-pol-returnable-packages)
--   [Arvonlisäveroraportit](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-tax-reports)
--   [Standard Audit File (SAF) -tiedosto](/dynamics365/unified-operations/financials/localizations/emea-pol-standard-audit-file-saf)
--   [Liikevaihto ja saldoilmoitus](/dynamics365/unified-operations/financials/localizations/emea-pol-turnover-balances-statement)
+-   [Rivialennusten laskenta yksikköhinnasta](../../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
+-   [Korjaushuomautukset](../../financials/localizations/emea-pol-correction-notes.md)
+-   [Myyntilaskun kaksoiskappaleiden numerointi](../../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md)
+-   [Käyttöomaisuuden poisto](../../financials/localizations/emea-pol-fixed-assets-depreciation.md)
+-   [Käyttöomaisuuden luovutus](../../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md)
+-   [Palautettavissa oleva pakkaus](../../financials/localizations/emea-pol-returnable-packages.md)
+-   [Arvonlisäveroraportit](../../financials/localizations/emea-pol-sales-tax-reports.md)
+-   [Standard Audit File (SAF) -tiedosto](../../financials/localizations/emea-pol-standard-audit-file-saf.md)
+-   [Liikevaihto ja saldoilmoitus](../../financials/localizations/emea-pol-turnover-balances-statement.md)
 
 ### <a name="saudi-arabia"></a>Saudi-Arabia
 
--   [Zakat-raportointi](/dynamics365/unified-operations/financials/localizations/emea-sau-zakat-reporting)
+-   [Zakat-raportointi](../../financials/localizations/emea-sau-zakat-reporting.md)
 
 ### <a name="singapore"></a>Singapore
 
--   [Singaporen GST-05-raportin luonti](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report)
+-   [Singaporen GST-05-raportin luonti](../../financials/localizations/apac-sgp-generate-gst-05-report.md)
 
 ### <a name="spain"></a>Espanja
 
--   [Espanjalaiset vekselivaihtoehdot](/dynamics365/unified-operations/financials/localizations/emea-esp-bill-of-exchange-options)
--   [Käteisalennus otettu käyttöön laskussa -parametri](/dynamics365/unified-operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
--   [Suoritusperusteinen vero](/dynamics365/unified-operations/financials/localizations/emea-esp-conditional-sales-tax)
--   [Käyttöomaisuuden uudelleenarvostusryhmät](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
--   [Yhteisön sisäinen ALV](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat)
--   [Kerta-asiakkaat](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
--   [Tulosta sekit Espanjan asettelun avulla](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout)
--   [Espanjalaiset velkakirjojen asetukset](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options)
--   [Osto- ja myyntisyklit](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle)
--   [Erikoisviennit ja avaavat taseet](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain)
--   [Laskutustilin kirjanpitotietojen käyttö](/dynamics365/unified-operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
+-   [Espanjalaiset vekselivaihtoehdot](../../financials/localizations/emea-esp-bill-of-exchange-options.md)
+-   [Käteisalennus otettu käyttöön laskussa -parametri](../../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
+-   [Suoritusperusteinen vero](../../financials/localizations/emea-esp-conditional-sales-tax.md)
+-   [Käyttöomaisuuden uudelleenarvostusryhmät](../../financials/localizations/emea-esp-fixed-asset-group-revaluation.md)
+-   [Yhteisön sisäinen ALV](../../financials/localizations/emea-esp-intra-community-vat.md)
+-   [Kerta-asiakkaat](../../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
+-   [Tulosta sekit Espanjan asettelun avulla](../../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
+-   [Espanjalaiset velkakirjojen asetukset](../../financials/localizations/emea-esp-promissory-note-options.md)
+-   [Osto- ja myyntisyklit](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
+-   [Erikoisviennit ja avaavat taseet](../../financials/localizations/emea-esp-opening-sheets-spain.md)
+-   [Laskutustilin kirjanpitotietojen käyttö](../../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
 
 ### <a name="sweden"></a>Ruotsi
 
--   [Ruotsalaiset maksujen tuontimuodot](/dynamics365/unified-operations/financials/localizations/emea-swe-payment-formats-import)
--   [Ruotsin kassakoneet](/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers)
+-   [Ruotsalaiset maksujen tuontimuodot](../../financials/localizations/emea-swe-payment-formats-import.md)
+-   [Ruotsin kassakoneet](../../retail/localizations/emea-swe-cash-registers.md)
 
 ### <a name="switzerland"></a>Sveitsi
 
--   [ESR-asiakasmaksujen tuonti](/dynamics365/unified-operations/financials/localizations/emea-che-esr-customer-payments-import)
+-   [ESR-asiakasmaksujen tuonti](../../financials/localizations/emea-che-esr-customer-payments-import.md)
 
 ### <a name="thailand"></a>Thaimaa
 
--   [Varastokorttiraportit](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports)
--   [Korvaus-/oikaisuverolasku – Thaimaa](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices)
--   [Toteutumaton ALV](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat)
--   [Ennakonpidätys](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax)
+-   [Varastokorttiraportit](../../financials/localizations/apac-tha-stock-card-reports.md)
+-   [Korvaus-/oikaisuverolasku – Thaimaa](../../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md)
+-   [Toteutumaton ALV](../../financials/localizations/apac-tha-unrealized-vat.md)
+-   [Ennakonpidätys](../../financials/localizations/apac-tha-withholding-tax.md)
 
 ### <a name="united-kingdom"></a>Iso-Britannia
 
--   [Ison-Britannian rakennustuotannon malli](/dynamics365/unified-operations/financials/localizations/emea-gbr-cis-construction-industry-scheme)
+-   [Ison-Britannian rakennustuotannon malli](../../financials/localizations/emea-gbr-cis-construction-industry-scheme.md)
 
 ### <a name="united-states"></a>Yhdysvallat
 
--   [Julkisen sektorin 1099-lomake](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector)   
--   [I-9-lomakkeen vahvistus](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
--   [Vuoden lopun 1099-raportit](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
--   [Palkanlaskenta](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)
--   [Julkinen sektori](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality)
+-   [Julkisen sektorin 1099-lomake](../../financials/localizations/noam-usa-form-1099-public-sector.md)   
+-   [I-9-lomakkeen vahvistus](../../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
+-   [Vuoden lopun 1099-raportit](../../financials/localizations/noam-usa-year-end-1099-reporting.md)
+-   [Palkanlaskenta](../../fin-and-ops/hr/localizations/noam-usa-payroll.md)
+-   [Julkinen sektori](../../financials/public-sector/public-sector-functionality.md)
 
 
 
