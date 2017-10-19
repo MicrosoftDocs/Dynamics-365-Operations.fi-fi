@@ -451,6 +451,7 @@
 ### [Jakomallit](dev-tools/model-split.md)
 ### [Mallien välisten riippuvuuksien ratkaisu valtuutettujen viittausten avulla](migration-upgrade/delegates-migration.md)
 
+
 ## Päivitys viimeisimpään päivitykseen
 ### [Uusinta päivitystä koskeva päivitysprosessi](migration-upgrade/upgrade-latest-update.md)
 ### [Käyttöikäkäytäntö](migration-upgrade/versions-update-policy.md)
@@ -511,6 +512,8 @@
 ## [Mukautettujen liiketoimintaprosessien lataaminen palvelimeen](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Valvonta ja diagnostiikka ](lifecycle-services/monitoring-diagnostics.md)
 ## [Omaisuuskirjasto](lifecycle-services/asset-library.md)
+## [Microsoft Dynamics 365 – käännöspalvelun yleiskuvaus](lifecycle-services/translation-service-overview.md)
+### [Microsoft Dynamics 365 – käännöspalvelun käyttöopas  ](lifecycle-services/use-translation-service.md)
 
 ## Dynamics AX 2012 Lifecycle Servicesin ominaisuudet
 ### Käyttöönotto
