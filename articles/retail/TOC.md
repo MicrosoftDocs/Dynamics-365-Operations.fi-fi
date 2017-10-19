@@ -1,5 +1,8 @@
 # [Tervetuloa Dynamics 365 for Retailiin](index.md)
 
+# Aloittaminen
+## [Uudet ja muuttuneet ominaisuudet](get-started/whats-new.md)
+
 # Maksut
 ## [Maksutavat](payment-methods.md)
 ## [Luottokorttien määritys, varmennus ja tietojen tarkistus](../financials/accounts-receivable/credit-card-authorizations.md)
@@ -173,8 +176,9 @@
 ### [Retail Modern POS:n määritykset ja asentaminen](retail-modern-pos-device-activation.md)
 #### [Vähittäismyynnin tilien ja laitteiden hallinta pääkonttorista](set-up-activation-accounts-validate-devices-hq.md)
 #### [Retail POS -laitteen aktivointi](dev-itpro/retail-device-activation.md)
-#### [Retail Cloud POS:n suojaaminen](dev-itpro/secure-retail-cloud-pos.md)
+#### [Retail-pilvimyyntipisteen suojaaminen](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Stationin määritykset ja asentaminen](retail-hardware-station-configuration-installation.md)
+### [Retail-itsepalvelukomponenttien joukkokäyttöönotto](dev-itpro/retail-mass-deployment.md)
 ### [Retail-komponenttien diagnostiikka- ja vianmääritystapahtumat](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
 ### [Käyttöönotettavan paketin käyttäminen](../dev-itpro/deployment/apply-deployable-package-system.md)
 
