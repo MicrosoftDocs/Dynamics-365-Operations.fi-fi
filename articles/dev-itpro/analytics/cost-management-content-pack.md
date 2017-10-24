@@ -16,13 +16,13 @@ ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fb5c39a65ea59acda05b0828f84bfaea4ad75062
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -52,7 +52,7 @@ Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöö
 CostStatementCache taulukko on ensisijainen tietolähde kohteelle CostAggregatedCostStatementEntryEntity. tietojoukon välimuistin kehys hallitsee tätä taulua. Oletusarvon mukaan taulukko päivitetään 24 tunnin välein, mutta voit ottaa käyttöön manuaaliset päivitykset tietojen välimuistin määrityksissä. Voit sitten tehdä manuaalisen päivityksen **Kustannushallinta**- tai **Kustannusanalyyis** -työtilassa. Kun CostStatementCache-päivitys on suoritettu, sinun on päivitettävä Power BI.com -sivustolla OData-yhteys nähdäksesi päivitetyt tiedot sivustolla. Varianssin (osto, tuotanto) mitat tässä Power BI -sisällössä pätevät vain nimikkeisiin, jotka arvioidaan varaston vakiokustannuksen menetelmällä. Tuotannon varianssi lasketaan aktiivisten kustannusten ja toteutuneiden kustannusten välisenä erona. Tuotannon varianssi lasketaan, kun tuotantotilauksen tilana on **Päättynyt**. Saat lisätietoja tuotannon varianssin tyypeistä ja siitä, miten kukin tyyppi lasketaan, ohjeaiheesta [Valmiin tuotantotilauksen varianssien analysointi](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-**Kustannushallinnan** Power BI -sisältöä on saatavana osoitteessa PowerBI.com. Lisätietoja Microsoft Dynamics 365 for Finance and Operationsin tietojen liittämisestä ja lataamisesta on artikkelissa [Power BI -sisällön hakeminen PowerBI.com-sivustosta](power-bi-home-page.md).
+**Kustannushallinnan** Power BI -sisältöä on saatavana osoitteessa PowerBI.com. Lisätietoja Microsoft Dynamics 365 for Finance and Operationsin tietojen liittämisestä ja lataamisesta on artikkelissa [Power BI -sisällön käyttäminen PowerBI.com-sivustossa](power-bi-home-page.md)
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 Sisältö sisältää joukon raporttisivuja. Jokainen sivu koostuu joukosta mittareita, jotka ovat visualisoitu kaavioiden, ruutujen ja taulukoiden muodossa. Seuraavassa taulukossa on yleiskatsaus visualisoinneista **kustannushallinnan** Power BI -sisällössä.

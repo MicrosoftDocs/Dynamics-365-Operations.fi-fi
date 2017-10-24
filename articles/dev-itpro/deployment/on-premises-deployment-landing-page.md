@@ -18,13 +18,15 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 4399dc7374ae11f2eca3add37b60c50574dfad9d
+ms.sourcegitcommit: 61395e0e57eb02aaa1c95a7dbd9c15082b822701
+ms.openlocfilehash: 15992b1666caea21cdcf440fefcf65ff18111801
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/05/2017
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Paikallisen käyttöönoton saapumissivu
+
+[!include[banner](../includes/banner.md)]
 
 Voit ottaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin (paikallinen) käyttöön. Kun valitset paikallisen käyttöönottotyypin, järjestelmävaatimukset, laitteiden koko ja toiminnot poikkeavat pilvikäyttöönotosta. Tässä ohjeaiheessa on linkkejä sisältöön, jossa on paikallisia käyttöönottoja koskevia tietoja.
 
@@ -32,10 +34,10 @@ Voit ottaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
 
 ## <a name="get-started"></a>Aloittaminen
 - [(Paikallisen) Dynamics 365 for Finance and Operations, Enterprise Editionin yleiskatsaus](on-premises-overview.md)
-- [Paikallisten käyttöönottojen järjestelmävaatimukset](../get-started/system-requirements-on-prem.md)
-- [Laitteiston koon määrittäminen paikallisissa ympäristöissä](../get-started/hardware-sizing-on-premises-environments.md)
+- [Paikallisten käyttöönottojen järjestelmävaatimukset](../../fin-and-ops/get-started/system-requirements-on-prem.md)
+- [Laitteiston koon määrittäminen paikallisissa ympäristöissä](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Verkkopalvelun ja paikallisen ohjelmiston käyttöikäkäytäntö](../migration-upgrade/versions-update-policy.md)
-- [(Paikallisen) Dynamics 365 for Finance and Operations, Enterprise Editionin ostaminen](../get-started/purchase-on-premises.md)
+- [(Paikallisen) Dynamics 365 for Finance and Operations, Enterprise Editionin ostaminen](../../fin-and-ops/get-started/purchase-on-premises.md)
 
 ## <a name="onboard"></a>Onboard
 - [Paikallisen Lifecycle Services -projektin luominen](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
@@ -44,14 +46,14 @@ Voit ottaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
 - [Mukautettujen mallien kehittäminen ja käyttöönottaminen paikallisissa ympäristöissä](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Paikallinen käyttöönoton käyttäminen
-- [Asiakirjanhallinnan määrittäminen](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management)
+- [Asiakirjanhallinnan määrittäminen](../../fin-and-ops/organization-administration/configure-document-management.md)
 - [Sähköisen raportoinnin konfiguraatioiden tuonti](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Asiakirjan luonti-, julkaisu- ja tulostusominaisuudet paikallisissa käyttöönotoissa](../analytics/printing-capabilities-on-premises.md)
 - [Teknisen tuen määrittäminen](../lifecycle-services/support-experience.md)
 - [Asiakasohjelman internet-yhteyden vianmääritys](../user-interface/client-disconnected.md)
 
 ## <a name="other-resources"></a>Muut resurssit
-- [Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa](../get-started/features-not-implemented-on-prem.md)
+- [Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Vanhentuneet ominaisuudet](../migration-upgrade/deprecated-features.md)
  
 

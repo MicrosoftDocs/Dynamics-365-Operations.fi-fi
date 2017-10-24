@@ -16,13 +16,13 @@ ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a8739f426c401aacbab56179bad429a231060f57
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fade9e2acdb94daa6a908d949c578fd7ed439882
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -53,7 +53,7 @@ Voit ryhmitellä raporttimäärityksiä luodaksesi useita raportteja samanaikais
 
 1.  Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
 2.  Avaa uusi raporttiryhmä katseluohjelman ikkunassa valitsemalla **Tiedosto**-valikossa **Uusi** &gt; **Raporttiryhmän määritys**. Voit vaihtoehtoisesti napsauttaa työkalurivillä **Raporttiryhmä**-painiketta ![Raporttiryhmä](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Raporttiryhmä").
-3.  Valitse **Raporttiryhmä**-välilehti. Ohittaaksesi yksittäisiä raportin määrityksiä koskevat tiedot tätä raporttia luotaessa, valitse **Ohita yritys-, tiedot- ja päivä-määritykset yksittäisten raporttimääritysten** valintaruuduissa. Yrityksen nimi, tietojen taso, alustava asetus ja päivämäärätiedot täytetään automaattisesti, mutta voit tehdä päivityksiä.
+3.  Valitse **Raporttiryhmä**-välilehti. Ohittaaksesi yksittäisiä raportin määrityksiä koskevat tiedot tätä raporttia luotaessa, valitse **Ohita yritys-, tiedot- ja päivä-määritykset yksittäisissä raporttimäärityksissä** -valintaruutu. Yrityksen nimi, tietojen taso, alustava asetus ja päivämäärätiedot täytetään automaattisesti, mutta voit tehdä päivityksiä.
 4.  Jos haluat luoda useita raportointivaluutan näyttäviä raportteja, valitse **Sisällytä kaikki raportointivaluutat** -valintaruutu. Voit sitten käyttää useita näkymiä valitsemalla **Valuutta**-painikkeen verkkokatseluohjelmassa, kun katsot raporttia.
 5.  Valitse raporttiryhmään sisällytettävät raportit valitsemalla **Ryhmän raportit** -kentässä **Lisää**. Jos haluat valita useita raportteja **Lisää**-valintaikkunassa, pidä Ctrl-näppäintä painettuna valitessasi raportteja. Kun olet valinnut raportit, valitse **OK**.
 6.  Tallenna uusi raporttiryhmä valitsemalla **Tiedosto** &gt; **Tallenna**.
@@ -106,7 +106,7 @@ Seuraavassa taulukossa käsitellään **Raporttiryhmä**-välilehden ohjausobjek
 <td>Erittelytaso</td>
 <td>Määritä raporttien yksityiskohtien taso.
 <ul>
-<li><strong>Taloushallinto</strong>− Korkean tason yhteenvetoraportti. Et voi porautua tileihin ja dimensioihin lukuun ottamatta niitä tilejä ja dimensioita, jotka on lisätty raportointipuun kautta.</li>
+<li><strong>Taloudellinen</strong> – Korkean tason yhteenvetoraportti. Et voi porautua tileihin ja dimensioihin lukuun ottamatta niitä tilejä ja dimensioita, jotka on lisätty raportointipuun kautta.</li>
 <li><strong>Rahoitus &amp; Tili</strong>− Raportti, joka sisältää korkean tason yhteenveto- ja tilitietoja.</li>
 <li><strong>Rahoitus, Tili &amp; Tapahtuma</strong>− Raportti, joka sisältää korkean tason yhteenveto- ja tapahtumatietoja.</li>
 </ul></td>
@@ -115,14 +115,14 @@ Seuraavassa taulukossa käsitellään **Raporttiryhmä**-välilehden ohjausobjek
 <td>Alustava</td>
 <td>Määritä raportteihin sisältyvät tehtävätyypit.
 <ul>
-<li><strong>Vain kirjatut tapahtumat</strong> – sisällytä vain ne tapahtumat ja saldot, jotka on kirjattu taloushallinnon tietoihin.</li>
-<li><strong>Kirjatut ja kirjaamattomat tapahtumat</strong> – sisällytä kaikki taloushallinnon tietoihin merkityt ja kirjat tapahtumat ja saldot.</li>
-<li><strong>Vain kirjaamattomat tapahtumat</strong> – sisällytä taloushallinnon tietoihin merkityt mutta vielä kirjaamattomat tapahtumat.</li>
+<li><strong>Vain kirjatut aktiviteetit</strong> – Sisällytä vain ne tapahtumat ja saldot, jotka kirjataan taloushallinnon tietoihin.</li>
+<li><strong>Kirjatut ja kirjaamattomat aktiviteetit</strong> – Sisällytä kaikki ne tapahtumat ja saldot, jotka syötetään ja kirjataan taloushallinnon tietoihin.</li>
+<li><strong>Vain kirjaamattomat aktiviteetit</strong> – Sisällytä vain ne tapahtumat ja saldot, jotka syötetään mutta joita ei kirjata taloushallinnon tietoihin.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Sisällytetään kaikki raportointivaluutat</td>
-<td>Mahdolliset Microsoft Dynamics ERP -järjestelmässä määritetyt lisäraportointivaluutat on lueteltu täällä. Valitsemalla tämän valintaruudun voit luoda lisäraportteja annetuissa valuutoissa. Voit tarkastella raportteja verkkokatseluohjelmassa napsauttamalla <strong>Valuutta</strong>-painiketta ja valitsemalla valuutan.</td>
+<td>Mahdolliset Microsoft Dynamics ERP -järjestelmässä määritetyt lisäraportointivaluutat on lueteltu täällä. Valitsemalla tämän valintaruudun voit luoda lisäraportteja annetuissa valuutoissa. Niitä raportteja voi sitten tarkastella verkkokatseluohjelmassa napsauttamalla <strong>Valuutta</strong>-painiketta ja valitsemalla valuutan.</td>
 </tr>
 <tr class="even">
 <td>Päivämäärätietoa ei ole tallennettu raportin määrityksiin</td>
@@ -144,8 +144,8 @@ Vain oletusarvoiset perusjaksoasetukset tallennetaan raportin määrityksiin.</t
 <td>Raportit ryhmässä</td>
 <td>Lisää, poista ja tilaa uudelleen raporttiryhmän raportteja.
 <ul>
-<li>Jos haluat lisätä raporttiryhmälle raporttimäärityksiä, avaa raporttiryhmä kaksoisnapsauttamalla sitä ja valitse sitten <strong>Lisää</strong>. Valitse raporttiryhmään sisällytettävät raportit ja valitse sitten <strong>OK</strong>.</li>
-<li>Poista raportti raporttiryhmästä valitsemalla se ja napsauttamalla <strong>Poista</strong>.</li>
+<li>Jos haluat lisätä raporttiryhmään raporttimäärityksiä, avaa ryhmä kaksoisnapsauttamalla ja valitse sitten <strong>Lisää</strong>. Valitse raporttiryhmään sisällytettävät raportit ja valitse sitten <strong>OK</strong>.</li>
+<li>Jos haluat poistaa raportin raporttiryhmästä, valitse ensin raportti ja sitten <strong>Poista</strong>.</li>
 <li>Voit muokata raporttien luontijärjestystä valitsemalla ensin raportin luettelosta ja sitten <strong>Siirrä ylöspäin</strong> tai <strong>Siirrä alaspäin</strong>.</li>
 </ul></td>
 </tr>

@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8031f5b4be79b0642134898db60188311d1ca6d2
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fe87d76de257d12a5042ee13244b5cda8e965ff3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -114,7 +114,7 @@ Seuraava kirjanpitomerkintä luodaan.
 | Helmikuun 28. | 801600 (toteutumaton voitto) |           | 416.67     |
 
 ## <a name="reverse-foreign-currency-revaluation"></a>Ulkomaanvaluutan uudelleenarvostuksen palautus
-Jos uudelleenarvostustapahtuma pitää palauttaa, valitse **Palautustapahtuma** -painike**Ulkomaanvaluutan uudelleenarvostus**-sivulla. Uusi ulkomaanvaluutan uudelleenarvostus -historiatietue luodaan ylläpitämään historian kirjausketjua ulkomaanvaluutan uudelleenarvioinnin ajankohdasta tai palautuksesta. 
+Jos uudelleenarvostustapahtuma pitää palauttaa, valitse **Palautustapahtuma** -painike **Ulkomaanvaluutan uudelleenarvostus**-sivulla. Uusi ulkomaanvaluutan uudelleenarvostus -historiatietue luodaan ylläpitämään historian kirjausketjua ulkomaanvaluutan uudelleenarvioinnin ajankohdasta tai palautuksesta. 
 
 Ulkomaanvaluutan uudelleenarvostuksen tuloksia ei tarvitse palauttaa päivämääräjärjestyksessä, mutta tarvittaessa sinun täytyy peruuttaa myös uudempi uudelleenarvostus, jotta voidaan varmistaa että kunkin uudelleenarvostetun päätilin saldot täsmäävät. Peruutukset voidaan tehdä muussa kuin päivämääräjärjestyksessä, koska ei voida määrittää, mitkä päätilit on uudelleenarvostettu ja kuinka usein tämä on tapahtunut. Organisaatio saattaa esimerkiksi määrittää käteisennakoiden päätilien uudelleenarvostuksen tapahtuvaksi neljännesvuosittain mutta kaikkien muiden päätilien uudelleenarvostuksen kerran kuukaudessa.
 

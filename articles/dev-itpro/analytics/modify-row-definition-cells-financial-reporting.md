@@ -16,13 +16,13 @@ ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 40ae4e0774c5752d697baba6c8add8aaf44fbb6d
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: eb09c0bb28c2ba8e7b890854c444cec80fe8277c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,11 +35,11 @@ Tässä artikkelissa käsitellään tietoja, joita talousraportin rivimäärityk
 
 # <a name="specify-a-row-code-in-a-row-definition"></a>Rivin koodin määrittäminen rivin määrityksessä
 
-Rivien määritysten **Rivin koodi** -solun numerot tai selitteet määrittävät rivin määrityksessä kunkin rivin. Voit määrittää rivin koodin viittaamaan laskelmien ja yhteissummien tietoihin.
+Rivien määritysten **Rivin koodi** -solun numerot tai selitteet määrittävät rivin määrityksessä kunkin rivin. Määrittämällä rivikoodin voit viitata tietoihin laskelmissa ja kokonaissummissa.
 
-### <a name="row-code-requirements"></a>Rivin koodin vaatimukset
+### <a name="row-code-requirements"></a>Rivikoodivaatimukset
 
-Kaikille riveille on määritettävä rivin koodi. Voit yhdistää rivin määrityksessä numeerisia, aakkosnumeerisia ja määrittämättömiä (tyhjiä) rivin koodeja. Rivin koodi voi olla mikä tahansa rivin määrittävä positiivinen kokonaisluku (alle 100 000 000) tai kuvaava selite. Kuvaavan selitteen on noudatettava seuraavia sääntöjä.
+Rivikoodi on pakollinen jokaisella rivillä. Voit yhdistää rivin määrityksessä numeerisia, aakkosnumeerisia ja määrittämättömiä (tyhjiä) rivin koodeja. Rivin koodi voi olla mikä tahansa rivin määrittävä positiivinen kokonaisluku (alle 100 000 000) tai kuvaava selite. Kuvaavan selitteen on noudatettava seuraavia sääntöjä.
 
 -   Selitteen alussa on oltava kirjain (a-ö tai A-Ö). Selite voi olla mikä tahansa numeroiden ja kirjainten yhdistelmä, jossa on enintään 16 merkkiä. 
     > [!NOTE]
@@ -68,7 +68,7 @@ Seuraavissa esimerkeissä käytetään kelvollisia rivin koodeja.
 ## <a name="add-a-description"></a>Kuvauksen lisääminen
 Kuvauksen solu sisältää raportin rivillä taloushallinnon tietojen kuvauksen, kuten Tuotto tai Nettotuotto. **Kuvaus**-solun teksti näkyy raportissa samanlaisena kuin rivin määritykseen syötetty kuvaus. 
 > [!NOTE]
-> Raportin kuvaussarakkeen leveys määritetään sarakkeen määrityksessä. Jos rivin määrityksen **Kuvaus**-sarakkeen teksti on pitkä, tarkista **DESC**-sarakkeen leveys. Kun käytät **Lisää rivejä kohteesta** -valintaikkunaa, **Kuvaus**-sarakkeen arvot ovat taloushallinnon tietojen segmenttiarvoja tai dimensioarvoja. Voit lisätä rivejä, kun haluat lisätä kuvaavan tekstin, kuten osan otsikon tai osan kokonaissumman. Voit lisätä rivejä myös, kun haluat lisätä muotoilun, kuten rivin ennen kokonaissummariviä. Jos raportti sisältää raportointipuun, voit sisällyttää lisätekstin, joka määritetään raportointipuun raportointiyksiköille. Voit myös rajoittaa lisätekstin tietylle raportointiyksikölle.
+> Raportin kuvaussarakkeen leveys määritetään sarakkeen määrityksessä. Jos rivin määrityksen **Kuvaus**-sarakkeen teksti on pitkä, tarkista **DESC**-sarakkeen leveys. Kun käytät **Lisää rivejä kohteesta** -valintaikkunaa, **Kuvaus**-sarakkeen arvot ovat taloushallinnon tietojen segmenttiarvoja tai dimensioarvoja. Lisäämällä rivejä voit lisätä kuvaavan tekstin, esimerkiksi yksikön otsikon tai kokonaissumman, ja voit lisätä muotoilua, esimerkiksi viivan kokonaissummarivin yläpuolelle. Jos raportti sisältää raportointipuun, voit sisällyttää lisätekstin, joka määritetään raportointipuun raportointiyksiköille. Voit myös rajoittaa lisätekstin tietylle raportointiyksikölle.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Rivin kuvauksen lisääminen raporttiin
 
@@ -112,12 +112,12 @@ Kuvauksen solu sisältää raportin rivillä taloushallinnon tietojen kuvauksen,
     | ---                           | Yksinkertainen alleviivaus                   | Alleviivaa raportin kaikkien summasarakkeiden rivin yhdellä viivalla.                                                                                                                                                     |
     | ===                           | Kaksoisalleviivaus                   | Alleviivaa raportin kaikkien summasarakkeiden rivin kaksoisviivalla.                                                                                                                                                     |
     | LINE1                         | Ohut viiva                          | Piirtää sivulle ohuen viivan.                                                                                                                                                                      |
-    | LINE2                         | Paksu viiva                         | Piirtää sivulle paksun viivan.                                                                                                                                                                     |
-    | LINE3                         | Pisteviiva                        | Piirtää sivulle pisteviivan.                                                                                                                                                                    |
+    | VIIVA2                         | Paksu viiva                         | Piirtää sivun poikki yhden paksun viivan.                                                                                                                                                                     |
+    | VIIVA3                         | Pisteviiva                        | Piirtää sivulle pisteviivan.                                                                                                                                                                    |
     | LINE4                         | Paksu ja ohut viiva           | Piirtää sivulle kaksoisviivan. Ylempi viiva on paksu ja alempi ohut.                                                                                                                       |
     | LINE5                         | Ohut ja paksu viiva           | Piirtää sivulle kaksoisviivan. Ylempi viiva on ohut ja alempi paksu.                                                                                                                       |
     | BXB BXC                       | Kehystetty rivi                          | Piirtää raportin rivin ympärille ruudun, joka alkaa **BXB**-riviltä ja päättyy **BXC**-riville.                                                                                                               |
-    | MAKS                           | Huomautus                             | Määrittää kommenttirivin, jota ei tulosteta raporttiin. Esimerkiksi huomautusrivillä voi olla muotoilutekniikoiden kuvauksia.                                                            |
+    | HUOM                           | Huomautus                             | Määrittää rivin, joka on kommenttirivi ja jota ei tulosteta raporttiin. Huomautusrivillä voidaan esimerkiksi selittää muotoilutapoja.                                                            |
     | SORT ASORT SORTDESC ASORTDESC | Lajittele                               | Lajittelee kulut ja tuotot, toteutuneen tai budjetin varianssin raportin suurimman varianssin mukaan tai rivin kuvaukset aakkosjärjestykseen.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Liittyvien kaavojen/rivien/yksiköiden määrittäminen
@@ -133,7 +133,7 @@ Kuvauksen solu sisältää raportin rivillä taloushallinnon tietojen kuvauksen,
 
 Käytä rivin summakaavaa muiden rivien summien lisäämisessä tai vähentämisessä. Rivin summan luonnissa käytettävä kaava voi sisältää operaattorin + ja -, kun yksittäisiä rivin koodeja ja alueita yhdistetään. Alueet osoitetaan kaksoispisteellä (:). Kaava voi sisältää enintään 1 024 merkkiä. Vakiosummakaavan esimerkki: 400+420+430+450+460LIABILITIES+EQUITY520:546520:546-LIABILITIES
 
-### <a name="components-of-a-row-total-formula"></a>Rivin summakaavan komponentit
+### <a name="components-of-a-row-total-formula"></a>Rivisummakaavan osat
 
 Kun rivin summakaava luodaan, rivin koodeilla määritetään nykyisen rivin määrityksen lisättävät tai vähennettävät rivit. Operaattoreiden avulla määritetään, miten rivit yhdistetään. Kokonaissumma- ja summarivejä voidaan käyttää missä tahansa yhdistelmässä. **Huomautus:** Kaikki alueeseen kuuluvat kokonaissummarivit suljetaan pois. Voit luoda kokonaissumman määrittämällä rivialueen. Jos alueen ensimmäinen rivi on kokonaissummarivi, se sisällytetään uuteen summaan. Seuraavassa taulukossa kerrotaan, miten operaattoreita käytetään rivin summakaavoissa.
 
@@ -143,9 +143,9 @@ Kun rivin summakaava luodaan, rivin koodeilla määritetään nykyisen rivin mä
 | :        | 100:330         | Laskee kaikki rivien 100–330 summat yhteen.    |
 | -        | 100-330         | Vähentää rivin 100 summan rivin 330 summasta. |
 
-### <a name="create-a-row-total"></a>Rivin summan luominen
+### <a name="create-a-row-total"></a>Rivisumman luominen
 
-1.  Valitse Report Designerissa **Rivien määritykset** ja avaa muokattava rivin määritys.
+1.  Valitse raporttien suunnitteluohjelmassa **Rivimääritykset** ja avaa sitten muokattava rivimääritys.
 2.  Kaksoisnapsauta rivin määrityksen **Muotoilukoodi**-solua ja valitse **TOT**.
 3.  Syötä summakaava **Liittyvät kaavat/rivit/yksiköt** -soluun.
 
@@ -177,7 +177,7 @@ Rivin määrityksessä määritetään vähintään yksi perusrivi. Sarakkeen m�
 -   **CBR**-rivejä ei tulosteta valmiiseen raporttiin.
 -   **CBR**-muotoilukoodi ja sen liittyvä rivin koodi sijoitetaan rivin tai liittyvät laskelmat näyttävän osan yläpuolelle.
 
-Sarakkeen määrityksen **CALC**-saraketyyppi osoittaa sarakkeen, joka määrittää **Kaava**-rivin kaavan. Tämä kaava käsittelee kyseisen sarakkeen tietoja raportissa. Se käyttää Baserow (perusrivi) -avainsanaa rivin **CBR**-muotoilukoodien laskelmien perustana. Rivin määrityksen **CBR**-muotoilukoodi määrittää niiden sarakkeiden perusrivin, jotka laskevat prosenttiosuuden tai kertovat kunkin raportin rivin perusrivillä. Rivimuotoilussa voi olla useita **CBR**-muotoilukoodeja esimerkiksi nettomyyntiä, bruttomyyntiä ja kokonaiskuluja varten. Yleensä **CBR**-muotoilukoodia käytetään kokonaissummariviin vertailtavien tilien prosenttiosuuden luomisessa. Perusriviä käytetään kaikissa laskelmissa siihen asti, kunnes toinen perusrivi määritetään. Määritä aloittava **CBR**-muotoilukoodi ja lopettava **CBR**-muotoilukoodi. Voit määrittää esimerkiksi kulut nettomyynnin prosenttiosuutena jakamalla arvon kullekin kuluriville nettomyyntirivin arvon perusteella. Tässä tapauksessa nettomyyntirivi on perusrivi. Voit määrittää nykyiset ja vuoden alusta saadut tulokset raportoivan sarakkeen määrityksen yhdessä kunkin tuloksen perusprosentin kanssa seuraavassa esimerkissä osoitetulla tavalla. Aloita yksityiskohtaisen tuloslaskelman määrittämisellä.
+Sarakemäärityksessä **LASK**-saraketyypillä määritetään sarake, joka määrittää **Kaava**-rivin kaavan. Tämä kaava käsittelee kyseisen sarakkeen tietoja raportissa. Se käyttää Baserow (perusrivi) -avainsanaa rivin **CBR**-muotoilukoodien laskelmien perustana. Rivin määrityksen **CBR**-muotoilukoodi määrittää niiden sarakkeiden perusrivin, jotka laskevat prosenttiosuuden tai kertovat kunkin raportin rivin perusrivillä. Rivimuotoilussa voi olla useita **CBR**-muotoilukoodeja esimerkiksi nettomyyntiä, bruttomyyntiä ja kokonaiskuluja varten. Yleensä **CBR**-muotoilukoodia käytetään kokonaissummariviin vertailtavien tilien prosenttiosuuden luomisessa. Perusriviä käytetään kaikissa laskelmissa siihen asti, kunnes toinen perusrivi määritetään. Määritä aloittava **CBR**-muotoilukoodi ja lopettava **CBR**-muotoilukoodi. Voit määrittää esimerkiksi kulut nettomyynnin prosenttiosuutena jakamalla arvon kullekin kuluriville nettomyyntirivin arvon perusteella. Tässä tapauksessa nettomyyntirivi on perusrivi. Voit määrittää nykyiset ja vuoden alusta saadut tulokset raportoivan sarakkeen määrityksen yhdessä kunkin tuloksen perusprosentin kanssa seuraavassa esimerkissä osoitetulla tavalla. Aloita yksityiskohtaisen tuloslaskelman määrittämisellä.
 
 ### <a name="select-the-base-row-in-a-row-definition-for-a-column-calculation"></a>Rivin määrityksen perusrivin valitseminen sarakelaskelmaa varten
 
@@ -197,7 +197,7 @@ Sarakkeen määrityksen **CALC**-saraketyyppi osoittaa sarakkeen, joka määritt
 Seuraavassa rivin määrityksen esimerkissä rivi 100 osoittaa, että laskelmien perusrivi on rivi 280. [![Esimerkki perusrivin laskelmasta](./media/cbrrowdefinition.png)](./media/cbrrowdefinition.png) Seuraavassa sarakkeen määrityksessä laskelmat käyttävät **CBR**-muotoilukoodia. Sarakkeen C laskelmassa jaetaan raportin sarake B sarakkeen B rivin 280 arvolla. Sarakkeen B muotoilun ohitus tulostaa laskelman tuloksen prosenttiosuutena. Samaan tapaan jokainen sarakkeen E summa on sarakkeen D summa nettomyynnin prosenttiosuutena. [![Sarakkeen määrityksen esimerkki.](./media/cbrcolumndefinition2.png)](./media/cbrcolumndefinition2.png) Seuraava esimerkki sisältää edellisten laskelmien perusteella luotavan raportin. [![Esimerkkiraportti, joka perustuu edellisen esimerkin laskelmin.](./media/cbrreport-1024x272.png)](./media/cbrreport.png)
 
 ## <a name="select-a-sorting-code-for-a-row-definition"></a>Rivin määrityksen lajittelukoodin valitseminen
-Lajittelukoodit lajittelevat tilit tai arvot, toteutuneen tai budjetin varianssin raportin suurimman varianssin mukaan tai rivin kuvaukset aakkosjärjestykseen. Käytettävissä ovat seuraavat lajittelukoodit:
+Lajittelukoodit lajittelevat tilit tai arvot, toteutuneen tai budjetin varianssin raportin suurimman varianssin mukaan tai rivin kuvaukset aakkosjärjestykseen. Käytettävissä olevat lajittelukoodit ovat seuraavat:
 
 -   **SORT** – Lajittelee raportin nousevaan järjestykseen määritetyn sarakkeen arvojen perusteella.
 -   **ASORT** – Lajittelee raportin nousevaan järjestykseen määritetyn sarakkeen arvojen absoluuttisen arvon perusteella. Toisin sanoen kunkin arvon etumerkki ohitetaan arvojen lajittelun yhteydessä. Tämä muotoilukoodi järjestää arvot varianssin suuruuden mukaan siitä huolimatta, onko varianssi positiivinen vai negatiivinen.
@@ -217,21 +217,21 @@ Lajittelukoodit lajittelevat tilit tai arvot, toteutuneen tai budjetin varianssi
 
 Seuraavassa esimerkissä raportin sarakkeen D arvot lajitellaan nousevassa järjestyksessä riveille 160–490. Lisäksi lajitellaan raportin sarakkeen G absoluuttiset arvot laskevassa järjestyksessä riveille 610–940.
 
-| Rivin koodi | Kuvaus                                         | Muotoilukoodi | Liittyvät kaavat/rivit/yksiköt | Normaali saldo | Sarakkeen rajoitus | Linkki taloushallinnon dimensioihin |
+| Rivin koodi | Kuvaus                                         | Muotoilukoodi | Liittyvät kaavat/rivit/yksiköt | Normaalisaldo | Sarakerajoitus | Linkki taloushallinnon dimensioihin |
 |----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
 | 100      | Lajitteluperuste kuukauden varianssi nousevassa järjestyksessä       | DES         |                             |                |                    |                              |
 | 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
-| 160      | Myynti                                               |             |                             | K              |                    | 4100                         |
+| 160      | Myynti                                               |             |                             | C              |                    | 4100                         |
 | 190      | Myyntipalautukset                                       |             |                             |                |                    | 4110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
-| 490      | Korkotulot                                     |             |                             | K              |                    | 7000                         |
+| 490      | Korkotulot                                     |             |                             | C              |                    | 7000                         |
 | 520      |                                                     | DES         |                             |                |                    |                              |
 | 550      | Lajitteluperuste absoluuttinen varianssi vuoden alusta laskevassa järjestyksessä | DES         |                             |                |                    |                              |
 | 580      |                                                     | ASORTDESC   | 610:940                     |                | G                  |                              |
-| 610      | Myynti                                               |             |                             | K              |                    | 4100                         |
+| 610      | Myynti                                               |             |                             | C              |                    | 4100                         |
 | 640      | Myyntipalautukset                                       |             |                             |                |                    | 4110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Korkotulot                                     |             |                             | K              |                    | 7000                         |
+| 940      | Korkotulot                                     |             |                             | C              |                    | 7000                         |
 
 Seuraavassa on esimerkki luotavasta raportista.
 
@@ -270,7 +270,7 @@ Seuraavassa on esimerkki luotavasta raportista.
 
 ### <a name="currency-formatting"></a>Valuutan muotoileminen
 
-Valuutan muotoileminen koskee tilikauden summaa. Se sisältää valuuttasymbolin. Valittavissa ovat seuraavat vaihtoehdot:
+Valuutan muotoileminen koskee tilikauden summaa. Se sisältää valuuttasymbolin. Käytettävissä ovat seuraavat asetukset:
 
 -   **Valuuttasymboli** – raportin valuuttasymboli. Tämä arvo ohittaa yrityksen tietojen **Alueelliset asetukset** -asetuksen.
 -   **Negatiiviset luvut** – negatiivisilla luvuilla on miinusmerkki (-) ja ne näkyvät suluissa tai niihin on liitetty kolmio (∆).
@@ -303,7 +303,7 @@ Prosenttiosuuden muotoileminen sisältää prosenttimerkin (%). Valittavissa ova
 
 Luo mukautettu muotoilun ohitus mukautetun muotoiluluokan avulla. Valittavissa ovat seuraavat vaihtoehdot:
 
--   **Tyyppi** – mukautettu muoto.
+-   **Tyyppi** – mukautettu muotoilu.
 -   **Nolla-arvon ohituksen teksti** – Teksti, joka sisällytetään raporttiin, kun summa on 0 (nolla). Teksti näkyy **Malli**-alueen viimeisellä rivillä. 
     > [!NOTE]
     >  Jos tulostus on poistettu käytöstä nolla-arvojen kohdalla tai niiltä kausilta, joilla ei ole toimintaa, tämä teksti piilotetaan.
@@ -365,7 +365,7 @@ Voit rajoittaa rivin aiemmin luotua kirjakoodia varten. Sarakkeen määrityksess
 > [!NOTE]
 > Rivin kirjakoodin rajoitus ohittaa kyseisen rivin sarakkeen määrityksen kirjakoodin rajoitukset.
 
-### <a name="account-and-transaction-attributes"></a>Tili- ja tapahtumamääritteet
+### <a name="account-and-transaction-attributes"></a>tili- ja tapahtumamääritteet.
 
 Joissakin kirjanpitojärjestelmissä tuetaan taloushallinnon tietojen tili- ja tapahtumamääritteitä. Nämä määritteet toimivat kuten virtuaaliset tilisegmentit. Ne voivat sisältää tiliä tai tapahtumaa koskevia lisätietoja. Lisätiedot voivat olla tilien tunnuksia, erien tunnuksia, postinumeroita tai muita määritteitä. Jos käytössä oleva kirjanpitojärjestelmä tukee määritteitä, voit käyttää tili- tai tapahtumamääritteitä rivin määrityksen rivimääreinä. Lisätietoja rivin tietojen ohituksesta on Sarakkeen määrityksen ohitus -osassa, joka löytyy tämän artikkelin alkuosasta.
 
@@ -378,14 +378,14 @@ Joissakin kirjanpitojärjestelmissä tuetaan taloushallinnon tietojen tili- ja t
 |----------------------------------|----------------------------------------------------|
 | Taloushallinnon dimensiot             | Linkki taloushallinnon dimensioihin                       |
 | Ulkoinen laskentataulukko               | Linkki laskentataulukkoon                                  |
-| Taloushallinnon dimensiot + laskentataulukko | Linkki taloushallinnon dimensioihin + laskentataulukko           |
+| Taloushallinnon dimensiot + laskentataulukko | Taloushallinnon dimensioiden linkki + laskentataulukko           |
 | Management Reporter -raportti       | Management Reporter -raportti                         |
 
 ### <a name="specify-a-dimension-or-range"></a>Dimension tai alueen määrittäminen
 
-1.  Avaa Report Designer -ohjelmassa muokattava rivin määritys.
+1.  Avaa raporttien suunnitteluohjelmassa rivimääritys, jota haluat muokata.
 2.  Kaksoisnapsauta **Linkki taloushallinnon dimensioihin** -sarakkeen solua.
-3.  Kaksoisnapsauta **Dimensiont**-valintaikkunan dimension alla olevaa solua.
+3.  Kaksoisnapsauta **Dimensiot**-valintaikkunassa dimension nimen alapuolella olevaa solua.
 4.  Valitse dimension valintaikkunassa **Yksittäinen tai alue**.
 5.  Syötä **Mistä**-kenttään aloittava dimensio tai hae käytettävissä olevat dimensiot valitsemalla ![Selaa](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Selaa"). Voit syöttää dimensioalueen syöttämällä lopettavan dimension **Mihin**-kenttään.
 6.  Sulje dimension valintaikkuna valitsemalla **OK**. **Dimensiont**-valintaikkunassa näkyy päivitetty dimensio tai alue.
@@ -464,7 +464,7 @@ Seuraavassa taulukossa esitellään **Dimensiot**-valintaikkunan kentät.
 | Summatilit   | Syötä **Nimi**-kenttään summatilien dimensio tai etsi se kentässä. Raportin määrityksen summatilin **Kaava**-kenttään täytetään **Linkki taloushallinnon dimensioihin** -solun kaava.                                                                       |
 
 ## <a name="add-dimension-value-sets-in-a-row-definition"></a>Dimensioarvoyhdistelmien lisääminen rivin määritykseen
-Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelmä voi sisältää vain yhden dimension arvoja, mutta dimensioarvoyhdistelmää voidaan käyttää myös useiden rivien, sarakkeiden, raportointipuiden ja raporttien määrityksissä. Dimensioarvoyhdistelmiä voidaan yhdistää myös raportin määrityksessä. Kun taloushallinnon tietojen muuttaminen edellyttää dimensioarvoyhdistelmän muuttamista, voit päivittää dimensioarvoyhdistelmän määrityksen. Päivitys kohdistetaan kaikille dimensioarvoyhdistelmää käyttäville alueille. Jos esimerkiksi määrität usein arvoalueen, kuten esimerkiksi 5100–5600, taloushallinnon tietojen linkittämistä varten, voit liittää tämän alueen tiliyhdistelmään, jonka nimi on Myynti. Kun dimensioarvoyhdistelmä on luotu, voit määrittää yhdistelmän taloushallinnon tietojen linkiksi. Toisessa esimerkissä oletetaan, että arvoalue 5100–5600 on liitetty myyntiin ja 4175 on liitetty alennuksiin. Voit määrittää kokonaismyynnin vähentämällä alennukset myynnistä. Tämä toiminto osoitetaan näin: **(5100:5600)-4175**.
+Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelmä voi sisältää vain yhden dimension arvoja, mutta dimensioarvoyhdistelmää voidaan käyttää myös useiden rivien, sarakkeiden, raportointipuiden ja raporttien määrityksissä. Dimensioarvoyhdistelmiä voidaan yhdistää myös raportin määrityksessä. Kun taloushallinnon tietojen muuttaminen edellyttää dimensioarvoyhdistelmän muuttamista, voit päivittää dimensioarvoyhdistelmän määrityksen. Päivitys kohdistetaan kaikille dimensioarvoyhdistelmää käyttäville alueille. Jos esimerkiksi määrität usein arvoalueen, kuten esimerkiksi 5100–5600, taloushallinnon tietojen linkittämistä varten, voit liittää tämän alueen tiliyhdistelmään, jonka nimi on Myynti. Kun luot dimensioarvojen joukon, voit valita sen taloushallintotietojen linkiksi. Jos sinulla on arvot 5100–5600 määritettynä esimerkiksi Myynti-kohteeseen ja arvo 4175 määritettynä Alennukset-kohteeseen, voit määrittää kokonaismyynnin vähentämällä Alennukset-summan Myynti-summasta, eli lausekkeella (5100:5600)-4175. Tämä toiminto osoitetaan näin: **(5100:5600)-4175**.
 
 ### <a name="create-a-set-of-dimension-values"></a>Dimensioarvoyhdistelmän luominen
 
@@ -476,11 +476,11 @@ Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelm
 6.  Valitse **Tili**-valintaikkunan luettelosta tilin nimi tai hae syöttö **Hae**-kentässä. Valitse sitten **OK**.
 7.  Toista vaiheet 5 ja 6 **Mihin**-sarakkeessa ja määritä operaattorille kaava.
 8.  Kun kaava on valmis, valitse **OK**.
-9.  Valitse **Hallitse dimensioyhdistelmiä** -valintaikkunassa **Sulje**.
+9.  Valitse **Dimensioyhdistelmien hallinta** -valintaikkunassa **Sulje**.
 
-### <a name="update-a-set-of-dimension-values"></a>Dimensioarvoyhdistelmän päivittäminen
+### <a name="update-a-set-of-dimension-values"></a>Dimensioarvojoukon päivittäminen
 
-1.  Avaa Report Designer -ohjelmassa muokattava rivin, sarakkeen tai puun määritys.
+1.  Avaa raporttien suunnitteluohjelmassa rivi-, sarake- tai puumääritys, jota haluat muokata.
 2.  Valitse **Muokkaa**-valikossa **Dimensioarvoyhdistelmien hallinta**.
 3.  Valitse **Dimensioarvoyhdistelmien hallinta** -valintaikkunan **Dimensio**-kentässä dimensiotyyppi.
 4.  Valitse luettelosta päivitettävä dimensioarvoyhdistelmä ja valitse sitten **Muokkaa**.
@@ -500,7 +500,7 @@ Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelm
 
 ### <a name="delete-a-dimension-set"></a>Dimensioyhdistelmän poistaminen
 
-1.  Avaa Report Designer -ohjelmassa muokattava rivin, sarakkeen tai puun määritys.
+1.  Avaa raporttien suunnitteluohjelmassa rivi-, sarake- tai puumääritys, jota haluat muokata.
 2.  Valitse **Muokkaa**-valikossa **Dimensioarvoyhdistelmien hallinta**.
 3.  Valitse **Dimensioarvoyhdistelmien hallinta** -valintaikkunan **Dimensio**-kentässä dimensiotyyppi.
 4.  Valitse poistettava yhdistelmä ja valitse sitten **Poista**. Poista dimensioarvoyhdistelmä pysyvästi valitsemalla **Kyllä**.

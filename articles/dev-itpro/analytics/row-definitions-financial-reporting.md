@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 06a75889e62cbba6e47a8543cf663868df5ae2e3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -68,8 +68,8 @@ Dimensio on tietojen ja arvojen liitos. Voit ryhmitellä tietoja ja arvoja Repor
 | Vaihtoehto                | Kuvaus                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dimensio             | Malli, joka määrittää rivin määritykseen lisättävän dimension. Tämä malli sisältää yhden et-merkin (&) tai numeromerkin (\#) jokaista dimension sijaintia kohti. Yleensä et-merkkejä käytetään päätilin dimensioissa ja numeromerkkejä muissa dimensioissa. |
-| Dimensiovälin alku | Tämän dimension ensimmäinen arvo, joka lisätään rivin määritykseen.                                                                                                                                                                                                                 |
-| Dimensiovälin loppu   | Tämän dimension viimeinen arvo, joka lisätään rivin määritykseen.                                                                                                                                                                                                                  |
+| Dimensioalueen alku | Rivimääritykseen lisättävän dimension ensimmäinen arvo.                                                                                                                                                                                                                 |
+| Dimensioalueen loppu   | Tämän dimension viimeinen arvo, joka lisätään rivin määritykseen.                                                                                                                                                                                                                  |
 
 Seuraavien vaiheiden avulla voit lisätä dimensioita rivin määritykseen.
 
@@ -93,7 +93,7 @@ Jos taseessa on pyöristettyjä summia, kokonaissummat eivät ehkä täsmää. T
 Voit oikaista taseen pyöristyksen seuraavasti.
 
 1.  Valitse Report Designerissa **Rivien määritykset** ja avaa muokattava rivin määritys.
-2.  Valitse **Muokkaa**-valikosta **Pyöristyksen oikaisu**.
+2.  Valitse **Muokkaa**-valikosta **Pyöristysoikaisu**.
 3.  Syötä **Pyöristyksen oikaisut** -valintaikkunaan seuraavat arvot:
     -   **Pyöristyksen oikaisurivi** – Sen rivin rivikoodi, joka on oikaistava taseen täsmäyttämiseksi.
     -   **Kaikkien käyttöomaisuuserien rivi** – Taseen kaikki käyttöomaisuuserät sisältävän rivin koodi.
@@ -121,23 +121,23 @@ Voit luoda ja muokata raportin fonttityylejä. Voit sitten käyttää näitä ty
 <td>Luo fonttityyli</td>
 <td><ol>
 <li>Valitse Report Designerin <strong>Muotoilu</strong>-valikosta <strong>Tyylit ja muotoilu</strong>.</li>
-<li>Valitse <strong>Tyylit ja muotoilu</strong> -valintaikkunassa <strong>Uusi</strong> ja anna uudelle tyylille yksilöivä nimi.</li>
-<li>Valitse fontit ja valitse sitten <strong>OK</strong>.</li>
+<li>Valitse <strong>Tyylit ja muotoilu</strong>-valintaikkunassa <strong>Uusi</strong> ja anna sitten uudelle tyylille yksilöllinen nimi.</li>
+<li>Tee fonttia koskevat valinnat ja valitse <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Muokkaa fonttityyliä</td>
+<td>Fonttityylin muokkaaminen</td>
 <td><ol>
 <li>Valitse Report Designerin <strong>Muotoilu</strong>-valikosta <strong>Tyylit ja muotoilu</strong>.</li>
-<li>Valitse ensin muokattava tyyli <strong>Tyylit ja muotoilu</strong> -valintaikkunassa ja sitten <strong>Muokkaa</strong>.</li>
-<li>Valitse fontit ja valitse sitten <strong>OK</strong>.</li>
+<li>Valitse muokattava tyyli <strong>Tyylit ja muotoilu</strong> -valintaikkunassa ja valitse sitten <strong>Muokkaa</strong>.</li>
+<li>Tee fonttia koskevat valinnat ja valitse <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Ota fonttityyli käyttöön</td>
 <td><ol>
 <li>Valitse Report Designerin määrityksessä tai sarakkeen määrityksessä tai ylä- tai alatunnisteissa vähintään yksi solu.</li>
-<li>Valitse työkalurivin <strong>Tyyli</strong>-luettelosta fonttityyli.</li>
+<li>Valitse fonttityyli työkalurivin <strong>Tyyli</strong>-luettelosta.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -164,7 +164,7 @@ Rivin määrityksen käsiteltävien sarakkeiden tarkasteleminen helpottuu oikais
 ### <a name="hide-columns-in-the-view-pane"></a>Sarakkeiden piilottaminen näkymäruudussa
 
 1.  Avaa Report Designer -ohjelmassa muokattava rivin määritys.
-2.  Valitse sarake tai sarakkeet pienennystä varten.
+2.  Valitse piilotettavat sarakkeet.
 3.  Napsauta kohdetta hiiren kakkospainikkeella ja valitse sitten **Piilota**.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Kaikkien piilotettujen sarakkeiden näyttäminen näkymäruudussa

@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f6b4ccf4d7f9727819831b07221d859e3c5cdd39
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 29c42feec36f7fe1fc00918a8c24e42de8a6dda2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Tässä artikkelissa on tietoja resurssin ominaisuuksista. Toiminto on operatiiv
 Toiminto on operatiivisen resurssin kyky suorittaa tietty aktiviteetti. Operatiivisella resurssilla voi olla useampi kuin yksi siihen liitetty ominaisuus, ja ominaisuus voidaan määrittää useammalle kuin yhdelle resurssille. Voit määrittää ominaisuuksia resursseille tilapäisesti asettamalla ominaisuusmääritykselle alkamis- ja vanhentumispäivät. Kun resurssin ominaisuuden voimassaolo on päättynyt, kyseistä resurssia ei voida kohdistaa projektille tai tuotannolle, joka vaatii kyseisen ominaisuuden. Ominaisuus, jonka voimassaolo on päättynyt, voidaan uusia. Voit poistaa ominaisuuksia sillä edellytyksellä, että ne eivät ole reitityssuhteella tai osana aktiivisen tuotantotilauksen tuotantoreititystä. Yleisesti ottaen, ole varovainen poistaessasi ominaisuuksia. Harkitse sen sijaan kyseisen ominaisuuden sisältävien resurssien voimassaolon päättymispäivän muuttamista. Ominaisuuksia voidaan määrittää kaiken tyyppisille resursseille: työkalu, toimittaja, kone, toimipaikka, tai henkilöresurssi.
 
 ## <a name="level"></a>Tasaa
-Useilla resursseilla on usein sama toiminnallinen ominaisuus mutta eri pätevyystasoilla (esimerkiksi vahvuus, käsittelynopeus tai tarkkuus). Näin ollen, määrittäessäsi resurssille ominaisuuden, voit määrittä **Taso**-arvon. Tasoarvo on yksinkertainen numeerinen arvo. Jos määrität, että ominaisuus on tuotantoreitityksen resurssivaatimus, voit määrittää myös**Vaadittu vähimmäistaso** -arvon kyseiselle ominaisuudelle. Ajoitusmoduuli valitsee sitten vain ne resurssit, joilla on tarvittavat ominaisuudet tasolla, joka vastaa resurssivaatimuksessa määriteltyä vähimmäistasoa tai on sitä suurempi.
+Useilla resursseilla on usein sama toiminnallinen ominaisuus mutta eri pätevyystasoilla (esimerkiksi vahvuus, käsittelynopeus tai tarkkuus). Näin ollen, määrittäessäsi resurssille ominaisuuden, voit määrittä **Taso**-arvon. Tasoarvo on yksinkertainen numeerinen arvo. Jos määrität, että ominaisuus on tuotantoreitityksen resurssivaatimus, voit määrittää myös **Vaadittu vähimmäistaso** -arvon kyseiselle ominaisuudelle. Ajoitusmoduuli valitsee sitten vain ne resurssit, joilla on tarvittavat ominaisuudet tasolla, joka vastaa resurssivaatimuksessa määriteltyä vähimmäistasoa tai on sitä suurempi.
 
 ## <a name="priority"></a>Prioriteetti
 Operatiivisille resursseille, joilla on samat ominaisuudet, voidaan määrittää prioriteetti. Tällöin, jos useilla resursseilla on ominaisuuksia, jotka täyttävät ajoitusvaatimukset vaaditulla tasolla ja niillä on vapaata kapasiteettia, ajoitusmoduuli voi tehdä valinnan näiden resurssien välillä. Jos **Prioriteetti** on valittu **Ensisijaisen resurssin valinta** -kentässä **Ajoitusparametrit** -sivulla, resurssi, jolla on korkein prioriteetti (alhaisin numeerinen arvo **Prioriteetti**-kentässä) valitaan ajoitukseen ensin.
