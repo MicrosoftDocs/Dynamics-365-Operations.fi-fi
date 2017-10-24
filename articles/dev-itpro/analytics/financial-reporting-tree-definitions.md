@@ -16,13 +16,13 @@ ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 331f3480b8454dac7da12be169ba017f36cefa06
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 4708ff4427fe507fee7e1ce1ca226289ddf648cc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,13 +33,13 @@ ms.lasthandoff: 05/25/2017
 
 Tässä artikkelissa on tietoja raporttipuun määrityksistä. Raportointipuun määritys on raporttiosa tai rakenneosa, joka auttaa määrittämään organisaation rakenteen ja organisaation.
 
-Talousraportointi tukee joustavaa raportointia, joten muutoksia on helppo tehdä liiketoiminnan rakenteen muuttuessa. Raportit muodostetaan erilaisista osista eli rakenneosista. Yksi näistä rakenneosista on raportointipuun määritys. Raportointipuun määritys auttaa määrittämään organisaation rakenteen ja hierarkian. Se on dimensiot ylittävä hierarkkinen rakenne, joka perustuu taloushallinnon tietojen dimensioiden suhteisiin. Sen avulla saadaan tietoja raportointiyksikkötasolla ja kaikkien puun yksiköiden yhteenvetotasolla. Raportointipuiden määritykset voidaan yhdistää sarakkeiden ja raporttien määrityksiin. Näin luodaan rakenneosaryhmä, jota voidaan käyttää useissa yrityksissä. Raportointiyksikköä käytetään organisaatiokaavion jokaisessa ruudussa. Raportointiyksikkö voi olla taloushallinnon tietojen yksittäinen osasto tai korkeamman tason yhteenvetotietojen yksikkö, joka yhdistää muiden raportointiyksiköiden tiedot. Raportointipuun sisältävään raportin määritykseen luodaan yksi raportti kutakin raportointiyksikköä ja yhteenvetotasoa kohti. Näissä raporteissa käytetään raportin määrityksessä määritettyjä rivien ja sarakkeiden määrityksiä, jos raportin määrityksessä ei määritetä käyttämään rivin määrityksen raportointipuuta. Rivien ja sarakkeiden määritykset ovat talousraporttien suunnittelun ja toimintojen tärkeitä komponentteja. Raportointipuut parantavat komponenttien tehokkuutta ja tukevat joustavaa raportointia liiketoiminnan rakenteen muuttuessa. Talousraporteissa, jotka eivät perustu raportointipuuhun, käytetään vain joitakin talousraportoinnin ominaisuuksia. Samoissa rivien ja sarakkeiden määrityksissä voi käyttää useita raportointipuiden määrityksiä. Näin organisaation tietoja voidaan katsella eri tavoin.
+Talousraportointi tukee joustavaa raportointia, joten muutoksia on helppo tehdä liiketoiminnan rakenteen muuttuessa. Raportit muodostetaan erilaisista osista eli rakenneosista. Yksi näistä rakenneosista on raportointipuun määritys. Raportointipuun määritys auttaa määrittämään organisaation rakenteen ja hierarkian. Se on dimensiot ylittävä hierarkkinen rakenne, joka perustuu taloushallinnon tietojen dimensioiden suhteisiin. Sen avulla saadaan tietoja raportointiyksikkötasolla ja kaikkien puun yksiköiden yhteenvetotasolla. Raportointipuiden määritykset voidaan yhdistää sarakkeiden ja raporttien määrityksiin. Näin luodaan rakenneosaryhmä, jota voidaan käyttää useissa yrityksissä. Raportointiyksikköä käytetään organisaatiokaavion jokaisessa ruudussa. Raporttiyksikkö voi olla yksittäinen osasto taloushallinnon tiedoista tai se voi olla korkeamman tason yhteenvetoyksikkö, joka yhdistää tietoja muista raporttiyksiköistä. Raportointipuun sisältävään raportin määritykseen luodaan yksi raportti kutakin raportointiyksikköä ja yhteenvetotasoa kohti. Näissä raporteissa käytetään raportin määrityksessä määritettyjä rivien ja sarakkeiden määrityksiä, jos raportin määrityksessä ei määritetä käyttämään rivin määrityksen raportointipuuta. Rivien ja sarakkeiden määritykset ovat talousraporttien suunnittelun ja toimintojen tärkeitä komponentteja. Raportointipuut parantavat komponenttien tehokkuutta ja tukevat joustavaa raportointia liiketoiminnan rakenteen muuttuessa. Talousraporteissa, jotka eivät perustu raportointipuuhun, käytetään vain joitakin talousraportoinnin ominaisuuksia. Samoissa rivien ja sarakkeiden määrityksissä voi käyttää useita raportointipuiden määrityksiä. Näin organisaation tietoja voidaan katsella eri tavoin.
 
 ## <a name="reporting-tree-best-practices"></a>Raportointipuun parhaat käytännöt
 Ennen kuin luot raportointipuun, ota huomioon seuraavat parhaat käytännöt:
 
 -   Määritä ensin yrityksen tarvitsemat raportoinnin dimensiot.
--   Ota huomioon tapa, jolla rakenne on määritetty, ja tee yritykselle organisaatiokaavio. Organisaatiokaavion avulla on helppo nähdä, miten raportointiyksiköt kannattaa ryhmitellä yhteen tai useaan raportointipuuhun.
+-   Ota huomioon tapa, jolla rakenne on määritetty, ja tee yritykselle organisaatiokaavio. Organisaatiokaavio auttaa visualisoimaan, miten raporttiyksiköt ryhmitellään yhteen tai useaan raporttipuuhun.
 -   Aloita alimmalta mahdolliselta erittelytasolta, kuten taloushallinnon tiedoissa määritetyistä osastoista ja projekteista. Lisää erittelytasolle tarvittava määrä ruutuja korkeamman tason divisioonien tai alueiden näyttämistä varten. Kukin ruutu edustaa mahdollista raportointiyksikköä luomassasi raportointipuussa.
 -   Mieti, mikä on paras tapa muodostaa puut. Voit luoda raportointipuun automaattisella muodostusprosessilla. Voit myös luoda raportointipuun manuaalisesti. On tärkeää, että tunnet molemmat menetelmät ennen puiden suunnittelua.
 -   Raportointiyksiköt voidaan lisätä raportointipuuhun taloushallinnon tietojen järjestelmässä määritettyjen raportointiyksiköiden avulla.
@@ -52,13 +52,13 @@ Raportointipuun määritys sisältää sarakkeet, joita käsitellään seuraavas
 
 | Raportointipuu-sarake | kuvaus|
 |---|---|
-| Yritys                | Raportointiyksikön yrityksen nimi. **@ANY**-arvo, joka liitetään yleensä vain yhteenvetotasolla. Sen ansiosta raportointipuuta voidaan käyttää kaikissa yrityksessä. Kaikkiin alemman tason haaroihin on liitetty yritys.|
+| Yritys                | Raportointiyksikön yrityksen nimi. **@ANY**-arvo, joka liitetään yleensä vain yhteenvetotasolla. Sen ansiosta raportointipuuta voidaan käyttää kaikissa yrityksessä. Kaikille alielementeille on määritetty yritys.|
 | Yksikön nimi             | Koodi, joka määrittää tämän raportointiyksikön graafisessa raportointipuussa. Varmista, että muodostettava yksilöllinen koodausjärjestelmä on yhdenmukainen ja että käyttäjien on helppo ymmärtää sitä. |
 | Yksikön kuvaus      | Raportointiyksikön otsikko näkyy raportin ylä- tai alatunnisteessa, jos raportin määrityksen **Ylä- ja alatunnisteet** -välilehteen syötetään **UnitDesc**-koodi. Otsikko näkyy raportin rivin kuvauksessa, jos syötät rivin määrityksen **Kuvaus**-soluun **UnitDesc**.|
 | Dimensiot            | Raportointiyksikkö, joka esittää tiedot suoraan taloushallinnon tiedoista. Se määrittää tilin ja liittyvien segmenttien loogisen asettelun ja pituudet. Kullakin raportointiyksikön rivillä on oltava dimensio tässä sarakkeessa. Voit sijoittaa dimension myös yhteenvetotietojen yksikköriville (esimerkiksi kuluille, jotka liittyvät suoraan kyseiseen yksikköön). Jos annat dimension yhteenvetotietojen yksikköriville, pääyksiköissä käytettäviä tilejä ei saa käyttää aliyksiköissä. Muussa tapauksessa summista voi tulla päällekkäisiä.|
-| Rivien määritykset       | Raportointiyksikön rivimäärityksen nimi. Samaa rivin määritystä käytetään jokaisessa raportointipuun yksikössä. Raporttia luotaessa tätä rivin määritystä käytetään kussakin raportointiyksikössä. Rivin määritys voi sisältää useita taloushallinnon dimensioiden linkkejä. Jos rivin määritys on määritetty raportointipuussa, valitse **Käytä raportointipuun rivin määritystä** -valintaruutu raportin määrityksen **Raportti**-välilehdessä.|
-| Rivin linkki              | Raportointiyksikössä käytettävä rivin linkki. Rivien linkit määritetään rivin määritykselle, kun määritetään linkityksen kohteena olevat taloushallinnon dimensiot.|
-| Ulkoinen linkki         | Tässä raportointiyksikössä käytettävä rivin linkki. Rivien linkit määritetään rivin määritykselle, jolla tunnistetaan linkitettävä raportti.|
+| Rivien määritykset       | Raportointiyksikön rivimäärityksen nimi. Samaa rivimääritystä käytetään kullekin raporttipuun yksikölle. Kun luot raportin, tätä rivimääritystä käytetään kullekin raporttiyksikölle. Rivimääritys voi sisältää useita taloushallinnon dimensioiden linkkejä. Jos rivimääritys on määritetty raporttipuussa, valitse **Käytä rivimääritystä raporttipuusta** -valintaruutu raporttimäärityksen **Raportti**-välilehdessä.|
+| Rivilinkki              | Raporttiyksikköä varten käytettävä rivilinkki. Rivilinkeillä määritetään rivimääritykselle linkitettävät taloushallinnon dimensiot.|
+| Ulkoinen linkki         | Tätä raporttiyksikköä varten käytettävä rivilinkki. Rivien linkit määritetään rivin määritykselle, jolla tunnistetaan linkitettävä raportti.|
 | Ulkoinen tiedosto         | Sen talousraportoinnin laskentataulukon tiedostopolku, josta tiedot haetaan.|
 | Sivuvaihtoehdot          | Tämä sarake määrittää, estetäänkö raportointiyksikön tiedot, kun raporttia tarkastellaan tai se tulostetaan.|
 | Koonti-%              | Pääyksikköön kohdistettavan raportointiyksikön prosenttiosuus. Tähän sarakkeeseen syötettävä prosenttiluku koskee rivin määrityksen jokaista riviä, ennen kuin rivin arvo lisätään pääraporttiin. Jos esimerkiksi aliyksikkö on jaettava tasan kahden osaston kesken, kunkin rivin summat kerrotaan 50 prosentilla, ennen kuin arvo lisätään osaston raporttiin. Yhdellä raportointiyksiköllä ei voi olla kahta pääyksikköä. Raportointiyksikön summat voidaan kohdistaa kahteen pääyksikköön luomalla toinen raportointiyksikkö, jolla on sama dimensio loppujen 50 prosentin kokoamiseen. Anna prosenttiluvut ilman desimaalipilkkua. Esimerkiksi **25** tarkoittaa 25 prosentin kohdistusta pääyksikköön. Jos desimaalipilkkua käytetään (**,25**), pääyksikölle kohdistetaan 0,25 prosenttia. Jos haluat käyttää prosenttilukua, joka on alle yksi, käytä raportin määrityksen **Salli koonti &lt; 1 %** -asetusta. Tämä vaihtoehto on **Raportin asetukset** -valintaikkunan **Lisäasetukset**-välilehdessä. Voit käyttää tätä valintaikkunaa raportin määrityksen **Asetukset**-välilehden **Muu**-painikkeella. |
@@ -138,8 +138,8 @@ Lisätekstin syöttö on enintään 255 merkkiä pitkä staattinen tekstimerkkij
 
 ### <a name="remove-additional-text-from-a-reporting-unit"></a>Lisätekstin poistaminen raportointiyksiköstä
 
-1.  Avaa Report Designer -ohjelmassa muokattava raportointipuun määritys.
-2.  Kaksoisnapsauta raportointiyksikön rivin **Lisäteksti**-solua.
+1.  Avaa raporttien suunnitteluohjelmassa raporttipuu, jota haluat muokata.
+2.  Kaksoisnapsauta raporttiyksikkörivin **Lisäteksti**-solua.
 3.  Valitse **Lisäteksti**-valintaikkunassa poistettava merkintä ja valitse sitten **Tyhjennä**. Voit napsauttaa merkintää kakkospainikkeella ja valita **Leikkaa**.
 4.  Napsauta **OK**.
 
@@ -148,7 +148,7 @@ Lisätekstin syöttö on enintään 255 merkkiä pitkä staattinen tekstimerkkij
 Voit estää tiettyjen käyttäjien ja ryhmien käyttämästä raportointiyksikkö. Voit myös määrittää rajoituksia niin, että niitä käytetään raportointiyksikön aliraportointiyksikössä.
 
 1.  Avaa Report Designer -ohjelmassa muokattava raportointipuun määritys.
-2.  Kaksoisnapsauta sen raportointiyksikön rivin **Yksikön suojaus** -solua, jonka käyttöoikeuksia haluat rajoittaa.
+2.  Kaksoisnapsauta **Yksikkösuojaus**-solua sen raporttiyksikön rivillä, jonka käyttöä haluat rajoittaa.
 3.  Valitse **Yksikön suojaus** -valintaikkunassa **Käyttäjät ja ryhmät**.
 4.  Valitse ne käyttäjät ja ryhmät, jotka tarvitsevat raportointiyksikön käyttöoikeuden, ja valitse sitten **OK**.
 5.  Voit rajoittaa aliraportointiyksiköiden käyttöoikeuksia valitsemalla **Lisää suojaus aliraportointiyksiköihin** -valintaruutu.

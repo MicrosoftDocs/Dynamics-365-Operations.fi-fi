@@ -16,13 +16,13 @@ ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: aad8f2617d94e9abc77dafe96cb95f7e191873bd
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 1fd7231ad204a0764d601e9b64bf2150255c6f78
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -85,7 +85,7 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Lisää raportointiyksiköitä dimensioista | Avaa **Lisää raportointiyksiköitä dimensioista** -valintaikkuna, jossa voi valita raportointipuun määritykseen sisällytettäviä dimensioarvoja. Tämä komento on käytettävissä raportointipuun määrityksestä. |
 | Tuo dimensioyhdistelmän hierarkia         | Avaa **Dimensioyhdistelmän hierarkia** -valintaikkuna, jossa voit tuoda dimensioyhdistelmän hierarkian taloushallinnon tiedoista. Tämä komento on käytettävissä järjestelmässä raportointipuun määrityksestä ..\financial-dimensions\dimension-based.  |
 | Lisää raportointiyksikkö                  | Lisää tyhjä rivi raportointipuun määritykseen. Tämä komento on käytettävissä raportointipuun määrityksestä.                                                                                                |
-| Poista raportointiyksikkö                  | Poista valittu raportointiyksikön rivi raportointipuun määrityksestä. Tämä komento on käytettävissä raportointipuun määrityksestä.                                                                             |
+| Poista raportointiyksikkö                  | Poista valittu raportointiyksikön rivi raportointipuun määrityksestä. Tämä komento on käytettävissä raporttipuumäärityksestä.                                                                             |
 
 ### <a name="view-menu"></a>Näytä-valikko
 
@@ -96,7 +96,7 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Siirtymisruutu | Näytä tai piilota siirtymisruutu.                                      |
 | Työkalurivit        | Valitse näkyvissä olevat työkalurivit.                                  |
 | Tilarivi      | Näytä tai piilota **Report Designer** -ikkunan tilatiedot. |
-| Tervetulo-sivu    | Avaa **Tervetuloa**-sivu.                                             |
+| Aloitussivu    | Avaa **aloitussivun**.                                             |
 
 ### <a name="format-menu"></a>Muotoilu-valikko
 

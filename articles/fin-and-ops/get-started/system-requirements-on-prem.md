@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 721c5851cd399398a8dcec5ae110b97a4f17ae0a
+ms.sourcegitcommit: 25a6f326c57e84d6a7c356ac5407be7ed3095f83
+ms.openlocfilehash: 5edc6f0b2240e9dd2d3b72a13f35e96f016aa013
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/04/2017
 
 ---
 
@@ -87,7 +87,7 @@ Laitteistovaatimukset voivat vaihdella järjestelmän määritysten, tietojen ko
 - Yhtäaikaisten käyttäjien määrä
 
 ## <a name="minimum-infrastructure-requirements"></a>Infrastruktuurin vähimmäisvaatimukset
-Finance and Operations (paikallinen) käyttää Service Fabricia AOS-palvelimen, erän, tietojen hallinnan, Management reporterin ja ympäristön Orchestrator-palvelujen isännöintiin. Microsoft SQL Server Reporting Servicesiä (SSRS) ei isännöidä Service Fabric -klusterissa.
+Finance and Operations (paikallinen) käyttää Service Fabricia AOS-palvelimen, erän, tietojen hallinnan, Management reporterin ja ympäristön Orchestrator-palvelujen isännöintiin. 
 
 SQL Serverissä on oltava suuren käytettävyyden HADRON-asennus, jossa on vähintään kaksi solmua tuotantokäytössä.
 
@@ -225,6 +225,12 @@ Seuraavassa taulukossa on Finance and Operationsin tietokannoissa tuetut SQL Ser
 |------------------------------------------------------------------|-------|
 | Microsoft SQL Server 2016 Standard Edition tai Enterprise Edition | Lisätietoja SQL Server 2016:n laitevaatimuksista on ohjeaiheessa [SQL Server 2016:n asennuksen laite- ja ohjelmistovaatimukset](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
 
+## <a name="software-requirements-for-application-object-server-aos"></a>Application Object Server (AOS) -palvelimen ohjelmistovaatimukset 
+- SQL Server Integration Services (SSIS)
+
+## <a name="software-requirements-for-reporting-server-bi"></a>Raportointipalvelimen (BI) ohjelmistovaatimukset
+- SQL Server Reporting Services (SSRS)
+
 ## <a name="software-requirements-for-client-computers"></a>Kaikkien asiakastietokoneiden ohjelmistovaatimukset
 Finance and Operations -verkkosovellus voidaan suorittaa missä tahansa laitteessa, jossa on HTML 5.0 -yhteensopiva selain. Microsoft on vahvistanut seuraavat laite- ja selainyhdistelmät:
 
@@ -244,7 +250,7 @@ Toimialueen ohjaimen on oltava vähintään Windows Server 2012 R2, ja sen toimi
 ## <a name="supported-microsoft-office-applications"></a>Tuetut Microsoft Office -sovellukset
 Seuraavia Microsoft Office -sovelluksia tuetaan Finance and Operationsin pilvikäyttöönotoissa ja paikallisissa käyttöönotoissa:
 
--   Microsoft Office 2016:n Windows- tai Mac-version on oltava asennettuna, jotta Microsoft Excel ja Microsoft Word -lisäosia voi käyttää. Lisätietoja versiovaatimuksista on ohjeaiheessa [Office-integroinnin vianmääritys](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Microsoft Office 2016:n Windows- tai Mac-version on oltava asennettuna, jotta Microsoft Excel ja Microsoft Word -lisäosia voi käyttää. Lisätietoja versiovaatimuksista on ohjeaiheessa [Office-integroinnin vianmääritys](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   Microsoft Office 2007 tai sitä uudempi on oltava asennettuna, jotta voit tarkastella Vie Exceliin tai Vie Wordiin -toimintojen luomia asiakirjoja.
  
 ## <a name="hardware-and-software-requirements-for-retail-components"></a>Retail-osien laite- ja ohjelmistovaatimukset

@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -63,7 +63,7 @@ Eksplisiittinen mukauttaminen on mukauttamista, jonka suoritat nimenomaisena tar
 
 Voit mukauttaa sivun elementtiä tällä tavoin, jos haluat vain muuttaa elementin otsikkoa, piilottaa elementin niin, että se ei näy sivulla (mitään tietoja ei muuteta, mutta tiedot eivät ole näkyvissä), sisällyttää tiedot pikavälilehden yhteenveto-osioon (jos elementti on pikavälilehdessä), ohittaa kentän sarkaimella siirryttäessä tai määrittää sen niin, ettei tietoja ei voi muuttaa, liittämällä siihen Älä muokkaa -merkinnän. 
 
-Kun haluat siirtää tai piilottaa elementtejä tai tehdä useita muutoksia, voit käyttää Mukautus-työkaluriviä, joka on käytettävissä elementin Ominaisuusikkunasta valitsemalla **Mukauta tämä lomake**. Mukauttaminen-työkalurivi on myös käytettävissä lomakkeen Toimintoruudun kautta **Asetukset**-välilehden Mukauttaminen-ryhmässä. Valitse **Mukauta tämä lomake** ja saat näkyviin Mukauttaminen-työkalurivin. 
+Kun haluat siirtää tai piilottaa elementtejä tai tehdä useita muutoksia, voit käyttää Mukautus-työkaluriviä, joka on käytettävissä elementin Ominaisuusikkunasta valitsemalla **Mukauta tämä lomake**. Mukauttamisen työkaluriviä voi käyttää myös lomakkeen Toimintoruudussa, **Asetukset**-välilehden Mukautus-ryhmässä. Vlaitse **Mukauta tätä lomaketta** ja työkalurivi tulee esiin. 
 
 [![Mukauttamisen työkalurivi](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 

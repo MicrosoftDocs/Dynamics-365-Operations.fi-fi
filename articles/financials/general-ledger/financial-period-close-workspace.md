@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 0bbf8f979aeb8b861164e345f9e46bb396f370ce
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -82,7 +81,7 @@ Tehtäväalueiden avulla voi ryhmitellä sulkemistehtäviä omistusoikeuden loog
 
 ### <a name="calendars"></a>Kalenterit
 
-Luo ja muokkaa tilikauden sulkemiskalentereita Kalenterit-välilehdessä.  Siellä määritetään sulkemisprosessien työpäivät, ja sitä käytetään myös sulkemistehtävien ajoituksessa.  Luo uusi kalenteri ja määritä tehtävän ajoituksessa käytettävät työpäivät.  Kalenteri kannattaa luoda pitkälle aikavälille, kuten vuodeksi tai useiksi vuosiksi, koska sitä ei voi muokata luomisen jälkeen.  Kun kalenteri on luotu, kalenterin tietyt päivät, kuten lomat, päivitetään Muokkaa-painikkeen avulla.  Sulkemistehtävät ajoitetaan päiville, joiden Ohjausarvo-kohdan arvoksi on määritetty Avoin.  Jos sulkemistehtäviä ei ajoiteta tietylle päivälle, kyseisen päivän Ohjausarvo-kohdan arvoksi on määritettävä Suljettu.
+Luo ja muokkaa tilikauden sulkemiskalentereita Kalenterit-välilehdessä. Välilehdessä määritetään sulkemisprosessien työpäivät. Sitä käytetään myös sulkemistehtävien ajoituksessa.  Luo uusi kalenteri ja määritä tehtävän ajoituksessa käytettävät työpäivät.  Kalenteri kannattaa luoda pitkälle aikavälille, kuten vuodeksi tai useiksi vuosiksi, koska sitä ei voi muokata luomisen jälkeen.  Kun kalenteri on luotu, kalenterin tietyt päivät, kuten lomat, päivitetään Muokkaa-painikkeen avulla.  Sulkemistehtävät ajoitetaan päiville, joiden Ohjausarvo-kohdan arvoksi on määritetty Avoin.  Jos sulkemistehtäviä ei ajoiteta tietylle päivälle, kyseisen päivän Ohjausarvo-kohdan arvoksi on määritettävä Suljettu.
 
 ### <a name="templates"></a>Mallit
 

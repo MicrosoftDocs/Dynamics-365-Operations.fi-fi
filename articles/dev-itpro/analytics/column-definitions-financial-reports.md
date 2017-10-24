@@ -16,13 +16,13 @@ ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: d976988a599f65de9957c53a2d149576a1a11d83
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 924177f4974358d2283dfd46306d663c27ccd87b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -49,19 +49,19 @@ Sarakkeen määritys voi sisältää 2–255 saraketta.
 1.  Valitse Report Designer -ohjelman siirtymisruudussa **Sarakkeiden määritykset**.
 2.  Avaa sarakkeen määritys kaksoisnapsauttamalla sitä.
 
-### <a name="add-a-column-to-a-column-definition"></a>Sarakkeen lisääminen sarakkeen määritykseen
+### <a name="add-a-column-to-a-column-definition"></a>Sarakkeen lisääminen sarakemääritykseen
 
 1.  Valitse Report Designerissa **Sarakkeiden määritykset** ja avaa muokattava sarakkeen määritys.
 2.  Valitse sarake, johon uusi sarake lisätään.
-3.  Valitse **Muokkaa**-valikossa **Lisää sarake**. Uusi sarake näkyy valitun sarakkeen vasemmalla puolella.
+3.  Valitse **Muokkaa**-valikossa **Lisää sarake**. Uusi sarake näkyy valitsemasi sarakkeen vasemmalla puolella.
 
-### <a name="delete-a-column-from-a-column-definition"></a>Sarakkeen poistaminen sarakkeen määrityksestä
+### <a name="delete-a-column-from-a-column-definition"></a>Sarakkeen poistaminen sarakemäärityksestä
 
-1.  Valitse Report Designerissa **Sarakkeiden määritykset** ja avaa muokattava sarakkeen määritys.
+1.  Valitse raporttien suunnitteluohjelmassa **Sarakemääritykset** ja avaa sen jälkeen muokattava sarakemääritys.
 2.  Valitse poistettava sarake.
-3.  Valitse **Muokkaa**-valikossa **Poista sarake**.
+3.  Valitse **Muokkaa**-valikosta **Poista sarake**.
 
-## <a name="contents-of-a-column-definition"></a>Sarakkeen määrityksen sisältö
+## <a name="contents-of-a-column-definition"></a>Sarakemäärityksen sisältö
 Sarakkeen määritys sisältää seuraavat tiedot:
 
 -   Kuvausten sarake rivin määrityksessä
@@ -71,7 +71,7 @@ Sarakkeen määritys sisältää seuraavat tiedot:
 
 Nämä tiedot näkyvät seuraavilla sarakkeen määrityksen alueilla:
 
--   Sarakkeen määrityksen otsikon alue sisältää otsikon tekstin ja raportin muotoilun. Otsikko voi koskea vain yhden sarakkeen tietoja, se voi koskea useaa saraketta tai se voi koskea sarakkeita ehdollisesti. Sarakkeen määritys voi sisältää niin monta sarakkeiden otsikkoriviä kuin on tarpeen. **Huomautus:** Sarakeotsikoita käytetään raportin jokaisessa tietojen sarakkeessa. Raportin otsikoita käytetään koko raportissa. Voit määrittää raportin otsikot raportin määrityksen **Ylä- ja alatunnisteet** -välilehdessä.
+-   Sarakkeen määrityksen otsikon alue sisältää otsikon tekstin ja raportin muotoilun. Otsikko voi koskea yhtä tai useaa tietosaraketta, tai se voi koskea sarakkeita ehdollisesti. Sarakemääritys voi sisältää niin monta sarakeotsikkoriviä kuin on tarpeen. **Huomautus:** Sarakeotsikoita käytetään raportin jokaisessa tietojen sarakkeessa. Raportin otsikoita käytetään koko raportissa. Voit määrittää raportin otsikot raportin määrityksen **Ylä- ja alatunnisteet** -välilehdessä.
 -   Sarakkeiden tietorivit sijaitsevat sarakkeen määrityksen otsikoiden rivien alla. Sarakkeiden tietorivit määrittävät raportin tiedot. Seuraavassa taulukossa luetellaan sarakkeiden tietorivit.
 
     | Sarakkeen tietorivin nimi                                                | Kuvaus                                                                                            |
@@ -102,7 +102,7 @@ Voit käyttää sarakkeen rajoituksia määrittäessäsi, miten sarakkeen määr
 2.  Kaksoisnapsauta rajoitettavan sarakkeen **Sarakkeen rajoitukset** -solua.
 3.  Valitse **Sarakkeen rajoitukset** -valintaikkunan luettelosta yksi koodi tai useita koodeja ja valitse sitten **OK**.
 
-### <a name="column-restriction-codes"></a>Sarakkeen rajoituksen koodit
+### <a name="column-restriction-codes"></a>Sarakerajoituskoodit
 
 Seuraavassa taulukossa esitellään sarakkeen rajoituksen koodit.
 
@@ -142,7 +142,7 @@ Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä ot
 ### <a name="create-a-column-header"></a>Sarakeotsikon luominen
 
 1.  Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
-2.  Kaksoisnapsauta otsikon solua.
+2.  Kaksoisnapsauta otsikkosolua.
 3.  Syötä **Sarakeotsikko**-valintaikkunassa sarakeotsikon teksti. Vaihtoehtoisesti voit valita **Lisää automaattinen teksti** -kohdan, jossa voit valita vaihtoehdon.
 4.  Valitse **Muotoiluasetukset**-kentässä otsikon muoto.
 5.  Syötä **Levitä mistä** -kenttään sen sarakkeen kirjain, josta sarakeotsikko alkaa. Syötä **Levitä mihin** -kenttään sen sarakkeen kirjain, johon sarakeotsikko loppuu.
@@ -182,7 +182,7 @@ Raportin suunnittelija voi luoda sarakeotsikoita automaattisesti automaattisen t
 
 ### <a name="create-a-conditional-spanning-header"></a>Ehdollisen koonnin otsikon luominen
 
-Ehdollisen koonnin otsikot voivat olla useiden tietyn jakson tietoihin perustuvien sarakkeiden käytössä. Jos käsittelyssä on esimerkiksi tilikauden budjettiraportti, ja haluat näyttää edellisten kuukausien toteutuneet budjetit tulevien kuukausien ennustettujen budjettien kanssa, voit päivittää raportin otsikon automaattisesti ehdollisen koonnin otsikon avulla. Ota seuraavat tilanteet huomioon ehdollisen koonnin otsikon luomisessa:
+Ehdollisen koonnin otsikot voivat olla useiden tietyn jakson tietoihin perustuvien sarakkeiden käytössä. Jos käsittelyssä on esimerkiksi tilikauden budjettiraportti, ja haluat näyttää edellisten kuukausien toteutuneet budjetit tulevien kuukausien ennustettujen budjettien kanssa, voit päivittää raportin otsikon automaattisesti ehdollisen koonnin otsikon avulla. Ota huomioon seuraavat tilanteet, kun luot ehdollisen jatkuvan otsikon:
 
 -   Mikä tahansa pysäytysehto (**Levitä mihin** -kenttä), joka täsmää ennen aloitusehtoa (**Levitä mistä** -kenttä) ohitetaan. Esimerkiksi sarakkeen B levitysehto on BASE+1 - BASE. BASE on sarakkeessa C ja BASE+1 sarakkeessa D. Tässä tapauksessa sarakkeen C pysäytysehto ohitetaan ja otsikon tulostus alkaa sarakkeesta D.
 -   Jos määritetyt sarakeotsikot ovat päällekkäisiä, ne ovat päällekkäisiä myös raporttiin tulostettuna. Raportti luodaan, mutta seuraava varoitus tulee näkyviin **Raportin jonon tila** -kentässä: "Sarakeotsikot, jotka käyttävät pohjaa leikkaavat muiden sarakkeiden otsikoiden kanssa ja tämä saattaa aiheuttaa päällekkäistä tekstiä." Esimerkiksi sarakkeen B otsikkomääritys on B to BASE+1, ja sarakkeen D otsikkomääritys on is BASE+1 to F. Tässä tapauksessa otsikot tulostetaan toistensa päälle, jolloin niitä ei voi lukea. Kun BASE-määritystä käytetään **Levitä mistä / Levitä mihin** -määrityksessä, muista aina tarkistaa luotava raportti päällekkäisten otsikoiden varalta.
@@ -192,7 +192,7 @@ Ehdollisen koonnin otsikot voivat olla useiden tietyn jakson tietoihin perustuvi
 #### <a name="create-a-conditional-spanning-header"></a>Ehdollisen koonnin otsikon luominen
 
 1.  Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
-2.  Kaksoisnapsauta otsikon solua.
+2.  Kaksoisnapsauta otsikkosolua.
 3.  Syötä **Sarakeotsikko**-valintaikkunassa sarakeotsikon teksti. Vaihtoehtoisesti voit valita **Lisää automaattinen teksti** -kohdan, jossa voit valita vaihtoehdon.
 4.   Valitse **Muotoiluasetukset**-kentässä otsikon muotoilutyyli.
 5.  Määritä perusjaksoon liittyvä kausi, joka määritetään raportin luomisen yhteydessä. Syötä **Levitä mistä**- ja **Levitä mihin** -kenttään jonkin seuraavista arvoista: **BASE**, **BASE-X** tai **BASE+X**, jossa X on perusjakson jaksojen määrä. Jos syötät esimerkiksi **Levitä mistä** -kenttään **BASE**-arvon, ehdollisen koonnin sarakeotsikon teksti alkaa sarakeotsikosta, jossa raportin määrityksen **perusjakson** arvo on sama kuin **jakson** arvo. Se päättyy **Levitä mihin** -kenttään määritettyyn sarakkeeseen. Jos siis levitys tapahtuu välillä BASE - M ja raportin määrityksen **perusjakson** arvo on **4**, otsikko alkaa sarakkeesta, jossa jakson arvoksi on määritetty **4**. Se päättyy sarakkeeseen M. Otsikot päättyvät ja alkavat vain tulostussarakkeissa.
@@ -209,10 +209,10 @@ Paula on luomassa dynaamista kuuden kuukauden ennusteen raporttia. Hän haluaa t
 | Ylätunniste 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
 | Ylätunniste 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
 | Sarakelaji         | KUVAUS | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
-| Kirjakoodi/määrite |      | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    |
+| Kirjakoodi/määrite |      | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    |
 | Tilikausi         |      | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          |
 | Kausi              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
-| Katetut jaksot     |      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      |
+| Katetut kaudet     |      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      | KAUSITTAINEN      |
 | Sarakkeen leveys        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Tulostuksen hallinta       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
@@ -236,7 +236,7 @@ Kun Paula on syöttänyt tiedot, hän valitsee **OK**. Tämän jälkeen hän kak
 | Lisää automaattinen teksti    | Valintaa ei ole tehty. |
 | Muotoiluasetukset     | Ruutu                   |
 | Perustelu      | Valintaa ei ole tehty. |
-| Levitä mistä        | K                     |
+| Levitä mistä        | C                     |
 | Levitä mihin          | BASE+2                |
 
 Tämän jälkeen toteutuneita tietoja sisältäviin sarakkeisiin tulostetaan sana Toteutunut ja budjettiennusteita sisältäviin sarakkeisiin sana Budjetti aina, kun raportti luodaan. Tämän lisäksi sarakkeiden määrä oikaistaan joka kuukausi.
@@ -282,10 +282,10 @@ Sarakkeen määrityksen muotoilusarakkeen tietorivien valituissa sarakkeissa kä
 
 **Muotoilun/valuutan ohitus** -solussa määritetään sarakkeen desimaalin, valuutan ja prosenttimäärien muotoilu. Tämä muotoilu korvaa sarakkeen ja raportin määrityksessä tai järjestelmän oletusarvoissa määritetyn muotoilun.
 
-#### <a name="assign-a-format-currency-override-to-a-report-column"></a>Muotoilun/valuutan ohituksen liittäminen raporttisarakkeeseen
+#### <a name="assign-a-format-currency-override-to-a-report-column"></a>Valuutan muotoilun korvaamisen määrittäminen raportin sarakkeelle
 
-1.  Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
-2.  Kaksoisnapsauta summasarakkeen **Muotoilun/valuutan ohitus** -solua.
+1.  Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.
+2.  Kaksoisnapsauta **Muotoilun/valuutan korvaus** -solua summasarakkeessa.
 3.  Valitse **Muotoilun ohitus** -valintaikkunassa muotoiluasetukset.
 
 ### <a name="add-a-print-control-code"></a>Tulostuksen hallintakoodin lisääminen
@@ -317,10 +317,10 @@ Sarakkeen määrityksen muotoilusarakkeen tietorivien valituissa sarakkeissa kä
 
 #### <a name="add-print-control-codes-to-a-report-column"></a>Tulostuksen hallintakoodin lisääminen raporttisarakkeeseen
 
-1.  Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
-2.  Kaksoisnapsauta **Tulostuksen hallinta** -solua.
+1.  Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.
+2.  Kaksoisnapsauta **Tulostusohjaus**-solua.
 3.  Valitse **Tulostuksen hallinta** -valintaikkunassa koodi **Valitse tulostuksen hallinnan asetukset** -luettelosta. Voit valita useita koodeja pitämällä Ctrl-näppäintä alhaalla koodien valinnan aikana.
-4.  Valitse vaihtoehto **Ehdollisen tulostuksen asetukset** -kentässä. Oletusarvoisesti valittuna on **(ei mitään)**. Voit valita vain yhden ehdollisen tulostuskoodin kerrallaan.
+4.  Valitse vaihtoehto **Ehdollisen tulostuksen asetukset** -kentässä. Oletusasetus on **(ei mitään)**. Voit valita vain yhden ehdollisen tulostuskoodin kerrallaan.
 5.  Valitse **OK**.
 
 > [!TIP]
@@ -349,12 +349,12 @@ Raportin kunkin sarakkeen tietojen lajin määrittää sarakkeen määrityksen *
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Näytä taloushallinnon tiedot tai Excel-laskentataulukon tiedot, kun käytössä on rivin määrityksen <strong>Linkki taloushallinnon dimensioihin</strong>- tai <strong>Linkki laskentataulukkoon</strong> -sarake. Kun valitset <strong>FD</strong>-sarakelajin, seuraavilla riveille määritetään automaattisesti oletusasetukset. <ul>
-    <li><strong>Kirjakoodi/määriteluokka:</strong> ACTUAL</li>
-    <li><strong>Kirjakoodi/määriteluokka:</strong> ACTUAL</li>
+    <td>Näytä taloustietoja tai tietoja Excel-laskentataulukosta, kun käytät rivimäärityksessä <strong>Linkki taloushallinnon dimensioihin</strong>- tai <strong>Linkki laskentataulukkoon</strong> -saraketta. Kun valitset <strong>TD</strong>-saraketyypin, seuraaville riveille määritetään automaattisesti oletusasetukset: <ul>
+    <li><strong>Kirjauskoodi/määriteryhmä</strong> TOTEUTUNUT</li>
+    <li><strong>Kirjauskoodi/määriteryhmä</strong> TOTEUTUNUT</li>
     <li><strong>Tilikausi:</strong> BASE</li>
-    <li><strong>Jakso:</strong> BASE</li>
-    <li><strong>Katetut jaksot:</strong> PERIODIC</li>
+    <li><strong>Kausi:</strong> BASE</li>
+    <li><strong>Katetut kaudet</strong> Kausittainen</li>
     <li><strong>Sarakkeen leveys:</strong> 14</li>
     </ul>
 Näitä oletusasetuksia voi muuttaa.</td>
@@ -373,7 +373,7 @@ Näitä oletusasetuksia voi muuttaa.</td>
     </tr>
     <tr class="odd">
     <td>ACCT (tilikoodit)</td>
-    <td>Näytä jokaisella rivillä käytettävät taloushallinnon tietojen segmentti- tai dimensioarvot. Tilin ja tapahtuman lisätietoraportteihin tulostetaan täydellinen tili (esimerkiksi <strong>110140-070-0101</strong>). Jos liittyvän rivin määrityksen <strong>Linkki taloushallinnon dimensioihin</strong> -sarakkeessa on määritetty alueet, alue on hakasulkeissa ja sitä käsitellään yhtenä arvona (esimerkiksi <strong>[110140:110700]-070-[0101:0200]</strong>). Talousraportteihin ja korkean tason raportteihin, joissa on useiden tilien yhdistelmiä, tulostetaan rivin määrityksen taloushallinnon tietojen linkki (esimerkiksi <strong>1100:1200</strong>).</td>
+    <td>Näytä jokaisella rivillä käytettävät taloushallinnon tietojen segmentti- tai dimensioarvot. Tili- ja tapahtumatietojen raporteissa tulostetaan täydellinen tilinumero, (esimerkiksi <strong>110140-070-0101</strong>). Jos liittyvän rivimäärityksen <strong>Linkki taloushallinnon dimensioihin</strong> -sarakkeessa on määritetty alueita, hakasulkeissa olevaa aluetta käsitellään samoin kuin yksittäistä arvoa (esimerkiksi <strong>[110140:110700]-070-[0101:0200]</strong>). Talousraporteissa ja korkean tason raporteissa, jotka voivat olla yhdistelmiä useista tileistä, tulostetaan taloushallinnon tietojen linkki rivimäärityksestä (esimerkiksi <strong>1100:1200</strong>).</td>
     </tr>
     <tr class="even">
     <td>FILL</td>
@@ -381,19 +381,19 @@ Näitä oletusasetuksia voi muuttaa.</td>
     </tr>
     <tr class="odd">
     <td>PAGE</td>
-    <td>Lisää raporttiin pystysuora sivunvaihto. <strong>PAGE</strong>-sarakkeen oikealla puolella olevat sarakkeet näkyvät eri sivulla.</td>
+    <td>Lisää raporttiin pystysuora sivunvaihto. <strong>SIVU</strong>-sarakkeen oikealla puolella olevat sarakkeet tulevat eri sivulle.</td>
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Näyttää Excel-laskentataulukosta noudetut tiedot. Kun valitset <strong>WKS</strong>-sarakelajin, seuraavilla riveille määritetään automaattisesti oletusasetukset. <ul>
-    <li><strong>Tilikausi:</strong> PERIODIC</li>
-    <li><strong>Jakso:</strong> BASE</li>
+    <td>Näyttää Excel-laskentataulukosta noudetut tiedot. Kun valitset <strong>LTAUL</strong>-saraketyypin, seuraaville riveille määritetään automaattisesti oletusasetukset: <ul>
+    <li><strong>Tilikausi</strong> KAUSITTAINEN</li>
+    <li><strong>Kausi:</strong> BASE</li>
     </ul>
 Näitä oletusasetuksia voi muuttaa.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>
-    <td>Jos kirjanpitojärjestelmä tukee määritteitä, näytä sarakkeessa tilin tai tapahtuman määrite. Määrite, jota käytetään yhdessä täydellisessä tilissä, poimii taloushallinnon tiedoista tilin tai tapahtuman taustatietoja. Tilitason määritteet näyttävät tietoja tilistä tapahtumatason määritteet näyttävät tiedot, jotka tapahtuivat silloin, kun tapahtuma on kirjattu. Jos valitset sarakkeen tyypiksi <strong>ATTR</strong>, määritä määriteluokka sarakemäärityksen tietorivillä <strong>Kirjakoodi / Määriteluokka</strong>.</td>
+    <td>Jos kirjanpitojärjestelmä tukee määritteitä, näytä sarakkeessa tilin tai tapahtuman määrite. Määrite, jota käytetään yhdessä täydellisessä tilissä, poimii taloushallinnon tiedoista tilin tai tapahtuman taustatietoja. Tilitason määritteet näyttävät tietoja tilistä, ja tapahtumatason määritteet näyttävät tietoja tapahtuman kirjaushetkeltä. Kun valitset saraketyypiksi <strong>MÄÄR</strong>, määritä sarakemäärityksen <strong>Kirjauskoodi/määriteryhmä</strong>-tietorivillä.</td>
     </tr>
     </tbody>
     </table>
@@ -435,9 +435,9 @@ Seuraavia **sarakkeen määrityksen** rivien määrityksiä käytetään sarakke
 
 Voit siirtyä tilikauden ulkopuolelle minkä tahansa jakson määrityksissä. Voit myös yhdistää jaksoväleissä eri vuosia. Esimerkiksi voit määrittää kausia, jotka on **BASE-5** (esittämään viimeisintä kuutta ajanjaksoa) ja ajaa raportin, jossa on peruskautena 2. Tällöin raportissa näkyy tietoja määritetyn tilikauden kahdesta ensimmäisestä kaudesta ja edellisen tilikauden viimeisestä neljästä kaudesta.
 
-### <a name="specify-the-periods-for-an-fd-column"></a>FD-sarakkeen jaksojen määrittäminen
+### <a name="specify-the-periods-for-an-fd-column"></a>TD-sarakkeen kausien määrittäminen
 
-1.  Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
+1.  Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.
 2.  Kaksoisnapsauta **FD**-sarakkeessa **Jakso**-rivin solua. Valitse sitten vaihtoehto luettelosta.
 3.  Tee kaava valmiiksi siirtymisruudun yläpuolella olevalla kaavarivillä tai **Jakso**-solussa. Korvaa kaikki numeromerkit (\#) sopivalla arvolla.
 
@@ -464,8 +464,8 @@ Määritteet ovat taloushallinnon tietojen arvoja, jotka määrittävät tilin t
 #### <a name="apply-an-attribute-filter-for-an-fd-column-on-a-report"></a>Määritesuodattimen käyttäminen raportin FD-sarakkeessa
 
 1.  Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
-2.  Kaksoisnapsauta **FD**-sarakkeen **Määritesuodatin**-solua.
-3.  Kaksoisnapsauta **Määritesuodatin**-valintaikkunassa **Määrite**-sarakkeen solua. Valitse sitten suodatintyyppi.
+2.  Kaksoisnapsauta **TD**-sarakkeen **Määritesuodatin**-solua.
+3.  Kaksoisnapsauta **Määritesuodatin**-valintaikkunan **Määrite**-sarakkeen solua ja valitse sitten haluamasi suodatintyyppi.
 4.  Voit rajoittaa tuloksia lisää syöttämällä **Mistä**- ja **Mihin**-sarakkeiden alue. **Mistä**-solussa on oltava arvo.
 5.  Napsauta **OK**.
 
@@ -475,11 +475,11 @@ Seuraavassa esimerkissä esitetään osa sarakkeen kuvausta, joka sisältää ti
 
 |                              | A    | B                    |
 |------------------------------|------|----------------------|
-| Sarakelaji                  | DESC | FD                   |
-| Kirjakoodi/määriteluokka |      | ACTUAL               |
+| Saraketyyppi                  | KUV | TD                   |
+| Kirjauskoodi/määriteryhmä |      | TOTEUTUNUT               |
 | Tilikausi                  |      | BASE                 |
 | Kausi                       |      | 1:BASE               |
-| Katetut jaksot              |      | KAUSITTAINEN             |
+| Katetut kaudet              |      | KAUSITTAINEN             |
 | ...                          |      |                      |
 | Sarakkeen leveys                 | 30   |                      |
 | ...                          |      |                      |
@@ -487,7 +487,7 @@ Seuraavassa esimerkissä esitetään osa sarakkeen kuvausta, joka sisältää ti
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Sarakkeen määrityksen dimensiosuodatin
 
-Dimensiosuodatinta käytetään rajoitettaessa **FD**-sarake tietyille dimensioarvoille. Suodatin voi sisältää yhden dimension, dimensioalueen tai dimensioryhmän. Suodatin voi sisältää myös dimensioarvoyhdistelmiä. Koska dimensioarvot voivat vaihdella, kohteeseen ..\financial-dimensions\dimension perustuvan järjestelmän ei tarvitse olla tietyn pituinen. Suodatin otetaan käyttöön siitä huolimatta, sisältääkö raportti raportointipuun. Yleismerkkejä (\* tai?) voi käyttää missä tahansa kohdassa. Lisää useita tilejä määritettäessä pilkku tilien väliin, kuten seuraavassa esimerkissä: +Tili=\[1200\], +Tili=\[1100\], Osasto=\[01?\] Voit vastaanottaa tietyn tilin kaikki osastot sulkemalla osaston dimension pois dimensiosuodattimesta. Esimerkiksi molemmat seuraavista dimensiosuodattimista käsitellään samalla tavalla:
+Dimensiosuodatinta käytetään rajoitettaessa **FD**-sarake tietyille dimensioarvoille. Suodatin voi sisältää yksittäisen dimension, dimensioiden alueen tai dimensioryhmän. Suodatin voi sisältää myös dimensioarvoyhdistelmiä. Koska dimensioarvot voivat vaihdella, kohteeseen ..\financial-dimensions\dimension perustuvan järjestelmän ei tarvitse olla tietyn pituinen. Suodatin otetaan käyttöön siitä huolimatta, sisältääkö raportti raportointipuun. Yleismerkkejä (\* tai?) voi käyttää missä tahansa kohdassa. Lisää useita tilejä määritettäessä pilkku tilien väliin, kuten seuraavassa esimerkissä: +Tili=\[1200\], +Tili=\[1100\], Osasto=\[01?\] Voit vastaanottaa tietyn tilin kaikki osastot sulkemalla osaston dimension pois dimensiosuodattimesta. Esimerkiksi molemmat seuraavista dimensiosuodattimista käsitellään samalla tavalla:
 
 -   +tili=\[1100\],osasto
 -   +tili=\[1100\]

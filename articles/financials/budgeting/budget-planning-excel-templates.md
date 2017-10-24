@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -133,7 +133,7 @@ Klikkaamalla nuolta näet lisävalikon. Valitse **Lukitse**.
 
 Kyllä, useimmat Excelin perusominaisuudet toimivat budjettisuunnitelmamalleissa. On suositeltavaa käyttää värikoodausta käyttäjille, jotta he erottavat Vain luku- ja muokattavat sarakkeet. Ehdollista muotoilua voi käyttää korostamaan budjetin ongelmallisia alueita. Sarakkeiden summat voidaan esittää helposti tavallisten Excel-kaavojen (taulukon yläpuolella) avulla.
 
-Voit myös luoda ja käyttää pivot-taulukoita ja kaavioita budjetin tietojen ylimääräisiin ryhmittelyihin ja visualisointeihin. Valitse **Tiedot**-välilehden **Yhteydet**-ryhmässä **Päivitä kaikki** ja sitten **Yhteyden ominaisuudet**. Valitse **Käyttö**-välilehti. valitse kohdassa **Päivitä** **Päivitä tiedot, kun tiedosto avataan** -valintaruutu. 
+Voit myös luoda ja käyttää pivot-taulukoita ja kaavioita budjetin tietojen ylimääräisiin ryhmittelyihin ja visualisointeihin. Valitse **Tiedot**-välilehden **Yhteydet**-ryhmässä **Päivitä kaikki** ja sitten **Yhteyden ominaisuudet**. Valitse **Käyttö**-välilehti ja valitse kohdassa **Päivitä** **Päivitä tiedot, kun tiedosto avataan** -valintaruutu. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
 

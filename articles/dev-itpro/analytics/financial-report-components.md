@@ -16,13 +16,13 @@ ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 5c09b1fc061f95cd78e9f18c2bdf846fdbfc7cf1
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -79,7 +79,7 @@ Rakenneosat ovat raporttia varten luotavia rivien, sarakkeiden, raportointipuide
 
 Kun olet luonut rakenneosaryhmän, määritä se ainakin yhteen yritykseen. Voit luoda sitten raportin, rivin, sarakkeen ja raportointipuun määritykset ja tallentaa ne rakenneosaryhmään. Kaikki rakenneosat on suljettava ennen seuraavan menettelyn aloittamista.
 1.  Valitse Report Designerin **Yritys**-valikossa **Yritykset**.
-2.  Valitse **Yritykset**-valintaikkunassa yritys, johon rakenneosaryhmä liitetään.
+2.  Valitse **Yritykset**-valintaikkunassa yritys, jolle rakenneosaryhmä määritetään.
 3.  Valitse **Muokkaa**.
 4.  Valitse **Muokkaa yritystä** -valintaikkunan **Rakenneosaryhmä**-kentässä rakenneosa, johon yritys liitetään, tai luo uusi rakenneosaryhmä valitsemalla **Uusi**.
 5.  Liitä rakenneosaryhmä valitsemalla **OK**.
@@ -96,7 +96,7 @@ Kun rakenneosaryhmä on luotu ja sitä käytetään, voit tarkastella kaikkia si
 ### <a name="save-a-building-block-group-under-a-new-name"></a>Tallenna rakenneosaryhmä uudella nimellä
 
 Voit tallentaa aiemmin luodun rakenneosaryhmän uudella nimellä. Voit sitten muokata uutta rakenneosaryhmää niin, että alkuperäinen rakenneosaryhmä ei muutu.
-1.  Valitse Report Designerin **Yritys**-valikossa **Rakenneosaryhmät**.
+1.  Valitse raporttien suunnitteluohjelman **Yritys**-valikosta **Rakenneosaryhmät**.
 2.  Valitse **Rakenneosaryhmät**-valintaikkunassa uudella nimellä tallennettava rakenneosaryhmä.
 3.  Valitse **Tallenna nimellä**.
 4.  Syötä rakenneosaryhmälle uusi nimi ja kuvaus.
@@ -104,12 +104,12 @@ Voit tallentaa aiemmin luodun rakenneosaryhmän uudella nimellä. Voit sitten mu
 
 ### <a name="export-a-building-block-group"></a> Rakenneosaryhmän vieminen
 
-Voit viedä rakenneosanryhmän tai rakenneosaryhmän tietyn raportin rakenneosat. Voit käyttää vietyä rakenneosaryhmää varmuuskopiona. Voit myös kopioida viedyt tiedot rakenneosaryhmien tai Finance and Operations -asennusten välillä. Report Designer ja rakenneosaryhmä sisältävät yhdessä viitatut fonttityylit ja dimensioyhdistelmät.
+Voit viedä rakenneosan ryhmän tai tietyn raportin rakenneosia rakenneosan ryhmässä. Voit käyttää vietyä rakenneosan ryhmää varmuuskopiona. Voit myös kopioida viedyt tiedot rakenneosaryhmien tai Finance and Operations -asennusten välillä. Report Designer ja rakenneosaryhmä sisältävät yhdessä viitatut fonttityylit ja dimensioyhdistelmät.
 1.  Valitse Report Designerin **Yritys**-valikossa **Rakenneosaryhmät**.
-2.  Valitse **Rakenneosaryhmät**-valintaikkunassa vietävä rakenneosaryhmä. Valitse sitten **Vie**.
+2.  Valitse **Rakenneosaryhmät**-valintaikkunassa rakenneosaryhmä, jonka haluat viedä, ja valitse sitten **Vie**.
 3.  Valitse **Vie**-valintaikkunassa vietävät raporttien määritykset.
     -   Voit viedä kaikki raporttien määritykset ja liittyvät rakenneosat valitsemalla **Valitse kaikki**.
-    -   Voit viedä tiettyjä raportti-, rivi-, sarake-, puu- ja dimensioyhdistelmiä valitsemalla kyseisen välilehden ja valitsemalla sitten vietävät kohteet. Voit valita välilehdessä useita kohteita pitämällä Ctrl-näppäintä alhaalla. **Huomautus:** Kun valitset vietävät raportit, myös liittyvät rivi-, sarake-, puu- ja dimensioyhdistelmät valitaan.
+    -   Voit viedä tiettyjä raportti-, rivi-, sarake-, puu- ja dimensioyhdistelmiä valitsemalla kyseisen välilehden ja valitsemalla sitten vietävät kohteet. Voit valita välilehdessä useita kohteita pitämällä Ctrl-näppäintä alhaalla. **Huomautus:** kun valitset vietävät raportit, niihin liittyvät rivit, sarakkeet, puut ja dimensioyhdistelmät tulevat valituiksi.
 
 4.  Kun vietävien kohteiden valinta on tehty, valitse **Vie**.
 5.  Valitse **Tallenna nimellä** -valintaikkunassa sijainti, jonne rakenneosaryhmä viedään.
@@ -120,8 +120,8 @@ Voit viedä rakenneosanryhmän tai rakenneosaryhmän tietyn raportin rakenneosat
 
 Voit tuoda rakenneosaryhmän aiemmin luotuun rakenneosaryhmään tai voit luoda tiedoille uuden rakenneosaryhmän. Alkuperäiset fonttityylit ja yritysviittaukset säilyvät kaikissa tuoduissa rakenneosaryhmissä, ja ne sisältävät tarvittavat dimensioyhdistelmät.
 1.  Valitse Report Designerin **Yritys**-valikossa **Rakenneosaryhmät**.
-2.  Valitse **Rakenneosaryhmät**-valintaikkunassa rakenneosa, johon rakenneosaryhmä tuodaan. Valitse sitten **Tuo**.
-3.  Valitse **Avaa**-valintaikkunassa tuotava rakenneosaryhmä. Valitse sitten **Avaa**.
+2.  Valitse **Rakenneosaryhmät**-valintaikkunassa rakenneosa, johon haluat tuoda rakenneosaryhmän, ja valitse sitten **Tuo**.
+3.  Valitse **Avaa**-valintaikkunassa rakenneosaryhmä, jonka haluat tuoda, ja valitse sitten **Avaa**.
 4.  Valitse **Tuo**-valintaikkunassa tuotavat raporttien määritykset.
     -   Voit tuoda kaikki raporttien määritykset ja niitä tukevat rakenneosat valitsemalla **Valitse kaikki**.
     -   Voit tuoda tiettyjä raportti-, rivi-, sarake-, puu- tai dimensioyhdistelmiä valitsemalla tuotavat raportti-, rivi-, sarake-, puu- tai dimensioyhdistelmät.
@@ -130,9 +130,9 @@ Voit tuoda rakenneosaryhmän aiemmin luotuun rakenneosaryhmään tai voit luoda 
 
 ### <a name="undo-a-checkout-of-a-building-block"></a> Rakenneosan uloskuittauksen peruuttaminen
 
-Kun käyttäjä avaa rakenneosan, muut käyttäjät voivat käyttää kyseistä rakenneosaa ainoastaan vain luku -tilassa. Joskus käyttäjät saattavat unohtaa sulkea rakenneosan tai he sammuttavat järjestelmän rakenneosan sulkematta. Rakenneosa pysyy siinä tapauksessa uloskuitattuna eivätkä muut käyttäjät voi avata sitä. Näissä tilanteissa talousraportoinnin järjestelmänvalvoja voi kuitata **Uloskuitatut kohteet** -valintaikkunassa sisään rakenneosat, jotka käyttäjät ovat jättäneet uloskuitatuiksi. **Huomautus:** Vain järjestelmänvalvojan roolin omaavat käyttäjät voivat kuitata rakenneosia sisään **Uloskuitatut kohteet** -valintaikkunassa.
+Kun käyttäjä avaa rakenneosan, muut käyttäjät voivat käyttää kyseistä rakenneosaa ainoastaan vain luku -tilassa. Joskus käyttäjät saattavat unohtaa sulkea rakenneosan tai he sammuttavat järjestelmän rakenneosan sulkematta. Rakenneosa pysyy siinä tapauksessa uloskuitattuna eivätkä muut käyttäjät voi avata sitä. Näissä tilanteissa talousraportoinnin järjestelmänvalvoja voi kuitata **Uloskuitatut kohteet** -valintaikkunassa sisään rakenneosat, jotka käyttäjät ovat jättäneet uloskuitatuiksi. **Huomautus:** Vain järjestelmänvalvojat voivat kuitata rakenneosia sisään **Uloskuitatut kohteet** -valintaikkunassa.
 1.  Valitse Report Designerin **Työkalut**-valikosta **Uloskuitatut kohteet**.
-2.  Valitse **Uloskuitatut kohteet** -valintaikkunassa **Näytä kaikkien käyttäjien kohteet**. Luettelossa näkyvät kaikki rakenneosat, jotka on kuitattu ulos, ne rakenneosat uloskuitanneet käyttäjät.
+2.  Valitse **Uloskuitatut nimikkeet** -valintaikkunassa **Näytä kaikkien käyttäjien nimikkeet**. Luettelo päivittyy, ja siinä näkyvät kaikki ne rakenneosat, jotka ovat uloskuitattuina, sekä käyttäjät, jotka ovat kuitanneet ne ulos.
 3.  Valitse rakenneosa ja valitse sitten **Peruuta uloskuittaus**.
 4.  Valitse **Kyllä**, kun haluat kuitata rakenneosan sisään.
 

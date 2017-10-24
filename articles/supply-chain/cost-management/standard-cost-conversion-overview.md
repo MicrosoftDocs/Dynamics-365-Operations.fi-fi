@@ -1,7 +1,7 @@
 ---
 title: Standardikustannuksen muuntamisen yleiskuvaus
 description: "Tässä artikkelissa kuvataan prosessia, jonka avulla määritetään ja suoritetaan standardikustannusmuunto. Luetellut vaiheet suoritetaan sen jälkeen, kun standardikustannusmuunnon edellytykset ovat täyttyneet."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6e223c2d9a683d7b92b73d3fe3d3c8b22684d22c
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 2e59fd6e137d5f677ed4055385ef88922c8c42ba
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -62,13 +62,13 @@ Uusi kustannuslaskelmaversio on kohdistettu muuntotietueeseen **muunnoksen** kus
 Kohdistetun kustannuslaskelmaversion kustannustietoja voi ylläpitää vain **Standardikustannusmuunnot**-sivulla. Et voi käyttää kohdistetun kustannuslaskelmaversion kustannusten syöttöön tai laskentaan muunnon aikana **Kustannuslaskentaversion määritys** -sivua tai **Kustannuslaskentaversion ylläpito** -sivua. Näitä sivuja voi kuitenkin käyttää kohdistetun kustannuslaskelmaversion ylläpitoon muunnon suorituksen jälkeen.
 
 ## <a name="3-identify-the-items-to-convert-to-standard-cost"></a>3. Määritä standardikustannuksiin muunnettavat nimikkeet
-Määritä yksittäiset standardikustannuksiksi muunnettavat nimikkeet**Standardikustannusmuunnot**-sivun avulla. Voit lisätä useita nimikkeitä **Lisää nimikkeitä standardikustannusmuuntoon** -sivun avulla. Tavallisesti kaikki valmistetut nimikkeet sisällytetään yhteen muuntotietueeseen, jolloin kustannukset lasketaan oikein.
+Määritä yksittäiset standardikustannuksiksi muunnettavat nimikkeet **Standardikustannusmuunnot**-sivun avulla. Voit lisätä useita nimikkeitä **Lisää nimikkeitä standardikustannusmuuntoon** -sivun avulla. Tavallisesti kaikki valmistetut nimikkeet sisällytetään yhteen muuntotietueeseen, jolloin kustannukset lasketaan oikein.
 
 ## <a name="4-enter-or-calculate-the-pending-standard-cost-for-each-item-that-is-being-converted"></a>4. Syötä tai laske jokaiselle muunnettavalle nimikkeelle odottavat standardikustannukset
 Syötä ostettujen nimikkeiden ja siirtonimikkeiden kohdistetun kustannuslaskentaversion odottavat standardikustannukset **Nimikkeen hinta** -sivun avulla. Kustannustietueet ovat toimipaikkakohtaisia. Jokaiselle toimipaikalle on syötettävä nimikkeen odottavat kustannukset. Laske valmistettujen nimikkeiden odottavat standardikustannukset **Nimikkeen hinta** -sivun avulla. Jokaisen valmistavan toimipaikan valmistetun nimikkeen odottavat kustannukset on laskettava, ellei toimipaikka edusta siirtotoimipaikkaa. Tällöin odottavat kustannukset on syötettävä manuaalisesti. Joillakin nimikkeillä voi olla värin, koon tai konfiguraation tuotedimensio. **Standardikustannusmuunnot**-sivun **Käytä kustannushintaa variantin mukaan** -valintaruutu näyttää standardikustannukset jokaiselle tuotedimension yhdistelmälle. Kun tämän valintaruudun valinta poistetaan, sinun on syötettävä vain nimikkeen odottavat kustannukset.
 
 ## <a name="5-check-and-resolve-any-issues-for-the-items-that-are-being-converted"></a>5. Tarkista ja ratkaise kaikki muunnettavien nimikkeiden ongelmat
-Voit määrittää muunnettaviin nimikkeisiin liittyvät tunnistusongelmat**Standardikustannusmuunnon tarkistukset** -raportin avulla. Jos nimikkeeseen ei liity ongelmia, sen tilaksi muutetaan muunnostietueessa **Tarkistettu**. Jos nimikkeeseen liittyy ongelmia, ne on ratkaistava. Tämän jälkeen raportti suoritetaan uudelleen, kunnes tilaksi muutetaan **Tarkistettu**. Jos et voi ratkaista nimikkeen ongelmia ajoissa, voit poistaa nimikkeen muuntotietueesta ja muuntaa nimikkeen myöhemmin.
+Voit määrittää muunnettaviin nimikkeisiin liittyvät tunnistusongelmat **Standardikustannusmuunnon tarkistukset** -raportin avulla. Jos nimikkeeseen ei liity ongelmia, sen tilaksi muutetaan muunnostietueessa **Tarkistettu**. Jos nimikkeeseen liittyy ongelmia, ne on ratkaistava. Tämän jälkeen raportti suoritetaan uudelleen, kunnes tilaksi muutetaan **Tarkistettu**. Jos et voi ratkaista nimikkeen ongelmia ajoissa, voit poistaa nimikkeen muuntotietueesta ja muuntaa nimikkeen myöhemmin.
 
 ## <a name="6-change-the-status-of-the-conversion-record-to-ready"></a>6. Muuta muuntotietueen tilaksi Valmis
 Kun muuntotietueen tilaksi muutetaan **Valmis**, lopullinen tarkistus suoritetaan ennen standardikustannusmuunnon suoritusta. Tilaksi muutetaan **Valmis** vain, kun seuraavat ehdot täyttyvät:

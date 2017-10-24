@@ -1,7 +1,7 @@
 ---
 title: "Tuoterakenteen laskentaryhmät"
 description: "Tässä artikkelissa on tietoja tuoterakenteen laskentaryhmistä ja niiden määrittämisestä. Tuoterakenteen laskennan suorittamista varten yksittäisille nimikkeille laskentaryhmiä on määritettävä laskentaryhmiä. Vaihtoehtoisesti on määritettävä oletuslaskentaryhmä. Laskentaryhmän laskenta-asetuksia käytetään sitten Tuoterakenteen laskenta -sivun oletusarvoina tuoterakennetta laskettaessa."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3372c22d6ed90e7669f1335fdd3366b8e167ad27
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: c91f7ac3ded942afd5e359b59cee2ff58256622f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -50,7 +50,7 @@ Laskentaryhmät määritetään valitsemalla kustannustenhallinnassa **Ennalta m
 
 **Kustannushintamalli**-kentässä on neljä vaihtoehtoa.
 
--   **Nimikkeen kustannushinta** – kustannushintana käytetään**Vapautettu tuote** -taulun kustannushintaa tai nimikedimensioiden yhdistelmää.
+-   **Nimikkeen kustannushinta** – kustannushintana käytetään **Vapautettu tuote** -taulun kustannushintaa tai nimikedimensioiden yhdistelmää.
 -   **Nimikkeen ostohinta** – ostohinta **Vapautettu tuoteluettelo** -sivun **Osto**-välilehden **Kustannushinta**-kentässä.
 -   **Kauppasopimukset** – Voit määrittää tiettyjen nimike- ja toimittajayhdistelmien tai tiettyjen toimipaikkojen kauppasopimukset. Kun sitten valitset tässä kohdassa **Kauppasopimukset**-vaihtoehdon, käytetään ostohinnalle sekä nimikkeelle ja toimipaikalle luotua kauppasopimusta.
 -   **Varastohinta** – Yksikkökustannus lasketaan tuoterakenteen laskennassa käyttämällä nimikkeen nykyistä varastoarvoa. Yksikön kustannushinta lasketaan vain, jos kirjattu määrä ja fyysinen määrä on suurempi kuin 0 (nolla).
@@ -72,13 +72,21 @@ Laskentaryhmät määritetään valitsemalla kustannustenhallinnassa **Ennalta m
 
 ### <a name="warnings"></a>Varoitukset
 
-Voit valita **Varoitukset**-pikavälilehdessä niiden varoitussanomien asetukset, joita käyttäjät saavat tuoterakenteiden laskennassa. Jos valitse esimerkiksi **Ei tuoterakennetta** -valintaruudun, käyttäjää varoitetaan, jos aktiivista tuoterakenneversiota ei löydetä jollekin sellaiselle osalle ja päänimikkeelle, jolle tuoterakenteen laskenta suoritetaan. Jos valitse **Ei reittiä** -valintaruudun, käyttäjä saa varoituksen, jos aktiivista reititysversiota ei löydy. Jos käytät reiteillä ja työvaiheissa resursseja, voit määrittää järjestelmän tarkistamaan nämä resurssit. Jos resurssia ei sitten löydy aktiivisen reitin jokaiselle riville, käyttäjä saa varoituksen. Voit varmistaa ja tarkistaa myös kulutukseen. Kulutus on määrä tietyllä reitillä. Yleensä se ilmaisee ajan, joka tarvitaan tietyn tuotantoprosessin työvaiheen suorittamiseen. Voit tarkistaa, jos nimikkeellä ei ole kustannushintaa. Jos nimikkeellä ei ole aktiivista kustannushintaa, kustannusta ei lisätä tuoterakenteen laskentaan. Voit tarkistaa ja varmistaa myös kustannushinnan iän. Jos esimerkiksi annat arvon **60**, se ilmaisee, että yksikön kustannushinta on arvioitava uudelleen 60 päivän kuluttua. Jos tämä raja ylittyy, järjestelmä luo varoituksen. Kustannushinta annettiin nimikkeelle esimerkiksi tämän vuoden tammikuussa. Jos nyt on elokuu, kustannushinnan antamisesta on kulunut yli 60 päivää ja käyttäjä saa varoituksen, kun tuoterakenteen laskenta suoritetaan. Voit lisätä prosentin **Kokonaiskatteen vähimmäismäärä** -kenttään. Tämä arvo ilmaisee kohdan, jossa vähimmäiskatetta ei saavuteta. Jos tietyn osan katetuottoa ei saavuteta, käyttäjä saa varoituksen. Tämä kenttä auttaakin varmistamaan, ettet alita kustannuksia ja lisäkuljetuskustannuksia, jotka voivat liittyä nimikkeeseen.
-Oletusarvoiset Varasto ja varastonhallinnan parametrit -asetukset
---------------------------------------------------------------
+Voit valita **Varoitukset**-pikavälilehdessä niiden varoitussanomien asetukset, joita käyttäjät saavat tuoterakenteiden laskennassa. 
 
-Koska laskelmien suorittaminen edellyttää laskentaryhmiä, oletuslaskentaryhmä on määritettävä varastonhallinnan parametreissa. Näiden asetusten avulla yritykset saavat käyttöönsä kaikkia nimikkeitä koskevat vakiokustannusryhmän ja -katevaatimuksen. Jos tietyllä nimikkeellä on kuitenkin erityisiä laskentavaatimuksia, käyttäjä voi määrittää kyseiselle nimikkeelle toisen laskentaryhmän. Yleensä laskentaryhmät määritetään tuoterakenteen osan nimikkeille eikä tuoterakenteen nimikkeille. Kun varoitukset näytetään, myös laskentaryhmiä voi käyttää. Nimikkeille määritetty laskentaryhmä ohittaa varastonhallinnan parametreissa määritetyn oletusarvon. Voit määrittää oletusparametrin valitsemalla **Kustannushintojen hallinta** &gt; **Varaston kirjanpitokäytäntöjen määrittäminen** &gt; **Parametrit** &gt; **Varastokirjanpito** &gt; **Laskentaryhmä**. Määrittämällä oletusmääritysryhmän voit määrittää myös varoitusehdot, jotka esittävät käyttäjille kysymyksiä tuoterakenteen laskentaprosessin aikana, jos valitut osat voivat aiheuttaa laskentavirheitä.
-Näytä varoitussanomat Valmis-sivulla
-------------------------------------------
+Jos valitse esimerkiksi **Ei tuoterakennetta** -valintaruudun, käyttäjää varoitetaan, jos aktiivista tuoterakenneversiota ei löydetä jollekin sellaiselle osalle ja päänimikkeelle, jolle tuoterakenteen laskenta suoritetaan. Jos valitse **Ei reittiä** -valintaruudun, käyttäjä saa varoituksen, jos aktiivista reititysversiota ei löydy. Jos käytät reiteillä ja työvaiheissa resursseja, voit määrittää järjestelmän tarkistamaan nämä resurssit. Jos resurssia ei sitten löydy aktiivisen reitin jokaiselle riville, käyttäjä saa varoituksen. 
+
+Voit varmistaa ja tarkistaa myös kulutukseen. Kulutus on määrä tietyllä reitillä. Yleensä se ilmaisee ajan, joka tarvitaan tietyn tuotantoprosessin työvaiheen suorittamiseen. Voit tarkistaa, jos nimikkeellä ei ole kustannushintaa. Jos nimikkeellä ei ole aktiivista kustannushintaa, kustannusta ei lisätä tuoterakenteen laskentaan. 
+
+Voit tarkistaa ja varmistaa myös kustannushinnan iän. Jos esimerkiksi annat arvon **60**, se ilmaisee, että yksikön kustannushinta on arvioitava uudelleen 60 päivän kuluttua. Jos tämä raja ylittyy, järjestelmä luo varoituksen. Kustannushinta annettiin nimikkeelle esimerkiksi tämän vuoden tammikuussa. Jos nyt on elokuu, kustannushinnan antamisesta on kulunut yli 60 päivää ja käyttäjä saa varoituksen, kun tuoterakenteen laskenta suoritetaan. Voit lisätä prosentin **Kokonaiskatteen vähimmäismäärä** -kenttään. Tämä arvo ilmaisee kohdan, jossa vähimmäiskatetta ei saavuteta. Jos tietyn osan katetuottoa ei saavuteta, käyttäjä saa varoituksen. Tämä kenttä auttaakin varmistamaan, ettet alita kustannuksia ja lisäkuljetuskustannuksia, jotka voivat liittyä nimikkeeseen.
+
+### <a name="default-setup-in-inventory-and-warehouse-management-parameters"></a>Oletusarvoiset Varasto ja varastonhallinnan parametrit -asetukset
+
+Koska laskelmien suorittaminen edellyttää laskentaryhmiä, oletuslaskentaryhmä on määritettävä varastonhallinnan parametreissa. Näiden asetusten avulla yritykset saavat käyttöönsä kaikkia nimikkeitä koskevat vakiokustannusryhmän ja -katevaatimuksen. Jos tietyllä nimikkeellä on kuitenkin erityisiä laskentavaatimuksia, käyttäjä voi määrittää kyseiselle nimikkeelle toisen laskentaryhmän. Yleensä laskentaryhmät määritetään tuoterakenteen osan nimikkeille eikä tuoterakenteen nimikkeille. Kun varoitukset näytetään, myös laskentaryhmiä voi käyttää. Nimikkeille määritetty laskentaryhmä ohittaa varastonhallinnan parametreissa määritetyn oletusarvon. 
+
+Voit määrittää oletusparametrin valitsemalla **Kustannushintojen hallinta** &gt; **Varaston kirjanpitokäytäntöjen määrittäminen** &gt; **Parametrit** &gt; **Varastokirjanpito** &gt; **Laskentaryhmä**. Määrittämällä oletusmääritysryhmän voit määrittää myös varoitusehdot, jotka esittävät käyttäjille kysymyksiä tuoterakenteen laskentaprosessin aikana, jos valitut osat voivat aiheuttaa laskentavirheitä.
+
+### <a name="view-warning-messages-on-the-complete-page"></a>Näytä varoitussanomat Valmis-sivulla
 
 Tuoterakenteen laskenta luo varoitussanomia. Voit tarkastella valittua nimikettä koskevia varoituksia. Luo esimerkiksi myynnissä ja markkinoinnissa uusi myyntitilaus nimikkeelle D0001. Jos haluat tarkastella tietoja ja varoituksia, valitse myyntilausrivin **Päivitä rivi** -valikossa **tuoterakenteeseen tai kaavaan perustuva laskenta**. Voit näyttää tuoterakenteen laskentatulokset myös **Valmis**-sivulla. Varoitussanomissa vain kaksi varoitusehtoa koskee valmistettuja nimikkeitä, kun taas neljä ehtoa voidaan käyttää missä tahansa nimikkeessä:
 -   Tilanne tunnistetaan, kun valmistetulla nimikkeellä ei ole aktiivista tuoterakennetta.

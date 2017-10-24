@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 108d377995a71400e470158993526a6b447a4066
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 5b6f3da6885d5e156ec1fde0609b1b35aa77b6c0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -79,7 +79,7 @@ Asiakas 4032 voi maksaa laskun osissa, esimerkiksi puolet kustakin laskusta. Eri
 | Valittu                 | Normaali            | FTI-10041 | 4032    | 25.6.2015 | 25.7.2015 | 10041   | 1 000,00                             |                                       | USD      | 495,00           |
 | Valitut ja korostetut | Normaali            | FTI-10042 | 4032    | 25.6.2015 | 25.7.2015 | 10042   | 1 000,00                             |                                       | USD      | 490,00           |
 
-Arnie voi myös syöttää manuaalisesti maksusumman 1 485,00 ennen kuin hän avaa **Selvitä tapahtumat** -sivun. Jos Arnie manuaalisesti syöttää maksusumman ja merkitsee siten kaikki kolme tapahtumaa, mutta hän ei muuta**Täsmäytettävä summa** -kentän arvoa kunkin tapahtuman osalta, hän saa seuraavan sanoman, kun hän sulkee sivun:
+Arnie voi myös syöttää manuaalisesti maksusumman 1 485,00 ennen kuin hän avaa **Selvitä tapahtumat** -sivun. Jos Arnie manuaalisesti syöttää maksusumman ja merkitsee siten kaikki kolme tapahtumaa, mutta hän ei muuta **Täsmäytettävä summa** -kentän arvoa kunkin tapahtuman osalta, hän saa seuraavan sanoman, kun hän sulkee sivun:
 
 > Merkittyjen tapahtumien kokonaissumma poikkeaa kirjauskansion summasta. Muutetaanko kirjauskansion summa?
 

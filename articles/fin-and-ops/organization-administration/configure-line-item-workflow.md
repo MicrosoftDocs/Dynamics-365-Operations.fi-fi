@@ -15,13 +15,13 @@ ms.custom: 195833
 ms.assetid: 3237347e-71d5-4569-bc9a-0d0fc9410b78
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2781a0344f1de5caf0031d7c3d5b88678be153a4
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: d888bf4285a27369b197ed66e5975cc806c640d3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -46,7 +46,7 @@ Voit määrittää seuraavasti, käytetäänkö samaa työnkulkua kaikkien nimik
 1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
 2.  Jos saman työnkulku käsittelee kaikki nimikkeet asiakirjassa, valitse **Käynnistä kaikille rivinimikkeille sama työnkulku**. Valitse työnkulku, joka käsittelee rivinimikkeet.
 3.  Jos tietty työnkulku käsittelee nimikkeet, jotka täyttävät tietyt ehdot, valitse **Käynnistä kullekin rivinimikkeelle eri työnkulku**. Noudata näitä ohjeita ja määritä ehtojoukko:
-    1.  Valitse**Lisää**.
+    1.  Valitse **Lisää**.
     2.  Valitse ehto taulukosta.
     3.  **Ehdon nimi** -välilehdessä kirjoita nimi ehtojoukolle, jotka määrität.
     4.  Kirjoita ehto valitsemalla **Lisää ehto**.

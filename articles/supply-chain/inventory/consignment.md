@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a6e3f0e58e14cc4d68d2249a4e3b69515f23e838
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: b5f2f6d24537a6e28a820b298a88525553e1cd18
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -56,7 +56,7 @@ Tässä esimerkissä USMF-yrityksellä on tavaralähetyksiä koskeva sopimus toi
 USMF suorittaa kausittaisia lisäprosesseja:
 
 -   Toimittajan omistaman varaston fyysistä siirtymistä varastosta toiseen käsitellään siirron kirjauskansiossa.
--   Käytettävissä oleva fyysinen varasto päivitetään käyttämällä**Inventointi**-kirjauskansiota. Toimittaja voi myös käyttää inventointia ja päivittää käytettävissä olevan varaston, jos hänellä on tarvittava käyttöoikeus.
+-   Käytettävissä oleva fyysinen varasto päivitetään käyttämällä **Inventointi**-kirjauskansiota. Toimittaja voi myös käyttää inventointia ja päivittää käytettävissä olevan varaston, jos hänellä on tarvittava käyttöoikeus.
 
 Toimittaja US-104 voi valvoa päivityksiä käyttämällä **Käytettävissä oleva tavaralähetysvarasto** -sivua.
 
@@ -68,7 +68,7 @@ Tavaralähetyksen täydennystilaus -asiakirjalla voidaan pyytää ja jäljittä�
 ## <a name="inventory-ownership-change-journal"></a>Varaston omistajuuden muutoksen kirjauskansio
 Varaston omistajuuden muutoksen kirjauskansiota käytetään muutettaessa lähetysvaraston omistajuus toimittajalta vastaanottavalle yritykselle. Odotettuja varastotapahtumia ei luoda kirjaan. Vain ne varastotapahtumat luodaan, jotka liittyvät kirjattuun kirjauskansioon. Kun kirjauskansio on kirjattu:
 
--   Toimittajan omistama varasto vapautetaan**Omistuksen muutos** -viittauksen ja **Myyty**-tilan avulla.
+-   Toimittajan omistama varasto vapautetaan **Omistuksen muutos** -viittauksen ja **Myyty**-tilan avulla.
 -   Oikeushenkilö vastaanottaa varaston käytettäväksi varastotapahtumalla, johon päivitetään ostotilauksen tuotteen vastaanotto. Tämä määrittää tilauksen tilaksi **vastaanotettu**. Tavaralähetyksen ostotilausten **Alkuperä**-kentän tilaksi muuttuu **Tavaralähetys**.
 
 Tavaralähetyksen ostotilausten tuoterivien määrää ei voida päivittää tilauksen luonnin jälkeen.
