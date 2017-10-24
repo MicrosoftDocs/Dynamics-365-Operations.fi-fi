@@ -16,38 +16,38 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: f53de983389dd8cbfb2c29af84539f1a73dc0a85
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="create-a-bar-code-for-a-product"></a><span data-ttu-id="78884-103">Viivakoodin luonti tuotteelle</span><span class="sxs-lookup"><span data-stu-id="78884-103">Create a bar code for a product</span></span>
+# <a name="create-a-bar-code-for-a-product"></a><span data-ttu-id="ea365-103">Viivakoodin luonti tuotteelle</span><span class="sxs-lookup"><span data-stu-id="ea365-103">Create a bar code for a product</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="78884-104">Tässä toimintaohjeessa kuvataan viivakoodin manuaalinen luonti käyttämällä esimerkkinä nimiketunnusta M0001.</span><span class="sxs-lookup"><span data-stu-id="78884-104">This procedure shows how to manually create a bar code using the item number M0001 as an example.</span></span> <span data-ttu-id="78884-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="78884-105">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="ea365-104">Tässä toimintaohjeessa kuvataan viivakoodin manuaalinen luonti käyttämällä esimerkkinä nimiketunnusta M0001.</span><span class="sxs-lookup"><span data-stu-id="ea365-104">This procedure shows how to manually create a bar code using the item number M0001 as an example.</span></span> <span data-ttu-id="ea365-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="ea365-105">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="78884-106">Valitse Vapautetun tuotteen ylläpito.</span><span class="sxs-lookup"><span data-stu-id="78884-106">Click Released product maintenance.</span></span>
-2. <span data-ttu-id="78884-107">Valitse Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="78884-107">Click Released products.</span></span>
-3. <span data-ttu-id="78884-108">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="78884-108">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="78884-109">Valitse toimintoruudussa Varastonhallinta.</span><span class="sxs-lookup"><span data-stu-id="78884-109">On the Action Pane, click Manage inventory.</span></span>
-5. <span data-ttu-id="78884-110">Valitse Viivakoodit.</span><span class="sxs-lookup"><span data-stu-id="78884-110">Click Bar codes.</span></span>
-6. <span data-ttu-id="78884-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="78884-111">Click New.</span></span>
-7. <span data-ttu-id="78884-112">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="78884-112">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="78884-113">Anna tai valitse Viivakoodi-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="78884-113">In the Barcode setup field, enter or select a value.</span></span>
-9. <span data-ttu-id="78884-114">Syötä tai valitse arvo Viivakoodi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="78884-114">In the Bar code field, enter or select a value.</span></span>
-10. <span data-ttu-id="78884-115">Kirjoita arvo Viivakoodi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="78884-115">In the Bar code field, type a value.</span></span>
-    * <span data-ttu-id="78884-116">Paina sarkainnäppäintä.</span><span class="sxs-lookup"><span data-stu-id="78884-116">Press the Tab key.</span></span>  
-11. <span data-ttu-id="78884-117">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="78884-117">Close the page.</span></span>
-12. <span data-ttu-id="78884-118">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="78884-118">In the Quantity field, enter a number.</span></span>
-13. <span data-ttu-id="78884-119">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="78884-119">Click Save.</span></span>
-    * <span data-ttu-id="78884-120">Kun valitset Tallenna, viivakoodin tarkistetaan ja tässä tapauksessa se näyttää virheen, että tarkistusluku on 3, vaikka odotettu tarkistusluku pitäisi olla 8.</span><span class="sxs-lookup"><span data-stu-id="78884-120">When you click Save, the barcode check is run, and in this case it will display an error stating that the expected check digit is 8, but that 3 was found.</span></span> <span data-ttu-id="78884-121">Päivitä viivakoodin numero käsin niin, että viimeinen numero on 8.</span><span class="sxs-lookup"><span data-stu-id="78884-121">Manually update the barcode number so that 8 is at the end.</span></span>  
-14. <span data-ttu-id="78884-122">Syötä tai valitse arvo Viivakoodi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="78884-122">In the Bar code field, enter or select a value.</span></span>
-15. <span data-ttu-id="78884-123">Kirjoita arvo Viivakoodi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="78884-123">In the Bar code field, type a value.</span></span>
-    * <span data-ttu-id="78884-124">Paina sarkainnäppäintä.</span><span class="sxs-lookup"><span data-stu-id="78884-124">Press the Tab key.</span></span>  
-16. <span data-ttu-id="78884-125">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="78884-125">Close the page.</span></span>
-17. <span data-ttu-id="78884-126">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="78884-126">Click Save.</span></span>
-18. <span data-ttu-id="78884-127">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="78884-127">Close the page.</span></span>
+1. <span data-ttu-id="ea365-106">Valitse Vapautetun tuotteen ylläpito.</span><span class="sxs-lookup"><span data-stu-id="ea365-106">Click Released product maintenance.</span></span>
+2. <span data-ttu-id="ea365-107">Valitse Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="ea365-107">Click Released products.</span></span>
+3. <span data-ttu-id="ea365-108">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="ea365-108">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="ea365-109">Valitse toimintoruudussa Varastonhallinta.</span><span class="sxs-lookup"><span data-stu-id="ea365-109">On the Action Pane, click Manage inventory.</span></span>
+5. <span data-ttu-id="ea365-110">Valitse Viivakoodit.</span><span class="sxs-lookup"><span data-stu-id="ea365-110">Click Bar codes.</span></span>
+6. <span data-ttu-id="ea365-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="ea365-111">Click New.</span></span>
+7. <span data-ttu-id="ea365-112">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="ea365-112">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="ea365-113">Anna tai valitse Viivakoodi-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="ea365-113">In the Barcode setup field, enter or select a value.</span></span>
+9. <span data-ttu-id="ea365-114">Syötä tai valitse arvo Viivakoodi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ea365-114">In the Bar code field, enter or select a value.</span></span>
+10. <span data-ttu-id="ea365-115">Kirjoita arvo Viivakoodi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ea365-115">In the Bar code field, type a value.</span></span>
+    * <span data-ttu-id="ea365-116">Paina sarkainnäppäintä.</span><span class="sxs-lookup"><span data-stu-id="ea365-116">Press the Tab key.</span></span>  
+11. <span data-ttu-id="ea365-117">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ea365-117">Close the page.</span></span>
+12. <span data-ttu-id="ea365-118">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ea365-118">In the Quantity field, enter a number.</span></span>
+13. <span data-ttu-id="ea365-119">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="ea365-119">Click Save.</span></span>
+    * <span data-ttu-id="ea365-120">Kun valitset Tallenna, viivakoodin tarkistetaan ja tässä tapauksessa se näyttää virheen, että tarkistusluku on 3, vaikka odotettu tarkistusluku pitäisi olla 8.</span><span class="sxs-lookup"><span data-stu-id="ea365-120">When you click Save, the barcode check is run, and in this case it will display an error stating that the expected check digit is 8, but that 3 was found.</span></span> <span data-ttu-id="ea365-121">Päivitä viivakoodin numero käsin niin, että viimeinen numero on 8.</span><span class="sxs-lookup"><span data-stu-id="ea365-121">Manually update the barcode number so that 8 is at the end.</span></span>  
+14. <span data-ttu-id="ea365-122">Syötä tai valitse arvo Viivakoodi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ea365-122">In the Bar code field, enter or select a value.</span></span>
+15. <span data-ttu-id="ea365-123">Kirjoita arvo Viivakoodi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ea365-123">In the Bar code field, type a value.</span></span>
+    * <span data-ttu-id="ea365-124">Paina sarkainnäppäintä.</span><span class="sxs-lookup"><span data-stu-id="ea365-124">Press the Tab key.</span></span>  
+16. <span data-ttu-id="ea365-125">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ea365-125">Close the page.</span></span>
+17. <span data-ttu-id="ea365-126">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="ea365-126">Click Save.</span></span>
+18. <span data-ttu-id="ea365-127">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ea365-127">Close the page.</span></span>
 
 

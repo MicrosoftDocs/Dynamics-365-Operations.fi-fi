@@ -16,24 +16,24 @@ ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: b39b0f0acf0a0fcdc472ba0bbfc3b15451c7a274
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="set-a-users-preferred-time-zone"></a><span data-ttu-id="83747-103">Käyttäjän ensisijaisen aikavyöhykkeen asettaminen</span><span class="sxs-lookup"><span data-stu-id="83747-103">Set a user's preferred time zone</span></span>
+# <a name="set-a-users-preferred-time-zone"></a><span data-ttu-id="bc00e-103">Käyttäjän ensisijaisen aikavyöhykkeen asettaminen</span><span class="sxs-lookup"><span data-stu-id="bc00e-103">Set a user's preferred time zone</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="83747-104">Seuraava menettely osoittaa, miten käyttäjä, jolla on järjestelmänvalvojan rooli, voi määrittää käyttäjän aikavyöhykkeen.</span><span class="sxs-lookup"><span data-stu-id="83747-104">The following procedure explains how a user in the System Administrator role can set the time zone for a user.</span></span>
+<span data-ttu-id="bc00e-104">Seuraava menettely osoittaa, miten käyttäjä, jolla on järjestelmänvalvojan rooli, voi määrittää käyttäjän aikavyöhykkeen.</span><span class="sxs-lookup"><span data-stu-id="bc00e-104">The following procedure explains how a user in the System Administrator role can set the time zone for a user.</span></span>
 
-1. <span data-ttu-id="83747-105">Valitse Järjestelmänhallinta > Käyttäjät > Käyttäjät.</span><span class="sxs-lookup"><span data-stu-id="83747-105">Go to System administration > Users > Users.</span></span>
-2. <span data-ttu-id="83747-106">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="83747-106">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="83747-107">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="83747-107">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="83747-108">Napsauta Käyttäjän asetukset.</span><span class="sxs-lookup"><span data-stu-id="83747-108">Click User options.</span></span>
-5. <span data-ttu-id="83747-109">Napsauta Asetukset-välilehteä.</span><span class="sxs-lookup"><span data-stu-id="83747-109">Click the Preferences tab.</span></span>
-6. <span data-ttu-id="83747-110">Valitse Aikavyöhyke-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="83747-110">In the Time zone field, select an option.</span></span>
-7. <span data-ttu-id="83747-111">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="83747-111">Click Save.</span></span>
+1. <span data-ttu-id="bc00e-105">Valitse Järjestelmänhallinta > Käyttäjät > Käyttäjät.</span><span class="sxs-lookup"><span data-stu-id="bc00e-105">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="bc00e-106">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="bc00e-106">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="bc00e-107">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="bc00e-107">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="bc00e-108">Napsauta Käyttäjän asetukset.</span><span class="sxs-lookup"><span data-stu-id="bc00e-108">Click User options.</span></span>
+5. <span data-ttu-id="bc00e-109">Napsauta Asetukset-välilehteä.</span><span class="sxs-lookup"><span data-stu-id="bc00e-109">Click the Preferences tab.</span></span>
+6. <span data-ttu-id="bc00e-110">Valitse Aikavyöhyke-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="bc00e-110">In the Time zone field, select an option.</span></span>
+7. <span data-ttu-id="bc00e-111">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="bc00e-111">Click Save.</span></span>
 
 

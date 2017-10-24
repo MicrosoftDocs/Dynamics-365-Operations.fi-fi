@@ -17,43 +17,43 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 09c5d263f3ad0bade6b7dd8f099dd3f62a1ddf5d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="configure-a-worker"></a><span data-ttu-id="4002d-103">Työntekijän konfiguroiminen</span><span class="sxs-lookup"><span data-stu-id="4002d-103">Configure a worker</span></span>
+# <a name="configure-a-worker"></a><span data-ttu-id="360f0-103">Työntekijän konfiguroiminen</span><span class="sxs-lookup"><span data-stu-id="360f0-103">Configure a worker</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="4002d-104">Tässä menettelyssä kerrotaan, miten määrität vähittäismyynnin työntekijästä myyntiedustajan, joka on oikeutettu myyntipisteen myyntiprovisioihin.</span><span class="sxs-lookup"><span data-stu-id="4002d-104">This procedure demonstrates how to configure a retail worker as a sales representative who is eligible for commission on sales in POS.</span></span> <span data-ttu-id="4002d-105">Menettely käyttää esittelytietojen USRT-yritystä.</span><span class="sxs-lookup"><span data-stu-id="4002d-105">This procedure uses the USRT demo data company.</span></span>
+<span data-ttu-id="360f0-104">Tässä menettelyssä kerrotaan, miten määrität vähittäismyynnin työntekijästä myyntiedustajan, joka on oikeutettu myyntipisteen myyntiprovisioihin.</span><span class="sxs-lookup"><span data-stu-id="360f0-104">This procedure demonstrates how to configure a retail worker as a sales representative who is eligible for commission on sales in POS.</span></span> <span data-ttu-id="360f0-105">Menettely käyttää esittelytietojen USRT-yritystä.</span><span class="sxs-lookup"><span data-stu-id="360f0-105">This procedure uses the USRT demo data company.</span></span>
 
 
-## <a name="create-a-commission-sales-group-for-the-worker"></a><span data-ttu-id="4002d-106">Luo työntekijälle myyntiprovisioryhmä</span><span class="sxs-lookup"><span data-stu-id="4002d-106">Create a commission sales group for the worker</span></span>
-1. <span data-ttu-id="4002d-107">Valitse Myynti ja markkinointi > Provisiot > Myyntiryhmät.</span><span class="sxs-lookup"><span data-stu-id="4002d-107">Go to Sales and marketing > Commissions > Sales groups.</span></span>
-    * <span data-ttu-id="4002d-108">Työntekijöitä voi liittää yhteen tai useampaan myyntiryhmään.</span><span class="sxs-lookup"><span data-stu-id="4002d-108">Workers can be assigned to one or more sales groups.</span></span> <span data-ttu-id="4002d-109">Myyntipisteessä voit valita minkä tahansa myyntiryhmän, joka sisältää työntekijöitä liikkeen osoitekirjasta.</span><span class="sxs-lookup"><span data-stu-id="4002d-109">In POS, you can choose any sales group that contains workers from the store's address book.</span></span>  
-2. <span data-ttu-id="4002d-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="4002d-110">Click New.</span></span>
-3. <span data-ttu-id="4002d-111">Kirjoita Ryhmä-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="4002d-111">In the Group field, type a value.</span></span>
-4. <span data-ttu-id="4002d-112">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="4002d-112">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="4002d-113">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="4002d-113">Click Save.</span></span>
-6. <span data-ttu-id="4002d-114">Valitse toimintoruudussa Yleiset.</span><span class="sxs-lookup"><span data-stu-id="4002d-114">On the Action Pane, click General.</span></span>
-7. <span data-ttu-id="4002d-115">Valitse Myyjä.</span><span class="sxs-lookup"><span data-stu-id="4002d-115">Click Sales rep.</span></span>
-    * <span data-ttu-id="4002d-116">Myyntiryhmä voi sisältää useamman kuin yhden työntekijän.</span><span class="sxs-lookup"><span data-stu-id="4002d-116">A sales group can contain more than one worker.</span></span> <span data-ttu-id="4002d-117">Provisiot voi jakaa työntekijöille sen mukaan, miten provisio-osuus on määritetty.</span><span class="sxs-lookup"><span data-stu-id="4002d-117">Commissions can be split between workers based on how you define the commission share.</span></span>  
-8. <span data-ttu-id="4002d-118">Syötä tai valitse arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="4002d-118">In the Name field, enter or select a value.</span></span>
-9. <span data-ttu-id="4002d-119">Kirjoita Provisio-osuus -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="4002d-119">In the Commission share field, enter a number.</span></span>
-10. <span data-ttu-id="4002d-120">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="4002d-120">Click Save.</span></span>
-11. <span data-ttu-id="4002d-121">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="4002d-121">Close the page.</span></span>
-12. <span data-ttu-id="4002d-122">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="4002d-122">Close the page.</span></span>
+## <a name="create-a-commission-sales-group-for-the-worker"></a><span data-ttu-id="360f0-106">Luo työntekijälle myyntiprovisioryhmä</span><span class="sxs-lookup"><span data-stu-id="360f0-106">Create a commission sales group for the worker</span></span>
+1. <span data-ttu-id="360f0-107">Valitse Myynti ja markkinointi > Provisiot > Myyntiryhmät.</span><span class="sxs-lookup"><span data-stu-id="360f0-107">Go to Sales and marketing > Commissions > Sales groups.</span></span>
+    * <span data-ttu-id="360f0-108">Työntekijöitä voi liittää yhteen tai useampaan myyntiryhmään.</span><span class="sxs-lookup"><span data-stu-id="360f0-108">Workers can be assigned to one or more sales groups.</span></span> <span data-ttu-id="360f0-109">Myyntipisteessä voit valita minkä tahansa myyntiryhmän, joka sisältää työntekijöitä liikkeen osoitekirjasta.</span><span class="sxs-lookup"><span data-stu-id="360f0-109">In POS, you can choose any sales group that contains workers from the store's address book.</span></span>  
+2. <span data-ttu-id="360f0-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="360f0-110">Click New.</span></span>
+3. <span data-ttu-id="360f0-111">Kirjoita Ryhmä-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="360f0-111">In the Group field, type a value.</span></span>
+4. <span data-ttu-id="360f0-112">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="360f0-112">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="360f0-113">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="360f0-113">Click Save.</span></span>
+6. <span data-ttu-id="360f0-114">Valitse toimintoruudussa Yleiset.</span><span class="sxs-lookup"><span data-stu-id="360f0-114">On the Action Pane, click General.</span></span>
+7. <span data-ttu-id="360f0-115">Valitse Myyjä.</span><span class="sxs-lookup"><span data-stu-id="360f0-115">Click Sales rep.</span></span>
+    * <span data-ttu-id="360f0-116">Myyntiryhmä voi sisältää useamman kuin yhden työntekijän.</span><span class="sxs-lookup"><span data-stu-id="360f0-116">A sales group can contain more than one worker.</span></span> <span data-ttu-id="360f0-117">Provisiot voi jakaa työntekijöille sen mukaan, miten provisio-osuus on määritetty.</span><span class="sxs-lookup"><span data-stu-id="360f0-117">Commissions can be split between workers based on how you define the commission share.</span></span>  
+8. <span data-ttu-id="360f0-118">Syötä tai valitse arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="360f0-118">In the Name field, enter or select a value.</span></span>
+9. <span data-ttu-id="360f0-119">Kirjoita Provisio-osuus -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="360f0-119">In the Commission share field, enter a number.</span></span>
+10. <span data-ttu-id="360f0-120">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="360f0-120">Click Save.</span></span>
+11. <span data-ttu-id="360f0-121">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="360f0-121">Close the page.</span></span>
+12. <span data-ttu-id="360f0-122">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="360f0-122">Close the page.</span></span>
 
-## <a name="assign-the-workers-default-sales-group"></a><span data-ttu-id="4002d-123">Määritä työntekijät oletusmyyntiryhmään</span><span class="sxs-lookup"><span data-stu-id="4002d-123">Assign the workers default sales group</span></span>
-1. <span data-ttu-id="4002d-124">Siirry kohtaan Vähittäismyynti ja kauppa > Työntekijät > Työntekijät.</span><span class="sxs-lookup"><span data-stu-id="4002d-124">Go to Retail and commerce > Employees > Workers.</span></span>
-2. <span data-ttu-id="4002d-125">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="4002d-125">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="4002d-126">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="4002d-126">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="4002d-127">Valitse Vähittäismyynti-välilehti.</span><span class="sxs-lookup"><span data-stu-id="4002d-127">Click the Retail tab.</span></span>
-    * <span data-ttu-id="4002d-128">Työntekijä voidaan määrittää myynnin oletusryhmään.</span><span class="sxs-lookup"><span data-stu-id="4002d-128">A worker can be assigned to a default sales group.</span></span> <span data-ttu-id="4002d-129">Myynnin oletusryhmä automaattisesti lisätään automaattisesti myyntipisteen myyntiriveille, jos asetus on käytössä myymälän toimintoprofiilissa.</span><span class="sxs-lookup"><span data-stu-id="4002d-129">The default sales group will be automatically added to sales lines in POS if the option is enabled in the functionality profile for the store.</span></span>  
-5. <span data-ttu-id="4002d-130">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="4002d-130">Click Edit.</span></span>
-6. <span data-ttu-id="4002d-131">Syötä tai valitse arvo Oletusryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="4002d-131">In the Default group field, enter or select a value.</span></span>
-7. <span data-ttu-id="4002d-132">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="4002d-132">Click Save.</span></span>
+## <a name="assign-the-workers-default-sales-group"></a><span data-ttu-id="360f0-123">Määritä työntekijät oletusmyyntiryhmään</span><span class="sxs-lookup"><span data-stu-id="360f0-123">Assign the workers default sales group</span></span>
+1. <span data-ttu-id="360f0-124">Siirry kohtaan Vähittäismyynti ja kauppa > Työntekijät > Työntekijät.</span><span class="sxs-lookup"><span data-stu-id="360f0-124">Go to Retail and commerce > Employees > Workers.</span></span>
+2. <span data-ttu-id="360f0-125">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="360f0-125">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="360f0-126">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="360f0-126">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="360f0-127">Valitse Vähittäismyynti-välilehti.</span><span class="sxs-lookup"><span data-stu-id="360f0-127">Click the Retail tab.</span></span>
+    * <span data-ttu-id="360f0-128">Työntekijä voidaan määrittää myynnin oletusryhmään.</span><span class="sxs-lookup"><span data-stu-id="360f0-128">A worker can be assigned to a default sales group.</span></span> <span data-ttu-id="360f0-129">Myynnin oletusryhmä automaattisesti lisätään automaattisesti myyntipisteen myyntiriveille, jos asetus on käytössä myymälän toimintoprofiilissa.</span><span class="sxs-lookup"><span data-stu-id="360f0-129">The default sales group will be automatically added to sales lines in POS if the option is enabled in the functionality profile for the store.</span></span>  
+5. <span data-ttu-id="360f0-130">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="360f0-130">Click Edit.</span></span>
+6. <span data-ttu-id="360f0-131">Syötä tai valitse arvo Oletusryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="360f0-131">In the Default group field, enter or select a value.</span></span>
+7. <span data-ttu-id="360f0-132">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="360f0-132">Click Save.</span></span>
 
 

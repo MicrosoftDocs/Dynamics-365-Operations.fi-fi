@@ -17,33 +17,33 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 8f608a38dd28a77e2a33e5c23cf35b5a9e6a8c38
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="set-up-an-appointment-for-a-load"></a><span data-ttu-id="5bea3-103">Tapaamisen määrittäminen kuormalle</span><span class="sxs-lookup"><span data-stu-id="5bea3-103">Set up an appointment for a load</span></span>
+# <a name="set-up-an-appointment-for-a-load"></a><span data-ttu-id="2ae80-103">Tapaamisen määrittäminen kuormalle</span><span class="sxs-lookup"><span data-stu-id="2ae80-103">Set up an appointment for a load</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="5bea3-104">Tässä menettelyssä kuvataan, miten laiturin varaus kuormitustapahtumaa määritetään ja suunnitellaan.</span><span class="sxs-lookup"><span data-stu-id="5bea3-104">This procedure shows how to set up and plan a dock appointment for a load.</span></span> <span data-ttu-id="5bea3-105">Kuljetuskoordinaattori tekee tämän yleensä.</span><span class="sxs-lookup"><span data-stu-id="5bea3-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="5bea3-106">Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="5bea3-106">You can use this procedure in the USMF demo data company.</span></span>
+<span data-ttu-id="2ae80-104">Tässä menettelyssä kuvataan, miten laiturin varaus kuormitustapahtumaa määritetään ja suunnitellaan.</span><span class="sxs-lookup"><span data-stu-id="2ae80-104">This procedure shows how to set up and plan a dock appointment for a load.</span></span> <span data-ttu-id="2ae80-105">Kuljetuskoordinaattori tekee tämän yleensä.</span><span class="sxs-lookup"><span data-stu-id="2ae80-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="2ae80-106">Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="2ae80-106">You can use this procedure in the USMF demo data company.</span></span>
 
 
-## <a name="select-the-load"></a><span data-ttu-id="5bea3-107">Valitse kuorma.</span><span class="sxs-lookup"><span data-stu-id="5bea3-107">Select the load</span></span>
-1. <span data-ttu-id="5bea3-108">Valitse Kuljetustenhallinta > Suunnittelu > Kuormasuunnittelun työtila.</span><span class="sxs-lookup"><span data-stu-id="5bea3-108">Go to Transportation management > Planning > Load planning workbench.</span></span>
-2. <span data-ttu-id="5bea3-109">Poista Piilota toimitettu ja vastaanotettu -valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="5bea3-109">Clear the Hide shipped and received check box.</span></span>
-3. <span data-ttu-id="5bea3-110">Valitse luettelosta kuorma, jonka tila on Toimitettu.</span><span class="sxs-lookup"><span data-stu-id="5bea3-110">In the list, select the load that has a status of Shipped.</span></span>
-4. <span data-ttu-id="5bea3-111">Valitse Kuljetus.</span><span class="sxs-lookup"><span data-stu-id="5bea3-111">Click Transportation.</span></span>
-5. <span data-ttu-id="5bea3-112">Valitse Tapaamisten ajoittaminen.</span><span class="sxs-lookup"><span data-stu-id="5bea3-112">Click Appointment scheduling.</span></span>
+## <a name="select-the-load"></a><span data-ttu-id="2ae80-107">Valitse kuorma.</span><span class="sxs-lookup"><span data-stu-id="2ae80-107">Select the load</span></span>
+1. <span data-ttu-id="2ae80-108">Valitse Kuljetustenhallinta > Suunnittelu > Kuormasuunnittelun työtila.</span><span class="sxs-lookup"><span data-stu-id="2ae80-108">Go to Transportation management > Planning > Load planning workbench.</span></span>
+2. <span data-ttu-id="2ae80-109">Poista Piilota toimitettu ja vastaanotettu -valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="2ae80-109">Clear the Hide shipped and received check box.</span></span>
+3. <span data-ttu-id="2ae80-110">Valitse luettelosta kuorma, jonka tila on Toimitettu.</span><span class="sxs-lookup"><span data-stu-id="2ae80-110">In the list, select the load that has a status of Shipped.</span></span>
+4. <span data-ttu-id="2ae80-111">Valitse Kuljetus.</span><span class="sxs-lookup"><span data-stu-id="2ae80-111">Click Transportation.</span></span>
+5. <span data-ttu-id="2ae80-112">Valitse Tapaamisten ajoittaminen.</span><span class="sxs-lookup"><span data-stu-id="2ae80-112">Click Appointment scheduling.</span></span>
 
-## <a name="create-an-appointment"></a><span data-ttu-id="5bea3-113">Luo tapaaminen</span><span class="sxs-lookup"><span data-stu-id="5bea3-113">Create an appointment</span></span>
-1. <span data-ttu-id="5bea3-114">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="5bea3-114">Click New.</span></span>
-2. <span data-ttu-id="5bea3-115">Syötä tai valitse arvo Tapaamissääntö-kentässä.</span><span class="sxs-lookup"><span data-stu-id="5bea3-115">In the Appointment rule field, enter or select a value.</span></span>
-3. <span data-ttu-id="5bea3-116">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="5bea3-116">Click Save.</span></span>
-4. <span data-ttu-id="5bea3-117">Valitse Päivitä tila.</span><span class="sxs-lookup"><span data-stu-id="5bea3-117">Click Update status.</span></span>
-5. <span data-ttu-id="5bea3-118">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="5bea3-118">Click Firm.</span></span>
-6. <span data-ttu-id="5bea3-119">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="5bea3-119">Click Save.</span></span>
-7. <span data-ttu-id="5bea3-120">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="5bea3-120">Close the page.</span></span>
+## <a name="create-an-appointment"></a><span data-ttu-id="2ae80-113">Luo tapaaminen</span><span class="sxs-lookup"><span data-stu-id="2ae80-113">Create an appointment</span></span>
+1. <span data-ttu-id="2ae80-114">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="2ae80-114">Click New.</span></span>
+2. <span data-ttu-id="2ae80-115">Syötä tai valitse arvo Tapaamissääntö-kentässä.</span><span class="sxs-lookup"><span data-stu-id="2ae80-115">In the Appointment rule field, enter or select a value.</span></span>
+3. <span data-ttu-id="2ae80-116">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="2ae80-116">Click Save.</span></span>
+4. <span data-ttu-id="2ae80-117">Valitse Päivitä tila.</span><span class="sxs-lookup"><span data-stu-id="2ae80-117">Click Update status.</span></span>
+5. <span data-ttu-id="2ae80-118">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="2ae80-118">Click Firm.</span></span>
+6. <span data-ttu-id="2ae80-119">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="2ae80-119">Click Save.</span></span>
+7. <span data-ttu-id="2ae80-120">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2ae80-120">Close the page.</span></span>
 
 

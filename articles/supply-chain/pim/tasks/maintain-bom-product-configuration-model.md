@@ -16,45 +16,45 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6dd2aa1ebc713287120106a9d1ec7dc15c24def9
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: c017d7719ac6af43b0c8a162080bb753587df030
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="maintain-bom-for-a-product-configuration-model"></a><span data-ttu-id="72000-103">Ylläpidä tuotemääritysmallin tuoterakennetta</span><span class="sxs-lookup"><span data-stu-id="72000-103">Maintain BOM for a product configuration model</span></span>
+# <a name="maintain-bom-for-a-product-configuration-model"></a><span data-ttu-id="a545c-103">Ylläpidä tuotemääritysmallin tuoterakennetta</span><span class="sxs-lookup"><span data-stu-id="a545c-103">Maintain BOM for a product configuration model</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="72000-104">Tämän menettelyn suorittaminen edellyttää, että tuotemääritysmalli on luotu aiemmin.</span><span class="sxs-lookup"><span data-stu-id="72000-104">Running this procedure requires an existing product configuration model.</span></span> <span data-ttu-id="72000-105">Tämä menettely luodaan käyttämällä USMF-demoyrityksen Korkealaatuinen kaiutin -mallia.</span><span class="sxs-lookup"><span data-stu-id="72000-105">The High end speaker model in the demo company USMF is used to create this procedure.</span></span>
+<span data-ttu-id="a545c-104">Tämän menettelyn suorittaminen edellyttää, että tuotemääritysmalli on luotu aiemmin.</span><span class="sxs-lookup"><span data-stu-id="a545c-104">Running this procedure requires an existing product configuration model.</span></span> <span data-ttu-id="a545c-105">Tämä menettely luodaan käyttämällä USMF-demoyrityksen Korkealaatuinen kaiutin -mallia.</span><span class="sxs-lookup"><span data-stu-id="a545c-105">The High end speaker model in the demo company USMF is used to create this procedure.</span></span>
 
 
-## <a name="add-a-bom-line"></a><span data-ttu-id="72000-106">Lisää tuoterakennerivi</span><span class="sxs-lookup"><span data-stu-id="72000-106">Add a BOM line</span></span>
-1. <span data-ttu-id="72000-107">Valitse Tuotevarianttimallin määritys.</span><span class="sxs-lookup"><span data-stu-id="72000-107">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="72000-108">Valitse Tuotekonfiguraation mallit.</span><span class="sxs-lookup"><span data-stu-id="72000-108">Click Product configuration models.</span></span>
-3. <span data-ttu-id="72000-109">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="72000-109">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="72000-110">Valitse tähän menettelyyn korkealaatuinen kaiutin.</span><span class="sxs-lookup"><span data-stu-id="72000-110">Select the High end speaker for this procedure.</span></span>  
-4. <span data-ttu-id="72000-111">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="72000-111">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="72000-112">Laajenna Tuoterakennerivi-osa.</span><span class="sxs-lookup"><span data-stu-id="72000-112">Expand the BOM lines section.</span></span>
-6. <span data-ttu-id="72000-113">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="72000-113">Click Add.</span></span>
-7. <span data-ttu-id="72000-114">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="72000-114">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="72000-115">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="72000-115">In the Description field, type a value.</span></span>
-9. <span data-ttu-id="72000-116">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="72000-116">Click Save.</span></span>
+## <a name="add-a-bom-line"></a><span data-ttu-id="a545c-106">Lisää tuoterakennerivi</span><span class="sxs-lookup"><span data-stu-id="a545c-106">Add a BOM line</span></span>
+1. <span data-ttu-id="a545c-107">Valitse Tuotevarianttimallin määritys.</span><span class="sxs-lookup"><span data-stu-id="a545c-107">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="a545c-108">Valitse Tuotekonfiguraation mallit.</span><span class="sxs-lookup"><span data-stu-id="a545c-108">Click Product configuration models.</span></span>
+3. <span data-ttu-id="a545c-109">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="a545c-109">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="a545c-110">Valitse tähän menettelyyn korkealaatuinen kaiutin.</span><span class="sxs-lookup"><span data-stu-id="a545c-110">Select the High end speaker for this procedure.</span></span>  
+4. <span data-ttu-id="a545c-111">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="a545c-111">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="a545c-112">Laajenna Tuoterakennerivi-osa.</span><span class="sxs-lookup"><span data-stu-id="a545c-112">Expand the BOM lines section.</span></span>
+6. <span data-ttu-id="a545c-113">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="a545c-113">Click Add.</span></span>
+7. <span data-ttu-id="a545c-114">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="a545c-114">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="a545c-115">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="a545c-115">In the Description field, type a value.</span></span>
+9. <span data-ttu-id="a545c-116">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="a545c-116">Click Save.</span></span>
 
-## <a name="add-bom-line-details"></a><span data-ttu-id="72000-117">Lisää tuoterakennerivin tiedot</span><span class="sxs-lookup"><span data-stu-id="72000-117">Add BOM line details</span></span>
-1. <span data-ttu-id="72000-118">Valitse Tuoterakennerivin tiedot.</span><span class="sxs-lookup"><span data-stu-id="72000-118">Click BOM line details.</span></span>
-2. <span data-ttu-id="72000-119">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="72000-119">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="72000-120">Valitse esimerkiksi nimike M0055.</span><span class="sxs-lookup"><span data-stu-id="72000-120">For example, you can select the item M0055.</span></span>  
-    * <span data-ttu-id="72000-121">Voit valita kunkin tuoterakennerivin ominaisuuden kohdalla, annetaanko sille kiinteä arvo vai yhdistetäänkö se määritteeseen.</span><span class="sxs-lookup"><span data-stu-id="72000-121">For each BOM line property, you can select if it takes a fixed value or is mapped to an attribute.</span></span>  
-3. <span data-ttu-id="72000-122">Valitse Määritä-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="72000-122">Select the Set check box.</span></span>
-4. <span data-ttu-id="72000-123">Valitse Laskenta-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="72000-123">Select Yes in the Calculation field.</span></span>
-    * <span data-ttu-id="72000-124">Laskelma-ominaisuuden määrittäminen arvoksi Kyllä varmistaa, että tuoterakennerivi sisältyy kustannuslaskentaan.</span><span class="sxs-lookup"><span data-stu-id="72000-124">Setting the Calculation property to Yes ensures that the BOM line is included in cost calculations.</span></span>  
-5. <span data-ttu-id="72000-125">Valitse Asetukset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="72000-125">Click the Setup tab.</span></span>
-6. <span data-ttu-id="72000-126">Valitse Määritä-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="72000-126">Select the Set check box.</span></span>
-7. <span data-ttu-id="72000-127">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="72000-127">In the Quantity field, enter a number.</span></span>
-    * <span data-ttu-id="72000-128">Määräkenttä määrittää, miten suuri osa nimikkeestä sisällytetään tuoterakenteeseen.</span><span class="sxs-lookup"><span data-stu-id="72000-128">The quantity field determines how much of the item that will be included in the BOM.</span></span> <span data-ttu-id="72000-129">Tämä voisi olla hyvä ehdokas määritteen yhdistämiselle.</span><span class="sxs-lookup"><span data-stu-id="72000-129">This could be an obvious candidate for an attribute mapping.</span></span>  
-8. <span data-ttu-id="72000-130">Valitse Dimensio-välilehti.</span><span class="sxs-lookup"><span data-stu-id="72000-130">Click the Dimension tab.</span></span>
-    * <span data-ttu-id="72000-131">Tarkista, onko yksikään tuotedimensio aktiviinen ja onko sillä siksi oltava arvo tai määrite määritettynä.</span><span class="sxs-lookup"><span data-stu-id="72000-131">Verify if any of the product dimensions are active,  and therefore must have a value or attribute assigned.</span></span>  
-9. <span data-ttu-id="72000-132">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="72000-132">Click OK.</span></span>
+## <a name="add-bom-line-details"></a><span data-ttu-id="a545c-117">Lisää tuoterakennerivin tiedot</span><span class="sxs-lookup"><span data-stu-id="a545c-117">Add BOM line details</span></span>
+1. <span data-ttu-id="a545c-118">Valitse Tuoterakennerivin tiedot.</span><span class="sxs-lookup"><span data-stu-id="a545c-118">Click BOM line details.</span></span>
+2. <span data-ttu-id="a545c-119">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="a545c-119">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="a545c-120">Valitse esimerkiksi nimike M0055.</span><span class="sxs-lookup"><span data-stu-id="a545c-120">For example, you can select the item M0055.</span></span>  
+    * <span data-ttu-id="a545c-121">Voit valita kunkin tuoterakennerivin ominaisuuden kohdalla, annetaanko sille kiinteä arvo vai yhdistetäänkö se määritteeseen.</span><span class="sxs-lookup"><span data-stu-id="a545c-121">For each BOM line property, you can select if it takes a fixed value or is mapped to an attribute.</span></span>  
+3. <span data-ttu-id="a545c-122">Valitse Määritä-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="a545c-122">Select the Set check box.</span></span>
+4. <span data-ttu-id="a545c-123">Valitse Laskenta-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="a545c-123">Select Yes in the Calculation field.</span></span>
+    * <span data-ttu-id="a545c-124">Laskelma-ominaisuuden määrittäminen arvoksi Kyllä varmistaa, että tuoterakennerivi sisältyy kustannuslaskentaan.</span><span class="sxs-lookup"><span data-stu-id="a545c-124">Setting the Calculation property to Yes ensures that the BOM line is included in cost calculations.</span></span>  
+5. <span data-ttu-id="a545c-125">Valitse Asetukset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="a545c-125">Click the Setup tab.</span></span>
+6. <span data-ttu-id="a545c-126">Valitse Määritä-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="a545c-126">Select the Set check box.</span></span>
+7. <span data-ttu-id="a545c-127">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="a545c-127">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="a545c-128">Määräkenttä määrittää, miten suuri osa nimikkeestä sisällytetään tuoterakenteeseen.</span><span class="sxs-lookup"><span data-stu-id="a545c-128">The quantity field determines how much of the item that will be included in the BOM.</span></span> <span data-ttu-id="a545c-129">Tämä voisi olla hyvä ehdokas määritteen yhdistämiselle.</span><span class="sxs-lookup"><span data-stu-id="a545c-129">This could be an obvious candidate for an attribute mapping.</span></span>  
+8. <span data-ttu-id="a545c-130">Valitse Dimensio-välilehti.</span><span class="sxs-lookup"><span data-stu-id="a545c-130">Click the Dimension tab.</span></span>
+    * <span data-ttu-id="a545c-131">Tarkista, onko yksikään tuotedimensio aktiviinen ja onko sillä siksi oltava arvo tai määrite määritettynä.</span><span class="sxs-lookup"><span data-stu-id="a545c-131">Verify if any of the product dimensions are active,  and therefore must have a value or attribute assigned.</span></span>  
+9. <span data-ttu-id="a545c-132">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="a545c-132">Click OK.</span></span>
 
 

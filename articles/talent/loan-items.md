@@ -18,44 +18,44 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 17fb54c07f817b6f4a65c01cd0277c8d677e2e78
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
-# <a name="manage-items-lent-to-workers"></a><span data-ttu-id="2dc42-103">Työntekijöille lainattujen kohteiden hallinta</span><span class="sxs-lookup"><span data-stu-id="2dc42-103">Manage items lent to workers</span></span>
+# <a name="manage-items-lent-to-workers"></a><span data-ttu-id="61a7c-103">Työntekijöille lainattujen kohteiden hallinta</span><span class="sxs-lookup"><span data-stu-id="61a7c-103">Manage items lent to workers</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-<span data-ttu-id="2dc42-104">Lainakohteet ovat tietueita, joiden avulla esimiehet voivat seurata yrityksen työntekijöille lainaamia fyysisiä kohteita.</span><span class="sxs-lookup"><span data-stu-id="2dc42-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
+<span data-ttu-id="61a7c-104">Lainakohteet ovat tietueita, joiden avulla esimiehet voivat seurata yrityksen työntekijöille lainaamia fyysisiä kohteita.</span><span class="sxs-lookup"><span data-stu-id="61a7c-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
 
-<span data-ttu-id="2dc42-105">Seuraavissa kohdissa on esimerkkejä kohteista, joita yritys voi lainata työntekijöille:</span><span class="sxs-lookup"><span data-stu-id="2dc42-105">The following points list examples of items that a company might lend to workers:</span></span>
--   <span data-ttu-id="2dc42-106">matkapuhelimia</span><span class="sxs-lookup"><span data-stu-id="2dc42-106">Mobile telephones</span></span>
--   <span data-ttu-id="2dc42-107">autopuhelimia</span><span class="sxs-lookup"><span data-stu-id="2dc42-107">Automobiles</span></span>
--   <span data-ttu-id="2dc42-108">tietokoneet.</span><span class="sxs-lookup"><span data-stu-id="2dc42-108">Computer equipment</span></span>
+<span data-ttu-id="61a7c-105">Seuraavissa kohdissa on esimerkkejä kohteista, joita yritys voi lainata työntekijöille:</span><span class="sxs-lookup"><span data-stu-id="61a7c-105">The following points list examples of items that a company might lend to workers:</span></span>
+-   <span data-ttu-id="61a7c-106">matkapuhelimia</span><span class="sxs-lookup"><span data-stu-id="61a7c-106">Mobile telephones</span></span>
+-   <span data-ttu-id="61a7c-107">autopuhelimia</span><span class="sxs-lookup"><span data-stu-id="61a7c-107">Automobiles</span></span>
+-   <span data-ttu-id="61a7c-108">tietokoneet.</span><span class="sxs-lookup"><span data-stu-id="61a7c-108">Computer equipment</span></span>
 
-<span data-ttu-id="2dc42-109">Jokaisella fyysisellä kohteella on oltava vastaava lainakohde.</span><span class="sxs-lookup"><span data-stu-id="2dc42-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="2dc42-110">Jokaisessa lainan kohdetietueessa tulisi kuvailla, mitä lainataan, kuka vastaa lainasta sekä aika (päivinä), jonka kohde voi olla työntekijällä lainassa.</span><span class="sxs-lookup"><span data-stu-id="2dc42-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="2dc42-111">Voit luoda samalla useita lainakohteita, kuten avaimia, kulkukortteja tai työpukuja.</span><span class="sxs-lookup"><span data-stu-id="2dc42-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
+<span data-ttu-id="61a7c-109">Jokaisella fyysisellä kohteella on oltava vastaava lainakohde.</span><span class="sxs-lookup"><span data-stu-id="61a7c-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="61a7c-110">Jokaisessa lainan kohdetietueessa tulisi kuvailla, mitä lainataan, kuka vastaa lainasta sekä aika (päivinä), jonka kohde voi olla työntekijällä lainassa.</span><span class="sxs-lookup"><span data-stu-id="61a7c-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="61a7c-111">Voit luoda samalla useita lainakohteita, kuten avaimia, kulkukortteja tai työpukuja.</span><span class="sxs-lookup"><span data-stu-id="61a7c-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
 
-<span data-ttu-id="2dc42-112">Kun kohde lainataan, kirjataan sen lainauspäivämäärä ja suunniteltu palautuspäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="2dc42-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="2dc42-113">Kun kohde palautetaan, kirjataan todellinen palautuspäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="2dc42-113">When the item is returned, enter the actual return date.</span></span>
+<span data-ttu-id="61a7c-112">Kun kohde lainataan, kirjataan sen lainauspäivämäärä ja suunniteltu palautuspäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="61a7c-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="61a7c-113">Kun kohde palautetaan, kirjataan todellinen palautuspäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="61a7c-113">When the item is returned, enter the actual return date.</span></span>
 
-<span data-ttu-id="2dc42-114">Työntekijät voivat heille lainattujen kohteiden tietueita Työntekijän itsepalvelu -työtilassa.</span><span class="sxs-lookup"><span data-stu-id="2dc42-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="2dc42-115">He voivat myös muokata aiemmin luotuja tietueita tai kirjata uusia lainakohteita, jos he saavat uusia fyysisiä kohteita.</span><span class="sxs-lookup"><span data-stu-id="2dc42-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="2dc42-116">Työnkulku voidaan määrittää reitittämään uusien ja aiemmin luotujen lainakohteiden muutokset hyväksyntäprosessin vaiheissa.</span><span class="sxs-lookup"><span data-stu-id="2dc42-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
+<span data-ttu-id="61a7c-114">Työntekijät voivat heille lainattujen kohteiden tietueita Työntekijän itsepalvelu -työtilassa.</span><span class="sxs-lookup"><span data-stu-id="61a7c-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="61a7c-115">He voivat myös muokata aiemmin luotuja tietueita tai kirjata uusia lainakohteita, jos he saavat uusia fyysisiä kohteita.</span><span class="sxs-lookup"><span data-stu-id="61a7c-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="61a7c-116">Työnkulku voidaan määrittää reitittämään uusien ja aiemmin luotujen lainakohteiden muutokset hyväksyntäprosessin vaiheissa.</span><span class="sxs-lookup"><span data-stu-id="61a7c-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
 
-<span data-ttu-id="2dc42-117">Esimiehet voivat tarkastella suorille alaisille lainattuja kohteita.</span><span class="sxs-lookup"><span data-stu-id="2dc42-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="2dc42-118">Heille voidaan myös myöntää oikeus lisätä uusia lainakohteita työntekijöiden puolesta.</span><span class="sxs-lookup"><span data-stu-id="2dc42-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
+<span data-ttu-id="61a7c-117">Esimiehet voivat tarkastella suorille alaisille lainattuja kohteita.</span><span class="sxs-lookup"><span data-stu-id="61a7c-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="61a7c-118">Heille voidaan myös myöntää oikeus lisätä uusia lainakohteita työntekijöiden puolesta.</span><span class="sxs-lookup"><span data-stu-id="61a7c-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
 
- <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="2dc42-119"> Kadonneiden tai hävinneiden lainakohteiden käsitteleminen</span><span class="sxs-lookup"><span data-stu-id="2dc42-119">Account for lost or misplaced loan items</span></span>
+ <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="61a7c-119"> Kadonneiden tai hävinneiden lainakohteiden käsitteleminen</span><span class="sxs-lookup"><span data-stu-id="61a7c-119">Account for lost or misplaced loan items</span></span>
 -----------------------------------------
 
-<span data-ttu-id="2dc42-120">Jos kohde vahingoittuu tai häviää, sille kirjataan fiktiivinen palautustietue.</span><span class="sxs-lookup"><span data-stu-id="2dc42-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="2dc42-121">Sen jälkeen kohde joko poistetaan tai jätetään yleiskatsaukseen ja muutetaan kuvausta sitten, ettei kohde ole käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="2dc42-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
+<span data-ttu-id="61a7c-120">Jos kohde vahingoittuu tai häviää, sille kirjataan fiktiivinen palautustietue.</span><span class="sxs-lookup"><span data-stu-id="61a7c-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="61a7c-121">Sen jälkeen kohde joko poistetaan tai jätetään yleiskatsaukseen ja muutetaan kuvausta sitten, ettei kohde ole käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="61a7c-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
 
  
-<a name="see-also"></a><span data-ttu-id="2dc42-122">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="2dc42-122">See also</span></span>
+<a name="see-also"></a><span data-ttu-id="61a7c-122">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="61a7c-122">See also</span></span>
 --------
 
-[<span data-ttu-id="2dc42-123">Henkilöstöhallinto</span><span class="sxs-lookup"><span data-stu-id="2dc42-123">Human resources</span></span>](index.md)
+[<span data-ttu-id="61a7c-123">Henkilöstöhallinto</span><span class="sxs-lookup"><span data-stu-id="61a7c-123">Human resources</span></span>](index.md)
 
 
 

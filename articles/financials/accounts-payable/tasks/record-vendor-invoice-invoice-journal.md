@@ -16,35 +16,35 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 42f93e6d8fcf62babc3e3244bc1fe76d1efd9d13
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="record-a-vendor-invoice-in-the-invoice-journal"></a><span data-ttu-id="e87c2-103">Toimittajan laskun tallentaminen laskukirjauskansioon</span><span class="sxs-lookup"><span data-stu-id="e87c2-103">Record a vendor invoice in the invoice journal</span></span>
+# <a name="record-a-vendor-invoice-in-the-invoice-journal"></a><span data-ttu-id="bf580-103">Toimittajan laskun tallentaminen laskukirjauskansioon</span><span class="sxs-lookup"><span data-stu-id="bf580-103">Record a vendor invoice in the invoice journal</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="e87c2-104">Tässä ohjauksessa näytetään, miten ostotilauksiin liittämättömät toimittajan laskut tallennetaan.</span><span class="sxs-lookup"><span data-stu-id="e87c2-104">This task guide will show how to record vendor invoices that are not associated with purchase orders.</span></span> <span data-ttu-id="e87c2-105">Tällaisia laskuja ovat esimerkiksi tarvikkeiden tai palveluiden kulut.</span><span class="sxs-lookup"><span data-stu-id="e87c2-105">Examples of this type of invoice include expenses for supplies or services.</span></span>  <span data-ttu-id="e87c2-106">Tässä tallenteessa käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="e87c2-106">This recording uses the USMF demo company.</span></span>
+<span data-ttu-id="bf580-104">Tässä ohjauksessa näytetään, miten ostotilauksiin liittämättömät toimittajan laskut tallennetaan.</span><span class="sxs-lookup"><span data-stu-id="bf580-104">This task guide will show how to record vendor invoices that are not associated with purchase orders.</span></span> <span data-ttu-id="bf580-105">Tällaisia laskuja ovat esimerkiksi tarvikkeiden tai palveluiden kulut.</span><span class="sxs-lookup"><span data-stu-id="bf580-105">Examples of this type of invoice include expenses for supplies or services.</span></span>  <span data-ttu-id="bf580-106">Tässä tallenteessa käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="bf580-106">This recording uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="e87c2-107">Siirry kohtaan Ostoreskontra > Työtilat > Toimittajan laskun syöttö.</span><span class="sxs-lookup"><span data-stu-id="e87c2-107">Go to Accounts payable > Workspaces > Vendor invoice entry.</span></span>
-2. <span data-ttu-id="e87c2-108">Valitse Uusi laskukirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="e87c2-108">Click New invoice journal.</span></span>
-3. <span data-ttu-id="e87c2-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="e87c2-109">Click New.</span></span>
-4. <span data-ttu-id="e87c2-110">Avaa haku syöttämällä Nimi-kenttään kirjauskansion nimi tai valitsemalla avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="e87c2-110">In the Name field, enter the journal name or click the drop down button to open the lookup.</span></span>
-5. <span data-ttu-id="e87c2-111">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="e87c2-111">In the Description field, type a value.</span></span>
-6. <span data-ttu-id="e87c2-112">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="e87c2-112">Click Lines.</span></span>
-    * <span data-ttu-id="e87c2-113">Syötä Päivämäärä-kenttään kirjauspäivämäärä, joka päivittää kirjanpidon.</span><span class="sxs-lookup"><span data-stu-id="e87c2-113">In the Date field, enter the posting date that will update General Ledger.</span></span>  
-7. <span data-ttu-id="e87c2-114">Määritä Toimittajan tili -kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="e87c2-114">In the Account field, specify the Vendor account.</span></span>
-8. <span data-ttu-id="e87c2-115">Syötä Lasku-kenttään laskunumero.</span><span class="sxs-lookup"><span data-stu-id="e87c2-115">In the Invoice field, enter the invoice number.</span></span>
-9. <span data-ttu-id="e87c2-116">Kirjoita Kuvaus-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="e87c2-116">In the Description field, type a value.</span></span>
-10. <span data-ttu-id="e87c2-117">Syötä Kredit-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="e87c2-117">In the Credit field, enter a number.</span></span>
-11. <span data-ttu-id="e87c2-118">Avaa haku syöttämällä Vastatili-kenttään tilinumero nimi tai valitsemalla avattavan valikon painike</span><span class="sxs-lookup"><span data-stu-id="e87c2-118">In the Offset account field, enter the account number or click the drop down button to open the lookup</span></span>
-    * <span data-ttu-id="e87c2-119">Arvonlisäveroryhmän oletusarvo saadaan toimittajan tililtä.</span><span class="sxs-lookup"><span data-stu-id="e87c2-119">The Sales tax group will default from the vendor account.</span></span>  
-    * <span data-ttu-id="e87c2-120">Nimikkeen arvonlisäveroryhmän oletusarvo saadaan Vastatili-kentässä määritetyltä päätililtä.</span><span class="sxs-lookup"><span data-stu-id="e87c2-120">The Item sales tax group will default from the main account specified in the Offset account field.</span></span>  
-    * <span data-ttu-id="e87c2-121">Eräpäivä lasketaan maksuehtojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="e87c2-121">The Due date will be calculated based on the Terms of payment.</span></span>  
-    * <span data-ttu-id="e87c2-122">Käteisalennuksen oletusarvo saadaan toimittajan tililtä.</span><span class="sxs-lookup"><span data-stu-id="e87c2-122">The Cash discount will default from the Vendor account.</span></span>  
-12. <span data-ttu-id="e87c2-123">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="e87c2-123">Click Post.</span></span>
-13. <span data-ttu-id="e87c2-124">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="e87c2-124">Close the page.</span></span>
+1. <span data-ttu-id="bf580-107">Siirry kohtaan Ostoreskontra > Työtilat > Toimittajan laskun syöttö.</span><span class="sxs-lookup"><span data-stu-id="bf580-107">Go to Accounts payable > Workspaces > Vendor invoice entry.</span></span>
+2. <span data-ttu-id="bf580-108">Valitse Uusi laskukirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="bf580-108">Click New invoice journal.</span></span>
+3. <span data-ttu-id="bf580-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="bf580-109">Click New.</span></span>
+4. <span data-ttu-id="bf580-110">Avaa haku syöttämällä Nimi-kenttään kirjauskansion nimi tai valitsemalla avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="bf580-110">In the Name field, enter the journal name or click the drop down button to open the lookup.</span></span>
+5. <span data-ttu-id="bf580-111">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="bf580-111">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="bf580-112">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="bf580-112">Click Lines.</span></span>
+    * <span data-ttu-id="bf580-113">Syötä Päivämäärä-kenttään kirjauspäivämäärä, joka päivittää kirjanpidon.</span><span class="sxs-lookup"><span data-stu-id="bf580-113">In the Date field, enter the posting date that will update General Ledger.</span></span>  
+7. <span data-ttu-id="bf580-114">Määritä Toimittajan tili -kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="bf580-114">In the Account field, specify the Vendor account.</span></span>
+8. <span data-ttu-id="bf580-115">Syötä Lasku-kenttään laskunumero.</span><span class="sxs-lookup"><span data-stu-id="bf580-115">In the Invoice field, enter the invoice number.</span></span>
+9. <span data-ttu-id="bf580-116">Kirjoita Kuvaus-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="bf580-116">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="bf580-117">Syötä Kredit-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="bf580-117">In the Credit field, enter a number.</span></span>
+11. <span data-ttu-id="bf580-118">Avaa haku syöttämällä Vastatili-kenttään tilinumero nimi tai valitsemalla avattavan valikon painike</span><span class="sxs-lookup"><span data-stu-id="bf580-118">In the Offset account field, enter the account number or click the drop down button to open the lookup</span></span>
+    * <span data-ttu-id="bf580-119">Arvonlisäveroryhmän oletusarvo saadaan toimittajan tililtä.</span><span class="sxs-lookup"><span data-stu-id="bf580-119">The Sales tax group will default from the vendor account.</span></span>  
+    * <span data-ttu-id="bf580-120">Nimikkeen arvonlisäveroryhmän oletusarvo saadaan Vastatili-kentässä määritetyltä päätililtä.</span><span class="sxs-lookup"><span data-stu-id="bf580-120">The Item sales tax group will default from the main account specified in the Offset account field.</span></span>  
+    * <span data-ttu-id="bf580-121">Eräpäivä lasketaan maksuehtojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="bf580-121">The Due date will be calculated based on the Terms of payment.</span></span>  
+    * <span data-ttu-id="bf580-122">Käteisalennuksen oletusarvo saadaan toimittajan tililtä.</span><span class="sxs-lookup"><span data-stu-id="bf580-122">The Cash discount will default from the Vendor account.</span></span>  
+12. <span data-ttu-id="bf580-123">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="bf580-123">Click Post.</span></span>
+13. <span data-ttu-id="bf580-124">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="bf580-124">Close the page.</span></span>
 
 

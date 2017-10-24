@@ -17,42 +17,42 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 18b2b228f287a946eb18536b1ea93b0d6af6900c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
-# <a name="update-the-bank-journal-composite-entity"></a><span data-ttu-id="bdd39-103">Pankin kirjauskansioiden yhdistelmäyksikön päivittäminen</span><span class="sxs-lookup"><span data-stu-id="bdd39-103">Update the bank journal composite entity</span></span>
+# <a name="update-the-bank-journal-composite-entity"></a><span data-ttu-id="5eb02-103">Pankin kirjauskansioiden yhdistelmäyksikön päivittäminen</span><span class="sxs-lookup"><span data-stu-id="5eb02-103">Update the bank journal composite entity</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-<span data-ttu-id="bdd39-104">Seuraavat vaiheet ovat välttämättömät, jotta voit lisätä BankTransactionType-lisäkentän BankJournalEntity-yhdistelmäyksikköön.</span><span class="sxs-lookup"><span data-stu-id="bdd39-104">The following steps are needed in order to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
+<span data-ttu-id="5eb02-104">Seuraavat vaiheet ovat välttämättömät, jotta voit lisätä BankTransactionType-lisäkentän BankJournalEntity-yhdistelmäyksikköön.</span><span class="sxs-lookup"><span data-stu-id="5eb02-104">The following steps are needed in order to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
 
-<span data-ttu-id="bdd39-105">Seuraavien vaiheiden avulla voit lisätä BankTransactionType-lisäkentän BankJournalEntity-yhdistelmäyksikköön.</span><span class="sxs-lookup"><span data-stu-id="bdd39-105">Use the following steps to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
+<span data-ttu-id="5eb02-105">Seuraavien vaiheiden avulla voit lisätä BankTransactionType-lisäkentän BankJournalEntity-yhdistelmäyksikköön.</span><span class="sxs-lookup"><span data-stu-id="5eb02-105">Use the following steps to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
 
-1.  <span data-ttu-id="bdd39-106">Kääntää ja synkronoi seuraavat pankin kirjauskansion yhdistelmäyksiköt, yksiköt ja valmistelutaulut:</span><span class="sxs-lookup"><span data-stu-id="bdd39-106">Compile and synchronize the following bank journal composite entities, entities, and staging tables:</span></span>
-    -   <span data-ttu-id="bdd39-107">Yhdistelmäyksikkö\\BankJournalEntity</span><span class="sxs-lookup"><span data-stu-id="bdd39-107">Composite Entity\\BankJournalEntity</span></span>
-    -   <span data-ttu-id="bdd39-108">Yksikkö\\BankJournalHeaderEntity</span><span class="sxs-lookup"><span data-stu-id="bdd39-108">Entity\\BankJournalHeaderEntity</span></span>
-    -   <span data-ttu-id="bdd39-109">Yksikkö\\BankJournalLineEntity</span><span class="sxs-lookup"><span data-stu-id="bdd39-109">Entity\\BankJournalLineEntity</span></span>
-    -   <span data-ttu-id="bdd39-110">Taulu\\BankJournalHeaderStaging</span><span class="sxs-lookup"><span data-stu-id="bdd39-110">Table\\BankJournalHeaderStaging</span></span>
-    -   <span data-ttu-id="bdd39-111">Taulu\\BankJournalLineStaging</span><span class="sxs-lookup"><span data-stu-id="bdd39-111">Table\\BankJournalLineStaging</span></span>
+1.  <span data-ttu-id="5eb02-106">Kääntää ja synkronoi seuraavat pankin kirjauskansion yhdistelmäyksiköt, yksiköt ja valmistelutaulut:</span><span class="sxs-lookup"><span data-stu-id="5eb02-106">Compile and synchronize the following bank journal composite entities, entities, and staging tables:</span></span>
+    -   <span data-ttu-id="5eb02-107">Yhdistelmäyksikkö\\BankJournalEntity</span><span class="sxs-lookup"><span data-stu-id="5eb02-107">Composite Entity\\BankJournalEntity</span></span>
+    -   <span data-ttu-id="5eb02-108">Yksikkö\\BankJournalHeaderEntity</span><span class="sxs-lookup"><span data-stu-id="5eb02-108">Entity\\BankJournalHeaderEntity</span></span>
+    -   <span data-ttu-id="5eb02-109">Yksikkö\\BankJournalLineEntity</span><span class="sxs-lookup"><span data-stu-id="5eb02-109">Entity\\BankJournalLineEntity</span></span>
+    -   <span data-ttu-id="5eb02-110">Taulu\\BankJournalHeaderStaging</span><span class="sxs-lookup"><span data-stu-id="5eb02-110">Table\\BankJournalHeaderStaging</span></span>
+    -   <span data-ttu-id="5eb02-111">Taulu\\BankJournalLineStaging</span><span class="sxs-lookup"><span data-stu-id="5eb02-111">Table\\BankJournalLineStaging</span></span>
 
-2.  <span data-ttu-id="bdd39-112">Tietojen hallinta\\tietoprojektit</span><span class="sxs-lookup"><span data-stu-id="bdd39-112">Data management\\data projects</span></span>
-    -   <span data-ttu-id="bdd39-113">Näytä **pankkitapahtuma**-tyyppi **Lähdetiedot**-asettelussa.</span><span class="sxs-lookup"><span data-stu-id="bdd39-113">Expose the **Bank Transaction** type on **Source Data** layout.</span></span>
-        -   <span data-ttu-id="bdd39-114">Lähdetietojen muoto = XML-elementti</span><span class="sxs-lookup"><span data-stu-id="bdd39-114">Source data format = XML-Element</span></span>
-        -   <span data-ttu-id="bdd39-115">Yksikön nimi = pankin kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="bdd39-115">Entity name = Bank Journal</span></span>
-        -   <span data-ttu-id="bdd39-116">Lataa datatiedosto = SampleBankJournalCompositeEntity.xml uusi versio.</span><span class="sxs-lookup"><span data-stu-id="bdd39-116">Upload data file = new version SampleBankJournalCompositeEntity.xml</span></span>
-        -   <span data-ttu-id="bdd39-117">Korvaa aiemmin luotu tiedosto napsauttamalla **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="bdd39-117">Click **Yes** to overwrite the existing file.</span></span>
-        -   <span data-ttu-id="bdd39-118">Valitse **Kyllä** jolloin luodaan uusi yhdistämismääritys.</span><span class="sxs-lookup"><span data-stu-id="bdd39-118">Click **Yes** to generate mapping from scratch.</span></span>
-        -   <span data-ttu-id="bdd39-119">Tarkista, että pankkitapahtuman laji on yhdistetty.</span><span class="sxs-lookup"><span data-stu-id="bdd39-119">Verify that the Bank Transaction Type is mapped.</span></span>
-            -   <span data-ttu-id="bdd39-120">Valitse **Näytä yhdistämismääritykset** rivi-yksikössä.</span><span class="sxs-lookup"><span data-stu-id="bdd39-120">Click **View map** on Line entity.</span></span>
-            -   <span data-ttu-id="bdd39-121">Varmista, että pankkitapahtuman laji liitetään lähteestä väliaikaiseen alueeseen.</span><span class="sxs-lookup"><span data-stu-id="bdd39-121">Verify that Bank Transaction type is mapped from Source to Staging.</span></span>
+2.  <span data-ttu-id="5eb02-112">Tietojen hallinta\\tietoprojektit</span><span class="sxs-lookup"><span data-stu-id="5eb02-112">Data management\\data projects</span></span>
+    -   <span data-ttu-id="5eb02-113">Näytä **pankkitapahtuma**-tyyppi **Lähdetiedot**-asettelussa.</span><span class="sxs-lookup"><span data-stu-id="5eb02-113">Expose the **Bank Transaction** type on **Source Data** layout.</span></span>
+        -   <span data-ttu-id="5eb02-114">Lähdetietojen muoto = XML-elementti</span><span class="sxs-lookup"><span data-stu-id="5eb02-114">Source data format = XML-Element</span></span>
+        -   <span data-ttu-id="5eb02-115">Yksikön nimi = pankin kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="5eb02-115">Entity name = Bank Journal</span></span>
+        -   <span data-ttu-id="5eb02-116">Lataa datatiedosto = SampleBankJournalCompositeEntity.xml uusi versio.</span><span class="sxs-lookup"><span data-stu-id="5eb02-116">Upload data file = new version SampleBankJournalCompositeEntity.xml</span></span>
+        -   <span data-ttu-id="5eb02-117">Korvaa aiemmin luotu tiedosto napsauttamalla **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="5eb02-117">Click **Yes** to overwrite the existing file.</span></span>
+        -   <span data-ttu-id="5eb02-118">Valitse **Kyllä** jolloin luodaan uusi yhdistämismääritys.</span><span class="sxs-lookup"><span data-stu-id="5eb02-118">Click **Yes** to generate mapping from scratch.</span></span>
+        -   <span data-ttu-id="5eb02-119">Tarkista, että pankkitapahtuman laji on yhdistetty.</span><span class="sxs-lookup"><span data-stu-id="5eb02-119">Verify that the Bank Transaction Type is mapped.</span></span>
+            -   <span data-ttu-id="5eb02-120">Valitse **Näytä yhdistämismääritykset** rivi-yksikössä.</span><span class="sxs-lookup"><span data-stu-id="5eb02-120">Click **View map** on Line entity.</span></span>
+            -   <span data-ttu-id="5eb02-121">Varmista, että pankkitapahtuman laji liitetään lähteestä väliaikaiseen alueeseen.</span><span class="sxs-lookup"><span data-stu-id="5eb02-121">Verify that Bank Transaction type is mapped from Source to Staging.</span></span>
 
-3.  <span data-ttu-id="bdd39-122">Tuo uusi tilinpäätös.</span><span class="sxs-lookup"><span data-stu-id="bdd39-122">Import the new statement.</span></span>
+3.  <span data-ttu-id="5eb02-122">Tuo uusi tilinpäätös.</span><span class="sxs-lookup"><span data-stu-id="5eb02-122">Import the new statement.</span></span>
 
 
 

@@ -17,38 +17,38 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 17b2285e4669f1ad8fa6cea1250693a2a70c7dfa
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="report-a-production-order-as-finished"></a><span data-ttu-id="4a9b8-103">Tuotantotilauksen ilmoittaminen valmiiksi</span><span class="sxs-lookup"><span data-stu-id="4a9b8-103">Report a production order as finished</span></span>
+# <a name="report-a-production-order-as-finished"></a><span data-ttu-id="906ed-103">Tuotantotilauksen ilmoittaminen valmiiksi</span><span class="sxs-lookup"><span data-stu-id="906ed-103">Report a production order as finished</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="4a9b8-104">Tässä menettelyssä näytetään, miten tuotantotilaus ilmoitetaan valmiiksi.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-104">This procedure shows how to report a production order as finished.</span></span> <span data-ttu-id="4a9b8-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="4a9b8-106">Tämä on kuudesta seitsemästä tuotantotilauksen elinkaaresta kertovasta menettelystä.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-106">This is the sixth procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="906ed-104">Tässä menettelyssä näytetään, miten tuotantotilaus ilmoitetaan valmiiksi.</span><span class="sxs-lookup"><span data-stu-id="906ed-104">This procedure shows how to report a production order as finished.</span></span> <span data-ttu-id="906ed-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="906ed-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="906ed-106">Tämä on kuudesta seitsemästä tuotantotilauksen elinkaaresta kertovasta menettelystä.</span><span class="sxs-lookup"><span data-stu-id="906ed-106">This is the sixth procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="report-a-production-order-as-finished"></a><span data-ttu-id="4a9b8-107">Tuotantotilauksen ilmoittaminen valmiiksi</span><span class="sxs-lookup"><span data-stu-id="4a9b8-107">Report a production order as finished</span></span>
-1. <span data-ttu-id="4a9b8-108">Siirry kohtaan Tuotannonhallinta > Tuotantotilaukset > Kaikki tuotantotilaukset.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-108">Go to Production control > Production orders > All production orders.</span></span>
-    * <span data-ttu-id="4a9b8-109">Valitse tuotantotilaus, jonka tila on Aloitettu.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-109">Select a production order that has the Started status.</span></span>  
-2. <span data-ttu-id="4a9b8-110">Valitse toimintoruudussa Tuotantotilaus.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-110">On the Action Pane, click Production order.</span></span>
-3. <span data-ttu-id="4a9b8-111">Valitse Ilmoita automaattisesti valmiiksi.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-111">Click Report as finished.</span></span>
-    * <span data-ttu-id="4a9b8-112">Voit vahvistaa tällä sivulla valmiiksi ilmoitettavan lopullisen tuotteen määrän.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-112">On this page, you can confirm the quantity of the finished product to be reported as finished.</span></span>  
-4. <span data-ttu-id="4a9b8-113">Valitse Yleiset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-113">Click the General tab.</span></span>
-5. <span data-ttu-id="4a9b8-114">Määritä Hyväksytty määrä -asetukseksi 18.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-114">Set Good quantity to '18'.</span></span>
-6. <span data-ttu-id="4a9b8-115">Määritä Virhemäärä-asetukseksi 2.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-115">Set Error quantity to '2'.</span></span>
-7. <span data-ttu-id="4a9b8-116">Valitse Virheen syy -kentässä Materiaali.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-116">In the Error cause field, select 'Material'.</span></span>
-8. <span data-ttu-id="4a9b8-117">Valitse Lopeta työ -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-117">Select or clear the End job check box.</span></span>
-9. <span data-ttu-id="4a9b8-118">Valitse Hyväksy virhe -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-118">Select or clear the Accept error check box.</span></span>
-10. <span data-ttu-id="4a9b8-119">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-119">Click OK.</span></span>
+## <a name="report-a-production-order-as-finished"></a><span data-ttu-id="906ed-107">Tuotantotilauksen ilmoittaminen valmiiksi</span><span class="sxs-lookup"><span data-stu-id="906ed-107">Report a production order as finished</span></span>
+1. <span data-ttu-id="906ed-108">Siirry kohtaan Tuotannonhallinta > Tuotantotilaukset > Kaikki tuotantotilaukset.</span><span class="sxs-lookup"><span data-stu-id="906ed-108">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="906ed-109">Valitse tuotantotilaus, jonka tila on Aloitettu.</span><span class="sxs-lookup"><span data-stu-id="906ed-109">Select a production order that has the Started status.</span></span>  
+2. <span data-ttu-id="906ed-110">Valitse toimintoruudussa Tuotantotilaus.</span><span class="sxs-lookup"><span data-stu-id="906ed-110">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="906ed-111">Valitse Ilmoita automaattisesti valmiiksi.</span><span class="sxs-lookup"><span data-stu-id="906ed-111">Click Report as finished.</span></span>
+    * <span data-ttu-id="906ed-112">Voit vahvistaa tällä sivulla valmiiksi ilmoitettavan lopullisen tuotteen määrän.</span><span class="sxs-lookup"><span data-stu-id="906ed-112">On this page, you can confirm the quantity of the finished product to be reported as finished.</span></span>  
+4. <span data-ttu-id="906ed-113">Valitse Yleiset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="906ed-113">Click the General tab.</span></span>
+5. <span data-ttu-id="906ed-114">Määritä Hyväksytty määrä -asetukseksi 18.</span><span class="sxs-lookup"><span data-stu-id="906ed-114">Set Good quantity to '18'.</span></span>
+6. <span data-ttu-id="906ed-115">Määritä Virhemäärä-asetukseksi 2.</span><span class="sxs-lookup"><span data-stu-id="906ed-115">Set Error quantity to '2'.</span></span>
+7. <span data-ttu-id="906ed-116">Valitse Virheen syy -kentässä Materiaali.</span><span class="sxs-lookup"><span data-stu-id="906ed-116">In the Error cause field, select 'Material'.</span></span>
+8. <span data-ttu-id="906ed-117">Valitse Lopeta työ -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="906ed-117">Select or clear the End job check box.</span></span>
+9. <span data-ttu-id="906ed-118">Valitse Hyväksy virhe -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="906ed-118">Select or clear the Accept error check box.</span></span>
+10. <span data-ttu-id="906ed-119">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="906ed-119">Click OK.</span></span>
 
-## <a name="verify-the-report-as-finished-journal"></a><span data-ttu-id="4a9b8-120">Tarkista valmiiksi ilmoitettujen kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="4a9b8-120">Verify the Report as finished journal</span></span>
-1. <span data-ttu-id="4a9b8-121">Valitse toimintoruudussa Näytä.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-121">On the Action Pane, click View.</span></span>
-2. <span data-ttu-id="4a9b8-122">Valitse Ilmoitettu valmiiksi.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-122">Click Reported as finished.</span></span>
-3. <span data-ttu-id="4a9b8-123">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-123">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="4a9b8-124">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-124">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="4a9b8-125">Valmiiksi ilmoitettujen kirjauskansio on kirjattu.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-125">The Report as finished journal is posted.</span></span> <span data-ttu-id="4a9b8-126">Jos haluat tehdä oikaisuja kirjauskansioon, voit luoda manuaalisesti uuden kirjauskansion muutosten tekemistä varten.</span><span class="sxs-lookup"><span data-stu-id="4a9b8-126">If you want to make adjustments to the journal, you can manually create  a new journal where you can make changes.</span></span>  
+## <a name="verify-the-report-as-finished-journal"></a><span data-ttu-id="906ed-120">Tarkista valmiiksi ilmoitettujen kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="906ed-120">Verify the Report as finished journal</span></span>
+1. <span data-ttu-id="906ed-121">Valitse toimintoruudussa Näytä.</span><span class="sxs-lookup"><span data-stu-id="906ed-121">On the Action Pane, click View.</span></span>
+2. <span data-ttu-id="906ed-122">Valitse Ilmoitettu valmiiksi.</span><span class="sxs-lookup"><span data-stu-id="906ed-122">Click Reported as finished.</span></span>
+3. <span data-ttu-id="906ed-123">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="906ed-123">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="906ed-124">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="906ed-124">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="906ed-125">Valmiiksi ilmoitettujen kirjauskansio on kirjattu.</span><span class="sxs-lookup"><span data-stu-id="906ed-125">The Report as finished journal is posted.</span></span> <span data-ttu-id="906ed-126">Jos haluat tehdä oikaisuja kirjauskansioon, voit luoda manuaalisesti uuden kirjauskansion muutosten tekemistä varten.</span><span class="sxs-lookup"><span data-stu-id="906ed-126">If you want to make adjustments to the journal, you can manually create  a new journal where you can make changes.</span></span>  
 
 
