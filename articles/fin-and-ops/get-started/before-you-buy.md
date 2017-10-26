@@ -14,13 +14,13 @@ ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 21761
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 831550256176df6fa8542b9985eba1b9b1282fcb
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 75e2a31f1c0e82c6f0dcf92309d7673243e1bdc9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Voit kokeilla Dynamics 365 for Finance and Operations 30 päivää rekisteröity
 
 ## <a name="step-two-choose-a-deployment-option"></a>Toinen vaihe: Käyttöönottovaihtoehdon valitseminen
 Voit nyt ottaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin käyttöön pilviratkaisuna tai paikallisesti. Pilvikäyttöönotot sisältävät Microsoftin kokonaisuudessaan hallitseman ERP-palvelun, kun taas paikalliset käyttöönotetut toteutetaan paikallisesti asiakkaan palvelinkeskuksessa.
-Lisätietoja on ohjeaiheessa [Käytön asetukset](/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type) 
+Lisätietoja on ohjeaiheessa [Käytön asetukset](../../dev-itpro/deployment/choose-deployment-type.md) 
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>Kolmas vaihe: tilauksen osto ja hallinta
 Voit perehtyä tilausvaihtoehtoihin [Dynamics 365:n](https://www.microsoft.com/en-us/dynamics365/pricing) hinnoittelusivulla. Tällä sivulla on useita erilaisia organisaation tarpeisiin sopivia palvelupaketteja.
@@ -60,7 +60,7 @@ Finance and Operationsin volyymikäyttöoikeus on saatavana seuraavina versioina
 Microsoftin pilvipalveluratkaisujen toimittaja selvittää yhteistyössä kanssasi yrityksesi tai organisaatiosi tarpeet. [Etsi tarpeitasi vastaava kumppani Microsoftin kumppanikeskusportaalista](https://partnercenter.microsoft.com/en-us/partner/home). 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Voit ostaa sen Dynamics-kumppanilta (paikallinen).
-Finance and Operationsin paikallisen version ostaminen edellyttää yhteistyötä kumppanin kanssa. Lisätietoja on ohjeaiheessa [Dynamics 365 for Finance and Operations, Enterprise Editionin (paikallinen) ostaminen](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises)
+Finance and Operationsin paikallisen version ostaminen edellyttää yhteistyötä kumppanin kanssa. Lisätietoja on ohjeaiheessa [Dynamics 365 for Finance and Operations, Enterprise Editionin (paikallinen) ostaminen](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Tukivaihtoehdon valitseminen
 Microsoftin tuki, palvelut ja resurssit ovat joustavia ja toimialan parhaita, joiden avulla käyttäjät voivat nopeasti reagoida teknisiin ongelmiin ja maksimoida Dynamics 365 -sijoituksen tuotto. Valitse liiketoimintatarpeitasi parhaiten vastaava suunnitelma. 

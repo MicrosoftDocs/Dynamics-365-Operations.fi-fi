@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 64d915a5e039ba242f6d5ae5f43c8e09d6ca282e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -78,7 +77,7 @@ Seuraavassa esimerkissä yrityksen pääkonttori arvioi alkuperäisen budjetin p
 
 Voit määrittää organisaatiohierarkian kunkin budjettisuunnitteluprosessin budjettisuunnittelun hierarkiaksi **Organisaatiohierarkia**-sivulla. Budjettisuunnittelun hierarkian ei tarvitse vastata muihin tarkoituksiin käytettävää vakio-organisaatiohierarkiaa. Koska tätä hierarkiaa käytetään tietojen yhdistämisessä ja jakelussa, sen rakenne kannattaa muokata erilaiseksi. Esimerkkimallissa myyntiorganisaatiot ovat budjetin ja talousosastot sisältävän pääkonttorin tason alla. Rakenne on luultavasti erilainen kuin myyntiosaston toimintojen hallinnassa käytettävä rakenne. Kuhunkin budjettisuunnitteluprosessiin voidaan määrittää vain yksi organisaatiohierarkia. 
 
-Lisätietoja on kohdassa [Organisaatiot ja organisaatiohierarkiat](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
+Lisätietoja on kohdassa [Organisaatiot ja organisaatiohierarkiat](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Käyttäjän suojaus
 

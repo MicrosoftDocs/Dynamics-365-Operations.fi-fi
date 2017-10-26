@@ -18,10 +18,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
-ms.openlocfilehash: 108a4f4ce366d2efd66fc1ed27ffb6b23ff0e933
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 661c5a14d27f3ad9df6088c2977c507ca315a998
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin mobiilio
 
 | Edellytys                                                                                            | kuvaus                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobiilikäsikirja esitiedoiksi                                                                                |[Mobiiliympäristö](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
+| Mobiilikäsikirja esitiedoiksi                                                                                |[Mobiiliympäristö](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 for Finance and Operations                                                                             | Ympäristö, johon on asennettu Microsoft Dynamics 365 for Operations -versio 1611 sekä Microsoft Dynamics for Operations ympäristöpäivitys 3 (Marraskuu 2016)                   |
 | Asenna hotfix-korjaus KB 3204341.                                                                              | Tehtävän tallennus voit virheellisesti tallentaa kaksi avattavan luettelon Sulje-komentoa. Tämä sisältyy Dynamics 365 for Operationsin ympäristöpäivitykseen 3 (marraskuun 2016 päivitys) |
 | Asenna hotfix-korjaus KB 3207800.                                                                              | Tämän päivityksen avulla liitteitä voi tarkastella mobiiliasiakkaassa. Tämä sisältyy Dynamics 365 for Operationsin ympäristöpäivitykseen 3 (marraskuun 2016 päivitys)           |

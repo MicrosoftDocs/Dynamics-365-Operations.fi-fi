@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: d1fbcefd80f1c48fafbbcb6315406856eaae68a0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -50,7 +49,7 @@ Tässä harjoituksessa luodaan ja tutustutaan nykyiseen oletusraporttiin. Tämä
 4.  Siirry **Tilinpäätökset** kohdassa **Kyselyitä ja raportit** kirjanpidossa.
 5.  Valitse raportille rivi nimeltään **Kirjanpidon tiedot: oletusarvo.**
 6.  Valitse **Muokkaa.** Huomautus: Järjestelmä kehottaa lataamaan kerran klikattavan raportin suunnittelijan ja kirjautumaan sisään. Kirjaudu sisään tunnistetietojesi avulla.
-7.  Muuta perusvuodeksi 2012 ja valitse **Luo**. Kun raportti luodaan raportin suunnittelijalla, kun se avautuu uudessa selaimen välilehdessä. Voit joko tutkia raporttia selaimen uudessa välilehdessä tai mennä alkuperäiseen selaimen välilehteen ja avata raportin siellä valitsemalla sen **Tilinpäätökset**-luettelosta.
+7.  Muuta perusvuodeksi 2012 ja valitse **Luo**. Kun raportti luodaan raportin suunnittelijalla, se avautuu uudessa selaimen välilehdessä. Voit joko tutkia raporttia selaimen uudessa välilehdessä tai mennä alkuperäiseen selaimen välilehteen ja avata raportin siellä valitsemalla sen **Tilinpäätökset**-luettelosta.
 8.  Valitse yksi summista perehtyäksesi raportin tilitietoihin avatussa raportissa.
 9.  Kun olet tilitiedoissa, valitse tili, jossa on tietoja, ja **perehdy raporttiin tapahtumatasolla**. Raportin tapahtumatasolla näet ominaisuudet (määritteet), jotka sisältyvät raportin rakenteeseen. Tapahtumasta ja tilistä riippuen voit nähdä vähintään yhden määritteen.
 10. Sulje raportin tapahtumataso.
@@ -183,8 +182,8 @@ Tässä harjoituksessa luot uuden raportin. Raportti on rinnakkainen osastojen t
 18. **Tallenna** muutokset ja **luo**. Kun raportti on luotu ja avautuu, voit tutkia raporttia.
 
 ## <a name="additional-resources"></a>Lisäresurssit
-[Talousraportointi](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started)  
-[Tarkastele tilinpäätöksiä](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
+[Talousraportointi](../../financials/general-ledger/financial-reporting-getting-started.md)  
+[Tarkastele tilinpäätöksiä](../../financials/general-ledger/view-financial-reports.md) 
 [Dynamicsin taloushallinnon raportoinnin blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

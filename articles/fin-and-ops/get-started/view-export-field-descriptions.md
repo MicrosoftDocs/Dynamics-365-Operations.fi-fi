@@ -16,13 +16,13 @@ ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
+ms.translationtype: HT
+ms.sourcegitcommit: 908f854e5ca50f4298110c08c87fefd9427b5cc9
+ms.openlocfilehash: 841c18630a59c3f5a7b51cd005962fa8a7f7163f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Microsoft Dynamics 365 for Finance and Operations -järjestelmässä on kuvaukse
 
 Kaikilla sivuilla ei ole kentän kuvauksia. Vain monimutkaisilla kentillä on kuvaukset; kuvauksia ei ole kentillä, joiden käyttö on selkeää. Tämän vuoksi joillakin sivuilla ei ole lainkaan kenttäkuvauksia, joillakin sivuilla on muutamia kuvauksia ja joillakin monimutkaisilla sivuilla, kuten monilla parametrisivulla, on useita kuvauksia. 
 
-Voit lisätä halutessasi uusia kenttien kuvauksia ja mukauttaa valmiita kuvauksia, jos sinulla on Finance and Operations -kehitysympäristön käyttöoikeus. Voit esimerkiksi lisätä yrityskohtaiset tiedot kentän kuvaukseen. Lisätietoja on artikkelissa [Muokkaa kenttäohjetta](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help).
+Voit lisätä halutessasi uusia kenttien kuvauksia ja mukauttaa valmiita kuvauksia, jos sinulla on Finance and Operations -kehitysympäristön käyttöoikeus. Voit esimerkiksi lisätä yrityskohtaiset tiedot kentän kuvaukseen. Lisätietoja on artikkelissa [Muokkaa kenttäohjetta](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Lisätietoja on käyttöliittymän kenttien kuvauksissa.
 Voit tarkastella kentän kuvauksia asettamalla hiiren osoittimen kentän päälle. Jos kuvausta ei ole, kentän nimi tulee näkyviin, kun pidät hiiren osoitinta kentän päällä. (Huomautus: Kenttien kuvauksia voidaan tarkastella Dynamics AX 7.0:ssa (helmikuu 2016) vain **Kenttien kuvaukset** -sivulla) Seuraavassa kuvassa on kentän kuvaus, joka tulee näkyviin, kun pidät hiiren osoitinta **Lukitse nimikkeet inventoinnin ajaksi** -kentän päällä. 
@@ -101,7 +101,7 @@ Lisätietoja erilaisista sivujen etsimistavoista on aiemmin tässä artikkelissa
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Mukauta kenttää -ohje](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
+[Mukauta kenttää -ohje](../../dev-itpro/user-interface/customize-field-help.md)
 
 
 

@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
-ms.openlocfilehash: d5e4857081134808b194d3248dd8739f83b57d6e
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: 297fe730a432e05e1ab490be4802c37f9402b0a7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -116,14 +116,14 @@ Voit ladata ja muokata Microsoftin tehtävätallenteita, kun haluat käyttää n
 11. Määritä tehtävätallenteen tallennustapa.
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Tehtävätallenteiden sisällyttäminen ohjeruutuun
-Voit näyttää omat mukautetut tehtävätallenteen ohjeruudussa tehtävän ohjauksina toistettavina tai tekstinä tarkasteltavina. Tallenna tehtävätallenteet ensin omaan BPM-kirjastoon ja päivitä ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään.](../get-started/help-connect.md)
+Voit näyttää omat mukautetut tehtävätallenteen ohjeruudussa tehtävän ohjauksina toistettavina tai tekstinä tarkasteltavina. Tallenna tehtävätallenteet ensin omaan BPM-kirjastoon ja päivitä ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään.](../../fin-and-ops/get-started/help-connect.md)
 
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Ohjeen yleiskatsaus](..\get-started\help-overview.md)
+[Ohjeen yleiskatsaus](../../fin-and-ops/get-started/help-overview.md)
 
-[Yhdistämisen ohje](..\get-started\help-connect.md)
+[Yhdistämisen ohje](../../fin-and-ops/get-started/help-connect.md)
 
 [Tehtävien tallennustoiminto](task-recorder.md)
 

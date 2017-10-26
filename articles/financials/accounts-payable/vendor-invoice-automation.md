@@ -15,10 +15,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 172d952c79347e7dd563cfda70729750fa0ddde9
-ms.openlocfilehash: c47ca406e2c8be98f26f1c78d6f5e0a3f66690a5
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 75865ece49837e2a8758c4d739d3e29ce9128945
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="vendor-invoice-automation"></a>Toimittajan laskuautomaatio
@@ -57,7 +57,7 @@ Datapaketti on työyksikkö, joka on lähetettävä Finance and Operations -palv
 
 Toimittajan laskun asiakirjaliite on uusi toiminnon osana esiteltävä tietoyksikkö. Toimittajan laskun otsikkoa on muokattu siten, että se tukee liitteitä. Toimittajan laskuriviyksikköä ei ole muutettu tämän toiminnon osalta.
 
-Tässä ohjeaiheessa ei anneta tarkkaa datapaketin määritystä. Tässä ei myöskään selitetä, miten datapaketit luodaan. Lisätietoja on ohjeaiheessa [Tietoyksikköjen ja -pakettien kehikko](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages).
+Tässä ohjeaiheessa ei anneta tarkkaa datapaketin määritystä. Tässä ei myöskään selitetä, miten datapaketit luodaan. Lisätietoja on ohjeaiheessa [Tietoyksikköjen ja -pakettien kehikko](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
 Noudata näitä vaiheita, kun haluat luoda nopeasti testitietoja, jotka sisältävät laskuja ja -liitteitä.
 

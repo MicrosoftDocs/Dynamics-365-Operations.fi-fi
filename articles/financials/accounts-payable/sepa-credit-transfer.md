@@ -16,13 +16,13 @@ ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 49dfae79fe3914bcac9447d4fe3959128ff434ec
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Tässä artikkelissa on yleisiä tietoja ISO 20022 -tilisiirroista, jotka sisäl
 
 ## <a name="what-is-a-credit-transfer-message"></a>Mikä on tilisiirron sanoma?
 Tilisiirron sanoma on pyyntö, jonka aloittava osapuoli (oma yrityksesi) lähettää siirtääkseen varoja omalta tililtään velkojan tilille. Tilisiirron sanomille on useita maa/aluekohtaisia ja pankkikohtaisia toteutuksia. Jotkin niistä käytetään yhden maan/alueen sisällä, ja joistakin on muodostumassa standardeja. Yksi vakiintunut yleinen standardi on ISO 20022 ja sen aloitussanomat, kuten Tilisiirto. Seuraavassa kuvassa esitetään valittujen tilisiirron sanomien suhteet ja kattavuus. 
-![Tilisiirto](./media/credit-transfer.jpg) Tilisiirron sanomat\[/caption\] 
+![Tilisiirto](./media/credit-transfer.jpg) Tilisiirron sanomat 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Mitä SEPA- ja ISO 20022 -maksut ovat?
 Euroopan komissio loi yhtenäinen euromaksualueen (SEPA:n) ja sen perusteella kaikkia sähköisiä maksuja pidetään kotimaan maksuina riippumatta siitä, missä maassa tai millä alueella henkilö, yritys tai organisaatio ja pankki sijaitsevat. Kansallisten ja kansainvälisten maksujen välillä ei ole eroja. SEPA koostuu 28 Euroopan unionin (EU) jäsenvaltiosta sekä Islannista, Liechtensteinista, Norjasta, Sveitsistä, Monacossa ja San Marinosta. SEPA auttaa muodostamaan yksittäisen markkinan maksutapahtumille Euroopan talousalueella (ETA). SEPA:n odotetaan lopulta vähentävän sitä maksumuotojen määrää, joiden kanssa pankkien, liikeyritysten ja yksityishenkilöiden on toimittava. Euroopan komissio määritti SEPA-maksujen oikeudellisen perustan maksupalveludirektiivin avulla. Euroopan maksuneuvosto (EPC) tukee SEPA-aluetta seuraavilla toimilla:
@@ -59,7 +59,7 @@ SEPA-tilisiirron maksumuoto toteutetaan Euroopan maissa käyttämällä Microsof
 Tarkista Microsoft Dynamics Lifecycle Services (LCS) -palvelun jaetusta omaisuuskirjastosta luettelo uusimmista käytettävissä olevista tiedostoista, joiden tyyppi on **GER configuration**. Seuraavassa osassa, "Mitä asetuksia on määritettävä?", on linkki ohjeaiheeseen, jossa kerrotaan, miten luot LCS-säilön, josta voit tarkastaa käytettävissä olevat konfiguraatiotiedostot ja tuoda haluamasi tiedostot.
 
 ## <a name="what-do-i-have-to-set-up"></a>Mitä asetuksia on määritettävä?
--   Ennen tilisiirtotiedostojen luontia vähintään yksi aktiivinen tilisiirtomääritys on tuotava sähköisen raportoinnin määrityksiin. Ohjeet löydät artikkelista [Lataa sähköisen raportoinnin konfiguraatiot Lifecycle Servicesistä](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Ennen tilisiirtotiedostojen luontia vähintään yksi aktiivinen tilisiirtomääritys on tuotava sähköisen raportoinnin määrityksiin. Ohjeet löydät artikkelista [Lataa sähköisen raportoinnin konfiguraatiot Lifecycle Servicesistä](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Valitse ensin **Yleinen sähköinen raportointi** -valintaruutu ja sitten ISO-tilisiirtomuoto (esim. **ISO 20022 Tilisiirto (AT)**) vientimuodon määritykseksi, kun määrität ostoreskontran maksutavan.
 -   Myös yritys ja pankkitilin tiedot on määritettävä Finance and Operationsissa.
 -   Tilisiirtomaksujen luomiseen tarvitaan pankkitilin numero, IBAN-koodi ja toisinaan SWIFT-koodi (BIC) tai muu tunnus. Tämän vuoksi on ne on määritettävä toimittajan pankkitilille sekä ja siirtoa pyytävän organisaation pankkitilille.

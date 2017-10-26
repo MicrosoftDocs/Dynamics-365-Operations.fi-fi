@@ -19,10 +19,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
-ms.openlocfilehash: 157cb807a5a5e61b022b3186dfbe67b95c2408ec
+ms.sourcegitcommit: fc8102d945faf9ad533f57ec1a45b0e0dc344963
+ms.openlocfilehash: c5942ecb80047628c863deb878c0959727ab57bb
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -57,7 +57,7 @@ Verkon vaatimukset
 
 ## <a name="supported-microsoft-office-applications"></a>Tuetut Microsoft Office -sovellukset
 
-*   Microsoft Office 2016:n Windows- tai Mac-version on oltava asennettuna, jotta Microsoft Excel ja Word-lisäosia voi käyttää. Lisätietoja versiovaatimuksista on ohjeaiheessa [Office-integroinnin vianmääritys] (https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting Office-integroinnin vianmääritys).
+*   Microsoft Office 2016:n Windows- tai Mac-version on oltava asennettuna, jotta Microsoft Excel ja Word-lisäosia voi käyttää. Lisätietoja versiovaatimuksista on ohjeaiheessa [Office-integroinnin vianmääritys] (../dev-itpro/office-integration/office-integration-troubleshooting.md "Office-integroinnin vianmääritys").
 *   Microsoft Office 2007 tai sitä uudempi on oltava asennettuna, jotta voit tarkastella Vie Exceliin tai Vie Wordiin -toimintojen luomia asiakirjoja.
 
 ## <a name="update-policy"></a>Päivityskäytäntö

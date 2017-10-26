@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7a6f7c12ab5fe5e67ffb844c1dbc6cd688ecd4d5
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: ba518bc1b2e0811d07ed2811e8e1da4812d02899
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -51,9 +51,9 @@ Voit ottaa määrityksistä poikkeamisen käyttöön seuraavien vaiheiden avulla
 <a name="see-also"></a>Lisätietoja
 --------
 
-[Määrityksistä poikkeamisen luominen ja käsittely (tehtäväopas)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-process-non-conformance)
+[Määrityksistä poikkeamisen luominen ja käsittely (tehtäväopas)](tasks/create-process-non-conformance.md)
 
 [Laadunhallintaprosessit](quality-management-processes.md)
 
-[Määrityksistä poikkeamisen hallinnan edellytysten määrittäminen (tehtäväopas)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management)
+[Määrityksistä poikkeamisen hallinnan edellytysten määrittäminen (tehtäväopas)](tasks/set-up-prerequisites-nonconformance-management.md)
 
