@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 1d19276331a4278f44ad14292ed434c49b74d727
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: f596f84463f46fc37b14b77bd335b9ed8a62eea9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -39,7 +39,7 @@ Koska **Kustannuslaskenta-analyysi** – Power BI -sisältö korostaa toteutunei
 
 **Kustannuslaskenta-analyysi** -sisällön ansiosta kustannuslaskijat voivat analysoida, miten kustannukset kulkevat koko organisaation kustannusobjektien läpi. 
 
-Katso lisätietoja kustannuslaskennasta ohjeaiheesta [Kustannuslaskennan aloitussivu](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page). 
+Katso lisätietoja kustannuslaskennasta ohjeaiheesta [Kustannuslaskennan aloitussivu](../../financials/cost-accounting/cost-accounting-home-page.md). 
 
 Määrittämällä käyttäjätason suojauksen kustannuslaskentaan ja yhdistämällä sen rivitason suojaukseen Power BI:ssä, voit myöntää kaikille kustannusobjektien omistajille pääsyn **Kustannuslaskennan analyysin** Power BI -sisältöön. Kaikki visualisoinnin data sitten suodatetaan sen käyttöoikeustason perusteella, jota ohjataan kustannuslaskennassa. Saat lisätietoja käyttöoikeustason suojauksesta ja rivitason suojauksesta ohjeaiheesta [Kustannuslaskennan Power BI -sisällön suojauksen määrittäminen](setup-security-cost-accounting-content-pack.md).
 

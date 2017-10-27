@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 55c25b005e9dc73713f3d4a30eab5148b17c2fec
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: c2c625e9c4f0df762abd6120201a2623ac756bf9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -61,7 +60,7 @@ Rekisteröintiluokka on maan/alueen rekisteröintitunnus, joka on hyväksytty ti
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Kirjoita yleisen osoitekirjan tietueiden rekisteröintitunnukset
 
-Microsoft Dynamics 365 for Finance and Operationsin yleinen osoitekirja sisältää konsolidoidut osoitetiedot asiakkaille, toimittajille, yhteyshenkilöille, liikesuhteille ja yrityksille. Lisätietoja saat ohjeaiheesta [Yleisen osoitekirjan yleiskatsaus](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). Osapuolen tietueet, jotka on tallennettu yleiseen osoitekirjaan, voivat sisältää yhden tai useampia osoitetietueita. Näitä osoitteita käytetään eri tarkoituksiin, esimerkiksi laskutukseen tai toimitukseen. Voit määrittää rekisteröintitunnukset asiakkaiden, toimittajien, työntekijöiden ja oikeussubjektien osoitetiedoille. Etsi osapuolen (oikeushenkilö, toimittaja, asiakas, työntekijä) tietue, jolle haluat syöttää rekisteritunnuksen ja valitse sitten **Rekisteröintitunnukset** oikeushenkilöön, toimittajaan, asiakkaaseen tai työntekijään liittyvässä lomakkeessa avataksesi **Osoitteiden hallinta** -sivun. Valitse **Verorekisteröinti**-välilehdessä **Lisää** ja kirjoita seuraavat tiedot rekisteröintitunnuksesta.
+Microsoft Dynamics 365 for Finance and Operationsin yleinen osoitekirja sisältää konsolidoidut osoitetiedot asiakkaille, toimittajille, yhteyshenkilöille, liikesuhteille ja yrityksille. Lisätietoja saat ohjeaiheesta [Yleisen osoitekirjan yleiskatsaus](../../fin-and-ops/organization-administration/overview-global-address-book.md). Osapuolen tietueet, jotka on tallennettu yleiseen osoitekirjaan, voivat sisältää yhden tai useampia osoitetietueita. Näitä osoitteita käytetään eri tarkoituksiin, esimerkiksi laskutukseen tai toimitukseen. Voit määrittää rekisteröintitunnukset asiakkaiden, toimittajien, työntekijöiden ja oikeussubjektien osoitetiedoille. Etsi osapuolen (oikeushenkilö, toimittaja, asiakas, työntekijä) tietue, jolle haluat syöttää rekisteritunnuksen ja valitse sitten **Rekisteröintitunnukset** oikeushenkilöön, toimittajaan, asiakkaaseen tai työntekijään liittyvässä lomakkeessa avataksesi **Osoitteiden hallinta** -sivun. Valitse **Verorekisteröinti**-välilehdessä **Lisää** ja kirjoita seuraavat tiedot rekisteröintitunnuksesta.
 
 
 |Kenttä                |kuvaus                                                |

@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 46eacb2a01c3bfcc7144c7d8c39ee0189fd72e16
+ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
+ms.openlocfilehash: 7fe11966b27eb0793a47835e05e465d809bf3407
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +42,7 @@ Verkkosovellus voidaan suorittaa seuraavissa selaimissa, joita käytetään mä�
 Ohjelmistovalmistajien sivustot sisältävät tietoja kunkin selaimen uusimmasta versiosta. 
 
 > [!NOTE]
-> -   Chrome-laajennuksen ennakkojulkaisuversio on asennettava, jotta voit tallentaa tehtävien tallennustoiminnon luomat kuvat ja sisällyttää ne Word-asiakirjoihin. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder).-->
+> -   Chrome-laajennuksen ennakkojulkaisuversio on asennettava, jotta voit tallentaa tehtävien tallennustoiminnon luomat kuvat ja sisällyttää ne Word-asiakirjoihin. <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
 > -   Työnkulkueditori käynnistetään ClickOnce-sovelluksena. Ainoastaan Microsoft Edge ja Internet Explorer (tuetussa Microsoft Windows -versiossa) tukevat ClickOnce-sovelluksia. Työnkulkueditorin ClickOnce-sovellus edellyttää 64-bittisen käyttöjärjestelmää.
 > -   Taloushallinnon raportoinnin raportin suunnittelusovellus käynnistetään ClickOnce-sovelluksena. Se edellyttää 64-bittisen käyttöjärjestelmän kanssa yhteensopivaa järjestelmää. Jos käytössäsi on Chrome, sinun on asennettava ClickOnce-laajennus ladataksesi Report Designer -asiakasohjelman. Jos käytät Chromea Incognito-tilassa, varmista, että ClickOnce-laajennus on käytössä Incognito-tilassa.
 > -   PDF-tiedostojen esikatseluun suosittelemme modernia verkkoselainta, kuten Microsoft Edgeä (uusin julkinen versio) Windows 10 -käyttöjärjestelmässä tai Google Chromea (uusin julkinen versio) Windows 10-, Windows 8.1-, Windows 8- tai Windows 7 -käyttöjärjestelmässä tai Google Nexus 10 -tabletissa.
@@ -70,7 +70,7 @@ Finance and Operations edellyttää Microsoft .NET Framework 4.6.2 -versiota kai
 ## <a name="supported-microsoft-office-applications"></a>Tuetut Microsoft Office -sovellukset
 Seuraavia Microsoft Office -sovelluksia tuetaan Finance and Operationsin pilvikäyttöönotoissa ja paikallisissa käyttöönotoissa:
 
--   Microsoft Office 2016:n Windows- tai Mac-version on oltava asennettuna, jotta Microsoft Excel ja Word-lisäosia voi käyttää. Lisätietoja versiovaatimuksista on ohjeaiheessa [Office-integroinnin vianmääritys](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Microsoft Office 2016:n Windows- tai Mac-version on oltava asennettuna, jotta Microsoft Excel ja Word-lisäosia voi käyttää. Lisätietoja versiovaatimuksista on ohjeaiheessa [Office-integroinnin vianmääritys](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   Microsoft Office 2007 tai sitä uudempi on oltava asennettuna, jotta voit tarkastella Vie Exceliin tai Vie Wordiin -toimintojen luomia asiakirjoja.
 
 ## <a name="retail-modern-pos-requirements"></a>Retail Modern POS -vaatimukset
@@ -153,10 +153,10 @@ Tietokoneen on täytettävä kaikki järjestelmän vähimmäisvaatimukset, jotta
 -   Vähintään 10 gigatavua vapaata tallennustilaa (kanavatietokanta voi vaatia paljon tallennustilaa)
 
 ## <a name="requirements-for-development-on-local-vms"></a>Vaatimukset paikalliseen kehitykseen virtuaalikoneessa
-Lisätietoja paikallisesta virtuaalikoneessa (VMs) kehittämistä koskevista vaatimuksista on kohdassa [Paikalliset virtuaalikoneet](../dev-tools/access-instances.md).
+Lisätietoja paikallisesta virtuaalikoneessa (VMs) kehittämistä koskevista vaatimuksista on kohdassa [Paikalliset virtuaalikoneet](../../dev-itpro/dev-tools/access-instances.md).
 
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Dynamics 365 for Finance and Operations, Enterprise Editionin kokeiluversion hankkiminen](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy)
+[Dynamics 365 for Finance and Operations, Enterprise Editionin kokeiluversion hankkiminen](../../dev-itpro/dev-tools/get-evaluation-copy.md)
 

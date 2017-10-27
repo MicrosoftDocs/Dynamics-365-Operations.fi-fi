@@ -17,10 +17,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
-ms.openlocfilehash: 49f7a8f69729002812e78de757ae889266327ff4
+ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
+ms.openlocfilehash: e074426f4b863e692b91ce1ebf3b428435dadd94
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -47,38 +47,38 @@ Voit suorittaa henkilöstöhallinnossa seuraavat tehtävät:
 
 Henkilöstöhallintoa käytettäessä voi päättää organisaation rakenteen elementtien, kuten osastojen, töiden ja toimien, avulla. Nämä ovat henkilöstöhallinnossa määritettäviä peruselementtejä. Yksittäiset työntekijät määritetään töihin liitettyihin toimiin.
 
--   [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](/dynamics365/unified-operations/talent/departments-jobs-positions)
--   [Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters)
--   [Yritysten välisten henkilöstöhallinnon parametrien määrittäminen](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities) 
+-   [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](../../talent/departments-jobs-positions.md)
+-   [Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen](../../talent/set-up-company-specific-hr-parameters.md)
+-   [Yritysten välisten henkilöstöhallinnon parametrien määrittäminen](../../talent/set-up-hr-parameters-across-legal-entities.md) 
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Työntekijöiden rekrytointi, työhönotto ja motivointi
 
 Työhönottoprojekteilla hallitaan avoimien toimien mainonnassa käytettävää sisältöä, ja ne voivat helpottaa avoimin työpaikkoihin lähettyjen hakemusten hallintaa. Voit seurata niiden avulla tietyn työhönottoprojektin työpaikkailmoituksiin saatuja vastauksiaja tai tiettyjä hakijoita sekä päivittää avoimien työpaikkojen tilatietoja. Voit myös palkata yksittäisiä hakijoita tai hallita joukkotyöhönottoprojekteja, jotka helpottavat useiden työntekijöiden palkkaamista esimerkiksi sesonkiluonteisissa tilanteissa.
 
--   [Työhönottoprosessin hallinta](/dynamics365/unified-operations/talent/manage-recruiting-process)
--   [Joukkotyöhönottoprojektit](/dynamics365/unified-operations/talent/mass-hire-projects) 
+-   [Työhönottoprosessin hallinta](manage-recruiting-process.md)
+-   [Joukkotyöhönottoprojektit](mass-hire-projects.md) 
 
 Henkilöstön palkkauksen jälkeen voit määrittää suunnitelmat kompensaation tehokkaaseen ja tasapuoliseen hallintaan sekä hallita nimikkeitä, kuten tietokoneita ja puhelimia, joita organisaatio lainaa työntekijöille. Voit luoda kiinteitä ja muuttuvia kompensaatiosuunnitelmia sekä määrittää säännöt, joilla käytetään kyseisen suunnitelman ehdot täyttävää kompensaatiosuunnitelmaa.
 
--   [Kompensaatiosuunnitelmat](/dynamics365/unified-operations/talent/compensation-plans)
--   [Kiinteiden kompensaatiosuunnitelmien luominen](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
--   [Muuttuvien kompensaatiosuunnitelmien luominen](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+-   [Kompensaatiosuunnitelmat](../../talent/compensation-plans.md)
+-   [Kiinteiden kompensaatiosuunnitelmien luominen](../../talent/create-fixed-compensation-plans.md)
+-   [Muuttuvien kompensaatiosuunnitelmien luominen](../../talent/create-variable-compensation-plans.md)
 
 ## <a name="develop-and-train-employees"></a>Työntekijöiden kehittäminen ja kouluttaminen
 
 Voit auttaa työntekijöitä saavuttamaan uratavoitteensa samalla, kun toteutat kriittisiä liiketoiminnan tarpeita määrittämällä tavoitteita, luomalla suoritustasoarviointeja ja seuraamalla palautetta. Ohjaajien, kurssityyppien, kurssien, kurssikuvausten, työjärjestysten, edistymissuunnitelmien ja istuntojen määrittäminen ennen kurssin ohjaajan määrittämistä tai työntekijän ilmoittamista kurssille auttaa työntekijöitä kehittämään tarvittavia taitoja. Ohjaajat voivat olla jo järjestelmässä työntekijöinä, hakijoina tai yhteyshenkilöinä.
 
--   [Suorituksen hallinta](/dynamics365/unified-operations/talent/performance-management-overview)
--   [Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen](/dynamics365/unified-operations/talent/skills)
--   [Koulutuksen hallinta kurssien avulla](/dynamics365/unified-operations/talent/courses)
+-   [Suorituksen hallinta](../../talent/performance-management-overview.md)
+-   [Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen](../../talent/skills.md)
+-   [Koulutuksen hallinta kurssien avulla](../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Etujen luonti ja ylläpito
 
 Henkilöstön kompensaatio voi koostua palkan ja bonusten lisäksi myös muodostetusta etupaketista, johon voi sisältyä sairausvakuutus- ja eläkepaketteja. Voit myös hallita etuja, kuten laina-ohjelmia, jossa yritys lainaa työntekijöilleen nimikkeitä, kuten tietokoneita ja puhelimia.
 
--   [Etuohjelman hallinta](/dynamics365/unified-operations/talent/manage-benefit-program)
--   [Etukelpoisuuden käytännöt](/dynamics365/unified-operations/talent/benefit-eligibility-policies)
--   [Työntekijöille lainattujen nimikkeiden hallinta](/dynamics365/unified-operations/talent/loan-items)
+-   [Etuohjelman hallinta](../../talent/manage-benefit-program.md)
+-   [Etukelpoisuuden käytännöt](../../talent/benefit-eligibility-policies.md)
+-   [Työntekijöille lainattujen nimikkeiden hallinta](../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Työturvallisuuden ja vaatimustenmukaisuuden ylläpito
 
@@ -92,10 +92,10 @@ Microsoft Dynamics AX voi auttaa ylläpitämään turvallista ja sovellettavan l
 
 Voit suunnitella ja hallita kyselylomakkeita, joilla voit kerätä tietoja eri tarkoituksia varten. Voit suunnitella ja luoda kyselylomakkeita kyselylomaketoiminnolla. Kun kyselylomake on valmis, voit käyttää laajaa jakelua tai jakaa sen tietyille vastaajille. Kun vastaajat ovat vastanneet lomakkeen kysymyksiin, voit tarkastella ja analysoida tuloksia.
 
--   [Kyselylomakkeet](/dynamics365/unified-operations/talent/questionnaires)
--   [Kyselylomakkeen suunnitteleminen](/dynamics365/unified-operations/talent/design-questionnaires)
--   [Kyselylomakkeen jakaminen ja täyttäminen](/dynamics365/unified-operations/talent/distribute-questionnaires)
--   [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](/dynamics365/unified-operations/talent/evaluate-questionnaire-results)
+-   [Kyselylomakkeet](../../talent/questionnaires.md)
+-   [Kyselylomakkeen suunnitteleminen](../../talent/design-questionnaires.md)
+-   [Kyselylomakkeen jakaminen ja täyttäminen](../../talent/distribute-questionnaires.md)
+-   [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](../../talent/evaluate-questionnaire-results.md)
 
 
 

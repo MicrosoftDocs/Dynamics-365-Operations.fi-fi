@@ -16,10 +16,10 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
-ms.openlocfilehash: 90e21bb939bd96a3420decb5f9bc07c017c3e946
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: fcab30f03aebf7dbe76d5b3b64260f726f291fb8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -118,7 +118,7 @@ Kun tuot LCS:n muotokonfiguraatioita, tuot koko konfiguraatiopuun, johon myös m
  - **Pain.002** – tätä muotoa käytetään yhdessä Maksumallin yhdistämismääritys kohteeseen ISO20022 -konfiguraation kanssa tuomaan pain.002-tiedosto toimittajan maksujen siirtokirjauskansioon.
  - **Camt.054** – tätä muotoa käytetään yhdessä Maksumallin yhdistämismääritys kohteeseen ISO20022 -konfiguraation kanssa tuomaan camt.054-tiedosto toimittajan maksujen siirtokirjauskansioon. Samaa muotokonfiguraatiota käytetään asiakkaan maksujen tuontitoiminnossa mutta Maksumallin yhdistämismääritykset kohteeseen ISO20022 -konfiguraatiossa käytetään erilaista yhdistämismääritystä.
 
-Lisätietoja sähköisestä raportoinnista on ohjeaiheessa [Sähköisen raportoinnin yleiskatsaus](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Lisätietoja sähköisestä raportoinnista on ohjeaiheessa [Sähköisen raportoinnin yleiskatsaus](../../dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 - [Toimittajien maksujen luominen ja tuonti ISO20022-maksumuodossa](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
