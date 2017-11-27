@@ -1,16 +1,16 @@
 ---
 title: Toimitusketjun hallinnan kotisivu
-description: "Tällä sivulla on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Finance and Operations -sovelluksen toimitusketjun hallintaa tehokkaasti."
+description: "Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 07/20/2017
+ms.date: 11/02/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: 6cef449562ba75b03b10b4fe27a436ecff3a6691
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 0ca879fc4b0a43cd3af1e45c78a48f1c942a9a6a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](includes/banner.md)]
 
-Tällä sivulla on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Finance and Operations -sovelluksen toimitusketjun hallintaa tehokkaasti. 
+Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista. 
 
 ## <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
-Sivustossa <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
+<a href="https://roadmap.dynamics.com/">Dynamics 365 -ohjesivustolla</a> on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
 
 ## <a name="core-concepts-and-tasks"></a>Keskeiset käsitteet ja tehtävät
 
@@ -41,7 +41,7 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
 
 - [Kustannuslaskenta](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Kustannushintojen hallinta](cost-management/costing-sheets.md)  
-- [Inventoinnin- ja varastonhallinta](inventory/consignment.md)
+- [Varastoinninhallinta](inventory/inventory-home-page.md)
 - [Pääsuunnittelu](master-planning/introduction-demand-forecasting.md)
 - [Hankinta](procurement/procurement-sourcing-overview.md)
 - [Tuotetietojen hallinta](pim/product-information.md)
