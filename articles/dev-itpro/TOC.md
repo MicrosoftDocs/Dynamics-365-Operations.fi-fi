@@ -54,57 +54,54 @@
 #### [X++-määriteluokat](dev-ref/xpp-attribute-classes.md)
 #### [X++- ja C\#-kielen vertailu](dev-ref/xpp-cs-comparison.md)
 #### [X++-syntaksi](dev-ref/xpp-syntax.md)
-## Käännösaikafunktiot
+## [API-, luokka- ja tauluviite](dev-ref/api-reference.md)
 ### [X++-käännösaikafunktiot](dev-ref/xpp-compile-time-functions.md)
-## Suoritusaikafunktiot
-### [Liiketoiminnan X++-suoritusaikafunktiot](dev-ref/xpp-business-run-time-functions.md)
-### [Säilön X++-suoritusaikafunktiot](dev-ref/xpp-container-run-time-functions.md)
-### [Muunnon X++-suoritusaikafunktiot](dev-ref/xpp-conversion-run-time-functions.md)
-### [Päivämäärän X++-suoritusaikafunktiot](dev-ref/xpp-date-run-time-functions.md)
-### [Matematiikan X++-suoritusaikafunktiot](dev-ref/xpp-math-run-time-functions.md)
-### [Reflektion X++-suoritusaikafunktiot](dev-ref/xpp-reflection-run-time-functions.md)
 ### [X++-suoritusaikafunktiot](dev-ref/xpp-run-time-functions.md)
-### [Istunnon X++-suoritusaikafunktiot](dev-ref/xpp-session-run-time-functions.md)
-### [Merkkijonon X++-suoritusaikafunktiot](dev-ref/xpp-string-run-time-functions.md)
-## Järjestelmätaulut
+#### [Liiketoiminnan X++-suoritusaikafunktiot](dev-ref/xpp-business-run-time-functions.md)
+#### [Säilön X++-suoritusaikafunktiot](dev-ref/xpp-container-run-time-functions.md)
+#### [Muunnon X++-suoritusaikafunktiot](dev-ref/xpp-conversion-run-time-functions.md)
+#### [Päivämäärän X++-suoritusaikafunktiot](dev-ref/xpp-date-run-time-functions.md)
+#### [Matematiikan X++-suoritusaikafunktiot](dev-ref/xpp-math-run-time-functions.md)
+#### [Reflektion X++-suoritusaikafunktiot](dev-ref/xpp-reflection-run-time-functions.md)
+#### [Istunnon X++-suoritusaikafunktiot](dev-ref/xpp-session-run-time-functions.md)
+#### [Merkkijonon X++-suoritusaikafunktiot](dev-ref/xpp-string-run-time-functions.md)
 ### [Järjestelmätaulut](dev-ref/system-tables.md)
-## Järjestelmäluokat
-### [Ohjelmointirajapinta-, luokka- ja tauluviite](dev-ref/api-reference.md)
-### [A-luokat](dev-ref/a-classes.md)
-### [B-luokat](dev-ref/b-classes.md)
-### [C-luokat](dev-ref/c-classes.md)
-### [D-luokat](dev-ref/d-classes.md)
-### [E-luokat](dev-ref/e-classes.md)
-### [F-luokat: FieldBinding–FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
-### [F-luokat: FormBuildButtonControl–FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
-### [F-luokat: FormBuildFilterPaneControl–FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
-### [F-luokat: FormBuildReferenceControl–FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
-### [F-luokat: FormChangeTracker–FormControlEventArgs](dev-ref/formchangetracker-classes.md)
-### [F-luokat: FormDataObject–FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
-### [F-luokat: FormFastTabSummarySeparator–FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
-### [F-luokat: FormGroupControl–FormIntControl](dev-ref/formgroupcontrol-classes.md)
-### [F-luokat: FormListBoxControl–FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
-### [F-luokat: FormObject–FormRealControl](dev-ref/formobject-classes.md)
-### [F-luokat: FormReferenceControl–FormStringControl](dev-ref/formreferencecontrol-classes.md)
-### [F-luokat: FormTabControl–FormWindowControl](dev-ref/formtabcontrol-classes.md)
-### [G-luokat](dev-ref/g-classes.md)
-### [H-luokat](dev-ref/h-classes.md)
-### [I-luokat](dev-ref/i-classes.md)
-### [J-luokat](dev-ref/j-classes.md)
-### [K-luokat](dev-ref/k-classes.md)
-### [L-luokat](dev-ref/l-classes.md)
-### [M-luokat](dev-ref/m-classes.md)
-### [N-luokat](dev-ref/n-classes.md)
-### [O-luokat](dev-ref/o-classes.md)
-### [P-luokat](dev-ref/p-classes.md)
-### [Q-luokat](dev-ref/q-classes.md)
-### [R-luokat](dev-ref/r-classes.md)
-### [S-luokat](dev-ref/s-classes.md)
-### [T-luokat](dev-ref/t-classes.md)
-### [U-luokat](dev-ref/u-classes.md)
-### [V-luokat](dev-ref/v-classes.md)
-### [W-luokat](dev-ref/w-classes.md)
-### [X-luokat](dev-ref/x-classes.md)
+### Järjestelmäluokat
+#### [A-luokat](dev-ref/a-classes.md)
+#### [B-luokat](dev-ref/b-classes.md)
+#### [C-luokat](dev-ref/c-classes.md)
+#### [D-luokat](dev-ref/d-classes.md)
+#### [E-luokat](dev-ref/e-classes.md)
+#### [F-luokat: FieldBinding–FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
+#### [F-luokat: FormBuildButtonControl–FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
+#### [F-luokat: FormBuildFilterPaneControl–FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
+#### [F-luokat: FormBuildReferenceControl–FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
+#### [F-luokat: FormChangeTracker–FormControlEventArgs](dev-ref/formchangetracker-classes.md)
+#### [F-luokat: FormDataObject–FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
+#### [F-luokat: FormFastTabSummarySeparator–FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
+#### [F-luokat: FormGroupControl–FormIntControl](dev-ref/formgroupcontrol-classes.md)
+#### [F-luokat: FormListBoxControl–FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
+#### [F-luokat: FormObject–FormRealControl](dev-ref/formobject-classes.md)
+#### [F-luokat: FormReferenceControl–FormStringControl](dev-ref/formreferencecontrol-classes.md)
+#### [F-luokat: FormTabControl–FormWindowControl](dev-ref/formtabcontrol-classes.md)
+#### [G-luokat](dev-ref/g-classes.md)
+#### [H-luokat](dev-ref/h-classes.md)
+#### [I-luokat](dev-ref/i-classes.md)
+#### [J-luokat](dev-ref/j-classes.md)
+#### [K-luokat](dev-ref/k-classes.md)
+#### [L-luokat](dev-ref/l-classes.md)
+#### [M-luokat](dev-ref/m-classes.md)
+#### [N-luokat](dev-ref/n-classes.md)
+#### [O-luokat](dev-ref/o-classes.md)
+#### [P-luokat](dev-ref/p-classes.md)
+#### [Q-luokat](dev-ref/q-classes.md)
+#### [R-luokat](dev-ref/r-classes.md)
+#### [S-luokat](dev-ref/s-classes.md)
+#### [T-luokat](dev-ref/t-classes.md)
+#### [U-luokat](dev-ref/u-classes.md)
+#### [V-luokat](dev-ref/v-classes.md)
+#### [W-luokat](dev-ref/w-classes.md)
+#### [X-luokat](dev-ref/x-classes.md)
 
 ## [Laajennettavuuden kotisivu](extensibility/extensibility-home-page.md)
 ### Esittely ja aloittaminen
@@ -140,13 +137,10 @@
 #### [Otsikon vaihtaminen](extensibility/change-label.md)
 #### [Numerosarja-alueen laajentaminen](extensibility/extend-number-sequence-scope.md)
 
-## [Jatkuvan toimituksen aloitussivu](dev-tools/continuous-delivery-home-page.md)
-### [Kehitys ja jatkuva toimitus – usein kysytyt kysymykset](dev-tools/continuous-delivery-faq.md)
-### [Testipakettien jättäminen pois koonnin tuotoksesta](dev-tools/exclude-test-packages.md)
-### [Kolmannen osapuolen mallien ja suorituspalvelupakettien hallinta lähteenhallinnan avulla](dev-tools/manage-runtime-packages.md)
-### [Automatisoidun koontiversion versiomallit](dev-tools/version-models-build.md)
 
-## Suorituskyvyn kotisivu
+
+
+## Suorituskyky
 ### [Jäljittäminen jäljityksen jäsentimellä](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK:n ja monen käyttäjän testaus Visual Studio Team Services -palvelulla](perf-test/perfsdk-tutorial.md)
 ### [Ongelmien vianmääritys ja suorituskykyongelmien analysointi jäljityksen jäsentimellä](perf-test/trace-parser.md)
@@ -155,10 +149,8 @@
 ### [Testaus ja tarkistukset](perf-test/testing-validation.md)
 ### [Projektien testaus Visual Studiossa](perf-test/testing-support.md)
 ### [Käyttöönotto sekä jatkuvan muodostuksen ja testauksen automatisointi](perf-test/continuous-build-test-automation.md)
-## Päivämäärät
-### [Voimassaolopäivä](dev-tools/date-effectivity.md)
-## Käyttöoikeudet
-### [ISV-käyttöoikeudet](dev-tools/isv-licensing.md)
+## [Voimassaolopäivä](dev-tools/date-effectivity.md)
+## [ISV-käyttöoikeudet](dev-tools/isv-licensing.md)
 
 # [Käyttöliittymäkehitys](user-interface/user-interface-development-home-page.md)
 ## Oppaat
@@ -192,7 +184,7 @@
 ### [Syötön, taulun ja ruudukon ohjausobjektien fontti ja taustavärit](user-interface/specify-color-font-background-controls.md)
 ### [Oikealta vasemmalle -kielituki ja kaksisuuntainen teksti](user-interface/bidirectional-support.md)
 ### [Työtilaruutujen luontikuvakkeet](user-interface/create-icons-workspace-tiles.md)
-### [Laajennettavat ohjausobjektit – julkiset JavaScript-ohjelmointirajapinnat](user-interface/public-javascript-apis.md)
+### [Laajennettavat ohjausobjektit – julkiset JavaScript API -ohjelmointirajapinnat](user-interface/public-javascript-apis.md)
 ### [Tarkistusluettelon hallinta](user-interface/control-checklist.md)
 ## Sanomat
 ### [Liukusäädin ja sanomaruutu](user-interface/slider-messagebox.md)
@@ -359,6 +351,104 @@
 #### [ValueDesign-tyyppi](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md)
 #### [ValueMetadata-tyyppi](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
+# Tietojen integraatio
+## [Integraatiomallit](data-entities/integration-overview.md)
+
+## Tietojen integraation API-rajapinnat
+### [Tietojen hallintapaketin API](data-entities/data-management-api.md)
+### [Palvelujen päätepisteet](data-entities/services-home-page.md)
+#### [Palvelun todennuksen vianmääritys](data-entities/troubleshoot-service-authentication.md)
+### [OData](data-entities/odata.md)
+### [Räätälöidyt palvelut](data-entities/custom-services.md)
+### [Toistuvat integraatiot](data-entities/recurring-integrations.md)
+
+## Integraation kehitys
+### [Tietojen integraatio tietoyksikköjen avulla](data-entities/data-management-integration-data-entity.md)
+#### [Tietojen siirtoyksikön kehittäminen](data-entities/develop-entity-for-data-migration.md)
+#### [Yhdistelmätietoyksiköiden kehitys](data-entities/develop-composite-data-entities.md)
+#### [Määritä yritysten välinen taloustietojen jakaminen](data-entities/tasks/configure-financial-cross-company-data-sharing.md)
+#### [Tietuemallin luonti helpottamaan tietojen kirjaamista](data-entities/tasks/create-record-template-facilitate-data-entry.md)
+#### [Uuden tietueen luonti tietuemallin avulla](data-entities/tasks/use-record-template-new-record.md)
+
+### [Tietojen integrointi Common Data Service -palvelua käyttäen](data-entities/data-integration-cds.md) 
+#### [Myyntimahdollisuudesta maksutapahtumaan -skenaarion määrittäminen](../supply-chain/sales-marketing/prospect-to-cash.md)
+##### [Finance and Operationsin tuotteiden synkronointi Salesin tuotteisiin](../supply-chain/sales-marketing/products-template-mapping.md)
+##### [Salesin asiakkaiden synkronointi Finance and Operationsin asiakkaisiin](../supply-chain/sales-marketing/accounts-template-mapping.md)
+##### [Salesin yhteyshenkilöiden synkronointi Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](../supply-chain/sales-marketing/contacts-template-mapping.md)
+##### [Myyntitarjouksien otsikoiden ja rivien synkronointi Salesista Finance and Operationsiin](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+##### [Myyntitilauksien otsikoiden ja rivien synkronointi Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+##### [Myyntilaskujen otsikoiden ja rivien synkronointi Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Salesin asiakkaiden synkronointi suoraan Finance and Operationsin asiakkaisiin](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Myyntitilauksien otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+
+### [Ulkoisten verkkopalveluiden kuluttaminen](data-entities/consume-external-web-service.md)
+
+
+# [Tietojen hallinta](data-entities/data-entities-data-packages.md)
+
+## [Tietoyksiköt](data-entities/data-entities.md)
+
+### [Konfigurointitietoprojektit](data-entities/configuration-data-projects.md)
+### [Konfigurointitietopaketit](data-entities/configuration-data-packages.md)
+### [Konfigurointitietojen kopiointi yritysten välillä](data-entities/copy-configuration.md)
+### [Konfigurointitietomallit](data-entities/configuration-data-templates.md)
+### [Muutosten seuranta yksikköön](data-entities/entity-change-track.md)
+
+## Vakiotietoyksiköt
+### [Tietoyksiköiden raportti](data-entities/data-entities-report.md)
+### [Tietoyksiköt: ostoreskontra ja verot](data-entities/data-entities-accounts-payable-taxes.md)
+### [Tietoyksiköt: myyntireskontra](data-entities/data-entities-accounts-receivable.md)
+### [Tietoyksiköt: pankki](data-entities/data-entities-bank.md)
+### [Tietoyksiköt: alkusaldot](data-entities/data-entities-beginning-balances.md)
+### [Tietoyksiköt: budjettisuunnittelu](data-entities/data-entities-budget-plan.md)
+### [Tietoyksiköt: budjetointi](data-entities/data-entities-budgeting.md)
+### [Tietoyksiköt: kustannuslaskenta](data-entities/data-entities-costing.md)
+### [Tietoyksiköt: kulujen hallinta](data-entities/data-entities-expense-management.md)
+### [Tietoyksiköt: käyttöomaisuuserät](data-entities/data-entities-fixed-assets.md)
+### [Tietoyksiköt: kirjanpito](data-entities/data-entities-general-ledger.md)
+### [Tietoyksiköt: yleinen osoitekirja](data-entities/data-entities-global-address-book.md)
+### [Tietoyksiköt: henkilöstöhallinto](data-entities/data-entities-human-resources.md)
+### [Tietoyksiköt: inventoinnin- ja varastonhallinta](data-entities/data-entities-inventory-management.md)
+### [Tietoyksiköt: pääsuunnittelu](data-entities/data-entities-master-plan.md)
+### [Tietoyksiköt: hankinta](data-entities/data-entities-procurement-sourcing.md)
+### [Tietoyksiköt: tuotetietojen hallinta](data-entities/data-entities-product-information-management.md)
+### [Tietoyksiköt: tuotannonhallinta](data-entities/data-entities-production-control.md)
+### [Tietoyksiköt: projektin kirjanpito](data-entities/data-entities-project-accounting.md)
+### [Tietoyksiköt: julkinen sektori](data-entities/data-entities-public-sector.md)
+### [Tietoyksiköt: Retail](data-entities/data-entities-retail.md)
+### [Tietoyksiköt:: myynnin ja markkinoinnin suoritus](data-entities/data-entities-sales-marketing.md)
+### [Tietoyksiköt: myynti ja markkinointi ennen myyntiä](data-entities/data-entities-sales-marketing-pre-sales.md)
+### [Tietoyksiköt: järjestelmänhallinta](data-entities/data-entities-system-administration.md)
+### [Tietoyksiköt: työnkulku](data-entities/data-entities-workflow.md)
+
+## [Tietojen tuonti- ja vientityöt](data-entities/data-import-export-job.md)
+
+### [Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin](data-entities/tips-tricks-import-general-journal-entity.md)
+
+## Tietoyksiköiden kehittäminen
+### [Uusien tietoyksiköiden luominen](data-entities/build-consuming-data-entities.md)
+### [Tietoyksiköiden ominaisuudet](data-entities/behavioral-properties-data-entities.md)
+### [Laskettavien sarakkeiden ja virtuaalikenttien luominen](data-entities/data-entity-computed-columns-virtual-fields.md)
+### [Yritystenvälinen toiminta](data-entities/cross-company-behavior.md)
+### [Maa-/aluekoodien käsitteleminen](data-entities/countryregion-codes-configuration-keys.md)
+### [Periytyvyysmallit](data-entities/support-super-type-sub-type.md)
+### [Ohjatun tietoyksikkötoiminnon säännöt](data-entities/data-entity-wizard-rules.md)
+### [Metatietojen ominaisuudet](data-entities/behavioral-properties-data-entities.md)
+### [Tarkistukset, oletukset ja yhdistämättömät kentät](data-entities/validations-defaults-unmapped-fields.md)
+### [Suojaus ja tietoyksiköt](data-entities/security-data-entities.md)
+
+## [Oman tietokantasi tuominen mukaan](analytics/export-entities-to-your-own-database.md)
+
+# [Jatkuvan toimituksen aloitussivu](dev-tools/continuous-delivery-home-page.md)
+## [Kehitys ja jatkuva toimitus – usein kysytyt kysymykset](dev-tools/continuous-delivery-faq.md)
+## [Testipakettien jättäminen pois koonnin tuotoksesta](dev-tools/exclude-test-packages.md)
+## [Kolmannen osapuolen mallien ja suorituspalvelupakettien hallinta lähteenhallinnan avulla](dev-tools/manage-runtime-packages.md)
+## [Automatisoidun koontiversion versiomallit](dev-tools/version-models-build.md)
+
+
 # Ratkaisujen vapauttaminen Lifecycle Servicesilla
 ## [Kehitys ja vapautus](lcs-solutions/lcs-solutions-app-source.md)
 ## [Väliaikainen tallennus ja julkaisu](lcs-solutions/marketing-content-lcs-solutions.md)
@@ -377,9 +467,7 @@
 ### [Erilliset lokalisointimallit](lcs-solutions/separate-localization-models.md)
 ### [Säädösten mukaisen hälytyksen lähettäminen](lcs-solutions/submit-localization-alerts.md)
 
-
-
-# Taloushallinnon kehitys
+# [Taloushallinnon kehitys](financial/financial-dev-home-page.md)
 ## [Dimensiot](financial/dimensions.md)
 ## [Dimensioiden lisääminen Excel-malliin](financial/dimensions-overview.md)
 ## [Dimensiomerkinnän ohjausobjektin valintaikkunan tuki](financial/dimension-entry-control-dialog-support.md)
@@ -416,6 +504,7 @@
 ### [Paikallisen projektin luominen](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Asennus ja käyttöönotto paikallisissa ympäristöissä](deployment/setup-deploy-on-premises-environments.md)
 ### [Mukautettujen mallien kehittäminen ja käyttöönottaminen paikallisissa ympäristöissä](deployment/develop-deploy-custom-models-on-premises.md)
+### [Päivitysten soveltaminen paikalliseen käyttöönottoon](deployment/apply-updates-on-premises.md)
 
 ## Mukautetun koodin käyttöönottaminen
 ### [Käyttöönotettavan paketin luominen](deployment/create-apply-deployable-package.md)
@@ -445,7 +534,7 @@
 #### [Päivitetyn myyntikuution siirtäminen yksikkösäilöön](migration-upgrade/migrate-upgraded-cube-entity-store.md)
 #### [Budjettisuunnittelun päivitys](migration-upgrade/upgrade-budget-planning.md)
 
-## Koodin siirto ja päivitys
+## [Koodin siirto ja päivitys](migration-upgrade/code-migration-home-page.md)
 ### [Koodin siirron valmistelu](migration-upgrade/prepare-migration.md)
 ### [Visual Studio Team Services -yhdistämisen määrittäminen koodin siirron aikana](migration-upgrade/configure-vso-solution.md)
 ### [Jakomallit](dev-tools/model-split.md)
@@ -467,7 +556,7 @@
 ### [Korjaustiedoston raportointipalvelut yhdessä ympäristössä](migration-upgrade/patch-reporting-service-environment.md)
 
 ## Vanhentumiset
-### [Vanhentuneet ohjelmointirajapinnat](migration-upgrade/deprecated-apis.md)
+### [Vanhentuneet API-rajapinnat](migration-upgrade/deprecated-apis.md)
 ### [Vanhentuneet ominaisuudet](migration-upgrade/deprecated-features.md)
 
 # [Järjestelmän hallinta](sysadmin/system-administration-home-page.md)
@@ -476,6 +565,7 @@
 ## [Käyttöoikeuskoodien ja määritysavainten raportti](sysadmin/license-codes-configuration-keys-report.md)
 ## [Yritystenvälinen tietojen jakaminen](sysadmin/cross-company-data-sharing.md)
 ## [Ylläpitotila](sysadmin/maintenance-mode.md)
+## [Esimääritetyt järjestelmätilit](sysadmin/pre-configured-system-accounts.md)
 ## [Rooliperustainen tietoturva](sysadmin/role-based-security.md)
 ### [Tietoturva-arkkitehtuuri](sysadmin/security-architecture.md)
 ### [Tietoturvaraportit](sysadmin/security-reports.md)
@@ -496,10 +586,11 @@
 ### [Uutta](lifecycle-services/whats-new-lcs.md)
 ### [Tunnetut ongelmat](lifecycle-services/known-issues.md)
 ## [Dynamics Lifecycle Servicesin käyttöopas](lifecycle-services/lcs-user-guide.md)
+## [Tilauksen arviointityökalu](lifecycle-services/subscription-estimator.md)
 ## [Suojauksen määrittäminen](lifecycle-services/configure-lcs-security.md)
 ## [Ongelmahaku](lifecycle-services/issue-search-lcs.md)
 ## [Määritystenhallinta](lifecycle-services/configuration-manager-lcs.md)
-### [Määritystenhallinnan määrittäminen ](lifecycle-services/set-up-configuration-manager-lcs.md)
+### [Määritystenhallinnan määrittäminen](lifecycle-services/set-up-configuration-manager-lcs.md)
 ## [Koodin päivityspalvelun määrittäminen](lifecycle-services/configure-execute-code-upgrade.md)
 ## [Menetelmän luominen ](lifecycle-services/create-methodology.md)
 ## [Liiketoimintaprosessien mallintaja](lifecycle-services/bpm-overview.md)
@@ -511,6 +602,7 @@
 ## [Liiketoimintaprosessien mallintajan vuokaaviot](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Mukautettujen liiketoimintaprosessien lataaminen palvelimeen](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Valvonta ja diagnostiikka ](lifecycle-services/monitoring-diagnostics.md)
+## [Käyttäjien sisäänkirjautumisten seuraaminen](lifecycle-services/user-logins.md)
 ## [Omaisuuskirjasto](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 – käännöspalvelun yleiskuvaus](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 – käännöspalvelun käyttöopas  ](lifecycle-services/use-translation-service.md)
@@ -528,10 +620,10 @@
 #### [Dynamics AX 2012 R3:n Azure-käyttöönoton hallinta](lifecycle-services/ax-2012/manage-2012-r3-deployment-azure.md)
 #### [Yritysportaalipalvelimien liittäminen yhdeksi palvelinklusteriksi](lifecycle-services/ax-2012/join-enterprise-portal-servers-single-server-farm.md)
 #### [Dynamics AX -yritysportaalin aloituskohtien kirjaaminen](lifecycle-services/ax-2012/record-entry-points-enterprise-portal.md)
-#### [Sähköisen vähittäismyynnin kehitys- tai testiympäristön käyttöönottaminen Azuressa](lifecycle-services/ax-2012/deploy-retail-ecommerce-devtest-environment-azure.md)
+#### [Sähköisen Retail-kehitys- tai -testiympäristön käyttöönottaminen Azuressa](lifecycle-services/ax-2012/deploy-retail-ecommerce-devtest-environment-azure.md)
 #### [Retail Essentials -esittely-ympäristön käyttöönottaminen Azuressa](lifecycle-services/ax-2012/deploy-retail-essentials-demo-environment-azure.md)
 #### [Retail Essentials -kehitys- tai testiympäristön käyttöönottaminen Azuressa](lifecycle-services/ax-2012/deploy-retail-essentials-devtest-environment-azure.md)
-#### [Vähittäismyynnin mobiilikäytön kehitys- tai testiympäristön käyttöönottaminen Azuressa](lifecycle-services/ax-2012/deploy-retail-mobility-devtest-environment-azure.md)
+#### [Retail-mobiilikäytön kehitys- tai testiympäristön käyttöönottaminen Azuressa](lifecycle-services/ax-2012/deploy-retail-mobility-devtest-environment-azure.md)
 #### [Dynamics AX 2012 R3:n Azure-käyttöönoton vianmääritys](lifecycle-services/ax-2012/troubleshoot-2012-r3-deployment-azure.md)
 #### [Dynamics AX 2012 R3:n päivitys](lifecycle-services/ax-2012/update-2012-r3-lcs.md)
 ### [Tietojen tuonti- ja vientiympäristön käyttöopas](lifecycle-services/ax-2012/user-guide-dixf.md)
@@ -594,6 +686,7 @@
 ## [Tietokannan kopiointi SQL Serveristä Azure SQL Databasen tuotantoympäristöön](database/copy-database-from-sql-server-to-azure-sql.md)
 ## [Muun kuin tuotantoympäristön tietokannan palauttaminen](database/request-point-in-time-restore.md)
 ## [Myöhemmin palautettavan tietokannan kopion vienti](database/copy-operations-database.md)
+## [Eristysympäristön tietokannan päivityspyyntö](database/database-refresh.md)
 
 # Tuki
 ## [Dynamics 365 for Finance and Operations, Enterprise Edition- ja Lifecycle Services -tuki](lifecycle-services/lcs-support.md)

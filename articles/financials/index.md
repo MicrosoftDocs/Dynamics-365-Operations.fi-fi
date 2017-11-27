@@ -25,22 +25,22 @@ ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="financial-management-home-page"></a>Taloushallinnon kotisivu
+# <a name="financial-management-home-page"></a><span data-ttu-id="8a745-103">Taloushallinnon kotisivu</span><span class="sxs-lookup"><span data-stu-id="8a745-103">Financial management home page</span></span>
 
 [!include[banner](includes/banner.md)]
 
-Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin taloushallinnon toimintoja koskevista ohjeaiheista ja muista resursseista. 
+<span data-ttu-id="8a745-104">Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin taloushallinnon toimintoja koskevista ohjeaiheista ja muista resursseista.</span><span class="sxs-lookup"><span data-stu-id="8a745-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> 
 
-Saat lisätietoja valitsemalla ominaisuusalueen.
-- [Ostoreskontra](accounts-payable\accounts-payable.md) 
-- [Myyntireskontra](accounts-receivable\accounts-receivable.md) 
-- [Maksuliikenteen hallinta](cash-bank-management\cash-bank-management.md)
-- [Kustannuslaskenta](cost-accounting\cost-accounting-home-page.md)
-- [Käyttöomaisuuserät](fixed-assets\fixed-assets.md)
-- [Kirjanpito](general-ledger\general-ledger.md) 
-- [Projektinhallinta](project-management\overview-project-management-accounting.md)
-- [Julkinen sektori](public-sector\public-sector-functionality.md) 
-- [Budjetointi](budgeting\budgeting-overview.md) 
+<span data-ttu-id="8a745-105">Saat lisätietoja valitsemalla ominaisuusalueen.</span><span class="sxs-lookup"><span data-stu-id="8a745-105">Select a feature area to learn more about it.</span></span>
+- [<span data-ttu-id="8a745-106">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="8a745-106">Accounts payable</span></span>](accounts-payable\accounts-payable.md) 
+- [<span data-ttu-id="8a745-107">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="8a745-107">Accounts receivable</span></span>](accounts-receivable\accounts-receivable.md) 
+- [<span data-ttu-id="8a745-108">Maksuliikenteen hallinta</span><span class="sxs-lookup"><span data-stu-id="8a745-108">Cash and bank management</span></span>](cash-bank-management\cash-bank-management.md)
+- [<span data-ttu-id="8a745-109">Kustannuslaskenta</span><span class="sxs-lookup"><span data-stu-id="8a745-109">Cost accounting</span></span>](cost-accounting\cost-accounting-home-page.md)
+- [<span data-ttu-id="8a745-110">Käyttöomaisuuserät</span><span class="sxs-lookup"><span data-stu-id="8a745-110">Fixed assets</span></span>](fixed-assets\fixed-assets.md)
+- [<span data-ttu-id="8a745-111">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="8a745-111">General ledger</span></span>](general-ledger\general-ledger.md) 
+- [<span data-ttu-id="8a745-112">Projektinhallinta</span><span class="sxs-lookup"><span data-stu-id="8a745-112">Project management</span></span>](project-management\overview-project-management-accounting.md)
+- [<span data-ttu-id="8a745-113">Julkinen sektori</span><span class="sxs-lookup"><span data-stu-id="8a745-113">Public sector</span></span>](public-sector\public-sector-functionality.md) 
+- [<span data-ttu-id="8a745-114">Budjetointi</span><span class="sxs-lookup"><span data-stu-id="8a745-114">Budgeting</span></span>](budgeting\budgeting-overview.md) 
 
 
 
