@@ -3,7 +3,7 @@ title: Alusta varaston varastotasoja
 description: "Tässä menettelyssä selitetään, miten käytettävissä oleva varasto päivitetään manuaalisesti varastosiirron kirjauskansion avulla."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,45 +17,45 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 45c93febbbc4ea78fe2b87735ed96fd773605d96
+ms.sourcegitcommit: d804480167414cd038f8229db312dc9c52d131f8
+ms.openlocfilehash: 3b4685b034f7e6a3af0259fb921230e7b3397754
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
-# Alusta varaston varastotasoja
+# <a name="initialize-stock-levels-in-the-warehouse"></a><span data-ttu-id="87963-103">Alusta varaston varastotasoja</span><span class="sxs-lookup"><span data-stu-id="87963-103">Initialize stock levels in the warehouse</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä selitetään, miten käytettävissä oleva varasto päivitetään manuaalisesti varastosiirron kirjauskansion avulla. (Käytettävissä oleva varasto voidaan päivittää myös tuomatta tietoyksiköiden tapahtumat.) Voit suorittaa tämän opastuksen USMF-yrityksen demotiedoissa, jolloin kaikki edellytykset, kuten kirjauskansion nimi, nimikeasetukset, kirjausprofiilit ja tilit ovat käytettävissä. Opastuksessa ehdotetaan käytettäville nimikkeelle ja dimensioille tiettyjä arvoja. Jos valitset toisen nimikkeen, eri dimensioiden arvot on ehkä annettava.
+<span data-ttu-id="87963-104">Tässä menettelyssä selitetään, miten käytettävissä oleva varasto päivitetään manuaalisesti varastosiirron kirjauskansion avulla.</span><span class="sxs-lookup"><span data-stu-id="87963-104">This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal.</span></span> <span data-ttu-id="87963-105">(Käytettävissä oleva varasto voidaan päivittää myös tuomatta tietoyksiköiden tapahtumat.) Voit suorittaa tämän opastuksen USMF-yrityksen demotiedoissa, jolloin kaikki edellytykset, kuten kirjauskansion nimi, nimikeasetukset, kirjausprofiilit ja tilit ovat käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="87963-105">(It’s also possible to update on-hand inventory by importing transactions in data entities.) You can run this guide in demo data company USMF where all the prerequisites like journal name, item setup, posting profiles, and accounts are available.</span></span> <span data-ttu-id="87963-106">Opastuksessa ehdotetaan käytettäville nimikkeelle ja dimensioille tiettyjä arvoja.</span><span class="sxs-lookup"><span data-stu-id="87963-106">The guide suggests specific values for the item and dimensions that are used.</span></span> <span data-ttu-id="87963-107">Jos valitset toisen nimikkeen, eri dimensioiden arvot on ehkä annettava.</span><span class="sxs-lookup"><span data-stu-id="87963-107">If you choose a different item, you may need to enter values for different dimensions.</span></span>
 
-1. Valitse Inventoinnin- ja varastonhallinta > Kirjauskansioviennit > Nimikkeet > Siirto.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.
-4. Valitse IMov.
-    * On hyvän käytännön mukaista käyttää erilaisia kirjauskansion nimimalleja eri liiketoimintatarkoituksiin.  
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Määritä Vastatili-kenttään arvo 140200.
-    * Tämä vastatili on kirjauskansiorivien oletustili. Oletuksen voi korvat määrittämällä rivikohtaisesti eri vastatilit.  
-7. Valitse OK.
-8. Valitse Uusi.
-9. Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.
-10. Valitse nimike A0001.
-11. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-12. Valitse Varastodimensiot-välilehti.
-13. Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.
-14. Valitse toimipaikka 1.
-15. Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.
-16. Valitse varasto 13.
-17. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-18. Avaa haku valitsemalla Sijainnit-kentässä avattavan valikon painike.
-19. Valitse sijainti 13.
-20. Kirjoita numero Määrä-kenttään.
-21. Valitse Tallenna.
-22. Valitse Kirjaa.
-23. Valitse Siirrä kaikki kirjausvirheet uuteen kirjauskansioon -valintaruutu tai poista sen valinta.
-    * Jos tämä vaihtoehto otetaan käyttöön, kaikki rivit, joiden kirjaus epäonnistui, kopioidaan uuteen kirjauskansioon. Voit korjata ongelmat tämän lokin tietojen perusteella ja kirjata rivit uudelleen.  
-24. Valitse OK.
-25. Sulje sivu.
-26. Sulje sivu.
+1. <span data-ttu-id="87963-108">Valitse Inventoinnin- ja varastonhallinta > Kirjauskansioviennit > Nimikkeet > Siirto.</span><span class="sxs-lookup"><span data-stu-id="87963-108">Go to Inventory management > Journal entries > Items > Movement.</span></span>
+2. <span data-ttu-id="87963-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="87963-109">Click New.</span></span>
+3. <span data-ttu-id="87963-110">Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="87963-110">In the Name field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="87963-111">Valitse IMov.</span><span class="sxs-lookup"><span data-stu-id="87963-111">Select IMov.</span></span>
+    * <span data-ttu-id="87963-112">On hyvä käytännön mukaista käyttää erilaisia kirjauskansion nimimalleja eri liiketoimintatarkoituksiin.</span><span class="sxs-lookup"><span data-stu-id="87963-112">It’s a good practice to use different journal name templates for the different business purposes.</span></span>  
+5. <span data-ttu-id="87963-113">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="87963-113">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="87963-114">Määritä Vastatili-kenttään arvo 140200.</span><span class="sxs-lookup"><span data-stu-id="87963-114">In the Offset account field, specify the values '140200'.</span></span>
+    * <span data-ttu-id="87963-115">Tämä vastatili on kirjauskansiorivien oletustili.</span><span class="sxs-lookup"><span data-stu-id="87963-115">This is the offset account that will be the default account on the journal lines.</span></span> <span data-ttu-id="87963-116">Oletuksen voi korvat määrittämällä rivikohtaisesti eri vastatilit.</span><span class="sxs-lookup"><span data-stu-id="87963-116">It’s possible to override the default to assign different offset accounts per line.</span></span>  
+7. <span data-ttu-id="87963-117">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="87963-117">Click OK.</span></span>
+8. <span data-ttu-id="87963-118">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="87963-118">Click New.</span></span>
+9. <span data-ttu-id="87963-119">Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="87963-119">In the Item number field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="87963-120">Valitse nimike A0001.</span><span class="sxs-lookup"><span data-stu-id="87963-120">Select item A0001.</span></span>
+11. <span data-ttu-id="87963-121">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="87963-121">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="87963-122">Valitse Varastodimensiot-välilehti.</span><span class="sxs-lookup"><span data-stu-id="87963-122">Click the Inventory dimensions tab.</span></span>
+13. <span data-ttu-id="87963-123">Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="87963-123">In the Site field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="87963-124">Valitse toimipaikka 1.</span><span class="sxs-lookup"><span data-stu-id="87963-124">Select site 1.</span></span>
+15. <span data-ttu-id="87963-125">Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="87963-125">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+16. <span data-ttu-id="87963-126">Valitse varasto 13.</span><span class="sxs-lookup"><span data-stu-id="87963-126">Select warehouse 13.</span></span>
+17. <span data-ttu-id="87963-127">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="87963-127">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="87963-128">Avaa haku valitsemalla Sijainnit-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="87963-128">In the Location field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="87963-129">Valitse sijainti 13.</span><span class="sxs-lookup"><span data-stu-id="87963-129">Select location 13.</span></span>
+20. <span data-ttu-id="87963-130">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="87963-130">In the Quantity field, enter a number.</span></span>
+21. <span data-ttu-id="87963-131">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="87963-131">Click Save.</span></span>
+22. <span data-ttu-id="87963-132">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="87963-132">Click Post.</span></span>
+23. <span data-ttu-id="87963-133">Valitse Siirrä kaikki kirjausvirheet uuteen kirjauskansioon -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="87963-133">Check or uncheck the Transfer all posting errors to a new journal check box.</span></span>
+    * <span data-ttu-id="87963-134">Jos tämä vaihtoehto otetaan käyttöön, kaikki rivit, joiden kirjaus epäonnistui, kopioidaan uuteen kirjauskansioon.</span><span class="sxs-lookup"><span data-stu-id="87963-134">If you enable this option, any lines that fail to post will be copied to a new journal.</span></span> <span data-ttu-id="87963-135">Voit korjata ongelmat tämän lokin tietojen perusteella ja kirjata rivit uudelleen.</span><span class="sxs-lookup"><span data-stu-id="87963-135">You can use the information in the log to correct the issues and then re-post the lines.</span></span>  
+24. <span data-ttu-id="87963-136">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="87963-136">Click OK.</span></span>
+25. <span data-ttu-id="87963-137">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="87963-137">Close the page.</span></span>
+26. <span data-ttu-id="87963-138">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="87963-138">Close the page.</span></span>
 
