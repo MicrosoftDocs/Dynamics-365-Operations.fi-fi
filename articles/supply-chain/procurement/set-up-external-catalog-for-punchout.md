@@ -3,7 +3,7 @@ title: "Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden 
 description: "Tässä ohjeaiheessa kuvataan ulkoisen luettelon tai siirtymisluettelon käyttöä tarjouspyynnön tietojen keräämisessä toimittajalta ja sen lisäämistä varasto-ottoehdotukseen."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 4c89f6f168825f7767b836be09fa73b8659b00c6
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a20bb97e451ac59ba23c7f767b5feb336278dcd1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -40,15 +40,15 @@ Ulkoisen luettelon avulla työntekijä, joka määrittää ostoehdotuksen, pitä
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Kun määrität ulkoisen toimittajan tuoteluettelon, tee seuraavat tehtävät:
 
-1. Määritä hankintaluokkahierarkia. Katso lisätietoja kohdasta [Aseta menettelytavat hankintaluokkien hierarkioille](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies).
-2. Rekisteröi toimittaja Finance and Operationsiin. Ennen kuin voit määrittää toimittajan ulkoisen luettelon sivustolle pääsyn konfiguraatiot, sinun on määritettävä toimittaja ja toimittajan yhteystiedot Microsoft Dynamics 365 -järjestelmässä. Lisäksi ulkoisen luettelon toimittaja on lisättävä valittuun hankintaluokkaan. Lisätietoja toimittajien rekisteröinnistä Microsoft Dynamics 365:een on kohdassa [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md). Tietoja toimittajan määrittämisestä hankintaluokkaan on kohdassa [Hyväksy toimittajia tiettyihin hankintaluokkiin](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories).
-3. Varmista, että mittayksiköt ja toimittajan käyttämä valuutta on määritetty. Mittayksikön luomista koskevia lisätietoja on kohdassa [Mittayksiköiden hallinta](/dynamics365/unified-operations/supply-chain/pim/tasks/manage-unit-measure).
-4. Konfiguroi ulkoinen toimittajaluettelo käyttämällä vaatimuksia toimittajan ulkoiselta luettelosivustolta. Lisätietoja tästä tehtävästä on seuraavassa osassa.
+1. Määritä hankintaluokkahierarkia. Katso lisätietoja kohdasta [Aseta menettelytavat hankintaluokkien hierarkioille](tasks/set-up-policies-procurement-category-hierarchies.md).
+2. Rekisteröi toimittaja Finance and Operationsiin. Ennen kuin voit määrittää toimittajan ulkoisen luettelon sivustolle pääsyn konfiguraatiot, sinun on määritettävä toimittaja ja toimittajan yhteystiedot Microsoft Dynamics 365 -järjestelmässä. Lisäksi ulkoisen luettelon toimittaja on lisättävä valittuun hankintaluokkaan. Lisätietoja toimittajien rekisteröinnistä Microsoft Dynamics 365:een on kohdassa [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md). Tietoja toimittajien määrittämisestä hankintaluokkaan on kohdassa [Hyväksy toimittajia tiettyihin hankintaluokkiin](tasks/approve-vendors-specific-procurement-categories.md).
+3. Varmista, että mittayksiköt ja toimittajan käyttämä valuutta on määritetty. Mittayksikön luomista koskevia lisätietoja on kohdassa [Mittayksiköiden hallinta](../pim/tasks/manage-unit-measure.md).
+4. Konfiguroi ulkoinen toimittajaluettelo käyttämällä vaatimuksia toimittajan ulkoiselta luettelosivustolta. Lisätietoja tästä tehtävästä on kohdassa [Ulkoisen toimittajaluettelon määrittäminen](#configure-the-external-vendor-catalog).
 5. Testaa toimittajan tuoteluettelon konfiguraatiot ja tarkista, että asetukset ovat voimassa ja voit käyttää toimittajan ulkoista tuoteluetteloa. Vahvista toimenpiteet, joilla vahvistat määrittämäsi pyynnön asetussanomat, **Vahvista asetukset** -toiminnolla. Tämän sanoman pitää avata toimittajien ulkoinen luettelosivusto selainikkunaan. Vahvistettaessa et voi tilata nimikkeitä ja palveluja toimittajalta. Tilataksesi nimikkeet ja palvelut on siirryttävä toimittajaluetteloon ostoehdotuksesta.
 6. Aktivoi ulkoinen luettelo **Aktivoi luettelo** -painikkeella **Ulkoiset luettelot** -sivulla. Ulkoinen luettelo on otettava käyttöön, ennen kuin työntekijät voivat käyttää sitä. Voit poistaa ulkoisen luettelon milloin tahansa.
 
 
-## <a name="4-configure-the-external-vendor-catalog"></a>(4) Ulkoisen toimittajaluettelon määrittäminen
+## <a name="configure-the-external-vendor-catalog"></a>Ulkoisen toimittajaluettelon määrittäminen
 
 Tämä osa sisältää lisätietoja vaiheesta 4 edellä olevassa osassa.
 

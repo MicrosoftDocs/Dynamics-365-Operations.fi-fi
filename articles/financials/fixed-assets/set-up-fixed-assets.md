@@ -3,14 +3,14 @@ title: "Määritä käyttöomaisuuserät"
 description: "Tämä aihe sisältää käyttöomaisuusmoduulin asetusten yleiskatsauksen."
 author: twheeloc
 manager: AnnBe
-ms.date: 08/02/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 13771
 ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d16c9ca5740c27528d74800957f9b47984c135cd
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7a578c5198feb8481a77180e3ed95077296f4638
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,12 +56,12 @@ Lisätietoja on ohjeaiheessa [Kirjojen määrittäminen.](tasks/set-up-value-mod
 ## <a name="fixed-asset-posting-profiles"></a>Käyttöomaisuuserän kirjausprofiili
 Kun kirja on määritetty, voit luoda kirjausprofiilin. Kirjausprofiili on määritettävä kirjakohtaisesti, mutta sen voi määrittää myös yksityiskohtaisemmalla tasolla. Voit määrittää esimerkiksi kirjan ja käyttöomaisuusryhmään tai jopa yksittäisten käyttöomaisuuskirjan kirjausprofiilin. Määritettyjä kirjanpitotilejä käytettään oletusarvoisesti käyttöomaisuustapahtumille.
 
-Sinun pitää määrittää kirjanpitotilit, joita käytetään poistoprosessien, eli poistomyynnin ja poistohävikin, aikana. Poiston yhteydessä aiemmin kirjatut käyttöomaisuustapahtumat palautetaan alkuperäisistä summista ja nettosummat siirretään sopivalle tulostilille käyttöomaisuuden poistoa varten. Jotta tapahtumien palautus tapahtuu oikein, kaikille liiketoiminnassa käytettäville tapahtumatyypeille on määritettävä tilit. Päätilin on oltava kirjausprofiilissa asetetun tapahtumatyypin alkuperäinen tili. Vastatilin tulee olla käyttöomaisuuden poistotilinä käytettävä tulostili. Poikkeus on nettokirjanpitoarvo. Tässä tapauksessa päätili ja vastatili on määritettävä käyttöomaisuuden poistotilinä käytettäväksi tulostiliksi. Lisätietoja on ohjeaiheessa [Käyttöomaisuuden kirjausprofiilien määrittäminen](tasks/set-up-fixed-asset-posting-profiles.md)
+Sinun pitää määrittää kirjanpitotilit, joita käytetään poistoprosessien, eli poistomyynnin ja poistohävikin, aikana. Poiston yhteydessä aiemmin kirjatut käyttöomaisuustapahtumat palautetaan alkuperäisistä summista ja nettosummat siirretään sopivalle tulostilille käyttöomaisuuden poistoa varten. Jotta tapahtumien palautus tapahtuu oikein, kaikille liiketoiminnassa käytettäville tapahtumatyypeille on määritettävä tilit. Päätilin on oltava kirjausprofiilissa asetetun tapahtumatyypin alkuperäinen tili. Vastatilin tulee olla käyttöomaisuuden poistotilinä käytettävä tulostili. Poikkeus on nettokirjanpitoarvo. Tässä tapauksessa päätili ja vastatili on määritettävä käyttöomaisuuden poistotilinä käytettäväksi tulostiliksi. Lisätietoja on kohdassa [Käyttöomaisuuden kirjausprofiilien määrittäminen](tasks/set-up-fixed-asset-posting-profiles.md)
 
 ## <a name="fixed-asset-groups"></a>Käyttöomaisuusryhmät
 Käyttöomaisuusryhmä on ainoa pakollinen kenttä, kun käyttöomaisuus luodaan. Tämän kentän arvo määrittää useita käyttöomaisuuden tietokentän oletusarvon. Kirjat määritetään siten, että jokaiselle omaisuuserän käyttöomaisuudelle on määritetty oletusarvoinen kirja. Tämän jälkeen voit määrittää kirjojen käyttöomaisuusryhmäkohtaiset ominaisuudet, kuten käyttöaika ja poistomenetelmä.
 
-Voit määrittää myös tietyn käyttöomaisuusryhmän ja kirjan yhdistelmän erityiset poistovähennykset tai bonuspoiston. Erityisen poistovähennyksen prioriteetti määritetään, jotta kirjaan liitettyjen useiden vähennysten laskentajärjestys voidaan määrittää. Lisätietoja on ohjeaiheessa [Käyttöomaisuusryhmien määrittäminen](tasks/set-up-fixed-asset-groups.md)
+Voit määrittää myös tietyn käyttöomaisuusryhmän ja kirjan yhdistelmän erityiset poistovähennykset tai bonuspoiston. Erityisen poistovähennyksen prioriteetti määritetään, jotta kirjaan liitettyjen useiden vähennysten laskentajärjestys voidaan määrittää. Lisätietoja on kohdassa [Käyttöomaisuusryhmien määrittäminen](tasks/set-up-fixed-asset-groups.md)
 
 ## <a name="fixed-asset-parameters"></a>Käyttöomaisuuserien parametrit
 Viimeinen vaihe on käyttöomaisuusparametrien päivittäminen.
@@ -76,6 +76,6 @@ Syykoodit voidaan konfiguroida niin, että ne ovat pakollisia käyttöomaisuuden
 
 Lopuksi Numerosarjat-välilehdessä määritetään käyttöomaisuuden numerosarjat. Jos käyttöomaisuusryhmän numerosarja on määritetty, se voi ohittaa käyttöomaisuuden numerosarjan.
 
-Lisätietoja on ohjeaiheessa [Käyttöomaisuuden luominen](tasks/create-fixed-asset.md).
+Lisätietoja on kohdassa [Käyttöomaisuuden luominen](tasks/create-fixed-asset.md).
 
 

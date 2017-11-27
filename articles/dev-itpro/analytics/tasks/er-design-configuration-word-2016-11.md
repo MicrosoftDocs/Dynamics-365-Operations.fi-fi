@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d602e07548d22bcdee3f375c3c327c0e8963c3b4
+ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
+ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Konfiguraation suunnittelu raporttien luomiseksi Microsoft Word -muodossa sähköistä raportointia (ER) varten
@@ -30,9 +30,9 @@ Seuraavissa vaiheissa selitetään, miten käyttäjä, jolla on järjestelmänva
 
 Näiden vaiheiden suorittaminen edellyttää, että ER-määrityksen luonti OPENXML-muotoisten raporttien luomiseksi -tehtäväoppaan vaiheet on suoritettu ensin. Lisäksi malliraporttia varten on etukäteen ladattava ja tallennettava paikallisesti seuraavat mallit:
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReport.docx
+[Maksuraportin malli](https://go.microsoft.com/fwlink/?linkid=862266)
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReportBounded.docx
+[Maksuraportin sidottu malli](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Nämä ohjeet koskevat toimintoa, joka lisättiin Microsoft Dynamics 365 for Operations -versiossa 1611.
 
@@ -49,7 +49,7 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Microsoft Dynamics 365 for Ope
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Excel-malliin korvaaminen Word-mallilla
     * Tällä hetkellä OPENXML-muotoisen raportin luonnissa käytetään mallina Excel-tiedostoa. Raporttimalli tuodaan Word-muodossa.  
 1. Napsauta Liitteet.
-    * Korvaa aiemmin luotu Excel-malli aiemmin ladatulla Word-mallilla SampleVendPaymDocReport.docx. Huomaa, että tässä mallissa on vain ER-raporttina luotavan asiakirjan asettelu.  
+    * Korvaa aiemmin luotu Excel-malli aiemmin ladatulla Word-mallilla Maksuraportin malli. Huomaa, että tässä mallissa on vain ER-raporttina luotavan asiakirjan asettelu.  
 2. Valitse Poista.
 3. Valitse Kyllä.
 4. Valitse Uusi.

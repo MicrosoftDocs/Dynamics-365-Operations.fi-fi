@@ -1,17 +1,17 @@
 ---
 title: Talousraportin komponentit
 description: "Tässä artikkelissa käsitellään raportin määritysten osia tai rakenneosia käytetään talousraportoinnissa. Näitä rakenneosia ovat rivi-, sarake- ja raportointipuun määritykset. Artikkelissa käsitellään rakenneosien järjestämistä ja lukitsemista sekä rakenneosaryhmien käyttöä."
-author: ShylaThompson
+author: aolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7b283b8550bd7e5eff969d45c761d0a54d93a33e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa käsitellään raportin määritysten osia tai rakenneosia käytetään talousraportoinnissa. Näitä rakenneosia ovat rivi-, sarake- ja raportointipuun määritykset. Artikkelissa käsitellään rakenneosien järjestämistä ja lukitsemista sekä rakenneosaryhmien käyttöä. 
+Tässä artikkelissa käsitellään raportin määritysten osia tai rakenneosia käytetään talousraportoinnissa. Näitä rakenneosia ovat rivi-, sarake- ja raportointipuun määritykset. Tässä artikkelissa kerrotaan, miten rakenneosat järjestetään ja lukitaan. 
 
-Talousraporttien suunnittelutoiminnon suunnitteluperiaate on hajottaa tiedot mahdollisimman pieniksi osiksi tai rakenneosiksi. Tämän jälkeen näitä voi sitten yhdistellä tarpeen mukaan. Tällä tavoin raporttimuotoilu on erillään taloustiedoista ja voit muuttaa raportin muotoa ilman, että taloustietoja on muokattava Microsoft Dynamics ERP -järjestelmässä. Tämän rakenneosatoiminnon avulla voit yhdistää tekstiä, summia ja laskelmia sekä muodostaa niiden avulla tarvittavia raportteja. Lisäksi joustavat toiminnot kannustavat myös luovuuteen, koska toimintojen tarkasteleminen eri tavoilla on helppoa. Raportin määrityksen yksittäiset rakenneosat ovat samanlaisia kuin kolmiulotteiset laskentataulukot, mutta ne ovat laskentataulukkoja tehokkaampia. Raportin määritys määrittää raportissa käytettävän rivin, sarakkeen ja valinnaisesti myös raportointipuun määrityksen. Se sisältää myös tietoja luodun raportin tallennuspaikasta ja sen muotoilusta. Uudelleenkäytettävyyden ja jakamisen helpottamiseksi voidaan luoda rakenneosaryhmiä, jotka ovat yritykseen liitettyjen aiemmin luotujen raporttien, rivien, sarakkeiden ja raportointipuiden määritysten sekä dimensioyhdistelmien yhdistelmiä.
+Talousraporttien suunnittelutoiminnon suunnitteluperiaate on hajottaa tiedot mahdollisimman pieniksi osiksi tai rakenneosiksi. Tämän jälkeen näitä voi sitten yhdistellä tarpeen mukaan. Tällä tavoin raporttimuotoilu on erillään taloustiedoista ja voit muuttaa raportin muotoa ilman, että taloustietoja on muokattava Microsoft Dynamics ERP -järjestelmässä. Tämän rakenneosatoiminnon avulla voit yhdistää tekstiä, summia ja laskelmia sekä muodostaa niiden avulla tarvittavia raportteja. Lisäksi joustavat toiminnot kannustavat myös luovuuteen, koska toimintojen tarkasteleminen eri tavoilla on helppoa. Raportin määrityksen yksittäiset rakenneosat ovat samanlaisia kuin kolmiulotteiset laskentataulukot, mutta ne ovat laskentataulukkoja tehokkaampia. Raportin määritys määrittää raportissa käytettävän rivin, sarakkeen ja valinnaisesti myös raportointipuun määrityksen. Se sisältää myös tietoja luodun raportin tallennuspaikasta ja sen muotoilusta. 
 
-## <a name="building-blocks-of-a-report"></a> Raportin rakenneosat
-| Rakenneosa            | Kuvaus                                                                                                                                                                                                                                                                              | Lisätietoja                                                                                                 |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+## <a name="building-blocks-of-a-report"></a>Raportin rakenneosat
+| Rakenneosa            | kuvaus                     | Lisätietoja                                    |
+|---------------------------|---------------------------------|---------------------------------------------------------|
 | Rivimääritys            | Rivin määritys määrittää raportin kuvaavat rivit (esimerkiksi palkalle tai myynnille). Siinä on myös luettelo segmenttiarvoista tai dimensioista, jotka sisältävät kunkin rivinimikkeen arvot. Myös rivin muotoilun ja laskelmat ovat mukana.                                                    | [Rivimääritykset](row-definitions-financial-reporting.md)                       |
 | Sarakemääritys         | Sarakkeen määritys määrittää kauden, jota käytetään taloushallinnon dimensioiden tietojen purkamisessa. Se sisältää myös sarakkeen muotoilun ja laskelmat.                                                                                                                                 | [Sarakkeiden määritykset](column-definitions-financial-reports.md)         |
 | Raportointipuun määritys | Raportointipuun määritys muistuttaa organisaatiokaaviota. Se sisältää yksittäisiä raportointiyksiköitä, jotka edustavat kaavion kutakin ruutua. Yksiköt voivat olla joko taloushallinnon tietojen yksittäisiä osastoja tai korkeamman tason yksiköitä, jotka sisältävät muiden raportointiyksiköiden yhteenvetotietoja. | [Raportointipuiden määritykset](financial-reporting-tree-definitions.md) |
@@ -67,44 +67,20 @@ Voit poistaa rakenneosan lukituksen avaamalla rakenneosan ja valitsemalla sitten
 
 ## <a name="building-block-groups"></a>Rakenneosaryhmät
 
-Rakenneosat ovat raporttia varten luotavia rivien, sarakkeiden, raportointipuiden ja raporttien määrityksiä. Rakenneosaryhmät ovat yritykseen liitettyjen määritys- dimensioyhdistelmien kokoelmia. Rakenneosaryhmät voivat olla yrityskohtaisia, mutta sama rakenneosajoukko voi olla myös usean yrityksen käytössä. Jos joillakin yrityksillä on eri tilikartta, yrityksissä kannattaa ehkä käyttää eri rakenneosaryhmiä. Vaihtoehtoisesti voit nimetä kaikki yksittäiset rakenneosat niin, että ne vastaavat rakenneosien kanssa yhteensopivaa yritystä.
-### <a name="create-a-building-block-group"></a>Rakenneosaryhmän luominen
+Rakenneosat ovat raporttia varten luotavia rivien, sarakkeiden, raportointipuiden ja raporttien määrityksiä. Rakenneosaryhmät ovat määritysten ja dimensioyhdistelmien kokoelmia. 
 
-1.  Valitse Report Designerin **Yritys**-valikossa **Rakenneosaryhmät**.
-2.  Valitse **Rakenneosaryhmät**-valintaikkunassa **Uusi**.
-3.  Syötä rakenneosaryhmälle yksilöivä nimi ja kuvaus. Kussakin kentässä voi olla enintään 256 merkkiä. (Välilyönnit sisältyvät tähän lukuun.)
-4.  Luo uusi rakenneosaryhmä valitsemalla **OK**.
 
-### <a name="assign-a-building-block-group"></a>Rakenneosaryhmän liittäminen
+### <a name="view-a-building-block-group"></a>Rakenneosaryhmän katseleminen
 
-Kun olet luonut rakenneosaryhmän, määritä se ainakin yhteen yritykseen. Voit luoda sitten raportin, rivin, sarakkeen ja raportointipuun määritykset ja tallentaa ne rakenneosaryhmään. Kaikki rakenneosat on suljettava ennen seuraavan menettelyn aloittamista.
-1.  Valitse Report Designerin **Yritys**-valikossa **Yritykset**.
-2.  Valitse **Yritykset**-valintaikkunassa yritys, jolle rakenneosaryhmä määritetään.
-3.  Valitse **Muokkaa**.
-4.  Valitse **Muokkaa yritystä** -valintaikkunan **Rakenneosaryhmä**-kentässä rakenneosa, johon yritys liitetään, tai luo uusi rakenneosaryhmä valitsemalla **Uusi**.
-5.  Liitä rakenneosaryhmä valitsemalla **OK**.
-6.  Sulje **Yritykset**-valintaikkuna valitsemalla **Sulje**. Valitsemasi rakenneosaryhmä on nyt liitetty yritykseen. Nyt kaikki juuri luodut rivien, sarakkeiden jne. määritykset ovat tähän yritykseen liitetyn rakenneosaryhmän osia. Voit myös tuoda .tdbx-tiedoston tai -raportin toisesta järjestelmästä.
-
-### <a name="view-a-building-block-group"></a> Rakenneosaryhmän tarkasteleminen
-
-Kun rakenneosaryhmä on luotu ja sitä käytetään, voit tarkastella kaikkia siihen liitettyjä rakenneosia. Voit myös viedä tai tuoda rakenneosaryhmän. Voit myös suorittaa rakenneosaryhmissä muita ylläpitotoimia.
-1.  Valitse Report Designerin **Yritys**-valikossa **Rakenneosaryhmät**.
+Voit tarkastella kaikkia rakenneosaryhmään liitettyjä rakenneosia. Voit myös viedä tai tuoda rakenneosaryhmän.
+1.  Valitse raporttien suunnitteluohjelman **Yritys**-valikosta **Rakenneosaryhmät**.
 2.  Valitse **Rakenneosaryhmät**-valintaikkunassa tarkasteltava rakenneosaryhmä.
 3.  Avaa **Näytä rakenneosaryhmä**-valintaruutu valitsemalla **Näytä**. Voit tarkastella ikkunassa rakenneosaryhmän sisältöä.
 4.  Sulje valintaikkunat valitsemalla **Sulje**.
 
-### <a name="save-a-building-block-group-under-a-new-name"></a>Tallenna rakenneosaryhmä uudella nimellä
+### <a name="export-a-building-block-group"></a>Rakenneosaryhmän vieminen
 
-Voit tallentaa aiemmin luodun rakenneosaryhmän uudella nimellä. Voit sitten muokata uutta rakenneosaryhmää niin, että alkuperäinen rakenneosaryhmä ei muutu.
-1.  Valitse raporttien suunnitteluohjelman **Yritys**-valikosta **Rakenneosaryhmät**.
-2.  Valitse **Rakenneosaryhmät**-valintaikkunassa uudella nimellä tallennettava rakenneosaryhmä.
-3.  Valitse **Tallenna nimellä**.
-4.  Syötä rakenneosaryhmälle uusi nimi ja kuvaus.
-5.  Napsauta **OK**. Uusi rakenneosaryhmä näkyy **Rakenneosaryhmät**-valintaikkunassa.
-
-### <a name="export-a-building-block-group"></a> Rakenneosaryhmän vieminen
-
-Voit viedä rakenneosan ryhmän tai tietyn raportin rakenneosia rakenneosan ryhmässä. Voit käyttää vietyä rakenneosan ryhmää varmuuskopiona. Voit myös kopioida viedyt tiedot rakenneosaryhmien tai Finance and Operations -asennusten välillä. Report Designer ja rakenneosaryhmä sisältävät yhdessä viitatut fonttityylit ja dimensioyhdistelmät.
+Voit viedä rakenneosan ryhmän tai tietyn raportin rakenneosia rakenneosan ryhmässä. Voit käyttää vietyä rakenneosan ryhmää varmuuskopiona. Voit myös kopioida viedyt tiedot Finance and Operations -asennusten välillä. Report Designer ja rakenneosaryhmä sisältävät yhdessä viitatut fonttityylit ja dimensioyhdistelmät.
 1.  Valitse Report Designerin **Yritys**-valikossa **Rakenneosaryhmät**.
 2.  Valitse **Rakenneosaryhmät**-valintaikkunassa rakenneosaryhmä, jonka haluat viedä, ja valitse sitten **Vie**.
 3.  Valitse **Vie**-valintaikkunassa vietävät raporttien määritykset.
@@ -118,7 +94,7 @@ Voit viedä rakenneosan ryhmän tai tietyn raportin rakenneosia rakenneosan ryhm
 
 ### <a name="import-a-building-block-group"></a> Rakenneosaryhmän tuominen
 
-Voit tuoda rakenneosaryhmän aiemmin luotuun rakenneosaryhmään tai voit luoda tiedoille uuden rakenneosaryhmän. Alkuperäiset fonttityylit ja yritysviittaukset säilyvät kaikissa tuoduissa rakenneosaryhmissä, ja ne sisältävät tarvittavat dimensioyhdistelmät.
+Voit viedä rakenneosaryhmän aiemmin luotuun rakenneosaryhmään. Alkuperäiset fonttityylit ja yritysviittaukset säilyvät kaikissa tuoduissa rakenneosaryhmissä, ja ne sisältävät tarvittavat dimensioyhdistelmät.
 1.  Valitse Report Designerin **Yritys**-valikossa **Rakenneosaryhmät**.
 2.  Valitse **Rakenneosaryhmät**-valintaikkunassa rakenneosa, johon haluat tuoda rakenneosaryhmän, ja valitse sitten **Tuo**.
 3.  Valitse **Avaa**-valintaikkunassa rakenneosaryhmä, jonka haluat tuoda, ja valitse sitten **Avaa**.

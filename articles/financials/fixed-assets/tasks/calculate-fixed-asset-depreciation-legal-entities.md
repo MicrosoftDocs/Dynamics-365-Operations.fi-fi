@@ -1,9 +1,9 @@
 --- 
 title: "Käyttöomaisuuden poistojen laskenta eri yrityksissä"
-description: "Näitä toimintaohjeita noudattamalla voit muuttaa käyttöomaisuusryhmän, johon käyttöomaisuus on liitetty."
+description: "Näissä ohjeissa kerrotaan, miten poistoprosessi määritetään ja suoritetaan useille yrityksille."
 author: saraschi2
 manager: AnnBe
-ms.date: 10/11/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,27 +16,40 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 91f3f4a625d5d4b47bbe9d4e2d0ca0ed8da9dcd6
+ms.sourcegitcommit: d804480167414cd038f8229db312dc9c52d131f8
+ms.openlocfilehash: 4c45da124136b7fecb916d2ff9098c8ffeff6cb1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a>Käyttöomaisuuden poistojen laskenta eri yrityksissä
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Näitä toimintaohjeita noudattamalla voit muuttaa käyttöomaisuusryhmän, johon käyttöomaisuus on liitetty. Käyttöomaisuus tulee liittää oikeaan käyttöomaisuusryhmään. Käyttöomaisuusryhmää käytetään kyselyjen ja raporttien luonnissa, uusien käyttöomaisuuserien määrittämisessä ja kirjanpidon sekä käyttöomaisuustapahtumien kirjausten integrointiin asianmukaisille kirjanpitotileille.
+Käyttöomaisuuden poisto voidaan suorittaa useille yritykselle yhdellä kertaa. Näissä ohjeissa kerrotaan, miten prosessi määritetään ja suoritetaan useille yrityksille. Prosessissa käytetään kirjanpitäjän roolia.  
 
 Tässä tallenteessa käytetään esittely-yritystä USMF.
 
-1. Siirry kohtaan Käyttöomaisuudet > Käyttöomaisuudet > Käyttöomaisuudet.
-2. Valitse käyttöomaisuus, jonka käyttöomaisuusryhmän haluat vaihtaa.
-3. Valitse Käyttöomaisuusryhmän muuttaminen.
-4. Anna tai valitse arvo Uusi ryhmä -kentässä.
-5. Aseta Uusi käyttöomaisuuserän numero -asetuksen arvoksi Kyllä määrittääksesi numeron valitulle käyttöomaisuudelle.
-    * Käyttöomaisuuden numero -kenttä on käytettävissä, kun Uusi käyttöomaisuuden numero -asetukseksi on määritetty Kyllä.   Jos käyttöomaisuudet numeroidaan automaattisesti, tässä kentässä näkyy seuraava käytettävissä oleva käyttöomaisuusnumero. Voit muuttaa numeroa.   Jos käyttöomaisuuserät numeroidaan manuaalisesti, kenttä on tyhjä ja sinun on kirjoitettava uusi käyttöomaisuuserän numero.  
-6. Valitse OK.
-7. Valitse Kyllä.
 
+Vaiheiden (16) alitehtävä: Määritä yritysten väliset poistoajon kirjauskansiot. 
+
+1. Ensin määritetään kirjauskansiot, joita käytetään yritysten välisessä poistoajossa jokaisessa yrityksessä. Siirry kohtaan Käyttöomaisuus > Asetukset > Käyttöomaisuuden parametrit. 
+2. Laajenna Käyttöomaisuuden ehdotukset -osa. 
+3. Luo tietue, jolla on kirjauskansion nimi. Sitä käytetään yrityksen jokaisella kirjanpitotasolla. Jos kirjoja ei kirjata kirjanpitoon, liitettylle kirjauskansiolle valitaan Ei mitään -kirjanpitotaso. ValitseLisää. 
+4. Syötä tai valitse arvo Kirjanpitotaso-kenttään. 
+5. Syötä tai valitse arvo Kirjauskansion nimi -kentässä. 
+6. Toista kirjauskansion asetukset kunkin yrityksen Käyttöomaisuuden parametrit -sivulla. 
+
+Alitehtävä: Poiston laskeminen
+
+1. Aloita poistoajo yrityksissä Poistoehdotuksen luominen -sivulla. Siirry kohtaan Käyttöomaisuus > Kirjauskansioviennit > Luo poistoehdotus. 
+2. Syötä tai valitse arvo Kirjanpitotaso-kenttään. 
+3. Kirjauskansion nimen oletusarvo saadaan käyttömaisuuden parametreista. Nykyisen yrityksen kirjauskansion nimi voidaan vaihtaa tässä. 
+4. Kirjoita päivämäärä Päivämäärään-kenttään. 
+5. Valitse poistoajoon sisällytettävät yritykset. Luettelo sisältää vain yritykset, joiden kirjauskansiot on määritetty Käyttöomaisuuden parametrit -sivun Käyttöomaisuuden ehdotukset -osassa. 
+6. Kun tämä vaihtoehto on käytössä, Kirjaa kirjauskansiot -vaihtoehto kirjaa poistokirjauskansiot automaattisesti niiden luomisen yhteydessä. Kun vaihtoehtoa ei ole valittu, kirjauskansiot luodaan, mutta niitä ei kirjata. Voit siis tarkistaa tiedot ennen kirjaamista. Valitse Kirjaa kirjauskansiot -kentässä Kyllä. 
+7. Kenttien suodattaminen sisältää kaiken yrityksen käyttöomaisuuden ja kaikki yrityksen ryhmät ja kirjat, jotka on valittu tähän poistoajoon. 
+8. Eräkäsittely-vaihtoehto on käytössä oletusarvoisesti. Kun tämä vaihtoehto on käytössä, poistokirjauskansion luominen ja kirjaaminen suoritetaan taustalla. 
+9. Valitse Luo kirjauskansio. 
+10. Yrityksissä luodut poistokirjauskansiot on tarkistettava. Valitse Käyttöomaisuus > Kirjauskansioviennit > Käyttöomaisuuden kirjauskansio.
 

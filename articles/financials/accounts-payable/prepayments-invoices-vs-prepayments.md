@@ -1,9 +1,9 @@
 ---
-title: Ennakkomaksulaskut ja ennakkomaksut
-description: "Tässä artikkelissa kuvaillaan ja vertaillaan kahta menetelmää, joita organisaatiot voivat käyttää ennakkomaksuihin. Ensimmäisessä menetelmässä on luotava ennakkomaksulasku, joka on liitetty ostotilaukseen. Toisessa menetelmässä ennakkomaksukirjauskansion tositteita voi luoda luomalla kirjauskansiovientejä ja merkitsemällä ne ennakkomaksukirjauskansion tositteiksi."
+title: Ennakkomaksulaskujen ja ennakkomaksujen vertailu
+description: "Tässä ohjeaiheessa kuvaillaan ja vertaillaan kahta menetelmää, joita organisaatiot voivat käyttää ennakkomaksuihin. Ensimmäisessä menetelmässä on luotava ennakkomaksulasku, joka on liitetty ostotilaukseen. Toisessa menetelmässä ennakkomaksukirjauskansion tositteita voi luoda luomalla kirjauskansiovientejä ja merkitsemällä ne ennakkomaksukirjauskansion tositteiksi."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 15871
 ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
 ms.search.region: Global
@@ -19,19 +19,19 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e6bf67fb17363f7b61e782ed6d8e7b6310433ffd
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f30e375b759641875ed6a5a7d2f77132715c57
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="prepayment-invoices-vs-prepayments"></a>Ennakkomaksulaskut ja ennakkomaksut
+# <a name="prepayment-invoices-vs-prepayments"></a>Ennakkomaksulaskujen ja ennakkomaksujen vertailu
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kuvaillaan ja vertaillaan kahta menetelmää, joita organisaatiot voivat käyttää ennakkomaksuihin. Ensimmäisessä menetelmässä on luotava ennakkomaksulasku, joka on liitetty ostotilaukseen. Toisessa menetelmässä ennakkomaksukirjauskansion tositteita voi luoda luomalla kirjauskansiovientejä ja merkitsemällä ne ennakkomaksukirjauskansion tositteiksi.
+Tässä ohjeaiheessa kuvaillaan ja vertaillaan kahta menetelmää, joita organisaatiot voivat käyttää ennakkomaksuihin. Ensimmäisessä menetelmässä on luotava ennakkomaksulasku, joka on liitetty ostotilaukseen. Toisessa menetelmässä ennakkomaksukirjauskansion tositteita voi luoda luomalla kirjauskansiovientejä ja merkitsemällä ne ennakkomaksukirjauskansion tositteiksi.
 
 Yritykset saattavat suorittaa ennakkomaksuja toimittajille tavaroista tai palveluista jo ennen niiden toimittamista. Ennakkomaksuja voidaan suorittaa toimittajille kahdella tavalla. Riskien minimoimiseksi ennakkomaksuja voi seurata määrittämällä ennakkomaksun ostotilaukselle. Tällöin on luotava ennakkomaksulasku, joka on liitetty ostotilaukseen. Tätä menetelmää kutsutaan ennakkomaksun laskuttamiseksi. Yritykset, jotka eivät halua seurata ennakkomaksuja kovin tarkasti tai eivät saa toimittajalta ennakkomaksulaskuja, voivat käyttää ennakkomaksujen laskutusmenetelmän sijaan ennakkomaksukirjauskansion tositteita. Ennakkomaksukirjauskansion tositteita voi luoda luomalla kirjauskansiovientejä ja merkitsemällä ne ennakkomaksukirjauskansion tositteiksi. Tässä menetelmässä ei voi seurata, mitkä ennakkomaksut toimittajalle vastaavat mitäkin ostotilausta. Voit kuitenkin merkitä kirjatun ennakkomaksun tilitettäväksi ostotilausta vastaan.
 

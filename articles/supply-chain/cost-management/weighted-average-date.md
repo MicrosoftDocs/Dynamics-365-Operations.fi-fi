@@ -1,9 +1,9 @@
 ---
 title: "Painotetun keskiarvon päivämäärä"
-description: 
+description: "Painotetun keskiarvon päivämäärä on painotetun keskiarvon periaatteeseen perustuva varastomalli, jossa varasto-otot arvotetaan varastoon vastaanotettujen nimikkeiden keskiarvon mukaan kunakin erillisenä päivänä varaston sulkemiskauden aikana."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 95cc937a97596e4f6ce28636fb30b86e9b328220
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,8 +33,9 @@ ms.lasthandoff: 09/29/2017
 
 [!include[retail name](../includes/retail-name.md)]
 
+Painotetun keskiarvon päivämäärä on varastomalli, joka perustuu painotetun keskiarvon periaatteeseen. Painotetun keskiarvon periaatteessa varasto-otot arvotetaan varastoon vastaanotettujen nimikkeiden keskiarvon mukaan kunakin päivänä varaston sulkemiskauden aikana. 
 
-Painotetun keskiarvon päivämäärä on varastomalli, joka perustuu painotetun keskiarvon periaatteeseen. Painotetun keskiarvon periaatteessa varasto-otot arvotetaan varastoon vastaanotettujen nimikkeiden keskiarvon mukaan kunakin päivänä varaston sulkemiskauden aikana. Kun suoritat varaston sulkemisen käyttämällä painotetun keskiarvon päivämäärää, kaikki päivittäiset vastaanotot täsmäytetään virtuaaliseen varasto-ottoon. Virtuaalinen varasto-otto sisältää kyseisenä päivänä vastaanotetun kokonaismäärän ja -arvon. Tähän virtuaalivarasto-ottoon liittyy vastaava virtuaalivastaanotto, josta varasto-otot selvitetään. Näin kaikille varastostaotoille tulee sama keskimääräinen kustannus. Virtuaalivarastostaoton ja -vastaanoton voi nähdä virtuaalisiirtona, jota kutsutaan *painotetun keskiarvon varastonsulkemissiirroksi*. 
+Kun suoritat varaston sulkemisen käyttämällä painotetun keskiarvon päivämäärää, kaikki päivittäiset vastaanotot täsmäytetään virtuaaliseen varasto-ottoon. Virtuaalinen varasto-otto sisältää kyseisenä päivänä vastaanotetun kokonaismäärän ja -arvon. Tähän virtuaalivarasto-ottoon liittyy vastaava virtuaalivastaanotto, josta varasto-otot selvitetään. Näin kaikille varastostaotoille tulee sama keskimääräinen kustannus. Virtuaalivarastostaoton ja -vastaanoton voi nähdä virtuaalisiirtona, jota kutsutaan *painotetun keskiarvon varastonsulkemissiirroksi*. 
 
 Jos ennen määrättyä päivämäärää on tapahtunut vain yksi vastaanotto, keskiarvoa ei tarvita. Koska kaikki varasto-otot selvitetään kyseisestä vastaanotosta, virtuaalisiirtoa ei voi luoda. Samoin jos kyseisenä päivänä tapahtuu vain varasto-ottoja, ei ole vastaanottoja, joista keskiarvo laskettaisiin, eikä virtuaalisiirtoa siis luoda. Sen sijaan voit painotetun keskiarvon päivämäärää käyttäessäsi merkitä varastotapahtumat niin, että tietyn nimikkeen vastaanotto selvitetään tiettyä varastostaottoa vasten. Tällöin et käytä painotetun keskiarvon päivämääräsääntöä. On suositeltavaa sulkea varasto kuukausittain, kun käytetään painotetun keskiarvon päivämäärän varastomallia. 
 

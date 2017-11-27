@@ -1,9 +1,9 @@
 ---
 title: Myyntisopimukset
-description: "Tässä artikkelissa on tietoja myyntisopimuksista. Myyntisopimus on sopimus, jolla asiakas vahvistaa ostavansa tuotetta tietyn määrän tai tietyn summan tietyssä ajassa saadakseen erikoishinnan ja alennuksia."
+description: "Tässä aiheessa on tietoja myyntisopimuksista. Myyntisopimus on sopimus, jolla asiakas vahvistaa ostavansa tuotetta tietyn määrän tai tietyn summan tietyssä ajassa saadakseen erikoishinnan ja alennuksia."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 15e3f872e4ded027734ee73081ba7af68be5107d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 21e9c53f39b0f4def0052bf7f04c77279bfc610b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on tietoja myyntisopimuksista. Myyntisopimus on sopimus, jolla asiakas vahvistaa ostavansa tuotetta tietyn määrän tai tietyn summan tietyssä ajassa saadakseen erikoishinnan ja alennuksia.
+Tässä aiheessa on tietoja myyntisopimuksista. Myyntisopimus on sopimus, jolla asiakas vahvistaa ostavansa tuotetta tietyn määrän tai tietyn summan tietyssä ajassa saadakseen erikoishinnan ja alennuksia.
 
 Myyntisopimus vahvistaa, että asiakas ostaa tuotteita tietyn määrän tai tietystä summasta ajan mittaan tiettyjä hintoja, erikoisalennuksia ja muita erityisehtoja, kuten maksu- ja toimitusehtoja, vastaan. Myyntisopimuksen hinnat ja alennukset korvaavat muissa kauppasopimuksissa määritetyt hinnat ja alennukset.  
 
@@ -88,7 +88,7 @@ Jos et vahvista myyntisopimusta, voit yhä luoda myyntitilauksia sen pohjalta. M
 Voit esikatsella tai printata kaikki vahvistusten korjaukset. Tämän jälkeen voit jakaa korjaukset asiakkaalle saadaksesi hyväksynnän.
 
 ## <a name="applying-sales-agreements-during-the-ordering-process"></a>Myyntisopimusten käyttäminen tilausprosessissa
-Jos et vapauta myyntitilauksia suoraan myyntisopimuksista, voit silti yhdistää myyntisopimuksen tilaukseen tilaustenkäsittelyprosessissa. Kun luot uutta myyntitilausta ja valitset myyntisopimuksen, kyseisen sopimuksen ehdot, kuten maksu- ja toimitusehdot sekä toimitusosoite, täytetään tilauksen otsikkoon, ja järjestelmä luo sopimuksen ja tilauksen välille linkin. Tämän jälkeen myyntisopimuksessa olevat hinnat ja alennukset kopioidaan tilausriveille, ja voit valita myyntisopimuksessa määritellyistä tuotteista ja luokista haluamasi. Sama myyntitilaus voi sisältää sekä rivejä, jotka eivät liity myyntisopimukseen, että rivejä, joilla on myyntisopimusta koskeva sitoumus.
+Jos et vapauta myyntisopimuksen myyntitilauksia suoraan, voit silti linkittää myyntisopimuksen tilaustenkäsittelyprosessissa tilaukseen. Kun luot uutta myyntitilausta ja valitset myyntisopimuksen, kyseisen sopimuksen ehdot, kuten maksu- ja toimitusehdot sekä toimitusosoite, täytetään tilauksen otsikkoon, ja järjestelmä luo sopimuksen ja tilauksen välille linkin. Tämän jälkeen myyntisopimuksessa olevat hinnat ja alennukset kopioidaan tilausriveille, ja voit valita myyntisopimuksessa määritellyistä tuotteista ja luokista haluamasi. Sama myyntitilaus voi sisältää sekä rivejä, jotka eivät liity myyntisopimukseen, että rivejä, joilla on myyntisopimusta koskeva sitoumus.
 
 ## <a name="modifying-sales-orders-that-are-linked-to-sales-agreements"></a>Myyntisopimuksiin linkitettyjen myyntitilausten muokkaaminen
 Jos olet luonut (vapautetun) myyntitilauksen myyntisopimuksesta, joitakin myyntitilausrivien kenttiä voi muokata vain, jos poistat linkin niihin liittyviin myyntisopimuksen riveihin. Seuraavassa taulukossa on esitetty joitakin näistä kentistä.

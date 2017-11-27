@@ -1,9 +1,9 @@
 ---
 title: "Tuotevariantin numeroiden ja nimien nimikkeistö"
-description: "Tässä aiheessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään korvaamaan kiinteän muodon [päätuotteen numero - konfiguraatio - koko - väri - malli]. Uusi nimikkeistö sisältää kohdennetun muodon, joka sisältää päätuotteen numeron, aktiiviset tuotedimensiot ja haluamasi tekstierottimet. Myös tuotenimille voi luoda nimikkeistön. Voit myös luoda nimikkeistön konfiguraatioiden tunnistamiseksi, jotka on luotu poissulkevan tuotekonfiguraattorin avulla. Nämä nimikkeistöt voivat sisältää valitsemiasi määritteitä."
+description: "Tässä aiheessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään korvaamaan kiinteän muodon [päätuotteen numero - konfiguraatio - koko - väri - malli]."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 4ebebc1d287908dbe8ac7557c34fc6693c88bfae
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 067e14d8a0ab9cb5b703c1d2596dab3e20487336
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -68,7 +68,7 @@ T-paitaa (TS1234) valmistetaan kolme eri kokoa (S, M, L), neljä eri väriä (pu
 
 Tässä tapauksessa tuotevariantin numero ominaisuuksille punainen, S, poolo, T-paita TS1234-punainen-S-poolo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Poissulkeva konfiguraationimikkeistö
+## <a name="nomenclature-of-constraint-based-configurations"></a>Poissulkeva konfiguraationimikkeistö
 Poissulkeville konfiguraatioille voi luoda konfiguraation tuotedimension kohdistetun nimikkeistön. **Tuotenimikkeistö**-sivulla voi seuraavat segmentit:
 
 -   Numerosarjan arvo
@@ -92,7 +92,7 @@ Voit luoda konfiguraation nimikkeistön, jolla on seuraavat segmentit:
 
 Tässä tapauksessa puumateriaalin konfiguraatiotunnus, jonka pituus on, on WoodAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Dimensioihin perustuva konfiguraationimikkeistö
+## <a name="nomenclature-of-dimension-based-configurations"></a>Dimensioihin perustuva konfiguraationimikkeistö
 Dimensioihin perustuville konfiguraatioille voi luoda konfiguraation tuotedimension kohdistetun nimikkeistön. **Tuotenimikkeistö**-sivulla voi seuraavat segmentit:
 
 -   Numerosarjan arvo

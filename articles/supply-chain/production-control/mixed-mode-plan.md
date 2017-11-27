@@ -1,9 +1,9 @@
 ---
 title: "Monijärjestelmäsuunnittelu: erillisen, prosessi- ja Lean-hankinnan yhdistäminen"
-description: "Tässä artikkelissa on tietoja monijärjestelmäsuunnittelusta. Monijärjestelmäsuunnittelussa toimitusketjun voi mallintaa materiaalivirran perusteella. Microsoft Dynamics 365 for Finance and Operations varmistaa, että materiaalivirta seuraa malleja valitusta toimituskäytännöstä riippumatta (kanbanit, tuotantotilaukset, erätilaukset tai siirtotilaukset)."
+description: "Tässä ohjeaiheessa on tietoja monijärjestelmäsuunnittelusta."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 09ced68ffe8ff300a04beb65fdf8527e63456f04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on tietoja monijärjestelmäsuunnittelusta. Monijärjestelmäsuunnittelussa toimitusketjun voi mallintaa materiaalivirran perusteella. Microsoft Dynamics 365 for Finance and Operations varmistaa, että materiaalivirta seuraa malleja valitusta toimituskäytännöstä riippumatta (kanbanit, tuotantotilaukset, erätilaukset tai siirtotilaukset). 
+Tässä ohjeaiheessa on tietoja monijärjestelmäsuunnittelusta. Monijärjestelmäsuunnittelussa toimitusketjun voi mallintaa materiaalivirran perusteella. Microsoft Dynamics 365 for Finance and Operations varmistaa, että materiaalivirta seuraa malleja valitusta toimituskäytännöstä riippumatta (kanbanit, tuotantotilaukset, erätilaukset tai siirtotilaukset). 
 
 Voit valita tuotteen tarjoamiselle yleisen strategian tuoterakenteesta riippumatta.  
 
@@ -59,7 +59,7 @@ Yleensä kanbaneita ei luoda tuleville päiville, koska kanbaneilla on lyhyt eli
 
 Sama logiikka sisältyy kaikkiin muihin toimitusketjukäytäntöjen tyyppeihin. Näin ollen, pitkän aikavälin materiaalisuunnittelu perustuu samaan logiikkaan, jonka odotat olevan käytössä varsinaisissa tilauksissa, kun tuotanto ja toimitus on hyväksytty.
 
-## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>Materiaalien kohdistamisen poikkituotannon käytäntö – Resurssien kulutus tuoterakenteissa
+## <a name="materials-allocation-cross-supply-policy--resource-consumption-on-boms"></a>Materiaalien kohdistamisen poikkituotannon käytäntö – Resurssien kulutus tuoterakenteissa
 Resurssien kulutus on tärkeä toiminto. Resurssien kulutuksen avulla materiaalit keräävä varasto voidaan valita dynaamisesti toimituskäytännön (tilaustyyppi) perusteella. Se myös helpottaa perustietojen ylläpitämistä.  
 
 Resurssien kulutus edellyttää, että varasto, josta materiaalit kerätään, määritetään tuotteen toimitustavan perusteella. Toisin sanoen, järjestelmä löytää suorituksen aikana resurssit, joita tulee käyttää valmistuksessa. Järjestelmä valitsee sitten keräävän varaston näihin resursseihin perustuen.  

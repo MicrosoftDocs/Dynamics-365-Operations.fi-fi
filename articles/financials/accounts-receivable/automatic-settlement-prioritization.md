@@ -1,9 +1,9 @@
 ---
 title: Automaattinen tilitys ja priorisointi
-description: "Tässä artikkelissa kuvataan, kuinka tapahtumat selvitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa."
+description: "Tässä ohjeaiheessa kuvataan tapahtumien tilitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 14531
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a0f87aca78f1263f1f6ce65e2629b91312716cb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kuvataan, kuinka tapahtumat selvitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa.
+Tässä ohjeaiheessa kuvataan tapahtumien tilitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa.
 
 Sinulla on kaksi vaihtoehtoa, kun täsmäytät maksuja laskujen ja muiden tapahtumien kanssa. Voit valita täsmäytettävät tapahtumat manuaalisesti, tai Microsoft Dynamics 365 for Finance and Operations voi valita tapahtumat automaattisesti automaattisen tilityksen toimintoa käyttämällä. Voit myös mukauttaa automaattisten tilitysten käsittelyä **Priorisoi selvitys** -vaihtoehdon avulla. Nämä asetukset ovat osa tilityksen parametreja, joka on määritetty **Myyntireskontran parametrit** -sivulla. Tapahtumien automaattinen täsmäytystapa voi poiketa automaattiseen täsmäytykseen käyttämästäsi menetelmästä riippuen. Käytettävissä ovat seuraavat menetelmät:
 
@@ -50,7 +50,7 @@ Myöhemmin tässä artikkelissa kuvatut tilitysesimerkit perustuvat seuraaviin t
 | Lasku 3     | 15. lokakuuta  | 500,00 | 2 % 14/netto 30        | 29. lokakuuta         |                                                                                                                                                                                               |
 | Korkolasku | 15. lokakuuta  | 7:00   |                     |                    | Tämä korkolasku on laskulle 1 ja laskulle 2. Summa lasketaan 2 prosentin korkona summista, jotka ovat vähintään 30 päivää myöhässä. Esimerkki: 0,02 × (100,00 + 250,00) = 7,00. |
 
-## <a name="userdefined-settlement-priority"></a>Käyttäjän määrittämä tilitysprioriteetti
+## <a name="user-defined-settlement-priority"></a>Käyttäjän määrittämä tilitysprioriteetti
 Jos valitset **Käytä automaattisten selvitysten priorisointia** -asetukseksi **Kyllä** **Myyntireskontran parametrit** -sivulla, **Tilitysprioriteetti**-sivulla määritettyä tilitysprioriteettia käytetään, kun tapahtumia valitaan automaattiseen tilitykseen. Tässä esimerkissä määritetään seuraava tilitysjärjestys:
 
 1.  Tapahtumatyyppi

@@ -1,7 +1,7 @@
 ---
 title: "Kaavojen suunnittelutoiminto sähköisessä raportoinnissa"
-description: "Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER). Kun tietyn sähköisen asiakirjan muotoa suunnitellaan ER:ssä, käytössä ovat Microsoftin Excel-tyyppiset kaavat, joiden avulla tiedot voidaan muuntaa vastaamaan asiakirjan toteuttamis- ja muotoiluvaatimuksia. Tuettuja toimintotyyppejä on useita: teksti, päivämäärä ja aika, matemaattiset loogiset toiminnot, tiedot, tietotyyppien muunnos ja muut (liiketoiminnan toimialuekohtaiset toiminnot)."
-author: kfend
+description: "Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER)."
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 37c860599ad555846d11711e9f3cfb29c599131e
-ms.openlocfilehash: 7704b0545f4264be1f844ed6ad9e4b44df0c4ef8
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 58bef33642d83def841eaa8334ea6f942063e0b3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Kaavojen suunnittelutoiminto sähköisessä raportoinnissa
+# <a name="formula-designer-in-electronic-reporting"></a>Sähköisen raportoinnin kaavojen suunnittelutoiminto
 
 [!include[banner](../includes/banner.md)]
 
@@ -563,7 +563,7 @@ ER-muodossa, joka on suunniteltu sähköisen tiedoston luomiseen valituille asia
 <li><strong>Kielelle FI:</strong> &quot;Asiakas %1 on pysäytetty %2.&quot;</li>
 </ul></li>
 </ul>
-Tässä on kaava, jota voi muotoilla: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;,@ &quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (malli.ProcessingDate, &quot;d&quot;)) Jos raporttia käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina ja kielenä on <strong>EN-US</strong><strong></strong>, tämä kaava palauttaa seuraavan tekstin, joka voidaan esittää poikkeussanomana loppukäyttäjälle: &quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot; Jos sama raportti käsitellään<strong> asiakkaalle Litware Retail</strong> 17.12.2015 ja maa-asetuksena ja kielenä on <strong>DE</strong>, tämä kaava palauttaa seuraavan tekstin, jossa on eri päivämäärämuoto: &quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot; <strong>Huomautus:</strong> Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
+Tässä on kaava, jota voi muotoilla: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;,@ &quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (malli.ProcessingDate, &quot;d&quot;)) Jos raporttia käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina ja kielenä on <strong>EN-US</strong><strong></strong>, tämä kaava palauttaa seuraavan tekstin, joka voidaan esittää poikkeussanomana loppukäyttäjälle: &quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot; Jos sama raportti käsitellään<strong> asiakkaalle Litware Retail</strong> 17.12.2015 ja maa-asetuksena on <strong>DE</strong> ja kielenä <strong>DE</strong>, tämä kaava palauttaa seuraavan tekstin, jossa on eri päivämäärämuoto: &quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot; <strong>Huomautus:</strong> Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
 <ul>
 <li><strong>Finance and Operations -resurssien otsikot:</strong> <strong>@&quot;X&quot;</strong>, jossa X on sovellusobjektipuun (AOT) otsikon tunnus.</li>
 <li><strong>ER-määrityksissä sijaitsevat otsikot:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, jossa X on ER-määrityksen otsikon tunnus.</li>
@@ -593,11 +593,12 @@ Tässä on kaava, jota voi muotoilla: FORMAT (CONCATENATE (@&quot;SYS70894&quot;
 <td>GETENUMVALUEBYNAME (luetteloinnin tietolähteen polku, luettelointiarvon etikettiteksti)</td>
 <td>Palauttaa määritetyn luetteloinnin tietolähteen tämän luettelointiotsikon määritetyn tekstin arvon.</td>
 <td>Seuraavassa esimerkissä on tietomallissa tuodun ReportDirection-luettelointi. Huomaa, että luettelointiarvoille on määritetty otsikot.
-<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> Seuraavissa esimerkeissä on näkyvissä:
+<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>  
+<p>Seuraavissa esimerkeissä on näkyvissä:</p>
 <ul><li>Mallin luettelointi <strong>ReportDirection</strong> lisätään raporttiin tietolähteenä <strong>$Direction</strong>.</li>
 <li>ER-lauseke <strong>$IsArrivals</strong> on suunniteltu käyttämään mallin luettelointia tämän toiminnon parametrina. Lausekkeen arvo on <strong>TOSI</strong>.
-
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></li></ul></td>
+</li></ul>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
 </tr>
 </tbody>
 </table>

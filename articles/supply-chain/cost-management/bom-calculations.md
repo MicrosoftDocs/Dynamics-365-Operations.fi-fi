@@ -1,7 +1,7 @@
 ---
 title: BOM-laskelmat
 description: "Kustannusten koontilaskelmia ja myyntihintalaskelmia kutsutaan tuoterakennelaskelmiksi, koska ne käynnistetään Laskelmat-sivulta. Tässä aiheessa on tietoja BOM-laskelmista."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, SalesQuotationTable, SalesTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b1bcf11a8f6fc4921e8659fe1d00c093e3ad5b74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -87,7 +87,7 @@ Hinta+hinnankorotus-mallia käytettäessä nimikkeen laskettu myyntihinta vastaa
 -   **Nimikkeen ja määritetyn kustannuslaskelmaversion tuoterakennelaskelma** − Tuoterakennelaskelma luo odottavan myyntihintatietueen kustannuslaskelmaversioon. Tämä myyntihintatietue toimii lähtökohtana, kun laskelman tietoja, esimerkiksi **Laske nimikekustannus** -sivua, tarkastellaan. Myyntihintatietue toimii pääasiassa viitetietoina, eikä myyntitilausten myyntihintaa lasketa sen perusteella.
 -   **Tilauskohtainen tuoterakennelaskelma** − **Tuoterakennelaskelmasivun** variaatiota käytetään myyntitilausten, myyntitarjousten ja huoltotilausrivien nimikkeiden kontekstissa. Tilauskohtainen tuoterakennelaskenta ei luo kustannuslaskelmaversioon tietuetta. Sen sijaan se luo laskelmatietueen, joka näkyy **Tuoterakenteen laskemisen tulokset** -sivulla. Tämä laskelmatietue toimii lähtökohtana, kun laskelman tietoja, esimerkiksi **Laske nimikekustannus** -sivua, tarkastellaan. Valitun laskelmatietueen tiedot on mahdollista siirtää alkuperäiseen rivinimikkeeseen. Esimerkiksi lasketun myyntihinnan voi siirtää myyntitilausrivin nimikkeeseen.
 
-## <a name="orderspecific-bom-calculations"></a>Tilauskohtaiset tuoterakennelaskelmat
+## <a name="order-specific-bom-calculations"></a>Tilauskohtaiset tuoterakennelaskelmat
 Tilauskohtainen tuoterakennelaskenta on valmistetun nimikkeen tuoterakennelaskennan muunnelma. Tilauskohtainen tuoterakennelaskenta tehdään myyntitilauksen, myyntitarjouksen tai huoltotilausrivin nimikkeen yhteydessä. Tilauskohtainen tuoterakennelaskelma luo laskelmatietueen, joka näytetään **Tuoterakenteen laskelman tulokset** -sivulla. Laskelmatietue sisältää lasketun painoarvon, aktiivisiin kustannustietueisiin perustuvan lasketun kustannuksen sekä lasketun myyntihinnan. Kukin tilauskohtainen reseptin laskenta luo **Reseptin laskennan tulokset** -sivulle laskelmatietueen, jolla on yksilöivä tunnusnumero. Laskelmatietueen tulokset voi valinnaisesti siirtää alkuperärivin nimikkeelle. Tilauskohtainen tuoterakennelaskenta eroaa valmistetun nimikkeen tuoterakennelaskennasta kahdella tavalla:
 
 -   Tilauskohtainen tuoterakennelaskenta ei luo kustannuslaskelmaversioon nimikkeen kustannustietuetta. Tämä tarkoittaa, että tuoterakenteen laskentamenettelyt eivät koske nimikkeen kustannustietueen luomista tai kustannustietueen korvaamista.

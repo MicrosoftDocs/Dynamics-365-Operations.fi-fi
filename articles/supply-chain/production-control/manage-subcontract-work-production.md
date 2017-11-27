@@ -3,7 +3,7 @@ title: "Tuotannon alihankintatyön hallinta"
 description: "Tässä ohjeaiheessa kerrotaan, miten alihankintatoimintoja hallitaan Microsoft Dynamics 365 for Finance and Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/29/2017
 
 Tässä ohjeaiheessa kerrotaan, miten alihankintatoimintoja hallitaan Microsoft Dynamics 365 for Finance and Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
 
-[Tuotantoprosessin](production-process-overview.md) töitä voivat tehdä resurssit, joita omistaa tai hallinnoi toimittajat. Yleensä toimittajan resursseja käytetään tasaamaan jaksoittaista suurempaa kysyntää, joka ylittää yhtiön omien resurssien kapasiteetin. Toimittaja voi myös pystyä tarjoamaan erityisiä [resurssin ominaisuuksia](resource-capabilities.md)tai resursseja alempaan hintaan.  
+[Tuotantoprosessin](production-process-overview.md) töitä voivat tehdä resurssit, joita omistaa tai hallinnoi toimittajat. Yleensä toimittajan resursseja käytetään tasaamaan jaksoittaista suurempaa kysyntää, joka ylittää yhtiön omien resurssien kapasiteetin. Toimittaja voi myös pystyä tarjoamaan erityisiä [resurssin ominaisuuksia](resource-capabilities.md) tai resursseja alempaan hintaan.  
 
 Toimittajan resursseista, joita käytetään tuotantoprosessissa, riippuen [reitillä](routes-operations.md) on usein logistista lisävaatimuksia, koska käytettävät materiaalit ja puolivalmisteet on ensin kuljetettava toimittajan toimipaikkaan. Sitten alihankinnan tulokset on kuljetettava joko sijaintiin, joka on kohdistettu seuraavaan työvaiheeseen tai valmiiden tuotteiden varastoon.  
 

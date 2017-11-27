@@ -3,14 +3,14 @@ title: "Toimittajayhteistyö ulkoisten toimittajien kanssa"
 description: "Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä yhteistyötä ulkoisten toimittajien kanssa ja vaihtaa ostotilauksia ja tavaralähetysvarastoa koskevia tietoja."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 9036b7f9863871915f9ad39d76bf027ae4c2f4bf
-ms.openlocfilehash: aee8db8ddaeac135ed1f9d8b1b8a621609c6d358
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: abff906bcdf31c91ce696afbcd651a1d7a87ea8a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,6 +33,8 @@ ms.lasthandoff: 10/05/2017
 Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä yhteistyötä ulkoisten toimittajien kanssa ja vaihtaa ostotilauksia ja tavaralähetysvarastoa koskevia tietoja.
 
 **Toimittajayhteistyö**-moduuli on tarkoitettu toimittajille, joilla ei ole sähköisten tietojen vaihdon (EDI) Microsoft Dynamics 365 for Finance and Operations -integrointia. Sen avulla toimittajat voivat käsitellä ostotilauksia, laskuja ja luovutetun varaston tietoja. Tässä aiheessa kuvataan, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa, jotka käyttävät toimittajayhteistyöliittymää työskentelyyn myyntipisteissä ja tavaralähetysvarastoja. Siinä myös kuvataan miten tietty toimittaja voi käyttää toimittajayhteistyötä ja miten määritetään tiedot, jotka näkyvät kaikille toimittajille, kun he vastaavat ostotilaukseen. Lisätietoja siitä, mitä ulkoiset toimittajat voivat tehdä toimittajan toimittajayhteistyöliittymällä, on kohdassa [Toimittajayhteistyö asiakkaiden kanssa](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+
+Tämän ohjeaiheen toimittajayhteistyön tiedot koskevat vain Dynamics 365 for Finance and Operationsin nykyistä versiota. Microsoft Dynamics AX:n helmikuun 2016 ja toukokuun 2016 versioissa tehdään yhteistyötä toimittajien kanssa toimittajaportaalin moduulissa. Lisätietoja toimittajaportaalin moduulista on kohdassa [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md).
 
 Lisätietoja siitä, kuinka toimittajat voivat käyttää toimittajayhteistyötä laskutusprosesseissa, on kohdassa [Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Tietoja siitä, miten uusia toimittajayhteistyön käyttäjiä voidaan valmistella, on kohdassa [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md).
 

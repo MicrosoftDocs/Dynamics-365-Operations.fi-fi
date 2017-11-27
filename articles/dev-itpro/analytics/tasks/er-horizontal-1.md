@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 0cd1de95630d0f7c40c3b9948015892623a93686
+ms.sourcegitcommit: 1ccf3b2d81066fce80fe14428fab24020ab85496
+ms.openlocfilehash: b921b5ff51f951112031fe8b1bc2faa90cf29a28
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>Muodon suunnitteleminen käyttämään vaakasuuntaisesti laajennettavia alueita sarakkeiden lisäämiseksi dynaamisesti sähköistä raportointia (ER) varten
@@ -36,7 +36,8 @@ ER Taloushallinnon dimensioiden käyttö tietolähteenä (osa 1: tietomallin suu
 
 ER Taloushallinnon dimensioiden käyttö tietolähteenä (osa 2: malliyhdistämismääritys).
 
-Lataa ja tallenna myös paikallinen kopio mallista sekä esimerkkiraportti osoitteesta http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx
+Lataa ja tallenna mallista myös malliraportin paikallinen kopio kohdasta [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266). 
+
 
 Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.
 

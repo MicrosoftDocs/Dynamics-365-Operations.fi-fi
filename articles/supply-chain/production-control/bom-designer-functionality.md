@@ -1,9 +1,9 @@
 ---
-title: Rakennesuunnittelun toiminnot
-description: "Tässä artikkelissa kuvataan, miten tuoterakennesuunnittelijan sivua käytetään tuoterakenteiden puurakenteiden suunnittelussa ja käsittelyssä. Valitsemalla Asetukset voit valita erilaisia konfiguraatioita ja määrittää, mitkä tiedot puurakenteen riveillä näkyvät."
+title: Tuoterakenteen suunnittelutoiminto
+description: "Tässä ohjeaiheessa kuvataan, miten tuoterakennesuunnittelijan sivua käytetään tuoterakenteiden puurakenteiden suunnittelussa ja käsittelyssä."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMDesigner
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 20981
 ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
 ms.search.region: Global
@@ -20,19 +20,19 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 011e8220e155a5202b7b0a18bbfa9581826645d0
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 41f629401731920a9cb6443ada8b1a34a70e8da9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="bom-designer-functionality"></a>Rakennesuunnittelun toiminnot
+# <a name="bom-designer-functionality"></a>Tuoterakenteen suunnittelutoiminto
 
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kuvataan, miten tuoterakennesuunnittelijan sivua käytetään tuoterakenteiden puurakenteiden suunnittelussa ja käsittelyssä. Valitsemalla Asetukset voit valita erilaisia konfiguraatioita ja määrittää, mitkä tiedot puurakenteen riveillä näkyvät.
+Tässä ohjeaiheessa kuvataan, miten tuoterakennesuunnittelijan sivua käytetään tuoterakenteiden puurakenteiden suunnittelussa ja käsittelyssä. Valitsemalla Asetukset voit valita erilaisia konfiguraatioita ja määrittää, mitkä tiedot puurakenteen riveillä näkyvät.
 
 Kun avaat **Graafisen rakennesuunnittelun** sivun **Julkaistut tuotteet** -sivulta, näytetään siinä aktiivisten ja hyväksyttyjen tuoterakenteiden hierarkia hierarkian valitulle nimikkeelle, nimikkeen oletustilaussivusto ja todellinen päivämäärä.  
 
@@ -66,7 +66,7 @@ Graafisen rakennesuunnitteluikkunan otsikossa näytetään suodatin, jota käyte
 <tbody>
 <tr class="odd">
 <td>Tuotedimensiot</td>
-<td>Valitun lopputuotteen ollessa päätuote, voit määrittää ensisijaiselle valinnalle aktiiviset tuotedimensiot. <strong>Huomautus:</strong> Jos avaat graafisen rakennesuunnitteluikkunan tuotteelle, joka ei ole päätuote, <strong>Suodatin</strong>-valintaikkunassa ei voi valita tuotedimensioita.</td>
+<td>Jos valittu lopputuote on päätuote, voit määrittää aktiivisen tuotteen mitat päävalintaan. <strong>Huomautus:</strong> Jos avaat muun kuin päätuotteen tuoterakenteen suunnitteluohjelman, tuotedimensioita ei voi valita <strong>Suodatus</strong>-valintaruudussa.</td>
 </tr>
 <tr class="even">
 <td>Sivusto</td>

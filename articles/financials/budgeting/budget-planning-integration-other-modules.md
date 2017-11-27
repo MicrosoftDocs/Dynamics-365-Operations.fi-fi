@@ -3,14 +3,14 @@ title: Budjettisuunnittelun integrointi toisten moduulien kanssa
 description: Budjettisuunnitelmia voidaan muodostaa useista eri resursseista. Kausittaisten prosessien peruselementit ovat samat kaikille resursseille.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 311a5cbd3768d8ecc7e7430717369193e60c3e57
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7663453ddf87bcb43d2f19ebec3c9bda90eda884
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -59,7 +59,7 @@ Kullekin luontiprosessille on saatavilla kolme toimintoa:
 
 Kaikkien prosessien osalta **Lähde**-välilehden avulla voit suodattaa tietoja käyttämällä **Suodatin**-painiketta. Oletuksena tietyt kentät lisätään suodattimeen kussakin prosessissa. Esimerkiksi **Muodosta budjettisuunnitelma kirjanpidosta** -prosessissa **Kirjanpitotili-** ja **Päätili**-kategoriat ovat saatavilla ja näkyvät luontisivulla. Kaikki suodattimeen lisäämäsi kentät lisätään myös sivulle yhdessä mahdollisesti lisäämiesi kriteerien kanssa.
 
-### <a name="target"></a>Tavoite
+### <a name="target"></a>Kohde
 
 **Kohde**-välilehden **Historiallinen**-vaihtoehdon avulla voit käyttää lähdetietojen päivämääriä voimaantulopäivänä budjettisuunnitelmassa. Voimaantulopäivän on yleensä oltava suunnitelman budjettijakson sisällä. Kun määrität **Historiallinen**-valinnaksi **Kyllä**, käytetään lähteen päivämäärää (jopa vuotta) niin, että voit käyttää aiempia tietoja vertailun perusteena. Voit muokata historiallisia tietoja budjettisuunnitelmassa ja suunnitelmalle määritetään hyväksytyn työnkulun tila. Voit kuitenkin tarvittaessa määrittää tilan uudelleen, jos suunnitelman muut skenaariot vaativat muutoksia.
 

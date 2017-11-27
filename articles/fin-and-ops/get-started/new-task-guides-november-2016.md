@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a40899df4f4f0cf2b404d21bf2c172bcc8a137af
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7c3ecbfaa4e45401b8c4fffe7e7639da9e0474e6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -143,14 +143,14 @@ Yhdistetty APQC-kirjasto (marraskuu 2016 – kaikki kielet) sisältää tehtäv�
 |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | Lisää BAS-raportin lisäruudut ja luo Australian Business Activity Statement (BAS)                                                    | Australia ja Uusi-Seelanti         |
 | Määritä Australian BAS-syykoodit                                                                                                | Australia ja Uusi-Seelanti         |
-| **\*** Kiinalaisten tositteiden jatkuvuustarkistus                                                                                               | Kiina                             |
-| **\*** CN-00010 Kiinan tilikarttojen hierarkia                                                                                  | Kiina                             |
-| **\*** CN-00016 Kiinan työsäännön mukainen käyttäjän toimintoloki                                                                              | Kiina                             |
-| **\*** Golden tax -verointegraation vientiasetukset                                                                                            | Kiina                             |
-| **\*** Kirjaa tositteita muista moduuleista, kuten myyntilaskuja                                                                          | Kiina                             |
-| **\*** Tositteiden kirjaaminen kirjauskansiosta                                                                                         | Kiina                             |
-| **\*** Verojen perusintegrointiprofiilin määrittäminen Kiinalle                                                                                 | Kiina                             |
-| **\*** Kiinalaisten tositteiden määrittäminen                                                                                                        | Kiina                             |
+| **\***Kiinalaisten tositteiden jatkuvuustarkistus                                                                                               | Kiina                             |
+| **\***CN-00010 Kiinan tilikarttojen hierarkia                                                                                  | Kiina                             |
+| **\***CN-00016 Kiinan työsäännön mukainen käyttäjän toimintoloki                                                                              | Kiina                             |
+| **\***Golden tax -verointegraation vientiasetukset                                                                                            | Kiina                             |
+| **\***Kirjaa tositteita muista moduuleista, kuten myyntilaskuja                                                                          | Kiina                             |
+| **\***Tositteiden kirjaaminen kirjauskansiosta                                                                                         | Kiina                             |
+| **\***Verojen perusintegrointiprofiilin määrittäminen Kiinalle                                                                                 | Kiina                             |
+| **\***Kiinalaisten tositteiden määrittäminen                                                                                                        | Kiina                             |
 | Luo ja kirjaa myyntilasku julkisen sektorin asiakkaalle                                                                      | Tanska                           |
 | Luo ja kirjaa vapaatekstilasku julkisen sektorin asiakkaalle                                                                     | Tanska                           |
 | Luo ja kirjaa projektilasku julkisen sektorin asiakkaalle                                                                       | Tanska                           |
@@ -160,26 +160,26 @@ Yhdistetty APQC-kirjasto (marraskuu 2016 – kaikki kielet) sisältää tehtäv�
 | Asiakastilien määrittäminen sähköistä OIOUBL-laskutusta varten                                                                             | Tanska                           |
 | Sähköisen OIOUBL-laskutuksen määrittäminen                                                                                                   | Tanska                           |
 | Määritä maksukuitin muoto                                                                                                           | Tanska                           |
-| **\*** EEU-00047 Ennakkomaksu työntekijälle                                                                                          | Itä-Eurooppa                    |
+| **\***EEU-00047 Ennakkomaksu työntekijälle                                                                                          | Itä-Eurooppa                    |
 | Toimittajien maksujen luominen ja tuonti ISO20022-maksumuodossa                                                                      | Eurooppa                            |
 | Luo maksuja asiakkaalle, jolla on suoraveloitusvaltakirjoja                                                                          | Eurooppa                            |
-| **\*** EE-00015 Maksuviitteen luontityökalu                                                                                     | Eurooppa                            |
+| **\***EE-00015 Maksuviitteen luontityökalu                                                                                     | Eurooppa                            |
 | EUR-00002 EU Intrastat -ilmoituksen luominen                                                                                       | Eurooppa                            |
-| **\*** EUR-00002 Rahtiosoitteen määrittäminen yhteisönsisäiselle tapahtumalle                                                          | Eurooppa                            |
+| **\***EUR-00002 Rahtiosoitteen määrittäminen yhteisönsisäiselle tapahtumalle                                                          | Eurooppa                            |
 | EUR-00002 Tapahtumien siirtäminen Intrastatiin                                                                                     | Eurooppa                            |
 | EUR-00011 EU:n myyntiluetteloraportin luominen                                                                                          | Eurooppa                            |
 | EUR-00011 EU-myyntiluetteloraportoinnin määrittäminen                                                                                             | Eurooppa                            |
 | EUR-00012 EU-saapumistodistuksen myöntäminen                                                                                              | Eurooppa                            |
 | EUR-00012 EU-saapumistodistuksen vastaanottaminen                                                                                            | Eurooppa                            |
-| **\*** EUR-00015 Osapuolen haku ALV-tunnuksen avulla                                                                                            | Eurooppa                            |
-| **\*** EUR-00015 Toimittajan ALV-tunnuksen rekisteröinti                                                                                        | Eurooppa                            |
-| **\*** EUR-00015 ALV-tunnuksen määrittäminen                                                                                                        | Eurooppa                            |
-| **\*** HU-00001 Vaihtokurssin laskeminen                                                                                             | Eurooppa                            |
+| **\***EUR-00015 Osapuolen haku ALV-tunnuksen avulla                                                                                            | Eurooppa                            |
+| **\***EUR-00015 Toimittajan ALV-tunnuksen rekisteröinti                                                                                        | Eurooppa                            |
+| **\***EUR-00015 ALV-tunnuksen määrittäminen                                                                                                        | Eurooppa                            |
+| **\***HU-00001 Vaihtokurssin laskeminen                                                                                             | Eurooppa                            |
 | Tuo ISO20022-tilisiirron konfiguraatio                                                                                        | Eurooppa                            |
 | Tuo ISO20022-suoraveloituksen konfiguraatio                                                                                           | Eurooppa                            |
-| **\*** LT-00003 Siirtoasiakirja tavaroiden siirrolle yrityksen sisällä / Siirtoasiakirjan luominen sisäiselle varastosiirrolle   | Eurooppa                            |
-| **\*** LT-00003 Siirtoasiakirja tavaroiden siirrolle yrityksen sisällä / Siirtoasiakirjojen määrittäminen tavaroiden siirrolle yrityksen sisällä | Eurooppa                            |
-| **\*** NO-00002 Asiakasmaksu maksutunnuksen perusteella                                                                                  | Eurooppa                            |
+| **\***LT-00003 Siirtoasiakirja tavaroiden siirrolle yrityksen sisällä / Siirtoasiakirjan luominen sisäiselle varastosiirrolle   | Eurooppa                            |
+| **\***LT-00003 Siirtoasiakirja tavaroiden siirrolle yrityksen sisällä / Siirtoasiakirjojen määrittäminen tavaroiden siirrolle yrityksen sisällä | Eurooppa                            |
+| **\***NO-00002 Asiakasmaksu maksutunnuksen perusteella                                                                                  | Eurooppa                            |
 | Määritä yrityksen pankkitilit ISO20022-tilisiirtoja varten                                                                           | Eurooppa                            |
 | Määritä yrityksen pankkitilit ISO20022-suoraveloituksia varten                                                                              | Eurooppa                            |
 | Määritä asiakas ja asiakkaan pankkitilit ISO20022-suoraveloituksia varten                                                               | Eurooppa                            |
@@ -222,7 +222,7 @@ Yhdistetty APQC-kirjasto (marraskuu 2016 – kaikki kielet) sisältää tehtäv�
 | ER Vaakasuunnassa laajennettavien alueiden käyttö sarakkeiden dynaamiseen lisäykseen Excel-raportissa (osa 2: muodon suorittaminen)                               | Saksa                           |
 | Luo Saksan tarkistustiedosto                                                                                                           | Saksa                           |
 | Saksan tarkistustiedoston määritysten tuominen                                                                                               | Saksa                           |
-| **\*** EUR-00018 ALV-täsmäytysraportti                                                                                            | Islanti                           |
+| **\***EUR-00018 ALV-täsmäytysraportti                                                                                            | Islanti                           |
 | IS-00006 Toimittajan laskun ilmoitus / Toimittajatilin luominen ja laskun ilmoituksen liittäminen                                       | Islanti                           |
 | IS-00006 Toimittajan laskun ilmoitus / Määritä toimittajien laskuilmoitus                                                        | Islanti                           |
 | IS-00006 Toimittajan laskun ilmoitus / Päivitä toimittajan laskun ilmoitukset ja luo raportti                                       | Islanti                           |
@@ -391,9 +391,9 @@ Yhdistetty APQC-kirjasto (marraskuu 2016 – kaikki kielet) sisältää tehtäv�
 
 | BPM-tunnistusrivi                                                                       | Maa/alue |
 |--------------------------------------------------------------------------------|----------------|
-| **\*** Tavaralähetysvaraston omistajuuden muuttaminen tuotannon kysynnän perusteella | Yleinen         |
-| **\*** Luo tavaralähetyksen täydennystilaus                                 | Yleinen         |
-| **\*** Tavaralähetysvaraston valvonta toimittajayhteistyön avulla                 | Yleinen         |
+| **\***Tavaralähetysvaraston omistajuuden muuttaminen tuotannon kysynnän perusteella | Yleinen         |
+| **\***Luo tavaralähetyksen täydennystilaus                                 | Yleinen         |
+| **\***Tavaralähetysvaraston valvonta toimittajayhteistyön avulla                 | Yleinen         |
 
 ### 
 
@@ -420,9 +420,9 @@ Yhdistetty APQC-kirjasto (marraskuu 2016 – kaikki kielet) sisältää tehtäv�
 
 | BPM-tunnistusrivi                                                         | Maa/alue |
 |------------------------------------------------------------------|----------------|
-| **\*** Lisää merkintä suorituskyvyn kirjauskansioon ja lähetä kehuja | Yleinen         |
-| **\*** Luo tavoite                                              | Yleinen         |
-| **\*** Luo suorituskykyarvio                                | Yleinen         |
+| **\***Lisää merkintä suorituskyvyn kirjauskansioon ja lähetä kehuja | Yleinen         |
+| **\***Luo tavoite                                              | Yleinen         |
+| **\***Luo suorituskykyarvio                                | Yleinen         |
 
 ### 
 
@@ -497,9 +497,9 @@ Yhdistetty APQC-kirjasto (marraskuu 2016 – kaikki kielet) sisältää tehtäv�
 | BPM-tunnistusrivi                                                         | Maa/alue |
 |------------------------------------------------------------------|----------------|
 | Työntekijän konfiguroiminen                                               | Yleinen         |
-| **\*** Määritä automaattiset tuotesuositukset | Yleinen         |
+| **\***Määritä automaattiset tuotesuositukset | Yleinen         |
 | ;yyntiedustajan toimintoprofiilin määrittäminen   | Yleinen         |
-| **\*** Luo myyntipisteen visuaalinen profiili (marraskuu 2016)                | Yleinen         |
+| **\***Luo myyntipisteen visuaalinen profiili (marraskuu 2016)                | Yleinen         |
 | Luo ja liitä rekisterit                                   | Yleinen         |
 | Luo puhelinkeskuksen tilaukset                                        | Yleinen         |
 | Luo kauppasopimuksia luokan hinnoittelusäännön avulla            | Yleinen         |
@@ -507,7 +507,7 @@ Yhdistetty APQC-kirjasto (marraskuu 2016 – kaikki kielet) sisältää tehtäv�
 | Määritä liitos ja liitä alennus                      | Yleinen         |
 | Määritä ja hallitse myyntipisteiden käyttöoikeusryhmiä                          | Yleinen         |
 | Määritä jatkuvuuden aikataulu                                       | Yleinen         |
-| **\*** Määritä vähittäismyynnin kanavan tietoliikenne (CDX)                 | Yleinen         |
+| **\***Määritä vähittäismyynnin kanavan tietoliikenne (CDX)                 | Yleinen         |
 | Kanta-asiakaspalkkioiden oikaisut                                      | Yleinen         |
 | Valikoimien hallinta                                               | Yleinen         |
 | Arvonlisäveron määrittäminen ja ohitus                                | Yleinen         |
@@ -579,14 +579,14 @@ Yhdistetty APQC-kirjasto (marraskuu 2016 – kaikki kielet) sisältää tehtäv�
 | BPM-tunnistusrivi                                                                    | Maa/alue |
 |-----------------------------------------------------------------------------|----------------|
 | Luo toimipaikkaprofiili                                                   | Yleinen         |
-| **\*** Luo uusi valikkokohde mobiililaitteelle rekisterikilven konsolidointia varten      | Yleinen         |
+| **\***Luo uusi valikkokohde mobiililaitteelle rekisterikilven konsolidointia varten      | Yleinen         |
 | Täsmäytä rahti manuaalisesti                                                  | Yleinen         |
 | Rekisteröi kuljettajan sisäänkuittaus ja lähteminen tapaamiseen.                   | Yleinen         |
 | Määritä mobiililaitteen valikkokohde Ostotilaus-tyypin työn valmistumiselle | Yleinen         |
 | Tapaamisen määrittäminen kuormalle                                            | Yleinen         |
 | Aseta kuljetuksen maksuväline                                              | Yleinen         |
 | Rahdin automaattisen täsmäytyksen määrittäminen                                     | Yleinen         |
-| **\*** Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten                                | Yleinen         |
+| **\***Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten                                | Yleinen         |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Projektiennusteet ja -budjetit
-description: 
+description: Microsoft Dynamics 365 for Finance and Operationsissa projekteja voidaan hallita ja ohjata projektiennusteiden ja projektibudjettien avulla.
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 23501
 ms.assetid: 4e6d1384-19a2-4232-b3f3-d2590c218bd7
 ms.search.region: Global
@@ -19,18 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 32dd89d92a496d6601d1983dbc3c8e7e579ee0b3
+ms.sourcegitcommit: 31abc719a8df7507e74b3bf6823306ba52261bc3
+ms.openlocfilehash: ebb3574b3f5c40b5512c0352c83520558f63879a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 
 # <a name="project-forecasts-and-budgets"></a>Projektiennusteet ja -budjetit
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa projekteja voidaan hallita ja ohjata kahdella tavalla: projektiennusteilla ja projektibudjeteilla. 
@@ -41,16 +39,16 @@ Sekä projektiennusteet että projektibudjetit käyttävät ennustemalleja arvio
 
 Kummallakin menetelmällä on omat etunsa. Ota seuraavat seikat huomioon, kun valitse menetelmän organisaatioon.
 
-|                           |                                                                                                                                                                                                                                                         |                                                                                                                                                                         |
-|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                           | **Projektin ennusteet**                                                                                                                                                                                                                                 | **Projektin budjetointi**                                                                                                                                                   |
+|                           |                                          |                                                    |
+|---------------------------|------------------------------------------|----------------------------------------------------|
+|                           | **Projektin ennusteet**                  | **Projektin budjetointi**                              |
 | **Kauden kohdistus**     | Tapahtumia ei voi kohdistaa tarkasti tilikaudelle. Ennuste ja ennusteen hallinta perustuvat projektin elinkaareen. Koska ennusteet perustuvat tiettyyn päivämäärään, kausi on johdettava päivämäärästä. | Voit kohdistaa tapahtumat koko projektin tai tilikauden ajalle. Jos kohdistus tehdään koko kaudelle, käyttämättömät summat voidaan siirtää seuraavalle tilikaudelle. |
 | **Tapahtumien tarkastelu**  | Voit tarkastella tapahtumia ennustelomakkeissa, joissa koko yrityksen ja kaikkien projektien ennusteet ovat näkyvissä hierarkiasta riippumatta. Tiedot on suodatettava, jos on haluat keskittyä tiettyyn projektiin.                                       | Voit tarkastella yksittäisen projektihierarkian budjetoituja tapahtumia. Niinpä voit tarkastella pääprojektin tai sen aliprojektien tapahtumatietoja.                 |
-| **Tapahtumamuuttujat** | Voit käyttää ennustetapahtumien antamisessa kaikkia todellisen tapahtuman määritteitä. Tämä mahdollistaa tarkkojen tietojen käytön ennusteissa. Voit esimerkiksi antaa määritä, työntekijöitä, nimikkeitä ja riviominaisuuksia koskevia tietoja.         | Voit käyttää budjetin tietojen antamiseen vain summia, luokkia ja tehtäviä.                                                                                    |
-| **Suojaus**              | Ennusteet perustuvat tapahtumiin, jotka annat ennustelomakkeissa. Siihen ei sisälly prosessinhallinnan mekanismia. Kaikki työntekijät, joilla on ennustelomakkeen käyttöoikeudet, voivat muokata tietoja hyväksyntää tarvitsematta.                                        | Budjetoinnissa käytetään työnkulkujärjestelmää, joka mahdollistaa muutostenhallinnan ja versiohistorian säilyttämisen.                                                       |
-| **Merkintätyypit**           | Ennustetapahtumamerkinnät perustuvat yksiköiden määrään sekä kustannuksiin ja myyntiyksikön hintoihin.                                                                                                                                                       | Budjetin tiedot perustuvat summiin, jotka on jaettu tuloihin ja menoihin.                                                                                        |
-| **Ennustemallit**       | Koska jokainen ennuste on liitettävä malliin, voit luoda useita ennustemalleja sekä määrittää alimalleja.                                                                                                                               | Projektin budjetointi rajoittaa budjetointiin käytettäviä ennustemalleja. Vähäinen ennustemallien määrä parantaa ennusteiden yhdenmukaisuutta.                           |
-| **Kustannusten ylitykset**         | Voit vain sallia tai estää kustannuksen ylityksen aiheuttavien tapahtumien merkinnän.                                                                                                                                                                | Projektin budjetoinnissa käyttäjillä on muita hallintavaihtoehtoja. Voit sallia varoitukset ja ylitykset.                                                                   |
+| **Tapahtumamuuttujat** | Voit käyttää ennustetapahtumien antamisessa kaikkia todellisen tapahtuman määritteitä. Tämä mahdollistaa tarkkojen tietojen käytön ennusteissa. Voit esimerkiksi antaa määritä, työntekijöitä, nimikkeitä ja riviominaisuuksia koskevia tietoja.         | Voit käyttää budjetin tietojen antamiseen vain summia, luokkia ja tehtäviä.                    |
+| **Suojaus**              | Ennusteet perustuvat tapahtumiin, jotka annat ennustelomakkeissa. Siihen ei sisälly prosessinhallinnan mekanismia. Kaikki työntekijät, joilla on ennustelomakkeen käyttöoikeudet, voivat muokata tietoja hyväksyntää tarvitsematta.                                        | Budjetoinnissa käytetään työnkulkujärjestelmää, joka mahdollistaa muutostenhallinnan ja versiohistorian säilyttämisen.         |
+| **Merkintätyypit**           | Ennustetapahtumamerkinnät perustuvat yksiköiden määrään sekä kustannuksiin ja myyntiyksikön hintoihin.  | Budjetin tiedot perustuvat summiin, jotka on jaettu tuloihin ja menoihin.                                          |
+| **Ennustemallit**       | Koska jokainen ennuste on liitettävä malliin, voit luoda useita ennustemalleja sekä määrittää alimalleja.           | Projektin budjetointi rajoittaa budjetointiin käytettäviä ennustemalleja. Vähäinen ennustemallien määrä parantaa ennusteiden yhdenmukaisuutta.                           |
+| **Kustannusten ylitykset**         | Voit vain sallia tai estää kustannuksen ylityksen aiheuttavien tapahtumien merkinnän.   | Projektin budjetoinnissa käyttäjillä on muita hallintavaihtoehtoja. Voit sallia varoitukset ja ylitykset.                    |
 | **Seuranta**               | Ennustetta seurataan ennustevähennysten avulla. Toteutuneet summat vähennetään ennustetapahtuman saldoista ilman kirjausketjua. Tämä voi vaikeuttaa sen seurantaa, missä toteutuneiden tapahtumat tapahtuivat.                   | Projektibudjetin hallinnassa todelliset summat vähennetään jäljellä olevan budjetin summista. Tämä mahdollistaa selkeämmän kirjausketjun.                                   |
 
 ## <a name="project-forecasts"></a>Projektiennusteet
@@ -66,7 +64,7 @@ Ennustemallit voivat käyttää projektihallinnan mekanismeja. Ennustevähennyks
 
 Voit tarkistaa, kopioida, poistaa tai siirtää projektiennusteita kirjanpitobudjettiin. Prosessinhallintaa ei kuitenkaan ole. Kaikki työntekijät, joilla on ennustelomakkeen käyttöoikeus, voivat tehdä muokkauksia ilman tarkistusta.
 
--   **Muuta * – Voit muuttaa ennustetapahtumaan samoilla lomakkeilla, joihin alkuperäiset merkinnät on tehty.
+-   **Muuta** – Voit muuttaa ennustetapahtumaan samoilla lomakkeilla, joihin alkuperäiset merkinnät on tehty.
 -   **Kopioi tai poista** – Kun kopioit ennustetapahtumia, yhden ennustemallin tapahtumarivit kopioidaan toiseen ennustemalliin. Kun poistat ennusteen, poistat ennustemallin ennustetapahtumat. Jos haluat rajoittaa kopioitavia tai rajoitettavia ennustetapahtumia, valitse tietyt tapahtumatyypit ja päivämäärät. Tällä tavoin voit kopioida tai poistaa vain tiettyjä ennusteen osia.
 -   **Siirto** – Kun siirrät projektiennusteen kirjanpitobudjettiin, siirrät ennustemallin ennustetapahtumat kirjanpitobudjettiin. Voit korvata siirrettävällä projektiennusteella minkä tahansa kirjanpitobudjettiin aiemmin siirretyn tapahtuman.
 

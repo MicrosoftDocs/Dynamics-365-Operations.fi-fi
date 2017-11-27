@@ -3,7 +3,7 @@ title: Alusta varaston varastotasoja
 description: "Tässä menettelyssä selitetään, miten käytettävissä oleva varasto päivitetään manuaalisesti varastosiirron kirjauskansion avulla."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,13 +17,13 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 45c93febbbc4ea78fe2b87735ed96fd773605d96
+ms.sourcegitcommit: d804480167414cd038f8229db312dc9c52d131f8
+ms.openlocfilehash: 3b4685b034f7e6a3af0259fb921230e7b3397754
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
-# Alusta varaston varastotasoja
+# <a name="initialize-stock-levels-in-the-warehouse"></a>Alusta varaston varastotasoja
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
@@ -33,7 +33,7 @@ Tässä menettelyssä selitetään, miten käytettävissä oleva varasto päivit
 2. Valitse Uusi.
 3. Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.
 4. Valitse IMov.
-    * On hyvän käytännön mukaista käyttää erilaisia kirjauskansion nimimalleja eri liiketoimintatarkoituksiin.  
+    * On hyvä käytännön mukaista käyttää erilaisia kirjauskansion nimimalleja eri liiketoimintatarkoituksiin.  
 5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 6. Määritä Vastatili-kenttään arvo 140200.
     * Tämä vastatili on kirjauskansiorivien oletustili. Oletuksen voi korvat määrittämällä rivikohtaisesti eri vastatilit.  

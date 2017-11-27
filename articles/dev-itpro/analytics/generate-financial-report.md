@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 01bb8999e5d9c0e16f133a621ebfe1d102565f2f
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 09/29/2017
 
 Tässä aiheessa on tietoja talousraporttien luonnista. 
 
-Luo raportti avaamalla raportin määritys ja valitsemalla sitten Luo-painike työkalurivillä. Näytölle avautuu Raporttijonon tila -ikkuna, joka näyttää raporttisi paikan jonossa. Luotu raportti avautuu oletuksena Web Viewerissä.
-| ![Huomautus](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Huomautus")**Huomautus**        |
-|------------------------------------------------------------------------------------------------|
-| Voit luoda raportteja vain kansioihin ja sijainteihin, joiden käyttöoikeudet sinulla on. |
+Luo raportti avaamalla raportin määritys ja valitsemalla sitten Luo-painike työkalurivillä. Näytölle avautuu Raporttijonon tila -ikkuna, joka näyttää raporttisi paikan jonossa. Luotu raportti avautuu oletusarvoisesti verkkokatseluohjelmassa.
+
+> [!NOTE]
+> Voit luoda raportteja vain kansioihin ja sijainteihin, joiden käyttöoikeudet sinulla on.
 
 Seuraavassa taulukossa kerrotaan raporttien luonnissa käytettävissä olevista vaihtoehdoista.
 
@@ -50,10 +50,11 @@ Raportteja luotaessa käytetään Raportin määritys -välilehdissä määritet
 ## <a name="schedule-report-generation"></a> Raportin luonnin ajoitus
 Useilla yrityksillä on ydinjoukko raportteja, jotka ajetaan määrätyin väliajoin linjassa yrityksen liiketoimintaprosessien kanssa. Voit ajoittaa raportin muodostumaan säännöllisesti, esim. päivittäin, viikoittain, kuukausittain tai vuosittain. Voit ajoittaa yksittäisiä raportteja tai raporttiryhmiä, jotka sisältävät useita yrityksiä. Jokaiselle sisällytettävälle yritykselle on määritettävä tunnistetiedot, jotka voivat olla esimerkiksi samat kuin raporttipuumäärityksessä. Jos tunnistetietosi eivät ole voimassa, raportti näyttää sinulle vain ne tiedot, joihin sinulla on käyttöoikeus, kuten yritys, johon olet kirjautunut kyseisellä hetkellä. Tuotostiedot luetaan ensin raporttiryhmästä ja sen jälkeen yksittäisistä raporteista.
 
-Kun raporttien aikatauluja luodaan ja tallennetaan, ne näytetään siirtymisruudun kohdassa Raporttien aikataulut. Voit luoda kansioita raporttien järjestämistä varten. Jos yksittäinen aikataulutettu raportti jää suorittamatta, kaikkien muiden raporttien muodostuminen jatkuu.
-| ![Tärkeää](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Tärkeää")**Tärkeää**                                                                                                           |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Voidaksesi luoda, muokata ja poistaa raporttien aikatauluja, sinulla on oltava suunnittelijan tai järjestelmänvalvojan rooli. Kun raportti on ajettu, sen luomiseen käytetään sen käyttäjän tunnistetietoja, joka on luonut raportin. |
+Kun raporttien aikatauluja luodaan ja tallennetaan, ne näytetään siirtymisruudun kohdassa Raporttien aikataulut. Voit luoda kansioita raporttien järjestämistä varten. Jos aikataulun yksittäistä raporttia ei voida suorittaa, muut raportit silti suoritetaan.
+
+> [!IMPORTANT]
+> Voit luoda, muokata ja poistaa raporttien ajoituksia, jos sinulla on suunnittelijan tai järjestelmänvalvojan rooli. Kun raportti on ajettu, sen luomiseen käytetään sen käyttäjän tunnistetietoja, joka on luonut raportin.
+
 
 ### <a name="create-a-report-schedule"></a>Raporttiaikataulun luominen
 
@@ -99,15 +100,16 @@ Jatka valitsemalla Käyttöoikeudet-painike Raportin ajoitus -valintaikkunassa j
 ## <a name="missing-account-analysis-feature"></a>Puuttuvien tilien analysointitoiminto
 Voit etsiä mahdollisesti puuttuvia kirjanpitotilejä ja dimensioita kaikista rivimäärityksistä, raportointipuumäärityksistä ja raporttimäärityksistä rakenneosaryhmässä. Tästä on hyötyä, kun luot tai päivität useita tilejä tai rakenneosia lyhyen ajanjakson aikana ja haluat varmistaa, että kaikki uusi tieto on sisällytetty raportteihisi.
 
-Puuttuvat tilit määritetään käyttämällä rivin tai raportointipuun määrityksen alimpia ja korkeimpia arvoja. Sitten näkyviin tulee luettelo tileistä, joita ei ole rivin tai raportointipuun määrityksessä mutta jotka ovat taloushallinnon tiedoissa. Jos puuttuva tili on suurempi tai pienempi kuin rivimäärityksen arvot, kyseistä tiliä ei sisällytetä puuttuvien tilien luetteloon.
-| ![Vihje](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Vihje")**Vihje**                                             |
-|----------------------------------------------------------------------------------------------------------------------------------|
-| Oikeellisuustarkistuksen suorittamiseksi tämä prosessi tulee ajaa ennen kuin luot kuukausiraportteja ja luodessasi uusia rakenneosia. |
+Puuttuvat tilit määritetään käyttämällä rivin tai raportointipuun määrityksen alimpia ja korkeimpia arvoja. Sitten näkyviin tulee luettelo tileistä, joita ei ole rivin tai raportointipuun määrityksessä mutta jotka ovat taloushallinnon tiedoissa. Jos puuttuvan tilin arvo on suurempi tai pienempi kuin rivimäärityksen arvot, tiliä ei sisällytetä puuttuvien tilien luetteloon.
+
+> [!TIP]
+> Tämä menettely kannattaa tehdä tarkistusta varten ennen kuukausiraporttien luomista sekä luotaessa uusia rakenneosia.
 
 On epätodennäköisempää, että arvovälejä sisältävissä raporteissa on puuttuvia tilejä. Käytä mahdollisuuksien mukaan rakenneosissa alueita, jotta voit sisällyttää uusia tilejä, kun niitä luodaan. Jos raportin määritys on asetettu arvoksi @ANY yritys, voit kirjautua määrättyyn yritykseen ja ajaa puuttuvien tilien analyysin kyseiselle yhtiölle.
-| ![Huomautus](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Huomautus")**Huomautus**                                                                                           |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Jos uusi yritys on lisätty, sinun on lisättävä tämä uusi yritys kaikkien aiemmin luotujen raporttien raportointipuihin. Muuten yritystä ei sisällytetä puuttuvien tilien analyysiin. |
+
+> [!NOTE]
+> Jos uusi yritys on lisätty, sinun on lisättävä tämä uusi yritys kaikkien aiemmin luotujen raporttien raportointipuihin. Muuten yritystä ei sisällytetä puuttuvien tilien analyysiin.
+
 
 ### <a name="run-missing-account-analysis"></a>Puuttuvien tilien analyysin suorittaminen
 
@@ -117,11 +119,11 @@ On epätodennäköisempää, että arvovälejä sisältävissä raporteissa on p
 4.  Valitse Ryhmittely-kentässä vaihtoehto tulosten lajittelua varten. Voit lajitella tulokset vaikutuksenalaisen rakenneosan mukaan tai dimension ja arvojoukkojen mukaan.
 5.  Tarkista näytetyt tulokset. Kun valitset kohteen ylemmässä ruudussa, alemmassa ruudussa näkyy lisätietoja poikkeuksesta. Tietoihin lukeutuvat liittyvät dimensiot, arvot ja raportit.
 6.  Avaa kohta, johon tämä vaikuttaa, valitsemalla asianmukainen luetteloruudun kuvake tai napsauta kohtaa hiiren kakkospainikkeella ja valitse Avaa. Voit valita useita kohtia pitämällä Ctrl-näppäintä painettuna valitessasi kohdat alaruudussa.
-7.  Jos tulokseen sisältyy mitään sellaisia arvoja, rakenneosia tai raportteja, joiden ei pitäisi sisältyä analyysiin, napsauta kyseistä kohtaa hiiren kakkospainikkeella ja valitse Sulje pois, tai valitse Sulje pois -valintaruutu kyseisen kohdan vieressä poistaaksesi sen luettelosta. Poissuljettuja nimikkeitä ei sisällytetä, kun luettelo päivitetään. Voit valita useita kohtia pitämällä Ctrl-näppäintä alhaalla samalla, kun valitset kohdat alaruudussa. Voit tarkastella nimikkeitä, mukaan lukien aiemmin analyysista pois jätettäväksi valitsemasi tulokset, valitsemalla Näytä pois jätetyt rakenneosat ja arvot -valintaruutu ja napsauttamalla sitten Päivitä.
-8.  Valitsemalla Päivitä voit päivittää poikkeukset, jotka olet käsitellyt. Valitse Kyllä suorittaaksesi täyden päivityksen kaikille tuloksille, tai valitse Ei suorittaaksesi osittaisen päivityksen käsitellyille nimikkeille.
-    | ![Huomautus](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Huomautus")**Huomautus**                    |
-    |------------------------------------------------------------------------------------------------------------|
-    | Lomake päivitetään automaattisesti, kun se avautuu, ellei lomaketta ole avattu viimeisen 15 minuutin aikana. |
+7.  Jos tulokseen sisältyy mitään sellaisia arvoja, rakenneosia tai raportteja, joiden ei pitäisi sisältyä analyysiin, napsauta kyseistä kohtaa hiiren kakkospainikkeella ja valitse Sulje pois, tai valitse Sulje pois -valintaruutu kyseisen kohdan vieressä poistaaksesi sen luettelosta. Poissuljettuja nimikkeitä ei sisällytetä, kun luettelo päivitetään. Voit valita useita kohteita pitämällä Ctrl-näppäintä alhaalla valitessasi kohteita alemmassa ruudussa. Saat näkyviin kaikki kohteet, mukaan lukien aiemmin analyysista pois jätettäväksi valitsemasi kohteet, valitsemalla Näytä pois jätetyt rakenneosat ja arvot -valintaruudun ja valitsemalla sitten Päivitä.
+8.  Valitsemalla Päivitä voit päivittää poikkeukset, jotka olet käsitellyt. Valitsemalla Kyllä voit suorittaa täyden kaikkien tulosten päivityksen ja valitsemalla Ei voit suorittaa osittaisen, käsiteltyjen kohteiden päivityksen.
+
+    > [!NOTE]
+    > Lomake päivitetään automaattisesti sen avautuessa, ellei sitä ole avattu viimeisen 15 minuutin aikana.
 
 9.  Kun ongelmat on ratkaistu, valitse OK sulkeaksesi valintaruudun.
 
