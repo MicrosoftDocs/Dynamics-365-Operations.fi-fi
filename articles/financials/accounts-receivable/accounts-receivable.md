@@ -18,10 +18,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2762a6e378ac3f6da52f0ba634ace5bbf7412590
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ba00568cd93c6692969719f60457d6ab8a26dd5d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -101,7 +101,7 @@ Voit hyväksy asiakkaiden erilaisia maksuvälineitä, kuten vekseleitä, käteis
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-Sivustossa [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
+[Microsoft Dynamics 365 -ohjesivustolla](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
 
 #### <a name="blogs"></a>Blogit
 

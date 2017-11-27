@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: b53f95a55e66f7df4f7b3b85dd0dee2047019439
-ms.openlocfilehash: f0f601b2cf66daf0d7d3175bc78938e13aa6cd19
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 35b574e24e721e80ca1469878697aba4c1699dff
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -46,9 +46,9 @@ Asiakas tarvitsee jatkuvaa vaihtelua. Sinun on pystyttävä seuraamaan ostotottu
 Lisäksi asiakkailla on useita vaihtoehtoja saavuttaa haluamansa sopivana ajankohtana ja heille sopivalla hinnalla. Voit ylläpitää kanta-asiakkuutta käyttämällä räätälöityjä ilmoituksia ja tarjouksia, joiden avulla ostosten tekeminen on helpompaa.
 
 ## <a name="hardware-and-peripherals"></a>Laitteisto ja oheislaitteet
-Retail Modern Point Of Sale (MPOS) ja pilvimyyntipiste voivat käyttää useita laitteistoja ja oheislaitteita. Sekä MPOS että pilvimyyntipiste sisältävät useita käyttöliittymiä ja käyttöönoton asetuksia, joita voi käyttää erilaisissa liiketoimintaskenaarioissa.
+Retail Modern Point Of Sale (MPOS) ja Cloud POS voivat käyttää useita laitteistoja ja oheislaitteita. Sekä MPOS että Cloud POS sisältävät useita käyttöliittymiä ja käyttöönoton asetuksia, joita voi käyttää erilaisissa liiketoimintaskenaarioissa.
 
-Retail-sovelluksen oheislaitesimulaattori sisältää virtuaalisen oheislaitesimulaattorin ja POS-simulaattorin. Virtuaalinen oheislaitesimulaattori tukee ensisijaisesti sellaisten skenaarioiden testaamista, joissa yleensä vaaditaan fyysisiä myyntipisteen oheislaitteita. POS-simulaattorin avulla voit testata fyysisten oheislaitteiden ja Retail-sovelluksen yhteensopivuuden ilman POS-asiakasohjelman käyttöönottoa.
+Retail-sovelluksen oheislaitesimulaattori sisältää virtuaalisen oheislaitesimulaattorin ja POS-simulaattorin. Virtuaalinen oheislaitesimulaattori tukee ensisijaisesti sellaisten skenaarioiden testaamista, joissa yleensä vaaditaan fyysisiä POS-oheislaitteita. POS-simulaattorin avulla voit testata fyysisten oheislaitteiden ja Retail-sovelluksen yhteensopivuuden ilman POS-asiakasohjelman käyttöönottoa.
 
 ## <a name="intelligence"></a>Tiedot
 Erityisanalytiikka mahdollistaa automaattianalyysipalvelujen käyttämisen vähittäismyynnin haasteissa. Se tarjoaa ennustavaa, optimoitua ja räätälöityä tietoa, joka auttaa kasvussa ja tuottavuuden kehittämisessä. Retail-sovelluksen avulla voit tarjota visuaalisia raportteja millä tahansa laitteella niin online- kuin offline-tilassakin. Lisäksi voit auttaa asiakkaitasi tunnistamaan heidän tarpeitaan vastaavia tuotteita ja palveluita ennen ostohetkeä.
@@ -59,12 +59,12 @@ Retail-sovelluksen avulla voit valvoa myyntiä ja marginaalia reaaliajassa organ
 ## <a name="merchandising"></a>Kaupankäynti
 Sinun on luotava ja määritettävä tuotteet Retail-sovelluksessa, ennen kuin tuotteita voi tarjota myytäväksi vähittäismyyntikanavissa. Voit luoda tuotteita, määrittää tuotteiden ominaisuuksia ja määritteitä sekä määrittää tuotteet vähittäismyyntiluokkahierarkioihin. Jotta tuotteet olisivat käytettävissä vähittäismyyntikanavissa ja jotta ne voitaisiin lisätä aktiiviseen valikoimaan, tuotteet on vapautettava yrityksiin, jossa ne ovat saatavilla.
 
-Voit tehdä tuotteiden hinnanoikaisuja ja myös määrittää alennuksia, joita käytetään nimikkeeseen tai tapahtumaan myyntipisteessä, puhelinkeskuksen myyntitilauksessa tai verkkotilauksessa.
+Voit tehdä tuotteiden hinnanoikaisuja ja myös määrittää alennuksia, joita käytetään nimikkeeseen tai tapahtumaan POS-myyntipisteessä, puhelinkeskuksen myyntitilauksessa tai verkkotilauksessa.
 
-## <a name="store-operations-and-pos"></a>Myymälän toiminnot ja myyntipiste
-MPOS on myyntipistesovellus tietokoneille, taulutietokoneille ja puhelimille. Myyntihenkilöstö voi käsitellä myyntitapahtumia ja asiakastilauksia, tehdä asiakashallintatehtäviä sekä suorittaa päivittäistoimintoja ja varastonhallintaa mobiililaitteilla missä tahansa myymässä ja tietokonepohjaisissa kassapäätteissä. Pilvimyyntipiste on selainpohjainen versio, joka voidaan käynnistää millä tahansa vakioselaimella.
+## <a name="store-operations-and-pos"></a>Myymälän toiminnot ja POS
+MPOS on POS-sovellus tietokoneille, taulutietokoneille ja puhelimille. Myyntihenkilöstö voi käsitellä myyntitapahtumia ja asiakastilauksia, tehdä asiakashallintatehtäviä sekä suorittaa päivittäistoimintoja ja varastonhallintaa mobiililaitteilla missä tahansa myymässä ja tietokonepohjaisissa kassapäätteissä. Cloud POS on selainpohjainen POS, joka voidaan käynnistää millä tahansa vakioselaimella.
 
-Voit määrittää useita osia, joiden avulla määritetään myymälän, myymälän kassakoneiden ja sellaisten vähittäismyynnin oheislaitteiden suhteet, joita nämä kassakoneet käyttävät tapahtumien käsittelyssä. Voit määrittää myös myyntipisteen tietyn esiintymän ominaisuudet. Nämä ominaisuudet sisältävät laiteprofiilin tai kassakoneessa käytettävien vähittäismyynnin oheislaitteiden asetukset, myymälän, johon kassakone on yhdistetty, ulkoasun, jonka kassakoneeseen kirjautuva käyttäjä näkee, ja kassakoneessa käyttöönotettavat toiminnot. Voit myös määrittää, voiko kassakonetta käyttää, kun yhteys on katkennut tai kun se on offline-tilassa.
+Voit määrittää useita osia, joiden avulla määritetään myymälän, myymälän POS-kassakoneiden ja sellaisten vähittäismyynnin oheislaitteiden suhteet, joita nämä kassakoneet käyttävät tapahtumien käsittelyssä. Voit määrittää myös tietyn POS-esiintymän ominaisuudet. Nämä ominaisuudet sisältävät laiteprofiilin tai kassakoneessa käytettävien vähittäismyynnin oheislaitteiden asetukset, myymälän, johon kassakone on yhdistetty, ulkoasun, jonka kassakoneeseen kirjautuva käyttäjä näkee, ja kassakoneessa käyttöönotettavat toiminnot. Voit myös määrittää, voiko kassakonetta käyttää, kun yhteys on katkennut tai kun se on offline-tilassa.
 
 ## <a name="customize-and-administer-retail-environments"></a>Retail-ympäristöjen mukauttaminen ja hallinta
 Jos sinua on pyydetty mukauttamaan ympäristöä tai jos järjestelmän käyttöönotto ja ylläpito on vastuullasi, tutustu Retail-sovellusta koskevaan kehittäjien ja järjestelmänvalvojan sisältöön sekä yleiseen sisältöön.
@@ -74,7 +74,7 @@ Jos sinua on pyydetty mukauttamaan ympäristöä tai jos järjestelmän käyttö
 
 ## <a name="additional-resources"></a>Lisäresurssit
 ### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
-Sivustossa [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
+[Microsoft Dynamics 365 -ohjesivustolla](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
 
 ### <a name="blogs"></a>Blogit
 [Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog) on Retail- ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.

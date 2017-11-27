@@ -1,10 +1,9 @@
 # [Tervetuloa Dynamics 365 for Talentiin](index.md)
 
-# Aloittaminen
+# [Aloittaminen](talent-get-started.md)
 ## [Järjestelmävaatimukset ja päivityskäytäntö](talent-versions-update-policy.md)
 
-# Henkilöstöhallinnon strategian kehittäminen
-## [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](departments-jobs-positions.md)
+# [Henkilöstöhallinnon strategian kehittäminen](departments-jobs-positions.md)
 ## [Työosien määrittäminen](create-job.md)
 ## [Osaston luominen ja sen liittäminen osastohierarkiaan](create-department-add-department-hierarchy.md)
 ## [Yritysten välisten henkilöstöhallinnon parametrien määrittäminen](set-up-hr-parameters-across-legal-entities.md)
@@ -28,13 +27,11 @@
 ## [Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen](skills.md)
 ## [Koulutuskurssien määrittäminen](courses.md)
 
-# Etujen luonti ja ylläpito
-## [Etuohjelman hallinta](manage-benefit-program.md)
-## [Etukelpoisuuden käytännöt](benefit-eligibility-policies.md)
+# [Etujen luonti ja ylläpito](manage-benefit-program.md)
+# [Etukelpoisuuden käytännöt](benefit-eligibility-policies.md)
 ## [Työntekijöille lainattujen nimikkeiden hallinta](loan-items.md)
 
-# Tietojen kerääminen kyselylomakkeilla
-## [Kyselylomakkeet](questionnaires.md)
+# [Tietojen kerääminen kyselylomakkeilla](questionnaires.md)
 ## [Kyselylomakkeen suunnitteleminen](design-questionnaires.md)
 ## [Kyselylomakkeen jakaminen ja täyttäminen](distribute-questionnaires.md)
 ## [Kyselylomakkeen tulosten arvioiminen](evaluate-questionnaire-results.md)

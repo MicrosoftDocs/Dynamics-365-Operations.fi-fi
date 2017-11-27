@@ -2,11 +2,16 @@
 
 # Aloittaminen
 ## [Uudet ja muuttuneet ominaisuudet](get-started/whats-new.md)
+## [Ennen kuin ostat Dynamics 365 for Retailin](get-started/before-you-buy.md)
+## [Kokeiluversion tilaaminen](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
+## [Esittely-ympäristön käyttöönotto](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Käytön asetukset](dev-itpro/choose-deployment.md)
+
 
 # Maksut
 ## [Maksutavat](payment-methods.md)
 ## [Luottokorttien määritys, varmennus ja tietojen tarkistus](../financials/accounts-receivable/credit-card-authorizations.md)
-## [Myyntipisteen maksutapojen määrittäminen](cash-denominations.md)
+## [POS-maksutapojen määrittäminen](cash-denominations.md)
 ## [Maksut – usein kysytyt kysymykset](dev-itpro/payments-retail.md)
 
 # Ostotilaukset
@@ -32,42 +37,45 @@
 ## [Maksuvalinnat](work-with-payments.md)
 
 # Kanavan määrittäminen ja hallinta
-## [Alkutietojen alustaminen vähittäismyyntiympäristössä](enable-configure-retail-functionality.md)
+## [Alkutietojen alustaminen Retail-ympäristössä](enable-configure-retail-functionality.md)
 ## [Vähittäismyyntikanavien määrittäminen](define-maintain-retail-channels.md)
 ## [Verkkokaupan yleiskatsaus](online-stores.md)
-## [Vähittäismyynnin laiteaseman määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md)
+## [Retail-laiteaseman määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md)
 ## [Vähittäismyynnin työajan seuranta](retail-time-attendance.md)
 
-# Modern Point of Sale (MPOS) ja pilvimyyntipiste
+# Modern Point of Sale (MPOS) ja Cloud POS
+## [POS-toiminnot](POS-operations.md)
+## [Esittelytietojen näyttöasettelut MPOS/CPOS-sovelluksissa](demo-data.md)
 ## Laitteiston oheislaitteet
-### [Vähittäismyynnin oheislaitteiden yleiskatsaus](retail-peripherals-overview.md)
-### [Microsoftin testaamat myyntipisteen oheislaitteet](microsoft-tested-pos-hardware-peripherals.md)
-### [Vähittäismyynnin oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
+### [Retail-oheislaitteiden yleiskatsaus](retail-peripherals-overview.md)
+### [Microsoftin testaamat POS-oheislaitteet](microsoft-tested-pos-hardware-peripherals.md)
+### [Retail-oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
 ### [Kanavan asiakasohjelmien, kassakoneiden ja laiteasemien määrittäminen ja ylläpitäminen](define-maintain-channel-clients-registers-hw-stations.md)
 ## Näytön asettelu
-### [Myyntipisteen näytön asettelujen määrittäminen](pos-screen-layouts.md)
+### [POS-myyntipisteen näytön asettelujen määrittäminen](pos-screen-layouts.md)
 ### [Retail POS:n asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
-### [Myyntipistesovellus ja käyttäjän kielialueasetukset](pos-application-user-language-settings.md)
+### [POS-sovellus ja käyttäjän kielialueasetukset](pos-application-user-language-settings.md)
 ### [MPOS-kuvien määrittäminen](set-up-manage-images-retail-mpos.md)
 ## [Tietokoodien yleiskatsaus](info-codes-retail.md) 
 ## Tuotesuositukset
 ### [Mukautettujen tuotesuositusten yleiskatsaus](personalized-product-recommendations.md)
-### [Suositusten ohjausobjektin lisääminen myyntipistelaitteeseen](add-recommendations-control-pos-screen.md)
-## [Myyntipisteen offline-toiminto](pos-offline-functionality.md)
+### [Suositusten ohjausobjektin lisääminen POS-laitteeseen](add-recommendations-control-pos-screen.md)
+## [POS-myyntipisteen offline-toiminto](pos-offline-functionality.md)
 ## [Vuoron- ja kassanhallinta](shift-drawer-management.md)
 ## Asiakastilaukset
 ### [Asiakastilausten yleiskatsaus](customer-orders-overview.md)
 ### [Asiakkaiden yhdistelmätilaukset](hybrid-customer-orders.md)
 ## Myyjät
-### [Provisioiden seuranta myyntipisteessä myyntiryhmien avulla](pos-sales-groups-track-commissions.md)
+### [Provisioiden seuranta POS-myyntipisteessä myyntiryhmien avulla](pos-sales-groups-track-commissions.md)
+## [Tilauksen toimittaminen eri myymälästä](charge-send.md)
 ## Laitteen aktivointi
 ### [MPOS-ratkaisun määrittäminen ja asentaminen](retail-modern-pos-device-activation.md)
-### [Laajennetun pilvimyyntipisteen ja MPOS-kirjautumisen määrittäminen](extended-logon.md)
-### [Vähittäismyynnin tilien ja laitteiden hallinta pääkonttorista](set-up-activation-accounts-validate-devices-hq.md)
+### [Laajennetun Cloud POS- ja MPOS-kirjautumisen määrittäminen](extended-logon.md)
+### [Retail-tilien ja laitteiden hallinta pääkonttorista](set-up-activation-accounts-validate-devices-hq.md)
 ## Kuitit
 ### [Kuittimallien määrittäminen](receipt-templates-printing.md) 
 ### [Sähköpostikuittien lähettäminen MPOS:sta](email-receipts.md)
-## [Myyntipisteen tehtävien tallennustoiminto ja ohje](task-recorder-retail-pos.md)
+## [POS-myyntipisteen tehtävien tallennustoiminto ja ohje](task-recorder-retail-pos.md)
 
 # Seuranta ja analyysi
 ## [Myynnin ja marginaalien seuranta](monitor-sales-margin-performance.md)
@@ -85,7 +93,7 @@
 
 # Tuotteet ja myynninedistäminen
 ## [Tuotetietojen yleiskatsaus](../supply-chain/pim/product-information.md)
-## [Vähittäismyyntihierarkiat](retail-hierarchies.md)
+## [Retail-hierarkiat](retail-hierarchies.md)
 ## [Määritteiden luonti ja hallinta](create-manage-attributes.md)
 ## [Vähittäismyyntituotteiden määrittäminen](set-up-retail-products.md)
 ## [Tuotedimensiot](../supply-chain/pim/product-dimensions.md)
@@ -131,11 +139,11 @@
 ## [Luo ja liitä rekisterit](tasks/create-associate-registers.md)
 ## [Luo, laske ja kirjaa laskelma vähittäismyymälälle](tasks/create-calculate-post-statement-retail-store.md)
 ## [Luo puhelinkeskustilauksia](tasks/create-call-center-orders.md)
-## [Luo myyntipisteen taloushallinnon dimensiot kassakoneille ja määritä dimensioarvot kassakoneille](tasks/create-financial-dimensions-pos.md)
-## [Luo vähittäismyyntikanaville taloushallinnon dimensiot ja määritä dimensioarvot myymälöille](tasks/create-financial-dimensions-retail-channels.md)
+## [Luo myyntipisteen taloushallinnon dimensiot POS-kassakoneille ja määritä dimensioarvot kassakoneille](tasks/create-financial-dimensions-pos.md)
+## [Luo Retail-kanaville taloushallinnon dimensiot ja määritä dimensioarvot myymälöille](tasks/create-financial-dimensions-retail-channels.md)
 ## [Luo online-kanavat ja määritä kanavamääritteet](tasks/create-online-channel-define-channel-attributes.md)
-## [Luo myyntipisteen käyttöoikeusryhmät](tasks/create-pos-permission-groups.md)
-## [Luo myyntipisteen visuaalinen profiili](tasks/create-pos-visual-profile-2016-02.md)
+## [Luo POS-käyttöoikeusryhmät](tasks/create-pos-permission-groups.md)
+## [Luo POS-myyntipisteen visuaalinen profiili](tasks/create-pos-visual-profile-2016-02.md)
 ## [Ostotilausten tuotepakkausten luominen](tasks/create-product-packages-purchase-orders.md)
 ## [Määritä puhelinkeskuksen kanava ja kanavamääritteet](tasks/define-call-center-channel-channel-attributes.md)
 ## [Määritä kanavamääritteet](tasks/define-channel-attributes.md)
@@ -145,38 +153,38 @@
 ## [Määritä kanta-asiakasmallit](tasks/define-loyalty-schemes.md)
 ## [Organisaatioyksiköiden välisten suhteiden suunnittelu](tasks/design-relationships-between-organizational-units.md)
 ## [Valikoimien hallinta](tasks/manage-assortments-2016-11.md)
-## [Vähittäismyynnin laskelmien parametrin konfiguraatiot](tasks/parameter-configurations-retail-statements.md)
-## [Vähittäismyynnin laskelmien maksun konfiguraatiot](tasks/payment-configurations-retail-statements.md)
+## [Retail-laskelmien parametrin konfiguraatiot](tasks/parameter-configurations-retail-statements.md)
+## [Retail-laskelmien maksun konfiguraatiot](tasks/payment-configurations-retail-statements.md)
 ## [Lataa laiteasemaan itsepalvelutoiminnon avulla](tasks/perform-self-service-download-hardware-station.md)
 ## [Online-myyntien ja maksujen kirjaaminen](tasks/posting-online-sales-payments.md)
 ## [Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely](tasks/process-loyalty-reward-point-adjustments.md)
 ## [Siirrä tuotteita jakelukeskuksesta myymälään käyttäen ostotarjontaa](tasks/push-products-distribution-center-store-buyers-push.md)
-## [Vähittäismyynnin hinnanoikaisut](tasks/retail-price-adjustments.md)
+## [Retail-hinnanoikaisut](tasks/retail-price-adjustments.md)
 ## [Määritä ja suorita työ laskelmien laskemiseksi](tasks/run-job-calculate-statements.md)
 ## [Määritä ja suorita työ laskelmien kirjaamiseksi](tasks/run-job-post-statements.md)
 ## [Luo ja suorita valmiit raportit](tasks/run-out-box-reports.md)
 ## [Määritä säännöt ja parametrit cross dockingille ja ostotarjonnalle](tasks/set-up-rules-parameters-cross-docking-buyers-push.md)
-## [Vähittäismyynnin laskelmien myymälän konfiguraatiot](tasks/store-configurations-retail-statements.md)
+## [Retail-laskelmien myymälän konfiguraatiot](tasks/store-configurations-retail-statements.md)
 ## [Käytä jatkuvuusohjelmaa](tasks/use-continuity-program.md)
 ## [Työntekijän konfiguroiminen](tasks/worker.md)
 
-# [Vähittäismyynnin kehitys ja hallinta](dev-itpro/dev-retail-home-page.md)
+# [Retailin kehitys ja hallinta](dev-itpro/dev-retail-home-page.md)
 
 ## Arkkitehtuuri
 ### [Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin komponentit – Retail](retail-components.md)
 ### [Retail Server -arkkitehtuuri](dev-itpro/retail-server-architecture.md)
-### [Vähittäismyyntikanavan tietoliikenne](dev-itpro/define-retail-channel-communications-cdx.md)
+### [Retail-kanavan tietoliikenne](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS-arkkitehtuuri](dev-itpro/retail-modern-pos-architecture.md)
-### [Vähittäismyynnin verkkokaupan julkaisuarkkitehtuuri](dev-itpro/retail-online-store-publishing-architecture.md)
-### [Vähittäismyyntikanavan suorituskyvyn Power BI -sisältö](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Retail-verkkokaupan julkaisuarkkitehtuuri](dev-itpro/retail-online-store-publishing-architecture.md)
+### [Retail-kanavan suorituskyvyn Power BI -sisältö](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Käyttöönotto ja hotfix-korjaukset
-### [Vähittäismyymälän vähittäismyyntilaitteen määritykset ja asentaminen](dev-itpro/retail-store-scale-unit-configuration-installation.md)
-#### [Vähittäismyymäläjärjestelmä – ennen aloittamista](dev-itpro/retail-store-system-begin.md)
+### [Retail-vähittäismyyntilaitteen yleiskatsaus](dev-itpro/retail-store-system-begin.md)
+#### [Retail-vähittäismyyntilaitteen määritykset ja asentaminen](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Retail Modern POS:n määritykset ja asentaminen](retail-modern-pos-device-activation.md)
-#### [Vähittäismyynnin tilien ja laitteiden hallinta pääkonttorista](set-up-activation-accounts-validate-devices-hq.md)
+#### [Retail-tilien ja laitteiden hallinta pääkonttorista](set-up-activation-accounts-validate-devices-hq.md)
 #### [Retail POS -laitteen aktivointi](dev-itpro/retail-device-activation.md)
-#### [Retail-pilvimyyntipisteen suojaaminen](dev-itpro/secure-retail-cloud-pos.md)
+#### [Retail Cloud POS -myyntipisteen suojaaminen](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Stationin määritykset ja asentaminen](retail-hardware-station-configuration-installation.md)
 ### [Retail-itsepalvelukomponenttien joukkokäyttöönotto](dev-itpro/retail-mass-deployment.md)
 ### [Retail-komponenttien diagnostiikka- ja vianmääritystapahtumat](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
@@ -187,6 +195,7 @@
 ### [N-1-komponenttien asentaminen](dev-itpro/n-1-installation-configuration.md)
 
 ## Ympäristön konfiguraatio
+### [Linkkien lisääminen organisaation juridisiin ehtoihin ja tietosuojatietoihin](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Bing Mapsin hallinta](dev-itpro/manage-bing-maps.md)
 
 ## Laajennettavuus
@@ -195,15 +204,16 @@
 ##### [POS:n asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
 #### [MPOS:n offline-tilan määrittäminen](dev-itpro/retail-modern-pos-offline.md)
 #### [MPOS:n ja Cloud POS:n käynnistyksen laajennettavuus](dev-itpro/modern-pos-trigger-extensibility.md)
-#### [Mukautetun ohjausobjektin lisääminen myyntipistenäkymään](dev-itpro/pos-custom-control.md)
-#### [Myyntipisteen maksulaajennus](dev-itpro/pos-payment-extension.md)
+#### [Mukautetun ohjausobjektin lisääminen POS-näkymään](dev-itpro/pos-custom-control.md)
+#### [POS-maksulaajennus](dev-itpro/pos-payment-extension.md)
+#### [Ulkoisten lahjakorttien tuki](dev-itpro/gift-card.md)
 ### [Retail Experience -sovelluksen luominen](dev-itpro/create-retail-experience-app.md)
 ### [Hardware Stationin yleiskatsaus ja laajennettavuus](dev-itpro/hardware-station-extensibility.md)
 
 ### Retail Server
 #### [Retail Server OData -ohjaimen laajentaminen](dev-itpro/extend-retail-server-odata-controller.md)
-#### [Verkkorajapinta- ja OData-ohjaimet](dev-itpro/odata-controllers-api.md)
-#### [Retail Serverin asiakkaan ja kuluttajan ohjelmointirajapinnat](dev-itpro/retail-server-customer-consumer-api.md)
+#### [Web API- ja OData-ohjaimet](dev-itpro/odata-controllers-api.md)
+#### [Retail Serverin asiakkaan ja kuluttajan API-rajapinnat](dev-itpro/retail-server-customer-consumer-api.md)
 #### [Metatietojen laajentaminen](dev-itpro/extend-metadata.md)
 #### [POS:n offline-tilan tukeminen laajentamalla kaupankäyntiympäristöä](dev-itpro/call-crt-service-offline.md)
 ### Kaupankäyntiympäristö
@@ -230,10 +240,16 @@
 ### [Retail SDK:n laajennettavuusmallit](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Ruotsin kassakoneet](localizations/emea-swe-cash-registers.md)
 ### [Retail POS -integraatiomalli, jossa on Ruotsin tarkistusyksiköt](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+### [Norjan kassakoneet](localizations/emea-nor-cash-registers.md)
+### [Käyttöönotto-ohjeet Norjan kassakoneille](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail SDK:n pakkaus](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK:n mallit ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Kanavan tietokantatunnisteet](dev-itpro/channel-db-extensions.md)
 ### [CDX-laajennettavuus](dev-itpro/cdx-extensibility.md)
+### [Tilauksen määritteet](dev-itpro/order-attributes.md)
+### [Asiakkaan määritteet](dev-itpro/customer-attributes.md)
+### [Retail Typescript- ja C#-välityspalvelin](dev-itpro/typescript-proxy-retail-pos.md)
+
 
 ## Kaupankäyntiympäristö
 ### [Kanta-asiakaslaajennus](dev-itpro/retail-sdk/loyalty-extension-sample.md)
