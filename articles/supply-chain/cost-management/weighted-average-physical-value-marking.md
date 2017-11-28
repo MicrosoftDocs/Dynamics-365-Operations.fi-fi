@@ -1,9 +1,9 @@
 ---
-title: "Painotettu keskiarvo, fyysinen arvo ja merkintä"
-description: 
+title: "Painotettu keskiarvo sekä fyysinen arvo ja merkintä"
+description: "Painotettu keskiarvo on varastomalli, joka perustuu painotetun keskiarvon periaatteeseen. Siinä varasto-otot arvotetaan varastoon varaston sulkemiskauden aikana vastaanotettavien nimikkeiden sekä edeltävän kauden mahdollisen käytettävissä olevan varaston keskiarvon mukaan."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
@@ -20,20 +20,20 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c9db625e5af77b8f5d1569e35ce2d4c20e5be646
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 69876a9d1daec4e6980728527c784a5404239cc2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="weighted-average-with-physical-value-and-marking"></a>Painotettu keskiarvo, fyysinen arvo ja merkintä
+# <a name="weighted-average-with-physical-value-and-marking"></a>Painotettu keskiarvo sekä fyysinen arvo ja merkintä
 
 [!include[banner](../includes/banner.md)]
 
 [!include[retail name](../includes/retail-name.md)]
 
-
+Painotettu keskiarvo on varastomalli, joka perustuu painotetun keskiarvon periaatteeseen. Siinä varasto-otot arvotetaan varastoon varaston sulkemiskauden aikana vastaanotettavien nimikkeiden sekä edeltävän kauden mahdollisen käytettävissä olevan varaston keskiarvon mukaan.
 
 Kun suoritat varaston sulkemisen, kaikki vastaanotot täsmäytetään suhteessa virtuaalivarastostaottoon, joka sisältää vastaanotetun kokonaismäärän ja -arvon. Tällä virtuaalivarastostaotolla on vastaava virtuaalivastaanotto, josta varastostaotot täsmäytetään. Näin kaikille varastostaotoille tulee sama keskimääräinen kustannus. Virtuaalivarastostaoton ja -vastaanoton voi nähdä virtuaalisiirtona, jota kutsutaan painotetun keskiarvon varastonsulkemissiirroksi.
 

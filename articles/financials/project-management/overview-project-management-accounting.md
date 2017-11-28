@@ -3,7 +3,7 @@ title: Projektinhallinta ja kirjanpito
 description: "Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla palvelu tarjoamiseksi, tuotteen tuottamiseksi tai tuloksen saavuttamiseksi."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cd30c9278c58f8e0ca9b50f67a999708bd64c0a2
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -228,7 +228,7 @@ Seuraavassa taulukossa kuvataan laskentamenetelmät projektin jäljellä olevill
 <tbody>
 <tr class="odd">
 <td>Kokonaiskustannus - toteutunut</td>
-<td>Arvioidut kustannukset on syötettävä manuaalisesti. Sen jälkeen kun <strong>kokonaiskustannus-</strong> tai <strong>kokonaismäärä-</strong> sarakkeet <strong>kustannusarvio-</strong>sivulla ovat valmiit, toteutuneet kustannukset vähennetään käyttäjän kirjoittamista loppusummista. Tulos on projektin jäljellä olevat kustannukset. Yleensä kustannuksien etenemistä ei jäljitetä esimerkiksi kunkin kauden kirjattujen hotellissa olojen määrällä tai kirjattujen aterioiden määrällä. Sen sijaan. Seuranta perustuu yleensä arvioitujen tuntien kokonaissumman vertailuun. Tämä menetelmä ei vaadi ennustemallia ja lopulliset kustannukset tai lopullinen määrä voidaan muuttaa manuaalisesti. Kun arvo on määritetty <strong>Kokonaiskustannus</strong>- tai <strong>Kokonaismäärä</strong>-sarakkeessa, Finance and Operations vertaa tätä arvoa varsinaisiin tapahtumiin, jotka on kirjattu kyseisellä kaudella, ja sitten arvo pienennetään <strong>Jäljellä oleva määrä</strong>- tai <strong>Jäljellä olevat kustannukset</strong> -sarakkeessa.</td>
+<td>Arvioidut kustannukset on syötettävä manuaalisesti. Sen jälkeen kun <strong>kokonaiskustannus-</strong> tai <strong>kokonaismäärä-</strong> sarakkeet <strong>kustannusarvio-</strong>sivulla ovat valmiit, toteutuneet kustannukset vähennetään käyttäjän kirjoittamista loppusummista. Tuloksena saadaan projektin suorittamisen vaatimat kustannukset. Yleensä kustannuksien etenemistä ei jäljitetä esimerkiksi kunkin kauden kirjattujen hotellissa olojen määrällä tai kirjattujen aterioiden määrällä. Sen sijaan. Seuranta perustuu yleensä arvioitujen tuntien kokonaissumman vertailuun. Tämä menetelmä ei vaadi ennustemallia ja lopulliset kustannukset tai lopullinen määrä voidaan muuttaa manuaalisesti. Kun arvo on määritetty <strong>Kokonaiskustannus</strong>- tai <strong>Kokonaismäärä</strong>-sarakkeessa, Finance and Operations vertaa tätä arvoa varsinaisiin tapahtumiin, jotka on kirjattu kyseisellä kaudella, ja sitten arvo pienennetään <strong>Jäljellä oleva määrä</strong>- tai <strong>Jäljellä olevat kustannukset</strong> -sarakkeessa.</td>
 </tr>
 <tr class="even">
 <td>Kokonaisbudjetti – todellinen</td>
@@ -243,15 +243,15 @@ Finance and Operations ei vähennä ennustettuja arvioita automaattisesti. Siksi
 > </tr>
 <tr class="odd">
 <td>Jäljellä oleva budjetti</td>
-<td>Tässä menetelmässä käytetään jäljellä olevaa budjettimallia laskemaan projektin jäljellä olevat kustannukset. Tätä menetelmää käytettäessä toteutuneiden kustannusten ja jäljellä olevan budjettimallin ennustetut summat lasketaan yhteen. Tuloksena on todelliset kustannukset. Ennen kuin käytät tätä tapaa, jäljellä oleva budjettimalli on määritettävä vähentämään tapahtumia, jotka perustuvat toteutuneisiin järjentelmään kirjattuihin tapahtumiin. <strong>Ennustemallit</strong>-sivulla, varmista että sivut on merkitty <strong>ennusteen automaattinen vähennys</strong> -ryhmään. Yleensä, jäljellä oleva budjetti kopioidaan alkuperäisestä budjetista. Kun tapahtumat syötetään, jäljellä olevan budjetin tapahtumat vähennetään. Projektin edetessä, jos toteat, että jäljellä olevaa budjettia on muutettava, ennustetapahtumat veloitetaan jäljellä olevasta budjetista. <strong>Huomautus:</strong> Tätä menetelmää voi käyttää vain, jos arvioon on liitetty ennustemalli.</td>
+<td>Tässä menetelmässä käytetään jäljellä olevaa budjettimallia laskemaan projektin jäljellä olevat kustannukset. Tätä menetelmää käytettäessä toteutuneiden kustannusten ja jäljellä olevan budjettimallin ennustetut summat lasketaan yhteen. Tuloksena saadaan todelliset kustannukset. Ennen kuin käytät tätä tapaa, jäljellä oleva budjettimalli on määritettävä vähentämään tapahtumia, jotka perustuvat toteutuneisiin järjentelmään kirjattuihin tapahtumiin. <strong>Ennustemallit</strong>-sivulla, varmista että sivut on merkitty <strong>ennusteen automaattinen vähennys</strong> -ryhmään. Yleensä, jäljellä oleva budjetti kopioidaan alkuperäisestä budjetista. Kun tapahtumat syötetään, jäljellä olevan budjetin tapahtumat vähennetään. Projektin edetessä, jos toteat, että jäljellä olevaa budjettia on muutettava, ennustetapahtumat veloitetaan jäljellä olevasta budjetista. <strong>Huomautus:</strong> Tätä menetelmää voi käyttää vain, jos arvioon on liitetty ennustemalli.</td>
 </tr>
 <tr class="even">
 <td>Kuten edellinen arvio</td>
-<td>Samaa arviointimallia käytetään, jota käytettiin edellisen kaudella. Tämä menetelmä vaatii ennustemallin, jos edellinen kausi tarvitsi ennustemallin.</td>
+<td>Käytetään samaa arviointitapaa kuin edellisessä kaudessa. Tämä menetelmä vaatii ennustemallin, jos edellinen kausi tarvitsi ennustemallin.</td>
 </tr>
 <tr class="odd">
 <td>Määritä jäljellä olevien kustannusten arvoksi nolla</td>
-<td>Tätä menetelmää käytetään tavallisesti ennen arviointiprojektin poistamista. Tämä malli vastaa yhteisarvioita, joissa ovat varsinaiset kirjatut tapahtumat, ja poistaa <strong>jäljellä olevat kustannukset</strong> -sarakkeen. Valmistumisprosentin tuloksena on aina 100 prosenttia. <strong>Ennuste</strong>-kenttää ei ole valittu jokaiselle luomallesi kustannusriville, ja kokonaisennuste kopioidaan edellisestä kustannusarviosta. Arviointikauden todellinen kulutus vähennetään projektin jäljellä olevista kustannuksista. Tämä menetelmä ei vaadi ennustemallia.</td>
+<td>Tätä menetelmää käytetään tavallisesti ennen arviointiprojektin poistamista. Tämä malli vastaa yhteisarvioita, joissa ovat varsinaiset kirjatut tapahtumat, ja poistaa <strong>jäljellä olevat kustannukset</strong> -sarakkeen. Valmistumisprosentin tuloksena on aina 100 prosenttia. <strong>Ennuste</strong>-kenttää ei ole valittu jokaiselle luomallesi kustannusriville, ja kokonaisennuste kopioidaan edellisestä kustannusarviosta. Arviointikauden todellinen kulutus vähennetään projektin suorittamisessa tarvittavista jäljellä olevista kustannuksista. Tämä menetelmä ei vaadi ennustemallia.</td>
 </tr>
 <tr class="even">
 <td>Kustannusmallin mukaan</td>

@@ -3,7 +3,7 @@ title: "Tuotteeseen liittyvien käännösten usein kysytyt kysymykset"
 description: "Tässä ohjeaiheessa kuvataan, kuinka tuotteiden, tuotteen dimensioarvojen ja tuotemääritteiden käännöksiä hallitaan."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b2976d4fc62a71039da0bc8be5b50be92a95959c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 2c58e3e2f60c00d8d834c1d80b347e2e7087809d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -47,7 +47,7 @@ Voit kääntää tuotteeseen liittyvät tiedot mille tahansa kielelle, joka on k
 ## <a name="where-can-i-view-the-translated-information"></a>Missä näen käännetty tietoja?
 Voit tarkastella minkä tahansa ulkoisen lähdeasiakirjan, kuten laskun, tuotteisiin liittyvien tietojen käännöksiä, jos asiakirja käyttää kieltä, jonka käännökset ovat käytettävissä.
 
-## <a name="how-do-i-create-translations-for-productrelated-information"></a>Tuotteeseen liittyvien tietojen käännösten luominen
+## <a name="how-do-i-create-translations-for-product-related-information"></a>Tuotteeseen liittyvien tietojen käännösten luominen
 Luo tuotteelle käännöksiä noudattamalla seuraavia ohjeita:
 1.  Valitse **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Vapautetut tuotteet**.
 2.  Valitse tuote ja sitten Toimintoruutu, **Kielet** -ryhmässä valitse **Kielet**.
@@ -124,7 +124,7 @@ Hallinnoi dimension arvoryhmän arvojen käännöksiä noudattamalla seuraavia o
 1.  Noudata edellisten kohtien toimintaohjeita arvodimensioryhmän luomiseen ja avaa **Kokoryhmän rivit**, **Väriryhmän rivit** tai **Tyyliryhmän rivit** -sivu.
 2.  Valitse **Tekstin käännös**. **Tekstin käännös** -sivun **Käännetty teksti** -ryhmässä kirjoita käännökset **Nimi** ja **Kuvaus** -kenttiin.
 
-## <a name="when-can-translations-of-productrelated-information-be-managed"></a>Milloin voidaan tuotteisiin liittyvien tietojen käännöksiä hallinnoida?
+## <a name="when-can-translations-of-product-related-information-be-managed"></a>Milloin voidaan tuotteisiin liittyvien tietojen käännöksiä hallinnoida?
 Tuotteisiin liittyvien tietojen käännöksiä voidaan hallinnoida milloin tahansa. Kun tapahtumat päivitetään dimension arvolla, joka on liitetty tuotteeseen, tuotteen tiedot päivitetään, riippumatta siitä, onko tuotteella tapahtumia.
 
 

@@ -1,9 +1,9 @@
 ---
 title: Liukuva keskiarvo
-description: 
+description: "Liukuva keskiarvo on keskiarvon periaatteeseen perustuva pysyvä kustannuslaskentamenetelmä, jossa varasto-ottojen kustannukset eivät muutu, vaikka ostokustannus muuttuu. Ero aktivoidaan. Se perustuu suhteelliseen laskelmaan. Jäljelle jäävä summa siirretään kuluksi."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](../includes/banner.md)]
 
+Liukuva keskiarvo on keskiarvon periaatteeseen perustuva pysyvä kustannuslaskentamenetelmä, jossa varasto-ottojen kustannukset eivät muutu, vaikka ostokustannus muuttuu. Ero aktivoidaan. Se perustuu suhteelliseen laskelmaan. Jäljelle jäävä summa siirretään kuluksi. 
+
+Kun käytössä on liukuva keskiarvo, varastotilityksiä ja varastomerkintöjä ei tueta. Varaston sulkeminen ei vaikuta tuotteisiin, joilla on liukuva keskiarvo varastomalliryhmänä. Sulkeminen ei luo tapahtumien välille tilityksiä.
 
 Liukuvan keskiarvon kustannuksen käyttöä kustannuslaskennassa koskevat seuraavat edellytykset.
+
 1.  Määritä **Nimikemalliryhmät**-sivulla nimikemalliryhmä, jolle on valittu Liukuva keskiarvo -asetus **Varastomalli**-kentästä. **Huomautus:** Kun Liukuva keskiarvo -asetus valitaan, oletusarvoisesti myös **Kirjaa varastotilanne**- ja **Kirjaa kirjanpitovarasto** -kentät tulevat valituiksi. 
 
 2.  Määritä **Kirjaus**-sivulla **Liukuvan keskiarvon hintaero**- ja **Liukuvan keskiarvon kustannuksen uudelleenarvostus** -tilit **Varasto**-välilehdessä. **Liukuvan keskiarvon hintaero** -tiliä käytetään, kun kustannus on kirjattava suhteellisesti. Syynä tähän on ostotilauksen vastaanoton ja ostolaskun välinen kustannusten erotus sekä alkuperäisen varastomäärän ja käytettävissä olevan määrän välinen erotus. Käytä **Liukuvan keskiarvon kustannuksen uudelleenarvostus** -tiliä, kun haluat oikaista tuotteen liukuvan keskiarvon kustannuksen uudeksi yksikköhinnaksi.

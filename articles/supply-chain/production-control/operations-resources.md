@@ -3,7 +3,7 @@ title: Operations-resurssit
 description: "Operatiiviset resurssit suorittaa projektin tai tuotantoprosessin aktiviteetit. Ne voivat olla erityyppisiä, ja niillä voi olla eri ominaisuuksia."
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 61943
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a333c4d9c0e614c513bf3e1a02b943b186fb1e5
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Operatiiviset resurssit lisätään tehtäviin, kun projektia tai tuotantoa ajoi
 
 -   **Kapasiteetti** – Määritä operatiivisten resurssien kapasiteetti tunteina kapasiteetin mittayksikön perusteella.
 -   **Erän kapasiteetti** – Määritä, kuinka monta kappaletta operatiivinen resurssi pystyy enintään käsittelemään suorituksen aikana.
--   **Tehokkuusprosentti** – Määritä operatiiviselta resurssilta odotettava tehokkuus. Tehokkuusprosentti muokkaa operatiivisen resurssin tuotantokapasiteettia ja vaikuttaa resurssille varattavaan aikaan. Operatiivisia resursseja käyttävien työvaiheiden läpimenoaikoja oikaistaan vastaavasti. Laskutoimituksessa käytetään seuraavaa kaavaa: Ajoitusaika = Aika × 100 ÷ Tehokkuusprosentti Tässä kaavassa *Aika* sisältää sekä asetus- että suoritusajan.
+-   **Tehokkuusprosentti** – Määritä operatiiviselta resurssilta odotettava tehokkuus. Tehokkuusprosentti muokkaa operatiivisen resurssin tuotantokapasiteettia ja vaikuttaa resurssille varattavaan aikaan. Operatiivisia resursseja käyttävien työvaiheiden läpimenoaikoja oikaistaan vastaavasti. Laskutoimituksessa käytetään seuraavaa kaavaa: Ajoitusaika = aika × 100 ÷ tehokkuusprosentti. *Aika* sisältää sekä asetus- että suoritusajan.
 -   **Työvaiheen karkeasuunnittelun prosenttiosuus** – Määritä työvaiheiden ajoituksessa käytettävän operatiivisen resurssin kapasiteetin enimmäisprosentti. Arvon olisi oltava alle 100 prosenttia, jotta kapasiteetti voisi joustaa töitä ajoitettaessa.
 -   **Rajallinen kapasiteetti** – Määritä asetukseksi **Kyllä**, jos operatiivinen resurssi tulee ajoittaa käytettävissä olevan toteutuneen kapasiteetin perusteella ja aiemmin määritetyt kapasiteettivaraukset tulee ottaa huomioon. Jos tämän asetuksen arvoksi on määritetty **Ei**, operatiivisella resurssin kapasiteetin oletetaan olevan rajaton, ja resurssi saatetaan ylivarata.
 -   **Rajallinen ominaisuus** – Määritä asetukseksi **Kyllä**, jos haluat, että operatiivinen resurssi ajoitetaan käytettävissä olevan todellisen kapasiteetin perusteella suhteessa tarvittaviin työajan ajoitusominaisuuksiin.

@@ -3,14 +3,14 @@ title: Finance and Operations -asiakasohjelman usein kysytyt kysymykset
 description: "Tässä artikkelissa on vastauksia Microsoft Dynamics 365 for Finance and Operations -asiakasohjelmaa koskeviin usein kysyttyihin kysymyksiin."
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 12334
 ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 55d4fa4629d203aa888fe6400126a872d2eee000
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 658d5a1a031f2292dbd445fa7fb345be01c61947
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -43,7 +43,7 @@ Selaimesi suojausasetukset voivat estää symbolien oikein lataamisen. Voit ratk
 ## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Valintanauhaa ei ole Dynamics AX 2012:ssa. Voinko pitää toimintoruudun välilehdet aina auki?
 Olemme aikeissa toteuttaa tämän ominaisuuden pian. Käyttäjät voivat sitten halutessaan pitää välilehtien toimintoruudut aina avattuina. Muussa tapauksessa välilehdet painuvat kokoon, kun niitä ei käytetä, jotta sivun näyttötilaa voidaan lisätä.
 
-## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>Miksi näen joskus eri pikavalikon kun klikkaan hiiren kakkospainikkeella?
+## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-right-click"></a>Miksi näen joskus eri pikavalikon, kun napsautan hiiren kakkospainiketta?
 Jos napsautat hiiren kakkospainikkeella muokattavaa kenttää (tai jos teksti on valittu), selaimen pikavalikko ilmestyy näkyviin. Tämän valikon avulla voiy käyttää **leikkaa**, **kopioi** ja **liitä** komentoja. Microsoft ei voi upottaa komentoja Finance and Operations -pikavalikkoihin, koska turvallisuussyistä selaimet eivät salli meille systemaattista pääsyä järjestelmän leikepöydälle.
 
 Jos kaksoisnapsautat kenttäotsikkoa tai ohjausobjektin vain luku -arvoa, näkyviin tulee Finance and Operations -pikavalikko.

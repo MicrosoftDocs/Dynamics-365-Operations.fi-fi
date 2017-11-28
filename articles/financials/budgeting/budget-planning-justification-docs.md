@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2e711b14b202d477bd3f4bda09977fd33979fc94
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b033f6197e61a6030e12081a9e4f1d820bac458f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -60,7 +60,7 @@ Budjettisuunnitelman mallin luo budjettipäällikkö Microsoft Wordissa ja malli
 1.  Siirry Finance and Operationsissa kohtaan **Budjetointi** &gt; **Asetukset** &gt; **Budjettisuunnittelu** &gt; **Perusteluasiakirjan mallit**.
 2.  Valitse **Uusi** ja selaa juuri luotuun Microsoft Word -asiakirjaan.
 3.  Syötä mallin näyttönimi ja kuvaus. Valitse **OK**.
-4.  Mene: **Budjetointi** &gt; **Asetukset** &gt; **Budjettisuunnittelu** &gt; **Budjettisuunnitteluprosessi**.
+4.  Siirry kohtaan **Budjetointi** &gt; **Asetukset** &gt; **Budjetti****suunnittelu** &gt; **Budjettisuunnitteluprosessi**.
 5.  Valitse prosessi, jossa perustelumallia tulee käyttää ja valitse **Muokkaa**.
 6.  Valitse **Perusteluasiakirjan malli** -kentässä sopiva malli ja tallenna.
 

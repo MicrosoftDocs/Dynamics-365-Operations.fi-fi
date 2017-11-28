@@ -1,9 +1,9 @@
 ---
 title: Tuotantoprosessin yleiskatsaus
-description: "Tässä artikkelissa on yleiskuvaus tuotantoprosesseista. Artikkelissa kuvataan tuotantotilausten, erätilausten ja kanbanien vaiheita tilauksen luonnista tilikauden sulkemiseen."
+description: "Tässä ohjeaiheessa on yleiskuvaus tuotantoprosesseista. Artikkelissa kuvataan tuotantotilausten, erätilausten ja kanbanien vaiheita tilauksen luonnista tilikauden sulkemiseen."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e50e64057d19d0e1fbf5645c2abc31fbd19ea43a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on yleiskuvaus tuotantoprosesseista. Artikkelissa kuvataan tuotantotilausten, erätilausten ja kanbanien vaiheita tilauksen luonnista tilikauden sulkemiseen. 
+Tässä ohjeaiheessa on yleiskuvaus tuotantoprosesseista. Artikkelissa kuvataan tuotantotilausten, erätilausten ja kanbanien vaiheita tilauksen luonnista tilikauden sulkemiseen. 
 
 Tuotteiden tuotanto, jota kutsutaan toisinaan myös tuotannon elinkaareksi, noudattaa tiettyjä nimikkeen valmistamiseen vaadittavia vaiheita. Elinkaari alkaa tuotantotilauksen, erätilaus tai kanbanin luonnista. Se päättyy valmiiseen nimikkeeseen, joka on valmiina toimitettavaksi asiakkaalle tai toiseen tuotantovaiheeseen. Elinkaaren kussakin vaiheessa tarvitaan erilaisia tietoja prosessin suorittamiseksi. Kunkin vaiheen valmistuminen näkyy tuotantotilauksessa, erätilauksessa tai kanbanissa tuotannon tilan muuttumisena. Erityyppiset tuotteet edellyttävät erilaisia valmistusprosesseja.  
 

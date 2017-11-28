@@ -1,9 +1,9 @@
 ---
 title: "Tuotemääritysmallien laskelmat – usein kysytyt kysymykset"
-description: "Tässä artikkelissa kuvataan laskutoimitukset tuotekonfiguraatiomalleille ja laskentojen käyttäminen yhdessä rajoitteiden kanssa."
+description: "Tässä ohjeaiheessa kuvataan laskutoimitukset tuotekonfiguraatiomalleille ja laskentojen käyttäminen yhdessä rajoitteiden kanssa."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fea4e139d32c780769bafe08d603b828d366550c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 0763e5a02e7a14b6ef369103aa25e435559abe19
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kuvataan laskutoimitukset tuotekonfiguraatiomalleille ja laskentojen käyttäminen yhdessä rajoitteiden kanssa.
+Tässä ohjeaiheessa kuvataan laskutoimitukset tuotekonfiguraatiomalleille ja laskentojen käyttäminen yhdessä rajoitteiden kanssa.
 
 Laskutoimituksia on mahdollista käyttää aritmeettisiin tai loogisiin toimintoihin. Ne täydentävät lausekkeiden rajoituksia tuotemääritysmalleissa. Voit määrittää laskutoimituksia **Rajoituspohjaisen tuotemääritysmallin tiedot** -sivulla ja luoda laskutoimituksille lausekkeita lauseke-editorilla. Lisätietoja on kohdassa Laskelmien luominen.
 
@@ -75,7 +75,7 @@ Laskelmat tehdään, kun kaikille syöttöattribuuteille on annettu arvo.
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Voit korvata arvon, joka lasketaan kohteen määritteeseen?
 Voit korvata arvon, joka lasketaan kohteen määritteelle, ellei kohteen määritteen arvo ole piilotettu tai vain luku-muotoinen.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Kohdemääritteen määrittäminen piilotetuksi tai vain luettavaksi?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Kohdemääritteen määrittäminen piilotetuksi tai vain luettavaksi?
 Aseta määrite piilotetuksi tai vain luku -tilaan noudattamalla seuraavia ohjeita.
 
 1.  Napsauta **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Tuotekonfiguraation mallit**.

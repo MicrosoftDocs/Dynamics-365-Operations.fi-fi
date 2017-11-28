@@ -3,7 +3,7 @@ title: "Määritä sijaintidirektiivi ostotilauksen poispanolle"
 description: "Tässä menettelyssä näytetään, miten yksinkertainen sijaintidirektiivi määritetään."
 author: BibiSp
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 45e1e54c807597d4d5ff7370748012cbf28c1c6b
+ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
+ms.openlocfilehash: 98ce3ad38dddda33be5466490fcd39d81251679c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Määritä sijaintidirektiivi ostotilauksen poispanolle
@@ -61,7 +61,7 @@ Tässä menettelyssä näytetään, miten yksinkertainen sijaintidirektiivi mä�
 4. Kirjoita arvo Yksikkö-kenttään.
     * Yksikkö, jolla Määrästä ja Määrälle ilmoitetaan. Jos kenttä jätetään tyhjäksi, nimikkeen varastoyksikkö käytetään.  
 5. Valitse Etsi määrä -kentässä vaihtoehto.
-    * Ei mitään tai Rekisterikilpien määrä: kullekin rekisterikilvelle rekisteröity määrä. Määrä, jolle määrätty yksikkö: koko rekisteröity määrä. Jäljellä oleva määrä: ostotilausriviltä vielä rekisteröitävä määrä. Odotettu määrä: ostotilausrivillä määritetty kokonaismäärä.  
+    * Ei mitään tai rekisterikilpien määrä: kullekin rekisterikilvelle rekisteröity määrä. Määrä, jolle määrätty yksikkö: koko rekisteröity määrä. Jäljellä oleva määrä: ostotilausriviltä vielä rekisteröitävä määrä. Odotettu määrä: ostotilausrivillä määritetty kokonaismäärä.  
 6. Valitse Rajoita yksikön mukaan -valintaruutu tai poista sen valinta.
     * Jos valitset tämän vaihtoehdon ja määrität yksikön Rajoita yksikön mukaan -sivulla, sijaintiin voidaan määrittää vain nimikkeet, joilla on kyseinen mittayksikkö. Jos mittayksikkö on esimerkiksi kuormalava, vain kuormalavojen nimikkeet voidaan asettaa määritettyyn sijaintiin.  
 7. Valitse Salli jakaminen -valintaruutu tai poista sen valinta.

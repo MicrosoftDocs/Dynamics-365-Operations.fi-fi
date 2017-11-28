@@ -1,9 +1,9 @@
 ---
 title: Ostoehdotusten yleiskatsaus
-description: "Tässä artikkelissa kuvataan ostoehdotusten työnkulkua ja eri tiloja."
+description: "Tässä aiheessa kuvataan ostoehdotusten työnkulkua ja eri tiloja."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 6fb8bbc7340650341618f3a9613f4234ef1e9c04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b96a89bcabdaa3e3a3be3786dda15f9725f5a50d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kuvataan ostoehdotusten työnkulkua ja eri tiloja.
+Tässä aiheessa kuvataan ostoehdotusten työnkulkua ja eri tiloja.
 
 Voit luoda ostoehdotuksia organisaatiosi käyttämille tuotteille riippuen siitä, kuinka organisaatiosi on asetettu. Ostoehdotus on sisäinen asiakirja, joka valtuuttaa hankintaosaston ostamaan nimikkeitä tai palveluita.  
 
@@ -70,7 +70,7 @@ Ostoehdotuksen yleinen tila määritetään ostoehdotusrivien tilan mukaan. Siis
 <tr class="odd">
 <td>Luonnos</td>
 <td>Luonnos</td>
-<td>Ostoehdotus ja ostoehdotusrivi on luotu, mutta niitä ei ole lähetetty tarkastettavaksi. Ostoehdotukset ja ostoehdotusrivit, joiden tila on <strong>Luonnos</strong> ovat muokattavissa. Ostotilauksen tai ostotilausrivin tilana on <strong>Luonnos</strong> myös, jos se on peruutettu, muttei vielä uudelleenlähetetty tarkistettavaksi. <strong>Huomautus:</strong> Ostoehdotuksen voi lähettää tai peruuttaa asiakirjatasolla. Ei voi kuitenkaan lähettää tai peruuttaa yksittäistä ostoehdotusriviä.</td>
+<td>Ostoehdotus ja ostoehdotusrivi on luotu, mutta niitä ei ole lähetetty tarkastettavaksi. Ostoehdotuksia ja ostoehdotusrivejä, joiden tila on <strong>Luonnos</strong>, voi muokata. Ostoehdotuksen tai ostoehdotusrivin tila voi olla <strong>Luonnos</strong> myös silloin, kun se on peruutettu mutta sitä ei ole lähetetty tarkistettavaksi. <strong>Huomautus:</strong> Voit lähettää tai peruuttaa ostoehdotuksen asiakirjatasolla. Ei voi kuitenkaan lähettää tai peruuttaa yksittäistä ostoehdotusriviä.</td>
 </tr>
 <tr class="even">
 <td>Tarkistuksessa</td>
@@ -111,7 +111,7 @@ Jos lähetät hylätyn ostoehdotusrivin uudelleen, tarkistusprosessi käynnistyy
 <tr class="odd">
 <td>Peruutettu</td>
 <td>Peruutettu</td>
-<td>Ostoehdotus ja kaikki ostoehdotusrivit on peruutettu. <strong>Huomautus:</strong> Jos ostoehdotusrivillä on nimike, jota ei enää tarvita, ostoehdotusrivi on peruutettava jos se on jo hyväksytty. Ainoastaan hyväksytyt ostoehdotusrivit on mahdollista peruuttaa. Jos yksikään ostoehdotusrivi on vielä tarkistettavana, ostoehdotuksen yleinen tila on <strong>Tarkistettavana</strong>. Tässä tapauksessa voit peruuttaa ostoehdotuksen ja poistaa haluamasi ostoehdotusrivin.</td>
+<td>Ostoehdotus ja kaikki ostoehdotusrivit on peruutettu. <strong>Huomautus:</strong> Jos et enää tarvitse ostoehdotusrivillä olevaa nimikettä, ostoehdotusrivi on peruutettava, jos se on jo hyväksytty. Ainoastaan hyväksytyt ostoehdotusrivit on mahdollista peruuttaa. Jos yksikään ostoehdotusrivi on vielä tarkistettavana, ostoehdotuksen yleinen tila on <strong>Tarkistettavana</strong>. Tässä tapauksessa voit peruuttaa ostoehdotuksen ja poistaa haluamasi ostoehdotusrivin.</td>
 </tr>
 <tr class="even">
 <td>Suljettu</td>

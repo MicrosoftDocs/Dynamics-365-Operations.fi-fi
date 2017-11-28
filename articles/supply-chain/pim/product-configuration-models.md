@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c222f0d17be6eea0f776f5460c793b82d8b3e0ab
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 6b896c28f475a8f827a1db1b6dd684b6ec64e872
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -138,7 +138,7 @@ Voit tarkastella <strong>Vapautetun tuotteen tiedot</strong> -sivun <strong>Ylei
 </tr>
 <tr class="odd">
 <td>Käyttäjän vaatimukset</td>
-<td>Käyttäjän vaatimukset kuvaavat abstraktiota käyttäjän vaatimusten ja tiettyjen komponenttien ja määritteiden välillä. Et voi yhdistää käyttäjän vaatimusta nimikkeeseen. Esimerkiksi asiakas ostaa kotiteatterijärjestelmää. Myyntiedustaja saattaa kysyä huoneen kokoa johon asiakas asentaa järjestelmän määrittääkseen kuinka monta wattia vaaditaan. Tässä esimerkiksi huoneen koko voi olla käyttäjän vaatimus, joka auttaa määrittämään tietylle komponentille sopivan määritearvon. Voit piilottaa käyttäjän vaatimukset siten, että käyttäjä ei näe niitä määritysistunnon aikana. Myös käyttäjän vaatimukseen liittyvät määritteet, alikomponentit ja käyttäjän vaatimukset piilotetaan. Voit kirjoittaa ehdon, joka hallitsee voidaanko käyttäjän vaatimus piilottaa. Ehto kirjoitetaan OML (Optimization Modeling Language) -syntaksina.</td>
+<td>Käyttäjän vaatimukset kuvaavat abstraktiota käyttäjän vaatimusten ja tiettyjen komponenttien ja määritteiden välillä. Et voi yhdistää käyttäjän vaatimusta nimikkeeseen. Esimerkiksi asiakas ostaa kotiteatterijärjestelmää. Myyntiedustaja saattaa kysyä huoneen kokoa johon asiakas asentaa järjestelmän määrittääkseen kuinka monta wattia vaaditaan. Tässä esimerkissä huoneen koko voi olla käyttäjän vaatimus, joka auttaa määrittämään sopivan määritearvon tietylle komponentille. Voit piilottaa käyttäjän vaatimukset siten, että niitä ei näytetä käyttäjälle tuotemääritysistunnon aikana. Myös käyttäjän vaatimukseen liittyvät määritteet, alikomponentit ja käyttäjän vaatimukset piilotetaan. Voit kirjoittaa ehdon, joka hallitsee voidaanko käyttäjän vaatimus piilottaa. Ehto kirjoitetaan OML (Optimization Modeling Language) -syntaksina.</td>
 </tr>
 <tr class="even">
 <td>Tuoterakenteen rivit</td>

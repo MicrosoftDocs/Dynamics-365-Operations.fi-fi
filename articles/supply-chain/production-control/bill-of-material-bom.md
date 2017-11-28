@@ -1,9 +1,9 @@
 ---
 title: Tuoterakenteet ja kaavat
-description: "Tässä artikkelissa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää. Tuoterakenteet ja kaavat määrittävät tietyn tuotteen tarvittavat materiaalit tai ainesosat. Kaavoissa on myös oheis- ja sivutuotteita, jotka vastaanotetaan tietyn tuotannon yhteydessä."
+description: "Tässä ohjeaiheessa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19331
 ms.assetid: c19b437a-2de2-4728-9477-2bcb0c2b1f5e
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3137d93dd91ec3e58937e97bdddb5ca51ec4084c
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 430e2ab0c4438222ceb9102c011940af803acfbc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää. Tuoterakenteet ja kaavat määrittävät tietyn tuotteen tarvittavat materiaalit tai ainesosat. Kaavoissa on myös oheis- ja sivutuotteita, jotka vastaanotetaan tietyn tuotannon yhteydessä. 
+Tässä ohjeaiheessa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää. Tuoterakenteet ja kaavat määrittävät tietyn tuotteen tarvittavat materiaalit tai ainesosat. Kaavoissa on myös oheis- ja sivutuotteita, jotka vastaanotetaan tietyn tuotannon yhteydessä. 
 
 <a name="bills-of-materials"></a>Tuoterakenteet
 ------------------
@@ -62,7 +62,7 @@ Tuotteen elinaikana monentyyppisiä tuoterakenteita voidaan luoda monista syist�
 -   **Tuotannon tuoterakenne** – tätä tuoterakennetta käytetään yleensä kun suunnitellaan tuotteita, jotka perustuvat jo olemassa oleviin tuoteportfolioihin. Tuotannon tuoterakenteet on muodostettu yksinkertaistamaan suunnitteluprosessia ja ryhmittämään monimutkaisia tuotteita tuotannon moduuleihin. Yksinkertaisille tuotteille voi ehkä olla mahdollista selvittää tuoterakenne varsinaiselle tuotantoprosessille. Kuitenkin, muita tuotteita varten, tekniikan tuoterakenne on muunnettava todelliseksi tuotannon tuoterakenteeksi. Tekniikan tuoterakenteet yleensä esitetään yleensä harhakuvina tuoterakenteen hierarkiassa. Vaikka tekniikan tuoterakenteita voidaan käyttää tuotannon toimien suunnitteluun ja suorittamiseen, tämä lähestymistapa voi aiheuttaa tehottomuutta, etenkin toistuvissa operaatioissa joissa luodaan useita tilauksia.
 -   **Suunnittelun tuoterakenne** – tätä tuoterakennetta käytetään tarvelaskentasuunnittelua varten. Komponenttien ja ainesosien kysyntä lasketaan valmiiden tuotteiden kysyntään perustuen. Kuten kustannuslaskennan tuoterakenteet, suunnittelun tuoterakenteet saattavat edustaa tiettyä materiaalien yhdistelmää, jota käytetään sinä aikakautena.
 -   **Tuotannon tuoterakenne** – tämä on se todellinen tuoterakenne, jota käytetään tietyssä tuotannossa. Tuotannon tuoterakenteen on otettava huomioon todelliset resurssit, joita käytetään tuotteen valmistuksessa. Luotaessa tuotantotilausta, erätilausta tai kanbania, tuoterakenteiden eri tasot, joita harhakuvat esittävät, tiivistyvät yhdelle tasolle ja ne jaetaan työvaiheisiin tilauksen ajalta.
--   **Hinnan tuoterakenne** - tätä tuoterakennetta käytetään laskemaan tuotteen arvioidut kustannukset. Esimerkiksi voit käyttää kustannuksen tuoterakennetta, kun standardikustannusta käytetään tai tietyn tuotteen suunnitellut arvioidut kustannukset lasketaan. Kustannuslaskennan tuoterakenteet voivat viitata materiaalien ja resurssien tiettyihin yhdistelmiin, jota on tarkoitus käyttää. Joten, voit käyttää kustannuksen tuoterakennetta luodaksesi kustannuslaskelmaversion tietylle kaudelle ja auttaaksesi välttämään eri aikoijen variansseja.
+-   **Hinnan tuoterakenne** – tätä tuoterakennetta käytetään tuotteen arvioitujen kustannusten laskemisessa. Esimerkiksi voit käyttää kustannuksen tuoterakennetta, kun standardikustannusta käytetään tai tietyn tuotteen suunnitellut arvioidut kustannukset lasketaan. Kustannuslaskennan tuoterakenteet voivat viitata materiaalien ja resurssien tiettyihin yhdistelmiin, jota on tarkoitus käyttää. Joten, voit käyttää kustannuksen tuoterakennetta luodaksesi kustannuslaskelmaversion tietylle kaudelle ja auttaaksesi välttämään eri aikoijen variansseja.
 
 Tuoterakenteen tyypit, joita käytetään toteuttamisessa, määräytyvät toteutuksen mukaan, sekä myös yritysskenaarioiden ja vaatimuksien mukaan. Yksinkertaisissa toteutuksissa, suunnittelun tuoterakenne, tuotannon tuoterakenne ja kulujen tuoterakenne voidaan mallintaa yhtenä tuoterakenteena. Ympäristöissä, joissa on usein teknisiä muutoksia ja useita vaihtoehtoisia reittejä, suurempi joukko tuoterakennetyyppejä todennäköisesti tarvitaan.
 

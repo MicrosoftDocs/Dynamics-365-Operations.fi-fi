@@ -1,9 +1,9 @@
 ---
 title: Manuaalisten oikaisujen tekeminen perusennusteeseen
-description: "Tässä artikkelissa kerrotaan, miten voit tehdä manuaalisia oikaisuja perusennusteeseen ja tarkastella ennusteen tietoja."
+description: "Tässä ohjeaiheessa kerrotaan, miten voit tehdä manuaalisia oikaisuja perusennusteeseen ja tarkastella ennusteen tietoja."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 218374cdb6b5588648422d97c04fb60f26e47ac7
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: dbc195da36d31e01400fe66a1c02ea49609400eb
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kerrotaan, miten voit tehdä manuaalisia oikaisuja perusennusteeseen ja tarkastella ennusteen tietoja. 
+Tässä ohjeaiheessa kerrotaan, miten voit tehdä manuaalisia oikaisuja perusennusteeseen ja tarkastella ennusteen tietoja. 
 
 Ennen kuin teet manuaalisia oikaisuja, on tärkeää, että ymmärrät muutamia eri sivujen konsepteja.
 
@@ -43,7 +43,7 @@ Ennen kuin teet manuaalisia oikaisuja, on tärkeää, että ymmärrät muutamia 
 -   Seuraavissa sarakkeissa näytetään ennustejaksot, joille ennuste on luotu. Kussakin sarakkeen otsikossa on sarakkeen näyttämä ennustejakson ensimmäinen päivä.
 -   Solujen arvot edustavat yhden nimikkeen, nimikkeen kohdistustunnuksen jne. ennustetta tälle nimenomaiselle ennustejaksolle.
 
-## <a name="forecast-aggregation-and-deaggregation"></a>Ennusteen koostaminen ja koosteen purkaminen
+## <a name="forecast-aggregation-and-de-aggregation"></a>Ennusteen koostaminen ja koosteen purkaminen
 Sivun alaotsikko näyttää ennusteen koostamisen tason. 
 
 Jos esimerkiksi sivun alaotsikko on **Yritys/Toimipaikka/Kohdistustunnus/Nimikkeen numero/Väri/Koko/Konfiguraatio/Tyyli**, ennusteen koostetta ei ole ja ennuste näytetään nimikkeen ja sen dimensioiden tasolla. Voit muuttaa koostetta **Muuta ennustedimensioita** -sivulla, jonka voit avata sovellusvalikosta. 

@@ -3,7 +3,7 @@ title: Sijainnin osittainen inventointi
 description: "Inventointisuunnitelmat ohjaavat varsinaista inventointia. Voit pyytää vain tiettyjen tuotteiden tai tuotevarianttien inventointia sen sijaan, että toimipaikan koko käytettävissä oleva varasto inventoitaisiin."
 author: perlynne
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 626b2f9f35b94124168adb7bb09c75a086d38a97
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 0e0f9d81f4d5943a89d8ac87776e05acb32cb8d9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -54,7 +54,7 @@ Tässä esimerkissä vain nimiketunnus A0001 on inventoitava varastossa 61.
 
 1.  Inventoinnille luodaan uusi työmalli. **Työrivin tauot** -asetus ryhmittelee inventointityörivit nimiketunnuksen mukaan. Tämän vuoksi luodussa inventointityössä on nimiketunnuskohtaiset rivit. Voit ryhmittää rivit myös tuotevarianttitunnuksen mukaan.
 2.  Luodaan uusi inventointisuunnitelma, joka viittaa juuri luotuun työmalliin. Inventointisuunnitelma sisältää kaikki varaston 61 sijainnit (**Valitse sijainnit** -kysely), joissa on varastossa nimiketunnusta A0001. Tiettyjen tuotteiden valinta on määritetty **Inventoinnin tuotevalinnat** -osassa.
-3.  Voit valita inventointisuunnitelman tuotteet valitsemalla **Tyhjät sijainnit** -kentässä **Älä sisällytä tyhjiä**. Kun inventointisuunnitelma käsitellään, nimiketunnuksen A0001 osittainen inventointityö luodaan. Varsinainen inventointiprosessi voidaan suorittaa käyttämällä ohjatun inventoinnin mobiililaitteen valikkovaihtoehtoa.
+3.  Voit valita inventointisuunnitelman tuotteet valitsemalla **Tyhjät sijainnit** -kentän arvoksi **Älä sisällytä tyhjiä**. Kun inventointisuunnitelma käsitellään, luodaan nimiketunnuksen A0001 osittainen inventointityö. Varsinainen inventointiprosessi voidaan suorittaa käyttämällä ohjatun inventoinnin mobiililaitteen valikkovaihtoehtoa.
 
 
 

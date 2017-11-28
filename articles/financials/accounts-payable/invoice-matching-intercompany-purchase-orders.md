@@ -3,7 +3,7 @@ title: "Laskujen täsmäytys ja konsernin sisäiset ostotilaukset"
 description: "Konsernin sisäisen kauppatapahtuman ostavan yrityksen asetukset on voitu määritettää siten, että käytössä on ostoreskontran laskujen täsmäytys. Tässä tapauksessa sekä konsernin sisäisen välisen kaupan että ostoreskontran laskujen täsmäytyksen kirjausvaatimusten on täytyttävä, ennen kuin konsernin sisäiset ostolaskut voidaan kirjata."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: affdffd5e73958788ed2a5a4959eea71024140ab
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -52,7 +52,7 @@ Konsernin sisäisen ostolaskun ja konsernin sisäisen myyntilaskun nettosummien 
 2.  Rekisteröi nimikkeet Fabrikam Salesissa vastaanotetuiksi ja kirjaa pakkausluettelo. Tilauksen ICSO888 tilaksi tulee Toimitettu. Tilauksen ICPO222 tilaksi tulee Vastaanotettu.
 3.  Päivitä tilauksen ICSO888 lasku Fabrikam Salesissa. Yksikköhinta on 0,45, ja päivitettäviä nimikkeitä on 100.
 4.  Luo tilauksen ICPO222 lasku Fabrikam Purchasessa. Muutat nettohinnan arvon 45,00 vahingossa arvoksi 54,00. Näyttöön tuleva kuvake ilmaisee, että hinta ylittää sallitun 2 prosentin hintatoleranssin.
-5.  Valitse Laskun täsmäytyksen tiedot -sivulla vaihtoehto, jolla hyväksytään täsmäytysristiriitojen kirjaaminen. Valitse Toimittajan laskun -sivulla OK. Jos toimittajan lasku ei ole konsernin sisäinen ostolasku, kirjaus onnistuu. Koska kuitenkin käsittelet konsernin sisäistä ostolaskua, kirjaus ei onnistu. Konsernin sisäisessä kaupassa konsernin sisäisen myyntilauksen laskusumman on oltava sama kuin vastaavan konsernin sisäisen ostotilauksen laskusumma. Ratkaise tämä ongelma korjaamalla laskun nettohinta muuttamalla nettohinta takaisin oletussummaan 45,00.
+5.  Valitse Laskun täsmäytyksen tiedot -sivulla vaihtoehto, jolla hyväksytään täsmäytysristiriitojen kirjaaminen. Valitse Toimittajan lasku -sivulla OK Jos toimittajan lasku ei ole konsernin sisäinen ostolasku, kirjaus onnistuu. Koska kuitenkin käsittelet konsernin sisäistä ostolaskua, kirjaus ei onnistu. Konsernin sisäisessä kaupassa konsernin sisäisen myyntilauksen laskusumman on oltava sama kuin vastaavan konsernin sisäisen ostotilauksen laskusumma. Ratkaise tämä ongelma korjaamalla laskun nettohinta muuttamalla nettohinta takaisin oletussummaan 45,00.
 
 ## <a name="example-quantity-matching-with-intercompany-trade"></a> Esimerkki: Määrän täsmäytys konsernin sisäisessä kaupassa
 Konsernin sisäisen ostotilauksen ja konsernin sisäisen myyntitilauksen määrän on oltava sama. Tämä vaatimus ohittaa sovellettavat laskun täsmäytyksen hyväksynnät. Tässä esimerkissä käytetään seuraavia konsernin sisäisen kaupan lisäasetuksia:

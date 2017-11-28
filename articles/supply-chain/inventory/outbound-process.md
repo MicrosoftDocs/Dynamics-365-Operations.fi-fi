@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 9c09a7bd314bb9005eb0b6c69d7cccad1c30cfdb
-ms.openlocfilehash: 7b395cab2184f8f9f3f50a7a595c6ed782645323
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1b8b17b719713097d77a117cca53eff6886ff1c7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Siirry kohtaan **Varastonhallinta** \> **Asetukset** \> **Varasto ja varastonhal
 
 [![Lopeta toimitustilaus -vaihtoehto](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-Joskus joitakin varastonimikkeitä ei voi keräillä keräysluetteloprosessissa. Näin voi tapahtua jos esimerkiksi varastotyöntekijä vähentää keräilyrivien määriä ja käsittelee sitten keräysluettelon. Jos **Lopeta toimitustilaus** -asetukseksi on määritetty **Kyllä**, jäljelle jäävät, keräilemättömät määrät raportoidaan takaisin tilaustasolle. Jos tämä asetus on **Ei**, keräilemättömät määrät pidetään avoimena toimitustilauksen määränä. Tässä tapauksessa määrät pysyvät vapautettuna varastossa, ja ne täytyy uuteen keräysluetteloon **Avoimet toimitustilaukset** -toiminnolla.
+Kun varastotyöntekijä vähentää keräysluettelon määriä, vastaavat varastotilauksen määrät poistetaan lähetyksestä. Kun keräysluettelo päivitetään tiettynä ajankohtana, jäljellä olevat määrät raportoidaan takaisin tilaukseen, jos **Lopeta toimitustilaus** -asetukseksi on määritetty **Kyllä**. Jos **Lopeta toimitustilaus** -asetukseksi on määritetty **Ei**, jäljellä olevat määrät säilytetään avoimen toimitustilauksen määränä. Ne on lisättävä uuteen keräysluetteloon **Avoimet toimitustilaukset** -toiminnon osana. 
 
 [![Avoimet toimitustilaukset -komento Toiminnot-valikossa](./media/open-output-order.png)](./media/open-output-order.png)
 

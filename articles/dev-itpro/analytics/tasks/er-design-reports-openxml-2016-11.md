@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 04def14ddf9b079005bf11acbcaf64b21aa80fdb
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 09789957839097ba2898544102af908c198090c7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 # <a name="design-a-configuration-for-generating-reports-in-openxml-format-for-electronic-reporting-er"></a>Konfiguraation suunnitteleminen raporttien luomiseksi OpenXML-muodossa sähköistä raportointia (ER) varten
@@ -34,8 +34,7 @@ Tässä esimerkissä luodaan konfiguraatio malliyritykselle Litware, Inc. Nämä
 
 
 
-Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista. Sinulla on myös oltava Excel-tiedosto, joka tuodaan mallia luotaessa. Tiedosto on saatavilla sijainnissa https://msdynamics.blob.core.windows.net/media/2016/04/SampleVendPaymWsReport.xlsx
-
+Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista. Lataa ja tallenna myös Microsoft Excel -tiedosto, [Maksuraportin malli](https://go.microsoft.com/fwlink/?linkid=862266). 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Lataa maksujen tietomallin konfiguraatio
 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.

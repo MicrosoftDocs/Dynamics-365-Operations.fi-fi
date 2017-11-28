@@ -1,16 +1,16 @@
 ---
-title: "Yleistä Ohjeesta"
-description: "Tämä artikkeli sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen."
+title: Ohjeen yleiskatsaus
+description: "Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen."
 author: margoc
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
@@ -18,18 +18,18 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
-ms.openlocfilehash: 2df27a23d31ecde99bb31b4f8a19295c331cae09
+ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
+ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/11/2017
 
 ---
 
-# <a name="help-overview"></a>Yleistä Ohjeesta
+# <a name="help-system-overview"></a>Ohjejärjestelmän yleiskatsaus
 
 [!include[banner](../includes/banner.md)]
 
-Tämä artikkeli sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen. 
+Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen. 
 
 > [!NOTE] 
 > Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations, Enterprise Edition; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
@@ -69,16 +69,17 @@ Sisältöä koskevista hauista esitetään paljon kysymyksiä. Jos aloitat sivus
 
 Voit etsiä sisältöä myös millä tahansa hakukoneella. Haku tuottaa parhaat tulokset, jos käytössä on sivustohaku, esimerkiksi site:docs.microsoft.com dynamics 365 "hakuehto"  
 
-![Sivustohaku](./media/site-search-1.png)
-
-![Sivustohaun tulokset](./media/site-search-results-2.png)
-
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com-sisällysluettelo
-Kaikilla tuotteilla on Docs-sivustossa sama sisällysluettelo, jonka avulla asiakkaat näkevät käyttämänsä ohjeaiheen kontekstin. Voit etsiä ohjeaiheita myös suodattamalla.
+Finance and Operations-, Retail- ja Talent-sovelluksella on sama sisällysluettelo, jonka avulla asiakkaat näkevät käyttämänsä ohjeaiheen kontekstin. Voit etsiä ohjeaiheita myös sisällysluettelon yläpuolella olevan suodatustoiminnon avulla.
 
-### <a name="how-can-i-contribute"></a>Miten voin vaikuttaa? 
+### <a name="follow-a-topic"></a>Noudata ohjeaihetta
+Voit seurata ohjeaihetta valitsemalla kommenttiruudun alla olevan +Seuraa-painikkeen. Käyttäjän on kirjauduttava, jotta ohjeaiheen seuraaminen onnistuu. Lisätietoja on kohdassa [Jätä kommentti](#leave-us-a-comment).  
 
-Jätä kommentti. 
+### <a name="give-feedback"></a>Palautteen antaminen 
+Toivomme saavamme asiakaspalautetta. GitHubin avulla voit lähettää kommentteja tai ehdottaa muutoksia sisältöön.
+
+##### <a name="leave-us-a-comment"></a>Jätä kommentti 
+Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.  
 
 1 Valitse **Kommentit**, kun haluat hakea kommentit sivun alaosasta.
 
@@ -96,6 +97,19 @@ Tai
 Syötä oikealle sähköpostiosoite ja uusi salasana, kun haluat luoda sivustolle uuden tilin. 
 
 ![Kirjautumisasetukset](./media/signin-options.png)
+
+
+##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Sisällön muutoksen tai lisäyksen ehdottaminen GitHubin kautta
+Voit ehdottaa muutosta, jos sinulla on GitHub-tili ja jos allekirjoitat osallistujan käyttöoikeussopimuksen.  Tarkistamme ehdottamasi muutokset pull-pyynnön lähettämisen jälkeen. Tarvittaessa käsittelemme ehdotuksiasi sisäisesti ja otamme sinuun yhteyttä.  
+
+Voit aloittaa valitsemalla ohjeaiheen **Muokkaa** (kynä) -painikkeen tai siirtymällä tietosäilöön osoitteessa https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+
+Lisätietoja on osallistujan oppaassa osoitteessa https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+
+
+> [!NOTE]
+> Tällä hetkellä otamme mukaan osallistujia vain englanninkielisiin tietosäilöihin.  
+> Emme ota huomioon GitHubin kautta raportoituja ongelma. Varmista, että käytät pull-pyyntöä sisältöehdotuksiin. Tuotteisiin ja ominaisuuksiin liittyvää palautetta kannattaa käsitellä Dynamics 365:n ideaportaalissa: https://ideas.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Tehtäväoppaat
@@ -196,9 +210,4 @@ Seuraavassa taulussa on sivustoluettelo. Sisältösivustomme on järjestetty tuk
 [*Uudet tai päivitetyt tehtävän ohjaukset (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
 [Uudet tai päivitetyt tehtävän ohjaukset (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
 [Uudet tehtävän ohjaukset (helmikuu 2016)](new-task-guides-available-february-2016.md)
-
-
-
-
-
 

@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fbe32e248727912073631f1dfb8ee0a49cbf0a5e
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -36,9 +36,8 @@ Määritä myyntireskontra ja luotonvalvonta, kun haluat seurata laskuja ja asia
 Voit määrittää muun muassa asiakasryhmiä, asiakkaita, kirjausprofiileja, eri maksutapoja, korkolaskuja, maksukehotuksia, provisioita, asiakkaisiin liittyviä parametreja, kuluja, toimituksia ja kohteita, vekseleitä sekä muita myyntireskontran ja luotonvalvonnan tietoja.
 Seuraavassa taulukossa on luettelo sivuista, jotka tukevat myyntireskontran ja luotonvalvonnan määrittämistä ja ylläpitoa. Taulukon kohteet on järjestetty ensin tehtävän ja sitten sivun nimen mukaan.
 
-| ![Huomautus](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Huomautus")**Huomautus**          |
-|--------------------------------------------------------------------------------------------------|
-| Joillekin sivulle siirtyminen edellyttää tietoja tai parametriasetuksia. |
+> [!NOTE]
+> Et voi siirtyä seuraavassa taulukossa muille sivuille, jos tietojen tai parametrien asetuksia ei ole syötetty muille sivuille.
 
 | Tehtävä                                                 | Sivun nimi                            | Käyttö                                                                                                                                                                                                                                                                             |
 |------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

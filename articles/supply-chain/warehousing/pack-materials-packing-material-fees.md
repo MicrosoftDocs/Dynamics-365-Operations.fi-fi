@@ -3,7 +3,7 @@ title: Pakkausmateriaalit ja maksut
 description: "Pakkausmateriaalimaksuja maksetaan kierrätysyritykselle säännöllisin väliajoin. Maksuna peritään tietty summa kunkin pakkausyksikköön kuuluvan materiaalin painoyksikköä kohden. Pakkausmateriaalimaksut lasketaan ja raportoidaan, mutta niistä ei kirjata kirjanpitotapahtumia, koska niitä ei käsitellä viranomaiselle maksettavana verona."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d7cd7b3d60e9c265a766695b53d8d27ee2a8d0a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,7 +56,7 @@ Kun myyntitilausrivi luodaan, järjestelmä tarkistaa, onko nimikkeelle määrit
 ## <a name="packing-units-on-purchase-order-lines"></a>Ostotilausrivien pakkausyksiköt
 Järjestelmä ei luo ostotilausrivin pakkausmateriaalitapahtumia. Voit luoda laskutettuja ostontilausrivien tapahtumia manuaalisesti **Pakkausmateriaalitapahtumat**-sivulla.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Asiakkaan pakkausmateriaalimaksun lupanumeroiden määrittäminen
+## <a name="set-up-customer-packaging-material-fee-license-numbers"></a>Asiakkaan pakkausmateriaalimaksun lupanumeroiden määrittäminen
 Jos asiakkaat maksavat pakkausmateriaalimaksuja, määritä asiakkaan pakkausmateriaalimaksun lupanumerot **Asiakkaat**-sivulla. Kun asiakkaan lupanumero on määritetty, pakkausmateriaalimaksujen laskeminen tapahtuu automaattisesti myyntitilausten laskutuksen yhteydessä. Laskutuksen jälkeen **Pakkausmateriaalitapahtumat**-sivun **Laske maksu** -valintaruudun valinta poistetaan, koska raporttia ei tarvitse laskea eikä tulostaa. Voit tulostaa pakkausmateriaalin painon laskuun ja ilmoittaa asiakkaille, että he maksavat maksut. 
 
 Jos työnantajasi maksaa pakkausmateriaalimaksut, älä määritä asiakkaiden lupanumeroita. Laskutuksen jälkeen **Laske maksu** -valintaruutu valitaan **Pakkausmateriaalitapahtumat**-sivulla. Tämä ilmaisee, että maksut lasketaan, kun raportti luodaan. Voit tulostaa painot laskuun ja ilmoittaa, että yrityksesi maksaa palkkiot.

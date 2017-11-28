@@ -1,9 +1,9 @@
 ---
 title: "Kolmisuuntaiset vastaavuuskäytännöt"
-description: "Tässä artikkelissa on esimerkkejä kolmisuuntaisesta vastaavuudesta."
+description: "Tässä ohjeaiheessa on esimerkkejä kolmisuuntaisesta vastaavuudesta."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: bc53df6b994c0d2e490e8823a53478f2ad04e163
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: da3099a07e3084bf49d03e0f4d421aebe9b39940
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on esimerkkejä kolmisuuntaisesta vastaavuudesta.
+Tässä ohjeaiheessa on esimerkkejä kolmisuuntaisesta vastaavuudesta.
 
 <a name="example-three-way-matching-for-items"></a>Esimerkki: Kolmisuuntainen vastaavuus nimikkeille
 -------------------------------------
@@ -65,7 +65,7 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 1.  Sammy, Fabrikamin vastaanotto-osaston työntekijä vastaanottaa Contoson konetoimituksen kokonaismäärän. Hän syöttää määräksi 5 tuotteen vastaanotossa. Koska ostotilaus on vastaanotettu kokonaisuudessaan, sen tilaksi muuttuu Vastaanotettu.
 2.  Fabrikamin ostoreskontravastaava April kirjaa ja vahvistaa Contoson lähettämän laskun. Hän vahvistaa seuraavat tiedot:
     -   Nimikkeille, joiden vaatimuksena on kolmisuuntainen vastaavuus, laskurivin määrä vastaa vastaanotettua määrää. Vastaanotettu määrä näkyy laskuun kohdistetussa tuotteen vastaanotossa.
-    -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Microsoft Dynamics 365 for Finance and Operations Enterprise editionissa asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
+    -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Microsoft Dynamics 365 for Finance and Operations, Enterprise editionissa asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
         -   Nettoyksikköhinnan täsmäytys – Laskurivin nettoyksikköhinta vastaa ostotilausrivin nettoyksikköhintaa toleranssiprosentin rajoissa. Tässä esimerkissä nettoyksikköhinnan hintatoleranssi on +8 %.
         -   Kokonaishinnan täsmäytys – Laskurivin nettohinta vastaa ostotilausrivin nettohintaa toleranssiprosentin, -summan tai molempien rajoissa. Tässä esimerkissä nettohinnan hintatoleranssi on +15 %.
 
