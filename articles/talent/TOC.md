@@ -2,6 +2,8 @@
 
 # [Aloittaminen](talent-get-started.md)
 ## [Järjestelmävaatimukset ja päivityskäytäntö](talent-versions-update-policy.md)
+## [Microsoft Dynamics 365 for Talentin valmisteleminen](provisioning-talent.md)
+## [Talent-toimintojen laajentaminen](extend-talent-functionality.md)
 
 # [Henkilöstöhallinnon strategian kehittäminen](departments-jobs-positions.md)
 ## [Työosien määrittäminen](create-job.md)

@@ -10,6 +10,7 @@
 ##### [Pilvikäyttöönottojen järjestelmävaatimukset](get-started/system-requirements.md)
 ##### [Paikallinen käyttöönotto](../dev-itpro/deployment/on-premises-deployment-landing-page.md)
 ##### [Paikallisten käyttöönottojen järjestelmävaatimukset](get-started/system-requirements-on-prem.md)
+##### [Paikallisten käyttöönottojen varastointi](../dev-itpro/deployment/warehousing-for-on-premise-deployments.md)
 
 #### Finance and Operationsin ostaminen
 ##### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
@@ -20,8 +21,9 @@
 #### [AX 2012 -ominaisuudet, joita on lykätty](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa](get-started/features-not-implemented-on-prem.md)
 #### [Käyttöikäkäytäntö](../dev-itpro/migration-upgrade/versions-update-policy.md)
-#### [Ympäristön update 11 (lokakuu 2017)](get-started/whats-new-platform-update-11.md)
-#### [Ympäristön update 10 (elokuu 2017)](get-started/whats-new-platform-update-10.md)
+#### [Ympäristön päivitys 12 (marraskuu 2017)](get-started/whats-new-platform-update-12.md)
+#### [Ympäristön päivitys 11 (lokakuu 2017)](get-started/whats-new-platform-update-11.md)
+#### [Ympäristön päivitys 10 (elokuu 2017)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations Enterprise Edition (heinäkuu 2017)](get-started/whats-new-application-July-2017-update.md)
 #### [Ympäristön päivitys 9 (heinäkuu 2017)](get-started/whats-new-platform-update-9.md)
 #### [Ympäristön päivitys 8 (kesäkuu 2017)](get-started/whats-new-platform-update-8.md)
@@ -42,6 +44,7 @@
 ##### [Helmikuun 2016 tehtäväoppaat](get-started/new-task-guides-available-february-2016.md)
 
 ### Käyttöliittymään tutustuminen
+#### [Helppokäyttötoiminnot](get-started/accessibility-features.md)
 #### [Asiakaskäyttöliittymä – usein kysytyt kysymykset](get-started/client-faq.md)
 #### [Toimintohaku](get-started/action-search.md)
 #### [Suodatuksen ja kyselysyntaksin lisäasetukset](get-started/advanced-filtering-query-options.md)
@@ -54,9 +57,9 @@
 #### [Tietojen etsiminen hakujen avulla](get-started/use-lookups-to-find-information.md)
 #### [Istunnon päivämäärän muuttaminen](organization-administration/tasks/change-date-session.md)
 #### [Käyttäjän ensisijaisen aikavyöhykkeen asettaminen](organization-administration/tasks/set-users-preferred-time-zone.md)
-#### [Lifecycle Servicesin ymmärtäminen](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
+#### [Lifecycle Servicesiin tutustuminen](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
-### Ohjeet ja tuki
+### Dokumentaation lukeminen ja suorittaminen
 #### [Ohjeen yleiskatsaus](get-started/help-overview.md)
 #### [Yhdistämisen ohje](get-started/help-connect.md)
 #### [Kenttäkuvausten näyttäminen ja vienti](get-started/view-export-field-descriptions.md)
@@ -152,17 +155,21 @@
 
 #### [Tietojen integrointi Common Data Service -palvelua käyttäen](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Myyntimahdollisuudesta maksutapahtumaan -skenaarion määrittäminen](../supply-chain/sales-marketing/prospect-to-cash.md)
-###### [Finance and Operationsin tuotteiden synkronointi Salesin tuotteisiin](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [Salesin asiakkaiden synkronointi Finance and Operationsin asiakkaisiin](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [Salesin yhteyshenkilöiden synkronointi Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [Myyntitarjouksien otsikoiden ja rivien synkronointi Salesista Finance and Operationsiin](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [Myyntitilauksien otsikoiden ja rivien synkronointi Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [Myyntilaskujen otsikoiden ja rivien synkronointi Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-###### [Salesin asiakkaiden synkronointi suoraan Finance and Operationsin asiakkaisiin](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-###### [Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-###### [Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Myyntitilauksien otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Tilien ylläpito Salesissa ja tilien synkronointi suoraan Salesista Finance and Operationsiin](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Tuotteiden ylläpito Finance and Operationsissa ja synkronointi suoraan Salesiin](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Salesin yhteyshenkilöiden ylläpito ja synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+###### [Myyntitarjouksien synkronointi suoraan Salesista Finance and Operationsiin](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Myyntitilausten synkronointi suoraan Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+###### [Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Myyntilaskun synkronointi suoraan Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Tilien ylläpito Salesissa ja niiden synkronointi Finance and Operationsiin](../supply-chain/sales-marketing/accounts-template-mapping.md)
+###### [Yhteyshenkilöiden ylläpito Salesissa ja niiden synkronointi Finance and Operationsiin](../supply-chain/sales-marketing/contacts-template-mapping.md)
+###### [Tuotteiden ylläpito Finance and Operationsissa ja niiden synkronointi Salesiin](../supply-chain/sales-marketing/products-template-mapping.md)
+###### [Myyntitarjousten luominen Salesissa ja niiden synkronointi Finance and Operationsiin](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+###### [Myyntitilausten luominen Finance and Operationsissa ja niiden synkronointi Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+###### [Myyntilaskujen luominen Finance and Operationsissa ja niiden synkronointi Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+
+
 
 #### [Ulkoisten verkkopalveluiden kuluttaminen](../dev-itpro/data-entities/consume-external-web-service.md)
 
@@ -894,6 +901,7 @@
 ##### [Mustan listan raportti](../financials/localizations/emea-ita-black-list-report.md)
 ##### [Ennakonpidätyspäivämäärä](../financials/localizations/emea-ita-competence-date.md)
 ##### [Käyttöomaisuuden poisto](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Pakkausluettelon päivämäärän tarkastus laskuissa](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
 ##### [Arvonlisäverokirjat](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Julkishallinnon kirjoittamien laskujen jaettu maksu](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
@@ -1347,7 +1355,29 @@
 ### [Varastodimensiokohtaisen juoksevan keskimääräisen kustannuksen seuranta](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 
 
-## Pääsuunnittelu
+## [Pääsuunnittelu](../supply-chain/master-planning/master-planning-home-page.md)
+### [Pääsuunnitelma](../supply-chain/master-planning/master-plans.md)
+#### [Kattavuusasetukset](../supply-chain/master-planning/coverage-settings.md)
+#### [Nimikkeiden kattavuussääntöjen määrittäminen (tehtäväopas)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
+#### [Rajoitetun suunnitelman luominen (tehtäväopas)](../supply-chain/master-planning/tasks/constrained-plan.md)
+#### [Oheistuotteiden materiaalisuunnitelman luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
+#### [Suunniteltujen tilausten ylläpito](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Viiveiden käsittely](../supply-chain/master-planning/delays.md)
+#### [Hajotuksen jäljitys](../supply-chain/master-planning/trace-explosion.md)
+#### [Toimenpidesanomat](../supply-chain/master-planning/action-messages.md)
+#### [Pääsuunnitteluajon valvonta (tehtäväopas)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
+#### [Toimipaikan aikataulun luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-schedule-site.md)
+#### [Toimipaikan suunnitelman luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-plan-site.md)
+#### [Pääsuunnitelmat ja multisite-toiminnot](../supply-chain/master-planning/master-plan-multisite-functionality.md)
+##### [Toimipaikan kattavuuden suunnittelu, varasto pakollinen](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
+##### [Toimipaikan kattavuuden suunnittelu, varasto ei ole pakollinen](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
+##### [Toimipaikan ja varaston kattavuuden suunnittelu, varasto pakollinen](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+##### [Toimipaikan ja varaston kattavuuden suunnittelu, varasto ei ole pakollinen](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+##### [Tuoterakenneversion määrittäminen](../supply-chain/master-planning/master-plan-bom-version-determined.md)
+##### [Hajotettu tuoterakenneversio](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
+#### [Konsernin sisäisen suunnitelman luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
+#### [Lähtevän suunnitellun konsernin sisäisen kysynnän näyttäminen (tehtäväopas)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
+#### [Yhteistyö sisäisen toimitusketjun asiakkaiden kanssa (tehtäväopas)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 ### [Kysynnän ennuste](../supply-chain/master-planning/introduction-demand-forecasting.md)
 #### [Kysynnän ennusteen määrittäminen](../supply-chain/master-planning/demand-forecasting-setup.md)
 #### [Kysynnän ennusteiden historiatietojen tuonti](../supply-chain/master-planning/import-historical-data.md)
@@ -1359,29 +1389,6 @@
 #### [Vähennysavaimet](../supply-chain/master-planning/reduction-keys.md)
 #### [Perusennusteen luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-baseline-forecast.md)
 #### [Ennusteen manuaalinen muuttaminen (tehtäväopas)](../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md)
-
-### [Pääsuunnitelma](../supply-chain/master-planning/master-plans.md)
-#### [Kattavuusasetukset](../supply-chain/master-planning/coverage-settings.md)
-#### [Suunniteltujen tilausten ylläpito](../supply-chain/master-planning/maintain-planned-orders.md)
-#### [Viiveet](../supply-chain/master-planning/delays.md)
-#### [Toimenpidesanomat](../supply-chain/master-planning/action-messages.md)
-#### [Hajotuksen jäljitys](../supply-chain/master-planning/trace-explosion.md)
-#### [Pääsuunnitelmat ja multisite-toiminnot](../supply-chain/master-planning/master-plan-multisite-functionality.md)
-##### [Toimipaikan kattavuuden suunnittelu, varasto pakollinen](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
-##### [Toimipaikan kattavuuden suunnittelu, varasto ei ole pakollinen](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
-##### [Toimipaikan ja varaston kattavuuden suunnittelu, varasto pakollinen](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-##### [Toimipaikan ja varaston kattavuuden suunnittelu, varasto ei ole pakollinen](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-##### [Tuoterakenneversion määrittäminen](../supply-chain/master-planning/master-plan-bom-version-determined.md)
-##### [Hajotettu tuoterakenneversio](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
-#### [Pääsuunnitteluajon valvonta (tehtäväopas)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
-#### [Nimikkeiden kattavuussääntöjen määrittäminen (tehtäväopas)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
-#### [Toimipaikan suunnitelman luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-plan-site.md)
-#### [Toimipaikan aikataulun luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-schedule-site.md)
-#### [Rajoitetun suunnitelman luominen (tehtäväopas)](../supply-chain/master-planning/tasks/constrained-plan.md)
-#### [Konsernin sisäisen suunnitelman luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
-#### [Oheistuotteiden materiaalisuunnitelman luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
-#### [Lähtevän suunnitellun konsernin sisäisen kysynnän näyttäminen (tehtäväopas)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
-#### [Yhteistyö sisäisen toimitusketjun asiakkaiden kanssa (tehtäväopas)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 
 
 ## [Mobiilisovellus](../dev-itpro/mobile-apps/Mobile-app-home-page.md)
@@ -1851,9 +1858,9 @@
 #### [Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten](../supply-chain/warehousing/tasks/set-up-short-picking-item-reallocation.md)
 #### [Määritä varaston työkäytännöt](../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md)
 #### [Määritä työmalli ostotilauksia varten](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
-#### [Suunnittele kuormat ja lähetykset kuormasuunnittelun työtilassa](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
+#### [Kuormien ja lähetysten suunnittelu kuormasuunnittelun työtilassa](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 
-# [Kehittäminen ja hallinta](../dev-itpro/toc.md)
+# [Finance and Operationsin kehittäminen ja hallinta](../dev-itpro/toc.md)
 
 # [Dynamics 365 for Retail](../retail/toc.md)
 
