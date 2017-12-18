@@ -122,8 +122,9 @@
 #### [Valintalistan arvon lisääminen](extensibility/add-enum-value.md)
 #### [Laajennetun tietotyypin muokkaaminen](extensibility/modify-edt.md) 
 #### [Rekisteröi valmiiden menetelmien aliluokkia](extensibility/register-subclass-factory-methods.md)
-#### [Vastaa kohteen EventHandlerResult avulla](extensibility/respond-event-handler-result.md)
+#### [Vastaaminen kohteen EventHandlerResult avulla](extensibility/respond-event-handler-result.md)
 #### [RunBase-luokan laajentaminen](extensibility/extend-runbase-class.md)
+#### [Sovelluksen käynnistyksen mukauttaminen valtuutettujen viittausten avulla](extensibility/startup-customizations.md)
 #### [Aiemmin luodun taulun kentän muokkaaminen](extensibility/modify-existing-field.md)
 #### [Lisää uusi kenttä aiemmin luotuun tauluun](extensibility/add-field-extension.md)
 #### [Lisää indeksi aiemmin luotuun tauluun](extensibility/add-index.md)
@@ -505,10 +506,12 @@
 ### [Asennus ja käyttöönotto paikallisissa ympäristöissä](deployment/setup-deploy-on-premises-environments.md)
 ### [Mukautettujen mallien kehittäminen ja käyttöönottaminen paikallisissa ympäristöissä](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Päivitysten soveltaminen paikalliseen käyttöönottoon](deployment/apply-updates-on-premises.md)
+### [Paikallisen käyttöönoton ottaminen uudelleen käyttöön](deployment/redeploy-on-prem.md)
+### [Paikallisen Dynamics 365 for Finance and Operations, Enterprise Editionin vianmääritys](deployment/troubleshoot-on-prem.md)
 
 ## Mukautetun koodin käyttöönottaminen
 ### [Käyttöönotettavan paketin luominen](deployment/create-apply-deployable-package.md)
-### [Käyttöönotettavan paketin käyttäminen](deployment/apply-deployable-package-system.md)
+### [Päivitysten ottaminen käyttöön pilviympäristölle](deployment/apply-deployable-package-system.md)
 ### [Käyttöönotettavan paketin asentaminen](deployment/install-deployable-package.md)
 ### [Pakettisovelluksen vianmääritys](deployment/deployable-package-troubleshooting.md)
 
@@ -541,14 +544,16 @@
 ### [Mallien välisten riippuvuuksien ratkaisu valtuutettujen viittausten avulla](migration-upgrade/delegates-migration.md)
 
 
-## Päivitys viimeisimpään päivitykseen
+## Päivittäminen viimeisimpään päivitykseen
 ### [Uusinta päivitystä koskeva päivitysprosessi](migration-upgrade/upgrade-latest-update.md)
 ### [Käyttöikäkäytäntö](migration-upgrade/versions-update-policy.md)
-### [Viimeisimpään ympäristöpäivitykseen päivittäminen](migration-upgrade/upgrade-latest-platform-update.md)
+### [Uusimman ympäristöpäivityksen ottaminen käyttöön ympäristölle](migration-upgrade/upgrade-latest-platform-update.md)
 ### [Dynamics-ympäristön päivittäminen elokuun 2016 julkaisuun](migration-upgrade/update-platform-each-release.md)
 ### [Eristysympäristön päivittäminen](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Tietojen päivittäminen kehitys- tai esittely-ympäristössä](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Kehitystyökalujen päivittäminen](dev-tools/update-development-tools.md)
+### [Päivitysten soveltaminen paikalliseen käyttöönottoon](deployment/apply-updates-on-premises.md)
+### [Paikallisen käyttöönoton ottaminen uudelleen käyttöön](deployment/redeploy-on-prem.md)
 
 ## Hotfix-korjaukset ja ylläpito
 ### [Hotfix-korjausten lataaminen Lifecycle Servicesistä](migration-upgrade/download-hotfix-lcs.md)
@@ -563,9 +568,10 @@
 ## [Ympäristön kuukausipäivitysten usein kysytyt kysymykset](sysadmin/faq-platform-monthly-updates.md)
 ## [Linkkien lisääminen organisaation juridisiin ehtoihin ja tietosuojatietoihin](sysadmin/legal-terms-privacy-statement.md)
 ## [Käyttöoikeuskoodien ja määritysavainten raportti](sysadmin/license-codes-configuration-keys-report.md)
-## [Yritystenvälinen tietojen jakaminen](sysadmin/cross-company-data-sharing.md)
+## [Yritysten välinen tietojen jakaminen](sysadmin/cross-company-data-sharing.md)
 ## [Ylläpitotila](sysadmin/maintenance-mode.md)
 ## [Esimääritetyt järjestelmätilit](sysadmin/pre-configured-system-accounts.md)
+## [Yritysten välisten käyttäjien vieminen Azure AD:hen](sysadmin/implement-b2b.md)
 ## [Rooliperustainen tietoturva](sysadmin/role-based-security.md)
 ### [Tietoturva-arkkitehtuuri](sysadmin/security-architecture.md)
 ### [Tietoturvaraportit](sysadmin/security-reports.md)
