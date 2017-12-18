@@ -180,11 +180,11 @@
 
 ## Käyttöönotto ja hotfix-korjaukset
 ### [Retail-vähittäismyyntilaitteen yleiskatsaus](dev-itpro/retail-store-system-begin.md)
-#### [Retail-vähittäismyyntilaitteen määritykset ja asentaminen](dev-itpro/retail-store-scale-unit-configuration-installation.md)
+### [Retail-vähittäismyyntilaitteen määritykset ja asentaminen](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Retail Modern POS:n määritykset ja asentaminen](retail-modern-pos-device-activation.md)
-#### [Retail-tilien ja laitteiden hallinta pääkonttorista](set-up-activation-accounts-validate-devices-hq.md)
-#### [Retail POS -laitteen aktivointi](dev-itpro/retail-device-activation.md)
-#### [Retail Cloud POS -myyntipisteen suojaaminen](dev-itpro/secure-retail-cloud-pos.md)
+### [Retail-tilien ja laitteiden hallinta pääkonttorista](set-up-activation-accounts-validate-devices-hq.md)
+### [Retail POS -laitteen aktivointi](dev-itpro/retail-device-activation.md)
+### [Retail Cloud POS -myyntipisteen suojaaminen](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Stationin määritykset ja asentaminen](retail-hardware-station-configuration-installation.md)
 ### [Retail-itsepalvelukomponenttien joukkokäyttöönotto](dev-itpro/retail-mass-deployment.md)
 ### [Retail-komponenttien diagnostiikka- ja vianmääritystapahtumat](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
@@ -194,48 +194,52 @@
 ### [Päivityksen ja N-1-tuen yleiskatsaus](dev-itpro/overview-upgrade-n-minus1.md)
 ### [N-1-komponenttien asentaminen](dev-itpro/n-1-installation-configuration.md)
 
+## Käyttöönotto-ohje
+### [Laitehallinnan käyttöönotto-ohje](implementation-considerations-devices.md)
+
 ## Ympäristön konfiguraatio
 ### [Linkkien lisääminen organisaation juridisiin ehtoihin ja tietosuojatietoihin](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Bing Mapsin hallinta](dev-itpro/manage-bing-maps.md)
 
-## Laajennettavuus
-### Myyntipiste
-#### [Retail POS:n näyttöasettelut](pos-screen-layouts.md)
-##### [POS:n asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
-#### [MPOS:n offline-tilan määrittäminen](dev-itpro/retail-modern-pos-offline.md)
-#### [MPOS:n ja Cloud POS:n käynnistyksen laajennettavuus](dev-itpro/modern-pos-trigger-extensibility.md)
-#### [Mukautetun ohjausobjektin lisääminen POS-näkymään](dev-itpro/pos-custom-control.md)
-#### [POS-maksulaajennus](dev-itpro/pos-payment-extension.md)
-#### [Ulkoisten lahjakorttien tuki](dev-itpro/gift-card.md)
+## Myyntipisteen laajennettavuus
+### [Retail POS:n näyttöasettelut](pos-screen-layouts.md)
+### [POS:n asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
+### [MPOS:n offline-tilan määrittäminen](dev-itpro/retail-modern-pos-offline.md)
+### [MPOS:n ja Cloud POS:n käynnistyksen laajennettavuus](dev-itpro/modern-pos-trigger-extensibility.md)
+### [Mukautetun ohjausobjektin lisääminen POS-näkymään](dev-itpro/pos-custom-control.md)
+### [POS-maksulaajennus](dev-itpro/pos-payment-extension.md)
+### [Ulkoisten lahjakorttien tuki](dev-itpro/gift-card.md)
 ### [Retail Experience -sovelluksen luominen](dev-itpro/create-retail-experience-app.md)
 ### [Hardware Stationin yleiskatsaus ja laajennettavuus](dev-itpro/hardware-station-extensibility.md)
 
-### Retail Server
-#### [Retail Server OData -ohjaimen laajentaminen](dev-itpro/extend-retail-server-odata-controller.md)
-#### [Web API- ja OData-ohjaimet](dev-itpro/odata-controllers-api.md)
-#### [Retail Serverin asiakkaan ja kuluttajan API-rajapinnat](dev-itpro/retail-server-customer-consumer-api.md)
-#### [Metatietojen laajentaminen](dev-itpro/extend-metadata.md)
-#### [POS:n offline-tilan tukeminen laajentamalla kaupankäyntiympäristöä](dev-itpro/call-crt-service-offline.md)
-### Kaupankäyntiympäristö
-#### [Kaupankäyntiympäristön yleiskatsaus](dev-itpro/commerce-runtime-overview.md)
-#### [Kaupankäyntiympäristön ja Retail Serverin laajennettavuus ](dev-itpro/commerce-runtime-extensibility.md)
-#### [Asiakkaan valintatietojen lisääminen kanavatietokantaan](dev-itpro/add-customer-preference-channel.md)
-#### [Ominaisuuksien lisääminen myyntitilaukseen](dev-itpro/add-properties-sales-order.md)
-#### [Kaupankäyntiympäristön laajennettavuus ja käynnistimet](dev-itpro/commerce-runtime-extensibility-trigger.md)
-#### [Käynnistinesimerkki: tapahtuman estäminen](dev-itpro/trigger-example-blocking-transaction.md)
-#### [Käynnistinesimerkki: palautuskäytäntö](dev-itpro/trigger-example-return-policy.md)
-### Sähköinen kaupankäynti
-#### [Verkkokaupan määrittäminen](dev-itpro/configure-online-store.md)
-#### [Todennuspalvelujen määrittäminen](dev-itpro/configure-authentication-providers.md)
-#### [Sähköinen kaupankäyntiympäristö](dev-itpro/ecommerce-platform.md)
-#### [Sähköisen kaupankäyntiympäristön SDK](dev-itpro/ecommerce-platform-sdk.md)
-### Maksuyhdistin
-#### [Maksuyhdistimen ja maksulaitteen ottaminen käyttöön (tulostettava ohje)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
-#### [Maksuyhdistimen käyttöönotto](dev-itpro/deploy-payment-connector.md)
-#### [Maksuyhdistimen Windows Installer -ohjelman luominen](dev-itpro/create-windows-installer-payment-connector.md)
+## Retail Serverin laajennettavuus
+### [Retail Server OData -ohjaimen laajentaminen](dev-itpro/extend-retail-server-odata-controller.md)
+### [Web API- ja OData-ohjaimet](dev-itpro/odata-controllers-api.md)
+### [Retail Serverin asiakkaan ja kuluttajan API-rajapinnat](dev-itpro/retail-server-customer-consumer-api.md)
+### [Metatietojen laajentaminen](dev-itpro/extend-metadata.md)
+### [POS:n offline-tilan tukeminen laajentamalla kaupankäyntiympäristöä](dev-itpro/call-crt-service-offline.md)
 
-## Retail SDK
-### [Retail SDK:n yleiskatsaus](dev-itpro/retail-sdk/retail-sdk-overview.md)
+## Kaupankäyntiympäristön laajennettavuus
+### [Kaupankäyntiympäristön yleiskatsaus](dev-itpro/commerce-runtime-overview.md)
+### [Kaupankäyntiympäristön ja Retail Serverin laajennettavuus ](dev-itpro/commerce-runtime-extensibility.md)
+### [Asiakkaan valintatietojen lisääminen kanavatietokantaan](dev-itpro/add-customer-preference-channel.md)
+### [Ominaisuuksien lisääminen myyntitilaukseen](dev-itpro/add-properties-sales-order.md)
+### [Kaupankäyntiympäristön laajennettavuus ja käynnistimet](dev-itpro/commerce-runtime-extensibility-trigger.md)
+### [Käynnistinesimerkki: tapahtuman esto](dev-itpro/trigger-example-blocking-transaction.md)
+### [Käynnistinesimerkki: palautuskäytäntö](dev-itpro/trigger-example-return-policy.md)
+
+## Sähköisen kaupankäynnin laajennettavuus
+### [Verkkokaupan määrittäminen](dev-itpro/configure-online-store.md)
+### [Todennuspalvelujen määrittäminen](dev-itpro/configure-authentication-providers.md)
+### [Sähköinen kaupankäyntiympäristö](dev-itpro/ecommerce-platform.md)
+### [Sähköisen kaupankäyntiympäristön SDK](dev-itpro/ecommerce-platform-sdk.md)
+
+## Maksuyhdistimen laajennettavuus
+### [Maksuyhdistimen ja maksulaitteen ottaminen käyttöön (tulostettava ohje)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+### [Maksuyhdistimen käyttöönotto](dev-itpro/deploy-payment-connector.md)
+### [Maksuyhdistimen Windows Installer -ohjelman luominen](dev-itpro/create-windows-installer-payment-connector.md)
+
+## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Retail SDK:n integraatio jatkuvaan muodostusjärjestelmään](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Retail SDK:n laajennettavuusmallit](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Ruotsin kassakoneet](localizations/emea-swe-cash-registers.md)
@@ -249,7 +253,13 @@
 ### [Tilauksen määritteet](dev-itpro/order-attributes.md)
 ### [Asiakkaan määritteet](dev-itpro/customer-attributes.md)
 ### [Retail Typescript- ja C#-välityspalvelin](dev-itpro/typescript-proxy-retail-pos.md)
-
+### [Retail POS:n mallien suorittaminen](dev-itpro/pos-run-samples.md)
+### [Aiemmin luotujen POS-näkymien laajentaminen lisäämällä mukautettuja sarakkeita ja sovelluspalkin painikkeita](dev-itpro/pos-view-extension.md)
+### [Mukautettujen ohjausobjektien lisääminen Retail Modern POS -tapahtumasivuille](dev-itpro/pos-custom-transaction.md)
+### [Mukautettujen sarakkeiden lisääminen POS:n tapahtumaruudukkoon](dev-itpro/pos-custom-transaction-column.md)
+### [POS:n ohjelmointirajapinnan tai toiminnon kutsuminen POS:n laajennuksesta](dev-itpro/pos-api-extension.md)
+### [Aiemmin luotujen POS-näkymien laajentaminen lisäämällä mukautettuja sarakkeita ja sovelluspalkin painikkeita](dev-itpro/pos-view-extension.md)
+### [Retail Modern POS:n käynnistimet ja tulostaminen](dev-itpro/pos-trigger-printing.md)
 
 ## Kaupankäyntiympäristö
 ### [Kanta-asiakaslaajennus](dev-itpro/retail-sdk/loyalty-extension-sample.md)
