@@ -3,7 +3,7 @@ title: "Taloudellisen suorituskyvyn Power BI -sisältö"
 description: "Tässä ohjeaiheessa käsitellään taloudellisen suorituskyvyn Power BI -sisältöä Siinä kerrotaan sisältyvistä koontinäytöistä ja raporteista sekä sisältöpaketin muodostamisessa käytetyistä tietomallista ja yksiköistä."
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f111698315cd42c0c1c0d470b94688b548375bee
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -38,7 +38,7 @@ Voit avata **taloudellisen suorituskyvyn** Power BI:n Microsoft Dynamics Lifecyc
 ### <a name="available-from-lcs"></a>Käytettävissä LCS:stä
 LCS:ssä käytettävissä oleva **taloudellisen suorituskyvyn** Power BI -sisältö tukee seuraavia versioita:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (heinäkuu 2017)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -versiot
 - Microsoft Dynamics 365 for Operationsin versio 1611 
 
 Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisältöpaketin lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).

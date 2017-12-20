@@ -3,7 +3,7 @@ title: "Työvoiman mittarit - Power BI -sisältö"
 description: "Tässä ohjeaiheessa käsitellään työvoiman mittareiden Power BI -sisältöä Siinä selitetään, miten sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä."
 author: jcart1106
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1a94eb68d017a334ae0246b50813de9add0ea82a
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ade42c932b764b8cf5540bddd099e57901637f35
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -34,7 +34,7 @@ Tässä ohjeaiheessa käsitellään **työvoiman mittareiden** Power BI -sisält
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 **Työvoimamittarien** Power BI -sisältö näkyy **Henkilöstön hallinta** työtilassa, jos käytät jotain näistä tuotteista:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (heinäkuu 2017)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön

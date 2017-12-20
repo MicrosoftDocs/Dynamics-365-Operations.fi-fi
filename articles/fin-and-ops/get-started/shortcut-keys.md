@@ -3,7 +3,7 @@ title: "Pikanäppäimet"
 description: "Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operations, Enterprise edition-ohjelmistossa."
 author: jasongre
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 39ffbe81c0cc9ecb3f91f791442bfd27231a0516
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -33,6 +33,10 @@ ms.lasthandoff: 11/03/2017
 Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operations, Enterprise edition-ohjelmistossa. 
 
 **Huomautus:** Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
+
+## <a name="finding-a-shorcut"></a>Pikanäppäimen löytäminen
+Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytettävissä olevat pikanäppäimet suoraan käyttöliittymästä. Napsauta ohjausobjektia hiiren kakkospainikkeella ja valitse **Näytä pikanäppäimet**. Näyttöön tulee valintaikkuna, jossa näkyvät pikanäppäimet, joita voit käyttää sivun eri osissa. 
+
 
 ## <a name="action-shortcuts"></a>Toimintojen pikanäppäimet
 |                                                   |                                  |
@@ -48,13 +52,14 @@ Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Ope
 | Suorita oletuspainike lomakkeessa/valintaikkunassa   | Alt+Enter                        |
 | Painikkeen tai ruudun napsautus                            | Enter tai Väli                   |
 | Näytä tai päivitä määräruudun tiedot         | Alt+Ylänuoli                     |
+| Tällä hetkellä käytettävissä olevien pikanäppäinten tarkasteleminen                | Alt+Vaihto+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Päivämäärävalitsimen pikanäppäimet
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Toiminto**                        | **Näppäinyhdistelmä**                                 |
 | Avaa päivämäärävalitsin                  | Alt+Alanuoli                            |
-| Siirry päivämäärävalitsimessa päivämäärästä toiseen | Ctrl + nuolinäppäimet                               |
+| Siirry päivämäärävalitsimessa päivämäärästä toiseen | Ctrl + nuolinäppäimet                           |
 | Siirry seuraavaan/edelliseen kuukauteen       | Page Up / Page Down                       |
 | Siirry seuraavaan/edelliseen vuoteen        | Ctrl+Vaihto+Page Down / Ctrl+Vaihto+Page Up |
 | Siirrä tähän päivään                         | Ctrl+Home                                 |
@@ -65,6 +70,7 @@ Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Ope
 ## <a name="factbox-shortcuts"></a>Tietoruudun pikanäppäimet
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
+| **Toiminto**                                                                  | **Näppäinyhdistelmä**                                 |
 | Avaa tietoruutu (tai siirrä kohdistus tietoruutuun, jos se on avoinna) | ALT + M,B tai Ctrl + F2                        |
 | Sulje tietoruutu (kun kohdistus on tietoruudussa)                         | Esc                                       |
 | Siirry seuraavaan/edelliseen tietoruutuun (kun kohdistus on tietoruudussa)              | Alt+Vaihto+Alanuoli / Alt+Vaihto+Ylänuoli |

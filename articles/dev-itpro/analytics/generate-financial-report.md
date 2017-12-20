@@ -1,16 +1,16 @@
 ---
 title: Luo raportti
 description: "Tässä aiheessa on tietoja talousraporttien luonnista."
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -40,15 +40,31 @@ Luo raportti avaamalla raportin määritys ja valitsemalla sitten Luo-painike ty
 
 Seuraavassa taulukossa kerrotaan raporttien luonnissa käytettävissä olevista vaihtoehdoista.
 
-| Vaihtoehto                                                                                | Lisätietoja |
-|---------------------------------------------------------------------------------------|----------------------|
-| Määritä aikataulu raportin tai raporttiryhmän automaattista luontia varten              |                      |
-| Tarkista, ettei raportista puutu tilejä tai tietoja ja vahvista raportin virheettömyys |                      |
+| Vaihtoehto                                                                                | 
+|---------------------------------------------------------------------------------------|
+| Määritä aikataulu raportin tai raporttiryhmän automaattista luontia varten              |   
+| Tarkista, ettei raportista puutu tilejä tai tietoja ja vahvista raportin virheettömyys |   
 
 Raportteja luotaessa käytetään Raportin määritys -välilehdissä määritettyjä asetuksia. Voit määrittää Tuotos ja jakelu -välilehdessä raporttikirjaston sijainnin. Tällä tavoin raportti on helppo jakaa.
 
-## <a name="schedule-report-generation"></a> Raportin luonnin ajoitus
-Useilla yrityksillä on ydinjoukko raportteja, jotka ajetaan määrätyin väliajoin linjassa yrityksen liiketoimintaprosessien kanssa. Voit ajoittaa raportin muodostumaan säännöllisesti, esim. päivittäin, viikoittain, kuukausittain tai vuosittain. Voit ajoittaa yksittäisiä raportteja tai raporttiryhmiä, jotka sisältävät useita yrityksiä. Jokaiselle sisällytettävälle yritykselle on määritettävä tunnistetiedot, jotka voivat olla esimerkiksi samat kuin raporttipuumäärityksessä. Jos tunnistetietosi eivät ole voimassa, raportti näyttää sinulle vain ne tiedot, joihin sinulla on käyttöoikeus, kuten yritys, johon olet kirjautunut kyseisellä hetkellä. Tuotostiedot luetaan ensin raporttiryhmästä ja sen jälkeen yksittäisistä raporteista.
+## <a name="generate-a-financial-report"></a>Luo raportti
+
+Voit luoda talousraportin Microsoft Dynamics 365 for Finance and Operations -sovelluksen avulla siirtymällä kohtaan **Kirjanpito** > **Kyselyt ja raportit** > **Talousraportit**. 
+ - Valitse luotava raportti ja valitse sitten **Luo**. 
+ - Täytä **Raportin päivämäärä** -kenttä ja valitse **OK**.
+ 
+ Kun raportti on luotu, sitä voi tarkastella **Raportit**-osassa.
+ Voit **tarkastella** raporttia tai **poistaa** sen.
+ 
+ 
+Voit luoda raportti **raporttien suunnitteluohjelman** avulla avaamalla raporttimäärityksen ja valitsemalla sitten työkalupalkin Luo-painikkeen. Näytölle avautuu Raporttijonon tila -ikkuna, joka näyttää raporttisi paikan jonossa. Luotu raportti avautuu oletusarvoisesti verkkokatseluohjelmassa.
+
+> [!NOTE]
+> Voit luoda raportteja vain kansioihin ja sijainteihin, joiden käyttöoikeudet sinulla on.
+
+
+## <a name="schedule-report-generation"></a>Raporttien luonnin ajoittaminen
+Useissa yrityksissä on tietty raporttijoukko, joka suoritetaan tietyin aikavälein liiketoimintaprosessien tarpeiden mukaan. Voit ajoittaa raportin muodostumaan säännöllisesti, esim. päivittäin, viikoittain, kuukausittain tai vuosittain. Voit ajoittaa yksittäisiä raportteja tai raporttiryhmiä, jotka sisältävät useita yrityksiä. Jokaiselle sisällytettävälle yritykselle on määritettävä tunnistetiedot, jotka voivat olla esimerkiksi samat kuin raporttipuumäärityksessä. Jos tunnistetietosi eivät ole voimassa, raportti näyttää sinulle vain ne tiedot, joihin sinulla on käyttöoikeus, kuten yritys, johon olet kirjautunut kyseisellä hetkellä. Tuotostiedot luetaan ensin raporttiryhmästä ja sen jälkeen yksittäisistä raporteista.
 
 Kun raporttien aikatauluja luodaan ja tallennetaan, ne näytetään siirtymisruudun kohdassa Raporttien aikataulut. Voit luoda kansioita raporttien järjestämistä varten. Jos aikataulun yksittäistä raporttia ei voida suorittaa, muut raportit silti suoritetaan.
 

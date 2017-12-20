@@ -3,7 +3,7 @@ title: "Power BI -sisältö"
 description: "Tämä ohjeaihe on luettelo käytettävissä olevasta Power BI -sisällöstä, ja siinä kerrotaan resursseista, joissa on lisätietoja kyseisestä sisällöstä."
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ffae237693ebf0b0feedf7c60230590d95eed3d4
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ae19b4afa9e36800988b790398e46d8861ba432d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 11/03/2017
 
 Tämä ohjeaihe on luettelo käytettävissä olevasta Microsoft Power BI -sisällöstä, ja siinä kerrotaan resursseista, joissa on lisätietoja kyseisestä sisällöstä.
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin Power BI -sisältö (heinäkuu 2017)
-Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys, käytettävissä on seuraava Power BI -sisältö:
+## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Dynamics 365 for Finance and Operations, Enterprise editionin Power BI -sisältö
+Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, käytettävissä on seuraava Power BI -sisältö:
 
 - [Todellinen vs. budjetti – Power BI -sisältö](ledger-budgets-power-bi.md)
 - [Etujen Power BI -sisältö](benefits-power-bi.md)
@@ -82,14 +82,14 @@ Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, seuraava P
 - [Työvoiman mittarit - Power BI -sisältö](workforce-analysis-power-bi-content-pack.md)  
 
 ### <a name="accessing-the-content"></a>Sisällön käyttäminen
-Tämä Power BI -sisältö on käytettävissä Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen yhdistämisestä tietoihin on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
+Tämä Power BI -sisältö on käytettävissä LCS:n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen yhdistämisestä tietoihin on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
 
 ## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n Power BI -sisältö
 Jos käytössä on Microsoft Dynamics AX 7.0 tai Microsoft Dynamics AX 7.0.1, seuraava Power BI -sisältö on käytettävissä:
 
 - [Kustannushintojen hallinta - Power BI -sisältö](cost-management-content-pack.md)    
 - [Taloudellisen suorituskyvyn Power BI -sisältö](financial-performance-power-bi-content-pack.md)
-- [Vähittäismyyntikanavan suorituskyvyn Power BI -sisältö](retail-channel-performance-dashboard-power-bi-data.md) 
+- [Retail channel performance Power BI -sisältö](retail-channel-performance-dashboard-power-bi-data.md) 
 
 ### <a name="accessing-the-content"></a>Sisällön käyttäminen
 Tämä Power BI -sisältö on käytettävissä PowerBI.comista.

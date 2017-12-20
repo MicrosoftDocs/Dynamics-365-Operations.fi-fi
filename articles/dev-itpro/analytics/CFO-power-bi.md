@@ -3,7 +3,7 @@ title: "Talousjohtajan yhteenveto – Power BI -sisältö"
 description: "Tässä ohjeaiheessa käsitellään talousjohtajan yhteenvetoa ja Microsoft Power BI -sisältöä."
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e08277850d36804e3d4508b87547d2c819e2faf3
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ Tässä ohjeaiheessa käsitellään **talousjohtajan yhteenvetoa** ja Microsoft 
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 
-Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys, **Talousjohtajan yhteenveto** – Power BI -sisällön raportit näkyvät **Talousjohtajan yhteenveto** -työtilassa.
+**Talousjohtajan yhteenvedon** Power BI -sisällön raportit näytetään **Talousjohtajan yhteenveto** -työtilassa.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raportit, jotka sisältyvät Power BI -sisältöön
 **Talousjohtajan yhteenveto** – Power BI -sisältö koostuu erilaisen Power BI -sisällön raporteista sekä joistakin kirjanpidon toteutuneista ja budjetin saldoista. Talousjohtaja saakin siksi Power BI -sisällön avulla yleiskuvan organisaatiosta.
