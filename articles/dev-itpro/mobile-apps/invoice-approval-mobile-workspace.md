@@ -3,7 +3,7 @@ title: "Laskujen hyväksyntöjen mobiilityötila"
 description: "Tässä ohjeaiheessa on tietoja laskujen hyväksyntöjen mobiilityötilasta. Tässä työtilassa on luettelo laskuista, jotka on määritetty sinulle toimittajan laskun otsikon työnkulussa."
 author: abruer
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,76 +16,76 @@ ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: af673f076f684500b6ca84d04c01f7f773d65cd6
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 03179fdfd23e26250af92eb70d2ede710bd7007f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
-# <a name="invoice-approvals-mobile-workspace"></a><span data-ttu-id="6aa44-104">Laskujen hyväksyntöjen mobiilityötila</span><span class="sxs-lookup"><span data-stu-id="6aa44-104">Invoice approvals mobile workspace</span></span>
+# <a name="invoice-approvals-mobile-workspace"></a><span data-ttu-id="a9fa5-104">Laskujen hyväksyntöjen mobiilityötila</span><span class="sxs-lookup"><span data-stu-id="a9fa5-104">Invoice approvals mobile workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="6aa44-105">Tässä ohjeaiheessa on tietoja **laskujen hyväksyntöjen** mobiilityötilasta.</span><span class="sxs-lookup"><span data-stu-id="6aa44-105">This topic provides information about the **Invoice approvals** mobile workspace.</span></span> <span data-ttu-id="6aa44-106">Tässä työtilassa on luettelo laskuista, jotka on määritetty sinulle toimittajan laskun otsikon työnkulussa.</span><span class="sxs-lookup"><span data-stu-id="6aa44-106">This workspace provides a list of invoices that have been assigned to you through the vendor invoice header workflow process.</span></span> 
+<span data-ttu-id="a9fa5-105">Tässä ohjeaiheessa on tietoja **laskujen hyväksyntöjen** mobiilityötilasta.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-105">This topic provides information about the **Invoice approvals** mobile workspace.</span></span> <span data-ttu-id="a9fa5-106">Tässä työtilassa on luettelo laskuista, jotka on määritetty sinulle toimittajan laskun otsikon työnkulussa.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-106">This workspace provides a list of invoices that have been assigned to you through the vendor invoice header workflow process.</span></span> 
 
-<span data-ttu-id="6aa44-107">Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.</span><span class="sxs-lookup"><span data-stu-id="6aa44-107">This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span>
+<span data-ttu-id="a9fa5-107">Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-107">This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="6aa44-108">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="6aa44-108">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="a9fa5-108">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="a9fa5-108">Overview</span></span>
 
-<span data-ttu-id="6aa44-109">**Laskun hyväksyntöjen** mobiilityötilan avulla ostoreskontran käsittelijät ja esimiehet voivat tarkastella laskuja, jotka on määritetty heille toimittajan laskun otsikon työnkulussa.</span><span class="sxs-lookup"><span data-stu-id="6aa44-109">The **Invoice approvals** mobile workspace lets Accounts payable clerks and managers view invoices that have been assigned to them as part of the vendor invoice header workflow process.</span></span> <span data-ttu-id="6aa44-110">Voit tarkastella laskun tietoja sekä rivi- ja jakelutietoja, mikä parantaa hyväksyntäpäätöksiä.</span><span class="sxs-lookup"><span data-stu-id="6aa44-110">You can view the invoice information, and even the line and distribution details, to help you make informed approval decisions.</span></span> <span data-ttu-id="6aa44-111">Voit valita työtilassa toiminnon, jolla lasku siirtyy työnkulussa.</span><span class="sxs-lookup"><span data-stu-id="6aa44-111">From the workspace, you can take action to move the invoice through the workflow process.</span></span> 
+<span data-ttu-id="a9fa5-109">**Laskun hyväksyntöjen** mobiilityötilan avulla ostoreskontran käsittelijät ja esimiehet voivat tarkastella laskuja, jotka on määritetty heille toimittajan laskun otsikon työnkulussa.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-109">The **Invoice approvals** mobile workspace lets Accounts payable clerks and managers view invoices that have been assigned to them as part of the vendor invoice header workflow process.</span></span> <span data-ttu-id="a9fa5-110">Voit tarkastella laskun tietoja sekä rivi- ja jakelutietoja, mikä parantaa hyväksyntäpäätöksiä.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-110">You can view the invoice information, and even the line and distribution details, to help you make informed approval decisions.</span></span> <span data-ttu-id="a9fa5-111">Voit valita työtilassa toiminnon, jolla lasku siirtyy työnkulussa.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-111">From the workspace, you can take action to move the invoice through the workflow process.</span></span> 
 
-## <a name="prerequisites"></a><span data-ttu-id="6aa44-112">Edellytykset</span><span class="sxs-lookup"><span data-stu-id="6aa44-112">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a9fa5-112">Edellytykset</span><span class="sxs-lookup"><span data-stu-id="a9fa5-112">Prerequisites</span></span>
 
-<span data-ttu-id="6aa44-113">Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunnossa.</span><span class="sxs-lookup"><span data-stu-id="6aa44-113">Before you can use this mobile workspace, the following prerequisites must be met.</span></span>
+<span data-ttu-id="a9fa5-113">Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunnossa.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-113">Before you can use this mobile workspace, the following prerequisites must be met.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="6aa44-114">Edellytys</span><span class="sxs-lookup"><span data-stu-id="6aa44-114">Prerequisite</span></span></th>
-<th><span data-ttu-id="6aa44-115">Rooli</span><span class="sxs-lookup"><span data-stu-id="6aa44-115">Role</span></span></th>
-<th><span data-ttu-id="6aa44-116">kuvaus</span><span class="sxs-lookup"><span data-stu-id="6aa44-116">Description</span></span></th>
+<th><span data-ttu-id="a9fa5-114">Edellytys</span><span class="sxs-lookup"><span data-stu-id="a9fa5-114">Prerequisite</span></span></th>
+<th><span data-ttu-id="a9fa5-115">Rooli</span><span class="sxs-lookup"><span data-stu-id="a9fa5-115">Role</span></span></th>
+<th><span data-ttu-id="a9fa5-116">kuvaus</span><span class="sxs-lookup"><span data-stu-id="a9fa5-116">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="6aa44-117">Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys on oltava otettuna käyttöön organisaatiossa.</span><span class="sxs-lookup"><span data-stu-id="6aa44-117">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) must be deployed in your organization.</span></span></td>
-<td><span data-ttu-id="6aa44-118">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="6aa44-118">System administrator</span></span></td>
-<td><span data-ttu-id="6aa44-119">Katso <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön käyttöönotto</a>.</span><span class="sxs-lookup"><span data-stu-id="6aa44-119">See <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span>
+<td><span data-ttu-id="a9fa5-117">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition on otettava käyttöön organisaatiossa.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-117">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition must be deployed in your organization.</span></span></td>
+<td><span data-ttu-id="a9fa5-118">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="a9fa5-118">System administrator</span></span></td>
+<td><span data-ttu-id="a9fa5-119">Katso <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön käyttöönotto</a>.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-119">See <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span>
 </td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="6aa44-120"><strong>Laskun hyväksyntöjen</strong> mobiilityötila on julkaistava.</span><span class="sxs-lookup"><span data-stu-id="6aa44-120">The <strong>Invoice approvals</strong> mobile workspace must be published.</span></span></td>
-<td><span data-ttu-id="6aa44-121">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="6aa44-121">System administrator</span></span></td>
-<td><span data-ttu-id="6aa44-122">Lisätietoja on ohjeaiheessa <a href="publish-mobile-workspace.md">Mobiilityötilan julkaiseminen</a>.</span><span class="sxs-lookup"><span data-stu-id="6aa44-122">See <a href="publish-mobile-workspace.md">Publish a mobile workspace</a>.</span></span></td>
+<td><span data-ttu-id="a9fa5-120"><strong>Laskun hyväksyntöjen</strong> mobiilityötila on julkaistava.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-120">The <strong>Invoice approvals</strong> mobile workspace must be published.</span></span></td>
+<td><span data-ttu-id="a9fa5-121">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="a9fa5-121">System administrator</span></span></td>
+<td><span data-ttu-id="a9fa5-122">Lisätietoja on ohjeaiheessa <a href="publish-mobile-workspace.md">Mobiilityötilan julkaiseminen</a>.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-122">See <a href="publish-mobile-workspace.md">Publish a mobile workspace</a>.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="6aa44-123">Mobiilisovelluksen lataaminen ja asentaminen</span><span class="sxs-lookup"><span data-stu-id="6aa44-123">Download and install the mobile app</span></span>
+## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="a9fa5-123">Mobiilisovelluksen lataaminen ja asentaminen</span><span class="sxs-lookup"><span data-stu-id="a9fa5-123">Download and install the mobile app</span></span>
 
-<span data-ttu-id="6aa44-124">Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:</span><span class="sxs-lookup"><span data-stu-id="6aa44-124">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
+<span data-ttu-id="a9fa5-124">Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:</span><span class="sxs-lookup"><span data-stu-id="a9fa5-124">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
 
--   [<span data-ttu-id="6aa44-125">Android-puhelimet</span><span class="sxs-lookup"><span data-stu-id="6aa44-125">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
--   [<span data-ttu-id="6aa44-126">IPhone-puhelimet</span><span class="sxs-lookup"><span data-stu-id="6aa44-126">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
+-   [<span data-ttu-id="a9fa5-125">Android-puhelimet</span><span class="sxs-lookup"><span data-stu-id="a9fa5-125">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [<span data-ttu-id="a9fa5-126">IPhone-puhelimet</span><span class="sxs-lookup"><span data-stu-id="a9fa5-126">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="6aa44-127">Kirjautuminen mobiilisovellukseen</span><span class="sxs-lookup"><span data-stu-id="6aa44-127">Sign in to the mobile app</span></span>
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="a9fa5-127">Kirjautuminen mobiilisovellukseen</span><span class="sxs-lookup"><span data-stu-id="a9fa5-127">Sign in to the mobile app</span></span>
 
-1.  <span data-ttu-id="6aa44-128">Käynnistä sovellus mobiililaitteessa.</span><span class="sxs-lookup"><span data-stu-id="6aa44-128">Start the app on your mobile device.</span></span>
-2.  <span data-ttu-id="6aa44-129">Anna oman Microsoft Dynamics 365:n URL-osoite.</span><span class="sxs-lookup"><span data-stu-id="6aa44-129">Enter your Microsoft Dynamics 365 URL.</span></span>
-3.  <span data-ttu-id="6aa44-130">Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran.</span><span class="sxs-lookup"><span data-stu-id="6aa44-130">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="6aa44-131">Kirjota tunnistetiedot.</span><span class="sxs-lookup"><span data-stu-id="6aa44-131">Enter your credentials.</span></span>
-4.  <span data-ttu-id="6aa44-132">Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä.</span><span class="sxs-lookup"><span data-stu-id="6aa44-132">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="6aa44-133">Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.</span><span class="sxs-lookup"><span data-stu-id="6aa44-133">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
+1.  <span data-ttu-id="a9fa5-128">Käynnistä sovellus mobiililaitteessa.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-128">Start the app on your mobile device.</span></span>
+2.  <span data-ttu-id="a9fa5-129">Anna oman Microsoft Dynamics 365:n URL-osoite.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-129">Enter your Microsoft Dynamics 365 URL.</span></span>
+3.  <span data-ttu-id="a9fa5-130">Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-130">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="a9fa5-131">Kirjota tunnistetiedot.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-131">Enter your credentials.</span></span>
+4.  <span data-ttu-id="a9fa5-132">Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-132">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="a9fa5-133">Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-133">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
 
-    <span data-ttu-id="6aa44-134">[![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="6aa44-134">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
+    <span data-ttu-id="a9fa5-134">[![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="a9fa5-134">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
 
-## <a name="approve-invoices-by-using-the-invoice-approvals-mobile-workspace"></a><span data-ttu-id="6aa44-135">Laskun hyväksyminen laskun hyväksyntöjen mobiilityötilassa</span><span class="sxs-lookup"><span data-stu-id="6aa44-135">Approve invoices by using the Invoice approvals mobile workspace</span></span>
-1.  <span data-ttu-id="6aa44-136">Valitse mobiililaitteessasi **laskun hyväksyntöjen** työtila.</span><span class="sxs-lookup"><span data-stu-id="6aa44-136">On your mobile device, select the **Invoice approvals** workspace.</span></span>
-2.  <span data-ttu-id="6aa44-137">Valitse toimittajan laskun otsikon työnkulussa sinulle määritetty lasku.</span><span class="sxs-lookup"><span data-stu-id="6aa44-137">Select the invoice that has been assigned to you by the vendor invoice header workflow process.</span></span>
-3.  <span data-ttu-id="6aa44-138">Tarkista **Laskun tiedot** -sivulla laskun otsikon tiedot, kuten toimittaja ja päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="6aa44-138">On the **Invoice details** page, review the invoice header information, such as the vendor and date information.</span></span>
-4.  <span data-ttu-id="6aa44-139">Valitse laskurivi ja tarkastele sen yksityiskohtaisia tietoja **Laskurivin tiedot** -tietoja.</span><span class="sxs-lookup"><span data-stu-id="6aa44-139">Select a line on the invoice to view more detailed information about it in the **Invoice line details** view.</span></span>
-5.  <span data-ttu-id="6aa44-140">Näytä rivijakelut valitsemalla **Laskurivin tiedot** -näkymässä **Jakelut**.</span><span class="sxs-lookup"><span data-stu-id="6aa44-140">In the **Invoice line details** view, select **Distributions** to show the line distributions.</span></span> <span data-ttu-id="6aa44-141">Voit tarkastella täällä laskurivin kirjanpitoa.</span><span class="sxs-lookup"><span data-stu-id="6aa44-141">Here, you can view the accounting for the invoice line.</span></span> <span data-ttu-id="6aa44-142">Näitä tietoja ovat esimerkiksi taloushallinnon dimensiot ja päätili.</span><span class="sxs-lookup"><span data-stu-id="6aa44-142">The information that is shown includes the financial dimensions and the main account.</span></span>
-6.  <span data-ttu-id="6aa44-143">Näytä kaikki jakelut valitsemalla **Laskun tiedot** -sivulla **Jakelut**.</span><span class="sxs-lookup"><span data-stu-id="6aa44-143">On the **Invoice details** page, select **Distributions** to show all distributions.</span></span> <span data-ttu-id="6aa44-144">Voit tarkastella täällä koko lasku kirjanpitoa.</span><span class="sxs-lookup"><span data-stu-id="6aa44-144">Here, you can view the accounting for the whole invoice.</span></span> <span data-ttu-id="6aa44-145">Näitä tietoja ovat esimerkiksi taloushallinnon dimensiot ja päätilit.</span><span class="sxs-lookup"><span data-stu-id="6aa44-145">The information that is shown includes the financial dimensions and the main accounts.</span></span> 
-7.  <span data-ttu-id="6aa44-146">Voit tarkastella laskuun liitettyjä huomautuksia tai tiedostoja valitsemalla **Liitteet**.</span><span class="sxs-lookup"><span data-stu-id="6aa44-146">Select **Attachments** to view any notes or files that are attached to the invoice.</span></span>
-8.  <span data-ttu-id="6aa44-147">Viimeistele tarkasteluprosessi valitsemalla **Laskun tiedot** -sivulla soveltuva työkulkutoiminto.</span><span class="sxs-lookup"><span data-stu-id="6aa44-147">On the **Invoice details** page, select the appropriate workflow action to complete your review process.</span></span>
-9.  <span data-ttu-id="6aa44-148">Valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="6aa44-148">Select **Done**.</span></span>
+## <a name="approve-invoices-by-using-the-invoice-approvals-mobile-workspace"></a><span data-ttu-id="a9fa5-135">Laskun hyväksyminen laskun hyväksyntöjen mobiilityötilassa</span><span class="sxs-lookup"><span data-stu-id="a9fa5-135">Approve invoices by using the Invoice approvals mobile workspace</span></span>
+1.  <span data-ttu-id="a9fa5-136">Valitse mobiililaitteessasi **laskun hyväksyntöjen** työtila.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-136">On your mobile device, select the **Invoice approvals** workspace.</span></span>
+2.  <span data-ttu-id="a9fa5-137">Valitse toimittajan laskun otsikon työnkulussa sinulle määritetty lasku.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-137">Select the invoice that has been assigned to you by the vendor invoice header workflow process.</span></span>
+3.  <span data-ttu-id="a9fa5-138">Tarkista **Laskun tiedot** -sivulla laskun otsikon tiedot, kuten toimittaja ja päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-138">On the **Invoice details** page, review the invoice header information, such as the vendor and date information.</span></span>
+4.  <span data-ttu-id="a9fa5-139">Valitse laskurivi ja tarkastele sen yksityiskohtaisia tietoja **Laskurivin tiedot** -tietoja.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-139">Select a line on the invoice to view more detailed information about it in the **Invoice line details** view.</span></span>
+5.  <span data-ttu-id="a9fa5-140">Näytä rivijakelut valitsemalla **Laskurivin tiedot** -näkymässä **Jakelut**.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-140">In the **Invoice line details** view, select **Distributions** to show the line distributions.</span></span> <span data-ttu-id="a9fa5-141">Voit tarkastella täällä laskurivin kirjanpitoa.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-141">Here, you can view the accounting for the invoice line.</span></span> <span data-ttu-id="a9fa5-142">Näitä tietoja ovat esimerkiksi taloushallinnon dimensiot ja päätili.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-142">The information that is shown includes the financial dimensions and the main account.</span></span>
+6.  <span data-ttu-id="a9fa5-143">Näytä kaikki jakelut valitsemalla **Laskun tiedot** -sivulla **Jakelut**.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-143">On the **Invoice details** page, select **Distributions** to show all distributions.</span></span> <span data-ttu-id="a9fa5-144">Voit tarkastella täällä koko lasku kirjanpitoa.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-144">Here, you can view the accounting for the whole invoice.</span></span> <span data-ttu-id="a9fa5-145">Näitä tietoja ovat esimerkiksi taloushallinnon dimensiot ja päätilit.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-145">The information that is shown includes the financial dimensions and the main accounts.</span></span> 
+7.  <span data-ttu-id="a9fa5-146">Voit tarkastella laskuun liitettyjä huomautuksia tai tiedostoja valitsemalla **Liitteet**.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-146">Select **Attachments** to view any notes or files that are attached to the invoice.</span></span>
+8.  <span data-ttu-id="a9fa5-147">Viimeistele tarkasteluprosessi valitsemalla **Laskun tiedot** -sivulla soveltuva työkulkutoiminto.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-147">On the **Invoice details** page, select the appropriate workflow action to complete your review process.</span></span>
+9.  <span data-ttu-id="a9fa5-148">Valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="a9fa5-148">Select **Done**.</span></span>
 
