@@ -3,7 +3,7 @@ title: "Myynnin ja kannattavuuden suorituskyvyn Power BI -sisältö"
 description: "Tässä aiheessa kuvataan, mitä kuuluu myynnin ja tuottavuuden suorituskyvyn Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3692b9be0fb93e0e2de743775a54bb9c9dbf5809
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: c065eb2f19bbbd553e070f06c29f73114e3efad5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -49,7 +49,7 @@ Kannattavuutta voidaan analysoida seuraavasti:
 -   Asiakkaan kannattavuus (tuoton ja käyttökatteen suhteen mukaan)
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 -päivitys, **Myynnin ja tuottavuuden suorituskyky** Power BI -sisältö näytetään **Myynnin ja tuottavuuden suorituskyky** -sivulla (**Myynti ja markkinointi** > **Kyselyt ja raportit** > **Myynnin suorituskyvyn analyysi** > **Myynnin ja markkinoinnin suorituskyky**). 
+**Myynnin ja tuottavuuden suorituskyvyn** Power BI -sisältö näkyy **Myynnin ja tuottavuuden suorituskyky** -sivulla (**Myynti ja markkinointi** > **Kyselyt ja raportit** > **Myynnin suorituskykyanalyysi** > **Myynnin ja tuottavuuden suorituskyky**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 **Myynnin ja tuottavuuden suorituskyky** Power BI -sisältöön lukeutuu raportti, joka koostuu mittarijoukosta. Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina. Seuraavassa taulukossa on esitetty yhteenveto sisällön käytettävistä visualisoinneista.

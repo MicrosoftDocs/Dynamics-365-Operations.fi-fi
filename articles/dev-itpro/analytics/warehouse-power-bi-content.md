@@ -3,7 +3,7 @@ title: "Varaston suorituskyvyn Power BI -sisältö"
 description: "Tässä aiheessa kuvataan, mitä kuuluu varaston suorituskyvyn Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: Mirzaab
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30a14e78e35c94b9f8945d2fcc973f921698953
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Varaston esimiehet voivat käyttää **Varaston suorituskyvyn** Power BI -sisäl
 -   **Toimipaikkojen varastotarkkuus** – Varastotarkkuus on tärkeä sisäinen varaston liiketoimintatieto (BI). Laskennan yleisen tarkkuuden selvittäminen on hyvin tärkeää. Tärkeää on myös määrittää, kuinka tarkasti varastoit nimikkeitä oikeissa toimipaikoissa, ja jotta voit korostaa ristiriitatietoja löytääksesi nimikkeille paremmat paikat tai aloittaaksesi tietyille nimikkeille kokonaislaskennan. (Nimikepohjainen laskentatoiminta toimitetaan tällä hetkellä korjaustiedostona.) Jos käytät tätä Power BI -sisältöpakettia käytettävissä olevan varaston oikeellisuuden selvittämiseen toimipaikkakohtaisesti, voit myös tunnistaa varkaustapaukset liikkeissäsi. Voit myös määrittää, onko yhdessäkään toimipaikassasi käytettävissä olevia määriä, jotka poikkeavat yrityksen resurssien suunnittelutiedoista (ERP). Toimipaikat voivat olla liian suuria tai niiden laskenta voi olla mahdotonta. Fyysinen sijoittelu voi vaihtoehtoisesti olla huonoa, jonka vuoksi yksittäisen nimiketyypin synkronointi käytettävissä olevaan tietoon on vaikeaa.
 
 ## <a name="accessing-the-power-bi-content-pack"></a>Power BI -sisätöpaketin käyttö
-Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 -päivitys, **Varaston suorituskyvyn** Power BI -sisältö näytetään **Varaston suorituskyky** -sivulla (**Varastonhallinta** > **Kyselyt ja raportit** > **Varaston suorituskyvyn analyysi** > **Varaston suorituskyky**). 
+**Varaston suorituskyvyn** Power BI -sisältö näkyy **Varaston suorituskyky** -sivulla (**Varastonhallinta** > **Kyselyt ja raportit** > **Varaston suorituskykyanalyysi** > **Varaston suorituskyky**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 **Varastoinnin suorituskyvyn** Power BI -sisältöpaketti sisältää raportin. Tämä raportti koostuu joukosta mittareita, jotka ovat visualisoitu kaavioiden, ruutujen ja taulukoiden muodossa. Seuraavassa taulukossa on yleiskatsaus visualisoinneista **varastoinnin suorituskyvyn** Power BI -sisällössä.

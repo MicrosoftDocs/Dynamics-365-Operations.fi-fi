@@ -1,6 +1,6 @@
 ---
 title: "Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä"
-description: "Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla Microsoft Dynamics 365 for Salesin ja Microsoft Dynamics 365 for Finance and Operationsin myyntitilausten otsikot ja rivit synkronoidaan kaksisuuntaisesti Finance and Operations, Enterprise editioniin."
+description: "Tässä ohjeaiheessa esitellään mallit ja niiden taustalla olevat tehtävät, joita käytetään synkronoitaessa myyntitilaukset suoraan Microsoft Dynamics 365 for Salesin ja Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin välillä."
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/31/2017
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 568c33a63efdc58a179dadcb617634dcf533fd4b
-ms.openlocfilehash: c31d65328250539fbe172f220272eec9d8b59bbf
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 11/13/2017
 
 [!include[banner](../includes/banner.md)]
 
-Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla Microsoft Dynamics 365 for Salesin ja Microsoft Dynamics 365 for Finance and Operationsin myyntitilausten otsikot ja rivit synkronoidaan kaksisuuntaisesti Finance and Operations, Enterprise editioniin.
+Tässä ohjeaiheessa esitellään mallit ja niiden taustalla olevat tehtävät, joita käytetään synkronoitaessa myyntitilaukset suoraan Microsoft Dynamics 365 for Salesin ja Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin välillä.
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
 
 Näet käytettävissä olevat mallit avaamalla [PowerApps-hallintakeskuksen](https://preview.admin.powerapps.com/dataintegration). Valitse **Projektit** ja valitse sitten julkisia malleja oikeassa yläkulmassa olevan **Uusi projekti** -kohdan avulla.
 
-Seuraavia malleja ja niiden taustalla olevia tehtäviä käytetään synkronoitaessa kaksisuuntaisesti myyntitilausten otsikot ja rivit suoraan Salesin ja Finance and Operationsin välillä:
+Seuraavia malleja ja niiden taustalla olevia tehtäviä käytetään synkronoitaessa myyntitilaukset suoraan Salesin ja Finance and Operationsin välillä:
 
 - **Mallien nimet tietojen integroinnissa:** 
 

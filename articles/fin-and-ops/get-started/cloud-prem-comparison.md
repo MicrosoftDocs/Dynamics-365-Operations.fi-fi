@@ -3,7 +3,7 @@ title: Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 description: "Tässä aiheessa kerrotaan, mitkä ominaisuudet ovat tuettuja pilvipalvelussa ja paikallisessa asennuksessa."
 author: robinarh
 manager: AnnBe
-ms.date: 07/13/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,13 +15,13 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 ms.author: robinr
-ms.search.validFrom: 2017-07-13
+ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: efe06929db414475f6457dfe49ff1791a3d609d5
+ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
+ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -59,6 +59,9 @@ Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen ase
 | | PowerBI.com-integrointi| Kyllä | En |
 | | Analyysityötilat | Kyllä | En |
 | | Älykkäät liiketoimintaprosessit: Suositukset| Kyllä | En |
+| | Power BI -raporttien sisällön tuottaminen ODatalla Power BI -työpöydän tai Excel PowerQuery -työkalujen avulla | Kyllä | En |
+| | SQL Server Reporting Services (SSRS) tukee skaalautumista  | Kyllä | En |
+| | Telemetria siirretään pilveen | Kyllä | En |
 | Varastoinninhallinta| | Kyllä | Kyllä |
 | Käyttöikäpalvelut| | Kyllä | Kyllä |
 | | Konfiguroitavat liiketoimintaprosessit | Kyllä | En |
@@ -86,7 +89,7 @@ Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen ase
 | Kuljetustenhallinta| | Kyllä | Kyllä |
 | Toimittajayhteistyö| | Kyllä | Kyllä|
 | Varastonhallinta  | | Kyllä | Kyllä |
-| | Varaston mobiilisovellus| Kyllä | En |
+| | Varaston mobiilisovellus| Kyllä | Kyllä |
 | | Varastoinnin Power BI -raportit| Kyllä | En |
 | WWW-asiakasohjelma | | Kyllä | Kyllä |
 | | Tehtävien tallennustoiminto - tallenna tai lataa tehtävätallenteita BPM-kirjastosta| Kyllä | En |
@@ -103,6 +106,7 @@ Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen ase
 | Ympäristöyhteensopivuus  || Kyllä | Kyllä |
 | Päivitetään | | Kyllä | Kyllä |
 | | Päivitysympäristöt | Kyllä | En |
+| Jäljityksen jäsennin ja PerfTimer | | Kyllä | En |
 | Päivitä | | Kyllä | Kyllä |
 | | Päivitä | Kyllä | En |
 | | Aiempien versioiden päivittäminen ja tuki | Kyllä | En |
@@ -121,6 +125,8 @@ Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen ase
 |---|---|---|---|
 | Kaikki Talent-alueet | Kaikki Talent-ominaisuudet | Kyllä | En |
 
+## <a name="see-also"></a>Lisätietoja
 
+- [Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa](features-not-implemented-on-prem.md)
 
 

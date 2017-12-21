@@ -3,7 +3,7 @@ title: "Excel-lisäosan käyttö"
 description: "Tässä ohjeaiheessa kerrotaan, kuinka avaat yksikkötietoja Microsoft Excelissä ja tarkastelet, päivität ja muokkaat tietoja Microsoft Dynamicsin Excel-lisäosalla."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/06/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b1f25f3630ad5126edd20c5508b83a9811a65f8
-ms.openlocfilehash: dd986d8f82c42c4e229e6e60bdfe8d15a273e149
+ms.sourcegitcommit: bf2607596993d01abaf5e8a66f14f8c091791d4a
+ms.openlocfilehash: b4151ca929d0dbe073c1a8444cf63a90ac74e20c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/27/2017
 
 ---
 
@@ -104,17 +104,6 @@ Voit säätää työkirjaan automaattisesti lisättäviä sarakkeita suunnitteli
 
 4. Ota käyttöön tietolähteeseen tehdyt muutokset valitsemalla **Päivitä**. Valitse sitten **Valmis** ja sulje suunnitteluohjelma.
 5. Jos olet lisännyt kentän (sarakkeen), valitse **Päivitä**, niin ohjelma hakee päivitetyn tietojoukon.
-
-## <a name="copy-environment-data"></a>Kopioi ympäristön tiedot
-Ympäristöstä työkirjaan luettavat tiedot voidaan kopioida toiseen ympäristöön. Et voi kuitenkaan muuttaa yhteyden URL-osoitetta noin vain, koska työkirjan tietovälimuisti jatkaa tietojen käsittelemistä aiemmin luotuina tietoina. Sen sijaan tietojen julkaisemisessa uuteen ympäristöön uusina tietoina on käytettävä Kopioi ympäristön tiedot -toimintoa.
-
-1. Valitse **Asetukset**-painike (ratassymboli) ja valitse sitten **Data Connector** -pikavälilehden **Kopioi ympäristön tiedot**.
-2. Anna uuden ympäristön palvelimen URL-osoite.
-3. Vahvista muutokset valitsemalla **OK**. Vahvista toiminto valitsemalla **Kyllä**. Excel-lisäosa käynnistetään uudelleen. Se muodostaa yhteyden uuteen ympäristöön. Työkirjan aiemmin luotuja tietoja käsitellään uusina tietoina.
-
-    Excel-lisäosan uudelleenkäynnistyksen jälkeen näkyviin tulee viestiruutu, jossa kerrotaan, että työkirja on ympäristön kopiointitilassa.
-
-4. Voit kopioida tiedot uuteen ympäristöön uusina tietoina, kun valitset **Julkaise**. Voit peruuttaa ympäristön kopiointitoiminnon ja tarkistaa aiemmin luodut tiedot uudessa ympäristössä valitsemalla **Päivitä**.
 
 ## <a name="troubleshooting"></a>Vianmääritys
 Tietyt ongelmat ovat ratkaistavissa muutaman helpon vaiheen kautta.

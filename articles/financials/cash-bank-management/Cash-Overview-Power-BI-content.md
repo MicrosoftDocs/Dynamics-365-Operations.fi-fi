@@ -3,7 +3,7 @@ title: "Kassayhteenveto – Power BI -sisältö"
 description: "Tässä ohjeaiheessa käsitellään kassayhteenvetoa ja Power BI -sisältöä. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä."
 author: saraschi2
 manager: AnnBe
-ms.date: 06/22/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fdcd3083f475967ec2e5f94dad850a1bf98c864a
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 8a3d12b3b0f71ea8b84b1618d9bb6bbc416e3b1d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -35,7 +35,7 @@ Tässä ohjeaiheessa käsitellään **kassayhteenvetoa** ja Microsoft Power BI -
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 
-Jos käytössä on Dynamics 365 for Finance and Operations, Enterprise Editionin heinäkuun 2017 päivitys, **Kassayhteenveto** – Power BI -sisällön raportit näkyvät **Kassayhteenveto**- ja **Maksuliikenne**-työtiloissa.
+**Käteisvarojen yleiskatsauksen** Power BI -sisällön raportit näytetään **Käteisvarojen yleiskatsaus**- ja **Maksuliikenne**-työtiloissa.
 
 Jos haluat tarkastella tietoja sisältäviä kassavirtaennusteita, ennustelaskelmaprosessi on tehtävä maksuliikenteen hallinta-alueen **Laske kassavirtaennusteet** -toiminnolla.  Tämä on suoritettava jokaiselle ennusteeseen sisältyvälle yritykselle.  Seuraavaksi on päivitettävä LedgerCovLiquidityMeasurement-koostemitta **Yksikkösäilö**-sivulla.  
 

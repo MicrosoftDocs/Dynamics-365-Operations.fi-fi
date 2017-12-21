@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ef58898a6822224e44873afdd7c55800215c37a0
+ms.sourcegitcommit: ff0d19a2d712ccb17762803e2fe4ab2ed5aa024e
+ms.openlocfilehash: bd5f055ef816f050ed99390c455a613d46dd6323
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/06/2017
 
 ---
 
@@ -74,7 +74,7 @@ Tällä hetkellä cross docking voidaan määrittää vain kahdelle työtilausty
 ### <a name="cross-docking-policy-name-transfer-order"></a>Cross docking -käytännön nimi: siirtotilaus
 
 -   Järjestysnumero: 10
--   Työtilaustyyppi: siirtovarasto-otto
+ -   Työtilaustyyppi: siirtovarasto-otto
 -   Cross docking -tarve vaatii sijainnin: epätosi
 -   Cross docking -strategia: päivämäärä ja aika
 
@@ -102,10 +102,9 @@ Kun tuote on ilmoitettu valmiiksi tuotantolinjalla, se siirretään lastausovisi
 6.  Luo siirtotilaus. Luo nimiketunnuksen L0101 siirtotilaus. Määrä = 20.
 7.  Vapauta siirtotilaus kuormasuunnittelun työtilassa. Valitse **Lähetys**-välilehdessä kuormasuunnittelun työtilan valikkovaihtoehto. Valitse sitten kuormarivin **Vapauta**-valikossa **Vapauta varastoon**. Siirtotilauksessa on nyt tyypin **Siirtovarasto-otto** avoin aaltorivi.
 8.  Luo tuotantotilaus. Siirry **Tuotantotilaus**-luettelosivulle ja luo tuotteen L0101 tuotantotilaus. Määrä = 20. Arvioi ja aloita tuotantotilaus. Huomaa, että **Kirjaa keräysluettelo nyt** -kentän arvo on edelleen **Ei**.
-9.  Ilmoita valmiiksi mobiililaitteessa. Siirry mobiililaiteportaaliin ja valitse valikossa **Ilmoita valmiiksi ja pane pois**. Ilmoita nyt L0101 valmiiksi kämmenlaitteessa. Huomaa, että laittosijainti on **LASTAUSOVI**. Tämä sijainti löytyy **Määritä**-työtilaustyypin **Siirtovarasto-otto**-sijaintidirektiivistä. Huomaa myös, että **Siirtovarasto-otto**-tyypin työ on luotu ja valmis. Tarkista työ siirtymällä siirtotilaustyön tietoihin.
-10. Yritä nyt aloittaa vielä 20 kappaletta tuotantotilauksessa ja yritä sitten raportoida 20 kappaletta valmiiksi kämmenlaitteessa. Tällä kertaa sijaintia **LP-001** ehdotetaan poispanosijainniksi. Tämä sijainti löytyy **Valmiiden tuotteiden poispano** -sijaintidirektiivistä. Tätä sijaintidirektiiviä käytetään, koska cross docking -mahdollisuutta ei ole. Ensimmäinen cross docking -tehtävä toteutti LP-001-siirtotilauksen kokonaisuudessaan.
-
-**Valmiiden tuotteiden poispano** -tyyppinen työ luotiin ja käsiteltiin.
+9.  Ilmoita valmiiksi mobiililaitteessa. Siirry mobiililaiteportaaliin ja valitse valikossa **Ilmoita valmiiksi ja pane pois**. Ilmoita nyt L0101 valmiiksi kämmenlaitteessa. Määrä = 10. Huomaa, että laittosijainti on **LASTAUSOVI**. Tämä sijainti löytyy **Määritä**-työtilaustyypin **Siirtovarasto-otto**-sijaintidirektiivistä. Huomaa myös, että **Siirtovarasto-otto**-tyypin työ on luotu ja valmis. Tarkista työ siirtymällä siirtotilaustyön tietoihin.
+10. Raportoi nyt 10 kappaletta lisää mobiililaitteesta. Huomaa, että asetettu sijainti on jälleen **LASTAUSOVI**. Huomaa myös, että 10 kappaleen uusi **Siirtovarasto-otto**-tyyppinen työ on luotu.
+11. Yritä nyt aloittaa vielä 20 kappaletta tuotantotilauksessa ja yritä sitten raportoida 20 kappaletta valmiiksi kämmenlaitteessa. Tällä kertaa sijaintia **LP-001** ehdotetaan poispanosijainniksi. Tämä sijainti löytyy **Valmiiden tuotteiden poispano** -sijaintidirektiivistä. Tätä sijaintidirektiiviä käytetään, koska cross docking -mahdollisuutta ei ole. Kaksi cross docking -tehtävää toteutti LP-001-siirtotilauksen kokonaisuudessaan vaiheessa 9 ja 10. Huomaa, että **Valmiiden tuotteiden poispano** -tyyppinen työ luotiin ja käsiteltiin.
 
 #### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Skenaario 2 – Cross docking tuotannosta siirtotuotantotilaukseen sekä ajoitettu tapaaminen
 
@@ -123,7 +122,7 @@ Kun tuote on ilmoitettu valmiiksi tuotantolinjalla, se siirretään lastausovisi
 
 ### <a name="additional-information"></a>Lisätiedot
 
--   Cross docking -skenaariota tuetaan erä- ja sarjanumero-ohjatuissa nimikkeissä sekä erä- että sarjanumerodimensioissa, joille on määritetty varaushierarkiassa sijainti ylä- tai alapuolella.
+-   Cross docking -skenaariota tuetaan erä- ja sarjanumero-ohjatuissa nimikkeissä sekä erä- että sarjanumerodimensioissa, joille on määritetty varaushierarkiassa sijainti ylä- tai alapuolella. 
 
 
 
