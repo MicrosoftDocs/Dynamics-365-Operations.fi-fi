@@ -3,7 +3,7 @@ title: Projektinhallinta ja kirjanpito
 description: "Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla palvelu tarjoamiseksi, tuotteen tuottamiseksi tai tuloksen saavuttamiseksi."
 author: KimANelson
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

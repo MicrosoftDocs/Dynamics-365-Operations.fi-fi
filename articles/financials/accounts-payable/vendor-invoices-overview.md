@@ -3,7 +3,7 @@ title: Toimittajan laskujen yleiskatsaus
 description: "Tässä artikkelissa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
