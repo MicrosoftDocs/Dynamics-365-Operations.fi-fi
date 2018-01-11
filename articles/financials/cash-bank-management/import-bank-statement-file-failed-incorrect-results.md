@@ -3,7 +3,7 @@ title: "Pankin tiliotteen tiedoston tuomisen vianmääritys"
 description: "On tärkeää, että pankin tiliotetiedosto vastaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa tuettuja asetteluja. Tiliotteiden tiukkojen standardien vuoksi suurin osa integraatioista toimii oikein. Kuitenkin joskus tiliotetiedostoa ei voi tuoda tai se sisältää virheellisiä tuloksia. Yleensä ongelmat johtuvat pienistä eroista tiliotetiedostossa. Tässä artikkelissa selitetään, miten nämä erot ja niistä johtuvat ongelmat korjataan."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

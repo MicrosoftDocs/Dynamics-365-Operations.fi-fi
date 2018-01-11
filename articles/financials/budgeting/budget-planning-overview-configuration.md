@@ -3,7 +3,7 @@ title: Budjetin suunnittelun yleiskuvaus
 description: "Tämä artikkeli esittelee budjettisuunnittelun ja sisältää tietoja, joiden avulla voit määrittää budjettisuunnittelun ja budjettisuunnitteluprosessit."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla"
 description: "Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa. Tässä aiheessa käsitellään täsmäytysprosessia."
 author: saraschi2
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Budjetoinnin yhteenveto
 description: "Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin Financials-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin arvoihin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operations, Enterprise Editionissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
