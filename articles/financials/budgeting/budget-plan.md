@@ -3,7 +3,7 @@ title: Budjettisuunnittelu
 description: "Tämän kurssin tavoite on tarjota Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin toimintojen päivitysten ohjattu näkymä Budjettisuunnittelu-alueella. Tämä kurssi sisältää nopean konfiguraatioesimerkin budjettisuunnittelumoduulista ja esittelee, miten budjettisuunnittelu voidaan suorittaa tämän konfiguraation avulla.  Tällä kurssilla keskitytään erityisesti seuraaviin liiketoimintaprosesseihin tai tehtäviin: -    - organisaatiohierarkian luominen budjettisuunnittelulle ja käyttäjän suojauksen määrittäminen - budjettisuunnitelmien skenaarioiden, budjettisuunnitelmien sarakkeiden, asettelujen ja Excel-mallien määrittäminen   - budjettisuunnitteluprosessien luominen ja aktivoiminen   - budjettisuunnitelman asiakirjan luominen noutamalla toteutuneet tiedot kirjanpidosta   - kohdistusten käyttäminen budjettisuunnitelman asiakirjan tietojen oikaisussa   - budjettisuunnitelman asiakirjan tietojen muokkaaminen Excelissä."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

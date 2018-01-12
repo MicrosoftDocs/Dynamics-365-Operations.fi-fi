@@ -3,7 +3,7 @@ title: "Myöhemmäksi päivätyt sekit"
 description: "Tässä artikkelissa on tietoja myöhemmäksi päivättyjen sekkien tuesta Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa. Myöhemmäksi päivätyt sekit ovat sekkejä, jotka on asetettu tulevan päivämäärän omaavien maksujen vastaanottamista varten. Tämän vuoksi sekkiä ei voi lunastaa ennen määritettyä päivämäärää."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
