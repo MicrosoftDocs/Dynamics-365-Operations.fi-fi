@@ -3,7 +3,7 @@ title: Excelin budjettisuunnittelumallit
 description: "Tässä aiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa."
 author: ryansandness
 manager: AnnBe
-ms.date: 07/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 96df6bbfe5c9e158b616230c2b061762a5edda08
+ms.sourcegitcommit: 63bf043124797b328116fd7951913eaeda6ff97b
+ms.openlocfilehash: 747e57b11c13f71c672d43531255751ff273f57c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/12/2018
 
 ---
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 11/03/2017
 > [!NOTE] 
 > <span data-ttu-id="5e65b-154">Luo kaava laskentataulukossa ja kopioi se **Rakenne**-ikkunaan määrittääksesi kaavan.</span><span class="sxs-lookup"><span data-stu-id="5e65b-154">To define the formula, create the formula in the spreadsheet, and then copy it to the **Design** window.</span></span> <span data-ttu-id="5e65b-155">Finance and Operationsin sidottu taulukko nimeksi annetaan yleensä AXTable1.</span><span class="sxs-lookup"><span data-stu-id="5e65b-155">A Finance and Operations bound table will typically be named "AXTable1".</span></span> <span data-ttu-id="5e65b-156">Jos esimerkiksi haluat summata laskentataulukossa sarakkeet Request Q1 – Request Q4, kaava on: AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].</span><span class="sxs-lookup"><span data-stu-id="5e65b-156">For example, to summarize Request Q1 : Request Q4 columns in the spreadsheet, the formula = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].</span></span>
 
-<span data-ttu-id="5e65b-157">Toista nämä vaiheet lisätäksesi **Oikaisu**-sarakkeen.</span><span class="sxs-lookup"><span data-stu-id="5e65b-157">Repeat these steps to insert the **Adjustment** column.</span></span> <span data-ttu-id="5e65b-158">Käytä tälle sarakkeelle kaavaa = AxTable1\[Total request\]\*$I$1.</span><span class="sxs-lookup"><span data-stu-id="5e65b-158">Use formula = AxTable1\[Total request\]\*$I$1 for this column.</span></span> <span data-ttu-id="5e65b-159">Tämä ottaa solun I1 arvon ja kertoo **Total request** -sarakkeen laskeakseen oikaisusummat.</span><span class="sxs-lookup"><span data-stu-id="5e65b-159">This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.</span></span>
+<span data-ttu-id="5e65b-157">Toista nämä vaiheet lisätäksesi **Oikaisu**-sarakkeen.</span><span class="sxs-lookup"><span data-stu-id="5e65b-157">Repeat these steps to insert the **Adjustment** column.</span></span> <span data-ttu-id="5e65b-158">Käytä tälle sarakkeelle kaavaa = AxTable1\[Total request\]\\*$I$1.</span><span class="sxs-lookup"><span data-stu-id="5e65b-158">Use formula = AxTable1\[Total request\]\\*$I$1 for this column.</span></span> <span data-ttu-id="5e65b-159">Tämä ottaa solun I1 arvon ja kertoo **Total request** -sarakkeen laskeakseen oikaisusummat.</span><span class="sxs-lookup"><span data-stu-id="5e65b-159">This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.</span></span>
 
 <span data-ttu-id="5e65b-160">Tallenna ja sulje Excel-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="5e65b-160">Save and close the Excel file.</span></span> <span data-ttu-id="5e65b-161">Palaa Finance and Operationsiin ja lataa budjettisuunnitelmassa käytettävä tallennettu Excel-malli valitsemalla **Asettelu**-kohdassa **Malli &gt; Lataa**.</span><span class="sxs-lookup"><span data-stu-id="5e65b-161">Return to Finance and Operations, and in **Layouts**, click **Template &gt; Upload** to upload the saved Excel template to be used for the budget plan.</span></span> 
 
