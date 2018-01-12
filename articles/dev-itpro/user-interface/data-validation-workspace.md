@@ -3,7 +3,7 @@ title: "Tietojen vahvistuksen työtila"
 description: "Voit seurata tietojen tarkistuksen tarkistusluettelon työtilassa eri yritysten, alueiden ja henkilöiden tarkistusprosesseja. Tarkistusluettelon voidaan käyttää uudessa käyttöönotossa, päivityksen jälkeen tai siirron jälkeen."
 author: bking
 manager: AnnBe
-ms.date: 05/11/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

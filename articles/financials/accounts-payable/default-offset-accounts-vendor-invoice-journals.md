@@ -3,7 +3,7 @@ title: "Toimittajan laskujen ja laskujen hyväksynnän kirjauskansioiden oletusv
 description: "Tämän ohjeaiheen avulla voit päättää, mihin oletustilit ja vastatilit määritetään laskujen kirjauskansioissa."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
