@@ -41,10 +41,11 @@
 ## [Vähittäismyyntikanavien määrittäminen](define-maintain-retail-channels.md)
 ## [Verkkokaupan yleiskatsaus](online-stores.md)
 ## [Retail-laiteaseman määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md)
-## [Vähittäismyynnin työajan seuranta](retail-time-attendance.md)
+## [Retail-sovelluksen työajan seuranta](retail-time-attendance.md)
 
 # Modern Point of Sale (MPOS) ja Cloud POS
-## [POS-toiminnot](POS-operations.md)
+## [Modern POS:n tai Cloud POS:n valitseminen](MPOS-or-CPOS.md)
+## [Myyntipisteen toiminnot](POS-operations.md)
 ## [Esittelytietojen näyttöasettelut MPOS/CPOS-sovelluksissa](demo-data.md)
 ## Laitteiston oheislaitteet
 ### [Retail-oheislaitteiden yleiskatsaus](retail-peripherals-overview.md)
@@ -75,7 +76,12 @@
 ## Kuitit
 ### [Kuittimallien määrittäminen](receipt-templates-printing.md) 
 ### [Sähköpostikuittien lähettäminen MPOS:sta](email-receipts.md)
-## [POS-myyntipisteen tehtävien tallennustoiminto ja ohje](task-recorder-retail-pos.md)
+## [Myyntipisteen tehtävien tallennustoiminto ja ohje](task-recorder-retail-pos.md)
+
+# Tilauksen täyttäminen
+## [Myymälän tilauksen toteuttamisen yleiskatsaus](Order-fulfillment-overview.md)
+## [Toimituksen määrittäminen myymälässä](Order-fulfillment-POS-setup.md)
+## [Myyntipisteen ilmoitusten käyttöönotto](Notifications-POS.md)
 
 # Seuranta ja analyysi
 ## [Myynnin ja marginaalien seuranta](monitor-sales-margin-performance.md)
@@ -171,7 +177,7 @@
 # [Retailin kehitys ja hallinta](dev-itpro/dev-retail-home-page.md)
 
 ## Arkkitehtuuri
-### [Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin komponentit – Retail](retail-components.md)
+### [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version komponentit – Retail](retail-components.md)
 ### [Retail Server -arkkitehtuuri](dev-itpro/retail-server-architecture.md)
 ### [Retail-kanavan tietoliikenne](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS-arkkitehtuuri](dev-itpro/retail-modern-pos-architecture.md)
@@ -256,10 +262,12 @@
 ### [Retail POS:n mallien suorittaminen](dev-itpro/pos-run-samples.md)
 ### [Aiemmin luotujen POS-näkymien laajentaminen lisäämällä mukautettuja sarakkeita ja sovelluspalkin painikkeita](dev-itpro/pos-view-extension.md)
 ### [Mukautettujen ohjausobjektien lisääminen Retail Modern POS -tapahtumasivuille](dev-itpro/pos-custom-transaction.md)
-### [Mukautettujen sarakkeiden lisääminen POS:n tapahtumaruudukkoon](dev-itpro/pos-custom-transaction-column.md)
-### [POS:n ohjelmointirajapinnan tai toiminnon kutsuminen POS:n laajennuksesta](dev-itpro/pos-api-extension.md)
-### [Aiemmin luotujen POS-näkymien laajentaminen lisäämällä mukautettuja sarakkeita ja sovelluspalkin painikkeita](dev-itpro/pos-view-extension.md)
+### [Mukautettujen sarakkeiden lisääminen myyntipisteen tapahtumaruudukkoon](dev-itpro/pos-custom-transaction-column.md)
+### [Myyntipisteen ohjelmointirajapinnan tai toiminnon kutsuminen myyntipisteen laajennuksesta](dev-itpro/pos-api-extension.md)
 ### [Retail Modern POS:n käynnistimet ja tulostaminen](dev-itpro/pos-trigger-printing.md)
+### [Mukautetun ohjausobjektin lisääminen Retail Modern POS:n muun kuin näytön suunnittelutoimintoon perustuvaan näkymään](dev-itpro/pos-control-non-screen.md)
+### [Retail-välityspalvelimen luominen myyntipisteelle ja sähköiselle kaupankäynnille](dev-itpro/pos-generate-retail-proxy.md)
+### [Pilvipalveluympäristön kehyksiä käsittelevien Retail-kehittäjien määritysvaiheet](dev-itpro/cloud-dev-box.md)
 
 ## Kaupankäyntiympäristö
 ### [Kanta-asiakaslaajennus](dev-itpro/retail-sdk/loyalty-extension-sample.md)
