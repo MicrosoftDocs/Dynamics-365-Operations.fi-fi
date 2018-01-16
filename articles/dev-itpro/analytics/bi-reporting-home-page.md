@@ -1,9 +1,9 @@
 ---
 title: Tiedot
-description: "Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dynamics 365 for Finance and Operations, Enterprise Editioniin sisältyvistä Business Intelligence- ja raportointityökaluista."
+description: "Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -versioon sisältyvistä Business Intelligence- ja raportointityökaluista."
 author: sericks007
 manager: AnnBe
-ms.date: 09/07/2017
+ms.date: 12/18/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 335d38e0fb5e47136b87bac5bfa9d2fd2923def6
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 2477062ad324f91ff07f1c79cfccd4389b37badf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dynamics 365 for Finance and Operations, Enterprise Editioniin sisältyvistä Business Intelligence (BI)- ja raportointityökaluista.
+Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -versioon sisältyvistä Business Intelligence (BI)- ja raportointityökaluista.
 
 ## <a name="get-started"></a>Aloittaminen
 - [Tietojen käyttö ja raportointi](information-access-reporting.md)
@@ -46,10 +46,9 @@ Käyttäjät voivat käsitellä tietoja napsauttamalla tai koskettamalla sivun v
  Lisätietoja on seuraavissa ohjeaiheissa:
 
  - [Embedded Power BI:n käyttö työtiloissa](embed-power-bi-workspaces.md)
- - [Power BI Embeddedin integraatio](power-bi-embedded-integration.md)
- - [Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla](add-analytics-tab-workspaces.md)
- - [Analyysisovellusten julkaiseminen Power BI:ssä](publish-apps-powerbi.md)
- - [Analyysityötilojen ja raporttien suojaaminen Power BI Embeddedin avulla](secure-analytical-workspaces.md)
+ - [Power BI Embedded -integrointi](power-bi-embedded-integration.md)
+ - [Analytiikan lisääminen työtiloihin Power BI Embedded -ratkaisun avulla](add-analytics-tab-workspaces.md)
+ - [Analyysityötilojen ja raporttien suojaaminen Power BI Embedded -ratkaisun avulla](secure-analytical-workspaces.md)
  - [Finance and Operationsin Power BI -sisältö](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Liitetoiminta-asiakirjat ja tulostaminen
@@ -59,7 +58,7 @@ Liiketoimintatapahtumien tiedot tallennetaan ja välitetään usein raportointir
 
 Lisätietoja on seuraavissa ohjeaiheissa:
 
-- [Asiakirjojen raportointipalveluiden yleiskatsaus](document-reporting-services.md)
+- [Document Reporting Services -palveluiden yleiskatsaus](document-reporting-services.md)
 - [Tulostaminen Finance and Operations -sovelluksissa](print-documents.md)
 - [Verkkotulostimien käyttöönotto asentamalla asiakirjareitityksen agentti](install-document-routing-agent.md)
 
@@ -88,10 +87,7 @@ Lisätietoja on seuraavissa ohjeaiheissa:
 ## <a name="technical-reference-reports"></a>Teknisten tietojen raportit
 Seuraavissa raporteissa on viitetietoja Finance and Operationsin objekteista:
 
-- [Koottujen tietoyksiköiden raportti](aggregate-data-entities-report.md)
-- [Koottujen mittojen raportti](aggregate-measurements-report.md)
 - [Tietoyksiköiden raportti](../data-entities/data-entities-report.md)
-- [Suorituskykyilmaisimien raportti](key-performance-indicators-report.md)
 - [Käyttöoikeuskoodien ja määritysavainten raportti](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services -raportit](SSRS-report.md)
 - [Työnkulkutyyppien raportti](../../fin-and-ops/organization-administration/workflow-types-report.md)

@@ -17,25 +17,26 @@
 ##### [Finance and Operationsin (paikallinen) ostaminen](get-started/purchase-on-premises.md)
 
 ### [Uudet ja muuttuneet ominaisuudet](get-started/whats-new-changed.md)
-#### [Vanhentuneet ominaisuudet](../dev-itpro/migration-upgrade/deprecated-features.md)
+#### [Vanhentuneet tai poistetut ominaisuudet](../dev-itpro/migration-upgrade/deprecated-features.md)
 #### [AX 2012 -ominaisuudet, joita on lykätty](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa](get-started/features-not-implemented-on-prem.md)
-#### [Käyttöikäkäytäntö](../dev-itpro/migration-upgrade/versions-update-policy.md)
-#### [Ympäristön päivitys 12 (marraskuu 2017)](get-started/whats-new-platform-update-12.md)
-#### [Ympäristön päivitys 11 (lokakuu 2017)](get-started/whats-new-platform-update-11.md)
-#### [Ympäristön päivitys 10 (elokuu 2017)](get-started/whats-new-platform-update-10.md)
-#### [Finance and Operations Enterprise Edition (heinäkuu 2017)](get-started/whats-new-application-July-2017-update.md)
-#### [Ympäristön päivitys 9 (heinäkuu 2017)](get-started/whats-new-platform-update-9.md)
-#### [Ympäristön päivitys 8 (kesäkuu 2017)](get-started/whats-new-platform-update-8.md)
-#### [Ympäristön päivitys 7 (toukokuu 2017)](get-started/whats-new-platform-update-7.md)
-#### [Ympäristön päivitys 6 (huhtikuu 2017)](get-started/whats-new-platform-update-6.md)
-#### [Ympäristön päivitys 5 (maaliskuu 2017)](get-started/whats-new-platform-update-5.md)
-#### [Ympäristön päivitys 4 (helmikuu 2017)](get-started/whats-new-platform-update-4.md)
+#### [Versiot ja käyttöikäkäytäntö](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
+#### [Platform-päivitys 12 (marraskuu 2017)](get-started/whats-new-platform-update-12.md)
+#### [Platform-päivitys 11 (lokakuu 2017)](get-started/whats-new-platform-update-11.md)
+#### [Platform-päivitys 10 (elokuu 2017)](get-started/whats-new-platform-update-10.md)
+#### [Finance and Operations Enterprise edition (heinäkuu 2017)](get-started/whats-new-application-July-2017-update.md)
+#### [Platform-päivitys 9 (heinäkuu 2017)](get-started/whats-new-platform-update-9.md)
+#### [Platform-päivitys 8 (kesäkuu 2017)](get-started/whats-new-platform-update-8.md)
+#### [Platform-päivitys 7 (toukokuu 2017)](get-started/whats-new-platform-update-7.md)
+#### [Platform-päivitys 6 (huhtikuu 2017)](get-started/whats-new-platform-update-6.md)
+#### [Platform-päivitys 5 (maaliskuu 2017)](get-started/whats-new-platform-update-5.md)
+#### [Platform-päivitys 4 (helmikuu 2017)](get-started/whats-new-platform-update-4.md)
 #### [Operations-versio 1611 (marraskuu 2016)](get-started/whats-new-dynamics-365-operations-1611.md)
-#### [Ympäristön päivitys 3 (marraskuu 2016)](get-started/whats-new-platform-update-3.md)
-#### [Ympäristön päivitys 2 (elokuu 2016)](get-started/whats-new-platform-update-2.md) 
+#### [Platform-päivitys 3 (marraskuu 2016)](get-started/whats-new-platform-update-3.md)
+#### [Platform-päivitys 2 (elokuu 2016)](get-started/whats-new-platform-update-2.md) 
 #### [Dynamics AX -sovellusversio 7.0.1 (toukokuu 2016)](get-started/whats-new-changed-application-version-7-0-1-may-2016.md)
-#### [Ympäristön päivitys 1 (toukokuu 2016)](get-started/whats-new-changed-platform-version-7-1-may-2016.md)
+#### [Platform-päivitys 1 (toukokuu 2016)](get-started/whats-new-changed-platform-version-7-1-may-2016.md)
 #### [Dynamics AX 7.0 (helmikuu 2016)](get-started/whats-new-changed-7-0-february-2016.md)
 #### Päivitetyt tehtäväoppaat
 ##### [Marraskuun 2016 tehtäväoppaat](get-started/new-task-guides-november-2016.md)
@@ -141,7 +142,7 @@
 #### [Tietojen hallintapaketin API](../dev-itpro/data-entities/data-management-api.md)
 #### [Palvelujen päätepisteet](../dev-itpro/data-entities/services-home-page.md)
 ##### [Palvelun todennuksen vianmääritys](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-#### [OData](../dev-itpro//data-entities/odata.md)
+#### [OData](../dev-itpro/data-entities/odata.md)
 #### [Räätälöidyt palvelut](../dev-itpro/data-entities/custom-services.md)
 #### [Toistuvat integraatiot](../dev-itpro/data-entities/recurring-integrations.md)
 
@@ -179,9 +180,10 @@
 ### [Tietoyksiköt](../dev-itpro/data-entities/data-entities.md)
 
 #### [Konfigurointitietoprojektit](../dev-itpro/data-entities/configuration-data-projects.md)
-#### [Konfigurointitietopaketit](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Konfigurointitietojen kopiointi yritysten välillä](../dev-itpro/data-entities/copy-configuration.md)
+##### [Konfigurointitietopaketit (vain heinäkuun 2017 versio)](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Konfigurointitietomallit](../dev-itpro/data-entities/configuration-data-templates.md)
+
 #### [Muutosten seuranta yksikköön](../dev-itpro/data-entities/entity-change-track.md)
 
 ### Vakiotietoyksiköt
@@ -646,6 +648,11 @@
 ##### [Negatiivisen debetin tai kreditin määrittäminen ](../financials/localizations/apac-chn-negative-debits-credits.md)
 ##### [Kiinan työsäännön mukainen käyttäjän toimintoloki](../financials/localizations/tasks/user-operation-log-china-working-rule.md)
 ##### [Myyntilaskujen ALV – usein kysytyt kysymykset](../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+
+#### Intia
+##### [Veromoduulin yleiskatsaus](../financials/general-ledger/tax-engine.md)
+##### [Veromoduulin integrointi](../financials/general-ledger/tax-engine-integration.md)
+##### [Veromoduulin laajentaminen](../financials/general-ledger/extend-tax-engine-configurations.md)
 
 #### Japani
 ##### [Käyttöomaisuuden hankinta ja valtionavustuksen haku](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -1214,7 +1221,8 @@
 #### [Työvoiman mittarit](../dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md)
 
 ### Asiakirjan raportointi ja tulostus
-#### [Asiakirjojen raportointipalveluiden yleiskatsaus](../dev-itpro/analytics/document-reporting-services.md)
+#### [Document Reporting Services -palveluiden yleiskatsaus](../dev-itpro/analytics/document-reporting-services.md)
+#### [Verkkotulostimien asentaminen paikallisiin ympäristöihin](../dev-itpro/analytics/install-network-printer-onprem.md)
 #### [SSRS:n määrittäminen paikallista käyttöönottoa varten](../dev-itpro/analytics/configure-ssrs-on-premises.md)
 #### [Tulostaminen](../dev-itpro/analytics/print-documents.md)
 ##### [Verkkotulostimien käyttöönotto asentamalla asiakirjareitityksen agentti](../dev-itpro/analytics/install-document-routing-agent.md)
@@ -1285,35 +1293,33 @@
 ##### [Valitse tietomallin määritys luotaessa muotoa sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md)
 ##### [Päivitä muoto ottamalla käyttöön muodon uusi perusversio sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-upgrade-format.md)
 ##### [Lataa konfiguraatio Lifecycle Servicesiin sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md)
+##### [Sähköisen raportointikehyksen ohjelmointirajapinnan muutokset sovelluspäivitykselle 7.3](../dev-itpro/analytics/er-apis-app73.md)
 
-### Analyysityökalut ja visualisaatiot
+### Upotetut analyyttiset ratkaisut
+#### [Embedded Power BI työtiloissa](../dev-itpro/analytics/embed-power-bi-workspaces.md)
+#### [Power BI Embedded -integrointi](../dev-itpro/analytics/power-bi-embedded-integration.md)
+
+### PowerBI.com:n mukauttamisen asetukset
+#### [Power BI -integrointi](../dev-itpro/analytics/power-bi-integration.md)
+#### [Power BI -raporttien kiinnittäminen työtiloihin](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Ratkaisujen työkalut luomista ja laajentamista varten
 #### [Analytiikka, kootut mitat ja KPI-mallinnus](../dev-itpro/analytics/analytics.md)
+#### [Luo analyysiraportteja Power BI Desktopilla](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
 #### [Mallinnus ja koontitiedot](../dev-itpro/analytics/model-aggregate-data.md)
 #### [Taloushallinnon dimensioiden lisääminen mittojen koontia varten](../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md)
-#### [Tilannekohtaisten BI-tietojen lisääminen lomakkeisiin](../dev-itpro/analytics/add-contextual-bi-forms.md)
-#### [Koottujen mittojen raportti](../dev-itpro/analytics/aggregate-measurements-report.md)
-#### [Koottujen tietoyksiköiden raportti](../dev-itpro/analytics/aggregate-data-entities-report.md)
-#### [Suorituskykyilmaisinraportti (KPI.md)](../dev-itpro/analytics/key-performance-indicators-report.md)
-#### [Power BI -integraatio](../dev-itpro/analytics/power-bi-integration.md)
-#### [Power BI -sisällön käyttö](../dev-itpro/analytics/power-bi-content-microsoft-partners.md)
-#### [Power BI -raportin ja -koontinäytön luominen](../dev-itpro/analytics/create-powerbi-report-dashboard.md)
-#### [Power BI -raportin luominen Finance and Operations -tietojen avulla](../dev-itpro/analytics/create-powerbi-report-data.md)
-#### [Työtilojen Power BI -integroinnin konfigurointi](../dev-itpro/analytics/configure-power-bi-integration.md)
-#### [Power BI Embedded -integrointi](../dev-itpro/analytics/power-bi-embedded-integration.md)
-#### [Embedded Power BI työtiloissa](../dev-itpro/analytics/embed-power-bi-workspaces.md)
-#### [Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla](../dev-itpro/analytics/add-analytics-tab-workspaces.md)
-#### [Analyysityötilojen ja raporttien suojaaminen Power BI Embeddedin avulla](../dev-itpro/analytics/secure-analytical-workspaces.md)
-#### [Power BI:n lisääminen työtiloihin](../dev-itpro/analytics/add-bi-workspaces.md)
-#### [Power BI -raporttien kiinnittäminen työtiloihin](../dev-itpro/analytics/pin-power-bi-reports.md)
+#### [Analytiikan lisääminen työtiloihin Power BI Embedded -ratkaisun avulla](../dev-itpro/analytics/add-analytics-tab-workspaces.md)
+#### [Analyysityötilojen ja raporttien suojaaminen Power BI Embedded -ratkaisun avulla](../dev-itpro/analytics/secure-analytical-workspaces.md)
+
+### Tehokäyttäjän hallintatyökalut
 #### [Power BI:n ja yksikkösäilön integrointi](../dev-itpro/analytics/power-bi-integration-entity-store.md)
+#### [Työtilojen Power BI -integroinnin konfigurointi](../dev-itpro/analytics/configure-power-bi-integration.md)
 #### [Oman tietokantasi tuominen mukaan](../dev-itpro/analytics/export-entities-to-your-own-database.md)
-#### [Luo analyysiraportteja Power BI Desktopilla](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
-#### [Julkaise analyysisovelluksia Power BI:ssä](../dev-itpro/analytics/publish-apps-powerbi.md)
 
 
 ## [Varastonhallinta](../supply-chain/inventory/inventory-home-page.md)
-### [Saapumisten yhteenveto](../supply-chain/inventory/arrival-overview.md)
-### [Nimikkeen saapumisen yhteenvetoprofiilin määritys (tehtäväopas)](../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md)
+### [Saapumisten yleiskatsaus](../supply-chain/inventory/arrival-overview.md)
+### [Nimikkeen saapumisen yleiskatsauksen profiilin määrittäminen (tehtäväopas)](../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md)
 ### [Laadunhallintaprosessi](../supply-chain/inventory/quality-management-processes.md)
 ### [Laadunhallinnan ottaminen käyttöön](../supply-chain/inventory/enable-quality-management.md)
 ### [Määrityksistä poikkeamisen hallinta](../supply-chain/inventory/enable-nonconformance-management.md)
@@ -1362,9 +1368,10 @@
 #### [Rajoitetun suunnitelman luominen (tehtäväopas)](../supply-chain/master-planning/tasks/constrained-plan.md)
 #### [Oheistuotteiden materiaalisuunnitelman luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
 #### [Suunniteltujen tilausten ylläpito](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Varmuusvaraston käsitteleminen](../supply-chain/master-planning/safety-stock-replenishment.md)
 #### [Viiveiden käsittely](../supply-chain/master-planning/delays.md)
 #### [Hajotuksen jäljitys](../supply-chain/master-planning/trace-explosion.md)
-#### [Toimenpidesanomat](../supply-chain/master-planning/action-messages.md)
+#### [Toimintosanomat](../supply-chain/master-planning/action-messages.md)
 #### [Pääsuunnitteluajon valvonta (tehtäväopas)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
 #### [Toimipaikan aikataulun luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-schedule-site.md)
 #### [Toimipaikan suunnitelman luominen (tehtäväopas)](../supply-chain/master-planning/tasks/create-plan-site.md)
@@ -1438,6 +1445,8 @@
 #### [Toimittajayhteistyön määrittäminen ja hallinta](../supply-chain/procurement/set-up-maintain-vendor-collaboration.md)
 #### [Toimittajayhteistyön käyttäjien hallinta](../supply-chain/procurement/manage-vendor-collaboration-users.md)
 #### [Toimittajatilien määrittäminen](../supply-chain/procurement/set-up-vendor-accounts.md)
+#### [Toimittajapyynnön konfiguroinnit](../supply-chain/procurement/vendor-request-configurations.md)
+#### [Toimittajan aktivointi](../supply-chain/procurement/vendor-onboarding.md)
 #### [Toimittajayhteistyö ulkoisten toimittajien kanssa](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Toimittajayhteistyö asiakkaiden kanssa](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
 #### [Sähköiseen hankintaan siirtymisessä käytettyjen ulkoisten luetteloiden määrittäminen](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
@@ -1550,7 +1559,9 @@
 #### Tuotantotöiden käyttäminen
 ##### [Tuotantotilausten luominen](../supply-chain/production-control/create-production-orders.md)
 ##### [Tuotantotilausten vapauttaminen](../supply-chain/production-control/release-production-orders.md)
-##### [Tuotantotilauksen tilan palauttaminen](../supply-chain/production-control/reverse-production-order-status.md)
+##### [Materiaalipoikkeusten näkyvyys](../supply-chain/production-control/improved-visibility-into-material-exceptions.md)
+##### [Tuotantorakenteen ja kaavarivien vapauttaminen varastoon](../supply-chain/production-control/releasing-bom-and-formula-lines-to-warehouse.md)
+#####[Tuotantotilauksen tilan palauttaminen](../supply-chain/production-control/reverse-production-order-status.md)
 ##### [Materiaalikulutuksen rekisteröinti mobiililaitteella](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
 ##### [Raaka-aineiden kulutuksen hallinta materiaaliottosääntöjen avulla](../supply-chain/production-control/flushing-principles.md) 
 ##### [Cross docking tuotantotilauksista lähtevien laituriin](../supply-chain/production-control/cross-docking-opportunities.md)
@@ -1561,7 +1572,7 @@
 ##### [Tuotannonohjauksen rekisteröinti](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Tuotannon palaute](../supply-chain/production-control/production-feedback.md)
 ##### [Työajan seurannan rekisteröinti](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Poissaolon rekisteröinti työajan seurannassa](..//supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Poissaolon rekisteröinti työajan seurannassa](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 #### Tuotannon myyntitietojen hallinta
 ##### [Ajan kohdistaminen työnipun töihin](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Materiaalikulutuksen laskenta](../supply-chain/production-control/consumption.md)
@@ -1686,6 +1697,7 @@
 #### [Uuden päätuotteen luominen (tehtäväopas)](../supply-chain/pim/tasks/create-product-master.md)
 #### [Ennalta määritettyjen tuotevarianttien luominen (tehtäväopas)](../supply-chain/pim/tasks/create-predefined-product-variants.md)
 #### [Yhdessä yrityksessä vapautetun tuotteen luominen (tehtäväopas)](../supply-chain/pim/tasks/create-released-product-single-company.md)
+#### [Tuotteen elinkaaren tila](../supply-chain/pim/product-lifecycle.md)
 #### [Tuotteen viivakoodin luominen (tehtäväopas)](../supply-chain/pim/tasks/create-bar-code-product.md)
 #### [Tuotteen GTIN-koodin antaminen (tehtäväopas)](../supply-chain/pim/tasks/enter-gtin-code-product.md)
 #### [Tuotteen erämääritteiden luominen (tehtäväopas)](../supply-chain/pim/tasks/create-batch-attributes-product.md)
@@ -1800,7 +1812,8 @@
 ### [Nimikkeen kuljetusrajoitteiden määrittäminen](../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md)
 
 ## [Varastonhallinta](../supply-chain/warehousing/warehouse-management-overview.md)
-### [Varaston määritys](../supply-chain/warehousing/warehouse-configuration.md) 
+### [Varaston konfigurointi](../supply-chain/warehousing/warehouse-configuration.md)
+#### [Varaston määrittäminen varaston konfigurointimallin avulla](../supply-chain/inventory/warehouse-template.md)
 #### [Työn ohjaaminen työmallien ja sijaintidirektiivien avulla](../supply-chain/warehousing/control-warehouse-location-directives.md)
 #### [Mittayksikkö ja varastointikäytännöt](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Varaston Power BI -sisältö](../dev-itpro/analytics/warehouse-power-bi-content.md)
