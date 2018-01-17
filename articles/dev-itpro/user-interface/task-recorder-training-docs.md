@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: robinr
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b744a895bbd494212c4c388362dd7290207af938
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 Tässä ohjeaiheessa kerrotaan, mitä tehtävien tallennustoiminto ja tehtäväoppaat ovat, miten tehtävätallenteita luodaan, ja miten Microsoftin tehtäväoppaita voi mukauttaa ja sisällyttää omiin ohjeisiisi.
 
 > [!IMPORTANT]
-> Dynamics 365 for Talentissa ei voi myöskään luoda mukautettuja tehtäväoppaita. Talentin ohjejärjestelmä yhdistetään automaattisesti tuotteen tehtäväoppaisiin. 
+> Vaikka voit tehdä omia Dynamics 365 for Talent -tehtäväopastallenteita, et voi tallentaa niitä tällä hetkellä BPM- eli liiketoimintaprosessin mallintajakirjastoon tai avata niitä Ohje-ruudusta. Voit tallentaa ne paikallisesti tai verkkosijaintiin sekä avata ja toistaa ne tehtävien tallennustoiminnolla. 
 
 <a name="learn-about-task-recorder"></a>Lisätietoja tehtävän tallennustoiminnosta
 -------------------------
@@ -42,7 +42,7 @@ Tehtävän tallennustoiminto on työkalu, jolla voi tallentaa tuotteen käyttöl
 
 -   **Tehtävätallenteiden toistaminen tehtävän ohjauksina.** Tehtäväoppaat ovat keskeinen osa ohjeita. Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti liiketoimintaprosessin eri vaiheet. Käyttäjää ohjataan kunkin vaiheen suorittamisessa ponnahduskehotteen (eli kuplan) avulla. Se esiintyy kaikkialla käyttöliittymässä ja osoittaa käyttöliittymäelementin, johon käyttäjän tulee reagoida. "Kupla" sisältää myös tietoja siitä, miten elementtiä käytetään, kuten "Napsauta tätä" tai "Kirjoita tähän kenttään arvo". Tehtäväopas toimii käyttäjän nykyisen tietojoukon kanssa, ja syötetyt tiedot tallennetaan käyttäjän ympäristöön.
 -   **Tehtävätallenteet voidaan näyttää menettelytapavaiheina ohjeruudussa.** Voit käyttää ohjeruutua tehtävätallenteiden hakemisessa ja näyttämisessä. Voit käyttää ohjeruutua valitsemalla siirtymispalkin yläosassa olevan **?**-painikkeen tai pikanäppäimet **Ctrl+Vaihto+?**. Tehtävätallenteen vaiheet näkyvät ohjeruudussa. Voit myös toistaa tallenteen tehtävän ohjauksena, jolloin se ohjaa sinut käyttöliittymän läpi.
--   **Tehtävätallenteet voidaan tallentaa liiketoimintaprosessien mallintajaan (BPM).** Voit tallentaa tehtävätallenteen liiketoimintaprosessien mallintajan (BPM) kirjaston hierarkian riville Lifecycle Services (LCS) -palveluissa. Tallenteesta luodaan vaiheluettelo ja liiketoimintaprosessikaavio. BPM-kirjastoon tallennetut tehtävätallenteet voidaan näyttää ohjeena.
+-   **Tehtävätallenteet voidaan tallentaa liiketoimintaprosessien mallintajaan (BPM).** Voit tallentaa tehtävätallenteen BPM-kirjaston hierarkian riville Lifecycle Services (LCS) -palveluissa. Tallenteesta luodaan vaiheluettelo ja liiketoimintaprosessikaavio. BPM-kirjastoon tallennetut tehtävätallenteet voidaan näyttää ohjeena.
 -   **Tehtävätallenteet voidaan tallentaa Word-asiakirjoina.** Tämä mahdollistaa tulostettavien koulutusohjeiden luomisen.
 
 Voit luoda omia tehtävätallenteita, toistaa Microsoftin tehtävätallenteita tai muokata Microsoftin toimittamia tehtävätallenteita omaa konfiguraatiota vastaaviksi. Lisätietoja tehtävien tallennustoiminnosta on kohdassa [Tehtävien tallennustoiminto](task-recorder.md).

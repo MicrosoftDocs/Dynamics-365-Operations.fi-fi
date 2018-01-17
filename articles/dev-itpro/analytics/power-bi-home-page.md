@@ -3,7 +3,7 @@ title: "Power BI -sisältö"
 description: "Tämä ohjeaihe on luettelo käytettävissä olevasta Power BI -sisällöstä, ja siinä kerrotaan resursseista, joissa on lisätietoja kyseisestä sisällöstä."
 author: sericks007
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: ae19b4afa9e36800988b790398e46d8861ba432d
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 0969f9f30e50a36b667765fbe375e6c14d3412da
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -39,10 +39,10 @@ Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise
 - [Kassayhteenvedon Power BI -sisältö](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
 - [Talousjohtajan yhteenvedon Power BI -sisältö](CFO-power-bi.md)
 - [Kompensaation Power BI -sisältö](compensation-power-bi.md)
-- [Kustannuslaskenta-analyysin Power BI -sisältö*](cost-accounting-analysis-content-pack.md) 
+- [Kustannuslaskenta-analyysin Power BI -sisältö](cost-accounting-analysis-content-pack.md) 
 - [Luotonvalvonnan hallinnan Power BI -sisältö](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Työntekijän kehityksen Power BI -sisältö](employee-development-PBI.md) 
-- [Taloudellisen suorituskyvyn Power BI -sisältö*](financial-performance-power-bi-content-pack.md)
+- [Taloudellisen suorituskyvyn Power BI -sisältö](financial-performance-power-bi-content-pack.md)
 - [Käyttöomaisuuden hallinnan Power BI -sisältö](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
 - [Oppimisen Power BI -sisältö](learning-power-bi.md)
 - [Käytäntöpäällikön Power BI -sisältö](practice-manager-power-bi.md)
@@ -53,16 +53,6 @@ Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise
 - [Toimittajan maksujen Power BI -sisältö](../../financials/accounts-payable/Vendor-payments-workspace.md)
 - [Varaston suorituskyvyn Power BI -sisältö](warehouse-power-bi-content.md)
 - [Työvoiman mittarit - Power BI -sisältö](workforce-analysis-power-bi-content-pack.md)  
-
-### <a name="accessing-the-content"></a>Sisällön käyttäminen
-
-#### <a name="embedded-content"></a>Upotettu sisältö
-Tähtimerkillä (\*) merkittyä sisältöä lukuun ottamatta kaikki edellisessä luettelossa mainittu sisältö on upotettuna sovelluksessa. Saat lisätietoja Power BI -sisällön tarkastelemista napsauttamalla edellä olevia linkkejä.
-
-Power BI -raporttien tietojen näyttäminen edellyttää, että Yksikkösäilö on päivitetty. Lisätietoja on ohjeaiheen [Power BI:n ja yksikkösäilön integraatio](power-bi-integration-entity-store.md) kohdassa *Päivitä Yksikkösäilö*.
-
-#### <a name="files-available-in-lifecycle-services"></a>Lifecycle Servicesissä käytettävissä olevat tiedostot
-Tämä Power BI -sisältö on käytettävissä Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen yhdistämisestä tietoihin on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
 
 ## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a>Dynamics 365 for Operationsin version 1611 Power BI -sisältö
 Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, seuraava Power BI -sisältö on käytettävissä:
@@ -81,9 +71,6 @@ Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, seuraava P
 - [Varaston suorituskyvyn Power BI -sisältö](warehouse-power-bi-content.md)
 - [Työvoiman mittarit - Power BI -sisältö](workforce-analysis-power-bi-content-pack.md)  
 
-### <a name="accessing-the-content"></a>Sisällön käyttäminen
-Tämä Power BI -sisältö on käytettävissä LCS:n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen yhdistämisestä tietoihin on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
-
 ## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n Power BI -sisältö
 Jos käytössä on Microsoft Dynamics AX 7.0 tai Microsoft Dynamics AX 7.0.1, seuraava Power BI -sisältö on käytettävissä:
 
@@ -91,15 +78,5 @@ Jos käytössä on Microsoft Dynamics AX 7.0 tai Microsoft Dynamics AX 7.0.1, se
 - [Taloudellisen suorituskyvyn Power BI -sisältö](financial-performance-power-bi-content-pack.md)
 - [Retail channel performance Power BI -sisältö](retail-channel-performance-dashboard-power-bi-data.md) 
 
-### <a name="accessing-the-content"></a>Sisällön käyttäminen
-Tämä Power BI -sisältö on käytettävissä PowerBI.comista.
 
-1. Kirjaudu sisään osoitteessa [PowerBI.com](https://www.powerbi.com/).
-2. Valitse **Nouda tiedot**.
-3. Valitse **Palvelut**-ruudussa **Nouda**.
-4. Valitse haluamasi sisältöpaketti ja valitse sitten **Nouda**.
-5. Anna Dynamics AX -ympäristön URL-osoite. URL-osoitteen on oltava muotoa **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Valitse **Seuraava**.
-6. Valitse todennustavaksi **oAuth2** ja valitse **Kirjaudu sisään**.
-7. Anna pyydettäessä Microsoft Office 365 -tili, jolla on Microsoft Dynamics AX -ympäristön käyttöoikeudet.
-8. Tuontiprosessi alkaa automaattisesti sisäänkirjautumisen jälkeen. Kun tuonti on valmis, sisältöpaketin raportit näkyvät siirtymisruudussa. Valitse raportti, kun haluat katsella tuotuja tietoja.
 

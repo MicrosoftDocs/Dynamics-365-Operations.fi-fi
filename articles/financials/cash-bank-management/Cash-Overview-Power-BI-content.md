@@ -3,23 +3,23 @@ title: "Kassayhteenveto – Power BI -sisältö"
 description: "Tässä ohjeaiheessa käsitellään kassayhteenvetoa ja Power BI -sisältöä. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä."
 author: saraschi2
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 8a3d12b3b0f71ea8b84b1618d9bb6bbc416e3b1d
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 5d02a009ca988f91a212e467d4f9784248bbae76
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -53,10 +53,6 @@ Seuraavassa taulukossa on tietoja mittareista, jotka löytyvät **Kassayhteenvet
 | Valuuttaennuste                     | <ul><li>Ennakoidut valuuttasaldot</li><li>Päivittäinen valuutan yhteenveto</li><li>Ennusteen tiedot</li></ul> |
 | Pankkitilin saldot                         | <ul><li>Pankkitilin kokonaissaldo järjestelmän valuuttana</li><li>Saldo yrityksen mukaan</li><li>Kuluvan päivän toteutuneen ja ennustetun saldon vertailu pankkitilin valuuttana</li><li>Saldo pankkitilin mukaan</li><li>Saldo valuutan mukaan</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Power BI -sisällön laajentaminen
-Voit tehdä hyviä analyyseja henkilöille, jotka eivät käytä Dynamics 365:tä, Lifecycle Servicesin (LCS) sisältöpakettien avulla. Nämä sisältöpaketit voidaan muokata sisältämään muita raportteja ja visuaalisia tietoja, ja ne voidaan sitten julkaista analysoitavaksi Power BI.com -vuokraajassa. 
-
-**Kassayhteenveto** – Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](../../dev-itpro/analytics/power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
@@ -72,6 +68,5 @@ Seuraavassa taulukossa on esitetty yksiköt, joihin **Kassayhteenveto** – Powe
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Yhteenveto saapuvasta ja lähtevästä kassavirrasta sekä saldo kaikkien yritysten järjestelmän valuuttana |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Yhteenveto tapahtuman nettosummasta ja valuuttojen saldosta tapahtuman valuuttana |
 
-Näitä yksikköjä käytettiin luomaan laskettuja mittoja tietomallissa. Näillä laskennallisilla mitoilla lasketaan sitten **Kassayhteenveto** – Power BI -sisällön kaavioissa ja raporteissa. Voit sisällyttää lisälaskutoimitukset raportteihin ja koontinäyttöön lataamalla Power BI -tiedoston LCS:stä ja muokkaamalla sitä. Tämä tiedosto on sisällön luomisessa käytetty oletustietomalli. Kun olet tehnyt haluamasi muutokset, voit luoda organisaation sisällön ja koontinäytöt, jotka sisältävät lisäämäsi tiedot.
 
 

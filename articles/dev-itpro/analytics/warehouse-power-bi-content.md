@@ -3,7 +3,7 @@ title: "Varaston suorituskyvyn Power BI -sisältö"
 description: "Tässä aiheessa kuvataan, mitä kuuluu varaston suorituskyvyn Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: Mirzaab
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: e5a900000286b5f076c377f7b1a9a260cc40621a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -76,15 +76,6 @@ Varaston esimiehet voivat käyttää **Varaston suorituskyvyn** Power BI -sisäl
 | Lähetysten suorituskyky        | Lähetetyt tuotteen mukaan                       | Etuajassa, ajallaan tai myöhässä lähetettyjen tuotteiden osuus nimikkeen tai nimikeryhmän mukaan.                                                                                                                                                                                                                                                                                                                                   |
 | Lähetysten suorituskyky        | Lähetetyt asiakkaan mukaan                      | Etuajassa, ajallaan tai myöhässä lähetettyjen tuotteiden osuus asiakkaan tai asiakasryhmän mukaan.                                                                                                                                                                                                                                                                                                                           |
 | Lähetysten suorituskyky        | Lähetetyt sijainnin/varaston mukaan              | Etuajassa, ajallaan tai myöhässä lähetettyjen tuotteiden osuus sijainnin tai varaston mukaan.                                                                                                                                                                                                                                                                                                                                    |
-## <a name="extending-the-power-bi-content"></a>Power BI -sisällön laajentaminen
-Jos käytät Microsoft Dynamics Lifecycle Servicesin (LCS) sisältöpaketteja, voit tehdä erinomaisia analyyseja henkilöille, jotka eivät käytä Microsoft Dynamics 365:tä. Voit muokata näitä sisältöpaketit sisältämään muita raportteja ja visuaalisia tietoja ja julkaista sitten sisältöpaketit analysoitavaksi Power BI.com -vuokraajassa. 
-
-**Varaston suorituskyvyn** Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
-
-Muista ladata käyttämääsi Dynamics 365 -versiota vastaava **Varaston suorituskyvyn** sisältö.
-
-> [!NOTE]
-> Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, Power BI -sisällön edellytyksenä on KB 4011327. Kun olet kirjautunut LCS:ään, voit siirtyä tietämyskantaan osoitteessa https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Tietomallin ja laskelmien tiedot
 Seuraavia tietoja käytetään **Varaston suorituskyvyn** Power BI -sisällön raporttisivujen täyttämiseen. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md). 

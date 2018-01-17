@@ -1,6 +1,6 @@
 ---
 title: "Toimittajayhteistyö asiakkaiden kanssa"
-description: "Tässä aiheessa kuvataan, miten voit käyttää ostotilauksia toimittajayhteistyön avulla Finance and Operations -ympäristössä ja valvoa tavaralähetysvarastoa."
+description: "Tässä aiheessa kerrotaan, miten voit käyttää ostotilauksia toimittajayhteistyön avulla Microsoft Dynamics 365 for Finance and Operations, Enterprise editionissa ja valvoa tavaralähetysvarastoa."
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: bis
 ms.search.scope: Core, Operations
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4ad7c4f14cf60b2f59124ac98d55c4b92edabb47
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 7646b2e01ea1f9cdca58b9971c3dea21b99525e2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -30,48 +30,118 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
+Tässä aiheessa kerrotaan, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa Microsoft Dynamics 365 for Finance and Operations, Enterprise editionissa. Toimittajat voivat suorittaa liiketoimintaprosessien sarjan seuraavista työtiloista:
 
-Tässä aiheessa kuvataan, miten voit käyttää ostotilauksia toimittajayhteistyön avulla Finance and Operations -ympäristössä ja valvoa tavaralähetysvarastoa.
+- **Ostotilauksen vahvistus** – ostotilausten seuranta ja niihin vastaaminen.
+- **Toimittajan tarjoukset** – tarjouspyyntöjen tarkastelu ja niihin vastaaminen tekemällä tarjouksia.
+- **Toimittajatiedot** – toimittajan päätietojen tarkastelu ja päivittäminen.
+- **Laskutus** – laskujen käsittely. Tässä ohjeaiheessa ei käsitellä **Laskutus**-työtilaa. Lisätietoja kyseisestä työtilasta on kohdassa [Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
 
-Tässä aiheessa kuvataan, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa Microsoft Finance and Operations -ympäristössä. Aihe sisältää tietoja ostotilausten seuraamisesta ja niihin vastaamisesta sekä tavaralähetysvaraston valvonnasta. Toimittajayhteistyötä on myös mahdollista käyttää laskujen käsittelyyn. Saat lisätietoja kohdasta [Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+Toimittajat voivat seurata myös tavaralähetysvaraston tietoja.
 
-## <a name="working-with-purchase-orders"></a>Ostotilausten käsittely
-**Ostotilauksen vahvistus** -työtilan avulla voit vastata ostotilauksiin, jotka on lähetetty sinulle tarkistusta varten. Voit myös tarkastella ostotilauksen tietoja, jotka odottavat toimenpidettä asiakkaalta, ja ostotilauksia jotka on vahvistettu mutta edelleen avoimia. **Ostotilauksen vahvistus** -työtilassa on kolme luetteloa:
+## <a name="working-with-pos-in-the-purchase-order-confirmation-workspace"></a>Ostotilausten käsittely Ostotilauksen vahvistus -työtilassa
 
--   **Tarkistettavat ostotilaukset**: luettelossa näkyvät kaikki sinulle lähetetyt ostotilaukset, jotka odottavat vastaustasi. Kun olet vastannut, ostotilaus poistuu luettelosta. Jos asiakas lähettää uuden version ostotilauksesta ennen kuin olet vastannut edelliseen, ainoastaan uusin versio näkyy luettelossa.
--   **Odottaa asiakkaan toimintoa**: luettelossa voit selata ostotilauksia, joihin olet vastannut mutta joita asiakas ei ole vielä vahvistanut. Jos olet hyväksynyt ostotilauksen, voit valvoa sitä luettelossa, kunnes tilaksi muuttuu **vahvistettu**. Jos hylkäsit ostotilauksen tai hyväksyit sen muutosten kera, voit valvoa ostotilausta luettelossa, kunnes asiakas lähettää uuden version.
--   **Avoimet vahvistetut ostotilaukset**: luettelo sisältää kaikki tililläsi olevat ostotilaukset, joiden tila on **vahvistettu**. Kun kaikki ostotilausta vastaavat tuotteet tai palvelut on vastaanotettu, ostotilaus poistuu luettelosta.
+Voit vastata **Ostotilauksen vahvistus** -työtilassa ostotilauksiin, jotka on lähetetty sinulle tarkistusta varten. Voit myös tarkastella asiakkaan toimintoja odottavaa ostotilausta sekä vahvistettuja mutta edelleen avoimia ostotilauksia.
 
-Seuraavassa luettelossa on neljä sivua, joiden avulla voit käsitellä ostotilauksia. Kahden sivun tiedot ovat samat kuin työtilan luetteloissa:
+**Ostotilauksen vahvistus** -työtilassa on kolme luetteloa:
 
--   **Tarkistettavat ostotilaukset** (katso edellä)
--   **Ostotilausten toimittajan vahvistushistoria**: sivu sisältää kaikki ostotilaukset ja niiden versiot, jotka on lähetetty toimittajalle, ja kaikki vastaukset, jotka on palautettu toimittajalta.
--   **Avoimet vahvistetut ostotilaukset** (katso edellä)
--   **Kaikki vahvistetut ostotilaukset** sivu sisältää kaikki vahvistetut ostotilaukset, mukaan lukien ne joiden tuotteet tai palvelut on vastaanotettu. Tämän luettelon avulla voit valvoa, mitkä ostotilaukset voidaan laskuttaa.
+- **Tarkistettavat ostotilaukset** – Luettelossa on kaikki sinulle lähetetyt ja vastausta odottavat ostotilaukset. Kun olet vastannut, ostotilaus poistuu luettelosta. Jos asiakas lähettää uuden version ostotilauksesta ennen edelliseen versioon vastaamista, vain uusin versio näkyy luettelossa.
+- **Odottaa asiakkaan toimintoa** – Tässä luettelossa on kaikki ostotilauksia, joihin olet vastannut mutta joita asiakas ei ole vielä vahvistanut. Jos hyväksyt ostotilauksen, voit seurata sitä luettelossa, kunnes sen tilaksi tulee **Vahvistettu**. Jos hylkäät ostotilauksen tai hyväksyit sen muutosten kera, voit seurata sitä luettelossa, kunnes asiakas lähettää uuden version.
+- **Avoimet vahvistetut ostotilaukset** – Tässä luettelossa on kaikki tililläsi olevat ostotilaukset, joiden tila on **Vahvistettu**. Kun kaikki ostotilausta vastaavat tuotteet tai palvelut on vastaanotettu, ostotilaus poistuu luettelosta.
 
-### <a name="responding-to-purchase-orders"></a>Ostotilauksiin vastaaminen
+Voit käsitellä ostotilauksia seuraavilla sivuilla:
 
-Asiakkaan tarkastettaviksi lähettämät ostotilaukset näkyvät **Ostotilauksen vahvistus** -työtilassa ja **Tarkistettavat ostotilaukset** -sivulla. Kun olet avannut ostotilauksen, voit hyväksyä, hylätä tai hyväksyä ostotilauksen muutosten kera. Ostotilauksen otsikossa tai yksittäisillä riveillä voi olla liitteitä. Voit liittää tietoja vastaukseesi ostotilauksen otsikkoon tai yksittäisille riveille. Voit esimerkiksi ehdottaa korvaavaa nimikettä yhdelle riville. Voit esikatsella ja tulostaa ostotilauksen PDF-muodossa **Esikatselu/tulostus** -asetuksella. Voit piilottaa tai näyttää seuraavat dimensiosarakkeet **Näytä dimensiot** -toiminnolla: toimipaikka, varasto, väri, koko, malli, konfiguraatio. Käytettäessä **Hyväksy muutosten kera** -vaihtoehtoa, voit hyväksyä tai hylätä yksittäisiä rivejä. Voit tehdä seuraavia muutoksia riveille:
+- **Tarkistettavat ostotilaukset** – Tällä sivulla on samat tiedot kuin työtilan **Tarkistettavat ostotilaukset** -luettelossa. Luetteloa on jo käsitelty aiemmin tässä aiheessa.
+- **Ostotilausten toimittajan vahvistushistoria** – Tällä sinulla on kaikki toimittajalle lähetetyt ostotilaukset ja ostotilausten kaikki versiot. Se sisältää myös kaikki toimittajan palauttamat vastaukset.
+- **Avoimet vahvistetut ostotilaukset** – Tällä sivulla on samat tiedot kuin työtilan **Avoimet vahvistetut ostotilaukset** -luettelossa. Luetteloa on jo käsitelty aiemmin tässä aiheessa.
+- **Kaikki vahvistetut ostotilaukset** – Tällä sivulla on kaikki vahvistetut ostotilaukset. Tämä sivulla on myös ne ostotilaukset, joiden tuotteet tai palvelut on vastaanotettu. Tämän luettelon avulla voit seurata ostotilauksia, jotka voidaan laskuttaa.
 
--   Päivämäärien tai määrien muuttaminen. Jos haluat päivittää vahvistetun toimituspäivän kaikilla riveillä, valitse **Päivitä toimituspäivä** vaihtoehto ostotilauksen otsikossa.
--   Rivien jakaminen eri toimituspäivämäärille tai määrille
--   Korvaa nimike. Tämä tehdään kirjoittamalla nimikkeen kuvaus ja nimiketunnus **Ulkoinen** -kenttään **Rivin tiedot** -osaan.
+### <a name="responding-to-pos"></a>Ostotilauksiin vastaaminen
 
-Et voi muuttaa hinnoittelutietoja etkä maksuja, mutta voi tehdä muutosehdotuksia niihin huomautuksissa. Jos asiakas lähettää sinulle uuden ostotilauksen version, sen loppuliite osoittaa, että kyseessä on aiemmin lähetetyn ostotilauksen muokattu versio. **Ostotilausten toimittajan vahvistushistoria** -sivulla voit seurata jokaisen tilauksen historiatietoja.
+Asiakkaan sinulle tarkastettaviksi lähettämät ostotilaukset näkyvät **Ostotilauksen vahvistus** -työtilassa ja **Tarkistettavat ostotilaukset** -sivulla. Kun olet avannut ostotilauksen, voit hyväksyä, hylätä tai hyväksyä ostotilauksen muutosten kera. Ostotilauksen otsikossa tai yksittäisillä riveillä voi olla liitteitä. Voit lisäksi liittää vastaukseesi tietoja ostotilauksen otsikkoon tai yksittäisille riveille. Voit esimerkiksi ehdottaa korvaavaa nimikettä yhdelle riville.
+
+Voit esikatsella ja tulostaa ostotilauksen PDF-muodossa **Esikatselu/tulostus** -asetuksella. Voit piilottaa tai näyttää seuraavat dimensiosarakkeet **Näytä dimensiot** -toiminnolla: **Toimipaikka**, **Varasto**, **Väri**, **Koko**, **Tyyli** ja **Konfiguraatio**. 
+
+Käytettäessä **Hyväksy muutosten kera** -vaihtoehtoa, voit hyväksyä tai hylätä yksittäisiä rivejä. Voit tehdä seuraavia muutoksia riveille:
+
+- Päivämäärien tai määrien muuttaminen. Voit päivittää vahvistetun toimituspäivän kaikilla riveillä valitsemalla **Päivitä toimituspäivä** -asetuksen ostotilauksen otsikossa.
+- Jaa rivit eri toimituspäivämäärille tai määrille.
+- Korvaa nimike. Anna nimikkeen kuvaus ja nimiketunnus **Ulkoinen**-kentän **Rivin tiedot** -osassa.
+
+Et voi muuttaa hinnoittelutietoja etkä maksuja, mutta voi tehdä niihin muutosehdotuksia käyttämällä huomautuksia.
+
+Jos asiakas lähettää sinulle uuden version ostotilauksesta version, sen loppuliite osoittaa, että kyseessä on aiemmin lähetetyn ostotilauksen muokattu versio. Voit seurata **Ostotilausten toimittajan vahvistushistoria** -sivulla kunkin tilauksen historiatietoja.
 
 ## <a name="monitoring-consignment-inventory"></a>Tavaralähetysvaraston valvonta
-Jos käytät tavaralähetysvarastoa, voit käyttää toimittajayhteistyöliittymää tietojen tarkasteluun seuraavilla sivuilla:
 
--   **Tavaralähetysvarastoa pienentävät ostotilaukset** - Tavaralähetysvaraston ostotilaukset luodaan, kun varaston omistajuus vaihtuu asiakkaalle. Nämä tavaralähetyksen ostotilaukset näytetään vain **Tavaralähetysvarastoa vähentävät ostotilaukset** -sivulla. Ne eivät sisälly **Kaikki vahvistetut ostotilaukset** -sivulle.
--   **Tavaralähetysvarastosta vastaanotetut tuotteet**: sivulla luetteloidaan kaikki tapahtumat, joissa tuotteiden omistajuus siirretään varastoa käyttävälle yritykselle. Näiden tietojen avulla voit laskuttaa asiakasta.
--   **Käytettävissä oleva tavaralähetysvarasto**: Tällä sivulla näkyy yrityksesi omistama käytettävissä oleva tavaralähetysvarasto, joka on käytettävissä asiakkaan varastossa.
+Jos käytät tavaralähetysvarastoa, voit tarkastella tietoja toimittajayhteistyöliittymässä seuraavilla sivuilla:
 
+- **Tavaralähetysvarastoa kuluttavat ostotilaukset** – Tavaralähetysvaraston ostotilaukset luodaan, kun varaston omistajuus siirtyy asiakkaalle. Nämä tavaralähetyksen ostotilaukset näkyvät vain tällä sivulla. Niitä ei ole **Kaikki vahvistetut ostotilaukset** -sivulla.
+- **Tavaralähetysvarastosta vastaanotetut tuotteet** – Tällä sivulla on luettelo kaikista tapahtumista, joissa tuotteiden omistajuus siirretään varastoa kuluttavalle yritykselle. Näiden tietojen avulla voit laskuttaa asiakasta.
+- **Käytettävissä oleva tavaralähetysvarasto** – Tällä sivulla on käytettävissä oleva tavaralähetysvarasto, jonka yritys omistaa mutta joka on käytettävissä asiakkaan varastossa.
 
-<a name="see-also"></a>Lisätietoja
---------
+## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>Tarjouspyyntöjen käsittely Toimittajan tarjoukset -työtilassa
+
+Voit tarkastella **Toimittajan tarjoukset** -työtilassa tarjouspyyntöjä, joihin yrityksesi on kutsuttu vastaamaan. Voit myös vastata tarjouspyyntöön. 
+
+Työtilassa on myös kaikki hävityt ja voitetut tarjouspyynnöt. Jos järjestelmä on lisäksi määritetty julkisen sektorin käyttöön, työtilassa on julkisesti käytettävissä olevat tarjouspyynnöt.
+
+### <a name="viewing-rfqs"></a>Tarjouspyyntöjen tarkastelu
+
+Saat käyttöösi seuraavat tiedot avaamalla **Toimittajan tarjoukset** -työtilan:
+
+- Kun valitset **Uudet tarjouskutsut**, näet tarjouspyynnöt, joihin yritys on kutsuttu vastaamaan. Voit tarkastella tarjouspyyntöä täällä ja aloittaa tarjousprosessin. Näet myös muunnetut tarjouspyynnöt, joihin on lähetettävä uusi tarjous.
+- Kun valitset **Palautetut tarjoukset**, näet tarjouspyynnöt, jotka asiakas on palauttanut lisätietoja tai tarjouksen päivittämistä varten.
+- Kun valitset **Käsittelyssä olevat tarjoukset**, näet tarjouspyynnöt, joita sinä tai yritystä edustava yhteyshenkilö on käsitellyt mutta jota ei ole vielä lähetetty.
+- Kun valitset **Myönnetyt tarjoukset**, näet milloin asiakas on myöntänyt vähintään yhden tarjouksen rivinimikkeen.
+- Kun valitset **Hävityt tarjoukset**, näet tarjoukset, jonka kaikki rivit on hylätty.
+- Kun valitset **Tarjouspyynnöt**-linkit, näet luettelon kaikista toimittajan tarjouspyyntökutsuista ja lähetetyistä tarjouksista. **Tarjouspyynnöt**-sivulla on luettelo kaikista tarjouspyynnöistä, joissa toimittaja on ollut mukana. Voit tehdä haun tilan perusteella.
+- Kun valitset **Hylätyt tarjoukset** -linkin, näet luettelon kaikista tarjouspyynnöistä, joissa toimittajan yhteyshenkilö on hylännyt tarjouksen tekemisen.
+
+### <a name="working-with-rfqs-that-are-publicly-available"></a>Julkisesti käytettävissä olevien tarjouspyyntöjen käsitteleminen
+
+Julkisella sektorilla työskentelevät henkilöt näkevät julkisiksi tehdyt avoimet ja vanhentuneet tarjouspyynnöt.
+
+- Kun valitset **Avaa julkaistut tarjouspyynnöt** -linkin, näet luettelon julkisesti käytettävissä olevista avoimista tarjouspyynnöistä. Avoimella tarjouspyynnöllä tarkoitetaan tarjouspyyntöä, joka ei ole vielä vanhentunut. Vanhentumispäivä ja -aika näkyvät tarjouspyynnön otsikossa.
+
+    Jos sinut on kutsutte tekemään tarjous, sama tarjouspyyntö on myös **Uudet tarjouskutsut** -sivulla. Haluat ehkä joskus tehdä tarjouksen avoimelle tarjouspyynnölle, vaikka sinua ei ole kutsuttu tekemään tarjousta. Siinä tapauksessa voit ehkä kutsua itse itsesi, jos toimittaja on ottanut itsekutsumisen käyttöön tarjouspyyntötapauksessa.
+
+- Kun valitset **Suljetut julkaistut tarjouspyynnöt** -linkin, näet luettelon julkisesti käytettävissä olevista suljetuista tarjouspyynnöistä. Suljetulla tarjouspyynnöllä tarkoitetaan vanhentunutta tarjouspyyntöä. Vanhentumispäivä ja -aika näkyvät tarjouspyynnön otsikossa.
+
+    Suljettu tarjouspyyntö näyttää kaikki toimittajien tarjoukset rivitasolle saakka. Sitä mukaan kun tarjouksia myönnetään tai hylätään, kyseinen tieto näkyy suljetussa tarjouspyynnössä. Myös tarjoukseen sisältyneet liitteet ovat käytettävissä.
+
+**Huomautus:** tämä toiminto on käytössä vain, jos julkisen sektorin määritykset on otettu käyttöön.
+
+### <a name="bidding"></a>Tarjoukset
+
+- Aloita tarjouspyyntöön liittyvän tarjouksen tekeminen valitsemalla **Tarjous**.
+
+    Jos tarjouspyynnön otsikon ja rivien tarjouskenttien muokkaus on otettu käyttöön, voit antaa tarjouksen suoraan riviruudukkoon. Sinun on otettava huomioon myös rivitietoihin lisättävät tarjouksen lisätiedot.
+
+    Kun aloitat tarjouksen käsittelyn, se tulee näkyviin **Käsittelyssä olevat tarjoukset** -osaan.
+
+    Voit tallentaa tarjouksen koska tahansa ennen vanhentumispäivää. Voit sitten palata myöhemmin viimeistelemään ja lähettämään tarjouksen. Voit peruuttaa tarjouksen ja päivittää sitä lähettämisen jälkeen vanhentumispäivään saakka.
+
+- Voit nollata tarjoukseen annetut tiedot ja palauttaa sen alkuperäiseksi tarjouspyynnöksi valitsemalla **Nollaa arvot tarjouspyynnöstä**. Voit nollata otsikon tai rivin arvot.
+- Voit käsitellä vaihtoehtoisia arvoja valitsemalla riviruudukossa **Lisää vaihtoehto** tai **Poista vaihtoehto**.
+
+    Jotkin tarjouspyynnöt sallivat vaihtoehtoiset tarjoukset. Voit määrittää vaihtoehtotarjoukset **Luokka**-tyypin riveille, koska yksittäisiä nimikkeitä ei voi lisätä vaihtoehtoina. 
+
+- Voit avata asiakkaan tarjouspyyntöön lisäämän liitteen valitsemalla **Tarjouspyynnön liite** tai **Tarjouspyynnön rivien liite**. Voit ladata liitteet yhdessä tarjouksen kanssa valitsemalla **Tarjouksen liitteet** tai **Tarjousrivin liitteet**.
+
+    On mahdollista, että sinun on vastattava kyselylomakkeeseen, ennen kuin voit lähettää tarjouksen.
+
+- Valitse **Hylkää**, jos et halua tehdä tarjousta. Kun olet valinnut **Hylkää**, ei voi peruuttaa toimintoa etkä tehdä tarjousta.
+
+Jos tarjouspyyntöä muutetaan, sinun on tehtävä uusi tarjous. Lisätietoja muutoksesta on tarjouspyyntösivun **Muutokset**-välilehdessä. Muutettu tarjouspyyntö näkyy **Uudet tarjouskutsut** -sivulla.
+
+## <a name="accessing-vendor-master-data-in-the-vendor-information-workspace"></a>Toimittajan päätietojen käyttäminen Toimittajantiedot-työtilassa
+
+Voit toimittajana käyttää niitä tietoja, joita asiakas hallitsee toimittajan päätietueessa. Niinpä voitkin pitää tiedot ajan tasalla. Tietojen päivittäminen edellyttää, että sinulla toimittajan (ulkoinen) järjestelmänvalvojan rooli.
+
+Käytettävissä on seuraavat tiedot: toimittajan nimi, osoitteet, yhteystiedot, yhteyshenkilöt ja heidän yhteystietonsa, tunnusnumerot, verorekisteröintinumerot, hankintaluokat, joiden myynti toimittajalta asiakkaalle on hyväksytty, sekä tiedot varmenteista.
+
+## <a name="see-also"></a>Lisätietoja
 
 [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md)
-
-
-
 

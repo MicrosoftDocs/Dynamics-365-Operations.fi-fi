@@ -17,10 +17,10 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9eb962e903ac9ee359134cae35ebd399e23cc4e1
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 83c2ce79f5bef058f55af0ecf498b207efc0507a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -41,4 +41,5 @@ Retail Headquarters -sovelluksen asetusten perusteella tuotteita voi luokitella 
     
 - **Asiakastilausten tekeminen ei edellytä sarjanumeroita** – asiakastilauksen voi tehdä yhdessä myymälässä ja täyttää toisessa. Asiakastilauksia tekevän kassanhoitajan ei tarvitse syöttää sarjanumeroa. Sarjanumero lisätään keräily- tai noutovaiheessa. Sarjanumero on kuitenkin annettava kaikille rivinimikkeille, joille on valittu **Nouto liikkeestä** -toimitustyyppi. Muussa tapauksessa tapahtuma ei onnistu.    
 - **Sarjoitettuja tuotteita ei koosteta tapahtumanäytöllä** – **Koosta tuotteet** -asetus **Toimintoprofiili**-sivun **Pääte**-kenttäryhmässä mahdollistaa saman, ei-sarjoitetun tuotteen koostamisen tapahtumanäytöllä. Kun tuotteet koostetaan, ne on helpompi nähdä tapahtumaruudukossa. Koska sarjanumerot ovat tavallisesti yksilöiviä ja myyntiedustajien ei tarvitse kirjoittaa sarjanumeroita ennen uloskuittausta, **Koosta tuotteet** -asetus ei koske sarjoitettuja tuotteita. Sarjoitettuja tuotteita ei yhdistetä tapahtumanäytöllä, jos **Koosta tuotteet** -asetus on valittuna.
+- **Mahdollisuus etsiä kirjauskansioita sarjanumeron mukaan** – Kirjauskansioissa voi nyt tehdä hakuja myös sarjanumeroiden mukaan. Se tehdään avaamalla kirjauskansiotoiminto ja painamalla sovelluspalkissa Tarkennettu haku -painiketta. Lisää suodatin -painikkeella voi lisätä suodattimen myös sarjanumerohakuun.
 

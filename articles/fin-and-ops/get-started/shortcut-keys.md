@@ -3,7 +3,7 @@ title: "Pikanäppäimet"
 description: "Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operations, Enterprise edition-ohjelmistossa."
 author: jasongre
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Ope
 
 **Huomautus:** Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
 
-## <a name="finding-a-shorcut"></a>Pikanäppäimen löytäminen
+## <a name="finding-a-shortcut"></a>Pikanäppäimen löytäminen
 Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytettävissä olevat pikanäppäimet suoraan käyttöliittymästä. Napsauta ohjausobjektia hiiren kakkospainikkeella ja valitse **Näytä pikanäppäimet**. Näyttöön tulee valintaikkuna, jossa näkyvät pikanäppäimet, joita voit käyttää sivun eri osissa. 
 
 
@@ -143,6 +143,9 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Siirry ensimmäiseen tietueeseen                                                                                               | Ctrl+Home                       |
 | Siirry viimeiseen tietueeseen                                                                                                | Ctrl+End                        |
 | Suorita ruudukon oletustoiminto<br><br>**Huomautus:** tämä pikanäppäin on käytössä, kun kohdistus on solussa, joka sisältää hyperlinkin ja kaikki kyseisen sarakkeen solut sisältävät linkkejä.                 | Enter                           |
+| Kohdistuksen siirtäminen valitun rivin ja otsikkorivin välillä                                                               | Alt+Vaihto+H                     |
+| Suurenna tai pienennä nykyistä saraketta (kohdistus otsikkorivillä)                                                  | Oikea nuoli, vasen nuoli        |
+| Avaa nykyisen sarakkeen ruudukkosuodatus (kohdistus otsikkorivillä)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Syötteiden ohjausobjektien pikanäppäimet
 |                                                                              |                               |
