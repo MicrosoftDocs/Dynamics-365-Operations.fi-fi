@@ -1,0 +1,56 @@
+---
+title: "Toimittajapyynnön konfiguroinnit"
+description: "Tässä aiheessa käsitellään kenttiä, jotka on täytettävä uudessa toimittajapyynnössä."
+author: mkirknel
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.search.scope: Operations
+ms.search.region: Global
+ms.author: mkirknel
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: AX 7.3
+ms.translationtype: HT
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: e45f8698e69a2a870c7c00f91622216deb4cb38a
+ms.contentlocale: fi-fi
+ms.lasthandoff: 12/14/2017
+
+---
+
+# <a name="vendor-request-configurations"></a><span data-ttu-id="1b935-103">Toimittajapyynnön konfiguroinnit</span><span class="sxs-lookup"><span data-stu-id="1b935-103">Vendor request configurations</span></span>
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="1b935-104">Toimittajapyynnön viimeistely edellyttää, että toimittajan yhteyshenkilö suorittaa ohjatun mahdollisen toimittajan rekisteröintitoiminnon.</span><span class="sxs-lookup"><span data-stu-id="1b935-104">To complete a vendor request, a vendor contact person must complete the prospective vendor registration wizard.</span></span>
+
+<span data-ttu-id="1b935-105">Voit luoda **Toimittajapyynnön konfiguroinnit** -lomakkeessa profiileja, jotka määrittävät pakolliset ja näkyvät kentät ohjatussa mahdollisen toimittajan rekisteröintitoiminnossa.</span><span class="sxs-lookup"><span data-stu-id="1b935-105">In the **Vendor request configurations** form, you can create profiles that specify required fields and visible fields in the prospective vendor registration wizard.</span></span>
+
+<span data-ttu-id="1b935-106">Ohjattu toimittajan rekisteröintitoiminto kysyy aluksi mahdollisen toimittajan käyttäjältä, missä maassa tai millä alueella toimittaja harjoittaa liiketoimintaa.</span><span class="sxs-lookup"><span data-stu-id="1b935-106">The vendor registration wizard will start out by asking the prospective vendor user which country/region the vendor is doing business in.</span></span> <span data-ttu-id="1b935-107">Tämä tieto määrittää käytettävän konfiguroinnin.</span><span class="sxs-lookup"><span data-stu-id="1b935-107">This information determines the applicable configuration.</span></span> <span data-ttu-id="1b935-108">Jos maalle tai alueelle ei ole määritettyä tiettyä konfigurointia, käytetään oletuskonfigurointia.</span><span class="sxs-lookup"><span data-stu-id="1b935-108">If no specific configuration is defined for a country/region, a default configuration will be used.</span></span>
+
+### <a name="set-up-a-vendor-request-configuration"></a><span data-ttu-id="1b935-109">Toimittajapyynnön konfiguroinnin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="1b935-109">Set up a vendor request configuration</span></span>
+
+<span data-ttu-id="1b935-110">Toimittajapyynnön konfiguroinnit -lomakkeessa on oletusarvoisesti käytössä toimittajakonfigurointi.</span><span class="sxs-lookup"><span data-stu-id="1b935-110">By default, there is a vendor configuration available in the Vendor request configurations form.</span></span>
+
+<span data-ttu-id="1b935-111">Oletuskonfiguroinnin maata tai alueita ei voi valita, joten **Maat/alueet**-osaa ei voi muuttaa.</span><span class="sxs-lookup"><span data-stu-id="1b935-111">It is not possible to select country/regions for the default configuration, so the **Countries/regions** section cannot be changed.</span></span>
+
+1.  <span data-ttu-id="1b935-112">Valitse ensin **Hankinta** > **Asetukset** > **Toimittajat** ja sitten **Toimittajapyynnön konfiguroinnit**.</span><span class="sxs-lookup"><span data-stu-id="1b935-112">Click **Procurement and sourcing** > **Setup** > **Vendors**, and then click **Vendor request configurations**.</span></span>
+2.  <span data-ttu-id="1b935-113">Määritä luettelon kenttien tila napsauttamalla **Kentät**-välilehteä.</span><span class="sxs-lookup"><span data-stu-id="1b935-113">Click the **Fields** tab to set the status of the listed fields.</span></span>
+-   <span data-ttu-id="1b935-114">Piilotettu (ei näy)</span><span class="sxs-lookup"><span data-stu-id="1b935-114">Hidden (Not visible)</span></span>
+-   <span data-ttu-id="1b935-115">Näytetty (näkyvissä mutta ei pakollinen)</span><span class="sxs-lookup"><span data-stu-id="1b935-115">Displayed (Visible but not mandatory)</span></span>
+-   <span data-ttu-id="1b935-116">Pakollinen (näkyvissä ja pakollinen)</span><span class="sxs-lookup"><span data-stu-id="1b935-116">Required (Visible and mandatory)</span></span>
+3.  <span data-ttu-id="1b935-117">Määritä **Sisältö**-välilehdessä, näytetäänkö teksti ohjatussa toiminnossa ja onko ilmoitettava, että mahdollisen toimittajan käyttäjän on hyväksyttävä se ennen siirtymistä ohjatun toiminnon seuraavaan vaiheeseen.</span><span class="sxs-lookup"><span data-stu-id="1b935-117">Click the **Content** tab to specify if text is going to be shown on the wizard and if there should be an acknowledgement that the prospective vendor user must accept this before moving to the next step in the wizard.</span></span> <span data-ttu-id="1b935-118">Hyväksyntä pyydetään kaikille ehdoille, jotka käyttäjän on hyväksyttävä ennen jatkamista.</span><span class="sxs-lookup"><span data-stu-id="1b935-118">The acknowledgement will be requested for any terms and conditions that the user must accept to continue.</span></span>
+
+<span data-ttu-id="1b935-119">Voit antaa lisäksi vahvistussanoman, joka näytetään, kun ohjattu toiminto on valmis. Voit myös lisätä yhden kyselylomakkeen tai useita lomakkeita.</span><span class="sxs-lookup"><span data-stu-id="1b935-119">You can also enter a confirmation message that will be displayed when the wizard is finalized, and you can add one or more questionnaires.</span></span>
+
+### <a name="create-a-vendor-configuration-for-a-specific-countryregion"></a><span data-ttu-id="1b935-120">Tietyn maan tai alueen toimittajakonfiguroinnin luonti</span><span class="sxs-lookup"><span data-stu-id="1b935-120">Create a vendor configuration for a specific country/region</span></span>
+1.  <span data-ttu-id="1b935-121">Valitse ensin **Hankinta** > **Asetukset** > **Toimittajat** ja sitten **Toimittajapyynnön konfiguroinnit**.</span><span class="sxs-lookup"><span data-stu-id="1b935-121">Click **Procurement and sourcing** > **Setup** > **Vendors**, and then click **Vendor request configurations**.</span></span>
+2.  <span data-ttu-id="1b935-122">Luo uusi konfigurointi valitsemalla **Uusi** ja nimeä konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="1b935-122">Click **New** to create a new configuration, and provide a name for the configuration.</span></span>
+3.  <span data-ttu-id="1b935-123">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="1b935-123">Click **Save**.</span></span>
+4.  <span data-ttu-id="1b935-124">Avaa **Maa/alueet**-välilehti ja valitse maa tai alue, jossa konfigurointia on käytettävä.</span><span class="sxs-lookup"><span data-stu-id="1b935-124">Open the **Country/regions** tab to select the country/region that the configuration should be used for.</span></span>
+5.  <span data-ttu-id="1b935-125">Viimeistele konfigurointi noudattamalla oletuskonfiguroinnin ohjeita.</span><span class="sxs-lookup"><span data-stu-id="1b935-125">Complete the configuration by following the guidelines for the default configuration.</span></span>
+
+

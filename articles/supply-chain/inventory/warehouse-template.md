@@ -1,0 +1,100 @@
+---
+title: "Varaston määrittäminen varaston konfigurointimallin avulla"
+description: "Tässä aiheessa käsitellään varaston määrittämistä varaston konfigurointimallin avulla."
+author: perlynne
+manager: AnnBe
+ms.date: 11/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
+audience: Application User
+ms.reviewer: YuyuScheller
+ms.search.scope: Core, Operations
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.search.industry: Distribution
+ms.author: perlynne
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: AX 7.3
+ms.translationtype: HT
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 87ade03ec2ba78c4d7f5832bfa6dc1b7eabd8d94
+ms.contentlocale: fi-fi
+ms.lasthandoff: 12/14/2017
+
+---
+
+# <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a><span data-ttu-id="04cd2-103">Varaston määrittäminen varaston konfigurointimallin avulla</span><span class="sxs-lookup"><span data-stu-id="04cd2-103">Set up a warehouse by using a warehouse configuration template</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="04cd2-104">Tässä aiheessa käsitellään varaston määrittämistä varaston konfigurointimallin avulla.</span><span class="sxs-lookup"><span data-stu-id="04cd2-104">This topic explains how to set up a warehouse by using a warehouse configuration template.</span></span> <span data-ttu-id="04cd2-105">Käytössäsi on useita valmiiksi määritettyjä konfigurointimalleja.</span><span class="sxs-lookup"><span data-stu-id="04cd2-105">There are several predefined configuration templates that you can use.</span></span> <span data-ttu-id="04cd2-106">Lisätietoja näiden mallien käyttämistä on kohdassa [Konfigurointitietomallit](../../dev-itpro/data-entities/configuration-data-templates.md).</span><span class="sxs-lookup"><span data-stu-id="04cd2-106">For information about how to use these templates, see [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md).</span></span>
+
+## <a name="scenarios-where-configuration-templates-can-be-helpful"></a><span data-ttu-id="04cd2-107">Skenaariot, joissa konfigurointimallit voivat olla hyödyllisiä</span><span class="sxs-lookup"><span data-stu-id="04cd2-107">Scenarios where configuration templates can be helpful</span></span>
+
+<span data-ttu-id="04cd2-108">Konfigurointimallit voivat olla hyödyllisiä monissa skenaarioissa:</span><span class="sxs-lookup"><span data-stu-id="04cd2-108">Configuration templates can be helpful in many scenarios.</span></span> <span data-ttu-id="04cd2-109">Seuraavassa on muutamia esimerkkejä:</span><span class="sxs-lookup"><span data-stu-id="04cd2-109">Here are some examples:</span></span>
+
+- <span data-ttu-id="04cd2-110">Sinulla on valmis konfigurointiasetus, jota olet testannut testiympäristössä, ja haluat nyt kopioida asetuksen tuotantoympäristöön.</span><span class="sxs-lookup"><span data-stu-id="04cd2-110">You've completed and tested a configuration setup in a test environment, and you now want to copy the setup to a production environment.</span></span>
+- <span data-ttu-id="04cd2-111">Haluat siirtää varastoasetuksen useisiin yrityksiin tai luoda uuden varaston samaan yritykseen.</span><span class="sxs-lookup"><span data-stu-id="04cd2-111">You want to roll the warehouse setup out to several legal entities or create a new warehouse in the same legal entity.</span></span>
+- <span data-ttu-id="04cd2-112">Haluat luoda nopeasti varastotoiminnon esittelyn.</span><span class="sxs-lookup"><span data-stu-id="04cd2-112">You want to quickly prepare for a demo of the warehouse functionality.</span></span>
+- <span data-ttu-id="04cd2-113">Haluat, että nykyiset nimikkeet ja varastot käyttävät varastonhallinnan eikä varastoinninhallinnan toimintoa.</span><span class="sxs-lookup"><span data-stu-id="04cd2-113">You want existing items and warehouses to use the functionality in Warehouse management instead of the functionality in Inventory management.</span></span>
+
+<span data-ttu-id="04cd2-114">Tässä aiheessa käsitellään ensimmäistä näistä skenaarioista.</span><span class="sxs-lookup"><span data-stu-id="04cd2-114">This topic focuses on the first of these scenarios.</span></span> <span data-ttu-id="04cd2-115">Se näyttää, miten konfigurointiasetuksen voi kopioida testiympäristöstä tuotantoympäristöön konfigurointimallin avulla.</span><span class="sxs-lookup"><span data-stu-id="04cd2-115">It shows how you can use a configuration template to copy a configuration setup from a test environment to a production environment.</span></span>
+
+## <a name="copy-a-configuration-setup-from-a-test-environment-to-a-production-environment"></a><span data-ttu-id="04cd2-116">Konfigurointiasetuksen kopioiminen testiympäristöstä tuotantoympäristöön</span><span class="sxs-lookup"><span data-stu-id="04cd2-116">Copy a configuration setup from a test environment to a production environment</span></span>
+
+<span data-ttu-id="04cd2-117">Tässä skenaariossa testiympäristössä on jo varaston konfigurointiasetus ja joitakin tapahtumaprosesseja.</span><span class="sxs-lookup"><span data-stu-id="04cd2-117">For this scenario, the configuration setup for a warehouse and some transaction processes already exist in a test environment.</span></span> <span data-ttu-id="04cd2-118">Haluat nyt kopioida varaston konfigurointiasetuksen testiympäristöstä tuotantoympäristöön.</span><span class="sxs-lookup"><span data-stu-id="04cd2-118">You now want to copy the configuration setup for the warehouse from the test environment to a production environment.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="04cd2-119">Konfigurointiasetusta kopioitaessa on tärkeää, että mukana on myös muut liittyvät asetustiedot.</span><span class="sxs-lookup"><span data-stu-id="04cd2-119">It's important that you include other related setup data when you copy a configuration setup.</span></span> <span data-ttu-id="04cd2-120">Esimerkki: Haluat määrittää tuotteet kopioimalla asetuksen testiympäristöstä.</span><span class="sxs-lookup"><span data-stu-id="04cd2-120">For example, you want to set up products by copying the setup from a test environment.</span></span> <span data-ttu-id="04cd2-121">Et voi kuitenkaan määrittää tuotteelle kiinteää keräilysijaintia, ennen kuin tuote on luotu.</span><span class="sxs-lookup"><span data-stu-id="04cd2-121">However, you can't set up a fixed picking location for a product before that product is created.</span></span> <span data-ttu-id="04cd2-122">Vaikka yksittäiset konfigurointimallit eivät tue tämän tyyppistä riippuvuutta, tietyt oletustietomallit tukevat sitä.</span><span class="sxs-lookup"><span data-stu-id="04cd2-122">Although individual configuration templates don't support this type of dependency, there are default data templates that support it.</span></span> <span data-ttu-id="04cd2-123">Nämä oletustietomallit on helppo sisällyttää konfigurointiprosessiin.</span><span class="sxs-lookup"><span data-stu-id="04cd2-123">You can easily include these default data templates in a configuration process.</span></span>
+
+### <a name="export-a-default-warehouse-template"></a><span data-ttu-id="04cd2-124">Oletus varastomallin vienti</span><span class="sxs-lookup"><span data-stu-id="04cd2-124">Export a default warehouse template</span></span> 
+
+1. <span data-ttu-id="04cd2-125">Avaa **Tietojen hallinta** -työtila.</span><span class="sxs-lookup"><span data-stu-id="04cd2-125">Open the **Data management** workspace.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="04cd2-126">Jos käytät työtilaa ensimmäistä kertaa, sinun on ladattava kaikki tietoyksiköt, ennen kuin voit jatkaa.</span><span class="sxs-lookup"><span data-stu-id="04cd2-126">If you're using this workspace for the first time, you must load all the data entities before you continue.</span></span>
+
+2. <span data-ttu-id="04cd2-127">Lataa oletusmallit valitsemalla ensin **Mallit**-ruudun ja sitten **Lataa oletusmallit**.</span><span class="sxs-lookup"><span data-stu-id="04cd2-127">Select the **Templates** tile, and then select **Load default templates** to load the default templates.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="04cd2-128">**Lataa oletusmallit** on käytettävissä vain **parannetussa** näkymässä.</span><span class="sxs-lookup"><span data-stu-id="04cd2-128">**Load default templates** is available only in the **Enhanced** view.</span></span> <span data-ttu-id="04cd2-129">Valitse ensin **Kehikkoparametrit** ja sitten **Näytä oletusarvot** -kentässä **Parannettu näkymä**.</span><span class="sxs-lookup"><span data-stu-id="04cd2-129">Select **Framework parameters**, and then, in the **View defaults** field, select **Enhanced view**.</span></span>
+
+3. <span data-ttu-id="04cd2-130">Kun kaikki oletusmallit on ladattu, voit muokata niitä vastaamaan liiketoimintasi tarpeita.</span><span class="sxs-lookup"><span data-stu-id="04cd2-130">After the default templates are loaded, you can change them so that they meet your business requirements.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="04cd2-131">Oletusmallien lataaminen ja mallien tuominen edellyttää järjestelmänvalvojan oikeuksia.</span><span class="sxs-lookup"><span data-stu-id="04cd2-131">To load default templates and import templates, you must have system administrator access.</span></span> <span data-ttu-id="04cd2-132">Tämä edellytys auttaa varmistamaan, että kaikki yksiköt ladataan oikein malliin.</span><span class="sxs-lookup"><span data-stu-id="04cd2-132">This requirement helps guarantee that all entities are correctly loaded into the template.</span></span>
+
+4. <span data-ttu-id="04cd2-133">Varmista, että olet siinä yrityksessä, josta haluat viedä yrityskohtaisia tietoja.</span><span class="sxs-lookup"><span data-stu-id="04cd2-133">Make sure that you're in the legal entity that you want to export the company-specific data from.</span></span>
+5. <span data-ttu-id="04cd2-134">Valitse työtilassa **Vie**.</span><span class="sxs-lookup"><span data-stu-id="04cd2-134">In the workspace, select **Export**.</span></span>
+6. <span data-ttu-id="04cd2-135">Luo uusi vientiprojekti.</span><span class="sxs-lookup"><span data-stu-id="04cd2-135">Create a new export project.</span></span>
+7. <span data-ttu-id="04cd2-136">Valitse **+ Lisää malli** ja etsi **400 - Varastonhallintajärjestelmä** -oletusvarastomalli.</span><span class="sxs-lookup"><span data-stu-id="04cd2-136">Select **+ Add template**, and find the **400 - WMS** default warehouse template.</span></span> <span data-ttu-id="04cd2-137">Tämä malli lisää varastokonfiguroinnin tietoyksiköt.</span><span class="sxs-lookup"><span data-stu-id="04cd2-137">This template adds data entities for warehouse configuration.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="04cd2-138">Jos vietävät tiedot on suodatettava, jokainen tietoyksikkö on arvioitava ja suodatus lisätään kyselyn avulla. (Voit esimerkiksi haluta viedä vain tiedot, jotka liittyvät tiettyyn varastoon.)</span><span class="sxs-lookup"><span data-stu-id="04cd2-138">If the data that you're exporting must be filtered (for example, you want to export only the data that is related to a specific warehouse), you must evaluate each data entity and add filtering via a query.</span></span> <span data-ttu-id="04cd2-139">Vaihtoehtoisesti voit viedä kaikki tiedot ja poistaa sitten tietueet, joita ei tarvita kohdetiedostoissa.</span><span class="sxs-lookup"><span data-stu-id="04cd2-139">Alternatively, you can export all data and then delete the records that aren't required in the destination files.</span></span>
+
+8. <span data-ttu-id="04cd2-140">Valitse **Vie**.</span><span class="sxs-lookup"><span data-stu-id="04cd2-140">Select **Export**.</span></span> <span data-ttu-id="04cd2-141">Kaikkiin projektin tietoyksiköihin liittyvät tiedot viedään.</span><span class="sxs-lookup"><span data-stu-id="04cd2-141">Data that is related to all the data entities in the project is exported.</span></span>
+
+<span data-ttu-id="04cd2-142">Voit ladata tietopaketin zip-tiedoston.</span><span class="sxs-lookup"><span data-stu-id="04cd2-142">You can download a zip file for the data package.</span></span> <span data-ttu-id="04cd2-143">Tämä tiedosto sisältää kaikki tiedot valitussa muodossa (esimerkiksi Excel-muodossa).</span><span class="sxs-lookup"><span data-stu-id="04cd2-143">This file contains all the data in the selected format (for example, Excel format).</span></span> <span data-ttu-id="04cd2-144">Kun aiemmin mainittiin, jotkin tietopakettitiedostojen tiedot on ehkä päivitettävä, ennen kuin ne voidaan tuoda tuotantoympäristöön.</span><span class="sxs-lookup"><span data-stu-id="04cd2-144">As has been mentioned, some records in the data package files might have to be updated before you can import them into the production environment.</span></span> <span data-ttu-id="04cd2-145">Jos päivität tietueen, et saa vaihtaa tiedoston nimeä.</span><span class="sxs-lookup"><span data-stu-id="04cd2-145">If you update a record, make sure that you don't change the file name.</span></span>
+
+### <a name="import-a-warehouse-configuration-setup"></a><span data-ttu-id="04cd2-146">Varaston konfigurointiasetuksen tuonti</span><span class="sxs-lookup"><span data-stu-id="04cd2-146">Import a warehouse configuration setup</span></span>
+
+1. <span data-ttu-id="04cd2-147">Varmista kohdeympäristössä, että olet yrityksessä, johon haluat tuoda varastotiedot.</span><span class="sxs-lookup"><span data-stu-id="04cd2-147">In the destination environment, make sure that you're in the company that you want to import the warehouse data into.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="04cd2-148">Etsi tietojen mahdolliset riippuvuudet ennen tuontia.</span><span class="sxs-lookup"><span data-stu-id="04cd2-148">Before you do the import, you should identify any data dependencies.</span></span> <span data-ttu-id="04cd2-149">Esimerkiksi **Varastonhallinta**-mallissa on **Varaston käsittelykoodit** -niminen tietoyksikkö.</span><span class="sxs-lookup"><span data-stu-id="04cd2-149">For example, the **Warehouse management** template includes a data entity that is named **Warehouse disposition codes**.</span></span> <span data-ttu-id="04cd2-150">Tässä yksikössä on tietoja, jotka liittyvät **Käsittelykoodit**-asetussivulle (**Varastonhallinta** > **Asetukset** > **Mobiililaite** > **Käsittelykoodit**).</span><span class="sxs-lookup"><span data-stu-id="04cd2-150">This entity contains data that is related to the **Disposition codes** setup page (**Warehouse management** > **Setup** > **Mobile device** > **Disposition codes**).</span></span> <span data-ttu-id="04cd2-151">Jos jo aiemmin määritetty asetus jo käsittelee myyntitilausten palautusprosessin, **Palauta käsittelykoodi** -kentässä on arvo.</span><span class="sxs-lookup"><span data-stu-id="04cd2-151">If an existing setup already handles the return process for sales orders, the **Return disposition code** field contains a value.</span></span> <span data-ttu-id="04cd2-152">Tämän kentän käsittelykoodi liittyy **Käsittelykoodi**-tietoyksikköön, joka on osa **Myynti ja markkinointi** -mallia.</span><span class="sxs-lookup"><span data-stu-id="04cd2-152">The disposition code in this field is related to the **Disposition code** data entity, which is part of the **Sales and marketing** template.</span></span> <span data-ttu-id="04cd2-153">Jos **Käsittelykoodi**-tietoyksikön tietoja ei tuoda ennen **Varaston käsittelykoodit** -kentän tietoja, tuonti epäonnistuu.</span><span class="sxs-lookup"><span data-stu-id="04cd2-153">If the data from the **Disposition code** data entity isn't imported before the data from the **Warehouse disposition codes** field, the import will fail.</span></span>
+
+2. <span data-ttu-id="04cd2-154">Valitse **Tietojen hallinta** -työtilassa **Tuo**.</span><span class="sxs-lookup"><span data-stu-id="04cd2-154">In the **Data management** workspace, select **Import**.</span></span>
+3. <span data-ttu-id="04cd2-155">Luo uusi tuontiprojekti.</span><span class="sxs-lookup"><span data-stu-id="04cd2-155">Create a new import project.</span></span>
+4. <span data-ttu-id="04cd2-156">Valitse **+ Lisää tiedosto** ja lataa tietopaketin zip-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="04cd2-156">Select **+ Add file**, and upload the zip file for the data package.</span></span>
+5. <span data-ttu-id="04cd2-157">Valitse **Tuo**.</span><span class="sxs-lookup"><span data-stu-id="04cd2-157">Select **Import**.</span></span> <span data-ttu-id="04cd2-158">Voit käyttää **parannetussa** näkymässä **Suodata**-asetusta, jolla saat nopeasti yleiskuvan tuonnin aikana mahdollisesti esiintyvistä ongelmista.</span><span class="sxs-lookup"><span data-stu-id="04cd2-158">In the **Enhanced** view, you can use the **Filter** option to quickly get an overview of issues that might occur during the import.</span></span>
+
+<span data-ttu-id="04cd2-159">**Näytä suoritusloki** sisältää tarkkoja tietoja jokaisesta tuotavasta tietoyksiköstä.</span><span class="sxs-lookup"><span data-stu-id="04cd2-159">The **View execution** log provides detailed information about each data entity that is imported.</span></span> <span data-ttu-id="04cd2-160">Pääset nopeasti kohdetietoihin väliaikaisen tallennuksen tiedoista.</span><span class="sxs-lookup"><span data-stu-id="04cd2-160">You can use the staging data view to quickly get to the target data.</span></span> <span data-ttu-id="04cd2-161">Näet tällä tavoin, miltä tuodut tiedot näyttävät sovelluksen sivuilla.</span><span class="sxs-lookup"><span data-stu-id="04cd2-161">In this way, you can see what the imported data looks like on the related pages in the application.</span></span> <span data-ttu-id="04cd2-162">Oletustietomalleja käytettäessä kunkin tietoyksikön tuontijakso toimii ennalta määritetyllä tavalla. Tämä auttaa varmistamaan, että kaikki riippuvat tiedot tuodaan ensimmäiseksi.</span><span class="sxs-lookup"><span data-stu-id="04cd2-162">When you use the default data templates, the import sequence for each data entity works in the predefined manner, to help guarantee that all dependent data is imported first.</span></span> <span data-ttu-id="04cd2-163">Jos projektissa on mukautettuja tietoyksiköitä, varmista, että oikea järjestys on määritetty.</span><span class="sxs-lookup"><span data-stu-id="04cd2-163">If custom data entities are part of the project, you must make sure that the correct sequence is defined.</span></span> <span data-ttu-id="04cd2-164">Lisätietoja on kohdassa [Konfigurointitietomallit](../../dev-itpro/data-entities/configuration-data-templates.md).</span><span class="sxs-lookup"><span data-stu-id="04cd2-164">For more information, see [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md).</span></span>
+
+## <a name="related-topic"></a><span data-ttu-id="04cd2-165">Liittyvä aihe</span><span class="sxs-lookup"><span data-stu-id="04cd2-165">Related topic</span></span>
+
+[<span data-ttu-id="04cd2-166">Konfigurointitietomallit</span><span class="sxs-lookup"><span data-stu-id="04cd2-166">Configuration data templates</span></span>](../../dev-itpro/data-entities/configuration-data-templates.md)
+
