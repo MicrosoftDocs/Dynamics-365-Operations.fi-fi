@@ -2,6 +2,7 @@
 # [Pilvikäyttöönottojen järjestelmävaatimukset](../fin-and-ops/get-started/system-requirements.md)
 # [Paikallisten käyttöönottojen järjestelmävaatimukset](../fin-and-ops/get-started/system-requirements-on-prem.md)
 # [Esittelytiedot](../fin-and-ops/get-started/demo-data.md)
+## [Esittelytietojen ja pakettien luominen](data-entities/generate-demo-data-packages.md)
 
 
 # [Kehittäminen ja mukauttaminen Visual Studiolla](dev-tools/developer-home-page.md)
@@ -28,7 +29,7 @@
 ### [Mallin vienti ja tuonti](dev-tools/models-export-import.md)
 ### [Metatietojen haku Visual Studiossa](dev-tools/metadata-search-visual-studio.md)
 ### [Mallit](dev-tools/models.md)
-### [Dynamics 365 for Finance and Operations, Enterprise Editionin projektit](dev-tools/projects.md)
+### [Dynamics 365 for Finance and Operations, Enterprise edition -version projektit](dev-tools/projects.md)
 ### [Visual Studion Tools -lisäosat](dev-tools/developer-tools-add-ins.md)
 ### [Mallin mukauttamis- ja vanhentumistoiminnon poistaminen käytöstä](dev-tools/lock-models.md)
 ### [Visual Studio -kehitystyökalujen päivittäminen](dev-tools/update-development-tools.md)
@@ -160,8 +161,8 @@
 ### [Siirtymisen muodostaminen](user-interface/build-navigation.md)
 ### [Työtilan muodostaminen](user-interface/build-workspace.md)
 ## Lomakkeet
-### [Dynamics 365 for Finance and Operations, Enterprise Editionissa siirtyminen](user-interface/page-navigation.md)
-### [Dynamics 365 for Finance and Operations, Enterprise Editionin asettelu](user-interface/page-layout.md)
+### [Dynamics 365 for Finance and Operations, Enterprise edition -versiossa siirtyminen](user-interface/page-navigation.md)
+### [Dynamics 365 for Finance and Operations, Enterprise edition -version asettelu](user-interface/page-layout.md)
 ### [Symbolifontti](user-interface/symbol-font.md)
 ### [Lomakkeiden testaaminen mukautetuilla malleilla](user-interface/testing-forms-custom-patterns.md)
 ### [Tarkkojen linkkien luominen ja käyttäminen](user-interface/create-deep-links.md)
@@ -362,6 +363,7 @@
 ### [OData](data-entities/odata.md)
 ### [Räätälöidyt palvelut](data-entities/custom-services.md)
 ### [Toistuvat integraatiot](data-entities/recurring-integrations.md)
+### [Kolmannen osapuolen palveluiden testausapuohjelmien käyttäminen](data-entities/third-party-service-test.md)
 
 ## Integraation kehitys
 ### [Tietojen integraatio tietoyksikköjen avulla](data-entities/data-management-integration-data-entity.md)
@@ -396,6 +398,7 @@
 ### [Konfigurointitietopaketit](data-entities/configuration-data-packages.md)
 ### [Konfigurointitietojen kopiointi yritysten välillä](data-entities/copy-configuration.md)
 ### [Konfigurointitietomallit](data-entities/configuration-data-templates.md)
+### [Tietomallit ja useat laskentataulukot](data-entities/excel-template-multiple.md)
 ### [Muutosten seuranta yksikköön](data-entities/entity-change-track.md)
 
 ## Vakiotietoyksiköt
@@ -497,17 +500,20 @@
 
 ## Käyttöönotto pilvipalveluna
 ### [Azure Resource Manager -perehdytys](deployment/arm-onboarding.md)
-### [Azure ExpressRoute ja Dynamics 365 for Finance and Operations, Enterprise Edition](deployment/expressroute.md)
+### [Azure ExpressRoute ja Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
 
 ## [Paikallinen käyttöönotto](deployment/on-premises-deployment-landing-page.md)
 ### [Paikallisten yleiskatsaus](deployment/on-premises-overview.md)
+### [Paikallisen käyttöönoton suunnitteleminen](deployment/plan-onprem-deployment.md)
 ### [Laitteiston koon määrittäminen](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Paikallisen projektin luominen](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Asennus ja käyttöönotto paikallisissa ympäristöissä](deployment/setup-deploy-on-premises-environments.md)
 ### [Mukautettujen mallien kehittäminen ja käyttöönottaminen paikallisissa ympäristöissä](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Päivitysten soveltaminen paikalliseen käyttöönottoon](deployment/apply-updates-on-premises.md)
 ### [Paikallisen käyttöönoton ottaminen uudelleen käyttöön](deployment/redeploy-on-prem.md)
-### [Paikallisen Dynamics 365 for Finance and Operations, Enterprise Editionin vianmääritys](deployment/troubleshoot-on-prem.md)
+### [Paikallisen edustajan päivittäminen](lifecycle-services/update-local-agent.md)
+### [Ympäristön määrittäminen uudelleen](lifecycle-services/reconfigure-environment.md)
+### [Paikallisen Dynamics 365 for Finance and Operations, Enterprise edition -version vianmääritys](deployment/troubleshoot-on-prem.md)
 
 ## Mukautetun koodin käyttöönottaminen
 ### [Käyttöönotettavan paketin luominen](deployment/create-apply-deployable-package.md)
@@ -695,10 +701,10 @@
 ## [Eristysympäristön tietokannan päivityspyyntö](database/database-refresh.md)
 
 # Tuki
-## [Dynamics 365 for Finance and Operations, Enterprise Edition- ja Lifecycle Services -tuki](lifecycle-services/lcs-support.md)
+## [Dynamics 365 for Finance and Operations, Enterprise edition- ja Lifecycle Services -tuki](lifecycle-services/lcs-support.md)
 ## [Premier-palvelupyynnön kirjaaminen](lifecycle-services/premier-support.md)
 ## [Pyyntöjen lähettäminen Dynamics-palvelun kehitysryhmälle](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Dynamics 365 for Finance and Operations, Enterprise Editionin teknisen tuen määrittäminen](lifecycle-services/support-experience.md) 
+## [Dynamics 365 for Finance and Operations, Enterprise edition -version teknisen tuen määrittäminen](lifecycle-services/support-experience.md) 
 ## [Suunniteltua ylläpidon ajankohtaa koskevat usein kysytyt kysymykset](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Pilvipalvelut ja huolto](lifecycle-services/cloud-operations-servicing.md)
 ## [Finance and Operations -tukikokemusten hallinta](lifecycle-services/cloud-powered-support-lcs.md)

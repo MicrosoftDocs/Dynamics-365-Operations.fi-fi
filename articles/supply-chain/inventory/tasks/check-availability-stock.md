@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: fi-fi
 ms.lasthandoff: 09/29/2017
 
 ---
-# Varastosaatavuuden tarkistus
+# <a name="check-the-availability-of-stock"></a>Varastosaatavuuden tarkistus
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten tietyn nimiketunnuksen varastosaldo ja käytettävissä oleva varasto tarkistetaan. Siinä näytetään myös, miten nimikkeeseen liittyvät toimitustiedot haetaan. Fyysinen käytettävissä oleva varasto on käytettävissä oleva varastosaldo. Se tarkoittaa ostettua, vastaanotettua ja rekisteröityä varastoa. Käytettävissä oleva varasto sisältää käytettävissä olevan varaston, mutta varaston, joka on tilattu ja jota odotetaan saapuvaksi, mutta jota ei ole vielä vastaanotettu tai rekisteröity. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi. Jos käytössä on USMF, voit käyttää esimerkiksi esillä olevia arvoja. Varastotyöntekijä tekee yleensä nämä tehtävät.
 
 
-## Nimikkeen käytettävissä olevan varaston tarkistaminen
+## <a name="check-on-hand-inventory-for-an-item"></a>Nimikkeen käytettävissä olevan varaston tarkistaminen
 1. Valitse Inventoinnin- ja varastonhallinta > Kyselyt ja raportit > Käytettävissä oleva varasto.
 2. Valitse nimiketunnuksen rivi.
     * Voit tehdä kyselyn käytettävissä olevasta varastosta nimiketunnuksen perusteella valitsemalla rivin, jossa taulun arvoksi on määritetty Käytettävissä oleva varasto ja kentän arvoksi on määritetty Nimiketunnus.  
@@ -49,7 +49,7 @@ Tässä menettelyssä kerrotaan, miten tietyn nimiketunnuksen varastosaldo ja k�
 11. Sulje sivu.
 12. Sulje sivu.
 
-## Fyysisen käytettävissä olevan varaston tarkistaminen
+## <a name="check-physical-on-hand-inventory"></a>Fyysisen käytettävissä olevan varaston tarkistaminen
 1. Valitse Varastonhallinta > Kyselyt ja raportit > Fyysinen käytettävissä oleva varasto.
 2. Kirjoita arvo Nimiketunnus-kenttään.
     * Voit suodattaa nimikeluettelon Toimipaikka- ja Varasto-kentän avulla.  
@@ -59,7 +59,7 @@ Tässä menettelyssä kerrotaan, miten tietyn nimiketunnuksen varastosaldo ja k�
 5. Valitse OK.
 6. Sulje sivu.
 
-## Käytettävissä olevan varaston tarkistaminen sijainnin mukaan
+## <a name="check-on-hand-inventory-by-location"></a>Käytettävissä olevan varaston tarkistaminen sijainnin mukaan
 1. Valitse Varastonhallinta > Kyselyt ja raportit > Varastosaldon sijainnin mukaan.
 2. Kirjoita arvo Varasto-kenttään.
     * Jos käytössä on esittelytietojen USMF-yritys, voit käyttää arvoa 51.  

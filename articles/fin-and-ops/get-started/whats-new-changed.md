@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 408854737847590841814ed74209618bbf22ec23
-ms.openlocfilehash: 7c99869b70d8b564da859ce2b19ccfff927141b2
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: f3f6690d661ca30b5f3a9dacc75f7b8c6ec36e24
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,8 +34,6 @@ Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Micr
 
 Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä koskeva päivitysprosessi](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
-> [!NOTE]
-> Dynamics 365 for Operations (paikallinen) ollaan nimeämässä uudelleen. Dynamics 365 for Operations (paikallinen) -viittauksia on viestinnässä ja käyttöoikeusoppaissa. Tuotetta käyttöönotettaessa näkyy nimi Dynamics 365 for Finance and Operations, Enterprise edition. Molemmat nimet viittaavat samaan tuotteeseen.
 
 ## <a name="application-releases"></a>Sovelluksen versiot
 
@@ -49,7 +47,7 @@ Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä kos
 </colgroup>
 <thead>
 <tr class="header">
-<th>Vapauta</th>
+<th>Julkaisu</th>
 <th>Versio</th>
 <th>Koontikäännös</th>
 <th>Käytettävyys</th>
@@ -60,6 +58,13 @@ Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä kos
 <tr class="even">
 
 </tr>
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
+<td>7.3</td>
+<td>7.3.11971.56116</td>
+<td>2017. joulukuuta</td>
+<td><a href="whats-new-application-7.3-update.md">Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin 7.3:n uudet ja muuttuneet ominaisuudet</a></td>
+</tr></tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Heinäkuu 2017</td>

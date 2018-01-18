@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: fi-fi
 ms.lasthandoff: 09/29/2017
 
 ---
-# Varaston varastotasojen oikaisu (perusvarastointi)
+# <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>Varaston varastotasojen oikaisu (perusvarastointi)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä selvitetään varaston oikaisun kirjauskansion luonti- ja kirjausprosessi, jolla voidaan oikaista varastossa olevien tuotteiden varastotasoja. Ennen aloittamista varasto-oikaisuille on oltava määritettynä varaston oikaisun kirjauskansio. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi. Yleensä varastotyöntekijä tekee nämä tehtävät.
 
 
-## Luo varaston oikaisun kirjauskansio
+## <a name="create-an-inventory-adjustment-journal"></a>Luo varaston oikaisun kirjauskansio
 1. Valitse Inventoinnin- ja varastonhallinta > Kirjauskansioviennit > Nimikkeet > Varaston oikaisu.
 2. Valitse Uusi.
 3. Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.
@@ -38,7 +38,7 @@ Tässä menettelyssä selvitetään varaston oikaisun kirjauskansion luonti- ja 
     * Joidenkin kenttien tiedot voidaan lisätä valitsemasi varaston oikaisun kirjauskansion asetusten perusteella.  
 5. Valitse OK.
 
-## Tämän kirjauskansion rivit
+## <a name="create-journal-lines"></a>Tämän kirjauskansion rivit
 1. Valitse Uusi.
 2. Merkitse luettelossa nimiketunnuskenttä.
 3. Valitse Nimiketunnus-kentässä nimike. Jos käytät USMF-yrityksen demotietoja, kirjoita D0001.
@@ -50,7 +50,7 @@ Tässä menettelyssä selvitetään varaston oikaisun kirjauskansion luonti- ja 
 8. Kirjoita numero Määrä-kenttään.
     * Kustannushinnan kenttä määrittää varastovastaanottojen yksikkökohtaisen kustannuksen. Jos nimiketunnukselle ei ole määritetty kustannusta tai haluat muuttaa sitä manuaalisesti, voit tehdä sen tässä.  
 
-## Vahvista ja kirjaa varaston oikaisun kirjauskansio
+## <a name="validate-and-post-the-inventory-adjustment-journal"></a>Vahvista ja kirjaa varaston oikaisun kirjauskansio
 1. Valitse Vahvista.
 2. Valitse OK.
 3. Valitse Kirjaa.

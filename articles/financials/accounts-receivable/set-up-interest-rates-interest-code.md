@@ -3,11 +3,12 @@ title: "Korkoryhmän korkoprosenttien määrittäminen"
 description: "Korkokoodit sisältävät asetukset, joilla määritetään, milloin korkoa veloitetaan ja miten se lasketaan erääntyneillä tileillä."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: Interest
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

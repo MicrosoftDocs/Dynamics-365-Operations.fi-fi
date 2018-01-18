@@ -1,9 +1,9 @@
 ---
 title: "Kustannusten hallinnan Power BI -sisältö"
-description: "Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
+description: "Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöön."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f509852f15b9518d0a01be1f89d4f07c76caf341
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
+Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöön. 
 
 # <a name="overview"></a>Yleiskuvaus
 
@@ -51,8 +51,6 @@ Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöö
 
 CostStatementCache taulukko on ensisijainen tietolähde kohteelle CostAggregatedCostStatementEntryEntity. tietojoukon välimuistin kehys hallitsee tätä taulua. Oletusarvon mukaan taulukko päivitetään 24 tunnin välein, mutta voit ottaa käyttöön manuaaliset päivitykset tietojen välimuistin määrityksissä. Voit sitten tehdä manuaalisen päivityksen **Kustannushallinta**- tai **Kustannusanalyyis** -työtilassa. Kun CostStatementCache-päivitys on suoritettu, sinun on päivitettävä Power BI.com -sivustolla OData-yhteys nähdäksesi päivitetyt tiedot sivustolla. Varianssin (osto, tuotanto) mitat tässä Power BI -sisällössä pätevät vain nimikkeisiin, jotka arvioidaan varaston vakiokustannuksen menetelmällä. Tuotannon varianssi lasketaan aktiivisten kustannusten ja toteutuneiden kustannusten välisenä erona. Tuotannon varianssi lasketaan, kun tuotantotilauksen tilana on **Päättynyt**. Saat lisätietoja tuotannon varianssin tyypeistä ja siitä, miten kukin tyyppi lasketaan, ohjeaiheesta [Valmiin tuotantotilauksen varianssien analysointi](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-**Kustannushallinnan** Power BI -sisältöä on saatavana osoitteessa PowerBI.com. Lisätietoja Microsoft Dynamics 365 for Finance and Operationsin tietojen liittämisestä ja lataamisesta on artikkelissa [Power BI -sisällön käyttäminen PowerBI.com-sivustossa](power-bi-home-page.md)
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 Sisältö sisältää joukon raporttisivuja. Jokainen sivu koostuu joukosta mittareita, jotka ovat visualisoitu kaavioiden, ruutujen ja taulukoiden muodossa. Seuraavassa taulukossa on yleiskatsaus visualisoinneista **kustannushallinnan** Power BI -sisällössä.
@@ -136,13 +134,6 @@ Suodattimina käytetään seuraavia tärkeimpiä dimensioita osittamaan koostemi
 | Kirjanpidot          | Valuutta, nimi, kuvaus                  |
 | Toimipaikat            | Tunnus, nimi, maa, paikkakunta                      |
 
-## <a name="additional-resources"></a>Lisäresurssit
-Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:
-
--   [Tietoyksiköt](..\data-entities\data-entities.md)
--   [Organisaation sisältöpakettien luominen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Tietojen mallinnus Power BI:n avulla](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Power BI -ruutujen lisääminen työtiloihin](configure-power-bi-integration.md)
 
 
 

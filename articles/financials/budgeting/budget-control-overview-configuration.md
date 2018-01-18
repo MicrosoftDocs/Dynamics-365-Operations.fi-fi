@@ -3,11 +3,12 @@ title: Yleiskatsaus budjetin seurantaan
 description: "Tässä artikkelissa esitellään budjetin hallinta. Artikkeli sisältää tietoja, joiden avulla budjetin hallinta voidaan määrittää Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa niin, että taloushallinnon resurssien hallinta onnistuu."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetControlConfiguration
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

@@ -3,7 +3,7 @@ title: Talousraportoinnin tietovaraston osajoukon palauttaminen
 description: "Tässä ohjeaiheessa kerrotaan, miten talousraportoinnin tietovaraston osajoukko palautetaan."
 author: aolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: aloson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0786d3377b914791106ef30455d676e5ab2ae03d
-ms.openlocfilehash: c708fa18b8676d8ff57c26b3176a36d86df29387
+ms.sourcegitcommit: 5b956dcc5a4a93033396ae0ffcf8b7aeba2cf3f2
+ms.openlocfilehash: a07e8b5bae2c4f71e9212cd2f8080d2481769818
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ Tässä ohjeaiheessa kerrotaan, miten seuraavien versioiden talousraportoinnin t
 - Microsoft Dynamics 365 for Finance and Operations: Taloushallinnon raportoinnin versio 7.0.10000.4 ja uudempi
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (paikallinen)
 
-Saat Finance and Operationsin taloushallinnon raportoinnin version 7.2.6.0, kun lataat KB-artikkelin 4052514 osoitteesta <https://support.microsoft.com/en-us/help/4052514>.
+Saat Finance and Operationsin taloushallinnon raportoinnin version 7.2.6.0, kun lataat KB-artikkelin 4052514 osoitteesta <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-7260-and-later"></a>Finance and Operationsin taloushallinnon raportoinnin version 7.2.6.0 ja uudemman version talousraportoinnin tietovaraston osajoukon palauttaminen
 
@@ -55,7 +55,7 @@ Tietovaraston osajoukon palautus on tehtävä ajankohtana, jona tietokannassa ei
 
 Voit palauttaa tietovaraston osajoukon valitsemalla raportin suunnitteluohjelman **Työkalut**-valikossa **Palauta tietovaraston osajoukko**. Esiin tulevassa valintaikkunassa on kaksi osaa: **Tilastotiedot** ja **Palauta**.
 
-[![Palauta tietovaraston osajoukko -valintaikkuna](./media/Statistics.png)](./media/Statistics.png)
+[![Palauta tietovaraston osajoukko -valintaikkuna](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### <a name="integration-attempts"></a>Integrointiyritykset
 
@@ -83,8 +83,10 @@ Jos tietovaraston osajoukon palauttaminen on mielestäsi välttämätöntä, val
 - **Palauta tietokanta** – Finance and Operations -tietokanta on palautettu, mutta taloushallinnon raportoinnin tietovaraston osajoukkoa ei.
 - **Muu** – Olet palauttamassa tietovaraston osajoukkoa jonkin muun syyn vuoksi. Jos epäilet, että jossakin on ongelma, ota yhteys tukeen asian selvittämistä varten.
 
+[![Palauta tietovaraston osajoukko](./media/Integration.png)](./media/Integration.png)
+
 > [!NOTE]
-> Varmista, että kaikki aiemmat tehtävät on integroitu, ennen kuin suoritat prosessin vaiheet. Voit tarkistaa integroinnin tilan valitsemalla **Työkalut** &gt; **Integroinnin tila**.
+> Vahvista, että kaikki tietovaraston palautustehtävät ovat suorittaneet ensimmäisen kuormituksen ennen palauttamisen aloittamista. Voit vahvistaa sen etsimällä Edellisen suorituksen aika -sarakkeen arvon valitsemalla **Työkalut** &gt; **Integroinnin tila**.
 
 #### <a name="clear-users-and-companies"></a>Poista käyttäjät ja yritykset
 
@@ -94,7 +96,10 @@ Kun palautusprosessi voidaan aloittaa, valitse **OK**. Näyttöön tulee kehote,
 
 Jos haluat tarkistaa integroinnin tilan, valitse **Työkalut** &gt; **Integroinnin tila**. Tämän jälkeen näet integroinnin edellisen suoritusajankohdan ja tilan.
 
-[![Integroinnin tilan tarkasteleminen](./media/Integration.png)](./media/Integration.png)
+[![Integroinnin tilan tarkasteleminen](./media/New-integration.PNG)](./media/New-integration.PNG)
+
+> [!NOTE]
+> Palautus on valmis, kun kaikkien yhdistämismääritysten tila on RanToCompletion ja vasemmassa alakulmassa olevassa integroinnin tilaikkunassa on ilmoitus Integrointi on valmis.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-70100004-and-later"></a>Finance and Operationsin taloushallinnon raportoinnin version 7.0.10000.4 ja uudemman version talousraportoinnin tietovaraston osajoukon palauttaminen
 
@@ -142,7 +147,9 @@ Seuraavilla Microsoft Windows -palveluilla on avoimet yhteydet Finance and Opera
 
 #### <a name="download-the-latest-minorversiondataupgradezip-package"></a>Uusimman MinorVersionDataUpgrade.zip-paketin lataaminen
 
-Lataa uusin MinorVersionDataUpgrade.zip-paketti. Lisätietoja oikean tietojen päivityspakettiversion etsimisestä ja lataamisesta on kohdassa [Uusimman tietojen päivityksen käyttöönotettavan paketin lataaminen](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-packages). MinorVersionDataUpgrade.zip-paketin lataaminen ei edellytä päivitystä. Seuraa siis ohjeaiheen Uusimman tietojen päivityksen käyttöönotettavan paketin lataaminen -osan vaiheita. Voit ohittaa ohjeaiheen muut vaiheet.
+Lataa uusin MinorVersionDataUpgrade.zip-paketti. Lisätietoja oikean tietojen päivityspakettiversion etsimisestä ja lataamisesta on kohdassa [Uusimman tietojen päivityksen käyttöönotettavan paketin lataaminen](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). 
+
+MinorVersionDataUpgrade.zip-paketin lataaminen ei edellytä päivitystä. Seuraa siis ohjeaiheen Uusimman tietojen päivityksen käyttöönotettavan paketin lataaminen -osan vaiheita. Voit ohittaa ohjeaiheen muut vaiheet.
 
 #### <a name="run-scripts-against-the-finance-and-operations-database"></a>Komentosarjojen suorittaminen Finance and Operations -tietokannassa
 

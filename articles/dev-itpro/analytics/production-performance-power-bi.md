@@ -3,7 +3,7 @@ title: "Tuotannon suorituskyvyn Power BI -sisältö"
 description: "Tässä ohjeaiheessa kerrotaan, mitä tuotannon suorituskyvyn Power BI -sisältö sisältää. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
 author: AndersGirke
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -59,15 +59,6 @@ Seuraavassa taulukossa on sisältyvien visualisointien yhteenveto.
 | Viallisten trendi resurssin mukaan                  | Viallisten osuus (ppm) käsitellyn määrän mukaan | |
 | Työtilausten kustannuslaskennan tuotannon varianssit | <ul><li>Tuotannon varianssi päivämäärän ja kustannusryhmän tyypin mukaan</li><li>Tuotannon varianssi toimipaikan ja kustannusryhmän tyypin mukaan</li><li>10 merkittävintä tuotetta, jolla on kielteinen tuotannon varianssi</li><li>10 merkittävintä kielteistä tuotannon varianssia resurssin mukaan</li></ul> | <ul><li>Toteutunut kustannus</li><li>Tuotannon varianssi</li><li>Tuotannon varianssi – %</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Power BI -sisällön laajentaminen
-Jos käytät Microsoft Dynamics Lifecycle Servicesin (LCS) sisältöpaketteja, voit tehdä erinomaisia analyyseja henkilöille, jotka eivät käytä Microsoft Dynamics 365:tä. Voit muokata näitä sisältöpaketit sisältämään muita raportteja ja visuaalisia tietoja ja julkaista sitten sisältöpaketit analysoitavaksi Power BI.com -vuokraajassa.
-
-**Tuotannon suorituskyvyn** Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
-
-Muista ladata käyttämääsi Dynamics 365 -versiota vastaava **tuotannon suorituskyvyn** sisältö.
-
-> [!NOTE]
-> Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, Power BI -sisällön edellytyksenä on KB 4011327. Kun olet kirjautunut LCS:ään, voit siirtyä tietämyskantaan osoitteessa https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
@@ -139,12 +130,5 @@ Seuraavassa taulukossa on tärkeimmät koostemittojen osittamisen suodattimina k
 | Resurssit                 | Resurssin tunnus, resurssin nimi, resurssin tyyppi ja resurssiryhmä |
 | Tuotteet                  | Tuotenumero, tuotteen nimi, nimiketunnus ja nimikeryhmä         |
 
-## <a name="additional-resources"></a>Lisäresurssit
 
-Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:
-
-- [Tietoyksiköt](../data-entities/data-entities.md)
-- [Organisaation sisältöpakettien luominen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Tietojen mallinnus Power BI:n avulla](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Power BI -ruutujen lisääminen työtiloihin](configure-power-bi-integration.md)
 

@@ -3,11 +3,12 @@ title: "Käyttöomaisuuden hallinnan työtila"
 description: "Tässä ohjeaiheessa on tietoja käyttöomaisuuden hallinnan työtilasta. Työtilassa on järjestelmään vietyyn käyttöomaisuuteen liittyviä tietoja. Siinä on yhteenvetonäkymä ja analytiikkanäkymä."
 author: saraschi
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

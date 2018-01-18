@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02d777da3b97706f9e63478a1978ac9b230a591e
+ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
+ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -104,6 +104,7 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 521 | Kanta-asiakaskorttien pistesaldo | Näytä määritetyn kanta-asiakaskortin pistesaldo. | Kyllä | Kyllä | En | En | En |
 | 914 | Pienennä myyntipisteen ikkuna | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | En |
 | 1 000 | Kassan avaus | Suorita Ei myynti -toiminto ja avaa valittuna oleva kassakone. | Kyllä | Kyllä | Kyllä | Kyllä | En |
+| 928 | Tilauksen täyttäminen | Tämän toiminnon avulla käyttäjät voivat kerätä, pakata, lähettää tai peruuttaa tilauksia myymälänoutoa varten. | Kyllä | Kyllä | Kyllä | En | En |
 | 129 | Ohita rivituotteen vero | Ohita valitun rivinimikkeen vero ja käytä toista määritettyä veroa. | Kyllä | Kyllä | En | Kyllä | En |
 | 130 | Ohita rivituotteen vero luettelosta | Ohita valitun rivinimikkeen vero ja korvaa sen verolla, jonka käyttäjä valitsee luettelosta. | Kyllä | Kyllä | En | Kyllä | En |
 | 127 | Ohita tapahtuman vero | Ohita tapahtuman vero ja käytä toista määritettyä veroa. | Kyllä | Kyllä | En | Kyllä | En |

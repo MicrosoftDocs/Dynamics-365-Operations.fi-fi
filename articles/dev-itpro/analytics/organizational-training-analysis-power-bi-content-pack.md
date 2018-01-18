@@ -1,9 +1,9 @@
 ---
 title: "Organisaation koulutuksen Power BI -sisältö"
-description: "Tässä ohjeaiheessa käsitellään Finance and Operationsin organisaation koulutuksen Power BI -sisältöä. Siinä kuvataan, miten avaat sisältöpaketin. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
+description: "Tässä ohjeaiheessa käsitellään Finance and Operationsin organisaation koulutuksen Power BI -sisältöä."
 author: jcart1106
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 18d7fa3580a9debf617ebeb042670f7f1be8fad6
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 1e26785b658815fcc5026d73e4d8cfe39bd246c3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -30,12 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä ohjeaiheessa käsitellään Finance and Operationsin organisaation koulutuksen Power BI -sisältöä. Siinä kuvataan, miten avaat sisältöpaketin. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
-
-<a name="accessing-the-content-pack"></a>Sisältöpaketin avaaminen
---------------------------
-
-Löydät organisaation koulutuksen sisältöpaketin Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Saat lisätietoja siitä, miten sisältöpaketti ladataan ja miten se liitetään Microsoft Dynamics 365 for Finance and Operationsin tietoihin, artikkelista [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md).
+Tässä ohjeaiheessa käsitellään Finance and Operationsin organisaation koulutuksen Power BI -sisältöä. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Raportit, jotka sisältyvät sisältöpakettiin
 Kun olet liittänyt sisältöpaketin Finance and Operationsin tietoihin, organisaatiosi tiedot näkyvät raporteissa. Jos et ole käyttänyt Microsoft Power BI:tä aiemmin, lisätietoja löydät artikkelista [Power BI:n ohjattu oppiminen](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporteissa, jotka sisältyvät sisältöpakettiin, on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
@@ -65,16 +60,6 @@ Finance and Operationsin tietoja käytetään organisaation koulutuksen sisält�
 | Training\_Position        | Toimi, nimike ja kokopäiväistä vastaavat (FTE)                  | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
 | Training\_WorkerName      | Etunimi , sukunimi ja koko nimi                             | Training\_CourseAttendees                                                                                                                                                                          |
 | Training\_WorkerTitle     | Nimike ja virkaikä                                         | Training\_CourseAttendees                                                                                                                                                                          |
-
-Näitä yksikköjä käytettiin luomaan laskettuja mittoja tietomallissa. Näitä laskennallisia mittoja käytetään sitten laskemaan sisältöpaketissa käytettävät tunnusluvut (KPI:t) ja raportit. Jos haluat sisällyttää lisälaskutoimitukset raportteihin ja koontinäyttöön, voit ladata Training.pbix-tiedoston LCS:stä ja muokata sitä. Tämä tiedosto on sisältöpaketin luomisessa käytetty oletustietomalli. Kun olet tehnyt haluamasi muutokset, voit luoda organisaation sisältöpaketin ja koontinäytön, joka sisältää lisäämäsi tiedot.
-
-## <a name="additional-resources"></a>Lisäresurssit
-Seuraavista linkeistä löydät hyödyllistä, entiteetteihin ja Power BI -sisällön rakentamiseen liittyvää tietoa:
-
--   [Tietoyksiköt](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)
--   [Organisaation sisältöpakettien luominen](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Tietojen mallinnus Power BI:n avulla](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Power BI -ruutujen lisääminen työtiloihin](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
 
 
 

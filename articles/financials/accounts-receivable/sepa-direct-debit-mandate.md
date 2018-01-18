@@ -3,11 +3,12 @@ title: SEPA (Single Euro Payments Area) -suoraveloitusvaltakirjan asetukset
 description: "Yhtenäisen euromaksualueen (SEPA) suoraveloituksen avulla velkoja voi hakea varoja asiakkaan pankkitililtä, edellyttäen, että asiakas on antanut velkojalle siihen allekirjoitetun valtakirjan."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

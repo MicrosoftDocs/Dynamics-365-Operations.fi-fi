@@ -3,16 +3,17 @@ title: "Konsernin sisäiset kulut"
 description: "Organisaation yhdessä yrityksessä työskentelevä työntekijä voi tehdä työtä saman organisaation toiselle yritykselle. Tässä tilanteessa työntekijän kulut voidaan määrittää työn vastaanottaneelle yritykselle konsernin sisäisten kulujen toiminnolla."
 author: saraschi2
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: TrvParameters
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi2
+ms.author: saraschi
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd

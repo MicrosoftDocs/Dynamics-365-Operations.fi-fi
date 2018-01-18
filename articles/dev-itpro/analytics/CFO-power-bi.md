@@ -3,7 +3,7 @@ title: "Talousjohtajan yhteenveto – Power BI -sisältö"
 description: "Tässä ohjeaiheessa käsitellään talousjohtajan yhteenvetoa ja Microsoft Power BI -sisältöä."
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: fd3696321598267a2acd3ad61f533641c2cc2e77
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -47,8 +47,5 @@ Seuraavassa taulukossa on esitetty Power BI -sisältö, josta raportit kopioidaa
 | [Luotonvalvonnan hallinta](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Asiakkaiden erääntyneet</li><li>Luottorajan ylittäneet asiakkaat</li><li>Erääntyneet saldot</li></ul> |
 | [Osto- ja kulutusanalyysi](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Osto kuukauden tai päivän mukaan</li><li>10 suurinta toimittajaa ostojen mukaan</li><li>10 parasta tuotetta ostojen mukaan</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Power BI -sisällön laajentaminen
-Jos käytät Microsoft Dynamics Lifecycle Servicesin (LCS) sisältöpaketteja, voit tehdä erinomaisia analyyseja henkilöille, jotka eivät käytä Microsoft Dynamics 365:tä. Voit muokata näitä sisältöpaketit sisältämään muita raportteja ja visuaalisia tietoja ja julkaista sitten sisältöpaketit analysoitavaksi Power BI.com -vuokraajassa.
 
-**Talousjohtajan yhteenveto** – Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
 

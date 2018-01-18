@@ -1,9 +1,9 @@
 ---
 title: "Taloudellisen suorituskyvyn Power BI -sisältö"
-description: "Tässä ohjeaiheessa käsitellään taloudellisen suorituskyvyn Power BI -sisältöä Siinä kerrotaan sisältyvistä koontinäytöistä ja raporteista sekä sisältöpaketin muodostamisessa käytetyistä tietomallista ja yksiköistä."
+description: "Tässä ohjeaiheessa käsitellään taloudellisen suorituskyvyn Power BI -sisältöä"
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 83ea868e7612f30afa1b99f374878f4ba415113f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -30,21 +30,6 @@ ms.lasthandoff: 12/01/2017
 [!include[banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään **taloudellisen suorituskyvyn** Microsoft Power BI -sisältöä Siinä kerrotaan sisältyvistä koontinäytöistä ja raporteista sekä sisältöpaketin muodostamisessa käytetyistä tietomallista ja yksiköistä.
-
-## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-
-Voit avata **taloudellisen suorituskyvyn** Power BI:n Microsoft Dynamics Lifecycle Servicesistä (LCS) ja PowerBI.comista.
-
-### <a name="available-from-lcs"></a>Käytettävissä LCS:stä
-LCS:ssä käytettävissä oleva **taloudellisen suorituskyvyn** Power BI -sisältö tukee seuraavia versioita:
-
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -versiot
-- Microsoft Dynamics 365 for Operationsin versio 1611 
-
-Power BI -sisältö sijaitsee LCS:n Jaettu omaisuus -kirjastossa. Lisätietoja sisältöpaketin lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](power-bi-content-microsoft-partners.md). Katso Power BI -sisällön käyttöönotosta kertova esittely Office Mixin kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö Dynamics Lifecycle Services -sovelluksessa](https://mix.office.com/watch/9puyb1b2xs1w).
-
-### <a name="available-from-powerbicom"></a>Käyttö PowerBI.comista
-PowerBI.com-sivustossa käytettävissä oleva **taloudellisen suorituskyvyn** Power BI -sisältö tukee Microsoft Dynamics AX -versioita 7.0 ja 7.0.1. Lisätietoja Dynamics AX:n tietojen liittämisestä ja lataamisesta on ohjeaiheessa [Power BI -sisällön käyttäminen PowerBI.com-sivustossa](power-bi-home-page.md).
 
 ## <a name="main-account-setup"></a>Päätilin asetukset
 Koska organisaatiot haluavat velkojen ja tuottosummien näkyvän raporteissa positiivisina summina, päätilien määritys on tärkeää. Jotta nämä päätilit näkyisivät positiivisina summina, päätilityypiksi on asetettava **Velka** tai **Tuotto**. Käytettäessä näitä tilityyppejä Power BI -raportointi kääntää merkit ja näyttää summat positiivisina.
@@ -101,5 +86,5 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 - Kirjanpidot
 - ChartofAccounts
 
-Näitä yksikköjä käytettiin luomaan laskettuja mittoja tietomallissa. Näitä laskennallisia mittoja käytetään sitten laskemaan sisällössä käytettävät tunnusluvut (KPI:t) ja raportit. Oletusarvoisesti sisältö noutaa kolmen viimeisen vuoden ja yhden tulevan vuoden tiedot. Voit muokata [Microsoft Excel -työkirjaa](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) sisällyttääksesi lisälaskelmia raporteille ja koontinäytölle. Tämä työkirja on sisällön luomisessa käytetty oletustietomalli. Kun olet tehnyt haluamasi muutokset, voit luoda organisaation sisältöpaketin ja koontinäytön, joka sisältää lisäämäsi tiedot.
+Näitä yksikköjä käytettiin luomaan laskettuja mittoja tietomallissa. Näitä laskennallisia mittoja käytetään sitten laskemaan sisällössä käytettävät tunnusluvut (KPI:t) ja raportit. Oletusarvoisesti sisältö noutaa kolmen viimeisen vuoden ja yhden tulevan vuoden tiedot. Voit muokata [Microsoft Excel -työkirjaa](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) sisällyttääksesi lisälaskelmia raporteille ja koontinäytölle. Tämä työkirja on sisällön luomisessa käytetty oletustietomalli. 
 
