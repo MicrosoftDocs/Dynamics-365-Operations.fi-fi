@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -47,10 +48,12 @@ Tässä aiheessa kerrotaan, miten toimittajien laskuja voidaan tarkastella ja l�
 -   Maksetut laskut on maksettu kokonaan Finance and Operations -järjestelmässä.
 
 Ruutua napsauttamalla avautuu suodatettu näkymä **laskujen luettelo** sivulle.
+
 ### <a name="tabular-lists"></a>Taulukkoluettelot
 
 **Taulukkoluettelot** kohdassa laskutuksen tila on eritelty samalla tavalla kuin yhteenvetoruuduissa: Luonnos- ja Lähetetty, ei hyväksytty -luetteloissa. Luonnos-tilassa lasku voidaan lähettää työnkulkuun tai poistaa. Viimeisessä taulukkoluettelossa voit etsiä laskut. Suodattamalla saat nopeampia hakuja.
-Kaikki toimittajan laskut -luettelosivu
+
+<a name="all-vendor-invoices-list-page"></a>Kaikki toimittajan laskut -luettelosivu
 -----------------------------
 
 Voit tarkastella kaikkia kirjattuja ja kirjaamattomia toimittajalaskuja **Toimittajayhteistyön laskut** -luettelosivulla. Voit tarkastella luettelosivulta laskujen maksun tilaa. Maksun tilat ovat: kirjaamattomat, maksamatta, maksettu osittain, täysin maksettu.

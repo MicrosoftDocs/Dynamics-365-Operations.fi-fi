@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -59,9 +60,9 @@ Tässä esimerkissä FRSI:n on oltava USSI-yrityksen asiakas ja USSI:n on oltava
 
 1.  Määritä FRSI asiakkaaksi USSI-yritykseksi ja USSI FRSI-yrityksen toimittajaksi. Tämän tehtävän edellyttämille vaiheille on kolme aloituskohtaa.
     | Vaihe | Tulopaikka                                                                       | kuvaus   |
-    |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | A    | Valitse USSI:ssa **Myyntireskontra** &gt; **Asiakkaat** &gt; **Kaikki asiakkaat**. | Luo FRSI:lle uusi asiakastietue ja valitse asiakasryhmä.                                                                                                                                                                                                                           |
-    | B    | Valitse FRSI:ssä **Ostoreskontra** &gt; **Toimittajat** &gt; **Kaikki toimittajat**.        | Luo USSI:lle uusi toimittajatietue ja valitse toimittajaryhmä.                                                                                                                                                                                                                               |
+    |------|-----------------------------------------------------------------------------------|------------------|
+    | A    | Valitse USSI:ssa **Myyntireskontra** &gt; **Asiakkaat** &gt; **Kaikki asiakkaat**. | Luo FRSI:lle uusi asiakastietue ja valitse asiakasryhmä.                                                                                  |
+    | B    | Valitse FRSI:ssä **Ostoreskontra** &gt; **Toimittajat** &gt; **Kaikki toimittajat**.        | Luo USSI:lle uusi toimittajatietue ja valitse toimittajaryhmä.                                                                                    |
     | K    | Avaa FRSI:ssä juuri luomasi toimittajatietue.                            | Valitse toimintoruudun **Yleiset**-välilehdessä **Määritä**-ryhmässä **Konsernin sisäinen**. Siirrä **Konsernin sisäinen** -sivun **Kauppakumppanuus**-välilehden **Aktiivinen**-liukusäädin **Kyllä**-asentoon. Valitse **Asiakasyritys**-kentässä vaiheessa A luotu asiakastietue. |
 
 2.  Valitse ensin **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Projektinhallinnan ja kirjanpidon parametrit** ja sitten **Konsernin sisäinen** -välilehti. Parametrien määritystapa määräytyy sen mukaan, onko kyse lainaavasta yrityksestä vai lainaajayrityksestä.
