@@ -112,7 +112,7 @@ Kun käyttäjä avaa rakenneosan, muut käyttäjät voivat käyttää kyseistä 
 3.  Valitse rakenneosa ja valitse sitten **Peruuta uloskuittaus**.
 4.  Valitse **Kyllä**, kun haluat kuitata rakenneosan sisään.
 
-# <a name="see-also"></a>Lisätietoja
+## <a name="see-also"></a>Lisätietoja
 
 [Taloushallinnan raportointi](financial-reporting-intro.md)
 

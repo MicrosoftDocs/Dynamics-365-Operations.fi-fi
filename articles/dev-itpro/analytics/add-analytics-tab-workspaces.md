@@ -30,14 +30,14 @@ ms.lasthandoff: 11/06/2017
 > [!NOTE]
 > Ominaisuutta tuetaan Dynamics 365 for Finance and Operationsin versiossa 7.2 ja sitä uudemmissa versioissa.
 
-# <a name="introduction"></a>Johdanto
+## <a name="introduction"></a>Johdanto
 Tässä ohjeaiheessa kerrotaan, miten Microsoft Power BI -raportti upotetaan työtilan **Analytiikka**-välilehteen. Tässä esimerkissä Kuljetuskaluston hallinta -sovelluksen **Varausten hallinta** -työtila laajennetaan upottamaan analyysityötila **Analytiikka**-välilehteen.
 
-# <a name="prerequisites"></a>Edellytykset
+## <a name="prerequisites"></a>Edellytykset
 + Ympäristön päivityksessä 8 tai sitä uudemmassa päivityksessä käytössä olevan kehitysympäristön käyttö.
 + Microsoft Power BI Desktopilla luotu analyysiraportti (.pbix-tiedosto), jonka tietomallin lähteenä on Yksikkösäilö-tietokanta.
 
-# <a name="overview"></a>Yleiskuvaus
+## <a name="overview"></a>Yleiskuvaus
 Riippumatta siitä laajennatko aiemmin luodun sovellustyötilan vai otatko käyttöön oman uuden työtilan, voit käyttää upotettuja analyysinäkymiä ja saada niiden kautta hyödyllistä ja vuorovaikutteista tietoa liiketoimintatiedoista. Analyysityötilan välilehti lisätään neljässä vaiheessa.
 
 1. Lisää .pbix-tiedosto Dynamics 365 -resurssina.
@@ -48,7 +48,7 @@ Riippumatta siitä laajennatko aiemmin luodun sovellustyötilan vai otatko käyt
 > [!NOTE]
 > Lisätietoja analyysiraporttien luomisesta on ohjeaiheessa [Power BI Desktopin käytön aloittaminen](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Tällä sivulla on tietoja tavoista, joilla voit luoda vaikuttavia analyysiraporttiratkaisuja.
 
-# <a name="add-a-pbix-file-as-a-resource"></a>.pbix-tiedoston lisääminen resurssina
+## <a name="add-a-pbix-file-as-a-resource"></a>.pbix-tiedoston lisääminen resurssina
 Ennen aloittamista on luotava tai haettava työtilaan upotettava Power BI -raportti. Lisätietoja analyysiraporttien luomisesta on ohjeaiheessa [Power BI Desktopin käytön aloittaminen](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
  
 Lisää .pbix-tiedosto Visual Studio -projektin artefakti.
@@ -66,7 +66,7 @@ Lisää .pbix-tiedosto Visual Studio -projektin artefakti.
   
 Nyt kun .pbix-tiedosto on lisätty Dynamics 365 -resurssina, voit upottaa raportteja työtiloihin ja lisätä suoria linkkejä valikkovaihtoehtojen avulla.
 
-# <a name="add-a-tab-control-to-an-application-workspace"></a>Välilehtiohjausobjektin lisääminen sovelluksen työtilaan
+## <a name="add-a-tab-control-to-an-application-workspace"></a>Välilehtiohjausobjektin lisääminen sovelluksen työtilaan
 Tässä esimerkissä Kuljetuskaluston hallinta -mallin **Varausten hallinta** -työtilaa laajennetaan lisäämällä **Analytiikka**-välilehti **FMClerkWorkspace**-lomakkeen määritelmään.
  
 Seuraavassa kuvassa näytetään, miltä **FMClerkWorkspace**-lomake näyttää Microsoft Visual Studion suunnittelutoiminnossa.
@@ -105,7 +105,7 @@ Nyt kun työtilan raportin upottamiseen käytettävät lomakkeen ohjausobjektit 
  
 Olet nyt suorittanut sovelluksen lomakemäärityksen laajennustehtävän. Lisätietoja mukautusten tekemisestä laajennusten avulla on ohjeaiheessa [Mukauttaminen: lisäykset ja laajennukset](../extensibility/customization-overlayering-extensions.md).
 
-# <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Katseluohjausobjektin upottaminen lisäämällä X++-liiketoimintalogiikka
+## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Katseluohjausobjektin upottaminen lisäämällä X++-liiketoimintalogiikka
 Lisää näiden ohjeiden mukaisesti liiketoimintalogiikka, joka käynnistää **Varausten hallinta** -työtilaan upotetun raportin katseluohjelman ohjausobjektin.
 
 1. Laajenna suunnittelumääritys avaamalla **FMClerkWorkspace**-lomakkeen suunnittelutila.
@@ -151,12 +151,12 @@ Olet nyt suorittanut tehtävän, jolla upotetun raportin katseluohjelman ohjauso
 > [!NOTE]
 > Voit käyttää aiemmin luotua toimintonäkymää käyttämällä sivun otsikkoon kuuluvia työtilan välilehtiä.
 
-# <a name="reference"></a>Viite
+## <a name="reference"></a>Viite
 
-## <a name="pbireporthelperinitializereportcontrol-method"></a>PBIReportHelper.initializeReportControl-menetelmä
+### <a name="pbireporthelperinitializereportcontrol-method"></a>PBIReportHelper.initializeReportControl-menetelmä
 Tässä osassa on tietoja aputoimintoluokasta, jolla Power BI -rapotti (.pbix-resurssi) upotetaan lomakeryhmän ohjausobjektiin.
 
-### <a name="syntax"></a>Syntaksi
+#### <a name="syntax"></a>Syntaksi
 ```
 public static void initializeReportControl(
      str                 _resourceName,
@@ -167,7 +167,7 @@ public static void initializeReportControl(
      List                _defaultFilters = new List(Types::Class))
 ```
 
-### <a name="parameters"></a>Parametrit
+#### <a name="parameters"></a>Parametrit
 
 | Nimi | kuvaus |
 |---|---|

@@ -34,9 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 Tässä ohjeaiheessa kuvataan, miten kieliasetukset muutetaan Retail Modern -myyntipisteessä (MPOS) ja pilvimyyntipisteessä.
 
-<a name="overview"></a>Yleiskuvaus
-========
-
+## <a name="overview"></a>Yleiskuvaus
 Retail Modern -myyntipiste (MPOS) ja pilvimyyntipiste tukevat ympäristöjä, joissa kielisetukset ja käännökset voivat vaihdella myymälän ja käyttäjäasetusten mukaan. Esimerkiksi myymälä saattaa sijaita alueella, jossa englannin kieli on asiakkaiden yleisimmin käyttämä, mutta jotkut työntekijät käyttävät mieluummin sovellusta ranskankielisillä käännöksillä.
 
 ## <a name="data-language"></a>Tietojen kieli

@@ -43,7 +43,7 @@ Voit kohdistaa tai jakaa rahasummia yhdelle tai usealle tilille tai tilin ja dim
 
 [![Liiketoimintaprosessi](./media/GL-process.PNG)](./media/GL-process.PNG)
 
-# <a name="sales-tax"></a>Arvonlisävero
+## <a name="sales-tax"></a>Arvonlisävero
 Jokainen yritys kerää ja maksaa veroja eri veroviranomaisille. Säännöt ja prosentit vaihtelevat maan tai alueen, osavaltion, kunnan tai kaupungin mukaan.
 Lisäksi säännöt on päivitettävä säännöllisesti, kun veroviranomaisten vaatimukset muuttuvat. Arvonlisäverokoodi sisältää perustiedot veroviranomaisille kerättävistä ja maksettavista veroista. Kun määrität arvonlisäverokoodit, määrität summat tai prosentit, jotka on kerättävä. Voit myös määrittää, eri menetelmät joilla ne summat tai prosentit kohdistetaan tapahtumasummiin. Tämän osan ohjeaiheissa käsitellään veronviranomaisten edellyttämien menetelmien ja veroprosenttien mukaisten arvonlisäverokoodien määrittämistä.
 
@@ -52,13 +52,13 @@ Lisäksi säännöt on päivitettävä säännöllisesti, kun veroviranomaisten 
  - [Arvonlisäveromaksut ja pyöristyssäännöt](round-sales-tax-payments.md)
 
 
-### <a name="additional-resources"></a>Lisäresurssit
+## <a name="additional-resources"></a>Lisäresurssit
 
-#### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
+### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
 Sivustossa [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
 
-#### <a name="blogs"></a>Blogit
+### <a name="blogs"></a>Blogit
 
 [Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) on ostoreskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
@@ -66,10 +66,10 @@ Sivustossa [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) on li
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
 
-#### <a name="task-guides"></a>Tehtäväoppaat
+### <a name="task-guides"></a>Tehtäväoppaat
 Finance and Operationsin tehtäväoppaissa on lisäohjeita. Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.
 
-#### <a name="videos"></a>Videot
+### <a name="videos"></a>Videot
 
 Tutustu [Microsoft Dynamics 365:n YouTube-kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
 
