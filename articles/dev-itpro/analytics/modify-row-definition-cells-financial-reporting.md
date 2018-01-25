@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 49b63216cc306553b2d3b7141f57f3c0581e1d5a
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: f3ed894445c44da6de9062da5c9399e867952d43
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/19/2018
 
 <span data-ttu-id="42a1c-104">Tässä artikkelissa käsitellään tietoja, joita talousraportin rivimäärityksen kussakin solussa on oltava ja selitetään, miten nämä tiedot annetaan.</span><span class="sxs-lookup"><span data-stu-id="42a1c-104">This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information.</span></span> 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a><span data-ttu-id="42a1c-105">Rivin koodin määrittäminen rivin määrityksessä</span><span class="sxs-lookup"><span data-stu-id="42a1c-105">Specify a row code in a row definition</span></span>
+## <a name="specify-a-row-code-in-a-row-definition"></a><span data-ttu-id="42a1c-105">Rivin koodin määrittäminen rivin määrityksessä</span><span class="sxs-lookup"><span data-stu-id="42a1c-105">Specify a row code in a row definition</span></span>
 
 <span data-ttu-id="42a1c-106">Rivien määritysten **Rivin koodi** -solun numerot tai selitteet määrittävät rivin määrityksessä kunkin rivin.</span><span class="sxs-lookup"><span data-stu-id="42a1c-106">In row definitions, the numbers or labels in the **Row Code** cell identify each line in the row definition.</span></span> <span data-ttu-id="42a1c-107">Määrittämällä rivikoodin voit viitata tietoihin laskelmissa ja kokonaissummissa.</span><span class="sxs-lookup"><span data-stu-id="42a1c-107">You can specify the row code to refer to data in calculations and totals.</span></span>
 
@@ -506,8 +506,7 @@ ms.lasthandoff: 01/19/2018
 4.  <span data-ttu-id="42a1c-709">Valitse poistettava yhdistelmä ja valitse sitten **Poista**.</span><span class="sxs-lookup"><span data-stu-id="42a1c-709">Select the set to delete, and then click **Delete**.</span></span> <span data-ttu-id="42a1c-710">Poista dimensioarvoyhdistelmä pysyvästi valitsemalla **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="42a1c-710">Click **Yes** to permanently delete the dimension value set.</span></span>
 
 
-<a name="see-also"></a><span data-ttu-id="42a1c-711">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="42a1c-711">See also</span></span>
---------
+## <a name="see-also"></a><span data-ttu-id="42a1c-711">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="42a1c-711">See also</span></span>
 
 [<span data-ttu-id="42a1c-712">Taloushallinnan raportointi</span><span class="sxs-lookup"><span data-stu-id="42a1c-712">Financial reporting</span></span>](financial-reporting-intro.md)
 

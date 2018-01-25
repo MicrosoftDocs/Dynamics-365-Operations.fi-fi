@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 09266e28c0fec4200e1644049e4a7f2880ebdcc4
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: b28d3abb31fe2b54bd207b3dbdd26b26edb31695
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -53,10 +53,9 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="19d26-128">[![Excel-malli](./media/screenshot2-1024x352.png)](./media/screenshot2.png)</span><span class="sxs-lookup"><span data-stu-id="19d26-128">[![Excel template](./media/screenshot2-1024x352.png)](./media/screenshot2.png)</span></span>
 
-<a name="exercise-1-configuration"></a><span data-ttu-id="19d26-129">Harjoitus 1: Määritys</span><span class="sxs-lookup"><span data-stu-id="19d26-129">Exercise 1: Configuration</span></span>
-=========================
+## <a name="exercise-1-configuration"></a><span data-ttu-id="19d26-129">Harjoitus 1: Määritys</span><span class="sxs-lookup"><span data-stu-id="19d26-129">Exercise 1: Configuration</span></span>
 
-## <a name="task-1-create-organizational-hierarchy"></a><span data-ttu-id="19d26-130">**Tehtävä 1: Luo organisaatiohierarkia.**</span><span class="sxs-lookup"><span data-stu-id="19d26-130">**Task 1: Create organizational hierarchy**</span></span>
+### <a name="task-1-create-organizational-hierarchy"></a><span data-ttu-id="19d26-130">**Tehtävä 1: Luo organisaatiohierarkia.**</span><span class="sxs-lookup"><span data-stu-id="19d26-130">**Task 1: Create organizational hierarchy**</span></span>
 <span data-ttu-id="19d26-131">Koska kaikki budjetointiprosessissa tapahtuu talousosastolla, Julian on luotava helppo organisaatiohierarkia, joka koostuu vain taloushallinto-osastosta.</span><span class="sxs-lookup"><span data-stu-id="19d26-131">As all the budgeting process happens in the Finance department, therefore Julia needs to create a very simple organizational hierarchy – consisting of Finance department only.</span></span> <span data-ttu-id="19d26-132">1.1.</span><span class="sxs-lookup"><span data-stu-id="19d26-132">1.1.</span></span> <span data-ttu-id="19d26-133">Siirry organisaatiohierarkioihin (Organisaation hallinto &gt; Organisaatiot &gt; Organisaatiohierarkiat) ja klikkaa "Uusi"-painiketta</span><span class="sxs-lookup"><span data-stu-id="19d26-133">Navigate to Organization hierarchies (Organization administration &gt; Organizations &gt; Organization hierarchies) and click New button</span></span>
 
 ![Organisaatiohierarkia](./media/screenshot3.png) 
@@ -85,7 +84,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="19d26-155">[![Voimaantulopäivä](./media/screenshot9.png)](./media/screenshot9.png)</span><span class="sxs-lookup"><span data-stu-id="19d26-155">[![Effective date](./media/screenshot9.png)](./media/screenshot9.png)</span></span>
 
-## <a name="task-2-configure-user-security"></a><span data-ttu-id="19d26-156">Vaihe 2: Käyttäjäryhmän suojauksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="19d26-156">Task 2: Configure user security</span></span>
+### <a name="task-2-configure-user-security"></a><span data-ttu-id="19d26-156">Vaihe 2: Käyttäjäryhmän suojauksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="19d26-156">Task 2: Configure user security</span></span>
 <span data-ttu-id="19d26-157">Budjettisuunnittelussa käytetään erityisiä suojauskäytäntöjä määrittämään pääsy budjettisuunnitelmien tietoihin.</span><span class="sxs-lookup"><span data-stu-id="19d26-157">Budget planning uses special security policies to configure access to budget plans data.</span></span> <span data-ttu-id="19d26-158">Julian on annettava käyttöoikeus taloushallinnon budjettisuunnitelmiin itselleen.</span><span class="sxs-lookup"><span data-stu-id="19d26-158">Julia needs to give access to Finance budget plans for herself.</span></span> 
 
 <span data-ttu-id="19d26-159">2.1.</span><span class="sxs-lookup"><span data-stu-id="19d26-159">2.1.</span></span> <span data-ttu-id="19d26-160">Siirry DEMF-yrityskontekstiin.</span><span class="sxs-lookup"><span data-stu-id="19d26-160">Switch to DEMF legal entity context.</span></span> 
@@ -109,7 +108,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="19d26-178">[![Myönnä käyttöoikeus](./media/screenshot14.png)](./media/screenshot14.png)</span><span class="sxs-lookup"><span data-stu-id="19d26-178">[![Grant access](./media/screenshot14.png)](./media/screenshot14.png)</span></span>
 
-## <a name="task-3-create-scenarios"></a><span data-ttu-id="19d26-179">Tehtävä 3: Luo skenaarioita</span><span class="sxs-lookup"><span data-stu-id="19d26-179">Task 3: Create scenarios</span></span>
+### <a name="task-3-create-scenarios"></a><span data-ttu-id="19d26-179">Tehtävä 3: Luo skenaarioita</span><span class="sxs-lookup"><span data-stu-id="19d26-179">Task 3: Create scenarios</span></span>
 <span data-ttu-id="19d26-180">3.1.</span><span class="sxs-lookup"><span data-stu-id="19d26-180">3.1.</span></span> <span data-ttu-id="19d26-181">Mene: Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnittelun konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="19d26-181">Navigate to Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration.</span></span> <span data-ttu-id="19d26-182">"Skenaariot"-sivulla, pane merkille ne skenaariot, joita käytämme myöhemmin tällä kurssilla: edellisen vuoden todeutuneet ja budjetoidut.</span><span class="sxs-lookup"><span data-stu-id="19d26-182">In the Scenarios page note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted.</span></span> 
 
 <span data-ttu-id="19d26-183">*Huomautus: Voit luoda tarvittaessa uusia tilanteita tähän harjoitukseen ja käyttää niitä näiden sijaan.*</span><span class="sxs-lookup"><span data-stu-id="19d26-183">*Note: You can create new scenarios for this exercise if desired and use those instead.*</span></span> 
@@ -118,7 +117,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="19d26-185">*Huomautus: Koska Julia ei käytä virallista hyväksymisprosessia budjetin valmisteluun, ohitamme työnkulun, vaiheiden ja työnkulun vaiheiden asetukset tällä kurssilla ja käytämme aiemmin määritettyjä asetuksia "Automaattinen – hyväksy työnkulku". Katso liitteestä tämän työnkulun konfiguraatio.*</span><span class="sxs-lookup"><span data-stu-id="19d26-185">*Note: as Julia is not using formal approval process for budget preparation, we will skip Workflows, Stages and Workflow stages setup in this lab and will use existing setup for Auto – approve workflow. See appendix for this workflow configuration.*</span></span>
 
-## <a name="task-4-create-budget-plan-columns"></a><span data-ttu-id="19d26-186">Tehtävä 4: Luo budjettisuunnitelmalle sarakkeet</span><span class="sxs-lookup"><span data-stu-id="19d26-186">Task 4: Create budget plan columns</span></span>
+### <a name="task-4-create-budget-plan-columns"></a><span data-ttu-id="19d26-186">Tehtävä 4: Luo budjettisuunnitelmalle sarakkeet</span><span class="sxs-lookup"><span data-stu-id="19d26-186">Task 4: Create budget plan columns</span></span>
 <span data-ttu-id="19d26-187">Budjettisuunnitelman sarakkeet ovat joko rahaan tai määrään perustuvia sarakkeita, joita voidaan käyttää budjettisuunnitelman asiakirjan asetteluun.</span><span class="sxs-lookup"><span data-stu-id="19d26-187">Budget plan columns are either Monetary or quantity based columns that can be used in budget plan document layout.</span></span> <span data-ttu-id="19d26-188">Esimerkissämme meidän on luotava sarake edellisen vuoden todellisille arvoille ja 12 saraketta, jotka edustavat budjetoidun vuoden kutakin kuukautta.</span><span class="sxs-lookup"><span data-stu-id="19d26-188">In our example we need to create a column for Previous year actuals and 12 columns to represent each month in a budgeted year.</span></span> <span data-ttu-id="19d26-189">Sarakkeita voidaan luoda joko klikkaamalla "Lisää"-painiketta ja kirjoittamalla arvot, tai tietoyksikön avulla.</span><span class="sxs-lookup"><span data-stu-id="19d26-189">Columns can be created either by simply clicking Add button and filling in the values, or with a help of Data entity.</span></span> <span data-ttu-id="19d26-190">Tällä kurssilla käytämme tietoyksikköä syöttämään arvot.</span><span class="sxs-lookup"><span data-stu-id="19d26-190">In this lab we will use Data entity to fill in the values.</span></span> 
 
 <span data-ttu-id="19d26-191">4.1.</span><span class="sxs-lookup"><span data-stu-id="19d26-191">4.1.</span></span> <span data-ttu-id="19d26-192">Avaa "Sarakkeet"-sivu kohdassa Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnittelun konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="19d26-192">In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Columns page.</span></span> <span data-ttu-id="19d26-193">Napsauta lomakkeen oikeassa yläkulmassa olevaa "Office"-painiketta ja valitse "Sarakkeet" (suodattamaton)</span><span class="sxs-lookup"><span data-stu-id="19d26-193">Click Office button on the top right corner of the form and pick Columns (unfiltered)</span></span> 
@@ -151,7 +150,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="19d26-219">[![Päivitä](./media/screenshot23.png)](./media/screenshot23.png)</span><span class="sxs-lookup"><span data-stu-id="19d26-219">[![Refresh](./media/screenshot23.png)](./media/screenshot23.png)</span></span>
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a><span data-ttu-id="19d26-220">Tehtävä 5: Luo budjettisuunnitelma asiakirjan suunnitelmat ja mallit</span><span class="sxs-lookup"><span data-stu-id="19d26-220">Task 5: Create budget plan document layouts and templates</span></span>
+### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a><span data-ttu-id="19d26-220">Tehtävä 5: Luo budjettisuunnitelma asiakirjan suunnitelmat ja mallit</span><span class="sxs-lookup"><span data-stu-id="19d26-220">Task 5: Create budget plan document layouts and templates</span></span>
 <span data-ttu-id="19d26-221">Asettelu määrittää, miltä budjettisuunnitelman asiakirjan rivien ruudukko näyttää, kun käyttäjä avaa budjettisuunnitelma-asiakirjan.</span><span class="sxs-lookup"><span data-stu-id="19d26-221">Layout defines how budget plan document lines grid is going to look like when user opens budget plan document.</span></span> <span data-ttu-id="19d26-222">On myös mahdollista siirtää budjettisuunnitelman asiakirjan tekstin asettelu niin, että voidaan katsoa samoja tietoja eri suunnalta.</span><span class="sxs-lookup"><span data-stu-id="19d26-222">It is also possible to switch the layout for budget plan document to see the same data in different angles.</span></span> <span data-ttu-id="19d26-223">Nyt kun hän on määrittänyt sarakkeet, joita käytetään budjettisuunnittelu asiakirjassa, Julian on luotava budjettisuunnitelma asiakirjan asettelu, joka näyttää samanlaiselta kuin Excel-taulukko, jota hän käyttää budjettitietojen luomiseen (Katso "Skenaarion yhteenveto" -osa tässä kurssissa)</span><span class="sxs-lookup"><span data-stu-id="19d26-223">Now, as she’s got columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table she uses to create budget data (see section Scenario overview in this lab)</span></span> 
 
 <span data-ttu-id="19d26-224">5.1.</span><span class="sxs-lookup"><span data-stu-id="19d26-224">5.1.</span></span> <span data-ttu-id="19d26-225">Avaa "Asettelut"-sivu kohdassa Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnittelun konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="19d26-225">In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Layouts page.</span></span> <span data-ttu-id="19d26-226">Luo uusi asettelu kuukausittaiselle budjettitapahtumalle:</span><span class="sxs-lookup"><span data-stu-id="19d26-226">Create a new layout for Monthly budget entry:</span></span>
@@ -172,7 +171,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="19d26-240">5.3.</span><span class="sxs-lookup"><span data-stu-id="19d26-240">5.3.</span></span> <span data-ttu-id="19d26-241">&lt; Vaihtoehtoinen työvaihe&gt; Muokkaa Excel-mallia, jotta se näyttää enemmän käyttäjäystävälliseltä: Lisää summa-kaavoja, otsikkokenttiä, muotoiluja jne. Tallenna muutokset ja lataa tiedosto budjettisuunnitelman asetteluun valitsemalla Asettelu &gt; Lataa [![Lataa](./media/screenshot26.png)](./media/screenshot26.png)</span><span class="sxs-lookup"><span data-stu-id="19d26-241">&lt; Optional step&gt; Modify Excel template to make it look more user friendly – add total formulas, header fields, formatting, etc. Save the changes and upload the file to budget plan layout by clicking Layout &gt; Upload [![Upload](./media/screenshot26.png)](./media/screenshot26.png)</span></span>
 
-## <a name="task-6-create-a-budget-planning-process"></a><span data-ttu-id="19d26-242">Tehtävä 6: Luo budjettisuunnitteluprosessi</span><span class="sxs-lookup"><span data-stu-id="19d26-242">Task 6: Create a budget planning process</span></span>
+### <a name="task-6-create-a-budget-planning-process"></a><span data-ttu-id="19d26-242">Tehtävä 6: Luo budjettisuunnitteluprosessi</span><span class="sxs-lookup"><span data-stu-id="19d26-242">Task 6: Create a budget planning process</span></span>
 <span data-ttu-id="19d26-243">Julian on luotava ja aktivoitava uusi budjettisuunnitteluprosessi, joka yhdistää kaikki edellä olevat asetukset, alkaakseen kirjoittamaan budjettisuunnitelmia.</span><span class="sxs-lookup"><span data-stu-id="19d26-243">Julia needs to create and activate a new budget planning process combining all the setup above to start entering budget plans.</span></span> <span data-ttu-id="19d26-244">Budjetin suunnitteluprosessi määrittää, mitä budjetointiorganisaatioita, työnkulkuja, asetteluja ja malleja käytetään budjettisuunnitelmien luomiseen.</span><span class="sxs-lookup"><span data-stu-id="19d26-244">Budget planning process defines what budgeting organizations, workflow, layouts and templates will be used for creating budget plans.</span></span> 
 
 <span data-ttu-id="19d26-245">6.1.</span><span class="sxs-lookup"><span data-stu-id="19d26-245">6.1.</span></span> <span data-ttu-id="19d26-246">Siirry: Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnitteluprosessi ja luo uusi tietue.</span><span class="sxs-lookup"><span data-stu-id="19d26-246">Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning process and create a new record.</span></span>
@@ -193,10 +192,9 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="19d26-258">[![Aktivoi](./media/screenshot28.png)](./media/screenshot28.png)</span><span class="sxs-lookup"><span data-stu-id="19d26-258">[![Activate](./media/screenshot28.png)](./media/screenshot28.png)</span></span>
 
-<a name="exercise-2-process-simulation"></a><span data-ttu-id="19d26-259">Harjoitus 2: Prosessin simulointi</span><span class="sxs-lookup"><span data-stu-id="19d26-259">Exercise 2: Process simulation</span></span>
-==============================
+## <a name="exercise-2-process-simulation"></a><span data-ttu-id="19d26-259">Harjoitus 2: Prosessin simulointi</span><span class="sxs-lookup"><span data-stu-id="19d26-259">Exercise 2: Process simulation</span></span>
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a><span data-ttu-id="19d26-260">Tehtävä 7: Luo budjettisuunnitelmalle alkuperäiset tiedot kirjanpitotilistä</span><span class="sxs-lookup"><span data-stu-id="19d26-260">Task 7: Generate initial data for budget plan from General ledger</span></span>
+### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a><span data-ttu-id="19d26-260">Tehtävä 7: Luo budjettisuunnitelmalle alkuperäiset tiedot kirjanpitotilistä</span><span class="sxs-lookup"><span data-stu-id="19d26-260">Task 7: Generate initial data for budget plan from General ledger</span></span>
 <span data-ttu-id="19d26-261">7.1.</span><span class="sxs-lookup"><span data-stu-id="19d26-261">7.1.</span></span> <span data-ttu-id="19d26-262">Siirry: Budjetointi &gt; Kausittainen &gt; Luo budjettisuunnitelma kirjanpidosta.</span><span class="sxs-lookup"><span data-stu-id="19d26-262">Navigate to Budgeting &gt; Periodic &gt; Generate budget plan from General ledger.</span></span> <span data-ttu-id="19d26-263">Täytä kausittaisen prosessin parametrit ja klikkaa Lu-painiketta.</span><span class="sxs-lookup"><span data-stu-id="19d26-263">Fill in the periodic process parameters and click button Generate.</span></span> 
 
 <span data-ttu-id="19d26-264">[![Luo](./media/screenshot29.png)](./media/screenshot29.png)</span><span class="sxs-lookup"><span data-stu-id="19d26-264">[![Generate](./media/screenshot29.png)](./media/screenshot29.png)</span></span> 
@@ -209,7 +207,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="19d26-271">[![Budjettisuunnitelman näyttö](./media/screenshot31.png)](./media/screenshot31.png)</span><span class="sxs-lookup"><span data-stu-id="19d26-271">[![Budget plan display](./media/screenshot31.png)](./media/screenshot31.png)</span></span>
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a><span data-ttu-id="19d26-272">Vaihe 8: Luo kuluvan vuoden budjetti perustuen edellisen vuoden ilmoitettaviin todellisiin arvoihin</span><span class="sxs-lookup"><span data-stu-id="19d26-272">Task 8: Create current year budget based on previous year actuals</span></span>
+### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a><span data-ttu-id="19d26-272">Vaihe 8: Luo kuluvan vuoden budjetti perustuen edellisen vuoden ilmoitettaviin todellisiin arvoihin</span><span class="sxs-lookup"><span data-stu-id="19d26-272">Task 8: Create current year budget based on previous year actuals</span></span>
 <span data-ttu-id="19d26-273">Kohdistusmenetelmiä voidaan käyttää budjettisuunnitelmassa kopioimaan tietoja helposti budjettisuunnitelmia varten yhdestä skeenariosta toiseen / levittäen ne eri aikakausille / liitettäen dimensioihin.</span><span class="sxs-lookup"><span data-stu-id="19d26-273">Allocation methods can be used in budget plan to easily copy information for budget plans from one scenario to another/ spread them across periods/ allocate to dimensions.</span></span> <span data-ttu-id="19d26-274">Käytämme kohdistuksia luomaan kuluvan vuoden budjetin edellisen vuoden ilmoitettavista todellisista arvoista.</span><span class="sxs-lookup"><span data-stu-id="19d26-274">We will use allocations to create current year budget from previous year actuals.</span></span> 
 
 <span data-ttu-id="19d26-275">8.1.</span><span class="sxs-lookup"><span data-stu-id="19d26-275">8.1.</span></span> <span data-ttu-id="19d26-276">Valitse kaikki rivit budjettisuunnitelman asiakirjan ruudukossa ja klikkaa painiketta kohdistaaksesi budjetin</span><span class="sxs-lookup"><span data-stu-id="19d26-276">Pick all lines in the budget plan document grid and click button allocate budget</span></span> 
@@ -224,7 +222,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="19d26-282">[![Myyntikäyrä](./media/screenshot34.png)](./media/screenshot34.png)</span><span class="sxs-lookup"><span data-stu-id="19d26-282">[![Sales curve](./media/screenshot34.png)](./media/screenshot34.png)</span></span>
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a><span data-ttu-id="19d26-283">Tehtävä 9: Oikaise budjettisuunnitelmaasiakirja käyttämällä Exceliä ja viimeistele asiakirja</span><span class="sxs-lookup"><span data-stu-id="19d26-283">Task 9: Adjust budget plan document using Excel and finalize the document</span></span>
+### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a><span data-ttu-id="19d26-283">Tehtävä 9: Oikaise budjettisuunnitelmaasiakirja käyttämällä Exceliä ja viimeistele asiakirja</span><span class="sxs-lookup"><span data-stu-id="19d26-283">Task 9: Adjust budget plan document using Excel and finalize the document</span></span>
 <span data-ttu-id="19d26-284">9.1.</span><span class="sxs-lookup"><span data-stu-id="19d26-284">9.1.</span></span> <span data-ttu-id="19d26-285">Napsauta painiketta avataksesi laskentataulukon sisällön Excelissä</span><span class="sxs-lookup"><span data-stu-id="19d26-285">Click Button worksheet to open document contents in Excel</span></span>
 
 <span data-ttu-id="19d26-286">[![Excel](./media/screenshot35.png)](./media/screenshot35.png)</span><span class="sxs-lookup"><span data-stu-id="19d26-286">[![Excel](./media/screenshot35.png)](./media/screenshot35.png)</span></span>
@@ -239,8 +237,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="19d26-294">Kun työnkulku on valmis, budjettisuunnitelman asiakirjavaihe muuttuu tilaan Hyväksytty.</span><span class="sxs-lookup"><span data-stu-id="19d26-294">Once workflow completes, budget plan document stage changes to Approved.</span></span> <span data-ttu-id="19d26-295">[![Hyväksytty](./media/screenshot38.png)](./media/screenshot38.png)</span><span class="sxs-lookup"><span data-stu-id="19d26-295">[![Approved](./media/screenshot38.png)](./media/screenshot38.png)</span></span>
 
-<a name="appendix"></a><span data-ttu-id="19d26-296">Liite</span><span class="sxs-lookup"><span data-stu-id="19d26-296">Appendix</span></span>
-========
+## <a name="appendix"></a><span data-ttu-id="19d26-296">Liite</span><span class="sxs-lookup"><span data-stu-id="19d26-296">Appendix</span></span>
 
 ### <a name="auto-approve-workflow-configuration"></a><span data-ttu-id="19d26-297">Hyväksy automaattisesti työnkulun konfigurointi</span><span class="sxs-lookup"><span data-stu-id="19d26-297">Auto-Approve workflow configuration</span></span>
 

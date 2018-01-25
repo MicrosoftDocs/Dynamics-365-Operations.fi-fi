@@ -18,10 +18,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e544c592429d00b1ce464740f4e82cb75d10412b
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: bea7dc240f495ac60c733f1a62cebfda281d754e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="3e985-118">[![Liiketoimintaprosessi](./media/GL-process.PNG)](./media/GL-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="3e985-118">[![Business process](./media/GL-process.PNG)](./media/GL-process.PNG)</span></span>
 
-# <a name="sales-tax"></a><span data-ttu-id="3e985-119">Arvonlisävero</span><span class="sxs-lookup"><span data-stu-id="3e985-119">Sales tax</span></span>
+## <a name="sales-tax"></a><span data-ttu-id="3e985-119">Arvonlisävero</span><span class="sxs-lookup"><span data-stu-id="3e985-119">Sales tax</span></span>
 <span data-ttu-id="3e985-120">Jokainen yritys kerää ja maksaa veroja eri veroviranomaisille.</span><span class="sxs-lookup"><span data-stu-id="3e985-120">Every company collects and pays taxes to various tax authorities.</span></span> <span data-ttu-id="3e985-121">Säännöt ja prosentit vaihtelevat maan tai alueen, osavaltion, kunnan tai kaupungin mukaan.</span><span class="sxs-lookup"><span data-stu-id="3e985-121">The rules and rates vary by country/region, state, county, and city.</span></span>
 <span data-ttu-id="3e985-122">Lisäksi säännöt on päivitettävä säännöllisesti, kun veroviranomaisten vaatimukset muuttuvat.</span><span class="sxs-lookup"><span data-stu-id="3e985-122">In addition, the rules must be updated periodically when tax authorities change their requirements.</span></span> <span data-ttu-id="3e985-123">Arvonlisäverokoodi sisältää perustiedot veroviranomaisille kerättävistä ja maksettavista veroista.</span><span class="sxs-lookup"><span data-stu-id="3e985-123">Sales tax codes contain the basic information about how much you collect and pay to the authorities.</span></span> <span data-ttu-id="3e985-124">Kun määrität arvonlisäverokoodit, määrität summat tai prosentit, jotka on kerättävä.</span><span class="sxs-lookup"><span data-stu-id="3e985-124">When you set up sales tax codes, you define the amounts or percentages that must be collected.</span></span> <span data-ttu-id="3e985-125">Voit myös määrittää, eri menetelmät joilla ne summat tai prosentit kohdistetaan tapahtumasummiin.</span><span class="sxs-lookup"><span data-stu-id="3e985-125">You also define the various methods by which those amounts or percentages are applied to transaction amounts.</span></span> <span data-ttu-id="3e985-126">Tämän osan ohjeaiheissa käsitellään veronviranomaisten edellyttämien menetelmien ja veroprosenttien mukaisten arvonlisäverokoodien määrittämistä.</span><span class="sxs-lookup"><span data-stu-id="3e985-126">The topics in this section provide information about how to set up sales tax codes for the methods and rates that your tax authorities require.</span></span>
 
@@ -52,13 +52,13 @@ ms.lasthandoff: 11/03/2017
  - [<span data-ttu-id="3e985-129">Arvonlisäveromaksut ja pyöristyssäännöt</span><span class="sxs-lookup"><span data-stu-id="3e985-129">Sales tax payments and rounding rules</span></span>](round-sales-tax-payments.md)
 
 
-### <a name="additional-resources"></a><span data-ttu-id="3e985-130">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="3e985-130">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="3e985-130">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="3e985-130">Additional resources</span></span>
 
-#### <a name="whats-new-and-in-development"></a><span data-ttu-id="3e985-131">Uudet ja kehitteillä olevat toiminnot</span><span class="sxs-lookup"><span data-stu-id="3e985-131">What's new and in development</span></span>
+### <a name="whats-new-and-in-development"></a><span data-ttu-id="3e985-131">Uudet ja kehitteillä olevat toiminnot</span><span class="sxs-lookup"><span data-stu-id="3e985-131">What's new and in development</span></span>
 
 <span data-ttu-id="3e985-132">Sivustossa [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.</span><span class="sxs-lookup"><span data-stu-id="3e985-132">Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.</span></span> 
 
-#### <a name="blogs"></a><span data-ttu-id="3e985-133">Blogit</span><span class="sxs-lookup"><span data-stu-id="3e985-133">Blogs</span></span>
+### <a name="blogs"></a><span data-ttu-id="3e985-133">Blogit</span><span class="sxs-lookup"><span data-stu-id="3e985-133">Blogs</span></span>
 
 <span data-ttu-id="3e985-134">[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) on ostoreskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.</span><span class="sxs-lookup"><span data-stu-id="3e985-134">You can find opinions, news, and other information about Accounts payable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).</span></span>
 
@@ -66,10 +66,10 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="3e985-137">[Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.</span><span class="sxs-lookup"><span data-stu-id="3e985-137">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
 
-#### <a name="task-guides"></a><span data-ttu-id="3e985-138">Tehtäväoppaat</span><span class="sxs-lookup"><span data-stu-id="3e985-138">Task guides</span></span>
+### <a name="task-guides"></a><span data-ttu-id="3e985-138">Tehtäväoppaat</span><span class="sxs-lookup"><span data-stu-id="3e985-138">Task guides</span></span>
 <span data-ttu-id="3e985-139">Finance and Operationsin tehtäväoppaissa on lisäohjeita.</span><span class="sxs-lookup"><span data-stu-id="3e985-139">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="3e985-140">Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.</span><span class="sxs-lookup"><span data-stu-id="3e985-140">To access task guides, click the Help button on any page.</span></span>
 
-#### <a name="videos"></a><span data-ttu-id="3e985-141">Videot</span><span class="sxs-lookup"><span data-stu-id="3e985-141">Videos</span></span>
+### <a name="videos"></a><span data-ttu-id="3e985-141">Videot</span><span class="sxs-lookup"><span data-stu-id="3e985-141">Videos</span></span>
 
 <span data-ttu-id="3e985-142">Tutustu [Microsoft Dynamics 365:n YouTube-kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.</span><span class="sxs-lookup"><span data-stu-id="3e985-142">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
 
