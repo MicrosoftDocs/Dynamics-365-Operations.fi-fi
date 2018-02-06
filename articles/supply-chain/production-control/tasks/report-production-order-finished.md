@@ -1,4 +1,4 @@
---- 
+---
 title: Tuotantotilauksen ilmoittaminen valmiiksi
 description: "Tässä menettelyssä näytetään, miten tuotantotilaus ilmoitetaan valmiiksi."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -50,5 +50,4 @@ Tässä menettelyssä näytetään, miten tuotantotilaus ilmoitetaan valmiiksi. 
 3. Merkitse valittu rivi luettelossa.
 4. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
     * Valmiiksi ilmoitettujen kirjauskansio on kirjattu. Jos haluat tehdä oikaisuja kirjauskansioon, voit luoda manuaalisesti uuden kirjauskansion muutosten tekemistä varten.  
-
 

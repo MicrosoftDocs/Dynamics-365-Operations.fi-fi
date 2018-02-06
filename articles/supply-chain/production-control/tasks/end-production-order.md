@@ -1,4 +1,4 @@
---- 
+---
 title: Tuotantotilauksen lopetus
 description: "Tässä menettelyssä selvitetään, miten tuotantotilaus päätetään."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -46,5 +46,4 @@ Tässä menettelyssä selvitetään, miten tuotantotilaus päätetään. Tämän
 1. Valitse toimintoruudussa Hallitse kustannuksia.
 2. Valitse Näytä kustannusvertailu.
     * Kun tuotantotilaus on päätetty, voit verrata arvioitua kustannushintaa toteutuneisiin kustannushintaan. Saat tällä tavoin paremman käsityksen tuotannon variansseista.  
-
 

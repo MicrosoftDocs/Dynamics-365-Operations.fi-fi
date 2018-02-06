@@ -1,4 +1,4 @@
---- 
+---
 title: "Käynnistä tuotantotilaus"
 description: "Tässä menettelyssä selvitetään, miten tuotantotilaus aloitetaan työnohjauksessa."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -70,5 +70,4 @@ Tässä menettelyssä selvitetään, miten tuotantotilaus aloitetaan työnohjauk
 7. Valitse Kirjaa.
 8. Valitse OK.
     * Yksittäisiin toimintoihin käytetty aika kirjataan reitityskorttikirjauskansioon Myös hyväksyttyjen ja virheellisten määrä voidaan raportoida.  
-
 

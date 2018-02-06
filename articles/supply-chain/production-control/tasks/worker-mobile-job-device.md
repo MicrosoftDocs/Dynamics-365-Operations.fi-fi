@@ -69,4 +69,3 @@ Tässä menettelyssä näytetään, miten työntekijän käyttäjätilille mää
 6. Voit määrittää Tuotantoyksikkö-kentässä työntekijän oletussuodattimen. Tämä varmistaa, että vain valittujen tuotantoyksiköiden tuotantotyöt näytetään, kun työntekijä kirjautuu laitteeseen.
 7. Sulje sivu.
 
-

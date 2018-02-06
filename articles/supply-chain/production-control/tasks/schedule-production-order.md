@@ -1,4 +1,4 @@
---- 
+---
 title: Ajoita tuotantotilaus
 description: "Tässä menettelyssä selvitetään, miten tuotantotilaus ajoitetaan."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -53,5 +53,4 @@ Tässä menettelyssä selvitetään, miten tuotantotilaus ajoitetaan. Tämän me
     * Kapasiteetin kuormitus -sivulla näkyy töiden ajoittamisella varattu kapasiteetti, resurssiin tällä hetkellä varattujen tuntien kokonaismäärä ja resurssissa jäljellä olevat tunnit, joille voidaan ajoittaa töitä.  
 6. Sulje sivu.
 7. Sulje sivu.
-
 

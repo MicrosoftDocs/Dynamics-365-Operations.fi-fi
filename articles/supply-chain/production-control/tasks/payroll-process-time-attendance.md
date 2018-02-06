@@ -1,4 +1,4 @@
---- 
+---
 title: "Ota käyttöön työajanseurantaan perustuva palkanlaskentaprosessi"
 description: "Tässä menettelyssä kerrotaan, miten palkanlaskentaprosessi otetaan käyttöön työajan seurannassa."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -68,5 +68,4 @@ Tässä menettelyssä kerrotaan, miten palkanlaskentaprosessi otetaan käyttöö
 6. Laajenna Aikarekisteröinti-osa.
 7. Valitse Muokkaa.
 8. Syötä tai valitse arvo Maksusopimus-kenttään.
-
 

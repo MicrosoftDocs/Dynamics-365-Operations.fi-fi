@@ -1,4 +1,4 @@
---- 
+---
 title: Arvioi tuotantotilaus
 description: "Voit suorittaa tämän menettelyn USMF-demoyrityksen tiedoilla tai käyttää omaa tietojoukkoa."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -42,5 +42,4 @@ Voit suorittaa tämän menettelyn USMF-demoyrityksen tiedoilla tai käyttää om
 1. Valitse toimintoruudussa Hallitse kustannuksia.
 2. Valitse Näytä laskennan tiedot.
     * Kustannuserittely näkyy tällä sivulla. Voit esimerkiksi tarkastella ensimmäisellä rivillä valmiin tuotteen yksikkökohtaista kokonaiskustannushintaa. Seuraavilla riveillä on tuoterakenteen ja tuotantoreitin kustannukset sekä välilliset kustannukset.  
-
 
