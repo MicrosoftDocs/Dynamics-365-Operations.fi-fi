@@ -1,4 +1,4 @@
---- 
+---
 title: Arvioi tuotantotilaus
 description: "Voit suorittaa tämän menettelyn USMF-demoyrityksen tiedoilla tai käyttää omaa tietojoukkoa."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -17,10 +17,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1d34a891a5b655f801e46b8c07525cdcbc7a65c8
+ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
+ms.openlocfilehash: 862281adac67757e1ce0e9ddd1e96483363abb9a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 # <a name="estimate-a-production-order"></a><span data-ttu-id="602c7-103">Arvioi tuotantotilaus</span><span class="sxs-lookup"><span data-stu-id="602c7-103">Estimate a production order</span></span>
@@ -42,5 +42,4 @@ ms.lasthandoff: 09/29/2017
 1. <span data-ttu-id="602c7-115">Valitse toimintoruudussa Hallitse kustannuksia.</span><span class="sxs-lookup"><span data-stu-id="602c7-115">On the Action Pane, click Manage costs.</span></span>
 2. <span data-ttu-id="602c7-116">Valitse Näytä laskennan tiedot.</span><span class="sxs-lookup"><span data-stu-id="602c7-116">Click View calculation details.</span></span>
     * <span data-ttu-id="602c7-117">Kustannuserittely näkyy tällä sivulla.</span><span class="sxs-lookup"><span data-stu-id="602c7-117">This page displays the cost breakdown.</span></span> <span data-ttu-id="602c7-118">Voit esimerkiksi tarkastella ensimmäisellä rivillä valmiin tuotteen yksikkökohtaista kokonaiskustannushintaa.</span><span class="sxs-lookup"><span data-stu-id="602c7-118">For example, you can view the total cost price per unit for the finished product in the first row.</span></span> <span data-ttu-id="602c7-119">Seuraavilla riveillä on tuoterakenteen ja tuotantoreitin kustannukset sekä välilliset kustannukset.</span><span class="sxs-lookup"><span data-stu-id="602c7-119">The subsequent rows contain costs according to the bill of materials, production route, and indirect costs.</span></span>  
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: Tuotantotilauksen ilmoittaminen valmiiksi
 description: "Tässä menettelyssä näytetään, miten tuotantotilaus ilmoitetaan valmiiksi."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -17,10 +17,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 17b2285e4669f1ad8fa6cea1250693a2a70c7dfa
+ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
+ms.openlocfilehash: e6f5e7316f89ba7c2b7091eb9df02aa07ea44dbd
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 # <a name="report-a-production-order-as-finished"></a><span data-ttu-id="906ed-103">Tuotantotilauksen ilmoittaminen valmiiksi</span><span class="sxs-lookup"><span data-stu-id="906ed-103">Report a production order as finished</span></span>
@@ -50,5 +50,4 @@ ms.lasthandoff: 09/29/2017
 3. <span data-ttu-id="906ed-123">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="906ed-123">In the list, mark the selected row.</span></span>
 4. <span data-ttu-id="906ed-124">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="906ed-124">In the list, click the link in the selected row.</span></span>
     * <span data-ttu-id="906ed-125">Valmiiksi ilmoitettujen kirjauskansio on kirjattu.</span><span class="sxs-lookup"><span data-stu-id="906ed-125">The Report as finished journal is posted.</span></span> <span data-ttu-id="906ed-126">Jos haluat tehdä oikaisuja kirjauskansioon, voit luoda manuaalisesti uuden kirjauskansion muutosten tekemistä varten.</span><span class="sxs-lookup"><span data-stu-id="906ed-126">If you want to make adjustments to the journal, you can manually create  a new journal where you can make changes.</span></span>  
-
 
