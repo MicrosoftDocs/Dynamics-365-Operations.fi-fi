@@ -1,7 +1,7 @@
 ---
 title: "Yhdistä varastoerät"
 description: "Tässä artikkelissa on tietoja kahden tai useamman varastoerän konsolidoinnista yhdistetyksi eräksi."
-author: perlynne
+author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
