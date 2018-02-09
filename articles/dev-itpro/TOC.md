@@ -114,6 +114,7 @@
 #### [Mukauttaminen: lisäykset ja laajennukset](extensibility/customization-overlayering-extensions.md)
 ### Uutta
 #### [Laajennettavuuden muutokset heinäkuu 2017](extensibility/changes-july-2017.md)
+#### [Laajennettavuuden muutokset Dynamics 365 for Finance and Operations, Enterprise edition 7.3 -versiossa](extensibility/extensibility-changes-73.md)
 ### Perusteet
 #### [Tunkeutuva mukauttaminen](extensibility/intrusive-customizations.md)
 #### [Luokan laajennukset](extensibility/class-extensions.md)
@@ -138,14 +139,19 @@
 #### [Lomakkeen ohjausobjektien ominaisuuksien muokkaaminen](extensibility/modify-control-properties.md)
 #### [Otsikon vaihtaminen](extensibility/change-label.md)
 #### [Numerosarja-alueen laajentaminen](extensibility/extend-number-sequence-scope.md)
+#### [Uuden varastodimension lisääminen](extensibility/inventory-dimensions.md)
+#### [Hinnan ja alennuksen laajennettavuuden muutokset](extensibility/pricing-app73.md)
+#### [Taulumäärityksen laajennus](extensibility/map-extensions.md)
+#### [Käyttöliittyminä käytettävien taulumääritysten laajentaminen](extensibility/maps-as-interfaces.md)
+#### [Versionhallinnassa käytettävien taulumääritysten laajentaminen](extensibility/maps-with-versioning.md)
 
 
 
 
 ## Suorituskyky
-### [Jäljittäminen jäljityksen jäsentimellä](perf-test/trace-trace-tutorial.md)
+### [Jäljittäminen Trace parser -sovelluksen avulla](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK:n ja monen käyttäjän testaus Visual Studio Team Services -palvelulla](perf-test/perfsdk-tutorial.md)
-### [Ongelmien vianmääritys ja suorituskykyongelmien analysointi jäljityksen jäsentimellä](perf-test/trace-parser.md)
+### [Ongelmien vianmääritys ja suorituskykyongelmien analysointi Trace parser -sovelluksen avulla](perf-test/trace-parser.md)
 ### [Suorituskyvyn ajastin](perf-test/performance-timer.md)
 ## Tuen testaus Visual Studiossa
 ### [Testaus ja tarkistukset](perf-test/testing-validation.md)
@@ -356,7 +362,7 @@
 # Tietojen integraatio
 ## [Integraatiomallit](data-entities/integration-overview.md)
 
-## Tietojen integraation API-rajapinnat
+## Tietojen integraation ohjelmointirajapinnat
 ### [Tietojen hallintapaketin API](data-entities/data-management-api.md)
 ### [Palvelujen päätepisteet](data-entities/services-home-page.md)
 #### [Palvelun todennuksen vianmääritys](data-entities/troubleshoot-service-authentication.md)
@@ -453,7 +459,7 @@
 ## [Automatisoidun koontiversion versiomallit](dev-tools/version-models-build.md)
 
 
-# Ratkaisujen vapauttaminen Lifecycle Servicesilla
+# Ratkaisujen vapauttaminen Lifecycle Services -palvelun avulla
 ## [Kehitys ja vapautus](lcs-solutions/lcs-solutions-app-source.md)
 ## [Väliaikainen tallennus ja julkaisu](lcs-solutions/marketing-content-lcs-solutions.md)
 ## [Menetelmän lisääminen](lcs-solutions/methodologies-lcs-solutions.md)
@@ -522,20 +528,20 @@
 ### [Pakettisovelluksen vianmääritys](deployment/deployable-package-troubleshooting.md)
 
 # [Päivitys ja siirto](migration-upgrade/upgrade-home-page.md)
-## [AX 2012:n päivittäminen Dynamics 365 for Finance and Operationsiin](migration-upgrade/upgrade-overview-2012.md)
-### [Analysointi – päivityksen suunnittelu päivitysanalyysin työkalulla](migration-upgrade/upgrade-analyzer-tool.md)
-### [Analysointi – koodin päivitykseen tarvittavan työmäärän arviointi koodin päivityspalvelun avulla](migration-upgrade/analyze-code-upgrade.md)
-### [Analysointi – eristysympäristön käyttöönotto](migration-upgrade/analysis-sandbox.md)
-### [Päivitys – tietojen päivitys kehitysympäristössä](migration-upgrade/data-upgrade-2012.md)
-### [Päivitys – AX 2012 -tietojen päivitystehtävät](migration-upgrade/prepare-data-upgrade.md)
-### [Päivitys – tietojen päivitys eristysympäristössä](migration-upgrade/upgrade-data-sandbox.md)
-### [Tarkistus – valmistelusiirron testaus](migration-upgrade/upgrade-cutover-testing.md)
-### [Tarkistus – päivityksen jälkeen suoritettavat tehtävät](migration-upgrade/app-validation-process.md)
-### [Tarkistus – toiminnallinen testaus](migration-upgrade/upgrade-functional-validation.md)
-### [Tarkistus – julkistamisen valmistelu](migration-upgrade/upgrade-go-live-prep.md)
+## [AX 2012:n päivittäminen Dynamics 365 for Finance and Operations -sovellukseen](migration-upgrade/upgrade-overview-2012.md)
+### [AX 2012 -päivitys – suunnitteleminen päivitysanalyysin työkalun avulla](migration-upgrade/upgrade-analyzer-tool.md)
+### [AX 2012 -päivitys – työmäärän arvioiminen koodin päivityspalvelun avulla](migration-upgrade/analyze-code-upgrade.md)
+### [AX 2012 -päivitys – eristysympäristön ottaminen käyttöön](migration-upgrade/analysis-sandbox.md)
+### [AX 2012 -päivitys – tietojen päivitys kehitysympäristössä](migration-upgrade/data-upgrade-2012.md)
+### [AX 2012 -päivitys – AX 2012 -tietojen päivitystehtävät](migration-upgrade/prepare-data-upgrade.md)
+### [AX 2012 -päivitys – tietojen päivitys eristysympäristössä](migration-upgrade/upgrade-data-sandbox.md)
+### [AX 2012 -päivitys – valmistelusiirron testaaminen](migration-upgrade/upgrade-cutover-testing.md)
+### [AX 2012 päivitys – päivityksen jälkeen suoritettavat tehtävät](migration-upgrade/app-validation-process.md)
+### [AX 2012 -päivitys – toimintotestauksen suorittaminen hyväksytysti](migration-upgrade/upgrade-functional-validation.md)
+### [AX 2012 -päivitys – julkistamisen valmistelu](migration-upgrade/upgrade-go-live-prep.md)
 
 
-### AX 2012:stä tehtävään päivitykseen vaikuttavat muutokset
+### Muutokset, jotka vaikuttavat AX 2012:n päivitykseen
 #### [Yhden tositteen ja valuutan uudelleenarvostuksen päivittäminen ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Projektiresurssin ajoituksen tietomalli](migration-upgrade/data-model-changes-resource-management.md)
 #### [Työnkulun alijärjestelmän muutokset](migration-upgrade/workflow-subsystem.md)
@@ -562,7 +568,7 @@
 ### [Paikallisen käyttöönoton ottaminen uudelleen käyttöön](deployment/redeploy-on-prem.md)
 
 ## Hotfix-korjaukset ja ylläpito
-### [Hotfix-korjausten lataaminen Lifecycle Servicesistä](migration-upgrade/download-hotfix-lcs.md)
+### [Hotfix-korjausten lataaminen Lifecycle Services -palvelusta](migration-upgrade/download-hotfix-lcs.md)
 ### [Metatietojen hotfix-korjauksen asentaminen](migration-upgrade/install-metadata-hotfix-package.md).
 ### [Korjaustiedoston raportointipalvelut yhdessä ympäristössä](migration-upgrade/patch-reporting-service-environment.md)
 
@@ -591,13 +597,15 @@
 ### [Eräpalvelimen yleiskatsaus](sysadmin/batch-server-overview.md)
 ### [Erätyön luominen](sysadmin/tasks/create-batch-job.md)
 
+## [Optimointityökalun sääntöjen luominen](sysadmin/optimization-advisor.md)
+
 # Lifecycle Services
-## [Lifecycle Servicesin yleiskatsaus](lifecycle-services/lcs.md)
-### [Asiakkaiden LCS](lifecycle-services/lcs-works-lcs.md)
+## [Lifecycle Services -palvelun yleiskatsaus](lifecycle-services/lcs.md)
+### [LCS asiakkaita varten](lifecycle-services/lcs-works-lcs.md)
 ### [Kumppanien LCS](lifecycle-services/getting-started-lcs.md)
 ### [Uutta](lifecycle-services/whats-new-lcs.md)
 ### [Tunnetut ongelmat](lifecycle-services/known-issues.md)
-## [Dynamics Lifecycle Servicesin käyttöopas](lifecycle-services/lcs-user-guide.md)
+## [Dynamics Lifecycle Services -palvelun käyttöopas](lifecycle-services/lcs-user-guide.md)
 ## [Tilauksen arviointityökalu](lifecycle-services/subscription-estimator.md)
 ## [Suojauksen määrittäminen](lifecycle-services/configure-lcs-security.md)
 ## [Ongelmahaku](lifecycle-services/issue-search-lcs.md)
@@ -619,7 +627,7 @@
 ## [Microsoft Dynamics 365 – käännöspalvelun yleiskuvaus](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 – käännöspalvelun käyttöopas  ](lifecycle-services/use-translation-service.md)
 
-## Dynamics AX 2012 Lifecycle Servicesin ominaisuudet
+## Dynamics AX 2012:n Lifecycle Services -palvelun ominaisuudet
 ### Käyttöönotto
 #### [Pilvipalveluympäristöt](lifecycle-services/ax-2012/cloud-hosted-environments-lcs.md)
 #### [Konfiguroinnin kopiointi](lifecycle-services/copy-configuration-lcs.md)
