@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Tämä ominaisuus on kohdistetun version osa. Vain käyttäjät, jotka ovat hyväksyneet jatkuvan automaattisen päivityksen etuohjelman (JAPE), voivat käyttää ominaisuutta. Tämä ominaisuus sisältyy toiseen tulevaan yleisesti saatavilla olevaan versioon. Lisätietoja vakioversioista ja kohdistetuista versioista on kohdassa [Ympäristön vakioversiot ja kohdistetut versiot](../../fin-and-ops/get-started/public-preview-releases.md).

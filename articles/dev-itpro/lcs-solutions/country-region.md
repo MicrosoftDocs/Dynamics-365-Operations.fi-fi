@@ -8,6 +8,7 @@ ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3d3ad89f80c3e3f42e117109f4a76232795b7d64
-ms.openlocfilehash: 9322b970eea9ab5ac01ae8461285b4dbcc1624a3
+ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
+ms.openlocfilehash: 1cb4305b3ef425ec19ae63c8186bffef212b9890
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/23/2018
 
 ---
 
@@ -62,7 +63,7 @@ Sähköisellä raportointityökalulla (ER-työkalulla) voi määrittää sähkö
 -   [Sähköisen raportoinnin konfiguraation luominen](../analytics/electronic-reporting-configuration.md)
 -   [Sähköisen raportoinnin toimintoluettelon laajentaminen](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [Sähköisen raportoinnin kohteet](../analytics/electronic-reporting-destinations.md)
--   [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Servicesista](../analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Services -palvelusta](../analytics/download-electronic-reporting-configuration-lcs.md)
 -   [Sähköisen raportoinnin konfiguraatioiden tuonti](../analytics/electronic-reporting-import-ger-configurations.md)
 -   [Sähköisen raportoinnin määrittäminen hakemaan tiedot Power BI:hin](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen sähköisellä raportointityökalulla](../analytics/generate-electronic-documents-update-application-data.md)
@@ -275,6 +276,8 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 
 ### <a name="norway"></a>Norja
 
+-   [Norjan kassakoneet](../../retail/localizations/emea-nor-cash-registers.md)
+-   [Käyttöönotto-ohjeet Norjan kassakoneille](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 -   [Nets-tuontimuoto](../../financials/localizations/emea-nor-nets-import-format.md)
 -   [ALV-ilmoitus](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 

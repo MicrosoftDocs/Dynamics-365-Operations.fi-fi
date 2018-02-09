@@ -1,9 +1,9 @@
 ---
 title: Toimitusketjun hallinnan kotisivu
-description: "Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista."
+description: "Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/10/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 98008b494f675209949afd961e3cd06dfdc9ec9a
-ms.openlocfilehash: 81a5d21233f12e7c26f0cce6a6c05fefde2ca7dd
+ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
+ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/22/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/01/2017
 
 [!include[banner](includes/banner.md)]
 
-Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista. 
+Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista. 
 
 ## <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 <a href="https://roadmap.dynamics.com/">Dynamics 365 -ohjesivustolla</a> on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
@@ -52,9 +52,12 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
 
 ## <a name="videos"></a>Videot
 
-### <a name="get-started"></a>Aloittaminen  
+Nämä lyhyet videot sisältävät lisätietoja Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 -version (joulukuu 2017) uusista ominaisuuksista.
 
-Voit aloittaa näiden lyhyiden videoiden avulla Microsoft Dynamics 365 for Finance and Operations Enterprise Editionin (heinäkuu 2017) uusien ominaisuuksien käytön.
+-  [Prospektista käteiseksi -integrointi](https://youtu.be/AVV9x5x-XCg) 
+-  [Optimointityökalu](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+
+Nämä lyhyet videot sisältävät lisätietoja Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version (heinäkuu 2017) uusista ominaisuuksista.
 
 -  [Kustannuslaskennan käytön aloittaminen](https://youtu.be/1pUDtJQZ8FU)
 -  [Kustannusseurannan mobiilityötila](https://youtu.be/imsuTg8rUVk)
@@ -62,8 +65,7 @@ Voit aloittaa näiden lyhyiden videoiden avulla Microsoft Dynamics 365 for Finan
 -  [Ostotilausten hyväksyminen mobiililaitteella](https://youtu.be/gZ-gOlJe7H8)
 -  [Visuaalinen ajoitus tuotanto- ja erätilausten Gantt-kaavion avulla](https://youtu.be/BtbuShkGj4I)
 
-### <a name="tech-conference-recordings"></a>Teknisen konferenssin tallenteet
-Useimmat näistä tallenteista käsittelevät Finance and Operationsin edellisen version ominaisuuksia, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa. 
+Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -sovelluksen edellisen version ominaisuuksia, mutta samoja käsitteitä käytetään yhä. Myös menettelyt ovat samanlaisia nykyisessä versiossa. 
 
 -  <a href="https://youtu.be/zotrj3SbCl4">Microsoft Dynamics AX:n tuotekonfiguraattori</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Pääsuunnittelu – vihjeitä suorituskyvyn vianmääritykseen</a>
@@ -84,7 +86,7 @@ Useimmat näistä tallenteista käsittelevät Finance and Operationsin edellisen
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Kustannuslaskennan käytännön harjoituksia</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean-valmistus: saatavuus (CTP) ja kanban-töiden ajoitus</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Tuoterakenteen laskenta kustannuslaskelmaa käyttäen</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin edistämät varastojen mobiilitoiminnot</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version edistämät varastojen mobiilitoiminnot</a>
 
 ## <a name="elearning-courses"></a>eLearning-kurssit
 Lisätietoja Microsoft Dynamics 365 for Finance and Operations -koulutuksesta on <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamicsin oppimisportaalissa</a>. (tarvitaan CustomerSource-tili) 
