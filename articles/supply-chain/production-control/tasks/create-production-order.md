@@ -1,4 +1,4 @@
---- 
+---
 title: Luo tuotantotilaus
 description: "Tässä menettelyssä näytetään, miten tuotantotilaus luodaan."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -69,5 +69,4 @@ Tässä menettelyssä näytetään, miten tuotantotilaus luodaan. Tämän menett
     * Prosessin muuttaminen vaikuttaa reitin arvioituun kulutukseen ja tuotantotilauksen kustannuksiin.  
 6. Valitse Tallenna.
 7. Sulje sivu.
-
 

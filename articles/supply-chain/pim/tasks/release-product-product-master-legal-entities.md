@@ -1,7 +1,7 @@
 --- 
 title: "Vapauta tuote/päätuote yrityksille"
 description: "Tässä menettelyssä esitellään tuotteen tai päätuotteen vapautus yhteen yritykseen tai useaan yritykseen."
-author: josaw1
+author: BibiSp
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process

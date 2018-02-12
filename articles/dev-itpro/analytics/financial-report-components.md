@@ -1,7 +1,7 @@
 ---
 title: Talousraportin komponentit
 description: "Tässä artikkelissa käsitellään raportin määritysten osia tai rakenneosia käytetään talousraportoinnissa. Näitä rakenneosia ovat rivi-, sarake- ja raportointipuun määritykset. Artikkelissa käsitellään rakenneosien järjestämistä ja lukitsemista sekä rakenneosaryhmien käyttöä."
-author: aolson
+author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
@@ -112,7 +112,7 @@ Kun käyttäjä avaa rakenneosan, muut käyttäjät voivat käyttää kyseistä 
 3.  Valitse rakenneosa ja valitse sitten **Peruuta uloskuittaus**.
 4.  Valitse **Kyllä**, kun haluat kuitata rakenneosan sisään.
 
-# <a name="see-also"></a>Lisätietoja
+## <a name="see-also"></a>Lisätietoja
 
 [Taloushallinnan raportointi](financial-reporting-intro.md)
 

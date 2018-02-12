@@ -1,4 +1,4 @@
---- 
+---
 title: "Prosessin kanban-työn valmisteleminen kun materiaalit ovat käytettävissä työsolulle"
 description: "Tässä tehtävässä keskitytään prosessin kanban-työn valmistelemiseen silloin, kun kaikki työsolun materiaalit ovat käytettävissä."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -40,5 +40,4 @@ Tässä tehtävässä keskitytään prosessin kanban-työn valmistelemiseen sill
     * Jos valittuna on useita töitä, keräysluettelossa näkyy kaikkien valittujen töiden vaatimien nimikkeiden kokonaismäärä.  
 6. Valitse Valmistele.
     * Prosessin valmistelu on nyt valmis. Keräysluettelon rivien valintaruutujen valinta osoittaa, niiden toimituksen tila on Kerätty.  
-
 

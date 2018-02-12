@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Tässä artikkelissa käsitellään tietoja, joita talousraportin rivimäärityksen kussakin solussa on oltava ja selitetään, miten nämä tiedot annetaan. 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a>Rivin koodin määrittäminen rivin määrityksessä
+## <a name="specify-a-row-code-in-a-row-definition"></a>Rivin koodin määrittäminen rivin määrityksessä
 
 Rivien määritysten **Rivin koodi** -solun numerot tai selitteet määrittävät rivin määrityksessä kunkin rivin. Määrittämällä rivikoodin voit viitata tietoihin laskelmissa ja kokonaissummissa.
 
@@ -506,8 +506,7 @@ Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelm
 4.  Valitse poistettava yhdistelmä ja valitse sitten **Poista**. Poista dimensioarvoyhdistelmä pysyvästi valitsemalla **Kyllä**.
 
 
-<a name="see-also"></a>Lisätietoja
---------
+## <a name="see-also"></a>Lisätietoja
 
 [Taloushallinnan raportointi](financial-reporting-intro.md)
 

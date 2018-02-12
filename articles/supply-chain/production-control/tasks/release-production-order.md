@@ -1,4 +1,4 @@
---- 
+---
 title: Tuotantotilauksen vapauttaminen
 description: "Tässä menettelyssä näytetään, miten tuotantotilaus vapautetaan."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: johanho
@@ -39,5 +39,4 @@ Tässä menettelyssä näytetään, miten tuotantotilaus vapautetaan. Tämän me
 5. Valitse Tulosta reitityskortti -valintaruutu.
 6. Valitse OK.
 7. Sulje sivu.
-
 

@@ -137,7 +137,7 @@ Inventointiero ilmenee seuraavissa skenaarioissa, jos **On inventoinnin valvoja*
 
 Voit oikaista inventointiarvojen eroja ja hyväksyä lasketun arvon **Inventointi odottaa tarkistusta** -sivulla. Voit tarkistaa nimikemäärän muunnetun määrän **Varastosaldon sijainnin mukaan** -sivulla. Inventoitu arvo hylätään, jos eroa ei voida hyväksyä.
 
-# <a name="see-also"></a>Lisätietoja
+## <a name="see-also"></a>Lisätietoja
 [Konfiguroi varastotyön mobiililaitteet](configure-mobile-devices-warehouse.md)
 
 
