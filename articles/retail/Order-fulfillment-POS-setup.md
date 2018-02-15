@@ -6,19 +6,22 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
-ms.search.scope: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
+ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: bb4d8fae432eca7fe9163dcb0763fff5c8d465f0
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 2fa843aee8927a1cb4f642c31d6f5683098d3c74
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -49,7 +52,7 @@ Myymälätasolla on määritysasetus, jolla voidaan määrittää, onko tilausri
 
 Myymälään määritetyt tilausrivit on oletusarvoisesti merkitty **hyväksytyiksi**. Tällöin oletetaan, että ne täytetään määritetystä myymälästä eikä niitä määritetä enää uudelleen. Joissakin tapauksissa jälleenmyyjät voivat kuitenkin haluta hyväksyä tilaukset manuaalisesti ennen täyttämistä. Jos myymälässä ei ole esimerkiksi riittävästi työntekijöitä eikä tilausta voida täyttää, myymäläpäällikkö hyväksyy käsiteltäväksi vain niin monta tilausta kuin voidaan olettaa voitavan käsitellä tiettynä päivänä. Taustajärjestelmä on voi määrittää tilauksen toiseen myymälään tilauksen hyväksymiseen saakka. Niinpä tilauksen hyväksyntä on myös tapa ilmaista, että myymälä on kuitannut tilauksen ja että se täytetään. 
 
-Myymälästä noudettavat tilausrivit merkitään aina **odottaviksi** eikä niitä hyväksytä.
+Myymälästä noudettavat tilausrivit merkitään **odottaviksi** eikä niitä hyväksytä.
 
 Voit ottaa tilausrivien manuaalisen hyväksymisen käyttöön valitsemalla **Vähittäismyynti** > **Kanavat** > **Vähittäismyymälät** > **Kaikki vähittäismyymälät**. Valitse myymälä. Voit tarkastella myymälän tietoja napsauttamalla myymälätunnusta. Valitse **Muokkaa**. Etsi **Yleiset**-pikavälilehdessä **Tilauksen täyttäminen** -alaotsikko ja vaihda **Manuaalinen hyväksyminen** -asetukseksi **Kyllä** **Ei**-vaihtoehdon sijaan. 
 

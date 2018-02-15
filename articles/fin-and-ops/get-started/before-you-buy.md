@@ -1,7 +1,7 @@
 ---
 title: Ennen ostamista
 description: "Vaihe vaiheelta -ohjeet, joita käytetään Dynamics 365 for Finance and Operations, Enterprise editionin ostoa harkittaessa."
-author: margoc
+author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
@@ -13,14 +13,14 @@ ms.reviewer: margoc
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: margoc
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4bd67b15e893613bed14d2bdc1d9a07da81dc26
+ms.sourcegitcommit: 98740e5b992283b924adab34f291b9c1f2703457
+ms.openlocfilehash: d6c4e475925cdc94be614822ffb242eb7ac8cfa7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 
@@ -35,7 +35,17 @@ Voit kokeilla Dynamics 365 for Finance and Operations 30 päivää rekisteröity
 
 ## <a name="step-two-choose-a-deployment-option"></a>Toinen vaihe: Käyttöönottovaihtoehdon valitseminen
 Voit nyt ottaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin käyttöön pilviratkaisuna tai paikallisesti. Pilvikäyttöönotot sisältävät Microsoftin kokonaisuudessaan hallitseman ERP-palvelun, kun taas paikalliset käyttöönotetut toteutetaan paikallisesti asiakkaan palvelinkeskuksessa.
-Lisätietoja on ohjeaiheessa [Käytön asetukset](../../dev-itpro/deployment/choose-deployment-type.md) 
+
+Seuraavat seikat on otettava huomioon, kun valitset paikallisen käyttöönottovaihtoehdon:
+- Säädöksiin ja vaatimustenmukaisuuteen liittyvät tarpeet, jotka eivät ole käytettävissä [pilvivarmenteissa](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities).
+- Katkennut liiketoimintaprosessi, kun sovelluksen elinkaaren hallintaan tarvittavaa Microsoft Dynamics Lifecycle Servicesia (LCS) käytetään heikolla internet-yhteydellä.
+- [Ominaisuudet, joita ei ole tällä hetkellä otettu käyttöön paikallisissa käyttöönotoissa](features-not-implemented-on-prem.md)
+- [Infrastruktuurin vähimmäisvaatimukset](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+
+> [!IMPORTANT]
+> Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin paikallisia käyttöönottoja ei tueta missään julkisessa pilvi-infrastruktuurissa, ei myöskään Azuressa. 
+
+Lisätietoja on kohdassa [Käytön asetukset](../../dev-itpro/deployment/choose-deployment-type.md)
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>Kolmas vaihe: tilauksen osto ja hallinta
 Voit perehtyä tilausvaihtoehtoihin [Dynamics 365:n](https://www.microsoft.com/en-us/dynamics365/pricing) hinnoittelusivulla. Tällä sivulla on useita erilaisia organisaation tarpeisiin sopivia palvelupaketteja.

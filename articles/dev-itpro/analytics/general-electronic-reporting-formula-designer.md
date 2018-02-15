@@ -3,7 +3,7 @@ title: "Kaavojen suunnittelutoiminto sähköisessä raportoinnissa"
 description: "Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 58bef33642d83def841eaa8334ea6f942063e0b3
+ms.sourcegitcommit: 946584d8afa8937afc7a26835e05b0eecebaad35
+ms.openlocfilehash: 67558889dea03738a665d8f1e2f30833b96c4656
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/23/2017
 
 ---
 
@@ -30,94 +30,117 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
+Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER). Kun tietyn sähköisen asiakirjan muotoa suunnitellaan ER:ssä, voit muuntaa tiedot kaavojen avulla vastaamaan asiakirjan toteuttamis- ja muotoiluvaatimuksia. Nämä kaavat muistuttavat Microsoft Excelin kaavoja. Kaavoissa tuetaan erilaisia toimintoja: teksti, päivämäärä ja aika, matemaattiset ja loogiset funktiot, tiedot, tietotyyppien muunnos ja muut (liiketoiminnan toimialuekohtaiset toiminnot).
 
-Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER). Kun tietyn sähköisen asiakirjan muotoa suunnitellaan ER:ssä, käytössä ovat Microsoftin Excel-tyyppiset kaavat, joiden avulla tiedot voidaan muuntaa vastaamaan asiakirjan toteuttamis- ja muotoiluvaatimuksia. Tuettuja toimintotyyppejä on useita: teksti, päivämäärä ja aika, matemaattiset ja loogiset toiminnot, tiedot, tietotyyppien muunnos ja muut (liiketoiminnan toimialuekohtaiset toiminnot).
+## <a name="formula-designer-overview"></a>Yleiskatsaus kaavan suunnittelutoimintoon
 
-<a name="formula-designer-overview"></a>Yleiskatsaus kaavan suunnittelutoimintoon
--------------------------
+Sähköinen raportointi tukee kaavojen suunnittelutoimintoa. Tämän vuoksi voit määrittää suunnittelun yhteydessä lausekkeita, joita voidaan käyttää suorituksen aikana seuraavissa tehtävissä:
 
-Sähköinen raportointi (ER) tukee kaavojen suunnittelutoimintoa. Tämän vuoksi voit määrittää suunnittelun yhteydessä lausekkeita, joita voidaan käyttää suorituksen aikana seuraavissa tehtävissä:
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin tietokannasta vastaanotettujen tietojen muuntaminen. Tiedot täytetään ER-tietomalliin, joka on suunniteltu ER-muotojen (kuten suodatus, ryhmittely ja tietotyypin muunnos) tietolähteeksi (Näitä muunnoksia ovat esimerkiksi suodatus, ryhmitys ja tietotyypin muunto.)
+- Muodostettavaan sähköiseen asiakirjaan lähetettävien tietojen muotoilu tietyn ER-muodon asettelun ja ehtojen mukaisesti. (Muotoilu voidaan tehdä esimerkiksi pyydetyn kielen tai kulttuurin tai koodauksen mukaisesti.)
+- Sähköisten asiakirjojen luontiprosessin hallinta. (Lausekkeet voivat esimerkiksi ottaa käyttöön muodon tiettyjen elementtien tuottamisen tai poistaa sen käytöstä käsiteltävien tietojen mukaan. Ne voivat myös keskeyttää asiakirjan luontiprosessin tai näyttää sanomia käyttäjille.)
 
--   Microsoft Dynamics 365 for Finance and Operations -tietokannasta vastaanotettujen tietojen muuntaminen. Tiedot täytetään ER-tietomalliin, joka on suunniteltu ER-muotojen (kuten suodatus, ryhmittely ja tietotyypin muunnos) tietolähteeksi
--   Niiden tietojen muotoileminen, jotka on lähetettävä luotavaan sähköiseen asiakirjaan tietyn ER-muodon asettelun ja ehtojen mukaisesti (pyydetyn kielen tai kulttuurin, koodauksen jne. mukaisesti)
--   Sähköisten asiakirjojen luontiprosessin (tiettyjen muodon elementtien tuloksen käyttöön ottaminen ja käytöstä poistaminen riippuen käsiteltävistä tiedoista, asiakirjan luonnin keskeyttämisestä, sanomien näyttäminen loppukäyttäjille jne.) hallitseminen.
+Voit avata **Kaavojen suunnittelutoiminto** -sivun, kun teet jonkin seuraavista toiminnoista:
 
-Kaavojen suunnittelutoiminnon sivu voidaan avata, kun teet seuraavaa:
-
--   Tietolähteen nimikkeiden sidonta tietomallin komponentteihin
--   Tietolähteen nimikkeiden sidonta muotokomponentteihin
--   Laskettujen kenttien täydellinen ylläpito tietolähteiden osana
--   Käyttäjän syöttöparametrien näkyvyyden ehtojen määritys
--   Muodon muunnosten rakenne
--   Muotokomponenttien ehtojen käyttöönottamisen määritys
--   Muodon tiedostokomponenttien tiedostonimien määritys
--   Prosessin hallinnan tarkistusten ehtojen määritys
--   Prosessin hallinnan tarkistusten sanoman tekstin määritys
+- Tietolähteen nimikkeiden sidonta tietomallin komponentteihin
+- Tietolähteen nimikkeiden sidonta muotokomponentteihin
+- Laskettujen kenttien täydellinen ylläpito tietolähteiden osana
+- Käyttäjän syöttöparametrien näkyvyyden ehtojen määritys
+- Muodon muunnosten rakenne
+- Muotokomponenttien ehtojen käyttöönottamisen määritys
+- Muodon tiedostokomponenttien tiedostonimien määritys
+- Prosessin hallinnan tarkistusten ehtojen määritys
+- Prosessin hallinnan tarkistusten sanoman tekstin määritys
 
 ## <a name="designing-er-formulas"></a>ER-kaavojen suunnitteleminen
+
 ### <a name="data-binding"></a>Tietojen sidonta
 
 ER-kaavojen suunnittelutoiminnon avulla voi määrittää lausekkeen, joka muuntaa tietolähteistä vastaanotetut tiedot niin, että tiedot voidaan täyttää tietojen käyttäjään suorituksen aikana:
 
--   Finance and Operationsin tietolähteistä ja suorituksen aikaisista parametreista ER-tietomalliin
--   ER-tietomallista ER-muotoon
--   Finance and Operationsin tietolähteistä ja suorituksen aikaisista parametreista ER-muotoon
+- Finance and Operationsin tietolähteistä ja suorituksen aikaisista parametreista ER-tietomalliin
+- ER-tietomallista ER-muotoon
+- Finance and Operationsin tietolähteistä ja suorituksen aikaisista parametreista ER-muotoon
 
-Seuraavassa kuvassa esitellään tämäntyyppisen lausekkeen rakenne. Tässä esimerkissä lauseke palauttaa **Intrastat.AmountMST**-kentän arvon Finance and Operationsin **Intrastat**-taulusta sen jälkeen, kun arvo on pyöristetty kahteen desimaaliin. [![picture-expression-binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg) Seuraavassa kuvassa esitellään, miten tämäntyyppistä lauseketta käytetään. Tässä esimerkissä suunnitellun lausekkeen tulos täytetään **Veroraportointimalli**-tietomallin **Transaction.InvoicedAmount**-komponentilla. [![picture-expression-binding2](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg) Suorituksen aikana suunniteltu kaava, **ROUND (Intrastat.AmountMST, 2)**, pyöristää kunkin **Intrastat**-taulukon **AmountMST**-kentän arvon kahteen desimaaliin ja täyttää pyöristetyn arvon **Veroraportointi**-tietomallin **Transaction.InvoicedAmount**-komponenttiin.
+Seuraavassa kuvassa esitellään tämäntyyppisen lausekkeen rakenne. Tässä esimerkissä lauseke pyöristää **Intrastat.AmountMST**-kentän arvon Finance and Operationsin Intrastat-taulussa kahteen desimaaliin ja palauttaa sitten pyöristetyn arvon.
+
+[![Tietojen sidonta](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+
+Seuraavassa kuvassa esitellään, miten tämän tyyppistä lauseketta voidaan käyttää. Tässä esimerkissä suunnitellun lausekkeen tulos täytetään **Veroraportointimalli**-tietomallin **Transaction.InvoicedAmount**-komponentilla.
+
+[![Tietojen sidontaa käytetään](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+
+Suorituksen aikana suunniteltu kaava, **ROUND (Intrastat.AmountMST, 2)** pyöristää kunkin Intrasat-taulun tietueen **AmountMST**-kentän arvon kahteen desimaaliin. Sen jälkeen pyöristetty arvo annetaan **Veroilmoitus**-tietomallin **Transaction.InvoicedAmount**-komponentissa.
 
 ### <a name="data-formatting"></a>Tietojen muotoilu
 
-ER-kaavojen suunnittelutoiminnon avulla voi määrittää lausekkeen, joka muotoilee tietolähteistä vastaanotetut tiedot niin, että tiedot voidaan lähettää sähköisen asiakirjan luonnin osana. Jos määritettynä on muotoiluja, jotka on kohdistettava muodolle uudelleenkäytettävänä tyypillisenä sääntönä, voit käyttää muotoilua kerran muotoilukonfiguraatiossa nimettynä muunnoksena, jolla on muotoilulauseke. Tämän jälkeen nimetty muunnos voidaan linkittää useisiin muotokomponentteihin, joiden tulosten on oltava luodun lausekkeen mukaisesti muotoiltuja. Seuraavassa kuvassa esitellään tämäntyyppisen muotoilun rakenne. Tässä esimerkissä **TrimmedString**-muunnos ottaa saapuvat **merkkijono**-tyyppiset tiedot ja lyhentää ylimääräiset välilyönnit alusta ja lopusta, kun merkkijonon arvo palautetaan. [![picture-transformation-design](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Seuraavassa kuvassa esitellään, miten tämäntyyppistä muunnosta voidaan käyttää. Tässä esimerkissä useat muotokomponentit, jotka lähettävät tekstin tuloksena sähköisen asiakirjan luontiin suorituksen aikana, viittaavat **TrimmedString**-muunnokseen nimen mukaan. [![picture-transformation-usage](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Kun muodon komponentit viittaavat **TrimmedString** -muunnokseen (esimerkiksi **partyName** komponentti edellisessä kuvassa) tämä lähettää tekstin tuotoksena luotavaan asiakirjaan. Teksti ei sisällä edeltäviä eikä lopussa olevia välilyöntejä. Jos sinulla on muotoiluja, joita tulee kohdistaa yksitellen, voit käyttää muotoilua tietyn muotokomponentin sidonnan yksittäisenä lausekkeena. Seuraavassa kuvassa esitellään tämäntyyppinen lauseke. Tässä esimerkissä **partyType**-muotokomponentti on sidottu tietolähteeseen sen lausekkeen kautta, joka muuntaa saapuvat tiedot tietolähteen **Model.Company.RegistrationType**-kentästä isoilla kirjaimilla kirjoitetuksi tekstiksi ja lähettää tekstin tulosteena sähköiseen asiakirjaan. [![picture-binding-with-formula](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+ER-kaavojen suunnittelutoiminnon avulla voi määrittää lausekkeen, joka muotoilee tietolähteistä vastaanotetut tiedot niin, että tiedot voidaan lähettää sähköisen asiakirjan luonnin osana. Käytössä voi olla muotoilu, jota on käytettävä tyypillisenä muotoiluna ja jota on käytettävä kaavassa uudelleen. Siinä tapauksessa voit käyttää kyseistä muotoilua kerran muodon määrityksessä nimettynä muunnoksena, jolla on muotoilulauseke. Tämän jälkeen nimetty muunnos voidaan linkittää useisiin muotokomponentteihin, joiden tulosten on oltava luodun muotoilulausekkeen mukaisesti muotoiltuja.
+
+Seuraavassa kuvassa esitellään tämäntyyppisen muotoilun rakenne. Tässä esimerkissä **TrimmedString**-muunnos lyhentää **Merkkijono**-tyyppiset tiedot ja poistamalla ylimääräiset välilyönnit alusta ja lopusta. Se palauttaa sitten lyhennetyn merkkijonon arvon.
+
+[![Muunnos](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
+
+Seuraavassa kuvassa esitellään, miten tämäntyyppistä muunnosta voidaan käyttää. Tässä esimerkissä useat muotokomponentit lähettävä tekstin tuloksena suorituksen aikana muodostettavaan sähköiseen asiakirjaan. Kaikki nämä muotokomponentit viittaavat **TrimmedString**-muunnokseen nimellä.
+
+[![Käytettävä muunnos](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
+
+Kun muodon komponentit, kuten edellisen kuvan **partyName**-komponentti viittaavat **TrimmedString**-muunnokseen, muunnos lähettää tekstin tuotoksena muodostettava sähköiseen asiakirjaan. Tämä teksti ei sisällä edeltäviä eikä lopussa olevia välilyöntejä.
+
+Jos sinulla on muotoiluja, joita tulee kohdistaa yksitellen, voit käyttää muotoilua tietyn muotokomponentin sidonnan yksittäisenä lausekkeena. Seuraavassa kuvassa esitellään tämäntyyppinen lauseke. Tässä esimerkissä **partyType**-muotokomponentti on sidottu tietolähteeseen sen lausekkeen kautta, joka muuntaa saapuvat tiedot tietolähteen **Model.Company.RegistrationType**-kentästä isoilla kirjaimilla kirjoitetuksi tekstiksi. Lauseke lähettää sitten tekstin tuloksena sähköiseen asiakirjaan.
+
+[![Muotoilun käyttö yksittäisessä asiakirjassa](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ### <a name="process-flow-control"></a>Prosessinkulun hallinta
 
-ER-kaavojen suunnittelutoimintoa voidaan käyttää määritettäessä lausekkeita, joita käytetään hallitsemaan asiakirjojen luonnin prosessinkulkua. Voit tehdä seuraavat toimet:
+ER-kaavojen suunnittelutoimintoa voidaan käyttää määritettäessä lausekkeita, joilla hallitaan muodostettavien sähköisten asiakirjojen prosessinkulkua. Voit suorittaa seuraavat tehtävät:
 
--   Määritä ehdot, jotka määrittävät, milloin asiakirjan luontiprosessi on pysäytettävä.
--   Määritä lausekkeet, jotka luovat loppukäyttäjälle sanomia pysäytetyistä prosesseista tai näyttävät suorituslokin sanomia raportin luontiprosessin jatkamisesta.
--   Määritä asiakirjojen luonnin tiedostonimet ja ohjaa niiden luontiehtoja.
+- Määritä ehdot, jotka määrittävät, milloin asiakirjan luontiprosessi on pysäytettävä.
+- Määritä lausekkeet, jotka luovat käyttäjälle sanomia pysäytetyistä prosesseista tai näyttävät suorituslokin sanomia raportin luontiprosessin jatkamisesta.
+- Määritä sähköisten asiakirjojen luonnin tiedostonimet ja ohjaa niiden luontiehtoja.
 
 Jokainen prosessinkulun hallinnan sääntö suunnitellaan yksittäiseksi tarkistukseksi. Seuraavassa kuvassa esitellään tämäntyyppinen tarkistus. Tässä on kyseisen esimerkin konfiguraation selitys:
 
--   Tarkistus arvioidaan, kun **INSTAT**-solmu luodaan XML-tiedoston luonnin yhteydessä.
--   Jos tapahtumaluettelo on tyhjä, tarkistus pysäyttää suoritusprosessin ja palauttaa **EPÄTOSI**-arvon.
--   Tarkistus palauttaa virhesanoman otsikolla SYS70894 käyttäjän ensisijaisella kielellä.
+- Tarkistus arvioidaan, kun **INSTAT**-solmu luodaan XML-tiedoston muodostuksen yhteydessä.
+- Jos tapahtumaluettelo on tyhjä, tarkistus pysäyttää suoritusprosessin ja palauttaa **EPÄTOSI**-arvon.
+- Tarkistus palauttaa virhesanoman Finance and Operationsin otsikolla SYS70894 käyttäjän ensisijaisella kielellä.
 
-[![picture-validation](./media/picture-validation.jpg)](./media/picture-validation.jpg) Esimerkki tarkistuksesta ER-kaavan luontitoimintoa voidaan käyttää myös sähköisen asiakirjan luonnin tiedostonimen määrittämisessä ja tiedoston luontiprosessin hallinnassa. Seuraavassa kuvassa esitellään tämäntyyppisen prosessikulun hallinnan rakenne. Tässä on kyseisen esimerkin konfiguraation selitys:
+[![Vahvistus](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
--   Tietueluettelo **model.Intrastat**-tietolähteestä jaetaan eriin. Yksi erä voi sisältää korkeintaan 1 000 tietuetta.
--   Tulos luo zip-tiedoston, joka sisältää yhden XML-muodossa olevan tiedoston jokaisessa luodussa erässä.
--   Lauseke palauttaa sähköisen asiakirjan luomiselle tiedostonimen liittämällä tiedostonimen ja tiedoston tunnisteen. Toisen erän ja seuraavien erien tiedostonimi sisältää erän tunnuksen loppuliitteenä.
--   Lauseke ottaa käyttöön (palauttamalla **TOSI**-arvon) tiedoston luontiprosessin erille, jotka sisältävät vähintään yhden tietueen.
+ER-kaavan luontitoimintoa voidaan käyttää myös sähköisen asiakirjan luonnin tiedostonimen muodostamisessa ja tiedoston luontiprosessin hallinnassa. Seuraavassa kuvassa esitellään tämäntyyppisen prosessikulun hallinnan rakenne. Tässä on kyseisen esimerkin konfiguraation selitys:
 
-[![picture-file-control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+- Luettelo **model.Intrastat**-tietolähteen tietueista on jaettu eriin. Kussakin erässä on enintään 1 000 tietuetta.
+- Tulos luo zip-tiedoston, joka sisältää yhden XML-muodossa olevan tiedoston jokaisessa luodussa erässä.
+- Lauseke palauttaa sähköisen asiakirjan luomiselle tiedostonimen liittämällä tiedostonimen ja tiedostonimen tunnisteen. Toisen erän ja seuraavien erien tiedostonimi sisältää erän tunnuksen loppuliitteenä.
+- Lauseke ottaa käyttöön (palauttamalla **TOSI**-arvon) vähintään yhden tietueen sisältävien erien tiedoston luontiprosessin.
+
+[![Tiedoston hallinta](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
 ### <a name="basic-syntax"></a>Perussyntaksi
 
 ER-lausekkeet voivat sisältää joitakin seuraavia elementtejä tai kaikki seuraavat elementit:
 
--   Vakiot
--   Operaattorit
--   Viitteet
--   Polut
--   Toiminnot
+- Vakiot
+- Operaattorit
+- Viitteet
+- Polut
+- Toiminnot
 
 #### <a name="constants"></a>Vakiot
 
-Voit käyttää teksti- ja numeerisia vakioita (arvoja, joita ei lasketa), kun suunnittelet lausekkeita. Esimerkiksi lauseke **VALUE ("100") + 20** käyttää numeerista vakiota 20 ja merkkijonovakiota "100". Se palauttaa numeerisen arvon **120**. ER-kaavojen suunnittelutoiminto tukee ohitusjärjestyksiä, joten voit määrittää, että osaa lausekkeen merkkijonosta tulee käsitellä eri tavalla. Esimerkiksi lauseke **"Leo Tolstoi ""Sota ja rauha"" Osa 1"** palauttaa tekstimerkkijonon **Leo Tolstoi "Sota ja rauha" Osa 1**.
+Voit käyttää lausekkeiden suunnittelussa tekstivakioita ja numeerisia vakioita (arvoja, joita ei lasketa). Esimerkiksi lauseke **ARVO ("100") + 20** käyttää numeerista vakiota **20** ja merkkijonovakiota **"100"**. Se palauttaa numeerisen arvon **120**. ER-kaavojen suunnittelutoimintoa tukee ohjausjaksoja. Niinpä voitkin määrittää lausekkeen merkkijonosta, jota on käsiteltävä eri tavalla. Esimerkiksi lauseke **"Leo Tolstoi ""Sota ja rauha"" Osa 1"** palauttaa tekstimerkkijonon **Leo Tolstoi "Sota ja rauha" Osa 1**.
 
 #### <a name="operators"></a>Operaattorit
 
-Seuraavassa taulukossa näkyvät aritmeettiset operaattorit, joita voi käyttää matemaattisten perusoperaattoreiden, kuten lisäyksen, vähennyksen, jakolaskun ja kertolaskun suorittamiseen.
+Seuraavassa taulukossa on aritmeettisia operaattoreita, joita voi käyttää matemaattisten perusoperaattoreiden, kuten lisäyksen, vähennyksen sekä kerto- ja jakolaskun suorittamiseen.
 
-| Operaattori | Merkitys              | Esimerkki |
-|----------|----------------------|---------|
-| +        | Lisäys             | 1+2     |
-| -        | Vähennyksen negaatio | 5-2 -1  |
-| \*       | Kertolasku       | 7\*8    |
-| /        | Jaosto             | 9/3     |
+| Operaattori | Merkitys               | Esimerkki |
+|----------|-----------------------|---------|
+| +        | Lisäys              | 1+2     |
+| -        | Vähennys, negaatio | 5-2, -1 |
+| \*       | Kertolasku        | 7\*8    |
+| /        | Jaosto              | 9/3     |
 
-Seuraava taulukko sisältää vertailuoperaattorit, joita tuetaan. Niitä voi käyttää kahden arvon vertaamisessa.
+Seuraavassa taulukossa on tuetut vertailuoperaattorit. Näillä operaattoreilla voi verrata kahta arvoa.
 
 | Operaattori | Merkitys                  | Esimerkki    |
 |----------|--------------------------|------------|
@@ -128,86 +151,90 @@ Seuraava taulukko sisältää vertailuoperaattorit, joita tuetaan. Niitä voi k�
 | &lt;=    | Pienempi tai yhtä suuri    | X&lt;=Y    |
 | &lt;&gt; | Ei sama kuin             | X&lt;&gt;Y |
 
-Lisäksi &-merkkiä voidaan käyttää tekstin ketjutusoperaattorina, joka liittää tai yhdistää yhden tai useamman tekstimerkkijonon yksittäiseen tekstikappaleeseen.
+Lisäksi &-merkkiä voi käyttää tekstin ketjutusoperaattorina. Tällä tavoin yksittäiseen tekstikappaleeseen voi liittää tai yhdistää yhden tekstimerkkijonon tai useita merkkijonoja.
 
-| Operaattori | Merkitys     | Esimerkki                                        |
-|----------|-------------|------------------------------------------------|
-| &        | Liitä | "Ei tulostettavaa" & ": " & "tietueita ei löytynyt" |
+| Operaattori | Merkitys     | Esimerkki                                             |
+|----------|-------------|-----------------------------------------------------|
+| &        | Liitä | Ei tulostettavaa & :&nbsp;& tietueita ei löytynyt |
 
-#### <a name="operator-precedence"></a>Operaattoreiden käsittelyjärjestys
+##### <a name="operator-precedence"></a>Operaattoreiden käsittelyjärjestys
 
-Järjestys, jossa yhdistelmälausekkeen osat lasketaan, on tärkeä. Esimerkiksi lausekkeen **1 + 4 / 2** tulos on erilainen riippuen siitä, suoritetaanko ensi yhteenlasku- vai jakotoiminto. Sulkeiden avulla voit määrittää, miten lauseke lasketaan. Jos haluat esimerkiksi osoittaa, että yhteenlaskutoiminto suoritetaan ensin, voit muokata edeltävän lausekkeen muotoon **(1 + 4) / 2**. Jos lausekkeen toimintojen suoritusjärjestystä ei ole määritetty eksplisiittisesti, järjestys perustuu oletusarvoiseen tukioperaattoreiden määrittämään käsittelyjärjestykseen. Seuraavassa taulukossa esitellään operaattorit ja niihin liitetyt käsittelyjärjestykset. Operaattorit, joilla on korkeampi käsittelyjärjestys (esimerkiksi 7) suoritetaan ennen operaattoreita, joilla on alempi käsittelyjärjestys (esimerkiksi 1).
+Järjestys, jossa yhdistelmälausekkeen osat lasketaan, on tärkeä. Esimerkiksi lausekkeen **1 + 4 / 2** tulos on erilainen sen mukaan, suoritetaanko ensi yhteenlasku- vai jakotoiminto. Sulkeiden avulla voit määrittää, miten lauseke lasketaan. Jos haluat esimerkiksi osoittaa, että yhteenlaskutoiminto suoritetaan ensin, voit muuttaa edeltävän lausekkeen muotoon **(1 + 4) / 2**. Jos et selkeästi ilmaise lausekkeen toimintojen suoritusjärjestystä, järjestys perustuu oletusarvoiseen tukioperaattoreiden määrittämään käsittelyjärjestykseen. Seuraavassa taulukossa kuhunkin operaattoriin liitetty käsittelyjärjestys. Operaattorit, joilla on korkeampi käsittelyjärjestys (esimerkiksi 7), suoritetaan ennen operaattoreita, joilla on alempi käsittelyjärjestys (esimerkiksi 1).
 
-| Järjestys | Operaattorit      | Syntaksi                                                   |
-|------------|----------------|----------------------------------------------------------|
-| 7          | Ryhmittely       | ( … )                                                    |
-| 6          | Jäsenen käyttöoikeus  | … . …                                                    |
-| 5          | Funktiokutsu  | … ( … )                                                  |
-| 4          | Kertova | … \* … … / …                                             |
-| 3          | Lisä       | … + … … - …                                              |
-| 2          | Vertailu     | … &lt; … … &lt;= … … =&gt; … … &gt; … … = … … &lt;&gt; … |
-| 1          | Erottelu     | … , …                                                    |
+| Järjestys | Operaattorit      | Syntaksi                                                                  |
+|------------|----------------|-------------------------------------------------------------------------|
+| 7          | Ryhmittely       | ( … )                                                                   |
+| 6          | Jäsenen käyttöoikeus  | … . …                                                                   |
+| 5          | Funktiokutsu  | … ( … )                                                                 |
+| 4          | Kertova | … \* …<br>… / …                                                         |
+| 3          | Lisä       | … + …<br>… - …                                                          |
+| 2          | Vertailu     | … &lt; …<br>… &lt;= …<br>… =&gt; …<br>… &gt; …<br>… = …<br>… &lt;&gt; … |
+| 1          | Erottelu     | … , …                                                                   |
 
-Samalla rivillä olevilla operaattoreilla on sama käsittelyjärjestys. Jos lauseke sisältää useamman kuin yhden näistä operaattoreista, lauseke lasketaan vasemmalta oikealle. Esimerkiksi lauseke **1 + 6 / 2 \* 3 &gt; 5** palauttaa arvon **tosi**. Suosittelemme sulkeiden käyttämistä, kun lausekkeiden haluttu laskentajärjestys halutaan ilmaista ja kun lausekkeista halutaan tehdä helpommin luettavia ja ylläpidettäviä.
+Jos lausekkeessa on useita peräkkäisiä operaattoreita, joilla on sama tärkeysjärjestys, kyseiset operaattorit suoritetaan vasemmalta oikealle. Esimerkiksi lauseke **1 + 6 / 2 \* 3 &gt; 5** palauttaa arvon **tosi**. Käyttämällä sulkeita lausekkeiden haluttu laskentajärjestys voidaan ilmaista selkeästi, mikä myös helpottaa lausekkeiden lukemista ja ylläpitämistä.
 
 #### <a name="references"></a>Viitteet
 
-Kaikkia nykyisen ER-komponentin (joko malli tai muoto) tietolähteitä, jotka ovat käytettävissä lausekkeen suunnittelun yhteydessä, voidaan käyttää nimettyinä viitteinä. Esimerkiksi nykyinen ER-tietomalli sisältää **ReportingDate**-tietolähteen, joka palauttaa **DATETIME**-tietotyypin arvon. Siihen voidaan viitata lausekkeessa, jotta kyseinen arvo saadaan muotoiltua oikein luotavassa asiakirjassa seuraavasti: **DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")**. Kaikilla viittaavan tietolähteen nimen merkit, jotka eivät ole kirjaimia, on oltava edessään puolilainausmerkki. Kaikilla viittaavan tietolähteen nimillä, jotka sisältävät ainakin yhden merkin, joka ei ole kirjain (välimerkit tai muut kirjoitetut merkit) on oltava puolilainausmerkkien sisällä. Seuraavassa on muutamia esimerkkejä:
+Kaikkia nykyisen ER-komponentin tietolähteitä, jotka ovat käytettävissä lausekkeen suunnittelun yhteydessä, voidaan käyttää nimettyinä viitteinä. (Valittu ER-komponentti voi olla joko malli tai muoto.) Esimerkiksi nykyinen ER-tietomalli sisältää **ReportingDate**-tietolähteen, joka palauttaa **DATETIME**-tietotyypin arvon. Jotta kyseinen arvo saadaan muotoiltua oikein luotavassa asiakirjassa, siihen voidaan viitata lausekkeessa seuraavasti: **DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")**.
 
--   **Tämän päivän päivämäärä & aika** -tietolähteeseen on viitattava ER-lausekkeessa seuraavasti: **'Tämän päivän päivämäärä & aika'**
--   **Asiakkaat**-tietolähteen **name()**-menetelmän on viitattava ER-lausekkeeseen seuraavasti: **Customers.'name()'**
+Kaikkien niiden viittaavan tietolähteen nimen merkkien, jotka eivät ole kirjaimia, edessä on oltava edessään puolilainausmerkki ('). Kaikilla viittaavan tietolähteen nimillä, jotka sisältävät ainakin yhden merkin, joka ei ole kirjain, on oltava puolilainausmerkkien sisällä. (Näitä muita kuin kirjaimia voivat olla esimerkiksi välimerkit tai muut kirjoitetut merkit.) Esimerkkejä:
 
-Huomaa, että seuraavalla syntaksilla kutsutaan Dynamics 365 for Operationsin parametreja sisältävien tietolähteiden menetelmiä:
+- **Tämän päivän päivämäärä ja aika** -tietolähteeseen on viitattava ER-lausekkeessa seuraavasti: **'Tämän päivän päivämäärä ja aika'**.
+- **Asiakkaat**-tietolähteen **name()**-menetelmän on viitattava ER-lausekkeeseen seuraavasti: **Customers.'name()'**.
 
-- Järjestelmätietolähteen, jossa merkkijonon tietotyypin parametri on EN-US, isLanguageRTL-menetelmään on viitattava ER-lausekkeessa seuraavasti: System.’isLanguageRTL’(“EN-US”).
-- Lainausmerkit eivät ole pakollisia, kun menetelmän nimessä on vain aakkosnumeerisia merkkejä. Niitä on käytettävä taulun menetelmässä, kun hakasulkeet sisältyvät nimeen.
+Jos Finance and Operations -tietolähteiden menetelmillä on parametreja, kyseiset menetelmät kutsutaan seuraavalla syntaksilla:
 
-Kun järjestelmätietolähde lisätään ER-yhdistämismääritykseen, jossa on viittauksena Dynamics 365 for Operation -sovellusluokka Yleinen, lauseke palauttaa totuusarvon EPÄTOSI. Muokattu lauseke System.’ isLanguageRTL'("AR") palauttaa totuusarvon TOSI.
+- Jos **Järjestelmä**-tietolähteen, jossa **Merkkijono**-tietotyypin parametri on **EN-US**, **isLanguageRTL**-menetelmään on viitattava ER-lausekkeessa seuraavasti: **System.'isLanguageRTL'("EN-US")**.
+- Lainausmerkit eivät ole pakollisia, kun menetelmän nimessä on vain aakkosnumeerisia merkkejä. Niitä on kuitenkin käytettävä taulun menetelmässä, jos hakasulkeet sisältyvät nimeen.
 
-Huomaa, että siirtäminen kyseisiin menetelmäparametreihin voidaan määrittää seuraavin rajoituksin:
+Kun **Järjestelmä**-tietolähde lisätään ER-yhdistämismääritykseen, jossa on viittauksena Finance and Operationsin **Yleinen**-sovellusluokka, lauseke palauttaa totuusarvon **EPÄTOSI**. Muokattu lauseke **System.' isLanguageRTL'("AR")** palauttaa totuusarvon **TOSI**.
 
-- Vain vakiot voidaan siirtää kyseisiin menetelmiin, ja niiden arvo määritetään suunnitteluvaiheessa.
-- Vain alkeis- eli perustietotyyppejä tuetaan kyseissä parametreissa (kuten kokonaisluku, reaaliluku, totuusarvo ja merkkijono).
+Voit rajoittaa tapaa, jolla arvot siirretään tämän tyyppisen menetelmän parametreihin:
 
-#### <a name="path"></a>Polku
+- Vain vakioita voi siirtää tämän tyyppisiin menetelmiin. Vakioiden arvot määritetään suunnitteluvaiheessa.
+- Tämän tyypin parametrit tukevat alkeellisia (perus) tietotyyppejä. (Alkukantaisia tietotyyppejä ovat kokonaisluku, reaaliluku, totuusarvo, merkkijono jne.)
 
-Kun lauseke viittaa rakenteelliseen tietolähteeseen, polun määritettä voidaan käyttää valittaessa tietolähteen tietty primitiivinen elementti. Piste (.) -merkkiä käytetään erottamaan rakenteisen tietolähteen yksittäiset elementit. Esimerkiksi nykyinen ER-tietomalli sisältää **InvoiceTransactions**-tietolähteen, joka palauttaa tietueluettelon. **InvoiceTransactions**-tietuerakenne sisältää **AmountDebit**- ja **AmountCredit**-kentän, jotka palauttavat numeerisia arvoja. Voit siis suunnitella seuraavan lausekkeen, jolla lasketaan laskutettu määrä: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**
+#### <a name="paths"></a>Polut
+
+Kun lauseke viittaa rakenteelliseen tietolähteeseen, polun määritettä voidaan käyttää valittaessa tietolähteen tietty primitiivinen elementti. Piste (.) -merkkiä käytetään erottamaan rakenteisen tietolähteen yksittäiset elementit. Esimerkiksi nykyinen ER-tietomalli sisältää **InvoiceTransactions**-tietolähteen, joka palauttaa tietueluettelon. **InvoiceTransactions**-tietuerakenne sisältää **AmountDebit**- ja **AmountCredit**-kentät, joista kumpikin palautta numeerisia arvoja. Voit siis suunnitella seuraavan lausekkeen, jolla lasketaan laskutettu määrä: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**.
 
 #### <a name="functions"></a>Toiminnot
 
-Seuraavassa osassa esitellään toiminnot, joita voidaan käyttää ER-lausekkeissa. Kaikkia lausekekontekstin (nykyinen ER-tietomalli tai ER-muoto) tietolähteitä, ja myös rajoituksia, voidaan käyttää kutsuvien toimintojen parametreina kutsutoimintoargumenttien luettelon mukaisesti. Esimerkiksi nykyinen ER-tietomalli sisältää **InvoiceTransactions**-tietolähteen, joka palauttaa tietueluettelon. **InvoiceTransactions**-tietuerakenne sisältää **AmountDebit**- ja **AmountCredit**-kentän, jotka palauttavat numeerisia arvoja. Voit siis laskea laskutetun määrän suunnittelemalla seuraavan lausekkeen, jossa käytetään sisäänrakennettua ER-pyöristystoimintoa: **PYÖRISTYS (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**
+Seuraavassa osassa esitellään toiminnot, joita voidaan käyttää ER-lausekkeissa. Kaikkia lausekekontekstin (nykyinen ER-tietomalli tai ER-muoto) tietolähteitä voidaan käyttää kutsufunktioiden parametreina kutsufunktioargumenttien luettelon mukaisesti. Myös vakioita voidaan käyttää kutsufunktioiden parametreina. Esimerkiksi nykyinen ER-tietomalli sisältää **InvoiceTransactions**-tietolähteen, joka palauttaa tietueluettelon. **InvoiceTransactions**-tietuerakenne sisältää **AmountDebit**- ja **AmountCredit**-kentät, joista kumpikin palautta numeerisia arvoja. Voit siis laskea laskutetun määrän suunnittelemalla seuraavan lausekkeen, jossa käytetään sisäänrakennettua ER-pyöristystoimintoa: **PYÖRISTYS (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**.
 
 ## <a name="supported-functions"></a>Tuetut toiminnot
-Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käytettävissä ER-tietomallien ja ER-raporttien suunnitteluun. Toimintoluettelo ei ole pysyvä, vaan kehittäjät voivat laajentaa sitä. ER-kaavojen suunnittelutoiminto -ruudusta löydät käytettävissä olevien toimintojen luettelon.
+
+Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käytettävissä ER-tietomallien ja ER-raporttien suunnitteluun. Funktioluettelo ei ole kiinteä. Kehittäjät voivat laajentaa sitä. Näet käytettävien funktioiden luettelon avaamalla ER-kaavojen suunnittelutoiminnon funktioruudun.
 
 ### <a name="date-and-time-functions"></a>Päivämäärä- ja aikatoiminnot
 
-| Toiminto                                   | Kuvaus                                                                                                                                                                                                                                                                                                                                                      | Esimerkki                                                                                                                                                                                                                                                                                               |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ADDDAYS (päivämäärä ja aika, päivät)                   | Lisää määritetylle päivämäärän ja ajan arvolle määritetty päivien lukumäärä.                                                                                                                                                                                                                                                                                                | **ADDDAYS (NOW(), 7)** palauttaa päivämäärän ja ajan seitsemän päivän kuluttua.                                                                                                                                                                                                                            |
-| DATETODATETIME (päivämäärä)                      | Muuntaa määritetyn päivämäärän arvon päivämäärän ja ajan arvoksi.                                                                                                                                                                                                                                                                                                            | **DATETODATETIME (CompInfo. 'getCurrentDate()')** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24.12.2015 00.00.00**. Tässä esimerkissä **CompInfo** on **Finance and Operations / taulu** -tyypin ER-tietolähde, joka viittaa CompanyInfo-tauluun. |
-| NOW ()                                     | Palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän ja kellonajan päivämäärä/aika-arvona.                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                       |
-| TODAY ()                                   | Palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän päivämääräarvona.                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                       |
-| NULLDATE ()                                | Palauttaa **tyhjän** päivämäärän arvon.                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                       |
-| NULLDATETIME ()                            | Palauttaa **tyhjän** päivämäärän ja ajan arvon.                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                       |
-| DATETIMEFORMAT (päivämäärä ja aika, muoto)          | Muunna määritetty päivämäärän ja ajan arvo tietyssä muodossa olevaksi merkkijonoksi. (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)                                                                        | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän 24.12.2015 muodossa **24-12-2015** määritetyn mukautetun muodon mukaisesti.                                                                                                          |
-| DATETIMEFORMAT (päivämäärä ja aika, maa-asetukset) | Muunna määritetty päivämäärän ja ajan arvo merkkijonoksi, joka on määritetyssä muodossa ja jolla on määritetyt [maa-asetukset](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän 24.12.2015 muodossa **24.12.2015** valitun Saksan maa-asetuksen mukaisesti.                                                                                                             |
-| SESSIONTODAY ()                            | Palauttaa nykyisen Dynamics 365 for Finance and Operations -istunnon päivämäärän päivämääräarvona.                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                       |
-| SESSIONNOW ()                              | Palauttaa nykyisen Dynamics 365 for Finance and Operations -istunnon päivämäärän ja kellonajan päivämäärä/aika-arvona.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
-| DATEFORMAT (päivämäärä, muoto)                  | Palauttaa päivämäärän merkkijonoesityksen käyttämällä määritettyä muotoa.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** palauttaa nykyisen Dynamics 365 for Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24-12-2015** määritetyn mukautetun muodon mukaisesti.                                                                                                                      |
-| DATEFORMAT (päivämäärä, muoto, maa-asetus)         | Muunna määritetty päivämäärän arvo merkkijonoksi, joka on määritetyssä muodossa ja jolla on määritetyt [maa-asetukset](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)     | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24.12.2015** valitun Saksan maa-asetuksen mukaisesti.                                                                                                                       |
-| DAYOFYEAR (päivämäärä)              | Palauttaa tammikuun 1. päivän ja määritetyn päivämäärän välisten päivien määrän kokonaislukuna.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** palauttaa arvon **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** palauttaa arvon **1**. 
-                                                                                                                      |
+| Toiminto | Kuvaus | Esimerkki |
+|----------|-------------|---------|
+| ADDDAYS (päivämäärä ja aika, päivät) | Lisää määritetylle päivämäärän ja ajan arvolle määritetyn päivien lukumäärän. | **ADDDAYS (NOW(), 7)** palauttaa päivämäärän ja ajan seitsemän päivän kuluttua. |
+| DATETODATETIME (päivämäärä) | Muuntaa määritetyn päivämäärän arvon päivämäärän ja ajan arvoksi. | **DATETODATETIME (CompInfo. 'getCurrentDate()')** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24.12.2015 00.00.00**. Tässä esimerkissä **CompInfo** on **Finance and Operations / taulu** -tyypin ER-tietolähde, joka viittaa CompanyInfo-tauluun. |
+| NOW () | Palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän ja kellonajan päivämäärän ja ajan arvona. | |
+| TODAY () | Palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän päivämääräarvona. | |
+| NULLDATE () | Palauttaa **tyhjän** päivämäärän arvon. | |
+| NULLDATETIME () | Palauttaa **tyhjän** päivämäärän ja ajan arvon. | |
+| DATETIMEFORMAT (päivämäärä ja aika, muoto) | Muuntaa määritetyn päivämäärän ja ajan arvon tietyssä muodossa olevaksi merkkijonoksi. (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän 24.12.2015 muodossa **24-12-2015** määritetyn mukautetun muodon mukaisesti. |
+| DATETIMEFORMAT (päivämäärä ja aika, maa-asetukset) | Muuntaa määritetty päivämäärän ja ajan arvon merkkijonoksi, joka on määritetyssä muodossa ja jolla on määritetyt [maa-asetukset](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän 24.12.2015 muodossa **24.12.2015** valitun Saksan maa-asetuksen mukaisesti. |
+| SESSIONTODAY () | Palauttaa nykyisen Finance and Operations -istunnon päivämäärän päivämääräarvona. | |
+| SESSIONNOW () | Palauttaa nykyisen Finance and Operations -istunnon päivämäärän ja kellonajan päivämäärän ja ajan arvona. | |
+| DATEFORMAT (päivämäärä, muoto) | Palauttaa määritetyssä muodossa olevan määritetyn päivämäärän merkkijonon esityksen. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24-12-2015** määritetyn mukautetun muodon mukaisesti. |
+| DATEFORMAT (päivämäärä, muoto, maa-asetus) | Muunna määritetty päivämäärän arvo merkkijonoksi, joka on määritetyssä muodossa ja jolla on määritetyt [maa-asetukset](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24.12.2015** valitun Saksan maa-asetuksen mukaisesti. |
+| DAYOFYEAR (päivämäärä) | Palauttaa tammikuun 1. päivän ja määritetyn päivämäärän välisten päivien määrän kokonaislukuna. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** palauttaa arvon **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** palauttaa arvon **1**. |
+| DAYS (päivämäärä 1, päivämäärä 2) | Palauttaa ensimmäisen ja toisen määritetyn päivämäärän välisten päivien määrän. Palauttaa positiivisen arvon, kun ensimmäinen päivämäärä on myöhemmin kuin toinen päivämäärä, palauttaa arvon **0** (nolla), kun ensimmäinen päivämäärä on sama kuin toinen päivämäärä, tai palauttaa muuten negatiivisen arvon. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** palauttaa arvon **-1**. |
 
-**Tietojen muuntotoiminnot**
+### <a name="data-conversion-functions"></a>Tietojen muuntotoiminnot
 
-| Toiminto                                   | kuvaus                                                                                                                                                                                                                                                                                                                                                      | Esimerkki                                                                                                                                                                                                                                                                                               |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DATETODATETIME (päivämäärä)                 | Muuntaa määritetyn päivämäärän arvon päivämäärän ja ajan arvoksi.           | **DATETODATETIME (CompInfo. 'getCurrentDate()')** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24.12.2015 00.00.00**. Tässä esimerkissä **CompInfo** on **Finance and Operations / taulu** -tyypin ER-tietolähde, joka viittaa **CompanyInfo**-tauluun.                                                                                                                       |
-| DATEVALUE (merkkijono, muoto)              | Palauttaa merkkijonon päivämääräesityksen käyttämällä määritettyä muotoa.       | **DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")** palauttaa päivämäärän 21.12.2016 määritetyn mukautetun muodon ja oletussovelluksen **EN-US**-maa-asetuksen mukaisesti.                                                                                                                       |
-| DATEVALUE (merkkijono, muoto, maa/alue)              | Palauttaa merkkijonon päivämääräesityksen käyttämällä määritettyä muotoa ja maata/aluetta.       | **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", “IT”)** palauttaa päivämäärän 21.1.2016 määritetyn mukautetun muodon ja maan/alueen mukaisesti. Tämän funktion kutsu **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", “EN-US”)** ilmoittaa poikkeuksen, sillä annettua merkkijonoa ei tunnisteta kelvolliseksi päivämääräksi.                                                                                                                       |
-| DATETIMEVALUE (merkkijono, muoto)              | Palauttaa merkkijonon päivämäärä- ja kellonaikaesityksen käyttämällä määritettyä muotoa.       | **DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")** palauttaa arvon 21.12.2016 2.55.00 määritetyn muokatetun muodon ja oletussovelluksen **EN-US**-maa-asetuksen mukaisesti.                                                                                                                       |
-| DATETIMEVALUE (merkkijono, muoto, maa/alue)              | Palauttaa merkkijonon päivämäärä- ja kellonaikaesityksen käyttämällä määritettyä muotoa ja maata/aluetta.       | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", “IT”)** palauttaa arvon 21.12.2016 2.55.00 määritetyn mukautetun muodon ja maan/alueen mukaisesti. Tämän funktion kutsu **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", “EN-US”)** ilmoittaa poikkeuksen, sillä annettua merkkijonoa ei tunnisteta kelvolliseksi päivämääräksi ja kellonajaksi.                                                                                                                       |
+| Toiminto | kuvaus | Esimerkki |
+|----------|-------------|---------|
+| DATETODATETIME (päivämäärä) | Muuntaa määritetyn päivämäärän arvon päivämäärän ja ajan arvoksi. | **DATETODATETIME (CompInfo. 'getCurrentDate()')** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24.12.2015 00.00.00**. Tässä esimerkissä **CompInfo** on **Finance and Operations / taulu** -tyypin ER-tietolähde, joka viittaa CompanyInfo-tauluun. |
+| DATEVALUE (merkkijono, muoto) | Palauttaa määritetyssä muodossa olevan määritetyn merkkijonon päivämäärän esityksen. | **DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")** palauttaa päivämäärän 21.12.2016 määritetyn mukautetun muodon ja oletussovelluksen **EN-US**-maa-asetuksen mukaisesti. |
+| DATEVALUE (merkkijono, muoto, maa/alue) | Palauttaa määritetyssä muodossa ja maa-asetuksessa olevan määritetyn merkkijonon päivämäärän esityksen. | **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")** palauttaa päivämäärän 21.1.2016 määritetyn mukautetun muodon ja maa-asetuksen perusteella. Kuitenkin **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")** aiheuttaa poikkeuksen, joka ilmoittaa käyttäjälle, että määritettyä merkkijonoa ei tunnisteta kelvolliseksi päivämääräksi. |
+| DATETIMEVALUE (merkkijono, muoto) | Palauttaa määritetyssä muodossa olevan määritetyn merkkijonon päivämäärän ja ajan esityksen. | **DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")** palauttaa ajankohdan 02:55:00 21.12.2016 määritetyn mukautetun muodon oletussovelluksen **EN-US**-maa-asetuksen perusteella. |
+| DATETIMEVALUE (merkkijono, muoto, maa/alue) | Palauttaa määritetyssä muodossa ja maa-asetuksessa olevan määritetyn merkkijonon päivämäärän ja ajan esityksen. | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "IT")** palauttaa ajankohdan 02:55:00 21.12.2016 määritetyn mukautetun muodon ja maa-asetuksen perusteella. Kuitenkin **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")** aiheuttaa poikkeuksen, joka ilmoittaa käyttäjälle, että määritettyä merkkijonoa ei tunnisteta kelvolliseksi päivämääräksi ja ajaksi. |
+
 ### <a name="list-functions"></a>Luettelotoiminnot
 
 <table>
@@ -236,13 +263,11 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 <li>Erät tavallisina luetteloina (<strong>arvo</strong>-komponentti)</li>
 <li>Nykyinen eränumero (<strong>BatchNumber</strong>-komponentti)</li>
 </ul></td>
-<td>Seuraavassa esimerkissä <strong>Rivit</strong>-tietolähde luodaan tietueluettelona, joka sisältää kolme tietuetta. Se on jaettu eriin, joista jokainen sisältää enintään kaksi tietuetta. 
-<a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 
-
-Tässä on suunniteltu muotoasettelu, jossa luodaan <strong>Rivit</strong>-tietolähteen sidonnat XML-muodon tulostuksen luomiseksi. Se edustaa kunkin erän ja erän tietueiden yksittäisiä solmuja. 
-<a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> 
-
-Seuraava on suunnitellun muodon suorittamisen tulos. 
+<td>Seuraavassa kuvassa <strong>Rivit</strong>-tietolähde luodaan kolmen tietueen tietueluetteloksi. Tämä luettelo on jaettu eriin, joista kussakin on enintään kaksi tietuetta.
+<p><a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
+<p>Seuraavassa kuvassa on suunnitellun muodon asettelu. Tässä muodon asettelussa sidonnat <strong>Rivit</strong>-tietolähde luodaan muodostamaan tulos XML-muodossa. Tämä tulos esittää kunkin erän erilliset solmut ja sen tietueet.</p>
+<p><a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a></p>
+<p>Seuraavassa kuvassa on tulos, kun suunniteltu muoto suoritetaan.</p>
 <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
 </tr>
 <tr class="odd">
@@ -282,23 +307,23 @@ Seuraava on suunnitellun muodon suorittamisen tulos.
 </tr>
 <tr class="even">
 <td>ALLITEMS (polku)</td>
-<td>Palauttaa uuden tasoitetun luettelon, joka edustaa kaikkia nimikkeitä, jotka vastaavat määritettyä polkua. Polku on määritettävä sallituksi tietolähteen poluksi tietueluettelo-tietotyypin tietolähteen elementtiin. Polku merkkijono-, päivämäärä- ym. tietoelementteihin käynnistää virheen suunnitteluaikana ER-lausekkeenmuodostimessa.</td>
+<td>Palauttaa uuden tasoitetun luettelon, joka edustaa kaikkia nimikkeitä, jotka vastaavat määritettyä polkua. Polku on määritettävä sallituksi tietolähteen poluksi tietueluettelo-tietotyypin tietolähteen elementtiin. Tietoelementit, kuten polun merkkijono ja päivämäärä, käynnistävät virheen ER-lausekkeenmuodostimessa suunnitteluaikana.</td>
 <td>Jos syötät tietolähteeksi (DS) <strong>SPLIT(&quot;abcdef&quot; , 2)</strong>, <strong>COUNT( ALLITEMS (DS.Value))</strong> palauttaa <strong>3</strong>.</td>
 </tr>
 <tr class="odd">
 <td>ORDERBY (luettelo [, lauseke 1, lauseke 2, …])</td>
-<td>Palauttaa määritetyn luettelon, joka on lajiteltu sellaisten määritettyjen argumenttien perusteella, jotka on voitu määrittää lausekkeiksi.</td>
-<td>Kun <strong>Toimittaja</strong>on määritetty ER-tietolähteeksi, joka viittaa VendTable-taulukkoon,<strong>ORDERBY (Vendors, Vendors.'name()')</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan nousevassa järjestyksessä.</td>
+<td>Palauttaa määritetyn luettelon sen jälkeen, kun se lajiteltu määritettyjen argumenttien mukaan. Nämä argumentit voivaan määrittää lausekkeina.</td>
+<td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>ORDERBY (Vendors, Vendors.'name()')</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan nousevassa järjestyksessä.</td>
 </tr>
 <tr class="even">
 <td>REVERSE (luettelo)</td>
 <td>Palauttaa määritetyn luettelon käänteisessä lajittelujärjestyksessä.</td>
-<td>Kun <strong>Toimittaja </strong>on määritetty ER-tietolähteeksi, joka viittaa VendTable-taulukkoon, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan laskevassa järjestyksessä.</td>
+<td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan laskevassa järjestyksessä.</td>
 </tr>
 <tr class="odd">
 <td>WHERE (luettelo, ehto)</td>
-<td>Palauttaa määritetyn luettelon, joka on suodatettu tietyn ehdon perusteella. Toisin kuin <strong>SUODATIN</strong>-toimintoa, määritettyä ehtoa käytetään muistissa olevaan luetteloon.</td>
-<td>Kun <strong>Toimittaja</strong> on määritetty VendTable-taulukkoon viittaavaksi ER-tietolähteeksi, <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> palauttaa toimittajaluettelon, joka kuuluu toimittajaryhmään 40.</td>
+<td>Palauttaa määritetyn luettelon sen jälkeen, kun se suodatettu määritetyn ehdon mukaan. Määritettyä hakuehtoa käytetään muistin luetteloon. Tällä tavalla <strong>WHERE</strong>-funktio eroaa <strong>FILTER</strong>-funktiosta.</td>
+<td>Jos <strong>Toimittaja</strong> on määritetty VendTable-tauluun viittaavaksi ER-tietolähteeksi, <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> palauttaa toimittajaluettelon, joka kuuluu toimittajaryhmään 40.</td>
 </tr>
 <tr class="even">
 <td>ENUMERATE (luettelo)</td>
@@ -307,13 +332,11 @@ Seuraava on suunnitellun muodon suorittamisen tulos.
 <li>Määritetyn luettelon tietueet tavallisina luetteloita (<strong>arvo</strong>-komponentti)</li>
 <li>Nykyisen tietueen indeksi (<strong>numero</strong>-komponentti)</li>
 </ul></td>
-<td>Seuraavassa esimerkissä <strong>Numeroitu</strong>-tietolähde luodaan toimittajan tietueiden numeroituna luettelona <strong>Toimittajat</strong>-tietolähteestä, joka viittaa<strong>VendTable</strong>-taulukkoon. 
-<a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> 
-
-Tässä on muoto, jossa tietojen sidokset luodaan, jotta tulos voidaan luoda XML-muodossa. Se edustaa yksittäisiä toimittajia numeroituina solmuina. 
-<a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> 
-
-Tässä on suunnitellun muodon suorittamisen tulos. 
+<td>Seuraavassa kuvassa <strong>Numeroitu</strong>-tietolähde luodaan toimittajan tietueiden numeroituna luettelona <strong>Toimittajat</strong>-tietolähteestä, joka viittaa VendTable-tauluun.
+<p><a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a></p>
+<p>Muoto näkyy seuraavassa kuvassa. Tässä muodossa tiedon sidonnat luodaan muodostamaan tulos XML-muodossa. Tämä tulos esittää yksittäiset toimittajat luetteloituina solmuina.</p>
+<p><a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a></p>
+<p>Seuraavassa kuvassa on tulos, kun suunniteltu muoto suoritetaan.</p>
 <a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
 </tr>
 <tr class="odd">
@@ -323,155 +346,120 @@ Tässä on suunnitellun muodon suorittamisen tulos.
 </tr>
 <tr class="even">
 <td>LISTOFFIELDS (polku)</td>
-<td>Palauttaa argumentista luodun tietueluettelon, jonka tyyppi voi olla jokin seuraavista:
+<td>Palauttaa tietueluettelon, joka on luotu jostakin seuraavan tyyppisestä argumentista:
 <ul>
 <li>Mallin luettelointi</li>
 <li>Muodon luettelointi</li>
 <li>Kontti</li>
 </ul>
-Luotu luettelo koostuu tietueista, joilla on seuraavat kentät:
+<p>Luotu luettelo koostuu tietueista, jossa on seuraavat kentät:</p>
 <ul>
 <li>Nimi</li>
-<li>Etiketti</li>
+<li>Nimiö</li>
 <li>kuvaus</li>
 </ul>
-Otsikko- ja Kuvaus-kentät palauttavat suorituksen aikana muodon kieliasetuksiin perustuvat arvot.</td>
-<td>Seuraavassa esimerkissä kuvataan tietomalliin tuotu luettelointi. 
-<a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>
-
-Katso seuraava esimerkki:
+<strong>Otsikko</strong>- ja <strong>Kuvaus</strong>-kentät palauttavat suorituksen aikana muodon kieliasetuksiin perustuvat arvot.</td>
+<td>Seuraavassa kuvan on tietomallin luettelointi.
+<p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
+<p>Seuraavassa kuvassa on nämä tiedot:</p>
 <ul>
 <li>Mallin luettelointi lisätään raporttiin tietolähteenä.</li>
-<li>ER-lauseke, joka on suunniteltu käyttämään mallin luettelointia tämän toiminnon parametrina.</li>
-<li>Tietueluettelon tyypin tietolähde lisätään raporttiin käyttäen luotua ER-lauseketta.</li>
+<li>ER-lauseke käyttää mallin luettelointia <strong>LISTOFFIELDS</strong>-funktion parametrina.</li>
+<li>Tietueluettelon tyypin tietolähde lisätään raporttiin luodun ER-lausekkeen avulla.</li>
 </ul>
-<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> 
-
-Seuraavassa esimerkissä on ER-lomakkeen elementit, jotka on sidottu LISTOFFIELDS-funktiolla luotuun tietueluettelotyypin tietolähteeseen.
-<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>
-
-Tässä on suunnitellun muodon suorittamisen tulos.
-<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>
-
-Huomautus:</strong> Selitteiden ja kuvausten käännetty teksti täytetään ER-lomakkeeseen FILE- ja FOLDER-päälomake-elementeille määritetyt kieliasetukset.</td>
+<p><a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="Format" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a></p>
+<p>Seuraavassa esimerkissä on ER-lomakkeen elementit, jotka on sidottu <strong>LISTOFFIELDS</strong>-funktiolla luotuun tietueluettelotyypin tietolähteeseen.</p>
+<p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
+<p>Seuraavassa kuvassa on tulos, kun suunniteltu muoto suoritetaan.</p>
+<p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
+<blockquote>[!NOTE]<br>
+Selitteiden ja kuvausten käännetty teksti annetaan ER-lomakkeeseen FILE- ja FOLDER-päälomake-elementeille määritettyjen kieliasetusten perusteella</blockquote></td>
 </tr>
 <tr class="odd">
-<td>STRINGJOIN (luettelo, kenttänimi, erotin)</td>
-<td>Palauttaa kentän yhdistettyjen arvojen merkkijonon valitulla erottimella erotetusta luettelosta.</td>
-<td>Jos olet määrittänyt SPLIT(“abc” , 1) tietolähteen tietojoukoksi, lauseke STRINGJOIN (DS, DS.Value, “:”) palauttaa tuloksen “a:b:c”</td>
+<td>LISTOFFIELDS (polku, kieli)</td>
+<td>Palauttaa argumentista luodun tietueluettelon, kuten mallin luettelointi, lomakkeen luettelointi tai säilö. Luotu luettelo koostuu tietueista, jossa on seuraavat kentät:
+<ul>
+<li>Nimi</li>
+<li>Nimiö</li>
+<li>kuvaus</li>
+<li>Käännetty</li>
+</ul>
+<p><strong>Otsikko</strong>- ja <strong>Kuvaus</strong>-kentät palauttavat suorituksen aikana muodon kieliasetuksiin ja määritettyyn kieleen perustuvat arvot. <strong>Käännetty</strong>-kenttä ilmaisee, että <strong>Otsikko</strong>-kenttä on käännetty määritetylle kielelle.</td>
+<td>Voit esimerkiksi määrittää <strong>Laskettu kenttä</strong>-tietolähdetyypin määrittämään <strong>enumType_de</strong>- ja <strong>enumType_deCH</strong>-tietolähteet <strong>enumType</strong>-tietomallin luettelointia varten:
+<ul>
+<li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
+<li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
+</ul>
+Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos käännös on käytettävissä, käyttämällä seuraavaa lauseketta. Jos sveitsinsaksan käännös ei ole käytettävissä, otsikko saksankielinen: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.</td>
 </tr>
 <tr class="even">
-<td>SPLITLISTBYLIMIT (luettelo, raja-arvo, lähderaja-arvo)</td>
-<td>Jakaa luettelon uudeksi aliluetteloiden luetteloksi ja palauttaa tuloksen tietueluettelonsisältöön. Raja-arvoparametri määrittää arvon, joka jakaa alkuperäisen luettelon. Lähderaja-arvo-parametri määrittää vaiheen, jonka mukaan kokonaissummaa kasvatetaan. Rajaa ei käytetä tietyn luettelon yhteen nimikkeeseen, kun lähderaja ylittää määritetyn rajan.</td>
-<td>Seuraavassa esimerkissä esitetään esimerkkimuoto tietolähteitä käyttäen. 
-<a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>
-
-Tässä on tuloksena muoto, joka on kauppatavaroiden jäsentämätön luettelo.
-<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>
-
-Seuraavassa esimerkissä on sama muoto, joka säädettiin ilmaisemaan kauppatavarat erinä, kun yhdessä erässä on oltava kauppatavaroita, joiden kokonaispaino ei saa olla suurempi kuin 9.
-<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>
-
-Tässä on säädetyn muodon suorittamisen tulos. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
-
-<strong>Huomautus:</strong> Rajaa ei sovellettu alkuperäisen listan viimeiseen nimikkeeseen, koska arvo (11) ylittää lähteen (painon) raja-arvon, joka on 9. Käytä joko toimintoa <strong>WHERE</strong> tai vastaavan muodon elementin <strong>Enabled</strong> (käytössä) lauseketta ohittaaksesi (skip) alaluettelot raporttia muodostettaessa (tarvittaessa).</td>
+<td>STRINGJOIN (luettelo, kenttänimi, erotin)</td>
+<td>Palauttaa määritetystä luettelosta merkkijonon, jossa on määritetyn kentän lyhennetyt arvot. Arvot erotetaan määritetyllä erottimella.</td>
+<td>Jos annat tietolähteeksi (DS) <strong>SPLIT(&quot;abc&quot; , 1)</strong>, lauseke <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> palauttaa arvon <strong>&quot;a:b:c&quot;</strong>.</td>
 </tr>
 <tr class="odd">
+<td>SPLITLISTBYLIMIT (luettelo, raja-arvo, lähderaja-arvo)</td>
+<td>Jakaa määritetyn luettelon uudeksi aliluetteloiden luetteloksi ja palauttaa tuloksen tietueluettelonsisältöön. Raja-arvoparametri määrittää arvon, joka jakaa alkuperäisen luettelon. Lähderaja-arvo-parametri määrittää vaiheen, jonka mukaan kokonaissummaa kasvatetaan. Rajaa ei käytetä tietyn alkuperäisen luettelon yhteen nimikkeeseen, jos lähderaja ylittää määritetyn rajan.</td>
+<td>Seuraavissa kuvissa muoto ja siinä käytetyt tietolähteet. 
+<p><a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="Format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a></p>
+<p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
+<p>Seuraavassa kuvassa on tulos, kun muoto suoritetaan. Tässä tapauksessa tuloksena muoto, joka on kauppatavaroiden jäsentämätön luettelo.</p>
+<p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
+<p>Seuraavissa kuvissa sama muoto on säädetty ilmaisemaan kauppatavarat erinä, kun yhdessä erässä on oltava kauppatavaroita, joiden kokonaispaino ei saa olla suurempi kuin 9.</p>
+<p><a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="Adjusted format" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a></p>
+<p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
+<p>Seuraavassa kuvassa on tulos, kun säädetty muoto suoritetaan.</p>
+<p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
+<blockquote>[!NOTE]<br>
+Rajaa ei sovellettu alkuperäisen luettelon viimeiseen nimikkeeseen, koska arvo (11) ylittää lähteen (painon) määritetyn raja-arvon (9). Käytä joko <strong>WHERE</strong>-funktiota tai vastaavan muodon elementin <strong>Käytössä</strong>-lauseketta ohittamaan tarvittaessa alaluettelot raporttia muodostettaessa.</blockquote></td>
+</tr>
+<tr class="even">
 <td>FILTER (luettelo, ehto)</td>
-<td>Palauttaa tietyn luettelon suodatettuna annettua ehtoa varten muuttamalla kyselyä. Toisin kuin <strong>WHERE</strong>-toimintoa, annettua ehtoa käytetään tietokannan tasolla kaikkiin Table-tietuetyyppin ER-tietolähteisiin.</td>
-<td>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;) palauttaa luettelon ainoastaan niistä toimittajista, jotka kuuluvat toimittajien ryhmään “40” kun <strong>Vendor</strong> on määritetty ER-tietolähteeksi, joka viittaa <strong>VendTable</strong> -taulukkoon</td>
+<td>Palauttaa määritetyn luettelon sen jälkeen, kun kysely on suodatettu määritetyn ehdon mukaan. Funktio eroaa <strong>WHERE</strong>-funktiosta, koska määritettyä ehtoa käytetään tietokannan tasolla kaikkiin <strong>Taulukkotietue</strong>-tyypin ER-tietolähteisiin. Luettelo ja ehto voidaan määrittää tauluja ja suhteita käyttämällä.</td>
+  <td>Jos <strong>Toimittaja</strong> on määritetty VendTable-tauluun viittaavaksi ER-tietolähteeksi, <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> palauttaa toimittajaluettelon, joka kuuluu toimittajaryhmään 40. Jos <strong>Toimittaja</strong> määritetään <strong>VendTable</strong>-tauluun viittaavaksi ER-tietolähteeksi ja ER-tietolähteeksi määritetty <strong>parmVendorBankGroup</strong> palauttaa merkkijono-tietotyypin arvon, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> palauttaa luettelon vain niistä toimittajatileistä, jotka kuuluvat tiettyyn pankkiryhmään.</td>
 </tr>
 </tbody>
 </table>
 
 ### <a name="logical-functions"></a>Loogiset toiminnot
 
-| Toiminto                                                                                | kuvaus                                                                                                                                                                                                                                                                     | Esimerkki                                                                                                                                                                                                                                                      |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CASE (expression, option 1, result 1 \[, option 2, result 2\] ... \[, default result\]) | Laskee määritetyn lausekkeen arvon määritetyille vaihtoehtoisille valinnoille. Palauttaa sen valinnan tuloksen, joka on sama kuin lausekkeen arvo. Muussa tapauksessa palauttaa vaihtoehtoisesti syötetyn oletustuloksen (viimeinen parametri, jonka jälkeen ei tule valintaa). | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** palauttaa merkkijonon **TALVI**, kun nykyisen Finance and Operations -istunnon päivämäärä on loka- ja joulukuun välissä. Muussa tapauksessa se palauttaa tyhjän merkkijonon. |
-| IF (ehto, arvo 1, arvo 2)                                                        | Palauttaa määritetyn arvon 1, kun annetut ehdot täyttyvät. Muussa tapauksessa palautetaan arvo 2. Jos arvo 1 ja arvo 2 ovat tietueita tai tietueluetteloita, tuloksessa on vain kentät, jotka ovat molemmissa luetteloissa.                                                                     | **IF (1=2, "ehto täyttyy", "ehto ei täyty")** palauttaa merkkijonon **"ehto ei täyty"**.                                                                                                                                                      |
-| NOT (ehto)                                                                         | Palauttaa määritetyn ehdon käänteisen loogisen arvon.                                                                                                                                                                                                                   | **NOT (TOSI)** palauttaa arvon **EPÄTOSI**.                                                                                                                                                                                                                            |
-| AND (condition 1\[, condition 2, ...\])                                                 | Palauttaa arvon **TOSI**, jos *kaikki* määritetyt ehdot ovat tosia. Muussa tapauksessa palauttaa **EPÄTOSI**-arvon.                                                                                                                                                                                            | **AND (1=1, "a"="a")** palauttaa arvon **TOSI**. **AND (1=2, "a"="a")** palauttaa arvon **EPÄTOSI**.                                                                                                                                                                           |
-| OR (condition 1\[, condition 2, ...\])                                                  | Palauttaa arvon **EPÄTOSI**, jos *kaikki* määritetyt ehdot ovat epätosia. Palauttaa arvon **TOSI**, jos *jokin* määritetyistä ehdoista on tosi.                                                                                                                                                                 | **OR (1=2, "a"="a")** palauttaa arvon **TOSI**.                                                                                                                                                                                                                      |
+| Toiminto | kuvaus | Esimerkki |
+|----------|-------------|---------|
+| CASE (lauseke, valinta 1, tulos 1 \[, valinta 2, tulos 2\]... \[, oletustulos\]) | Laskee määritetyn lausekkeen arvon määritetyille vaihtoehtoisille valinnoille. Palauttaa sen valinnan tuloksen, joka on sama kuin lausekkeen arvo. Muussa tapauksessa palautetaan oletustulos, jos oletustulos on määritetty. (Oletustulos on viimeinen parametri, jonka jälkeen ei tule valintaa). | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** palauttaa merkkijonon **TALVI**, kun nykyisen Finance and Operations -istunnon päivämäärä on loka- ja joulukuun välissä. Muussa tapauksessa se palauttaa tyhjän merkkijonon. |
+| IF (ehto, arvo 1, arvo 2) | Palauttaa ensimmäisen määritetyn arvon, kun määritetyt ehdot täyttyvät. Muussa tapauksessa palautetaan toinen määritetty arvo. Jos arvo 1 ja arvo 2 ovat tietueita tai tietueluetteloita, tuloksessa on vain kentät, jotka ovat molemmissa luetteloissa. | **IF (1=2, "ehto täyttyy", "ehto ei täyty")** palauttaa merkkijonon **"ehto ei täyty"**. |
+| NOT (ehto) | Palauttaa määritetyn ehdon käänteisen loogisen arvon. | **NOT (TOSI)** palauttaa arvon **EPÄTOSI**. |
+| AND (ehto 1\[, ehto 2, ...\]) | Palauttaa arvon **TOSI**, jos *kaikki* määritetyt ehdot ovat tosia. Muussa tapauksessa palauttaa **EPÄTOSI**-arvon. | **AND (1=1, "a"="a")** palauttaa arvon **TOSI**. **AND (1=2, "a"="a")** palauttaa arvon **EPÄTOSI**. |
+| OR (ehto 1\[, ehto 2, ...\]) | Palauttaa arvon **EPÄTOSI**, jos *kaikki* määritetyt ehdot ovat epätosia. Palauttaa arvon **TOSI**, jos *jokin* määritetyistä ehdoista on tosi. | **OR (1=2, "a"="a")** palauttaa arvon **TOSI**. |
 
 ### <a name="mathematical-functions"></a>Matemaattinen toiminto
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Toiminto</th>
-<th>Kuvaus</th>
-<th>Esimerkki</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ABS (numero)</td>
-<td>Palauttaa määritetyn numeron absoluuttisen arvon (numerolla ei ole etumerkkiä).</td>
-<td><strong>ABS (-1)</strong> palauttaa arvon <strong>1</strong>.</td>
-</tr>
-<tr class="even">
-<td>POWER (numero, potenssi)</td>
-<td>Palauttaa tuloksen, joka on nostettu määritettyyn positiiviseen potenssiin.</td>
-<td><strong>POWER (10, 2)</strong> palauttaa arvon <strong>100</strong>.</td>
-</tr>
-<tr class="odd">
-<td>NUMBERVALUE (merkkijono, desimaalierotin, numeron ryhmittelyin erotin)</td>
-<td>Muuntaa määritetyn merkkijonon numeroksi. Määritettyä symbolia käytetään kokonaisluvun ja desimaalinumeron murtolukujen erottelussa. Käytössä on myös määritetty tuhaterotin.</td>
-<td><strong>NUMBERVALUE(&quot;1 234,56&quot;, &quot;,&quot;, &quot; &quot;)</strong> palauttaa arvon <strong>1234.56</strong>.</td>
-</tr>
-<tr class="even">
-<td>VALUE (merkkijono)</td>
-<td>Muuntaa määritetyn merkkijonon numeroksi. Pilkkuja ja pisteitä (.) pidetään desimaalierottimina. Alussa olevaa tavuviivaa (-) pidetään miinusmerkkinä. Annetaan poikkeus, jos määritetystä merkkijonosta löytyy merkkejä, jotka eivät ole numeerisia.</td>
-<td><strong>VALUE (&quot;1 234,56&quot;)</strong> antaa poikkeuksen.</td>
-</tr>
-<tr class="odd">
-<td>ROUND (numero, desimaalit)</td>
-<td>Palauttaa määritetyn numeron, joka on pyöristetty määritettyyn määrään desimaaleja seuraavasti:
-<ul>
-<li>Jos määritettyjen desimaalien määrä on enemmän kuin 0 (nolla), numero pyöristetään määritettyyn määrään desimaaleja.</li>
-<li>Jos määritettyjen desimaalien arvo on 0 (nolla), numero pyöristetään lähimpään kokonaislukuun.</li>
-<li>Jos määritettyjen desimaalien määrä on vähemmän kuin 0 (nolla), numero pyöristetään desimaalipilkusta vasemmalle.</li>
-</ul></td>
-<td><strong>ROUND (1200.767, 2)</strong> pyöristää kahteen desimaaliin ja palauttaa arvon <strong>1200.77</strong>. <strong>ROUND (1200.767, -3)</strong> pyöristää lähimpään tuhanteen ja palauttaa arvon <strong>1000</strong>.</td>
-</tr>
-<tr class="even">
-<td>ROUNDDOWN (numero, desimaalit)</td>
-<td>Palauttaa määritetyn numeron, joka on pyöristetty alaspäin (kohti nollaa) määritettyyn määrään desimaaleja. <strong>Huomautus:</strong> Tämä toiminto käyttäytyy kuten <strong>ROUND</strong>, mutta se pyöristää määritetyn numeron aina alaspäin.</td>
-<td><strong>ROUNDDOWN (1200.767, 2)</strong> pyöristää alaspäin kahteen desimaaliin ja palauttaa arvon <strong>1200.76</strong>. <strong>ROUNDDOWN (1700.767, -3)</strong> pyöristää alaspäin lähimpään tuhanteen ja palauttaa arvon <strong>1000</strong>.</td>
-</tr>
-<tr class="odd">
-<td>ROUNDUP (numero, desimaalit)</td>
-<td>Palauttaa määritetyn numeron, joka on pyöristetty ylöspäin (pois nollasta) määritettyyn määrään desimaaleja. <strong>Huomautus:</strong> Tämä toiminto käyttäytyy kuten <strong>ROUND</strong>, mutta se pyöristää määritetyn numeron aina ylöspäin.</td>
-<td><strong>ROUNDUP (1200.763, 2)</strong> pyöristää ylöspäin kahteen desimaaliin ja palauttaa arvon <strong>1200.77</strong>. <strong>ROUNDUP (1200.767, -3)</strong> pyöristää ylöspäin lähimpään tuhanteen ja palauttaa arvon <strong>2000</strong>.</td>
-</tr>
-</tbody>
-</table>
+| Toiminto | Kuvaus | Esimerkki |
+|----------|-------------|---------|
+| ABS (numero) | Palauttaa määritetyn luvun itseisarvon. (Toisin sanoen palautettavalla luvulla ei ole etumerkkiä.) | **ABS (-1)** palauttaa arvon **1**. |
+| POWER (numero, potenssi) | Palauttaa tuloksen, joka on nostettu määritettyyn positiiviseen potenssiin. | **POWER (10, 2)** palauttaa arvon **100**. |
+| NUMBERVALUE (merkkijono, desimaalierotin, numeron ryhmittelyin erotin) | Muuntaa määritetyn merkkijonon numeroksi. Määritettyä desimaalia käytetään desimaaliluvun kokonais- ja murtolukuosien välissä. Määritettyä numeroryhmittelyn erotinta käytetään tuhaterottimena. | **NUMBERVALUE("1 234,56", ",", " ")** palauttaa arvon **1234.56**. |
+| VALUE (merkkijono) | Muuntaa määritetyn merkkijonon numeroksi. Pilkkuja ja pisteitä (.) pidetään desimaalierottimina. Alussa olevaa tavuviivaa (-) pidetään miinusmerkkinä. Annetaan poikkeus, jos määritetyssä merkkijonossa on muita kuin numeerisia merkkejä. | **VALUE ("1 234,56")** antaa poikkeuksen. |
+| ROUND (numero, desimaalit) | Palauttaa määritetyn numeron sen jälkeen, kun se on pyöristetty määritettyyn määrään desimaaleja:<ul><li>Jos desimaaliparametrien arvo on yli 0 (nolla), numero pyöristetään kyseiseen määrään desimaaleja.</li><li>Jos desimaaliparametrin arvo on **0** (nolla), numero pyöristetään lähimpään kokonaislukuun.</li><li>Jos desimaaliparametrin arvo on vähemmän kuin 0 (nolla), numero pyöristetään desimaalipilkusta vasemmalle.</li></ul> | **ROUND (1200.767, 2)** pyöristää kahteen desimaaliin ja palauttaa arvon **1200.77**. **ROUND (1200.767, -3)** pyöristää lähimpään tuhanteen ja palauttaa arvon **1000**. |
+| ROUNDDOWN (numero, desimaalit) | Palauttaa määritetyn luvun sen jälkeen, kun se on pyöristetty alaspäin määritettyyn määrään desimaaleja.<blockquote>[!NOTE]<br>Tämä funktio toimii kuin <strong>ROUND</strong>, mutta se pyöristää määritetyn numeron aina alaspäin (kohti nollaa).</blockquote> | **ROUNDDOWN (1200.767, 2)** pyöristää alaspäin kahteen desimaaliin ja palauttaa arvon **1200.76**. **ROUNDDOWN (1700.767, -3)** pyöristää alaspäin lähimpään tuhanteen ja palauttaa arvon **1000**. |
+| ROUNDUP (numero, desimaalit) | Palauttaa määritetyn luvun sen jälkeen, kun se on pyöristetty ylöspäin määritettyyn määrään desimaaleja.<blockquote>[!NOTE]<br>Tämä funktio toimii kuin <strong>ROUND</strong>, mutta se pyöristää määritetyn numeron aina ylöspäin (pois päin nollasta).</blockquote> | **ROUNDUP (1200.763, 2)** pyöristää ylöspäin kahteen desimaaliin ja palauttaa arvon **1200.77**. **ROUNDUP (1200.767, -3)** pyöristää ylöspäin lähimpään tuhanteen ja palauttaa arvon **2000**. |
 
-**Tietojen muuntotoiminnot**
+### <a name="data-conversion-functions"></a>Tietojen muuntotoiminnot
 
-| Toiminto             | kuvaus                                                                                                                                                                                                                                     | Esimerkki                                                                                                                                             |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| VALUE (merkkijono) | Muuntaa määritetyn merkkijonon numeroksi. Pilkkuja ja pisteitä (.) pidetään desimaalierottimina. Alussa olevaa tavuviivaa (-) pidetään miinusmerkkinä. Jos määritetystä merkkijonosta löytyy muita kuin numeerisia merkkejä, tapahtuu virhe.                                                                                  | **VALUE ("1 234,56")** antaa poikkeuksen.   |
-| NUMBERVALUE (merkkijono, desimaalierotin, numeron ryhmittelyin erotin) | Muuntaa määritetyn merkkijonon numeroksi. Määritettyä symbolia käytetään kokonaisluvun ja desimaalinumeron murtolukujen erottelussa. Käytössä on myös määritetty tuhaterotin.                                                                                  | **NUMBERVALUE("1 234,56", ",", " ")** palauttaa arvon **1234.56**.    |
-| INTVALUE (merkkijono) | Palauttaa merkkijonon kokonaislukumuodon. Desimaaliosat katkaistaan.                                                                                  | **INTVALUE (“100.77”)** palauttaa arvon **100**. |
-| INTVALUE (numero) | Palauttaa numeron kokonaislukumuodon. Desimaaliosat katkaistaan.                                                                                  | **INTVALUE (-100.77)** palauttaa arvon **-100**. |
-| INT64VALUE (merkkijono) | Palauttaa merkkijonon int64-muodon. Desimaaliosat katkaistaan.                                                                                  | **INT64VALUE (“22565422744”)** palauttaa arvon **22565422744**. |
-| INT64VALUE (numero) | Palauttaa numeron int64-muodon. Desimaaliosat katkaistaan.                                                                                  | **INT64VALUE (22565422744.00)** palauttaa arvon **22565422744**. |
-
-
+| Toiminto | kuvaus | Esimerkki |
+|----------|-------------|---------|
+| VALUE (merkkijono) | Muuntaa määritetyn merkkijonon numeroksi. Pilkkuja ja pisteitä (.) pidetään desimaalierottimina. Alussa olevaa tavuviivaa (-) pidetään miinusmerkkinä. Annetaan poikkeus, jos määritetyssä merkkijonossa on muita kuin numeerisia merkkejä. | **VALUE ("1 234,56")** antaa poikkeuksen. |
+| NUMBERVALUE (merkkijono, desimaalierotin, numeron ryhmittelyin erotin) | Muuntaa määritetyn merkkijonon numeroksi. Määritettyä desimaalia käytetään desimaaliluvun kokonais- ja murtolukuosien välissä. Määritettyä numeroryhmittelyn erotinta käytetään tuhaterottimena. | **NUMBERVALUE("1 234,56", ",", " ")** palauttaa arvon **1234.56**. |
+| INTVALUE (merkkijono) | Palauttaa määritetyn merkkijonon kokonaislukumuodon. Kaikki desimaalit lyhennetään. | **INTVALUE ("100.77")** palauttaa arvon **100**. |
+| INTVALUE (numero) | Palauttaa määritetyn luvun kokonaislukumuodon. Kaikki desimaalit lyhennetään. | **INTVALUE (-100.77)** palauttaa arvon **-100**. |
+| INT64VALUE (merkkijono) | Palauttaa määritetyn merkkijonon int64-muodon. Kaikki desimaalit lyhennetään. | **INT64VALUE ("22565422744")** palauttaa arvon **22565422744**. |
+| INT64VALUE (numero) | Palauttaa määritetyn luvun int64-muodon. Kaikki desimaalit lyhennetään. | **INT64VALUE (22565422744.00)** palauttaa arvon **22565422744**. |
 
 ### <a name="record-functions"></a>Tallennustoiminnot
 
-| Toiminto             | kuvaus                                                                                                                                                                                                                                     | Esimerkki                                                                                                                                             |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| NULLCONTAINER (luettelo) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen. **Huomautus:** Tämä toiminto on vanhentunut. Käytä sen sijaan **EMPTYRECORD**-toimintoa.                                                                                  | **NULLCONTAINER (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
-| EMPTYRECORD (tietue) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen. **Huomautus:** **Tyhjä** tietue on tietue, jonka kaikilla kentillä on tyhjä arvo (**0** \[nolla\] numeroille, tyhjä merkkijono jne.). | **EMPTYRECORD (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla.   |
+| Toiminto | kuvaus | Esimerkki |
+|----------|-------------|---------|
+| NULLCONTAINER (luettelo) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen.<blockquote>[!NOTE]<br>Tämä toiminto on vanhentunut. Käytä sen sijaan <strong>EMPTYRECORD</strong>-toimintoa.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
+| EMPTYRECORD (tietue) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen.<blockquote>[!NOTE]<br><strong>Tyhjä</strong>-tietue on tietue, jossa kaikissa kentissä on tyhjä arvo. Tyhjä arvo numeroilla <strong>0</strong> (nolla), merkkijonoilla tyhjä merkkijono jne.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
 
 ### <a name="text-functions"></a>Tekstitoiminnot
 
@@ -484,19 +472,19 @@ Tässä on säädetyn muodon suorittamisen tulos. <a href="./media/ger-splitlist
 <thead>
 <tr class="header">
 <th>Toiminto</th>
-<th>Kuvaus</th>
+<th>kuvaus</th>
 <th>Esimerkki</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>UPPER (merkkijono)</td>
-<td>Palauttaa määritetyn merkkijonon, joka on muutettu isoiksi kirjaimiksi.</td>
+<td>Palauttaa määritetyn merkkijonon sen jälkeen, kun se on muutettu isoiksi kirjaimiksi.</td>
 <td><strong>UPPER(&quot;Sample&quot;)</strong> palauttaa arvon <strong>&quot;SAMPLE&quot;</strong>.</td>
 </tr>
 <tr class="even">
 <td>LOWER (merkkijono)</td>
-<td>Palauttaa määritetyn merkkijonon, joka on muutettu pieniksi kirjaimiksi.</td>
+<td>Palauttaa määritetyn merkkijonon sen jälkeen, kun se on muutettu pieniksi kirjaimiksi.</td>
 <td><strong>LOWER (&quot;Sample&quot;)</strong> palauttaa arvon <strong>&quot;sample&quot;</strong>.</td>
 </tr>
 <tr class="odd">
@@ -522,35 +510,40 @@ Tässä on säädetyn muodon suorittamisen tulos. <a href="./media/ger-splitlist
 <tr class="odd">
 <td>CHAR (numero)</td>
 <td>Palauttaa merkkijonon, johon määritetty unicode-numero viittaa.</td>
-<td><strong>CHAR (255)</strong> palauttaa arvon <strong>&quot;ÿ&quot;</strong>. <strong>Huomautus:</strong> Palautettu merkkijono määräytyy koodauksen mukaan, joka on valittu ylemmän tason FILE-muotoisessa elementissä. Tuettujen koodausten luettelo löytyy <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Koodausluokka</a>-aiheesta.</td>
+<td><strong>CHAR (255)</strong> palauttaa arvon <strong>&quot;ÿ&quot;</strong>.
+<blockquote>[!NOTE]<br>
+Tämän funktion palauttama merkkijono määräytyy koodauksen mukaan, joka on valittu ylemmän tason FILE-muotoisessa elementissä. Luettelo tuetuista koodauksista on kohdassa <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Koodausluokka</a>.</blockquote>
+</td>
 </tr>
 <tr class="even">
 <td>CONCATENATE (1 merkkijono [, merkkijono 2, …])</td>
-<td>Palauttaa kaikki määritetyt tekstimerkkijonot, jotka on liitetty yhteen merkkijonoon.</td>
-<td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> palauttaa arvon <strong>&quot;abcdef&quot;</strong>. <strong>Huomautus:</strong> Lauseke <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> palauttaa myös arvon <strong>&quot;abcdef&quot;</strong>.</td>
+<td>Palauttaa kaikki määritetyt tekstimerkkijonot sen jälkeen, kun ne on liitetty yhteen merkkijonoon.</td>
+<td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> palauttaa arvon <strong>&quot;abcdef&quot;</strong>.
+<blockquote>[!NOTE]<br>
+Myös lauseke <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> palauttaa lausekkeen <strong>&quot;abcdef&quot;</strong>.</blockquote>
+</td>
 </tr>
 <tr class="odd">
 <td>TRANSLATE (merkkijono, malli, korvaus)</td>
-<td>Palauttaa määritetyn merkkijonon, jossa määritetyn mallimerkkijonon kaikkien merkkien esiintymät korvataan määritetyn korvausmerkkijonon vastaavassa kohdassa olevilla merkeillä.</td>
+<td>Palauttaa määritetyn merkkijonon sen jälkeen, kun määritetyn mallimerkkijonon kaikkien merkkien esiintymät korvataan määritetyn korvausmerkkijonon vastaavassa kohdassa olevilla merkeillä.</td>
 <td><strong>TRANSLATE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> korvaa mallin <strong>&quot;cd&quot;</strong> merkkijonolla <strong>&quot;GH&quot;</strong> ja palauttaa arvon <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
 <tr class="even">
 <td>REPLACE (merkkijono, malli, korvaus, säännönmukaisen lausekkeen merkki)</td>
-<td>Palauttaa määritetyn merkkijonon, kun määritetty säännöllisen lausekkeen merkki on <strong>tosi</strong>. Merkkijonoa muokataan kohdistamalla säännöllinen lauseke, joka on määritetty tämän toiminnon malliargumentiksi. Tätä lauseketta käytetään etsittäessä korvattavia merkkejä. Määritetyn korvausargumentin merkkejä käytetään löydettyjen merkkien korvaamisessa. Kun määritetyn säännöllisen lausekkeen merkki on <strong>epätosi</strong>, tämä toiminto toimii kuten <strong>TRANSLATE</strong>.</td>
-<td>  <strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> on käytössä säännöllisessä lausekkeessa, joka poistaa kaikki muut kuin numeeriset merkit ja palauttaa arvon <strong>&quot;19234564971&quot;</strong>. <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> korvaa mallin <strong>&quot;cd&quot;</strong> merkkijonolla <strong>&quot;GH&quot;</strong> ja palauttaa arvon <strong>&quot;abGHef&quot;</strong>.</td>
+<td>Palauttaa määritetyn merkkijonon sen jälkeen, kun määritetty säännöllisen lausekkeen merkki on <strong>tosi</strong>. Merkkijonoa muokataan kohdistamalla säännöllinen lauseke, joka on määritetty tämän toiminnon malliargumentiksi. Tätä lauseketta käytetään etsittäessä korvattavia merkkejä. Määritetyn korvausargumentin merkkejä käytetään löydettyjen merkkien korvaamisessa. Kun määritetyn säännöllisen lausekkeen merkki on <strong>epätosi</strong>, tämä toiminto toimii kuten <strong>TRANSLATE</strong>.</td>
+<td><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> on käytössä säännöllisessä lausekkeessa, joka poistaa kaikki muut kuin numeeriset merkit ja palauttaa arvon <strong>&quot;19234564971&quot;</strong>. <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> korvaa mallin <strong>&quot;cd&quot;</strong> merkkijonolla <strong>&quot;GH&quot;</strong> ja palauttaa arvon <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
 <tr class="odd">
 <td>TEXT (syöte)</td>
-<td>Palauttaa määritetyn syötteen, joka muunnetaan tekstimerkkijonoksi. Se puolestaan muotoillaan nykyisen Finance and Operations -esiintymän palvelimen aluekohtaisten asetusten perusteella. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
+<td>Palauttaa määritetyn syötteen sen jälkeen, kun se on muunnettu tekstimerkkijonoksi. Se puolestaan muotoillaan nykyisen Finance and Operations -esiintymän palvelimen aluekohtaisten asetusten perusteella. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
 <td>Jos Finance and Operations -esiintymän palvelimen aluekohtaisiksi asetuksiksi on määritetty <strong>FI-FI</strong>, <strong>TEXT (NOW ())</strong> palauttaa nykyisen Finance and Operations -istunnon päivämäärän 17.12.2015 tekstimerkkijonona <strong>&quot;17.12.2015 07.59.23&quot;</strong>. <strong>TEXT (1/3)</strong> palauttaa arvon <strong>&quot;0.33&quot;</strong>.</td>
 </tr>
 <tr class="even">
-<td>FORMAT (merkkijono 1, merkkijono 2[, merkkijono 3, ...])</td>
-<td>Palauttaa määritetyn merkkijonon, jota on muotoiltu korvaamalla kaikki <strong>%N</strong>-esiintymät <em>n</em>. argumentilla. Argumentit ovat merkkijonoja. Jos parametrille ei ole annettu argumenttia, parametri palautetaan merkkijonoon arvona <strong>&quot;%N&quot;</strong>. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
-<td>Tässä esimerkissä <strong>PaymentModel</strong>-tietolähde palauttaa asiakastietueluettelon <strong>asiakas</strong>-komponentin kautta ja käsittelyn päivämäärän arvon <strong>ProcessingDate</strong>-kentän kautta. 
-<a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 
-
-ER-muodossa, joka on suunniteltu sähköisen tiedoston luomiseen valituille asiakkaille, tietolähteeksi valitaan <strong>PaymentModel</strong>. Se ohjaa prosessin kulkua. Loppukäyttäjille annetaan poikkeus, kun valittu asiakas pysäytetään raportin käsittelypäivämääränä. Tälle käsittelyn ohjausobjektin tyypille muotoiltua kaavaa käytetään seuraavissa resursseissa:
+<td>FORMAT (merkkijono 1, merkkijono 2[, merkkijono 3, …])</td>
+<td>Palauttaa määritetyn merkkijonon sen jälkeen, kun se on muotoiltu korvaamalla kaikki <strong>%N</strong>-esiintymät <em>n</em>:llä argumentilla. Argumentit ovat merkkijonoja. Jos parametrille ei ole annettu argumenttia, parametri palautetaan merkkijonoon arvona <strong>&quot;%N&quot;</strong>. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
+<td>Seuraavassa kuvassa <strong>PaymentModel</strong>-tietolähde palauttaa asiakastietueluettelon <strong>Asiakas</strong>-komponentin kautta ja käsittelyn päivämäärän arvon <strong>ProcessingDate</strong>-kentän kautta.
+<p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
+<p>ER-muodossa, joka on suunniteltu sähköisen tiedoston luomiseen valituille asiakkaille, tietolähteeksi valitaan <strong>PaymentModel</strong>. Se ohjaa prosessin kulkua. Loppukäyttäjille annettu poikkeus ilmaisee, kun valittu asiakas pysäytetään raportin käsittelypäivämääränä. Tälle käsittelyn ohjausobjektin tyypille muotoiltua kaavaa käytetään seuraavissa resursseissa:</p>
 <ul>
 <li>Finance and Operationsin otsikko SYS70894, jossa on seuraava teksti:
 <ul>
@@ -563,97 +556,98 @@ ER-muodossa, joka on suunniteltu sähköisen tiedoston luomiseen valituille asia
 <li><strong>Kielelle FI:</strong> &quot;Asiakas %1 on pysäytetty %2.&quot;</li>
 </ul></li>
 </ul>
-Tässä on kaava, jota voi muotoilla: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;,@ &quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (malli.ProcessingDate, &quot;d&quot;)) Jos raporttia käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina ja kielenä on <strong>EN-US</strong><strong></strong>, tämä kaava palauttaa seuraavan tekstin, joka voidaan esittää poikkeussanomana loppukäyttäjälle: &quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot; Jos sama raportti käsitellään<strong> asiakkaalle Litware Retail</strong> 17.12.2015 ja maa-asetuksena on <strong>DE</strong> ja kielenä <strong>DE</strong>, tämä kaava palauttaa seuraavan tekstin, jossa on eri päivämäärämuoto: &quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot; <strong>Huomautus:</strong> Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
+<p>Tässä on kaava, jota voi muotoilla:</p>
+<p>FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</p>
+<p>Jos raporttia käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina on <strong>EN-US</strong> ja kielenä on <strong>EN-US</strong>, tämä kaava palauttaa seuraavan tekstin, joka voidaan esittää poikkeussanomana loppukäyttäjälle:</p>
+<p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
+<p>Jos sama raportti käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina on <strong>FI</strong> ja kielenä on <strong>FI</strong>, tämä kaava palauttaa seuraavan tekstin, jossa on eri päivämäärämuoto:</p>
+<p>&quot;Ei tulostettavaa. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
+<blockquote>[!NOTE]<br>
+Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
 <ul>
 <li><strong>Finance and Operations -resurssien otsikot:</strong> <strong>@&quot;X&quot;</strong>, jossa X on sovellusobjektipuun (AOT) otsikon tunnus.</li>
 <li><strong>ER-määrityksissä sijaitsevat otsikot:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, jossa X on ER-määrityksen otsikon tunnus.</li>
-</ul></td>
+</ul></blockquote></td>
 </tr>
 <tr class="odd">
 <td>NUMBERFORMAT (numero, muoto)</td>
-<td>Palauttaa määritetyssä muodossa olevan määritetyn numeron merkkijonon esityksen. (Lisätietoja tuetuista muodoista: <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">vakio</a> ja <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">mukautettu</a>.)</td>
+<td>Palauttaa määritetyssä muodossa olevan määritetyn numeron merkkijonomuodon. (Lisätietoja tuetuista muodoista: <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">vakio</a> ja <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">mukautettu</a>.)</td>
 <td>Maa-asetuksella EN-US <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> palauttaa arvon <strong>&quot;45.00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> palauttaa arvon <strong>&quot;10&quot;</strong>.</td>
 </tr>
 <tr class="even">
 <td>NUMERALSTOTEXT (määrä, kieli, valuutta, tulosta valuutan nimi -merkki, desimaalit)</td>
-<td>Palauttaa numeron kirjoitettuna (muunnettuna) merkkijonoiksi määritetyllä kielellä. Kielikoodi on valinnainen: kun se on määritetty tyhjänä merkkijonona, sen sijaan käytetään suorituskontekstin kielikoodia (määritetty luotavalle kansiolle tai tiedostolle). Valuuttakoodi on valinnainen. Kun se on määritetty tyhjänä merkkijonona, käytetään yrityksen valuuttaa. Huomaa että <strong>Tulosta valuutan nimi</strong> parametri ja <strong>Desimaalit</strong>-parametrit analysoidaan vain seuraaville kielikoodeille: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, <strong>RU</strong>. Huomautus <strong>Tulosta valuutan nimi</strong> -parametri analysoidaan vain niissä Finance and Operations -yrityksissä, joiden maakonteksti tukee valuutan nimen taivutusta.</td>
-<td>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2) palauttaa arvon “One Thousand Two Hundred Thirty Four and 56” NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0) palauttaa arvon “Sto dwadzieścia” NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2) palauttaa arvon “Сто двадцать евро 21 евроцент”</td>
+<td>Palauttaa määritetyn luvun sen jälkeen, kun se kirjoitettu (muunnettu) määritetyllä kielellä tekstimerkkijonoksi. Kielikoodi on valinnainen. Kun se on määritetty tyhjänä merkkijonona, asiayhteyden kielikoodia käytetään sen sijaan. (Asiayhteyden kielikoodi määritetään muodostettavalla kansiolle tai tiedostolle.) Myös valuuttakoodi on valinnainen. Kun se on määritetty tyhjänä merkkijonona, käytetään yrityksen valuuttaa.
+<blockquote>[!NOTE]<br>
+Tulosta valuutan nimimerkintä- ja Desimaalit-parametrit analysoidaan vain seuraaville kielikoodeille: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Tulosta valuutan nimimerkintä -parametri analysoidaan vain niissä Finance and Operations -yrityksissä, joiden maa- tai alueyhteys tukee valuutan nimen taivutusta.</blockquote></td>
+<td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> palauttaa arvon <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> palauttaa arvon <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> palauttaa arvon <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
 <tr class="odd">
 <td>PADLEFT (merkkijono, pituus, täyttömerkit)</td>
-<td>Palauttaa määritetyn pituisen merkkijonon, jossa nykyisen merkkijonon alkua on täydennetty määritetyillä merkeillä.</td>
-<td>PADLEFT (“1234”, 10, “ “) palauttaa tekstimerkkijonon “      1234”</td>
+<td>Palauttaa määritetyn pituisen merkkijonon, jossa määritetyn merkkijonon alkua on täydennetty määritetyillä merkeillä.</td>
+<td><strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> palauttaa tekstimerkkijonon <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong>.</td>
 </tr>
 <tr class="even">
 <td>TRIM (merkkijono)</td>
-<td>Palauttaa annetun tekstin sen jälkeen, kun edeltävät ja lopussa olevat välilyönnit on poistettu ja sanojen välissä olevat moninkertaiset välilyönnit on poistettu. </td>
-<td><strong>TRIM ("     Sample     text     ")</strong> palauttaa muodon <strong>"Sample text".</strong></td>
+<td>Palauttaa määritetyn tekstimerkkijonon sen jälkeen, kun edeltävät ja lopussa olevat välilyönnit on poistettu ja sanojen välissä olevat moninkertaiset välilyönnit on poistettu.</td>
+<td><strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> palauttaa arvon <strong>&quot;Sample text&quot;</strong>.</td>
 </tr>
 <tr class="odd">
 <td>GETENUMVALUEBYNAME (luetteloinnin tietolähteen polku, luettelointiarvon etikettiteksti)</td>
-<td>Palauttaa määritetyn luetteloinnin tietolähteen tämän luettelointiotsikon määritetyn tekstin arvon.</td>
-<td>Seuraavassa esimerkissä on tietomallissa tuodun ReportDirection-luettelointi. Huomaa, että luettelointiarvoille on määritetty otsikot.
-<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>  
-<p>Seuraavissa esimerkeissä on näkyvissä:</p>
-<ul><li>Mallin luettelointi <strong>ReportDirection</strong> lisätään raporttiin tietolähteenä <strong>$Direction</strong>.</li>
-<li>ER-lauseke <strong>$IsArrivals</strong> on suunniteltu käyttämään mallin luettelointia tämän toiminnon parametrina. Lausekkeen arvo on <strong>TOSI</strong>.
-</li></ul>
+<td>Palauttaa määritetyn luetteloinnin tietolähteen luettelointiotsikon määritetyn tekstin perusteella.</td>
+<td>Seuraavassa kuvassa on tietomallin <strong>ReportDirection</strong>-luettelointi. Huomaa, että luettelointiarvoille on määritetty otsikot.
+<p><a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
+<p>Seuraavassa kuvassa on nämä tiedot:</p>
+<ul>
+<li>Mallin luettelointi <strong>ReportDirection</strong> lisätään raporttiin tietolähteenä <strong>$Direction</strong>.</li>
+<li>ER-lauseke <strong>$IsArrivals</strong> on suunniteltu käyttämään mallin luettelointia tämän toiminnon parametrina. Lausekkeen arvo on <strong>TOSI</strong>.</li>
+</ul>
 <a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
 </tr>
 </tbody>
 </table>
 
-**Tietojen muuntotoiminnot**
+### <a name="data-conversion-functions"></a>Tietojen muuntotoiminnot
 
-| Toiminto             | kuvaus                                                                                                                                                                                                                                     | Esimerkki                                                                                                                                             |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| TEXT (syöte) | Palauttaa määritetyn syötteen, joka muunnetaan tekstimerkkijonoksi. Se puolestaan muotoillaan nykyisen Finance and Operations -esiintymän palvelimen aluekohtaisten asetusten perusteella.
-Reaali-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.| Jos Finance and Operations -esiintymän palvelimen aluekohtaisiksi asetuksiksi on määritetty **FI-FI, TEXT (NOW ())**, nykyinen Finance and Operations -istunnon päivämäärä 17.12.2015 palautetaan tekstimerkkijonona **17.12.2015 07.59.23**.
-**TEXT (1/3) palauttaa arvon 0,33**. |
-| QRCODE (merkkijono) | Palauttaa annetun merkkijonon QR-koodin kuvan base64-binaarimuodossa. | **QRCODE (“Sample text”)** palauttaa arvon **U2FtcGxlIHRleHQ=**.   |
+| Toiminto | kuvaus | Esimerkki |
+|----------|-------------|---------|
+| TEXT (syöte) | Palauttaa määritetyn syötteen sen jälkeen, kun se on muunnettu tekstimerkkijonoksi. Se puolestaan muotoillaan nykyisen Finance and Operations -esiintymän palvelimen aluekohtaisten asetusten perusteella. **Reaali**-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin. | Jos Finance and Operations -esiintymän palvelimen aluekohtaisiksi asetuksiksi on määritetty **FI-FI**, **TEXT (NOW ())** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 17.12.2015 tekstimerkkijonona **17.12.2015 07.59.23**. **TEXT (1/3)** palauttaa arvon **"0.33"**. |
+| QRCODE (merkkijono) | Palauttaa määritetyn merkkijonon QR-koodin kuvan base64-binaarimuodossa. | **QRCODE ("Sample text")** palauttaa arvon **U2FtcGxlIHRleHQ=**. |
 
 ### <a name="data-collection-functions"></a>Tietojen keruutoiminnot
 
-| Toiminto             | kuvaus                                                                                                                                                                                                                                     | Esimerkki                                                                                                                                             |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| FORMATELEMENTNAME () | Palauttaa nykyisen muodon elementin nimen. Palauttaa tyhjän merkkijonon, jos nykyisten tiedostojen **Kerää tulostiedot** -lippu on poistettu käytöstä.| Tehtäväopas **ER Käytä tulostusmuotoa laskennassa ja summauksessa** (osa **IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen** -liiketoimintaprosessia) sisältää lisätietoja näiden toimintojen käytöstä. |
-| SUMIFS (summauksen avainmerkkijono, ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) |Palauttaa XML-solmujen arvojen summan (avaimeksi on määritetty nimi), joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää annetut ehdot (alue-arvoparit). Palauttaa nolla-arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -lippu on poistettu käytöstä. |            |
-| SUMIF (summauksen avainmerkkijono, ehtoalueen merkkijono, ehdon arvon merkkijono) | Palauttaa XML-solmujen arvojen summan (avaimeksi on määritetty nimi), joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää annetun ehdon (alue ja arvo). Palauttaa nolla-arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -lippu on poistettu käytöstä.|           |
-| COUNTIFS (ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen arvojen lukumäärän, joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää annetut ehdot (alue-arvoparit). Palauttaa nolla-arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -lippu on poistettu käytöstä.|     |
-| COUNTIF (ehtoalueen merkkijono,ehdon arvon merkkijono) | Palauttaa XML-solmujen arvojen lukumäärän, joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää annetun ehdon (alue ja arvo). Palauttaa nolla-arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -lippu on poistettu käytöstä.|          |
-| COLLECTEDLIST (ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen arvoluettelonn, joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää annetut ehdot (alue ja arvo). Palauttaa tyhjän luettelon, jos nykyisten tiedostojen **Kerää tulostiedot**-lippu on poistettu käytöstä.|               |   
-
-
-
+| Toiminto | kuvaus | Esimerkki |
+|----------|-------------|---------|
+| FORMATELEMENTNAME () | Palauttaa nykyisen muodon elementin nimen. Palauttaa tyhjän merkkijonon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | Lisätietoja tämän toiminnon käytöstä on tehtäväoppaassa **ER Käytä tulostusmuotoa laskennassa ja summauksessa**, joka on osa **IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen** -liiketoimintaprosessia. |
+| SUMIFS (summauksen avainmerkkijono, ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen arvojen summan (jossa nimi on määritetty avaimeksi), joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyt ehdot (alue- ja arvoparit). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
+| SUMIF (summauksen avainmerkkijono, ehtoalueen merkkijono, ehdon arvon merkkijono) | Palauttaa XML-solmujen arvojen summan (jossa nimi on määritetty avaimeksi), joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyn ehdon (alue ja arvo). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
+| COUNTIFS (ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen määrän, joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyt ehdot (alue- ja arvoparit). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
+| COUNTIF (ehtoalueen merkkijono,ehdon arvon merkkijono) | Palauttaa XML-solmujen määrän, joka on kerätty muodon suorittamisen aikana ja joka täyttää annetun ehdon (alue ja arvo). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
+| COLLECTEDLIST (ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen arvoluettelon, joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää annetut ehdot (alue ja arvo). Palauttaa tyhjän luettelon, jos nykyisten tiedostojen **Kerää tulostiedot**-merkintä on poistettu käytöstä. | |
 
 ### <a name="other-business-domainspecific-functions"></a>Muut (liiketoiminnan toimialuekohtaiset) toiminnot
 
-| Toiminto                                                                         | kuvaus                                                                                                                                                                                                                                                        | Esimerkki                                                                                                                                                                                                                                                                                                       |
-|----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CONVERTCURRENCY (summa, lähdevaluutta, kohdevaluutta, päivämäärä, yritys)        | Määritetty rahasumman muunnetaan lähdevaluutasta kohdevaluuttaan käyttämällä määritetyn Finance and Operations -yrityksen asetuksia tiettynä päivänä.                                                                            | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** palauttaa yhden euron suuruisen määrän Yhdysvaltojen dollareita nykyisen istunnon päivämääränä DEMF-yrityksen asetusten perusteella.                                                                                                                                  |
-| ROUNDAMOUNT (määrä, desimaalit, pyöristyssääntö)                                       | Pyöristää määritetyn summan tietyn pyöristyssäännön ja desimaalien määrän perusteella. **Huomautus:** Pyöristyssääntö on määritettävä Finance and Operations **RoundOffType**-luetteloinnin arvoksi.                          | Jos **model.RoundOff**-parametrin arvoksi on määritetty ****Downward****, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.78**. Jos **model.RoundOff**-parametrin arvoksi on määritetty **Normaali** tai **Ylöspäin**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.79**. |
-| CURCredRef (numerot)                                                              | Palauttaa laskuttajan viitteen määritetyn laskunumeron lukujen perusteella.                                                                                                                                                                                  | **CURCredRef ("VEND-200002")** palauttaa arvon **"2200002"**.                                                                                                                                                                                                                                                         |
-| MOD\_97 (numerot)                                                                 | Palauttaa laskuttajan viitteen MOD97-lausekkeena määritetyn laskunumeron lukujen perusteella.                                                                                                                                                            | **MOD\_97 ("VEND-200002")** palauttaa arvon **"20000285"**.                                                                                                                                                                                                                                                           |
-| ISOCredRef (numerot)                                                              | Palauttaa laskuttajan ISO-viitteen määritetyn laskunumeron lukujen ja aakkosten merkkien perusteella. **Huomautus:** Voit poistaa ne aakkosten merkit, jotka eivät ole ISO-yhteensopivia, jos syöttöparametri on käännetty ennen kuin se välitetään tälle toiminnolle. | **ISOCredRef ("VEND-200002")** palauttaa arvon **"RF23VEND-200002"**.                                                                                                                                                                                                                                                 |
-| CN\_GBT\_AdditionalDimensionID (merkkijono, lukumäärä)                                  | Hae taloushallinnan lisädimension tunnus. Dimensiot esitetään tässä merkkijonossa pilkuilla erotettuina tunnuksina. Lukumäärä määrittää pyydetyn dimension järjestyskoodin tässä merkkijonossa.                                                                            | CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3) palauttaa “CC”                                                                                                                                                                                                                                      |
-| GetCurrentCompany ()                                                             | Palauttaa sen yrityksen koodin tekstimuodon, johon käyttäjä on tällä hetkellä kirjautunut.                                                                                                                                                                                                                    | **GETCURRENTCOMPANY ()** palauttaa arvon **USMF** käyttäjälle, joka on kirjautunut Finance and Operations -yritykseen **Contoso Entertainment System USA**.                                                                                                                                                                                                                                                                                                              |
-| CH\_BANK\_MOD\_10 (merkkiä)                                                       | Palauttaa laskuttajan viitteen MOD10-lausekkeena määritetyn laskunumeron lukujen perusteella.                                                                                                                                                                      | CH\_BANK\_MOD\_10 ("VEND-200002") palauttaa 3                                                                                                                                                                                                                                                                   |
-| FA\_SUM (käyttöomaisuuden koodi, arvomallin koodi, alkamispäivämäärä, päättymispäivämäärä)               | Palauttaa kauden käyttöomaisuussummien valmistellun tietosäilön.                                                                                                                                                                                         | FA\_SUM ("COMP-000001", “Current”, Date1, Date2) palauttaa käyttöomaisuuden "COMP-000001" valmistellun tietosäilön, jonka arvomalli on “Current”, kaudella Date1 - Date2.                                                                                                                        |
-| FA\_BALANCE (käyttöomaisuuden koodi, arvomallin koodi, raportointivuosi, raportointipäivä) | Palauttaa käyttöomaisuuden saldojen valmistellun tietosäilön. Raportointivuosi on määritettävä Finance and Operationsin luettelointiarvona **AssetYear**.                                                                                           | FA\_SUM ("COMP-000001", “Current”, AxEnumAssetYear.ThisYear, SESSIONTODAY ()) palauttaa käyttöomaisuuden COMP-000001 saldojen valmistellun tietosäilön, jonka arvomalli on Current kyseisenä Finance and Operations -istunnon päivämääränä.                                                                |
-| TABLENAME2ID (merkkijono)                                                       | Palauttaa annetun taulun nimen kokonaislukumuodon.                                                                                                                                                                      | **TABLENAME2ID (“Intrastat”)** palauttaa arvon **1510**.                                                                                                                                                                                                                                                                   |
-| ISVALIDCHARACTERISO7064 (merkkijono)                                                       | Palauttaa totuusarvon **TOSI**, kun annettu merkkijono vastaa kelvollista kansainvälistä tilinumeroa (IBAN). Palauttaa muussa tapauksessa totuusarvon **EPÄTOSI**.                                                                                                                                                                      | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** palauttaa arvon **TOSI**. **ISVALIDCHARACTERISO7064 ("AT61")** palauttaa arvon **EPÄTOSI**.                                                                                                                                                                                                                                                                   |
+| Toiminto | kuvaus | Esimerkki |
+|----------|-------------|---------|
+| CONVERTCURRENCY (summa, lähdevaluutta, kohdevaluutta, päivämäärä, yritys) | Määritetty rahasumma muunnetaan lähdevaluutasta määritettyyn kohdevaluuttaan käyttämällä määritetyn Finance and Operations -yrityksen asetuksia tiettynä päivänä. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** palauttaa yhden euron suuruisen määrän Yhdysvaltojen dollareita nykyisen istunnon päivämääränä DEMF-yrityksen asetusten perusteella. |
+| ROUNDAMOUNT (määrä, desimaalit, pyöristyssääntö) | Pyöristää määritetyn summan määritetyllä desimaalitarkkuudella määritetyn pyöristyssäännön mukaisesti.<blockquote>[!NOTE]<br>Pyöristyssääntö on määritettävä Finance and Operations <strong>RoundOffType</strong>-luetteloinnin arvoksi.</blockquote> | Jos **model.RoundOff**-parametrin arvoksi on määritetty **Alaspäin**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.78**. Jos **model.RoundOff**-parametrin arvoksi on määritetty **Normaali** tai **Ylöspäin**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.79**. |
+| CURCredRef (numerot) | Palauttaa laskuttajan viitteen määritetyn laskunumeron lukujen perusteella. | **CURCredRef ("VEND-200002")** palauttaa arvon **"2200002"**. |
+| MOD\_97 (numerot) | Palauttaa laskuttajan viitteen MOD97-lausekkeena määritetyn laskunumeron lukujen perusteella. | **MOD\_97 ("VEND-200002")** palauttaa arvon **"20000285"**. |
+| ISOCredRef (numerot) | Palauttaa laskuttajan ISO (International Organization for Standardization) -viitteen määritetyn laskunumeron lukujen ja kirjainmerkkien perusteella.<blockquote>[!NOTE]<br>Voit poistaa ne aakkosmerkit, jotka eivät ole ISO-yhteensopivia, jos syöttöparametri on käännetty ennen kuin se välitetään tälle toiminnolle.</blockquote> | **ISOCredRef ("VEND-200002")** palauttaa arvon **"RF23VEND-200002"**. |
+| CN\_GBT\_AdditionalDimensionID (merkkijono, lukumäärä) | Hae taloushallinnan lisädimension tunnus. Dimensiot esitetään tässä merkkijonossa pilkuin erotettuina tunnuksina. Lukumäärä määrittää pyydetyn dimension järjestyskoodin tässä merkkijonossa. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** palauttaa arvon **"CC"**. |
+| GetCurrentCompany () | Palauttaa sen yrityksen koodin tekstimuodon, johon käyttäjä on tällä hetkellä kirjautunut. | **GETCURRENTCOMPANY ()** palauttaa arvon **USMF** käyttäjälle, joka on kirjautunut Finance and Operations -yritykseen **Contoso Entertainment System USA**. |
+| CH\_BANK\_MOD\_10 (merkkiä) | Palauttaa laskuttajan viitteen MOD10-lausekkeena määritetyn laskunumeron lukujen perusteella. | **CH\_BANK\_MOD\_10 ("VEND-200002")** palauttaa arvon **3**. |
+| FA\_SUM (käyttöomaisuuden koodi, arvomallin koodi, alkamispäivämäärä, päättymispäivämäärä) | Palauttaa määritetyn kauden käyttöomaisuussummien valmistellun tietosäilön. | **FA\_SUM ("COMP-000001", "Current", Date1, Date2)** palauttaa käyttöomaisuuden **"COMP-000001"** valmistellun tietosäilön, jonka arvomalli on **“Current”** kaudella **Date1** - **Date2**. |
+| FA\_BALANCE (käyttöomaisuuden koodi, arvomallin koodi, raportointivuosi, raportointipäivä) | Palauttaa käyttöomaisuuden saldon valmistellun tietosäilön. Raportointivuosi on määritettävä Finance and Operationsin luettelointiarvona **AssetYear**. | **FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** palauttaa käyttöomaisuuden **COMP-000001** saldojen valmistellun tietosäilön, jonka arvomalli on **Current** kyseisenä Finance and Operations -istunnon päivämääränä. |
+| TABLENAME2ID (merkkijono) | Palauttaa määritetyn taulun nimen taulukkotunnuksen kokonaislukumuodon. | **TABLENAME2ID ("Intrastat")** palauttaa arvon **1510**. |
+| ISVALIDCHARACTERISO7064 (merkkijono) | Palauttaa totuusarvon **TOSI**, kun määritetty merkkijono vastaa kelvollista kansainvälistä tilinumeroa (IBAN). Muussa tapauksessa palautetaan totuusarvo **EPÄTOSI**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** palauttaa arvon **TOSI**. **ISVALIDCHARACTERISO7064 ("AT61")** palauttaa arvon **EPÄTOSI**. |
 
 ### <a name="functions-list-extension"></a>Toimintojen luettelon laajennus
 
 ER:n avulla on mahdollista laajentaa luetteloa toiminnoista, joita käytetään ER-lausekkeissa. Tähän tarvitaan jonkin verran suunnittelutyötä. Lisätietoja on kohdassa [Sähköisen raportoinnin toimintojen luettelon laajentaminen](general-electronic-reporting-formulas-list-extension.md).
 
-<a name="see-also"></a>Lisätietoja
---------
+## <a name="see-also"></a>Lisätietoja
 
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 
 [Sähköisen raportoinnin (ER) toimintojen luettelon laajentaminen](general-electronic-reporting-formulas-list-extension.md)
-
-
-
 

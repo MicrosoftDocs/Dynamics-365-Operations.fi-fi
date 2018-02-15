@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e79fcaa634c4b4eb601241d75da2f36f2455db4e
+ms.sourcegitcommit: 40bfc3f1f7c5fe1eec788d252cbe7be7d1c7536f
+ms.openlocfilehash: 3bd6eaa0518bd4752704836c04457dccd486d692
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -28,6 +28,9 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 Voit luoda ja hallita tietojen tuonti- ja vientitehtäviä Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version **Tietojenhallinta**-työtilassa. Oletusarvon mukaan tietojen tuonti- ja vientiprosessi luo väliaikaisen taulun kullekin yksikölle kohdetietokantaan. Väliaikaisten taulujen avulla voit tarkistaa, puhdistaa tai muuntaa tiedot ennen niiden siirtämistä.
+
+> [!NOTE]
+> Tässä ohjeaiheessa oletetaan, että tunnet [tietoyksiköt](data-entities.md).
 
 ## <a name="data-importexport-process"></a>Tietojen tuonti- ja vientiprosessi
 Nämä ovat ohjeet tietojen tuontiin tai viemiseen.

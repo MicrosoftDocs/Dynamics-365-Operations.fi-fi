@@ -1,9 +1,9 @@
 --- 
-title: "Upotettuja kuvia sisältävien raporttien tekeminen Microsoft Office -muodoissa sähköistä raportointia (ER) varten (osa 1)"
-description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella sähköisen raportoinnin (ER) konfiguraatioita luomaan sähköisiä, upotettuja kuvia sisältäviä asiakirjoja MS Office -muodoissa (Excel ja Word)."
+title: "Upotettuja kuvia sisältävien sähköisen raportoinnin (ER) Microsoft Office -muotoisten raporttien muodostamiseen käytettyjen määritysten tarkistaminen (osa 1)"
+description: "Tämän ohjeaiheen vaiheissa on tietoja sähköisen raportoinnin (ER) määritysten suunnittelusta, kun tavoitteena on luoda sähköisiä Microsoft Office -asiakirjoja (Excel ja Word), jotka sisältävät upotettuja kuvia."
 author: NickSelin
 manager: AnnBe
-ms.date: 06/13/2017
+ms.date: 01/23/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,108 +16,79 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: f610fe4b7f265c4fc38db89938d5c208b4f7661a
+ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
+ms.openlocfilehash: 844d8de1d5a1958457eaab1d434bef015f92e33c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/23/2018
 
 ---
-# <a name="make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er--part-1"></a>Upotettuja kuvia sisältävien raporttien tekeminen Microsoft Office -muodoissa sähköistä raportointia (ER) varten (osa 1) 
+# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er-part-1"></a>Upotettuja kuvia sisältävien sähköisen raportoinnin (ER) Microsoft Office -muotoisten raporttien muodostamiseen käytettyjen määritysten tarkistaminen (osa 1) 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella sähköisen raportoinnin (ER) konfiguraatioita luomaan sähköisiä, upotettuja kuvia sisältäviä asiakirjoja MS Office -muodoissa (Excel ja Word).
+ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen tämän menettelyn vaiheiden suorittamista. Näissä ohjeissa kerrotaan, miten sähköisen raportoinnin (ER) konfiguraatiot suunnitellaan, kun tavoitteena on luoda Microsoft Excel- ja Word -asiakirjoja, jotka sisältävät upotettuja kuvia. Tässä menettelyssä luodaan pakollisia ER-konfiguraatioita malliyritykselle Litware, Inc. Nämä vaiheet voidaan suorittaa USMF-tietojoukon avulla. Tämä menettely on luotu käyttäjille, joille on määritetty järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli. Ennen kuin aloitat, lataa ja tallenna [Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen sähköisen raportoinnin työkalulla](../electronic-reporting-embed-images-shapes.md) -ohjeaiheen tiedostot. Tiedostot ovat seuraavat: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png ja Cheque template Word.docx.
 
-Tässä esimerkissä luodaan ER-konfiguraatioita malliyritykselle Litware, Inc.  Voit suorittaa nämä vaiheet, kun suoritat ensin ER Upotettuja kuvia sisältävien raporttien tekeminen MS Office -muodoissa (Osa 2 – konfiguraatioiden tarkistaminen) -tehtäväoppaan vaiheet. Nämä vaiheet voidaan suorittaa USMF-yrityksessä.
+## <a name="verify-prerequisites"></a>Edellytysten tarkistaminen  
+ 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.  
+ 2. Varmista, onko Litware, Inc. -malliyrityksen konfiguraation lähde käytettävissä ja merkitty aktiiviseksi. Jos konfiguraation lähde ei ole näkyvissä, suorita Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet.   
+ 3. Valitse Raportointikonfiguraatiot.  
+ 
+## <a name="add-a-new-er-model-configuration"></a>Uuden ER-mallimäärityksen lisääminen  
+ 1. Uuden mallin luomisen sijaan voit ladata ER-mallimääritystiedoston (Model for cheques.xml), jonka tallensit aiemmin. Tämä tiedosto sisältää maksusekkien tietomalliesimerkin ja tietomallin Dynamics 365 for Operations -sovelluksen vastaavuuden tieto-osiin.   
+ 2. Valitse Versiot-pikavälilehdessä Vaihda.   
+ 3. Valitse Lataa XML-tiedostosta.  
+ 4. Valitse Selaa ja valitse sitten Model for cheques.xml.   
+ 5. Valitse OK.  
+ 6. Ladattua mallia käytetään tietolähteenä luotaessa asiakirjoja, jotka sisältävät Excelin tai Wordin kuvia.  
 
+## <a name="add-a-new-er-format-configuration"></a>Uuden ER-muotokonfiguraation lisääminen  
+ 1. Uuden muodon luomisen sijaan voit ladata ER-muotomääritystiedoston (Cheques printing format.xml), jonka tallensit aiemmin. Tämä tiedosto sisältää sekkien tulostamisen muodon malliasettelun. Se käyttää esitäytettyä lomaketta ja tämän muodon vastaavuutta Model for cheques -tiedoston tietomalliin.   
+ 2. Valitse Vaihto.  
+ 3. Valitse Lataa XML-tiedostosta.  
+ 4. Valitse Selaa ja valitse sitten tiedosto Cheques printing format.xml.   
+ 5. Valitse OK.  
+ 6. Valitse puussa Model for cheques.  
+ 7. Valitse puussa Model for cheques\Cheques printing format.  
+ 8. Ladattua muotoa käytetään luotaessa asiakirjoja, jotka sisältävät Excelin tai Wordin kuvia.   
 
-## <a name="run-format-with-initial-model-mapping"></a>Muodon suorittaminen alkuperäisen mallin yhdistämismäärityksen kanssa
-1. Valitse Maksuliikenteen hallinta > Pankkitilit > Pankkitilit.
-2. Pikasuodattimen avulla voit suodattaa Pankkitili-kentän USMF OPER -arvon mukaan.
-3. Valitse toimintoruudussa Määritä.
-4. Valitse Tarkista.
-5. Valitse Tulosta testi.
-    * Suorita muoto testausta varten.  
-6. Valitse Siirtokelpoisen sekin muoto -kentässä Kyllä.
-7. Valitse OK.
-    * Tarkista luotu tuotos. Ota huomioon, että raportissa esitetään sekä yrityksen logo että valtuutetun henkilön allekirjoitus. Allekirjoituskuva saadaan valittuun pankkitiliin liitetyn sekin asettelutietueen säilön tietotyypin kentästä.  
-8. Laajenna Kopiot-osa.
-9. Valitse Muokkaa.
-10. Syötä Vesileima-kenttään Tulosta vesileimaksi mitätöity.
-    * Muuta vesileiman asettelun asetusta niin, että vesileiman teksti näkyy luotavan Excel-muotoisen elementin asiakirjassa.  
-11. Valitse Tulosta testi.
-12. Valitse OK.
-    * Tarkista luotu tuotos. Ota huomioon, että vesileima näytetään luodussa raportissa valinnan asetuksen mukaisesti.  
-13. Sulje sivu.
-14. Valitse toimintoruudussa Maksujen hallinta.
-15. Valitse Sekit.
-16. Valitse Näytä suodattimet.
-17. Käytä seuraavia suodattimia: Syötä suodattimen arvo "381","385","389" Sekin numero -kenttään. Käytä On yksi seuraavista -suodatinoperaattoria.
-18. Merkitse luettelossa kaikki rivit.
-19. Valitse Tulosta sekin kopio.
-    * Suorita muoto valittujen sekkien uudelleentulostusta varten.  
-    * Tarkista luotu tuotos. Ota huomioon, että valitut sekit on tulostettu uudelleen. Yrityksen logoa ja nimiöitä ei tulosteta, koska näkyvät esitäytetyssä lomakkeessa.  
+## <a name="configure-er-user-parameters"></a>ER-käyttäjän parametrien määrittäminen  
+ 1. Valitse toimintoruudussa Konfiguroinnit.  
+ 2. Valitse Käyttäjän parametrit.  
+ 3. Valitse Suorita asetukset -kentässä Kyllä.  
+  Ota käyttöön Suorita luonnos -osoitin, kun haluat aloittaa valitun mallin luonnosversiolla valmiin version sijaan.  
+ 4. Valitse OK.  
 
-## <a name="modify-the-mapping-of-the-imported-data-model"></a>Tuodun tietomallin yhdistämismäärityksen muokkaaminen
-1. Sulje sivu.
-2. Sulje sivu.
-3. Valitse Organisaation hallinto > Sähköinen raportointi > Konfiguraatiot.
-4. Valitse puussa Sekkien malli.
-5. Valitse Suunnittelutoiminto.
-6. Valitse Yhdistä malli tietolähteeseen.
-7. Valitse Suunnittelutoiminto.
-    * Tietomallin allekirjoitusnimikkeen sidontaa muutetaan, jotta allekirjoituskuva voidaan hakea valittuun pankkitiliin liitetyn sekin asettelutietueeseen liitetystä asiakirjoista.  
-8. Poista Näytä tiedot -kohta käytöstä.
-9. Laajenna puussa layout.
-10. Laajenna puussa layout\signature.
-11. Valitse puussa layout\signature\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp.
-12. Laajenna puussa chequesaccount.
-13. Laajenna puussa chequesaccount\<Relations.
-14. Laajenna puussa chequesaccount\<Relations\BankChequeLayout.
-15. Laajenna puussa chequesaccount\<Relations\BankChequeLayout\<Relations.
-16. Laajenna puussa chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents.
-17. Valitse puussa chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents\getFileContentAsContainer().
-18. Valitse Sido.
-19. Valitse Tallenna.
-20. Sulje sivu.
-21. Sulje sivu.
-22. Sulje sivu.
-23. Sulje sivu.
-
-## <a name="run-format-using-the-adjusted-model-mapping"></a>Muodon suorittaminen muokatun mallin yhdistämismäärityksen avulla
-1. Valitse Maksuliikenteen hallinta > Pankkitilit > Pankkitilit.
-2. Käytä pikasuodatinta tietueiden etsimiseen. Voit esimerkiksi suodattaa Pankkitili-kenttää arvolla USMF OPER.
-3. Valitse toimintoruudussa Määritä.
-4. Valitse Tarkista.
-5. Valitse Tulosta testi.
-6. Valitse OK.
-    * Tarkista luotu tuotos. Ota huomioon, että tiedostojen hallinnan liitteen kuva näkyy valtuutetun henkilön allekirjoituksena.  
-
-## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>MS Word -asiakirjan käyttäminen mallina tuodussa muodossa
-1. Sulje sivu.
-2. Sulje sivu.
-3. Valitse Organisaation hallinto > Sähköinen raportointi > Konfiguraatiot.
-4. Valitse puussa Model for cheques.
-5. Valitse puussa Model for cheques\Cheques printing format.
-6. Valitse Suunnittelutoiminto.
-7. Napsauta Liitteet.
-8. Valitse Poista.
-9. Valitse Kyllä.
-10. Valitse Uusi.
-11. Napsauta Tiedosto.
-    * Valitse Selaa ja valitse sitten etukäteen ladattu tiedosto nimeltä Cheque template Word.docx.  
-12. Sulje sivu.
-13. Syötä tai valitse Malli-kentän arvo.
-14. Valitse Tallenna.
-15. Sulje sivu.
-16. Valitse Muokkaa.
-17. Valitse Suorita luonnos -kentässä Kyllä.
-18. Sulje sivu.
-19. Valitse Maksuliikenteen hallinta > Pankkitilit > Pankkitilit.
-20. Pikasuodattimen avulla voit suodattaa Pankkitili-kentän USMF OPER -arvon mukaan.
-21. Valitse Tarkista.
-22. Valitse Tulosta testi.
-23. Valitse OK.
-    * Tarkista luotu tuotos. Ota huomioon, että tuloste on luotu MS Word -asiakirjana, joka sisältää yrityksen logoa esittävät upotetut kuvat, valtuutetun henkilön allekirjoituksen ja vesileiman valitun tekstin.  
-
+## <a name="configure-cash--bank-management-parameters"></a>Määritä Maksuliikennetiedot  
+ 1. Valitse Maksuliikenteen hallinta > Pankkitilit > Pankkitilit.  
+ 2. Pikasuodattimen avulla voit suodattaa Pankkitili-kentän USMF OPER -arvon mukaan.  
+ 3. Valitse toimintoruudussa Määritä.  
+ 4. Valitse Tarkista.  
+ 5. Laajenna osa Asetukset.  
+ 6. Valitse Muokkaa.  
+ 7. Valitse Yrityksen logo -kentässä Kyllä.  
+ 8. Valitse Yrityksen logo.  
+ 9. Valitse Muuta.  
+ 10. Valitse Selaa ja valitse sitten aiemmin ladattu tiedosto Company logo.png.   
+ 11. Valitse Tallenna.  
+ 12. Sulje sivu.  
+ 13. Laajenna Allekirjoitus-osa.  
+ 14. Valitse Tulosta ensimmäinen allekirjoitus -kentässä Kyllä.  
+ 15. Valitse Muuta.  
+ 16. Valitse Selaa ja valitse sitten aiemmin ladattu tiedosto Signature image.png.   
+ 17. Laajenna Kopiot-osa.  
+ 18. Valitse vaihtoehto Vesileima-kentässä.  
+ 19. Valitse Yleinen sähköinen vientimuoto -kentässä Kyllä.  
+ 20. Valitse Sekkien tulostusmuoto -konfiguraatio.  
+ 21. Nyt valittua ER-muotoa käytetään sekkien tulostamisessa.  
+ 22. Valitse Liitä.  
+ 23. Valitse Uusi.  
+ 24. Napsauta Tiedosto.  
+ 25. Valitse Selaa ja valitse sitten aiemmin ladattu tiedosto Signature image 2.png.   
+ 26. Sulje sivu.  
+ 27. Sulje sivu.  
+ 28. Sulje sivu.  
+ 29. Valitse Maksuliikenteen hallinta > Asetukset > Maksuliikennetiedot.  
+ 30. Valitse Kyllä kohdassa Salli esilaskun luonti käytöstä poistetuille pankkitileille: kenttä.  
+ 31. Valitse Tallenna.  
+ 32. Sulje sivu.  
 

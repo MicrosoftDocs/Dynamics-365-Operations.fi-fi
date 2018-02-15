@@ -1,6 +1,6 @@
 ---
 title: Kirjanpidon kirjauskansiotyypit
-description: "Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa käytettävät kirjauskansiot Kirjauskansioiden nimet -sivulla."
+description: "Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa käytettävät kirjauskansiot **Kirjauskansioiden nimet** -sivulla."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalSetup
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c05b199104af2c367266e3cd15937425e6457397
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: ccd1b9056f8c18de1b2ef706f70f53bac6cc43a1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -30,23 +31,23 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa käytettävät kirjauskansiot Kirjauskansioiden nimet -sivulla.
+Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa käytettävät kirjauskansiot **Kirjauskansioiden nimet** -sivulla.
 
-| Kirjauskansion tyyppi                      | Tarkoitus                                                                                                                                                                                                                                                                                                                                                     | Syötä tapahtumakoodi tälle sivulle                                |
-|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| Varaus                        | Luo kohdistustapahtumat kohdistuskirjauskansiossa. Ennen kohdistuskirjauskansion luomista sinun on luotava kohdistussääntö **Kirjanpidon kohdistussääntö** -sivulla.                                                                                                                                                                           | Käsittele kohdistuspyyntö                                     |
-| Hyväksyminen                          | Kirjaa hyväksytyt toimittajan laskut asianmukaisille kirjanpitotileille.                                                                                                                                                                                                                                                                            | Hyväksyttyjen laskujen kirjauskansio                                       |
-| Pankkisekin palautus               | Kirjatun sekin peruuttaminen. Jos haluat käyttää tätä kirjauskansiotyyppiä, valitse **Käytä tarkistusprosessia maksujen palautuksissa** -vaihtoehto **Maksuliikennetiedot**-sivulla.                                                                                                                                                                                       | Sekin peruutukset, maksujen mitätöinnit                              |
-| Pankkitalletuskuitin peruutus    | Peruuta talletuskuitti. Jos haluat käyttää tätä kirjauskansiotyyppiä, valitse **Käytä tarkistusprosessia talletuskuittimaksujen peruutuksissa** -vaihtoehto **Maksuliikennetiedot**-sivulla.                                                                                                                                                                       | Tallennuskuittien maksujen peruutukset                             |
+| Kirjauskansion tyyppi                      | Tarkoitus                       | Syötä tapahtumakoodi tälle sivulle                                |
+|-----------------------------------|-------------------------------|----------------------------------------------------------------|
+| Varaus                        | Luo kohdistustapahtumat kohdistuskirjauskansiossa. Ennen kohdistuskirjauskansion luomista sinun on luotava kohdistussääntö **Kirjanpidon kohdistussääntö** -sivulla.      | Käsittele kohdistuspyyntö             |
+| Hyväksyminen                          | Kirjaa hyväksytyt toimittajan laskut asianmukaisille kirjanpitotileille.  | Hyväksyttyjen laskujen kirjauskansio                                       |
+| Pankkisekin palautus               | Kirjatun sekin peruuttaminen. Jos haluat käyttää tätä kirjauskansiotyyppiä, valitse **Käytä tarkistusprosessia maksujen palautuksissa** -vaihtoehto **Maksuliikennetiedot**-sivulla.   | Sekin peruutukset, maksujen mitätöinnit                   |
+| Pankkitalletuskuitin peruutus    | Peruuta talletuskuitti. Jos haluat käyttää tätä kirjauskansiotyyppiä, valitse **Käytä tarkistusprosessia talletuskuittimaksujen peruutuksissa** -vaihtoehto **Maksuliikennetiedot**-sivulla.   | Tallennuskuittien maksujen peruutukset            |
 | Budjetti                            | Käsittele budjettimäärärahat. Jos haluat käyttää tätä kirjauskansiotyyppiä, valitse **Ota käyttöön budjettivaraus** -vaihtoehto **Kirjanpitoparametrit** -sivulla. Budjetin kirjauskansiomerkinnät sisältävät tietoja, jotka perustuvat sivulla **Kirjausmääritykset** määriteltyihin kirjanpitotileihin.                                                        |                                                                |
-| Asiakkaan hyväksymä vekseli  | Luo asiakkaan hyväksyntätapahtumia vekselille.                                                                                                                                                                                                                                                                                              | Aseta vekselikirjauskansio, Vekselin uudelleenasettamisen kirjauskansio |
-| Asiakkaan pankkisiirtomääräys          | Luo vekselin maksusuoritustiedosto, joka voidaan lähettää organisaatiosi pankkiin. Jos haluat käyttää tätä kirjauskansiotyyppiä, tyhjennä **Automaattinen tilitys** -vaihtoehto **Ostoreskontra** **parametrit**-sivulla.                                                                                                                                             | Maksusuoritus                                                     |
-| Asiakkaan asettama vekseli    | Luo asiakkaan asettamien vekselien tapahtumia. Kun haluat käyttää tätä kirjauskansiotyyppiä, poista valinta **Luo ja kirjaa asetettu kirjauskansio automaattisesti laskujen kirjauksen yhteydessä** sivulla **Maksutapa - Asiakkaat**.                                                                                                                                         | Aseta vekselikirjauskansio                                  |
-| Asiakkaan maksu                  | Luo asiakkaan maksutapahtumia.                                                                                                                                                                                                                                                                                                                       | Maksukirjauskansio                                                |
-| Asiakkaan protestoitu vekseli | Luo asiakkaan protestoitujen vekselien tapahtumia.                                                                                                                                                                                                                                                                                                      | Protestoi vekselikirjauskansio                               |
-| Asiakkaan tarkistettu vekseli  | Luo asiakkaan tarkistettujen vekselien tapahtumia.                                                                                                                                                                                                                                                                                                       | Tarkista vekselikirjauskansio                                |
-| Asiakkaan selvittämä vekseli  | Luo asiakkaan selvittämien vekselien tapahtumia.                                                                                                                                                                                                                                                                                                       | Selvitä vekselikirjauskansio                                |
-| Päivittäin                             | Luo päivittäiset tapahtumat yleisessä kirjauskansiossa.                                                                                                                                                                                                                                                                                                             | Kirjauskansio                                                |
+| Asiakkaan hyväksymä vekseli  | Luo asiakkaan hyväksyntätapahtumia vekselille.             | Aseta vekselikirjauskansio, Vekselin uudelleenasettamisen kirjauskansio |
+| Asiakkaan pankkisiirtomääräys          | Luo vekselin maksusuoritustiedosto, joka voidaan lähettää organisaatiosi pankkiin. Jos haluat käyttää tätä kirjauskansiotyyppiä, tyhjennä **Automaattinen tilitys** -vaihtoehto **Ostoreskontra** **parametrit**-sivulla.            | Maksusuoritus                                                     |
+| Asiakkaan asettama vekseli    | Luo asiakkaan asettamien vekselien tapahtumia. Kun haluat käyttää tätä kirjauskansiotyyppiä, poista valinta **Luo ja kirjaa asetettu kirjauskansio automaattisesti laskujen kirjauksen yhteydessä** sivulla **Maksutapa - Asiakkaat**.   | Aseta vekselikirjauskansio                                  |
+| Asiakkaan maksu                  | Luo asiakkaan maksutapahtumia.                             | Maksukirjauskansio             |
+| Asiakkaan protestoitu vekseli | Luo asiakkaan protestoitujen vekselien tapahtumia.                    | Protestoi vekselikirjauskansio                               |
+| Asiakkaan tarkistettu vekseli  | Luo asiakkaan tarkistettujen vekselien tapahtumia.                     | Tarkista vekselikirjauskansio                                |
+| Asiakkaan selvittämä vekseli  | Luo asiakkaan selvittämien vekselien tapahtumia.                       | Selvitä vekselikirjauskansio                                |
+| Päivittäin                             | Luo päivittäiset tapahtumat yleisessä kirjauskansiossa.                          | Kirjauskansio                                                |
 | Eliminointi                       | Luo eliminointitapahtumat eliminointien kirjauskansiossa. Kun halut käyttää tätä kirjauskansiotyyppiä, valitse **Käytetään taloushallinnon eliminointiprosessissa** ja **Käytä kirjanpidon konsolidointiprosessissa** -valinnat **Oikeushenkilöt**-sivulla. Sinun on luotava kirjanpidon eliminointisääntö **Kirjanpidon eliminointisääntö** -sivulla ennen tämän kirjauskansiotyypin käyttämistä. | Eliminointi                                                    |
 | Käyttöomaisuusbudjetti                | Luo käyttöomaisuuden budjettirekisterimerkinnät.                                                                                                                                                                                                                                                                                                                 | Käyttöomaisuusbudjetti                                             |
 | Laskurekisteri                  | Rekisteröi toimittajalaskun perustiedot.                                                                                                                                                                                                                                                                                                           | Laskurekisteri                                               |

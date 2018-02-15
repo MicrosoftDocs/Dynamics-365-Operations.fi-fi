@@ -3,7 +3,7 @@ title: "Kustannusten hallinnan Power BI -sisältö"
 description: "Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöön."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
+ms.sourcegitcommit: b167d7577823bbc88d8e64952333110f9a652b64
+ms.openlocfilehash: 1f552e1ee0286326e3a2a8bb6a7bfb84df53b45d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 02/02/2018
 
 ---
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 12/19/2017
 
 [!include[banner](../includes/banner.md)]
 
+> [Huomautus] Tämä sisältöpaketti on vanhentunut, kuten on ilmoitettu [PowerBI.comissa julkaistuissa Power BI -sisältöpaketeissa](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+
 
 Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöön. 
-
-# <a name="overview"></a>Yleiskuvaus
 
 **Kustannushallinnan** Microsoft Power BI -sisältö on tarkoitettu varaston kirjanpitäjille tai organisaation henkilöille, jotka ovat vastuussa varastosta. **Kustannustenhallinnan** Power BI -sisältö tarjoaa johdolle näkymän varastoon ja keskeneräisten töiden (KET) varastoon ja miten kustannukset kulkevat niiden läpi luokittain pitkällä aikavälillä. Näitä tietoja voidaan käyttää myös raportin yksityiskohtaisena täydennyksenä.
 
