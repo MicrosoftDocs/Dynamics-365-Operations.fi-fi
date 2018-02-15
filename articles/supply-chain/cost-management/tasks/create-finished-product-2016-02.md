@@ -9,48 +9,48 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5485c949e932572542ba22e052007e9625e20314
-ms.openlocfilehash: a14b56b508e5d46bb2898828bd30fdf6c3c14023
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: 19cba700a2c96a09e0444c17323b8b2d4bf43f7d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 01/17/2018
 
 ---
-# <a name="create-a-finished-product-february-2016-only"></a><span data-ttu-id="18980-103">Luo lopputuote (vain helmikuu 2016)</span><span class="sxs-lookup"><span data-stu-id="18980-103">Create a finished product (February 2016 only)</span></span>
+# <a name="create-a-finished-product-february-2016-only"></a><span data-ttu-id="7298d-103">Luo lopputuote (vain helmikuu 2016)</span><span class="sxs-lookup"><span data-stu-id="7298d-103">Create a finished product (February 2016 only)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="18980-104">Tämä tehtävä keskittyy valmiin tuotteen luomiseen.</span><span class="sxs-lookup"><span data-stu-id="18980-104">This task focuses on creating a finished product.</span></span> <span data-ttu-id="18980-105">Se on tuoterakenteen laskentasarjan ensimmäinen tehtävä.</span><span class="sxs-lookup"><span data-stu-id="18980-105">It is the first task in the BOM calculation series.</span></span> <span data-ttu-id="18980-106">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="18980-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="7298d-104">Tämä tehtävä keskittyy valmiin tuotteen luomiseen.</span><span class="sxs-lookup"><span data-stu-id="7298d-104">This task focuses on creating a finished product.</span></span> <span data-ttu-id="7298d-105">Se on tuoterakenteen laskentasarjan ensimmäinen tehtävä.</span><span class="sxs-lookup"><span data-stu-id="7298d-105">It is the first task in the BOM calculation series.</span></span> <span data-ttu-id="7298d-106">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="7298d-106">The demo data company used to create this task is USMF.</span></span>
 
-1. <span data-ttu-id="18980-107">Mene Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="18980-107">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="18980-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="18980-108">Click New.</span></span>
-3. <span data-ttu-id="18980-109">Kirjoita arvo Tuotenumero-kenttään.</span><span class="sxs-lookup"><span data-stu-id="18980-109">In the Product number field, type a value.</span></span>
-    * <span data-ttu-id="18980-110">Kirjoita esimerkkiä varten BOM_1.</span><span class="sxs-lookup"><span data-stu-id="18980-110">For the demonstration, type BOM_1.</span></span>  
-4. <span data-ttu-id="18980-111">Syötä tai valitse arvo Nimikemalliryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="18980-111">In the Item model group field, enter or select a value.</span></span>
-    * <span data-ttu-id="18980-112">Valitse STD.</span><span class="sxs-lookup"><span data-stu-id="18980-112">Select STD.</span></span> <span data-ttu-id="18980-113">STD standardikustannusta ja on kustannuslaskennassa yleisimmin käytetty malli.</span><span class="sxs-lookup"><span data-stu-id="18980-113">STD stands for standard cost and is the most commonly used model when working with cost calculations.</span></span>  
-5. <span data-ttu-id="18980-114">Anna tai valitse arvo Nimikeryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="18980-114">In the Item group field, enter or select a value.</span></span>
-    * <span data-ttu-id="18980-115">Valitse esimerkiksi Audio.</span><span class="sxs-lookup"><span data-stu-id="18980-115">For example, select Audio.</span></span> <span data-ttu-id="18980-116">Se ei vaikuta kustannuslaskentaan.</span><span class="sxs-lookup"><span data-stu-id="18980-116">This has no impact on cost calculations.</span></span>  
-6. <span data-ttu-id="18980-117">Syötä tai valitse arvo Varastodimensioryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="18980-117">In the Storage dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="18980-118">Valitse SiteWH.</span><span class="sxs-lookup"><span data-stu-id="18980-118">Select SiteWH.</span></span> <span data-ttu-id="18980-119">Esimerkissä käytetään vain toimipaikkaa ja varastoa.</span><span class="sxs-lookup"><span data-stu-id="18980-119">Only Site and Warehouse will be used for the demonstration.</span></span>  
-7. <span data-ttu-id="18980-120">Syötä tai valitse arvo Seurantadimensioryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="18980-120">In the Tracking dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="18980-121">Tässä esimerkissä ei käytetä seurantadimensioita. Valitse Ei mitään.</span><span class="sxs-lookup"><span data-stu-id="18980-121">Tracking dimensions will not be used for this example, select None.</span></span>  
-8. <span data-ttu-id="18980-122">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="18980-122">Click OK.</span></span>
-9. <span data-ttu-id="18980-123">Valitse toimintoruudussa Varastonhallinta.</span><span class="sxs-lookup"><span data-stu-id="18980-123">On the Action Pane, click Manage inventory.</span></span>
-10. <span data-ttu-id="18980-124">Valitse Tilauksen oletusasetukset.</span><span class="sxs-lookup"><span data-stu-id="18980-124">Click Default order settings.</span></span>
-11. <span data-ttu-id="18980-125">Valitse Oletusarvoinen tilaustyyppi -kentässä Tuotanto.</span><span class="sxs-lookup"><span data-stu-id="18980-125">In the Default order type field, select 'Production'.</span></span>
-    * <span data-ttu-id="18980-126">Koska kyse on valmiista tuotantoon tulevasta tuotteesta, valitse Tuotanto.</span><span class="sxs-lookup"><span data-stu-id="18980-126">Because this is a finished product that will be produced, select Production.</span></span>  
-12. <span data-ttu-id="18980-127">Anna tai valitse arvo Ostotoimipaikka-kentässä.</span><span class="sxs-lookup"><span data-stu-id="18980-127">In the Purchase site field, enter or select a value.</span></span>
-    * <span data-ttu-id="18980-128">Valitse esimerkkiä varten Toimipaikka 1.</span><span class="sxs-lookup"><span data-stu-id="18980-128">For the demonstration, select Site 1.</span></span>  
-13. <span data-ttu-id="18980-129">Anna tai valitse arvo Varastotoimipaikka-kentässä.</span><span class="sxs-lookup"><span data-stu-id="18980-129">In the Inventory site field, enter or select a value.</span></span>
-    * <span data-ttu-id="18980-130">Valitse tässä esimerkissä Toimipaikka 1.</span><span class="sxs-lookup"><span data-stu-id="18980-130">For this example, select Site 1.</span></span>  
-14. <span data-ttu-id="18980-131">Anna tai valitse arvo Myyntitoimipaikka-kentässä.</span><span class="sxs-lookup"><span data-stu-id="18980-131">In the Sales site field, enter or select a value.</span></span>
-    * <span data-ttu-id="18980-132">Valitse tässä esimerkissä Toimipaikka 1.</span><span class="sxs-lookup"><span data-stu-id="18980-132">For this example, select Site 1.</span></span>  
-15. <span data-ttu-id="18980-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="18980-133">Close the page.</span></span>
+1. <span data-ttu-id="7298d-107">Mene Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="7298d-107">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="7298d-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7298d-108">Click New.</span></span>
+3. <span data-ttu-id="7298d-109">Kirjoita arvo Tuotenumero-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7298d-109">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="7298d-110">Kirjoita esimerkkiä varten BOM_1.</span><span class="sxs-lookup"><span data-stu-id="7298d-110">For the demonstration, type BOM_1.</span></span>  
+4. <span data-ttu-id="7298d-111">Syötä tai valitse arvo Nimikemalliryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7298d-111">In the Item model group field, enter or select a value.</span></span>
+    * <span data-ttu-id="7298d-112">Valitse STD.</span><span class="sxs-lookup"><span data-stu-id="7298d-112">Select STD.</span></span> <span data-ttu-id="7298d-113">STD standardikustannusta ja on kustannuslaskennassa yleisimmin käytetty malli.</span><span class="sxs-lookup"><span data-stu-id="7298d-113">STD stands for standard cost and is the most commonly used model when working with cost calculations.</span></span>  
+5. <span data-ttu-id="7298d-114">Anna tai valitse arvo Nimikeryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7298d-114">In the Item group field, enter or select a value.</span></span>
+    * <span data-ttu-id="7298d-115">Valitse esimerkiksi Audio.</span><span class="sxs-lookup"><span data-stu-id="7298d-115">For example, select Audio.</span></span> <span data-ttu-id="7298d-116">Se ei vaikuta kustannuslaskentaan.</span><span class="sxs-lookup"><span data-stu-id="7298d-116">This has no impact on cost calculations.</span></span>  
+6. <span data-ttu-id="7298d-117">Syötä tai valitse arvo Varastodimensioryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7298d-117">In the Storage dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="7298d-118">Valitse SiteWH.</span><span class="sxs-lookup"><span data-stu-id="7298d-118">Select SiteWH.</span></span> <span data-ttu-id="7298d-119">Esimerkissä käytetään vain toimipaikkaa ja varastoa.</span><span class="sxs-lookup"><span data-stu-id="7298d-119">Only Site and Warehouse will be used for the demonstration.</span></span>  
+7. <span data-ttu-id="7298d-120">Syötä tai valitse arvo Seurantadimensioryhmä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7298d-120">In the Tracking dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="7298d-121">Tässä esimerkissä ei käytetä seurantadimensioita. Valitse Ei mitään.</span><span class="sxs-lookup"><span data-stu-id="7298d-121">Tracking dimensions will not be used for this example, select None.</span></span>  
+8. <span data-ttu-id="7298d-122">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7298d-122">Click OK.</span></span>
+9. <span data-ttu-id="7298d-123">Valitse toimintoruudussa Varastonhallinta.</span><span class="sxs-lookup"><span data-stu-id="7298d-123">On the Action Pane, click Manage inventory.</span></span>
+10. <span data-ttu-id="7298d-124">Valitse Tilauksen oletusasetukset.</span><span class="sxs-lookup"><span data-stu-id="7298d-124">Click Default order settings.</span></span>
+11. <span data-ttu-id="7298d-125">Valitse Oletusarvoinen tilaustyyppi -kentässä Tuotanto.</span><span class="sxs-lookup"><span data-stu-id="7298d-125">In the Default order type field, select 'Production'.</span></span>
+    * <span data-ttu-id="7298d-126">Koska kyse on valmiista tuotantoon tulevasta tuotteesta, valitse Tuotanto.</span><span class="sxs-lookup"><span data-stu-id="7298d-126">Because this is a finished product that will be produced, select Production.</span></span>  
+12. <span data-ttu-id="7298d-127">Anna tai valitse arvo Ostotoimipaikka-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7298d-127">In the Purchase site field, enter or select a value.</span></span>
+    * <span data-ttu-id="7298d-128">Valitse esimerkkiä varten Toimipaikka 1.</span><span class="sxs-lookup"><span data-stu-id="7298d-128">For the demonstration, select Site 1.</span></span>  
+13. <span data-ttu-id="7298d-129">Anna tai valitse arvo Varastotoimipaikka-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7298d-129">In the Inventory site field, enter or select a value.</span></span>
+    * <span data-ttu-id="7298d-130">Valitse tässä esimerkissä Toimipaikka 1.</span><span class="sxs-lookup"><span data-stu-id="7298d-130">For this example, select Site 1.</span></span>  
+14. <span data-ttu-id="7298d-131">Anna tai valitse arvo Myyntitoimipaikka-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7298d-131">In the Sales site field, enter or select a value.</span></span>
+    * <span data-ttu-id="7298d-132">Valitse tässä esimerkissä Toimipaikka 1.</span><span class="sxs-lookup"><span data-stu-id="7298d-132">For this example, select Site 1.</span></span>  
+15. <span data-ttu-id="7298d-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7298d-133">Close the page.</span></span>
 
 
