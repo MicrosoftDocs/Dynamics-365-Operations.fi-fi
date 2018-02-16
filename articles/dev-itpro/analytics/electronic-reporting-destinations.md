@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 211442c7bd0d3079a5eb4f6d01944c0eddf533af
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: cbe0374ff21ff39ed2bbc8d647bd933ced9dcff6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -52,7 +52,7 @@ Kun olet luonut viittauksen, voit luoda kullekin kansiolle tai tiedostolle tiedo
 
 [![Tiedostokohteen luonti](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-**Huomautus:** Voit luoda yhden tiedostokohteen kullekin samanmuotoiselle, **Tiedostonimi**-kentässä valitulle tulosteosalle, kuten kansiolle tai tiedostolle. Voit sitten ottaa tiedostokohteen yksittäiset kohteet käyttöön tai poistaa ne käytöstä **Kohdeasetukset**-valintaikkunassa. **Asetukset**-painikkeella voidaan hallita kaikki valitun tiedostokohteen kohteita. Voit hallita **Kohdeasetukset**-valintaikkunassa kutakin kohdetta erikseen valitsemalla sen kohdalla **käytössä**.
+> ![Huomautus] Voit luoda yhden tiedostokohteen kullekin samanmuotoiselle, **Tiedostonimi**-kentässä valitulle tulosteosalle, kuten kansiolle tai tiedostolle. Voit sitten ottaa tiedostokohteen yksittäiset kohteet käyttöön tai poistaa ne käytöstä **Kohdeasetukset**-valintaikkunassa. **Asetukset**-painikkeella voidaan hallita kaikki valitun tiedostokohteen kohteita. Voit hallita **Kohdeasetukset**-valintaikkunassa kutakin kohdetta erikseen valitsemalla sen kohdalla **käytössä**.
 
 [![Kohdeasetukset-valintaikkuna](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -71,7 +71,7 @@ Kun valitset **Muokkaa** **Vastaanottaja**- tai **Kopio**-kentässä **Sähköpo
 
 #### <a name="print-management"></a>Tulostuksenhallinta
 
-Jos valitset **Tulostuksenhallinnan sähköposti** -tyypin, voit syöttää kiinteät sähköpostiosoitteet **Vastaanottaja**-kenttään. Jos haluat käyttää muita kuin kiinteitä sähköpostiosoitteita, tiedostokohteen sähköpostin lähdetyyppi on valittava. Seuraavia arvoja tuetaan: **Asiakas**, **Toimittaja**, **Prospekti**, **Yhteyshenkilö**, **Kilpailija**, **Työntekijä**, **Hakija**, **Mahdollinen toimittaja** ja **Ei-sallittu toimittaja**. Kun olet valinnut sähköpostin lähdetyypin, käytä **Sähköpostin lähdetili** -kentän vieressä olevaa painiketta, jos haluat avata ** Reseptien suunnittelu ** -lomakkeen. Tämän lomakkeen avulla voit liittää kaavan, joka vastaa valitun osapuolen tilin sähköpostikohdetta.
+Jos valitset **Tulostuksenhallinnan sähköposti** -tyypin, voit syöttää kiinteät sähköpostiosoitteet **Vastaanottaja**-kenttään. Jos haluat käyttää muita kuin kiinteitä sähköpostiosoitteita, tiedostokohteen sähköpostin lähdetyyppi on valittava. Seuraavia arvoja tuetaan: **Asiakas**, **Toimittaja**, **Prospekti**, **Yhteyshenkilö**, **Kilpailija**, **Työntekijä**, **Hakija**, **Mahdollinen toimittaja** ja **Ei-sallittu toimittaja**. Kun olet valinnut sähköpostin lähdetyypin, käytä **Sähköpostin lähdetili** -kentän vieressä olevaa painiketta, jos haluat avata **Reseptien suunnittelu** -lomakkeen. Tämän lomakkeen avulla voit liittää kaavan, joka vastaa valitun osapuolen tilin sähköpostikohdetta.
 
 [![Määritä Tulostuksenhallinta-sähköpostityyppi](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
 
@@ -131,7 +131,7 @@ ER-kohteissa on käytössä kahdenlaisia oikeuksia ja tehtäviä. Yhdellä tyypi
 | PaymAccountsPayablePaymentsClerk    | Ostoreskontran maksuliikenneassistentti            | ERFormatDestinationRuntimeConfigure | Määritä sähköisen raportoinnin muodon kohde ajon aikana |
 | PaymAccountsReceivablePaymentsClerk | Myyntireskontran maksuliikenneassistentti         | ERFormatDestinationRuntimeConfigure | Määritä sähköisen raportoinnin muodon kohde ajon aikana |
 
-**Huomautus:** Edellisissä tehtävissä käytettiin kahta oikeutta. Näiden oikeuksien nimet vastaavat tehtävien nimiä: **ERFormatDestinationConfigure** ja **ERFormatDestinationRuntimeConfigure**.
+> ![Huomautus] Edellisissä tehtävissä käytettiin kahta oikeutta. Näiden oikeuksien nimet vastaavat tehtävien nimiä: **ERFormatDestinationConfigure** ja **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Usein kysyttyjä kysymyksiä
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Olen tuonut sähköisiä määrityksiä ja näen ne Sähköisen raportoinnin konfiguraatiot -sivulla Miksi ne eivät kuitenkaan ole näkyvissä Sähköisen raportoinnin kohteet -sivulla?
@@ -154,7 +154,7 @@ Kaava on ER-määrityskohtainen. Jos esimerkiksi käytät ISO 20022 tilisiirto -
 
 Edellytyksenä on, että muotoa voi käyttää ER-määrityksissä. Jos sinulla on muoto, avaa **Sähköisen raportoinnin kohde** -sivu ja luo uusi viittaus tähän määritykseen. Tarvitset seuraavaksi neljä tiedostokohdetta, eli yhden kullekin tulosteosalle. Luo ensimmäinen tiedostokohde, anna sille nimi, kuten **Kansio**, ja sitten kansiota määrityksessä edustava tiedostonimi. Valitse sitten **Asetukset** ja varmista, että kaikki kohteet on poistettu käytöstä. Kansiota ei luoda tähän tiedostokohteeseen. Koska tiedostojen ja pääkansioiden välillä on hierarkkisia riippuvuuksia, tiedostot toimivat oletusarvoisesti samalla tavoin. Niitä ei toisin sanoen lähetetä mihinkään. Voit ohittaa tämän oletustoiminnan luomalla vielä kolme tiedostosijaintia eli yksi kullekin tiedostolle. Ota kunkin tiedoston kohdeasetuksissa käyttöön kohde, johon tiedosto on lähetettävä.
 
-# <a name="see-also"></a>Lisätietoja
+## <a name="see-also"></a>Lisätietoja
 
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 

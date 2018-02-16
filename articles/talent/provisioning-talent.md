@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6ffb97b53f522cfe8ccd8e89df854cbc557e4f1f
-ms.openlocfilehash: fadc373b2c1c06987f22d4d9c20a9ab07b0c85d5
+ms.sourcegitcommit: a53c1997f74ebe572b17cc3090d2e236b6fe78f6
+ms.openlocfilehash: 8a84cfe9b73f0c72f3cb0c3843749754c6b3d538
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talentin valmisteleminen
@@ -60,6 +60,9 @@ Kun LCS-projekti on luotu, voit valmistella Talent-sovelluksen ympäristöä var
 > Jos et ole vielä hyväksynyt lopullisia vaatimuksia, voit ottaa projektissa käyttöön Talentin testausesiintymän. Voit testata esiintymässä ratkaisuasi siihen asti, että hyväksyntä on tehty. Jos käytät uutta ympäristöä testaukseen, nämä menettelytavat on toistettava tuotantoympäristön luomista varten.
 
 ## <a name="create-a-new-powerapps-environment-if-required"></a>Uuden PowerApps-ympäristön luominen (tarvittaessa)
+
+Talentin ja PowerApps-ympäristöjen integroinnin tavoitteena on mahdollistaa tietojen integrointi ja laajennusten sujuva käyttö käyttämällä PowerApps-työkaluja Talent-tietojen kanssa. Tämän vuoksi on tärkeää tietää PowerApps-ympäristöjen käyttötarkoitus, kun Talentin käyttöympäristöä valitaan. Lisätietoja PowerApps-ympäristöistä, kuten ympäristön laajuudesta, ympäristön käytöstä sekä ympäristön luomisesta ja valitsemisesta, on kohdassa [PowerApps-ympäristöjen julkaiseminen](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/).  Vaikka jokainen vuokraaja valmistellaan automaattisesti PowerApps-oletusympäristössä, se ei välttämättä ole paras ympäristö Talentin käyttöönottoon. Tietojen integrointia ja testausstrategioita on pohdittava tässä vaiheessa, joten käyttöönoton erilaiset vaikutukset kannattaa harkita tarkasti, sillä muutoksia ei ole helppo tehdä myöhemmin.
+
 1. Valitse LCS:n **Ympäristöjen hallinta**. Siirryt [PowerApps-hallintakeskukseen](https://preview.admin.powerapps.com/environments), jossa voit tarkastella aiemmin luotuja ympäristöjä ja luoda uusia ympäristöjä.
 2. Valitse (**+**) **Uusi ympäristö** -painike.
 3. Anna ympäristölle yksilöivä nimi ja valitse sijainti, jossa se otetaan käyttöön.
@@ -74,9 +77,20 @@ Kun LCS-projekti on luotu, voit valmistella Talent-sovelluksen ympäristöä var
     > [!IMPORTANT]
     > Jos loit CDS-tietokannan aiemmin ja syötit tietokantaan yrityksen tuotantotietoja, ota huomioon, että nämä vaiheet poistavat **kaikki** valitun tietokannan tiedot, myös yrityksen tuotantotiedot.
 
-    1. Kirjaudu sisään [PowerApps-sovellukseen](https://preview.web.powerapps.com/home) ja siirry vaiheessa 2 luomaasi ympäristöön.
-    2. Valitse **Yksiköt**. Valitse sivun oikeassa reunassa ellipsipainike (**…**) ja valitse sitten **Tyhjennä kaikki tiedot**.
-    3. Valitse **Poista tiedot**, kun haluat vahvistaa kaikkien tietojen poistamisen. Tämä toiminto poistaa kaikki CDS-tietokannan demotiedot oletusarvoisesti. Se poistaa myös kaikki muut kyseiseen tietokantaan syötetyt tiedot.
-
+    1. Kirjaudu [PowerAppsiin](https://preview.web.powerapps.com/home) ja valitse vaiheessa 2 luotu ympäristö sivulla oikealla olevasta avattavasta valikosta.
+    2. Laajenna **Common Data Service** vasemmassa siirtymisruudussa ja valitse **Yksiköt**.
+    3. Valitse sivun oikeassa reunassa ellipsipainike (**…**) ja valitse sitten **Tyhjennä kaikki tiedot**.
+    4. Valitse **Poista tiedot**, kun haluat vahvistaa kaikkien tietojen poistamisen. Tämä toiminto poistaa kaikki CDS-tietokannan demotiedot oletusarvoisesti. Se poistaa myös kaikki muut kyseiseen tietokantaan syötetyt tiedot.
+    
 Nyt voit käyttää uutta ympäristöäsi.
+
+## <a name="granting-access-to-the-environment"></a>Ympäristön käyttöoikeuksien myöntäminen
+Ympäristön luoneella yleisellä järjestelmänvalvojalla on oletusarvoisesti käyttöoikeudet, mutta muille sovelluksen käyttäjille käyttöoikeudet on nimenomaisesti myönnettävä. Se tehdään [lisäämällä käyttäjiä](../dev-itpro/sysadmin/tasks/create-new-users.md) ja [määrittämällä heille soveltuvat roolit](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) henkilöstöhallinnon perusympäristössä. Tämän lisäksi kyseiset käyttäjät on lisättävä myös PowerApps-ympäristöön, jotta he voivat käyttää Attract- ja Onboard-sovelluksia.  Blogikirjoituksessa [PowerApps-hallintakeskuksen esittely](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) voi olla ohjeita, jotka auttavat tekemään nämä seuraavaksi käsiteltävät vaiheet:
+
+> 1.    Talent-ympäristön käyttöönottaneen yleisen järjestelmänvalvojan on siirryttävä [PowerAppsin hallintakeskukseen](https://preview.admin.powerapps.com/environments).   
+> 2.    Valitse kyseiset ympäristöt.
+> 3.    Lisää Suojaus-välilehdessä tarvittavat käyttäjät ympäristön tekijän rooliin.
+
+Huomaa, että tämä käyttäjien viimeinen lisäysvaihe PowerApps-ympäristöön on väliaikainen. Jossain vaiheessa lisätään toiminto, jolla tämä otetaan automaattisesti käyttöön, kun käyttäjä lisätään henkilöstöhallinnon perusversiossa.
+
 

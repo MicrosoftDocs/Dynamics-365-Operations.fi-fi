@@ -3,12 +3,12 @@ title: "Prospektista käteiseksi"
 description: "Tässä ohjeaiheessa on yleiskuvaus Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin ja Microsoft Dynamics 365 for Sales -sovelluksen välisestä prospektista käteiseksi -ratkaisusta."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -17,13 +17,13 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: f169b0ee20a7ca0c8d05c8bdcf2c04d411722f01
-ms.openlocfilehash: ff166f89d13acbc3aefcbdb39f485881c81cb42c
+ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
+ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,16 +31,20 @@ ms.lasthandoff: 12/21/2017
 
 [!include[banner](../includes/banner.md)]
 
-Prospektista käteiseksi -ratkaisu mahdollistaa suoran synkronoinnin Dynamics 365 for Finance and Operations, Enterprise editionin ja Dynamics 365 for Salesin välillä. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Finance and Operationsin ja Salesin välillä. Kun tieto kulkee Finance and Operationsin ja Salesin välillä, voit suorittaa myynti- ja markkinointitehtäviä Salesissa sekä käsitellä tilauksen täyttämistä Finance and Operationsin inventoinnin- ja varastonhallinnalla.
+Prospektista käteiseksi -ratkaisu mahdollistaa suoran synkronoinnin Dynamics 365 for Finance and Operations, Enterprise editionin ja Dynamics 365 for Salesin välillä. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Finance and Operationsin ja Salesin välillä. Kun tieto kulkee Finance and Operationsin ja Salesin välillä, voit suorittaa myynti- ja markkinointitehtäviä Salesissa sekä käsitellä tilauksen täyttämistä Finance and Operationsin inventoinnin- ja varastonhallinnalla. 
+
+Saat lisätietoja Prospektista käteiseksi -integraatiosta katsomalla lyhyen YouTube-videon:
+
+> [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
 
 Nykyisessä versiossa prospektista käteiseksi -ratkaisu mahdollistaa seuraavat suoran synkronoinnin tyypit:
 
 - [Tilien ylläpito Salesissa ja tilien synkronointi suoraan Salesista Finance and Operationsiin](accounts-template-mapping-direct.md)
 - [Tuotteiden ylläpito Finance and Operationsissa ja synkronointi suoraan Salesiin](products-template-mapping-direct.md)
 - [Salesin yhteyshenkilöiden ylläpito ja synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](contacts-template-mapping-direct.md)
-- [Myyntitarjouksien synkronointi suoraan Salesista Finance and Operationsiin](sales-quotation-template-mapping-sales-fin.md)
+- [Myyntitarjouksien synkronointi suoraan Salesista Finance and Operationsiin (julkaisua odottava malli)](sales-quotation-template-mapping-sales-fin.md)
 - [Myyntitilausten synkronointi suoraan Finance and Operationsista Salesiin](sales-order-template-mapping-direct.md)
-- [Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä](sales-order-template-mapping-direct-two-ways.md)
+- [Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä (julkaisua odottava malli)](sales-order-template-mapping-direct-two-ways.md)
 - [Myyntilaskun synkronointi suoraan Finance and Operationsista Salesiin](sales-invoice-template-mapping-direct.md)
 
 Aiemmissa versiossa prospektista käteiseksi -ratkaisu mahdollistaa seuraavat epäsuoran synkronoinnin tyypit:
@@ -50,15 +54,19 @@ Aiemmissa versiossa prospektista käteiseksi -ratkaisu mahdollistaa seuraavat ep
 - [Tuotteiden ylläpito Finance and Operationsissa ja niiden synkronointi Salesiin](products-template-mapping.md)
 - [Myyntitarjousten luominen Salesissa ja niiden synkronointi Finance and Operationsiin](sales-quotation-template-mapping.md)
 - [Myyntitilausten luominen Finance and Operationsissa ja niiden synkronointi Salesiin](sales-order-template-mapping.md)
-- [Luo myyntilaskuja Finance and Operationsissa ja synkronoi ne Salesiin](sales-invoice-template-mapping.md)
+- [Myyntilaskujen luominen Finance and Operationsissa ja niiden synkronointi Salesiin](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations -sovelluksen järjestelmävaatimukset
 
-Seuraavat komponentit on asennettava, jotta prospektista käteiseksi -ratkaisua voi käyttää:
+Prospektista käteiseksi -integraatio tuetaan seuraavissa versioissa:
+
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (joulukuu 2017)
+
+- Dynamics 365 for Finance and Operations, Enterprise edition (joulukuu 2017) – sovellusversio 7.3.11971.56116 ja ympäristöversio 12 (7.0.4709.41129)
 
 ### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (heinäkuu 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (heinäkuu 2017) ja ympäristöpäivitys 8 (sovellusversio 7.2.11792.56024 ja ympäristöversio 7.0.4565.16212)
+- Dynamics 365 for Finance and Operations, Enterprise edition (heinäkuu 2017) – sekä ympäristöpäivitys 8 (sovellusversio 7.2.11792.56024 ja ympäristöversio 7.0.4565.16212).
 - Seuraavat hotfix-korjaukset ovat pakollisia:
 
     - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – tämän korjaus mahdollistaa myyntitilauksen synkronoinnin Salesista Finance and Operationsiin tietojen integrointitoiminnolla. Se sisältää myös useita parannuksia.
@@ -68,7 +76,7 @@ Seuraavat komponentit on asennettava, jotta prospektista käteiseksi -ratkaisua 
     > [!NOTE]
     > Ainoastaan KB4045570 on asennettava, sillä sen asennus sisältää muiden hotfix-korjausten muutokset. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations -versio 1611 (marraskuu 2016) 
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations -versio 1611 (marraskuu 2016)
 
 - Dynamics 365 for Finance and Operations -versio 1611 (marraskuu 2016) ja vähintään ympäristöpäivitys 8
 
@@ -106,4 +114,6 @@ Seuraavat komponentit on asennettava, jotta prospektista käteiseksi -ratkaisua 
     2. Valitse **Näytä laajennettu**
     3. Aloita pika-asennus valitsemalla alue. Jos valitset **En tiedä**, järjestelmä etsii kaikki alueet, ja asennus kestää kauemmin.
     4. Anna asennusoikeudet omaavan järjestelmänvalvojan käyttäjänimi ja salasana.
+
+
 

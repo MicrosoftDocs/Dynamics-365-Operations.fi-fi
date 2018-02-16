@@ -3,14 +3,14 @@ title: Suunnittele tilikarttasi
 description: "Tässä artikkelissa on tietoja, joiden avulla voit suunnitella organisaation tilikartan."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 038886f0a6e1c133a33ee34725eb20352e64341a
+ms.sourcegitcommit: ad55dd57483de4351c8501c5e226180fc73606aa
+ms.openlocfilehash: 3d2cdeaf2fdeb2f587f82c97249886fb8db49154
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/11/2018
 
 ---
 
@@ -45,12 +45,12 @@ Tilikartan rakennetta suunniteltaessa täytyy kiinnittää huomiota esimerkiksi 
 -   Oman yrityksen voimassa olevat raportointivaatimukset
 -   Ulkoisten organisaatioiden ja organisaatiosi tarvitsemien tietojen tarkkuus
 
-Voit määrittää tilikartat **Tilikartat**-sivulla. Päätilit voidaan luoda **Tilikartat**- tai **Päätilit**-sivulla. Päätileillä ei tule käyttää erikoismerkkejä, joita käytetään tilikartoissa erottimina. Jos päätilillä on erikoismerkki, jota käytetään tilikartan erottimena, toiminta saattaa olla epävakaata tai tilien ja dimensioiden yhdistelmien syöttämisessä on käytettävä jatkuvasti arvohakuja tai lisätietoikkunoita. Lisätietoja on ohjeaiheessa [Päätilin luominen](tasks/create-account-structures.md).
+Voit määrittää tilikartat **Tilikartat**-sivulla. Päätilit voidaan luoda **Tilikartat**- tai **Päätilit**-sivulla. Päätileillä ei tule käyttää erikoismerkkejä, joita käytetään tilikartoissa erottimina. Jos päätilillä on erikoismerkki, jota käytetään tilikartan erottimena, toiminta saattaa olla epävakaata tai tilien ja dimensioiden yhdistelmien syöttämisessä on käytettävä jatkuvasti arvohakuja tai lisätietoikkunoita. Lisätietoja on ohjeaiheessa [Päätilin luominen](tasks/create-main-account.md).
 
 
 Päätilit kannattaa linkittää päätililuokkiin, jolloin oletusraportteja voidaan käyttää ilman muutoksia. Tällöin voit suunnitella ja ylläpitää raportteja nopeasti ja helposti. 
 
-**Määritä tilirakenteet** -sivun avulla voit luoda tilirakenteita. Tilirakenteet määrittävät sallitut yhdistelmät. Yhdistelmät yhdessä päätilien kanssa muodostavat tilikartan.  Lisätietoja on ohjeaiheessa [Tilirakenteen luominen](tasks/create-main-account.md).
+**Määritä tilirakenteet** -sivun avulla voit luoda tilirakenteita. Tilirakenteet määrittävät sallitut yhdistelmät. Yhdistelmät yhdessä päätilien kanssa muodostavat tilikartan.  Lisätietoja on ohjeaiheessa [Tilirakenteen luominen](tasks/create-account-structures.md).
 
 **Yrityksen ohitukset** 
 

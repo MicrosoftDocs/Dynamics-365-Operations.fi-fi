@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -16,10 +17,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: d59a7aef90ecef0cd947b833f1cce1e2372f3033
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -104,7 +105,7 @@ Seuraavassa taulukossa on esitetty, miten tärkeitä koostemittoja käytetään 
 | On viivästynyt               | 'Tuotantotilaus'[On ilmoitettu valmiiksi] = TRUE && 'Tuotantotilaus'[Viivästynyt arvo] = 1 |
 | On etuajassa                 | 'Tuotantotilaus'[On ilmoitettu valmiiksi] = TRUE && 'Tuotantotilaus'[Viivästymispäivät] \< 0 |
 | On kokonaisuudessaan               | 'Tuotantotilaus'[Hyväksytty määrä] \>= 'Tuotantotilaus'[Ajoitettu määrä] |
-| On ilmoitettu valmiiksi                | 'Tuotantotilaus'[Tuotantotilan arvo] = 5 \|\| 'Tuotantotilaus'[Tuotantotilan arvo] = 7 |
+| On ilmoitettu valmiiksi                | 'Tuotantotilaus'[Tuotantotilauksen arvo] = 5 \|\| 'Tuotantotilaus'[Tuotantotilauksen arvo] = 7 |
 | Myöhässä ja kokonaisuudessaan           | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'[On kokonaisuudessaan] = TRUE && 'Tuotantotilaus'[On viivästynyt] = TRUE)) |
 | Myöhässä \#                  | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'[On viivästynyt] = TRUE)) |
 | Myöhässä – %                   | IFERROR( IF('Tuotantotilaus'[Myöhässä \#] \<\> 0, 'Tuotantotilaus'[Myöhässä \#], IF('Tuotantotilaus'[Tilauksia yhteensä] = 0, BLANK(), 0)) / 'Tuotantotilaus'[Tilauksia yhteensä], BLANK()) |

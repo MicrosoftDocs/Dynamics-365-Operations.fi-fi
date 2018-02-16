@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4b3d068ddbf6f0b28c97618f5fa10fa486f3af51
+ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
+ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/15/2018
 
 ---
 
@@ -31,6 +31,9 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
+
+> [!NOTE]
+> Tässä ohjeaiheessa käsitellään pilvikäyttöönottojen varastoinnin määrittämistä. Lisätietoja varastoinnin määrittämisestä paikallisissa käyttöönotoissa on kohdassa [Varastointi paikallisissa käyttöönottoja](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
 
 Tässä ohjeaiheessa kerrotaan, miten asennat ja määrität Microsoft Dynamics 365 for Finance and Operationsin varastointisovelluksen.
 
@@ -43,32 +46,29 @@ Sovellus on saatavilla Android- ja Windows-käyttöjärjestelmille. Jos haluat k
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (kaikki versiot)                                                                                                                                                   |
-| Finance and Operations | Microsoft Finance and Operations versio 1611 <br>-tai- <br>Microsoft Dynamics AX:n versio 7.0/7.0.1 ja Microsoft Dynamics AX -ympäristöpäivitys 2 ja hotfix-korjaus KB 3210014 |
+| Finance and Operations | Microsoft Dynamics 365 for Operationsin versio 1611 <br>-tai- <br>Microsoft Dynamics AX:n versio 7.0/7.0.1 ja Microsoft Dynamics AX -ympäristöpäivitys 2 ja hotfix-korjaus KB 3210014 |
 
 ## <a name="get-the-app"></a>Hanki sovellus
--   Windows (UWP): [Finance and Operationsin varastointisovellus Windows-kaupassa](https://www.microsoft.com/store/apps/9p1bffd5tstm)
--   Android:
+-   Windows (UWP)
+     - [Finance and Operationsin varastointisovellus Windows-kaupassa](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+-   Android
     - [Finance and Operationsin varastointisovellus Google Play Storessa](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
     - [Finance and Operationsin varastointisovellus Zebra App Galleryssa](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
-## <a name="create-a-web-service-application-in-active-directory"></a>Luo Active Directoryyn WWW-palvelusovellus
+## <a name="create-a-web-service-application-in-azure-active-directory"></a>Verkkosovelluksen luominen Azure Active Directoryssa
 Jotta sovellus toimisi tietyn Finance and Operations -palvelimen kanssa, sinun täytyy rekisteröidä verkkopalvelusovellus Azure Active Directoryssä Finance and Operationsin vuokralaisessa. Tietoturvasyistä on suositeltavaa luoda verkkopalvelusovellus jokaiselle laitteelle, jota käytät. Luo WWW-palvelusovellus Azure Active Directoryssa (Azure AD) seuraavasti:
 
-1.  Siirry web-selaimessa osoitteeseen <https://manage.windowsazure.com>.
+1.  Siirry selaimessa osoitteeseen <https://portal.azure.com>.
 2.  Kirjoita nimi ja salasana käyttäjälle, jolla on Azure‑tilauksen käyttöoikeus.
-3.  Valitse Azure Portalissa vasemmassa siirtymisruudussa **Active Directory**.[](./media/wh-01-active-directory-example.png)[![wh-01-active-directory-example](./media/wh-01-active-directory-example.png)](./media/wh-01-active-directory-example.png)
-4.  Valitse ruudukossa Finance and Operationsin käyttämä Active Directory -esiintymä.
-5.  Valitse yläreunan työkalurivissä **Sovellukset**. [![wh-02-active-directory-applications](./media/wh-02-active-directory-applications-1024x197.png)](./media/wh-02-active-directory-applications.png)
-6.  Valitse alaosan ruudussa **Lisää**. Ohjattu **Lisää sovellus** -toiminto käynnistyy.
-7.  Anna sovellukselle nimi ja valitse **WWW-sovellus ja/tai web-API-liittymä**. [![wh-03-active-directory-add-application](./media/wh-03-active-directory-add-application.png)](./media/wh-03-active-directory-add-application.png)
-8.  Anna kirjautumisen URL-osoite, joka on verkkosovelluksen URL-osoite. Tämä URL-osoite on sama kuin käyttöönoton URL-osoite, mutta sen loppuun lisätään oauth. Anna sovelluksen tunnuksen URI. Tämä arvo on pakollinen, mutta sitä ei tarvita todennuksessa. Varmista, että tämä sovellustunnuksen URI on URI-jäljitelmä, kuten https://contosooperations/wmapp, sillä käyttöönoton URL-osoitteen käyttö voi aiheuttaa kirjautumisongelmia muissa ADD-sovelluksissa, kuten Excel-lisäosassa. [![WH-04-AD-add-properties3](./media/WH-04-AD-add-properties3.png)](./media/WH-04-AD-add-properties3.png)
-9.  Siirry **Konfiguroi**-välilehteen. [![wh-05-ad-configure-app](./media/wh-05-ad-configure-app.png)](./media/wh-05-ad-configure-app.png)
-10. Vieritä alas, kunnes näet **Muiden sovellusten käyttöoikeudet** -osan. Valitse **Lisää sovellus**. [![wh-06-ad-app-add-permissions](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
-11. Valitse luettelossa **Microsoft Dynamics ERP**. Valitse **Suorita tarkistus** -painike sivun oikeassa yläkulmassa. [![wh-07-ad-select-permissions](./media/wh-07-ad-select-permissions.png)](./media/wh-07-ad-select-permissions.png)
-12. Valitse **Edustajan käyttöoikeudet** -luettelossa kaikki valintaruudut. Valitse **Tallenna**. [![wh-08-ad-delegate-permissions](./media/wh-08-ad-delegate-permissions.png)](./media/wh-08-ad-delegate-permissions.png)
-13. Merkitse muistiin seuraavat tiedot:
-    -   **Asiakastunnus** - kun vierität sivua ylös, näet **Asiakastunnus** -kentän.
-    -   **Avain** - Luo **Avaimet**-osassa avain valitsemalla kesto ja kopioi avain. Tähän avaimeen viitataan myöhemmin nimellä **Asiakkaan salasana**.
+3.  Valitse Azure Portalin vasemmassa siirtymisruudussa **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+4.  Varmista, että Finance and Operations käyttää kyseistä Active Directory -esiintymää.
+5.  Valitse luettelossa **sovelluksen rekisteröinnit**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+6.  Valitse yläruudussa **uuden sovelluksen rekisteröinti**. Ohjattu **Lisää sovellus** -toiminto käynnistyy.
+7.  Anna sovellukselle nimi ja valitse **verkkosovellus tai verkon ohjelmointirajapinta**. Anna kirjautumisen URL-osoite, joka on verkkosovelluksen URL-osoite. Tämä URL-osoite on sama kuin käyttöönoton URL-osoite, mutta sen loppuun lisätään oauth. Valitse **Luo**. [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+8.  Valitse luettelossa uusi sovellus. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+9.  Muista **sovelluksen tunnus**, sillä tarvitse sitä myöhemmin. **Sovelluksen tunnusta** kutsutaan myöhemmin **asiakastunnukseksi**.
+10. Valitse **asetusruudussa** **avaimet**. Luo avain antamalla avaimen kuvaus ja kesto **salasanojen** osiossa. 
+11. Valitse **tallennus** ja kopioi avain. Tähän avaimeen viitataan myöhemmin nimellä **Asiakkaan salasana**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
 
 ## <a name="create-and-configure-a-user-account-in-finance-and-operations"></a>Finance and Operationsin käyttäjätilin luominen ja määrittäminen
 Jotta Finance and Operations voisi käyttää Azure AD -sovellustasi, sinun on suoritettava seuraavat määritysvaiheet:
@@ -90,8 +90,8 @@ Sinun on määritettävä sovellus laitteessa muodostaaksesi yhteyden Finance an
 1.  Siirry sovelluksessa kohtaan **Yhteysasetukset**.
 2.  Tyhjennä **Demotila**-kenttä. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  Kirjoita seuraavat tiedot: 
-    + **Azure Active Directory -asiakkaan tunnus** – asiakkaan tunnus saadaan vaiheessa 13 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
-    + **Azure Active Directory -asiakkaan salasana** – Asiakkaan salasana saadaan vaiheessa 13 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
+    + **Azure Active Directory -asiakkaan tunnus** – asiakkaan tunnus saadaan vaiheessa 9 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
+    + **Azure Active Directory -asiakkaan salasana** – Asiakkaan salasana saadaan vaiheessa 11 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
     + **Azure Active Directory -resurssi** – Azure AD -resurssi esittää Finance and Operationsin pääkansion URL-osoitetta. **Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
     + **Azure Active Directory -vuokralainen** – Azure AD -vuokralaista käytetään Finance and Operations -palvelimen kanssa: https://login.windows.net/your-AD-tenant-ID. Esimerkiksi: https://login.windows.net/contosooperations.onmicrosoft.com.
     <br>**Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
@@ -102,15 +102,11 @@ Sinun on määritettävä sovellus laitteessa muodostaaksesi yhteyden Finance an
 Jos laite katoaa tai vaarantuu, laitteen Finance and Operationsin käyttöoikeuden on poistettava. Seuraavat vaiheet kuvaavat suositeltavaa prosessia käyttöoikeuksien poistamiseksi.
 
 1.  Finance and Operationsissa kohtaan **Järjestelmän hallinta** &gt; **Asetukset** &gt; **Azure Active Directory -sovellukset**.
-2.  Poista rivi, joka vastaa laitetta, jonka haluat poistaa. Kirjoita muistiin poistetun laitteen **Asiakastunnus**.
-3.  Kirjaudu sisään Azure classic -portaalissa osoitteessa <https://manage.windowsazure.com>.
-4.  Valitse **Active Directory** -kuvake vasemmalla olevassa valikossa ja valitse sitten haluamasi kansio.
-5.  Valitse yläosan valikosta **Sovellukset**, ja valitse sitten sovellus, jonka haluat määrittää. **Pika-aloitus** -sivu näkyy, ja siinä on kertakirjauksen tiedot ja muut määritystiedot.
-6.  Valitse **Konfiguroi**-välilehti, vieritä alaspäin ja varmista, että sovelluksen **Asiakastunnus** on sama kuin tämän osan vaiheessa 2.
-7.  Napsauta työkalurivin **Poista**-painiketta.
+2.  Poista rivi, joka vastaa laitetta, jonka haluat poistaa. Muista irrotetun laitteen **asiakastunnus**, sillä tarvitset sitä myöhemmin.
+3.  Kirjaudu sisään Azure-portaaliin osoitteessa <https://portal.azure.com>.
+4.  Valitse vasemmassa valikossa **Active Directory** ja varmista, että olet oikeassa hakemistossa.
+5.  Valitse luettelossa ensin **sovelluksen rekisteröinnit** ja sitten määritettävä sovellus. Avautuvalla **asetusten** sivulla on määritystiedot.
+6.  Varmista, että sovelluksen **asiakastunnus** on sama kuin tämän osan vaiheessa 2.
+7.  Valitse yläruudussa **Poista**.
 8.  Valitse vahvistussanomassa **Kyllä**.
-
-
-
-
 

@@ -3,11 +3,12 @@ title: Budjettisuunnittelun integrointi toisten moduulien kanssa
 description: Budjettisuunnitelmia voidaan muodostaa useista eri resursseista. Kausittaisten prosessien peruselementit ovat samat kaikille resursseille.
 author: twheeloc
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetPlanGenerate
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7663453ddf87bcb43d2f19ebec3c9bda90eda884
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: f50e58d63a9db4d6a8b5390174e2c7b87970717d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -71,7 +72,7 @@ Monista **Kohde**-välilehden kentistä tulee muokattavia tai vain luku -muotois
 
 ### <a name="generation-rules"></a>Muodostussäännöt
 
-Kolme kenttää tarjoaa lisätoimintoja: **Kerroin**, **Minimi**, ja **Pyöristys****-sääntö**. 
+Kolme kenttää tarjoaa lisätoimintoja: **Kerroin**, **Minimi**, ja **Pyöristys** **-sääntö**. 
 
 **Kerroin**-kentän arvo kerrotaan lähdesummalla budjettisuunnitelman summan määrittämiseksi. Voit sitten tehdä korjauksia budjettisuunnitelman rivejä luodessasi. Voit esimerkiksi kirjoittaa **1,03** kolmen prosentin lisäystä varten. Kertoimen täytyy olla positiivinen luku. 
 
@@ -110,7 +111,7 @@ Lähteessä valittu budjettisuunnitteluprosessi ja budjettisuunnitelman skenaari
 
 Voit käyttää projektibudjetteja lähteenä valitsemalla ennustemallin, joka sisältää projektibudjetin summat. Muista, että projektibudjetit luovat projektiennustetapahtumia, kun ne hyväksytään.
 
-Jos haluat valita vain kulut tai tuotot budjettisuunnitelman riveille, käytä suodatinta valitaksesi **Budjetin päivitykset: Summan tyyppi = Kulu**. Jos haluat valita vain yhden ennustetyypin, käytä suodatinta valitaksesi **Budjetin päivitykset: Tapahtumatyyppi = *xxx***. 
+Jos haluat valita vain kulut tai tuotot budjettisuunnitelman riveille, käytä suodatinta valitaksesi **Budjetin päivitykset: Summan tyyppi = Kulu**. Jos haluat valita vain yhden ennustetyypin, valitse suodattimella **Budjetin päivitykset: Tapahtumatyyppi = *xxx***. 
 
 Budjettisuunnitelman skenaarion muodostamiseen voi käyttää vain yhtä ennustemallia. Jos suoritat prosessin yhdelle ennustemallille, teet sitten päivityksen ja yrität määrittää toisen mallin, ensimmäinen malli korvataan, jos kyseessä ovat samat projekti- ja kirjanpitotilit. Jos haluat luoda budjettisuunnitelman skenaarion useammasta kuin yhdestä ennustemallista, muodosta ne eri budjettisuunnitelman skenaarioiksi ja käytä kohdistusvaihtoehtoja lisätäksesi yhdistääksesi ne toisessa skenaariossa. 
 
