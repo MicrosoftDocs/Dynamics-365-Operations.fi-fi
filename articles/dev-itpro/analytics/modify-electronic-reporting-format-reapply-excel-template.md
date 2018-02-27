@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="modify-an-electronic-reporting-format-by-reapplying-a-microsoft-excel-template"></a>Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Microsoft Excel -mallia uudelleen
+
+[!include[banner](../includes/banner.md)]
+
 Sähköistä raportointityökalua (ER) käytetään luotaessa liiketoiminta-asiakirjoja sähköisessä muodossa. Voit luoda liiketoiminta-asiakirjan, kun luot ensin ER-muodon ja käytät ER-suunnitteluohjelmaa liiketoiminta-asiakirjan asettelun ja asiakirjan sisällön määrittämisessä. Tämän jälkeen voit suorittaa ER-muodon ja luoda liiketoiminta-asiakirjan.
 
 ER-työkalun avulla voi luoda liiketoiminta-asiakirjoja, kuten Microsoft Excel -tiedostoja. Voit käyttää Excel-asiakirjaa näiden asiakirjojen mallina. Voit määrittää asiakirjan asettelun ER-suunnitteluohjelmassa tuomalla sen Excel-asiakirjan sisällön, jota haluat käyttää mallina määritetyssä ER-muodossa. Voit toistaa tämän tehtäväoppaan **OPENXML-muotoisten raporttimääritysten suunnittelu -tehtäväopas** (7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677) -liiketoimintaprosessin osa), kun haluat lisätietoja tai harjoitella toimintoja.
