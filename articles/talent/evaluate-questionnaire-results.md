@@ -19,14 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 2fda866574ddb5862be3b3eeb60a28d650fb1c68
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 7ae83192924a790451d8da511638c7fc1cd92f90
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a><span data-ttu-id="8fb8f-103">Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen</span><span class="sxs-lookup"><span data-stu-id="8fb8f-103">View and evaluate the results of a questionnaire</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="8fb8f-104">Tässä aiheessa kerrotaan, miten vastaajien täyttämien kyselylomakkeiden tuloksia voidaan tarkastella ja arvioida.</span><span class="sxs-lookup"><span data-stu-id="8fb8f-104">This topic explains how you can view and evaluate the results of questionnaires that respondents complete.</span></span> 
 
