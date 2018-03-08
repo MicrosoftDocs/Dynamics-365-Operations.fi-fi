@@ -25,6 +25,9 @@ ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="attract-overview"></a>Attract-sovelluksen yleiskatsaus
+
+[!include[banner](includes/banner.md)]
+
 Attract-sovellus sisältää uuden työvoiman palkkaamiseen tarkoitettuja toimintoja. Työnhakijoita voi lisätä avoimiin tehtäviin ja siirtää vaiheesta vaiheeseen, kunnes tälle annetaan työtarjous tai hakemus hylätään. Työnhakijaa siirretään kussakin vaiheessa tehtävien välillä, kuten seulontapuhelut, arvioinnit tai haastattelujen sopiminen. Kun hakemus on jätetty, työnhakija saa kutsun sähköpostiinsa, jossa tätä pyydetään kirjautumaan Attract-sovellukseen, jossa he voivat seurata tehtävän ja hakemuksensa tilaa sekä vastata heille määrättyihin tehtäviin.
 
 Attract-sovellus sisältää seuraavat ominaisuudet:

@@ -25,6 +25,9 @@ ms.lasthandoff: 12/01/2017
 
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent -sovelluksen toimintojen laajentaminen
+
+[!include[banner](includes/banner.md)]
+
 Jos olet luonut jonkin Microsoft PowerApps -sovelluksen, voit käynnistää sovelluksen Microsoft Dynamics 365 for Talent -sovelluksen linkin avulla. Voit määrittää sovellusten käyttöoikeuden, kun olet määrittänyt tietyt tiedot Talent-sovelluksen määrityssivulla. Voit avata sivun **Järjestelmän hallinta** -työtilassa.
 
 ## <a name="configuring-embedded-powerapps-within-talent"></a>Upotetun PowerApps-sovelluksen määrittäminen Talent-sovelluksessa

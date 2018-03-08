@@ -26,6 +26,8 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="create-an-engaging-onboarding-experience"></a>Osallistavan perehdyttämiskokemuksen luominen
 
+[!include[banner](includes/banner.md)]
+
 Kun se tehdään tehokkaasti, perehdyttäminen auttaa uusia työntekijöitä toimimaan tehokkaammin uudessa roolissaan. Perehdyttäminen voi auttaa uusia työntekijöitä oppimaan uuden roolinsa tavallista nopeammin ja tarkemmin, jonka ansiosta he voivat muodostaa suhteita nopeammin, jotka auttavat heitä onnistumaan. Tehottomasti toteutettu perehdyttäminen voi saada työntekijät kyseenalaistamaan organisaatioosi liittymistä. Gartner toteutti vuonna 2014 tutkimuksen, jossa todettiin, että lähes kolmasosa 1005 vastaajasta, jotka lähtivät työstään ensimmäisen kuuden kuukauden aikana antoivat syyksi sen, että heidän johdolta saamansa ohjeet eivät olleet selkeitä, koulutus ei ollut tehokasta tai koska he eivät muodostaneet tehokkaita suhteita uuteen ympäristöönsä.
 
 ## <a name="have-an-onboarding-program-in-place"></a>Perehdyttämisohjelman käyttäminen

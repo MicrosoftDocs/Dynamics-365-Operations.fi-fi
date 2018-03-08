@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="design-a-questionnaire"></a>Lomakkeen suunnitteleminen
 
+[!include[banner](includes/banner.md)]
+
 Tässä aiheessa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen. 
 
 Huolellisesti suunnittelu kyselylomake voi parantaa keräämiesi tietojen laatua. Huolellisen suunnittelun avulla voit valita kyselylomakkeeseen kulloinkin sopivat vaihtoehdot. Seuraavat seikat auttavat tehokkaan kyselylomakkeen suunnittelemisessa:

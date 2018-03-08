@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="welcome-to-dynamics-365-for-retail"></a>Tervetuloa Dynamics 365 for Retail -ohjelmaan
 
+[!include[banner](includes/banner.md)]
+
 Microsoft Dynamics 365 for Retail on kattava vähittäismyyntiratkaisu, jonka avulla kaupankäynti on yhtenäistä kaikissa kanavissa. Se käsittää myynnin, mobiilikäytön, tiedot ja tuottavuuden. Näiden avulla vähittäismyyjät ja työntekijät voivat saada enemmän aikaan pilvipalvelun ja mobiilikäytön avulla. Retail sisältää useiden eri liiketoimintaprosessien kattavan tuen. Prosesseihin kuuluvat esimerkiksi myynninedistämistapahtuman, varaston ja kanavien hallinnan ominaisuudet. Se mahdollistaa myös kokonaisvaltaiset asiakaskokemukset kaikilla kosketuspisteillä.
 
 > [!NOTE] 

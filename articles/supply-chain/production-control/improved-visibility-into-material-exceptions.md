@@ -26,6 +26,8 @@ ms.lasthandoff: 12/14/2017
 ---
 # <a name="visibility-into-material-exceptions"></a>Materiaalipoikkeusten näkyvyys
 
+[!include[banner](../includes/banner.md)]
+
 **Tuotannon hallinta** -työtilassa on kolme ruutua, jotka parantavat tuotanto- ja erätilausten materiaalipoikkeusten näkyvyyttä:
 
 - Vapauttamattomat materiaalirivit, jotka vaativat huomiota

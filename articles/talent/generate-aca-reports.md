@@ -25,6 +25,9 @@ ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="generate-affordable-care-act-reports"></a>Affordable Care Act -raporttien luominen
+
+[!include[banner](includes/banner.md)]
+
 Toiminnon tarkoituksena on auttaa niitä työnantajia, joiden on seurattava lomakkeissa 1095-B- ja 1095-C-ilmoitettavia tietoja. Näitä lomakkeita käytetään Affordable Care Act -lain **työnantajan valtakirjaosassa**. Huomaa, että toiminto on käytössä vain yhdysvaltalaisissa yrityksissä.
 
 ## <a name="getting-started"></a>Aloittaminen

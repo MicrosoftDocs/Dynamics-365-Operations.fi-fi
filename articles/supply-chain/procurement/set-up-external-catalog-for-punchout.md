@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen
 
+[!include[banner](../includes/banner.md)]
+
 Ulkoisen luettelon avulla voit varmistaa, että Dynamics 365 for Finance and Operations Enterprise edition heinäkuun 2017 päivityksellä myöhemmin käsiteltävät tuote- ja hintatiedot ovat paikkansapitäviä ja ajan tasalla. Varasto-ottoehdotus voidaan hyväksyä ja muuttaa ostotilaukseksi ja tilaus voidaan lähettää toimittajalle.
 
 Kun ulkoinen luettelo on määritetty ja työntekijä valmistelee varasto-ottoehdotusta, tapahtuma voidaan ohjata ulkoiselle sivustolle, ulkoiseen luetteloon ja palauttaa ostoskori, joka on luotu ulkoisessa sivustossa. Tämän viestintä perustuu cXML-protokollaan ja se pitää määrittää osto- ja myyntiorganisaation järjestelmien välille.

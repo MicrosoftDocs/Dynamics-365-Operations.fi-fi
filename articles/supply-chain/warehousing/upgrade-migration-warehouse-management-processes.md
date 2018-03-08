@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="migrate-products-and-warehouse-management-from-ax-2012-to-finance-and-operations"></a>Tuote- ja varastonhallinnan päivittäminen AX 2012:sta Finance and Operationsiin
 
+[!include[banner](../includes/banner.md)]
+
 Tässä ohjeaiheessa esitetään yhteenveto tuotteen ja varastonhallinnan siirtoasetuksista MicrosoftDynamics 365 for Finance and Operations Enterprise edition -versiossa.
 
 <a name="introduction"></a>Johdanto

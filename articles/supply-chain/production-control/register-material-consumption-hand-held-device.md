@@ -27,6 +27,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="register-material-consumption-using-a-mobile-device"></a>Materiaalikulutuksen rekisteröinti mobiililaitteella
+
+[!include[banner](../includes/banner.md)]
+
 Tässä ohjeaiheessa käsitellään työnkulkua, jolla tuotannossa kulutettavat raaka-aineet voidaan rekisteröidä kämmenlaitteella.
 
 <a name="introduction"></a>Johdanto

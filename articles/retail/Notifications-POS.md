@@ -27,6 +27,8 @@ ms.lasthandoff: 12/20/2017
 
 # <a name="display-notifications-in-point-of-sale"></a>Ilmoitusten näyttäminen myyntipisteessä
 
+[!include[banner](includes/banner.md)]
+
 Nykyaikaisessa vähittäismyyntiympäristössä myyjillä on monenlaisissa tehtäviä, kuten asiakaspalvelua, tapahtumien kirjaamista, inventointia ja tilausten vastaanottamista myymälässä. Myyntipisteen asiakasohjelma auttaa myyjiä tekemään nämä tehtävät ja paljon muuta – samassa sovelluksessa. Koska myyjien on tehtävä päivän aikana monenlaisia tehtäviä, heille on ehkä erikseen ilmoitettava, jos heidän on hoidettava jokin tehtävä. Myyntipisteen ilmoituskehikko ratkaisee tämän ongelman niin, että jälleenmyyjät voivat määrittää roolipohjaisia ilmoituksia. Dynamics 365 for Retailin sovelluspäivityksessä 5 nämä ilmoitukset voidaan määrittää vain myyntipistetoiminnoille.
 
 Tällä hetkellä järjestelmässä voi näyttää tilauksen täyttämistoiminnon ilmoituksia. Kehikko on kuitenkin suunniteltu laajennettavaksi, joten jatkossa kehittäjät voivat muodostaa ilmoituskäsittelijän mille tahansa toiminnolle ja näyttää ilmoitukset myyntipisteessä.  

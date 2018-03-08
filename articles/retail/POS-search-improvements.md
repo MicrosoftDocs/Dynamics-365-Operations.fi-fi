@@ -28,6 +28,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Yleiskatsaus tuote- ja asiakashauista myyntipisteessä
 
+[!include[banner](includes/banner.md)]
+
 Modern Point of Sale (MPOS) ja pilvimyyntipiste (CPOS) sisältävät helppokäyttöisen hakutoiminnon, jolla työntekijät voivat hakea tuotteita ja asiakkaita nopeasti. Hakukenttä on aina käytettävissä MPOS- ja CPOS-myyntipisteiden ylälaidassa, jotta työntekijät voivat löytää tuotteet ja asiakkaat nopeasti.
 
 Työntekijät voivat hakea tuotteita myymälään sekä muihin yrityksen myymälöihin liitetyistä valikoimista ja luetteloista. Tämän ansiosta kassalta voi myydä ja palauttaa tuotteita, jotka eivät kuulu myymälän valikoimaan. Vastaavasti työntekijät voivat etsiä asiakkaita, jotka on liitetty joko nykyiseen myymälään tai mihin tahansa muuhun yrityksen myymälään. Lisäksi työntekijät voivat hakea asiakkaita, jotka liittyvät ylätason organisaation toiseen yritykseen.

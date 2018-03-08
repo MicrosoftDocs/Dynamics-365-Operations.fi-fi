@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="questionnaires"></a>Kyselylomakkeet
 
+[!include[banner](includes/banner.md)]
+
 Tässä aiheessa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia. 
 
 Voit mukauttaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin erilaisilla toiminnoilla lomakkeen tarpeitasi vastaavaksi. Kyselylomakkeen avulla voit esimerkiksi

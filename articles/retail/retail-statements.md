@@ -28,6 +28,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="retail-statements"></a>Vähittäismyynnin laskelmat
+
+[!include[banner](includes/banner.md)]
+
 Microsoft Dynamics 365 for Retailissa laskelman kirjausprosessia käytetään seuraamaan pilvimyyntipisteen tai Modern POS:n (MPOS) tapahtumia. Laskelman kirjausprosessi hakee myyntipistetapahtumajoukon Headquarters (HQ) -asiakasohjelmaan jakeluaikataulun avulla. **Vähittäismyynnin parametrit**- ja **Myymälät**-sivuilla määritetyillä parametreilla valitaan yksittäisiin laskelmiin haettavat tapahtumat.  
 
 Seuraavassa kuvassa on laskelman kirjausprosessi. Tässä prosessissa myyntipisteeseen tallennetut tapahtumat lähetetään asiakkaalle Retail-ajastuksen avulla. Kun asiakas on vastaanottanut tapahtumat, voit luoda, laskea ja kirjata myymälän tapahtumaotteen. 
