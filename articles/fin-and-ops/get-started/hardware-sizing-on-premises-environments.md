@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Laitteiston koon määrittäminen paikallisissa ympäristöissä
+
+[!include[banner](../includes/banner.md)]
+
 Tutustu ennen laitteiston ja infrastruktuurin koon määrittämistä paikallisiin ympäristöihin [järjestelmävaatimuksiin](system-requirements.md) sekä [asennus- ja käyttöönotto-ohjeisiin](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md), sillä saat niiden avulla selkeän käsityksen perustana olevasta infrastruktuurista. 
 
   **Huomautus:** Perehdy huolellisesti järjestelmän asetuksen parhaisiin käytäntöihin, jotta järjestelmä toimisi mahdollisimman hyvin. 

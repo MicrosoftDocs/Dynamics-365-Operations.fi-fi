@@ -27,6 +27,8 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 
+[!include[banner](../includes/banner.md)]
+
 Tässä aiheessa näytetään, mitkä ominaisuuksista ovat saatavilla seuraavissa tuotteissa:
 
 + Dynamics 365 for Finance and Operations, Enterprise Edition (pilvi)

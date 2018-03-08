@@ -29,6 +29,8 @@ ms.lasthandoff: 10/17/2017
 
 # <a name="demo-data-screen-layouts-in-mposcpos"></a>MPOS- ja CPOS-myyntipisteiden demotietojen näyttöasettelut
 
+[!include[banner](includes/banner.md)]
+
 Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 for Retail -sovelluksen myyntipisteiden käyttökokemusten demotietojoukon näyttöasetteluista.
 
 ## <a name="overview"></a>Yleiskuvaus

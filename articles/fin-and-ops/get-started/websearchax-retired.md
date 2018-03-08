@@ -27,6 +27,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="websearchax-retired"></a>WebSearchAX on poistettu käytöstä
 
+[!include[banner](../includes/banner.md)]
+
 Olemme poistaneet WebSearchAX-sivun käytöstä. Käytä sen sijaan haluamasi hakukoneen sivustohakua.  Esimerkki: 
 
 site:technet.microsoft.com dynamics ax 2012 "hakuehto"

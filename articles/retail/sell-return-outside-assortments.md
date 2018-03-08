@@ -27,6 +27,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="sell-and-return-products-outside-of-an-assortment"></a>Valikoiman ulkopuolisten tuotteiden myyminen ja palauttaminen
+
+[!include[banner](includes/banner.md)]
+
 Jälleenmyyjän yleinen skenaario on tuotteiden myyminen asiakkaalle tai palautusten hyväksyminen asiakkaalta, vaikka tiettyjä tuotteita ei olisi liikkeessä (ts. tuotevalikoimaa ei ole myymälässä).
 Seuraavassa on joitakin tyypillisiä skenaarioita:
 

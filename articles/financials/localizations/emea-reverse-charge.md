@@ -24,6 +24,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="reverse-charge-vat"></a>Käänteinen verovelvollisuus
+
+[!include[banner](../includes/banner.md)]
+
 Tässä ohjeaiheessa kerrotaan yleisesti eurooppalaisten maiden käänteisen arvonlisäveron määrittämisestä.
 
 Käänteinen vero on veromalli, jossa ALV:n kirjanpito- ja raportointivastuu siirtyy myyjältä tavaran ja/tai palvelun ostajalle. Tämän vuoksi tavaroiden ja/tai palvelujen vastaanottaja ilmoitta ALV-ilmoituksessa sekä maksettavan veron (myyjän roolissa) että vähennettävän veron (ostajan roolissa)

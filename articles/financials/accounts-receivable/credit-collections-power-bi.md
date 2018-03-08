@@ -26,6 +26,8 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="credit-and-collections-management-power-bi-content"></a>Luotonvalvonnan hallinta – Power BI -sisältö
 
+[!include[banner](../includes/banner.md)]
+
 Tässä ohjeaiheessa kerrotaan, mitä **Luotonvalvonnan hallinta** – Power BI -sisältö sisältää. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
 ## <a name="overview"></a>Yleiskuvaus

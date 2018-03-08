@@ -62,7 +62,7 @@ Seuraavissa ohjeissa käsitellään mukautetun kentän luontiprosessi ja kyseise
 10.   Lisää merkityt kentät valitulle lomakealueelle valitsemalla **Lisää**. 
 11.   **Valinnainen:** Ota **Siirrä**-tila käyttöön mukauttamisen työkalurivillä, jos haluat siirtää uudet kentät paikalleen valitulle alueelle. Kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md) on lisätietoja, miten erilaisten mukauttamistoimintojen avulla lomakkeen voi optimoida omaa käyttöä varten.  
 
-### <a name="sharing-custom-fields-with-other-users"></a>Mukautettujen kenttien jakaminen muiden käyttäjien kanssa
+## <a name="sharing-custom-fields-with-other-users"></a>Mukautettujen kenttien jakaminen muiden käyttäjien kanssa
 Kun olet luonut mukautetun kentän ja se näkyy lomakkeessa, haluat ehkä tuoda uuden kentän sisältävän päivitetyn sivunäkymän muiden järjestelmän käyttäjien saataville. Sen voi tehdä kahdella tavalla käyttämällä tuotteen mukauttamisominaisuuksia:
 
 -   Suosituksena on pyytää järjestelmänvalvojaa toimittamaan mukautus kaikille käyttäjille tai osalle käyttäjiä. Lisätietoja on kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md). 

@@ -29,6 +29,8 @@ ms.lasthandoff: 02/01/2018
 
 # <a name="task-recorder-and-help-for-pos"></a>Myyntipisteen tehtävien tallennustoiminto ja ohje
 
+[!include[banner](includes/banner.md)]
+
 Tässä ohjeaiheessa kuvataan, miten tehtävien tallennustoimintoa käytetään Retail Modern POS -sovelluksessa ja pilvimyyntipisteessä.
 
 <a name="overview"></a>Yleiskuvaus
