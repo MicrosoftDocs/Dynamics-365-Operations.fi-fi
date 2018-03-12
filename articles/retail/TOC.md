@@ -183,10 +183,11 @@
 ### [MPOS-arkkitehtuuri](dev-itpro/retail-modern-pos-architecture.md)
 ### [Retail-verkkokaupan julkaisuarkkitehtuuri](dev-itpro/retail-online-store-publishing-architecture.md)
 ### [Retail-kanavan suorituskyvyn Power BI -sisältö](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [PA-DSS-sertifikaatti (maksusovelluksen tietoturvastandardi)](dev-itpro/PA-DSS-Certification.md)
 
 ## Käyttöönotto ja hotfix-korjaukset
-### [Retail-vähittäismyyntilaitteen yleiskatsaus](dev-itpro/retail-store-system-begin.md)
-### [Retail-vähittäismyyntilaitteen määritykset ja asentaminen](dev-itpro/retail-store-scale-unit-configuration-installation.md)
+### [Retail Store Scale Unit -vähittäismyyntilaitteen yleiskatsaus](dev-itpro/retail-store-system-begin.md)
+### [Retail Store Scale Unit -vähittäismyyntilaitteen määritykset ja asentaminen](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Retail Modern POS:n määritykset ja asentaminen](retail-modern-pos-device-activation.md)
 ### [Retail-tilien ja laitteiden hallinta pääkonttorista](set-up-activation-accounts-validate-devices-hq.md)
 ### [Retail POS -laitteen aktivointi](dev-itpro/retail-device-activation.md)
@@ -221,7 +222,7 @@
 ## Retail Serverin laajennettavuus
 ### [Retail Server OData -ohjaimen laajentaminen](dev-itpro/extend-retail-server-odata-controller.md)
 ### [Web API- ja OData-ohjaimet](dev-itpro/odata-controllers-api.md)
-### [Retail Serverin asiakkaan ja kuluttajan API-rajapinnat](dev-itpro/retail-server-customer-consumer-api.md)
+### [Retail Serverin asiakkaan ja kuluttajan ohjelmointirajapinnat](dev-itpro/retail-server-customer-consumer-api.md)
 ### [Metatietojen laajentaminen](dev-itpro/extend-metadata.md)
 ### [POS:n offline-tilan tukeminen laajentamalla kaupankäyntiympäristöä](dev-itpro/call-crt-service-offline.md)
 
