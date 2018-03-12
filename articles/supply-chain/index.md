@@ -1,9 +1,9 @@
 ---
 title: Toimitusketjun hallinnan kotisivu
-description: "Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista."
+description: "Tällä sivulla on luettelo Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 02/15/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
-ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
+ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
+ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/21/2018
 
 ---
 
@@ -40,7 +40,7 @@ Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations, 
 Saat lisätietoja valitsemalla ominaisuusalueen.
 
 - [Kustannuslaskenta](../financials/cost-accounting/cost-accounting-home-page.md)
-- [Kustannushintojen hallinta](cost-management/costing-sheets.md)  
+- [Kustannushintojen hallinta](cost-management/cost-management-home-page.md)  
 - [Varastoinninhallinta](inventory/inventory-home-page.md)
 - [Pääsuunnittelu](master-planning/master-planning-home-page.md)
 - [Hankinta](procurement/procurement-sourcing-overview.md)
@@ -56,6 +56,7 @@ Nämä lyhyet videot sisältävät lisätietoja Microsoft Dynamics 365 for Finan
 
 -  [Prospektista käteiseksi -integrointi](https://youtu.be/AVV9x5x-XCg) 
 -  [Optimointityökalu](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Konfiguroinnin kopioiminen varaston hallintamallista](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 Nämä lyhyet videot sisältävät lisätietoja Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version (heinäkuu 2017) uusista ominaisuuksista.
 
@@ -67,17 +68,36 @@ Nämä lyhyet videot sisältävät lisätietoja Microsoft Dynamics 365 for Finan
 
 Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -sovelluksen edellisen version ominaisuuksia, mutta samoja käsitteitä käytetään yhä. Myös menettelyt ovat samanlaisia nykyisessä versiossa. 
 
--  <a href="https://youtu.be/zotrj3SbCl4">Microsoft Dynamics AX:n tuotekonfiguraattori</a>
--  <a href="https://youtu.be/7v8BPmEs9Dg">Pääsuunnittelu – vihjeitä suorituskyvyn vianmääritykseen</a>
--  <a href="https://youtu.be/RLXybx20B5o">Apua! Tarvesuunnittelu toimii hitaasti.</a>
--  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Saapuvien ASN-ilmoitusten käsittely varastonhallinnassa</a> 
--  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Hyödynnä varastonhallintajärjestelmää täysimääräisesti</a>
--  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Edistynyt R3-varastonhallinta – saapuvien käsittely ja min/max-täydennys</a>
--  <a href="https://youtu.be/Og0gLlVp7jA">Edistynyt R3-varastonhallinta – lähtevien käsittely sekä täydennys kysynnän mukaan</a>
--  <a href="https://youtu.be/5w1MngVchBA">Uuden Microsoft Dynamics AX 2012 R3 -varastonhallinnan etiketit</a>
--  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: edistynyt varastonhallinta – prosessituotanto</a>
--  <a href="https://youtu.be/y1jrd3A_k70">Työvaiheiden ja tehtävien alihankinta tuotannossa</a>
--  <a href="https://youtu.be/jgmTgJIgEFQ">Uuden Microsoft Dynamics AX:n kuljetustenhallinta</a>
+**Kustannushintojen hallinta**
+
+-  [Kustannushintojen hallinnan yhteenveto](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+
+**Pääsuunnittelu**
+
+-  [Laajenna kysynnän ennustetoimintoa](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Pääsuunnittelu – vihjeitä suorituskyvyn vianmääritykseen](https://youtu.be/7v8BPmEs9Dg)
+-  [Apua! Tarvesuunnittelu toimii hitaasti.](https://youtu.be/RLXybx20B5o)
+
+**Tuotetietojen hallinta**
+
+-  [Microsoft Dynamics AX:n tuotekonfiguraattori](https://youtu.be/zotrj3SbCl4)
+
+**Varastonhallinta** 
+
+-  [Saapuvien ASN-ilmoitusten käsittely varastonhallinnassa](https://mix.office.com/watch/wpf78tr7rjuh)  
+-  [Hyödynnä varastonhallintajärjestelmää tehokkaasti](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [Edistynyt R3-varastonhallinta – saapuvien käsittely ja min/max-täydennys](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [Edistynyt R3-varastonhallinta – lähtevien käsittely sekä täydennys kysynnän mukaan](https://youtu.be/Og0gLlVp7jA)
+-  [Uuden Microsoft Dynamics AX 2012 R3 -varastonhallinnan etiketit](https://youtu.be/5w1MngVchBA)
+-  [Dynamics AX 2012 R3: edistynyt varastonhallinta – prosessituotanto](https://www.youtube.com/embed/QUxXUrN-7n4)
+
+**Tuotannonhallinta**
+
+-  [Työvaiheiden ja tehtävien alihankinta tuotannossa](https://youtu.be/y1jrd3A_k70)
+
+**Kuljetustenhallinta**
+
+-  [Kuljetustenhallinta (TMS) uudessa Microsoft Dynamics AX:ssä](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogit
 <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX:n tuotannon tutkimus- ja kehitysryhmän blogissa</a> ja <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogissa </a>on useita valmistusta ja toimitusketjun hallintaa käsitteleviä aiheita. Useimmat kirjoitukset koskevat Finance and Operations -sovelluksen aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa. 

@@ -9,9 +9,9 @@
 ## [Sovelluspino ja palvelinarkkitehtuuri](dev-tools/application-stack-server-architecture.md)
 ## [Kokeiluversion hankkiminen](dev-tools/get-evaluation-copy.md)
 ## [Sovelluksen tilaaminen](dev-tools/sign-up-preview-subscription.md)
-## [Esiintymien käyttäminen](dev-tools/access-instances.md)
-## [Kehityksen järjestelmävaatimukset](dev-tools/development-system-requirements.md)
-## Kalustonhallinnan esimerkkisovellus
+## [Kehitysympäristön käyttöönottaminen ja käyttö](dev-tools/access-instances.md)
+## [Kehitysympäristön järjestelmävaatimukset](dev-tools/development-system-requirements.md)
+## Kuljetuskaluston hallinnan esimerkkisovellus
 ### [Kalustonhallinnan esimerkkisovellus](dev-tools/fleet-management-sample.md)
 ### [Kalustonhallinnan esimerkkisovelluksen yleiskatsaus](dev-tools/introduction-fleet-management-sample.md)
 ## Visual Studio Tools
@@ -359,10 +359,10 @@
 #### [ValueDesign-tyyppi](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md)
 #### [ValueMetadata-tyyppi](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
-# Tietojen integraatio
-## [Integraatiomallit](data-entities/integration-overview.md)
+# Tietojen integrointi
+## [Valitse tietojen integroinnin (tuonti/vienti) strategia](data-entities/integration-overview.md)
 
-## Tietojen integraation ohjelmointirajapinnat
+## Tietojen integroinnin ohjelmointirajapinnat
 ### [Tietojen hallintapaketin API](data-entities/data-management-api.md)
 ### [Palvelujen päätepisteet](data-entities/services-home-page.md)
 #### [Palvelun todennuksen vianmääritys](data-entities/troubleshoot-service-authentication.md)
@@ -381,12 +381,12 @@
 
 ### [Tietojen integrointi Common Data Service -palvelua käyttäen](data-entities/data-integration-cds.md) 
 #### [Myyntimahdollisuudesta maksutapahtumaan -skenaarion määrittäminen](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Finance and Operationsin tuotteiden synkronointi Salesin tuotteisiin](../supply-chain/sales-marketing/products-template-mapping.md)
-##### [Salesin asiakkaiden synkronointi Finance and Operationsin asiakkaisiin](../supply-chain/sales-marketing/accounts-template-mapping.md)
-##### [Salesin yhteyshenkilöiden synkronointi Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](../supply-chain/sales-marketing/contacts-template-mapping.md)
-##### [Myyntitarjouksien otsikoiden ja rivien synkronointi Salesista Finance and Operationsiin](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-##### [Myyntitilauksien otsikoiden ja rivien synkronointi Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-##### [Myyntilaskujen otsikoiden ja rivien synkronointi Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Finance and Operationsin tuotteiden synkronointi Salesin tuotteisiin](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Salesin asiakkaiden synkronointi Finance and Operationsin asiakkaisiin](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Salesin yhteyshenkilöiden synkronointi Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Myyntitarjouksien otsikoiden ja rivien synkronointi Salesista Finance and Operationsiin](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Myyntitilauksien otsikoiden ja rivien synkronointi Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Myyntilaskujen otsikoiden ja rivien synkronointi Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Salesin asiakkaiden synkronointi suoraan Finance and Operationsin asiakkaisiin](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
@@ -450,9 +450,11 @@
 ### [Tarkistukset, oletukset ja yhdistämättömät kentät](data-entities/validations-defaults-unmapped-fields.md)
 ### [Suojaus ja tietoyksiköt](data-entities/security-data-entities.md)
 
-## [Oman tietokantasi tuominen mukaan](analytics/export-entities-to-your-own-database.md)
+## [Oman tietokannan tuonti](analytics/export-entities-to-your-own-database.md)
 
-# [Jatkuvan toimituksen aloitussivu](dev-tools/continuous-delivery-home-page.md)
+## [GDPR-tietopyyntöihin vastaamisen resurssit](gdpr/gdpr-home-page.md)
+
+# [Jatkuva toimitus -aloitussivu](dev-tools/continuous-delivery-home-page.md)
 ## [Kehitys ja jatkuva toimitus – usein kysytyt kysymykset](dev-tools/continuous-delivery-faq.md)
 ## [Testipakettien jättäminen pois koonnin tuotoksesta](dev-tools/exclude-test-packages.md)
 ## [Kolmannen osapuolen mallien ja suorituspalvelupakettien hallinta lähteenhallinnan avulla](dev-tools/manage-runtime-packages.md)
@@ -504,7 +506,7 @@
 # Käyttöönotto
 ## [Esittely-ympäristön käyttöönotto](deployment/deploy-demo-environment.md)
 
-## Käyttöönotto pilvipalveluna
+## Pilvikäyttöönotto
 ### [Azure Resource Manager -perehdytys](deployment/arm-onboarding.md)
 ### [Azure ExpressRoute ja Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
 
@@ -515,19 +517,20 @@
 ### [Paikallisen projektin luominen](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Asennus ja käyttöönotto paikallisissa ympäristöissä](deployment/setup-deploy-on-premises-environments.md)
 ### [Mukautettujen mallien kehittäminen ja käyttöönottaminen paikallisissa ympäristöissä](deployment/develop-deploy-custom-models-on-premises.md)
+### [Käänteisen välityspalvelimen määrittäminen paikalliseen ympäristöön](deployment/onprem-reverseproxy.md)
 ### [Päivitysten soveltaminen paikalliseen käyttöönottoon](deployment/apply-updates-on-premises.md)
-### [Paikallisen käyttöönoton ottaminen uudelleen käyttöön](deployment/redeploy-on-prem.md)
+### [Paikallisen ympäristön uudelleenasennus](deployment/redeploy-on-prem.md)
 ### [Paikallisen edustajan päivittäminen](lifecycle-services/update-local-agent.md)
 ### [Ympäristön määrittäminen uudelleen](lifecycle-services/reconfigure-environment.md)
 ### [Paikallisen Dynamics 365 for Finance and Operations, Enterprise edition -version vianmääritys](deployment/troubleshoot-on-prem.md)
 
 ## Mukautetun koodin käyttöönottaminen
 ### [Käyttöönotettavan paketin luominen](deployment/create-apply-deployable-package.md)
-### [Päivitysten ottaminen käyttöön pilviympäristölle](deployment/apply-deployable-package-system.md)
-### [Käyttöönotettavan paketin asentaminen](deployment/install-deployable-package.md)
-### [Pakettisovelluksen vianmääritys](deployment/deployable-package-troubleshooting.md)
+### [Päivitysten käyttöönotto pilviympäristölle](deployment/apply-deployable-package-system.md)
+### [Käyttöönottopaketin asentaminen](deployment/install-deployable-package.md)
+### [Paketin suorituksen vianmääritys](deployment/deployable-package-troubleshooting.md)
 
-# [Päivitys ja siirto](migration-upgrade/upgrade-home-page.md)
+# [Päivitykset ja hotfix-korjaukset](migration-upgrade/upgrade-home-page.md)
 ## [AX 2012:n päivittäminen Dynamics 365 for Finance and Operations -sovellukseen](migration-upgrade/upgrade-overview-2012.md)
 ### [AX 2012 -päivitys – suunnitteleminen päivitysanalyysin työkalun avulla](migration-upgrade/upgrade-analyzer-tool.md)
 ### [AX 2012 -päivitys – työmäärän arvioiminen koodin päivityspalvelun avulla](migration-upgrade/analyze-code-upgrade.md)
@@ -555,25 +558,28 @@
 ### [Jakomallit](dev-tools/model-split.md)
 ### [Mallien välisten riippuvuuksien ratkaisu valtuutettujen viittausten avulla](migration-upgrade/delegates-migration.md)
 
-
-## Päivittäminen viimeisimpään päivitykseen
+## Päivittäminen viimeisimpään päivitykseen (pilvi)
 ### [Uusinta päivitystä koskeva päivitysprosessi](migration-upgrade/upgrade-latest-update.md)
-### [Käyttöikäkäytäntö](migration-upgrade/versions-update-policy.md)
-### [Uusimman ympäristöpäivityksen ottaminen käyttöön ympäristölle](migration-upgrade/upgrade-latest-platform-update.md)
+### [Elinkaarikäytäntö](migration-upgrade/versions-update-policy.md)
+### [Uusimman ympäristöpäivityksen käyttöönotto](migration-upgrade/upgrade-latest-platform-update.md)
 ### [Dynamics-ympäristön päivittäminen elokuun 2016 julkaisuun](migration-upgrade/update-platform-each-release.md)
 ### [Eristysympäristön päivittäminen](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Tietojen päivittäminen kehitys- tai esittely-ympäristössä](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Kehitystyökalujen päivittäminen](dev-tools/update-development-tools.md)
-### [Päivitysten soveltaminen paikalliseen käyttöönottoon](deployment/apply-updates-on-premises.md)
-### [Paikallisen käyttöönoton ottaminen uudelleen käyttöön](deployment/redeploy-on-prem.md)
 
-## Hotfix-korjaukset ja ylläpito
+## Päivittäminen viimeisimpään päivitykseen (paikallinen)
+### [Päivitysten soveltaminen paikalliseen käyttöönottoon](deployment/apply-updates-on-premises.md)
+### [Paikallisen ympäristön uudelleenasennus](deployment/redeploy-on-prem.md)
+
+## Hotfix-korjaukset
 ### [Hotfix-korjausten lataaminen Lifecycle Services -palvelusta](migration-upgrade/download-hotfix-lcs.md)
+### [Päivitysten käyttöönotto pilviympäristölle](deployment/apply-deployable-package-system.md)
 ### [Metatietojen hotfix-korjauksen asentaminen](migration-upgrade/install-metadata-hotfix-package.md).
 ### [Korjaustiedoston raportointipalvelut yhdessä ympäristössä](migration-upgrade/patch-reporting-service-environment.md)
+### [Visual Studio -kehitystyökalujen päivittäminen](dev-tools/update-development-tools.md)
 
 ## Vanhentumiset
-### [Vanhentuneet API-rajapinnat](migration-upgrade/deprecated-apis.md)
+### [Vanhentuneet ohjelmointirajapinnat](migration-upgrade/deprecated-apis.md)
 ### [Vanhentuneet ominaisuudet](migration-upgrade/deprecated-features.md)
 
 # [Järjestelmän hallinta](sysadmin/system-administration-home-page.md)

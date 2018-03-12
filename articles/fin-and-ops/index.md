@@ -3,7 +3,7 @@ title: Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin d
 description: Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin dokumentaatio.
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 03/02/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: bb258999e072dc280bccfe64fb0dbd41d6577a0e
-ms.openlocfilehash: dbcbd7f7b0c23545eec74de538f1d7ec96ac98b6
+ms.sourcegitcommit: 7142c6bcb6e98929afdb8bb982a17efc7223ab12
+ms.openlocfilehash: 0d12082a2b10ae8e83217c5451627239e6ec640b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
@@ -42,10 +42,14 @@ Suuri osa sisällöstä koskee myös seuraavia liittyviä tuotteita: Microsoft D
 <td>
 <h3><a href="get-started/before-you-buy.md">Ennen ostamista</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Kokeiluversion tilaaminen</a></p>
- <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Valitse käyttöönoton vaihtoehto</a></p>
-  <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
-  <p><a href="get-started/purchase-on-premises.md">Finance and Operationsin (paikallinen) ostaminen</a></p>
+ <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Valitse käyttövaihtoehto</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Finance and Operationsin (paikallinen) ostaminen</a></p>
 
+<h3><a href="imp-lifecycle/implementation-lifecycle.md">Toteutuksen elinkaari</a></h3>
+<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
+<p><a href="imp-lifecycle/onboard.md">Projektin käyttöönotto</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Julkaisun valmistelu</a></p>
+  
 <h3><a href="../financials/index.md">Taloushallinto</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Ostoreskontra</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Myyntireskontra</a></p>
@@ -90,7 +94,7 @@ Suuri osa sisällöstä koskee myös seuraavia liittyviä tuotteita: Microsoft D
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Kehitys</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Laajennettavuus</a></p>
 
-<p><a href="../dev-itpro/data-entities/integration-overview.md">Tietojen integraatio</a></p>
+<p><a href="../dev-itpro/data-entities/integration-overview.md">Tietojen integrointi</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Tietojen hallinta</a></p>
 
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office-integraatio</a></p>
@@ -99,7 +103,8 @@ Suuri osa sisällöstä koskee myös seuraavia liittyviä tuotteita: Microsoft D
 <p><a href="get-started/demo-data.md">Esittelytiedot</a></p>
 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Hallinto</h3>
-<p><a href="../dev-itpro/deployment/choose-deployment-type.md">Käyttöönotto</a></p>
+<p><a href="../dev-itpro/deployment/cloud-deployment-overview.md">Pilvikäyttöönotto</a></p>
+<p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">Paikallinen käyttöönotto</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Päivitys</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Ylläpito</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Tietojen hallintakehys</a></p>
