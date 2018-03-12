@@ -26,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>SQL Server Reporting Servicesin määrittäminen paikallisessa käyttöönotossa
 
+[!include[banner](../includes/banner.md)]
+
 Tässä ohjeaiheessa kerrotaan, miten SQL Server Reporting Services (SSRS) määritetään Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin paikallista käyttöönottoa varten.
 
 1. Avaa Reporting Services -määritystenhallintasovellus

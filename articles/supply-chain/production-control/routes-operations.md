@@ -1,7 +1,7 @@
 ---
 title: "Reititykset ja työvaiheet"
 description: "Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista."
-author: YuyuScheller
+author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

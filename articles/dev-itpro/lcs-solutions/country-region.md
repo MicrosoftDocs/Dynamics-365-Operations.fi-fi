@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: 1cb4305b3ef425ec19ae63c8186bffef212b9890
+ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
+ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -215,8 +215,23 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 ### <a name="hungary"></a>Unkari
 
 -   [Käyttöomaisuuden poistomenetelmät](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
--   [Käyttöomaisuuden siirto varastoon](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
--   [Kustannukseltaan vähäinen käyttöomaisuus](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+-   [Käyttöomaisuuden siirtäminen varastoon](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+-   [Kustannukseltaan vähäinen kiinteä omaisuus](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+
+### <a name="india"></a>Intia
+
+- [Kiinteä omaisuus](../../financials/localizations/apac-ind-fixed-assets.md)
+    - [Pääomanimikkeiden siirtäminen käyttöomaisuuteen](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
+    - [Vuorokausipohjaisen kalenterin liittäminen käyttöomaisuuskirjaan](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
+    - [Parametrien määrittäminen poiston laskemista varten](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
+    - [Käyttöomaisuusryhmän poiston määrittäminen poistokirjoille](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
+    - [Varastomalliryhmän luominen pääomanimikkeitä varten](../../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
+    - [Kiinteän omaisuuden poistolaskelman siirto, Intia](../../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
+    - [Vuoro- ja toimialatyypin määrittäminen tilejä varten ja liittäminen käyttöomaisuuteen](../../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
+- [Veromoduulin yleiskatsaus](../../financials/general-ledger/tax-engine.md)
+    - [Veromoduulin integrointi](../../financials/general-ledger/tax-engine-integration.md)
+    - [Veron raja-arvot – usein kysytyt kysymykset](../../financials/localizations/apac-ind-tax-thresholds.md)
+    - [Veromoduulin laajentaminen](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
 ### <a name="italy"></a>Italia
 
@@ -305,14 +320,14 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 
 -   [Espanjalaiset vekselivaihtoehdot](../../financials/localizations/emea-esp-bill-of-exchange-options.md)
 -   [Käteisalennus otettu käyttöön laskussa -parametri](../../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
--   [Suoritusperusteinen vero](../../financials/localizations/emea-esp-conditional-sales-tax.md)
+-   [Maksuperusteinen arvonlisävero](../../financials/localizations/emea-esp-conditional-sales-tax.md)
 -   [Käyttöomaisuuden uudelleenarvostusryhmät](../../financials/localizations/emea-esp-fixed-asset-group-revaluation.md)
 -   [Yhteisön sisäinen ALV](../../financials/localizations/emea-esp-intra-community-vat.md)
 -   [Kerta-asiakkaat](../../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
 -   [Tulosta sekit Espanjan asettelun avulla](../../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
 -   [Espanjalaiset velkakirjojen asetukset](../../financials/localizations/emea-esp-promissory-note-options.md)
 -   [Osto- ja myyntisyklit](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
--   [Erikoisviennit ja avaavat taseet](../../financials/localizations/emea-esp-opening-sheets-spain.md)
+-   [Erikoisviennit ja aloitustaseet](../../financials/localizations/emea-esp-opening-sheets-spain.md)
 -   [Laskutustilin kirjanpitotietojen käyttö](../../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
 
 ### <a name="sweden"></a>Ruotsi
