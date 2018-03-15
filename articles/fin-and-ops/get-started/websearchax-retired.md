@@ -25,16 +25,16 @@ ms.lasthandoff: 03/05/2018
 
 ---
 
-# <a name="websearchax-retired"></a><span data-ttu-id="42aa4-104">WebSearchAX on poistettu käytöstä</span><span class="sxs-lookup"><span data-stu-id="42aa4-104">WebSearchAX retired</span></span>
+# <a name="websearchax-retired"></a><span data-ttu-id="1d013-104">WebSearchAX on poistettu käytöstä</span><span class="sxs-lookup"><span data-stu-id="1d013-104">WebSearchAX retired</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="42aa4-105">Olemme poistaneet WebSearchAX-sivun käytöstä.</span><span class="sxs-lookup"><span data-stu-id="42aa4-105">We’ve had to retire the WebSearchAX page.</span></span> <span data-ttu-id="42aa4-106">Käytä sen sijaan haluamasi hakukoneen sivustohakua.</span><span class="sxs-lookup"><span data-stu-id="42aa4-106">We recommend that you use site search from your favorite search engine to replace it.</span></span>  <span data-ttu-id="42aa4-107">Esimerkki:</span><span class="sxs-lookup"><span data-stu-id="42aa4-107">For example:</span></span> 
+<span data-ttu-id="1d013-105">Olemme poistaneet WebSearchAX-sivun käytöstä.</span><span class="sxs-lookup"><span data-stu-id="1d013-105">We’ve had to retire the WebSearchAX page.</span></span> <span data-ttu-id="1d013-106">Käytä sen sijaan haluamasi hakukoneen sivustohakua.</span><span class="sxs-lookup"><span data-stu-id="1d013-106">We recommend that you use site search from your favorite search engine to replace it.</span></span>  <span data-ttu-id="1d013-107">Esimerkki:</span><span class="sxs-lookup"><span data-stu-id="1d013-107">For example:</span></span> 
 
-<span data-ttu-id="42aa4-108">site:technet.microsoft.com dynamics ax 2012 "hakuehto"</span><span class="sxs-lookup"><span data-stu-id="42aa4-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
+<span data-ttu-id="1d013-108">site:technet.microsoft.com dynamics ax 2012 "hakuehto"</span><span class="sxs-lookup"><span data-stu-id="1d013-108">site:technet.microsoft.com dynamics ax 2012 "search term"</span></span>
 
-<span data-ttu-id="42aa4-109">-tai-</span><span class="sxs-lookup"><span data-stu-id="42aa4-109">-or-</span></span>
+<span data-ttu-id="1d013-109">-tai-</span><span class="sxs-lookup"><span data-stu-id="1d013-109">-or-</span></span>
 
-<span data-ttu-id="42aa4-110">site:msdn.microsoft.com dynamics ax 2012 “hakuehto”</span><span class="sxs-lookup"><span data-stu-id="42aa4-110">site:msdn.microsoft.com dynamics ax 2012 “search term”</span></span>
+<span data-ttu-id="1d013-110">site:msdn.microsoft.com dynamics ax 2012 “hakuehto”</span><span class="sxs-lookup"><span data-stu-id="1d013-110">site:msdn.microsoft.com dynamics ax 2012 “search term”</span></span>
 
 
