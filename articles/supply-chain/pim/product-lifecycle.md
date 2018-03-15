@@ -20,10 +20,10 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: 33130a4061f22335aeeffa69c478b693604393a9
-ms.openlocfilehash: a57f306ba02c5758c39c4bd29d9a4fa0d7efbcd3
+ms.sourcegitcommit: 236b0253f20330f09f07dbcfa19257350fb5d37f
+ms.openlocfilehash: 8ef72de3f226a3270ac0145a20e4da7dfe64f4ba
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -109,10 +109,10 @@ Valitse ja päivitä vapautetut tuotteet ja tuotevariantit seuraavien ehtojen mu
 
 ## <a name="related-topics"></a>Liittyvät aiheet
 
--  Uuden tuotteen elinkaaren tilan luominen
--  Uuden tuotteen elinkaaren oletustilan luominen
--  Tuotteen elinkaaren tilan liittäminen vapautettuun päätuotteeseen
--  Tuotteen elinkaaren tilan liittäminen vapautettuun tuotteeseen
--  Vanhentuneiden tuotevarianttien etsiminen ja tuotteen elinkaaren tilan liittäminen
--  Tuotteen elinkaaren tason luonti jättämään tuotteita pääsuunnittelun ulkopuolelle
+-  [Uuden tuotteen elinkaaren tilan luominen (tehtäväopas)](tasks/new-product-lifecycle-state.md)
+-  [Oletustuotteen elinkaaren tilan luominen (tehtäväopas)](tasks/default-product-lifecycle-state.md)
+-  [Tuotteen elinkaaren tilan liittäminen vapautettuun päätuotteeseen (tehtäväopas)](tasks/product-lifecycle-state-released-product-master.md)
+-  [Tuotteen elinkaaren tilan liittäminen vapautettuun tuotteeseen (tehtäväopas)](tasks/product-lifecycle-state-released-product.md)
+-  [Vanhentuneiden tuotevarianttien etsiminen ja tuotteen elinkaaren tilan liittäminen (tehtäväopas)](tasks/obsolete-product-variants.md)
+-  [Tuotteen elinkaaren tason luonti jättämään tuotteita pääsuunnittelun ulkopuolelle (tehtäväopas)](tasks/exclude-products-master-planning.md)
 

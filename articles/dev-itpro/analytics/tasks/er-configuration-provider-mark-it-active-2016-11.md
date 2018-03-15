@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 2dfa04f280249884af2a237807fb283059444a6c
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 018aee917c13f576759ebd812d31cbc9d83e2d1a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 # <a name="create-a-configuration-provider-and-mark-it-as-active-for-electronic-reporting-er"></a>Konfiguraation lähteen luominen ja merkitseminen aktiiviseksi sähköistä raportointia (ER) varten
@@ -33,11 +33,10 @@ Seuraavissa vaiheissa kerrotaan, miten käyttäjä, jolla on järjestelmänvalvo
 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
 2. Valitse Konfiguraation lähteet.
 3. Valitse Uusi.
-    * Lähdetietueella on yksilöivä nimi ja URL-osoite. Tarkista tämän sivun sisältö ja ohita tämä menettely, jos Litware, Inc.:n (http://www.litware.com) tietue on jo luotu.  
+    * Lähdetietueella on yksilöivä nimi ja URL-osoite. Seuraa tämän sivun sisältöä ja ohita tämä menettely, jos Litware, Inc. (`http://www.litware.com`) on jo luotu.  
 4. Syötä Nimi-kenttään Litware, Inc.
     * Litware, Inc.  
-5. Syötä Internet-osoite-kenttään http://www.litware.com.
-    * http://www.litware.com  
+5. Kirjoita Internet-osoite-kenttään `http://www.litware.com`.
 6. Valitse Tallenna.
 7. Sulje sivu.
 

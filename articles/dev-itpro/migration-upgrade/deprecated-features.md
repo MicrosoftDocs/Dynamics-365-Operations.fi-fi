@@ -3,7 +3,7 @@ title: Vanhentuneet ominaisuudet
 description: "Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan."
 author: sericks007
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: addd8c62ba034b47d8abbec29fa8682deb9698b1
+ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
+ms.openlocfilehash: 03b79816ffea649cf226408ed4660c3419103a7a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -40,6 +40,17 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 > Dynamics 365 for Finance and Operations, Enterprise editionin heinäkuun 2017 ympäristöpäivityksestä 8 alkaen kunkin poistetun tai vanhentuneen ominaisuuden käyttöottotyyppi ilmoitetaan. Kaikki tässä aiheessa mainitut aiemmat versiot tukivat vain pilvikäyttöönottoja.
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 ja ympäristöpäivitys 12
+
+### <a name="personalized-product-recommendations"></a>Mukautetut tuotesuositukset 
+15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja on kohdassa [Mukautetut tuotesuositukset](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Tuotesuosituspalvelun nykyinen versio ollaan poistamassa, sillä toiminto suunnitellaan uudelleen käyttämällä parempaa algoritmia ja uudempia vähittäismyyntiin soveltuvia ominaisuuksia.  |
+| **Onko toinen ominaisuus korvannut?**   | Nro Tämä ominaisuus on kuitenkin tarkoitus palauttaa kevään 2018 jälkeen uutta suosituspalvelua varten.   |
+| **Tuotealueet, joihin vaikutetaan**         | Mukautetut tuotesuositukset myyntipisteessä.                                                    |
+| **Käytön asetukset**              | Kaikki                                                                                      |
+| **Tila**                         |Poistettu 15.2.2018. Tämä vaikuttaa asiakkaisiin, joiden käytössä Dynamics 365 for Operations 1611 tai sitä uudempi versio.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Sähköisen raportoinnin (ER) toimintoluettelon laajennus
 Mahdollisuutta käyttää mukautettuja toimintoja ER-lausekkeenmuodostimessa ei tueta enää. (Lisätietoja on kohdassa [Sähköisen raportoinnin toimintoluettelon laajentaminen](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md).) Sähköisen raportoinnin ohjelmointirajapintojen muutosten vuoksi, ohjelmointirajapinnan sisäisten toimintojen kutsuminen ER-lausekkeenmuodostimesta muuttui sisäiseksi eikä sitä voi enää laajentaa.
@@ -132,6 +143,19 @@ Käyttäjät voivat ladata tämän julkishallinnon portaalista.
 | **Käytön asetukset**                       | Kaikki moduulit                                                                    |
 | **Tila**                                  | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.  |    
 
+
+## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
+
+### <a name="personalized-product-recommendations"></a>Mukautetut tuotesuositukset 
+15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja on kohdassa [Mukautetut tuotesuositukset](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Tuotesuosituspalvelun nykyinen versio ollaan poistamassa, sillä toiminto suunnitellaan uudelleen käyttämällä parempaa algoritmia ja uudempia vähittäismyyntiin soveltuvia ominaisuuksia.  |
+| **Onko toinen ominaisuus korvannut?**   | Nro Tämä ominaisuus on kuitenkin tarkoitus palauttaa kevään 2018 jälkeen uutta suosituspalvelua varten.   |
+| **Tuotealueet, joihin vaikutetaan**         | Mukautetut tuotesuositukset myyntipisteessä.                                                    |
+| **Käytön asetukset**              | Kaikki                                                                                      |
+| **Tila**                         |Poistettu 15.2.2018. Tämä vaikuttaa asiakkaisiin, joiden käytössä Dynamics 365 for Retail 7.2 tai sitä uudempi versio. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise edition heinäkuu 2017 ja ympäristöpäivitys 8

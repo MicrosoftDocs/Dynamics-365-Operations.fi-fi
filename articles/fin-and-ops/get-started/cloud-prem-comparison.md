@@ -3,7 +3,7 @@ title: Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 description: "Tässä aiheessa kerrotaan, mitkä ominaisuudet ovat tuettuja pilvipalvelussa ja paikallisessa asennuksessa."
 author: robinarh
 manager: AnnBe
-ms.date: 11/29/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
-ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
+ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
+ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
@@ -49,8 +49,9 @@ Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen ase
 | | Kustannushintojen hallinnan Power BI -sisältöpaketti | Kyllä | En |
 | Tietojen hallinta ja integraatio| | Kyllä | Kyllä |
 | | Määritysperustainen laajennus| Kyllä | En |
-| | Tietojen vienti omaan tietovarastoon| Kyllä | En |
+| | Tietojen vienti omaan tietovarastoon| Kyllä | Kyllä |
 | | Lisäpäivitysten vienti tietoyksikköön | Kyllä | En |
+| | Toistuvat integraatiot                 |Kyllä | En|
 | Tiedoston hallinta| | Kyllä| Kyllä |
 | Taloushallinto|  | Kyllä | Kyllä |
 | Ohje| | Kyllä | En |

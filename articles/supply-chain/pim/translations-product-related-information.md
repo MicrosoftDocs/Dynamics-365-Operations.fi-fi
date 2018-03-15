@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 2c58e3e2f60c00d8d834c1d80b347e2e7087809d
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 87dfdf7085e185b3e0467088118838eb832546d7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -117,7 +117,7 @@ Dimensioarvo, joka on liitetty tuotteeseen dimensiovariantin ryhmän välityksel
 Luo dimension arvoryhmä noudattamalla seuraavia ohjeita:
 1.  Valitse **tuotetietojen hallinta** &gt; **asetukset** &gt; **muuttujaryhmät**.
 2.  Valitse **koon** **ryhmät**, **väriryhmät**, tai **tyyliryhmät**.
-3.  Valitse **Uusi**, ja kirjoita sitten ryhmän nimi **Koko****ryhmä**, **Väriryhmä**, tai **Tyyliryhmä**-kentässä. Valitse **Koot**, **Värit** tai **Tyylit** jos haluat luoda rivit ryhmille.
+3.  Valitse **Uusi**, ja kirjoita sitten ryhmän nimi **Koko** **ryhmä**, **Väriryhmä**, tai **Tyyliryhmä**-kentässä. Valitse **Koot**, **Värit** tai **Tyylit** jos haluat luoda rivit ryhmille.
 4.  **Koon** **ryhmän** rivit, **värin** **ryhmän** **rivit**, tai **tyyliryhmän rivit** -sivulla valitse **uusi**, ja luo koot, värit ja tyylit ryhmille.
 
 Hallinnoi dimension arvoryhmän arvojen käännöksiä noudattamalla seuraavia ohjeita:

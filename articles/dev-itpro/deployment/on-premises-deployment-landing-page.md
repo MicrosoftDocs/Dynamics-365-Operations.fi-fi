@@ -3,14 +3,14 @@ title: "Paikallinen käyttöönotto"
 description: "Tässä ohjeaiheessa on tietoja paikallisia käyttöönottoja koskevasta sisällöstä sekä linkkejä tähän sisältöön."
 author: kfend
 manager: AnnBe
-ms.date: 12/11/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core
+ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: 697f5a43124aace645e0cc8c6df98a4f986ab852
+ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
+ms.openlocfilehash: 12b8a6e8f28501bce76d5a1d58b39e4711b75330
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Paikallisen käyttöönoton saapumissivu
@@ -31,6 +31,7 @@ ms.lasthandoff: 12/20/2017
 Voit ottaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin (paikallinen) käyttöön. Kun valitset paikallisen käyttöönottotyypin, järjestelmävaatimukset, laitteiden koko ja toiminnot poikkeavat pilvikäyttöönotosta. Tässä ohjeaiheessa on linkkejä sisältöön, jossa on paikallisia käyttöönottoja koskevia tietoja.
 
 ## <a name="get-started"></a>Aloittaminen
+- [Uudet ja muuttuneet ominaisuudet Dynamics 365 for Finance and Operations, Enterprise edition 7.2:n ympäristöpäivityksen (maaliskuu 2018) paikallisissa käyttöönotoissa](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
 - [(Paikallisen) Dynamics 365 for Finance and Operations, Enterprise Editionin yleiskatsaus](on-premises-overview.md)
 - [Paikallisen käyttöönoton suunnitteleminen](plan-onprem-deployment.md)
 - [Paikallisten käyttöönottojen järjestelmävaatimukset](../../fin-and-ops/get-started/system-requirements-on-prem.md)
@@ -50,6 +51,7 @@ Voit ottaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
 - [Asiakirjanhallinnan määrittäminen](../../fin-and-ops/organization-administration/configure-document-management.md)
 - [Sähköisen raportoinnin konfiguraatioiden tuonti](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Asiakirjan luonti-, julkaisu- ja tulostusominaisuudet paikallisissa käyttöönotoissa](../analytics/printing-capabilities-on-premises.md)
+- [Paikallisen ympäristön käänteisen välityspalvelimen määrittäminen](onprem-reverseproxy.md)
 - [Teknisen tuen määrittäminen](../lifecycle-services/support-experience.md)
 - [Asiakasohjelman internet-yhteyden vianmääritys](../user-interface/client-disconnected.md)
 - [Päivitysten soveltaminen paikalliseen käyttöönottoon](apply-updates-on-premises.md)

@@ -3,7 +3,7 @@ title: "Power BI -sisältö"
 description: "Tämä ohjeaihe on luettelo käytettävissä olevasta Power BI -sisällöstä, ja siinä kerrotaan resursseista, joissa on lisätietoja kyseisestä sisällöstä."
 author: sericks007
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: b0a7adb684850a0f0b914ea89ce3af1636b3084c
-ms.openlocfilehash: 0969f9f30e50a36b667765fbe375e6c14d3412da
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: d5b1bb5f25710b7d4feea55414d68d5390c87308
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -42,6 +42,7 @@ Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise
 - [Kustannuslaskenta-analyysin Power BI -sisältö](cost-accounting-analysis-content-pack.md) 
 - [Luotonvalvonnan hallinnan Power BI -sisältö](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Työntekijän kehityksen Power BI -sisältö](employee-development-PBI.md) 
+- [Taloushallinnon tietojen Power BI -sisältö](financial-insights.md)
 - [Taloudellisen suorituskyvyn Power BI -sisältö](financial-performance-power-bi-content-pack.md)
 - [Käyttöomaisuuden hallinnan Power BI -sisältö](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
 - [Oppimisen Power BI -sisältö](learning-power-bi.md)
@@ -73,6 +74,9 @@ Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, seuraava P
 
 ## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n Power BI -sisältö
 Jos käytössä on Microsoft Dynamics AX 7.0 tai Microsoft Dynamics AX 7.0.1, seuraava Power BI -sisältö on käytettävissä:
+
+> [!Note]
+> Nämä sisältöpaketit ovat vanhentuneet, kuten on ilmoitettu [PowerBI.comissa julkaistuissa Power BI -sisältöpaketeissa](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
 - [Kustannushintojen hallinta - Power BI -sisältö](cost-management-content-pack.md)    
 - [Taloudellisen suorituskyvyn Power BI -sisältö](financial-performance-power-bi-content-pack.md)

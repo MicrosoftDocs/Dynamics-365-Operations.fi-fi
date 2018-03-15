@@ -1,6 +1,6 @@
 ---
 title: "Määritä sähköinen raportti tietojen käyttämiseksi Power BI:ssä"
-description: "Tässä ohjeaiheessa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Power BI-palveluihin. Tässä aiheessa käytetään esimerkkinä Intrastat-tapahtumia siirrettävinä liiketoimintatietoina. Power BI -karttavisualisointi käyttää tätä Intrastat-tapahtumatietoa näkymän esittämiseen yrityksen tuonti-/vientitoimintojen analyysia varten Power BI-raportissa."
+description: "Tässä ohjeaiheessa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Power BI-palveluihin."
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,14 +18,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 90749012c3eb4f3d1c275f0661f8cff43ec285a2
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 8f89d0740098fbd5af9d838f1f4b7ddf47ee7e10
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 
-# <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Määritä sähköinen raportti tietojen käyttämiseksi Power BI:ssä
+# <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Sähköisen raportoinnin määrittäminen hakemaan tiedot Power BI:hin
 
 [!include[banner](../includes/banner.md)]
 
@@ -100,22 +100,38 @@ Valitse **Asetukset**-painike uudelle kohdetietueelle. Noudata seuraavia ohjeita
 2.  **SharePoint**-kentässä valitse **Jaettu**-tiedostotyyppi jonka loit aiemmin.
 
 ## <a name="schedule-execution-of-the-configured-er-format"></a>Konfiguroidun ER-muodon suorituksen ajoittaminen
-**Konfiguroinnit**-sivulla (**Organisaation hallinto** &gt; **Sähköinen raportointi** &gt; **Konfiguroinnit**) konfiguraatioiden puurakenteessa, valitse **Tuonti-/vientitoiminnot**-konfiguraatio, jonka loit aiemmin. Vaihda version 1.1 tila **Luonnos**-tilasta **Valmis** -tilaan, jotta voit ottaa tämän muodon käyttöön. [![Konfiguroinnit-sivu](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) Valitse valmis versio **Tuonti-/vientitoiminnot**-konfiguraatiosta ja valitse sitten **Suorita**. Huomaa, että konfiguroitua kohdetta sovelletaan tulosteeseen, joka luodaan Excel-muodossa. Määritä **Eräkäsittely**-asetukseksi **Kyllä** raportin suorittamiseksi valvomattomassa tilassa. Valitse **Toistuminen** ja ajoita eräajon suorittamisen pakollinen toistuminen. Toistuminen määrittää, kuinka usein päivitetyt tiedot siirretään Finance and Operationsista Power BI:hin. [![Sähköisen raportoinnin parametrien valintaikkuna](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) Kun tämä on määritetty, ER-raportin suoritustyö löytyy **Erätyöt**-sivulla (**Järjestelmän hallinta &gt; Kyselyt &gt; Erätyöt**). [![Erätyöt-sivu](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) Kun tämä työ suoritetaan ensimmäisen kerran, kohde luo uuden Excel-tiedoston, jolle on määritetty nimi valitussa SharePoint-kansiossa. Myöhemmin joka kerta, kun työ suoritetaan, kohde luo Excel-tiedostosta uuden version. [![Excel-tiedoston uusi versio](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
+1. **Konfiguroinnit**-sivulla (**Organisaation hallinto** &gt; **Sähköinen raportointi** &gt; **Konfiguroinnit**) konfiguraatioiden puurakenteessa, valitse **Tuonti-/vientitoiminnot**-konfiguraatio, jonka loit aiemmin. 
+2. Vaihda version 1.1 tila **Luonnos**-tilasta **Valmis** -tilaan, jotta voit ottaa tämän muodon käyttöön. [![Konfiguroinnit-sivu](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) 
+3. Valitse valmis versio **Tuonti-/vientitoiminnot**-konfiguraatiosta ja valitse sitten **Suorita**. Huomaa, että konfiguroitua kohdetta sovelletaan tulosteeseen, joka luodaan Excel-muodossa. 
+4. Määritä **Eräkäsittely**-asetukseksi **Kyllä** raportin suorittamiseksi valvomattomassa tilassa. 
+5. Valitse **Toistuminen** ja ajoita eräajon suorittamisen pakollinen toistuminen. Toistuminen määrittää, kuinka usein päivitetyt tiedot siirretään Finance and Operationsista Power BI:hin. [![Sähköisen raportin parametrit -valintaikkuna](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) 
+6. Kun se on määritetty, ER-raportin suoritustyö löytyy **Erätyöt**-sivulla (**Järjestelmän hallinta &gt; Kyselyt &gt; Erätyöt**). [![Erätyöt-sivu](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) 
+7. Kun tämä työ suoritetaan ensimmäisen kerran, kohde luo uuden Excel-tiedoston, jolle on määritetty nimi valitussa SharePoint-kansiossa. Myöhemmin joka kerta, kun työ suoritetaan, kohde luo Excel-tiedostosta uuden version. [![Excel-tiedoston uusi versio](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Power BI -tietojoukon luominen käyttämällä ER-muodon tulostetta
-Kirjaudu Power BI:hin ja avaa aiemmin luotu Power BI -ryhmä (työtila) tai luo uusi ryhmä. Napsauta **Lisää** kohdassa **Tiedostot** **Tuo tai yhdistä tietoihin** -osassa tai napsauta plus-merkkiä (**+**) **Tietojoukot**-kohdan vieressä vasemmassa ruudussa. [![Tietojoukon luonti](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Valitse **SharePoint - ryhmäsivustot** -vaihtoehto ja kirjoita polku, jota käytät SharePoint Serverissä (**https://ax7partner.litware.com** esimerkissä). Etsi **/Shared Documents/GER data/PowerBI**-kansio ja valitse Excel-tiedosto, jonka olet luonut uuden Power BI -tietojoukon tietojen lähteeksi. [![Excel-tiedoston valitseminen](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Valitse **Yhdistä**, ja sitten **Tuo**. Luodaan uusi tietojoukko, joka perustuu valittuun Excel-tiedostoon. Tietojoukko voidaan lisätä myös automaattisesti äsken luotuun raporttinäkymään. [![Tietojoukko koontinäytössä](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Aikataulun päivityksen määrittäminen tälle tietojoukolle jaksoittaisen päivityksen pakottamiseksi. Kausittaiset päivitykset mahdollistavat uusien Finance and Operationsin liiketoimintatietojen käytön ER-raportin kausittaisen suorittamisen ansiosta SharePoint Serverille luodun Excel-tiedoston uuden version avulla.
+1. Kirjaudu Power BI:hin ja avaa aiemmin luotu Power BI -ryhmä (työtila) tai luo uusi ryhmä. Napsauta **Lisää** kohdassa **Tiedostot** **Tuo tai yhdistä tietoihin** -osassa tai napsauta plus-merkkiä (**+**) **Tietojoukot**-kohdan vieressä vasemmassa ruudussa. [![Tietojoukon luonti](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) 
+2. Valitse **SharePoint - ryhmäsivustot** -vaihtoehto ja kirjoita polku, jota käytät SharePoint Serverissä (esimerkissä `https://ax7partner.litware.com`). 
+3. Selaa **/Shared Documents/GER data/PowerBI**-kansioon ja valitse Excel-tiedosto, jonka olet luonut uuden Power BI -tietojoukon tietojen lähteeksi. [![Excel-tiedoston valitseminen](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) 
+4. Valitse **Yhdistä**ja valitse **Tuo**. Luodaan uusi tietojoukko, joka perustuu valittuun Excel-tiedostoon. Tietojoukko voidaan lisätä myös automaattisesti äsken luotuun raporttinäkymään. [![Tietojoukko koontinäytössä](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) 
+5. Määritä päivitysaikataulu tälle tietojoukolle kausittainen päivityksen pakottamiseksi Kausittaiset päivitykset mahdollistavat uusien Finance and Operationsin liiketoimintatietojen käytön ER-raportin kausittaisen suorittamisen ansiosta SharePoint Serverille luodun Excel-tiedoston uuden version avulla.
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Power BI -raportin luominen käyttämällä uutta tietojoukkoa
-Voit luoda uuden Power BI-raportin valitsemalla **Tietojen tuonti ja vienti** Power BI tietojoukon, jonka olet luonut. Määritä sitten visualisointi. Valitse esimerkiksi **Täytetty kartta** -visualisointi ja määritä se seuraavasti:
+1. Valitse **Tietojen tuonti ja vienti** luomassasi Power BI -tietojoukossa. 
+2. Määritä visualisointi. Valitse esimerkiksi **Täytetty kartta** -visualisointi ja määritä se seuraavasti:
+ -   Määritä **CountryOrigin**- tietojoukkokenttä kartan visualisoinnin **Sijainti**-kenttään.
+ -   Määritä **Määrä**- tietojoukkokenttä kartan visualisoinnin **Värikylläisyys**-kenttään.
+ -   Lisää **Tehtävä** ja **Vuosi** tietojoukkokentät kartan visualisoinnin **Suodattimet**-tietokenttäkokoelmaan.
 
--   Määritä **CountryOrigin**- tietojoukkokenttä kartan visualisoinnin **Sijainti**-kenttään.
--   Määritä **Määrä**- tietojoukkokenttä kartan visualisoinnin **Värikylläisyys**-kenttään.
--   Lisää **Tehtävä** ja **Vuosi** tietojoukkokentät kartan visualisoinnin **Suodattimet**-tietokenttäkokoelmaan.
-
-Tallenna Power BI -raportti **Tuodut ja viedyt tiedot -raporttina**. [![Viennin ja tuonnin tietojen raportti](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Huomaa, että kartassa näkyvät maat/alueet, jotka on mainittu Excel-tiedostosta (Itävalta ja Sveitsi tässä esimerkissä). Nämä maat/alueet näkyvät värillisinä ja osoittavat laskutettujen summien osuuden. Päivitä Intrastat-tapahtumien luettelo. Vientitapahtuma, joka on peräisin Italiasta, lisätään. [![Intrastat-tapahtumien luettelo](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) Odota ER-raportin seuraavaa ajoitettua suorittamista ja Power BI -tietojoukon seuraavaa ajoitettua päivitystä. Käy läpi Power BI -raportti (valitse vain tuotujen tapahtumien näyttö). Päivitetyssä kartassa näkyy nyt Italia. [![Päivitetty määritys](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
+3. Tallenna Power BI -raportti **Tuodut ja viedyt tiedot -raporttina**. [![Viennin ja tuonnin tietojen raportti](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Huomaa, että kartassa näkyvät maat/alueet, jotka on mainittu Excel-tiedostosta (Itävalta ja Sveitsi tässä esimerkissä). Nämä maat/alueet näkyvät värillisinä ja osoittavat laskutettujen summien osuuden. 
+4. Päivitä Intrastat-tapahtumien luettelo. Vientitapahtuma, joka on peräisin Italiasta, lisätään. [![Intrastat-tapahtumien luettelo](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) 
+5. Odota ER-raportin seuraavaa ajoitettua suorittamista ja Power BI -tietojoukon seuraavaa ajoitettua päivitystä. Käy läpi Power BI -raportti (valitse vain tuotujen tapahtumien näyttö). Päivitetyssä kartassa näkyy nyt Italia. [![Päivitetty määritys](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance-and-operations"></a>Power BI -raportin valmistelu Finance and Operations -käyttöä varten
-Määritä Finance and Operationsin ja Power BI:n integrointi. Lisätietoja on kohdassa [Power BI -integroinnin konfiguroiminen työtiloille](configure-power-bi-integration.md). **Sähköinen raportointi**-työtilan sivulla, joka tukee Power BI-integrointia (**Organisaation hallinto** &gt; **Työtilat** &gt; **Sähköisen raportoinnin työtila**), valitse **Asetukset** &gt; **Avaa raporttiluettelo**. Valitse **Tuodut ja viedyt tiedot** Power BI -raportti, jonka olet luonut, jotta raportti näytetään valitun sivun toimintonimikkeenä. Valitse toimintonimike, joka avaa Finance and Operations -sivun, jossa näkyy Power BI:ssa suunniteltu raportti. [![Tuonnin ja viennin tietojen raportti](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+Määritä Finance and Operationsin ja Power BI:n integrointi. Lisätietoja on kohdassa [Power BI -integroinnin konfiguroiminen työtiloille](configure-power-bi-integration.md). 
+
+1. **Sähköinen raportointi**-työtilan sivulla, joka tukee Power BI-integrointia (**Organisaation hallinto** &gt; **Työtilat** &gt; **Sähköisen raportoinnin työtila**), valitse **Asetukset** &gt; **Avaa raporttiluettelo**. 
+2. Valitse **Tuodut ja viedyt tiedot** Power BI -raportti, jonka olet luonut, jotta raportti näytetään valitun sivun toimintonimikkeenä. 
+3. Valitse toimintonimike, joka avaa Finance and Operations -sivun, jossa näkyy Power BI:ssa suunniteltu raportti. [![Tuonnin ja viennin tietojen raportti](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 <a name="see-also"></a>Lisätietoja
 --------

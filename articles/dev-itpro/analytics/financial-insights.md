@@ -3,7 +3,7 @@ title: Taloushallinnon tiedot
 description: "Taloushallinnon tiedot kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätöksiä."
 author: kweekley
 manager: AnnBe
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: 3da5344ec6edec0af28aa21d45af962307231e67
+ms.sourcegitcommit: d527df21e791978b41527c01c2e6b68b393861ac
+ms.openlocfilehash: 90dc6214f1eb31440a3ec78a58c6a07394245cd2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/28/2018
 
 ---
 
@@ -102,10 +102,15 @@ Upotettujen Power BI -raporttien tietoja ei voi tällä hetkellä rajoittaa niih
 | Näytä yritystenväliset taloushallinnon tiedot   | •   Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin versiossa 7.3 tätä velvollisuutta ei ole määritetty rooliin. • Seuraavassa versiossa tämä velvollisuus määritetään talousjohtajan rooliin. | •    Tämä velvollisuus antaa Talousjohtajan yhteenveto -työtilan valikkovaihtoehdon käyttöoikeuden. •    Aktiivista yritystä käytetään oletusarvoisesti suodattimena. Voit kuitenkin lisätä kaikki yritykset riippumatta siitä, onko käyttäjällä muiden yritysten käyttöoikeutta.             |
 
 
-## <a name="how-financial-statements-work"></a>Tilinpäätösten käsittely
-Vaikka **Taloushallinnon tiedot** -työtilassa on tilinpäätöksiä, se ei korvaa Finance and Operationsin taloushallinnon raportointia. **Taloushallinnon tietojen** tilinpäätökset ovat laajuudeltaan rajoitettuja eivätkä ne sillä kaikentyyppisiä tilinpäätöksiä. Taloushallinnon raportointi on edelleen ensisijainen työkalu lakisääteisten tilinpäätösten suunnitteluun, luontiin ja muodostamiseen.
+## <a name="financial-reporting-vs-finanical-insights"></a>Taloushallinnon raportoinnin ja taloushallinnon tietojen vertailu
+Vaikka **Taloushallinnon tiedot** sisältää tilinpäätöksiä, se ei korvaa Finance and Operationsin taloushallinnon raportointia. **Taloushallinnon tietojen** tilinpäätökset ovat laajuudeltaan rajoitettuja eivätkä ne sisällä kaiken tyyppisiä tilinpäätöksiä. Taloushallinnon raportointi on edelleen ensisijainen työkalu lakisääteisten tilinpäätösten suunnitteluun, luontiin ja muodostamiseen.
 
-Alkuperäisen **Talousjohtajan yhteenveto** -työtilan visualisointien lisäksi uudet tunnusluvut, kaaviot ja tilinpäätökset ovat käytettävissä Seuraavat tilinpäätökset ovat käytettävissä:
+Seuraava vertailukaavio auttaa erottamaan vaihtoehdot toisistaan:
+
+|                                         | **Taloushallinnon raportointi**                            | **Taloushallinnon tiedot**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Oletusraporttien muokkaus**                | Kyllä                                                | Ei                                 | | **Uusien raporttien luonti**                  | Kyllä                                                | Ei                                 | | **Raporttien tulostus**                       | Kyllä                                                | Ei                                 | | **Vienti Exceliin**                     | Kyllä          | Rajoitettu raakatietojen vienti Excelin, muotoilematon raportti       | | **Raportointihierarkian/organisaatiohierarkian tuki**   | Kyllä                               | Ei                                 | | **Alareskontran tietojen raportti**       | Kyllä Rajoitettu yhteen toimittajaan, asiakkaaseen    | Kyllä Toimittaja-, asiakas-, toimittaja/asiakasryhmät, toimittajan/asiakkaan osoitteet jne.  | | **Raportointivaluutta**      | Kyllä Kirjanpitovaluutta ja muuntaminen raportointivaluutaksi       | Ei Vain kirjanpitovaluutta      | | **Suojaus**                | Kyllä Finance and Operationsin ja raporttipuun suojauksen noudattaminen | Rajoitettu kaikkien yritysten raporttien näyttäminen (Finance and Operationsin suojauksesta riippumatta) tai vain aktiivinen yritys | | **Erilaisten tilikarttojen ja tilivuosien tuki** | Kyllä                   | Ei                   | | **Ulkoisten tietojen raportti**                              | Ei                   | Ei                                   | | **Konsolidointien tuki**                               | Kyllä                          | Rajoitettu raportointi useissa yrityksissä mutta vain kirjanpitovaluutan käyttö                                     |
+
+
+Alkuperäisen **Talousjohtajan yhteenveto** -työtilan käyttöliittymän lisäksi uudet tunnusluvut, kaaviot ja tilinpäätökset ovat käytettävissä Seuraavat tilinpäätökset ovat käytettävissä:
 
 •   Pääkirja
 
