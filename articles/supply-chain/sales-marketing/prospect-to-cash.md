@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
-ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -46,15 +46,6 @@ Nykyisessä versiossa prospektista käteiseksi -ratkaisu mahdollistaa seuraavat 
 - [Myyntitilausten synkronointi suoraan Finance and Operationsista Salesiin](sales-order-template-mapping-direct.md)
 - [Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä (julkaisua odottava malli)](sales-order-template-mapping-direct-two-ways.md)
 - [Myyntilaskun synkronointi suoraan Finance and Operationsista Salesiin](sales-invoice-template-mapping-direct.md)
-
-Aiemmissa versiossa prospektista käteiseksi -ratkaisu mahdollistaa seuraavat epäsuoran synkronoinnin tyypit:
-
-- [Ylläpidä tilejä Salesissa ja synkronoi ne Finance and Operationsiin.](accounts-template-mapping.md)
-- [Yhteyshenkilöiden ylläpito Salesissa ja niiden synkronointi Finance and Operationsiin](contacts-template-mapping.md)
-- [Tuotteiden ylläpito Finance and Operationsissa ja niiden synkronointi Salesiin](products-template-mapping.md)
-- [Myyntitarjousten luominen Salesissa ja niiden synkronointi Finance and Operationsiin](sales-quotation-template-mapping.md)
-- [Myyntitilausten luominen Finance and Operationsissa ja niiden synkronointi Salesiin](sales-order-template-mapping.md)
-- [Myyntilaskujen luominen Finance and Operationsissa ja niiden synkronointi Salesiin](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations -sovelluksen järjestelmävaatimukset
 
@@ -87,7 +78,7 @@ Prospektista käteiseksi -integraatio tuetaan seuraavissa versioissa:
     - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Prospektista käteiseksi -integrointia tietoyksiköiden kautta on tuettava.
     
     > [!NOTE]
-    > Kun hotfix-korjaukset on asennettu, seuraava **SalesPopulateProspectToCash**-lomakkeen erätyö on käynnistettävä. Tämä lomake on piilotettu, koska sitä tarvitaan vain kerran. Voit käyttää lomaketta kirjautumalla ympäristöön ja lisäämällä seuraavan URL-osoitteeseen selainosoitteessasi: &mi=action:SalesPopulateProspectToCash, kuten https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash. Kun lomake avautuu, valitse OK. **SalesLine**-, **SalesQuotationLine**- ja **CustInvoiceTrans**-taulukkojenn uuteen **LineCreationSequnceNumber**-kenttiin täytetään yksilöivät arvot, jolloin tuoteluettelo päivittyy. Tämä on välttämätöntä, jotta Prospektista käteiseksi -integrointi toimisi.
+    > Kun hotfix-korjaukset on asennettu, seuraava **SalesPopulateProspectToCash**-lomakkeen erätyö on käynnistettävä. Tämä lomake on piilotettu, koska sitä tarvitaan vain kerran. Voit käyttää lomaketta kirjautumalla ympäristöön ja lisäämällä seuraavan URL-osoitteeseen selaimen osoitekentässä. Esimerkki: `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Kun lomake avautuu, valitse OK. **SalesLine**-, **SalesQuotationLine**- ja **CustInvoiceTrans**-taulukkojenn uuteen **LineCreationSequnceNumber**-kenttiin täytetään yksilöivät arvot, jolloin tuoteluettelo päivittyy. Tämä on välttämätöntä, jotta Prospektista käteiseksi -integrointi toimisi.
 
 
 ## <a name="system-requirements-for-sales"></a>Sales-sovelluksen järjestelmävaatimukset
@@ -96,12 +87,6 @@ Seuraavat komponentit on asennettava, jotta prospektista käteiseksi -ratkaisua 
 
 - Dynamics 365 for Sales -versio 1612 (8.2.1.207) (DB 8.2.1.207) online
 - Dynamics 365 for Salesin prospektista käteiseksi -ratkaisu, versio 1.15.0.0 (v15) 
-
-   > [!NOTE]
-   >
-   > Malleja, joiden versio on 1.0.0.0 tai 1.0.0.1, tuetaan prospektista käteiseksi -ratkaisussa Dynamics 365 for Sales -versiossa 1.14.1.0
-   >
-   > Malleja, joiden versio on 2.0.0.0 tai 2.1.0.0, tuetaan prospektista käteiseksi -ratkaisussa Dynamics 365 for Sales -versiossa 1.15.0.0
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Asenna Salesin prospektista käteiseksi -ratkaisu
 

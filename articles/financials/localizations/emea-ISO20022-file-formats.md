@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,16 +17,17 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 599440449f1e8c8dcc3762ce9f6da7a37beb358f
+ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
+ms.openlocfilehash: 1492e4d8220a3d515145d97ef8dad048727d97c8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/14/2018
 
 ---
 
 # <a name="import-iso20022-files"></a>ISO20022-tiedostojen tuominen
 
-## <a name="overview"></a>Yleiskuvaus
+[!include[banner](../includes/banner.md)]
+
 Voit tuoda maksutiedostoja seuraavissa muodoissa:
 
  - **ISO20022 camt.054 -hyvitysilmoitus** – tuo saapuvat maksut tiedostosta tässä muodossa asiakkaan maksukirjauskansioon.
@@ -40,7 +42,7 @@ Pankki-ilmoitussanomien tuonti camt.054.001.002-muodossa asiakkaan maksukirjausk
 4. Määritä **Pankkitilit** -sivulla yrityksen pankkitilit antamalla seuraavat tiedot: IBAN-numero tai pankkitilin numero, SWIFT-koodi tai reititysnumero, valuutta ja osoite.
 
     > [!NOTE]
-    > Jos aiot käyttää pankkitilin täsmäytyksen lisätoimintoja, valitse **Täsmäytys**-pikavälilehdessä **Pankkitilin täsmäytyksen lisätoiminnot** -asetukseksi **Kyllä**. Jos aiot täsmäyttää kirjaamattomat tuodut maksut, valitset **Käytä tiliotteita sähköisten maksujen vahvistuksena** -asetukseksi **Kyllä**.
+        > Jos aiot käyttää pankkitilin täsmäytyksen lisätoimintoja, valitse **Täsmäytys**-pikavälilehdessä **Pankkitilin täsmäytyksen lisätoiminnot** -asetukseksi **Kyllä**. Jos aiot täsmäyttää kirjaamattomat tuodut maksut, valitset **Käytä tiliotteita sähköisten maksujen vahvistuksena** -asetukseksi **Kyllä**.
 
 5. Valinnainen: Määritä **Tapahtumakoodin määritys** -sivulla tiedostossa olevien pankin tapahtumakoodien ja pankin tapahtumatyyppien välinen määritys.
 6. Jos tiedostossa on tapahtumakuluja, jotka haluat kirjata yhdessä saapuvan maksun kanssa, luo maksulisä **Asiakkaan maksulisä** -sivulla. Liitä maksulisä sitten maksulisän asetusten **Maksutavat** -sivulla pankkitiliin.
@@ -53,9 +55,7 @@ Pankki-ilmoitussanomien tuonti camt.054.001.002-muodossa asiakkaan maksukirjausk
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>camt.054-hyvitysilmoitustiedoston tuominen asiakkaan maksukirjauskansioon
 1. Valitse **Asiakkaan maksukirjauskansion rivit** -sivulla **Toiminnot** > **Viitesuoritusten luku**.
 2. Valitse maksutapa, jossa on ISO20022 camt.054-muodon edellyttämät asetukset.
-3. Määritä tarvittavat parametrit ja tiedoston polku. Valitse sitten **OK**.
-
-Tiedosto tuodaan.
+3. Määritä tarvittavat parametrit ja tiedoston polku. Valitse sitten **OK**. Tiedosto tuodaan.
 
 ## <a name="prerequisites-for-importing-files-in-the-pain002-status-return-and-camt054-debit-advice-formats-into-the-ap-payment-transfer-journal"></a>pain.002 -tilapalautusmuodossa ja camt.054 -veloitusilmoitusmuodossa ostoreskontran maksujen siirtokirjauskansioon tuotavien tietojen edellytykset
 Seuraavat edellytykset on suoritettava, jotta pankkisanomat voidaan tuoda seuraavissa ISO20022-muodoissa **Toimittajan maksujen siirto** -sivulle: pain.002.001.003 -tilapalautussanomat ja camt.054.001.002-veloitusilmoitus.

@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
-ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
+ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
+ms.openlocfilehash: 0f83735ec42e945c5e0abf8d72b83936e076e60e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 02/27/2018
 
 ---
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 01/15/2018
 
 
 > [!NOTE]
-> Tässä ohjeaiheessa käsitellään pilvikäyttöönottojen varastoinnin määrittämistä. Lisätietoja varastoinnin määrittämisestä paikallisissa käyttöönotoissa on kohdassa [Varastointi paikallisissa käyttöönottoja](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
+
+> Tässä ohjeaiheessa käsitellään pilvikäyttöönottojen varastoinnin määrittämistä. Lisätietoja varastoinnin määrittämisestä paikallisissa käyttöönotoissa on kohdassa [Varastointi paikallisissa käyttöönottoja](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+
 
 Tässä ohjeaiheessa kerrotaan, miten asennat ja määrität Microsoft Dynamics 365 for Finance and Operationsin varastointisovelluksen.
 
@@ -44,7 +46,7 @@ Sovellus on saatavilla Android- ja Windows-käyttöjärjestelmille. Jos haluat k
 
 | Ympäristö                    | Versio                                                                                                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
+| Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
 | Windows (UWP)               | Windows 10 (kaikki versiot)                                                                                                                                                   |
 | Finance and Operations | Microsoft Dynamics 365 for Operationsin versio 1611 <br>-tai- <br>Microsoft Dynamics AX:n versio 7.0/7.0.1 ja Microsoft Dynamics AX -ympäristöpäivitys 2 ja hotfix-korjaus KB 3210014 |
 
@@ -93,7 +95,7 @@ Sinun on määritettävä sovellus laitteessa muodostaaksesi yhteyden Finance an
     + **Azure Active Directory -asiakkaan tunnus** – asiakkaan tunnus saadaan vaiheessa 9 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
     + **Azure Active Directory -asiakkaan salasana** – Asiakkaan salasana saadaan vaiheessa 11 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
     + **Azure Active Directory -resurssi** – Azure AD -resurssi esittää Finance and Operationsin pääkansion URL-osoitetta. **Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
-    + **Azure Active Directory -vuokralainen** – Azure AD -vuokralaista käytetään Finance and Operations -palvelimen kanssa: https://login.windows.net/your-AD-tenant-ID. Esimerkiksi: https://login.windows.net/contosooperations.onmicrosoft.com.
+    + **Azure Active Directory -vuokralainen** – Azure AD -vuokralaista käytetään Finance and Operations -palvelimen kanssa: `https://login.windows.net/your-AD-tenant-ID` Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
     + **Yritys** – Anna Finance and Operationsin yritys, johon haluat muodostaa sovelluksella yhteyden. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Valitse **Takaisin** -painike sovelluksen vasemmassa yläkulmassa. Sovellus muodostaa nyt yhteyden Finance and Operations -palvelimeen ja fyysisen varaston työntekijän kirjautumisnäyttö avautuu. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
@@ -103,7 +105,7 @@ Jos laite katoaa tai vaarantuu, laitteen Finance and Operationsin käyttöoikeud
 
 1.  Finance and Operationsissa kohtaan **Järjestelmän hallinta** &gt; **Asetukset** &gt; **Azure Active Directory -sovellukset**.
 2.  Poista rivi, joka vastaa laitetta, jonka haluat poistaa. Muista irrotetun laitteen **asiakastunnus**, sillä tarvitset sitä myöhemmin.
-3.  Kirjaudu sisään Azure-portaaliin osoitteessa <https://portal.azure.com>.
+3.  Kirjaudu Azure-portaalin osoitteessa <https://portal.azure.com>.
 4.  Valitse vasemmassa valikossa **Active Directory** ja varmista, että olet oikeassa hakemistossa.
 5.  Valitse luettelossa ensin **sovelluksen rekisteröinnit** ja sitten määritettävä sovellus. Avautuvalla **asetusten** sivulla on määritystiedot.
 6.  Varmista, että sovelluksen **asiakastunnus** on sama kuin tämän osan vaiheessa 2.

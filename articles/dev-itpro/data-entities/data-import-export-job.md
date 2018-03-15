@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 40bfc3f1f7c5fe1eec788d252cbe7be7d1c7536f
-ms.openlocfilehash: 3bd6eaa0518bd4752704836c04457dccd486d692
+ms.sourcegitcommit: e444168f249e798fa68b9b082556aa8e5e7d8113
+ms.openlocfilehash: 0e1c5120bf8558b955b66e059a8be8bbec2c2ce1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/13/2018
 
 ---
 
@@ -50,6 +50,9 @@ Nämä ovat ohjeet tietojen tuontiin tai viemiseen.
 6. Tyhjennä väliaikaiset taulut.
 
 Loput tämän ohjeaiheen osat sisältävät tarkempia tietoja kustakin prosessin vaiheesta.
+
+> [!NOTE]
+> Saat uusimmat edistymistiedot näkyviin päivittämällä tietojen tuonti- ja vientilomakkeen päivityskuvakkeella. Selaintason päivitystä ei suositella, koska se keskeyttää mahdolliset erien ulkopuoliset tuonti- ja vientityöt.
 
 ## <a name="create-an-import-or-export-job"></a>Luo tuonti- tai vientityö
 Tietojen tuonti- tai vientityön voi suorittaa useita kertoja.

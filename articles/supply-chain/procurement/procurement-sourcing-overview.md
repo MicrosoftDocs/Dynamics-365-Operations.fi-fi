@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0692518afc5c8b385773dad3c44dc4e3c978362b
+ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
+ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -62,7 +62,7 @@ Ostotilausta luodessasi useisiin kenttiin on täytetty valmiiksi oletusmuotoisia
 
 ### <a name="prices-and-discounts"></a>Hinnat ja alennukset
 
-Hinnat ja alennukset -kohta sisältää tietoja toimittajan tarjoamista hinnoista, alennuksista ja ostohyvitysehdoista. Hinnat ja sopimukset voidaan ilmaista *kauppa**sopimuksina*. Kauppasopimukset sisältävät toimittajien hinnastot sisältäen hinnat tai alennukset, ja niillä on tietyt päivämäärävälit, jolloin sopimus on voimassa. Hinnat ja alennukset voidaan neuvotella ja ne voidaan esitellä *ostosopimusten kautta*, mukaan lukien ehdot kuten sitoumus ostaa tietty määrä tai tietystä rahallisesta arvosta neuvoteltujen ehtojen edellytyksenä. *Ostohyvityssopimuksia* voidaan solmia toimittajien kanssa, kun määrättyjen tuotteiden tai tuoreryhmien ostaminen saattaa aiheuttaa toimittajan myöntämän hyvityksen ostojen summasta tai volyymistä riippuen.
+Hinnat ja alennukset -kohta sisältää tietoja toimittajan tarjoamista hinnoista, alennuksista ja ostohyvitysehdoista. Hinnat ja sopimukset voidaan ilmaista *kauppa* *sopimuksina*. Kauppasopimukset sisältävät toimittajien hinnastot sisältäen hinnat tai alennukset, ja niillä on tietyt päivämäärävälit, jolloin sopimus on voimassa. Hinnat ja alennukset voidaan neuvotella ja ne voidaan esitellä *ostosopimusten kautta*, mukaan lukien ehdot kuten sitoumus ostaa tietty määrä tai tietystä rahallisesta arvosta neuvoteltujen ehtojen edellytyksenä. *Ostohyvityssopimuksia* voidaan solmia toimittajien kanssa, kun määrättyjen tuotteiden tai tuoreryhmien ostaminen saattaa aiheuttaa toimittajan myöntämän hyvityksen ostojen summasta tai volyymistä riippuen.
 
 ### <a name="delivery-options"></a>Toimitusvaihtoehdot
 

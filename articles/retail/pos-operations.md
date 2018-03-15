@@ -1,5 +1,5 @@
 ---
-title: POS-toiminnot
+title: POS-toiminnot verkossa ja paikallisesti
 description: "Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 for Retail -sovelluksen myyntipisteen toiminnoista. Ohjeaihe määrittää, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä offline-tilassa."
 author: jblucher
 manager: AnnBe
@@ -19,14 +19,17 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
-ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
+ms.sourcegitcommit: edfed83d4703c081d857faad0771dc1010be41b4
+ms.openlocfilehash: edd6dd23066eca782b8fd510dabab612241e480a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 02/13/2018
 
 ---
 
-# <a name="pos-operations"></a>POS-toiminnot
+# <a name="pos-operations-online-and-offline"></a>POS-toiminnot verkossa ja paikallisesti
+
+[!include[banner](includes/banner.md)]
+
 Useimmat käyttäjän myyntipisteessä tekemät toimenpiteet ovat toimintoja. Toiminnot määritetään ja niitä hallinnoidaan Microsoft Dynamics 365 for Retail -sovelluksen taustajärjestelmässä. Myyntipisteen painikeruudukon painikkeisiin voi lisätä useita toimintoja. Käyttäjät voivat tämän jälkeen valita painikkeita ja käynnistää toimintoja. Muut toiminnot ovat osa myyntipisteen pääsovellusta. Ne käynnistetään joko näytön painikkeiden avulla tai muiden työnkulkujen tai prosessien osana.
 
 Seuraavassa taulukossa on tietoja Dynamics 365 for Retail -sovelluksen Retail Modern POS- tai Cloud POS -myyntipisteen toiminnoista. Taulukossa määritetään myös, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä, kun myyntipiste on offline-tilassa.

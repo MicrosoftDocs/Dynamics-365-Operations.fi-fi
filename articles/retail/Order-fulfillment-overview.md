@@ -18,14 +18,16 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ec6cb212766dd90fa9db7719a2119419ecb935c7
-ms.openlocfilehash: e0aa0e576f88fd497472aa4141704a66d51605c3
+ms.sourcegitcommit: 997b6843fb729ed204e4e8ec5369c5a380efc25e
+ms.openlocfilehash: fb36f6ce81c5e781e3c98132f18ecbd84d0d4089
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/12/2018
 
 ---
 
 # <a name="store-order-fulfillment"></a>Myymälän tilauksen täyttäminen
+
+[!include[banner](includes/banner.md)]
 
 Monet jälleenmyyjät haluaisivat optimoida tilausten täyttämisen antamalla myymälöille mahdolliseen täyttää tilauksia. Tilauksen täyttäminen myymälätasolla voi helpottaa yksittäisten myymälöiden liian suuria varastoja. Se voi olla tarpeellista myös logistiikan vuoksi tilanteissa, joissa myymälässä on ylimääräistä tilaa tai joissa se sijaitsee toimituksen kannalta lähempänä asiakasta. Näitä tarpeita varten myyntipisteissä voi käytätä yhdistettyä tilausten täyttämistoimintoa.
 
@@ -56,7 +58,7 @@ Rivit voidaan valita toimintoruudun **Valitse**-toiminnolla. Kun **Valitse** on 
 
 ## <a name="line-details"></a>Rivin erittely
 
-Rivin tiedot voidaan näyttää käyttämällä rivitietojen lisätietoikkunaa. Avattuna tässä ikkunassa on kaksi välilehteä, jossa on lisätietoja valitusta rivistä. Ensimmäisessä **Rivin erittely** -välilehdessä on tietoja itse rivistä sekä tilatusta ja jäljellä olevasta määrästä. Näkyvissä on myös muita tietoja, kuten noudettu, pakattu ja laskutettu määrä sekä toimitustapa ja toimitusosoite. **Tilauksen tiedot** -välilehdessä on tilauksen otsikon tiedot, kuten asiakas, asiakastunnus, tilausnumero, tilauksen kokonaissumma ja saldo.
+Rivin tiedot voidaan näyttää käyttämällä rivitietojen lisätietoikkunaa. Avattuna tässä ikkunassa on kolme välilehteä, jossa on lisätietoja valitusta rivistä. Ensimmäisessä **Rivin erittely** -välilehdessä on tietoja itse rivistä sekä tilatusta ja jäljellä olevasta määrästä. Näkyvissä on myös muita tietoja, kuten noudettu, pakattu ja laskutettu määrä sekä toimitustapa ja toimitusosoite. **Tilauksen tiedot** -välilehdessä on tilauksen otsikon tiedot, kuten asiakas, asiakastunnus, tilausnumero, tilauksen kokonaissumma ja saldo. **Varasto**-välilehdessä on tietoja valitun rivin fyysisesti saatavilla olevasta varastosta, varatusta varastosta ja tilatusta varastosta.
 
 Jos valittuna on useita rivejä, tilauksen rivitietojen lisätietoikkuna ilmaisee vain, että useita rivejä on valittu. Jos haluat näyttää yhden rivin tiedot, poista rivejä, kunnes jäljellä on vain yksi rivi. 
 
