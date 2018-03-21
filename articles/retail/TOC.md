@@ -39,8 +39,9 @@
 # Kanavan määrittäminen ja hallinta
 ## [Alkutietojen alustaminen Retail-ympäristössä](enable-configure-retail-functionality.md)
 ## [Vähittäismyyntikanavien määrittäminen](define-maintain-retail-channels.md)
+## [Toimintojen hallinta](assortments.md)
 ## [Verkkokaupan yleiskatsaus](online-stores.md)
-## [Retail-laiteaseman määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md)
+## [Retail hardware stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md)
 ## [Retail-sovelluksen työajan seuranta](retail-time-attendance.md)
 
 # Modern Point of Sale (MPOS) ja Cloud POS
@@ -55,6 +56,7 @@
 ## Näytön asettelu
 ### [POS-myyntipisteen näytön asettelujen määrittäminen](pos-screen-layouts.md)
 ### [Retail POS:n asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
+### [Ilmoitusasetusten valitseminen](Notifications-POS.md)
 ### [POS-sovellus ja käyttäjän kielialueasetukset](pos-application-user-language-settings.md)
 ### [MPOS-kuvien määrittäminen](set-up-manage-images-retail-mpos.md)
 ## [Tietokoodien yleiskatsaus](info-codes-retail.md) 
@@ -99,7 +101,8 @@
 
 # Tuotteet ja myynninedistäminen
 ## [Tuotetietojen yleiskatsaus](../supply-chain/pim/product-information.md)
-## [Retail-hierarkiat](retail-hierarchies.md)
+## [Vähittäismyyntihierarkiat](retail-hierarchies.md)
+## [Määritteet ja määriteryhmien yleiskatsaus](attribute-attributegroups-lifecycle.md)
 ## [Määritteiden luonti ja hallinta](create-manage-attributes.md)
 ## [Vähittäismyyntituotteiden määrittäminen](set-up-retail-products.md)
 ## [Tuotedimensiot](../supply-chain/pim/product-dimensions.md)
@@ -131,8 +134,18 @@
 ## [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](../talent/departments-jobs-positions.md)
 ## [Työn komponenttien määrittäminen](../talent/create-job.md)
 
+# Lokalisointi- ja säädösominaisuudet
+## Intia
+### [Kassakoneiden GST-veron integrointi Intiassa](localizations/apac-ind-cash-registers.md)
+### [Käyttöönotto-ohjeet Intian kassakoneille](localizations/apac-ind-loc-deployment-guidelines.md)
+## Norja
+### [Norjan kassakoneet](localizations/emea-nor-cash-registers.md)
+### [Käyttöönotto-ohjeet Norjan kassakoneille](localizations/emea-nor-loc-deployment-guidelines.md)
+## Ruotsi
+### [Ruotsin kassakoneet](localizations/emea-swe-cash-registers.md)
+
 # Retail-tehtävät
-## [Luo tuote](../supply-chain/pim/tasks/create-product.md)
+## [Tuotteen luonti](../supply-chain/pim/tasks/create-product.md)
 ## [Linkitettyjen tuotteiden määrittäminen](../supply-chain/pim/tasks/configure-linked-products.md)
 ## [Tuotteen tai päätuotteen vapauttaminen yrityksille](../supply-chain/pim/tasks/release-product-product-master-legal-entities.md)
 ## [Perushinta ja kauppasopimukset](tasks/base-price-trade-agreements.md)
@@ -249,10 +262,6 @@
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Retail SDK:n integraatio jatkuvaan muodostusjärjestelmään](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Retail SDK:n laajennettavuusmallit](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [Ruotsin kassakoneet](localizations/emea-swe-cash-registers.md)
-### [Retail POS -integraatiomalli, jossa on Ruotsin tarkistusyksiköt](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
-### [Norjan kassakoneet](localizations/emea-nor-cash-registers.md)
-### [Käyttöönotto-ohjeet Norjan kassakoneille](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail SDK:n pakkaus](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK:n mallit ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Kanavan tietokantatunnisteet](dev-itpro/channel-db-extensions.md)
