@@ -21,7 +21,8 @@
 #### [AX 2012 -ominaisuudet, joita on lykätty](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa](get-started/features-not-implemented-on-prem.md)
 #### [Versiot ja käyttöikäkäytäntö](../dev-itpro/migration-upgrade/versions-update-policy.md)
-#### [Ympäristön päivitys 13 (tammikuu 2018)](get-started/whats-new-platform-update-13.md)
+#### [Paikallinen käyttöönotto (maaliskuu 2018)](get-started/whats-new-LBD-PU12-App72.md)
+#### [Platform update 13 (tammikuu 2018)](get-started/whats-new-platform-update-13.md)
 #### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 -päivitys (marraskuu 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform-päivitys 11 (lokakuu 2017)](get-started/whats-new-platform-update-11.md)
@@ -134,7 +135,7 @@
 ### [Power BI:n kustannustenhallinnan sisältöpaketti](../dev-itpro/analytics/cost-management-content-pack.md)
 
 ## Tietojen integrointi
-### [Integrointimallit](../dev-itpro/data-entities/integration-overview.md)
+### [Tietojen integroinnin (tuonti/vienti) strategian valitseminen](../dev-itpro/data-entities/integration-overview.md)
 
 ### Tietojen integroinnin ohjelmointirajapinnat
 #### [Tietojen hallintapaketin API](../dev-itpro/data-entities/data-management-api.md)
@@ -157,10 +158,9 @@
 ###### [Tilien ylläpito Salesissa ja tilien synkronointi suoraan Salesista Finance and Operationsiin](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ###### [Tuotteiden ylläpito Finance and Operationsissa ja synkronointi suoraan Salesiin](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ###### [Salesin yhteyshenkilöiden ylläpito ja synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Myyntitarjouksien synkronointi suoraan Salesista Finance and Operationsiin](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-###### [Myyntitilausten synkronointi suoraan Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-###### [Myyntilaskun synkronointi suoraan Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Myyntitarjousten ylläpito Salesissa ja niiden synkronointi suoraan Finance and Operationsiin](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Myyntitilausten ylläpito Finance and Operationsissa ja niiden synkronointi suoraan Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Myyntilaskujen ylläpito Finance and Operationsissa ja niiden synkronointi suoraan Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 
 
 #### [Ulkoisten verkkopalveluiden käyttö](../dev-itpro/data-entities/consume-external-web-service.md)
@@ -473,7 +473,13 @@
 #### [Kuluraportin jaot](../financials/expense-management/expense-report-distributions.md)
 #### [Konsernin sisäiset kulut](../financials/expense-management/intercompany-expense.md)
 #### [Kulukäytännöt](../financials/expense-management/travel-expense-policies.md)
-
+#### [Kuluraportin näyttäminen](../financials/expense-management/view-expense-report.md)
+#### [Kuluraportin julkaiseminen](../financials/expense-management/post-expense.md)
+#### [Kuluraportit ja useita hyväksyjiä](../financials/expense-management/expense-report-multiple-approvers.md)
+#### [ALV:n palautus matkalaskuissa](../financials/expense-management/VAT-expense-report.md)
+#### [Päivärahasäännöt](../financials/expense-management/per-diem.md)
+#### [Matkahankinnat](../financials/expense-management/travel-req.md)
+#### [Henkilökohtaiset kulut kuluraportissa](../financials/expense-management/personal-expenses.md)
 
 ### [Budjetointi](../financials/budgeting/budgeting-overview.md)
 #### [Budjetin suunnittelun yleiskatsaus ](../financials/budgeting/budget-planning-overview-configuration.md)
@@ -631,6 +637,8 @@
 ##### [Veromoduulin integrointi](../financials/general-ledger/tax-engine-integration.md)
 ##### [Veron raja-arvot – usein kysytyt kysymykset](../financials/localizations/apac-ind-tax-thresholds.md)
 ##### [Veromoduulin laajentaminen](../financials/general-ledger/extend-tax-engine-configurations.md)
+##### [Kassakoneiden GST-veron integrointi](../retail/localizations/apac-ind-cash-registers.md)
+##### [Käyttöönotto-ohjeet kassakoneille](../retail/localizations/apac-ind-loc-deployment-guidelines.md)
 
 #### Japani
 ##### [Käyttöomaisuuden hankkiminen ja valtionavustuksen hakeminen](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -910,7 +918,10 @@
 ##### [Asiakkaan ja toimittajan maksumuodot](../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md)
 ##### [Asiakasmaksu maksutunnuksen perusteella](../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md)
 ##### [Nets-tuontimuoto](../financials/localizations/emea-nor-nets-import-format.md)
-##### [ALV-ilmoitus](../financials/localizations/emea-nor-sales-tax-payment-report.md) 
+##### [ALV-ilmoitus](../financials/localizations/emea-nor-sales-tax-payment-report.md)
+##### [Kassakoneet](../retail/localizations/emea-nor-cash-registers.md)
+##### [Käyttöönotto-ohjeet kassakoneille](../retail/localizations/emea-nor-loc-deployment-guidelines.md)
+
 #### Puola
 ##### [Rivialennusten laskenta yksikköhinnasta](../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
 ##### [Korjaushuomautukset](../financials/localizations/emea-pol-correction-notes.md)
@@ -937,6 +948,7 @@
 ##### [Erikoisviennit ja aloitustaseet](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Ruotsi
 ##### [Tuontimaksumuodot](../financials/localizations/emea-swe-payment-formats-import.md)
+##### [Kassakoneet](../retail/localizations/emea-swe-cash-registers.md)
 #### Sveitsi
 ##### [Asiakasmaksujen tuonti ESR-maksumääräyksessä](../financials/localizations/emea-che-esr-customer-payments-import.md)
 #### Iso-Britannia
@@ -1644,6 +1656,7 @@
 ##### [Operatiiviset resurssit](../supply-chain/production-control/operations-resources.md)
 ##### [Resurssin ominaisuudet](../supply-chain/production-control/resource-capabilities.md)
 ##### [Erämääritteet](../supply-chain/production-control/batch-attributes.md)
+##### [Erän tasaus](../supply-chain/production-control/batch-balancing.md)
 ##### [Kaavan kopioiminen (tehtäväopas)](../supply-chain/production-control/tasks/copy-formula.md)
 ##### [Kaavan luominen kopioimalla aiemmin luotu kaava (tehtäväopas)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
 ##### [Kopioi oheistuotteet aiemmasta luodusta reseptiversiosta (tehtäväopas)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
@@ -1808,6 +1821,7 @@
 #### [Mittayksikkö ja varastointikäytännöt](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Varaston Power BI -sisältö](../dev-itpro/analytics/warehouse-power-bi-content.md)
 #### [Järjestelmän ryhmittely avoimessa työluettelossa](../supply-chain/warehousing/system-group-on-open-work-list.md)
+#### [Viivakoodien lukeminen kameralla Dynamics 365 for Finance and Operationsissa](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Mobiililaitteiden viivakoodien tuki](../supply-chain/warehousing/mobile-barcode-support.md)
 ### [Varaston työkäytännöt](../supply-chain/warehousing/warehouse-work-policies.md)
 #### [Työhön liitetyn varaston siirtäminen varastonhallinnassa](../supply-chain/warehousing/move-inventory-associated-work.md)
@@ -1818,6 +1832,7 @@
 #### [Yhdistetyn rekisterikilven vastaanotto](../supply-chain/warehousing/mixed-license-plate-receiving.md)
 #### [Varaston vanhojen erien näyttämisen määrittäminen mobiililaitteessa](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
 #### [Mobiililaitteen vanhimman erän kerääminen](../supply-chain/warehousing/pick-oldest-batch.md)
+#### [Viivakoodien lukeminen kameralla Dynamics 365 for Finance and Operationsissa](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Kappaleen keräilyvahvistus](../supply-chain/warehousing/piece-picking-confirmation.md)
 #### [Tuotteen vahvistus klusterikeräilyä varten](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
 #### [Osittain varattujen siirtotilauserien vapautus](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
