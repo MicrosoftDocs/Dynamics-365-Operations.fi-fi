@@ -3,7 +3,7 @@ title: Uudet ja muuttuneet ominaisuudet
 description: "Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Microsoft Dynamics 365 for Finance and Operations -ympäristöversioiden uusista ominaisuuksista."
 author: josaw1
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,6 +34,8 @@ Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Micr
 
 Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä koskeva päivitysprosessi](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
+
+[!include[release notes](../includes/release-notes.md)]
 
 ## <a name="application-releases"></a>Sovelluksen versiot
 
