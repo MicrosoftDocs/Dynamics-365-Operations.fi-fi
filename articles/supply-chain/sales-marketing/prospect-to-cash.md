@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
+ms.sourcegitcommit: e342c67f53828c77f77d99a2c3f909a23ced8989
+ms.openlocfilehash: 5d9bc41c92258f9856088b04ec5af123c8e915e5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -42,9 +42,8 @@ Nykyisessä versiossa prospektista käteiseksi -ratkaisu mahdollistaa seuraavat 
 - [Tilien ylläpito Salesissa ja tilien synkronointi suoraan Salesista Finance and Operationsiin](accounts-template-mapping-direct.md)
 - [Tuotteiden ylläpito Finance and Operationsissa ja synkronointi suoraan Salesiin](products-template-mapping-direct.md)
 - [Salesin yhteyshenkilöiden ylläpito ja synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](contacts-template-mapping-direct.md)
-- [Myyntitarjouksien synkronointi suoraan Salesista Finance and Operationsiin (julkaisua odottava malli)](sales-quotation-template-mapping-sales-fin.md)
-- [Myyntitilausten synkronointi suoraan Finance and Operationsista Salesiin](sales-order-template-mapping-direct.md)
-- [Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä (julkaisua odottava malli)](sales-order-template-mapping-direct-two-ways.md)
+- [Myyntitarjouksien synkronointi suoraan Salesista Finance and Operationsiin](sales-quotation-template-mapping-sales-fin.md)
+- [Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä](sales-order-template-mapping-direct-two-ways.md)
 - [Myyntilaskun synkronointi suoraan Finance and Operationsista Salesiin](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations -sovelluksen järjestelmävaatimukset
@@ -85,7 +84,7 @@ Prospektista käteiseksi -integraatio tuetaan seuraavissa versioissa:
 
 Seuraavat komponentit on asennettava, jotta prospektista käteiseksi -ratkaisua voi käyttää:
 
-- Dynamics 365 for Sales -versio 1612 (8.2.1.207) (DB 8.2.1.207) online
+- Dynamics 365 for Sales -versio 1612 (8.2.1.207) (DB 8.2.1.207) online tai uudempi versio
 - Dynamics 365 for Salesin prospektista käteiseksi -ratkaisu, versio 1.15.0.0 (v15) 
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Asenna Salesin prospektista käteiseksi -ratkaisu

@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
-ms.openlocfilehash: ba43f5b71dac102c74fe87c0a2b4376b16b5cd40
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: b2514b6ff7500863a312ee378be008a7dcfb7438
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 03/07/2018
 
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent-sovelluksen käytön aloittaminen

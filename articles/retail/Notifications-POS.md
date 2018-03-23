@@ -1,9 +1,9 @@
 ---
 title: "Tilausilmoitusten näyttäminen myyntipisteessä"
-description: "Tässä aiheessa käsitellään tilausilmoitusten ottamista käyttöön myyntipisteessä ja muiden toimintoihin laajennettavissa olevaa ilmoituskehikkoa."
+description: "Tässä ohjeaiheessa käsitellään tilausilmoitusten ottamista käyttöön myyntipisteessä ja ilmoituskehikkoa. Kehittäjät voivat jatkossa laajentaa nämä ilmoitukset tilausten täyttämistoimintojen lisäksi muihin toimintoihin."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,49 +18,58 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: a1206aea3f78246951581c1dc6338e39a0942ea2
+ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
+ms.openlocfilehash: a55af4c26d74cc392d3c53aacb66e0a8bc97abf2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
-# <a name="display-notifications-in-point-of-sale"></a>Ilmoitusten näyttäminen myyntipisteessä
+# <a name="show-order-notifications-in-the-point-of-sale"></a>Tilausilmoitusten näyttäminen myyntipisteessä
 
 [!include[banner](includes/banner.md)]
 
-Nykyaikaisessa vähittäismyyntiympäristössä myyjillä on monenlaisissa tehtäviä, kuten asiakaspalvelua, tapahtumien kirjaamista, inventointia ja tilausten vastaanottamista myymälässä. Myyntipisteen asiakasohjelma auttaa myyjiä tekemään nämä tehtävät ja paljon muuta – samassa sovelluksessa. Koska myyjien on tehtävä päivän aikana monenlaisia tehtäviä, heille on ehkä erikseen ilmoitettava, jos heidän on hoidettava jokin tehtävä. Myyntipisteen ilmoituskehikko ratkaisee tämän ongelman niin, että jälleenmyyjät voivat määrittää roolipohjaisia ilmoituksia. Dynamics 365 for Retailin sovelluspäivityksessä 5 nämä ilmoitukset voidaan määrittää vain myyntipistetoiminnoille.
+Nykyaikaisessa vähittäismyyntiympäristössä myyjillä on monenlaisissa tehtäviä, kuten asiakaspalvelua, tapahtumien kirjaamista, inventointia ja tilausten vastaanottamista myymälässä. Myyntipisteen asiakasohjelma auttaa myyjiä tekemään nämä tehtävät ja paljon muuta yhdessä sovelluksessa. Koska myyjien on tehtävä päivän aikana monenlaisia tehtäviä, heille on ehkä erikseen ilmoitettava, jos heidän on hoidettava jokin tehtävä. Myyntipisteen ilmoituskehikko ratkaisee tämän ongelman niin, että jälleenmyyjät voivat määrittää roolipohjaisia ilmoituksia. Microsoft Dynamics 365 for Retailin sovelluspäivityksessä 5 nämä ilmoitukset voidaan määrittää vain myyntipistetoiminnoille.
 
-Tällä hetkellä järjestelmässä voi näyttää tilauksen täyttämistoiminnon ilmoituksia. Kehikko on kuitenkin suunniteltu laajennettavaksi, joten jatkossa kehittäjät voivat muodostaa ilmoituskäsittelijän mille tahansa toiminnolle ja näyttää ilmoitukset myyntipisteessä.  
+Tällä hetkellä järjestelmä näyttää vain tilausten täyttämistoimintojen ilmoitukset. Koska kehikko on kuitenkin suunniteltu laajennettavaksi, kehittäjät voivat jatkossa kirjoittaa ilmoituskäsittelijän mille tahansa toiminnolle ja näyttää kyseisen toiminnon ilmoitukset myyntipisteessä.
 
 ## <a name="enable-notifications-for-order-fulfillment-operations"></a>Tilauksen täyttämistoimintojen ilmoitusten ottaminen käyttöön
 
-Voit ottaa tilauksen täyttämistoimintojen ilmoituksen käyttöön seuraavien ohjeiden mukaisesti:
+Voit ottaa tilauksen täyttämistoimintojen ilmoituksen käyttöön seuraavasti.
 
- - Siirry **Toiminnot**-sivulle (**Vähittäismyynti** > **Kanavan asetukset** > **POS-asetukset** > **Myyntipisteen** > **Toiminnot**).
- - Etsi tilauksen täyttämistoiminto ja valitse toiminnon **Ota ilmoitukset käyttöön** -valintaruutu. Tämän valinnan jälkeen ilmoituskehikko kuuntelee tilauksen täyttämistoiminnon käsittelijää. Jos käsittelijä on toteutettu, ilmoitukset näytetään myyntipisteessä. Muussa tapauksessa kyseisen toiminnon ilmoituksia ei näytetä.
-- Siirry työtekijöihin liitettyihin myyntipisteen käyttöoikeuksiin ja lisää **Ilmoitukset**-pikavälilehdessä tilauksen täyttämistoiminto siten, että sen näyttöjärjestyksen arvo on 1. Jos ilmoituksia on määritetty useita, näyttöjärjestys järjestää ilmoitukset ylhäältä alaspäin siten, että 1 on ylimpänä. Vain ne toiminnot voidaan lisätä, joissa **Ota ilmoitukset käyttöön** -valintaruutu on valittu. Ilmoitukset näytetään lisäksi vain niille toiminnoille, jotka on lisätty tässä välilehdessä, ja vain niille työntekijöille, joille toiminnot on lisätty vastaaviin myyntipisteen käyttöoikeuksiin. 
+1. Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **Myyntipiste** &gt; **Toiminnot**.
+2. Etsi **Tilauksen täyttäminen** -toiminto ja valitse sen **Ota ilmoitukset käyttöön** -valintaruutu. Tämä määrittää, että ilmoituskehikon on tarkkailtava tämän toiminnon käsittelijää. Jos käsittelijä otetaan käyttöön, tämän toiminnon ilmoitukset näytetään sitten myyntipisteessä.
+3. Valitse **Vähittäismyynti** &gt; **Työntekijät** &gt; **Työntekijät** &gt; ja avaa Vähittäismyynti-välilehdessä kyseiseen työntekijään liitetyt myyntipisteen käyttöoikeudet Laajenna **Ilmoitukset**-pikavälilehti, lisää **Tilauksen täyttäminen** -toiminto ja valitse **Näyttöjärjestys**-kentän arvoksi **1**. Jos ilmoituksia määritetään useita, ilmoitukset järjestetään tässä kentässä. Ilmoitukset, joiden **Näyttöjärjestys**-arvo on pienempi, näkyvät niiden ilmoitusten yläpuolella, joilla on suurempi arvo. Ilmoitukset, joiden **Näyttöjärjestys**-arvo on **1**, ovat ylimpänä.
+
+    Vain niiden toimintojen ilmoitukset näytetään, jotka on lisätty **Ilmoitukset**-pikavälilehdessä. Voit lisätä toimintoja vain, jos kyseisten toimintojen **Ota ilmoitukset käyttöön** -valintaruutu on valittu **POS-toiminnot**-sivulla. Lisäksi toiminnon ilmoitukset näytetään työntekijöille vain, jos toiminto on lisätty kyseisten työntekijöiden myyntipisteen käyttöoikeuksiin.
+
+    > [!NOTE]
+    > Ilmoitukset voidaan ohittaa käyttäjätasolla. Avaa työntekijän tietue, valitse **Myyntipisteen käyttöoikeudet** ja muokkaa käyttäjän ilmoitusten tilausta.
+
+4. Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **POS-profiilit** &gt; **Toimintoprofiilit**. Määritä **Ilmoitusväli**-kentässä, kuinka usein ilmoitukset noudetaan. Joissakin ilmoituksissa myyntipisteestä on tehtävä reaaliaikaisia soittoja taustasovellukseen. Nämä soitot kuluttavat taustasovelluksen tietojenkäsittelykapasiteettia. Ilmoitusväliä määritettäessä onkin tämän vuoksi harkittava liiketoiminnan tarpeita ja mietittävä, miten reaaliaikaiset soitot vaikuttavat taustasovellukseen. Arvo **0** (nolla) poistaa ilmoitukset käytöstä.
+5. Siirry kohtaan **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulu**. Synkronoi ilmoituksen tilausasetukset valitsemalla **1060** (**Henkilökunta**) ja valitse sitten **Suorita nyt**. Synkronoi seuraavaksi käyttöoikeusväli valitsemalla **1070** (**Kanavan konfigurointi**) ja valitse sitten **Suorita nyt**.
+
+## <a name="view-notifications-in-the-pos"></a>Ilmoitusten tarkastelu myyntipisteessä
+
+Kun edellä olevat vaiheet on tehty, työntekijät voivat katsoa ilmoituksia myyntipisteessä. Voit tarkastella ilmoituksia napsauttamalla ilmoituskuvaketta myyntipisteen oikeassa yläkulmassa. Avautuvassa ilmoituskeskuksessa näkyy tilauksen täyttämistoiminnon ilmoitukset. Seuraavien tilauksen täyttämistoiminnon ryhmien pitäisi näkyä ilmoituskeskuksessa:
+
+- **Nouto myymälästä** – Tämä ryhmä näyttää niiden tilausten määrän, joiden toimitustapa on **Nouto** ja joiden nouto on aikataulutettu nykyisestä myymälästä. Voit avata **Tilauksen täyttäminen** -sivun painalla ryhmän numeroa. Tässä tapauksessa sivu suodatetaan siten, että se näyttää vain tilaukset, jotka on määritetty noudettaviksi nykyisestä myymälästä.
+- **Myymälästä lähetys** – Tämä ryhmä näyttää niiden tilausten määrän, joiden toimitustapa on **Lähetys** ja joiden lähetys on aikataulutettu nykyisestä myymälästä. Voit avata **Tilauksen täyttäminen** -sivun painalla ryhmän numeroa. Tässä tapauksessa sivu suodatetaan siten, että se näyttää vain tilaukset, jotka on määritetty lähetettäväksi nykyisestä myymälästä.
+
+Kun myymälään on määritetty täyttäväksi uusia tilauksia, muuttuva ilmoituskuvake ilmoittaa uusista ilmoituksista ja vastaavien ryhmien määrät päivittyvät. Vaikka ryhmät päivitetään säännöllisesti, myyntipistekäyttäjät voivat päivittää ryhmät koska tahansa manuaalisesti valitsemalla **Päivitä**-painikkeen ryhmän vieressä. Ja jos ryhmässä on uusi nimike, jota nykyinen käyttäjä ei ole katsonut, ryhmän purskekuvake ilmoittaa uudesta sisällöstä.
+
+## <a name="enable-live-content-on-pos-buttons"></a>Live-sisällön ottaminen käyttöön POS-painikkeilla
+
+POS-painikkeissa voi nyt näkyä lukua, joiden avulla työntekijöiden on helppo päätellä, mitkä tehtävät on tehtävä heti. Jos haluat, että tämä luku näkyy POS-painikkeessa, aiemmin tässä ohjeaiheessa selityt ilmoitusasetukset on tehtävä. (Toiminnon ilmoitukset on siis otettava käyttöön, ilmoitusväli määritettävä ja työntekijän myyntipisteen käyttöoikeusryhmä on päivitettävä.) Lisäksi on sinun on avattava painikeruudukon suunnittelutoiminto, tarkasteltava painikkeen ominaisuuksia ja valittava **Ota live-sisältö käyttöön** -valintaruutu. Voit valita **Sisällön tasaus** -kentässä, näkyykö luku painikkeen oikeassa yläkulmassa (**Ylös oikealle**) vai keskellä (**Keskelle**).
 
 > [!NOTE]
-> Ilmoitukset voidaan ohittaa käyttäjätasolla siirtymällä työntekijän tietueeseen, valitsemalla **Myyntipisteen käyttöoikeudet** ja muokkaamalla siten kyseisen käyttäjän ilmoitusten tilausta.
+> Live-sisältö voidaan ottaa toiminnoille käyttöön vain, jos **Ota ilmoitukset käyttöön** -valintaruutu on valittu niille **POS-toiminnot**-sivulla aiemmin tässä ohjeaiheessa kuvatulla tavalla.
 
- - Siirry **Toimintoprofiili**-sivulle (**Vähittäismyynti** > **Kanavan asetukset** > **POS-asetukset** > **POS-profiilit** > **Toimintoprofiilit**). Päivitä **Ilmoitusväli**-ominaisuus määrittämällä minuutteina, kuinka usein ilmoitukset noudetaan. Arvoksi kannattaa valita 10 minuuttia, jotta pääkonttoriin ei synny turhaa viestintää. Jos ilmoitusväliksi valitaan 0, ilmoitukset poistetaan käytöstä.  
+Seuraavassa kuvassa on live-sisällön asetukset painikeruudukon suunnittelutoiminnossa.
 
- - Valitse **Vähittäismyynti** > **Vähittäismyynnin IT** > **Jakeluaikataulu**. Synkronoi ilmoituksen tilausasetukset valitsemalla 1060, henkilökunta ja valitse sitten **Suorita nyt**. Synkronoi seuraavaksi käyttöoikeusväli valitsemalla 1070, kanavan konfigurointi ja valitse sitten **Suorita nyt**. 
+![Painikeruudukon suunnittelutoiminnon Live-sisällön asetukset](./media/ButtonGridDesigner.png "Painikeruudukon suunnittelutoiminnon Live-sisällön asetukset")
 
-## <a name="view-notifications-in-pos"></a>Ilmoitusten tarkastelu myyntipisteessä
+Seuraavassa kuvassa näytetään, miten **Sisällön tasaus** -kentän **Ylös oikealle**- tai **Keskelle**-vaihtoehdon valinta vaikuttaa eri kokoisiin painikkeisiin.
 
-Kun edellä mainitut vaiheet on suoritettu, työntekijät, joille ilmoitukset on määritetty, voivat tarkastella ilmoituksia myyntipisteessä. Voit tarkastella ilmoituksia napsauttamalla ilmoituskuvaketta myyntipisteen otsikkorivillä. Näkyviin tulee ilmoituskeskus, jossa on tilauksen täyttämistoiminnon ilmoitukset. Seuraavien tilauksen täyttämistoiminnon ryhmien pitäisi näkyä ilmoituskeskuksessa: 
-
-- **Odottavat tilaukset** – Tässä ryhmässä näkyy odottavassa tilassa olevien tilausten määrä, kuten tilaukset, jotka myyntipisteen työntekijän on hyväksyttävä ja jolla on riittävät oikeudet myymälän täyttämiseen. Numeron napsauttaminen ryhmässä avaa **Tilauksen täyttäminen** -sivun, joka on suodatettu näyttämään vain odottavat tilaukset, jotka on määritetty täytettäväksi myymälään. Jos myymälän tilaukset hyväksytään automaattisesti, määrä tässä ryhmässä on nolla.
-
-- **Nouto myymälästä** – Tämä ryhmä näyttää niiden tilausten määrän, joiden toimitustapa on **nouto** ja joiden nouto on aikataulutettu nykyisestä myymälästä. Numeron napsauttaminen ryhmässä avaa **Tilauksen täyttäminen** -sivun, joka on suodatettu näyttämään nykyisestä myymälästä noudettavaksi määritetyt aktiiviset tilaukset.
-
-- **Myymälästä lähetys** – Tämä ryhmä näyttää niiden tilausten määrän, joiden toimitustapa on **lähetys** ja joiden lähetys on aikataulutettu nykyisestä myymälästä. Numeron napsauttaminen ryhmässä avaa **Tilauksen täyttäminen** -sivun, joka on suodatettu näyttämään nykyisestä myymälästä lähetettäväksi määritetyt aktiiviset tilaukset.
-
-Kun myymälään on määritetty täyttäväksi uusia tilauksia, muuttuva ilmoituskuvake ilmoittaa uusista ilmoituksista ja vastaavien ryhmien määrät päivittyvät. Käyttäjä voi myös napsauttaa päivityskuvaketta toiminnon nimen vieressä, jolloin ryhmien määrä päivittyy välittömästi. Määrä päivitetään myös määritetyin väliajoin. Kun ryhmässä on uusi nimike, jota nykyinen työntekijä ei ole nähnyt, purskekuvake ilmaisee, että ryhmässä on uusi nimike. Ruudun napsauttaminen ilmoituksessa avaa sen toiminnon, jolle ilmoitus on määritetty. Edellä mainitussa skenaariossa ilmoitusten napsauttaminen avaa **Tilauksen täyttäminen** -sivun ja välittää soveltuvat parametrit: odottavat tilaukset, nouto myymälästä ja myymälästä lähetys. 
-
-> [!NOTE]
-> Odottavien tilausten ilmoitukset otetaan käyttöön Dynamics 365 for Retailin tulevassa päivityksessä. 
-
+![POS-painikkeiden live-sisältö](./media/ButtonsWithLiveContent.png "POS-painikkeiden live-sisältö")
 
