@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a20bb97e451ac59ba23c7f767b5feb336278dcd1
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 2c37f0253454a23d90904dd6b000b955146ad121
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/07/2018
 
 ---
 
@@ -72,14 +72,14 @@ Ohessa on kuvaus tunnisteista, jotka sisältyvät malliin:
 | Kenttä | kuvaus | 
 |---------|---------|
 |< Header >< From >< Credential domain=”” >|Ostajan yrityksen toimialue.|
-|< Otsikko ><Lähde>< Tunnistetieto >< Tunnus >< /Tunnus > | Ostajan yrityksen tunnus.|
-|< Otsikko ><Kohde >< Tunnistetiedot-toimialue = ”” > | Toimittajan yrityksen toimialue.|
-|< Otsikko ><Kohde>< Tunnistetieto >< Tunnus >< /Tunnus> | Toimittajan yrityksen tunnus.|
-|< Otsikko ><Lähettäjä >< Tunnistetiedot-toimialue = ”” > | Ostajan yrityksen toimialue.|
-|< Otsikko ><Lähettäjä>< Tunnistetieto >< Tunnus >< /Tunnus> | Ostajan yrityksen tunnus.|
-|< Otsikko ><< Lähettäjä >< Tunnistetieto >< SharedSecret >< /SharedSecret >|Ostajan yrityksen jaettu salainen koodi.|
-|< Pyydä deploymentMode = ”” >|Testaus tai tuotannon käyttöönotto.|
-|< Pyyntö >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL >|Toimittajan yrityksen siirtymispäätepisteen URL-osoite.|
+|< Header >< From >< Credential>< Identity >< /Identity > | Ostajan yrityksen tunnus.|
+|< Header >< To >< Credential domain=”” > | Toimittajan yrityksen toimialue.|
+|< Header >< To >< Credential>< Identity >< /Identity> | Toimittajan yrityksen tunnus.|
+|< Header >< Sender >< Credential domain=”” > | Ostajan yrityksen toimialue.|
+|< Header >< Sender >< Credential >< Identity >< /Identity> | Ostajan yrityksen tunnus.|
+|< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|Ostajan yrityksen jaettu salainen koodi.|
+|< Request deploymentMode=”” >|Testaus tai tuotannon käyttöönotto.|
+|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|Toimittajan yrityksen siirtymispäätepisteen URL-osoite.|
 
 ### <a name="extrinsic-elements"></a>Ulkoiset elementit
 
@@ -92,15 +92,15 @@ Takaisinlähetysviesti on viesti, joka saadaan toimittajalta, kun käyttäjä ki
 
 | Toimittajalta vastaanotettu viesti | Kopioitu ostoehdotuksen riville Finance and Operationsissa|
 |------------------------------|----------------------------------------------------------|
-|< ItemIn määrä=”” > |Määrä|
+|< ItemIn quantity=”” > |Määrä|
 |< ItemIn >< ItemID >< SupplierPartID >< /SupplierPartID >|Ulkoinen nimiketunnus|
-|< ItemDetail>< UnitPrice >< Rahayksikkö=”” >| Valuutta|
-|< ItemDetail >< UnitPrice >< Raha >< /Raha >| Yksikköhinta|
+|< ItemDetail>< UnitPrice >< Money currency=”” >| Valuutta|
+|< ItemDetail >< UnitPrice >< Money >< /Money >| Yksikköhinta|
 |< ItemDetail >< Description ShortName=”” >|Tuotteen nimi|
-|< ItemDetail >< Kuvaus >< /Kuvaus >|Sisältyy nimikkeen kuvaukseen; Tuotenimi, jos ShortName ei ole määritetty.|
+|< ItemDetail >< Description >< /Description >|Sisältyy nimikkeen kuvaukseen; Tuotenimi, jos ShortName ei ole määritetty.|
 |< ItemDetail >< UnitOfMeasure >< /UnitOfMeasure >|Yksikkö|
 |< ItemDetail >< Classification >< /Classification >|Sisältyy nimikkeen kuvaukseen|
-|< ItemDetail >< Luokitusryhmä=”” >|Sisältyy nimikkeen kuvaukseen|
+|< ItemDetail >< Classification domain=”” >|Sisältyy nimikkeen kuvaukseen|
 
 ## <a name="delete-an-external-catalog"></a>Poista ulkoinen luettelo
 Poista ulkoinen luettelo sivulla olevalla Poista-toiminnolla.

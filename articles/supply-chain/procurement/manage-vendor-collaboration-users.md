@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6e83f46df30d13a8bffa5c2b0bd05f456b67e6ec
+ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
+ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -62,12 +62,12 @@ Kun pyyntö on lähetetty, se lisätään **Toimittajayhteistyön käyttäjäpyy
 Ennen kuin voit pyytää uuden käyttäjän valmistelua, kyseisen henkilön on määritettävä yhteyshenkilöksi vähintään yhdelle toimittajatilille. Uuden toimittajayhteistyön käyttäjäpyynnön luominen:
 
 1.  **Kaikki yhteyshenkilöt** -sivulla valitse **Valmistele toimittajakäyttäjä**.
-2.  Anna käyttäjän sähköpostiosoite. Käyttäjä käyttää tätä osoitetta kirjautuessaan Finance and Operationsiin. Jos sähköpostiosoite kuuluu Microsoft Azuren vuokraajaksi rekisteröityneelle toimialueelle, sähköpostiosoitteen tulee olla aiemmin luodulla Azure Active Directory (ADD) -tilillä, jotta valmisteluprosessi onnistuu. Jos sähköpostiosoite kuuluu Microsoft Azuren vuokraajaksi rekisteröityneelle toimialueelle, ADD-tili luodaan käyttöoikeuden valmisteluprosessin aikana ja uusi käyttäjä saa kutsuviestin. Kuluttaja-asiakkaiden sähköpostiosoitteita, joiden verkkotunnus on esimerkiksi @hotmail.com, @gmail.com tai @comcast.net, ei voi käyttää rekisteröidyttäessä Finance and Operationsin käyttäjäksi.
+2.  Anna käyttäjän sähköpostiosoite. Käyttäjä käyttää tätä osoitetta kirjautuessaan Finance and Operationsiin. Jos sähköpostiosoite kuuluu Microsoft Azuren vuokraajaksi rekisteröityneelle toimialueelle, sähköpostiosoitteen tulee olla aiemmin luodulla Azure Active Directory (AAD) -tilillä, jotta valmisteluprosessi onnistuu. Jos sähköpostiosoite kuuluu Microsoft Azuren vuokraajaksi rekisteröityneelle toimialueelle, ADD-tili luodaan käyttöoikeuden valmisteluprosessin aikana ja uusi käyttäjä saa kutsuviestin. Kuluttaja-asiakkaiden sähköpostiosoitteita, joiden verkkotunnus on esimerkiksi @hotmail.com, @gmail.com tai @comcast.net, ei voi käyttää rekisteröidyttäessä Finance and Operationsin käyttäjäksi.
 3.  Määritä **Toimittajayhteistyön käyttö sallittu** -asetukseksi **Kyllä** kaikkille yrityksille, joihin käyttäjä tarvitsee käyttöoikeudet.
 4.  **Määritä käyttäjärooleja** -osassa valitse **Määritä** -valintaruutu niille käyttöoikeusrooleille, jotka uusi käyttäjä tarvitsee.
 5.  Valitse **Lähetä**.
 
-Kun toimittajan käyttäjäpyyntö on lähetetty **Toimittajayhteistyön käyttö sallittu** -kentän arvoksi tulee **Kyllä** valitulle toimittajatilille ja käyttäjäpyynnön työnkulku aloitetaan. Uusi käyttäjä luodaan Finance and Operationsissa ja käyttöoikeusroolit määritetään osana työnkulkua. Lisäksi Azure B2B -palvelu aktivoituu ja käynnistää käsittelyn Azure-portaalissa ja liittää uuden tai entisen ADD-käyttäjätilin Finance and Operationsin käyttäjätiliin.
+Kun toimittajan käyttäjäpyyntö on lähetetty **Toimittajayhteistyön käyttö sallittu** -kentän arvoksi tulee **Kyllä** valitulle toimittajatilille ja käyttäjäpyynnön työnkulku aloitetaan. Uusi käyttäjä luodaan Finance and Operationsissa ja käyttöoikeusroolit määritetään osana työnkulkua. Lisäksi Azure B2B -palvelu aktivoituu ja käynnistää käsittelyn Azure-portaalissa ja liittää uuden tai entisen ADD-käyttäjätilin Finance and Operationsin käyttäjätiliin. Lisätietoja on kohdassa [Azure AD B2B -yhteistyö](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Poista käyttäjä
 

@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 87ade03ec2ba78c4d7f5832bfa6dc1b7eabd8d94
+ms.sourcegitcommit: a05fec7b79003d5b98470d85644d70bd1dbac285
+ms.openlocfilehash: 9e0c61505a8af864d7ff38655e7e896c4f6ccb65
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 
@@ -93,6 +93,11 @@ Voit ladata tietopaketin zip-tiedoston. Tämä tiedosto sisältää kaikki tiedo
 5. Valitse **Tuo**. Voit käyttää **parannetussa** näkymässä **Suodata**-asetusta, jolla saat nopeasti yleiskuvan tuonnin aikana mahdollisesti esiintyvistä ongelmista.
 
 **Näytä suoritusloki** sisältää tarkkoja tietoja jokaisesta tuotavasta tietoyksiköstä. Pääset nopeasti kohdetietoihin väliaikaisen tallennuksen tiedoista. Näet tällä tavoin, miltä tuodut tiedot näyttävät sovelluksen sivuilla. Oletustietomalleja käytettäessä kunkin tietoyksikön tuontijakso toimii ennalta määritetyllä tavalla. Tämä auttaa varmistamaan, että kaikki riippuvat tiedot tuodaan ensimmäiseksi. Jos projektissa on mukautettuja tietoyksiköitä, varmista, että oikea järjestys on määritetty. Lisätietoja on kohdassa [Konfigurointitietomallit](../../dev-itpro/data-entities/configuration-data-templates.md).
+
+Kolme minuuttia kestävässä YouTube-videossa on lisätietoja tavasta, jolla varastomääritys voidaan kopioida varastomallin avulla yhdestä yrityksestä uuteen yritykseen samassa esiintymässä.
+
+> [!Video https://www.youtube.com/embed/K2WIfFlqJYs]
+
 
 ## <a name="related-topic"></a>Liittyvä aihe
 

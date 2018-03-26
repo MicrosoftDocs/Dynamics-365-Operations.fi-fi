@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: 0f83735ec42e945c5e0abf8d72b83936e076e60e
+ms.sourcegitcommit: 608543c9cfd93c4772e93089e1d174312d8b23a6
+ms.openlocfilehash: 411bb28668f5aa9d07774211814da4e9757ac43c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/06/2018
 
 ---
 
@@ -99,6 +99,8 @@ Sinun on määritettävä sovellus laitteessa muodostaaksesi yhteyden Finance an
     <br>**Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
     + **Yritys** – Anna Finance and Operationsin yritys, johon haluat muodostaa sovelluksella yhteyden. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Valitse **Takaisin** -painike sovelluksen vasemmassa yläkulmassa. Sovellus muodostaa nyt yhteyden Finance and Operations -palvelimeen ja fyysisen varaston työntekijän kirjautumisnäyttö avautuu. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+
+Lisätietoja Dynamics 365 for Finance and Operations – Warehousingin määrittämisestä lukemaan viivakoodeja mobiililaitteen kameralla on kohdassa [Viivakoodien lukeminen kameran avulla Dynamics 365 for Finance and Operations – Warehousingissa](scan-bar-codes-using-a-camera.md)
 
 ## <a name="remove-access-for-a-device"></a>Poista laitteen käyttöoikeudet
 Jos laite katoaa tai vaarantuu, laitteen Finance and Operationsin käyttöoikeuden on poistettava. Seuraavat vaiheet kuvaavat suositeltavaa prosessia käyttöoikeuksien poistamiseksi.
