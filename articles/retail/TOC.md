@@ -3,8 +3,8 @@
 # Aloittaminen
 ## [Uudet ja muuttuneet ominaisuudet](get-started/whats-new.md)
 ## [Ennen kuin ostat Dynamics 365 for Retailin](get-started/before-you-buy.md)
-## [Kokeiluversion tilaaminen](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
-## [Esittely-ympäristön käyttöönotto](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Kokeiluversion tilaaminen](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json)
+## [Esittely-ympäristön käyttöönotto](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json)
 ## [Käytön asetukset](dev-itpro/choose-deployment.md)
 
 
@@ -46,20 +46,22 @@
 
 # Modern Point of Sale (MPOS) ja Cloud POS
 ## [Modern POS:n tai Cloud POS:n valitseminen](MPOS-or-CPOS.md)
-## [Myyntipisteen toiminnot](POS-operations.md)
+## [Myyntipisteen toiminnot verkossa ja paikallisesti](pos-operations.md)
 ## [Esittelytietojen näyttöasettelut MPOS/CPOS-sovelluksissa](demo-data.md)
+## [Yleiskatsaus tuote- ja asiakashauista myyntipisteessä](POS-search-improvements.md)
 ## Laitteiston oheislaitteet
-### [Retail-oheislaitteiden yleiskatsaus](retail-peripherals-overview.md)
-### [Microsoftin testaamat POS-oheislaitteet](microsoft-tested-pos-hardware-peripherals.md)
+### [Vähittäismyynnin oheislaitteiden yleiskatsaus](retail-peripherals-overview.md)
+### [Microsoftin testaamat myyntipisteen oheislaitteet](microsoft-tested-pos-hardware-peripherals.md)
 ### [Retail-oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
 ### [Kanavan asiakasohjelmien, kassakoneiden ja laiteasemien määrittäminen ja ylläpitäminen](define-maintain-channel-clients-registers-hw-stations.md)
 ## Näytön asettelu
 ### [POS-myyntipisteen näytön asettelujen määrittäminen](pos-screen-layouts.md)
 ### [Retail POS:n asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
 ### [Ilmoitusasetusten valitseminen](Notifications-POS.md)
-### [POS-sovellus ja käyttäjän kielialueasetukset](pos-application-user-language-settings.md)
+### [Myyntipistesovellus ja käyttäjän kielialueasetukset](pos-application-user-language-settings.md)
 ### [MPOS-kuvien määrittäminen](set-up-manage-images-retail-mpos.md)
 ## [Tietokoodien yleiskatsaus](info-codes-retail.md) 
+## [Sarjoitettujen tuotteiden parannukset myyntipisteessä](serialized-inventory.md)
 ## Tuotesuositukset
 ### [Mukautettujen tuotesuositusten yleiskatsaus](personalized-product-recommendations.md)
 ### [Suositusten ohjausobjektin lisääminen POS-laitteeseen](add-recommendations-control-pos-screen.md)
@@ -97,6 +99,7 @@
 ## [Hinnanoikaisut ja alennukset](price-adjustments-discounts.md)
 ## [Optimaalisen päällekkäisten alennusten yhdistelmän määrittäminen](optimal-combination-overlapping-discounts.md)
 ## [Kanavakohtaisten alennusten määrittäminen](define-channel-specific-discounts.md)
+## [Vähittäismyyntituotteiden alennusten estäminen](prevent-discounts.md)
 ## [Vähittäismyynnin kuponkien luonti](retail-coupons.md)
 
 # Tuotteet ja myynninedistäminen
@@ -105,6 +108,7 @@
 ## [Määritteet ja määriteryhmien yleiskatsaus](attribute-attributegroups-lifecycle.md)
 ## [Määritteiden luonti ja hallinta](create-manage-attributes.md)
 ## [Vähittäismyyntituotteiden määrittäminen](set-up-retail-products.md)
+## [Parannettu tuote- ja luokkahallinta](category-management-product-creation.md)
 ## [Tuotedimensiot](../supply-chain/pim/product-dimensions.md)
 ## [Viivakoodien määrittäminen](set-up-bar-codes.md)
 ## [Viivakoodin muotojen määrittäminen](set-up-bar-code-masks.md)
@@ -190,13 +194,14 @@
 # [Retailin kehitys ja hallinta](dev-itpro/dev-retail-home-page.md)
 
 ## Arkkitehtuuri
-### [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version komponentit – Retail](retail-components.md)
+### [Microsoft Dynamics 365 for Finance and Operationsin komponentit – Retail](retail-components.md)
 ### [Retail Server -arkkitehtuuri](dev-itpro/retail-server-architecture.md)
-### [Retail-kanavan tietoliikenne](dev-itpro/define-retail-channel-communications-cdx.md)
+### [Vähittäismyyntikanavan tietoliikenne](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS-arkkitehtuuri](dev-itpro/retail-modern-pos-architecture.md)
 ### [Retail-verkkokaupan julkaisuarkkitehtuuri](dev-itpro/retail-online-store-publishing-architecture.md)
-### [Retail-kanavan suorituskyvyn Power BI -sisältö](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Retail-kanavan suorituskyvyn Power BI -sisältö](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json)
 ### [PA-DSS-sertifikaatti (maksusovelluksen tietoturvastandardi)](dev-itpro/PA-DSS-Certification.md)
+### [Paikallisten käyttöönottojen vähittäismyyntiominaisuudet](retail-onprem.md)
 
 ## Käyttöönotto ja hotfix-korjaukset
 ### [Retail Store Scale Unit -vähittäismyyntilaitteen yleiskatsaus](dev-itpro/retail-store-system-begin.md)
@@ -208,7 +213,7 @@
 ### [Retail Hardware Stationin määritykset ja asentaminen](retail-hardware-station-configuration-installation.md)
 ### [Retail-itsepalvelukomponenttien joukkokäyttöönotto](dev-itpro/retail-mass-deployment.md)
 ### [Retail-komponenttien diagnostiikka- ja vianmääritystapahtumat](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
-### [Käyttöönotettavan paketin käyttäminen](../dev-itpro/deployment/apply-deployable-package-system.md)
+### [Käyttöönotettavan paketin käyttäminen](../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json)
 
 ## Päivitys ja N-1-tuki
 ### [Päivityksen ja N-1-tuen yleiskatsaus](dev-itpro/overview-upgrade-n-minus1.md)
@@ -218,7 +223,7 @@
 ### [Laitehallinnan käyttöönotto-ohje](implementation-considerations-devices.md)
 
 ## Ympäristön konfiguraatio
-### [Linkkien lisääminen organisaation juridisiin ehtoihin ja tietosuojatietoihin](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
+### [Linkkien lisääminen organisaation juridisiin ehtoihin ja tietosuojatietoihin](../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json)
 ### [Bing Mapsin hallinta](dev-itpro/manage-bing-maps.md)
 
 ## Myyntipisteen laajennettavuus
