@@ -1,0 +1,6 @@
+> [!IMPORTANT]
+> <span data-ttu-id="1089a-101">**Dynamics 365 – kevään 2018 julkaisutiedot**</span><span class="sxs-lookup"><span data-stu-id="1089a-101">**Announcing the Dynamics 365 Spring '18 release notes**</span></span>
+>
+> <span data-ttu-id="1089a-102">Haluatko tietoja tulevista ja juuri julkaistuista yrityssovellustemme tai ympäristömme ominaisuuksista?</span><span class="sxs-lookup"><span data-stu-id="1089a-102">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</span></span> 
+> 
+> <span data-ttu-id="1089a-103">[Lataa kevään 2018 julkaisutiedot](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf).</span><span class="sxs-lookup"><span data-stu-id="1089a-103">[Download the Spring '18 release notes](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf).</span></span> <span data-ttu-id="1089a-104">Olemme koonneet kaikki tarvittavat tiedot yhteen PDF-tiedostoon, jota voit käyttää suunnittelun apuna.</span><span class="sxs-lookup"><span data-stu-id="1089a-104">We've captured all the details, end to end, top to bottom, in a single PDF that you can use for planning.</span></span> 

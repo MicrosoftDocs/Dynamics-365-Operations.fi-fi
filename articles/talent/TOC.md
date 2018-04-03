@@ -3,6 +3,8 @@
 # [Aloittaminen](talent-get-started.md)
 ## [Järjestelmävaatimukset ja päivityskäytäntö](talent-versions-update-policy.md)
 ## [Microsoft Dynamics 365 for Talentin valmisteleminen](provisioning-talent.md)
+## [Poista Talent-ympäristö](remove-test-environment.md)
+## [Microsoft Dynamics 365 for Talentin modulaaristen sovellusten valmisteleminen](modular-app-tech-faq.md)
 ## [Talent-toimintojen laajentaminen](extend-talent-functionality.md)
 
 # [Henkilöstöhallinnon strategian kehittäminen](departments-jobs-positions.md)
@@ -39,5 +41,5 @@
 ## [Kyselylomakkeen tulosten arvioiminen](evaluate-questionnaire-results.md)
 
 # Työturvallisuuden ja vaatimustenmukaisuus (Yhdysvallat)
-## [I-9-lomakkeen työsuhdetarkistukset](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
-## [ADA-lain noudattaminen](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
+## [I-9-lomakkeen työsuhdetarkistukset](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json)
+## [ADA-lain noudattaminen](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json)
