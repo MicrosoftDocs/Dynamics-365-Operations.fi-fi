@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
-ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -89,7 +89,7 @@ Tilikauden sulkemismallin avulla voi määrittää kaikki sulkemisprosessin osan
 
 Voit määrittää tehtävän mallissa yhdelle yritykselle tai useille yrityksille, joissa tehtävä on käytössä. Jos tehtävän suorittava henkilö on eri kussakin yrityksessä, samalle työlle kannattaa ehkä luoda useita tehtäviä. Luo kullekin yritykselle yksi tehtävä. 
 
-**Tehtävälinkki**-valikko liitetään tehtävän työhön. Sitä voidaan käyttää suoraan työtilan tehtävälinkin liittyvältä sivulta. Esimerkiksi ostoreskontran valuutan uudelleenarvostusprosessin suorittamisessa käytettävä sulkemistehtävä voidaan linkittää Microsoft Dynamics 365 for Finance and Operations, Enterprise Editioniin liittyvään **Ulkomaanvaluutan uudelleenarvostus** -sivulle. Myös ulkoisen URL-osoitteen voi linkittää. 
+**Tehtävälinkki**-valikko liitetään tehtävän työhön. Sitä voidaan käyttää suoraan työtilan tehtävälinkin liittyvältä sivulta. Esimerkiksi ostoreskontran valuutan uudelleenarvostusprosessin suorittamisessa käytettävä sulkemistehtävä voidaan linkittää Microsoft Dynamics 365 for Finance and Operations -sovelluksen liittyvään **Ulkomaanvaluutan uudelleenarvostus** -sivulle. Myös ulkoisen URL-osoitteen voi linkittää. 
 
 > [!TIP]
 > Voit linkittää tietyn Management Reporter -raportin tilikauden sulkemistehtävään raportin URL-osoitteen avulla. Voit käyttää raportin URL-osoitetta, kun avaat raportin Report Designer -ohjelmassa ja avaat raportin selaimeen valitsemalla **Tiedosto** &gt; **Näytä raportti**. Tämän jälkeen voit kopioida URL-osoitteen selaimen osoiteriviltä ja liittää sen **tehtävälinkin** **URL**-kenttään. 

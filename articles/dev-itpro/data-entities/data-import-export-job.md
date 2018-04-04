@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e444168f249e798fa68b9b082556aa8e5e7d8113
-ms.openlocfilehash: 0e1c5120bf8558b955b66e059a8be8bbec2c2ce1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/13/2018
 
 [!include[banner](../includes/banner.md)]
 
-Voit luoda ja hallita tietojen tuonti- ja vientitehtäviä Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version **Tietojenhallinta**-työtilassa. Oletusarvon mukaan tietojen tuonti- ja vientiprosessi luo väliaikaisen taulun kullekin yksikölle kohdetietokantaan. Väliaikaisten taulujen avulla voit tarkistaa, puhdistaa tai muuntaa tiedot ennen niiden siirtämistä.
+Voit luoda ja hallita tietojen tuonti- ja vientitehtäviä Microsoft Dynamics 365 for Finance and Operationsin **Tietojenhallinta**-työtilassa. Oletusarvon mukaan tietojen tuonti- ja vientiprosessi luo väliaikaisen taulun kullekin yksikölle kohdetietokantaan. Väliaikaisten taulujen avulla voit tarkistaa, puhdistaa tai muuntaa tiedot ennen niiden siirtämistä.
 
 > [!NOTE]
 > Tässä ohjeaiheessa oletetaan, että tunnet [tietoyksiköt](data-entities.md).
@@ -66,7 +66,7 @@ Voit lisätä tiettyjä yksiköitä tuonti- tai vientityöhön tai käyttää ma
 ### <a name="set-the-data-format-for-the-job"></a>Määritä työn tietojen muoto
 Valitse yksikölle tuonnin tai viennin tietomuoto sitä valitessasi. Muodot määritetään **Lähdeasetukset**-ruudussa. Monet organisaatiot aloittavat esittelytiedoissa toimitettujen tietomuotojen käytöllä. Seuraavassa on muutamia seuraavista muodoista:
 
-- AX (tiedoille, jotka täytyy tuoda tai viedä muodossa, jota käytetään Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -versiossa)
+- AX (tiedoille, jotka täytyy tuoda tai viedä Microsoft Dynamics 365 for Finance and Operations -sovelluksessa käytettävässä muodossa)
 - ColonSeparated
 - CSV
 - Excel

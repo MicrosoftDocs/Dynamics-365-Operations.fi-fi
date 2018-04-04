@@ -1,6 +1,6 @@
 ---
 title: Budjetoinnin yhteenveto
-description: "Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin Financials-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin arvoihin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operations, Enterprise Editionissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta."
+description: "Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 for Finance and Operations -sovelluksen toimintoja, pitää voida luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta."
 author: twheeloc
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8e8b3a7e801e98929c4ba1b9fefe341abd91dbd4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1d768ee6d2244a237972f7183f27a60b93eea819
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin Financials-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin arvoihin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
+Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 for Finance and Operations -sovelluksen toimintoja, pitää voida luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
 
 <a name="overview"></a>Yleiskuvaus
 --------
@@ -54,7 +54,7 @@ Seuraavaksi, jos on olemassa budjettitapahtumien hyväksyntää ohjaavia käytä
 
 Sinun on valittava **Budjetoinnin dimensiot** -sivulla budjetoinnissa käytettävät taloushallinnon dimensiot perustuen tilikartassa käytettyihin dimensioihin. Voit valita kaikki taloushallinnon dimensiot tai niiden osajoukon budjetointia varten.
 
-Määritä *budjettimalli *, joka vastaa kaikkia budjetteja tai joitain niistä. Voit käyttää samaa budjettimallia kaikkia budjettitapahtumia varten. Voit vaihtoehtoisesti luoda erilliset mallit, jotka perustuvat budjettityyppiin, maantieteelliseen sijaintiin tai johonkin muuhun tapaan, millä budjetti voidaan luokitella. 
+Määritä *budjettimalli*, joka vastaa kaikkia budjetteja tai joitain niistä. Voit käyttää samaa budjettimallia kaikkia budjettitapahtumia varten. Voit vaihtoehtoisesti luoda erilliset mallit, jotka perustuvat budjettityyppiin, maantieteelliseen sijaintiin tai johonkin muuhun tapaan, millä budjetti voidaan luokitella. 
 
 > [!NOTE] 
 > Jos käytetään budjettimallia, voit liittää vain yhden budjettimallin tiettyyn budjettijakson aikaväliin. 

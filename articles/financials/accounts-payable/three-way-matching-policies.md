@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: da3099a07e3084bf49d03e0f4d421aebe9b39940
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c8ea45ece05f006f1649c79fcdee427a0bc4b0b5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -65,7 +65,7 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 1.  Sammy, Fabrikamin vastaanotto-osaston työntekijä vastaanottaa Contoson konetoimituksen kokonaismäärän. Hän syöttää määräksi 5 tuotteen vastaanotossa. Koska ostotilaus on vastaanotettu kokonaisuudessaan, sen tilaksi muuttuu Vastaanotettu.
 2.  Fabrikamin ostoreskontravastaava April kirjaa ja vahvistaa Contoson lähettämän laskun. Hän vahvistaa seuraavat tiedot:
     -   Nimikkeille, joiden vaatimuksena on kolmisuuntainen vastaavuus, laskurivin määrä vastaa vastaanotettua määrää. Vastaanotettu määrä näkyy laskuun kohdistetussa tuotteen vastaanotossa.
-    -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Microsoft Dynamics 365 for Finance and Operations, Enterprise editionissa asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
+    -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Microsoft Dynamics 365 for Finance and Operations -sovelluksen asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
         -   Nettoyksikköhinnan täsmäytys – Laskurivin nettoyksikköhinta vastaa ostotilausrivin nettoyksikköhintaa toleranssiprosentin rajoissa. Tässä esimerkissä nettoyksikköhinnan hintatoleranssi on +8 %.
         -   Kokonaishinnan täsmäytys – Laskurivin nettohinta vastaa ostotilausrivin nettohintaa toleranssiprosentin, -summan tai molempien rajoissa. Tässä esimerkissä nettohinnan hintatoleranssi on +15 %.
 

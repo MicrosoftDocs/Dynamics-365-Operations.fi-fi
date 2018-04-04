@@ -1,6 +1,6 @@
 ---
 title: Organisaation hallinnon aloitussivu
-description: "Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Finance and Operations, Enterprise editionia organisaatiossa."
+description: "Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Finance and Operationsia organisaatiossa."
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f1cff2388b02ff6dfd52a39b7f3ea90f10807096
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä aiheessa on linkkejä sisältöön, joka auttaa tehokäyttäjiä ja järjestelmänvalvojia määrittämään Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin. Sisältö avustaa järjestelmän määrittämisessä niin, että se auttaa sujuvasti ja tehokkaasti organisaatiotasi ja sen liiketoimintaa.
+Tässä ohjeaiheessa on linkkejä sisältöön, joka auttaa tehokäyttäjiä ja järjestelmänvalvojia määrittämään Microsoft Dynamics 365 for Finance and Operationsin. Sisältö avustaa järjestelmän määrittämisessä niin, että se auttaa sujuvasti ja tehokkaasti organisaatiotasi ja sen liiketoimintaa.
 
 Suuri osa tässä luetellusta sisällöstä koskee **Organisaationhallinta**-moduulia. Jotkin tehtävistä, kuten tietuemallin luominen ja käyttäminen, voidaan suorittaa missä tahansa moduulissa, jotta organisaatiosi voisi toimia tehokkaammin. 
 

@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: 9c68cd0e1c214e22b8831e4f4a0c5d545387f982
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 03/09/2018
 Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen. 
 
 > [!NOTE] 
-> Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations, Enterprise Edition; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
+> Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
 
 Kaikkien seuraavien tuotteiden jakama ohjejärjestelmä:
-- Dynamics 365 for Finance and Operations, Enterprise Edition
+- Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -108,9 +108,9 @@ Syötä oikealle sähköpostiosoite ja uusi salasana, kun haluat luoda sivustoll
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Sisällön muutoksen tai lisäyksen ehdottaminen GitHubin kautta
 Voit ehdottaa muutosta, jos sinulla on GitHub-tili ja jos allekirjoitat osallistujan käyttöoikeussopimuksen.  Tarkistamme ehdottamasi muutokset pull-pyynnön lähettämisen jälkeen. Tarvittaessa käsittelemme ehdotuksiasi sisäisesti ja otamme sinuun yhteyttä.  
 
-Voit aloittaa valitsemalla ohjeaiheen **Muokkaa** (kynä) -painikkeen tai siirtymällä tietosäilöön osoitteessa https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+Voit aloitta napsauttamalla ohjeaiheessa **Muokkaa** (kynä) -painiketta tai siirtymällä tietosäilöömme osoitteessa https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
 
-Lisätietoja on osallistujan oppaassa osoitteessa https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+Lisätietoja on osallistujan oppaassa: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
 
 
 > [!NOTE]

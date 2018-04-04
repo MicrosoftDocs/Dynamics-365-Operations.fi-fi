@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 82c2fab72923cfec135e207dfe194fda7d16e8e9
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -41,6 +41,8 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 - **Painikeruudukko** – toiminto voidaan määrittää myyntipisteen näyttöasettelun osana toimivien painikeruudukoiden painikkeisiin.
 - **Tapahtumanäyttö** – toiminto voidaan käynnistää myyntipisteen painikeruudukoista, jotka on määritetty myyntipisteen tapahtumanäytössä.
 - **Aloitusnäyttö** – toiminto voidaan käynnistää myyntipisteen painikeruudukoista, jotka on määritetty myyntipisteen aloitusnäytössä.
+
+Huomautus: Alla mainitut toiminnot koskevat Dynamics 365 for Retail -sovelluksen uusinta versiota. Osa toiminnosta on ehkä muuttunut tai niitä ei ollut aiemmissa versioissa.
 
 | Tunnus | Työvaihe | kuvaus | Painikeruudukko | Tapahtumanäyttö | Aloitusnäyttö | Käytettävissä offline-tilassa | Paikallinen |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -105,6 +107,7 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 703 | Lukitse kassakone | Lukitse nykyinen kassakone, jolloin sitä ei voi käyttää. Nykyistä käyttäjää ei kuitenkaan kirjata ulos. | En | En | En | Kyllä | En |
 | 701 | Kirjaudu ulos | Kirjaa nykyinen käyttäjä ulos kassakoneelta. | Kyllä | Kyllä | Kyllä | Kyllä | En |
 | 521 | Kanta-asiakaskorttien pistesaldo | Näytä määritetyn kanta-asiakaskortin pistesaldo. | Kyllä | Kyllä | En | En | En |
+| 918 | Ylläpidä työvuoroja | Näytä aktiivisten, keskeytettyjen ja piilotettujen suljettujen vuorojen luettelo. | Kyllä | Kyllä | Kyllä | En | En |
 | 914 | Pienennä myyntipisteen ikkuna | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | En |
 | 1 000 | Kassan avaus | Suorita Ei myynti -toiminto ja avaa valittuna oleva kassakone. | Kyllä | Kyllä | Kyllä | Kyllä | En |
 | 928 | Tilauksen täyttäminen | Tämän toiminnon avulla käyttäjät voivat kerätä, pakata, lähettää tai peruuttaa tilauksia myymälänoutoa varten. | Kyllä | Kyllä | Kyllä | En | En |
@@ -162,7 +165,6 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 638 | Aseta myyntiedustaja riville | Tämän toiminnon avulla käyttäjä voi valita jonkin provisiomyyntiryhmän (myyjät) parhaillaan valittuna olevalle riville. | Kyllä | Kyllä | En | Kyllä | En |
 | 630 | Lähetä kaikki tuotteet | Määritä kaikkien rivinimikkeiden toteutustavaksi **Lähetys**. | Kyllä | Kyllä | En | Kyllä\* | En |
 | 629 | Lähetä valitut tuotteet | Määritä valittujen rivien toteutustavaksi **Lähetys**. | Kyllä | Kyllä | En | Kyllä\* | En |
-| 918 | Näytä piilotetut suljetut vuorot | Näytä luettelo piilotetuista suljetuista vuoroista. | Kyllä | Kyllä | Kyllä | En | En |
 | 115 | Näytä kirjauskansio | Näytä myymälän kirjauskansio. Voit tarkastella tapahtumia, tulostaa kuitteja ja lahjojen kuitteja uudelleen ja palauttaa niitä palautusta varten. | Kyllä | Kyllä | Kyllä | Kyllä\*\* | En |
 | 802 | Varaston inventointi | Tämän toiminnon avulla käyttäjä voi luoda varastotilanteelle tai inventoinneille varastonlaskennan kirjauskansioita tai muokata niitä. | Kyllä | Kyllä | Kyllä | En | En |
 | 401 | Alavalikko | Tämä toiminto siirtää käyttäjän toiseen linkitettyyn painikeruudukkoon. | Kyllä | Kyllä | Kyllä | Kyllä | En |

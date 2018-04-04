@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4dbcfd31030db8e40f89f86a76cdc666ac433749
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2d31a5dfd16a4404e19c6c9693dacecff6f2f064
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 
 Tässä aiheessa on tietoja projektien resursoinnista.
 
-Yksi projekti- ja resurssipäälliköiden haasteista projektin suunnitteluvaiheessa on resurssien kohdistaminen. Tällöin on määritettävä ja varattava oikea resurssi projektityöhön. Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa voi määrittää projektien resursointitoiminnoilla roolit, joita käsitellään väliaikaisina resursseina ja jotka voidaan sitten varata tiettyyn sitoumukseen tai sitoumuksen osaksi. Tämäntyyppisen resursoinnin avulla projekti- ja resurssipäälliköt voivat suorittaa seuraavia tehtäviä:
+Yksi projekti- ja resurssipäälliköiden haasteista projektin suunnitteluvaiheessa on resurssien kohdistaminen. Tällöin on määritettävä ja varattava oikea resurssi projektityöhön. Microsoft Dynamics 365 for Finance and Operations -sovelluksessa voi projektien resursointitoiminnoilla määrittää roolit, joita käsitellään väliaikaisina resursseina, joita voidaan varata tiettyyn sitoumukseen tai sitoumuksen osaksi. Tämäntyyppisen resursoinnin avulla projekti- ja resurssipäälliköt voivat suorittaa seuraavia tehtäviä:
 
 - Määrittää roolin, jolla on resurssien kohdistamista helpottavat tarvittavat osaamisalueet.
 - Määrittää roolien avulla varattuihin resursseihin perustuvan alustavan sitoumusaikataulun.

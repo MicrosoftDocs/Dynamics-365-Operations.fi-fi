@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d904a2fe9411da1fd1a4e5810f7dcea782f1c2f7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Tämä artikkeli esittelee budjettisuunnittelun ja sisältää tietoja, joiden a
 
 Budjetin suunnittelu suoritetaan valmisteltaessa budjetteja, jotka toteutetaan organisaatiossa. Organisaatio voi määrittää budjetin suunnittelun ja määrittää sitten budjetin suunnitteluprosessit, jotka vastaavat organisaation käytäntöjä, toimenpiteitä ja budjetin valmistuksen vaatimuksia. 
 
-Kun Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin käyttämät käsitteet ja terminologia ovat tuttuja, organisaation budjettisuunnittelu on helpompi toteuttaa.
+Kun Microsoft Dynamics 365 for Finance and Operationsin käyttämät käsitteet ja terminologia ovat tuttuja, organisaation budjettisuunnittelu on helpompi toteuttaa.
 
 ### <a name="key-terms"></a>Tärkeimmät termit
 

@@ -1,6 +1,6 @@
 ---
 title: "Konsernin sisäinen laskutus"
-description: "Tässä artikkelissa on tietoja ja esimerkkejä projektien konsernin sisäisestä laskutuksesta Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa."
+description: "Tässä artikkelissa on tietoja ja esimerkkejä projektien konsernin sisäisestä laskutuksesta Microsoft Dynamics 365 for Finance and Operationsissa."
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad14e2d145c6f6620bf8a31738fafa50d033d246
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 7cd19340c913fcda3fb537162dfbae52b5c8e922
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tässä artikkelissa on tietoja ja esimerkkejä projektien konsernin sisäisestä laskutuksesta Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionissa.
+Tässä artikkelissa on tietoja ja esimerkkejä projektien konsernin sisäisestä laskutuksesta Microsoft Dynamics 365 for Finance and Operationsissa.
 
 Organisaatiossasi saattaa olla useita divisioonia, tytäryhtiöitä ja muita yrityksiä, jotka siirtävät tuotteita ja palveluita keskenään projekteissa. Palvelun tai tuotteen tarjoava yritys on *lainaajayritys* ja palvelun tai tuotteen vastaanottava yritys on *lainaava yritys*. 
 

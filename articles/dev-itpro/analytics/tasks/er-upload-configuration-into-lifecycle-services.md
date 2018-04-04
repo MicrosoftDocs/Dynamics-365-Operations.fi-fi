@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d24679a380ec824fe08c56aacb4bc348ff40440a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3d9c2192bac8477e9c9376aab3e3b561da777569
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upload-a-configuration-into-lifecycle-services-for-electronic-reporting-er"></a>Konfiguraation lataaminen Lifecycle Servicesiin sähköistä raportointia (ER) varten
@@ -92,6 +92,6 @@ Tässä esimerkissä luodaan konfiguraatio malliyritykselle Litware, Inc. ja lad
 10. Valitse Avaa.
     * Valitse LCS-säilö ja avaa se.  
     * Huomaa, että valittu konfiguraatio näytetään resurssina valitussa LCS-projektissa.  
-    * Avaa LCS osoitteessa https://lcs.dynamics.com. Avaa aiemmin säilön rekisteröintiin käytetty projekti ja avaa projektin "Omaisuuskirjasto" ja laajenna GER-konfiguraatio -omaisuustyypin sisältö – ladattu ER-konfiguraatio on käytettävissä täällä. Huomaa, että ladattu LCS-konfiguraatio voidaan tuoda toiseen Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -esiintymään, jos lähteillä on käyttöoikeus tähän LCS-projektiin.  
+    * Avaa LCS osoitteen https://lcs.dynamics.com avulla. Avaa aiemmin säilön rekisteröintiin käytetty projekti, avaa projektin omaisuuskirjasto ja laajenna GER-konfiguraation omaisuustyypin sisältö. Ladattu ER-konfiguraatio on käytettävissä täällä. Huomaa, että ladattu LCS-konfiguraatio voidaan tuoda toiseen Microsoft Dynamics 365 for Finance and Operations -esiintymään, jos lähteillä on käyttöoikeus tähän LCS-projektiin.  
 
 

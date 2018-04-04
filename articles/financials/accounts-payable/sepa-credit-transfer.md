@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1335d95c8bf02d5c571d37d78eca0ee7eae32bad
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3b6ded5e5accbbdba708c8b31119429e72bd58f5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -53,7 +53,7 @@ Eurooppalaisista pankeista muodostuva EPC kehittää SEPA-maksuvälineiden kaupa
 SEPA-tilisiirto on toisen yrityksen tai henkilön toiselle yritykselle tai henkilölle suorittama maksu. Maksujen on oltava euromääräisiä ja niissä on oltava kummankin osapuolen kansainvälinen tilinumero (IBAN) ja BIC (Bank Identifier Code) -koodi. (BIC-koodi tunnetaan myös nimellä \[SWIFT\] (Society for Worldwide Interbank Financial Telecommunication) -koodi. Lisäksi osapuolien on jaettava tapahtumakustannukset. Osapuolten välisissä tilisiirroissa on käytettävä EPC:n määritysten mukaisia XML-tiedostoja, jotka vastaavat ISO 20022 -maksukäsittelystandardeja ja XML-muotoa.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Miten tilisiirto tehdään?
-SEPA-tilisiirron maksumuoto toteutetaan Euroopan maissa käyttämällä Microsoft Dynamics 365 Finance and Operations Enterprise editionin sähköistä raportointia (ER) ja maksutapatoimintoa. Muilla alueilla käytetään edelleen joitakin tilisiirron muotoja, jotka käyttävät vanhaa maksukehystä. Muiden muotojen lisäksi saatavilla on kaksitoista ISO 20022 -tilisiirron tiedostomuotoa. Nämä vientimuodot ovat SEPA ISO 20022 XML -standardin mukaisia. Niiden avulla muodostetaan ei-euromääräiset maksun siirrot maille/alueille, joissa niitä käytetään sekä euromääräiset maksut sen mukaisesti, mitä EPC:n SEPA-tilisiirtojen sääntökirjan versiossa 8.2 määritetään. Ennen tilisiirtojen käyttöönottoa omasta pankista on pyydettävä ohjelmisto, joka tarvitaan sähköisten pankkitiedostojen lataamiseen. Maksutoimeksiannot sisältävät XML-tiedostot siirretään tällä ohjelmistolla pankkiin.
+SEPA-tilisiirron maksumuoto toteutetaan Euroopan maissa käyttämällä Microsoft Dynamics 365 Finance and Operationsin sähköistä raportointia (ER) ja maksutapatoimintoa. Muilla alueilla käytetään edelleen joitakin tilisiirron muotoja, jotka käyttävät vanhaa maksukehystä. Muiden muotojen lisäksi saatavilla on kaksitoista ISO 20022 -tilisiirron tiedostomuotoa. Nämä vientimuodot ovat SEPA ISO 20022 XML -standardin mukaisia. Niiden avulla muodostetaan ei-euromääräiset maksun siirrot maille/alueille, joissa niitä käytetään sekä euromääräiset maksut sen mukaisesti, mitä EPC:n SEPA-tilisiirtojen sääntökirjan versiossa 8.2 määritetään. Ennen tilisiirtojen käyttöönottoa omasta pankista on pyydettävä ohjelmisto, joka tarvitaan sähköisten pankkitiedostojen lataamiseen. Maksutoimeksiannot sisältävät XML-tiedostot siirretään tällä ohjelmistolla pankkiin.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Mitkä tilisiirron muodot ovat tällä hetkellä tuettuja Finance and Operationsissa?
 Tarkista Microsoft Dynamics Lifecycle Services (LCS) -palvelun jaetusta omaisuuskirjastosta luettelo uusimmista käytettävissä olevista tiedostoista, joiden tyyppi on **GER configuration**. Seuraavassa osassa, "Mitä asetuksia on määritettävä?", on linkki ohjeaiheeseen, jossa kerrotaan, miten luot LCS-säilön, josta voit tarkastaa käytettävissä olevat konfiguraatiotiedostot ja tuoda haluamasi tiedostot.

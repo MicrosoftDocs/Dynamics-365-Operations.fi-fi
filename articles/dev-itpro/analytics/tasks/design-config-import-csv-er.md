@@ -1,6 +1,6 @@
 --- 
 title: Konfiguraation suunnitteleminen tietojen tuomiseksi ulkoisesta tiedostosta CSV-muotoon (ER)
-description: "Voit suunnitella tämän menettelyn avulla sähköisen raportoinnin (ER) konfiguraatioita, joilla tuodaan tietoja ulkoisesta tiedostosta CSV-muodossa Dynamics 365 for Finance and Operations, Enterprise edition -sovellukseen."
+description: "Voit suunnitella tämän menettelyn avulla sähköisen raportoinnin (ER) konfiguraatioita, joilla tuodaan tietoja ulkoisesta tiedostosta CSV-muodossa Dynamics 365 for Finance and Operationsiin."
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -16,24 +16,24 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 5c1766992531ee272ea156bc33c4c0ea8dfac27a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f6bfa9f7c0638b0eaacf1a49bcd7d84ffab3acbf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>Konfiguraation suunnitteleminen tietojen tuomiseksi ulkoisesta tiedostosta CSV-muotoon (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Voit suunnitella tämän menettelyn avulla sähköisen raportoinnin (ER) konfiguraatioita, joilla tuodaan tietoja ulkoisesta tiedostosta CSV-muodossa Dynamics 365 for Finance and Operations, Enterprise edition -sovellukseen. Tällä menettelyllä luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Näitä vaiheita varten on suoritettava ensin ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet. 
+Voit suunnitella tämän menettelyn avulla sähköisen raportoinnin (ER) konfiguraatioita, joilla tuodaan tietoja ulkoisesta tiedostosta CSV-muodossa Dynamics 365 for Finance and Operationsiin. Tällä menettelyllä luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Näitä vaiheita varten on suoritettava ensin ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet. 
 
 Tämä menettely on luotu käyttäjille, joille on määritetty järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli. Nämä vaiheet voidaan suorittaa USMF-tietojoukon avulla. 
 
-Lataa ja tallenna paikallisesti myös seuraavat tiedostot: (https://go.microsoft.com/fwlink/?linkid=862266): 1099model.xml, 1099formatcsv.xml, 1099entriescsv.csv.
+Sinun on myös ladattava ja tallennettava paikallisesti seuraavat tiedostot: (https://go.microsoft.com/fwlink/?linkid=862266): 1099model.xml, 1099formatcsv.xml, 1099entriescsv.csv.
 
 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
-    * Voit määrittää prosessin, jolla XML-, TXT- tai CSV-muotoisia ulkoisia tiedostoja tuodaan Dynamics 365 for Finance and Operations, Enterprise edition -sovelluksen tauluihin. Luo liiketoiminnan kannalta tuotuja tietoja varten ensin abstrakti tietomalli – tätä varten luodaan ER-tietomallin konfiguraatio. Määritä seuraavaksi suunniteltuun tietomalliin yhdistettävän tuodun tiedoston rakenne tavaksi, jolla tiedoston tiedot voidaan siirtää abstraktiin tietomalliin – tätä varten luodaan ER-muotokonfiguraatio. ER-tietomallin konfiguraatiota on sitten laajennettava uudella mallin yhdistämismäärityksellä, joka ilmaisee, miten sovelluksen taulut tai tietoyksiköt päivitetään tuodun tiedoston tietojen ja abstraktin tietomallin pysyvien tietojen avulla.  
+    * Voit määrittää prosessin, jolla XML-, TXT- tai CSV-muotoisia ulkoisia tiedostoja tuodaan Dynamics 365 for Finance and Operations -sovelluksen tauluihin. Luo liiketoiminnan kannalta tuotuja tietoja varten ensin abstrakti tietomalli – tätä varten luodaan ER-tietomallin konfiguraatio. Määritä seuraavaksi suunniteltuun tietomalliin yhdistettävän tuodun tiedoston rakenne tavaksi, jolla tiedoston tiedot voidaan siirtää abstraktiin tietomalliin – tätä varten luodaan ER-muotokonfiguraatio. ER-tietomallin konfiguraatiota on sitten laajennettava uudella mallin yhdistämismäärityksellä, joka ilmaisee, miten sovelluksen taulut tai tietoyksiköt päivitetään tuodun tiedoston tietojen ja abstraktin tietomallin pysyvien tietojen avulla.  
     * Seuraavissa vaiheissa näytetään, miten ulkoisesti seuratut toimittajien tapahtumat tuodaan ulkoisesta CSV-tiedostosta toimittajan 1099-lomakkeiden tilitysten myöhempää käyttöä varten.   
     * Tarkista, onko Litware, Inc. -malliyrityksen konfiguraation lähde käytettävissä ja merkitty aktiiviseksi. Jos konfiguraation lähde ei ole näkyvissä, suorita ensin Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet.  
 2. Valitse Raportointikonfiguraatiot.

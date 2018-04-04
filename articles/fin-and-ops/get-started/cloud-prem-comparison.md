@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
-ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cd267f6e5623bd83bfbd21a49a72dd216259167a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 03/05/2018
 
 Tässä aiheessa näytetään, mitkä ominaisuuksista ovat saatavilla seuraavissa tuotteissa:
 
-+ Dynamics 365 for Finance and Operations, Enterprise Edition (pilvi)
-+ (Paikallisen) Dynamics 365 for Finance and Operations, Enterprise Edition (paikallinen)
++ Dynamics 365 for Finance and Operations (pilvi)
++ Dynamics 365 for Finance and Operations (paikallinen)
 
 Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen asennuksen tuki on lueteltu ominaisuudelle kokonaisuutena. Missä erityisominaisuudet vaihtelevat alueella yleisesti, ominaisuudet luetellaan erillisillä riveillä Ominaisuus-sarakkeessa.
 

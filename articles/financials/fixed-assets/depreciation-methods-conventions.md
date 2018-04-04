@@ -1,6 +1,6 @@
 ---
 title: "Poistomenetelmät ja -käytännöt"
-description: "Tämä artikkeli sisältää yleiskuvauksen Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin tukemista poistomenetelmistä."
+description: "Tässä artikkelissa on yleiskuvaus Microsoft Dynamics 365 for Finance and Operationsin tukemista poistomenetelmistä."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/25/2017
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69e0decd3ffbdf1f64fa4fbfe070927990f880ad
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: eb38de1e7e39cb66d15bfe344f6f5fcd5d4fccd7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tämä artikkeli sisältää yleiskuvauksen Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin tukemista poistomenetelmistä.
+Tässä artikkelissa on yleiskuvaus Microsoft Dynamics 365 for Finance and Operationsin tukemista poistomenetelmistä.
 
 Voit valita useita poistomenetelmiä. Menetelmien tarkoituksena on kohdistaa käyttöomaisuuserän poistokelpoinen arvo tilikausille. Käyttöomaisuuserän poistokelpoinen arvo on hankintahinta vähennettynä mahdollisella jäännösarvolla. 
 

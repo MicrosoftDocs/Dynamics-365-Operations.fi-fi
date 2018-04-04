@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c858cc24cbba961024a67a2477d7271f64f9a0d4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c8e24234cfa54dcbbf3638c31ced7fb83881bb9f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -41,7 +41,7 @@ Tuotantotilauksiin perustuvissa tuotantoskenaarioissa materiaali määritetään
 
 Jotta toimituksen läpimenoajat lyhenevät ja ylimääräinen, erätuotannosta johtuva varastointi kuormituspaikkojen välillä pienenee, Lean-valmistus käyttää kanban-täydennystä ja supermarketteja valmistuksen ja varastoinnin täydennyksessä. Tämä nämä toiminnot keskeyttävät osittain itsenäisten kanban-syklien tuotannon. Kanbanin täydennystä puolivalmiille tuotteelle ei enää käynnistä valmista tuotetta koskeva tilaus. 
 
-Jotta tuotannon ja kulujen konteksti voidaan luoda uudelleen eri Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin ehdottamille kanban-skenaarioille, tehtäväpohjaiset tuotantovirrat on luotu Lean-valmistuksen selkärangaksi. Kaikki kanban-säännöt viittaavat tähän ennalta määritettyyn rakenteeseen. Tehtäväpohjainen malli tukee laajempaa skenaariovalikoimaa kuin Dynamics AX:n tukemat aiemmat Lean-valmistuksen versiot. Tämä malli ei kuitenkaan tee ohjelmaa monimutkaisemmaksi työntekijöille, koska kaikissa skenaarioissa käytetään samaa tehtäväpohjaista käyttöliittymää.
+Jotta tuotannon ja kulujen konteksti voidaan luoda uudelleen eri Microsoft Dynamics 365 for Finance and Operationsin ehdottamille kanban-skenaarioille, tehtäväpohjaiset tuotantovirrat on luotu Lean-valmistuksen rungoksi. Kaikki kanban-säännöt viittaavat tähän ennalta määritettyyn rakenteeseen. Tehtäväpohjainen malli tukee laajempaa skenaariovalikoimaa kuin Dynamics AX:n tukemat aiemmat Lean-valmistuksen versiot. Tämä malli ei kuitenkaan tee ohjelmaa monimutkaisemmaksi työntekijöille, koska kaikissa skenaarioissa käytetään samaa tehtäväpohjaista käyttöliittymää.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Puolivalmiit tuotteet (ei-tuoterakennetasot)
 Microsoft Dynamics AX:n Lean-valmistus integroi kanbanit inventoidulle tuotteille ja puolivalmiille tuotteille yhteen kehykseen ja tarjoaa tämän vuoksi yhtenäisen käyttäjäkokemuksen kaikissa tapauksissa. Tämän arkkitehtuurin vuoksi puolivalmiissa tuotteissa käytettävien kanbaneiden käytössä tarvittavia lisätuoterakenteiden tasoja ei enää ole lisätty. Tämä arkkitehtuuri auttaa myös varastotapahtumien vähentämisessä pienimmälle mahdolliselle tasolle.

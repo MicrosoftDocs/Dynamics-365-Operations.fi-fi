@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fa11f1775017dd9bada61340b4bed70ea66a4137
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -96,7 +96,7 @@ Kompensaatioryhmässä valittua ansion kustannustasoa käytetään, kun luot ans
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Ennusteen toimien luominen aiemmin luoduille toimille
 
-Voit luoda tarkinta budjettisuunnittelua varten ennusteen toimia käyttämällä Microsoft Dynamics 365 Finance and Operations, Enterprise Editionissa aiemmin luotujen toimien tietoja riippumatta siitä, ovatko toimet kyseisellä hetkellä täytettyjä vai eivät. 
+Tarkinta budjettisuunnittelua varten voit luoda ennusteen toimia käyttämällä Microsoft Dynamics 365 for Finance and Operations -sovelluksen aiemmin luotujen toimien tietoja riippumatta siitä, ovatko toimet kyseisellä hetkellä täytettyjä vai ei. 
 
 **Lisää aiemmin luotuja toimia** -toiminto näyttää kaikki organisaation toimet. Asettamalla **Alkaen**-päivämäärän voit muuttaa toimien luetteloa niin, että se sisältää toimet, jotka olivat olemassa tiettynä menneisyyden päivänä tai yleisemmin, tulevaisuudessa (esimerkiksi seuraavan budjettijakson alussa). Valitse budjettisuunnitteluprosessi ja budjettisuunnitelman skenaario, valitse toimet luettelosta ja valitse sitten **OK** luodaksesi ennusteen toimet valituille toimille. Huomaa, että voit luoda vain yhden ennusteen toimen kullekin aiemmin luodulle toimelle budjettisuunnitteluprosessissa ja -skenaariossa. Voit kuitenkin luoda lisäversioita määrittämällä eri budjettiskenaarioita. 
 

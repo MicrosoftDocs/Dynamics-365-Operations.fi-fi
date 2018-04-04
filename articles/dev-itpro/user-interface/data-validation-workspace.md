@@ -16,10 +16,10 @@ ms.assetid:
 ms.search.region: Global
 ms.author: bking
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: daded9d8ef48456cbd3f97a7bae5fa75885ce9d1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bbf4da5a33876973a376a0580fd553e15bd6febc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ Tietojen tarkistusprojektin kokonaistila näkyy **Tehtävät ja tilat** -osiossa
 Viimeinen välilehti sisältää yksityiskohtaisen kaikki tehtävät sisältävän tehtäväluettelon. Tässä luettelossa on koko tehtäväluettelo.
 Tehtäväluettelon voi suodattaa useilla eri tavoilla. Muuta tehtävän tila tai määritä tehtävä valitsemalla **Muokkaa tehtävää**. Tarkastele tehtävän liitteitä valitsemalla **Liitteet**.
 
-Tehtävän nimi on Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition -sivun tai muun sellaisen verkkosivun hyperlinkki, jolla käyttäjä suorittaa työn valmiiksi. Voit määrittää hyperlinkin **Valikkovaihtoehdon nimi** -kentässä, kun muokkaat tehtävää tai luot sen **Konfiguroi tietojen tarkistusprojekti** -lomakkeessa.
+Tehtävän nimi on Microsoft Dynamics 365 for Finance and Operationsin sivun tai muun sellaisen verkkosivun hyperlinkki, jolla käyttäjä suorittaa työn valmiiksi. Voit määrittää hyperlinkin **Valikkovaihtoehdon nimi** -kentässä, kun muokkaat tehtävää tai luot sen **Konfiguroi tietojen tarkistusprojekti** -lomakkeessa.
 
 Voit liittää tehtäviin tiedostoja, huomautuksia, kuvia ja URL-osoitteita **Liitteet**-toiminnon avulla. Voit liittää esimerkiksi tehtävälle tulostetun raporttitiedoston. Tehtävän **Liite**-sarakkeessa näkyy kuvake, jos liite on määritetty.
 

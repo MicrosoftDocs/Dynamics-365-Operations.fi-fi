@@ -20,10 +20,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 83e8dc76350e0d40a392e9a04ddca5b4b45d0da0
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a0c900dc208736f1823be50e8522061406c9f126
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Varaston työkäytännöt Microsoft Dynamics 365 for Finance and Operations Enterprise editionissa määrittävät, onko varastotyö luotu varastoprosessia varten valmistuksessa työtilaustyypin, varaston sijainnin ja tuotteen perusteella.
+Varaston työkäytännöt Microsoft Dynamics 365 for Finance and Operationsissa määrittävät, onko varastotyö luotu valmistuksen varastoprosessia varten työtilaustyypin, varaston sijainnin ja tuotteen perusteella.
 
 Tämä työkäytäntö määrittää, onko varastotyö luotu varastoprosessia varten valmistuksessa. Voit määrittää työkäytännön käyttämällä yhdistelmää **työtilaustyypit**, **varastosijainti** ja **tuote**. Esimerkiksi tuote L0101 ilmoitetaan valmiiksi tuotossijaintiin 001. Valmis tuote käytetään myöhemmin toisessa tuotantotilauksessa tuotossijainnissa 001. Tässä tapauksessa voit määrittää työkäytännön, joka estää luomasta työtä, jossa käytetään valmiita sivuun siirrettyjä tuotteita, kun raportoit tuotteen L0101 valmiiksi tuotossijaintiin 001. Työkäytäntö on yksittäinen yksikkö, jota voidaan kuvata seuraavien tietojen avulla:
 
