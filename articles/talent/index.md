@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 199a8961f782816c71e47f9e76e097c069fbf686
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -43,7 +43,7 @@ Voit suorittaa Talent-sovelluksessa seuraavat tehtävät:
 + Työjärjestykset, istunnot ja edistymissuunnitelmat sisältävien koulutuskurssien määrittäminen, järjestäminen ja analysointi
 
 > [!NOTE] 
-> Dynamics 365 for Talent liittyy läheisesti Dynamics 365 for Finance and Operations, Enterprise Editionin henkilöstöhallintoon. Samat toiminnot voivat esiintyä molemmissa tuotteissa. Tämän vuoksi aiheissa, jotka liittyvät ensisijaisesti henkilöstöhallintoon, tuotenimi on Dynamics 365 for Finance and Operations, Enterprise Edition, ja aiheissa, jotka liittyvät ensisijaisesti Talent-sovellukseen, tuotenimi on Dynamics 365 for Talent. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
+> Dynamics 365 for Talent liittyy läheisesti Dynamics 365 for Finance and Operationsin henkilöstöhallintoon. Samat toiminnot voivat esiintyä molemmissa tuotteissa. Tämän vuoksi aiheissa, jotka liittyvät ensisijaisesti henkilöstöhallintoon, tuotenimi on Dynamics 365 for Finance and Operations, ja aiheissa, jotka liittyvät ensisijaisesti Talent-sovellukseen, tuotenimi on Dynamics 365 for Talent. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Strategian kehittäminen henkilöstöhallinnon kehittämistä varten
 ---------------------------------------------------------

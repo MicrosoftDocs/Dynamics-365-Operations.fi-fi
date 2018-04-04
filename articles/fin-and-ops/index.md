@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin dokumentaatio
-description: Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin dokumentaatio.
+title: Microsoft Dynamics 365 for Finance and Operationsin dokumentaatio
+description: Microsoft Dynamics 365 for Finance and Operationsin dokumentaatio.
 author: margoc
 manager: AnnBe
 ms.date: 03/02/2018
@@ -17,17 +17,17 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7142c6bcb6e98929afdb8bb982a17efc7223ab12
-ms.openlocfilehash: 0d12082a2b10ae8e83217c5451627239e6ec640b
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: d1307729945494ee78c0ca6089b384d666fe5f20
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
 # <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operationsin esittely
 [!include[banner](includes/banner.md)]
 
-Saat seuraavien resurssien avulla lisätietoja tavoista, joilla voit käyttää Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionia yrityksessäsi. Näissä resursseissa on käyttäjille, kehittäjille ja IT-ammattilaisille sopivaa sisältöä. 
+Saat seuraavien resurssien avulla lisätietoja tavoista, joilla voit käyttää Microsoft Dynamics 365 for Finance and Operationsia yrityksessäsi. Näissä resursseissa on käyttäjille, kehittäjille ja IT-ammattilaisille sopivaa sisältöä. 
 
 Suuri osa sisällöstä koskee myös seuraavia liittyviä tuotteita: Microsoft Dynamics 365 for Retail ja Microsoft Dynamics 365 for Talent. 
 

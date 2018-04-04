@@ -1,7 +1,7 @@
 # [Dynamics 365 for Finance and Operationsin kehittäminen ja hallinta](index.md)
-# [Pilvikäyttöönottojen järjestelmävaatimukset](../fin-and-ops/get-started/system-requirements.md)
-# [Paikallisten käyttöönottojen järjestelmävaatimukset](../fin-and-ops/get-started/system-requirements-on-prem.md)
-# [Esittelytiedot](../fin-and-ops/get-started/demo-data.md)
+# [Pilvipalvelukäyttöönottojen järjestelmävaatimukset](../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json)
+# [Paikallisten käyttöönottojen järjestelmävaatimukset](../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json)
+# [Esittelytiedot](../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json)
 ## [Esittelytietojen ja pakettien luominen](data-entities/generate-demo-data-packages.md)
 
 
@@ -29,8 +29,8 @@
 ### [Mallin vienti ja tuonti](dev-tools/models-export-import.md)
 ### [Metatietojen haku Visual Studiossa](dev-tools/metadata-search-visual-studio.md)
 ### [Mallit](dev-tools/models.md)
-### [Dynamics 365 for Finance and Operations, Enterprise edition -version projektit](dev-tools/projects.md)
-### [Visual Studion Tools -lisäosat](dev-tools/developer-tools-add-ins.md)
+### [Projektit Dynamics 365 for Finance and Operationsissa](dev-tools/projects.md)
+### [Visual Studion Tools-lisäosat](dev-tools/developer-tools-add-ins.md)
 ### [Mallin mukauttamis- ja vanhentumistoiminnon poistaminen käytöstä](dev-tools/lock-models.md)
 ### [Visual Studio -kehitystyökalujen päivittäminen](dev-tools/update-development-tools.md)
 ## X++-ohjelmointikieli
@@ -114,7 +114,7 @@
 #### [Mukauttaminen: lisäykset ja laajennukset](extensibility/customization-overlayering-extensions.md)
 ### Uutta
 #### [Laajennettavuuden muutokset heinäkuu 2017](extensibility/changes-july-2017.md)
-#### [Laajennettavuuden muutokset Dynamics 365 for Finance and Operations, Enterprise edition 7.3 -versiossa](extensibility/extensibility-changes-73.md)
+#### [Laajennettavuuden muutokset versiossa 7.3](extensibility/extensibility-changes-73.md)
 ### Perusteet
 #### [Tunkeutuva mukauttaminen](extensibility/intrusive-customizations.md)
 #### [Luokan laajennukset](extensibility/class-extensions.md)
@@ -168,8 +168,8 @@
 ### [Siirtymisen muodostaminen](user-interface/build-navigation.md)
 ### [Työtilan muodostaminen](user-interface/build-workspace.md)
 ## Lomakkeet
-### [Dynamics 365 for Finance and Operations, Enterprise edition -versiossa siirtyminen](user-interface/page-navigation.md)
-### [Dynamics 365 for Finance and Operations, Enterprise edition -version asettelu](user-interface/page-layout.md)
+### [Siirtyminen Dynamics 365 for Finance and Operationsissa](user-interface/page-navigation.md)
+### [Dynamics 365 for Finance and Operationsin asettelu](user-interface/page-layout.md)
 ### [Symbolifontti](user-interface/symbol-font.md)
 ### [Lomakkeiden testaaminen mukautetuilla malleilla](user-interface/testing-forms-custom-patterns.md)
 ### [Tarkkojen linkkien luominen ja käyttäminen](user-interface/create-deep-links.md)
@@ -489,12 +489,12 @@
 
 ## Pilvikäyttöönotto
 ### [Azure Resource Manager -perehdytys](deployment/arm-onboarding.md)
-### [Azure ExpressRoute ja Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
+### [Azure ExpressRoute ja Dynamics 365 for Finance and Operations](deployment/expressroute.md)
 
 ## [Paikallinen käyttöönotto](deployment/on-premises-deployment-landing-page.md)
-### [Paikallisten yleiskatsaus](deployment/on-premises-overview.md)
+### [Paikallisten käyttöönottojen yleiskatsaus](deployment/on-premises-overview.md)
 ### [Paikallisen käyttöönoton suunnitteleminen](deployment/plan-onprem-deployment.md)
-### [Laitteiston koon määrittäminen](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
+### [Laitteiston koon määrittäminen](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json)
 ### [Paikallisen projektin luominen](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Asennus ja käyttöönotto paikallisissa ympäristöissä](deployment/setup-deploy-on-premises-environments.md)
 #### [Paikallisten ympäristöjen käyttöönotto Platform update 12 -päivityksellä](deployment/setup-deploy-on-premises-pu12.md)
@@ -507,7 +507,7 @@
 ### [Paikallisen edustajan päivittäminen](lifecycle-services/update-local-agent.md)
 ### [Ympäristön määrittäminen uudelleen](lifecycle-services/reconfigure-environment.md)
 ### [Asiakasohjelman Internet-yhteys](user-interface/client-disconnected.md)
-### [Paikallisen Dynamics 365 for Finance and Operations, Enterprise edition -version vianmääritys](deployment/troubleshoot-on-prem.md)
+### [Paikallisen Dynamics 365 for Finance and Operationsin vianmääritys](deployment/troubleshoot-on-prem.md)
 
 ## Mukautetun koodin käyttöönottaminen
 ### [Käyttöönotettavan paketin luominen](deployment/create-apply-deployable-package.md)
@@ -527,10 +527,10 @@
 ### [AX 2012 päivitys – päivityksen jälkeen suoritettavat tehtävät](migration-upgrade/app-validation-process.md)
 ### [AX 2012 -päivitys – toimintotestauksen suorittaminen hyväksytysti](migration-upgrade/upgrade-functional-validation.md)
 ### [AX 2012 -päivitys – julkistamisen valmistelu](migration-upgrade/upgrade-go-live-prep.md)
-
+### [AX 2012 -päivitys – julkaisu](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Muutokset, jotka vaikuttavat AX 2012:n päivitykseen
-#### [Yhden tositteen ja valuutan uudelleenarvostuksen päivittäminen ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
+#### [Yhden tositteen ja valuutan uudelleenarvostuksen päivittäminen](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Projektiresurssin ajoituksen tietomalli](migration-upgrade/data-model-changes-resource-management.md)
 #### [Työnkulun alijärjestelmän muutokset](migration-upgrade/workflow-subsystem.md)
 #### [Kuutioista koontimalleihin siirtymisen syyt](migration-upgrade/in-memory-real-time-aggregate-models.md)
@@ -546,7 +546,7 @@
 ## Päivittäminen viimeisimpään päivitykseen (pilvi)
 ### [Uusinta päivitystä koskeva päivitysprosessi](migration-upgrade/upgrade-latest-update.md)
 ### [Elinkaarikäytäntö](migration-upgrade/versions-update-policy.md)
-### [Uusimman ympäristöpäivityksen käyttöönotto](migration-upgrade/upgrade-latest-platform-update.md)
+### [Uusimman Platform update -päivityksen käyttöönotto](migration-upgrade/upgrade-latest-platform-update.md)
 ### [Dynamics-ympäristön päivittäminen elokuun 2016 julkaisuun](migration-upgrade/update-platform-each-release.md)
 ### [Eristysympäristön päivittäminen](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Tietojen päivittäminen kehitys- tai esittely-ympäristössä](migration-upgrade/upgrade-data-to-latest-update.md)
@@ -588,7 +588,9 @@
 ### [Eräpalvelimen yleiskatsaus](sysadmin/batch-server-overview.md)
 ### [Erätyön luominen](sysadmin/tasks/create-batch-job.md)
 
-## [Optimointityökalun sääntöjen luominen](sysadmin/optimization-advisor.md)
+##  [Optimointiavustajan yleiskuvaus](sysadmin/optimization-advisor-overview.md)
+### [Optimointiavustajan sääntöjen luominen](sysadmin/create-rules-optimization-advisor.md)
+
 
 # Lifecycle Services
 ## [Lifecycle Services -palvelun yleiskatsaus](lifecycle-services/lcs.md)
@@ -701,10 +703,10 @@
 ## [Eristysympäristön tietokannan päivityspyyntö](database/database-refresh.md)
 
 # Tuki
-## [Dynamics 365 for Finance and Operations, Enterprise edition- ja Lifecycle Services -tuki](lifecycle-services/lcs-support.md)
+## [Dynamics 365 for Finance and Operations- ja Lifecycle Services -tuki](lifecycle-services/lcs-support.md)
 ## [Premier-palvelupyynnön kirjaaminen](lifecycle-services/premier-support.md)
 ## [Pyyntöjen lähettäminen Dynamics-palvelun kehitysryhmälle](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Dynamics 365 for Finance and Operations, Enterprise edition -version teknisen tuen määrittäminen](lifecycle-services/support-experience.md) 
+## [Dynamics 365 for Finance and Operationsin teknisen tuen määrittäminen](lifecycle-services/support-experience.md) 
 ## [Suunniteltua ylläpidon ajankohtaa koskevat usein kysytyt kysymykset](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Pilvipalvelut ja huolto](lifecycle-services/cloud-operations-servicing.md)
 ## [Finance and Operations -tukikokemusten hallinta](lifecycle-services/cloud-powered-support-lcs.md)
