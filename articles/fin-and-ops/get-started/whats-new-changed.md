@@ -3,7 +3,7 @@ title: Uudet ja muuttuneet ominaisuudet
 description: "Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Microsoft Dynamics 365 for Finance and Operations -ympäristöversioiden uusista ominaisuuksista."
 author: josaw1
 manager: AnnBe
-ms.date: 03/21/2018
+ms.date: 03/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: ff73fdb3e6ce97e01838228c45795ca64e888add
-ms.openlocfilehash: e00dece6a6f917028379d879ec81a5c7ab210253
+ms.sourcegitcommit: 47de452c2072b6a29d7e2d34eb73b472be669a6c
+ms.openlocfilehash: eb6132b6d535deb13a4cd1343d04967893a2cfe9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/25/2018
 
 ---
 
@@ -120,10 +120,10 @@ Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä kos
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
-<td>Ympäristön update 13 -päivitys</td>
-<td>7.0.4764</td>
-<td>Tammikuu 2018 (Tämä on kohdistettu versio vain niille käyttäjille, jotka ovat liittyneet CAAP (Continuous Auto-update Advantage Program) -ohjelmaan.)</td>
-<td><a href="whats-new-platform-update-13.md">Dynamics 365 for Finance and Operations, Enterprise editionin ympäristöpäivityksen 13 (tammikuu 2018) uudet ja muuttuneet ominaisuudet</a></td><tbody>
+<td>Ympäristön update 15 -päivitys</td>
+<td>7.0.4839</td>
+<td>Maaliskuu 2018 (Tämä on kohdistettu versio vain niille käyttäjille, jotka ovat liittyneet CAAP (Continuous Auto-update Advantage Program) -ohjelmaan.)</td>
+<td><a href="whats-new-platform-update-15.md">Dynamics 365 for Finance and Operations, Enterprise Editionin ympäristöpäivityksen 15 (maaliskuu 2018) uudet ja muuttuneet ominaisuudet</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Ympäristön update 12 -päivitys</td>

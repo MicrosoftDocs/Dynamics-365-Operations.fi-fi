@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 962b3084c5340813d1697cab680621350510d4b9
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: aaa8bdedc31ee03e96a0f7a5e78f25f888913e71
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -42,7 +42,7 @@ Jotkin työtä koskevat tiedot, kuten ammattinimike, tyyppi ja toiminto, ovat p�
 ## <a name="job-titles"></a>Ammattinimikkeet
 Ennen kuin voit luoda töitä, on määritettävä kyseisten töiden otsikot. Toimet perivät ammattinimikkeet töiltä, joihin toimet liittyvät. 
 
-Ylläpidä ammattinimikkeitä käyttäen **Tittelit**-sivua, jonka voit avata käyttämällä hakutoimintoa. Anna **Tittelit **-sivulla tittelit, joita aiot käyttää töihisi.
+Ylläpidä ammattinimikkeitä käyttäen **Tittelit**-sivua, jonka voit avata käyttämällä hakutoimintoa. Anna **Tittelit**-sivulla tittelit, joita aiot käyttää töihisi.
 
 ## <a name="job-types"></a>Työtyypit
 Työtyyppien avulla voi luokitella samankaltaisia töitä. Työtyypit eivät ole pakollisia. Kuitenkin jos aiot käyttää työtyyppejä, kun määrität oikeutussäännöt kompensaationhallintaan, sinun tulee määrittää työtyypit ennen töiden määrittämistä. Työtyypit ovat: kokopäiväinen ja osa-aikainen sekä kuukausipalkka tai tuntipalkka. Voit ylläpitää työtyyppejä **Työtyypit**-sivulla. Anna **Työtyypit**-sivulla työtyypin nimi ja lyhyt kuvaus. Valitse **Vapautustila**-kentässä jokin seuraavista asetuksista ja ilmaistaksesi Fair Labor Standards Act (FLSA) -vapautustilan tämän työtyypin töille:
@@ -91,6 +91,6 @@ Voit ylläpitää työtehtäviä **Työtehtävät**-sivulla. Anna **Työtehtäv�
 ## <a name="areas-of-responsibility"></a>Vastuualueet
 Vastuualueiden avulla voi osoittaa tietyssä toimessa toimivan työntekijän vastuulla olevat työroolit, prosessit ja tuotteet. Esimerkiksi Kirjanpitäjä-toimessa vastuualue voi olla Tuotteen A talousraportointi. Ylläpidä vastuualueita **Vastuualueet**-sivulla, jonka voit etsiä käyttämällä hakutoimintoa. Anna **Vastuualueet**-sivulla vastuun nimi ja lyhyt kuvaus. Voit myös lisätä lisätietoja **Huomautus**-kenttään. Muistiinpanoja voi päivittää tietylle työlle muuttamatta tähän kirjoitettuja muistiinpanoja.
 
-
-
+## <a name="steps-for-creating-a-job"></a>Työn luontiohjeet
+Uuden työn luomisen vaiheittaiset ohjeet löytyvät [Uusien töiden määrittäminen](../fin-and-ops/hr/tasks/define-new-jobs.md) -ohjeaiheessa 
 

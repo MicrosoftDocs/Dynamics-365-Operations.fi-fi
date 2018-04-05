@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 946584d8afa8937afc7a26835e05b0eecebaad35
-ms.openlocfilehash: 67558889dea03738a665d8f1e2f30833b96c4656
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/23/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sä
 
 Sähköinen raportointi tukee kaavojen suunnittelutoimintoa. Tämän vuoksi voit määrittää suunnittelun yhteydessä lausekkeita, joita voidaan käyttää suorituksen aikana seuraavissa tehtävissä:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin tietokannasta vastaanotettujen tietojen muuntaminen. Tiedot täytetään ER-tietomalliin, joka on suunniteltu ER-muotojen (kuten suodatus, ryhmittely ja tietotyypin muunnos) tietolähteeksi (Näitä muunnoksia ovat esimerkiksi suodatus, ryhmitys ja tietotyypin muunto.)
+- Microsoft Dynamics 365 for Finance and Operationsin tietokannasta vastaanotettujen tietojen muuntaminen. Tiedot täytetään ER-tietomalliin, joka on suunniteltu ER-muotojen (kuten suodatus, ryhmittely ja tietotyypin muunnos) tietolähteeksi (Näitä muunnoksia ovat esimerkiksi suodatus, ryhmitys ja tietotyypin muunto.)
 - Muodostettavaan sähköiseen asiakirjaan lähetettävien tietojen muotoilu tietyn ER-muodon asettelun ja ehtojen mukaisesti. (Muotoilu voidaan tehdä esimerkiksi pyydetyn kielen tai kulttuurin tai koodauksen mukaisesti.)
 - Sähköisten asiakirjojen luontiprosessin hallinta. (Lausekkeet voivat esimerkiksi ottaa käyttöön muodon tiettyjen elementtien tuottamisen tai poistaa sen käytöstä käsiteltävien tietojen mukaan. Ne voivat myös keskeyttää asiakirjan luontiprosessin tai näyttää sanomia käyttäjille.)
 

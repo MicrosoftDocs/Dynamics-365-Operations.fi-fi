@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad76f286d16b149affa110aef75874a52b66798f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 34dac634e09a8daa8a22b9f1efbc18ca44444e21
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -54,7 +54,7 @@ Käytä **Määritä laskusääntö laskun kirjoituspäivälle**-sivua määritt
 Voit asettaa päivämäärän hallintaparametrit varmistamaan, että asiakkaiden laskut ja asiakastapahtumien hyvityslaskut luodaan määritellyn ajanjakson kuluttua siitä, kun toimitus on tapahtunut. Löydät nämä parametrit **laskun päivämäärän tarkistus** -alueelta **myyntireskontran parametrit** -sivulla.
 
 ## <a name="example"></a>Esimerkki
-Määritä Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition laskemaan laskun kirjoittamisen eräpäivät EU:n sisäisiin toimituksiin, toimitusta seuraavan kuun 15. päivänä, luomalla päivämäärävälin koodi ja laskemissääntö seuraavilla asetuksilla:
+Voit määrittää Microsoft Dynamics 365 for Finance and Operationsin laskemaan laskun kirjoittamisen eräpäivät EU:n sisäisiin toimituksiin toimitusta seuraavan kuun 15. päiväksi luomalla päivämäärävälin koodin ja laskemissäännön seuraavilla asetuksilla:
 
 ### <a name="date-interval-code"></a>Päivämäärävälin koodi
 

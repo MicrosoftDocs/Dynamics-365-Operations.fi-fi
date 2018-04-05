@@ -19,10 +19,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 84d5f60cdce4cd667c408d17d9892d7079947f58
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc7194e7f95a6a99587a6f7e8ab8a30957bbbd90
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/07/2018
 
 Tässä aiheessa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia. 
 
-Voit mukauttaa Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin erilaisilla toiminnoilla lomakkeen tarpeitasi vastaavaksi. Kyselylomakkeen avulla voit esimerkiksi
+Microsoft Dynamics 365 for Finance and Operationsin erilaisten toimintojen avulla voit mukauttaa lomakkeen tarpeitasi vastaavaksi. Kyselylomakkeen avulla voit esimerkiksi
 
 -   testata työntekijöiden ja hakijoiden ammatillista pätevyyttä
 -   arvioida, ovatko kurssin osallistujat oppineet kurssimateriaalin

@@ -1,6 +1,6 @@
 ---
 title: Finance and Operations- ja Dynamics Lifecycle Services -tuki
-description: "Tässä artikkelissa kerrotaan Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta."
+description: "Tässä artikkelissa kerrotaan Microsoft Dynamics 365 for Finance and Operationsin ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta."
 author: kfend
 manager: AnnBe
 ms.date: 06/23/2017
@@ -18,14 +18,14 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d5593c54cf139e38da51a0932382a4baecb83898
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a078631d1661d7d61156b9d85c18172abd79827d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
-# <a name="find-support-for-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-and-dynamics-lifecycle-services"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition- ja Dynamics Lifecycle Services -tuki
+# <a name="find-support-for-microsoft-dynamics-365-for-finance-and-operations-and-dynamics-lifecycle-services"></a>Microsoft Dynamics 365 for Finance and Operations- ja Dynamics Lifecycle Services -tuki
 
 [!include[banner](../includes/banner.md)]
 
@@ -63,7 +63,7 @@ Finance and Operationsin ja LCS:n tukiresurssit ovat seuraavassa taulukossa. Nä
 </tr>
 <tr class="odd">
 <td>Käytä Tuen pilvipalvelu -työkalua.</td>
-<td><a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS:n</span></a> <strong>Tuki</strong>-ruutu on työkalu, jolla voit hallita tukitapahtumia. Voit lähettää ongelmat suoraan siirtymällä LCS-projektin <strong>Tuki</strong>-ruutuun. Voit lähettää ongelmat sieltä kahdella tavalla:
+<td><a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a> <strong>Tuki</strong>-ruutu on työkalu, jolla voit hallita tukitapahtumia. Voit lähettää ongelmat suoraan siirtymällä LCS-projektin <strong>Tuki</strong>-ruutuun. Voit lähettää ongelmat sieltä kahdella tavalla:
 <ul>
 <li>Valitse <strong>Aktiivinen ongelma</strong> -välilehdessä ensin ongelma ja sitten <strong>Lähetä Microsoftille</strong>.</li>
 <li>Lähetä ongelma valitsemalla <strong>Lähetetty Microsoftille</strong> -välilehdessä <strong>Lähetä uusi tapaus</strong>.</li>

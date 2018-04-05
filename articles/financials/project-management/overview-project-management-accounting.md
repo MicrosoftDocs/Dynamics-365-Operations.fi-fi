@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Projekti on tehtäväryhmä, joka on suunniteltu tarjoamaan palvelu, tuottamaan 
 ## <a name="projects-across-industries"></a>Projektit eri aloilla
 Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla kuvassa esitetyllä tavalla. [![Projektit eri aloilla](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-Puhelinpalvelukeskuksessa, lipun avulla voidaan kuvata joukko toimenpiteitä, joita puhelun ratkaiseminen edellyttää. Konsulttiyritykset, kuten hallinnolliset tai tekniset konsulttiorganisaatiot tai mainostoimistot, viittaavat toimintoihinsa projekteina. Markkinoinnissa kampanja edustaa työtehtäviä, jotka pitää toimittaa. Projektiin perustuvassa valmistuksessa, tuotantotilaus liittyy eri töihin, jotka on tehtävä valmiiden tuotteiden tuottamiseksi. Mitä nimiä niistä käytetäänkään, näihin projekteihin sisältyy resursseja, aikatauluja ja kustannuksia. Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin projektinhallinta- ja kirjanpitotoiminnot voivat auttaa suunnittelussa, suorituksessa ja projektianalyysissa.
+Puhelinpalvelukeskuksessa, lipun avulla voidaan kuvata joukko toimenpiteitä, joita puhelun ratkaiseminen edellyttää. Konsulttiyritykset, kuten hallinnolliset tai tekniset konsulttiorganisaatiot tai mainostoimistot, viittaavat toimintoihinsa projekteina. Markkinoinnissa kampanja edustaa työtehtäviä, jotka pitää toimittaa. Projektiin perustuvassa valmistuksessa, tuotantotilaus liittyy eri töihin, jotka on tehtävä valmiiden tuotteiden tuottamiseksi. Mitä nimiä niistä käytetäänkään, näihin projekteihin sisältyy resursseja, aikatauluja ja kustannuksia. Microsoft Dynamics 365 for Finance and Operationsin projektinhallinta- ja kirjanpito-toiminnot voivat auttaa suunnittelussa, suorituksessa ja projektianalyysissa.
 
 ## <a name="project-phases"></a>Projektin vaiheet
 Vaikka seuraava prosessinkulku on suunnattu ulkoisiin projekteihin tai projektiin, jotka ovat valmiita yhdelle tai useammalle asiakkaalle, toiminto koskee myös sisäisiä kustannus vain -projekteja. 

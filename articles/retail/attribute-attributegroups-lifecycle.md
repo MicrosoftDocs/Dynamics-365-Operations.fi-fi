@@ -19,10 +19,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 6fde46c35d5efbb72ad97628d7d5a3f9eeba7c8e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 53af4335146be6c163a6d84b60155e1a741c0be4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/13/2018
 
 [!include[banner](includes/banner.md)]
 
-*Määritteiden* avulla voidaan täydentää tuotteen ja sen ominaisuuksien kuvausta käyttäjän määrittämien kenttien avulla. (Näitä kenttiä ovat esimerkiksi **Muistin koko**, **Kiintolevyn kapasiteetti** ja **Energy Star -merkinnän mukainen**). Microsoft Dynamics 365 for Finance and Operations, Enterprise editionissa määritteitä voidaan liittää erilaisiin vähittäismyynnin yksiköihin, kuten tuoteluokkiin ja vähittäismyyntikanaviin, ja niille voidaan määrittää oletusarvoja. Tuotteet perivät sitten määritteet ja oletusarvot, kun ne liitetään tuoteluokkiin tai vähittäismyyntikanaviin. Oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, vähittäismyyntikanavan tasolla tai vähittäismyyntiluettelossa.
+*Määritteiden* avulla voidaan täydentää tuotteen ja sen ominaisuuksien kuvausta käyttäjän määrittämien kenttien avulla. (Näitä kenttiä ovat esimerkiksi **Muistin koko**, **Kiintolevyn kapasiteetti** ja **Energy Star -merkinnän mukainen**). Microsoft Dynamics 365 for Finance and Operations -sovelluksessa määritteitä voidaan liittää erilaisiin vähittäismyynnin yksiköihin, kuten tuoteluokkiin ja vähittäismyyntikanaviin, ja niille voidaan määrittää oletusarvoja. Tuotteet perivät sitten määritteet ja oletusarvot, kun ne liitetään tuoteluokkiin tai vähittäismyyntikanaviin. Oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, vähittäismyyntikanavan tasolla tai vähittäismyyntiluettelossa.
  
 Tavallisella televisiotuotteella voi olla esimerkiksi seuraavat määritteet.
 

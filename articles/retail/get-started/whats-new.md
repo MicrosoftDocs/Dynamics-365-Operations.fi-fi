@@ -17,10 +17,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 008f1acec62c1fc6d423dd7629d3f92f758be5e8
+ms.sourcegitcommit: 9c974041c614c67335bb40f4f461bc1999bf3eb0
+ms.openlocfilehash: 476ae035674c0b9c3af18db28668442247b5e310
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -30,10 +30,14 @@ ms.lasthandoff: 03/07/2018
 
 Tämä sivu ohjaa resursseihin, joiden avulla saat tietoja uusimpien Microsoft Dynamics 365 for Retail -versioiden uusista ominaisuuksista ja muutoksista.
 
+[!include[release notes](../includes/release-notes.md)]
+ 
+
 ## <a name="releases-of-dynamics-365-for-retail"></a>Dynamics 365 for Retailin versiot
 
 |Julkaisu | Koontikäännös | Käytettävyys | Lisätietoja |
 |--------|--------------|--------------|------------|
+|Dynamics 365 for Retail 7.3.2 | 7.3.21971.64040 | Maaliskuun 2018. | 1. Siirry sivustoon [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Valitse **Uutta**-välilehti.<br><br>3. Valitse **Dynamics 365 for Retail** -valintaruutu.<br><br>4. Etsi ominaisuuksia valitsemalla **Julkaistu Dynamics 365 for Retail 7.3.2:ssä**. |
 |Dynamics 365 for Retail 7.3.1 | 7.3.21971.64032 | Maaliskuun 2018. | 1. Siirry sivustoon [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Valitse **Uutta**-välilehti.<br><br>3. Valitse **Dynamics 365 for Retail** -valintaruutu.<br><br>4. Etsi ominaisuuksia valitsemalla **Julkaistu Dynamics 365 for Retail 7.3.1:ssä**. |
 |Dynamics 365 for Retail 7.3 | 7.3.21971.64028 | Helmikuun 2018. | 1. Siirry sivustoon [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Valitse **Uutta**-välilehti.<br><br>3. Valitse **Dynamics 365 for Retail** -valintaruutu.<br><br>4. Etsi ominaisuuksia valitsemalla **Julkaistu Dynamics 365 for Retail 7.3:ssä**. |
 |Sovelluksen päivitys 5 | 7.2.21792.64093 | Helmikuun 2018. | 1. Siirry sivustoon [Dynamics 365 Roadmap](https://roadmap.dynamics.com/).<br><br>2. Valitse **Uutta**-välilehti.<br><br>3. Valitse **Dynamics 365 for Retail** -valintaruutu.<br><br>4. Etsi ominaisuuksia valitsemalla **Julkaistu sovelluspäivityksessä 5**. |

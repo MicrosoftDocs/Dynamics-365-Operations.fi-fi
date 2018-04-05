@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: b0a1dba5afbd7beba45149340f637223f6ecedcf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Sovellusluokkamenetelmän kutsulausekkeiden suunnittelu (ER)
@@ -28,13 +28,13 @@ ms.lasthandoff: 02/07/2018
 
 Tässä oppaassa on tietoja aiemmin luodun sovelluslogiikan käyttämisestä uudelleen sähköisen raportoinnin (ER) konfiguraatioissa kutsumalla sovellusluokkien pakollisia menetelmiä ER-lausekkeissa. Luokkien kutsumisen argumenttien arvot voidaan määrittää dynaamisesti suorituksen aikana esimerkiksi jäsennysasiakirjan perusteella. Näin varmistetaan tietojen oikeellisuus. Tässä oppaassa luodaan pakollisia ER-konfiguraatioita malliyritykselle Litware Inc. Tämä menettely on luotu käyttäjille, joille on määritetty järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli. 
 
-Nämä vaiheet voidaan suorittaa minkä tahansa tietojoukon avulla. Seuraava tiedosto on lisäksi ladattava ja tallennettava paikallisesti: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
+Nämä vaiheet voidaan suorittaa minkä tahansa tietojoukon avulla. Sinun on myös ladattava ja tallennettava paikallisesti seuraava tiedosto: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
 
 ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista.
 
 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
     * Tarkista, onko Litware, Inc. -malliyrityksen konfiguraation lähde käytettävissä ja merkitty aktiiviseksi. Jos konfiguraation lähde ei ole näkyvissä, suorita ensin Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet.   
-    * Oletetaan, että suunnittelet saapuvien tiliotteiden jäsennysprosessia sovellustietojen päivitys varten. Saat saapuvat tiliotteet TXT-tiedostoina, joissa on IBAN-koodeja. IBAN-koodit on tarkistettava tiliotteiden osana tuontiprosessia. Tähän tarkistukseen käytetään Dynamics 365 for Finance and Operations, Enterprise editioniin sisältyvää logiikkaa.   
+    * Oletetaan, että suunnittelet saapuvien tiliotteiden jäsennysprosessia sovellustietojen päivitys varten. Saat saapuvat tiliotteet TXT-tiedostoina, joissa on IBAN-koodeja. IBAN-koodit on tarkistettava tiliotteiden osana tuontiprosessia. Tähän tarkistukseen käytetään Dynamics 365 for Finance and Operations -sovellukseen sisältyvää logiikkaa.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Uuden ER-mallimäärityksen tuominen
 1. Etsi haluamasi tietue luettelosta ja valitse se.

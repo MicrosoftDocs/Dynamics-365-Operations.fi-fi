@@ -18,10 +18,10 @@ ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: bbbe37330e16a079b817dfe04f4a47f046263e88
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -42,11 +42,11 @@ Moni organisaatio edellyttää, että työntekijän hyvitettäväksi lähetettä
 
 Käyttäjät voivat tehdä **Kulujen hallinta** -mobiilityötilassa seuraavat tehtävät:
 
-- Ottaa kuvan kuitista ja ladata sen Microsoft Dynamics for Finance and Operations, Enterprise Editioniin. Voit sitten liittää kuvan kuluraporttiin myöhemmin.
+- ottaa kuvan kuitista ja ladata sen Microsoft Dynamics for Finance and Operationsiin. Voit sitten liittää kuvan kuluraporttiin myöhemmin.
 - Ladata tiedoston siepattuna kuittina. Voit sitten liittää tiedostoon kuluraporttiin myöhemmin.
 - Luoda uuden kulurivin liitetystä kuitista. Voit sitten lisätä rivinimikkeen kuluraporttiin myöhemmin, ja lähettää sen hyväksyntää ja hyvitystä varten.
 
-Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, voit käyttää myös seuraavia ominaisuuksia:
+Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, voit käyttää myös seuraavia ominaisuuksia:
 
 - Luo uusi kuluraportti.
 - Liitä luottokorttitapahtumat ja muut aiemmin luodut kulut kuluraporttiin.
@@ -60,8 +60,8 @@ Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise
 ## <a name="prerequisites"></a>Edellytykset
 Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 
-Jos Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition on otettu käyttöön organisaatiossa, järjestelmänvalvojan on julkaistava **Kulujen hallinta** -mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations 
+Jos Microsoft Dynamics 365 for Finance and Operations on otettu käyttöön organisaatiossa, järjestelmänvalvojan on julkaistava **Kulujen hallinta** -mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.
 Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations -versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 

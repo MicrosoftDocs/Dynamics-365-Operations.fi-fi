@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: b2514b6ff7500863a312ee378be008a7dcfb7438
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3eb642944a31aad983758fc28bc692800bb6b4d2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent-sovelluksen käytön aloittaminen
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/07/2018
 Microsoft Dynamics 365 for Talent -sovelluksen käyttöliittymän muokkaaminen ja asetusten määrittäminen on helppoa. Näin saat ohjelmiston vastaamaan paremmin yrityksen tarpeita. Tämä ohjeaihe sisältää linkkejä ohjeaiheisiin, jotka sisältävät tietoja käyttöliittymän mukauttamisesta haluamiesi asetusten perusteella. Ohjeaihe sisältää myös linkkejä tietoihin, joiden avulla voit etsiä tietoja järjestelmästä tehokkaasti ja tarkasti. 
 
 > [!NOTE] 
-> Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations, Enterprise Edition; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
+> Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
 
 ### <a name="personalizing-talent"></a>Talentin mukauttaminen 
 Seuraavissa ohjeaiheissa näytetään, miten Dynamics 365 for Talent -sovelluksen useat toiminnot määritetään niin, että työt saadaan tehtyä helpommin ja ajoissa. 

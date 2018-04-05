@@ -1,6 +1,6 @@
 ---
 title: "Pikanäppäimet"
-description: "Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operations, Enterprise edition-ohjelmistossa."
+description: "Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operationsissa."
 author: jasongre
 manager: AnnBe
 ms.date: 12/12/2017
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/14/2017
 [!include[banner](../includes/banner.md)]
 
 
-Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operations, Enterprise edition-ohjelmistossa. 
+Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operationsissa. 
 
 **Huomautus:** Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
 
@@ -74,7 +74,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Avaa tietoruutu (tai siirrä kohdistus tietoruutuun, jos se on avoinna) | ALT + M,B tai Ctrl + F2                        |
 | Sulje tietoruutu (kun kohdistus on tietoruudussa)                         | Esc                                       |
 | Siirry seuraavaan/edelliseen tietoruutuun (kun kohdistus on tietoruudussa)              | Alt+Vaihto+Alanuoli / Alt+Vaihto+Ylänuoli |
-| Siirry &lt;n&gt;. tietoruutuun (kun kohdistus on tietoruudussa)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Siirry &lt;n&gt;. tietoruutuun (kun kohdistus on tietoruudussa)                | Alt+&lt;n&gt; (&lt;n&gt; = 1–9)           |
 | Laajenna tietoruutu (kun kohdistus on tietoruudun otsikossa)                             | Väli tai Enter                            |
 | Tiivistä nykyinen tietoruutu                                                    | Alt+0                                     |
 
@@ -115,11 +115,11 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | **Toiminto**                                      | **Näppäinyhdistelmä**                                    |
 | Siirry seuraavaan/edelliseen kenttään                     | Sarkain / Vaihto+Sarkain                              |
 | Siirry seuraavaan/edelliseen välilehteen                       | Alt+Vaihto+Oikea nuoli / Alt+Vaihto+Vasen nuoli |
-| Siirry &lt;n&gt;. välilehteen                         | Alt+Vaihto+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Siirry &lt;n&gt;. välilehteen                         | Alt+Vaihto+&lt;n&gt; (&lt;n&gt; = 1–9)        |
 | Siirry seuraavaan/edelliseen pikavälilehteen                   | Alt+Vaihto+Alanuoli / Alt+Vaihto+Ylänuoli    |
-| Siirry &lt;n&gt;. pikavälilehteen                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Siirry &lt;n&gt;. pikavälilehteen                     | Alt+&lt;n&gt; (&lt;n&gt; = 1–9)              |
 | Siirry seuraavaan/edelliseen lehteen (pystysuora välilehti)      | Alt+Vaihto+Oikea nuoli / Alt+Vaihto+Vasen nuoli |
-| Siirry seuraavaan&lt;n&gt;edelliseen lehteen (pystysuora välilehti)        | Alt+Vaihto+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Siirry &lt;n&gt;. lehteen (pystysuora välilehti)        | Alt+Vaihto+&lt;n&gt; (&lt;n&gt; = 1–9)        |
 | Laajenna pikavälilehti (kun kohdistus on sen otsikossa) | Väli tai Enter                               |
 | Tiivistä nykyinen pikavälilehti                        | Alt+0                                        |
 | Vaihda ruudukkonäkymään                                 | Ctrl+Vaihto+G                                 |

@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2c0a00b6a1956f1f22a50951308c434c3f0eefc4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: baefad4efd51661c236459493b7f02747593bbab
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -73,7 +73,7 @@ Seuraavassa on esimerkkejä tyypillisistä tilastodimension jäsenistä.
 
 ## <a name="statistical-measure-provider-template"></a>Tilastomittauksen lähdemalli
 
-Tilastomittaukset voivat olla peräisin monenlaisista lähteistä. Microsoft Dynamics 365 for Finance and Operations Enterprise edition on erinomainen tilastomittausten lähde. Voit käyttää tilastomittauksen lähdemallia määrittämään helposti tuotavia tilastomittauksia.
+Tilastomittaukset voivat olla peräisin monenlaisista lähteistä. Microsoft Dynamics 365 for Finance and Operations on erinomainen tilastomittausten lähde. Voit käyttää tilastomittauksen lähdemallia määrittämään helposti tuotavia tilastomittauksia.
 
 Tilastomittauksen lähdemallin määritys on yleinen ja sitä voidaan käyttää useisiin tilastodimension jäseniin.
 
@@ -132,13 +132,13 @@ Ennen kuin saat tilastomittaukset kustannuslaskentaan, sinun on muodostettava su
 > [!NOTE]
 > Tässä esimerkissä luodaan suhde vain **Toteutunut versio** -tietolähteelle.
 
-Siirry kohtaan **Kustannuslaskennan kirjanpito** \> **Todellinen versio** \> **Hallinta** \> **Tilastomittaukset** ja määritä suhde. Valitse tässä esimerkissä **Dynamics 365 for Finance and Operations, Enterprise edition – Tilastomittaukset** -tietoyhdistin, koska haluamme tuoda tietoja Finance and Operations -palvelusta.
+Siirry kohtaan **Kustannuslaskennan kirjanpito** \> **Todellinen versio** \> **Hallinta** \> **Tilastomittaukset** ja määritä suhde. Valitse tässä esimerkissä **Dynamics 365 for Finance and Operations – tilastomittaukset** -tietoyhdistin, koska haluamme tuoda tietoja Finance and Operations -palvelusta.
 
 **Tietolähde**
 
 | Nimi        | Tietoyhdistin                                                                     | Tilastodimension jäsen |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| FTE D365FO | Dynamics 365 for Finance and Operations, Enterprise Edition – Tilastomittaukset | FTE                         |
+| FTE D365FO | Dynamics 365 for Finance and Operations – Tilastomittaukset | FTE                         |
 
 **Tietojen tarjoajan konfiguraatio**
 
@@ -220,13 +220,13 @@ Ennen kuin saat tilastomittaukset kustannuslaskentaan, sinun on muodostettava su
 > [!NOTE]
 > Tässä esimerkissä luodaan suhde vain **Toteutunut versio** -tietolähteelle.
 
-Siirry kohtaan **Kustannuslaskennan kirjanpito** \> **Todellinen versio** \> **Hallinta** \> **Tilastomittaukset** ja määritä suhde. Valitse tässä esimerkissä **Dynamics 365 for Finance and Operations, Enterprise edition – Tilastomittaukset** -tietoyhdistin, koska haluamme tuoda tietoja Finance and Operations -palvelusta.
+Siirry kohtaan **Kustannuslaskennan kirjanpito** \> **Todellinen versio** \> **Hallinta** \> **Tilastomittaukset** ja määritä suhde. Valitse tässä esimerkissä **Dynamics 365 for Finance and Operations – tilastomittaukset** -tietoyhdistin, koska haluamme tuoda tietoja Finance and Operations -palvelusta.
 
 **Tietolähde**
 
 | Nimi           | Tietoyhdistin                                                                     | Tilastodimension jäsen |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Pak. KP D365FO | Dynamics 365 for Finance and Operations, Enterprise Edition – Tilastomittaukset | Pak. KP                      |
+| Pak. KP D365FO | Dynamics 365 for Finance and Operations – Tilastomittaukset | Pak. KP                      |
 
 Järjestelmä tunnistaa, että ProdRouteTrans on taulukko, jossa jokainen tietue kuuluu erilliseen yritykseen. Tämän vuoksi järjestelmä pyytää sinua valitsemaan yrityksen, josta tapahtumat tuodaan.
 
