@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Sijaintien määrittäminen varastonhallintajärjestelmää käyttävässä varastossa
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä opastuksessa selvitetään, miten voit määrittää sijaintiasetuset varastoon, jossa uusi varastonhallintajärjestelmä on otettu käyttöön. (Kyse on varastosta, jossa käytetään varastonhallinnan lisäprosesseja.) Yleensä tämän prosessin tekee varastopäällikkö. Voit suorittaa opastuksen USMF-demoyrityksen tiedoilla tai käyttää omia tietoja. Edellytyksenä on, että vähintään yksi toimipaikka on määritetty.
 

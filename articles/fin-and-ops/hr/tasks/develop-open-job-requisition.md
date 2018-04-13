@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="develop-and-open-a-job-requisition"></a>Työehdotusten kehittäminen ja avaaminen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Työhönottoprojektit auttavat rekrytointiprosessissa. Voit määrittää jokaiselle työhönottoprojektille tietoja, kuten työn, johon rekrytoidaan, rekrytoijan nimen, projektin tilan ja osaston, jossa työ sijaitsee. Kun työhönottoprojekti on luotu, voit kirjoittaa projektille työilmoituksen, julkaista sen työntekijöiden itsepalvelusivuilla, liittää työhakemukset projektiin ja seurata kyseisen projektin aktiviteetteja. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Aloita menettely valitse Henkilöstöhallinto > Työhönotto > Työhönottoprojektit > Työhönottoprojektit
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Kustannushintojen hallinnan aloitussivu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [Kustannushintojen hallinnan (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) avulla voit käsitellä raaka-aineiden, puolivalmiiden tuotteiden, valmiiden tuotteiden ja keskeneräisten resurssien arvostusta ja kirjanpitoa. Tässä prosessissa [varastokirjanpito](cost-object.md) ja [valmistuksen kirjanpito](bom-calculations.md) määritetään. Lisäksi niitä hallitaan ja niistä raportoidaan.
 

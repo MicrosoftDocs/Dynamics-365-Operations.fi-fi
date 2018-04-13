@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-injury-and-illness-information"></a>Määritä vamma- ja sairaustiedot
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Työnantajan on tiedettävä, kun työntekijä loukkaantuu tai sairastuu työpaikan vaarojen vuoksi. Voit määrittää Loukkaantuminen ja sairastuminen -sivulla tietoja, jotka helpottavat työtapaturmien tai -sairauksien raportointia. Voit määrittää erilaisia vammoja ja sairauksia, mukaan lukien hoitotyypit, kustannukset ja tulokset. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Työajan seurannan rekisteröinti
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Aikarekisteröinnin työntekijät voivat määrittää erityyppisiä ajan rekisteröintejä, joita ovat esimerkiksi saapuminen, poistuminen, epäsuorien toimintojen rekisteröinti sekä poissaolorekisteröinti. Tässä ohjeaiheessa kuvataan rekisteröintejä, niiden laskemista, hyväksyntää sekä työnkulkua, jolla voidaan lisätä rakenne ja automaattinen hyväksyntä työaikaraporttien hyväksyntäprosessiin. 
 
@@ -95,7 +94,7 @@ Voit määrittää työnkulun hyväksyntäprosessin, joka hyväksyy automaattise
 | Työajan seurantapäivien kokonaismäärä            | Työnkulun tarkistaa rekisteröinnit esimerkiksi päivittäisen odotetun työtuntimäärän perusteella. |                                                                                                                                                                                                                                                       |
 | Työajan seurannan kirjauskansion rekisteröinti. | Työnkulku tarkistaa kunkin rekisteröintityypin rekisteröintipäivämäärän.                           | Työajan seuranta • Saapuminen • Poistuminen • Poissaolo • Tauko • Kytkentäkoodi • Projekti • Projektitehtävä • Epäsuora tehtävä Tuotantotyöt • Jono ennen • Asetukset • Prosessi • Limitys • Kuljetus • Jono jälkeen • Aloita apu • Lopeta apu |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a>Hyväksyttyjen rekisteröintien siirtäminen
 Rekisteröintien hyväksymisen jälkeen ne voidaan siirtää kausittaiseen palkanlaskentatyöhön. Siirretty rekisteröinti kirjataan tehtävään tai työhön, johon se liittyy, kuten tuotantotilaukseen tai projektiin. Rekisteröintien perusteella kullekin työntekijälle luodaan palkanlaskentatapahtumia.  

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="postdated-checks"></a>Myöhemmäksi päivätyt sekit
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja myöhemmäksi päivättyjen sekkien tuesta Microsoft Dynamics 365 for Finance and Operationsissa. Myöhemmäksi päivätyt sekit ovat sekkejä, jotka on asetettu tulevan päivämäärän omaavien maksujen vastaanottamista varten. Tämän vuoksi sekkiä ei voi lunastaa ennen määritettyä päivämäärää.
 
@@ -76,14 +75,14 @@ Jos toimittajalle lähetetty tai asiakkaalta vastaanotettu alkuperäinen sekki o
 <td>Voit peruuttaa myöhemmäksi päivätyn sekin seuraavissa tilanteissa: - pankki palauttaa sekin
 - sekki on kohdistettu väärään laskuun
 - sekkiä vastaan on tehty käteismaksu.
-</td>
-</tr>
-<tr class="even">
-<td>Myöhemmäksi päivätyn sekkimaksun lopetus</td>
-<td>Voit lopettaa toimittajalle myönnetyn myöhemmäksi päivätyn sekkimaksun esimerkiksi seuraavista syistä: varat eivät riitä, sopimusehtojen toimittajan kanssa muuttuvat, toimittaja on toimittanut viallisia tavaroita tai tavaroita palautetaan toimittajalle. Voit lopettaa maksun vain niiden sekkien osalta, joita ei ole lunastettu.</td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td>Myöhemmäksi päivätyn sekkimaksun lopetus</td>
+  <td>Voit lopettaa toimittajalle myönnetyn myöhemmäksi päivätyn sekkimaksun esimerkiksi seuraavista syistä: varat eivät riitä, sopimusehtojen toimittajan kanssa muuttuvat, toimittaja on toimittanut viallisia tavaroita tai tavaroita palautetaan toimittajalle. Voit lopettaa maksun vain niiden sekkien osalta, joita ei ole lunastettu.</td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

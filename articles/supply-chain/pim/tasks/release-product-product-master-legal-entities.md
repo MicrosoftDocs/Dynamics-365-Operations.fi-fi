@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>Vapauta tuote/päätuote yrityksille
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä esitellään tuotteen tai päätuotteen vapautus yhteen yritykseen tai useaan yritykseen. Tämän tehtävän luomisessa käytetään esittely-tietojen yritystä USRT. Tehtävä on tarkoitettu myynninedistämispäällikölle ja tuotesuunnittelijalle.
 

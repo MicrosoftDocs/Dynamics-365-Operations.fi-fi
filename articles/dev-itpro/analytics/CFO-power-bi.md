@@ -25,8 +25,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="cfo-overview-power-bi-content"></a>Talousjohtajan yhteenveto – Power BI -sisältö
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)] 
 
 Tässä ohjeaiheessa käsitellään **talousjohtajan yhteenvetoa** ja Microsoft Power BI -sisältöä. Tämä Power BI -sisältö koskee käyttäjiä, joilla on Microsoft Dynamics 365 for Finance and Operationsin versio 7.2. Jos käytössä on versio 7.3 tai sitä uudempi versio, lisätietoja on kohdassa [Taloushallinnon tiedot](financial-insights.md).
 

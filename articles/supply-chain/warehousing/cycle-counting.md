@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cycle-counting"></a>Inventointi
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan, miten inventointia voi käyttää Varastonhallinnassa käytettävissä olevassa varastoratkaisussa. Artikkeli ei koske Inventoinnin- ja varastonhallinnassa käytettävissä olevaa varastoratkaisua.
 

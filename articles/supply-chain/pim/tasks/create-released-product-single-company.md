@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Luo vapautettu tuote yhdessä yrityksessä
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten yksittäinen vapautettu tuote luodaan yksittäisessä yrityksessä. Kun vapautettu tuote on luotu, se on heti käytettävissä vain tässä yksikössä. Voit suorittaa tämän menettelyn esittely-yrityksessä USMF. Tuotesuunnittelija tekee yleensä tämän tehtävän.
 

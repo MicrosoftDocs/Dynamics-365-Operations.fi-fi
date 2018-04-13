@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-groups"></a>Kustannusryhmät
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kustannusryhmät muodostavat pohjan valmistetun nimikkeen laskettujen kustannusten kustannusosuuksien, kuten materiaali- ja työkustannusten osuuksien sekä yleiskustannusten osuuden, segmentoinnille ja analysoinnille. Kustannusryhmän segmentoinnilla on valmistusympäristöissä useita synonyymejä, kuten kustannuserittely, kustannusten hajottaminen ja kustannusluokittelu. 
 

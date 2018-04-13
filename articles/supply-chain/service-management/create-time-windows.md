@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-time-windows"></a>Aikaikkunoiden luominen   
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Voit optimoida huoltotilausrivien ajoittamisen aikaikkunoiden avulla.
 

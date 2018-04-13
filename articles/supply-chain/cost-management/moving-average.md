@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="moving-average"></a>Liukuva keskiarvo
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Liukuva keskiarvo on keskiarvon periaatteeseen perustuva pysyvä kustannuslaskentamenetelmä, jossa varasto-ottojen kustannukset eivät muutu, vaikka ostokustannus muuttuu. Ero aktivoidaan. Se perustuu suhteelliseen laskelmaan. Jäljelle jäävä summa siirretään kuluksi. 
 

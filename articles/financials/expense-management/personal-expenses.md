@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="personal-expenses-on-an-expense-report"></a>Henkilökohtaiset kulut kuluraportissa
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Liikematkalla työntekijät voivat joskus maksaa henkilökohtaisia kulujaan yrityksen luottokorteilla. Jos henkilökohtaisten kulujen käsittelyä varten ei määritetä menettelyä, kuluraporttien hyväksyntäprosessi voi häiriintyä, kun työntekijä lähettää eritellyt kuluraportit. 
 

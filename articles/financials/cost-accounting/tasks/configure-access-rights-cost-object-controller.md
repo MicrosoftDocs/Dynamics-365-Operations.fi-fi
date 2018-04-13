@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-access-rights-for-a-cost-object-controller"></a>Kustannusobjektin vastuuhenkilön käyttöoikeuksien määrittäminen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämän menettelyn avulla määritetään kustannusobjektin vastuuhenkilön käyttöoikeudet. Tämä tallenne käyttää esittelytietojen USP2-yritystä.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-a-fixed-asset-group"></a>Muuta käyttöomaisuusryhmä
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Käyttöomaisuus tulee liittää oikeaan käyttöomaisuusryhmään. Käyttöoikeusryhmää käytetään seuraavissa tilanteissa:
 

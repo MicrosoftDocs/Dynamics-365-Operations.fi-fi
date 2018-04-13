@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Lean-valmistuksen visuaalinen ajoitus
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja Kanban-aikataulusta, jota tuotannon suunnittelija käyttää kanban-töiden tuotantosuunnitelman valvontaan ja optimointiin.
 

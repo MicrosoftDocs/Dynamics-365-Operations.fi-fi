@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>Rekisteröi kuljettajan sisäänkuittaus ja lähteminen tapaamiseen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kuvataan, miten kuljettajan sisään- ja uloskuittaukset rekisteröidään. Kuljetuskoordinaattori tekee tämän yleensä. Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä. Ennen kuin aloitat, kuormalla on oltava tapaaminen. Tapaamisen voit luoda ajamalla ensin "Kuorman tapaamisen määrittäminen" -menettelyn.
 

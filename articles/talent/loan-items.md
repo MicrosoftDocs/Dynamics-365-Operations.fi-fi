@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-items-lent-to-workers"></a>Työntekijöille lainattujen kohteiden hallinta
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Lainakohteet ovat tietueita, joiden avulla esimiehet voivat seurata yrityksen työntekijöille lainaamia fyysisiä kohteita. 
 
@@ -51,7 +50,7 @@ Esimiehet voivat tarkastella suorille alaisille lainattuja kohteita. Heille void
 
 Jos kohde vahingoittuu tai häviää, sille kirjataan fiktiivinen palautustietue. Sen jälkeen kohde joko poistetaan tai jätetään yleiskatsaukseen ja muutetaan kuvausta sitten, ettei kohde ole käytettävissä.
 
- 
+
 <a name="see-also"></a>Lisätietoja
 --------
 

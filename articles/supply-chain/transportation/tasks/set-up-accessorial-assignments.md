@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-accessorial-assignments"></a>Määritä lisämääritykset
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten lisämaksun määritys määritetään. Kuljetuskoordinaattori tekee tämän yleensä. Määritä keskuksen lisämaksut ja lisämaksun päätiedot -ohjaus on suoritettava ennen tämän ohjauksen suorittamista
 

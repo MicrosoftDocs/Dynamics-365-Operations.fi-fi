@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-email-templates"></a>Sähköpostimallien hallinta
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Voit siirtää tietoja organisaation tietokannasta uuden asiakirjan kirjanmerkkeihin ja käyttää sitä malleissa. Tämä tehostaa viestintää hakijoiden ja ehdokkaiden kanssa. Voit tehdä tämän luomalla mallin, joka sisältää vakiotekstiä ja muutamia kirjanmerkkejä, joihin järjestelmätiedot lisätään. Voit esimerkiksi lisätä hakijan osoitteen ja yhteystiedot Microsoft Word -asiakirjaan, jota käytät viestinnässä hakijan kanssa. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

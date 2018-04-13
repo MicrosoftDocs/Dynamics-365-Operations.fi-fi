@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="vendor-rebates"></a>Toimittajan ostohyvitykset
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Toimittajan ostohyvitysten avulla yritykset voivat hallita toimittajan ostohyvitysohjelmiaan paremmin automatisoimalla tehtäviä, joilla hallitaan, seurataan ja haetaan ansaittuja ostohyvityksiä.
 

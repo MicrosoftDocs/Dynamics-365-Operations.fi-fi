@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-return-order"></a>Ostopalautustilauksen luonti
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Seuraavassa menettelyssä kuvataan, miten luot ostopalautustilauksen kopioimalla toimittajan laskuasiakirjan rivit uuteen ostotilaukseen käyttämällä Hyvityslasku-toimintoa. Se kerrotaan myös, miten vahvistat tilauksen ja käsittelet tuotteiden lähettämisen takaisin toimittajalle. Tämän oppaan esimerkissä käytetään esittely-yritys USMF:n tietoja. Yleensä ostoedustaja tekee tämän tehtävän.
 

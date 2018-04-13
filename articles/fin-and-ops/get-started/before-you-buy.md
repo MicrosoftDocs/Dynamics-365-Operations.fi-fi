@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="before-you-buy"></a>Ennen ostamista 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Oletko uusi Dynamics 365 for Finance and Operations -sovelluksen käyttäjä? Voit käyttää vaihe vaiheelta -opasta silloin, kun arvioit Finance and Operationsia tai kun olet valmis hankkimaan sen.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Tuotteeseen liittyvien käännösten usein kysytyt kysymykset
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, kuinka tuotteiden, tuotteen dimensioarvojen ja tuotemääritteiden käännöksiä hallitaan. 
 
@@ -95,8 +94,7 @@ Asiakas haluaa ostaa pienikokoisia, punaisia T-paitoja, ja T-paidan nimi on merk
 <tbody>
 <tr class="odd">
 <td>Määritä asiakkaan ensisijainen kieli seuraavien ohjeiden avulla:
-<ol>  
-<li>Valitse <strong>Myynti ja markkinointi</strong> &gt; <strong>Yleinen</strong> &gt; <strong>Asiakkaat</strong> &gt; <strong>Kaikki</strong> <strong>asiakkaat</strong>.</li>
+<ol><br/><li>Valitse <strong>Myynti ja markkinointi</strong> &gt; <strong>Yleinen</strong> &gt; <strong>Asiakkaat</strong> &gt; <strong>Kaikki</strong> <strong>asiakkaat</strong>.</li>
 <li>Avaa <strong>Asiakkaat</strong>-lomake kaksoisnapsauttamalla asiakasta. Valitse <strong>Yleinen</strong>-välilehdestä <strong>Kieli</strong> -kentän <strong>kieli</strong>.</li>
 </ol></td>
 </tr>

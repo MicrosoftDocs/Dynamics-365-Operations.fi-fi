@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-management-mobile-workspace"></a>Kulujen hallinnan mobiilityötila
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja **Kulujen hallinta** -mobiilityötilasta. Työtilan avulla käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Käyttäjät voivat myös luoda nopeasti kulurivin liitteenä olevan kuitin avulla sekä luoda ja hallita omia kuluraporttejaan. Hyväksyjät voivat myös tarkastella heille määritettyjä kuluraportteja **Kulujen hallinta** -mobiilityötilassa sekä joko hyväksyä tai hylätä nämä kuluraportit.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 01/17/2018
 ---
 # <a name="create-a-finished-product-february-2016-only"></a>Luo lopputuote (vain helmikuu 2016)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä tehtävä keskittyy valmiin tuotteen luomiseen. Se on tuoterakenteen laskentasarjan ensimmäinen tehtävä. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.
 

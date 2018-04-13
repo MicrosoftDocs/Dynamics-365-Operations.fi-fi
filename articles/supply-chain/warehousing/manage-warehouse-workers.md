@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="manage-warehouse-workers"></a>Varastotyöntekijöiden hallinta
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan, miten voit hyödyntää Microsoft Dynamics 365 for Finance and Operationsia työntekijöiden varastoissa tekemän työn ohjaamiseen ja valvontaan.
 

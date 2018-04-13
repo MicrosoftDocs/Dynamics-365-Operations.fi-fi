@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Kompensaatioprosessin määrittäminen ja tulosten laskeminen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kompensaatioprosesseja käytetään määrittämään kiinteisiin ja muuttuviin kompensaatiosuunnitelmiin rekisteröityjen työntekijöiden uudet kompensaatiosummat ja palkkiot. Suorittamalla kompensaatioprosessit useita kertoja voidaan tehdä entä–jos-analyysi. Tällä tavoin voidaan tarkistaa, että kaikki muutokset ja asetukset ovat oikein. Tällä menettelyllä luodaan kompensaatioprosessi, suoritetaan se ja tarkastellaan tuloksia. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="submit-and-approve-project-budget-revisions"></a>Lähetä ja hyväksy projektibudjettien versiot
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä on tietoja projektibudjetin muuttamisesta. Voit korjata projektibudjettia niin monta kertaa kuin se on tarpeellista. Yksittäisen korjauksen summa ei kuitenkaan näy, jos budjettia on korjattu useita kertoja. 
 

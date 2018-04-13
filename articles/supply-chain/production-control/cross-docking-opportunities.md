@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking tuotantotilauksista lähtevien laituriin
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten valmiiksi ilmoitetun materiaalin cross docking -prosessia hallitaan tuotantolinjasta lähtevien laituriin.
 
@@ -76,10 +76,10 @@ Tällä hetkellä cross docking voidaan määrittää vain kahdelle työtilausty
 
 ### <a name="cross-docking-policy-name-transfer-order"></a>Cross docking -käytännön nimi: siirtotilaus
 
--   Järjestysnumero: 10
- -   Työtilaustyyppi: siirtovarasto-otto
--   Cross docking -tarve vaatii sijainnin: epätosi
--   Cross docking -strategia: päivämäärä ja aika
+- Järjestysnumero: 10
+  -   Työtilaustyyppi: siirtovarasto-otto
+- Cross docking -tarve vaatii sijainnin: epätosi
+- Cross docking -strategia: päivämäärä ja aika
 
 ### <a name="sequence-number"></a>Järjestysnumero
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="estimate-a-production-order"></a>Arvioi tuotantotilaus
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Voit suorittaa tämän menettelyn USMF-demoyrityksen tiedoilla tai käyttää omaa tietojoukkoa. Molemmissa tapauksissa sinulla on oltava avoin tuotantotilaus, jonka tila on Luotu. Tämä on toinen seitsemästä tuotantotilauksen elinkaaresta kertovasta menettelystä.
 

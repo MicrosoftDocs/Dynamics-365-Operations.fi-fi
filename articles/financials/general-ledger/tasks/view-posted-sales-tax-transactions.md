@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Näytä kirjatut arvonlisäverotapahtumat
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Voit tarkastella haluamiasi kirjattuja arvonlisäverotapahtumia eri sivuilta. Tässä tehtävässä käytetään esittely-yritystä USMF.
 

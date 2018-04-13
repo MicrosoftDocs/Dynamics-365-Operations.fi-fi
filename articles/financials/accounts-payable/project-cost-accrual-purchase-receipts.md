@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Projektikustannusten jaksottaminen ostojen vastaanotoissa
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten ostojen vastaanottojen jaksotetut projektikustannuksia voidaan seurata Microsoft Dynamics 365 for Finance and Operationsissa. 
 

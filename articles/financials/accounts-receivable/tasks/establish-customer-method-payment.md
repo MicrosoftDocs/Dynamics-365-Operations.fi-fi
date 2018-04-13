@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="establish-customer-method-of-payment"></a>Määritä asiakkaan maksutapa
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Luo asiakkaan maksujen maksutapa. Tässä tehtävässä käytetään esittely-yritystä USMF.
 

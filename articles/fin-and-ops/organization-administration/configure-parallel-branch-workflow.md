@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-parallel-branch-in-a-workflow"></a>Määritä rinnakkainen haara työnkulussa
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rinnakkaisen haaran määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa .
 

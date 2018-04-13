@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-positions"></a>Toimien määrittäminen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Toimet ovat organisaatiohierarkian alemman tason tärkeä osa. Toimi on työn yksittäinen esiintymä. Esimerkiksi toimi Myyntipäällikkö (Itä) on yksi Myyntipäällikkö-työhön liittyvistä toimista. Toimi sijoittuu osastoille, ja sen voi määrittää vain yhdelle työntekijälle. Tässä tehtävässä käydään läpi toimen luomiseen vaadittavat vaiheet. Menettely on tarkoitettu henkilöstöhallinnon asiantuntijalle.
 

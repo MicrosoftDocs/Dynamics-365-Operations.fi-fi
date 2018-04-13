@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-fraud-alerts"></a>Petoshälytysten määrittäminen
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten ehdot ja säännöt määritetään mahdollisesti virheelliset myyntitilaukset asetetaan pitoon myöhempää tarkistusta varten. Petosten tarkistustoimintoa käytetään myyntitilauksen tietojen oikeellisuuden määrityksessä. Jos myyntitilauksen tiedot näyttävät kyseenalaisilta organisaation petosehtojen ja -sääntöjen perusteella, tilaus voidaan asettaa pitoon järjestelmänvalvojan myöhempää tarkistusta varten.
 

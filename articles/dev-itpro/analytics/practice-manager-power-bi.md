@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="practice-manager-power-bi-content"></a>Käytäntöpäällikön Power BI -sisältö
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa kuvataan, mitä kuuluu **käytäntöpäällikön** Microsoft Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
@@ -118,7 +118,9 @@ Seuraavissa osissa käsitellään kussakin yksikössä käytössä olevat kooste
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Yksikkö: ProjectAccountingCube\_TotalEstimatedCosts 
 **Tietolähde:** ProjTable
 
-| Tärkeät koostemitat       | Kenttä               | kuvaus |
-|---------------------------------|---------------------|-------------|
+
+|    Tärkeät koostemitat    |        Kenttä        |                                          kuvaus                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | Valmiin tehtävän suunniteltu kustannus | Sum(TotalCostPrice) | Kaikkien projektitapahtumatyyppien ja valmiiden tehtävien kokonaiskustannushinta-arviot. |
+
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="develop-a-succession-plan"></a>Seuraajasuunnitelman kehittäminen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kun organisaatio kasvaa ja liiketoiminnan jatkamisen suunnittelu tulee ajankohtaiseksi, haluta ehkä löytää henkilön, jonka osaamisalue vastaa toisen henkilön osaamisaluetta.  Osaamisaluekartoituksen avulla voidaan analysoida olemassa olevat työntekijät ja hakijat, kun arvioidaan, vastaavatko heidän osaamisalueensa tietyn työntekijän osaamisaluejoukkoa. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

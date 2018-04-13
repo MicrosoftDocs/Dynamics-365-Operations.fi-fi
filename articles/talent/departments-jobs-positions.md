@@ -28,10 +28,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Työresurssien järjestäminen osastojen, töiden ja toimien avulla
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
-[!include[retail name](includes/retail-name.md)]
-
+[!INCLUDE [retail name](includes/retail-name.md)]
 
 Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä ohjeaiheessa kuvataan elementtien käsitteellisiä tietoja. 
 
@@ -48,7 +47,7 @@ Seuraavassa esimerkissä on kuvattu tässä ohjeaiheessa käytettäviä käsitte
 |**Henkilöstöhallinto**|Henkilöstöpäällikkö (Länsi)|Henkilöstöpäällikkö|
 |**Henkilöstöhallinto**|Henkilöstöpäällikkö (Keski)|Henkilöstöpäällikkö|
 
- 
+
  <a name="departments"></a>Osastot
 ------------
 

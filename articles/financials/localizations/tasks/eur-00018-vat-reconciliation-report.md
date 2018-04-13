@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="vat-reconciliation-report"></a>ALV-täsmäytysraportti
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Näiden ohjeiden avulla voit luoda islantilaisille ja norjalaisille yrityksille tarkoitetun verojen täsmäytysraportin. Tehtävä luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijaisen osoitteen maaksi tai alueeksi päivitettiin Norja.
 

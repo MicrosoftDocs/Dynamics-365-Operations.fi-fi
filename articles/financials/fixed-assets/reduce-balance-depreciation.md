@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduce-balance-depreciation"></a>Jäännöspoiston vähentäminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on yleiskuvaus poiston jäännösarvopoistomenetelmästä.
 
@@ -80,7 +79,7 @@ Jäännösarvopoisto-menetelmää käytettäessä lasketaan 30 prosenttia edelli
 | Vuosi 2 | (7 000 - 1 000) \* 30 % = 1 800            | (7 000 -1 800) = 5 200                |
 | Vuosi 3 | (5 200 - 1 000) \* 30 % = 1 260            | (5 200 - 1 260) = 3 940               |
 
- 
+
 -
 
 

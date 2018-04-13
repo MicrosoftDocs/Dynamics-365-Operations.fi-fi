@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-application-inbox-records"></a>Hyväksy hakemuskorin tietueet
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten Työntekijän itsepalvelu -sivun kautta vastaanotettuja hakemuksia tarkastellaan. Hakemusten tarkastelemisen lisäksi niitä voi hyväksyä valittujen Saapuneet hakemukset -kansion tietueiden avulla. Saapuneet hakemukset -kansion tietueet edustavat yritykselle lähetettyjä työhakemuksia. Kun tietue on hyväksytty, hakemuksen lähettäneelle henkilölle luodaan hakijatietue. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-accrual-schemes"></a>Luo jaksotusmalleja
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä opastuksessa käsitellään jaksotusmallin luominen. Tässä tehtävässä käytetään esittely-yritystä USMF.
 

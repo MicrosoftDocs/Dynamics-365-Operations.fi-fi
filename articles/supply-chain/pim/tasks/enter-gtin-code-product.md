@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>Kirjoita tuotteen GTIN-koodi
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 GTIN-koodit määrittää GS1-organisaatio. Tässä esimerkissä syötät koodin tuotenumerolle M0001 USMF-yrityksen esittelytietoihin.
 

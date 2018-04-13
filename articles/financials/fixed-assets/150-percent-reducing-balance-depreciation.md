@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="150-percent-reducing-balance-depreciation"></a>Jäännöspoisto 150 prosenttia
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on yleiskuvaus 150 prosentin jäännösarvon poistomenetelmästä.
 
@@ -68,6 +67,7 @@ Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavis
 -   **Tilikausi** kirjaa tilivuodelle lasketun poiston kokonaismäärän. Summa on jaksotettu tilikausille, jotka määritetään **Kirjanpidon kalenterit** -sivulla.
 
 ## <a name="example-of-150-reducing-balance-depreciation"></a>Esimerkki 150 %:n jäännöspoistosta
+
 |                                |        |
 |--------------------------------|--------|
 | Hankintakustannukset               | 11 000 |

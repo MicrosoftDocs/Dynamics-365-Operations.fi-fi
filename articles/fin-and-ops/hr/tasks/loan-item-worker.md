@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="loan-items-to-a-worker"></a>Työntekijän lainauskohteet
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten kohde lainataan työntekijälle sekä se, miten työntekijän tekemä kohteen palautus tallennetaan. Työntekijät voivat pyytää lainan kohteita myös Työntekijän itsepalvelu -sivujen kautta. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

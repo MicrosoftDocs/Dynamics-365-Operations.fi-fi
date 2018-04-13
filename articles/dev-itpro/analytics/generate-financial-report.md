@@ -28,8 +28,7 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="generate-a-financial-report"></a>Luo raportti
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa on tietoja talousraporttien luonnista. 
 
@@ -50,13 +49,13 @@ Raportteja luotaessa käytetään Raportin määritys -välilehdissä määritet
 ## <a name="generate-a-financial-report"></a>Luo raportti
 
 Voit luoda talousraportin Microsoft Dynamics 365 for Finance and Operations -sovelluksen avulla siirtymällä kohtaan **Kirjanpito** > **Kyselyt ja raportit** > **Talousraportit**. 
- - Valitse luotava raportti ja valitse sitten **Luo**. 
- - Täytä **Raportin päivämäärä** -kenttä ja valitse **OK**.
- 
- Kun raportti on luotu, sitä voi tarkastella **Raportit**-osassa.
- Voit **tarkastella** raporttia tai **poistaa** sen.
- 
- 
+- Valitse luotava raportti ja valitse sitten **Luo**. 
+- Täytä **Raportin päivämäärä** -kenttä ja valitse **OK**.
+
+  Kun raportti on luotu, sitä voi tarkastella **Raportit**-osassa.
+  Voit **tarkastella** raporttia tai **poistaa** sen.
+
+
 Voit luoda raportti **raporttien suunnitteluohjelman** avulla avaamalla raporttimäärityksen ja valitsemalla sitten työkalupalkin Luo-painikkeen. Näytölle avautuu Raporttijonon tila -ikkuna, joka näyttää raporttisi paikan jonossa. Luotu raportti avautuu oletusarvoisesti verkkokatseluohjelmassa.
 
 > [!NOTE]
@@ -159,7 +158,7 @@ Kun suoritat puuttuvien tilien analyysin, käytettävissä on seuraavat pikanäp
 | Avaa valittu raportin määritys  | Ctrl+R                     |
 | Avaa valittu rivimääritys     | Ctrl+O                     |
 
- 
+
 <a name="see-also"></a>Lisätietoja
 --------
 

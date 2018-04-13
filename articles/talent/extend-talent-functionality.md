@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent -sovelluksen toimintojen laajentaminen
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Jos olet luonut jonkin Microsoft PowerApps -sovelluksen, voit käynnistää sovelluksen Microsoft Dynamics 365 for Talent -sovelluksen linkin avulla. Voit määrittää sovellusten käyttöoikeuden, kun olet määrittänyt tietyt tiedot Talent-sovelluksen määrityssivulla. Voit avata sivun **Järjestelmän hallinta** -työtilassa.
 
@@ -38,10 +38,10 @@ Sivulla annetaan tai määritetään seuraavat tiedot:
 > - Kunkin PowerApps-sovelluksen kuvaava nimi tai tunnus.
 > - Kunkin Talent-sivulle lisättävän sovellusten yksilövä tunnus (GUID). Sovelluksen tunnus on PowerApps-sivustossa osoitteessa [powerapps.com](http://powerapps.com/). 
 > - Sivu, jonka avulla käyttävät voivat avata sovelluksen tai raportin. Kaikki Talent-sivut eivät tue upotettuja PowerApps-sovelluksia ja Power BI -raportteja. 
-
- > [!NOTE]
- >  Anna sivun sisäinen nimi sivun yläosassa olevan näyttönimen sijaan. Löydät sisäisen nimen avaamalla sivun, jonka sisäistä nimeä etsit, ja napsauttamalla hiiren kakkospainikkeella mitä tahansa sivun kohtaa. Kun valikko avautuu, valitse **Lomaketiedot**-kohta osoittamalla sitä. Sisäisen lomakkeen nimi näkyy valikon **Lomaketiedot**-kohdan vieressä.
- 
+> 
+> [!NOTE]
+>  Anna sivun sisäinen nimi sivun yläosassa olevan näyttönimen sijaan. Löydät sisäisen nimen avaamalla sivun, jonka sisäistä nimeä etsit, ja napsauttamalla hiiren kakkospainikkeella mitä tahansa sivun kohtaa. Kun valikko avautuu, valitse **Lomaketiedot**-kohta osoittamalla sitä. Sisäisen lomakkeen nimi näkyy valikon **Lomaketiedot**-kohdan vieressä.
+> 
 > - Määritä lomakkeen ohjausobjekti, josta sovellus voi hakee kontekstitiedot. Sovelluksessa voidaan käyttää esimerkiksi työntekijää koskevia tietoja. Jos syötät **Konteksti**-kenttään **Työntekijä**-sivun, sovelluksen käynnistyessä avautuu **Työntekijä**-sivu. **Konteksti-kenttään** ei ole pakko syöttää tietoja. 
 > - Määritä sen valintaikkunan koko, jossa PowerApps-sovellus suoritetaan. Valintaikkunoiden koko on määritetty pieneksi tai suureksi sovelluksen puhelimen tai suuremman laitteen käyttöliittymässä suorittamisen optimoimista varten. 
 

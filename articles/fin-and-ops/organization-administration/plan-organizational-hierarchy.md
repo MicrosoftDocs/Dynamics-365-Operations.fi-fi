@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-your-organizational-hierarchy"></a>Organisaatiohierarkian suunnitteleminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ennen kuin määrität organisaation ja organisaatiohierarkiat Microsoft Dynamics 365 for Finance and Operationsissa, varmista, että suunnittelet miten liiketoimintasi mallinnetaan. Organisaatiomallilla on huomattava vaikutus Dynamics 365 for Finance and Operationsin käyttöönottoon ja liiketoimintaprosesseihin. 
 
@@ -158,7 +157,7 @@ Jos lainsäädännön ja kirjanpitokäytäntöjen eroavat niiden maiden/alueiden
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Jos organisaatio perustuu liiketoiminnan yksikköihin 
 Jos lainsäädännön ja kirjanpitokäytäntöjen ovat samat niiden maiden/alueiden välillä missä yritykset ovat, voidaan käyttää yhtenäisiä tilinpäätöstoimenpiteitä. Tämä tarkoittaa, että voit mallintaa organisaatiot toimintayksiköinä. Kaikkien toimintayksiköiden on käytettävä samaa tilinpäätösmenettelyä. 
-   
+
 ### <a name="number-sequences"></a>Numerosarjat
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Jos organisaatio perustuu yrityksenä
 Eräiden viittausten numerosarjat voidaan määrittää yrityskohtaisesti. Eräät numerosarjat voidaan jakaa. 

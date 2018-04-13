@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="depreciation-methods-and-conventions"></a>Poistomenetelmät ja -käytännöt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on yleiskuvaus Microsoft Dynamics 365 for Finance and Operationsin tukemista poistomenetelmistä.
 
@@ -62,7 +61,7 @@ Voit valita seuraavista poistomenetelmistä.
 -   Jäännös 150 %
 -   Jäännös 125 %
 
- 
+
 
 
 

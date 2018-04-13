@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>Määritä RFM-analyysi
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, kuinka asiakkaidesi Recency, Frequency, and Monetary (RFM) -analyysi määritetään.
 
@@ -60,25 +59,25 @@ Jos organisaatiosi käyttää tuloksena yhteenlaskettua lukua, yksittäiset luok
     - Jos kussakin RFM-pistemäärän osassa on oltava sama määrä asiakkaita, valitse **Tasainen jako** -valintaruutu. 
     - Yhdistä kolme pistemäärää valitsemalla **Lisää pisteet** -valintaruutu. Tällä tavoin asiakkaan RFM-pistemääräksi tulisi esimerkiksi 13 eikä 535. 
     - Valitse **Tallenna historia** -valintaruutu, jos haluat järjestelmän tallentavan asiakkaiden tilastotiedot siten, että tiedoilla voidaan laskea RFM-pistemäärä.
-  
+
 5.  Toimi **Recency**-pikavälilehdellä seuraavasti: 
     - Anna **Jaot**-kentässä niiden osastojen tai ryhmien määrä, joilla asiakkaiden recency-pistemäärä lasketaan. Esimerkiksi jos sinulla on 100 asiakasta, jako 5:llä tarkoittaa, että jokaiselle tulokselle on 20 asiakasta. 20:n viimeksi ostoja tehneen asiakkaan recency-pistemäärä on 5. Seuraavan 20 asiakkaan recency-pistemäärä on 4 ja niin edelleen. Jos sinulla on 50 asiakkaasta, 10 asiakkaan recency-tulos on 5-10, 10 asiakkaan recency-tulos on 4 ja niin edelleen. 
     - Valitse **Prioriteetti**-kentässä, miten suuri painoarvo annetaan recency-parametrille suhteessa muihin, kun asiakkaalle lasketaan RFM-pisteet. Voit esimerkiksi antaa enemmän arvoa viimeaikaisuusarvolle kuin raha-arvolle. 
     - Anna **Kerroin**-kenttään arvo, jolla recency-pistemäärä kerrotaan. Jos arvoa ei syötetä, pisteitä ei kerrota. 
     - Valitse **Kausi**-kentässä ajanjakso, jolta recency-tulos lasketaan. Esimerkiksi viikoittain tai kuukausittain.
-   
+
 6.  Toimi **Frequency**-pikavälilehdellä seuraavasti: 
     - Anna **Jaot**-kentässä niiden osastojen tai ryhmien määrä, joilla asiakkaiden frequency-pistemäärä lasketaan. 
     - Valitse **Prioriteetti**-kentässä, miten suuri painoarvo annetaan frequency-parametrille suhteessa muihin, kun asiakkaalle lasketaan RFM-pisteet. 
     - Anna **Kerroin**-kenttään arvo, jolla frequency-pistemäärä kerrotaan. Jos arvoa ei syötetä, pisteitä ei kerrota.
-   
+
 7.  Toimi **Monetary**-pikavälilehdellä seuraavasti: 
     - Anna **Jaot**-kentässä niiden osastojen tai ryhmien määrä, joilla asiakkaiden monetary-pistemäärä lasketaan. 
     - Valitse **Prioriteetti**-kentässä, miten suuri painoarvo annetaan monetary-parametrille suhteessa muihin, kun asiakkaalle lasketaan RFM-pisteet. 
     - Anna **Kerroin**-kenttään arvo, jolla monetary-pistemäärä kerrotaan. Jos arvoa ei syötetä, pisteitä ei kerrota. 
     - Valitse **Brutto/netto**-kentässä valitse, lasketaanko monetary-pistemäärä brutto- vai nettolaskusummalla. 
     - Jos asiakkaan palautuksen summat on vähennettävä asiakkaan kokonaislaskulaskelmasta, valitse **Vähennä palautukset** -valintaruutu. 
- 
+
 ## <a name="view-a-customers-rfm-score"></a>Näytä asiakkaan RFM-pistemäärä
 Tämän menetelmän avulla voit tarkastella asiakkaan RFM-pistemäärää. 
 

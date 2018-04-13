@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="per-diem-rules"></a>Päivärahasäännöt
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Päiväraha* on korvaus, joka maksetaan työn takia matkustavalle työntekijälle. Voit luoda kulujenhallinnassa päivärahasääntöjä erilaisiin matkustustilanteisiin. Päivärahan suuruus voi perustua vuodenaikaan, matkan kohteeseen tai molempiin. Kun luot päivärahasäännön, voit määrittää, mikä prosenttiosuus päivärahasta pidätetään, jos työntekijällä on käytettävissään ilmaisia aterioita tai palveluita. Voit myös määrittää vähimmäis- ja enimmäistunnit, joiden mukaan tiettyä päivärahan suuruutta käytetään työntekijän työmatkalla.
 

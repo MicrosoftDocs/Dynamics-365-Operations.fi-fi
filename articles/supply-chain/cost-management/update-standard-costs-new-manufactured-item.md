@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Uuden valmistetun nimikkeen standardikustannusten päivittäminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä artikkeli sisältää ohjeita uuden valmistetun tuotteen standardikustannusten päivittämiseen. 
 

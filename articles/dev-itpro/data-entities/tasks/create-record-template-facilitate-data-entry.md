@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Tietuemallin luonti helpottamaan tietojen kirjaamista
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä menettely näyttää, miten voit luoda tietuemallin, jolloin usein käytettyjen kenttien arvoja ei tarvitse lisätä erikseen kussakin uudessa tietueessa. Tässä menettelyssä luodaan uusi tietue uusille käyttöomaisuuteen lisättäville kannettaville. Tässä menettelyssä käytetään USMF-malliyritystä.
 

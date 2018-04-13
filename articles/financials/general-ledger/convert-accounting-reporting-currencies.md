@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Kirjanpito- tai raportointivaluutan muuntaminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Yritys, joka on muutettava kirjanpito- tai raportointivaluuttaansa, voi tehdä tämän kahdella tavalla. Ensimmäinen vaihtoehto on luoda uusi yritys kokonaan alusta. Toinen vaihtoehto on suorittaa kirjanpito- ja raportointivaluutan muuntoprosessi. Tämä on erittäin pitkäkestoisten prosessi, jossa jokainen järjestelmässä oleva tapahtuma muuttuu. Ennen prosessin suorittamista on myös määritettävä joitakin asetuksia.
 

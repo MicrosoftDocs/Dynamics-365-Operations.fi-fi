@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="import-and-maintain-credit-card-transactions"></a>Luottokorttitapahtumien tuonti ja ylläpito
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kuluihin liittyvät luottokorttitapahtumat voidaan määrittää niin, että ne tuodaan automaattisesti aikataulun mukaan. Tapahtumat voidaan myös tuoda manuaalisesti tarvittaessa. Luottokorttitapahtumat tuodaan Luottokorttitapahtumat-tietoyksikön välityksellä.
 

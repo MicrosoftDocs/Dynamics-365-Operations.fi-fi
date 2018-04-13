@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-product-number-for-configured-product-variants"></a>Luo tuotenumero määritetyille tuotevarianteille
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä aiheessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään konfiguroiduille tuotevarianteille ja miten se voidaan liittää konfiguroitavaan päätuotteeseen. Tässä ohjeaiheessa kerrotaan myös, miten tuotteen kokoonpanomallin osan konfiguraationimikkeistö rakennetaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Uusi tuotenumeroiden nimikkeistö on määritetty päätuotteelle D0004. Tuotesuunnittelija tekee yleensä tämän tehtävän.
 

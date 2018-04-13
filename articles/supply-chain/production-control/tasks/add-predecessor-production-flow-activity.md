@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-a-predecessor-to-a-production-flow-activity"></a>Edeltäjän lisääminen tuotantovirran tehtävään
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kaikkien tehtävien on oltava järjestyksessä tuotantovirran versiossa. Tehtävällä voi olla yksi tai useampi edeltäjä tai seuraaja. 
 

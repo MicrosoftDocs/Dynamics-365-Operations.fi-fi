@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="view-an-expense-report"></a>Näytä kuluraportti
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kun haluat katsoa tapahtumia kirjanpidossa tai hankinnat ja suorita sitä varten kyselyn, kysely voi palauttaa liian paljon tietoja. Tämän vuoksi haluat tarkentaa hakua. Saat tarvitsemasi tiedot porautumalla tapahtumaan katsomaan kuluraporttia, jossa tapahtuma esiintyi.
 

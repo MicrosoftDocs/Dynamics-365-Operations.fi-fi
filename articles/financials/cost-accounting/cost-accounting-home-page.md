@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>Kustannuslaskennan aloitussivu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>Oppimiskartta 
 
@@ -37,6 +37,7 @@ Seuraavassa oppimiskartassa on esillä tärkeitä käsitteitä ja tehtäviä, jo
 [![Kustannuslaskennan oppimiskartta](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>Pikalinkit
+
 |      |   |
 |------|---|
 |  [Perusyksiköiden määrittäminen (eLearning)](https://mbspartner.microsoft.com/Home) (vaatii CustomerSource-tilin)  |[Luo dimensiot](cost-elements.md)  |

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-iso20022-files"></a>ISO20022-tiedostojen tuominen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Voit tuoda maksutiedostoja seuraavissa muodoissa:
 
@@ -41,8 +41,8 @@ Pankki-ilmoitussanomien tuonti camt.054.001.002-muodossa asiakkaan maksukirjausk
 3. Määritä **Asiakkaan pankkitili** -sivulla asiakkaan pankkitilitietue antamalla seuraavat tiedot: IBAN-numero tai pankkitilin numero sekä SWIFT-koodi tai reititysnumero.
 4. Määritä **Pankkitilit** -sivulla yrityksen pankkitilit antamalla seuraavat tiedot: IBAN-numero tai pankkitilin numero, SWIFT-koodi tai reititysnumero, valuutta ja osoite.
 
-    > [!NOTE]
-        > Jos aiot käyttää pankkitilin täsmäytyksen lisätoimintoja, valitse **Täsmäytys**-pikavälilehdessä **Pankkitilin täsmäytyksen lisätoiminnot** -asetukseksi **Kyllä**. Jos aiot täsmäyttää kirjaamattomat tuodut maksut, valitset **Käytä tiliotteita sähköisten maksujen vahvistuksena** -asetukseksi **Kyllä**.
+   > [!NOTE]
+   > Jos aiot käyttää pankkitilin täsmäytyksen lisätoimintoja, valitse **Täsmäytys**-pikavälilehdessä **Pankkitilin täsmäytyksen lisätoiminnot** -asetukseksi **Kyllä**. Jos aiot täsmäyttää kirjaamattomat tuodut maksut, valitset **Käytä tiliotteita sähköisten maksujen vahvistuksena** -asetukseksi **Kyllä**.
 
 5. Valinnainen: Määritä **Tapahtumakoodin määritys** -sivulla tiedostossa olevien pankin tapahtumakoodien ja pankin tapahtumatyyppien välinen määritys.
 6. Jos tiedostossa on tapahtumakuluja, jotka haluat kirjata yhdessä saapuvan maksun kanssa, luo maksulisä **Asiakkaan maksulisä** -sivulla. Liitä maksulisä sitten maksulisän asetusten **Maksutavat** -sivulla pankkitiliin.

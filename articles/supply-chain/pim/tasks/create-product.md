@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-product"></a>Luo tuote
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä esitellään vähittäismyynnin tuotehierarkian uuden tuotteen luominen. Tämän tehtävän luomisessa käytetään esittely-tietojen yritystä USRT. Tehtävä on tarkoitettu myynninedistämispäällikölle ja tuotesuunnittelijalle.
 

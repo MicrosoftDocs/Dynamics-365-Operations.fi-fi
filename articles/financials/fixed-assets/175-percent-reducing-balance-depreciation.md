@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="175-percent-reducing-balance-depreciation"></a>175 prosentin jäännöspoisto
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on yleiskuvaus 175 prosentin jäännösarvon poistomenetelmästä.
 
@@ -68,6 +67,7 @@ Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavis
 -   **Tilikausi** laskee tilikaudelle lasketun poiston kokonaismäärän. Summa on jaksotettu tilikausille, jotka määritetään **Kirjanpidon kalenterit** -sivulla.
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>Esimerkki 175 prosentin jäännöspoistosta
+
 |                                |        |
 |--------------------------------|--------|
 | Hankintakustannukset               | 11 000 |

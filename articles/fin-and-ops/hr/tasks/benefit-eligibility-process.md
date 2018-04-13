@@ -24,7 +24,7 @@ ms.lasthandoff: 02/14/2018
 ---
 # <a name="benefit-eligibility-process"></a>Etukelpoisuusprosessi
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten edun kelpoisuuskäsittely toimii. Voit käsittely on valmis, voit tarkastella tuloksia. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

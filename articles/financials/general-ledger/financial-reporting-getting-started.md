@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-reporting"></a>Taloushallinnan raportointi
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten pääset käyttämään taloushallinnon raportointia Microsoft Dynamics 365 for Finance and Operationsissa ja miten taloushallinnon raportointiominaisuuksia käytetään. Se sisältää kuvauksen oletusraporteista, jotka toimitetaan.
 

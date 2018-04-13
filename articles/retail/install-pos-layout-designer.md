@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="install-the-retail-pos-layout-designer"></a>Retail POS-asettelun suunnittelutoiminto asentaminen
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Voit käyttää yhden napsautuksen suunnittelutoimintoa Cloud POS:n ja Retail Modern POS:n (MPOS) asettelusta, vaakasuunnassa tai pystytilassa, kaupat, kassakoneet, kassat ja esimiehet suunnittelussa.
 

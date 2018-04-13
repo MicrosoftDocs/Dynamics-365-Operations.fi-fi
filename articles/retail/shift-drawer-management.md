@@ -29,8 +29,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="shift-and-cash-drawer-management"></a>Vuoron- ja kassanhallinta
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tässä artikkelissa käsitellään kahden vähittäismyynnin myyntipistetyypin vuoron määrittämistä ja käyttöä. Vuoro voi olla jaettu tai erillinen. Useat käyttäjät voivat käyttää jaettuja vuoroja useassa paikassa, kun taas vain yksi työntekijä voi käyttää erillistä vuoroa.
 

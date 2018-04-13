@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a>Useiden käyttöomaisuuserien poistokäytäntöjen muuttaminen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tehtävässä päivitetään määritetyn käyttöomaisuusryhmän poistomenetelmä. Tässä tehtävän ohjauksessa käytetään esittely-yritystä USMF.
 

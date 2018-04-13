@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Manuaalisen päätöksen konfiguroiminen työnkulkuun
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten manuaalisen päätöksen eri ominaisuudet määritetään.
 
@@ -252,73 +251,74 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
 ## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Erääntyneen päätöksen toimenpiteiden määrittäminen
 Jos käyttäjä ei tee päätöstä aikarajan puitteissa, päätös on erääntynyt. Erääntyneen päätöksen voi eskaloida tai määrittää automaattisesti toisen käyttäjän tehtäväksi. Seuraa näitä ohjeita, jos haluat eskaloida erääntyneet päätökset.
 
-1.  Valitse vasemmasta ruudusta **Eskalointi**.
-2.  Luo eskalointipolku valitsemalla **Käytä eskalointipolkua** -valintaruutu. Järjestelmä määrittää päätöksen automaattisesti eskalointipolussa luetelluille käyttäjille. Seuraava taulukko on esimerkki eskalointipolusta.
-    | Järjestys | Eskalointipolku            |
-    |----------|----------------------------|
-    | 1        | Määritä rooliin: Donna           |
-    | 2        | Määritä rooliin: Erin            |
-    | 3        | Lopullinen toiminto: \[Vaihtoehto 1\] |
+1. Valitse vasemmasta ruudusta **Eskalointi**.
+2. Luo eskalointipolku valitsemalla **Käytä eskalointipolkua** -valintaruutu. Järjestelmä määrittää päätöksen automaattisesti eskalointipolussa luetelluille käyttäjille. Seuraava taulukko on esimerkki eskalointipolusta.
 
-    Tässä esimerkissä järjestelmä määrittää erääntyneen päätöksen Donnalle. Jos Donna ei tee päätöstä ajoissa, päätöksenteko määritetään Erinille. Jos Erin ei tee päätöstä ajoissa, järjestelmä valitsee **\[vaihtoehdon 1\]**.
-3.  Voit lisätä käyttäjän eskalointipolkuun valitsemalla **Lisää eskalaatio**. Valitse jokin seuraavan taulukon vaihtoehdoista ja noudata vaihtoehdon toimia ennen siirtymistä vaiheeseen 4.
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Vaihtoehto</th>
-    <th>Käyttäjät, joille päätös eskaloidaan</th>
-    <th>Lisävaiheet</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Hierarkia</td>
-    <td>Tietyssä organisaatiohierarkiassa olevat käyttäjät</td>
-    <td><ol>
-    <li>Valittuasi <strong>hierarkian</strong>, valitse <strong>Hierarkian valinta</strong> -välilehdellä <strong>Hierarkian tyyppi</strong> -luettelosta hierarkian tyyppi, jolle päätös eskaloidaan.</li>
-    <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille päätöksen voi eskaloida. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste: <ol>
-    <li>Määritä aloituspiste valitsemalla henkilö <strong>Alku</strong>-luettelosta.</li>
-    <li>Määritä lopetuspiste valitsemalla <strong>Lisää pysäytysehto</strong>. Määritä sitten ehto, joka ilmaisee, missä kohtaa hierarkiaa järjestelmä lopettaa nimien noutamisen.</li>
-    </ol></li>
-    <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille päätös eskaloidaan: <ul>
-    <li><strong>Määritä kaikille noudetuille työntekijöille</strong> – Päätös eskaloidaan joukon kaikille käyttäjille.</li>
-    <li><strong>Määritä vain viimeksi noudetulle käyttäjälle</strong> – Päätös eskaloidaan vain joukon viimeiselle työntekijälle.</li>
-    <li><strong>Jätä pois käyttäjät, joilla on seuraava ehto</strong> – Päätöstä ei eskaloida niille joukon käyttäjille, jotka täyttävät määritetyn ehdon. Määritä ehto valitsemalla <strong>Lisää ehto</strong>.</li>
-    </ul></li>
-    </ol></td>
-    </tr>
-    <tr class="even">
-    <td>Työnkulun käyttäjä</td>
-    <td>Nykyisen työnkulun käyttäjät</td>
-    <td><ul>
-    <li>Valittuasi <strong>työnkulun käyttäjän</strong>, valitse <strong>Työnkulun käyttäjä</strong> -välilehdessä <strong>Työnkulun käyttäjä</strong> -luettelosta käyttäjä, joka osallistuu työnkulun.</li>
-    </ul></td>
-    </tr>
-    <tr class="odd">
-    <td>Käyttäjä</td>
-    <td>Tietyt Finance and Operations -käyttäjät</td>
-    <td><ol>
-    <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät. Valitse käyttäjät, joille päätös eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
+   | Järjestys | Eskalointipolku            |
+   |----------|----------------------------|
+   | 1        | Määritä rooliin: Donna           |
+   | 2        | Määritä rooliin: Erin            |
+   | 3        | Lopullinen toiminto: \[Vaihtoehto 1\] |
 
-4.  Määritä **Aikaraja**-välilehden **Kesto**-kenttään kuinka paljon aikaa käyttäjällä on tehdä päätös. Valitse jompikumpi seuraavista vaihtoehdoista:
-    -   **Tunnit** – Määritä käyttäjän päätöksentekoaika tunteina. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
-    -   **Päivät** – Määritä käyttäjän päätöksentekoaika päivinä. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
-    -   **Viikot** – Määritä käyttäjän päätöksentekoaika viikkoina.
-    -   **Kuukaudet** – Valitse päivä ja viikko, johon mennessä käyttäjän tulee tehdä päätös. Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös kuukauden kolmannen viikon perjantaihin mennessä.
-    -   **Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä käyttäjän tulee tehdä päätös. Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös joulukuun kolmannen viikon perjantaihin mennessä.
+   Tässä esimerkissä järjestelmä määrittää erääntyneen päätöksen Donnalle. Jos Donna ei tee päätöstä ajoissa, päätöksenteko määritetään Erinille. Jos Erin ei tee päätöstä ajoissa, järjestelmä valitsee **\[vaihtoehdon 1\]**.
+3. Voit lisätä käyttäjän eskalointipolkuun valitsemalla **Lisää eskalaatio**. Valitse jokin seuraavan taulukon vaihtoehdoista ja noudata vaihtoehdon toimia ennen siirtymistä vaiheeseen 4.
+   <table>
+   <colgroup>
+   <col width="33%" />
+   <col width="33%" />
+   <col width="33%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Vaihtoehto</th>
+   <th>Käyttäjät, joille päätös eskaloidaan</th>
+   <th>Lisävaiheet</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td>Hierarkia</td>
+   <td>Tietyssä organisaatiohierarkiassa olevat käyttäjät</td>
+   <td><ol>
+   <li>Valittuasi <strong>hierarkian</strong>, valitse <strong>Hierarkian valinta</strong> -välilehdellä <strong>Hierarkian tyyppi</strong> -luettelosta hierarkian tyyppi, jolle päätös eskaloidaan.</li>
+   <li>Järjestelmän on noudettava käyttäjien nimijoukko hierarkiasta. Nämä nimet edustavat käyttäjiä, joille päätöksen voi eskaloida. Noudata näitä ohjeita määrittääksesi järjestelmän noutamien käyttäjänimien joukon aloituspiste ja lopetuspiste: <ol>
+   <li>Määritä aloituspiste valitsemalla henkilö <strong>Alku</strong>-luettelosta.</li>
+   <li>Määritä lopetuspiste valitsemalla <strong>Lisää pysäytysehto</strong>. Määritä sitten ehto, joka ilmaisee, missä kohtaa hierarkiaa järjestelmä lopettaa nimien noutamisen.</li>
+   </ol></li>
+   <li>Määritä <strong>Hierarkian asetukset</strong> -välilehdellä, mille valitun joukon käyttäjille päätös eskaloidaan: <ul>
+   <li><strong>Määritä kaikille noudetuille työntekijöille</strong> – Päätös eskaloidaan joukon kaikille käyttäjille.</li>
+   <li><strong>Määritä vain viimeksi noudetulle käyttäjälle</strong> – Päätös eskaloidaan vain joukon viimeiselle työntekijälle.</li>
+   <li><strong>Jätä pois käyttäjät, joilla on seuraava ehto</strong> – Päätöstä ei eskaloida niille joukon käyttäjille, jotka täyttävät määritetyn ehdon. Määritä ehto valitsemalla <strong>Lisää ehto</strong>.</li>
+   </ul></li>
+   </ol></td>
+   </tr>
+   <tr class="even">
+   <td>Työnkulun käyttäjä</td>
+   <td>Nykyisen työnkulun käyttäjät</td>
+   <td><ul>
+   <li>Valittuasi <strong>työnkulun käyttäjän</strong>, valitse <strong>Työnkulun käyttäjä</strong> -välilehdessä <strong>Työnkulun käyttäjä</strong> -luettelosta käyttäjä, joka osallistuu työnkulun.</li>
+   </ul></td>
+   </tr>
+   <tr class="odd">
+   <td>Käyttäjä</td>
+   <td>Tietyt Finance and Operations -käyttäjät</td>
+   <td><ol>
+   <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
+   <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Finance and Operations -käyttäjät. Valitse käyttäjät, joille päätös eskaloidaan ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+   </ol></td>
+   </tr>
+   </tbody>
+   </table>
 
-5.  Toista vaiheet 3 ja 4 jokaiselle käyttäjälle, joka lisätään eskalointipolkuun. Käyttäjien järjestystä voi muuttaa.
-6.  Jos eskalointipolun käyttäjät eivät tee päätöstä ajoissa, järjestelmä tekee päätöksen automaattisesti. Voit määrittää vaihtoehdon, jonka järjestelmän valitsee valitsemalla **Toiminto**-rivin ja sitten valitsemalla **Lopetustoiminto**-välilehdellä vaihtoehdon.
+4. Määritä **Aikaraja**-välilehden **Kesto**-kenttään kuinka paljon aikaa käyttäjällä on tehdä päätös. Valitse jompikumpi seuraavista vaihtoehdoista:
+   -   **Tunnit** – Määritä käyttäjän päätöksentekoaika tunteina. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
+   -   **Päivät** – Määritä käyttäjän päätöksentekoaika päivinä. Valitse sitten kalenteri, jota organisaatio käyttää ja määritä organisaation työviikon tiedot.
+   -   **Viikot** – Määritä käyttäjän päätöksentekoaika viikkoina.
+   -   **Kuukaudet** – Valitse päivä ja viikko, johon mennessä käyttäjän tulee tehdä päätös. Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös kuukauden kolmannen viikon perjantaihin mennessä.
+   -   **Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä käyttäjän tulee tehdä päätös. Voit esimerkiksi määrittää, että käyttäjän tulee tehdä päätös joulukuun kolmannen viikon perjantaihin mennessä.
+
+5. Toista vaiheet 3 ja 4 jokaiselle käyttäjälle, joka lisätään eskalointipolkuun. Käyttäjien järjestystä voi muuttaa.
+6. Jos eskalointipolun käyttäjät eivät tee päätöstä ajoissa, järjestelmä tekee päätöksen automaattisesti. Voit määrittää vaihtoehdon, jonka järjestelmän valitsee valitsemalla **Toiminto**-rivin ja sitten valitsemalla **Lopetustoiminto**-välilehdellä vaihtoehdon.
 
 ## <a name="set-a-time-limit"></a>Aikarajan määrittäminen
 Noudata seuraavia ohjeita, jos päätös on tehtävä tietyn ajan kuluessa. **Huomautus:** näiden ohjeiden mukaan valitsemasi asetukset korvaavat asetukset, jotka olet valinnut kunkin hyväksyntävaiheen **Liitos**- ja **Eskalointi**-alueissa.

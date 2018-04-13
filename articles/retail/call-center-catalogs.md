@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="call-center-catalogs"></a>Puhelinkeskuksen luettelot
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tässä artikkelissa käsitellään Microsoft Dynamics 365 for Retailin luetteloiden puhelinkeskusta koskevat toiminnot.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Pääsuunnittelun aloitussivu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pääsuunnittelun avulla yritykset voivat määrittää tulevan raaka-aineiden ja kapasiteetin tarpeen ja tasapainottaa ne yrityksen tavoitteita vastaaviksi. Pääsuunnittelussa arvioidaan seuraavat seikat: 
 
@@ -58,6 +57,7 @@ Seuraavassa oppimiskartassa on esillä tärkeitä käsitteitä ja tehtäviä, jo
 [![Pääsuunnittelun oppimiskartta](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Pikalinkit
+
 |      |   |
 |------|---|
 |        [Pääsuunnitelmat](master-plans.md)       |     [Rajoitetun suunnitelman luominen](./tasks/constrained-plan.md)  |

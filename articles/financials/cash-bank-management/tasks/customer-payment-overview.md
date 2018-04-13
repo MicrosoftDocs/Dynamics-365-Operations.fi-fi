@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="customer-payment-overview"></a>Asiakkaan maksun yhteenveto
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tehtävän ohjauksessa kerrotaan asiakkaan maksujen syöttämisessä käytettävät tavat. Tässä tehtävässä käytetään esittely-yritystä USMF.
 

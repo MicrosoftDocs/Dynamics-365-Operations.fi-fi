@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="execute-kanban-process-jobs"></a>Suorita kanban-prosessin töitä
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Nämä toimet keskittyvät kanban-prosessitöiden suorittamiseen. Ensimmäinen työ on valmis, määrä on odotettu, eikä virheitä ole. Toinen työ valmistuu, mutta siinä on virheitä. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä menettely on tarkoitettu koneenkäyttäjille.
 

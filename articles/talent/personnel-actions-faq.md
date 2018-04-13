@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="personnel-actions-faq"></a>Henkilöstötoimenpiteet [usein kysytyt kysymykset]
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on vastauksia kysymyksiin, joita sinulla saattaa olla, jos organisaatiosi käyttää henkilöstötoimintoja. Henkilökunnan toiminnot ovat lisävaiheita, jotka on suoritettava, kun suoritat tiettyjä henkilökuntaan liittyviä tehtäviä. Esimerkkejä henkilöstötoimintoja mahdollisesti vaativista tehtävistä ovat uusien toimien luonti, olemassa olevien toimien arvojen muuttaminen, uusien työntekijöiden palkkaus, työntekijöiden siirto, työntekijän kompensaation muuttaminen, toimen määritysten muuttaminen tai työntekijöiden työsuhteiden päättäminen.
 
@@ -64,9 +64,9 @@ Avaa mikä tahansa henkilöstötoimintojen luettelosivuista ja valitse henkilös
 Jos henkilökunnan toimenpidepyyntö epäonnistuu, noudata seuraavia vaiheita ratkaistaksesi tämän ongelman ja lähetä pyyntö uudelleen:
 
 > 1. Avaa ongelma käsittelevä sanoma napsauttamalla **toimintoruudussa** **Virheteksti**-painiketta.
-
+> 
 > 2. Lataa uusimmat tiedot valitsemalla **toimintoruudussa** **Aktivoi uudelleen** ja määritä henkilöstötoimenpiteen tilaksi jälleen **Luonnos**.
-
+> 
 > 3. Korjaa virhe ja valitse sitten **Valmis** tai **Lähetä**.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Mitä tapahtuu työnkulkua käyttävälle henkilöstötoiminnolle, kun lopullinen hyväksyntä on valmis?

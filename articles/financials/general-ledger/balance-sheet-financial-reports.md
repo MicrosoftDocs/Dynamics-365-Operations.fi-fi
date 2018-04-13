@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="balance-sheet-financial-reports"></a>Taseen talousraportit
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin. 
 
@@ -71,7 +70,7 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
     -   **DESC** – rivimäärityksen kuvaus
     -   **FD** – kuluvan vuoden taloushallinnon tiedot vuoden alusta
 
- 
+
 
 <a name="see-also"></a>Lisätietoja
 --------

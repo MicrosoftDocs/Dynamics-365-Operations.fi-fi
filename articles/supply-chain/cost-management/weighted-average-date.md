@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="weighted-average-date"></a>Painotetun keskiarvon päivämäärä
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Painotetun keskiarvon päivämäärä on varastomalli, joka perustuu painotetun keskiarvon periaatteeseen. Painotetun keskiarvon periaatteessa varasto-otot arvotetaan varastoon vastaanotettujen nimikkeiden keskiarvon mukaan kunakin päivänä varaston sulkemiskauden aikana. 
 

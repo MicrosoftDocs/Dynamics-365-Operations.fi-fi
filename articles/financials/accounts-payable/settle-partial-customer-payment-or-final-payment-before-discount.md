@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Asiakkaan osamaksun ja lopullisen maksun täydellinen tilittäminen ennen alennuspäivämäärää
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on skenaarioita, jotka kuvaavat osittaisten maksujen kirjaamista asiakkaalle ja käteisalennusten käyttämistä käteisalennusjaksolla.
 

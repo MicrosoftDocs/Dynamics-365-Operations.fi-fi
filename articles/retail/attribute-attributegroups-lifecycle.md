@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>Määritteet, määriteryhmät ja niiden liitokset Finance and Operationsin vähittäismyynnin yksiköiden kanssa
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 *Määritteiden* avulla voidaan täydentää tuotteen ja sen ominaisuuksien kuvausta käyttäjän määrittämien kenttien avulla. (Näitä kenttiä ovat esimerkiksi **Muistin koko**, **Kiintolevyn kapasiteetti** ja **Energy Star -merkinnän mukainen**). Microsoft Dynamics 365 for Finance and Operations -sovelluksessa määritteitä voidaan liittää erilaisiin vähittäismyynnin yksiköihin, kuten tuoteluokkiin ja vähittäismyyntikanaviin, ja niille voidaan määrittää oletusarvoja. Tuotteet perivät sitten määritteet ja oletusarvot, kun ne liitetään tuoteluokkiin tai vähittäismyyntikanaviin. Oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, vähittäismyyntikanavan tasolla tai vähittäismyyntiluettelossa.
  
@@ -227,13 +227,13 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
 5. Valitse **Tuotteet**-pikavälilehdessä tarvittava tuote ja valitse sitten **Määritteet** tuoteruudukon yläpuolella.
 6. Päivitä tarvittavien määritteiden arvot seuraavissa pikavälilehdissä:
 
-    - Jaettu tuotemedia
-    - Yhteiset tuotemääritteet
-    - Kanavamedia
-    - Kanavan tuotemääritteet
+   - Jaettu tuotemedia
+   - Yhteiset tuotemääritteet
+   - Kanavamedia
+   - Kanavan tuotemääritteet
 
-    > [!NOTE]
-    > Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
+     > [!NOTE]
+     > Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
 
 ![Luettelon tuotemääriteryhmät](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
 
 5. Päivitä tarvittavien määritteiden arvot seuraavissa pikavälilehdissä:
 
-    - Jaettu tuotemedia
-    - Yhteiset tuotemääritteet
-    - Kanavamedia
-    - Kanavan tuotemääritteet
+   - Jaettu tuotemedia
+   - Yhteiset tuotemääritteet
+   - Kanavamedia
+   - Kanavan tuotemääritteet
 
-    > [!NOTE]
-    > Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
+     > [!NOTE]
+     > Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
 

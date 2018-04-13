@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="piece-picking-confirmation"></a>Kappaleen keräilyvahvistus
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kappalekeräilyssä voit vahvistaa mobiililaitteessa varaston jokaisen kappaleen keräily- tai inventointityön avulla. Voit vahvistaa keräilyssä käsiteltävän työn määrän kerättävään työhön määritettyyn määrään saakka. Voit skannata inventointityössä inventoitavan varaston ja seurata kokonaismäärää.
 
@@ -46,8 +46,10 @@ Kappalekeräilyä voi käyttää kaikissa inventointitöissä ja kaikenlaisten t
 
 Seuraavat asetukset ovat valittavissa, kun työtyyppinä on keräily tai inventointi.
 
-| Vaihtoehto        | kuvaus   | 
-| ------------- | ------------- |
-| Kappaleen keräilyvahvistus   | Käytettävissä, kun työtyyppinä on keräily tai inventointi. Tuotteen vahvistus valitaan automaattisesti. Jokainen varastokappale voidaan vahvistaa mobiililaitteessa. | 
-| Kappaleiden enimmäismäärä     | Käytettävissä keräilytyössä, jos kappalekeräilyn vahvistus on otettu käyttöön. Määrittää rajan vahvistettavien kappaleiden määrälle. |  
+
+|           Vaihtoehto           |                                                                            kuvaus                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Kappaleen keräilyvahvistus | Käytettävissä, kun työtyyppinä on keräily tai inventointi. Tuotteen vahvistus valitaan automaattisesti. Jokainen varastokappale voidaan vahvistaa mobiililaitteessa. |
+|  Kappaleiden enimmäismäärä  |                   Käytettävissä keräilytyössä, jos kappalekeräilyn vahvistus on otettu käyttöön. Määrittää rajan vahvistettavien kappaleiden määrälle.                   |
+
 

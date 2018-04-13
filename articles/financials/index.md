@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-management-home-page"></a>Taloushallinnon kotisivu
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operationsin taloushallinnon toimintoja koskevista ohjeaiheista ja muista resursseista. 
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="define-loyalty-schemes"></a>Määritä kanta-asiakasmallit
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten kanta-asiakkuusmalli määritetään. Kanta-asiakkuusmallit ovat kanta-asiakasohjelman ansainta- ja lunastussääntöjä. Menettely käyttää esittelytietojen USRT-yritystä.
 

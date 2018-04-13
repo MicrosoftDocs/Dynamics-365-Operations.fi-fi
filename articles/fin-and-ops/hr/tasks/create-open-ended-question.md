@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-open-ended-question"></a>Avoimen kysymyksen luominen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Vastaajat voivat kirjoittaa avoimiin kysymyksiin oman vastauksen. Voit määrittää, onko vastaus numero, desimaaliluku, päivämäärä, kommentti tms. Tässä menettelyssä kerrotaan, miten avoin kysymys luodaan. Aloita menettely siirtymällä kohtaan Kyselylomake > Suunnittelu > Kysymykset. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-standard-costs-for-labor-and-expenses"></a>Määritä työn ja kulujen vakiokustannukset
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä menettely osoittaa, miten projektin työn ja kulujen standardikustannukset määritetään. Tässä tehtävässä käytetään USSI-tietojoukkoa.
 

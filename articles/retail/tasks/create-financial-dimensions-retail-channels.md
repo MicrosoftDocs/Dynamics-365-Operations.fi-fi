@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a>Luo vähittäismyyntikanaville taloushallinnon dimensiot ja määritä dimensioarvot myymälöille
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tässä menetelmässä kerrotaan, miten vähittäismyyntikanavan taloushallinnon dimensio ja dimension arvot luodaan ja vähittäismyymälöiden taloushallinnon dimensioiden arvot määritetään. Aihe ei sisällä muita liittyviä vaiheita, kuten dimensiojoukkojen ja tilirakenteiden luomista. Menettely käyttää esittelytietojen USRT-yritystä.
 

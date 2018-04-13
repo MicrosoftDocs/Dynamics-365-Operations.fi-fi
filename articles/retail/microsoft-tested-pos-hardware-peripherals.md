@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="pos-hardware-peripherals"></a>Myyntipisteen oheislaitteet
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Retail Modern point of sale (POS) ja Cloud POS voivat käyttää useita myyntipisteen (POS) oheislaitteita, liittymiä ja käyttöönottovaihtoehtoja, jotka soveltuvat jälleenmyyjien erilaisiin liiketoimintaskenaarioihin. 
 

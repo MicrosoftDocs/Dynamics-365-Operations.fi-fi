@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-and-design-financial-reports"></a>Tarkastele ja suunnittele talousraportteja
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on harjoituksia, joissa selitetään, miten tarkastellaan ja luodaan raportteja Microsoft Dynamics 365 for Finance and Operationsissa. Talousraportointi koostuu Finance and Operationsissa tapahtuvasta tarkastelusta ja yhden napsautuksen raporttisuunnitteluohjelmasta, jolla voit luoda ja muokata raportteja.  
 

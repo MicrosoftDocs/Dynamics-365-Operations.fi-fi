@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-assets-home-page"></a>Käyttöomaisuuden aloitussivu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Käyttöomaisuuserät ovat henkilön tai organisaation omistamia arvokkaita nimikkeitä, kuten rakennuksia, ajoneuvoja, maata ja varusteita. 
 

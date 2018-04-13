@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a>Myyntiedustajan toimintoprofiilin määrittäminen
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tässä menettelyssä esitellään, miten määritetään liikkeen toimintoprofiilin asetukset, jotka koskevat myyntiedustajia. Menettelyt käyttävät esittelytietojen USRT-yritystä.
 

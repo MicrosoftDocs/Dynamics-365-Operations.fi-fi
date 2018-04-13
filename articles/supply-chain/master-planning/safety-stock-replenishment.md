@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="safety-stock-fulfillment-for-items"></a>Nimikkeiden varmuusvaraston täyttäminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Varmuusvarasto ilmaisee, kuinka paljon ylimääräistä nimikettä on varastossa, jotta voidaan estää nimikkeen loppuminen varastosta. Varmuusvarastoa käytetään puskurivarastona siltä varalta, että toimittaja ei voi toimittaa myyntitilauksia vastaavaa määrää nimikkeitä asiakkaan pyydettyyn lähetyspäivämäärään mennessä. Kun myyntilaus täytetään varmuusvarastosta, varmuusvarastoa vähennetään. Voit tuoda varaston automaattisesti takaisin varmuusvarastotasolle pääsuunnittelun avulla.    
 

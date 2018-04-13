@@ -28,8 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="set-up-training-courses"></a>Määritä koulutuskursseja
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Henkilöstöhallinnon järjestelmänvalvojat ja esimiehet voivat ylläpitää tietoja työntekijöille tarjottavista kursseista kurssitoiminnoilla.
 
@@ -81,15 +80,15 @@ Seuraavassa taulukossa luetellaan kurssien kolme asetustyyppiä. Kurssin rakente
 
 ## <a name="course-tasks"></a>Kurssin tehtävät
 Voit suorittaa jokaiselle kurssille seuraavat tehtävät:
--   Osallistujien rekisteröinti
--   Rekisteröinnin määräajan määritys
--   Osallistujien vähimmäis- ja enimmäismäärien määritys
--   Kurssipaikan ja luokkahuoneen määritys
--   Hotellien suosittelu kurssin osallistujille
--   kurssikuvauksen luonti, jota voidaan mainostaa työntekijöiden itsepalvelussa
+- Osallistujien rekisteröinti
+- Rekisteröinnin määräajan määritys
+- Osallistujien vähimmäis- ja enimmäismäärien määritys
+- Kurssipaikan ja luokkahuoneen määritys
+- Hotellien suosittelu kurssin osallistujille
+- kurssikuvauksen luonti, jota voidaan mainostaa työntekijöiden itsepalvelussa
 
   >**Huomautus** Voit poistaa kurssin vain, jos kukaan ei ole rekisteröitynyt siihen. 
-    
+
 ## <a name="course-statuses"></a>Kurssin tilat
 Seuraavassa taulukossa luetellaan mahdolliset kurssin tilat sekä toiminnot, jotka voidaan suorittaa, kun kurssilla on tietty tila.
 

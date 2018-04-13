@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="trial-balance-financial-reports"></a>Pääkirjan talousraportit
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan pääkirjojen oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin sekä niiden muokkaaminen liiketoimintasi tarpeiden mukaan. 
 
@@ -99,7 +98,7 @@ Jokaisessa pääkirjan raportissa käytetään eri sarakemääritystä. Nämä s
     -   **FD** – vain edellisen vuoden debet-tiedot sisältävät taloushallinnon tiedot
     -   **FD** – vain edellisen vuoden kredit-tiedot sisältävät taloushallinnon tiedot
 
- 
+
 
 <a name="see-also"></a>Lisätietoja
 --------

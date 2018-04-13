@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a>Määritä valikkokohde mobiililaitteelle ostotilauksen työn suoritusta varten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Seuraavassa menettelyssä kuvataan, miten määrität Mobiililaite-valikkovaihtoehdon. Tässä esimerkissä valikkovaihtoehdolla suoritetaan Ostotilaus-tyypin työ. Työn voimassaolo määritetään valikkokohteeseen liitetyn työluokan perusteella. Voit käyttää tätä opastusta USMF-yrityksen demotiedoissa. Tämän menettelyn suorittaa yleensä varastopäällikkö.
 

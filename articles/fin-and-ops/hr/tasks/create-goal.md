@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-goal"></a>Luo tavoite
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Voit luoda tavoitteita, lisätä niihin aktiviteettejä, kerätä mittauksia yhdistää tavoitteet arviointiin. Tämä menettelyn luomisessa käytettiin USMF-yrityksen demotietoja. Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.
 

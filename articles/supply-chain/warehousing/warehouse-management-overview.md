@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="warehouse-management"></a>Varastonhallinta  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dynamics 365 for Finance and Operationsin varastonhallintamoduulin avulla voit hallita varastonhallinnanprosesseja tuotanto-, jakelu- ja vähittäismyyntiyrityksissä. Moduulissa on useita ominaisuuksia varastolaitoksen optimaaliseksi tueksi milloin tahansa. Varastonhallinta on täysin integroitu muihin Finance and Operationsin liiketoiminnan prosesseihin, kuten kuljetus, tuotanto, laadunvalvonta, hankinta, siirto, myynti ja palautus.
 

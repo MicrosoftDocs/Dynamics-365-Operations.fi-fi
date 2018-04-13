@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-online-channels-and-define-channel-attributes"></a>Luo online-kanavat ja määritä kanavamääritteet
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten uusi online-kanava luodaan ja lisätään organisaatiohierarkiaan. Organisaatiohierarkia on luotava ennen uuden online-kanavan luomista. Menettely käyttää esittelytietojen USRT-yritystä.
 

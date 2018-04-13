@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-an-image-to-a-product"></a>Kuvan lisääminen tuotteelle
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä toimintaohjeessa kuvataan, miten kuva lisätään tuotteeseen, jonka avulla tämä tehtävä on luotu esittely-yritys USMF:ssä.
 

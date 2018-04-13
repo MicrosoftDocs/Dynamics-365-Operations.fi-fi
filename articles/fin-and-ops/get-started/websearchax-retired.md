@@ -27,7 +27,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="websearchax-retired"></a>WebSearchAX on poistettu käytöstä
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Olemme poistaneet WebSearchAX-sivun käytöstä. Käytä sen sijaan haluamasi hakukoneen sivustohakua.  Esimerkki: 
 
