@@ -18,17 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4c499e31fb42a69dff6ac41faac0c78f7f4d1876
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7348706006dd5baec207ed8ef1d208b032a8e16a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a><span data-ttu-id="6137b-104">Yksi tosite useille asiakkaan tai toimittajan tietueille</span><span class="sxs-lookup"><span data-stu-id="6137b-104">Single voucher with multiple customer or vendor records</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6137b-105">Tämä aihe sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille.</span><span class="sxs-lookup"><span data-stu-id="6137b-105">This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records.</span></span> <span data-ttu-id="6137b-106">Tämä toiminto poistetaan Microsoft Dynamics 365 for Finance and Operations tulevissa versioissa, joten emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn.</span><span class="sxs-lookup"><span data-stu-id="6137b-106">This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Finance and Operations, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing.</span></span> 
 
@@ -251,7 +250,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="6137b-616">001</span><span class="sxs-lookup"><span data-stu-id="6137b-616">001</span></span>         | <span data-ttu-id="6137b-617">Asiakas</span><span class="sxs-lookup"><span data-stu-id="6137b-617">Customer</span></span>         | <span data-ttu-id="6137b-618">US-008</span><span class="sxs-lookup"><span data-stu-id="6137b-618">US-008</span></span>      |                 |           |  <span data-ttu-id="6137b-619">75,00</span><span class="sxs-lookup"><span data-stu-id="6137b-619">75.00</span></span>     | <span data-ttu-id="6137b-620">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="6137b-620">Ledger</span></span>          | <span data-ttu-id="6137b-621">999999---</span><span class="sxs-lookup"><span data-stu-id="6137b-621">999999---</span></span>          |
 | <span data-ttu-id="6137b-622">002</span><span class="sxs-lookup"><span data-stu-id="6137b-622">002</span></span>         | <span data-ttu-id="6137b-623">Toimittaja</span><span class="sxs-lookup"><span data-stu-id="6137b-623">Vendor</span></span>           | <span data-ttu-id="6137b-624">1001</span><span class="sxs-lookup"><span data-stu-id="6137b-624">1001</span></span>        |                 |  <span data-ttu-id="6137b-625">75,00</span><span class="sxs-lookup"><span data-stu-id="6137b-625">75.00</span></span>    |            | <span data-ttu-id="6137b-626">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="6137b-626">Ledger</span></span>          | <span data-ttu-id="6137b-627">999999---</span><span class="sxs-lookup"><span data-stu-id="6137b-627">999999---</span></span>          |
 
- 
+
 
 
 

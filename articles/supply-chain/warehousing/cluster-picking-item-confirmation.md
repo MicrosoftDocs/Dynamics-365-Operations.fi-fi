@@ -18,14 +18,14 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a1c4b7623f3409d4474adcd04fb1331b944b9fbb
-ms.openlocfilehash: 530082a23163cf348bcbb133175e3af963d55f2b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8f9d287f5d2134d26296c1302a9c18505c426db3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a><span data-ttu-id="cb773-103">Tuotteen vahvistus klusterikeräilyä varten</span><span class="sxs-lookup"><span data-stu-id="cb773-103">Product confirmation for cluster picking</span></span>
 <span data-ttu-id="cb773-104">Klusterikeräilyssä voi kerätä usean tilauksen nimikkeitä samalla kertaa.</span><span class="sxs-lookup"><span data-stu-id="cb773-104">Cluster picking allows you to pick items for several orders at the same time.</span></span> <span data-ttu-id="cb773-105">Kun klusterikeräily on käytössä, nimikkeen vahvistaminen on ehdottoman tärkeää, jotta klustereihin lisättävät nimikkeet voidaan tarkistaa.</span><span class="sxs-lookup"><span data-stu-id="cb773-105">When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters.</span></span> <span data-ttu-id="cb773-106">Voit tarkistaa klusterikeräilyn nimikkeet klusterikeräilyn aikana.</span><span class="sxs-lookup"><span data-stu-id="cb773-106">You can verify items in cluster picking during the cluster picking process.</span></span>
@@ -37,7 +37,8 @@ ms.lasthandoff: 02/13/2018
 1.  <span data-ttu-id="cb773-111">Avaa mobiililaitteen valikossa työn vahvistuksen määrityslomake: **Varastonhallinta** > **Varastonhallinta** > **Asetukset** > **Mobiililaite** > **Mobiililaitteen valikkovaihtoehdot**.</span><span class="sxs-lookup"><span data-stu-id="cb773-111">On a mobile device menu item, open the setup form for work confirmation: **Warehouse management** > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.</span></span>
 2.  <span data-ttu-id="cb773-112">Avaa mobiililaitteen valikossa **Työn vahvistusasetukset**.</span><span class="sxs-lookup"><span data-stu-id="cb773-112">From the mobile device menu item, open **Work confirmation setup**.</span></span>
 
-| <span data-ttu-id="cb773-113">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="cb773-113">Option</span></span>        | <span data-ttu-id="cb773-114">kuvaus</span><span class="sxs-lookup"><span data-stu-id="cb773-114">Description</span></span>   | 
-| ------------- | ------------- |
-|<span data-ttu-id="cb773-115">Tuotteen vahvistus</span><span class="sxs-lookup"><span data-stu-id="cb773-115">Product confirmation</span></span> | <span data-ttu-id="cb773-116">Voit skannattaessa tarkistaa kunkin varastokappaleen mobiililaitteessa.</span><span class="sxs-lookup"><span data-stu-id="cb773-116">Allows you to verify each piece of inventory from the mobile device when scanned.</span></span>|
+|        <span data-ttu-id="cb773-113">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="cb773-113">Option</span></span>        |                                    <span data-ttu-id="cb773-114">kuvaus</span><span class="sxs-lookup"><span data-stu-id="cb773-114">Description</span></span>                                    |
+|----------------------|-----------------------------------------------------------------------------------|
+| <span data-ttu-id="cb773-115">Tuotteen vahvistus</span><span class="sxs-lookup"><span data-stu-id="cb773-115">Product confirmation</span></span> | <span data-ttu-id="cb773-116">Voit skannattaessa tarkistaa kunkin varastokappaleen mobiililaitteessa.</span><span class="sxs-lookup"><span data-stu-id="cb773-116">Allows you to verify each piece of inventory from the mobile device when scanned.</span></span> |
+
 

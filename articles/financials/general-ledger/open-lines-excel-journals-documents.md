@@ -19,21 +19,21 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2da864254efda2621e1b157413a16d251020786
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 034e25eea8a4db3126f7f33ae0712b6f30606651
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="publish-journal-lines-and-documents-from-excel"></a><span data-ttu-id="cbad2-104">Kirjauskansiorivien ja asiakirjojen julkaiseminen Excelistä</span><span class="sxs-lookup"><span data-stu-id="cbad2-104">Publish journal lines and documents from Excel</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="cbad2-105">Tässä ohjeaiheessa kerrotaan, kuinka voit syöttää ja julkaista yleisten kirjauskansioiden rivejä Microsoft Excelistä.</span><span class="sxs-lookup"><span data-stu-id="cbad2-105">This topic explains how to enter and publish lines for general journals from Microsoft Excel.</span></span> <span data-ttu-id="cbad2-106">Se sisältää tietoja eri malleista, joita voit käyttää riippuen syöttämistäsi tapahtumista.</span><span class="sxs-lookup"><span data-stu-id="cbad2-106">It includes information about the various templates that you can use, depending on the type of transactions that you're entering.</span></span>
 
 <span data-ttu-id="cbad2-107">Käyttäjät voivat syöttää ja julkaista taloushallinnon kirjauskansioiden rivejä Microsoft Excelistä.</span><span class="sxs-lookup"><span data-stu-id="cbad2-107">Users can enter and publish lines for financial journals from Microsoft Excel.</span></span> <span data-ttu-id="cbad2-108">Sen jälkeen, kun käyttäjä on luonut kirjauskansion, **Avaa rivit Excelissä** -painike näyttää käytettävissä olevat mallit.</span><span class="sxs-lookup"><span data-stu-id="cbad2-108">After a user creates a journal, the **Open lines in Excel** button displays the templates that are available.</span></span> <span data-ttu-id="cbad2-109">Mallit on suunniteltu tukemaan tiettyjä skenaarioita, mutta kirjauskansio ei tue kaikkia tilityyppien yhdistelmiä.</span><span class="sxs-lookup"><span data-stu-id="cbad2-109">Templates are designed to support specific scenarios, however not every combination of account type is supported in the journal.</span></span> <span data-ttu-id="cbad2-110">Seuraavassa taulukossa esitetään käytettävissä olevat mallit ja niiden tukemat tilityypit.</span><span class="sxs-lookup"><span data-stu-id="cbad2-110">The following table shows the templates that are available and the account types which they support.</span></span>
+
 |                          |                                                                                                                         |                                                                                         |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | <span data-ttu-id="cbad2-111">**Malli**</span><span class="sxs-lookup"><span data-stu-id="cbad2-111">**Template**</span></span>             | <span data-ttu-id="cbad2-112">**Tuetut tilityypit**</span><span class="sxs-lookup"><span data-stu-id="cbad2-112">**Supported account types**</span></span>                                                                                             | <span data-ttu-id="cbad2-113">**Mallin käyttäminen**</span><span class="sxs-lookup"><span data-stu-id="cbad2-113">**How to access the template**</span></span>                                                          |

@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eb6e6121d39f9fc089afe38354b96eb88e5501d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0d7fbc5f9b928a43870899836ead4f8adbc1a56
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a><span data-ttu-id="03413-103">Ehdokkaiden valintatyökalujen määrittäminen ja käyttöönotto</span><span class="sxs-lookup"><span data-stu-id="03413-103">Identify and deploy candidate selection tools</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="03413-104">Hyväksyttyjen ehdokkaiden joukon löytäminen avointen toimien täyttämistä varten voi olla vaikeaa erityisesti silloin, kun paikka vaatii eritystä osaamisaluejoukkoa.</span><span class="sxs-lookup"><span data-stu-id="03413-104">Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills.</span></span>  <span data-ttu-id="03413-105">Organisaatiossasi voi jo olla töissä tarvittuja osaamisalueita omaavia ehdokkaita.</span><span class="sxs-lookup"><span data-stu-id="03413-105">However, candidates with the skills you need might already be employed in your organization.</span></span> <span data-ttu-id="03413-106">Voit hakea nykyisten työntekijöiden tai uusien hakijoiden joukosta henkilöitä, jotka omaavat tietyt osaamisalueet.</span><span class="sxs-lookup"><span data-stu-id="03413-106">You can search for a specific skill set among existing employees, or new applicants.</span></span> <span data-ttu-id="03413-107">Näin rekrytoija voi nopeasti kerätä hakijoiden tiedot ja tarkistaa, kuka on hakenut avointa toimea nyt tai aiemmin, tai etsiä mahdollisia ehdokkaita aiemmin luoduista ehdokasryhmästä.</span><span class="sxs-lookup"><span data-stu-id="03413-107">This allows a recruiter to quickly gather and screen applicants who have applied for open position now or in the past, or to find potential candidates from their existing pool of employees.</span></span> <span data-ttu-id="03413-108">Tämän tehtävän tallennuksen avulla opit, miten osaamisaluekartoituksen toiminto auttaa etsimään oikean henkilön avoimeen toimeen.</span><span class="sxs-lookup"><span data-stu-id="03413-108">Use this task recording to learn how the skill mapping functionality can help you find the right person for an open position.</span></span> <span data-ttu-id="03413-109">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="03413-109">The demo data company used to create this procedure is USMF.</span></span>
 

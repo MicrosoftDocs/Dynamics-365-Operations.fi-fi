@@ -16,16 +16,16 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e9bf83269c34133509734691fd018ee703c40626
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6cc5c5b8dc60e3807a535b0d40e68200fb4da165
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a><span data-ttu-id="36ce5-103">Ostoreskontran laskujen täsmäytyksen vahvistuksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="36ce5-103">Set up accounts payable invoice matching validation</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="36ce5-104">Tässä tallenteessa käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="36ce5-104">This recording uses the USMF demo company.</span></span> <span data-ttu-id="36ce5-105">Nämä vaiheet suorittaa ostoreskontran esimies tai laskentapäällikön rooli.</span><span class="sxs-lookup"><span data-stu-id="36ce5-105">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="36ce5-106">Varmista ennen aloittamista, että laskun täsmäytyksen konfigurointiavain on valittuna.</span><span class="sxs-lookup"><span data-stu-id="36ce5-106">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span> <span data-ttu-id="36ce5-107">Jos oma yrityksesi seuraa kuluja, kuten rahtia, veloituksien avulla, varmista että kulujen konfigurointiavain on valittuna.</span><span class="sxs-lookup"><span data-stu-id="36ce5-107">If your legal entity tracks expenses, such as freight, by using charges, make sure that the Charges configuration key is selected.</span></span>  <span data-ttu-id="36ce5-108">Ostoreskontran laskujen täsmäytys on prosessi, jossa täsmäytetään toimittajan laskun, ostotilauksen ja tuotteen vastaanoton tiedot.</span><span class="sxs-lookup"><span data-stu-id="36ce5-108">Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.</span></span> <span data-ttu-id="36ce5-109">Näissä asiakirjoissa olevia eroja kutsutaan ristiriidoiksi.</span><span class="sxs-lookup"><span data-stu-id="36ce5-109">Differences among these documents are called matching discrepancies.</span></span> <span data-ttu-id="36ce5-110">Täsmäytysristiriitoja verrataan määritettyihin toleransseihin.</span><span class="sxs-lookup"><span data-stu-id="36ce5-110">Matching discrepancies are compared with the tolerances that are specified.</span></span> <span data-ttu-id="36ce5-111">Jos täsmäytysristiriita ylittää toleranssin prosentin tai summan, täsmäytyksen varianssin kuvakkeet näkyvät toimittajan laskun lomakkeella ja laskun täsmäytyksen tietojen lomakkeella.</span><span class="sxs-lookup"><span data-stu-id="36ce5-111">If a matching discrepancy exceeds the tolerance percentage or amount, match variance icons are displayed in the Vendor invoice form and in the Invoice matching details form.</span></span>
 

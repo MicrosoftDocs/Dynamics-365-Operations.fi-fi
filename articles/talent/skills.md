@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: edcb01c177a3e43cea7f0b7936a4129d27314016
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3a5b9f98b371dbad9b6b0538e0d9975dc5ed701c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a><span data-ttu-id="05064-104">Työvoiman osaamisalueiden kohdistaminen liiketoimintatarpeisiin</span><span class="sxs-lookup"><span data-stu-id="05064-104">Align workforce skills with business needs</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="05064-105">Voit seurata työntekijöillä, hakijoilla tai yhteyshenkilöillä olevia osaamisalueita tai mitä osaamisalueita heillä pitäisi olla voidakseen suoriutua rooleistaan tehokkaasti.</span><span class="sxs-lookup"><span data-stu-id="05064-105">You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively.</span></span> <span data-ttu-id="05064-106">Voit myös määrittää tietyn työn edellyttämät osaamisalueet.</span><span class="sxs-lookup"><span data-stu-id="05064-106">You can also specify the skills that are required for a specific job.</span></span>
 
@@ -55,8 +54,8 @@ ms.lasthandoff: 01/31/2018
 
 <span data-ttu-id="05064-133">Osaamisaluekartoitusprofiilien avulla voit etsiä nykyisiä työntekijöitä tai hakijoita, joiden pätevyys vastaa suoraan liiketoiminnan tarpeita.</span><span class="sxs-lookup"><span data-stu-id="05064-133">Skill-mapping profiles allow you to find current employees or candidates with qualifications that directly correspond to business needs.</span></span>  <span data-ttu-id="05064-134">Voit esimerkiksi luoda osaamisaluekartoitusprofiileja organisaatiossa avoimena olevia toimia varten.</span><span class="sxs-lookup"><span data-stu-id="05064-134">For example, you could create a skill-mapping profile for an open position in your organization.</span></span> <span data-ttu-id="05064-135">Luomalla profiilin tietylle työlle ja kopioimalla työn osaamisalueet, koulutuksen ja todistukset profiiliin voit nopeasti hakea työntekijöitä, hakijoita ja yhteyshenkilöitä, jotka vastaavat yhtä tai useampaa profiilissa määritettyä ehtoa, ja tarkastella sellaisten hakijoiden luetteloa, joiden osaamisalueet lähimmin vastaavat työn vaatimuksia.</span><span class="sxs-lookup"><span data-stu-id="05064-135">By creating a profile for a particular job and copying the skills, education and certificates from that job to the profile, you can quickly search workers, applicants and contact persons who match one or more of the criteria entered on the profile and view a list of the candidates whose skills most closely match the skills required for the job.</span></span>
 
-><span data-ttu-id="05064-136">**Huomautus** Vain osaamisaluekartoitushakuihin valitut työntekijät, hakijat ja yhteyshenkilöt voidaan näyttää osaamisaluekartoituksen tulosluettelossa tai sisällyttää osaamisalueprofiilin.</span><span class="sxs-lookup"><span data-stu-id="05064-136">**Note** Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile.</span></span> <span data-ttu-id="05064-137">Jos haluat sisällyttää työntekijän, hakijan tai yhteyshenkilön osaamisaluekartoitushakuihin, määritä **Sisällytä osaamisaluekartoitukseen** -asetukseksi Kyllä seuraavilla sivuilla:</span><span class="sxs-lookup"><span data-stu-id="05064-137">To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:</span></span>
-
+> <span data-ttu-id="05064-136">**Huomautus** Vain osaamisaluekartoitushakuihin valitut työntekijät, hakijat ja yhteyshenkilöt voidaan näyttää osaamisaluekartoituksen tulosluettelossa tai sisällyttää osaamisalueprofiilin.</span><span class="sxs-lookup"><span data-stu-id="05064-136">**Note** Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile.</span></span> <span data-ttu-id="05064-137">Jos haluat sisällyttää työntekijän, hakijan tai yhteyshenkilön osaamisaluekartoitushakuihin, määritä **Sisällytä osaamisaluekartoitukseen** -asetukseksi Kyllä seuraavilla sivuilla:</span><span class="sxs-lookup"><span data-stu-id="05064-137">To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:</span></span>
+> 
 > + <span data-ttu-id="05064-138">Työntekijä</span><span class="sxs-lookup"><span data-stu-id="05064-138">Worker</span></span>
 > + <span data-ttu-id="05064-139">Työntekijä</span><span class="sxs-lookup"><span data-stu-id="05064-139">Employee</span></span>
 > + <span data-ttu-id="05064-140">Hakija</span><span class="sxs-lookup"><span data-stu-id="05064-140">Applicant</span></span>

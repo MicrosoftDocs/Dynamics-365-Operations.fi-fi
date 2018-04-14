@@ -18,16 +18,16 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 838dc1e5867b8380823275aba5fc425003a54523
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 162b6d660fb5ec8df79dc44b89dea87d877c6470
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a><span data-ttu-id="5da61-103">Tuotantorakenne- ja reseptirivien vapauttaminen varastoon</span><span class="sxs-lookup"><span data-stu-id="5da61-103">Release BOM and formula lines to the warehouse</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="5da61-104">Tässä ohjeaiheessa käsitellään tuoterakennerivien ja reseptirivien raaka-aineiden varastoon vapauttamisprosessia.</span><span class="sxs-lookup"><span data-stu-id="5da61-104">This topic describes the process for releasing raw material for bill of materials (BOM) lines and formula lines to the warehouse.</span></span> <span data-ttu-id="5da61-105">Kun vapautat tuoterakenne- tai reseptirivin varastoon, järjestelmä määrittää ensin, onko materiaalia jo saatavana työnohjauksessa tuotannon syöttösijainnissa, jossa tuotantoprosessi kuluttaa materiaalin.</span><span class="sxs-lookup"><span data-stu-id="5da61-105">When you release a BOM or formula line to the warehouse, the system first determines whether material is already available at the production input location on the shop floor where the material will be consumed for the production process.</span></span>
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 03/07/2018
 - <span data-ttu-id="5da61-119">**Vapauta tuoterakenne- ja reseptirivit erätyön avulla tai manuaalisesti** – Tässä tavassa tuoterakenne- ja reseptirivit vapautetaan vain **Tuoterakenteen ja reseptirivien automaattinen vapautus** -erätyön avulla tai manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="5da61-119">**Release BOM and formula lines via a batch job or as a manual interaction** – In this method, BOM and formula lines can be released only through the **Automatic release of BOM and formula lines** batch job or as a manual interaction.</span></span> <span data-ttu-id="5da61-120">Voit vapauttaa tuoterakenne- ja reseptirivejä manuaalisesti valitsemalla tuotantotilauksen luettelosivulla tai tuotantotilauksen tietosivulla toimintoruudussa **Vapauta varastoon**.</span><span class="sxs-lookup"><span data-stu-id="5da61-120">To manually release BOM and formula lines, on the production order list page or the production order details page, on the Action Pane, select **Release to warehouse**.</span></span>
 
 <span data-ttu-id="5da61-121">Tässä lyhyessä YouTube-videossa näytetään, miten tuorerakenne- ja reseptirivit vapautetaan tuotantoon erätyön avulla:</span><span class="sxs-lookup"><span data-stu-id="5da61-121">For a quick demonstration of how to release BOM and formula lines to production by using a batch job, watch this short YouTube video:</span></span>
-[!Video https://www.youtube.com/embed/8urAJn50dQ8]
+[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a><span data-ttu-id="5da61-122">Tuoterakenne- ja reseptirivien vapauttaminen erätyön avulla</span><span class="sxs-lookup"><span data-stu-id="5da61-122">Releasing the BOM and formula lines by using a batch job</span></span>
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 03/07/2018
 ![Esimerkki materiaalin vapauttamisesta työnumeron mukaan](media/two-operations.PNG)
 
 <span data-ttu-id="5da61-177">Tässä lyhyessä YouTube-videossa näytetään, miten materiaali vapautetaan suhteessa valmiiden tuotteiden määrään:</span><span class="sxs-lookup"><span data-stu-id="5da61-177">For a quick demonstration of how to release material in proportion to the amount of finished goods, watch this short YouTube video:</span></span>
-[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
+[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a><span data-ttu-id="5da61-178">Materiaalin vapauttaminen suhteessa valmiiden tavaroiden määrään</span><span class="sxs-lookup"><span data-stu-id="5da61-178">Release material in proportion to the amount of finished goods</span></span>
 

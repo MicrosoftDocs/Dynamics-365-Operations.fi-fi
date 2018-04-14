@@ -18,15 +18,15 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fa43f6683d43dfb62e8dc2c194ff2b82fe629fe3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: de36746bce4aa27d23aa45f2d08cb6c2d527ea90
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="on-premises-deployment-home-page"></a><span data-ttu-id="cf5de-103">Paikallisen käyttöönoton aloitussivu</span><span class="sxs-lookup"><span data-stu-id="cf5de-103">On-premises deployment home page</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="cf5de-104">Voit ottaa Microsoft Dynamics 365 for Finance and Operationsin (paikallinen) käyttöön.</span><span class="sxs-lookup"><span data-stu-id="cf5de-104">You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises).</span></span> <span data-ttu-id="cf5de-105">Kun valitset paikallisen käyttöönottotyypin, järjestelmävaatimukset, laitteiden koko ja toiminnot poikkeavat pilvikäyttöönotosta.</span><span class="sxs-lookup"><span data-stu-id="cf5de-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="cf5de-106">Tässä ohjeaiheessa on linkkejä sisältöön, jossa on paikallisia käyttöönottoja koskevia tietoja.</span><span class="sxs-lookup"><span data-stu-id="cf5de-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
 

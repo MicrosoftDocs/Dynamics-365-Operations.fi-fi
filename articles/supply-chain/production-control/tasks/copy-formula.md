@@ -17,15 +17,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 036bd9f592ca584afad9d4b9b7a49a9787076056
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f1b04e48c4f17260255ba371c9b14cf5d67a28c2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="copy-a-formula"></a><span data-ttu-id="64511-103">Kopioi kaava</span><span class="sxs-lookup"><span data-stu-id="64511-103">Copy a formula</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="64511-104">Tässä menettelyssä keskitytään luomaan resepti, joka sisältää samat ainesosat kuin aiemmin luotu resepti, mutta jossa on vähemmän eroja.</span><span class="sxs-lookup"><span data-stu-id="64511-104">This procedure focuses on creating a formula that includes the same ingredients as an existing formula, but with minor differences.</span></span> <span data-ttu-id="64511-105">Voit luoda reseptirivit kopioimalla kopiointitoiminnolla sellainen aiemmin luotu resepti, joka sisältää eniten tarvitsemiasi ainesosia.</span><span class="sxs-lookup"><span data-stu-id="64511-105">To create the formula lines, you can use the Copy function to copy an existing formula that has most of the ingredients that you need.</span></span> <span data-ttu-id="64511-106">Sitten voit tehdä uuden version yksittäisille riveille tarvittavat muutokset.</span><span class="sxs-lookup"><span data-stu-id="64511-106">You can then make any necessary changes to the individual lines in the new version.</span></span> <span data-ttu-id="64511-107">Kopiointitoiminnon ansiosta ei tarvitse tehdä useita lähes samanlaisia reseptejä.</span><span class="sxs-lookup"><span data-stu-id="64511-107">By using the Copy function, you do not have to create multiple formulas that are almost identical.</span></span> <span data-ttu-id="64511-108">Tämän tehtävän luomisessa käytetty demotietojen yritys on USP2.</span><span class="sxs-lookup"><span data-stu-id="64511-108">The demo data company used to create this task is USP2.</span></span>
 

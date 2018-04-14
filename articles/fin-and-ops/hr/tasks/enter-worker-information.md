@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: ffd30775b15037f12a4eeb7d750aca80062455fd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bfcebf61a5f613517e05af5c1548b5ceaaed53ee
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-worker-information"></a><span data-ttu-id="a4ba1-103">Syötä työntekijän tiedot</span><span class="sxs-lookup"><span data-stu-id="a4ba1-103">Enter worker information</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a4ba1-104">Kun rekrytoija on luonut joukkotyöhönottoprojektin ja luonut toimet, syötetään palkattavien henkilöiden työntekijätiedot.</span><span class="sxs-lookup"><span data-stu-id="a4ba1-104">After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired.</span></span> <span data-ttu-id="a4ba1-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="a4ba1-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="a4ba1-106">Esittelytiedot sisältävät joukkotyöhönottoprojektin.</span><span class="sxs-lookup"><span data-stu-id="a4ba1-106">The demo data contains an open mass hire project.</span></span> <span data-ttu-id="a4ba1-107">Aloita tämä menettely siirtymällä kohtaan Henkilöstöhallinto > Työhönotto > Joukkotyöhönottoprojektit.</span><span class="sxs-lookup"><span data-stu-id="a4ba1-107">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span>
 

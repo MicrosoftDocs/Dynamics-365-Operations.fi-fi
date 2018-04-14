@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: fe0be9164a285ce3884d1f35e99bdad80eb8b581
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1a32b49e7589113d518ef17a39eecc4c518b362d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="allocation-bases"></a><span data-ttu-id="6e1a9-104">Kohdistusperusteet</span><span class="sxs-lookup"><span data-stu-id="6e1a9-104">Allocation bases</span></span> 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6e1a9-105">Kustannuslaskentaa kohdistaa yleiskustannukset kohdistusperusteen perusteella.</span><span class="sxs-lookup"><span data-stu-id="6e1a9-105">An allocation base is the basis on which Cost accounting allocates overhead costs.</span></span> <span data-ttu-id="6e1a9-106">Kohdistusperuste voi olla määrä, kuten koneen käyttötunnit, kulutetut kilowattitunnit (kWh) tai käytössä olevat neliömetrit.</span><span class="sxs-lookup"><span data-stu-id="6e1a9-106">An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied.</span></span> <span data-ttu-id="6e1a9-107">Kohdistusperusteita käytetään lähinnä yleiskustannusten määrittämiseen tuotettavalle varastolle.</span><span class="sxs-lookup"><span data-stu-id="6e1a9-107">Allocation bases are mostly used to assign overhead costs to inventory that is produced.</span></span> <span data-ttu-id="6e1a9-108">Esimerkiksi IT-osasto kohdistaa kustannukset kunkin osaston käyttämien tietokoneiden määrän mukaan.</span><span class="sxs-lookup"><span data-stu-id="6e1a9-108">For example, an IT department allocates its expenses according to the number of computers that each department uses.</span></span>
 
@@ -424,9 +424,11 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="6e1a9-775">Tämä on esimerkki kustannusten jakosäännöstä, jos Kiinteä sähkö -kaavan kohdistusperuste on määritetty sen kohdistusperusteena.</span><span class="sxs-lookup"><span data-stu-id="6e1a9-775">Here is an example of a cost distribution rule if the Electricity fixed formula allocation base is assigned as the allocation base in it.</span></span>
 
-| <span data-ttu-id="6e1a9-776">Kustannusobjekti</span><span class="sxs-lookup"><span data-stu-id="6e1a9-776">Cost object</span></span> |  <span data-ttu-id="6e1a9-777">kuvaus</span><span class="sxs-lookup"><span data-stu-id="6e1a9-777">Description</span></span>  | <span data-ttu-id="6e1a9-778">Suuruus</span><span class="sxs-lookup"><span data-stu-id="6e1a9-778">Magnitude</span></span> | <span data-ttu-id="6e1a9-779">Kohdistuskerroin</span><span class="sxs-lookup"><span data-stu-id="6e1a9-779">Allocation factor</span></span>                |
-|-------------|----|-----------|----------------------------------|
-| <span data-ttu-id="6e1a9-780">CC001</span><span class="sxs-lookup"><span data-stu-id="6e1a9-780">CC001</span></span>       | <span data-ttu-id="6e1a9-781">Henkilöstöhallinto</span><span class="sxs-lookup"><span data-stu-id="6e1a9-781">HR</span></span> | <span data-ttu-id="6e1a9-782">1,837.50</span><span class="sxs-lookup"><span data-stu-id="6e1a9-782">1,837.50</span></span>  | <span data-ttu-id="6e1a9-783">(1 837,50 ÷ 18 162,50) × summa</span><span class="sxs-lookup"><span data-stu-id="6e1a9-783">(1,837.50 ÷ 18,162.50) × Amount</span></span>  |
-| <span data-ttu-id="6e1a9-784">CC002</span><span class="sxs-lookup"><span data-stu-id="6e1a9-784">CC002</span></span>       | <span data-ttu-id="6e1a9-785">FI</span><span class="sxs-lookup"><span data-stu-id="6e1a9-785">FI</span></span> | <span data-ttu-id="6e1a9-786">3,075.00</span><span class="sxs-lookup"><span data-stu-id="6e1a9-786">3,075.00</span></span>  | <span data-ttu-id="6e1a9-787">(3 075,00 ÷ 18 162,50) × summa</span><span class="sxs-lookup"><span data-stu-id="6e1a9-787">(3,075.00 ÷ 18,162.50) × Amount</span></span>  |
-| <span data-ttu-id="6e1a9-788">CC003</span><span class="sxs-lookup"><span data-stu-id="6e1a9-788">CC003</span></span>       | <span data-ttu-id="6e1a9-789">VS</span><span class="sxs-lookup"><span data-stu-id="6e1a9-789">IT</span></span> | <span data-ttu-id="6e1a9-790">13,250.00</span><span class="sxs-lookup"><span data-stu-id="6e1a9-790">13,250.00</span></span> | <span data-ttu-id="6e1a9-791">(13 250,00 ÷ 18 162,50) × summa</span><span class="sxs-lookup"><span data-stu-id="6e1a9-791">(13,250.00 ÷ 18,162.50) × Amount</span></span> |
+
+| <span data-ttu-id="6e1a9-776">Kustannusobjekti</span><span class="sxs-lookup"><span data-stu-id="6e1a9-776">Cost object</span></span> | <span data-ttu-id="6e1a9-777">kuvaus</span><span class="sxs-lookup"><span data-stu-id="6e1a9-777">Description</span></span> | <span data-ttu-id="6e1a9-778">Suuruus</span><span class="sxs-lookup"><span data-stu-id="6e1a9-778">Magnitude</span></span> |        <span data-ttu-id="6e1a9-779">Kohdistuskerroin</span><span class="sxs-lookup"><span data-stu-id="6e1a9-779">Allocation factor</span></span>         |
+|-------------|-------------|-----------|----------------------------------|
+|    <span data-ttu-id="6e1a9-780">CC001</span><span class="sxs-lookup"><span data-stu-id="6e1a9-780">CC001</span></span>    |     <span data-ttu-id="6e1a9-781">Henkilöstöhallinto</span><span class="sxs-lookup"><span data-stu-id="6e1a9-781">HR</span></span>      | <span data-ttu-id="6e1a9-782">1,837.50</span><span class="sxs-lookup"><span data-stu-id="6e1a9-782">1,837.50</span></span>  | <span data-ttu-id="6e1a9-783">(1 837,50 ÷ 18 162,50) × summa</span><span class="sxs-lookup"><span data-stu-id="6e1a9-783">(1,837.50 ÷ 18,162.50) × Amount</span></span>  |
+|    <span data-ttu-id="6e1a9-784">CC002</span><span class="sxs-lookup"><span data-stu-id="6e1a9-784">CC002</span></span>    |     <span data-ttu-id="6e1a9-785">FI</span><span class="sxs-lookup"><span data-stu-id="6e1a9-785">FI</span></span>      | <span data-ttu-id="6e1a9-786">3,075.00</span><span class="sxs-lookup"><span data-stu-id="6e1a9-786">3,075.00</span></span>  | <span data-ttu-id="6e1a9-787">(3 075,00 ÷ 18 162,50) × summa</span><span class="sxs-lookup"><span data-stu-id="6e1a9-787">(3,075.00 ÷ 18,162.50) × Amount</span></span>  |
+|    <span data-ttu-id="6e1a9-788">CC003</span><span class="sxs-lookup"><span data-stu-id="6e1a9-788">CC003</span></span>    |     <span data-ttu-id="6e1a9-789">VS</span><span class="sxs-lookup"><span data-stu-id="6e1a9-789">IT</span></span>      | <span data-ttu-id="6e1a9-790">13,250.00</span><span class="sxs-lookup"><span data-stu-id="6e1a9-790">13,250.00</span></span> | <span data-ttu-id="6e1a9-791">(13 250,00 ÷ 18 162,50) × summa</span><span class="sxs-lookup"><span data-stu-id="6e1a9-791">(13,250.00 ÷ 18,162.50) × Amount</span></span> |
+
 

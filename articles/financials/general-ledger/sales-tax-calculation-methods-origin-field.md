@@ -19,19 +19,18 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b36b290026f384109ccd710a9979892dd5268307
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4c1e1a588e07b9f60880dcf1c34139c5c1ceba35
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a><span data-ttu-id="97253-103">Arvonlisäveron laskentatavat Alkuperä-kentässä</span><span class="sxs-lookup"><span data-stu-id="97253-103">Sales tax calculation methods in the Origin field</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="97253-104">Tässä artikkelissa käsitellään arvonlisäveron koodisivun Peruste-kentän vaihtoehtoja sekä sitä, miten arvonlisävero lasketaan valitun vaihtoehdon perusteella arvonlisäverokoodille.</span><span class="sxs-lookup"><span data-stu-id="97253-104">This article explains the options in the Origin field on the sales tax codes page and how sales tax is calculated based on the selected option for a sales tax code.</span></span>
 
@@ -53,11 +52,12 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="97253-122">ALV = 25 %, Prosenttia bruttosummasta -laskentatapa</span><span class="sxs-lookup"><span data-stu-id="97253-122">SALESTAX = 25%, using the Percentage of gross amount calculation method</span></span>
 
 <span data-ttu-id="97253-123">Jos nettosumma on 10,00, niin MAKSU 1 on 1,00 (10,00 x 10 %) ja MAKSU 2 = 2,00 (10,00 x 20 %).</span><span class="sxs-lookup"><span data-stu-id="97253-123">If the net amount is 10.00, then DUTY 1 is 1.00 (10.00 x 10%) and DUTY 2 = 2.00 (10.00 x 20%).</span></span> <span data-ttu-id="97253-124">Summat ovat seuraavat: Bruttosumma: Nettosumma + MAKSU 1 -summa + MAKSU 2 -summa (10,00 + 1,00 + 2,00) = 13,00 ALV = 13,00 x 25 % = 3,25 MAKSUT ja ALV yhteensä: 1,00 + 2,00 + 3,25 = 6,25 Kokonaissumma: 10,00 + 6,25 = 16,25</span><span class="sxs-lookup"><span data-stu-id="97253-124">The amounts would be as follows: Gross amount: Net amount + DUTY 1 amount + DUTY 2 amount (10.00 + 1.00 + 2.00) = 13.00 SALESTAX = 13.00 x 25% = 3.25 Total DUTIES and SALESTAX: 1.00 + 2.00 + 3.25 = 6.25 Total amount: 10.00 + 6.25 = 16.25</span></span>
+
 | <span data-ttu-id="97253-125">**Huomautus**</span><span class="sxs-lookup"><span data-stu-id="97253-125">**Note**</span></span>                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="97253-126">Tapahtumassa voi käyttää vain yhtä verokoodia, jossa Alkuperä = Prosenttia bruttosummasta.</span><span class="sxs-lookup"><span data-stu-id="97253-126">Only one tax code with Origin = Percentage of gross amount can be used for a transaction.</span></span> <span data-ttu-id="97253-127">Jos tapahtumalle määritetään useita tällaisia verokoodeja, näyttöön tulee virhesanoma, jonka mukaan arvonlisäveroa ei voi laskea.</span><span class="sxs-lookup"><span data-stu-id="97253-127">If more than one such tax code is determined for a transaction an error will be displayed that sales tax cannot be calculated.</span></span> |
 
- 
+
 <a name="percentage-of-sales-tax"></a><span data-ttu-id="97253-128">Arvonlisäveroprosentti</span><span class="sxs-lookup"><span data-stu-id="97253-128">Percentage of sales tax</span></span>
 -----------------------
 
@@ -70,6 +70,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="97253-136">ALV = 25 %, Prosenttia bruttosummasta -laskentatapa</span><span class="sxs-lookup"><span data-stu-id="97253-136">SALESTAX = 25%, using the Percentage of gross amount method</span></span>
 
 <span data-ttu-id="97253-137">Nettosumma: 10,00 MAKSU 1: 10,00 x 10 % = 1,00 MAKSU 2: 1,00 x 20 % = 0,20 Bruttosumma: 10,00 + 1,00 + 0,20 = 11,20 ALV: 11,20 x 25 % = 2,80 MAKSUT ja ALV yhteensä: 1,00 + 0,20 + 2,80 = 4,00 Kokonaissumma: 10,00 + 4,00 = 14,00</span><span class="sxs-lookup"><span data-stu-id="97253-137">Net amount: 10.00 DUTY 1: 10.00 x 10% = 1.00 DUTY 2: 1.00 x 20% = 0.20 Gross amount: 10.00 + 1.00 + 0.20 = 11.20 SALESTAX: 11.20 x 25% = 2.80 Total DUTIES and SALESTAX: 1.00 + 0.20 + 2.80 = 4.00 Total amount: 10.00 + 4.00 = 14.00</span></span>
+
 | <span data-ttu-id="97253-138">**Huomautus**</span><span class="sxs-lookup"><span data-stu-id="97253-138">**Note**</span></span>                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="97253-139">Verolaskutoimituksissa ei voi käyttää monen tason veroja.</span><span class="sxs-lookup"><span data-stu-id="97253-139">Multilevel tax on tax calculations are not possible.</span></span> <span data-ttu-id="97253-140">Veroa ei voi laskea sellaisen veron perusteella, joka on jo laskettu toisen veron perusteella.</span><span class="sxs-lookup"><span data-stu-id="97253-140">A tax cannot be calculated based on a tax which already is calculated based on another tax.</span></span> <span data-ttu-id="97253-141">Tapahtumalle voi laskea useita verokoodeihin perustuvia yhden tason veroja.</span><span class="sxs-lookup"><span data-stu-id="97253-141">Multiple single level tax on tax codes can be calculated on a transaction.</span></span> |
@@ -79,6 +80,7 @@ ms.lasthandoff: 11/03/2017
 ### <a name="example"></a><span data-ttu-id="97253-146">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="97253-146">Example</span></span>
 
 <span data-ttu-id="97253-147">Arvonlisäverokoodiksi on määritetty: 1,20 USD / yksikkö = laatikko Myyntilaskurivillä nimikettä myydään 25 laatikkoa Arvonlisäveroksi lasketaan 25 x 1,20 = 30,00</span><span class="sxs-lookup"><span data-stu-id="97253-147">Sales tax code is set up as: USD 1.20 per unit = box On a sales invoice line 25 boxes of an item are sold Sales tax is calculated as 25 x 1.20 = 30.00</span></span>
+
 | <span data-ttu-id="97253-148">**Huomautus**</span><span class="sxs-lookup"><span data-stu-id="97253-148">**Note**</span></span>                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="97253-149">Jos tapahtumalla on eri yksikkö kuin arvonlisäverokoodissa määritetty, se muunnetaan automaattisesti Yksikkömuunnokset-sivulla määritettyjen yksikkömuunnosten perusteella.</span><span class="sxs-lookup"><span data-stu-id="97253-149">If the transaction is entered in different unit than the unit specified on the sales tax code, it is converted automatically based on the unit conversions that are set up in the Unit conversions page.</span></span> |

@@ -20,17 +20,16 @@ ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 2066f6c9dd71144a330e00a71f02dfc21dd930bc
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: dccb702c072b7fae41f5200783a9c95eb8c54988
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-and-manage-attributes"></a><span data-ttu-id="81f0d-104">Määritteiden luonti ja hallinta</span><span class="sxs-lookup"><span data-stu-id="81f0d-104">Create and manage attributes</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="81f0d-105">Tässä artikkelissa käsitellään Microsoft Dynamics 365 for Retailin määritteitä.</span><span class="sxs-lookup"><span data-stu-id="81f0d-105">This article describes attributes in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="81f0d-106">Määritteiden avulla voit kuvailla tuotetta ja sen ominaisuuksia käyttäjän määrittelemien kenttien avulla.</span><span class="sxs-lookup"><span data-stu-id="81f0d-106">Attributes let you describe a product and its characteristics through user-defined fields.</span></span>
 
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/17/2018
 
 ## <a name="attribute-type"></a><span data-ttu-id="81f0d-173">Määritetyyppi</span><span class="sxs-lookup"><span data-stu-id="81f0d-173">Attribute type</span></span>
   <span data-ttu-id="81f0d-174">[![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png)</span><span class="sxs-lookup"><span data-stu-id="81f0d-174">[![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png)</span></span> 
-  
+
 <span data-ttu-id="81f0d-175">Määritteet perustuvat määritetyyppeihin.</span><span class="sxs-lookup"><span data-stu-id="81f0d-175">Attributes are based on attribute types.</span></span> <span data-ttu-id="81f0d-176">Määritetyypit osoittavat, minkälaista tietoa voi lisätä tiettyyn määritteeseen.</span><span class="sxs-lookup"><span data-stu-id="81f0d-176">Attribute types identify the type of data that can be entered for a specific attribute.</span></span> <span data-ttu-id="81f0d-177">Microsoft Dynamics 365 for Retail tukee tällä hetkellä seuraavia määritetyyppejä:</span><span class="sxs-lookup"><span data-stu-id="81f0d-177">Currently, Microsoft Dynamics 365 for Retail supports the following attribute types:</span></span>
 
 -   <span data-ttu-id="81f0d-178">**Valuutta** – Tämä määritetyyppi tukee valuutta-arvoja.</span><span class="sxs-lookup"><span data-stu-id="81f0d-178">**Currency** – This attribute type supports currency values.</span></span> <span data-ttu-id="81f0d-179">Se voidaan sitoa (eli se voi tukea arvoaluetta), tai se voidaan jättää avoimeksi.</span><span class="sxs-lookup"><span data-stu-id="81f0d-179">It can be bounded (that is, it can support a value range), or it can be left open.</span></span>

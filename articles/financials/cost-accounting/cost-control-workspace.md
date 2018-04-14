@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 861b4eda291dc7b0a5c045a767c860b7e4718404
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: beb110091ea452ec46739c10fa2570eb9b6f656f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-control-overview"></a><span data-ttu-id="b4968-104">Kustannusseurannan yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="b4968-104">Cost control overview</span></span> 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="b4968-105">Esimiehet voivat avata **Kustannusseuranta**-työtilassa keskitetysti vastuullaan olevia yhden tai kaikkien dimensioiden (kuten kustannuspaikkojen ja tuoteryhmien) kustannusobjekteja tai kustannusobjektijoukkoja koskevia raportteja.</span><span class="sxs-lookup"><span data-stu-id="b4968-105">The **Cost control** workspace is a central point where managers who are responsible for controlling a cost object or a set of cost objects within a dimension or across dimensions (for example, cost centers and product groups) can access reports.</span></span> <span data-ttu-id="b4968-106">Työtilan raportit ovat täysin kustannuslaskijoiden hallinnassa, joten raportoinnissa käytettävä asettelu ja tiedot ovat yhtenäiset koko organisaatiossa.</span><span class="sxs-lookup"><span data-stu-id="b4968-106">The reports in the workspace are fully managed by cost accountants, so that the layout and data that are used for reporting can be consistent across the whole organization.</span></span>
 

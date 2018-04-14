@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 703070ae85f504cf204244b2197732dc6849abd6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1bbdd7c47013735aa384d2d64c347d08d52c0df2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-order-cost-analysis"></a><span data-ttu-id="e49f6-105">Tuotantotilauksen kustannusanalyysi</span><span class="sxs-lookup"><span data-stu-id="e49f6-105">Production order cost analysis</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e49f6-106">Tässä artikkelissa tietoja kustannusanalyysista, jonka voi tehdä valmiille ja nykyisille tuotantotilauksille.</span><span class="sxs-lookup"><span data-stu-id="e49f6-106">This article provides information about the cost analysis that you can do for completed and current production orders.</span></span> <span data-ttu-id="e49f6-107">Voit analysoida arvioidut kustannukset ja toteutuneet kustannukset käyttämällä Hinnan laskenta -sivua tai Ennakko- ja jälkilaskelmat -raporttia.</span><span class="sxs-lookup"><span data-stu-id="e49f6-107">You can analyze the estimated costs and actual costs by using the Price calculation page or the Cost estimates and costings report.</span></span> <span data-ttu-id="e49f6-108">Voit tarkastella komponenttinimikkeen, reititystyövaiheen ja epäsuoran kustannuksen tietoja arvioiduista ja todellisista kustannuksista (sekä määristä).</span><span class="sxs-lookup"><span data-stu-id="e49f6-108">You can view information about the estimated and actual costs (and quantity) for each component item, the routing operation, and the indirect cost.</span></span>
 

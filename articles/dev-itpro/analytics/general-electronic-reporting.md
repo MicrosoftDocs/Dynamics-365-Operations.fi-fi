@@ -19,17 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ea9550b7209064a2842d7e5efe55e9e51c23b9f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: eeea5f6f9860bf109bb3063c5a2cc0517192e95d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="electronic-reporting-overview"></a><span data-ttu-id="a03bc-104">Sähköisen raportoinnin yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="a03bc-104">Electronic reporting overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a03bc-105">Tämä aihe esittelee sähköisen raportointityökalun.</span><span class="sxs-lookup"><span data-stu-id="a03bc-105">This topic provides an overview of the Electronic reporting (ER) tool.</span></span> <span data-ttu-id="a03bc-106">Artikkelissa on tietoja keskeisistä käsitteistä ja sähköisen raportoinnin tukemista skenaarioista. Lisäksi siinä on luettelo muodoista, jotka on suunniteltu osana tätä ratkaisua ja jotka julkaistaan sen osana.</span><span class="sxs-lookup"><span data-stu-id="a03bc-106">It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.</span></span>
 
@@ -287,6 +286,7 @@ ms.lasthandoff: 11/03/2017
 <span data-ttu-id="a03bc-344">Voit ottaa sähköisessä raportoinnissa automaattisesti käyttöön viimeisimpään perusosaan versioon tehdyt muutokset nykyisessä johdetun osan luonnosversiossa.</span><span class="sxs-lookup"><span data-stu-id="a03bc-344">ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component.</span></span> <span data-ttu-id="a03bc-345">Tätä prosessia kutsutaan *pohjustamiseksi*.</span><span class="sxs-lookup"><span data-stu-id="a03bc-345">This process is known as *rebasing*.</span></span> <span data-ttu-id="a03bc-346">Esimerkiksi LCS:stä tuodun muodon uusimpaan versioon tehdyt lakisääteiset muutokset voidaan yhdistää automaattisesti tämän sähköisen asiakirjan muodon mukautettuun versioon.</span><span class="sxs-lookup"><span data-stu-id="a03bc-346">For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document.</span></span> <span data-ttu-id="a03bc-347">Muutoksia, joita ei voi yhdistetään automaattisesti, pidetään ristiriitoina.</span><span class="sxs-lookup"><span data-stu-id="a03bc-347">Any changes that can’t be merged automatically are considered conflicts.</span></span> <span data-ttu-id="a03bc-348">Nämä ristiriidat jätetään ratkaistavaksi manuaalisesti kyseisen osan suunnittelutyökaluun.</span><span class="sxs-lookup"><span data-stu-id="a03bc-348">These conflicts are presented for manual resolution in the designer tool for the appropriate component.</span></span> <span data-ttu-id="a03bc-349">Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin muodon päivitys ottamalla käyttöön kyseisen muodon perusversio** -tehtäväopas (osa **7.5.5.3 Muutetun IT-palvelu- ja -ratkaisuosan hankinta ja kehittäminen (10683)** -liiketoimintaprosessia).</span><span class="sxs-lookup"><span data-stu-id="a03bc-349">To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of that format** task guide (part of the **7.5.5.3 Acquire/Develop changed IT service/solution component (10683)** business process).</span></span>
 
 ## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a><span data-ttu-id="a03bc-350">Finance and Operations -ratkaisussa toimitettavien sähköisten raportointimääritysten luettelo</span><span class="sxs-lookup"><span data-stu-id="a03bc-350">List of ER configurations that are delivered in the Finance and Operations solution</span></span>
+
 | <span data-ttu-id="a03bc-351">Toimialakohtaiset tietomallimääritykset: otsikko</span><span class="sxs-lookup"><span data-stu-id="a03bc-351">Domain-specific data model configurations: Title</span></span> | <span data-ttu-id="a03bc-352">Toimialue</span><span class="sxs-lookup"><span data-stu-id="a03bc-352">Domain</span></span>                | <span data-ttu-id="a03bc-353">Tietomalliriippuvainen muotomääritykset: otsikko</span><span class="sxs-lookup"><span data-stu-id="a03bc-353">Data model–dependent format configurations: Title</span></span> | <span data-ttu-id="a03bc-354">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="a03bc-354">Description</span></span>                                                        |
 |--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
 | <span data-ttu-id="a03bc-355">Tarkistustiedostomalli</span><span class="sxs-lookup"><span data-stu-id="a03bc-355">Audit file model</span></span>                                 | <span data-ttu-id="a03bc-356">Tilintarkistus</span><span class="sxs-lookup"><span data-stu-id="a03bc-356">Financial audit</span></span>       |                                                   |                                                                    |

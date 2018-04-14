@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 6084ddb1c5b8fae9111ea1459f6e94b14930bfc5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ec77585e259bc759b422b97f4f3b10271a02b02
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a><span data-ttu-id="e9ec9-104">Myynnin ja kannattavuuden suorituskyvyn Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="e9ec9-104">Sales and profitability performance Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e9ec9-105">Tässä aiheessa kuvataan, mitä kuuluu **Myynnin ja tuottavuuden suorituskyvyn** Power BI -sisältöön.</span><span class="sxs-lookup"><span data-stu-id="e9ec9-105">This topic describes what is included in the **Sales and profitability performance** Microsoft Power BI content.</span></span> <span data-ttu-id="e9ec9-106">Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.</span><span class="sxs-lookup"><span data-stu-id="e9ec9-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="e9ec9-140">Tuotto tuotteen mukaan</span><span class="sxs-lookup"><span data-stu-id="e9ec9-140">Revenue by product</span></span>     | <span data-ttu-id="e9ec9-141">Tuotto & bruttovoitto myyntiluokittain</span><span class="sxs-lookup"><span data-stu-id="e9ec9-141">Revenue & gross profit by sales category</span></span>   | <span data-ttu-id="e9ec9-142">Tuotteet yhteensä, \#</span><span class="sxs-lookup"><span data-stu-id="e9ec9-142">Total \# of products</span></span>                                    |
 |                        | <span data-ttu-id="e9ec9-143">10 parasta tuotetta tuoton mukaan</span><span class="sxs-lookup"><span data-stu-id="e9ec9-143">Top 10 products by revenue</span></span>                 | <span data-ttu-id="e9ec9-144">Aktiivisten tuotteiden kokonaismäärä ja prosenttiosuus kokonaismäärästä</span><span class="sxs-lookup"><span data-stu-id="e9ec9-144">Total number of active products and percentage of total</span></span> |
 |                        | <span data-ttu-id="e9ec9-145">Kokonaistuotto myyntiluokittain</span><span class="sxs-lookup"><span data-stu-id="e9ec9-145">Total revenue by sales category</span></span>            | <span data-ttu-id="e9ec9-146">Tuotteiden määrä, joista koostuu 80 % tuotosta</span><span class="sxs-lookup"><span data-stu-id="e9ec9-146">Number of products accounting for 80% revenue</span></span>           |
-| <span data-ttu-id="e9ec9-147">Tuotto kauden mukaan\\*</span><span class="sxs-lookup"><span data-stu-id="e9ec9-147">Revenue by period\\*</span></span>    | <span data-ttu-id="e9ec9-148">Tuotto kuukauden mukaan</span><span class="sxs-lookup"><span data-stu-id="e9ec9-148">Revenue by month</span></span>                           | <span data-ttu-id="e9ec9-149">Vuosittainen tuoton kasvu</span><span class="sxs-lookup"><span data-stu-id="e9ec9-149">YOY revenue growth</span></span>                                      |
+| <span data-ttu-id="e9ec9-147">Tuotto kauden mukaan\*</span><span class="sxs-lookup"><span data-stu-id="e9ec9-147">Revenue by period\*</span></span>    | <span data-ttu-id="e9ec9-148">Tuotto kuukauden mukaan</span><span class="sxs-lookup"><span data-stu-id="e9ec9-148">Revenue by month</span></span>                           | <span data-ttu-id="e9ec9-149">Vuosittainen tuoton kasvu</span><span class="sxs-lookup"><span data-stu-id="e9ec9-149">YOY revenue growth</span></span>                                      |
 |                        | <span data-ttu-id="e9ec9-150">Laskeva tuottovarianssi, vuosittainen</span><span class="sxs-lookup"><span data-stu-id="e9ec9-150">Trailing revenue variance, YOY</span></span>             | <span data-ttu-id="e9ec9-151">Vuosittainen tuoton kasvu %</span><span class="sxs-lookup"><span data-stu-id="e9ec9-151">YOY revenue growth %</span></span>                                    |
 |                        | <span data-ttu-id="e9ec9-152">Myynnin kokonaisvarianssi asiakkaan alueen mukaan</span><span class="sxs-lookup"><span data-stu-id="e9ec9-152">Total sales variance by customer region</span></span>    |                                                         |
 | <span data-ttu-id="e9ec9-153">Tuotto sijainnin mukaan</span><span class="sxs-lookup"><span data-stu-id="e9ec9-153">Revenue by location</span></span>    | <span data-ttu-id="e9ec9-154">Myyntituotto kaupungeittain</span><span class="sxs-lookup"><span data-stu-id="e9ec9-154">Sales revenue by city</span></span>                      |                                                         |
@@ -75,7 +75,7 @@ ms.lasthandoff: 01/17/2018
 |                        | <span data-ttu-id="e9ec9-162">15 parasta asiakasta käyttökatteen mukaan</span><span class="sxs-lookup"><span data-stu-id="e9ec9-162">Top 15 customers by gross margin</span></span>           |                                                         |
 |                        | <span data-ttu-id="e9ec9-163">Bruttovoitto kuukausittain, vuosittainen</span><span class="sxs-lookup"><span data-stu-id="e9ec9-163">Gross profit by month, YOY</span></span>                 |                                                         |
 
-<span data-ttu-id="e9ec9-164">\\* Tuotto tänä ja viime vuonna, ja kasvu myyntiluokittain.</span><span class="sxs-lookup"><span data-stu-id="e9ec9-164">\\* Revenue this and last year, and growth by sales category.</span></span>
+<span data-ttu-id="e9ec9-164">\* Tuotto tänä ja viime vuonna, ja kasvu myyntiluokittain.</span><span class="sxs-lookup"><span data-stu-id="e9ec9-164">\* Revenue this and last year, and growth by sales category.</span></span>
 
 
 ## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="e9ec9-165">Tietomallin ja yksiköiden tiedot</span><span class="sxs-lookup"><span data-stu-id="e9ec9-165">Understanding the data model and entities</span></span>

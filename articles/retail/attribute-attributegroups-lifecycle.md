@@ -19,16 +19,16 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 53af4335146be6c163a6d84b60155e1a741c0be4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad524e8d585da2140f3cdae17e3a1a2832ada3f0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a><span data-ttu-id="b40a6-102">Määritteet, määriteryhmät ja niiden liitokset Finance and Operationsin vähittäismyynnin yksiköiden kanssa</span><span class="sxs-lookup"><span data-stu-id="b40a6-102">Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="b40a6-103">*Määritteiden* avulla voidaan täydentää tuotteen ja sen ominaisuuksien kuvausta käyttäjän määrittämien kenttien avulla. (Näitä kenttiä ovat esimerkiksi **Muistin koko**, **Kiintolevyn kapasiteetti** ja **Energy Star -merkinnän mukainen**).</span><span class="sxs-lookup"><span data-stu-id="b40a6-103">*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on).</span></span> <span data-ttu-id="b40a6-104">Microsoft Dynamics 365 for Finance and Operations -sovelluksessa määritteitä voidaan liittää erilaisiin vähittäismyynnin yksiköihin, kuten tuoteluokkiin ja vähittäismyyntikanaviin, ja niille voidaan määrittää oletusarvoja.</span><span class="sxs-lookup"><span data-stu-id="b40a6-104">In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them.</span></span> <span data-ttu-id="b40a6-105">Tuotteet perivät sitten määritteet ja oletusarvot, kun ne liitetään tuoteluokkiin tai vähittäismyyntikanaviin.</span><span class="sxs-lookup"><span data-stu-id="b40a6-105">Products then inherit the attributes and the default values when they are associated with the product categories or retail channels.</span></span> <span data-ttu-id="b40a6-106">Oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, vähittäismyyntikanavan tasolla tai vähittäismyyntiluettelossa.</span><span class="sxs-lookup"><span data-stu-id="b40a6-106">The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.</span></span>
  
@@ -227,13 +227,13 @@ ms.lasthandoff: 03/26/2018
 5. <span data-ttu-id="b40a6-307">Valitse **Tuotteet**-pikavälilehdessä tarvittava tuote ja valitse sitten **Määritteet** tuoteruudukon yläpuolella.</span><span class="sxs-lookup"><span data-stu-id="b40a6-307">On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.</span></span>
 6. <span data-ttu-id="b40a6-308">Päivitä tarvittavien määritteiden arvot seuraavissa pikavälilehdissä:</span><span class="sxs-lookup"><span data-stu-id="b40a6-308">On the following FastTabs, update the values of the required attributes:</span></span>
 
-    - <span data-ttu-id="b40a6-309">Jaettu tuotemedia</span><span class="sxs-lookup"><span data-stu-id="b40a6-309">Shared product media</span></span>
-    - <span data-ttu-id="b40a6-310">Yhteiset tuotemääritteet</span><span class="sxs-lookup"><span data-stu-id="b40a6-310">Shared product attributes</span></span>
-    - <span data-ttu-id="b40a6-311">Kanavamedia</span><span class="sxs-lookup"><span data-stu-id="b40a6-311">Channel media</span></span>
-    - <span data-ttu-id="b40a6-312">Kanavan tuotemääritteet</span><span class="sxs-lookup"><span data-stu-id="b40a6-312">Channel product attributes</span></span>
+   - <span data-ttu-id="b40a6-309">Jaettu tuotemedia</span><span class="sxs-lookup"><span data-stu-id="b40a6-309">Shared product media</span></span>
+   - <span data-ttu-id="b40a6-310">Yhteiset tuotemääritteet</span><span class="sxs-lookup"><span data-stu-id="b40a6-310">Shared product attributes</span></span>
+   - <span data-ttu-id="b40a6-311">Kanavamedia</span><span class="sxs-lookup"><span data-stu-id="b40a6-311">Channel media</span></span>
+   - <span data-ttu-id="b40a6-312">Kanavan tuotemääritteet</span><span class="sxs-lookup"><span data-stu-id="b40a6-312">Channel product attributes</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="b40a6-313">Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.</span><span class="sxs-lookup"><span data-stu-id="b40a6-313">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
+     > [!NOTE]
+     > <span data-ttu-id="b40a6-313">Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.</span><span class="sxs-lookup"><span data-stu-id="b40a6-313">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
 
 ![Luettelon tuotemääriteryhmät](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ ms.lasthandoff: 03/26/2018
 
 5. <span data-ttu-id="b40a6-321">Päivitä tarvittavien määritteiden arvot seuraavissa pikavälilehdissä:</span><span class="sxs-lookup"><span data-stu-id="b40a6-321">On the following FastTabs, update the values of the required attributes:</span></span>
 
-    - <span data-ttu-id="b40a6-322">Jaettu tuotemedia</span><span class="sxs-lookup"><span data-stu-id="b40a6-322">Shared product media</span></span>
-    - <span data-ttu-id="b40a6-323">Yhteiset tuotemääritteet</span><span class="sxs-lookup"><span data-stu-id="b40a6-323">Shared product attributes</span></span>
-    - <span data-ttu-id="b40a6-324">Kanavamedia</span><span class="sxs-lookup"><span data-stu-id="b40a6-324">Channel media</span></span>
-    - <span data-ttu-id="b40a6-325">Kanavan tuotemääritteet</span><span class="sxs-lookup"><span data-stu-id="b40a6-325">Channel product attributes</span></span>
+   - <span data-ttu-id="b40a6-322">Jaettu tuotemedia</span><span class="sxs-lookup"><span data-stu-id="b40a6-322">Shared product media</span></span>
+   - <span data-ttu-id="b40a6-323">Yhteiset tuotemääritteet</span><span class="sxs-lookup"><span data-stu-id="b40a6-323">Shared product attributes</span></span>
+   - <span data-ttu-id="b40a6-324">Kanavamedia</span><span class="sxs-lookup"><span data-stu-id="b40a6-324">Channel media</span></span>
+   - <span data-ttu-id="b40a6-325">Kanavan tuotemääritteet</span><span class="sxs-lookup"><span data-stu-id="b40a6-325">Channel product attributes</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="b40a6-326">Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.</span><span class="sxs-lookup"><span data-stu-id="b40a6-326">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
+     > [!NOTE]
+     > <span data-ttu-id="b40a6-326">Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.</span><span class="sxs-lookup"><span data-stu-id="b40a6-326">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
 

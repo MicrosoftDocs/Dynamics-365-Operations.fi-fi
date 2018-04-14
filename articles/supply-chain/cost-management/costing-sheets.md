@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3988bd478cfad791b5d4c73d28a86c9cfb68288f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6ddba210ced7c7ed5fad818945765528e5b1c1d1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="costing-sheets"></a><span data-ttu-id="c1b9c-108">Kustannuslaskentalomakkeet</span><span class="sxs-lookup"><span data-stu-id="c1b9c-108">Costing sheets</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c1b9c-109">Kustannuslaskentalomakkeen määrittämiseen liittyy kaksi tavoitetta.</span><span class="sxs-lookup"><span data-stu-id="c1b9c-109">Setting up the costing sheet involves two objectives.</span></span> <span data-ttu-id="c1b9c-110">Ensimmäinen tavoite on valmistettua tuotetta tai tuotantotilausta koskevien myytyjen tuotteiden kustannustietojen esitysmuodon määrittäminen.</span><span class="sxs-lookup"><span data-stu-id="c1b9c-110">As the first objective, you define the format for displaying cost of goods sold information about a manufactured item or production order.</span></span> <span data-ttu-id="c1b9c-111">Tätä esitysmuotoa kutsutaan kustannuslaskentalomakkeeksi.</span><span class="sxs-lookup"><span data-stu-id="c1b9c-111">The formatted display is termed a costing sheet.</span></span> <span data-ttu-id="c1b9c-112">Toinen tavoite on epäsuorien kustannusten laskemisen perustan määrittäminen.</span><span class="sxs-lookup"><span data-stu-id="c1b9c-112">As the second objective, you define the basis for calculating indirect costs.</span></span> <span data-ttu-id="c1b9c-113">Kustannuslaskennan määritys perustuu kustannusryhmän toimintoon, jota käytetään tietojen esittämisessä ja epäsuorien kustannusten laskentakaavoissa.</span><span class="sxs-lookup"><span data-stu-id="c1b9c-113">The costing sheet setup builds on the cost group feature for displaying information and for the indirect cost calculation formulas.</span></span> <span data-ttu-id="c1b9c-114">Tässä artikkelissa kuvataan kustannuslaskentalomakkeen määrityksen kaksi tavoitetta.</span><span class="sxs-lookup"><span data-stu-id="c1b9c-114">The two objectives of costing sheet setup are described in this article.</span></span> 
 

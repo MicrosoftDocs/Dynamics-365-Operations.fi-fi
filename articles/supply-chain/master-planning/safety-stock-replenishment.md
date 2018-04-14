@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 61c0fde1af125188e1ad1198e00af760256d7cfd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a836ce76f635fd42b0613b2abf131315b19aa5fe
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="safety-stock-fulfillment-for-items"></a><span data-ttu-id="d8886-103">Nimikkeiden varmuusvaraston täyttäminen</span><span class="sxs-lookup"><span data-stu-id="d8886-103">Safety stock fulfillment for items</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d8886-104">Varmuusvarasto ilmaisee, kuinka paljon ylimääräistä nimikettä on varastossa, jotta voidaan estää nimikkeen loppuminen varastosta.</span><span class="sxs-lookup"><span data-stu-id="d8886-104">Safety stock indicates an additional quantity of an item held in the inventory in order to reduce the risk that the item will be out of stock.</span></span> <span data-ttu-id="d8886-105">Varmuusvarastoa käytetään puskurivarastona siltä varalta, että toimittaja ei voi toimittaa myyntitilauksia vastaavaa määrää nimikkeitä asiakkaan pyydettyyn lähetyspäivämäärään mennessä.</span><span class="sxs-lookup"><span data-stu-id="d8886-105">Safety stock is used as a buffer stock in case sales orders come in and the supplier is unable to deliver the additional items to meet the customer's requested ship date.</span></span> <span data-ttu-id="d8886-106">Kun myyntilaus täytetään varmuusvarastosta, varmuusvarastoa vähennetään.</span><span class="sxs-lookup"><span data-stu-id="d8886-106">When safety stock is used to fulfill a sales order, the safety stock will be reduced.</span></span> <span data-ttu-id="d8886-107">Voit tuoda varaston automaattisesti takaisin varmuusvarastotasolle pääsuunnittelun avulla.</span><span class="sxs-lookup"><span data-stu-id="d8886-107">You can use Master planning to automatically bring the inventory back to the safety level.</span></span>    
 

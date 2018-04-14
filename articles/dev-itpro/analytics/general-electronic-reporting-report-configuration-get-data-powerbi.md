@@ -18,17 +18,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 8f89d0740098fbd5af9d838f1f4b7ddf47ee7e10
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6587189fe2a366caebd0dbaf34487d578815bb94
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a><span data-ttu-id="d38a9-103">Sähköisen raportoinnin määrittäminen hakemaan tiedot Power BI:hin</span><span class="sxs-lookup"><span data-stu-id="d38a9-103">Configure Electronic reporting to pull data into Power BI</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d38a9-104">Tässä ohjeaiheessa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Power BI-palveluihin.</span><span class="sxs-lookup"><span data-stu-id="d38a9-104">This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services.</span></span> <span data-ttu-id="d38a9-105">Tässä aiheessa käytetään esimerkkinä Intrastat-tapahtumia siirrettävinä liiketoimintatietoina.</span><span class="sxs-lookup"><span data-stu-id="d38a9-105">As an example, this topic uses Intrastat transactions as business data that must be transferred.</span></span> <span data-ttu-id="d38a9-106">Power BI -karttavisualisointi käyttää tätä Intrastat-tapahtumatietoa näkymän esittämiseen yrityksen tuonti-/vientitoimintojen analyysia varten Power BI-raportissa.</span><span class="sxs-lookup"><span data-stu-id="d38a9-106">The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.</span></span>
 
@@ -118,9 +117,9 @@ ms.lasthandoff: 02/23/2018
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a><span data-ttu-id="d38a9-217">Power BI -raportin luominen käyttämällä uutta tietojoukkoa</span><span class="sxs-lookup"><span data-stu-id="d38a9-217">Create a Power BI report by using the new dataset</span></span>
 1. <span data-ttu-id="d38a9-218">Valitse **Tietojen tuonti ja vienti** luomassasi Power BI -tietojoukossa.</span><span class="sxs-lookup"><span data-stu-id="d38a9-218">Click the **Import and export details** Power BI dataset that you created.</span></span> 
 2. <span data-ttu-id="d38a9-219">Määritä visualisointi.</span><span class="sxs-lookup"><span data-stu-id="d38a9-219">Configure the visualization.</span></span> <span data-ttu-id="d38a9-220">Valitse esimerkiksi **Täytetty kartta** -visualisointi ja määritä se seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="d38a9-220">For example, select the **Filled map** visualization, and configure it as follows:</span></span>
- -   <span data-ttu-id="d38a9-221">Määritä **CountryOrigin**- tietojoukkokenttä kartan visualisoinnin **Sijainti**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="d38a9-221">Assign the **CountryOrigin** dataset field to the **Location** field of the map visualization.</span></span>
- -   <span data-ttu-id="d38a9-222">Määritä **Määrä**- tietojoukkokenttä kartan visualisoinnin **Värikylläisyys**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="d38a9-222">Assign the **Amount** dataset field to the **Color saturation** field of the map visualization.</span></span>
- -   <span data-ttu-id="d38a9-223">Lisää **Tehtävä** ja **Vuosi** tietojoukkokentät kartan visualisoinnin **Suodattimet**-tietokenttäkokoelmaan.</span><span class="sxs-lookup"><span data-stu-id="d38a9-223">Add the **Activity** and **Year** dataset fields to the **Filters** fields collection of the map visualization.</span></span>
+   -   <span data-ttu-id="d38a9-221">Määritä **CountryOrigin**- tietojoukkokenttä kartan visualisoinnin **Sijainti**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="d38a9-221">Assign the **CountryOrigin** dataset field to the **Location** field of the map visualization.</span></span>
+   -   <span data-ttu-id="d38a9-222">Määritä **Määrä**- tietojoukkokenttä kartan visualisoinnin **Värikylläisyys**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="d38a9-222">Assign the **Amount** dataset field to the **Color saturation** field of the map visualization.</span></span>
+   -   <span data-ttu-id="d38a9-223">Lisää **Tehtävä** ja **Vuosi** tietojoukkokentät kartan visualisoinnin **Suodattimet**-tietokenttäkokoelmaan.</span><span class="sxs-lookup"><span data-stu-id="d38a9-223">Add the **Activity** and **Year** dataset fields to the **Filters** fields collection of the map visualization.</span></span>
 
 3. <span data-ttu-id="d38a9-224">Tallenna Power BI -raportti **Tuodut ja viedyt tiedot -raporttina**.</span><span class="sxs-lookup"><span data-stu-id="d38a9-224">Save the Power BI report as **Import and export details report**.</span></span> <span data-ttu-id="d38a9-225">[![Viennin ja tuonnin tietojen raportti](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Huomaa, että kartassa näkyvät maat/alueet, jotka on mainittu Excel-tiedostosta (Itävalta ja Sveitsi tässä esimerkissä).</span><span class="sxs-lookup"><span data-stu-id="d38a9-225">[![Import and export details report](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Note that the map shows the countries/regions that are mentioned in the Excel file (Austria and Switzerland in this example).</span></span> <span data-ttu-id="d38a9-226">Nämä maat/alueet näkyvät värillisinä ja osoittavat laskutettujen summien osuuden.</span><span class="sxs-lookup"><span data-stu-id="d38a9-226">These countries/regions are colored to show the proportion of invoiced amounts for each.</span></span> 
 4. <span data-ttu-id="d38a9-227">Päivitä Intrastat-tapahtumien luettelo.</span><span class="sxs-lookup"><span data-stu-id="d38a9-227">Update the list of Intrastat transactions.</span></span> <span data-ttu-id="d38a9-228">Vientitapahtuma, joka on peräisin Italiasta, lisätään.</span><span class="sxs-lookup"><span data-stu-id="d38a9-228">The export transaction that originated from Italy is added.</span></span> <span data-ttu-id="d38a9-229">[![Intrastat-tapahtumien luettelo](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)</span><span class="sxs-lookup"><span data-stu-id="d38a9-229">[![Intrastat transactions list](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)</span></span> 

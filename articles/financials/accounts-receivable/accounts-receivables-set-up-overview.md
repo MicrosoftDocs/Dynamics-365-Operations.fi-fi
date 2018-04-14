@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 43c8d0db28fb0a845c4520b279f16d7c20c6da88
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a><span data-ttu-id="e38b1-103">Myyntireskontran sekä luotonvalvonnan määrittäminen</span><span class="sxs-lookup"><span data-stu-id="e38b1-103">Configure Accounts receivables and Credit and collections</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e38b1-104">Määritä myyntireskontra ja luotonvalvonta, kun haluat seurata laskuja ja asiakkailta saapuvia maksuja.</span><span class="sxs-lookup"><span data-stu-id="e38b1-104">Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.</span></span>
 
@@ -107,7 +106,7 @@ ms.lasthandoff: 11/14/2017
 |                                                      | <span data-ttu-id="e38b1-251">NSF-tiedot</span><span class="sxs-lookup"><span data-stu-id="e38b1-251">NSF information.</span></span>                     | <span data-ttu-id="e38b1-252">Määritä sen pankkitilin NSF-tiedot, jota käytetään, kun maksu merkitään NSF-tapahtumaksi Perintä-sivulla.</span><span class="sxs-lookup"><span data-stu-id="e38b1-252">Set up NSF information on the bank account that will be used when a payment is marked as an NSF transaction on the Collections page.</span></span>                                                                                                                                              |
 |                                                      | <span data-ttu-id="e38b1-253">Myyjän tiedot</span><span class="sxs-lookup"><span data-stu-id="e38b1-253">Salesperson information</span></span>              | <span data-ttu-id="e38b1-254">Määritä myyjien sähköpostiosoitteet.</span><span class="sxs-lookup"><span data-stu-id="e38b1-254">Set up the email address for salespersons.</span></span> <span data-ttu-id="e38b1-255">Nämä osoitteet näkyvät Perintä-sivulla ja voit lähettää niiden avulla sivulta sähköpostia myyjälle.</span><span class="sxs-lookup"><span data-stu-id="e38b1-255">These addresses will appear on the Collections page and you can use them to send email to a salesperson from that page.</span></span>                                                                                                                |
 
- 
+
 <span data-ttu-id="e38b1-256">Lisätietoja on kohdassa [Luotto ja perintä myyntireskontrassa](collections-credit-accounts-receivable.md).</span><span class="sxs-lookup"><span data-stu-id="e38b1-256">For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).</span></span>
 
 

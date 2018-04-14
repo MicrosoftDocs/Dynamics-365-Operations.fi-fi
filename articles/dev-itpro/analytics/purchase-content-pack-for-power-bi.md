@@ -19,16 +19,16 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 4963cc5fb94097ef831813e7732961821c20ad25
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 37f3b1b4d362bd8b40977648b4aa4387011eea08
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="purchase-spend-analysis-power-bi-content"></a><span data-ttu-id="99279-104">Ostojen ja kulutuksen analyysi - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="99279-104">Purchase spend analysis Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="99279-105">Tässä ohjeaiheessa kerrotaan, mitä **osto- ja kulutusanalyysin** Microsoft Power BI -sisältö sisältää.</span><span class="sxs-lookup"><span data-stu-id="99279-105">This topic describes what is included in the **Purchase spend analysis** Microsoft Power BI content.</span></span> <span data-ttu-id="99279-106">Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.</span><span class="sxs-lookup"><span data-stu-id="99279-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -131,7 +131,7 @@ ms.lasthandoff: 01/17/2018
 </tbody>
 </table>
 
-<span data-ttu-id="99279-160">\\* Ostot tänä ja edellisenä vuonna sekä kasvu hankintaluokan mukaan</span><span class="sxs-lookup"><span data-stu-id="99279-160">\\* Purchase this year and last year, and growth by procurement category</span></span>
+<span data-ttu-id="99279-160">\* Ostot tänä ja edellisenä vuonna sekä kasvu hankintaluokan mukaan</span><span class="sxs-lookup"><span data-stu-id="99279-160">\* Purchase this year and last year, and growth by procurement category</span></span>
 
 ## <a name="data-model-and-entities"></a><span data-ttu-id="99279-161">Tietomalli ja yksiköt</span><span class="sxs-lookup"><span data-stu-id="99279-161">Data model and entities</span></span>
 <span data-ttu-id="99279-162">Seuraavia tietoja käytetään **osto- ja kulutusanalyysin** Power BI -sisällön raporttisivujen täyttämiseen.</span><span class="sxs-lookup"><span data-stu-id="99279-162">The following data is used to fill the report pages in the **Purchase spend analysis** Power BI content.</span></span> <span data-ttu-id="99279-163">Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä.</span><span class="sxs-lookup"><span data-stu-id="99279-163">This data is represented as aggregate measurements that are staged in the Entity store.</span></span> <span data-ttu-id="99279-164">Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta.</span><span class="sxs-lookup"><span data-stu-id="99279-164">The Entity store is a Microsoft SQL Server database that is optimized for analytics.</span></span> <span data-ttu-id="99279-165">Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md).</span><span class="sxs-lookup"><span data-stu-id="99279-165">For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span>

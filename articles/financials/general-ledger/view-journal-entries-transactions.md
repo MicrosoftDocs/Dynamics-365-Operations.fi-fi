@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 825dba31a7093e9d9460f5aab59a96507dafeb8a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2ada46f8be165282557044468a24291185b4aa5b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-journal-entries-and-transactions"></a><span data-ttu-id="1d3bf-103">Näytä tapahtumat ja kirjauskansiomerkinnät</span><span class="sxs-lookup"><span data-stu-id="1d3bf-103">View journal entries and transactions</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1d3bf-104">Tässä artikkelissa esitellään kirjauskansiovientien ja -tapahtumien eri tarkastelutavat.</span><span class="sxs-lookup"><span data-stu-id="1d3bf-104">This article explains the various ways that you can view journal entries and transactions.</span></span> 
 
@@ -55,7 +54,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="1d3bf-128">**Tapahtumalähde** – Tämä tapahtumaraportti näyttää tilin kirjanpidon, tapahtuman ja raportoinnin tilivaluutan.</span><span class="sxs-lookup"><span data-stu-id="1d3bf-128">**Transaction origin** – This transaction report shows the account by journal, and by transaction, accounting, and reporting currency.</span></span> <span data-ttu-id="1d3bf-129">Siinä näkyy myös kirjauskansion jokainen rivi, jota on käytetty osoitteeksi.</span><span class="sxs-lookup"><span data-stu-id="1d3bf-129">It also shows each line of the journal that was used as an offset.</span></span>
 
 
-##<a name="see-also"></a><span data-ttu-id="1d3bf-130">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="1d3bf-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1d3bf-130">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="1d3bf-130">See also</span></span>
 - [<span data-ttu-id="1d3bf-131">Kirjanpitotilin saldot</span><span class="sxs-lookup"><span data-stu-id="1d3bf-131">General ledger account balances</span></span>](general-ledger-account-balances.md) 
 - [<span data-ttu-id="1d3bf-132">Kirjanpitolähteen hallinta</span><span class="sxs-lookup"><span data-stu-id="1d3bf-132">Accounting source explorer</span></span>](..\accounts-payable\accounting-source-explorer.md)
 - [<span data-ttu-id="1d3bf-133">Talousraportointi</span><span class="sxs-lookup"><span data-stu-id="1d3bf-133">Financial reporting</span></span>](financial-reporting-getting-started.md)

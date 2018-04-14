@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3ea3998014eb9ac2fd4610b5d52bd792d4f73869
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ef5a1b83ad0e6e0ef5c840913ce1a985dba69174
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-order-cost-estimation"></a><span data-ttu-id="28e10-104">Tuotantotilauksen kustannusarvio</span><span class="sxs-lookup"><span data-stu-id="28e10-104">Production order cost estimation</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="28e10-105">Tämä artikkeli sisältää tietoja tuotannon kustannusarviosta.</span><span class="sxs-lookup"><span data-stu-id="28e10-105">This article provides information about production cost estimation.</span></span> <span data-ttu-id="28e10-106">Tuotannon kustannusarvio sisältää arvioidut materiaalin ja kapasiteetin kulutuksesta aiheutuneet kustannukset, jotka syntyvät kun nimikettä tuotetaan suunniteltu tuotantotilausmäärä.</span><span class="sxs-lookup"><span data-stu-id="28e10-106">Production cost estimation provides the projected material and capacity consumption costs of producing an item in the planned production order quantity.</span></span> 
 

@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 05b7acaa903c7223111db2e879cff2147df34628
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 49cc951d58a1b956528cf5773af6e6dec9086d5d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-cost-control-units"></a><span data-ttu-id="f75cc-103">Määritä kustannusseurantayksiköt</span><span class="sxs-lookup"><span data-stu-id="f75cc-103">Define cost control units</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f75cc-104">Tässä menettelyssä kerrotaan, miten kustannuslaskennan kirjanpidon kustannusseurantayksiköt määritetään.</span><span class="sxs-lookup"><span data-stu-id="f75cc-104">This procedure shows how to define cost control units in the cost accounting ledger.</span></span> <span data-ttu-id="f75cc-105">Valitse kustannusobjektin dimensio, jonka kustannuksia haluat seurata kirjanpidossa.</span><span class="sxs-lookup"><span data-stu-id="f75cc-105">You select the cost object dimension for which you want to control costs in the ledger.</span></span> <span data-ttu-id="f75cc-106">Kustannusobjektin dimension jäsenet muunnetaan kustannusseurantayksiköiden kustannusobjekteiksi.</span><span class="sxs-lookup"><span data-stu-id="f75cc-106">The cost object dimension members are transformed into cost objects of the cost control units.</span></span> <span data-ttu-id="f75cc-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USP2.</span><span class="sxs-lookup"><span data-stu-id="f75cc-107">The demo data company used to create this procedure is USP2.</span></span>
 

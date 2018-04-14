@@ -18,17 +18,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 445c639dc56a5d240f4e35353276ef893f2137da
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="keyboard-shortcuts"></a><span data-ttu-id="b1f2f-103">Pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-103">Keyboard shortcuts</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="b1f2f-104">Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operationsissa.</span><span class="sxs-lookup"><span data-stu-id="b1f2f-104">The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations.</span></span> 
 
@@ -39,6 +38,7 @@ ms.lasthandoff: 03/26/2018
 
 
 ## <a name="action-shortcuts"></a><span data-ttu-id="b1f2f-111">Toimintojen pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-111">Action shortcuts</span></span>
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | <span data-ttu-id="b1f2f-112">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-112">**To do this**</span></span>                                    | <span data-ttu-id="b1f2f-113">**Näppäinyhdistelmä**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-113">**Press**</span></span>                        |
@@ -55,6 +55,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="b1f2f-134">Tällä hetkellä käytettävissä olevien pikanäppäinten tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="b1f2f-134">View currently available shortcuts</span></span>                | <span data-ttu-id="b1f2f-135">Alt+Vaihto+K</span><span class="sxs-lookup"><span data-stu-id="b1f2f-135">Alt+Shift+K</span></span>                      |                              
 
 ## <a name="date-picker-shortcuts"></a><span data-ttu-id="b1f2f-136">Päivämäärävalitsimen pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-136">Date picker shortcuts</span></span>
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | <span data-ttu-id="b1f2f-137">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-137">**To do this**</span></span>                        | <span data-ttu-id="b1f2f-138">**Näppäinyhdistelmä**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-138">**Press**</span></span>                                 |
@@ -68,6 +69,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="b1f2f-153">Poimi ei koskaan (tai enimmäispäivämäärä)</span><span class="sxs-lookup"><span data-stu-id="b1f2f-153">Pick Never (or the max date)</span></span>          | <span data-ttu-id="b1f2f-154">N</span><span class="sxs-lookup"><span data-stu-id="b1f2f-154">N</span></span>                                         |
 
 ## <a name="factbox-shortcuts"></a><span data-ttu-id="b1f2f-155">Tietoruudun pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-155">FactBox shortcuts</span></span>
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | <span data-ttu-id="b1f2f-156">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-156">**To do this**</span></span>                                                                  | <span data-ttu-id="b1f2f-157">**Näppäinyhdistelmä**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-157">**Press**</span></span>                                 |
@@ -79,6 +81,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="b1f2f-168">Tiivistä nykyinen tietoruutu</span><span class="sxs-lookup"><span data-stu-id="b1f2f-168">Collapse the current FactBox</span></span>                                                    | <span data-ttu-id="b1f2f-169">Alt+0</span><span class="sxs-lookup"><span data-stu-id="b1f2f-169">Alt+0</span></span>                                     |
 
 ## <a name="filtering-shortcuts"></a><span data-ttu-id="b1f2f-170">Suodatuksen pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-170">Filtering shortcuts</span></span>
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | <span data-ttu-id="b1f2f-171">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-171">**To do this**</span></span>                     | <span data-ttu-id="b1f2f-172">**Paina**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-172">**Press**</span></span>                |
@@ -89,6 +92,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="b1f2f-181">Avaa lisäasetusten suodatus/lajittelu</span><span class="sxs-lookup"><span data-stu-id="b1f2f-181">Open advanced filtering/sort</span></span>                                      | <span data-ttu-id="b1f2f-182">Ctrl+Vaihto+F3</span><span class="sxs-lookup"><span data-stu-id="b1f2f-182">Ctrl+Shift+F3</span></span>            | 
 
 ## <a name="form-shortcuts"></a><span data-ttu-id="b1f2f-183">Lomakkeen pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-183">Form shortcuts</span></span>
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | <span data-ttu-id="b1f2f-184">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-184">**To do this**</span></span>                                      | <span data-ttu-id="b1f2f-185">**Paina**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-185">**Press**</span></span>         |
@@ -110,6 +114,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="b1f2f-216">Sulje lomake ja hylkää tallentamattomat muutokset</span><span class="sxs-lookup"><span data-stu-id="b1f2f-216">Close the form discarding any unsaved changes</span></span>       | <span data-ttu-id="b1f2f-217">Alt+Vaihto+Q</span><span class="sxs-lookup"><span data-stu-id="b1f2f-217">Alt+Shift+Q</span></span>       |
 
 ## <a name="form-navigation-shortcuts"></a><span data-ttu-id="b1f2f-218">Lomakkeen siirtymispikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-218">Form navigation shortcuts</span></span>
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | <span data-ttu-id="b1f2f-219">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-219">**To do this**</span></span>                                      | <span data-ttu-id="b1f2f-220">**Näppäinyhdistelmä**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-220">**Press**</span></span>                                    |
@@ -128,6 +133,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="b1f2f-245">Vaihda rivinäkymään</span><span class="sxs-lookup"><span data-stu-id="b1f2f-245">Switch to lines view</span></span>                                | <span data-ttu-id="b1f2f-246">Ctrl+Vaihto+L</span><span class="sxs-lookup"><span data-stu-id="b1f2f-246">Ctrl+Shift+L</span></span>                                 |
 
 ## <a name="grid-shortcuts"></a><span data-ttu-id="b1f2f-247">Ruudukon pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-247">Grid shortcuts</span></span>
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | <span data-ttu-id="b1f2f-248">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-248">**To do this**</span></span>                                                                                                         | <span data-ttu-id="b1f2f-249">**Näppäinyhdistelmä**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-249">**Press**</span></span>                       |
@@ -148,6 +154,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="b1f2f-283">Avaa nykyisen sarakkeen ruudukkosuodatus (kohdistus otsikkorivillä)</span><span class="sxs-lookup"><span data-stu-id="b1f2f-283">Open grid filtering for the current column (with focus in the header row)</span></span>                                              | <span data-ttu-id="b1f2f-284">Enter</span><span class="sxs-lookup"><span data-stu-id="b1f2f-284">Enter</span></span>                           |
 
 ## <a name="input-control-shortcuts"></a><span data-ttu-id="b1f2f-285">Syötteiden ohjausobjektien pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-285">Input control shortcuts</span></span>
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | <span data-ttu-id="b1f2f-286">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-286">**To do this**</span></span>                                                               | <span data-ttu-id="b1f2f-287">**Näppäinyhdistelmä**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-287">**Press**</span></span>                     |
@@ -163,6 +170,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="b1f2f-306">Vaihtaa kohdistuksen tekstialueen ja työkalurivin välillä HTML-editorikomponentissa</span><span class="sxs-lookup"><span data-stu-id="b1f2f-306">Switch focus between the text area and the toolbar in an HTML editor control</span></span> | <span data-ttu-id="b1f2f-307">F6</span><span class="sxs-lookup"><span data-stu-id="b1f2f-307">F6</span></span>                            |
 
 ## <a name="messaging-shortcuts"></a><span data-ttu-id="b1f2f-308">Viestinnän pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-308">Messaging shortcuts</span></span>
+
 |                          |               |
 |--------------------------|---------------|
 | <span data-ttu-id="b1f2f-309">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-309">**To do this**</span></span>           | <span data-ttu-id="b1f2f-310">**Näppäinyhdistelmä**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-310">**Press**</span></span>     |
@@ -170,6 +178,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="b1f2f-313">Siirry sanomapalkkiin</span><span class="sxs-lookup"><span data-stu-id="b1f2f-313">Go to the Message Bar</span></span>    | <span data-ttu-id="b1f2f-314">Ctrl+F7</span><span class="sxs-lookup"><span data-stu-id="b1f2f-314">Ctrl+F7</span></span>       |
 
 ## <a name="navigation-shortcuts"></a><span data-ttu-id="b1f2f-315">Siirtymisen pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-315">Navigation shortcuts</span></span>
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | <span data-ttu-id="b1f2f-316">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-316">**To do this**</span></span>                                                                | <span data-ttu-id="b1f2f-317">**Näppäinyhdistelmä**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-317">**Press**</span></span>                  |
@@ -191,6 +200,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="b1f2f-348">Siirry tietoruutuun (voi sisältää ruudun avaamisen)</span><span class="sxs-lookup"><span data-stu-id="b1f2f-348">Move to the FactBox pane (which may include opening it)</span></span>                       | <span data-ttu-id="b1f2f-349">ALT + M,B tai Ctrl + F2</span><span class="sxs-lookup"><span data-stu-id="b1f2f-349">Alt+M,B or Ctrl+F2</span></span>         |
 
 ## <a name="personalization-shortcuts"></a><span data-ttu-id="b1f2f-350">Mukauttamisen pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-350">Personalization shortcuts</span></span>
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | <span data-ttu-id="b1f2f-351">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-351">**To do this**</span></span>                                                                                                         | <span data-ttu-id="b1f2f-352">**Näppäinyhdistelmä**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-352">**Press**</span></span>                           |
@@ -219,6 +229,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="b1f2f-397">Poistu mukautustilasta (mukautustilassa)</span><span class="sxs-lookup"><span data-stu-id="b1f2f-397">Exit personalization mode (when in personalization mode)</span></span>                                                               | <span data-ttu-id="b1f2f-398">Esc</span><span class="sxs-lookup"><span data-stu-id="b1f2f-398">Esc</span></span>                                 |
 
 ## <a name="segmented-entry-shortcuts"></a><span data-ttu-id="b1f2f-399">Segmentoidun kirjauksen pikanäppäimet</span><span class="sxs-lookup"><span data-stu-id="b1f2f-399">Segmented entry shortcuts</span></span>
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | <span data-ttu-id="b1f2f-400">**Toiminto**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-400">**To do this**</span></span>                                                                                                          | <span data-ttu-id="b1f2f-401">**Näppäinyhdistelmä**</span><span class="sxs-lookup"><span data-stu-id="b1f2f-401">**Press**</span></span>                        |

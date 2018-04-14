@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d641ce950aed87b0cf6763fc9dae67ef47268b8d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 53141f29cdcd847611e1b6a8dc4c2ded1f09a9c9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a><span data-ttu-id="83a54-104">Tuotannonhallinnassa ja projektinhallinnan kirjanpidossa käytettävät kustannusluokat</span><span class="sxs-lookup"><span data-stu-id="83a54-104">Cost categories used in Production control and Project management accounting</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="83a54-105">Joitakin tuotantotyön tyyppejä voidaan käyttää projektin aika-arvioinneissa ja raportoinnissa.</span><span class="sxs-lookup"><span data-stu-id="83a54-105">Some types of production work can apply to project time estimates and reporting.</span></span> <span data-ttu-id="83a54-106">Tässä artikkelissa on tietoja kustannusluokista, jotka on määritettävä tämäntyyppiselle tuotantotyölle tuotanto- ja projektitarkoituksiin.</span><span class="sxs-lookup"><span data-stu-id="83a54-106">This article provides information about the cost categories that you must define for these types of production work for production and project purposes.</span></span>
 

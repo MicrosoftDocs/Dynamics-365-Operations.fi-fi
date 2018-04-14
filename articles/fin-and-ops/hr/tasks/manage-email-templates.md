@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eeaf1675b6653ab2c8c04d05ec1bff3cd0bb18d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 67817a3db1aa7d90fd64509b707f075b22010dcb
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="manage-email-templates"></a><span data-ttu-id="4eaa8-103">Sähköpostimallien hallinta</span><span class="sxs-lookup"><span data-stu-id="4eaa8-103">Manage email templates</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4eaa8-104">Voit siirtää tietoja organisaation tietokannasta uuden asiakirjan kirjanmerkkeihin ja käyttää sitä malleissa. Tämä tehostaa viestintää hakijoiden ja ehdokkaiden kanssa.</span><span class="sxs-lookup"><span data-stu-id="4eaa8-104">You can transfer information from your organization’s database to the bookmarks in a new document and use it in templates that help you communicate efficiently with applicants and candidates.</span></span> <span data-ttu-id="4eaa8-105">Voit tehdä tämän luomalla mallin, joka sisältää vakiotekstiä ja muutamia kirjanmerkkejä, joihin järjestelmätiedot lisätään.</span><span class="sxs-lookup"><span data-stu-id="4eaa8-105">To do this, you create a template that contains standard text and some bookmarks where the system data should be inserted.</span></span> <span data-ttu-id="4eaa8-106">Voit esimerkiksi lisätä hakijan osoitteen ja yhteystiedot Microsoft Word -asiakirjaan, jota käytät viestinnässä hakijan kanssa.</span><span class="sxs-lookup"><span data-stu-id="4eaa8-106">For example, you can insert address and contact information for an applicant into a Microsoft Word document that you can use when communicating with that applicant.</span></span> <span data-ttu-id="4eaa8-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="4eaa8-107">The demo data company used to create this procedure is USMF.</span></span>
 

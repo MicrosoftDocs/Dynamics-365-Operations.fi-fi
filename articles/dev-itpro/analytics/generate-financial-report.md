@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
-ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e4c49a9aaae2d6c7324dfb6a13f6079610bb24fa
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="generate-a-financial-report"></a><span data-ttu-id="ab166-103">Luo raportti</span><span class="sxs-lookup"><span data-stu-id="ab166-103">Generate a financial report</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ab166-104">Tässä aiheessa on tietoja talousraporttien luonnista.</span><span class="sxs-lookup"><span data-stu-id="ab166-104">This topic provides information about generating a financial report.</span></span> 
 
@@ -50,13 +49,13 @@ ms.lasthandoff: 12/01/2017
 ## <a name="generate-a-financial-report"></a><span data-ttu-id="ab166-115">Luo raportti</span><span class="sxs-lookup"><span data-stu-id="ab166-115">Generate a financial report</span></span>
 
 <span data-ttu-id="ab166-116">Voit luoda talousraportin Microsoft Dynamics 365 for Finance and Operations -sovelluksen avulla siirtymällä kohtaan **Kirjanpito** > **Kyselyt ja raportit** > **Talousraportit**.</span><span class="sxs-lookup"><span data-stu-id="ab166-116">To generate a financal report with Microsoft Dynamics 365 for Finance and Operations, go to **General ledger** > **Inquiries and reports** > **Financial reports**.</span></span> 
- - <span data-ttu-id="ab166-117">Valitse luotava raportti ja valitse sitten **Luo**.</span><span class="sxs-lookup"><span data-stu-id="ab166-117">Select a report to generate and click **Generate**.</span></span> 
- - <span data-ttu-id="ab166-118">Täytä **Raportin päivämäärä** -kenttä ja valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ab166-118">Fill in the **Report date** field and click **OK**.</span></span>
- 
- <span data-ttu-id="ab166-119">Kun raportti on luotu, sitä voi tarkastella **Raportit**-osassa.</span><span class="sxs-lookup"><span data-stu-id="ab166-119">After the report has been generated, the report will be available to view in the **Reports** section.</span></span>
- <span data-ttu-id="ab166-120">Voit **tarkastella** raporttia tai **poistaa** sen.</span><span class="sxs-lookup"><span data-stu-id="ab166-120">You can select to **View** or **Delete** the report.</span></span>
- 
- 
+- <span data-ttu-id="ab166-117">Valitse luotava raportti ja valitse sitten **Luo**.</span><span class="sxs-lookup"><span data-stu-id="ab166-117">Select a report to generate and click **Generate**.</span></span> 
+- <span data-ttu-id="ab166-118">Täytä **Raportin päivämäärä** -kenttä ja valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ab166-118">Fill in the **Report date** field and click **OK**.</span></span>
+
+  <span data-ttu-id="ab166-119">Kun raportti on luotu, sitä voi tarkastella **Raportit**-osassa.</span><span class="sxs-lookup"><span data-stu-id="ab166-119">After the report has been generated, the report will be available to view in the **Reports** section.</span></span>
+  <span data-ttu-id="ab166-120">Voit **tarkastella** raporttia tai **poistaa** sen.</span><span class="sxs-lookup"><span data-stu-id="ab166-120">You can select to **View** or **Delete** the report.</span></span>
+
+
 <span data-ttu-id="ab166-121">Voit luoda raportti **raporttien suunnitteluohjelman** avulla avaamalla raporttimäärityksen ja valitsemalla sitten työkalupalkin Luo-painikkeen.</span><span class="sxs-lookup"><span data-stu-id="ab166-121">To generate a report using **Report designer**, open the report definition and then click the Generate button in the toolbar.</span></span> <span data-ttu-id="ab166-122">Näytölle avautuu Raporttijonon tila -ikkuna, joka näyttää raporttisi paikan jonossa.</span><span class="sxs-lookup"><span data-stu-id="ab166-122">The Report Queue Status window will open and indicate the location of your report in the queue.</span></span> <span data-ttu-id="ab166-123">Luotu raportti avautuu oletusarvoisesti verkkokatseluohjelmassa.</span><span class="sxs-lookup"><span data-stu-id="ab166-123">By default, the generated report will open in the Web Viewer.</span></span>
 
 > [!NOTE]
@@ -159,7 +158,7 @@ ms.lasthandoff: 12/01/2017
 | <span data-ttu-id="ab166-237">Avaa valittu raportin määritys</span><span class="sxs-lookup"><span data-stu-id="ab166-237">Open the selected report definition</span></span>  | <span data-ttu-id="ab166-238">Ctrl+R</span><span class="sxs-lookup"><span data-stu-id="ab166-238">Ctrl+R</span></span>                     |
 | <span data-ttu-id="ab166-239">Avaa valittu rivimääritys</span><span class="sxs-lookup"><span data-stu-id="ab166-239">Open the selected row definition</span></span>     | <span data-ttu-id="ab166-240">Ctrl+O</span><span class="sxs-lookup"><span data-stu-id="ab166-240">Ctrl+O</span></span>                     |
 
- 
+
 <a name="see-also"></a><span data-ttu-id="ab166-241">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="ab166-241">See also</span></span>
 --------
 

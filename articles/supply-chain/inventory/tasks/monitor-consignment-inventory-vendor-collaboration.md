@@ -17,15 +17,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: c3df751e179b3741e663fb37e5e8bda955d25a83
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f071b9c2358e6720bd9c69e4ed7be6e059521113
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="e4d79-103">Tavaralähetysvaraston valvonta toimittajayhteistyön avulla</span><span class="sxs-lookup"><span data-stu-id="e4d79-103">Monitor consignment inventory using vendor collaboration</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e4d79-104">Tässä menettelyssä kuvataan, miten toimittajanyhteistyötä voi käyttää asiakkaan tavaralähetykseen asetetun tuotteen varastotasotietojen tarkasteluun.</span><span class="sxs-lookup"><span data-stu-id="e4d79-104">This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer.</span></span> <span data-ttu-id="e4d79-105">Voit seurata varaston kulutusta, kun varaston omistajuuden siirtyy asiakkaalle.</span><span class="sxs-lookup"><span data-stu-id="e4d79-105">You can also monitor the consumption of the stock when the customer takes ownership of the inventory.</span></span> <span data-ttu-id="e4d79-106">Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="e4d79-106">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="e4d79-107">Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="e4d79-107">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 

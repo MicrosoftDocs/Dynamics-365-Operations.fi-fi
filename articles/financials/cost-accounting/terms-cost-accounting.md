@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3c493ab60952e60e6816ebdc3decb1ebe670806f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-accounting-terminology"></a><span data-ttu-id="73102-103">Kustannuslaskennan sanasto</span><span class="sxs-lookup"><span data-stu-id="73102-103">Cost accounting terminology</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="73102-104">Tässä aiheessa määritetään kustannuslaskennassa käytettyjä keskeisiä termejä.</span><span class="sxs-lookup"><span data-stu-id="73102-104">This topic defines the key terms that are used in Cost accounting.</span></span>
 
@@ -150,14 +149,14 @@ ms.lasthandoff: 03/26/2018
 |  + |  <span data-ttu-id="73102-241">Lisäys</span><span class="sxs-lookup"><span data-stu-id="73102-241">Addition</span></span> |
 |  <span data-ttu-id="73102-242">–</span><span class="sxs-lookup"><span data-stu-id="73102-242">–</span></span> |  <span data-ttu-id="73102-243">Vähennyslasku</span><span class="sxs-lookup"><span data-stu-id="73102-243">Subtraction</span></span> |
 | *  | <span data-ttu-id="73102-244">Kertolasku</span><span class="sxs-lookup"><span data-stu-id="73102-244">Multiplication</span></span>  |
-    
+
 <span data-ttu-id="73102-245">Perinteisiä JOS-lausekkeita ei tueta.</span><span class="sxs-lookup"><span data-stu-id="73102-245">Traditional IF statements are not supported.</span></span> <span data-ttu-id="73102-246">Voit kuitenkin lausekkeita ja tarkistaa niiden totuusarvon.</span><span class="sxs-lookup"><span data-stu-id="73102-246">However, you can create statements and validate whether they are true.</span></span>
 
 |  <span data-ttu-id="73102-247">**Tiliotteen oikeellisuustarkistus**</span><span class="sxs-lookup"><span data-stu-id="73102-247">**Statement  Validation**</span></span> | <span data-ttu-id="73102-248">**Laskutoimitus**</span><span class="sxs-lookup"><span data-stu-id="73102-248">**Result**</span></span>  |
 |---|---|
 |  <span data-ttu-id="73102-249">a > b</span><span class="sxs-lookup"><span data-stu-id="73102-249">a > b</span></span>| <span data-ttu-id="73102-250">Tosi</span><span class="sxs-lookup"><span data-stu-id="73102-250">True</span></span>  |
 |  <span data-ttu-id="73102-251">a > b</span><span class="sxs-lookup"><span data-stu-id="73102-251">a > b</span></span> |  <span data-ttu-id="73102-252">Epätosi</span><span class="sxs-lookup"><span data-stu-id="73102-252">False</span></span> |
-    
+
 <span data-ttu-id="73102-253">**Yleiskustannus**</span><span class="sxs-lookup"><span data-stu-id="73102-253">**Overhead cost**</span></span>
 
 <span data-ttu-id="73102-254">Yleiskustannuksilla tarkoitetaan liiketoiminnan juoksevia toimintakustannuksia.</span><span class="sxs-lookup"><span data-stu-id="73102-254">Overhead costs refer to the ongoing expenses of operating a business.</span></span> <span data-ttu-id="73102-255">Ne ovat kustannuksia, joita ei voi yhdistää suoraan yrityksen liiketoimintoihin.</span><span class="sxs-lookup"><span data-stu-id="73102-255">They are the costs that can’t be linked directly to specific business activities.</span></span> <span data-ttu-id="73102-256">Seuraavassa on joitakin esimerkkejä yleiskustannuksista:</span><span class="sxs-lookup"><span data-stu-id="73102-256">Here are some examples of overhead costs:</span></span>

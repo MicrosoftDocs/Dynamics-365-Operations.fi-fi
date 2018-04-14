@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1e08d9fd3388561563e6fb982416186a652b4ce2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fde6c2b721fc1fa3f224ecb0c9669b1b861633f1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="monitor-a-master-planning-run"></a><span data-ttu-id="9961a-103">Pääsuunnitteluajon valvonta</span><span class="sxs-lookup"><span data-stu-id="9961a-103">Monitor a master planning run</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9961a-104">Tuotannon suunnittelija haluaa nähdä, onko pääsuunnitteluajo käynnissä.</span><span class="sxs-lookup"><span data-stu-id="9961a-104">The production planner wants to see if a master planning run is in progress.</span></span> <span data-ttu-id="9961a-105">Käytä menettelyn täytössä USMF-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="9961a-105">Use the demo data company USMF to complete this procedure.</span></span>
 

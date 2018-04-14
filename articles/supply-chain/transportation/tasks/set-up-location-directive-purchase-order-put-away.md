@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
-ms.openlocfilehash: 98ce3ad38dddda33be5466490fcd39d81251679c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 115dfc163dce580244c2b2b6975e49ea3b69f1ef
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a><span data-ttu-id="7f0d1-103">Määritä sijaintidirektiivi ostotilauksen poispanolle</span><span class="sxs-lookup"><span data-stu-id="7f0d1-103">Set up a location directive for purchase order put-away</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7f0d1-104">Tässä menettelyssä näytetään, miten yksinkertainen sijaintidirektiivi määritetään.</span><span class="sxs-lookup"><span data-stu-id="7f0d1-104">This procedure shows you how to set up a simple location directive.</span></span> <span data-ttu-id="7f0d1-105">Näytetyssä esimerkissä luodaan sijaintidirektiivi, jolla määrätään, mihin ostotilaukseen vastaanotetut nimikkeet määritetään.</span><span class="sxs-lookup"><span data-stu-id="7f0d1-105">The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order.</span></span> <span data-ttu-id="7f0d1-106">Voit toistaa tämän tehtäväopastuksen mainituilla tiedoilla käyttämällä USMF-esittely-yrityksen tietoja.</span><span class="sxs-lookup"><span data-stu-id="7f0d1-106">You can play this task guide with the data mentioned using demo data company USMF.</span></span> <span data-ttu-id="7f0d1-107">Edellytykset: Sinun on luotava käsittelykoodi.</span><span class="sxs-lookup"><span data-stu-id="7f0d1-107">Pre-conditions: You need to create a disposition code.</span></span> <span data-ttu-id="7f0d1-108">Tässä menettelyssä käytetään Relabel-käsittelykoodia.</span><span class="sxs-lookup"><span data-stu-id="7f0d1-108">In this procedure we use a disposition code called Relabel.</span></span> <span data-ttu-id="7f0d1-109">Jos olet luomassa sijaintidirektiivin omissa tiedoissasi, varastonhallinnan lisäasetusten on oltava määritettynä varastolle ja nimikkeille.</span><span class="sxs-lookup"><span data-stu-id="7f0d1-109">If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items.</span></span>  <span data-ttu-id="7f0d1-110">Tämä menettely on tarkoitettu varastopäällikölle.</span><span class="sxs-lookup"><span data-stu-id="7f0d1-110">This procedure is intended for the warehouse manager.</span></span>
 

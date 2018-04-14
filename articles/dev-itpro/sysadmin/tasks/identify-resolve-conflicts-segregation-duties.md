@@ -16,15 +16,15 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c3a366ea4b558ba4e4af7336992dbb091b0b1414
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90deb42e8443d6d1ee7edbdfcedf4513c28a3bf1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a><span data-ttu-id="dc7c9-103">Tunnista ja ratkaise tehtävien eriyttämisen ristiriidat</span><span class="sxs-lookup"><span data-stu-id="dc7c9-103">Identify and resolve conflicts in segregation of duties</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="dc7c9-104">Voit määrittää sääntöjä erottamaan tehtävät, joilla on oltava eri käyttäjät.</span><span class="sxs-lookup"><span data-stu-id="dc7c9-104">You can set up rules to separate tasks that must be performed by different users.</span></span> <span data-ttu-id="dc7c9-105">Tätä kutsutaan tehtävien eriyttämiseksi.</span><span class="sxs-lookup"><span data-stu-id="dc7c9-105">This concept is named segregation of duties.</span></span> <span data-ttu-id="dc7c9-106">Kun käyttäjän käyttöoikeusroolin tai roolimääritysten kuvaus rikkoo sääntöjä, kirjataan ristiriita.</span><span class="sxs-lookup"><span data-stu-id="dc7c9-106">When the definition of a security role or the role assignments of a user violate the rules, the conflict is logged.</span></span> <span data-ttu-id="dc7c9-107">Järjestelmänvalvojan on ratkaistava kaikki ristiriidat.</span><span class="sxs-lookup"><span data-stu-id="dc7c9-107">All conflicts must be resolved by the administrator.</span></span> <span data-ttu-id="dc7c9-108">Ristiriidat tunnistetaan ja ratkaistaan seuraavalla menettelyllä.</span><span class="sxs-lookup"><span data-stu-id="dc7c9-108">Complete the following procedure to identify and resolve conflicts.</span></span> <span data-ttu-id="dc7c9-109">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="dc7c9-109">The demo data company used to create this procedure is USMF.</span></span>
 

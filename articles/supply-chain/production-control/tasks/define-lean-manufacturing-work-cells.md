@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f060f084baab055a51e390f488ca2553bd997b92
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 953520ec7525d85baee6baf0b70930e52120d6c0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-lean-manufacturing-work-cells"></a><span data-ttu-id="7a1e5-103">Määritä lean-valmistuksen työsolut</span><span class="sxs-lookup"><span data-stu-id="7a1e5-103">Define lean manufacturing work cells</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7a1e5-104">Työsolun on erityinen resurssiryhmä, jota voidaan käyttää Lean-valmistuksen prosessitehtävissä.</span><span class="sxs-lookup"><span data-stu-id="7a1e5-104">A work cell is a specific form of resource groups that can be used in lean manufacturing process activities.</span></span> <span data-ttu-id="7a1e5-105">Työsoluilla on syöttö- ja tuotossijainnit sekä tuotantovirtamalliin perustuva kapasiteettimääritys.</span><span class="sxs-lookup"><span data-stu-id="7a1e5-105">Work cells have input and output locations and a capacity definition based on a production flow model.</span></span> <span data-ttu-id="7a1e5-106">Lisätietoja Lean-valmistuksen työsolujen ja kapasiteettilaskelmien peruskäsitteistä on Lean-valmistusta käsittelevissä teknisissä raporteissa.</span><span class="sxs-lookup"><span data-stu-id="7a1e5-106">To learn more about the basic concepts of lean manufacturing work cells and capacity calculations, see the white papers on Lean manufacturing.</span></span> <span data-ttu-id="7a1e5-107">Tämän menettelyn luonnissa käytettiin USMF-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="7a1e5-107">The demo data company used to create this procedure is USMF</span></span>
 

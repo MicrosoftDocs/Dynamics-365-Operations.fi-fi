@@ -18,17 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 33cd67bda4d4b868b00cb1c0a062de03d3aa6273
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: caa07418cb834c7f004c4fb95d5ea1c0e3a28f56
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="new-task-guides-february-2016"></a><span data-ttu-id="46ca2-104">Uudet tehtäväoppaat (helmikuu 2016)</span><span class="sxs-lookup"><span data-stu-id="46ca2-104">New task guides (February 2016)</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="46ca2-105">Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM -kirjastoissa helmikuuhun 2016 mennessä.</span><span class="sxs-lookup"><span data-stu-id="46ca2-105">This topic lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.</span></span>  <span data-ttu-id="46ca2-106">Julkaistut kirjastot sisältävät (helmikuu 2016) Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston sekä (helmikuu 2016) aloitusoppaan.</span><span class="sxs-lookup"><span data-stu-id="46ca2-106">The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics AX and (February 2016) Getting started.</span></span>
 
@@ -50,8 +49,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-124">Ostoreskontran laskujen täsmäytyksen vahvistamisen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-124">Set up Accounts payable invoice matching validation</span></span>       | <span data-ttu-id="46ca2-125">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-125">Global</span></span>             |
 | <span data-ttu-id="46ca2-126">Määritä toimittajan laskutuskäytännöt</span><span class="sxs-lookup"><span data-stu-id="46ca2-126">Set up vendor invoice policies</span></span>                            | <span data-ttu-id="46ca2-127">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-127">Global</span></span>             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a><span data-ttu-id="46ca2-128">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="46ca2-128">Accounts receivable</span></span>
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-153">Perimistietojen tarkistaminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-153">Review collections information</span></span>                              | <span data-ttu-id="46ca2-154">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-154">Global</span></span>             |
 | <span data-ttu-id="46ca2-155">Määritä ja luo myyntireskontran erääntymistiedot</span><span class="sxs-lookup"><span data-stu-id="46ca2-155">Set up and generate accounts receivable aging information</span></span>   | <span data-ttu-id="46ca2-156">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-156">Global</span></span>             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a><span data-ttu-id="46ca2-157">Maksuliikenteen hallinta</span><span class="sxs-lookup"><span data-stu-id="46ca2-157">Cash and bank management</span></span>
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-196">Sovi asiakkaalta jälkeen päin päivitetty lasku</span><span class="sxs-lookup"><span data-stu-id="46ca2-196">Settle a postdated check from a customer</span></span>                             | <span data-ttu-id="46ca2-197">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-197">Global</span></span>             |
 | <span data-ttu-id="46ca2-198">Toimittajan maksun yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="46ca2-198">Vendor payment overview</span></span>                                              | <span data-ttu-id="46ca2-199">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-199">Global</span></span>             |
 
- 
 
+ 
 ### <a name="compliance"></a><span data-ttu-id="46ca2-200">Yhteensopivuus</span><span class="sxs-lookup"><span data-stu-id="46ca2-200">Compliance</span></span>
 
 |                                            |                    |
@@ -108,8 +107,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-201">**BPM-rivi**</span><span class="sxs-lookup"><span data-stu-id="46ca2-201">**BPM Line**</span></span>                               | <span data-ttu-id="46ca2-202">**Maa/alue**</span><span class="sxs-lookup"><span data-stu-id="46ca2-202">**Country/Region**</span></span> |
 | <span data-ttu-id="46ca2-203">Määritä tarkistuskäytännöt asiakirjoille</span><span class="sxs-lookup"><span data-stu-id="46ca2-203">Define audit policies for source documents</span></span> | <span data-ttu-id="46ca2-204">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-204">Global</span></span>             |
 
- 
 
+ 
 ### <a name="cost-management"></a><span data-ttu-id="46ca2-205">Kustannushintojen hallinta</span><span class="sxs-lookup"><span data-stu-id="46ca2-205">Cost management</span></span>
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-214">Näytä tuotantotilauksen nykyinen KET-tila</span><span class="sxs-lookup"><span data-stu-id="46ca2-214">View current WIP status on a production order</span></span>                       | <span data-ttu-id="46ca2-215">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-215">Global</span></span>             |
 | <span data-ttu-id="46ca2-216">Näytä varastoraportti ja KPI kustannusobjekteittain:</span><span class="sxs-lookup"><span data-stu-id="46ca2-216">View inventory statement and KPI by cost object</span></span>                     | <span data-ttu-id="46ca2-217">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-217">Global</span></span>             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a><span data-ttu-id="46ca2-218">Maa/alue-toiminto</span><span class="sxs-lookup"><span data-stu-id="46ca2-218">Country/Region functionality</span></span>
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-485">GB-00009 Hyvityslaskun luominen tilityksen alennuksella</span><span class="sxs-lookup"><span data-stu-id="46ca2-485">GB-00009 Create a credit note on the settlement discount</span></span>                                               | <span data-ttu-id="46ca2-486">Yhdistynyt kuningaskunta</span><span class="sxs-lookup"><span data-stu-id="46ca2-486">United Kingdom</span></span>                  |
 | <span data-ttu-id="46ca2-487">GB-00009 Nopean maksun hyvityslaskun parametrien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-487">GB-00009 Setup parameters for credit note on prompt payment discount</span></span>                                   | <span data-ttu-id="46ca2-488">Yhdistynyt kuningaskunta</span><span class="sxs-lookup"><span data-stu-id="46ca2-488">United Kingdom</span></span>                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a><span data-ttu-id="46ca2-489">Vision ja strategian kehittäminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-489">Develop Vision and Strategy</span></span>
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-498">Tee kysymys edellisen kysymyksen vastauksen perusteella (ehdolliset kysymykset)</span><span class="sxs-lookup"><span data-stu-id="46ca2-498">Make a question dependent on the answer of the previous question (Conditional questions)</span></span> | <span data-ttu-id="46ca2-499">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-499">Global</span></span>             |
 | <span data-ttu-id="46ca2-500">Pisteytä kyselylomake prosenttiosuuden perusteella</span><span class="sxs-lookup"><span data-stu-id="46ca2-500">Score a questionnaire based on Percent</span></span>                                                   | <span data-ttu-id="46ca2-501">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-501">Global</span></span>             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a><span data-ttu-id="46ca2-502">Sähköinen raportointi</span><span class="sxs-lookup"><span data-stu-id="46ca2-502">Electronic reporting</span></span>
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-511">ER Yhdistä tietomalli valittuihin tietolähteisiin</span><span class="sxs-lookup"><span data-stu-id="46ca2-511">ER Map data model to selected data sources</span></span>      | <span data-ttu-id="46ca2-512">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-512">Global</span></span>             |
 | <span data-ttu-id="46ca2-513">ER Valitse palveluntarjoaja</span><span class="sxs-lookup"><span data-stu-id="46ca2-513">ER Select service provider</span></span>                      | <span data-ttu-id="46ca2-514">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-514">Global</span></span>             |
 
- 
 
+ 
 ### <a name="expense-management"></a><span data-ttu-id="46ca2-515">Kulujenhallinta</span><span class="sxs-lookup"><span data-stu-id="46ca2-515">Expense management</span></span>
 
 |                              |                    |
@@ -298,8 +297,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-516">**BPM-rivi**</span><span class="sxs-lookup"><span data-stu-id="46ca2-516">**BPM Line**</span></span>                 | <span data-ttu-id="46ca2-517">**Maa/alue**</span><span class="sxs-lookup"><span data-stu-id="46ca2-517">**Country/Region**</span></span> |
 | <span data-ttu-id="46ca2-518">Konfiguroi kulujen hallinta</span><span class="sxs-lookup"><span data-stu-id="46ca2-518">Configure expense management</span></span> | <span data-ttu-id="46ca2-519">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-519">Global</span></span>             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a><span data-ttu-id="46ca2-520">Käyttöomaisuudet</span><span class="sxs-lookup"><span data-stu-id="46ca2-520">Fixed assets</span></span>
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-549">Jaa käyttöomaisuus</span><span class="sxs-lookup"><span data-stu-id="46ca2-549">Split a fixed asset</span></span>                                       | <span data-ttu-id="46ca2-550">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-550">Global</span></span>             |
 | <span data-ttu-id="46ca2-551">Siirrä käyttöomaisuutta</span><span class="sxs-lookup"><span data-stu-id="46ca2-551">Transfer a fixed asset</span></span>                                    | <span data-ttu-id="46ca2-552">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-552">Global</span></span>             |
 
- 
 
+ 
 ### <a name="general-ledger"></a><span data-ttu-id="46ca2-553">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="46ca2-553">General ledger</span></span>
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-602">Näytä tapahtumat tai kirjauskansiomerkinnät</span><span class="sxs-lookup"><span data-stu-id="46ca2-602">View journal entries or transactions</span></span>                              | <span data-ttu-id="46ca2-603">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-603">Global</span></span>             |
 | <span data-ttu-id="46ca2-604">Näytä konsernin sisäinen tosite kirjauskansiosta</span><span class="sxs-lookup"><span data-stu-id="46ca2-604">View related intercompany voucher from journal</span></span>                    | <span data-ttu-id="46ca2-605">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-605">Global</span></span>             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a><span data-ttu-id="46ca2-606">Henkisen pääoman hallinta</span><span class="sxs-lookup"><span data-stu-id="46ca2-606">Human capital management</span></span>
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-677">Etukelpoisuuskäytäntöjen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-677">Setting benefit eligibility policies</span></span>                             | <span data-ttu-id="46ca2-678">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-678">Global</span></span>             |
 | <span data-ttu-id="46ca2-679">i9-asiakirjatyyppien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-679">Setting up i9 document types</span></span>                                     | <span data-ttu-id="46ca2-680">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-680">Global</span></span>             |
 
- 
 
+ 
 ### <a name="inventory-management"></a><span data-ttu-id="46ca2-681">Varastonhallinta</span><span class="sxs-lookup"><span data-stu-id="46ca2-681">Inventory management</span></span>
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-712">Nimikkeen tai raaka-aineen jäljittäminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-712">Trace an item or raw material</span></span>                                                     | <span data-ttu-id="46ca2-713">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-713">Global</span></span>             |
 | <span data-ttu-id="46ca2-714">Fyysisen varaston siirtäminen varastossa</span><span class="sxs-lookup"><span data-stu-id="46ca2-714">Transfer physical inventory within the warehouse</span></span>                                  | <span data-ttu-id="46ca2-715">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-715">Global</span></span>             |
 
- 
 
+ 
 ### <a name="manufacturing"></a><span data-ttu-id="46ca2-716">Valmistus</span><span class="sxs-lookup"><span data-stu-id="46ca2-716">Manufacturing</span></span>
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-803">Materiaalin siirtäminen kanban-töiden yhteydessä</span><span class="sxs-lookup"><span data-stu-id="46ca2-803">Transfer material with Kanban jobs</span></span>                            | <span data-ttu-id="46ca2-804">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-804">Global</span></span>             |
 | <span data-ttu-id="46ca2-805">Vahvista tuotantovirta ja versiot</span><span class="sxs-lookup"><span data-stu-id="46ca2-805">Validate production flow and version</span></span>                          | <span data-ttu-id="46ca2-806">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-806">Global</span></span>             |
 
- 
 
+ 
 ### <a name="master-planning"></a><span data-ttu-id="46ca2-807">Pääsuunnittelu</span><span class="sxs-lookup"><span data-stu-id="46ca2-807">Master planning</span></span>
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-816">Kriittisten materiaalien ja toimittajien kapasiteetin tunnistaminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-816">Identify critical materials and supplier capacity</span></span> | <span data-ttu-id="46ca2-817">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-817">Global</span></span>             |
 | <span data-ttu-id="46ca2-818">Muuta ennustetta manuaalisesti</span><span class="sxs-lookup"><span data-stu-id="46ca2-818">Modify a demand forecast manually</span></span>                 | <span data-ttu-id="46ca2-819">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-819">Global</span></span>             |
 
- 
 
+ 
 ### <a name="organization-administration"></a><span data-ttu-id="46ca2-820">Organisaation hallinto</span><span class="sxs-lookup"><span data-stu-id="46ca2-820">Organization administration</span></span>
 
 |                                           |                    |
@@ -501,8 +500,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-831">Sähköisten allekirjoitusten määrittäminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-831">Set up electronic signatures</span></span>              | <span data-ttu-id="46ca2-832">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-832">Global</span></span>             |
 | <span data-ttu-id="46ca2-833">Numerosarjojen määrittäminen ohjatulla toiminnolla</span><span class="sxs-lookup"><span data-stu-id="46ca2-833">Set up number sequences by using a wizard</span></span> | <span data-ttu-id="46ca2-834">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-834">Global</span></span>             |
 
- 
 
+ 
 ### <a name="planning"></a><span data-ttu-id="46ca2-835">Suunnittelu</span><span class="sxs-lookup"><span data-stu-id="46ca2-835">Planning</span></span>
 
 |                        |                    |
@@ -510,8 +509,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-836">**BPM-rivi**</span><span class="sxs-lookup"><span data-stu-id="46ca2-836">**BPM Line**</span></span>           | <span data-ttu-id="46ca2-837">**Maa/alue**</span><span class="sxs-lookup"><span data-stu-id="46ca2-837">**Country/Region**</span></span> |
 | <span data-ttu-id="46ca2-838">Saatavuuden selvittäminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-838">Determine availability</span></span> | <span data-ttu-id="46ca2-839">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-839">Global</span></span>             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a><span data-ttu-id="46ca2-840">Hankinta</span><span class="sxs-lookup"><span data-stu-id="46ca2-840">Procurement and sourcing</span></span>
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-853">Toimittajien etsiminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-853">Search for vendors</span></span>                                               | <span data-ttu-id="46ca2-854">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-854">Global</span></span>             |
 | <span data-ttu-id="46ca2-855">Määritä hankintaluokkahierarkia</span><span class="sxs-lookup"><span data-stu-id="46ca2-855">Set up a procurement category hierarchy</span></span>                          | <span data-ttu-id="46ca2-856">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-856">Global</span></span>             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a><span data-ttu-id="46ca2-857">Tuotteen tiedot ja määritykset</span><span class="sxs-lookup"><span data-stu-id="46ca2-857">Product information and configuration</span></span>
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-892">Julkaise dimensiopohjainen päätuote (..\financial-dimensions\dimension-based)</span><span class="sxs-lookup"><span data-stu-id="46ca2-892">Release a ..\financial-dimensions\dimension-based product master</span></span>              | <span data-ttu-id="46ca2-893">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-893">Global</span></span>             |
 | <span data-ttu-id="46ca2-894">Tietojen siirtäminen tuotemalleja varten</span><span class="sxs-lookup"><span data-stu-id="46ca2-894">Transfer data for product models</span></span>                      | <span data-ttu-id="46ca2-895">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-895">Global</span></span>             |
 
- 
 
+ 
 ### <a name="public-sector"></a><span data-ttu-id="46ca2-896">Julkinen sektori</span><span class="sxs-lookup"><span data-stu-id="46ca2-896">Public sector</span></span>
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-931">Julkisen sektorin rahoituksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-931">Set up a fund for Public sector</span></span>                                                         | <span data-ttu-id="46ca2-932">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-932">Global</span></span>             |
 | <span data-ttu-id="46ca2-933">Määritä ostosopimusluokitukset julkiselle sektorille</span><span class="sxs-lookup"><span data-stu-id="46ca2-933">Set up purchase agreement classifications for Public Sector</span></span>                             | <span data-ttu-id="46ca2-934">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-934">Global</span></span>             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a><span data-ttu-id="46ca2-935">Vähittäismyynti ja kauppa</span><span class="sxs-lookup"><span data-stu-id="46ca2-935">Retail and commerce</span></span>
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-1002">Vähittäismyynnin hinnanoikaisujen tekeminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1002">Retail price adjustments</span></span>                                                                  | <span data-ttu-id="46ca2-1003">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1003">Global</span></span>             |
 | <span data-ttu-id="46ca2-1004">Vähittäismyynnin laskelmien tallennuskonfiguraatiot</span><span class="sxs-lookup"><span data-stu-id="46ca2-1004">Store configurations for Retail statements</span></span>                                                | <span data-ttu-id="46ca2-1005">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1005">Global</span></span>             |
 
- 
 
+ 
 ### <a name="sales"></a><span data-ttu-id="46ca2-1006">Myynti</span><span class="sxs-lookup"><span data-stu-id="46ca2-1006">Sales</span></span>
 
 |                                            |                    |
@@ -642,8 +641,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-1035">Lähetä tilaukset suoratoimituksina</span><span class="sxs-lookup"><span data-stu-id="46ca2-1035">Ship orders as direct deliveries</span></span>           | <span data-ttu-id="46ca2-1036">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1036">Global</span></span>             |
 | <span data-ttu-id="46ca2-1037">Lähetä myyntitilaukset ilman varastointia</span><span class="sxs-lookup"><span data-stu-id="46ca2-1037">Ship sales orders without warehousing</span></span>      | <span data-ttu-id="46ca2-1038">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1038">Global</span></span>             |
 
- 
 
+ 
 ### <a name="sales-tax"></a><span data-ttu-id="46ca2-1039">Arvonlisävero</span><span class="sxs-lookup"><span data-stu-id="46ca2-1039">Sales tax</span></span>
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-1060">Määritä ennakonpidätys</span><span class="sxs-lookup"><span data-stu-id="46ca2-1060">Set up withholding tax</span></span>                             | <span data-ttu-id="46ca2-1061">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1061">Global</span></span>             |
 | <span data-ttu-id="46ca2-1062">Näytä kirjatut arvonlisäverotapahtumat</span><span class="sxs-lookup"><span data-stu-id="46ca2-1062">View posted sales tax transactions</span></span>                 | <span data-ttu-id="46ca2-1063">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1063">Global</span></span>             |
 
- 
 
+ 
 ### <a name="security"></a><span data-ttu-id="46ca2-1064">Suojaus</span><span class="sxs-lookup"><span data-stu-id="46ca2-1064">Security</span></span>
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-1069">Tunnista ja ratkaise tehtävien eriyttämisen ristiriidat</span><span class="sxs-lookup"><span data-stu-id="46ca2-1069">Identify and resolve conflicts in segregation of duties</span></span> | <span data-ttu-id="46ca2-1070">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1070">Global</span></span>             |
 | <span data-ttu-id="46ca2-1071">Määritä tehtävien eriyttäminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1071">Set up segregation of duties</span></span>                            | <span data-ttu-id="46ca2-1072">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1072">Global</span></span>             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a><span data-ttu-id="46ca2-1073">Varasto ja kuljetus</span><span class="sxs-lookup"><span data-stu-id="46ca2-1073">Warehouse and transportation</span></span>
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="46ca2-1106">Lähetyksen rahdinkuljettajien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1106">Set up shipping carriers</span></span>                                                          | <span data-ttu-id="46ca2-1107">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1107">Global</span></span>             |
 | <span data-ttu-id="46ca2-1108">Käytä kuormasuunnittelun työtilaa kuormien ja lähetysten suunnitteluun</span><span class="sxs-lookup"><span data-stu-id="46ca2-1108">Use the Load Planning Workbench to plan loads and shipments</span></span>                       | <span data-ttu-id="46ca2-1109">Yleinen</span><span class="sxs-lookup"><span data-stu-id="46ca2-1109">Global</span></span>             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a><span data-ttu-id="46ca2-1110">Aloituskirjaston tehtäväoppaat (helmikuu 2016)</span><span class="sxs-lookup"><span data-stu-id="46ca2-1110">Task guides in the (February 2016) Getting started library</span></span>
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | <span data-ttu-id="46ca2-1111">**BPM-rivi**</span><span class="sxs-lookup"><span data-stu-id="46ca2-1111">**BPM Line**</span></span>                                       | <span data-ttu-id="46ca2-1112">**Maa/alue**</span><span class="sxs-lookup"><span data-stu-id="46ca2-1112">**Country/Region**</span></span> |

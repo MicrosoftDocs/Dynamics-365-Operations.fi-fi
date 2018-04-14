@@ -20,17 +20,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: e7c815cc5b660b505cb06560efc3e7501645c350
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec804559d6514b4443bd295ec9d9b8b192f45ec0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-rfm-analysis"></a><span data-ttu-id="5d5a6-103">Määritä RFM-analyysi</span><span class="sxs-lookup"><span data-stu-id="5d5a6-103">Set up RFM analysis</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="5d5a6-104">Tässä ohjeaiheessa kerrotaan, kuinka asiakkaidesi Recency, Frequency, and Monetary (RFM) -analyysi määritetään.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-104">This topic explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers.</span></span>
 
@@ -60,25 +59,25 @@ ms.lasthandoff: 01/17/2018
     - <span data-ttu-id="5d5a6-126">Jos kussakin RFM-pistemäärän osassa on oltava sama määrä asiakkaita, valitse **Tasainen jako** -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-126">If each section of the RFM score must contain an equal count of customers, select the **Even distribution** check box.</span></span> 
     - <span data-ttu-id="5d5a6-127">Yhdistä kolme pistemäärää valitsemalla **Lisää pisteet** -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-127">Select the **Add scores** check box to aggregate the three scores.</span></span> <span data-ttu-id="5d5a6-128">Tällä tavoin asiakkaan RFM-pistemääräksi tulisi esimerkiksi 13 eikä 535.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-128">For example, this would give a customer an RFM score of 13 instead of 535.</span></span> 
     - <span data-ttu-id="5d5a6-129">Valitse **Tallenna historia** -valintaruutu, jos haluat järjestelmän tallentavan asiakkaiden tilastotiedot siten, että tiedoilla voidaan laskea RFM-pistemäärä.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-129">Select the **Save history** check box to require the system to save the statistical data for customers so that the data can be used to calculate the RFM score.</span></span>
-  
+
 5.  <span data-ttu-id="5d5a6-130">Toimi **Recency**-pikavälilehdellä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="5d5a6-130">On the **Recency** FastTab, do the following:</span></span> 
     - <span data-ttu-id="5d5a6-131">Anna **Jaot**-kentässä niiden osastojen tai ryhmien määrä, joilla asiakkaiden recency-pistemäärä lasketaan.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-131">In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the recency score for customers.</span></span> <span data-ttu-id="5d5a6-132">Esimerkiksi jos sinulla on 100 asiakasta, jako 5:llä tarkoittaa, että jokaiselle tulokselle on 20 asiakasta.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-132">For example, if you have 100 customers, a division of 5 means that there are 20 customers for each score.</span></span> <span data-ttu-id="5d5a6-133">20:n viimeksi ostoja tehneen asiakkaan recency-pistemäärä on 5.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-133">The 20 customers who have made purchases most recently have a recency score of 5.</span></span> <span data-ttu-id="5d5a6-134">Seuraavan 20 asiakkaan recency-pistemäärä on 4 ja niin edelleen.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-134">The next 20 customers have a recency score of 4, and so on.</span></span> <span data-ttu-id="5d5a6-135">Jos sinulla on 50 asiakkaasta, 10 asiakkaan recency-tulos on 5-10, 10 asiakkaan recency-tulos on 4 ja niin edelleen.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-135">If you have 50 customers, 10 customers have a recency score of 5, 10 have a recency score of 4, and so on.</span></span> 
     - <span data-ttu-id="5d5a6-136">Valitse **Prioriteetti**-kentässä, miten suuri painoarvo annetaan recency-parametrille suhteessa muihin, kun asiakkaalle lasketaan RFM-pisteet.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-136">In the **Priority** field, select how much weight to give the recency parameter in relation to the other parameters when the RFM score is calculated for a customer.</span></span> <span data-ttu-id="5d5a6-137">Voit esimerkiksi antaa enemmän arvoa viimeaikaisuusarvolle kuin raha-arvolle.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-137">For example, you might place more value on the recency score than the monetary score.</span></span> 
     - <span data-ttu-id="5d5a6-138">Anna **Kerroin**-kenttään arvo, jolla recency-pistemäärä kerrotaan.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-138">In the **Multiplier** field, enter the value by which to multiply the recency score.</span></span> <span data-ttu-id="5d5a6-139">Jos arvoa ei syötetä, pisteitä ei kerrota.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-139">If you do not enter a value, the score will not be multiplied.</span></span> 
     - <span data-ttu-id="5d5a6-140">Valitse **Kausi**-kentässä ajanjakso, jolta recency-tulos lasketaan.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-140">In the **Period** field, select the time period by which the recency score is calculated.</span></span> <span data-ttu-id="5d5a6-141">Esimerkiksi viikoittain tai kuukausittain.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-141">For example, by week or by month.</span></span>
-   
+
 6.  <span data-ttu-id="5d5a6-142">Toimi **Frequency**-pikavälilehdellä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="5d5a6-142">On the **Frequency** FastTab, do the following:</span></span> 
     - <span data-ttu-id="5d5a6-143">Anna **Jaot**-kentässä niiden osastojen tai ryhmien määrä, joilla asiakkaiden frequency-pistemäärä lasketaan.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-143">In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the frequency score for customers.</span></span> 
     - <span data-ttu-id="5d5a6-144">Valitse **Prioriteetti**-kentässä, miten suuri painoarvo annetaan frequency-parametrille suhteessa muihin, kun asiakkaalle lasketaan RFM-pisteet.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-144">In the **Priority** field, select how much weight to give the frequency parameter in relation to the others when the RFM score is calculated for a customer.</span></span> 
     - <span data-ttu-id="5d5a6-145">Anna **Kerroin**-kenttään arvo, jolla frequency-pistemäärä kerrotaan.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-145">In the **Multiplier** field, enter the value by which to multiply the frequency score.</span></span> <span data-ttu-id="5d5a6-146">Jos arvoa ei syötetä, pisteitä ei kerrota.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-146">If you do not enter a value, the score will not be multiplied.</span></span>
-   
+
 7.  <span data-ttu-id="5d5a6-147">Toimi **Monetary**-pikavälilehdellä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="5d5a6-147">On the **Monetary** FastTab, do the following:</span></span> 
     - <span data-ttu-id="5d5a6-148">Anna **Jaot**-kentässä niiden osastojen tai ryhmien määrä, joilla asiakkaiden monetary-pistemäärä lasketaan.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-148">In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the monetary score for customers.</span></span> 
     - <span data-ttu-id="5d5a6-149">Valitse **Prioriteetti**-kentässä, miten suuri painoarvo annetaan monetary-parametrille suhteessa muihin, kun asiakkaalle lasketaan RFM-pisteet.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-149">In the **Priority** field, select how much weight to give the monetary parameter in relation to the others when the RFM score is calculated for a customer.</span></span> 
     - <span data-ttu-id="5d5a6-150">Anna **Kerroin**-kenttään arvo, jolla monetary-pistemäärä kerrotaan.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-150">In the **Multiplier** field, enter the value by which to multiply the monetary score.</span></span> <span data-ttu-id="5d5a6-151">Jos arvoa ei syötetä, pisteitä ei kerrota.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-151">If you do not enter a value, the score will not be multiplied.</span></span> 
     - <span data-ttu-id="5d5a6-152">Valitse **Brutto/netto**-kentässä valitse, lasketaanko monetary-pistemäärä brutto- vai nettolaskusummalla.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-152">In the **Gross/net** field, select whether the customer’s monetary score should be calculated by using the gross or net invoice amount.</span></span> 
     - <span data-ttu-id="5d5a6-153">Jos asiakkaan palautuksen summat on vähennettävä asiakkaan kokonaislaskulaskelmasta, valitse **Vähennä palautukset** -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-153">If a customer’s return amounts should be subtracted from the customer’s total invoice calculation, select the **Subtract returns** check box.</span></span> 
- 
+
 ## <a name="view-a-customers-rfm-score"></a><span data-ttu-id="5d5a6-154">Näytä asiakkaan RFM-pistemäärä</span><span class="sxs-lookup"><span data-stu-id="5d5a6-154">View a customer’s RFM score</span></span>
 <span data-ttu-id="5d5a6-155">Tämän menetelmän avulla voit tarkastella asiakkaan RFM-pistemäärää.</span><span class="sxs-lookup"><span data-stu-id="5d5a6-155">Use this procedure to view a customer’s RFM score.</span></span> 
 

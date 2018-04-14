@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 87a6fd8ad05e460b9620855da4bcb587ad3ac3ae
-ms.openlocfilehash: 2ebe639b039e58c3173e0bf3eda5ff2f0351dbeb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 81f556dca0bfa17623bb1a0f1c712bfa5a4a2a9b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-products-that-can-be-produced-or-procured"></a><span data-ttu-id="012c4-104">Tuotettavissa tai hankittavissa olevien tuotteiden määrittäminen</span><span class="sxs-lookup"><span data-stu-id="012c4-104">Set up products that can be produced or procured</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="012c4-105">Tuotteita voi hankkia eri tavoin: ne voivat olla tuotettuja ja hankittuja (ostettuja).</span><span class="sxs-lookup"><span data-stu-id="012c4-105">Products can be sourced in various ways -  they can be produced (manufactured) or procured (purchased).</span></span> <span data-ttu-id="012c4-106">Tässä artikkelissa kuvataan joitakin seikkoja, jotka on otettava huomioon määritettäessä tuotteita monitasoista hankintaa varten.</span><span class="sxs-lookup"><span data-stu-id="012c4-106">This article describes some typical points to consider when you configure products to support multi-sourcing.</span></span> 
 
