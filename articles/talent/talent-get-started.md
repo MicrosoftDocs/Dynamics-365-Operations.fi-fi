@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a8c2d097626fad905741c35ffa8c13336f8735b9
+ms.sourcegitcommit: 3662bb1a20fbdd3769b94247ac071a7cfd7e04f1
+ms.openlocfilehash: 94c07d18de06a75ad86d69d7c06a78e446f0b506
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 04/20/2018
 
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a><span data-ttu-id="bd00e-103">Microsoft Dynamics 365 for Talent-sovelluksen käytön aloittaminen</span><span class="sxs-lookup"><span data-stu-id="bd00e-103">Getting started with Microsoft Dynamics 365 for Talent</span></span>
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/13/2018
 > [!NOTE] 
 > <span data-ttu-id="bd00e-107">Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail ja Dynamics 365 for Talent.</span><span class="sxs-lookup"><span data-stu-id="bd00e-107">The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent.</span></span> <span data-ttu-id="bd00e-108">Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa.</span><span class="sxs-lookup"><span data-stu-id="bd00e-108">The same functionality may appear in all 3 products.</span></span> <span data-ttu-id="bd00e-109">Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="bd00e-109">As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="bd00e-110">Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.</span><span class="sxs-lookup"><span data-stu-id="bd00e-110">Topics that are written for one product may apply to the same functionality in a related product.</span></span>
 
-### <a name="personalizing-talent"></a><span data-ttu-id="bd00e-111">Talentin mukauttaminen</span><span class="sxs-lookup"><span data-stu-id="bd00e-111">Personalizing Talent</span></span> 
+## <a name="personalizing-talent"></a><span data-ttu-id="bd00e-111">Talentin mukauttaminen</span><span class="sxs-lookup"><span data-stu-id="bd00e-111">Personalizing Talent</span></span> 
 <span data-ttu-id="bd00e-112">Seuraavissa ohjeaiheissa näytetään, miten Dynamics 365 for Talent -sovelluksen useat toiminnot määritetään niin, että työt saadaan tehtyä helpommin ja ajoissa.</span><span class="sxs-lookup"><span data-stu-id="bd00e-112">The following topics show how to set up many features in Dynamics 365 for Talent that make it easier for you to get your work done in a timely manner.</span></span> 
 
 -   <span data-ttu-id="bd00e-113">[Käyttäjäkokemuksen mukauttaminen](../fin-and-ops/get-started/personalize-user-experience.md) - Tässä ohjeaiheessa kerrotaan, miten Talentin voi mukauttaa ja miten tuotteen osat otetaan käyttöön haluttujen asetusten mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="bd00e-113">[Personalize the user experience](../fin-and-ops/get-started/personalize-user-experience.md) - This topic explains the different ways in which you can personalize Talent and adapt parts of the product to more closely suite your preferences.</span></span>
@@ -44,7 +44,7 @@ ms.lasthandoff: 04/13/2018
 
 -   <span data-ttu-id="bd00e-117">[Pikanäppäimet](../fin-and-ops/get-started/shortcut-keys.md) - Tässä ohjeaiheessa esitellään amerikkalaiseen näppäimistöasettelun pikanäppäimet.</span><span class="sxs-lookup"><span data-stu-id="bd00e-117">[Keyboard shortcuts](../fin-and-ops/get-started/shortcut-keys.md) - This topic lists keyboard shortcuts for the United States keyboard layout.</span></span> 
 
-### <a name="accessing-information"></a><span data-ttu-id="bd00e-118">Käyttötiedot</span><span class="sxs-lookup"><span data-stu-id="bd00e-118">Accessing information</span></span>
+## <a name="accessing-information"></a><span data-ttu-id="bd00e-118">Käyttötiedot</span><span class="sxs-lookup"><span data-stu-id="bd00e-118">Accessing information</span></span>
 <span data-ttu-id="bd00e-119">Seuraavissa ohjeaiheissa kerrotaan, miten tietoja etsitään nopeasti hakujen ja haku- ja suodatusominaisuuksien avulla.</span><span class="sxs-lookup"><span data-stu-id="bd00e-119">The following topics explain how to use lookups, and the search and filtering features, to find information quickly.</span></span> 
 
 -   <span data-ttu-id="bd00e-120">[Tietojen etsiminen hakujen avulla](../fin-and-ops/get-started/use-lookups-to-find-information.md) - Tässä ohjeaiheessa näytetään, miten oikean tai halutun arvon voi etsiä nopeasti hakujen avulla.</span><span class="sxs-lookup"><span data-stu-id="bd00e-120">[Use lookups to find information](../fin-and-ops/get-started/use-lookups-to-find-information.md) - This topic shows how lookups can help you quickly find the correct or desired value.</span></span> <span data-ttu-id="bd00e-121">Tässä ohjeaiheessa kerrotaan, miten haut toimivat ja miten hakuja optimoidaan.</span><span class="sxs-lookup"><span data-stu-id="bd00e-121">The topic describes how lookups work and includes tips to help you optimize your use of them.</span></span>
