@@ -3,7 +3,7 @@ title: "Lokalisointi- ja säädösominaisuudet"
 description: "Tässä aiheessa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista toiminnoista."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 04/12/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
-ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 389efbe1853264c1503737b55dd7767fdcb966ca
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Lokalisointi- ja säädösominaisuudet
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations -ohjelmassa on toiminto, joka on käytössä [kansainvälisessä tuotesaatavuusoppaassa](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
 
@@ -53,8 +52,8 @@ Seuraavissa resursseissa on tietoja lokalisoinnin suunnitelluista ja uusista omi
 -   [Säädösten seuranta ja päivitysviestintä](regulatory-watch-communication.md)
 -   [Maa- ja aluekohtaisten sääntöhälytysten ilmoittaminen Microsoftille ja sääntöominaisuuksien tilan seuranta](submit-localization-alerts.md)
 
-### <a name="dynamics-365-roadmap"></a>Dynamics 365:n ohjeet
-[Dynamics 365:n ohjeet](https://roadmap.dynamics.com/) antavat yleiskuvan siitä, mitä olemme tekemässä. Näiden ohjeiden avulla voit selvittää, mitä on yleisesti saatavilla ja mitä on kehitteillä. Kaikki päivämäärät ja kehitteillä olevat ominaisuudet ovat alustavia, ne perustuvat tämänhetkisiin odotuksiin ja niitä voidaan muuttaa ilman erillistä ilmoitusta.
+### <a name="dynamics-365-release-notes"></a>Dynamics 365:n julkaisutiedot
+[Dynamics 365:n julkaisutiedoissa (ladattava PDF-tiedosto)](https://aka.ms/businessappsreleasenotes) kuvataan Dynamics 365 -yrityssovellusten ja sovellusympäristöjen uudet ja parannetut ominaisuudet. 
 
 ## <a name="electronic-reporting"></a>Sähköinen raportointi
 Sähköisellä raportointityökalulla (ER-työkalulla) voi määrittää sähköisten asiakirjojen muodot eri maiden ja alueiden lakisääteisten vaatimusten mukaisiksi. Sähköisen raportoinnin ansiosta näitä muotoja voi hallita koko niiden elinkaaren ajan. Lisätietoja on seuraavissa aiheissa:
@@ -79,25 +78,9 @@ Lisätietoja on aiheessa [Tehtäväoppaat](../../fin-and-ops/get-started/help-ov
 ## <a name="countryregion-specific-help-topics"></a>Maa- ja aluekohtaiset ohjeaiheet
 Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 
-### <a name="australia"></a>Australia
-
--   [Pankkitiedostomuodot](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
--   [Liiketoimintaraportti](../../financials/localizations/apac-aus-business-activity-statement.md)
--   [Arvoltaan vähäisen käyttöomaisuuden poisto](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
-
-### <a name="austria"></a>Itävalta
-
-- [Puolen vuoden poisto](../../financials/localizations/emea-aut-half-year-depreciation.md)
-- [Pakkausmateriaalimaksut](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
-- [Ostoverot](../../financials/localizations/emea-aut-purchase-duties.md)
-- [ALV-ilmoitus](../../financials/localizations/emea-aut-vat-statement-details.md)
-
-### <a name="belgium"></a>Belgia
-
--   [CODA-tiliote](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
--   [Intervat-veroilmoitus](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
--   [PRODCOM-raporttimääritykset](../../financials/localizations/emea-bel-prodcom-report.md)
--   [Täsmäytysraportit](../../financials/localizations/emea-bel-reconciliation-reports.md)
+### <a name="australiafinancialslocalizationsaustraliamd"></a>[Australia](../../financials/localizations/australia.md)
+### <a name="austriafinancialslocalizationsaustriamd"></a>[Itävalta](../../financials/localizations/austria.md)
+### <a name="belgiumfinancialslocalizationsbelgiummd"></a>[Belgia](../../financials/localizations/belgium.md)
 
 ### <a name="brazil"></a>Brasilia
 
@@ -134,22 +117,9 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 -   [Varaston päätilien kirjaus toimipaikoittain](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
 -   [Kirjanpitotilien debet- ja kredit-summien näyttäminen](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
-### <a name="the-czech-republic"></a>Tšekin tasavalta
-
--   [Hyvityslaskun käteisalennus](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
--   [Poiston pyöristys](../../financials/localizations/emea-cze-depreciation-rounding.md)
--   [Tšekin tasavallan käyttöomaisuuden luovutuksen puolivuotispoisto](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
--   [Poistojen keskeytykset](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
--   [Tšekin tasavallan käyttöomaisuuden poistomenetelmät](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
--   [Käyttöomaisuuserän esihankinnan kirjaus](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
--   [Tšekin tasavallan ALV-ilmoitus](../../financials/localizations/emea-cze-vat-statement-details.md)
--   [Arvonlisäveroilmoitus ](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
--   [Kausikirjauskansioiden jaetut kaudet](../../financials/localizations/emea-create-post-periodic-journals.md)
--   [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
--   [Raporttien ja asiakirjojen summien esitysmuodon päivittäminen](../../financials/localizations/emea-amount-printing-forms.md)
+### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[Tšekin tasavalta](../../financials/localizations/czech-republic.md)
 
 ### <a name="estonia"></a>Viro
-
 -   [Viron ALV-ilmoituksen tiedot](../../financials/localizations/emea-est-vat-statement-details.md)
 -   [Käyttöomaisuuden luovutus](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
@@ -215,8 +185,8 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 ### <a name="hungary"></a>Unkari
 
 -   [Käyttöomaisuuden poistomenetelmät](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
--   [Käyttöomaisuuden siirtäminen varastoon](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
--   [Kustannukseltaan vähäinen kiinteä omaisuus](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+-   [Käyttöomaisuuden siirto varastoon](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+-   [Kustannukseltaan vähäinen käyttöomaisuus](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 
 ### <a name="india"></a>Intia
 
@@ -280,7 +250,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 -   [Inflaatio-oikaisuilmoituksen raportti](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 -   [ISR-ilmoituksen raportti](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
 -   [Sähköiset laskut (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-   
+
 ### <a name="malaysia"></a>Malesia
 
 -   [GST-vero](../../financials/localizations/apac-mys-gst.md)
@@ -327,7 +297,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 -   [Tulosta sekit Espanjan asettelun avulla](../../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
 -   [Espanjalaiset velkakirjojen asetukset](../../financials/localizations/emea-esp-promissory-note-options.md)
 -   [Osto- ja myyntisyklit](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
--   [Erikoisviennit ja aloitustaseet](../../financials/localizations/emea-esp-opening-sheets-spain.md)
+-   [Erikoisviennit ja avaavat taseet](../../financials/localizations/emea-esp-opening-sheets-spain.md)
 -   [Laskutustilin kirjanpitotietojen käyttö](../../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
 
 ### <a name="sweden"></a>Ruotsi

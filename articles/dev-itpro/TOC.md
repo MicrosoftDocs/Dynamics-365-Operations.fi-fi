@@ -115,6 +115,7 @@
 ### Uutta
 #### [Laajennettavuuden muutokset heinäkuu 2017](extensibility/changes-july-2017.md)
 #### [Laajennettavuuden muutokset versiossa 7.3](extensibility/extensibility-changes-73.md)
+#### [Laajennettavuuden muutokset versiossa 8.0](extensibility/changes-80.md)
 ### Perusteet
 #### [Tunkeutuva mukauttaminen](extensibility/intrusive-customizations.md)
 #### [Luokan laajennukset](extensibility/class-extensions.md)
@@ -382,19 +383,20 @@
 
 ### [Tietojen integrointi Common Data Service -palvelua käyttäen](data-entities/data-integration-cds.md) 
 #### [Myyntimahdollisuudesta maksutapahtumaan -skenaarion määrittäminen](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Finance and Operationsin tuotteiden synkronointi Salesin tuotteisiin](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-##### [Salesin asiakkaiden synkronointi Finance and Operationsin asiakkaisiin](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-##### [Salesin yhteyshenkilöiden synkronointi Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Myyntitarjouksien otsikoiden ja rivien synkronointi Salesista Finance and Operationsiin](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-##### [Myyntitilauksien otsikoiden ja rivien synkronointi Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-##### [Myyntilaskujen otsikoiden ja rivien synkronointi Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Salesin asiakkaiden synkronointi suoraan Finance and Operationsin asiakkaisiin](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Myyntitilauksien otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+##### [Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Finance and Operationsiin](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ##### [Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+#### [Integroinnin määrittäminen Field Servicen kanssa](../supply-chain/sales-marketing/field-service.md)
+##### [Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin](../supply-chain/sales-marketing/field-service-product.md)
+##### [Field Servicen työtilausten synkronointi Finance and Operationsin myyntitilauksiin](../supply-chain/sales-marketing/field-service-work-order.md)
+##### [Field Servicen sopimuslaskujen synkronointi Finance and Operationsin vapaatekstilaskuihin](../supply-chain/sales-marketing/field-service-invoice.md)
 
-### [Ulkoisten verkkopalveluiden kuluttaminen](data-entities/consume-external-web-service.md)
+
+
+### [Ulkoisten verkkopalveluiden käyttö](data-entities/consume-external-web-service.md)
 
 
 # [Tietojen hallinta](data-entities/data-entities-data-packages.md)
@@ -407,7 +409,9 @@
 ### [Konfigurointitietomallit](data-entities/configuration-data-templates.md)
 ### [Tietomallit ja useat laskentataulukot](data-entities/excel-template-multiple.md)
 ### [Muutosten seuranta yksikköön](data-entities/entity-change-track.md)
+
 ### [Tietojen etsiminen vakiotietoyksiköistä](data-entities/data-entities-report.md)
+
 
 ## [Tietojen tuonti- ja vientityöt](data-entities/data-import-export-job.md)
 
@@ -427,13 +431,18 @@
 
 ## [Oman tietokannan tuonti](analytics/export-entities-to-your-own-database.md)
 
+
+## [Tietotehtävän automaatio](data-entities/data-task-automation.md)
+
 ## [GDPR-tietopyyntöihin vastaamisen resurssit](gdpr/gdpr-home-page.md)
 ### [Microsoft Dynamics 365 for Finance and Operationsin GDPR:n opas](gdpr/gdpr-auditing-sensitive-data.md)
+### [Käyttöomaisuuden luokittelut](gdpr/gdpr-asset-classification-values.md)
 ### [Henkilöhakuraportin käyttäminen](gdpr/gdpr-person-search-report.md)
 ### [Henkilöhakuraportin laajentaminen](gdpr/gdpr-extend-person-search-report.md)
 ### [Luottamuksellisten tietojen käytön hallinta](gdpr/gdpr-auditing-sensitive-data.md)
 ### [Henkilökohtaisia tietoja koskevaan pyyntöön vastaaminen Talentilla](gdpr/respond-dsr-request-talent.md)
 ### [Henkilökohtaisia tietoja koskevaan pyyntöön vastaaminen Microsoft Dynamics AX 2012:lla](gdpr/gdpr-ax2012.md)
+
 
 # [Jatkuva toimitus -aloitussivu](dev-tools/continuous-delivery-home-page.md)
 ## [Kehitys ja jatkuva toimitus – usein kysytyt kysymykset](dev-tools/continuous-delivery-faq.md)
@@ -529,7 +538,8 @@
 ### [AX 2012 -päivitys – julkistamisen valmistelu](migration-upgrade/upgrade-go-live-prep.md)
 ### [AX 2012 -päivitys – julkaisu](migration-upgrade/2012-upgrade-cutover.md)
 
-### Muutokset, jotka vaikuttavat AX 2012:n päivitykseen
+### AX 2012:stä tehtävään päivitykseen vaikuttavat muutokset
+#### [Tilikartan erotin on oltava yksilöivä](migration-upgrade/chart-accounts-delimiter-unique.md)
 #### [Yhden tositteen ja valuutan uudelleenarvostuksen päivittäminen](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Projektiresurssin ajoituksen tietomalli](migration-upgrade/data-model-changes-resource-management.md)
 #### [Työnkulun alijärjestelmän muutokset](migration-upgrade/workflow-subsystem.md)
@@ -569,6 +579,7 @@
 
 # [Järjestelmän hallinta](sysadmin/system-administration-home-page.md)
 ## [Ympäristön kuukausipäivitysten usein kysytyt kysymykset](sysadmin/faq-platform-monthly-updates.md)
+## [Virtuaalikoneet, jotka eivät salli järjestelmänvalvojan käyttöä – usein kysytyt kysymykset](sysadmin/VMs-no-admin-access.md)
 ## [Linkkien lisääminen organisaation juridisiin ehtoihin ja tietosuojatietoihin](sysadmin/legal-terms-privacy-statement.md)
 ## [Käyttöoikeuskoodien ja määritysavainten raportti](sysadmin/license-codes-configuration-keys-report.md)
 ## [Yritysten välinen tietojen jakaminen](sysadmin/cross-company-data-sharing.md)
@@ -612,6 +623,7 @@
 ## [Tehtävien suorittaminen BPM-kirjastossa](lifecycle-services/complete-tasks-bpm.md)
 ## [Tehtäväkaavioiden käyttö](lifecycle-services/using-activity-diagrams.md)
 ## [BPM-kirjaston ja Visual Studio Team Servicesin (VSTS) synkronointi](lifecycle-services/synchronize-bpm-vsts.md)
+## [Luo hyväksyntätesti käyttäen tehtäväoppaita ja BPM-määrityksiä](lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
 ## [Liiketoimintaprosessien mallintajan vuokaaviot](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Mukautettujen liiketoimintaprosessien lataaminen palvelimeen](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Valvonta ja diagnostiikka ](lifecycle-services/monitoring-diagnostics.md)
@@ -619,9 +631,11 @@
 ## [Käyttäjien sisäänkirjautumisten seuraaminen](lifecycle-services/user-logins.md)
 ## [Omaisuuskirjasto](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 – käännöspalvelun yleiskuvaus](lifecycle-services/translation-service-overview.md)
-### [Microsoft Dynamics 365 – käännöspalvelun käyttöopas  ](lifecycle-services/use-translation-service.md)
+### [Microsoft Dynamics 365 – käännöspalvelun käyttöopas](lifecycle-services/use-translation-service.md)
+### [Microsoft Dynamics 365:n käännöspalvelu – ohjetiedoston kääntäminen](lifecycle-services/use-translation-service-ua.md)
+### [Microsoft Dynamics 365:n käännöspalvelu – käännösmuisti](lifecycle-services/use-translation-service-tm.md)
 
-## Dynamics AX 2012:n Lifecycle Services -palvelun ominaisuudet
+## Dynamics AX 2012 Lifecycle Servicesin ominaisuudet
 ### Käyttöönotto
 #### [Pilvipalveluympäristöt](lifecycle-services/ax-2012/cloud-hosted-environments-lcs.md)
 #### [Konfiguroinnin kopiointi](lifecycle-services/copy-configuration-lcs.md)
