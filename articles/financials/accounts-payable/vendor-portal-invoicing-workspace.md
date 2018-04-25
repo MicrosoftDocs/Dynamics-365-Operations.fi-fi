@@ -52,16 +52,12 @@ Ruutua napsauttamalla avautuu suodatettu näkymä **laskujen luettelo** sivulle.
 
 **Taulukkoluettelot** kohdassa laskutuksen tila on eritelty samalla tavalla kuin yhteenvetoruuduissa: Luonnos- ja Lähetetty, ei hyväksytty -luetteloissa. Luonnos-tilassa lasku voidaan lähettää työnkulkuun tai poistaa. Viimeisessä taulukkoluettelossa voit etsiä laskut. Suodattamalla saat nopeampia hakuja.
 
-<a name="all-vendor-invoices-list-page"></a>Kaikki toimittajan laskut -luettelosivu
------------------------------
+### <a name="all-vendor-invoices-list-page"></a>Kaikki toimittajan laskut -luettelosivu
 
 Voit tarkastella kaikkia kirjattuja ja kirjaamattomia toimittajalaskuja **Toimittajayhteistyön laskut** -luettelosivulla. Voit tarkastella luettelosivulta laskujen maksun tilaa. Maksun tilat ovat: kirjaamattomat, maksamatta, maksettu osittain, täysin maksettu.
 Luo toimittajan lasku ostotilauksesta
---------------------------------------------
 
 Voit luoda uuden toimittajalaskun valitsemalla **uusi** toimenpiteen **Toimittajayhteistyön laskutus**-työtilassa. Toimittajan on annettava ostotilauksen numero ja laskunumero. Oletusarvon mukaan toimittajan ostotilauksen kaikkien rivien kirjauspäivä ilmestyy uuteen laskuun. Määrä-ja kustannustietoja voidaan muokata ennen toimittajalaskun työnkulkuun lähettämistä. Voit liittää huomautuksia, tiedostoja, kuvia ja URL-osoitteet laskuun ennen sen lähettämistä.
-
-
 
 Lisätietoja on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 
