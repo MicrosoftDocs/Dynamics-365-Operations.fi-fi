@@ -1,3 +1,4 @@
+
 # [Dynamics 365 for Finance and Operations](index.md)
 
 ## Aloittaminen
@@ -14,15 +15,17 @@
 #### [Ympäristön vakioversiot ja kohdistetut versiot](get-started/public-preview-releases.md)
 
 #### Finance and Operations -sovelluksen ostaminen
-##### [Finance and Operations (paikallinen) -sovelluksen ostaminen](get-started/purchase-on-premises.md)
+##### [Finance and Operationsin (paikallinen) ostaminen](get-started/purchase-on-premises.md)
 
 ### [Uudet ja muuttuneet ominaisuudet](get-started/whats-new-changed.md)
+#### [Ohjelmiston elinkaarikäytäntö ja pilvipalveluversiot](../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json)
+#### [Ohjelmiston elinkaarikäytäntö ja paikalliset versiot](../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json)
 #### [Vanhentuneet tai poistetut ominaisuudet](../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json)
 #### [AX 2012 -ominaisuudet, joita on lykätty](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa](get-started/features-not-implemented-on-prem.md)
-#### [Platform update 15 (maaliskuu 2018)](get-started/whats-new-platform-update-15.md)
-#### [Versiot ja käyttöikäkäytäntö](../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json)
-#### [Paikallinen käyttöönotto (maaliskuu 2018)](get-started/whats-new-LBD-PU12-App72.md)
+#### [Finance and Operations 8.0 (huhtikuu 2018)](get-started/whats-new-changed-8-0-April-2018.md)
+#### [Platform update 15 -päivitys (maaliskuu 2018)](get-started/whats-new-platform-update-15.md)
+#### [Paikallisten käyttöönottojen 7.2-versiot, joissa Platform update 12 -päivitys (maaliskuu 2018)](get-started/whats-new-LBD-PU12-App72.md)
 #### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (marraskuu 2017)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (lokakuu 2017)](get-started/whats-new-platform-update-11.md)
@@ -162,9 +165,13 @@
 ###### [Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Finance and Operationsiin](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
 ###### [Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ###### [Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+##### [Integroinnin määrittäminen Field Servicen kanssa](../supply-chain/sales-marketing/field-service.md)
+###### [Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin](../supply-chain/sales-marketing/field-service-product.md)
+###### [Field Servicen työtilausten synkronointi Finance and Operationsin myyntitilauksiin](../supply-chain/sales-marketing/field-service-work-order.md)
+###### [Field Servicen sopimuslaskujen synkronointi Finance and Operationsin vapaatekstilaskuihin](../supply-chain/sales-marketing/field-service-invoice.md)
 
 
-#### [Ulkoisten verkkopalveluiden kuluttaminen](../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json)
+#### [Ulkoisten verkkopalveluiden käyttö](../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json)
 
 
 ## [Tietojen hallinta](../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json)
@@ -197,7 +204,9 @@
 #### [Tarkistukset, oletukset ja yhdistämättömät kentät](../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/fin-and-ops/toc.json)
 #### [Suojaus ja tietoyksiköt](../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json)
 
-### [Oman tietokantasi tuominen mukaan](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
+### [Oman tietokannan tuonti](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
+
+### [Tietotehtävän automaatio](../dev-itpro/data-entities/data-task-automation.md)
 
 ## [Taloushallinto](../financials/index.md)
 
@@ -754,6 +763,7 @@
 #### [Maksutapojen tiedostomuodot](../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
 #### [Tilipalvelun (ESR) integrointi](../financials/localizations/emea-fiscal-service-integration.md)
 #### [Viron ja Liettuan käyttöomaisuuden luovutus](../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+#### [Ulkomaanvaluutan uudelleenarvostus](../financials/localizations/emea-foreign-currency-revaluation.md)
 #### [Siirtoasiakirjan luominen sisäiselle varastosiirrolle](../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md)
 #### [EU Intrastat -ilmoituksen luominen](../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md)
 #### [Luo EU-myyntiluettelon raportti](../financials/localizations/tasks/eur-00011-eu-sales-list-report.md)
@@ -809,13 +819,7 @@
 
 #### [Itävalta](../financials/localizations/austria.md)
 
-#### Belgia
-##### [CODA-tiliote](../financials/localizations/emea-bel-coda-bank-statement-import.md)
-##### [Tapahtumien luominen ja siirtäminen BLWI-lomakkeelle](../financials/localizations/tasks/be-00011-create-transfer-blwi.md)
-##### [Intervat-veroilmoitus](../financials/localizations/emea-bel-intervat-tax-declaration.md)
-##### [PRODCOM-raporttimääritykset](../financials/localizations/emea-bel-prodcom-report.md)
-##### [Täsmäytysraportit](../financials/localizations/emea-bel-reconciliation-reports.md)
-##### [Maksusaldoraportoinnin määritys](../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md)
+#### [Belgia](../financials/localizations/belgium.md)
 
 #### [Tšekin tasavalta](../financials/localizations/czech-republic.md)
 
@@ -833,6 +837,7 @@
 ##### [Määritä maksutositteen muoto](../financials/localizations/tasks/set-up-payment-slip-format.md)
 
 #### Viro
+##### [Henkilökohtaisten tietojen pyynnöt](../financials/localizations/emea-est-personal-info.md)
 ##### [ALV-ilmoitus](../financials/localizations/emea-est-vat-statement-details.md)
 
 #### Ranska
@@ -857,12 +862,15 @@
 ##### [Kirjaa vekselin kirjauskansion uudelleenasetus](../financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal.md)
 ##### [Kokonaissumman palautustekstin tulostaminen myyntilaskuun](../financials/localizations/emea-fra-print-lump-sum-recovery-text.md)
 ##### [RB/SL-poisto](../financials/localizations/emea-fra-rbsl-depreciation.md)
-##### [Määritä maksutapa](../financials/localizations/tasks/fr-00004-setup-method-payment.md)
+##### [Maksutavan määrittäminen](../financials/localizations/tasks/fr-00004-setup-method-payment.md)
 ##### [Päivitä asiakkaan maksutapa](../financials/localizations/tasks/fr-00004-update-method-payment-customer.md)
+##### Retail
+###### [Kassakoneet](../retail/localizations/emea-fra-cash-registers.md)
+###### [Käyttöönotto-ohjeet kassakoneille](../retail/localizations/emea-fra-deployment.md)
 
 #### Saksa
 ##### [Lisähankintojen poisto](../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
-##### [Tarkistustiedosto](../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
+##### [Tarkistustiedosto ](../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
 ###### [Tarkistustiedoston määrityksien mukauttaminen](../financials/localizations/tasks/customize-german-audit-file-configuration.md)
 ###### [Luo tarkistustiedosto](../financials/localizations/tasks/german-audit-file.md)
 ###### [Tuo tarkistustiedoston määritykset](../financials/localizations/tasks/import-german-audit-file-configuration.md)
@@ -876,7 +884,8 @@
 ##### [Vaihtokurssin laskeminen](../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md)
 ##### [Käyttöomaisuuden poistomenetelmät](../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)
 ##### [Kustannukseltaan vähäinen käyttöomaisuus](../financials/localizations/emea-hun-low-cost-fixed-assets.md)
-##### [Käyttöomaisuuden siirtäminen varastoon](../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+##### [Käyttöomaisuuden siirto varastoon](../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+##### [Verohyvityksen asiakirjat](../financials/localizations/emea-hun-tax-reimbursement-docs.md)
 
 #### Islanti
 ##### [Toimittajatilin luominen ja laskun ilmoitusluokan liittäminen](../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md)
@@ -891,6 +900,7 @@
 ##### [Käyttöomaisuuden poisto](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
 ##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Pakkausluettelon päivämäärän tarkastus laskuissa](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
+##### [Kirjaa ja tulosta pakkausluettelo, jossa on kuljetustoimituksen tiedot](../financials/localizations/emea-ita-packing-slip.md)
 ##### [Arvonlisäverokirjat](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Julkishallinnon kirjoittamien laskujen jaettu maksu](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
 ##### [Ennakonpidätys](../financials/localizations/emea-ita-withholding-tax.md)
@@ -943,8 +953,9 @@
 ##### [Velkakirjojen asetukset](../financials/localizations/emea-esp-promissory-note-options.md)
 ##### [340-raportti](../financials/localizations/emea-esp-report-340.md)
 ##### [Osto- ja myyntisyklit](../financials/localizations/emea-esp-sales-purchase-cycle.md)
-##### [Erikoisviennit ja aloitustaseet](../financials/localizations/emea-esp-opening-sheets-spain.md)
+##### [Erikoisviennit ja avaavat taseet](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Ruotsi
+##### [Kirjanpitotietojen vieminen tilintarkastajille (Ruotsi)](../financials/localizations/emea-swe-sie-standard-report.md)
 ##### [Tuontimaksumuodot](../financials/localizations/emea-swe-payment-formats-import.md)
 ##### [Kassakoneet](../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json)
 #### Sveitsi
@@ -1219,6 +1230,7 @@
 #### [SSRS:n määrittäminen paikallista käyttöönottoa varten](../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json)
 #### [Tulostetaan](../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json)
 ##### [Verkkotulostimien käyttöönotto asentamalla asiakirjareitityksen agentti](../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json)
+##### [Asiakirjan reititysagentin päivitä](../dev-itpro/analytics/upgrade-document-routing-agent.md)
 ##### [Verkkotulostimien asentaminen paikallisiin ympäristöihin](../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json)
 ##### [Asiakirjan luonti-, julkaisu- ja tulostusominaisuudet paikallisissa käyttöönotoissa](../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json)
 ##### [Asiakirjareititysagentin suorittaminen Windows-palveluna](../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json)
@@ -1234,7 +1246,8 @@
 
 ### [Sähköinen raportointi](../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json)
 #### [Sähköisen raportointikehyksen määrittäminen](../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json)
-##### [Konfiguraation lähteen luominen ja merkitseminen aktiiviseksi sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json)
+#### [Konfiguraation luominen](../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json)
+##### [Luo konfiguraation lähde ja merkitse se aktiiviseksi sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json)
 ##### [Toimialuekohtaisen tietomallin suunnitteleminen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json)
 ##### [Mallin yhdistämismäärityksen määrittäminen ja tietolähteiden valitseminen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
 ##### [Tietomallin määrittäminen valittuihin tietolähteisiin sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
@@ -1247,49 +1260,47 @@
 #### [Kohteet](../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json)
 ##### [Kohteiden määrittäminen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json)
 #### [Konfiguraation suunnitteleminen raporttien luomiseksi Microsoft Word -muodossa sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json)
-#### [Konfiguraation suunnitteleminen raporttien luomiseksi OpenXML-muodossa sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json)
-#### [Muodon muokkaaminen käyttämällä uudelleen Microsoft Excel -mallia sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-modify-format-by-reapplying-microsoft-excel-template-july-2017.md?toc=/fin-and-ops/toc.json)
+#### [Suunnittele konfiguraatio raporttien luomiseksi OpenXML-muodossa sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json)
 #### [Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Microsoft Excel -mallia uudelleen](../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json)
 #### [Muodon luonnin aikana tehtävä tietomallin määrityksen valitseminen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Konfiguraatioiden muista osista riippuvuuden määrittäminen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Tietomallin suunnitteleminen taloushallinnon dimensioita tietolähteenä käyttämiseen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json)
-##### [Yhdistä mallit käyttääksesi taloushallinnon dimensioita tietolähteenä sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json)
-##### [Suunnittele raportti käyttääksesi taloushallinnon dimensioita tietolähteenä sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json)
-##### [Taloushallinnon dimensioita tietolähteenä käyttävän raportin suorittaminen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json)
-##### [Laskennan ja summien yhteenvedon muodon luominen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json)
-##### [Laskennan ja summien laskutoimitusten määrittäminen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json)
-##### [Käytä laskennan ja summien yhteenvedon laskutoimituksia sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json)
-##### [Muodon suorittaminen laskennan ja summien yhteenvedon tekemiseksi sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json)
-##### [Excel-raporttien sarakkeiden dynaamisessa lisäämisessä käytettävien vaakasuuntaisesti laajennettavien alueiden muodon suunnitteleminen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json)
-##### [Vaakasuuntaisesti laajennettavia alueita Excel-raporttien sarakkeiden dynaamisessa lisäämisessä käyttävän muodon suunnitteleminen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json)
-##### [Tietomallin valmisteleminen tiedostonhallinnan tiedostojen käyttämiseksi muodon tuotoksissa sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json)
-##### [Laajenna tietomalli tiedostonhallinnan tiedostojen käyttämiseksi muodon tuotoksissa sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json)
-##### [Luo muoto tiedostonhallinnan tiedostojen käyttämiseksi muodon tuotoksissa sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json)
-##### [Suorita muoto tiedostonhallinnan tiedostojen käyttämiseksi muodon tuotoksissa sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json)
-##### [Muodon muokkaaminen ja sen suorittaminen tiedostonhallinnan tiedostojen käyttämiseksi muodon tuotoksissa sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json)
-##### [Konfiguraatioiden suunnitteleminen upotettuja kuvia sisältävien Microsoft Office -muotoisten raporttien luomiseksi sähköistä raportointia varten (ER) (osa 1) ](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Konfiguraatioiden tarkistaminen upotettuja kuvia sisältävien Microsoft Office -muotoisten raporttien muodostamiseksi sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json)
-##### [Upotettuja kuvia sisältävien Microsoft Office -muotoisten raporttien luominen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json)
+#### [Konfiguraatioiden muista osista riippuvuuden määrittäminen sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Tietomallin suunnitteleminen taloushallinnon dimensioiden käyttämiseksi tietolähteenä](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json)
+##### [Mallien yhdistäminen taloushallinnon dimensioiden käyttämiseksi tietolähteenä](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json)
+##### [Raportin suunnitteleminen taloushallinnon dimensioiden käyttämiseksi tietolähteenä](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json)
+##### [Suorita raportti, joka käyttää taloushallinnon dimensioita tietolähteenä](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json)
+##### [Laskennan ja summien muodon luominen](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json)
+##### [Laskennan ja summien laskutoimitusten määrittäminen](../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json)
+##### [Käytä laskutoimituksia laskennan ja summien tulosten tuottamiseen](../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json)
+##### [Muodon suorittaminen laskennan ja summien tuottamiseksi](../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json)
+##### [Excel-raporttien sarakkeiden dynaamisessa lisäämisessä käytettävien vaakasuuntaisesti laajennettavien alueiden muodon suunnitteleminen](../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json)
+##### [Excel-raporttien sarakkeiden dynaamisessa lisäämisessä käytettävien vaakasuuntaisesti laajennettavien alueiden muodon suorittaminen](../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json)
+##### [Valmistele tietomalli käyttämään tiedostonhallinnan tiedostoja muodon tuotoksissa](../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json)
+##### [Laajenna tietomalli käyttämään tiedostonhallinnan tiedostoja muodon tuotoksissa](../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json)
+##### [Luo muoto tiedostonhallinnan tiedostojen käyttämiseksi muodon tuotoksissa](../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json)
+##### [Suorita muoto tiedostonhallinnan tiedostojen käyttämiseksi muodon tuotoksissa](../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json)
+##### [Muokkaa muotoa ja suorita se tiedostonhallinnan tiedostojen käyttämiseksi muodon tuotoksissa](../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json)
+##### [Konfiguraatioiden suunnitteleminen raporttien luomiseksi Microsoft Office -muodoissa, joissa on upotettuja kuvia](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Konfiguraatioiden tarkistaminen raporttien tuottamiseksi Microsoft Office -muodoissa, joissa on upotettuja kuvia](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json)
+##### [Upotettuja kuvia sisältävien Microsoft Office -muotoisten raporttien luominen](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json)
 #### [Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen sähköisellä raportointityökalulla](../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json)
-##### [Konfiguraatioiden tuominen ja asiakirjojen luominen päivitetyillä sovellustiedoilla sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json)
-##### [Luo asiakirjoja päivitetyillä sovellustiedoilla sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json)
-##### [Muokkaa mallia ja määritystä luodaksesi asiakirjoja päivitetyillä sovellustiedoilla sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json)
-##### [Muokkaa muotoa luodaksesi asiakirjoja päivitetyillä sovellustiedoilla sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json)
-##### [Luo asiakirjoja päivitetyillä sovellustiedoilla sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json)
+##### [Tuo konfiguraatioita luodaksesi sovellustietoja sisältäviä asiakirjoja](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json)
+##### [Suunnittele konfiguraatioita luodaksesi sovellustietoja sisältäviä asiakirjoja](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json)
+##### [Muokkaa mallia ja yhdistämismääritystä luodaksesi sovellustietoja sisältäviä asiakirjoja](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json)
+##### [Muokkaa muotoa luodaksesi sovellustietoja sisältäviä asiakirjoja](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json)
+##### [Luo sovellustietoja sisältäviä asiakirjoja](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json)
 #### [Kuvien ja muotojen upottaminen sähköisellä raportointityökalulla luotuihin liiketoiminta-asiakirjoihin](../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json)
-#### [Konfiguraation lataaminen Lifecycle Services -palveluun sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json)
-##### [Konfiguraation tuominen Lifecycle Services -palvelusta sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json)
 #### [Konfiguraatioiden elinkaaren hallinta](../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json)
-#### [Konfiguraation luominen](../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json)
-#### [Konfiguraatioiden lataaminen Lifecycle Services -palvelusta](../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json)
-#### [Sähköisen raportoinnin laajentaminen](../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json)
-##### [Mallin yhdistämismäärityksen konfiguraatioiden hallinta sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Vaadittujen konfiguraatioiden luominen tietojen tuomiseksi ulkoisesta tiedostosta sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json)
-#### [Sähköisen raportoinnin konfiguraatioiden tuonti](../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json)
+##### [Lataa konfiguraatio Lifecycle Servicesiin sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json)
+##### [Tuo konfiguraatio Lifecycle Servicesista sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json)
+##### [Konfiguraatioiden lataaminen Lifecycle Services -palvelusta](../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json)
+##### [Sähköisen raportoinnin konfiguraatioiden tuonti](../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json)
+#### [Hallitse mallin määrityksen konfiguraatioita sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Luo vaaditut konfiguraatiot tietojen tuomiseksi ulkoisesta tiedostosta sähköistä raportointia varten](../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json)
 #### [Saapuvien asiakirjojen jäsentäminen sovellustietojen päivittämistä varten](../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json)
 #### [Saapuvien asiakirjojen jäsentäminen CSV-muodossa](../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json)
-
+##### [Sähköisen raportoinnin laajentaminen](../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json)
 ##### [Sähköisen raportointikehyksen ohjelmointirajapinnan muutokset Application update 7.3 -päivitystä varten](../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json)
+
 
 ### Upotetut analyyttiset ratkaisut
 #### [Embedded Power BI työtiloissa](../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json)
@@ -1310,7 +1321,7 @@
 ### Tehokäyttäjän hallintatyökalut
 #### [Power BI:n ja yksikkösäilön integrointi](../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json)
 #### [Työtilojen Power BI -integroinnin konfigurointi](../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json)
-#### [Oman tietokantasi tuominen mukaan](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
+#### [Oman tietokannan tuonti](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
 
 
 ## [Varastonhallinta](../supply-chain/inventory/inventory-home-page.md)
@@ -1451,6 +1462,7 @@
 #### [Toimittajan aktivointi](../supply-chain/procurement/vendor-onboarding.md)
 #### [Toimittajayhteistyö ulkoisten toimittajien kanssa](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Toimittajayhteistyö asiakkaiden kanssa](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+#### [Toimittajan tuoteluetteloiden tuonti](../supply-chain/procurement/vendor-catalogs-import.md)
 #### [Sähköiseen hankintaan siirtymisessä käytettyjen ulkoisten luetteloiden määrittäminen](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
 #### [Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla](../supply-chain/procurement/use-external-catalogs-for-punchout.md)
 #### [Toimittajayhteistyön mobiilityötila](../supply-chain/procurement/vendor-collaboration-mobile-workspace.md)
@@ -1598,14 +1610,16 @@
 ##### [Materiaalien korvaaminen tuotannossa](../supply-chain/production-control/substitute-items-bom-lines.md)
 ##### [Tuotannonohjauksen rekisteröinti](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Tuotannon palaute](../supply-chain/production-control/production-feedback.md)
-##### [Työajan seurannan rekisteröinti](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Poissaolon rekisteröinti työajan seurannassa](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 ##### [Ota käyttöön työajanseurantaan perustuva palkanlaskentaprosessi](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
-##### [Työssä mobiililaitetta käyttävän työntekijän määrittäminen](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
+##### [Määritä työssä mobiililaitetta käyttävä työntekijä](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
 #### Tuotannon myyntitietojen hallinta
 ##### [Ajan kohdistaminen työnipun töihin](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
-##### [Materiaalin kulutuksen laskenta](../supply-chain/production-control/consumption.md)
+##### [Materiaalikulutuksen laskenta](../supply-chain/production-control/consumption.md)
 ##### [Tuotannon kirjaus](../supply-chain/cost-management/production-posting.md)
+#### [Työajan seurannan rekisteröinti](../supply-chain/production-control/time-attendance-registrations.md)
+##### [Rekisteröinteihin perustuva palkka](../supply-chain/production-control/pay-based-on-registrations.md)
+##### [Poissaolon rekisteröinti työajan seurannassa](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Liukumaryhmät](../supply-chain/production-control/time-attendance-flex-groups.md)
 
 ### Lean-valmistus 
 #### [Lean-valmistuksen yleiskatsaus](../supply-chain/production-control/lean-manufacturing-overview.md)
@@ -1836,20 +1850,22 @@
 #### [Työhön liitetyn varaston siirtäminen varastonhallinnassa](../supply-chain/warehousing/move-inventory-associated-work.md)
 #### [Varastotyöntekijöiden hallinta](../supply-chain/warehousing/manage-warehouse-workers.md)
 ### Keräys ja pakkaus
-#### [Erän ja rekisterikilven tiedot](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
-#### [Valikkokohteen luominen mobiililaitteelle rekisterikilven konsolidointia varten](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
+#### [Määritä klusterikeräily](../supply-chain/warehousing/set-up-cluster-picking.md)
+#### [Erän ja rekisterikilven vahvistus](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
+#### [Luo valikkokohde mobiililaitteelle rekisterikilven konsolidointia varten](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [Yhdistetyn rekisterikilven vastaanotto](../supply-chain/warehousing/mixed-license-plate-receiving.md)
 #### [Varaston vanhojen erien näyttämisen määrittäminen mobiililaitteessa](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
 #### [Mobiililaitteen vanhimman erän kerääminen](../supply-chain/warehousing/pick-oldest-batch.md)
 #### [Viivakoodien lukeminen kameralla Dynamics 365 for Finance and Operationsissa](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Kappaleen keräilyvahvistus](../supply-chain/warehousing/piece-picking-confirmation.md)
-#### [Tuotteen vahvistus klusterikeräilyä varten](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
+#### [Kuljetuskuorman osatoimitus](../supply-chain/warehousing/partial-shipping-of-transport-loads.md)
 #### [Osittain varattujen siirtotilauserien vapautus](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 #### [Pakkausmateriaalit ja maksut](../supply-chain/warehousing/pack-materials-packing-material-fees.md)
 ### Varastoinventointi
+#### [Varastoinventoinnin syykoodit](../supply-chain/warehousing/reason-codes-for-counting-journals.md)
 #### [Varastoesto](../supply-chain/inventory/inventory-blocking.md)
 #### [Inventointi](../supply-chain/warehousing/cycle-counting.md)
-#### [Inventoinnin määrittäminen](../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md)
+#### [Inventoinnin määrittäminen ](../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md)
 #### [Sijainnin osittainen inventointi](../supply-chain/warehousing/partial-location-cycle-counting.md)
 #### [Sijainnin osittaisen inventointiprosessin määrittäminen ](../supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017-update.md)
 #### [Varastokirjauskansio](../supply-chain/inventory/inventory-journals.md)
@@ -1857,6 +1873,7 @@
 #### [Varaston tila](../supply-chain/inventory/inventory-statuses.md)
 #### [Varaston tunnisteiden inventointi](../supply-chain/inventory/inventory-tag-counting.md)
 ### [Täydennys](../supply-chain/warehousing/replenishment.md)
+#### [Välitön täydennys](../supply-chain/warehousing/immediate-replenishment.md)
 #### [Täydennys ja otto-kanbanit](../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md)
 ### [Varastointisovelluksen asentaminen ja määrittäminen ](../supply-chain/warehousing/install-configure-warehousing-app.md)
 #### [Kenttien nimien määrittäminen varastointisovelluksessa](../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)
