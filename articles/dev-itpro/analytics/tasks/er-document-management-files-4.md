@@ -1,5 +1,5 @@
 --- 
-title: "Muodon suorittaminen tiedostonhallinnan tiedostojen käyttämiseksi muodon tuotoksissa sähköistä raportointia (ER) varten"
+title: "Tiedostonhallinnan tiedostojen käyttäminen muodon tuotoksissa suorittamalla muoto"
 description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa."
 author: NickSelin
 manager: AnnBe
@@ -16,57 +16,57 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 419c3e305dfdd7d8612340b4a8e8e54e13c6362b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 554de60fb8d2b6cb03cac5dc8d01df98390ad844
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="run-format-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a><span data-ttu-id="2aa55-103">Muodon suorittaminen tiedostonhallinnan tiedostojen käyttämiseksi muodon tuotoksissa sähköistä raportointia (ER) varten</span><span class="sxs-lookup"><span data-stu-id="2aa55-103">Run format to use Document Management files in format outputs for electronic reporting (ER)</span></span>
+# <a name="run-format-to-use-document-management-files-in-format-outputs"></a><span data-ttu-id="d3072-103">Tiedostonhallinnan tiedostojen käyttäminen muodon tuotoksissa suorittamalla muoto</span><span class="sxs-lookup"><span data-stu-id="d3072-103">Run format to use Document Management files in format outputs</span></span> 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="2aa55-104">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa.</span><span class="sxs-lookup"><span data-stu-id="2aa55-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="2aa55-105">Nämä vaiheet voidaan suorittaa DEMF-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="2aa55-105">These steps can be performed in the DEMF company.</span></span>
+<span data-ttu-id="d3072-104">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa.</span><span class="sxs-lookup"><span data-stu-id="d3072-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="d3072-105">Nämä vaiheet voidaan suorittaa DEMF-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="d3072-105">These steps can be performed in the DEMF company.</span></span>
 
-<span data-ttu-id="2aa55-106">Jotta voit suorittaa nämä vaiheet, suorita ensin "ER Tiedostojenhallinnan tiedostojen käyttö muodon tuloksissa (osa 3: muodon luominen)" -ohjeen vaiheet.</span><span class="sxs-lookup"><span data-stu-id="2aa55-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 3: Create format)” procedure.</span></span>
+<span data-ttu-id="d3072-106">Jotta voit suorittaa nämä vaiheet, suorita ensin "ER Tiedostojenhallinnan tiedostojen käyttö muodon tuloksissa (osa 3: muodon luominen)" -ohjeen vaiheet.</span><span class="sxs-lookup"><span data-stu-id="d3072-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 3: Create format)” procedure.</span></span>
 
-<span data-ttu-id="2aa55-107">Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="2aa55-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="d3072-107">Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="d3072-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="add-necessary-attachments-for-sales-order-of-a-single-invoice"></a><span data-ttu-id="2aa55-108">Lisää tarpeelliset liitteet yhden laskun myyntitilaukseen.</span><span class="sxs-lookup"><span data-stu-id="2aa55-108">Add necessary attachments for sales order of a single invoice</span></span>
-1. <span data-ttu-id="2aa55-109">Siirry kohtaan Myyntireskontra > Laskut > Avoimet myyntilaskut.</span><span class="sxs-lookup"><span data-stu-id="2aa55-109">Go to Accounts receivable > Invoices > Open customer invoices.</span></span>
-2. <span data-ttu-id="2aa55-110">Käytä pikasuodatinta tietueiden etsimiseen.</span><span class="sxs-lookup"><span data-stu-id="2aa55-110">Use the Quick Filter to find records.</span></span> <span data-ttu-id="2aa55-111">Voit esimerkiksi suodattaa Lasku-kenttää arvolla CIV-000148.</span><span class="sxs-lookup"><span data-stu-id="2aa55-111">For example, filter on the Invoice field with a value of 'CIV-000148'.</span></span>
-    * <span data-ttu-id="2aa55-112">CIV-000148</span><span class="sxs-lookup"><span data-stu-id="2aa55-112">CIV-000148</span></span>  
-3. <span data-ttu-id="2aa55-113">Napsauta valitun laskun linkkiä avataksesi sen.</span><span class="sxs-lookup"><span data-stu-id="2aa55-113">Click to follow the selected invoice’s link.</span></span>
-    * <span data-ttu-id="2aa55-114">CIV-000148</span><span class="sxs-lookup"><span data-stu-id="2aa55-114">CIV-000148</span></span>  
-4. <span data-ttu-id="2aa55-115">Siirry eteenpäin napsauttamalla Myyntitilaus-kentän linkkiä.</span><span class="sxs-lookup"><span data-stu-id="2aa55-115">Click to follow the link in the Sales order field.</span></span>
-    * <span data-ttu-id="2aa55-116">000148</span><span class="sxs-lookup"><span data-stu-id="2aa55-116">000148</span></span>  
-5. <span data-ttu-id="2aa55-117">Valitse Rivit vai otsikko -kentästä vaihtoehto Otsikko.</span><span class="sxs-lookup"><span data-stu-id="2aa55-117">In the Lines or header field, select the option of Header.</span></span>
-    * <span data-ttu-id="2aa55-118">Valitse Otsikko osoittamaan, että tämä on liitteiden lisäämisen kohde.</span><span class="sxs-lookup"><span data-stu-id="2aa55-118">Select Header to indicate that this will be the target for adding attachments.</span></span>  
-6. <span data-ttu-id="2aa55-119">Valitse Liitä.</span><span class="sxs-lookup"><span data-stu-id="2aa55-119">Click Attach.</span></span>
-    * <span data-ttu-id="2aa55-120">Lisää joitakin liitetiedostoja tälle myyntitilaukselle.</span><span class="sxs-lookup"><span data-stu-id="2aa55-120">Add a few files as attachments for this sales order.</span></span> <span data-ttu-id="2aa55-121">Käytä Tiedostonhallinnassa tuettuja tiedostotyyppejä (tiedostopäätteet DOCX, PDF, XML, JPG jne.).</span><span class="sxs-lookup"><span data-stu-id="2aa55-121">Use the files of the document types that are supported by the Document Management (with file extensions DOCX, DPF, XML, JPG, etc.).</span></span> <span data-ttu-id="2aa55-122">Etsi ja valitse liitettävät tiedostot, jotka käsitellään liittyvän laskun kanssa sähköisessä ER-viestissä.</span><span class="sxs-lookup"><span data-stu-id="2aa55-122">Browse and select files to be attached and further processed with the related invoice in the ER electronic message.</span></span>  
-7. <span data-ttu-id="2aa55-123">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="2aa55-123">Click New.</span></span>
-8. <span data-ttu-id="2aa55-124">Napsauta Tiedosto.</span><span class="sxs-lookup"><span data-stu-id="2aa55-124">Click File.</span></span>
-9. <span data-ttu-id="2aa55-125">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="2aa55-125">Click New.</span></span>
-10. <span data-ttu-id="2aa55-126">Napsauta Tiedosto.</span><span class="sxs-lookup"><span data-stu-id="2aa55-126">Click File.</span></span>
-11. <span data-ttu-id="2aa55-127">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2aa55-127">Close the page.</span></span>
-12. <span data-ttu-id="2aa55-128">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2aa55-128">Close the page.</span></span>
-13. <span data-ttu-id="2aa55-129">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2aa55-129">Close the page.</span></span>
-14. <span data-ttu-id="2aa55-130">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2aa55-130">Close the page.</span></span>
+## <a name="add-necessary-attachments-for-sales-order-of-a-single-invoice"></a><span data-ttu-id="d3072-108">Lisää tarpeelliset liitteet yhden laskun myyntitilaukseen.</span><span class="sxs-lookup"><span data-stu-id="d3072-108">Add necessary attachments for sales order of a single invoice</span></span>
+1. <span data-ttu-id="d3072-109">Siirry kohtaan Myyntireskontra > Laskut > Avoimet myyntilaskut.</span><span class="sxs-lookup"><span data-stu-id="d3072-109">Go to Accounts receivable > Invoices > Open customer invoices.</span></span>
+2. <span data-ttu-id="d3072-110">Käytä pikasuodatinta tietueiden etsimiseen.</span><span class="sxs-lookup"><span data-stu-id="d3072-110">Use the Quick Filter to find records.</span></span> <span data-ttu-id="d3072-111">Voit esimerkiksi suodattaa Lasku-kenttää arvolla CIV-000148.</span><span class="sxs-lookup"><span data-stu-id="d3072-111">For example, filter on the Invoice field with a value of 'CIV-000148'.</span></span>
+    * <span data-ttu-id="d3072-112">CIV-000148</span><span class="sxs-lookup"><span data-stu-id="d3072-112">CIV-000148</span></span>  
+3. <span data-ttu-id="d3072-113">Napsauta valitun laskun linkkiä avataksesi sen.</span><span class="sxs-lookup"><span data-stu-id="d3072-113">Click to follow the selected invoice’s link.</span></span>
+    * <span data-ttu-id="d3072-114">CIV-000148</span><span class="sxs-lookup"><span data-stu-id="d3072-114">CIV-000148</span></span>  
+4. <span data-ttu-id="d3072-115">Siirry eteenpäin napsauttamalla Myyntitilaus-kentän linkkiä.</span><span class="sxs-lookup"><span data-stu-id="d3072-115">Click to follow the link in the Sales order field.</span></span>
+    * <span data-ttu-id="d3072-116">000148</span><span class="sxs-lookup"><span data-stu-id="d3072-116">000148</span></span>  
+5. <span data-ttu-id="d3072-117">Valitse Rivit vai otsikko -kentästä vaihtoehto Otsikko.</span><span class="sxs-lookup"><span data-stu-id="d3072-117">In the Lines or header field, select the option of Header.</span></span>
+    * <span data-ttu-id="d3072-118">Valitse Otsikko osoittamaan, että tämä on liitteiden lisäämisen kohde.</span><span class="sxs-lookup"><span data-stu-id="d3072-118">Select Header to indicate that this will be the target for adding attachments.</span></span>  
+6. <span data-ttu-id="d3072-119">Valitse Liitä.</span><span class="sxs-lookup"><span data-stu-id="d3072-119">Click Attach.</span></span>
+    * <span data-ttu-id="d3072-120">Lisää joitakin liitetiedostoja tälle myyntitilaukselle.</span><span class="sxs-lookup"><span data-stu-id="d3072-120">Add a few files as attachments for this sales order.</span></span> <span data-ttu-id="d3072-121">Käytä Tiedostonhallinnassa tuettuja tiedostotyyppejä (tiedostopäätteet DOCX, PDF, XML, JPG jne.).</span><span class="sxs-lookup"><span data-stu-id="d3072-121">Use the files of the document types that are supported by the Document Management (with file extensions DOCX, DPF, XML, JPG, etc.).</span></span> <span data-ttu-id="d3072-122">Etsi ja valitse liitettävät tiedostot, jotka käsitellään liittyvän laskun kanssa sähköisessä ER-viestissä.</span><span class="sxs-lookup"><span data-stu-id="d3072-122">Browse and select files to be attached and further processed with the related invoice in the ER electronic message.</span></span>  
+7. <span data-ttu-id="d3072-123">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="d3072-123">Click New.</span></span>
+8. <span data-ttu-id="d3072-124">Napsauta Tiedosto.</span><span class="sxs-lookup"><span data-stu-id="d3072-124">Click File.</span></span>
+9. <span data-ttu-id="d3072-125">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="d3072-125">Click New.</span></span>
+10. <span data-ttu-id="d3072-126">Napsauta Tiedosto.</span><span class="sxs-lookup"><span data-stu-id="d3072-126">Click File.</span></span>
+11. <span data-ttu-id="d3072-127">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d3072-127">Close the page.</span></span>
+12. <span data-ttu-id="d3072-128">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d3072-128">Close the page.</span></span>
+13. <span data-ttu-id="d3072-129">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d3072-129">Close the page.</span></span>
+14. <span data-ttu-id="d3072-130">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d3072-130">Close the page.</span></span>
 
-## <a name="run-the-designed-report-for-the-selected-invoice"></a><span data-ttu-id="2aa55-131">Aja valitun laskun suunniteltu raportti</span><span class="sxs-lookup"><span data-stu-id="2aa55-131">Run the designed report for the selected invoice</span></span>
-1. <span data-ttu-id="2aa55-132">Valitse Organisaation hallinto > Sähköinen raportointi > Konfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="2aa55-132">Go to Organization administration > Electronic reporting > Configurations.</span></span>
-2. <span data-ttu-id="2aa55-133">Laajenna puussa solmu "Customer invoice model".</span><span class="sxs-lookup"><span data-stu-id="2aa55-133">In the tree, expand 'Customer invoice model'.</span></span>
-3. <span data-ttu-id="2aa55-134">Laajenna puussa "Customer invoice model\Customer invoice model (custom)".</span><span class="sxs-lookup"><span data-stu-id="2aa55-134">In the tree, expand 'Customer invoice model\Customer invoice model (custom)'.</span></span>
-4. <span data-ttu-id="2aa55-135">Valitse puussa "Customer invoice model\Customer invoice model (custom)\Electronic invoice sample message".</span><span class="sxs-lookup"><span data-stu-id="2aa55-135">In the tree, select 'Customer invoice model\Customer invoice model (custom)\Electronic invoice sample message'.</span></span>
-5. <span data-ttu-id="2aa55-136">Valitse Suorita.</span><span class="sxs-lookup"><span data-stu-id="2aa55-136">Click Run.</span></span>
-6. <span data-ttu-id="2aa55-137">Laajenna Tietueet-kohta ja sisällytä () -osa.</span><span class="sxs-lookup"><span data-stu-id="2aa55-137">Expand the Records to include () section.</span></span>
-7. <span data-ttu-id="2aa55-138">Valitse Suodatin.</span><span class="sxs-lookup"><span data-stu-id="2aa55-138">Click Filter.</span></span>
-8. <span data-ttu-id="2aa55-139">Valitse asiakkaan laskun kirjauskansion rivi sekä Myyntitilaus-kenttä.</span><span class="sxs-lookup"><span data-stu-id="2aa55-139">Select the row of the Customer invoice journal and the Sales order field.</span></span>
-9. <span data-ttu-id="2aa55-140">Kirjoita Ehdot-kenttään 000148.</span><span class="sxs-lookup"><span data-stu-id="2aa55-140">In the Criteria field, type '000148'.</span></span>
-    * <span data-ttu-id="2aa55-141">Kirjoita ehdoksi "Sales order" -kenttään tilausnumero 000148.</span><span class="sxs-lookup"><span data-stu-id="2aa55-141">In the criteria “Sales order” field, type the order number 000148.</span></span>  
-10. <span data-ttu-id="2aa55-142">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="2aa55-142">Click OK.</span></span>
-11. <span data-ttu-id="2aa55-143">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="2aa55-143">Click OK.</span></span>
-    * <span data-ttu-id="2aa55-144">Tarkista aikaansaatu tuotos.</span><span class="sxs-lookup"><span data-stu-id="2aa55-144">Review the generated output.</span></span> <span data-ttu-id="2aa55-145">Huomaa, että kullekin liitetiedostolle on luotu yksi XML-solmu.</span><span class="sxs-lookup"><span data-stu-id="2aa55-145">Note that for each attachment a single XML node has been created.</span></span> <span data-ttu-id="2aa55-146">Liitteen sisältö lisätään XML-tuotteeseen MIME (base64) -tekstimuodossa.</span><span class="sxs-lookup"><span data-stu-id="2aa55-146">The attachment’s content is populated to the XML output in MIME (base64) text format.</span></span>  
+## <a name="run-the-designed-report-for-the-selected-invoice"></a><span data-ttu-id="d3072-131">Aja valitun laskun suunniteltu raportti</span><span class="sxs-lookup"><span data-stu-id="d3072-131">Run the designed report for the selected invoice</span></span>
+1. <span data-ttu-id="d3072-132">Valitse Organisaation hallinto > Sähköinen raportointi > Konfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="d3072-132">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="d3072-133">Laajenna puussa solmu "Customer invoice model".</span><span class="sxs-lookup"><span data-stu-id="d3072-133">In the tree, expand 'Customer invoice model'.</span></span>
+3. <span data-ttu-id="d3072-134">Laajenna puussa "Customer invoice model\Customer invoice model (custom)".</span><span class="sxs-lookup"><span data-stu-id="d3072-134">In the tree, expand 'Customer invoice model\Customer invoice model (custom)'.</span></span>
+4. <span data-ttu-id="d3072-135">Valitse puussa "Customer invoice model\Customer invoice model (custom)\Electronic invoice sample message".</span><span class="sxs-lookup"><span data-stu-id="d3072-135">In the tree, select 'Customer invoice model\Customer invoice model (custom)\Electronic invoice sample message'.</span></span>
+5. <span data-ttu-id="d3072-136">Valitse Suorita.</span><span class="sxs-lookup"><span data-stu-id="d3072-136">Click Run.</span></span>
+6. <span data-ttu-id="d3072-137">Laajenna Tietueet-kohta ja sisällytä () -osa.</span><span class="sxs-lookup"><span data-stu-id="d3072-137">Expand the Records to include () section.</span></span>
+7. <span data-ttu-id="d3072-138">Valitse Suodatin.</span><span class="sxs-lookup"><span data-stu-id="d3072-138">Click Filter.</span></span>
+8. <span data-ttu-id="d3072-139">Valitse asiakkaan laskun kirjauskansion rivi sekä Myyntitilaus-kenttä.</span><span class="sxs-lookup"><span data-stu-id="d3072-139">Select the row of the Customer invoice journal and the Sales order field.</span></span>
+9. <span data-ttu-id="d3072-140">Kirjoita Ehdot-kenttään 000148.</span><span class="sxs-lookup"><span data-stu-id="d3072-140">In the Criteria field, type '000148'.</span></span>
+    * <span data-ttu-id="d3072-141">Kirjoita ehdoksi "Sales order" -kenttään tilausnumero 000148.</span><span class="sxs-lookup"><span data-stu-id="d3072-141">In the criteria “Sales order” field, type the order number 000148.</span></span>  
+10. <span data-ttu-id="d3072-142">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="d3072-142">Click OK.</span></span>
+11. <span data-ttu-id="d3072-143">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="d3072-143">Click OK.</span></span>
+    * <span data-ttu-id="d3072-144">Tarkista aikaansaatu tuotos.</span><span class="sxs-lookup"><span data-stu-id="d3072-144">Review the generated output.</span></span> <span data-ttu-id="d3072-145">Huomaa, että kullekin liitetiedostolle on luotu yksi XML-solmu.</span><span class="sxs-lookup"><span data-stu-id="d3072-145">Note that for each attachment a single XML node has been created.</span></span> <span data-ttu-id="d3072-146">Liitteen sisältö lisätään XML-tuotteeseen MIME (base64) -tekstimuodossa.</span><span class="sxs-lookup"><span data-stu-id="d3072-146">The attachment’s content is populated to the XML output in MIME (base64) text format.</span></span>  
 
 

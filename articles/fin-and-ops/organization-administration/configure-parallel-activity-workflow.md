@@ -18,38 +18,39 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a913655b584aa23c2614903e6ede4f5826fec1fb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec1c1d8abc49deb8ef16322370c59d40b01d344c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
-# <a name="configure-a-parallel-activity-in-a-workflow"></a><span data-ttu-id="b43de-103">Rinnakkaisen tehtävän määrittäminen työnkulussa</span><span class="sxs-lookup"><span data-stu-id="b43de-103">Configure a parallel activity in a workflow</span></span>
+# <a name="configure-a-parallel-activity-in-a-workflow"></a><span data-ttu-id="adaa6-103">Rinnakkaisen tehtävän määrittäminen työnkulussa</span><span class="sxs-lookup"><span data-stu-id="adaa6-103">Configure a parallel activity in a workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
+<span data-ttu-id="adaa6-104">Rinnakkaisen tehtävän määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa .</span><span class="sxs-lookup"><span data-stu-id="adaa6-104">To configure a parallel activity, complete the following procedures in the workflow editor.</span></span>
+
+<span data-ttu-id="adaa6-105">Rinnakkainen tehtävä sisältää työnkulun haarat, jotka suoritetaan samaan aikaan.</span><span class="sxs-lookup"><span data-stu-id="adaa6-105">A parallel activity consists of workflow branches that run at the same time.</span></span>
+
+## <a name="name-a-parallel-activity"></a><span data-ttu-id="adaa6-106">Nimeä rinnakkainen tehtävä</span><span class="sxs-lookup"><span data-stu-id="adaa6-106">Name a parallel activity</span></span>
+<span data-ttu-id="adaa6-107">Kirjoita näiden ohjeiden avulla nimi rinnakkaiselle tehtävälle.</span><span class="sxs-lookup"><span data-stu-id="adaa6-107">Follow these steps to enter a name for a parallel activity.</span></span>
+1.  <span data-ttu-id="adaa6-108">Napsauta rinnakkaista tehtävää hiiren kakkospainikkeella ja valitse sitten **Ominaisuudet**, joka avaa **Ominaisuudet** -lomakkeen.</span><span class="sxs-lookup"><span data-stu-id="adaa6-108">Right-click the parallel activity, and then click **Properties** to open the **Properties** form.</span></span>
+2.  <span data-ttu-id="adaa6-109">Napsauta vasemmassa ruudussa **Perusasetukset**.</span><span class="sxs-lookup"><span data-stu-id="adaa6-109">In the left pane, click **Basic Settings**.</span></span>
+3.  <span data-ttu-id="adaa6-110">Kirjoita rinnakkaisen tehtävän yksilöivä nimi **Nimi**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="adaa6-110">In the **Name** field, enter a unique name for the parallel activity.</span></span>
+4.  <span data-ttu-id="adaa6-111">Valitse **Sulje**.</span><span class="sxs-lookup"><span data-stu-id="adaa6-111">Click **Close**.</span></span>
+
+## <a name="configure-the-branches-of-a-parallel-activity"></a><span data-ttu-id="adaa6-112">Määritä rinnakkaisen tehtävän haarat</span><span class="sxs-lookup"><span data-stu-id="adaa6-112">Configure the branches of a parallel activity</span></span>
+<span data-ttu-id="adaa6-113">Voit lisätä ja konfiguroida rinnakkaisen tehtävän haaroja seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="adaa6-113">Follow these steps to add and configure the branches of this parallel activity.</span></span>
+1. <span data-ttu-id="adaa6-114">Kaksoisnapsauttamalla rinnakkaista tehtävää saat näkyviin sen haarat.</span><span class="sxs-lookup"><span data-stu-id="adaa6-114">Double-click the parallel activity to display the branches of the parallel activity.</span></span>
+2. <span data-ttu-id="adaa6-115">Lisää haara vetämällä **haara**-elementti **Työnkulkuelementit** alueesta alustan lisäyspisteeseen.</span><span class="sxs-lookup"><span data-stu-id="adaa6-115">To add a branch, drag the **Branch** element from the **Workflow elements** area to an insertion point on the canvas.</span></span> <span data-ttu-id="adaa6-116">Lisäyspiste näkyy seuraavassa kuvassa. ![Lisäyspiste](./media/workflow_insertionpoint.gif)</span><span class="sxs-lookup"><span data-stu-id="adaa6-116">The following figure shows an insertion point.![Insertion point](./media/workflow_insertionpoint.gif)</span></span>
+
+   |                                              <span data-ttu-id="adaa6-117"><strong>Huomautus</strong></span><span class="sxs-lookup"><span data-stu-id="adaa6-117"><strong>Note</strong></span></span>                                               |
+   |------------------------------------------------------------------------------------------------------------------|
+   | <span data-ttu-id="adaa6-118">Haarojen järjestyksellä ei ole merkitystä, koska rinnakkaisen tehtävän haarat suoritetaan samaan aikaan.</span><span class="sxs-lookup"><span data-stu-id="adaa6-118">The order of the branches is not important because all the branches of a parallel activity run at the same time.</span></span> |
 
 
-<span data-ttu-id="b43de-104">Rinnakkaisen tehtävän määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa .</span><span class="sxs-lookup"><span data-stu-id="b43de-104">To configure a parallel activity, complete the following procedures in the workflow editor.</span></span>
-
-<span data-ttu-id="b43de-105">Rinnakkainen tehtävä sisältää työnkulun haarat, jotka suoritetaan samaan aikaan.</span><span class="sxs-lookup"><span data-stu-id="b43de-105">A parallel activity consists of workflow branches that run at the same time.</span></span>
-
-## <a name="name-a-parallel-activity"></a><span data-ttu-id="b43de-106">Nimeä rinnakkainen tehtävä</span><span class="sxs-lookup"><span data-stu-id="b43de-106">Name a parallel activity</span></span>
-<span data-ttu-id="b43de-107">Kirjoita näiden ohjeiden avulla nimi rinnakkaiselle tehtävälle.</span><span class="sxs-lookup"><span data-stu-id="b43de-107">Follow these steps to enter a name for a parallel activity.</span></span>
-1.  <span data-ttu-id="b43de-108">Napsauta rinnakkaista tehtävää hiiren kakkospainikkeella ja valitse sitten **Ominaisuudet**, joka avaa **Ominaisuudet** -lomakkeen.</span><span class="sxs-lookup"><span data-stu-id="b43de-108">Right-click the parallel activity, and then click **Properties** to open the **Properties** form.</span></span>
-2.  <span data-ttu-id="b43de-109">Napsauta vasemmassa ruudussa **Perusasetukset**.</span><span class="sxs-lookup"><span data-stu-id="b43de-109">In the left pane, click **Basic Settings**.</span></span>
-3.  <span data-ttu-id="b43de-110">Kirjoita rinnakkaisen tehtävän yksilöivä nimi **Nimi**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b43de-110">In the **Name** field, enter a unique name for the parallel activity.</span></span>
-4.  <span data-ttu-id="b43de-111">Valitse **Sulje**.</span><span class="sxs-lookup"><span data-stu-id="b43de-111">Click **Close**.</span></span>
-
-## <a name="configure-the-branches-of-a-parallel-activity"></a><span data-ttu-id="b43de-112">Määritä rinnakkaisen tehtävän haarat</span><span class="sxs-lookup"><span data-stu-id="b43de-112">Configure the branches of a parallel activity</span></span>
-<span data-ttu-id="b43de-113">Voit lisätä ja konfiguroida rinnakkaisen tehtävän haaroja seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="b43de-113">Follow these steps to add and configure the branches of this parallel activity.</span></span>
-1.  <span data-ttu-id="b43de-114">Kaksoisnapsauttamalla rinnakkaista tehtävää saat näkyviin sen haarat.</span><span class="sxs-lookup"><span data-stu-id="b43de-114">Double-click the parallel activity to display the branches of the parallel activity.</span></span>
-2.  <span data-ttu-id="b43de-115">Lisää haara vetämällä **haara**-elementti **Työnkulkuelementit** alueesta alustan lisäyspisteeseen.</span><span class="sxs-lookup"><span data-stu-id="b43de-115">To add a branch, drag the **Branch** element from the **Workflow elements** area to an insertion point on the canvas.</span></span> <span data-ttu-id="b43de-116">Lisäyspiste näkyy seuraavassa kuvassa. ![Lisäyspiste](./media/workflow_insertionpoint.gif)</span><span class="sxs-lookup"><span data-stu-id="b43de-116">The following figure shows an insertion point.![Insertion point](./media/workflow_insertionpoint.gif)</span></span>
-    | <span data-ttu-id="b43de-117">**Huomautus**</span><span class="sxs-lookup"><span data-stu-id="b43de-117">**Note**</span></span>                                                                                                         |
-    |------------------------------------------------------------------------------------------------------------------|
-    | <span data-ttu-id="b43de-118">Haarojen järjestyksellä ei ole merkitystä, koska rinnakkaisen tehtävän haarat suoritetaan samaan aikaan.</span><span class="sxs-lookup"><span data-stu-id="b43de-118">The order of the branches is not important because all the branches of a parallel activity run at the same time.</span></span> |
-
-3.  <span data-ttu-id="b43de-119">Lisätietoja haarojen määrittämisestä on kohdassa [Määritä rinnakkaishaara](configure-parallel-branch-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="b43de-119">To configure each branch, see [Configure a parallel branch](configure-parallel-branch-workflow.md).</span></span>
+3. <span data-ttu-id="adaa6-119">Lisätietoja haarojen määrittämisestä on kohdassa [Määritä rinnakkaishaara](configure-parallel-branch-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="adaa6-119">To configure each branch, see [Configure a parallel branch](configure-parallel-branch-workflow.md).</span></span>
 
 
 
