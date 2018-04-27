@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mass-hire-projects"></a>Joukkotyöhönottoprojektit
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Henkilöstöhallinnon asiantuntija voi luoda useita toimia ja palkata useita työntekijöitä näihin toimiin joukkotyöhönottoprojektien avulla.
 
@@ -94,7 +93,7 @@ Napsauta **Joukkotyöhönottoprojekti**-sivulla **Avaa projekti** tai **Sulje pr
 </tbody>
 </table>
 
- 
+
 
 
 

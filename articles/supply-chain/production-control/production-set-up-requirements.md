@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-setup-requirements"></a>Tuotantoasetusten vaatimukset
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja asetuksista, jotka on tehtävä ennen tuotannonhallinnan aloittamista. 
 

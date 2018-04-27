@@ -3,12 +3,12 @@ title: Kustannushintojen hallinnan aloitussivu
 description: "Kustannushintojen hallinnan avulla voit käsitellä raaka-aineiden, puolivalmiiden tuotteiden, valmiiden tuotteiden ja keskeneräisten resurssien arvostusta ja kirjanpitoa."
 author: AndersGirke
 manager: AnnBe
-ms.date: 02/14/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Kustannushintojen hallinnan aloitussivu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [Kustannushintojen hallinnan (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) avulla voit käsitellä raaka-aineiden, puolivalmiiden tuotteiden, valmiiden tuotteiden ja keskeneräisten resurssien arvostusta ja kirjanpitoa. Tässä prosessissa [varastokirjanpito](cost-object.md) ja [valmistuksen kirjanpito](bom-calculations.md) määritetään. Lisäksi niitä hallitaan ja niistä raportoidaan.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 02/08/2018
 ---
 # <a name="find-obsolete-product-variants"></a>Vanhentuneiden tuotevarianttien etsiminen 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten vanhentuneita julkaistuja tuotteita tai tuotevariantteja etsitään ja miten tuotteen elinkaaren tila liitetään vanhentuneisiin tuotteisiin. Edellytys: Sinun on määritettävä vähintään yksi tuotteen elinkaaren tila, joka ei ole aktiivinen suunnittelua varten, ennen kuin voit toistaa tämän tehtäväoppaan.
 

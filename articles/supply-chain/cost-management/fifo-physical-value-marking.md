@@ -29,10 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO-merkintä ja fyysinen arvo
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 FIFO (First In, First Out) on varastomalli, jossa ensimmäiset vastaanotot otetaan varastosta ensin. Rahoituksellisesti päivitetyt varasto-otot täsmäytetään ensimmäisiä rahoituksellisesti päivitettyjä varastovastaanottoja vasten varastotapahtuman rahoituspäivämäärän perusteella. 
 
@@ -60,16 +59,16 @@ Uusi keskimääräinen kustannushinta vastaa rahoituksellisesti päivitettyjen t
 
 **Kaavion selite**
 
--   Pystysuorat nuolet kuvaavat varastotapahtumia.
--   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
--   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
--   Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
--   Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
--   Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
--   Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
--   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
--   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
--   Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
+- Pystysuorat nuolet kuvaavat varastotapahtumia.
+- Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
+- Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
+- Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
+- Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
+- Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
+- Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
+- Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
 
 ## <a name="fifo-with-the-include-physical-value-option"></a>FIFO ja Sisällytä fyysinen arvo -asetus
 Jos **Sisällytä fyysinen arvo** -valintaruutu on valittuna nimikkeen **nimikemalliryhmän** sivulla, järjestelmä käyttää juoksevan keskimääräisen kustannushinnan laskennassa sekä fyysisiä että rahoituksellisia vastaanottotapahtumia. Järjestelmä tekee myös oikaisuja fyysisesti päivitettyyn varastostaottotapahtumaan, jos tämä on aiheellista. Jos **Sisällytä fyysinen arvo** -valintaruutu ei ole valittuna, varaston sulkeminen FIFO-varastomallia käyttäen selvittää vain kirjanpidollisesti päivitetyt tapahtumat. Seuraavassa on kuvattu näitä tapahtumia:
@@ -90,16 +89,16 @@ Tapahtuma 5b täsmäytetään vastaanottotapahtuman 1b kanssa. Tälle varasto-ot
 
 **Kaavion selite**
 
--   Pystysuorat nuolet kuvaavat varastotapahtumia.
--   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
--   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
--   Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
--   Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
--   Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
--   Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
--   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
--   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
--   Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
+- Pystysuorat nuolet kuvaavat varastotapahtumia.
+- Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
+- Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
+- Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
+- Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
+- Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
+- Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
+- Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
 
 ## <a name="fifo-with-marking"></a>FIFO ja merkintä
 Merkintä on prosessi, jonka avulla voit linkittää (eli merkitä) varaston ottotapahtuman vastaanottotapahtumaan. Merkintä voi tapahtua joko ennen tapahtuman kirjaamista tai sen jälkeen. Merkinnän avulla voit varmistaa tarkan varastokustannuksen, kun tapahtuma kirjataan tai kun varaston sulkeminen suoritetaan. Oletetaan esimerkiksi, että asiakaspalveluosasto on hyväksynyt kiireellisen tilauksen tärkeältä asiakkaalta. Koska tilaus on kiireellinen, tästä nimikkeestä on maksettava tavallista enemmän, jotta asiakkaan pyynnön voi toteuttaa. Sinun on varmistettava, että tämän varastonimikkeen kustannus otetaan huomioon myyntitilauslaskun katteessa (tai myydyn tavaran kustannuksissa). Kun ostotilaus kirjataan, varasto vastaanotetaan hintaan 120,00 USD. Jos tämä myyntitilausasiakirja on merkitty ostotilaukseen ennen pakkausluettelon tai laskun kirjaamista, myydyn tavaran kustannukseksi tulee 120,00 USD nimikkeen nykyisen käyttökeskiarvokustannuksen sijaan. Jos myyntitilauksen pakkausluettelo tai lasku kirjataan ennen merkintää, myydyn tavaran kustannus kirjataan käyttäen käyttökeskiarvon mukaista kustannushintaa. Ennen varaston sulkemista nämä kaksi tapahtumaa voidaan vielä merkitä toisiinsa. Kun vastaanottotapahtuma vastaa varasto-ottotapahtumaa, nimikkeen malliryhmässä määritetty arvostustapa ohitetaan, ja järjestelmä täsmäyttää nämä tapahtumat toisiaan vasten. Voit merkitä varastostaottotapahtuman vastaanottoon kirjauksen jälkeen. Voit tehdä tämän myyntitilausrivin **Myyntitilauksen tiedot** -sivulla. Voit tarkastella avoimia vastaanottotapahtumia **Merkintä**-sivulla. Voit merkitä varastostaottotapahtuman vastaanottoon myös tapahtuman kirjauksen jälkeen. Voit täsmäyttää tai merkitä varastostaottotapahtuman varastoidun nimikkeen avoimeen vastaanottotapahtumaan kirjatusta varaston oikaisukirjauskansiosta. Seuraavassa on kuvattu näitä tapahtumia:
@@ -120,16 +119,16 @@ Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja 
 
 **Kaavion selite**
 
--   Pystysuorat nuolet kuvaavat varastotapahtumia.
--   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
--   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
--   Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
--   Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
--   Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
--   Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
--   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
--   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
--   Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
+- Pystysuorat nuolet kuvaavat varastotapahtumia.
+- Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
+- Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
+- Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
+- Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
+- Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
+- Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
+- Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
 
 
 

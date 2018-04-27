@@ -17,15 +17,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7265e119a8b59399db1fa35373a7b6aba52ba8e0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 325cf12345afcf531181f65a41d0e5262798c14f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="onboard-vendors"></a>Toimittajien aktivointi
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
 ---
 
 Uudet toimittajat voidaan aktivoida ja rekisteröidä toimittajiksi Microsoft Dynamics 365 for Finance and Operations -sovelluksessa toimittajaa edustavalta henkilöltä kerättävien tietojen perusteella.
@@ -164,13 +165,15 @@ Mahdollisen toimittajan rekisteröintipyynnön eri tilat luovat yleiskuvan pyynn
 
 **Poista**-toiminnon käyttö mahdollisen toimittajan rekisteröintipyynnössä puhdistaa ja poistaa luodun tietueketjun. Voit myös poistaa käyttäjätilin käytöstä. **Poista**-toiminnon seuraukset vaihtelevat mahdollisen toimittajan rekisteröintipyynnön mukaan seuraavan taulukon mukaisesti.
 
-| Tila                   | Tilan kuvaus | Poista-toiminnon tulos |
-|--------------------------|--------------------|-----------------------------------|
-| Uusi                      | Pyynnössä ei ole tehty mitään toimintoja. | Mahdollisen toimittajan rekisteröintipyyntö on poistettu. |
-| Käyttäjän pyytämä           | Kun valitset **Kutsu käyttäjä**, tilaksi tulee **Käyttäjän pyytämä**. Lisäksi luodaan mahdollisen toimittajan käyttäjäpyyntö, ja se lähetetään käyttäjäpyynnön työnkulkuun. | Jos tämä on mahdollisen toimittajan rekisteröintipyynnön tila, sitä ei voi poistaa, koska käyttäjäpyynnön työnkulku ei ole päättynyt. |
-| Käyttäjä kutsuttu             | Käyttäjäpyynnön työnkulku on hyväksytään ja käyttäjä luodaan. | Käyttäjän käytöstäpoistopyyntö luodaan ja mahdollisen toimittajan rekisteröintipyyntö poistetaan. |
-| Rekisteröinti on käynnissä | Uusi käyttäjä on kirjautunut sisään ja käynnistänyt ohjatun toimittajan rekisteröintitoiminnon. | Käyttäjän käytöstäpoistopyyntö luodaan sekä mahdollisen toimittajan rekisteröintipyyntö ja ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot poistetaan. |
-| Toimittajapyyntö luotu   | Ohjattu toimittajan rekisteröintitoiminto on suoritettu. | Käyttäjän käytöstäpoistopyyntö luodaan sekä mahdollisen toimittajan rekisteröintipyyntö, ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot ja toimittajapyyntö poistetaan.<blockquote>[!NOTE]<br>**Poista**-toimintoa ei voi käyttää, kun toimittajapyyntö on työnkulun tarkistusvaiheessa.</blockquote> |
-| Hyväksytty                 | Toimittajapyyntö hyväksytään. | Mahdollisen toimittajan rekisteröintipyyntö, ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot ja toimittajapyyntö poistetaan. |
-| Hylätty                 | Toimittajapyyntö hylätään. | Mahdollisen toimittajan rekisteröintipyyntö, ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot ja toimittajapyyntö poistetaan. |
+
+|          Tila          |                                                                                     Tilan kuvaus                                                                                      |                                                                                                                                                            Poista-toiminnon tulos                                                                                                                                                             |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           Uusi            |                                                                         Pyynnössä ei ole tehty mitään toimintoja.                                                                          |                                                                                                                                              Mahdollisen toimittajan rekisteröintipyyntö on poistettu.                                                                                                                                               |
+|      Käyttäjän pyytämä      | Kun valitset <strong>Kutsu käyttäjä</strong>, tilaksi tulee <strong>Käyttäjän pyytämä</strong>. Lisäksi luodaan mahdollisen toimittajan käyttäjäpyyntö, ja se lähetetään käyttäjäpyynnön työnkulkuun. |                                                                                                          Jos tämä on mahdollisen toimittajan rekisteröintipyynnön tila, sitä ei voi poistaa, koska käyttäjäpyynnön työnkulku ei ole päättynyt.                                                                                                          |
+|       Käyttäjä kutsuttu       |                                                               Käyttäjäpyynnön työnkulku on hyväksytään ja käyttäjä luodaan.                                                               |                                                                                                                      Käyttäjän käytöstäpoistopyyntö luodaan ja mahdollisen toimittajan rekisteröintipyyntö poistetaan.                                                                                                                      |
+| Rekisteröinti on käynnissä |                                                         Uusi käyttäjä on kirjautunut sisään ja käynnistänyt ohjatun toimittajan rekisteröintitoiminnon.                                                          |                                                                                     Käyttäjän käytöstäpoistopyyntö luodaan sekä mahdollisen toimittajan rekisteröintipyyntö ja ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot poistetaan.                                                                                      |
+|  Toimittajapyyntö luotu  |                                                                     Ohjattu toimittajan rekisteröintitoiminto on suoritettu.                                                                      | Käyttäjän käytöstäpoistopyyntö luodaan sekä mahdollisen toimittajan rekisteröintipyyntö, ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot ja toimittajapyyntö poistetaan.<blockquote>[!NOTE]<br><strong>Poista</strong>-toimintoa ei voi käyttää, kun toimittajapyyntö on työnkulun tarkistusvaiheessa.</blockquote> |
+|         Hyväksytty         |                                                                               Toimittajapyyntö hyväksytään.                                                                               |                                                                                                   Mahdollisen toimittajan rekisteröintipyyntö, ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot ja toimittajapyyntö poistetaan.                                                                                                    |
+|         Hylätty         |                                                                               Toimittajapyyntö hylätään.                                                                               |                                                                                                   Mahdollisen toimittajan rekisteröintipyyntö, ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot ja toimittajapyyntö poistetaan.                                                                                                    |
+
 

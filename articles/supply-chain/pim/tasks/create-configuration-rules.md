@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-configuration-rules"></a>Luo konfiguraatiosäännöt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menetelmässä luodaan konfigurointisäännöt, joita voidaan käyttää dimensioihin perustuvassa konfiguraatiossa pakottamaan tai estämään tietyt tuoterakenneriviyhdistelmät. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä on seitsemäs kahdeksasta menettelystä, joissa selitetään, miten dimensioihin perustuvia konfiguraatioyhdistelmiä luodaan.
 

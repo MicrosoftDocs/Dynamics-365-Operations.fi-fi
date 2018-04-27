@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>Tuotteen vahvistus klusterikeräilyä varten
 Klusterikeräilyssä voi kerätä usean tilauksen nimikkeitä samalla kertaa. Kun klusterikeräily on käytössä, nimikkeen vahvistaminen on ehdottoman tärkeää, jotta klustereihin lisättävät nimikkeet voidaan tarkistaa. Voit tarkistaa klusterikeräilyn nimikkeet klusterikeräilyn aikana.
@@ -37,7 +37,8 @@ Klusterikeräilyn nimiketarkistus toimii samalla tavalla kuin nimikkeen tarkista
 1.  Avaa mobiililaitteen valikossa työn vahvistuksen määrityslomake: **Varastonhallinta** > **Varastonhallinta** > **Asetukset** > **Mobiililaite** > **Mobiililaitteen valikkovaihtoehdot**.
 2.  Avaa mobiililaitteen valikossa **Työn vahvistusasetukset**.
 
-| Vaihtoehto        | kuvaus   | 
-| ------------- | ------------- |
-|Tuotteen vahvistus | Voit skannattaessa tarkistaa kunkin varastokappaleen mobiililaitteessa.|
+|        Vaihtoehto        |                                    kuvaus                                    |
+|----------------------|-----------------------------------------------------------------------------------|
+| Tuotteen vahvistus | Voit skannattaessa tarkistaa kunkin varastokappaleen mobiililaitteessa. |
+
 

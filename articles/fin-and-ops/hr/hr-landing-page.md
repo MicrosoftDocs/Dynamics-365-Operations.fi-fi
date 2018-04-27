@@ -26,7 +26,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="welcome-to-human-resources"></a>Tervetuloa henkilöstöhallintoon
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Henkilöstöhallinto yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Se muodostaa myös kehyksen, jonka avulla henkilöstöhallinnon henkilöstö voi hallita valvottavia alueita. Näitä alueita ovat työntekijän työhönotto ja sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta.
 

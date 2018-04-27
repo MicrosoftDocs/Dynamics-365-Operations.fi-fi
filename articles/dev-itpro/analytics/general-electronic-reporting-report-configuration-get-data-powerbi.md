@@ -27,8 +27,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Sähköisen raportoinnin määrittäminen hakemaan tiedot Power BI:hin
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Power BI-palveluihin. Tässä aiheessa käytetään esimerkkinä Intrastat-tapahtumia siirrettävinä liiketoimintatietoina. Power BI -karttavisualisointi käyttää tätä Intrastat-tapahtumatietoa näkymän esittämiseen yrityksen tuonti-/vientitoimintojen analyysia varten Power BI-raportissa.
 
@@ -118,9 +117,9 @@ Valitse **Asetukset**-painike uudelle kohdetietueelle. Noudata seuraavia ohjeita
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Power BI -raportin luominen käyttämällä uutta tietojoukkoa
 1. Valitse **Tietojen tuonti ja vienti** luomassasi Power BI -tietojoukossa. 
 2. Määritä visualisointi. Valitse esimerkiksi **Täytetty kartta** -visualisointi ja määritä se seuraavasti:
- -   Määritä **CountryOrigin**- tietojoukkokenttä kartan visualisoinnin **Sijainti**-kenttään.
- -   Määritä **Määrä**- tietojoukkokenttä kartan visualisoinnin **Värikylläisyys**-kenttään.
- -   Lisää **Tehtävä** ja **Vuosi** tietojoukkokentät kartan visualisoinnin **Suodattimet**-tietokenttäkokoelmaan.
+   -   Määritä **CountryOrigin**- tietojoukkokenttä kartan visualisoinnin **Sijainti**-kenttään.
+   -   Määritä **Määrä**- tietojoukkokenttä kartan visualisoinnin **Värikylläisyys**-kenttään.
+   -   Lisää **Tehtävä** ja **Vuosi** tietojoukkokentät kartan visualisoinnin **Suodattimet**-tietokenttäkokoelmaan.
 
 3. Tallenna Power BI -raportti **Tuodut ja viedyt tiedot -raporttina**. [![Viennin ja tuonnin tietojen raportti](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Huomaa, että kartassa näkyvät maat/alueet, jotka on mainittu Excel-tiedostosta (Itävalta ja Sveitsi tässä esimerkissä). Nämä maat/alueet näkyvät värillisinä ja osoittavat laskutettujen summien osuuden. 
 4. Päivitä Intrastat-tapahtumien luettelo. Vientitapahtuma, joka on peräisin Italiasta, lisätään. [![Intrastat-tapahtumien luettelo](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) 

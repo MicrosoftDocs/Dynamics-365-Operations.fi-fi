@@ -18,17 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09addfd9e4a5c601970b5c8c24a3d39b041e07e6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: be69aff98b1a3a8304461af0f38760988ac28d42
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operations-version 1611 uudet ja muuttuneet ominaisuudet (marraskuu 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjestelmän version 1611 uusia tai muuttuneita ominaisuuksia.
 
@@ -113,6 +112,7 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjeste
 </table>
 
 ## <a name="expense-management"></a>Matkalaskut
+
 | Mitä voit tehdä                                                            | Miksi tämä on tärkeää                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Työntekijälle määritetty luottokortin tapahtumien määrittäminen uudelleen                     | Joissain tapauksissa poistetun työntekijän Active Directory -hakemistopalvelujen (D DS) tiliin käyttö on estetty, kun kirjattavat aktiiviset luottokorttitapahtumat tuodaan. Aiemmin ei voitu määrittää valtuutettua viittausta kulumerkinnälle tai liittää luottokorttitapahtumia kuluraporttiin. Nyt voit käyttää **Luottokorttitapahtumat**-sivua ja määrittää työntekijälle minkä tahansa luottokorttitapahtuman, vaikka työntekijä on poistettu. Kun olet siirtänyt luottokorttitapahtuman, tapahtuma voidaan valita kuluraporttiin ja maksaa kuluraportin hyväksynnän normaalimenettelyn kautta. |
@@ -225,6 +225,7 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjeste
 </table>
 
 ## <a name="human-capital-management"></a>Henkilöstöresurssien hallinta
+
 | Mitä voit tehdä                                                                                | Miksi tämä on tärkeää                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Suoritustason kirjauskansioiden luominen                                                                  | Ennen kuin suoritat tarkastuksen, kerätään usein tietoja tehtävistä ja tapahtumista, jotka ovat vaikuttaneet onnistumiseesi työntekijänä tarkastelukauden aikana. Voit lisätä merkinnän suorituskyvyn kirjauskansioon dokumentoidaksesi nämä tehtävät ja tapahtumat. Voit myös liittää nämä tehtävät ja tapahtumat tavoitteeseen tai suorituskykyarvioon antaaksesi lisätietoja tarkistajalle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -579,6 +580,7 @@ Seuraavissa maissa tarvitaan myös Retail-lokalisointia. Retail-lokalisointia ei
 </table>
 
 ## <a name="planning-and-scheduling"></a>Suunnittelu ja ajoitus
+
 | Mitä voit tehdä                                                                                                                                                                                                      | Miksi tämä on tärkeää                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Määritä tilauksen oletusasetukset myynneille ja ostoille, jotka perustuvat tuotteen päätietueessa käytössä oleviin aktiivisiin tuotedimensioihin. Näin voit määrittää tilauksen oletusasetukset varastointiyksikölle (SKU) tai osittaiselle varastointiyksikölle. | Voit määrittää tilauksen oletusasetukset, joita käytetään tuotedimensioon tai tuotedimensioyhdistelmään. **Esimerkki** Myyt tuotteen, jonka nimi on Polo-t-paita. Tuotteesta on saatavana kaksi väriä: vihreä ja sininen. Siitä on saatavana myös kaksi kokovaihtoehtoa: S ja M. Polo-t-paidan aktiiviset tuotedimensiot ovat väri ja koko. Voit estää kaikkien vihreiden Polo-t-paitojen ostot riippumatta koosta. |
@@ -624,6 +626,7 @@ Seuraavissa maissa tarvitaan myös Retail-lokalisointia. Retail-lokalisointia ei
 </table>
 
 ## <a name="project-management-and-accounting"></a>Projektinhallinta ja kirjanpito
+
 | Mitä voit tehdä                                                                                                           | Miksi tämä on tärkeää                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Myöhäinen-valinnan käyttö kirjattaessa erän laskuehdotukset eränä                                                            | Projektin kirjanpitäjä voi määrittää erätyön poimimaan automaattisesti laskuehdotukset kirjaukseen, jos, ehdotukset täyttävät erätyölle määritetyt ehdot. Tämä toiminto parantaa automaattista laskun kirjaamista, koska erätyö voidaan suorittaa jatkuvasti ja noutaa ehdotukset kirjausta varten automaattisesti. |

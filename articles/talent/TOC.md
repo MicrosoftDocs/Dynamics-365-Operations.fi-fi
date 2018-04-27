@@ -3,7 +3,7 @@
 # [Aloittaminen](talent-get-started.md)
 ## [Järjestelmävaatimukset ja päivityskäytäntö](talent-versions-update-policy.md)
 ## [Microsoft Dynamics 365 for Talentin valmisteleminen](provisioning-talent.md)
-## [Poista Talent-ympäristö](remove-test-environment.md)
+## [Poista Talent-ympäristö](remove-talent-environment.md)
 ## [Microsoft Dynamics 365 for Talentin modulaaristen sovellusten valmisteleminen](modular-app-tech-faq.md)
 ## [Talent-toimintojen laajentaminen](extend-talent-functionality.md)
 
@@ -13,8 +13,9 @@
 ## [Yritysten välisten henkilöstöhallinnon parametrien määrittäminen](set-up-hr-parameters-across-legal-entities.md)
 ## [Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen](set-up-company-specific-hr-parameters.md)
 ## [Henkilöstötoiminnot – usein kysytyt kysymykset](personnel-actions-faq.md)
+## [Liiketoimintaprosessien virallistaminen](formalize-business-processes.md)
 ## [Työntekijätietojen hallinta työkulun avulla](workflow-manage-employee-information.md)
-## [Loman ja poissaolon yleiskatsaus](leave-absence-overview.md)
+## [Lomien ja poissaolojen yhteenveto](leave-absence-overview.md)
 
 # Henkilöstön palkkaaminen organisaatioon
 ## [Attract-sovelluksen yleiskatsaus](attract-overview.md) 

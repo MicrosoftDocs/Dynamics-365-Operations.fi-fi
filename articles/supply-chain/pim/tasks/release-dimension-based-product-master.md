@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="release-a-dimension-based-product-master"></a>Vapauta dimensioihin perustuva päätuote
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menetelmässä selvitetään, miten dimensioihin perustuvissa konfiguraatioissa käytettävä päätuote vapautetaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Edellytyksenä on, että olet luonut päätuotteen dimensioihin perustuvalla konfiguraatiomenetelmällä. Tämä on toinen kahdeksasta menettelystä, joissa selitetään, miten dimensioihin perustuvia konfiguraatioyhdistelmiä luodaan.
 

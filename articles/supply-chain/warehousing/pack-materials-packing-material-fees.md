@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="packing-materials-and-fees"></a>Pakkausmateriaalit ja maksut
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pakkausmateriaalimaksuja maksetaan kierrätysyritykselle säännöllisin väliajoin. Maksuna peritään tietty summa kunkin pakkausyksikköön kuuluvan materiaalin painoyksikköä kohden. Pakkausmateriaalimaksut lasketaan ja raportoidaan, mutta niistä ei kirjata kirjanpitotapahtumia, koska niitä ei käsitellä viranomaiselle maksettavana verona.
 
@@ -63,7 +62,7 @@ Jos työnantajasi maksaa pakkausmateriaalimaksut, älä määritä asiakkaiden l
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Pakkausmateriaalien painon tulostaminen laskuihin
 Voit tulostaa pakkausmateriaalien painon laskuun ja ilmaista, kuka maksaa pakkausmateriaalimaksun. Painojen yhteenlaskeminen tapahtuu pakkauskoodeittain.
- 
+
 
 
 

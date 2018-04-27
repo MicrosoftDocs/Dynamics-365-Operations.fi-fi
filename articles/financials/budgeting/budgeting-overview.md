@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-home-page"></a>Budjetoinnin aloitussivu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa käsitellään yleisesti Finance and Operations -ohjelman budjetointitoimintojen osia, budjetointityökaluja ja raportointitoimintoja. 
 

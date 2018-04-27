@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Määritä lean-valmistuksen työsolut
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Työsolun on erityinen resurssiryhmä, jota voidaan käyttää Lean-valmistuksen prosessitehtävissä. Työsoluilla on syöttö- ja tuotossijainnit sekä tuotantovirtamalliin perustuva kapasiteettimääritys. Lisätietoja Lean-valmistuksen työsolujen ja kapasiteettilaskelmien peruskäsitteistä on Lean-valmistusta käsittelevissä teknisissä raporteissa. Tämän menettelyn luonnissa käytettiin USMF-yrityksen demotietoja.
 

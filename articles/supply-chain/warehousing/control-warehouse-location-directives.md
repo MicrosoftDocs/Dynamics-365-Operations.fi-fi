@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Varastotyön valvonta työmallien ja sijaintidirektiivien avulla
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä varaston kohdassa työ suoritetaan.
 

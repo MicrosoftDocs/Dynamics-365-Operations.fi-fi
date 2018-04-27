@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>Jäännöspoisto 125 prosenttia
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on yleiskuvaus 125 prosentin jäännösarvon poistomenetelmästä.
 
@@ -68,6 +67,7 @@ Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavis
 -   **Tilikausi** kirjaa tilivuodelle lasketun poiston kokonaismäärän. Summa on jaksotettu tilikausille, jotka määritetään **Kirjanpidon kalenterit** -sivulla.
 
 ## <a name="example-of-125-reducing-balance-depreciation"></a>Esimerkki 125 prosentin jäännöspoistosta
+
 |                                |        |
 |--------------------------------|--------|
 | Hankintakustannukset               | 11 000 |

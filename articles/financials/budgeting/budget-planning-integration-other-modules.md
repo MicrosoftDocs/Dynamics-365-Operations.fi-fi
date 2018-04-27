@@ -19,16 +19,18 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: f50e58d63a9db4d6a8b5390174e2c7b87970717d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>Budjettisuunnittelun integrointi toisten moduulien kanssa
 
-[!include[banner](../includes/banner.md)] Budjettisuunnitelmia voidaan muodostaa useista eri resursseista. Kausittaisten prosessien peruselementit ovat samat kaikille resursseille. 
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Budjettisuunnitelmia voidaan muodostaa useista eri resursseista. Kausittaisten prosessien peruselementit ovat samat kaikille resursseille. 
 
 
 
@@ -66,7 +68,7 @@ Kaikkien prosessien osalta **Lähde**-välilehden avulla voit suodattaa tietoja 
 
 **Yhteenlaskettu summa perusteena** -kenttä sivun yläosassa määrittää myös käytettävän päivän. Tämä kenttä laskee summat yhteen ja määrittää voimaantulopäiväksi tilivuoden tai -kauden ensimmäisen päivän. 
 
-Monista **Kohde**-välilehden kentistä tulee muokattavia tai vain luku -muotoisia valitsemastasi toiminnosta riippuen. Kun siirryt uuden budjettisuunnitelman luonnista olemassa olevan suunnitelman päivittämiseen, **Budjettisuunnitelman nimi** -kenttä ei ole enää käytettävissä ja olemassa olevan suunnitelman valitsemiseen liittyvät kentät tulevat saataville. Sekä **Kohde**-välilehdessä että **Lähde**-välilehdessä **Kirjanpito**-kenttä ei ole koskaan käytettävissä, koska tämä arvo määritetään valitussa budjettisuunnitteluprosessissa. 
+Monista <strong>Kohde</strong>-välilehden kentistä tulee muokattavia tai vain luku -muotoisia valitsemastasi toiminnosta riippuen. Kun siirryt uuden budjettisuunnitelman luonnista olemassa olevan suunnitelman päivittämiseen, <strong>Budjettisuunnitelman nimi</strong> -kenttä ei ole enää käytettävissä ja olemassa olevan suunnitelman valitsemiseen liittyvät kentät tulevat saataville. Sekä <strong>Kohde</strong>-välilehdessä että <strong>Lähde**-välilehdessä **Kirjanpito</strong>-kenttä ei ole koskaan käytettävissä, koska tämä arvo määritetään valitussa budjettisuunnitteluprosessissa. 
 
 **Budjettiluokka**-kentässä voit määrittää budjettisuunnitelman rivit joko kulutapahtumiksi tai tuottotapahtumiksi. Yleensä tuottotapahtumat ovat luottoja kirjanpitotilille ja ne tallennetaan siksi negatiivisina lukuina. Nämä tapahtumat myös yleensä näkyvät negatiivisina summina budjettisuunnitelmassa. Lisäämällä budjettiluokan kenttänä suunnitelman asettelussa voit kuitenkin mahdollistaa tuottojen näkymisen positiivisina summina.
 
@@ -111,7 +113,7 @@ Lähteessä valittu budjettisuunnitteluprosessi ja budjettisuunnitelman skenaari
 
 Voit käyttää projektibudjetteja lähteenä valitsemalla ennustemallin, joka sisältää projektibudjetin summat. Muista, että projektibudjetit luovat projektiennustetapahtumia, kun ne hyväksytään.
 
-Jos haluat valita vain kulut tai tuotot budjettisuunnitelman riveille, käytä suodatinta valitaksesi **Budjetin päivitykset: Summan tyyppi = Kulu**. Jos haluat valita vain yhden ennustetyypin, valitse suodattimella **Budjetin päivitykset: Tapahtumatyyppi = *xxx***. 
+Jos haluat valita vain kulut tai tuotot budjettisuunnitelman riveille, käytä suodatinta valitaksesi <strong>Budjetin päivitykset: Summan tyyppi = Kulu</strong>. Jos haluat valita vain yhden ennustetyypin, käytä suodatinta valitaksesi <strong>Budjetin päivitykset: Tapahtumatyyppi = *xxx</strong>*. 
 
 Budjettisuunnitelman skenaarion muodostamiseen voi käyttää vain yhtä ennustemallia. Jos suoritat prosessin yhdelle ennustemallille, teet sitten päivityksen ja yrität määrittää toisen mallin, ensimmäinen malli korvataan, jos kyseessä ovat samat projekti- ja kirjanpitotilit. Jos haluat luoda budjettisuunnitelman skenaarion useammasta kuin yhdestä ennustemallista, muodosta ne eri budjettisuunnitelman skenaarioiksi ja käytä kohdistusvaihtoehtoja lisätäksesi yhdistääksesi ne toisessa skenaariossa. 
 

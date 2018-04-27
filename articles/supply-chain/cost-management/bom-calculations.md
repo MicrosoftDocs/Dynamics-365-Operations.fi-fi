@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations"></a>BOM-laskelmat
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kustannusten koontilaskelmia ja myyntihintalaskelmia kutsutaan tuoterakennelaskelmiksi, koska ne käynnistetään Laskelmat-sivulta. Tässä aiheessa on tietoja BOM-laskelmista.
 

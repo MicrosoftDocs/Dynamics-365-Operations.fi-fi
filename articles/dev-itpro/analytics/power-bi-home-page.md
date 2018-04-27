@@ -3,7 +3,7 @@ title: "Power BI -sisältö"
 description: "Tämä ohjeaihe on luettelo käytettävissä olevasta Power BI -sisällöstä, ja siinä kerrotaan resursseista, joissa on lisätietoja kyseisestä sisällöstä."
 author: sericks007
 manager: AnnBe
-ms.date: 02/22/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PowerBIPbixDeployForm
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.region: Global
@@ -19,16 +19,15 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 99eece7b31034065694f8875c72eb2360088ec23
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2473fa408ae8884b8713198debfff489ff6e6c46
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="power-bi-content"></a>Power BI -sisältö
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä ohjeaihe on luettelo käytettävissä olevasta Microsoft Power BI -sisällöstä, ja siinä kerrotaan resursseista, joissa on lisätietoja kyseisestä sisällöstä.
 
@@ -41,6 +40,7 @@ Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, käytettä
 - [Talousjohtajan yhteenvedon Power BI -sisältö](CFO-power-bi.md)
 - [Kompensaation Power BI -sisältö](compensation-power-bi.md)
 - [Kustannuslaskenta-analyysin Power BI -sisältö](cost-accounting-analysis-content-pack.md) 
+- [Kustannushintojen hallinta - Power BI -sisältö](cost-management-content-pack.md)    
 - [Luotonvalvonnan hallinnan Power BI -sisältö](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Työntekijän kehityksen Power BI -sisältö](employee-development-PBI.md) 
 - [Taloushallinnon tietojen Power BI -sisältö](financial-insights.md)

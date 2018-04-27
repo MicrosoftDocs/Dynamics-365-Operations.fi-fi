@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun lopullinen maksu suoritetaan alennuspäivämäärän jälkeen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa käsitellään maksujen laskuille tilittämisen vaikutusta asiakkaille. Skenaariossa keskitytään vaikutuksiin alareskontrassa (ei kirjanpidossa).
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-entry-deadlines"></a>Tilaustenkäsittelyn määräajat
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja tilaustenkäsittelyn määräajoista. Tilaustenkäsittelyn määräaika on aika, joka määrittää, käsitelläänkö asiakastilausta siten kuin se olisi vastaanotettu samana päivänä tai seuraavana päivänä.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a>Alustavan budjetin luominen julkiselle sektorille
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Voit luoda tietyn budjettimallin ja dimensioarvojen alustavat budjettitapahtumat. Kun todellinen budjetti on hyväksytty, voit luoda alkuperäiset budjettitapahtumat. Tämä menettely luotiin käyttämällä PSUS-yrityksen demotietoja julkisen sektorin osiossa.
 

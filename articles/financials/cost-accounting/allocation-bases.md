@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Kohdistusperusteet 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kustannuslaskentaa kohdistaa yleiskustannukset kohdistusperusteen perusteella. Kohdistusperuste voi olla määrä, kuten koneen käyttötunnit, kulutetut kilowattitunnit (kWh) tai käytössä olevat neliömetrit. Kohdistusperusteita käytetään lähinnä yleiskustannusten määrittämiseen tuotettavalle varastolle. Esimerkiksi IT-osasto kohdistaa kustannukset kunkin osaston käyttämien tietokoneiden määrän mukaan.
 
@@ -424,9 +424,11 @@ Seuraavaksi tarkastellaan lähemmin CC003 (IT):n kaavaa:
 
 Tämä on esimerkki kustannusten jakosäännöstä, jos Kiinteä sähkö -kaavan kohdistusperuste on määritetty sen kohdistusperusteena.
 
-| Kustannusobjekti |  kuvaus  | Suuruus | Kohdistuskerroin                |
-|-------------|----|-----------|----------------------------------|
-| CC001       | Henkilöstöhallinto | 1,837.50  | (1 837,50 ÷ 18 162,50) × summa  |
-| CC002       | FI | 3,075.00  | (3 075,00 ÷ 18 162,50) × summa  |
-| CC003       | VS | 13,250.00 | (13 250,00 ÷ 18 162,50) × summa |
+
+| Kustannusobjekti | kuvaus | Suuruus |        Kohdistuskerroin         |
+|-------------|-------------|-----------|----------------------------------|
+|    CC001    |     Henkilöstöhallinto      | 1,837.50  | (1 837,50 ÷ 18 162,50) × summa  |
+|    CC002    |     FI      | 3,075.00  | (3 075,00 ÷ 18 162,50) × summa  |
+|    CC003    |     VS      | 13,250.00 | (13 250,00 ÷ 18 162,50) × summa |
+
 

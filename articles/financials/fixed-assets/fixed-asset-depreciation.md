@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-depreciation"></a>Käyttöomaisuuden poisto
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä ohjeaihe sisältää käyttöomaisuuden poiston yleiskatsauksen.
 

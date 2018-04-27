@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7cd19340c913fcda3fb537162dfbae52b5c8e922
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3d4354316d0c37c6556c0ec3d27a3c62c5afb7b0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intercompany-invoicing"></a>Konsernin sisäinen laskutus
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja ja esimerkkejä projektien konsernin sisäisestä laskutuksesta Microsoft Dynamics 365 for Finance and Operationsissa.
 
@@ -58,20 +57,22 @@ Tässä esimerkissä USSI on lainaajayritys ja sen resurssit raportoivat ajan la
 
 Tässä esimerkissä FRSI:n on oltava USSI-yrityksen asiakas ja USSI:n on oltava FRSI-yrityksen toimittaja. Voit sitten määrittää konsernin sisäisen suhteen kahden yrityksen välille. Seuraavassa menettelyssä kuvataan parametrien määrittäminen siten, että kumpikin yritys voi osallistua konsernin sisäiseen laskutukseen.
 
-1.  Määritä FRSI asiakkaaksi USSI-yritykseksi ja USSI FRSI-yrityksen toimittajaksi. Tämän tehtävän edellyttämille vaiheille on kolme aloituskohtaa.
-    | Vaihe | Tulopaikka                                                                       | kuvaus   |
-    |------|-----------------------------------------------------------------------------------|------------------|
-    | A    | Valitse USSI:ssa **Myyntireskontra** &gt; **Asiakkaat** &gt; **Kaikki asiakkaat**. | Luo FRSI:lle uusi asiakastietue ja valitse asiakasryhmä.                                                                                  |
-    | B    | Valitse FRSI:ssä **Ostoreskontra** &gt; **Toimittajat** &gt; **Kaikki toimittajat**.        | Luo USSI:lle uusi toimittajatietue ja valitse toimittajaryhmä.                                                                                    |
-    | K    | Avaa FRSI:ssä juuri luomasi toimittajatietue.                            | Valitse toimintoruudun **Yleiset**-välilehdessä **Määritä**-ryhmässä **Konsernin sisäinen**. Siirrä **Konsernin sisäinen** -sivun **Kauppakumppanuus**-välilehden **Aktiivinen**-liukusäädin **Kyllä**-asentoon. Valitse **Asiakasyritys**-kentässä vaiheessa A luotu asiakastietue. |
+1. Määritä FRSI asiakkaaksi USSI-yritykseksi ja USSI FRSI-yrityksen toimittajaksi. Tämän tehtävän edellyttämille vaiheille on kolme aloituskohtaa.
 
-2.  Valitse ensin **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Projektinhallinnan ja kirjanpidon parametrit** ja sitten **Konsernin sisäinen** -välilehti. Parametrien määritystapa määräytyy sen mukaan, onko kyse lainaavasta yrityksestä vai lainaajayrityksestä.
-    -   Jos olet lainaava yritys, valitse hankintaluokka, jolla automaattisesti luodut toimittajan laskut täsmäytetään.
-    -   Jos olet lainaajayritys, valitse kullekin lainaavalle yritykselle oletustuoteluokka kullekin tapahtumatyypille. Tuoteluokkia käytetään verojen määritykseen, kun konsernin sisäisten tapahtumien laskutettu luokka on luotu vain lainaavaan yritykseen. Voit valita konsernin sisäisten tapahtumien tuoton jaksotuksen. Jaksotus tehdään, kun tapahtumat kirjataan, ja palautetaan, kun konsernin sisäinen lasku kirjataan.
+   | Vaihe |                                                       Tulopaikka                                                        |                                                                                                                                                                                               kuvaus                                                                                                                                                                                               |
+   |------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |  A   | Valitse USSI:ssa <strong>Myyntireskontra</strong> &gt; <strong>Asiakkaat</strong> &gt; <strong>Kaikki asiakkaat</strong>. |                                                                                                                                                                  Luo FRSI:lle uusi asiakastietue ja valitse asiakasryhmä.                                                                                                                                                                  |
+   |  B   |    Valitse FRSI:ssä <strong>Ostoreskontra</strong> &gt; <strong>Toimittajat</strong> &gt; <strong>Kaikki toimittajat</strong>.     |                                                                                                                                                                    Luo USSI:lle uusi toimittajatietue ja valitse toimittajaryhmä.                                                                                                                                                                    |
+   |  K   |                                  Avaa FRSI:ssä juuri luomasi toimittajatietue.                                  | Valitse toimintoruudun <strong>Yleiset</strong>-välilehdessä <strong>Määritä</strong>-ryhmässä <strong>Konsernin sisäinen</strong>. Siirrä <strong>Konsernin sisäinen</strong> -sivun <strong>Kauppakumppanuus</strong>-välilehden <strong>Aktiivinen</strong>-liukusäädin <strong>Kyllä</strong>-asentoon. Valitse <strong>Asiakasyritys</strong>-kentässä vaiheessa A luotu asiakastietue. |
 
-3.  Valitse **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Hinnat** &gt; **Siirtohinta**.
-4.  Valitse valuutta, tapahtuman tyyppi ja siirtohintamalli. Laskussa käytetty valuutta on valuutta, joka on määritetty lainaajayrityksen lainaavan yrityksen asiakastietueessa. Valuuttaa käytetään täsmäyttämään viennit siirtohintataulussa.
-5.  Valitse **Kirjanpito** &gt; **Kirjausasetukset** &gt; **Konsernin sisäinen laskenta** ja määritä USSI:n ja FRSI:n suhde.
+
+2. Valitse ensin **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Projektinhallinnan ja kirjanpidon parametrit** ja sitten **Konsernin sisäinen** -välilehti. Parametrien määritystapa määräytyy sen mukaan, onko kyse lainaavasta yrityksestä vai lainaajayrityksestä.
+   -   Jos olet lainaava yritys, valitse hankintaluokka, jolla automaattisesti luodut toimittajan laskut täsmäytetään.
+   -   Jos olet lainaajayritys, valitse kullekin lainaavalle yritykselle oletustuoteluokka kullekin tapahtumatyypille. Tuoteluokkia käytetään verojen määritykseen, kun konsernin sisäisten tapahtumien laskutettu luokka on luotu vain lainaavaan yritykseen. Voit valita konsernin sisäisten tapahtumien tuoton jaksotuksen. Jaksotus tehdään, kun tapahtumat kirjataan, ja palautetaan, kun konsernin sisäinen lasku kirjataan.
+
+3. Valitse **Projektinhallinta ja kirjanpito** &gt; **Asetukset** &gt; **Hinnat** &gt; **Siirtohinta**.
+4. Valitse valuutta, tapahtuman tyyppi ja siirtohintamalli. Laskussa käytetty valuutta on valuutta, joka on määritetty lainaajayrityksen lainaavan yrityksen asiakastietueessa. Valuuttaa käytetään täsmäyttämään viennit siirtohintataulussa.
+5. Valitse **Kirjanpito** &gt; **Kirjausasetukset** &gt; **Konsernin sisäinen laskenta** ja määritä USSI:n ja FRSI:n suhde.
 
 ## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>Esimerkki 2: Luo ja kirjaa konsernin sisäinen aikaraportti
 USSI:n, lainaajayrityksen, on luotava ja kirjattava FRSI:n, lainaavan yrityksen, projektin aikaraportti. Tämän tehtävän edellyttämille vaiheille on kaksi aloituskohtaa.

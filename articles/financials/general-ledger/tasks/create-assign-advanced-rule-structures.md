@@ -24,7 +24,7 @@ ms.lasthandoff: 10/27/2017
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>Luo ja määritä lisäsääntörakenteet
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tehtäväopastuksessa käsitellään lisäsääntörakenteen luomista ja sen määrittämistä tilirakenteeseen. Opastuksessa käytetään USMF-demoyritystä.
 

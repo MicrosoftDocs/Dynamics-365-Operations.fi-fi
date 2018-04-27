@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-intercompany-project-invoicing"></a>Konsernin sisäisen projektilaskutuksen määrittäminen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä menettely osoittaa, miten projektin laskutus määritetään kahden organisaation yrityksen välillä. Tässä tehtävässä käytetään USSI-tietojoukkoa.
 

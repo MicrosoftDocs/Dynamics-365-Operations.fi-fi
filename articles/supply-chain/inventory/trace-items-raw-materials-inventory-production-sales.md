@@ -19,17 +19,16 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 98f5696cd6a279bdf0f8d9026a74e5a9bccd2f13
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Nimikkeiden ja raaka-aineiden seuranta varastossa, tuotannossa ja myynnissä
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, kuinka voit määrittää nimikkeen seurannan avulla nimikkeiden ja raaka-aineiden aiemman, nykyisen ja tulevan käyttöpaikan tuotanto- ja myyntiprosesseissa.
 
@@ -129,7 +128,7 @@ Kun olet suorittanut seurannan, voit suorittaa tapahtumalle uuden seurannan vali
 Jos haluat käyttää **Uusi taaksepäin**- tai **Uusi eteenpäin** -vaihtoehtoa, on käytettävä **Avaa uudessa ikkunassa** -toimintoa, jotta uusi seuranta näkyisi uudessa ikkunassa.
 
 ## <a name="can-i-save-the-trace-details"></a>Voinko tallentaa jäljitystiedot?
-Voit tallentaa **Tiedot**-välilehden tiedot XML-tiedostoksi valitsemalla **Vie** toimintoruudun ****Seuranta**** -toiminnon alla. Seurantatietojen lisäksi XML-tiedosto sisältää seurantaehdot, ylätason solmun ja käytettävissä olevan määrän. Seurannan tietojen tallentamisesta on hyötyä esimerkiksi siinä tapauksessa, että haluat liittää tiedot laatutilaukseen tai muihin yhteensopivuusasiakirjoihin. Voit määrittää tiedoston tallennussijainnin. Voit tarkastella tiedostoa saman tien valitsemalla **Näytä tiedosto** -vaihtoehdon. **Huomautus:** Tiedosto tallennetaan aina, vaikka haluat vain tarkastella sitä. Oletusarvon mukaan XML-tiedosto avataan selaimen ikkunaan. Voit kuitenkin napsauttaa tiedostoa hiiren kakkospainikkeella, valitsemalla **Avaa sovelluksessa** ja valitsemalla sitten sisällön näyttämiseen käytettävän ohjelman.
+Voit tallentaa <strong>Tiedot</strong>-välilehden tiedot XML-tiedostoksi valitsemalla <strong>Vie</strong> toimintoruudun *<strong><em>Seuranta</em></strong>*-toiminnon alla. Seurantatietojen lisäksi XML-tiedosto sisältää seurantaehdot, ylätason solmun ja käytettävissä olevan määrän. Seurannan tietojen tallentamisesta on hyötyä esimerkiksi siinä tapauksessa, että haluat liittää tiedot laatutilaukseen tai muihin yhteensopivuusasiakirjoihin. Voit määrittää tiedoston tallennussijainnin. Voit tarkastella tiedostoa saman tien valitsemalla <strong>Näytä tiedosto</strong> -vaihtoehdon. <strong>Huomautus:</strong> Tiedosto tallennetaan aina, vaikka haluat vain tarkastella sitä. Oletusarvon mukaan XML-tiedosto avataan selaimen ikkunaan. Voit kuitenkin napsauttaa tiedostoa hiiren kakkospainikkeella, valitsemalla <strong>Avaa sovelluksessa</strong> ja valitsemalla sitten sisällön näyttämiseen käytettävän ohjelman.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Voinko laskea tietyn nimikkeen tai ainesosan saldon?
 Voit viedä yhteenvetosivujen tiedot Microsoft Exceliin. Avaa haluamasi sivu napsauttamalla **Avaa Microsoft Officessa** -kuvaketta ja valitsemalla sitten **Vie Exceliin**. Tämä toiminto on erityisen hyödyllinen silloin, jos haluat laskea laajamittainen saldon nimikkeelle tai ainesosalle **Tapahtumien yhteenveto** -sivulla. **Tapahtumien yhteenveto** -sivulla voit suodattaa tiedot nimikkeen tai ainesosan ja halutessasi erän perusteella ja viedä tiedot sitten Exceliin. Excelissä voit esimerkiksi erotella käytettävissä olevan määrän, myydyn määrän ja tuotannossa käytetyn summan.

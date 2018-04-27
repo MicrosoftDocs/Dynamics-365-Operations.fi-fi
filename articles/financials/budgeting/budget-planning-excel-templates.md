@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Excelin budjettisuunnittelumallit
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa.
 
@@ -42,11 +41,11 @@ Budjettisuunnitelma-asiakirjoja voi tarkastella ja muokata käyttämällä yhtä
 1. Avaa **Budjettisuunnitelmien luettelo** (**Budjetointi** &gt; **Budjettisuunnitelmat**). 
 2. Luo uusi budjettisuunnitelma-asiakirja valitsemalla **Uusi**. 
 
-  [![Budjettisuunnitelmaluettelo](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![Budjettisuunnitelmaluettelo](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. Käytä **Lisää rivi** -vaihtoehtoa, jos haluat lisätä rivejä. Voit tarkastella budjettisuunnitelman asiakirjan asettelun määrityksiä valitsemalla **Asettelut**. 
 
-  [![Budjettisuunnitelmien lisäys](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![Budjettisuunnitelmien lisäys](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 Voit tarkistaa asettelun määritykset ja muuttaa niitä tarvittaessa. 
 1. Siirry kohtaan **Malli** &gt; **Luo** luodaksesi Excel-tiedoston tälle asettelulle. 

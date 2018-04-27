@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7ae0bfdc157a7e2e5b9f871dae487a6f85e889b9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Korkoryhmän korkoprosenttien määrittäminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Korkokoodit sisältävät asetukset, joilla määritetään, milloin korkoa veloitetaan ja miten se lasketaan erääntyneillä tileillä.
 
@@ -47,17 +46,17 @@ Kun korkokoodia käytetään koron laskennassa, luodaan erillinen korkolasku kut
 ## <a name="interest-rates-based-on-a-percentage"></a>Prosenttiosuuksiin perustuvat korkotasot
 Voit määrittää korkotasot, jotka laskevat määritetyn prosenttiosuuden.
 
--   Korkosumman koskee kaikkia valuuttoja.
--   Korkosumman rajojen antaminen on valinnaista.
--   **Prosentti** valitaan **Korkokoodien määrittäminen** -sivun **Käytä korkolaskennan perusteena** -kentässä.
+- Korkosumman koskee kaikkia valuuttoja.
+- Korkosumman rajojen antaminen on valinnaista.
+- <strong>Prosentti</strong> valitaan** <strong>Korkokoodien määrittäminen</strong> -sivun <strong>**Käytä korkolaskennan perusteena</strong> -kentässä.
 
 Jos esimerkiksi haluat määrittää korkokoodin, joka määrää 5 prosentin koron jokaista kahta kuukautta kohti, jonka laskun maksaminen ylittää tapahtuman eräpäivän, anna arvo 2 **Koronlaskentaväli**-kenttään ja valitse **Kuukausi**.
 
 ## <a name="interest-rates-based-on-amounts"></a>Summin perustuvat korkotasot
 Voit määrittää korkotasot, jotka laskevat määritetyn summan valuuttaa kohden.
--   Korkosumma on määritettävä jokaiselle korkokoodin valuutalle.
--   Korkosumman rajojen antaminen on valinnaista.
--   **Summa** valitaan **Korkokoodien määrittäminen** -sivun **Käytä korkolaskennan perusteena** -kentässä.
+- Korkosumma on määritettävä jokaiselle korkokoodin valuutalle.
+- Korkosumman rajojen antaminen on valinnaista.
+- <strong>Summa **valitaan **Korkokoodien määrittäminen</strong> -sivun <strong>Käytä korkolaskennan perusteena</strong> -kentässä.
 
 Jos esimerkiksi haluat määrittää korkokoodin, joka määrää 25,00 valuuttayksikön koron jokaista 20 päivää kohti, jonka laskun maksaminen ylittää tapahtuman eräpäivän, anna arvo 20 **Koronlaskentaväli**-kentässä ja valitse **Päivä**.
 
@@ -84,7 +83,7 @@ Määrität alueen tiedot seuraavasti.
 | 1,001          | 2                  |
 | 5,001          | 3                  |
 
- 
+
 ## <a name="example-2-interest-by-range--days"></a>Esimerkki 2: Korko alueen mukaan = päivät
 --------------------------------------------------
 
@@ -105,7 +104,7 @@ Määrität alueen tiedot seuraavasti.
 | 61             | 15                 |
 | 91             | 20                 |
 
- 
+
 ## <a name="example-3-interest-by-range--months"></a>Esimerkki 3: Korko alueen mukaan = kuukaudet
 ----------------------------------------------------
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-the-relationships-between-organizational-units"></a>Organisaatioyksiköiden välisten suhteiden suunnittelu
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Menettely opastaa organisaatioyksiköiden välisten suhteiden suunnittelemisessa. Luo uuden organisaation tarkoitus, ennen kuin määrität suhteen. Voit myös käyttää aiemmin luotua organisaation tarkoitusta. Tämä menettely tehdään valmiiksi käyttämällä esittely-yritystä USRT. Tämä tehtävä on tarkoitettu järjestelmänvalvojan roolille.
 

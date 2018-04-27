@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-channel-attributes"></a>Määritä kanavamääritteet
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Monipuolista kanavaa lisäämällä kanavan ja tuotemääritteitä. Organisaation oletushierarkia on lisättävä, ennen kuin määritteet voidaan määrittää.
 

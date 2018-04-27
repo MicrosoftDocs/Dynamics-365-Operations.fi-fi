@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>Konfiguraation suunnitteleminen tietojen tuomiseksi ulkoisesta tiedostosta CSV-muotoon (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Voit suunnitella tämän menettelyn avulla sähköisen raportoinnin (ER) konfiguraatioita, joilla tuodaan tietoja ulkoisesta tiedostosta CSV-muodossa Dynamics 365 for Finance and Operationsiin. Tällä menettelyllä luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Näitä vaiheita varten on suoritettava ensin ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet. 
 

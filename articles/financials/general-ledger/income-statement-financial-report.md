@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="income-statement-financial-report"></a>Tuloslaskelman talousraportti
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan tuloilmoituksen oletusraporttia. Siinä myös kuvataan rakenneosat, jotka liittyvät tähän raporttiin. 
 
@@ -60,7 +59,7 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
     -   **FD** – nykyisen kauden taloushallinnon tiedot
     -   **FD** – taloushallinnon tiedot vuoden alusta
 
- 
+
 
 <a name="see-also"></a>Lisätietoja
 --------

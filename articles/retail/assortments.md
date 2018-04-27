@@ -23,7 +23,7 @@ ms.lasthandoff: 03/12/2018
 ---
 
 # <a name="assortment-management"></a>Toimintojen hallinta
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Yleiskuvaus
 Microsoft Dynamics 365 for Retailissa on *valikoimia*, joilla voi hallita tuotteiden saatavuutta eri kanavissa. Valikoimat määrittävät, mitkä tuotteet ovat saatavana tietyissä myymälöissä tiettyinä aikoina.

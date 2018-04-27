@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Tässä aiheessa kerrotaan, miten vastaajien täyttämien kyselylomakkeiden tuloksia voidaan tarkastella ja arvioida. 
 

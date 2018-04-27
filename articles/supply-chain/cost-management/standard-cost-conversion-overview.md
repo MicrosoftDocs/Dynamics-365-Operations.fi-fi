@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="standard-cost-conversion-overview"></a>Standardikustannuksen muuntamisen yleiskuvaus
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan prosessia, jonka avulla määritetään ja suoritetaan standardikustannusmuunto. Luetellut vaiheet suoritetaan sen jälkeen, kun standardikustannusmuunnon edellytykset ovat täyttyneet. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-routes"></a>Määritä konfiguraation reititykset
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä keskitytään määrittämään konfiguraatioreitti, joka määrittää, missä järjestyksessä konfiguraatioryhmät esitetään. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä on kuudes kahdeksasta menettelystä, joissa selitetään, miten dimensioihin perustuvia konfiguraatioyhdistelmiä luodaan.
 

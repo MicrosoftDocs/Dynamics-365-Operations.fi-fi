@@ -26,7 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="credit-limits-for-customers"></a>Asiakkaiden luottorajat
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Voit määrittää asiakkaillesi myönnettävän luoton asettamalla luottorajoja. Jos olet määrittänyt luottorajan, se tarkistetaan automaattisesti, kun käyttäjä yrittää päivittää asiakirjan. Jos luottoraja ylittyy, käyttäjälle näytetään sanoma. Tämä artikkeli on yleiskatsaus luottorajojen toimintaan, ja se vastaa seuraaviin kysymyksiin:
 

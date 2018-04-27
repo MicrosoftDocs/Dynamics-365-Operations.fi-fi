@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounts-payable-invoice-matching"></a>Ostoreskontran laskujen täsmäytys
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ostoreskontran laskujen täsmäytys on prosessi, jossa täsmäytetään toimittajan laskun, ostotilauksen ja tuotteen vastaanoton tiedot.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-designer-interface"></a>Report Designer -ohjelman käyttöliittymä
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa käsitellään Report Designerissa liikkumista ja omia tarpeita vastaamien asetusten käyttämistä. 
 

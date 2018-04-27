@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-accounting-terminology"></a>Kustannuslaskennan sanasto
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa määritetään kustannuslaskennassa käytettyjä keskeisiä termejä.
 
@@ -150,14 +149,14 @@ Voit määrittää kaavan kohdistusperusteen avulla kaavojen lisäasetuksia oike
 |  + |  Lisäys |
 |  – |  Vähennyslasku |
 | *  | Kertolasku  |
-    
+
 Perinteisiä JOS-lausekkeita ei tueta. Voit kuitenkin lausekkeita ja tarkistaa niiden totuusarvon.
 
 |  **Tiliotteen oikeellisuustarkistus** | **Laskutoimitus**  |
 |---|---|
 |  a > b| Tosi  |
 |  a > b |  Epätosi |
-    
+
 **Yleiskustannus**
 
 Yleiskustannuksilla tarkoitetaan liiketoiminnan juoksevia toimintakustannuksia. Ne ovat kustannuksia, joita ei voi yhdistää suoraan yrityksen liiketoimintoihin. Seuraavassa on joitakin esimerkkejä yleiskustannuksista:

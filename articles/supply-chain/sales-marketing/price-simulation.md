@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-simulation"></a>Hintasimulointi
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja tarjousten hintasimuloinneista. Hintasimulointien avulla voidaan arvioida vähennysten vaikutusta tuleviin myyntihintoihin tarjousprosessin aikana, ennen kuin tietty hinta otetaan käyttöön.
 

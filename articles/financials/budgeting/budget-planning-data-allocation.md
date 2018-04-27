@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-data-allocation"></a>Budjettisuunnittelun tietojen kohdistus
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja Microsoft Dynamics 365 for Finance and Operationsin käytettävissä olevista kohdistustavoista ja niiden käyttämisestä.  
 

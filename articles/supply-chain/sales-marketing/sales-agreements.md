@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-agreements"></a>Myyntisopimukset
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa on tietoja myyntisopimuksista. Myyntisopimus on sopimus, jolla asiakas vahvistaa ostavansa tuotetta tietyn määrän tai tietyn summan tietyssä ajassa saadakseen erikoishinnan ja alennuksia.
 

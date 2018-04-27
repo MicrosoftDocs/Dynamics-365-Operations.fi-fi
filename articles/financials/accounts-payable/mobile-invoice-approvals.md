@@ -18,17 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 98e32298d1c8285437adf3df9820a71e7a0d7f6c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Mobiililaskujen hyväksynnät
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations -sovelluksen mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiilin käyttökokemuksen. Vaativimmissa skenaarioissa ympäristö sallii myös, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä mobiiliympäristössä on käydä läpi joitakin suunnittelutilanteita. Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi. Tämä ohjeaihe auttaa sinua suunnittelemaan tilanteen muita variaatioita ja sitä voidaan soveltaa myös muihin tilanteisiin, jotka eivät liity toimittajan laskuihin.
 
@@ -127,7 +126,7 @@ Yleisenä ohjeena voi sanoa, että kun työskentelet mobiilisuunnittelijan kanss
 ### <a name="create-the-workspace"></a>Luo työtila
 
 1.  Avaa selaimessa Finance and Operations ja kirjaudu sisään.
-2.  Kun olet kirjautunut sisään, lisää **&mode=mobile** URL-osoitteeseen (kuten seuraavassa esimerkissä) ja päivitä sivu: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
+2.  Kun olet kirjautunut sisään, lisää **&mode=mobile** URL-osoitteeseen (kuten seuraavassa esimerkissä) ja päivitä sivu: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
 3.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**. Mobiilisovelluksen suunnitteluohjelma pitäisi tulla näkyviin samoin kuin tehtävän tallennustoiminto.
 4.  Luo uusi työtila napsauttamalla **Lisää**. Kirjoita tässä esimerkissä työtilan nimeksi **Omat hyväksynnät**.
 5.  Anna kuvaus.
@@ -173,23 +172,23 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
 
 Voit suunnitella laskun tietojen sivun käyttämällä Finance and Operationsin **VendMobileInvoiceHeaderDetails**-sivua. Huomaa, että riippuen järjestelmässäsi olevien laskujen määrästä tällä sivulla näytetään vanhin lasku (lasku, joka on luotu ensin). Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tässä tarvitaan vain jotkin laskutiedot, että voimme suunnitella mobiilisivun. [![Työnkulku-sivu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  Korvaa Finance and Operationsin URL-osoitteessa valikkovaihtoehto nimi merkkijonolla **VendMobileInvoiceHeaderDetails**, jos haluat avata lomakkeen
-2.  Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.
-3.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
-4.  Valitse **Omat toimittajalaskut** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.
-5.  Valitse **Kentät** -välilehdessä sarakkeen otsikko **Ruudukko**.
-6.  Valitse **Ominaisuudet** &gt; **Lisää sivu**. **Huomautus:** Kun valitset **Ruudukko**-otsikon ja lisäät sivun, yhteys tietosivuun muodostetaan automaattisesti.
-7.  Kirjoita sivun otsikko, esimerkiksi **Laskun tiedot** ja kuvaus, kuten **Näytä laskun otsikko ja rivitiedot**.
-8.  Klikkaa **Valitse kentät**. Huomaa, että kentät näytetään loppukäyttäjille lisäämisjärjestyksessä. Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen. 
-9.  Lisää seuraavat kentät otsikosta tämän skenaarion vaatimusten mukaan:
-    - Toimittajan nimi
-    - Laskun kokonaissumma
-    - Laskutusasiakasnumero
-    - Laskun numero
-    - Laskun päivämäärä
-    - Laskun kuvaus
-    - Eräpäivä
-    - Laskutusvaluutta
+1. Korvaa Finance and Operationsin URL-osoitteessa valikkovaihtoehto nimi merkkijonolla **VendMobileInvoiceHeaderDetails**, jos haluat avata lomakkeen
+2. Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.
+3. Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
+4. Valitse <strong>Omat toimittajalaskut **-sivu, jonka loit aiemmin ja valitse sitten **Muokkaa</strong>.
+5. Valitse **Kentät** -välilehdessä sarakkeen otsikko **Ruudukko**.
+6. Valitse **Ominaisuudet** &gt; **Lisää sivu**. **Huomautus:** Kun valitset **Ruudukko**-otsikon ja lisäät sivun, yhteys tietosivuun muodostetaan automaattisesti.
+7. Kirjoita sivun otsikko, esimerkiksi **Laskun tiedot** ja kuvaus, kuten **Näytä laskun otsikko ja rivitiedot**.
+8. Klikkaa **Valitse kentät**. Huomaa, että kentät näytetään loppukäyttäjille lisäämisjärjestyksessä. Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen. 
+9. Lisää seuraavat kentät otsikosta tämän skenaarion vaatimusten mukaan:
+   - Toimittajan nimi
+   - Laskun kokonaissumma
+   - Laskutusasiakasnumero
+   - Laskun numero
+   - Laskun päivämäärä
+   - Laskun kuvaus
+   - Eräpäivä
+   - Laskutusvaluutta
 
 10. Lisää seuraavat kentät sivun riviruudukosta:
     - Hankintaluokka
@@ -199,7 +198,7 @@ Voit suunnitella laskun tietojen sivun käyttämällä Finance and Operationsin 
     - Valmisteveron määrä
 
 11. Kun kaikki edellisten kahden vaiheen kentät on lisätty, valitse **Valmis**. Sivun tulisi olla likipitäen kuin seuraavassa kuvassa.
-[![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 12. Valitse **Valmis** poistuaksesi muokkaustilasta.
 13. Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
 14. Tallenna muutokset valitsemalla **Julkaise työtila**.
@@ -296,14 +295,14 @@ Voit lisätä työnkulkutoimintoja Finance and Operationsin **VendMobileInvoiceH
 
 ### <a name="vendor-invoice-attachments"></a>Toimittajalaskujen liitteet
 
-1.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
-2.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
-3.  Valitse **Laskun tiedot** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.
-4.  Määritä **Tiedostojen hallinta** -asetukseksi **Kyllä** alla olevan esimerkin mukaisesti. **Huomautus:** Jos ei ole liitteitä ei ole tarpeen näyttää mobiililaitteessa, voit jättää tämän vaihtoehdon arvoksi **Ei**, joka on oletusasetus.
-![Tiedoston hallinta](./media/docmanagement-216x300.png)
-6.  Valitse **Valmis** poistuaksesi muokkaustilasta.
-7.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
-8.  Tallenna muutokset valitsemalla **Julkaise työtila**.
+1. Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
+2. Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
+3. Valitse <strong>Laskun tiedot **-sivu, jonka loit aiemmin ja valitse sitten **Muokkaa</strong>.
+4. Määritä **Tiedostojen hallinta** -asetukseksi **Kyllä** alla olevan esimerkin mukaisesti. **Huomautus:** Jos ei ole liitteitä ei ole tarpeen näyttää mobiililaitteessa, voit jättää tämän vaihtoehdon arvoksi **Ei**, joka on oletusasetus.
+   ![Tiedoston hallinta](./media/docmanagement-216x300.png)
+5. Valitse **Valmis** poistuaksesi muokkaustilasta.
+6. Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
+7. Tallenna muutokset valitsemalla **Julkaise työtila**.
 
 ### <a name="vendor-invoice-line-distributions"></a>Toimittajan laskujen rivijaot
 

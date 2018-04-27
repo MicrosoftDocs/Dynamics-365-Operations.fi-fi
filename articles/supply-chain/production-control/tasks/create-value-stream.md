@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-value-stream"></a>Luo arvovirta
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Arvovirrat ovat toimintayksiköitä, joilla ryhmitetään vähintään yksi tuotantovirta. Tuotantovirran määritettävän edellyttää arvovirran määrittämistä ensin.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Dynamics AX 7.0.1 -sovellusversion uudet ja muuttuneet ominaisuudet (toukokuu 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa käsitellään Microsoft Dynamics AX 7.0.1 -sovellusversion uusia tai muuttuneita ominaisuuksia. Tämä versio julkaistiin toukokuussa 2016 ja sen koontiversio on 7.0.1265.23014.
 
@@ -44,12 +43,14 @@ Tässä artikkelissa käsitellään Microsoft Dynamics AX 7.0.1 -sovellusversion
 | Määritä ER-kohteet niin, että muodon tulos on ohjattava tiettyyn kohteeseen: tiedosto, sähköposti tai arkisto (Microsoft SharePoint -kansio tai Microsoftin Azuren tallennustila). | Kun ER-määritys suoritettiin aiemmin, avautuva sanomaruutu pyysi käyttäjää tallentamaan tai avaamaan tiedoston. Voit nyt määrittää kohteen valmiiksi erikseen kullekin muotomääritykselle ja tuloskomponentille (kansio tai tiedosto). Käyttäjät, joilla on tarvittavat käyttöoikeudet, voivat myös muokata kohdeasetuksia suorituksen aikana. |
 
 ## <a name="pos--microsoft-dynamics-ax-retail"></a>Myyntipiste – Microsoft Dynamics AX Retail
+
 |                                |                                                                                                                                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Mitä voit tehdä?**           | **Miksi tämä on tärkeää?**                                                                                                                                                              |
 | Käytä Google Chrome -selainta. | Vähittäismyyjät voivat nyt käynnistää pilvimyyntipisteen Chrome-selaimesta ja saada käyttöönsä kaikki pilvimyyntipisteen Microsoft Edgessä ja Internet Explorerissa käytettävissä olevat toiminnot. |
 
 ## <a name="financial-reporting"></a>Talousraportointi
+
 |                                                                     |                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Mitä voit tehdä?**                                                | **Miksi tämä on tärkeää?**                                                                                                                                                                                                                                                                                         |
@@ -57,12 +58,14 @@ Tässä artikkelissa käsitellään Microsoft Dynamics AX 7.0.1 -sovellusversion
 | Et voi enää valita raportin suunnittelutoiminnon asetuksia, jotka eivät kelpaa. | Useita Management Reporterin markkinointiversioissa käytettyjä raportin suunnittelutoiminnon asetuksia ei voi käyttää tässä Dynamics AX -versiossa. Nämä asetukset liittyivät talousraportin suunnitteluun, tulostukseen ja linkittämiseen. Nämä asetukset on poistettu talousraportin suunnittelutoiminnosta käyttäjän virheiden estämiseksi. |
 
 ## <a name="financial-management"></a>Taloushallinto
+
 |                                                            |                                                                  |
 |------------------------------------------------------------|------------------------------------------------------------------|
 | **Mitä voit tehdä?**                                       | **Miksi tämä on tärkeää?**                                       |
 | Luo positiivisia maksutiedostoja ostoreskontramaksuille. | Positiivisia maksutiedostoja voidaan luoda sekkipetosten ehkäisemiseksi. |
 
 ## <a name="warehouse-and-production"></a>Fyysinen varasto ja tuotanto
+
 |                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Mitä voit tehdä?**                                                                                                                                                                                                                                                                                                                                                                    | **Miksi tämä on tärkeää?**                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -72,7 +75,7 @@ Tässä artikkelissa käsitellään Microsoft Dynamics AX 7.0.1 -sovellusversion
 | Tuoterakenteet, joiden tuoterakenteiden ensimmäisellä tasolla on kehärakenteita, jätetään materiaalin resurssisuunnittelun tuoterakennetason laskennan ulkopuolelle.                                                                                                                                                                                                                                     | Tuoterakennehierarkiaan kehäkiertoa aiheuttavien tuotantotilausten tuotevarianteille ei voi määrittää oikeita tuoterakennetasoja.                                                                                                                                                                                                                                                                                                  |
 | Laske erilliset tuoterakennetasot materiaalin resurssisuunnittelulle ja kustannuslaskennalle: • Materiaalin resurssisuunnittelun tuoterakennetasot lasketaan uudessa **ReqItemLevel**-taulussa. Päättyneet tuotantotilaukset ohitetaan laskennassa. • Tuotannon kustannuslaskennan tuoterakennetasot lasketaan **InventTable**-taulussa. Päättyneet tuotantotilaukset sisällytetään laskentaan. | • Kun suoritetaan materiaalin resurssisuunnittelua, kuten pääsuunnittelun suunnitelman ajoitusta ja hajotusta, vain materiaalin resurssisuunnittelussa käytetyt tuoterakennetasot on laskettava uudelleen. Toisin sanoen tuotannon kustannuslaskennassa käytettyjä tuoterakennetasoja ei tarvitse laskea. • Kun suoritetaan kustannuslaskentatoimintoja, kuten varaston sulkemista, vain tuotannon kustannuslaskennan tuoterakennetasot on laskettava uudelleen. |
 
- 
+
 
 <a name="see-also"></a>Lisätietoja
 --------

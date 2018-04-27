@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-inventory-quantities"></a>Varastomäärien varaaminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa kuvataan varastomäärien varaamisen eri vaihtoehtoja.
 
@@ -50,6 +49,7 @@ Varastovarauskäytännöt on määritetty **Nimikemalliryhmät**-sivulla **Varas
 ### <a name="policies-on-the-item-model-groups-page"></a>Nimikemalliryhmän sivun käytännöt
 
 **Varastokäytännöt**-osa sisältää seuraavat varauskäytännöt.
+
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Varauskäytäntö**  | **Kuvaus**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -63,6 +63,7 @@ Varastovarauskäytännöt on määritetty **Nimikemalliryhmät**-sivulla **Varas
 #### <a name="example-for-fifo-date-controlled-and-backward-from-ship-date"></a>Esimerkki päivämäärän mukaan ohjatusta FIFO-varauksesta ja lähetyspäivästä taaksepäin -varauksesta
 
 Tässä esimerkissä nimiketunnuksen A käytettävissä olevalla varastolla on kolme eri eränumeroa.
+
 | Nimiketunnus | Eränumero | Määrä | Päivämäärä             |
 |-------------|--------------|----------|------------------|
 | A           | 1 000         | 5        | 2.2.2016 |

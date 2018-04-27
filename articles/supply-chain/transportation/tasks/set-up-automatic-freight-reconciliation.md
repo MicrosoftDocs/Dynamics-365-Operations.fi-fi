@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Rahdin automaattisen täsmäytyksen määrittäminen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kuvataan, miten automaattisen rahdintäsmäytyksen tiedot määritetään. Yleensä tämän prosessin tekee varastopäällikkö. Voit käyttää tätä menettelyä esittely-yrityksessä USMF.
 

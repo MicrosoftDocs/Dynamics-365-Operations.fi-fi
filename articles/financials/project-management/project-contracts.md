@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-contracts"></a>Projektisopimukset
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on esimerkkejä erityyppisille projekteille ja rahoituslähteille luotavista projektisopimuksista, sopimusten hallinnasta ja projektin asiakkaiden laskuttamisesta Microsoft Dynamics 365 for Finance and Operationsissa.
 

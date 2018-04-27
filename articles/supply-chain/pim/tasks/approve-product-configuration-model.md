@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-a-product-configuration-model"></a>Tuotteen konfigurointimallin hyväksyntä
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämän menettelyn suorittaminen edellyttää, että ainakin yksi tuotemääritysmalli on käytettävissä. Tämä menettely käyttää USMF-yrityksen demotietojen korkealaatuista kaiutinmallia. Huomaa, että tämä malli on jo hyväksytty, mutta menettely selittää koko prosessin.
 

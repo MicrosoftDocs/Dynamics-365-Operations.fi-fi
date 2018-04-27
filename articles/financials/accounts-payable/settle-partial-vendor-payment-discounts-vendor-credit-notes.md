@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa käydään läpi skenaario, jossa hyvityslasku selvitetään laskua vastaan.
 

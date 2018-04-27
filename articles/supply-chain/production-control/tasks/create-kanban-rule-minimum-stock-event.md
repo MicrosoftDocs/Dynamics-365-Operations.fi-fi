@@ -23,14 +23,14 @@ ms.contentlocale: fi-fi
 ms.lasthandoff: 09/29/2017
 
 ---
-# Luo kanban-sääntö käyttäen vähimmäisvarastotapahtumaa
+# <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Luo kanban-sääntö käyttäen vähimmäisvarastotapahtumaa
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä menettely keskittyy asetuksiin, jotka tarvitaan kanban-säännön luomiseen vähimmäisvarastotapahtuman perusteella sen varmistamiseksi, että tiettyä tuotetta on aina saatavilla tietyssä paikassa. Kanban-sääntö luodaan materiaalin siirtämiselle sijaintiin, kun varaston taso laskee alle 200 kappaleen. Tarvittavat kanbanit luodaan ajamalla tarvekohdistustapahtuman käsittely. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF. Tämä tehtävä on tarkoitettu prosessiteknikolle tai arvovirtaa hallitsevalle työntekijälle uuden tai muokatun tuotteen tuotannon valmisteluun lean-ympäristössä.
 
 
-## Luo uusi kanban-sääntö
+## <a name="create-a-new-kanban-rule"></a>Luo uusi kanban-sääntö
 1. Siirry kohtaan Tuotetietojen hallinta > Lean-valmistus > Kanban-säännöt.
 2. Valitse Uusi.
 3. Valitse Tyyppi-kentän arvoksi "Otto".
@@ -46,7 +46,7 @@ Tämä menettely keskittyy asetuksiin, jotka tarvitaan kanban-säännön luomise
 9. Valitse Varaston täydennystapahtuma -kentässä Erä.
     * Tämä luo kanbanit materiaalitarpeen täyttämisellä liittyvässä sijainnissa tarvekohdistustapahtuman käsittelyn aikana.  
 
-## Aseta nimikkeen vähimmäismäärä
+## <a name="set-the-minimum-quantity-for-the-item"></a>Aseta nimikkeen vähimmäismäärä
 1. Napsauta Tuote-kentän linkkiä.
 2. Käytä Nimiketunnus-kentän linkkiä napsauttamalla.
 3. Laajenna tuotekuvan tietoruutu.
@@ -58,7 +58,7 @@ Tämä menettely keskittyy asetuksiin, jotka tarvitaan kanban-säännön luomise
     * Määritä Varasto-arvoksi 12.  
 9. Määritä vähimmäisarvoksi "200".
 
-## Suorita tapahtumien luonnin erätyö
+## <a name="run-the-batch-event-creation-job"></a>Suorita tapahtumien luonnin erätyö
 1. Valitse Laadunvalvonta > Kausittaiset tehtävät > Kanban-työn eräkäsittely > Tarvekohdistustapahtuman käsittely.
 2. Valitse OK.
 3. Siirry kohtaan Tuotetietojen hallinta > Lean-valmistus > Kanban-säännöt.

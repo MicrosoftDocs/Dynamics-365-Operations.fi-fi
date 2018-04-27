@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-withholding-tax"></a>Määritä ennakonpidätys
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ennakonpidätys on toimittajilta perittävä vero, josta ei synny arvonlisäverotapahtumia. Toimittajien maksuista laskettava ennakonpidätys on velkaa. Sen vuoksi ennakonpidätyksen voi kirjata vain tase- tai velkatileille. Tässä tehtävän ohjauksessa kerrotaan, miten ennakonpidätys määritetään.
 

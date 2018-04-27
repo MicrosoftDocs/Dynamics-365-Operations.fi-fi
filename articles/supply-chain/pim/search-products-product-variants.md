@@ -20,18 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 08715b4c31c42dfa23d72b1035a1e7cc737c13a2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Käytä <strong>Nimiketunnus </strong>kenttää tuote- ja tuotevarianttihakuun luodessasi manuaalisesti ostotilausrivin tai myyntitilausrivin.  Näin löydät nopeasti tuotevariantit, kun käytettävissä on vain konfiguraation merkkijono tai jokin tuotedimensioista.
 
@@ -72,7 +72,7 @@ Esimerkkejä tuotteen ja tuotevariantin tunnuksista ja dimensioista, joiden peru
 
 Siirry **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuehdot** -sivulle. **Hakuehdot**-sivulla voit määrittää asiakkaan, prospektin ja tuotehaun ehdot. Varmista, että käytät tuotehakuehtoja sivun suodatuksessa. Voit tehdä tämän siirtymällä kohtaan **Tuote** sivun valikossa.  
 
-Voit lisätä näytön tuotenumeron hakuehtoihin napsauttamalla **Uusi** sivun valikosta. Tämä lisää uuden tietueen **Hakuehdot**-ruudukkoon. Avaa **Kentän nimi** -sarakkeen haku ja valitse **DisplayProductNumber**. Lisää tuotteen konfiguraatio hakuehtoihin luomalla uusi tietue **Hakuehdot** -ruudukossa ja valitse **configId** **Kentän nimi** -sarakkeessa. Luo samalla tavalla tietue **Kentän nimi** **InventColorId** väri-dimensiolle, **InventSizeId** koko-dimensiolle ja **InventStyleId** malli-dimensiolle.
+Voit lisätä näytön tuotenumeron hakuehtoihin napsauttamalla <strong>Uusi</strong> sivun valikosta. Tämä lisää uuden tietueen <strong>Hakuehdot</strong>-ruudukkoon. Avaa <strong>Kentän nimi</strong> -sarakkeen haku ja valitse <strong>DisplayProductNumber</strong>. Lisää tuotteen konfiguraatio hakuehtoihin luomalla uusi tietue <strong>Hakuehdot**-ruudukossa ja valitse **configId</strong> <strong>Kentän nimi</strong> -sarakkeessa. Luo samalla tavalla tietue <strong>Kentän nimi</strong> <strong>InventColorId</strong> väri-dimensiolle, <strong>InventSizeId</strong> koko-dimensiolle ja <strong>InventStyleId</strong> malli-dimensiolle.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Vaihe 2: Täytä tietokantataulu, jota käytetään tuotehaussa
 

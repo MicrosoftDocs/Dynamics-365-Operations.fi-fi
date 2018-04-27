@@ -19,16 +19,18 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 19d725f15f00afce1a2ae4b336226f1dafa94b41
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cf35406b43c1ec40a7c248b970559b65fcd8a6c6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-workflows-for-expense"></a>Kulunhallinnan työnkulkujen määrittäminen
 
-[!include[banner](../includes/banner.md)] Voit määrittää työnkulkuprosessin, jota matka- ja kuluasiakirjojen tarkistamiseen ja hyväksyntään. Asiakirjat, joille työnkulun voi määrittää, ovat muun muassa kuluraportteja, matkustusehdotuksia ja käteisennakkopyyntöjä.
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Voit määrittää työnkulkuprosessin, jota matka- ja kuluasiakirjojen tarkistamiseen ja hyväksyntään. Asiakirjat, joille työnkulun voi määrittää, ovat muun muassa kuluraportteja, matkustusehdotuksia ja käteisennakkopyyntöjä.
 
 Työnkulku vastaa liiketoimintaprosessia. Se määrittää, miten asiakirja "kulkee" järjestelmässä, ja osoittaa, kenen on saatettava tehtävä valmiiksi tai hyväksyttävä asiakirja. Työnkulkujärjestelmän käyttö hyödyttää organisaatiotasi monin eri tavoin:
 
@@ -42,13 +44,15 @@ Työnkulku vastaa liiketoimintaprosessia. Se määrittää, miten asiakirja "kul
 
 Seuraavassa taulukossa on esitetty erityyppisiä työnkulkuja, joita voit luoda **kulunhallinnassa**.
 
-| **Tyyppi**                           | **Käytä tätä tyyppiä**                                                 |     
-|------------------------------------|----------------------------------------------------------------------|
-| **Kuluraportti**                 | Kuluraporttien hyväksyntätyönkulkujen luominen.                       |      
-| **Kuluraportin automaattinen kirjaaminen**    | Luo automaattisen kirjaamisen työnkulut kuluraportteja varten.              |     
-| **Kulurivin nimike**              | Kuluraporttien rivinimikkeiden hyväksyntätyönkulkujen luominen.         |     
-| **Kulurivinimikkeen automaattinen kirjaaminen** | Kuluraporttien rivinimikkeiden automaattisten kirjaustyönkulkujen luominen.|
-| **Matkahankinta**             | Luo matkustusehdotusten hyväksyntätyönkulkuja.                   |    
-| **Käteisennakkopyyntö**           | Luo hyväksyntätyönkulkuja käteisennakkopyynnöille.                 |     
-| **Arvonlisäveron palautus**               | Luo arvonlisäveron (ALV) palautuksen hyväksyntätyönkulkuja. |       
+
+|              <strong>Tyyppi</strong>              |                   <strong>Käytä tätä tyyppiä</strong>                   |
+|-------------------------------------------------|-----------------------------------------------------------------------|
+|         <strong>Kuluraportti</strong>         |            Kuluraporttien hyväksyntätyönkulkujen luominen.             |
+|  <strong>Kuluraportin automaattinen kirjaaminen</strong>   |        Luo automaattisen kirjaamisen työnkulut kuluraportteja varten.        |
+|       <strong>Kulurivin nimike</strong>        |     Kuluraporttien rivinimikkeiden hyväksyntätyönkulkujen luominen.      |
+| <strong>Kulurivinimikkeen automaattinen kirjaaminen</strong> | Kuluraporttien rivinimikkeiden automaattisten kirjaustyönkulkujen luominen. |
+|       <strong>Matkahankinta</strong>       |          Luo matkustusehdotusten hyväksyntätyönkulkuja.           |
+|      <strong>Käteisennakkopyyntö</strong>      |         Luo hyväksyntätyönkulkuja käteisennakkopyynnöille.          |
+|        <strong>Arvonlisäveron palautus</strong>        | Luo arvonlisäveron (ALV) palautuksen hyväksyntätyönkulkuja.  |
+
 

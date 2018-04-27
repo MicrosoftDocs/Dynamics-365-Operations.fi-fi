@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>Luo ja määritä poistoprofiileja
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Poistoprofiilit määrittävät käyttöomaisuuserän poiston lajin ja tiheyden.   Tässä tallenteessa käytetään USMF-esittely-yritystä ja kirjanpitäjän roolia.
 

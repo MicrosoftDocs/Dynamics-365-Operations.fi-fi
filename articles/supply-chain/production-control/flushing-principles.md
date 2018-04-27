@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Raaka-aineiden kulutuksen hallinta materiaaliottosääntöjen avulla
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Materiaalinottosäännöt vastaavat erilaisia tuotantoprosesseissa käytettäviä raaka-aineiden kulutusstrategioita. Kulutus on prosessi, jossa materiaali vähennetään käytettävissä olevasta varastosta ja joka määrittää kulutettujen materiaalien arvon tuotantotilausten ja erätilausten **keskeneräiselle työlle** (KET). Raaka-aineet kulutetaan yleensä sijainnista, joka on määritetty materiaalia kuluttavalle prosessille. Tätä sijaintia kutsutaan tuotannon varastosijainniksi.
 

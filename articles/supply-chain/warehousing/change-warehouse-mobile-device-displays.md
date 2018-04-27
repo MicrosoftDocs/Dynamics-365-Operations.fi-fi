@@ -28,8 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 # <a name="warehouse-mobile-device-display-settings"></a>Varaston mobiililaitteen näyttöasetukset
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan mobiililaitteen näytön ulkoasun määrittämistä ja kuinka pikanäppäimet yhdistetään ohjaimiin, kuten painikkeisiin. 
 

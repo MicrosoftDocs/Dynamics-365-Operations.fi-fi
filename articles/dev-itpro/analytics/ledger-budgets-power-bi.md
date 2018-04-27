@@ -26,8 +26,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="actual-vs-budget-power-bi-content"></a>Todellinen vs. budjetti – Power BI -sisältö
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään **Todellinen vs. budjetti** – Microsoft Power BI -sisältöä Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä. 
 
@@ -41,24 +40,25 @@ Tässä ohjeaiheessa käsitellään **Todellinen vs. budjetti** – Microsoft Po
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raportit, jotka sisältyvät Power BI -sisältöön
 Seuraavassa taulukossa on tietoja mittareista, jotka löytyvät **Todellinen vs. budjetti** – Power BI -sisällön kultakin raporttisivulta.
 
-| Raportti                      | Mittarit |
-|-----------------------------|---------|
-| Kulut – todellinen vs. budjetti | <ul><li>Kuluvan vuoden kokonaiskulut</li><li>Kuluvan vuoden budjetoidut kokonaiskulut</li></ul> |
-| Tuotto – todellinen vs. budjetti  | <ul><li>Kuluvan vuoden kokonaistuotto</li><li>Kuluvan vuoden budjetoitu kokonaistuotto</li><ul> |
-| Kulu                     | <ul><li>Kuluvan vuoden kokonaiskulut</li><li>Budjettiin perustuva kulutavoite </li><ul> |
-| Myyntituotto                     | <ul><li>Kuluvan vuoden kokonaistuotto</li><li>Budjettiin perustuva tuottotavoite </li><ul> |
-| Nettotuotto                  | <ul><li>Kuluvan vuoden nettotulot</li><li>Budjettiin perustuva nettotulotavoite </li><ul> |
 
+|           Raportti            |                                       Mittarit                                        |
+|-----------------------------|--------------------------------------------------------------------------------------|
+| Kulut – todellinen vs. budjetti |  <ul><li>Kuluvan vuoden kokonaiskulut</li><li>Kuluvan vuoden budjetoidut kokonaiskulut</li></ul>  |
+| Tuotto – todellinen vs. budjetti  |   <ul><li>Kuluvan vuoden kokonaistuotto</li><li>Kuluvan vuoden budjetoitu kokonaistuotto</li><ul>    |
+|           Kulu           | <ul><li>Kuluvan vuoden kokonaiskulut</li><li>Budjettiin perustuva kulutavoite </li><ul> |
+|           Myyntituotto           |  <ul><li>Kuluvan vuoden kokonaistuotto</li><li>Budjettiin perustuva tuottotavoite </li><ul>  |
+|         Nettotuotto          |  <ul><li>Kuluvan vuoden nettotulot</li><li>Budjettiin perustuva nettotulotavoite </li><ul>  |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
-| Kokonaisuus                    | Sisältö |
-|---------------------------|----------|
-| Kirjanpitotehtävät | Kirjanpidon tapahtumasummat |
-| Budjettitehtävät         | Budjettirekisterin tapahtumasummat |
-| Päätilit             | Päätilit, joiden mukaan raportit suodatetaan |
-| Kirjanpidon kalenterit          | Kirjanpidon kalenterit, joiden mukaan raportit suodatetaan |
-| Kirjanpidot                   | Kirjanpidot, joilla raporit suodatetaan nykyiseen kirjanpitoon |
-| Budjettikoodit              | Budjettikoodit, joiden mukaan raportit suodatetaan |
-| Yritykset            | Yritykset, joilla raporit suodatetaan nykyiseen yritykseen |
+|          Kokonaisuus           |                                     Sisältö                                     |
+|---------------------------|----------------------------------------------------------------------------------|
+| Kirjanpitotehtävät |                    Kirjanpidon tapahtumasummat                    |
+|     Budjettitehtävät     |                   Budjettirekisterin tapahtumasummat                    |
+|       Päätilit       |                        Päätilit, joiden mukaan raportit suodatetaan                        |
+|     Kirjanpidon kalenterit      |                      Kirjanpidon kalenterit, joiden mukaan raportit suodatetaan                       |
+|          Kirjanpidot          |       Kirjanpidot, joilla raporit suodatetaan nykyiseen kirjanpitoon        |
+|       Budjettikoodit        |                        Budjettikoodit, joiden mukaan raportit suodatetaan                         |
+|      Yritykset       | Yritykset, joilla raporit suodatetaan nykyiseen yritykseen |
+
 

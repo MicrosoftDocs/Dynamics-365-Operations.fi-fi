@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduction-keys"></a>Vähennysavaimet
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä artikkeli sisältää esimerkkejä, jotka kuvaavat vähennysavaimen määrittämistä. Artikkelissa kuvataan erilaisia vähennysavaimen asetuksia ja kunkin asetuksen tuloksia. Vähennysavaimen avulla voit määrittää, kuinka ennustevaatimuksia voidaan vähentää.
 
@@ -39,17 +38,19 @@ Tämä artikkeli sisältää esimerkkejä, jotka kuvaavat vähennysavaimen mää
 
 Tämä esimerkki osoittaa, miten vähennysavain pienentää kysynnän ennustetarpeita vähennysavaimen määrittämien prosenttien ja kausien mukaisesti.
 
-1.  Määritä **Vähennysavaimet**-sivulla seuraavat rivit.
-    | Vaihto | Yksikkö  | Prosentti |
-    |--------|-------|---------|
-    | 1      | Kuukausi | 100     |
-    | 2      | Kuukausi | 75      |
-    | 3      | Kuukausi | 50      |
-    | 4      | Kuukausi | 25      |
+1. Määritä **Vähennysavaimet**-sivulla seuraavat rivit.
 
-2.  Linkitä vähennysavain nimikkeen kattavuusryhmään.
-3.  Valitse **Pääsuunnitelmat**-sivulla **Vähennysperiaate** -kentästä **Prosentti - vähennysavain**.
-4.  Luo kysynnän ennuste 1 000 kappaleesta kuukaudessa.
+   | Vaihto | Yksikkö  | Prosentti |
+   |--------|-------|---------|
+   |   1    | Kuukausi |   100   |
+   |   2    | Kuukausi |   75    |
+   |   3    | Kuukausi |   50    |
+   |   4    | Kuukausi |   25    |
+
+
+2. Linkitä vähennysavain nimikkeen kattavuusryhmään.
+3. Valitse **Pääsuunnitelmat**-sivulla **Vähennysperiaate** -kentästä **Prosentti - vähennysavain**.
+4. Luo kysynnän ennuste 1 000 kappaleesta kuukaudessa.
 
 Jos suoritat ennusteajoituksen 1. tammikuuta, kysynnän ennustetarpeita kulutetaan **Vähennysavaimet**-sivulla määritettyjen prosenttien mukaisesti. Pääsuunnitelmaan siirretään seuraavat tarvemäärät.
 
@@ -88,20 +89,21 @@ Jos käytät samaa 1 000 kappaleen kysyntäennustetta kuukaudessa, pääsuunnite
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Esimerkki 3: Ennusteen vähennysperiaatteena Tapahtumat – dynaaminen kausi
 Useimmiten järjestelmät on määritetty siten, että tapahtumat vähentävät kysynnän ennustetta määritetyillä ennustekausilla: viikkoina, kuukausina ja niin edelleen. Nämä kaudet vähennysavaimeen. Kahden kysynnän ennusterivin välinen aika voi kuitenkin myös *vihjata* tiettyyn kauteen.
 
-1.  Luo kysynnän ennuste seuraaville päivämäärille ja määrille.
-    | Päivämäärä       | Kysynnän ennuste |
-    |------------|-----------------|
-    | 1. tammikuuta  | 1 000           |
-    | 5. tammikuuta  | 500             |
-    | 12. tammikuuta | 1 000           |
+1. Luo kysynnän ennuste seuraaville päivämäärille ja määrille.
 
-    Tässä ennusteessa ennustepäivämäärien välillä ei ole selvää jaksoa. Ensimmäisen ja toisen päivämäärän välissä on neljä päivää ja toisen sekä kolmannen päivämäärän välissä seitsemän päivää. Nämä eri aikavälit ovat dynaamisia kausia.
-2.  Luo myyntitilausrivit seuraavasti.
-    | Päivämäärä                             | Myyntitilauksen määrä |
-    |----------------------------------|----------------------|
-    | 15. joulukuuta edellisenä vuonna | 500                  |
-    | 3. tammikuuta                        | 100                  |
-    | 10. tammikuuta                       | 200                  |
+   | Päivämäärä       | Kysynnän ennuste |
+   |------------|-----------------|
+   | 1. tammikuuta  | 1 000           |
+   | 5. tammikuuta  | 500             |
+   | 12. tammikuuta | 1 000           |
+
+   Tässä ennusteessa ennustepäivämäärien välillä ei ole selvää jaksoa. Ensimmäisen ja toisen päivämäärän välissä on neljä päivää ja toisen sekä kolmannen päivämäärän välissä seitsemän päivää. Nämä eri aikavälit ovat dynaamisia kausia.
+2. Luo myyntitilausrivit seuraavasti.
+   | Päivämäärä                             | Myyntitilauksen määrä |
+   |----------------------------------|----------------------|
+   | 15. joulukuuta edellisenä vuonna | 500                  |
+   | 3. tammikuuta                        | 100                  |
+   | 10. tammikuuta                       | 200                  |
 
 Ennustetta vähennetään seuraavasti:
 

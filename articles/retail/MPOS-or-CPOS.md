@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>Modern POS:n tai Cloud POS:n valitseminen
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Tämä ohjeaihe sisältää käyttöönoton suorittajille tarkoitettuja lisätietoja taustasta sekä vihjeitä ja ohjeita seikoista, jotka tulee ottaa huomioon ennen Microsoft Dynamics 365 for Retail -sovelluksen käyttöönottoa. Käyttöönoton suorittajat voivat välttää käyttäjien tyytyväisyyteen tai suorituskykyyn liittyviä ongelmia tutustumalla ja seuraamalla näitä ohjeita käyttöönottoprosessin osana.
 
@@ -92,8 +92,8 @@ Ota seuraavat tiedot huomioon, kun suunnittelet myyntipisteen käyttöönottoa v
 
     Jos annetun laitteen yhteys on hyvin luotettava ja vikasietoinen tai jos jälleenmyyjä hyväksyy tietyn käyttämättömyysajan, suosittelemme jompaakumpaa seuraavista vaihtoehdoista:
 
-    - Käytä MPOS:ia Windows ja ota offline-tila käyttöön.
-    - Ota käyttöön paikallinen RSSU.
+  - Käytä MPOS:ia Windows ja ota offline-tila käyttöön.
+  - Ota käyttöön paikallinen RSSU.
 
     Nämä kaksi vaihtoehtoa eivät sulje toisiaan pois. Jälleenmyyjät saavat luotettavimman topologian ottamalla käyttöön paikallisen RSSU. Se vähentää riippuvuutta Internet-yhteydestä tai Azuren käytettävyydestä. Sen avulla voidaan myös ottaa käyttöön myyntipisteen kassakoneita, joissa on käytössä offline-tila, jos paikallisessa palvelimessa tai verkossa on ongelmia.
 

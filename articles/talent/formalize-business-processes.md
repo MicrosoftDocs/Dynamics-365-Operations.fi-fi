@@ -19,10 +19,10 @@ ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
-ms.openlocfilehash: 48f80eac5009e1a241d501b0c4a3a70b78f5d709
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1b50a97f5e2fc94255ff71702faf91ab36e68eb4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="formalize-business-processes"></a>Liiketoimintaprosessien virallistaminen
@@ -33,10 +33,10 @@ Kun malli on luotu, prosessi voidaan aloittaa ja sitä voi seurata Liiketoiminta
 ## <a name="business-process-template"></a>Liiketoimintaprosessimalli
 Liiketoimintaprosessimalli sisältää ryhmän liiketoimintaprosessin tehtäviä. Henkilöstöpäälliköt ja avustajat voivat luoda liiketoimintaprosesseja oletusarvoisesti.  Tämän voi kuitenkin muuttaa suojausmäärityksessä Ylläpidä yleisiä liiketoimintaprosesseja -tehtävää muokkaamalla.
 
-Jokaiselle prosessille voidaan määrittää prosessin omistaja.  Prosessin omistaja näkee kaikki prosessin tehtävät ja voi määrittää tehtäviä uudelleen tai muuttaa eräpäiviä.  Esimerkiksi henkilöstöosaston johtaja voi luoda etujen tarkistuksen liiketoimintaprosessimallin.  Etuuspäällikkö voidaan määrittää prosessin omistajaksi, jotta hän saa näkemyksen asioista, jotka on suoritettava arvioinnin osana.  Prosessin omistaja ei voi luoda tai poistaa aktiivisia liiketoimintaprosesseja tai liiketoimintaprosessimalleja.
+Jokaiselle prosessille voidaan määrittää prosessin omistaja. Prosessin omistaja näkee kaikki prosessin tehtävät ja voi määrittää tehtäviä uudelleen tai muuttaa eräpäiviä.  Esimerkiksi henkilöstöosaston johtaja voi luoda etujen tarkistuksen liiketoimintaprosessimallin.  Etuuspäällikkö voidaan määrittää prosessin omistajaksi, jotta hän saa näkemyksen asioista, jotka on suoritettava arvioinnin osana.  Prosessin omistaja ei voi luoda tai poistaa aktiivisia liiketoimintaprosesseja tai liiketoimintaprosessimalleja.
 
 ## <a name="task"></a>Tehtävä
-Liiketoimintaprosessi muodostuu tavallisesti useista tehtävistä. Jotkin tehtävät voidaan tehdä valmiiksi Dynamics 365 for Talentissa[?]. Tällainen tehtävä on esimerkiksi sisäisen kurssivalikoiman arviointi. Tässä tapauksessa valikkonimike valitaan Tehtävän linkki -kentässä. Muut tehtävät saattavat sisältää verkkosivuston lomakkeiden tarkastelun tai täyttämisen. Kun tehtävälinkkikentän URL-osoite valitaan, verkko-osoite voidaan kirjoittaa. Voit antaa tähän kenttään sekä ulkoisten että sisäisten sivustojen URL-osoitteita. Voit luoda tehtäviä myös manuaalisesti suoritettaville tehtäville, kuten kaikkien rakenteiden helppokäyttöisyyden arviointi. Tässä tapauksessa tehtävän linkki ei ole pakollinen. Tämän joustavuuden ansiosta voit seurata useita erilaisia tehtäviä kattavana prosessina.
+Liiketoimintaprosessi muodostuu tavallisesti useista tehtävistä. Jotkin tehtävät voidaan tehdä valmiiksi Dynamics 365 for Talentissa. Tällainen tehtävä on esimerkiksi sisäisen kurssivalikoiman arviointi. Tässä tapauksessa valikkovaihtoehto valitaan Tehtävän linkki -kentässä. Muut tehtävät saattavat sisältää verkkosivuston lomakkeiden tarkastelun tai täyttämisen. Kun tehtävälinkkikentän URL-osoite valitaan, verkko-osoite voidaan kirjoittaa. Voit antaa tähän kenttään sekä ulkoisten että sisäisten sivustojen URL-osoitteita. Voit luoda tehtäviä myös manuaalisesti suoritettaville tehtäville, kuten kaikkien rakenteiden helppokäyttöisyyden arviointi. Tässä tapauksessa tehtävän linkki ei ole pakollinen. Tämän joustavuuden ansiosta voit seurata useita erilaisia tehtäviä kattavana prosessina.
 
 Tehtävät voidaan määrittää toimelle tai tietylle työntekijälle. Esimerkiksi etupäällikkö suorittaa aina vakuutusmaksujen tarkistukset.   Kun luot tätä tehtävää, valitse ensin toimen toimeksiantotyyppi ja sitten toimiluettelosta etuuspäällikkö. Kun prosessi alkaa, tehtävä määritetään etuuspäällikkönä toimivalle työntekijälle. Voit myös määrittää tehtävän tietylle työntekijälle valitsemalla Työntekijä Määrityksen tyyppi -kentässä ja valitsemalla sitten henkilön.
 
@@ -44,7 +44,8 @@ Tehtävän eräpäivät määräytyvät prosessin alussa annettujen tavoitepäiv
 
 Monimutkaisissa tehtävissä on useita vaiheita tai tehtävät on suoritettava erikseen, jotta niistä saadaan lisätietoja. Voit lisätä tehtävään ohjeita. Myös ohjeissa voi käyttää tekstimuotoiluja. Ohjeissa voi olla tehtävän suorittamisesta koskevia lisätietoja sille henkilölle, joka on määritetty tehtävän suorittajaksi.
 
-Prosessin aloittaminen Prosessi voidaan käynnistää liiketoimintaprosessimallista valitsemalla Käynnistä prosessi.  Kun prosessi aloitetaan, tehtävät luodaan liiketoimintaprosessimalliin sisällytetyissä tehtävissä määritetyille valituille työntekijöille ja/tai toimille. Jokaiselle tehtävälle määritetään myös eräpäivä lisäämällä siirtymäpäiviä tai vähentämällä niitä tavoitepäivämäärästä (katso lisätietoja siirtymäpäivistä Tehtävä-osasta). Aktiivisia liiketoimintaprosesseja voidaan tarkastella Liiketoimintaprosessit-työtilassa. 
+## <a name="starting-a-process"></a>Käsittelyn aloittaminen
+Prosessi voidaan käynnistää liiketoimintaprosessimallista valitsemalla Käynnistä prosessi.  Kun prosessi aloitetaan, tehtävät luodaan liiketoimintaprosessimalliin sisällytetyissä tehtävissä määritetyille valituille työntekijöille ja/tai toimille. Jokaiselle tehtävälle määritetään myös eräpäivä lisäämällä siirtymäpäiviä tai vähentämällä niitä tavoitepäivämäärästä (katso lisätietoja siirtymäpäivistä Tehtävä-osasta). Aktiivisia liiketoimintaprosesseja voidaan tarkastella Liiketoimintaprosessit-työtilassa. 
 
 ## <a name="employee-self-service"></a>Työntekijän itsepalvelu
 Kun tehtävä on määritetty työntekijälle, heille määritettyjä tehtäviä voi tarkastella työntekijän itsepalvelusivulla. Työntekijät, joille on määritetty liiketoimintaprosessitehtävä, näkevät tehtävän, sen kuvauksen, suoritusohjeet ja yhteyshenkilön nimen. He voivat avata liittyvän Dynamics365 -sivun tai verkkosivun Työntekijän itsepalvelu -sivulta. Tehtävät voidaan merkitä keskeneräisiksi, peruutetuiksi tai valmiiksi.
@@ -56,9 +57,9 @@ HR-ammattilaiset voivat tarkastella aktiivisia liiketoimintaprosesseja liiketoim
 Prosessin omistajat voivat tarkastella heille määritettyjä aktiivisia liiketoimintaprosesseja Oma liiketoimintaprosessi -työtilassa. Työtilassa on luettelo kaikista aktiivisista prosesseista ja liitetyistä tehtävistä, jotka käyttäjä omistaa.  Täydellinen luettelo voidaan suodattaa eräpäivän perusteella. Sivulla on myös luettelo prosessin omistajalle määritetyistä tehtävistä. Prosessin omistaja voi myös päivittää kaikkien tehtävien tilan sekä määrittää minkä tahansa tehtävän uudelleen.
 
 ## <a name="navigating-business-processes"></a>Siirrytään liiketoimintaprosesseihin
-1.   Voit lisätä liiketoimintaprosessimallin siirtymällä liiketoimintaprosessien linkkeihin ja valitsemalla Liiketoimintaprosessien hallinta.
- - a.   Uusi-vaihtoehto luo uuden mallin.
- - b.   Kopioi mallista -vaihtoehto kopioi valitun mallin uuteen malliin.
- - c.   Käynnistä prosessi -vaihtoehto käynnistää valitun liiketoimintaprosessin, määrittää tehtävät ja laskee eräpäivät.  
-2.  Voit tarkastella aktiivisia prosesseja ja liitettyjä tehtäviä siirtymällä liiketoimintaprosessien työtilaan.
+1. Voit lisätä liiketoimintaprosessimallin siirtymällä liiketoimintaprosessien linkkeihin ja valitsemalla Liiketoimintaprosessien hallinta.
+   - a.   Uusi-vaihtoehto luo uuden mallin.
+   - b.   Kopioi mallista -vaihtoehto kopioi valitun mallin uuteen malliin.
+   - c.   Käynnistä prosessi -vaihtoehto käynnistää valitun liiketoimintaprosessin, määrittää tehtävät ja laskee eräpäivät.  
+2. Voit tarkastella aktiivisia prosesseja ja liitettyjä tehtäviä siirtymällä liiketoimintaprosessien työtilaan.
 

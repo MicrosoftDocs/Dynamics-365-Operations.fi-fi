@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="set-up-order-fulfillment-for-stores"></a>Myymälöiden tilauksen täyttämisen määrittäminen
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Yleiskuvaus
 Monet jälleenmyyjät haluaisivat optimoida tilausten täyttämisen antamalla myymälöille mahdolliseen täyttää tilauksia. Tilauksen täyttäminen myymälätasolla voi helpottaa yksittäisten myymälöiden liian suuria varastoja. Se voi olla tarpeellista myös logistiikan vuoksi tilanteissa, joissa myymälässä on ylimääräistä tilaa tai joissa se sijaitsee toimituksen kannalta lähempänä asiakasta. Näitä tarpeita varten myyntipisteissä voi käytätä yhdistettyä tilausten täyttämistoimintoa.

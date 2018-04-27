@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-a-candidate-through-recruiting"></a>Ehdokkaan työhönotto rekrytoinnin kautta
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä rekrytoija palkkaa hakijan, joka lähetti hakemuksen tietyn työhönottoprojektin aikana. Kun hakija palkataan työhönottoprojektin kautta, luodaan uusi työntekijätietue ja hakijan tietueen tilaksi tulee Toimessa. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Suorita menettely loppuun siirtymällä kohtaan Henkilöstöhallinto > Työhönotto > Hakemukset > Hakemukset. 
 

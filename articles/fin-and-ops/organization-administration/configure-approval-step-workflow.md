@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Hyväksyntävaiheen lisääminen työnkulkuun
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten hyväksyntävaiheen ominaisuudet määritetään.
 
@@ -145,9 +144,9 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille hyväksy
     Jos käyttäjä reagoi asiakirjaan aikarajan puitteissa, asiakirja on erääntynyt. Erääntyneet asiakirjat eskaloidaan, sivun **Eskalointi**-alueessa valitsemiesi asetusten mukaan.
 4.  Jos olet määrittänyt hyväksyntävaiheen useille käyttäjille tai käyttäjäryhmälle, valitse **Valmistumiskäytäntö**-välilehdessä jokin seuraavista vaihtoehdoista:
     -   **Yksi hyväksyjä** – Asiakirjan toimenpiteen valitsee ensimmäinen hyväksyntäpyyntöön vastaava henkilö. Esimerkiksi Sam on lähettänyt 15 000 dollarin kuluraportin. Kuluraportti on liitetty Suelle, Joelle ja Billille. Jos Sue on ensimmäinen asiakirjaan reagoiva henkilö, hänen valintansa on se, jota asiakirjaan sovelletaan. Jos Sue hylkää asiakirjan, se hylätään ja lähetetään takaisin Samille. Jos Sue hyväksyy asiakirjan, se lähetetään Annille hyväksyttäväksi. 
-    
+
     ![Työnkulku, jolla on hyväksyntäprosessi](./media/workflow_multipleusersinstep.gif)
-    
+
     -   **Suurin osa hyväksyjistä** – Asiakirjan toimenpide määräytyy sen mukaan, miten suurin osa hyväksyjistä vastaa hyväksyntäpyyntöön. Esimerkiksi Sam on lähettänyt 15 000 dollarin kuluraportin. Kuluraportti on liitetty Suelle, Joelle ja Billille. Jos Sue ja Jo ovat ensimmäiset vastauksen antaneet hyväksyjät, asiakirjan toimenpide määräytyy sen mukaan, miten he vastaavat pyyntöön.
         -   Jos Sue hyväksyy asiakirjan mutta Jo hylkää sen, asiakirja hylätään ja se lähetetään takaisin Samille.
         -   Jos molemmat Sue ja Jo hyväksyvät asiakirjan, se lähetetään Annille hyväksyttäväksi.

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-cost-accounting-ledger"></a>Luo kustannuslaskennan kirjanpito
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kustannuslaskennan kirjanpito edustaa koko raportointiyksikköä. Se määritetään kustannustason dimension, tilastodimension, kirjanpidon vuosikalenterin ja valuutan mukaan. Se ei riipu yrityksen konseptista. Yritys ja sen tiedot voidaan liittää useisiin kustannuslaskennan kirjanpitoihin. Tämä tallenne käyttää esittelytietojen USP2-yritystä.
 

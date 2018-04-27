@@ -3,7 +3,7 @@ title: Puhelinkeskuksen maksutavat
 description: "Tässä ohjeaiheessa käsitellään Dynamics 365 for Retailin puhelinkeskuksessa käytettäviä maksutapoja."
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,36 +20,38 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 321d03d154c224b55ffedbe55a2d5952c2b29d9a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fe8dd3136f14e182e261a4dce57eef0b1946d304
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="payment-methods-in-a-call-center"></a>Puhelinkeskuksen maksutavat
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
+Puhelinkeskuskanavan määritys Microsoft Dynamics 365 for Retailissa sisältää **Ota käyttöön tilausten viimeistely** -asetuksen. Tämän asetuksen avulla voidaan varmistaa, että kaikki kanavan käyttäjien luomat tilaukset vapautetaan tilaustenkäsittelyyn vain, jos ne on maksettu ennakkoon tai jos esihyväksytty maksu on hyväksyttyjen toleranssien mukainen. Jos **Ota käyttöön tilausten viimeistely** -asetus on otettu käyttöön, puhelinkeskuksen käyttäjät voivat kirjata maksuja asiakkaiden myyntitilauksille käyttämällä puhelinkeskuksen maksujen käsittelyominaisuuksia. Jos asetus poistetaan käytöstä, puhelinkeskuksen käyttäjät ei voi käyttää puhelinkeskuksen maksujen käsittelyominaisuuksia. He voivat kuitenkin käyttää myyntitilauksissa esimaksuja käyttämällä oletusarvoista myyntireskontratoimintoa.
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 for Retailin puhelinkeskuksessa käytettäviä maksutapoja.
+Yritys voi määrittää kanavamäärityksen osana puhelinkeskuskanavassa sallitut maksutavat. Puhelinkeskuskanava käyttää niitä maksutapoja, jotka on määritetty vähittäismyyntikanaville.
 
-Puhelinkeskuksissa voidaan käyttää myös muissa kanavissa käytettyjä maksutapoja, kuten käteinen, sekki, luottokortit ja lahjakortit. Kun olet määrittänyt puhelinkeskuksen maksutavan, se näkyy vaihtoehtona puhelinkeskuksen käyttäjille **Myyntitilaus**-sivun **Maksut**-osassa. Voit lisäksi määrittää kuponkeja tarjotaksesi asiakkaille alennuksia, kun he tekevät tilauksen yrityksen puhelinkeskukseen. Kupongit voivat määrittää kiinteän määräalennuksen tai prosenttimäärän nimikehinnasta tai tilauksen kokonaissummasta. Esimerkiksi summaperusteinen kuponki voi antaa asiakkaille 75,00:n alennuksen, kun asiakas käyttää 750,00 tai enemmän. Voit luoda erilaisia kuponkeja, määrittää pää-ja alikuponkeja sekä kopioida tai mitätöidä kupongin. Luo kuponkeja seuraavan taulukon vaihtoehdoilla.
+Voit määrittää puhelinkeskuksen maksutavan valitsemalla ensin **Retail** \> **Kanavat** \> **Puhelinkeskukset** \> **Kaikki puhelinkeskukset** ja sitten **Asetukset**-valikossa **Maksutavat**-vaihtoehto.
 
-|                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Määrite**             | Anna **Lunastusprosentti**-kenttään kupongin odotettu lunastushinta prosenttiosuutena ja valitse, käytetäänkö kuponkia kertaalleen, myönnetäänkö se automaattisesti uudelleen vai onko se asiakaskohtainen.                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Kelvollinen**                 | Anna **Alkamispäivä**- ja **Päättymispäivä**-kenttään ensimmäinen ja viimeinen päivämäärä, jolloin kuponki on voimassa.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Sisällytä säännöt tai jätä säännöt pois** | Valitse **Luettelot**- ja **Nimikkeet**-kentissä, sisältyvätkö luettelot tai nimikkeet kuponkiin vai jätetäänkö ne pois kupongista. Jos valitset **Sisällytä** tai **Jätä pois**, valitse ensin **Määritä**, sitten **Sisällytä luettelot tai jätä luettelot pois** tai **Sisällytä tuotteet tai jätä tuotteet pois** ja anna luetteloa tai nimikettä koskevat tiedot. Jos valitset näissä kentissä **Ei mitään**, kaikki luettelot tai nimikkeet jätetään pois kupongista.                                                                                                                                                                                                                          |
-| **Muut**         | Jos kuponkia ei voi käyttää yhdessä muiden alennusten kanssa, valitse **Jätä pois** -valintaruutu. Valitse sitten **Peruste**-kentässä, missä kuponkia käytetään. Jos kyseessä on valmistajan kuponki, valitse **Valmistajan kuponki** -valintaruutu.                                                                                                                                                                                                                                                                                                                                                                |
-| **Tuleva kuponki**         | Jos tämä kuponki liitetään muiden kuponkeihin pääkuponkina, valitse **Pääkuponki**-valintaruutu. Jos tämä kuponki on liitettävä aiemmin luotuun kuponkiin alikuponkina, valitse pääkuponki **Pääkupongin tunnus** -kentässä. Voit luoda esimerkiksi kupongin tulevaan kevätkuvastoon. Kaikki muut kevätkuvastoa varten luomasi kupongit ovat kevätkuvastokupongin alikuponkeja. Alikupongit voivat sisältää 20 prosentin alennuksen uusille asiakkaille, 10 prosentin alennuksen äskettäin julkaistuille nimikkeille tai 95,00:n alennuksen, jos tilaus on vähintään 1 000,00. |
+Voit määrittää maksutapaa luodessasi viisi maksutapatoimintoa.
 
-Jos lähetät luottokorttimaksun **Myyntitilaus**-sivulta ja avautuva ilmoittaa, että korttia ei vielä ole hyväksytty, voit käsitellä valtuutuksen manuaalisesti. Voit hyväksyä, hylätä tai lähettää luottokorttitapahtuman uudelleen **Valtuutuksenhallinta**-sivulla. Voit määrittää maksun käsittelyn lisäasetuksia puhelinkeskuksen parametrisivulla:
+| Toiminto            | kuvaus |
+|---------------------|-------------|
+| Normaali              | Käytä maksutapana **Normaali**-toimintoa, kun määritä maksutavaksi esimerkiksi käteisen tai tositteet. Kun näitä maksutapatyyppejä käytetään puhelinkeskuksen myyntitilauksessa, ne kirjataan heti asiakastilille ennakkomaksuina. Ennakkomaksutosite kirjataan asiakkaan tapahtumahistoriaan, jossa se täsmäytetään järjestelmällisesti myyntitilauksen laskulle laskuja luotaessa. |
+| Tarkistus               | Käytä **Sekki**-toimintoa, kun haluat määrittää sekkimaksuvälineen maksutavaksi. Kun tätä maksutapaa käytetään myyntitilauksessa, käyttäjän on kirjattava asiakkaan sekin numero maksun kohdistuksen käsittelyn osana. Sekkimaksut on aina käsiteltävä ennakkomaksuina, kun niitä käytetään. **Normaali**-maksutoiminnon tavoin nämä ennakkomaksutositteet täsmäytetään järjestelmällisesti tilaukselle luotuihin laskuihin. |
+| Kortit               | Korttimaksutavat ovat kaikki maksutavat, jotka edellyttävät asiakkaan maksukortissa määritetyn kortin numeron kirjaamista. Tällaisia ovat esimerkiksi luotto- ja lahjakortit. Kun määrität tällaisia maksutyyppejä, tähän maksutapaan liitettävät korttitunnukset on määritettävä **Korttiasetukset**-valikossa. Käyttäjät voivat ilmoittaa tilaustenkäsittelyn yhteydessä, onko korttimaksu ennakkomaksu. He voivat tehdä sen käyttämällä maksumerkintäsivun **Ennakkomaksu**-vaihtoehtoa. Ellei yritys edellytä ennakkomaksuja, oikea luottokorttimaksu käsitellään yleensä kahdessa vaiheessa, jossa valtuutus saadaan tilaustenkäsittelyn aikana. Maksu puolestaan täsmäytetään ja kerätään asiakkaan kortilta laskutuksen yhteydessä. Lahjakortteille suositellaan ennakkomaksua, koska lahjakortin saldo pitäisi vähentää heti, jota asiakas ei voi käyttää samaa arvoa muualla. |
+| Asiakas            | Maksutavan **Asiakas**-toiminto viittaa siihen, että maksu kohdistetaan asiakkaan luottokorttirajaan tai asetetaan ennakkomaksuksi. Retailissa asiakkaalle voidaan määrittää luottoraja, joka voidaan tarkistaa tilaustenkäsittelyn aikana. **Asiakas**-toimintoon linkitetyllä maksutavalla tehtävät maksut luovat asiakastiliä koskevan velan. Kun myyntitilaus sitten laskutetaan, erääntyvä saldo näytetään. Näissä tilanteissa asiakkaat lähettävät yleensä maksun annettujen ehtojen mukaisesti. Vaihtoehtoisesti erääntyvä saldo voidaan täsmäyttää kohdistamalla asiakastilin edellinen avoin hyvityksen tosite. Huomaa, että vaikka määrität tämän maksutavan, se ei näy puhelinkeskuksen tilaustenkäsittelyn maksuvalintavaihtoehdoissa, ellei **Salli ennakkomaksu** -merkintää ole määritetty käsiteltävän asiakkaan asiakastietueessa. Tämä merkintä on asiakastietueen **Oletusmaksut**-välilehdessä. |
+| Maksuvälineen poisto tai vaihtokassa | Puhelinkeskus ei käytä **Maksuvälineen poisto tai vaihtokassa** -toimintoa. Sitä käytetään vain, kun määritä maksutavan, jota myyntipistesovellus käyttää myymäläkanavassa. |
 
--   Sekkipidoilla taloushallinnon henkilöstä voi käsitellä tilauksia, jotka on asetettu pitoon, koska maksutapana on käytetty sekkiä ja sekkipidon rajasumma on ylitetty. Pito voidaan vapauttaa manuaalisesti, tai se vanhenee automaattisesti määritetyn kauden lopussa.
--   Voit määrittää raja-arvot, joita ylittäessä sekkien ja luottokorttien kautta annettavat palautukset on hyväksyttävä manuaalisesti. Kynnyssumman ylittävät palautukset lisätään hyväksyntäjonoon. Kun palautus on hyväksytty, palautusmyyntitilaus voidaan laskuttaa.
+Määritettävät maksutavat on linkitettävä kirjanpitoon tai pankkitiliin. Jos ohitat tämän vaiheen, käyttäjät vastaanottavat virheen, kun he yrittävät tallentaa maksutyypin.
 
+## <a name="refund-payment-methods"></a>Palautuksen maksutavat
 
+Palautuksen käsittelyskenaarioissa puhelinkeskus käyttää myös joitakin myyntireskontrassa määritettyjä maksutapoja. Voit määrittää maksutavat valitsemalla **Retail** \> **Kanavan asetukset** \> **Puhelinkeskuksen asetukset** \> **Puhelinkeskuksen palautusmenetelmät**. Tämä määritys on tehtävä, jotta palautussekit asiakkaille voidaan käsitellä. Jos asiakas maksoi tilauksen alun perin käteisellä tai sekillä, käyttäjä haluaa ehkä lähettää asiakkaalle palautusekin myyntireskontran kautta. Tässä tapauksessa puhelinkeskuksen käteis- ja sekkimaksutyypit on yhdistettävä oikeaan maksutapaan myyntireskontrassa, jotta palautuksen oikea käsittely voidaan varmistaa.
 
-
+Jos käyttäjä lisäksi käsittelee palautustilauksen puhelinkeskuksen käyttäjänä Retailissa mutta hän ei voi linkittää palautusta alkuperäiseen myyntiin, **Palautus**-maksutapa on määritettävä puhelinkeskuksen parametreissa. Valitse **Retail** \> **Kanavan asetukset** \> **Puhelinkeskuksen asetukset** \> **Puhelinkeskuksen parametrit** ja varmista sitten **Palautus**-välilehden **Maksutapa**-kentässä, että maksutapa on määritetty. Maksutapa on palautuksille käytettävä maksutapa. Yleensä se määritetään joko sekki- tai asiakastilitapana.
 

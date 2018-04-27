@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3206e53c4f2659c6d9b9be64b01ac28cdd17bc88
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0235cf112b59ee86f77d26044e47eb9bff8f67db
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Lausekerajoitukset ja taulurajoitukset tuotemääritysmalleissa
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan lauseke- ja taulurajoitusten käyttö. Rajoittaa sellaisten määritearvojen hallitsemista, joita käytät tuotteiden määrittämiseen myyntitilaukselle, myyntitarjoukselle, ostotilaukselle tai tuotantotilaukselle. Voit käyttää lausekerajoituksia tai taulurajoituksia, riippuen siitä, kuinka haluat luoda rajoitukset. 
 
@@ -171,7 +170,7 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 </tr>
 <tr class="even">
 <td>Teho</td>
-<td>Tämä vaatii eksponentiaalin. Tämä koskee potenssiinkorotusta oikealta vasemmalle. (Tämä tarkoittaa, että se on oikea-assosiatiivinen.) Siksi <strong>Power[a, b, c]</strong> vastaa <strong>[a, Power[b, c]]</strong>. <strong>Power</strong>-operaattoria voidaan käyttää vain, jos eksponentti on positiivinen vakio.</td>
+<td>Tämä vaatii eksponentiaalin. Tämä koskee potenssiinkorotusta oikealta vasemmalle. (Se on toisin sanoen oikea-assosiatiivinen.) Siksi <strong>Power[a, b, c]</strong> on sama kuin <strong>[a, Power[b, c]]</strong>. <strong>Power</strong>-operaattoria voidaan käyttää vain, jos eksponentti on positiivinen vakio.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operaattori:</strong> Power[x, 2] == y</li>
@@ -204,23 +203,24 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 
 Seuraavan taulukon esimerkit kuvaavat, kuinka infix-merkintä kirjoitetaan.
 
-| Operandien välinen merkintä    | kuvaus                                                                                   |
+
+|  Operandien välinen merkintä   |                                          kuvaus                                          |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| x + y + z         | Lisäys                                                                                      |
-| x \* y \* z       | Kertolasku                                                                                |
-| x - y             | Binäärimuotoinen vähennys tehdään samalla tavalla kuin binäärimuotoinen lisäys käänteisen toisen kanssa. |
-| x ^ y ^ z         | Potenssiinkorotus, jolla on oikea-assosiatiivisuus                                                   |
-| !x                | Totuusarvo ei                                                                                   |
-| x -: y            | Looginen vaikutus                                                                           |
-| x | y | z         | Totuusarvo tai                                                                                    |
-| x & y & z         | Totuusarvo ja                                                                                   |
-| x == y == z       | Yhtäsuuruus                                                                                      |
-| x != y != z       | Erilliset                                                                                      |
-| x &lt; y &lt; z   | Pienempi kuin                                                                                     |
-| x &gt; y &gt; z   | Suurempi kuin                                                                                  |
-| x &lt;= y &lt;= z | Pienempi tai yhtä suuri                                                                         |
-| x &gt;= y &gt;= z | Suurempi tai yhtä suuri                                                                      |
-| (x)               | Sulkeet ohittavat oletusarvoisen tärkeysjärjestyksen.                                                      |
+|     x + y + z     |                                           Lisäys                                            |
+|    x \* y \* z    |                                        Kertolasku                                         |
+|       x - y       | Binäärimuotoinen vähennys tehdään samalla tavalla kuin binäärimuotoinen lisäys käänteisen toisen kanssa. |
+|     x ^ y ^ z     |                          Potenssiinkorotus, jolla on oikea-assosiatiivisuus                          |
+|        !x         |                                          Totuusarvo ei                                          |
+|      x -: y       |                                      Looginen vaikutus                                      |
+|         x         |                                               y                                               |
+|     x & y & z     |                                          Totuusarvo ja                                          |
+|    x == y == z    |                                           Yhtäsuuruus                                            |
+|    x != y != z    |                                           Erilliset                                            |
+|  x &lt; y &lt; z  |                                           Pienempi kuin                                           |
+|  x &gt; y &gt; z  |                                         Suurempi kuin                                          |
+| x &lt;= y &lt;= z |                                     Pienempi tai yhtä suuri                                     |
+| x &gt;= y &gt;= z |                                   Suurempi tai yhtä suuri                                    |
+|        (x)        |                           Sulkeet ohittavat oletusarvoisen tärkeysjärjestyksen.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Miksi lausekerajoitusteni vahvistaminen ei onnistu?
 Et voi käyttää varattuja avainsanoja ratkaisimen niminä määritteille, komponenteille tai alikomponenteille tuotemääritysmallissa. Seuraavassa luettelossa on varatut sanat, jotka eivät ole käytettävissä:

@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="build-a-product-configuration-model"></a>Tuotemääritysmallin rakentaminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tarve määrittää tuotteita vastaamaan erityisvaatimuksiin on muuttumassa säännöksi poikkeuksen sijaan sekä yritys- että kuluttajasuhteissa.
 

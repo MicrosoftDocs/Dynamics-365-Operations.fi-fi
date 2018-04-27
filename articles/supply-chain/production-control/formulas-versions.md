@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="formulas-and-formula-versions"></a>Kaavat ja kaavaversiot
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Resepti määrittää prosessituotannon prosessiin kuuluvat materiaalit, valmistusaineet ja tulokset. Resepti ja sitä vastaava reitti määrittävät koko prosessin prosessituotannossa. Reseptejä käytetään tuotteiden suunnitteluun ja valmistamiseen prosessituotannossa.
 

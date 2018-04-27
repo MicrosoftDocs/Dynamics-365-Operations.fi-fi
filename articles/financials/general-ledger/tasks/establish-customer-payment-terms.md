@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="establish-customer-payment-terms"></a>Muodosta asiakkaan maksuehdot
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä menettely määrittää käteisalennuksen ja eräpäivän asetukset. Tässä tehtävän ohjauksessa käytetään esittely-yritystä USMF.
 

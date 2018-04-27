@@ -18,17 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7c713f3a1cb5aa4758a72a7cc42c73c57b602219
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2ee60f3d1155b89d342b94832fbdbe898a5063c6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intrastat"></a>Intrastat
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä artikkeli sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa. Artikkeli sisältää raportointiprosessin yleiskatsauksen ja kertoo pakolliset asetukset ja edellytykset.
 
@@ -228,7 +227,7 @@ Määritä seuraavan taulun parametrit **Ulkomaankaupan parametrit** -sivulla.
 </tr>
 <tr class="even">
 <td>Edustajan yhteystiedot</td>
-<td>Määritä edustajan nimi, osoite, ALV-tunnus, puhelinnumero ja faksinumero.</td>
+<td>Määritä edustajan nimi, osoite, verovapausnumero, puhelinnumero ja faksinumero.</td>
 </tr>
 <tr class="odd">
 <td>Maan tai alueen ominaisuudet</td>
@@ -241,7 +240,7 @@ Määritä seuraavan taulun parametrit **Ulkomaankaupan parametrit** -sivulla.
 </tbody>
 </table>
 
- 
+
 
 
 

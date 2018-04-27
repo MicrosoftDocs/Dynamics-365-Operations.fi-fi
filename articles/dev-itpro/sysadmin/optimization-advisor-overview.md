@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="optimization-advisor-overview"></a>Optimointiavustajan yleiskuvaus
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään optimaalisen Microsoft Dynamics 365 Finance and Operations -konfiguraation varmistamista optimointityökalun avulla.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Syötä ja vertaa tarjouspyyntöjä ja myönnä sopimuksia
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Seuraavassa menettelyssä kuvataan tarjouspyynnön vastauksien kirjoittaminen, tarjousten pisteytys ja vertailu, sekä tarjouksen antaminen yhdelle toimittajista. Voit käyttää tätä menettelyä esittely-yrityksessä USMF. Ennen kuin aloitat, varmista, että sinulla on tarjouspyyntö, joka sisältää kaksi riviä ja joka on lähetetty vähintään kahdelle toimittajalle. Voit ajaa "Luo tarjouspyyntö" -toimintosarjan luodaksesi tämän edellytyksen. Pisteytysehdot on määritettävä ennen tämän menettelyn suorittamista.
 

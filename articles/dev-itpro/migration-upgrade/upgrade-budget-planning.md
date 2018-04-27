@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="upgrade-budget-planning"></a>Budjettisuunnittelun päivitys
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics AX 2012:n ja Microsoft Dynamics 365 for Finance and Operationsin budjettisuunnittelutoiminnoissa on merkittäviä eroja. Tiettyjä ominaisuuksia ei ole päivitetty, jonka vuoksi ne on määritettävä uudelleen. Tässä aiheessa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis.  
 
@@ -70,26 +69,27 @@ Seuraavassa esimerkissä käytetään AX 2012 -esittelytiedoista päivitettyä b
 
 ### <a name="define-columns-and-layouts"></a>Määritä sarakkeet ja asettelut
 
-1.  Valitse **Budjettisuunnittelun konfiguraatio** -sivulla **Sarakkeet**-välilehti. Päivityksessä luodaan uusia sarakkeita automaattisesti budjettisuunnitelmasi rivien perusteella. Sarakkeet käyttävät nyt dynaamisia päivämääriä, jossa kellonaika ja vuosi ovat siirtymiä budjettisuunnitteluprosessissa määritetystä tilikaudesta. **Huomautus:** suorituskykysyistä päivitys olettaa, että kaikki budjettijaksot ovat kalenterivuosia tilikausien sijaan. Jos käytät tilikausia, sinun on muokattava sarakkeita käsin, jotta ne vastaavat oikeita tilikausia. AX 2012 sisälsi esimerkiksi seuraavat elementit:
-    -   Budjettisuunnitelman skenaariot: Todellinen, Perusarvo, Budjettipyyntö, Budjetti hyväksytty
-    -   Budjettisuunnitelman rivit kaikille vuoden 2017 skenaarioille ja Todelliset sekä vuodelle 2016 että vuodelle 2017
+1. Valitse **Budjettisuunnittelun konfiguraatio** -sivulla **Sarakkeet**-välilehti. Päivityksessä luodaan uusia sarakkeita automaattisesti budjettisuunnitelmasi rivien perusteella. Sarakkeet käyttävät nyt dynaamisia päivämääriä, jossa kellonaika ja vuosi ovat siirtymiä budjettisuunnitteluprosessissa määritetystä tilikaudesta. **Huomautus:** suorituskykysyistä päivitys olettaa, että kaikki budjettijaksot ovat kalenterivuosia tilikausien sijaan. Jos käytät tilikausia, sinun on muokattava sarakkeita käsin, jotta ne vastaavat oikeita tilikausia. AX 2012 sisälsi esimerkiksi seuraavat elementit:
+   -   Budjettisuunnitelman skenaariot: Todellinen, Perusarvo, Budjettipyyntö, Budjetti hyväksytty
+   -   Budjettisuunnitelman rivit kaikille vuoden 2017 skenaarioille ja Todelliset sekä vuodelle 2016 että vuodelle 2017
 
-    Dynamics 365 for Finance and Operationsissa luodaan seuraavat sarakkeet:
-    | Sarakkeen nimi    | Budjettisuunnitelman skenaario | Sarakkeen ajanjakso | Vuoden siirtymä |
-    |----------------|----------------------|--------------------|-------------|
-    | Tam Skenaario 1 | Todelliset              | 1                  | 0           |
-    | Tam Skenaario 2 | Perusrivi             | 1                  | 0           |
-    | Tam Skenaario 3 | Budjettipyyntö       | 1                  | 0           |
-    | Tam Skenaario 4 | Budjetti hyväksytty      | 1                  | 0           |
-    | Tam Skenaario 5 | Todelliset              | 1                  | -1          |
-    | Hel Skenaario 1 | Todelliset              | 1                  | 0           |
-    | ...            | ...                  | ...                | ...         |
+   Dynamics 365 for Finance and Operationsissa luodaan seuraavat sarakkeet:
 
-    Tässä esimerkissä luodaan sarake nimeltä **Tam Skenaario 1** uusimmalle budjettisuunnitelman tapahtumatiedolle, joka löydetään tammikuun tapahtumista. Vastaava sarake luodaan kullekin skenaariolle, joka sisältää tietoja. Kun kaikille vuoden kausille on luotu sarakkeet, järjestelmä luo sarakkeet edellisille vuosille.
-2.  Muuta sarakkeiden nimet ja kuvaukset sekä muut tiedot joko käsin asiakasohjelmassa tai tekemällä massapäivityksiä Excel-apuohjelman avulla, joka osoittaa budjettisuunnitelman sarakkeiden tietoyksikköön. Aiemmin matriisikentille asetetut suodattimet asetetaan nyt sarakkeille.
-3.  Luo uusi budjettisuunnitelman asettelu. Asettelu osoittaa useaan sarakkeeseen määrittääkseen näkymän, joka näytetään Excelissä ja asiakasohjelmassa. Asettelu edellyttää, että määrität ensin kirjanpidon dimensioyhdistelmän, joka määrittää syötettävissä olevat taloushallinnon dimensiot. Kun olet määrittänyt dimensioyhdistelmän, napsauta **Kuvaukset** ja valitse asetteluun sisällytettävät dimensiokuvaukset.
-4.  Valitse **Asetteluelementit**-pikavälilehdessä **Lisää** ja anna kullekin riville metatiedot, kuten valuutta, kommentti tai budjettiluokka, joka määrittää tuotto- tai kulurivit. Lisää seuraavaksi aikajakson sarakkeet ja nykyiseen budjettijaksoon- ja vaiheeseen kuuluvat skenaariot. Voit tehdä muutokset käsin asiakasohjelmassa tai Excel-apuohjelmassa, joka osoittaa budjettisuunnitelman asetteluelementtien tietoyksikköön.
-5.  Valitse kutakin asetteluelementtiä varten, onko sarake muokattavissa ja että näytetäänkö sarake myös asettelun Excel-työkirjassa. **Huomautus:** jos käytössäsi on historiallinen suunnitelma, harkitse käyttäväsi 12 kuukausittaista saraketta näyttävää asettelua kaikille kyseisen prosessin budjettisuunnitelman skenaarioille.
+   | Sarakkeen nimi    | Budjettisuunnitelman skenaario | Sarakkeen ajanjakso | Vuoden siirtymä |
+   |----------------|----------------------|--------------------|-------------|
+   | Tam Skenaario 1 | Todelliset              | 1                  | 0           |
+   | Tam Skenaario 2 | Perusrivi             | 1                  | 0           |
+   | Tam Skenaario 3 | Budjettipyyntö       | 1                  | 0           |
+   | Tam Skenaario 4 | Budjetti hyväksytty      | 1                  | 0           |
+   | Tam Skenaario 5 | Todelliset              | 1                  | -1          |
+   | Hel Skenaario 1 | Todelliset              | 1                  | 0           |
+   | ...            | ...                  | ...                | ...         |
+
+   Tässä esimerkissä luodaan sarake nimeltä **Tam Skenaario 1** uusimmalle budjettisuunnitelman tapahtumatiedolle, joka löydetään tammikuun tapahtumista. Vastaava sarake luodaan kullekin skenaariolle, joka sisältää tietoja. Kun kaikille vuoden kausille on luotu sarakkeet, järjestelmä luo sarakkeet edellisille vuosille.
+2. Muuta sarakkeiden nimet ja kuvaukset sekä muut tiedot joko käsin asiakasohjelmassa tai tekemällä massapäivityksiä Excel-apuohjelman avulla, joka osoittaa budjettisuunnitelman sarakkeiden tietoyksikköön. Aiemmin matriisikentille asetetut suodattimet asetetaan nyt sarakkeille.
+3. Luo uusi budjettisuunnitelman asettelu. Asettelu osoittaa useaan sarakkeeseen määrittääkseen näkymän, joka näytetään Excelissä ja asiakasohjelmassa. Asettelu edellyttää, että määrität ensin kirjanpidon dimensioyhdistelmän, joka määrittää syötettävissä olevat taloushallinnon dimensiot. Kun olet määrittänyt dimensioyhdistelmän, napsauta **Kuvaukset** ja valitse asetteluun sisällytettävät dimensiokuvaukset.
+4. Valitse **Asetteluelementit**-pikavälilehdessä **Lisää** ja anna kullekin riville metatiedot, kuten valuutta, kommentti tai budjettiluokka, joka määrittää tuotto- tai kulurivit. Lisää seuraavaksi aikajakson sarakkeet ja nykyiseen budjettijaksoon- ja vaiheeseen kuuluvat skenaariot. Voit tehdä muutokset käsin asiakasohjelmassa tai Excel-apuohjelmassa, joka osoittaa budjettisuunnitelman asetteluelementtien tietoyksikköön.
+5. Valitse kutakin asetteluelementtiä varten, onko sarake muokattavissa ja että näytetäänkö sarake myös asettelun Excel-työkirjassa. **Huomautus:** jos käytössäsi on historiallinen suunnitelma, harkitse käyttäväsi 12 kuukausittaista saraketta näyttävää asettelua kaikille kyseisen prosessin budjettisuunnitelman skenaarioille.
 
 ### <a name="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage"></a>Päivitä budjettisuunnittelun prosessit käyttämään asiaankuuluvaa asettelua kussakin budjettivaiheessa
 

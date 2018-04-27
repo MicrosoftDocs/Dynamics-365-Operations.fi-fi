@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-scheduling-options"></a>Työvaiheen ajoitusvaihtoehdot
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa kuvataan työvaiheiden ajoittamisen asetuksia. Työvaiheiden ajoitusta voidaan käyttää, kun tuotantoprosessin kestosta halutaan yleisarvio.
 

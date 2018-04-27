@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-conditional-decision-in-a-workflow"></a>Ehdollisen päätöksen konfiguroiminen työnkulkuun
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Määritä seuraavan menettelyn avulla ehdollisten päätöksen ominaisuudet.
 

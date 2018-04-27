@@ -31,7 +31,7 @@
 ## [Puhelinkeskuksen luettelot](call-center-catalogs.md)
 ## [Puhelinkeskuksen luettelon luominen](create-call-center-catalogs.md)
 ## [Petoshälytysten määrittäminen](set-up-fraud-alerts.md)
-## [Tilaustenkäsittelyasetusten määrittäminen](set-up-order-processing-options.md)
+## [Puhelinkeskuksen määrittäminen](set-up-order-processing-options.md)
 ## [Puhelinkeskuksen jatkuvuusohjelman määrittäminen](set-up-continuity-program.md)
 ## [Tilausten pidot](work-with-order-holds.md)
 ## [Maksuvalinnat](work-with-payments.md)
@@ -47,8 +47,9 @@
 # Modern Point of Sale (MPOS) ja Cloud POS
 ## [Modern POS:n tai Cloud POS:n valitseminen](MPOS-or-CPOS.md)
 ## [Myyntipisteen toiminnot verkossa ja paikallisesti](pos-operations.md)
-## [Esittelytietojen näyttöasettelut MPOS/CPOS-sovelluksissa](demo-data.md)
+## [MPOS- ja CPOS-myyntipisteiden demotietojen näyttöasettelut](demo-data.md)
 ## [Yleiskatsaus tuote- ja asiakashauista myyntipisteessä](POS-search-improvements.md)
+## [Varastohaku myyntipisteessä](product-variants-POS.md)
 ## Laitteiston oheislaitteet
 ### [Vähittäismyynnin oheislaitteiden yleiskatsaus](retail-peripherals-overview.md)
 ### [Microsoftin testaamat myyntipisteen oheislaitteet](microsoft-tested-pos-hardware-peripherals.md)
@@ -96,6 +97,7 @@
 ## [RFM-analyysin määrittäminen](set-up-rfm-analysis.md)
 
 # Alennukset ja hinnanoikaisut
+## [Vähittäismyynnin myyntihinnan hallinta](price-management.md)
 ## [Hinnanoikaisut ja alennukset](price-adjustments-discounts.md)
 ## [Optimaalisen päällekkäisten alennusten yhdistelmän määrittäminen](optimal-combination-overlapping-discounts.md)
 ## [Kanavakohtaisten alennusten määrittäminen](define-channel-specific-discounts.md)
@@ -139,19 +141,23 @@
 ## [Työn komponenttien määrittäminen](../talent/create-job.md)
 
 # Lokalisointi- ja säädösominaisuudet
+## Ranska
+### [Ranskan kassakoneet](localizations/emea-fra-cash-registers.md)
+### [Käyttöönotto-ohjeet Ranskan kassakoneille](localizations/emea-fra-deployment.md)
 ## Intia
-### [Kassakoneiden GST-veron integrointi Intiassa](localizations/apac-ind-cash-registers.md)
+### [Kassakoneiden GST-veron integrointi](localizations/apac-ind-cash-registers.md)
 ### [Käyttöönotto-ohjeet Intian kassakoneille](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norja
 ### [Norjan kassakoneet](localizations/emea-nor-cash-registers.md)
 ### [Käyttöönotto-ohjeet Norjan kassakoneille](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Ruotsi
 ### [Ruotsin kassakoneet](localizations/emea-swe-cash-registers.md)
+### [Retail POS -integrointimalli, jossa on tarkistusyksiköt](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
 
 # Retail-tehtävät
-## [Tuotteen luonti](../supply-chain/pim/tasks/create-product.md)
+## [Luo tuote](../supply-chain/pim/tasks/create-product.md)
 ## [Linkitettyjen tuotteiden määrittäminen](../supply-chain/pim/tasks/configure-linked-products.md)
-## [Tuotteen tai päätuotteen vapauttaminen yrityksille](../supply-chain/pim/tasks/release-product-product-master-legal-entities.md)
+## [Vapauta tuote/päätuote yrityksille](../supply-chain/pim/tasks/release-product-product-master-legal-entities.md)
 ## [Perushinta ja kauppasopimukset](tasks/base-price-trade-agreements.md)
 ## [Luokan hinnoittelusäännöt kauppasopimuksia varten](tasks/category-pricing-rules-trade-agreements.md)
 ## [Määritä luottokorttien käsittely](tasks/configure-credit-card-processing.md)
@@ -260,6 +266,7 @@
 ### [Sähköisen kaupankäyntiympäristön SDK](dev-itpro/ecommerce-platform-sdk.md)
 
 ## Maksuyhdistimen laajennettavuus
+### [Maksun integrointi maksupäätteen kanssa](dev-itpro/end-to-end-payment-extension.md)
 ### [Maksuyhdistimen ja maksulaitteen ottaminen käyttöön (tulostettava ohje)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ### [Maksuyhdistimen käyttöönotto](dev-itpro/deploy-payment-connector.md)
 ### [Maksuyhdistimen Windows Installer -ohjelman luominen](dev-itpro/create-windows-installer-payment-connector.md)
@@ -269,7 +276,8 @@
 ### [Retail SDK:n laajennettavuusmallit](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Retail SDK:n pakkaus](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK:n mallit ](dev-itpro/retail-sdk/retail-sdk-samples.md)
-### [Kanavan tietokantatunnisteet](dev-itpro/channel-db-extensions.md)
+#### [Pakkausluetteloiden laajennuspisteet](dev-itpro/extensions-shipping-carrier-integration.md)
+### [Kanavatietokannan laajennukset](dev-itpro/channel-db-extensions.md)
 ### [CDX-laajennettavuus](dev-itpro/cdx-extensibility.md)
 ### [Tilauksen määritteet](dev-itpro/order-attributes.md)
 ### [Asiakkaan määritteet](dev-itpro/customer-attributes.md)

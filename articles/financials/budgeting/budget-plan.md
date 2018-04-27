@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning"></a>Budjettisuunnittelu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämän kurssin tavoitteena on tarkastella ohjatusti Microsoft Dynamics 365 for Finance and Operationsin Budjettisuunnittelu-alueen toimintojen päivityksiä. Tämä kurssi sisältää nopean konfiguraatioesimerkin budjettisuunnittelumoduulista ja esittelee, miten budjettisuunnittelu voidaan suorittaa tämän konfiguraation avulla.  Tällä kurssilla keskitytään erityisesti seuraaviin liiketoimintaprosesseihin tai tehtäviin: -    - organisaatiohierarkian luominen budjettisuunnittelulle ja käyttäjän suojauksen määrittäminen - budjettisuunnitelmien skenaarioiden, budjettisuunnitelmien sarakkeiden, asettelujen ja Excel-mallien määrittäminen   - budjettisuunnitteluprosessien luominen ja aktivoiminen   - budjettisuunnitelman asiakirjan luominen noutamalla toteutuneet tiedot kirjanpidosta   - kohdistusten käyttäminen budjettisuunnitelman asiakirjan tietojen oikaisussa   - budjettisuunnitelman asiakirjan tietojen muokkaaminen Excelissä. 
 

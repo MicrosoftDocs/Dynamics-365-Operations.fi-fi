@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-journal-entries-and-transactions"></a>Näytä tapahtumat ja kirjauskansiomerkinnät
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa esitellään kirjauskansiovientien ja -tapahtumien eri tarkastelutavat. 
 
@@ -55,7 +54,7 @@ Talousraporttien lisäksi voit käyttää seuraavia kirjanpitoraportteja tarkast
 -   **Tapahtumalähde** – Tämä tapahtumaraportti näyttää tilin kirjanpidon, tapahtuman ja raportoinnin tilivaluutan. Siinä näkyy myös kirjauskansion jokainen rivi, jota on käytetty osoitteeksi.
 
 
-##<a name="see-also"></a>Lisätietoja
+## <a name="see-also"></a>Lisätietoja
 - [Kirjanpitotilin saldot](general-ledger-account-balances.md) 
 - [Kirjanpitolähteen hallinta](..\accounts-payable\accounting-source-explorer.md)
 - [Talousraportointi](financial-reporting-getting-started.md)

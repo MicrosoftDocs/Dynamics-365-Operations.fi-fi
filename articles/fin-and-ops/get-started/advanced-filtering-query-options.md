@@ -19,17 +19,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1fe940d2d282a5b4468b3ba572626b5c87839e6d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-filtering-and-query-syntax"></a>Suodatuksen ja kyselyn lisäsyntaksi
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on kuvattu suodatus- ja kyselyvaihtoehtoja, jotka ovat käytettävissä, kun käytät Lisäsuodatus/-lajittelu-valintaikkunan "vastaa kohdetta" -operaattoria.
 
@@ -68,7 +67,7 @@ Tässä artikkelissa on kuvattu suodatus- ja kyselyvaihtoehtoja, jotka ovat käy
 <td><em>arvosta</em>..<em>arvoon</em> (kaksi pistettä)</td>
 <td>Etsii arvot, jotka ovat kahden pisteen erottamien arvojen välissä</td>
 <td>Kirjoita lähtöarvo, kaksi pistettä ja loppuarvo.</td>
-<td><strong>1..10</strong> löytää kaikki arvot yhdestä kymmeneen. <strong>A..C</strong> hakee kuitenkin merkkijonokentässä kaikki arvot, jotka alkavat merkillä &quot;A&quot; tai &quot;B&quot;, ja arvot, jotka vastaavat tarkasti arvoa &quot;C&quot;. Kysely ei löydä esimerkiksi arvoa &quot;Caa&quot;. Jos haluat etsiä kaikki arvot väliltä &quot;A*&quot;–C&quot;*&quot;, kirjoita <strong>A..D</strong>.</td>
+<td><strong>1..10</strong> löytää kaikki arvot yhdestä kymmeneen. <strong>A..C</strong> hakee kuitenkin merkkijonokentässä kaikki arvot, jotka alkavat merkillä &quot;A&quot; tai &quot;B&quot;, ja arvot, jotka vastaavat tarkasti arvoa &quot;C&quot;. Kysely ei löydä esimerkiksi arvoa Ca. Jos haluat etsiä kaikki arvot väliltä &quot;A<em>&quot;–C&quot;</em>&quot;, kirjoita <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>arvo</em> (kaksi pistettä)</td>
@@ -97,20 +96,20 @@ Tässä artikkelissa on kuvattu suodatus- ja kyselyvaihtoehtoja, jotka ovat käy
 <tr class="even">
 <td><em>arvo</em>* (tähti)</td>
 <td>Alkaen syötetystä arvosta</td>
-<td>Kirjoita alkuarvo ja sitten tähti (<strong>*</strong>).</td>
-<td><strong>S*</strong> etsii kaikki &quot;S&quot;-kirjaimella alkavat merkkijonot, kuten &quot;Savonlinna&quot;, &quot;Sydney&quot; ja &quot;San Francisco&quot;.</td>
+<td>Kirjoita alkuarvo ja sitten tähti (<strong><em></strong>).</td>
+<td><strong>S</em></strong> etsii kaikki S-kirjaimella alkavat merkkijonot, kuten Savonlinna, Sydney ja San Francisco.</td>
 </tr>
 <tr class="odd">
-<td>*<em>arvo</em> (tähti)</td>
+<td><em><em>arvo</em> (tähti)</td>
 <td>Päättyy syötettyyn arvoon</td>
 <td>Kirjoita tähti ja sitten loppuarvo.</td>
-<td><strong>*nen</strong> etsii kaikki merkkijonot, joiden viimeiset kirjaimet ovat &quot;nen&quot;, kuten &quot;pohjoinen&quot; ja &quot;koillinen&quot;.</td>
+<td><strong></em>*nen</strong> etsii kaikki merkkijonot, joiden viimeiset kirjaimet ovat nen, kuten pohjoinen ja koillinen.</td>
 </tr>
 <tr class="even">
-<td>*<em>arvo</em>* (tähti)</td>
+<td><em><em>arvo</em></em> (tähti)</td>
 <td>Sisältää syötetyn arvon</td>
 <td>Kirjoita tähti, sitten arvo ja sitten toinen tähti.</td>
-<td><strong>*ine*</strong> etsii kaikki merkkijonot, jotka sisältävät arvon &quot;ine&quot;, kuten &quot;pohjoinen&quot; ja &quot;koillinen&quot;.</td>
+<td><strong><em>ine</em></strong> etsii kaikki merkkijonot, jotka sisältävät arvon &quot;ine&quot;, kuten &quot;pohjoinen&quot; ja &quot;koillinen&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (kysymysmerkki)</td>

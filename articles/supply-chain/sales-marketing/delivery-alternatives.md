@@ -20,24 +20,23 @@ ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b2ecf2d5b14dac28a26fe172807ae2931cb4c3ca
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 58c083b2fa76e90d10ec8a197a4743a9e315db46
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="delivery-alternatives"></a>Toimitusvaihtoehdot
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Myyntitilausten vastaanottajat voivat löytää vaihtoehtoisia tilauksen toteutusvaihtoehtoja Toimitusvaihtoehdot-sivulta.
 
 Myyntitilausten vastaanottajat voivat Microsoft Dynamics 365 for Operations -versiossa 1611 (marraskuu 2016) selvittää vaihtoehtoisia tilauksen toteutusvaihtoehtoja **Toimitusvaihtoehdot**-sivulla. Uudelleenjärjestelty sivuasettelu antaa paremman yleiskuvan kaikista vaihtoehdoista. Sen avulla tilausten vastaanottajat voivat nähdä toteutusmahdollisuuksia muistakin yrityksistä. Sen avulla he voivat nyt tarkastella sekä konsernin sisäisiä että ulkoisilta toimittajilta saatavia mahdollisuuksia. Myyntitilausten vastaanottajat saavat älykkään luettelon toimitusvaihtoehdoista suodattamalla vaihtoehtoja toimituspäivämäärän mukaan. Käytössä on lisäksi parametreja, jotka auttavat ehdotettujen toimitusten hallinnassa. Koska kuljetusaika voi vaikuttaa toimituspäiviin, myyntitilausten vastaanottajat voivat tarkastella rahdinkuljettajien tarjoamia kuljetusvaihtoehtoja. Kullekin ehdotukselle näytetään yksityiskohtaiset tiedot, joiden perusteella tilausten vastaanottajat voivat tehdä päätöksensä suoraan **Toimitusvaihtoehdot** -sivulla.
 
 ## <a name="open-the-delivery-alternatives-page"></a>Avaa Toimitusvaihtoehdot-sivu
-Voit avata **Toimitus****vaihtoehdot**-sivun myyntitilausriviltä.
+Voit avata **Toimitus** **vaihtoehdot**-sivun myyntitilausriviltä.
 
 1.  Valitse **Tuotteet ja toimitus** &gt; **Toimitusvaihtoehdot**.
 2.  Valitse **Rivin tiedot** &gt; **Toimitus** &gt; **Toimitusvaihtoehdot**.
@@ -63,7 +62,7 @@ Toimituspäivämäärän tarkistusmenetelmä määrittää, miten järjestelmä 
 <tr class="even">
 <td><strong>Ei mitään</strong></td>
 <td><ul>
-<li>Myyntirivien toimitusvaihtoehdot eivät ole tuettuja. Tämä asetus poistaa toimitustietojen tarkistuksen käytöstä.</li>
+<li>Myyntirivien toimitusvaihtoehtoja ei tueta. Tämä asetus poistaa toimitustietojen tarkistuksen käytöstä.</li>
 </ul></td>
 </tr>
 <tr class="odd">

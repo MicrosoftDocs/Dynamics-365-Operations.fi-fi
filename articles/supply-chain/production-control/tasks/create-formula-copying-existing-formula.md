@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a>Luo kaava kopioimalla aiemmin luotu kaava
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä näytetään, miten uusi kaava luodaan nopeasti kopioimalla aiemmin luotu kaava. Voit luoda tämän menettelyn USMF-, USP2- tai USPI-yritysten demotiedoilla.
 

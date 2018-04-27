@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 33a8bc78006ae9e7d5ca905a98886fd7af706604
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6679215a664ddf938a204196b00f3bc28bf65f8f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-insights"></a>Taloushallinnon tiedot
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Taloushallinnon tiedot** kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätökset. Power BI on upotettu Microsoft Dynamics 365 Finance and Operations -sovellukseen.
 **Taloushallinnon tiedoissa** keskitytään on analyyttiseen raportointiin. Organisaation työntekijät voivat tarkastella tietoja, tutkia niitä, tiedostaa ne ja toimia. 
@@ -107,8 +107,20 @@ Vaikka **Taloushallinnon tiedot** sisältää tilinpäätöksiä, se ei korvaa F
 
 Seuraava vertailukaavio auttaa erottamaan vaihtoehdot toisistaan:
 
-|                                         | **Taloushallinnon raportointi**                            | **Taloushallinnon tiedot**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Oletusraporttien muokkaus**                | Kyllä                                                | Ei                                 | | **Uusien raporttien luonti**                  | Kyllä                                                | Ei                                 | | **Raporttien tulostus**                       | Kyllä                                                | Ei                                 | | **Vienti Exceliin**                     | Kyllä          | Rajoitettu raakatietojen vienti Excelin, muotoilematon raportti       | | **Raportointihierarkian/organisaatiohierarkian tuki**   | Kyllä                               | Ei                                 | | **Alareskontran tietojen raportti**       | Kyllä Rajoitettu yhteen toimittajaan, asiakkaaseen    | Kyllä Toimittaja-, asiakas-, toimittaja/asiakasryhmät, toimittajan/asiakkaan osoitteet jne.  | | **Raportointivaluutta**      | Kyllä Kirjanpitovaluutta ja muuntaminen raportointivaluutaksi       | Ei Vain kirjanpitovaluutta      | | **Suojaus**                | Kyllä Finance and Operationsin ja raporttipuun suojauksen noudattaminen | Rajoitettu kaikkien yritysten raporttien näyttäminen (Finance and Operationsin suojauksesta riippumatta) tai vain aktiivinen yritys | | **Erilaisten tilikarttojen ja tilivuosien tuki** | Kyllä                   | Ei                   | | **Ulkoisten tietojen raportti**                              | Ei                   | Ei                                   | | **Konsolidointien tuki**                               | Kyllä                          | Rajoitettu raportointi useissa yrityksissä mutta vain kirjanpitovaluutan käyttö                                     |
 
+|                                                                       |               <strong>Talousraportointi</strong>                |                                      <strong>Taloushallinnon tiedot</strong>                                      |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+|                 <strong>Muokkaa oletusraportteja</strong>                 |                                Kyllä                                |                                                      En                                                       |
+|                  <strong>Luo uusia raportteja</strong>                  |                                Kyllä                                |                                                      En                                                       |
+|                    <strong>Raporttien tulostaminen</strong>                     |                                Kyllä                                |                                                      En                                                       |
+|                   <strong>Vie Exceliin</strong>                    |                                Kyllä                                |                           Rajoitettu raakatietojen vienti Exceliin, muotoilematon raportti                           |
+|  <strong>Raportointihierarkian/organisaatiohierarkian tuki</strong>  |                                Kyllä                                |                                                      En                                                       |
+|               <strong>Alareskontran tietojen raportti</strong>               |               Kyllä Rajoitettu yhteen toimittajaan, asiakkaaseen                |                 Kyllä Toimittaja-, asiakas-, toimittaja/asiakasryhmät, toimittajan/asiakkaan osoitteet jne.                 |
+|                  <strong>Raportointivaluutta</strong>                  |    Kyllä Kirjanpitovaluutta ja muuntaminen raportointivaluutaksi    |                                          Ei Vain kirjanpitovaluutta                                          |
+|                       <strong>Suojaus</strong>                       | Kyllä Finance and Operationsin ja raporttipuun suojauksen noudattaminen | Rajoitettu kaikkien yritysten raporttien näyttäminen (Finance and Operationsin suojauksesta riippumatta) tai vain aktiivinen yritys |
+| <strong>Erilaisten tilikarttojen ja tilivuosien tuki</strong> |                                Kyllä                                |                                                      En                                                       |
+|               <strong>Ulkoisten tietojen raportti</strong>                |                                En                                 |                                                      En                                                       |
+|                <strong>Konsolidointien tuki</strong>                |                                Kyllä                                |                   Rajoitettu raportointi useissa yrityksissä mutta vain kirjanpitovaluutan käyttö                   |
 
 Alkuperäisen **Talousjohtajan yhteenveto** -työtilan käyttöliittymän lisäksi uudet tunnusluvut, kaaviot ja tilinpäätökset ovat käytettävissä Seuraavat tilinpäätökset ovat käytettävissä:
 

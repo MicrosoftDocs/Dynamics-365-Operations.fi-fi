@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-fees"></a>Määritä toimittajan maksulisät
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Määritä toimittajan toimitusmaksut. Tässä tehtävässä käytetään esittely-yritystä USMF.
 

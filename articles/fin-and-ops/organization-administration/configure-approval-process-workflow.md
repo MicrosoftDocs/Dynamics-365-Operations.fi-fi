@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Hyväksyntäprosessin lisääminen työnkulkuun
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Määritä hyväksyntäprosessin ominaisuudet seuraavan menettelyn avulla.
 
@@ -136,6 +135,7 @@ Voit halutessasi määrittää lopullisen hyväksyjän skenaarioissa, joissa hyv
 
 ## <a name="set-a-time-limit"></a>Aikarajan määrittäminen
 Noudata seuraavia ohjeita, jos hyväksyntäprosessi on suoritettava tietyn ajan kuluessa.
+
 | **Huomautus**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tässä vaiheessa valitsemasi asetukset korvaavat asetukset, jotka olet valinnut kunkin hyväksyntävaiheen **Määritys**- ja **Eskalointi**-kohdissa. |

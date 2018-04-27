@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a>Siirrä tapahtumat Intrastatiin
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä menettely opastaa Intrastat-parametrien asetuksen ja tapahtumien siirron Intrastatiin. Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.
 

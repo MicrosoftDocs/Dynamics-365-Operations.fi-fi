@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-channel-specific-discounts"></a>Kanavakohtaisten alennusten määrittäminen
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Vähittäismyyjät määrittävät usein erilaisia alennuksia eri kanaville. Tässä aiheessa tarkastellaan käsitteitä, joita tarvitaan tietyn kanavan alennuksen luomisessa. 
 
@@ -61,7 +60,7 @@ Seuraavassa esimerkissä käsitellään tehtäviä, jotka liittyvät kanava-alen
 4.  Kun olet luonut uuden **Takaisin kouluun** -alennukset, valitse **Hintaryhmät** **Alennus**-sivun yläosassa. **Alennushintaryhmät**-sivu avautuu. Valitse seuraavaksi ensin **Uusi** ja sitten **Houston-PG**-hintaryhmä.
 5.  Voit nyt ottaa alennuksen käyttöön ja siirtää sen kanavaan.
 
- 
+
 
 <a name="see-also"></a>Lisätietoja
 --------

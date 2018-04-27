@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-destinations-for-electronic-reporting-er"></a>Kohteiden konfigurointi sähköistä raportointia (ER) varten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä esitellään, miten sähköisen raportoinnin (ER) tuloskomponenteille, kuten kansioille tai tiedostoille, voi käyttää eri kohteita. Tämän menettelyn luomisessa käytetty esittely-yritys on DEMF. Saksan on yrityksen ensisijaisen osoitteen maa/alue, mutta tässä menettelyssä voit käyttää mitä tahansa yritystä.. 
 

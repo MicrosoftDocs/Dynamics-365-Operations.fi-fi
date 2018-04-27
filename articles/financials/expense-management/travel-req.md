@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="travel-requisitions"></a>Matkahankinnat
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Matkustusehdotus* on lähdeasiakirja, jossa on luettelo matkasta aiheutuvista kuluista. Matkustusehdotus on lähetty tarkistettavaksi, jonka jälkeen sillä voi hyväksyä kulut.
 

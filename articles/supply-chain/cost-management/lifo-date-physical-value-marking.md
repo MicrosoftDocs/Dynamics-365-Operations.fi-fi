@@ -29,10 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-päivämäärä, fyysinen arvo ja merkintä
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 LIFO-päivämäärä on varastomalli, joka perustuu LIFO-periaatteeseen. Varasto-otot täsmäytetään viimeisiä varastovastaanottoja vasten varastotapahtuman päivämäärän perusteella. Jos LIFO-päivämäärä on määritetty eikä ennen ottoa ei ole vastaanottoa, otto täsmäytetään oton päivämäärän jälkeen tapahtuneiden vastaanottojen mukaan. Jos samana päivänä on useita ottoja, ne täsmäytetään järjestyksessä viimeinen otto, viimeinen vastaanotto. 
 
@@ -66,16 +65,16 @@ Seuraavassa on kuvattu LIFO-päivämäärään perustuvan varastomallin vaikutus
 
 **Kaavion selite**
 
--   Pystysuorat nuolet kuvaavat varastotapahtumia.
--   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
--   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
--   Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
--   Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
--   Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
--   Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
--   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
--   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
--   Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
+- Pystysuorat nuolet kuvaavat varastotapahtumia.
+- Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
+- Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
+- Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
+- Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
+- Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
+- Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
+- Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
 
 ## <a name="lifo-date-with-the-include-physical-value-option"></a>LIFO-päivämäärä käyttäen Sisällytä fyysinen arvo -asetusta
 Voit valita nimikkeelle **Sisällytä fyysinen arvo** -asetuksen **Nimikemalliryhmät**-sivulta. Tällöin järjestelmä käyttää sekä fyysisiä että taloudellisia vastaanottotapahtumia kustannushinnan käyttökeskiarvon laskemiseen. Järjestelmä tekee myös oikaisuja fyysisesti päivitettyyn varastostaottotapahtumaan, jos tämä on aiheellista. Jos **Sisällytä fyysinen arvo** -valintaruudun valinta poistetaan, varaston sulkeminen LIFO-päivämäärään perustuvaa varastomallia käyttämällä täsmäyttää vain kirjanpidollisesti päivitetyt tapahtumat. 
@@ -101,16 +100,16 @@ Seuraavassa on kuvattu LIFO-päivämäärään perustuvan varastomallin vaikutus
 
 **Kaavion selite**
 
--   Pystysuorat nuolet kuvaavat varastotapahtumia.
--   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
--   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
--   Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
--   Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
--   Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
--   Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
--   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
--   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
--   Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
+- Pystysuorat nuolet kuvaavat varastotapahtumia.
+- Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
+- Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
+- Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
+- Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
+- Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
+- Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
+- Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
 
 ## <a name="lifo-date-with-marking"></a>LIFO-päivämäärä käyttäen merkintää
 Merkintä on prosessi, jonka avulla voit linkittää (eli merkitä) varaston ottotapahtuman vastaanottotapahtumaan. Merkintä voi tapahtua joko ennen tapahtuman kirjaamista tai sen jälkeen. Merkinnän avulla voit varmistaa tarkan varastokustannuksen, kun tapahtuma kirjataan tai kun varaston sulkeminen suoritetaan. 
@@ -147,16 +146,16 @@ Seuraavassa on kuvattu LIFO-varastomallin vaikutusta, kun käytetään varastost
 
 **Kaavion selite**
 
--   Pystysuorat nuolet kuvaavat varastotapahtumia.
--   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
--   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
--   Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
--   Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
--   Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
--   Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
--   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
--   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
--   Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
+- Pystysuorat nuolet kuvaavat varastotapahtumia.
+- Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
+- Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
+- Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
+- Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
+- Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
+- Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
+- Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
 
 
 

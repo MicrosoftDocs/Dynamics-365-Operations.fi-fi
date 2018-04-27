@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Tilastodimension jäsenet ja tilastomittauksen lähdemallit
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tilastodimensiota ja sen jäseniä käytetään rekisteröitäessä ja hallittaessa ei-rahallisia merkintöjä kustannuslaskennassa. Tilastodimension jäseniä voidaan käyttää kahteen tarkoitukseen:
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-credit-and-collections"></a>Luotonvalvonnan määrittäminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kerrotaan, miten kokoelmatoiminnot määritetään.
 
@@ -97,9 +96,9 @@ Jos myyntiedustajaa ei ole määritetty, käytetään asiakkaan organisaation en
 Lisätietoja on seuraavissa aiheissa:
 
  - [Maksukehotusjärjestyksen määrittäminen](tasks/create-collection-letter-sequence.md)
- 
+
  - [Käsittele maksukehotuksia](tasks/process-collection-letters.md)
- 
+
  - [Perimistietojen tarkistaminen](tasks/review-collections-information.md)
 
 

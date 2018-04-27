@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="specify-a-lading-address-for-an-intra-community-transaction"></a>Rahtiosoitteen määrittäminen yhteisönsisäiselle tapahtumalle
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä toimintaohjeessa kuvataan, miten määrität kuormausosoitteen yhteisönsisäiselle kauppatapahtumalle. Esimerkkinä saksalainen yritys tilaa nimikkeitä toimittajalta, jolla on saksalainen osoite. Toimittajalla on varasto Italiassa ja toimittaa nimikkeet sieltä. Tämä toimitus on raportoitava Intrastatiin. Sama menettely koskee asiakaspalautuksia.
 Tämä menettely koskee kaikkia Euroopan maita/alueita. Tämä tehtävä luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijainen osoite on Saksassa. Intrastat-raportointi on määritettävä ennen tämän menettelyn suorittamista. Menettely on tarkoitettu kirjanpitäjille. Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.

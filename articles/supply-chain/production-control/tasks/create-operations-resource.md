@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-an-operations-resource"></a>Luo operatiivinen resurssi
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Operatiivinen resurssi suorittaa projektin tai tuotantoprosessin aktiviteetit. Tässä menettelyssä kerrotaan, miten operatiivinen resurssi määritetään. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.
 

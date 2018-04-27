@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="assess-sales-performance-by-product"></a>Myynnin suorituksen tuotekohtainen arviointi
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Retail -sovelluksella voit tutkia 10 parhaan tuotteen kannattavuutta. 
 

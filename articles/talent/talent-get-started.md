@@ -26,14 +26,14 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talent-sovelluksen käytön aloittaminen
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Talent -sovelluksen käyttöliittymän muokkaaminen ja asetusten määrittäminen on helppoa. Näin saat ohjelmiston vastaamaan paremmin yrityksen tarpeita. Tämä ohjeaihe sisältää linkkejä ohjeaiheisiin, jotka sisältävät tietoja käyttöliittymän mukauttamisesta haluamiesi asetusten perusteella. Ohjeaihe sisältää myös linkkejä tietoihin, joiden avulla voit etsiä tietoja järjestelmästä tehokkaasti ja tarkasti. 
 
 > [!NOTE] 
 > Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
 
-### <a name="personalizing-talent"></a>Talentin mukauttaminen 
+## <a name="personalizing-talent"></a>Talentin mukauttaminen 
 Seuraavissa ohjeaiheissa näytetään, miten Dynamics 365 for Talent -sovelluksen useat toiminnot määritetään niin, että työt saadaan tehtyä helpommin ja ajoissa. 
 
 -   [Käyttäjäkokemuksen mukauttaminen](../fin-and-ops/get-started/personalize-user-experience.md) - Tässä ohjeaiheessa kerrotaan, miten Talentin voi mukauttaa ja miten tuotteen osat otetaan käyttöön haluttujen asetusten mukaisesti.
@@ -44,7 +44,7 @@ Seuraavissa ohjeaiheissa näytetään, miten Dynamics 365 for Talent -sovellukse
 
 -   [Pikanäppäimet](../fin-and-ops/get-started/shortcut-keys.md) - Tässä ohjeaiheessa esitellään amerikkalaiseen näppäimistöasettelun pikanäppäimet. 
 
-### <a name="accessing-information"></a>Käyttötiedot
+## <a name="accessing-information"></a>Käyttötiedot
 Seuraavissa ohjeaiheissa kerrotaan, miten tietoja etsitään nopeasti hakujen ja haku- ja suodatusominaisuuksien avulla. 
 
 -   [Tietojen etsiminen hakujen avulla](../fin-and-ops/get-started/use-lookups-to-find-information.md) - Tässä ohjeaiheessa näytetään, miten oikean tai halutun arvon voi etsiä nopeasti hakujen avulla. Tässä ohjeaiheessa kerrotaan, miten haut toimivat ja miten hakuja optimoidaan.

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-control-overview"></a>Kustannusseurannan yleiskatsaus 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Esimiehet voivat avata **Kustannusseuranta**-työtilassa keskitetysti vastuullaan olevia yhden tai kaikkien dimensioiden (kuten kustannuspaikkojen ja tuoteryhmien) kustannusobjekteja tai kustannusobjektijoukkoja koskevia raportteja. Työtilan raportit ovat täysin kustannuslaskijoiden hallinnassa, joten raportoinnissa käytettävä asettelu ja tiedot ovat yhtenäiset koko organisaatiossa.
 

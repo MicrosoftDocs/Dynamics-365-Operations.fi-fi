@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>Luo pankin limiittisopimus takausasiakirjaa varten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tehtävässä luodaan pankin limiittisopimus takuuasiakirjan käsittelyä varten. Tässä tehtävässä käytetään esittely-yritystä USMF. 
 

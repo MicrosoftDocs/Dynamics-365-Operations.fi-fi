@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-repeat-purchase-order"></a>Toistuvan ostotilauksen luonti
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Seuraavassa menettelyssä kuvataan, miten luot toistuvan ostotilauksen (PO) kopioimalla rivejä vanhasta ostotilauksesta uuteen tai vanhaan ostotilaukseen. Toistuvien tilausten luomiseen on kaksi tapaa. Voit käyttää käytettävissä olevia asiakirjatason toimintoja toimintoruudusta tai rivin tietojen toimintoja. Asiakirjan tason toiminnot on tarkoitettu pääasiassa uuden ostotilauksen luomiseen lisäämällä otsikkotiedot ja rivit toisesta tilauksesta, ja rivin tietojen toiminnot on taas tarkoitettu rivien lisäämiseen vanhaan tilaukseen. Tämän oppaan esimerkissä käytetään esittely-yritys USMF:n tietoja. Yleensä ostoedustaja tekee tämän tehtävän.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kustannusten koontikäytäntö ja yleiskustannuslaskenta 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kustannuslaskennan avulla saat tietoja siitä, miten voit kustannusvirta liittyy organisaatiossa toimitettaviin tuotteisiin ja palveluihin. Kustannusten läpinäkyvyyden saavuttamiseksi kustannukset on kohdistettava kustannusobjektien välillä soveltuvan kohdistusperusteen mukaisesti. Oletusarvoisesti ensisijaisen kustannustason kustannukset kohdistetaan, mikä on toivottavaa joissakin tilanteissa. Tästä on kuitenkin joitakin seurauksia, jotka on otettava huomioon.
 

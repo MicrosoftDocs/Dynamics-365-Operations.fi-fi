@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: dd34fb71f7a5d31a075c6475c2fe6627193d891f
-ms.openlocfilehash: 6bb405937288b46f49420a1735c32b5b7c16248e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Rivin määrityksen solujen muokkaaminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa käsitellään tietoja, joita talousraportin rivimäärityksen kussakin solussa on oltava ja selitetään, miten nämä tiedot annetaan. 
 
@@ -104,26 +103,26 @@ Kuvauksen solu sisältää raportin rivillä taloushallinnon tietojen kuvauksen,
 2.  Kaksoisnapsauta **Muotoilukoodi**-solua.
 3.  Valitse luettelosta muotoilukoodi. Seuraavassa taulukossa esitellään muotoilukoodit ja niiden toiminnot.
 
-| **Muotoilukoodi**               | **Muotoilukoodin kuvaus** | **Toiminto**                                                                                                                                                                                                     |
-|-------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| (Ei mitään)                        |                                       | Tyhjentää **Muotoilukoodi**-solun.                                                                                                                                                                               |
-| TOT                           | Yhteensä                                 |  Määrittää rivin, joka käyttää **Liittyvät kaavat/rivit/yksiköt** -sarakkeessa matemaattisia operaattoreita. Yhteensä-koodi sisältää yksinkertaisia operaattoreita, kuten **+** ja **-**.                                                     |
-| CAL                           | Laskelma                           | Määrittää rivin, joka käyttää **Liittyvät kaavat/rivit/yksiköt** -sarakkeessa matemaattisia operaattoreita. Laskelmat sisältävät monimutkaisia operaattoreita, kuten **+**, **-**, **\***, **/** ja **IF/THEN/ELSE** -lausekkeet. |
-| DES                           | kuvaus                           | Määrittää raportin otsikkorivin tai tyhjän rivin.                                                                                                                                                        |
-| LFT RGT CEN                   | Vasen, Oikea, Keskitys                     |  Tasaa rivin kuvaustekstin raporttisivulla tekstin sarakkeen määrityksessä olevasta sijoittelusta huolimatta.                                                                                              |
-| CBR                           | Vaihda perusrivi                       | Määrittää rivin, joka määrittää sarakkeiden laskelmien perusrivin.                                                                                                                                               |
-| COLUMN                        | Sarakkeen vaihto                          | Aloittaa raportin uuden sarakkeen.                                                                                                                                                                             |
-| PAGE                          | Sivunvaihto                            | Aloittaa raportin uuden sivun.                                                                                                                                                                               |
-| \---                          | Yksinkertainen alleviivaus                      | Alleviivaa raportin kaikkien summasarakkeiden rivin yhdellä viivalla.                                                                                                                                                     |
-|  ===                          | Kaksoisalleviivaus                      | Alleviivaa raportin kaikkien summasarakkeiden rivin kaksoisviivalla.                                                                                                                                                     |
-| LINE1                         | Ohut viiva                             | Piirtää sivulle ohuen viivan.                                                                                                                                                                      |
-| VIIVA2                         | Paksu viiva                            | Piirtää sivun poikki yhden paksun viivan.                                                                                                                                                                     |
-| VIIVA3                         | Pisteviiva                           | Piirtää sivulle pisteviivan.                                                                                                                                                                    |
-| LINE4                         | Paksu ja ohut viiva              | Piirtää sivulle kaksoisviivan. Ylempi viiva on paksu ja alempi ohut.                                                                                                                       |
-| LINE5                         | Ohut ja paksu viiva              | Piirtää sivulle kaksoisviivan. Ylempi viiva on ohut ja alempi paksu.                                                                                                                       |
-| BXB BXC                       | Kehystetty rivi                             | Piirtää raportin rivin ympärille ruudun, joka alkaa **BXB**-riviltä ja päättyy **BXC**-riville.                                                                                                               |
-| HUOM                           | Huomautus                                | Määrittää rivin, joka on kommenttirivi ja jota ei tulosteta raporttiin. Huomautusrivillä voidaan esimerkiksi selittää muotoilutapoja.                                                            |
-| SORT ASORT SORTDESC ASORTDESC | Lajittele                                  | Lajittelee kulut ja tuotot, toteutuneen tai budjetin varianssin raportin suurimman varianssin mukaan tai rivin kuvaukset aakkosjärjestykseen.                                                                   |
+| <strong>Muotoilukoodi</strong>  | <strong>Muotoilukoodin kuvaus</strong> |                                                                                                                             <strong>Toiminto</strong>                                                                                                                              |
+|-------------------------------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            (Ei mitään)             |                                                    |                                                                                                                  Tyhjentää <strong>Muotoilukoodi</strong>-solun.                                                                                                                   |
+|              TOT              |                       Yhteensä                        |                                         Määrittää rivin, joka käyttää <strong>Liittyvät kaavat/rivit/yksiköt</strong> -sarakkeessa matemaattisia operaattoreita. Yhteensä-koodi sisältää yksinkertaisia operaattoreita, kuten <strong>+</strong> ja <strong>-</strong>.                                         |
+|              CAL              |                    Laskelma                     | Määrittää rivin, jossa käytetään matemaattisia operaattoreita <strong>Liittyvät kaavat/rivit/yksiköt</strong> -sarakkeessa. Laskelmat sisältävät monimutkaisia operaattoreita, kuten <strong>+</strong>, <strong>-</strong>, <strong>\</strong><em>, **/</em><em> ja **IF/THEN/ELSE</em>*-lausekkeita. |
+|              KUV              |                    kuvaus                     |                                                                                                             Määrittää raportin otsikkorivin tai tyhjän rivin.                                                                                                              |
+|          LFT RGT CEN          |                 Vasen, Oikea, Keskitys                  |                                                                                 Tasaa rivin kuvaustekstin raporttisivulla tekstin sarakkeen määrityksessä olevasta sijoittelusta huolimatta.                                                                                 |
+|              CBR              |                  Vaihda perusrivi                   |                                                                                                         Määrittää rivin, joka määrittää sarakkeiden laskelmien perusrivin.                                                                                                         |
+|            COLUMN             |                    Sarakkeen vaihto                    |                                                                                                                        Aloittaa raportin uuden sarakkeen.                                                                                                                        |
+|             PAGE              |                     Sivunvaihto                     |                                                                                                                         Aloittaa raportin uuden sivun.                                                                                                                         |
+|             \---              |                  Yksinkertainen alleviivaus                  |                                                                                                            Alleviivaa raportin kaikkien summasarakkeiden rivin yhdellä viivalla.                                                                                                            |
+|              ===              |                  Kaksoisalleviivaus                  |                                                                                                            Alleviivaa raportin kaikkien summasarakkeiden rivin kaksoisviivalla.                                                                                                            |
+|             LINE1             |                     Ohut viiva                      |                                                                                                                    Piirtää sivulle ohuen viivan.                                                                                                                     |
+|             VIIVA2             |                     Paksu viiva                     |                                                                                                                    Piirtää sivun poikki yhden paksun viivan.                                                                                                                    |
+|             VIIVA3             |                    Pisteviiva                     |                                                                                                                   Piirtää sivulle pisteviivan.                                                                                                                    |
+|             LINE4             |              Paksu ja ohut viiva              |                                                                                             Piirtää sivulle kaksoisviivan. Ylempi viiva on paksu ja alempi ohut.                                                                                             |
+|             LINE5             |              Ohut ja paksu viiva              |                                                                                             Piirtää sivulle kaksoisviivan. Ylempi viiva on ohut ja alempi paksu.                                                                                             |
+|            BXB BXC            |                     Kehystetty rivi                      |                                                                            Piirtää niiden raportin rivien ympärille kehyksen, joiden alussa on <strong>ARR</strong>-rivi ja lopussa <strong>LRR</strong>-rivi                                                                            |
+|              HUOM              |                       Huomautus                       |                                                               Määrittää rivin, joka on kommenttirivi ja jota ei tulosteta raporttiin. Huomautusrivillä voidaan esimerkiksi selittää muotoilutapoja.                                                                |
+| SORT ASORT SORTDESC ASORTDESC |                        Lajittele                        |                                                                   Lajittelee kulut ja tuotot, toteutuneen tai budjetin varianssin raportin suurimman varianssin mukaan tai rivin kuvaukset aakkosjärjestykseen.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Liittyvien kaavojen/rivien/yksiköiden määrittäminen
 **Liittyvät kaavat/rivit/yksiköt** -solulla on useita tarkoituksia. Rivityypistä riippuen **Liittyvät kaavat/rivit/yksiköt** -solu voi suorittaa jonkin seuraavista toiminnoista:
@@ -211,12 +210,12 @@ Lajittelukoodit lajittelevat tilit tai arvot, toteutuneen tai budjetin varianssi
 
 ### <a name="select-a-sorting-code"></a>Lajittelukoodin valitseminen
 
-1.  Valitse Report Designerissa **Rivien määritykset** ja avaa muokattava rivin määritys.
-2.  Kaksoisnapsauta **Muotoilukoodi** -solua ja valitse sitten lajittelukoodi.
-3.  Määritä **Liittyvät kaavat/rivit/yksiköt** -soluun lajiteltavien rivien koodien alue. Voit määrittää alueen syöttämällä ensimmäisen rivin koodin, kaksoispisteen (:) ja lopuksi viimeisen rivin koodin. Voit syöttää esimerkiksi **160:490**-arvon, kun alue on rivistä 160 riviin 490.
-4.  Syötä **Sarakkeen rajoitus** -soluun lajittelussa käytettävän raporttisarakkeen kirjain. 
-> [!Note] 
-> Ota lajittelun laskelmaan mukaan vain summarivit.
+1. Valitse Report Designerissa **Rivien määritykset** ja avaa muokattava rivin määritys.
+2. Kaksoisnapsauta **Muotoilukoodi** -solua ja valitse sitten lajittelukoodi.
+3. Määritä **Liittyvät kaavat/rivit/yksiköt** -soluun lajiteltavien rivien koodien alue. Voit määrittää alueen syöttämällä ensimmäisen rivin koodin, kaksoispisteen (:) ja lopuksi viimeisen rivin koodin. Voit syöttää esimerkiksi **160:490**-arvon, kun alue on rivistä 160 riviin 490.
+4. Syötä **Sarakkeen rajoitus** -soluun lajittelussa käytettävän raporttisarakkeen kirjain. 
+   > [!Note] 
+   > Ota lajittelun laskelmaan mukaan vain summarivit.
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Esimerkkejä nousevista ja laskevista sarakearvoista
 
@@ -258,41 +257,41 @@ Seuraavassa esimerkissä raportin sarakkeen D arvot lajitellaan nousevassa järj
 
 Valuutan muotoileminen koskee tilikauden summaa. Se sisältää valuuttasymbolin. Käytettävissä ovat seuraavat asetukset:
 
--   **Valuuttasymboli** – raportin valuuttasymboli. Tämä arvo ohittaa yrityksen tietojen **Alueelliset asetukset** -asetuksen.
--   **Negatiiviset luvut** – negatiivisilla luvuilla on miinusmerkki (-) ja ne näkyvät suluissa tai niihin on liitetty kolmio (∆).
--   **Desimaalit** – desimaalipilkun jälkeen näytettävien desimaalien määrä.
--   **Nolla-arvon ohituksen teksti** – Teksti, joka sisällytetään raporttiin, kun summa on 0 (nolla). Teksti näkyy **Malli**-alueen viimeisellä rivillä. 
-> [!Note] 
-> Jos tulostus on poistettu käytöstä nolla-arvojen kohdalla tai niiltä kausilta, joilla ei ole toimintaa, tämä teksti piilotetaan.
+- **Valuuttasymboli** – raportin valuuttasymboli. Tämä arvo ohittaa yrityksen tietojen **Alueelliset asetukset** -asetuksen.
+- **Negatiiviset luvut** – negatiivisilla luvuilla on miinusmerkki (-) ja ne näkyvät suluissa tai niihin on liitetty kolmio (∆).
+- **Desimaalit** – desimaalipilkun jälkeen näytettävien desimaalien määrä.
+- **Nolla-arvon ohituksen teksti** – Teksti, joka sisällytetään raporttiin, kun summa on 0 (nolla). Teksti näkyy **Malli**-alueen viimeisellä rivillä. 
+  > [!Note] 
+  > Jos tulostus on poistettu käytöstä nolla-arvojen kohdalla tai niiltä kausilta, joilla ei ole toimintaa, tämä teksti piilotetaan.
 
 ### <a name="numeric-formatting"></a>Numeerinen muotoileminen
 
 Numeerinen muotoileminen koskee mitä tahansa summaa. Se ei sisällä valuuttasymbolia. Valittavissa ovat seuraavat vaihtoehdot:
 
--   **Negatiiviset luvut** – negatiivisilla luvuilla on miinusmerkki (-) ja ne näkyvät suluissa tai niihin on liitetty kolmio (∆).
--   **Desimaalit** – desimaalipilkun jälkeen näytettävien desimaalien määrä.
--   **Nolla-arvon ohituksen teksti** – Teksti, joka sisällytetään raporttiin, kun summa on 0 (nolla). Teksti näkyy **Malli**-alueen viimeisellä rivillä. 
-> [!Note] 
-> Jos tulostus on poistettu käytöstä nolla-arvojen kohdalla tai niiltä kausilta, joilla ei ole toimintaa, tämä teksti piilotetaan.
+- **Negatiiviset luvut** – negatiivisilla luvuilla on miinusmerkki (-) ja ne näkyvät suluissa tai niihin on liitetty kolmio (∆).
+- **Desimaalit** – desimaalipilkun jälkeen näytettävien desimaalien määrä.
+- **Nolla-arvon ohituksen teksti** – Teksti, joka sisällytetään raporttiin, kun summa on 0 (nolla). Teksti näkyy **Malli**-alueen viimeisellä rivillä. 
+  > [!Note] 
+  > Jos tulostus on poistettu käytöstä nolla-arvojen kohdalla tai niiltä kausilta, joilla ei ole toimintaa, tämä teksti piilotetaan.
 
 ### <a name="percentage-formatting"></a>Prosenttiosuuden muotoileminen
 
 Prosenttiosuuden muotoileminen sisältää prosenttimerkin (%). Valittavissa ovat seuraavat vaihtoehdot:
 
--   **Negatiiviset luvut** – negatiivisilla luvuilla on miinusmerkki (-) ja ne näkyvät suluissa tai niihin on liitetty kolmio (∆).
--   **Desimaalit** – desimaalipilkun jälkeen näytettävien desimaalien määrä.
--   **Nolla-arvon ohituksen teksti** – Teksti, joka sisällytetään raporttiin, kun summa on 0 (nolla). Teksti näkyy **Malli**-alueen viimeisellä rivillä. 
-> [!Note] 
-> Jos tulostus on poistettu käytöstä nolla-arvojen kohdalla tai niiltä kausilta, joilla ei ole toimintaa, tämä teksti piilotetaan.
+- **Negatiiviset luvut** – negatiivisilla luvuilla on miinusmerkki (-) ja ne näkyvät suluissa tai niihin on liitetty kolmio (∆).
+- **Desimaalit** – desimaalipilkun jälkeen näytettävien desimaalien määrä.
+- **Nolla-arvon ohituksen teksti** – Teksti, joka sisällytetään raporttiin, kun summa on 0 (nolla). Teksti näkyy **Malli**-alueen viimeisellä rivillä. 
+  > [!Note] 
+  > Jos tulostus on poistettu käytöstä nolla-arvojen kohdalla tai niiltä kausilta, joilla ei ole toimintaa, tämä teksti piilotetaan.
 
 ### <a name="custom-formatting"></a>Mukautettu muotoileminen
 
 Luo mukautettu muotoilun ohitus mukautetun muotoiluluokan avulla. Valittavissa ovat seuraavat vaihtoehdot:
 
--   **Tyyppi** – mukautettu muotoilu.
--   **Nolla-arvon ohituksen teksti** – Teksti, joka sisällytetään raporttiin, kun summa on 0 (nolla). Teksti näkyy **Malli**-alueen viimeisellä rivillä. 
-> [!Note] 
-> Jos tulostus on poistettu käytöstä nolla-arvojen kohdalla tai niiltä kausilta, joilla ei ole toimintaa, tämä teksti piilotetaan.
+- **Tyyppi** – mukautettu muotoilu.
+- **Nolla-arvon ohituksen teksti** – Teksti, joka sisällytetään raporttiin, kun summa on 0 (nolla). Teksti näkyy **Malli**-alueen viimeisellä rivillä. 
+  > [!Note] 
+  > Jos tulostus on poistettu käytöstä nolla-arvojen kohdalla tai niiltä kausilta, joilla ei ole toimintaa, tämä teksti piilotetaan.
 
 Tyyppi edustaa positiivista ja negatiivista arvoa. Yleensä syötetään samanlainen muoto, joka erottelee positiiviset ja negatiiviset arvot. Kun haluat määrittää esimerkiksi, että positiivisilla ja negatiivisilla arvoilla on kaksi desimaalia, mutta negatiiviset arvot näkyvät suluissa, syötä **0.00;(0.00)**. Seuraavassa taulukossa ovat mukautetut muodot, joiden avulla arvojen muotoja hallitaan. Kaikki esimerkit alkavat arvosta 1234,56.
 
@@ -387,7 +386,7 @@ Oletusarvoisesti Report Designer ei tulosta rivejä, joilla ei ole vastaavaa sal
 3.  Tallenna muutokset valitsemalla **Tiedosto**-valikosta **Tallenna**.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Yleismerkkien ja alueiden käyttäminen rivin määrityksessä
-Jos haluat syöttää luonnollisen segmentin arvon **Dimensiot**-valintaikkunaan, voit syöttää mihin tahansa segmentin kohtaan yleismerkin (? tai \*). Raportin suunnitteluohjelma poimii määritettyjen sijaintien arvot, eikä ota yleismerkkejä huomioon. Tässä esimerkissä rivin määritys sisältää vain luonnollisen segmentin arvoja. Luonnollisilla segmenteillä on neljä merkkiä. Jos annat arvoksi **6???** Report Designer ottaa huomioon kaikki tilit, joiden luonnollisen segmentin arvo alkaa numerolla 6. Jos annat arvoksi **6\***, palautettavat tulokset ovat samat, mutta tulokset voivat sisältää myös muun pituisia arvoja, kuten **60** ja **600000** Report Designer korvaa kunkin yleismerkin (?) arvoilla, jotka voivat sisältää sekä kirjaimia että erikoismerkkejä. Jos alueeksi määritetään **12?0**–**12?4**, **12?0**-arvon yleismerkki korvataan merkistön alimmalla arvolla ja **12?4**-arvon yleismerkki merkistön korkeimmalla arvolla. 
+Jos haluat syöttää luonnollisen segmentin arvon <strong>Dimensiot</strong>-valintaikkunaan, voit syöttää mihin tahansa segmentin kohtaan yleismerkin (? tai \*). Raportin suunnitteluohjelma poimii määritettyjen sijaintien arvot, eikä ota yleismerkkejä huomioon. Tässä esimerkissä rivin määritys sisältää vain luonnollisen segmentin arvoja. Luonnollisilla segmenteillä on neljä merkkiä. Jos annat arvoksi <strong>6???</strong> Report Designer ottaa huomioon kaikki tilit, joiden luonnollisen segmentin arvo alkaa numerolla 6. Jos annat arvoksi <strong>6\</strong><em>, palautettavat tulokset ovat samat, mutta tulokset voivat sisältää myös muun pituisia arvoja, kuten **60</em>* ja <strong>600000</strong>. Report Designer korvaa kunkin yleismerkin (?) arvoilla, jotka voivat sisältää sekä kirjaimia että erikoismerkkejä. Jos alueeksi määritetään <strong>12?0</strong>–<strong>12?4</strong>, <strong>12?0</strong>-arvon yleismerkki korvataan merkistön alimmalla arvolla ja <strong>12?4</strong>-arvon yleismerkki merkistön korkeimmalla arvolla. 
 > [!Note] 
 > Vältä yleismerkkien käyttämistä alueiden aloitus- ja lopetustileissä. Jos aloitus- tai lopetustilissä käytetään yleismerkkiä, tulokset voivat olla odottamattomia.
 
@@ -466,15 +465,15 @@ Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelm
 
 ### <a name="update-a-set-of-dimension-values"></a>Dimensioarvojoukon päivittäminen
 
-1.  Avaa raporttien suunnitteluohjelmassa rivi-, sarake- tai puumääritys, jota haluat muokata.
-2.  Valitse **Muokkaa**-valikossa **Dimensioarvoyhdistelmien hallinta**.
-3.  Valitse **Dimensioarvoyhdistelmien hallinta** -valintaikkunan **Dimensio**-kentässä dimensiotyyppi.
-4.  Valitse luettelosta päivitettävä dimensioarvoyhdistelmä ja valitse sitten **Muokkaa**.
-5.  Muokkaa **Muokkaa**-valintaikkunassa yhdistelmään sisällytettävän kaavan arvoja. 
-> [!Note] 
-> Jos lisäät uusia tilejä tai dimensioita, varmista, että muokkaat aiemmin luodut dimensioarvoyhdistelmät, jotta muutokset otetaan huomioon.
-6.  Kaksoisnapsauta solua ja valitse sopiva operaattori **Mistä**- ja **Mihin**-tilille.
-7.  Valitse **OK**, kun haluat sulkea **Muokkaa**-valintaikkunan ja tallentaa muutokset.
+1. Avaa raporttien suunnitteluohjelmassa rivi-, sarake- tai puumääritys, jota haluat muokata.
+2. Valitse **Muokkaa**-valikossa **Dimensioarvoyhdistelmien hallinta**.
+3. Valitse **Dimensioarvoyhdistelmien hallinta** -valintaikkunan **Dimensio**-kentässä dimensiotyyppi.
+4. Valitse luettelosta päivitettävä dimensioarvoyhdistelmä ja valitse sitten **Muokkaa**.
+5. Muokkaa **Muokkaa**-valintaikkunassa yhdistelmään sisällytettävän kaavan arvoja. 
+   > [!Note] 
+   > Jos lisäät uusia tilejä tai dimensioita, varmista, että muokkaat aiemmin luodut dimensioarvoyhdistelmät, jotta muutokset otetaan huomioon.
+6. Kaksoisnapsauta solua ja valitse sopiva operaattori **Mistä**- ja **Mihin**-tilille.
+7. Valitse **OK**, kun haluat sulkea **Muokkaa**-valintaikkunan ja tallentaa muutokset.
 
 ### <a name="copy-a-dimension-set"></a>Dimensioyhdistelmän kopioiminen
 

@@ -3,7 +3,7 @@ title: Yksi tosite
 description: "Talouskirjauskansioiden (kuten yleinen kirjauskansio, käyttöomaisuuden kirjauskansio tai toimittajan maksukirjauskansio) yksi tosite sallii useiden alareskontratapahtumien antamisen yhden tositteen kontekstissa."
 author: kweekley
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 3831a6b5ec458495134b4b490d33a9acd76b6d2e
-ms.openlocfilehash: 76ea8470786bd50896400a65564d698d96119d6f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9f996131830f9bd4efd534143b3fb761c5ccc756
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="one-voucher"></a>Yksi tosite
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Tämä toiminto on käytössä Dynamics 365 for Finance and Operationsin versiossa 8.0, joka sisältyy kevään 2018 versioon.   
@@ -38,9 +38,12 @@ ms.lasthandoff: 03/20/2018
 
 Talouskirjauskansioiden (kuten yleinen kirjauskansio, käyttöomaisuuden kirjauskansio tai toimittajan maksukirjauskansio) aiemmin luotu toiminto sallii useiden alareskontratapahtumien antamisen yhden tositteen kontekstissa. Tätä toimintoa kutsutaan yhden tositteen toiminnoksi. Voit luoda yhden tositteen toiminnon jollakin seuraavista tavoista:
 
--   Määritä kirjauskansion nimi (**Kirjanpito** \> **Kirjauskansion asetukset** \>**Kirjauskansioiden nimet**) siten, että **Uusi tosite** -kentän valintana on **Vain yksi tositenumero**. Jokainen kirjauskansioon lisätty rivi sisällytetään nyt samaan tositteeseen. Koska jokainen rivi on lisätty samaan tositteeseen, tosite voidaan syöttää usean rivin tositteena, saman rivin tilinä/vastatilinä tai niiden yhdistelmänä.
+-   Määritä kirjauskansion nimi (**Kirjanpito** \> **Kirjauskansion asetukset** \>**Kirjauskansioiden nimet**) siten, että **Uusi tosite** -kentän valintana on **Vain yksi tositenumero**. * Jokainen kirjauskansioon lisätty rivi sisällytetään nyt samaan tositteeseen. Koska jokainen rivi on lisätty samaan tositteeseen, tosite voidaan syöttää usean rivin tositteena, saman rivin tilinä/vastatilinä tai niiden yhdistelmänä.
 
 [![Yksi rivi](./media/same-line.png)](./media/same-line.png)
+ 
+> [!IMPORTANT] 
+> *  Huomaa, että yhden tositteen määritelmä EI sisällä niitä kirjauskansion nimiä, jotka on määritetty **vain yhdeksi tositenumeroksi** ja käyttäjä kirjaa sitten tositteen, joka sisältää vain kirjanpitotilityyppejä.  Tässä asiakirjassa yksi tosite tarkoittaa, että yhdessä tositteessa on enemmän kuin yksi toimittaja, asiakas, pankki, käyttöomaisuuserä tai projekti. 
 
 -   Syötä usean rivin tosite, jossa ei ole vastatiliä.
 
@@ -68,13 +71,16 @@ Voit sitten luoda **Toimittajakohtaiset kulut** -raportin **Taloushallinnon tied
 
 Aiemmista ongelmista johtuen yhden tositteen toiminnallisuus on vanhentunut. Toiminallisuutta ei poisteta käytöstä kerralla, koska jotkin toiminnalliset aukot saattavat olla riippuvaisia tästä toiminnallisuudesta. Sen sijaan käytetään seuraavaa aikataulua: 
 
--   **Kevään 2018 versio** – Toiminnot poistetaan käytöstä oletusarvoisesti kirjanpidon parametrien avulla. Voit ottaa toiminnallisuuden käyttöön, jos organisaatiossa on skenaario, joka toteuttaa myöhemmin tässä ohjeaiheessa esitellyn liiketoimintaskenaarion aukon.
+- **Kevään 2018 versio** – Toiminnot poistetaan käytöstä oletusarvoisesti kirjanpidon parametrien avulla. Voit ottaa toiminnallisuuden käyttöön, jos organisaatiossa on skenaario, joka toteuttaa myöhemmin tässä ohjeaiheessa esitellyn liiketoimintaskenaarion aukon.
 
-    -   Jos asiakkaalla on liiketoimintaskenaario, jossa ei tarvita yhden tositteen toiminnallisuutta, älä ota toiminnallisuutta käyttöön. Myöhemmin tässä ohjeaiheessa mainituilla alueilla esiintyviä virheitä ei korjata, jos tätä toimintoa käytetään vaikka käytettävissä on myös toinen ratkaisu.
+  -   Jos asiakkaalla on liiketoimintaskenaario, jossa ei tarvita yhden tositteen toiminnallisuutta, älä ota toiminnallisuutta käyttöön. Myöhemmin tässä ohjeaiheessa mainituilla alueilla esiintyviä virheitä ei korjata, jos tätä toimintoa käytetään vaikka käytettävissä on myös toinen ratkaisu.
 
-    -   Lopeta yhden tositteen käyttö Microsoft Dynamics 365 Finance and Operations -integrointien yhteydessä, ellei toiminnallisista aukoista edellytä toiminnon käyttöä.
+  -   Lopeta yhden tositteen käyttö Microsoft Dynamics 365 Finance and Operations -integrointien yhteydessä, ellei toiminnallisista aukoista edellytä toiminnon käyttöä.
 
--   **Syksy 2018 ja myöhemmät versiot** – Toiminnalliset aukot täytetään. Kun toiminnalliset aukot on täytetty, yhden tositteen toiminnallisuus poistetaan käytöstä pysyvästi.
+- **Syksy 2018 ja myöhemmät versiot** – Toiminnalliset aukot täytetään. Kun toiminnalliset aukot on täytetty, yhden tositteen toiminnallisuus poistetaan käytöstä pysyvästi.
+
+- > [!IMPORTANT]
+  > Huomaa, että **Vain yksi tositenumero** -asetusta EI ole poistettu kirjauskansion nimen asetuksista.  Tätä asetusta tuetaan edelleen, kun tosite sisältää vain kirjanpitotilityyppejä.  Asiakkaiden on oltava huolellinen tätä asetusta käytettäessä, sillä tositetta ei kirjata, jos he käyttävät **Vain yksi tositenumero** -asetusta mutta kirjaavat useamman kuin yhden asiakkaan, toimittajan, pankin, käyttöomaisuuserän tai projektin.  Asiakkaat voivat edelleen kirjata alareskontran tilityyppejä, kuten maksun yhdellä tositteella, joka sisältää Toimittaja/pankki-tilityyppejä.  
 
 <a name="why-use-one-voucher"></a>Yhden tositteen käytön syitä
 ====================
@@ -102,13 +108,13 @@ Seuraavat skenaariot voidaan toteuttaa vain käyttämällä yhden tositteen toim
 
 >   Jos organisaatiossa on tarkasteltava kirjanpitotapahtumia liiketoimintatapahtumassa yhdessä, yhden tositteen toiminnallisuuden on oltava käytössä. 
 
--   **Maakohtaiset erityispiirteet**
+- **Maakohtaiset erityispiirteet**
 
- -   Puolan SAD (Single Administrative Document) -ominaisuus edellyttää tällä hetkellä yhden tositteen käyttöä. Yhden tositteen toimintoa on käytettävä siihen saakka, että ryhmittelyasetus on valittavana tässä ominaisuudessa. Tietyt maakohtaiset ominaisuudet voivat edellyttää yhden tositteen toiminnon käyttöä.
+  -   Puolan SAD (Single Administrative Document) -ominaisuus edellyttää tällä hetkellä yhden tositteen käyttöä. Yhden tositteen toimintoa on käytettävä siihen saakka, että ryhmittelyasetus on valittavana tässä ominaisuudessa. Tietyt maakohtaiset ominaisuudet voivat edellyttää yhden tositteen toiminnon käyttöä.
 
--   **Asiakkaan ennakkomaksun maksukirjauskansio, joka sisältää veroja useilla riveillä**
+- **Asiakkaan ennakkomaksun maksukirjauskansio, joka sisältää veroja useilla riveillä**
 
- -   Asiakas tekee tilaukselle ennakkomaksun. Tilauksen riveillä on eri verosummat, jotka on tallennettava ennakkomaksua varten. Asiakkaan maksun ennakkomaksu on yksi tapahtuma, joka simuloi tilauksen rivit, jotta kunkin rivin summalle voidaan kirjata soveltuva vero.
+  -   Asiakas tekee tilaukselle ennakkomaksun. Tilauksen riveillä on eri verosummat, jotka on tallennettava ennakkomaksua varten. Asiakkaan maksun ennakkomaksu on yksi tapahtuma, joka simuloi tilauksen rivit, jotta kunkin rivin summalle voidaan kirjata soveltuva vero.
 
 Tässä skenaariossa yhden tositteen asiakkaat ovat samoja, koska tapahtuma simuloi asiakastilauksen rivejä. Ennakkomaksu on annettava yhdessä tositteessa, sillä vero on laskettava asiakkaan tekemän yhden maksun riveillä.
 

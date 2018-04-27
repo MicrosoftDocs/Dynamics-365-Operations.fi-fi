@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="absence-registration-in-time-and-attendance"></a>Työajan seurannan poissaolojen rekisteröinti
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa esitellään poissaoloihin liittyvät käsitteet ja kerrotaan, miten poissaoloja käsitellään työajan seurannassa.
 

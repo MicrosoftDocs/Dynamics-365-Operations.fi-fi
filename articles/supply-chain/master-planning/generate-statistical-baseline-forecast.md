@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="generate-a-statistical-baseline-forecast"></a>Luo tilastollinen perusennuste
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa annetaan tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista. 
 

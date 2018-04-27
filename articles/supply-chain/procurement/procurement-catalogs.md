@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-catalogs"></a>Hankintaluettelot
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan, kuinka ostajat voivat määrittää ja ylläpitää tuotteiden hankintaluetteloita. Hankintaluettelot määrittävät nimikkeet ja palvelut, joita yrityksen työntekijät voivat tilata sisäiseen käyttöön.
 

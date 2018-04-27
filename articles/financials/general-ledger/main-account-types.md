@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="main-account-types"></a>Päätilin tyypit
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Päätilin tyypit määrittävät sen, kuinka montaa päätiliä tilikartassa käytetään.
 

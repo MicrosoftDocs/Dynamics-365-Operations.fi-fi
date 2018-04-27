@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="electronic-reporting-overview"></a>Sähköisen raportoinnin yleiskatsaus
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä aihe esittelee sähköisen raportointityökalun. Artikkelissa on tietoja keskeisistä käsitteistä ja sähköisen raportoinnin tukemista skenaarioista. Lisäksi siinä on luettelo muodoista, jotka on suunniteltu osana tätä ratkaisua ja jotka julkaistaan sen osana.
 
@@ -287,6 +286,7 @@ Voit luoda (johtaa) sähköisessä raportoinnissa uuden osan LCS:stä tuodun osa
 Voit ottaa sähköisessä raportoinnissa automaattisesti käyttöön viimeisimpään perusosaan versioon tehdyt muutokset nykyisessä johdetun osan luonnosversiossa. Tätä prosessia kutsutaan *pohjustamiseksi*. Esimerkiksi LCS:stä tuodun muodon uusimpaan versioon tehdyt lakisääteiset muutokset voidaan yhdistää automaattisesti tämän sähköisen asiakirjan muodon mukautettuun versioon. Muutoksia, joita ei voi yhdistetään automaattisesti, pidetään ristiriitoina. Nämä ristiriidat jätetään ratkaistavaksi manuaalisesti kyseisen osan suunnittelutyökaluun. Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin muodon päivitys ottamalla käyttöön kyseisen muodon perusversio** -tehtäväopas (osa **7.5.5.3 Muutetun IT-palvelu- ja -ratkaisuosan hankinta ja kehittäminen (10683)** -liiketoimintaprosessia).
 
 ## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a>Finance and Operations -ratkaisussa toimitettavien sähköisten raportointimääritysten luettelo
+
 | Toimialakohtaiset tietomallimääritykset: otsikko | Toimialue                | Tietomalliriippuvainen muotomääritykset: otsikko | Kuvaus                                                        |
 |--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
 | Tarkistustiedostomalli                                 | Tilintarkistus       |                                                   |                                                                    |

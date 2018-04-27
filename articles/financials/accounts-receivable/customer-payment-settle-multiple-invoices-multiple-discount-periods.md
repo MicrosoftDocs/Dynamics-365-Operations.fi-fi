@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, kuinka käteisalennukset voivat vaihdella maksuajankohdan mukaan.
 

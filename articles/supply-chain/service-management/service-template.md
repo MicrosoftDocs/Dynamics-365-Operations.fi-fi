@@ -28,7 +28,7 @@ ms.lasthandoff: 02/27/2018
 
 # <a name="service-templates"></a>Huollon mallit
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Voit määrittää huoltosopimuksen mallina ja kopioida mallin rivit myöhemmin toiseen huoltosopimukseen tai huoltotilaukseen.
 

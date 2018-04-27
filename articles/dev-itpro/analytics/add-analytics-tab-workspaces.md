@@ -16,16 +16,16 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee95c3d79f7f401c767b9bc8415b21369c14478b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Ominaisuutta tuetaan Dynamics 365 for Finance and Operationsin versiossa 7.2 ja sitä uudemmissa versioissa.
@@ -50,7 +50,7 @@ Riippumatta siitä laajennatko aiemmin luodun sovellustyötilan vai otatko käyt
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>.pbix-tiedoston lisääminen resurssina
 Ennen aloittamista on luotava tai haettava työtilaan upotettava Power BI -raportti. Lisätietoja analyysiraporttien luomisesta on ohjeaiheessa [Power BI Desktopin käytön aloittaminen](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
- 
+
 Lisää .pbix-tiedosto Visual Studio -projektin artefakti.
 
 1. Luo uusi projekti sopivassa mallissa-
@@ -63,12 +63,12 @@ Lisää .pbix-tiedosto Visual Studio -projektin artefakti.
 5. Etsi analyysiraportin määritelmän sisältävä .pbix-tiedosto ja valitse sitten **Avaa**.
 
     ![Valitse resurssitiedosto -valintaikkuna](media/analytical-workspace-select-resource.png)
-  
+
 Nyt kun .pbix-tiedosto on lisätty Dynamics 365 -resurssina, voit upottaa raportteja työtiloihin ja lisätä suoria linkkejä valikkovaihtoehtojen avulla.
 
 ## <a name="add-a-tab-control-to-an-application-workspace"></a>Välilehtiohjausobjektin lisääminen sovelluksen työtilaan
 Tässä esimerkissä Kuljetuskaluston hallinta -mallin **Varausten hallinta** -työtilaa laajennetaan lisäämällä **Analytiikka**-välilehti **FMClerkWorkspace**-lomakkeen määritelmään.
- 
+
 Seuraavassa kuvassa näytetään, miltä **FMClerkWorkspace**-lomake näyttää Microsoft Visual Studion suunnittelutoiminnossa.
 
 ![FMClerkWorkspace-lomake ennen muutoksia](media/analytical-workspace-definition-before.png)
@@ -93,16 +93,16 @@ Laajenna **Varausten hallinta** -työtilan lomakemääritystä seuraavien ohjeid
 16. Napsauta hiiren kakkospainikkeella ja valitse sitten **Poista kuvio**.
 17. Napsauta hiiren kakkospainikkeella uudelleen ja valitse sitten **Lisää kuvio** > **Välilehdellinen työtila**.
 18. Tarkista muutokset luomalla koontiversio.
- 
+
 Seuraava kuva osoittaa, miltä rakenne näyttää muutosten jälkeen.
 
 ![FMClerkWorkspace muutosten jälkeen](media/analytical-workspace-definition-after.png)
 
 Nyt kun työtilan raportin upottamiseen käytettävät lomakkeen ohjausobjektit on lisätty, pääohjausobjektin koko on määritettävä asetteluun sopivaksi. Oletusarvoisesti sekä **Suodatinruutu**-sivu että **Välilehti**-sivu näkyvät raportissa. Voit kuitenkin muuttaa näiden ohjausobjektien näkyvyyttä raportin kohdekäyttäjän mukaan.
- 
+
 > [!NOTE]
 > Upotetuissa työtiloissa kannattaa käyttää laajennuksia, jotka piilottavat yhdenmukaisuuden vuoksi sekä **Suodatinruutu**- että **Välilehti**-sivut.
- 
+
 Olet nyt suorittanut sovelluksen lomakemäärityksen laajennustehtävän. Lisätietoja mukautusten tekemisestä laajennusten avulla on ohjeaiheessa [Mukauttaminen: lisäykset ja laajennukset](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Katseluohjausobjektin upottaminen lisäämällä X++-liiketoimintalogiikka
@@ -169,12 +169,13 @@ public static void initializeReportControl(
 
 #### <a name="parameters"></a>Parametrit
 
-| Nimi | kuvaus |
-|---|---|
-| resourceName | .pbix-resurssin nimi. |
-| formGroupControl | Lomakeryhmän ohjausobjekti, johon Power BI -raportin ohjausobjektia käytetään. |
-| defaultPageName | Oletussivun nimi. |
-| showFilterPane | Totuusarvo, joka ilmaisee, näytetäänkö suodatinruutu (**tosi**) vai piilotetaanko se (**epätosi**). |
-| showNavPane | Totuusarvo, joka ilmaisee, näytetäänkö siirtymisruutu (**tosi**) vai piilotetaanko se (**epätosi**). |
-| defaultFilters | Power BI -raportin oletussuodattimet. |
+|       Nimi       |                                                              kuvaus                                                               |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|   resourceName   |                                                    .pbix-resurssin nimi.                                                     |
+| formGroupControl |                                    Lomakeryhmän ohjausobjekti, johon Power BI -raportin ohjausobjektia käytetään.                                     |
+| defaultPageName  |                                                         Oletussivun nimi.                                                         |
+|  showFilterPane  |   Totuusarvo, joka ilmaisee, näytetäänkö suodatinruutu (<strong>tosi</strong>) vai piilotetaanko se (<strong>epätosi</strong>).   |
+|   showNavPane    | Totuusarvo, joka ilmaisee, näytetäänkö siirtymisruutu (<strong>tosi</strong>) vai piilotetaanko se (<strong>epätosi</strong>). |
+|  defaultFilters  |                                              Power BI -raportin oletussuodattimet.                                              |
+
 

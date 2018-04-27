@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Kirjanpidon ulkomaanvaluutan uudelleenarvostus
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä aihe sisältää yhteenvedon kirjanpidon ulkomaan valuutan uudelleenarvostusprosessista seuraavasti: asetukset, prosessin suorittaminen, prosessin laskeminen ja uudelleenarvostustapahtumien palauttaminen tarvittaessa. 
 

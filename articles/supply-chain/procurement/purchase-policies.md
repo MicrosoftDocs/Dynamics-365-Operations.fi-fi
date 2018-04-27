@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchasing-policies"></a>Ostokäytännöt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja ostokäytännöistä. Ostokäytäntö on kokoelma sääntöjä, jolla hallitaan ostoehdotusprosessia. Ostokäytännöt auttavat ostotapahtumien hallinnoijia toteuttamaan hankintastrategiaa luomalla käytäntörakenteen, joka on linjassa organisaation strategisten ostotarpeiden kanssa.
 

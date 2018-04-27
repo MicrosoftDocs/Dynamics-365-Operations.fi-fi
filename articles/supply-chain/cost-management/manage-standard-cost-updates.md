@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-standard-cost-updates"></a>Vakiokustannuspäivitysten hallinta
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Vakiokustannustietojen päivityksiä voi hallita kahdella eri tavalla, joita ovat yhden tai kahden version menetelmä. 
 

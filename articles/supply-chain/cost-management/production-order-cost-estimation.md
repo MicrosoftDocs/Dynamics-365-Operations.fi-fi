@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-order-cost-estimation"></a>Tuotantotilauksen kustannusarvio
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä artikkeli sisältää tietoja tuotannon kustannusarviosta. Tuotannon kustannusarvio sisältää arvioidut materiaalin ja kapasiteetin kulutuksesta aiheutuneet kustannukset, jotka syntyvät kun nimikettä tuotetaan suunniteltu tuotantotilausmäärä. 
 

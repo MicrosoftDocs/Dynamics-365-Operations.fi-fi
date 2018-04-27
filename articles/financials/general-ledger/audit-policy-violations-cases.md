@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="audit-policy-violations-and-cases"></a>Valvo käytäntövirheitä ja tapauksia
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kerrotaan, miten valvontatapaukset luodaan valvontakäytäntöjen sääntöjen rikkomuksista. Artikkeli sisältää tietoja myös valvontakäytäntöjen erilaisista tavoista käyttää asiakirjavalinnan päivämääräväliä.
 

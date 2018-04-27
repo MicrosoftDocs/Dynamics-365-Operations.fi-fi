@@ -27,8 +27,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="organizational-training-power-bi-content"></a>Organisaation koulutus - Power BI -sisältö
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään Finance and Operationsin organisaation koulutuksen Power BI -sisältöä. 
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="quality-management-processes"></a>Laadunhallintaprosessit
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä artikkeli sisältää tietoja määrityksistä poikkeavien tuotteiden laadunhallintaprosessista. Aiheessa kuvataan laadunhallintatoiminnot, miten määrityksistä poikkeaminen määritetään ja ylläpidetään sekä miten korjauksia käsitellään.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="payment-slip-report-for-europe"></a>Maksuluetteloraportti Euroopassa
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa on tietoja maksuluetteloraporteista Euroopassa.
 

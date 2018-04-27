@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="modify-a-format-by-reapplying-a-microsoft-excel-template-for-electronic-reporting-er"></a>Muodon muokkaaminen käyttämällä uudelleen Microsoft Excel -mallia sähköistä raportointia (ER) varten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämän menettelyn vaiheiden suorittaminen edellyttää, että ER Määrityksen suunnittelu OPENXML-muotoisten raporttien luomiseksi -menettelyn vaiheet on suoritettu ensin.
 

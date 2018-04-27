@@ -27,8 +27,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="performance-management-overview"></a>Suoritustason hallinnan yleiskuvaus
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa. Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille.  
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-policies"></a>Kulukäytännöt
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Voit määrittää käytäntöjä tai sääntöjä, joita työntekijöiden on noudatettava kirjatessaan ja lähettäessään kuluraportteja ja matkustusehdotuksia.         
 Kulukäytäntöjen käyttöönotto auttaa hallitsemaan kuluja tehokkaasti.         
@@ -39,14 +39,14 @@ määrität käytännön.
 Voit määrittää kolmenlaisia käytäntöjä:         
         
 - Varoitus – antaa työntekijän lähettää kuluraportin tai matkustusehdotuksen, mutta kulu merkitään kaikille hyväksyjille ja        
-myöhempää raportointia varten.        
+  myöhempää raportointia varten.        
 
 - Virhe – edellyttää, että työntekijä muuttaa kulua vastaamaan käytäntöä ennen kuluraportin tai matkustusehdotuksen lähettämistä.       
  
- - Peruse – edellyttää, että työntekijä tai esimies antaa käytännön summan ylittämiselle perusteen ennen kuluraportin tai matkustusehdotuksen lähettämistä.        
+  - Peruse – edellyttää, että työntekijä tai esimies antaa käytännön summan ylittämiselle perusteen ennen kuluraportin tai matkustusehdotuksen lähettämistä.        
  
- Voit myös määrittää päivämäärävälin, jonka aikana kulukäytännöt ovat voimassa. Esimerkiksi lentojen hinta Tanskan      
- ja New Yorkin välillä voi olla kallis vilkkaimpana loma-aikana. Voit määrittää lentokulujen säännön rajoittamaan      
- New Yorkiin suuntautuvien lentojen hinnaksi enintään 5 000 DDK. Voit lisäksi määrittää, että tämä sääntö on voimassa toukokuun 15. päivän ja      
- syyskuun 15. päivän välisenä aikana.
+  Voit myös määrittää päivämäärävälin, jonka aikana kulukäytännöt ovat voimassa. Esimerkiksi lentojen hinta Tanskan      
+  ja New Yorkin välillä voi olla kallis vilkkaimpana loma-aikana. Voit määrittää lentokulujen säännön rajoittamaan      
+  New Yorkiin suuntautuvien lentojen hinnaksi enintään 5 000 DDK. Voit lisäksi määrittää, että tämä sääntö on voimassa toukokuun 15. päivän ja      
+  syyskuun 15. päivän välisenä aikana.
 

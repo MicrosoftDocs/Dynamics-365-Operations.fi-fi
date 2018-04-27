@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-expense-management"></a>Konfiguroi kulujen hallinta
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin Microsoft Dynamics 365 for Finance and Operationsin kulujenhallinta määritetään. Matkalaskujen alueelle voit tallentaa esimerkiksi maksutapojen, matkustusehdotusten, kuluraporttien ja -käytäntöjen tiedot.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="supply-chain-management-home-page"></a>Toimitusketjun hallinnan kotisivu
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operationsin toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista. 
 

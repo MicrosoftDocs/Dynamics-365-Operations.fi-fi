@@ -27,17 +27,16 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Test Data Transfer Tool (beta-versio) -sovelluksen ajaminen Dynamics AX:ssä (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Pikatuonti- ja vientitoiminnon tarkoitus on vähentää tuonti- ja vientivaiheita.
 
 Pikatuonti- ja vientiomaisuus on lisätty, jotta käyttäjät voivat tuoda tai viedä yksinkertaisia, nopeasti suoritettavia töitä. Ihannetapauksessa tätä ominaisuutta käytetään skenaarioissa, joissa tiedosto yhdistetään automaattisesti järjestelmään eikä käyttäjän tarvitse käyttää yhdistämisen lisäasetuksia tai luoda toistuvia tuonti- tai vientitöitä.
 
--   Tämä ominaisuus tukee sekä käyttövalmiita että mukautettuja yksikköjä.
--   Tuonti on mahdollista tiedostoista tai, jos käytät ODBC-tietolähdettä, voi määrittää tuonnin valitsemalla kyselyn.
--   Sinulla on oltava aiemmin määritetyt AX- tai tiedostomuotoiset lähdetietomuodot ja sinun on tiedettävä niiden sijainti.
--   Pikatuontia tai -vientiä varten ei tarvitse luoda käsittelyryhmää, sillä järjestelmä luo sen automaattisesti tuonti- tai vientityön suorittamisen yhteydessä. Voit myös säilyttää halutessasi pikatuonnilla- tai viennillä tuotujen tietojen historiatiedot.
+- Tämä ominaisuus tukee sekä käyttövalmiita että mukautettuja yksikköjä.
+- Tuonti on mahdollista tiedostoista tai, jos käytät ODBC-tietolähdettä, voi määrittää tuonnin valitsemalla kyselyn.
+- Sinulla on oltava aiemmin määritetyt AX- tai tiedostomuotoiset lähdetietomuodot ja sinun on tiedettävä niiden sijainti.
+- Pikatuontia tai -vientiä varten ei tarvitse luoda käsittelyryhmää, sillä järjestelmä luo sen automaattisesti tuonti- tai vientityön suorittamisen yhteydessä. Voit myös säilyttää halutessasi pikatuonnilla- tai viennillä tuotujen tietojen historiatiedot.
 
   Huomaa, että pikatuonti- ja vientitoiminto olettaa, että tunnet DIXF-käsitteet.
 

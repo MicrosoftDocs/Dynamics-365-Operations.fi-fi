@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Toimittajan osamaksun ja lopullisen maksun täydellinen tilittäminen ennen alennuspäivämäärää
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä artikkeli opastaa sinua skenaariossa, jossa osittaisia maksuja suoritetaan toimittajan laskulle ja käytetään käteisalennusta.
 

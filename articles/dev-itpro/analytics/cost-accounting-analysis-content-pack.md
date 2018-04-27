@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>Kustannuslaskennan analyysin Power BI -sisältö
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, mitä **Kustannuslaskenta-analyysi** – Power BI -sisältöön sisältyy. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
@@ -111,18 +111,20 @@ Seuraavassa taulukossa on esitetty, miten tärkeitä koostemittoja käytetään 
 
 Suodattimina käytetään seuraavia tärkeimpiä dimensioita osittamaan koostemitat, jotta saavutetaan suurempi rakeisuus ja saadaan syvempiä analyyttisiä näkemyksiä.
 
-| Kokonaisuus                             | Esimerkkejä määritteistä                                                                                               |
+
+|               Kokonaisuus               |                                                Esimerkkejä määritteistä                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Kustannuslaskennan kirjanpidot            | Kustannuslaskennan kirjanpito                                                                                               |
-| Kustannusseurantayksiköt                 | Kustannusseurannan nimi                                                                                               |
-| Kustannustason dimensiot            | Kustannustason dimension nimi, kustannustason dimension jäsenen nimi, kustannustason dimension jäsenen nimi          |
-| Kustannusobjektin dimensiot             | Kustannusobjektin dimension nimi, kustannusobjektin dimension jäsenen nimi, kustannusobjektin dimension jäsenen nimi              |
-| Tilastodimensiot             | Tilastollinen dimension nimi, Tilastollinen dimension jäsenen nimi, Tilastollinen dimension jäsenen nimi              |
-| Kustannusobjektin dimensiohierarkiat  | Kustannusobjektin dimension hierarkian nimi, Kustannusobjektin dimension hierarkiataso, Kustannusobjektin dimension hierarkiapuu    |
+|      Kustannuslaskennan kirjanpidot       |                                                Kustannuslaskennan kirjanpito                                                |
+|         Kustannusseurantayksiköt         |                                                Kustannusseurannan nimi                                                |
+|      Kustannustason dimensiot       |     Kustannustason dimension nimi, kustannustason dimension jäsenen nimi, kustannustason dimension jäsenen nimi      |
+|       Kustannusobjektin dimensiot       |       Kustannusobjektin dimension nimi, kustannusobjektin dimension jäsenen nimi, kustannusobjektin dimension jäsenen nimi        |
+|       Tilastodimensiot       |       Tilastollinen dimension nimi, Tilastollinen dimension jäsenen nimi, Tilastollinen dimension jäsenen nimi        |
+| Kustannusobjektin dimensiohierarkiat  |  Kustannusobjektin dimension hierarkian nimi, Kustannusobjektin dimension hierarkiataso, Kustannusobjektin dimension hierarkiapuu   |
 | Kustannustason dimensiohierarkiat | Kustannustason dimension hierarkian nimi, Kustannustason dimension hierarkiataso, Kustannustason dimension hierarkiapuu |
-| Tilastodimension hierarkiat  | Tilastodimension hierarkian nimi, Tilastodimension hierarkiataso, Tilastodimension hierarkiapuu    |
-| Tapahtuman versiot               | Version nimi                                                                                                         |
-| Kirjanpidon kalenterit                   | Kalenteri, kalenterin kuvaus                                                                                       |
-| Tilikaudet                       | Kalenterivuosi                                                                                                        |
-| Tilikaudet                     | Kalenterivuoden kausi                                                                                                 |
+| Tilastodimension hierarkiat  |  Tilastodimension hierarkian nimi, Tilastodimension hierarkiataso, Tilastodimension hierarkiapuu   |
+|        Tapahtuman versiot        |                                                     Version nimi                                                     |
+|          Kirjanpidon kalenterit          |                                            Kalenteri, kalenterin kuvaus                                            |
+|            Tilikaudet            |                                                    Kalenterivuosi                                                     |
+|           Tilikaudet           |                                                 Kalenterivuoden kausi                                                 |
+
 

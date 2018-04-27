@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Tuotannonhallinnassa ja projektinhallinnan kirjanpidossa käytettävät kustannusluokat
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Joitakin tuotantotyön tyyppejä voidaan käyttää projektin aika-arvioinneissa ja raportoinnissa. Tässä artikkelissa on tietoja kustannusluokista, jotka on määritettävä tämäntyyppiselle tuotantotyölle tuotanto- ja projektitarkoituksiin.
 

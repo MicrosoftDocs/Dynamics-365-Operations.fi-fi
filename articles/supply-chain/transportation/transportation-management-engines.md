@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5472d69f6d0bb7a60fb417a0d1bdc3fbc6a5e18
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="transportation-management-engines"></a>Kuljetuksenhallinnan moduulit
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kuljetuksenhallinnan moduulit määrittävät logiikan, jota käytetään kuljetushintojen luomiseen ja käsittelemiseen Kuljetuksenhallinnassa. 
 
@@ -47,7 +46,7 @@ Seuraavassa taulukossa on kuvattu Microsoft Dynamics 365 for Finance and Operati
 | **Vyöhykkeen laskenta**                  | Laskee valitun osoitteen perusteella alueen ja laskee alueiden määrän, jotka on ylitettävä siirryttäessä osoitteesta A osoitteeseen B.                                                                                                                                                                    |
 | **Rahtilaskun tyyppi**            | Standardoi rahtilaskun ja rahtikirjan rivit ja sitä käytetään automaattiseen rahtikirjan täsmäyttämiseen.                                                                                                                                                                                                                |
 
- 
+
 <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Mitä laskentoja on määritettävä, jotta lähetykselle voidaan laskea hinta?
 ---------------------------------------------------
 
@@ -60,13 +59,13 @@ Kuljetuksen hallintamoduuli edellyttää, että määrität alustustiedot tietyn
 -   Yksinkertaiset konfigurointitiedot.
 
 Useimmissa tapauksissa voit konfiguroida alustustiedot valitsemalla **Parametrit**-painikkeen kuljetuksen hallintamoduulin asetuslomakkeissa. **Esimerkki kilometrien laskentaan viittaavan hinnan laskennan määrityksestä** Seuraavassa esimerkissä kuvataan asetus, joka vaaditaan hinnan laskennalle, joka perustuu .NET-moduulin tyyppiin Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine ja viittaa kilometrien laskentaan.
-| Parametri             | Kuvaus                                                                                                                                                                                                                                                                                                                                                                      |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | .NET-tyyppi, joka tulkitsee hintaan perustuvat määritystiedot tietylle skeemalle. Parametriarvon syntaksi koostuu kahdesta pystyviivalla erotetusta segmentistä (|). Ensimmäinen osa sisältää kokoonpanonimen, joka määrittää määrittäjän tyypin. Toinen segmentti määrittää määrittäjän tyypin täydellisen nimen. Tämä sisältää tyypin nimitilan. |
-| *MileageEngineCode*   | Kilometrien laskennan koodi, joka tunnistaa kilometrien laskentatietueen Microsoft Dynamics 365 for Finance and Operations -tietokannassa.                                                                                                                                                                                                                                                             |
-| *Jako-osuuden laskenta* | Yleisen laskennan koodi, joka tunnistaa jako-osuuden laskennan Microsoft Dynamics 365 for Finance and Operations -tietokannassa.                                                                                                                                                                                                                                                              |
 
- 
+|          Parametri           |                                                                                  Kuvaus                                                                                  |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <em>RateBaseAssigner</em>   | .NET-tyyppi, joka tulkitsee hintaan perustuvat määritystiedot tietylle skeemalle. Parametriarvon syntaksi koostuu kahdesta pystyviivalla erotetusta segmentistä ( |
+|  <em>MileageEngineCode</em>  |                       Kilometrien laskennan koodi, joka tunnistaa kilometrien laskentatietueen Microsoft Dynamics 365 for Finance and Operations -tietokannassa.                        |
+| <em>Jako-osuuden laskenta</em> |                        Yleisen laskennan koodi, joka tunnistaa jako-osuuden laskennan Microsoft Dynamics 365 for Finance and Operations -tietokannassa.                        |
+
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Metatietojen käyttö kuljetuksen hallintalaskuihin
 ----------------------------------------------------------
 
@@ -77,6 +76,7 @@ Microsoft Dynamics 365 for Finance and Operations -järjestelmässä hintojen la
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Kaikki moduulin konfiguraatiot vaativat metatiedot?
 Ei, kuljetuksen hallintamoduulit, joita käytetään hinnan laskemiseen ulkoisista järjestelmistä vaadittavien tietojen noutamiseen, eivät tarvitse metatietoja. Näiden moduulien hintatiedot voidaan noutaa ulkoisista rahdinkuljettajien järjestelmistä tavallisesti verkkopalvelun kautta. Voit käyttää esimerkiksi kilometrien laskentaa, joka noutaa tiedot suoraan Bing-kartoista, joten et tarvitse metatietoja tälle moduulille.
+
 | **Huomautus**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Finance and Operationsin mukana toimitettavat kuljetuksen hallintamoduulit käyttävät sovelluksesta noudettavia tietoja. Ulkoisiin järjestelmiin liittyvät moduulit eivät sisälly Dynamics 365 for Operations -järjestelmään. Moduuliperusteisen laajennettavuusmallin avulla voit rakentaa laajennuksia käyttämällä Microsoft Dynamics 365 for Finance and Operations -järjestelmän Visual Studio -työkaluja. |

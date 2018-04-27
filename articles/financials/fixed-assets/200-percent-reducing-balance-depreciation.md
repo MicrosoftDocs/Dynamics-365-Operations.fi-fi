@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>Jäännöspoisto 200 prosenttia
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on yleiskuvaus 200 prosentin jäännösarvon poistomenetelmästä.
 
@@ -70,6 +69,7 @@ Jos poistovuodeksi valitaan **Tilivuosi**, **Kausiväli**-kentässä ovat valitt
 -   **Tilikausi** kirjaa tilivuodelle lasketun poiston kokonaismäärän. Summa on jaksotettu tilikausille, jotka määritetään **Kirjanpidon kalenterit** -sivulla.
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>Esimerkki 200 prosentin jäännöspoistosta
+
 |                                |        |
 |--------------------------------|--------|
 | Hankintakustannukset               | 11 000 |

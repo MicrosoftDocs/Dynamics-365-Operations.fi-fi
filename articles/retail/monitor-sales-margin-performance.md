@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>Myynnin ja marginaalien seuranta
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Voit valvoa myynnin ja katetuoton kehittymistä reaaliajassa käyttämällä Microsoft Dynamics 365 for Retailissa.
 

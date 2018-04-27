@@ -19,23 +19,23 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 47de452c2072b6a29d7e2d34eb73b472be669a6c
-ms.openlocfilehash: eb6132b6d535deb13a4cd1343d04967893a2cfe9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0936ae3b8d07ef221345bda272170e1482f37cbf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed"></a>Uudet ja muuttuneet ominaisuudet
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Microsoft Dynamics 365 for Finance and Operations Enterprise edition -ympäristöversioiden uusista ominaisuuksista.
 
 Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä koskeva päivitysprosessi](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
 
-[!include[release notes](../includes/release-notes.md)]
+[!INCLUDE [release notes](../includes/release-notes.md)]
 
 ## <a name="application-releases"></a>Sovelluksen versiot
 
@@ -61,6 +61,13 @@ Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä kos
 
 </tr>
 <tr class="even">
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.0</td>
+<td>8.0.30</td>
+<td>Huhtikuun 2018.</td>
+  <td><a href="whats-new-changed-8-0-April-2018.md">Microsoft Dynamics 365 for Finance and Operationsin version 8.0:n (huhtikuu 2018) uudet ja muuttuneet ominaisuudet</a></td>
+</tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>7.3</td>
 <td>7.3.11971.56116</td>
@@ -122,7 +129,7 @@ Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä kos
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Ympäristön update 15 -päivitys</td>
 <td>7.0.4839</td>
-<td>Maaliskuu 2018 (Tämä on kohdistettu versio vain niille käyttäjille, jotka ovat liittyneet CAAP (Continuous Auto-update Advantage Program) -ohjelmaan.)</td>
+<td>Maaliskuu 2018 (Tämä on kohdistettu versio vain niille käyttäjille, jotka ovat liittyneet CAAP (Continuous Auto-update Advantage Program) -ohjelmaan). Ympäristöpäivitys 15 on käytettävissä myös Dynamics 365 for Finance and Operationsin versiossa 8.0.)</td>
 <td><a href="whats-new-platform-update-15.md">Dynamics 365 for Finance and Operations, Enterprise Editionin ympäristöpäivityksen 15 (maaliskuu 2018) uudet ja muuttuneet ominaisuudet</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Luo korkoryhmäalue
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Korkoryhmät voidaan määrittää laskemaan eri korkosummat arvoalueiden perusteella. Tämä menettely näyttää, miten korkoryhmä lisätään ja miten siihen lisätään alue.
 

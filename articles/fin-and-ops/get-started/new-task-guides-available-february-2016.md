@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="new-task-guides-february-2016"></a>Uudet tehtäväoppaat (helmikuu 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM -kirjastoissa helmikuuhun 2016 mennessä.  Julkaistut kirjastot sisältävät (helmikuu 2016) Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston sekä (helmikuu 2016) aloitusoppaan.
 
@@ -50,8 +49,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Ostoreskontran laskujen täsmäytyksen vahvistamisen määrittäminen       | Yleinen             |
 | Määritä toimittajan laskutuskäytännöt                            | Yleinen             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a>Myyntireskontra
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Perimistietojen tarkistaminen                              | Yleinen             |
 | Määritä ja luo myyntireskontran erääntymistiedot   | Yleinen             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a>Maksuliikenteen hallinta
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Sovi asiakkaalta jälkeen päin päivitetty lasku                             | Yleinen             |
 | Toimittajan maksun yleiskatsaus                                              | Yleinen             |
 
- 
 
+ 
 ### <a name="compliance"></a>Yhteensopivuus
 
 |                                            |                    |
@@ -108,8 +107,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | **BPM-rivi**                               | **Maa/alue** |
 | Määritä tarkistuskäytännöt asiakirjoille | Yleinen             |
 
- 
 
+ 
 ### <a name="cost-management"></a>Kustannushintojen hallinta
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Näytä tuotantotilauksen nykyinen KET-tila                       | Yleinen             |
 | Näytä varastoraportti ja KPI kustannusobjekteittain:                     | Yleinen             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a>Maa/alue-toiminto
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | GB-00009 Hyvityslaskun luominen tilityksen alennuksella                                               | Yhdistynyt kuningaskunta                  |
 | GB-00009 Nopean maksun hyvityslaskun parametrien määrittäminen                                   | Yhdistynyt kuningaskunta                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a>Vision ja strategian kehittäminen
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Tee kysymys edellisen kysymyksen vastauksen perusteella (ehdolliset kysymykset) | Yleinen             |
 | Pisteytä kyselylomake prosenttiosuuden perusteella                                                   | Yleinen             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a>Sähköinen raportointi
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | ER Yhdistä tietomalli valittuihin tietolähteisiin      | Yleinen             |
 | ER Valitse palveluntarjoaja                      | Yleinen             |
 
- 
 
+ 
 ### <a name="expense-management"></a>Kulujenhallinta
 
 |                              |                    |
@@ -298,8 +297,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | **BPM-rivi**                 | **Maa/alue** |
 | Konfiguroi kulujen hallinta | Yleinen             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a>Käyttöomaisuudet
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Jaa käyttöomaisuus                                       | Yleinen             |
 | Siirrä käyttöomaisuutta                                    | Yleinen             |
 
- 
 
+ 
 ### <a name="general-ledger"></a>Kirjanpito
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Näytä tapahtumat tai kirjauskansiomerkinnät                              | Yleinen             |
 | Näytä konsernin sisäinen tosite kirjauskansiosta                    | Yleinen             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a>Henkisen pääoman hallinta
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Etukelpoisuuskäytäntöjen määrittäminen                             | Yleinen             |
 | i9-asiakirjatyyppien määrittäminen                                     | Yleinen             |
 
- 
 
+ 
 ### <a name="inventory-management"></a>Varastonhallinta
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Nimikkeen tai raaka-aineen jäljittäminen                                                     | Yleinen             |
 | Fyysisen varaston siirtäminen varastossa                                  | Yleinen             |
 
- 
 
+ 
 ### <a name="manufacturing"></a>Valmistus
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Materiaalin siirtäminen kanban-töiden yhteydessä                            | Yleinen             |
 | Vahvista tuotantovirta ja versiot                          | Yleinen             |
 
- 
 
+ 
 ### <a name="master-planning"></a>Pääsuunnittelu
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Kriittisten materiaalien ja toimittajien kapasiteetin tunnistaminen | Yleinen             |
 | Muuta ennustetta manuaalisesti                 | Yleinen             |
 
- 
 
+ 
 ### <a name="organization-administration"></a>Organisaation hallinto
 
 |                                           |                    |
@@ -501,8 +500,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Sähköisten allekirjoitusten määrittäminen              | Yleinen             |
 | Numerosarjojen määrittäminen ohjatulla toiminnolla | Yleinen             |
 
- 
 
+ 
 ### <a name="planning"></a>Suunnittelu
 
 |                        |                    |
@@ -510,8 +509,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | **BPM-rivi**           | **Maa/alue** |
 | Saatavuuden selvittäminen | Yleinen             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a>Hankinta
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Toimittajien etsiminen                                               | Yleinen             |
 | Määritä hankintaluokkahierarkia                          | Yleinen             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a>Tuotteen tiedot ja määritykset
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Julkaise dimensiopohjainen päätuote (..\financial-dimensions\dimension-based)              | Yleinen             |
 | Tietojen siirtäminen tuotemalleja varten                      | Yleinen             |
 
- 
 
+ 
 ### <a name="public-sector"></a>Julkinen sektori
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Julkisen sektorin rahoituksen määrittäminen                                                         | Yleinen             |
 | Määritä ostosopimusluokitukset julkiselle sektorille                             | Yleinen             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a>Vähittäismyynti ja kauppa
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Vähittäismyynnin hinnanoikaisujen tekeminen                                                                  | Yleinen             |
 | Vähittäismyynnin laskelmien tallennuskonfiguraatiot                                                | Yleinen             |
 
- 
 
+ 
 ### <a name="sales"></a>Myynti
 
 |                                            |                    |
@@ -642,8 +641,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Lähetä tilaukset suoratoimituksina           | Yleinen             |
 | Lähetä myyntitilaukset ilman varastointia      | Yleinen             |
 
- 
 
+ 
 ### <a name="sales-tax"></a>Arvonlisävero
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Määritä ennakonpidätys                             | Yleinen             |
 | Näytä kirjatut arvonlisäverotapahtumat                 | Yleinen             |
 
- 
 
+ 
 ### <a name="security"></a>Suojaus
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Tunnista ja ratkaise tehtävien eriyttämisen ristiriidat | Yleinen             |
 | Määritä tehtävien eriyttäminen                            | Yleinen             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a>Varasto ja kuljetus
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 | Lähetyksen rahdinkuljettajien määrittäminen                                                          | Yleinen             |
 | Käytä kuormasuunnittelun työtilaa kuormien ja lähetysten suunnitteluun                       | Yleinen             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Aloituskirjaston tehtäväoppaat (helmikuu 2016)
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM-rivi**                                       | **Maa/alue** |

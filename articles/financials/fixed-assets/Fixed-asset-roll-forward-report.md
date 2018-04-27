@@ -19,15 +19,15 @@ ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7a81697a8e90fb6b0695a02db0868f5708fdbddf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Käyttöomaisuuden eteenpäin siirron raportti
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Käyttöomaisuuden siirto eteenpäin** -raportti on helposti luettava Microsoft Excel -muotoinen raportti, jossa eritellään kauden sulkemista, tilipäätöksiä ja veroilmoituksia varten tarvittavat käyttöomaisuustiedot. Raportti sisältää käyttöomaisuuden alku- ja loppusaldot sekä kauden arvostuksen muutokset. Lisäksi siinä on kauden aikana tapahtuneet uudet käyttöomaisuuden hankinnat ja luovutukset. Tiedot raportoidaan käyttöomaisuuseräkohtaisesti, ja arvojen yhteenveto on saatavana käyttöomaisuusryhmille ja yritykselle.
 
@@ -41,28 +41,30 @@ Raportti on saatavana Microsoft Dynamics 365 for Finance and Operations, Enterpr
 
 Seuraavassa taulussa käsitellään raportissa valittavina olevat kentät.
 
-| Kenttä                                       | kuvaus |
-|---------------------------------------------|-------------|
-| Saldot: alku                           | Käyttöomaisuuden nettokirjanpitoarvo raportissa määritettynä alkupäivämääränä. |
-| Saldot: loppu                           | Käyttöomaisuuden nettokirjanpitoarvo raportissa määritettynä päättymismääränä. |
-| Hankinnat: alkuarvo                 | Kaikkien **Hankinta**- ja **Hankintaoikaisu**-tyyppisten tapahtumien summa raportissa määritettyyn alkupäivämäärään saakka. |
-| Hankinnat: kauden hankinnat           | Kaikkien **Hankinta**- ja **Hankintaoikaisu**-tyyppisten tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana. |
-| Hankinnat: kauden luovutukset              | Kaikkien sellaisten kirjattujen hankinnan peruutusten summa, joiden luovutustapahtuma oli raportin päivämäärävälin aikana. |
-| Hankinnat: loppuarvo                 | Kaikkien **Hankinta**- ja **Hankintaoikaisu**-tyyppisten tapahtumien summa raportissa määritettyyn päättymismäärään saakka. |
-| Poistot: alkuarvo                | Kaikkien **Poisto**-, **Poistojen oikaisu**-, **Erityinen poistovähennys**- ja **Erikoispoisto**-tyyppisten tapahtumien summa raportissa määritettyyn alkupäivämäärään saakka. |
-| Poistot: kauden poistot         | Kaikkien **Poisto**, **Poistojen oikaisu**- ja **Erikoispoisto**--tyyppisten tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana. |
-| Poistot: kauden erikoispoistot | Kaikkien **Erityinen poistovähennys**-tyypin tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana. |
-| Poistot: kauden luovutukset             | Kaikkien sellaisten kirjattujen poiston peruutusten summa, joiden luovutustapahtuma oli raportin päivämäärävälin aikana. |
-| Poistot: loppuarvo                | Kaikkien **Poisto**-, **Poistojen oikaisu**-, **Erityinen poistovähennys**- ja **Erikoispoisto**-tyyppisten tapahtumien summa raportissa määritettyyn päättymismäärään saakka. |
-| Kirjanpitoarvon korotus/alennus: alkuarvo        | Kaikkien **Kirjanpitoarvon korotus**-, **Kirjanpitoarvon alennus**- ja **Uudelleenarvostus**-tyyppisten tapahtumien summa raportissa määritettyyn alkupäivämäärään saakka. |
-| Kirjanpitoarvon korotus/alennus: kauden kirjanpitoarvon korotus     | Kaikkien **Kirjanpitoarvon korotus** -tyypin tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana. |
-| Kirjanpitoarvon korotus/alennus: kauden kirjanpitoarvon alennus   | Kaikkien **Kirjanpitoarvon alennus** -tyypin tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana. |
-| Kirjanpitoarvon korotus/alennus: kauden uudelleenarvostukset  | Kaikkien **Uudelleenarvostus**-tyypin tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana. |
-| Kirjanpitoarvon korotus/alennus: kauden luovutukset     | Kaikkien sellaisten kirjattujen kirjanpitoarvon korotuksen, kirjanpitoarvon alennuksen ja uudelleenarvostuksen peruutusten summa, joiden luovutustapahtuma oli raportin päivämäärävälin aikana. |
-| Kirjanpitoarvon korotus/alennus: loppuarvo        | Kaikkien **Kirjanpitoarvon korotus**-, **Kirjanpitoarvon alennus**- ja **Uudelleenarvostus**-tyyppisten tapahtumien summa raportissa määritettyyn päättymismäärään saakka. |
-| Luovutukset: luovutuksen päivämäärä                    | Käyttöomaisuuskirjan luovutuksen päivämäärä. |
-| Luovutukset: nettokirjanpitoarvon luovutus       | Käyttöomaisuuskirjan nettokirjanpitoarvo luovutushetkellä. |
-| Luovutukset: myyntiarvo                       | Käyttöomaisuuskirjan luovutuksen myyntiarvo – myyntitapahtuma. |
-| Luovutukset: hävikkiarvo                      | Käyttöomaisuuskirjan luovutuksen hävikkiarvo – hävikkitapahtuma. |
-| Luovutukset: tulos                      | Käyttöomaisuuskirjan luovutustapahtuman osana lasketun voiton tai tappion arvo. |
+
+|                    Kenttä                    |                                                                                                                                kuvaus                                                                                                                                |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|              Saldot: alku              |                                                                                           Käyttöomaisuuden nettokirjanpitoarvo raportissa määritettynä alkupäivämääränä.                                                                                           |
+|              Saldot: loppu              |                                                                                            Käyttöomaisuuden nettokirjanpitoarvo raportissa määritettynä päättymismääränä.                                                                                            |
+|         Hankinnat: alkuarvo         |                                                 Kaikkien <strong>Hankinta</strong>- ja <strong>Hankintaoikaisu</strong>-tyyppisten tapahtumien summa raportissa määritettyyn alkupäivämäärään saakka.                                                  |
+|      Hankinnat: kauden hankinnat      |                                                 Kaikkien <strong>Hankinta</strong>- ja <strong>Hankintaoikaisu</strong>-tyyppisten tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana.                                                  |
+|       Hankinnat: kauden luovutukset        |                                                                        Kaikkien sellaisten kirjattujen hankinnan peruutusten summa, joiden luovutustapahtuma oli raportin päivämäärävälin aikana.                                                                        |
+|         Hankinnat: loppuarvo         |                                                  Kaikkien <strong>Hankinta</strong>- ja <strong>Hankintaoikaisu</strong>-tyyppisten tapahtumien summa raportissa määritettyyn päättymismäärään saakka.                                                   |
+|        Poistot: alkuarvo         | Kaikkien <strong>Poisto</strong>-, <strong>Poistojen oikaisu</strong>-, <strong>Erityinen poistovähennys</strong>- ja <strong>Erikoispoisto</strong>-tyyppisten tapahtumien summa raportissa määritettyyn alkupäivämäärään saakka. |
+|     Poistot: kauden poistot     |                         Kaikkien <strong>Poisto</strong>, <strong>Poistojen oikaisu</strong>- ja <strong>Erikoispoisto</strong>--tyyppisten tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana.                          |
+| Poistot: kauden erikoispoistot |                                                              Kaikkien <strong>Erityinen poistovähennys</strong>-tyypin tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana.                                                               |
+|       Poistot: kauden luovutukset       |                                                                       Kaikkien sellaisten kirjattujen poiston peruutusten summa, joiden luovutustapahtuma oli raportin päivämäärävälin aikana.                                                                        |
+|        Poistot: loppuarvo         |  Kaikkien <strong>Poisto</strong>-, <strong>Poistojen oikaisu</strong>-, <strong>Erityinen poistovähennys</strong>- ja <strong>Erikoispoisto</strong>-tyyppisten tapahtumien summa raportissa määritettyyn päättymismäärään saakka.  |
+|    Kirjanpitoarvon korotus/alennus: alkuarvo     |                              Kaikkien <strong>Kirjanpitoarvon korotus</strong>-, <strong>Kirjanpitoarvon alennus</strong>- ja <strong>Uudelleenarvostus</strong>-tyyppisten tapahtumien summa raportissa määritettyyn alkupäivämäärään saakka.                               |
+|   Kirjanpitoarvon korotus/alennus: kauden kirjanpitoarvon korotus   |                                                                    Kaikkien <strong>Kirjanpitoarvon korotus</strong> -tyypin tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana.                                                                    |
+|  Kirjanpitoarvon korotus/alennus: kauden kirjanpitoarvon alennus  |                                                                   Kaikkien <strong>Kirjanpitoarvon alennus</strong> -tyypin tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana.                                                                   |
+| Kirjanpitoarvon korotus/alennus: kauden uudelleenarvostukset  |                                                                        Kaikkien <strong>Uudelleenarvostus</strong>-tyypin tapahtumien summa, jotka kirjattiin raportin päivämäärävälin aikana.                                                                        |
+|   Kirjanpitoarvon korotus/alennus: kauden luovutukset   |                                                           Kaikkien sellaisten kirjattujen kirjanpitoarvon korotuksen, kirjanpitoarvon alennuksen ja uudelleenarvostuksen peruutusten summa, joiden luovutustapahtuma oli raportin päivämäärävälin aikana.                                                           |
+|    Kirjanpitoarvon korotus/alennus: loppuarvo     |                               Kaikkien <strong>Kirjanpitoarvon korotus</strong>-, <strong>Kirjanpitoarvon alennus</strong>- ja <strong>Uudelleenarvostus</strong>-tyyppisten tapahtumien summa raportissa määritettyyn päättymismäärään saakka.                                |
+|          Luovutukset: luovutuksen päivämäärä           |                                                                                                                Käyttöomaisuuskirjan luovutuksen päivämäärä.                                                                                                                |
+|    Luovutukset: nettokirjanpitoarvon luovutus    |                                                                                                    Käyttöomaisuuskirjan nettokirjanpitoarvo luovutushetkellä.                                                                                                    |
+|            Luovutukset: myyntiarvo            |                                                                                               Käyttöomaisuuskirjan luovutuksen myyntiarvo – myyntitapahtuma.                                                                                                |
+|           Luovutukset: hävikkiarvo            |                                                                                               Käyttöomaisuuskirjan luovutuksen hävikkiarvo – hävikkitapahtuma.                                                                                               |
+|           Luovutukset: tulos            |                                                                                 Käyttöomaisuuskirjan luovutustapahtuman osana lasketun voiton tai tappion arvo.                                                                                 |
+
 

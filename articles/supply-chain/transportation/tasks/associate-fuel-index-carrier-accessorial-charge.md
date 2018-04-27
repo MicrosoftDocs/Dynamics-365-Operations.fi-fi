@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>Liitä polttoaineindeksi rahdinkuljettajaan lisämaksuna
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä ohjauksessa kerrotaan, miten polttoaineen lisämaksun määritys, rahdinkuljettajan lisämaksu, lisämaksun päätiedot luodaan ja liitetään rahdinkuljettajan polttoaineindeksiin rahdinkuljettajan kanssa. Rahdinkuljettajan polttoaineindeksi on määritettävä ennen tämän ohjauksen suorittamista. Sen voi määrittää Määritä rahdinkuljettajan polttoaineindeksi -ohjauksessa. Logistiikkapäällikkö tekee yleensä nämä tehtävät. Tämän menettelyn luomisessa käytetty esittelytietojen yritys on USMF.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Määritä minimi-/maksimitäydennysprosessi
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Seuraavassa menettelyssä kuvataan, miten voit määrittää uuden täydennysprosessin, joka käyttää minimi-/maksimitäydennysstrategiaa. Sijainnin täydennystyö luodaan, kun varaston vähimmäistaso laskee minimitason alle. Menettelyssä näytetään myös, miten kiinteitä keräilysijainteja voi käyttää sallimaan täydennys vaikka varastosaldo laskisikin minimitason alle, ja miten täydennysprosessin voi määrittää ajettavaksi säännöllisesti eräajona. Yleensä varastopäällikkö tekee nämä tehtävät. Voit suorittaa tämän menettelyn USMF-malliyrityksessä käyttämällä muistiinpanojen esimerkkiarvoja, tai voit suorittaa sen omilla tiedoillasi. Jos käytät omia tietoja, varmista, että sinulla on varasto, jolla varastonhallintaprosessit ovat käytössä.
 

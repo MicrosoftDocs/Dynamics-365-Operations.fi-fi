@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6cd1e3a1f6b5c979a4f60d97cc2203cdcd32bbbe
-ms.openlocfilehash: 6de88b82c9a663bfe6d2756fde6f1a7412a44b1e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="pay-based-on-registrations"></a>Rekisteröinteihin perustuva palkka
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään yksityiskohtaisesti palkan laskemista työntekijän rekisteröintien perusteella. Se sisältää esimerkkejä siitä, miten laskennan käytettävissä olevien asetusvalintojen eri yhdistelmät vaikuttavat tulokseen. Tässä on joitakin alueita, jotka katetaan:
 
@@ -182,7 +182,7 @@ Kun laskentaparametrit on oikaistu, seuraavat palkkatapahtumat luodaan.
 | Palkkalaji     | Maksulaji | Palkkayksiköt | Osuus  | Kokonaiskustannukset |
 |---------------|----------|-----------|-------|------------|
 | Vakioaika | 1201     | 8,50      | 10    | 85,0       |
-| Ylityö      | 1 301     | 1.50      | päivänä    | 22,50      |
+| Ylityö      | 1 301     | 1.50      | 15    | 22,50      |
 |               |          |           | Yhteensä | 107,50     |
 
 > [!NOTE]
@@ -227,7 +227,7 @@ Seuraavat maksutapahtumia luodaan siirron jälkeen.
 | Palkkalaji     | Maksulaji | Palkkayksiköt | Osuus  | Kokonaiskustannukset |
 |---------------|----------|-----------|-------|------------|
 | Vakioaika | 1201     | 8,50      | 10    | 85,0       |
-| Ylityö      | 1 305     | 1.50      | päivänä    | 22,50      |
+| Ylityö      | 1 305     | 1.50      | 15    | 22,50      |
 |               |          |           | Yhteensä | 107,50     |
 
 Peruuta siirto **Hyväksyntä**-sivulla ja kohdista sitten **OTBCI**-kytkentäkoodi **Kytkentäkoodi**-valikon avulla. Kun siirrät rekisteröinnit toisen kerran, seuraavat palkkatapahtumat luodaan.
@@ -235,7 +235,7 @@ Peruuta siirto **Hyväksyntä**-sivulla ja kohdista sitten **OTBCI**-kytkentäko
 | Palkkalaji     | Maksulaji | Palkkayksiköt | Osuus  | Kokonaiskustannukset |
 |---------------|----------|-----------|-------|------------|
 | Vakioaika | 1201     | 8,50      | 10    | 80,0       |
-| Ylityö      | 1 305     | 2,00      | päivänä    | 30,0       |
+| Ylityö      | 1 305     | 2,00      | 15    | 30,0       |
 |               |          |           | Yhteensä | 107,50     |
 
 > [!NOTE]
@@ -446,7 +446,7 @@ Voit luoda työntekijöiden suunnitellun poissaolon **Luo suunniteltu poissaolo*
 Työ perustuu kyselyyn. Voit siis luoda suunnitellun poissaolon useille työntekijöille, kuten samaan laskentaryhmään kuuluville työntekijöille. Jos suunniteltu poissaolo koskee yksittäistä työntekijää, rekisteröinti voidaan tehdä joko **Poissaolo**- tai **Aikarekisteröinnin työntekijät** -sivulla.
 
 - Voit antaa poissaolokirjaukset **Läsnäolo**-sivulla valitsemalla ensin **Työajan seuranta** &gt; **Kyselyt ja raportit** &gt; **Läsnäolo** &gt; **Läsnäolo** ja sitten **Poissaolokirjaukset**.
-- Voit antaa poissaolokirjaukset ****Aikarekisteröintityöntekijät****-sivulla valitsemalla ensin **Työajan seuranta** &gt; **Asetukset** &gt; **Aikarekisteröintityöntekijät** ja sitten **Aika**-välilehden **Aikamääritys**-kohdassa **Poissaolokirjaukset**.
+- Voit antaa poissaolokirjaukset *<strong><em>Aikarekisteröintityöntekijät</em></strong>*-sivulla valitsemalla ensin <strong>Työajan seuranta</strong> &gt; <strong>Asetukset</strong> &gt; <strong>Aikarekisteröintityöntekijät</strong> ja sitten <strong>Aika</strong>-välilehden <strong>Aikamääritys</strong> <strong>Poissaolokirjaukset</strong>.
 
 Voit tarkastella työntekijöiden suunniteltuja poissaoloja **Suunnitellut poissaolot** -raportin avulla. Voit avata tämän raportin valitsemalla **Työajan seuranta** &gt; **Kyselyt ja raportit** &gt; **Poissaoloraportit** &gt; **Suunnitellut poissaolot**.
 
@@ -548,7 +548,7 @@ Jos valitulle poissaolokoodille on valittu **Vähennä ylityötä** -valintaruut
 | Palkkalaji     | Maksulaji | Palkkayksiköt | Osuus |
 |---------------|----------|-----------|------|
 | Vakioaika | 1201     | 9:00      | 10   |
-| Ylityö      | 1 301     | 0,5       | päivänä   |
+| Ylityö      | 1 301     | 0,5       | 15   |
 
 Tässä 1,5 tuntia luvatonta poissaoloa aikana 7.00–9.30 vähentävät 2,0 tunnin verran ylitöitä aikana 15.30–17.30. Rekisteröinnin tulos on 1,5 tuntia vakiotyöaikaa ja 0,5 tuntia ylityötä.
 
@@ -557,7 +557,7 @@ Jos sitä vastoin valitun poissaolokoodin **Vähennä ylityötä** -valintaruutu
 | Palkkalaji     | Maksulaji | Palkkayksiköt | Osuus |
 |---------------|----------|-----------|------|
 | Vakioaika | 1201     | 7,50      | 10   |
-| Ylityö      | 1 301     | 2,0       | päivänä   |
+| Ylityö      | 1 301     | 2,0       | 15   |
 
 ### <a name="scenario-5-the-worker-clocks-out-before-the-planned-clock-out-time-and-can-convert-the-absence-period-to-a-flex--period"></a>Skenaario 5: Työntekijä poistuu ennen suunniteltua poistumisaikaa ja voi muuntaa poissaoloajan vajeajaksi
 

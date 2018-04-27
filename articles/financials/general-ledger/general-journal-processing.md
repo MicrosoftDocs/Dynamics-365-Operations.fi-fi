@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="general-journal-processing"></a>Kirjanpidon kirjauskansion käsittely
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kerrotaan Microsoft Dynamics 365 for Finance and Operationsin ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja joiden avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.  
 

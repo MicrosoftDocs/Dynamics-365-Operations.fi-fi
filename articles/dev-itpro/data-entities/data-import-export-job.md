@@ -16,16 +16,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="data-import-and-export-jobs"></a>Tietojen tuonti- ja vientityöt
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Voit luoda ja hallita tietojen tuonti- ja vientitehtäviä Microsoft Dynamics 365 for Finance and Operationsin **Tietojenhallinta**-työtilassa. Oletusarvon mukaan tietojen tuonti- ja vientiprosessi luo väliaikaisen taulun kullekin yksikölle kohdetietokantaan. Väliaikaisten taulujen avulla voit tarkistaa, puhdistaa tai muuntaa tiedot ennen niiden siirtämistä.
 
@@ -64,13 +64,15 @@ Suosittelemme, että valitset tuonti- tai vientityölle haluamasi projektiluokan
 Voit lisätä tiettyjä yksiköitä tuonti- tai vientityöhön tai käyttää mallia. Mallit täyttävät työn yksikköluettelolla. **Käytä mallia** -vaihtoehtoa voi käyttää, kun työlle on annettu nimi ja se on tallennettu.
 
 ### <a name="set-the-data-format-for-the-job"></a>Määritä työn tietojen muoto
-Valitse yksikölle tuonnin tai viennin tietomuoto sitä valitessasi. Muodot määritetään **Lähdeasetukset**-ruudussa. Monet organisaatiot aloittavat esittelytiedoissa toimitettujen tietomuotojen käytöllä. Seuraavassa on muutamia seuraavista muodoista:
+Valitse yksikölle tuonnin tai viennin tietomuoto sitä valitessasi. Muodot määritetään **Lähdeasetukset**-ruudussa. Lähdetietojen muodossa yhdistyy **Tyyppi**, **Tiedostomuoto**, **Rivin erotin** ja **Sarakkeen erotin**. Vaikka määritteitä on muitenkin, näiden ymmärtäminen on olennaista. Seuraava taulukko sisältää kelvolliset yhdistelmät.
 
-- AX (tiedoille, jotka täytyy tuoda tai viedä Microsoft Dynamics 365 for Finance and Operations -sovelluksessa käytettävässä muodossa)
-- ColonSeparated
-- CSV
-- Excel
-- Paketti
+| **Tiedostomuoto**        | **Rivin tai sarakkeen erotin**                   | **XML-tyyli**             |
+|------------------------|--------------------------------------------|---------------------------|
+| Excel                  | Excel                                      | \-–                     |
+| XML                    | \-–                                      | XML-elementin XML-määrite |
+| Erotin, kiinteä leveys | Pilkku, puolipiste, sarkain, pystyviiva, kaksoispiste | \-–                     |
+
+
 
 ### <a name="sequence-the-entities"></a>Aseta yksiköt sarjaan
 Yksiköt voi järjestää tietomallissa tai tuonti- ja vientitöissä. Kun suoritat työn, joka sisältää useamman tietoyksikön, varmista, että yksiköt on järjestetty oikein. Yksiköt järjestetään ensisijaisesti siten, että voit käsitellä kaikki yksiköiden väliset toiminnalliset riippuvuudet. Jos yksiköillä ei ole toiminnallisia riippuvuuksia, ne voidaan ajoittaa tuotavaksi tai vietäväksi rinnakkain.

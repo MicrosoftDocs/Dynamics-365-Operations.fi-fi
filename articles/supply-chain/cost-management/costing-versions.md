@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-versions"></a>Kustannuslaskentaversiot
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja kustannuslaskennan versioista, niiden ylläpitämisestä ja niihin sisällytettävien tietojen tyypeistä. Kustannuslaskelmaversion on ensisijaisesti tarkoitus sisältää nimikkeitä, kustannusluokkia ja välillisten kustannusten laskentakaavoja koskevia kustannustietueita.
 

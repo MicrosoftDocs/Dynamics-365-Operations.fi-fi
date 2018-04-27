@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="total-cost-allocation-method"></a>Kokonaiskustannusten kohdistustapa
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä ohjeaihe sisältää kokonaiskustannusten kohdistuksen käyttöön liittyviä ohjeita. Kokonaiskustannusten kohdistus on menetelmä, jolla lasketaan erätilauksen pääreseptinimikkeen ja reseptille määritettyjen oheistuotteiden välinen kustannus.
 

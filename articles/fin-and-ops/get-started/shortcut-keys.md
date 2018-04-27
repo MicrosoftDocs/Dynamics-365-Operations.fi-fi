@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operationsissa. 
 
@@ -39,6 +38,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 
 
 ## <a name="action-shortcuts"></a>Toimintojen pikanäppäimet
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Toiminto**                                    | **Näppäinyhdistelmä**                        |
@@ -55,6 +55,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Tällä hetkellä käytettävissä olevien pikanäppäinten tarkasteleminen                | Alt+Vaihto+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Päivämäärävalitsimen pikanäppäimet
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Toiminto**                        | **Näppäinyhdistelmä**                                 |
@@ -68,6 +69,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Poimi ei koskaan (tai enimmäispäivämäärä)          | N                                         |
 
 ## <a name="factbox-shortcuts"></a>Tietoruudun pikanäppäimet
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | **Toiminto**                                                                  | **Näppäinyhdistelmä**                                 |
@@ -79,6 +81,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Tiivistä nykyinen tietoruutu                                                    | Alt+0                                     |
 
 ## <a name="filtering-shortcuts"></a>Suodatuksen pikanäppäimet
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | **Toiminto**                     | **Paina**                |
@@ -89,6 +92,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Avaa lisäasetusten suodatus/lajittelu                                      | Ctrl+Vaihto+F3            | 
 
 ## <a name="form-shortcuts"></a>Lomakkeen pikanäppäimet
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | **Toiminto**                                      | **Paina**         |
@@ -110,6 +114,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Sulje lomake ja hylkää tallentamattomat muutokset       | Alt+Vaihto+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Lomakkeen siirtymispikanäppäimet
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Toiminto**                                      | **Näppäinyhdistelmä**                                    |
@@ -128,6 +133,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Vaihda rivinäkymään                                | Ctrl+Vaihto+L                                 |
 
 ## <a name="grid-shortcuts"></a>Ruudukon pikanäppäimet
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Toiminto**                                                                                                         | **Näppäinyhdistelmä**                       |
@@ -148,6 +154,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Avaa nykyisen sarakkeen ruudukkosuodatus (kohdistus otsikkorivillä)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Syötteiden ohjausobjektien pikanäppäimet
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | **Toiminto**                                                               | **Näppäinyhdistelmä**                     |
@@ -163,6 +170,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Vaihtaa kohdistuksen tekstialueen ja työkalurivin välillä HTML-editorikomponentissa | F6                            |
 
 ## <a name="messaging-shortcuts"></a>Viestinnän pikanäppäimet
+
 |                          |               |
 |--------------------------|---------------|
 | **Toiminto**           | **Näppäinyhdistelmä**     |
@@ -170,6 +178,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Siirry sanomapalkkiin    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Siirtymisen pikanäppäimet
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | **Toiminto**                                                                | **Näppäinyhdistelmä**                  |
@@ -191,6 +200,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Siirry tietoruutuun (voi sisältää ruudun avaamisen)                       | ALT + M,B tai Ctrl + F2         |
 
 ## <a name="personalization-shortcuts"></a>Mukauttamisen pikanäppäimet
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Toiminto**                                                                                                         | **Näppäinyhdistelmä**                           |
@@ -219,6 +229,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Poistu mukautustilasta (mukautustilassa)                                                               | Esc                                 |
 
 ## <a name="segmented-entry-shortcuts"></a>Segmentoidun kirjauksen pikanäppäimet
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Toiminto**                                                                                                          | **Näppäinyhdistelmä**                        |

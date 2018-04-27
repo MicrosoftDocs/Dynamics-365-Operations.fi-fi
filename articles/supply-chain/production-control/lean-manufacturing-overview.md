@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="lean-manufacturing-overview"></a>Lean-valmistuksen yleiskatsaus
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on yleiskatsaus ja kuvaus Microsoft 365 for Finance and Operationsin Lean-valmistuksen toiminnoista.
 
@@ -40,6 +39,7 @@ Lean-valmistus sisältää työkaluja lean-työvaiheiden mallintamiseen. Nämä 
 -   Kanban-töiden valvonta ja ylläpito.
 
 Finance and Operationsin lean-valmistuksen arkkitehtuuri koostuu tuotantovirroista, tehtävistä ja kanban-säännöistä. Nämä rakenteet on integroitu kokonaisuudessaan Finance and Operationsin prosesseihin. Voit käyttää lean-valmistusta yhdistelmätuotantoympäristössä, joka yhdistää erilaiset toimitus-, tuotanto- ja hankintastrategiat. Näitä strategioita ovat tuotantotilaukset, prosessiteollisuuden erätilaukset, ostotilaukset ja siirtotilaukset.
+
 | **Tärkeä**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Voit käyttää Finance and Operationsia kanbaneja sisältävän lean-tuotannon toteutuksen tukena. Lean-periaatteiden onnistunut käyttöönotto kuitenkin määräytyy käytettyjen sisäisten liiketoimintaprosessien sekä varsinaisten tuotanto-olosuhteiden ja ympäristön mukaan. |

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanban-työn aikataulutus lean-valmistukselle
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja kanban-työn aikataulutuksen visuaalisesta hallintatavasta ja kanban-töiden erilaisista ajoitustavoista.  
 

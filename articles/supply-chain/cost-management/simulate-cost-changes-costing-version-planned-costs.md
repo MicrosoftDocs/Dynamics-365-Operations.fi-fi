@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Kustannusmuutosten simuloiminen suunniteltujen kustannusten kustannuslaskelmaversiota käyttäen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa kerrotaan, miten valmistettavan nimikkeen laskettujen kustannusten muuttuvien kustannusten vaikutuksen voi simuloida käyttämällä erillistä suunniteltujen kustannusten kustannuslaskelmaversiota.
 

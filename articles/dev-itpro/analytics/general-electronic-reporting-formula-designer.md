@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Sähköisen raportoinnin kaavojen suunnittelutoiminto
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER). Kun tietyn sähköisen asiakirjan muotoa suunnitellaan ER:ssä, voit muuntaa tiedot kaavojen avulla vastaamaan asiakirjan toteuttamis- ja muotoiluvaatimuksia. Nämä kaavat muistuttavat Microsoft Excelin kaavoja. Kaavoissa tuetaan erilaisia toimintoja: teksti, päivämäärä ja aika, matemaattiset ja loogiset funktiot, tiedot, tietotyyppien muunnos ja muut (liiketoiminnan toimialuekohtaiset toiminnot).
 
@@ -313,12 +313,12 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 <tr class="odd">
 <td>ORDERBY (luettelo [, lauseke 1, lauseke 2, …])</td>
 <td>Palauttaa määritetyn luettelon sen jälkeen, kun se lajiteltu määritettyjen argumenttien mukaan. Nämä argumentit voivaan määrittää lausekkeina.</td>
-<td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>ORDERBY (Vendors, Vendors.'name()')</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan nousevassa järjestyksessä.</td>
+<td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan nousevassa järjestyksessä.</td>
 </tr>
 <tr class="even">
 <td>REVERSE (luettelo)</td>
 <td>Palauttaa määritetyn luettelon käänteisessä lajittelujärjestyksessä.</td>
-<td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan laskevassa järjestyksessä.</td>
+<td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan laskevassa järjestyksessä.</td>
 </tr>
 <tr class="odd">
 <td>WHERE (luettelo, ehto)</td>
@@ -395,7 +395,9 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 <tr class="even">
 <td>STRINGJOIN (luettelo, kenttänimi, erotin)</td>
 <td>Palauttaa määritetystä luettelosta merkkijonon, jossa on määritetyn kentän lyhennetyt arvot. Arvot erotetaan määritetyllä erottimella.</td>
-<td>Jos annat tietolähteeksi (DS) <strong>SPLIT(&quot;abc&quot; , 1)</strong>, lauseke <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> palauttaa arvon <strong>&quot;a:b:c&quot;</strong>.</td>
+
+<td>Jos annat tietolähteeksi (DS) <strong>SPLIT(&quot;abc&quot; , 1)</strong>, lauseke <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> palauttaa arvon <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
+
 </tr>
 <tr class="odd">
 <td>SPLITLISTBYLIMIT (luettelo, raja-arvo, lähderaja-arvo)</td>
@@ -416,7 +418,7 @@ Rajaa ei sovellettu alkuperäisen luettelon viimeiseen nimikkeeseen, koska arvo 
 <tr class="even">
 <td>FILTER (luettelo, ehto)</td>
 <td>Palauttaa määritetyn luettelon sen jälkeen, kun kysely on suodatettu määritetyn ehdon mukaan. Funktio eroaa <strong>WHERE</strong>-funktiosta, koska määritettyä ehtoa käytetään tietokannan tasolla kaikkiin <strong>Taulukkotietue</strong>-tyypin ER-tietolähteisiin. Luettelo ja ehto voidaan määrittää tauluja ja suhteita käyttämällä.</td>
-  <td>Jos <strong>Toimittaja</strong> on määritetty VendTable-tauluun viittaavaksi ER-tietolähteeksi, <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> palauttaa toimittajaluettelon, joka kuuluu toimittajaryhmään 40. Jos <strong>Toimittaja</strong> määritetään <strong>VendTable</strong>-tauluun viittaavaksi ER-tietolähteeksi ja ER-tietolähteeksi määritetty <strong>parmVendorBankGroup</strong> palauttaa merkkijono-tietotyypin arvon, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> palauttaa luettelon vain niistä toimittajatileistä, jotka kuuluvat tiettyyn pankkiryhmään.</td>
+  <td>Jos <strong>Toimittaja</strong> on määritetty VendTable-tauluun viittaavaksi ER-tietolähteeksi, <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> palauttaa toimittajaluettelon, joka kuuluu toimittajaryhmään 40. Jos <strong>Toimittaja</strong> määritetään <strong>VendTable</strong>-tauluun viittaavaksi ER-tietolähteeksi ja ER-tietolähteeksi määritetty <strong>parmVendorBankGroup</strong> palauttaa merkkijono-tietotyypin arvon, <strong>FILTER (Vendor.&#39;&lt;Relations&#39;.VendBankAccount, Vendor.&#39;&lt;Relations&#39;.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> palauttaa luettelon vain niistä toimittajatileistä, jotka kuuluvat tiettyyn pankkiryhmään.</td>
 </tr>
 </tbody>
 </table>
@@ -540,7 +542,7 @@ Myös lauseke <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> palauttaa l
 </tr>
 <tr class="even">
 <td>FORMAT (merkkijono 1, merkkijono 2[, merkkijono 3, …])</td>
-<td>Palauttaa määritetyn merkkijonon sen jälkeen, kun se on muotoiltu korvaamalla kaikki <strong>%N</strong>-esiintymät <em>n</em>:llä argumentilla. Argumentit ovat merkkijonoja. Jos parametrille ei ole annettu argumenttia, parametri palautetaan merkkijonoon arvona <strong>&quot;%N&quot;</strong>. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
+<td>Palauttaa määritetyn merkkijonon sen jälkeen, kun se on muotoiltu korvaamalla kaikki <strong>%N</strong>-esiintymät <em>n</em>:llä argumentilla. Argumentit ovat merkkijonoja. Jos parametrille ei ole annettu argumenttia, parametri palautetaan merkkijonoon arvona <strong>%N</strong>. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
 <td>Seuraavassa kuvassa <strong>PaymentModel</strong>-tietolähde palauttaa asiakastietueluettelon <strong>Asiakas</strong>-komponentin kautta ja käsittelyn päivämäärän arvon <strong>ProcessingDate</strong>-kentän kautta.
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>ER-muodossa, joka on suunniteltu sähköisen tiedoston luomiseen valituille asiakkaille, tietolähteeksi valitaan <strong>PaymentModel</strong>. Se ohjaa prosessin kulkua. Loppukäyttäjille annettu poikkeus ilmaisee, kun valittu asiakas pysäytetään raportin käsittelypäivämääränä. Tälle käsittelyn ohjausobjektin tyypille muotoiltua kaavaa käytetään seuraavissa resursseissa:</p>
@@ -553,7 +555,7 @@ Myös lauseke <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> palauttaa l
 <li>Finance and Operationsin otsikko SYS18389, jossa on seuraava teksti:
 <ul>
 <li><strong>Kielelle EN-US:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>Kielelle FI:</strong> &quot;Asiakas %1 on pysäytetty %2.&quot;</li>
+<li><strong>Kielelle FI:</strong> Asiakas %1 on pysäytetty %2.</li>
 </ul></li>
 </ul>
 <p>Tässä on kaava, jota voi muotoilla:</p>
@@ -561,7 +563,7 @@ Myös lauseke <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> palauttaa l
 <p>Jos raporttia käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina on <strong>EN-US</strong> ja kielenä on <strong>EN-US</strong>, tämä kaava palauttaa seuraavan tekstin, joka voidaan esittää poikkeussanomana loppukäyttäjälle:</p>
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Jos sama raportti käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina on <strong>FI</strong> ja kielenä on <strong>FI</strong>, tämä kaava palauttaa seuraavan tekstin, jossa on eri päivämäärämuoto:</p>
-<p>&quot;Ei tulostettavaa. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
+<p>&quot;Ei tulostettavaa. Asiakas Litware Retail on pysäytetty 17.12.2015.</p>
 <blockquote>[!NOTE]<br>
 Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
 <ul>

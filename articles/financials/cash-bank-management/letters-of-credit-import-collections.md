@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Luottokirjeet ja tuontiperittävät
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa on yleisiä tietoja remburssista ja tuontiperittävistä. Molempia pankkitositteita käytetään usein valtioiden rajojen yli tapahtuvassa tavaroiden ostossa ja myynnissä.
 

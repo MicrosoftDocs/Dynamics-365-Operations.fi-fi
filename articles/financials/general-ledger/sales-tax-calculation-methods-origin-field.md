@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Arvonlisäveron laskentatavat Alkuperä-kentässä
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Tässä artikkelissa käsitellään arvonlisäveron koodisivun Peruste-kentän vaihtoehtoja sekä sitä, miten arvonlisävero lasketaan valitun vaihtoehdon perusteella arvonlisäverokoodille.
 
@@ -53,11 +52,12 @@ Verottaja on säätänyt tätä kohdetta koskevia erikoismaksuja. Erikoismaksusu
 -   ALV = 25 %, Prosenttia bruttosummasta -laskentatapa
 
 Jos nettosumma on 10,00, niin MAKSU 1 on 1,00 (10,00 x 10 %) ja MAKSU 2 = 2,00 (10,00 x 20 %). Summat ovat seuraavat: Bruttosumma: Nettosumma + MAKSU 1 -summa + MAKSU 2 -summa (10,00 + 1,00 + 2,00) = 13,00 ALV = 13,00 x 25 % = 3,25 MAKSUT ja ALV yhteensä: 1,00 + 2,00 + 3,25 = 6,25 Kokonaissumma: 10,00 + 6,25 = 16,25
+
 | **Huomautus**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tapahtumassa voi käyttää vain yhtä verokoodia, jossa Alkuperä = Prosenttia bruttosummasta. Jos tapahtumalle määritetään useita tällaisia verokoodeja, näyttöön tulee virhesanoma, jonka mukaan arvonlisäveroa ei voi laskea. |
 
- 
+
 <a name="percentage-of-sales-tax"></a>Arvonlisäveroprosentti
 -----------------------
 
@@ -70,6 +70,7 @@ Käytetään seuraavia arvonlisäverokoodeja:
 -   ALV = 25 %, Prosenttia bruttosummasta -laskentatapa
 
 Nettosumma: 10,00 MAKSU 1: 10,00 x 10 % = 1,00 MAKSU 2: 1,00 x 20 % = 0,20 Bruttosumma: 10,00 + 1,00 + 0,20 = 11,20 ALV: 11,20 x 25 % = 2,80 MAKSUT ja ALV yhteensä: 1,00 + 0,20 + 2,80 = 4,00 Kokonaissumma: 10,00 + 4,00 = 14,00
+
 | **Huomautus**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Verolaskutoimituksissa ei voi käyttää monen tason veroja. Veroa ei voi laskea sellaisen veron perusteella, joka on jo laskettu toisen veron perusteella. Tapahtumalle voi laskea useita verokoodeihin perustuvia yhden tason veroja. |
@@ -79,6 +80,7 @@ Kun Alkuperä-kentästä valitaan Summa per yksikkö, arvonlisävero lasketaan k
 ### <a name="example"></a>Esimerkki
 
 Arvonlisäverokoodiksi on määritetty: 1,20 USD / yksikkö = laatikko Myyntilaskurivillä nimikettä myydään 25 laatikkoa Arvonlisäveroksi lasketaan 25 x 1,20 = 30,00
+
 | **Huomautus**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Jos tapahtumalla on eri yksikkö kuin arvonlisäverokoodissa määritetty, se muunnetaan automaattisesti Yksikkömuunnokset-sivulla määritettyjen yksikkömuunnosten perusteella. |

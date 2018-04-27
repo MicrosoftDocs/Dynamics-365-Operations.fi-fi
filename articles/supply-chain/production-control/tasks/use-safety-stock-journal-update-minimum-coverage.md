@@ -23,21 +23,21 @@ ms.contentlocale: fi-fi
 ms.lasthandoff: 09/29/2017
 
 ---
-# Varmuusvaraston kirjauskansion käyttäminen minimikattavuuden päivittämiseen
+# <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Varmuusvaraston kirjauskansion käyttäminen minimikattavuuden päivittämiseen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Seuraavassa menettelyssä kuvataan, miten voit laskea vähimmäiskattavuuden ehdotukset historiatapahtumiin perustuen ja päivittää nimikekattavuuden ehdotusten mukaiseksi. Tämä tehdään varmuusvaraston kirjauskansion avulla. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF. Tämä tehtävä on tarkoitettu tuotannon suunnittelijalle minimikattavuuden ylläpitoa varten.
 
 
-## Uuden varmuusvaraston kirjauskansion nimen luominen
+## <a name="create-a-new-safety-stock-journal-name"></a>Uuden varmuusvaraston kirjauskansion nimen luominen
 1. Siirry kohtaan Varmuusvarastokirjauskansion nimet.
 2. Valitse Uusi.
 3. Kirjoita "Materiaali" nimi-kenttään.
 4. Kirjoita Kuvaus-kentän arvoksi Materiaali.
 5. Sulje sivu.
 
-## Luo varmuusvaraston kirjauskansio
+## <a name="create-a-safety-stock-journal"></a>Luo varmuusvaraston kirjauskansio
 1. Siirry kohtaan Varmuusvaraston laskenta.
 2. Valitse Uusi.
 3. Syötä tai valitse arvo Nimi-kenttään.
@@ -50,7 +50,7 @@ Seuraavassa menettelyssä kuvataan, miten voit laskea vähimmäiskattavuuden ehd
 7. Valitse OK.
     * Tämä luo rivit dimensioille, joilla on varastotapahtumia.  
 
-## Laske ehdotus
+## <a name="calculate-proposal"></a>Laske ehdotus
 1. Napsauta kohtaa Laske ehdotus.
 2. Valitse Käytä keskimääräistä varasto-ottoa läpimenoaikana -vaihtoehto.
 3. Aseta kerroinarvoksi 10.
@@ -58,7 +58,7 @@ Seuraavassa menettelyssä kuvataan, miten voit laskea vähimmäiskattavuuden ehd
 4. Valitse OK.
     * Etsi M0002 ja M0003 alaspäin selaamalla. Näytä Laskettu vähimmäismäärä -sarake.   
 
-## Päivitä vähimmäismäärä
+## <a name="update-minimum-quantity"></a>Päivitä vähimmäismäärä
 1. Syötä numero Uusi vähimmäismäärä -kenttään.
     * Päivitä uusi vähimmäismäärä vastaavaan lasketun vähimmäismäärän arvoa. Jos laskettu vähimmäismäärä on nolla, voit syöttää haluamasi tulevan arvon. Voit esimerkiksi syöttää lasketun vähimmäismäärän tähän kenttään M0002 sisältävälle varastolle 12.  
 2. Etsi haluamasi tietue luettelosta ja valitse se.
@@ -66,7 +66,7 @@ Seuraavassa menettelyssä kuvataan, miten voit laskea vähimmäiskattavuuden ehd
 3. Syötä numero Uusi vähimmäismäärä -kenttään.
     * Päivitä uusi vähimmäismäärä vastaavaan lasketun vähimmäismäärän arvoa. Jos laskettu vähimmäismäärä on nolla, voit syöttää haluamasi tulevan arvon.  
 
-## Kirjaa uusi vähimmäismäärä ja vahvista tulos
+## <a name="post-the-new-minimum-quantity-and-validate-the-result"></a>Kirjaa uusi vähimmäismäärä ja vahvista tulos
 1. Valitse Kirjaa.
 2. Valitse OK.
 3. Käytä Nimiketunnus-kentän linkkiä napsauttamalla.

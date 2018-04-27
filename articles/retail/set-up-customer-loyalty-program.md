@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-a-customer-loyalty-program"></a>Kanta-asiakasohjelman määrittäminen
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tässä artikkelissa kuvataan kanta-asiakasohjelman määrittämistä. Kanta-asiakasohjelmat voivat nostaa asiakasuskollisuutta palkitsemalla asiakkaita, jotka asioivat myymälässäsi. Microsoft Dynamics 365 for Retailissa voit määrittää yksinkertaisia tai monimutkaisia kanta-asiakasohjelmia yritysten välille missä tahansa vähittäismyyntikanavassa.
 

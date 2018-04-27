@@ -28,8 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Myyntireskontran sekä luotonvalvonnan määrittäminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Määritä myyntireskontra ja luotonvalvonta, kun haluat seurata laskuja ja asiakkailta saapuvia maksuja.
 
@@ -107,7 +106,7 @@ Seuraavassa taulukossa on luettelo sivuista, jotka tukevat myyntireskontran ja l
 |                                                      | NSF-tiedot                     | Määritä sen pankkitilin NSF-tiedot, jota käytetään, kun maksu merkitään NSF-tapahtumaksi Perintä-sivulla.                                                                                                                                              |
 |                                                      | Myyjän tiedot              | Määritä myyjien sähköpostiosoitteet. Nämä osoitteet näkyvät Perintä-sivulla ja voit lähettää niiden avulla sivulta sähköpostia myyjälle.                                                                                                                |
 
- 
+
 Lisätietoja on kohdassa [Luotto ja perintä myyntireskontrassa](collections-credit-accounts-receivable.md).
 
 

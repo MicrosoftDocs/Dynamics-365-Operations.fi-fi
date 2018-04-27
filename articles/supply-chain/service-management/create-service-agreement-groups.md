@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="create-service-agreement-groups"></a>Huoltosopimusryhmien luominen 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Huoltosopimusryhmistä on hyötyä lajiteltaessa ja suodatettaessa huoltosopimuksia.
 

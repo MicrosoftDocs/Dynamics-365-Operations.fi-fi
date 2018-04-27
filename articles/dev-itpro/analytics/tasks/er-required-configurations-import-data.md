@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="create-required-configurations-to-import-data-from-an-external-file-for-electronic-reporting-er"></a>Vaadittujen määritysten luominen tietojen tuomiseksi ulkoisesta tiedostosta sähköistä raportointia (ER) varten
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella sähköisen raportoinnin (ER) määrityksiä tuomaan tietoja Dynamics 365 for Finance and Operationsiin ulkoisesta tiedostosta. Tässä esimerkissä luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Näitä vaiheita varten on suoritettava ensin ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -tehtäväoppaan vaiheet. Nämä vaiheet voidaan suorittaa USMF-tietojoukon avulla. Sinun on myös ladattava ja tallennettava paikallisesti seuraavat tiedostot Sähköisen raportoinnin yleiskatsaus -ohjeaiheen linkkien avulla (https://go.microsoft.com/fwlink/?linkid=852550):: 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 

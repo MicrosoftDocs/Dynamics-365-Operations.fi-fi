@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-request-for-quotation"></a>Luo tarjouspyyntö
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä näytetään, miten tarjouspyyntö luodaan. Se on yleensä ostoedustajan tehtävä. Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoilla tai omilla tiedoillasi. Ennen aloittamista on määritettävä pyyntötyypit. Kun olet suorittanut tämän tehtävän ja luonut sekä lähettänyt tarjouspyynnön, voit sitten määrittää toimittajakohtaiset vastaukset, tehdä niistä vertailun ja myöntää sopimuksen.
 

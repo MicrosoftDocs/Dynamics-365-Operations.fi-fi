@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>Ylläpidä taloushallinnon dimension oletusmalleja
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä toimintaohjeessa kuvataan, miten taloushallinnon dimension oletusmallit määritetään. Mallien avulla summat voi jakaa nopeasti lähdeasiakirjoille.
 

@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6426f208a51ffbf72c6faa8cb281aba2984052d7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Kenttien kuvausten tarkasteleminen ja vieminen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä artikkelissa käsitellään kenttien kuvauksien näyttämistä ja kuvauksien tuomista Kenttien kuvaus -sivun avulla.
 
@@ -77,7 +76,7 @@ Voit etsiä sivua usealla eri tavalla **Valitse sivu** -kentässä. Usein avatta
     -   Jos tarkkoja vastineita on useita, kuvauksia ei näytetä. Avaa avattava luettelo ja valitse sopiva sivu.
     -   Jos kirjoittamasi nimi on toisen sivun nimen osa, näet sivun kuvaukset. Jos kuitenkin avaat avattavan luettelon, näkyvissä on lisää nimen sisältäviä sivuja.
 
-Kuvauksia ei esimerkiksi näytetä, jos kirjoitat **Inventointi** ****Valitse sivu**** -kenttään. Kun avaat luettelon näet, että kahdella sivulla on nimi **Inventointi** ja inventointi-sana on useiden sivujen nimessä. Jos valitset sivun, jonka AOT-nimi on **InventJournalCount**, kyseisen sivun kenttien kuvaukset näytetään. Jos kuitenkin avaat avattavan luettelon uudelleen, näet, että luettelo sisältää nyt kaikki sivut, joiden AOT-nimeen InventJournalCount sisältyy.
+Kuvauksia ei esimerkiksi näytetä, jos kirjoitat <strong>Inventointi</strong> *<strong><em>Valitse sivu</em></strong>* -kenttään. Kun avaat luettelon näet, että kahdella sivulla on nimi <strong>Inventointi</strong> ja inventointi-sana on useiden sivujen nimessä. Jos valitset sivun, jonka AOT-nimi on <strong>InventJournalCount</strong>, kyseisen sivun kenttien kuvaukset näytetään. Jos kuitenkin avaat avattavan luettelon uudelleen, näet, että luettelo sisältää nyt kaikki sivut, joiden AOT-nimeen InventJournalCount sisältyy.
 
 ## <a name="troubleshooting"></a>Vianmääritys
 Tässä osassa on tietoja, jotka on sellaisten ongelmien vianmäärityksessä, joita voi tulla esiin kenttien kuvauksia käytettäessä.

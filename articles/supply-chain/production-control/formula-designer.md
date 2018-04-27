@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d9b61e545067db592545d5fbce7b4315c51a8bf8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4cfd017fe10bbda6eda0e3a9a045e0832b08753
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer"></a>Reseptien suunnittelu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään kaavojen analysointia ja ylläpitoa puunäkymässä kaavan suunnittelutyökalulla.
 
@@ -68,7 +68,7 @@ Kaavojen suunnittelutoiminnon otsikossa näytetään suodatin, jota käytetään
 <tbody>
 <tr class="odd">
 <td>Tuotedimensiot</td>
-<td>Jos valittu lopputuote on päätuote, voit määrittää aktiivisen tuotteen mitat päävalintaan. Huomaa, että jos avaat muun kuin päätuotteen kaavan suunnittelutoiminnon, tuotedimensioita ei voi valita <strong>Suodatut</strong>-valintaruudussa.</p></td>
+<td>Jos valittu lopputuote on päätuote, voit määrittää aktiivisen tuotteen mitat päävalintaan. Huomaa, että jos avaat muun kuin päätuotteen kaavan suunnittelutoiminnon, tuotedimensioita ei voi valita <strong>Suodatus</strong>-valintaruudussa.</p></td>
 </tr>
 <tr class="even">
 <td>Sivusto</td>
@@ -116,8 +116,10 @@ Muokkaa kaavariviä tai kaavoja **Tuoterakennerivit**- tai **Kaava**-toiminnoill
 ## <a name="configuring-the-tree-view"></a>Puunäkymän määrittäminen
 Mukauta kaavan suunnittelutoiminnon puunäkymässä näkyviä tietoja valitsemalla **Asetukset**.
 
-| Kenttäryhmä | kuvaus |
-|-------------|-------------|
-| Tuoterakenne         | Käytä valintaruutuja valitaksesi puurakenteessa näytettävät ehdot. Valitut ehdot näkyvät kaavan suunnittelutoiminnossa kummankin välilehden alaosassa. |
-| Reititys       | Käytä valintaruutuja valitaksesi reitityksessä näytettävät ehdot. |
+
+| Kenttäryhmä |                                                                          kuvaus                                                                          |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Tuoterakenne     | Käytä valintaruutuja valitaksesi puurakenteessa näytettävät ehdot. Valitut ehdot näkyvät kaavan suunnittelutoiminnossa kummankin välilehden alaosassa. |
+|    Reititys    |                                           Käytä valintaruutuja valitaksesi reitityksessä näytettävät ehdot.                                           |
+
 

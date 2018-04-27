@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="info-codes"></a>Tietokoodit
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Tässä artikkelissa on yleistietoja tietokoodeista ja tietokoodiryhmistä sekä niiden käyttämisestä.
 
@@ -52,7 +51,7 @@ Voit luoda Dynamics 365 for Retailissa tietokoodien ryhmiä. Tietokoodiryhmät l
 
 **Esimerkki 2: Tietokoodien linkittäminen tietokoodiryhmiin** Kun myyt tiettyjä tuotteita, kuten mobiililaitteita, haluat aina kerätä tietyt tiedot, kuten puhelinnumeron, mobiililaitteen tunnuksen (MEID) ja sarjanumeron. Kuitenkin haluat myös kerätä eri tietoja taulutietokonesovellukseen kuin matkapuhelimeen. Voit määrittää tietokoodiryhmän, joka sisältää kehotteen puhelinnumeron, tunnuksen ja sarjanumeron kysymisestä ja linkittää sitten tietokoodiryhmän yksittäiseen tietokoodiin. Kun tuotetta koskeva infokoodi toteutuu, tietokoodiryhmä voidaan määrittää käynnistymään seuraavaksi, jotta voit kerätä yleisiä tietoja tarvitsematta määrittää useita linkitettyjä infokoodisarjoja kullekin laitteelle.
 
- 
+
 
 
 

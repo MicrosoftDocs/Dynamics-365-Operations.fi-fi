@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enable-license-plate-label-printing"></a>Ota käyttöön rekisterikilven etiketin tulostus
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Näin sarjatoimitusyksikkökoodin (SSCC) etiketti voidaan tulostaa automaattisesti varastosta viimeksi kerätyn nimikkeen jälkeen myynnin keräystyöprosessissa. Voit suorittaa tämän menettelyn esittely-yrityksessä USMF. Jos suoritit menettelyn omien tietojen avulla, rekisterikilville on määritettävä numerosarja. Määritä etikettitulostin, ennen kuin aloitat tämän tehtävän. Valitse Organisaation hallinta > Asetukset > Verkkotulostimet. Valitse toimintoruudussa Asetukset ja valitse sitten Lataa asiakirjan reititysagentin asennusohjelma -painike. Suorita asennusohjelma ja varmista, että toimiva verkkotulostin on määritetty aktiiviseksi, ennen kuin jatkat.
 
