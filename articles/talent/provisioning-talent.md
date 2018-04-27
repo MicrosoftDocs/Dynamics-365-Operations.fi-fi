@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ba1a3a78d59f3aec91473ba9bb20bda4804ec92e
-ms.openlocfilehash: 0a43f5ff0987ede9f0cb80e5b4854f78e19e329b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talentin valmisteleminen
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Talentin tuotantouuden ympäristön valmisteluprosessista. Ohjeaiheessa oletetaan, että olet ostanut Talent-sovelluksen pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. Jos sinulla on Microsoft Dynamics 365 -käyttöoikeus, joka sisältää Talent-palvelusopimuksen, etkä pysty suorittamaan tämän ohjeaiheen vaiheita, ota yhteys tukeen.
 
@@ -79,12 +79,12 @@ Määritä seuraavien ohjeiden avulla, missä PowerApps-ympäristössä Talent o
  
     **CDS 2.0 -ympäristöt** CDS 2.0 on saatavana 21.3.2018. Talent ei kuitenkaan vielä tue CDS 2.0 -ympäristöä. Vaikka voit katsella ja luoda CDS 2.0 -tietokantoja PowerAppsin hallintakeskuksessa, niitä ei voi käyttää Talentissa. CDS 2.0 -ympäristöjen käyttö Talent-käyttöönotoissa tulee mahdolliseksi myöhemmin.
    
- > [!Note]
- > Voit erottaa CDS 1.0- ja 2.0-ympäristöt toisiinsa hallintaportaalissa valitsemalla ympäristön ja tarkastelemalla **tietoja**. CDS 2.0 -ympäristöissä kaikki viittaa siihen, että asetuksia voi hallita Dynamics 365:n hallintakeskuksessa, käytössä on esiintymän versio eikä Tietokanta-välilehteä ole. 
+   > [!Note]
+   > Voit erottaa CDS 1.0- ja 2.0-ympäristöt toisiinsa hallintaportaalissa valitsemalla ympäristön ja tarkastelemalla **tietoja**. CDS 2.0 -ympäristöissä kaikki viittaa siihen, että asetuksia voi hallita Dynamics 365:n hallintakeskuksessa, käytössä on esiintymän versio eikä Tietokanta-välilehteä ole. 
  
    **PowerApps-oletusympäristöt** Vaikka jokainen vuokraaja valmistellaan automaattisesti PowerApps-oletusympäristössä, se ei välttämättä ole paras ympäristö Talent-sovelluksen käyttöönottoa varten, koska kaikilla vuokraajakäyttäjillä on PowerApps-ympäristön käyttöoikeus. Tuotantoympäristön tietoja voi vioittua epähuomiossa PowerApps- tai Flow-integrointien testaamisen ja tutkimisen yhteydessä.
    
-   **Testaa ympäristöt** Ympäristöillä, joilla on TestDrive – alias@domain -tyyppinen nimi, on 60 päivän pituinen voimassaolon päättymiskausi. Tämän jälkeen ympäristö vanhenee ja se poistetaan automaattisesti.
+   <strong>Testaa ympäristöt</strong> Ympäristöillä, joilla on TestDrive – alias@domain -tyyppinen nimi, on 60 päivän pituinen voimassaolon päättymiskausi. Tämän jälkeen ympäristö vanhenee ja se poistetaan automaattisesti.
    
    **Alueet, joita ei tueta** Tällä hetkellä Talent-sovelluksella on tuki vain seuraavilla alueilla: Yhdysvallat, Eurooppa ja Australia.
   
@@ -115,7 +115,7 @@ Täytä seuraavat komentosarjan suoritusta koskevat ohjeet:
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
-   **EnvironmentName** korvataan ympäristön nimellä. Tämä nimi näkyy LCS:ssä ja tulee näkyviin, kun käyttäjät valitsevat käytettävän Talent-ympäristön. 
+   **MyNewEnvironment** korvataan ympäristön nimellä. Tämä nimi näkyy LCS:ssä ja tulee näkyviin, kun käyttäjät valitsevat käytettävän Talent-ympäristön. 
 
    **YourLocation** korvataan jollakin Talent-sovelluksen tuetun alueen arvolla: Yhdysvallat, Eurooppa tai Australia. 
 

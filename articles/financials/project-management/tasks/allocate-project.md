@@ -17,15 +17,17 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 3d486e5b7a7ef8f711b8f44af81292a7a8f0bcd4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a253a37bc83482c5bc971cad585e18ccb230b16f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Allokoi projektibudjetti tai budjettiarviointi jaksojen ajalle
 
-[!include[task guide banner](../../includes/task-guide-banner.md)] Voit kohdistaa summia eri kausille sen jälkeen, kun projektibudjetti tai projektibudjetin iversio on syötetty tai ennen kuin se on lähetetty hyväksyttäväksi. Jos budjetti tai budjettiversion hylätään, voit myös varata summat ennen uudelleen lähettämistä. 
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+
+ Voit kohdistaa summia eri kausille sen jälkeen, kun projektibudjetti tai projektibudjetin iversio on syötetty tai ennen kuin se on lähetetty hyväksyttäväksi. Jos budjetti tai budjettiversion hylätään, voit myös varata summat ennen uudelleen lähettämistä. 
 
 Kun budjetti tai budjettiversio on varattu, voit tarkistaa kohdistusmäärät ja säätää niitä ennen kuin lähetät budjetin tai budjettiversion hyväksynnän työnkulkuun. 
 
@@ -34,7 +36,7 @@ Kun budjetti tai budjettiversio on varattu, voit tarkistaa kohdistusmäärät ja
 3. Valitse toimintoruudun Suunnitelma-välilehden Budjettiryhmä-kohdassa Projektibudjetti. 
 4. Valitse toimintoruudun Projektibudjetti-lomakkeen Budjetti-välilehden Kohdista budjetti -kohta. 
 5. Syötä Kohdista budjetti -lomakkeen Kohdista kohteesta- ja Kohdista kohteeseen -kenttiin ensimmäinen ja viimeinen päivämäärä, jotka haluat sisällyttää budjetin kohdistukseen. Nämä ovat yleensä koko projektin ensimmäinen ja viimeinen päivämäärä tai kuluvan vuoden ensimmäinen ja viimeinen päivämäärä.  
-> [HUOMAUTUS!] Kun tapahtumatyyppi on kohdistettu ja määrät hyväksytty, kohdistuksen ajanjaksoa ei voi muuttaa tulevissa budjettiversioissa. 
+   > [HUOMAUTUS!] Kun tapahtumatyyppi on kohdistettu ja määrät hyväksytty, kohdistuksen ajanjaksoa ei voi muuttaa tulevissa budjettiversioissa. 
 6. Valitse Ajanjaksoittain-kentässä, haluatko kohdistaa projektin budjetin vuoden, neljännesvuoden vai vuoden sisäisen yrityksen tilikauden mukaan.
 7. Valitse kohdistettavat tapahtumatyypit ja valitse sitten Kohdista. 
 8. Tarkista tai päivitä kohdistettavat summat Projektibudjetin kohdistus- tai Projektibudjetin version kohdistus -lomakkeessa. 

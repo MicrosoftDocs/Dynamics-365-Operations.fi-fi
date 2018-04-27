@@ -19,17 +19,16 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7e05361bf865e44ba6073198fba94d7102b1ed19
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b4e792cae66e38546b3bdfdfbd59a2e36d891c2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-coupons-for-retail-sales"></a>Vähittäismyynnin kuponkien luonti
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 ## <a name="overview-of-coupons"></a>Kuponkien yleiskatsaus
 
@@ -46,9 +45,12 @@ Alennus ja kuponki luodaan kuponkia varten erikseen. Ne linkitetään sitten val
 
 ### <a name="limited-use-coupons"></a>Kupongit, joiden käyttö on rajoitettua
 
-Kupongit voidaan määrittää siten, niiden käyttö on rajoitettua. Käyttöraja voidaan määrittä asiakas- tai kanavakohtaisesti tai yleisenä rajoituksena. Tätä rajoitusta noudatetaan, kun koodi tai viivakoodi annetaan tai skannataan myyntipisteessä tai myynnin tilaustenkäsittelyn aikana. Kuponki kirjataan käytetyksi, kun tilaus, johon kuponki on liitetty, on valmis.
+Kupongit voidaan määrittää siten, niiden käyttö on rajoitettua. Käyttöraja voidaan määrittä asiakas- tai kanavakohtaisesti tai yleisenä rajoituksena. Tätä rajoitusta noudatetaan, kun koodi tai viivakoodi annetaan tai skannataan myyntipisteessä tai myynnin tilaustenkäsittelyn aikana.
 
 Rajaa noudatetaan kupongin kuponkikoodikohtaisesti. Esimerkiksi kaksi kuponkikoodia sisältävää kertakäyttökuponkia voi käyttää kahdesta: kerran kummallakin koodilla. Jokainen kupongin koodi voidaan määrittää erikseen aktiiviseksi.
+
+> [!NOTE]
+> Kun kuponkikoodin käyttöraja on saavutettu, järjestelmä *ei* vaihda kuponkikoodin tilaksi automaattisesti Käytetty. Järjestelmä ei kuitenkaan salli käyttörajan saavuttaneen kuponkikoodin käytön jatkamista. Jos kuponkikoodin tilaksi on manuaalisesti määritetty jokin muu kuin Aktiivinen, kyseistä kuponkikoodia ei voi käyttää missään kanavassa.
 
 ## <a name="managing-coupons"></a>Kuponkien hallinta
 
@@ -68,8 +70,8 @@ Ennen kuin kupongin määrittämistä on määritettävä kupongin viivakoodi ja
     > [!NOTE]
     > Numerosarjaksi on **Alue**-kentässä valittava **Yritys**. Useimmissa tapauksissa kumpikin numerosarja pitäisi luoda automaattisesti.
 
-5.  Valitse **Vähittäismyynnin yhteiset parametrit** -sivun **Viivakoodit**-välilehdessä aiemmin luomasi viivakoodi.
-6.  Valitse **Vähittäismyynnin parametrit** -sivun **Numerosarjat**-välilehdessä kuponkinumerolle ja kuponkikooditunnukselle luomasi numerosarjat.
+5.  Valitse **Vähittäismyynnin parametrit** -sivun **Viivakoodit**-välilehdessä aiemmin luomasi viivakoodi.
+6.  Valitse **Vähittäismyynnin jaetut parametrit** -sivun **Numerosarjat**-välilehdessä kuponkinumerolle ja kuponkikooditunnukselle luomasi numerosarjat.
 7.  Voit nyt avata **Kupongit**-sivun ja luoda uusia kuponkeja.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Osittaisten päivitysten vaikutus kuponkeihin

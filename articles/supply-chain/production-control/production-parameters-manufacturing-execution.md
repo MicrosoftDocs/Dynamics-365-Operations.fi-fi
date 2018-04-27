@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 468227e40165fa37e9ce80d5f52ded8e9094e5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a0a28ba5072d55b8133f5458f75befa752a3dcdf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-parameters-in-manufacturing-execution"></a>Tuotannonohjauksen tuotantoparametrit
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja tuotannonohjauksen tuotantoparametrien asetuksista.
 
@@ -69,17 +69,17 @@ Voit valita kussakin vaiheessa **Automaattinen tuoterakennekulutus** -kentässä
 
 - **Materiaaliottosääntö** – tätä asetusta käytetään yhdessä tuoterakenteen **Tuotanto**-moduulissa määritetyn asetuksen kanssa. Valitse **Tuotannonhallinta** &gt; **Yleinen** &gt; **Tuotantotilaukset** &gt; **Kaikki tuotantotilaukset**. Valitse **Kaikki tuotantotilaukset** -sivulla luettelosta tuotantotilaus ja valitse sitten toimintoruudussa **Tuoterakenne**. Valitse **Tuoterakenne**-sivun **Asetukset**-välilehden **Materiaaliottosääntö**-kentässä jokin seuraavista vaihtoehdoista:
 
-    - **Alku**
-    - **Lopetus**
-    - **Manuaalinen**
-    - Tyhjä (yhtään vaihtoehtoa ei valita).
-    - **Käytettävissä sijainnissa**
+  - **Alku**
+  - **Lopetus**
+  - **Manuaalinen**
+  - Tyhjä (yhtään vaihtoehtoa ei valita).
+  - **Käytettävissä sijainnissa**
 
     Jos tuotannonohjauksessa on valittu **Materiaaliottosääntö** **Alku**-välilehden **Automaattinen tuoterakennekulutus** -kentässä, kaikki tuoterakenteen materiaalit, joissa on valittu **Alku**, vähennetään varastosta työvaiheen alkaessa. **Käytettävissä sijainnissa** -vaihtoehtoa käytetään tuotteissa, joissa edistykselliset varastoprosessit on otettu käyttöön. Jos valitset tämän materiaalinottosäännön, materiaali otetaan, kun raaka-aineen keräyksen varastotyö on valmis. Materiaali otetaan myös silloin, kun tätä materiaaliottosääntöä käyttävä tuoterakenteen rivi vapautetaan varastoon ja materiaali on saatavana tuotannon varastosijainnissa.
-    
+
     > [!NOTE]
     > Jos **Materiaaliottosääntö**-kenttä on valittu tuotannonohjauksen **Alku**-välilehdessä, sama sääntö on valittava myös joko **Työvaiheet**- tai **Ilmoita valmiiksi** -välilehdessä. Tämä edellytys auttaa varmistamaan, että materiaalit vähennetään varastoista niissä tuoterakenteissa, joissa tuotantotilauksen materiaaliottosäännöksi on valittu **Lopetus**. Jos samaa materiaaliottosääntöä ei valita joko **Työvaiheet**- tai **Ilmoita valmiiksi** -välilehdessä, on mahdollista, että materiaalit vähennetään varastosta kahdesti.
- 
+
 - **Aina** – Jos valitset tämän vaihevaihtoehdon, materiaalit vähennetään varastosta tässä vaiheessa. Tuotannon materiaalit vähennetään esimerkiksi silloin, kun tuotantotilaus aloitetaan. Tämä asetus edellyttää, että **Työvaiheet**- ja **Ilmoita valmiiksi** -välilehdissä valitaan **Ei koskaan**. Tämä edellytys auttaa estämään sen, että nimikkeet vähennetään varastosta kahdesti.
 - **Ei koskaan** – Jos valitset tämän vaihevaihtoehdon, tuoterakennekulutusta ei tapahdu koskaan tässä vaiheessa. Jos esimerkiksi valitset **Ei koskaan** kaikissa kolmessa välilehdessä (**Alku**, **Työvaiheet** ja **Ilmoita valmiiksi**), materiaalit on vähennettävä varastosta manuaalisesti.
 
@@ -146,11 +146,13 @@ Keräysluettelon kirjauskansiot kirjataan aiemmin tässä osassa käsiteltyjen v
 
 Voit käyttää seuraavia asetuksia, jos materiaalit on poistettava aina manuaalisesti varastosta. Keräysluettelon kirjauskansioita ei siinä tapauksessa kirjata.
 
-| Välilehti                | Kenttä                          | Asetus    |
-|--------------------|--------------------------------|------------|
-| Alku              | Päivitä online-aloitus           | **Tila** |
-| Alku              | Automaattinen tuoterakennekulutus      | **Ei koskaan**  |
-| Operations         | Automaattinen tuoterakennekulutus      | **Ei koskaan**  |
-| Ilmoita valmiiksi | Automaattinen tuoterakennekulutus      | **Ei koskaan**  |
-| Ilmoita valmiiksi | Päivitä valmis online-raportti | **Tila** |
+
+|        Välilehti         |             Kenttä              |         Asetus         |
+|--------------------|--------------------------------|-------------------------|
+|       Alku        |      Päivitä online-aloitus      | <strong>Tila</strong> |
+|       Alku        |   Automaattinen tuoterakennekulutus    | <strong>Ei koskaan</strong>  |
+|     Operations     |   Automaattinen tuoterakennekulutus    | <strong>Ei koskaan</strong>  |
+| Ilmoita valmiiksi |   Automaattinen tuoterakennekulutus    | <strong>Ei koskaan</strong>  |
+| Ilmoita valmiiksi | Päivitä valmis online-raportti | <strong>Tila</strong> |
+
 

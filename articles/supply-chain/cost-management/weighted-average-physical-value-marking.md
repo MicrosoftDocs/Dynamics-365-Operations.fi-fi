@@ -20,18 +20,18 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69876a9d1daec4e6980728527c784a5404239cc2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Painotettu keskiarvo sekä fyysinen arvo ja merkintä
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Painotettu keskiarvo on varastomalli, joka perustuu painotetun keskiarvon periaatteeseen. Siinä varasto-otot arvotetaan varastoon varaston sulkemiskauden aikana vastaanotettavien nimikkeiden sekä edeltävän kauden mahdollisen käytettävissä olevan varaston keskiarvon mukaan.
 
@@ -74,16 +74,16 @@ Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja suoran täsmäytysp
 ![Painotettu keskiarvo - suora maksu - fyysistä arvoa ei sisällytetä](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Kaavion selite**
--   Pystysuorat nuolet kuvaavat varastotapahtumia.
--   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
--   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
--   Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
--   Hakasulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
--   Ilman hakasulkeita oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon taloudellisesti.
--   Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
--   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
--   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä Inventory Close.
--   Varaston sulkemisen suorittamat täsmäytykset on merkitty punaisilla pistenuolilla, jotka osoittavat vinosti vastaanotosta varasto-ottoon.
+- Pystysuorat nuolet kuvaavat varastotapahtumia.
+- Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
+- Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Hakasulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
+- Ilman hakasulkeita oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon taloudellisesti.
+- Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
+- Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
+- Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä Inventory Close.
+- Varaston sulkemisen suorittamat täsmäytykset on merkitty punaisilla pistenuolilla, jotka osoittavat vinosti vastaanotosta varasto-ottoon.
 
 ## <a name="weighted-average-summarized-settlement-without-the-include-physical-value-option"></a>Painotetun keskiarvon yhteenvetotäsmäytys ilman Sisällytä fyysinen arvo -valintaa
 Painotettu käyttää täsmäytysperiaatteena sitä, että kaikki tietyllä sulkemisjaksolla tapahtuvat vastaanotot lasketaan yhteen Painotetun keskiarvon varaston sulkeminen -nimiseksi tapahtumaksi. Kaikki jakson vastaanotot täsmäytetään luodun uuden varastosiirtotapahtuman varastostaottoa vastaan. Kaikki jakson varastostaotot täsmäytetään uuden varastosiirtotapahtuman vastaanottoa vastaan. Jos käytettävissä oleva varasto on varaston sulkemisen jälkeen positiivinen, käytettävistä olevasta varastosta ja varaston arvosta tehdään yhteenveto uuteen varastosiirtotapahtumaan (vastaanotto). Jos käytettävissä oleva varasto on varaston sulkemisen jälkeen negatiivinen, käytettävissä oleva varasto ja varaston arvo ovat sellaisten yksittäisten varastostaottojen summa, joita ei ole täysin selvitetty. Oheisessa esimerkkitilanteessa on kirjattu useita rahoituksellisesti päivitettyjä vastaanottoja ja yksi varasto-otto. 
@@ -108,18 +108,18 @@ Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäyt
 ![Painotettu keskiarvo - maksun yhteenveto - fyysistä arvoa ei sisällytetä](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Kaavion selite**
--   Pystysuorat nuolet kuvaavat varastotapahtumia.
--   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
--   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
--   Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
--   Hakasulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
--   Ilman hakasulkeita oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon taloudellisesti.
--   Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
--   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
--   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä Inventory Close.
--   Varaston sulkemisen suorittamat täsmäytykset on merkitty punaisilla pistenuolilla, jotka osoittavat vinosti vastaanotosta varasto-ottoon.
--   Punaiset nuolet tarkoittavat vastaanottotapahtumia, jotka täsmäytetään järjestelmän muodostamaan varasto-ottotapahtumaan.
--   Vihreä nuoli tarkoittaa vastakirjauksena toimivaa järjestelmän muodostamaa vastaanottotapahtumaa, johon alun perin kirjatut varasto-ottotapahtumat täsmäytetään
+- Pystysuorat nuolet kuvaavat varastotapahtumia.
+- Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
+- Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Hakasulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
+- Ilman hakasulkeita oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon taloudellisesti.
+- Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
+- Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
+- Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä Inventory Close.
+- Varaston sulkemisen suorittamat täsmäytykset on merkitty punaisilla pistenuolilla, jotka osoittavat vinosti vastaanotosta varasto-ottoon.
+- Punaiset nuolet tarkoittavat vastaanottotapahtumia, jotka täsmäytetään järjestelmän muodostamaan varasto-ottotapahtumaan.
+- Vihreä nuoli tarkoittaa vastakirjauksena toimivaa järjestelmän muodostamaa vastaanottotapahtumaa, johon alun perin kirjatut varasto-ottotapahtumat täsmäytetään
 
 ## <a name="weighted-average-direct-settlement-with-the-include-physical-value-option"></a>Painotetun keskiarvon suora täsmäytys ja Sisällytä fyysinen arvo -valinta
 Parametri toimii painotetun keskiarvon varastomallin yhteydessä eri tavoin kuin tuotteen aiemmissa versioissa. Valitse Sisällytä fyysinen arvo -valintaruutu nimikkeelle Nimikemalliryhmä-lomakkeesta. Järjestelmä käyttää tämän jälkeen fyysisesti päivitettyjä vastaanottoja arvioidun kustannushinnan tai käyttökeskiarvon laskemiseen. Varastostaotot kirjataan tämän arvioidun kustannushinnan perusteella kauden aikana. Varaston sulkemisen aikana vain rahoituksellisesti päivitetyt vastaanotot otetaan huomioon painotetun keskiarvon laskennassa. On suositeltavaa, että varasto suljetaan painotetun keskiarvon varastomallia käytettäessä joka kuukausi. Tässä painotetun keskiarvon suoran täsmäytyksen esimerkissä nimikemalliryhmä on merkitty sisältämään fyysinen arvo. 
@@ -137,16 +137,16 @@ Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja suoran täsmäytysp
 ![Painotettu keskiarvo - suora maksu - fyysinen arvo sisällytetään](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Kaavion selite**
--   Pystysuorat nuolet kuvaavat varastotapahtumia.
--   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
--   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
--   Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
--   Hakasulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
--   Ilman hakasulkeita oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon taloudellisesti.
--   Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
--   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
--   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä Inventory Close.
--   Varaston sulkemisen suorittamat täsmäytykset on merkitty punaisilla pistenuolilla, jotka osoittavat vinosti vastaanotosta varasto-ottoon.
+- Pystysuorat nuolet kuvaavat varastotapahtumia.
+- Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
+- Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Hakasulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
+- Ilman hakasulkeita oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon taloudellisesti.
+- Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
+- Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
+- Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä Inventory Close.
+- Varaston sulkemisen suorittamat täsmäytykset on merkitty punaisilla pistenuolilla, jotka osoittavat vinosti vastaanotosta varasto-ottoon.
 
 ## <a name="weighted-average-summarized-settlement-with-the-include-physical-value-option"></a>Painotetun keskiarvon yhteenvetotäsmäytys ja Sisällytä fyysinen arvo -valinta
 Sisällytä fyysinen arvo -parametri toimii painotetun keskiarvon yhteydessä eri tavoin kuin aiemmissa versioissa. Valitse Sisällytä fyysinen arvo -valintaruutu nimikkeelle Nimikemalliryhmä-sivulta. Järjestelmä käyttää tämän jälkeen fyysisesti päivitettyjä vastaanottoja arvioidun kustannushinnan tai käyttökeskiarvon laskemiseen. Varasto-otot kirjataan kauden aikana tätä arvioitua kustannushintaa noudattaen. Varaston sulkemisen aikana vain rahoituksellisesti päivitetyt vastaanotot otetaan huomioon painotetun keskiarvon laskennassa. On suositeltavaa, että varasto suljetaan painotetun keskiarvon varastomallia käytettäessä joka kuukausi. Tässä painotetun keskiarvon yhteenvetotäsmäytyksen esimerkissä varastomalli on merkitty sisältämään fyysinen arvo. 
@@ -170,18 +170,18 @@ Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäyt
 ![Painotettu keskiarvo - maksun yhteenveto - fyysinen arvo sisällytetään](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Kaavion selite**
--   Pystysuorat nuolet kuvaavat varastotapahtumia.
--   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
--   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
--   Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
--   Hakasulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
--   Ilman hakasulkeita oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon taloudellisesti.
--   Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
--   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten 1a. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
--   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä Inventory Close.
--   Varaston sulkemisen suorittamat täsmäytykset on merkitty punaisilla pistenuolilla, jotka osoittavat vinosti vastaanotosta varasto-ottoon.
--   Punaiset nuolet tarkoittavat vastaanottotapahtumia, jotka täsmäytetään järjestelmän muodostamaan varasto-ottotapahtumaan.
--   Vihreä nuoli tarkoittaa vastakirjauksena toimivaa järjestelmän muodostamaa vastaanottotapahtumaa, johon alun perin kirjatut varasto-ottotapahtumat täsmäytetään
+- Pystysuorat nuolet kuvaavat varastotapahtumia.
+- Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
+- Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Hakasulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
+- Ilman hakasulkeita oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon taloudellisesti.
+- Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
+- Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten 1a. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
+- Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä Inventory Close.
+- Varaston sulkemisen suorittamat täsmäytykset on merkitty punaisilla pistenuolilla, jotka osoittavat vinosti vastaanotosta varasto-ottoon.
+- Punaiset nuolet tarkoittavat vastaanottotapahtumia, jotka täsmäytetään järjestelmän muodostamaan varasto-ottotapahtumaan.
+- Vihreä nuoli tarkoittaa vastakirjauksena toimivaa järjestelmän muodostamaa vastaanottotapahtumaa, johon alun perin kirjatut varasto-ottotapahtumat täsmäytetään
 
 ## <a name="weighted-average-with-marking"></a>Painotettu keskiarvo ja merkintä
 Merkintä on prosessi, jonka avulla voit linkittää (eli merkitä) varaston ottotapahtuman vastaanottotapahtumaan. Merkintä voi tapahtua joko ennen tapahtuman kirjaamista tai sen jälkeen. Merkinnän avulla voit varmistaa tarkan varastokustannuksen, kun tapahtuma kirjataan tai kun varaston sulkeminen suoritetaan. 
@@ -218,16 +218,16 @@ Seuraavassa kaaviossa havainnollistetaan painotetun keskiarvon varastomallin ja 
 ![Painotettu keskiarvo merkinnän kanssa](./media/weightedaveragewithmarking.gif) 
 
 **Kaavion selite**
--   Pystysuorat nuolet kuvaavat varastotapahtumia.
--   Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
--   Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
--   Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
--   Hakasulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
--   Ilman hakasulkeita oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon taloudellisesti.
--   Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
--   Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
--   Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä Inventory Close.
--   Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla pisteviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
+- Pystysuorat nuolet kuvaavat varastotapahtumia.
+- Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
+- Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa määrä@"Unitprice".
+- Hakasulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
+- Ilman hakasulkeita oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon taloudellisesti.
+- Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
+- Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
+- Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä Inventory Close.
+- Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla pisteviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
 
 
 

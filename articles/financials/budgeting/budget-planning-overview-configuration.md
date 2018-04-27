@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-overview"></a>Budjetin suunnittelun yleiskuvaus
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tämä artikkeli esittelee budjettisuunnittelun ja sisältää tietoja, joiden avulla voit määrittää budjettisuunnittelun ja budjettisuunnitteluprosessit.
 
@@ -116,18 +115,18 @@ Budjettisuunnittelussa voidaan kohdistaa budjettisuunnitelmarivien summat tai m�
 
 Kohdistusaikataulut kohdistavat budjettisuunnitelmarivit automaattisesti työnkulun käsittelyn aikana. Voit suorittaa kohdistukset minkä tahansa seuraavan **kohdistusmenetelmäluettelon** menetelmän avulla:
 
--   **Kohdista kausille** – Voit käyttää kaudenkohdistustunnusta kohdistaessasi lähdebudjettiskenaarion budjettisuunnitelman rivit kohdeskenaarion kausiin. **Huomautus:** Ennen kuin kohdistus kausiin voidaan suorittaa, kaudenkohdistustunnukset on määritettävä ****Kaudenkohdistusluokat****-sivulla.
--   **Kohdista dimensioille** – Budjettisuunnitelman rivit kohdistetaan budjettisuunnitelman lähdeskenaarion ja kohdeskenaarion taloushallinnon dimensioiden välillä. **Huomautus:** Ennen kuin kohdistus dimensioihin voidaan suorittaa, budjetin kohdistusehdot on määritettävä ****Budjetin kohdistusehto**** -sivulla.
--   **Yhdistä** – Budjettisuunnitelman rivit yhdistetään liittyvien budjettisuunnitelmien lähdebudjettiskenaariosta päätason budjettisuunnitelman kohdeskenaarioon.
--   **Jaa**– Budjettisuunnitelman rivit jaetaan ylätason budjettisuunnitelman lähdebudjettiskenaariosta liittyvien budjettisuunnitelmien kohdeskenaarioon.
--   **Käytä kirjanpidon kohdistussääntöjä** – Budjettisuunnitelman rivit jaetaan lähdebudjettiskenaariosta kohdebudjettiskenaarioon valitun kirjanpidon kohdistussäännön perusteella.
--   **Kopioi budjettisuunnitelmasta** – Voit valita kohdistuksen lähteeksi toisen budjettisuunnitelman.
+- <strong>Kohdista kausille</strong> – Voit käyttää kaudenkohdistustunnusta kohdistaessasi lähdebudjettiskenaarion budjettisuunnitelman rivit kohdeskenaarion kausiin. <strong>Huomautus:</strong> Ennen kuin kohdistus kausiin voidaan suorittaa, kaudenkohdistustunnukset on määritettävä *<strong><em>Kaudenkohdistusluokat</em></strong>*-sivulla.
+- <strong>Kohdista dimensioille</strong> – Budjettisuunnitelman rivit kohdistetaan budjettisuunnitelman lähdeskenaarion ja kohdeskenaarion taloushallinnon dimensioiden välillä. <strong>Huomautus:</strong> Ennen kuin kohdistus dimensioihin voidaan suorittaa, budjetin kohdistusehdot on määritettävä *<strong><em>Budjetin kohdistusehto</em></strong>* -sivulla.
+- **Yhdistä** – Budjettisuunnitelman rivit yhdistetään liittyvien budjettisuunnitelmien lähdebudjettiskenaariosta päätason budjettisuunnitelman kohdeskenaarioon.
+- **Jaa**– Budjettisuunnitelman rivit jaetaan ylätason budjettisuunnitelman lähdebudjettiskenaariosta liittyvien budjettisuunnitelmien kohdeskenaarioon.
+- **Käytä kirjanpidon kohdistussääntöjä** – Budjettisuunnitelman rivit jaetaan lähdebudjettiskenaariosta kohdebudjettiskenaarioon valitun kirjanpidon kohdistussäännön perusteella.
+- **Kopioi budjettisuunnitelmasta** – Voit valita kohdistuksen lähteeksi toisen budjettisuunnitelman.
 
 ### <a name="stage-allocations"></a>Vaiheen kohdistukset
 
 Vaiheen kohdistuksia käytetään budjettisuunnitelmien automaattiseen kohdistukseen työnkulun käsittelyn aikana. Kun vaiheen kohdistuksia käytetään, kohdeskenaarion budjettisuunnitelman rivit voidaan luoda ja niitä voidaan muokata ilman budjettisuunnitelman valmistelijan tai tarkistajan toimia.
 
-Määrittäessäsi vaiheen kohdistuksen liität budjetti suunnitelman työnkulun ja vaiheen kohdistuksen aikatauluun. Budjettisuunnittelun työnkulku on liitettävä budjetoinnin työnkulkuun, joka käyttää automatisoitua ****Budjetin suunnitteluvaiheen kohdistus**** -työnkulkutehtävää. Työnkulun saavuttaessa tietyn vaiheen kohdistus tapahtuu automaattisesti. Automaattista tehtävää voidaan käyttää budjettisuunnitelmarivien luomiseen uudessa skenaariossa. 
+Määrittäessäsi vaiheen kohdistuksen liität budjetti suunnitelman työnkulun ja vaiheen kohdistuksen aikatauluun. Budjettisuunnittelun työnkulku on liitettävä budjetoinnin työnkulkuun, joka käyttää automatisoitua *<strong><em>Budjetin suunnitteluvaiheen kohdistus</em></strong>* -työnkulkutehtävää. Työnkulun saavuttaessa tietyn vaiheen kohdistus tapahtuu automaattisesti. Automaattista tehtävää voidaan käyttää budjettisuunnitelmarivien luomiseen uudessa skenaariossa. 
 
 Aiemmin tässä artikkelissa esitetyssä esimerkkimallissa suoritetaan kohdistus, jossa siirretään summat pääkonttorin perusvaiheen budjettisuunnitelmasta ja -skenaarioista myyntiosaston arviointivaiheen toiseen budjettisuunnitelmaan ja -skenaarioihin. Seuraavassa kuvassa näytetään esimerkkimallin kyseinen osa.
 

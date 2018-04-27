@@ -20,44 +20,43 @@ ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 4b7ef962b777a31e1da238a8ec1be9a42ec5bb5f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2246024d7d70947690173f3d0768292abe43efd7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
+# <a name="manage-retail-product-categories-and-products"></a>Vähittäismyynnin tuoteluokkien ja tuotteiden hallinta
 
-# <a name="enhanced-product-and-category-management"></a>Parannettu tuotteiden ja luokkien hallinta
+[!INCLUDE [banner](./includes/banner.md)]
 
-[!include[banner](./includes/banner.md)]
+Tässä ohjeaiheessa käsitellään parannettua tapaa hallita vähittäismyynnin tuoteluokkia ja tuotteita Microsoft Dynamics 365 for Retailissa. Myynninedistämispäälliköt näkevät näiden parannusten avulla tuoteominaisuuksien rakenteen, jonka vähittäismyynnin tuotehierarkia ja vapautetut tuotetiedot jakavat.
 
-Tässä ohjeaiheessa kerrotaan parannetusta tavasta hallita vähittäismyynnin tuoteluokkia ja tuotteita Dynamics 365 for Retailissa. Myynninedistämispäälliköt näkevät näiden parannusten avulla tuoteominaisuuksien yhteisen rakenteen vähittäismyynnin tuotehierarkian ja vapautettujen tuotetietojen välillä.
+Saat lisätietoja vähittäismyynnin tuoteluokkien hallinnasta valitsemalla **Luokka- ja tuotehallinta** -työtilassa **Vähittäismyynnin tuotehierarkia** -ruudun.
 
-Saat lisätietoja vähittäismyynnin tuoteluokkien valitsemalla **Vähittäismyynnin tuotehierarkia** **Luokka- ja tuotehallinta** -työtilassa ja tarkastelemalla **Vähittäismyynnin tuoteluokka** -sivun parannettua rakennetta.
+Kiinnitä huomiota avautuvan **Vähittäismyynnin tuotehierarkia** -sivun parannuksiin. Aiemmissa Retail-versioissa tuotteen ominaisuudet jaettiin *tuotteen perusominaisuuksiin* ja *vähittäismyyntituotteen tuotteenominaisuuksiin* niiden käyttöalueen mukaan. Vähittäismyyntituotteen ominaisuuksien käyttöalue on *yleinen*. Toisin sanoen tietyn vähittäismyyntituotteen ominaisuuden arvot jaetaan kaikissa yrityksissä. Tuotteen perusominaisuudet ovat sen sijaan *yrityskohtaisia*. Toisin sanoen tietyn tuotteen perusominaisuuden arvo voi vaihdella yrityksissä kun yrityksen yksittäisten liiketoimintatarpeiden perusteella.
 
-![Luokka- ja tuotehallinta -työtila](media/LaunchRetailProductHierarchy.png)
+Parannetussa vähittäismyynnin tuoteluokkarakenteessa tuotteen ominaisuudet erotetaan loogisesti sen perusteella, miten niitä voi käyttää ryhmässä, jotta ne vastaavat vapautettujen tuotetietojen lomakerakennetta.
 
-Aiemmissa versioissa tuotteen ominaisuudet jaettiin **tuotteen perusominaisuuksiin** ja **vähittäismyyntituotteen tuotteenominaisuuksiin** niiden käyttöalueen mukaan. **Vähittäismyyntituotteen ominaisuudet** oli käyttöalueeltaan *yleinen*, mikä tarkoitti, että tietyllä **vähittäismyyntituotteen ominaisuudella** sama arvo jaetaan kaikissa yrityksissä. **Tuotteen perusominaisuudet** ovat *yrityskohtaisia*. Toisin sanoen tietyn **tuotteen perusominaisuuden** arvo voi vaihdella yrityksissä yksittäisten liiketoimintatarpeiden perusteella.
+![Kenttien ryhmittely ominaisuuksien käyttöalueen perusteella](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
-Parannetussa vähittäismyynnin tuoteluokkarakenteessa tuotteen ominaisuudet erotetaan loogisesti sen perusteella, miten käytettäviä ne ovat ryhmässä, vastaamaan vapautettujen tuotetietojen lomakerakennetta.
+Yrityskohtaisten ominaisuuksien hallinnan voi vaihtaa yleisestä yrityskohtaiseksi.
 
-![Kenttien ryhmittely käyttöalueen perusteella](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+Voit hallita ominaisuuksia kaikissa yrityksissä valitsemalla **Näytä kaikissa yrityksissä** (tai **Muokkaa kaikissa yrityksissä**).
 
-Ominaisuuksien hallinnan yrityskohtaisille ominaisuuksille voi vaihtaa yleisestä yrityskohtaiseksi. Voit tehdä valitsemalla joko **Näytä tai muokkaa kaikissa yrityksissä** tai **Näytä tai muokkaa tietyssä yrityksessä**.
+![Näyttäminen tai muokkaaminen kaikissa yrityksissä](media/ToggleBackToEditForSpecificLegalEntity.PNG)
 
-![Näkymän vaihtelu yksittäisen yrityksen ja kaikkien yritysten välillä](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+Voit hallita tietyn yrityksen ominaisuuksia valitsemalla **Näytä tietyssä yrityksessä** (tai **Muokkaa tietyssä yrityksessä**).
 
-![Näkymän vaihtelu yksittäisen yrityksen ja kaikkien yritysten välillä](media/ToggleToEditForAllLegalEntities.PNG)  
+![Näyttäminen tai muokkaaminen tietyssä yrityksessä](media/ToggleToEditForAllLegalEntities.PNG)
 
-Edellisiin versioihin verrattuna uudessa vähittäismyynnin tuoteluokkarakenteessa myynninedistämispäällikkö voi myös määrittää oletusarvot lisätuoteominaisuusjoukolle yksittäisellä luokkatasolla. Tuotetta luotaessa tuote perii nämä tuoteominaisuuden oletusarvot perustuen liitokseen vähittäismyynnin tuotehierarkian yksittäiseen luokkaan. Näitä perittyjä tuoteominaisuuksia voidaan myös muokata kunkin tuotteen kohdalla siten, että vastaavat yksittäisiä liiketoimintatarpeita.
+Parannetussa vähittäismyynnin tuoteluokkarakenteessa myynninedistämispäällikkö voi nyt myös määrittää oletusarvot lisätuoteominaisuusjoukolle yksittäisellä luokkatasolla. Kun tuotteet sitten luodaan, ne perivät tuoteominaisuuksiensa oletusarvot sen perusteella, mitä on kyseisten ominaisuuksien liitos yksittäiseen vähittäismyynnin tuotehierarkialuokkaan. Näitä perittyjä tuoteominaisuuksia voidaan myös muokata kunkin tuotteen kohdalla siten, että ne vastaavat yksittäisiä liiketoimintatarpeita.
 
-## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a>Valitse ominaisuudet, jotka päivitetään tuotteille vähittäismyynnin tuoteluokkalomakkeessa 
- 
-Voit käyttää tätä uutta tuoteominaisuuksien parannettua rakennetta, kun valitset mitkä päivitetyt tuoteominaisuudet on siirrettävä liitettyihin tuotteisiin. 
+## <a name="selecting-properties-to-update-products-on-the-retail-product-hierarchy-page"></a>Vähittäismyynnin tuotehierarkiasivulla päivitettävien tuoteominaisuuksien valinta
 
-![Uusi päivitettyjen tuotteiden parannettu näkymä](media/NewUpdateProductsEnhancedView.PNG) 
+Voit käyttää uutta tuoteominaisuuksien parannettua rakennetta, kun valitset, mitkä päivitetyt tuoteominaisuudet on siirrettävä liitettyihin tuotteisiin. Valitse **Vähittäismyynnin tuotehierarkia** -sivun toimintoruudussa **Luokka** ja avaa sitten **Päivitä tuotteet** -valintaikkuna valitsemalla **Päivitä tuotteet**.
 
-Myynninedistämispäälliköt voivat muokata näitä perittyjä tuoteominaisuuksia tuotekohtaisesti täyttääkseen yksittäisiä liiketoiminnan vaatimuksia.
+![Päivitä tuotteet -valintaikkuna.](media/NewUpdateProductsEnhancedView.PNG)
 
 

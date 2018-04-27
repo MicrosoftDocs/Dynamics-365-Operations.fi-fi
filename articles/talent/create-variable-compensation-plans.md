@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4ced76315bb4667f84be532a703e7e9b134b829b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Luo muuttuvia kompensaatiosuunnitelmia
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Muuttuva kompensaatio muodostaa työntekijän epäsäännölliset maksut, kuten bonukset ja osakepalkkiot. Tässä artikkelissa esitellään komponentit, jotka on määritettävä ennen muuttuvan kompensaation käyttämistä ja työntekijöiden määrittämistä muuttuvaan kompensaatiosuunnitelmaan.
 
@@ -78,12 +77,12 @@ Kun olet valmis rekisteröimään työntekijöitä muuttuvaan kompensaatiosuunni
 
 **Huomaa:** Oikeutussäännöt määrittelevät kelpoisuuden sekä kiinteisiin että muuttuviin kompensaatiosuunnitelmiin. Oikeutussäännöt käyttävät seuraavia toimikenttien arvoja työssä, toimissa ja työntekijätietueissa, määrittääkseen onko työntekijä oikeutettu kompensaatiosuunnitelmaan:
 
--   Napsauta **Työ**-sivulla:
-    -   **Työ**-kenttä
-    -   **Toiminto** ja **Työtyyppi** -kentät **Työn luokittelu** -välilehdessä
-    -   **Taso**-kenttä **Kompensaatio**-välilehdessä
--   **Toimet**-sivulla: **Osasto-** ja **Kompensaatioalue**-kentät
--   **Työntekijät**-sivulla: tiedot ammattiliitoista, jotka liittyvät työntekijään kohdassa **Henkilökohtaiset tiedot** &gt; **Ammattijärjestöt** ****Työntekijä****-välilehdessä
+- Napsauta **Työ**-sivulla:
+  -   **Työ**-kenttä
+  -   **Toiminto** ja **Työtyyppi** -kentät **Työn luokittelu** -välilehdessä
+  -   **Taso**-kenttä **Kompensaatio**-välilehdessä
+- **Toimet**-sivulla: **Osasto-** ja **Kompensaatioalue**-kentät
+- <strong>Työntekijät</strong>-sivulla: tiedot ammattiliitoista, jotka liittyvät työntekijään kohdassa <strong>Henkilökohtaiset tiedot</strong> &gt; <strong>Ammattijärjestöt</strong>-kohdassa *<strong><em>Työntekijä</em></strong>*-välilehdessä
 
 ### <a name="enable-enrollment-for-the-variable-compensation-plan"></a>Salli muuttuvan kompensaatiosuunnitelman voimaanastuminen
 

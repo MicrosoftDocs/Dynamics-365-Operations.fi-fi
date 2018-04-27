@@ -20,16 +20,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="replenishment"></a>Täydennys
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään täydennysstrategioita, joita voi käyttää varastonhallinnan toimintoja käyttävissä varastoissa. Tiedot eivät koske Inventoinnin- ja varastonhallinnassa käytettävissä olevaa varastoratkaisua.
 
@@ -67,13 +67,15 @@ Kuorman kysynnän täydennys summaa useiden kuormien kysynnän ja luo täydennys
 Sen sijaan, että kysyntä laskettaisiin yhteen kohdistusprosessin lopussa ja täydennys tehtäisiin yhteenlasketun määrän perusteella, voit käyttää välitöntä täydennysstrategiaa. Tätä strategiaa käytettäessä varaston voi täydentää heti, kun sijaintidirektiivin rivi epäonnistuu. Näin voit määrittää täydennyksen siten, että se on rajoitettu tiettyihin yksiköihin ja että se käyttää tiettyjä sijainteja koskevia määriä.
 
 ## <a name="replenishment-prerequisites"></a>Täydennyksen edellytykset
-| Edellytys            | kuvaus |
-|-------------------------|-------------|
-| Nimike                    | Nimike on otettava käyttöön varastonhallintaprosesseille. |
-| Varasto               | Varastossa on oltava käytössä varastonhallintaprosessit. Valitse **Varastot**-sivulta varasto ja sitten **Käytä varastonhallintaprosesseja** -vaihtoehto, jos haluat aktivoida varaston varastonhallintaprosesseja varten. |
-| Täydennysmallit | Vähimmäis- tai enimmäistäydennykselle, aallon kysynnän täydennykselle tai kuorman kysynnän täydennykselle on määritettävä vähintään yksi täydennysmalli. |
-| Sijainnit               | Sijainnit on luotava ja liitettävä sijaintiprofiiliin. |
-| Sijaintiprofiilit       | Sijaintiprofiilit tarvitaan sijaintien luontiin. |
-| Sijaintidirektiivit     | Sijaintidirektiivejä tarvitaan ohjaamaan työ sijainteihin, joissa täydennystä tarvitaan, ja sijainteihin, jotka ovat varaston lähteenä. |
-| Työmallit          | **Täydennys** tyyppisiä työmalleja tarvitaan luomaan täydennystyö, jolla varasto voidaan siirtää haluttuun sijaintiin. |
+
+|      Edellytys       |                                                                                                                                kuvaus                                                                                                                                 |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|          Nimike           |                                                                                                        Nimike on otettava käyttöön varastonhallintaprosesseille.                                                                                                        |
+|        Varasto        | Varastossa on oltava käytössä varastonhallintaprosessit. Valitse <strong>Varastot</strong>-sivulta varasto ja sitten <strong>Käytä varastonhallintaprosesseja</strong> -vaihtoehto, jos haluat aktivoida varaston varastonhallintaprosesseja varten. |
+| Täydennysmallit |                                                                   Vähimmäis- tai enimmäistäydennykselle, aallon kysynnän täydennykselle tai kuorman kysynnän täydennykselle on määritettävä vähintään yksi täydennysmalli.                                                                   |
+|        Sijainnit        |                                                                                                       Sijainnit on luotava ja liitettävä sijaintiprofiiliin.                                                                                                       |
+|    Sijaintiprofiilit    |                                                                                                        Sijaintiprofiilit tarvitaan sijaintien luontiin.                                                                                                        |
+|   Sijaintidirektiivit   |                                                       Sijaintidirektiivejä tarvitaan ohjaamaan työ sijainteihin, joissa täydennystä tarvitaan, ja sijainteihin, jotka ovat varaston lähteenä.                                                        |
+|     Työmallit      |                                                   <strong>Täydennys</strong> tyyppisiä työmalleja tarvitaan luomaan täydennystyö, jolla varasto voidaan siirtää haluttuun sijaintiin.                                                    |
+
 

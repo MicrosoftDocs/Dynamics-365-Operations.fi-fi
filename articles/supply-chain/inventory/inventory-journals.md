@@ -1,9 +1,9 @@
 ---
 title: Varastokirjauskansiot
-description: "Tässä artikkelissa kuvataan, miten varastokirjauskansioita voidaan käyttää erityyppisten varastotilannetapahtumien kirjaamisessa."
-author: MarkusFogelberg
+description: "Tässä ohjeaiheessa käsitellään varastokirjauskansioiden käyttämistä erityyppisten varastotilannetapahtumien kirjaamisessa."
+author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,21 +19,20 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 968bf9a243d0c0cc9f0dfec474cb207ca32f9eeb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7e6ac46cc4d4961cdd76f6127d8900a9b3d13a39
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="inventory-journals"></a>Varastokirjauskansiot
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
-
-Tässä artikkelissa kuvataan, miten varastokirjauskansioita voidaan käyttää erityyppisten varastotilannetapahtumien kirjaamisessa.
+Tässä ohjeaiheessa käsitellään varastokirjauskansioiden käyttämistä erityyppisten varastotilannetapahtumien kirjaamisessa.
 
 Microsoft Dynamics 365 for Finance and Operationsin varastokirjauskansioihin kirjataan erityyppisiä fyysisiä varastotapahtumia, kuten varasto-ottoja ja -vastaanottoja, varastosiirtoja, tuoterakenteiden luonteja ja fyysisen varaston täsmäytys. Kaikki varastokirjauskansioita käytetään samalla tavalla, mutta ne on jaettu eri tyyppeihin.
 
@@ -51,7 +50,7 @@ Käytössä on seuraavat varastokirjauskansiotyypit:
 
 ### <a name="movement"></a>Varastotapahtuma
 
-Kun käytät varastokirjauskansiota, voit lisätä kustannuksen nimikkeeseen varastoa lisättäessä, mutta lisäkustannus tiettyyn kirjanpidon kirjauskansioon on kohdistettava manuaalisesti määrittämällä kirjanpidon vastatili kirjauskansiota luotaessa. Tämä varastokirjauskansio on kätevä, jos haluat lisätä nimikkeen kuluna toiselle osastolle tai jos haluat poistaa nimikkeitä varastosta kulutarkoituksessa.
+Kun käytät varastokirjauskansiota, voit lisätä kustannuksen nimikkeeseen varastoa lisättäessä, mutta lisäkustannus tiettyyn kirjanpidon kirjauskansioon on kohdistettava manuaalisesti määrittämällä kirjanpidon vastatili kirjauskansiota luotaessa. Varastokirjauskansiotyyppi on kätevä, jos haluat korvata oletuskirjaustilejä.
 
 ### <a name="inventory-adjustment"></a>Varaston oikaisu
 
@@ -61,8 +60,8 @@ Kun käytä varaston oikaisukirjauskansion, voit lisätä kustannuksen nimikkeen
 
 Voit siirtää nimikkeitä siirtokirjauskansioiden avulla varastointisijainnin, erien tai tuotevarianttien välillä kustannusvaikutuksia liittämättä. Voit esimerkiksi siirtää nimikkeitä saman yrityksen varastosta toiseen. Siirtokirjauskansiota käytettäessä on määritettävä sekä alkuperäinen varastodimensio että uusi varastodimensio (kuten sijainti ja varasto). Määritetyn varastodimension käytettävissä olevan varasto muuttuu vastaavasti. Varastosiirrot ilmaisevat materiaalin välitöntä liikkumista. Kuljetettavaa varastoa ei seurata. Jos kuljetettavaa varasto on seurattava, käytä siirtotilausta. Kun kirjaat siirtokirjauskansioon, kullekin kirjauskansioriville luodaan kaksi varastotapahtumaa:
 
--   Varasto-otto alkuperäisestä sijainnista
--   Varasto-vastaanotto uudessa sijainnissa
+-   Varasto-otto alkuperäisestä sijainnista.
+-   Varastoonotto uudessa sijainnissa.
 
 ### <a name="bom"></a>Tuoterakenne
 
@@ -82,7 +81,7 @@ Voit korjata inventointikirjauskansioiden avulla nimikkeille tai nimikeryhmille 
 
 ### <a name="tag-counting"></a>Inventointi tunnisteiden perusteella
 
-Kirjauskansioita, jotka liittyvät inventointiin tunnisteiden perusteella, käytetään määrittämään numeroitu tunniste inventointierään. Tunnisteessa on oltava tunnistenumero, nimiketunnus ja nimikkeen määrä. Voit varmistaa, että tunnistetta käytetään vain kerran että kaikki tunnisteet käytetään, kun jokaisella nimiketunnuksella yksilöllinen tunnistejoukko, jolla on oma numerosarja. Kullekin tunnisteelle voidaan määrittää kolme arvoa:
+Kirjauskansioita, jotka liittyvät inventointiin tunnisteiden perusteella, käytetään määrittämään numeroitu tunniste inventointierään. Tunnisteessa on oltava tunnistenumero, nimiketunnus ja nimikkeen määrä. Voit varmistaa, että tunnistetta käytetään vain kerran ja että kaikki tunnisteet käytetään, kun jokaisella nimiketunnuksella on yksilöllinen tunnistejoukko, jolla on oma numerosarja. Kullekin tunnisteelle voidaan määrittää kolme arvoa:
 
 -   **Käytetty** – nimiketunnus on laskettu tunnisteelle.
 -   **Mitätöity** – tämän tunnisteen nimiketunnus on mitätöity.
@@ -95,4 +94,30 @@ Vain yksi käyttäjä kerrallaan voi käsitellä kirjauskansiota. Jos useiden k�
 
 ## <a name="posting-journal-lines"></a>Kirjauskansioluettelorivit
 Voit kirjata luomiasi kirjauskansiorivejä koska tahansa siihen saakka, että nimike lisätään lisätapahtumille. Kirjauskansioon annetut tiedot pysyvät kirjauskansiossa, vaikka suljet kirjauskansion kirjaamatta rivejä.
+
+## <a name="data-entity-support-for-inventory-journals"></a>Varastokirjauskansioiden tietoyksikkötuki
+
+Tietoyksiköt tukevat seuraavia integrointityyppejä:
+-    Synkroninen palvelu (OData)
+-  Asynkroninen integrointi
+
+Lisätietoja on kohdassa [Tietoyksiköt](../../dev-itpro/data-entities/data-entities.md).
+
+> [!NOTE]
+> OData ei ole käytössä kaikissa varastokirjauskansioissa, joten et voi käyttää Excelin tietoyhdistintä tietojen julkaisemiseen, päivittämiseen ja takaisintuontiin Dynamics 365 for Finance and Operationsiin. 
+
+Toinen kirjauskansiotietoyksiköiden välinen ero on mahdollisuus käyttää sekä ylätunniste- ja rivitiedot sisältäviä yhdistelmäyksiköitä. Tällä hetkellä yhdistelmäyksiköt ovat käytössä seuraavissa kirjauskansioissa:
+-   Varaston oikaisukirjauskansio
+-   Varaston siirtokirjauskansio
+
+Nämä kaksi kirjauskansiota tukevat *Alusta varasto* -skenaariota vain tietojen hallinnan tuontiprojektin osana:
+-  Kun kirjauskansion ylätunnistenumeroa ei ole määritetty mutta kirjauskansiotyypin numerosarja on määritetty, tuontityö luo automaattisesti kirjauskansion ylätunnisteet jokaiselle 1 000 riville. Kun tuotavia rivejä on esimerkiksi 2 020, tuloksena on kolme kirjauskansioin ylätunnistetta:
+    -  Ylätunniste 1: sisältää 1 000 riviä
+    -  Ylätunniste 2: sisältää 1 000 riviä
+    -  Ylätunniste 3: sisältää 20 riviä
+-  Kullakin varastodimensiolla oletetaan olevan yksilöllisiä rivitietoja. Tämä dimensio voi olla tuote-, varasto- tai seurantadimensio. Niinpä sellaisia kirjauskansion rivejä ei voi tuoda, jossa päivämääräkenttä eroaa saman tuontiprojektin riveillä.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[Tietoyksiköt](../../dev-itpro/data-entities/data-entities.md)
 

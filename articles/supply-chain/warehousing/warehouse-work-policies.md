@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0c900dc208736f1823be50e8522061406c9f126
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="warehouse-work-policies"></a>Varaston työkäytännöt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Varaston työkäytännöt Microsoft Dynamics 365 for Finance and Operationsissa määrittävät, onko varastotyö luotu valmistuksen varastoprosessia varten työtilaustyypin, varaston sijainnin ja tuotteen perusteella.
 
@@ -68,14 +67,15 @@ Kun suunnittelet tämän skenaarion mukaista varastotyön konfigurointia, ota hu
 
 Seuraavassa on esimerkki työmenettelystä jonka voit määrittää näiden havaintojen perusteella.
 
-|                                         |                                                       |
-|-----------------------------------------|-------------------------------------------------------|
-|**Työkäytännön nimi**<br>                 |**Työtilaustyypit**<br>                               |
-| Ei pantu pois 01     `                    |- Valmiiden tuotteiden poispano<br>                           |
-|                                         |**Sijaintipaikat**<br>                                      |
-|                                         |- O1   |                                               |
-|                                         |**Tuotteet** <br>                                      |
-|                                         |- SC1                                                  |
+
+|                                       |                                       |
+|---------------------------------------|---------------------------------------|
+| <strong>Työkäytännön nimi</strong><br> | <strong>Työtilaustyypit</strong><br> |
+|         Ei pantu pois 01     `          |     - Valmiiden tuotteiden poispano<br>      |
+|                                       |    <strong>Sijaintipaikat</strong><br>     |
+|                                       |                 - O1                  |
+|                                       |    <strong>Tuotteet</strong> <br>     |
+|                                       |                 - SC1                 |
 
 Seuraavissa menettelyissä saadaan vaiheittaiset ohjeet varastotyökäytännön määrittämiseksi tässä skenaariossa. Esimerkkiasetuksissa kuvataan myös, miten tuotantotilaus raportoidaan valmiiksi tiettyyn sijaintiin, jossa ei ole varastorekisterinumero-ohjausta.
 
@@ -214,7 +214,7 @@ STEPS (25)
 <tr>
 <td></td>
 <td>13.</td>
-<td>Valitse Ilmoita valmiiksi.</td>
+<td>Valitse Ilmoita automaattisesti valmiiksi.</td>
 </tr>
 <tr>
 <td></td>

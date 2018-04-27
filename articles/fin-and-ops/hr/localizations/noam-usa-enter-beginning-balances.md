@@ -18,29 +18,29 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 27c03f7bd61ee7d4cb1d01f04af2f1821e9988e1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="enter-payroll-beginning-balances"></a>Palkanlaskennan alkusaldojen antaminen
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään vaiheet, joilla ansiokoodien, vähennysten, etujen ja verojen alkusaldot annetaan. Kumppanit arvostavat näitä tietoja, sillä niiden avulla he voivat siirtää tiedot toisesta järjestelmästä uuteen käyttöönotettuun palkanlaskentaan. Palkanlaskennan alkusaldojen antamista varten tarkistetaan seuraavat tiedot:
 
 > * Työntekijätietueet on viety järjestelmään ja ne ovat käytettävissä.
 > * Seuraavat tiedot on määritetty työntekijöille:
-
+> 
 > > * Maksujaksot ja maksukaudet
 > > * Ansiokoodit
 > > * Verot
 > > * Edut ja vähennykset
-
+> 
 > * Yrityksen on pitänyt valita päivämäärä, johon palkanlaskennat alkusaldot voidaan määrittää.
-
+> 
 > * Vanhasta järjestelmästä kerättiin tiedot kaikista ansioista, eduista ja vähennyksistä, edun osuuksista, työntekijän verotuksesta sekä työnantajan verotuksesta ja vuoden alusta kertyneistä summista.
 
 Harkitse, kuinka yksityiskohtaisia tietoja tarvitset, kun aloitat alkusaldojen antamisen suunnittelun. Useimmat yritykset ilmoittavat yhden, konsolidoidun vuoden alusta kertyneen summan. Jos tietojen on kuitenkin oltava yksityiskohtaisempia, saldot voidaan ilmoittaa neljännesvuosittain. Tarvittavan tarkkuustason päättäminen määrittää, kuinka monta manuaalista maksuilmoitusta on luotava kullekin työntekijälle. Jos kyse on summasta vuoden alusta, kullekin työntekijälle tarvitaan vain yksi manuaalinen ilmoitus. Voit tehdä ilmoituksen käyttämällä edellisen järjestelmän viimeisen maksuilmoituksen vuoden alusta kertynyttä summaa uuteen palkanlaskentajärjestelmään ilmoitettavana summana.
@@ -128,22 +128,22 @@ Kun olet luonut alkusaldot sisältävät maksuilmoitukset, sinun on tarkistettav
 
 4. Avaa **Edun vähennykset** -välilehti ja anna seuraavat arvot:
 
-| Kenttä                           | Arvo            |
-|---------------------------------|------------------|
-| Etu                         | Vähennyssumma |
-| Lisäeläkemaksut (Yhdysvalloissa 401K) | Liity              | 3000.00          |
-| Hammashuolto | SubSp                  | 495,00           |
-| Huolettavien kulut | Liity | 2500.00          |
-| Näkö | SupSp                  | 500,00           |
+|       Kenttä       |      Arvo       |
+|-------------------|------------------|
+|      Etu      | Vähennyssumma |
+|       Lisäeläkemaksut (Yhdysvalloissa 401K)        |   Liity    |
+|      Hammashuolto       |      SubSp       |
+| Huolettavien kulut |   Liity    |
+|      Näkö       |      SupSp       |
 
 5. Anna **Edun osuudet** -välilehdessä seuraavat arvot:
 
-| Kenttä              | Arvo               |
-|--------------------|---------------------|
-| Etu            | Osuussumma |
-| Lisäeläkemaksut (Yhdysvalloissa 401K) | Liity | 3000,00             |
-| Hammashuolto | SubSp     | 495,00              |
-| Näkö | SubSp     | 500,00              |
+|  Kenttä  |        Arvo        |
+|---------|---------------------|
+| Etu | Osuussumma |
+|  Lisäeläkemaksut (Yhdysvalloissa 401K)   |     Liity     |
+| Hammashuolto  |        SubSp        |
+| Näkö  |        SubSp        |
 
 6. Anna **Verovähennykset** -välilehdessä seuraavat arvot:
 
@@ -156,8 +156,8 @@ Kun olet luonut alkusaldot sisältävät maksuilmoitukset, sinun on tarkistettav
 7. Anna **Vero-osuudet** -välilehdessä seuraavat arvot:
 
 8. Valitse **Laske**.
-> [!IMPORTANT] 
-> Tarkista, että työntekijän maksuilmoituksen loppusumma vastaa vanhan järjestelmän vuoden alusta kertynyttä summaa. Seuraavan vaiheen viimeistelyn voit jättää odottamaan, kunnes yleiset tarkistukset voi tehdä koostetusti kaikille palkkailmoituksille. Kun kaikki on maksuilmoitukset on tarkistettu voit viimeistellä ne.
+   > [!IMPORTANT] 
+   > Tarkista, että työntekijän maksuilmoituksen loppusumma vastaa vanhan järjestelmän vuoden alusta kertynyttä summaa. Seuraavan vaiheen viimeistelyn voit jättää odottamaan, kunnes yleiset tarkistukset voi tehdä koostetusti kaikille palkkailmoituksille. Kun kaikki on maksuilmoitukset on tarkistettu voit viimeistellä ne.
 
 Samaa prosessi voidaan toistaa tarvittaessa erikseen kullekin edellisen vuoden vuosineljänneksille. Se on tarpeellista vain, jos asiakas haluat nähdä tiedot neljännesvuosittain ilman, että tiedot olisi tarkistettava vanhasta järjestelmästä.
 

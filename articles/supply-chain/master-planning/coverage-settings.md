@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bd85f89917659ac9c94590bace765b2123d6e556
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="coverage-settings"></a>Kattavuusasetukset
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pääajoituksessa käytetään kattavuusasetuksia nimiketarpeiden laskemisessa. 
 
@@ -46,7 +45,7 @@ Voit määrittää kattavuusasetukset useilla eri tavoilla:
 
 <!-- -->
 
--   Määritä dimensioryhmän kattavuusasetukset. Valitse **Tuotetietojen hallinta &gt; Yleinen &gt; Vapautetut tuotteet**. Napsauta **Vapautetun tuotteen tiedot** -sivulla **Yleiset**-välilehden **Hallinta**-ryhmässä **Varastodimensioryhmä**-linkkiä. Valitse **Varastodimensioryhmä** -sivulta **Kattavuussuunnitelma dimension mukaan** -kenttä, jotta voit luoda varastodimensioryhmän dimensiolle kattavuusasetukset. **Kattavuussuunnitelma dimension mukaan** -kentän on oltava valittuna kaikissa tuotedimensioissa, kuten konfiguraatiossa, värissä, koossa ja tyylissä.
+- Määritä dimensioryhmän kattavuusasetukset. Valitse <strong>Tuotetietojen hallinta &gt; Yleinen &gt; Vapautetut tuotteet</strong>. Napsauta <strong>Vapautetun tuotteen tiedot **-sivulla **Yleiset</strong>-välilehden <strong>Hallinta</strong>-ryhmässä <strong>Varastodimensioryhmä</strong>-linkkiä. Valitse <strong>Varastodimensioryhmä</strong> -sivulta <strong>Kattavuussuunnitelma dimension mukaan</strong> -kenttä, jotta voit luoda varastodimensioryhmän dimensiolle kattavuusasetukset. <strong>Kattavuussuunnitelma dimension mukaan</strong> -kentän on oltava valittuna kaikissa tuotedimensioissa, kuten konfiguraatiossa, värissä, koossa ja tyylissä.
 
 
 

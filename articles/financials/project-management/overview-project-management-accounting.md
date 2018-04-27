@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: ProjTable
+ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="project-management-and-accounting"></a>Projektinhallinta ja kirjanpito
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla palvelu tarjoamiseksi, tuotteen tuottamiseksi tai tuloksen saavuttamiseksi.  
 
@@ -83,6 +82,7 @@ Jos organisaatiossasi on toiminnallinen näkökulma ja keskitytään tuottoihin 
 Voit luoda kuusi eri projektityyppiä Microsoft Finance and Operationsissa. Kullekin projektityypille on määritetty eri kustannukset ja tuotot tunnistamista varten. Valitsemasi projektityyppi määräytyy projektin tarkoituksen mukaan. Seuraavassa taulukossa kuvataan jokaisen projektityypin tavallinen käyttötarkoitus.
 
                                                                                                                                                                          |
+
 | Projektityyppi      | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Aika ja materiaali | Aika- ja materiaaliprojekteissa asiakasta laskutetaan kaikista projektin toteutuneista kustannuksista. Näihin kuluihin sisältyvät tuntien kustannukset, kulut, nimikkeet ja maksut.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -127,10 +127,10 @@ Projekteihin liittyvä tuotantotilaus voidaan yhdistää myyntitilaukseen tai ni
 
 Perustuen näiden tekijöiden yhdistelmiin, käytä yhtä seuraavista tavoista:
 
--   **Valmis nimike / linkki tilaukseen** – yhdistää projektin myyntitilaukseen tai nimiketarpeeseen. Tämän menetelmän avulla voit kirjata toteutuneet projektikustannukset, jotka on jo kirjattu, kun myyntitilaus laskutetaan tai kun nimiketarve päivitetään pakkausluetteloon. Kustannukset kirjataan valmiina nimikkeenä.
--   **Valmis nimike / ei linkkiä tilaukseen** – toteutuneita kustannuksia ei voida kirjata ennen kuin nimikkeen tuotannon elinkaaren tila on **Päättynyt**. Valmiin nimikkeen kustannukset kirjataan yhtenä tapahtumana.
--   **Käytetty nimike / linkki tilaukseen** – yhdistää projektin nimiketarpeeseen. Tämän menetelmän avulla voit tarkastella toteutuneita projektikustannuksia, kun tuotannon tila on **Aloitettu** tai kun tuotanto raportoidaan valmiiksi. Kustannukset kirjataan useina tuotannossa käytettyjen raaka-aineiden ja tuntien projektinimiketapahtumina. Kun nimiketarve päivitetään pakkausluetteloon, projektikustannuksia ei kirjata. Voit myös määrittää, millä tuoterakennehierarkian tasolla tuotannon projekteja seurataan.
--   ****Käytetty nimike / ei linkkiä tilaukseen**** – yhdistää projektin nimiketarpeeseen. Tämän menetelmän avulla voit tarkastella toteutuneita projektikustannuksia, kun tuotannon tila on **Aloitettu** tai kun tuotanto raportoidaan valmiiksi. Kustannukset kirjataan useina tuotannossa käytettyjen raaka-aineiden ja tuntien projektinimiketapahtumina. Voit myös määrittää, millä tuoterakennehierarkian tasolla tuotannon projekteja seurataan.
+- **Valmis nimike / linkki tilaukseen** – yhdistää projektin myyntitilaukseen tai nimiketarpeeseen. Tämän menetelmän avulla voit kirjata toteutuneet projektikustannukset, jotka on jo kirjattu, kun myyntitilaus laskutetaan tai kun nimiketarve päivitetään pakkausluetteloon. Kustannukset kirjataan valmiina nimikkeenä.
+- **Valmis nimike / ei linkkiä tilaukseen** – toteutuneita kustannuksia ei voida kirjata ennen kuin nimikkeen tuotannon elinkaaren tila on **Päättynyt**. Valmiin nimikkeen kustannukset kirjataan yhtenä tapahtumana.
+- **Käytetty nimike / linkki tilaukseen** – yhdistää projektin nimiketarpeeseen. Tämän menetelmän avulla voit tarkastella toteutuneita projektikustannuksia, kun tuotannon tila on **Aloitettu** tai kun tuotanto raportoidaan valmiiksi. Kustannukset kirjataan useina tuotannossa käytettyjen raaka-aineiden ja tuntien projektinimiketapahtumina. Kun nimiketarve päivitetään pakkausluetteloon, projektikustannuksia ei kirjata. Voit myös määrittää, millä tuoterakennehierarkian tasolla tuotannon projekteja seurataan.
+- *<strong><em>Käytetty nimike / ei linkkiä tilaukseen</em></strong>* – yhdistää projektin nimiketarpeeseen. Tämän menetelmän avulla voit tarkastella toteutuneita projektikustannuksia, kun tuotannon tila on <strong>Aloitettu</strong> tai kun tuotanto raportoidaan valmiiksi. Kustannukset kirjataan useina tuotannossa käytettyjen raaka-aineiden ja tuntien projektinimiketapahtumina. Voit myös määrittää, millä tuoterakennehierarkian tasolla tuotannon projekteja seurataan.
 
 ### <a name="procure-products-and-services"></a>Hanki tuotteita ja palveluja
 
@@ -239,9 +239,8 @@ Seuraavassa taulukossa kuvataan laskentamenetelmät projektin jäljellä olevill
 <li>Vertaa ennustetapahtumia todellisiin tapahtumiin.</li>
 <li>Ylläpidä, pienennä tai suurenna näitä arvioita seuraavalle kaudelle.</li>
 </ol>
-Finance and Operations ei vähennä ennustettuja arvioita automaattisesti. Siksi on suositeltavaa säilyttää alkuperäinen ennustemalli kiinteähintaisessa projektissa, jotta sitä voi käyttää vertailussa, kun projekti on valmis. 
-> [!NOTE] Kun tätä menetelmää käytetään, tulee käyttää vähintään kahta ennustemallia. Alkuperäinen ennuste tulee sisältää yhteen malliin. Toista mallia varten sinun on kopioitava ennustetapahtumat toisesta mallista. Tämä kenttä on voimassa oleva vain kiinteähintaisissa projekteissa ja investointiprojekteissa.</td>
-> </tr>
+Finance and Operations ei vähennä ennustettuja arvioita automaattisesti. Siksi on suositeltavaa säilyttää alkuperäinen ennustemalli kiinteähintaisessa projektissa, jotta sitä voi käyttää vertailussa, kun projekti on valmis. &gt; [!NOTE] &gt; Kun tätä menetelmää käytetään, on käytettävä vähintään kahta ennustemallia. Alkuperäinen ennuste tulee sisältää yhteen malliin. Toista mallia varten sinun on kopioitava ennustetapahtumat toisesta mallista. Tämä kenttä on voimassa oleva vain kiinteähintaisissa projekteissa ja investointiprojekteissa.</td>
+</tr>
 <tr class="odd">
 <td>Jäljellä oleva budjetti</td>
 <td>Tässä menetelmässä käytetään jäljellä olevaa budjettimallia laskemaan projektin jäljellä olevat kustannukset. Tätä menetelmää käytettäessä toteutuneiden kustannusten ja jäljellä olevan budjettimallin ennustetut summat lasketaan yhteen. Tuloksena saadaan todelliset kustannukset. Ennen kuin käytät tätä tapaa, jäljellä oleva budjettimalli on määritettävä vähentämään tapahtumia, jotka perustuvat toteutuneisiin järjentelmään kirjattuihin tapahtumiin. <strong>Ennustemallit</strong>-sivulla, varmista että sivut on merkitty <strong>ennusteen automaattinen vähennys</strong> -ryhmään. Yleensä, jäljellä oleva budjetti kopioidaan alkuperäisestä budjetista. Kun tapahtumat syötetään, jäljellä olevan budjetin tapahtumat vähennetään. Projektin edetessä, jos toteat, että jäljellä olevaa budjettia on muutettava, ennustetapahtumat veloitetaan jäljellä olevasta budjetista. <strong>Huomautus:</strong> Tätä menetelmää voi käyttää vain, jos arvioon on liitetty ennustemalli.</td>

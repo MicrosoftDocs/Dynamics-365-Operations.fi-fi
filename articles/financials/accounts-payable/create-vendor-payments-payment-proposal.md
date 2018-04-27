@@ -3,7 +3,7 @@ title: Toimittajamaksujen luominen maksuehdotuksen avulla
 description: "Tässä aiheessa on yleiskatsaus maksuehdotusvaihtoehdoista. Artikkeli sisältää myös esimerkkejä maksuehdotusten toiminnasta. Maksuehdotuksia käytetään usein toimittajan maksujen luomiseen, koska kyselyn avulla on nopeaa valita toimittajan laskuja maksuun esimerkiksi eräpäivän ja käteisalennuksen mukaan."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 07/17/2017
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 454a370e73e6e0d33f0aeb1ca2b3f9d6d9f8cb98
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1199329f7d669a291249e22e393842673a8907c3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Toimittajamaksujen luominen maksuehdotuksen avulla
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tässä aiheessa on yleiskatsaus maksuehdotusvaihtoehdoista. Artikkeli sisältää myös esimerkkejä maksuehdotusten toiminnasta. Maksuehdotuksia käytetään usein toimittajan maksujen luomiseen, koska kyselyn avulla on nopeaa valita toimittajan laskuja maksuun esimerkiksi eräpäivän ja käteisalennuksen mukaan. 
 
@@ -40,25 +39,26 @@ Maksuehdotuskysely sisältää useita välilehtiä, joista jokaisella on eri ase
 ## <a name="parameters"></a>Parametrit
 -   **Valitse laskut**: – Laskut, jotka sisältyvät **Aloituspäivämäärä**- ja **Lopetuspäivämäärä**-kentillä määritettyyn päivämääräväliin ovat valittavissa eräpäivän, käteisalennuksen päivämäärän tai molempien perusteella. Jos käytät käteisalennuksen päivämäärää, järjestelmä etsii ensin laskut, joiden käteisalennuksen päivämäärä on aloitus- ja lopetuspäivämäärien välillä. Järjestelmä määrittää, onko lasku oikeutettu käteisalennukseen käyttämällä istunnon päivämäärää varmistaakseen, että käteisalennuksen päivämäärä ei ole jo mennyt.
 -   **Aloituspäivämäärä** ja **Lopetuspäivämäärä** – Maksut, joiden eräpäivä tai käteisalennuksen päivämäärä ovat määritetyssä päivämäärävälissä valitaan maksuun.
--   **Maksupäivä** – Tätä käytetään vain, kun maksutavan **Kausi**-kentässä on valittu **Yhteensä**. Jos päivämäärä on määritetty, kaikki maksut luodaan tänä päivänä. **Aikaisin maksupäivä** -kenttä ohitetaan.
 -   **Aikaisin maksupäivä** – Kirjoita aikaisin maksupäivä. Esimerkiksi, **Aloituspäivämäärä**- ja **Lopetuspäivämäärä**-kentillä määritetään päivämääräväliksi 1-10. syyskuuta, aikaisimmaksi maksupäiväksi 5. syyskuuta. Tällöin kaikki laskut, joiden eräpäivä on välillä 1-5. syyskuuta maksetaan 5. syyskuuta. Kaikki laskut, joiden eräpäivä on välillä 5-10. syyskuuta maksetaan kunkin laskun eräpäivänä.
 -   **Summaraja** – Syötä suurin kokonaissumma kaikille maksuille.
 -   **Luo maksut ilman laskun esikatselua** – Jos tämän asetuksen arvoksi valitaan **Kyllä**, maksut luodaan heti **Toimittajan maksut** -sivulla. **Maksuehdotus**-sivu ohitetaan. Maksujen luonti on siis nopeampaa. Maksuja voi edelleen muokata **Toimittajan maksut** -sivulla. Vaihtoehtoisesti voit palata **Maksuehdotus**-sivulle **Muokkaa valitun maksun laskuja** -painikkeella.
 
 ## <a name="advanced-options"></a>Lisäasetukset
--   **Tarkista toimittajan saldo** – Jos tämä asetus on **Kyllä**, järjestelmä varmistaa, että toimittajalla ei ole saatavien saldoa ennen, kuin yksikään lasku maksetaan. Jos toimittajalla on saatavien saldo, maksua ei luoda. Toimittajalla voi esimerkiksi olla hyvityslaskuja tai maksuja, jotka on kirjattu, mutta ei vielä selvitetty. Näissä tapauksissa toimittajalle ei tule maksaa. Hyvityslaskut tai maksut tulee sen sijaan selvittää jäljellä oleviin laskuihin.
--   **Poista negatiiviset maksut**: Tämä asetus on erilainen sen mukaan, suoritetaanko maksut yksittäisille laskuille vai niiden laskujen summalle, jotka vastaavat maksuehtoja. Tämä toiminta määritellään maksutavassa.
--   **Maksu jokaiselle laskulle** – Jos **Poista negatiiviset maksut** asetukseksi on määritetty **Kyllä**, ja toimittajalla on selvittämätön lasku ja maksu, ainoastaan lasku valitaan maksuun. Aiempaa maksua ei selvitetä laskua vastaan. Jos **Poista negatiiviset maksut** asetukseksi on määritetty **Ei**, ja sekä lasku ja maksu ovat selvittämättä, molemmat valitaan maksuun. Suoritukselle luodaan maksu, ja maksulle luodaan palautus (negatiivinen suoritus).
--   **Maksu laskujen summalle** – Jos **Poista negatiiviset maksut** -asetukseksi on määritetty **Kyllä** ja toimittajalla on selvittämätön lasku ja maksu, molemmat valitaan maksuun ja summat lisätään yhteen maksun kokonaissummaan. Ainoa poikkeus on, jos kokonaissumma johtaisi palautukseen. Tässä tapauksessa laskua eikä maksua valita. Jos **Poista negatiiviset maksut** -asetukseksi on määritetty **Ei** ja toimittajalla on selvittämätön lasku ja maksu, molemmat valitaan maksuun ja summat lisätään yhteen maksun kokonaissummaan.
--   **Tulosta vain raportti** – Aseta tämän asetuksen arvoksi **Kyllä** voidaksesi tarkastella maksuehdotuksen tuloksia raportissa luomatta maksuja.
--   **Sisällytä toimittajan laskut muilta oikeushenkilöiltä** – Jos organisaatiossasi käytetään keskitettyä maksuprosessia ja maksuehdotuksen hakuehtojen tulee sisältää laskuja muista yrityksistä, aseta tämän asetuksen arvoksi **Kyllä**.
--   **Ehdota erillistä toimittajan maksua oikeushenkilökohtaisesti** – Jos tämä asetus on **Kyllä**, kunkin yrityksen kullekin toimittajalle luodaan erilliset laskut. Maksulla oleva toimittaja on kunkin yrityksen vastaanottaman laskun toimittaja. Jos asetuksen arvo on **Ei** ja samalla toimittajalla on laskuja maksettavanaan useassa yrityksessä, yksi maksu luodaan kaikkien valittujen yritysten valittujen laskujen yhteenlasketulle summalle. Maksun toimittaja on nykyisen yrityksen toimittaja. Jos nykyisessä yrityksessä ei ole toimittajatiliä, käytetään ensimmäisen maksettavan laskun toimittajatiliä.
--   **Maksun valuutta** – Tässä kentässä määritetään valuutta, jolla kaikki maksut luodaan. Jos valuuttaa ei ole määritetty, jokainen lasku maksetaan laskun valuutassa.
--   **Maksuviikonpäivä** – Anna viikonpäivä, jona maksu tulee suorittaa. Tätä kenttää käytetään vain, jos maksutapa on määritetty summaamaan maksettavat laskut tiettynä viikonpäivänä.
--   **Vastatilin tyyppi** ja **Vastatili** – Määritä näihin kenttiin tietty tilin tyyppi (esimerkiksi **kirjanpito** tai **pankki**) ja vastatili (esimerkiksi tietty pankkitili). Laskun maksutapa määrittää vastatilin oletustyypin sekä vastatilin, mutta voit ohittaa oletusarvot näiden kenttien avulla.
--   **Lisäsuodattimet** – **Sisällytettävät tietueet** -pikavälilehdellä voit määrittää lisää reunaehtoja. Jos haluat maksaa vain tietyn toimittajajoukon laskut, voit määrittää suodattimella toimittajien alueen. Tätä toimintoa käytetään usein myös valitsemaan laskut, joilla on tietty maksutapa. Voit esimerkiksi määrittää suodattimen, jossa **Maksutapa** = **Sekki**, ja vain laskut, joilla on kyseinen maksutapa valitaan maksuun, jos ne täyttävät myös muut kyselyssä asetetut ehdot.
+- **Tarkista toimittajan saldo** – Jos tämä asetus on **Kyllä**, järjestelmä varmistaa, että toimittajalla ei ole saatavien saldoa ennen, kuin yksikään lasku maksetaan. Jos toimittajalla on saatavien saldo, maksua ei luoda. Toimittajalla voi esimerkiksi olla hyvityslaskuja tai maksuja, jotka on kirjattu, mutta ei vielä selvitetty. Näissä tapauksissa toimittajalle ei tule maksaa. Hyvityslaskut tai maksut tulee sen sijaan selvittää jäljellä oleviin laskuihin.
+- **Poista negatiiviset maksut**: Tämä asetus on erilainen sen mukaan, suoritetaanko maksut yksittäisille laskuille vai niiden laskujen summalle, jotka vastaavat maksuehtoja. Tämä toiminta määritellään maksutavassa.
+- **Maksu jokaiselle laskulle** – Jos **Poista negatiiviset maksut** asetukseksi on määritetty **Kyllä**, ja toimittajalla on selvittämätön lasku ja maksu, ainoastaan lasku valitaan maksuun. Aiempaa maksua ei selvitetä laskua vastaan. Jos **Poista negatiiviset maksut** asetukseksi on määritetty **Ei**, ja sekä lasku ja maksu ovat selvittämättä, molemmat valitaan maksuun. Suoritukselle luodaan maksu, ja maksulle luodaan palautus (negatiivinen suoritus).
+- <strong>Maksu laskujen summalle</strong> – Jos <strong>Poista negatiiviset maksut</strong> -asetukseksi on määritetty <strong>Kyllä</strong> ja toimittajalla on selvittämätön lasku ja maksu, molemmat valitaan maksuun ja summat lisätään yhteen maksun kokonaissummaan. Ainoa poikkeus on, jos kokonaissumma johtaisi palautukseen. Tässä tapauksessa laskua eikä maksua valita. Jos <strong>Poista negatiiviset maksut **-asetukseksi on määritetty **Ei</strong> ja toimittajalla on selvittämätön lasku ja maksu, molemmat valitaan maksuun ja summat lisätään yhteen maksun kokonaissummaan.
+- **Tulosta vain raportti** – Aseta tämän asetuksen arvoksi **Kyllä** voidaksesi tarkastella maksuehdotuksen tuloksia raportissa luomatta maksuja.
+- **Sisällytä toimittajan laskut muilta oikeushenkilöiltä** – Jos organisaatiossasi käytetään keskitettyä maksuprosessia ja maksuehdotuksen hakuehtojen tulee sisältää laskuja muista yrityksistä, aseta tämän asetuksen arvoksi **Kyllä**.
+- **Ehdota erillistä toimittajan maksua oikeushenkilökohtaisesti** – Jos tämä asetus on **Kyllä**, kunkin yrityksen kullekin toimittajalle luodaan erilliset laskut. Maksulla oleva toimittaja on kunkin yrityksen vastaanottaman laskun toimittaja. Jos asetuksen arvo on **Ei** ja samalla toimittajalla on laskuja maksettavanaan useassa yrityksessä, yksi maksu luodaan kaikkien valittujen yritysten valittujen laskujen yhteenlasketulle summalle. Maksun toimittaja on nykyisen yrityksen toimittaja. Jos nykyisessä yrityksessä ei ole toimittajatiliä, käytetään ensimmäisen maksettavan laskun toimittajatiliä.
+- **Maksun valuutta** – Tässä kentässä määritetään valuutta, jolla kaikki maksut luodaan. Jos valuuttaa ei ole määritetty, jokainen lasku maksetaan laskun valuutassa.
+- **Maksuviikonpäivä** – Anna viikonpäivä, jona maksu tulee suorittaa. Tätä kenttää käytetään vain, jos maksutapa on määritetty summaamaan maksettavat laskut tiettynä viikonpäivänä.
+- **Vastatilin tyyppi** ja **Vastatili** – Määritä näihin kenttiin tietty tilin tyyppi (esimerkiksi **kirjanpito** tai **pankki**) ja vastatili (esimerkiksi tietty pankkitili). Laskun maksutapa määrittää vastatilin oletustyypin sekä vastatilin, mutta voit ohittaa oletusarvot näiden kenttien avulla.
+- **Maksuyhteenvedon päivämäärä** – Tätä käytetään vain, kun maksutavan **Kausi**-kentässä on valittu **Yhteensä**. Jos päivämäärä on määritetty, kaikki maksut luodaan tänä päivänä. **Aikaisin maksupäivä** -kenttä ohitetaan.
+- **Lisäsuodattimet** – **Sisällytettävät tietueet** -pikavälilehdellä voit määrittää lisää reunaehtoja. Jos haluat maksaa vain tietyn toimittajajoukon laskut, voit määrittää suodattimella toimittajien alueen. Tätä toimintoa käytetään usein myös valitsemaan laskut, joilla on tietty maksutapa. Voit esimerkiksi määrittää suodattimen, jossa **Maksutapa** = **Sekki**, ja vain laskut, joilla on kyseinen maksutapa valitaan maksuun, jos ne täyttävät myös muut kyselyssä asetetut ehdot.
 
 ## <a name="scenarios"></a>Skenaariot
+
 | Toimittaja | Lasku | Laskun päivämäärä | Laskun summa | Eräpäivä | Käteisalennuksen päivämäärä | Käteisalennussumma |
 |--------|---------|--------------|----------------|----------|--------------------|----------------------|
 | 3050   | 1001    | 15. kesäkuuta      | 500,00         | 15. heinäkuuta  | 29. kesäkuuta            | 10,00                |

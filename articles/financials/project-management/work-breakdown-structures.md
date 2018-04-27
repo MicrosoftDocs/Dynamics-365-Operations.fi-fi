@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc2fa16a44b6421d56e9cb662cfaa26da5b1c5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="work-breakdown-structures"></a>Työrakenteet
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Työrakenne (WBS) on kuvaus projektissa tehtävästä työstä. Se on tehtävähierarkia, joka edustaa projektin tiimin käsitystä työn kokoonpanosta ja kunkin osan tai tehtävän koosta, kustannuksista ja kestosta. Työrakenteella on kolme päätavoitetta.
 
@@ -115,7 +115,7 @@ Aikatauluarvio on yleensä työrakenteen luomisen toinen vaihe. Parhaan käytän
 
 Projektin ajoituksen alkamispäivämäärä asetetaan automaattisesti sellaisen lehtisolmutehtävän alkamispäivämääräksi, jolla ei ole edeltäjiä. Lehtisolmutehtävän kesto lasketaan aina sen alkamis- ja päättymispäivämäärien välisten työpäivien määränä. 
 
-****Ajoitussäännöt**** Kun automaattinen ajoituksen aputoiminto on käytössä, lehtisolmutehtävien ajoituksessa käytetään seuraavia sääntöjä:
+*<strong><em>Ajoitussäännöt</em></strong>* Kun automaattinen ajoituksen aputoiminto on käytössä, lehtisolmutehtävien ajoituksessa käytetään seuraavia sääntöjä:
 
 -   Tehtävän alkamis- ja päättymispäivämäärän on oltava työpäiviä projektin ajoituskalenterin mukaan.
 -   Edeltäjiä omaavan tehtävän alkamispäivämääräksi määritetään automaattisesti sen edeltäjätehtävien viimeinen päivämäärä.

@@ -19,19 +19,20 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 84e00ef62a995d37878de6b2786dbc2ee2277070
-ms.openlocfilehash: 8a1ec5a3b19d1022232527f4960617bd985bc2b3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7d00df6263530ba9fff4c246cb3593cd607f6719
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="batch-balancing"></a>Erän tasaus
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
+Tässä ohjeaiheessa käsitellään erän tasausprosessin tukea. 
 
-Tässä ohjeaiheessa käsitellään erän tasausprosessin tukea.
+Katso [video, joka käsittelee erän tasausta Microsoft Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
 Erän tasausprosessissa tuotantoerässä käytettyjen ainesosien määrä lasketaan valittujen tuote-erien vaikuttavien ainesosien pitoisuuden perusteella.
 
@@ -179,7 +180,7 @@ Kun ainesosien määrät on laskettu, voit vahvistaa ja vapauttaa reseptin. Vapa
 
 -   Jos varastonhallintaprosessit on otettu käyttöön tuotteessa, reseptirivi vapautetaan varastoon varastonhallintaprosessien periaatteiden mukaan. Reseptirivi vapautetaan täsmäytettyä määriä vastaavina määrinä. Se vapautetaan erityiserille, jotka on valittu vaikuttavilla ainesosille.
 
->   [!NOTE]
+> [!NOTE]
 >   Reseptirivit voidaan vapauttaa varastoon vain erän tasausprosessin osana. Vaikka tuotantomateriaalien vapauttamiseen varastoon on muita vaihtoehtoja, niitä ei voi käyttää reseptiriveillä.
 
 -   Jos varastonhallintaprosesseja ei ole otettu käyttöön tuotteessa, tuotteelle luodaan tuotannon keräysluettelo, kun vahvistat ja vapautat reseptin.
