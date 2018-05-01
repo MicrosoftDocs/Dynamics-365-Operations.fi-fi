@@ -3,12 +3,12 @@ title: BOM-laskelmat
 description: "Kustannusten koontilaskelmia ja myyntihintalaskelmia kutsutaan tuoterakennelaskelmiksi, koska ne käynnistetään Laskelmat-sivulta. Tässä aiheessa on tietoja BOM-laskelmista."
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, SalesQuotationTable, SalesTable, SMAServiceOrderTable
+ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
