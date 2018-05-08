@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-device"></a>Luo ja liitä laite
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten uusi laite luodaan ja liitetään kassakoneeseen. Oletetaan, että kassakone on jo luotu.  Tehtävässä käytetään esittelytietojen USRT-yritystä. Tämä tehtävä on tarkoitettu järjestelmänvalvojan, IT-asiantuntijan, vähittäismyynnin IT:n ja myymäläpäällikön roolille.
 

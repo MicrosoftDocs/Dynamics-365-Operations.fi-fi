@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="registration-ids"></a>Rekisteröintitunnukset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja rekisteröintitunnuksien määrittämisestä ja käyttämisestä.
 

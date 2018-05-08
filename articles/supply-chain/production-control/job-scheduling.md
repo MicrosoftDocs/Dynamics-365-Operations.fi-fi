@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="job-scheduling"></a>Töiden ajoitus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja töiden ajoituksessa, joka on tarkempi kuin työvaiheiden ajoitus. Töiden ajoitusta voi käyttää on valmistusympäristön hallintaan sekä yksittäisten töiden (tai työtilauksien) ajoittamiseen.
 

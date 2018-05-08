@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-subscriptions"></a>Huollon ylläpitosopimukset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ylläpitosopimukset perustuvat aika- ja materiaaliprojektiin. Voit luoda ylläpitosopimuksia projektista **Huollon ylläpitosopimukset** -sivulla tai käyttämällä huollon ylläpitosopimusryhmiä.
 

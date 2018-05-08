@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="material-substitution-in-manufacturing"></a>Materiaalien korvaaminen tuotannossa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa kuvataan, miten materiaaleja voi korvata tuotantoprosessin aikana. 
 

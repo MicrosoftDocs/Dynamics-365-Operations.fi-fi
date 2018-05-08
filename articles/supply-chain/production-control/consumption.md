@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="calculate-material-consumption"></a>Laske materiaalin kulutus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja eri asetuksista, jotka liittyvät materiaalikulutuksen laskemiseen. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Ostotilauksen luominen myyntitilauksesta
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä käsitellään, miten myyntitilaukseen perustuva ostotilaus luodaan. Ostotilauksen tuotteen määrät määritetään sitten täyttämään alkuperäisen ostotilauksen kysyntä. Myynnin kysynnän täyttäminen tällä tavoin on vaihtoehto kattavammalle ja optimoidulle jakelutarpeiden suunnittelumenetelmälle. Voit suorittaa tämän menettelyn esittely-yrityksen USMF kanssa tai käyttää omia tietojasi.
 

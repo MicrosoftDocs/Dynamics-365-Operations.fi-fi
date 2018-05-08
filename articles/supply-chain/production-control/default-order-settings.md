@@ -29,9 +29,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimensioiden ja tuotevarianttien oletustilausasetukset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Tilauksen Microsoft Dynamics 365 for Finance and Operations -sovelluksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai jossa niitä säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä. Tilauksen oletusasetuksia käytetään luotaessa ostotilauksia, myyntitilauksia, siirtotilauksia, varaston kirjauskansioita ja suunniteltujen tilausten luonnin pääsuunnittelussa. Tilauksen oletusasetukset voivat olla nimikekohtaisia, toimipaikkakohtaisia, tuotevarianttikohtaisia tai tuotedimensiokohtaisia.
 

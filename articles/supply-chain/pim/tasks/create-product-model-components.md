@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-product-model-components"></a>Luo tuotemallin komponentit
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Rajoituspohjaisissa tuotemääritysmalleissa komponentteja käytetään tuotemallirakenteen rakennusosina. Tuotemallia ei voi muodostaa, ennen kuin komponentit on luotu. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

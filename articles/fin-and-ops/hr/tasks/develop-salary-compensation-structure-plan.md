@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="develop-salarycompensation-structure-and-plans"></a>Palkka- ja kompensaatiorakenteen ja -suunnitelmien kehittäminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tehtävän ohjauksessa kerrotaan kiinteän kompensaatiosuunnitelman luontiprosessista ja siitä, miten työntekijöille annetaan mahdollisuus rekisteröityä suunnitelmaan oikeutussääntöjen avulla. Tämän tehtävän luomisessa käytetään esittely-tietojen yritystä USMF. Tehtävä on tarkoitettu etuuspäällikölle.
 

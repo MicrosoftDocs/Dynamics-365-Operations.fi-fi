@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="position-forecasting"></a>Toimien ennustus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Työntekijöihin liittyvät kulut usein muodostavat suuren osa organisaation kuluista. Toimien ennusteiden avulla voit luoda suunnitelmia näille kustannuksille ja sisällyttää ne budjettisuunnitteluun.
 

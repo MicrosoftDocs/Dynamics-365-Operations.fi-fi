@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="learning-power-bi-content"></a>Oppimisen Power BI -sisältö
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään Microsoft Power BI -sisällön **oppimista**.
 

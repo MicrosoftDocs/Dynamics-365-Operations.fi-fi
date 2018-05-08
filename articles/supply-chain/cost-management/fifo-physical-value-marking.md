@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO-merkintä ja fyysinen arvo
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 FIFO (First In, First Out) on varastomalli, jossa ensimmäiset vastaanotot otetaan varastosta ensin. Rahoituksellisesti päivitetyt varasto-otot täsmäytetään ensimmäisiä rahoituksellisesti päivitettyjä varastovastaanottoja vasten varastotapahtuman rahoituspäivämäärän perusteella. 
 

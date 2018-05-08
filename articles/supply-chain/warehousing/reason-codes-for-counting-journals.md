@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="reason-codes-for-inventory-counting"></a>Varastoinventoinnin syykoodit
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Syykoodien avulla voit analysoida inventointiprosessin tuloksia ja prosessin aikana mahdollisesti esiintyviä ristiriitoja. Voit määrittää inventoinnin syyn, kuten vioittuneen kuormalavan tai varasto-otantaan perustuvan varasto-oikaisun.
 

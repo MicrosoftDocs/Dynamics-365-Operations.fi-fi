@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-forecasts-and-budgets"></a>Projektiennusteet ja -budjetit
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations tarjoaa kaksi tapaa projektien hallintaa ja ohjausta varten: projektiennusteet ja projektibudjetit. 
 

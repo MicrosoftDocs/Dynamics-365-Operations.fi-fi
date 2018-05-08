@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="general-ledger-account-balances"></a>Kirjanpitotilin saldot
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa esitellään kirjanpitotilien saldojen kaksi erilaista tarkastelutapaa: Pääkirja-luettelosivu ja talousraportit. Artikkelissa kerrotaan myös, miten dimensioyhdistelmän saldot päivitetään.
 

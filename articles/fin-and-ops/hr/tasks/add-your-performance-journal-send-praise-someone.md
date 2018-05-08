@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Lisää merkintä suorituskyvyn kirjauskansioon ja lähetä kehuja
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Suoritustason kirjauskansiossa on tietoja siitä, miten olet saavuttanut tavoitteesi tai suoriutunut jakson aikana. Voit myös antaa palautetta kollegoillesi kirjauskansiosta. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="trace-an-item-or-raw-material"></a>Nimikkeen tai raaka-aineen jäljittäminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä käsitellään, miten nimikkeen seurannalla voidaan selvittää, miten nimikkeitä tai raaka-aineita on käytetty tai ollaan käyttämässä. Tämän menettelyn avulla voit tunnistaa nimikkeen sekä seurata sitä takaisin lähteeseen ja sitten tuotannon ja myynnin kautta lopulliseen tuotteeseen. Prosessilla voit selvittää esimerkiksi, mitä asiakkaita tai myyntitilauksia se koski. Menettely käyttää USP2-yrityksen demotietoja.
 

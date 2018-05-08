@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>Aktiivisten, ennakkolaskettujen ja toteutuneiden kustannusten vertaaminen tuotantotilaukseen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä kuvataan, miten tuotantotilauksen tuotannon suuren varianssin syitä tarkastellaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä menettely on tarkoitettu kustannusten vastuuhenkilölle.
 

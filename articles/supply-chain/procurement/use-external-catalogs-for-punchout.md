@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Käyttämällä ulkoisia luetteloita sähköiseen hankintaan siirryttäessä ei tarvitse ylläpitää toimittajien tuotetietoja omissa päätiedoissa. Sen sijaan toimittajan sivuston ostoskori muunnetaan varasto-ottoehdotusriveiksi, joissa on oikeat tuotetiedot. 
 

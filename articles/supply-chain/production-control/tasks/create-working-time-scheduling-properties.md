@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-working-time-scheduling-properties"></a>Luo työaikojen ajoitusominaisuudet
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Työajan ajoitusominaisuuksia käytetään työajan aikavälien luokittelussa ja niiden asetusten määrittämisessä, jotka käyttäjien on otettava huomioon. Tässä kuvataan, miten voit määrittää työajan ajoitusominaisuuden ja liittyvät ominaisuusarvot. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.
 

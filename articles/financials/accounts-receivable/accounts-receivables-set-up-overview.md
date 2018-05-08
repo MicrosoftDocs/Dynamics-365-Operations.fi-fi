@@ -28,7 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Myyntireskontran sekä luotonvalvonnan määrittäminen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Määritä myyntireskontra ja luotonvalvonta, kun haluat seurata laskuja ja asiakkailta saapuvia maksuja.
 

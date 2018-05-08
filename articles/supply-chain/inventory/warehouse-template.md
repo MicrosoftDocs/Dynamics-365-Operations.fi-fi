@@ -29,7 +29,7 @@ ms.lasthandoff: 02/06/2018
 
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Varaston määrittäminen varaston konfigurointimallin avulla
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa käsitellään varaston määrittämistä varaston konfigurointimallin avulla. Käytössäsi on useita valmiiksi määritettyjä konfigurointimalleja. Lisätietoja näiden mallien käyttämistä on kohdassa [Konfigurointitietomallit](../../dev-itpro/data-entities/configuration-data-templates.md).
 

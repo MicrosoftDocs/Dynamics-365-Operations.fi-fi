@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="my-team-mobile-workspace"></a>Oman ryhmän mobiilityötila
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja **oman ryhmän** mobiilityötilasta. Esimiehet voivat tarkastella tässä työtilassa suoria alaisiaan ja laajennettua henkilökuntaa. He voivat myös lähettää kehuja raportointiketjuunsa kuuluville henkilöille.
 

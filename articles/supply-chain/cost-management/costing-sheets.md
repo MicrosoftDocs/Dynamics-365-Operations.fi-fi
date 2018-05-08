@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-sheets"></a>Kustannuslaskentalomakkeet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kustannuslaskentalomakkeen määrittämiseen liittyy kaksi tavoitetta. Ensimmäinen tavoite on valmistettua tuotetta tai tuotantotilausta koskevien myytyjen tuotteiden kustannustietojen esitysmuodon määrittäminen. Tätä esitysmuotoa kutsutaan kustannuslaskentalomakkeeksi. Toinen tavoite on epäsuorien kustannusten laskemisen perustan määrittäminen. Kustannuslaskennan määritys perustuu kustannusryhmän toimintoon, jota käytetään tietojen esittämisessä ja epäsuorien kustannusten laskentakaavoissa. Tässä artikkelissa kuvataan kustannuslaskentalomakkeen määrityksen kaksi tavoitetta. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Laskujen täsmäytys ja konsernin sisäiset ostotilaukset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Konsernin sisäisen kauppatapahtuman ostavan yrityksen asetukset on voitu määritettää siten, että käytössä on ostoreskontran laskujen täsmäytys. Tässä tapauksessa sekä konsernin sisäisen välisen kaupan että ostoreskontran laskujen täsmäytyksen kirjausvaatimusten on täytyttävä, ennen kuin konsernin sisäiset ostolaskut voidaan kirjata.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-an-addition-to-a-fixed-asset"></a>Käyttöomaisuuden lisäyksen määrittäminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten aiemmin määritettyyn käyttöomaisuuserään lisätään lisäys. Käyttöomaisuuden lisäysten tarkoitus on seurata käyttöomaisuuserän nimikelisäyksiä, huoltoa tai parannuksia. Tämä kohta on tarkoitettu vain tiedoksi. Kaikki käyttöomaisuuden arvon tai käyttöiän muutokset on tehtävä erikseen.   
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 
 # <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>Microsoft Dynamics 365 for Finance and Operationsin esittely
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Saat seuraavien resurssien avulla lisätietoja tavoista, joilla voit käyttää Microsoft Dynamics 365 for Finance and Operationsia yrityksessäsi. Näissä resursseissa on käyttäjille, kehittäjille ja IT-ammattilaisille sopivaa sisältöä. 
 

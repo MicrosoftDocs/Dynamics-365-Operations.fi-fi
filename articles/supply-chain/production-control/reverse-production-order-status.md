@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-the-production-order-status"></a>Tuotantotilauksen tilan palauttaminen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa on kuvattu tuotantotilauksen tilan palauttamista. 
 

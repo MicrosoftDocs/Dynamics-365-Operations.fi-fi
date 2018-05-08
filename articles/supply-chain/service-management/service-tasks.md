@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-tasks"></a>Huoltotehtävät  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Huoltotehtävien avulla voit kuvata huoltotilauksen aikana suoritettavan tehtävän.
 Sekä teknikot että asiakkaat näkevät nämä tiedot.

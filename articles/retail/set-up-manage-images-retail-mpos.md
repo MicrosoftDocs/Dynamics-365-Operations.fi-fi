@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Kuvien määrittäminen ja hallinta Retail Modern POS -moduulissa
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä artikkelissa on selostettu vaiheita, joilla määritetään ja hallitaan Retail Modern POS -sovelluksessa (MPOS) näkyvien eri entiteettien kuvia.
 

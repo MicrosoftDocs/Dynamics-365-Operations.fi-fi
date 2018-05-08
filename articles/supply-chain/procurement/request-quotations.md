@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Tarjouspyynnöt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa on tarjouspyyntöjen yleiskuvaus. Organisaatiot tekevät tarjouspyyntöjä, kun ne haluavat ostaa tarvitsemiaan nimikkeitä tai palveluita ja haluavat saada kilpailukykyisiä tarjouksia useilta toimittajilta. Tarjouspyynnössä pyydät toimittajilta hinnat ja toimitusaikoja nimikkeiden määrille, jotka määrität.
 Voit myös pyytää toimittajia määrittämään, liittyykö tarjoukseen satunnaisia kuluja, esimerkiksi lähetyskustannuksia, tai tarjoaako toimittaja alennuksia suurista tilauksista tai toimittajalaskun maksamisesta aikaisin.

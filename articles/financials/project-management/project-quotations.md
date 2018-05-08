@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-quotations"></a>Projektitarjoukset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa esitellään projektitarjousten käsite. Projektitarjousten avulla asiakkaalle voidaan tehdä houkutteleva tarjous projektin vaiheen ensimmäisenä osana. Projektitarjous voi sisältää tarjoukseen sisältyvät nimikkeet ja palvelut, yhteystiedot, erityiskauppasopimukset ja alennukset sekä mahdolliset verot ja lisämaksut. 
 

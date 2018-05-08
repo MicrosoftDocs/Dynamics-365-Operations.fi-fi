@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Työajan seurannan rekisteröinti
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Aikarekisteröinnin työntekijät voivat määrittää erityyppisiä ajan rekisteröintejä, joita ovat esimerkiksi saapuminen, poistuminen, epäsuorien toimintojen rekisteröinti sekä poissaolorekisteröinti. Tässä ohjeaiheessa kuvataan rekisteröintejä, niiden laskemista, hyväksyntää sekä työnkulkua, jolla voidaan lisätä rakenne ja automaattinen hyväksyntä työaikaraporttien hyväksyntäprosessiin. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="project-management-and-accounting"></a>Projektinhallinta ja kirjanpito
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla palvelu tarjoamiseksi, tuotteen tuottamiseksi tai tuloksen saavuttamiseksi.  
 

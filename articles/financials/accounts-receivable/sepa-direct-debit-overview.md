@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sepa-direct-debit-overview"></a>SEPA-suoraveloitusyhteenveto
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Yhtenäinen euromaksualue (SEPA) on Euroopan komission määrittämä, ja se määrää, että kaikki sähköiset maksut ovat kotimaisia, riippumatta henkilön, yrityksen tai organisaation ja pankin maasta tai alueesta. Kansallisten ja kansainvälisten maksujen välillä ei ole eroja. SEPA koostuu 28 Euroopan unionin (EU) jäsenvaltiosta sekä Islannista, Liechtensteinista, Norjasta, Sveitsistä, Monacosta ja San Marinosta. SEPA auttaa muodostamaan yksittäisen markkinan maksutapahtumille Euroopan talousalueella (ETA). SEPA:n odotetaan lopulta vähentävän sitä maksumuotojen määrää, joiden kanssa pankkien, liikeyritysten ja yksityishenkilöiden on toimittava.   
 

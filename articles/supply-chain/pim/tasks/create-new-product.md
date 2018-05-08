@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-new-product"></a>Luo uusi tuote
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tehtävässä esitellään uuden jaetun tuotteen luominen. Tehtävän suorittaa yleensä tuotesuunnittelija. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.
 

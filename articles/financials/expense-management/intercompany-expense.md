@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-expenses"></a>Konsernin sisäiset kulut
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Organisaation yhdessä yrityksessä työskentelevä työntekijä voi tehdä työtä saman organisaation toiselle yritykselle. Tässä tilanteessa työntekijän kulut voidaan määrittää työn vastaanottaneelle yritykselle konsernin sisäisten kulujen toiminnolla. Yritystä, joka työllistää työntekijän, kutsutaan lainaajayritykseksi. Yritystä, jolle työntekijä aiheuttaa kuluja, kutsutaan lainaavaksi yritykseksi. 
 

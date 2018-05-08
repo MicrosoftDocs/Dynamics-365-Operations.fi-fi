@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="confirm-sales-orders"></a>Vahvista myyntitilaukset
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Seuraavassa menettelyssä selvitetään, miten myyntitilaukset vahvistetaan. Näet, miten yksi tilaus vahvistetaan. Näet myös, miten useita tilauksia voi vahvistaa samanaikaisesti. Yleensä myyntitilauksen käsittelijä tekee nämä tehtävät. Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoilla tai omilla tiedoillasi. Varmista ennen aloittamista, että samalla asiakkaalla on useita avoimia myyntitilauksia. Jos käytössä on USMF, käytä asiakasta US-027.
 

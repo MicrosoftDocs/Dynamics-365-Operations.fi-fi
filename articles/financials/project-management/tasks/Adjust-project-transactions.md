@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="adjust-project-transactions"></a>Oikaise projektitapahtumat
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tehtäväoppaassa kerrotaan, miten projektin tapahtuma oikaistaan. Voit oikaista projektitapahtumia yksi kerrallaan tai valita tapahtumia kaikkien projektitapahtumien luettelosta. Yleensä projektivastaava tekee tämän tehtävän. Tässä tehtäväoppaassa käytetään USSI-tietojoukkoa.
 

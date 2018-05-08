@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>Tuotteen vahvistus klusterikeräilyä varten
 Klusterikeräilyssä voi kerätä usean tilauksen nimikkeitä samalla kertaa. Kun klusterikeräily on käytössä, nimikkeen vahvistaminen on ehdottoman tärkeää, jotta klustereihin lisättävät nimikkeet voidaan tarkistaa. Voit tarkistaa klusterikeräilyn nimikkeet klusterikeräilyn aikana.

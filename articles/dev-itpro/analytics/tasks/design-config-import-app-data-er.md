@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>Saapuvien asiakirjojen jäsennysmääritysten suunnittelu sovellustietojen päivitystä varten (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä näytetään, miten sähköisen raportoinnin (ER) konfiguraatiot suunnitellaan saapuvan sähköisen asiakirjan jäsentämistä varten. Tässä menettelyssä tuodaan pakollisia ER-konfiguraatioita, jotka on luotu malliyritykselle Litware Inc. ja joita käytetään saapuvien sähköisten asiakirjojen jäsentämistä varten. ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen tämän menettelyn vaiheiden suorittamista.
 

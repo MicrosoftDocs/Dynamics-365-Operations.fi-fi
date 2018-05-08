@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="fixed-asset-depreciation-conventions"></a>Käyttöomaisuuden poistomenetelmät
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Poistomenetelmien avulla määritetään miten ja milloin poisto lasketaan sekä vuodelle, jolloin käyttöomaisuus hankitaan, että vuodelle, jolloin käyttöomaisuus poistetaan käytöstä.
 

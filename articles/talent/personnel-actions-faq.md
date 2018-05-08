@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="personnel-actions-faq"></a>Henkilöstötoimenpiteet [usein kysytyt kysymykset]
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on vastauksia kysymyksiin, joita sinulla saattaa olla, jos organisaatiosi käyttää henkilöstötoimintoja. Henkilökunnan toiminnot ovat lisävaiheita, jotka on suoritettava, kun suoritat tiettyjä henkilökuntaan liittyviä tehtäviä. Esimerkkejä henkilöstötoimintoja mahdollisesti vaativista tehtävistä ovat uusien toimien luonti, olemassa olevien toimien arvojen muuttaminen, uusien työntekijöiden palkkaus, työntekijöiden siirto, työntekijän kompensaation muuttaminen, toimen määritysten muuttaminen tai työntekijöiden työsuhteiden päättäminen.
 

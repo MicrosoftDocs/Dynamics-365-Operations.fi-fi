@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="work-breakdown-structures"></a>Työrakenteet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Työrakenne (WBS) on kuvaus projektissa tehtävästä työstä. Se on tehtävähierarkia, joka edustaa projektin tiimin käsitystä työn kokoonpanosta ja kunkin osan tai tehtävän koosta, kustannuksista ja kestosta. Työrakenteella on kolme päätavoitetta.
 

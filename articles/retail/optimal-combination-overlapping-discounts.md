@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Määritä optimaalinen yhdistelmä päällekkäisiä alennuksia
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Kun alennukset menevät päällekkäin, sinun on määritettävä alennuksien yhdistelmä, joka tuottaa pienimmän tapahtumasumman tai suurimman kokonaisalennuksen. Kun alennuksen määrä vaihtelee ostettujen tuotteiden hinnan mukaan (kuten yleisessä vähittäismyynnin "osta 1, saat toisen X prosentin alennuksella" -alennus), tästä prosessista tulee yhdistelmäoptimoinnin ongelma.
 

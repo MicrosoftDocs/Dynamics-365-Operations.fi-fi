@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="benefits-power-bi-content"></a>Power BI -sisällön edut
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään Microsoft Power BI -sisällön **etuja**. Siinä selitetään, miten sisältyvät raportit avataan, sekä kerrotaan sisältöpaketin muodostamisessa käytetyistä tietomallista ja yksiköistä.
 

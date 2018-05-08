@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="receive-an-eu-entry-certificate"></a>Vastaanota EU-saapumistodistus
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä selvitetään, miten kolmannen osapuolen myöntämä ja asiakkaalta vastaanotettu EU-saapumistodistus rekisteröidään.
 

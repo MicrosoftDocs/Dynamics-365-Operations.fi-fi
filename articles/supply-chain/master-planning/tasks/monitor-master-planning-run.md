@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="monitor-a-master-planning-run"></a>Pääsuunnitteluajon valvonta
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tuotannon suunnittelija haluaa nähdä, onko pääsuunnitteluajo käynnissä. Käytä menettelyn täytössä USMF-yrityksen demotietoja.
 

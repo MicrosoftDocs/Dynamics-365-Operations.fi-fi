@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Keskitettyjen maksujen tilityksen kuvaus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Tällöin samaa tapahtumaa ei tarvitse syöttää erikseen useassa yrityksessä. Aikaa myös säästyy, kun keskitettyjen maksujen maksuehdotusprosessi, selvitysprosessi, avointen tapahtumien muokkaus ja suljettujen tapahtumien muokkaus yksinkertaistuvat. 
 

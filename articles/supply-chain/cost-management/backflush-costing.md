@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="backflush-costing"></a>Jälkikustannuslaskenta
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa esitellään jälkikustannuslaskennan käsite, jota käytetään Lean-valmistuksessa. 
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>Määritä RFM-analyysi
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, kuinka asiakkaidesi Recency, Frequency, and Monetary (RFM) -analyysi määritetään.
 

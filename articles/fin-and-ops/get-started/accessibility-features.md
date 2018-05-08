@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="accessibility-features"></a>Helppokäyttötoiminnot
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään toimintoja, jotka on suunniteltu auttamaan Dynamics 365 for Finance and Operationsin, Dynamics 365 for Retailin ja Dynamics 365 for Talentin toimintarajoitteisia käyttäjiä. Käytettävissä on esimerkiksi toimintoja henkilöille, joilla on käytössä näkövammaisille tarkoitettua teknologiaa, kuten Microsoft Windows Narrator.
 

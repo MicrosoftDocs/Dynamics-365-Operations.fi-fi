@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-semi-finished-product-february-2016-only"></a>Luo puolivalmis tuote (vain helmikuu 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä tehtävä keskittyy puolivalmiin tuotteen luomiseen. Se on tuoterakenteen laskentasarjan toinen tehtävä. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.
 

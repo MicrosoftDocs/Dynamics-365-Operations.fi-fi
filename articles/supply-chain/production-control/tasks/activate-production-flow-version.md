@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="activate-a-production-flow-version"></a>Aktivoi tuotantovirran versio
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ennen kuin kanban-työt voidaan luoda ja tehtäviä käsitellä tuotannon työnkulun versiossa, versio on aktivoitava. Paras käytäntö on aktivoida versio ennen kuin sen voimaantulon aloituspäivä ja -aika päättyy. Tämän tehtävän suorittaminen edellyttää tuotantovirran versiota, jonka tila on Luonnos, jotta voit aktivoida version. 
 

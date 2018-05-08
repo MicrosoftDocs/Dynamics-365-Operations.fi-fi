@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enter-worker-information"></a>Syötä työntekijän tiedot
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Kun rekrytoija on luonut joukkotyöhönottoprojektin ja luonut toimet, syötetään palkattavien henkilöiden työntekijätiedot. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Esittelytiedot sisältävät joukkotyöhönottoprojektin. Aloita tämä menettely siirtymällä kohtaan Henkilöstöhallinto > Työhönotto > Joukkotyöhönottoprojektit.
 

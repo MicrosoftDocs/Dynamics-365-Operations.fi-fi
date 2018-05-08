@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="merge-inventory-batches"></a>Yhdistä varastoerät
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja kahden tai useamman varastoerän konsolidoinnista yhdistetyksi eräksi.
 

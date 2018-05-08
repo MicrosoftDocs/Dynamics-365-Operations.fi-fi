@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a>Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tässä menettelyssä käsitellään, miten kanta-asiakaskortin tietoa voi etsiä ja miten kanta-asiakkaan palkkiopisteitä säädetään. Tämän tehtävän luomisessa käytetty USRT-yrityksen demotietoja. Tämä tehtävä on tarkoitettu vähittäismyynnin toiminnoista vastaavan johtajan roolille tai asiakaspalvelupäällikön roolille.
 

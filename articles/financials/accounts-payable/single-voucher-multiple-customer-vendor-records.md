@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Yksi tosite useille asiakkaan tai toimittajan tietueille
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tämä aihe sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille. Tämä toiminto poistetaan Microsoft Dynamics 365 for Finance and Operations tulevissa versioissa, joten emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn. 
 

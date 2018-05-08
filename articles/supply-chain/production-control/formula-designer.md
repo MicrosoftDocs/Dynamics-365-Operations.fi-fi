@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="formula-designer"></a>Reseptien suunnittelu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään kaavojen analysointia ja ylläpitoa puunäkymässä kaavan suunnittelutyökalulla.
 

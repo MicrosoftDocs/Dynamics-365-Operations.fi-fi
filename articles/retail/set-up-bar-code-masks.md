@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-bar-code-masks"></a>Viivakoodin muotojen määrittäminen
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä aiheessa kuvataan, miten määrität viivakoodin muodon merkit, viivakoodin muodot, ja miten viivakoodin muodot liitetään viivakoodeihin.
 

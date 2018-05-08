@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-vendor-account"></a>Toimittajatilin luominen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menetelmässä selvitetään toimittajatili luominen sekä lisätään osoite- ja yhteystiedot. Menettelyssä ei näytetä miten kaikki osto- ja rahoitustarkoitusten kentät täytetään. Kenttien kuvauksissa on lisätietoja kyseistä kentistä. Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoilla tai omilla tiedoillasi. Yleensä hankinta-asiantuntija tai myyntireskontran henkilökunta luo toimittajatilit.
 

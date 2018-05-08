@@ -27,7 +27,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-asset-management-workspace"></a>Käyttöomaisuuden hallinnan työtila
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **Käyttöomaisuuden hallinnan** työtilassa on järjestelmään vietyyn käyttöomaisuuteen liittyviä tietoja. Työtilassa on yhteenvetonäkymä ja analytiikkanäkymä. **Oma työ** -välilehdessä on yhteenvetoruutuja, tietoja käyttöomaisuudesta ja nykyisen yrityksen käyttöomaisuuteen liittyviä tietoja. Voit lisätä työtilassa analyysitietoja myös suoraan Power BI:n analytiikkaosaan. **Analytiikka – kaikki yritykset** -välilehti näyttää Microsoft Power BI:n ominaisuuksien avulla kaikkien yritysten käyttöomaisuuteen liittyviä visualisointeja.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="removed-or-deprecated-features"></a>Poistetut tai vanhentuneet ominaisuudet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu Microsoft Dynamics 365 for Finance and Operationsissa tai jotka ovat vanhentuneet.
 

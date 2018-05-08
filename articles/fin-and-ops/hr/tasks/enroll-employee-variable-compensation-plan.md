@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>Työntekijän rekisteröiminen muuttuvan kompensaation suunnitelmaan
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Etuuspäällikkö voi rekisteröidä työntekijät muuttuvan kompensaation suunnitelmiin, kun työntekijöille lasketaan käteis- ja muut kuin käteispalkkiot. Tässä menettelyssä oletetaan, että muuttuva kompensaatiosuunnitelma on luotu niin, että Ota rekisteröinti käyttöön -kentän arvoksi on määritetty Kyllä ja muuttuvan kompensaatiosuunnitelman oikeutussäännöt on luotu. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Aloita menettely siirtymällä kohtaan Henkilöstöhallinto > Työntekijät > Työntekijät > Kompensaatio > Muuttuvan suunnitelman rekisteröityminen.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="acquire-assets-through-procurement"></a>Käyttöomaisuuserien hankinta
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, kuinka tehdään käyttöomaisuuden ja ostoreskontran väliset integrointimääritykset, luodaan käyttöomaisuuserä automaattisesti ostotilauksesta tai laskusta tai kirjataan käyttöomaisuuserien hankinta- ja hankintaoikaisutapahtumat automaattisesti.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-inventory-counting-processes"></a>Varastoinventoinnin prosessien määrittäminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten perusvarastoinventoinnin prosessien konfigurointi tehdään luomalla inventointiryhmä ja inventoinnin kirjauskansio. Menettelyssä kerrotaan myös, miten varasto- ja nimiketason inventointikäytännöt otetaan käyttöön. Varaston esimies tekee yleensä nämä tehtävät. Edellytyksenä on, että olemassa on joitakin aiemmin määritettyjä vapautettuja tuotteita ja varastoja. Jos käytössä on esittelytietojen yritys, voit suorittaa tämän menettelyn käyttämällä USMF-yritystä ja mitä tahansa varastoitua nimikettä.
 

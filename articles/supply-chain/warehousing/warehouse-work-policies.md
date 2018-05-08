@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="warehouse-work-policies"></a>Varaston työkäytännöt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Varaston työkäytännöt Microsoft Dynamics 365 for Finance and Operationsissa määrittävät, onko varastotyö luotu valmistuksen varastoprosessia varten työtilaustyypin, varaston sijainnin ja tuotteen perusteella.
 

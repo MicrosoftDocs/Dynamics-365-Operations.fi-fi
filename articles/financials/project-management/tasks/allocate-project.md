@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Allokoi projektibudjetti tai budjettiarviointi jaksojen ajalle
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
  Voit kohdistaa summia eri kausille sen jälkeen, kun projektibudjetti tai projektibudjetin iversio on syötetty tai ennen kuin se on lähetetty hyväksyttäväksi. Jos budjetti tai budjettiversion hylätään, voit myös varata summat ennen uudelleen lähettämistä. 
 

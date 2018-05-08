@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 ---
 
 # <a name="power-bi-content"></a>Power BI -sisältö
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tämä ohjeaihe on luettelo käytettävissä olevasta Microsoft Power BI -sisällöstä, ja siinä kerrotaan resursseista, joissa on lisätietoja kyseisestä sisällöstä.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Muotoilun lisäasetukset taloushallinnon raporteissa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Luodessasi raportin taloushallinnon raportoinnissa, sen muotoiluun on käytettävissä lisätoimintoja, kuten dimensiosuodattimia, rajoituksia sarakkeille ja raportoinnin yksiköille, ei-tulostettavia rivejä IF/THEN/ELSE -lausekkeita laskutoimituksissa. 
 

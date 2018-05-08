@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-linked-products"></a>Linkitettyjen tuotteiden määrittäminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten linkitetyt tuotteen määritetään. Tässä menettelyssä käytetään esittelytietojen USRT-yritystä. Menettelyssä oletetaan, että molemmat tuotteet on jo luotu ja vapautettu.
 

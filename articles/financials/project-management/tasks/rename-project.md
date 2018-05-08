@@ -25,7 +25,7 @@ ms.lasthandoff: 11/08/2017
 ---
 # <a name="rename-or-modify-a-project-stage"></a>Projektin vaiheen nimeäminen uudelleen tai muokkaaminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Projektin vaiheet voivat toimia projektin elinkaaren ohjeena. Voit määrittää projektin vaiheet, jotka haluat sisällyttää projektin vaiheen alueen projekteihin Projektinhallinnan ja kirjanpidon parametrit -sivulla. Dynamics 365 for Finance and Operations sisältää viisi ennalta määritettyä projektin vaihetta ja kolme käyttäjän määrittämää vaihetta. Voit päivittää sen projektin vaiheen nimen, jota käytät projektien edistymisen seuraamiseen. Voit antaa nimet myös käyttäjän määrittämille tiloille. Tässä ohjeaiheessa näytetään, miten projektin vaihe nimetään uudelleen tai miten sitä muokataan.
 

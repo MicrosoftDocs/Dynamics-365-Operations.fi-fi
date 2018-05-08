@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="payment-methods-in-a-call-center"></a>Puhelinkeskuksen maksutavat
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Puhelinkeskuskanavan määritys Microsoft Dynamics 365 for Retailissa sisältää **Ota käyttöön tilausten viimeistely** -asetuksen. Tämän asetuksen avulla voidaan varmistaa, että kaikki kanavan käyttäjien luomat tilaukset vapautetaan tilaustenkäsittelyyn vain, jos ne on maksettu ennakkoon tai jos esihyväksytty maksu on hyväksyttyjen toleranssien mukainen. Jos **Ota käyttöön tilausten viimeistely** -asetus on otettu käyttöön, puhelinkeskuksen käyttäjät voivat kirjata maksuja asiakkaiden myyntitilauksille käyttämällä puhelinkeskuksen maksujen käsittelyominaisuuksia. Jos asetus poistetaan käytöstä, puhelinkeskuksen käyttäjät ei voi käyttää puhelinkeskuksen maksujen käsittelyominaisuuksia. He voivat kuitenkin käyttää myyntitilauksissa esimaksuja käyttämällä oletusarvoista myyntireskontratoimintoa.
 

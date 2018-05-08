@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-production-flow-models"></a>Määritä tuotantovirtamallit
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tuotantovirran malleissa käsitellään, miten Lean-valmistuksen työsolujen kapasiteetti lasketaan ja miten sitä ylläpidetään. Tuotantovirran malli onkin määritettävä ennen työsolujen määrittämistä. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

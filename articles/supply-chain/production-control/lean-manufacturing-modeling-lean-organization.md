@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="modeling-a-lean-organization"></a>Lean-organisaation mallinnus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Artikkelissa on tietoja Lean-organisaation mallintamisen tärkeimmistä käsitteistä. 
 

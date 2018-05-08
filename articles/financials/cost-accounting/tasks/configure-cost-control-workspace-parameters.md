@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>Määritä kustannusseurannan työtilan parametrit
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämän menettelyn avulla voi määrittää kustannusseurannan työtilan niin, että organisaation eri tasojen esimiehet voivat tarkastella kustannusobjektejaan, kuten kustannuspaikkoja ja tuoteryhmiä. Tämän tallenteen luomisessa käytetty demoyritys on USP2.
 

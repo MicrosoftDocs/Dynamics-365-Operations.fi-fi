@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-store-inventory"></a>Myymälän varaston hallinta
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä artikkelissa asiakirjatyypit, joiden avulla hallitaan varastoa.
 

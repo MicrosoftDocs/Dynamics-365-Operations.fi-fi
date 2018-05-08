@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Muuta ennustetta manuaalisesti
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten nimikkeen ennustetta muokataan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä tallenne on tarkoitettu tuotannon suunnittelijalle. 
 

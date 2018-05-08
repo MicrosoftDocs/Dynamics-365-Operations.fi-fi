@@ -26,9 +26,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="alerts-overview"></a>Hälytysten yleiskuvaus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>Tietoja hälytyksistä
 Hälytykset muodostavat tärkeiden tapahtumien ilmoitusjärjestelmän Microsoft Dynamics 365 for Finance and Operations -sovelluksessa. Saat hälytysten avulla tietoja tapahtumista, joita haluat seurata työpäivän aikana. Voit luoda kätevästi oman hälytyssääntöjoukon, joilla saat hälytyksen myöhässä olevista lähetyksistä, poistetuista tilauksista, hintojen muutoksista ja muista reagointia vaativista tapahtumista.

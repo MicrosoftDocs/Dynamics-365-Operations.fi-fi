@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="copy-a-formula"></a>Kopioi kaava
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä keskitytään luomaan resepti, joka sisältää samat ainesosat kuin aiemmin luotu resepti, mutta jossa on vähemmän eroja. Voit luoda reseptirivit kopioimalla kopiointitoiminnolla sellainen aiemmin luotu resepti, joka sisältää eniten tarvitsemiasi ainesosia. Sitten voit tehdä uuden version yksittäisille riveille tarvittavat muutokset. Kopiointitoiminnon ansiosta ei tarvitse tehdä useita lähes samanlaisia reseptejä. Tämän tehtävän luomisessa käytetty demotietojen yritys on USP2.
 

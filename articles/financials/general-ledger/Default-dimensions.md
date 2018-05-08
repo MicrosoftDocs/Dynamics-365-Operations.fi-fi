@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-dimensions-and-posting"></a>Taloushallinnon dimensiot ja kirjaaminen 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tilikarttaa suunniteltaessa ja määritettäessä on mietittävä, miten eri komponentit toimivat yhdessä, kun kirjaat asiakirjan tai kirjauskansion. Näitä komponentteja ovat tilirakenteet, lisäsäännöt sekä täsmäyttävä ja kiinteä dimensio. Tässä ohjeaiheessa kerrotaan, mitä kukin komponentti tarkoittaa ja miten komponentit toimivat yhdessä.
 

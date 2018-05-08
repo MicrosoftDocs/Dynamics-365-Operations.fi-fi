@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-account-structures"></a>Tilirakenteiden luonti
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä opastuksessa käsitellään tilirakenteen luominen. Vaiheissa käytetään esittely-tietojen USMF-yritystä.
 

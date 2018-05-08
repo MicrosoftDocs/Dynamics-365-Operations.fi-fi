@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-banner-or-logo"></a>Ilmoituspalkin tai logon muuttaminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Seuraavassa menettelyssä on ohjeet, joiden avulla järjestelmänvalvojat voivat päivittää yrityksen ilmoituspalkin tai logon kuvan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

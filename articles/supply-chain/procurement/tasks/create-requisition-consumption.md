@@ -24,7 +24,7 @@ ms.lasthandoff: 11/20/2017
 ---
 # <a name="create-a-requisition-for-consumption"></a>Luo kulutusehdotus
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä käsitellään yksityiskohtaisesti ehdotuksen luontiprosessi. Siinä näytetään erilaisia tapoja hakea tuotteiden hankintaluettelon tuotteita sekä millä tavoin lisätään tuote, jota ei ole luettelossa. Varmista ennen menettelyn aloittamista, että ostokäytäntö on määritetty siten, että ehdotuksen oletustyyppi on Kulutus. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi. Menettelyn voi suorittaa vain käyttäjäprofiili, joka on määritetty työntekijäksi.  Työntekijä suorittaa yleensä tämän tehtävän. Työntekijän käyttöoikeusroolin ansiosta voit suorittaa tehtävät. Jos käytössä on USMF, voit kirjautua sisään tunnuksella Alicia.
 

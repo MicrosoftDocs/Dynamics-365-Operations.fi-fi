@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-performance-review"></a>Luo suorituskykyarvio
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä toimintaohjeessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus. Tämä menettelyn luomisessa käytettiin USMF-yrityksen demotietoja. Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-bar-code-support"></a>Mobiililaitteiden viivakoodien tuki
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Koska Android on avoimen lähdekoodin projekti, kuka tahansa varaston viivakoodilukijoiden laitteistovalmistaja voi tehdä Android-käyttöjärjestelmää käyttävän laitteen. Laite on Android-yhteensopiva vain, jos siinä voidaan suorittaa Android-suoritusympäristölle luotuja sovelluksia.
 Laitteiston toimittaja voi kuitenkin muokata Android-versiota ja luoda siihen kerroksia niin, että versio toimii laitteistossa. Microsoft ei vastaa siitä, että Android-laitteen mobiililaitteen viivakoodin skannaussovellus on yhteensopiva valmistajan viivakoodilukulaitteiston kanssa tai että Android versio toimii laitteessa. 

@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="microsoft-dynamics-365-for-talent-system-requirements-and-update-policy"></a>Microsoft Dynamics 365 for Talentin järjestelmävaatimukset ja päivityskäytäntö
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Talentin järjestelmävaatimuksista. Lisäksi siinä käsitellään päivityskäytäntö.
 

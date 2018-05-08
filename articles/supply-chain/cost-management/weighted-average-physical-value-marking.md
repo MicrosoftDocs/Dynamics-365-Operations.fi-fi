@@ -29,9 +29,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Painotettu keskiarvo sekä fyysinen arvo ja merkintä
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Painotettu keskiarvo on varastomalli, joka perustuu painotetun keskiarvon periaatteeseen. Siinä varasto-otot arvotetaan varastoon varaston sulkemiskauden aikana vastaanotettavien nimikkeiden sekä edeltävän kauden mahdollisen käytettävissä olevan varaston keskiarvon mukaan.
 

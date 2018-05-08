@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="one-voucher"></a>Yksi tosite
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Tämä toiminto on käytössä Dynamics 365 for Finance and Operationsin versiossa 8.0, joka sisältyy kevään 2018 versioon.   

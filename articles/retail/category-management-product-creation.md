@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="manage-retail-product-categories-and-products"></a>Vähittäismyynnin tuoteluokkien ja tuotteiden hallinta
 
-[!INCLUDE [banner](./includes/banner.md)]
+[!include [banner](./includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään parannettua tapaa hallita vähittäismyynnin tuoteluokkia ja tuotteita Microsoft Dynamics 365 for Retailissa. Myynninedistämispäälliköt näkevät näiden parannusten avulla tuoteominaisuuksien rakenteen, jonka vähittäismyynnin tuotehierarkia ja vapautetut tuotetiedot jakavat.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-rate-masters"></a>Määritä päätiedot
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä näytetään, miten hinnan päätiedot määritetään. Logistiikkapäällikkö määrittää yleensä hinnan päätiedot rahdinkuljettajien kanssa tehtyjen sopimusten perusteella. Tässä skenaariossa määritetään lentoyhtiön hinnan päätiedot. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

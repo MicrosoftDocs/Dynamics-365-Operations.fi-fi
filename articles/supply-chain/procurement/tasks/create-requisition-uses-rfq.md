@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Luo ehdotus, joka käyttää tarjouspyyntöä
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä oppaassa esitellään, miten hinta- ja toimittajatiedot lisätään ostoehdotukseen tarjouspyyntöprosessista. Tämän oppaan esimerkkiä voidaan käyttää USMF-yrityksen demotiedoilla, ja sinun on kirjauduttava järjestelmänvalvojana suorittaaksesi kaikki vaiheet. Tässä oppaassa tehtävät kuuluvat yleensä hankintojen asiantuntijoille.
 

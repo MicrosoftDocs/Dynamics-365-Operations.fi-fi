@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-address-books"></a>Konfiguroi osoitekirjat
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Voit määrittää tällä menettelyllä ja valinnoilla, jotka teit aiheessa Yleisen osoitekirjan ja lisäosoitekirjan määritysten suunnitteleminen, organisaatiolle lisää osoitekirjoja.
 

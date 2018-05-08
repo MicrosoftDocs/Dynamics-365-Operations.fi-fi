@@ -24,7 +24,7 @@ ms.lasthandoff: 01/17/2018
 ---
 # <a name="create-raw-materials-february-2016-only"></a>Luo raaka-aineet (vain helmikuu 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä tehtävä keskittyy valmiiden ja puolivalmiiden tuotteiden osien luomiseen. Se on tuoterakenteen laskentasarjan kolmas tehtävä. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.
 

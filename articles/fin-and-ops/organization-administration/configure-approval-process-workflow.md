@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Hyväksyntäprosessin lisääminen työnkulkuun
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Määritä hyväksyntäprosessin ominaisuudet seuraavan menettelyn avulla.
 

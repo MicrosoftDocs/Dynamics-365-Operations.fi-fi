@@ -25,9 +25,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="embed-powerapps"></a>PowerApps-sovellusten muokkaaminen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 Ympäristöpäivityksen versiossa 14 Microsoft Dynamics 365 for Finance and Operations tukee Microsoft PowerApps -integrointia, palvelua, jonka avulla kehittäjät ja muut kuin tekniset käyttäjät voivat luoda mukautettuja liiketoimintasovelluksia mobiililaitteille, tabletteja ja verkkoa ilman koodin kirjoittamista. Sinun, organisaatiosi tai laajemman ekosysteemin muodostama PowerApps voidaan tämän jälkeen upottaa Finance and Operations -asiakasohjelmaan. Tämä laajentaa tuotteen toimintoja. Voit esimerkiksi luoda PowerApp-sovelluksen ja täydentää Finance and Operations -sovellusta toisesta järjestelmästä haetuilla tiedoilla. 
 

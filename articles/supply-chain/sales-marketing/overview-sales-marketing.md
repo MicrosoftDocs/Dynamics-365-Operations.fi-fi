@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-and-marketing"></a>Myynti ja markkinointi
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Voit käyttää myyntiä ja markkinointia myyntivirran erityyppisten tietojen hankkimiseen, tallentamiseen ja käyttämiseen. Näitä tietoja ovat alkuperäinen myyntitoimenpide, tulevaisuuden seurantatoiminto ja lisämyynnit.
 

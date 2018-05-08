@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order"></a>Luo ostotilaus
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä näytetään, miten ostotilaus luodaan manuaalisesti. Ostotilaukset luodaan yleensä automaattisesti pääsuunnittelun, suoratoimituksen ja muiden prosessien tuloksena. Ostotilaukset luo yleensä ostoedustaja. Tätä esimerkkiä voidaan käyttää USMF-esimerkkiyrityksessä eri vaiheiden muistiinpanoissa ehdotetuin arvoin.
 

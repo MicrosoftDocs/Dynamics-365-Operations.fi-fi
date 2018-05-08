@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="organization-administration-home-page"></a>Organisaation hallinnon aloitussivu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on linkkejä sisältöön, joka auttaa tehokäyttäjiä ja järjestelmänvalvojia määrittämään Microsoft Dynamics 365 for Finance and Operationsin. Sisältö avustaa järjestelmän määrittämisessä niin, että se auttaa sujuvasti ja tehokkaasti organisaatiotasi ja sen liiketoimintaa.
 

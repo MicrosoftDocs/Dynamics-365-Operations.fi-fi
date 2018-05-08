@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Tuotteen luokittelu luokkahierarkioiden avulla
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Luokkahierarkioiden avulla voit luokitella tuotteita vientiin, hankintaan, myyntiin tai muihin tarkoituksiin. Tuotepäällikkö tekee yleensä tämän tehtävän. Esimerkissä käytetään esittelytietojen yrityksen USMF tuotenumeroa M0009.
 

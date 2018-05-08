@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="master-planning-and-multisite-functionality"></a>Pääsuunnittelu ja multisite-toiminnot
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pääsuunnittelussa otetaan huomioon toimipaikan ja varaston dimensioiden asetukset. 
 

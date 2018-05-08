@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="pay-based-on-registrations"></a>Rekisteröinteihin perustuva palkka
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään yksityiskohtaisesti palkan laskemista työntekijän rekisteröintien perusteella. Se sisältää esimerkkejä siitä, miten laskennan käytettävissä olevien asetusvalintojen eri yhdistelmät vaikuttavat tulokseen. Tässä on joitakin alueita, jotka katetaan:
 

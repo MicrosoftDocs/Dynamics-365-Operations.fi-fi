@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-call-center-channel-and-channel-attributes"></a>Määritä puhelinkeskuksen kanava ja kanavamääritteet
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten uusi vähittäismyyntikanava luodaan ja miten kanavamääritteet määritetään. Tämän tehtävän luomisessa käytetty USRT-yrityksen demotietoja. Tämä menettely on tarkoitettu vähittäismyymälän IT-osaston roolille.
 

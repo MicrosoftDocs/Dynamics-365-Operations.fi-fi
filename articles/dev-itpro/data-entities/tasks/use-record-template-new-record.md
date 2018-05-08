@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-a-record-template-to-create-a-new-record"></a>Uuden tietueen luonti tietuemallin avulla
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä menettely osoittaa, miten aiemmin määritetyllä tietuemallilla voi luoda uuden tietueen. Tätä menettelyä varten on suoritettava ensin Tietuemallin luonti helpottamaan tietojen kirjaamista -menettely.
 

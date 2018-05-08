@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-workspaces"></a>Mobiilityötilat
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on luettelo Dynamics 365 for Unified Operations -mobiilisovelluksessa käytettävissä mobiilityötiloista.
 

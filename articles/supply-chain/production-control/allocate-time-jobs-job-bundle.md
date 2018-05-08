@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Ajan kohdistaminen työnipun töihin
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Voit niputtaa töitä tuotannonohjauksessa. Tämän jälkeen voit käynnistää samanaikaisesti useita töitä luettelosivulta.
 

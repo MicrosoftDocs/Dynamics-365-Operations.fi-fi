@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-a-related-intercompany-voucher-from-a-journal"></a>Näytä liittyvä konsernin sisäinen tosite kirjauskansiosta
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Liittyvän tositteen ikkunassa näkyy siirtymäyrityksen tosite,kun konsernin sisäinen tapahtuma kirjataan kirjauskansiosta.
 

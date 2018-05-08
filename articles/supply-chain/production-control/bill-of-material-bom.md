@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bills-of-materials-and-formulas"></a>Tuoterakenteet ja kaavat
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää. Tuoterakenteet ja kaavat määrittävät tietyn tuotteen tarvittavat materiaalit tai ainesosat. Kaavoissa on myös oheis- ja sivutuotteita, jotka vastaanotetaan tietyn tuotannon yhteydessä. 
 

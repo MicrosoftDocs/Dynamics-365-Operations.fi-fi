@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="derived-books"></a>Johdetut kirjat
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on yleiskuvaus johdetun kirjan toiminnoista.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="leave-and-absence-management-overview"></a>Loman ja poissaolojen hallinnan yhteenveto
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 **Loman ja poissaolojen hallinta** -moduuli on joustava kehys poissaolojen hallintaprosessin määrittämiselle. Loma- ja poissaolosuunnitelmat voidaan luoda määrittämään, miten työntekijöiden lomat jaksotetaan tai miten niitä heille myönnetään. Kun työntekijät ovat rekisteröityneet suunnitelmaan, työntekijät voivat lähettää lomapyyntöjä esimiesten hyväksyttäväksi. Loman seurannan avulla sekä ensimmäisen tason esimiehet että henkilöstöpäälliköt voivat nähdä, ketkä ovat parhaillaan lomalla ja kuinka paljon heillä on lomaa jäljellä.  
 

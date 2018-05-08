@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-terms"></a>Määritä toimittajan maksuehdot
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Määritä toimittajan laskujen maksuehdot. Tässä tehtävässä käytetään esittely-yritystä USMF.
 

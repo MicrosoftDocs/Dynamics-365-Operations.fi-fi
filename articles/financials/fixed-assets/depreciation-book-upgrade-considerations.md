@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-book-upgrade-overview"></a>Poistokirjan päivityksen yleiskatsaus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Aiemmissa julkaisuversioissa oli kaksi käyttöomaisuuserien arviointikäsitettä: arvomallit ja poistokirjat. Microsoft Dynamics 365 for Operationsissa (1611) arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, jota kutsutaan kirjaksi. Tämä aihe käsittelee päivityksessä huomioitavia seikkoja. 
 
@@ -62,17 +62,17 @@ Vaihtoehto 2: **Aiemmin käyttäjän luoma numerosarja**: tämän vaihtoehdon av
 Parametrit ovat ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans -luokan alussa. 
 
 *// Tositteiden kohdistuksen ensisijaisen menetelmän määrittäminen* 
-*// tosi, jos haluat käyttää aiemmin luotua numerosarjan koodia* 
-*// epätosi, jos aiot käyttää järjestelmän määrittämää numerosarjaa (oletus)* const boolean NumberSequenceUseExistingCode = false;  
+ *// tosi, jos haluat käyttää aiemmin luotua numerosarjan koodia* 
+ *// epätosi, jos aiot käyttää järjestelmän määrittämää numerosarjaa (oletus)* const boolean NumberSequenceUseExistingCode = false;  
 
 *// Jos käytetään järjestelmän määrittämää numerosarjaa, määritä numerosarjan parametrit.*
-*// Näillä parametreilla luodaan uusi numerosarja.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
+ *// Näillä parametreilla luodaan uusi numerosarja.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
 
 *// Jos käytetään aiemmin luotua numerosarjaa, anna nykyinen numerosarjan koodi* 
-*// Tositteen kohdistus siirtyy riveittäin käyttämään aiemmin luotua numerosarjaa.* const str NumberSequenceExistingCode = ''; *// Määritä aiemmin luodun numerosarjan koodin vaikutusalue* 
-*// tosi, jos annettu numerosarja on jaettu* 
-*// epätosi, jos annettu numerosarja on yrityskohtainen* 
-*// Järjestelmän määrittämää oletusnumerosarjaa käytetään, jos määritetyllä alueella olevaa numerosarjaa ei löydy.* const boolean NumberSequenceExistingIsShared = true; 
+ *// Tositteen kohdistus siirtyy riveittäin käyttämään aiemmin luotua numerosarjaa.* const str NumberSequenceExistingCode = ''; *// Määritä aiemmin luodun numerosarjan koodin vaikutusalue* 
+ *// tosi, jos annettu numerosarja on jaettu* 
+ *// epätosi, jos annettu numerosarja on yrityskohtainen* 
+ *// Järjestelmän määrittämää oletusnumerosarjaa käytetään, jos määritetyllä alueella olevaa numerosarjaa ei löydy.* const boolean NumberSequenceExistingIsShared = true; 
 
 Muodosta uudelleen projekti, joka sisältää luokan vakioiden muuttamisen jälkeen. 
 
