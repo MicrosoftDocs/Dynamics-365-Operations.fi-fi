@@ -20,16 +20,16 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8625e9c9b91acee52e2207d462f38286cafeb773
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bc5a560b25871e5b70cb436bd6dbcbf00d860f61
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="product-lifecycle-state"></a><span data-ttu-id="0b557-103">Tuotteen elinkaaren tila</span><span class="sxs-lookup"><span data-stu-id="0b557-103">Product lifecycle state</span></span> 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="0b557-104">Tuotteen elinkaaren tila kirjaa julkaistun tuotteen tai tuotevariantin elinkaaren tilan.</span><span class="sxs-lookup"><span data-stu-id="0b557-104">A product lifecycle state documents the lifecycle state of a released product or product variant.</span></span> <span data-ttu-id="0b557-105">Tuotteen elinkaaren tilat määrittää käyttäjä, yleensä tuotepäällikkö tai tuotteen päätietojen hallinta.</span><span class="sxs-lookup"><span data-stu-id="0b557-105">Product lifecycle states are defined by the user, typically a product manager or a product master data manager.</span></span> <span data-ttu-id="0b557-106">Tietty elinkaaren tila voi vaikuttaa tiettyihin liiketoimintaprosesseihin, kuten pääsuunnitteluun.</span><span class="sxs-lookup"><span data-stu-id="0b557-106">Specific business processes, such as master planning, can be affected by a specific lifecycle state.</span></span>   
 

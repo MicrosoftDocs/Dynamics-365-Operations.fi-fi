@@ -16,15 +16,15 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b8f3961e17ba381a75de448c85335abb026c0c53
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a3bccfcaad529f35dc28048bacbe08e298d4c459
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-legal-entity"></a><span data-ttu-id="4ca80-103">Luo uusi yritys</span><span class="sxs-lookup"><span data-stu-id="4ca80-103">Create a legal entity</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4ca80-104">Yritys on organisaatio, joka tunnistetaan oikeudellisen vallan rekisteröinnin kautta.</span><span class="sxs-lookup"><span data-stu-id="4ca80-104">A legal entity is an organization that is identified through registration with a legal authority.</span></span> <span data-ttu-id="4ca80-105">Yritys voi solmia sopimuksia ja yritykseltä edellytetään suorituskykyä kuvaavien lausuntojen valmistelemista.</span><span class="sxs-lookup"><span data-stu-id="4ca80-105">Legal entities can enter into contracts and are required to prepare statements that report on their performance.</span></span> <span data-ttu-id="4ca80-106">Seuraavissa vaiheissa on selostettu, miten yritys luodaan.</span><span class="sxs-lookup"><span data-stu-id="4ca80-106">The following procedure explains how to create a legal entity.</span></span> <span data-ttu-id="4ca80-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="4ca80-107">The demo data company used to create this procedure is USMF.</span></span>
 

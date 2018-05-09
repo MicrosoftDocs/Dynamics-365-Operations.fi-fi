@@ -18,16 +18,16 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 162b6d660fb5ec8df79dc44b89dea87d877c6470
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1cecc57bbcac4a8b9d2bfc009499d567d2569c84
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a><span data-ttu-id="5da61-103">Tuotantorakenne- ja reseptirivien vapauttaminen varastoon</span><span class="sxs-lookup"><span data-stu-id="5da61-103">Release BOM and formula lines to the warehouse</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5da61-104">Tässä ohjeaiheessa käsitellään tuoterakennerivien ja reseptirivien raaka-aineiden varastoon vapauttamisprosessia.</span><span class="sxs-lookup"><span data-stu-id="5da61-104">This topic describes the process for releasing raw material for bill of materials (BOM) lines and formula lines to the warehouse.</span></span> <span data-ttu-id="5da61-105">Kun vapautat tuoterakenne- tai reseptirivin varastoon, järjestelmä määrittää ensin, onko materiaalia jo saatavana työnohjauksessa tuotannon syöttösijainnissa, jossa tuotantoprosessi kuluttaa materiaalin.</span><span class="sxs-lookup"><span data-stu-id="5da61-105">When you release a BOM or formula line to the warehouse, the system first determines whether material is already available at the production input location on the shop floor where the material will be consumed for the production process.</span></span>
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 04/13/2018
 
 ### <a name="batch-job-setup"></a><span data-ttu-id="5da61-157">Erätyön asetukset</span><span class="sxs-lookup"><span data-stu-id="5da61-157">Batch job setup</span></span>
 
-<span data-ttu-id="5da61-158">Voit määrittää **Tuoterakenteen ja reseptirivien automaattinen vapautus** -erätyön kyselyssä suodatusehdot määrittämään, kuinka monta päivää eteenpäin työn on haettava rivejä, joilla on vapauttamattomia määriä.</span><span class="sxs-lookup"><span data-stu-id="5da61-158">In the query for the **Automatic release of BOM and formula lines** batch job, you can set up a filter criterion to specify how many days ahead the job should look for lines that have unreleased quantities.</span></span> <span data-ttu-id="5da61-159">Käytä työn kyselyssä suodatusehtona **Raaka-aineen päivämäärä** -kentässä**(LessThanDate())**-funktiota.</span><span class="sxs-lookup"><span data-stu-id="5da61-159">In the query for the job, in the **Raw material date** field, use the **(LessThanDate())** function as a filter criterion.</span></span>
+<span data-ttu-id="5da61-158">Voit määrittää **Tuoterakenteen ja reseptirivien automaattinen vapautus** -erätyön kyselyssä suodatusehdot määrittämään, kuinka monta päivää eteenpäin työn on haettava rivejä, joilla on vapauttamattomia määriä.</span><span class="sxs-lookup"><span data-stu-id="5da61-158">In the query for the **Automatic release of BOM and formula lines** batch job, you can set up a filter criterion to specify how many days ahead the job should look for lines that have unreleased quantities.</span></span> <span data-ttu-id="5da61-159">Käytä työn kyselyssä suodatusehtona **Raaka-aineen päivämäärä** -kentässä **(LessThanDate())**-funktiota.</span><span class="sxs-lookup"><span data-stu-id="5da61-159">In the query for the job, in the **Raw material date** field, use the **(LessThanDate())** function as a filter criterion.</span></span>
 
 <span data-ttu-id="5da61-160">Seuraavan kuvan tuotantotilauksessa on kaksi työtä, 10 ja 20, jotka kattavat tuotantotilauksen kokoonpanon ja pakkauksen.</span><span class="sxs-lookup"><span data-stu-id="5da61-160">The following illustration shows a production order that has two jobs, 10 and 20, that cover the assembly and packing for the production order.</span></span> <span data-ttu-id="5da61-161">Kumpikin työ on määritetty kuluttamaan tietty määrä materiaalia.</span><span class="sxs-lookup"><span data-stu-id="5da61-161">Each job is set up to consume a quantity of material.</span></span> <span data-ttu-id="5da61-162">Tässä kuvassa vapautuksen aikarajan ilmaiseva aikajanan alla oleva vihreä nuoli on sama **(LessThanDate())**-ehdoissa määritetty päivien määrä.</span><span class="sxs-lookup"><span data-stu-id="5da61-162">In this illustration, the release time fence that is indicated by the green arrow below the time line equals the number of days that has been specified in the **(LessThanDate())** criterion.</span></span> <span data-ttu-id="5da61-163">Esimerkiksi **(LessThanDate(2))** ilmaisee, että työn on haettava vapauttamattomia määriä vain kahden päivän aikarajan ajalta.</span><span class="sxs-lookup"><span data-stu-id="5da61-163">For example, **(LessThanDate(2))** indicates that the job should look for unreleased quantities only within a time fence of two days.</span></span>
 

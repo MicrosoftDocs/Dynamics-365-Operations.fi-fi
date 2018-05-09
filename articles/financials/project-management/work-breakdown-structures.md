@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ffabd11a621794e3ddd5faeb9fc5acd36c081d72
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="work-breakdown-structures"></a><span data-ttu-id="a9816-104">Työrakenteet</span><span class="sxs-lookup"><span data-stu-id="a9816-104">Work breakdown structures</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a9816-105">Työrakenne (WBS) on kuvaus projektissa tehtävästä työstä.</span><span class="sxs-lookup"><span data-stu-id="a9816-105">A work breakdown structure (WBS) is a description of the work that will be done for a project.</span></span> <span data-ttu-id="a9816-106">Se on tehtävähierarkia, joka edustaa projektin tiimin käsitystä työn kokoonpanosta ja kunkin osan tai tehtävän koosta, kustannuksista ja kestosta.</span><span class="sxs-lookup"><span data-stu-id="a9816-106">It’s a hierarchy of tasks that represents the project team’s understanding of the composition of work, and of the size, cost, and duration of each component or task.</span></span> <span data-ttu-id="a9816-107">Työrakenteella on kolme päätavoitetta.</span><span class="sxs-lookup"><span data-stu-id="a9816-107">A WBS has three major purposes:</span></span>
 

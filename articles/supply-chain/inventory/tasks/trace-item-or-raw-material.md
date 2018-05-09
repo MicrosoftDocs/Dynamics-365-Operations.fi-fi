@@ -17,15 +17,15 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5c8126322f85b317a9737978295ec0ebd2fd7cdc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 86868fc3a5d1543e46b3ebd4dcc31cbc3a78479b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="trace-an-item-or-raw-material"></a><span data-ttu-id="1d798-103">Nimikkeen tai raaka-aineen jäljittäminen</span><span class="sxs-lookup"><span data-stu-id="1d798-103">Trace an item or raw material</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1d798-104">Tässä menettelyssä käsitellään, miten nimikkeen seurannalla voidaan selvittää, miten nimikkeitä tai raaka-aineita on käytetty tai ollaan käyttämässä.</span><span class="sxs-lookup"><span data-stu-id="1d798-104">This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used.</span></span> <span data-ttu-id="1d798-105">Tämän menettelyn avulla voit tunnistaa nimikkeen sekä seurata sitä takaisin lähteeseen ja sitten tuotannon ja myynnin kautta lopulliseen tuotteeseen.</span><span class="sxs-lookup"><span data-stu-id="1d798-105">With this procedure, you can identify an item, trace it back to the source, and then trace forward through the production and sale of the finished product.</span></span> <span data-ttu-id="1d798-106">Prosessilla voit selvittää esimerkiksi, mitä asiakkaita tai myyntitilauksia se koski.</span><span class="sxs-lookup"><span data-stu-id="1d798-106">The process can be used to investigate the customers impacted, the sales orders affected, and more.</span></span> <span data-ttu-id="1d798-107">Menettely käyttää USP2-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="1d798-107">This procedure uses demo data company USP2.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8313803e0c6adaed7bc4ca295641f51c7e1185b0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ea5f1ddd8f6be8a1dd2cee47b7746c4764ba28a4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a><span data-ttu-id="f36ed-103">Vapaatekstilaskumallin määrittäminen asiakkaalle</span><span class="sxs-lookup"><span data-stu-id="f36ed-103">Assign a free text invoice template to a customer</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f36ed-104">Tässä tehtävässä kerrotaan, miten vapaatekstilaskun malli liitetään asiakkaalle.</span><span class="sxs-lookup"><span data-stu-id="f36ed-104">This task demonstrates how to assign a free text invoice template to a customer.</span></span> <span data-ttu-id="f36ed-105">Tässä tehtävässä käytetään USMF-esittely-yritystä. Tehtävä on tarkoitettu myyntireskontran laskujen hallinnasta ja käsittelemisestä vastaavalle käyttäjälle.</span><span class="sxs-lookup"><span data-stu-id="f36ed-105">This task uses the USMF demo company and is intended for the user who is responsible for managing and processing A/R invoices.</span></span>
 

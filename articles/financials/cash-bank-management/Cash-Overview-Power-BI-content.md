@@ -17,16 +17,16 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 948fdefc52db2e5cb46e7708d36d172b38285913
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5dccb5c5c6c336607603dfc7a935c039e5ac4aa5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cash-overview-power-bi-content"></a><span data-ttu-id="d44cc-104">Kassayhteenveto – Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="d44cc-104">Cash overview Power BI content</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="d44cc-105">Tässä ohjeaiheessa käsitellään **kassayhteenvetoa** ja Microsoft Power BI -sisältöä.</span><span class="sxs-lookup"><span data-stu-id="d44cc-105">This topic describes the **Cash overview** Microsoft Power BI content.</span></span> <span data-ttu-id="d44cc-106">Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.</span><span class="sxs-lookup"><span data-stu-id="d44cc-106">It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.</span></span>
 

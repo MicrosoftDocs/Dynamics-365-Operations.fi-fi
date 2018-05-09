@@ -17,15 +17,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fdc9567040a2ea4e50325c98a2da19da039586bb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b1ccaeffde4c288667fe797d07e08b5a346b4716
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="enter-project-timesheets"></a><span data-ttu-id="64d4e-103">Syötä projektin työaikaraportit</span><span class="sxs-lookup"><span data-stu-id="64d4e-103">Enter project timesheets</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="64d4e-104">Voit luoda tässä menettelyssä aikaraportin käyttämällä tyhjää aikaraporttilomaketta.</span><span class="sxs-lookup"><span data-stu-id="64d4e-104">This procedure lets you create a timesheet by using an empty timesheet form.</span></span> <span data-ttu-id="64d4e-105">Uusi aikaraportti voi perustua aiemman aikaraportin tietoihin tai Omat suosikit -sivun projekti- ja tehtävämäärityksiin.</span><span class="sxs-lookup"><span data-stu-id="64d4e-105">The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the My favorites page.</span></span> <span data-ttu-id="64d4e-106">Oletusarvoisesti Kaikki työaikaraportit -luettelosivu näyttää kaikki kuluvan kauden aikaraportit.</span><span class="sxs-lookup"><span data-stu-id="64d4e-106">By default, the All timesheets list page displays all your timesheets for the current period.</span></span> <span data-ttu-id="64d4e-107">Voit käyttää Omat aikaraportit -sivun Näytä-kentän avattavaa luetteloa suodattamaan aikaraporttiluetteloa ajanjakson tai raportin mukaan. Voit myös tarkastella sen avulla muiden työntekijöiden puolesta luotuja aikaraportteja.</span><span class="sxs-lookup"><span data-stu-id="64d4e-107">You can use the drop-down list for the Show field in the My timesheets page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers.</span></span> <span data-ttu-id="64d4e-108">Tämän menettelyn luomisessa käytettiin USSI-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="64d4e-108">The demo data company used to create this procedure is USSI.</span></span> <span data-ttu-id="64d4e-109">Aloita menettely valitsemalla Projektinhallinta ja kirjanpito > Työaikaraportit > Omat aikaraportit</span><span class="sxs-lookup"><span data-stu-id="64d4e-109">To begin this procedure, go to Project management and accounting > Timesheets >My timesheets</span></span>
 

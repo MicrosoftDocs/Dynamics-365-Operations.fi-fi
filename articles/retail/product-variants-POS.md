@@ -20,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 933875f56b0f47990cb1cb767f84b23b9c9710d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ff11cf7b23c48675b108d7d03d241fcec2cb792a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a><span data-ttu-id="9dfe8-103">Varastohaku myyntipisteessä</span><span class="sxs-lookup"><span data-stu-id="9dfe8-103">Inventory lookup in the Point of Sale</span></span> 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="9dfe8-104">Myyntipisteen varastohaku auttaa jälleenmyyjiä tehostamaan toimintaa reaaliaikaisesti. Samalla myymälöiden, myyntipisteen ja taustatoimintojen yhdistäminen antaa analyysitietoja.</span><span class="sxs-lookup"><span data-stu-id="9dfe8-104">Inventory lookup in the point of sale (POS) helps retailers achieve real-time operational excellence and gain insights by connecting stores, the POS, and the back office.</span></span> <span data-ttu-id="9dfe8-105">Tällä toiminnolla saa tarkan reaaliaikaisen näkymän eri myymälöiden ja jakelukeskusten tuotevarastoon.</span><span class="sxs-lookup"><span data-stu-id="9dfe8-105">This functionality provides an accurate real-time view of product inventory across stores and distribution centers.</span></span> <span data-ttu-id="9dfe8-106">Sen avulla jälleenmyyjät voivat myös tehostaa toimintaa ja kustannussäästöjä, sillä reaaliaikainen varastosuunnittelu paranee.</span><span class="sxs-lookup"><span data-stu-id="9dfe8-106">It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time.</span></span>
 

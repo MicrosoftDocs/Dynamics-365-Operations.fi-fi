@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16e2eb864f092ef221374e3d26b2d04a93be4de4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dbab5ade75aa8999f7e91c5d27f896242f6c7604
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="lean-pegging-from-sales-orders"></a><span data-ttu-id="b6f74-103">Lean-tarvekohdistus myyntitilauksista</span><span class="sxs-lookup"><span data-stu-id="b6f74-103">Lean pegging from sales orders</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b6f74-104">Tässä menettelyssä käsitellään sellaisen myyntirivin tarvekohdistuspuuta, jossa nimike tuotetaan kanbanien avulla.</span><span class="sxs-lookup"><span data-stu-id="b6f74-104">This procedure focuses on validating the pegging tree from a sales line where the item is produced with kanbans.</span></span> <span data-ttu-id="b6f74-105">Tarvekohdistuspuun vahvistamisen jälkeen kaikki kanban-työt on suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="b6f74-105">After validating the pegging tree, all the kanban jobs are planned.</span></span> <span data-ttu-id="b6f74-106">Tämä on kätevää tilausskenaarioissa, joissa tilauksen vastaanottajan on varmistettava, että tuotanto voi alkaa heti.</span><span class="sxs-lookup"><span data-stu-id="b6f74-106">This is useful for order scenarios where the order taker needs to ensure that production can start right away.</span></span> <span data-ttu-id="b6f74-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="b6f74-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b6f74-108">Tämä menettely on tarkoitettu Lean-yrityksen ennakkotilausten vastaanottajille.</span><span class="sxs-lookup"><span data-stu-id="b6f74-108">This procedure is intended for the advanced order taker working in a lean company.</span></span>
 

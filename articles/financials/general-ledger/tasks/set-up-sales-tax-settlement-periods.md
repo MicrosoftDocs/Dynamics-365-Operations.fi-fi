@@ -16,15 +16,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6de8dbd33a02183ee8bafca720c3738e8eac44e8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fcf4ebcb8a9c27961e250177d4254f28aaefc883
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a><span data-ttu-id="2dc01-103">Määritä arvonlisäveron tilityskaudet</span><span class="sxs-lookup"><span data-stu-id="2dc01-103">Set up sales tax settlement periods</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2dc01-104">Arvonlisäveron tilityskaudet sisältävät tietoja kausiväleistä, joilta arvonlisävero on raportoitava ja maksettava.</span><span class="sxs-lookup"><span data-stu-id="2dc01-104">Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid.</span></span> <span data-ttu-id="2dc01-105">Tilitysprosessi voidaan suorittaa tietyn päivämäärävälin tilityskaudelle.</span><span class="sxs-lookup"><span data-stu-id="2dc01-105">A settlement process can be run for a settlement period for a specific date interval.</span></span> <span data-ttu-id="2dc01-106">Kaikki tilityskauteen liittyvät verokoodit on tilitettävä.</span><span class="sxs-lookup"><span data-stu-id="2dc01-106">All tax codes associated with the settlement period will be settled.</span></span> <span data-ttu-id="2dc01-107">Liittyvän arvonlisäveroviranomaisen määrityksestä riippuen verovelka kirjataan joko toimittajan tilille tai kirjanpitotilille.</span><span class="sxs-lookup"><span data-stu-id="2dc01-107">Depending on the set up of the related Sales tax authority, the tax liability is posted either to a vendor or a General ledger account.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 26fb7dc7113411bb5117476ddfa02ae9d81cf287
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 945c83a72fc640d0eed0cd8ba14a701bffe1acd8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-configuration-routes"></a><span data-ttu-id="59156-103">Määritä konfiguraation reititykset</span><span class="sxs-lookup"><span data-stu-id="59156-103">Define configuration routes</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="59156-104">Tässä menettelyssä keskitytään määrittämään konfiguraatioreitti, joka määrittää, missä järjestyksessä konfiguraatioryhmät esitetään.</span><span class="sxs-lookup"><span data-stu-id="59156-104">This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented.</span></span> <span data-ttu-id="59156-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="59156-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="59156-106">Tämä on kuudes kahdeksasta menettelystä, joissa selitetään, miten dimensioihin perustuvia konfiguraatioyhdistelmiä luodaan.</span><span class="sxs-lookup"><span data-stu-id="59156-106">This is the sixth procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 46178d9da5464d8cb74b1d52142d6ad08a293349
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 602be91bff1bd90b3888b7861907c23f334b0d02
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="packing-materials-and-fees"></a><span data-ttu-id="d8c4c-105">Pakkausmateriaalit ja maksut</span><span class="sxs-lookup"><span data-stu-id="d8c4c-105">Packing materials and fees</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="d8c4c-106">Pakkausmateriaalimaksuja maksetaan kierrätysyritykselle säännöllisin väliajoin.</span><span class="sxs-lookup"><span data-stu-id="d8c4c-106">Packing material fees are paid to a recycling company at certain intervals.</span></span> <span data-ttu-id="d8c4c-107">Maksuna peritään tietty summa kunkin pakkausyksikköön kuuluvan materiaalin painoyksikköä kohden.</span><span class="sxs-lookup"><span data-stu-id="d8c4c-107">An amount is paid, per unit of weight, for each material that a packing unit consists of.</span></span> <span data-ttu-id="d8c4c-108">Pakkausmateriaalimaksut lasketaan ja raportoidaan, mutta niistä ei kirjata kirjanpitotapahtumia, koska niitä ei käsitellä viranomaiselle maksettavana verona.</span><span class="sxs-lookup"><span data-stu-id="d8c4c-108">Packing material fees are calculated and reported, but no ledger transactions are posted because the fees are not regarded as taxes to be paid to an authority.</span></span>
 

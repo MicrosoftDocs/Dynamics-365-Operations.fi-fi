@@ -19,16 +19,16 @@ ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec695084e90bdc4730f56baf675503d764faa2ac
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e2a99476da7ce3feab1d2c37e8510f0042cf4b63
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="inventory-on-hand-mobile-workspace"></a><span data-ttu-id="1b9b5-104">Käytettävissä olevan varaston mobiilityötila</span><span class="sxs-lookup"><span data-stu-id="1b9b5-104">Inventory on-hand mobile workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="1b9b5-105">Tässä ohjeaiheessa on tietoja **käytettävissä olevan varaston** mobiilityötilasta.</span><span class="sxs-lookup"><span data-stu-id="1b9b5-105">This topic provides information about the **Inventory on-hand** mobile workspace.</span></span> <span data-ttu-id="1b9b5-106">Tämä työtila auttaa syventämään näkemyksiä varatusta ja käytettävissä olevasta varastosta milloin tahansa ja missä tahansa.</span><span class="sxs-lookup"><span data-stu-id="1b9b5-106">This workspace helps you gain insights into reserved and available inventory anytime and anywhere.</span></span>
 

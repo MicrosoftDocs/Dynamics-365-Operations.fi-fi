@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b60dbe15eca10511f4aaaf472b512eb003fbf6bc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 636b23c8f87d79b0e62e5e92e79aacc33171cdfc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="confirm-sales-orders"></a><span data-ttu-id="e54c2-103">Vahvista myyntitilaukset</span><span class="sxs-lookup"><span data-stu-id="e54c2-103">Confirm sales orders</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e54c2-104">Seuraavassa menettelyssä selvitetään, miten myyntitilaukset vahvistetaan.</span><span class="sxs-lookup"><span data-stu-id="e54c2-104">This procedure demonstrates how to confirm sales orders.</span></span> <span data-ttu-id="e54c2-105">Näet, miten yksi tilaus vahvistetaan. Näet myös, miten useita tilauksia voi vahvistaa samanaikaisesti.</span><span class="sxs-lookup"><span data-stu-id="e54c2-105">You’ll be shown how to confirm a single order, and how to confirm multiple orders at once.</span></span> <span data-ttu-id="e54c2-106">Yleensä myyntitilauksen käsittelijä tekee nämä tehtävät.</span><span class="sxs-lookup"><span data-stu-id="e54c2-106">These tasks would typically be carried out by a sales order processor.</span></span> <span data-ttu-id="e54c2-107">Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoilla tai omilla tiedoillasi.</span><span class="sxs-lookup"><span data-stu-id="e54c2-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="e54c2-108">Varmista ennen aloittamista, että samalla asiakkaalla on useita avoimia myyntitilauksia.</span><span class="sxs-lookup"><span data-stu-id="e54c2-108">Before you start, make sure there are several open sales orders for the same customer.</span></span> <span data-ttu-id="e54c2-109">Jos käytössä on USMF, käytä asiakasta US-027.</span><span class="sxs-lookup"><span data-stu-id="e54c2-109">If you’re using USMF, you can use customer US-027.</span></span>
 

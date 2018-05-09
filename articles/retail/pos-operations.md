@@ -19,16 +19,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b85da42e94fe3108bc89d05fc800a9d8a06bfc97
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5aa331a6868ab468aa8b4fd30991b955ce311be1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="pos-operations-online-and-offline"></a><span data-ttu-id="3439c-104">POS-toiminnot verkossa ja paikallisesti</span><span class="sxs-lookup"><span data-stu-id="3439c-104">POS operations, online and offline</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="3439c-105">Useimmat käyttäjän myyntipisteessä tekemät toimenpiteet ovat toimintoja.</span><span class="sxs-lookup"><span data-stu-id="3439c-105">Most actions that user take in the point of sale (POS) are considered operations.</span></span> <span data-ttu-id="3439c-106">Toiminnot määritetään ja niitä hallinnoidaan Microsoft Dynamics 365 for Retail -sovelluksen taustajärjestelmässä.</span><span class="sxs-lookup"><span data-stu-id="3439c-106">Operations are configured and managed in the Microsoft Dynamics 365 for Retail back office.</span></span> <span data-ttu-id="3439c-107">Myyntipisteen painikeruudukon painikkeisiin voi lisätä useita toimintoja.</span><span class="sxs-lookup"><span data-stu-id="3439c-107">Many operations can be added to buttons in the POS button grid.</span></span> <span data-ttu-id="3439c-108">Käyttäjät voivat tämän jälkeen valita painikkeita ja käynnistää toimintoja.</span><span class="sxs-lookup"><span data-stu-id="3439c-108">Users can then select the buttons to invoke the operations and perform their function.</span></span> <span data-ttu-id="3439c-109">Muut toiminnot ovat osa myyntipisteen pääsovellusta. Ne käynnistetään joko näytön painikkeiden avulla tai muiden työnkulkujen tai prosessien osana.</span><span class="sxs-lookup"><span data-stu-id="3439c-109">Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.</span></span>
 

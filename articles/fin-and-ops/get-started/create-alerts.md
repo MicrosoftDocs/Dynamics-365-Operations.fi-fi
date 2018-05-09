@@ -17,18 +17,18 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 93e8f97dbd3f60be72793c04eb729623321016f8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fbec520054ab41e3b2d92e422d1b5f5276d44e2c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-alerts"></a><span data-ttu-id="08c5a-103">Luo hälytykset</span><span class="sxs-lookup"><span data-stu-id="08c5a-103">Create alerts</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 ## <a name="getting-started"></a><span data-ttu-id="08c5a-104">Aloittaminen</span><span class="sxs-lookup"><span data-stu-id="08c5a-104">Getting started</span></span>
 <span data-ttu-id="08c5a-105">Ennen hälytyssäännön luomista on päätettävä, milloin ja missä tilanteissa haluat vastaanottaa hälytyksiä.</span><span class="sxs-lookup"><span data-stu-id="08c5a-105">Before you set up an alert rule, decide when or in what situations you want to receive alerts.</span></span> <span data-ttu-id="08c5a-106">Kun tiedät, mistä tapahtumasta haluat ilmoituksen, voit etsiä Microsoft Dynamics 365 for Finance and Operationsissa sivun, jossa kyseisen tapahtuman aikaansaavat tiedot näkyvät.</span><span class="sxs-lookup"><span data-stu-id="08c5a-106">When you know which event you want to be notified about, in Microsoft Dynamics 365 for Finance and Operations find the page where the data that causes that event appears.</span></span> <span data-ttu-id="08c5a-107">Tapahtuma voi olla tietty päivämäärä tai tapahtuva muutos.</span><span class="sxs-lookup"><span data-stu-id="08c5a-107">The event can be a date that arrives or a specific change that occurs.</span></span> <span data-ttu-id="08c5a-108">Sinun onkin etsittävä sivu, jossa päivämäärä on määritetty tai jossa muuttuva kenttä tai luotu uusi tietue tulee näkyviin.</span><span class="sxs-lookup"><span data-stu-id="08c5a-108">Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears.</span></span> <span data-ttu-id="08c5a-109">Kun nämä tiedot ovat valmiina, voit luoda hälytyssäännön.</span><span class="sxs-lookup"><span data-stu-id="08c5a-109">After you have this information, you can create the alert rule.</span></span>

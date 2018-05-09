@@ -17,15 +17,15 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4af670fd762be1afa283310bb26ba95a40de30d3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6f1f858a8be6ecd8be968a8d71bab4c025b84ebf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="prepare-a-process-kanban-job-when-materials-are-available-for-the-work-cell"></a><span data-ttu-id="2148e-103">Prosessin kanban-työn valmisteleminen kun materiaalit ovat käytettävissä työsolulle</span><span class="sxs-lookup"><span data-stu-id="2148e-103">Prepare a process kanban job when materials are available for the work cell</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2148e-104">Tässä tehtävässä keskitytään prosessin kanban-työn valmistelemiseen silloin, kun kaikki työsolun materiaalit ovat käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="2148e-104">This task focuses on preparing a process kanban job when all materials are available for the work cell.</span></span> <span data-ttu-id="2148e-105">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="2148e-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="2148e-106">Tämä tehtävä on tarkoitettu koneenkäyttäjille.</span><span class="sxs-lookup"><span data-stu-id="2148e-106">This task is intended for the machine operator.</span></span>
 

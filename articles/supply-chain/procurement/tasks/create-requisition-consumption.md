@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bad86a4726ce69015f318d9af98992b36d34b29a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ad2a356c4f6bc2c72898e8b841963e6bee6daac0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-requisition-for-consumption"></a><span data-ttu-id="608c6-103">Luo kulutusehdotus</span><span class="sxs-lookup"><span data-stu-id="608c6-103">Create a requisition for consumption</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="608c6-104">Tässä menettelyssä käsitellään yksityiskohtaisesti ehdotuksen luontiprosessi.</span><span class="sxs-lookup"><span data-stu-id="608c6-104">This procedure walks you through the process of creating a requisition.</span></span> <span data-ttu-id="608c6-105">Siinä näytetään erilaisia tapoja hakea tuotteiden hankintaluettelon tuotteita sekä millä tavoin lisätään tuote, jota ei ole luettelossa.</span><span class="sxs-lookup"><span data-stu-id="608c6-105">It shows you different ways to search for products in your procurement catalog and how to add a product that isn’t in your catalog.</span></span> <span data-ttu-id="608c6-106">Varmista ennen menettelyn aloittamista, että ostokäytäntö on määritetty siten, että ehdotuksen oletustyyppi on Kulutus.</span><span class="sxs-lookup"><span data-stu-id="608c6-106">Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition.</span></span> <span data-ttu-id="608c6-107">Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.</span><span class="sxs-lookup"><span data-stu-id="608c6-107">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="608c6-108">Menettelyn voi suorittaa vain käyttäjäprofiili, joka on määritetty työntekijäksi.</span><span class="sxs-lookup"><span data-stu-id="608c6-108">The procedure can only be carried out by a user profile that is set up as worker.</span></span>  <span data-ttu-id="608c6-109">Työntekijä suorittaa yleensä tämän tehtävän.</span><span class="sxs-lookup"><span data-stu-id="608c6-109">This task would normally be carried out by an employee.</span></span> <span data-ttu-id="608c6-110">Työntekijän käyttöoikeusroolin ansiosta voit suorittaa tehtävät. Jos käytössä on USMF, voit kirjautua sisään tunnuksella Alicia.</span><span class="sxs-lookup"><span data-stu-id="608c6-110">The Employee employ security role will allow you to carry out the tasks, or if you’re using USMF, you can log in as Alicia.</span></span>
 

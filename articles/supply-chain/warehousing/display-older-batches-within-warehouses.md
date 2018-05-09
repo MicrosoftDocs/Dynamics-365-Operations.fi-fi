@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4f2dc9221b72600c928db9fd306038725c7af305
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 27fbf57ba7114ca773f2a80de51b36b4e63c6dd6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-display-older-batches-within-warehouse-on-a-mobile-device"></a><span data-ttu-id="20864-103">Varaston vanhojen erien näyttämisen määrittäminen mobiililaitteessa</span><span class="sxs-lookup"><span data-stu-id="20864-103">Configure Display older batches within warehouse on a mobile device</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="20864-104">**Näytä varaston vanhat erät** -määrityksellä saadaan näkyviin luettelo sijainnista, joissa on vanhempia eriä kuin työrivin nykyinen sijainti.</span><span class="sxs-lookup"><span data-stu-id="20864-104">The **Display older batches within warehouse** configuration lets you display a list of locations with batches older than the current location of the work line.</span></span> <span data-ttu-id="20864-105">Näkyvässä sijaintiluettelossa on tietoja sijainnin vanhoista eristä, erien erääntymispäivä ja kunkin erän fyysinen varasto.</span><span class="sxs-lookup"><span data-stu-id="20864-105">The list of locations that are displayed includes information about the older batches in the location with the expiration date and the physical inventory of each batch.</span></span> <span data-ttu-id="20864-106">Voit valita keräilyn uudesta sijainnista tai jatkaa keräilyä nykyisestä sijainnista.</span><span class="sxs-lookup"><span data-stu-id="20864-106">You can choose to pick from a new location or to continue picking from the current location.</span></span> 
 - <span data-ttu-id="20864-107">Kerää uudesta sijainnista – Jos valitse keräilyn uudesta sijainnista, nykyinen työrivi päivitetään käyttämään uutta sijaintia ja työ jatkuu entiseen tapaan uudessa sijainnissa.</span><span class="sxs-lookup"><span data-stu-id="20864-107">Pick from a new location - If you select a new location to pick from, the  current work line will be updated to use the new location and work will continue as usual with the new location.</span></span> <span data-ttu-id="20864-108">Uusi sijainti kelpaa, kun sen käytettävissä oleva määrä kattaa koko työrivin.</span><span class="sxs-lookup"><span data-stu-id="20864-108">For the new location to be valid, it must have enough available quantity for the whole work line.</span></span> <span data-ttu-id="20864-109">Jos vaadittu määrä ei ole käytettävissä, työriviä ei päivitetään ja luettelo on näkyvissä.</span><span class="sxs-lookup"><span data-stu-id="20864-109">If the required quantity is not available, the work line will not be updated, and the list will display.</span></span> 

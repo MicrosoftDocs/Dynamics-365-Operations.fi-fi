@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8a01506d94a12642cae1c8331f473afb76bcf2b6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 54b4c492c5112ae8f5a56227ef037ca6d016569e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-goal"></a><span data-ttu-id="04156-103">Luo tavoite</span><span class="sxs-lookup"><span data-stu-id="04156-103">Create a goal</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="04156-104">Voit luoda tavoitteita, lisätä niihin aktiviteettejä, kerätä mittauksia yhdistää tavoitteet arviointiin.</span><span class="sxs-lookup"><span data-stu-id="04156-104">You can create goals, add activities to goals, track measurements, and link the goals to a review.</span></span> <span data-ttu-id="04156-105">Tämä menettelyn luomisessa käytettiin USMF-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="04156-105">This procedure was created using the USMF demo data company.</span></span> <span data-ttu-id="04156-106">Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="04156-106">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 

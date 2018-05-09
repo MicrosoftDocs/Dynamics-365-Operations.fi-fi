@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d21a4aa035b55385c8b0ced3bfe91c7aaf064267
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ec4d3b1503d8159847bcf8083b5b663499df9798
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a><span data-ttu-id="756e3-103">Rekisteröi kuljettajan sisäänkuittaus ja lähteminen tapaamiseen</span><span class="sxs-lookup"><span data-stu-id="756e3-103">Register driver check-in and check-out for an appointment</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="756e3-104">Tässä menettelyssä kuvataan, miten kuljettajan sisään- ja uloskuittaukset rekisteröidään. Kuljetuskoordinaattori tekee tämän yleensä.</span><span class="sxs-lookup"><span data-stu-id="756e3-104">This procedure shows how to register a driver check-in and a driver check-out. This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="756e3-105">Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="756e3-105">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="756e3-106">Ennen kuin aloitat, kuormalla on oltava tapaaminen.</span><span class="sxs-lookup"><span data-stu-id="756e3-106">Before you start, there must be an appointment set up for a load.</span></span> <span data-ttu-id="756e3-107">Tapaamisen voit luoda ajamalla ensin "Kuorman tapaamisen määrittäminen" -menettelyn.</span><span class="sxs-lookup"><span data-stu-id="756e3-107">To create an appointment, you can run the “Set up an appointment for a load” procedure as a prerequisite.</span></span>
 
