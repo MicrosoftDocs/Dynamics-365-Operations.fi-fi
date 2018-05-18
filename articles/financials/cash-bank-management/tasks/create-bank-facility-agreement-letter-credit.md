@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Luo pankin limiittisopimus remburssia varten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä tehtävä näyttää, miten pankin limiittisopimus luodaan remburssin käsittelemistä varten. Määritä pankin limiitit ja kirjausprofiilit ennen tätä tehtävää.  Tässä tehtävässä käytetään esittely-yritystä USMF.  
 

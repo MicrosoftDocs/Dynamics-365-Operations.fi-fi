@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-a-call-center-channel"></a>Puhelinkeskuskanavan määrittäminen
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Yritys voi määrittää useita puhelinkeskuskanavia Microsoft Dynamics 365 for Retailissa. Puhelinkeskukset määritetään valitsemalla **Retail** \> **Kanavat** \> **Puhelinkeskukset** \> **Kaikki puhelinkeskukset**. Ne ovat yrityskohtaisia.
 

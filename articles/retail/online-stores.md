@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="online-store-overview"></a>Verkkokaupan yleiskatsaus
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä artikkelissa on tietoja vähittäismyynnin verkkokaupoista ja niiden määrittämisestä Microsoft Dynamics 365 for Retailista
 

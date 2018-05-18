@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="schedule-a-production-order"></a>Ajoita tuotantotilaus
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä selvitetään, miten tuotantotilaus ajoitetaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä on kolmas seitsemästä tuotantotilauksen elinkaaresta kertovasta menettelystä.
 

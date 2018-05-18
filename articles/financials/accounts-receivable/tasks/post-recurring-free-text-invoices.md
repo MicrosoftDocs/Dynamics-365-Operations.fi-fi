@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Luo ja kirjaa toistuvat vapaatekstilaskut
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Toistuvia laskuja käytetään silloin, kun asiakkailta laskutetaan sama summa toistuvasti. Tässä tallenteessa käytetään esittely-yritystä USMF. Tallennus on tarkoitettu henkilölle, joka on vastuussa myyntireskontran laskujen hallinnasta ja käsittelemisestä.
 

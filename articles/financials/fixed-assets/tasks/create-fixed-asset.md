@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-fixed-asset"></a>Luo käyttöomaisuuserä
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tehtävän ohjauksessa käytetään esittely-yritystä USMF.  Tehtävässä luodaan uusi käyttöomaisuus Käyttöomaisuus-luettelosivun avulla.
 

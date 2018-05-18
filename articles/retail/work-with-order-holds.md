@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-holds"></a>Tilausten pidot
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tämän ohjeaihe kuvaa tilausten pitoja Dynamics 365 for Retailissa.
 

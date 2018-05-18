@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="general-ledger"></a>Kirjanpito 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kirjanpidon avulla voit määrittää ja hallinnoida yrityksen kirjanpitotietueita. Kirjanpito on debet- ja kredit-tapahtumien luettelo. Nämä merkinnät on luokiteltu tilikartan tilien avulla. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-iso20022-credit-transfer-configuration"></a>Tuo ISO20022-tilisiirron konfiguraatio
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Näiden ohjeiden avuilla voit tuoda toimittajan maksun sähköisen raportointikonfiguraation. Esimerkkinä on käytetty saksalaista ISO 20022 -hyvityssiirtomuotoa. Nämä ohjeet soveltuvat myös muihin, saatavilla oleviin sähköisiin raportointimuotoihin. 
 

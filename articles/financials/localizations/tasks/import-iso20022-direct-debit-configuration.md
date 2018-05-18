@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-iso20022-direct-debit-configuration"></a>Tuo ISO20022-suoraveloituksen konfiguraatio
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Näiden ohjeiden avuilla voit tuoda asiakkaan maksun sähköisen raportointikonfiguraation. Näissä ohjeissa käytetään esimerkkinä ISO 20022 -suoraveloitusmuotoa. 
 

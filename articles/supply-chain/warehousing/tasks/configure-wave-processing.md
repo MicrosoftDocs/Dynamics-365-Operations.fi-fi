@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-wave-processing"></a>Aallon käsittelyn kokoonpano
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä ohjeessa kuvataan ehdot, jotka määrittävät kuinka aallon käsittelyn yhteydessä varastolle luotu työ käsitellään, ja käsitelläänkö aallot manuaalisesti vai automaattisesti. Voit määrittää ehdot asettamalla aaltomallit ja kyselyt, jotka vastaavat aaltoa myyntitilausten, tuotantotilausten ja kanban-tilausten vapautettujen rivien kanssa. Aallon käsittelyä käytetään varastoissa, jotka käyttävät varastonhallintamoduulin toimintoja, ei varastoissa, joissa käytetään inventoinninhallintamoduulin toimintoja. Voit suorittaa tämän menettelyn esittely-yrityksessä USMF.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advanced-filtering-and-query-syntax"></a>Suodatuksen ja kyselyn lisäsyntaksi
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on kuvattu suodatus- ja kyselyvaihtoehtoja, jotka ovat käytettävissä, kun käytät Lisäsuodatus/-lajittelu-valintaikkunan "vastaa kohdetta" -operaattoria.
 

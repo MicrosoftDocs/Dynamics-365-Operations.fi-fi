@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="budget-planning-overview"></a>Budjetin suunnittelun yleiskuvaus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tämä artikkeli esittelee budjettisuunnittelun ja sisältää tietoja, joiden avulla voit määrittää budjettisuunnittelun ja budjettisuunnitteluprosessit.
 

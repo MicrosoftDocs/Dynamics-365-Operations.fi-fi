@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="review-collections-information"></a>Perimistietojen tarkistaminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä käsitellään perintätietojen tarkastelemista sekä erilaisia asetusvaihtoehtoja ja perintätapahtumia. Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 

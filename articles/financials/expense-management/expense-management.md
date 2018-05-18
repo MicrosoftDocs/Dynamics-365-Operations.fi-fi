@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="expense-management"></a>Kulujen hallinta
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kulujenhallinta-moduulin avulla voit luoda integroidun työnkulun, johon voit tallentaa maksutapatietoja, tuoda luottokorttitapahtumia ja seurata työntekijöiden liiketoiminnan puitteissa kuluttamaa rahaa. Voit myös määrittää kulukäytännöt ja automatisoida matkakulujen hyvityksen. 
 

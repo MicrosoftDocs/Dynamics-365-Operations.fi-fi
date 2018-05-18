@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-an-existing-employee-through-recruiting"></a>Nykyisen työntekijän työhönotto rekrytoinnin kautta
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Joskus avoimiin toimiin palkataan ehdokkaita, jotka ovat jo organisaatiossa töissä. Tässä menettelyssä kerrotaan nykyisen työntekijän palkkaamisesta työhönottoprosessin kautta. Tässä menettelyssä työhönottoprojekti on jo määritetty ja nykyinen työntekijä on jo lähettänyt hakemuksen työhönottoprojektiin. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

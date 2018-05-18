@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="process-compensation"></a>Kompensaation käsittely
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Voit laskea kompensaation käsittelyssä työntekijöille uudet peruskompensaatiosummat pääoman oikaisujen, pätevyyteen liittyvien palkankorotustavoitteiden ja suorituksen perusteella. Tässä ohjeaiheessa käsitellään kiinteiden kompensaatiosuunnitelmien perustyöntyönkulku kompensaation käsittelyssä ilman, että työntekijän suoritus huomioidaan.
 

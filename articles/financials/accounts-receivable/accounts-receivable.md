@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="accounts-receivable-home-page"></a>Myyntireskontran aloitussivu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Myyntireskontran avulla voit seurata myyntilaskuja ja saapuvia maksuja. 
 

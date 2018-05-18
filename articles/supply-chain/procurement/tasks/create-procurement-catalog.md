@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-procurement-catalog"></a>Luo hankintaluettelo
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä oppaassa näytetään, miten tuotteiden hankintaluettelo luodaan. Yleensä hankinta-asiantuntijat suorittavat tämän tehtävän. Opit myös, miten työntekijät voivat käyttää luetteloa ostoehdotuksien luonnissa. Järjestelmässä on oltava hankintaluokkahierarkia ennen luettelon luomista. Hierarkia periytyy uuteen luetteloon, kuten myös kaikki hierarkian tuotteet. Voit käyttää tätä opasta USMF-demoyrityksessä, jossa hankintaluokkahierarkia sekä menettelyn ohjeissa käytetyt esimerkit ovat saatavilla.
 

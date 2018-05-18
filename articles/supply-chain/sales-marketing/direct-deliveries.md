@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="direct-deliveries"></a>Suoratoimitukset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja suoratoimituksista. Suoratoimituksissa nimikkeet lähetetään suoraan toimittajalta asiakkaallesi.
 

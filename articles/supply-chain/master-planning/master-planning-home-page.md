@@ -29,7 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Pääsuunnittelun aloitussivu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pääsuunnittelun avulla yritykset voivat määrittää tulevan raaka-aineiden ja kapasiteetin tarpeen ja tasapainottaa ne yrityksen tavoitteita vastaaviksi. Pääsuunnittelussa arvioidaan seuraavat seikat: 
 

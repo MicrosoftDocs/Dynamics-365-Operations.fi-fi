@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="end-a-production-order"></a>Tuotantotilauksen lopetus
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä selvitetään, miten tuotantotilaus päätetään. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä on viimeinen seitsemästä tuotantotilauksen elinkaaresta kertovasta menettelystä.
 

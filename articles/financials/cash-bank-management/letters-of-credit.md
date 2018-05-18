@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit"></a>Luottokirjeet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Luottokirjeet ovat pankkitositteita, joita käytetään usein valtioiden rajojen yli tapahtuvassa tavaroiden ostossa ja myynnissä. 
 

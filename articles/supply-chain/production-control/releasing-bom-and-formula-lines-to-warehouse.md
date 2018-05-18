@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Tuotantorakenne- ja reseptirivien vapauttaminen varastoon
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään tuoterakennerivien ja reseptirivien raaka-aineiden varastoon vapauttamisprosessia. Kun vapautat tuoterakenne- tai reseptirivin varastoon, järjestelmä määrittää ensin, onko materiaalia jo saatavana työnohjauksessa tuotannon syöttösijainnissa, jossa tuotantoprosessi kuluttaa materiaalin.
 
@@ -62,7 +62,7 @@ Tässä lyhyessä YouTube-videossa näytetään, miten tuorerakenne- ja reseptir
 
 ### <a name="batch-job-setup"></a>Erätyön asetukset
 
-Voit määrittää **Tuoterakenteen ja reseptirivien automaattinen vapautus** -erätyön kyselyssä suodatusehdot määrittämään, kuinka monta päivää eteenpäin työn on haettava rivejä, joilla on vapauttamattomia määriä. Käytä työn kyselyssä suodatusehtona **Raaka-aineen päivämäärä** -kentässä**(LessThanDate())**-funktiota.
+Voit määrittää **Tuoterakenteen ja reseptirivien automaattinen vapautus** -erätyön kyselyssä suodatusehdot määrittämään, kuinka monta päivää eteenpäin työn on haettava rivejä, joilla on vapauttamattomia määriä. Käytä työn kyselyssä suodatusehtona **Raaka-aineen päivämäärä** -kentässä **(LessThanDate())**-funktiota.
 
 Seuraavan kuvan tuotantotilauksessa on kaksi työtä, 10 ja 20, jotka kattavat tuotantotilauksen kokoonpanon ja pakkauksen. Kumpikin työ on määritetty kuluttamaan tietty määrä materiaalia. Tässä kuvassa vapautuksen aikarajan ilmaiseva aikajanan alla oleva vihreä nuoli on sama **(LessThanDate())**-ehdoissa määritetty päivien määrä. Esimerkiksi **(LessThanDate(2))** ilmaisee, että työn on haettava vapauttamattomia määriä vain kahden päivän aikarajan ajalta.
 

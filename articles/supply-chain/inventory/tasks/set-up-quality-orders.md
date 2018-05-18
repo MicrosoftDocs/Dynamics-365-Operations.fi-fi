@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-quality-orders"></a>Määritä laatutilaukset
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Seuraavissa vaiheissa kerrotaan, miten laadunhallintaprosessi otetaan käyttöön, kun saapuva varasto on tarkistettava heti saapumisen yhteydessä tehtävän rekisteröinnin jälkeen. Laatupäällikkö tekee yleensä tämän menettelyn. Prosessi sisältää laaturyhmän luomisen, kerättävien nimikkeiden määrittämisen ja testiryhmän, jonne kerätään laaturyhmän nimikkeille suoritettavat testit. Voit suorittaa tämän ohjauksen esittely-yrityksessä USMF.
 

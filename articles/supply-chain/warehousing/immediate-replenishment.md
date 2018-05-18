@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="immediate-replenishment"></a>Välitön täydennys
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Välittömällä täydennyksellä voit täydentää varaston välittömästi sen jälkeen, kun suuntadirektiivirivi ei osoita varastoa. Täydennys perustuu yhteen riviin sijaintidirektiivin asetuksissa. Jos varastoa ei ole käytettävissä siinä kyseisen rivin määrittämässä yksikössä, kyseisen mittayksikön täydennys tapahtuu heti.
 

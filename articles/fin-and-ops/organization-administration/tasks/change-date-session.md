@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-date-for-the-session"></a>Istunnon päivämäärän muuttaminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Kuluvaa päivää käytetään oletusarvoisesti syötettäessä tai kirjattaessa merkintöjä kirjauskansioon. Voit muuttaa nykyisessä istunnossa käytettävää päivämäärää. Tällä toiminnolla voi tarvittaessa päivätä kirjauskansion tai lähdeasiakirjojen merkinnät varhemmaksi.
 

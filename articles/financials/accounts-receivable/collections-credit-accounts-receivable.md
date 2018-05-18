@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Hyvitykset ja perinnät myyntireskontrassa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Myyntireskontran perintätietoja hallitaan yhdessä keskitetyssä näkymässä käyttämällä Finance and Operationsin Perintä-sivua. Luotonvalvonnan johtajat voivat käyttää uutta keskitettyä näkymää perinnän hallitsemiseen. Perimisasiamiehet voivat aloittaa perintäprosessin asiakasluetteloista, jotka muodostetaan ennalta määritettyjen ehtojen mukaan, tai Asiakkaat-sivulta.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="activity-based-subcontracting"></a>Toimintoperusteinen alihankinta
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa kuvataan yksityiskohtaisesti, miten alihankintatoimintoja voi käyttää lean-valmistuksen tuotantovirrassa.
 

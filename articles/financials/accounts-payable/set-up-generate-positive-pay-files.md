@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Positive pay -tiedostojen määrittäminen ja luominen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan Positive pay -toiminnon määrittämistä ja Positive pay -tiedostojen luomista. 
 

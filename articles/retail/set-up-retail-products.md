@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-retail-products"></a>Vähittäismyyntituotteiden määrittäminen
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä artikkelissa kuvataan vähittäiskaupan tuotteiden määrittäminen Microsoft Dynamics 365 for Retailissa.
 

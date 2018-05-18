@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Tunnista ja ratkaise tehtävien eriyttämisen ristiriidat
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Voit määrittää sääntöjä erottamaan tehtävät, joilla on oltava eri käyttäjät. Tätä kutsutaan tehtävien eriyttämiseksi. Kun käyttäjän käyttöoikeusroolin tai roolimääritysten kuvaus rikkoo sääntöjä, kirjataan ristiriita. Järjestelmänvalvojan on ratkaistava kaikki ristiriidat. Ristiriidat tunnistetaan ja ratkaistaan seuraavalla menettelyllä. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="unit-of-measure-and-stocking-policies"></a>Mittayksikköä ja varastointikäytännöt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa kerrotaan, kuinka oletusyksiköitä, yksikön sarjoja ja yksikkömuunnoksia käytetään varastoprosesseissa.
 

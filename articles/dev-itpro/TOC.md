@@ -9,9 +9,14 @@
 ## [Sovelluspino ja palvelinarkkitehtuuri](dev-tools/application-stack-server-architecture.md)
 ## [Kokeiluversion hankkiminen](dev-tools/get-evaluation-copy.md)
 ## [Sovelluksen tilaaminen](dev-tools/sign-up-preview-subscription.md)
-## [Kehitysympäristön käyttöönottaminen ja käyttö](dev-tools/access-instances.md)
-## [Kehitysympäristön järjestelmävaatimukset](dev-tools/development-system-requirements.md)
-## Kuljetuskaluston hallinnan esimerkkisovellus
+## [Kehitysympäristön käyttöönotto ja käyttö](dev-tools/access-instances.md)
+### [Kehittäjän virtuaalikoneen konfigurointi](dev-tools/configure-developer-vm.md)
+### [Uuden käyttäjän luominen kehittämiskoneessa](dev-tools/enable-development-machine.md)
+### [Sovelluskehityksen ja koonnin virtuaalikoneet, jotka eivät salli järjestelmänvalvojan käyttöä - usein kysytyt kysymykset](sysadmin/VMs-no-admin-access.md)
+### [Paikallisen ympäristön nimeäminen uudelleen Visual Studio Team Services -käyttöä varten](migration-upgrade/vso-machine-renaming.md)
+### [Kehityksen järjestelmävaatimukset](dev-tools/development-system-requirements.md)
+## [Versionhallinta, metatietojen haku ja siirtyminen](dev-tools/version-control-metadata-navigation.md)
+## Kalustonhallinnan esimerkkisovellus
 ### [Kalustonhallinnan esimerkkisovellus](dev-tools/fleet-management-sample.md)
 ### [Kalustonhallinnan esimerkkisovelluksen yleiskatsaus](dev-tools/introduction-fleet-management-sample.md)
 ## Visual Studio Tools
@@ -22,16 +27,16 @@
 ### [Koontitoiminnot](dev-tools/build-operations.md)
 ### [Koodieditori](dev-tools/code-editor.md)
 ### [Mallin ja tietomallielementtien luominen](dev-tools/create-data-model-elements.md)
-### [Uuden käyttäjän luominen kehittämiskoneessa](dev-tools/enable-development-machine.md)
+#### [Nimeämisen periaatteet](extensibility/NamingGuidelines.md)
+#### [Mallin mukauttamis- ja vanhentumistoiminnon poistaminen käytöstä](dev-tools/lock-models.md)
 ### [Mukautusten analyysiraportti](dev-tools/customization-analysis-report.md)
 ### [Elementin suunnittelutoiminnot](dev-tools/element-designers.md)
 ### [Elementin käyttö](dev-tools/element-usage.md)
 ### [Mallin vienti ja tuonti](dev-tools/models-export-import.md)
 ### [Metatietojen haku Visual Studiossa](dev-tools/metadata-search-visual-studio.md)
 ### [Mallit](dev-tools/models.md)
-### [Projektit Dynamics 365 for Finance and Operationsissa](dev-tools/projects.md)
-### [Visual Studion Tools-lisäosat](dev-tools/developer-tools-add-ins.md)
-### [Mallin mukauttamis- ja vanhentumistoiminnon poistaminen käytöstä](dev-tools/lock-models.md)
+### [Dynamics 365 for Finance and Operations -projektit](dev-tools/projects.md)
+### [Visual Studion työkalulisäosat](dev-tools/developer-tools-add-ins.md)
 ### [Visual Studio -kehitystyökalujen päivittäminen](dev-tools/update-development-tools.md)
 ## X++-ohjelmointikieli
 ### [X++ ja virheenkorjausominaisuudet ](dev-tools/new-x-debugger-features.md)
@@ -104,7 +109,7 @@
 #### [W-luokat](dev-ref/w-classes.md)
 #### [X-luokat](dev-ref/x-classes.md)
 
-## [Laajennettavuuden kotisivu](extensibility/extensibility-home-page.md)
+## [Laajennettavuus](extensibility/extensibility-home-page.md)
 ### Esittely ja aloittaminen
 #### [Sovelluksen laajennettavuuden paketit](extensibility/extensibility-roadmap.md)
 #### [Laajennettavuuspyynnöt](extensibility/extensibility-requests.md) 
@@ -261,9 +266,9 @@
 ### [Dokumentaation tai koulutuksen luominen tehtävien tallennustoiminnolla](user-interface/task-recorder-training-docs.md)
 
 # [Mobiiliympäristö](mobile-apps/platform/mobile-platform-home-page.md)
-## Aloittaminen
-### [Aloittaminen](mobile-apps/platform/mobile-platform-getting-started.md)
+## [Aloittaminen](mobile-apps/platform/mobile-platform-getting-started.md)
 ### [Arkkitehtuuri](mobile-apps/platform/mobile-platform-architecture.md)
+### [Liiketoimintalogiikan tapahtumien yleiskatsaus](mobile-apps/platform/business-logic-events-overview.md)
 ### [Sivusuunnittelun ohjeet](mobile-apps/platform/page-design-guidelines.md)
 ### [Toimintojen suunnittelun ohjeet](mobile-apps/platform/action-design-guidelines.md)
 ### [Lomakkeiden suunnitteluvaatimukset](mobile-apps/platform/form-design-requirements.md)
@@ -407,9 +412,9 @@
 ### [Konfigurointitietopaketit](data-entities/configuration-data-packages.md)
 ### [Konfigurointitietojen kopiointi yritysten välillä](data-entities/copy-configuration.md)
 ### [Konfigurointitietomallit](data-entities/configuration-data-templates.md)
-### [Tietomallit ja useat laskentataulukot](data-entities/excel-template-multiple.md)
+### [Useita laskentataulukoita sisältävät tietomallit](data-entities/excel-template-multiple.md)
 ### [Muutosten seuranta yksikköön](data-entities/entity-change-track.md)
-
+### [Konfigurointiavaimet ja tietoyksiköt](data-entities/config-key-entities.md)
 ### [Tietojen etsiminen vakiotietoyksiköistä](data-entities/data-entities-report.md)
 
 
@@ -418,6 +423,7 @@
 ### [Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin](data-entities/tips-tricks-import-general-journal-entity.md)
 
 ## Tietoyksiköiden kehittäminen
+### [Tietoyksiköiden suunnittelun periaatteet ja parhaat käytännöt](dev-tools/design-best-practices.md)
 ### [Uusien tietoyksiköiden luominen](data-entities/build-consuming-data-entities.md)
 ### [Tietoyksiköiden ominaisuudet](data-entities/behavioral-properties-data-entities.md)
 ### [Laskettavien sarakkeiden ja virtuaalikenttien luominen](data-entities/data-entity-computed-columns-virtual-fields.md)
@@ -428,24 +434,28 @@
 ### [Metatietojen ominaisuudet](data-entities/behavioral-properties-data-entities.md)
 ### [Tarkistukset, oletukset ja yhdistämättömät kentät](data-entities/validations-defaults-unmapped-fields.md)
 ### [Suojaus ja tietoyksiköt](data-entities/security-data-entities.md)
+### [Taloushallinnon dimensiot näyttävän vain luku -tyyppisen yksikön luominen](financial/read-only-entity-financial.md)
+ 
+
 
 ## [Oman tietokannan tuonti](analytics/export-entities-to-your-own-database.md)
 
 
-## [Tietotehtävän automaatio](data-entities/data-task-automation.md)
+## [Tietotehtävän automatisointi](data-entities/data-task-automation.md)
 
 ## [GDPR-tietopyyntöihin vastaamisen resurssit](gdpr/gdpr-home-page.md)
-### [Microsoft Dynamics 365 for Finance and Operationsin GDPR:n opas](gdpr/gdpr-auditing-sensitive-data.md)
+### [Microsoft Dynamics 365 for Finance and Operationsin GDPR:n opas](gdpr/gdpr-guide.md)
 ### [Käyttöomaisuuden luokittelut](gdpr/gdpr-asset-classification-values.md)
 ### [Henkilöhakuraportin käyttäminen](gdpr/gdpr-person-search-report.md)
 ### [Henkilöhakuraportin laajentaminen](gdpr/gdpr-extend-person-search-report.md)
 ### [Luottamuksellisten tietojen käytön hallinta](gdpr/gdpr-auditing-sensitive-data.md)
 ### [Henkilökohtaisia tietoja koskevaan pyyntöön vastaaminen Talentilla](gdpr/respond-dsr-request-talent.md)
-### [Henkilökohtaisia tietoja koskevaan pyyntöön vastaaminen Microsoft Dynamics AX 2012:lla](gdpr/gdpr-ax2012.md)
+### [Henkilötietopyyntöön vastaaminen Microsoft Dynamics AX 2012:lla](gdpr/gdpr-ax2012.md)
 
+## [Tietojen vahvistuksen työtila](user-interface/data-validation-workspace.md)
 
-# [Jatkuva toimitus -aloitussivu](dev-tools/continuous-delivery-home-page.md)
-## [Kehitys ja jatkuva toimitus – usein kysytyt kysymykset](dev-tools/continuous-delivery-faq.md)
+# [Jatkuva toimitus](dev-tools/continuous-delivery-home-page.md)
+## [Kehityksen ja jatkuvan toimituksen usein kysytyt kysymykset](dev-tools/continuous-delivery-faq.md)
 ## [Testipakettien jättäminen pois koonnin tuotoksesta](dev-tools/exclude-test-packages.md)
 ## [Kolmannen osapuolen mallien ja suorituspalvelupakettien hallinta lähteenhallinnan avulla](dev-tools/manage-runtime-packages.md)
 ## [Automatisoidun koontiversion versiomallit](dev-tools/version-models-build.md)
@@ -487,10 +497,11 @@
 ## [Segmentoidun merkinnän ohjausobjektin parm-menetelmät](financial/segmented-entry-control-parm-method-specification.md)
 ## [Taloushallinnon dimensioiden arvojen hakumahdollisuuden lisääminen Microsoft Excel -malleissa](financial/add-dimensions-excel-templates.md)
 ## [Vaihtokurssipalvelujen luominen](financial/create-exchange-rate-providers.md)
+## [Vaihtokurssipalvelujen luominen Microsoft Dynamics Finance and Operations -versiossa 8.0](financial/create-exchange-rate-8.md)
 
 # Toimitusketjun kehitys
 ## [Gantt-kehitysopas](user-interface/gantt-development-guide.md)
-## [Uuden kuljetuksenhallintalaskennan luominen](../supply-chain/transportation/create-new-transportation-management-engine.md)
+## [Uuden kuljetuksenhallintamoduulin luominen](../supply-chain/transportation/create-new-transportation-management-engine.md)
 
 
 # Käyttöönotto
@@ -579,7 +590,6 @@
 
 # [Järjestelmän hallinta](sysadmin/system-administration-home-page.md)
 ## [Ympäristön kuukausipäivitysten usein kysytyt kysymykset](sysadmin/faq-platform-monthly-updates.md)
-## [Virtuaalikoneet, jotka eivät salli järjestelmänvalvojan käyttöä – usein kysytyt kysymykset](sysadmin/VMs-no-admin-access.md)
 ## [Linkkien lisääminen organisaation juridisiin ehtoihin ja tietosuojatietoihin](sysadmin/legal-terms-privacy-statement.md)
 ## [Käyttöoikeuskoodien ja määritysavainten raportti](sysadmin/license-codes-configuration-keys-report.md)
 ## [Yritysten välinen tietojen jakaminen](sysadmin/cross-company-data-sharing.md)

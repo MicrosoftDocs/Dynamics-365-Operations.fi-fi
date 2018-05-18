@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-centralized-payments"></a>Keskitettyjen maksujen määrittäminen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Näiden ohjeiden avulla voit valmistella yhden yrityksen maksujen käsittelyn organisaation muiden yritysten puolesta. Ennen kuin voit aloittaa, varmista, että seuraavat määritykset on tehty:
 

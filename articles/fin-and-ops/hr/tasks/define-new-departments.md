@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-new-departments"></a>Määritä uudet osastot
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Osastot ovat toimintayksiköitä, jotka vastaavat liiketoiminta-alueita, kuten myyntiä tai kirjanpitoa. Monilla yrityksillä on organisaatiohierarkioita, jotka näyttävät yrityksen eri osastot. Tässä menettelyssä käsitellään osastojen luontiprosessi sekä osastojen lisääminen organisaation osastohierarkiaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="registration-for-manufacturing-execution"></a>Tuotannon suorittamisen rekisteröinti
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa on tietoja käsitteistä ja termeistä, joita tarvitaan tuotannonohjausprosessin määrittämisessä ja käyttämisessä. 
 

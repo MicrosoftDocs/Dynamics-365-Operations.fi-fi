@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Tarjouspyynnöt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa on tarjouspyyntöjen yleiskuvaus. Organisaatiot tekevät tarjouspyyntöjä, kun ne haluavat ostaa tarvitsemiaan nimikkeitä tai palveluita ja haluavat saada kilpailukykyisiä tarjouksia useilta toimittajilta. Tarjouspyynnössä pyydät toimittajilta hinnat ja toimitusaikoja nimikkeiden määrille, jotka määrität.
 Voit myös pyytää toimittajia määrittämään, liittyykö tarjoukseen satunnaisia kuluja, esimerkiksi lähetyskustannuksia, tai tarjoaako toimittaja alennuksia suurista tilauksista tai toimittajalaskun maksamisesta aikaisin.
@@ -57,8 +57,8 @@ Sähköpostitse vastaanotettavat tarjoukset voidaan käsitellä **Tarjouspyynnö
 
 Jos tietyltä toimittajalta tarvitaan vastauksen toinen iteraatio, valitse **Tarjouspyyntö**-sivulla **Palauta**. Palautustoiminto luo uuden kirjauskansion ja raportin, joka tulostetaan, arkistoidaan ja lähetetään tulostusasetusten mukaisesti.
 
-[!NOTE]
-**Tarjouspyyntö**-sivun nimi on muuttunut. Dynamics 365 for Finance and Operationsin aiemmissa versioissa tämän sivun nimi oli **Tarjouspyyntöjen vastaus**.
+> [!NOTE]
+> **Tarjouspyyntö**-sivun nimi on muuttunut. Dynamics 365 for Finance and Operationsin aiemmissa versioissa tämän sivun nimi oli **Tarjouspyyntöjen vastaus**.
 
 Jos olet lisännyt tarjouspyyntötapahtumaan pisteytysehtoja, tarjouspyynnössä on pisteytyspaneeli, johon voit lisätä pisteet. Kokonaispisteytys näkyy tarjouspyynnössä ja vertailtaessa vastauksia **Vertaa vastauksia** -sivulla. Voit verrata **Vertaa vastauksia** -sivulla myös muita vastaustietoja, kuten rivihintaa, toimituspäivämäärää ja kokonaishintaa.
 
@@ -126,8 +126,8 @@ Jos haluat osoittaa tarjouksessa tarjouksen hylkäämisen tai hyväksymisen syyn
 
 Voit määrittää hankinnan **Lomakeasetukset**-sivulla tulostettujen tai tallennettujen tarjouspyyntöasiakirjojen ulkoasun.
 
-[!NOTE]
-Julkisen sektorin määrityksessä jo lähetettyyn tarjouspyyntöön tehdyt muutokset edellyttävät muutosprosessin käyttöä. Kun tarjouspyyntö on lähetetty, kentät lukitaan.
+> [!NOTE]
+> Julkisen sektorin määrityksessä jo lähetettyyn tarjouspyyntöön tehdyt muutokset edellyttävät muutosprosessin käyttöä. Kun tarjouspyyntö on lähetetty, kentät lukitaan.
 Niinpä tarjouspyyntöön tehtävät muutokset edellyttävät edellä kuvatun muutosprosessin aloittamista valitsemalla **Luo**. Lukitustoimintaa ohjataan **Hankintaparametrit**-sivun **Lukitse tarjouspyynnöt, kun ne on lähetetty** -asetuksella. Parametrin arvoksi määritetään oletusarvoisesti **Kyllä**. Julkisen sektorin määrityksissä tämä on oletusasetus, jota ei voi muuttaa. Vaikka muutosprosessia voidaankin käsitellä manuaalisesti muissa kuin julkisen sektorin määrityksissä, sitä on käytettävä julkisen sektorin määrityksissä.
 
 Kun luot ostotilaustyyppisen tarjouspyyntötapauksen ja lisäät tarjouspyyntöön varastonimikkeen, luotavan varastotapahtuman vastaanoton tila on **Tarjouksen vastaanotto**. Vain tarjouspyyntötapauksen rivit, joilla on tämä tila, otetaan huomioon, kun lasket toimituksia pääsuunnitelmaa käyttämällä. Jos haluat, että pääsuunnitelma sisältää tarjouspyyntötapauksen rivejä odotettuna vastaanottona, se on määritettävä pääsuunnittelun asetuksissa.

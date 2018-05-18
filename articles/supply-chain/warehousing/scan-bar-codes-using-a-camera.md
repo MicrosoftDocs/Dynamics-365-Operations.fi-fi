@@ -27,7 +27,7 @@ ms.lasthandoff: 03/09/2018
 
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Viivakoodien lukeminen kameralla Dynamics 365 for Finance and Operations – Warehousingissa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 for Finance and Operations – Warehousingin määrittämistä mobiililaitteella tapahtuvaa viivakoodien lukemista varten. 
 

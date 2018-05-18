@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-pos-visual-profile"></a>Luo myyntipisteen visuaalinen profiili 
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tässä menetelmässä kerrotaan, miten uuden myyntipisteen visuaalinen profiili luodaan. Visuaalinen profiili sisältää perustiedot, jotka määrittävät kassakoneiden ulkoasun. Voit luoda useita visuaalisia profiileja sekä liittää tietyissä kassakoneissa käytettävät yksilölliset profiilit. Menettely käyttää esittelytietojen USRT-yritystä.
 

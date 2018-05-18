@@ -24,9 +24,9 @@ ms.lasthandoff: 03/23/2018
 ---
 
 # <a name="batch-processing-for-alerts"></a>Hälytysten eräkäsittely
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 Eräkäsittelytoiminto käsittelee hälytykset Microsoft Dynamics 365 for Finance and Operations -sovelluksessa. Sinun on määritettävä eräkäsittely, ennen kuin hälytyksiä voidaan toimittaa.
 

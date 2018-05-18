@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="manage-assortments"></a>Valikoimien hallinta 
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten uusi tuotevalikoima luodaan ja julkaistaan. Siinä käytetään esittelytietoja yrityksestä USRT. Tätä menettelyä varten tarvitaan Dynamics AX -sovellus 7.0.1 tai uudempi ja Dynamics AX -ympäristö 7.1.  
 

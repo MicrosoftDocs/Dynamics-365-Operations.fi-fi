@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="post-an-expense-report"></a>Kuluraportin kirjaaminen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kun kuluraportti on hyväksytty ja siirretty yleiseen kirjauskansioon, se voidaan kirjata kirjanpitoon. Kun kirjaat kuluraporttia, ALV:n palautukseen oikeuttavat kulut tunnistetaan. ALV-maksujen varmistaminen ja palauttaminen on määritetty työntekijöille, joka vastaa kuluraportin varmistamisesta.
 

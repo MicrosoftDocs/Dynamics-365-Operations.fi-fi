@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Tuotteeseen liittyvien käännösten usein kysytyt kysymykset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, kuinka tuotteiden, tuotteen dimensioarvojen ja tuotemääritteiden käännöksiä hallitaan. 
 

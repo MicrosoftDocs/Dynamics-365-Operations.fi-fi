@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-assets-integration"></a>Käyttöomaisuuden integrointi
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Käyttöomaisuus voidaan integroida kirjanpitoon, varastonhallintaan, myyntireskontraan ja ostoreskontraan. Käyttöomaisuuden voi integroida myös ostotilauksiin.
 

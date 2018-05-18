@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-product-packages-for-purchase-orders"></a>Ostotilausten tuotepakkausten luominen
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten tuotepaketti luodaan ja miten sitä käytetään ostotilauksessa. Ostotilausta käytetään ennalta määritetyn tuotejoukon tilauksen luomisessa. Menettely käyttää esittelytietojen USRT-yritystä.
 

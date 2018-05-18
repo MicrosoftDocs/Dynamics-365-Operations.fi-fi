@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-feedback"></a>Tuotannon palaute
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja tuotannon palautteesta, joka antaa työntekijöille palautetta tuotantotöistä. Artikkelissa on tietoja tavoista, joilla tuotannon palautetta voi päivittää.
 

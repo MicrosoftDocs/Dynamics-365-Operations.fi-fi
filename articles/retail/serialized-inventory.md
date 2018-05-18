@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="pos-improvements-for-serialized-products"></a>Sarjoitettujen tuotteiden parannukset myyntipisteessä
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Yleiskuvaus 
 Retail Headquarters -sovelluksen asetusten perusteella tuotteita voi luokitella sarjoitetuiksi tai ei-sarjoitetuiksi. Kun tuotteet esitetään sarjoitettuna, kullekin nimikkeelle voidaan määrittää yksilöllinen luku, joka auttaa takuiden ja nimikkeiden jäljittämisessä ja omistajuuden vahvistamisessa. Vaikka sarjanumeroiden antaminen sarjoitetuille tuotteille oli mahdollista Modern/Cloud Point of Sale -sovelluksissa, toimintoon on tehty parannuksia, jotta kassanhoitajat voivat säästää aikaa ja työskennellä tehokkaammin.  

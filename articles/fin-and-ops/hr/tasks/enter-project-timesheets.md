@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enter-project-timesheets"></a>Syötä projektin työaikaraportit
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Voit luoda tässä menettelyssä aikaraportin käyttämällä tyhjää aikaraporttilomaketta. Uusi aikaraportti voi perustua aiemman aikaraportin tietoihin tai Omat suosikit -sivun projekti- ja tehtävämäärityksiin. Oletusarvoisesti Kaikki työaikaraportit -luettelosivu näyttää kaikki kuluvan kauden aikaraportit. Voit käyttää Omat aikaraportit -sivun Näytä-kentän avattavaa luetteloa suodattamaan aikaraporttiluetteloa ajanjakson tai raportin mukaan. Voit myös tarkastella sen avulla muiden työntekijöiden puolesta luotuja aikaraportteja. Tämän menettelyn luomisessa käytettiin USSI-yrityksen demotietoja. Aloita menettely valitsemalla Projektinhallinta ja kirjanpito > Työaikaraportit > Omat aikaraportit
 

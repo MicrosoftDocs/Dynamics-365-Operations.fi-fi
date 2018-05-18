@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-object-relations"></a>Huoltokohteen suhteet 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Voit luoda suhteen huoltokohteen ja huoltosopimuksen tai huoltotilauksen välille. Kun luot suhteen, liität huoltokohteen huoltosopimukseen tai huoltotilaukseen.
 

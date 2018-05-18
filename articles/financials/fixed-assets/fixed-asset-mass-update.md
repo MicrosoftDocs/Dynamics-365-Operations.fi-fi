@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-mass-update"></a>Käyttöomaisuuden laajamittainen päivitys
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Jos käytät kirjoja, voit vaihtaa samaan kirjaan kuuluvien käyttöomaisuuserien muodostamien ryhmien poistomenetelmiä.
 

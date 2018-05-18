@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-process-customer-rebates"></a>Luo ja käsittele asiakkaan ostohyvityksiä
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä menettely ilmaisee, miten asiakkaan ostohyvityksen käsitellään vaatimuksen muodostamisesta niiden siirtämiseen jaksotuksina myyntireskontraan. Menettely selittää esimerkkien avulla, miten ostohyvitysrivien erilaiset ehdot vaikuttavat asiakkaalle hyvitettäviin lopullisiin määriin. Sinun on käytettävä USMF-demotietoyritystä ja suoritettava seuraavat tehtävät ennen opastuksen aloittamista: (1) Siirry Myyntireskontran parametrit -sivulle, laajenna ensin Hinnat-välilehti ja sitten Hintatiedot-välilehti ja tarkista lopuksi, että Ota käyttöön hintatiedot -asetukseksi on valittu Kyllä. (2) Siirry Ostohyvityssopimukset-sivulle ja valitse asiakkaan ostohyvityssopimus: USMF-000001. Jos Työnkulun hyväksyntätila -kentän asetukseksi ei ole valittu Hyväksytty, hyväksy se valitsemalla toimintoruudussa Tarkistus.
 

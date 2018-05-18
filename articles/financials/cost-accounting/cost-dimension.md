@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-dimensions-and-import-dimension-members"></a>Dimensioiden luonti ja dimensiojäsenten tuonti
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kustannuslaskenta on riippumaton moduuli, joka edellyttää muiden moduulien tietoja. Nämä tiedot luokitellaan seuraavasti:
 

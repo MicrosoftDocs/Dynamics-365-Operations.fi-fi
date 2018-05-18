@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-scoring-method-for-rfqs"></a>Luo tarjouspyyntöjen pisteytystapa
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä näytetään, miten pisteytysmenetelmä luodaan. Pisteytysmenetelmä on joukko ehtoja, jonka avulla voit verrata tarjouksia, jotka lähetetään vastauksena tarjouspyyntöön. Voit esimerkiksi haluta arvioida toimittajan aiemman suoritustason perusteella tai arvioida, onko yritys ympäristöystävällinen tai hyvä yhteistyökumppani, tai voit vertailla tarjouksia hinnan perusteella. Pisteytysmenetelmän voi liittää pyyntötyyppiin oletusmenetelmäksi määrätyn tyyppisille tarjouspyynnöille. Yleensä ostopäällikkö tekee nämä tehtävät. Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoilla tai omilla tiedoillasi.
 

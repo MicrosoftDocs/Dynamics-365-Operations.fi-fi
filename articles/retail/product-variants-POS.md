@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a>Varastohaku myyntipisteessä 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Myyntipisteen varastohaku auttaa jälleenmyyjiä tehostamaan toimintaa reaaliaikaisesti. Samalla myymälöiden, myyntipisteen ja taustatoimintojen yhdistäminen antaa analyysitietoja. Tällä toiminnolla saa tarkan reaaliaikaisen näkymän eri myymälöiden ja jakelukeskusten tuotevarastoon. Sen avulla jälleenmyyjät voivat myös tehostaa toimintaa ja kustannussäästöjä, sillä reaaliaikainen varastosuunnittelu paranee.
 

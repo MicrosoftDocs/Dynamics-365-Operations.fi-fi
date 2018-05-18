@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Ostoreskontran laskujen täsmäytyksen vahvistuksen määrittäminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tallenteessa käytetään esittely-yritystä USMF. Nämä vaiheet suorittaa ostoreskontran esimies tai laskentapäällikön rooli. Varmista ennen aloittamista, että laskun täsmäytyksen konfigurointiavain on valittuna. Jos oma yrityksesi seuraa kuluja, kuten rahtia, veloituksien avulla, varmista että kulujen konfigurointiavain on valittuna.  Ostoreskontran laskujen täsmäytys on prosessi, jossa täsmäytetään toimittajan laskun, ostotilauksen ja tuotteen vastaanoton tiedot. Näissä asiakirjoissa olevia eroja kutsutaan ristiriidoiksi. Täsmäytysristiriitoja verrataan määritettyihin toleransseihin. Jos täsmäytysristiriita ylittää toleranssin prosentin tai summan, täsmäytyksen varianssin kuvakkeet näkyvät toimittajan laskun lomakkeella ja laskun täsmäytyksen tietojen lomakkeella.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="product-configuration-models-overview"></a>Tuotekonfiguraatiomallien yleiskatsaus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa esitellään tuotekonfiguraatiomallieihin liittyvät ehdot ja käsitteet. Tuotekonfiguraatiomallien avulla voidaan luoda yleisiä tuoterakenteita, joita käytetään määritettäessä yhdestä tuotteesta useita tuotevariantteja.
 

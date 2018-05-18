@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-project-purchase-order"></a>Projektin ostotilauksen luominen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tämä menettely osoittaa, miten projektin ostotilaus luodaan. Tässä tehtävässä käytetään USSI-tietojoukkoa.
 

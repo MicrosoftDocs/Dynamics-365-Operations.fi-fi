@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-fixed-asset-groups"></a>Määritä käyttöomaisuusryhmät
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä näytetään, miten uusi käyttöomaisuusryhmä luodaan. Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja.
 

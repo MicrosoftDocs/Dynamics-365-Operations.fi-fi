@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="use-the-excel-add-in"></a>Excel-lisäosan käyttö
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, kuinka avaat yksikkötietoja Microsoft Excelissä ja tarkastelet, päivität ja muokkaat tietoja Microsoft Dynamicsin Excel-lisäosalla. Voit aloittaa yksikkötietojen avaamisen joko Excelistä tai Microsoft Dynamics 365 for Finance and Operationsista.
 

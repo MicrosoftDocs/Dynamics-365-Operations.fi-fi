@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-a-users-preferred-time-zone"></a>Käyttäjän ensisijaisen aikavyöhykkeen asettaminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Seuraava menettely osoittaa, miten käyttäjä, jolla on järjestelmänvalvojan rooli, voi määrittää käyttäjän aikavyöhykkeen.
 

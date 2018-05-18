@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-boms-february-2016-only"></a>Tuoterakenteiden luonti (vain helmikuu 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tehtävässä keskitytään valmiin ja puolivalmiin tuotteen tuoterakenteen luomiseen. Se on tuoterakenteen laskentasarjan neljäs tehtävä. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.
 

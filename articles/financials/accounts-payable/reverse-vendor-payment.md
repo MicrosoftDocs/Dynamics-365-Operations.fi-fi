@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-a-vendor-payment"></a>Toimittajamaksun peruuttaminen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan, mitä eroa on maksun palauttamisella, poistamisella, mitätöimisellä ja hylkäämisellä. Lisäksi artikkelissa esitellään kaksi tapaa peruuttaa toimittajan sekki. 
 

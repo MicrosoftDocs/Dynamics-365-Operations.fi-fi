@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-control-overview"></a>Budjetin hallinnan yleiskatsaus 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa esitellään budjetin hallinta. Artikkeli sisältää tietoja, joiden avulla budjetin hallinta voidaan määrittää Microsoft Dynamics 365 for Finance and Operationsissa niin, että taloushallinnon resurssien hallinta onnistuu.
 

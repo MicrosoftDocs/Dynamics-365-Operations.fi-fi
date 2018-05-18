@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Kohdistusperusteet 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kustannuslaskentaa kohdistaa yleiskustannukset kohdistusperusteen perusteella. Kohdistusperuste voi olla määrä, kuten koneen käyttötunnit, kulutetut kilowattitunnit (kWh) tai käytössä olevat neliömetrit. Kohdistusperusteita käytetään lähinnä yleiskustannusten määrittämiseen tuotettavalle varastolle. Esimerkiksi IT-osasto kohdistaa kustannukset kunkin osaston käyttämien tietokoneiden määrän mukaan.
 

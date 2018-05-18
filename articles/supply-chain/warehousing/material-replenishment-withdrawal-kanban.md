@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="replenishment-with-withdrawal-kanbans"></a>Täydennys ja otto-kanbanit
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään, miten otto-kanbaneja käytetään valmistustehtävien materiaalitäydennykseen.
 

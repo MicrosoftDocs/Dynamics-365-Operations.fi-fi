@@ -24,6 +24,7 @@
 # Arvonlisävero
 ## [Arvonlisäveron yleiskatsaus](../financials/general-ledger/indirect-taxes-overview.md)
 ## [Arvonlisäveron laskentatavat Alkuperä-kentässä](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## #### [Arvonlisäveron määrittäminen ja ohitukset](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [Arvolisäverokoodien koko summa- ja väli-laskentavaihtoehdot](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # Puhelinkeskus
@@ -167,8 +168,9 @@
 ## [Luo ja liitä laiteasema](tasks/create-associate-hardware-station.md)
 ## [Luo ja liitä rekisterit](tasks/create-associate-registers.md)
 ## [Luo, laske ja kirjaa laskelma vähittäismyymälälle](tasks/create-calculate-post-statement-retail-store.md)
+## [Laskelman kirjaamisen parannukset](statement-posting-EOD.md)
 ## [Luo puhelinkeskustilauksia](tasks/create-call-center-orders.md)
-## [Luo myyntipisteen taloushallinnon dimensiot POS-kassakoneille ja määritä dimensioarvot kassakoneille](tasks/create-financial-dimensions-pos.md)
+## [Luo myyntipisteen taloushallinnon dimensiot kassakoneille ja määritä dimensioarvot kassakoneille](tasks/create-financial-dimensions-pos.md)
 ## [Luo Retail-kanaville taloushallinnon dimensiot ja määritä dimensioarvot myymälöille](tasks/create-financial-dimensions-retail-channels.md)
 ## [Luo online-kanavat ja määritä kanavamääritteet](tasks/create-online-channel-define-channel-attributes.md)
 ## [Luo POS-käyttöoikeusryhmät](tasks/create-pos-permission-groups.md)
@@ -288,8 +290,7 @@
 ### [Mukautettujen sarakkeiden lisääminen myyntipisteen tapahtumaruudukkoon](dev-itpro/pos-custom-transaction-column.md)
 ### [Myyntipisteen ohjelmointirajapinnan tai toiminnon kutsuminen myyntipisteen laajennuksesta](dev-itpro/pos-api-extension.md)
 ### [Retail Modern POS:n käynnistimet ja tulostaminen](dev-itpro/pos-trigger-printing.md)
-### [Mukautetun ohjausobjektin lisääminen Retail Modern POS:n muun kuin näytön suunnittelutoimintoon perustuvaan näkymään](dev-itpro/pos-control-non-screen.md)
-### [Retail-välityspalvelimen luominen myyntipisteelle ja sähköiselle kaupankäynnille](dev-itpro/pos-generate-retail-proxy.md)
+### [Mukautetun ohjausobjektin lisääminen Retail Modern POS -sovelluksen ei-näyttöpohjaiseen suunnittelusovellukseen perustuvaan näkymään](dev-itpro/pos-control-non-screen.md)
 ### [Pilvipalveluympäristön kehyksiä käsittelevien Retail-kehittäjien määritysvaiheet](dev-itpro/cloud-dev-box.md)
 
 ## Kaupankäyntiympäristö

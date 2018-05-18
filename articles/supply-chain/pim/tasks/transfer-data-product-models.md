@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-data-for-product-models"></a>Tietojen siirtäminen tuotemalleja varten
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tuotemääritysmallin tietojen vieminen edellyttää, että ainakin yksi tuotemalli on käytettävissä. Tässä menettelyssä käytetään USMF-demoyrityksen korkealaatuista kaiutinmallia näyttämään, miten mallin tiedot viedään.
 

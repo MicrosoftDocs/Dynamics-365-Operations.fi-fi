@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-a-service-template-group"></a>Huoltomalliryhmän luominen  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Huoltomalliryhmien avulla voit lajitella ja suodattaa huoltomalleja.
 

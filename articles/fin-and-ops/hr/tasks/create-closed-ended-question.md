@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-closed-ended-question"></a>Luo suljettu kysymys
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Monivalintakysymysten avulla voit antaa vastaajille vastauksia, joista he voivat valita. Ensin luodaan vastaukset sisältävä vastausryhmä. Tämän jälkeen luodaan kysymys, joka käyttää vastausryhmää. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

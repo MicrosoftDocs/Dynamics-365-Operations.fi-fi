@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Test Data Transfer Tool (beta-versio) -sovelluksen ajaminen Dynamics AX:ssä (AX 2012)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Pikatuonti- ja vientitoiminnon tarkoitus on vähentää tuonti- ja vientivaiheita.
 

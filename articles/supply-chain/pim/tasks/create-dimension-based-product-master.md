@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-dimension-based-product-master"></a>Luo dimensioihin perustuva päätuote
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä selvitetään, miten uusi päätuote luodaan dimensioihin perustavalla konfiguraatiomenetelmällä. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä on ensimmäinen kahdeksasta menettelystä, joissa selitetään, miten dimensioihin perustuvia konfiguraatioyhdistelmiä luodaan.
 

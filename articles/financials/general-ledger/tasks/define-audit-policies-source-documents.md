@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Määritä tarkistuskäytännöt lähdeasiakirjoille
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kuvataan, miten tarkistuskäytännön säännöt määritetään ja suoritetaan. Tässä esimerkissä käytetään hotellin kululajin kuluraportteja. Näissä toimintaohjeissa käytetään esittely-yritystä USMF. Tilintarkistajan rooli sisältää näiden tehtävien suorittamisessa vaadittavat käyttöoikeudet.
 

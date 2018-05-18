@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>Muokkaa toimen raportointisuhteita
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä näytetään, miten työntekijän raportointisuhde muutetaan. Asiakirjoja voi reitittää työnkulussa raportointisuhteen avulla. Menettelyssä näytetään myös, miten työntekijä määritetään lisähierarkioihin. Työntekijä voi esimerkiksi kuulua projektiryhmään ja hänellä voi olla epävirallinen raportointisuhde projektivastaavaan. Toimelle voidaan määrittää lisäraportointisuhteita erilaisten projekti- tai matriisiskenaarioiden tarpeiden mukaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

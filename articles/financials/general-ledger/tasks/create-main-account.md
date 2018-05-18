@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-main-account"></a>Luo päätili
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tehtäväopastuksessa käsitellään päätilin lisäämistä aiemmin luotuun tilikarttaan. Tässä tallenteessa käytetään esittely-yritystä USMF.  
 

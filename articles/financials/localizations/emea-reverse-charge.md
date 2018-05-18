@@ -26,7 +26,7 @@ ms.lasthandoff: 04/13/2018
 # <a name="reverse-charge-vat"></a>Käänteinen verovelvollisuus
 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Tässä ohjeaiheessa kerrotaan yleisesti eurooppalaisten maiden ja Saudi-Arabian käänteisen arvonlisäveron määrittämisestä.

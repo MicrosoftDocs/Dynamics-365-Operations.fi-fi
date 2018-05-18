@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-cost-control-units"></a>Määritä kustannusseurantayksiköt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten kustannuslaskennan kirjanpidon kustannusseurantayksiköt määritetään. Valitse kustannusobjektin dimensio, jonka kustannuksia haluat seurata kirjanpidossa. Kustannusobjektin dimension jäsenet muunnetaan kustannusseurantayksiköiden kustannusobjekteiksi. Tämän menettelyn luomisessa käytetty esittely-yritys on USP2.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-validate-journals"></a>Luo ja vahvista kirjauskansiot
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä tehtäväopastuksessa luodaan ja vahvistetaan kirjauskansioita ja kirjauskansion rivejä. Tässä tehtävässä käytetään USMF-demoyritystä.  
 

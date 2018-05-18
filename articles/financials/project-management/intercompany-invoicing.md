@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="intercompany-invoicing"></a>Konsernin sisäinen laskutus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja ja esimerkkejä projektien konsernin sisäisestä laskutuksesta Microsoft Dynamics 365 for Finance and Operationsissa.
 

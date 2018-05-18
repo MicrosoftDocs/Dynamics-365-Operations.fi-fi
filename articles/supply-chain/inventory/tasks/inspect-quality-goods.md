@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="inspect-the-quality-of-goods"></a>Tarkista tavaroiden laatu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä näytetään, miten laatutilaus käsitellään. Voit suorittaa tämän ohjauksen esittely-tietojen USMF-yrityksessä. Vahvista ostotilaus 000016 ennen tämän esimerkin menettelyn aloittamista ja kirjaa tuotteen vastaanotto. Tällöin laatutilaus luodaan automaattisesti. Laatuassistentti suorittaa yleensä laatutarkastukset.
 

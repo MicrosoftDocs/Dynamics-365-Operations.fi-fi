@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Suunnittele kuormat ja lähetykset kuormasuunnittelun työtilassa
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä kerrotaan, miten myyntitilaukselle luodaan kuorma kuormasuunnittelun työtilan avulla. Ensimmäiseksi luodaan edellytyksenä oleva myyntitilaus. Tämä menettely on osa kuljetuskoordinaattorin päivittäistä työtä. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

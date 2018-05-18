@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a>Kanban-määräehdotusten laskeminen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä keskitytään tietyn kanbanin koon ja määrien optimointiin tietylle kanban-säännölle kanban-määrän laskelman avulla. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä menettely on tarkoitettu arvovirtaa hallitsevalle työntekijälle. Edellytys on Lisää uusi kanban-määrän laskentakäytäntö kanban-sääntöön -menettelyn suorittaminen.
 

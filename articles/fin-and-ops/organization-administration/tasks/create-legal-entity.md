@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-legal-entity"></a>Luo uusi yritys
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Yritys on organisaatio, joka tunnistetaan oikeudellisen vallan rekisteröinnin kautta. Yritys voi solmia sopimuksia ja yritykseltä edellytetään suorituskykyä kuvaavien lausuntojen valmistelemista. Seuraavissa vaiheissa on selostettu, miten yritys luodaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

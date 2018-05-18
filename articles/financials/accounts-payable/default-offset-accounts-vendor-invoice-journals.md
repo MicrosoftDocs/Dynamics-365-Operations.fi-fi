@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Toimittajan laskujen ja laskujen hyväksynnän kirjauskansioiden oletusvastatilit
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Oletusvastatilejä käytetään seuraavilla toimittajan laskun kirjauskansion sivuilla:
 

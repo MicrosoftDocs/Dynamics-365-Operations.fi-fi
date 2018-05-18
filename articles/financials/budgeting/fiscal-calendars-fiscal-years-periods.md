@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Kirjanpidon kalenterit, tilikaudet ja kaudet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa käsitellään kirjanpidon vuosikalentereita ja tilikausia sekä sitä, miten niitä käytetään yrityksissä, käyttöomaisuudessa ja budjetoinnissa.
 

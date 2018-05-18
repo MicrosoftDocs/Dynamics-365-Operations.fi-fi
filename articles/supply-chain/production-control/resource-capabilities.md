@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="resource-capabilities"></a>Resurssin ominaisuudet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja resurssin ominaisuuksista. Toiminto on operatiivisen resurssin kyky suorittaa tietty aktiviteetti. Artikkelissa kerrotaan miten ominaisuuksia ja siihen liittyviä käsitteitä, kuten pätevyystasoa ja prioriteettia, käytetään valittaessa sopivia resursseja tehtävään.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="distributions-on-an-expense-report"></a>Kuluraportin jaot
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Kun kuluja syötetään kuluraportille, voit jakaa kulut useiden projektien, taloushallinnon dimensioiden tai tilien kesken organisaatiossasi.
 

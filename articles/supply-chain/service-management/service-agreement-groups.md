@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-agreement-groups"></a>Huoltosopimusryhmät 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Huoltosopimusryhmistä on hyötyä lajiteltaessa ja suodatettaessa huoltosopimuksia. Voit ryhmitellä huoltosopimuksia esimerkiksi yrityksen koon, maantieteellisen sijainnin tai toimialan mukaan. Huoltosopimusryhmien avulla voit ryhmitellä huoltosopimuksia myös asiakkaalle tarjotun palvelutason mukaan.
 

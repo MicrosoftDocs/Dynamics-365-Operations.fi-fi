@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää, kun lopullinen maksu suoritetaan alennuspäivämäärän jälkeen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa käydään läpi skenaario, jossa suoritetaan useita osittaisia maksuja, joista osa on käteisalennuskaudella ja osa käteisalennuskauden ulkopuolella.
 

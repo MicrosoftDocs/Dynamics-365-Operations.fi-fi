@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>Standardikustannuksia sisältävissä tuoterakennelaskelmissa käytettävät tiedot
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tuoterakennelaskelmissa käytetään tietoja useista lähteistä valmistetun nimikkeen standardikustannusten laskemista varten. Näissä lähteissä on tietoja nimikkeistä, tuoterakenteiden reitityksistä, epäsuorien kustannusten laskentakaavoista sekä kustannuslaskelmaversiosta.
 

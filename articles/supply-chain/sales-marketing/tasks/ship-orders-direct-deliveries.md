@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Lähetä tilaukset suoratoimituksina
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä menettelyssä käsitellään, miten myyntitilaukselle luodaan suoratoimitus. Käytät suoratoimitusta, kun haluat lähettää tavarat asiakkaalle suoraan toimittajalta sen sijaan, että ne lähetettäisiin ensin omaan varastoon. Voit suorittaa tämän menettelyn esittely-yrityksen USMF kanssa tai käyttää omia tietojasi. Toisen Luo suoratoimitukset suoraan työtilasta -alitehtävän suorittaminen edellyttää, että myyntitilauksessa valitsemaasi nimikkeeseen on määritetty oletustoimittaja vapautetun päätuotteen oston pikavälilehdessä.
 

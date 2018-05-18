@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="ledger-journal-types"></a>Kirjanpidon kirjauskansiotyypit
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Finance and Operationsissa käytettävät kirjauskansiot **Kirjauskansioiden nimet** -sivulla.
 
