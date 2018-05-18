@@ -18,29 +18,29 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 881b44f1128e732bc768191088e19efc38552eca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 19ba20ce16c9916e09b862b0ebedbf68259c7769
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-management-home-page"></a>Taloushallinnon kotisivu
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operationsin taloushallinnon toimintoja koskevista ohjeaiheista ja muista resursseista. 
 
 Saat lisätietoja valitsemalla ominaisuusalueen.
-- [Ostoreskontra](accounts-payable\accounts-payable.md) 
-- [Myyntireskontra](accounts-receivable\accounts-receivable.md) 
-- [Maksuliikenteen hallinta](cash-bank-management\cash-bank-management.md)
-- [Kustannuslaskenta](cost-accounting\cost-accounting-home-page.md)
-- [Käyttöomaisuuserät](fixed-assets\fixed-assets.md)
-- [Kirjanpito](general-ledger\general-ledger.md) 
-- [Projektinhallinta](project-management\overview-project-management-accounting.md)
-- [Julkinen sektori](public-sector\public-sector-functionality.md) 
-- [Budjetointi](budgeting\budgeting-overview.md) 
+- [Ostoreskontra](accounts-payable/accounts-payable.md) 
+- [Myyntireskontra](accounts-receivable/accounts-receivable.md) 
+- [Maksuliikenteen hallinta](cash-bank-management/cash-bank-management.md)
+- [Kustannuslaskenta](cost-accounting/cost-accounting-home-page.md)
+- [Käyttöomaisuuserät](fixed-assets/fixed-assets.md)
+- [Kirjanpito](general-ledger/general-ledger.md) 
+- [Projektinhallinta](project-management/overview-project-management-accounting.md)
+- [Julkinen sektori](public-sector/public-sector-functionality.md) 
+- [Budjetointi](budgeting/budgeting-overview.md) 
 
 
 

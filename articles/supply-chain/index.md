@@ -3,7 +3,7 @@ title: Toimitusketjun hallinnan kotisivu
 description: "Tällä sivulla on luettelo Microsoft Dynamics 365 for Finance and Operationsin toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 05/09/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9e3551580cc03ebf62ec42283c5a9a885d8c8d8f
+ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
+ms.openlocfilehash: df35f70d8297aa2a832d143217542e3d558040ea
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
 # <a name="supply-chain-management-home-page"></a>Toimitusketjun hallinnan kotisivu
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operationsin toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista. 
 
@@ -40,17 +40,22 @@ Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operationsin
 Saat lisätietoja valitsemalla ominaisuusalueen.
 
 - [Kustannuslaskenta](../financials/cost-accounting/cost-accounting-home-page.md)
-- [Kustannushintojen hallinta](cost-management/cost-management-home-page.md)  
+- [Kustannusten hallinta](cost-management/cost-management-home-page.md)  
 - [Varastoinninhallinta](inventory/inventory-home-page.md)
 - [Pääsuunnittelu](master-planning/master-planning-home-page.md)
 - [Hankinta](procurement/procurement-sourcing-overview.md)
 - [Tuotetietojen hallinta](pim/product-information.md)
 - [Tuotannonhallinta](production-control/production-process-overview.md)
 - [Myynti ja markkinointi](sales-marketing/overview-sales-marketing.md)
+- [Huollon hallinta](service-management/service-management-home-page.md)
 - [Kuljetustenhallinta](transportation/transportation-management-overview.md)
 - [Varastonhallinta](warehousing/warehouse-configuration.md)
 
 ## <a name="videos"></a>Videot
+
+Nämä lyhyet videot sisältävät lisätietoja Microsoft Dynamics 365 for Finance and Operations -version 8.0 (huhtikuu 2018) uusista ominaisuuksista.
+
+- [Työtilauksen synkronointi Field Servicen ja Finance and Operationsin välillä](https://youtu.be/hAB4TDVMjxU)
 
 Nämä lyhyet videot sisältävät lisätietoja Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 -version (joulukuu 2017) uusista ominaisuuksista.
 
@@ -68,7 +73,7 @@ Nämä lyhyet videot sisältävät lisätietoja Microsoft Dynamics 365 for Finan
 
 Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -sovelluksen edellisen version ominaisuuksia, mutta samoja käsitteitä käytetään yhä. Myös menettelyt ovat samanlaisia nykyisessä versiossa. 
 
-**Kustannushintojen hallinta**
+**Kustannusten hallinta**
 
 -  [Kustannushintojen hallinnan yhteenveto](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
 
@@ -84,8 +89,8 @@ Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -s
 
 **Varastonhallinta** 
 
--  [Saapuvien ASN-ilmoitusten käsittely varastonhallinnassa](https://mix.office.com/watch/wpf78tr7rjuh)  
--  [Hyödynnä varastonhallintajärjestelmää tehokkaasti](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+<!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
+-  [Hyödynnä varastonhallintajärjestelmää täysimääräisesti](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
 -  [Edistynyt R3-varastonhallinta – saapuvien käsittely ja min/max-täydennys](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
 -  [Edistynyt R3-varastonhallinta – lähtevien käsittely sekä täydennys kysynnän mukaan](https://youtu.be/Og0gLlVp7jA)
 -  [Uuden Microsoft Dynamics AX 2012 R3 -varastonhallinnan etiketit](https://youtu.be/5w1MngVchBA)

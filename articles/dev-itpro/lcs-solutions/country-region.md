@@ -18,18 +18,18 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 389efbe1853264c1503737b55dd7767fdcb966ca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c925b2e996f51b8c5d5332217643c3155cfc03c0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Lokalisointi- ja säädösominaisuudet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations -ohjelmassa on toiminto, joka on käytössä [kansainvälisessä tuotesaatavuusoppaassa](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
+Microsoft Dynamics 365 for Finance and Operations -ohjelmassa on toiminto, joka on käytössä [kansainvälisessä tuotesaatavuusoppaassa](http://download.microsoft.com/documents/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
 
 Tässä aiheessa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista ratkaisuista, päivityksistä ja toiminnoista. 
 
@@ -91,7 +91,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 -   [Veroasiakirjan tekstin paikkamerkit](../../financials/localizations/latam-bra-fiscal-document-text-placeholders.md)
 -   [Veroasiakirjat](../../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md)
 -   [ICMS-veroasiakirjat](../../financials/localizations/latam-bra-icms-tax-fiscal-documents.md)
--   [NF-eXML-tiedostot ja DANFE-tiedostot](../../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+-   [NF-e XML-tiedostot ja DANFE-tiedostot](../../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
 -   [Veroasiakirjojen tuonti](../../financials/localizations/latam-bra-import-fiscal-documents.md)
 -   [Sähköisen maksun palautuksen aikana luodut kirjauskansiot](../../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md)
 -   [NF-e-prosessi](../../financials/localizations/latam-bra-nf-e-process.md)
@@ -101,7 +101,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 -   [Viitattavat veroasiakirjat](../../financials/localizations/latam-bra-referenced-fiscal-documents.md)
 -   [Myyntiä täydentävät veroasiakirjat](../../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md)
 -   [Palvelun sähköinen veroasiakirja](../../financials/localizations/latam-bra-service-electronic-fiscal-document.md)
--   [NF-eXML- ja DANFE-asiakirjojen määritys, tuonti ja tarkistus](../../financials/localizations/latam-bra-set-up-import-nfe.md)
+-   [NF-e XML- ja DANFE-asiakirjojen määritys, tuonti ja tarkistus](../../financials/localizations/latam-bra-set-up-import-nfe.md)
 -   [Veromääritteet](../../financials/localizations/latam-bra-tax-attributes.md)
 -   [Veromaksut](../../financials/localizations/latam-bra-tax-payments.md)
 -   [Verot](../../financials/localizations/latam-bra-calculate-taxes.md)
