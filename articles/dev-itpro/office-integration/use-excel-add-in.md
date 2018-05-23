@@ -38,9 +38,6 @@ Kun avaat yksikkötietoja Excelissä, voit tarkastella ja muokata nopeasti tieto
 
 Lisätietoja Excel-lisätietoja on lyhyessä videossa [Excel-mallin luominen otsikolle ja rivimalleille Dynamics 365 for Finance and Operationsissa](https://youtu.be/RTicLb-6dbI).
 
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
-
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Yksikkötietojen avaaminen Excelissä Finance and Operationsista käsin
 1. Valitse Finance and Operations -sivulla **Avaa Microsoft Officessa**.
 
