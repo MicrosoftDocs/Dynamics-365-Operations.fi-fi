@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c71d7632cfdafe48eee49c848982dfa85116df75
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="generate-a-statistical-baseline-forecast"></a>Luo tilastollinen perusennuste
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa annetaan tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista. 
 
@@ -64,7 +64,7 @@ Konsernin sisäinen suunnitteluryhmä, nimikkeen kohdistustunnukset ja muut suod
 
 Jos ennustetta ei luoda isolle nimikejoukolle vaan esimerkiksi yhdelle nimikkeelle tai yhdelle nimikkeen kohdistustunnukselle kerrallaan, voit saavuttaaksesi paremman suorituskyvyn valita **Käytä pyyntö-vastaus-tilaa** -valintaruudun **Pääsuunnittelu - Asetukset - Kysynnän ennusteet**  -  **Kysynnän ennusteiden parametrit - Azuren automaattianalyysipalvelut** -välilehti.
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Kysynnän ennusteiden asetukset](demand-forecasting-setup.md)

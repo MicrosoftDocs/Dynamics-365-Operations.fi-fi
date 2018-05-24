@@ -18,16 +18,16 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 911996f9d1854f027f5085725538bd87ba307c25
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7bb152334b3b06c86dff024d0e99aea9bb452deb
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa näytetään, mitkä ominaisuuksista ovat saatavilla seuraavissa tuotteissa:
 
@@ -128,7 +128,7 @@ Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen ase
 |---|---|---|---|
 | Kaikki Talent-alueet | Kaikki Talent-ominaisuudet | Kyllä | En |
 
-## <a name="see-also"></a>Lisätietoja
+## <a name="additional-resources"></a>Lisäresurssit
 
 - [Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa](features-not-implemented-on-prem.md)
 

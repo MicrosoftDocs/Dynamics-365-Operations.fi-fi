@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4252112272e2f86c2c18dc399a713bf652e4228e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6ab1d60839131b3d4bb1782319754ba63d54cfd7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-collaboration-with-customers"></a>Toimittajayhteistyö asiakkaiden kanssa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa Microsoft Dynamics 365 for Finance and Operationsissa. Toimittajat voivat suorittaa liiketoimintaprosessien sarjan seuraavista työtiloista:
 
@@ -141,7 +141,7 @@ Voit toimittajana käyttää niitä tietoja, joita asiakas hallitsee toimittajan
 
 Käytettävissä on seuraavat tiedot: toimittajan nimi, osoitteet, yhteystiedot, yhteyshenkilöt ja heidän yhteystietonsa, tunnusnumerot, verorekisteröintinumerot, hankintaluokat, joiden myynti toimittajalta asiakkaalle on hyväksytty, sekä tiedot varmenteista.
 
-## <a name="see-also"></a>Lisätietoja
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md)
 

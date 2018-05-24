@@ -1,6 +1,6 @@
 ---
 title: "Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana"
-description: "Käytä <strong>Nimiketunnus </strong>kenttää tuote- ja tuotevarianttihakuun luodessasi manuaalisesti ostotilausrivin tai myyntitilausrivin.  Näin löydät nopeasti tuotevariantit, kun käytettävissä on vain konfiguraation merkkijono tai jokin tuotedimensioista."
+description: "Käytä **Nimiketunnus** kenttää tuote- ja tuotevarianttihakuun luodessasi manuaalisesti ostotilausrivin tai myyntitilausrivin. Näin löydät nopeasti tuotevariantit, kun käytettävissä on vain konfiguraation merkkijono tai jokin tuotedimensioista."
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,20 +20,20 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d6a45d89ba20994c06a77c646fa5099fa34b3b2e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
-Käytä <strong>Nimiketunnus </strong>kenttää tuote- ja tuotevarianttihakuun luodessasi manuaalisesti ostotilausrivin tai myyntitilausrivin.  Näin löydät nopeasti tuotevariantit, kun käytettävissä on vain konfiguraation merkkijono tai jokin tuotedimensioista.
+Käytä **Nimiketunnus** kenttää tuote- ja tuotevarianttihakuun luodessasi manuaalisesti ostotilausrivin tai myyntitilausrivin.  Näin löydät nopeasti tuotevariantit, kun käytettävissä on vain konfiguraation merkkijono tai jokin tuotedimensioista.
 
 Joskus liian suuri määrä jotain tuotetta saattaa aiheuttaa päänvaivaa, varsinkin jos myyt suuren määrän samankaltaisia tuotteita ja yrität muistaa niiden nimiketunnukset tai tuotteen hakunimet, kun yrität löytää oikean tuotteen lisätäksesi sen myyntitilaukseen. Voit käyttää **Nimiketunnus**-kenttää hakukenttänä ostotilausrivillä tai myyntitilausrivillä. Voit syöttää osan tuotenimeä, numeroa tai dimensiota, jolloin hakutoiminto tuo näyttöön kaikki nimikkeet, jotka vastaavat hakusanaa.
 
@@ -47,7 +47,7 @@ Kun etsit tuotteita tai tuotevariantteja, on tärkeää tietää, miten hakutoim
 
 ### <a name="examples"></a>Esimerkkejä
 
-Seuraavissa esimerkeissä käytetään tuotteita ja tuotevariantteja havainnollistamaan, kuinka haku toteutetaan eri skenaarioissa. **Edellytys:** kohdassa **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuparametrit** &gt; **Hakutyyppi** valitse **Täydellinen vastaavuus** -vaihtoehto.
+Seuraavissa esimerkeissä käytetään tuotteita ja tuotevariantteja havainnollistamaan, kuinka haku toteutetaan eri skenaarioissa. **Edellytys:** kohdassa **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuparametrit &gt; Hakutyyppi** valitse **Täydellinen vastaavuus** -vaihtoehto.
 
 | Tuotetyyppi     | Tuotteen nimi    | Näytä tuotenumero | Nimiketunnus | Konfiguraatio |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -72,7 +72,7 @@ Esimerkkejä tuotteen ja tuotevariantin tunnuksista ja dimensioista, joiden peru
 
 Siirry **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuehdot** -sivulle. **Hakuehdot**-sivulla voit määrittää asiakkaan, prospektin ja tuotehaun ehdot. Varmista, että käytät tuotehakuehtoja sivun suodatuksessa. Voit tehdä tämän siirtymällä kohtaan **Tuote** sivun valikossa.  
 
-Voit lisätä näytön tuotenumeron hakuehtoihin napsauttamalla <strong>Uusi</strong> sivun valikosta. Tämä lisää uuden tietueen <strong>Hakuehdot</strong>-ruudukkoon. Avaa <strong>Kentän nimi</strong> -sarakkeen haku ja valitse <strong>DisplayProductNumber</strong>. Lisää tuotteen konfiguraatio hakuehtoihin luomalla uusi tietue <strong>Hakuehdot**-ruudukossa ja valitse **configId</strong> <strong>Kentän nimi</strong> -sarakkeessa. Luo samalla tavalla tietue <strong>Kentän nimi</strong> <strong>InventColorId</strong> väri-dimensiolle, <strong>InventSizeId</strong> koko-dimensiolle ja <strong>InventStyleId</strong> malli-dimensiolle.
+Voit lisätä näytön tuotenumeron hakuehtoihin napsauttamalla **Uusi** sivun valikosta. Tämä lisää uuden tietueen **Hakuehdot**-ruudukkoon. Avaa **Kentän nimi** -sarakkeen haku ja valitse **DisplayProductNumber**. Lisää tuotteen konfiguraatio hakuehtoihin luomalla uusi tietue **Hakuehdot** -ruudukossa ja valitse **configId** **Kentän nimi** -sarakkeessa. Luo samalla tavalla tietue **Kentän nimi** **InventColorId** väri-dimensiolle, **InventSizeId** koko-dimensiolle ja **InventStyleId** malli-dimensiolle.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Vaihe 2: Täytä tietokantataulu, jota käytetään tuotehaussa
 

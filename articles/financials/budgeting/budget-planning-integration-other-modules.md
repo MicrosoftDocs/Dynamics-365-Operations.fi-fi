@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4a18190152b6e5ea520a81f1db2cf67ded652bbe
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>Budjettisuunnittelun integrointi toisten moduulien kanssa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Budjettisuunnitelmia voidaan muodostaa useista eri resursseista. Kausittaisten prosessien peruselementit ovat samat kaikille resursseille. 
 
@@ -68,7 +68,7 @@ Kaikkien prosessien osalta **Lähde**-välilehden avulla voit suodattaa tietoja 
 
 **Yhteenlaskettu summa perusteena** -kenttä sivun yläosassa määrittää myös käytettävän päivän. Tämä kenttä laskee summat yhteen ja määrittää voimaantulopäiväksi tilivuoden tai -kauden ensimmäisen päivän. 
 
-Monista <strong>Kohde</strong>-välilehden kentistä tulee muokattavia tai vain luku -muotoisia valitsemastasi toiminnosta riippuen. Kun siirryt uuden budjettisuunnitelman luonnista olemassa olevan suunnitelman päivittämiseen, <strong>Budjettisuunnitelman nimi</strong> -kenttä ei ole enää käytettävissä ja olemassa olevan suunnitelman valitsemiseen liittyvät kentät tulevat saataville. Sekä <strong>Kohde</strong>-välilehdessä että <strong>Lähde**-välilehdessä **Kirjanpito</strong>-kenttä ei ole koskaan käytettävissä, koska tämä arvo määritetään valitussa budjettisuunnitteluprosessissa. 
+Monista <strong>Kohde</strong>-välilehden kentistä tulee muokattavia tai vain luku -muotoisia valitsemastasi toiminnosta riippuen. Kun siirryt uuden budjettisuunnitelman luonnista olemassa olevan suunnitelman päivittämiseen, **Budjettisuunnitelman nimi** -kenttä ei ole enää käytettävissä ja olemassa olevan suunnitelman valitsemiseen liittyvät kentät tulevat saataville. Sekä **Kohde**-välilehdessä että **Lähde** -välilehdessä **Kirjanpito**-kenttä ei ole koskaan käytettävissä, koska tämä arvo määritetään valitussa budjettisuunnitteluprosessissa. 
 
 **Budjettiluokka**-kentässä voit määrittää budjettisuunnitelman rivit joko kulutapahtumiksi tai tuottotapahtumiksi. Yleensä tuottotapahtumat ovat luottoja kirjanpitotilille ja ne tallennetaan siksi negatiivisina lukuina. Nämä tapahtumat myös yleensä näkyvät negatiivisina summina budjettisuunnitelmassa. Lisäämällä budjettiluokan kenttänä suunnitelman asettelussa voit kuitenkin mahdollistaa tuottojen näkymisen positiivisina summina.
 

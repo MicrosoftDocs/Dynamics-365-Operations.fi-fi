@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
+ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8a12627db93b131450015539bb92ea4780518ed3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-process-overview"></a>Tuotantoprosessin yleiskatsaus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on yleiskuvaus tuotantoprosesseista. Artikkelissa kuvataan tuotantotilausten, erätilausten ja kanbanien vaiheita tilauksen luonnista tilikauden sulkemiseen. 
 
@@ -78,7 +78,7 @@ Seuraavat tuotannon elinkaaren vaiheet voivat tapahtua kaikille tilaustyypeille,
 12. **Kauden sulkeminen** – Jotkin kustannuslaskennan periaatteet, kuten kausittainen keskiarvo, jälkikustannuslaskenta, FIFO tai LIFO, edellyttävät ajoittaisia toimita, jotta varasto tai tilikausi voidaan sulkea. Yleensä järjestelmä yrittää raportoida kaikkien materiaalien ja resurssien kulutuksesta ja varaston sekä hävikin oikaisuista ennen kausien sulkemista. Tämä raportointi tehdään yleensä käyttämällä varaston siirtokirjauskansioita tai oikaisun kirjauskansioita. Tavoitteena on arvioida toimintayksiköiden taloudellista suorituskykyä kullakin kaudella. Joskus kun käytetään pitkäaikaisia tuotantotilauksia, jotka kattavat koko taloudellisen raportointijakson, tuotantokirjauskansioiden avulla voidaan raportoida tuotannon edistymisestä ja resurssien kulutuksesta kauden lopussa.
 
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Tuotannon palaute](production-feedback.md)

@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c055c673443255f3e6dda5e1179e1ef28d90e693
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c2a957038bfad065361b46e85b8195214779cc2d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="optimization-advisor-overview"></a>Optimointiavustajan yleiskuvaus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään optimaalisen Microsoft Dynamics 365 Finance and Operations -konfiguraation varmistamista optimointityökalun avulla.
 
@@ -50,8 +50,6 @@ Normaalit suojauskäytännöt koskevat optimointimahdollisuuksia. Esimerkiksi **
 Kun käytät joitain optimointimahdollisuuksia, järjestelmä laskee mahdollisuuden vaikutuksen liiketoimintaprosessien suorittamiseen kuluvan ajan vähennyksenä. Tämä ominaisuus ei ole valitettavasti käytettävissä kaikissa optimointimahdollisuuksissa.
 
 Lisätietoja optimointityökalusta on lyhyessä videossa [Dynamics 365 for Finance and Operationsin optimointityökalu](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
-
-> [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
 ## <a name="optimization-rules"></a>Optimointisäännöt
 
@@ -93,7 +91,7 @@ Jos mahdollisuus ei koske rooliasi, voit valita **Piilota luettelossa**. Vaikka 
 
 Voit poistaa tiettyjen sääntöjen aktivoinnin valitsemalla ensin säännön muodostaneen mahdollisuuden ja sitten **Poista analyysin aktivointi**.
 
-## <a name="see-also"></a>Lisätietoja
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Uusien sääntöjen luominen](./create-rules-optimization-advisor.md)
 

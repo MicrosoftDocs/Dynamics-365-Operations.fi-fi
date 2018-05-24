@@ -3,7 +3,7 @@ title: "Mukautetut kentät"
 description: "Tässä ohjeaiheessa käsitellään, miten Microsoft Dynamics 365 for Finance and Operations antaa joillekin käyttäjille mahdollisuuden luoda mukautettuja kenttiä ja muokata sovellusta niiden avulla yrityksen tarpeita vastaavaksi."
 author: jasongre
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 4420eeb249a4d1bdac203e32d017dcebbddf95c3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6f0257d6a16d3d53953e1fbbf023109425fa6844
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="custom-fields"></a>Mukautetut kentät
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 Vaikka Microsoft Dynamics 365 for Finance and Operationsissa on kattava valikoima valmiita kenttiä monenlaisten liiketoimintaprosessien hallintaa varten, joskus yritysten on seurattava myös muita tietoja järjestelmässä. Tämän Finance and Operationsissa voi luoda mukautettuja kenttiä, jotka muokkaavat sovellusta yrityksen tarpeita vastaavaksi. Tätä varten tarvitaan tietyt käyttöoikeudet. 
 
@@ -139,7 +139,7 @@ Suorituskyvyn ja teknisten syiden vuoksi vain seuraavat ehdot täyttävät taulu
      -   Parametri
      -   Viite
      -   TransactionHeader
-- Taulua ei voi laajentaa toista taulua.
+- Taulu ei voi laajentaa toista taulua.
 - Taulua ei voi merkitä järjestelmätauluksi.
 - Taulu ei voi olla väliaikainen taulu.
 

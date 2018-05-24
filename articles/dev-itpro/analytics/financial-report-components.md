@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3679ccf304a32385c162ba3663eba2300f028817
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5599135eebfcffdedaaadec86beb214c5c04cbaf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-report-components"></a>Talousraportin komponentit
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa käsitellään raportin määritysten osia tai rakenneosia käytetään talousraportoinnissa. Näitä rakenneosia ovat rivi-, sarake- ja raportointipuun määritykset. Tässä artikkelissa kerrotaan, miten rakenneosat järjestetään ja lukitaan. 
 
@@ -109,12 +109,12 @@ Voit viedä rakenneosaryhmän aiemmin luotuun rakenneosaryhmään. Alkuperäiset
 Kun käyttäjä avaa rakenneosan, muut käyttäjät voivat käyttää kyseistä rakenneosaa ainoastaan vain luku -tilassa. Joskus käyttäjät saattavat unohtaa sulkea rakenneosan tai he sammuttavat järjestelmän rakenneosan sulkematta. Rakenneosa pysyy siinä tapauksessa uloskuitattuna eivätkä muut käyttäjät voi avata sitä. Näissä tilanteissa talousraportoinnin järjestelmänvalvoja voi kuitata **Uloskuitatut kohteet** -valintaikkunassa sisään rakenneosat, jotka käyttäjät ovat jättäneet uloskuitatuiksi. **Huomautus:** Vain järjestelmänvalvojat voivat kuitata rakenneosia sisään **Uloskuitatut kohteet** -valintaikkunassa.
 1.  Valitse Report Designerin **Työkalut**-valikosta **Uloskuitatut kohteet**.
 2.  Valitse **Uloskuitatut nimikkeet** -valintaikkunassa **Näytä kaikkien käyttäjien nimikkeet**. Luettelo päivittyy, ja siinä näkyvät kaikki ne rakenneosat, jotka ovat uloskuitattuina, sekä käyttäjät, jotka ovat kuitanneet ne ulos.
-3.  Valitse rakenneosa ja valitse sitten **Peruuta uloskuittaus**.
-4.  Valitse **Kyllä**, kun haluat kuitata rakenneosan sisään.
+3.  Valitse rakenneosa ja valitse sitten **Kumoa uloskuittaus**.
+4.  Kuittaa rakenneosa sisään valitsemalla **Kyllä**.
 
-## <a name="see-also"></a>Lisätietoja
+## <a name="additional-resources"></a>Lisäresurssit
 
-[Taloushallinnan raportointi](financial-reporting-intro.md)
+[Talousraportointi](financial-reporting-intro.md)
 
 
 

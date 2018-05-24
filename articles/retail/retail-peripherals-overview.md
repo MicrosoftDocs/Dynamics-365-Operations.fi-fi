@@ -19,16 +19,16 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ba9c828efc39d45a78500d30295e5d1d6c770c99
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 77f475b0937672af268d6da938d5b2a1c9f6448b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-peripherals-overview"></a>Vähittäismyynnin oheislaitteiden yleiskatsaus
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä aiheessa esitellään vähittäismyynnin oheislaitteisiin liittyvät käsitteet. Artikkelissa kerrotaan, miten oheislaitteet voidaan yhdistää myyntipisteeseen, ja esitellään komponentit, jotka ovat vastuussa myyntipisteen yhteyden hallinnasta.
 
@@ -786,7 +786,7 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
     -   Maksupääte
 
     Jos oheislaite ei kuulu mihinkään näistä luokista, laiteasemaa ei ole suunniteltu oheislaitteiden jakamiseen useiden myyntipisteiden laitteiden kanssa.
--   Joskus laiteohjaimet voivat aiheuttaa virheitä yhteisten ohjausobjektien toimintaan. Jos laite on asennettu äskettäin, mutta se ei toimi oikein tai huomaat muita ongelmia, ongelma voidaan usein ratkaisua asentamalla ohjausobjekti uudelleen. Voit ladata yhteisiä ohjausobjekteja osoitteessa <http://monroecs.com/oposccos_current.htm>.
+-   Joskus laiteohjaimet voivat aiheuttaa virheitä yhteisten ohjausobjektien toimintaan. Jos laite on asennettu äskettäin, mutta se ei toimi oikein tai huomaat muita ongelmia, ongelma voidaan usein ratkaisua asentamalla ohjausobjekti uudelleen. Voit ladata yhteiset ohjausobjektit osoitteesta <http://monroecs.com/oposccos_current.htm>.
 -   Jos oheislaitteita muutetaan usein testaamisen tai virheenetsinnän aikana, sinun on ehkä palautettava IIS:n asetukset tai odotettava välimuistin päivittymistä. Voit palauttaa IIS:n asetukset seuraavien vaiheiden avulla:
     1.  Valitse **Käynnistä**-valikko ja kirjoita **CMD**.
     2.  Napsauta **komentokehotetta** hiiren kakkospainikkeella ja valitse sitten **Suorita järjestelmänvalvojana**.
@@ -801,10 +801,10 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
     6.  Kun DLL-isännät on suljettu, käynnistä Modern POS uudelleen.
 
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Vähittäismyynnin oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
+[Retail-oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
 
 
 

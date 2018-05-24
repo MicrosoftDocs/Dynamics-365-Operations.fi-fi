@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f7001158a498aa28028167a0f76ad610ec09b43c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3726038d9782891988e16cb98cf04cf47b7e66c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="gantt-chart-for-job-scheduling"></a>Töiden ajoittamisen Gantt-kaavio
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Gantt-kaavio on suunniteltu mahdollistamaan tuotannon suunnittelijoille tuotantosuunnitelman valvontaa ja optimointia varten. Gantt-kaavio tekee työnkulusta avoimia ja helpottaa tuotantoaikataulun säätämistä ottaen huomioon materiaali- tai resurssipuutteet. Näin suunnittelijat voivat parhaiten hyödyntää käytettäviä resursseja, pienentää keskeneräisten töiden määrää ja optimoida tuotantotilausten läpimenoaikoja.
 
@@ -156,7 +156,7 @@ Gantt-kaavion voit avata seuraavilta sivuilta.
 |           <strong>Suoritettava työ</strong> (luettelo <strong>Tuotannon hallinta</strong> -työtilassa)            |                                                                                               <strong>Suoritettava työ -luettelo Tuotannon hallinta</strong> -työtilassa näkyvät tuotanto- ja erätilausten työt, jotka ovat käynnissä työtilan valituilla resursseilla. <strong>Gantt-kaavio</strong> -valikon nimikkeestä voit avata Gantt-kaavion, jossa kaikki luettelossa valitut työt ladataan kaavioon.                                                                                               |
 | <strong>Julkaistavat tuotantotilaukset</strong> (avataan <strong>Tuotannon hallinta</strong> -työtilasta) |                                                                                                                                         Julkaistavat tuotantotilaukset -sivu avataan <strong>Tuotannon hallinta</strong> -työtilasta. Tällä sivulla näkyvät ajoitetut tuotanto- ja erätilaukset odottamassa vapautusta. Tällä sivulla voit avata Gantt-kaavion valittujen tuotantotilausten osalta.                                                                                                                                          |
 
-## <a name="see-also"></a>Lisätietoja  
+## <a name="additional-resources"></a>Lisäresurssit  
 [Visuaalinen ajoitus tuotanto- ja erätilausten Gantt-kaavion avulla (Video)](https://youtu.be/BtbuShkGj4I)
 
 [Tuotannon visuaalinen ajoitus (esittelykäsikirjoitus)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)

@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 825dba31a7093e9d9460f5aab59a96507dafeb8a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9768154e117ca09ae84c6a9c82d43000752c2b34
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-journal-entries-and-transactions"></a>Näytä tapahtumat ja kirjauskansiomerkinnät
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa esitellään kirjauskansiovientien ja -tapahtumien eri tarkastelutavat. 
 
@@ -54,9 +54,9 @@ Talousraporttien lisäksi voit käyttää seuraavia kirjanpitoraportteja tarkast
 -   **Tapahtumalähde** – Tämä tapahtumaraportti näyttää tilin kirjanpidon, tapahtuman ja raportoinnin tilivaluutan. Siinä näkyy myös kirjauskansion jokainen rivi, jota on käytetty osoitteeksi.
 
 
-## <a name="see-also"></a>Lisätietoja
+## <a name="additional-resources"></a>Lisäresurssit
 - [Kirjanpitotilin saldot](general-ledger-account-balances.md) 
-- [Kirjanpitolähteen hallinta](..\accounts-payable\accounting-source-explorer.md)
+- [Kirjanpitolähteen hallinta](../accounts-payable/accounting-source-explorer.md)
 - [Talousraportointi](financial-reporting-getting-started.md)
 - [Kirjauskansiovientien näyttäminen](tasks/view-journal-entries-or-transactions.md)
 

@@ -20,16 +20,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad425ab0848ab04003b7378cb5c488650f01c441
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9082c156fde52aa0c822f8e4753de816f8cc0558
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-screen-layouts-for-pos"></a>Myyntipisteen näytön asettelujen määrittäminen
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS -käyttöliittymistä.
 
@@ -89,12 +89,12 @@ Jokainen näyttöasettelun asettelun koko pitää määrittää näyttöasettelu
 
 **Kuva** - Kuva-ohjausobjektia voidaan käyttää näyttämään myymälän logo tai muu brändikuva tapahtumanäytössä. Kuva-ohjausobjekti on käytettävissä vain täydellisissä asetteluissa. 
 
-**Suositellut tuotteet** - Jos tämä on määritetty ympäristöön, Suositellut tuotteet -ohjausobjekti näyttää tuote-ehdotuksia koneoppimiseen perustuen. Suositellut tuotteet -ohjausobjekti on käytettävissä vain Dynamics 365 for Retailin version 1611 täydellisissä asetteluissa. **Mukautettu ohjausobjekti **- Mukautettu ohjausobjekti toimii näytössä paikkamerkkinä varaamassa tilaa mukautetulle sisällölle. Mukautettu ohjausobjekti on käytettävissä vain täydellisissä asetteluissa.
+**Suositellut tuotteet** - Jos tämä on määritetty ympäristöön, Suositellut tuotteet -ohjausobjekti näyttää tuote-ehdotuksia koneoppimiseen perustuen. Suositellut tuotteet -ohjausobjekti on käytettävissä vain Dynamics 365 for Retailin version 1611 täydellisissä asetteluissa. **Mukautettu ohjausobjekti**- Mukautettu ohjausobjekti toimii näytössä paikkamerkkinä varaamassa tilaa mukautetulle sisällölle. Mukautettu ohjausobjekti on käytettävissä vain täydellisissä asetteluissa.
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Retail POS-asettelun suunnittelutoiminto asentaminen](install-pos-layout-designer.md)
+[Retail POS:n asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
 
 
 

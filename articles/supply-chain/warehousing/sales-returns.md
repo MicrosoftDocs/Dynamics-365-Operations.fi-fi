@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e2125b3616310196b2c5ede0ddcaab24856ddc34
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d4da2ed8d61ffae3a4a4dc24793d82de22e86e59
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-returns"></a>Myyntipalautukset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa on tietoja palautustilausten prosessista. Se sisältää tietoja asiakaspalautuksista ja niiden vaikutuksesta kustannuslaskentaan ja käytettävissä olevan varaston määriin.
 
@@ -88,7 +88,7 @@ Kun palautuksen otsikko on valmis, voit luoda palautusrivejä jollakin seuraavis
 -   Anna nimikkeen tiedot, määrä ja muut tiedot kullekin palautusriville manuaalisesti.
 -   Luo palautusrivi käyttämällä **Etsi myyntitilaus** -toimintoa. Suosittelemme, että käytät tätä toimintoa, kun luot palautustilauksen. **Etsi myyntitilaus** -toiminto määrittää viitteen palautusriviltä laskutetulle myyntitilausriville ja hakee rivin tiedot, kuten nimiketunnuksen, määrän, hinnan, alennuksen ja kustannusarvot myyntiriviltä. Viittaus takaa, että kun tuote palautetaan yritykselle, se arvostetaan samalle yksikkökustannukselle, jolla se myytiin. Viittaus myös varmistaa, että palautustilauksia ei ole luotu määrälle, joka yrittää laskulla myydyn määrän.
 
-**Huomautus:** palautusrivejä, joilla on viittaus myyntitilaukseen, käsitellään myynnin korjauksina tai peruutuksina. Lisätietoja jäljempänä tämän aiheen osiossa “Kirjaa kirjanpitoon”.
+>[Huomautus!] Palautusrivejä, joilla on viittaus myyntitilaukseen, käsitellään myynnin korjauksina tai peruutuksina. Lisätietoja jäljempänä tämän aiheen osiossa “Kirjaa kirjanpitoon”.
 
 ### <a name="charges"></a>Kulut
 
@@ -193,15 +193,26 @@ Palautusten saapuminen on integroitu yleiseen varastosaapumisten prosessiin. Saa
 
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Tunnista tuotteet Saapumisten yhteenvetoluettelossa
 
-**Saapumisten yhteenveto** -sivulla on lueteltu kaikki suunnitellut saapumiset. **Huomautus:** palautustilauksille saapuvat tuotteet on käsiteltävä erikseen muista saapumistapahtumista. Kun olet tunnistanut saapuvan paketin **Saapumisten yhteenveto** -sivulla (esimerkiksi RMA-saateasiakirjan avulla), napsauta toimintoruudusta **Aloita saapuminen** -painiketta luodaksesi saapumista vastaavan Saapumisen kirjauskansion.
+**Saapumisten yhteenveto** -sivulla on lueteltu kaikki suunnitellut saapumiset. 
+>[Huomautus!] Palautustilauksille saapuvat tuotteet on käsiteltävä erikseen muista saapumistapahtumista. Kun olet tunnistanut saapuvan paketin **Saapumisten yhteenveto** -sivulla (esimerkiksi RMA-saateasiakirjan avulla), napsauta toimintoruudusta **Aloita saapuminen** -painiketta luodaksesi saapumista vastaavan Saapumisen kirjauskansion.
 
 ### <a name="edit-the-arrival-journal"></a>Muokkaa saapumisen kirjauskansiota
 
-Määrittämällä **Karanteeninhallinta** asetukseksi **Kyllä**, voit luoda palautusriville karanteenitilauksen. Jos rivi on lähetetty karanteeniin tarkastettavaksi, et voi määrittää käsittelykoodia. **Huomautus:** jos nimikkeen varastomalliryhmän **Karanteeninhallinta** -asetus on **Kyllä**, **Kirjauskansiorivit**-sivun **Karanteeninhallinta**-asetus on merkittynä saapumisten kirjauskansioriveille, eikä sitä voi muuttaa. Jos rivi lähetetään karanteeniin, sille on määritettävä sopiva karanteenivarasto. Jos saapumisriviä ei lähetetä tarkastettavaksi, varaston saapumisvirkailijan on määritettävä käsittelykoodi suoraan saapumisen kirjauskansioriville ja kirjattava sitten saapumisen kirjauskansio. Jos samaa käsittelykoodia ei tule liittää palautusrivin koko määrään tai jos rivin koko määrää ei ole vielä vastaanotettu, rivi on jaettava. Kun jaat saapumisen kirjauskansiorivin, voit myös jakaa palautusrivin (**SalesLine**) ja luoda uuden erätunnuksen. Voit jakaa rivin vähentämällä saapumisen kirjauskansiorivin määrää. Kun kirjauskansio kirjataan, luodaan uusi palautusrivi, jonka tila on **Odotettu** jäljellä olevan määrän osalta. Voit myös jakaa rivin valitsemalla **Toiminnot** &gt; **Jako**.
+Määrittämällä **Karanteeninhallinta** asetukseksi **Kyllä**, voit luoda palautusriville karanteenitilauksen. Jos rivi on lähetetty karanteeniin tarkastettavaksi, et voi määrittää käsittelykoodia. 
+ 
+Jos nimikkeen varastomalliryhmän **Karanteeninhallinta**-asetus on **Kyllä**, **Karanteeninhallinta**-asetus **Kirjauskansiorivit**-sivulla on merkittynä saapumisten kirjauskansioriveille, eikä sitä voi muuttaa. Jos rivi lähetetään karanteeniin, sille on määritettävä sopiva karanteenivarasto. 
+
+Jos saapumisriviä ei lähetetä tarkastettavaksi, varaston saapumisvirkailijan on määritettävä käsittelykoodi suoraan saapumisen kirjauskansioriville ja kirjattava sitten saapumisen kirjauskansio. Jos samaa käsittelykoodia ei tule liittää palautusrivin koko määrään tai jos rivin koko määrää ei ole vielä vastaanotettu, rivi on jaettava. Kun jaat saapumisen kirjauskansiorivin, voit myös jakaa palautusrivin (**SalesLine**) ja luoda uuden erätunnuksen. Voit jakaa rivin vähentämällä saapumisen kirjauskansiorivin määrää. Kun kirjauskansio kirjataan, luodaan uusi palautusrivi, jonka tila on **Odotettu** jäljellä olevan määrän osalta. Voit myös jakaa rivin valitsemalla **Toiminnot** &gt; **Jako**.
 
 ### <a name="process-the-quarantine-order"></a>Karanteenitilauksen käsittely
 
-Jos palautetut tuotteet lähetetään tarkastettavaksi karanteenivarastossa, muu käsittely suoritetaan karanteenitilauksessa. Kullekin karanteeniin lähetetylle saapumisriville luodaan karanteenitilaus. Käsittelykoodi ilmaisee tarkastusprosessin tuloksen. Voit jakaa karanteenitilauksen samalla tavalla kuin saapumisen kirjauskansion voi jakaa. Jos jaat karanteenitilauksen, vastaava palautusrivi jaetaan myös. Kun olet syöttänyt käsittelykoodin, päätä karanteenitilaus joko **Päätä**-toiminnolla tai **Ilmoita valmiiksi** -toiminnolla. Jos valitset **Ilmoita valmiiksi**, määritettyyn varastoon luodaan uusi saapuminen. Voit sitten käsitellä tämän saapumisen **Saapumisten yhteenveto** -sivulla. Jos saapuminen on peräisin karanteenitilauksesta, et voi muuttaa sille tarkastuksen aikana määritettyä käsittelykoodia. Jos teet karanteenitilauksen valmiiksi **Päätä**-toiminnolla, erä rekisteröidään automaattisesti. Nimike saatetaan joskus lähettää karanteenista takaisin lähetys- ja vastaanotto-osastolle. Esimerkiksi karanteenitarkastaja ei ehkä tiedä, mihin nimike varastoidaan. Tässä tapauksessa vastaava pakkausluettelo on päivitettävä, jotta se rekisteröi ja toimii karanteenin seurauksena määritetyn käsittelykoodin kanssa. Vastaanottokuittaukset voidaan lähettää asiakkaalle, kun palautusrivi rekisteröidään. **Palautuksen kuittaus** -raportti muistuttaa palautustilauksen asiakirjaa. **Palautuksen kuittaus** -raporttia ei kirjata tai rekisteröidä järjestelmään muutoin, eikä se ole palautustilausprosessin pakollinen vaihe.
+Jos palautetut tuotteet lähetetään tarkastettavaksi karanteenivarastossa, muu käsittely suoritetaan karanteenitilauksessa. Kullekin karanteeniin lähetetylle saapumisriville luodaan karanteenitilaus. Käsittelykoodi ilmaisee tarkastusprosessin tuloksen. 
+
+Voit jakaa karanteenitilauksen samalla tavalla kuin saapumisen kirjauskansion voi jakaa. Jos jaat karanteenitilauksen, vastaava palautusrivi jaetaan myös. Kun olet syöttänyt käsittelykoodin, päätä karanteenitilaus joko **Päätä**-toiminnolla tai **Ilmoita valmiiksi** -toiminnolla. Jos valitset **Ilmoita valmiiksi**, määritettyyn varastoon luodaan uusi saapuminen. Voit sitten käsitellä tämän saapumisen **Saapumisten yhteenveto** -sivulla. 
+
+Jos saapuminen on peräisin karanteenitilauksesta, et voi muuttaa sille tarkastuksen aikana määritettyä käsittelykoodia. Jos teet karanteenitilauksen valmiiksi **Päätä**-toiminnolla, erä rekisteröidään automaattisesti. Nimike saatetaan joskus lähettää karanteenista takaisin lähetys- ja vastaanotto-osastolle. Esimerkiksi karanteenitarkastaja ei ehkä tiedä, mihin nimike varastoidaan. Tässä tapauksessa vastaava pakkausluettelo on päivitettävä, jotta se rekisteröi ja toimii karanteenin seurauksena määritetyn käsittelykoodin kanssa. 
+
+Vastaanottokuittaukset voidaan lähettää asiakkaalle, kun palautusrivi rekisteröidään. **Palautuksen kuittaus** -raportti muistuttaa palautustilauksen asiakirjaa. **Palautuksen kuittaus** -raporttia ei kirjata tai rekisteröidä järjestelmään muutoin, eikä se ole palautustilausprosessin pakollinen vaihe.
 
 ## <a name="replace-a-product"></a>Tuotteen korvaaminen
 Korvaavien tuotteiden hallintaan on kaksi menetelmää:
@@ -223,7 +234,9 @@ Jos toimitat asiakkaalle korvaavan nimikkeen ja käytät palautustilauksessa **K
 
 ![Korvausprosessi, kun käytössä on käsittelykoodi](./media/SalesReturn05.png)
 
-Korvaava nimike toimitetaan itsenäisen myyntitilauksen, eli korvaavan myyntitilauksen avulla. Tämä myyntitilaus luodaan, kun palautustilauksen pakkausluettelo muodostetaan. Tilauksen otsikossa käytetään asiakkaan tietoja, joihin viitataan palautustilauksen otsikossa. Rivin tiedot on kerätään tiedoista, jotka on syötetty **Korvaava nimike** -sivulla. **Korvaava nimike** -sivulle on täytettävä rivit, joilla on käsittelytoimenpiteitä, jotka alkavat sanalla "korv". Korvaavan nimikkeen määrää tai tyyppiä ei kuitenkaan vahvisteta tai rajoiteta. Tämä mahdollistaa tapaukset, joissa asiakas haluaa saman nimikkeen eri kokoonpanossa tai koossa, sekä tapaukset, joissa asiakas haluaa täysin eri nimikkeen. Samanlainen nimike syötetään oletuksena **Korvaava nimike** -sivulle. Voit kuitenkin valita toisen nimikkeen, jos kyseinen toiminto on otettu käyttöön. **Huomautus:** voit muokata ja poistaa korvaavan myyntitilauksen, kun se on luotu.
+Korvaava nimike toimitetaan itsenäisen myyntitilauksen, eli korvaavan myyntitilauksen avulla. Tämä myyntitilaus luodaan, kun palautustilauksen pakkausluettelo muodostetaan. Tilauksen otsikossa käytetään asiakkaan tietoja, joihin viitataan palautustilauksen otsikossa. Rivin tiedot on kerätään tiedoista, jotka on syötetty **Korvaava nimike** -sivulla. **Korvaava nimike** -sivulle on täytettävä rivit, joilla on käsittelytoimenpiteitä, jotka alkavat sanalla "korv". Korvaavan nimikkeen määrää tai tyyppiä ei kuitenkaan vahvisteta tai rajoiteta. Tämä mahdollistaa tapaukset, joissa asiakas haluaa saman nimikkeen eri kokoonpanossa tai koossa, sekä tapaukset, joissa asiakas haluaa täysin eri nimikkeen. Samanlainen nimike syötetään oletuksena **Korvaava nimike** -sivulle. Voit kuitenkin valita toisen nimikkeen, jos kyseinen toiminto on otettu käyttöön. 
+
+>[Huomautus!] Voit muokata ja poistaa korvaavan myyntitilauksen, kun se on luotu.
 
 ## <a name="generate-a-packing-slip"></a>Pakkausluettelon luominen.
 Ennen kuin palautetut nimikkeet voidaan vastaanottaa varastoon, sen tilauksen pakkausluettelo, johon palautetut nimikkeet kuuluvat, on päivitettävä. Samalla tavoin kuin laskun päivitysprosessi kirjanpitotapahtumaksi pakkausluettelon päivitysprosessi on varastotietueen fyysinen päivitys. Toisin sanoen se vahvistaa muutokset varastoon. Kun kyseessä on palautus, käsittelytoimenpiteen vaiheet toteutetaan pakkausluettelon päivityksen aikana. Kun muodostat pakkausluettelon, suoritetaan seuraavat tapahtumat:
@@ -233,14 +246,19 @@ Ennen kuin palautetut nimikkeet voidaan vastaanottaa varastoon, sen tilauksen pa
 -   Nimikkeet, jotka on merkitty **Palautetaan asiakkaalle** -käsittelytoimenpiteellä vastaanotetaan ja toimitetaan asiakkaalle. Näillä nimikkeillä ei ole nettovaikutusta varastoon.
 -   Korvaava myyntitilaus on luotu. Tämä myyntitilaus perustuu **Korvaava nimike** -sivun tietoihin.
 
-Voit luoda pakkausluettelon ainoastaan riveille, joiden palautustila on **Rekisteröity** ja ainoastaan palautusrivin täydelle määrälle. Jos usealla palautustilauksen rivillä on **Rekisteröity**-tila, voit pakkausluettelon rivin osajoukolle poistamalla muut rivit **Kirjaa pakkausluettelo** -sivulta. Osapalautukset määritetään palautustilausrivien, ei palautustilauslähetyksen mukaan. Se tarkoittaa sitä, että jos vastaanotat yhdellä palautustilausrivillä osoitetun koko määrän, mutta et mitään muilla palautustilausriveillä osoitettuja määriä, toimitus ei ole osatoimitus. Jos kuitenkin palautustilausrivi kutsuu palautettavaksi tietyn nimikkeen 10 yksikköä ja vastaanotat vain neljä, kyseessä on osatoimitus. Jos kaikki odotetut palautusnimikkeet eivät ole saapuneet, voit asettaa toimituksen syrjään ja odottaa, että loppu palautettava määrä saapuu. Vaihtoehtoisesti voit rekisteröidä ja kirjata osittaisen määrän. Pakkausluetteloiden kirjaamisprosessin osana on mahdollista liittää pakkausluettelon viitenumero asiakkaan toimitusasiakirjoista tilausriveille. Tämä liitos on valinnainen ja on tarkoitettu vain tiedoksi. Se ei vaikuta tapahtumaan liittyviin päivityksiin. Pakkausluetteloprosessin voi yleensä ohittaa ja siirtyä suoraan laskutukseen. Näissä tapauksissa pakkausluettelon muodostamisen aikana suoritettavat vaiheet tehdään laskutuksen aikana.
+Voit luoda pakkausluettelon ainoastaan riveille, joiden palautustila on **Rekisteröity** ja ainoastaan palautusrivin täydelle määrälle. Jos usealla palautustilauksen rivillä on **Rekisteröity**-tila, voit pakkausluettelon rivin osajoukolle poistamalla muut rivit **Kirjaa pakkausluettelo** -sivulta. 
+
+Osapalautukset määritetään palautustilausrivien, ei palautustilauslähetyksen mukaan. Se tarkoittaa sitä, että jos vastaanotat yhdellä palautustilausrivillä osoitetun koko määrän, mutta et mitään muilla palautustilausriveillä osoitettuja määriä, toimitus ei ole osatoimitus. Jos kuitenkin palautustilausrivi kutsuu palautettavaksi tietyn nimikkeen 10 yksikköä ja vastaanotat vain neljä, kyseessä on osatoimitus. Jos kaikki odotetut palautusnimikkeet eivät ole saapuneet, voit asettaa toimituksen syrjään ja odottaa, että loppu palautettava määrä saapuu. Vaihtoehtoisesti voit rekisteröidä ja kirjata osittaisen määrän. Pakkausluetteloiden kirjaamisprosessin osana on mahdollista liittää pakkausluettelon viitenumero asiakkaan toimitusasiakirjoista tilausriveille. Tämä liitos on valinnainen ja on tarkoitettu vain tiedoksi. Se ei vaikuta tapahtumaan liittyviin päivityksiin. 
+
+Pakkausluetteloprosessin voi yleensä ohittaa ja siirtyä suoraan laskutukseen. Näissä tapauksissa pakkausluettelon muodostamisen aikana suoritettavat vaiheet tehdään laskutuksen aikana.
 
 ## <a name="generate-an-invoice"></a>Luo lasku
 Vaikka **Palautustilaus**-sivu sisältääkin tietoja ja toimintoja, joita tarvitaan palautustilauksen erityisten logistiset erityisnäkökohtien käsittelyyn, laskutusprosessi on vietävä loppuun **Myyntitilaus**-sivulla. Organisaatiosi voi sitten laskuttaa palautus- ja myyntitilaukset samanaikaisesti, ja sama henkilö voi saattaa laskutusprosessin loppuun tarpeen mukaan. Voit tarkastella palautustilausta **Myyntitilaus**-sivulla napsauttamalla myyntitilauksen numeron linkkiä, joka avaa liittyvän myyntitilauksen. Palautustilauksen löydät myös **Kaikki myyntitilaukset** -sivulta. Palautustilaukset ovat myyntitilauksia, joiden tilaustyyppi on **Palautettu tilaus**.
 
 ### <a name="credit-correction"></a>Hyvityksen oikaisu
 
-Varmista, osana laskutusprosessia, että muut kulut ovat oikein. Jotta kirjauskansion kirjaukset tehdään korjauksina (Storno), harkitse käyttäväsi **Hyvityksen oikaisu** -asetusta **Laskun kirjaus** -sivun **Muu**-välilehdellä kun kirjaat laskun/hyvityslaskun. **Huomautus:** oletusarvon mukaan **Hyvityksen oikaisu** -asetus on aktiivinen, jos **Korjaus hyvityslaskulla** -asetus on otettu käyttöön **Myyntireskontran parametrit** -sivulla. Suosittelemme kuitenkin, että et kirjaa palautuksia Stornolla.
+Varmista, osana laskutusprosessia, että muut kulut ovat oikein. Jotta kirjauskansion kirjaukset tehdään korjauksina (Storno), harkitse käyttäväsi **Hyvityksen oikaisu** -asetusta **Laskun kirjaus** -sivun **Muu**-välilehdellä kun kirjaat laskun/hyvityslaskun. 
+>[Huomautus!] Oletusarvon mukaan **Hyvityksen oikaisu** -asetus on aktiivinen, jos **Korjaus hyvityslaskulla** -asetus on otettu käyttöön **Myyntireskontran parametrit** -sivulla. Suosittelemme kuitenkin, että et kirjaa palautuksia Stornolla.
 
 ## <a name="create-intercompany-return-orders"></a>Luo konsernin sisäiset palautustilaukset
 Palautustilauksia voi suorittaa kahden organisaatiosi sisäisen yrityksen välillä. Seuraavia tilanteita tuetaan:
@@ -294,7 +312,7 @@ Palautustilauksessa ei ole viittausta myyntilaskuun. Palautettu nimike hyvitetä
 
 ![Palautustilauksessa ei ole viittausta myyntilaskuun](./media/SalesReturn09.png)  
 
-**Huomautus:** nimikkeen päätietuehintaa käytetään **Palautuksen kustannushinta** -parametrin oletusarvona. Oletushinta eroaa kustannushinnasta varasto-oton hetkellä. Vaikutus on siis, että on syntynyt tappio-arvo on 3. Palautustilaus ei lisäksi sisällä alennusta, joka asiakkaalle oli annettu myyntitilauksessa. Tämän vuoksi ilmenee liian suuri hyvitys.
+>[Huomautus!] Nimikkeen päätietuehintaa käytetään **Palautuksen kustannushinta** -parametrin oletusarvona. Oletushinta eroaa kustannushinnasta varasto-oton hetkellä. Vaikutus on siis, että on syntynyt tappio-arvo on 3. Palautustilaus ei lisäksi sisällä alennusta, joka asiakkaalle oli annettu myyntitilauksessa. Tämän vuoksi ilmenee liian suuri hyvitys.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Esimerkki 2: Hyvityksen korjaus on valittuna palautustilaukselle
 
@@ -302,7 +320,7 @@ Esimerkki 2 on muuten sama kuin esimerkki 1, mutta **Hyvityksen korjaus** -param
 
 ![Hyvityksen korjaus on valittuna palautustilaukselle ](./media/SalesReturn10.png)  
 
-**Huomautus:** kirjanpidon kirjaukset syötetään negatiivisina oikaisuina.
+>[Huomautus!] Kirjanpidon kirjaukset syötetään negatiivisina oikaisuina.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Esimerkki 3: Palautustilauksen rivi on luotu Etsi myyntitilaus -toiminnolla
 
@@ -310,7 +328,7 @@ Tässä esimerkissä palautustilauksen rivi on luotu **Etsi myyntitilaus** -toim
 
 ![Palautustilauksen rivi on luotu Etsi myyntitilaus -toiminnolla ](./media/SalesReturn11.png)  
 
-**Huomautus:** **Alennus** ja **Palautuksen kustannushinta** on määritetty oikein. Tämän vuoksi myyntilasku ilmenee käännettynä.
+>[Huomautus!] **Alennus** ja **Palautuksen kustannushinta** on määritetty oikein. Tämän vuoksi myyntilasku ilmenee käännettynä.
 
 
 

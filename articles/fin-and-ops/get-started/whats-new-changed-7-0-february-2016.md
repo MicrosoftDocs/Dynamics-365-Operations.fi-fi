@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ab12a55e41cd32c2479eb46796de57926652942f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3ba9025aa5394b29bdba80e589c77fa4bd2bd47f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0:n uudet ja muuttuneet ominaisuudet (helmikuu 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa käsitellään Microsoft Dynamics AX 7.0:n uusia tai muuttuneita ominaisuuksia. Tässä versiossa on sekä ympäristö- että sovellusominaisuuksia, ja se julkaistiin helmikuussa 2016.
 
@@ -536,7 +536,7 @@ Uusia ominaisuuksia ei ole lisätty.
 </tr>
 <tr class="odd">
 <td>(EU) Raportoi Intrastat-lisäyksiköiden määrä yksikön muuntoasetuksen avulla.</td>
-<td>Intrastat-kauppatavarakoodissa on tekstikenttä lisäyksiköiden tunnistamiseen, ja **Tuote**-kortissa on kenttä lisäyksiköiden tunnistamiseen kilogrammoina.</td>
+<td>Intrastat-kauppatavarakoodissa on tekstikenttä lisäyksiköiden tunnistamiseen, ja<strong> Tuote</strong>-kortissa on kenttä lisäyksiköiden tunnistamiseen kilogrammoina.</td>
 <td>Intrastat-kauppatavarakoodin lisäyksiköt valitaan yksikköluettelosta. Lisäyksiköiden määrä lasketaan yksikön muuntoasetusten avulla.</td>
 <td>Tämä yhtenäistää tapahtumayksiköiden uudelleenlaskentaa lisäyksiköiksi.</td>
 </tr>
@@ -1081,7 +1081,7 @@ Uusia ominaisuuksia ei ole lisätty.
 
 
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md)

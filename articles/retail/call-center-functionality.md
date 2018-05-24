@@ -3,7 +3,7 @@ title: Puhelukeskuksen toiminnot
 description: "Tässä ohjeaiheessa on Microsoft Dynamics 365 for Retailin puhelinkeskuksen myyntitoimintojen yleiskatsaus."
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,35 +20,43 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 75dc09ffc84ef8ec48f50ea410974c99aabc212e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="call-center-functionality"></a>Puhelukeskuksen toiminnot
+# <a name="call-center"></a>Puhelinkeskus 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-Tässä artikkelissa on Microsoft Dynamics 365 for Retailin puhelinkeskuksen myyntitoimintojen yleiskatsaus.
+Dynamics 365 for Retailissa puhelinpalvelukeskus on vähittäismyynnin kanava, joka voidaan määrittää sovelluksessa. Määrittämällä tietyn kanavan kaikille puhelinkeskusyksiköillesi järjestelmä voi liittää tietyt oletustiedot ja tilauksen käsittelyn oletusarvot myyntitilauksiin, jotka puhelinkeskuskanavan käyttäjä on luonut.
 
-Dynamics 365 for Retail tukee myös puhelinkeskuksia vähittäismyyntikanavana. Työntekijät ottavat puhelinkeskuksessa vastaan asiakkaiden tilauksia puhelimitse ja luovat myyntitilauksia. Puhelinkeskuksen toimintoihin sisältyy toimintoja, joiden tarkoituksena on helpottaa puhelimessa tilaamista ja asiakaspalvelua tilausprosessin aikana. Esimerkiksi puhelukeskuksen työntekijät voivat syöttää maksutiedot suoraan myyntitilauksesta ja tarkastella yksityiskohtaista yhteenvetoa kuluista ja maksuista ennen tilauksen lähettämistä. Työntekijöillä on myös mahdollisuus hallita hinnoittelua ja käyttää eri tietoja asiakkaista, tuotteista ja hinnoista **Myyntitilaus**-sivun kautta. Puhelukeskukset voivat myös laajennetusti seurata asiakkaan historiatietoja ja tilauksen tilaa. Jokaisella puhelinkeskuksella voi olla omat käyttäjät, maksutavat, hintaryhmät, taloushallinnon dimensiot ja toimitustavat. Voit määrittää nämä asetukset puhelinkeskusta luotaessa. Voit lisäksi ottaa käyttöön tai poistaa käytöstä seuraavat, vain puhelinpalvelukeskuksille ominaiset toimintoryhmät **Puhelukeskus**-sivulla:
+Puhelinkeskuksen ominaisuuksia ovat tarkennettu vähittäismyyntihinta ja alennukset, luettelot, lahjakortit, kanta-asiakasohjelmat ja kupongit. Puhelinkeskuksen tilauksia toimittaa myös myyntipistesovellus (POS) ristikanavatilauksen tukemiseksi.
 
--   **Tilauksen viimeistely** – Tämä ryhmä sisältää ominaisuuksia, jotka liittyvät maksuihin ja tilausten viimeistelyyn **Myyntitilaus**-sivulla.
--   **Ohjattu myynti** – Tämä ryhmä sisältää ominaisuuksia, jotka liittyvät lähdekoodeihin, komentosarjoihin ja luettelopyyntöihin.
+On tärkeää muistaa, että vaikka puhelinkeskusmoduulia voidaan käyttää muilla aloilla vähittäismyynnin ulkopuolella, Dynamics 365 for Retailin nykyisen version puhelinkeskussovellusta ei ole vielä optimoitu käytettäväksi yritysten välisissä (B2B) tilauksen käsittelytilanteissa tai tilanteissa, joissa tilauksessa on paljon myyntirivejä. On suositeltavaa, että käyttäjät, jotka haluavat käyttää puhelinkeskuksen ominaisuuksia tilausten käsittelyyn tavallisten kuluttajatapahtumien ulkopuolella, varaavat riittävästi aikaa puhelinkeskuksen toimintojen testaamiseen ja vahvistamiseen, jotta ne toimivat halutulla tavalla.
 
-Kun olet ottanut nämä toiminnot käyttöön puhelukeskuksen asetuksissa, ne ovat **Myyntitilaus**-sivulla puhelukeskukseen liittyvien käyttäjien käytettävissä. Useimmat näistä ominaisuuksista vaativat lisäasetuksia ennen käyttöä. Ennen kuin käyttäjät voivat luoda puhelukeskustilauksia, sinun on lisättävä nämä käyttäjät puhelukeskuksen käyttäjiksi. Tällä toimella otetaan käyttöön puhelukeskuskanavakohtainen konfiguraatio ja toiminnot. Alla on joitain esimerkkejä saataville tulevista toiminnoista.
+Tilauksen luonnin tukemisen lisäksi puhelinkeskusmoduuli tarjoaa myös helppokäyttöisen asiakaspalvelusovelluksen, joka helpottaa asiakastilien paikantamista ja asiakkaan tilaustietojen ja määritteiden tarkastamista. Asiakaspalvelunäyttö on suunniteltu siten, että käyttäjä pääsee nopeasti tarvittaviin tietoihin, joiden avulla voidaan vastata asiakkaan useimpiin tilausta koskeviin kysymyksiin.
 
--   Ohjattu myynti tarjoaa konfiguraatiovaihtoehtoja puhelinmyynnin käsikirjoituksista ja tuotekuvista, jotka auttavat ja ohjaavat myyntiassistentteja, kun he ottavat vastaan tilauksia.
--   Tilauksia ei voida viimeistellä ennen kuin myyntiassistentit ovat ottaneet vastaan ainakin yhden maksutavan.
--   Lisämyyntiä ja liittyvien tuotteiden myyntiä koskevia sääntöjä voidaan konfiguroida kehottamaan myyntiassistentteja edistämään määrättyjä tuotteita asiakkaalle.
--   Myyntiassistentit voivat kirjata sen luettelon lähdekoodin, josta asiakas on tekemässä tilausta.
--   Myyntiassistentit voivat lisätä jälleenmyyjän kuponkeja tilaukseen.
--   Myyntiassistentit voivat myydä jatkuvuusohjelmia.
--   Tilauksia voidaan asettaa pitoon manuaalisesti tai automaattisesti osoittamaan, että tarvitaan lisätutkimuksia ennen kuin tilaus voidaan käsitellä.
+Tällä sivulla on linkit asianmukaisiin dokumentteihin, jotka liittyvät Dynamics 365 for Retailin puhelinkeskusominaisuuksien määritykseen ja käyttöön.
 
+## <a name="configure-the-call-center"></a>Määritä puhelinkeskus
+[Tilaustenkäsittelyasetusten määrittäminen](set-up-order-processing-options.md)
 
+## <a name="configure-order-processing"></a>Määritä tilauksen käsittely
+[Määritä petoshälytykset](set-up-fraud-alerts.md)
+[Manuaaliset tilausten pidot](work-with-order-holds.md)
 
+## <a name="configure-payment-processing"></a>Määritä maksun käsittely
+[Puhelinkeskuksen maksutavat](work-with-payments.md)
+
+## <a name="configure-direct-marketing"></a>Määritä suoramarkkinointi
+[Puhelinkeskuksen luettelot](call-center-catalogs.md)
+
+[RFM-analyysin määrittäminen](set-up-rfm-analysis.md)
+
+## <a name="configure-continuity-programs"></a>Määritä jatkuvuusohjelmat
+[Puhelinkeskuksen jatkuvuusohjelman määrittäminen](set-up-continuity-program.md)
 
 

@@ -20,24 +20,22 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 23683ff3b232d485d0e4386963b3dcf37cd96c6f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Sarjanumeroiden rekisteröinti myyntiprosessissa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Tässä ohjeaiheessa kerrotaan, kuinka voit rekisteröidä sarjanumeroita pakkausluetteloihin tai laskuihin myyntiprosessin aikana. Toiminto on hyödyllinen yrityksille, jotka haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille.
 
 Monet yritykset haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille. Näissä tilanteissa Microsoft Dynamics 365 for Finance and Operationsissa on mahdollista rekisteröidä sarjanumerot pakkausluetteloiden tai laskujen perusteella tuotteita myytäessä. Jos tuotteet myöhemmin palautettaisiinkin, voit jäljittää kunkin tuotteen laskuun ja määrittää, oletko myynyt tuotteen, ja ovatko huolto- ja takuuvelvoitteet voimassa.
-Onko tiettyjä edellytyksiä?
-----------------------------
 
 Sinun on otettava käyttöön sarjanumerot myyntiprosessille **Seurantadimensioryhmät**-sivulla valitsemalla **Aktiivinen myyntiprosessissa** -valintaruutu. Seuraavat tapahtumat tapahtuvat sitten Microsoft Dynamics 365 for Finance and Operationsissa:
 -   **Sarjanumerot**-pikavälilehden **Sarjanumeroiden hallinta** -asetus valitaan. Kun tämä asetus on valittuna, sinun on rekisteröitävä pakkausluettelon tai laskun kunkin nimikkeen sarjanumero.
@@ -71,8 +69,8 @@ Ei, et voi tarkastella sarjoitettuja käytettävissäsi olevia nimikkeitä, kosk
 
 ## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Voinko sarjanumerot tallentaa todellisen painon nimikkeille?
 Ei, et voi rekisteröidä myyntiprosessissa sarjanumeroita todellisen painon nimikkeille. Jos tuote on lisäksi määritetty todellisen painon nimikkeeksi, et voi määrittää tuotteelle seurantadimensioryhmää, joka on asetettu käyttämään sarjanumeroita ainoastaan myyntiprosessin aikana.
-Voinko rekisteröidä sarjanumeroita vähittäismyyntipisteessä?
-------------------------------------------------
+
+## <a name="can-i-register-serial-numbers-at-the-retail-pos"></a>Voinko rekisteröidä sarjanumeroita vähittäismyyntipisteessä?
 
 Kyllä, vähittäismyyntipiste kehottaa käyttäjää lisäämään sarjanumeron, kun käyttäjä myy tuotteen, jolle on määritetty seurantadimensioryhmä, joka on asetettu käyttämään sarjanumeroita ainoastaan myyntiprosessin aikana.
 

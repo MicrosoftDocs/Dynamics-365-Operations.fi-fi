@@ -1,0 +1,87 @@
+---
+title: Huoltosopimusten ja projektien integrointi
+description: "Kun käsittelet huoltosopimuksia ja huoltosopimusrivejä, käytät tietoja, jotka on määritetty Projektinhallinta ja kirjanpito -osan alueissa."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: ProjParameters
+audience: Application User
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: HT
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9f2640eae299411d633c68795bc16883dbb5eeaf
+ms.contentlocale: fi-fi
+ms.lasthandoff: 05/08/2018
+
+---
+
+# <a name="integration-for-service-agreements-and-projects"></a>Huoltosopimusten ja projektien integrointi 
+
+[!include [banner](../includes/banner.md)]
+
+
+Kun käsittelet huoltosopimuksia ja huoltosopimusrivejä, käytät tietoja, jotka on määritetty seuraavissa **Projektinhallinta ja kirjanpito** -osan alueissa.
+
+## <a name="project-prices"></a>Projektihinnat
+
+Huoltosopimustapahtuman kustannus- ja myyntihinnat johdetaan kustannushinta-asetuksista, joita sovelletaan huoltosopimukseen liitettyyn projektiin. Kustannus- ja myyntihinnat voidaan määrittää projekti-, työntekijä- ja luokkakohtaisesti. 
+
+## <a name="project-validation"></a>Projektin oikeellisuustarkistus
+
+Huoltosopimusriville valittavissa olevia projekteja, työntekijöitä ja luokkia voidaan rajata **Projektinhallinta ja kirjanpito** -osan oikeellisuustarkistusasetusten avulla. Määrittämällä oikeellisuustarkistusasetuksia voit yhdistää työntekijöitä, projekteja ja luokkia ja määrittää niille käyttöoikeuksia. 
+
+## <a name="project-line-properties"></a>Projektirivin ominaisuudet
+
+Rivin ominaisuus määritetään automaattisesti huoltosopimusriville.
+
+Rivin ominaisuudet luodaan **Rivin ominaisuudet** -lomakkeella **Projektinhallinta ja kirjanpito** -osassa. Huoltosopimukseen määritetty rivin ominaisuus liitetään huoltosopimukseen valittuun projektiin ja lisätään sen jälkeen automaattisesti huoltosopimusriville. 
+
+## <a name="default-offset-accounts"></a>Oletusvastatilit
+
+Jos kirjaat kulutapahtuman, tapahtumalle valitaan automaattisesti oletusarvoinen kulun vastatili. Oletusarvoinen kulutili määritetään nykyiseen huoltosopimukseen liitetyssä projektissa.
+
+## <a name="project-categories"></a>Projektin luokat
+
+Huoltosopimusriveille valittavissa olevat luokat määritetään **Tuoteluokat**-lomakkeella **Projektinhallinta ja kirjanpito** -osassa. 
+
+> [!NOTE]
+> <P>Luokat, joiden <STRONG>Käytössä kirjauskansioissa</STRONG>- valintaruutu on valittuna <STRONG>Projekti</STRONG>-välilehdellä <STRONG>Projektiluokat</STRONG>-lomakkeessa, ovat valittavissa. Jos <STRONG>Luokat, jotka eivät ole käytössä</STRONG> -valintaruutu on valittuna <STRONG>Kirjauskansiot</STRONG> -välilehdellä <STRONG>Projektinhallinta ja kirjanpito</STRONG> -lomakkeessa, kaikki luokat ovat valittavissa.</P>
+
+## <a name="project-parameters"></a>Projektiparametrit
+
+Jos **Poistetut työntekijät** -kenttä **Kirjauskansiot**-välilehdellä **Projektinhallinta ja kirjanpito** -lomakkeessa on valittuna, voit valita ei-aktiivisia ja aktiivisia työntekijöitä **Huoltosopimukset**- ja **Huoltotilaukset** -lomakkeissa.
+
+Lisäksi voit ottaa käyttöön **Aloitusaika**- ja **Päättymisaika**-kentät **Projekti**-välilehdellä **Huoltotilaukset**-lomakkeessa, jos haluat määrittää huoltotilausriveille aloitus- ja päättymisajat.
+
+## <a name="enable-the-starting-and-ending-time-feature-for-service-orders"></a>Aloitus- ja päättymisaikaominaisuuden ottaminen käyttöön huoltotilauksissa
+
+1.  Valitse **Projektinhallinta ja kirjanpito** \> **Asetukset** \> **Projektinhallinnan ja kirjanpidon parametrit**.
+
+2.  Valitse **Kirjauskansiot**-välilehti ja valitse sitten **Näytä aloitus-/ lopetusajat** -valintaruutu.
+
+3.  Napsauta **Projektinhallinta ja kirjanpito** \> **Määritys** \> **Kirjauskansiot** \> **Kirjauskansioiden nimet**.
+
+4.  Valitse huoltotilaukseen liitetyn kirjauskansion nimi.
+
+5.  Valitse **Yleinen**-välilehti ja valitse sitten **Näytä aloitus-/ lopetusajat** -valintaruutu.
+
+
+> [!NOTE]
+> <P>Valitse huoltotilauksen kirjauskansion nimi <STRONG>Tunti</STRONG>-kentässä <STRONG>Kirjauskansiot</STRONG>-välilehdellä <STRONG>Huoltohallinnan parametrit</STRONG> -lomakkeessa.</P>
+
+
+
+
+
+

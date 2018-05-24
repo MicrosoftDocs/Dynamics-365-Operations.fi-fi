@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 88570a8dc9da6f6a2b4d3a9499e1ea406f681451
-ms.openlocfilehash: 4608f43a3db9308881d4737e49df949190e3ede2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 18ae41c3c1b19edc2d56a7e3480890c8aea28054
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/14/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Talousraporttien sarakemääritykset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja sarakemäärityksistä. Sarakkeen määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin sarakkeen sisällön. Kuten rivimäärityksiäkin, sarakkeiden perusmäärityksiä voi käyttää useilla raporteilla.
 
@@ -583,7 +583,7 @@ Voit luoda sarakkeen, joka näyttää kaikki määritetyn sarakkeen arvot perusn
 
 Voit jakaa sarakkeen summan määritetyllä jaksojen määrällä. Esimerkiksi **B/Jaksot**-kaava jakaa sarakkeen B arvon sarakkeen B jaksojen määrällä. Jos laskutoimitukseen otetaan mukaan useita sarakkeita, määritä jaksojen määrä, jota käytetään laskutoimituksessa. Esimerkiksi **(B+C)/Jaksot**-kaava laskee sarakkeen B ha C summat yhteen ja jakaa tuloksen jakson arvolla.
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Talousraporttien rivimääritykset](row-definitions-financial-reporting.md)

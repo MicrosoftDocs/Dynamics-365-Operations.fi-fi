@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1db68ea5728cc417f0e70675d9074d5b054883da
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="price-simulation"></a>Hintasimulointi
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja tarjousten hintasimuloinneista. Hintasimulointien avulla voidaan arvioida vähennysten vaikutusta tuleviin myyntihintoihin tarjousprosessin aikana, ennen kuin tietty hinta otetaan käyttöön.
 
@@ -36,7 +36,7 @@ Tarjouksen hintasimulointi näyttää ehdotettuun uuteen hintaan perustuvan uude
 
 Hintasimulointi ei muuta tarjouksen hintaa. Jos hintasimulointia käytetään koko tarjouksessa, se käsitellään tarjouksen otsikossa erikoisalennuksena. Jos hintasimulointia käytetään tietyissä nimikkeissä, se käsitellään tarjouksen riveillä erikoisalennuksena. Tarjousriville luotu yksikön myyntihinta ei muutu, kun hintasimulaatiota käytetään. Sen sijaan tarjousrivin hinnanalennusta vastaava alennusprosentti kohdistetaan. Kun hintasimulointia on käytetty, yksikön myyntihinta ja alennusprosentti siirretään tarjousriville tai tarjouksen otsikkoon.  
 
-**Huomautus:** Kun suoritat hintasimuloinnin, vain nykyistä myyntivaluuttaa käytetään simuloinnin luontiin. Kuitenkin tarjouksen kokonaismäärien katselun yhteydessä näet perusvaluutan ja myyntivaluutan yhdistelmän.  
+>[Huomautus!] Kun suoritat hintasimuloinnin, vain nykyistä myyntivaluuttaa käytetään simuloinnin luontiin. Kuitenkin tarjouksen kokonaismäärien katselun yhteydessä näet perusvaluutan ja myyntivaluutan yhdistelmän.  
 
 Tarjousriveille lisätyt lisänimikkeet voivat aiheuttaa rivialennukset tai monirivialennukset. Ne voivat aiheuttaa myös kokonaisalennuksia, jotka muuttavat tarjousrivien katetuottoja ja -prosentteja ja koko alennuksen.  
 

@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c301f27504f7f1545608bb214a4f1b4d4cecc47f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-may-2016"></a>Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n Microsoftin (toukokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (toukokuu 2016 - kaikki kielet)
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (toukokuu 2016 - kaikki kielet)
 ------------------------------------------------------------------------------------------------
 
 (Toukokuu 2016) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n toukokuun 2016 päivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. (Helmikuun 2016) yhdistetyssä APQC-kirjastossa julkaistut tehtäväoppaiden lokalisoidut versiot ovat käytettävissä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md). <strong>Huomautus:</strong> liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (<strong>\</strong>*) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics AX:n toukokuun 2016 päivityksessä eikä niitä tueta Microsoft Dynamics AX:n aiemmissa versioissa.
@@ -186,7 +186,7 @@ Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, 
 |                  Nimikkeen kuljetusrajoitteiden määrittäminen                   |     Yleinen     |
 |                <strong>\</strong>*Varaston työkäytäntöjen määrittäminen                 |     Yleinen     |
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Uudet tehtäväoppaat (helmikuu 2016)](new-task-guides-available-february-2016.md)
