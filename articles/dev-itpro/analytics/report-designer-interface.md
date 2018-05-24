@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69766e1bf37955bfd4d7253c1b7881780d491d1c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 683d3de59a427df296bb0d3d644f0ec23b3a8e5e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="report-designer-interface"></a>Report Designer -ohjelman käyttöliittymä
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa käsitellään Report Designerissa liikkumista ja omia tarpeita vastaamien asetusten käyttämistä. 
 
@@ -220,14 +220,14 @@ Reporter Designer -työkaluriviltä voi käyttää nopeasti Report Designerin si
 | [![Sarakkeen määritys -painike](./media/columnc130389.png)](./media/columnc130389.png)                 | Näyttää aktiivisen raportin määritykseen liitetyn sarakkeen määrityksen.                                                                                                 |
 | [![Raportointipuun määritys -painike](./media/treec130389.png)](./media/treec130389.png)             | Näyttää aktiivisen raportin määritykseen liitetyn raportointipuun määrityksen.                                                                                         |
 | [![Report Viewer -painike](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Käynnistä Report Viewer ja näytä luodun raportin uusin versio. Tämä painike on käytettävissä raportin määrityksestä, jos luotuna on vähintään yksi raportti. |
-| [![Luo raportti -painike](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Luo raportin aktiivisen raportin määrityksestä. Tämä painike on käytettävissä raportin määrityksestä.                                                                      |
+| [![Luo raportti -painike](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Luo raportti aktiivisesta raporttimäärityksestä. Tämä painike on käytettävissä raporttimäärityksessä.                                                                      |
 
 
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Taloushallinnan raportointi](financial-reporting-intro.md)
+[Talousraportointi](financial-reporting-intro.md)
 
 [Raportin luominen](generate-financial-report.md)
 

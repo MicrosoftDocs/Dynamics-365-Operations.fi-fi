@@ -33,8 +33,6 @@ Ympäristöpäivityksen versiossa 14 Microsoft Dynamics 365 for Finance and Oper
 
 Lisätietoja PowerAppsin upottamisesta on lyhyessä videossa [PowerAppsin upottaminen Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
-> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
-
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a>Upotetun PowerApp-sovelluksen lisääminen sivulle
 ### <a name="overview"></a>Yleiskuvaus
 Ennen kuin PowerApp voidaan upottaa Finance and Operations -asiakasohjelmaan, käyttäjän on ensin etsittävä PowerApp, jolla on halutut visuaaliset elementit ja/tai toiminnot tai luotava se. PowerAppin muodostamisprosessia ei käsitellä tässä yksityiskohtaisesti. Ohjeaihe [PowerAppsin esittely](https://docs.microsoft.com/en-us/powerapps/getting-started) on lähtökohta, jos olet uusi PowerAppsin käyttäjä.

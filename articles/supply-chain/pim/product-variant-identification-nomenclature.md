@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 6a620f2a0105d578d419d3aac816c7d78fbf3e46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3baf1d7313d8ff03ae5ece035b6f3641c0f1d707
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Tuotevariantin numeroiden ja nimien nimikkeistö
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään korvaamaan kiinteän muodon [päätuotteen numero - konfiguraatio - koko - väri - malli]. Uusi nimikkeistö sisältää kohdennetun muodon, joka sisältää päätuotteen numeron, aktiiviset tuotedimensiot ja haluamasi tekstierottimet. Myös tuotenimille voi luoda nimikkeistön. Voit myös luoda nimikkeistön konfiguraatioiden tunnistamiseksi, jotka on luotu poissulkevan tuotekonfiguraattorin avulla. Nämä nimikkeistöt voivat sisältää valitsemiasi määritteitä.
 
@@ -192,10 +192,10 @@ Nimikkeistön mukaan järjestelmä yrittää määrittää ei-yksilöivän tuote
 
 Konfigurointiprosessin yhden vaiheen aikana järjestelmä ehdottaa konfiguraatioarvoa nimikkeistön mukaan. Et voi muuttaa konfigurointiarvoa manuaalisesti tässä vaiheessa. Kun konfiguraatio tallennetaan, järjestelmä tarkistaa, onko konfiguraation arvo yksilöllinen. Jos syötetty arvo ei ole yksilöivä, näyttöön tulee virhesanoma. Voit tallentaa konfiguraation syöttämällä yksilöivän konfiguraatioarvon.
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Tuotenumeroiden nimikkeistön luominen esimääritetyille tuotevarianteille](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
+[Luo tuotenumeroiden nimikkeistö esimääritetyille tuotevarianteille](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
 [Tuotenumeroiden nimikkeistön luominen konfiguroiduille tuotevarianteille](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 

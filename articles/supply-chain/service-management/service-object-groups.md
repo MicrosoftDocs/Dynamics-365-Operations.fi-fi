@@ -3,7 +3,7 @@ title: "Huoltokohderyhmät"
 description: "Kohderyhmät ovat hyödyllisiä raporttien ja tilastojen tietojen lajittelussa ja suodatuksessa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: fa503ac82286099a0eafc7034d169e165b538e2c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2ab3ed8a8f36f980473b17b5dfed8cb3d0054253
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="service-object-groups"></a>Huoltokohderyhmät 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kohderyhmät ovat hyödyllisiä raporttien ja tilastojen tietojen lajittelussa ja suodatuksessa. Voit ryhmittää kohteita esimerkiksi maantieteellisen sijainnin tai tyypin mukaan.
 
@@ -48,6 +48,23 @@ Voit näyttää yrityksesi huoltamien kohteiden tyypit käyttämällä tätä ry
 
 Asiakas soittaa ja haluaa tehdä ilmastointilaitteelle HIJ huoltosopimuksen. Tälle laitteelle ei ole vielä tietuetta. Olet kuitenkin aiemmin määrittänyt kohderyhmän nimeltä Ilmastointilaitteet ja liittänyt tämän ryhmän kaikkiin ilmastointilaitekohteisiin. Niinpä voitkin nopeasti etsiä ja määrittää muut ilmastointilaitteet ja käyttää näiden kohteiden mallitietoja HIJ:n huoltosopimusrivejä luotaessa. Käyttämällä kohderyhmiä tällä tavalla voit määrittää uudet kohteet nopeasti. Voit määrittää myös niissä tehtävät huoltotehtävät. 
 
+## <a name="create-service-object-groups"></a>Huoltokohderyhmien luominen
+
+Voit luoda ryhmiä, joihin voit määrittää huoltokohteet. Huoltokohteet ovat varastonimikkeitä ja muita tuotteita, jonka palvelut suoritetaan. Ryhmittämällä palveluobjekteja voit luoda raportteja vastaaville ja liittyville palveluobjekteille. Huoltokohderyhmä voi koostua esimerkiksi kahdesta huoltokohteesta: yksi huoltokohde on sarja ja toinen huoltokohde on huolto, jonka avulla sarja asennetaan.
+
+Luo huolto kohderyhmiä noudattamalla seuraavia ohjeita:
+
+1. Valitse **Huoltohallinta > Asetukset > Huoltokohteet > Huoltokohderyhmät**.
+
+2. Luo uusi huoltokohderyhmä valitsemalla **Uusi**.
+
+3. Kirjoita palveluobjektiryhmälle yksilöivä nimi ja halutessasi kuvaus.
+
+Voit määrittää huoltokohteet ryhmään **Huoltokohteet**-lomakkeessa. 
+
+## <a name="see-also"></a>Lisätietoja
+
+[Huoltokohteiden luominen](create-service-objects.md)
 
 
 

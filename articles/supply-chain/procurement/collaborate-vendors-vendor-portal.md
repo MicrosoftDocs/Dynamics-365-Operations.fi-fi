@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 25dd62081e4a6e196bffaa6cc72ff40ed68c736c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Yhteistyö toimittajien kanssa Toimittajaportaalissa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä Toimittajaportaalissa yhteistyötä ulkoisten toimittajien kanssa ostotilauksen vahvistusprosessin aikana. Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita.
 
@@ -96,7 +96,7 @@ Seuraavassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotilaus
 |                           Lähetät ostotilauksen uuden version Toimittajaportaaliin.                            |                                                                                                                                                                    Uusi versio rekisteröidään Toimittajaportaaliin, ja tilaksi vaihtuu <strong>Ulkoisessa tarkistuksessa</strong>.                                                                                                                                                                     |
 |                                Toimittaja hyväksyy ostotilauksen uuden version.                                 |                                                                                                                                                     Tilaksi vaihtuu <strong>Vahvistettu</strong> joko automaattisesti tai kun saat vastauksen toimittajalta ja vahvistat sitten ostotilauksen.                                                                                                                                                     |
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Käyttöoikeuksien määrittäminen toimittajayhteistyön käyttäjille](configure-security-vendor-portal-users.md)

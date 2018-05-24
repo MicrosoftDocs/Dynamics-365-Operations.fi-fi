@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 854240bef9d6193c8f0f608687b68e6842fe272c
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 933d9755085d507310dd46d96a492d2124647ec3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -230,7 +230,47 @@ Työtilauksen integraatio edellyttää, että myynnin alkuperä määritetään.
 6. Valitse **Myynnin alkuperän tyyppi** -kentässä **Työtilauksen integrointi**.
 7. Valitse **Tallenna**.
 
-### <a name="template-mapping-in-data-integration"></a>Mallin yhdistäminen tietojen integroinnin yhteydessä
 
-(Tulossa pian)
+### <a name="setup-in-data-integration"></a>Määritys tietojen integroinnissa
+
+Varmista, että **Integrointiavain** on olemassa kohteelle **msdyn_workorders**
+1. Siirry tietojen integrointiin
+2. Valitse **Yhteysjoukko**-välilehti
+3. Valitse yhteysjoukko, jota käytetään työtilauksen synkronointiin
+4. Valitse **Integrointiavain**-välilehti
+5. Etsi msdyn_workorders ja tarkista, että avain **msdyn_name (työtilauksen numero)** on lisätty. Jos avainta ei näy, lisää se napsauttamalla **Lisää avain** ja **Tallenna** sivun yläosassa
+
+## <a name="template-mapping-in-data-integration"></a>Mallin yhdistäminen tietojen integroinnin yhteydessä
+
+Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä.
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderheader"></a>Työtilauksista myyntitilauksiin (Field Servicestä Fin and Opsiin): WorkOrderHeader
+
+Suodata: (msdyn_systemstatus ne 690970005) ja (msdyn_systemstatus ne 690970000) ja (msdynce_hasexternallymaintainedproductsonly eq true)
+
+[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineestimate"></a>Työtilauksista myyntitilauksiin (Field Servicestä Fin and Opsiin): WorkOrderServiceLineEstimate
+
+Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja (msdyn_linestatus eq 690970000) ja (msdynce_headersystemstatus ne 690970004)
+
+[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineused"></a>Työtilauksista myyntitilauksiin (Field Servicestä Fin and Opsiin): WorkOrderServiceLineUsed
+
+Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja ((msdyn_linestatus eq 690970001) tai (msdynce_headersystemstatus eq 690970004))
+
+[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineestimate"></a>Työtilauksista myyntitilauksiin (Field Servicestä Fin and Opsiin): WorkOrderProductLineEstimate
+
+Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja (msdyn_linestatus eq 690970000) ja (msdynce_headersystemstatus ne 690970004) ja (msdyn_allocated eq true)
+
+[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineused"></a>Työtilauksista myyntitilauksiin (Field Servicestä Fin and Opsiin): WorkOrderProductLineUsed
+
+Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja ((msdyn_linestatus eq 690970001) tai (msdynce_headersystemstatus eq 690970004) tai (msdyn_allocated ne true))
+
+[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 

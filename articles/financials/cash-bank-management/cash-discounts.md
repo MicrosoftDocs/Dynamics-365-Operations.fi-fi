@@ -19,25 +19,24 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9960af8c4961a42e7e829077da40bcbbf3bc71c2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5ccf41d1184280d3c4a000db13847733fd2cf4d2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cash-discounts"></a>Käteisalennukset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Käteisalennukset määritetään ja jaetaan osto- ja myyntireskontrassa.  Käytettävissä oleva käteisalennus voidaan määrittää myyntilaskulla tai toimittajan laskulla. Se käytetään, jos lasku maksetaan käteisalennuksen päivänä. 
 
-<a name="cash-discounts"></a>Käteisalennukset
---------------
+## <a name="cash-discounts"></a>Käteisalennukset
 
 Asiakkaiden ja toimittajien käteisalennuksia luodaan Käteisalennukset-sivulla. Voit lisäksi määrittää Seuraava alennuskoodi -kentässä sarjan peräkkäisiä käteisalennuksia, jotka tulevat voimaan, kun edellisen vanhenee. Lisätietoja on myöhemmin tässä aiheessa kohdassa Esimerkki: käteisalennussarja. Jos lasku, hyvitystapahtuma (maksu tai hyvityslasku) tai molemmat annetaan jonain muuna valuuttana kuin yrityksen kirjanpitovaluuttana, käteisalennus lasketaan käyttämällä vaihtokurssia, joka perustuu maksun tai hyvityslaskun päivämäärään. Jos lasku tai luottoasiakirja annetaan eri yrityksille ja jos yrityksillä on eri kirjanpitovaluutat, vaihtokurssi haetaan laskun yrityksestä luottoasiakirjan päivämäärällä. Lisätietoja on myöhemmin tässä aiheessa kohdassa Esimerkki: käteisalennusten vaihtokurssit.
-Käteisalennuksen päätilin oletusjärjestys
-----------------------------------------------
+
+## <a name="defaulting-order-of-cash-discount-main-account"></a>Käteisalennuksen päätilin oletusjärjestys
 
 Jos lasku maksetaan käteisalennukseen oikeuttavassa määräajassa, käteisalennus kirjataan automaattisesti käteisalennuksen päätilille seuraavassa oletusjärjestyksessä:
 1.  Asiakkaan Tilitä avoimet tapahtumat -sivun tai toimittajan Tilitä avoimet tapahtumat -sivun Vaihtoehtoinen käteisalennustili -kentässä määritetty päätili.
@@ -65,15 +64,7 @@ Yrityksen kirjanpitovaluutta on euro ja Yhdysvaltain dollarille on määritetty 
 
 1 000 dollarin lasku kirjataan 15.2. käteisalennusehdolla 20D2%. Laskun summa kirjanpitovaluutassa on 1 100 EUR 980 dollarin maksu täsmäytetään laskun kanssa 1.3. Käteisalennussumma on 20 dollaria. Maksun summa kirjanpitovaluuttana on 784 euroa. Käteisalennuksen summa kirjanpitovaluuttana lasketaan käyttämällä maaliskuun 1. päivän vaihtokurssia : 20 \* 80 / 100 = 16 euroa.
 
-| **Huomautus**                                                                                                                                                                                                                             |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Jos Myyntireskontran parametrit- tai Ostoreskontran parametrit -sivulla valitaan Laske käteisalennukset osamaksuille -vaihtoehto, käytetään osamaksun maksupäivänä voimassaolevaa vaihtokurssia. |
-
- 
-=
-
- 
-
-
+> [!NOTE]
+> Jos Myyntireskontran parametrit- tai Ostoreskontran parametrit -sivulla valitaan Laske käteisalennukset osamaksuille -vaihtoehto, käytetään osamaksun maksupäivänä voimassaolevaa vaihtokurssia. 
 
 

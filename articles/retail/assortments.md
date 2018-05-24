@@ -3,27 +3,28 @@ title: Toimintojen hallinta
 description: "Tässä ohjeaiheessa selitetään Microsoft Dynamics 365 for Retailin valikoimien hallinnan peruskäsitteitä ja pohditaan projektin käyttöönottovaihtoehtoja."
 author: jblucher
 manager: AnnBe
-ms.date: 3/12/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 44b0c4e39ac7410d27ce531c898bb8c423af334a
-ms.openlocfilehash: 303f86d6a57e039cb51700744697949845239b10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="assortment-management"></a>Toimintojen hallinta
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Yleiskuvaus
 Microsoft Dynamics 365 for Retailissa on *valikoimia*, joilla voi hallita tuotteiden saatavuutta eri kanavissa. Valikoimat määrittävät, mitkä tuotteet ovat saatavana tietyissä myymälöissä tiettyinä aikoina.
@@ -35,25 +36,25 @@ Kanavan kokonaistuoteyhdistelmä määritetään kanavaan määritettyjen julkai
 ### <a name="basic-assortment-setup"></a>Perusvalikoiman asetukset
 Seuraavassa esimerkissä kullekin myymälälle on määritetty yksilöllinen valikoima. Tässä tapauksessa vain tuote 1 on saatavana myymälässä 1 ja vain tuote 2 on saatavana myymälässä 2.
 
-![Kukin tuote on saatavana yhdessä myymälässä](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Kukin tuote on saatavana yhdessä myymälässä")
+![Kukin tuote on saatavana yhdessä myymälässä](./media/Managing-assortments-figure1.png)
 
 Jos haluat, että tuote 2 on saatavan myymälässä 1, voit lisätä tuotteen valikoimaan 1.
 
-![Tuote 2 lisätään valikoimaan 1](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "Tuote 2 lisätään valikoimaan 1")
+![Tuote 2 lisätty valikoimaan 1](./media/Managing-assortments-figure2.png)
 
 Vaihtoehtoisesti voit lisätä myymälän 1 valikoimaan 2.
 
-![Myymälä 1 lisätään valikoimaan 2](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "Myymälä 1 lisätään valikoimaan 2")
+![Myymälä 1 lisätty valikoimaan 2](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Organisaatiohierarkiat
 Tilanteissa, joissa useat kanavat jakavat samat tuotevalikoimat, valikoimat voidaan määrittää käyttämällä Retailin valikoiman organisaatiohierarkiaa. Kun tämän hierarkian solmuja lisätään, kaikki kyseisen solmun ja sen alisolmujen kanavat lisätään.
 
-![Organisaatiohierarkia](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "Organisaatiohierarkia")
+![Organisaatiohierarkia](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Tuoteluokat
 Tuotepuolella voi vastaavasti sisällyttää tuoteryhmiä tuoteluokkahierarkioiden avulla. Voit määrittää valikoimia sisällyttämällä vähintään yhden luokkahierarkian solmuja. Siinä tapauksessa valikoima sisältää kaikki kyseisen luokkasolmun ja sen alisolmujen tuotteet.
 
-![Tuoteluokat](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "Tuoteluokat")
+![Tuoteluokat](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Poissuljetut tuotteet tai luokat
 Valikoimiin sisällytettävien tuotteiden ja luokkien lisäksi voit määrittää tietyt tai tuotteet suljettaviksi valikoimien ulkopuolelle Sulje pois -asetuksella. Seuraavassa esimerkissä halutaan sisällyttää kaikki tietyn luokan tuotteet tuotetta 2 lukuun ottamatta. Valikoimaa ei kuitenkaan tarvitse määrittää tuote kerrallaan tai luomalla lisää luokkasolmuja. Voit sen sijaan sisällyttää luokan mutta sulkea tuotteen pois.
@@ -61,7 +62,7 @@ Valikoimiin sisällytettävien tuotteiden ja luokkien lisäksi voit määrittä�
 > [!NOTE]
 > Jos tuote on vähintään yhdessä valikoimassa sekä sisällytetty että poissuljettu, tuotetta pidetään aina poissuljettuna.
 
-![Poissuljettu tuote](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "Poissuljettu tuote")
+![Pois suljettu tuote](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Yleiset ja vapautetut tuotteet
 Valikoimat määritetään yleisellä tasolla, ja ne voivat sisältää useiden yritysten kanavia. Valikoimiin sisältyvät tuotteet ja luokat myös jaetaan kaikissa yrityksissä. Tuotteen on kuitenkin oltava vapautettu, ennen kuin se voidaan myydä, tilata, inventoida tai vastaanottaa kanavassa (esimerkiksi myyntipisteessä \[myyntipiste\]). Tämän vuoksi kaksi eri yrityksessä olevaa myymälää voi jakaa valikoiman, jossa on samoja tuotteita. Nämä tuotteet ovat kuitenkin saatavana vain, jos ne vapautettu kyseisiin yrityksiin.

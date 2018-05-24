@@ -3,7 +3,7 @@ title: "Vähittäismyynnin hintojen hallinta"
 description: "Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Retailin myyntihintojen luontiin ja hallintaan liittyviä käsitteitä."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -18,16 +18,16 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a7e6babe1bfec60ece4f84a77bbd838faf7274e0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-sales-price-management"></a>Vähittäismyynnin hintojen hallinta
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja myyntihintojen luonti- ja hallintaprosessista Microsoft Dynamics 365 for Retailissa. Aiheessa keskitytään tähän prosessiin liittyviin käsitteisiin ja siihen, mitä vaikutuksia erilaisilla määritysvaihtoehdoilla on myyntihintoihin.
 
@@ -198,32 +198,6 @@ Microsoft SQL Server Expressiä käytetään usein kanavatietokantoissa kustannu
 Microsoft Dynamics 365:ssä määritettävissä myyntihinnoissa ei määritetä, sisältääkö määritettävä hinta-arvo arvolisäveron vai ei. Tämä arvo on vain hinta. Vähittäismyyntikanavien **arvolisäveron sisältävän hinnan** asetus sallii vähittäismyyntikanavien määrittämisen siten, että hinnat joko sisältävät arvolisäverot tai eivät sisällä niitä. Tämä asetus määritetään kanavassa ja se voidaan muuttaa vaikkapa vain yhdessä yrityksessä.
 
 Jos käsittelet sekä arvonlisäveron sisältäviä että sen pois jättäviä tyyppejä, hintojen määrittäminen oikein on tärkeää, koska asiakkaan maksama kokonaissumma muuttuu, jos kanavan **arvolisäveron sisältävän hinnan** asetusta muutetaan.
-
-### <a name="effect-of-the-price-includes-sales-tax-setting-on-financial-postings"></a>Arvonlisäveron sisältävän hinta-asetuksen vaikutus taloushallinnon kirjauksiin
-**Arvonlisäveron sisältävän hinnan** asetus vaikuttaa kaikkiin kirjanpidon tuotto- ja alennustileille kirjattuihin summiin. Seuraavat esimerkit osoittavat, miten tämä asetus vaikuttaa taloushallinnon kirjauksiin.
-
-Esimerkissä käsitellään vain myynnin kirjauksia, koska **arvonlisäveron sisältävän hinnan** asetus ei vaikuta varastokustannusten kirjauksiin.
-
-#### <a name="example"></a>Esimerkki
-Tässä esimerkissä alennussummat on määritetty siten, että ne kirjataan erillään tuotoista.
-
-Myyt 100 $:n tuotteen, jonka veroprosentti on 10 ja johon käytetään 5 prosentin alennusta. Seuraavia USRT-esittelytietoja käytetään:
-
-- **Tuotto:** 401100
-- **Alennus:** 403200
-- **Vero:** 202100
-
-**Tapaus 1: Veroton (kutsutaan myös myyntiveroksi)**
-
-- **Tuotto:** 100 $
-- **Alennus:** 5 $
-- **Vero:** 9,5 $ (= 10 prosenttia 95 $:sta)
-
-**Tapaus 2: Verollinen (kutsutaan myös arvonlisäveroksi \[ALV\])**
-
-- **Tuotto:** 90 $
-- **Alennus:** 4,5 $ (= 5 prosenttia 90 $:sta)
-- **Vero:** 10 $
 
 ## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Vähittäismyynnin hinnoittelun ja muun kuin vähittäismyynnin hinnoittelun väliset erot
 Samalla hinnoittelumoduulilla lasketaan kaikkien kanavien vähittäismyynnin hinnat: puhelinkeskus, myymälä ja verkkokauppa. Tämä auttaa ottamaan käyttöön yhtenäiset kaupankäyntiskenaariot. 

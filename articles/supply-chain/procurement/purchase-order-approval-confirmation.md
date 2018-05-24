@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1c7209c91f3821a77e9b127d767c78df403ff6cc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 475470fa87455e187e0a93148046cb1df634da1f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="approve-and-confirm-purchase-orders"></a>Ostotilausten hyväksyminen ja vahvistaminen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Tässä artikkelissa käsitellään ostotilauksen tilat, jotka se läpäisee luonnin jälkeen, ja muutoksenhallinnan käyttöönoton vaikutuksen ostotilauksiin.
 
@@ -75,12 +75,12 @@ Jos osa ostotilausrivin tilatusta määrästä on toimitettu, tilattua määrä�
 
 Kun tilaus on vahvistettu, et voi enää poistaa sitä. Voit kuitenkin peruuttaa tilauksen koko määrän tai minkä tahansa jäljellä olevan määrän, kunhan määrää ei ole vastaanotettu tai laskutettu.
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Ostotilausten yleiskatsaus](purchase-order-overview.md)
 
-[Ostotilauksen luominen](purchase-order-creation.md)
+[Ostotilauksen luonti](purchase-order-creation.md)
 
 [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Toimittajamaksujen luominen maksuehdotuksen avulla
-description: "Tässä aiheessa on yleiskatsaus maksuehdotusvaihtoehdoista. Artikkeli sisältää myös esimerkkejä maksuehdotusten toiminnasta. Maksuehdotuksia käytetään usein toimittajan maksujen luomiseen, koska kyselyn avulla on nopeaa valita toimittajan laskuja maksuun esimerkiksi eräpäivän ja käteisalennuksen mukaan."
+description: "Tässä aiheessa on yleiskatsaus maksuehdotusvaihtoehdoista. Artikkeli sisältää myös esimerkkejä maksuehdotusten toiminnasta."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1199329f7d669a291249e22e393842673a8907c3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Toimittajamaksujen luominen maksuehdotuksen avulla
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä aiheessa on yleiskatsaus maksuehdotusvaihtoehdoista. Artikkeli sisältää myös esimerkkejä maksuehdotusten toiminnasta. Maksuehdotuksia käytetään usein toimittajan maksujen luomiseen, koska kyselyn avulla on nopeaa valita toimittajan laskuja maksuun esimerkiksi eräpäivän ja käteisalennuksen mukaan. 
 
@@ -47,7 +47,7 @@ Maksuehdotuskysely sisältää useita välilehtiä, joista jokaisella on eri ase
 - **Tarkista toimittajan saldo** – Jos tämä asetus on **Kyllä**, järjestelmä varmistaa, että toimittajalla ei ole saatavien saldoa ennen, kuin yksikään lasku maksetaan. Jos toimittajalla on saatavien saldo, maksua ei luoda. Toimittajalla voi esimerkiksi olla hyvityslaskuja tai maksuja, jotka on kirjattu, mutta ei vielä selvitetty. Näissä tapauksissa toimittajalle ei tule maksaa. Hyvityslaskut tai maksut tulee sen sijaan selvittää jäljellä oleviin laskuihin.
 - **Poista negatiiviset maksut**: Tämä asetus on erilainen sen mukaan, suoritetaanko maksut yksittäisille laskuille vai niiden laskujen summalle, jotka vastaavat maksuehtoja. Tämä toiminta määritellään maksutavassa.
 - **Maksu jokaiselle laskulle** – Jos **Poista negatiiviset maksut** asetukseksi on määritetty **Kyllä**, ja toimittajalla on selvittämätön lasku ja maksu, ainoastaan lasku valitaan maksuun. Aiempaa maksua ei selvitetä laskua vastaan. Jos **Poista negatiiviset maksut** asetukseksi on määritetty **Ei**, ja sekä lasku ja maksu ovat selvittämättä, molemmat valitaan maksuun. Suoritukselle luodaan maksu, ja maksulle luodaan palautus (negatiivinen suoritus).
-- <strong>Maksu laskujen summalle</strong> – Jos <strong>Poista negatiiviset maksut</strong> -asetukseksi on määritetty <strong>Kyllä</strong> ja toimittajalla on selvittämätön lasku ja maksu, molemmat valitaan maksuun ja summat lisätään yhteen maksun kokonaissummaan. Ainoa poikkeus on, jos kokonaissumma johtaisi palautukseen. Tässä tapauksessa laskua eikä maksua valita. Jos <strong>Poista negatiiviset maksut **-asetukseksi on määritetty **Ei</strong> ja toimittajalla on selvittämätön lasku ja maksu, molemmat valitaan maksuun ja summat lisätään yhteen maksun kokonaissummaan.
+- **Maksu laskujen summalle** – Jos **Poista negatiiviset maksut** -asetukseksi on määritetty **Kyllä** ja toimittajalla on selvittämätön lasku ja maksu, molemmat valitaan maksuun ja summat lisätään yhteen maksun kokonaissummaan. Ainoa poikkeus on, jos kokonaissumma johtaisi palautukseen. Tässä tapauksessa laskua eikä maksua valita. Jos **Poista negatiiviset maksut** -asetukseksi on määritetty **Ei** ja toimittajalla on selvittämätön lasku ja maksu, molemmat valitaan maksuun ja summat lisätään yhteen maksun kokonaissummaan.
 - **Tulosta vain raportti** – Aseta tämän asetuksen arvoksi **Kyllä** voidaksesi tarkastella maksuehdotuksen tuloksia raportissa luomatta maksuja.
 - **Sisällytä toimittajan laskut muilta oikeushenkilöiltä** – Jos organisaatiossasi käytetään keskitettyä maksuprosessia ja maksuehdotuksen hakuehtojen tulee sisältää laskuja muista yrityksistä, aseta tämän asetuksen arvoksi **Kyllä**.
 - **Ehdota erillistä toimittajan maksua oikeushenkilökohtaisesti** – Jos tämä asetus on **Kyllä**, kunkin yrityksen kullekin toimittajalle luodaan erilliset laskut. Maksulla oleva toimittaja on kunkin yrityksen vastaanottaman laskun toimittaja. Jos asetuksen arvo on **Ei** ja samalla toimittajalla on laskuja maksettavanaan useassa yrityksessä, yksi maksu luodaan kaikkien valittujen yritysten valittujen laskujen yhteenlasketulle summalle. Maksun toimittaja on nykyisen yrityksen toimittaja. Jos nykyisessä yrityksessä ei ole toimittajatiliä, käytetään ensimmäisen maksettavan laskun toimittajatiliä.
@@ -115,7 +115,8 @@ Dimension ohjauksen avulla voit hallita maksuehdotuksen luotujen rivien ryhmitte
 -   **Dimension ohjaus** -kenttä on aktivoitu määrittämättä dimensioita. Maksuehdotus luodaan ottamatta huomioon dimensioita. Luotu tapahtuma ei peri dimensioita käytetystä tietueesta.
 -   **Dimension ohjaus** -kenttä on aktivoitu ja lisädimensioita on aktivoitu. Määritä nyt, miten dimensiot kopioidaan kirjauskansioon. Esimerkiksi: • Valitse **Liiketoimintayksikkö** -valintaruutu luodaksesi maksutavalle maksuehdotuksen per liiketoimintayksikkö • Valitse valintaruutu **Kustannuspaikka** -valintaruutu luodaksesi kustannuspaikkakohtaisen maksuehdotuksen maksutavalle
 
-**Huomaa:** Jos valitset kolmannessa vaihtoehdossa useita dimensioita, maksuehdotus luodaan dimensioiden yhdistelmälle.
+> [[!NOTE]
+> Jos valitset kolmannessa vaihtoehdossa useita dimensioita, maksuehdotus luodaan dimensioiden yhdistelmälle.
 
 #### <a name="bank-account-selection"></a>Pankkitilin valitseminen
 

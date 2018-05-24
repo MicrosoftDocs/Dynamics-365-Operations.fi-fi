@@ -19,16 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="help-system-overview"></a>Ohjejärjestelmän yleiskatsaus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen. 
 
@@ -60,7 +60,7 @@ Docs.microsoft.com-sivusto ([docs.microsoft.com/dynamics365/unified-operations](
 
 -   **Uusin sisältö**– sivusto on nopea ja joustava tapa luoda, toimittaa ja päivittää tuoteohjeistusta. Niinpä saatkin aina käyttöösi uusimmat tekniset tiedot.
 -   **Asiantuntijoiden kirjoittama sisältö**– sivusto sisältää monipuolisesti tuoteohjeistusta, jota yhteisön jäsenet (sekä Microsoftin sisällä että ulkopuolella) voidaan täydentää.
--   **Eri tyyppisen sisällön käyttö** – saat sivustossa nopeasti käyttöösi erilaista Dynamics 365 for Finance and Operationsia koskevaa sisältöä, kuten Microsoft Office Mix -esityksiä, tehtäväoppaita, videoita ja ohjeaiheita.
+-   **Erityyppisen sisällön käyttö** – saat sivustossa nopeasti käyttöösi erilaista Dynamics 365 for Finance and Operationsia koskevaa sisältöä, kuten tehtäväoppaita, videoita ja ohjeaiheita.
 -   **Liiketoimintaprosesseja tukeva sisältö**– sivustossa on liiketoimintaprosesseihin keskittyvää sisältöä, joka hyödyntää Microsoft Dynamics Lifecycle Services (LCS) -palvelujen liiketoimintaprosessin mallintajaa.
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Haku sivustosta docs.microsoft.com
@@ -204,7 +204,7 @@ Seuraavassa taulussa on sivustoluettelo. Sisältösivustomme on järjestetty tuk
 
 
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 [Finance and Operationsin ohjejärjestelmä (ladattava tietolomake)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 

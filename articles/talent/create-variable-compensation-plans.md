@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 338e58522f9b9fba3ce22b22488affbab24b1315
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Luo muuttuvia kompensaatiosuunnitelmia
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Muuttuva kompensaatio muodostaa työntekijän epäsäännölliset maksut, kuten bonukset ja osakepalkkiot. Tässä artikkelissa esitellään komponentit, jotka on määritettävä ennen muuttuvan kompensaation käyttämistä ja työntekijöiden määrittämistä muuttuvaan kompensaatiosuunnitelmaan.
 
@@ -100,7 +100,7 @@ Voit käyttää **Ohitukset**-välilehteä, jos haluat ohittaa työntekijän tie
 
 **Organisaation ohituksia** käytetään perustana työntekijän palkinnolle yhden tai useamman osaston toiminnasta. Prosentin, joka kohdistetaan osastojen kesken, tulee olla yhteensä 100 prosenttia. Työntekijän yksilösuorituskyky otetaan myös huomioon. Näitä asetuksia käytetään vain, jos **Suoritusperusteinen palkka** valitaan kompensaatioprosessin suorittamisen yhteydessä.
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Kompensaatiosuunnitelmat](compensation-plans.md)

@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a47c631b265262f78e0fb3d956a98a7c9e9f5172
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e4414ead4d2c767ecdd3e631035034b01de55b27
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-agreements"></a>Ostosopimukset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa on tietoja ostosopimuksista. Ostosopimus on sopimus, joka velvoittaa organisaation ostamaan tietyn määrän tai tietyllä summalla, käyttämällä useita ostotilauksia jonkin ajanjakson aikana. Vastineeksi tästä sitoumuksesta, ostaja saa erityiset hinnat ja alennukset. 
 
@@ -91,7 +91,7 @@ Jos luot konsernin sisäisen ostosopimuksen, joka käyttää konsernin sisäist�
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Ostosopimusten taloudelliset dimensiot
 Voit kopioida taloudelliset dimensiot asiakirjojen ylätunnisteisiin tai ostosopimusten yksittäisille riveille. Jos muutat sopimuksen otsikon tai sopimusrivin dimensioita, muutos ei vaikuta vapautettuihin tilauksiin mutta sitä käytetään uusissa tilauksissa.
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Uuden ostosopimuksen luominen (tehtäväopas)](tasks/create-purchase-agreement.md)

@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b16f4ea27f406f3d5d5957670bd32a73d2d55529
-ms.openlocfilehash: bb616f8102c67db3f8c3e872101d61657b6b64d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-mobile-device-display-settings"></a>Varaston mobiililaitteen näyttöasetukset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan mobiililaitteen näytön ulkoasun määrittämistä ja kuinka pikanäppäimet yhdistetään ohjaimiin, kuten painikkeisiin. 
 
@@ -66,7 +66,7 @@ Alla on kuvaus lausekkeen osista:
 
 -   **&lt;user host address&gt;** – Säännönmukainen .NET-lauseke, joka vastaa pyytäjän IP-osoitetta.
 -   **&lt;user host name&gt;** – Säännönmukainen .NET-lauseke, joka vastaa pyytäjän verkon nimeä.
--   **&lt;user agent&gt;** – Säännönmukainen .NET-lauseke, joka vastaa pyytäjän käyttämän selaimen tunnusta.
+-   **&lt;user agent&gt;**  – Säännönmukainen .NET-lauseke, joka vastaa pyytäjän käyttämän selaimen tunnusta.
 
 Seuraava esimerkki mahdollistaa Internet Explorer 8:n käytön.
 
@@ -89,15 +89,15 @@ Valitse väri **Valitse väri** -sivulla napsauttamalla värivalikoimaa tai kirj
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>Määritä mobiililaitteissa käytettävä päivämäärämuoto
 Voit laajentaa hyväksyttyjä päivämäärän esitysmuotoja jokaisessa asennuksessa. Tämä ominaisuus voi olla hyödyllinen, jos esimerkiksi haluat tarjota muodon, joka tekee työntekijälle päivämäärien kirjoittamisen helpommaksi mobiililaitteella. Oletusmuodon määrää käyttäjän oletuskieli, joka on määritetty **Käyttäjän asetukset** -sivun **Kieli**-kentässä. (Samalla sivulla on käytössä myös työntekijän liittäminen tiettyyn varaston työn käyttäjään.) **Huomautus:** Varaston mobiililaiteportaali ei käytä **Päivämäärä-, kellonaika- ja numeromuoto** -kentän asetusta **Kieli- ja alueasetukset** -sivulla. Jotta voit muuttaa päivämäärän muotoa, sinun on tunnettava Microsoft .NET Frameworkin säännönmukaiset lausekkeet. Lisätietoja on linkissä [.NET Framework Regular Expressions](http://go.microsoft.com/fwlink/?LinkId=391260). Voit määrittää päivämäärän esitystapoja muokkaamalla Dates.ini-tiedostoa, joka sijaitsee varaston mobiililaiteportaalin palvelimen polussa Content\\Settings\\Dates.ini. Tämä tiedosto käyttää säännönmukaisia .NET-lausekkeita päivämäärämuodon määrittämiseen. Säännönmukaisen lausekkeen tulee sisältää alilausekkeita, jotka luovat nimetyt ryhmät päivälle, kuukaudelle ja vuodelle (PPKKYY) seuraavan esimerkin mukaisesti:
 
-^(?&lt;day&gt;\\d{2})(?&lt;month&gt;\\d{2})(?&lt;year&gt;\\d{2})$
+^(?&lt;päivä&gt;\\d{2})(?&lt;kuukausi&gt;\\d{2})(?&lt;vuosi&gt;\\d{2})$
 
 Jokaiseen alilausekkeeseen on kirjoitettava 1-2 numeroa päivän ja kuukauden kohdalle ja 1-4 numeroa vuoden kohdalle. Seuraavassa on alilauseke-esimerkki, joka määrittää nimetyn ryhmän vuodelle ja vaatii vähintään kaksi tai enintään neljä numeroa:
 
-(?&lt;year&gt;\\d{2,4})
+(?&lt;vuosi&gt;\\d{2,4})
 
 Voit määrittää useampia kuin yhden lausekkeen samassa tiedostossa. Jokaisen lausekkeen on oltava erillisenä rivinä. Ensimmäistä täsmäytettyä lauseketta käytetään päivämäärän jäsentämiseen.
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Varastotyön mobiililaitteiden konfigurointi](configure-mobile-devices-warehouse.md)

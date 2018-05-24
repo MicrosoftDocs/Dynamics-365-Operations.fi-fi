@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 858328ec60e0ffa5ca46a98b365fb0fc599ae1f0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="coverage-settings"></a>Kattavuusasetukset
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pääajoituksessa käytetään kattavuusasetuksia nimiketarpeiden laskemisessa. 
 
@@ -45,11 +45,11 @@ Voit määrittää kattavuusasetukset useilla eri tavoilla:
 
 <!-- -->
 
-- Määritä dimensioryhmän kattavuusasetukset. Valitse <strong>Tuotetietojen hallinta &gt; Yleinen &gt; Vapautetut tuotteet</strong>. Napsauta <strong>Vapautetun tuotteen tiedot **-sivulla **Yleiset</strong>-välilehden <strong>Hallinta</strong>-ryhmässä <strong>Varastodimensioryhmä</strong>-linkkiä. Valitse <strong>Varastodimensioryhmä</strong> -sivulta <strong>Kattavuussuunnitelma dimension mukaan</strong> -kenttä, jotta voit luoda varastodimensioryhmän dimensiolle kattavuusasetukset. <strong>Kattavuussuunnitelma dimension mukaan</strong> -kentän on oltava valittuna kaikissa tuotedimensioissa, kuten konfiguraatiossa, värissä, koossa ja tyylissä.
+- Määritä dimensioryhmän kattavuusasetukset. Valitse **Tuotetietojen hallinta &gt; Yleinen &gt; Vapautetut tuotteet**. Napsauta **Vapautetun tuotteen tiedot** -sivulla **Yleiset**-välilehden **Hallinta**-ryhmässä **Varastodimensioryhmä**-linkkiä. Valitse **Varastodimensioryhmä** -sivulta **Kattavuussuunnitelma dimension mukaan** -kenttä, jotta voit luoda varastodimensioryhmän dimensiolle kattavuusasetukset. **Kattavuussuunnitelma dimension mukaan** -kentän on oltava valittuna kaikissa tuotedimensioissa, kuten konfiguraatiossa, värissä, koossa ja tyylissä.
 
 
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Pääsuunnitelmat](master-plans.md)

@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d6828860d9e56dc8db80a11b4b611b9c0fdc2b62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a5dcc294b3dde7dc7e0f789d9e7678b75bc699b0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-requisition-workflow"></a>ostoehdotuksen työnkulku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Työnkulkuprosessi siirtää ostoehdotuksia tarkistusprosessissa eteenpäin alkuperäisestä Luonnos-tilasta lopulliseen Hyväksytty-tilaan. Kun hankintapyyntö lähetetään tarkastettavaksi, työnkulkuprosessi alkaa. Sen jälkeen kun hankintapyyntö on hyväksytty, ostotilaus voidaan kehittää hankintapyyntöriveille ja lähettää toimittajalle, jotta tilaus voidaan toteuttaa.
 
@@ -106,7 +106,7 @@ Voit määrittää menojen tarkistajat **Ostoehdotuksen kulujen tarkistajat** -s
 
 Jos haluat käyttää jotakuta työnkulussa määrittämääsi menojen tarkistajaa, määritä **Osallistujan tyyppi** -asetukseksi **Kulujen osallistujat** kyseisen työnkulun elementin **Toimeksianto**-ominaisuuksissa.
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Kulutusehdotuksen luominen (tehtäväopas)](tasks/create-requisition-consumption.md)

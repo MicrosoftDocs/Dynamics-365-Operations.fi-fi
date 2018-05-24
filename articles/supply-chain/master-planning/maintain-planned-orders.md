@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8931908fbf643a8154da70d2ad065ea47d2aa4e6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3d7afda9371b4d21e58f2e56de3d477b1c9950a1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="maintain-planned-orders"></a>Ylläpidä suunniteltuja tilauksia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tämä artikkeli sisältää suunniteltujen tilausten hallintaa käsitteleviä tietoja. Artikkelissa kuvataan, miten voit päivittää suunniteltujen tilausten tilan, vahvistaa ne ja suodattaa suunniteltuja tilauksia, joilla on sama tila kuin valitulla suunnitellulla tilauksella.
 
@@ -47,7 +47,7 @@ Voit hallita suunniteltuja tilauksia **Pääsuunnittelu**-työtilassa, **Suunnit
 
 Kun suunniteltu tilaus on vahvistettu, se siirtyy kyseisen moduulin tilausosaan. **Huomautus:** Napsauttamalla hiiren kakkospainikkeella suunniteltua tilausta, jolla on tietty tila, voit suodattaa näkyviin muut suunnitellut tilaukset, joilla on sama tila. Tämä toiminto on hyödyllinen, jos esimerkiksi haluat suodattaa vahvistettavaksi kaikki suunnitellut tilaukset, joiden tila on **hyväksytty**.
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Pääsuunnitelmat](master-plans.md)

@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 75508af6d6f746b56fc3df3b6b0d730f429161c5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 18920dd3490b69e9668e2d023c5ca1cc094c8126
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="quality-management-processes"></a>Laadunhallintaprosessit
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tämä artikkeli sisältää tietoja määrityksistä poikkeavien tuotteiden laadunhallintaprosessista. Aiheessa kuvataan laadunhallintatoiminnot, miten määrityksistä poikkeaminen määritetään ja ylläpidetään sekä miten korjauksia käsitellään.
 
@@ -88,7 +88,7 @@ Voit luoda **Korjaukset**-sivulla luettelon korjattavista määrityksistä poikk
 
 Korjauksille kannattaa määrittää yksilöllinen asiakirjatyyppi **Asiakirjatyyppi**-sivulla. Voit sitten määrittää **Raportin asetukset** -sivulla, tulostetaanko tämän asiakirjatyypin kommentit korjausraporttiin. Tulostetussa korjausraportissa on tietoja määrityksistä poikkeamisesta ja liittyvistä määrityksistä poikkeamisen huomautuksista. Raportissa on myös korjaustietoja, kuten diagnostiikkatyyppi, ja liittyvät korjaushuomaukset.
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Laadunhallinnan ottaminen käyttöön](enable-quality-management.md)

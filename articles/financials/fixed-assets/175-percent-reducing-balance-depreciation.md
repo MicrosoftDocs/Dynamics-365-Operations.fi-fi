@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a61e743898e3e65c0012a7aeb9837e55e9143d01
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8f78eb06930eab26d300fba6fd28333a5ce39cf8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="175-percent-reducing-balance-depreciation"></a>175 prosentin jäännöspoisto
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on yleiskuvaus 175 prosentin jäännösarvon poistomenetelmästä.
 
@@ -57,7 +57,7 @@ Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käyte
 
 ### <a name="fiscal"></a>Veroasiakirja
 
-Jos valitset **Poistovuosi**-kentässä **Tilivuosi**-vaihtoehdon, 175 prosentin jäännösarvo lasketaan kirjalle määritetyn kirjanpidon vuosikalenterin tilivuoden perusteella tai **Kirjanpito**-sivulla valitun kirjanpidon vuosikalenterin perusteella. Kirjanpidon vuosikalenterit määritetään **Kirjanpidon kalenterit** -sivulla. Lisätietoja on kohdassa [Tilikalenterit, tilikaudet ja kaudet](..\budgeting\fiscal-calendars-fiscal-years-periods.md).
+Jos valitset **Poistovuosi**-kentässä **Tilivuosi**-vaihtoehdon, 175 prosentin jäännösarvo lasketaan kirjalle määritetyn kirjanpidon vuosikalenterin tilivuoden perusteella tai **Kirjanpito**-sivulla valitun kirjanpidon vuosikalenterin perusteella. Kirjanpidon vuosikalenterit määritetään **Kirjanpidon kalenterit** -sivulla. Lisätietoja on kohdassa [Tilikalenterit, tilikaudet ja kaudet](../budgeting/fiscal-calendars-fiscal-years-periods.md).
 
 Esimerkiksi tilikauden 1.7 – 30.6. poistojen laskeminen alkaa 1.7. Tilivuosi voi olla pidempi tai lyhyempi kuin 12 kuukautta. Poisto säätyy automaattisesti kutakin tilijaksoa varten ja seuraavan tilivuoden pituus määräytyy **Kirjanpidon kalenterit**-lomakkeessa määritetyistä tilijaksojen asetuksista. 
 

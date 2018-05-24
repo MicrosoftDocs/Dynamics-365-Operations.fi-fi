@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7cc6ba50b8df54eadc9a23990a58d1d37365cb6a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 934ab83d45aad32c067e8422c5415d4a0a6481b4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-control-overview"></a>Kustannusseurannan yleiskatsaus 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Esimiehet voivat avata **Kustannusseuranta**-työtilassa keskitetysti vastuullaan olevia yhden tai kaikkien dimensioiden (kuten kustannuspaikkojen ja tuoteryhmien) kustannusobjekteja tai kustannusobjektijoukkoja koskevia raportteja. Työtilan raportit ovat täysin kustannuslaskijoiden hallinnassa, joten raportoinnissa käytettävä asettelu ja tiedot ovat yhtenäiset koko organisaatiossa.
 
@@ -154,7 +154,7 @@ Seuraavassa esimerkissä kohdistusperusteen tyyppi on **Kaavan kohdistusperuste*
 
 ![Kustannusobjektikohtaiset laskelmat](./media/cost-entries-allocation-base.png)
 
-Lisätietoja 
+Lisäresurssit 
 
 [Kustannusobjektin vastuuhenkilöiden käyttöoikeuksien määrittäminen](access-rights-cost-object-controller.md)
 

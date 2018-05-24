@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 23b8e0b51f63ecabc704a2fc5b3ebafe657b52f6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Rivin määrityksen solujen muokkaaminen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa käsitellään tietoja, joita talousraportin rivimäärityksen kussakin solussa on oltava ja selitetään, miten nämä tiedot annetaan. 
 
@@ -488,12 +488,12 @@ Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelm
 1.  Avaa raporttien suunnitteluohjelmassa rivi-, sarake- tai puumääritys, jota haluat muokata.
 2.  Valitse **Muokkaa**-valikossa **Dimensioarvoyhdistelmien hallinta**.
 3.  Valitse **Dimensioarvoyhdistelmien hallinta** -valintaikkunan **Dimensio**-kentässä dimensiotyyppi.
-4.  Valitse poistettava yhdistelmä ja valitse sitten **Poista**. Poista dimensioarvoyhdistelmä pysyvästi valitsemalla **Kyllä**.
+4.  Valitse poistettava yhdistelmä ja valitse sitten **Poista**. Poista dimensioarvojoukko pysyvästi valitsemalla **Kyllä**.
 
 
-## <a name="see-also"></a>Lisätietoja
+## <a name="additional-resources"></a>Lisäresurssit
 
-[Taloushallinnan raportointi](financial-reporting-intro.md)
+[Talousraportointi](financial-reporting-intro.md)
 
 
 

@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1176ce1fcd406cf363969e60ae388a83d7df210f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2985e58bd308295e1f698c391f57fc3d116835bd
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="standard-cost-conversion-overview"></a>Standardikustannuksen muuntamisen yleiskuvaus
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa kuvataan prosessia, jonka avulla määritetään ja suoritetaan standardikustannusmuunto. Luetellut vaiheet suoritetaan sen jälkeen, kun standardikustannusmuunnon edellytykset ovat täyttyneet. 
 
@@ -96,7 +96,7 @@ Muuntoprosessi vaatii, että varaston sulkeminen suoritetaan päivää ennen suu
 -   Analysoi takautuvat varaston siirtotapahtumat. **Varaston arvo** -raportin avulla voit tarkastella muunnon jälkeen syötettyjä takautuvia varaston siirtotapahtumia. Käytä aloitus- ja lopetuspäivissä raporttiasetuksia niin, että ne vastaavat siirron aloituspäivää ja muuntopäivää vähennettynä yhdellä päivällä. Raportin valintaehdot vastaavat muunnettuja nimikkeitä. Raportti näyttää varaston siirtotapahtumat, jotka on tehty standardikustannuksina siirtojakson aikana.
 
 
-<a name="see-also"></a>Lisätietoja
+<a name="additional-resources"></a>Lisäresurssit
 --------
 
 [Standardikustannuksen muuntamisen edellytykset](prerequisites-standard-cost-conversion.md)

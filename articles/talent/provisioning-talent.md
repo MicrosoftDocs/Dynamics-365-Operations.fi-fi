@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 343e372ad9e29372649e975a5bee16e8913b66c8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Microsoft Dynamics 365 for Talentin valmisteleminen
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Talentin tuotantouuden ympäristön valmisteluprosessista. Ohjeaiheessa oletetaan, että olet ostanut Talent-sovelluksen pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. Jos sinulla on Microsoft Dynamics 365 -käyttöoikeus, joka sisältää Talent-palvelusopimuksen, etkä pysty suorittamaan tämän ohjeaiheen vaiheita, ota yhteys tukeen.
 
@@ -54,17 +54,18 @@ Kun LCS-projekti on luotu, voit valmistella Talent-sovelluksen ympäristöä var
     > Voit tarkastella aiemmin luotuja ympäristöja tai luoda uusia ympäristöjä, kun Talent-sovelluksen valmistelevalle vuokraajan järjestelmänvalvojalle on määritetty PowerApps P2 -käyttöoikeus. Jos organisaatiolla ei ole PowerApps P2 -käyttöoikeutta, voit hankkia sen pilvipalveluratkaisujen toimittajalta tai [PowerApps-hinnoittelusivulta](https://powerapps.microsoft.com/en-us/pricing/).
 
 4. Valitse **Add** ja valitse sitten Talentiin valmisteltava ympäristö.
-5. Hyväksy ehdot ja aloita käyttöönotto valitsemalla **Kyllä**.
+5. Valitse Sisällytä esittelytiedot -vaihtoehto, jos haluat ympäristösi sisältävän saman esittelytietojoukon, jota käytetään Talent Test Drive -kokemuksessa.  Tämä on hyödyllistä pitkän aikavälin esittely- tai koulutusympäristöissä, eikä sitä tule koskaan käyttää tuotantoympäristöissä.  Huomaa, että sinun on valittava tämä vaihtoehto ensimmäisen käyttöönoton yhteydessä etkä voi päivittää nykyistä käyttöönottoa myöhemmin.
+6. Hyväksy ehdot ja aloita käyttöönotto valitsemalla **Kyllä**.
 
     Uusi ympäristö näkyy ympäristöluettelossa vasemmassa siirtymisruudussa. Voit kuitenkin alkaa käyttää ympäristöä vasta, kun käyttöönoton tilaksi on päivitetty **Otettu käyttöön**. Tämä prosessi kestää yleensä vain muutaman minuutin. Jos valmisteluprosessi epäonnistuu, ota yhteys tukeen.
 
-6. Voit käyttää uutta ympäristöä valitsemalla **Kirjaudu Talentiin**.
+7. Voit käyttää uutta ympäristöä valitsemalla **Kirjaudu Talentiin**.
 
 > [!NOTE]
 > Jos et ole vielä hyväksynyt lopullisia vaatimuksia, voit ottaa projektissa käyttöön Talentin testausesiintymän. Voit testata esiintymässä ratkaisuasi siihen asti, että hyväksyntä on tehty. Jos käytät uutta ympäristöä testaukseen, nämä menettelytavat on toistettava tuotantoympäristön luomista varten.
 
 > [!NOTE]
-> LCS-palvelujen kautta valmistellut Talent-ympäristöt eivät sisällä henkilöstöhallintotehtäville määritettyjä demotietoja tai Talent-kohtaisia tietoja. Jos tarvitset demotiedot sisältävän ympäristön, on suositeltavaa rekisteröityä 60 vuorokauden maksuttomaan [Talent-kokeiluympäristöön](https://dynamics.microsoft.com/en-us/talent/overview/). Vaikka kokeiluympäristön pyytänyt käyttäjä omistaa ympäristön, muita käyttäjiä voidaan kutsua henkilöstöhallinnon perusversion järjestelmänhallintakokemuksen kautta. Kokeiluympäristössä on kuvitteellisia tietoja, joiden avulla ohjelmaan voi tutustua turvallisesti. Niitä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. Huomaa, että kun kokeiluympäristö vanhenee 60 päivän kuluttua, sen kaikki tiedot poistetaan eikä niitä voi palauttaa. Voit rekisteröidä uuden kokeiluympäristön, kun aiemmin luotu ympäristö vanhenee.
+> Koska Talent-tilaukseen sallitaan vain kaksi LCS-ympäristöä, voit hyödyntää myös ilmaisen 60 päivän [Talent-kokeiluympäristön](https://dynamics.microsoft.com/en-us/talent/overview/). Vaikka kokeiluympäristön pyytänyt käyttäjä omistaa ympäristön, muita käyttäjiä voidaan kutsua henkilöstöhallinnon perusversion järjestelmänhallintakokemuksen kautta. Kokeiluympäristössä on kuvitteellisia tietoja, joiden avulla ohjelmaan voi tutustua turvallisesti. Niitä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. Huomaa, että kun kokeiluympäristö vanhenee 60 päivän kuluttua, sen kaikki tiedot poistetaan eikä niitä voi palauttaa. Voit rekisteröidä uuden kokeiluympäristön, kun aiemmin luotu ympäristö vanhenee.
 
 ## <a name="select-a-powerapps-environment"></a>PowerApps-ympäristön valinta
 
@@ -104,13 +105,15 @@ Täytä seuraavat komentosarjan suoritusta koskevat ohjeet:
 
 1. Lataa ProvisionCDSEnvironment.zip-tiedosto seuraavasta sijainnista: [ProvisionCDSEnvironment-komentosarjat](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-2. Pura ProvisionCDSEnviroinment.zip-tiedoston koko sisältö kansioon.
+2. Napsauta hiiren kakkospainikkeella Lataukset-kansiossa olevaa ProvisionCDSEnvironment.zip-tiedostoa, jonka juuri latasit, ja valitse **Ominaisuudet**.  Jos valintaikkunan alareunassa näkyy suojausilmoitus "Tämä tiedosto on peräisin toisesta tietokoneesta, ja se on estetty tietokoneen suojaamiseksi", valitse **Salli**-valintaruutu ja napsauta sitten **Käytä** ja **OK**.
 
-3. Suorita Windows PowerShell- tai Windows PowerShell ISE -ohjelma järjestelmänvalvojana.
+3. Pura ProvisionCDSEnvironment.zip-tiedoston koko sisältö kansioon, joka ei ole tietokoneen juurikansio.
 
-   Lisätietoja komentosarjojen suorittamisen sallivan suorituskäytännön määrittämisestä on kohdassa [Suorituskäytännön määrittäminen](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6).
+4. Suorita Windows PowerShell- tai Windows PowerShell ISE -ohjelma järjestelmänvalvojana.
+
+   Lisätietoja komentosarjojen suorittamisen sallivan suorituskäytännön määrittämisestä on kohdassa [Suorituskäytännön määrittäminen](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6). Suosittelemme, että käytät "Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process" -menetelmää, mutta noudata yrityksesi suojauskäytäntöjä ja sulje PowerShell-ikkuna toiminnon päätteeksi. 
   
-4. Siirry PowerShellissä kansioon, johon purit tiedoston, ja suorita seuraavat komento korvaamalla arvot annettujen ohjeiden mukaan:
+5. Siirry PowerShellissä kansioon, johon purit tiedoston, ja suorita seuraavat komento korvaamalla arvot annettujen ohjeiden mukaan:
  
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
@@ -121,18 +124,10 @@ Täytä seuraavat komentosarjan suoritusta koskevat ohjeet:
 
    **-Yksityiskohtainen** on valinnainen. Sen avulla voit tuottaa yksityiskohtaisia tietoja ja lähettää ne mahdollisen ongelman tueksi.
 
-5. Jatka varausprosessia.
+6. Jatka varausprosessia.
  
 
-
 ## <a name="grant-access-to-the-environment"></a>Ympäristön käyttöoikeuksien myöntäminen
-Oletusarvoisesti vain ympäristön luonut yleinen järjestelmänvalvoja voi käyttää sitä. Sovelluksen muille käyttäjille käyttöoikeus on myönnettävä erikseen. Voit myöntää käyttöoikeuden [lisäämällä käyttäjiä](../dev-itpro/sysadmin/tasks/create-new-users.md) ja [määrittämällä heille sopivat roolit](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) henkilöstöhallinnon perusympäristössä.. Kyseiset käyttäjät on lisättävä myös PowerApps-ympäristöön, jotta he voivat käyttää Attract- ja Onboard-sovelluksia. Menettely käsitellään täällä. Jos tarvitset apua vaiheiden suorittamiseen, lisätietoja on blogikirjoituksessa [PowerApps-hallintakeskuksen esittely](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/).
+Oletusarvoisesti vain ympäristön luonut yleinen järjestelmänvalvoja voi käyttää sitä. Sovelluksen muille käyttäjille käyttöoikeus on myönnettävä erikseen. Voit myöntää käyttöoikeuden [lisäämällä käyttäjiä](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) ja [määrittämällä heille sopivat roolit](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) henkilöstöhallinnon perusympäristössä.. Talentin käyttöönoton tehneen yleisen järjestelmänvalvojan on käynnistettävä sekä Attract- että Onboard-sovellukset alustuksen suorittamiseksi ja muiden vuokraajakäyttäjien pääsyn sallimiseksi.  Kunnes näin tapahtuu, muut käyttäjät eivät voi käyttää Attract- ja Onboard-sovelluksia, vaan ne näyttävät käyttöoikeusvirheitä.
 
-Tämän menettelyn suorittaa Talent-ympäristön käyttöönottanut yleinen järjestelmänvalvoja.
-
-1. Avaa [PowerApps-hallintakeskus](https://preview.admin.powerapps.com/environments).
-2. Valitse soveltuvat ympäristöt.
-3. Lisää **Suojaus**-välilehdessä tarvittavat käyttäjät **ympäristön tekijän** rooliin.
-
-    Huomaa, että tämä viimeinen käyttäjien manuaalinen lisäysvaihe PowerApps-ympäristöön on väliaikainen. Se suoritetaan lopuksi automaattisesti, kun käyttäjät lisätään henkilöstöhallinnon perusversioon.
 
