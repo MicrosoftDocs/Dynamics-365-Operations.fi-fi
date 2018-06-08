@@ -3,7 +3,7 @@ title: PowerApps-sovellusten muokkaaminen
 description: "Tässä ohjeaiheessa käsitellään PowerAppsin upottamista Finance and Operations -asiakasohjelmaan laajentamaan tuotteen toimintoja."
 author: jasongre
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -26,8 +26,6 @@ ms.lasthandoff: 04/13/2018
 # <a name="embed-powerapps"></a>PowerApps-sovellusten muokkaaminen
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 Ympäristöpäivityksen versiossa 14 Microsoft Dynamics 365 for Finance and Operations tukee Microsoft PowerApps -integrointia, palvelua, jonka avulla kehittäjät ja muut kuin tekniset käyttäjät voivat luoda mukautettuja liiketoimintasovelluksia mobiililaitteille, tabletteja ja verkkoa ilman koodin kirjoittamista. Sinun, organisaatiosi tai laajemman ekosysteemin muodostama PowerApps voidaan tämän jälkeen upottaa Finance and Operations -asiakasohjelmaan. Tämä laajentaa tuotteen toimintoja. Voit esimerkiksi luoda PowerApp-sovelluksen ja täydentää Finance and Operations -sovellusta toisesta järjestelmästä haetuilla tiedoilla. 
 
