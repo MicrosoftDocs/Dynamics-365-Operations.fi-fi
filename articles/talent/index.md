@@ -1,9 +1,9 @@
 ---
 title: Microsoft Dynamics 365 for Talent
 description: "Talent yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Näitä prosesseja ovat työntekijän sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta."
-author: rschloma
+author: josaw
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 06/04/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
+ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
+ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/06/2018
 
 ---
 
@@ -42,6 +42,9 @@ Voit suorittaa Talent-sovelluksessa seuraavat tehtävät:
 + Suorituksen arviointi ja työntekijän tavoitteiden toteuttaminen.
 + Työjärjestykset, istunnot ja edistymissuunnitelmat sisältävien koulutuskurssien määrittäminen, järjestäminen ja analysointi
 
+Tutustu Dynamics 365 for Talentiin katsomalla video [How to get started with Dynamics 365 for Talent.](https://www.youtube.com/watch?v=6rg2ByadbN0)
+
+
 > [!NOTE] 
 > Dynamics 365 for Talent liittyy läheisesti Dynamics 365 for Finance and Operationsin henkilöstöhallintoon. Samat toiminnot voivat esiintyä molemmissa tuotteissa. Tämän vuoksi aiheissa, jotka liittyvät ensisijaisesti henkilöstöhallintoon, tuotenimi on Dynamics 365 for Finance and Operations, ja aiheissa, jotka liittyvät ensisijaisesti Talent-sovellukseen, tuotenimi on Dynamics 365 for Talent. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
 
@@ -54,7 +57,9 @@ Talent-sovellusta käytettäessä voi päättää organisaation rakenteen elemen
 -   [Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen](set-up-company-specific-hr-parameters.md)
 -   [Yritysten välisten henkilöstöhallinnon parametrien määrittäminen](set-up-hr-parameters-across-legal-entities.md) 
 -   [Henkilöstötoiminnot – usein kysytyt kysymykset](personnel-actions-faq.md)
--   [Loman ja poissaolon yleiskatsaus](leave-absence-overview.md)
+-   [Lomien ja poissaolojen yhteenveto](leave-absence-overview.md)
+-   [How to use Dynamics 365 for Talent: Leave and Absence (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
+-   [How to manage personnel in Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
 ## <a name="staffing-your-organization"></a>Henkilöstön palkkaaminen organisaatioon
 
@@ -71,6 +76,7 @@ Voit määrittää suunnitelmat kompensaation tehokasta ja tasapuolista hallinta
 -   [Kompensaation käsittely](process-compensation.md)
 -   [Kiinteiden kompensaatiosuunnitelmien luominen](create-fixed-compensation-plans.md)
 -   [Muuttuvien kompensaatiosuunnitelmien luominen](create-variable-compensation-plans.md)
+-   [How to manage compensation in Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
 ## <a name="develop-and-train-employees"></a>Työntekijöiden kehittäminen ja kouluttaminen
 
@@ -79,6 +85,7 @@ Voit auttaa työntekijöitä saavuttamaan uratavoitteensa samalla, kun toteutat 
 -   [Suorituksen hallinta](performance-management-overview.md)
 -   [Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen](skills.md)
 -   [Koulutuksen hallinta kurssien avulla](courses.md)
+-   [How to manage employee development in Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Etujen luonti ja ylläpito
 
@@ -87,6 +94,7 @@ Henkilöstön kompensaatio voi koostua palkan ja bonusten lisäksi myös muodost
 -   [Etuohjelman hallinta](manage-benefit-program.md)
 -   [Etukelpoisuuden käytännöt](benefit-eligibility-policies.md)
 -   [Työntekijöille lainattujen nimikkeiden hallinta](loan-items.md)
+-   [How to manage employee benefits in Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Työturvallisuuden ja vaatimustenmukaisuuden ylläpito
 
