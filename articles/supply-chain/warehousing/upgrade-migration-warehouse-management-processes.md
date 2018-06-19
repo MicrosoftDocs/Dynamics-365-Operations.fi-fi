@@ -28,6 +28,7 @@ ms.lasthandoff: 05/08/2018
 
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Varastonhallintaprosessien päivittäminen Microsoft Dynamics AX 2012:sta Finance and Operationsiin
 
+
 [!include [banner](../includes/banner.md)]
 
 Tämä ohjeaihe sisältää yhteenvedon Microsoft Dynamics AX 2012 R3:n (jossa WMSII-moduuli) päivittämisestä Microsoft Dynamics 365 for Finance and Operationsiin.
