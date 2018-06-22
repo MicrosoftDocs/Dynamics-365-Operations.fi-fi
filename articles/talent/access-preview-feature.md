@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2e5dd8f852ac1a6c2997a50a60f03db6adfd218c
-ms.openlocfilehash: 5500bfc1cdd1949d301ae82fad5506dfdbeb59f3
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 63e0a52919e12c1f497e6809244939c6047826a7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/01/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -72,8 +72,6 @@ Voit käyttää Microsoft Dynamics 365 for Talentin hallintakeskuksen **Esiversi
     > Ilmoitukset näkyvät vain asiakkaille, jotka tilaavat vähintään yhtä LinkedIn-työpaikkailmoitustuotetta. Muussa tapauksessa asiakkaat näkevät työn vain, jos he hakevat sitä erikseen. LinkedIn-työpaikkailmoitukset tulevat näkyviin viiveellä. Työ voi tulla näkyviin vasta useiden tuntien kuluttua siitä, kun se julkaistaan Attractista.
 
 - **Hakeminen** – Sekä sisäiset että ulkoiset hakijat voivat nyt hakea työtä suoraan työn sivulta urasivustossa.
-- **Arvioinnit** – Osana konfiguroitavaa työhönottoprosessia, joko tiettyä työtä varten tai työmallia käytettäessä, käyttäjillä on nyt pääsyy uuteen**Arviointi**-tehtävätyyppiin. He voivat käyttää Project: "Gauge" -sovellusta Talentissa laatiakseen perusarvioinnit, jotka he voivat lähettää hakijoille. Project: "Gauge" on myös julkisessa esiversiossa. Muut toimittajat lisätään myöhemmin.
-- **Project: "Gauge"** – Project: "Gauge" on Talent-sovellus, jolla käyttäjät voivat luoda yksinkertaisia arviointeja tai kyselyitä.
 - **Tarjousten hallinta** – Käyttäjät voivat nyt luoda tarjouksia malleista, jotka sisältävät paikkamerkkejä. Kun hakijat pääsevät Tarjous-vaiheeseen, työhönottajat voivat käyttää tarjoustyökalua valmistellakseen ehdokkaan virallisen tarjouksen mallien perusteella, lähettääkseen tarjouksen sisäiseen hyväksyntään ja lopulta lähettääkseen tarjouksen hakijalle allekirjoitettavaksi. Tarjoustyökaluun lisätään ominaisuuksia ajan mittaan, ja esiversio-ominaisuus päivitetään näillä ominaisuuksilla kun ne ovat valmiita julkaistavaksi esikatseluun.
 
 ### <a name="core-hr"></a>Henkilöstöhallinnon perusversio
@@ -90,7 +88,7 @@ Riippumatta siitä, onko palaute positiivinen vai negatiivinen, haluamme kuulla 
     - [Attract-ideat](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Henkilöstöhallinnon perusversio](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
 
-Älä sisällytä mitään henkilötietoja (eli henkilökohtaisesti tunnistettavia tietoja) palautteeseesi tai tuotearvioihisi. Kerättyjä tietoja voidaan analysoida tarkemmin, eikä niitä käytetä pyyntöihin vastaamiseen tietosuojalakien mukaisesti. Henkilökohtaisiin tietoihin, jotka kerätään erillään näistä ohjelmista, sovelletaan [Microsoftin tietosuojalausuntoa](https://privacy.microsoft.com/en-us/privacystatement).
+Älä sisällytä mitään henkilötietoja (eli henkilökohtaisesti tunnistettavia tietoja) palautteeseesi tai tuotearvioihisi. Kerättyjä tietoja voidaan analysoida tarkemmin, eikä niitä käytetä pyyntöihin vastaamiseen tietosuojalakien mukaisesti. Henkilökohtaisiin tietoihin, jotka kerätään erillään näistä ohjelmista, sovelletaan [Microsoftin tietosuojalausuntoa](https://privacy.microsoft.com/privacystatement).
 
 > [!TIP]
 > Lisää kirjanmerkki tähän aiheeseen ja käy säännöllisesti katsomassa tietoa uusista julkaistuista esiversio-ominaisuuksista.

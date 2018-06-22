@@ -3,7 +3,7 @@ title: Uudet ja muuttuneet ominaisuudet
 description: "Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Microsoft Dynamics 365 for Finance and Operations -ympäristöversioiden uusista ominaisuuksista."
 author: josaw1
 manager: AnnBe
-ms.date: 03/25/2018
+ms.date: 05/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f49c5157294f615b134c9ea0f00b93f70d59f527
+ms.sourcegitcommit: aa5eab6dbf2cc604239cac199817ead6bef6f3de
+ms.openlocfilehash: 8a6ea271270fd854110a8548ab92cc4ef975ad0a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/08/2018
 
 ---
 
@@ -128,13 +128,13 @@ Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä kos
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Ympäristön update 15 -päivitys</td>
-<td>7.0.4839</td>
-<td>Ympäristöpäivitys 15 on kohdistettu versio, mikä tarkoittaa sitä, että se on kaikkien käyttäjien käytettävissä kesäkuussa 2018.</td>
+<td>7.0.4841</td>
+<td>Maaliskuun 2018.</td>
 <td><a href="whats-new-platform-update-15.md">Dynamics 365 for Finance and Operations, Enterprise Editionin ympäristöpäivityksen 15 (maaliskuu 2018) uudet ja muuttuneet ominaisuudet</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Ympäristön update 12 -päivitys</td>
-<td>7.0.4841</td>
+<td>7.0.4709</td>
 <td>marraskuu 2017</td>
 <td><a href="whats-new-platform-update-12.md">Dynamics 365 for Finance and Operations, Enterprise Editionin ympäristöpäivityksen 12 (marraskuu 2017) uudet ja muuttuneet ominaisuudet</a></td>
 <tbody><tr class="odd">

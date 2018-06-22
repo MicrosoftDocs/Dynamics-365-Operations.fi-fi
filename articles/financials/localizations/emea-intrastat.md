@@ -1,6 +1,6 @@
 ---
 title: Intrastat
-description: "Tämä artikkeli sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa. Artikkeli sisältää raportointiprosessin yleiskatsauksen ja kertoo pakolliset asetukset ja edellytykset."
+description: "Tämä aihe sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa. Artikkeli sisältää raportointiprosessin yleiskatsauksen ja kertoo pakolliset asetukset ja edellytykset."
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2ee60f3d1155b89d342b94832fbdbe898a5063c6
+ms.sourcegitcommit: b4b3d8f7da4fbb107353a25ff177492a0744b4c1
+ms.openlocfilehash: 50eb50c636d70dbdc374e8cfc89438433fb1f1b0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/17/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tämä artikkeli sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa. Artikkeli sisältää raportointiprosessin yleiskatsauksen ja kertoo pakolliset asetukset ja edellytykset.
+Tämä aihe sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa. Artikkeli sisältää raportointiprosessin yleiskatsauksen ja kertoo pakolliset asetukset ja edellytykset.
 
 Intrastat on järjestelmä, jolla kerätään tietoja ja muodostetaan tilastoja Euroopan unionin (EU) jäsenvaltioiden ja alueiden välisestä kaupasta. Intrastat-raportointi on pakollista aina, kun tuote ylittää EU-maan tai -alueen rajan. Monissa maissa ja monilla alueilla Intrastat-raportointi koskee myös palveluja. Intrastat-raporteissa voidaan kerätä pakollisia ja valinnaisia elementtejä. Seuraavat elementit ovat pakollisia: tietojen ilmoittamisesta vastuussa olevan osapuolen arvonlisäveronumero (ALV-numero), viitekausi, suunta (saapuva vai lähtevä), 8-numeroinen tavarankoodi, kumppanin jäsenvaltio (lähettäjäjäsenvaltio saapuvissa ja määräjäsenvaltio lähetyksissä), tavaroiden arvo, tavaroiden määrä (nettopaino ja lisäyksikkö) ja tapahtuman luonne. Maat ja alueet voivat myös kerätä erilaisten ehtojen mukaisesti valinnaisia elementtejä. Valinnaisia elementtejä ovat esimerkiksi alkuperämaa tai -alue, toimitusehdot, kuljetustapa, yksityiskohtaisempi tavaran koodi kuin CN8, alkuperäalue lähetyksissä ja määräalue saapuvissa, tilastomenettely, tilastoarvo, tavaroiden kuvaus sekä kuormauksen tai kuorman purkamisen satama tai lentoasema.
 
@@ -223,6 +223,7 @@ Määritä seuraavan taulun parametrit **Ulkomaankaupan parametrit** -sivulla.
 </ul></li>
 <li><strong>Sähköinen raportointi</strong> – määritä viittaukset sähköisen raportoinnin määrityksiin, jotta voit luoda sähköisen tiedoston ja raportin.</li>
 <li><strong>Kauppatavarakoodihierarkia</strong> – määritä Intrastat-kauppatavarakoodia CN8 ilmaiseva <strong>Kauppatavarakoodi</strong>-tyypin luokkahierarkia.</li>
+  <li> <strong>Vaihtokurssin tyyppi</strong> – Voit myös määrittää vaihtokurssin, jota käytetään Intrastat-myynnin ja -oston raportointiin ulkomaalaisina valuuttoina. Tätä käytetään, jos kurssi ei ole sama kuin se, jota käytetään, kun tapahtuma kirjataan.</li>  
 </ul></td>
 </tr>
 <tr class="even">
@@ -239,9 +240,5 @@ Määritä seuraavan taulun parametrit **Ulkomaankaupan parametrit** -sivulla.
 </tr>
 </tbody>
 </table>
-
-
-
-
 
 

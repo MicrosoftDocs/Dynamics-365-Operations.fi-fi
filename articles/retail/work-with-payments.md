@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe8dd3136f14e182e261a4dce57eef0b1946d304
+ms.sourcegitcommit: d709a7f0e087178c0961c268a78a9206ea656bbc
+ms.openlocfilehash: ca32e74b8b9f35dd9a1a48f942766bce98c5ea4b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/31/2018
 
 ---
 
@@ -41,8 +41,8 @@ Voit määrittää maksutapaa luodessasi viisi maksutapatoimintoa.
 
 | Toiminto            | kuvaus |
 |---------------------|-------------|
-| Normaali              | Käytä maksutapana **Normaali**-toimintoa, kun määritä maksutavaksi esimerkiksi käteisen tai tositteet. Kun näitä maksutapatyyppejä käytetään puhelinkeskuksen myyntitilauksessa, ne kirjataan heti asiakastilille ennakkomaksuina. Ennakkomaksutosite kirjataan asiakkaan tapahtumahistoriaan, jossa se täsmäytetään järjestelmällisesti myyntitilauksen laskulle laskuja luotaessa. |
-| Tarkistus               | Käytä **Sekki**-toimintoa, kun haluat määrittää sekkimaksuvälineen maksutavaksi. Kun tätä maksutapaa käytetään myyntitilauksessa, käyttäjän on kirjattava asiakkaan sekin numero maksun kohdistuksen käsittelyn osana. Sekkimaksut on aina käsiteltävä ennakkomaksuina, kun niitä käytetään. **Normaali**-maksutoiminnon tavoin nämä ennakkomaksutositteet täsmäytetään järjestelmällisesti tilaukselle luotuihin laskuihin. |
+| Normaali              | Käytä maksutapana **Normaali**-toimintoa, kun määritä maksutavaksi esimerkiksi käteisen tai tositteet. Kun nämä maksutyypit kohdistetaan myyntitilaukseen puhelinkeskuksessa, **Ennakkomaksu**-merkinnäksi tulee oletusarvoinen **Kyllä**.  Tällä tavoin ennakkomaksutosite kirjataan heti asiakkaan tilille, kun tilaus on lähetetty. Käyttäjät voivat halutessaan muuttaa **Ennakkomaksu**-merkinnän arvoksi **Ei**, jolloin maksutositetta ei luoda ennen laskun kirjausta.  Ennakkomaksutosite kirjataan asiakkaan tapahtumahistoriaan, jossa se täsmäytetään järjestelmällisesti myyntitilauksen laskuun. |
+| Tarkistus               | Käytä **Sekki**-toimintoa, kun haluat määrittää sekkimaksuvälineen maksutavaksi. Kun tätä maksutapaa käytetään myyntitilauksessa, käyttäjän on kirjattava asiakkaan sekin numero maksun kohdistuksen käsittelyn osana. Sekkimaksut käsitellään aina ennakkomaksuina, kun ne kohdistetaan ja maksutositteet luodaan heti tilauksen lähetyksen yhteydessä. Nämä ennakkomaksutositteet täsmäytetään järjestelmällisesti tilaukselle luotuihin laskuihin. |
 | Kortit               | Korttimaksutavat ovat kaikki maksutavat, jotka edellyttävät asiakkaan maksukortissa määritetyn kortin numeron kirjaamista. Tällaisia ovat esimerkiksi luotto- ja lahjakortit. Kun määrität tällaisia maksutyyppejä, tähän maksutapaan liitettävät korttitunnukset on määritettävä **Korttiasetukset**-valikossa. Käyttäjät voivat ilmoittaa tilaustenkäsittelyn yhteydessä, onko korttimaksu ennakkomaksu. He voivat tehdä sen käyttämällä maksumerkintäsivun **Ennakkomaksu**-vaihtoehtoa. Ellei yritys edellytä ennakkomaksuja, oikea luottokorttimaksu käsitellään yleensä kahdessa vaiheessa, jossa valtuutus saadaan tilaustenkäsittelyn aikana. Maksu puolestaan täsmäytetään ja kerätään asiakkaan kortilta laskutuksen yhteydessä. Lahjakortteille suositellaan ennakkomaksua, koska lahjakortin saldo pitäisi vähentää heti, jota asiakas ei voi käyttää samaa arvoa muualla. |
 | Asiakas            | Maksutavan **Asiakas**-toiminto viittaa siihen, että maksu kohdistetaan asiakkaan luottokorttirajaan tai asetetaan ennakkomaksuksi. Retailissa asiakkaalle voidaan määrittää luottoraja, joka voidaan tarkistaa tilaustenkäsittelyn aikana. **Asiakas**-toimintoon linkitetyllä maksutavalla tehtävät maksut luovat asiakastiliä koskevan velan. Kun myyntitilaus sitten laskutetaan, erääntyvä saldo näytetään. Näissä tilanteissa asiakkaat lähettävät yleensä maksun annettujen ehtojen mukaisesti. Vaihtoehtoisesti erääntyvä saldo voidaan täsmäyttää kohdistamalla asiakastilin edellinen avoin hyvityksen tosite. Huomaa, että vaikka määrität tämän maksutavan, se ei näy puhelinkeskuksen tilaustenkäsittelyn maksuvalintavaihtoehdoissa, ellei **Salli ennakkomaksu** -merkintää ole määritetty käsiteltävän asiakkaan asiakastietueessa. Tämä merkintä on asiakastietueen **Oletusmaksut**-välilehdessä. |
 | Maksuvälineen poisto tai vaihtokassa | Puhelinkeskus ei käytä **Maksuvälineen poisto tai vaihtokassa** -toimintoa. Sitä käytetään vain, kun määritä maksutavan, jota myyntipistesovellus käyttää myymäläkanavassa. |

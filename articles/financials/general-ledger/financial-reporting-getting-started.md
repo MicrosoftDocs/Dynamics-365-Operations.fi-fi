@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fecdca72839ef8ce204b62db6e02e8fa809a30d5
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 613fcf941576b9fb05f5c059699e4cc9c4cabe3e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -117,12 +117,9 @@ Kun napsautat **Talousraportointi**-valikon, näkyviin tulee luettelo yrityksen 
 ## <a name="creating-and-modifying-financial-reports"></a>Talousraporttien luominen ja muokkaaminen
 Voit luoda raporttiluettelosta uuden raportin tai muokata aiemmin luotua raporttia. Jos sinulla on tarvittavat käyttöoikeudet, voit luoda uuden taloudellisen raportin valitsemalla **Uusi** toimintoruudussa. Raportin suunnitteluohjelma ladataan laitteeseen. Kun raportin suunnitteluohjelma käynnistyy, voit luoda sitten uuden raportin. Kun uusi raportti on tallennettu, se tukee näkyviin talousraporttiluetteloon. Luettelossa näkyvät vain raportit, jotka on luotu Finance and Operationsissa käytössä olevalle yritykselle. Lisätietoja talousraporttien luomisesta ja muokkaamisesta Finance and Operationsissa on Dynamicsin talousraportoinnin blogin [blogikirjoituksissa](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/). **Huomautus:** Tietokoneelle, jolle ladataan raportin suunnitteluohjelman asiakasohjelma, on oltava asennettuna Microsoft .NET Frameworkin versio 4.6.2. Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [täältä](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Jos käytössäsi on Chrome, sinun on asennettava ClickOnce-laajennus ladataksesi raportin suunnittelun asiakasohjelman. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. Voit myös muokata talousraporttiluettelossa näkyvää raporttia. Raporttia ympäröivä alue on valittu, valitse toimintoruudussa **Muokkaa**. Raportin suunnitteluohjelma käynnistyy.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
-
-[Raporttien näyttäminen](view-financial-reports.md)
-
-[Dynamicsin talousraportointi -blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+## <a name="additional-resources"></a>Lisäresurssit
+- [Raporttien näyttäminen](view-financial-reports.md)
+- [Dynamicsin talousraportointi -blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

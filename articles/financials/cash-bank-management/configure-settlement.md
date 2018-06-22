@@ -1,16 +1,16 @@
 ---
 title: Tilin konfiguroiminen
-description: "Tapahtumien tilityksen ajankohdan ja tavan määrittäminen voi olla monimutkaista, joten on tärkeää, että parametrit ymmärretään ja määritetään oikein. Näin ne vastaavat liiketoimintatarpeita. Tässä artikkelissa esitellään parametrit, joita käytetään ostoreskontran ja myyntireskontran tilityksessä."
+description: "Tapahtumien tilityksen ajankohdan ja tavan määrittäminen voi olla monimutkaista, joten on tärkeää, että parametrit ymmärretään ja määritetään oikein. Näin ne vastaavat liiketoimintatarpeita. Tässä aiheessa esitellään parametrit, joita käytetään ostoreskontran ja myyntireskontran tilityksessä."
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ed520ce3a67fab81da24b36b042152f530d75dd
+ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
+ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tapahtumien tilityksen ajankohdan ja tavan määrittäminen voi olla monimutkaista, joten on tärkeää, että parametrit ymmärretään ja määritetään oikein. Näin ne vastaavat liiketoimintatarpeita. Tässä artikkelissa esitellään parametrit, joita käytetään ostoreskontran ja myyntireskontran tilityksessä. 
+Tapahtumien tilityksen ajankohdan ja tavan määrittäminen voi olla monimutkaista, joten on tärkeää, että parametrit ymmärretään ja määritetään oikein. Näin ne vastaavat liiketoimintatarpeita. Tässä aiheessa esitellään parametrit, joita käytetään ostoreskontran ja myyntireskontran tilityksessä. 
 
 Seuraavat parametrit vaikuttavat siihen, kuinka tilityksiä käsitellään Microsoft Dynamics 365 for Finance and Operationsissa. Tilitys on prosessi, jossa selvitetään lasku maksua tai hyvityslaskua vastaan. Nämä parametrit sijaitsevat **Tilityksen** alueella **Myyntireskontran parametrit** ja **Ostoreskontran parametrit** -sivuilla.
 
@@ -58,7 +58,14 @@ Seuraavat parametrit vaikuttavat siihen, kuinka tilityksiä käsitellään Micro
 - **Priorisoi tilitystä (vain AR)** – Asetukseksi **Kyllä** käyttääksesi **Merkitse prioriteetin mukaan** -painiketta **Syötä asiakasmaksut** ja **Tilitä tapahtumat** -sivuilla. Tämän painikkeen avulla käyttäjät voivat liittää esimääritetyn selvitysjärjestyksen tapahtumiin.  Kun tilitysjärjestys on otettu käyttöön tapahtumassa, järjestystä ja maksun kohdistusta voidaan muokata ennen kirjausta.
 - **Käytä automaattisten selvitysten priorisointia** – Määritä tämän asetuksen arvoksi **Kyllä**, käyttääksesi määritettyä priorisointijärjestystä, kun tapahtumia selvitetään automaattisesti. Tämä kenttä on käytettävissä vain, jos **Priorisoi selvitys**- ja **Automaattinen tilitys** -asetukset on määritetty arvoon **Kyllä**.
 
+## <a name="fixed-dimensions-on-accounts-receivableaccounts-payable-main-accounts"></a>Myyntireskontran/ostoreskontran päätilien kiinteät dimensiot
 
+Kun myyntireskontran/ostoreskontran päätilissä kiinteitä dimensioita käytetään, lisäkirjanpitomerkinnät ja kaksi lisätoimittajatapahtumaa kirjataan selvitysprosessissa. Tilitys vertaa myyntireskontran/ostoreskontran kirjanpitotiliä laskusta ja maksusta.  Kun maksaminen ja tilittäminen suoritetaan yhdessä (mikä on tavanomainen tilanne), maksun kirjanpitotapahtumaa ei kirjata yleiseen kirjanpitoon ennen kuin selvitysprosessi myös on valmis. Käsittelytapahtumien järjestyksen vuoksi tilitys ei voi määrittää todellista myyntireskontran/ostoreskontran kirjanpitotiliä maksun kirjanpitotapahtumasta. Tilitys määrittää, mitä kirjanpitotili on maksulle. Tästä tulee ongelma, kun myyntireskontran/ostoreskontran päätilille käytetään kiinteää dimensiota.
 
+Kirjanpitotilin määrittämiseksi myyntireskontran/ostoreskontran päätili haetaan kirjausprofiilista ja taloushallinnon dimensiot haetaan maksun toimittajatapahtumatietueesta, kuten on määritetty maksukirjauskansiossa. Kiinteitä dimensioita ei oletusarvoisesti määritetä maksukirjauskansioihin, mutta sen sijaan niitä käytetään päätilille kirjausprosessin viimeisenä vaiheena. Tuloksena kiinteän dimension arvo ei todennäköisesti sijaitse toimittajatapahtumassa, jollei sitä oletusarvoisesti noudeta muusta lähteestä, esimerkiksi toimittajasta. Kiinteä dimensio ei sisälly rekonstruoituun tiliin. Tilityksen käsittely määrittää, että oikaiseva merkintä on luotava, sillä lasku, joka kirjattiin käyttäen kiinteän dimension arvoa ja rekonstruoitua maksutiliä, ei luonut merkintää.  Kun tilitys jatkuu oikaisevan tapahtuman kirjaamisella, kirjauksen viimeinen vaihe on käytettävälle kiinteälle dimensiolle. Lisäämällä kiinteän dimension oikaisevaan tapahtumaan se kirjataan debetin ja kreditin kanssa samalle kirjanpitotilille. Selvitys ei voi palautua takaisin kirjanpidon kirjaukseen.
 
+Kirjanpidon lisätapahtumien välttämiseksi kirjattaessa debet ja kredit samalle kirjanpitotilille, suositellaan harkittavan seuraavia ratkaisuja liiketoiminnan tarpeiden mukaan. 
+
+-   Organisaatiot käyttävät usein kiinteitä dimensioita, jotta voidaan täyttää nollilla taloushallinnon dimensio, joka ei ole pakollinen. Tämä on yleistä tasetileissä, kuten myyntireskontrassa/ostoreskontrassa. Tilirakenteita voidaan käyttää seuranna poistamiseen taloushallinnon dimensioista, jotka on yleensä täytetty nollilla.  Voit poistaa kirjanpitodimension tasetileiltä, jotta ei tarvitse käyttää kiinteitä dimensioita.
+-   Jos organisaatiosi vaatii kiinteitä dimensioita myyntireskontran/ostoreskontran päätilille, etsi tapa liittää kiinteä dimensio oletusarvoisesti maksuun, jotta kiinteä dimensioarvo tallennetaan maksun toimittajatapahtumaan. Tällöin järjestelmä luo myyntireskontran/ostoreskontran päätilin sisältämään kiinteät dimensioarvot. Kiinteä dimensioarvo voidaan määrittää oletusarvona joko toimittajille tai maksukirjauskansion kirjauskansionimelle.
 

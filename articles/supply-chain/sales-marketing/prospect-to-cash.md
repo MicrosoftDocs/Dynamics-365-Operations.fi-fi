@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f43b3943ce27c44cc0b4756d1d5f23e3be093273
+ms.sourcegitcommit: a57e23691a6b4d48c6b8dd6d1f61fc9730365b39
+ms.openlocfilehash: 9d20a0ba92010be17029b1b0fc826eee1cded279
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/31/2018
 
 ---
 
@@ -33,11 +33,8 @@ ms.lasthandoff: 05/08/2018
 
 Prospektista käteiseksi -ratkaisu mahdollistaa suoran synkronoinnin Dynamics 365 for Finance and Operationsin ja Dynamics 365 for Salesin välillä. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Finance and Operationsin ja Salesin välillä. Kun tieto kulkee Finance and Operationsin ja Salesin välillä, voit suorittaa myynti- ja markkinointitehtäviä Salesissa sekä käsitellä tilauksen täyttämistä Finance and Operationsin inventoinnin- ja varastonhallinnalla. 
 
-Saat lisätietoja Prospektista käteiseksi -integraatiosta katsomalla lyhyen YouTube-videon:
+Lisätietoja Prospektista käteiseksi -integroinnista on lyhyessä YouTube-videossa: [![](https://img.youtube.com/vi/AVV9x5x-XCg/0.jpg)](https://www.youtube.com/watch?v=AVV9x5x-XCg)
 
-> [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
-
-[Prospektista käteiseksi -integrointi (YouTube-video)](https://youtu.be/AVV9x5x-XCg) 
 
 Nykyisessä versiossa prospektista käteiseksi -ratkaisu mahdollistaa seuraavat suoran synkronoinnin tyypit:
 
