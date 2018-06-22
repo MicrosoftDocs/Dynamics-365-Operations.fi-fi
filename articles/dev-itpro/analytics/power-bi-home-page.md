@@ -1,9 +1,9 @@
 ---
-title: "Power BI -sisältö"
-description: "Tämä ohjeaihe on luettelo käytettävissä olevasta Power BI -sisällöstä, ja siinä kerrotaan resursseista, joissa on lisätietoja kyseisestä sisällöstä."
+title: PowerBI.com-ratkaisut
+description: "Tässä ohjeaiheessa on luettelo käytettävissä olevista PowerBI.com-ratkaisuista. Ohjeaiheessa käsitellään myös resursseja, jossa on lisätietoja ratkaisuista."
 author: sericks007
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,69 +19,49 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 43675cdeaa8498e38e7ab030b935293d71035ea0
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: 0aa9971226e5aa79cab85f098e098dbb789a1e2d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="power-bi-content"></a><span data-ttu-id="871e5-103">Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-103">Power BI content</span></span>
-[!include [banner](../includes/banner.md)]
+# <a name="powerbicom-solutions"></a><span data-ttu-id="18d8f-103">PowerBI.com-ratkaisut</span><span class="sxs-lookup"><span data-stu-id="18d8f-103">PowerBI.com solutions</span></span>
+<span data-ttu-id="18d8f-104">Seuraavat PowerBI.com-ratkaisut ovat käytettävissä Dynamics 365 for Finance and Operations -ympäristöissä.</span><span class="sxs-lookup"><span data-stu-id="18d8f-104">The following PowerBI.com solutions are available for Dynamics 365 for Finance and Operations environments.</span></span> 
 
-<span data-ttu-id="871e5-104">Tämä ohjeaihe on luettelo käytettävissä olevasta Microsoft Power BI -sisällöstä, ja siinä kerrotaan resursseista, joissa on lisätietoja kyseisestä sisällöstä.</span><span class="sxs-lookup"><span data-stu-id="871e5-104">This topic lists the Microsoft Power BI content that is available and points you to resources where you can learn more about it.</span></span>
+## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a><span data-ttu-id="18d8f-105">Lifecycle Servicesin (LCS) PowerBI.com-ratkaisut</span><span class="sxs-lookup"><span data-stu-id="18d8f-105">PowerBI.com solutions available from Lifecycle Services (LCS)</span></span>
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations"></a><span data-ttu-id="871e5-105">Dynamics 365 for Finance and Operations -sovelluksen Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-105">Power BI content for Dynamics 365 for Finance and Operations</span></span>
-<span data-ttu-id="871e5-106">Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, käytettävissä on seuraava Power BI -sisältö:</span><span class="sxs-lookup"><span data-stu-id="871e5-106">If you're using Microsoft Dynamics 365 for Finance and Operations, the following Power BI content is available:</span></span>
-
-- [<span data-ttu-id="871e5-107">Todellinen vs. budjetti – Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-107">Actual vs budget Power BI content</span></span>](ledger-budgets-power-bi.md)
-- [<span data-ttu-id="871e5-108">Etujen Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-108">Benefits Power BI content</span></span>](benefits-power-bi.md)
-- [<span data-ttu-id="871e5-109">Kassayhteenvedon Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-109">Cash overview Power BI content</span></span>](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
-- [<span data-ttu-id="871e5-110">Talousjohtajan yhteenvedon Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-110">CFO overview Power BI content</span></span>](CFO-power-bi.md)
-- [<span data-ttu-id="871e5-111">Kompensaation Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-111">Compensation Power BI content</span></span>](compensation-power-bi.md)
-- [<span data-ttu-id="871e5-112">Kustannuslaskenta-analyysin Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-112">Cost accounting analysis Power BI content</span></span>](cost-accounting-analysis-content-pack.md) 
-- [<span data-ttu-id="871e5-113">Kustannushintojen hallinta - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-113">Cost management Power BI content</span></span>](cost-management-content-pack.md)    
-- [<span data-ttu-id="871e5-114">Luotonvalvonnan hallinnan Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-114">Credit and collections management Power BI content</span></span>](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [<span data-ttu-id="871e5-115">Työntekijän kehityksen Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-115">Employee development Power BI content</span></span>](employee-development-PBI.md) 
-- [<span data-ttu-id="871e5-116">Taloushallinnon tietojen Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-116">Financial insights Power BI content</span></span>](financial-insights.md)
-- [<span data-ttu-id="871e5-117">Taloudellisen suorituskyvyn Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-117">Financial performance Power BI content</span></span>](financial-performance-power-bi-content-pack.md)
-- [<span data-ttu-id="871e5-118">Käyttöomaisuuden hallinnan Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-118">Fixed asset management Power BI content</span></span>](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
-- [<span data-ttu-id="871e5-119">Oppimisen Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-119">Learning Power BI content</span></span>](learning-power-bi.md)
-- [<span data-ttu-id="871e5-120">Käytäntöpäällikön Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-120">Practice manager Power BI content</span></span>](practice-manager-power-bi.md)
-- [<span data-ttu-id="871e5-121">Tuotannon suorituskyvyn Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-121">Production performance Power BI content</span></span>](production-performance-power-bi.md)
-- [<span data-ttu-id="871e5-122">Ostojen kulutusanalyysi - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-122">Purchase spend analysis Power BI content</span></span>](purchase-content-pack-for-power-bi.md) 
-- [<span data-ttu-id="871e5-123">Työhönotto - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-123">Recruiting Power BI content</span></span>](recruiting-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="871e5-124">Myynnin ja kannattavuuden suorituskyvyn Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-124">Sales and profitability performance Power BI content</span></span>](sales-profitability-performance-content-pack.md)
-- [<span data-ttu-id="871e5-125">Toimittajan maksujen Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-125">Vendor payments Power BI content</span></span>](../../financials/accounts-payable/Vendor-payments-workspace.md)
-- [<span data-ttu-id="871e5-126">Varaston suorituskyvyn Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-126">Warehouse performance Power BI content</span></span>](warehouse-power-bi-content.md)
-- [<span data-ttu-id="871e5-127">Työvoiman mittarit - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-127">Workforce metrics Power BI content</span></span>](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a><span data-ttu-id="871e5-128">Dynamics 365 for Operationsin version 1611 Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-128">Power BI content for Dynamics 365 for Operations version 1611</span></span>
-<span data-ttu-id="871e5-129">Jos käytössä on Microsoft Dynamics 365 for Operations versio 1611, seuraava Power BI -sisältö on käytettävissä:</span><span class="sxs-lookup"><span data-stu-id="871e5-129">If you're using Microsoft Dynamics 365 for Operations version 1611, the following Power BI content is available:</span></span>
-
-- [<span data-ttu-id="871e5-130">Etuudet - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-130">Compensation and benefits Power BI content</span></span>](compensation-and-benefits-analysis-power-bi-content-pack.md)   
-- [<span data-ttu-id="871e5-131">Kustannuslaskenta-analyysin Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-131">Cost accounting analysis Power BI content</span></span>](cost-accounting-analysis-content-pack.md) 
-- [<span data-ttu-id="871e5-132">Luotonvalvonnan hallinnan Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-132">Credit and collections management Power BI content</span></span>](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [<span data-ttu-id="871e5-133">Työntekijöiden osaamistieto- ja kehitys - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-133">Employee competencies and development Power BI content</span></span>](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="871e5-134">Taloudellisen suorituskyvyn Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-134">Financial performance Power BI content</span></span>](financial-performance-power-bi-content-pack.md)
-- [<span data-ttu-id="871e5-135">Organisaation koulutus - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-135">Organizational training Power BI content</span></span>](organizational-training-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="871e5-136">Käytäntöpäällikön Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-136">Practice manager Power BI content</span></span>](practice-manager-power-bi.md)
-- [<span data-ttu-id="871e5-137">Tuotannon suorituskyvyn Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-137">Production performance Power BI content</span></span>](production-performance-power-bi.md)
-- [<span data-ttu-id="871e5-138">Ostojen kulutusanalyysi - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-138">Purchase spend analysis Power BI content</span></span>](purchase-content-pack-for-power-bi.md) 
-- [<span data-ttu-id="871e5-139">Työhönotto - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-139">Recruiting Power BI content</span></span>](recruiting-analysis-power-bi-content-pack.md) 
-- [<span data-ttu-id="871e5-140">Myynnin ja kannattavuuden suorituskyvyn Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-140">Sales and profitability performance Power BI content</span></span>](sales-profitability-performance-content-pack.md)
-- [<span data-ttu-id="871e5-141">Varaston suorituskyvyn Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-141">Warehouse performance Power BI content</span></span>](warehouse-power-bi-content.md)
-- [<span data-ttu-id="871e5-142">Työvoiman mittarit - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-142">Workforce metrics Power BI content</span></span>](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-microsoft-dynamics-ax"></a><span data-ttu-id="871e5-143">Microsoft Dynamics AX:n Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-143">Power BI content for Microsoft Dynamics AX</span></span>
-<span data-ttu-id="871e5-144">Jos käytössä on Microsoft Dynamics AX 7.0 tai Microsoft Dynamics AX 7.0.1, seuraava Power BI -sisältö on käytettävissä:</span><span class="sxs-lookup"><span data-stu-id="871e5-144">If you're using Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1, the following Power BI content is available:</span></span>
+<span data-ttu-id="18d8f-106">Seuraavat PowerBI.com-ratkaisut ovat käytettävissä LCS:n Jaettu omaisuus -kirjastossa.</span><span class="sxs-lookup"><span data-stu-id="18d8f-106">The following PowerBI.com solutions are available in the Shared assets library of LCS.</span></span> <span data-ttu-id="18d8f-107">Tarkista versiotiedot Jaettu omaisuus -kirjastossa ja lataa ympäristöön sopiva versio.</span><span class="sxs-lookup"><span data-stu-id="18d8f-107">Refer to the version information in the Shared assets library to download the correct version for your environment.</span></span> 
 
 > [!Note]
-> <span data-ttu-id="871e5-145">Nämä sisältöpaketit ovat vanhentuneet, kuten on ilmoitettu [PowerBI.comissa julkaistuissa Power BI -sisältöpaketeissa](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).</span><span class="sxs-lookup"><span data-stu-id="871e5-145">These content packs have been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).</span></span>
+> <span data-ttu-id="18d8f-108">Useimmat seuraavassa luettelossa olevat PowerBI.com-ratkaisut on upotettu viimeisimpien Dynamics 365 for Finance and Operations -versioiden analyysityötilaan.</span><span class="sxs-lookup"><span data-stu-id="18d8f-108">Most of the PowerBI.com solutions in the following list have been embedded in analytical workspaces in recent versions of Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="18d8f-109">Analyysityötilojen käytön vuoksi ratkaisuja ei tarvitse ladata LCS:n Jaettu omaisuus -kirjastosta.</span><span class="sxs-lookup"><span data-stu-id="18d8f-109">Using analytical workspaces eliminates the need to download these solutions from the Shared assets library in LCS.</span></span> <span data-ttu-id="18d8f-110">Tämän luettelon ohjeaiheet ilmaisevat tarvittaessa, mitkä näistä PowerBI.com-ratkaisuista on sisällytetty Finance and Operationsiin.</span><span class="sxs-lookup"><span data-stu-id="18d8f-110">The topics in this list indicate where these PowerBI.com solutions have been embedded in Finance and Operations, where applicable.</span></span> 
 
-- [<span data-ttu-id="871e5-146">Kustannushintojen hallinta - Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-146">Cost management Power BI content</span></span>](cost-management-content-pack.md)    
-- [<span data-ttu-id="871e5-147">Taloudellisen suorituskyvyn Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-147">Financial performance Power BI content</span></span>](financial-performance-power-bi-content-pack.md)
-- [<span data-ttu-id="871e5-148">Retail channel performance Power BI -sisältö</span><span class="sxs-lookup"><span data-stu-id="871e5-148">Retail channel performance Power BI content</span></span>](retail-channel-performance-dashboard-power-bi-data.md) 
+- [<span data-ttu-id="18d8f-111">Todellinen vs. budjetti</span><span class="sxs-lookup"><span data-stu-id="18d8f-111">Actual vs budget</span></span>](ledger-budgets-power-bi.md)
+- [<span data-ttu-id="18d8f-112">Käteisvarojen yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="18d8f-112">Cash overview</span></span>](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
+- [<span data-ttu-id="18d8f-113">Kompensaatio ja edut</span><span class="sxs-lookup"><span data-stu-id="18d8f-113">Compensation and benefits</span></span>](compensation-and-benefits-analysis-power-bi-content-pack.md)   
+- [<span data-ttu-id="18d8f-114">Kustannuslaskenta-analyysi</span><span class="sxs-lookup"><span data-stu-id="18d8f-114">Cost accounting analysis</span></span>](cost-accounting-analysis-content-pack.md) 
+- [<span data-ttu-id="18d8f-115">Luotonvalvonnan hallinta</span><span class="sxs-lookup"><span data-stu-id="18d8f-115">Credit and collections management</span></span>](../../financials/accounts-receivable/credit-collections-power-bi.md)
+- [<span data-ttu-id="18d8f-116">Työntekijän osaamisalueet ja kehitys</span><span class="sxs-lookup"><span data-stu-id="18d8f-116">Employee competencies and development</span></span>](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
+- [<span data-ttu-id="18d8f-117">Taloudellinen suorituskyky</span><span class="sxs-lookup"><span data-stu-id="18d8f-117">Financial performance</span></span>](financial-performance-power-bi-content-pack.md)
+- [<span data-ttu-id="18d8f-118">Käyttöomaisuuden hallinta</span><span class="sxs-lookup"><span data-stu-id="18d8f-118">Fixed asset management</span></span>](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
+- [<span data-ttu-id="18d8f-119">Organisaatiokoulutus</span><span class="sxs-lookup"><span data-stu-id="18d8f-119">Organizational training</span></span>](organizational-training-analysis-power-bi-content-pack.md) 
+- [<span data-ttu-id="18d8f-120">Käytäntöpäällikkö</span><span class="sxs-lookup"><span data-stu-id="18d8f-120">Practice manager</span></span>](practice-manager-power-bi.md)
+- [<span data-ttu-id="18d8f-121">Tuotannon suorituskyky</span><span class="sxs-lookup"><span data-stu-id="18d8f-121">Production performance</span></span>](production-performance-power-bi.md)
+- [<span data-ttu-id="18d8f-122">Osto- ja kulutusanalyysi</span><span class="sxs-lookup"><span data-stu-id="18d8f-122">Purchase spend analysis</span></span>](purchase-content-pack-for-power-bi.md) 
+- [<span data-ttu-id="18d8f-123">Työhönotto</span><span class="sxs-lookup"><span data-stu-id="18d8f-123">Recruiting</span></span>](recruiting-analysis-power-bi-content-pack.md)
+- [<span data-ttu-id="18d8f-124">Myynnin ja tuottavuuden suorituskyky</span><span class="sxs-lookup"><span data-stu-id="18d8f-124">Sales and profitability performance</span></span>](sales-profitability-performance-content-pack.md)
+- [<span data-ttu-id="18d8f-125">Toimittajan maksut</span><span class="sxs-lookup"><span data-stu-id="18d8f-125">Vendor payments</span></span>](../../financials/accounts-payable/Vendor-payments-workspace.md)
+- [<span data-ttu-id="18d8f-126">Varaston suorituskyky</span><span class="sxs-lookup"><span data-stu-id="18d8f-126">Warehouse performance</span></span>](warehouse-power-bi-content.md)
+- [<span data-ttu-id="18d8f-127">Työvoiman mittarit</span><span class="sxs-lookup"><span data-stu-id="18d8f-127">Workforce metrics</span></span>](workforce-analysis-power-bi-content-pack.md)  
 
+## <a name="powerbicom-solutions-available-from-appsource"></a><span data-ttu-id="18d8f-128">AppSourcesta saatavat PowerBI.com-ratkaisut</span><span class="sxs-lookup"><span data-stu-id="18d8f-128">PowerBI.com solutions available from AppSource</span></span>
 
+<span data-ttu-id="18d8f-129">Seuraavat PowerBI.com-ratkaisut ovat saatavilla [Microsoft AppSourcesta](https://appsource.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="18d8f-129">The following PowerBI.com solutions are available from [Microsoft AppSource](https://appsource.microsoft.com).</span></span>
+
+> [!Note]
+> <span data-ttu-id="18d8f-130">Nämä ratkaisut ovat vanhentuneet, kuten on ilmoitettu [AppSourcessa julkaistuissa Power BI -sisältöpaketeissa](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).</span><span class="sxs-lookup"><span data-stu-id="18d8f-130">These solutions have been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).</span></span>
+
+- <span data-ttu-id="18d8f-131">Kustannushintojen hallinta</span><span class="sxs-lookup"><span data-stu-id="18d8f-131">Cost management</span></span>    
+- [<span data-ttu-id="18d8f-132">Taloudellinen suorituskyky</span><span class="sxs-lookup"><span data-stu-id="18d8f-132">Financial performance</span></span>](financial-performance-power-bi-content-pack.md)
+- [<span data-ttu-id="18d8f-133">Vähittäismyyntikanavan suorituskyky </span><span class="sxs-lookup"><span data-stu-id="18d8f-133">Retail channel performance</span></span>](retail-channel-performance-dashboard-power-bi-data.md) 
 
