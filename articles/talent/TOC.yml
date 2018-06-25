@@ -1,0 +1,84 @@
+- name: Tervetuloa Dynamics 365 for Talentiin
+  href: index.md
+- name: Aloittaminen
+  href: talent-get-started.md
+  items:
+    - name: Järjestelmävaatimukset ja päivityskäytäntö
+      href: talent-versions-update-policy.md
+    - name: Microsoft Dynamics 365 for Talentin valmisteleminen
+      href: provisioning-talent.md
+    - name: Poista Talent-ympäristö
+      href: remove-talent-environment.md
+    - name: Microsoft Dynamics 365 for Talentin modulaaristen sovellusten valmisteleminen
+      href: modular-app-tech-faq.md
+    - name: Talent-toiminnallisuuden laajentaminen
+      href: extend-talent-functionality.md
+    - name: Esikatseluominaisuuksien käyttö - Dynamics 365 for Talent
+      href: access-preview-feature.md
+- name: Henkilöstöhallinnon strategian kehittäminen
+  href: departments-jobs-positions.md
+  items:
+    - name: Työosien määrittäminen
+      href: create-job.md
+    - name: Osaston luominen ja liittäminen osastohierarkiaan
+      href: create-department-add-department-hierarchy.md
+    - name: Yritysten välisten henkilöstöhallinnon parametrien määrittäminen
+      href: set-up-hr-parameters-across-legal-entities.md
+    - name: Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen
+      href: set-up-company-specific-hr-parameters.md
+    - name: Henkilöstötoiminnot – usein kysytyt kysymykset
+      href: personnel-actions-faq.md
+    - name: Liiketoimintaprosessien virallistaminen
+      href: formalize-business-processes.md
+    - name: Työntekijätietojen hallinta työkulun avulla
+      href: workflow-manage-employee-information.md
+    - name: Lomien ja poissaolojen yhteenveto
+      href: leave-absence-overview.md
+- name: Henkilöstön palkkaaminen organisaatioon
+  items:
+    - name: Attract-sovelluksen yleiskatsaus
+      href: attract-overview.md
+    - name: Onboard-sovelluksen yleiskatsaus
+      href: create-onboarding-experience.md
+- name: Työntekijöiden motivointi
+  items:
+    - name: Kompensaatiosuunnitelmat
+      href: compensation-plans.md
+    - name: Kiinteiden kompensaatiosuunnitelmien luominen
+      href: create-fixed-compensation-plans.md
+    - name: Muuttuvien kompensaatiosuunnitelmien luominen
+      href: create-variable-compensation-plans.md
+    - name: Kompensaation käsittely
+      href: process-compensation.md
+- name: Työntekijöiden kehittäminen ja kouluttaminen
+  items:
+    - name: Suorituksen hallinnan yleiskatsaus
+      href: performance-management-overview.md
+    - name: Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen
+      href: skills.md
+    - name: Koulutuskurssien määrittäminen
+      href: courses.md
+- name: Etujen luonti ja ylläpito
+  href: manage-benefit-program.md
+- name: Etukelpoisuuden käytännöt
+  href: benefit-eligibility-policies.md
+  items:
+    - name: Työntekijöille lainattujen nimikkeiden hallinta
+      href: loan-items.md
+- name: Tietojen kerääminen kyselylomakkeilla
+  href: questionnaires.md
+  items:
+    - name: Kyselylomakkeen suunnitteleminen
+      href: design-questionnaires.md
+    - name: Kyselylomakkeen jakaminen ja täyttäminen
+      href: distribute-questionnaires.md
+    - name: Kyselylomakkeen tulosten arvioiminen
+      href: evaluate-questionnaire-results.md
+- name: Työturvallisuus ja vaatimustenmukaisuus (Yhdysvallat)
+  items:
+    - name: Henkilökohtaisia tietoja koskevaan pyyntöön vastaaminen Talentilla
+      href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/talent/toc.json
+    - name: I-9-lomakkeen työsuhdetarkistukset
+      href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json
+    - name: ADA-lain noudattaminen
+      href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json
