@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: c935b0c14f09b0a3a738266e4c9c577c96f0ea77
+ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
+ms.openlocfilehash: 6b954d1eedb7c7af1c9a5eda92aa1dd6132a19fa
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/30/2018
 
 ---
 
@@ -56,7 +56,7 @@ Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version o
 | **Tila**                         |Poistettu 15.2.2018. Tämä vaikuttaa asiakkaisiin, joiden käytössä Dynamics 365 for Operations 1611 tai sitä uudempi versio.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Sähköisen raportoinnin (ER) toimintoluettelon laajennus
-Mahdollisuutta käyttää mukautettuja toimintoja ER-lausekkeenmuodostimessa ei tueta enää. (Lisätietoja on kohdassa [Sähköisen raportoinnin toimintoluettelon laajentaminen](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md).) Sähköisen raportoinnin ohjelmointirajapintojen muutosten vuoksi, ohjelmointirajapinnan sisäisten toimintojen kutsuminen ER-lausekkeenmuodostimesta muuttui sisäiseksi eikä sitä voi enää laajentaa.
+Mahdollisuutta käyttää mukautettuja toimintoja ER-lausekkeenmuodostimessa ei tueta enää. (Lisätietoja on kohdassa [Sähköisen raportoinnin toimintoluettelon laajentaminen](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)). Sähköisen raportoinnin ohjelmointirajapintojen muutosten vuoksi, ohjelmointirajapinnan sisäisten toimintojen kutsuminen ER-lausekkeenmuodostimesta muuttui sisäiseksi eikä sitä voi enää laajentaa.
 
 |   |  |
 |------------|--------------------|
@@ -162,6 +162,18 @@ Käyttäjät voivat ladata tämän julkishallinnon portaalista.
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise edition heinäkuu 2017 ja ympäristöpäivitys 8
+
+### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Valuuttamuunnos kirjanpito- ja raportointivaluutoille
+
+Valuuttamuunnos kirjanpito- ja raportointivaluutoille otettiin käyttöön, kun euro otettiin otettiin käyttöön.
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Rajoitettu käyttö ja Kopioi yritys -toiminnon lisäys korvauksena.      |
+| **Onko toinen ominaisuus korvannut?**   | Ei, mutta Kopioi yritys- ja Konfiguroinnit-ominaisuudet lisättiin, jotta olisi helppo siirtää yritys, jolla on muuttuvat ydintarpeet. |
+| **Tuotealueet, joihin vaikutetaan**         | Taloushallinto     |
+| **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.   |
+
 
 ### <a name="warehouse-mobile-devices-portal"></a>Varaston mobiililaiteportaali
 

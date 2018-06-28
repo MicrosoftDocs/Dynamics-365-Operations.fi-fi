@@ -1,6 +1,6 @@
 ---
-title: "Taloudellisen suorituskyvyn Power BI -sisältö"
-description: "Tässä ohjeaiheessa käsitellään taloudellisen suorituskyvyn Power BI -sisältöä"
+title: Taloudellisen suorituskyvyn PowerBI.com-ratkaisu
+description: "Tässä ohjeaiheessa käsitellään taloudellisen suorituskyvyn PowerBI.com-ratkaisua."
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
@@ -18,26 +18,26 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: d062937d8d1cb7d8e4f4cc055eb4514fa56b4eab
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Taloudellisen suorituskyvyn Power BI -sisältö
+# <a name="financial-performance-powerbicom-solution"></a>Taloudellisen suorituskyvyn PowerBI.com-ratkaisu
 
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> Tämä sisältöpaketti on vanhentunut, kuten on ilmoitettu [AppSourcessa julkaistuissa Power BI -sisältöpaketeissa](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Tämä PowerBI.com-ratkaisu on vanhentunut, kuten on ilmoitettu [AppSourcessa julkaistuissa Power BI -sisältöpaketeissa](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-Tässä ohjeaiheessa käsitellään **taloudellisen suorituskyvyn** Microsoft Power BI -sisältöä Siinä kerrotaan sisältyvistä koontinäytöistä ja raporteista sekä sisältöpaketin muodostamisessa käytetyistä tietomallista ja yksiköistä.
+Tässä ohjeaiheessa käsitellään **taloudellisen suorituskyvyn** PowerBI.com-ratkaisua. Siinä kerrotaan sisältyvistä koontinäytöistä ja raporteista sekä ratkaisun muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
 ## <a name="main-account-setup"></a>Päätilin asetukset
 Koska organisaatiot haluavat velkojen ja tuottosummien näkyvän raporteissa positiivisina summina, päätilien määritys on tärkeää. Jotta nämä päätilit näkyisivät positiivisina summina, päätilityypiksi on asetettava **Velka** tai **Tuotto**. Käytettäessä näitä tilityyppejä Power BI -raportointi kääntää merkit ja näyttää summat positiivisina.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Power BI -sisältöön sisältyvä koontinäyttö ja raportit
+## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>PowerBI.com-ratkaisuun sisältyvä koontinäyttö ja raportit
 Koontinäyttö sisältää yhteenvetoruutuja tiedoista, jotka perustuvat pohjana oleviin raportteihin. Kukin ruutu sisältää kuluvan vuoden yhteenvetotietoja, jotka koskevat kaikkia organisaation yrityksiä. Tässä on esimerkkejä ruuduista:
 
 - Maksu
@@ -74,7 +74,7 @@ Kunkin ruudun taustatukena on raportti. Nämä raportit sisältävät kaavioita 
 Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
-**Taloudellisen suorituskyvyn** Power BI -sisällön perustana käytettiin seuraavia yksikköjä:
+**Taloudellisen suorituskyvyn** PowerBI.com-ratkaisun perustana käytettiin seuraavia yksikköjä:
 
 **Koostetietoyksiköt**
 

@@ -1,28 +1,28 @@
 ---
 title: Huoltohallinta
 description: "Huoltohallinta-toimintoa käytetään tekemään huoltosopimuksia ja huollon ylläpitosopimuksia, käsittelemään huoltotilauksia ja asiakaskyselyitä, sekä hallinnoimaan ja analysoimaan huoltotoimituksia asiakkaille."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SMAServiceOrderTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-ms.author: YuyuScheller
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
-ms.openlocfilehash: 236ab21b2d1c5a4e82270e5381d163e97437cb7f
+ms.sourcegitcommit: 80a3cb74279f72e8cb94f3a2c38230f409067a47
+ms.openlocfilehash: 89035687d87c674cca7fa5fd3126100c4c0ad892
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/24/2018
 
 ---
 
@@ -44,7 +44,7 @@ Voit luoda huoltotilauksia hallitsemaan tietoja ajoitetuista ja ajoittamattomist
 
 4.  Kaikki kulut ja maksut, jotka liittyvät palveluun tai huoltoon
 
-Asiakkaat voivat lähettää palvelupyyntöjä Internetin kautta käyttämällä yritysportaalia. Voit vastaanottaa käsitellä ja resursoida näitä pyyntöjä. Kun olet luonut huoltotilauksen, voit valvoa edistymistä huoltovaiheiden avulla sekä määrittää sääntöjä, jotka ohjaavat kussakin vaiheessa käytössä olevia toimintoja. Kun huoltotilaus on valmis, voit hyväksyä tilauksen vahvistaaksesi, että se on valmis ja kirjata sitten tilauksen laskutusprosessin käynnistämiseksi.
+Voit vastaanottaa, käsitellä ja resursoida palvelupyyntöjä. Kun olet luonut huoltotilauksen, voit valvoa edistymistä huoltovaiheiden avulla sekä määrittää sääntöjä, jotka ohjaavat kussakin vaiheessa käytössä olevia toimintoja. Kun huoltotilaus on valmis, voit hyväksyä tilauksen vahvistaaksesi, että se on valmis ja kirjata sitten tilauksen laskutusprosessin käynnistämiseksi.
 
 Käytä raportointityökaluja huoltotilausten marginaalien ja ylläpitosopimustapahtumien valvontaan sekä työmääräinten ja työn vastaanottokuittausten tulostamiseen.
 
@@ -56,47 +56,19 @@ Seuraavassa kaaviossa on kuvattu korkean tason liiketoimintaprosessit **Huoltoha
 
 ## <a name="service-management-at-a-glance"></a>Palveluhallinnan esittely
 
-<table>
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Tärkeät tehtävät</p></th>
-<th><p>Ensisijaiset lomakkeet</p></th>
-<th><p>Suositut raportit</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Huoltosopimusten täyttäminen</a></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/aa617823(v=ax.60)">Palvelusopimukset (lomake)</a></p></td>
-<td><p><strong>Huoltotilauksen marginaali</strong></p></td>
-</tr>
-<tr class="even">
-<td><p>Käsittele asiakkaan kyselyt</a></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/aa554361(v=ax.60)">Palvelutilaukset (lomake)</a></p></td>
-<td><p><strong>Työmääräin</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/hh242789(v=ax.60)">Resursointitaulu (lomake)</a></p></td>
-<td><p><strong>Tapahtuma - ylläpitosopimus</strong></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p></p></td>
-<td><p><strong>Ylläpitosopimusmaksutapahtumat</strong></p></td>
-</tr>
-</tbody>
-</table>
+|Tärkeät tehtävät           | Ensisijaiset sivut                         |Suositut raportit              |
+|--------------------------|---------------------------------------|-----------------------------|
+|Huoltosopimusten täyttäminen|Huoltosopimukset                     |Huoltotilauksen marginaali         |
+|Käsittele asiakkaan kyselyt |Huoltotilaukset                         |Työmääräin             |
+|                          |Resursointitaulu                         |Tapahtuma - ylläpitosopimus   |
+|                          |                                       |Ylläpitosopimusmaksutapahtumat|
 
 
 ## <a name="integration-of-service-management"></a>Palvelun hallinnan integrointi
 
-Huoltohallinta voidaan integroida seuraaviin Microsoft Dynamics 365 for Finance and Operations -moduuleihin:
+Palvelunhallinta voidaan integroida seuraavien moduulien kanssa sovelluksessa:
 
   - [Myynti ja markkinointi](../sales-marketing/overview-sales-marketing.md)
-
   - [Henkilöstö](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/index)
 
   

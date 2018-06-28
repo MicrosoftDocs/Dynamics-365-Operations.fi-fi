@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 838dc1e5867b8380823275aba5fc425003a54523
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -43,8 +43,7 @@ Tuotantorakenne- ja reseptirivien vapautustapaa hallitaan **Tuotantorivin vapaut
 - **Vapauta tuoterakenne- ja reseptirivit osana tuotanto- tai erätilauksen vapautusta** – Tässä menetelmässä tuotanto- tai erätilauksen tuoterakenne- tai reseptirivit vapautetaan osan tilauksen vapautusprosessia. Tuotantotyöt vapautetaan yleensä tuotanto- tai erätilauksen vapautuksen yhteydessä tuotantotyöntekijöille. Lisäksi tuotantoasiakirjat tulostetaan. Tilauksen tilaksi tulee tämän prosessin aikana **Vapautettu**.
 - **Vapauta tuoterakenne- ja reseptirivit erätyön avulla tai manuaalisesti** – Tässä tavassa tuoterakenne- ja reseptirivit vapautetaan vain **Tuoterakenteen ja reseptirivien automaattinen vapautus** -erätyön avulla tai manuaalisesti. Voit vapauttaa tuoterakenne- ja reseptirivejä manuaalisesti valitsemalla tuotantotilauksen luettelosivulla tai tuotantotilauksen tietosivulla toimintoruudussa **Vapauta varastoon**.
 
-Tässä lyhyessä YouTube-videossa näytetään, miten tuorerakenne- ja reseptirivit vapautetaan tuotantoon erätyön avulla:
-[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
+Seuraavassa lyhyessä YouTube-videossa näytetään, miten tuorerakenne- ja reseptirivit vapautetaan tuotantoon erätyön avulla: [Tuotannon keräilyn vapautus eränä varastoon](https://www.youtube.com/watch?v=8urAJn50dQ8)
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Tuoterakenne- ja reseptirivien vapauttaminen erätyön avulla
 
@@ -85,8 +84,7 @@ Seuraavan kuvan tuotantotilauksessa on kaksi työvaihetta, 10 ja 20. Jos rajoita
 
 ![Esimerkki materiaalin vapauttamisesta työnumeron mukaan](media/two-operations.PNG)
 
-Tässä lyhyessä YouTube-videossa näytetään, miten materiaali vapautetaan suhteessa valmiiden tuotteiden määrään:
-[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
+Tässä lyhyessä YouTube-videossa näytetään, miten materiaali vapautetaan suhteessa valmiiden tuotteiden määrään: [Tuotantotilauksen vapautusprosessin parannukset Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Materiaalin vapauttaminen suhteessa valmiiden tavaroiden määrään
 

@@ -3,7 +3,7 @@ title: "Käyttäjäkokemuksen mukauttaminen"
 description: "Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Finance and Operationsin mukauttamista."
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 3d969069dd5f447b449df84b097527d3814aa338
+ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
+ms.openlocfilehash: 8ad5bd607f08d4e0b266d86a96a0b7f3e352c4cd
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 05/24/2018
 
 ---
 
@@ -32,105 +32,122 @@ ms.lasthandoff: 11/20/2017
 
 Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Finance and Operationsin mukauttamista.
 
-Dynamics 365 for Finance and Operations -sovelluksessa on monenlaisia mukauttamismahdollisuuksia. Jotkut mukautukset ovat valintoja, jotka teet asetussivulla vaihtoehtojen luettelossa. Jotkin mukautukset ovat implisiittisiä, esimerkiksi Finance and Operations seuraa ruudukoiden sarakeleveyksiä, jos muutat niitä, sekä pikavälilehtien laajennus- ja tiivistystiloja. Muut mukautukset ovat eksplisiittisiä. Eksplisiittistä mukauttamista varten siirryt vuorovaikutteiseen mukautustilaan ja muutat sivun ulkonäköä hallitsemalla suoraan tapaa, jolla eri elementit näkyvät tai toimivat sivulla. 
+Finance and Operationsissa on kolme mukauttamisen perusluokkaa. 
+- Asetussivulla tehtävät mukautukset. Väriteema ja aikavyöhyke ovat niistä esimerkkejä.
+- Sivun käyttöön liittyvät mukautukset, joita kutsutaan *implisiittisiksi* mukautuksiksi. Finance and Operations esimerkiksi seuraa ruudukoiden sarakeleveyksiä, jos muutat niitä, sekä pikavälilehtien laajennus- tai tiivistystiloja. 
+- Kun käyttäjän mukautukset muokkaavat sivun ulkoasua muuttamalla tapaa, jolla elementti näkyy tai toimii kyseisellä sivulla, käytössä on usein ollut vuorovaikutteinen mukautustila. Näitä mukautuksia kutsutaan *eksplisiittisiksi* mukautuksiksi. Käyttäjä voi esimerkiksi lisätä sivulle elementtejä, piilottaa ne tai muuttaa niiden järjestystä.
 
-Kaikki ja kaiken tyyppiset käyttäjän Finance and Operationsissa tekemät mukautukset koskevat vain kyseistä käyttäjää riippumatta siitä yrityksestä, jonka kanssa käyttäjä on vuorovaikutuksessa. Käyttäjän sivulle tekemät muutokset eivät vaikuta järjestelmän muihin käyttäjiin.
+Kaikki käyttäjän Finance and Operationsissa tekemät mukautukset koskevat vain kyseistä käyttäjää riippumatta mukautuksen tyypistä tai yrityksestä, jonka kanssa käyttäjä on vuorovaikutuksessa. Yhden käyttäjän sivulle tekemät muutokset eivät vaikuta järjestelmän muihin käyttäjiin.
 
 ## <a name="system-wide-options-for-the-current-user"></a>Nykyisen käyttäjän järjestelmänlaajuiset vaihtoehdot
-Näet Siirtymispalkissa rattaan kuvan, jota kutsutaan **Asetukset**-valikkopainikkeeksi. Tämän **Asetukset**-valikon avaaminen tuo näyttöön eri vaihtoehtoja. Valinta **Asetukset** avaa käyttäjälle **Asetukset**-sivun. Käytettävissä on neljä välilehteä: 
+**Käyttäjän asetukset** -sivulla on useita nykyisen käyttäjän koko järjestelmää koskevia asetuksia. Avaa **Käyttäjän asetukset** -sivu valitsemalla **Asetukset**-valikko (rataskuvake) siirtymispalkissa. Valitse sitten **Käyttäjän asetukset**. **Käyttäjän asetukset** -sivulla on neljä välilehteä, joissa erilaisia käyttäjäasetuksia:
 
--   **Visuaalinen** – Voit valita välilehdellä väriteeman ja sivun elementtien oletuskoon.
--   **Valinnat** – Voit valita välilehdessä oletusasetukset, jotka näkyvät aina, kun avaat Finance and Operationsin. Näitä asetuksia ovat yritys, aloitussivu ja oletusnäkymä tai -muokkaustila (joka määrittää, onko sivu lukittu katselua varten vai avautuuko se muokkausta varten aina, kun avaat sen). Löydät myös kieli-, aikavyöhyke-, päivämäärä-, aika- ja numeromuotojen vaihtoehdot. Viimeisenä sivulla on erilaisia sekalaisia valintoja, jotka vaihtelevat versioiden välillä.
--   **Tili** – Voit antaa välilehdessä käyttäjätunnuksen ja muut tiliin liittyvät asetukset.
--   **Työnkulku** – Voit valita välilehdessä työnkulkuun liittyviä asetuksia.
+- **Visuaalinen** – valitse sivun elementtien väriteema ja oletuskoko.
+- **Valitse** – Valitse oletusarvot, joita käytetään aina, kun avaat Finance and Operationsissa. Näitä arvoja ovat esimerkiksi yritys, ensimmäinen sivu sekä näkymän tai muokkauksen oletustila. (Näkymä- tai muokkaustila määrittää, lukitaanko sivu näyttämistä varten vai avataanko se muokattavaksi aina, kun avaat sen.) Tässä välilehdessä on kieli- ja aikavyöhykeasetukset sekä päivämäärä-, kellonaika- ja numeromuotoilun asetukset. Tässä välilehdessä on lisäksi sekalaisia asetuksia,, jotka vaihtelevat julkaisuversiosta toiseen.
+- **Tili** – käyttäjänimen ja muiden tiliin liittyvien asetusten säätäminen.
+- **Työnkulku** – työnkulkuun liittyvien asetusten valitseminen.
 
 ## <a name="implicit-personalizations"></a>Implisiittiset mukautukset
-Implisiittiset mukautukset ovat niitä mukautuksia, jotka suoritat yksinkertaisesti olemalla vuorovaikutuksessa tiettyjen tarkistusten kanssa, jotka muistavat nykyisen näkyvän tilansa. 
+Implisiittiset mukautukset ovat mukautuksia, joita tehdään olemalla vuorovaikutuksessa ohjausobjektien kanssa, jotka muistavat nykyisen näkyvän tilan.
 
-- **Ruudukon sarakkeet** – Voit muokata luettelon sarakkeen leveyttä valitsemalla koon muuttamiseen tarkoitetun palkin sarakkeen otsikon vasemmalla tai oikealla puolella ja vetämällä sitä vasemmalle tai oikealle haluttuun leveyteen. Finance and Operations tallentaa haluamasi leveyden ja näyttää kyseisen sarakkeen tämänlevyisenä aina, kun avaat kyseisen luettelon sisältämän sivun. 
+- **Ruudukon sarakkeet** – Ruudukon sarakkeen leveyttä voidaan säätää valitsemalla koon muuttamiseen tarkoitettu palkki sarakkeen otsikon vasemmalla tai oikealla puolella ja vetämällä sitä vasemmalle tai oikealle, kunnes sarake on halutun levyinen. Finance and Operations tallentaa sarakkeelle määritetyn leveyden. Sarakkeen leveys muutetaan jatkossa tähän leveyteen aina, kun avaat ruudukon sisältävän sivun.
+- **Pikavälilehdet** – Joillain sivuilla on laajennettavia *pikavälilehtinä* tunnettuja osia. Finance and Operations tallentaa tietoja laajennetuista ja tiivistetyistä pikavälilehdistä. Kun tämän jälkeen palaat sivulle, pikavälilehdet näkyvät joko laajennettuina tai tiivistettyinä sen mukaan, mitä olet valinnut sivulla edellisellä kerralla. Joissain tapauksissa voit parantaa järjestelmän suorituskykyä tiivistämällä pikavälilehden, koska Finance and Operationsin ei tarvitse noutaa tietoja kyseistä pikavälilehteä varten ennen kuin se laajennetaan. Toisaalla tässä ohjeaiheessa kertaan, miten voit myös muuttaa sivulla olevien pikavälilehtien järjestystä.
+- **Tietoruudut** – Joillain sivuilla on *tietoruuduiksi* kutsuttuja osia. Tässä ruudussa on vain valitun sivun aihepiiriin liittyvää vain luku -muotoista tietoa. Kutakin Tietoruutu-ruudun osaa kutsutaan *tietoruuduksi*. Voit piilottaa tai näyttää koko Tietoruutu-ruudun. Voit myös laajentaa tai tiivistää yksittäisiä tietoruutuja. Finance and Operations tallentaa valintasi. Kun palaat tämän jälkeen sivulle, Tietoruutu-ruudun ja yksittäisten tietoruutujen tila palautetaan sen mukaan, mitä olet valinnut sivulla edellisellä kerralla. Joissain tapauksissa voit parantaa järjestelmän suorituskykyä tiivistämällä tietoruudun, koska Finance and Operationsin ei tarvitse noutaa tietoja kyseistä tietoruutua varten ennen kuin se laajennetaan.
+- **Toimintoruudut** – *Toimintoruutu* näkyy useimmilla sivuilla yläreunan lähellä. Toimintoruudussa on painikkeita, joilla voi tehdä monia valitulla sivulla tehtäviä toimintoja. Nämä painikkeet on usein järjestetty välilehtiin. Voit kiinnittää koko toimintoruudun avoimeksi. Vaihtoehtoisesti voit sen oletusasetukseksi tiivistämisen. Kun seuraavan kerran avaat sivun, Finance and Operations palauttaa toimintoruudun kiinnitetyn tilan. Jos toimintoruutu on kiinnitetty avoimeksi, Finance and Operations näyttää myös viimeksi käytettyjen toimintojen välilehden.
+- **Pikasuodattimet** – *Pikasuodatin* näkyy monien ruudukoiden yläpuolella. Pikasuodattimia voi käyttää ruudukon suodattamiseen valitun sarakkeen perusteella. Finance and Operations tallentaa sarakkeen, johon suodatus perustuu. Kun avaat seuraavan kerran sivun, jolla kyseinen ruudukko on, ruudukko suodatetaan saman sarakkeen perusteella. Voit kuitenkin suodattaa ruudukon tämän jälkeen toisen sarakkeen perusteella.
+- **Sarakeotsikon suodattimet** – Kun ruudukkoa suodatetaan *sarakeotsikon suodattimilla*, suodatinoperaattori voidaan tarvittaessa vaihtaa etsittävien tietojen mukaan. Voit esimerkiksi vaihtaa operaattorin **alkaa** operaattoriksi **on täsmälleen**. Aina kun käytät sarakeotsikon suodatinta ja muokkaa suodatinoperaattoria, Finance and Operations tallentaa muutoksen. Tämän jälkeen suodatinoperaattori palautetaan, kun suodatat kyseistä saraketta seuraavan kerran.
+- **Siirtymisruutu** – Voit avata *navigointiruudun* valitsemalla **Valikko**-painikkeen minkä tahansa sivun vasemmassa ruudussa. (**Valikko**-painikkeessa on *allekkain* *useita* *viivoja*.) Voit kiinnittää siirtymisruudun avoimeksi tai pitää sen oletusarvoisesti tiivistettynä. Kun olet kiinnittänyt siirtymisruudun avoimeksi, Finance and Operations pitää sen avoimena siihen asti, että tiivistät sen.
 
-- **Pikavälilehdet** - Joillain sivuilla on laajennettavia osioita, joita kutsutaan *pikavälilehdiksi*. Finance and Operations tallentaa tiedon, mitkä pikavälilehdet olet laajentanut ja mitkä pikavälilehdet olet tiivistänyt. Aina palatessasi sivulle samat pikavälilehdet laajennetaan tai tiivistetään edellisen käyttökertasi perusteella. Tässä artikkelissa kerromme, miten voit muuttaa pikavälilehtien osioiden järjestystä. Joissain tapauksissa pikavälilehden tiivistäminen parantaa suorituskykyä, koska Finance and Operationsin ei tarvitse noutaa tietoja kyseistä pikavälilehteä varten ennen kuin se laajennetaan. 
+## <a name="explicit-personalizations"></a>Eksplisiittiset mukautukset
+Tietojen tärkeys vaihtelee käyttäjä- ja yrityskohtaisesti. Toisin sanoen tiedot, jotka ovat välttämättömiä jollekin ovat liiketoiminnan kannalta merkityksettömiä jollekin toiselle. Finance and Operationsin on mahdollista muokata tapaa, jolla tiedostot järjestetään ja miten niitä käytetään. Voit myös määrittää tietyt tiedot piilotettaviksi. Nämä ominaisuudet ovat esimerkkejä eksplisiittisistä mukautuksista, ja ne ovat ratkaisevan tärkeitä henkilökohtaisen ja tuottavan kokemuksen kannalta. Eksplisiittinen mukauttaminen on mukauttamista, jonka nimenomaisena tarkoituksena on muuttaa elementin tai sivun ulkoasua tai toimintaa.
 
-- **Tietoruudut** - Joillain sivuilla on osioita, joita kutsutaan *tietoruuduiksi*. Tämä ruutu sisältää kyseisen sivun aihepiiriin liittyvää tietoa vain-luku-muodossa. Kutakin Tietoruutu-osion osa kutsutaan Tietoruuduksi. Voit laajentaa tai tiivistää Tietoruudun, ja Finance and Operations tallentaa valintasi. Joissain tapauksissa tietoruudun tiivistäminen parantaa suorituskykyä, koska Finance and Operationsin ei tarvitse noutaa tietoja kyseistä tietoruutua varten ennen kuin se laajennetaan.
+### <a name="shortcut-menu-options"></a>Pikavalikkovaihtoehdot
+Pikavalikkojen avulla sivua voi eksplisiittisesti muuttaa muutamalla tavalla siten, että se vastaa paremmin omia tai yrityksen vaatimuksia. (Pikavalikkoa kutsutaan myös *hiiren kakkospainikkeella avattavaksi valikoksi* ja *tilannevalikoksi*.)
 
-## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Eksplisiittinen mukauttaminen Mukauttaminen-työkalurivin avulla
-Jokaisella henkilöllä ja yrityksellä on eri perspektiivi siihen, mitkä tiedot ovat heille tärkeimpiä, tai mitkä tiedot eivät ole tarpeen heidän tavassaan harjoittaa liiketoimintaa. Mahdollisuus muokata tapaa, jolla tiedot järjestetään, miten niiden kanssa ollaan vuorovaikutuksessa tai jopa miten ne piilotetaan, on avain siihen, miten Finance and Operationsista tehdään henkilökohtainen ja tuottava kokemus. 
+Tietyt tavallisimmat ja tärkeimmät sivulle tehtävät muutokset ovat käytettävissä suoraan pikavalikon vaihtoehtoina. Ruudukon sarakkeita voi esimerkiksi lisätä tai piilottaa kätevästi napsauttamalla sarakeotsikkoa hiiren kakkospainikkeella ja valitsemalla sitten **Lisää sarakkeita** tai **Piilota tämä sarake**.
 
-Eksplisiittinen mukauttaminen on mukauttamista, jonka suoritat nimenomaisena tarkoituksenasi muuttaa elementin tai sivun ulkonäköä valitsemalla mukauttamisvalikko. Perustasollaan eksplisiittistä mukauttamista on, kun napsautat elementtiä hiiren oikealla painikkeella ja valitset **Mukauta**. (Huomaa, että kaikkia sivusi elementtejä ei voida mukauttaa.). Kun valitset tämän mukauttamistavan, näet elementin ominaisuusikkunan. 
+Lisäksi eksplisiittisen mukauttamisen yleisimmät tyypit saa käyttöön napsauttamalla elementtiä hiiren kakkospainikkeella ja valitsemalla **Mukauta**. (Huomaa, että kaikkia sivun elementtejä ei voida mukauttaa.). Kun valitset tämän mukauttamistavan, elementin ominaisuusikkuna tulee näkyviin.
 
-[![Elementin ominaisuuksien mukauttaminen](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg) 
+[![Elementin ominaisuuksien mukauttaminen](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
 
-Voit mukauttaa sivun elementtiä tällä tavoin, jos haluat vain muuttaa elementin otsikkoa, piilottaa elementin niin, että se ei näy sivulla (mitään tietoja ei muuteta, mutta tiedot eivät ole näkyvissä), sisällyttää tiedot pikavälilehden yhteenveto-osioon (jos elementti on pikavälilehdessä), ohittaa kentän sarkaimella siirryttäessä tai määrittää sen niin, ettei tietoja ei voi muuttaa, liittämällä siihen Älä muokkaa -merkinnän. 
+Voit mukauttaa elementtiä ominaisuusikkunassa seuraavilla tavoilla:
 
-Kun haluat siirtää tai piilottaa elementtejä tai tehdä useita muutoksia, voit käyttää Mukautus-työkaluriviä, joka on käytettävissä elementin Ominaisuusikkunasta valitsemalla **Mukauta tämä lomake**. Mukauttamisen työkaluriviä voi käyttää myös lomakkeen toimintoruudussa **Asetukset**-välilehden **Mukautus**-ryhmässä. Valitse **Mukauta tätä lomaketta**, jolloin esiin tulee työkalurivi. 
+- Elementin otsikon muuttaminen.
+- Elementin piilottaminen niin, ettei se näy sivulla. Kentän tietoja ei poisteta eikä muokata. Tiedot eivät vain enää näy sivulla.
+- Pikavälilehden yhteenveto-osan tietojen sisällyttäminen (jos elementti on pikavälilehdessä).
+- Sivun kentissä liikkuminen ohittamalla kenttä sarkainpainetta painamalla.
+- (Minkä tahansa) kentän tietojen muokkauksen estäminen.
+
+Ominaisuusikkunassa voi olla elementin mukaan myös muita mukauttamisominaisuuksia. Ruudun ominaisuusikkunassa voi esimerkiksi olla mahdollista viedä kyseisen ruutu ylös koontinäyttöön, kun taas koontinäytön ominaisuusikkuna voi mahdollistaa uuden työtilan luonnin kyseissä koontinäytössä.
+
+### <a name="the-personalization-toolbar"></a>Mukauttamisen työkalurivi
+Voit käyttää **mukauttamisen** työkaluriviä elementtien siirtämiseen tai piilottamiseen tai useiden muutosten tekemiseen sivulle. Avaa **mukauttamisen** työkalurivi valitsemalla **Mukauta tämä lomake** elementin ominaisuusikkunassa. Voit valita **Mukauta tämä lomake** -vaihtoehdon myös kunkin sivun **Asetukset**-välilehden **Mukauta**-ryhmässä.
 
 [![Mukauttamisen työkalurivi](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Mukauttaminen-työkalurivi sisältää useita mukauttamistoimintoja. 
+Kun **mukauttamisen** työkalurivi on avattu, sivu ei ole vuorovaikutteinen. Et siis voi antaa tietoja etkä laajentaa tai tiivistää osioita. Voit vain muuttaa elementtejä, joista sivu koostuu.
 
-- Napsauta **Valitse**-työkalua, kun haluat valita ja muuttaa useiden elementtien ominaisuuksia yksi kerrallaan. Napsauta ensin Valitse-työkalua ja valitse sitten elementti, jonka ominaisuuksia haluat muokata. Kun valitset elementin, sen ominaisuusikkuna avautuu ja voit muokata elementin kaikkia ominaisuuksia. Voit toistaa prosessin muille lomakkeesi elementeille, jotka ovat mukautettavissa. Joissain tapauksissa voit valita elementin ja huomaat, että joitain ominaisuuksia ei voida muokata. Tämä tarkoittaa, että elementin nykyisen käyttötavan perusteella Finance and Operations ei anna muuttaa kyseistä ominaisuutta. Et esimerkiksi voi piilottaa kenttää, jota tarvitaan. 
+**Mukauttamisen** työkalurivillä on seuraavat työkalut:
 
-- Valitse **Siirrä**-työkalu, kun haluat valita ja siirtää elementin toiseen sijaintiin nykyisen elementtiryhmän sisällä. (Et voi siirtää elementtiä sen pääryhmän ulkopuolelle). Napsauta ensin Siirrä-työkalua ja valitse sitten elementti, jonka haluat siirtää. Kun napsautat siirrettävää elementtiä, Finance and Operations skannaa lomakkeen ja määrittää, minne tämä elementti voidaan siirtää. Tämän jälkeen sovellus luo sarjan pudotusvyöhykkeitä, jotka näytetään värillisenä, lihavoituna rivinä sen alueen vieressä, mihin elementti voidaan pudottaa, kun vedät sitä nykyisen ryhmän sisällä. 
+- Valitse elementin ominaisuuksia ja muuta niitä **Valitse**-työkalulla. Valitse ensin **Valitse**-työkalu ja sitten elementti, jonka ominaisuuksia muokataan. Kun valitset elementin, sen ominaisuusikkuna avautuu ja voit muokata elementin kaikkia ominaisuuksia. Voit toistaa prosessin muille kyseisen sivun mukautettaville elementeille. Tiettyjen elementtien käyttötavan vuoksi Finance and Operations ei kuitenkaan salli niiden tiettyjen ominaisuuksien muuttamista. Näin ollen on mahdollista, että kaikkia valitun elementin ominaisuuksia ei voi muokata. Et voi esimerkiksi piilottaa pakollista kenttää.
+- Voit siirtää elementin **Siirrä**-työkalulla toiseen sijaintiin nykyisen elementtiryhmän sisällä. (Et voi siirtää elementtiä sen pääryhmän ulkopuolelle.) Valitse ensin **Siirrä**-työkalua ja sitten siirrettävä elementti. Kun valitset elementin, Finance and Operations tarkistaa sivun ja määrittää, mihin elementti voidaan siirtää. Tämän jälkeen se luo pudotusalueita. Kun vedät elementtiä valitussa ryhmä, värillinen lihavoitu viiva osoittaa pudotusalueen, johon elementti voidaan pudottaa.
+- Voit piilottaa elementin sivulla **Piilota**-työkalulla. Valitse ensin **Piilota**-työkalua ja sitten piilotettava elementti. Kun valitset **Piilota**-työkalun, kaikki tällä hetkellä piilotettuna olevat elementit tulevat näkyviin varjostetussa säilössä. Voit sitten tuoda ne esiin. Valitsemalla **Valitse**-työkalun näet, miltä sivu näyttää, kun valitut elementit piilotetaan.
+- Jos haluat elementit näkyvän pikavälilehden yhteenveto-osassa, käytä **Yhteenveto**-työkalua. Yhteenvetotyökalu koskee vain pikavälilehtiosiossa olevia kenttiä. Kun valitset **Yhteenveto**-työkalun, kaikki yhteenvetokentiksi valitut kentät näkyvät varjostetussa säilössä. Voit lisätä kenttiä vuorovaikutteisesti pikavälilehden yhteenvetoon ja poistaa kenttiä niistä valitsemalla kenttiä.
+- Voit poistaa elementin nykyisen sivun näppäimistön sarkaimella tehtävistä valinnoista **Ohita**-työkalulla. Kun valitset **Ohita**-työkalun, kaikki tällä hetkellä ohitettavat elementit näkyvät varjostetussa säilössä. Voit sitten lisätä ne takaisin sarkaimella tehtäviin valintoihin.
+- Voit merkitä **Muokkaa**-työkalulla. onko elementti muokattavissa vai ei. Kun valitset **Muokkaa**-työkalun, kaikki tällä hetkellä ei-muokattavat elementit näkyvät varjostetussa säilössä. Voit sitten määrittää ne takaisin muokattaviksi. Huomaa, että osa kentistä on pakollisia, jolloin niiden muokkaamista ei voi estää. Näiden kenttien vieressä on lukkokuvake.
+- Saat **Lisää**-painikkeella näkyviin luettelon sivulle lisättävistä elementeistä.
 
-- Valitse **Piilota**-työkalu, kun haluat valita ja piilottaa elementin. Piilota elementti valitsemalla Piilota-työkalu ja napsauttamalla sitten elementtiä, jonka haluat piilottaa. Kun valitset Piilota-työkalun, kaikki sillä hetkellä piilotetut elementit tulevat näkyviin varjostettuun säilöön niin, että voit valita elementin, jonka piilotuksen haluat perua. 
+    - Lisää kenttä sivulle valitsemalla **Kenttä**-työkalu **Lisää**-kohdassa. Voit lisätä **Kenttä**-työkalulla vain kenttiä, jotka sisältyvät sivumääritykseen mutta joita ei tällä hetkellä näytetä sivulla. Lisätietoja nykyisen sivumääritelmän ulkopuolisten uusien kenttien luomisesta on kohdassa [Mukautetut kentät](user-defined-fields.md). Sinun on valittava **Kenttä**-työkalun valinnan jälkeen ensin ryhmä tai alue, johon haluat lisätä kentän. Valintaikkunassa on luettelo valittuun ryhmään tai alueeseen liittyvistä kentistä. Valitse valintaluettelossa ensin vähintään yksi lisättävä kenttä ja sitten **Lisää**. Voit poistaa aiemmin lisätyn kentän toistamalla edellä mainitut vaiheet mutta poistamalla valintaikkunassa kentän valinnan.
+    - Valitse **PowerApp**-työkalu **Lisää**-kohdassa, jos haluat upottaa sivulla Microsoft PowerAppsilla luodun sovelluksen. Lisätietoja PowerApps-sovelluksen upottamisesta sivulle on kohdassa [PowerApps-sovellusten upottaminen](embed-power-apps.md).
 
-- Napsauta **Valitse**-työkalua niin näe, miltä sivu tulee näyttämään, kun valitut elementit on piilotettu. 
+- Valitsemalla **Hallinta**-painikkeen näet luettelon hallintavaihtoehdoista, jotka liittyvät kaikkiin nykyisen sivun mukautuksiin.
 
-- Valitse **Yhteenveto**-työkalu, kun haluat näyttää numeerisen tai merkkijonokentän pikavälilehden yhteenvetoalueella. Yhteenvetotyökalu koskee vain kenttiä, jotka sisältyvät pikavälilehtiosioon. Kun valitset yhteenvetotyökalun, Finance and Operations näyttää kaikki kentät, jotka on valittu yhteenvetokentiksi sisällyttämällä ne varjostettuun säilöön. Voit lisätä ja poistaa kenttiä interaktiivisesti pikavälilehden yhteenvedosta napsauttamalla kenttää. 
+    - Palauta sivu oletusasennustilaan valitsemalla **Tyhjennä**. Kaikki nykyisen sivun mukautukset tyhjennetään. Tätä toimintoa ei voi kumota. Käytä tätä vaihtoehtoa tämän vuoksi vain silloin, kun olet varma, että haluat palauttaa sivun alkuperäiset asetukset.
+    - Voit ladata mukautuksen sivulle aiemmin luodusta tiedostosta valitsemalla **Tuo**. Kaikki sivulla olevat mukautukset korvataan valitun tiedoston mukautuksilla.
+    - Voit tallentaa sivun mukautukset tiedostoon valitsemalla **Vie**. Voit jakaa mukautuksesi muiden käyttäjien kanssa. Kyseisten käyttäjien tarvitsee vain tuoda sivun mukautukset sisältävä tiedosto.
 
-- Valitse **Ohita** -työkalu poistaaksesi elementin sivun Näppäimistö-välilehden sarjasta. Kun valitset Ohita-työkalun, kaikki sillä hetkellä ohitetut elementit näytetään varjostetussa säilössä niin, että voit valita ne uudelleen ja tehdä niistä osan välilehden sarjaa valitsemalla ohitetun elementin. 
+- Sulje **mukauttamisen** työkalurivi valitsemalla **Sulje**-painike. Sivu palautuu nyt alkuperäiseen vuorovaikutteiseen tilaan.
 
-- Valitse **Muokkaa**-työkalu, kun haluat merkitä elementin *Muokattavaksi* tai *Ei-muokattavaksi*. Kun valitset Muokkaa-työkalun, kaikki sillä hetkellä ei-muokattavat elementit tulevat näkyviin varjostettuun säilöön niin, että voit muuttaa ne muokattaviksi valitsemalla ne. Huomaa, että joitain kenttiä tarvitaan eikä niiden muokkaamista voida estää. Näiden kenttien vieressä näkyy riippulukkokuvake. 
+**Mukauttamisen** työkaluriviä käytettäessä tallennustoiminnot ovat implisiittisiä. Mukautukset otetaan käyttöön heti, kun ne on tehty, eikä sinun tarvitse valita **Tallenna**-painiketta. Joissain tapauksissa työkalua valittaessa elementin vieressä näkyy lukkokuvake. Tämä kuvake ilmaisee, että valittuun työkaluun liittyviä elementin ominaisuuksia ei voi muokata, koska kyseisten ominaisuuksien muutokset estävät sivun odotetun toiminnan.
 
-- Valitse **Lisää**-työkalu lisätäksesi kentän sivullesi. Et voi luoda uutta kenttää lisäystyökalulla, mutta voit lisätä kenttiä, jotka ovat osa nykyistä sivun määritystä mutta joita ei näytetä sivulla. Kun valitset lisäystyökalun, sinun on ensin valittava ryhmä tai alue, johon haluaisit lisätä kentän. Valintaikkunassa näytetään luettelo kentistä, jotka liittyvät valitsemaasi osioon. Tässä valintaikkunassa voit valita yhden tai useampia lisättäviä kenttiä. Valitse sitten **Lisää**. Jos haluat myöhemmin poistaa aiemmin lisäämäsi kentän, toista prosessi mutta tyhjennä valinta kentästä, jonka aiemmin lisäsit. 
+### <a name="adding-a-tile-list-or-link-to-a-workspace"></a>Ruudun, luettelon tai linkin lisääminen työtilaan
+Joillakin luetteloja sisältävillä sivuilla on käytössä lisämukautusominaisuus. Toimintoruudun **Asetukset**-välilehden **Mukauta**-ryhmän **Lisää työtilaan** -painikkeella voi näyttää nykyisen luettelon tiedot tietyssä työtilassa. Voit näyttää tietojen suodatetun tai lajitellun näkymän työtilassa. Vaihtoehtoisesti voit näyttää oletusnäkymän. Voit myös määrittää, näkyvätkö tiedot työtilassa luettelona, luettelon nimikkeiden määrän näyttävänä yhteenvetoruutuna vai linkkinä.
 
-- Valitse **Hallinta**-painike nähdäksesi luettelon senhetkisen sivun kaikkien mukautusmahdollisuuksien hallintavaihtoehdoista. 
+[![Lisää työtilaan](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
-- Valitse **Tyhjennä** palauttaaksesi sivun oletusasennustilaan. Kaikki senhetkisen sivun mukautukset tyhjennetään. Tälle ei ole kumoa-toimintoa, joten käytä tätä vaihtoehtoa vain, kun olet varma, että haluat palauttaa sivusi asetukset. 
+- Voit lisätä luettelon työtilaan lajittelemalla tai suodattamalla luettelon ensin sivulla niin, että tiedot näkyvät siinä muodossa kuin haluat niiden näkyvän työtilassa. Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Luettelo**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit valita työtilan luettelossa näytettävät sarakkeet. Voit myös määrittää työtilan luettelossa käytettävän otsikon.
+- Voit lisätä ruudun työtilaan suodattamalla ensin sivun luettelon niin, että se näyttää vain tiedot, joista haluat yhteenvedon tai joita haluat käyttää nopeasti. Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Ruutu**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit määrittää ruudun työtilassa käytettävän otsikon. Voit myös määrittää, näytetäänkö määrä ruudussa. Kun ruutu on lisätty työtilaan, voit ruudun valitsemalla avata nykyisen sivun työtilasta ja näyttää ruutuun liitetyn suodatetun luettelon.
+- Voit lisätä linkin työtilaan suodattamalla ensin sivun luettelon näyttämään vain ne tiedot, joista olet kiinnostunut. Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Linkki**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit määrittää linkin otsikon. Voit myös määrittää otsikon uudelle, tämän linkin sisältävälle osalle otsikon (valinnainen).
 
-- Valitse **Tuo** käyttääksesi mukautusta mukauttamistiedostosta, jonka sinä tai joku muu on luonut sivulle aikaisemmin. Mukautusten tuominen tyhjentää kaikki koko sivulla suorittamasi mukautukset ja niiden sijaan käytetään valitusta tiedostosta tulevia mukautuksia. Jos haluat tallentaa tai jakaa mukautuksen, valitse **Vie**-vaihtoehto tallentaaksesi mukautukset tiedostoon. 
+Kun luettelo, ruutu tai linkki on lisätty työtilaan, voit avata kyseisen työtilan ja muuttaa sen elementtien järjestystä tarpeen mukaan.
 
-- Valitse **Sulje**-painike sulkeaksesi työkalurivin ja palauttaaksesi sivun sen alkuperäiseen vuorovaikutteiseen tilaan. 
+### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Yhteenvedon lisääminen työtilasta koontinäyttöön
+Joissakin työtiloissa on lukumääräruutuja (ruutuja, joissa on numeroita). On mahdollista, että haluat nähdä kyseiset ruudut myös koontinäytössä. Napsauta työtilassa lukumääräruutua hiiren kakkospainikkeella ja valitse sitten **Mukauta**. Valitse sitten ruudun ominaisuusikkunassa **Kiinnitä koontinäyttöön**. Kun seuraavan kerran avaat (ja päivität) valitun koontinäytön, lukumäärä näkyy kyseisen työtilan siirtymisruudun alapuolella. Voit valita, että tämä lukumäärä, siirtyy suoraan tietoihin, joihin se viittaa.
 
-Mukauttaminen-työkaluriviä käytettäessä tallentaminen on implisiittistä. Mukautuksesi tulevat voimaan heti, kun olet tehnyt ne, eikä **Tallenna**-painiketta tarvitse napsauttaa. Joissain tapauksissa näet riippulukon kuvan elementin vieressä, kun valitset työkalun. Tämä tarkoittaa, että sivun oikein toimiminen edellyttää, että valittuun työkaluun liittyviä ominaisuuksia ei muuteta. Kun Mukauttaminen-työkalu avataan, sivusta tulee ei-vuorovaikutteinen. Et voi syöttää tietoja etkä laajentaa tai tiivistää osioita.
+### <a name="personalizing-your-dashboard"></a>Koontinäytön mukauttaminen
+Koontinäyttö on usein ensimmäinen sivu, jonka näet, kun avaat Finance and Operationsin. Voit mukauttaa koontinäytön näyttämään vain ne työtilaruudut, jotka haluat nähdä. Voit myös järjestää ruudut itsellesi sopivaan järjestykseen, nimetä työtilan siirtymisruudut uudelleen tai lisätä täysin uuden työtilan ruudun.
 
-## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Eksplisiittinen mukauttaminen: Ruudun tai luettelon lisääminen työtilaan
-Joillain luetteloja sisältävillä sivuilla on käytettävissä mukauttamisen lisätoiminto sen toimintoruudussa **Mukauttaminen**-ryhmän **Asetukset**-välilehdessä. Valitse **Lisää työtilaan** avataksesi avattavan luettelon, jonka avulla voit näyttää työtilassa nykyisen luettelosi tiedot (suodatettuina ja lajiteltuina tai oletusmuotoisina) luettelon tai yhteenvetoruudun muodossa (jota voidaan käyttää näyttämään luettelossa olevien nimikkeiden lukumäärä). 
+Voit mukauttaa koontinäyttöä napsauttamalla jotakin ruutua hiiren kakkospainikkeella ja avata sitten ruudun ominaisuusikkunan valitsemalla **Mukauta**-vaihtoehdon.
 
-[![Lisää työtilaan](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
-
-Voit lisätä luettelon työtilaan lajittelemalla tai suodattamalla luettelon ensin tietojen avulla sellaiseksi, jollaisena haluat nähdä sen työtilassa. Valitse sitten **Lisää työtilaan** -valintaikkuna. Valitse seuraavaksi haluamasi työtila ja valitse sitten **Luettelo** **Esitys**-nimisestä avattavasta luettelosta. Kun valitset vaihtoehdon **Luettelo**, avautuu valintaikkuna, jonka avulla voit valita sarakkeet, jotka haluat nähdä luettelossa sekä luettelon otsikon siten, kuin se tulee näkymään työtilassa. 
-
-Lisää ruutu työtilaan suodattamalla luettelo niin, että se näyttää tiedot, joiden yhteenvedon haluat nähdä (tai joita haluat päästä käyttämään nopeasti). Avaa sitten **Lisää työtilaan** -valintaikkunan valikko. Valitse seuraavaksi haluamasi työtila ja valitse sitten **Ruutu** **Esitys**-nimisestä avattavasta luettelosta. Kun valitset **Ruutu**, aukeaa valintaikkuna, jonka avulla voit antaa ruudulle otsikon ja päättää, näyttääkö ruutu lukumäärän. Kun ruutu sijoitetaan työtilaan, voit sen avulla avata nykyisen sivun työtilasta ja näyttää kyseiseen ruutuun liittyvien tietojen luettelon. 
-
-Kun luettelosi tai ruutusi on lisätty työtilaan, voit avata kyseisen työtilan ja järjestää luettelon tai ruudun uudelleen sen ryhmän sisällä, johon se on sijoitettu.
-
-## <a name="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard"></a>Eksplisiittinen mukauttaminen: Yhteenvedon lisääminen työtilasta koontinäyttöön
-Joissain työtiloissa on lukumääräruutuja (ruutuja, joissa on numeroita), jotka haluaisit nähdä myös koontinäytössäsi. Napsauta työtilassa hiiren kakkospainikkeella **Mukauta** ja valitse **Kiinnitä koontinäyttöön**. Kun seuraavan kerran siirryt valittuun koontinäyttöön (ja päivität sen), näet, kyseisen lukumäärän kyseessä olevan työtilan siirtymisruudun alapuolella koontinäytössä.
-
-## <a name="explicit-personalization-personalizing-your-dashboard"></a>Eksplisiittinen mukauttaminen: Koontinäyttösi mukauttaminen
-Koontinäyttö on usein ensimmäinen sivu, jonka näet, kun avaat Finance and Operationsin. Voit mukauttaa koontinäytön nimeämällä uudelleen työtilasi siirtymisruudut, näyttämällä vain haluamasi ruudut, nimeämällä ruudut uudelleen, tai järjestämällä ruudut haluamaasi järjestykseen. 
-
-Mukauta koontinäkymä valitsemalla mikä tahansa ruutu ja avaa kontekstivalikko napsauttamalla hiiren oikealla painikkeella. Valitse kontekstivalikossa **Mukauta**. Jos valittu ruutu on se, jonka haluaisit piilottaa, nimetä uudelleen tai ohittaa, voit tehdä muutoksen suoraan esiin tulleessa Ominaisuudet-ikkunassa. Jos haluat järjestää ruudut, valitse **Mukauta tämä lomake** Ominaisuudet-ikkunassa avataksesi Mukauttaminen-työkalurivin. Tämän jälkeen voit järjestää ruudut **Siirrä**-työkalun avulla.
+- Jos haluat piilottaa valitun ruudun tai nimetä sen uudelleen, muutos on tehtävä suoraan ominaisuusikkunassa.
+- Voit muuttaa työtilan ruutujen järjestystä valitsemalla ominaisuusikkunassa **Mukauta tämä lomake**, jolloin **mukauttamisen** työkalurivi avautuu. Voit sitten järjestää ruudut haluallasi tavalla **Siirrä**-työkalulla.
+- Voit luoda uuden työtilan ruudun valitsemalla ominaisuusikkunassa **Lisää työtilaan**. Uusi työtilan ruutu luodaan koontinäytön alareunaan. Voit nimetä tämän uuden työtilan ruudun haluamallasi tavalla. Voit myös lisätä luetteloita, ruutuja ja linkkejä työtilaa aiemmin tämän ohjeaiheen kohdassa [Luetteloiden, ruutujen tai linkkien lisääminen työtilaan](personalize-user-experience.md#adding-a-tile-list-or-link-to-a-workspace) kuvatulla tavalla.
 
 ## <a name="administration-of-personalization"></a>Mukauttamisen hallinta
-Kun olet mukauttanut sivun, voit jakaa mukautukset muiden käyttäjien kanssa viemällä mukautetun sivun. Tämän jälkeen voit pyytää käyttäjiä siirtymään mukautetulle sivulle ja tuomaan luomasi mukautustiedoston. Voit myös antaa mukautuksesi käyttäjälle, jolla on järjestelmänvalvojan oikeudet. Tämän jälkeen käyttäjä voi käyttää mukautusta useilla käyttäjällä yhdellä kertaa.
+Kun olet mukauttanut sivun, voit jakaa mukautukset muiden käyttäjien kanssa viemällä mukautetun sivun. Voit sitten pyytää käyttäjiä avaamaan mukautetun sivun ja tuomaan luodun mukautustiedoston. Vaihtoehtoisesti voit antaa mukautuksen käyttäjälle, jolla on järjestelmänvalvojan oikeudet. Tämä käyttäjä voi sitten ottaa mukautustiedoston käyttöön useille käyttäjille samanaikaisesti.
 
-Jos käyttäjällä on järjestelmänvalvojan oikeudet, hän voi myös hallita muiden käyttäjien mukautuksia **Mukautukset**-sivulla. Sivulla on neljä välilehteä: 
+Jos käyttäjällä on järjestelmänvalvojan oikeudet, hän voi myös hallita muiden käyttäjien mukautuksia **Mukautukset**-sivulla. Sivulla on neljä välilehteä:
 
-- **Käytä** – Voit tuoda tai valita yhden tai usean käyttäjän mukautuksen. Voit käyttää mukautusta yhdelle tai usealle käyttäjälle, kun valitset roolin sekä kyseisen roolin käyttäjät. Valitse sitten aiemmin luotu mukautus tai tuo mukautustiedosto, jota haluat käyttää valitsemillesi käyttäjille. Mukautuksen oikeellisuus tarkistetaan ja sitä käytetään kaikille käyttäjille, kun he seuraavan kerran avaavat valitun sivun.
-
-- **Tyhjennä** – Voit tyhjentää yhden tai usean käyttäjän sivun tai työtilan mukautukset. Valitse sivu ja tarkastele sivua mukauttaneiden käyttäjien luetteloa. Valitse sitten käyttäjät, joiden sivun mukautukset tulee poistaa, ja valitse **Tyhjennä**. Kaikki mukautukset, joita valitut käyttäjät ovat käyttäneet valitulla sivulla tai valitussa työtilassa, poistetaan. Tätä toimintoa ei voi kumota. Jos sivulla tai työtilassa on kuitenkin tallennettuja mukautuksia, nämä mukautukset voidaan tuoda uudelleen.
-
-- **Käyttäjäkohtainen esimies** – Valitse käyttäjä, kun haluat tarkastella käyttäjän mukauttamien sivujen luetteloa.  Tämän jälkeen voit antaa käyttäjälle tietyn sivun tai koko järjestelmän mukautusten käyttöoikeuden tai poistaa mukautusten käyttöoikeuden käytöstä.  Voit myös tuoda, viedä tai poistaa tämän käyttäjän mukautuksen.
-
-- **Järjestelmä** – Voit poistaa tässä välilehdessä kaikkien järjestelmän käyttäjien mukautukset tilapäisesti. Tämä ei poista mukautuksia, vaan palauttaa kaikkien käyttäjien kaikki sivut oletusarvoiseen tilaan. Jos otat mukautukset myöhemmin uudelleen käyttöön, kaikkia mukautuksia käytetään uudelleen. Voit poistaa tässä välilehdessä kaikkien järjestelmän käyttäjien mukautukset myös pysyvästi. Muista viedä kaikki myöhemmin mahdollisesti käytettävät mukautukset ennen tämän vaiheen suorittamista, koska poistettuja mukautuksia ei voi palauttaa myöhemmin. 
+- **Käytä** – Voit tuoda tai valita yhden tai usean käyttäjän mukautuksen. Jos mukautus otetaan käyttöön yhdelle tai usealle käyttäjälle, ensiksi valitaan rooli ja käyttäjät, joilla tämä rooli on. Valitse sitten joko aiemmin luotu mukautus, jota haluat käyttää valituille käyttäjille, tai tuo mukautustiedosto. Mukautuksen oikeellisuus tarkistetaan ja sitä käytetään kaikille käyttäjille, kun he seuraavan kerran avaavat valitun sivun.
+- **Tyhjennä** – Voit tyhjentää yhden tai usean käyttäjän sivun tai työtilan kaikki mukautukset. Valitse ensin sivu tai työtila. Näet nyt luettelon käyttäjistä, jotka ovat mukauttaneet sitä. Valitse sitten käyttäjät, joiden sivun tai mukautukset on tyhjennettävä. Valitse lopuksi **Tyhjennä**. Kaikki mukautukset, joita valitut käyttäjät ovat käyttäneet valitulla sivulla tai valitussa työtilassa, poistetaan. Tätä toimintoa ei voi kumota. Jos sivulla tai työtilassa on kuitenkin tallennettuja mukautuksia, nämä mukautukset voidaan tuoda uudelleen.
+- **Käyttäjäkohtainen esimies** – Valitse käyttäjä, kun haluat tarkastella käyttäjän mukauttamien sivujen luetteloa. Voit sitten antaa käyttäjälle tietyn sivun tai koko järjestelmän mukautusten käyttöoikeuden tai poistaa mukautusten käyttöoikeuden käytöstä. Voit myös tuoda, viedä tai tyhjentää valitun käyttäjän mukautuksen.
+- **Järjestelmä** – Voit poistaa tässä välilehdessä kaikkien järjestelmän käyttäjien mukautukset tilapäisesti. Siinä tapauksessa mukautuksia ei kuitenkaan poisteta. Kaikkien käyttäjien kaikki sivut vain palautetaan alkuperäisiin asetuksiin. Jos otat mukautukset myöhemmin uudelleen käyttöön, kaikkia mukautuksia käytetään uudelleen. Voit poistaa tässä välilehdessä kaikkien järjestelmän käyttäjien mukautukset myös pysyvästi. Poistettuja mukautuksia ei voida palauttaa. Varmista tämän vuoksi ennen tämän tehtävän suorittamista, että olet vienyt kaikki ne mukautukset, jotka ehkä tarvitset myöhemmin.
 
 ## <a name="personalization-of-inventory-dimensions"></a>Varastodimensioiden mukauttaminen
 
-Kun mukautat varastodimension asetuksia sivulla, pidä mielessä **Näytä dimensio** -asetuksen avulla luodut asetukset. Jos esimerkiksi piilotat eränumeron varastodimension sarakkeen mukauttamalla ja sarake näkyy, kun sivu avataan seuraavan kerran, syynä voi olla se, että dimension näyttöasetukset määrittävät, mitkä varastodimension sarakkeet näytetään. 
+Kun mukautat varastodimension asetuksia sivulla, pidä mielessä **Näytä dimensio** -asetuksen avulla luodut asetukset. Voit esimerkiksi piilottaa eränumeron varastodimension sarakkeen mukautuksen avulla. Sarake kuitenkin näkyy, kun sivu avataan seuraavan kerran. Tämä on mahdollista, koska **dimension näyttöasetukset** määrittävät varastodimension näytettävät sarakkeet.
 
-Dimension näyttöasetuksia käytetään kaikilla sivulla, ja nämä asetukset korvaavat kaikki yksittäisten sivujen mukautetut varastodimension kenttien asetukset. 
+**Dimension näyttöasetuksia**käytetään kaikilla sivulla, ja ne korvaavat kaikki yksittäisten sivujen mukautetut varastodimension kenttien asetukset.
 
-Eränumeron varastodimension esimerkissä kyseinen dimensio olisi poistettava taulukon **Näytä dimensiot** -asetuksesta, jotta se ei näkyisi. Silloin tätä muutosta käytettäisiin tietyn sivun lisäksi kaikilla sivuilla.
+Jos et siis halua edellisessä esimerkissä, että eränumeron varastodimension sarake näkyy, kyseisen dimension valinta on poistettava taulukon **Näytä dimensiot** -vaihtoehdon osana. Tämän jälkeen tätä muutosta käytetään tietyn sivun lisäksi kaikilla sivuilla.
 

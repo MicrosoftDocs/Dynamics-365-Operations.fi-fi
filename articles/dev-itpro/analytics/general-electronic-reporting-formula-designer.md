@@ -3,7 +3,7 @@ title: "Kaavojen suunnittelutoiminto sähköisessä raportoinnissa"
 description: "Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3988c437afda3d57e56a03264d3c1588af497920
+ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
+ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/25/2018
 
 ---
 
@@ -223,7 +223,7 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 | DATEFORMAT (päivämäärä, muoto) | Palauttaa määritetyssä muodossa olevan määritetyn päivämäärän merkkijonon esityksen. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24-12-2015** määritetyn mukautetun muodon mukaisesti. |
 | DATEFORMAT (päivämäärä, muoto, maa-asetus) | Muunna määritetty päivämäärän arvo merkkijonoksi, joka on määritetyssä muodossa ja jolla on määritetyt [maa-asetukset](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24.12.2015** valitun Saksan maa-asetuksen mukaisesti. |
 | DAYOFYEAR (päivämäärä) | Palauttaa tammikuun 1. päivän ja määritetyn päivämäärän välisten päivien määrän kokonaislukuna. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** palauttaa arvon **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** palauttaa arvon **1**. |
-| DAYS (päivämäärä 1, päivämäärä 2) | Palauttaa ensimmäisen ja toisen määritetyn päivämäärän välisten päivien määrän. Palauttaa positiivisen arvon, kun ensimmäinen päivämäärä on myöhemmin kuin toinen päivämäärä, palauttaa arvon **0** (nolla), kun ensimmäinen päivämäärä on sama kuin toinen päivämäärä, tai palauttaa muuten negatiivisen arvon. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** palauttaa arvon **-1**. |
+| DAYS (päivämäärä 1, päivämäärä 2) | Palauttaa ensimmäisen ja toisen määritetyn päivämäärän välisten päivien määrän. Palauttaa positiivisen arvon, kun ensimmäinen päivämäärä on myöhemmin kuin toinen päivämäärä, palauttaa arvon **0** (nolla), kun ensimmäinen päivämäärä on sama kuin toinen päivämäärä. Palauttaa negatiivisen arvon, kun ensimmäinen päivämäärä on aikaisempi kuin toinen päivämäärä. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** palauttaa arvon **-1**. |
 
 ### <a name="data-conversion-functions"></a>Tietojen muuntotoiminnot
 
@@ -238,113 +238,125 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 ### <a name="list-functions"></a>Luettelotoiminnot
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Toiminto</th>
 <th>kuvaus</th>
 <th>Esimerkki</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>SPLIT (syöte, pituus)</td>
 <td>Jaa määritetty syötemerkkijono alimerkkijonoiksi, joilla on tietty pituus. Palauttaa tuloksen uutena luettelona.</td>
 <td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> palauttaa uuden luettelon. Luettelo sisältää kaksi tietuetta, joilla on <strong>STRING</strong>-kenttä. Ensimmäisen tietueen kenttä sisältää tekstin <strong>&quot;abc&quot;</strong> ja toisen tietueen kenttä tekstin <strong>&quot;d&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>SPLITLIST (luettelo, numero)</td>
 <td>Jaa määritetty luettelo eriksi, joissa on tietty määrä tietueita. Palauttaa tuloksen uutena eräluettelona, joka sisältää seuraavat elementit:
 <ul>
 <li>Erät tavallisina luetteloina (<strong>arvo</strong>-komponentti)</li>
 <li>Nykyinen eränumero (<strong>BatchNumber</strong>-komponentti)</li>
-</ul></td>
+</ul>
+</td>
 <td>Seuraavassa kuvassa <strong>Rivit</strong>-tietolähde luodaan kolmen tietueen tietueluetteloksi. Tämä luettelo on jaettu eriin, joista kussakin on enintään kaksi tietuetta.
 <p><a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
 <p>Seuraavassa kuvassa on suunnitellun muodon asettelu. Tässä muodon asettelussa sidonnat <strong>Rivit</strong>-tietolähde luodaan muodostamaan tulos XML-muodossa. Tämä tulos esittää kunkin erän erilliset solmut ja sen tietueet.</p>
 <p><a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a></p>
 <p>Seuraavassa kuvassa on tulos, kun suunniteltu muoto suoritetaan.</p>
-<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LIST (tietue 1 [, tietue 2, ...])</td>
 <td>Palauttaa uuden luettelon, joka on luotu määritetyistä argumenteista.</td>
 <td><strong>LIST (model.MainData, model.OtherData)</strong> palauttaa tyhjän tietueen, jonka sisältämä kenttäluettelo sisältää kaikki <strong>MainData</strong>- ja <strong>OtherData</strong>-tietueluettelon kentät.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTJOIN (luettelo 1, luettelo 2, ...)</td>
 <td>Palauttaa yhdistetyn luettelon, joka on luotu määritettyjen argumenttien luetteloista.</td>
 <td><strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> palauttaa kuuden tietueen luettelon, jossa yksi <strong>STRING</strong>-tietotyypin kenttä sisältää yksittäisiä kirjaimia.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ISEMPTY (luettelo)</td>
 <td>Palauttaa <strong>TOSI</strong>-arvon, jos määritetty luettelo ei sisällä yhtään elementtiä. Muussa tapauksessa palauttaa <strong>EPÄTOSI</strong>-arvon.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>EMPTYLIST (luettelo)</td>
 <td>Palauttaa tyhjän luettelon käyttämällä määritettyä luetteloa luettelorakenteen lähteenä.</td>
 <td><strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> palauttaa uuden tyhjän luettelon, jonka rakenne on sama kuin <strong>SPLIT</strong>-toiminnon palauttamalla luettelolla.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>FIRST (luettelo)</td>
 <td>Palauttaa määritetyn luettelon ensimmäisen tietueen, jos kyseinen tietue ei ole tyhjä. Muussa tapauksessa annetaan poikkeus.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>FIRSTORNULL (luettelo)</td>
 <td>Palauttaa määritetyn luettelon ensimmäisen tietueen, jos kyseinen tietue ei ole tyhjä. Muussa tapauksessa palauttaa <strong>tyhjän</strong> tietueen.</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIRSTITEM (luettelo)</td>
 <td>Palauttaa luettelon, joka sisältää vain määritetyn luettelon ensimmäisen nimikkeen.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>ALLITEMS (polku)</td>
-<td>Palauttaa uuden tasoitetun luettelon, joka edustaa kaikkia nimikkeitä, jotka vastaavat määritettyä polkua. Polku on määritettävä sallituksi tietolähteen poluksi tietueluettelo-tietotyypin tietolähteen elementtiin. Tietoelementit, kuten polun merkkijono ja päivämäärä, käynnistävät virheen ER-lausekkeenmuodostimessa suunnitteluaikana.</td>
+<td>Tämä toiminto suoritetaan muistin sisäisenä valintana. Se palauttaa uuden tasoitetun luettelon, joka edustaa kaikkia nimikkeitä, jotka vastaavat määritettyä polkua. Polku on määritettävä sallituksi tietolähteen poluksi tietueluettelo-tietotyypin tietolähteen elementtiin. Tietoelementit, kuten polun merkkijono ja päivämäärä, käynnistävät virheen ER-lausekkeenmuodostimessa suunnitteluaikana.</td>
 <td>Jos syötät tietolähteeksi (DS) <strong>SPLIT(&quot;abcdef&quot; , 2)</strong>, <strong>COUNT( ALLITEMS (DS.Value))</strong> palauttaa <strong>3</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
+<td>ALLITEMSQUERY (polku)</td>
+<td>Tämä toiminto suoritetaan liitettynä SQL-kyselynä. Se palauttaa uuden tasoitetun luettelon, joka edustaa kaikkia nimikkeitä, jotka vastaavat määritettyä polkua. Määritetty polku on määritettävä sallituksi tietolähteen poluksi tietueluettelo-tietotyypin tietolähteen elementtiin ja sen pitää sisältää vähintään yksi suhde. Tietoelementit, kuten polun merkkijono ja päivämäärä, käynnistävät virheen ER-lausekkeenmuodostimessa suunnitteluaikana.</td>
+<td>Määritä seuraavat tietolähteet omassa mallimäärityksessäsi:
+<ul>
+<li><strong>CustInv</strong> (<strong>Taulukkotietueet</strong>-tyypi), joka viittaa CustInvoiceTable-tauluun</li> 
+<li><strong>FilteredInv</strong> (<strong>Laskettu kenttä</strong> -tyyppi), joka sisältää lausekkeen <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;US-001&quot;)</strong></li>
+<li><strong>JourLines</strong> (<strong>Laskettu kenttä</strong> -tyyppi), joka sisältää lausekkeen <strong>ALLITEMSQUERY (FilteredInv.'&lt;Relations'.CustInvoiceJour.'&lt;Relations'.CustInvoiceTrans)</strong></li>
+</ul>
+<p>Kun suoritat mallimäärityksen kutsumaan <strong>JourLines</strong>-tietolähdettä, seuraava SQL-lauseke suoritetaan:</p>
+SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...
+</td>
+</tr>
+<tr>
 <td>ORDERBY (luettelo [, lauseke 1, lauseke 2, …])</td>
 <td>Palauttaa määritetyn luettelon sen jälkeen, kun se lajiteltu määritettyjen argumenttien mukaan. Nämä argumentit voivaan määrittää lausekkeina.</td>
 <td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan nousevassa järjestyksessä.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>REVERSE (luettelo)</td>
 <td>Palauttaa määritetyn luettelon käänteisessä lajittelujärjestyksessä.</td>
 <td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan laskevassa järjestyksessä.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>WHERE (luettelo, ehto)</td>
 <td>Palauttaa määritetyn luettelon sen jälkeen, kun se suodatettu määritetyn ehdon mukaan. Määritettyä hakuehtoa käytetään muistin luetteloon. Tällä tavalla <strong>WHERE</strong>-funktio eroaa <strong>FILTER</strong>-funktiosta.</td>
 <td>Jos <strong>Toimittaja</strong> on määritetty VendTable-tauluun viittaavaksi ER-tietolähteeksi, <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> palauttaa toimittajaluettelon, joka kuuluu toimittajaryhmään 40.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>ENUMERATE (luettelo)</td>
 <td>Palauttaa uuden luettelon, joka sisältää määritetyn luettelon numeroituja tietueita ja paljastaa seuraavat elementit:
 <ul>
 <li>Määritetyn luettelon tietueet tavallisina luetteloita (<strong>arvo</strong>-komponentti)</li>
 <li>Nykyisen tietueen indeksi (<strong>numero</strong>-komponentti)</li>
-</ul></td>
+</ul>
+</td>
 <td>Seuraavassa kuvassa <strong>Numeroitu</strong>-tietolähde luodaan toimittajan tietueiden numeroituna luettelona <strong>Toimittajat</strong>-tietolähteestä, joka viittaa VendTable-tauluun.
 <p><a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a></p>
 <p>Muoto näkyy seuraavassa kuvassa. Tässä muodossa tiedon sidonnat luodaan muodostamaan tulos XML-muodossa. Tämä tulos esittää yksittäiset toimittajat luetteloituina solmuina.</p>
 <p><a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a></p>
 <p>Seuraavassa kuvassa on tulos, kun suunniteltu muoto suoritetaan.</p>
-<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>COUNT (luettelo)</td>
 <td>Palauttaa määritetyn luettelon tietueiden lukumäärän, jos luettelo ei ole tyhjä. Muussa tapauksessa palauttaa arvon <strong>0</strong> (nolla).</td>
 <td><strong>COUNT (SPLIT(&quot;abcd&quot; , 3))</strong> palauttaa arvon <strong>2</strong>, koska <strong>SPLIT</strong>-toiminto luo luettelon, jossa on kaksi tietuetta.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTOFFIELDS (polku)</td>
 <td>Palauttaa tietueluettelon, joka on luotu jostakin seuraavan tyyppisestä argumentista:
 <ul>
@@ -358,7 +370,8 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 <li>Nimiö</li>
 <li>kuvaus</li>
 </ul>
-<strong>Otsikko</strong>- ja <strong>Kuvaus</strong>-kentät palauttavat suorituksen aikana muodon kieliasetuksiin perustuvat arvot.</td>
+<strong>Otsikko</strong>- ja <strong>Kuvaus</strong>-kentät palauttavat suorituksen aikana muodon kieliasetuksiin perustuvat arvot.
+</td>
 <td>Seuraavassa kuvan on tietomallin luettelointi.
 <p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
 <p>Seuraavassa kuvassa on nämä tiedot:</p>
@@ -372,10 +385,10 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Seuraavassa kuvassa on tulos, kun suunniteltu muoto suoritetaan.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>
-Selitteiden ja kuvausten käännetty teksti annetaan ER-lomakkeeseen FILE- ja FOLDER-päälomake-elementeille määritettyjen kieliasetusten perusteella</blockquote></td>
+<blockquote>[!NOTE]<br>Selitteiden ja kuvausten käännetty teksti annetaan ER-lomakkeeseen FILE- ja FOLDER-päälomake-elementeille määritettyjen kieliasetusten perusteella</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIELDS (polku, kieli)</td>
 <td>Palauttaa argumentista luodun tietueluettelon, kuten mallin luettelointi, lomakkeen luettelointi tai säilö. Luotu luettelo koostuu tietueista, jossa on seuraavat kentät:
 <ul>
@@ -384,26 +397,27 @@ Selitteiden ja kuvausten käännetty teksti annetaan ER-lomakkeeseen FILE- ja FO
 <li>kuvaus</li>
 <li>Käännetty</li>
 </ul>
-<p><strong>Otsikko</strong>- ja <strong>Kuvaus</strong>-kentät palauttavat suorituksen aikana muodon kieliasetuksiin ja määritettyyn kieleen perustuvat arvot. <strong>Käännetty</strong>-kenttä ilmaisee, että <strong>Otsikko</strong>-kenttä on käännetty määritetylle kielelle.</td>
+<strong>Otsikko</strong>- ja <strong>Kuvaus</strong>-kentät palauttavat suorituksen aikana muodon kieliasetuksiin ja määritettyyn kieleen perustuvat arvot. <strong>Käännetty</strong>-kenttä ilmaisee, että <strong>Otsikko</strong>-kenttä on käännetty määritetylle kielelle.
+</td>
 <td>Voit esimerkiksi määrittää <strong>Laskettu kenttä</strong>-tietolähdetyypin määrittämään <strong>enumType_de</strong>- ja <strong>enumType_deCH</strong>-tietolähteet <strong>enumType</strong>-tietomallin luettelointia varten:
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos käännös on käytettävissä, käyttämällä seuraavaa lauseketta. Jos sveitsinsaksan käännös ei ole käytettävissä, otsikko saksankielinen: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.</td>
+Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos käännös on käytettävissä, käyttämällä seuraavaa lauseketta. Jos sveitsinsaksan käännös ei ole käytettävissä, otsikko saksankielinen: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>STRINGJOIN (luettelo, kenttänimi, erotin)</td>
 <td>Palauttaa määritetystä luettelosta merkkijonon, jossa on määritetyn kentän lyhennetyt arvot. Arvot erotetaan määritetyllä erottimella.</td>
-
-<td>Jos annat tietolähteeksi (DS) <strong>SPLIT(&quot;abc&quot; , 1)</strong>, lauseke <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> palauttaa arvon <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
-
+<td>Jos annat tietolähteeksi (DS) <strong>SPLIT(&quot;abc&quot; , 1)</strong>, <strong>STRINGJOIN (DS, DS.Value, &quot;-&quot;)</strong> palauttaa <strong>&quot;a-b-c&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>SPLITLISTBYLIMIT (luettelo, raja-arvo, lähderaja-arvo)</td>
-<td>Jakaa määritetyn luettelon uudeksi aliluetteloiden luetteloksi ja palauttaa tuloksen tietueluettelonsisältöön. Raja-arvoparametri määrittää arvon, joka jakaa alkuperäisen luettelon. Lähderaja-arvo-parametri määrittää vaiheen, jonka mukaan kokonaissummaa kasvatetaan. Rajaa ei käytetä tietyn alkuperäisen luettelon yhteen nimikkeeseen, jos lähderaja ylittää määritetyn rajan.</td>
-<td>Seuraavissa kuvissa muoto ja siinä käytetyt tietolähteet. 
+<td>Jakaa määritetyn luettelon uudeksi aliluetteloiden luetteloksi ja palauttaa tuloksen tietueluettelonsisältöön. <strong>Raja-arvo</strong>-parametri määrittää arvon, joka jakaa alkuperäisen luettelon. <strong>Lähderaja-arvo</strong>-parametri määrittää vaiheen, jonka mukaan kokonaissummaa kasvatetaan. Rajaa ei käytetä tietyn alkuperäisen luettelon yhteen nimikkeeseen, jos lähderaja ylittää määritetyn rajan.</td>
+<td>Muoto näkyy seuraavassa kuvassa. 
 <p><a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="Format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a></p>
+<p>Seuraavissa kuvissa näkyvät muodossa käytetyt tietolähteet.</p>
 <p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
 <p>Seuraavassa kuvassa on tulos, kun muoto suoritetaan. Tässä tapauksessa tuloksena muoto, joka on kauppatavaroiden jäsentämätön luettelo.</p>
 <p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
@@ -412,13 +426,13 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Seuraavassa kuvassa on tulos, kun säädetty muoto suoritetaan.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>
-Rajaa ei sovellettu alkuperäisen luettelon viimeiseen nimikkeeseen, koska arvo (11) ylittää lähteen (painon) määritetyn raja-arvon (9). Käytä joko <strong>WHERE</strong>-funktiota tai vastaavan muodon elementin <strong>Käytössä</strong>-lauseketta ohittamaan tarvittaessa alaluettelot raporttia muodostettaessa.</blockquote></td>
+<blockquote>[!NOTE]<br>Rajaa ei sovellettu alkuperäisen luettelon viimeiseen nimikkeeseen, koska arvo (11) ylittää lähteen (painon) määritetyn raja-arvon (9). Käytä joko <strong>WHERE</strong>-funktiota tai vastaavan muodon elementin <strong>Käytössä</strong>-lauseketta ohittamaan tarvittaessa alaluettelot raporttia muodostettaessa.</blockquote>
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FILTER (luettelo, ehto)</td>
 <td>Palauttaa määritetyn luettelon sen jälkeen, kun kysely on suodatettu määritetyn ehdon mukaan. Funktio eroaa <strong>WHERE</strong>-funktiosta, koska määritettyä ehtoa käytetään tietokannan tasolla kaikkiin <strong>Taulukkotietue</strong>-tyypin ER-tietolähteisiin. Luettelo ja ehto voidaan määrittää tauluja ja suhteita käyttämällä.</td>
-  <td>Jos <strong>Toimittaja</strong> on määritetty VendTable-tauluun viittaavaksi ER-tietolähteeksi, <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> palauttaa toimittajaluettelon, joka kuuluu toimittajaryhmään 40. Jos <strong>Toimittaja</strong> määritetään <strong>VendTable</strong>-tauluun viittaavaksi ER-tietolähteeksi ja ER-tietolähteeksi määritetty <strong>parmVendorBankGroup</strong> palauttaa merkkijono-tietotyypin arvon, <strong>FILTER (Vendor.&#39;&lt;Relations&#39;.VendBankAccount, Vendor.&#39;&lt;Relations&#39;.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> palauttaa luettelon vain niistä toimittajatileistä, jotka kuuluvat tiettyyn pankkiryhmään.</td>
+<td>Jos <strong>Toimittaja</strong> on määritetty VendTable-tauluun viittaavaksi ER-tietolähteeksi, <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> palauttaa toimittajaluettelon, joka kuuluu toimittajaryhmään 40. Jos <strong>Toimittaja</strong> määritetään <strong>VendTable</strong>-tauluun viittaavaksi ER-tietolähteeksi ja ER-tietolähteeksi määritetty <strong>parmVendorBankGroup </strong> palauttaa <strong>String</strong>-tietotyypin arvon, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> palauttaa luettelon vain niistä toimittajatileistä, jotka kuuluvat tiettyyn pankkiryhmään.</td>
 </tr>
 </tbody>
 </table>
@@ -441,9 +455,9 @@ Rajaa ei sovellettu alkuperäisen luettelon viimeiseen nimikkeeseen, koska arvo 
 | POWER (numero, potenssi) | Palauttaa tuloksen, joka on nostettu määritettyyn positiiviseen potenssiin. | **POWER (10, 2)** palauttaa arvon **100**. |
 | NUMBERVALUE (merkkijono, desimaalierotin, numeron ryhmittelyin erotin) | Muuntaa määritetyn merkkijonon numeroksi. Määritettyä desimaalia käytetään desimaaliluvun kokonais- ja murtolukuosien välissä. Määritettyä numeroryhmittelyn erotinta käytetään tuhaterottimena. | **NUMBERVALUE("1 234,56", ",", " ")** palauttaa arvon **1234.56**. |
 | VALUE (merkkijono) | Muuntaa määritetyn merkkijonon numeroksi. Pilkkuja ja pisteitä (.) pidetään desimaalierottimina. Alussa olevaa tavuviivaa (-) pidetään miinusmerkkinä. Annetaan poikkeus, jos määritetyssä merkkijonossa on muita kuin numeerisia merkkejä. | **VALUE ("1 234,56")** antaa poikkeuksen. |
-| ROUND (numero, desimaalit) | Palauttaa määritetyn numeron sen jälkeen, kun se on pyöristetty määritettyyn määrään desimaaleja:<ul><li>Jos desimaaliparametrien arvo on yli 0 (nolla), numero pyöristetään kyseiseen määrään desimaaleja.</li><li>Jos desimaaliparametrin arvo on **0** (nolla), numero pyöristetään lähimpään kokonaislukuun.</li><li>Jos desimaaliparametrin arvo on vähemmän kuin 0 (nolla), numero pyöristetään desimaalipilkusta vasemmalle.</li></ul> | **ROUND (1200.767, 2)** pyöristää kahteen desimaaliin ja palauttaa arvon **1200.77**. **ROUND (1200.767, -3)** pyöristää lähimpään tuhanteen ja palauttaa arvon **1000**. |
-| ROUNDDOWN (numero, desimaalit) | Palauttaa määritetyn luvun sen jälkeen, kun se on pyöristetty alaspäin määritettyyn määrään desimaaleja.<blockquote>[!NOTE]<br>Tämä funktio toimii kuin <strong>ROUND</strong>, mutta se pyöristää määritetyn numeron aina alaspäin (kohti nollaa).</blockquote> | **ROUNDDOWN (1200.767, 2)** pyöristää alaspäin kahteen desimaaliin ja palauttaa arvon **1200.76**. **ROUNDDOWN (1700.767, -3)** pyöristää alaspäin lähimpään tuhanteen ja palauttaa arvon **1000**. |
-| ROUNDUP (numero, desimaalit) | Palauttaa määritetyn luvun sen jälkeen, kun se on pyöristetty ylöspäin määritettyyn määrään desimaaleja.<blockquote>[!NOTE]<br>Tämä funktio toimii kuin <strong>ROUND</strong>, mutta se pyöristää määritetyn numeron aina ylöspäin (pois päin nollasta).</blockquote> | **ROUNDUP (1200.763, 2)** pyöristää ylöspäin kahteen desimaaliin ja palauttaa arvon **1200.77**. **ROUNDUP (1200.767, -3)** pyöristää ylöspäin lähimpään tuhanteen ja palauttaa arvon **2000**. |
+| ROUND (numero, desimaalit) | Palauttaa määritetyn numeron sen jälkeen, kun se on pyöristetty määritettyyn määrään desimaaleja:<ul><li>Jos **desimaali**-parametrien arvo on yli 0 (nolla), numero pyöristetään kyseiseen määrään desimaaleja.</li><li>Jos **desimaali**-parametrin arvo on **0** (nolla), numero pyöristetään lähimpään kokonaislukuun.</li><li>Jos **desimaali**-parametrin arvo on vähemmän kuin 0 (nolla), numero pyöristetään desimaalipilkusta vasemmalle.</li></ul> | **ROUND (1200.767, 2)** pyöristää kahteen desimaaliin ja palauttaa arvon **1200.77**. **ROUND (1200.767, -3)** pyöristää lähimpään tuhanteen ja palauttaa arvon **1000**. |
+| ROUNDDOWN (numero, desimaalit) | Palauttaa määritetyn luvun sen jälkeen, kun se on pyöristetty alaspäin määritettyyn määrään desimaaleja.<blockquote>[!NOTE]<br>Tämä funktio toimii kuin **ROUND**, mutta se pyöristää määritetyn numeron aina alaspäin (kohti nollaa).</blockquote> | **ROUNDDOWN (1200.767, 2)** pyöristää alaspäin kahteen desimaaliin ja palauttaa arvon **1200.76**. **ROUNDDOWN (1700.767, -3)** pyöristää alaspäin lähimpään tuhanteen ja palauttaa arvon **1000**. |
+| ROUNDUP (numero, desimaalit) | Palauttaa määritetyn luvun sen jälkeen, kun se on pyöristetty ylöspäin määritettyyn määrään desimaaleja.<blockquote>[!NOTE]<br>Tämä funktio toimii kuin **ROUND**, mutta se pyöristää määritetyn numeron aina ylöspäin (pois päin nollasta).</blockquote> | **ROUNDUP (1200.763, 2)** pyöristää ylöspäin kahteen desimaaliin ja palauttaa arvon **1200.77**. **ROUNDUP (1200.767, -3)** pyöristää ylöspäin lähimpään tuhanteen ja palauttaa arvon **2000**. |
 
 ### <a name="data-conversion-functions"></a>Tietojen muuntotoiminnot
 
@@ -460,87 +474,80 @@ Rajaa ei sovellettu alkuperäisen luettelon viimeiseen nimikkeeseen, koska arvo 
 
 | Toiminto | kuvaus | Esimerkki |
 |----------|-------------|---------|
-| NULLCONTAINER (luettelo) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen.<blockquote>[!NOTE]<br>Tämä toiminto on vanhentunut. Käytä sen sijaan <strong>EMPTYRECORD</strong>-toimintoa.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
-| EMPTYRECORD (tietue) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen.<blockquote>[!NOTE]<br><strong>Tyhjä</strong>-tietue on tietue, jossa kaikissa kentissä on tyhjä arvo. Tyhjä arvo numeroilla <strong>0</strong> (nolla), merkkijonoilla tyhjä merkkijono jne.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
+| NULLCONTAINER (luettelo) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen.<blockquote>[!NOTE]<br>Tämä toiminto on vanhentunut. Käytä sen sijaan **EMPTYRECORD**-toimintoa.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
+| EMPTYRECORD (tietue) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen.<blockquote>[!NOTE]<br>**Tyhjä**-tietue on tietue, jossa kaikissa kentissä on tyhjä arvo. Tyhjä arvo numeroilla **0** (nolla), merkkijonoilla tyhjä merkkijono jne.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
 
 ### <a name="text-functions"></a>Tekstitoiminnot
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Toiminto</th>
 <th>kuvaus</th>
 <th>Esimerkki</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>UPPER (merkkijono)</td>
 <td>Palauttaa määritetyn merkkijonon sen jälkeen, kun se on muutettu isoiksi kirjaimiksi.</td>
 <td><strong>UPPER(&quot;Sample&quot;)</strong> palauttaa arvon <strong>&quot;SAMPLE&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LOWER (merkkijono)</td>
 <td>Palauttaa määritetyn merkkijonon sen jälkeen, kun se on muutettu pieniksi kirjaimiksi.</td>
 <td><strong>LOWER (&quot;Sample&quot;)</strong> palauttaa arvon <strong>&quot;sample&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LEFT (merkkijono, merkkien määrä)</td>
 <td>Palauttaa määritetyn määrän merkkejä merkkijonon alusta.</td>
 <td><strong>LEFT (&quot;Sample&quot;, 3)</strong> palauttaa arvon <strong>&quot;Sam&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>RIGHT (merkkijono, merkkien määrä)</td>
 <td>Palauttaa määritetyn määrän merkkejä merkkijonon lopusta.</td>
 <td><strong>RIGHT (&quot;Sample&quot;, 3)</strong> palauttaa arvon <strong>&quot;ple&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>MID (merkkijono, alkukohta, merkkien määrä)</td>
 <td>Palauttaa määritetyn määrän merkkejä määritetyn merkkijonon tietystä kohdasta.</td>
 <td><strong>MID (&quot;Sample&quot;, 2, 3)</strong> palauttaa arvon <strong>&quot;amp&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LEN (merkkijono)</td>
 <td>Palauttaa määritetyn merkkijonon merkkien määrän.</td>
 <td><strong>LEN (&quot;Sample&quot;)</strong> palauttaa arvon <strong>6</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>CHAR (numero)</td>
 <td>Palauttaa merkkijonon, johon määritetty unicode-numero viittaa.</td>
 <td><strong>CHAR (255)</strong> palauttaa arvon <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>
-Tämän funktion palauttama merkkijono määräytyy koodauksen mukaan, joka on valittu ylemmän tason FILE-muotoisessa elementissä. Luettelo tuetuista koodauksista on kohdassa <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Koodausluokka</a>.</blockquote>
+<blockquote>[!NOTE]<br>Tämän funktion palauttama merkkijono määräytyy koodauksen mukaan, joka on valittu ylemmän tason FILE-muotoisessa elementissä. Luettelo tuetuista koodauksista on kohdassa <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Koodausluokka</a>.</blockquote>
 </td>
 </tr>
-<tr class="even">
+<tr>
 <td>CONCATENATE (1 merkkijono [, merkkijono 2, …])</td>
 <td>Palauttaa kaikki määritetyt tekstimerkkijonot sen jälkeen, kun ne on liitetty yhteen merkkijonoon.</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> palauttaa arvon <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>
-Myös lauseke <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> palauttaa lausekkeen <strong>&quot;abcdef&quot;</strong>.</blockquote>
+<blockquote>[!NOTE]<br>Myös lauseke <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> palauttaa lausekkeen <strong>&quot;abcdef&quot;</strong>.</blockquote>
 </td>
 </tr>
-<tr class="odd">
+<tr>
 <td>TRANSLATE (merkkijono, malli, korvaus)</td>
 <td>Palauttaa määritetyn merkkijonon sen jälkeen, kun määritetyn mallimerkkijonon kaikkien merkkien esiintymät korvataan määritetyn korvausmerkkijonon vastaavassa kohdassa olevilla merkeillä.</td>
 <td><strong>TRANSLATE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> korvaa mallin <strong>&quot;cd&quot;</strong> merkkijonolla <strong>&quot;GH&quot;</strong> ja palauttaa arvon <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>REPLACE (merkkijono, malli, korvaus, säännönmukaisen lausekkeen merkki)</td>
 <td>Palauttaa määritetyn merkkijonon sen jälkeen, kun määritetty säännöllisen lausekkeen merkki on <strong>tosi</strong>. Merkkijonoa muokataan kohdistamalla säännöllinen lauseke, joka on määritetty tämän toiminnon malliargumentiksi. Tätä lauseketta käytetään etsittäessä korvattavia merkkejä. Määritetyn korvausargumentin merkkejä käytetään löydettyjen merkkien korvaamisessa. Kun määritetyn säännöllisen lausekkeen merkki on <strong>epätosi</strong>, tämä toiminto toimii kuten <strong>TRANSLATE</strong>.</td>
 <td><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> on käytössä säännöllisessä lausekkeessa, joka poistaa kaikki muut kuin numeeriset merkit ja palauttaa arvon <strong>&quot;19234564971&quot;</strong>. <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> korvaa mallin <strong>&quot;cd&quot;</strong> merkkijonolla <strong>&quot;GH&quot;</strong> ja palauttaa arvon <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>TEXT (syöte)</td>
 <td>Palauttaa määritetyn syötteen sen jälkeen, kun se on muunnettu tekstimerkkijonoksi. Se puolestaan muotoillaan nykyisen Finance and Operations -esiintymän palvelimen aluekohtaisten asetusten perusteella. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
 <td>Jos Finance and Operations -esiintymän palvelimen aluekohtaisiksi asetuksiksi on määritetty <strong>FI-FI</strong>, <strong>TEXT (NOW ())</strong> palauttaa nykyisen Finance and Operations -istunnon päivämäärän 17.12.2015 tekstimerkkijonona <strong>&quot;17.12.2015 07.59.23&quot;</strong>. <strong>TEXT (1/3)</strong> palauttaa arvon <strong>&quot;0.33&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FORMAT (merkkijono 1, merkkijono 2[, merkkijono 3, …])</td>
 <td>Palauttaa määritetyn merkkijonon sen jälkeen, kun se on muotoiltu korvaamalla kaikki <strong>%N</strong>-esiintymät <em>n</em>:llä argumentilla. Argumentit ovat merkkijonoja. Jos parametrille ei ole annettu argumenttia, parametri palautetaan merkkijonoon arvona <strong>%N</strong>. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
 <td>Seuraavassa kuvassa <strong>PaymentModel</strong>-tietolähde palauttaa asiakastietueluettelon <strong>Asiakas</strong>-komponentin kautta ja käsittelyn päivämäärän arvon <strong>ProcessingDate</strong>-kentän kautta.
@@ -563,37 +570,38 @@ Myös lauseke <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> palauttaa l
 <p>Jos raporttia käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina on <strong>EN-US</strong> ja kielenä on <strong>EN-US</strong>, tämä kaava palauttaa seuraavan tekstin, joka voidaan esittää poikkeussanomana loppukäyttäjälle:</p>
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Jos sama raportti käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina on <strong>FI</strong> ja kielenä on <strong>FI</strong>, tämä kaava palauttaa seuraavan tekstin, jossa on eri päivämäärämuoto:</p>
-<p>&quot;Ei tulostettavaa. Asiakas Litware Retail on pysäytetty 17.12.2015.</p>
-<blockquote>[!NOTE]<br>
-Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
+<p>&quot;Ei tulostettavaa. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
+<blockquote>[!NOTE]<br>Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
 <ul>
 <li><strong>Finance and Operations -resurssien otsikot:</strong> <strong>@&quot;X&quot;</strong>, jossa X on sovellusobjektipuun (AOT) otsikon tunnus.</li>
 <li><strong>ER-määrityksissä sijaitsevat otsikot:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, jossa X on ER-määrityksen otsikon tunnus.</li>
-</ul></blockquote></td>
+</ul>
+</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>NUMBERFORMAT (numero, muoto)</td>
 <td>Palauttaa määritetyssä muodossa olevan määritetyn numeron merkkijonomuodon. (Lisätietoja tuetuista muodoista: <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">vakio</a> ja <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">mukautettu</a>.)</td>
 <td>Maa-asetuksella EN-US <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> palauttaa arvon <strong>&quot;45.00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> palauttaa arvon <strong>&quot;10&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>NUMERALSTOTEXT (määrä, kieli, valuutta, tulosta valuutan nimi -merkki, desimaalit)</td>
-<td>Palauttaa määritetyn luvun sen jälkeen, kun se kirjoitettu (muunnettu) määritetyllä kielellä tekstimerkkijonoksi. Kielikoodi on valinnainen. Kun se on määritetty tyhjänä merkkijonona, asiayhteyden kielikoodia käytetään sen sijaan. (Asiayhteyden kielikoodi määritetään muodostettavalla kansiolle tai tiedostolle.) Myös valuuttakoodi on valinnainen. Kun se on määritetty tyhjänä merkkijonona, käytetään yrityksen valuuttaa.
-<blockquote>[!NOTE]<br>
-Tulosta valuutan nimimerkintä- ja Desimaalit-parametrit analysoidaan vain seuraaville kielikoodeille: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Tulosta valuutan nimimerkintä -parametri analysoidaan vain niissä Finance and Operations -yrityksissä, joiden maa- tai alueyhteys tukee valuutan nimen taivutusta.</blockquote></td>
+<td>Palauttaa määritetyn luvun sen jälkeen, kun se kirjoitettu (muunnettu) määritetyllä kielellä tekstimerkkijonoksi. Kielikoodi on valinnainen. Kun se on määritetty tyhjänä merkkijonona, suorituskontekstin kielikoodia käytetään. (Suorituskontekstin kielikoodi määritetään muodostettavalla kansiolle tai tiedostolle.) Myös valuuttakoodi on valinnainen. Kun se on määritetty tyhjänä merkkijonona, käytetään yrityksen valuuttaa.
+<blockquote>[!NOTE]<br><strong>Tulosta valuutan nimimerkintä</strong>- ja <strong>Desimaalit</strong>-parametrit analysoidaan vain seuraaville kielikoodeille: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> ja <strong>RU</strong>. <strong>Tulosta valuutan nimimerkintä</strong> -parametri analysoidaan vain niissä Finance and Operations -yrityksissä, joiden maa- tai alueyhteys tukee valuutan nimen taivutusta.</blockquote>
+</td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> palauttaa arvon <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> palauttaa arvon <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> palauttaa arvon <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>PADLEFT (merkkijono, pituus, täyttömerkit)</td>
 <td>Palauttaa määritetyn pituisen merkkijonon, jossa määritetyn merkkijonon alkua on täydennetty määritetyillä merkeillä.</td>
 <td><strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> palauttaa tekstimerkkijonon <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>TRIM (merkkijono)</td>
 <td>Palauttaa määritetyn tekstimerkkijonon sen jälkeen, kun edeltävät ja lopussa olevat välilyönnit on poistettu ja sanojen välissä olevat moninkertaiset välilyönnit on poistettu.</td>
 <td><strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> palauttaa arvon <strong>&quot;Sample text&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>GETENUMVALUEBYNAME (luetteloinnin tietolähteen polku, luettelointiarvon etikettiteksti)</td>
 <td>Palauttaa määritetyn luetteloinnin tietolähteen luettelointiotsikon määritetyn tekstin perusteella.</td>
 <td>Seuraavassa kuvassa on tietomallin <strong>ReportDirection</strong>-luettelointi. Huomaa, että luettelointiarvoille on määritetty otsikot.
@@ -603,7 +611,24 @@ Tulosta valuutan nimimerkintä- ja Desimaalit-parametrit analysoidaan vain seura
 <li>Mallin luettelointi <strong>ReportDirection</strong> lisätään raporttiin tietolähteenä <strong>$Direction</strong>.</li>
 <li>ER-lauseke <strong>$IsArrivals</strong> on suunniteltu käyttämään mallin luettelointia tämän toiminnon parametrina. Lausekkeen arvo on <strong>TOSI</strong>.</li>
 </ul>
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+</td>
+</tr>
+<tr>
+<td>GUIDVALUE (syöte)</td>
+<td>Muuntaa <strong>String</strong>-tietotyypin määritetyn syötteen <strong>GUID</strong>-tietotyypin tietokohteeksi.</td>
+<td>Määritä seuraavat tietolähteet omassa mallimäärityksessäsi:
+<ul>
+<li><strong>myID</strong> (<strong>Laskettu kenttä</strong> -tyyppi), ,joka sisältää lausekkeen <strong>GUIDVALUE(&quot;AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0&quot;)</strong></li>
+<li><strong>Users</strong> (<strong>Taulukkotietueet</strong>-tyypi), joka viittaa UserInfo-tauluun</li>
+</ul>
+Kun nämä tietolähteet määritetään, voit käyttää lauseketta kuten <strong>FILTER (Users, Users.objectId = myID)</strong> suodattaaksesi UserInfo-taulun <strong>objectId</strong>-kentän mukaan, joka on <strong>GUID</strong>-tietotyyppiä.
+</td>
+</tr>
+<tr>
+<td>JSONVALUE (tunnus, polku)</td>
+<td>Jäsennä tiedot JavaScript Object Notation (JSON) -muodossa, jota käyettään tietyssä polussa, jotta voidaan purkaa skalaariarvo, joka perustuu tiettyyn tunnukseen.</td>
+<td>Tietolähde <strong>$JsonField</strong> sisältää seuraavat tiedot JSON-muodossa: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. Tälle tietotyypille </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> palauttaa arvon <strong>7.3.1234.1</strong>, joka on<strong>String</strong>-tietotyyppiä.</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +638,7 @@ Tulosta valuutan nimimerkintä- ja Desimaalit-parametrit analysoidaan vain seura
 | Toiminto | kuvaus | Esimerkki |
 |----------|-------------|---------|
 | TEXT (syöte) | Palauttaa määritetyn syötteen sen jälkeen, kun se on muunnettu tekstimerkkijonoksi. Se puolestaan muotoillaan nykyisen Finance and Operations -esiintymän palvelimen aluekohtaisten asetusten perusteella. **Reaali**-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin. | Jos Finance and Operations -esiintymän palvelimen aluekohtaisiksi asetuksiksi on määritetty **FI-FI**, **TEXT (NOW ())** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 17.12.2015 tekstimerkkijonona **17.12.2015 07.59.23**. **TEXT (1/3)** palauttaa arvon **"0.33"**. |
-| QRCODE (merkkijono) | Palauttaa määritetyn merkkijonon QR-koodin kuvan base64-binaarimuodossa. | **QRCODE ("Sample text")** palauttaa arvon **U2FtcGxlIHRleHQ=**. |
+| QRCODE (merkkijono) | Palauttaa määritetyn merkkijonon Quick Response Code (QR) -koodin kuvan base64-binaarimuodossa. | **QRCODE ("Sample text")** palauttaa arvon **U2FtcGxlIHRleHQ=**. |
 
 ### <a name="data-collection-functions"></a>Tietojen keruutoiminnot
 
@@ -623,19 +648,19 @@ Tulosta valuutan nimimerkintä- ja Desimaalit-parametrit analysoidaan vain seura
 | SUMIFS (summauksen avainmerkkijono, ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen arvojen summan (jossa nimi on määritetty avaimeksi), joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyt ehdot (alue- ja arvoparit). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
 | SUMIF (summauksen avainmerkkijono, ehtoalueen merkkijono, ehdon arvon merkkijono) | Palauttaa XML-solmujen arvojen summan (jossa nimi on määritetty avaimeksi), joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyn ehdon (alue ja arvo). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
 | COUNTIFS (ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen määrän, joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyt ehdot (alue- ja arvoparit). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
-| COUNTIF (ehtoalueen merkkijono,ehdon arvon merkkijono) | Palauttaa XML-solmujen määrän, joka on kerätty muodon suorittamisen aikana ja joka täyttää annetun ehdon (alue ja arvo). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
-| COLLECTEDLIST (ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen arvoluettelon, joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää annetut ehdot (alue ja arvo). Palauttaa tyhjän luettelon, jos nykyisten tiedostojen **Kerää tulostiedot**-merkintä on poistettu käytöstä. | |
+| COUNTIF (ehtoalueen merkkijono,ehdon arvon merkkijono) | Palauttaa XML-solmujen määrän, joka on kerätty muodon suorittamisen aikana ja joka täyttää määritetyn ehdon (alue ja arvo). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
+| COLLECTEDLIST (ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen arvoluettelon, joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyt ehdot (alue ja arvo). Palauttaa tyhjän luettelon, jos nykyisten tiedostojen **Kerää tulostiedot**-merkintä on poistettu käytöstä. | |
 
 ### <a name="other-business-domainspecific-functions"></a>Muut (liiketoiminnan toimialuekohtaiset) toiminnot
 
 | Toiminto | kuvaus | Esimerkki |
 |----------|-------------|---------|
 | CONVERTCURRENCY (summa, lähdevaluutta, kohdevaluutta, päivämäärä, yritys) | Määritetty rahasumma muunnetaan lähdevaluutasta määritettyyn kohdevaluuttaan käyttämällä määritetyn Finance and Operations -yrityksen asetuksia tiettynä päivänä. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** palauttaa yhden euron suuruisen määrän Yhdysvaltojen dollareita nykyisen istunnon päivämääränä DEMF-yrityksen asetusten perusteella. |
-| ROUNDAMOUNT (määrä, desimaalit, pyöristyssääntö) | Pyöristää määritetyn summan määritetyllä desimaalitarkkuudella määritetyn pyöristyssäännön mukaisesti.<blockquote>[!NOTE]<br>Pyöristyssääntö on määritettävä Finance and Operations <strong>RoundOffType</strong>-luetteloinnin arvoksi.</blockquote> | Jos **model.RoundOff**-parametrin arvoksi on määritetty **Alaspäin**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.78**. Jos **model.RoundOff**-parametrin arvoksi on määritetty **Normaali** tai **Ylöspäin**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.79**. |
+| ROUNDAMOUNT (määrä, desimaalit, pyöristyssääntö) | Pyöristää määritetyn summan määritetyllä desimaalitarkkuudella määritetyn pyöristyssäännön mukaisesti.<blockquote>[!NOTE]<br>Pyöristyssääntö on määritettävä Finance and Operations **RoundOffType**-luetteloinnin arvoksi.</blockquote> | Jos **model.RoundOff**-parametrin arvoksi on määritetty **Alaspäin**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.78**. Jos **model.RoundOff**-parametrin arvoksi on määritetty **Normaali** tai **Ylöspäin**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.79**. |
 | CURCredRef (numerot) | Palauttaa laskuttajan viitteen määritetyn laskunumeron lukujen perusteella. | **CURCredRef ("VEND-200002")** palauttaa arvon **"2200002"**. |
 | MOD\_97 (numerot) | Palauttaa laskuttajan viitteen MOD97-lausekkeena määritetyn laskunumeron lukujen perusteella. | **MOD\_97 ("VEND-200002")** palauttaa arvon **"20000285"**. |
 | ISOCredRef (numerot) | Palauttaa laskuttajan ISO (International Organization for Standardization) -viitteen määritetyn laskunumeron lukujen ja kirjainmerkkien perusteella.<blockquote>[!NOTE]<br>Voit poistaa ne aakkosmerkit, jotka eivät ole ISO-yhteensopivia, jos syöttöparametri on käännetty ennen kuin se välitetään tälle toiminnolle.</blockquote> | **ISOCredRef ("VEND-200002")** palauttaa arvon **"RF23VEND-200002"**. |
-| CN\_GBT\_AdditionalDimensionID (merkkijono, lukumäärä) | Hae taloushallinnan lisädimension tunnus. Dimensiot esitetään tässä merkkijonossa pilkuin erotettuina tunnuksina. Lukumäärä määrittää pyydetyn dimension järjestyskoodin tässä merkkijonossa. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** palauttaa arvon **"CC"**. |
+| CN\_GBT\_AdditionalDimensionID (merkkijono, lukumäärä) | Hae määritetty taloushallinnon lisädimension tunnus. **String**-parametrissa dimensiot esitetään pilkuin erotettuina tunnuksina. **Number**-parametri määrittää pyydetyn dimension järjestyskoodin tässä merkkijonossa. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** palauttaa arvon **"CC"**. |
 | GetCurrentCompany () | Palauttaa sen yrityksen koodin tekstimuodon, johon käyttäjä on tällä hetkellä kirjautunut. | **GETCURRENTCOMPANY ()** palauttaa arvon **USMF** käyttäjälle, joka on kirjautunut Finance and Operations -yritykseen **Contoso Entertainment System USA**. |
 | CH\_BANK\_MOD\_10 (merkkiä) | Palauttaa laskuttajan viitteen MOD10-lausekkeena määritetyn laskunumeron lukujen perusteella. | **CH\_BANK\_MOD\_10 ("VEND-200002")** palauttaa arvon **3**. |
 | FA\_SUM (käyttöomaisuuden koodi, arvomallin koodi, alkamispäivämäärä, päättymispäivämäärä) | Palauttaa määritetyn kauden käyttöomaisuussummien valmistellun tietosäilön. | **FA\_SUM ("COMP-000001", "Current", Date1, Date2)** palauttaa käyttöomaisuuden **"COMP-000001"** valmistellun tietosäilön, jonka arvomalli on **“Current”** kaudella **Date1** - **Date2**. |
