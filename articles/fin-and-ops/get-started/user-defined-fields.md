@@ -3,7 +3,7 @@ title: "Mukautetut kentät"
 description: "Tässä ohjeaiheessa käsitellään, miten Microsoft Dynamics 365 for Finance and Operations antaa joillekin käyttäjille mahdollisuuden luoda mukautettuja kenttiä ja muokata sovellusta niiden avulla yrityksen tarpeita vastaavaksi."
 author: jasongre
 manager: AnnBe
-ms.date: 04/18/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,18 +17,16 @@ ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f2aa55ae4258f5ef81456b92278415297c194d66
+ms.sourcegitcommit: ec005285eb561f77c005f8d84eeff69c37ce6833
+ms.openlocfilehash: d9f64f4f92c40630c80689d11d54bfdbb2977237
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 07/16/2018
 
 ---
 
 # <a name="custom-fields"></a><span data-ttu-id="a3480-103">Mukautetut kentät</span><span class="sxs-lookup"><span data-stu-id="a3480-103">Custom fields</span></span>
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 <span data-ttu-id="a3480-104">Vaikka Microsoft Dynamics 365 for Finance and Operationsissa on kattava valikoima valmiita kenttiä monenlaisten liiketoimintaprosessien hallintaa varten, joskus yritysten on seurattava myös muita tietoja järjestelmässä.</span><span class="sxs-lookup"><span data-stu-id="a3480-104">While Microsoft Dynamics 365 for Finance and Operations provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system.</span></span> <span data-ttu-id="a3480-105">Tämän Finance and Operationsissa voi luoda mukautettuja kenttiä, jotka muokkaavat sovellusta yrityksen tarpeita vastaavaksi. Tätä varten tarvitaan tietyt käyttöoikeudet.</span><span class="sxs-lookup"><span data-stu-id="a3480-105">To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business, provided you have permissions to the feature.</span></span> 
 

@@ -3,7 +3,7 @@ title: "Hälytysten yleiskuvaus"
 description: "Tässä ohjeaiheessa on yleisiä tietoja Microsoft Dynamics 365 for Finance and Operationsin hälytyksistä. Saat hälytysten avulla tietoja tapahtumista, joita haluat seurata työpäivän aikana."
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,18 +17,16 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1232e4ec7676403c826787b724b6cca82c1e93f6
+ms.sourcegitcommit: ec005285eb561f77c005f8d84eeff69c37ce6833
+ms.openlocfilehash: a3145cad682177ae3be2450889f788d695b25df4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 07/16/2018
 
 ---
 
 # <a name="alerts-overview"></a><span data-ttu-id="b317a-104">Hälytysten yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="b317a-104">Alerts overview</span></span>
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a><span data-ttu-id="b317a-105">Tietoja hälytyksistä</span><span class="sxs-lookup"><span data-stu-id="b317a-105">About alerts</span></span>
 <span data-ttu-id="b317a-106">Hälytykset muodostavat tärkeiden tapahtumien ilmoitusjärjestelmän Microsoft Dynamics 365 for Finance and Operations -sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="b317a-106">Alerts form a notification system for critical events in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="b317a-107">Saat hälytysten avulla tietoja tapahtumista, joita haluat seurata työpäivän aikana.</span><span class="sxs-lookup"><span data-stu-id="b317a-107">You can use alerts to stay informed about events that you want to track during the workday.</span></span> <span data-ttu-id="b317a-108">Voit luoda kätevästi oman hälytyssääntöjoukon, joilla saat hälytyksen myöhässä olevista lähetyksistä, poistetuista tilauksista, hintojen muutoksista ja muista reagointia vaativista tapahtumista.</span><span class="sxs-lookup"><span data-stu-id="b317a-108">You can easily create your own set of alert rules so that you're alerted about deliveries that are overdue, orders that are deleted, prices that change, or other events that you must respond to.</span></span>
