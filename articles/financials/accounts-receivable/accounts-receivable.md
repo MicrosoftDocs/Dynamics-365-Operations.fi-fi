@@ -19,10 +19,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 49d6cab206725bb994d367bb8401481e7591d5fa
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: 9fcf106b03cd1abdd135681ceefbb7877f07c773
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -43,29 +43,18 @@ Voit luoda myyntitilauksiin tai pakkausluetteloihin perustuvia myyntilaskuja. Vo
 
 Myyntireskontran avulla voit seurata myyntilaskuja ja asiakkailta vastaanottamiasi maksuja. Voit määrittää muun muassa asiakasryhmiä, asiakkaita, kirjausprofiileja, korkolaskuja, maksukehotuksia, provisioita, asiakkaisiin liittyviä parametreja, kuluja, toimituksia ja kohteita, vekseleitä sekä muita myyntireskontran tietoja. 
 
-[Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+:::row::: :::column::: - [Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+        - [Asiakkaan kirjausprofiilit](customer-posting-profiles.md)
+        - [Luottokorttien määritys, varmennus ja tietojen tarkistus](credit-card-authorizations.md)
+        - [Myyntilaskun luominen](configure-customer-invoices.md)
+        - [Toistuvien laskujen määrittäminen ja käsittely](set-up-process-recurring-invoices.md)
+        - [Tekstimuotoisen laskun korjaus](correct-free-text-invoice.md) :::column-end::: :::column::: - [Vekseleiden määrittäminen](set-up-bills-exchange.md)
+        - [Korkoryhmän korkoprosenttien määrittäminen](set-up-interest-rates-interest-code.md)
+        - [Korkokulujen peruuttaminen, palauttaminen tai käänteinen veloitus](waive-reinstate-reverse-interest-fees.md)
+        - [SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](sepa-direct-debit-overview.md)
+        - [SEPA (Single Euro Payments Area) -suoraveloitusvaltakirjan asetukset](sepa-direct-debit-mandate.md)
+        - [Myyntireskontran sulkeminen](close-accounts-receivable.md) :::column-end::: :::row-end:::
 
-[Asiakkaan kirjausprofiilit](customer-posting-profiles.md)
-
-[Luottokorttien asetukset, varmennus ja tietojen tarkistus](credit-card-authorizations.md)
-
-[Myyntilaskun luominen](configure-customer-invoices.md)
-
-[Toistuvien laskujen asetukset ja käsittely](set-up-process-recurring-invoices.md)
-
-[Tekstimuotoisen laskun korjaus](correct-free-text-invoice.md)
-
-[Vekseleiden asetukset](set-up-bills-exchange.md)
-
-[Korkoryhmän korkoprosenttien asetukset](set-up-interest-rates-interest-code.md)
-
-[Korkokulujen peruuttaminen, palauttaminen tai käänteinen veloitus](waive-reinstate-reverse-interest-fees.md)
-
-[SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](sepa-direct-debit-overview.md)
-
-[SEPA (Single Euro Payments Area) -suoraveloitusvaltakirjan asetukset](sepa-direct-debit-mandate.md)
-
-[Myyntireskontran sulkeminen](close-accounts-receivable.md)
 
 ## <a name="set-up-credit-and-collections"></a>Luotonvalvonnan asetukset
 
@@ -79,23 +68,16 @@ Myyntireskontran perimistietoja hallitaan keskitetysti yhdessä näkymässä Per
 
 ## <a name="set-up-payments-and-settlements"></a>Maksujen ja tilitysten asetukset
 
-Voit hyväksy asiakkaiden erilaisia maksuvälineitä, kuten vekseleitä, käteistä, sekkejä, luottokortteja ja sähköisiä maksuja. 
+Voit hyväksyä asiakkaiden erilaisia maksuvälineitä, kuten vekseleitä, käteistä, sekkejä, luottokortteja ja sähköisiä maksuja. 
 
-[Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+:::row::: :::column::: - [Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+        - [Myyntireskontran keskitetyt maksut](centralized-payments-accounts-receivable.md)
+        - [Asiakkaan osamaksun ja viimeisen maksun tilittäminen kokonaan ennen alennuspäivämäärää](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+        - [Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen](settle-partial-customer-payment-before-discount-or-final-payment-after.md) :::column-end::: :::column::: - [Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen](settle-partial-customer-payment-multiple-discount-periods.md)
+        - [Asiakkaiden hyvittäminen](reimburse-customers.md)
+        - [Asiakasmaksut osasummalle](customer-payments-partial-amount.md) :::column-end::: :::row-end:::
 
-[Myyntireskontran keskitetyt maksut](centralized-payments-accounts-receivable.md)
-
-[Asiakkaan osamaksun ja viimeisen maksun tilittäminen kokonaan ennen alennuspäivämäärää](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-
-[Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
-
-[Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen](settle-partial-customer-payment-discounts-credit-notes.md)
-
-[Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen](settle-partial-customer-payment-multiple-discount-periods.md)
-
-[Asiakkaiden hyvittäminen](reimburse-customers.md)
-
-[Asiakasmaksut osasummalle](customer-payments-partial-amount.md)
 
 ### <a name="additional-resources"></a>Lisäresurssit
 
