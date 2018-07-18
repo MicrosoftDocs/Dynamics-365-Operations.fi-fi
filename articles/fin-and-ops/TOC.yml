@@ -1653,6 +1653,7 @@
                 - name: Tilikauden lopetus
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: Tanska
+              href: ../financials/localizations/denmark.md
               items:
                 - name: Maksukuitin muodon määrittäminen asiakastilille
                   href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
@@ -1684,6 +1685,7 @@
                 - name: ALV-ilmoitus
                   href: ../financials/localizations/emea-est-vat-statement-details.md
             - name: Ranska
+              href: ../financials/localizations/france.md
               items:
                 - name: Julkinen sektori
                   items:
@@ -1760,6 +1762,7 @@
                 - name: Sähköisen veroilmoituksen määrittäminen
                   href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
             - name: Unkari
+              href: ../financials/localizations/hungary.md
               items:
                 - name: Vaihtokurssin laskeminen
                   href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
@@ -1774,6 +1777,7 @@
                 - name: Tilikauden lopetus
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: Islanti
+              href: ../financials/localizations/iceland.md
               items:
                 - name: Toimittajatilin luominen ja laskun ilmoitusluokan liittäminen
                   href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
@@ -1784,6 +1788,7 @@
                 - name: Päivitä toimittajan laskun ilmoitukset ja luo raportti
                   href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
             - name: Italia
+              href: ../financials/localizations/italy.md
               items:
                 - name: ALV-ilmoituksen tiedot
                   href: ../financials/localizations/emea-ita-vat-statements-details.md
@@ -1806,6 +1811,7 @@
                 - name: Ennakonpidätys
                   href: ../financials/localizations/emea-ita-withholding-tax.md
             - name: Latvia
+              href: ../financials/localizations/latvia.md
               items:
                 - name: Käyttöomaisuuden kirjanpito
                   href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
@@ -1818,6 +1824,7 @@
                 - name: ALV-ilmoituksen tiedot
                   href: ../financials/localizations/emea-lva-vat-statement-details.md
             - name: Liettua
+              href: ../financials/localizations/lithuania.md
               items:
                 - name: Käyttöomaisuuden korjauserittely
                   href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
@@ -1828,12 +1835,14 @@
                 - name: ALV-ilmoituksen tiedot
                   href: ../financials/localizations/emea-ltu-vat-statement-details.md
             - name: Alankomaat
+              href: ../financials/localizations/netherlands.md
               items:
                 - name: Sähköiset veroilmoitukset (EVAT)
                   href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL -integraatio
                   href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
             - name: Norja
+              href: ../financials/localizations/norway.md
               items:
                 - name: Asiakkaan ja toimittajan maksumuodot
                   href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
@@ -1848,6 +1857,7 @@
                 - name: Käyttöönotto-ohjeet kassakoneille
                   href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
             - name: Puola
+              href: ../financials/localizations/poland.md
               items:
                 - name: Rivialennusten laskenta yksikköhinnasta
                   href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
@@ -1870,6 +1880,7 @@
                 - name: Liikevaihdon saldoilmoitus
                   href: ../financials/localizations/emea-pol-turnover-balances-statement.md
             - name: Espanja
+              href: ../financials/localizations/spain.md
               items:
                 - name: Käteisalennusten käyttö laskussa
                   href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
@@ -1898,6 +1909,7 @@
                 - name: Erikoisviennit ja avaavat taseet
                   href: ../financials/localizations/emea-esp-opening-sheets-spain.md
             - name: Ruotsi
+              href: ../financials/localizations/sweden.md
               items:
                 - name: Kirjanpitotietojen vieminen tilintarkastajille (Ruotsi)
                   href: ../financials/localizations/emea-swe-sie-standard-report.md
@@ -1906,10 +1918,12 @@
                 - name: Kassakoneet
                   href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
             - name: Sveitsi
+              href: ../financials/localizations/switzerland.md
               items:
                 - name: Asiakasmaksujen tuonti ESR-maksumääräyksessä
                   href: ../financials/localizations/emea-che-esr-customer-payments-import.md
             - name: Iso-Britannia
+              href: ../financials/localizations/united-kingdom.md
               items:
                 - name: 'Rakennustuotannon malli '
                   href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
