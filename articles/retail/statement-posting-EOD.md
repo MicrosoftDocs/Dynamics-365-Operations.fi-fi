@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 86b301833f3655f7172e2d38ddca4239be71760c
-ms.openlocfilehash: bcb4af426e5967643a1c438bb19495576ce51b63
+ms.sourcegitcommit: 4961ee7fcc56af0646e421c9e040e2129cc322c4
+ms.openlocfilehash: e6d6ede65764c0b35c9ce0985af0d9f2cd6653c0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/12/2018
 
 ---
 
@@ -58,6 +58,8 @@ Laskelman kirjaamistoiminnon parantamisen myötä on otettu käyttöön kolme uu
 - **Poista pakollinen laskenta käytöstä** – kun asetukseksi on määritetty **Kyllä**, laskelma jatkuu kirjausprosessin aikana, vaikka ero lasketun summan ja transaktion summan välillä ylittää rajan, joka on määritetty vähittäismyymälöiden **Laskelma**-pikavälilehdessä.
 
 Lisäksi **Rinnakkaisten laskelmien kirjaamisen enimmäismäärä** -kenttä on lisätty **Eräkäsittely**-pikavälilehteen. Tämä kenttä määrittää samaan aikaan suoritettavien erätöiden määrän. Tällä hetkellä sinun täytyy määrittää manuaalisesti tämän kentän arvo.
+
+Uuden kirjausprosessin aikana pitää määrittää **Lahjakortin tuote** **Lahjakortti**-pikavälilehteen, **Kirjauksen** välilehdelle **Vähittäiskaupan parametrit** -sivulla. Tämä pätee myös silloin, kun organisaatio ei käytä lahjakortteja. 
 
 Huomaa, että kaikki asetukset ja parametrit, jotka liittyvät laskelman kirjauksiin ja jotka on määritetty vähittäismyymälöissä ja **Vähittäismyynnin parametrit** -sivulla, liittyvät parannettuun laskelman kirjaustoimintoon.
 

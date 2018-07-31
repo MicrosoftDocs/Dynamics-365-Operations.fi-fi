@@ -20,10 +20,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e63f2b4289b640e601492425331ea8f3804d139a
-ms.openlocfilehash: 4f505a2de89863d1a12d415795fdfb82b3557bc0
+ms.sourcegitcommit: 338e0847ea91ee2582df0aab3e31a97c4f24113e
+ms.openlocfilehash: 016eec12c31398beede7fdddc4548ec196ebd704
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -51,7 +51,7 @@ Voit ottaa kustannussuhteet käyttöön (taulukoissa, ryhmissä ja kaikissa koht
 
 **4. Määritä standardikustannuksiin liittyvät varastoparametrit.** 
 
--  Määritä **Varastoparametrit**-sivun **Tuoterakenne**-välilehdellä kaksi standardikustannuksiin liittyvää parametria. 
+-  Määritä **Varastokirjanpitokäytänteiden järjestelmä**-sivun **Tuoterakenne**-välilehdellä kaksi standardikustannuksiin liittyvää parametria.
 
     -  Valitse **Kustannuserittely**-kentässä voit valita arvoksi **Ei mitään** tai **Alakirjanpito**. Jos valitset **Alakirjanpito**, kustannuserittely on *aktiivinen* kustannuserittely. Aktiivista kustannusseurantaa tarvitaan välttämättä, kun kustannusryhmien segmentointi lasketaan, säilytetään ja otetaan tarkasteluun monitasoisessa tuoterakenteessa standardikustannusnimikkeitä varten. Kun kustannuserittely on aktiivinen, voit tehdä kustannusryhmäkohtaisia analyyseja ja raportteja varastoon liittyvistä tiedoista, keskeneräisistä töistä (KET-töistä) ja myytyjen tuotteiden kustannuksista (MTKUST) yksitasoisessa ja monitasoisessa muodossa sekä summamuodossa. Kun kustannuserittely on aktiivinen, valmistetun nimikkeen kustannuksen aktivointi aiheuttaa kustannusryhmän segmentoinnin tallentamisen nimikkeen kustannustietoihin. 
 

@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: 46c8ecf8a6988c32d0202c631bef6901f467bb89
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -80,17 +80,37 @@ Jos organisaatiossasi on toiminnallinen näkökulma ja keskitytään tuottoihin 
 ### <a name="create-projects"></a>Luo projektit
 
 Voit luoda kuusi eri projektityyppiä Microsoft Finance and Operationsissa. Kullekin projektityypille on määritetty eri kustannukset ja tuotot tunnistamista varten. Valitsemasi projektityyppi määräytyy projektin tarkoituksen mukaan. Seuraavassa taulukossa kuvataan jokaisen projektityypin tavallinen käyttötarkoitus.
-
-                                                                                                                                                                         |
-
-| Projektityyppi      | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aika ja materiaali | Aika- ja materiaaliprojekteissa asiakasta laskutetaan kaikista projektin toteutuneista kustannuksista. Näihin kuluihin sisältyvät tuntien kustannukset, kulut, nimikkeet ja maksut.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Kiinteä hinta       | Kiinteähintaisten projektien laskut koostuvat ennakkolaskutapahtumista. Kiinteähintainen projekti laskutetaan projektisopimukseen perustuvan laskutusaikataulun mukaisesti. Kiinteähintaisen projektien tuotto voidaan laskea ja kirjata koko projektin ajan käyttämällä valmistumisprosenttimenetelmää. Vaihtoehtoisesti, tuotto voidaan laskea ja kirjata, kun projekti on valmis, käyttämällä valmissopimus-menetelmää. Yritykset voivat usein hyötyä käyttämällä KET-arvoa projektin tai projektien ryhmän valmiusasteen laskentaan.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Investointi        | Investointiprojektit ovat projekteja, jotka eivät tuota tuloja välittömästi. Niitä käytetään tavallisesti pitkäaikaisissa, sisäisissä projekteissa, joissa kustannukset täytyy aktivoida. Investointiprojektille voidaan tallentaa vain nimikkeiden, tuntien ja kulujen kustannukset. Investointiprojektiin kustannuksia seurataan ja hallitaan käyttämällä arviointitoimintoa. Investointiprojekteille voidaan määrittää valinnainen enimmäisaktivointi. Investointiprojektin edistyessä kirjaat kustannuksia KET-tileille, joilla kustannukset pidetään projektin valmistumiseen saakka. Kun projekti eliminoidaan, KET-arvo siirretään käyttöomaisuuteen, kirjanpitotilille tai uuteen projektiin. Huomautus: Investointiprojektien tapahtumia ei näytetä **Kirjaa kustannukset**-, **Jaksota tuotot**- tai **Luo laskutusehdotukset** -sivulla.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Kustannusprojekti      | Vastaavasti kuin investointiprojekteja, kustannusprojekteja käytetään tavallisesti sisäisten projektien seurantaan ja niihin voidaan tallentaa vain tunnit, kulut ja nimikkeet. Kustannusprojektit ovat kuitenkin tavallisesti lyhyempiä kuin investointiprojektit. Lisäksi, investointiprojekteista poiketen, kustannusprojekteja ei voida aktivoida tasetileille. Sen sijaan niiden projektitapahtumat kirjataan vain tulostileihin. **HUOMAUTUS** Kustannusprojektien tapahtumia ei näytetä **Kirjaa kustannukset**-, **Jaksota tuotot**- tai **Luo laskutusehdotukset** -sivulla. Kustannusprojekteja käytetään pääasiassa sisäisten projektien valvontaan, joten niiden ei yleensä tarvitse liittyä asiakastiliin. Kuitenkin asetusten vaatiessa nimikevaatimuksien luontia ostotilauksia varten, täytyy kustannusprojekti yhdistää asiakkaan kanssa. Tämä yhdistäminen tarvitaan, koska nimiketarpeita hallitaan myyntitilausriveinä ja järjestelmä edellyttää, että asiakas on määritettävä. Tämä asetus ei kuitenkaan aiheuta nimiketarpeiden automaattista luomista ostotilauksesta. Kustannusprojekteissa **luo nimiketarve**-asetusta ei oteta huomioon. Tarvitessasi nimiketarvetta kustannusprojektissa voit luoda sen manuaalisesti, edellyttäen että asiakas on liitetty projektiin. |
-| Sisäinen          | Sisäisiä projekteja käytetään kustannusten seurantaan organisaatiosi sisäisessä projektissa. Sisäinen projekti voi tarjota suunnittelutyökalun resurssien kulutuksen hallintaan. **Huomautus:** Sisäisten projektien tapahtumia ei näytetä **Jaksota tuotot**- tai **Luo laskutusehdotukset** -sivulla.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Aika              | Aikaprojekteja käytetään seuraamaan aikaa, joka liitetään ei-veloitettaviin ja tuottamattomiin toimintoihin, kuten projektiin, joka seuraa työntekijöiden sairaslomia. Aikaprojektien tapahtumia ei kirjata kirjanpitoon. Sen sijaan ne on sisällytetty työntekijän käyttöasteen raportteihin. Aikaprojekteissa voi tallentaa vain tuntitapahtumia. Voit rekisteröidä nämä tunnit projektiin kirjauskansion tai aikaraportin avulla. Kun tunnit kirjataan, ne näkyvät projektin tapahtumina, joilla ei ole vastaavaa tositetapahtumaa. **Huomautus:** Aikaprojektien tapahtumia ei näytetä **Kirjaa kustannukset**-, **Jaksota tuotot**- tai **Luo laskutusehdotukset** -sivulla.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+                                                                                                            
+<table>
+  <tr>
+    <td>Projektityyppi</th>
+    <td>Kuvaus</th>
+  </tr>
+  <tr>
+    <td>Aika ja materiaali</td>
+    <td>Aika- ja materiaaliprojekteissa asiakasta laskutetaan kaikista projektin toteutuneista kustannuksista. Näihin kuluihin sisältyvät tuntien kustannukset, kulut, nimikkeet ja maksut.</td>
+  </tr>
+  <tr>
+    <td>Kiinteä hinta</td>
+    <td>Kiinteähintaisten projektien laskut koostuvat ennakkolaskutapahtumista. Kiinteähintainen projekti laskutetaan projektisopimukseen perustuvan laskutusaikataulun mukaisesti. Kiinteähintaisen projektien tuotto voidaan laskea ja kirjata koko projektin ajan käyttämällä valmistumisprosenttimenetelmää. Vaihtoehtoisesti, tuotto voidaan laskea ja kirjata, kun projekti on valmis, käyttämällä valmissopimus-menetelmää. Yritykset voivat usein hyötyä käyttämällä KET-arvoa projektin tai projektien ryhmän valmiusasteen laskentaan.</td>
+  </tr>
+  <tr>
+    <td>Investointi</td>
+    <td>Investointiprojektit ovat projekteja, jotka eivät tuota tuloja välittömästi. Niitä käytetään tavallisesti pitkäaikaisissa, sisäisissä projekteissa, joissa kustannukset täytyy aktivoida. Investointiprojektille voidaan tallentaa vain nimikkeiden, tuntien ja kulujen kustannukset. Investointiprojektiin kustannuksia seurataan ja hallitaan käyttämällä arviointitoimintoa. Investointiprojekteille voidaan määrittää valinnainen enimmäisaktivointi. Investointiprojektin edistyessä kirjaat kustannuksia KET-tileille, joilla kustannukset pidetään projektin valmistumiseen saakka. Kun projekti eliminoidaan, KET-arvo siirretään käyttöomaisuuteen, kirjanpitotilille tai uuteen projektiin. <br></br> <strong>HUOMAUTUS:</strong> Investointiprojektien tapahtumia ei näytetä <strong>Kirjaa kustannukset<strong>, <strong>Jaksota tuotot</strong>, tai<strong>Luo laskutusehdotukset</strong> -sivulla.</td>
+  </tr>
+  <tr>
+    <td>Kustannusprojekti</td>
+    <td>Vastaavasti kuin investointiprojekteja, kustannusprojekteja käytetään tavallisesti sisäisten projektien seurantaan ja niihin voidaan tallentaa vain tunnit, kulut ja nimikkeet. Kustannusprojektit ovat kuitenkin tavallisesti lyhyempiä kuin investointiprojektit. Lisäksi, investointiprojekteista poiketen, kustannusprojekteja ei voida aktivoida tasetileille. Sen sijaan niiden projektitapahtumat kirjataan vain tulostileihin. <br></br> <strong>HUOMAUTUS:</strong> Kustannusprojektien tapahtumia ei näytetä <strong>Kirjaa kustannukset</strong>-, <strong>Jaksota tuotot</strong> tai <strong>Luo laskutusehdotukset</strong> -sivulla. Kustannusprojekteja käytetään pääasiassa sisäisten projektien valvontaan, joten niiden ei yleensä tarvitse liittyä asiakastiliin. Kuitenkin asetusten vaatiessa nimikevaatimuksien luontia ostotilauksia varten, täytyy kustannusprojekti yhdistää asiakkaan kanssa. Tämä yhdistäminen tarvitaan, koska nimiketarpeita hallitaan myyntitilausriveinä ja järjestelmä edellyttää, että asiakas on määritettävä. Tämä asetus ei kuitenkaan aiheuta nimiketarpeiden automaattista luomista ostotilauksesta. Kustannusprojekteissa <strong>luo nimiketarve</strong>-asetusta ei oteta huomioon. Tarvitessasi nimiketarvetta kustannusprojektissa voit luoda sen manuaalisesti, edellyttäen että asiakas on liitetty projektiin.</td>
+  </tr>
+  <tr>
+    <td>Sisäinen</td>
+    <td>Sisäisiä projekteja käytetään kustannusten seurantaan organisaatiosi sisäisessä projektissa. Sisäinen projekti voi tarjota suunnittelutyökalun resurssien kulutuksen hallintaan. <br></br><strong>HUOMAUTUS:<strong> Sisäisten projektien tapahtumia ei näytetä <strong>Jaksota tuotot</strong> tai <strong>Luo laskutusehdotukset</strong> -sivulla.</td>
+  </tr>
+  <tr>
+    <td>Aika</td>
+    <td>Aikaprojekteja käytetään seuraamaan aikaa, joka liitetään ei-veloitettaviin ja tuottamattomiin toimintoihin, kuten projektiin, joka seuraa työntekijöiden sairaslomia. Aikaprojektien tapahtumia ei kirjata kirjanpitoon. Sen sijaan ne on sisällytetty työntekijän käyttöasteen raportteihin. Aikaprojekteissa voi tallentaa vain tuntitapahtumia. Voit rekisteröidä nämä tunnit projektiin kirjauskansion tai aikaraportin avulla. Kun tunnit kirjataan, ne näkyvät projektin tapahtumina, joilla ei ole vastaavaa tositetapahtumaa. <br></br><strong>HUOMAUTUS:</strong> Aikaprojektien tapahtumia ei näytetä <strong>Kirjaa kustannukset</strong>, <strong>Jaksota tuotot</strong> tai <strong>Luo laskutusehdotukset</strong> -sivulla.</td>
+  </tr>
+</table>
 
 
 ### <a name="assign-workers-categories-and-resources"></a>Työntekijöiden, luokkien ja resurssien määrittäminen
@@ -239,11 +259,12 @@ Seuraavassa taulukossa kuvataan laskentamenetelmät projektin jäljellä olevill
 <li>Vertaa ennustetapahtumia todellisiin tapahtumiin.</li>
 <li>Ylläpidä, pienennä tai suurenna näitä arvioita seuraavalle kaudelle.</li>
 </ol>
-Finance and Operations ei vähennä ennustettuja arvioita automaattisesti. Siksi on suositeltavaa säilyttää alkuperäinen ennustemalli kiinteähintaisessa projektissa, jotta sitä voi käyttää vertailussa, kun projekti on valmis. &gt; [!NOTE] &gt; Kun tätä menetelmää käytetään, on käytettävä vähintään kahta ennustemallia. Alkuperäinen ennuste tulee sisältää yhteen malliin. Toista mallia varten sinun on kopioitava ennustetapahtumat toisesta mallista. Tämä kenttä on voimassa oleva vain kiinteähintaisissa projekteissa ja investointiprojekteissa.</td>
+Finance and Operations ei vähennä ennustettuja arvioita automaattisesti. Siksi on suositeltavaa säilyttää alkuperäinen ennustemalli kiinteähintaisessa projektissa, jotta sitä voi käyttää vertailussa, kun projekti on valmis. 
+<br></br> <strong>HUOMAUTUS:</strong> Kun tätä menetelmää käytetään, on käytettävä vähintään kahta ennustemallia. Alkuperäinen ennuste tulee sisältää yhteen malliin. Toista mallia varten sinun on kopioitava ennustetapahtumat toisesta mallista. Tämä kenttä on voimassa oleva vain kiinteähintaisissa projekteissa ja investointiprojekteissa.</td>
 </tr>
 <tr class="odd">
 <td>Jäljellä oleva budjetti</td>
-<td>Tässä menetelmässä käytetään jäljellä olevaa budjettimallia laskemaan projektin jäljellä olevat kustannukset. Tätä menetelmää käytettäessä toteutuneiden kustannusten ja jäljellä olevan budjettimallin ennustetut summat lasketaan yhteen. Tuloksena saadaan todelliset kustannukset. Ennen kuin käytät tätä tapaa, jäljellä oleva budjettimalli on määritettävä vähentämään tapahtumia, jotka perustuvat toteutuneisiin järjentelmään kirjattuihin tapahtumiin. <strong>Ennustemallit</strong>-sivulla, varmista että sivut on merkitty <strong>ennusteen automaattinen vähennys</strong> -ryhmään. Yleensä, jäljellä oleva budjetti kopioidaan alkuperäisestä budjetista. Kun tapahtumat syötetään, jäljellä olevan budjetin tapahtumat vähennetään. Projektin edetessä, jos toteat, että jäljellä olevaa budjettia on muutettava, ennustetapahtumat veloitetaan jäljellä olevasta budjetista. <strong>Huomautus:</strong> Tätä menetelmää voi käyttää vain, jos arvioon on liitetty ennustemalli.</td>
+<td>Tässä menetelmässä käytetään jäljellä olevaa budjettimallia laskemaan projektin jäljellä olevat kustannukset. Tätä menetelmää käytettäessä toteutuneiden kustannusten ja jäljellä olevan budjettimallin ennustetut summat lasketaan yhteen. Tuloksena saadaan todelliset kustannukset. Ennen kuin käytät tätä tapaa, jäljellä oleva budjettimalli on määritettävä vähentämään tapahtumia, jotka perustuvat toteutuneisiin järjentelmään kirjattuihin tapahtumiin. <strong>Ennustemallit</strong>-sivulla, varmista että sivut on merkitty <strong>ennusteen automaattinen vähennys</strong> -ryhmään. Yleensä, jäljellä oleva budjetti kopioidaan alkuperäisestä budjetista. Kun tapahtumat syötetään, jäljellä olevan budjetin tapahtumat vähennetään. Projektin edetessä, jos toteat, että jäljellä olevaa budjettia on muutettava, ennustetapahtumat veloitetaan jäljellä olevasta budjetista. <br></br> <strong>HUOMAUTUS:</strong> Menetelmää voi käyttää vain, jos arvioon on liitetty ennustemalli.</td>
 </tr>
 <tr class="even">
 <td>Kuten edellinen arvio</td>
@@ -318,11 +339,19 @@ Kustannusten maksupäivä ei ole laskettu puskuripäiville. Kun projekti on valm
 
 Kun kaikki myynti- ja toimittajalaskut ovat valmiita, voit tarkastella kenttien välistä suhdetta **kassavirta**-sivulla ja kentillä **projektin tiliotteet** -sivulla.
 
-| Kassavirta-sivu | Projektilaskelmat-sivu |
-|----------------|-------------------------|
-| Kassavirta sisään   | Tuotto                 |
-| Kassavirta ulos  | Kokonaiskustannukset              |
-| Nettokassavirta | Käyttökate            |
+:::row::: :::column:::
+        #### Cash flow page
+        - Cash inflows 
+        - Cash outflows
+        - Net cash flows
+    :::column-end:::
+    :::column:::
+        #### Project statements page
+        - Revenue
+        - Total cost
+        - Gross margin
+    :::column-end:::
+:::row-end:::
 
 ### <a name="review-costs"></a>Tarkista kustannukset
 
@@ -409,8 +438,4 @@ Kun laskelma lasketaan, voit tarkastella eri välilehdissä seuraavat tiedot **p
 -   **Kulutus** tietoa tuntien käytöstä, nimikkeistä, kuluista ja palkanlaskentatapahtumista.
 -   **Lasku** – tietoja laskuista ja ennakkolaskutuksesta.
 -   **Tuntihinta** – tuotto- ja kustannustileille kirjattujen tuntien tuntihinnat.
-
-
-
-
 

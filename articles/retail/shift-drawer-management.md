@@ -1,9 +1,9 @@
 ---
 title: Vuoron- ja kassanhallinta
-description: "Tässä artikkelissa käsitellään kahden vähittäismyynnin myyntipistetyypin vuoron määrittämistä ja käyttöä. Vuoro voi olla jaettu tai erillinen. Useat käyttäjät voivat käyttää jaettuja vuoroja useassa paikassa, kun taas vain yksi työntekijä voi käyttää erillistä vuoroa."
-author: rubencdelgado
+description: "Tässä ohjeaiheessa käsitellään miten määritetään ja käytetään vuoroja vähittäiskaupan myyntipisteessä (POS)."
+author: jblucher
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
-ms.openlocfilehash: c1483d3240d266845cea7789b70c038cb98fdfcc
+ms.sourcegitcommit: da5519eb0746347905e3b3d3d81161850c429f57
+ms.openlocfilehash: f0856a3a36ff97773c0fadbe94fe680762c5206b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/22/2018
 
 ---
 
@@ -31,127 +31,109 @@ ms.lasthandoff: 03/22/2018
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa käsitellään kahden vähittäismyynnin myyntipistetyypin vuoron määrittämistä ja käyttöä. Vuoro voi olla jaettu tai erillinen. Useat käyttäjät voivat käyttää jaettuja vuoroja useassa paikassa, kun taas vain yksi työntekijä voi käyttää erillistä vuoroa.
+Tässä ohjeaiheessa käsitellään miten määritetään ja käytetään vuoroja vähittäiskaupan myyntipisteessä (POS). 
 
-Vähittäismyynnin myyntipistevuoroja on kahdenlaisia: erillinen ja jaettu. Yksi työntekijä kerrallaan voi käyttää erillistä vuoroa. Useat käyttäjät voivat käyttää jaettua vuoroa useassa paikassa. Niillä voikin luoda tehokkaasti yhden vuoron useille myymälän työntekijöille.
+Microsoft Dynamics 365 for Retailissa termi *vuoro* kuvaa myyntipisteen tapahtumatietojen keräämistä kahden päivämäärän välillä. Kunkin vuoron tavoitteeksi asetettua rahasummaa verrataan summaan, joka on laskettu ja ilmoitettu.
 
-## <a name="standalone-shifts"></a>Erilliset vuorot
-Erillisiä vuoroja käytetään perinteisissä kiinteissä myyntipisteskenaarioissa, joissa kassa täsmätään erikseen jokaisessa myyntipisteen kassakoneessa. Esimerkiksi elintarvikemyymälässä on tavallisesti useita kiinteitä myyntipisteen kassakoneita ja kullekin kassakoneelle on määritetty kassa. Tässä tapauksessa jokaisessa kassakoneessa käytetään todennäköisesti erillistä vuoroa ja kassa vastaa kassasta tai kassakoneen fyysisestä kassasta. Erillinen vuoro käsittää kaikki kassakoneen tapahtumat kassan työvuoron aikana. Tehtäviä voivat olla kassaan talletettu alkusumma, kaikki poistot ja lisäykset kassaan eri toiminnoilla, kuten toimitukset pankkiin ja liukuva merkintä, ja kassan laskeminen maksuvälineittäin vuoron lopussa.
+Yleensä vuorot avataan työpäivän alussa. Tässä vaiheessa käyttäjä ilmoittaa alkusumman, joka sisältää pohjakassan määrän. Myyntitapahtumia suoritetaan läpi päivän. Päivän lopussa kassa lasketaan ja sulkemisajan summat ilmoitetaan. Vuoro suljetaan ja Z-raportti luodaan. Z-raportti osoittaa yli- tai alijäämät.
 
-### <a name="set-up-a-stand-alone-shift"></a>Määritä erillinen vuoro
+## <a name="typical-shift-scenarios"></a>Tyypillisiä työvuoron tilanteita
+Retail sisältää erilaisia konfiguraatiomahdollisuuksia ja POS-toimintoja, jotka tukeva monia erilaisia myyntipisteen prosesseja päivän päättyessä. Tässä osassa kuvataan muutamia tyypillisiä työvuorotilanteita.
 
-Erillinen vuoro määritetään kassatasolla. Tässä menettelyssä käsitellään erillisen vuoron määrittäminen myyntipisteen kassakoneessa.
+### <a name="fixed-till"></a>Kiinteä kassa
+Perinteisesti tämä tilanne on eniten käytetty. Sitä käytetään edelleen kattavasti. ”Kiinteän kassan” vuorossa vuoro ja kassa liitetään tiettyyn kassakoneeseen. Niitä ei siirretä yhdestä kassakoneesta toiseen. ”Kiinteä kassan” vuoroa voi käyttää joko yksi käyttäjä tai se voidaan jakaa useiden käyttäjien kesken. ”Kiinteä kassan” vuorot eivät vaadi mitään erityistä määrittelyä.
 
-1.  Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **Myyntipisteiden asetukset** &gt; **Myyntipisteiden profiilit** &gt; **Laiteprofiilit**.
-2.  Valitse erillisessä vuorossa käytettävä laiteprofiili.
-3.  Vahvista **Kassa**-pikavälilehdessä, että **Jaetun vuoron kassa** -asetukseksi on valittu **Ei**.
-4.  Valitse **Tallenna**.
-5.  Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Kassakoneet**.
-6.  Valitse ensin kassakone, jossa käytetään erillistä vuoroa, ja sitten **Muokkaa**.
-7.  Valitse **Laiteprofiili**-kentässä sama laiteprofiili, jonka valitsit vaiheessa 2.
-8.  Valitse **Tallenna**.
-9.  Valitse **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulu**.
-10. Synkronoi myyntipisteen muutokset valitsemalla ensin **1090**-jakeluaikataulu ja sitten **Suorita nyt**.
+### <a name="floating-till"></a>Juokseva kassa
+”Juoksevassa kassassa” vuoro- ja kassalaatikko voidaan siirtää yhdestä kassakoneesta toiseen. Vaikka kassakoneessa voi olla vain yksi aktiivinen vuoro kassalaatikkoa kohden, vuorot voi keskeyttää ja jatkaa sitten myöhemmin tai eri kassakoneessa.
 
-### <a name="use-a-stand-alone-shift"></a>Käytä erillistä vuoroa
+Esimerkiksi kaupassa on kaksi kassakonetta. Jokainen kassapääte avataan päivän alussa, kun myyjä avaa uuden vuoron ja toimittaa aloitussumman. Yhden kassan ollessa valmiina tauolle, kyseinen työntekijä keskeyttää vuoron ja poistaa kassapäätteen kassan. Kassakone on silloin muiden myyjien käytettävissä. Toinen kassanhoitaja voi kirjautua ja avata oman vuoronsa kassalla. Kun ensimmäisen kassan tauko on päättynyt, kassanhoitaja voi jatkaa vuoroaan, kun jokin muu kassakone on käytettävissä. ”Juoksevan kassan” vuorot eivät vaadi mitään erityistä määrittelyä tai lupaa.
 
-1.  Kirjaudu myyntipisteeseen.
-2.  Jos yhtään avointa vuoroa ei ole, valitse **Avaa uusi vuoro**.
-3.  Valitse **Tilitä aloitussumma** -toiminto ja määritä kassaan työpäivän alussa lisättävän kassan määrä.
-4.  Tee muutamia tapahtumia.
-5.  Laske jäljellä oleva kassa valitsemalla päivän lopussa **Laske kassa maksuvälineittäin**.
-6.  Anna kassan summa ja tallenna maksuvälineittäin laskettu kassa valitsemalla **Tallenna**.
-7.  Sulje vuoro valitsemalla **Sulje vuoro**.
+### <a name="single-user"></a>Yksi käyttäjä
+Käteisen ja kassalaatikkoa koskevan vastuun varmistamiseksi monet vähittäiskaupat sallivat vain yhden käyttäjän vuoroa kohti. Jos vain yksi käyttäjä voi käyttää työvuoroon liitettyä kassaa, kyseistä käyttäjää voidaan pitää yksin vastuussa mahdollisista eroavaisuuksista. Jos vuorossa on useampi kuin yksi käyttäjä, on vaikea määrittää kuka teki virheen tai kuka voi yrittää varastaa kassasta.
 
-**Huomautus:** Vuoron aikana on käytettävissä muita toimintoja sen mukaan, mitä liiketoimintaprosesseja on käytössä. **Toimitus kassakaappiin**-, **Toimitus pankkiin**- ja **Maksuvälineen poisto** -toiminnoilla voidaan poistaa rahaa kassasta päivän aikana tai ennen vuoron sulkemista. Jos kassa käy vähiin, kassaa voidaan lisätä **Liukuva merkintä** -toiminnolla.
+### <a name="multiple-users"></a>Useita käyttäjiä
+Jotkin vähittäismyyjät ovat valmiit uhraamaan vastuullisuuden tason, jonka yksi käyttäjä vuorossa tarjoaa ja sallii useita käyttäjiä vuorossa. Tämä on normaali käytäntö tilanteessa, jossa käyttäjiä on enemmän kuin kassapäätteitä ja joustavuuden ja nopeuden tarve on merkittävämpi kuin mahdolliset tappiot. On myös tyypillistä, että myymäläpäälliköillä ei ole omaa vuoroa, mutta he voivat tarpeen mukaan käyttää minkä tahansa kassan vuoroa. Kirjautuakseen sisään ja käyttääkseen vuoroa, jonka toinen käyttäjä on avannut, hänellä on oltava **Salli useita vuorokirjautumisia** -POS-käyttöoikeus.
 
-## <a name="shared-shifts"></a>Jaetut vuorot
-Jaettua vuoroa käytetään ympäristössä, jossa kassalla tai kassaryhmällä on useita käyttäjiä työpäivän aikana. Jaettua vuoroa käytetään yleensä mobiilimyyntipisteympäristöissä. Mobiiliympäristössä kassoja ei määritetä henkilökohtaisesti eikä yksittäinen henkilö vastaa tietystä kassasta. Sen sijaan kaikkien kassojen on voitava hoitaa myynti ja täydentää kassaa heitä lähimmässä kassassa. Tässä skenaariossa jaetut kassat sisältyvät jaettuun vuoroon. Kaikki jaetun vuoron kassat sisältyvät samaan vuoroon, jotta vuoron kassanhallintaan liittyvät toimet voidaan hoitaa. Vuoron alkusumman pitäisikin siksi sisältää kaikkien jaettuun vuoroon sisältyvin kassojen yhteiskassavarat. Samoin kassan laskeminen maksuvälineittäin on kaikkien jaettuun vuoroon sisältyvin kassojen yhteiskassavarat. **Huomautus:** Kussakin myymälässä voi olla avoinna samanaikaisesti vain yksi jaettu vuoro. Samassa myymälässä voi käyttää jaettuja vuoroja ja erillisiä vuoroja.
+### <a name="shared-shift"></a>Jaettu vuoro
+”Jaettuun vuoro" -konfiguraatio sallii vähittäismyyjillä olevan yhden vuoron useissa kassoissa, käteislaatikoissa ja käyttäjillä. Jaetulla vuorolla on yksi aloitussumma ja yksi sulkemissumma, joihin on laskettu kaikkien käteislaatikoiden summat. Jaettu vuoro on tyypillinen, kun käytetään kannettavia laitteita. Tällöin kassalaatikkoa ei ole varattu tietylle kassapäätteelle. Sen sijaan kaikki kassapäätteet voivat jakaa yhden kassalaatikon.
 
-### <a name="set-up-a-shared-shift"></a>Määritä jaettu vuoro
+Voidakseen käyttää jaettuja vuoroja myymälässä, kassa on määritettävä ”jaettuksi vuorokassaksi” kohdassa **Retail \> asetukset \> Myyntipisteen asetukset \> POS-profiilit \> laitteistojen laiteprofiilit \> kassalaatikko**. Käyttäjillä on oltava vähintään jaetut vuorokäyttöoikeudet (Salli hallinnoi jaettua vuoroa ja Salli jaettu vuoro).
 
-1.  Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **Myyntipisteiden asetukset** &gt; **Myyntipisteiden profiilit** &gt; **Laiteprofiilit**.
-2.  Valitse jaetussa vuorossa käytettävä laiteprofiili.
-3.  Valitse **Kassa**-pikavälilehdessä **Jaetun vuoron kassa** -asetukseksi **Kyllä**.
-4.  Valitse **Tallenna**.
-5.  Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Kassakoneet**.
-6.  Valitse ensin kassakone, jossa käytetään jaettua vuoroa, ja sitten **Muokkaa**.
-7.  Valitse **Laiteprofiili**-kentässä sama laiteprofiili, jonka valitsit vaiheessa 2.
-8.  Valitse **Tallenna**.
-9.  Valitse **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulu**.
-10. Synkronoi myyntipisteen muutokset valitsemalla ensin **1090**-jakeluaikataulu ja sitten **Suorita nyt**.
+> [!NOTE]
+> Kussakin myymälässä voi olla avoinna samanaikaisesti vain yksi jaettu vuoro. Samassa myymälässä voi käyttää jaettuja vuoroja ja erillisiä vuoroja.
 
-### <a name="use-a-shared-shift"></a>Käytä jaettua vuoroa
+## <a name="shift-and-drawer-operations"></a>Vuoro- ja kassatoiminnot
+Vuoron tilaa voidaan muuttaa tai kassassa olevaa rahasummaa voidaan suurentaa tai pienentää eri toiminnoilla. Seuraavassa osassa käsitellään näitä Microsoft Dynamics 365 for Retail Modern POS:n ja Cloud POS:n vuorotoimintoja.
 
-1.  Kirjaudu myyntipisteeseen.
-2.  Jos myyntipistettä ei ole vielä liitetty laiteasemaan, aktivoi jaetun vuoron laiteasema valitsemalla ensin **Muu kuin kassatoiminto** ja sitten **Valitse laiteasema** -toiminto. Tämä vaihe on tarvittava tehdä vain, kun kassakone lisätään ensimmäisen kerran jaettuun vuoroympäristöön.
-3.  Kirjaudu ulos myyntipisteestä ja kirjaudu takaisin sisään.
-4.  Valitse **Luo uusi vuoro**.
-5.  Valitse **Tilitä aloitussumma**.
-6.  Anna myymälän kaikkien jaettuun vuoroon sisältyvien kassojen aloitussumma ja valitse sitten **Tallenna**.
-    -   Lisää aloitussumman osa jokaiseen seuraavaan kassaan, aktivoi laiteasema **Valitse laiteasema**-toiminnolla.
-    -   Voit lisätä tietyn kassan kassaan **Avaa kassa** -toiminnolla.
-    -   Jatka, kunnes kaikilla jaetun vuoron kassoilla on osa aloitussummaa.
+### <a name="open-shift"></a>Avoin vuoro
+Myyntipisteen kirjanpitotapahtumaan eli myyntiin, palautukseen tai asiakastilaukseen päättyvien toimintojen suorittaminen edellyttää, että käyttäjällä on aktiivinen ja avoin vuoro.
 
-7.  Avaa päivän lopussa kukin kassa ja poista kassavarat.
-8.  Kun olet poistanut kassavarat viimeisestä kassasta, laske kaikki kassat.
-9.  Laske kaikkien jaetun vuoron kassojen kokonaiskassa **Laske kassa maksuvälineittäin** -toiminnolla.
-10. Sulje jaettu vuoro **Sulje vuoro** -toiminnolla.
+Käyttäjä kirjautuessa sisään myyntipisteessä, järjestelmä tarkistaa ensin, onko aktiivinen vuoro kassalla nykyisen käyttäjän käytettävissä. Mikäli aktiivista vuoroa ei ole käytettävissä, käyttäjä voi avata uuden vuoron, jatkaa aiemmin luotua vuoroa tai kirjautua sisään muuhun kuin kassatilaan järjestelmän määrityksistä ja käyttäjien käyttöoikeuksista riippuen.
 
-## <a name="shift-operations"></a>Vuorotoiminnot
-Vuoron tilaa voidaan muuttaa tai kassassa olevaa rahasummaa voidaan suurentaa tai pienentää eri toiminnoilla. Seuraavassa osassa käsitellään näitä Dynamics 365 for Retail Modern POS:n ja Cloud POS:n vuorotoimintoja.
+### <a name="declare-start-amount"></a>Tilitä aloitussumma
+Tämä toiminto on usein ensimmäisenä juuri avatussa vuorossa. Tätä toimintoa varten käyttäjät määrittävät käteissumman, joka kassassa on vuoron alkaessa. Tämä toiminto on tärkeä, koska yli-/alijäämä työvuoroa suljettaessa tehtävässä laskelmassa otetaan huomioon alkusummana.
 
-**Avoin vuoro**
+### <a name="float-entry"></a>Liukuva merkintä
+*Liukuvat merkinnät* ovat muita kuin myyntitapahtumia, jotka suoritetaan aktiivisen vuoron aikana. Ne lisäävät kassassa olevan käteisen määrää. Tyypillinen esimerkki liukuvasta merkinnästä on vaihtorahan lisääminen kassaan, kun käteistä on vähän.
 
-Myyntipisteen kirjanpitotapahtumaan eli myyntiin, palautukseen tai asiakastilaukseen päättyvien toimintojen suorittaminen edellyttää, että käyttäjällä on aktiivinen ja avoin vuoro.  
+### <a name="tender-removal"></a>Maksuvälineen poisto
+*Maksuvälineen poistot* ovat muita kuin myyntitapahtumia, jotka suoritetaan aktiivisen vuoron aikana, kun kassassa olevan käteisen määrää halutaan vähentää. Tätä toimintoa käytetään useimmiten yhdessä eri vuoron liukuvan merkinnän kanssa. Esimerkiksi kassa 1 sisältää vain vähän käteistä, joten kassan 2 käyttäjä suorittaa maksuvälineen poiston ja pienentää kassan summaa. Käyttäjä kassalla 1 tekee liukuvan merkinnän lisätäkseen oman kassansa rahan määrää.
 
-Myyntipisteeseen kirjauduttaessa järjestelmä tarkistaa ensimmäiseksi, onko käyttäjällä aktiivista vuoroa nykyisessä kassakoneessa. Jos näin ei ole, käyttäjä voi avata uuden vuoron, jatkaa aiemmin luotua vuoroa tai kirjautua sisään muuhun kuin kassatilaan järjestelmän määrityksistä ja käyttäjien käyttöoikeuksista riippuen.
-
-**Tilitä aloitussumma**
-
-Tämä toiminto on usein ensimmäisenä juuri avatussa vuorossa. Käyttäjät määrittävät käteissumman, joka kassassa on vuoron alkaessa. Tämä on tärkeää, koska vuoroa suljettaessa tapahtuvan laskennan yli- tai alijäämä selittää tämän summan.
-
-**liukuva merkintä**
-
-Liukuvat merkinnät ovat muita kuin myyntitapahtumia, jotka suoritetaan aktiivisen vuoron aikana. Ne lisäävät kassassa olevan käteisen määrää. Yleinen esimerkki liukuvasta merkinnästä on muutoksen lisääminen kassaan, kun käteistä on vähän.
-
-**Maksuvälineen poisto**
-
-Maksuvälineen poistot ovat muita kuin myyntitapahtumia, jotka suoritetaan aktiivisen vuoron aikana, kun kassassa olevan käteisen määrää halutaan vähentää. Tätä käytetään useimmiten yhdessä eri vuoron liukuvan merkinnän kanssa. Esimerkiksi kassa 1 sisältää vain vähän käteistä, joten kassan 2 käyttäjä suorittaa maksuvälineen poiston ja pienentää kassan summaa. Kassakoneen 1 voisi sitten suurentaa summaa tekemällä liukuvan merkinnän.
-
-**Keskeytä vuoro**
-
-Käyttäjät voivat keskeyttää aktiivisen vuoronsa ja vapauttaa tilaa valitussa kassakoneessa toiselle käyttäjälle tai siirtää vuoronsa toiseen kassakoneeseen (jota kutsutaan usein kelluvaksi kassaksi). 
+### <a name="suspend-shift"></a>Keskeytä vuoro
+Käyttäjät voivat keskeyttää aktiivisen vuoronsa ja vapauttaa tilaa valitussa kassakoneessa toiselle käyttäjälle tai siirtää vuoronsa toiseen kassakoneeseen (tässä tapauksessa vuoroa kutsutaan usein kelluvan kassan vuoroksi).
 
 Vuoron keskeyttäminen estää vuoron uudet tapahtumat tai muutokset ennen vuoron jatkamista.
 
-**Jatka vuoroa**
+### <a name="resume-shift"></a>Jatka vuoroa
+Tämä toiminto antaa käyttäjälle mahdollisuuden jatkaa keskeytettyä vuoroa kassakoneessa, jossa ei ole vielä aktiivista vuoroa.
 
-Tämä toiminto antaa käyttäjälle mahdollisuuden jatkaa keskeytettyä vuoroa kassakoneessa, jos ei ole vielä aktiivista vuoroa.
+### <a name="tender-declaration"></a>Kassan laskeminen maksuvälineittäin
+Tämä toiminto suoritetaan tämän hetkisen kassan kokonaissumman määrittämiseksi. Käyttäjät suorittavat useimmiten tämän toiminnon ennen kuin sulkevat vuoron. Tätä määritettyä arvoa verrataan odotettuun vuoron summaan yli- tai alijäämäsummaa laskettaessa.
 
-**Kassan laskeminen maksuvälineittäin**
+### <a name="safe-drop"></a>Toimitus kassakaappiin
+Aktiivisessa vuorossa kassakaappiin toimitukset voidaan suorittaa milloin tahansa. Tämä toiminto poistaa rahaa kassasta, jotta se voidaan siirtää turvallisempaan paikkaan, kuten toimiston kassakaappiin. Kassakaappiin toimitukseen kirjattu kokonaissumma sisältyy edelleen vuoron summiin, mutta sitä ei tarvitse laskea osaksi kassan laskemista maksuvälineittäin.
 
-Kassan laskeminen maksuvälineittäin on toiminto, jonka tekemällä käyttäjä määrittää kassassa kyseisellä hetkellä olevan käteisen yhteissumman. Useimmiten tämä tehdään ennen vuoron sulkemista. Tätä arvoa verrataan odotettuun vuoroon yli- tai alijäämäsumman laskettaessa.
-
-**Toimitus kassakaappiin**
-
-Aktiivisessa vuorossa kassakaappiin toimitukset voidaan suorittaa milloin tahansa. Tämä toiminto poistaa rahaa kassasta, jotta se voidaan siirtää turvallisempaan paikkaa, kuten toimiston kassakaappiin. Kassakaappiin toimitukseen kirjattu kokonaissumma sisältyy edelleen vuoron summiin, mutta sitä ei tarvitse laskea osaksi kassan laskemista maksuvälineittäin.
-
-**Toimitus pankkiin**
-
+### <a name="bank-drop"></a>Toimitus pankkiin
 Pankkiin toimitukset suoritetaan aktiivisille vuoroille, kuten kassakaappiin toimitukset. Tämä toiminto poistaa rahat vuorosta pankkitalletuksen valmistua varten.
 
-**Piilotettu suljettu vuoro**
+### <a name="blind-close-shift"></a>Piilotettu suljettu vuoro
+*Piilotettuina suljetut vuorot* eivät ole enää aktiivisia, mutta niitä ei ole suljettu kokonaan. Toisin kuin keskeytettyjä vuoroja, piilotettuina suljettuja vuoroja ei voi jatkaa. Toimintoja, kuten Ilmoita aloitussumma ja kassan laskeminen maksuvälineittäin voidaan suorittaa myöhemmin tai eri rekisteristä.
 
-Sokkona suljettu vuoro on vuoro, joka ei ole enää aktiivinen, mutta jota ei ole täysin suljettu. Sokkona suljettuja vuoroja ei voi jatkaa kuten keskeytettyjä vuoroja, mutta menettelyt, kuten aloitussummien tilittäminen ja kassan laskeminen maksuvälineittäin, voidaan suorittaa myöhemmin tai eri rekisteristä.
+Piilotettuina suljettuja vuoroja käytetään usein, kun halutaan vapauttaa rekisteri uutta käyttäjää tai vuoroa varten ilman, että vuoro pitää ensin inventoida, täsmäyttää ja sulkea ensin kokonaan.
 
-Sokkona suljettuja vuoroja käytetään usein, kun halutaan vapauttaa rekisteri uutta käyttäjää tai vuoroa varten ilman, että vuoro pitää ensin inventoida, täsmäyttää ja sulkea ensin kokonaan. 
+### <a name="close-shift"></a>Sulje vuoro
+Tämä toiminto laskee vuoron kokonaissumman, yli- ja alijäämäsummat sekä viimeistelee aktiivisen tai piilotettuna suljetun vuoron. Käyttäjän käyttöoikeuksien mukaan myös Z-raportti tulostetaan vuoroa varten. Suljettuja vuoroja ei voi jatkaa tai muokata.
 
-**Sulje vuoro**
+### <a name="print-x"></a>Tulosta X
+Tämä toiminto luo ja tulostaa X-raportin nykyiselle aktiiviselle vuorolle.
 
-Tätä toiminto laskee vuoron kokonaissumman, yli- ja alijäämäsummat sekä viimeistelee aktiivisen tai piilotettuna suljetun vuoron. Suljettuja vuoroja ei voi jatkaa tai muokata.  
+### <a name="reprint-z"></a>Tulosta Z uudelleen
+Tämä toiminto tulostaa uudelleen viimeisen Z-raportin, jonka järjestelmä loi, kun työvuoro on suljettiin.
 
-**Ylläpidä työvuoroja**
+### <a name="manage-shifts"></a>Ylläpidä työvuoroja
+Tämä toiminto antaa käyttäjälle mahdollisuuden tarkastella kaikkia myymälän aktiivisia, keskeytettyjä ja piilotettuina suljettuja vuoroja. Käyttäjät voivat suorittaa lopulliset sulkemismenettelyt, kuten kassan laskemisen maksuvälineittäin ja piilotettuna suljettujen vuorojen sulkemisen, käyttäjien käyttöoikeuksista riippuen. Tämä toiminto antaa käyttäjille mahdollisuuden myös tarkastella ja poistaa virheellisiä vuoroja siinä harvinaisessa tapauksessa, että vuoro jää virhetilaan offline- ja online-tiloja vaihdettaessa. Tällaisissa virheellisissä vuoroissa ei ole mitään täsmäytyksessä vaadittavia taloushallinnon tietoja tai tapahtumatietoja.
 
-Tämä toiminto antaa käyttäjälle mahdollisuuden tarkastella kaikkia myymälän aktiivisia, keskeytettyjä ja piilotettuina suljettuja vuoroja. Käyttäjät voivat suorittaa lopulliset sulkemismenettelyt, kuten kassan laskemisen maksuvälineittäin ja sokkona suljettujen vuorojen sulkemisen, käyttäjien käyttöoikeuksista riippuen. Tämän toiminto käyttäjille mahdollisuuden myös tarkastella ja poistaa virheellisiä vuoroja siinä harvinaisessa tapauksessa, että vuoro jää virhetilaan offline- ja online-tiloja vaihdettaessa. Tällaisissa virheellisissä vuoroissa ei ole mitään täsmäytyksessä tarvittavia taloushallinnon tietoja tai tapahtumatietoja. 
+## <a name="shift-and-drawer-permissions"></a>Vuorojen ja kassan oikeudet
+Seuraavat POS-käyttöoikeudet vaikuttavat siihen, mitä käyttäjä voi tai ei voi tehdä eri tilanteissa:
+
+- **Salli piilottava sulkeminen**
+- **Salli X-raportin tulostus**
+- **Salli Z-raportin tulostaminen**
+- **Salli kassan laskeminen maksuvälineittäin**
+- **Salli liukuva kassatilitys**
+- **Avaa kassa ilman myyntiä**
+- **Salli useita vuorokirjautumisia** – Tämä oikeus sallii käyttäjän kirjautua sisään ja käyttää vuoroa, jonka toinen käyttäjä on avannut. Käyttäjät, joilla ei ole tätä oikeutta voivat kirjautua sisään ja käyttää vain vuoroa, jonka ovat avanneet.
+- **Salli jaetun vuoron hallinta** – Käyttäjillä täytyy olla oikeus avata ja sulkea jaettu vuoro.
+- **Salli jaetun vuoron käyttö** – Käyttäjillä täytyy olla lupa kirjautua sisään ja käyttää jaettua vuoroa.
+
+## <a name="back-office-end-of-day-considerations"></a>Taustalla tapahtuviin päivän päätökseen liittyviä huomioon otettavia seikkoja
+Tapa, jolla vuorot ja kassan täsmäytys tehdään myyntipisteessä eroaa siitä, miten tapahtumatiedoista tehdään yhteenveto tilinpäätöstä laskettaessa. On tärkeää, että ymmärrät tämän eron. Kokoonpanosta ja liiketoimintaprosesseistasi riippuen myyntipisteen vuoron tiedot (Z-raportti) ja tilinpäätös voivat antaa erilaisia tuloksia. Tämä ei välttämättä merkitse sitä, että vuoron tiedot tai tilinpäätöslaskelma ovat virheellisiä tai tiedoissa on ongelma. Se tarkoittaa sitä, että toimitetut parametrit saattavat sisältää ylimääräisiä tapahtumia tai vähemmän tapahtumia tai tapahtumat on laskettu eri tavalla.
+
+Vaikka jokaisella myyjällä on eri liiketoimintavaatimukset, on suositeltavaa määrittää järjestelmä seuraavalla tavalla, että vältetään tilanteet, jossa tämäntyyppisiä eroja ilmenee:
+
+Siirry **Retail \> Kanavat \> Vähittäiskauppa \> kaikki vähittäiskaupat \> laskelma/sulkeminen**, ja kullekin myymälälle luo sekä **Laskelmatapa**-kenttä että **Sulkemistapa**-kenttä **vuoroon**.
+
+Tämän asetuksen avulla varmistat, että taustalaskelmat sisältävät samat tapahtumat kuin vuorot myyntipisteessä ja tiedoista tehdään yhteenveto kyseisen vuoron mukaan.
+
+Lisätietoja lausunnoista ja sulkemismenetelmistä kohdassa [Vähittäismyynnin konfiguraatiot Retail-lausunnoissa](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
 

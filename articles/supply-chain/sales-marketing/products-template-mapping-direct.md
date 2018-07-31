@@ -3,7 +3,7 @@ title: Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteis
 description: "Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla tuotteet synkronoidaan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Salesiin."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3ae50372edcd473f2288f8172b71eac33e24b636
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 66506953790fd77c2105591d3211c76991eced08
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -78,7 +78,8 @@ Salesissa tuotteisiin on lisätty uusi **On ulkoisesti ylläpidetty** -kenttä i
 Ulkoisesti ylläpidetyt tuotteet lisätään automaattisesti ensimmäiseen samaa valuuttaa käyttävään ja voimassa olevaan hinnastoon. Hinnastot järjestetään aakkosjärjestykseen nimen mukaan. Tuotteen Finance and Operationsin myyntihintaa käytetään hinnaston hintana. Tämän vuoksi Salesissa on oltava hinnasto jokaiselle Finance and Operationsin tuotteen myyntivaluutalle. Vapautettujen myytävien tuotteiden valuutta on määritetty sen yrityksen tilivaluutaksi, josta tuote viedään.
 
 > [!NOTE]
-> Tuotteen synkronointi ei onnistu, jos hinnastossa ei ole vastaavaa valuuttaa.
+> - Tuotteen synkronointi ei onnistu, jos hinnastossa ei ole vastaavaa valuuttaa.
+> - Voit määrittää integroinnissa käytettävän hinnaston yhdistämällä pricelevelid.name [oletus hinnasto (nimi)] tietojen integrointiprojektiin. Syötteen on oltava pienillä kirjaimilla. Esimerkiksi oletusarvoinen myynnin hinnasto nimeltään ”Vakio” voi olla: kohdekenttä: pricelevelid.name [Oletusarvoinen hinnasto (Nimi)] ja karttatyyppi: [ { ”transformType”: ”Default", "defaultValue": "standard”} ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 

@@ -1,16 +1,16 @@
 ---
 title: Budjettisuunnittelu
-description: "Tämän kurssin tavoitteena on tarkastella ohjatusti Microsoft Dynamics 365 for Finance and Operationsin Budjettisuunnittelu-alueen toimintojen päivityksiä. Tämä kurssi sisältää nopean konfiguraatioesimerkin budjettisuunnittelumoduulista ja esittelee, miten budjettisuunnittelu voidaan suorittaa tämän konfiguraation avulla.  Tällä kurssilla keskitytään erityisesti seuraaviin liiketoimintaprosesseihin tai tehtäviin: -    - organisaatiohierarkian luominen budjettisuunnittelulle ja käyttäjän suojauksen määrittäminen - budjettisuunnitelmien skenaarioiden, budjettisuunnitelmien sarakkeiden, asettelujen ja Excel-mallien määrittäminen   - budjettisuunnitteluprosessien luominen ja aktivoiminen   - budjettisuunnitelman asiakirjan luominen noutamalla toteutuneet tiedot kirjanpidosta   - kohdistusten käyttäminen budjettisuunnitelman asiakirjan tietojen oikaisussa   - budjettisuunnitelman asiakirjan tietojen muokkaaminen Excelissä."
-author: twheeloc
+description: "Tämän kurssin tavoitteena on tarkastella ohjatusti Microsoft Dynamics 365 for Finance and Operationsin Budjettisuunnittelu-alueen toimintojen päivityksiä. Tämä kurssi sisältää nopean konfiguraatioesimerkin budjettisuunnittelumoduulista ja esittelee, miten budjettisuunnittelu voidaan suorittaa tämän konfiguraation avulla."
+author: ShylaThompson
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -30,7 +30,13 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tämän kurssin tavoitteena on tarkastella ohjatusti Microsoft Dynamics 365 for Finance and Operationsin Budjettisuunnittelu-alueen toimintojen päivityksiä. Tämä kurssi sisältää nopean konfiguraatioesimerkin budjettisuunnittelumoduulista ja esittelee, miten budjettisuunnittelu voidaan suorittaa tämän konfiguraation avulla.  Tällä kurssilla keskitytään erityisesti seuraaviin liiketoimintaprosesseihin tai tehtäviin: -    - organisaatiohierarkian luominen budjettisuunnittelulle ja käyttäjän suojauksen määrittäminen - budjettisuunnitelmien skenaarioiden, budjettisuunnitelmien sarakkeiden, asettelujen ja Excel-mallien määrittäminen   - budjettisuunnitteluprosessien luominen ja aktivoiminen   - budjettisuunnitelman asiakirjan luominen noutamalla toteutuneet tiedot kirjanpidosta   - kohdistusten käyttäminen budjettisuunnitelman asiakirjan tietojen oikaisussa   - budjettisuunnitelman asiakirjan tietojen muokkaaminen Excelissä. 
+Tämän kurssin tavoitteena on tarkastella ohjatusti Microsoft Dynamics 365 for Finance and Operationsin Budjettisuunnittelu-alueen toimintojen päivityksiä. Tämä kurssi sisältää nopean konfiguraatioesimerkin budjettisuunnittelumoduulista ja esittelee, miten budjettisuunnittelu voidaan suorittaa tämän konfiguraation avulla.  Tällä kurssilla keskitytään erityisesti seuraaviin liiketoimintaprosesseihin tai tehtäviin:
+- Organisaatiohierarkian luonti budjetin suunnittelua ja käyttäjän tietoturvan konfigurointia varten
+- Budjettisuunnitelmaskenaarioiden, budjettisuunnitelmasarakkeiden ja Excel-mallien määrittäminen
+- Luodaan ja aktivoidaan budjettisuunnitteluprosessi
+- Budjettisuunnitelman luominen hakemalla kirjanpidon todelliset arvot
+- Budjettisuunnitelman asiakirjan tietojen oikaisu kohdistusten avulla
+- Budjettisuunnitelman asiakirjan tietojen muokkaaminen Excelissä 
 
 <a name="prerequisites"></a>Edellytykset 
 ------------------
@@ -104,8 +110,6 @@ Budjettisuunnittelussa käytetään erityisiä suojauskäytäntöjä määrittä
 2.5. Valitse "Myönnä käyttöoikeudet yksittäisille organisaatioille". Valitse ensimmäisessä vaiheessa luotu "Organisaatiohierarkia". Valitse "Myyntitiedot"-solmu ja klikkaa "Myönnä" alatason painikkeella 
 
 ***Tärkeää!*** *Tarkista, että olet DEMF-yrityksen yhteydessä, kun suoritat tätä tehtävää, sillä organisaatioiden suojaus sovelletaan yrityksittäin* 
-
-[![Myönnä käyttöoikeus](./media/screenshot14.png)](./media/screenshot14.png)
 
 ### <a name="task-3-create-scenarios"></a>Tehtävä 3: Luo skenaarioita
 3.1. Mene: Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnittelun konfiguraatio. "Skenaariot"-sivulla, pane merkille ne skenaariot, joita käytämme myöhemmin tällä kurssilla: edellisen vuoden todeutuneet ja budjetoidut. 
