@@ -1014,6 +1014,8 @@
           href: deployment/apply-deployable-package-system.md
         - name: Käyttöönotettavan paketin asentaminen
           href: deployment/install-deployable-package.md
+        - name: Paketin asennuksen poistaminen
+          href: deployment/uninstall-deployable-package.md
         - name: Paketin suorituksen vianmääritys
           href: deployment/deployable-package-troubleshooting.md
 - name: Päivitykset ja hotfix-korjaukset

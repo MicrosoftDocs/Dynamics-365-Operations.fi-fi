@@ -3,7 +3,7 @@ title: Uudet ja muuttuneet ominaisuudet
 description: "Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Microsoft Dynamics 365 for Finance and Operations -ympäristöversioiden uusista ominaisuuksista."
 author: josaw1
 manager: AnnBe
-ms.date: 05/14/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: aa5eab6dbf2cc604239cac199817ead6bef6f3de
-ms.openlocfilehash: 8a6ea271270fd854110a8548ab92cc4ef975ad0a
+ms.sourcegitcommit: 02d66063f721357b354f7959a46ec94d617f55a2
+ms.openlocfilehash: 2a608355718509c90e766825113f386b163ee4fd
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/08/2018
+ms.lasthandoff: 06/22/2018
 
 ---
 
@@ -64,7 +64,7 @@ Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä kos
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.0</td>
-<td>8.0.30</td>
+<td>8.0.30, 8.0.35</td>
 <td>Huhtikuun 2018.</td>
   <td><a href="whats-new-changed-8-0-April-2018.md">Microsoft Dynamics 365 for Finance and Operationsin version 8.0:n (huhtikuu 2018) uudet ja muuttuneet ominaisuudet</a></td>
 </tr>

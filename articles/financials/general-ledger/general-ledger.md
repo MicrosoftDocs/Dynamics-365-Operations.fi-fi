@@ -19,10 +19,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2177110dc16528de7eddedb0667faae553a36b12
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -54,9 +54,13 @@ Lisäksi säännöt on päivitettävä säännöllisesti, kun veroviranomaisten 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
+### <a name="whats-new"></a>Uutta
 
-Sivustossa [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
+Siirry kohtaan [julkaisutiedot](https://docs.microsoft.com/en-us/business-applications-release-notes/) nähdäksesi mitä uusia toimintoja on julkaistu. 
+
+### <a name="videos"></a>Videot
+
+Tutustu [Microsoft Dynamics 365:n YouTube-kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
 
 ### <a name="blogs"></a>Blogit
 
@@ -66,11 +70,8 @@ Sivustossa [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) on li
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
 
-### <a name="task-guides"></a>Tehtäväoppaat
-Finance and Operationsin tehtäväoppaissa on lisäohjeita. Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.
+#### <a name="community-blogs"></a>Yhteisöblogit
 
-### <a name="videos"></a>Videot
-
-Tutustu [Microsoft Dynamics 365:n YouTube-kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
+- [Tärkeitä tietoja Dynamics 365 for Finance and Operations -sovelluksesta](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
 

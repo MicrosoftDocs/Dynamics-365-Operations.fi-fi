@@ -3,7 +3,7 @@ title: "Mukautetut kentät"
 description: "Tässä ohjeaiheessa käsitellään, miten Microsoft Dynamics 365 for Finance and Operations antaa joillekin käyttäjille mahdollisuuden luoda mukautettuja kenttiä ja muokata sovellusta niiden avulla yrityksen tarpeita vastaavaksi."
 author: jasongre
 manager: AnnBe
-ms.date: 04/18/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,8 +27,6 @@ ms.lasthandoff: 05/23/2018
 # <a name="custom-fields"></a>Mukautetut kentät
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 Vaikka Microsoft Dynamics 365 for Finance and Operationsissa on kattava valikoima valmiita kenttiä monenlaisten liiketoimintaprosessien hallintaa varten, joskus yritysten on seurattava myös muita tietoja järjestelmässä. Tämän Finance and Operationsissa voi luoda mukautettuja kenttiä, jotka muokkaavat sovellusta yrityksen tarpeita vastaavaksi. Tätä varten tarvitaan tietyt käyttöoikeudet. 
 
