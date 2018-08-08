@@ -1,7 +1,7 @@
 ---
 title: SEPA-tilisiirron yleiskatsaus
 description: "Tässä artikkelissa on yleisiä tietoja ISO 20022 -tilisiirroista, jotka sisältävät yhtenäisen euromaksualueen (Single Euro Payments Area, SEPA) tilisiirrot ja muut toimittajille suoritettavat sähköiset maksut. SEPA-tilisiirto on tietyntyyppinen toisen yrityksen tai henkilön toiselle yritykselle tai henkilölle suorittama euromääräinen maksu. Aiheessa selitetään myös tilisiirron maksutiedoston määrittäminen ja siirtäminen."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a2bf472d1850e1d97f5c51f66c215143ae646b5a
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: d6081c12ea65812a15b50c627330b4566ab4c679
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 
