@@ -29,7 +29,6 @@ ms.lasthandoff: 02/23/2018
 
 Tässä ohjeaiheessa käsitellään **talousjohtajan yhteenvetoa** ja Microsoft Power BI -sisältöä. Tämä Power BI -sisältö koskee käyttäjiä, joilla on Microsoft Dynamics 365 for Finance and Operationsin versio 7.2. Jos käytössä on versio 7.3 tai sitä uudempi versio, lisätietoja on kohdassa [Taloushallinnon tiedot](financial-insights.md).
 
-
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 
 **Talousjohtajan yhteenvedon** Power BI -sisällön raportit näytetään **Talousjohtajan yhteenveto** -työtilassa.
@@ -39,13 +38,11 @@ Tässä ohjeaiheessa käsitellään **talousjohtajan yhteenvetoa** ja Microsoft 
 
 Seuraavassa taulukossa on esitetty Power BI -sisältö, josta raportit kopioidaan, ja raportit, jotka ovat käytettävissä **Talousjohtajan yhteenveto** -työtilassa. Erilaisen Power BI -sisällön ohjeistukseen on linkkejä.
 
-| Sisältyvä Power BI -sisältö     | Raportit |
-|---------------------------------------|---------|
+| Sisältyvä Power BI -sisältö | Raportit |
+|-----------------------------------|---------|
 | [Taloudellinen suorituskyky](financial-performance-power-bi-content-pack.md) | <ul><li>Myyntituotto</li><li>Kulut</li><li>Nettotuotto</li><li>Käyttökate</li><li>Nykyinen suhde</li><li>Ostoreskontra yhteensä</li><li>Myyntireskontra yhteensä</li><li>Tililuokan mukaiset kulut</li><li>Kulut – todellinen vs. budjetti</li><li>Tuotto – todellinen vs. budjetti</li></ul> |
 | [Kassa yhteenveto](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md) | <ul><li>Kassavirtaennuste</li><li>Pankkitilin saldo</li><li>Saldo valuutan mukaan</li></ul> |
 | [Myynti ja tuottavuus](sales-profitability-performance-content-pack.md) | <ul><li>Tuotto alueen mukaan</li><li>10 parasta asiakasta tuoton mukaan</li><li>10 parasta tuotetta tuoton mukaan</li></ul> |
 | [Luotonvalvonnan hallinta](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Asiakkaiden erääntyneet</li><li>Luottorajan ylittäneet asiakkaat</li><li>Erääntyneet saldot</li></ul> |
 | [Osto- ja kulutusanalyysi](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Osto kuukauden tai päivän mukaan</li><li>10 suurinta toimittajaa ostojen mukaan</li><li>10 parasta tuotetta ostojen mukaan</li></ul> |
-
-
 

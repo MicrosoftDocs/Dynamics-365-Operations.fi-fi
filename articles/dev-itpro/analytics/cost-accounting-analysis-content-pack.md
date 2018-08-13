@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -33,18 +33,18 @@ Tässä ohjeaiheessa kerrotaan, mitä **Kustannuslaskenta-analyysi** – Power B
 
 ## <a name="overview"></a>Yleiskuvaus
 
-**Kustannuslaskenta-analyysi** – Microsoft Power BI -sisältö on tarkoitettu kustannuksista vastaaville henkilöille tai kenelle tahansa, joka on vastuussa organisaation kustannusseurannasta. Se sisältää tärkeitä mittareita, kuten kustannukset, suuruus ja kustannushinta budjetin kustannusten, todellisten kustannusten ja joustavan budjetin kustannusten mukaan. Se käyttää **Kustannuslaskentamoduulin** tapahtumatietoja ja tarjoaa koko organisaation kustannusten kokoomanäytön yhtenä raportointivaluuttana. Esimiehet voit suodattaa tietoja kustannusobjektien mukaan suorittaakseen kustannusseurantaa organisaatioyksiköille, vaikka organisaatiolla voi olla useita yrityksiä. 
+**Kustannuslaskenta-analyysi** – Microsoft Power BI -sisältö on tarkoitettu kustannuksista vastaaville henkilöille tai kenelle tahansa, joka on vastuussa organisaation kustannusseurannasta. Se sisältää tärkeitä mittareita, kuten kustannukset, suuruus ja kustannushinta budjetin kustannusten, todellisten kustannusten ja joustavan budjetin kustannusten mukaan. Se käyttää **Kustannuslaskentamoduulin** tapahtumatietoja ja tarjoaa koko organisaation kustannusten kokoomanäytön yhtenä raportointivaluuttana. Esimiehet voit suodattaa tietoja kustannusobjektien mukaan suorittaakseen kustannusseurantaa organisaatioyksiköille, vaikka organisaatiolla voi olla useita yrityksiä.
 
-Koska **Kustannuslaskenta-analyysi** – Power BI -sisältö korostaa toteutuneiden kustannusten ja suunniteltujen kustannusten eroja, johtajat voivat saada ilmoituksen positiivisista ja negatiivisista trendeistä omissa toiminnallisissa yksiköissään. Esimiehet voivat porautua kustannustasohierarkioihin tai yksittäisiin kustannustasoihin. Tällä tavoin esimiehet saat yksityiskohtaista tietoa tapahtuneista kustannuspoikkeamista, jonka perusteella he voivat toimia tehokkaasti. 
+Koska **Kustannuslaskenta-analyysi** – Power BI -sisältö korostaa toteutuneiden kustannusten ja suunniteltujen kustannusten eroja, johtajat voivat saada ilmoituksen positiivisista ja negatiivisista trendeistä omissa toiminnallisissa yksiköissään. Esimiehet voivat porautua kustannustasohierarkioihin tai yksittäisiin kustannustasoihin. Tällä tavoin esimiehet saat yksityiskohtaista tietoa tapahtuneista kustannuspoikkeamista, jonka perusteella he voivat toimia tehokkaasti.
 
-**Kustannuslaskenta-analyysi** -sisällön ansiosta kustannuslaskijat voivat analysoida, miten kustannukset kulkevat koko organisaation kustannusobjektien läpi. 
+**Kustannuslaskenta-analyysi** -sisällön ansiosta kustannuslaskijat voivat analysoida, miten kustannukset kulkevat koko organisaation kustannusobjektien läpi.
 
-Katso lisätietoja kustannuslaskennasta ohjeaiheesta [Kustannuslaskennan aloitussivu](../../financials/cost-accounting/cost-accounting-home-page.md). 
+Katso lisätietoja kustannuslaskennasta ohjeaiheesta [Kustannuslaskennan aloitussivu](../../financials/cost-accounting/cost-accounting-home-page.md).
 
 Määrittämällä käyttäjätason suojauksen kustannuslaskentaan ja yhdistämällä sen rivitason suojaukseen Power BI:ssä, voit myöntää kaikille kustannusobjektien omistajille pääsyn **Kustannuslaskennan analyysin** Power BI -sisältöön. Kaikki visualisoinnin data sitten suodatetaan sen käyttöoikeustason perusteella, jota ohjataan kustannuslaskennassa. Saat lisätietoja käyttöoikeustason suojauksesta ja rivitason suojauksesta ohjeaiheesta [Kustannuslaskennan Power BI -sisällön suojauksen määrittäminen](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-Löydät **Kustannuslaskennan analyysin** Power BI -sisällön Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). 
+Löydät **Kustannuslaskennan analyysin** Power BI -sisällön Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on ohjeaiheessa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
@@ -75,7 +75,7 @@ Sisältö sisältää joukon raporttisivuja. Jokainen sivu koostuu joukosta mitt
 |                                  | Todelliset kustannukset kustannusobjektin dimension jäsenen nimen mukaan ja kustannustason dimension jäsenen nimen mukaan                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
-Seuraavilla tiedoilla täytetään **Kustannuslaskenta-analyysi** – Power BI -sisällön raporttisivut. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md). 
+Seuraavilla tiedoilla täytetään **Kustannuslaskenta-analyysi** – Power BI -sisällön raporttisivut. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md).
 
 Seuraavia tärkeitä koostettuja mittoja käytetään sisällön perustana.
 
@@ -113,20 +113,18 @@ Seuraavassa taulukossa on esitetty, miten tärkeitä koostemittoja käytetään 
 
 Suodattimina käytetään seuraavia tärkeimpiä dimensioita osittamaan koostemitat, jotta saavutetaan suurempi rakeisuus ja saadaan syvempiä analyyttisiä näkemyksiä.
 
-
-|               Kokonaisuus               |                                                Esimerkkejä määritteistä                                                |
+| Kokonaisuus                             | Esimerkkejä määritteistä                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-|      Kustannuslaskennan kirjanpidot       |                                                Kustannuslaskennan kirjanpito                                                |
-|         Kustannusseurantayksiköt         |                                                Kustannusseurannan nimi                                                |
-|      Kustannustason dimensiot       |     Kustannustason dimension nimi, kustannustason dimension jäsenen nimi, kustannustason dimension jäsenen nimi      |
-|       Kustannusobjektin dimensiot       |       Kustannusobjektin dimension nimi, kustannusobjektin dimension jäsenen nimi, kustannusobjektin dimension jäsenen nimi        |
-|       Tilastodimensiot       |       Tilastollinen dimension nimi, Tilastollinen dimension jäsenen nimi, Tilastollinen dimension jäsenen nimi        |
-| Kustannusobjektin dimensiohierarkiat  |  Kustannusobjektin dimension hierarkian nimi, Kustannusobjektin dimension hierarkiataso, Kustannusobjektin dimension hierarkiapuu   |
+| Kustannuslaskennan kirjanpidot            | Kustannuslaskennan kirjanpito                                                                                               |
+| Kustannusseurantayksiköt                 | Kustannusseurannan nimi                                                                                               |
+| Kustannustason dimensiot            | Kustannustason dimension nimi, kustannustason dimension jäsenen nimi, kustannustason dimension jäsenen nimi          |
+| Kustannusobjektin dimensiot             | Kustannusobjektin dimension nimi, kustannusobjektin dimension jäsenen nimi, kustannusobjektin dimension jäsenen nimi              |
+| Tilastodimensiot             | Tilastollinen dimension nimi, Tilastollinen dimension jäsenen nimi, Tilastollinen dimension jäsenen nimi              |
+| Kustannusobjektin dimensiohierarkiat  | Kustannusobjektin dimension hierarkian nimi, Kustannusobjektin dimension hierarkiataso, Kustannusobjektin dimension hierarkiapuu    |
 | Kustannustason dimensiohierarkiat | Kustannustason dimension hierarkian nimi, Kustannustason dimension hierarkiataso, Kustannustason dimension hierarkiapuu |
-| Tilastodimension hierarkiat  |  Tilastodimension hierarkian nimi, Tilastodimension hierarkiataso, Tilastodimension hierarkiapuu   |
-|        Tapahtuman versiot        |                                                     Version nimi                                                     |
-|          Kirjanpidon kalenterit          |                                            Kalenteri, kalenterin kuvaus                                            |
-|            Tilikaudet            |                                                    Kalenterivuosi                                                     |
-|           Tilikaudet           |                                                 Kalenterivuoden kausi                                                 |
-
+| Tilastodimension hierarkiat  | Tilastodimension hierarkian nimi, Tilastodimension hierarkiataso, Tilastodimension hierarkiapuu    |
+| Tapahtuman versiot               | Version nimi                                                                                                         |
+| Kirjanpidon kalenterit                   | Kalenteri, kalenterin kuvaus                                                                                       |
+| Tilikaudet                       | Kalenterivuosi                                                                                                        |
+| Tilikaudet                     | Kalenterivuoden kausi                                                                                                 |
 

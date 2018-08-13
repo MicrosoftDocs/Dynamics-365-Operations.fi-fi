@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
 ms.openlocfilehash: 1a598d0bd053c60c3f8df6b05ecb7ff15addfaa3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2018
 Voit seurata lähteviä sähköisiä tiedostoja luovien ER-muotojen tuloksia. Kun seuranta on käytössä (ER-käyttäjäparametri **Suorita vianmääritystilassa**), uusi jäljitystietue luodaan ER-muodon suorittamisen lokiin aina, kun ER-raportti suoritetaan. Seuraavat tiedot on tallennettu jokaiseen luotuun jäljitykseen:
 
 - Kaikki varoitukset, jotka on luonut oikeellisuustarkistussäännöt
-- Kaikki virheet, jotka on luonut oikeellisuustarkistussäännöt 
+- Kaikki virheet, jotka on luonut oikeellisuustarkistussäännöt
 - Kaikki luodut tiedostot, jotka on tallennettu seurantatietueen liitteinä
 
 Voit tallentaa yksittäisiä kohdearvon sovellustiedostoja kaikille ER-muodoille. Tiedostoja käsitellään kohdearvotiedostoina, kun ne kuvaavat suoritettavien raporttien odotettuja tuloksia. Jos kohdearvotiedosto on käytettävissä ER-muodolle, joka suoritettiin, kun jäljitysluonti oli käytössä, jäljitys tallentaa aiemmin mainittujen tietojen lisäksi tulokset luodun sähköisen tiedoston vertailusta kohdearvotiedostoon. Yhdellä napsautuksella voit ladata myös luodun sähköisen tiedoston ja sen kohdearvotiedoston yhtenä zip-tiedostona. Sitten voit tehdä yksityiskohtaisen vertailun ulkoisella työkalulla, kuten Windiff-sovelluksella.

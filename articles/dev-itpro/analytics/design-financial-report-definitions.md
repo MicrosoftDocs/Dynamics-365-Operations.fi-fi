@@ -22,7 +22,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: ee130dd357b5ae678f623630165a1ab787d6ae2c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -34,44 +34,40 @@ Tässä artikkelissa on tietoja raportin määrityksistä. Raportin määritys o
 
 Raportin määritys on raporttiosa (tai rakenneosa), joka käyttää raportin luontiin rivin, sarakkeen ja valinnaisesti myös raportointipuun määritystä. Raporttimääritys sisältää myös vaihtoehtoja ja asetuksia, joiden avulla voit mukauttaa raporttia. Kun olet määrittänyt rivi- ja sarakemääritykset, ne on yhdistettävä raportin määrityksessä. Tällöin määritetään myös muita määrityksen osia, kuten erittelytaso ja raportin päivämäärä. Voit nyt tallentaa ja luoda raportin. Talousraportointi sisältää seuraavat erittelytasot:
 
--   Taloushallinto
--   Taloudellinen ja Tili
--   Taloudellinen, Tili ja Tapahtuma
+- Taloushallinto
+- Taloudellinen ja Tili
+- Taloudellinen, Tili ja Tapahtuma
 
 Tapahtumatiedot eivät välttämättä ole käytettävissä raporteissa riippuen siitä, miten tiedot tallennetaan Microsoft Dynamics ERP -järjestelmään.
 
 ## <a name="create-a-report-definition"></a>Luo raportin määritys
-1.  Valitse raportin suunnitteluohjelman **Tiedosto** -valikosta **Uusi**, ja valitse sitten **Raportin määritys**.
-2.  Määritä tarvittavat tiedot **Raportti**, **Tuotos ja Jakelu**, **Ylä- ja alatunnisteet** ja **Asetukset** -välilehdille.
+1. Valitse raportin suunnitteluohjelman **Tiedosto** -valikosta **Uusi**, ja valitse sitten **Raportin määritys**.
+2. Määritä tarvittavat tiedot **Raportti**, **Tuotos ja Jakelu**, **Ylä- ja alatunnisteet** ja **Asetukset** -välilehdille.
 
 ## <a name="contents-of-a-report-definition"></a>Raportin määrityksen sisältö
 Seuraavassa taulukossa kuvataan raportin määrityksen välilehdet sekä tietojen käyttötapa.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Sarkain</th>
 <th>Kuvaus</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Raportti</td>
 <td>Luo raportti, määritä raportti tai muokkaa aiemmin luotua raporttia.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Tuotos ja Jakelu</td>
 <td>Muuttaa tuotoksen tyypin ja raportin kohteen.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Ylä- ja alatunnisteet</td>
 <td>Määrittää ja muotoilee raportin ylä- ja alatunnisteet. Voit esimerkiksi lisätä tekstiä tai kuvia tunnisteisiin. Talousraportointi tukee .bmp-, .jpg- ja .png-kuvatiedostoja. Voit myös käyttää automaattisia koodeja lisätäksesi muita tietoja, kuten yrityksen nimen, raportin nimen tai sivunumeron.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Asetukset</td>
 <td>Määritä raportin määritysasetukset, joihin voi sisältyä seuraavia asetuksia:
 <ul>
@@ -81,18 +77,13 @@ Seuraavassa taulukossa kuvataan raportin määrityksen välilehdet sekä tietoje
 <li>Luo poikkeusraportti</li>
 <li>Valuuttamuunnoksen määritys</li>
 <li>Välisumma- ja suodatintilitiedot</li>
-</ul></td>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
-
-
-
 
