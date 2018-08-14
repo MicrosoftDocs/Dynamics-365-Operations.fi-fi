@@ -46,8 +46,6 @@ Field Servicen ja Finance and Operationsin ensimmäisen vaiheen integrointi mahd
 
 Esimerkki työtilauksen synkronoimisesta Field Servicen ja Finance and Operationsin välillä on lyhyessä YouTube-videossa [Työtilauksen  Dynamics 365 for Field Servicen ja Finance and Operationsin välillä](https://www.youtube.com/watch?v=hAB4TDVMjxU).
 
-[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
-
 ## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations -sovelluksen järjestelmävaatimukset
 Field Servicen integrointi tukee seuraavia versioita:
 
