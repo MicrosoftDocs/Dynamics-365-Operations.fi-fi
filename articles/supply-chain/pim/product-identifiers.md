@@ -1,7 +1,7 @@
 ---
 title: Tuotetunnukset
 description: "Tässä ohjeaiheessa on tietoja erityyppisistä tuotetunnisteista ja selitetään tuotetunnisteiden lisäämiseen tuotetietoihin."
-auhor: cvocph
+author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
