@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 63432fe5fe98b2c20ddbf9ebec6ac14b981f0106
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2d8c0e0e52a8dba2a1ea5bf330cdea01e3cfb60d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/08/2018
 <span data-ttu-id="b4d80-105">Tässä ohjeaiheessa käsitellään **työhönoton** Microsoft Power BI -sisältöä.</span><span class="sxs-lookup"><span data-stu-id="b4d80-105">This topic describes the **Recruiting** Microsoft Power BI content.</span></span> <span data-ttu-id="b4d80-106">Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.</span><span class="sxs-lookup"><span data-stu-id="b4d80-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span>
 
 ## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="b4d80-107">Power BI -sisällön käyttö</span><span class="sxs-lookup"><span data-stu-id="b4d80-107">Accessing the Power BI content</span></span>
-<span data-ttu-id="b4d80-108">**Työhönoton** Power BI -sisältö näkyy **Työhönoton hallinta** -työtilassa.</span><span class="sxs-lookup"><span data-stu-id="b4d80-108">The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.</span></span> 
+<span data-ttu-id="b4d80-108">**Työhönoton** Power BI -sisältö näkyy **Työhönoton hallinta** -työtilassa.</span><span class="sxs-lookup"><span data-stu-id="b4d80-108">The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.</span></span>
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a><span data-ttu-id="b4d80-109">Työhönoton hallinnan työtilan raportit ja visualisoinnit</span><span class="sxs-lookup"><span data-stu-id="b4d80-109">Reports and visuals in the Recruitment management workspace</span></span>
 <span data-ttu-id="b4d80-110">**Työhönoton hallinnan** työtilassa on **Analytiikka**-välilehti. Välilehti sisältää Power BI:n upotetun työhönottosisällön.</span><span class="sxs-lookup"><span data-stu-id="b4d80-110">The **Recruitment management** workspace contains an **Analytics** tab. This tab contains the embedded Power BI content for recruiting.</span></span> <span data-ttu-id="b4d80-111">Sisällön yhdessä välilehdessä on yleiskatsaus ja muissa välilehdissä tarkempia tietoja.</span><span class="sxs-lookup"><span data-stu-id="b4d80-111">The content consists of an overview tab and additional tabs that contain details.</span></span> <span data-ttu-id="b4d80-112">Seuraavassa taulukossa esitellään kunkin välilehden raportit.</span><span class="sxs-lookup"><span data-stu-id="b4d80-112">The following table describes the reports on each tab.</span></span>
@@ -66,6 +66,4 @@ ms.lasthandoff: 05/08/2018
 | <span data-ttu-id="b4d80-163">Suoritus</span><span class="sxs-lookup"><span data-stu-id="b4d80-163">Performance</span></span>          | <span data-ttu-id="b4d80-164">Pisteytys, kuvaus arviointimalli</span><span class="sxs-lookup"><span data-stu-id="b4d80-164">Rating, description, and rating model</span></span>                            | <span data-ttu-id="b4d80-165">Hakijan, työsuhteessa oleva hakija, irtisanottu hakija</span><span class="sxs-lookup"><span data-stu-id="b4d80-165">Applicant, Employed Applicant, Terminated Applicant</span></span> |
 | <span data-ttu-id="b4d80-166">Työhönottoprojekti</span><span class="sxs-lookup"><span data-stu-id="b4d80-166">Recruitment Project</span></span>  | <span data-ttu-id="b4d80-167">Projektin kuvaus, projektin tila ja avoimet paikat</span><span class="sxs-lookup"><span data-stu-id="b4d80-167">Project description, project status, and openings</span></span>                | <span data-ttu-id="b4d80-168">Hakijan, työsuhteessa oleva hakija, irtisanottu hakija</span><span class="sxs-lookup"><span data-stu-id="b4d80-168">Applicant, Employed Applicant, Terminated Applicant</span></span> |
 | <span data-ttu-id="b4d80-169">Irtisanottu hakija</span><span class="sxs-lookup"><span data-stu-id="b4d80-169">Terminated Applicant</span></span> | <span data-ttu-id="b4d80-170">Työntekijät, joiden työsuhde on päätetty, syy, suorituskyky ja työsuhteen päättymispäivä</span><span class="sxs-lookup"><span data-stu-id="b4d80-170">Terminated applicants, reason, performance, and termination date</span></span> | <span data-ttu-id="b4d80-171">Yritys, kalenterin vastakirjaus, päivämäärä, maantieteellinen sijainti, suoritus, demografia, työsuhde, media, työhönottoprojekti, hakijan nimi</span><span class="sxs-lookup"><span data-stu-id="b4d80-171">Company, Calendar Offset, Date, Geographic Location, Performance, Demographics, Employment, Media, Recruitment Project, Applicant Name</span></span> |
-
-
 
