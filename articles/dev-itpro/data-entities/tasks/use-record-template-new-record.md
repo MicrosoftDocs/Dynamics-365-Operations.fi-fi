@@ -1,5 +1,5 @@
 --- 
-title: Uuden tietueen luonti tietuemallin avulla
+title: "Luo tietueita käyttämällä tietuemalleja"
 description: "Tämä menettely osoittaa, miten aiemmin määritetyllä tietuemallilla voi luoda uuden tietueen."
 author: sericks007
 manager: AnnBe
@@ -16,26 +16,26 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d99c7eae4e3b70d24ce8d8077d7cb0b24a9fcc35
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4d2a5aa8be3d9ddebfe842ba4029933eff4c337d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="use-a-record-template-to-create-a-new-record"></a><span data-ttu-id="9f827-103">Uuden tietueen luonti tietuemallin avulla</span><span class="sxs-lookup"><span data-stu-id="9f827-103">Use a record template to create a new record</span></span>
+# <a name="create-records-by-using-record-templates"></a><span data-ttu-id="28153-103">Luo tietueita käyttämällä tietuemalleja</span><span class="sxs-lookup"><span data-stu-id="28153-103">Create records by using record templates</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="9f827-104">Tämä menettely osoittaa, miten aiemmin määritetyllä tietuemallilla voi luoda uuden tietueen.</span><span class="sxs-lookup"><span data-stu-id="9f827-104">This procedure shows how to use a previously defined record template to create a new record.</span></span> <span data-ttu-id="9f827-105">Tätä menettelyä varten on suoritettava ensin Tietuemallin luonti helpottamaan tietojen kirjaamista -menettely.</span><span class="sxs-lookup"><span data-stu-id="9f827-105">To complete this procedure, you must first complete the "Create a record template to facilitate data entry" procedure.</span></span>
+<span data-ttu-id="28153-104">Tämä menettely osoittaa, miten aiemmin määritetyllä tietuemallilla voi luoda uuden tietueen.</span><span class="sxs-lookup"><span data-stu-id="28153-104">This procedure shows how to use a previously defined record template to create a new record.</span></span> <span data-ttu-id="28153-105">Tätä menettelyä varten on suoritettava ensin Tietuemallin luonti helpottamaan tietojen kirjaamista -menettely.</span><span class="sxs-lookup"><span data-stu-id="28153-105">To complete this procedure, you must first complete the "Create a record template to facilitate data entry" procedure.</span></span>
 
 
 
-<span data-ttu-id="9f827-106">Tässä menettelyssä käytetään USMF-yritystä.</span><span class="sxs-lookup"><span data-stu-id="9f827-106">This procedure uses the USMF company.</span></span>
+<span data-ttu-id="28153-106">Tässä menettelyssä käytetään USMF-yritystä.</span><span class="sxs-lookup"><span data-stu-id="28153-106">This procedure uses the USMF company.</span></span>
 
-1. <span data-ttu-id="9f827-107">Siirry kohtaan Käyttöomaisuudet > Käyttöomaisuudet > Käyttöomaisuudet.</span><span class="sxs-lookup"><span data-stu-id="9f827-107">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
-2. <span data-ttu-id="9f827-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="9f827-108">Click New.</span></span>
-    * <span data-ttu-id="9f827-109">Sinua pyydetään valitsemaan malli.</span><span class="sxs-lookup"><span data-stu-id="9f827-109">You will be prompted to select a template.</span></span> <span data-ttu-id="9f827-110">Valitse yrityksen tarpeita vastaava malli.</span><span class="sxs-lookup"><span data-stu-id="9f827-110">Select the one that corresponds to your business need.</span></span>  
-3. <span data-ttu-id="9f827-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="9f827-111">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="9f827-112">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="9f827-112">Click OK.</span></span>
+1. <span data-ttu-id="28153-107">Siirry kohtaan Käyttöomaisuudet > Käyttöomaisuudet > Käyttöomaisuudet.</span><span class="sxs-lookup"><span data-stu-id="28153-107">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="28153-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="28153-108">Click New.</span></span>
+    * <span data-ttu-id="28153-109">Sinua pyydetään valitsemaan malli.</span><span class="sxs-lookup"><span data-stu-id="28153-109">You will be prompted to select a template.</span></span> <span data-ttu-id="28153-110">Valitse yrityksen tarpeita vastaava malli.</span><span class="sxs-lookup"><span data-stu-id="28153-110">Select the one that corresponds to your business need.</span></span>  
+3. <span data-ttu-id="28153-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="28153-111">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="28153-112">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="28153-112">Click OK.</span></span>
 
 
