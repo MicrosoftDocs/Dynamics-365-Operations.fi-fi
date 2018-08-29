@@ -1,5 +1,5 @@
 --- 
-title: "Taloushallinnon dimensioita tietolähteenä käyttävän raportin suorittaminen"
+title: "Suorita raportit, jotka käyttävät taloushallinnon dimensioita tietolähteenä"
 description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) tietomallin käyttämään taloushallinnon dimensioita tietolähteenä ER-raporteissa."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 47ba48461a1c502a93df416d1acac1e85a841079
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6569f9b97d5d15bf74b8b3882bf4bab50970dd0f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="run-a-report-that-uses-financial-dimensions-as-a-data-source"></a>Taloushallinnon dimensioita tietolähteenä käyttävän raportin suorittaminen
+# <a name="run-reports-that-use-financial-dimensions-as-data-sources"></a>Suorita raportit, jotka käyttävät taloushallinnon dimensioita tietolähteenä
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

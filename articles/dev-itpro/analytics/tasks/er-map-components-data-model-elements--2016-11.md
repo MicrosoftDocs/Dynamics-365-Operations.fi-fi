@@ -1,5 +1,5 @@
 --- 
-title: "Tietomallielementtien määrittäminen luodun muodon komponentit sähköistä raportointia (ER) varten"
+title: "Muotojen osien yhdistäminen tietomallielementteihin"
 description: "Seuraavassa menettelyssä selitetään, miten käyttäjä, jolla on joko järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi yhdistää tietomallielementtejä sellaisen luodun sähköisen raportoinnin (ER) -konfiguraation osiin, joka määrittää maksujen liiketoimintatoimialueen sähköisen asiakirjamuodon."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1c81a1268a56164e0d4465359a0f9ec425ee7c31
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e065cfbfc645bb7ac48134fe43d87bec013e8c81
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="map-components-of-the-created-format-to-data-model-elements-for-electronic-reporting-er"></a>Tietomallielementtien määrittäminen luodun muodon komponentit sähköistä raportointia (ER) varten
+# <a name="map-the-components-of-formats-to-data-model-elements"></a>Muotojen osien yhdistäminen tietomallielementteihin
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

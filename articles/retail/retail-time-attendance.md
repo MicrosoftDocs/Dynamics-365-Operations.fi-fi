@@ -1,5 +1,5 @@
 ---
-title: "Työajan seuranta vähittäismyynnissä"
+title: "Ajan ja läsnäolon hallinta Retailissa"
 description: "Tässä aiheessa on kuvaus vähittäismyynnin ajan ja työajan hallinnassa tuettavista skenaarioista Microsoft Dynamics 365 for Retailissa."
 author: aamirallaqaband
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d5672579c1e2d51e4b6494a1e86e3606c09a93a2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 21c29c3c37dfacdd98f5c3ec7698f07623da2285
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="retail-time-and-attendance"></a>Vähittäismyynnin työajan seuranta
+# <a name="time-and-attendance-management-in-retail"></a>Ajan ja läsnäolon hallinta Retailissa
 
 [!include [banner](includes/banner.md)]
 
@@ -45,7 +45,7 @@ Tässä aiheessa on kuvaus vähittäismyynnin ajan ja työajan hallinnassa tuett
 
 -   Liitä profiileita työn suunnittelutoiminnon avulla. Lisätietoja on kohdassa <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
-Tietoja määritysten vaiheista on kohdassa<https://technet.microsoft.com/en-us/library/aa496971.aspx>.
+Lisätietoja konfiguroinnin vaiheista on kohdassa <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
 ### <a name="retail-specific-configuration"></a>Vähittäismyynnille ominaiset määritykset
 
@@ -135,7 +135,7 @@ A Dynamics 365 for Retail -käyttäjä noudattaa työnkulkua aikakirjausten lask
 -   Joukkopoistuminen
 -   Poissaolon kirjaaminen
 
-Saat lisätietoja työajan seurannan kirjausten käsittelystä kohdassa <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+Lisätietoja ajan prosessoimisesta ja läsnäolokirjauksista kohdassa <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
 
 
 

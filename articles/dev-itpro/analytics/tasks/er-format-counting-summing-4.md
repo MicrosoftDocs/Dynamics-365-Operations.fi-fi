@@ -1,5 +1,5 @@
 --- 
-title: Muodon suorittaminen laskennan ja summien tuottamiseksi
+title: "Laskennan ja summien yhteenvedon muotojen suorittaminen sähköistä raportointia varten"
 description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon suorittamaan laskennan ja summauksen luodun tekstin tietojen perusteella."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e3569e48bcc063b2423a60038732e8e53dbea2cb
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c6d309416a3a0c4da07a76c90246f492585deef5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="run-the-format-to-do-counting-and-summing"></a>Muodon suorittaminen laskennan ja summien tuottamiseksi
+# <a name="run-electronic-reporting-er-formats-to-do-counting-and-summing"></a>Laskennan ja summien yhteenvedon muotojen suorittaminen sähköistä raportointia varten
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

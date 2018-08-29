@@ -1,5 +1,5 @@
 --- 
-title: Konfiguraatioiden tarkistaminen raporttien tuottamiseksi Microsoft Office -muodoissa, joissa on upotettuja kuvia
+title: Konfiguraatioiden tarkistaminen raporttien luomiseksi Office-muodoissa, joissa on upotettuja kuvia
 description: "Voit suorittaa nämä vaiheet, kun suoritat ensin ER Upotettuja kuvia sisältävien raporttien tekeminen MS Office -muodoissa (Osa 1 – parametrien määrittäminen) -tehtäväoppaan vaiheet."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe58809c60fa27a605d84a61893ff569ded058ef
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8f3462f16ad7638071ab0aa2175d0bc291eeae89
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images"></a>Konfiguraatioiden tarkistaminen raporttien tuottamiseksi Microsoft Office -muodoissa, joissa on upotettuja kuvia
+# <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfiguraatioiden tarkistaminen raporttien luomiseksi Office-muodoissa, joissa on upotettuja kuvia
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

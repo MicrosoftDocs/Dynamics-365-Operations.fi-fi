@@ -1,16 +1,16 @@
 ---
-title: Keskitettyjen maksujen tilityksen kuvaus
-description: "Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Tällöin samaa tapahtumaa ei tarvitse syöttää erikseen useassa yrityksessä. Aikaa myös säästyy, kun keskitettyjen maksujen maksuehdotusprosessi, selvitysprosessi, avointen tapahtumien muokkaus ja suljettujen tapahtumien muokkaus yksinkertaistuvat."
+title: Keskitettyjen maksujen tilityksen yleiskatsaus
+description: "Tämä ohjeaihe kuvaa Microsoft Dynamics 365 for Finance and Operationsin keskitettyjen maksujen tilitystä."
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
@@ -19,14 +19,14 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b76b141531acfc2d1d7553a3e7a13f165373921b
+ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
+ms.openlocfilehash: 1fecc9027d0df7b268a3241ea0f1797849db2d90
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="settlement-overview-for-centralized-payments"></a>Keskitettyjen maksujen tilityksen kuvaus
+# <a name="settlement-overview-for-centralized-payments"></a>Keskitettyjen maksujen tilityksen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,8 +35,8 @@ Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja 
 Kun asiakkaan tai toimittajan maksu määritetään yhdessä yrityksessä ja maksu selvitetään toisessa yrityksessä kirjatulla laskulla, kummallekin yritykselle luodaan automaattisesti soveltuva tilitys sekä erääntymiskohteen ja erääntymislähteen tapahtumat. Tilitystietue luodaan tapahtuman laskun ja maksun kullekin yhdistelmälle. Kullekin tilitystapahtumalle määritetään uusi tositenumero, joka perustuu maksutositteen numerosarjaan. Tämä numerosarja määritetään asiakkaille **Myyntireskontran parametrit** -sivulla ja toimittajille **Ostoreskontran parametrit** -sivulla. 
 
 Jos käteisalennuksille, ulkomaanvaluutan uudelleenarvostuksille, pyöristyseroille, liian suurille maksuille tai liian pienille maksuille luodaan tilitystietueita, ne kohdistetaan maksu- tai laskutapahtuman myöhempään päivämäärään. Jos tilitys tapahtuu maksun kirjaamisen jälkeen, tilitystietueissa käytetään tilityksen kirjauspäivämäärä, joka määritettiin **Tilitä avoimet tapahtumat** -sivulla.
-Kirjaustyypit, tapahtumatyypit ja oletuskuvaukset
-----------------------------------------------------------
+
+## <a name="posting-types-transaction-types-and-default-descriptions"></a>Kirjaustyypit, tapahtumatyypit ja oletuskuvaukset
 
 Yritystenväliset tilitystositetapahtumat käyttävät Konserninsisäinen selvitys -kirjaustyyppiä sekä Konserniasiakkaan tilitys- ja Konsernitoimittajan tilitys -tapahtumatyyppejä. Voit määrittää tapahtumatyypin tiedot **Oletuskuvaukset**-lomakkeessa. 
 
@@ -50,8 +50,7 @@ Seuraavat tapahtumatyypit ovat käytettävissä yhden yrityksen tilityksille ja 
 
 Voit määrittää myös yritystenvälisten selvitystositteiden oletuskuvaukset.
 
-<a name="currency-exchange-gains-or-losses"></a>Vaihtokurssin voitot ja tappiot
----------------------------------
+## <a name="currency-exchange-gains-or-losses"></a>Vaihtokurssin voitot ja tappiot
 
 Asiakas- ja toimittajatapahtumissa käytettävä vaihtokurssi tallennetaan tapahtumaan. Valuutanvaihdon realisoidut voitot ja tappiot kirjataan laskuyritykseen tai maksuyritykseen sen vaihtoehdon mukaan, joka on valittu maksuyrityksen **Valuutanvaihdon voiton tai tappion jälkeen** -kentässä **Konsernin sisäinen laskenta** -sivulla. Seuraavissa esimerkeissä käytetään näitä valuuttoja:
 -   Maksun kirjanpitovaluutta: EUR
@@ -59,7 +58,7 @@ Asiakas- ja toimittajatapahtumissa käytettävä vaihtokurssi tallennetaan tapah
 -   Maksutapahtuman valuutta: DKK
 -   Laskutapahtuman valuutta: CAD
 
-#### <a name="currency-calculations"></a>Valuuttalaskennat
+### <a name="currency-calculations"></a>Valuuttalaskennat
 
 Kun tilität yhdessä yrityksessä kirjatun laskun toisessa yrityksessä kirjatulla maksulla, maksutapahtuman valuutta (DKK) muunnetaan kolmessa vaiheessa:
 1.  Summa muunnetaan maksun kirjanpitovaluutaksi (EUR) maksuyrityksen valuuttakurssin mukaan.
@@ -75,17 +74,15 @@ Kun avaat **Tilitä avoimet tapahtumat** -sivun maksukirjauskansiosta, johon mak
 
 Tuloksena saatava maksun summa siirretään maksukirjauskansion riville, kun suljet **Tilitä avoimet tapahtumat** -sivun.
 
-#### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Eri kirjanpitovaluuttojen aiheuttamien voittojen ja tappioiden kirjaaminen
+### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Eri kirjanpitovaluuttojen aiheuttamien voittojen ja tappioiden kirjaaminen
 
 Jos valuuttamuunnoksista aiheutuu voittoja tai tappioita, voitot tai tappiot kirjataan yritykseen, joka on määritetty maksuyrityksen **Valuutanvaihdon voiton tai tappion jälkeen**-kentässä **Konserniyritysten välinen laskenta**-sivulla. Voiton tai tappion summa muunnetaan sen yrityksen kirjanpitovaluuttaan, johon voiton tai tappion määrä kirjataan. Muunnossa käytetään yritykselle määritettyä vaihtokurssia.
 
-<a name="cash-discounts"></a>Käteisalennukset
---------------
+## <a name="cash-discounts"></a>Käteisalennukset
 
 Yritystenvälisen tilitysprosessin aikana luotavat käteisalennukset kirjataan laskuyritykseen tai maksuyritykseen sen vaihtoehdon mukaan, joka on valittu maksuyrityksen **Käteisalennuksen jälkeen** -kentässä **Konsernin sisäinen laskenta** -sivulla. Vastaava tilitystapahtuma luodaan laskuyritykselle.
 
-<a name="overpayments-and-underpayments"></a>Liian suuret ja pienet maksut
-------------------------------
+## <a name="overpayments-and-underpayments"></a>Liian suuret ja pienet maksut
 
 Liian suuret ja pienet maksut sekä pyöristyserojen toleranssit määritetään liian suurten maksujen maksuyrityksen sekä liian pienten maksujen laskuyrityksen mukaan. Käytettävä asiakkaiden kirjaustili määräytyy **Käteisalennuksen hallinta** -kentän **Myyntireskontran parametrit** -sivulla ja toimittajien kirjaustili **Käteisalennuksen hallinta** -kentän **Ostoreskontran parametrit**-sivulla.
 
@@ -112,9 +109,4 @@ Toimittajamaksujen maksuyrityksen erääntymiskohteen ja erääntymislähteen ta
 
 ## <a name="withholding-tax"></a>Ennakonpidätys
 Laskuun liittyvää toimittajatiliä käytetään määrittämään, pitääkö ennakonpidätys laskea. Jos ennakonpidätys lasketaan, se lasketaan laskuun liitetystä yrityksestä. Jos yritykset käyttävät eri valuuttoja, käytetään laskuun liitetyn yrityksen vaihtokurssia.
-
-
-
-
-
 

@@ -3,7 +3,7 @@ title: "Lokalisointi- ja säädösominaisuudet"
 description: "Tässä aiheessa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista toiminnoista."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 07/18/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 4485bd6442d186e5a6bac90e0a9041566e2e26d0
-ms.openlocfilehash: efa82abcd25101fc7be772c32e6c4fee7976d4bb
+ms.sourcegitcommit: 46165351f3c9048cfbecf25a1c49d8aeac1f3e1e
+ms.openlocfilehash: 787ce11701a9df951b38af5209206902d7c98019
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -147,38 +147,14 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 - [ALV-raportointi](../../financials/localizations/emea-vat-reporting.md)
 - [Tilitettävien tapahtumien näyttäminen](../../financials/localizations/emea-transactions-settlement-form.md)
 
-### <a name="france"></a>Ranska
--   [Lasku- ja tositenumerot aikajärjestyksessä](../../financials/localizations/emea-fra-chronological-invoices-vouchers.md)
--   [Verotusetuun perustuva poisto Ranskassa](../../financials/localizations/emea-fra-derogatory-depreciation.md)
--   [NAF-koodit ja siret-numerot](../../financials/localizations/emea-fra-naf-codes-siret-numbers.md)
--   [Erääntyneiden asiakasmaksujen rangaistukset Ranskassa](../../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md)
--   [Kokonaissumman palautustekstin tulostaminen myyntilaskuun](../../financials/localizations/emea-fra-print-lump-sum-recovery-text.md)
--   [RB/SL-poisto](../../financials/localizations/emea-fra-rbsl-depreciation.md)
-
-#### <a name="public-sector"></a>Julkinen sektori
-   -   [Julkisen sektorin sitoumukset](../../financials/localizations/emea-fra-commitments-public-sector.md)
-   -   [Julkisen sektorin mandats de paiement](../../financials/localizations/emea-fra-mandats-de-paiement.md)
-   -   [Hankinta](../../financials/localizations/emea-fra-procurement-sourcing-public-sector.md)
-   -   [Julkisen sektorin kirjanpito](../../financials/localizations/emea-fra-public-sector-accounting.md)
-   -   [Titres de recette](../../financials/localizations/emea-fra-titres-de-recette-public-sector.md)
-   -   [Toimittajan laskun maksun pidot](../../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md)
-
-### <a name="germany"></a>Saksa
--   [Lisähankintojen poisto](../../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
--   [Saksalainen tarkistustiedosto (GDPdU/GoBD)](../../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
--   [Saksalainen kirjauskansioluettelon raportti](../../financials/localizations/emea-deu-journal-list-report.md)
--   [Erillisen etiketin tulostaminen myynnistä peräisin oleville hyvityslaskuille](../../financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md)
-
-### <a name="hungary"></a>Unkari
-
--   [Käyttöomaisuuden poistomenetelmät](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
--   [Käyttöomaisuuden siirto varastoon](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
--   [Kustannukseltaan vähäinen käyttöomaisuus](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+### <a name="francefinancialslocalizationsfrancemd"></a>[Ranska](../../financials/localizations/france.md)
+### <a name="germanyfinancialslocalizationsgermanymd"></a>[Saksa](../../financials/localizations/germany.md)
+### <a name="hungaryfinancialslocalizationshungarymd"></a>[Unkari](../../financials/localizations/hungary.md)
 
 ### <a name="india"></a>Intia
 
 - [Käyttöomaisuuserät](../../financials/localizations/apac-ind-fixed-assets.md)
-    - [Pääomanimikkeiden siirtäminen käyttöomaisuuteen](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
+    - [Pääomahyödykkeiden siirtäminen käyttöomaisuuteen](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
     - [Vuorokausipohjaisen kalenterin liittäminen käyttöomaisuuskirjaan](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
     - [Parametrien määrittäminen poiston laskemista varten](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
     - [Käyttöomaisuusryhmän poiston määrittäminen poistokirjoille](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
@@ -190,22 +166,11 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
     - [Veron raja-arvot – usein kysytyt kysymykset](../../financials/localizations/apac-ind-tax-thresholds.md)
     - [Veromoduulin laajentaminen](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
-### <a name="italy"></a>Italia
-
--   [Italian mustan listan raportti](../../financials/localizations/emea-ita-black-list-report.md)
--   [ALV-ilmoituksen tiedot](../../financials/localizations/emea-ita-vat-statements-details.md)
--   [Tapahtumien ennakkopidätyspäivämäärä](../../financials/localizations/emea-ita-competence-date.md)
--   [Käyttöomaisuuden manuaalinen poisto](../../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
--   [Modello 770](../../financials/localizations/emea-ita-modello770.md)
--   [Pakkausluettelon päivämäärän tarkastus italialaisissa laskuissa](../../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
--   [Italialaiset arvonlisäverokirjat](../../financials/localizations/emea-ita-fiscal-books.md)
--   [Julkishallinnon kirjoittamien laskujen jaettu maksu](../../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
--   [Ennakonpidätys](../../financials/localizations/emea-ita-withholding-tax.md)
-
+### <a name="italyfinancialslocalizationsitalymd"></a>[Italia](../../financials/localizations/italy.md)
 ### <a name="japan"></a>Japani
 
--  [Toimittajien kattamat pankkimaksut](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
--  [Konsolidoidut laskut](../../financials/localizations/apac-jpn-consolidate-invoices.md)
+-  [Toimittajien suorittamat pankkimaksut](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
+-  [Koontilaskut](../../financials/localizations/apac-jpn-consolidate-invoices.md)
 -  [Käyttöomaisuuden kohdistussäännöt](../../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md)
 -  [Tasan jaettu poistomenetelmä](../../financials/localizations/apac-jpn-equally-divided-depreciation-method.md)
 -  [Käyttöomaisuuden poisto](../../financials/localizations/apac-jpn-fixed-asset-depreciation.md)
@@ -216,19 +181,8 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 -  [Toimittajalle maksaminen hyväksymällä vekseli](../../financials/localizations/apac-jpn-endorse-bill-of-exchange.md)
 -  [Progressiivisen ennakonpidätyksen laskenta](../../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md)
 
-### <a name="latvia"></a>Latvia
-
--   [Käyttöomaisuuden kirjanpito verotusta varten](../../financials/localizations/emea-lva-fixed-assets-accounting.md)
--   [Käyttöomaisuuden sijaintimuutosten seuranta](../../financials/localizations/emea-lva-fixed-assets-location-fields-change.md)
--   [Laskun ja pakkausluettelon numerointi](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
--   [Luonnonvarojen verotusraportti](../../financials/localizations/emea-lva-tax-natural-resources.md)
--   [ALV-ilmoituksen tiedot](../../financials/localizations/emea-lva-vat-statement-details.md)
-
-### <a name="lithuania"></a>Liettua
-
--   [Käyttöomaisuuden korjauserittely](../../financials/localizations/emea-ltu-fixed-asset-repair-statement.md)
--   [Laskun ja pakkausluettelon numerointi](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
--   [ALV-ilmoituksen tiedot](../../financials/localizations/emea-ltu-vat-statement-details.md)
+### <a name="latviafinancialslocalizationslatviamd"></a>[Latvia](../../financials/localizations/latvia.md)
+### <a name="lithuaniafinancialslocalizationslithuaniamd"></a>[Liettua](../../financials/localizations/lithuania.md)
 
 ### <a name="mexico"></a>Meksiko
 
@@ -240,31 +194,11 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 
 ### <a name="malaysia"></a>Malesia
 
--   [GST-vero](../../financials/localizations/apac-mys-gst.md)
+-   [Arvonlisävero (GST)](../../financials/localizations/apac-mys-gst.md)
 
-### <a name="netherlands"></a>Alankomaat
-
--   [Laskun kirjoittamisen määräaika](../../financials/localizations/emea-invoice-issue-deadline.md)
-
-### <a name="norway"></a>Norja
-
--   [Norjan kassakoneet](../../retail/localizations/emea-nor-cash-registers.md)
--   [Käyttöönotto-ohjeet Norjan kassakoneille](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
--   [Nets-tuontimuoto](../../financials/localizations/emea-nor-nets-import-format.md)
--   [ALV-ilmoitus](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
-
-### <a name="poland"></a>Puola
-
--   [Rivialennusten laskenta yksikköhinnasta](../../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
--   [Korjaushuomautukset](../../financials/localizations/emea-pol-correction-notes.md)
--   [Myyntilaskun kaksoiskappaleiden numerointi](../../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md)
--   [Käyttöomaisuuden poisto](../../financials/localizations/emea-pol-fixed-assets-depreciation.md)
--   [Käyttöomaisuuden luovutus](../../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md)
--   [Palautettavissa oleva pakkaus](../../financials/localizations/emea-pol-returnable-packages.md)
--   [Arvonlisäveroraportit](../../financials/localizations/emea-pol-sales-tax-reports.md)
--   [Standard Audit File (SAF) -tiedosto](../../financials/localizations/emea-pol-standard-audit-file-saf.md)
--   [Liikevaihto ja saldoilmoitus](../../financials/localizations/emea-pol-turnover-balances-statement.md)
-
+### <a name="netherlandsfinancialslocalizationsnetherlandsmd"></a>[Alankomaat](../../financials/localizations/netherlands.md)
+### <a name="norwayfinancialslocalizationsnorwaymd"></a>[Norja](../../financials/localizations/norway.md)
+### <a name="polandfinancialslocalizationspolandmd"></a>[Puola](../../financials/localizations/poland.md)
 ### <a name="saudi-arabia"></a>Saudi-Arabia
 
 -   [Zakat-raportointi](../../financials/localizations/emea-sau-zakat-reporting.md)
@@ -273,29 +207,9 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 
 -   [Singaporen GST-05-raportin luonti](../../financials/localizations/apac-sgp-generate-gst-05-report.md)
 
-### <a name="spain"></a>Espanja
-
--   [Espanjalaiset vekselivaihtoehdot](../../financials/localizations/emea-esp-bill-of-exchange-options.md)
--   [Käteisalennus otettu käyttöön laskussa -parametri](../../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
--   [Maksuperusteinen arvonlisävero](../../financials/localizations/emea-esp-conditional-sales-tax.md)
--   [Käyttöomaisuuden uudelleenarvostusryhmät](../../financials/localizations/emea-esp-fixed-asset-group-revaluation.md)
--   [Yhteisön sisäinen ALV](../../financials/localizations/emea-esp-intra-community-vat.md)
--   [Kerta-asiakkaat](../../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
--   [Tulosta sekit Espanjan asettelun avulla](../../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
--   [Espanjalaiset velkakirjojen asetukset](../../financials/localizations/emea-esp-promissory-note-options.md)
--   [Osto- ja myyntisyklit](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
--   [Erikoisviennit ja avaavat taseet](../../financials/localizations/emea-esp-opening-sheets-spain.md)
--   [Laskutustilin kirjanpitotietojen käyttö](../../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
-
-### <a name="sweden"></a>Ruotsi
-
--   [Ruotsalaiset maksujen tuontimuodot](../../financials/localizations/emea-swe-payment-formats-import.md)
--   [Ruotsin kassakoneet](../../retail/localizations/emea-swe-cash-registers.md)
-
-### <a name="switzerland"></a>Sveitsi
-
--   [ESR-asiakasmaksujen tuonti](../../financials/localizations/emea-che-esr-customer-payments-import.md)
-
+### <a name="spainfinancialslocalizationsspainmd"></a>[Espanja](../../financials/localizations/spain.md)
+### <a name="swedenfinancialslocalizationsswedenmd"></a>[Ruotsi](../../financials/localizations/sweden.md)
+### <a name="switzerlandfinancialslocalizationsswitzerlandmd"></a>[Sveitsi](../../financials/localizations/switzerland.md)
 ### <a name="thailand"></a>Thaimaa
 
 -   [Varastokorttiraportit](../../financials/localizations/apac-tha-stock-card-reports.md)
@@ -303,10 +217,7 @@ Seuraavissa osissa on luettelo maa- ja aluekohtaisista resursseista.
 -   [Toteutumaton ALV](../../financials/localizations/apac-tha-unrealized-vat.md)
 -   [Ennakonpidätys](../../financials/localizations/apac-tha-withholding-tax.md)
 
-### <a name="united-kingdom"></a>Iso-Britannia
-
--   [Ison-Britannian rakennustuotannon malli](../../financials/localizations/emea-gbr-cis-construction-industry-scheme.md)
-
+### <a name="united-kingdomfinancialslocalizationsunited-kingdommd"></a>[Yhdistynyt kuningaskunta](../../financials/localizations/united-kingdom.md)
 ### <a name="united-states"></a>Yhdysvallat
 
 -   [Julkisen sektorin 1099-lomake](../../financials/localizations/noam-usa-form-1099-public-sector.md)   

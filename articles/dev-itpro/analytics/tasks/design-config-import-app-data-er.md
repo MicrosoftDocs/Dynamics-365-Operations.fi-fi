@@ -1,5 +1,5 @@
 --- 
-title: "Saapuvien asiakirjojen jäsennysmääritysten suunnittelu sovellustietojen päivitystä varten (ER)"
+title: "Suunnittele konfiguraatioita jäsentääksesi saapuvia asiakirjoja"
 description: "Tässä menettelyssä näytetään, miten sähköisen raportoinnin (ER) konfiguraatiot suunnitellaan saapuvan sähköisen asiakirjan jäsentämistä varten."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 96c9397c6a83d61b679492f66f4aa6661f1f8621
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>Saapuvien asiakirjojen jäsennysmääritysten suunnittelu sovellustietojen päivitystä varten (ER)
+# <a name="design-er-configurations-to-parse-incoming-documents"></a>Suunnittele konfiguraatioita jäsentääksesi saapuvia asiakirjoja
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -30,12 +30,12 @@ Tässä menettelyssä näytetään, miten sähköisen raportoinnin (ER) konfigur
 
 Tämä menettely on luotu käyttäjille, joille on määritetty järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli. 
 
-Nämä vaiheet voidaan suorittaa minkä tahansa tietojoukon avulla. Ennen kuin aloitat, lataa ja tallenna ohjeaiheessa Saapuvien asiakirjojen jäsentäminen sovellustietojen päivittämistä varten mainitut tiedostot (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Tiedostot: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+Nämä vaiheet voidaan suorittaa minkä tahansa tietojoukon avulla. Ennenkuin aloitat, lataa ja tallenna tiedostot, jotka on lueteltu ohjeaiheessa “Jäsennä saapuvat asiakirjat päivittääksesi sovellustiedot” (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Tiedostot: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
     * Varmista, onko Litware, Inc. -malliyrityksen konfiguraation lähde käytettävissä ja merkitty aktiiviseksi. Jos konfiguraation lähde ei ole näkyvissä, suorita Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet.  
 2. Valitse Raportointikonfiguraatiot.
-    * Seuraavaa skenaariota käytetään näytettäessä ominaisuudet, joiden avulla jäsennetään saapuvia sähköisiä asiakirjoja, jotka ovat XML-muodossa: ERP-sovellus (Dynamics 365 for Finance and Operations) pyytää tietoja verkkopalvelulta (kuten http://efsta.org/ EFSTA-tilipalvelu) ja jäsentää saapuvat vastaukset sekä päivittää sovellustiedot vastaavasti. Jotta jäsentäminen tapahtuu tehokkaasti, käytössä on yksi ER-muoto odotettujen XML-muotoisten saapuvien asiakirjojen eri rakenteesta huolimatta.   
+    * Aloita, lataa ja Tallenna ohjeaiheessa luetelluista tiedostoista ”jäsentää saapuvat asiakirjat Päivitä sovellustiedot” Seuraavaa skenaariota käytetään näytettäessä ominaisuudet, joiden avulla jäsennetään saapuvia sähköisiä asiakirjoja, jotka ovat XML-muodossa: ERP-sovellus (Dynamics 365 for Finance and Operations) pyytää tietoja verkkopalvelulta (kuten http://efsta.org/ EFSTA-tilipalvelu) ja jäsentää saapuvat vastaukset sekä päivittää sovellustiedot vastaavasti. Jotta jäsentäminen tapahtuu tehokkaasti, käytössä on yksi ER-muoto odotettujen XML-muotoisten saapuvien asiakirjojen eri rakenteesta huolimatta.   
 
 ## <a name="import-and-review-er-configurations"></a>ER-konfiguraatioiden tuominen ja tarkistaminen
 Tuo se ER-mallikonfiguraatio, joka sisältää saapuvan tiedoston tiedot tallentavan tietomalliesimerkin.  

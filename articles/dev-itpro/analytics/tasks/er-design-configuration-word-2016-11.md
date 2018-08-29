@@ -1,5 +1,5 @@
 --- 
-title: "Konfiguraation suunnittelu raporttien luomiseksi Microsoft Word -muodossa sähköistä raportointia (ER) varten"
+title: Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja Word-muodossa
 description: "Seuraavissa vaiheissa selitetään, miten käyttäjä, jolla on järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi määrittää sähköisen raportoinnin (ER) muotoja luomaan raportteja Microsoft Word -tiedostoina."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
-ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Konfiguraation suunnittelu raporttien luomiseksi Microsoft Word -muodossa sähköistä raportointia (ER) varten
+# <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja Word-muodossa
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -63,7 +63,7 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Microsoft Dynamics 365 for Ope
     * Määritysmuutosten tallennuksen lisäksi tallennustoiminto myös päivittää liitteenä olevan Word-mallin. Suunnittelun muodon rakenne siirretään liitettyyn Word-asiakirjaan uutena mukautettuna, Raportti-nimisenä XML-osana. Huomaa, että ER-raporttina luotavan asiakirjan asettelun lisäksi liitetty Word-malli sisältää myös tietorakenteen, jonka tiedot ER täyttää malliin suorituksen aikana.  
 2. Napsauta Liitteet.
     * Mukautetun Raportti-XML-osan elementit on nyt sidottava Word-asiakirjan osiin.  
-    * Jos olet käyttänyt Word-asiakirjoja, jotka on suunniteltu mukautettujen XML-osien elementteihin sidottuja sisällön ohjausobjekteja sisältäviksi lomakkeiksi, luo kyseinen asiakirja toistamalla kaikki seuraavan alitehtävän vaiheet. Lisätietoja on osoitteessa https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. Muussa tapauksessa voit ohittaa kaikki seuraavan alitehtävän vaiheet.  
+    * Jos olet käyttänyt Word-asiakirjoja, jotka on suunniteltu mukautettujen XML-osien elementteihin sidottuja sisällön ohjausobjekteja sisältäviksi lomakkeiksi, luo kyseinen asiakirja toistamalla kaikki seuraavan alitehtävän vaiheet. Seuraavassa linkissä on lisätietoja: https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. Muussa tapauksessa voit ohittaa kaikki seuraavan alitehtävän vaiheet.  
 
 ## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a>Mukautetun XML-osan sisältävän Word-asiakirjan hakeminen tietojen sidontaa varten
     * Avaa tämän asiakirja Wordissa ja toimi seuraavasti: – Avaa Word-kehittäjät-välilehti (muokkaa valintanauhaa, jos se ei ole vielä käytettävissä.)  - Valitse XML-määritys-ruutu.  - Valitse mukautettu Raportti-XML-osa valintaruudussa.  - Yhdistä valitun mukautetun XML-osan elementtien ja Word-asiakirjan sisällön ohjausobjektien määritykset.  - Tallenna päivitetty Word-asiakirja paikalliseen asemaan.  

@@ -1,5 +1,5 @@
 --- 
-title: "Excel-raporttien sarakkeiden dynaamisessa lisäämisessä käytettävien vaakasuuntaisesti laajennettavien alueiden muodon suunnitteleminen"
+title: "Excel-raporttien sarakkeiden dynaamisessa lisäämisessä käytettävien vaakasuuntaisesti laajennettavien alueiden muotojen suunnitteleminen"
 description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi määrittää sähköisen raportoinnin (ER) muodon luomaan raportteja OPENXML-työkirjamuodossa (Excel), joissa pakolliset sarakkeet voi lyödä dynaamisesti vaakasuunnassa laajenevilla alueilla."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9c3cf17cd406a50a9f92e78991289f9139d7c73
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 80cd2603ba5ee47f861077d75a955037ffbde96e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports"></a>Excel-raporttien sarakkeiden dynaamisessa lisäämisessä käytettävien vaakasuuntaisesti laajennettavien alueiden muodon suunnitteleminen
+# <a name="design-formats-to-dynamically-add-columns-to-excel-reports-as-horizontally-expandable-ranges"></a>Excel-raporttien sarakkeiden dynaamisessa lisäämisessä käytettävien vaakasuuntaisesti laajennettavien alueiden muotojen suunnitteleminen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,5 +1,5 @@
 --- 
-title: "Ehdokkaan työhönotto rekrytoinnin kautta"
+title: "Ehdokkaiden työhönotto rekrytoinnin kautta"
 description: "Tässä menettelyssä rekrytoija palkkaa hakijan, joka lähetti hakemuksen tietyn työhönottoprojektin aikana."
 author: kherr75
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e27dc0623f27ee21408d14aefb93ca13c40be672
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: a38592bc309b85052dd3d04c036da8f409fcd96d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="hire-a-candidate-through-recruiting"></a>Ehdokkaan työhönotto rekrytoinnin kautta
+# <a name="hire-candidates-through-recruitment"></a>Ehdokkaiden työhönotto rekrytoinnin kautta
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

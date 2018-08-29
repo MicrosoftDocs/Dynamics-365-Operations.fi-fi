@@ -3,7 +3,7 @@ title: "Työnkulkuominaisuuksien asetusten määrittäminen"
 description: "Tässä ohjeaiheessa kerrotaan, miten työnkulun eri ominaisuudet määritetään."
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: 7ea35d851613a19889392400e31cf8492d5dc799
+ms.sourcegitcommit: ba03473dd6fc31d51fd4e890acac1cd1494ef5a3
+ms.openlocfilehash: a327b85f18f03294a237c3795ae2e1f4a97095f0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -107,6 +107,7 @@ Kun asiakirja lähetetään käsiteltäväksi, järjestelmä luo työnkulkuinsta
     2.  Napsauta **Lisää paikkamerkki** -painiketta.
     3.  Valitse esiin tulevasta luettelosta lisättävä paikkamerkki.
     4.  Valitse **Lisää**.
+    5.  Tavallinen sisällytettävä **Ilmoitusteksti**-paikkamerkki on "Viimeiset muistiinpanot: %Workflow.Last note%", joka näyttää kaikki kommentit edellisestä vaiheesta.
 
 6.  Tekstien käännökset voit lisätä seuraavasti:
     1.  Napsauta **Käännökset**-painiketta.

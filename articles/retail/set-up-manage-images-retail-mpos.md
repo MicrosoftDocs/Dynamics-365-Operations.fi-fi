@@ -1,5 +1,5 @@
 ---
-title: "Kuvien määrittäminen ja hallinta Retail Modern POS -moduulissa"
+title: "Kuvien määrittäminen ja hallinta Retail Modern POS (MPOS) -moduulissa"
 description: "Tässä artikkelissa on selostettu vaiheita, joilla määritetään ja hallitaan Retail Modern POS -sovelluksessa (MPOS) näkyvien eri entiteettien kuvia."
 author: athinesh99
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ed4a7044b577ed6af86f6803f6abd4f9b500b4e7
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: e364cf988cc80d53605fe88bf0dc1be6021c52e7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Kuvien määrittäminen ja hallinta Retail Modern POS -moduulissa
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Kuvien määrittäminen ja hallinta Retail Modern POS (MPOS) -moduulissa
 
 [!include [banner](includes/banner.md)]
 
@@ -52,7 +52,7 @@ Retail Modern POS (MPOS):ssa näkyviä kuvia on isännöitävä ulkoisesti, Micr
 4.  Kuvien tiedostonimen muoto on pysyväiskoodattu luettelon nimeen eikä sitä voi muuttaa. Nimeä siksi kuvasi uudelleen niin, että niillä on soveltuvat luettelon nimet sen varmistamiseksi, että MPOS käsittelee niitä oikein.
 5.  Valitse **Tiedostotunniste**-kentässä odotettu tiedostonimen tunniste riippuen sinulla olevista kuvatyypeistä. Esimerkiksi demotiedoissa luettelokuvien asetukseksi on määritetty .jpg-tunniste. (Kuvatiedot nimetään myös uudelleen niin, että niillä on luetteloiden nimet.)
 6.  Valitse **OK**.
-7.  Tarkista, että kuvien mediamalli on tallennettu oikein, valitsemalla **Luettelokuvat**-sivulla uudelleen **Määritä mediamallit**. Jos haluat tarkistaa mallin sulkematta **Määritä mediamallit** -valintaikkunaa, voit käyttää **Luo kuvien URL-osoitteet Exceliin** -pikavälilehteä. Tarkista kuvan URL-osoitteen ulkonäkö ja varmista, että URL-osoite on aiemmin mainitun mallistandardin mukainen. **Määritä mediamallit** -valintaikkuna on nyt määrittänyt kuvan polun implisiittisesti kaikille tätä yhteistä URL-polkua käyttäville luettelokuville. Tätä URL-polkua käytetään kaikille luettelokuville, ellei niitä ole korvattu. Ensimmäinen osa kuvan polkua otetaan median URL-perusosoitteesta, jonka määritit kanavaprofiilissa. Polun loppuosa otetaan polusta, jonka määritit mediamallissa. Nämä kaksi osaa liitetään yhteen ja näin muodostetaan kuvan sijainnin täydellinen URL-osoite. Esimerkiksi demotiedoissa olevan luettelon nimi on Fabrikam Base Catalog. Näin ollen kuvan nimen on oltava Fabrikam Base Catalog.jpg, jotta se käyttää luettelon nimeä ja .jpg-tiedostonimen tunnistetta, joka määritettiin mallissa. Tässä tapauksessa, yhteen liittämisen jälkeen URL-osoite on https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg.
+7.  Tarkista, että kuvien mediamalli on tallennettu oikein, valitsemalla **Luettelokuvat**-sivulla uudelleen **Määritä mediamallit**. Jos haluat tarkistaa mallin sulkematta **Määritä mediamallit** -valintaikkunaa, voit käyttää **Luo kuvien URL-osoitteet Exceliin** -pikavälilehteä. Tarkista kuvan URL-osoitteen ulkonäkö ja varmista, että URL-osoite on aiemmin mainitun mallistandardin mukainen. **Määritä mediamallit** -valintaikkuna on nyt määrittänyt kuvan polun implisiittisesti kaikille tätä yhteistä URL-polkua käyttäville luettelokuville. Tätä URL-polkua käytetään kaikille luettelokuville, ellei niitä ole korvattu. Ensimmäinen osa kuvan polkua otetaan median URL-perusosoitteesta, jonka määritit kanavaprofiilissa. Polun loppuosa otetaan polusta, jonka määritit mediamallissa. Nämä kaksi osaa liitetään yhteen ja näin muodostetaan kuvan sijainnin täydellinen URL-osoite. Esimerkiksi demotiedoissa olevan luettelon nimi on Fabrikam Base Catalog. Näin ollen kuvan nimen on oltava Fabrikam Base Catalog.jpg, jotta se käyttää luettelon nimeä ja .jpg-tiedostonimen tunnistetta, joka määritettiin mallissa. Tässä tapauksessa yhdistämisen jälkeen URL-osoite tulee olemaan https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg.
 8.  Suorita synkronointityöt uuden mallin siirtämiseen kanavan tietokantaan niin, että MPOS voi käyttää näitä kuvia mallia avulla.
 9.  Kun päivität luettelokuvien mediamallin kanavapuolella, huolehdi siitä, että suoritat **Luettelotyö 1150**:n kohdasta **Vähittäismyynnin IT** &gt; **Jakeluaikataulu**.[![catalog1](./media/catalog1.png)](./media/catalog1.png)
 

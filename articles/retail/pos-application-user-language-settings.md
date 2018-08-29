@@ -1,5 +1,5 @@
 ---
-title: "Myyntipistesovellus ja käyttäjän kieli- ja alueasetukset"
+title: "Myyntipistesovellus (POS) ja käyttäjän kielialueasetukset"
 description: "Tässä ohjeaiheessa kuvataan, miten kieliasetukset muutetaan Retail Modern -myyntipisteessä (MPOS) ja pilvimyyntipisteessä."
 author: jblucher
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dacc072ab5c070010d86302fa08a3066125b23a6
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 1ea4309d57a7b6b4ca4ae3fdd995c95d93c5c080
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="pos-application-and-user-language-settings"></a>Myyntipistesovellus ja käyttäjän kieli- ja alueasetukset
+# <a name="point-of-sale-pos-application-and-user-language-settings"></a>Myyntipistesovellus (POS) ja käyttäjän kielialueasetukset
 
 [!include [banner](includes/banner.md)]
 
@@ -61,7 +61,7 @@ Myyntipisteen kieliasetukset määritetään kohdassa **Kaikki työntekijät** *
 
 |             |                            |                                                                   |
 |-------------|----------------------------|-------------------------------------------------------------------|
-| ** **       | **Käyttöliittymän kieli**      | **Tietojen kieli (tuotteet, kuittimuodot, rivinäyttö, jne.)** |
+| ** **       | **Käyttöliittymän kieli** ** **      | **Tietojen kieli (tuotteet, kuittimuodot, rivinäyttö, jne.)** |
 | **Yritys** | Oletusarvo                    | Oletusarvo                                                           |
 | **Myymälä**   | Ohittaa yrityksen          | Ohittaa yrityksen                                                 |
 | **Käyttäjä**    | Ohittaa myymälän tai yrityksen | En koskaan                                                             |

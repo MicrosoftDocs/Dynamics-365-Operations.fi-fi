@@ -1,5 +1,5 @@
 --- 
-title: "Sovellustietoja sisältävien asiakirjojen muokkaamalla mallia ja yhdistämismääritystä"
+title: "Muokkaa malleja ja yhdistämismäärityksiä luodaksesi sovellustietoja sisältäviä asiakirjoja"
 description: "Voit suorittaa tämän menettelyn vaiheet sen jälkeen, kun ER Asiakirjojen luominen sovellustietojen päivityksen kanssa (Osa 2 – asiakirjojen luominen) -menettely on suoritettu."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c112b2895175bd23db313888ec1e964bdf5ed295
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 580f00faf6694dc2da476ffa75f995d9a24e0f8b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="modify-model-and-mapping-to-generate-documents-with-application-data"></a>Sovellustietoja sisältävien asiakirjojen muokkaamalla mallia ja yhdistämismääritystä
+# <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Muokkaa malleja ja yhdistämismäärityksiä luodaksesi sovellustietoja sisältäviä asiakirjoja
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
