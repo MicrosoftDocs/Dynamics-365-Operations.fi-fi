@@ -1,5 +1,5 @@
 --- 
-title: "Mallin yhdistämismäärityksen konfiguraation luominen (ER)"
+title: "Luo mallin määrityksen konfiguraatioita sähköistä raportointia (ER) varten"
 description: "Tämän toiminnon avulla voit suunnitella uuden sähköisen raportoinnin (ER) mallin yhdistämismäärityksen konfiguraation ja käyttää sisäänrakennettuja ER-toimintoja laskelmien tehokkaassa koostamisessa."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: f7206126bfa6150078f1bfb4f7e07c1cf2819ce0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 614ef06fcf5761f1cf2afb6e7655558d2858d763
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="create-a-model-mapping-configuration-er"></a>Mallin yhdistämismäärityksen konfiguraation luominen (ER)
+# <a name="create-electronic-reporting-er-model-mapping-configurations"></a>Luo mallin määrityksen konfiguraatioita sähköistä raportointia (ER) varten
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

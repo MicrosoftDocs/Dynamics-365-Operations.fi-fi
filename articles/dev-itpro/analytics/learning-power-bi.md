@@ -65,5 +65,3 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 | Työntekijän nimi    | Etunimi , sukunimi ja koko nimi                             | Kurssin osallistujat |
 | Työntekijän nimike   | Nimike ja virkaikä                                         | Kurssin osallistujat |
 
-
-

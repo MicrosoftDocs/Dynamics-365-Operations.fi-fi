@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 7e2a9297a417fb25384341dcabcafa41c50f8c84
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/22/2018
 - [Talousjohtajan yhteenvedon Power BI -sisältö](CFO-power-bi.md)
 - [Kompensaation Power BI -sisältö](compensation-power-bi.md)
 - [Kustannuslaskenta-analyysin Power BI -sisältö](cost-accounting-analysis-content-pack.md) 
-- [Kustannushintojen hallinta - Power BI -sisältö](cost-management-content-pack.md)    
+- [Kustannushintojen hallinta - Power BI -sisältö](cost-management-content-pack.md)
 - [Luotonvalvonnan hallinnan Power BI -sisältö](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Työntekijän kehityksen Power BI -sisältö](employee-development-PBI.md) 
 - [Taloushallinnon tietojen Power BI -sisältö](financial-insights.md)
@@ -46,5 +46,5 @@ ms.lasthandoff: 05/22/2018
 - [Myynnin ja kannattavuuden suorituskyvyn Power BI -sisältö](sales-profitability-performance-content-pack.md)
 - [Toimittajan maksujen Power BI -sisältö](../../financials/accounts-payable/Vendor-payments-workspace.md)
 - [Varaston suorituskyvyn Power BI -sisältö](warehouse-power-bi-content.md)
-- [Työvoiman mittarit - Power BI -sisältö](workforce-analysis-power-bi-content-pack.md)  
+- [Työvoiman mittarit - Power BI -sisältö](workforce-analysis-power-bi-content-pack.md)
 

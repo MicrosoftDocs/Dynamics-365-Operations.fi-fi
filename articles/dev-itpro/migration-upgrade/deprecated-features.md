@@ -1,9 +1,9 @@
 ---
-title: Vanhentuneet ominaisuudet
+title: Vanhentuneet tai poistetut ominaisuudet
 description: "Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan."
 author: sericks007
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 08/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
-ms.openlocfilehash: 6b954d1eedb7c7af1c9a5eda92aa1dd6132a19fa
+ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
+ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/30/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -38,6 +38,9 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > [!Note]
 > Dynamics 365 for Finance and Operationsin heinäkuun 2017 ympäristöpäivityksestä 8 alkaen kunkin poistetun tai vanhentuneen ominaisuuden käyttöottotyyppi ilmoitetaan. Kaikki tässä aiheessa mainitut aiemmat versiot tukivat vain pilvikäyttöönottoja.
+
+> [!Note]
+> Seuraavissa raporteissa on tarkempia tietoja Finance and Operationsin objekteista: [Tekniset viitetiedot](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operationsin versiossa.
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 ja ympäristöpäivitys 15
 Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version ominaisuus ei ole vanhentunut. Ympäristöpäivitys 15 on kumulatiivinen, ja siinä on uusia tai ympäristöpäivityksistä 13, 14 ja 15 muuttuneita ominaisuuksia.

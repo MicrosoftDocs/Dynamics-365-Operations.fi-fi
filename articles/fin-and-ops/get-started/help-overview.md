@@ -1,9 +1,9 @@
 ---
-title: Ohjeen yleiskatsaus
+title: "Finance and Operations -ohjejärjestelmä"
 description: "Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen."
 author: margoc
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,14 +19,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="help-system-overview"></a>Ohjejärjestelmän yleiskatsaus
+# <a name="finance-and-operations-help-system"></a>Finance and Operations -ohjejärjestelmä
 
 [!include [banner](../includes/banner.md)]
 
@@ -82,27 +82,19 @@ Jos haluat tilata RSS-syötteen kaikista Unified Operations -sisällön päivity
 [RSS-syöte](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>Palautteen antaminen 
-Toivomme saavamme asiakaspalautetta. GitHubin avulla voit lähettää kommentteja tai ehdottaa muutoksia sisältöön.
+Toivomme saavamme asiakaspalautetta. GitHubin avulla voit lähettää kommentteja tai ehdottaa muutoksia sisältöön. Saat lisätietoja palautejärjestelmästä [tästä blogipostauksesta](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-a-comment"></a>Jätä kommentti 
+##### <a name="leave-us-feedback"></a>Jätä meille palautetta 
 Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.  
 
-1 Valitse **Kommentit**, kun haluat hakea kommentit sivun alaosasta.
+1. Napsauta **Palaute** nähdäksesi sivun alalaidan kommentit ja napsauta sitten joko **Tuotepalaute** tai **Kirjaudu sisään antaaksesi dokumentatiopalautetta**.
 
-![Huomautukset](./media/comments.png)
+![Palaute](./media/comments.png)
 
-2 Kirjoita kommentit ja valitse sitten **Julkaise kommentti**.
+2. Kirjoita kommentit ja valitse sitten **Julkaise palaute**.
 
-![Julkaise kommentti](./media/before-signin.png)
+![Julkaise kommentti](./media/feedback.png)
 
-3 Valitse sen tilin tyyppi, jonka avulla haluat kirjautua sisään:  
-Valitse jonkin vasemmalla oleva kuvake ja liitä tämä sivusto aiemmin luotuun tiliin, kuten Twitter-, Facebook- tai Microsoft-tiliin. 
-
-Tai 
-
-Syötä oikealle sähköpostiosoite ja uusi salasana, kun haluat luoda sivustolle uuden tilin. 
-
-![Kirjautumisasetukset](./media/signin-options.png)
 
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Sisällön muutoksen tai lisäyksen ehdottaminen GitHubin kautta
@@ -115,7 +107,6 @@ Lisätietoja on osallistujan oppaassa: https://github.com/MicrosoftDocs/dynamics
 
 > [!NOTE]
 > Tällä hetkellä otamme mukaan osallistujia vain englanninkielisiin tietosäilöihin.  
-> Emme ota huomioon GitHubin kautta raportoituja ongelma. Varmista, että käytät pull-pyyntöä sisältöehdotuksiin. Tuotteisiin ja ominaisuuksiin liittyvää palautetta kannattaa käsitellä Dynamics 365:n ideaportaalissa: https://experience.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Tehtäväoppaat

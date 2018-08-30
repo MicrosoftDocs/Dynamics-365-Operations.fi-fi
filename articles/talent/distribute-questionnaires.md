@@ -1,5 +1,5 @@
 ---
-title: "Kyselylomakkeen jakaminen ja täyttäminen"
+title: Aikatauluta ja jaa kyselylomakkeita
 description: "Tässä artikkelissa kerrotaan, miten suunnittelemasi kyselylomakkeet jaetaan niin, että ne ovat oikean henkilön tai henkilöryhmän täytettävissä."
 author: kherr75
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 61aebf9190bd7f76a8d4d3e80c06adae1d27f7a3
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: eafcb047117eab73fddbd93c4c1d0aafb0023ebd
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Kyselylomakkeen jakaminen ja täyttäminen
+# <a name="distribute-and-schedule-questionnaires"></a>Aikatauluta ja jaa kyselylomakkeita
 
 [!include [banner](includes/banner.md)]
 

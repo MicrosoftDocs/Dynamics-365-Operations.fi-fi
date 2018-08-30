@@ -1,6 +1,6 @@
 ---
-title: Tiedot
-description: "Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dynamics 365 for Finance and Operations -sovellukseen sisältyvistä Business Intelligence- ja raportointityökaluista."
+title: Yritystietojen ja raportoinnin aloitussivu
+description: "Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dynamics 365 for Finance and Operations -sovellukseen sisältyvistä yritystieto- ja raportointityökaluista."
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
@@ -18,18 +18,18 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 14a18681a98a2efbf6e3cfdbe77d282e74374c71
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: bd3704f3b51aad7292571e5c4e6de7b93cf9529f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="intelligence"></a>Business Intelligence
+# <a name="business-intelligence-bi-and-reporting-home-page"></a>Yritystietojen ja raportoinnin aloitussivu
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dynamics 365 for Finance and Operations -sovellukseen sisältyvistä Business Intelligence (BI)- ja raportointityökaluista.
+Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dynamics 365 for Finance and Operations -sovellukseen sisältyvistä yritystieto- ja raportointityökaluista.
 
 ## <a name="get-started"></a>Aloittaminen
 - [Tietojen käyttö ja raportointi](information-access-reporting.md)
@@ -43,13 +43,13 @@ Käyttäjät voivat käsitellä tietoja napsauttamalla tai koskettamalla sivun v
 
 ![Esimerkki Power BI:n käytöstä työtilassa](./media/Power-BI-in-D365-Workspace.png)
 
- Lisätietoja on seuraavissa ohjeaiheissa:
+Lisätietoja on seuraavissa ohjeaiheissa:
 
- - [Embedded Power BI:n käyttö työtiloissa](embed-power-bi-workspaces.md)
- - [Power BI Embedded -integrointi](power-bi-embedded-integration.md)
- - [Analytiikan lisääminen työtiloihin Power BI Embedded -ratkaisun avulla](add-analytics-tab-workspaces.md)
- - [Analyysityötilojen ja raporttien suojaaminen Power BI Embedded -ratkaisun avulla](secure-analytical-workspaces.md)
- - [Finance and Operationsin Power BI -sisältö](power-bi-home-page.md)
+- [Embedded Power BI:n käyttö työtiloissa](embed-power-bi-workspaces.md)
+- [Power BI Embedded -integrointi](power-bi-embedded-integration.md)
+- [Analytiikan lisääminen työtiloihin Power BI Embedded -ratkaisun avulla](add-analytics-tab-workspaces.md)
+- [Analyysityötilojen ja raporttien suojaaminen Power BI Embedded -ratkaisun avulla](secure-analytical-workspaces.md)
+- [Finance and Operationsin Power BI -sisältö](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Liitetoiminta-asiakirjat ja tulostaminen
 Liiketoimintatapahtumien tiedot tallennetaan ja välitetään usein raportointiratkaisujen avulla. Raportointiratkaisun onkin tämän vuoksi voitava tuottaa liiketoimintatiedot konkreettisessa muodossa käytössä olevilla laitteilla, kuten verkkotulostimilla. Liiketoiminta-asiakirjoja ovat esimerkiksi myyntilaskut ja sekit.

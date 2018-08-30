@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: a64621c5310e5f68b9d6f1545bb39ce1519d71cf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -33,16 +33,23 @@ Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operationsin
 
 Saat lisätietoja valitsemalla ominaisuusalueen.
 
-:::row::: :::column::: - [Ostoreskontra](accounts-payable/accounts-payable.md) 
+:::row:::
+    :::column:::
+        - [Ostoreskontra](accounts-payable/accounts-payable.md) 
         - [Myyntireskontra](accounts-receivable/accounts-receivable.md)
         - [Budjetointi](budgeting/budgeting-overview.md) 
-        - [Maksuliikenteen hallinta](cash-bank-management/cash-bank-management.md)
-        - [Kustannuslaskenta](cost-accounting/cost-accounting-home-page.md) :::column-end::: :::column::: - [Kulujenhallinta](expense-management/expense-management.md)
-        - [Taloushallinnon raportointi](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
-        - [Käyttöomaisuuserät](fixed-assets/fixed-assets.md)
+        - [Käteisvarojen hallinta](cash-bank-management/cash-bank-management.md)
+        - [Kustannuslaskenta](cost-accounting/cost-accounting-home-page.md)
+    :::column-end:::
+    :::column:::
+        - [Kulujen hallinta](expense-management/expense-management.md)
+        - [Talousraportointi](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
+        - [Käyttöomaisuus](fixed-assets/fixed-assets.md)
         - [Kirjanpito](general-ledger/general-ledger.md) 
         - [Projektinhallinta](project-management/overview-project-management-accounting.md)
-        - [Julkinen sektori](public-sector/public-sector-functionality.md) :::column-end::: :::row-end:::
+        - [Julkinen sektori](public-sector/public-sector-functionality.md) 
+    :::column-end:::
+:::row-end:::
 
 
 ## <a name="additional-resources"></a>Lisäresurssit

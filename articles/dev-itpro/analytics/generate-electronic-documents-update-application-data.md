@@ -1,5 +1,5 @@
 ---
-title: "Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen sähköisellä raportointityökalulla"
+title: "Sähköisten asiakirjojen luominen ja päivittäminen sovellustiedoilla sähköistä raportointia (ER) käyttäen"
 description: "Voit suunnitella sähköisen raportoinnin muotoja, joilla voidaan luoda Finance and Operations -sovelluksessa lähteviä sähköisiä asiakirjoja. Voit suunnitella myös sähköisiä raportointimuotoja, jotka jäsentävät saapuvia sähköisiä asiakirjoja ja jotka päivittävät sovelluksen tiedot kyseisten asiakirjojen tiedoilla."
 author: NickSelin
 manager: AnnBe
@@ -19,18 +19,18 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: e2447274016f517db3ec0eb8f55c6b3163822f50
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6bb2b2480b619a8aee72c2d65052ed419c9a7c7d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="generate-electronic-documents-and-update-application-data-using-the-electronic-reporting-tool"></a>Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen sähköisellä raportointityökalulla
+# <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>Sähköisten asiakirjojen luominen ja päivittäminen sovellustiedoilla sähköistä raportointia (ER) käyttäen
 
 [!include [banner](../includes/banner.md)]
 
-Voit suunnitella sähköisen raportoinnin muotoja, joilla voidaan luoda Finance and Operations -sovelluksessa lähteviä sähköisiä asiakirjoja. Voit suunnitella myös sähköisiä raportointimuotoja, jotka jäsentävät saapuvia sähköisiä asiakirjoja ja jotka päivittävät sovelluksen tiedot kyseisten asiakirjojen tiedoilla. 
+Voit suunnitella sähköisen raportoinnin muotoja, joilla voidaan luoda Finance and Operations -sovelluksessa lähteviä sähköisiä asiakirjoja. Voit suunnitella myös sähköisiä raportointimuotoja, jotka jäsentävät saapuvia sähköisiä asiakirjoja ja jotka päivittävät sovelluksen tiedot kyseisten asiakirjojen tiedoilla.
 
 Tämän toiminnon avulla yhdellä sähköisen raportoinnin muodolla voidaan luoda lähteviä sähköisiä asiakirjoja ja päivittää sitten sovelluksen tiedot. Tätä toimintoa voidaan käyttää seuraavissa skenaarioissa:
 

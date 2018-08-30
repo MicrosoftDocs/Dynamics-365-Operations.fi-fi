@@ -33,7 +33,7 @@ ms.lasthandoff: 12/19/2017
 Tässä ohjeaiheessa käsitellään **työhönoton** Microsoft Power BI -sisältöä. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-**Työhönoton** Power BI -sisältö näkyy **Työhönoton hallinta** -työtilassa. 
+**Työhönoton** Power BI -sisältö näkyy **Työhönoton hallinta** -työtilassa.
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Työhönoton hallinnan työtilan raportit ja visualisoinnit
 **Työhönoton hallinnan** työtilassa on **Analytiikka**-välilehti. Välilehti sisältää Power BI:n upotetun työhönottosisällön. Sisällön yhdessä välilehdessä on yleiskatsaus ja muissa välilehdissä tarkempia tietoja. Seuraavassa taulukossa esitellään kunkin välilehden raportit.
@@ -66,6 +66,4 @@ Seuraavassa taulukossa on esitetty yksiköt, joihin **työhönoton** Power BI -s
 | Suoritus          | Pisteytys, kuvaus arviointimalli                            | Hakijan, työsuhteessa oleva hakija, irtisanottu hakija |
 | Työhönottoprojekti  | Projektin kuvaus, projektin tila ja avoimet paikat                | Hakijan, työsuhteessa oleva hakija, irtisanottu hakija |
 | Irtisanottu hakija | Työntekijät, joiden työsuhde on päätetty, syy, suorituskyky ja työsuhteen päättymispäivä | Yritys, kalenterin vastakirjaus, päivämäärä, maantieteellinen sijainti, suoritus, demografia, työsuhde, media, työhönottoprojekti, hakijan nimi |
-
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Kaavojen suunnittelutoiminto sähköisessä raportoinnissa"
+title: "Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto"
 description: "Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER)."
 author: NickSelin
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Sähköisen raportoinnin kaavojen suunnittelutoiminto
+# <a name="formula-designer-in-electronic-reporting-er"></a>Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 
 [!include [banner](../includes/banner.md)]
 
@@ -385,7 +385,7 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Seuraavassa kuvassa on tulos, kun suunniteltu muoto suoritetaan.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>Selitteiden ja kuvausten käännetty teksti annetaan ER-lomakkeeseen FILE- ja FOLDER-päälomake-elementeille määritettyjen kieliasetusten perusteella</blockquote>
+<blockquote>[!NOTE] Selitteiden ja kuvausten käännetty teksti annetaan ER-lomakkeeseen FILE- ja FOLDER-päälomake-elementeille määritettyjen kieliasetusten perusteella</blockquote>
 </td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Seuraavassa kuvassa on tulos, kun säädetty muoto suoritetaan.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>Rajaa ei sovellettu alkuperäisen luettelon viimeiseen nimikkeeseen, koska arvo (11) ylittää lähteen (painon) määritetyn raja-arvon (9). Käytä joko <strong>WHERE</strong>-funktiota tai vastaavan muodon elementin <strong>Käytössä</strong>-lauseketta ohittamaan tarvittaessa alaluettelot raporttia muodostettaessa.</blockquote>
+<blockquote>[!NOTE] Rajaa ei sovellettu alkuperäisen luettelon viimeiseen nimikkeeseen, koska arvo (11) ylittää lähteen (painon) määritetyn raja-arvon (9). Käytä joko <strong>WHERE</strong>-funktiota tai vastaavan muodon elementin <strong>Käytössä</strong>-lauseketta ohittamaan tarvittaessa alaluettelot raporttia muodostettaessa.</blockquote>
 </td>
 </tr>
 <tr>
@@ -456,8 +456,8 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 | NUMBERVALUE (merkkijono, desimaalierotin, numeron ryhmittelyin erotin) | Muuntaa määritetyn merkkijonon numeroksi. Määritettyä desimaalia käytetään desimaaliluvun kokonais- ja murtolukuosien välissä. Määritettyä numeroryhmittelyn erotinta käytetään tuhaterottimena. | **NUMBERVALUE("1 234,56", ",", " ")** palauttaa arvon **1234.56**. |
 | VALUE (merkkijono) | Muuntaa määritetyn merkkijonon numeroksi. Pilkkuja ja pisteitä (.) pidetään desimaalierottimina. Alussa olevaa tavuviivaa (-) pidetään miinusmerkkinä. Annetaan poikkeus, jos määritetyssä merkkijonossa on muita kuin numeerisia merkkejä. | **VALUE ("1 234,56")** antaa poikkeuksen. |
 | ROUND (numero, desimaalit) | Palauttaa määritetyn numeron sen jälkeen, kun se on pyöristetty määritettyyn määrään desimaaleja:<ul><li>Jos **desimaali**-parametrien arvo on yli 0 (nolla), numero pyöristetään kyseiseen määrään desimaaleja.</li><li>Jos **desimaali**-parametrin arvo on **0** (nolla), numero pyöristetään lähimpään kokonaislukuun.</li><li>Jos **desimaali**-parametrin arvo on vähemmän kuin 0 (nolla), numero pyöristetään desimaalipilkusta vasemmalle.</li></ul> | **ROUND (1200.767, 2)** pyöristää kahteen desimaaliin ja palauttaa arvon **1200.77**. **ROUND (1200.767, -3)** pyöristää lähimpään tuhanteen ja palauttaa arvon **1000**. |
-| ROUNDDOWN (numero, desimaalit) | Palauttaa määritetyn luvun sen jälkeen, kun se on pyöristetty alaspäin määritettyyn määrään desimaaleja.<blockquote>[!NOTE]<br>Tämä funktio toimii kuin **ROUND**, mutta se pyöristää määritetyn numeron aina alaspäin (kohti nollaa).</blockquote> | **ROUNDDOWN (1200.767, 2)** pyöristää alaspäin kahteen desimaaliin ja palauttaa arvon **1200.76**. **ROUNDDOWN (1700.767, -3)** pyöristää alaspäin lähimpään tuhanteen ja palauttaa arvon **1000**. |
-| ROUNDUP (numero, desimaalit) | Palauttaa määritetyn luvun sen jälkeen, kun se on pyöristetty ylöspäin määritettyyn määrään desimaaleja.<blockquote>[!NOTE]<br>Tämä funktio toimii kuin **ROUND**, mutta se pyöristää määritetyn numeron aina ylöspäin (pois päin nollasta).</blockquote> | **ROUNDUP (1200.763, 2)** pyöristää ylöspäin kahteen desimaaliin ja palauttaa arvon **1200.77**. **ROUNDUP (1200.767, -3)** pyöristää ylöspäin lähimpään tuhanteen ja palauttaa arvon **2000**. |
+| ROUNDDOWN (numero, desimaalit) | Palauttaa määritetyn luvun sen jälkeen, kun se on pyöristetty alaspäin määritettyyn määrään desimaaleja.<blockquote>[!NOTE] Tämä funktio toimii kuin **ROUND**, mutta se pyöristää määritetyn numeron aina alaspäin (kohti nollaa).</blockquote> | **ROUNDDOWN (1200.767, 2)** pyöristää alaspäin kahteen desimaaliin ja palauttaa arvon **1200.76**. **ROUNDDOWN (1700.767, -3)** pyöristää alaspäin lähimpään tuhanteen ja palauttaa arvon **1000**. |
+| ROUNDUP (numero, desimaalit) | Palauttaa määritetyn luvun sen jälkeen, kun se on pyöristetty ylöspäin määritettyyn määrään desimaaleja.<blockquote>[!NOTE] Tämä funktio toimii kuin **ROUND**, mutta se pyöristää määritetyn numeron aina ylöspäin (pois päin nollasta).</blockquote> | **ROUNDUP (1200.763, 2)** pyöristää ylöspäin kahteen desimaaliin ja palauttaa arvon **1200.77**. **ROUNDUP (1200.767, -3)** pyöristää ylöspäin lähimpään tuhanteen ja palauttaa arvon **2000**. |
 
 ### <a name="data-conversion-functions"></a>Tietojen muuntotoiminnot
 
@@ -474,8 +474,8 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 
 | Toiminto | kuvaus | Esimerkki |
 |----------|-------------|---------|
-| NULLCONTAINER (luettelo) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen.<blockquote>[!NOTE]<br>Tämä toiminto on vanhentunut. Käytä sen sijaan **EMPTYRECORD**-toimintoa.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
-| EMPTYRECORD (tietue) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen.<blockquote>[!NOTE]<br>**Tyhjä**-tietue on tietue, jossa kaikissa kentissä on tyhjä arvo. Tyhjä arvo numeroilla **0** (nolla), merkkijonoilla tyhjä merkkijono jne.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
+| NULLCONTAINER (luettelo) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen.<blockquote>[!NOTE] Tämä toiminto on vanhentunut. Käytä sen sijaan **EMPTYRECORD**-toimintoa.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
+| EMPTYRECORD (tietue) | Palauttaa **tyhjän** tietueen, jonka rakenne on sama kuin määritetyn tietueluettelon tai tietueen.<blockquote>[!NOTE] **Tyhjä**-tietue on tietue, jossa kaikissa kentissä on tyhjä arvo. Tyhjä arvo numeroilla **0** (nolla), merkkijonoilla tyhjä merkkijono jne.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin **SPLIT**-toiminnon palauttamalla luettelolla. |
 
 ### <a name="text-functions"></a>Tekstitoiminnot
 
@@ -522,14 +522,14 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 <td>CHAR (numero)</td>
 <td>Palauttaa merkkijonon, johon määritetty unicode-numero viittaa.</td>
 <td><strong>CHAR (255)</strong> palauttaa arvon <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>Tämän funktion palauttama merkkijono määräytyy koodauksen mukaan, joka on valittu ylemmän tason FILE-muotoisessa elementissä. Luettelo tuetuista koodauksista on kohdassa <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Koodausluokka</a>.</blockquote>
+<blockquote>[!NOTE] Tämän funktion palauttama merkkijono määräytyy koodauksen mukaan, joka on valittu ylemmän tason FILE-muotoisessa elementissä. Luettelo tuetuista koodauksista on kohdassa <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Koodausluokka</a>.</blockquote>
 </td>
 </tr>
 <tr>
 <td>CONCATENATE (1 merkkijono [, merkkijono 2, …])</td>
 <td>Palauttaa kaikki määritetyt tekstimerkkijonot sen jälkeen, kun ne on liitetty yhteen merkkijonoon.</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> palauttaa arvon <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>Myös lauseke <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> palauttaa lausekkeen <strong>&quot;abcdef&quot;</strong>.</blockquote>
+<blockquote>[!NOTE] Myös lauseke <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> palauttaa lausekkeen <strong>&quot;abcdef&quot;</strong>.</blockquote>
 </td>
 </tr>
 <tr>
@@ -571,7 +571,7 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Jos sama raportti käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina on <strong>FI</strong> ja kielenä on <strong>FI</strong>, tämä kaava palauttaa seuraavan tekstin, jossa on eri päivämäärämuoto:</p>
 <p>&quot;Ei tulostettavaa. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
-<blockquote>[!NOTE]<br>Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
+<blockquote>[!NOTE] Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
 <ul>
 <li><strong>Finance and Operations -resurssien otsikot:</strong> <strong>@&quot;X&quot;</strong>, jossa X on sovellusobjektipuun (AOT) otsikon tunnus.</li>
 <li><strong>ER-määrityksissä sijaitsevat otsikot:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, jossa X on ER-määrityksen otsikon tunnus.</li>
@@ -587,7 +587,7 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 <tr>
 <td>NUMERALSTOTEXT (määrä, kieli, valuutta, tulosta valuutan nimi -merkki, desimaalit)</td>
 <td>Palauttaa määritetyn luvun sen jälkeen, kun se kirjoitettu (muunnettu) määritetyllä kielellä tekstimerkkijonoksi. Kielikoodi on valinnainen. Kun se on määritetty tyhjänä merkkijonona, suorituskontekstin kielikoodia käytetään. (Suorituskontekstin kielikoodi määritetään muodostettavalla kansiolle tai tiedostolle.) Myös valuuttakoodi on valinnainen. Kun se on määritetty tyhjänä merkkijonona, käytetään yrityksen valuuttaa.
-<blockquote>[!NOTE]<br><strong>Tulosta valuutan nimimerkintä</strong>- ja <strong>Desimaalit</strong>-parametrit analysoidaan vain seuraaville kielikoodeille: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> ja <strong>RU</strong>. <strong>Tulosta valuutan nimimerkintä</strong> -parametri analysoidaan vain niissä Finance and Operations -yrityksissä, joiden maa- tai alueyhteys tukee valuutan nimen taivutusta.</blockquote>
+<blockquote>[!NOTE] <strong>Tulosta valuutan nimimerkintä</strong>- ja <strong>Desimaalit</strong>-parametrit analysoidaan vain seuraaville kielikoodeille: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> ja <strong>RU</strong>. <strong>Tulosta valuutan nimimerkintä</strong> -parametri analysoidaan vain niissä Finance and Operations -yrityksissä, joiden maa- tai alueyhteys tukee valuutan nimen taivutusta.</blockquote>
 </td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> palauttaa arvon <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> palauttaa arvon <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> palauttaa arvon <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
@@ -656,10 +656,10 @@ Kun nämä tietolähteet määritetään, voit käyttää lauseketta kuten <stro
 | Toiminto | kuvaus | Esimerkki |
 |----------|-------------|---------|
 | CONVERTCURRENCY (summa, lähdevaluutta, kohdevaluutta, päivämäärä, yritys) | Määritetty rahasumma muunnetaan lähdevaluutasta määritettyyn kohdevaluuttaan käyttämällä määritetyn Finance and Operations -yrityksen asetuksia tiettynä päivänä. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** palauttaa yhden euron suuruisen määrän Yhdysvaltojen dollareita nykyisen istunnon päivämääränä DEMF-yrityksen asetusten perusteella. |
-| ROUNDAMOUNT (määrä, desimaalit, pyöristyssääntö) | Pyöristää määritetyn summan määritetyllä desimaalitarkkuudella määritetyn pyöristyssäännön mukaisesti.<blockquote>[!NOTE]<br>Pyöristyssääntö on määritettävä Finance and Operations **RoundOffType**-luetteloinnin arvoksi.</blockquote> | Jos **model.RoundOff**-parametrin arvoksi on määritetty **Alaspäin**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.78**. Jos **model.RoundOff**-parametrin arvoksi on määritetty **Normaali** tai **Ylöspäin**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.79**. |
+| ROUNDAMOUNT (määrä, desimaalit, pyöristyssääntö) | Pyöristää määritetyn summan määritetyllä desimaalitarkkuudella määritetyn pyöristyssäännön mukaisesti.<blockquote>[!NOTE] Pyöristyssääntö on määritettävä Finance and Operations **RoundOffType**-luetteloinnin arvoksi.</blockquote> | Jos **model.RoundOff**-parametrin arvoksi on määritetty **Alaspäin**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.78**. Jos **model.RoundOff**-parametrin arvoksi on määritetty **Normaali** tai **Ylöspäin**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** palauttaa arvon **1000.79**. |
 | CURCredRef (numerot) | Palauttaa laskuttajan viitteen määritetyn laskunumeron lukujen perusteella. | **CURCredRef ("VEND-200002")** palauttaa arvon **"2200002"**. |
 | MOD\_97 (numerot) | Palauttaa laskuttajan viitteen MOD97-lausekkeena määritetyn laskunumeron lukujen perusteella. | **MOD\_97 ("VEND-200002")** palauttaa arvon **"20000285"**. |
-| ISOCredRef (numerot) | Palauttaa laskuttajan ISO (International Organization for Standardization) -viitteen määritetyn laskunumeron lukujen ja kirjainmerkkien perusteella.<blockquote>[!NOTE]<br>Voit poistaa ne aakkosmerkit, jotka eivät ole ISO-yhteensopivia, jos syöttöparametri on käännetty ennen kuin se välitetään tälle toiminnolle.</blockquote> | **ISOCredRef ("VEND-200002")** palauttaa arvon **"RF23VEND-200002"**. |
+| ISOCredRef (numerot) | Palauttaa laskuttajan ISO (International Organization for Standardization) -viitteen määritetyn laskunumeron lukujen ja kirjainmerkkien perusteella.<blockquote>[!NOTE] Voit poistaa ne aakkosmerkit, jotka eivät ole ISO-yhteensopivia, jos syöttöparametri on käännetty ennen kuin se välitetään tälle toiminnolle.</blockquote> | **ISOCredRef ("VEND-200002")** palauttaa arvon **"RF23VEND-200002"**. |
 | CN\_GBT\_AdditionalDimensionID (merkkijono, lukumäärä) | Hae määritetty taloushallinnon lisädimension tunnus. **String**-parametrissa dimensiot esitetään pilkuin erotettuina tunnuksina. **Number**-parametri määrittää pyydetyn dimension järjestyskoodin tässä merkkijonossa. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** palauttaa arvon **"CC"**. |
 | GetCurrentCompany () | Palauttaa sen yrityksen koodin tekstimuodon, johon käyttäjä on tällä hetkellä kirjautunut. | **GETCURRENTCOMPANY ()** palauttaa arvon **USMF** käyttäjälle, joka on kirjautunut Finance and Operations -yritykseen **Contoso Entertainment System USA**. |
 | CH\_BANK\_MOD\_10 (merkkiä) | Palauttaa laskuttajan viitteen MOD10-lausekkeena määritetyn laskunumeron lukujen perusteella. | **CH\_BANK\_MOD\_10 ("VEND-200002")** palauttaa arvon **3**. |

@@ -18,20 +18,20 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: af594fb7879918e6b9fc423774ee1ec7f635dec0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="generate-er-reports-by-adding-content-as-raw-xml"></a>Luo ER-raportteja lisäämällä sisältöä XML-raakatiedostona
+# <a name="generate-reports-by-adding-content-as-raw-xml"></a>Luo raportteja lisäämällä sisältöä XML-raakatiedostona
 
 [!include[banner](../includes/banner.md)]
 
 Voit käyttää uutta **RAW XML** -muotoelementtiä suunnitellaksesi sähköisen raportoinnin (ER) muotoja, jotka luovat lähteviä asiakirjoja XML-muodossa. Haluat joskus ehkä lisätä XML-raakatietoja näihin raportteihin esimerkiksi seuraavista syistä:
 
-- On helpompaa käyttää XML-raakatietoja raportin alkuperäisessä suunnittelussa ja jatkuvassa ylläpidossa, koska XML-rakenne voidaan luoda automaattisesti suorittamalla suorituksenaikainen lauseke. Siksi useita sidontoja ei tarvitse määrittää suunnitteluvaiheessa useille muodon elementeille. Tämä on mahdollista, kun käyttämäsi tietolähteet sisältävät tietoja, joiden avulla voidaan luoda XML-elementit raporttia luotaessa. 
+- On helpompaa käyttää XML-raakatietoja raportin alkuperäisessä suunnittelussa ja jatkuvassa ylläpidossa, koska XML-rakenne voidaan luoda automaattisesti suorittamalla suorituksenaikainen lauseke. Siksi useita sidontoja ei tarvitse määrittää suunnitteluvaiheessa useille muodon elementeille. Tämä on mahdollista, kun käyttämäsi tietolähteet sisältävät tietoja, joiden avulla voidaan luoda XML-elementit raporttia luotaessa.
 - Muita menetelmiä ei voi käyttää raportin täyttämiseksi XML-sisällöllä, joka aiemmin vastaanotettiin ja tallennettiin järjestelmään. Esimerkiksi luotavan XML-vastauksen tulisi sisältää aiemmin lähetetyn XML-pyynnön sisältö.
 - Muita menetelmiä ei voi käyttää merkkien lisäämiseen luotuun asiakirjaan niiden numeeristen koodien perusteella. Joillekin kielille ja merkeille tällaisia koodeja ei ole. Esimerkkejä ovat kreikan kirjain rho (ρ) sekä HTML-entiteettikoodit, kuten \&eacute *e*-kirjaimelle, jossa on akuuttiaksentti (é).
 

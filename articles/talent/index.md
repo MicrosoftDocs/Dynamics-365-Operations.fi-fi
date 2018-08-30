@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent
-description: "Talent yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Näitä prosesseja ovat työntekijän sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta."
+title: Tervetuloa Dynamics 365 for Talentiin
+description: "Talent yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Näitä prosesseja ovat esimerkiksi työntekijän sitouttaminen, etujen hallinta, koulutus, suorituskyvyn arvioinnit ja muutosten hallinta."
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
@@ -18,14 +18,14 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
-ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 06/06/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Tervetuloa Microsoft Dynamics 365 for Talent -ohjelmaan
+# <a name="welcome-to-dynamics-365-for-talent"></a>Tervetuloa Dynamics 365 for Talentiin
 
 [!include [banner](includes/banner.md)]
 

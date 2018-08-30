@@ -1,5 +1,5 @@
 ---
-title: "Luotujen tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella"
+title: "Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella"
 description: "Tässä aiheessa on tietoja siitä, miten voit jakaa luodut tiedostot koon ja sisältönimikemäärän mukaan."
 author: NickSelin
 manager: AnnBe
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: afdf5b2596af7641182be50ced8159967164b115
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0f13194575e2f19f585f09ffad99144c9a9fc3b1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -49,5 +49,4 @@ Lisätietoja tästä toiminnosta saat toistamalla tehtäväoppaan **ER – XML-t
 [Sähköisen raportoinnin kohteet](electronic-reporting-destinations.md)
 
 [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
-
 

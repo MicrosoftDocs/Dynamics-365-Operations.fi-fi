@@ -1,5 +1,5 @@
 ---
-title: "Sähköisen raportoinnin kohteet"
+title: "Sähköisen raportoinnin (ER) kohteet"
 description: "Voit määrittää kohteen jokaiselle sähköisen raportoinnin (ER) muotokokoonpanolle ja sen tuloskomponentille (kansio tai tiedosto). Käyttäjät, joille on myönnetty tarvittavat käyttöoikeudet, voivat myös muokata kohdeasetuksia suorituksen aikana. Tässä artikkelissa käsitellään ER-kohteiden hallintaa, tuettuja kohdetyyppejä ja suojausta."
 author: ShylaThompson
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fb7d0dc8b3ff9e8f1e4ade5cacfeed8f1a6871ab
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 3aa27b3ac263c6c952de7e4b508f48f21ba489ad
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="electronic-reporting-destinations"></a>Sähköisen raportoinnin kohteet
+# <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
 [!include [banner](../includes/banner.md)]
 

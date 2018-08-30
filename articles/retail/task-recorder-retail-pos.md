@@ -1,5 +1,5 @@
 ---
-title: "Myyntipisteen tehtävien tallennustoiminto ja ohje"
+title: "Tehtävän tallennus ja Help for Retail Modern POS (MPOS) ja Cloud POS"
 description: "Tässä ohjeaiheessa kuvataan, miten tehtävien tallennustoimintoa käytetään Retail Modern POS -sovelluksessa ja pilvimyyntipisteessä."
 author: mugunthanm
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 12aa71843fa8b22eb7ae688ed3600168760d90da
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 0077bac6eef5c4b4925c9464d47a1297aa1177e4
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="task-recorder-and-help-for-pos"></a>Myyntipisteen tehtävien tallennustoiminto ja ohje
+# <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Tehtävän tallennus ja Help for Retail Modern POS (MPOS) ja Cloud POS
 
 [!include [banner](includes/banner.md)]
 
@@ -36,7 +36,7 @@ Tässä ohjeaiheessa kuvataan, miten tehtävien tallennustoimintoa käytetään 
 <a name="overview"></a>Yleiskuvaus
 --------
 
-Tehtävien tallennustoiminto Retail Modern POS -sovelluksessa on uusi ratkaisu, jonka reagointikyky on suuri. Se sisältää joustavan ohjelmointirajapinnan (API:n), joka mahdollistaa laajennettavuuden ja jonka avulla integrointi liiketoimintaprosessien tallenteiden kuluttajien kanssa on saumatonta. Microsoft Dynamics Lifecycle Servicesin ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) tehtävien tallennustoiminnon integrointia liiketoimintaprosessin mallintajan (BPM) työkalun kanssa on siirretty myöhemmäksi. Tämän vuoksi käyttäjät voivat jatkaa monipuolisten liiketoimintaprosessien kaavioiden tekemistä tallenteista ja analysoida ja suunnitella sovelluksia.
+Tehtävien tallennustoiminto Retail Modern POS -sovelluksessa on uusi ratkaisu, jonka reagointikyky on suuri. Se sisältää joustavan ohjelmointirajapinnan (API:n), joka mahdollistaa laajennettavuuden ja jonka avulla integrointi liiketoimintaprosessien tallenteiden kuluttajien kanssa on saumatonta. Lisäksi tehtävän tallennus Microsoft Dynamics Lifecycle Servicesin Liiketoimintaprosessin mallintajan (BPM) avulla on ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) on nostettu eteenpäin. Tämän vuoksi käyttäjät voivat jatkaa monipuolisten liiketoimintaprosessien kaavioiden tekemistä tallenteista ja analysoida ja suunnitella sovelluksia.
 
 ## <a name="architecture"></a>Arkkitehtuuri
 Tehtävien tallennustoiminto voi tallentaa käyttäjän toiminnot asiakasohjelmassa erittäin tarkasti. Kukin ohjausobjekti mitataan, ja tehtävien tallennustoiminnolle ilmoitetaan käyttäjän toiminnon suorituksesta. Ohjausobjekti ilmoittaa tehtävien tallennustoiminnolle, että tapahtuma on suoritettu, ja välittää reaaliaikaisesti kaikki vastaavaa käyttäjän toimintoa koskevat asianmukaiset tiedot. Näistä tiedoista tehtävien tallennustoiminto voi tallentaa käyttäjän toiminnon tyypin (kuten painikkeen valinta, arvon syöttö tai siirtyminen) ja käyttäjän toimintoon liittyvät tiedot (kuten syöttötietojen arvon ja tyypin, lomakkeen kontekstin tai tietueen kontekstin). Tehtävien tallennustoiminto säilyttää niin paljon tietoja, että niiden avulla voidaan varmistaa tallenteen toisto juuri niin kuin käyttäjä toiminnon suorittanut tallennuksen hetkellä. (Toistotoimintoa ei ole vielä otettu käyttöön Retail Modern POS -sovelluksessa ja pilvimyyntipisteessä.)

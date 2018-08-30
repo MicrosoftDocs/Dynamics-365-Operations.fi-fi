@@ -1,5 +1,5 @@
 --- 
-title: "Konfiguraation suunnitteleminen raporttien luomiseksi OpenXML-muodossa sähköistä raportointia (ER) varten"
+title: Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja OpenXML-muodossa
 description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda uuden sähköiselle raportoinnin (ER) konfiguraation, joka sisältää sähköisen asiakirjojen OPENXML-muodon luontimallin."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
-ms.openlocfilehash: 09789957839097ba2898544102af908c198090c7
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b42cfe36c57a9526e585bbad0fcd31ff60b90397
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-a-configuration-for-generating-reports-in-openxml-format-for-electronic-reporting-er"></a>Konfiguraation suunnitteleminen raporttien luomiseksi OpenXML-muodossa sähköistä raportointia (ER) varten
+# <a name="design-er-configurations-to-generate-reports-in-openxml-format"></a>Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja OpenXML-muodossa
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
