@@ -3,7 +3,7 @@ title: Tilityksen yleiskuvaus
 description: "Tässä artikkelissa on yleisiä tietoja tilitysprosessista. Artikkelissa kuvataan tilitettävien tapahtumien tyyppejä, tapahtumien tilitysajankohtia ja -tapoja sekä tilitysprosessin tuloksia."
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,8 +16,8 @@ ms.custom: 14551
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
 ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
 ms.openlocfilehash: 2f1f11a7f1340d408374e658ae616ffa99f3c911
@@ -51,7 +51,6 @@ Kun tapahtumia tilitetään, kunkin tapahtuman jäljellä oleva saldo kasvaa tai
 -   Jos maksun summa on sama kuin laskun summa, sekä maksu että lasku suljetaan ja molempien saldoksi tulee 0,00.
 
 Jos [maksu on pienempi kuin laskun summa](../accounts-payable/vendor-payments-partial-amount.md) käteisalennuksen, poiston tai liian pienen maksusumman vuoksi, lasku ja maksu voidaan silti sulkea Myyntireskontran parametrit- ja Ostoreskontran parametrit -kohtien tilitysasetusten mukaan. Tilitys voi myös luoda tapahtumia. Esimerkiksi laskun ja maksun tilitys voi tuottaa käteisalennuksen, realisoituneen voiton tai tappion, arvonlisäveron oikaisuja, poistoja tai erotuksia, joiden suuruus on senttien luokkaa.
-
 
 
 
