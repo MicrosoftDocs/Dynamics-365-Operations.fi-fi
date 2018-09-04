@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 056bc38fc69422b17b1b7720ce37089b27e8aa2e
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: ac9e836b0baa24c40554844ea4f3288b80e0c654
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -55,11 +55,13 @@ ms.lasthandoff: 08/07/2018
 
 ## <a name="generate-the-recurring-invoices"></a><span data-ttu-id="0eb12-125">Luo toistuvat laskut</span><span class="sxs-lookup"><span data-stu-id="0eb12-125">Generate the recurring invoices</span></span>
 <span data-ttu-id="0eb12-126">**Toistuvat laskut**-sivulla on tehtävä, joka käsittelee toistuvien laskujen malleja.</span><span class="sxs-lookup"><span data-stu-id="0eb12-126">On the **Recurring invoices** page, there is a task that processes recurring invoice templates.</span></span> <span data-ttu-id="0eb12-127">Määritä laskutuspäivämäärä ja malli laskujen luontia varten.</span><span class="sxs-lookup"><span data-stu-id="0eb12-127">You specify the invoice date and the template to generate the invoices from.</span></span> <span data-ttu-id="0eb12-128">Laskut luodaan ja jokaiselle käsiteltävälle laskutusryhmälle määritetään yksi toistuva tunnusnumero.</span><span class="sxs-lookup"><span data-stu-id="0eb12-128">Invoices will be generated and assigned a single recurrence ID number for each group of invoices that is processed.</span></span>
-<span data-ttu-id="0eb12-129">Kirjaa toistuvat vapaatekstilaskut</span><span class="sxs-lookup"><span data-stu-id="0eb12-129">Post recurring free text invoices</span></span>
+
+<a name="post-recurring-free-text-invoices"></a><span data-ttu-id="0eb12-129">Kirjaa toistuvat vapaatekstilaskut</span><span class="sxs-lookup"><span data-stu-id="0eb12-129">Post recurring free text invoices</span></span>
 ---------------------------------
 
 <span data-ttu-id="0eb12-130">Sen jälkeen kun toistuvat laskut on luotu, laskun toistuvat tunnukset näkyvät kirjaustehtävässä **toistuvat laskut**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="0eb12-130">After recurring invoices are generated, the invoice recurrence IDs appear in a posting task on the **Recurring invoices** page.</span></span> <span data-ttu-id="0eb12-131">Voit tarkastella kaikkia laskuja toistuvalle tunnukselle napsauttamalla linkkiä.</span><span class="sxs-lookup"><span data-stu-id="0eb12-131">You can view all of the invoices for a recurrence ID by clicking the link.</span></span> <span data-ttu-id="0eb12-132">Voit poistaa yksittäisiä laskuja toituvan tunnuksen laskujen tarkistuksen aikana.</span><span class="sxs-lookup"><span data-stu-id="0eb12-132">During your review of the invoices for the recurrence ID, you can delete individual invoices.</span></span> <span data-ttu-id="0eb12-133">Asiakkaan toistumisasetukset palautetaan kyseiseen malliin niin, että se voidaan ottaa esille myöhemmin uudelleen.</span><span class="sxs-lookup"><span data-stu-id="0eb12-133">The customer's recurrence settings will be reset for that template, so that it can be regenerated later.</span></span> <span data-ttu-id="0eb12-134">Voit kirjata yhden, useita tai kaikki laskut toistuvalla tunnuksella.</span><span class="sxs-lookup"><span data-stu-id="0eb12-134">You can post one, many, or all of the invoices for a recurrence ID.</span></span> <span data-ttu-id="0eb12-135">Jos työnkulkuja on otettu käyttöön, sinun on valittava **lähetä** ennen kuin voit kirjata laskut.</span><span class="sxs-lookup"><span data-stu-id="0eb12-135">If workflows are enabled, you must click **Submit** before you can post the invoices.</span></span>
-<span data-ttu-id="0eb12-136">Tulosta toistuvat vapaatekstilaskut</span><span class="sxs-lookup"><span data-stu-id="0eb12-136">Print recurring free text invoices</span></span>
+
+<a name="print-recurring-free-text-invoices"></a><span data-ttu-id="0eb12-136">Tulosta toistuvat vapaatekstilaskut</span><span class="sxs-lookup"><span data-stu-id="0eb12-136">Print recurring free text invoices</span></span>
 ----------------------------------
 
 <span data-ttu-id="0eb12-137">Sen jälkeen kun toistuvat laskut on kirjattu, voit tulostaa laskuja vapaan tekstimuotoisen laskun luettelosivulta.</span><span class="sxs-lookup"><span data-stu-id="0eb12-137">After recurring invoices are posted, you can print the invoices from the free text invoice list page.</span></span> <span data-ttu-id="0eb12-138">Voit tulostaa laskut, jotka on valittu tai voit valita mitkä laskut haluat tulostaa.</span><span class="sxs-lookup"><span data-stu-id="0eb12-138">You can print the invoices that are selected, or you can select a range of invoices to print.</span></span>
