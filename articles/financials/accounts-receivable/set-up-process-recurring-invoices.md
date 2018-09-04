@@ -55,11 +55,13 @@ Asiakkaalla voi olla useita malleja, joilla on eri maksutiheydet.
 
 ## <a name="generate-the-recurring-invoices"></a>Luo toistuvat laskut
 **Toistuvat laskut**-sivulla on tehtävä, joka käsittelee toistuvien laskujen malleja. Määritä laskutuspäivämäärä ja malli laskujen luontia varten. Laskut luodaan ja jokaiselle käsiteltävälle laskutusryhmälle määritetään yksi toistuva tunnusnumero.
-Kirjaa toistuvat vapaatekstilaskut
+
+<a name="post-recurring-free-text-invoices"></a>Kirjaa toistuvat vapaatekstilaskut
 ---------------------------------
 
 Sen jälkeen kun toistuvat laskut on luotu, laskun toistuvat tunnukset näkyvät kirjaustehtävässä **toistuvat laskut**-sivulla. Voit tarkastella kaikkia laskuja toistuvalle tunnukselle napsauttamalla linkkiä. Voit poistaa yksittäisiä laskuja toituvan tunnuksen laskujen tarkistuksen aikana. Asiakkaan toistumisasetukset palautetaan kyseiseen malliin niin, että se voidaan ottaa esille myöhemmin uudelleen. Voit kirjata yhden, useita tai kaikki laskut toistuvalla tunnuksella. Jos työnkulkuja on otettu käyttöön, sinun on valittava **lähetä** ennen kuin voit kirjata laskut.
-Tulosta toistuvat vapaatekstilaskut
+
+<a name="print-recurring-free-text-invoices"></a>Tulosta toistuvat vapaatekstilaskut
 ----------------------------------
 
 Sen jälkeen kun toistuvat laskut on kirjattu, voit tulostaa laskuja vapaan tekstimuotoisen laskun luettelosivulta. Voit tulostaa laskut, jotka on valittu tai voit valita mitkä laskut haluat tulostaa.
