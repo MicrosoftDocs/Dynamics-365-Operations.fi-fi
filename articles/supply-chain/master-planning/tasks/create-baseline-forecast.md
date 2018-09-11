@@ -3,23 +3,24 @@ title: Luo perusennuste
 description: "Tuotannon suunnittelija voi luoda perusennusteen aikasarjan ennustemallien avulla tai kopioimalla aiemman kysynnän."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 111/02/2017
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ReqIntercompanyPlanningGroupSetup, ReqIntercompanyPlanningGroupAllocKeys, ReqDemPlanForecastParameters, ReqDemPlanCreateForecastDialog, SysQueryForm, ReqDemPlanForecastViewer
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
-ms.openlocfilehash: 6a712077fed4a94ae6ae6ce7ea2cfba8848e5fa5
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e6363ee48c0d13c79a6c623205dfa10f50d6070f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="create-a-baseline-forecast"></a>Luo perusennuste
@@ -42,7 +43,7 @@ Tuotannon suunnittelija voi luoda perusennusteen aikasarjan ennustemallien avull
 7. Sulje sivu.
 8. Sulje sivu.
 
-## <a name="set-up-the-demand-forecasting-parameters"></a>Kysynnän ennusteen parametrien määrittäminen
+## <a name="set-up-the-demand-forecasting-paramters"></a>Kysynnän ennusteen parametrien määrittäminen
 1. Siirry kohtaan Pääsuunnittelu > Asetukset > Kysynnän ennuste > Kysynnän ennusteen parametrit.
 2. Laajenna Ennustealgoritmin parametrit -osa.
 3. Valitse Kysynnän luontistrategia -kentässä Kopioi historiallisen kysynnän päälle.

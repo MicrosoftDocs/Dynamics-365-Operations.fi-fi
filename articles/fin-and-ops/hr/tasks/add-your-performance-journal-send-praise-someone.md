@@ -1,28 +1,29 @@
 --- 
-title: "Lisää merkintä suorituskyvyn kirjauskansioon ja lähetä palautetta"
+title: "Lisää merkintä suorituskyvyn kirjauskansioon ja lähetä kehuja"
 description: "Suoritustason kirjauskansiossa on tietoja siitä, miten olet saavuttanut tavoitteesi tai suoriutunut jakson aikana."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 92cbb25839b8f202ba37a19ad88a54194a73c179
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e232ba1f5803f6dee148f23098563c99c1622cdf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="add-information-to-your-performance-journal-and-send-praise"></a>Lisää merkintä suorituskyvyn kirjauskansioon ja lähetä palautetta
+# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Lisää merkintä suorituskyvyn kirjauskansioon ja lähetä kehuja
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -42,7 +43,7 @@ Suoritustason kirjauskansiossa on tietoja siitä, miten olet saavuttanut tavoitt
 9. Kirjoita arvo kenttään Avainsanat.
 10. Valitse Lisää ulkoinen linkki.
 11. Kirjoita Kuvaus-kentän arvoksi Envision.
-12. Kirjoita Internet-osoite-kenttään <https://www.microsoft.com/en/envision/default>.
+12. Kirjoita Internet-osoitekenttään 'https://www.microsoft.com/en/envision/default'.
 13. Napsauta Tallenna-painikkeen alla olevaa tekstiä "Suoritustason kirjauskansio" palataksesi ruudukkoon.
     * Voit lisätä valitun kirjauskansion tai kansiot tavoitteeseen niin, että se tulee esiin, kun avaat tavoitteen. Linkki lisätään Linkit-pikavälilehdelle. Jos lisäät tavoitteeseen kirjauskansion ja lisäät sitten tavoitteen arviointiin, kirjauskansio tulee automaattisesti näkyviin arvioinnissa.  
     * Voit lisätä valitun kirjauskansion tai kansiot arviointiin niin, että se tulee esiin, kun avaat arvioinnin.    Linkki lisätään Linkit-pikavälilehdelle.  

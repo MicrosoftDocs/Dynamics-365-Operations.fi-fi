@@ -3,23 +3,24 @@ title: Muuta ennustetta manuaalisesti
 description: "Tässä menettelyssä kerrotaan, miten nimikkeen ennustetta muokataan."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/15/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EcoResProductDetailsExtended, ForecastSales
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 799dd89433ff561fd8a5cc5c082165ef9bb74923
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 2e269ef7b33b4d7e171d284d68d28c825c2fe86c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Muuta ennustetta manuaalisesti
@@ -44,6 +45,6 @@ Tässä menettelyssä kerrotaan, miten nimikkeen ennustetta muokataan. Tämän m
 ## <a name="modify-the-forecast-in-excel"></a>Ennusteen muokkaaminen Excelissä
 1. Valitse Avaa Microsoft Officessa.
 2. Valitse Muokkaa kysynnän ennustetta Excelissä.
-    * Excelissä voit lisätä, poistaa ja muokata kysynnän ennusterivejä. Jos et näe tietoja Excelissä, kirjaudu sisään Microsoft Dynamics 365 for Finance and Operations -sovellukseen niin, että Pidä minut kirjautuneena -asetus on käytössä. Sinun on myös luotettava tietoyhteyssovellukseen.  
+    * Excelissä voit lisätä, poistaa ja muokata kysynnän ennusterivejä. Jos et näe tietoja Excelissä, kirjaudu sisään Microsoft Dynamics 365 for Finance and Operations, Enterprise editioniin niin, että Pidä minut kirjautuneena -asetus on käytössä. Sinun on myös luotettava tietoyhteyssovellukseen.  
 
 

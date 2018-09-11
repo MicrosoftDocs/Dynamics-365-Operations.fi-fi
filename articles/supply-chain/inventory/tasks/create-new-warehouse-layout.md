@@ -1,21 +1,22 @@
----
+--- 
 title: Luo uusi varastoasettelu
 description: "Tässä kuvataan, miten varaston sijaintien tiedot määritetään."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 253440d81edd6f71b52ae349398e3c6a895bf05c
@@ -49,7 +50,7 @@ Tässä kuvataan, miten varaston sijaintien tiedot määritetään. Tämä koske
 7. Ota käyttöön Sijainnin nimet -osan laajennus.
     * Tämän osan valinnat määrittävät sijainnin nimien oletusmuodon. Esimerkissä käytetään käytävän, hyllykön ja hyllyn numeroa.  
 8. Määritä Sisällytä käytävä -vaihtoehdon arvoksi Kyllä.
-9. Määritä Sisällytä hyllykkö -vaihtoehdon arvoksi Kyllä.
+9. Määritä Sisällytä hyllykkö -vaihtoehdon arvoksi Kyllä. 
 10. Kirjoita hyllykön arvo Muoto-kenttään.
     * Esimerkki: -##  
 11. Määritä Sisällytä hylly -vaihtoehdon arvoksi Kyllä.
@@ -74,4 +75,5 @@ Tässä kuvataan, miten varaston sijaintien tiedot määritetään. Tämä koske
 14. Valitse Valmis.
 15. Sulje sivu.
 16. Päivitä sivu.
+
 

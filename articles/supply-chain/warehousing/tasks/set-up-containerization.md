@@ -3,24 +3,25 @@ title: "Määritä konttiinpakkaus"
 description: "Tässä menettelyssä kuvataan, kuinka voit automatisoida kuormien konttiinpakkauksen Varastonhallinnassa."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
-ms.openlocfilehash: c5faf926071dec5d2ddc1c9e921a98ecd0754917
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: aeb7d956560c513c08d5e20dcf20989b49137a52
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="set-up-containerization"></a>Määritä konttiinpakkaus
@@ -83,7 +84,7 @@ Tässä menettelyssä kuvataan, kuinka voit automatisoida kuormien konttiinpakka
 ## <a name="set-up-a-container-group"></a>Määritä konttiryhmä
 1. Valitse Varastonhallinta > Asetukset > Kontit > Konttiryhmät.
 2. Valitse Uusi.
-    * Voit määrittää konttityyppien loogiset ryhmät. Voit määrittää kullekin ryhmälle järjestyksen, jossa kontit pakataan, sekä jokaisen kontin täyttöasteen. Nnimikkeen kokodimensioiden avulla määritetään, mahtuuko nimike konttiin. Järjestelmä valitsee kontin, jonka kokodimensiot ovat lähimpänä nimikettä. Jos ryhmässä on useita konttityyppejä, suosittelemme, että järjestät järjestyksen koon mukaan niin, että suurin kontti on ensimmäinen, numero 1 sarjassa, ja pienin kontti on viimeinen.    
+    * Voit määrittää konttityyppien loogiset ryhmät. Voit määrittää kullekin ryhmälle konttien pakkausjärjestyksen ja prosenttiosuuden, jonka perusteella kontit täytetään. Nimikkeen kokodimensiota käytetään määrittämään, onko kontissa tilaa. Järjestelmä valitsee kontin, jonka kokodimensiot ovat lähimpänä nimikettä. Jos ryhmässä on useita konttityyppejä, suosittelemme, että järjestät järjestyksen koon mukaan niin, että suurin kontti on ensimmäinen, numero 1 sarjassa, ja pienin kontti on viimeinen.    
 3. Kirjoita Konttiryhmän tunnus -kenttään arvo.
 4. Kirjoita arvo Kuvaus-kenttään.
 5. Valitse Uusi.

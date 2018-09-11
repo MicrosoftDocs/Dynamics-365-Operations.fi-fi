@@ -3,18 +3,19 @@ title: "Luo tarjouspyyntöjen pyyntötyypit ja pisteytysperusteet"
 description: "Tässä oppaassa esitellään pyyntötyypin luominen ja sen liittäminen pisteytysmenetelmään."
 author: mkirknel
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 095855d552d228375635bdbaa9fca37c47a3b952
@@ -42,6 +43,7 @@ Tässä oppaassa esitellään pyyntötyypin luominen ja sen liittäminen pisteyt
 1. Valitse Hankinta > Tarjouspyynnöt > Kaikki tarjouspyynnöt.
 2. Valitse Uusi.
 3. Valitse Pyyntö-kentässä juuri luomasi pyyntötyyppi. 
+    *   
 4. Valitse OK.
 5. Valitse Pisteytysehdot.
     * Esitetyt pisteytysperusteet ovat peräisin on pyyntöön liittämästäsi pisteytysmenetelmästä. Voit halutessasi lisätä tai poistaa perusteita tällä sivulla. On myös mahdollista lisätä uusia perusteita kopioimalla ne muista pisteytysmenetelmistä.  
