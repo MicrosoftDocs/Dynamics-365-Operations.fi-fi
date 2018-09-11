@@ -1,26 +1,27 @@
----
+--- 
 title: "Fyysisen varaston siirtäminen varastossa"
 description: "Tässä menettelyssä käsitellään varastosiirtokirjauskansion luominen ja kirjaaminen, jotta nimikkeen siirto varastosijainnista toiseen voidaan rekisteröidä."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 8569ff744e11fb0348dedc4e1e56894203b7b7a3
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 41057d0a35cab122840a20a5c65ab7ae3133052c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a><span data-ttu-id="59fd4-103">Fyysisen varaston siirtäminen varastossa</span><span class="sxs-lookup"><span data-stu-id="59fd4-103">Transfer physical inventory within the warehouse</span></span>
@@ -67,4 +68,5 @@ ms.lasthandoff: 08/07/2018
 1. <span data-ttu-id="59fd4-142">Valitse Varasto.</span><span class="sxs-lookup"><span data-stu-id="59fd4-142">Click Inventory.</span></span>
 2. <span data-ttu-id="59fd4-143">Valitse Tapahtumat.</span><span class="sxs-lookup"><span data-stu-id="59fd4-143">Click Transactions.</span></span>
     * <span data-ttu-id="59fd4-144">Tässä on näkyvissä tapahtumat, jotka luotiin kirjauskansioon kirjattaessa.</span><span class="sxs-lookup"><span data-stu-id="59fd4-144">Here you can see the transactions that were created when you posted your journal.</span></span>  
+
 

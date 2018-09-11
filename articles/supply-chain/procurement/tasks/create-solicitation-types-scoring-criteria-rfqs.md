@@ -3,23 +3,24 @@ title: "Luo tarjouspyyntöjen pyyntötyypit ja pisteytysperusteet"
 description: "Tässä oppaassa esitellään pyyntötyypin luominen ja sen liittäminen pisteytysmenetelmään."
 author: mkirknel
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 94bede40e8830f8d51dde5e34a03a9ad0c0144eb
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 5d2b0d1e998149a5045c655d74591c56bff81246
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a><span data-ttu-id="7f520-103">Luo tarjouspyyntöjen pyyntötyypit ja pisteytysperusteet</span><span class="sxs-lookup"><span data-stu-id="7f520-103">Create solicitation types and scoring criteria for RFQs</span></span>
@@ -42,6 +43,7 @@ ms.lasthandoff: 08/07/2018
 1. <span data-ttu-id="7f520-118">Valitse Hankinta > Tarjouspyynnöt > Kaikki tarjouspyynnöt.</span><span class="sxs-lookup"><span data-stu-id="7f520-118">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
 2. <span data-ttu-id="7f520-119">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7f520-119">Click New.</span></span>
 3. <span data-ttu-id="7f520-120">Valitse Pyyntö-kentässä juuri luomasi pyyntötyyppi.</span><span class="sxs-lookup"><span data-stu-id="7f520-120">In the Solicitation type field, select the solicitation type that you have just created.</span></span> 
+    *   
 4. <span data-ttu-id="7f520-121">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7f520-121">Click OK.</span></span>
 5. <span data-ttu-id="7f520-122">Valitse Pisteytysehdot.</span><span class="sxs-lookup"><span data-stu-id="7f520-122">Click Scoring criteria.</span></span>
     * <span data-ttu-id="7f520-123">Esitetyt pisteytysperusteet ovat peräisin on pyyntöön liittämästäsi pisteytysmenetelmästä.</span><span class="sxs-lookup"><span data-stu-id="7f520-123">The scoring criteria that are shown are the ones from the scoring method that you associated with the solicitation type.</span></span> <span data-ttu-id="7f520-124">Voit halutessasi lisätä tai poistaa perusteita tällä sivulla.</span><span class="sxs-lookup"><span data-stu-id="7f520-124">You can choose to add or delete criteria on this page.</span></span> <span data-ttu-id="7f520-125">On myös mahdollista lisätä uusia perusteita kopioimalla ne muista pisteytysmenetelmistä.</span><span class="sxs-lookup"><span data-stu-id="7f520-125">It's also possible to add new criteria by copying them from other scoring methods.</span></span>  
