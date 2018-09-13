@@ -3,7 +3,7 @@ title: "Yleisen osoitekirjan määrittäminen"
 description: "Voit määrittää tällä menettelyllä yleisen osoitekirjan oletusarvot ja suojauskäytännöt."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

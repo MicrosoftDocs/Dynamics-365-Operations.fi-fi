@@ -3,7 +3,7 @@ title: "Anna käyttäjille mahdollisuus vastaanottaa työnkulkuun liittyviä sä
 description: "Voit määrittää järjestelmän lähettämään sähköpostiviestejä käyttäjille työnkulkuun liittyvien tapahtumien yhteydessä."
 author: jasongre
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
