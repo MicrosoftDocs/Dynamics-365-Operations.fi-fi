@@ -1,6 +1,6 @@
 > [!IMPORTANT]
-> **Dynamics 365 – kevään 2018 julkaisutiedot**
+> **Dynamics 365 -julkaisutiedot**
 >
-> Haluatko tietoja tulevista ja juuri julkaistuista yrityssovellustemme tai ympäristömme ominaisuuksista? 
+> Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista? 
 > 
-> [Lataa kevään 2018 julkaisutiedot](https://go.microsoft.com/fwlink/?linkid=870424). Olemme koonneet kaikki tarvittavat tiedot yhteen PDF-tiedostoon, jota voit käyttää suunnittelun apuna. 
+> Tutustu kohtaan [Yrityssovellusten ja -ympäristöjen julkaisutiedot](https://go.microsoft.com/fwlink/?linkid=2010158). Olemme koonneet kaikki tarvittavat tiedot alusta loppuun yhteen PDF-tiedostoon, jota voit käyttää suunnittelun apuna. Julkaisutietojen version mukaan saat tietoja uusista palveluista ja toiminnoista sekä myöhemmin julkaistavista uusista ominaisuuksista.
