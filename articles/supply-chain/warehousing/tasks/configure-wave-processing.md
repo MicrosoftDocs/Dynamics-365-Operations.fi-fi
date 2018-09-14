@@ -3,7 +3,7 @@ title: "Aallon käsittelyn kokoonpano"
 description: "Tässä ohjeessa kuvataan ehdot, jotka määrittävät kuinka aallon käsittelyn yhteydessä varastolle luotu työ käsitellään, ja käsitelläänkö aallot manuaalisesti vai automaattisesti."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Tapaamisen määrittäminen kuormalle"
 description: "Tässä menettelyssä kuvataan, miten laiturin varaus kuormitustapahtumaa määritetään ja suunnitellaan."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

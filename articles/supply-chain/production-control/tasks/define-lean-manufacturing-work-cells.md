@@ -3,7 +3,7 @@ title: "Määritä lean-valmistuksen työsolut"
 description: "Työsolun on erityinen resurssiryhmä, jota voidaan käyttää Lean-valmistuksen prosessitehtävissä."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

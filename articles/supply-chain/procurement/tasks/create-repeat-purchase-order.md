@@ -3,7 +3,7 @@ title: Toistuvan ostotilauksen luonti
 description: "Seuraavassa menettelyssä kuvataan, miten luot toistuvan ostotilauksen (PO) kopioimalla rivejä vanhasta ostotilauksesta uuteen tai vanhaan ostotilaukseen."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

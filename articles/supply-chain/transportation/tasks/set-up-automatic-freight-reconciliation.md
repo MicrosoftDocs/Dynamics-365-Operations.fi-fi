@@ -3,7 +3,7 @@ title: "Rahdin automaattisen täsmäytyksen määrittäminen"
 description: "Tässä menettelyssä kuvataan, miten automaattisen rahdintäsmäytyksen tiedot määritetään."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

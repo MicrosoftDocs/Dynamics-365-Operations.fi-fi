@@ -3,7 +3,7 @@ title: Kirjoita tuotteen GTIN-koodi
 description: "GTIN-koodit määrittää GS1-organisaatio."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Tarkista tavaroiden laatu
 description: "Tässä menettelyssä näytetään, miten laatutilaus käsitellään."
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Tietojen siirtäminen tuotemalleja varten"
 description: "Tuotemääritysmallin tietojen vieminen edellyttää, että ainakin yksi tuotemalli on käytettävissä."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

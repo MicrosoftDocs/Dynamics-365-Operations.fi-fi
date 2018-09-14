@@ -3,7 +3,7 @@ title: "Luo ja käsittele asiakkaan ostohyvityksiä"
 description: "Tämä menettely ilmaisee, miten asiakkaan ostohyvityksen käsitellään vaatimuksen muodostamisesta niiden siirtämiseen jaksotuksina myyntireskontraan."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

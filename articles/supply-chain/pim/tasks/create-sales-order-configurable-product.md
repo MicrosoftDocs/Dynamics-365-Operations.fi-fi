@@ -3,7 +3,7 @@ title: "Myyntitilauksen luominen määritettävälle tuotteelle"
 description: "Tämä menettely osoittaa, miten konfiguraatiomallia käytetään myyntitilauksen tuotteeseen."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Myyntiedustajan toimintoprofiilin määrittäminen"
 description: "Tässä menettelyssä esitellään, miten määritetään liikkeen toimintoprofiilin asetukset, jotka koskevat myyntiedustajia."
 author: jblucher
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

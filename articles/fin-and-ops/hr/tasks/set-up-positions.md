@@ -3,7 +3,7 @@ title: "Toimien määrittäminen"
 description: "Toimet ovat organisaatiohierarkian alemman tason tärkeä osa."
 author: DarinKramer
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

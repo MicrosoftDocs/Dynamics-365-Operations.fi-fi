@@ -3,7 +3,7 @@ title: Viivakoodin luonti tuotteelle
 description: "Tässä toimintaohjeessa kuvataan viivakoodin manuaalinen luonti käyttämällä esimerkkinä nimiketunnusta M0001."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

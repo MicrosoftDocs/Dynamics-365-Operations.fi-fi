@@ -3,7 +3,7 @@ title: "Ajoita tuotantotilaus työvaiheiden ja töiden ajoittamisen avulla"
 description: "Menettely keskittyy tuotantotilaukseen ajoittamiseen työvaiheiden ja töiden ajoittamisella."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

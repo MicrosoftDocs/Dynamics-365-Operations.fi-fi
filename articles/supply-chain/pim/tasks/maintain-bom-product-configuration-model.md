@@ -3,7 +3,7 @@ title: "Ylläpidä tuotemääritysmallin tuoterakennetta"
 description: "Tämän menettelyn suorittaminen edellyttää, että tuotemääritysmalli on luotu aiemmin."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

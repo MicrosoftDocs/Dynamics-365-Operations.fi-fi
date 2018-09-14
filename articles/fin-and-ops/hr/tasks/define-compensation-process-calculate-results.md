@@ -3,7 +3,7 @@ title: "Kompensaatioprosessin määrittäminen ja tulosten laskeminen"
 description: "Kompensaatioprosesseja käytetään määrittämään kiinteisiin ja muuttuviin kompensaatiosuunnitelmiin rekisteröityjen työntekijöiden uudet kompensaatiosummat ja palkkiot."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

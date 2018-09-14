@@ -3,7 +3,7 @@ title: "Vapauta dimensioihin perustuva päätuote"
 description: "Tässä menetelmässä selvitetään, miten dimensioihin perustuvissa konfiguraatioissa käytettävä päätuote vapautetaan."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Luo uusi tuote
 description: "Tässä tehtävässä esitellään uuden jaetun tuotteen luominen."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

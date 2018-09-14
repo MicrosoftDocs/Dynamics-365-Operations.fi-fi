@@ -3,7 +3,7 @@ title: Takausasiakirjan tapahtuma
 description: "Tässä menettelyssä käsitellään takuuasiakirjaprosessi."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

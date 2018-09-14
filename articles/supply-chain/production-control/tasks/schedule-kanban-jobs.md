@@ -3,7 +3,7 @@ title: "Kanban-töiden ajoitus"
 description: "Tässä menettelyssä keskitytään tietyn työsolun aikataulutusprosessin kanban-töihin."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

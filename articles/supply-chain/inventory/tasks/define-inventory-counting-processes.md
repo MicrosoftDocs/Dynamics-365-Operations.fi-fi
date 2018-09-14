@@ -3,7 +3,7 @@ title: "Varastoinventoinnin prosessien määrittäminen"
 description: "Tässä menettelyssä kerrotaan, miten perusvarastoinventoinnin prosessien konfigurointi tehdään luomalla inventointiryhmä ja inventoinnin kirjauskansio."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Täsmäytä rahti manuaalisesti"
 description: "Tässä menettelyssä kuvataan, miten rahti täsmäytetään manuaalisesti."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Luo tarjouspyyntöjen pyyntötyypit ja pisteytysperusteet"
 description: "Tässä oppaassa esitellään pyyntötyypin luominen ja sen liittäminen pisteytysmenetelmään."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

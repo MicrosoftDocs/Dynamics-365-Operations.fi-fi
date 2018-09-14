@@ -3,7 +3,7 @@ title: "Suorita kanban-prosessin töitä"
 description: "Nämä toimet keskittyvät kanban-prosessitöiden suorittamiseen."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

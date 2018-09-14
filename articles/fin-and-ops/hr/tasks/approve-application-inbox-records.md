@@ -3,7 +3,7 @@ title: "Hyväksy hakemuskorin tietueet"
 description: "Tässä menettelyssä kerrotaan, miten Työntekijän itsepalvelu -sivun kautta vastaanotettuja hakemuksia tarkastellaan."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

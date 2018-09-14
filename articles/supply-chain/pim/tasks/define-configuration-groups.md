@@ -3,7 +3,7 @@ title: "Määritä konfiguraatioryhmät"
 description: "Tässä menettelyssä selvitetään, miten tuotekonfiguraatioryhmät määritetään luomalla kaksi ryhmää USMF-demodatayrityksessä."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Luo ja liitä laite"
 description: "Tässä menettelyssä kerrotaan, miten uusi laite luodaan ja liitetään kassakoneeseen."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

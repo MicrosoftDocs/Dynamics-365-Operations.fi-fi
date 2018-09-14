@@ -3,7 +3,7 @@ title: "Varmuusvaraston kirjauskansion k채ytt채minen minimikattavuuden p채ivitt�
 description: "Seuraavassa menettelyss채 kuvataan, miten voit laskea v채himm채iskattavuuden ehdotukset historiatapahtumiin perustuen ja p채ivitt채채 nimikekattavuuden ehdotusten mukaiseksi."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

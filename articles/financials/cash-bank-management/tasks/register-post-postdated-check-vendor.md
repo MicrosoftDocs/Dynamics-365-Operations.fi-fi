@@ -3,7 +3,7 @@ title: "Rekisteröi ja kirjaa toimittajan myöhemmäksi päivitetty sekki"
 description: "Voit rekisteröidä myöhemmäksi päivätyn sekin tiedot kirjauskansion tositteella, ennen kuin kirjoitat sekin toimittajalle."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Luo ostotilaus, jolla on toimitusaikataulu
 description: "Tässä osoitetaan, miten ostotilaukselle luodaan toimitusaikataulu."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

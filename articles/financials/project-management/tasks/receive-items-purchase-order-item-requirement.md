@@ -3,7 +3,7 @@ title: Ostotilauksen nimikkeiden vastaanotto nimiketarpeen perusteella
 description: "Tässä menettelyssä osoitetaan, miten ostotilauksen nimikkeet vastaanotetaan nimiketarpeesta."
 author: KimANelson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

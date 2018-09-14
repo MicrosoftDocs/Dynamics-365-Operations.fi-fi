@@ -3,7 +3,7 @@ title: "Työntekijän rekisteröiminen muuttuvan kompensaation suunnitelmaan"
 description: "Etuuspäällikkö voi rekisteröidä työntekijät muuttuvan kompensaation suunnitelmiin, kun työntekijöille lasketaan käteis- ja muut kuin käteispalkkiot."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

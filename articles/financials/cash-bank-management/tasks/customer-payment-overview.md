@@ -3,7 +3,7 @@ title: Asiakkaan maksun yhteenveto
 description: "Tässä tehtävän ohjauksessa kerrotaan asiakkaan maksujen syöttämisessä käytettävät tavat."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

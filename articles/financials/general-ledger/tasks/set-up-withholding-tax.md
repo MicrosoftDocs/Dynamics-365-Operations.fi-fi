@@ -3,7 +3,7 @@ title: "Määritä ennakonpidätys"
 description: "Ennakonpidätys on toimittajilta perittävä vero, josta ei synny arvonlisäverotapahtumia."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

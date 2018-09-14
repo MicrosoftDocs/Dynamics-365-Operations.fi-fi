@@ -3,7 +3,7 @@ title: Luo tuotantotilaus
 description: "Tässä menettelyssä näytetään, miten tuotantotilaus luodaan."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

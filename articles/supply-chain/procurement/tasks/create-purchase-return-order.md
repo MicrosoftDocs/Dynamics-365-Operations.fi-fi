@@ -3,7 +3,7 @@ title: Ostopalautustilauksen luonti
 description: "Seuraavassa menettelyssä kuvataan, miten luot ostopalautustilauksen kopioimalla toimittajan laskuasiakirjan rivit uuteen ostotilaukseen käyttämällä Hyvityslasku-toimintoa."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Vapauta tuote/päätuote yrityksille"
 description: "Tässä menettelyssä esitellään tuotteen tai päätuotteen vapautus yhteen yritykseen tai useaan yritykseen."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

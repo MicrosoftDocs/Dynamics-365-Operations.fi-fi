@@ -3,7 +3,7 @@ title: Ilmoituspalkin tai logon muuttaminen
 description: "Seuraavassa menettelyssä on ohjeet, joiden avulla järjestelmänvalvojat voivat päivittää yrityksen ilmoituspalkin tai logon kuvan."
 author: aneesmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

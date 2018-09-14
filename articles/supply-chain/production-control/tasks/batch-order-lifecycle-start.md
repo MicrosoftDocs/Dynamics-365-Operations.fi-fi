@@ -3,7 +3,7 @@ title: "Erän tilauksen elinkaari luomisesta käynnistämiseen"
 description: "Tämä menettely käsittelee erätilauksen elinkaaren ensimmäistä osaa."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

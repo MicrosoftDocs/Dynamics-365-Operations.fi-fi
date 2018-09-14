@@ -3,7 +3,7 @@ title: "Määritä resurssin ominaisuudet"
 description: "Resurssin ominaisuudet kertovat, mitä operatiiviset resurssit voivat tehdä."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

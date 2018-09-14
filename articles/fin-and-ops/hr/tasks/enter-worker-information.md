@@ -3,7 +3,7 @@ title: "Syötä työntekijän tiedot"
 description: "Kun rekrytoija on luonut joukkotyöhönottoprojektin ja luonut toimet, syötetään palkattavien henkilöiden työntekijätiedot."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

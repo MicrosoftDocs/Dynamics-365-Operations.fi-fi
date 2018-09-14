@@ -3,7 +3,7 @@ title: "Käyttäjän ensisijaisen aikavyöhykkeen asettaminen"
 description: "Seuraava menettely osoittaa, miten käyttäjä, jolla on järjestelmänvalvojan rooli, voi määrittää käyttäjän aikavyöhykkeen."
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

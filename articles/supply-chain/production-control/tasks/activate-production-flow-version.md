@@ -3,7 +3,7 @@ title: Aktivoi tuotantovirran versio
 description: "Ennen kuin kanban-työt voidaan luoda ja tehtäviä käsitellä tuotannon työnkulun versiossa, versio on aktivoitava."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

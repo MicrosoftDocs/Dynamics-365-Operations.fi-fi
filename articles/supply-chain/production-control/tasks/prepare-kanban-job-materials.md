@@ -3,7 +3,7 @@ title: "Prosessin kanban-työn valmisteleminen kun materiaalit ovat käytettävi
 description: "Tässä tehtävässä keskitytään prosessin kanban-työn valmistelemiseen silloin, kun kaikki työsolun materiaalit ovat käytettävissä."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

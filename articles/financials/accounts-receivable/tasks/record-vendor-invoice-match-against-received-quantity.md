@@ -3,7 +3,7 @@ title: "Toimittajan laskun kirjaaminen ja t채sm채ytt채minen vastaanotettuihin m�
 description: "Kun vastaanotat toimittajalta ostotilaukseen perustuvan laskun toimitetuista tavaroista tai palveluista, liiketoimintaprosessit voivat edellytt채채, ett채 tavarat tai palvelut on vastaanotettu ennen laskun hyv채kymist채 maksettavaksi."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Luo ostotilaus kertatoimittajalle
 description: "Tässä menettelyssä näytetään, miten ostotilaus luodaan kertatoimittajalle."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

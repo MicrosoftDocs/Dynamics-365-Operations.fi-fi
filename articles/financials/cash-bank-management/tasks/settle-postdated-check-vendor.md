@@ -3,7 +3,7 @@ title: "Tilitä toimittajalle jälkeen päin päivitetty lasku"
 description: "Tilitä toimittajalle myönnetty myöhemmäksi päivätty sekki, kun pankki on selvittänyt erääntyneen ja pankin selvittämän sekkitapahtuman."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

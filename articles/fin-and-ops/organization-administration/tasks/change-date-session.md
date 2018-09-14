@@ -3,7 +3,7 @@ title: "Istunnon päivämäärän muuttaminen"
 description: "Kuluvaa päivää käytetään oletusarvoisesti syötettäessä tai kirjattaessa merkintöjä kirjauskansioon."
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Konsernin sisäisen suunnitelman luominen"
 description: "Tässä menettelyssä kuvataan, miten luot konsernin sisäisen suunnitelman."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

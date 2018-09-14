@@ -3,7 +3,7 @@ title: "Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely"
 description: "Tässä menettelyssä käsitellään, miten kanta-asiakaskortin tietoa voi etsiä ja miten kanta-asiakkaan palkkiopisteitä säädetään."
 author: scott-tucker
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

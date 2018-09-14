@@ -3,7 +3,7 @@ title: Luo ja kirjaa toistuvat vapaatekstilaskut
 description: "Toistuvia laskuja käytetään silloin, kun asiakkailta laskutetaan sama summa toistuvasti."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
