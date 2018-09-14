@@ -263,9 +263,9 @@
               href: extensibility/naming-guidelines-extensions.md
             - name: 'Mallien rajoitusten höllentäminen, jotta lisääminen voidaan refaktoroida laajennuksiin'
               href: extensibility/refactoring-over-layering.md
-        - name: Toimintaohjeet
+        - name: Laajennusten luonti
           items:
-            - name: 'Arvojen lisääminen: enums'
+            - name: 'Arvojen lisääminen enums:iin'
               href: extensibility/add-enum-value.md
             - name: Laajennettujen tietotyyppien muokkaaminen
               href: extensibility/modify-edt.md
@@ -307,10 +307,32 @@
               href: extensibility/pricing-app73.md
             - name: Taulumäärityksen laajennus
               href: extensibility/map-extensions.md
-            - name: Käyttöliittyminä käytettävien taulumääritysten laajentaminen
+            - name: Käyttöliittyminä käytettävät laajennetut taulumääritykset
               href: extensibility/maps-as-interfaces.md
-            - name: Versionhallinnassa käytettävien taulumääritysten laajentaminen
+            - name: Versionhallinnassa käytettävät laajennetut taulumääritykset
               href: extensibility/maps-with-versioning.md
+        - name: Laajennettavien ratkaisujen luominen
+          items:
+            - name: Kirjaa laajennettavissa oleva koodi
+              href: extensibility/writing-extensible-code.md
+            - name: Luokat
+              href: extensibility/extensible-classes.md
+            - name: Metodit
+              href: extensibility/extensible-methods.md
+            - name: Lomakkeet
+              href: extensibility/extensible-forms.md
+            - name: Laajennetut tietotyypit
+              href: extensibility/extensible-edts.md
+            - name: Laajennettavissa olevat valintalistat
+              href: extensibility/extensible-enums.md
+            - name: Siirrot
+              href: extensibility/extensible-code-delegates.md
+            - name: Taulut
+              href: extensibility/extensible-tables.md
+            - name: Menetelmien laajennettavuusmääritteet
+              href: extensibility/extensibility-attributes.md
+            - name: Tärkeimmät muutokset.
+              href: extensibility/breaking-changes.md
     - name: Suoritus
       items:
         - name: Jäljittäminen Trace-jäsentimellä
@@ -1184,6 +1206,8 @@
       items:
         - name: Optimointiavustajan sääntöjen luominen
           href: sysadmin/create-rules-optimization-advisor.md
+    - name: Raportoi tuotantokatkos
+      href: lifecycle-services/report-production-outage.md
 - name: Lifecycle Services
   items:
     - name: Lifecycle Services -resurssit
@@ -1236,6 +1260,8 @@
       href: lifecycle-services/monitoring-diagnostics.md
     - name: Ympäristöpalvelujen käynnistäminen uudelleen
       href: lifecycle-services/restart-environment-services.md
+    - name: Raportoi tuotantokatkos
+      href: lifecycle-services/report-production-outage.md
     - name: Käyttäjien sisäänkirjautumisten seuraaminen
       href: lifecycle-services/user-logins.md
     - name: Resurssikirjasto

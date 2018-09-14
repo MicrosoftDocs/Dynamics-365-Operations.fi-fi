@@ -93,14 +93,12 @@
       href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
     - name: Arvolisäverokoodien koko summan ja välin laskentavaihtoehdot
       href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-- name: Puhelinkeskus
+- name: Puhelinpalvelukeskus
   items:
-    - name: Puhelukeskuksen myyntitoiminnot
+    - name: Puhelupalvelukeskuksen myyntitoiminnot
       href: call-center-functionality.md
-    - name: Puhelinkeskuksen luettelot
+    - name: Puhelinpalvelukeskuksen luettelot
       href: call-center-catalogs.md
-    - name: Puhelinkeskuksen luettelon luominen
-      href: create-call-center-catalogs.md
     - name: Toimitustapojen ja -kulujen määrittäminen
       href: configure-call-center-delivery.md
     - name: Petoshälytysten määrittäminen ja käyttäminen
@@ -129,11 +127,13 @@
       href: retail-time-attendance.md
 - name: Modern Point of Sale (MPOS) ja pilvimyyntipiste
   items:
-    - name: 'MPOS:n tai pilvimyyntipisteen valitseminen'
+    - name: 'MPS:n tai pilvimyyntipisteen valitseminen'
       href: MPOS-or-CPOS.md
     - name: Myyntipistetoiminnot verkossa ja paikallisesti
       href: pos-operations.md
-    - name: 'MPOS:n ja pilvimyyntipisteen demotietojen näyttöasettelut'
+    - name: 'Retail Modern POS:n laiteaktivointi'
+      href: dev-itpro/retail-POS-activation-changes.md
+    - name: 'MPOS:n ja Cloud POS:n demotietojen näyttöasettelut'
       href: demo-data.md
     - name: 'Tuote- ja asiakashaku POS:ssä'
       href: POS-search-improvements.md
