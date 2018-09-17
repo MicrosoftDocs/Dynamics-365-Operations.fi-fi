@@ -25,6 +25,8 @@ ms.lasthandoff: 08/08/2018
 
 # <a name="new-or-updated-task-guides-december-2017"></a>Uudet tai päivitetyt tehtäväoppaat (joulukuu 2017)
 
+[!include [banner](../includes/banner.md)]
+
 Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics 365 for Operationsin Microsoftin (joulukuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon.
 
 
