@@ -44,11 +44,13 @@ Jos haluat käyttää luottokortteja, sinun on määritettävä ja aktivoitava m
 
 ## <a name="adding-a-new-credit-card"></a>Uuden luottokortin lisääminen
 Voit luoda uudet luottokorttitietueet Asiakkaat-sivulla kohdasta Asiakas > Määritä > Luottokortti. Voit myös luoda luottokorttitietueita kirjatessasi myyntitilauksia Myyntitilaus-sivulla kohdasta Hallinta > Asiakas > Luottokortti > Rekisteröi.
-Luottokortin lisääminen myyntitilaukseen
+
+<a name="adding-a-credit-card-to-a-sales-order"></a>Luottokortin lisääminen myyntitilaukseen
 -------------------------------------
 
 Voit lisätä luottokortin myyntitilaukseen valitsemalla luottokortin Myyntitilaus-sivun Hinnat ja alennukset -pikavälilehden luottokorttihausta. Varmennusprosessin voit aloittaa valitsemalla toimintoruudun Hallinta-välilehdestä kohdan Luottokortti ja Varmenna.
-Luottokortin varmennus
+
+<a name="authorizing-a-credit-card"></a>Luottokortin varmennus
 -------------------------
 
 Kun luottokortti varmennetaan, kortin numero ja kortin haltijan henkilöllisyys varmennetaan ja käytettävissä oleva luottosaldo tarkistetaan. Voit myös tarkistaa kortin tarkistusnumeron ja kortinhaltijan osoitteen. Laskun summa vähennetään tämän jälkeen asiakkaan käytettävissä olevasta luottosaldosta. Maksupalvelu lähettää tiedon luottokortin hyväksymisestä tai hylkäämisestä. Kun myyntitilaus laskutetaan, laskun summa veloitetaan (siepataan) luottokortilta.

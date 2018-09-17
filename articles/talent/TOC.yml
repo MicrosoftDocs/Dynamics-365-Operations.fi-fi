@@ -6,6 +6,8 @@
       items:
         - name: Uudet ja muuttuneet ominaisuudet
           items:
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (elokuu 2018)'
+              href: whats-new-talent-august2018.md
             - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (heinäkuu 2018)'
               href: whats-new-talent-july2018.md
         - name: Järjestelmävaatimukset ja päivityskäytäntö
@@ -16,8 +18,8 @@
           href: remove-talent-environment.md
         - name: Modulaaristen Talent-sovellusten valmistelu
           href: modular-app-tech-faq.md
-        - name: Talent-toiminnallisuuden laajentaminen
-          href: extend-talent-functionality.md
+        - name: PowerApps-sovellusten upottaminen
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Esiversion ominaisuuksien käyttäminen
           href: access-preview-feature.md
         - name: Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen
@@ -67,7 +69,7 @@
           href: courses.md
     - name: Etuohjelman määrittäminen ja hallinta
       href: manage-benefit-program.md
-    - name: Etukelpoisuuden käytännöt
+    - name: Etuuskelpoisuuden käytännöt
       href: benefit-eligibility-policies.md
       items:
         - name: Työntekijöille lainattujen nimikkeiden hallinta

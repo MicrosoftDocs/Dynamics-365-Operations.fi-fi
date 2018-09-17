@@ -3,7 +3,7 @@ title: Microsoft Dynamics 365 for Finance and Operations -dokumentaatio
 description: Microsoft Dynamics 365 for Finance and Operations -dokumentaatio.
 author: margoc
 manager: AnnBe
-ms.date: 03/02/2018
+ms.date: 08/30/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,6 +26,7 @@ ms.lasthandoff: 08/08/2018
 ---
 
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Microsoft Dynamics 365 for Finance and Operations -dokumentaatio
+
 [!include [banner](includes/banner.md)]
 
 Seuraavissa resursseissa on lisätietoja tavoista, joilla voit käyttää Microsoft Dynamics 365 for Finance and Operationsia yrityksessäsi. Resursseissa on käyttäjille, kehittäjille ja IT-ammattilaisille sopivaa sisältöä. 
