@@ -1,7 +1,7 @@
 --- 
 title: Varastosaatavuuden tarkistus
 description: "Tässä menettelyssä kerrotaan, miten tietyn nimiketunnuksen varastosaldo ja käytettävissä oleva varasto tarkistetaan."
-author: 
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
