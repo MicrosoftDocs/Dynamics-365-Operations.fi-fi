@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/09/2018
 
 **Kustannushintojen hallinnan** Microsoft Power BI -sisältö on tarkoitettu varaston kirjanpitäjille tai organisaation henkilöille, jotka ovat vastuussa tai kiinnostuneita varaston tilasta tai keskeneräisistä töistä tai jotka ovat vastuussa tai kiinnostuneita standardikustannusvarianssien analysoinnista.
 
-> [!Note]
+> [!NOTE]
 > Tässä ohjeaiheessa käsitelty **Kustannushintojen hallinnan** Power BI -sisältö koskee versiota Dynamics 365 for Finance and Operations 8.0.
 > 
 > AppSource-sivustoon julkaistu **Kustannushintojen hallinnan** Power BI -sisältöpaketti on vanhentunut. Lisätietoja tästä vanhentumisesta on kohdassa [AppSource-sivustoon julkaistut Power BI -sisältöpaketit](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
@@ -171,7 +171,7 @@ Seuraavassa taulukossa on yleiskatsaus **Kustannushintojen hallinnan** Power BI 
 |                                         | 10 parasta resurssia epäsuotuisan tuotannon varianssin mukaan  |
 |                                         | 10 parasta resurssia suotuisan tuotannon varianssin mukaan    |
 
-### <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
+## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
 **Kustannushintojen hallinnan** Power BI -sisällön raporttisivujen täyttämiseen käytetään Microsoft Dynamics 365 for Finance and Operationsin tietoja. Nämä tiedot esitetään koostemittoina. Ne vaiheistetaan yksikkösäilössä, joka on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on kohdassa [Power BI:n ja yksikkösäilön integraatio](power-bi-integration-entity-store.md).
 
@@ -188,26 +188,25 @@ Seuraavassa taulukossa on Power BI -sisällön tärkeimmät lasketut mitat.
 
 | Mitta                            | Laskelma |
 |------------------------------------|-------------|
-| Alkusaldo                  | Alkusaldo = [Loppusaldo]-[Nettomuutos] |
-| Aloitussaldon määrä             | Aloitussaldon määrä = [Loppusaldon määrä]-[Nettomuutoksen määrä] |
-| Loppusaldo                     | Loppusaldo = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
-| Loppusaldon määrä                | Loppusaldon määrä = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
-| Nettomuutos                         | Nettomuutos = SUM([AMOUNT]) |
-| Nettomuutoksen määrä                    | Nettomuutoksen määrä = SUM([QTY]) |
-| Varaston kiertonopeus summan mukaan | Varaston kiertonopeus summan mukaan = if(OR[Varaston keskimäärinen saldo] \<= 0, [Varaston myydyt tai kulutetut ongelmat] \>= 0), 0, ABS([Varaston myydyt tai kulutetut ongelmat])/[Varaston keskimääräinen saldo]) |
-| Varaston keskimääräinen saldo          | Varaston keskimäärinen saldo = (([Loppusaldo] + [Alkusaldo]) / 2) |
-| Päivän käsillä oleva varasto             | Päivän käsillä oleva varasto = 365 / CostObjectStatementEntries[Varaston kiertonopeus summan mukaan] |
-| Varaston tarkkuus                 | Varaston tarkkuus summan mukaan = IF([Loppusaldo] \<= 0, IF(OR([Varaston laskettu määrä] \<\> 0, [Loppusaldo] \< 0), 0, 1), MAX(0, ([Loppusaldo] - ABS([Varaston laskettu määrä]))/[Loppusaldo])) |
+| Alkusaldo                  | Alkusaldo = \[Loppusaldo\]-\[Nettomuutos\] |
+| Aloitussaldon määrä             | Aloitussaldon määrä = \[Loppusaldon määrä\]-\[Nettomuutoksen määrä\] |
+| Loppusaldo                     | Loppusaldo = (CALCULATE(SUM(\[Amount\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\])))) |
+| Loppusaldon määrä                | Loppusaldon määrä = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
+| Nettomuutos                         | Nettomuutos = SUM(\[AMOUNT\]) |
+| Nettomuutoksen määrä                    | Nettomuutoksen määrä = SUM(\[QTY\]) |
+| Varaston kiertonopeus summan mukaan | Varaston kiertonopeus summan mukaan = if(OR(\[Varaston keskimäärinen saldo\] \< = 0, \[Varaston myydyt tai kulutetut ongelmat\] \> = 0), 0, ABS(\[Varaston myydyt tai kulutetut ongelmat\])/\[Varaston keskimääräinen saldo\]) |
+| Varaston keskimääräinen saldo          | Varaston keskimäärinen saldo = ((\[Loppusaldo\] +  \[Alkusaldo\]) / 2) |
+| Varastopäiviä käytettävissä             | Päivän käsillä oleva varasto = 365 / CostObjectStatementEntries\[Varaston kiertonopeus summan mukaan\] |
+| Varaston tarkkuus                 | Varaston tarkkuus summan mukaan = IF(\[Loppusaldo\] \<= 0, IF(OR(\[Varaston laskettu määrä\] \<\> 0, \[Loppusaldo\] \< 0), 0, 1), MAX(0, (\[Loppusaldo\] - ABS(\[Varaston laskettu määrä\]))/\[Loppusaldo\])) |
 
 Seuraavia avaindimensioita käytetään suodattimina koostemittojen osittamisessa. Tällä tavoin saavutetaan suurempi rakeisuus ja saadaan tarkempia analyysitietoja.
 
 
-|                         Kokonaisuus                          |             Esimerkkejä määritteistä              |
+| Kokonaisuus                                                  | Esimerkkejä määritteistä                          |
 |---------------------------------------------------------|-------------------------------------------------|
-|                        Tuotteet                         | Tuotenumero, tuotteen nimi, yksikkö, nimikeryhmät |
-| Luokkahierarkiat (kustannushintojen hallinnan rooliin määritetty) |       Luokkahierarkia, luokkataso        |
-|                     Oikeushenkilöt                      |               Yritysten nimet                |
-|                    Kirjanpidon kalenterit                     |  Kirjanpidon vuosikalenteri, vuosi, vuosineljännes, kausi, kuukausi  |
-|                          Sivusto                           |        Tunnus, nimi, osoite, osavaltio, maa        |
-
+| Tuotteet                                                | Tuotenumero, tuotteen nimi, yksikkö, nimikeryhmät |
+| Luokkahierarkiat (kustannushintojen hallinnan rooliin määritetty) | Luokkahierarkia, luokkataso              |
+| Oikeushenkilöt                                          | Yritysten nimet                              |
+| Kirjanpidon kalenterit                                        | Kirjanpidon vuosikalenteri, vuosi, vuosineljännes, kausi, kuukausi   |
+| Sivusto                                                    | Tunnus, nimi, osoite, osavaltio, maa               |
 

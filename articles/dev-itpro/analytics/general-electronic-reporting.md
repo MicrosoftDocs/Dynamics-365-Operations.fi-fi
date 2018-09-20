@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: a271887c4d2cfe4d0ee6518482dc4ebe407ebe56
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -63,8 +63,8 @@ Tietomallin liiketoimintayksikkö ilmaistaan säilönä (tietue). Liiketoimintay
 
 Yksittäisessä tietomallikomponentissa voi olla useita toimialuekohtaisten liiketoimintayksiköiden hierarkioita. Siinä voi olla myös suorituksenaikaista rapottikohtaista tiedonkulku tukevia yhdistämismäärityksiä. Hierarkiat erotellaan sen yksittäisen tietueen perusteella, joka on valittu mallien yhdistämisen juureksi. Esimerkiksi maksutoimialueen alueen tietomalli voi tukea seuraavia yhdistämismäärityksiä:
 
-- Yritys > Toimittaja -> Ostoreskontran toimialueen maksutapahtumat
-- Asiakas > Yritys -> Myyntireskontran toimialueen maksutapahtumat
+- Yritys \> Toimittaja \> Ostoreskontratoimialueen maksutapahtumat
+- Asiakas \> Yritys \> Myyntireskontran toimialueen maksutapahtumat
 
 Huomaa, että liiketoimintayksiköt, kuten yritys ja maksutapahtumat, suunnitellaan kerran. Eri yhdistämismääritykset ja käytä niitä sitten uudelleen.
 
@@ -74,7 +74,7 @@ Lähteviä sähköisiä asiakirjoja tukevassa mallin yhdistämismäärityksessä
 - Se tukee käyttäjän syöttöparametreja, jotka voidaan määrittää tietomallin tietolähteiksi, kun osa tiedoista on määritettävä suorituksen aikana.
 - Se tukee Finance and Operationsin tietojen muuntamista tarvittaviksi ryhmiksi. Voit myös suodattaa, lajittelu ja summata tietoja sekä loogisia laskettuja kenttiä, jotka on suunniteltu Microsoft Excelin kaavoja muistuttavilla kaavoilla seuraavassa kuvassa esitetyllä tavalla. Lisätietoja on ohjeaiheessa [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)).
 
-[![Kaavan suunnittelutoiminto](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
+[![Kaavan suunnittelutoiminto](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
 Saapuvia sähköisiä asiakirjoja tukevassa mallin yhdistämismäärityksessä on seuraavat ominaisuudet:
 
@@ -175,7 +175,7 @@ Vaaditut **LCS-projektin** säilöt voidaan rekisteröidä erikseen kullekin nyk
 ## <a name="supported-scenarios"></a>Tuetut skenaariot
 ### <a name="building-a-data-model"></a>Tietomallin rakentaminen
 
-Sähköisessä raportoinnissa on mallin suunnittelutoiminto, jolla voit luoda tietyn liiketoiminnan toimialueen tietomallin. Kaikki tietomallikohtaiset liiketoimintayksiköt ja niiden väliset suhteet voidaan esittää tietomallissa hierarkkisena rakenteena. Seuraavassa kuvassa on esimerkki tämän tyyppisestä tietomallista (maksutoimialueen tietomalli). 
+Sähköisessä raportoinnissa on mallin suunnittelutoiminto, jolla voit luoda tietyn liiketoiminnan toimialueen tietomallin. Kaikki tietomallikohtaiset liiketoimintayksiköt ja niiden väliset suhteet voidaan esittää tietomallissa hierarkkisena rakenteena. Seuraavassa kuvassa on esimerkki tämän tyyppisestä tietomallista (maksutoimialueen tietomalli).
 
 [![Maksutoimialueen tietomalli](./media/ER-overview-04.png)](./media/ER-overview-04.png)
 
@@ -185,19 +185,18 @@ Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin suunnittelut
 
 Tietomallin sisältö (otsikot ja kuvaukset) voidaan kääntää muille Finance and Operationsin tukemille kielille. Tietomallin sisältö voidaan haluta kääntää seuraavista syistä:
 
--   Suunnitteluvaiheessa sitä varten, että sisältö olisi paremmin sellaisten vieraskielisten muodon suunnittelijoiden ymmärrettävissä, jotka käyttävät tietomallia muotokomponenttien tietojen yhdistämismäärityksiin.
--   Suorituksenaikana sen vuoksi, että sisällön käyttö olisi kätevämpää, kun kehotteet ja suoritustenaikaisten parametrien ohje sekä määritetyt tarkistussanomat (virheet ja varoitukset) näytetään kirjautuneen käyttäjän ensisijaisella kielellä.
+- Suunnitteluvaiheessa sitä varten, että sisältö olisi paremmin sellaisten vieraskielisten muodon suunnittelijoiden ymmärrettävissä, jotka käyttävät tietomallia muotokomponenttien tietojen yhdistämismäärityksiin.
+- Suorituksenaikana sen vuoksi, että sisällön käyttö olisi kätevämpää, kun kehotteet ja suoritustenaikaisten parametrien ohje sekä määritetyt tarkistussanomat (virheet ja varoitukset) näytetään kirjautuneen käyttäjän ensisijaisella kielellä.
 
-Seuraavassa kuvassa on esimerkki tietomallin sisällön kääntämisestä englannista japaniksi. 
+Seuraavassa kuvassa on esimerkki tietomallin sisällön kääntämisestä englannista japaniksi.
 
 [![Tietomallin englanninkielinen sisältö](./media/ER-overview-05.png)](./media/ER-overview-05.png)
 
 [![Japaniksi käännetty tietomallin sisältö](./media/ER-overview-06.png)](./media/ER-overview-06.png)
 
-
 ### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>Lähtevien asiakirjojen tietomallin yhdistämismääritysten määrittäminen
 
-Sähköiseen raportointiin sisältyy mallin yhdistämismääritysten suunnittelutoiminto, jolla käyttäjät voivat tehdä yhdistämismäärityksiä tiettyihin Finance and Operationsin tietolähteisiin suunniteltuihin malleihin. Tiedot tuodaan suorituksen aikana yhdistämismäärityksen mukaisesti valituista tietolähteistä tietomalliin. Tietomallia käytetään sitten lähteviä sähköisiä asiakirjoja luovien sähköisten raportointimuotojen abstraktina tietolähteenä. Seuraavassa kuvassa on esimerkki tämän tyyppisestä tietomallin yhdistämismäärityksestä (**SEPA-tilisiirto**-mallin maksutoimialueen tietomallin yhdistämismääritys). 
+Sähköiseen raportointiin sisältyy mallin yhdistämismääritysten suunnittelutoiminto, jolla käyttäjät voivat tehdä yhdistämismäärityksiä tiettyihin Finance and Operationsin tietolähteisiin suunniteltuihin malleihin. Tiedot tuodaan suorituksen aikana yhdistämismäärityksen mukaisesti valituista tietolähteistä tietomalliin. Tietomallia käytetään sitten lähteviä sähköisiä asiakirjoja luovien sähköisten raportointimuotojen abstraktina tietolähteenä. Seuraavassa kuvassa on esimerkki tämän tyyppisestä tietomallin yhdistämismäärityksestä (**SEPA-tilisiirto**-mallin maksutoimialueen tietomallin yhdistämismääritys).
 
 [![Esimerkki tietomallin yhdistämismäärityksestä](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 
@@ -210,13 +209,13 @@ Sähköiseen raportointiin sisältyy mallin yhdistämismääritysten suunnittelu
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Suunnitellun malliosan tallentaminen mallimäärityksinä
 
-Sähköinen raportointi voi tallentaa suunnitellun tietomallin yhdessä liitettyjen tietojen yhdistämismääritysten kanssa nykyisen Finance and Operationsin esiintymän mallimäärityksinä. Seuraavassa kuvassa on esimerkki tämän tyyppisestä tietomallin määrityksestä (maksumallin määritykset). 
+Sähköinen raportointi voi tallentaa suunnitellun tietomallin yhdessä liitettyjen tietojen yhdistämismääritysten kanssa nykyisen Finance and Operationsin esiintymän mallimäärityksinä. Seuraavassa kuvassa on esimerkki tämän tyyppisestä tietomallin määrityksestä (maksumallin määritykset).
 
 Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin tietomallin yhdistämismääritysten tekeminen valittuihin tietolähteisiin** -tehtäväopas (osa **7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)** -liiketoimintaprosessia).
 
 ### <a name="building-a-format-that-uses-a-data-model-as-a-base"></a>Tietomallia perusteena käyttävän muodon muodostaminen
 
-Sähköinen raportointi tukee muodon suunnittelutoimintoa, jolla voit muodostaa valitulle liiketoiminnan toimialueelle sähköisen asiakirjan muodon valitsemalla pohjaksi mallikomponentin. Sama sähköisen raportoinnin muodon suunnittelutoiminto mahdollistaa luodun muodon yhdistämismäärityksen tekemisen valitun toimialueen tietomallin yhdistämismäärityksen tietolähteenä. Seuraavassa kuvassa on esimerkki tämän tyyppisestä muodosta (Yhdistyneen kuningaskunnan **BACS**-maksumuotoa tukeva muotomääritys). 
+Sähköinen raportointi tukee muodon suunnittelutoimintoa, jolla voit muodostaa valitulle liiketoiminnan toimialueelle sähköisen asiakirjan muodon valitsemalla pohjaksi mallikomponentin. Sama sähköisen raportoinnin muodon suunnittelutoiminto mahdollistaa luodun muodon yhdistämismäärityksen tekemisen valitun toimialueen tietomallin yhdistämismäärityksen tietolähteenä. Seuraavassa kuvassa on esimerkki tämän tyyppisestä muodosta (Yhdistyneen kuningaskunnan **BACS**-maksumuotoa tukeva muotomääritys).
 
 [![Esimerkki tietomallia perusteena käyttävästä muodosta](./media/ER-overview-09.png)](./media/ER-overview-09.png)
 
@@ -240,7 +239,7 @@ Tutustu skenaarion tietoihin toistamalla Sähköisen raportoinnin Micrsoft Word 
 - [Maksuraportin malli (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 - [Maksuraportin sidottu malli (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
-### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Saapuvien sähköisten asiakirjojen tietojen tuontimääritysten muodostaminen  
+### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Saapuvien sähköisten asiakirjojen tietojen tuontimääritysten muodostaminen
 Sähköisen raportointimuodon suunnittelutoiminnolla voi kuvata sähköisen asiakirjan, jolla tietoja aiotaan tuoda joko XML- tai tekstimuodossa. Saapuva tiedosto jäsennetään suunnitellulla muodolla. Sähköisen raportointimuodon yhdistämismäärityksen suunnittelutoiminnoilla voidaan määrittää, miten suunnitellun muodon elementit sidotaan tietomalliin. Seuraavassa kuvassa on esimerkki tämän tyyppisestä muodostaja muodon yhdistämismäärityksestä. Tässä esimerkissä tuodaan NETS-tiliotteita, joissa on tekstimuotoisia toimittajan maksutietoja.
 
 [![ER-format-designer](./media/ER-overview-12.png)](./media/ER-overview-12.png)
@@ -260,7 +259,7 @@ Suunniteltu muoto voidaan tallentaa sähköisessä raportoinnissa yhdessä mää
 
 ### <a name="configuring-finance-and-operations-to-start-to-use-a-created-format-internally"></a>Finance and Operationsin määrittäminen käyttämään luotua muotoa sisäisesti
 
-Finance and Operations voidaan määrittää aloittamaan luodun muodon käyttö sähköisten raporttien luomiseksi. Luodun muotomäärityksen viite on määritettävä tietyn toimialueen asetuksissa. Jos esimerkiksi halutaan aloittaa BACS-muotoisten sähköisten toimittajamaksujen sähköisen raportointimuodon määritysten käyttö, muotomääritykseen on viitattava maksutapakohtaisesti, kuten seuraavissa kuvissa: 
+Finance and Operations voidaan määrittää aloittamaan luodun muodon käyttö sähköisten raporttien luomiseksi. Luodun muotomäärityksen viite on määritettävä tietyn toimialueen asetuksissa. Jos esimerkiksi halutaan aloittaa BACS-muotoisten sähköisten toimittajamaksujen sähköisen raportointimuodon määritysten käyttö, muotomääritykseen on viitattava maksutapakohtaisesti, kuten seuraavissa kuvissa:
 
 [![BACS (UK) -muodon määritykset](./media/ER-overview-14.png)](./media/ER-overview-14.png)
 
@@ -367,15 +366,9 @@ Voit ottaa sähköisessä raportoinnissa automaattisesti käyttöön viimeisimp�
 |                                                  |                       | Toimittajan laskun ilmoitus (IS)                   | Islannin toimittajan laskun ilmoitusmuoto                      |
 |                                                  |                       | Toimittajan laskun ilmoitusraportti (IS)            | Islannin toimittajan laskun ilmoitusraportti                      |
 
-
-
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Lokalisointivaatimukset – Luo sähköisen raportoinnin määritykset](electronic-reporting-configuration.md)
 
 [Sähköisen raportoinnin konfiguraatioiden elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-
 

@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 55699cb41c712b49954f9ad6b03c2e7813a3a98a
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,21 +36,21 @@ Tässä aiheessa kuvataan, mitä kuuluu **Myynnin ja tuottavuuden suorituskyvyn*
 
 **Myynnin ja tuottavuuden suorituskyky** Power BI -sisältöpaketti on tarkoitettu myyntipäälliköille myynnin avainmittareiden (tuotto, bruttovoitto ja katetuotto) seurantaan. Se käyttää myynnin tapahtumiin liittyviä tietoja ja tarjoaa kootun näkymän koko yrityksen myyntiluvuista sekä asiakas- ja tuotekohtaisen erittelyn myynnin suorituksesta.
 
-Raportit korostaa tuoton ja voiton kasvua pitkällä aikavälillä. Tämän vuoksi raportteja voidaan käyttää, kun esimiehille ilmoitetaan yksittäisten asiakkaiden ja tuotteiden positiivisista ja negatiivisista kulutussuuntauksista. Lisäksi taulukoissa verrataan eri tuoteluokkien ja asiakasryhmien tuottoa ja kannattavuutta toisiinsa. Näin ollen luokka- ja aluepäälliköt voivat tunnistaa hitaan ja nopean kehityksen tekijät. Kattava raportti esittää yksittäisen asiakkaan tuoton verrattuna katetuottoon. Tämän ansiosta asiakaspäälliköillä on tietoon perustuvan pohja, jonka perusteella he voivat kohdistaa myynti- ja markkinointitoimet kunkin asiakkaan profiiliin. 
+Raportit korostaa tuoton ja voiton kasvua pitkällä aikavälillä. Tämän vuoksi raportteja voidaan käyttää, kun esimiehille ilmoitetaan yksittäisten asiakkaiden ja tuotteiden positiivisista ja negatiivisista kulutussuuntauksista. Lisäksi taulukoissa verrataan eri tuoteluokkien ja asiakasryhmien tuottoa ja kannattavuutta toisiinsa. Näin ollen luokka- ja aluepäälliköt voivat tunnistaa hitaan ja nopean kehityksen tekijät. Kattava raportti esittää yksittäisen asiakkaan tuoton verrattuna katetuottoon. Tämän ansiosta asiakaspäälliköillä on tietoon perustuvan pohja, jonka perusteella he voivat kohdistaa myynti- ja markkinointitoimet kunkin asiakkaan profiiliin.
 
 **Myynnin ja tuottavuuden suorituskyky** -sisällön ansiosta myyntipäälliköt pystyvät analysoimaan myynnin suoritusta seuraavasti:
 
--   Tuotto, vuoden alusta (asiakasryhmittäin ja yksittäisille asiakkaille, myyntiluokille ja yksittäisille tuotteille sekä alueille)
--   Liikevaihdon muutos, vuosittainen (asiakkaan alueen ja myyntiluokan mukaan)
+- Tuotto, vuoden alusta (asiakasryhmittäin ja yksittäisille asiakkaille, myyntiluokille ja yksittäisille tuotteille sekä alueille)
+- Liikevaihdon muutos, vuosittainen (asiakkaan alueen ja myyntiluokan mukaan)
 
 Kannattavuutta voidaan analysoida seuraavasti:
 
--   Käyttökate ja katetuotto (asiakasryhmittäin ja tuotemyyntiluokittain)
--   Käyttökatteen muutos, vuosittainen
--   Asiakkaan kannattavuus (tuoton ja käyttökatteen suhteen mukaan)
+- Käyttökate ja katetuotto (asiakasryhmittäin ja tuotemyyntiluokittain)
+- Käyttökatteen muutos, vuosittainen
+- Asiakkaan kannattavuus (tuoton ja käyttökatteen suhteen mukaan)
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-**Myynnin ja tuottavuuden suorituskyvyn** Power BI -sisältö näkyy **Myynnin ja tuottavuuden suorituskyky** -sivulla (**Myynti ja markkinointi** > **Kyselyt ja raportit** > **Myynnin suorituskykyanalyysi** > **Myynnin ja tuottavuuden suorituskyky**). 
+**Myynnin ja tuottavuuden suorituskyvyn** Power BI -sisältö näkyy **Myynnin ja tuottavuuden suorituskyky** -sivulla (**Myynti ja markkinointi** \> **Kyselyt ja raportit** \> **Myynnin suorituskykyanalyysi** \> **Myynnin ja tuottavuuden suorituskyky**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 **Myynnin ja tuottavuuden suorituskyky** Power BI -sisältöön lukeutuu raportti, joka koostuu mittarijoukosta. Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina. Seuraavassa taulukossa on esitetty yhteenveto sisällön käytettävistä visualisoinneista.
@@ -77,19 +77,18 @@ Kannattavuutta voidaan analysoida seuraavasti:
 
 \* Tuotto tänä ja viime vuonna, ja kasvu myyntiluokittain.
 
-
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
-**Myynnin ja tuottavuuden suorituskyky** – Power BI -sisällön raportissa käytetään seuraavia tietoja. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md). 
+**Myynnin ja tuottavuuden suorituskyky** – Power BI -sisällön raportissa käytetään seuraavia tietoja. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md).
 
-Sisällön koostetut mittaukset ovat alijoukko Microsoft Dynamics AX 2012:n ja AX 2012 R3:n myyntikuutiossa saatavilla olleista koostemitoista. Jotta kuution koostetut mittaukset voi tallentaa yksikkösäilöön, niistä on tehtävä käyttöönottokelpoisia. Lue lisätietoja koostettujen mittausten tallentamisesta yksikkösäilöön blogikirjoituksesta [Power BI -integraatio yksikkösäilöön Dynamicsissa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). 
+Sisällön koostetut mittaukset ovat alijoukko Microsoft Dynamics AX 2012:n ja AX 2012 R3:n myyntikuutiossa saatavilla olleista koostemitoista. Jotta kuution koostetut mittaukset voi tallentaa yksikkösäilöön, niistä on tehtävä käyttöönottokelpoisia. Lue lisätietoja koostettujen mittausten tallentamisesta yksikkösäilöön blogikirjoituksesta [Power BI -integraatio yksikkösäilöön Dynamicsissa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 
 Seuraavia tärkeitä koostettuja laskurivi-yksikön rivien mittoja käytetään sisällön perustana.
 
-| Kokonaisuus        | Tärkeät koostemitat                   | Dynamics 365:n tietolähde                    | Kenttä                                        | kuvaus                                   |
-|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
-| Laskurivit | Myyntituotto                                      | AsiakasLaskuTapahtuma                                | SUM(LineAmountMST)                           | Summa kirjanpitovaluuttana.            |
-|               | Myytyjen tuotteiden kustannukset                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | Kustannussumman ja oikaisun summa.    |
-|               | Provisiorivin summa – kirjanpitovaluutta | AsiakasLaskuTapahtuma                                | SUM(CommissAmountMST)                        | Provision määrä kirjanpidon valuuttana. |
+| Kokonaisuus        | Tärkeät koostemitat                   | Dynamics 365:n tietolähde | Kenttä                                        | kuvaus                                       |
+|---------------|----------------------------------------------|------------------------------|----------------------------------------------|---------------------------------------------------|
+| Laskurivit | Myyntituotto                                      | AsiakasLaskuTapahtuma             | SUM(LineAmountMST)                           | Summa kirjanpitovaluuttana.            |
+|               | Myytyjen tuotteiden kustannukset                           | InventTrans                  | SUM(CostAmountPosted + CostAmountAdjustment) | Kustannussumman ja oikaisun summa.    |
+|               | Provisiorivin summa – kirjanpitovaluutta | AsiakasLaskuTapahtuma             | SUM(CommissAmountMST)                        | Provision määrä kirjanpidon valuuttana. |
 
 Seuraavassa taulukossa on esitetty, miten laskurivi-yksikön tärkeitä koostemittoja käytetään luomaan useita laskettuja mittoja sisällön tietojoukossa.
 

@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: b9cdb2b2c2b5aaf7743cd2cd0dbfee6c602a5a46
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: d6d26da330974305fa3725fe7c2506d198b17e2c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -138,9 +138,10 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 <td>8</td>
 <td>Käyttäjä</td>
 <td>Lataa ja asenna mobiilisovellus.</td>
-<td><ul>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">Android-puhelimet</a></li>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850663">IPhone-puhelimet</a></li></ul>
+<td>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Androidin Unified Operations -sovellus</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">iOs:n Unified Operations -sovellus</a><BR/>
+(Windows Phonea ei tueta)
 </td>
 </tr>
 <tr class="odd">

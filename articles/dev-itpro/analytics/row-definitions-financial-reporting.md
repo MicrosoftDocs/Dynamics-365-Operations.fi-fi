@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ea1386bc06c0e91a2d1f23dd05794ca6ff99106a
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: c829af1da1b3109f4687c9a2536dd156339d5c76
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -32,53 +32,60 @@ ms.lasthandoff: 08/08/2018
 
 Rivin määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin rivin sisällön. Rivin määritys voidaan yhdistää sarakemääritykseen, raportointipuun määrityksiin ja raportin määrityksiin. Näin luodaan rakenneosaryhmä, jota voidaan käyttää useissa yrityksissä.
 
-<a name="create-a-row-definition"></a>Rivimäärityksen luominen
------------------------
+## <a name="create-a-row-definition"></a>Rivimäärityksen luominen
 
-1.  Valitse Report Designerin siirtymisruudussa **Rivien määritykset**.
-2.  Valitse ensin **Tiedosto**-valikossa **Uusi** ja sitten **Rivin määritys**. Lisätietoja kunkin solun sisällöstä on kohdassa [Rivin määrityksen solujen muokkaaminen](modify-row-definition-cells-financial-reporting.md).
+1. Valitse Report Designerin siirtymisruudussa **Rivien määritykset**.
+2. Valitse ensin **Tiedosto**-valikossa **Uusi** ja sitten **Rivin määritys**. Lisätietoja kunkin solun sisällöstä on kohdassa [Rivin määrityksen solujen muokkaaminen](modify-row-definition-cells-financial-reporting.md).
 
 ## <a name="open-a-row-definition"></a>Rivin määrityksen avaaminen
-1.  Valitse Report Designerin siirtymisruudussa **Rivien määritykset**.
-2.  Napsauta avattavan rivin määrityksen nimeä hiiren kakkospainikkeella.
-3.  Voit tarkastella rivin määritykseen liittyviä rakenneosia napsauttamalla rivin määritystä hiiren kakkospainikkeella ja valitsemalla **Liitokset**.
+1. Valitse Report Designerin siirtymisruudussa **Rivien määritykset**.
+2. Napsauta avattavan rivin määrityksen nimeä hiiren kakkospainikkeella.
+3. Voit tarkastella rivin määritykseen liittyviä rakenneosia napsauttamalla rivin määritystä hiiren kakkospainikkeella ja valitsemalla **Liitokset**.
 
 ## <a name="contents-of-a-row-definition"></a> Rivin määrityksen sisältö
 Rivin määritys voi sisältää enintään 20 000 taloushallinnon dimension riviä. Rivit voivat sisältää seuraavia tietoja:
 
--   Kuvaava teksti, joka lisää raporttiin merkityksiä luomalla osan otsikoita, rivejä ja välilyöntejä, kuten **Käteinen** tai **Kokonaistuotto**.
--   Linkkejä taloushallinnon tietoihin, jotka voivat sisältää Microsoft Dynamics 365 for Finance and Operations -ohjelman dimensioarvoja **Huomautus:** Voit määrittää rivin määrityksen, kun haluat noutaa tietoja taloushallinnon dimensioiden järjestelmästä aina raportin luomisen yhteydessä.
--   Linkitettyihin taloushallinnon tietoihin perustuvien rivien yhteissummat ja kaavat.
+- Kuvaava teksti, joka lisää raporttiin merkityksiä luomalla osan otsikoita, rivejä ja välilyöntejä, kuten **Käteinen** tai **Kokonaistuotto**.
+- Linkkejä taloushallinnon tietoihin, jotka voivat sisältää Microsoft Dynamics 365 for Finance and Operationsin dimensioarvoja.
+
+    > [!NOTE]
+    > Voit määrittää rivimäärityksiä, kun haluat, että tietoja noudetaan taloushallinnon dimensiojärjestelmästä aina, kun raportti luodaan.
+
+- Linkitettyihin taloushallinnon tietoihin perustuvien rivien yhteissummat ja kaavat.
 
 Yleensä jokainen rivin määrityksen rivi sisältää jonkin seuraavaksi esitellyistä tietotyypeistä.
 
--   Viitteet taloushallinnon dimensioiden järjestelmään.
--   Tietoihin perustuvat yhteissummat tai laskelmat.
--   Muotoilu
+- Viitteet taloushallinnon dimensioiden järjestelmään.
+- Tietoihin perustuvat yhteissummat tai laskelmat.
+- Muotoilu
 
 Rivi määrityksen tiedot voidaan antaa kahdella tavalla:
 
--   Anna rivin tiedot manuaalisesti uudessa rivin määrityksessä. Lisätietoja on kohdassa [Rivin määrityksen solujen muokkaaminen](modify-row-definition-cells-financial-reporting.md).
--   Hae rivitiedot Report Designerilla suoraan taloushallinnon dimensioista. Lisätietoja on artikkelin [Muokkaa rivin määrityssoluja](modify-row-definition-cells-financial-reporting.md) kohdassa Liittyvät kaavat, rivit ja yksiköt.
+- Anna rivin tiedot manuaalisesti uudessa rivin määrityksessä. Lisätietoja on kohdassa [Rivin määrityksen solujen muokkaaminen](modify-row-definition-cells-financial-reporting.md).
+- Hae rivitiedot Report Designerilla suoraan taloushallinnon dimensioista. Lisätietoja on artikkelin [Muokkaa rivin määrityssoluja](modify-row-definition-cells-financial-reporting.md) kohdassa Liittyvät kaavat, rivit ja yksiköt.
 
 ## <a name="add-dimensions-in-a-row-definition"></a> Dimensioiden lisääminen rivin määritykseen
 Dimensio on tietojen ja arvojen liitos. Voit ryhmitellä tietoja ja arvoja Report Designerissa. Voit sitten luokitella ja analysoida tapahtumia yksityiskohtaisemmin. Voit lisätä rivin määritykseen useita rivejä samanaikaisesti **Lisää rivejä dimensioista** -valintaikkunan avulla. Valintaikkunassa näkyy kunkin dimension yksi sarake. Seuraavassa taulussa kuvataan tietoja, joilla kukin dimensio määritetään.
 
-| Vaihtoehto                | Kuvaus                                                                                                                                                                                                                                                                      |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Vaihtoehto                | Kuvaus |
+|-----------------------|-------------|
 | Dimensio             | Malli, joka määrittää rivin määritykseen lisättävän dimension. Tämä malli sisältää yhden et-merkin (&) tai numeromerkin (\#) jokaista dimension sijaintia kohti. Yleensä et-merkkejä käytetään päätilin dimensioissa ja numeromerkkejä muissa dimensioissa. |
-| Dimensioalueen alku | Rivimääritykseen lisättävän dimension ensimmäinen arvo.                                                                                                                                                                                                                 |
-| Dimensioalueen loppu   | Tämän dimension viimeinen arvo, joka lisätään rivin määritykseen.                                                                                                                                                                                                                  |
+| Dimensioalueen alku | Rivimääritykseen lisättävän dimension ensimmäinen arvo. |
+| Dimensioalueen loppu   | Tämän dimension viimeinen arvo, joka lisätään rivin määritykseen. |
 
 Seuraavien vaiheiden avulla voit lisätä dimensioita rivin määritykseen.
 
-1.  Valitse Report Designerissa **Rivien määritykset** ja avaa sitten muokattava rivin määritys.
-2.  Valitse **Muokkaa** -valikosta **Lisää rivejä dimensioista**.
-3.  Valitse **Lisää rivejä dimensioista**-valintaikkunan **Dimensiot**-rivillä rivin määritykseen siirrettävä dimension solu. Valitse sitten **Kaikki &&&**.
-4.  Voit rajoittaa rivin määrityksen tiettyyn dimensioarvojen väliin antamalla **Dimensiovälin alku**-soluun dimension aloitusarvon ja **Dimensiovälin loppu** -soluun dimension lopetusarvon. Jos haluat sisällyttää kaikki valitun dimension arvot, jätä nämä solut tyhjäksi. **Huomautus:** Dimensioalueilla käytettävät yleismerkit (\* tai ?) eivät välttämättä palauta kaikkia haluttuja tuloksia sen mukaan, miten ERP-tietokanta kokoaa tiedot.
-5.  Määritä **Aloittavan rivin koodi** -kenttään ensimmäisen rivin määritykseen lisättävän dimensioarvon rivikoodi.
-6.  Määritä **Lisää kutakin riviä arvolla** -kenttään kahden peräkkäisen rivikoodin väli. Jos esimerkiksi ensimmäisen rivin koodi on 100 ja lisäysarvo on 30, ensimmäisten uusien rivien koodit ovat 100, 130, 160, 190 ja 220. Käytä lisäysarvoa, joka määrittää riittävästi tilaa uuden muotoilu- ja kaavarivien lisäämistä varten.
-7.  Napsauta **OK**. Kullekin valitulle dimensioarvolle lisätään yksi rivi rivin määritykseen.
+1. Valitse Report Designerissa **Rivien määritykset** ja avaa sitten muokattava rivin määritys.
+2. Valitse **Muokkaa** -valikosta **Lisää rivejä dimensioista**.
+3. Valitse **Lisää rivejä dimensioista**-valintaikkunan **Dimensiot**-rivillä rivin määritykseen siirrettävä dimension solu. Valitse sitten **Kaikki &&&**.
+4. Voit rajoittaa rivin määrityksen tiettyyn dimensioarvojen väliin antamalla **Dimensiovälin alku**-soluun dimension aloitusarvon ja **Dimensiovälin loppu** -soluun dimension lopetusarvon. Jos haluat sisällyttää rivimääritykseen kaikki valitun dimension arvot, jätä nämä solut tyhjiksi.
+
+    > [!NOTE]
+    > Yleismerkit (\* tai ?) dimensioalueissa eivät ehkä palauta kaikkia haluamiasi tuloksia, sillä tietojen lajittelutapa ERP-tietokannassa vaikuttaa tuloksiin.
+
+5. Määritä **Aloittavan rivin koodi** -kenttään ensimmäisen rivin määritykseen lisättävän dimensioarvon rivikoodi.
+6. Määritä **Lisää kutakin riviä arvolla** -kenttään kahden peräkkäisen rivikoodin väli. Jos esimerkiksi ensimmäisen rivin koodi on 100 ja lisäysarvo on 30, ensimmäisten uusien rivien koodit ovat 100, 130, 160, 190 ja 220. Käytä lisäysarvoa, joka määrittää riittävästi tilaa uuden muotoilu- ja kaavarivien lisäämistä varten.
+7. Napsauta **OK**. Kullekin valitulle dimensioarvolle lisätään yksi rivi rivin määritykseen.
 
 ## <a name="adjust-rounding-in-a-row-definition"></a> Pyöristyksen oikaisu rivin määrityksessä
 Jos taseessa on pyöristettyjä summia, kokonaissummat eivät ehkä täsmää. Tämä ongelma voi esiintyä esimerkiksi silloin, kun käytät taseraportissa pyöritysasetusta ja pyöristys määritetään myös raportin määrityksessä. Voit täsmätä taseen summat käyttämällä rivin määrityksessä **Pyöristyksen oikaisu** -vaihtoehtoa. Voit poistaa pyöristyksen käytöstä tai muokata sitä raportin määrityksen **Asetukset**-välilehdessä. Seuraavassa taulukossa on esitetty, miten summat pyöristetään. Rivien 100 ja 200 kokonaissummat ovat erilaiset tässä taulukossa, kun pyöristys ei ole käytössä.
@@ -91,17 +98,22 @@ Jos taseessa on pyöristettyjä summia, kokonaissummat eivät ehkä täsmää. T
 
 Voit oikaista taseen pyöristyksen seuraavasti.
 
-1.  Valitse Report Designerissa **Rivien määritykset** ja avaa muokattava rivin määritys.
-2.  Valitse **Muokkaa**-valikosta **Pyöristysoikaisu**.
-3.  Syötä **Pyöristyksen oikaisut** -valintaikkunaan seuraavat arvot:
-    -   **Pyöristyksen oikaisurivi** – Sen rivin rivikoodi, joka on oikaistava taseen täsmäyttämiseksi.
-    -   **Kaikkien käyttöomaisuuserien rivi** – Taseen kaikki käyttöomaisuuserät sisältävän rivin koodi.
-    -   **Kaikkien velkojen ja pääoman rivi** – Taseen kaikki velat ja pääoman sisältävän rivin koodi.
-    -   **Oikaisusumman raja** – Positiivinen kokonaisluku, joka määrittää automaattisten oikaisujen rajan. Tätä summaa verrataan toteutuneen pyöristyseron absoluuttiseen arvoon.
+1. Valitse Report Designerissa **Rivien määritykset** ja avaa muokattava rivin määritys.
+2. Valitse **Muokkaa**-valikosta **Pyöristysoikaisu**.
+3. Syötä **Pyöristyksen oikaisut** -valintaikkunaan seuraavat arvot:
 
-    **Huomautus:** Nämä rivin koodit on linkitettävä taloushallinnon tietoihin. Toisin sanoen rivillä on oltava dimensioarvo **Linkki taloushallinnon dimensioon** -solussa. **Älä** tee viittausta kuvauksen riviin (**DESC**), laskettuun riviin (**CALC**) tai kokonaissumman riviin (**TOT**).
+    - **Pyöristyksen oikaisurivi** – Sen rivin rivikoodi, joka on oikaistava taseen täsmäyttämiseksi.
+    - **Kaikkien käyttöomaisuuserien rivi** – Taseen kaikki käyttöomaisuuserät sisältävän rivin koodi.
+    - **Kaikkien velkojen ja pääoman rivi** – Taseen kaikki velat ja pääoman sisältävän rivin koodi.
+    - **Oikaisusumman raja** – Positiivinen kokonaisluku, joka määrittää automaattisten oikaisujen rajan. Tätä summaa verrataan toteutuneen pyöristyseron absoluuttiseen arvoon.
 
-Taseen summat täsmäytetään nyt tasaisesti, kun pyöristys on päällä. **Huomautus:** Oikaisun raja otetaan käyttöön raportin määritykselle määritetyn **Pyöristystarkkuus**-vaihtoehdon perusteella. Jos esimerkiksi pyöristät raportin tuhansiksi ja annat **Oikaisusumman raja** -kentässä arvoksi **2**, näyttöön avautuu varoitussanoma, kun **Pyöristyksen oikaisurivi** -kentän arvo nousee tai laskee enemmän kuin 2 000.
+    > [!NOTE]
+    > Nämä rivikoodit on linkitettävä taloushallinnon tietoihin. Toisin sanoen rivillä on oltava dimensioarvo **Linkki taloushallinnon dimensioihin** -solussa. **Älä** tee viittausta kuvauksen riviin (**DESC**), laskettuun riviin (**CALC**) tai kokonaissumman riviin (**TOT**).
+
+Taseen summat täsmäytetään nyt tasaisesti, kun pyöristys on päällä.
+
+> [!NOTE]
+> Oikaisun rajoitus perustuu raporttimääritykselle määritettyyn **Pyöristystarkkuus**-asetukseen. Jos esimerkiksi pyöristät raportin tuhansiksi ja annat **Oikaisusumman raja** -kentässä arvoksi **2**, näyttöön avautuu varoitussanoma, kun **Pyöristyksen oikaisurivi** -kentän arvo nousee tai laskee enemmän kuin 2 000.
 
 ## <a name="format-row-and-column-text"></a>Rivin ja sarakkeen tekstin muotoileminen
 Voit mukauttaa raporttien ulkoasua muuttamalla fontteja ja muotoilemalla tekstiä. Seuraavassa osassa kerrotaan, miten raporttien rivien ja sarakkeiden ulkoasua muotoillaan.
@@ -111,33 +123,35 @@ Voit mukauttaa raporttien ulkoasua muuttamalla fontteja ja muotoilemalla teksti�
 Voit luoda ja muokata raportin fonttityylejä. Voit sitten käyttää näitä tyylejä asiakirjassa tai raportin tietyllä rivillä tai tietyssä sarakkeessa.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <tbody>
-<tr class="odd">
-<td>Luo fonttityyli</td>
-<td><ol>
+<tr>
+<td><strong>Luo fonttityyli</strong></td>
+<td>
+<ol>
 <li>Valitse Report Designerin <strong>Muotoilu</strong>-valikosta <strong>Tyylit ja muotoilu</strong>.</li>
 <li>Valitse <strong>Tyylit ja muotoilu</strong>-valintaikkunassa <strong>Uusi</strong> ja anna sitten uudelle tyylille yksilöllinen nimi.</li>
 <li>Tee fonttia koskevat valinnat ja valitse <strong>OK</strong>.</li>
-</ol></td>
+</ol>
+</td>
 </tr>
-<tr class="even">
-<td>Fonttityylin muokkaaminen</td>
-<td><ol>
+<tr>
+<td><strong>Fonttityylin muokkaaminen</strong></td>
+<td>
+<ol>
 <li>Valitse Report Designerin <strong>Muotoilu</strong>-valikosta <strong>Tyylit ja muotoilu</strong>.</li>
 <li>Valitse muokattava tyyli <strong>Tyylit ja muotoilu</strong> -valintaikkunassa ja valitse sitten <strong>Muokkaa</strong>.</li>
 <li>Tee fonttia koskevat valinnat ja valitse <strong>OK</strong>.</li>
-</ol></td>
+</ol>
+</td>
 </tr>
-<tr class="odd">
-<td>Ota fonttityyli käyttöön</td>
-<td><ol>
+<tr>
+<td><strong>Ota fonttityyli käyttöön</strong></td>
+<td>
+<ol>
 <li>Valitse Report Designerin määrityksessä tai sarakkeen määrityksessä tai ylä- tai alatunnisteissa vähintään yksi solu.</li>
 <li>Valitse fonttityyli työkalurivin <strong>Tyyli</strong>-luettelosta.</li>
-</ol></td>
+</ol>
+</td>
 </tr>
 </tbody>
 </table>
@@ -146,9 +160,9 @@ Voit luoda ja muokata raportin fonttityylejä. Voit sitten käyttää näitä ty
 
 Rivin määrityksessä määritetty muotoilu korvaa sarakkeen ja raportin määrityksessä määritetyn muotoilun. Voit muokata tekstimuotoa muotoilun työkalurivin ohjausobjekteilla. Nämä ohjausobjektit ovat Microsoft Windowsin vakio-ohjausobjekteja.
 
-1.  Avaa Report Designer -ohjelmassa muokattava rivin määritys.
-2.  Valitse muokattavat solut. Voit valita useita soluja pitämällä Ctrl-näppäintä alhaalla valinnan aikana.
-3.  Ota muoto käyttöön valitsemalla muodon työkalurivipainike. Jos haluat esimerkiksi sisentää rivin, valitse ensin rivi ja sitten työkalurivin **Kasvata sisennystä** ![Kasvata sisennystä](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Kasvata sisennystä").
+1. Avaa Report Designer -ohjelmassa muokattava rivin määritys.
+2. Valitse muokattavat solut. Voit valita useita soluja pitämällä Ctrl-näppäintä alhaalla valinnan aikana.
+3. Ota muoto käyttöön valitsemalla muodon työkalurivipainike. Jos haluat esimerkiksi sisentää rivin, valitse ensin rivi ja sitten työkalurivin **Kasvata sisennystä** ![Kasvata sisennystä](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Kasvata sisennystä").
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Sarakkeiden oikaisu raporttien suunnittelun yhteydessä
 
@@ -156,27 +170,23 @@ Rivin määrityksen käsiteltävien sarakkeiden tarkasteleminen helpottuu oikais
 
 ### <a name="change-the-width-of-a-column-in-the-view-pane"></a>Sarakkeen leveyden muuttaminen näkymäruudussa
 
-1.  Avaa Report Designer -ohjelmassa muokattava rivin määritys.
-2.  Valitse **Muotoilu**-valikosta **Sarakkeen leveys**.
-3.  Anna **Sarakkeen leveys** -valintaikkunassa arvo ja valitse sitten **OK**. Vaihtoehtoisesti voit muuttaa sarakkeen kokoa vetämällä sarakeotsikkosolun oikeaa reunaa.
+1. Avaa Report Designer -ohjelmassa muokattava rivin määritys.
+2. Valitse **Muotoilu**-valikosta **Sarakkeen leveys**.
+3. Anna **Sarakkeen leveys** -valintaikkunassa arvo ja valitse sitten **OK**. Vaihtoehtoisesti voit muuttaa sarakkeen kokoa vetämällä sarakeotsikkosolun oikeaa reunaa.
 
 ### <a name="hide-columns-in-the-view-pane"></a>Sarakkeiden piilottaminen näkymäruudussa
 
-1.  Avaa Report Designer -ohjelmassa muokattava rivin määritys.
-2.  Valitse piilotettavat sarakkeet.
-3.  Napsauta kohdetta hiiren kakkospainikkeella ja valitse sitten **Piilota**.
+1. Avaa Report Designer -ohjelmassa muokattava rivin määritys.
+2. Valitse piilotettavat sarakkeet.
+3. Napsauta kohdetta hiiren kakkospainikkeella ja valitse sitten **Piilota**.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Kaikkien piilotettujen sarakkeiden näyttäminen näkymäruudussa
 
-1.  Avaa Report Designer -ohjelmassa muokattava rivin määritys.
-2.  Napsauta näytettävää pienennettyä saraketta hiiren kakkospainikkeella ja valitse sitten **Tuo esiin**.
+1. Avaa Report Designer -ohjelmassa muokattava rivin määritys.
+2. Napsauta näytettävää pienennettyä saraketta hiiren kakkospainikkeella ja valitse sitten **Tuo esiin**.
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
-
-
-
 

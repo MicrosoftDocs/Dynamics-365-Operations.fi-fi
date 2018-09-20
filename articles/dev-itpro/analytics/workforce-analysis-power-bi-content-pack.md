@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 17b42ae7e177a42b732654f2952ec5fe35acb1a9
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,34 +35,34 @@ Tässä ohjeaiheessa käsitellään **työvoiman mittareiden** Power BI -sisält
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 **Työvoimamittarien** Power BI -sisältö näkyy **Henkilöstön hallinta** työtilassa, jos käytät jotain näistä tuotteista:
 
-- Microsoft Dynamics 365 for Finance and Operations 
+- Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 Seuraavassa taulukossa ovat jokaisessa raportissa näkyvät mittarit.
 
-| Raportti                                           | Mittarit                                                                                                                                                                                                            |
-|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Henkilöstömittarit                                   | Muiden raporttien yhteenveto                                                                                                                           |
-| Henkilöstömäärän analyysi Yritys, Osasto, Sijainti | Yrityksen henkilöstömäärä, osaston henkilöstömäärä, sijainnin henkilöstömäärä ja henkilöstömäärä yhteensä                                                                                                                           |
-| Henkilöstömäärän analyysi Toimi, Vaihe, Esimies            | Työn henkilöstömäärä, vaiheen henkilöstömäärä, esimiehen henkilöstömäärä ja henkilöstömäärä yhteensä                                                                                                                                      |
-| Henkilöstömäärän kehityksen analyysi                         | Kuluvan vuoden yrityskohtainen henkilöstömäärä edelliseen vuoteen verrattuna ja juokseva henkilöstömäärä edellisen 12 kuukauden aikana                                                                                                                        |
+| Raportti                                           | Mittarit |
+|--------------------------------------------------|---------|
+| Henkilöstömittarit                                   | Muiden raporttien yhteenveto |
+| Henkilöstömäärän analyysi Yritys, Osasto, Sijainti | Yrityksen henkilöstömäärä, osaston henkilöstömäärä, sijainnin henkilöstömäärä ja henkilöstömäärä yhteensä |
+| Henkilöstömäärän analyysi Toimi, Vaihe, Esimies            | Työn henkilöstömäärä, vaiheen henkilöstömäärä, esimiehen henkilöstömäärä ja henkilöstömäärä yhteensä |
+| Henkilöstömäärän kehityksen analyysi                         | Kuluvan vuoden yrityskohtainen henkilöstömäärä edelliseen vuoteen verrattuna ja juokseva henkilöstömäärä edellisen 12 kuukauden aikana |
 | FTE-analyysi                                     | Kokopäiväiset työntekijät (FTE), määritetyt kokopäiväiset työntekijät yhteensä, kokopäiväiset työntekijät osastoittain, kokopäiväiset työntekijät edeltävän 12 kuukauden aikana ja kokopäiväiset työntekijät työn mukaan |
 | Työvoiman demografia                           | Henkilöstömäärä iän ja sukupuolen, etnisen taustan, veteraanitilan ja siviilisäädyn perusteella, täysiaikaisten opiskelijoiden määrä, keskimääräinen virkaikä, keskimääräinen ikä, mies- ja naistyöntekijöiden määrän suhde ja työntekijöiden puhumat kielet. |
-| Toimianalyysi                                | Avoimet toimet osastokohtaisesti, täytetyt toimet, passiiviseksi siirretyt toimet ja osastokohtaiset toimet.                                                                                                   |
-| Väsymisanalyysi                               | Väsyminen tänä vuonna vs. viime vuonna, väsyminen, lähtevien työntekijöiden ikä ja sukupuoli, lähtevien työntekijöiden keskimääräinen virka-aika, tässä kuussa lähtevät työntekijät ja lähtevien työntekijöiden poistumissyy                                                                   |
-| Henkilöt osastoittain                             | Työntekijöiden henkilöstönumerot osaston mukaan, toimi, ja tehtävän alku- ja päättymispäivämäärät                                                                                                                       |
-| Virkaikäanalyysi                               | Keskimääräinen virka-aika, työsuhteen keskimääräinen kesto ja virkaikäluettelo                                                                                                                                                              |
-| Työntekijän vuosipäivät                           | Vuosipäivät tässä kuussa, vuosipäivät ensi kuussa, työntekijät työsuhteen keston perusteella, työvuodet osastoittain                                                                                                                                                                    |
-| Työntekijöiden syntymäpäivät                               | Syntymäpäivät tässä kuussa, syntymäpäivät ensi kuussa, työntekijöiden syntymäpäivät ja syntymäpäivät kuukauden ja osaston mukaan                                                                                                                                                                    |
-| Joukkotyöhönottoprojektit                               | Joukkotyöhönottoprojekteja yhteensä, joukkotyöhönottoprojektit tilan mukaan, joukkotyöhönottoprojektit osaston ja omistajan mukaan, joukkotyöhönottoprojektit työn mukaan ja joukkotyöhönottoprojektit                                                                                                                                                                    |
+| Toimianalyysi                                | Avoimet toimet osastokohtaisesti, täytetyt toimet, passiiviseksi siirretyt toimet ja osastokohtaiset toimet. |
+| Väsymisanalyysi                               | Väsyminen tänä vuonna vs. viime vuonna, väsyminen, lähtevien työntekijöiden ikä ja sukupuoli, lähtevien työntekijöiden keskimääräinen virka-aika, tässä kuussa lähtevät työntekijät ja lähtevien työntekijöiden poistumissyy |
+| Henkilöt osastoittain                             | Työntekijöiden henkilöstönumerot osaston mukaan, toimi, ja tehtävän alku- ja päättymispäivämäärät |
+| Virkaikäanalyysi                               | Keskimääräinen virka-aika, työsuhteen keskimääräinen kesto ja virkaikäluettelo |
+| Työntekijän vuosipäivät                           | Vuosipäivät tässä kuussa, vuosipäivät ensi kuussa, työntekijät työsuhteen keston perusteella, työvuodet osastoittain |
+| Työntekijöiden syntymäpäivät                               | Syntymäpäivät tässä kuussa, syntymäpäivät ensi kuussa, työntekijöiden syntymäpäivät ja syntymäpäivät kuukauden ja osaston mukaan |
+| Joukkotyöhönottoprojektit                               | Joukkotyöhönottoprojekteja yhteensä, joukkotyöhönottoprojektit tilan mukaan, joukkotyöhönottoprojektit osaston ja omistajan mukaan, joukkotyöhönottoprojektit työn mukaan ja joukkotyöhönottoprojektit |
 
 Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa on kohdassa [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 Muista ladata käyttämääsi Microsoft Dynamics 365 -versiota vastaava **Työvoiman mittarit** – Power BI -sisältö.
 
->[!NOTE]
->Lifecycle Servicesin .pbix-tiedostot koskevat vain Finance and Operationsia.
+> [!NOTE]
+> Lifecycle Servicesin .pbix-tiedostot koskevat vain Finance and Operationsia.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 Seuraavassa taulukossa on esitetty yksiköt, joihin sisältö perustuu.
@@ -88,6 +88,4 @@ Seuraavassa taulukossa on esitetty yksiköt, joihin sisältö perustuu.
 | Työntekijätrendi           | Työntekijät ajan kuluessa, henkilöstömäärä, yritys ja toimi                                 | Yritys, maantieteellinen sijainti, työntekijän nimi, raportoinnin kohde, kalenterin vastakirjaus, päivämäärä, työntekijän nimike, demografia, työsuhde, työ |
 | Joukkotyöhönottoprojekti        | Joukkotyöhönottoprojektien lukumäärä, projektin omistaja ja projektin tila                     | Yritys, joukkotyöhönottorivi |
 | Joukkotyöhönottorivi           | Osasto, työsuhdetyyppi ja toimi                                           | Päivämäärä, työ, joukkotyöhönottoprojekti |
-
-
 

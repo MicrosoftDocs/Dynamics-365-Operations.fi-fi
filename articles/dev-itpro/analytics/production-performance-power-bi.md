@@ -17,10 +17,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: d59a7aef90ecef0cd947b833f1cce1e2372f3033
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
 ms.contentlocale: fi-fi
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -43,7 +43,7 @@ Voit myös analysoida tuotannon variansseja Power BI -sisällön avulla. Tuotann
 **Tuotannon suorituskyvyn** Power BI -sisältö sisältää tuotanto- ja erätilauksista peräisin olevia tietoja. Raporteissa ei ole kanban-tuotantoihin liittyviä tietoja.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-**Tuotannon suorituskyvyn** Power BI -sisältö näkyy **Tuotannon suorituskyky** -sivulla (**Tuotannonhallinta** > **Kyselyt ja raportit** > **Tuotannon suorituskyvyn analyysi** > **Tuotannon suorituskyky**). 
+**Tuotannon suorituskyvyn** Power BI -sisältö näkyy **Tuotannon suorituskyky** -sivulla (**Tuotannonhallinta** \> **Kyselyt ja raportit** \> **Tuotannon suorituskyvyn analyysi** \> **Tuotannon suorituskyky**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 
@@ -51,9 +51,9 @@ Voit myös analysoida tuotannon variansseja Power BI -sisällön avulla. Tuotann
 
 Seuraavassa taulukossa on sisältyvien visualisointien yhteenveto.
 
-| Raporttisivu                                | Kaaviot                                               | Ruudut |
-|--------------------------------------------|------------------------------------------------------|-------|
-| Tuotannon suorituskyky                     | <ul><li>Tuotannon määrä päivämäärän mukaan</li><li>Tuotantojen määrä tuote-ja nimikeryhmän mukaan</li><li>Suunniteltujen tuotantojen määrä päivämäärän mukaan</li><li>10 alinta tuotetta ajallaan olon ja kokonaisuuden mukaan</li></ul> | <ul><li>Tilauksia yhteensä</li><li>Ajallaan ja kokonaisuudessaan – %</li><li>Kesken – %</li><li>Etuajassa – %</li><li>Myöhässä – %</li></ul> |
+| Raporttisivu                                | Kaaviot | Ruudut |
+|--------------------------------------------|--------|-------|
+| Tuotannon suorituskyky                     | <ul><li>Tuotannon määrä päivämäärän mukaan</li><li>Tuotantojen määrä tuote-ja nimikeryhmän mukaan</li><li>Suunniteltujen tuotantojen määrä päivämäärän mukaan</li><li>10 alinta tuotetta ajallaan olon ja kokonaisuuden mukaan</li></ul> | <ul><li>Tilauksia yhteensä</li><li>Ajallaan ja kokonaisuudessaan</li><li>Kesken – %</li><li>Etuajassa – %</li><li>Myöhässä – %</li></ul> |
 | Viat tuotteen mukaan                         | <ul><li>Virheellisten osuus (ppm) päivämäärän mukaan</li><li>Virheellisten osuus (ppm) tuote- ja nimikeryhmän mukaan</li><li>Tuotettu määrä päivämäärän mukaan</li><li>10 merkittävintä tuotetta virheellisten osuuden mukaan</li></ul> | <ul><li>Virheellisten osuus (ppm)</li><li>Virheellisten määrä</li><li>Kokonaismäärä</li></ul> |
 | Viallisten trendi tuotteen mukaan                   | Viallisten osuus (ppm) tuotetun määrän mukaan | Viallisten osuus (ppm) |
 | Vialliset resurssien mukaan                        | <ul><li>Viallisten osuus (ppm) päivämäärän mukaan</li><li>Viallisten osuus (ppm) resurssin ja toimipaikan mukaan</li><li>Viallisten osuus (ppm) toimenpiteen mukaan</li><li>10 merkittävintä resurssia viallisten osuuden mukaan</li></ul> | Virheellisten määrä |
@@ -88,35 +88,35 @@ Seuraavassa taulukossa on esitetty, miten tärkeitä koostemittoja käytetään 
 
 | Mitta                  | Miten mitta on laskettu |
 |--------------------------|-------------------------------|
-| Tuotannon varianssi, %   | SUM('Tuotannon varianssi'[Tuotannon varianssi]) / SUM('Tuotannon varianssi'[Arvioitu kustannus]) |
+| Tuotannon varianssi, %   | SUM('Tuotannon varianssi'\[Tuotannon varianssi\]) / SUM('Tuotannon varianssi'\[Arvioitu kustannus\]) |
 | Kaikki suunnitellut tilaukset       | COUNTROWS('Suunniteltu tuotantotilaus') |
-| Etuajassa                    | COUNTROWS(FILTER('Suunniteltu tuotantotilaus', 'Suunniteltu tuotantotilaus'[Suunniteltu päättymispäivä] \< 'Suunniteltu tuotantotilaus'[Tarvepäivä])) |
-| Myöhässä                     | COUNTROWS(FILTER('Suunniteltu tuotantotilaus', 'Suunniteltu tuotantotilaus'[Suunniteltu päättymispäivä] \> 'Suunniteltu tuotantotilaus'[Tarvepäivä])) |
-| Ajallaan                  | COUNTROWS(FILTER('Suunniteltu tuotantotilaus', 'Suunniteltu tuotantotilaus'[Suunniteltu päättymispäivä] = 'Suunniteltu tuotantotilaus'[Tarvepäivä])) |
-| Ajallaan – %                | IF ( 'Suunniteltu tuotantotilaus'[Ajallaan] \<\> 0, 'Suunniteltu tuotantotilaus'[Ajallaan], IF ('Suunniteltu tuotantotilaus'[Kaikki suunnitellut tilaukset] \<\> 0, 0, BLANK()) ) / 'Suunniteltu tuotantotilaus'[Kaikki suunnitellut tilaukset] |
-| Päätetty                | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'[On ilmoitettu valmiiksi] = TRUE)) |
-| Virheellisten osuus (ppm)     | IF( 'Tuotantotilaus'[Kokonaismäärä] = 0, BLANK(), (SUM('Tuotantotilaus'[Virheellisten määrä]) / 'Tuotantotilaus'[Kokonaismäärä]) \* 1000000) |
-| Viivästyneen tuotannon osuus  | 'Tuotantotilaus'[Myöhässä \#] / 'Tuotantotilaus'[Valmis] |
-| Etuajassa ja kokonaisuudessaan          | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'[On kokonaisuudessaan] = TRUE && 'Tuotantotilaus'[On etuajassa] = TRUE)) |
-| Etuajassa \#                 | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'[On etuajassa] = TRUE)) |
-| Etuajassa – %                  | IFERROR( IF('Tuotantotilaus'[Etuajassa \#] \<\> 0, 'Tuotantotilaus'[Etuajassa \#], IF('Tuotantotilaus'[Tilauksia yhteensä] = 0, BLANK(), 0)) / 'Tuotantotilaus'[Tilauksia yhteensä], BLANK()) |
-| Kesken               | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'[On kokonaisuudessaan] = FALSE && 'Tuotantotilaus'[On ilmoitettu valmiiksi] = TRUE)) |
-| Kesken – %             | IFERROR( IF('Tuotantotilaus'[Kesken ] \<\> 0, 'Tuotantotilaus'[Kesken], IF('Tuotantotilaus'[Tilauksia yhteensä] = 0, BLANK(), 0)) / 'Tuotantotilaus'[Tilauksia yhteensä], BLANK()) |
-| On viivästynyt               | 'Tuotantotilaus'[On ilmoitettu valmiiksi] = TRUE && 'Tuotantotilaus'[Viivästynyt arvo] = 1 |
-| On etuajassa                 | 'Tuotantotilaus'[On ilmoitettu valmiiksi] = TRUE && 'Tuotantotilaus'[Viivästymispäivät] \< 0 |
-| On kokonaisuudessaan               | 'Tuotantotilaus'[Hyväksytty määrä] \>= 'Tuotantotilaus'[Ajoitettu määrä] |
-| On ilmoitettu valmiiksi                | 'Tuotantotilaus'[Tuotantotilauksen arvo] = 5 \|\| 'Tuotantotilaus'[Tuotantotilauksen arvo] = 7 |
-| Myöhässä ja kokonaisuudessaan           | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'[On kokonaisuudessaan] = TRUE && 'Tuotantotilaus'[On viivästynyt] = TRUE)) |
-| Myöhässä \#                  | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'[On viivästynyt] = TRUE)) |
-| Myöhässä – %                   | IFERROR( IF('Tuotantotilaus'[Myöhässä \#] \<\> 0, 'Tuotantotilaus'[Myöhässä \#], IF('Tuotantotilaus'[Tilauksia yhteensä] = 0, BLANK(), 0)) / 'Tuotantotilaus'[Tilauksia yhteensä], BLANK()) |
-| Ajallaan ja kokonaisuudessaan        | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'[On kokonaisuudessaan] = TRUE && 'Tuotantotilaus'[On viivästynyt] = FALSE && 'Tuotantotilaus'[On etuajassa] = FALSE)) |
-| Ajallaan ja kokonaisuudessaan – %      | IFERROR( IF('Tuotantotilaus'[Ajallaan ja kokonaisuudessaan] \<\> 0, 'Tuotantotilaus'[Ajallaan ja kokonaisuudessaan], IF('Tuotantotilaus'[Valmis] = 0, BLANK(), 0)) / 'Tuotantotilaus'[Valmis], BLANK()) |
+| Etuajassa                    | COUNTROWS(FILTER('Suunniteltu tuotantotilaus', 'Suunniteltu tuotantotilaus'\[Suunniteltu päättymispäivä\] \< 'Suunniteltu tuotantotilaus'\[Tarvepäivä\])) |
+| Myöhässä                     | COUNTROWS(FILTER('Suunniteltu tuotantotilaus', 'Suunniteltu tuotantotilaus'\[Suunniteltu päättymispäivä\] \> 'Suunniteltu tuotantotilaus'\[Tarvepäivä\])) |
+| Ajallaan                  | COUNTROWS(FILTER('Suunniteltu tuotantotilaus', 'Suunniteltu tuotantotilaus'\[Suunniteltu päättymispäivä\] = 'Suunniteltu tuotantotilaus'\[Tarvepäivä\])) |
+| Ajallaan – %                | IF ( 'Suunniteltu tuotantotilaus'\[Ajallaan\] \<\> 0, 'Suunniteltu tuotantotilaus'\[Ajallaan\], IF ('Suunniteltu tuotantotilaus'\[Kaikki suunnitellut tilaukset\] \<\> 0, 0, BLANK()) ) / 'Suunniteltu tuotantotilaus'\[Kaikki suunnitellut tilaukset\] |
+| Päätetty                | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'\[On ilmoitettu valmiiksi\] = TRUE)) |
+| Virheellisten osuus (ppm)     | IF( 'Tuotantotilaus'\[Kokonaismäärä\] = 0, BLANK(), (SUM('Tuotantotilaus'\[Virheellisten määrä\]) / 'Tuotantotilaus'\[Kokonaismäärä\]) \* 1000000) |
+| Viivästyneen tuotannon osuus  | 'Tuotantotilaus'\[Myöhässä \#\] / 'Tuotantotilaus'\[Valmis\] |
+| Etuajassa ja kokonaisuudessaan          | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'\[On kokonaisuudessaan\] = TRUE && 'Tuotantotilaus'\[On etuajassa\] = TRUE)) |
+| Etuajassa \#                 | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'\[On etuajassa\] = TRUE)) |
+| Etuajassa – %                  | IFERROR( IF('Tuotantotilaus'\[Etuajassa \#\] \<\> 0, 'Tuotantotilaus'\[Etuajassa \#\], IF('Tuotantotilaus'\[Tilauksia yhteensä\] = 0, BLANK(), 0)) / 'Tuotantotilaus'\[Tilauksia yhteensä\], BLANK()) |
+| Keskeneräinen               | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'\[On kokonaisuudessaan\] = FALSE && 'Tuotantotilaus'\[On ilmoitettu valmiiksi\] = TRUE)) |
+| Kesken – %             | IFERROR( IF('Tuotantotilaus'\[Kesken\] \<\> 0, 'Tuotantotilaus'\[Kesken\], IF('Tuotantotilaus'\[Tilauksia yhteensä\] = 0, BLANK(), 0)) / 'Tuotantotilaus'\[Tilauksia yhteensä\], BLANK()) |
+| On viivästynyt               | 'Tuotantotilaus'\[On ilmoitettu valmiiksi\] = TRUE && 'Tuotantotilaus'\[Viivästynyt arvo\] = 1 |
+| On etuajassa                 | 'Tuotantotilaus'\[On ilmoitettu valmiiksi\] = TRUE && 'Tuotantotilaus'\[Viivästymispäivät\] \< 0 |
+| On kokonaisuudessaan               | 'Tuotantotilaus'\[Hyväksytty määrä\] \>= 'Tuotantotilaus'\[Ajoitettu määrä\] |
+| On ilmoitettu valmiiksi                | 'Tuotantotilaus'\[Tuotantotilauksen arvo\] = 5 \|\| 'Tuotantotilaus'\[Tuotantotilauksen arvo\] = 7 |
+| Myöhässä ja kokonaisuudessaan           | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'\[On kokonaisuudessaan\] = TRUE && 'Tuotantotilaus'\[On viivästynyt\] = TRUE)) |
+| Myöhässä \#                  | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'\[On viivästynyt\] = TRUE)) |
+| Myöhässä – %                   | IFERROR( IF('Tuotantotilaus'\[Myöhässä \#\] \<\> 0, 'Tuotantotilaus'\[Myöhässä \#\], IF('Tuotantotilaus'\[Tilauksia yhteensä\] = 0, BLANK(), 0)) / 'Tuotantotilaus'\[Tilauksia yhteensä\], BLANK()) |
+| Ajallaan ja kokonaisuudessaan        | COUNTROWS(FILTER('Tuotantotilaus', 'Tuotantotilaus'\[On kokonaisuudessaan\] = TRUE && 'Tuotantotilaus'\[On viivästynyt\] = FALSE && 'Tuotantotilaus'\[On etuajassa\] = FALSE)) |
+| Ajallaan ja kokonaisuudessaan – %      | IFERROR( IF('Tuotantotilaus'\[Ajallaan ja kokonaisuudessaan\] \<\> 0, 'Tuotantotilaus'\[Ajallaan ja kokonaisuudessaan\], IF('Tuotantotilaus'\[Valmis\] = 0, BLANK(), 0)) / 'Tuotantotilaus'\[Valmis\], BLANK()) |
 | Tilauksia yhteensä             | COUNTROWS('Tuotantotilaus') |
-| Kokonaismäärä           | SUM('Tuotantotilaus'[Hyväksytty määrä]) +('Tuotantotilaus'[Viallinen määrä]) |
-| Viallisten osuus (ppm)        | IF( 'Reititystapahtumat'[Käsitelty määrä] = 0, BLANK(), (SUM('Reititystapahtumat'[Viallinen määrä]) / 'Reititystapahtumat'[Käsitelty määrä]) \* 1000000) |
-| Yhdistetty virheellisten osuus (ppm) | IF( 'Reititystapahtumat'[Yhdistetty kokonaismäärä] = 0, BLANK(), (SUM('Reititystapahtumat'[Viallinen määrä]) / 'Reititystapahtumat'[Yhdistetty kokonaismäärä]) \* 1000000) |
-| Käsitelty määrä       | SUM('Reititystapahtumat'[Hyväksytty määrä]) + SUM('Reititystapahtumat'[Viallisten määrä]) |
-| Yhdistetty kokonaismäärä     | SUM('Tuotantotilaus'[Hyväksytty määrä]) + SUM('Reititystapahtumat'[Viallisten määrä]) |
+| Kokonaismäärä           | SUM('Tuotantotilaus'\[Hyväksytty määrä\]) +('Tuotantotilaus'\[Viallinen määrä\]) |
+| Viallisten osuus (ppm)        | IF( 'Reititystapahtumat'\[Käsitelty määrä\] = 0, BLANK(), (SUM('Reititystapahtumat'\[Viallinen määrä\]) / 'Reititystapahtumat'\[Käsitelty määrä\]) \* 1000000) |
+| Yhdistetty virheellisten osuus (ppm) | IF( 'Reititystapahtumat'\[Yhdistetty kokonaismäärä\] = 0, BLANK(), (SUM('Reititystapahtumat'\[Viallinen määrä\]) / 'Reititystapahtumat'\[Yhdistetty kokonaismäärä\]) \* 1000000) |
+| Käsitelty määrä       | SUM('Reititystapahtumat'\[Hyväksytty määrä\]) + SUM('Reititystapahtumat'\[Viallisten määrä\]) |
+| Yhdistetty kokonaismäärä     | SUM('Tuotantotilaus'\[Hyväksytty määrä\]) + SUM('Reititystapahtumat'\[Viallisten määrä\]) |
 
 Seuraavassa taulukossa on tärkeimmät koostemittojen osittamisen suodattimina käytetyt dimensiot, joiden avulla saavutetaan suurempi rakeisuus ja paremmat analyysitiedot.
 
@@ -130,6 +130,4 @@ Seuraavassa taulukossa on tärkeimmät koostemittojen osittamisen suodattimina k
 | Yksiköt                  | Tunnus ja nimi                                                   |
 | Resurssit                 | Resurssin tunnus, resurssin nimi, resurssin tyyppi ja resurssiryhmä |
 | Tuotteet                  | Tuotenumero, tuotteen nimi, nimiketunnus ja nimikeryhmä         |
-
-
 

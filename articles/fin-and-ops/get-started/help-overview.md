@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -74,7 +74,7 @@ Voit etsiä sisältöä myös millä tahansa hakukoneella. Haku tuottaa parhaat 
 Finance and Operations-, Retail- ja Talent-sovelluksella on sama sisällysluettelo, jonka avulla asiakkaat näkevät käyttämänsä ohjeaiheen kontekstin. Voit etsiä ohjeaiheita myös sisällysluettelon yläpuolella olevan suodatustoiminnon avulla.
 
 ### <a name="follow-a-topic"></a>Noudata ohjeaihetta
-Voit seurata ohjeaihetta valitsemalla kommenttiruudun alla olevan +Seuraa-painikkeen. Käyttäjän on kirjauduttava, jotta ohjeaiheen seuraaminen onnistuu. Lisätietoja on kohdassa [Jätä kommentti](#leave-us-a-comment).  
+Voit seurata ohjeaihetta valitsemalla kommenttiruudun alla olevan +Seuraa-painikkeen. Käyttäjän on kirjauduttava, jotta ohjeaiheen seuraaminen onnistuu. Lisätietoja on kohdassa [Jätä palautetta](#leave-us-feedback).  
 
 ### <a name="use-an-rss-feed"></a>Käytä RSS-syötettä
 Jos haluat tilata RSS-syötteen kaikista Unified Operations -sisällön päivityksistä, käytä seuraavaa linkkiä RSS-syötteitä tukevassa selaimessa, kuten Internet Explorer, tai RSS-syötehallintaa: 
