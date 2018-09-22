@@ -1,9 +1,9 @@
 --- 
-title: Luo tekstimuotoinen lasku
-description: "Tässä artikkelissa näytetään miten tekstimuotoinen myyntilasku luodaan."
+title: Luo vapaatekstilaskut
+description: "Tässä ohjeaiheessa käsitellään vapaatekstilaskuja."
 author: mikefalkner
 manager: AnnBe
-ms.date: 05/29/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,64 +13,77 @@ ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: mfalkner
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-08-30
+ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: e6f89a6d77ff8e1cd88632df0d9a72915086ee1e
+ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
+ms.openlocfilehash: f6ee6fda0b52b8af7c253b7d22e470345a8a421f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/05/2018
 
 ---
 
-# <a name="create-a-free-text-invoice"></a><span data-ttu-id="2c8c2-103">Luo tekstimuotoinen lasku</span><span class="sxs-lookup"><span data-stu-id="2c8c2-103">Create a free text invoice</span></span>
+# <a name="create-free-text-invoices"></a><span data-ttu-id="540cc-103">Luo vapaatekstilaskut</span><span class="sxs-lookup"><span data-stu-id="540cc-103">Create free text invoices</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="2c8c2-104">Tässä artikkelissa näytetään miten tekstimuotoinen myyntilasku luodaan.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-104">This article demonstrates how to create a free text invoice.</span></span> <span data-ttu-id="2c8c2-105">Tässä menettelyssä käytetään USMF-demoyritystä.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-105">For this procedure, use the USMF demo company.</span></span>
+<span data-ttu-id="540cc-104">Tässä ohjeaiheessa käsitellään vapaatekstilaskuja.</span><span class="sxs-lookup"><span data-stu-id="540cc-104">This topic explains how to create free text invoices.</span></span> <span data-ttu-id="540cc-105">Tässä menettelyssä käytetään **USMF**-demoyritystä.</span><span class="sxs-lookup"><span data-stu-id="540cc-105">For the procedure, use the **USMF** demo company.</span></span>
 
-## <a name="create-a-free-text-invoice"></a><span data-ttu-id="2c8c2-106">Luo tekstimuotoinen lasku</span><span class="sxs-lookup"><span data-stu-id="2c8c2-106">Create a free text invoice</span></span>
+## <a name="create-a-free-text-invoice"></a><span data-ttu-id="540cc-106">Luo tekstimuotoinen lasku</span><span class="sxs-lookup"><span data-stu-id="540cc-106">Create a free text invoice</span></span>
 
-1. <span data-ttu-id="2c8c2-107">Siirry kohtaan Myyntireskontra > Laskut > Kaikki vapaatekstilaskut.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-107">Go to Accounts receivable > Invoices > All free text invoices.</span></span>
-2. <span data-ttu-id="2c8c2-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-108">Click New.</span></span>
-3. <span data-ttu-id="2c8c2-109">Valitse arvo Asiakastili-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-109">In the Customer account field, select a value.</span></span>
-    * <span data-ttu-id="2c8c2-110">Laskutustili on oletusarvoisesti sama kuin asiakastili.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-110">The invoice account will default to the same account used for the customer account.</span></span>   
-    * <span data-ttu-id="2c8c2-111">Kirjanpidon tila alkaa Käsittelyssä-tilasta, jos laskua ei ole kirjattu.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-111">The accounting status starts with In process if the invoice is not posted.</span></span>   
-    * <span data-ttu-id="2c8c2-112">Laskunumero liitetään, kun lasku on kirjattu.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-112">The invoice number will be assigned when the invoice is posted.</span></span>  
-    * <span data-ttu-id="2c8c2-113">Kun käytössä ovat SEPA-valtakirjat, suoraveloitusvaltakirja täytetään automaattisesti asiakastilin valinnan yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-113">If you are using SEPA mandates, the direct debit mandate will be automatically populated with a mandate when you select the customer account.</span></span>  
-4. <span data-ttu-id="2c8c2-114">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-114">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="2c8c2-115">Määritä Päätili-kenttään tilinumero ilman dimensioita.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-115">In the Main account field, specify an account number without dimensions.</span></span>
-    * <span data-ttu-id="2c8c2-116">Voit myös syöttää päätilille yhden tai useamman merkin ja käyttää valintaa etsiessäsi tiliä.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-116">You can also enter one or more characters for the main account and use the lookup to find your account.</span></span> <span data-ttu-id="2c8c2-117">Dimensiot syötetään myöhemmin.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-117">You will enter dimensions later on in this guide.</span></span>  
-6. <span data-ttu-id="2c8c2-118">Laajenna Rivin tiedot -pikavälilehti niin, että voit lisätä päätilille dimensioita.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-118">Expand the Line details fasttab so you can add dimensions to your main account.</span></span>
-7. <span data-ttu-id="2c8c2-119">Valitse Taloushallinnon dimensiot -välilehti.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-119">Click the Financial dimensions line tab.</span></span>
-    * <span data-ttu-id="2c8c2-120">Dimensiot kuuluvat vain valitulle riville.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-120">The dimensions are for the selected line only.</span></span>    
-    * <span data-ttu-id="2c8c2-121">Arvonlisäveroryhmän tiedot täytetään asiakkaan tiedoilla.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-121">The sales tax group is populated from the customer.</span></span> <span data-ttu-id="2c8c2-122">Jos asiakkaalla ei ole arvonlisäveroryhmää, käytetään päätilin arvonlisäveroryhmää.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-122">If the customer does not have a sales tax group, the sales tax group from the main account is used.</span></span>  
-    * <span data-ttu-id="2c8c2-123">Nimikkeiden arvonlisäveroryhmän tiedot täytetään päätilin tiedoilla.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-123">The items sales tax group is populated from the main account.</span></span> <span data-ttu-id="2c8c2-124">Jos päätilillä ei ole nimikkeen arvonlisäveroryhmää, käytetään kirjanpidon arvolisäveroparametrin nimikkeen arvonlisäveroryhmää.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-124">If the main account does not have an item sales tax group, then the item sales tax group in the General ledger sales tax parameters is used.</span></span>    
-8. <span data-ttu-id="2c8c2-125">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-125">In the Quantity field, enter a number.</span></span>
-    * <span data-ttu-id="2c8c2-126">Määrä on valinnainen tieto.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-126">The quantity is optional.</span></span>  
-9. <span data-ttu-id="2c8c2-127">Syötä Yksikköhinta-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-127">In the Unit price field, enter a number.</span></span>
-    * <span data-ttu-id="2c8c2-128">Yksikköhinta on valinnainen tieto.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-128">The unit price is optional.</span></span>  
-    * <span data-ttu-id="2c8c2-129">Summa lasketaan kertomalla määrä yksikköhinnalla.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-129">The amount is calculated as the quantity times the unit price.</span></span> <span data-ttu-id="2c8c2-130">Voit kuitenkin ohittaa laskennan ja syöttää summan.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-130">However, you can override that calculation and enter an amount.</span></span>  
-10. <span data-ttu-id="2c8c2-131">Tarkastele laskulle laskettua arvonlisäveroa valitsemalla Arvonlisävero.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-131">Click on Sales tax to view the sales tax calculated for your invoice.</span></span>
-    * <span data-ttu-id="2c8c2-132">Voit tarkastella tämän sivun arvonlisäverosummia tai korvata summat Oikaisu-välilehdessä.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-132">View the sales tax amounts in this page or you can override the amounts on the Adjustment tab.</span></span>  
-11. <span data-ttu-id="2c8c2-133">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-133">Click OK.</span></span>
-12. <span data-ttu-id="2c8c2-134">Lisää laskuun kulu valitsemalla Kulut.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-134">Click Charges to add a charge to your invoice.</span></span> 
-13. <span data-ttu-id="2c8c2-135">Kirjoita Kulujen koodi -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-135">In the Charges code field, type a value.</span></span>
-14. <span data-ttu-id="2c8c2-136">Syötä Kulujen arvo -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-136">In the Charges value field, enter a number.</span></span>
-15. <span data-ttu-id="2c8c2-137">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-137">Close the page.</span></span>
-16. <span data-ttu-id="2c8c2-138">Tarkastele yhteenvetolaskun tietoja ja summia valitsemalla Summat.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-138">Click Totals to view the summary invoice details and totals.</span></span>
-17. <span data-ttu-id="2c8c2-139">Valitse Sulje.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-139">Click Close.</span></span>
-18. <span data-ttu-id="2c8c2-140">Kirjaa lasku valitsemalla Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-140">Click Post to post the invoice.</span></span> <span data-ttu-id="2c8c2-141">Voit peruuttaa toiminnon ennen kirjaamista.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-141">You will be able to cancel before you post.</span></span>
-    * <span data-ttu-id="2c8c2-142">Voit muuttaa laskun tulostamisen aikataulua seuraavasti: Tulosta kukin lasku päivityksen yhteydessä valitsemalla Nykyinen, tai tulosta vasta kaikkien laskujen päivityksen jälkeen valitsemalla Jälkeen.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-142">To change the timing of your invoice printing:  Select Current to print each invoice as it is updated   or  Select After to print after all invoices have been updated.</span></span>  
-    * <span data-ttu-id="2c8c2-143">Jos haluat muuttaa asiakkaan luottorajan ennen kirjaamista tapahtuvaa tarkistustapaa, muuta luottorajatyyppiä.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-143">If you want to change how the customer's credit limit is checked before posting, change the Credit limit type.</span></span>  
-    * <span data-ttu-id="2c8c2-144">Jos haluat tulostaa laskun, valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-144">If you want to print the invoice, select Yes.</span></span>  
-    * <span data-ttu-id="2c8c2-145">Jos haluat kirjata laskun, valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-145">If you want to post the invoice, select Yes.</span></span> <span data-ttu-id="2c8c2-146">Voit tulostaa laskun ilman kirjaamista.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-146">You can print the invoice without posting.</span></span>  
-19. <span data-ttu-id="2c8c2-147">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-147">Click OK.</span></span>
+1. <span data-ttu-id="540cc-107">Siirry kohtaan **Myyntireskontra \> Laskut \> Kaikki vapaatekstilaskut**.</span><span class="sxs-lookup"><span data-stu-id="540cc-107">Go to **Accounts receivable \> Invoices \> All free text invoices**.</span></span>
+2. <span data-ttu-id="540cc-108">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="540cc-108">Select **New**.</span></span>
+3. <span data-ttu-id="540cc-109">Valitse arvo **Asiakastili**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="540cc-109">In the **Customer account** field, select a value.</span></span>
 
-## <a name="copy-lines"></a><span data-ttu-id="2c8c2-148">Kopioi rivit</span><span class="sxs-lookup"><span data-stu-id="2c8c2-148">Copy lines</span></span>
-<span data-ttu-id="2c8c2-149">Valitse vähintään yksi rivi vapaatekstilaskun riveille ja valitse Kopioi valitut rivit.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-149">To copy lines on the free text invoice, select one or more lines and then click Copy selected lines.</span></span> <span data-ttu-id="2c8c2-150">Voit määrittää montako kopiota haluat tehdä ja myös kopioida ilmoituksia ja liitteitä.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-150">You can specify the number of copies that you want to make, and you can also copy notes and attachments.</span></span> <span data-ttu-id="2c8c2-151">Voit kopioida jakoja tai sallia niiden uudelleenluonnin, kun kirjaat.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-151">You can copy the distributions or allow them to be recreated when you post.</span></span> <span data-ttu-id="2c8c2-152">Kun kopioit rivejä, voit muokata tietoja tarpeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-152">Once you copy the lines, you can edit the information as needed.</span></span> 
+    * <span data-ttu-id="540cc-110">Asiakastiliksi valittua tiliä käytetään oletusarvoisesti laskutustilinä.</span><span class="sxs-lookup"><span data-stu-id="540cc-110">By default, the account that is selected as the customer account is used as the invoice account.</span></span>
+    * <span data-ttu-id="540cc-111">Jos laskua ei ole kirjattu, kirjanpidon tila alkaa **Käsittelyssä**-tilasta.</span><span class="sxs-lookup"><span data-stu-id="540cc-111">If the invoice isn't posted, the accounting status starts with **In process**.</span></span>
+    * <span data-ttu-id="540cc-112">Laskunumero liitetään, kun lasku on kirjattu.</span><span class="sxs-lookup"><span data-stu-id="540cc-112">The invoice number will be assigned when the invoice is posted.</span></span>
+    * <span data-ttu-id="540cc-113">Kun käytössä on SEPA-valtakirjat, suoraveloitusvaltakirja annetaan automaattisesti asiakastilin valinnan yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="540cc-113">If you're using Single Euro Payments Area (SEPA) mandates, the direct debit mandate is automatically entered when you select the customer account.</span></span>
 
-## <a name="create-a-free-text-invoice-from-a-template"></a><span data-ttu-id="2c8c2-153">Luo vapaatekstilasku mallin mukaan</span><span class="sxs-lookup"><span data-stu-id="2c8c2-153">Create a free text invoice from a template</span></span>
-<span data-ttu-id="2c8c2-154">Voit luoda vapaatekstilaskun mallin mukaan.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-154">You can create a free text invoice from a template.</span></span> <span data-ttu-id="2c8c2-155">Kun valitset Uusi Lasku-välilehden templaateista, voit valita templaatin nimen ja uuden tekstimuotoisen laskun asiakastilin.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-155">When you select New from template from the Invoice tab, you can select a template name and the customer account for the new free text invoice.</span></span> <span data-ttu-id="2c8c2-156">Voit valita oletusarvot, kuten maksuehdot ja maksutapa asiakkaan mukaan tai arvoja, jotka on tallennettu malliin.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-156">You can also choose to default values such as the terms of payment and method of payment from the customer or use the values that were saved with the template.</span></span> <span data-ttu-id="2c8c2-157">Uusi vapaatekstilasku luodaan ja voit muokata tämän laskun arvoja.</span><span class="sxs-lookup"><span data-stu-id="2c8c2-157">A new free text invoice will be created and you can edit the values in that invoice.</span></span> 
+4. <span data-ttu-id="540cc-114">Anna arvo **Kuvaus**-kentässä.</span><span class="sxs-lookup"><span data-stu-id="540cc-114">In the **Description** field, enter a value.</span></span>
+5. <span data-ttu-id="540cc-115">Määritä **Päätili**-kenttään tilinumero, jolla ei ole dimensioita.</span><span class="sxs-lookup"><span data-stu-id="540cc-115">In the **Main account** field, specify an account number that doesn't have dimensions.</span></span> <span data-ttu-id="540cc-116">Dimensioiden antaminen käsitellään myöhemmin tässä ohjeaiheessa.</span><span class="sxs-lookup"><span data-stu-id="540cc-116">You will enter dimensions later in this topic.</span></span>
 
+    <span data-ttu-id="540cc-117">Voit kirjoittaa myös vähintään yhden päätilin merkin ja käyttää valintaa etsiessäsi tiliä.</span><span class="sxs-lookup"><span data-stu-id="540cc-117">You can also enter one or more characters for the main account, and use the lookup to find the account.</span></span>
+
+6. <span data-ttu-id="540cc-118">Lisää dimensiot päätiliin valitsemalla **Rivin tiedot** -pikavälilehti.</span><span class="sxs-lookup"><span data-stu-id="540cc-118">Select the **Line details** FastTab to add dimensions to the main account.</span></span>
+7. <span data-ttu-id="540cc-119">Valitse **Taloushallinnon dimensiot** -välilehti.</span><span class="sxs-lookup"><span data-stu-id="540cc-119">Select the **Financial dimensions line** tab.</span></span>
+
+    * <span data-ttu-id="540cc-120">Dimensiot kuuluvat vain valitulle riville.</span><span class="sxs-lookup"><span data-stu-id="540cc-120">The dimensions are for the selected line only.</span></span>
+    * <span data-ttu-id="540cc-121">Arvonlisäveroryhmä täytetään asiakkaan tiedoista.</span><span class="sxs-lookup"><span data-stu-id="540cc-121">The sales tax group is filled in from the customer.</span></span> <span data-ttu-id="540cc-122">Jos asiakkaalla ei ole arvonlisäveroryhmää, käytetään päätilin arvonlisäveroryhmää.</span><span class="sxs-lookup"><span data-stu-id="540cc-122">If the customer doesn't have a sales tax group, the sales tax group from the main account is used.</span></span>
+    * <span data-ttu-id="540cc-123">Nimikkeiden arvonlisäveroryhmän tiedot täytetään päätilin tiedoilla.</span><span class="sxs-lookup"><span data-stu-id="540cc-123">The items sales tax group is filled in from the main account.</span></span> <span data-ttu-id="540cc-124">Jos päätilillä ei ole nimikkeen arvonlisäveroryhmää, käytetään sitä nimikkeen arvonlisäveroryhmää, joka on määritetty kirjanpidon arvolisäveroparametreissa.</span><span class="sxs-lookup"><span data-stu-id="540cc-124">If the main account doesn't have an item sales tax group, the item sales tax group that is specified in the sales tax parameters in General ledger is used.</span></span>
+
+8. <span data-ttu-id="540cc-125">Valinnainen: Anna luku **Määrä**-kentässä.</span><span class="sxs-lookup"><span data-stu-id="540cc-125">Optional: In the **Quantity** field, enter a number.</span></span>
+9. <span data-ttu-id="540cc-126">Valinnainen: Anna luku **Yksikköhinta**-kentässä.</span><span class="sxs-lookup"><span data-stu-id="540cc-126">Optional: In the **Unit price** field, enter a number.</span></span>
+
+    <span data-ttu-id="540cc-127">Summa lasketaan kertomalla määrä yksikköhinnalla.</span><span class="sxs-lookup"><span data-stu-id="540cc-127">The amount is calculated as the quantity times the unit price.</span></span> <span data-ttu-id="540cc-128">Voit kuitenkin ohittaa laskennan ja antaa summan.</span><span class="sxs-lookup"><span data-stu-id="540cc-128">However, you can override that calculation by entering an amount.</span></span>
+
+10. <span data-ttu-id="540cc-129">Tarkastele laskulle laskettua arvonlisäveroa valitsemalla **Arvonlisävero**.</span><span class="sxs-lookup"><span data-stu-id="540cc-129">Select **Sales tax** to view the sales tax that is calculated for the invoice.</span></span>
+
+    <span data-ttu-id="540cc-130">Voit tarkastella tämän sivun arvonlisäverosummia tai korvata summat **Oikaisu**-välilehdessä.</span><span class="sxs-lookup"><span data-stu-id="540cc-130">You can view the sales tax amounts on this page, or you can override the amounts on the **Adjustment** tab.</span></span>
+
+11. <span data-ttu-id="540cc-131">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="540cc-131">Select **OK**.</span></span>
+12. <span data-ttu-id="540cc-132">Lisää laskuun kulu valitsemalla **Kulut**.</span><span class="sxs-lookup"><span data-stu-id="540cc-132">Select **Charges** to add a charge to the invoice.</span></span>
+13. <span data-ttu-id="540cc-133">Kirjoita **Kulujen koodi** -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="540cc-133">In the **Charges code** field, enter a value.</span></span>
+14. <span data-ttu-id="540cc-134">Kirjoita **Kulujen arvo** -kenttään luku.</span><span class="sxs-lookup"><span data-stu-id="540cc-134">In the **Charges value** field, enter a number.</span></span>
+15. <span data-ttu-id="540cc-135">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="540cc-135">Close the page.</span></span>
+16. <span data-ttu-id="540cc-136">Tarkastele yhteenvetolaskun tietoja ja summia valitsemalla **Summat**.</span><span class="sxs-lookup"><span data-stu-id="540cc-136">Select **Totals** to view a summary of the invoice details and totals.</span></span>
+17. <span data-ttu-id="540cc-137">Valitse **Sulje**.</span><span class="sxs-lookup"><span data-stu-id="540cc-137">Select **Close**.</span></span>
+18. <span data-ttu-id="540cc-138">Kirjaa lasku valitsemalla **Kirjaa**.</span><span class="sxs-lookup"><span data-stu-id="540cc-138">Select **Post** to post the invoice.</span></span> <span data-ttu-id="540cc-139">Peruutus on edelleen mahdollista ennen varsinaista kirjausta.</span><span class="sxs-lookup"><span data-stu-id="540cc-139">You will still have an opportunity to cancel before you actually post.</span></span>
+
+    * <span data-ttu-id="540cc-140">Voit muuttaa laskun tulostamisen aikataulua.</span><span class="sxs-lookup"><span data-stu-id="540cc-140">You can change the timing of invoice printing.</span></span> <span data-ttu-id="540cc-141">Tulosta kukin lasku päivityksen yhteydessä valitsemalla **Nykyinen**.</span><span class="sxs-lookup"><span data-stu-id="540cc-141">Select **Current** to print each invoice as it's updated.</span></span> <span data-ttu-id="540cc-142">Tulosta vasta kaikkien laskujen päivityksen jälkeen valitsemalla **Jälkeen**.</span><span class="sxs-lookup"><span data-stu-id="540cc-142">Select **After** to print after all invoices have been updated.</span></span>
+    * <span data-ttu-id="540cc-143">Voit muuttaa tapaa, jolla asiakkaan luottoraja tarkistetaan ennen laskun kirjausta, muuttamalla **Luottorajatyyppi**-kentän arvon.</span><span class="sxs-lookup"><span data-stu-id="540cc-143">To change how the customer's credit limit is verified before the invoice is posted, change the value in the **Credit limit type** field.</span></span>
+    * <span data-ttu-id="540cc-144">Voit tulostaa laskun, jos valitset **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="540cc-144">To print the invoice, set the option to **Yes**.</span></span>
+    * <span data-ttu-id="540cc-145">Voit kirjata laskun, jos valitset **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="540cc-145">To post the invoice, set the option to **Yes**.</span></span> <span data-ttu-id="540cc-146">Voit tulostaa laskun ilman, että se kirjataan.</span><span class="sxs-lookup"><span data-stu-id="540cc-146">You can print the invoice without posting it.</span></span>
+
+19. <span data-ttu-id="540cc-147">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="540cc-147">Select **OK**.</span></span>
+
+## <a name="copy-lines"></a><span data-ttu-id="540cc-148">Kopioi rivit</span><span class="sxs-lookup"><span data-stu-id="540cc-148">Copy lines</span></span>
+<span data-ttu-id="540cc-149">Valitse vähintään yksi rivi vapaatekstilaskun riveille ja valitse sitten **Kopioi valitut rivit**.</span><span class="sxs-lookup"><span data-stu-id="540cc-149">To copy lines on a free text invoice, select one or more lines, and then select **Copy selected lines**.</span></span> <span data-ttu-id="540cc-150">Voit määrittää kopioiden määrän. Voit kopioida ilmoituksia ja liitteitä.</span><span class="sxs-lookup"><span data-stu-id="540cc-150">You can specify the number of copies to make, and you can also copy notes and attachments.</span></span> <span data-ttu-id="540cc-151">Voit joko kopioida jakelun tai sallia niiden uudelleenluonnin kirjauksen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="540cc-151">You can either copy the distributions or let them be re-created when you post.</span></span>
+
+<span data-ttu-id="540cc-152">Kun olet kopioinut rivit, voit muokata tietoja tarpeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="540cc-152">After you copy lines, you can edit the information as you require.</span></span>
+
+## <a name="create-a-free-text-invoice-from-a-template"></a><span data-ttu-id="540cc-153">Luo vapaatekstilasku mallin mukaan</span><span class="sxs-lookup"><span data-stu-id="540cc-153">Create a free text invoice from a template</span></span>
+<span data-ttu-id="540cc-154">Voit luoda vapaatekstilaskun mallin mukaan.</span><span class="sxs-lookup"><span data-stu-id="540cc-154">You can create a free text invoice from a template.</span></span> <span data-ttu-id="540cc-155">Kun valitset **Uusi mallista** **Lasku**-välilehdessä, voit valita mallin nimen ja uuden tekstimuotoisen laskun asiakastilin.</span><span class="sxs-lookup"><span data-stu-id="540cc-155">When you select **New from template** on the **Invoice** tab, you can select a template name and the customer account for the new free text invoice.</span></span> <span data-ttu-id="540cc-156">Oletusarvot, kuten maksuehdot ja maksutapa, voidaan automaattisesti täyttää asiakkaan tiedoista, tai voit käyttää arvoja, jotka on tallennettu malliin.</span><span class="sxs-lookup"><span data-stu-id="540cc-156">Default values, such as the terms of payment and method of payment, can be automatically filled in from the customer, or you can use the values that were saved in the template.</span></span>
+
+<span data-ttu-id="540cc-157">Uusi vapaatekstilasku luodaan ja voit muokata sen arvoja tarpeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="540cc-157">A new free text invoice is created, and you can edit the values as you require.</span></span>
 

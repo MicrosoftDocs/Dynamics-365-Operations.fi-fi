@@ -19,88 +19,83 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 3e12037f14e7e01764fd6d18f52854c35a09d196
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: ae2087cf142fc2670bda3c542b336f12978178a6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
-# <a name="financial-reporting"></a><span data-ttu-id="0e0ab-104">Taloushallinnon raportointi</span><span class="sxs-lookup"><span data-stu-id="0e0ab-104">Financial reporting</span></span>
+# <a name="financial-reporting"></a><span data-ttu-id="3de6c-104">Taloushallinnon raportointi</span><span class="sxs-lookup"><span data-stu-id="3de6c-104">Financial reporting</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0e0ab-105">Finance and Operationsin talousraportoinnin avulla rahoitus- ja liiketoiminta-asiantuntijat voivat luoda ja ylläpitää raportteja sekä ottaa niitä käyttöön ja tarkastella niitä.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-105">Financial reporting for Finance and Operations allows financial and business professionals to create, maintain, deploy, and view financial statements.</span></span> <span data-ttu-id="0e0ab-106">Koska perinteisen raportoinnin rajoitukset eivät päde, voit suunnitella tehokkaasti erilaisia raportteja.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-106">It moves beyond traditional reporting constraints to help you efficiently design various types of reports.</span></span>
+<span data-ttu-id="3de6c-105">Finance and Operationsin talousraportoinnin avulla rahoitus- ja liiketoiminta-asiantuntijat voivat luoda ja ylläpitää raportteja sekä ottaa niitä käyttöön ja tarkastella niitä.</span><span class="sxs-lookup"><span data-stu-id="3de6c-105">Financial reporting for Finance and Operations allows financial and business professionals to create, maintain, deploy, and view financial statements.</span></span> <span data-ttu-id="3de6c-106">Koska perinteisen raportoinnin rajoitukset eivät päde, voit suunnitella tehokkaasti erilaisia raportteja.</span><span class="sxs-lookup"><span data-stu-id="3de6c-106">It moves beyond traditional reporting constraints to help you efficiently design various types of reports.</span></span>
 
-<span data-ttu-id="0e0ab-107">Dimensiotuki sisältyy talousraportointiin.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-107">Financial reporting includes dimension support.</span></span> <span data-ttu-id="0e0ab-108">Niinpä tilisegmentit tai -dimensiot ovat heti käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-108">Therefore, account segments or dimensions are immediately available.</span></span> <span data-ttu-id="0e0ab-109">Lisätyökaluja tai -määrityksiä ei tarvita.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-109">No additional tools or configuration steps are required.</span></span>
+<span data-ttu-id="3de6c-107">Dimensiotuki sisältyy talousraportointiin.</span><span class="sxs-lookup"><span data-stu-id="3de6c-107">Financial reporting includes dimension support.</span></span> <span data-ttu-id="3de6c-108">Niinpä tilisegmentit tai -dimensiot ovat heti käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="3de6c-108">Therefore, account segments or dimensions are immediately available.</span></span> <span data-ttu-id="3de6c-109">Lisätyökaluja tai -määrityksiä ei tarvita.</span><span class="sxs-lookup"><span data-stu-id="3de6c-109">No additional tools or configuration steps are required.</span></span>
 
-## <a name="financial-reporting-setup"></a><span data-ttu-id="0e0ab-110">Taloushallinnon raportoinnin asetukset</span><span class="sxs-lookup"><span data-stu-id="0e0ab-110">Financial reporting setup</span></span>
-<span data-ttu-id="0e0ab-111">**Taloushallinnon raportoinnin asetukset** -sivulla on järjestelmän kaikkien taloushallinnon dimensioiden luettelo.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-111">The **Financial reporting setup** page has a list of all financial dimensions in the system.</span></span> <span data-ttu-id="0e0ab-112">**Kirjanpito** > **Kirjanpidon asetukset** > **Taloushallinnon raportoinnin asetukset**.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-112">**General ledger** > **Ledger setup** > **Financial reporting setup**.</span></span> 
+## <a name="financial-reporting-setup"></a><span data-ttu-id="3de6c-110">Taloushallinnon raportoinnin asetukset</span><span class="sxs-lookup"><span data-stu-id="3de6c-110">Financial reporting setup</span></span>
+<span data-ttu-id="3de6c-111">**Taloushallinnon raportoinnin asetukset** -sivulla on järjestelmän kaikkien taloushallinnon dimensioiden luettelo.</span><span class="sxs-lookup"><span data-stu-id="3de6c-111">The **Financial reporting setup** page has a list of all financial dimensions in the system.</span></span> <span data-ttu-id="3de6c-112">**Kirjanpito** \> **Kirjanpidon asetukset** \> **Taloushallinnon raportoinnin asetukset**.</span><span class="sxs-lookup"><span data-stu-id="3de6c-112">**General ledger** \> **Ledger setup** \> **Financial reporting setup**.</span></span>
 
-<span data-ttu-id="0e0ab-113">**Taloushallinnon raportoinnin asetukset** -sivulla on kaksi osaa, jotka määrittävät raportin tiedot taloushallinnon raportoinnissa seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="0e0ab-113">The **Financial reporting setup** page has two sections that determine the data you report on in Financial reporting:</span></span>
+<span data-ttu-id="3de6c-113">**Taloushallinnon raportoinnin asetukset** -sivulla on kaksi osaa, jotka määrittävät raportin tiedot taloushallinnon raportoinnissa seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="3de6c-113">The **Financial reporting setup** page has two sections that determine the data you report on in Financial reporting:</span></span>
 
-<span data-ttu-id="0e0ab-114">•   **Dimensiot-välilehti** - Yrityksillä on käytössä erilaisia dimensioita ja tilirakenteita. Tämän vuoksi raporttien kaikkien taloushallinnon dimensioiden tarkastelujärjestystä ei voi määrittää.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-114">•   **Dimensions tab** - Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports.</span></span> <span data-ttu-id="0e0ab-115">Tällä sivulla voit määrittää järjestyksen, jossa taloushallinnon dimensiot näkyvät, kun raportti muodostetaan ja kun sitä tarkastellaan talousraportoinnissa.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-115">This page allows you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting.</span></span>
+- <span data-ttu-id="3de6c-114">**Dimensiot-välilehti** – Yrityksillä on käytössä erilaisia dimensioita ja tilirakenteita. Tämän vuoksi raporttien kaikkien taloushallinnon dimensioiden tarkastelujärjestystä ei voi määrittää.</span><span class="sxs-lookup"><span data-stu-id="3de6c-114">**Dimensions tab** - Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports.</span></span> <span data-ttu-id="3de6c-115">Tällä sivulla voit määrittää järjestyksen, jossa taloushallinnon dimensiot näkyvät, kun raportti muodostetaan ja kun sitä tarkastellaan talousraportoinnissa.</span><span class="sxs-lookup"><span data-stu-id="3de6c-115">This page allows you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting.</span></span>
+- <span data-ttu-id="3de6c-116">**Määritteet-välilehdessä** voit määrittää, käytetäänkö **toimittajia** ja **asiakkaita** määritteinä suodatuksessa ja raportin rakenteessa.</span><span class="sxs-lookup"><span data-stu-id="3de6c-116">**Attributes tab** is where you can select whether you want the ability to use **Vendors** and **Customers** as attributes for filtering and report design.</span></span> <span data-ttu-id="3de6c-117">Toimittajan ja asiakkaan raportoinnista tulee arvokasta vain, jos et syötä useita toimittajia tai asiakkaita yhteen tositteeseen tapahtumien kirjaamisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="3de6c-117">Reporting on Vendor and Customer will only be valuable if you do not enter multiple vendors or customers in a single voucher when posting transactions.</span></span> <span data-ttu-id="3de6c-118">Toimittajan ja/tai asiakkaan valitseminen pidentää integrointiin kuluvaa aikaa.</span><span class="sxs-lookup"><span data-stu-id="3de6c-118">Choosing Vendor and/or Customer will add additional time to the integration.</span></span>
 
-<span data-ttu-id="0e0ab-116">•   **Määritteet-välilehdessä** voit määrittää, käytetäänkö **toimittajia** ja **asiakkaita** määritteinä suodatuksessa ja raportin rakenteessa.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-116">•   **Attributes tab** is where you can select whether you want the ability to use **Vendors** and **Customers** as attributes for filtering and report design.</span></span> <span data-ttu-id="0e0ab-117">Toimittajan ja asiakkaan raportoinnista tulee arvokasta vain, jos et syötä useita toimittajia tai asiakkaita yhteen tositteeseen tapahtumien kirjaamisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-117">Reporting on Vendor and Customer will only be valuable if you do not enter multiple vendors or customers in a single voucher when posting transactions.</span></span> <span data-ttu-id="0e0ab-118">Toimittajan ja/tai asiakkaan valitseminen pidentää integrointiin kuluvaa aikaa.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-118">Choosing Vendor and/or Customer will add additional time to the integration.</span></span>
+## <a name="financial-reporting-components"></a><span data-ttu-id="3de6c-119">Talousraportoinnin osat</span><span class="sxs-lookup"><span data-stu-id="3de6c-119">Financial reporting components</span></span>
+<span data-ttu-id="3de6c-120">Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talousraportoinnin osien avulla.</span><span class="sxs-lookup"><span data-stu-id="3de6c-120">The following components of financial reporting make it easy to create, view, and schedule reports.</span></span>
 
+| <span data-ttu-id="3de6c-121">Komponentti</span><span class="sxs-lookup"><span data-stu-id="3de6c-121">Component</span></span>        | <span data-ttu-id="3de6c-122">Toiminnot</span><span class="sxs-lookup"><span data-stu-id="3de6c-122">Functions</span></span> | <span data-ttu-id="3de6c-123">Lisätiedot</span><span class="sxs-lookup"><span data-stu-id="3de6c-123">Additional information</span></span> |
+|------------------|-----------|------------------------|
+| <span data-ttu-id="3de6c-124">Report Designer</span><span class="sxs-lookup"><span data-stu-id="3de6c-124">Report Designer</span></span>  | <span data-ttu-id="3de6c-125">Luo raportin rakenneosia, joita yhdistämällä voidaan määrittää ja luoda raportti.</span><span class="sxs-lookup"><span data-stu-id="3de6c-125">Create report building blocks that can be combined to define and generate a report.</span></span> <span data-ttu-id="3de6c-126">Ohjattu raportin luominen ohjaa kokemattomampia käyttäjiä suunnitteluprosessissa.</span><span class="sxs-lookup"><span data-stu-id="3de6c-126">The report wizard guides less experienced users through the design process.</span></span> <span data-ttu-id="3de6c-127">Kokeneet käyttäjät voivat luoda tarvittaessa uusia raportin rakenneosia tai muokata aiemmin luotuja rakenneosia.</span><span class="sxs-lookup"><span data-stu-id="3de6c-127">Advanced users can create new report building blocks or modify existing building blocks to meet their requirements.</span></span> | |
+| <span data-ttu-id="3de6c-128">Raportin aikataulut</span><span class="sxs-lookup"><span data-stu-id="3de6c-128">Report schedules</span></span> | <span data-ttu-id="3de6c-129">Ajoita yksi raportti tai raporttiryhmä siten, että se luodaan säännöllisesti.</span><span class="sxs-lookup"><span data-stu-id="3de6c-129">Schedule a single report or a group of reports so that it is generated on a regular basis.</span></span> | [<span data-ttu-id="3de6c-130">Raportin luominen</span><span class="sxs-lookup"><span data-stu-id="3de6c-130">Generate a financial report</span></span>](generate-financial-report.md) |
 
-
-## <a name="financial-reporting-components"></a><span data-ttu-id="0e0ab-119">Talousraportoinnin osat</span><span class="sxs-lookup"><span data-stu-id="0e0ab-119">Financial reporting components</span></span>
-<span data-ttu-id="0e0ab-120">Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talousraportoinnin osien avulla.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-120">The following components of financial reporting make it easy to create, view, and schedule reports.</span></span>
-
-| <span data-ttu-id="0e0ab-121">Komponentti</span><span class="sxs-lookup"><span data-stu-id="0e0ab-121">Component</span></span>        | <span data-ttu-id="0e0ab-122">Toiminnot</span><span class="sxs-lookup"><span data-stu-id="0e0ab-122">Functions</span></span>                                                                                                                                                                                                                                                                           | <span data-ttu-id="0e0ab-123">Lisätiedot</span><span class="sxs-lookup"><span data-stu-id="0e0ab-123">Additional information</span></span>                                                                          |
-|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="0e0ab-124">Report Designer</span><span class="sxs-lookup"><span data-stu-id="0e0ab-124">Report Designer</span></span>  | <span data-ttu-id="0e0ab-125">Luo raportin rakenneosia, joita yhdistämällä voidaan määrittää ja luoda raportti.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-125">Create report building blocks that can be combined to define and generate a report.</span></span> <span data-ttu-id="0e0ab-126">Ohjattu raportin luominen ohjaa kokemattomampia käyttäjiä suunnitteluprosessissa.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-126">The report wizard guides less experienced users through the design process.</span></span> <span data-ttu-id="0e0ab-127">Kokeneet käyttäjät voivat luoda tarvittaessa uusia raportin rakenneosia tai muokata aiemmin luotuja rakenneosia.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-127">Advanced users can create new report building blocks or modify existing building blocks to meet their requirements.</span></span> |                                                                                                 |
-| <span data-ttu-id="0e0ab-128">Raportin aikataulut</span><span class="sxs-lookup"><span data-stu-id="0e0ab-128">Report schedules</span></span> | <span data-ttu-id="0e0ab-129">Ajoita yksi raportti tai raporttiryhmä siten, että se luodaan säännöllisesti.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-129">Schedule a single report or a group of reports so that it is generated on a regular basis.</span></span>                                                                                                                                                                                          | [<span data-ttu-id="0e0ab-130">Raportin luominen</span><span class="sxs-lookup"><span data-stu-id="0e0ab-130">Generate a financial report</span></span>](generate-financial-report.md) |
-
-## <a name="features"></a><span data-ttu-id="0e0ab-131">Ominaisuudet</span><span class="sxs-lookup"><span data-stu-id="0e0ab-131">Features</span></span>
+## <a name="features"></a><span data-ttu-id="3de6c-131">Ominaisuudet</span><span class="sxs-lookup"><span data-stu-id="3de6c-131">Features</span></span>
 <table>
 <thead>
-<tr class="header">
-<th><span data-ttu-id="0e0ab-132">Ominaisuus</span><span class="sxs-lookup"><span data-stu-id="0e0ab-132">Feature</span></span></th>
-<th><span data-ttu-id="0e0ab-133">kuvaus</span><span class="sxs-lookup"><span data-stu-id="0e0ab-133">Description</span></span></th>
+<tr>
+<th><span data-ttu-id="3de6c-132">Ominaisuus</span><span class="sxs-lookup"><span data-stu-id="3de6c-132">Feature</span></span></th>
+<th><span data-ttu-id="3de6c-133">kuvaus</span><span class="sxs-lookup"><span data-stu-id="3de6c-133">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><span data-ttu-id="0e0ab-134">Raportin suunnitteluohjelman joustavuus</span><span class="sxs-lookup"><span data-stu-id="0e0ab-134">Report design flexibility</span></span></td>
-<td><span data-ttu-id="0e0ab-135">Report Designerissa on seuraavat raportin suunnittelussa käytettävät raportointivaihtoehdot:</span><span class="sxs-lookup"><span data-stu-id="0e0ab-135">Report Designer provides the following reporting options when you design a report:</span></span>
+<tr>
+<td><span data-ttu-id="3de6c-134">Raportin suunnitteluohjelman joustavuus</span><span class="sxs-lookup"><span data-stu-id="3de6c-134">Report design flexibility</span></span></td>
+<td><span data-ttu-id="3de6c-135">Report Designerissa on seuraavat raportin suunnittelussa käytettävät raportointivaihtoehdot:</span><span class="sxs-lookup"><span data-stu-id="3de6c-135">Report Designer provides the following reporting options when you design a report:</span></span>
 <ul>
-<li><span data-ttu-id="0e0ab-136">Tallenna dimensioyhdistelmät ja käytä dimensioista useissa raporteissa.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-136">Save dimension combinations, and reuse the dimensions for multiple reports.</span></span></li>
-<li><span data-ttu-id="0e0ab-137">dimension kuvausten muotoilun ja näyttämisen hallinta</span><span class="sxs-lookup"><span data-stu-id="0e0ab-137">Control how dimension descriptions are formatted and displayed.</span></span></li>
-<li><span data-ttu-id="0e0ab-138">raportin rakenneosista pois jätettyjen tilien tai dimensioiden tunnistaminen</span><span class="sxs-lookup"><span data-stu-id="0e0ab-138">Identify accounts or dimensions that have been omitted from report building blocks.</span></span></li>
-<li><span data-ttu-id="0e0ab-139">juoksevien ennusteiden otsikoiden muotoileminen.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-139">Format headers for rolling forecasts.</span></span></li>
-</ul></td>
+<li><span data-ttu-id="3de6c-136">Tallenna dimensioyhdistelmät ja käytä dimensioista useissa raporteissa.</span><span class="sxs-lookup"><span data-stu-id="3de6c-136">Save dimension combinations, and reuse the dimensions for multiple reports.</span></span></li>
+<li><span data-ttu-id="3de6c-137">dimension kuvausten muotoilun ja näyttämisen hallinta</span><span class="sxs-lookup"><span data-stu-id="3de6c-137">Control how dimension descriptions are formatted and displayed.</span></span></li>
+<li><span data-ttu-id="3de6c-138">raportin rakenneosista pois jätettyjen tilien tai dimensioiden tunnistaminen</span><span class="sxs-lookup"><span data-stu-id="3de6c-138">Identify accounts or dimensions that have been omitted from report building blocks.</span></span></li>
+<li><span data-ttu-id="3de6c-139">juoksevien ennusteiden otsikoiden muotoileminen.</span><span class="sxs-lookup"><span data-stu-id="3de6c-139">Format headers for rolling forecasts.</span></span></li>
+</ul>
+</td>
 </tr>
-<tr class="even">
-<td><span data-ttu-id="0e0ab-140">Talousraporttiyhteistyö</span><span class="sxs-lookup"><span data-stu-id="0e0ab-140">Financial report collaboration</span></span></td>
-<td><span data-ttu-id="0e0ab-141">Raportteja voi luoda ja jakaa seuraavien ominaisuuksien avulla.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-141">The following features help you manage the generation and distribution of reports:</span></span>
+<tr>
+<td><span data-ttu-id="3de6c-140">Talousraporttiyhteistyö</span><span class="sxs-lookup"><span data-stu-id="3de6c-140">Financial report collaboration</span></span></td>
+<td><span data-ttu-id="3de6c-141">Raportteja voi luoda ja jakaa seuraavien ominaisuuksien avulla.</span><span class="sxs-lookup"><span data-stu-id="3de6c-141">The following features help you manage the generation and distribution of reports:</span></span>
 <ul>
-<li><span data-ttu-id="0e0ab-142">Ajoita raportit niin, että luodaan automaattisesti päivittäin, viikoittain, kuukausittain tai vuosittain.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-142">Schedule reports so that they are automatically generated on a daily, weekly, monthly, or annual basis.</span></span></li>
-<li><span data-ttu-id="0e0ab-143">Vie vain luku -muodossa oleva XPS-muoto, sillä se parantaa asiakirjan suojausta digitaalisten allekirjoitusten avulla.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-143">Export to the read-only XPS format, which provides better document security through digital signatures.</span></span></li>
-<li><span data-ttu-id="0e0ab-144">Vie Microsoft Excelin laskentataulukkoon.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-144">Export to a Microsoft Excel worksheet.</span></span></li>
-<li><span data-ttu-id="0e0ab-145">Voit jakaa raportteja luomalla raporttien linkkejä sisältäviä sähköpostiviestejä.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-145">To share reports, you can create email messages that contain links to the reports.</span></span></li>
-</ul></td>
+<li><span data-ttu-id="3de6c-142">Ajoita raportit niin, että luodaan automaattisesti päivittäin, viikoittain, kuukausittain tai vuosittain.</span><span class="sxs-lookup"><span data-stu-id="3de6c-142">Schedule reports so that they are automatically generated on a daily, weekly, monthly, or annual basis.</span></span></li>
+<li><span data-ttu-id="3de6c-143">Vie vain luku -muodossa oleva XPS-muoto, sillä se parantaa asiakirjan suojausta digitaalisten allekirjoitusten avulla.</span><span class="sxs-lookup"><span data-stu-id="3de6c-143">Export to the read-only XPS format, which provides better document security through digital signatures.</span></span></li>
+<li><span data-ttu-id="3de6c-144">Vie Microsoft Excelin laskentataulukkoon.</span><span class="sxs-lookup"><span data-stu-id="3de6c-144">Export to a Microsoft Excel worksheet.</span></span></li>
+<li><span data-ttu-id="3de6c-145">Voit jakaa raportteja luomalla raporttien linkkejä sisältäviä sähköpostiviestejä.</span><span class="sxs-lookup"><span data-stu-id="3de6c-145">To share reports, you can create email messages that contain links to the reports.</span></span></li>
+</ul>
+</td>
 </tr>
-<tr class="odd">
-<td><span data-ttu-id="0e0ab-146">Vuorovaikutteisen raportin tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="0e0ab-146">Interactive report viewing</span></span></td>
-<td><span data-ttu-id="0e0ab-147">Vuorovaikutteisten ominaisuuksien avulla voi suorittaa seuraavia tehtäviä:</span><span class="sxs-lookup"><span data-stu-id="0e0ab-147">Interactive features let you perform the following tasks:</span></span>
+<tr>
+<td><span data-ttu-id="3de6c-146">Vuorovaikutteisen raportin tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="3de6c-146">Interactive report viewing</span></span></td>
+<td><span data-ttu-id="3de6c-147">Vuorovaikutteisten ominaisuuksien avulla voi suorittaa seuraavia tehtäviä:</span><span class="sxs-lookup"><span data-stu-id="3de6c-147">Interactive features let you perform the following tasks:</span></span>
 <ul>
-<li><span data-ttu-id="0e0ab-148">Vaihda tarkastelemasi raportin päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-148">Change the report date for the report that you&#39;re viewing.</span></span></li>
-<li><span data-ttu-id="0e0ab-149">Vaihda tarkastelemasi raportin valuutta.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-149">Change the currency of the report that you&#39;re viewing.</span></span></li>
-<li><span data-ttu-id="0e0ab-150">Näytä raportti joko yhteenvetonäkymässä tai yksityiskohtaisessa näkymässä.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-150">View the report in either a summary view or a detailed view.</span></span></li>
-<li><span data-ttu-id="0e0ab-151">Lisää dimensiosuodattimia rajoittamaan raportin sisältö tiettyyn dimensioon tai dimensioyhdistelmään.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-151">Add dimension filters to limit the report content to a specific dimension or combination of dimensions.</span></span></li>
-<li><span data-ttu-id="0e0ab-152">Lisää määritesuodattimia rajoittamaan raportin sisältö tiettyyn määritteeseen tai määriteyhdistelmään.</span><span class="sxs-lookup"><span data-stu-id="0e0ab-152">Add attribute filters to limit the report content to a specific attribute or combination of attributes.</span></span></li>
+<li><span data-ttu-id="3de6c-148">Vaihda tarkastelemasi raportin päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="3de6c-148">Change the report date for the report that you're viewing.</span></span></li>
+<li><span data-ttu-id="3de6c-149">Vaihda tarkastelemasi raportin valuutta.</span><span class="sxs-lookup"><span data-stu-id="3de6c-149">Change the currency of the report that you're viewing.</span></span></li>
+<li><span data-ttu-id="3de6c-150">Näytä raportti joko yhteenvetonäkymässä tai yksityiskohtaisessa näkymässä.</span><span class="sxs-lookup"><span data-stu-id="3de6c-150">View the report in either a summary view or a detailed view.</span></span></li>
+<li><span data-ttu-id="3de6c-151">Lisää dimensiosuodattimia rajoittamaan raportin sisältö tiettyyn dimensioon tai dimensioyhdistelmään.</span><span class="sxs-lookup"><span data-stu-id="3de6c-151">Add dimension filters to limit the report content to a specific dimension or combination of dimensions.</span></span></li>
+<li><span data-ttu-id="3de6c-152">Lisää määritesuodattimia rajoittamaan raportin sisältö tiettyyn määritteeseen tai määriteyhdistelmään.</span><span class="sxs-lookup"><span data-stu-id="3de6c-152">Add attribute filters to limit the report content to a specific attribute or combination of attributes.</span></span></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
 
-## <a name="additional-resources"></a><span data-ttu-id="0e0ab-153">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="0e0ab-153">Additional resources</span></span>
-[<span data-ttu-id="0e0ab-154">Raportin luominen</span><span class="sxs-lookup"><span data-stu-id="0e0ab-154">Generate a financial report</span></span>](generate-financial-report.md)
-
-
-
-
+## <a name="additional-resources"></a><span data-ttu-id="3de6c-153">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="3de6c-153">Additional resources</span></span>
+[<span data-ttu-id="3de6c-154">Raportin luominen</span><span class="sxs-lookup"><span data-stu-id="3de6c-154">Generate a financial report</span></span>](generate-financial-report.md)
 
