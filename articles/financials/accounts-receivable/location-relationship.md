@@ -28,6 +28,8 @@ ms.lasthandoff: 06/12/2018
 
 # <a name="add-location-roles-and-party-relationship-types"></a>Lisää toimipaikkaroolit ja osapuolten suhteen tyypit 
 
+[!include [banner](../includes/banner.md)]
+
 ## <a name="add-location-roles"></a>Lisää toimipaikkaroolit
 
 On kaksi tapaa lisätä uusia sijaintirooleja osoitteelle ja yhteystiedoille:

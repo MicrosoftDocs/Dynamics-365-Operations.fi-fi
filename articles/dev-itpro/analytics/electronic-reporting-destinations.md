@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3aa27b3ac263c6c952de7e4b508f48f21ba489ad
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -37,21 +37,21 @@ Sähköisen raportoinnin (ER) muotomäärityksissä on yleensä vähintään yks
 ## <a name="availability-and-general-prerequisites"></a>Saatavuus ja yleiset edellytykset
 ER-kohdetoiminto ei ole käytössä Microsoft Dynamics AX 7.0:ssa (helmikuu 2016). Sinun on asennettava Microsoft Dynamics 365 for Operationsin versio 1611 (marraskuu 2016), jotta voit käyttää kaikkia toimintoja, jotka on kuvattu tässä ohjeaiheessa. Vaihtoehtoisesti voit asentaa jonkin seuraavista edellytyksistä: Huomaa kuitenkin, että nämä vaihtoehdot tarjoavat rajoitetumman ER-käyttökokemuksen.
 
--   Microsoft Dynamics AX -sovellusversio 7.0.1 (toukokuu 2016)
--   ER-kohteen hallinnan [sovelluksen hotfix-korjaus](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
+- Microsoft Dynamics AX -sovellusversio 7.0.1 (toukokuu 2016)
+- ER-kohteen hallinnan [sovelluksen hotfix-korjaus](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
 Voit määrittää kohteet vain tuoduissa ER-määrityksissä ja voit käyttää vain **Sähköisen raportoinnin konfiguraatiot** -sivulla olevia muotoja.
 
 ## <a name="overview"></a>Yleiskuvaus
 ER-kohteen hallintatoimintoon pääsee valitsemalla **Organisaation hallinta** &gt; **Sähköinen raportointi**. Voit ohittaa sieltä määrityksen oletustoiminnan. Tuotuja määrityksiä ei näytetä täällä, ennen kuin valitset **Uusi** ja valitset sitten **Viittaus**-kentässä määrityksen, jolle kohdeasetukset luodaan.
 
-[![Määrityksen valitseminen viitekenttään](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg) 
+[![Määrityksen valitseminen viitekenttään](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg)
 
-Kun olet luonut viittauksen, voit luoda kullekin kansiolle tai tiedostolle tiedostokohteen. 
+Kun olet luonut viittauksen, voit luoda kullekin kansiolle tai tiedostolle tiedostokohteen.
 
 [![Tiedostokohteen luonti](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-> [!NOTE] 
+> [!NOTE]
 > Voit luoda yhden tiedostokohteen kullekin samanmuotoiselle, **Tiedostonimi**-kentässä valitulle tulosteosalle, kuten kansiolle tai tiedostolle. Voit sitten ottaa tiedostokohteen yksittäiset kohteet käyttöön tai poistaa ne käytöstä **Kohdeasetukset**-valintaikkunassa. **Asetukset**-painikkeella voidaan hallita kaikki valitun tiedostokohteen kohteita. Voit hallita **Kohdeasetukset**-valintaikkunassa kutakin kohdetta erikseen valitsemalla sen kohdalla **käytössä**.
 
 [![Kohdeasetukset-valintaikkuna](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
@@ -73,7 +73,7 @@ Kun valitset **Muokkaa** **Vastaanottaja**- tai **Kopio**-kentässä **Sähköpo
 
 Jos valitset **Tulostuksenhallinnan sähköposti** -tyypin, voit syöttää kiinteät sähköpostiosoitteet **Vastaanottaja**-kenttään. Jos haluat käyttää muita kuin kiinteitä sähköpostiosoitteita, tiedostokohteen sähköpostin lähdetyyppi on valittava. Seuraavia arvoja tuetaan: **Asiakas**, **Toimittaja**, **Prospekti**, **Yhteyshenkilö**, **Kilpailija**, **Työntekijä**, **Hakija**, **Mahdollinen toimittaja** ja **Ei-sallittu toimittaja**. Kun olet valinnut sähköpostin lähdetyypin, käytä **Sähköpostin lähdetili** -kentän vieressä olevaa painiketta, jos haluat avata **Reseptien suunnittelu** -lomakkeen. Tämän lomakkeen avulla voit liittää kaavan, joka vastaa valitun osapuolen tilin sähköpostikohdetta.
 
-[![Määritä Tulostuksenhallinta-sähköpostityyppi](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
+[![Määritä Tulostuksenhallinta-sähköpostityyppi](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg)
 
 Huomaa, että kaavat ovat ER-määrityskohtaisia. Kirjoita **Kaava**-kenttään asiakirjakohtainen viittaus asiakas- tai toimittajaosapuolen tyyppiin. Kirjoittamisen asemesta voit etsiä tietolähdesolmun, joka vastaa asiakkaan tai toimittajan tiliä, ja päivittää kaavan valitsemalla **Lisää tietolähde**. Jos käytössä on esimerkiksi ISO 20022 Tilisiirto -määritys, toimittajatiliä vastaava solmu on **$PaymentsForCoveringLetter'.Creditor.Identification.SourceID**. Muussa tapauksessa voit tallentaa kaavan antamalla minkä tahansa merkkijonoarvon, kuten **DE-001**.
 
@@ -87,23 +87,27 @@ Napsauta **Sähköpostin vastaanottaja** -valintaikkunassa **Sähköpostin lähd
 
 Käytä tätä sähköpostityyppiä, jos käyttämässäsi määrityksessä tietolähteissä solmu, joka kuvaa sähköpostiosoitetta. Voit käyttää reseptien suunnittelun tietolähteitä ja funktioita saadaksesi oikein muotoillun sähköpostiosoitteen.
 
-[![Sähköpostikohteen sähköpostin tietolähteen määrittäminen](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
+[![Sähköpostikohteen sähköpostin tietolähteen määrittäminen](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg)
 
-**Huomautu:** SMTP (Simple Mail Transfer Protocol) -palvelimen on oltava määritettynä ja käytettävissä. Voit määrittää SMTP-palvelimen valitsemalla Finance and Operationsissa **Järjestelmänhallinta** &gt; **Asetukset** &gt; **Sähköposti** &gt; **Sähköpostiparametrit**.
+> [!NOTE]
+> SMTP (Simple Mail Transfer Protocol) -palvelimen on oltava määritettynä ja käytettävissä. Voit määrittää SMTP-palvelimen valitsemalla Finance and Operationsissa **Järjestelmänhallinta** &gt; **Asetukset** &gt; **Sähköposti** &gt; **Sähköpostiparametrit**.
 
 ### <a name="archive-destination"></a>Arkistokohde
 
 Voit lähettää tällä asetuksella tulosteen joko Microsoft SharePoint -kansion tai Microsoftin Azuren tallennustilaan. Lähetä tuloste valitun asiakirjatyypin mukaan määritettyyn kohteeseen valitsemalla **Käytössä**-asetukseksi **Kyllä**. Valittavana on vain asiakirjatyyppejä, joiden ryhmäksi on valittu **Tiedosto**. Asiakirjatyypit määritetään valitsemalla **Organisaation hallinta** &gt; **Tiedoston hallinta** &gt; **Tiedostotyypit**. ER-kohteiden määritys on sama kuin tiedostonhallintajärjestelmän määritys.
 
-[![Tiedostotyypit-sivu](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
+[![Tiedostotyypit-sivu](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg)
 
-Sijainti määrittää, mihin tiedosto tallennetaan. Kun **Arkisto**-kohde on otettu käyttöön, määrityksen suorittamisen tulokset voidaan tallentaa työarkistoon. Voit tarkastella tuloksia kohteessa **Organisaation hallinta** &gt; **Sähköinen raportointi** &gt; **Sähköisen raportoinnin arkistoidut työt**. **Huomautus:** Finance and Operationsin työarkiston tiedostotyypin voi valita kohdassa **Organisaation hallinta** &gt; **Työtilat** &gt; **Sähköinen raportointi** &gt; **Sähköisen raportoinnin parametrit**.
+Sijainti määrittää, mihin tiedosto tallennetaan. Kun **Arkisto**-kohde on otettu käyttöön, määrityksen suorittamisen tulokset voidaan tallentaa työarkistoon. Voit tarkastella tuloksia kohteessa **Organisaation hallinta** &gt; **Sähköinen raportointi** &gt; **Sähköisen raportoinnin arkistoidut työt**.
+
+> [!NOTE]
+> Finance and Operationsin työarkiston tiedostotyypin voi valita kohdassa **Organisaation hallinta** &gt; **Työtilat** &gt; **Sähköinen raportointi** &gt; **Sähköisen raportoinnin parametrit**.
 
 #### <a name="sharepoint"></a>SharePoint
 
-Voit tallentaa tiedoston määritettyyn SharePoint-kansioon. SharePoint-oletuspalvelimen määritetään valitsemalla **Organisaation hallinto** &gt; **Tiedoston hallinta** &gt; **Tiedostonhallintaparametrit** **SharePoint**-välilehdessä. Kun SharePoint-kansio on määritetty, voit valita sen kansioksi, johon ER-tuloste tallennetaan kyseiselle tiedostotyypille. 
+Voit tallentaa tiedoston määritettyyn SharePoint-kansioon. SharePoint-oletuspalvelimen määritetään valitsemalla **Organisaation hallinto** &gt; **Tiedoston hallinta** &gt; **Tiedostonhallintaparametrit** **SharePoint**-välilehdessä. Kun SharePoint-kansio on määritetty, voit valita sen kansioksi, johon ER-tuloste tallennetaan kyseiselle tiedostotyypille.
 
-[![SharePoint-kansion valitseminen](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) 
+[![SharePoint-kansion valitseminen](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
 
 #### <a name="azure-storage"></a>Azuren tallennustila
 
@@ -119,7 +123,10 @@ Jos määrität **Käytössä**-kentän arvoksi **Kyllä**, tulosteen esikatselu
 
 ### <a name="power-bi-destination"></a>Power BI -kohde
 
-Kun määrität **Käytössä**-kentän arvoksi **Kyllä**, voit käyttää omaa sähköisen raportoinnin ER-konfiguraatiota tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Microsoft Power BI -palveluihin. Siirretyt tiedostot tallennetaan Microsoft SharePoint Server -esiintymään, joka on konfiguroitu tähän tarkoitukseen. Lisätietoja on ohjeaiheessa [Finance and Operations -tietojen lähettäminen Power BI:hin sähköisen raportoinnin määritysten avulla](general-electronic-reporting-report-configuration-get-data-powerbi.md) **Vihje:** voit ohittaa oletustoiminnan (eli määrityksen valintaikkunan) luomalla päätulostekohteelle kohdeviittauksen ja tiedostokohteen ja poistamalla sitten kaikki kohteet käytöstä.
+Kun määrität **Käytössä**-kentän arvoksi **Kyllä**, voit käyttää omaa sähköisen raportoinnin ER-konfiguraatiota tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Microsoft Power BI -palveluihin. Siirretyt tiedostot tallennetaan Microsoft SharePoint Server -esiintymään, joka on konfiguroitu tähän tarkoitukseen. Lisätietoja on ohjeaiheessa [Finance and Operations -tietojen lähettäminen Power BI:hin sähköisen raportoinnin määritysten avulla](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+> [!TIP]
+> Voit ohittaa oletustoiminnan (eli määrityksen valintaikkunan) luomalla päätulostekohteelle kohdeviittauksen ja tiedostokohteen sekä poistamalla sitten kaikki kohteet käytöstä.
 
 ## <a name="security-considerations"></a>Tietojen suojaamisesta
 ER-kohteissa on käytössä kahdenlaisia oikeuksia ja tehtäviä. Yhdellä tyypillä hallitaan mahdollisuutta ylläpitää yritykselle määritettyjä yleisiä kohteita (eli se hallitsee **Sähköisen raportoinnin kohteet** -sivun käyttöoikeutta). Toisella hallitaan sovelluksen käyttäjän mahdollisuutta ohittaa suorituksen aikana ER-kehittäjän tai ER-toimintokonsultin määrittämiä kohdeasetuksia.
@@ -158,7 +165,4 @@ Edellytyksenä on, että muotoa voi käyttää ER-määrityksissä. Jos sinulla 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
-
-
-
 

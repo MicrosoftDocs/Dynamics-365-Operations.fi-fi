@@ -26,6 +26,8 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="vat-recovery-in-expense-management"></a>ALV:n palautus matkalaskuissa
 
+[!include [banner](../includes/banner.md)]
+
 Saadakseen kelvollisten ALV-tapahtumien palautukset yrityksen tai organisaation tunnistettava, kerättävä, varmistettava ja lähettävä tarkat tiedot. Tämä prosessi sisältää useita tehtäviä ja yrityksen koon mukaan se voi koskea useita työntekijöitä tai rooleja.
 
 ALV:n palauttaminen kulujenhallinnan avulla edellyttää, että seuraavat edellytykset toteutuvat:

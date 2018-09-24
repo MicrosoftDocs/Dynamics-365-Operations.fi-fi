@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: d58bab48c65bb891155af95c79738b019e5760bf
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -66,13 +66,11 @@ Voit lisätä tiettyjä yksiköitä tuonti- tai vientityöhön tai käyttää ma
 ### <a name="set-the-data-format-for-the-job"></a>Määritä työn tietojen muoto
 Valitse yksikölle tuonnin tai viennin tietomuoto sitä valitessasi. Muodot määritetään **Lähdeasetukset**-ruudussa. Lähdetietojen muodossa yhdistyy **Tyyppi**, **Tiedostomuoto**, **Rivin erotin** ja **Sarakkeen erotin**. Vaikka määritteitä on muitenkin, näiden ymmärtäminen on olennaista. Seuraava taulukko sisältää kelvolliset yhdistelmät.
 
-| **Tiedostomuoto**        | **Rivin tai sarakkeen erotin**                   | **XML-tyyli**             |
+| Tiedostomuoto            | Rivin tai sarakkeen erotin                       | XML-tyyli                 |
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-–                     |
 | XML                    | \-–                                      | XML-elementin XML-määrite |
 | Erotin, kiinteä leveys | Pilkku, puolipiste, sarkain, pystyviiva, kaksoispiste | \-–                     |
-
-
 
 ### <a name="sequence-the-entities"></a>Aseta yksiköt sarjaan
 Yksiköt voi järjestää tietomallissa tai tuonti- ja vientitöissä. Kun suoritat työn, joka sisältää useamman tietoyksikön, varmista, että yksiköt on järjestetty oikein. Yksiköt järjestetään ensisijaisesti siten, että voit käsitellä kaikki yksiköiden väliset toiminnalliset riippuvuudet. Jos yksiköillä ei ole toiminnallisia riippuvuuksia, ne voidaan ajoittaa tuotavaksi tai vietäväksi rinnakkain.

@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 368468a1c1cd023862f1405dddf3a90574edce22
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 7925a37c595f5ffa040747462d3ea60a3da41858
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/08/2018
 [!include [banner](includes/banner.md)]
 
 > [!NOTE]
-> Tuotesuosituspalvelun nykyinen versio ollaan poistamassa, sillä toiminto suunnitellaan uudelleen käyttämällä parempaa algoritmia ja uudempia vähittäismyyntiin soveltuvia ominaisuuksia. Lisätietoja on kohdassa [Poistetut tai vanhentuneet ominaisuudet](../dev-itpro/migration-upgrade/deprecated-features.md). Siirry sivun alareunaan, jos sinulla on ongelmia, jotka liittyvät ympäristössä jo käyttöönotettuihin tuotesuosituksiin. 
+> Tuotesuosituspalvelun nykyinen versio ollaan poistamassa, sillä toiminto suunnitellaan uudelleen käyttämällä parempaa algoritmia ja uudempia vähittäismyyntiin soveltuvia ominaisuuksia. Lisätietoja on kohdassa [Poistetut tai vanhentuneet ominaisuudet](../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 Dynamics 365 for Retailissa voidaan näyttää suosituksia myyntipisteen laitteessa. Suositukset ovat nimikkeitä, joista asiakas on mahdollisesti kiinnostunut ostohistorian, toiveluettelon ja muiden asiakkaiden verkosta tai kivijalkakaupasta ostamien tuotteiden perusteella. Myyjillä, joilla on laajat tuoteluettelot, suositukset auttavat asiakasta löytämään uusia tuotteita. Esittämällä tuotesuosituksia, jotka on kohdistettu asiakkaan kiinnostuksen kohteisiin, kauppiaat parantavat lisä- ja ristiinmyyntiään ja tehostavat asiakkaiden sitoutumista. Dynamics 365 for Retailin tuotesuositukset toimivat kognitiivisten palveluiden ja Microsoft Azuren koneoppimisen avulla.
 

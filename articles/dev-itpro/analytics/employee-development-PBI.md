@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a451a3e936916c6bec750ddfbc2bf71fadb7c222
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,7 +39,7 @@ Tässä ohjeaiheessa käsitellään **työntekijän kehityksen** Microsoft Power
 | Työntekijän osaamistasoanalyysi | Työntekijän osaamistasot osaston mukaan, työntekijät osaamistason ja -tyypin mukaan sekä alhaisin ja korkein taso osaamisalueittain |
 | Osaamisalueprofiili                 | Valitun työntekijän osaamisprofiili. |
 | Osaamisanalyysi                | Osaamisalue tyypin ja luokituksen mukaan |
-| Suorituskykyluokituksen analyysi   | Työntekijät alhaisimman ja korkeimman työkohtaisen luokituksen mukaan, työntekijäluokitukset osaston mukaan, työntekijät luokitus- ja toimityypin mukaan sekä korkein ja alhaisin luokitus toimen mukaan  |
+| Suorituskykyluokituksen analyysi   | Työntekijät alhaisimman ja korkeimman työkohtaisen luokituksen mukaan, työntekijäluokitukset osaston mukaan, työntekijät luokitus- ja toimityypin mukaan sekä korkein ja alhaisin luokitus toimen mukaan |
 | Työntekijän suorituskykyanalyysi | Valitun luokituksen työntekijäluokitukset esimiehen mukaan |
 
 Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
@@ -48,7 +48,7 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 
 | Kokonaisuus                   | Sisältö                                                                                                   | Suhteet muihin yksiköihin |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Kalenterin vastakirjaus          | Kalenterin siirtymät raporttien osittamiseen                                                                          | Aiemmin määritetty toimi, toimitrendi, työntekijätrendi, poistettu työntekijä 
+| Kalenterin vastakirjaus          | Kalenterin siirtymät raporttien osittamiseen                                                                          | Aiemmin määritetty toimi, toimitrendi, työntekijätrendi, poistettu työntekijä |
 | Yritys                   | Yritykset, joiden mukaan raportit suodatetaan                                                                             | Nykyinen työntekijä, poistettu työntekijä, työntekijätrendi |
 | Nykyinen toimi         | Paikat nykyiseen pvm:ään asti, täysiaikaista vastaavat, avoimet paikat ja avoimista täytetyiksi -paikat | Työ, toimi |
 | Nykyinen työntekijä         | Työntekijät nykyisellä päivämäärällä, ikä ja henkilöstömäärä                                                         | Yritys, maantieteellinen sijainti, työntekijän nimi, raportoinnin kohde, työntekijän nimike, demografia, työ, työsuhde, toimi |
@@ -65,10 +65,9 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 | Työntekijän nimi            | Etunimi , sukunimi ja koko nimi                                                                       | Nykyinen työntekijä, poistettu työntekijä, työntekijätrendi |
 | Työntekijän nimike           | Nimike ja virkaikä                                                                                   | Nykyinen työntekijä, poistettu työntekijä, työntekijätrendi |
 | Työntekijätrendi           | Työntekijät ajan kuluessa, henkilöstömäärä, yritys ja toimi                                                        | Yritys, maantieteellinen sijainti, työntekijän nimi, raportoinnin kohde, kalenterin vastakirjaus, päivämäärä, työntekijän nimike, demografia, työsuhde, työ |
-| Työ                      | Tehtävä, tyyppi ja nimike                                                                                      | Nykyisen työntekijä, nykyinen toimi, työntekijätrendi, työn ensisijainen osaamisalue, aiemmin määritetty toimi, toimitrendi, poistettu työntekijä |
+| Työ                      | Tehtävä, tyyppi ja nimike                                                                                  | Nykyisen työntekijä, nykyinen toimi, työntekijätrendi, työn ensisijainen osaamisalue, aiemmin määritetty toimi, toimitrendi, poistettu työntekijä |
 | Työn ensisijainen osaamisalue      | Tärkeys, luokitus, taito ja taidon taso                                                                 | Työ |
-| Työntekijän osaamisanalyysi  | Sertifioitu, taso, tason päivämäärä ja taito                                                                    | Työntekijän nimi, osaamisalue |  
+| Työntekijän osaamisanalyysi  | Sertifioitu, taso, tason päivämäärä ja taito                                                                    | Työntekijän nimi, osaamisalue |
 | Suoritus              | Pisteytys, kuvaus arviointimalli                                                                      | Nykyisen työntekijä, nykyinen toimi, työntekijätrendi, työn ensisijainen osaamisalue, aiemmin määritetty toimi, toimitrendi, poistettu työntekijä |
-|  Osaamisalue                   | Taito, osaamisalueen tyyppi ja luokitus                                                                              | Työntekijän osaamisanalyysi, työn ensisijainen osaamisalue |                                                                                                                        
-
+| Osaamisalue                    | Taito, osaamisalueen tyyppi ja luokitus                                                                              | Työntekijän osaamisanalyysi, työn ensisijainen osaamisalue |
 

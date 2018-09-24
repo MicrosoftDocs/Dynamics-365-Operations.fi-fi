@@ -16,10 +16,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -54,7 +54,7 @@ Ennen aloittamista on luotava tai haettava työtilaan upotettava Power BI -rapor
 Lisää .pbix-tiedosto Visual Studio -projektin artefakti.
 
 1. Luo uusi projekti sopivassa mallissa-
-2. Valitse ratkaisunhallinnassa projekti, napsauta hiiren kakkospainikkeella ja valitse sitten **Lisää** > **Uusi nimike**.
+2. Valitse ratkaisunhallinnassa projekti, napsauta hiiren kakkospainikkeella ja valitse sitten **Lisää** \> **Uusi nimike**.
 3. Valitse **Lisää uusi nimike** -valintaikkunan **Toimintojen artefaktit** -kohdassa **Resurssi**-malli.
 4. Anna nimi, jolla viitataan X++-metatietojen raporttiin ja valitse sitten **Lisää**.
 
@@ -77,7 +77,7 @@ Laajenna **Varausten hallinta** -työtilan lomakemääritystä seuraavien ohjeid
 
 1. Laajenna suunnittelumääritelmä avaamalla lomakkeen suunnittelutila.
 2. Valitse suunnittelumäärityksessä ylin elementti, jonka nimi on **Rakenne | Kuvio: työtila toiminnassa**.
-3. Napsauta hiiren kakkospainikkeella, valitse **Uusi** > **Välilehti** ja lisää uusi **FormTabControl1**-niminen ohjausobjekti.
+3. Napsauta hiiren kakkospainikkeella, valitse **Uusi** \> **Välilehti** ja lisää uusi **FormTabControl1**-niminen ohjausobjekti.
 4. Valitse lomakkeen suunnittelutilassa **FormTabControl1**.
 5. Napsauta hiiren kakkospainikkeella ja lisää uusi välilehtisivu valitsemalla **Uusi välilehtisivu**.
 6. Anna välilehtisivulla uusi merkityksellinen nimi, kuten **Työtila**.
@@ -86,12 +86,12 @@ Laajenna **Varausten hallinta** -työtilan lomakemääritystä seuraavien ohjeid
 9. Anna välilehtisivulla uusi merkityksellinen nimi, kuten **Analytiikka**.
 10. Valitse lomakkeen suunnittelutilassa **Analytiikka (välilehtisivu)**.
 11. Määritä **Otsikko**-ominaisuudeksi **Analytiikka**.
-12. Napsauta ohjausobjektia hiiren kakkospainikkeella ja lisää sitten uusi lomakeryhmän ohjausobjekti valitsemalla **Uusi** > **Ryhmä**.
+12. Napsauta ohjausobjektia hiiren kakkospainikkeella ja lisää sitten uusi lomakeryhmän ohjausobjekti valitsemalla **Uusi** \> **Ryhmä**.
 13. Anna lomakeryhmälle uusi merkityksellinen nimi, kuten **powerBIReportGroup**.
 14. Valitse lomakkeen suunnittelutilassa **PanoramaBody (välilehti)** ja vedä ohjausobjekti sitten **Työtila**-välilehteen.
 15. Valitse suunnittelumäärityksessä ylin elementti, jonka nimi on **Rakenne | Kuvio: työtila toiminnassa**.
 16. Napsauta hiiren kakkospainikkeella ja valitse sitten **Poista kuvio**.
-17. Napsauta hiiren kakkospainikkeella uudelleen ja valitse sitten **Lisää kuvio** > **Välilehdellinen työtila**.
+17. Napsauta hiiren kakkospainikkeella uudelleen ja valitse sitten **Lisää kuvio** \> **Välilehdellinen työtila**.
 18. Tarkista muutokset luomalla koontiversio.
 
 Seuraava kuva osoittaa, miltä rakenne näyttää muutosten jälkeen.
@@ -116,7 +116,7 @@ Lisää näiden ohjeiden mukaisesti liiketoimintalogiikka, joka käynnistää **
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
-        private boolean initReportControl = true;     
+        private boolean initReportControl = true;
         protected void initAnalyticalReport()
         {
             if (!initReportControl)
@@ -126,11 +126,11 @@ Lisää näiden ohjeiden mukaisesti liiketoimintalogiikka, joka käynnistää **
             // Note: secure entry point into the Workspace's Analytics report
             if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
             {
-                FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+                // initialize the PBI report control using shared helper
                 PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);
             }
             initReportControl = false;
-    }
+        }
         /// <summary>
         /// Initializes the form.
         /// </summary>
@@ -159,23 +159,22 @@ Tässä osassa on tietoja aputoimintoluokasta, jolla Power BI -rapotti (.pbix-re
 #### <a name="syntax"></a>Syntaksi
 ```
 public static void initializeReportControl(
-     str                 _resourceName,
-     FormGroupControl    _formGroupControl,
-     str                 _defaultPageName = '',
-     boolean             _showFilterPane = false,
-     boolean             _showNavPane = false,
-     List                _defaultFilters = new List(Types::Class))
+    str                 _resourceName,
+    FormGroupControl    _formGroupControl,
+    str                 _defaultPageName = '',
+    boolean             _showFilterPane = false,
+    boolean             _showNavPane = false,
+    List                _defaultFilters = new List(Types::Class))
 ```
 
 #### <a name="parameters"></a>Parametrit
 
-|       Nimi       |                                                              kuvaus                                                               |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|   resourceName   |                                                    .pbix-resurssin nimi.                                                     |
-| formGroupControl |                                    Lomakeryhmän ohjausobjekti, johon Power BI -raportin ohjausobjektia käytetään.                                     |
-| defaultPageName  |                                                         Oletussivun nimi.                                                         |
-|  showFilterPane  |   Totuusarvo, joka ilmaisee, näytetäänkö suodatinruutu (<strong>tosi</strong>) vai piilotetaanko se (<strong>epätosi</strong>).   |
-|   showNavPane    | Totuusarvo, joka ilmaisee, näytetäänkö siirtymisruutu (<strong>tosi</strong>) vai piilotetaanko se (<strong>epätosi</strong>). |
-|  defaultFilters  |                                              Power BI -raportin oletussuodattimet.                                              |
-
+| Nimi             | kuvaus                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| resourceName     | .pbix-resurssin nimi.                                                                              |
+| formGroupControl | Lomakeryhmän ohjausobjekti, johon Power BI -raportin ohjausobjektia käytetään.                                              |
+| defaultPageName  | Oletussivun nimi.                                                                                       |
+| showFilterPane   | Totuusarvo, joka ilmaisee, näytetäänkö suodatinruutu (**tosi**) vai piilotetaanko se (**epätosi**).     |
+| showNavPane      | Totuusarvo, joka ilmaisee, näytetäänkö siirtymisruutu (**tosi**) vai piilotetaanko se (**epätosi**). |
+| defaultFilters   | Power BI -raportin oletussuodattimet.                                                                 |
 

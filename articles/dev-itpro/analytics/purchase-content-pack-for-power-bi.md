@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 07b6f433a8355d7f9ed6dce8e26f78d38a86a713
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,32 +36,27 @@ Tässä ohjeaiheessa kerrotaan, mitä **osto- ja kulutusanalyysin** Microsoft Po
 
 **Osto- ja kustannusanalyysin** Power BI -sisältö on suunniteltu ostopäälliköiden ja budjetista vastaavien esimiesten käyttöön, sillä auttaa seuraamaan ostoja ja kulutusta. Esimiehet voivat analysoida ostoja ja kulutusta seuraavin tavoin:
 
--   Ostot vuoden alusta (toimittajaryhmän ja yksittäisten toimittajien, hankintaluokan ja yksittäisten tuotteiden ja toimittajan sijainnin mukaan)
--   Ostojen vuosittainen muutos (toimittajaryhmän ja hankintaluokan mukaan)
+- Ostot vuoden alusta (toimittajaryhmän ja yksittäisten toimittajien, hankintaluokan ja yksittäisten tuotteiden ja toimittajan sijainnin mukaan)
+- Ostojen vuosittainen muutos (toimittajaryhmän ja hankintaluokan mukaan)
 
 Sisältö käyttää ostotapahtumiin liittyviä tietoja ja antaa koko yrityksen ostolukujen koostenäkymän sekä toimittaja- ja tuotekohtaisen erittelyn ostoista ja kulutuksesta. Raportit korostavat ostojen ja kulutuksen muutoksia ajanjakson aikana. Tämän vuoksi raportteja voidaan käyttää, kun esimiehille ilmoitetaan yksittäisten toimittajien ja tuotteiden positiivisista ja negatiivisista kulutussuuntauksista. Lisäksi kaaviot osoittavat eri hankintaluokkien ja toimittajaryhmien ostot ja kulutuksen. Näin ollen luokka- ja aluepäälliköitä voivat käyttää kaavioita apuna kulutuskäyttäytymisessä tapahtuvien muutoksien havaitsemisessa.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-**Osto- ja kulutusanalyysin** Power BI -sisältä näkyy **Osto- ja kulutusanalyysi** -sivulla (**Hankinta** > **Kyselyt ja raportit** > **Ostojen suorituskykyanalyysi** > **Osto- ja kulutusanalyysi**). 
+**Osto- ja kulutusanalyysin** Power BI -sisältä näkyy **Osto- ja kulutusanalyysi** -sivulla (**Hankinta** \> **Kyselyt ja raportit** \> **Ostojen suorituskykyanalyysi** \> **Osto- ja kulutusanalyysi**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
 **Ostojen ja kulutuksen analyysin** Power BI -sisältöön lukeutuu raportti, joka koostuu mittarijoukosta. Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina. Seuraavassa taulukossa on visualisointien yhteenveto.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Raporttisivu</th>
 <th>Kaaviot</th>
 <th>Ruudut</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Ostot toimittajan mukaan</td>
 <td><ul>
 <li>10 parasta toimittajaa ostojen mukaan (pinottu palkkikaavio)</li>
@@ -76,7 +71,7 @@ Sisältö käyttää ostotapahtumiin liittyviä tietoja ja antaa koko yrityksen 
 <li>Aktiivisten toimittajien kokonaismäärä</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Ostot tuotteen mukaan</td>
 <td><ul>
 <li>Ostot hankintaluokan / tuotteen nimen mukaan (sarakekaavio)</li>
@@ -89,7 +84,7 @@ Sisältö käyttää ostotapahtumiin liittyviä tietoja ja antaa koko yrityksen 
 <li>Tuotteiden määrä, joista koostuu 80 % ostoista</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Ostot kauden mukaan*</td>
 <td><ul>
 <li>Ostot kuukauden/päivän mukaan (sarakekaavio)</li>
@@ -102,7 +97,7 @@ Sisältö käyttää ostotapahtumiin liittyviä tietoja ja antaa koko yrityksen 
 <li>Ostojen vuosittainen kasvuprosentti</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Ostot toimittajan sijainnin mukaan</td>
 <td><ul>
 <li>Ostot kaupungin mukaan</li>
@@ -111,7 +106,7 @@ Sisältö käyttää ostotapahtumiin liittyviä tietoja ja antaa koko yrityksen 
 </ul></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Ostojen ja kulutuksen analyysi ajan mukaan</td>
 <td><ul>
 <li>Ostojen kuluva vuosi kuukauden/päivän mukaan (viivakaavio)</li>
@@ -119,7 +114,7 @@ Sisältö käyttää ostotapahtumiin liittyviä tietoja ja antaa koko yrityksen 
 </ul></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Ostojen ja kulutuksen analyysi toimittajan mukaan</td>
 <td><ul>
 <li>10 parasta toimittajaa ostojen prosenttiosuuden mukaan (suppilokaavio)</li>

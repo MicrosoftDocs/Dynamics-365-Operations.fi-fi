@@ -35,7 +35,9 @@ Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla 
 Projekti on tehtäväryhmä, joka on suunniteltu tarjoamaan palvelu, tuottamaan tuote tai tuloksen saavuttamiseksi. Projektit kuluttavat resursseja ja luovat taloudellisia tuloksia tuottojen tai käyttöomaisuuden muodossa.
 
 ## <a name="projects-across-industries"></a>Projektit eri aloilla
-Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla kuvassa esitetyllä tavalla. [![Projektit eri aloilla](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
+Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla kuvassa esitetyllä tavalla.
+
+[![Projektit eri aloilla](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 Puhelinpalvelukeskuksessa, lipun avulla voidaan kuvata joukko toimenpiteitä, joita puhelun ratkaiseminen edellyttää. Konsulttiyritykset, kuten hallinnolliset tai tekniset konsulttiorganisaatiot tai mainostoimistot, viittaavat toimintoihinsa projekteina. Markkinoinnissa kampanja edustaa työtehtäviä, jotka pitää toimittaa. Projektiin perustuvassa valmistuksessa, tuotantotilaus liittyy eri töihin, jotka on tehtävä valmiiden tuotteiden tuottamiseksi. Mitä nimiä niistä käytetäänkään, näihin projekteihin sisältyy resursseja, aikatauluja ja kustannuksia. Microsoft Dynamics 365 for Finance and Operationsin projektinhallinta- ja kirjanpito-toiminnot voivat auttaa suunnittelussa, suorituksessa ja projektianalyysissa.
 

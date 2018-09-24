@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 78b41010e4ab56675121ab5479cada37645e9ee3
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 5483a1d40907fab3ed3da8174f1dfb8a5bc86960
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -30,25 +30,24 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa käsitellään sellaisten käyttäjän asetusten määrittämistä, joilla mukautetaan käyttäjän toimia talousraportin suunnittelutoiminnossa ja hallitaan ensimmäistä kirjautumiskokemusta. Voit myös hallita, miten yksittäisen raportit, raporttikirjasto ja oletusarvoiset tiedostosijainnit näytetään. 
+Tässä artikkelissa käsitellään sellaisten käyttäjän asetusten määrittämistä, joilla mukautetaan käyttäjän toimia talousraportin suunnittelutoiminnossa ja hallitaan ensimmäistä kirjautumiskokemusta. Voit myös hallita, miten yksittäisen raportit, raporttikirjasto ja oletusarvoiset tiedostosijainnit näytetään.
 
-<a name="set-user-preferences"></a>Käyttäjän asetusten määrittäminen
---------------------
+## <a name="set-user-preferences"></a>Käyttäjän asetusten määrittäminen
 
-1.  Valitse Report Designerin **Työkalut**-valikossa **Asetukset**.
-2.  Valitse **Asetukset**-valintaikkunassa asetukset.
-3.  Napsauta **OK**.
+1. Valitse Report Designerin **Työkalut**-valikossa **Asetukset**.
+2. Valitse **Asetukset**-valintaikkunassa asetukset.
+3. Napsauta **OK**.
 
 ## <a name="options-dialog-box-options"></a>Asetukset-valintaikkunan asetukset
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Käyttäjän asetukset</th>
 <th>kuvaus</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Käynnistettäessä</td>
 <td>Valitse Report Designerin aloitusnäkymä. Valitse jompikumpi seuraavista vaihtoehdoista:
 <ul>
@@ -57,28 +56,22 @@ Tässä artikkelissa käsitellään sellaisten käyttäjän asetusten määritt�
 <li><strong>Näytä tyhjä ympäristö</strong> – Avaa tyhjän suunnittelutoiminnon ikkunan.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Vahvistuksen näyttäminen ennen Report Designerin lopettamista</td>
 <td>Valitse, haluatko varoitussanoman, kun sovellus lopetetaan. Voit varmistaa tällä sanomalla, että ohjelmaa ei lopeteta vahingossa.</td>
 </tr>
-<tr class="odd">
-<td>Käytä automaattisesti solujen alleviivausta sarakeotsikoissa</td>
+<tr>
+<td>Automaattinen sarakeotsikoiden solujen alleviivaus</td>
 <td>Valitse, lisätäänkö alleviivaus uuden sarakeotsikon soluun.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Management Reporter -tiedostojen sijainti</td>
 <td>Määritä tiedostojen oletussijainti. Sovellus käyttää oletussijaintia, kun viet rakenneosaryhmiä.</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
-
-
-
 

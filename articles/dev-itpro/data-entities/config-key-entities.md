@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f5b6ab35f65dbe325f2202ab2dda71152993359d
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 8d07a0572e56e97d42c0e1b841905f828edc6f51
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -29,25 +29,26 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Ennen tietojen tuontia tai vientiä tietoyksiköiden avulla kannattaa ensin selvittää, miten konfigurointiavaimet vaikuttavat tietoyksiköihin, joita aiot käyttää. 
+Ennen tietojen tuontia tai vientiä tietoyksiköiden avulla kannattaa ensin selvittää, miten konfigurointiavaimet vaikuttavat tietoyksiköihin, joita aiot käyttää.
 
 Lisätietoja Finance and Operationsin konfigurointiavaimista on kohdassa [Käyttöoikeuskoodien ja konfigurointiavainten raportti](../sysadmin/license-codes-configuration-keys-report.md).
 
 ### <a name="configuration-key-assignments"></a>Konfigurointiavainten määritykset
 Konfigurointiavaimet voidaan määrittää yhdelle seuraavista tiedoista tai kaikille kyseisille tiedoille.
--   Tietoyksiköt
--   Tietolähteinä käytettävät taulut
--   Taulukon kentät
--   Tietoyksikkökentät
+
+- Tietoyksiköt
+- Tietolähteinä käytettävät taulut
+- Taulukon kentät
+- Tietoyksikkökentät
 
 Seuraavassa taulussa on yhteenveto tavoista, joilla objektin taustalla olevien erilaisten tietojen konfigurointiavainten arvot muuttavat objektin odotettua toimintaa.
 
-| Tietoyksikön konfigurointiavaimen asetus | Taulun konfigurointiavaimen asetus | Taulukentän konfigurointiavaimen asetus | Tietoyksikkökentän konfigurointiavaimen asetus | Odotettu toiminta                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|-----------------------------------|-----------------------------|-----------------------------------|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ei käytössä                          | Ei arvioitu               | Ei arvioitu                     | Ei arvioitu                   | Jos tietoyksikön konfigurointiavain on poistettu käytöstä, tietoyksikköä ei voi käyttää. Sillä ei ole merkitystä, onko taustataulujen ja -kenttien konfigurointiavaimet otettu käyttöön vai ei.                                                                                                                                                                                                                                                                                                                                          |
-| Käytössä                           | Ei käytössä                    | Ei arvioitu                     | Ei arvioitu                   | Jos tietoyksikön konfigurointiavain on otettu käyttöön, tietojen hallintakehys tarkistaa kunkin taustataulun konfigurointiavaimen. Jos taulun konfigurointiavain on poistettu käytöstä, taulu ei ole toiminnallisessa käytössä tietoyksikössä. Jos taulun konfigurointiavain on poistettu käytöstä, taulun ja tietoyksikön konfigurointiavaimen asetuksia ei arvioida. Jos yksikön ensisijaisen taulun konfigurointiavain on poistettu käytöstä, järjestelmä toimii samoin kuin jos yksikön konfigurointiavain olisi poistettu käytöstä. |
-| Käytössä                           | Käytössä                     | Ei käytössä                          | Ei arvioitu                   | Jos tietoyksikön konfigurointiavain on otettu käyttöön ja taustataulujen konfigurointiavaimet ovat käytössä, tietojen hallintakehys tarkistaa taulujen kenttien konfigurointiavaimen. Jos kentän konfigurointiavain on poistettu käytöstä, kenttä ei ole toiminnallisessa käytössä tietoyksikössä, vaikka vastaavan tietoyksikkökentän konfigurointiavain on otettu käyttöön.                                                                                                                                   |
-| Käytössä                           | Käytössä                     | Käytössä                           | Ei käytössä                        | Jos konfigurointiavain on otettu käyttöön kaikilla muilla tasoilla mutta yksikkökentän konfigurointiavain ei ole käytössä, kenttää ei voi käyttää tietoyksikössä.                                                                                                                                                                                                                                                                                                                                                                          |
+| Tietoyksikön konfigurointiavaimen asetus | Taulun konfigurointiavaimen asetus | Taulukentän konfigurointiavaimen asetus | Tietoyksikkökentän konfigurointiavaimen asetus | Odotettu toiminta |
+|-----------------------------------------|------------------------------------|------------------------------------------|----------------------------------------|------------------|
+| Ei käytössä                                | Ei arvioitu                      | Ei arvioitu                            | Ei arvioitu                          | Jos tietoyksikön konfigurointiavain on poistettu käytöstä, tietoyksikköä ei voi käyttää. Sillä ei ole merkitystä, onko taustataulujen ja -kenttien konfigurointiavaimet otettu käyttöön vai ei. |
+| Käytössä                                 | Ei käytössä                           | Ei arvioitu                            | Ei arvioitu                          | Jos tietoyksikön konfigurointiavain on otettu käyttöön, tietojen hallintakehys tarkistaa kunkin taustataulun konfigurointiavaimen. Jos taulun konfigurointiavain on poistettu käytöstä, taulu ei ole toiminnallisessa käytössä tietoyksikössä. Jos taulun konfigurointiavain on poistettu käytöstä, taulun ja tietoyksikön konfigurointiavaimen asetuksia ei arvioida. Jos yksikön ensisijaisen taulun konfigurointiavain on poistettu käytöstä, järjestelmä toimii samoin kuin jos yksikön konfigurointiavain olisi poistettu käytöstä. |
+| Käytössä                                 | Käytössä                            | Ei käytössä                                 | Ei arvioitu                          | Jos tietoyksikön konfigurointiavain on otettu käyttöön ja taustataulujen konfigurointiavaimet ovat käytössä, tietojen hallintakehys tarkistaa taulujen kenttien konfigurointiavaimen. Jos kentän konfigurointiavain on poistettu käytöstä, kenttä ei ole toiminnallisessa käytössä tietoyksikössä, vaikka vastaavan tietoyksikkökentän konfigurointiavain on otettu käyttöön. |
+| Käytössä                                 | Käytössä                            | Käytössä                                  | Ei käytössä                               | Jos konfigurointiavain on otettu käyttöön kaikilla muilla tasoilla mutta yksikkökentän konfigurointiavain ei ole käytössä, kenttää ei voi käyttää tietoyksikössä. |
 
 > [!NOTE]
 > Jos yksikössä on sitten toinen yksikkö tietolähteenä, edellä mainittua semantiikkaa käytetään rekursiivisesti.
@@ -59,12 +60,13 @@ Kun yksikköluettelo päivitetään, tietojen hallintakehys muodostaa konfiguroi
 
 ### <a name="data-entity-list-page"></a>Tietoyksikköluettelon sivu
 Yksiköiden konfigurointiavainasetukset näkyvät Tietojenhallinnan työtilan tietoyksikköluettelon sivulla. Voit aloittaa tältä sivulta sen selvittämisen, miten konfigurointiavaimet vaikuttavat tietoyksikköön.
+
 Nämä tiedot voidaan näyttää yksikön päivityksen aikana muodostettujen metatietojen avulla. Konfigurointiavaimen sarakkeessa on tietoyksikköön liitetyn konfigurointiavaimen nimi. Jos sarake on tyhjä, tietoyksikköön ei ole liitetty konfigurointiavainta. Konfigurointiavaimen tilasarakkeessa näytetään konfigurointiavaimen tila. Jos siinä on valintamerkki, avain on otettu käyttöön Jos se on tyhjä, avain on joko poistettu käytetty tai yhtään avainta ei ole liitetty.
 
 ![Yksikköluettelon sivu](./media/Data_entity_list_page.png)
 
 ### <a name="target-fields"></a>Kohdekentät
-Seuraavaksi poraudutaan tietoyksikköön tarkastelemaan, miten konfigurointiavaimet vaikuttavat tauluihin ja kenttiin. Tietoyksikön kohdekenttälomake sisältää konfigurointiavaimen ja tietoyksikön liittyviin tauluihin ja kenttiin liittyvät avaimen tilatiedot.  Jos itse tietoyksikön konfigurointiavain on poistettu käytöstä, avautuva varoitussanoma ilmoittaa, että tämän yksikön kohdekenttälomakkeen taulut ja kentät eivät lainkaan käytettävissä riippumatta siitä, mikä niiden konfigurointiavaimen tila on.
+Seuraavaksi poraudutaan tietoyksikköön tarkastelemaan, miten konfigurointiavaimet vaikuttavat tauluihin ja kenttiin. Tietoyksikön kohdekenttälomake sisältää konfigurointiavaimen ja tietoyksikön liittyviin tauluihin ja kenttiin liittyvät avaimen tilatiedot. Jos itse tietoyksikön konfigurointiavain on poistettu käytöstä, avautuva varoitussanoma ilmoittaa, että tämän yksikön kohdekenttälomakkeen taulut ja kentät eivät lainkaan käytettävissä riippumatta siitä, mikä niiden konfigurointiavaimen tila on.
 
 ![Kohdekentät](./media/Target_fields_1.png)
 
@@ -79,30 +81,19 @@ Kun tiedät, miten konfigurointiavaimet mahdollisesti vaikuttavat tietoyksiköih
 ### <a name="run-time-validations-for-configuration-keys"></a>Konfigurointiavainten suorituksenaikaiset oikeellisuustarkistukset
 Suoritustenaikaiset oikeellisuustarkistukset suoritetaan seuraavissa käyttötilanteissa käyttämällä yksikköluetteloiden päivitysten aikana muodostettujen konfigurointiavainten metatietoja.
 
--   Kun tietoyksikkö lisätään työhön
-
--   Kun käyttäjä valitsee yksikköluettelossa oikeellisuustarkistuksen
-
--   Kun käyttäjä lataa tietopaketin tietoprojektiin
-
--   Kun käyttäjä lataa mallin tietoprojektiin
-
--   Kun aiemmin luotu tietoprojekti on ladattu
-
--   Kun malli ladataan tietoprojektiin
-
--   Ennen vienti- tai tuontityön suorittamista (erä, muu kuin erä, toistuva, Odata)
-
--   Kun käyttäjä luo määrityksen
-
--   Kun käyttäjä yhdistää kentät määrityskäyttöliittymässä
-
--   Kun käyttäjä lisää vain tuotavat kentät
-
+- Kun tietoyksikkö lisätään työhön
+- Kun käyttäjä valitsee yksikköluettelossa oikeellisuustarkistuksen
+- Kun käyttäjä lataa tietopaketin tietoprojektiin
+- Kun käyttäjä lataa mallin tietoprojektiin
+- Kun aiemmin luotu tietoprojekti on ladattu
+- Kun malli ladataan tietoprojektiin
+- Ennen vienti- tai tuontityön suorittamista (erä, muu kuin erä, toistuva, Odata)
+- Kun käyttäjä luo määrityksen
+- Kun käyttäjä yhdistää kentät määrityskäyttöliittymässä
+- Kun käyttäjä lisää vain tuotavat kentät
 
 ### <a name="managing-configuration-key-changes"></a>Konfigurointiavainten muutosten hallinta
 Aina kun päivität konfigurointiavaimet yksikkö-, taulu- tai kenttätasolla, tietojen hallintakehyksen yksikköluettelo on päivitettävä. Tämä prosessi varmistaa, että kehys poimii kaikki uusimmat konfigurointiavainasetukset. Seuraava sanoma näkyy yksikköluettelosivulla siihen saakka, että yksikköluettelo päivitetään. Päivitetyt konfigurointiavainmuutokset tulevat voimaan heti, kun yksikköluettelo on päivitetty. Aiemmin luodut tietoprojektit ja työt kannattaa tarkistaa ja varmistaa, että ne toimivat odotetusti sen jälkeen, kun konfigurointiavainmuutokset on otettu käyttöön.
 
 ![Kohdekentät](./media/Target_fields_3.png)
-
 

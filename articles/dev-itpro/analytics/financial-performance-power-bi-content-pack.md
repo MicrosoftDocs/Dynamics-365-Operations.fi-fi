@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-> [!Note]
+> [!NOTE]
 > Tämä PowerBI.com-ratkaisu on vanhentunut, kuten on ilmoitettu [AppSourcessa julkaistuissa Power BI -sisältöpaketeissa](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Tässä ohjeaiheessa käsitellään **taloudellisen suorituskyvyn** PowerBI.com-ratkaisua. Siinä kerrotaan sisältyvistä koontinäytöistä ja raporteista sekä ratkaisun muodostamisessa käytetyistä tietomallista ja yksiköistä.
@@ -58,7 +58,7 @@ Kunkin ruudun taustatukena on raportti. Nämä raportit sisältävät kaavioita 
 
 | Raportti                      | Raportin sisältämät tiedot |
 |-----------------------------|--------------------------------------|
-| Käteisanalyysi               | Käteinen yrityksittäin, käteinen neljännesvuosittain ja käteinen tileittäin<br><br>**Huomautus:** Käteisvarojen neljännesvuosittaistiedoissa alkusaldot eivät sisälly ensimmäisen vuosineljänneksen kokonaissummaan. Se näyttää uusien, kussakin neljänneksessä kirjattujen, tapahtumien kokonaissumman.|
+| Käteisanalyysi               | Käteinen yrityksittäin, käteinen neljännesvuosittain ja käteinen tileittäin<blockquote>[!NOTE] Käteisvarojen neljännesvuosittaistiedoissa alkusaldot eivät sisälly ensimmäisen vuosineljänneksen kokonaissummaan. Se näyttää uusien, kussakin neljänneksessä kirjattujen, tapahtumien kokonaissumman.</blockquote> |
 | Nykyisen suhteen analyysi      | Nykyinen suhde yrityksittäin, neljännesvuosittain ja saldoittain nykyiselle omaisuudelle sekä nykyisille veloille |
 | Nopean suhdeluvun analyysi        | Nopea suhde yrityksittäin, neljännesvuosittain ja saldoittain käteiselle, myyntireskontralle sekä nykyisille veloille |
 | Myytyjen tuotteiden kustannusanalyysi | Yrityksen myytyjen tuotteiden kustannukset (MTKUST) kuluvana ja edellisenä vuonna neljännesvuosittain, MTKUST myynneille yrityksittäin, kokonais-MTKUST ja MTKUST myyntiprosenteittain |
@@ -69,7 +69,7 @@ Kunkin ruudun taustatukena on raportti. Nämä raportit sisältävät kaavioita 
 | Ansioanalyysi           | Toteutuneet ja budjetoidut ansiot ennen korkoa ja veroja (EBIT) yrityksittäin, kuluvan ja edellisen vuoden EBIT, kulujen ja tuoton suhde prosentteina sekä toteutunut ja budjetoitu kulujen ja tuoton suhde |
 | Tuottoanalyysi            | Kokonaistuotto, toteutunut ja budjetoitu kokonaistuotto yrityksittäin, kuluvan ja edellisen vuoden kokonaistuotto, tuottobudjetin varianssi yrityksittäin sekä kuluvan ja edellisen kauden kokonaistuotto |
 | Kuluanalyysi            | Kokonaiskulut, toteutuneiden ja budjetoitujen kokonaiskulujen suhde yrityksittäin, toteutuneet ja budjetoidut kokonaiskulut neljännesvuosittain, kokonaiskulut tililuokittain sekä toimintakulujen suhde |
-| Laskutetun tuoton analyysi     | Kokonaismyyntireskontra, kokonaismyyntireskontra yrityksittäin ja neljännesvuosittain sekä myyntireskontratilien saldot<br><br>**Huomautus:** Tiedot eivät sisällä myyntireskontratilien alkusaldoja. Se näyttää niiden uusien tapahtumien kokonaissumman, jotka on kirjattu myyntireskontraan. |
+| Laskutetun tuoton analyysi     | Kokonaismyyntireskontra, kokonaismyyntireskontra yrityksittäin ja neljännesvuosittain sekä myyntireskontratilien saldot<blockquote>[!NOTE] Tiedot eivät sisällä myyntireskontratilien alkusaldoja. Se näyttää niiden uusien tapahtumien kokonaissumman, jotka on kirjattu myyntireskontraan.</blockquote> |
 
 Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
@@ -89,5 +89,5 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 - Kirjanpidot
 - ChartofAccounts
 
-Näitä yksikköjä käytettiin luomaan laskettuja mittoja tietomallissa. Näitä laskennallisia mittoja käytetään sitten laskemaan sisällössä käytettävät tunnusluvut (KPI:t) ja raportit. Oletusarvoisesti sisältö noutaa kolmen viimeisen vuoden ja yhden tulevan vuoden tiedot. Voit muokata [Microsoft Excel -työkirjaa](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) sisällyttääksesi lisälaskelmia raporteille ja koontinäytölle. Tämä työkirja on sisällön luomisessa käytetty oletustietomalli. 
+Näitä yksikköjä käytettiin luomaan laskettuja mittoja tietomallissa. Näitä laskennallisia mittoja käytetään sitten laskemaan sisällössä käytettävät tunnusluvut (KPI:t) ja raportit. Oletusarvoisesti sisältö noutaa kolmen viimeisen vuoden ja yhden tulevan vuoden tiedot. Voit muokata [Microsoft Excel -työkirjaa](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi) sisällyttääksesi lisälaskelmia raporteille ja koontinäytölle. Tämä työkirja on sisällön luomisessa käytetty oletustietomalli.
 

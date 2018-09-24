@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7207febc58dbab1df5551ae0f74ad74d9ced8e56
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: c9772d45cf9d9941dd8fe0de13ce624ea3aa3b53
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,73 +35,72 @@ Kun olet suunnitellut rakennusosat ja luonut raportit, kyseiset objektit kannatt
 Voit nimetä uudelleen kansioita, raportteja, rakenneosia ja muita objekteja Report Designerissa. Uudelleennimetyn objektityypistä riippuen voit joutua päivittämään kyseisen objektin liitokset.
 
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Kansion tai rakenneosan nimeäminen uudelleen Report Designerissa
-Report Designerissa voit nimetä uudelleen kansioita, raportin määrityksiä sekä rivi-, sarake- ja raportointipuumäärityksiä. **Huomautus:** Kun nimeät rakenneosan uudelleen, myös kyseistä rakenneosaa käyttävät raportin määritykset on päivitettävä. Muussa tapauksessa uutta raporttia ei voi luoda.
+Raporttien suunnitteluohjelmalla voidaan nimetä uudelleen kansiot sekä raportti-, rivi-, sarake- ja raporttipuumääritykset.
+
+> [!NOTE]
+> Kun nimeät rakenneosan uudelleen, myös kyseistä rakenneosaa käyttävät raportin määritykset on päivitettävä. Muussa tapauksessa uutta raporttia ei voi luoda.
 
 ### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Kansion tai rakenneosan nimeäminen uudelleen Report Designerissa
 
-1.  Käytä Report Designerissa siirtymisruutua löytääksesi uudelleennimettävän kansion tai objektin.
-2.  Valitse kansio tai objekti hiiren kakkospainikkeella ja valitse sitten **Nimeä uudelleen**. Siirtymisruudun **Nimi**-kenttä tulee käyttöön.
-3.  Kirjoita uusi nimi ja paina sitten Enter-näppäintä.
-4.  Jos rakenneosa on rivin määritys, sarakkeen määritys tai raportointipuun määritys, muut siihen liitetyt rakenneosat on päivitettävä. Valitse ensin vaiheessa 3 uudelleennimetty rakenneosa hiiren kakkospainikkeella, valitse sitten **Liitokset** ja valitse lopuksi luettelosta päivitettävä kohde.
-5.  Toista vaihe 4, kunnes kaikki liitokset on päivitetty.
+1. Käytä Report Designerissa siirtymisruutua löytääksesi uudelleennimettävän kansion tai objektin.
+2. Valitse kansio tai objekti hiiren kakkospainikkeella ja valitse sitten **Nimeä uudelleen**. Siirtymisruudun **Nimi**-kenttä tulee käyttöön.
+3. Kirjoita uusi nimi ja paina sitten Enter-näppäintä.
+4. Jos rakenneosa on rivin määritys, sarakkeen määritys tai raportointipuun määritys, muut siihen liitetyt rakenneosat on päivitettävä. Valitse ensin vaiheessa 3 uudelleennimetty rakenneosa hiiren kakkospainikkeella, valitse sitten **Liitokset** ja valitse lopuksi luettelosta päivitettävä kohde.
+5. Toista vaihe 4, kunnes kaikki liitokset on päivitetty.
 
 ## <a name="create-and-manage-report-groups"></a>Reititysryhmien luonti ja hallinta
 Voit ryhmitellä raporttimäärityksiä luodaksesi useita raportteja samanaikaisesti. Jos haluat luoda, muokata, poistaa ja luoda raporttiryhmiä, sinulla on oltava suunnittelijan tai järjestelmänvalvojan rooli. Käyttäjät, joilla on luontirooli, voivat luoda raporttiryhmiä. He voivat myös muokata käyttäjien raportin määritysten asetuksia raporttiryhmille.
 
 ### <a name="create-a-report-group"></a>Raporttiryhmän luonti
 
-1.  Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
-2.  Avaa uusi raporttiryhmä katseluohjelman ikkunassa valitsemalla **Tiedosto**-valikossa **Uusi** &gt; **Raporttiryhmän määritys**. Voit vaihtoehtoisesti napsauttaa työkalurivillä **Raporttiryhmä**-painiketta ![Raporttiryhmä](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Raporttiryhmä").
-3.  Valitse **Raporttiryhmä**-välilehti. Ohittaaksesi yksittäisiä raportin määrityksiä koskevat tiedot tätä raporttia luotaessa, valitse **Ohita yritys-, tiedot- ja päivä-määritykset yksittäisissä raporttimäärityksissä** -valintaruutu. Yrityksen nimi, tietojen taso, alustava asetus ja päivämäärätiedot täytetään automaattisesti, mutta voit tehdä päivityksiä.
-4.  Jos haluat luoda useita raportointivaluutan näyttäviä raportteja, valitse **Sisällytä kaikki raportointivaluutat** -valintaruutu. Voit sitten käyttää useita näkymiä valitsemalla **Valuutta**-painikkeen verkkokatseluohjelmassa, kun katsot raporttia.
-5.  Valitse raporttiryhmään sisällytettävät raportit valitsemalla **Ryhmän raportit** -kentässä **Lisää**. Jos haluat valita useita raportteja **Lisää**-valintaikkunassa, pidä Ctrl-näppäintä painettuna valitessasi raportteja. Kun olet valinnut raportit, valitse **OK**.
-6.  Tallenna uusi raporttiryhmä valitsemalla **Tiedosto** &gt; **Tallenna**.
+1. Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
+2. Avaa uusi raporttiryhmä katseluohjelman ikkunassa valitsemalla **Tiedosto**-valikossa **Uusi** &gt; **Raporttiryhmän määritys**. Voit vaihtoehtoisesti napsauttaa työkalurivillä **Raporttiryhmä**-painiketta ![Raporttiryhmä](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Raporttiryhmä").
+3. Valitse **Raporttiryhmä**-välilehti. Ohittaaksesi yksittäisiä raportin määrityksiä koskevat tiedot tätä raporttia luotaessa, valitse **Ohita yritys-, tiedot- ja päivä-määritykset yksittäisissä raporttimäärityksissä** -valintaruutu. Yrityksen nimi, tietojen taso, alustava asetus ja päivämäärätiedot täytetään automaattisesti, mutta voit tehdä päivityksiä.
+4. Jos haluat luoda useita raportointivaluutan näyttäviä raportteja, valitse **Sisällytä kaikki raportointivaluutat** -valintaruutu. Voit sitten käyttää useita näkymiä valitsemalla **Valuutta**-painikkeen verkkokatseluohjelmassa, kun katsot raporttia.
+5. Valitse raporttiryhmään sisällytettävät raportit valitsemalla **Ryhmän raportit** -kentässä **Lisää**. Jos haluat valita useita raportteja **Lisää**-valintaikkunassa, pidä Ctrl-näppäintä painettuna valitessasi raportteja. Kun olet valinnut raportit, valitse **OK**.
+6. Tallenna uusi raporttiryhmä valitsemalla **Tiedosto** &gt; **Tallenna**.
 
 ### <a name="modify-a-report-group"></a>Raporttiryhmän muokkaaminen
 
-1.  Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
-2.  Kaksoisnapsauta muokattavaa raporttiryhmää.
-3.  Tee tarvittavat muutokset **Raporttiryhmä**-välilehdessä.
-4.  Tallenna muokattu raporttiryhmä valitsemalla **Tiedosto**-valikossa **Tallenna**. Vaihtoehtoisesti voi napsauttaa työkalurivillä **Tallenna**-painiketta ![Tallenna](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Tallenna").
+1. Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
+2. Kaksoisnapsauta muokattavaa raporttiryhmää.
+3. Tee tarvittavat muutokset **Raporttiryhmä**-välilehdessä.
+4. Tallenna muokattu raporttiryhmä valitsemalla **Tiedosto**-valikossa **Tallenna**. Vaihtoehtoisesti voi napsauttaa työkalurivillä **Tallenna**-painiketta ![Tallenna](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Tallenna").
 
-**Huomautus:** Jos olet ajoittanut raporttien luonnin tapahtumaan tietyin väliajoin, voit ohittaa nämä asetukset ja luoda raportin heti.
+> [HUOMAUTUS] Jos olet ajoittanut raporttien luonnin tapahtumaan tietyin väliajoin, voit ohittaa nämä asetukset ja luoda raportin heti.
 
 ### <a name="generate-a-report-group-report"></a>Raporttiryhmän raportin luonti
 
-1.  Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
-2.  Avaa luotava raporttiryhmä.
-3.  Luo raportteja napsauttamalla **Luo raportti** -painiketta ![Luo raportti](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Luo raportti").
+1. Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
+2. Avaa luotava raporttiryhmä.
+3. Luo raportteja napsauttamalla **Luo raportti** -painiketta ![Luo raportti](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Luo raportti").
 
 ### <a name="delete-a-report-group"></a>Raporttiryhmän poistaminen
 
-1.  Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
-2.  Napsauta poistettavaa raporttiryhmää hiiren kakkospainikkeella ja valitse sitten **Poista**.
-3.  Kun vahvistussanoma avautuu, valitse **Kyllä**.
+1. Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
+2. Napsauta poistettavaa raporttiryhmää hiiren kakkospainikkeella ja valitse sitten **Poista**.
+3. Kun vahvistussanoma avautuu, valitse **Kyllä**.
 
 ## <a name="report-group-tab-controls"></a>Raporttiryhmä-välilehden ohjausobjektit
 Seuraavassa taulukossa käsitellään **Raporttiryhmä**-välilehden ohjausobjekteja.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Ohjausobjekti</th>
 <th>Kuvaus</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Yritys-, tiedot- ja päivä-määritysten ohittaminen yksittäisistä raporttimäärityksistä</td>
 <td>Valitse tämä valintaruutu ohittaaksesi tähän raporttiryhmään kuuluvien raporttien yksittäiset raporttimääritykset vain näiden raporttien luonnissa.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Yrityksen nimi</td>
 <td>Valitse yritys, jota käytetään raporteissa.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Erittelytaso</td>
 <td>Määritä raporttien yksityiskohtien taso.
 <ul>
@@ -110,7 +109,7 @@ Seuraavassa taulukossa käsitellään **Raporttiryhmä**-välilehden ohjausobjek
 <li><strong>Rahoitus, Tili &amp; Tapahtuma</strong>− Raportti, joka sisältää korkean tason yhteenveto- ja tapahtumatietoja.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Alustava</td>
 <td>Määritä raportteihin sisältyvät tehtävätyypit.
 <ul>
@@ -119,11 +118,11 @@ Seuraavassa taulukossa käsitellään **Raporttiryhmä**-välilehden ohjausobjek
 <li><strong>Vain kirjaamattomat aktiviteetit</strong> – Sisällytä vain ne tapahtumat ja saldot, jotka syötetään mutta joita ei kirjata taloushallinnon tietoihin.</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Sisällytetään kaikki raportointivaluutat</td>
 <td>Mahdolliset Microsoft Dynamics ERP -järjestelmässä määritetyt lisäraportointivaluutat on lueteltu täällä. Valitsemalla tämän valintaruudun voit luoda lisäraportteja annetuissa valuutoissa. Niitä raportteja voi sitten tarkastella verkkokatseluohjelmassa napsauttamalla <strong>Valuutta</strong>-painiketta ja valitsemalla valuutan.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Päivämäärätietoa ei ole tallennettu raportin määrityksiin</td>
 <td><ul>
 <li>Perusjakso</li>
@@ -132,14 +131,14 @@ Seuraavassa taulukossa käsitellään **Raporttiryhmä**-välilehden ohjausobjek
 </ul>
 Vain oletusarvoiset perusjaksoasetukset tallennetaan raportin määrityksiin.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Päivämäärätiedot on tallennettu raportin määrityksiin</td>
 <td><ul>
 <li>Raporttipäivämäärä</li>
 <li>Oletusperuskausi</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Raportit ryhmässä</td>
 <td>Lisää, poista ja tilaa uudelleen raporttiryhmän raportteja.
 <ul>
@@ -151,13 +150,7 @@ Vain oletusarvoiset perusjaksoasetukset tallennetaan raportin määrityksiin.</t
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
-
-
-
 

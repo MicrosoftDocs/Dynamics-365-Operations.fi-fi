@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 58653d6e991f1896673a07e3057bd516c74edd76
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -49,6 +49,8 @@ Huomautus: Alla mainitut toiminnot koskevat Dynamics 365 for Retail -sovelluksen
 | 707 | Aktivoi laite | Aktivoi nykyinen laite sallimalla todennettujen käyttäjien määrittää yhteystiedot ja määrittää liitteen ja kassakoneen tunnus. | En | En | En | En | En |
 | 134 | Lisää liitos | Lisää ennalta valittu liitos tapahtumaan. Valitse liitos **Painikkeen ominaisuudet** -sivulla. | Kyllä | Kyllä | En | Kyllä | En |
 | 135 | Lisää liitos luettelosta | Lisää liitos tapahtumaan valitsemalla se luettelosta. | Kyllä | Kyllä | Kyllä | Kyllä | En |
+| 137 | Lisää liitos asiakkaaseen | Lisää liitos asiakkaaseen **Asiakastiedot**-sivulla. | En | En | En | Kyllä | En |
+| 138 | Poista asiakkaan liitos | Poista liitos **Asiakastiedot**-sivulla. | En | En | En | Kyllä | En |
 | 643 | Lisää kuponkikoodi | Lisää kuponki syöttämällä sen koodi myyntipisteessä. | Kyllä | Kyllä | En | Kyllä | En |
 | 117 | Lisää kanta-asiakaskortti | Käyttäjää pyydetään syöttämään kanta-asiakaskortin numero. Se lisätään nykyiseen tapahtumaan. | Kyllä | Kyllä | En | Kyllä | En |
 | 136 | Lisää sarjanumero | Tämän toiminnon avulla käyttäjä voi määrittää valitun tuotteen sarjanumeron. | Kyllä | Kyllä | En | Kyllä | En |

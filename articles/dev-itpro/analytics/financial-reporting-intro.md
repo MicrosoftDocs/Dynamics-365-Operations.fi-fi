@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 3e12037f14e7e01764fd6d18f52854c35a09d196
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: ae2087cf142fc2670bda3c542b336f12978178a6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,34 +35,31 @@ Finance and Operationsin talousraportoinnin avulla rahoitus- ja liiketoiminta-as
 Dimensiotuki sisältyy talousraportointiin. Niinpä tilisegmentit tai -dimensiot ovat heti käytettävissä. Lisätyökaluja tai -määrityksiä ei tarvita.
 
 ## <a name="financial-reporting-setup"></a>Taloushallinnon raportoinnin asetukset
-**Taloushallinnon raportoinnin asetukset** -sivulla on järjestelmän kaikkien taloushallinnon dimensioiden luettelo. **Kirjanpito** > **Kirjanpidon asetukset** > **Taloushallinnon raportoinnin asetukset**. 
+**Taloushallinnon raportoinnin asetukset** -sivulla on järjestelmän kaikkien taloushallinnon dimensioiden luettelo. **Kirjanpito** \> **Kirjanpidon asetukset** \> **Taloushallinnon raportoinnin asetukset**.
 
 **Taloushallinnon raportoinnin asetukset** -sivulla on kaksi osaa, jotka määrittävät raportin tiedot taloushallinnon raportoinnissa seuraavasti:
 
-•   **Dimensiot-välilehti** - Yrityksillä on käytössä erilaisia dimensioita ja tilirakenteita. Tämän vuoksi raporttien kaikkien taloushallinnon dimensioiden tarkastelujärjestystä ei voi määrittää. Tällä sivulla voit määrittää järjestyksen, jossa taloushallinnon dimensiot näkyvät, kun raportti muodostetaan ja kun sitä tarkastellaan talousraportoinnissa.
-
-•   **Määritteet-välilehdessä** voit määrittää, käytetäänkö **toimittajia** ja **asiakkaita** määritteinä suodatuksessa ja raportin rakenteessa. Toimittajan ja asiakkaan raportoinnista tulee arvokasta vain, jos et syötä useita toimittajia tai asiakkaita yhteen tositteeseen tapahtumien kirjaamisen yhteydessä. Toimittajan ja/tai asiakkaan valitseminen pidentää integrointiin kuluvaa aikaa.
-
-
+- **Dimensiot-välilehti** – Yrityksillä on käytössä erilaisia dimensioita ja tilirakenteita. Tämän vuoksi raporttien kaikkien taloushallinnon dimensioiden tarkastelujärjestystä ei voi määrittää. Tällä sivulla voit määrittää järjestyksen, jossa taloushallinnon dimensiot näkyvät, kun raportti muodostetaan ja kun sitä tarkastellaan talousraportoinnissa.
+- **Määritteet-välilehdessä** voit määrittää, käytetäänkö **toimittajia** ja **asiakkaita** määritteinä suodatuksessa ja raportin rakenteessa. Toimittajan ja asiakkaan raportoinnista tulee arvokasta vain, jos et syötä useita toimittajia tai asiakkaita yhteen tositteeseen tapahtumien kirjaamisen yhteydessä. Toimittajan ja/tai asiakkaan valitseminen pidentää integrointiin kuluvaa aikaa.
 
 ## <a name="financial-reporting-components"></a>Talousraportoinnin osat
 Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talousraportoinnin osien avulla.
 
-| Komponentti        | Toiminnot                                                                                                                                                                                                                                                                           | Lisätiedot                                                                          |
-|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Report Designer  | Luo raportin rakenneosia, joita yhdistämällä voidaan määrittää ja luoda raportti. Ohjattu raportin luominen ohjaa kokemattomampia käyttäjiä suunnitteluprosessissa. Kokeneet käyttäjät voivat luoda tarvittaessa uusia raportin rakenneosia tai muokata aiemmin luotuja rakenneosia. |                                                                                                 |
-| Raportin aikataulut | Ajoita yksi raportti tai raporttiryhmä siten, että se luodaan säännöllisesti.                                                                                                                                                                                          | [Raportin luominen](generate-financial-report.md) |
+| Komponentti        | Toiminnot | Lisätiedot |
+|------------------|-----------|------------------------|
+| Report Designer  | Luo raportin rakenneosia, joita yhdistämällä voidaan määrittää ja luoda raportti. Ohjattu raportin luominen ohjaa kokemattomampia käyttäjiä suunnitteluprosessissa. Kokeneet käyttäjät voivat luoda tarvittaessa uusia raportin rakenneosia tai muokata aiemmin luotuja rakenneosia. | |
+| Raportin aikataulut | Ajoita yksi raportti tai raporttiryhmä siten, että se luodaan säännöllisesti. | [Raportin luominen](generate-financial-report.md) |
 
 ## <a name="features"></a>Ominaisuudet
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Ominaisuus</th>
 <th>kuvaus</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Raportin suunnitteluohjelman joustavuus</td>
 <td>Report Designerissa on seuraavat raportin suunnittelussa käytettävät raportointivaihtoehdot:
 <ul>
@@ -70,9 +67,10 @@ Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talou
 <li>dimension kuvausten muotoilun ja näyttämisen hallinta</li>
 <li>raportin rakenneosista pois jätettyjen tilien tai dimensioiden tunnistaminen</li>
 <li>juoksevien ennusteiden otsikoiden muotoileminen.</li>
-</ul></td>
+</ul>
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Talousraporttiyhteistyö</td>
 <td>Raportteja voi luoda ja jakaa seuraavien ominaisuuksien avulla.
 <ul>
@@ -80,9 +78,10 @@ Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talou
 <li>Vie vain luku -muodossa oleva XPS-muoto, sillä se parantaa asiakirjan suojausta digitaalisten allekirjoitusten avulla.</li>
 <li>Vie Microsoft Excelin laskentataulukkoon.</li>
 <li>Voit jakaa raportteja luomalla raporttien linkkejä sisältäviä sähköpostiviestejä.</li>
-</ul></td>
+</ul>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Vuorovaikutteisen raportin tarkasteleminen</td>
 <td>Vuorovaikutteisten ominaisuuksien avulla voi suorittaa seuraavia tehtäviä:
 <ul>
@@ -99,8 +98,4 @@ Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talou
 
 ## <a name="additional-resources"></a>Lisäresurssit
 [Raportin luominen](generate-financial-report.md)
-
-
-
-
 

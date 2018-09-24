@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 44f017fc3460b83b730f2f7c909c6b88480dd918
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -42,7 +42,6 @@ Kaikki sisällön summat näytetään järjestelmän valuutassa. Järjestelmän 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
 
 **Käytäntöpäällikön** Power BI -sisältö näkyy **Projektinhallinta**-työtilassa.
-
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raportit, jotka sisältyvät Power BI -sisältöön
 
@@ -85,8 +84,7 @@ Seuraavissa osissa käsitellään kussakin yksikössä käytössä olevat kooste
 
 | Tärkeät koostemitat | Kenttä                                             | kuvaus |
 |---------------------------|---------------------------------------------------|-------------|
-| Projektien lukumäärä        | COUNTA(ProjectAccountingCube\_Projects[PROJECTS]) | Käytettävissä olevien projektien määrä. |
-
+| Projektien lukumäärä        | COUNTA(ProjectAccountingCube\_Projects\[PROJECTS\]) | Käytettävissä olevien projektien määrä. |
 
 ### <a name="entity-projectaccountingcubeforecasts"></a>Yksikkö: ProjectAccountingCube\_Forecasts
 **Tietolähde:** ProjTransBudget
@@ -109,18 +107,16 @@ Seuraavissa osissa käsitellään kussakin yksikössä käytössä olevat kooste
 
 | Tärkeät koostemitat    | Kenttä | kuvaus |
 |------------------------------|-------|-------------|
-| Kustannustehokkuuden indeksi       | ProjectAccountingCube\_Projects[Ansaittu arvo] ÷ ProjectAccountingCube\_Projects[Valmiiden tehtävien toteutuneet kokonaiskustannukset] | Toteutuneilla kokonaiskustannuksilla jaetun ansaitun kokonaisarvon laskelma. |
-| Aikataulutehokkuuden indeksi   | ProjectAccountingCube\_Projects[Ansaittu arvo] ÷ ProjectAccountingCube\_Projects[Valmiiden tehtävien suunnitellut kokonaiskustannukset] | Suunnitelluilla kokonaiskustannuksilla jaetun ansaitun kokonaisarvon laskelma. |
-| Työn valmiusprosentti | Työn valmiusprosentti = ProjectAccountingCube\_Projects[Valmiiden tehtävien toteutuneet kokonaiskustannukset] ÷ (ProjectAccountingCube\_Projects[Valmiiden tehtävien toteutuneet kokonaiskustannukset] + ProjectAccountingCube\_Projects[Projektin suunnitellut kokonaiskustannukset] – ProjectAccountingCube\_Projects[Valmiiden tehtävien suunnitellut kokonaiskustannukset]) | Työn valmistumisprosentti yhteensä, joka perustuu projektin valmistuneiden tehtävien toteutuneisiin kokonaiskustannuksiin ja suunniteltuihin kustannuksiin. |
-| Toteutunut lasketettavien tuntien suhde  | ProjectAccountingCube\_Projects[Projektin toteutuneet laskutettavat käyttötunnit yhteensä] ÷ (ProjectAccountingCube\_Projects[Projektin toteutuneet laskutettavat tunnit yhteensä] + ProjectAccountingCube\_Projects[Projektin toteutuneet laskutettavat rasitetunnit yhteensä]) | Toteutuneiden laskutettavien tuntien kokonaismäärä käyttötuntien ja rasitetuntien perusteella. |
-| Ansaittu arvo                 | ProjectAccountingCube\_Projects[Projektin suunnitellut kokonaiskustannukset] × ProjectAccountingCube\_Projects[Työn valmiusprosentti] | Suunnitellut kokonaiskustannukset kerrottuna työn valmistumisprosentilla. |
+| Kustannustehokkuuden indeksi       | ProjectAccountingCube\_Projects\[Ansaittu arvo\] ÷ ProjectAccountingCube\_Projects\[Valmiiden tehtävien toteutuneet kokonaiskustannukset\] | Toteutuneilla kokonaiskustannuksilla jaetun ansaitun kokonaisarvon laskelma. |
+| Aikataulutehokkuuden indeksi   | ProjectAccountingCube\_Projects\[Ansaittu arvo\] ÷ ProjectAccountingCube\_Projects\[Valmiiden tehtävien suunnitellut kokonaiskustannukset\] | Suunnitelluilla kokonaiskustannuksilla jaetun ansaitun kokonaisarvon laskelma. |
+| Työn valmiusprosentti | Työn valmiusprosentti = ProjectAccountingCube\_Projects\[Valmiiden tehtävien toteutuneet kokonaiskustannukset\] ÷ (ProjectAccountingCube\_Projects\[Valmiiden tehtävien toteutuneet kokonaiskustannukset\] + ProjectAccountingCube\_Projects\[Projektin suunnitellut kokonaiskustannukset\] – ProjectAccountingCube\_Projects\[Valmiiden tehtävien suunnitellut kokonaiskustannukset\]) | Työn valmistumisprosentti yhteensä, joka perustuu projektin valmistuneiden tehtävien toteutuneisiin kokonaiskustannuksiin ja suunniteltuihin kustannuksiin. |
+| Toteutunut lasketettavien tuntien suhde  | ProjectAccountingCube\_Projects\[Projektin toteutuneet laskutettavat käyttötunnit yhteensä\] ÷ (ProjectAccountingCube\_Projects\[Projektin toteutuneet laskutettavat tunnit yhteensä\] + ProjectAccountingCube\_Projects\[Projektin toteutuneet laskutettavat rasitetunnit yhteensä\]) | Toteutuneiden laskutettavien tuntien kokonaismäärä käyttötuntien ja rasitetuntien perusteella. |
+| Ansaittu arvo                 | ProjectAccountingCube\_Projects\[Projektin suunnitellut kokonaiskustannukset\] × ProjectAccountingCube\_Projects\[Työn valmiusprosentti\] | Suunnitellut kokonaiskustannukset kerrottuna työn valmistumisprosentilla. |
 
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Yksikkö: ProjectAccountingCube\_TotalEstimatedCosts 
 **Tietolähde:** ProjTable
 
-
-|    Tärkeät koostemitat    |        Kenttä        |                                          kuvaus                                           |
-|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
+| Tärkeät koostemitat       | Kenttä               | kuvaus |
+|---------------------------------|---------------------|-------------|
 | Valmiin tehtävän suunniteltu kustannus | Sum(TotalCostPrice) | Kaikkien projektitapahtumatyyppien ja valmiiden tehtävien kokonaiskustannushinta-arviot. |
-
 

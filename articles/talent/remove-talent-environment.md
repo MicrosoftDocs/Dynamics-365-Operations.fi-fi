@@ -26,6 +26,8 @@ ms.lasthandoff: 08/08/2018
 ---
 # <a name="remove-talent-environments"></a>Poista Talent-ympäristöt
 
+[!include [banner](includes/banner.md)]
+
 Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Talentin testi- tai tuotantoympäristön poistoprosessista.
 
 ## <a name="removing-a-test-drive-environment"></a>Testiympäristön poistaminen

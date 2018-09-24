@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 532834b377cfb8eda4902c387a850314302b22d8
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,13 +39,12 @@ Power BI -sisällön **edut** näkyvät **Etujen hallinta** -työtilassa, jos k�
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raportit, jotka sisältyvät Power BI -sisältöön
 Power BI -sisällön **etuihin** sisältyvissä raporteissa on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
 
-| Raportti                       | Sisältö                                                                                       |
-|------------------------------|------------------------------------------------------------------------------------------------|
-| Edun rekisteröinnin yleiskatsaus  | Eniten ja vähiten rekisteröidyt suunnitelmat, työntekijäryhmäkohtainen rekisteröityminen ja valitut etusuunnitelmavaihtoehdot |
-| Työsuhde-edut            | Työntekijän voimaanastuminen valitun edun mukaan                                                        |
-                                                                                             
-Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+| Raportti                      | Sisältö                                                                                       |
+|-----------------------------|------------------------------------------------------------------------------------------------|
+| Edun rekisteröinnin yleiskatsaus | Eniten ja vähiten rekisteröidyt suunnitelmat, työntekijäryhmäkohtainen rekisteröityminen ja valitut etusuunnitelmavaihtoehdot |
+| Työsuhde-edut           | Työntekijän voimaanastuminen valitun edun mukaan                                                        |
 
+Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 **Etujen** Power BI -sisällön raporteissa käytetään seuraavia tietoja. Seuraavassa taulukossa on esitetty yksiköt, joihin sisältö perustuu.
@@ -72,6 +71,4 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 | Työntekijän nimi            | Etunimi , sukunimi ja koko nimi                                                                       | Nykyinen työntekijä, poistettu työntekijä, työntekijätrendi |
 | Työntekijän nimike           | Nimike ja virkaikä                                                                                   | Nykyinen työntekijä, poistettu työntekijä, työntekijätrendi |
 | Työntekijätrendi           | Työntekijät ajan kuluessa, henkilöstömäärä, yritys ja toimi                                                        | Yritys, kompensaatio, maantieteellinen sijainti, työntekijän nimi, raportoinnin kohde, kalenterin vastakirjaus, päivämäärä, työntekijän nimike, demografia, työsuhde, työ, edut |
-
-
 
