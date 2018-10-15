@@ -3,7 +3,7 @@ title: Yleiskustannuslaskenta
 description: "Tässä aiheessa kuvataan tyypillinen yleiskustannusten laskenta- ja kohdistusprosessi."
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 549e9b4b073a4e93dd3a1dd52dd6f43e7420a31b
+ms.sourcegitcommit: 12ae99c15bafcd9cc08b30903fe3f251f446b17d
+ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 10/05/2018
 
 ---
 
@@ -191,8 +191,7 @@ Joissain tapauksissa osa kustannuksesta on kiinteä ja loppuosa perustuu kulutuk
 </tbody>
 </table>
 
-Lisätietoja kustannustoiminnasta on kohdassa Kustannustoimintakäytännöt. (Huomaa, että ohjeaihe ei ole vielä valmis; se on saatavilla pian.)
-
+Lisätietoja on kohdassa [Kustannustoimintakäytännön luominen ja määrittäminen kustannusten hallinnan yksikköön](tasks/create-assign-cost-behavior-policy-cost-control-unit.md).
 ### <a name="step-2-process-the-cost-distribution-calculation"></a>Vaihe 2: Käsittele kustannusten jaon laskenta
 
 Kustannusten jakoa käytetään kustannusten jakamiseen yhdestä kustannusobjektista toiseen (tai useampaan kustannusobjektiin) määrittämällä asiaankuuluvan kohdistusperusteen. Kustannusten jako ja kustannusten kohdistus eroavat toisistaan sillä, että kustannusten jako tapahtuu aina alkuperäisen kustannuksen ensisijaisen kustannuselementin tasolla.
@@ -430,7 +429,7 @@ Kiinteä kustannus tulisi jakaa tasaisesti yksittäisille kustannusobjekteille, 
 </tbody>
 </table>
 
-Lisätietoja kustannusten jaosta ja kohdistusperusteita löydät kohdasta Kustannusten jakokäytännöt ja kohdistusperusteet. (Huomaa, että ohjeaihe ei ole vielä valmis; se on saatavilla pian.)
+Lisätietoja on kohdassa [Jakelukäytännön luominen ja määrittäminen kustannusten hallinnan yksikköön](tasks/create-assign-cost-distribution-policy-cost-control-unit.md). 
 
 ### <a name="step-3-process-the-overhead-rate-calculation"></a>Vaihe 3: Käsittele yleiskustannustason laskenta
 
@@ -612,13 +611,13 @@ Seuraavassa taulukossa on esitetty tulos, kun Henkilöstöhallinnon projekteja k
 <td>10 001</td>
 <td>Sähkö</td>
 <td>Muuttuva kulu</td>
-<td>10,00</td>
+<td>10.00</td>
 <td>31.1.2017</td>
 </tr>
 </tbody>
 </table>
 
-Lisätietoja yleiskustannustason käytännöistä löydät kohdista Yleiskustannusten käytännöt ja Kohdistusperusteet. (Huomaa, että ohjeaihe ei ole vielä valmis; se on saatavilla pian.)
+Lisätietoja on kohdassa [Yleisen laskennan suorittaminen](cost-rollup.md#perform-overhead-calculation).
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Vaihe 4: Käsittele kustannusten kohdistuksen laskenta
 
@@ -725,7 +724,8 @@ Kustannusobjekti CC004 Pakkaus liittyy useaan kustannusobjektiin. Kulutetun suur
 </tbody>
 </table>
 
-**Huomautus:** Finance and Operationsissa tilastomittaukset, kuten tuotteen kuluttamat tuotantotunnit, voidaan johtaa lähdetiedoista. Lisätietoja tilastomittausten lähteistä on kohdassa Tilastomittauksen lähdemallit. (Huomaa, että ohjeaihe ei ole vielä valmis; se on saatavilla pian.) Seuraavassa taulukossa näytetään tulos, kun HR-palveluita käytetään kohdistusperusteena kokonaiskustannukselle (kiinteä ja muuttuva kustannus).
+> [!NOTE]
+> Finance and Operationsissa tilastomittaukset, kuten tämän tuotteen kuluttamat tuotantotunnit, voidaan johtaa lähdetiedoista. Lisätietoja on kohdassa [Tilastomittauksen lähdemalli](statistical-measure-provider-template.md#statistical-measure-provider-template). Seuraavassa taulukossa näytetään tulos, kun henkilöstöhallinnon palveluja käytetään kohdistusperusteena kokonaiskustannukselle (kiinteät ja muuttuvat kustannukset).
 
 <table>
 <thead>
@@ -1412,7 +1412,7 @@ Kirjanpidossa kirjataan tyhjään kustannuspaikkatunnukseen sähkökustannus arv
 </table>
 
 > [!NOTE]
-> Tässä ohjeaiheessa esitellään, miten ensisijainen kustannuselementti, 10001 Sähkö, virtaa kustannusobjektien läpi. Tästä syystä tämä yleiskustannus kohdistetaan organisaation alimmalle tasolle. Toisin sanoen alimman tason kustannusobjektit kantavat kustannuksen. Jos tarvitset visuaalisen näkymän kustannuksen virrasta kustannusobjektien välillä, voit käyttää kustannuksen koontikäytäntösääntöjä kustannusvirran visualisointiin. Lisätietoja on kohdassa Kustannusten koontikäytäntösäännöt. (Huomaa, että ohjeaihe ei ole vielä valmis; se on saatavilla pian.)
+> Tässä ohjeaiheessa esitellään, miten ensisijainen kustannuselementti, 10001 Sähkö, virtaa kustannusobjektien läpi. Tästä syystä tämä yleiskustannus kohdistetaan organisaation alimmalle tasolle. Toisin sanoen alimman tason kustannusobjektit kantavat kustannuksen. Jos tarvitset visuaalisen näkymän kustannuksen virrasta kustannusobjektien välillä, voit käyttää kustannuksen koontikäytäntösääntöjä kustannusvirran visualisointiin. Lisätietoja on kohdassa [Kustannusten koonti](cost-rollup.md).
 
 
 

@@ -3,7 +3,7 @@ title: Vanhentuneet tai poistetut ominaisuudet
 description: "Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan."
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
-ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
+ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
+ms.openlocfilehash: ea24d6d63edc6f3bb1bf4a99d24d348af0d6cdbf
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -41,6 +41,52 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > [!Note]
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operationsin objekteista: [Tekniset viitetiedot](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operationsin versiossa.
+
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 ja ympäristöpäivitys 20
+
+### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Alareskontran kirjauskansion kirjanpitovientien eräsiirtosäännöt
+Synkrononinen siirtotila on vanhentunut kirjanpitotilin parametreissä.  Tämä tila korvataan vain asynkronisella ja ajoitetulla erällä, joka on jo olemassa siirtovaihtoehtona. 
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Poistamme synkronisen vaihtoehdon, koska se vaikuttaa järjestelmän suorituskykyyn. |
+| **Onko toinen ominaisuus korvannut?**   | Synkrononisen vaihtoehdon sijasta käytetään asynkronista ja ajoitettua erää.   |
+| **Tuotealueet, joihin vaikutetaan**         | Kirjanpitotili, ostoreskontra, myyntireskontra, hankinta, kulut    |
+| **Käytön asetukset**              | Kaikki  |
+| **Tila**                         | Vanhentunut – Toiminnon poiston tavoiteajankohta on versio 10.0.|
+
+### <a name="electronic-reporting-for-russia"></a>Sähköinen raportointi Venäjää varten
+Toiminto ilmoitusten .txt- ja .xml-tiedostomuotojen määrittämiseen. 
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan sähköisellä raportoinnilla. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. |
+| **Tuotealueet, joihin vaikutetaan**         | Kirjanpito |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Poistettu Dynamics 365 for Finance and Operationsin versiosta 8.1 alkaen ympäristöpäivityksellä 20. |
+
+### <a name="financial-reports-generator-for-russia"></a>Rahoitusraporttien luonti Venäjää varten
+Tiedonkeruun määritystyökalu kirjanpitoa ja veroraportteja varten sekä tietojen viemiseksi XLS- ja DOC-raporttimalleihin. Toiminnalliset osat: tietojen vienti XLS- ja DOC-raporttimalleihin, kyselyt, kiinteät edellytykset poistetaan. 
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Poisteut osat korvataan sähköisellä raportoinnilla. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. Tilinpäätösten määrityksen käyttöliittymää olisi käytettävä tiedonkeruusääntöjen määrittämiseen kirjanpitotilien tai verorekistereiden mukaan. Sähköisessä raportoinnissa olisi määritettävä äännöt, jotka koskevat tietojen vientiä erilaisiin tiedostotyyppeihin, kiinteitä edellytyksiä ja kyselyjen kaltaisten tietojen keruuta. |
+| **Tuotealueet, joihin vaikutetaan**         | Kirjanpitotili. |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Poistettu Dynamics 365 for Finance and Operationsin versiosta 8.1 alkaen ympäristöpäivityksellä 20. |
+
+### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integrointi ulkoisten toimittajien kanssa sähköisen raportoinnin lähettämiseksi viestintäkanavien kautta Venäjää varten
+Ilmoitusten luotujen sähköisten tiedostojen vienti kansioon, josta ne lähetetään edelleen sähköisen raportoinnin virallisille palveluntarjoajille, sekä tilan tuonti takaisin.
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvattu sähköisten viestien määritettävällä toiminnolla. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä.  |
+| **Tuotealueet, joihin vaikutetaan**         | Kirjanpitotili, vero |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Poistettu Dynamics 365 for Finance and Operationsin versiosta 8.1 alkaen ympäristöpäivityksellä 20. |
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 ja ympäristöpäivitys 15
 Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version ominaisuus ei ole vanhentunut. Ympäristöpäivitys 15 on kumulatiivinen, ja siinä on uusia tai ympäristöpäivityksistä 13, 14 ja 15 muuttuneita ominaisuuksia.

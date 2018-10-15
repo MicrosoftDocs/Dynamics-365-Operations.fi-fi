@@ -3,7 +3,7 @@ title: Luo raportit
 description: "Tässä aiheessa on tietoja talousraporttien luonnista."
 author: aprilolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: b1dea07589b7fe953ec47b204441d044c19b5020
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -32,19 +32,16 @@ ms.lasthandoff: 08/13/2018
 
 Tässä aiheessa on tietoja talousraporttien luonnista.
 
-Luo raportti avaamalla raportin määritys ja valitsemalla sitten Luo-painike työkalurivillä. Näytölle avautuu Raporttijonon tila -ikkuna, joka näyttää raporttisi paikan jonossa. Luotu raportti avautuu oletusarvoisesti verkkokatseluohjelmassa.
-
-> [!NOTE]
-> Voit luoda raportteja vain kansioihin ja sijainteihin, joiden käyttöoikeudet sinulla on.
+Luo raportti avaamalla raportin määritys ja valitsemalla sitten Luo-painike työkalurivillä. Näytölle avautuu Raporttijonon tila -ikkuna, joka näyttää raporttisi paikan jonossa. Luotu raportti avautuu oletuksena Web Viewerissä.
 
 Seuraavat raporttien luontivaihtoehdot ovat saatavilla:
 
 - Määritä aikataulu raportin tai raporttiryhmän automaattista luontia varten
 - Tarkista, ettei raportista puutu tilejä tai tietoja ja vahvista raportin virheettömyys
 
-Raportteja luotaessa käytetään Raportin määritys -välilehdissä määritettyjä asetuksia. Voit määrittää Tuotos ja jakelu -välilehdessä raporttikirjaston sijainnin. Tällä tavoin raportti on helppo jakaa.
+Raportteja luotaessa käytetään Raportin määritys -välilehdissä määritettyjä asetuksia.
 
-## <a name="generate-a-financial-report"></a>Luo raportti
+## <a name="generate-a-financial-report"></a>Raportin luominen
 
 Voit luoda talousraportin Microsoft Dynamics 365 for Finance and Operations -sovelluksen avulla valitsemalla **Kirjanpito** \> **Kyselyt ja raportit** \> **Talousraportit**.
 
@@ -55,10 +52,7 @@ Kun raportti on luotu, sitä voi tarkastella **Raportit**-osassa.
 
 Voit **tarkastella** raporttia tai **poistaa** sen.
 
-Voit luoda raportti **raporttien suunnitteluohjelman** avulla avaamalla raporttimäärityksen ja valitsemalla sitten työkalupalkin Luo-painikkeen. Näytölle avautuu Raporttijonon tila -ikkuna, joka näyttää raporttisi paikan jonossa. Luotu raportti avautuu oletusarvoisesti verkkokatseluohjelmassa.
-
-> [!NOTE]
-> Voit luoda raportteja vain kansioihin ja sijainteihin, joiden käyttöoikeudet sinulla on.
+Voit luoda raportti **raporttien suunnitteluohjelman** avulla avaamalla raporttimäärityksen ja valitsemalla sitten työkalupalkin Luo-painikkeen. Näytölle avautuu Raporttijonon tila -ikkuna, joka näyttää raporttisi paikan jonossa. Luotu raportti avautuu oletuksena Web Viewerissä.
 
 ## <a name="schedule-report-generation"></a>Raporttien luonnin ajoittaminen
 Useissa yrityksissä on tietty raporttijoukko, joka suoritetaan tietyin aikavälein liiketoimintaprosessien tarpeiden mukaan. Voit ajoittaa raportin muodostumaan säännöllisesti, esim. päivittäin, viikoittain, kuukausittain tai vuosittain. Voit ajoittaa yksittäisiä raportteja tai raporttiryhmiä, jotka sisältävät useita yrityksiä. Jokaiselle sisällytettävälle yritykselle on määritettävä tunnistetiedot, jotka voivat olla esimerkiksi samat kuin raporttipuumäärityksessä. Jos tunnistetietosi eivät ole voimassa, raportti näyttää sinulle vain ne tiedot, joihin sinulla on käyttöoikeus, kuten yritys, johon olet kirjautunut kyseisellä hetkellä. Tuotostiedot luetaan ensin raporttiryhmästä ja sen jälkeen yksittäisistä raporteista.

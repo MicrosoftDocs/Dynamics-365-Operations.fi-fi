@@ -3,7 +3,7 @@ title: Mallituoterakenteet
 description: "Mallituoterakenteen avulla luodaan säännöllisesti huollettavien huoltokohteiden komponentit sisältävä vakioitu luettelo."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/01/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6e3a16b9938f6d4222e0a95078356f457e71a1bb
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: f9c61ecd79f38301f46e3c21a33ec2801f33d19f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 09/21/2018
 
 ---
 
@@ -105,7 +105,7 @@ Mallituoterakenteiden käyttämiseksi sinun on määritettävä kaksi numerosarj
 
 
 > [!NOTE]
-> <P>Numerosarjoja käytetään Microsoft Dynamics AX:ssä tunnisteiden kohdistamiseksi tietueisiin, jotka edellyttävät niitä. Ennen kuin voit liittää numerosarjan mallituoterakenteeseen tuoterakennehistorian rivinumeroon, numerosarjakoodit on määritettävä.</P>
+> <P>Numerosarjoja käytetään tunnisteiden kohdistamiseksi tietueisiin, jotka edellyttävät niitä. Ennen kuin voit liittää numerosarjan mallituoterakenteeseen tuoterakennehistorian rivinumeroon, numerosarjakoodit on määritettävä.</P>
 
 
 ## <a name="set-up-number-sequences"></a>Määritä numerosarjat

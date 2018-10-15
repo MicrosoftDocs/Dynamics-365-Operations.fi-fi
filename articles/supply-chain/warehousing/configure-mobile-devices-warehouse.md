@@ -1,9 +1,9 @@
 ---
-title: "Konfiguroi varastotyön mobiililaitteet"
-description: "Tässä artikkelissa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille."
+title: "Varastotyön mobiililaitteiden määrittäminen"
+description: "Tässä aiheessa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,18 +19,18 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
+ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
+ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfiguroi varastotyön mobiililaitteet
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Varastotyön mobiililaitteiden määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille.
+Tässä aiheessa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille.
 
 **Huomautus:** Tämä ohjeaihe koskee varastonhallintamoduulin ominaisuuksia. Se ei koske inventaariohallintamoduulin ominaisuuksia. Valikkovaihtoehdot, jotka näkyvät valikoissa varaston mobiililaitteessa, määritetään **Mobiililaitteen valikkovaihtoehdot** -sivulla. Koska samat valikkovaihtoehdot voivat olla eri valikoissa, on helppo määrittää valikkorakenteet niin, että vain tietyntyyppiset työt näkyvät tietyille käyttäjille. Voit määrittää valikkovaihtoehdot suorittamaan seuraavat tehtävät:
 
@@ -193,7 +193,7 @@ Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, 
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Valikkovaihtoehdon määrittäminen käsittelemään olemassa olevat työt
-Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkovaihtoehdot käsittelemään työt, jotka on luotu aiemmin. Määritä **Tila**-kentän arvoksi **Työ** ja valitse **Käytä nykyistä työtä** -vaihtoehto. **Yleiset**-välilehteen tulee saataville joitakin lisävaihtoehtoja. Voit valvoa valikkovaihtoehdon käyttöä määrittämällä yhden tai useamman työluokan **Työluokka**-pikavälilehdessä. Työluokat määrittävät työn, jota valikkovaihtoehdolla voi käsitellä. Työluokan kautta voidaan myös myöntää käyttöoikeus tiettyihin käyttäjärooleihin tai erityyppisten työvaiheiden erilliskäsittelyyn. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot.
+Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkovaihtoehdot käsittelemään työt, jotka on luotu aiemmin. Määritä **Tila**-kentän arvoksi **Työ** ja valitse **Käytä nykyistä työtä** -vaihtoehto. **Yleiset**-välilehteen tulee saataville joitakin lisävaihtoehtoja. Voit valvoa valikkovaihtoehdon käyttöä määrittämällä yhden tai useamman työluokan **Työluokka**-pikavälilehdessä. Työluokat määrittävät työn, jota valikkovaihtoehdolla voi käsitellä. Työluokan kautta voidaan myös myöntää käyttöoikeus tiettyihin käyttäjärooleihin tai erityyppisten työvaiheiden erilliskäsittelyyn. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot. Vaihtoehto voidaan valita **Ohjaaja**-kentässä **Mobiililaitteen valikkovaihtoehdot** -sivulla. 
 
 <table>
 
@@ -247,6 +247,10 @@ Tämä on hyödyllinen vaihtoehto esimerkiksi silloin, kun useita kuormalavoja a
 <tr class="even">
 <td>Inventoinnin ryhmittely</td>
 <td>Työntekijä valitsee vyöhykkeen, työpoolin tai sijainnin ja Microsoft Dynamics 365 for Finance and Operations määrittää työn valinnan perusteella. Jos valitset tämän vaihtoehdon, voit valita toimintoruudusta myös <strong>Inventointi</strong>-vaihtoehdon määrittääksesi lisätiedot ja sen, kuinka monta kertaa työntekijän on toistettava laskenta, jos ero löydetään.</td>
+</tr>
+ <tr class="odd">
+<td>Kuljetuksen kuormaus</td>
+<td>Tämän toiminnon avulla useat varastotyöntekijät voivat ladata varaston samasta tai eri kuormasta samaan trukkiin. Koskee täysin tai osittain lähetettyjä kuormia.</td>
 </tr>
 </tbody>
 </table>
@@ -349,7 +353,7 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 <td>Valitse tämä vaihtoehto, jos annat työntekijöiden yhdistää myyntitilauksen tai kuormauksen työt yhteen työyksikköön. Työntekijä voi suorittaa työn vain myyntitilaukselle tai kuormalle. Tämä vaihtoehto on hyödyllinen esimerkiksi silloin, kun myyntitilauksen määrää täytyy kasvattaa sen jälkeen, kun myyntitilaukselle on luotu kuorma, lähetys ja työ. Tämä vaihtoehto on käytettävissä vain, kun valikkokohde käyttää olemassa olevaa työtä ja käyttäjä tai järjestelmä ohjaa työtä.</td>
 </tr>
 <tr class="even">
-<td>Ei mitään</td>
+<td>Valitse vanhin erä</td>
 <td>Määritä, onko työntekijän kerättävä sijainnin vanhin erä ensin. Valittavissa ovat seuraavat vaihtoehdot:
 <ul>
 <li><strong>Ei mitään</strong> – Työntekijä voi valita minkä tahansa erän sijainnista. Työntekijä saa sanomaa.</li>

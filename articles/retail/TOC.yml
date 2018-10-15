@@ -12,6 +12,8 @@
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: Käyttöönoton asetukset
       href: dev-itpro/choose-deployment.md
+    - name: Vähittäismyynnin tuen saaminen
+      href: retail-support.md
 - name: Tietoja järjestelmän elinkaaresta
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -35,9 +37,9 @@
       href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
     - name: Useiden LCS-projektien ja tuotantoympäristöjen ottaminen käyttöön samassa Azure Active Directory -vuokraajassa
       href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
-    - name: Finance and Operations -sovelluksen Retail-projektien käyttöönotto
+    - name: Finance and Operations Retail -projektien käyttöönotto
       href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: 'Uusien ympäristöjen, VSTS:n ja haarojen määrittäminen Retail-projekteille'
+    - name: 'Uusien ympäristöjen, Azure DevOpsin ja haarojen määrittäminen Retail-projekteille'
       href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
     - name: Retail-projektien koodin ja ympäristöjen päivittäminen
       href: dev-itpro/updating-environments.md
@@ -141,11 +143,11 @@
       href: product-variants-POS.md
     - name: Laitteiston oheislaitteet
       items:
-        - name: Vähittäismyynnin oheislaitteet
+        - name: Retail-oheislaitteet
           href: retail-peripherals-overview.md
         - name: Microsoftin testaamat myyntipisteen oheislaitteet
           href: microsoft-tested-pos-hardware-peripherals.md
-        - name: Vähittäismyynnin oheislaitesimulaattori
+        - name: Retail-oheislaitesimulaattori
           href: dev-itpro/retail-peripheral-simulator.md
         - name: 'Oheislaitteiden yhdistäminen POS:ään'
           href: define-maintain-channel-clients-registers-hw-stations.md
@@ -243,7 +245,7 @@
   items:
     - name: Tuotetietojen yleiskatsaus
       href: ../supply-chain/pim/product-information.md
-    - name: Vähittäismyyntihierarkiat
+    - name: Retail-hierarkiat
       href: retail-hierarchies.md
     - name: Määritteet ja määriteryhmät
       href: attribute-attributegroups-lifecycle.md
@@ -305,27 +307,37 @@
       href: ../talent/create-job.md
 - name: Lokalisointi- ja säädösominaisuudet
   items:
+    - name: Itä-Eurooppa
+      items:
+        - name: Retail-ennakkolaskut Itä-Eurooppaa varten
+          href: localizations/emea-eeu-advance-invoices-for-retail.md
+        - name: Retail-käteisvarojen hallinta Itä-Eurooppaa varten
+          href: localizations/emea-eeu-petty-cash-for-retail.md
+        - name: Retail-myyntilaskut ja myyntitilaukset Itä-Euroopan maissa
+          href: localizations/emea-eeu-retail-invoices.md
     - name: Ranska
       items:
-        - name: Kassapäätetoiminnot
+        - name: Kassakonetoiminnot
           href: localizations/emea-fra-cash-registers.md
-        - name: Kassapäätteiden käyttöönotto-ohjeet
+        - name: Käyttöönotto-ohjeet kassakoneille
           href: localizations/emea-fra-deployment.md
     - name: Intia
       items:
-        - name: Arvonlisäveron (GST) integrointi kassapäätteisiin
+        - name: Arvonlisäveron (GST) integrointi kassakoneisiin
           href: localizations/apac-ind-cash-registers.md
-        - name: Kassapäätteiden käyttöönotto-ohjeet
+        - name: Käyttöönotto-ohjeet kassakoneille
           href: localizations/apac-ind-loc-deployment-guidelines.md
+        - name: "Päivitys- ja\_N-1-tuki Intiaa varten"
+          href: localizations/apac-ind-n-1-for-india.md
     - name: Norja
       items:
-        - name: Kassapäätetoiminnot
+        - name: Kassakonetoiminnot
           href: localizations/emea-nor-cash-registers.md
-        - name: Kassapäätteiden käyttöönotto-ohjeet
+        - name: Käyttöönotto-ohjeet kassakoneille
           href: localizations/emea-nor-loc-deployment-guidelines.md
     - name: Ruotsi
       items:
-        - name: Kassapäätetoiminnot
+        - name: Kassakonetoiminnot
           href: localizations/emea-swe-cash-registers.md
         - name: 'Retail POS -integrointimalli, jossa on tarkistusyksiköt'
           href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
@@ -347,7 +359,7 @@
       href: tasks/configure-functionality-profile-sales-representative.md
     - name: Automaattisten tuotesuositusten määrittäminen
       href: tasks/configure-machine-learning-product-recommendations.md
-    - name: Laitteiden luominen ja liittäminen kassapäätteisiin
+    - name: Laitteiden luominen ja liittäminen kassakoneisiin
       href: tasks/create-associate-device.md
     - name: Laiteasemien luominen
       href: tasks/create-associate-hardware-station.md
@@ -401,7 +413,7 @@
       href: tasks/use-continuity-program.md
     - name: Vähittäismyynnin työntekijöiden määrittäminen
       href: tasks/worker.md
-- name: Vähittäismyynnin kehitys ja hallinta
+- name: Retail-kehitys ja hallinta
   href: dev-itpro/dev-retail-home-page.md
   items:
     - name: Arkkitehtuuri
@@ -420,7 +432,7 @@
           href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
         - name: PA-DSS-sertifikaatti (maksusovelluksen tietoturvastandardi)
           href: dev-itpro/PA-DSS-Certification.md
-        - name: Paikallisten ympäristöjen vähittäismyyntiominaisuudet
+        - name: Paikallisten ympäristöjen Retail-ominaisuudet
           href: retail-onprem.md
     - name: Käyttöönotto ja hotfix-korjaukset
       items:
@@ -545,7 +557,7 @@
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: 'Retail SDK:n laajennettavuusmallit'
           href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-        - name: Käyttöönotettavien vähittäismyyntipakettien luominen
+        - name: Käyttöönotettavien Retail-pakettien luominen
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Retail SDK -mallit
           href: dev-itpro/retail-sdk/retail-sdk-samples.md

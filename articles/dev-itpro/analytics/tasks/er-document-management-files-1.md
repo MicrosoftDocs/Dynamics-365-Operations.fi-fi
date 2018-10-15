@@ -1,28 +1,29 @@
 --- 
-title: "Valmistele tietomalleja käyttämään tiedostonhallinnan tiedostoja ER-tuotoksissa"
+title: "ER Tiedostonhallinnan tiedostojen käyttö muodon tuotoksissa (Osa 1 – Tietomallin valmisteleminen)"
 description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: fcafaf17315f54594116a143f36e924bc705d839
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 00d366e61077e27a13b13e31a55acc89ae2b0cd0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="prepare-data-models-to-use-document-management-files-in-er-output"></a>Valmistele tietomalleja käyttämään tiedostonhallinnan tiedostoja ER-tuotoksissa
+# <a name="er-use-document-management-files-in-format-outputs-part-1-prepare-data-model"></a>ER Tiedostojenhallinnan tiedostojen käyttö muodon tuloksissa (osa 1: tietomallin valmistelu)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -3,7 +3,7 @@ title: "Paikallisten käyttöönottojen aloitussivu"
 description: "Tässä ohjeaiheessa on tietoja paikallisia käyttöönottoja koskevasta sisällöstä sekä linkkejä tähän sisältöön."
 author: kfend
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: aba11ae99393eb0d8c3e1df2276faa95ad831d29
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: e65edc9d613c9898776e30ea5ab4104a3ce5b4c8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 # <a name="on-premises-deployments-home-page"></a>Paikallisten käyttöönottojen aloitussivu
@@ -58,7 +58,8 @@ Voit ottaa Microsoft Dynamics 365 for Finance and Operationsin (paikallinen) kä
 - [Paikallisen käyttöönoton ottaminen uudelleen käyttöön](redeploy-on-prem.md)
 
 ## <a name="other-resources"></a>Muut resurssit
-- [Dynamics 365 for Finance and Operations (paikallinen) -sovelluksen vianmääritys](troubleshoot-on-prem.md)
+- [Paikallisen Dynamics 365 for Finance and Operationsin vianmääritys](troubleshoot-on-prem.md)
+- [Paikallisten ympäristöjen diagnostiikka](on-premises-diagnostics.md)
 - [Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Vanhentuneet ominaisuudet](../migration-upgrade/deprecated-features.md)
 - [Ohjelmiston elinkaarikäytäntö ja paikalliset versiot](../migration-upgrade/on-prem-version-update-policy.md)

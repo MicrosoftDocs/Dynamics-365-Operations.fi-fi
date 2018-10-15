@@ -1,28 +1,29 @@
 --- 
-title: "Suorita raportit, jotka käyttävät taloushallinnon dimensioita tietolähteenä"
+title: "ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 4 – Raportin suorittaminen)"
 description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) tietomallin käyttämään taloushallinnon dimensioita tietolähteenä ER-raporteissa."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERSolutionTable, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 6569f9b97d5d15bf74b8b3882bf4bab50970dd0f
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 917eae141bbb8792f02d3323054e2a4096dae551
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="run-reports-that-use-financial-dimensions-as-data-sources"></a>Suorita raportit, jotka käyttävät taloushallinnon dimensioita tietolähteenä
+# <a name="er-use-financial-dimensions-as-a-data-source-part-4-run-the-report"></a>ER Taloushallinnon dimensioiden käyttö tietolähteenä (osa 4: raportin suorittaminen)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -44,6 +45,6 @@ Jotta voisit suorittaa nämä vaiheet, "ER Taloushallinnon dimensioiden käyttä
 9. Kirjoita Ehdot-kenttään 00057.
 10. Valitse OK.
 11. Valitse OK.
-    * Tarkista aikaansaatu tuotos. Huomaa, että jokaiselle valitun erän tapahtumalle esitetään vastaavan dimensiojoukon taloushallinnon dimensiot. Aja raportti ja valitse eri dimensioita, jotta näet, että raportti ei ole riippuvainen valittujen dimensioiden määrästä tai tälle Dynamics 365 for Finance and Operations -esiintymälle konfiguroitujen dimensioiden määrästä.  
+    * Tarkista aikaansaatu tuotos. Huomaa, että jokaiselle valitun erän tapahtumalle esitetään vastaavan dimensiojoukon taloushallinnon dimensiot. Aja raportti ja valitse eri dimensioita, jotta näet, että raportti ei ole riippuvainen valittujen dimensioiden määrästä tai tälle Dynamics 365 for Finance and Operations, Enterprise Edition -esiintymälle konfiguroitujen dimensioiden määrästä.  
 
 

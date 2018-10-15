@@ -3,7 +3,7 @@ title: Lean-organisaation mallinnus
 description: "Artikkelissa on tietoja Lean-organisaation mallintamisen tärkeimmistä käsitteistä."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c8e24234cfa54dcbbf3638c31ced7fb83881bb9f
+ms.sourcegitcommit: 254616174d3f3c449e2a55dfc5f080d6276105b0
+ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 09/24/2018
 
 ---
 
@@ -40,20 +40,22 @@ Tuotantotilauksiin perustuvissa tuotantoskenaarioissa materiaali määritetään
 
 Jotta toimituksen läpimenoajat lyhenevät ja ylimääräinen, erätuotannosta johtuva varastointi kuormituspaikkojen välillä pienenee, Lean-valmistus käyttää kanban-täydennystä ja supermarketteja valmistuksen ja varastoinnin täydennyksessä. Tämä nämä toiminnot keskeyttävät osittain itsenäisten kanban-syklien tuotannon. Kanbanin täydennystä puolivalmiille tuotteelle ei enää käynnistä valmista tuotetta koskeva tilaus. 
 
-Jotta tuotannon ja kulujen konteksti voidaan luoda uudelleen eri Microsoft Dynamics 365 for Finance and Operationsin ehdottamille kanban-skenaarioille, tehtäväpohjaiset tuotantovirrat on luotu Lean-valmistuksen rungoksi. Kaikki kanban-säännöt viittaavat tähän ennalta määritettyyn rakenteeseen. Tehtäväpohjainen malli tukee laajempaa skenaariovalikoimaa kuin Dynamics AX:n tukemat aiemmat Lean-valmistuksen versiot. Tämä malli ei kuitenkaan tee ohjelmaa monimutkaisemmaksi työntekijöille, koska kaikissa skenaarioissa käytetään samaa tehtäväpohjaista käyttöliittymää.
+Jotta tuotannon ja kulujen konteksti voidaan luoda uudelleen eri Microsoft Dynamics 365 for Finance and Operationsin ehdottamille kanban-skenaarioille, tehtäväpohjaiset tuotantovirrat on luotu Lean-valmistuksen rungoksi. Kaikki kanban-säännöt viittaavat tähän ennalta määritettyyn rakenteeseen. Tehtäväperusteinen malli tukee monien erilaisten skenaarioiden määrittämistä. Tämä malli ei kuitenkaan tee ohjelmaa monimutkaisemmaksi työntekijöille, koska kaikissa skenaarioissa käytetään samaa tehtäväpohjaista käyttöliittymää.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Puolivalmiit tuotteet (ei-tuoterakennetasot)
-Microsoft Dynamics AX:n Lean-valmistus integroi kanbanit inventoidulle tuotteille ja puolivalmiille tuotteille yhteen kehykseen ja tarjoaa tämän vuoksi yhtenäisen käyttäjäkokemuksen kaikissa tapauksissa. Tämän arkkitehtuurin vuoksi puolivalmiissa tuotteissa käytettävien kanbaneiden käytössä tarvittavia lisätuoterakenteiden tasoja ei enää ole lisätty. Tämä arkkitehtuuri auttaa myös varastotapahtumien vähentämisessä pienimmälle mahdolliselle tasolle.
+Lean-valmistus integroi kanbanit inventoiduiksi tuotteiksi ja puolivalmiiksi tuotteiksi yhdessä kehyksessä tarjoten siten yhdenmukaisen käyttökokemuksen kaikissa tapauksissa. Tämän arkkitehtuurin vuoksi puolivalmiissa tuotteissa käytettävien kanbaneiden käytössä tarvittavia lisätuoterakenteiden tasoja ei enää ole lisätty. Tämä arkkitehtuuri auttaa myös varastotapahtumien vähentämisessä pienimmälle mahdolliselle tasolle.
 
 ## <a name="products-and-material-in-work-in-progress"></a>Tuotteet ja materiaalit keskeneräisissä töissä
 Eräkokojen pienentäminen ihanteelliseen yhden kappaleen virran tilaan Lean-valmistuksessa voi aiheuttaa dramaattisen varastotapahtumien kasvun, jos jokainen keräilyprosessi tai kanban-rekisteröinti aiheuttaa tapahtumia kulutetuille nimikkeille. Tuotantovirran arkkitehtuuri sallii materiaalien siirron tuotantovirtaan yhdessä varaston otto-kanbaneiden tai toimituksen käsittely-yksiköiden koon avulla. Määritettyjen materiaalien arvo lisätään tuotantovirtaan liittyvälle keskeneräisten töiden KET-tilille. Tämä toiminta muistuttaa tuotantotilaukselle määritetyn materiaalin toimintaa. Samaa periaatetta voidaan soveltaa tuotteille ja puolivalmiille tuotteille. Ellei näitä tuotteita ole luotu, siirretty tai kulutettu tuotantovirrassa, varastotapahtumat ovat valinnaisia. Sen jälkeen kun tuotteet on kirjattu varastoon, tuotantovirran KET-tili pienenee kyseisen standardikulun vähennyksellä.
 
 ## <a name="value-streams-and-value-stream-mapping"></a>Arvovirrat ja arvovirtojen yhdistäminen
-Dynamics AX:n Lean-valmistuksen arkkitehtuuria on inspiroinut viisi Womack and Jonesin muotoilemaa Lean-periaatetta: asiakasarvo, arvovirta, virtaus, imu ja täydellisyys. Eräs hyväksytty tapa toteuttaa Lean-valmistuksen ratkaisuja valmistuksen fyysisessä maailmassa on arvovirtojen yhdistäminen (VSM). Rother and Shook esittelivät tämän tavan Learning to See -kirjassaan Lean Manufacturing Institutessa. 
+Lean-valmistuksen arkkitehtuuria on inspiroinut viisi Womack and Jonesin muotoilemaa Lean-periaatetta: asiakasarvo, arvovirta, virtaus, vetovoima ja täydellisyys. Eräs hyväksytty tapa toteuttaa Lean-valmistuksen ratkaisuja valmistuksen fyysisessä maailmassa on arvovirtojen yhdistäminen (VSM). Rother and Shook esittelivät tämän tavan Learning to See -kirjassaan Lean Manufacturing Institutessa. 
 
-Dynamics AX:ssä tulevan tilan arvovirta voidaan mallintaa tuotantovirtaversiona. Kaikki arvovirran prosessit mallinnetaan prosessitehtävinä. Liikkeet tai siirrot voidaan mallintaa siirtotehtävinä, jos siirtotila on rekisteröitävä, tai jos varastopoiminta tai konsolidoidut toimitukset vaativat integrointia. 
+Finance and Operationsissa tulevan tilan arvovirta voidaan mallintaa tuotantovirtaversiona. Kaikki arvovirran prosessit mallinnetaan prosessitehtävinä. Liikkeet tai siirrot voidaan mallintaa siirtotehtävinä, jos siirtotila on rekisteröitävä, tai jos varastopoiminta tai konsolidoidut toimitukset vaativat integrointia. 
 
-Itse arvovirta mallinnetaan Dynamics AX:n toimintayksikkönä. Tämän vuoksi arvovirtaa voidaan käyttää taloushallinnon dimensiona.
+Itse arvovirta mallinnetaan toimintayksikkönä. Tämän vuoksi arvovirtaa voidaan käyttää taloushallinnon dimensiona.
+
+Lisätietoja toimintayksiköistä on kohdassa [Käyttöyksikön luominen](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>Lean-valmistuksen kustannuslaskenta tuotantovirtaan perustuen
 Ajoittainen tuotantovirran kustannusten konsolidaatio korjaa siihen liittyvän KET-tilin ja mahdollistaa tuotantovirran toimittamien tuotteiden varianssien määrittämisen.
@@ -62,7 +64,7 @@ Ajoittainen tuotantovirran kustannusten konsolidaatio korjaa siihen liittyvän K
 Jotta ne tukisivat paremmin jatkuvaa parantamista, tuotantovirrat on toteutettu aikatehokkaina versioina. Tämän vuoksi aiemmin luotu tuotantovirran versio ja kaikki liittyvät kanban-säännöt voidaan kopioida tuotantovirran tulevaan versioon. Lisäksi tuleva tuotantovirta voidaan mallintaa ennen sen tarkistamista ja tuotantoon aktivoimista. Vanhojen tuotantovirran versioiden olemassa olevat kanbanit liitetään automaattisesti uuteen versioon. Näin varmistetaan saumaton materiaalivirta siirtymäpäivänä ja sen jälkeen.
 
 ## <a name="simplicity"></a>Yksinkertaisuus
-Lean-valmistuksen toteuttamiseen Dynamics AX:ssä olemme valinneet tuotantovirta- ja tehtävä-menettelyn, joka mahdollistaa yksinkertaisten ja monimutkaisten tuotantoskenaarioiden mallintamisen yhdessä skaalautuvassa arkkitehtuurissa. Tarkempi toimintokonseptin tarkastelu paljastaa uuden yksinkertaisen elementin sitä todella tarvitseville: tuotannon ja logistiikan työntekijöille. Kun raportoidaan toimintoperusteisia tehtäviä varastotapahtumien sijaan, yhtenäinen, kaikkia Lean-valmistuksen variantteja koskeva käyttöliittymä siirtää liiketoiminnan monimutkaisuuden käyttöliittymästä sinne, mihin se kuuluu: tuotantovirtaan Lean-valmistuksen selkärankana.
+Valitsimme Lean-valmistuksen toteuttamiseen tuotantovirta- ja toimintomenettelyn, joka mahdollistaa yksinkertaisten ja monimutkaisten tuotantoskenaarioiden mallintamisen yhdessä skaalautuvassa arkkitehtuurissa. Tarkempi toimintokonseptin tarkastelu paljastaa uuden yksinkertaisen elementin sitä todella tarvitseville: tuotannon ja logistiikan työntekijöille. Kun raportoidaan toimintoperusteisia tehtäviä varastotapahtumien sijaan, yhtenäinen, kaikkia Lean-valmistuksen variantteja koskeva käyttöliittymä siirtää liiketoiminnan monimutkaisuuden käyttöliittymästä sinne, mihin se kuuluu: tuotantovirtaan Lean-valmistuksen selkärankana.
 
 
 

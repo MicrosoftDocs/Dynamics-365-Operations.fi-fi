@@ -3,7 +3,7 @@ title: "Käyttäjäkokemuksen mukauttaminen"
 description: "Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Finance and Operationsin mukauttamista."
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
-ms.openlocfilehash: 8ad5bd607f08d4e0b266d86a96a0b7f3e352c4cd
+ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
+ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 
@@ -64,7 +64,7 @@ Tietojen tärkeys vaihtelee käyttäjä- ja yrityskohtaisesti. Toisin sanoen tie
 ### <a name="shortcut-menu-options"></a>Pikavalikkovaihtoehdot
 Pikavalikkojen avulla sivua voi eksplisiittisesti muuttaa muutamalla tavalla siten, että se vastaa paremmin omia tai yrityksen vaatimuksia. (Pikavalikkoa kutsutaan myös *hiiren kakkospainikkeella avattavaksi valikoksi* ja *tilannevalikoksi*.)
 
-Tietyt tavallisimmat ja tärkeimmät sivulle tehtävät muutokset ovat käytettävissä suoraan pikavalikon vaihtoehtoina. Ruudukon sarakkeita voi esimerkiksi lisätä tai piilottaa kätevästi napsauttamalla sarakeotsikkoa hiiren kakkospainikkeella ja valitsemalla sitten **Lisää sarakkeita** tai **Piilota tämä sarake**.
+Tietyt tavallisimmat ja tärkeimmät sivulle tehtävät muutokset ovat käytettävissä suoraan pikavalikon vaihtoehtoina. Ruudukon sarakkeita voi esimerkiksi lisätä tai piilottaa kätevästi ympäristöpäivityksestä 17 alkaen napsauttamalla sarakeotsikkoa hiiren kakkospainikkeella ja valitsemalla sitten **Lisää sarakkeita** tai **Piilota tämä sarake**.
 
 Lisäksi eksplisiittisen mukauttamisen yleisimmät tyypit saa käyttöön napsauttamalla elementtiä hiiren kakkospainikkeella ja valitsemalla **Mukauta**. (Huomaa, että kaikkia sivun elementtejä ei voida mukauttaa.). Kun valitset tämän mukauttamistavan, elementin ominaisuusikkuna tulee näkyviin.
 
@@ -81,27 +81,38 @@ Voit mukauttaa elementtiä ominaisuusikkunassa seuraavilla tavoilla:
 Ominaisuusikkunassa voi olla elementin mukaan myös muita mukauttamisominaisuuksia. Ruudun ominaisuusikkunassa voi esimerkiksi olla mahdollista viedä kyseisen ruutu ylös koontinäyttöön, kun taas koontinäytön ominaisuusikkuna voi mahdollistaa uuden työtilan luonnin kyseissä koontinäytössä.
 
 ### <a name="the-personalization-toolbar"></a>Mukauttamisen työkalurivi
-Voit käyttää **mukauttamisen** työkaluriviä elementtien siirtämiseen tai piilottamiseen tai useiden muutosten tekemiseen sivulle. Avaa **mukauttamisen** työkalurivi valitsemalla **Mukauta tämä lomake** elementin ominaisuusikkunassa. Voit valita **Mukauta tämä lomake** -vaihtoehdon myös kunkin sivun **Asetukset**-välilehden **Mukauta**-ryhmässä.
+Jos haluat tehdä useita muutoksia sivulle tai tehdä muutoksia, jotka eivät ole käytettävissä muiden mekanismien kautta (kuten elementtien uudelleenjärjestely), voit käyttää **Mukauttaminen**-työkaluriviä. Avaa **mukauttamisen** työkalurivi valitsemalla **Mukauta tämä lomake** elementin ominaisuusikkunassa. Voit valita **Mukauta tämä lomake** -vaihtoehdon myös kunkin sivun **Asetukset**-välilehden **Mukauta**-ryhmässä.
 
 [![Mukauttamisen työkalurivi](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Kun **mukauttamisen** työkalurivi on avattu, sivu ei ole vuorovaikutteinen. Et siis voi antaa tietoja etkä laajentaa tai tiivistää osioita. Voit vain muuttaa elementtejä, joista sivu koostuu.
+#### <a name="navigating-the-page"></a>Siirtyminen sivulla 
+Mahdollisuus siirtyä sivulla, kun **Mukauttaminen-työkalurivi** on avoinna, riippuu käyttämästäsi ympäristöversiosta. 
 
+- Ennen ympäristöpäivitystä 19, kun **Mukauttaminen**-työkalurivi oli auki, sivu oli Vain luku -tilassa (siihen ei voi syöttää mitään) eikä se ollut vuorovaikutteinen (muutoksia pystyi tekemään vain sivun näkyviin elementteihin). Jos halusit tehdä muutoksia tiivistetyn osion tai eri välilehden sisäisiin elementteihin, sinun oli suljettava **Mukauttaminen**-työkalurivi, laajennettava osiota tai vaihdettava haluttuun välilehteen ja sitten avattava **Mukauttaminen**-työkalurivi uudelleen.  
+
+- Ympäristöpäivityksestä 19 alkaen, jos **Mukauttaminen**-työkalurivi on avoinna, sivu on yhä Vain luku -tilassa, mutta paljon vuorovaikutteisempi. Voit etenkin laajentaa tai supistaa Tietoruutua, vaihtaa välilehtiä ja laajentaa tai tiivistää osioita, kun **Mukauttaminen**-työkalurivi avataan, samalla tavoin kuin yleensäkin tekisit sivulla. Voit soveltaa mukauttamisen muutosta tiivistettyyn osioon tai välilehteen (kuten piilottaa Tietoruudun) käyttämällä painiketta, joka ilmestyy tiivistetyn osion tai välilehden viereen, kun kohdistat siihen näppäimistöllä tai liikutat hiirtä sen yläpuolella.  
+
+#### <a name="personalization-tools"></a>Mukauttamisen työkalut
 **Mukauttamisen** työkalurivillä on seuraavat työkalut:
 
 - Valitse elementin ominaisuuksia ja muuta niitä **Valitse**-työkalulla. Valitse ensin **Valitse**-työkalu ja sitten elementti, jonka ominaisuuksia muokataan. Kun valitset elementin, sen ominaisuusikkuna avautuu ja voit muokata elementin kaikkia ominaisuuksia. Voit toistaa prosessin muille kyseisen sivun mukautettaville elementeille. Tiettyjen elementtien käyttötavan vuoksi Finance and Operations ei kuitenkaan salli niiden tiettyjen ominaisuuksien muuttamista. Näin ollen on mahdollista, että kaikkia valitun elementin ominaisuuksia ei voi muokata. Et voi esimerkiksi piilottaa pakollista kenttää.
-- Voit siirtää elementin **Siirrä**-työkalulla toiseen sijaintiin nykyisen elementtiryhmän sisällä. (Et voi siirtää elementtiä sen pääryhmän ulkopuolelle.) Valitse ensin **Siirrä**-työkalua ja sitten siirrettävä elementti. Kun valitset elementin, Finance and Operations tarkistaa sivun ja määrittää, mihin elementti voidaan siirtää. Tämän jälkeen se luo pudotusalueita. Kun vedät elementtiä valitussa ryhmä, värillinen lihavoitu viiva osoittaa pudotusalueen, johon elementti voidaan pudottaa.
-- Voit piilottaa elementin sivulla **Piilota**-työkalulla. Valitse ensin **Piilota**-työkalua ja sitten piilotettava elementti. Kun valitset **Piilota**-työkalun, kaikki tällä hetkellä piilotettuna olevat elementit tulevat näkyviin varjostetussa säilössä. Voit sitten tuoda ne esiin. Valitsemalla **Valitse**-työkalun näet, miltä sivu näyttää, kun valitut elementit piilotetaan.
-- Jos haluat elementit näkyvän pikavälilehden yhteenveto-osassa, käytä **Yhteenveto**-työkalua. Yhteenvetotyökalu koskee vain pikavälilehtiosiossa olevia kenttiä. Kun valitset **Yhteenveto**-työkalun, kaikki yhteenvetokentiksi valitut kentät näkyvät varjostetussa säilössä. Voit lisätä kenttiä vuorovaikutteisesti pikavälilehden yhteenvetoon ja poistaa kenttiä niistä valitsemalla kenttiä.
-- Voit poistaa elementin nykyisen sivun näppäimistön sarkaimella tehtävistä valinnoista **Ohita**-työkalulla. Kun valitset **Ohita**-työkalun, kaikki tällä hetkellä ohitettavat elementit näkyvät varjostetussa säilössä. Voit sitten lisätä ne takaisin sarkaimella tehtäviin valintoihin.
-- Voit merkitä **Muokkaa**-työkalulla. onko elementti muokattavissa vai ei. Kun valitset **Muokkaa**-työkalun, kaikki tällä hetkellä ei-muokattavat elementit näkyvät varjostetussa säilössä. Voit sitten määrittää ne takaisin muokattaviksi. Huomaa, että osa kentistä on pakollisia, jolloin niiden muokkaamista ei voi estää. Näiden kenttien vieressä on lukkokuvake.
-- Saat **Lisää**-painikkeella näkyviin luettelon sivulle lisättävistä elementeistä.
 
+- Voit siirtää elementin **Siirrä**-työkalulla toiseen sijaintiin nykyisen elementtiryhmän sisällä. (Et voi siirtää elementtiä sen pääryhmän ulkopuolelle.) Valitse ensin **Siirrä**-työkalua ja sitten siirrettävä elementti. Kun valitset elementin, Finance and Operations tarkistaa sivun ja määrittää, mihin elementti voidaan siirtää. Tämän jälkeen se luo pudotusalueita. Kun vedät elementtiä valitussa ryhmä, värillinen lihavoitu viiva osoittaa pudotusalueen, johon elementti voidaan pudottaa.
+
+- Voit piilottaa elementin sivulla **Piilota**-työkalulla. Valitse ensin **Piilota**-työkalua ja sitten piilotettava elementti. Kun valitset **Piilota**-työkalun, kaikki tällä hetkellä piilotettuna olevat elementit tulevat näkyviin varjostetussa säilössä. Voit sitten tuoda ne esiin. Valitsemalla **Valitse**-työkalun näet, miltä sivu näyttää, kun valitut elementit piilotetaan.
+    - Ympäristöpäivityksestä 18 alkaen voit piilottaa vaaditut kentät ja osiot, jotka sisältävät vaaditut kentät. Voit näin luoda yksinkertaistetun kokemuksen, jossa liiketoimintalogiikan oletusarvojen mukaan määritettyjä vaadittuja kenttiä ei näytetä. Vaaditut piilotetut kentät näkyvät myös tilapäisesti, jos ne ovat tyhjiä, kun yritetään tallennusta. 
+
+- Jos haluat elementit näkyvän pikavälilehden yhteenveto-osassa, käytä **Yhteenveto**-työkalua. Yhteenvetotyökalu koskee vain pikavälilehtiosiossa olevia kenttiä. Kun valitset **Yhteenveto**-työkalun, kaikki yhteenvetokentiksi valitut kentät näkyvät varjostetussa säilössä. Voit lisätä kenttiä vuorovaikutteisesti pikavälilehden yhteenvetoon ja poistaa kenttiä niistä valitsemalla kenttiä.
+
+- Voit poistaa elementin nykyisen sivun näppäimistön sarkaimella tehtävistä valinnoista **Ohita**-työkalulla. Kun valitset **Ohita**-työkalun, kaikki tällä hetkellä ohitettavat elementit näkyvät varjostetussa säilössä. Voit sitten lisätä ne takaisin sarkaimella tehtäviin valintoihin.
+
+- Voit merkitä **Muokkaa**-työkalulla. onko elementti muokattavissa vai ei. Kun valitset **Muokkaa**-työkalun, kaikki tällä hetkellä ei-muokattavat elementit näkyvät varjostetussa säilössä. Voit sitten määrittää ne takaisin muokattaviksi. Huomaa, että osa kentistä on pakollisia, jolloin niiden muokkaamista ei voi estää. Näiden kenttien vieressä on lukkokuvake.
+
+- Saat **Lisää**-painikkeella näkyviin luettelon sivulle lisättävistä elementeistä.
     - Lisää kenttä sivulle valitsemalla **Kenttä**-työkalu **Lisää**-kohdassa. Voit lisätä **Kenttä**-työkalulla vain kenttiä, jotka sisältyvät sivumääritykseen mutta joita ei tällä hetkellä näytetä sivulla. Lisätietoja nykyisen sivumääritelmän ulkopuolisten uusien kenttien luomisesta on kohdassa [Mukautetut kentät](user-defined-fields.md). Sinun on valittava **Kenttä**-työkalun valinnan jälkeen ensin ryhmä tai alue, johon haluat lisätä kentän. Valintaikkunassa on luettelo valittuun ryhmään tai alueeseen liittyvistä kentistä. Valitse valintaluettelossa ensin vähintään yksi lisättävä kenttä ja sitten **Lisää**. Voit poistaa aiemmin lisätyn kentän toistamalla edellä mainitut vaiheet mutta poistamalla valintaikkunassa kentän valinnan.
     - Valitse **PowerApp**-työkalu **Lisää**-kohdassa, jos haluat upottaa sivulla Microsoft PowerAppsilla luodun sovelluksen. Lisätietoja PowerApps-sovelluksen upottamisesta sivulle on kohdassa [PowerApps-sovellusten upottaminen](embed-power-apps.md).
 
 - Valitsemalla **Hallinta**-painikkeen näet luettelon hallintavaihtoehdoista, jotka liittyvät kaikkiin nykyisen sivun mukautuksiin.
-
     - Palauta sivu oletusasennustilaan valitsemalla **Tyhjennä**. Kaikki nykyisen sivun mukautukset tyhjennetään. Tätä toimintoa ei voi kumota. Käytä tätä vaihtoehtoa tämän vuoksi vain silloin, kun olet varma, että haluat palauttaa sivun alkuperäiset asetukset.
     - Voit ladata mukautuksen sivulle aiemmin luodusta tiedostosta valitsemalla **Tuo**. Kaikki sivulla olevat mukautukset korvataan valitun tiedoston mukautuksilla.
     - Voit tallentaa sivun mukautukset tiedostoon valitsemalla **Vie**. Voit jakaa mukautuksesi muiden käyttäjien kanssa. Kyseisten käyttäjien tarvitsee vain tuoda sivun mukautukset sisältävä tiedosto.
@@ -149,5 +160,5 @@ Kun mukautat varastodimension asetuksia sivulla, pidä mielessä **Näytä dimen
 
 **Dimension näyttöasetuksia**käytetään kaikilla sivulla, ja ne korvaavat kaikki yksittäisten sivujen mukautetut varastodimension kenttien asetukset.
 
-Jos et siis halua edellisessä esimerkissä, että eränumeron varastodimension sarake näkyy, kyseisen dimension valinta on poistettava taulukon **Näytä dimensiot** -vaihtoehdon osana. Tämän jälkeen tätä muutosta käytetään tietyn sivun lisäksi kaikilla sivuilla.
+Jos et siis halua edellisessä esimerkissä, että varastodimension eränumero näkyy, kyseisen dimension valinta on poistettava taulukon **Näytä dimensiot** -vaihtoehdon osana. Tämän jälkeen tätä muutosta käytetään tietyn sivun lisäksi kaikilla sivuilla.
 
