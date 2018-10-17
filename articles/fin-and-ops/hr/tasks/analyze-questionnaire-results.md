@@ -1,71 +1,72 @@
 --- 
-title: Analysoi kyselylomakkeen tulokset
+title: Kyselylomakkeen tulosten analysointi
 description: "Kyselylomakkeen tilastotietoja voidaan käyttää keskiarvojen, kokonaissummien ja prosenttiosuuksien laskemiseen demografiatietojoukon perusteella."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: KMQuestionnaireStatistics, KMQuestionnaireStatisticsLine
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a69073328be1e92f40ab1a821204310f10545303
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a70ea145d8c7134a32e8f0fc6980daca9a010bb0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="analyze-questionnaire-results"></a><span data-ttu-id="58645-103">Analysoi kyselylomakkeen tulokset</span><span class="sxs-lookup"><span data-stu-id="58645-103">Analyze questionnaire results</span></span>
+# <a name="analyzing-questionnaire-results"></a><span data-ttu-id="bb51c-103">Kyselylomakkeen tulosten analysointi</span><span class="sxs-lookup"><span data-stu-id="bb51c-103">Analyzing questionnaire results</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="58645-104">Kyselylomakkeen tilastotietoja voidaan käyttää keskiarvojen, kokonaissummien ja prosenttiosuuksien laskemiseen demografiatietojoukon perusteella.</span><span class="sxs-lookup"><span data-stu-id="58645-104">Questionnaire statistics can be used to calculate averages, totals, and percentages based on a set of demographic data.</span></span> <span data-ttu-id="58645-105">Aloita tämä menettely siirtymällä kohtaan Kyselylomake > Näytä ja analysoi tulokset > Kyselylomakkeen tilastotiedot.</span><span class="sxs-lookup"><span data-stu-id="58645-105">To begin this procedure, go to Questionnaire > View and analyze results > Questionnaire statistics.</span></span> <span data-ttu-id="58645-106">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="58645-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="bb51c-104">Kyselylomakkeen tilastotietoja voidaan käyttää keskiarvojen, kokonaissummien ja prosenttiosuuksien laskemiseen demografiatietojoukon perusteella.</span><span class="sxs-lookup"><span data-stu-id="bb51c-104">Questionnaire statistics can be used to calculate averages, totals, and percentages based on a set of demographic data.</span></span> <span data-ttu-id="bb51c-105">Aloita tämä menettely siirtymällä kohtaan Kyselylomake > Näytä ja analysoi tulokset > Kyselylomakkeen tilastotiedot.</span><span class="sxs-lookup"><span data-stu-id="bb51c-105">To begin this procedure, go to Questionnaire > View and analyze results > Questionnaire statistics.</span></span> <span data-ttu-id="bb51c-106">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="bb51c-106">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-questionnaire-statistics-record"></a><span data-ttu-id="58645-107">Kyselylomakkeen tilastotietotietueen luominen</span><span class="sxs-lookup"><span data-stu-id="58645-107">Create a Questionnaire statistics record</span></span>
-1. <span data-ttu-id="58645-108">Siirry Kyselylomakkeen tilastotiedot -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="58645-108">Go to Questionnaire statistics.</span></span>
-2. <span data-ttu-id="58645-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="58645-109">Click New.</span></span>
-3. <span data-ttu-id="58645-110">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="58645-110">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="58645-111">Syötä arvo Tilastotiedot-kenttään.</span><span class="sxs-lookup"><span data-stu-id="58645-111">In the Statistics field, type a value.</span></span>
-5. <span data-ttu-id="58645-112">Kirjoita Kuvaus-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="58645-112">In the Description field, type a value.</span></span>
-6. <span data-ttu-id="58645-113">Avaa haku valitsemalla Kyselylomake-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="58645-113">In the Questionnaire field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="58645-114">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="58645-114">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="58645-115">Valitse Yleiset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="58645-115">Click the General tab.</span></span>
-    * <span data-ttu-id="58645-116">Määritä, haluatko ottaa mukaan nimettömät tulokset vai työntekijöiden, yhteyshenkilöiden ja hakijoiden tulokset.</span><span class="sxs-lookup"><span data-stu-id="58645-116">Select if you want to include anonymous results or results from workers, contacts, and applicants.</span></span>  
-9. <span data-ttu-id="58645-117">Valitse Työntekijä-valintaruutu tai poista valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="58645-117">Select or clear the Worker check box.</span></span>
-    * <span data-ttu-id="58645-118">Jos tarkastelet tuloksia virkaiän tai iän perusteella, määritä tulosten ryhmittelyssä käytettävät välit.</span><span class="sxs-lookup"><span data-stu-id="58645-118">If you will be viewing the results by seniority or age, specify the intervals that you would like to use for grouping the results.</span></span>  
-    * <span data-ttu-id="58645-119">Kun ikäväliksi syötetään 5, tulokset ryhmitellään viiden vuoden ikävälien perusteella.</span><span class="sxs-lookup"><span data-stu-id="58645-119">Entering a 5 for the age interval will group the results based on five-year age intervals.</span></span>  
-10. <span data-ttu-id="58645-120">Syötä numero Ikä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="58645-120">In the Age field, enter a number.</span></span>
-    * <span data-ttu-id="58645-121">Määritä, haluatko suorittaa laskelman koko kyselylomakkeelle, jokaiselle tulosryhmälle, jokaiselle kysymykselle tai jokaiselle kysymysriville.</span><span class="sxs-lookup"><span data-stu-id="58645-121">Select if you want to run the calculation against the entire questionnaire, for each result group, for each question, or for each question row.</span></span>  
-    * <span data-ttu-id="58645-122">Määritä, miten haluat ryhmitellä tulokset.</span><span class="sxs-lookup"><span data-stu-id="58645-122">Select how you would like to group the results.</span></span>  
-    * <span data-ttu-id="58645-123">Jos esimerkiksi lasket saatujen pisteiden keskiarvon kysymystä kohti, kysymykset on hyvä nähdä tulosryhmän mukaan ryhmiteltyinä.</span><span class="sxs-lookup"><span data-stu-id="58645-123">For example, if you calculate the average points per question, you may want to see the questions grouped by Result group.</span></span>  
-    * <span data-ttu-id="58645-124">Valitse tiedot, joihin laskelma perustuu.</span><span class="sxs-lookup"><span data-stu-id="58645-124">Select the data to base the calculation on.</span></span>  
-    * <span data-ttu-id="58645-125">Ajatellaan, että haluat tietää kyselylomakkeen työntekijöiltä saadun keskimääräisen prosentin verrattuna työntekijöiden saamiin keskimääräisiin pisteisiin.</span><span class="sxs-lookup"><span data-stu-id="58645-125">For example, if you want to see the average percent received on the questionnaire across your workers versus the average number of points achieved across your workers.</span></span>  
-11. <span data-ttu-id="58645-126">Valitse Alue-välilehti.</span><span class="sxs-lookup"><span data-stu-id="58645-126">Click the Range tab.</span></span>
-    * <span data-ttu-id="58645-127">Alueiden avulla voit rajata tulosjoukon sisältämään vain alueen ehtoja vastaavat kohteet.</span><span class="sxs-lookup"><span data-stu-id="58645-127">Use ranges to limit your result set to only those meeting the Range criteria.</span></span>  
-12. <span data-ttu-id="58645-128">Valitse Ryhmittely-välilehti.</span><span class="sxs-lookup"><span data-stu-id="58645-128">Click the Grouping by tab.</span></span>
-    * <span data-ttu-id="58645-129">Ryhmittelyiden avulla voit määrittää, miten tulokset näytetään.</span><span class="sxs-lookup"><span data-stu-id="58645-129">Use Groupings to determine how the results should be displayed.</span></span>  
-    * <span data-ttu-id="58645-130">Voit ryhmitellä tulokset esimerkiksi ensin sukupuolen ja sitten iän perusteella.</span><span class="sxs-lookup"><span data-stu-id="58645-130">For example, group the results first by gender, then by age.</span></span>  
-13. <span data-ttu-id="58645-131">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="58645-131">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="58645-132">Siirrä ryhmittelyt Valittu puoli -kohtaan ja aseta ne haluttuun järjestykseen.</span><span class="sxs-lookup"><span data-stu-id="58645-132">Move the groupings into the Selected side and place them in the desired order.</span></span>  
+## <a name="create-a-questionnaire-statistics-record"></a><span data-ttu-id="bb51c-107">Kyselylomakkeen tilastotietotietueen luominen</span><span class="sxs-lookup"><span data-stu-id="bb51c-107">Create a Questionnaire statistics record</span></span>
+1. <span data-ttu-id="bb51c-108">Siirry Kyselylomakkeen tilastotiedot -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="bb51c-108">Go to Questionnaire statistics.</span></span>
+2. <span data-ttu-id="bb51c-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="bb51c-109">Click New.</span></span>
+3. <span data-ttu-id="bb51c-110">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="bb51c-110">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="bb51c-111">Syötä arvo Tilastotiedot-kenttään.</span><span class="sxs-lookup"><span data-stu-id="bb51c-111">In the Statistics field, type a value.</span></span>
+5. <span data-ttu-id="bb51c-112">Kirjoita Kuvaus-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="bb51c-112">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="bb51c-113">Avaa haku valitsemalla Kyselylomake-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="bb51c-113">In the Questionnaire field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="bb51c-114">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="bb51c-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="bb51c-115">Valitse Yleiset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="bb51c-115">Click the General tab.</span></span>
+    * <span data-ttu-id="bb51c-116">Määritä, haluatko ottaa mukaan nimettömät tulokset vai työntekijöiden, yhteyshenkilöiden ja hakijoiden tulokset.</span><span class="sxs-lookup"><span data-stu-id="bb51c-116">Select if you want to include anonymous results or results from workers, contacts, and applicants.</span></span>  
+9. <span data-ttu-id="bb51c-117">Valitse Työntekijä-valintaruutu tai poista valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="bb51c-117">Select or clear the Worker check box.</span></span>
+    * <span data-ttu-id="bb51c-118">Jos tarkastelet tuloksia virkaiän tai iän perusteella, määritä tulosten ryhmittelyssä käytettävät välit.</span><span class="sxs-lookup"><span data-stu-id="bb51c-118">If you will be viewing the results by seniority or age, specify the intervals that you would like to use for grouping the results.</span></span>  
+    * <span data-ttu-id="bb51c-119">Kun ikäväliksi syötetään 5, tulokset ryhmitellään viiden vuoden ikävälien perusteella.</span><span class="sxs-lookup"><span data-stu-id="bb51c-119">Entering a 5 for the age interval will group the results based on five-year age intervals.</span></span>  
+10. <span data-ttu-id="bb51c-120">Syötä numero Ikä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="bb51c-120">In the Age field, enter a number.</span></span>
+    * <span data-ttu-id="bb51c-121">Määritä, haluatko suorittaa laskelman koko kyselylomakkeelle, jokaiselle tulosryhmälle, jokaiselle kysymykselle tai jokaiselle kysymysriville.</span><span class="sxs-lookup"><span data-stu-id="bb51c-121">Select if you want to run the calculation against the entire questionnaire, for each result group, for each question, or for each question row.</span></span>  
+    * <span data-ttu-id="bb51c-122">Määritä, miten haluat ryhmitellä tulokset.</span><span class="sxs-lookup"><span data-stu-id="bb51c-122">Select how you would like to group the results.</span></span>  
+    * <span data-ttu-id="bb51c-123">Jos esimerkiksi lasket saatujen pisteiden keskiarvon kysymystä kohti, kysymykset on hyvä nähdä tulosryhmän mukaan ryhmiteltyinä.</span><span class="sxs-lookup"><span data-stu-id="bb51c-123">For example, if you calculate the average points per question, you may want to see the questions grouped by Result group.</span></span>  
+    * <span data-ttu-id="bb51c-124">Valitse tiedot, joihin laskelma perustuu.</span><span class="sxs-lookup"><span data-stu-id="bb51c-124">Select the data to base the calculation on.</span></span>  
+    * <span data-ttu-id="bb51c-125">Ajatellaan, että haluat tietää kyselylomakkeen työntekijöiltä saadun keskimääräisen prosentin verrattuna työntekijöiden saamiin keskimääräisiin pisteisiin.</span><span class="sxs-lookup"><span data-stu-id="bb51c-125">For example, if you want to see the average percent received on the questionnaire across your workers versus the average number of points achieved across your workers.</span></span>  
+11. <span data-ttu-id="bb51c-126">Valitse Alue-välilehti.</span><span class="sxs-lookup"><span data-stu-id="bb51c-126">Click the Range tab.</span></span>
+    * <span data-ttu-id="bb51c-127">Alueiden avulla voit rajata tulosjoukon sisältämään vain alueen ehtoja vastaavat kohteet.</span><span class="sxs-lookup"><span data-stu-id="bb51c-127">Use ranges to limit your result set to only those meeting the Range criteria.</span></span>  
+12. <span data-ttu-id="bb51c-128">Valitse Ryhmittely-välilehti.</span><span class="sxs-lookup"><span data-stu-id="bb51c-128">Click the Grouping by tab.</span></span>
+    * <span data-ttu-id="bb51c-129">Ryhmittelyiden avulla voit määrittää, miten tulokset näytetään.</span><span class="sxs-lookup"><span data-stu-id="bb51c-129">Use Groupings to determine how the results should be displayed.</span></span>  
+    * <span data-ttu-id="bb51c-130">Voit ryhmitellä tulokset esimerkiksi ensin sukupuolen ja sitten iän perusteella.</span><span class="sxs-lookup"><span data-stu-id="bb51c-130">For example, group the results first by gender, then by age.</span></span>  
+13. <span data-ttu-id="bb51c-131">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="bb51c-131">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="bb51c-132">Siirrä ryhmittelyt Valittu puoli -kohtaan ja aseta ne haluttuun järjestykseen.</span><span class="sxs-lookup"><span data-stu-id="bb51c-132">Move the groupings into the Selected side and place them in the desired order.</span></span>  
 
-## <a name="execute-the-statistics-calculation"></a><span data-ttu-id="58645-133">Tilastotietojen laskelman suorittaminen</span><span class="sxs-lookup"><span data-stu-id="58645-133">Execute the statistics calculation</span></span>
-1. <span data-ttu-id="58645-134">Valitse Suorita.</span><span class="sxs-lookup"><span data-stu-id="58645-134">Click Execute.</span></span>
-    * <span data-ttu-id="58645-135">Määritä, mitä laskentatoimintoa tulosten käsittelyssä käytetään.</span><span class="sxs-lookup"><span data-stu-id="58645-135">Select which calculation function you would like to perform on the results.</span></span>  
-    * <span data-ttu-id="58645-136">Voit laskea esimerkiksi valittujen ryhmien kyselylomakkeen keskimääräiset prosenttiosuudet tai tulosryhmien pisteiden kokonaistuloksen.</span><span class="sxs-lookup"><span data-stu-id="58645-136">For example, calculate the average percentages across the questionnaire for the selected groupings or total the points across the result groups for the selected groupings.</span></span>  
-2. <span data-ttu-id="58645-137">Valitse Poista edelliset haut -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="58645-137">Select or clear the Delete previous searches check box.</span></span>
-3. <span data-ttu-id="58645-138">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="58645-138">Click OK.</span></span>
+## <a name="execute-the-statistics-calculation"></a><span data-ttu-id="bb51c-133">Tilastotietojen laskelman suorittaminen</span><span class="sxs-lookup"><span data-stu-id="bb51c-133">Execute the statistics calculation</span></span>
+1. <span data-ttu-id="bb51c-134">Valitse Suorita.</span><span class="sxs-lookup"><span data-stu-id="bb51c-134">Click Execute.</span></span>
+    * <span data-ttu-id="bb51c-135">Määritä, mitä laskentatoimintoa tulosten käsittelyssä käytetään.</span><span class="sxs-lookup"><span data-stu-id="bb51c-135">Select which calculation function you would like to perform on the results.</span></span>  
+    * <span data-ttu-id="bb51c-136">Voit laskea esimerkiksi valittujen ryhmien kyselylomakkeen keskimääräiset prosenttiosuudet tai tulosryhmien pisteiden kokonaistuloksen.</span><span class="sxs-lookup"><span data-stu-id="bb51c-136">For example, calculate the average percentages across the questionnaire for the selected groupings or total the points across the result groups for the selected groupings.</span></span>  
+2. <span data-ttu-id="bb51c-137">Valitse Poista edelliset haut -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="bb51c-137">Select or clear the Delete previous searches check box.</span></span>
+3. <span data-ttu-id="bb51c-138">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="bb51c-138">Click OK.</span></span>
 
-## <a name="view-the-results-of-the-questionnaire-statistics-run"></a><span data-ttu-id="58645-139">Tarkastele kyselylomakkeen tilastotietojen saatuja tuloksia.</span><span class="sxs-lookup"><span data-stu-id="58645-139">View the results of the questionnaire statistics run.</span></span>
-1. <span data-ttu-id="58645-140">Valitse Tulos.</span><span class="sxs-lookup"><span data-stu-id="58645-140">Click Result.</span></span>
-2. <span data-ttu-id="58645-141">Valitse Tulos.</span><span class="sxs-lookup"><span data-stu-id="58645-141">Click Result.</span></span>
-3. <span data-ttu-id="58645-142">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="58645-142">Close the page.</span></span>
+## <a name="view-the-results-of-the-questionnaire-statistics-run"></a><span data-ttu-id="bb51c-139">Tarkastele kyselylomakkeen tilastotietojen saatuja tuloksia.</span><span class="sxs-lookup"><span data-stu-id="bb51c-139">View the results of the questionnaire statistics run.</span></span>
+1. <span data-ttu-id="bb51c-140">Valitse Tulos.</span><span class="sxs-lookup"><span data-stu-id="bb51c-140">Click Result.</span></span>
+2. <span data-ttu-id="bb51c-141">Valitse Tulos.</span><span class="sxs-lookup"><span data-stu-id="bb51c-141">Click Result.</span></span>
+3. <span data-ttu-id="bb51c-142">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="bb51c-142">Close the page.</span></span>
 
 
