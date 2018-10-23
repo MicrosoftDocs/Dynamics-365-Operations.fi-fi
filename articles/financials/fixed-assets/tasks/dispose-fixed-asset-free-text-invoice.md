@@ -10,41 +10,35 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 24c7721a1e5467e98e6c4d245f1d8e24a973f5aa
+ms.sourcegitcommit: 92cd1ea0a6ab6039da7074e032e0f78dd7443cba
+ms.openlocfilehash: 1b1c9719f0697e9d5a51b0e769b3f850dc1690e5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/24/2018
 
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Käyttöomaisuuden poisto vapaatekstilaskua käyttäen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Näiden ohjeiden avulla voit hankkia käyttöomaisuutta käyttöomaisuuden kirjauskansion hankintaehdotuksen avulla. Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja.
+Näiden ohjeiden avulla voit poistaa käyttöomaisuuden käyttämällä vapaatekstilaskua.
 
-1. Valitse Käyttöomaisuus > Kirjauskansioviennit > Käyttöomaisuuden kirjauskansio.
+1. Siirry kohtaan Myyntireskontra > Laskut > Kaikki vapaatekstilaskut.
 2. Valitse Uusi.
-3. Syötä tai valitse arvo Nimi-kenttään.
-4. Valitse Rivit.
-5. Valitse Ehdotukset.
-6. Valitse Hankintaehdotus.
-7. Valitse Suodatin.
-8. Tyhjennä aiemmat arvot valitsemalla Palauta.
-9. Valitse käyttöomaisuuserän numeron rivi.
-10. Syötä tai valitse arvo Ehdot-kenttään.
-    * Määritä muut ehdot käyttöomaisuuserille, jotka haluat hakea tämän ehdotuksen avulla.  
-11. Valitse OK.
-12. Valitse OK.
-    * Tarkista luodut tapahtumarivit.  
-    * Hankintaehdotukseen sisällytetään vain se käyttöomaisuuserä, jonka hankintapäivämäärä ja -hinta on määritetty kirjassa.  
-13. Valitse Kirjat-välilehti.
-14. Valitse Kirjaa.
+3. Syötä tai valitse arvo Asiakastili-kentässä.
+4. Tarkista laskun oletuspäivämäärä ja muokkaa sitä tarvittaessa.
+5. Tarkista jäljellä olevat oletusarvoiset otsikkokentät, kuten Valuutta, ja muokkaa sitä tarvittaessa.
+6. Kirjoita kuvaus laskuriville.
+7. Kirjoita tai valitse päätili laskuriville.
+8. Tarkista oletusarvoinen myyntiveroryhmä ja nimikkeen myyntiveroryhmä.
+9. Kirjoita käyttöomaisuuden yksikköhinta tai myyntisumma.
+10. Napsauta Rivin tiedot.  
+11. Valitse myytävän käyttöomaisuuden numero.
+12. Valitse Kirjaa.
 
 

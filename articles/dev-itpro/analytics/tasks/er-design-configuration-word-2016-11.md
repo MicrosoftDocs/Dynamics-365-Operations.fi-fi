@@ -1,25 +1,26 @@
 --- 
 title: Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja Word-muodossa
-description: "Seuraavissa vaiheissa selitetään, miten käyttäjä, jolla on järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi määrittää sähköisen raportoinnin (ER) muotoja luomaan raportteja Microsoft Word -tiedostoina."
+description: "Seuraavissa vaiheissa selitetään, miten käyttäjä, jolla on järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi määrittää sähköisen raportoinnin muotoja luomaan raportteja Microsoft Word -tiedostoina."
 author: NickSelin
 manager: AnnBe
-ms.date: 12/21/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja Word-muodossa
@@ -30,9 +31,9 @@ Seuraavissa vaiheissa selitetään, miten käyttäjä, jolla on järjestelmänva
 
 Näiden vaiheiden suorittaminen edellyttää, että ER-määrityksen luonti OPENXML-muotoisten raporttien luomiseksi -tehtäväoppaan vaiheet on suoritettu ensin. Lisäksi malliraporttia varten on etukäteen ladattava ja tallennettava paikallisesti seuraavat mallit:
 
-[Maksuraportin malli](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Maksuraportin malli](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Maksuraportin sidottu malli](https://go.microsoft.com/fwlink/?linkid=862266)
 
-[Maksuraportin sidottu malli](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Nämä ohjeet koskevat toimintoa, joka lisättiin Microsoft Dynamics 365 for Operations -versiossa 1611.
 
@@ -49,7 +50,7 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Microsoft Dynamics 365 for Ope
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Excel-malliin korvaaminen Word-mallilla
     * Tällä hetkellä OPENXML-muotoisen raportin luonnissa käytetään mallina Excel-tiedostoa. Raporttimalli tuodaan Word-muodossa.  
 1. Napsauta Liitteet.
-    * Korvaa aiemmin luotu Excel-malli aiemmin ladatulla Word-mallilla Maksuraportin malli. Huomaa, että tässä mallissa on vain ER-raporttina luotavan asiakirjan asettelu.  
+    * Korvaa aiemmin luotu Excel-malli aiemmin ladatulla Word-mallilla SampleVendPaymDocReport.docx. Huomaa, että tässä mallissa on vain ER-raporttina luotavan asiakirjan asettelu.  
 2. Valitse Poista.
 3. Valitse Kyllä.
 4. Valitse Uusi.

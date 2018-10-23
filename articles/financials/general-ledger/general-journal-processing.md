@@ -1,9 +1,9 @@
 ---
-title: "Kirjanpidon kirjauskansion käsittely"
-description: "Tässä artikkelissa kerrotaan Microsoft Dynamics 365 for Finance and Operationsin ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja joiden avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia."
+title: "Yleisen kirjauskansion käsittely"
+description: "Tässä ohjeaiheessa kuvataan Microsoft Dynamics 365 for Finance and Operationsin ominaisuuksia, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja joiden avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,20 +19,20 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: eb46613f805999753c2ab73ffb91a6fdae04c68e
+ms.sourcegitcommit: cf744bc41ffcca6d029da5dd2031ada607a0109b
+ms.openlocfilehash: e77aafafed5c972a6ad8c064107306d3ebde0b79
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 09/24/2018
 
 ---
 
-# <a name="general-journal-processing"></a>Kirjanpidon kirjauskansion käsittely
+# <a name="general-journal-processing"></a>Yleisen kirjauskansion käsittely
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kerrotaan Microsoft Dynamics 365 for Finance and Operationsin ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja joiden avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.  
+Tässä ohjeaiheessa kuvataan Microsoft Dynamics 365 for Finance and Operationsin ominaisuuksia, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja joiden avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.  
 
-Kirjauskansioiden nimet
+## <a name="journal-names"></a>Kirjauskansioiden nimet
 
 Kirjauskansioiden nimet on yksi tärkeimmistä määritettävistä alueista. On hyvä ajatus määrittää määrätyt kirjauskansionimet kullekin tarkoitukselle, kuten konsernin sisäinen, jaksotusoikaisut ja virheiden korjaus. Voit räätälöidä kunkin kirjauskansion nimen niin, että tietojen lisäys kullekin tarkoitukselle on helppoa ja turvallista. 
 
@@ -44,9 +44,13 @@ Kirjauskansioiden nimet on yksi tärkeimmistä määritettävistä alueista. On 
 
 **Esimerkkejä**
 
-Kirjauskansion nimeä voidaan käyttää vain oikaisuihin. Tässä tapauksessa voit määrittää, että vain **Kirjanpito**-tilityyppi on kelvollinen kaikissa yhtiöissä. [![Kirjauskansion hallinnan tilityypit](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+Kirjauskansion nimeä voidaan käyttää vain oikaisuihin. Tässä tapauksessa voit määrittää, että vain **Kirjanpito**-tilityyppi on kelvollinen kaikissa yhtiöissä. 
 
-Kirjauskansion nimeä voidaan käyttää vain määrätylle segmentille tai päätilien alueelle. [![Kirjauskansion hallintasegmentti](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Kirjauskansion hallinnan tilityypit](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+
+Kirjauskansion nimeä voidaan käyttää vain määrätylle segmentille tai päätilien alueelle. 
+
+[![Kirjauskansion hallintasegmentti](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Vaihtoehto **Automaattinen peruutus** on saatavilla yleisissä kirjauskansioissa. Sinulla voi esimerkiksi alla näkyvän esimerkin mukaisesti olla jaksotusoikaisu, jossa itse tiedostoa ei ole vielä käsitelty.
 [![Kirjauskansion takaisinkirjaukset](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
@@ -58,35 +62,39 @@ Voit määrittää toistuvia kirjauskansioita **Kausikirjauskansiot**-sivulla ja
 Voit käyttää tositemalleja milloin tahansa. **Yleiset kirjauskansiot** -sivulla löytyy **Tallenna-** ja **Valitse tositemalli** -toiminnot **Kirjaustosite**-sivulla tositerivien kohdassa **Toiminnot**.
 
 ## <a name="related-setup"></a>Liittyvät asetukset
-Seuraavat asetukset eivät koske nimenomaan yleisiä kirjauskansioita, mutta ne auttavat takaamaan, että oikeat tiedot tulevat kirjatuiksi ja että kirjaaminen on helppoa.
+Seuraavat asetukset eivät koske pelkästään yleisiä kirjauskansioita vaan auttavat takaamaan, että oikeat tiedot tulevat kirjatuiksi ja että kirjaaminen on helppoa.
 
 ### <a name="main-account"></a>Päätili
 
 Päätilin asetukset tarjoaa useita vaihtoehtoja yleisen kirjauskansion käsittelyyn:
 
 -   **Veloitus-/Hyvitystarve** – Käytä tätä vaihtoehtoa, jos päätili on rajoitettu debet- tai kredit-tapahtumiin. Asetukset tarkistetaan, kun kirjauskansio vahvistetaan tai kirjataan.
+
 -   **Oletusvastatili**
--   **Keskeytetty** – Keskeytä päätilille tehtävä tietojen kirjaaminen kaikkien yhtiöiden osalta tai määrättyjen yritysten osalta.
+-   **Keskeytetty** – Keskeytä päätilille tehtävä tietojen kirjaaminen kaikkien tai tiettyjen yhtiöiden osalta.
 -   **Älä salli manuaalista täyttämistä** – Estä käyttäjiä täyttämästä manuaalisesti tilin arvo kirjauskansioissa.
 -   **Oletusvaluutta/valuutan vahvistaminen**
 -   **Yrityksen ohitukset** – Nämä asetukset liittyvät kiinteästi määriteltyyn yritykseen:
     -   **Arvonlisäveron oletusarvo/vahvistaminen**
-    -   **Oletusdimensio** – **Ei määritetty** tai **Kiinteä arvo**. **Kiinteä arvo** auttaa varmistamaan, että kaikki tälle päätilille tehtävät kirjaukset käyttävät aina dimensioarvoa, joka on määritetty **Kiinteäksi**.
+    -   **Oletusdimensio** – **Ei määritetty** tai **Kiinteä arvo**. **Kiinteä arvo** auttaa varmistamaan, että kaikki tälle päätilille tehtävät kirjaukset käyttävät aina dimensioarvoa, jonka tilaksi on määritetty **Kiinteä**.
 -   **Kirjauksen oikeellisuustarkistus**
     -   **Käyttäjän oikeellisuustarkistus** – Tällä vaihtoehdolla valvotaan, millä käyttäjillä on oikeus tehdä kirjauksia päätilille.
     -   **Kirjaustyypin oikeellisuustarkistus** – Tällä vaihtoehdolla valvotaan, mitkä kirjaustyypit ovat sallittuja päätilillä.
 
 ### <a name="accounting-structures-and-advanced-rules-structures"></a>Kirjanpitorakenteet ja lisäsääntöjen rakenteet
 
-Kirjanpitorakenteet ja lisäsääntöjen rakenteet ovat erittäin tärkeitä sen varmistamisessa, että taloushallinnon raportoinnissa ja suorituskyvyn mittaamisessa tarvittavat tiedot ja asiakirjat kerätään kirjanpidon kirjauskansion käsittelyn yhteydessä. Kirjanpitorakenteiden ja lisäsääntöjen rakenteiden ansiosta voit räätälöidä tietojen syöttörutiinin. Voit sallia tietojen syötön vain kussakin tilanteessa asianmukaisille taloushallinnon dimensioille sekä toimeenpanna vaatimuksen, että pakolliset ja oikeat tiedot tulevat aina kerätyiksi.
+Kirjanpitorakenteet ja lisäsääntöjen rakenteet ovat erittäin tärkeitä sen varmistamisessa, että taloushallinnon raportoinnissa ja suorituskyvyn mittaamisessa tarvittavat tiedot ja asiakirjat kerätään kirjauskansion käsittelyn ja muun dokumentaation yhteydessä. Kirjanpitorakenteiden ja lisäsääntöjen rakenteiden ansiosta voit räätälöidä tietojen syöttörutiinin. Voit sallia tietojen syötön vain kussakin tilanteessa asianmukaisille taloushallinnon dimensioille sekä määrätä vaatimuksen siitä, että kerätään aina vaadittuja ja oikeita tietoja.
 
 Lisätietoja on seuraavissa aiheissa:
 - [Suunnittelu: tilikartta](plan-chart-of-accounts.md). 
 - [Luo kirjauskansioiden lisäsäännöt](tasks/create-advanced-rules-journals.md)
 - [Kirjauskansioviennin luonti mallin avulla](tasks/create-journal-entry-template.md)
 - [Luo ja vahvista kirjauskansiot](tasks/create-validate-journals.md)
-- [Kirjaa kausittaiset kirjauskansiot](tasks/post-periodic-journals.md)
+- [Kausittaisten kirjauskansioiden kirjaaminen](tasks/post-periodic-journals.md)
 - [Käsittele kirjanpidon kohdistuskirjauskansio](tasks/process-ledger-allocation-journal.md)
 
+## <a name="simulate-posting"></a>Kirjauksen simulointi
+Löydät **Kirjauksen simulointi** -kohdan useimpien kirjauskansioiden **Vahvista**-valikosta. Kun vahvistat kirjauskansion **Vahvista**-toiminnon avulla, järjestelmä testaa kirjauskansiota tiettyjen virhetilanteiden varalta. Jos käytät **Kirjauksen simulointi** -toimintoa, järjestelmä suorittaa kaikki samat prosessit, jotka suoritetaan kirjauksen aikana kirjauskansiota kirjaamatta. Voit siten tarkastella näytettyjä kirjausviestejä, korjata mahdollisesti löytämäsi virheet ja kirjata sitten kirjauskansion napsauttamalla **Kirjaa**. 
 
+**Kirjauksen simulointi** ei ole käytettävissä eräkäsittelyä varten. Käytettävissä on kuitenkin koodi, jonka avulla voidaan simuloida eräkirjausta, ja kehittäjät voivat ulottaa koodin lisäämään tämän toiminnon.  
 

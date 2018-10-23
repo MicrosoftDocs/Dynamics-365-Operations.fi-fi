@@ -18,10 +18,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 85318332b802aace7d705289e6a298b49799b847
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 0fa2b7c2dc5b88349cb4012b6b0ba9009a361fa0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -47,7 +47,7 @@ Ohjelmistovalmistajien sivustot sisältävät tietoja kunkin selaimen uusimmasta
 > * Työnkulkueditori käynnistetään ClickOnce-sovelluksena. Ainoastaan Microsoft Edge ja Internet Explorer (tuetussa Microsoft Windows -versiossa) tukevat ClickOnce-sovelluksia. Työnkulkueditorin ClickOnce-sovellus vaatii 64-bittisen käyttöjärjestelmän.
 > * PDF-tiedostojen esikatseluun suosittelemme modernia verkkoselainta, kuten Microsoft Edgeä (uusin julkinen versio) Windows 10 -käyttöjärjestelmässä tai Google Chromea (uusin julkinen versio) Windows 10-, Windows 8.1-, Windows 8- tai Windows 7 -käyttöjärjestelmässä tai Google Nexus 10 -tabletissa.
 >   Verkon vaatimukset
-> * Dynamics 365 for Talent on suunniteltu verkkoihin, joiden viive on enintään 250–300 millisekuntia (ms). Tämä on viive selainasiakkaan ja Dynamics 365 for Talentia isännöivän Microsoft Azure -palvelinkeskuksen välillä. On suositeltavaa testata verkon viive osoitteessa [www.azurespeed.com](http://www.azurespeed.com "Azuren viivetesti").
+> * Dynamics 365 for Talent on suunniteltu verkkoihin, joiden viive on enintään 250–300 millisekuntia (ms). Tämä on viive selainasiakkaan ja Dynamics 365 for Talentia isännöivän Microsoft Azure -palvelinkeskuksen välillä. On suositeltavaa testata verkon viive osoitteessa [www.azurespeed.com](https://www.azurespeed.com "Azuren viivetesti").
 > * Dynamics 365 for Talentin kaistanleveysvaatimus riippuu tilanteesta. Yleisimmät tilanteet vaativat yli 50 kilotavua sekunnissa (KBps) kaistanleveyttä.
 > 
 > [!WARNING]

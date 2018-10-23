@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 9399df070d450b6eb89dc33ca47ddb77fe8e60b1
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 137fb8cae0766bed16b6b32d99e1d2c6c9f7b606
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla Dynamics 365 for Finance and Operations voidaan määrittää yrityksiin, joiden ensisijainen osoite on Brasiliassa. 
+Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla Dynamics 365 for Finance and Operations voidaan määrittää yrityksille, joiden ensisijainen osoite on Euroopassa. 
 
 - [Ennakonvaraajat](emea-advance-holders.md)
  - [Ennakonvaraajien tapahtumat](emea-advance-holders-transactions.md)
@@ -44,9 +44,7 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla Dynamic
 - [Maksutapojen tiedostomuodot](emea-select-file-formats-for-the-method-of-payments.md)
 - [Tilipalvelun (ESR) integrointi](emea-fiscal-service-integration.md)
 - [Viron ja Liettuan käyttöomaisuuden luovutus](emea-credit-note-reverse-fixed-asset-sale.md)
-- [Ulkomaanvaluutan uudelleenarvostus](emea-foreign-currency-revaluation.md)
 - [Siirtoasiakirjan luominen sisäiselle varastosiirrolle](tasks/transfer-document-internal-inventory-transfer.md)
-- [EU Intrastat -ilmoituksen luominen](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Luo EU-myyntiluettelon raportti](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-tiedostot
   - [ISO20022-tiedostojen tuominen](emea-ISO20022-file-formats.md)
@@ -61,6 +59,8 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla Dynamic
   - [Toimittajien maksujen luominen ja tuonti ISO20022-maksumuodossa](tasks/create-export-vendor-payments-iso20022-payment-format.md)
 - [Intrastat](emea-intrastat.md)
   - [Tapahtumien siirtäminen Intrastatiin](tasks/transfer-transactions-intrastat.md)
+  - [Rahtiosoitteen määrittäminen yhteisönsisäiselle tapahtumalle](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [EU Intrastat -ilmoituksen luominen](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Varastokirjauskansioiden raportit](emea-set-up-report-inventory-journal-names.md)
 - [Laskun kirjoittamisen määräajat](emea-invoice-issue-deadline.md)
 - [Laskun käsittely](emea-invoice-processing.md)
@@ -82,8 +82,6 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla Dynamic
 - [EU-myyntiluettelon raportoinnin määrittäminen](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Projektilaskujen maksukuitin muodon määrittäminen](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](emea-set-up-signers-for-printing-forms.md)
-- [Siirtoasiakirjojen määrittäminen tavaroiden siirrolle yrityksen sisällä](tasks/set-up-transfer-documents-goods-movement-inside-company.md)
-- [Rahtiosoitteen määrittäminen yhteisönsisäiselle tapahtumalle](tasks/eur-00002-specify-lading-address-intra-community.md)
 - [Storno-kirjanpito](emea-storno.md)
 - [Verodirektiivit](emea-tax-directives.md)
 - [Raporttien ja asiakirjojen summien esitysmuodon päivittäminen](emea-amount-printing-forms.md)

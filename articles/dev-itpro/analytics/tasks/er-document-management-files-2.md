@@ -1,28 +1,29 @@
 --- 
-title: "Laajenna tietomalli käyttämään tiedostonhallinnan tiedostoja ER-tuotoksissa"
+title: "ER Tiedostonhallinnan tiedostojen käyttö muodon tuotoksissa (Osa 2 – Tietomallin laajentaminen)"
 description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 8363dd2af728577175a620d7b645d90cea84803a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: cb4c58dc86a159a70634c05408a8db471ebcae4c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="extend-data-models-to-use-document-management-files-in-er-output"></a>Laajenna tietomalli käyttämään tiedostonhallinnan tiedostoja ER-tuotoksissa
+# <a name="er-use-document-management-files-in-format-outputs-part-2-extend-data-model"></a>ER Tiedostojenhallinnan tiedostojen käyttö muodon tuloksissa (osa 2: tietomallin laajennus)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -57,7 +58,7 @@ Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operation
 17. Valitse Nimiketyyppi-kentässä Merkkijono.
 18. ValitseLisää.
 
-## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-data-sources"></a>Uusien tietomallielementtien yhdistäminen Dynamics 365 for Finance and Operations -sovelluksen tietolähteisiin
+## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>Uusien tietomallielementtien yhdistäminen Dynamics 365 for Finance and Operations, Enterprise editionin tietolähteisiin
 1. Valitse Yhdistä malli tietolähteeseen.
 2. Pikasuodattimen avulla voit suodattaa Määritys-kentän arvolla "InvoiceCustomer".
     * InvoiceCustomer  

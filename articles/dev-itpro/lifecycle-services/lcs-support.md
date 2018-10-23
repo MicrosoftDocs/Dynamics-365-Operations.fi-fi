@@ -18,10 +18,10 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
-ms.openlocfilehash: 7061ee2e8b22d29381131815898902a482b7b730
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 09/21/2018
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 08/29/2018
 
 Tässä artikkelissa kerrotaan Finance and Operationsin ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta. 
 
-<a name="contact-support"></a>Ota yhteyttä tukeen
----------------
+## <a name="contact-support"></a>Ota yhteyttä tukeen
 
 Artikkelissa annetaan Microsoftin yhteystiedot, jos sinulla on Finance and Operationsia koskevia teknisiä kysymyksiä tai jos tarvitset apua Microsoft Dynamics Lifecycle Servicesin (LCS) käytössä.
 
@@ -89,8 +88,10 @@ Jos tekniset kysymykset liittyvät CustomerSourceen kirjautumiseen tai sen käyt
 </tbody>
 </table>
 
-Lisätietoja Microsoft Dynamicsin tukivalikoimasta on ohjeaiheessa [Microsoft Dynamics Online -tuki](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 
-
+## <a name="additional-resources"></a>Lisäresurssit
+- [Dynamics 365 for Retail -tuen saanti](../../retail/retail-support.md)
+- [Dynamics 365 for Talent -tuen saanti](../../talent/talent-support.md)
+- Lisätietoja Microsoft Dynamicsin tukivalikoimasta on ohjeaiheessa [Microsoft Dynamics Online -tuki](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 
 

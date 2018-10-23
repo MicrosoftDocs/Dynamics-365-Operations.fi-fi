@@ -1,9 +1,9 @@
 ---
 title: "Ylläpidä suunniteltuja tilauksia"
-description: "Tämä artikkeli sisältää suunniteltujen tilausten hallintaa käsitteleviä tietoja. Artikkelissa kuvataan, miten voit päivittää suunniteltujen tilausten tilan, vahvistaa ne ja suodattaa suunniteltuja tilauksia, joilla on sama tila kuin valitulla suunnitellulla tilauksella."
+description: "Tämä ohjeaihe sisältää suunniteltujen tilausten hallintaa käsitteleviä tietoja. Artikkelissa kuvataan, miten voit päivittää suunniteltujen tilausten tilan, vahvistaa ne ja suodattaa suunniteltuja tilauksia, joilla on sama tila kuin valitulla suunnitellulla tilauksella."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3d7afda9371b4d21e58f2e56de3d477b1c9950a1
+ms.sourcegitcommit: ad0083018d2734cb1e36cbf5f94105376c57cdf9
+ms.openlocfilehash: e0e3e86ae85b59b10dc8d9ca9b0130d218469118
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/02/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tämä artikkeli sisältää suunniteltujen tilausten hallintaa käsitteleviä tietoja. Artikkelissa kuvataan, miten voit päivittää suunniteltujen tilausten tilan, vahvistaa ne ja suodattaa suunniteltuja tilauksia, joilla on sama tila kuin valitulla suunnitellulla tilauksella.
+Tämä ohjeaihe sisältää suunniteltujen tilausten hallintaa käsitteleviä tietoja. Artikkelissa kuvataan, miten voit päivittää suunniteltujen tilausten tilan, vahvistaa ne ja suodattaa suunniteltuja tilauksia, joilla on sama tila kuin valitulla suunnitellulla tilauksella.
 
 Voit hallita suunniteltuja tilauksia **Pääsuunnittelu**-työtilassa, **Suunniteltu tilaus** -luettelossa tai **Suunnitellut tuotantotilaukset**-, **Suunnitellut ostotilaukset**- ja **Suunniteltu siirto** -luettelossa. Voit seurata edistymistä **Tila**-kentässä. Käytettävissä ovat seuraavat arvot:
 
@@ -45,7 +45,7 @@ Voit hallita suunniteltuja tilauksia **Pääsuunnittelu**-työtilassa, **Suunnit
 -   Useita suunniteltuja tilauksia.
 -   Suunnitellut tilaukset, jotka on luotu **Hajotus**-sivulla hajottamalla. Napsauta **Suunnitellut tilaukset**, valitse suunniteltu tilaus ja napsauta sitten **Vahvista**.
 
-Kun suunniteltu tilaus on vahvistettu, se siirtyy kyseisen moduulin tilausosaan. **Huomautus:** Napsauttamalla hiiren kakkospainikkeella suunniteltua tilausta, jolla on tietty tila, voit suodattaa näkyviin muut suunnitellut tilaukset, joilla on sama tila. Tämä toiminto on hyödyllinen, jos esimerkiksi haluat suodattaa vahvistettavaksi kaikki suunnitellut tilaukset, joiden tila on **hyväksytty**.
+Kun suunniteltu tilaus on vahvistettu, se siirtyy kyseisen moduulin tilausosaan. 
 
 <a name="additional-resources"></a>Lisäresurssit
 --------

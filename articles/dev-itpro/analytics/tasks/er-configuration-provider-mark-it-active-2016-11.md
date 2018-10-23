@@ -3,23 +3,24 @@ title: "Konfiguraation lähteiden luominen ja niiden merkitseminen aktiiviseksi"
 description: "Seuraavissa vaiheissa kerrotaan, miten käyttäjä, jolla on järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi luoda konfigurointilähteen sähköiselle raportoinnille (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 37957f224cb57fd9f6c5014740bcea124a99a03a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Konfiguraation lähteiden luominen ja niiden merkitseminen aktiiviseksi
@@ -33,10 +34,11 @@ Seuraavissa vaiheissa kerrotaan, miten käyttäjä, jolla on järjestelmänvalvo
 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
 2. Valitse Konfiguraation lähteet.
 3. Valitse Uusi.
-    * Lähdetietueella on yksilöivä nimi ja URL-osoite. Seuraa tämän sivun sisältöä ja ohita tämä menettely, jos Litware, Inc. (`http://www.litware.com`) on jo luotu.  
+    * Lähdetietueella on yksilöivä nimi ja URL-osoite. Tarkista tämän sivun sisältö ja ohita tämä menettely, jos Litware, Inc. (http://www.litware.com) on jo luotu.  
 4. Syötä Nimi-kenttään Litware, Inc.
     * Litware, Inc.  
-5. Kirjoita Internet-osoite-kenttään `http://www.litware.com`.
+5. Kirjoita Internet-osoite-kenttään http://www.litware.com.
+    * http://www.litware.com  
 6. Valitse Tallenna.
 7. Sulje sivu.
 

@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: c9772d45cf9d9941dd8fe0de13ce624ea3aa3b53
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -37,12 +37,9 @@ Voit nimetä uudelleen kansioita, raportteja, rakenneosia ja muita objekteja Rep
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Kansion tai rakenneosan nimeäminen uudelleen Report Designerissa
 Raporttien suunnitteluohjelmalla voidaan nimetä uudelleen kansiot sekä raportti-, rivi-, sarake- ja raporttipuumääritykset.
 
-> [!NOTE]
-> Kun nimeät rakenneosan uudelleen, myös kyseistä rakenneosaa käyttävät raportin määritykset on päivitettävä. Muussa tapauksessa uutta raporttia ei voi luoda.
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Kansion tai rakenneosan nimeäminen uudelleen raporttien suunnitteluohjelmalla
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Kansion tai rakenneosan nimeäminen uudelleen Report Designerissa
-
-1. Käytä Report Designerissa siirtymisruutua löytääksesi uudelleennimettävän kansion tai objektin.
+1. Etsi kansio tai kohde, jonka haluat nimetä uudelleen, käyttämällä raporttien suunnitteluohjelman siirtymisruutua.
 2. Valitse kansio tai objekti hiiren kakkospainikkeella ja valitse sitten **Nimeä uudelleen**. Siirtymisruudun **Nimi**-kenttä tulee käyttöön.
 3. Kirjoita uusi nimi ja paina sitten Enter-näppäintä.
 4. Jos rakenneosa on rivin määritys, sarakkeen määritys tai raportointipuun määritys, muut siihen liitetyt rakenneosat on päivitettävä. Valitse ensin vaiheessa 3 uudelleennimetty rakenneosa hiiren kakkospainikkeella, valitse sitten **Liitokset** ja valitse lopuksi luettelosta päivitettävä kohde.

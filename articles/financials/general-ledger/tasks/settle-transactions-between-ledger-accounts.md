@@ -3,7 +3,7 @@ title: "Tapahtumien selvitys kirjanpitotilien välillä"
 description: "Tässä menettelyssä käsitellään, miten kirjanpitotilien väliset tapahtumien tilitetään ja miten kirjanpidon tilitys peruutetaan."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/03/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 97a28069f8d560c98099a667852c932ba7658996
+ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
+ms.openlocfilehash: 4aff64fa1c017f295752e913de7fb320f0662ef8
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/03/2018
 
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a>Tapahtumien selvitys kirjanpitotilien välillä
@@ -33,19 +33,20 @@ Tässä menettelyssä käsitellään, miten kirjanpitotilien väliset tapahtumie
 ## <a name="settle-transaction-between-ledger-accounts"></a>Tilitä kirjanpitotilien välinen tapahtuma
 1. Valitse Kirjanpito > Kausittaiset tehtävät > Tapahtuman selvitykset.
 2. Etsi tilitettävä tapahtuma luettelosta.
-    * Summan saldon on oltava nolla.  
+   > [!NOTE]
+   > Summan saldon on oltava nolla.  
 3. Valitse Sisällytä.
 4. Valitse Hyväksy.
 
 ## <a name="cancel-a-ledger-settlement"></a>Tapahtuman selvityksen peruuttaminen
-1. Sulje sivu.
-2. Valitse Kirjanpito > Kyselyt ja raportit > Pääkirja.
-3. Avaa valintaikkuna valitsemalla Parametrit.
-4. Valitse Päivitä.
-5. Etsi luettelosta tili, jossa on tilitetty tapahtuma.
-6. Valitse Kaikki tapahtumat.
-7. Suodattimen käyttö nopeuttaa tapahtuman etsimistä luettelosta.
-8. Valitse Tapahtuman selvitykset.
-9. Merkitse valittu rivi luettelossa.
+
+1. Valitse Kirjanpito > Kyselyt ja raportit > Pääkirja.
+2. Avaa valintaikkuna valitsemalla Parametrit.
+3. Valitse Päivitä.
+4. Etsi luettelosta tili, jossa on tilitetty tapahtuma.
+5. Valitse Kaikki tapahtumat.
+6. Suodattimen käyttö nopeuttaa tapahtuman etsimistä luettelosta.
+7. Valitse Tapahtuman selvitykset.
+8. Merkitse valittu rivi luettelossa.
 
 
