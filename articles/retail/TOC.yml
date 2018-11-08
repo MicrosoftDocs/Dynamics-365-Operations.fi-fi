@@ -12,8 +12,10 @@
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: Käyttöönoton asetukset
       href: dev-itpro/choose-deployment.md
-    - name: Vähittäismyynnin tuen saaminen
+    - name: Retail-tuen saaminen
       href: retail-support.md
+    - name: Yhden version palvelupäivitysten usein kysytyt kysymykset
+      href: ../fin-and-ops/get-started/one-version.md
 - name: Tietoja järjestelmän elinkaaresta
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -139,17 +141,15 @@
       href: demo-data.md
     - name: 'Tuote- ja asiakashaku POS:ssä'
       href: POS-search-improvements.md
-    - name: 'Varastohaku POS:ssä'
+    - name: Varastohaku myyntipisteessä
       href: product-variants-POS.md
     - name: Laitteiston oheislaitteet
       items:
-        - name: Retail-oheislaitteet
+        - name: Vähittäismyynnin oheislaitteet
           href: retail-peripherals-overview.md
-        - name: Microsoftin testaamat myyntipisteen oheislaitteet
-          href: microsoft-tested-pos-hardware-peripherals.md
-        - name: Retail-oheislaitesimulaattori
+        - name: Vähittäismyynnin oheislaitesimulaattori
           href: dev-itpro/retail-peripheral-simulator.md
-        - name: 'Oheislaitteiden yhdistäminen POS:ään'
+        - name: Oheislaitteiden yhdistäminen myyntipisteeseen
           href: define-maintain-channel-clients-registers-hw-stations.md
     - name: Näytön asettelut
       items:
@@ -229,7 +229,9 @@
       href: set-up-rfm-analysis.md
 - name: Alennukset ja hinnanoikaisut
   items:
-    - name: Retail-myyntihintojen hallinta
+    - name: Vähittäismyynnin alennukset
+      href: retail-discounts-overview.md
+    - name: Vähittäismyyntihintojen hallinta
       href: price-management.md
     - name: Hinnanoikaisut ja alennukset
       href: price-adjustments-discounts.md
@@ -271,7 +273,7 @@
       href: ../supply-chain/pim/search-products-product-variants.md
 - name: Kanta-asiakkuus
   items:
-    - name: Kanta-asiakasohjelmien määrittäminen
+    - name: Kanta-asiakkuuden yleiskatsaus
       href: set-up-customer-loyalty-program.md
 - name: Varasto
   items:
@@ -307,14 +309,18 @@
       href: ../talent/create-job.md
 - name: Lokalisointi- ja säädösominaisuudet
   items:
+    - name: Vähittäismyyntikanavan kirjanpidon integrointi
+      href: localizations/fiscal-integration-for-retail-channel.md
     - name: Itä-Eurooppa
       items:
         - name: Retail-ennakkolaskut Itä-Eurooppaa varten
           href: localizations/emea-eeu-advance-invoices-for-retail.md
         - name: Retail-käteisvarojen hallinta Itä-Eurooppaa varten
           href: localizations/emea-eeu-petty-cash-for-retail.md
-        - name: Retail-myyntilaskut ja myyntitilaukset Itä-Euroopan maissa
+        - name: Retail-myyntilaskut ja palautuksen myyntitilaukset Itä-Euroopan maissa
           href: localizations/emea-eeu-retail-invoices.md
+        - name: 'Kassakoneiden käyttöönotto-ohjeet Tšekin tasavallassa, Unkarissa ja Puolassa'
+          href: localizations/emea-eeu-deployment.md
     - name: Ranska
       items:
         - name: Kassakonetoiminnot
@@ -329,6 +335,10 @@
           href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: "Päivitys- ja\_N-1-tuki Intiaa varten"
           href: localizations/apac-ind-n-1-for-india.md
+    - name: Italia
+      items:
+        - name: Kuittitulostimen integrointi
+          href: localizations/emea-ita-fpi-sample.md
     - name: Norja
       items:
         - name: Kassakonetoiminnot
@@ -490,6 +500,8 @@
           href: dev-itpro/pos-custom-control.md
         - name: Myyntipistetoimintojen lisääminen myyntipisteasetteluihin käyttämällä painikeruudukon suunnittelutoimintoa
           href: dev-itpro/add-POS-operations.md
+        - name: Retail POS -ohjelmointirajapinnat
+          href: dev-itpro/POS-APIs.md
         - name: Myyntipisteen maksulaajennus
           href: dev-itpro/pos-payment-extension.md
         - name: Ulkoisten lahjakorttien tuki

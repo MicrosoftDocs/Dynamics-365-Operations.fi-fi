@@ -34,6 +34,8 @@
         - name: Uudet ja muuttuneet ominaisuudet
           href: get-started/whats-new-changed.md
           items:
+            - name: Yhden version palvelupäivitysten usein kysytyt kysymykset
+              href: get-started/one-version.md
             - name: Ohjelmiston elinkaarikäytäntö ja pilviversiot
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: Ohjelmiston elinkaarikäytäntö ja paikalliset versiot
@@ -46,8 +48,16 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: 'Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa ympäristöissä'
               href: get-started/features-not-implemented-on-prem.md
+            - name: Platform update 22 (marraskuu 2018)
+              href: get-started/whats-new-platform-update-22.md
+            - name: Finance and Operations -versio 8.1.2 (marraskuu 2018)
+              href: get-started/whats-new-changed-8-1-2.md
+            - name: Finance and Operations -versio 8.1.1 (lokakuu 2018)
+              href: get-started/whats-new-changed-8-1-1.md
             - name: Finance and Operations -versio 8.1 (lokakuu 2018)
               href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: Platform update 21 (lokakuu 2018)
+              href: get-started/whats-new-platform-update-21.md
             - name: Platform update 20 (syyskuu 2018)
               href: get-started/whats-new-platform-update-20.md
             - name: Finance and Operations -versio 8.0 (huhtikuu 2018)
@@ -296,11 +306,11 @@
           href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/fin-and-ops/toc.json
     - name: Tietojen integrointi
       items:
-        - name: Tietojen integroinnin (tuonti/vienti) strategian valitseminen
+        - name: Tietojen integrointistrategian (tuonti/vienti) valitseminen
           href: ../dev-itpro/data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
         - name: Tietojen integroinnin ohjelmointirajapinnat
           items:
-            - name: Tietojen hallintapaketin API
+            - name: Tietojen hallintapaketin REST API
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: Palvelun päätepisteet
               href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
@@ -309,26 +319,28 @@
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
             - name: OData
               href: ../dev-itpro/data-entities/odata.md?toc=/fin-and-ops/toc.json
-            - name: Räätälöidyt palvelut
+            - name: Mukautettu palvelukehitys
               href: ../dev-itpro/data-entities/custom-services.md?toc=/fin-and-ops/toc.json
-            - name: Toistuvat integraatiot
+            - name: Toistuvat integroinnit
               href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
-        - name: Integraation kehitys
+            - name: Palvelujen testaaminen kolmannen osapuolen apuohjelmien avulla
+              href: ../dev-itpro/data-entities/third-party-service-test.md
+        - name: Integroinnin kehitys
           items:
             - name: Tietojen integraatio tietoyksikköjen avulla
               href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Tietojen siirtoyksikön kehittäminen
                   href: ../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/fin-and-ops/toc.json
-                - name: Yhdistelmätietoyksiköiden kehitys
+                - name: Yhdistelmätietoyksiköiden kehittäminen
                   href: ../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/fin-and-ops/toc.json
                 - name: Määritä yritysten välinen taloustietojen jakaminen
                   href: ../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/fin-and-ops/toc.json
-                - name: Tietuemallin luonti helpottamaan tietojen kirjaamista
+                - name: Tietuemallien luonti tietojen kirjaamista varten
                   href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
-                - name: Uuden tietueen luonti tietuemallin avulla
+                - name: Tietueiden luonti tietuemallien avulla
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
-            - name: Tietojen integrointi Common Data Service -palvelua käyttäen
+            - name: Tietojen integrointi Common Data Servicen avulla
               href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Myyntimahdollisuudesta maksutapahtumaan -skenaarion määrittäminen
@@ -383,6 +395,8 @@
             - name: Konfigurointitietojen kopiointi yhtiöiden tai yritysten välillä
               href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Konfigurointitietopaketit
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Konfigurointitietopaketit (vain heinäkuun 2017 versio)
                   href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
             - name: Konfigurointitietomallit
@@ -391,6 +405,10 @@
               href: ../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json
             - name: Tietojen etsiminen vakiotietoyksiköistä
               href: ../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json
+            - name: Useita laskentataulukoita sisältävät tietomallit
+              href: ../dev-itpro/data-entities/excel-template-multiple.md
+            - name: Muutosten seurannan ottaminen käyttöön yksiköille
+              href: ../dev-itpro/data-entities/entity-change-track.md
             - name: Konfigurointiavaimet ja tietoyksiköt
               href: ../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json
             - name: Konfigurointitietopaketit
@@ -402,6 +420,8 @@
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: Tietoyksiköiden kehittäminen
           items:
+            - name: Tietoyksiköiden suunnittelun periaatteet ja parhaat käytännöt
+              href: ../dev-itpro/dev-tools/design-best-practices.md
             - name: Uusien tietoyksiköiden luominen
               href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
             - name: Tietoyksiköiden ominaisuudet
@@ -424,12 +444,16 @@
               href: ../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
             - name: Kolmannen osapuolen palvelun testausapuohjelmien käyttäminen
               href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
+            - name: Taloushallinnon dimensiot näyttävien vain luku -tyyppisten yksiköiden luominen
+              href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
         - name: Oman tietokannan tuonti
           href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
         - name: Tietotehtävän automatisointi
           href: ../dev-itpro/data-entities/data-task-automation.md
-        - name: Tietojen vahvistuksen työtila
+        - name: Tietojen tarkistuksen tarkistusluettelon työtila
           href: ../dev-itpro/user-interface/data-validation-workspace.md
+        - name: Tietojenhallintavirheiden kuvaukset
+          href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: Taloushallinto
       href: ../financials/index.md
       items:
@@ -1005,8 +1029,10 @@
                   href: ../financials/budgeting/consolidation-elimination-overview.md
                 - name: Kirjanpidon kalenterit ja tilikaudet
                   href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
-                - name: Määritä tilirakenteet
+                - name: Tilirakenteiden konfigurointi
                   href: ../financials/general-ledger/configure-account-structures.md
+                - name: Kaksoisvaluutta
+                  href: ../financials/general-ledger/dual-currency.md
             - name: Kirjauskansiot ja kirjanpidot
               items:
                 - name: Yleisen kirjauskansion käsittely
@@ -1049,6 +1075,8 @@
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
                 - name: Yksi tosite
                   href: ../financials/general-ledger/one-voucher.md
+                - name: Tapahtuman selvitykset
+                  href: ../financials/general-ledger/ledger-settlements.md
             - name: Kauden sulkeminen
               items:
                 - name: Kirjanpidon sulkeminen kauden lopussa
@@ -1799,11 +1827,15 @@
             - name: Veromoduulin yleiskatsaus
               href: ../financials/general-ledger/tax-engine.md
               items:
+                - name: Tuonnin konfiguraatio
+                  href: ../financials/general-ledger/tax-engine-import-configuration.md
+                - name: Veromoduulin soveltuvuus
+                  href: ../financials/general-ledger/tax-engine-applicability.md
                 - name: Veromoduulin integrointi
                   href: ../financials/general-ledger/tax-engine-integration.md
                 - name: Veromoduulin laajentaminen
                   href: ../financials/general-ledger/extend-tax-engine-configurations.md
-            - name: Veron raja-arvot – usein kysytyt kysymykset
+            - name: Veron raja-arvojen usein kysytyt kysymykset
               href: ../financials/localizations/apac-ind-tax-thresholds.md
         - name: Italia
           href: ../financials/localizations/italy.md
@@ -2100,6 +2132,8 @@
         - name: Puola
           href: ../financials/localizations/poland.md
           items:
+            - name: Storno-kirjanpidon aktivointi
+              href: ../financials/localizations/emea-pol-red-storno.md
             - name: Rivialennusten laskenta yksikköhinnasta
               href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
             - name: Korjaushuomautukset
@@ -2116,6 +2150,8 @@
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Arvonlisäveroraportit
               href: ../financials/localizations/emea-pol-sales-tax-reports.md
+            - name: Varastokohtaisten numerosarjojen määrittäminen
+              href: ../financials/localizations/emea-pol-number-sequence-warehouses.md
             - name: Vakiotarkistustiedosto
               href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
             - name: Veron korko ja vapaa korko
@@ -2128,36 +2164,64 @@
             - name: Ennakonvaraajat
               href: ../financials/localizations/rus-advance-holders.md
               items:
-                - name: Luo kehittynyt pitosääntö
+                - name: Ennakon haltijan luominen
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: Ennakkomaksun haltijoiden päivittäiset työvaiheet
                   href: ../financials/localizations/rus-advance-holders-daily-operations.md
+                - name: Budjetin hallinnan sisältävät ennakkoraportit
+                  href: ../financials/localizations/rus-advance-holders-reports-dailyops.md
+                - name: Ennakon haltijoiden ulkomaanvaluutan uudelleenarvostus
+                  href: ../financials/localizations/rus-advance-adjustment-parameters.md
+                - name: Ennakonvaraajaraportit
+                  href: ../financials/localizations/rus-local-management-reports-primary-forms.md
+            - name: Pankki
+              items:
+                - name: Pankkitilien määrittäminen
+                  href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+                - name: Maksumääräysten määritykset ja käsittely
+                  href: ../financials/localizations/rus-payment-order-settings-processing.md
             - name: Käyttöomaisuuserät
               items:
                 - name: "Käyttöomaisuuden hankkiminen ja ottaminen\_käyttöön"
                   href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Käyttöomaisuushankintojen rekisteröinti
+                  href: ../financials/localizations/rus-register-acquisition.md
                 - name: "Budjettikirjauskansioiden luonti ja kirjaaminen\_käyttöomaisuushankintoja varten"
                   href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
                 - name: Käyttöomaisuuden laskenta
                   href: ../financials/localizations/rus-fixed-assets-counting.md
                 - name: "Käyttöomaisuuden valuuttapohjainen\_uudelleenarvostus"
                   href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Käyttöomaisuuden kustannusten ja poistojen uudelleenarvostus
+                  href: ../financials/localizations/rus-fixed-assets-revaluation.md
                 - name: Käyttöomaisuuden osittainen purku (selvitystila)
                   href: ../financials/localizations/rus-fixed-assets-disassembly.md
-            - name: Maksumääräysten määritykset ja käsittely
-              href: ../financials/localizations/rus-payment-order-settings-processing.md
+                - name: 'Käyttöomaisuuden myyminen, poistaminen ja poiskirjaaminen'
+                  href: ../financials/localizations/rus-sell-dispose-write-off-fixed-assets.md
+                - name: Käyttöomaisuuden sijaintien ja numeroinnin määrittäminen
+                  href: ../financials/localizations/rus-fixed-assets-locations-numbering.md
+                - name: Poiston määrittäminen
+                  href: ../financials/localizations/rus-depreciation-setup.md
+                - name: Poistomenetelmät
+                  href: ../financials/localizations/rus-depreciation-methods.md
+                - name: Poistobonukset
+                  href: ../financials/localizations/rus-bonus-depreciation.md
+                - name: Poiston laskenta
+                  href: ../financials/localizations/rus-depreciation-calculation.md
+            - name: Yrityksen osastot
+              href: ../financials/localizations/rus-company-divisions.md
             - name: Valuuttatapahtumien vaihtokurssien määrittäminen
               href: ../financials/localizations/rus-exchange-difference.md
             - name: Kirjanpitotransaktioiden esikatselu
               href: ../financials/localizations/rus-ledger-transactions-preview.md
             - name: Viranomaistapahtumat
               href: ../financials/localizations/rus-officials.md
-            - name: Pankkitilien määrittäminen
-              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
             - name: "Veroedustajien arvonlisävero\_(ALV)"
               href: ../financials/localizations/rus-tax-agent.md
             - name: Tilitysten dimension ohjauksen määrittäminen
               href: ../financials/localizations/rus-transactions-settlement-date.md
+            - name: Maksettavat laskut
+              href: ../financials/localizations/rus-invoice-payment.md
         - name: Saudi-Arabia
           href: ../financials/localizations/saudi-arabia.md
           items:
