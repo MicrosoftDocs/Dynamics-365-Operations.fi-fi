@@ -25,6 +25,7 @@ ms.lasthandoff: 09/24/2018
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Käyttöomaisuuden poisto vapaatekstilaskua käyttäen
 
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Näiden ohjeiden avulla voit poistaa käyttöomaisuuden käyttämällä vapaatekstilaskua.
 
