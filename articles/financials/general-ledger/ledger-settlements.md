@@ -27,7 +27,6 @@ ms.lasthandoff: 10/12/2018
 # <a name="ledger-settlements"></a>Tapahtuman selvitykset
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Tapahtuman selvitysten avulla täsmäyttää debet- ja kredit-tapahtumat kirjanpidossa ja merkitä ne selvitetyiksi. Tällä tavoin voit varmistaa, että liittyvät tapahtumat on selvitetty. Voit tehdä tarvittaessa myös käänteisiä tilityksiä.
 
