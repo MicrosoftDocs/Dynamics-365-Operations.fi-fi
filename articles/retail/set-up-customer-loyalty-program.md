@@ -1,9 +1,9 @@
 ---
-title: "Kanta-asiakasohjelmien määrittäminen"
-description: "Tässä artikkelissa kuvataan kanta-asiakasohjelman määrittämistä. Kanta-asiakasohjelmat voivat nostaa asiakasuskollisuutta palkitsemalla asiakkaita, jotka asioivat myymälässäsi. Microsoft Dynamics 365 for Retailissa voit määrittää yksinkertaisia tai monimutkaisia kanta-asiakasohjelmia yritysten välille missä tahansa vähittäismyyntikanavassa."
+title: Kanta-asiakkuuden yleiskatsaus
+description: "Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Retailiin kanta-asiakastoimintoja ja niitä vastaavia asetusohjeita, jotta jälleenmyyjä pääsee aloittamaan kanta-asiakasohjelmansa."
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,23 +20,20 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 8aa29282f80870b93d119c095bb95c3bcfbfc682
+ms.sourcegitcommit: 11ad4168c7e5ddc63608d1c86430e4a6936d5e30
+ms.openlocfilehash: 78318849873f396c662c5250f0e86146279cc3a5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/25/2018
 
 ---
 
-# <a name="set-up-customer-loyalty-programs"></a>Kanta-asiakasohjelmien määrittäminen
+# <a name="loyalty-overview"></a>Kanta-asiakkuuden yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa kuvataan kanta-asiakasohjelman määrittämistä. Kanta-asiakasohjelmat voivat nostaa asiakasuskollisuutta palkitsemalla asiakkaita, jotka asioivat myymälässäsi. Microsoft Dynamics 365 for Retailissa voit määrittää yksinkertaisia tai monimutkaisia kanta-asiakasohjelmia yritysten välille missä tahansa vähittäismyyntikanavassa.
+Kanta-asiakasohjelmat voivat lisätä asiakasuskollisuutta palkitsemalla asiakkaita, kun ovat tekemisissä jälleenmyyjän brändin kanssa. Microsoft Dynamics 365 for Retailissa voit määrittää yksinkertaisia tai monimutkaisia kanta-asiakasohjelmia yritysten välille missä tahansa vähittäismyyntikanavassa. Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Retailiin kanta-asiakastoimintoja ja niitä vastaavia asetusohjeita, jotta jälleenmyyjä pääsee aloittamaan kanta-asiakasohjelmansa.
 
-<a name="loyalty-features"></a>Kanta-asiakastoiminnot
-----------------
-
-Voit määrittää kanta-asiakasohjelman käyttämällä seuraavia vaihtoehtoja:
+Voit määrittää kanta-asiakasohjelman käyttämällä seuraavia vaihtoehtoja.
 
 -   Määritä useita palkintoja, joita tarjotaan kanta-asiakasohjelmissa, ja seuraa niihin osallistumista.
 -   Määritä kanta-asiakasohjelmia, jotka edustavat erilaisia tarjoamiasi kannusteita. Voit sisällyttää kanta ohjelma tasot tarjotaksesi suurempi kannustepalkkiot ja edut asiakkaille, jotka ostavat usein tai käyttävät enemmän rahaa myymälöissäsi.
@@ -45,7 +42,7 @@ Voit määrittää kanta-asiakasohjelman käyttämällä seuraavia vaihtoehtoja:
 -   Oikaise kanta-asiakaskortit manuaalisesti tai siirrä kanta-asiakaspalkkioiden saldo kortilta toiselle asiakkaan palkitsemiseksi.
 
 ## <a name="setting-up-loyalty-programs"></a>Kanta-asiakasohjelmien määrittäminen
-Kun otat kanta-asiakkuusominaisuuden käyttöön Dynamics 365 for Retailissa, sinun on määritettävä useita komponentteja. Seuraavassa kaaviossa on kuvattu kanta-asiakkuuskomponentit ja kuinka ne liittyvät toisiinsa. ![Kanta-asiakkuuden määrittämisprosessin kulku](./media/loyaltyprocess.gif)
+Kun otat kanta-asiakkuusominaisuuden käyttöön Dynamics 365 for Retailissa, sinun on määritettävä useita komponentteja. Seuraavassa kaaviossa on kuvattu kanta-asiakkuuskomponentit ja kuinka ne liittyvät toisiinsa. ![Kanta-asiakkuuden asetusprosessin työnkulku](./media/loyaltyprocess.gif "Kanta-asiakasosat ja niiden keskinäiset suhteet")
 
 ## <a name="loyalty-components"></a>Kanta-asiakkuuskomponentit
 Seuraavassa taulukossa on kuvattu jokainen komponentti ja sen käyttöpaikka kanta-asiakkuuden määrityksessä.
@@ -70,11 +67,63 @@ Seuraavassa taulukossa on kuvaus prosesseista, jotka on suoritettava, jotta kant
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
 | 1050 (kanta-asiakkaan tiedot)           | Suorita tämä prosessi, jotta voit lähettää kanta-asiakkuustiedot Microsoft Dynamics 365 for Retailista vähittäismyymälöihin. Tämä prosessi kannattaa ajoittaa suoritettavaksi säännöllisesti, jotta kanta-asiakkuustiedot siirtyvät kaikkiin myymälöihin.                                                                                                                                                                                               | Jakeluaikataulu                |
 | Käsittele kanta-asiakkuusmallit              | Suorita prosessi, jolla määritetään kanta-asiakkuusmallit vähittäismyynnin kanavien kanssa, jotka liitetään kanta-asiakkuusmalleihin. Tämä prosessi voidaan ajoittaa suoritettavaksi eräprosessina. Tämä prosessi on suoritettava, jos muutat kanta-asiakkuuksien määritystietoja, kuten kanta-asiakkuusmalleja-, -ohjelmia tai -pisteitä.                                                                                               | Käsittele kanta-asiakkuusmallit              |
-| Käsittele kanta-asiakastapahtumia offline-tilassa | Suorita tämä prosessi, jotta voit päivittää kanta-asiakaskortteihin offline-tilassa käsitellyt tapahtumat. Tätä prosessia käytetään vain, jos **Ansaitse offline** -tilassa -valintaruutu on valittu **Vähittäismyynnin yhteiset parametrit** -sivulta siten, että etuja voi ansaita offline-tilassa.                                                                                                                                               | Käsittele kanta-asiakastapahtumia offline-tilassa |
+| Käsittele kanta-asiakastapahtumia offline-tilassa | Suorita tämä prosessi, jotta voit päivittää kanta-asiakaskortteihin offline-tilassa käsitellyt tapahtumat. Tätä prosessia käytetään vain, jos **Ansaitse offline-tilassa** -valintaruutu on valittu **Vähittäismyynnin yhteiset parametrit** -sivulta siten, että etuja voi ansaita offline-tilassa.                                                                                                                                               | Käsittele kanta-asiakastapahtumia offline-tilassa |
 | Päivitä kanta-asiakaskorttitasot            | Suorita tämä prosessi, jotta voit arvioida asiakkaan ansaitsemat edut kanta-asiakasohjelman tasosääntöjen mukaisesti ja päivittää asiakkaan tasotilanteen. Tämä prosessi tarvitaan vain, jos muutat kanta-asiakasohjelmien tasosääntöjä ja haluat, että päivitetyt säännöt kohdistetaan takautuvasti jo myönnettyihin kanta-asiakaskortteihin. Tämä prosessi voidaan suorittaa eräprosessina tai yksittäisille korteille. | Päivitä kanta-asiakaskorttitasot            |
 
+## <a name="loyalty-enhancements"></a>Kanta-asiakasparannukset
 
+Retailin lokakuun 2018 versiossa on uusi kanta-asiakastoiminto. Jokainen uusi parannus käsitellään myöhemmin.
 
+- Edellisten versioiden kanta-asiakkuusmallissa jälleenmyyjät pystyivät luomaan erilaisia tasokohtaisia ansaitsemis- ja lunastussääntöjä, mikä mahdollisti palkkioiden erittelen eri tasojen asiakkaille. Jälleenmyyjät voivat nyt sisällyttää liitoksia ansaitsemis- ja lunastussääntöjen osaksi, jotta tietty asiakasryhmä voi kuulua aiemmin luotuihin tasoihin ja jotta heidän palkkionsa voivat olla erilaiset. Tämän vuoksi lisätasoja ei tarvitse luoda.
+    
+    > [!NOTE]
+    > Kanta-asiakkuusmallin ansaitsemissäännöt ovat lisäsääntöjä. Jos esimerkiksi luot säännön, jolla kultatason jäsenelle annetaan 10 pistettä jokaista dollaria kohden, sekä säännön, jolla veteraaniliitoksen asiakkaalle annetaan 5 pistettä jokaista dollaria kohden, kultatason veteraani ansaitsisi tässä tapauksessa 15 pistettä jokaisesta dollarista, sillä tällainen asiakas hyväksytään kummallekin riville. Jos veteraaniasiakas ei kuitenkaan ole kultatason jäsen, hän ansaitsee 5 pistettä jokaista dollaria kohden. Voit toteuttaa muutokset kanavissa suorittamalla työt **Käsittele kanta-asiakkuusmallit** ja **1050** (kanta-asiakastiedot).
+    
+    ![Liitoksen perustuva ansaitseminen](./media/Affiliation%20based%20earning.png "Liitoksen perustuva ansaitseminen")
 
+- Jälleenmyyjillä on usein erikoishinnat sellaisille asiakasryhmille, joiden yhteydessä he eivät halua käyttää kanta-asiakasohjelmia. Tällaisia ovat esimerkiksi tukkukauppiaat ja työntekijät, joille käytetään erikoishintoja mutta jotka eivät saa kanta-asiakaspisteitä. Yleensä liitosten avulla erikoishinnoittelu voidaan kohdistaa kyseisille asiakasryhmille. Jos jälleenmyyjä haluaa estää tietyn asiakasryhmän asiakkaita ansaitsemasta kanta-asiakaspisteitä, hän voi määrittää yhden liitoksen tai useita liitoksia kanta-asiakasmallin **Pois suljetut liitokset** -osassa. Tällä tavoin pois suljettuun liitokseen kuuluvat asiakkaat ovat nykyisiä kanta-asiakasohjelman jäseniä, mutta he eivät ansaitse kanta-asiakaspisteitä ostoksistaan. Voit toteuttaa muutokset kanavissa suorittamalla työt **Käsittele kanta-asiakkuusmallit** ja **1050** (kanta-asiakastiedot).
 
+    ![Pois suljetut liitokset](./media/Excluded%20affiliations.png "Liitosten sulkeminen kanta-asiakaspisteiden ansaitseminen ulkopuolelle")
+    
+- Jälleenmyyjät voivat luoda kanta-asiakaskortin numeroita kanavissa. Ennen lokakuun 2018 päivitystä jälleenmyyjät pystyivät käyttämään fyysisiä kanta-asiakaskortteja tai luomaan kanta-asiakaskortin jonkin yksilöivän asiakastiedon, kuten puhelinnumeron, avulla. Jos haluat ottaa käyttöön kanta-asiakaskorttien automaattisen luonnin vähittäismyymälässä, ota **Luo kanta-asiakaskortin numero** käyttöön myymälään liitetyssä toimintoprofiilissa. Jälleenmyyjät voivat myöntää kanta-asiakaskortteja asiakkaille verkkokanavissa IssueLoyaltyCard-ohjelmointirajapinnan avulla. Jälleenmyyjät voivat joko antaa kanta-asiakaskortin numeron tähän ohjelmointirajapintaan, ja kanta-asiakas muodostetaan sitten sen perusteella, tai sitten järjestelmä käyttää Dynamics 365 for Retailissa määritettyä kanta-asiakaskortin numerosarjaa. Jos numerosarjaa ei ole kuitenkaan ole eikä jälleenmyyjä anna kanta-asiakaskortin numero ohjelmointirajapintaa kutsuttaessa, seurauksena on virheilmoitus.
+
+![Kanta-asiakaskortin luonti](./media/Generate%20loyalty%20card.png "Kanta-asiakaskortin numeron luominen automaattisesti")
+
+- Ansaitut ja lunastetut kanta-asiakaspisteet tallennetaan nyt jokaiselle tapahtumalle ja myyntitilaukselle myyntiriveillä, joten sama summa voidaan hyvittää tai poistaa täyden tai osittaisen palautuksen yhteydessä. Koska pisteet ovat nähtävillä myyntirivitasolla, puhelinkeskuksen käyttäjät voivat vastata asiakkaiden kunkin rivin ansaittuja tai lunastettuja pisteitä koskeviin kysymyksiin. Ennen tätä muutosta palkkiopisteet laskettiin aina uudelleen palautusten aikana, jolloin tulokseksi saatu summa ei ollut sama kuin alkuperäinen summa, jos ansaitsemis- tai lunastussääntöjä oli muutettu. Puhelinkeskuksen käyttäjät eivät myöskään nähneet piste-erittelyä. Pisteitä voidaan tarkastella kunkin kanta-asiakaskortin **Korttitapahtumat**-lomakkeessa.
+    
+- Jälleenmyyjät voivat nyt määrittää muodostumiskauden kullekin palkkiopisteelle. Muodostumiskauden määritykset määrittävät keston ansaitsemispäivästä, jonka jälkeen palkkiopisteet tulevat asiakkaiden käyttöön. Muodostumattomia pisteitä voidaan tarkastella **Kanta-asiakaskortit**-sivun **Muodostumattomat pisteet** -sarakkeessa. Jälleenmyyjät voit määrittää myös kanta-asiakaskorttikohtaisen kanta-asiakaspisteiden enimmäismäärän. Tämän kentän avulla voidaan vähentää kanta-asiakkuuspetosten vaikutusta. Kun kanta-asiakaspisteitä on enimmäismäärä, käyttäjä ei voi ansaita lisää pisteitä. Jälleenmyyjä voi päättää estää kyseisten korttien käytön siihen saakka, että mahdollinen petos on tutkittu. Jos jälleenmyyjä tulee siihen tulokseen, että kyse on petoksesta, jälleenmyyjä voi asiakkaan kanta-asiakaskortin estämisen lisäksi merkitä myös asiakkaan estetyksi. Voit tehdä sen määrittämällä **Estä asiakasta liittymästä kanta-asiakasohjelmaan** -ominaisuudeksi **Kyllä** **Vähittäismyynti**-pikavälilehden **Kaikki asiakkaat** -kohdassa. Estetyille asiakkaille ei voi myöntää kanta-asiakaskorttia missään kanavassa.
+
+![Muodostuminen ja palkkiopisteiden enimmäismäärä](./media/Vesting%20and%20maximum%20reward%20points.png "Muodostumisen ja palkkipisteiden enimmäismäärän määrittäminen")
+
+- Liitokset mahdollistavat erikoishinnoittelun ja alennukset, mutta käytössä voi olla myös sellaisia liitoksia, joita jälleenmyyjät eivät halua asiakkaiden näkevän. Esimerkiksi Paljon kuluttava asiakas -niminen liitos ei välttämällä miellytä kaikki asiakkaita. Lisäksi on joitakin liitoksia, joita ei pitäisi hallita myymälässä. Tällaisia ovat esimerkiksi työntekijäliitokset, sillä kassojen ei haluat määrittävän, kuka on työntekijä ja kenelle voi antaa työntekijäalennuksia. Jälleenmyyjät voivat valita liitokset, jotka on piilotettava vähittäismyyntikanavissa. Liitoksia, joissa on merkintä **Piilota kanaviin**, ei voi tarkastella, lisätä eikä poistaa myyntipisteessä. Liitokseen liitettyjä hintoja ja alennuksia käytetään silti tuotteissa.
+
+![Liitosten piilotus](./media/Hide%20affiliations.png "Liitosten piilotus kanaviin")
+    
+- Puhelinkeskuksen käyttäjien on nyt helpompi etsiä asiakkaita kanta-asiakaskortin tietojen avulla sekä siirtyä asiakkaan kanta-asiakaskorttiin ja kanta-asiakaskortin tapahtumasivulle **Asiakaspalvelu**-sivulta. 
+
+![Asiakaspalvelu](./media/Customer%20service.png "Asiakkaan kanta-asiakastietojen etsiminen")
+    
+- Jos kanta-asiakaskortti on vaarantunut, sen korvaava kortti on luotava ja kortin pisteet siirrettävä uudelle kortille. Korvaavan kortin työnkulkua on yksinkertaistettu tässä versiossa. Lisäksi asiakkaat voivat lahjoittaa osan kanta-asiakaspisteistä tai kaikki pisteet ystäville ja perheenjäsenille. Kun pisteitä siirretään, kummallekin kanta-asiakaskortille luodaan pisteiden oikaisukirjaukset. Korvaava kortti ja saldon siirtotoiminto ovat käytettävissä **Kanta-asiakaskortit**-sivulta.
+
+![Pisteiden korvaaminen ja siirtäminen](./media/Replace%20and%20transfer%20points.png "Asiakaskortin korvaaminen tai saldon siirtäminen")
+    
+- Jälleenmyyjät haluavat ehkä hyödyntää tiettyä tehokasta kanavaa asiakkaiden rekisteröinnissä kanta-asiakasohjelmaan. Kanta-asiakaskorttien rekisteröintilähteen voi nyt tallentaa, joten jälleenmyyjät voivat luoda raportteja näiden tietojen perusteella. Rekisteröintilähde tallennetaan automaattisesti kaikille MPOS/CPOS- tai sähköisten kaupankäyntikanavien kautta myönnetyille kanta-asiakaskorteille. Jos kanta-asiakaskortti on myönnetty taustasovelluksesta, puhelinkeskuksen käyttäjä voi valita soveltuvan kanavan.
+
+- Aiemmissa versioissa jälleenmyyjät voivat käyttää MPOS/CPOS:aa asiakkaiden kanta-asiakaspisteiden lunastamiseen myymälässä. Koska näissä versioissa kanta-asiakassaldo näytettiin kanta-asiakaspisteinä, kassa ei voinut tarkastella summaa valuutta-arvona, jota olisi voitu käyttää nykyisessä tapahtumassa. Kassan oli muunnettava pisteet valuutaksi, ennen kuin hän pystyi maksamaan kanta-asiakaspisteet. Sen jälkeen kun nykyisessä versiossa rivit on lisätty tapahtumaan, kassa näkee summan, jonka kanta-asiakaspisteet kattavat nykyisessä tapahtumassa. Niinpä tapahtumaan voi käyttää kaikki kanta-asiakaspisteet tai osan niistä. Lisäksi kassa näkee 30 päivän kuluessa vanhenevat pisteet, mikä mahdollistaa lisä- tai ristiinmyynnin, sillä asiakasta voidaan kannustaa käyttämään vanhenevat pisteet kyseissä tapahtumassa.
+
+![Kanta-asiakassaldon kattamat pisteet](./media/Points%20covered%20by%20loyalty%20balance.png "Kanta-asiakaspisteiden kattaman saldon näyttäminen")
+
+![Vanhentuvat pisteet](./media/Expiring%20points.png "Vanhentuvien pisteiden näyttäminen")
+    
+## <a name="upcoming-enhancements"></a>Tulevat parannukset
+
+Seuraavat ominaisuudet tulevat käyttöön Dynamics 365 for Retailin tulevissa kuukausipäivityksissä.
+    
+- Asiakkaat haluavat mahdollisuuden tarkastella kanta-asiakassaldon tietoja kuluttajille suunnatuissa kanavia. Vastaavasti on tärkeää, että kassat näkevät asiakkaan kanta-asiakaspisteiden historian MPOS/CPOS:ssä, jotta he voivat vastata nopeasti asiakkaiden kysymyksiin. Asiakkaat ja kassat tulevat näkemään kanta-asiakashistorian tiedot tulevassa kuukausijulkaisussa.
+
+- Monet jälleenmyyjät voivat myöntää kanta-asiakaspisteitä vain myyntitapahtumien perusteella. Asiakaskeskeiset jälleenmyyjät haluavat kuitenkin palkita asiakkaansa myös muista brändiin liittyvästä toiminnosta. He haluavat esimerkiksi palkita verkkokyselyyn vastaamisesta, myymälävierailusta, jälleenmyyjän tykkäämisestä Facebook ja jälleenmyyjästä twiittaamisesta. Mahdollisuus antaa kanta-asiakaspisteitä asiakkaan kaikenlaisesta toiminnasta tullaan lisäämään myöhemmin. Sitä varten jälleenmyyjä voi määrittää muun tehtävätyypin ja näille tehtäville ansaitsemissäännöt. Paljastemme myös Retail Server -ohjelmointirajapinnan, jota voidaan kutsua, kun määritetään tehtävä, jota käytetään kanta-asiakaspisteiden myöntämisen ansaitsemissääntönä.
+
+- Aidon monikanavaisen jälleenmyyntikokemuksen toteutumista varten annamme asiakkaalle mahdollisuuden ansaita ja lunastaa kanta-asiakaspisteitä kaikissa kanavissa. 
+
+- Maksuton tai alennettu toimitus on yksi tärkeimmistä tekijöistä, joilla asiakkaat motivoidaan tekemään verkko-ostoksia. Jotta jälleenmyyjät voisivat määrittää toimituskampanjat, olemme ottaneet uudenlaisen kampanjan, jossa jälleenmyyjä määrittää raja-arvot, jonka ylitettyään asiakkaat saavat alennetun tai maksuttoman toimituksen.
 

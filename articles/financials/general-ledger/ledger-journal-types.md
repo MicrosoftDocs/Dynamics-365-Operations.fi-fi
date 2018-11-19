@@ -1,9 +1,9 @@
 ---
 title: Kirjanpidon kirjauskansiotyypit
-description: "Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Finance and Operationsissa käytettävät kirjauskansiot **Kirjauskansioiden nimet** -sivulla."
+description: "Tässä ohjeaiheessa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9f8fc40f199b83a9e0cb36ce905163c3ed547057
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Finance and Operationsissa käytettävät kirjauskansiot **Kirjauskansioiden nimet** -sivulla.
+Tässä ohjeaiheessa kuvataan kirjauskansiotyypit, joita voit määrittää talouskirjauskansioille. Määritä koko Microsoft Dynamics 365 for Finance and Operationsissa käytettävät kirjauskansiot **Kirjauskansioiden nimet** -sivulla.
 
 | Kirjauskansion tyyppi                      | Tarkoitus                       | Syötä tapahtumakoodi tälle sivulle                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
@@ -53,7 +53,8 @@ Tässä artikkelissa kuvataan kirjauskansiotyypit, joita voit määrittää talo
 | Palkanlaskennan suoritus              | Suorita palkanlaskennan maksutositteisiin perustuvia maksuja. Et voi kirjoittaa manuaalisesti tapahtumia tässä kirjauskansiossa. Sinun on luotava maksulaskelmat ja lähetettävä nämä laskelmat maksettavaksi.                                                                                                                                                              |                                                                |
 | Kausittainen                          | Luo kausittaisia tapahtumia kausikirjauskansiolle.                                                                                                                                                                                                                                                                                                      | Kausikirjauskansiot                                              |
 | Kirjaa käyttöomaisuus                 | Kirjaa Käyttöomaisuuserätapahtumia.                                                                                                                                                                                                                                                                                                                              | Käyttöomaisuudet                                                   |
-| Projekti - Kulut                | Luo projektin kulutapahtumat.                                                                                                                                                                                                                                                                                                                        | Kulut                                                        |
+| Projekti - Kulut                | Luo projektin kulutapahtumat.                                                                                                                                                                                                                                                                                                                        | Expense                                                        |
+| Raportointivaluutan muutos     | Luo kirjanpitotilien saldoille oikaisuja raportointivaluutassa.               | Raportointivaluutan muutosten kirjauskansiot                         |
 | Tilastotapahtumat            | Luo tilastollisia tapahtumia.                                                                                                                                                                                                                                                                                                                            |                                                                |
 | Toimittajan pankkisiirtomääräys            | Luo velkakirjan maksusuoritustiedosto, joka voidaan lähettää organisaatiosi pankkiin.                                                                                                                                                                                                                                                                      | Maksusuoritusten kirjauskansio                                             |
 | Toimittajan suoritus               | Luo toimittajan suoritustapahtumat.                                                                                                                                                                                                                                                                                                                    | Maksukirjauskansio                                                |

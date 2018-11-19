@@ -3,7 +3,7 @@ title: Dynamics 365 for Unified Operations -mobiilisovelluksen kotisivu
 description: "Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Unified Operationsin mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi."
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: d6d26da330974305fa3725fe7c2506d198b17e2c
+ms.sourcegitcommit: 3e9ec83e2cecdf8a7ec4ce3db1a80a310fe07255
+ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 10/26/2018
 
 ---
 
@@ -61,7 +61,7 @@ Mobiilisovelluksen käyttö koostuu neljästä, perusosasta: koontinäyttö, ty�
 ## <a name="implementation-process"></a>Käyttöönottoprosessi
 Seuraavassa kuvassa on esitys Microsoftin toimittamien mobiilityötilojen ja mukautettujen mobiilityötilojen käyttöönottamisesta. 
 
-![Mobiilisovellusten käyttöönottoprosessi](./media/Mobile-implementation-process-5.png)
+[![Mobiilisovellusten käyttöönottoprosessi](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käyttöön sekä Microsoftin tarjoamia mobiilityötiloja että mukautettuja mobiilityötiloja. Ensimmäisen sarakkeen numerot vastaavat edellisessä kuvassa esitettyjä vaiheita.
 

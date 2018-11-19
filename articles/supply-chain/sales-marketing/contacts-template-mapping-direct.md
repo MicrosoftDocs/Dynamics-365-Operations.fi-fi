@@ -3,7 +3,7 @@ title: "Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin
 description: "Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla Microsoft Dynamics 365 for Salesin Yhteyshenkilö (yhteyshenkilöt)- ja Yhteyshenkilöt (asiakkaat) -yksiköt synkronoidaan Microsoft Dynamics 365 for Finance and Operationsiin."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 021a43c78cec83b23aff5dcc40db1a4be81aefc3
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 5363c64cd1a475f0047c079d9166718ddc765f02
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/26/2018
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Tutustu [Dynamics 365:n tietojen integrointiin](/common-data-service/entity-reference/dynamics-365-integration), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
+> Tutustu [sovellusten Common Data Servicen tietojen integrointiin](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
 
 Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla Microsoft Dynamics 365 for Salesin Yhteyshenkilö (yhteyshenkilöt)- ja Yhteyshenkilöt (asiakkaat) -yksiköt synkronoidaan suoraan Microsoft Dynamics 365 for Finance and Operationsiin.
 

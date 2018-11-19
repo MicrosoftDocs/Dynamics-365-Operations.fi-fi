@@ -3,7 +3,7 @@ title: "Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin
 description: "Tässä ohjeaiheessa esitellään mallit ja niiden taustalla olevat tehtävät, joita käytetään synkronoitaessa myyntitilaukset suoraan Microsoft Dynamics 365 for Salesin ja Microsoft Dynamics 365 for Finance and Operationsin välillä."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e26244ffc380291a40edfbd2c2cb5911b0d8b3cb
+ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/11/2018
 
 ---
 
@@ -32,6 +32,12 @@ ms.lasthandoff: 03/26/2018
 [!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa esitellään mallit ja niiden taustalla olevat tehtävät, joita käytetään synkronoitaessa myyntitilaukset suoraan Microsoft Dynamics 365 for Salesin ja Microsoft Dynamics 365 for Finance and Operationsin välillä.
+
+## <a name="data-flow-in-prospect-to-cash"></a>Prospektista käteiseksi -ratkaisun tiedonkulku
+
+Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Finance and Operations and Sales -esiintymien tietojen synkronoinnissa. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Finance and Operationsin ja Salesin välillä. Seuraavassa kuvassa kerrotaan, miten tiedot synkronoidaan Finance and Operations- ja Sales-sovelluksen välillä.
+
+[![Prospektista käteiseksi -ratkaisun tiedonkulku](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
 

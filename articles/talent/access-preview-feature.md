@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: eb99f169ada2a227ebe8e64ee56bbb38cdfda4e0
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -48,7 +48,8 @@ Voit käyttää Microsoft Dynamics 365 for Talentin hallintakeskuksen **Esiversi
 1. Kirjaudu sisään Microsoft Dynamics 365 for Talent: Attract -ohjelmaan.
 2. Valitse **Asetukset**-valikossa (hammasrataskuvake) oikeassa alakulmassa **Järjestelmänvalvojan asetukset**.
 3. Valitse **Ominaisuuksien hallinta** -välilehdestä kohdan **Esiversio-ominaisuudet** vieressä oleva vaihtoehto siten, että muuttuu siniseksi.
-4. Päivitä selaimesi ikkuna nähdäksesi uudet ominaisuudet. (Käyttäjät, jotka ovat jo kirjautuneet sisään, näkevät ominaisuudet seuraavan sisäänkirjautumiskerran yhteydessä tai päivittäessään selaimen ikkunan.)
+4. Vaihtoehtoisesti voit hallita yksittäisiä ominaisuuksia ottamalla kyseiset ominaisuudet käyttöön tai poistamalla ne käytöstä tällä sivulla.
+5. Päivitä selaimesi ikkuna nähdäksesi uudet ominaisuudet. (Käyttäjät, jotka ovat jo kirjautuneet sisään, näkevät ominaisuudet seuraavan sisäänkirjautumiskerran yhteydessä tai päivittäessään selaimen ikkunan.)
 
 #### <a name="core-hr"></a>Henkilöstöhallinnon perusversio
 
@@ -61,12 +62,11 @@ Voit käyttää Microsoft Dynamics 365 for Talentin hallintakeskuksen **Esiversi
 
 ## <a name="features-that-are-currently-in-preview"></a>Tämänhetkiset esiversio-ominaisuudet
 
-### <a name="attract"></a>Attract
+### <a name="attract"></a>Kerätä
 
-- **Työmallit** – Voit nyt luoda työhönoton prosessimalleja. Käyttäjät voivat jo mukauttaa työkohtaista työhönottoprosessia. Nyt he voivat kuitenkin luoda prosessimalleja ja valita sitten sopivan mallin, kun työ luodaan. Tämä ominaisuus auttaa siten nopeuttamaan työhönottoprosessia.
-- **Urasivusto** – Urasivuston nykyinen versio ainoastaan listaa kaikki avoimet työt. Enemmän ominaisuuksia lisätään sivustoon myöhemmin. Työt voidaan merkitä sisäisiksi tai ulkoisiksi. Sisäiset käyttäjät, jotka kirjautuvat sivustoon, näkevät sekä sisäiset että ulkoiset työt. Käyttäjät, jotka eivät ole sisäisiä ja kirjautuneet sisään, näkevät vain ulkoiset työt.
-- **Työpaikkailmoitus** – Voit nyt laatia työpaikkailmoituksia urasivustolle.
-- **LinkedIn-työpaikkailmoitus** – Voit nyt laatia työpaikkailmoituksia LinkedIniin.
+- **Työhön sopivat ehdokkaat** – Työhönottajat ja rekrytointipäälliköt näkevät kätevästi kaikista hakijoista, kuka ehdokkaista soveltuu parhaiten työhön. Viisi parasta hakijaa näytetään sen perusteella, miten hyvin heidän ansioluettelonsa tai profiilinsa vastaa työnkuvausta.
+- **Liittyvät työt** – Ehdokkaat näkevät luettelon muista heille soveltuvista töistä ansioluettelon tai profiilin ja työnkuvauksen perusteella.  Tällä hetkellä ehdokkaat näkevät tämän vaihtoehdon, kun he hakevat ehdotuksia muista mahdollisuuksista.
+- **EEO-/OFCCP-tuki** – Uudet tehtävätyypit mahdollistavat valmiiksi täytetyn lomakkeen käytön, jolla kerätään ehdokkaan EEO (Equal Employment Opportunity)- ja OFCCP (Office of Federal Contract Compliance Program) -tiedot.  Lomake on määritetty ennalta, eikä sitä voi muokata.
 
     > [!NOTE]
     > Ilmoitukset näkyvät vain asiakkaille, jotka tilaavat vähintään yhtä LinkedIn-työpaikkailmoitustuotetta. Muussa tapauksessa asiakkaat näkevät työn vain, jos he hakevat sitä erikseen. LinkedIn-työpaikkailmoitukset tulevat näkyviin viiveellä. Työ voi tulla näkyviin vasta useiden tuntien kuluttua siitä, kun se julkaistaan Attractista.

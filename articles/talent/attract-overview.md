@@ -1,6 +1,6 @@
 ---
-title: Attractin ominaisuudet ja kyvyt
-description: "Attract-sovellus sisältää uuden työvoiman palkkaamiseen tarkoitettuja toimintoja. Työnhakijoita voi lisätä avoimiin tehtäviin ja siirtää vaiheesta vaiheeseen, kunnes tälle annetaan työtarjous tai hakemus hylätään."
+title: Attractin toiminnot ja ominaisuudet
+description: "Tässä ohjeaiheessa käsitellään Attractin ominaisuuksia, joilla hallitaan uuden työvoiman työhönottoprosessia."
 author: rschloma
 manager: AnnBe
 ms.date: 08/01/2017
@@ -18,32 +18,32 @@ ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 37dd0396787375fccd4082f392e079ed5dab04e9
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: dd65def0006445da1a8d07577cf5ef05178c19bd
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/22/2018
 
 ---
-# <a name="attract-features-and-capabilities"></a>Attractin ominaisuudet ja kyvyt
+# <a name="attract-features-and-capabilities"></a>Attractin toiminnot ja ominaisuudet
 
 [!include [banner](includes/banner.md)]
 
-Attract-sovellus sisältää uuden työvoiman palkkaamiseen tarkoitettuja toimintoja. Työnhakijoita voi lisätä avoimiin tehtäviin ja siirtää vaiheesta vaiheeseen, kunnes tälle annetaan työtarjous tai hakemus hylätään. Työnhakijaa siirretään kussakin vaiheessa tehtävien välillä, kuten seulontapuhelut, arvioinnit tai haastattelujen sopiminen. Kun hakemus on jätetty, työnhakija saa kutsun sähköpostiinsa, jossa tätä pyydetään kirjautumaan Attract-sovellukseen, jossa he voivat seurata tehtävän ja hakemuksensa tilaa sekä vastata heille määrättyihin tehtäviin.
+Attract sisältää uuden työvoiman palkkaamiseen tarkoitettuja toimintoja. Työnhakijoita voi lisätä avoimiin tehtäviin ja siirtää vaiheesta toiseen, kunnes ehdokkaalle joko tehdään työtarjous tai hakemus hylätään. Työnhakija siirtyy kussakin vaiheessa tehtävästä toiseen. Tällaisia tehtäviä ovat esimerkiksi seulontapuhelut, arvioinnit tai haastattelut. Hakemuksen jättämisen jälkeen työnhakijalle lähetetään sähköpostitse kutsu kirjautua Attractiin, jos hakija voi seurata työpaikan ja hakemuksen tilaa. Hakija voi myös vastata hänelle määrättyihin tehtäviin.
 
-Attract-sovellus sisältää seuraavat ominaisuudet:
+Tässä ohjeaiheessa käsitellään Attractin ominaisuuksia.
 
 ## <a name="attract-dashboard"></a>Attract-koontinäyttö
-Tässä näytössä työhönottoryhmän jäsenet voivat nähdä niiden tehtävien tiedot, joissa he ovat osallisia. Tässä työhönoton esimies tai rekrytoija voi myös lisätä uusia tehtäviä Attract-sovellukseen, joko luomalla sellaisen erikseen tai tuomalla usean kerralla Excel-laskentataulukosta.
+Työhönottoryhmän jäsenet näkevät koontinäytössä niiden työpaikkojen tilan, joihin he osallistuvat. Työhönottopäällikkö tai rekrytoija voi myös lisätä koontinäytössä uusia töitä Attractiin joko luomalla ne erikseen tai tuomalla useita töitä samanaikaisesti Microsoft Excel -laskentataulukosta.
 
 ## <a name="jobs"></a>Työt
-**Työ**-sivulla voi muokata ja tarkastella erilaisia tietoja, kuten työnkuvausta ja työn toimipaikkaa. **Työ**-sivulla luodaan työhönottoryhmä sekä lisätään tai muutetaan ryhmän rekrytoijia ja haastattelijoita. Uudet työnhakijat voidaan myös lisätä **Työ**-sivulla.
+**Työ**-sivulla voi muokata ja tarkastella erilaisia tietoja, kuten työnkuvausta ja työn toimipaikkaa. **Työ**-sivulla luodaan myös työhönottoryhmä sekä lisätään tai muutetaan ryhmän rekrytoijia ja haastattelijoita. Uudet työnhakijat voidaan myös lisätä **Työ**-sivulla.
 
 ## <a name="candidates"></a>Ehdokkaat
-Työnhakijoita voi lisätä työhön yksitellen tai useita kerralla lataamalla Excel-laskentataulukko. Kaikkien hakijat lisätään automaattisesti ensimmäiseen vaiheeseen, Haku, minkä tahansa työn työhönottoprosessissa. Kaikki hakijan hakemustiedot ovat nähtävissä ja hallittavissa tässä näytössä. Muita tiedostoja voi ladata ja tarkastella yhteystietojen, kuten sähköpostiosoitteiden, puhelinnumeroiden ja sosiaalisen median profiililinkkien ohella. Jos hakija on antanut linkin LinkedIn-profiiliinsa ja LinkedIn-integrointi on käytössä (edellyttää LinkedIn-rekrytointikäyttöoikeutta), hakijan profiili näytetään tässä.
+Työnhakijoita voi lisätä työhön yksitellen tai useita kerralla lataamalla niitä Excel-laskentataulukosta. Kaikki hakijat lisätään automaattisesti Haku-vaiheeseen, joka on kaikkien työpaikkojen työhönottoprosessin ensimmäinen vaihe. Tässä vaiheessa kaikkia hakijan hakemuksen tietoja voi tarkastella ja hallita. Muita tiedostoja voi ladata ja tarkastella yhteystietojen, kuten sähköpostiosoitteiden, puhelinnumeroiden ja sosiaalisen median profiililinkkien ohella. Jos hakija on antanut linkin omaan LinkedIn-profiiliinsa ja jos LinkedIn-integraatio on määritetty, hakijan profiili on näkyvissä. (LinkedIn-integrointia varten tarvitaan LinkedIn Recruiter -käyttöoikeus.)
 
 ## <a name="stages"></a>Vaiheet
-Attract-sovellus tarjoaa ennalta määritetyn työhönottoprosessin, joka sisältää neljä perusvaihetta: haku, seulonta, haastattelu ja tarjous. Uudet hakijat aloittavat hakuvaiheessa, jossa tarkastetaan ansioluettelo, saatekirje, portfolio ja muut hakemusasiakirjat. Tästä käsin hakijan voi siirtää seulontavaiheeseen, jossa heidät kutsutaan osallistumaan seulontapuheluun tai Skype-videohaastatteluun. Työhönoton esimies ja rekrytoija voivat antaa hakijasta palautetta ja siirtää tämän seuraavaan vaiheeseen. Henkilökohtaiset haastattelut sovitaan tämän jälkeen työhönottoryhmän vapaiden jäsenten kanssa, ja ne voidaan mukauttaa erimittaisiksi, kahdenkeskeisiksi tai paneelihaastatteluiksi Haastattelujen jälkeen tallennetaan ja arvioidaan haastatteluryhmän palaute. Valitut hakijat siirretään viimeiseen vaiheeseen, jossa näillä tehdään työtarjous ja valmistellaan näiden arviointi ja hyväksyntä. 
+Attractiin sisältyy valmiiksi määritetty työhönottoprosessi, jossa on neljä perusvaihetta: haku, seulonta, haastattelu ja tarjous. Uudet hakijat aloittavat hakuvaiheessa, jossa tarkastetaan ansioluettelo, saatekirje, portfolio ja muut hakemusasiakirjat. Hakijat voidaan sitten siirtää seulontavaiheeseen, jossa heidät kutsutaan osallistumaan seulontapuheluun tai Skype-videohaastatteluun. Työhönottopäällikkö esimies ja rekrytoija voivat antaa hakijoista palautetta ja heidät tämän seuraavaan haastatteluvaiheeseen. Tämän jälkeen aikataulutetaan henkilökohtaiset haastattelut käytettävissä olevien työhönottoryhmän jäsenten kanssa. Nämä haastattelut voidaan mukauttaa yhden henkilön kanssa tapahtuvaksi haastatteluksi tai haastattelupaneeliksi. Haastattelun kesto voi vaihdella. Haastattelujen jälkeen tallennetaan ja arvioidaan haastatteluryhmän palaute. Valitut hakijat siirretään sitten viimeiseen tarjousvaiheeseen. Tässä vaiheessa hakijalle valmistellaan ja tehdään tarjous, jota hän voi arvioida ja jonka hän voi hyväksyä.
 
 ## <a name="candidate-app"></a>Hakijasovellus
-Hakijat saavat sähköpostin, joka sisältää sovelluksen latauslinkin heti, kun heidät on lisätty työhön. Verkkosovellus tarjoaa hakijoille työn tiedot ja toimii työkaluna yhteydenpitoon työhönottoryhmän kanssa. Hakijat voivat myös merkitä oman saatavuutensa haastatteluja varten.
+Heti kun hakija on hyväksynyt työpaikan, hänelle lähetetään sähköpostiviesti, jossa on verkkosovelluksen latauslinkki. Hakija saa sovelluksen kautta tiedot työpaikasta ja voi käyttää sitä yhteydenpitoon työhönottoryhmän kanssa. Hakija voi myös ilmoittaa sen kautta, milloin hän käytettävissä haastatteluja varten.
 

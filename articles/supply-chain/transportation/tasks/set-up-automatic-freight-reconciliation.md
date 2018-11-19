@@ -3,7 +3,7 @@ title: "Rahdin automaattisen täsmäytyksen määrittäminen"
 description: "Tässä menettelyssä kuvataan, miten automaattisen rahdintäsmäytyksen tiedot määritetään."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
+ms.sourcegitcommit: d990efd7c929b15d57d64e850bc3308349abb978
+ms.openlocfilehash: b7772ad779495b36941a3dc86cc456d80a964467
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/17/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Rahdin automaattisen täsmäytyksen määrittäminen
@@ -36,9 +36,9 @@ Tässä menettelyssä kuvataan, miten automaattisen rahdintäsmäytyksen tiedot 
     * Rahtilaskun tyyppi määrittää, miten rahtilaskut ja kuljettajan laskut täsmäytetään.  
 2. Valitse Uusi.
 3. Kirjoita arvo Rahtilaskun tyyppi -kenttään.
-4. Kirjoita Laskennan kokoonpano -kenttään "Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer".
+4. Kirjoita Laskennan kokoonpano -kenttään Microsoft.Dynamics.Ax.Tms.dll.
     * Tämä on standardi Kuljetuksenhallinnan kohdistusmoduulin koodikirjasto.  
-5. Kirjoita Moduulin luokka -kenttään "Microsoft.Dynamics.Ax.Tms.dll".
+5. Kirjoita Moduulin luokka -kenttään Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer.
     * Tämä on standardi Kuljetuksenhallinnan kohdistusmoduulin luokka.  
 6. Valitse Uusi.
 7. Valitse kuvaus-kenttään arvo, jonka tulee täsmätä sekä rahti- että kuljettajan laskulla.  
